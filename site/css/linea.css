@@ -2,7 +2,7 @@
    Dueño durante el reparto: app-tiempo. */
 
 /* ---------- Línea de tiempo ---------- */
-.linea { grid-template-columns: 150px 1fr; }
+.linea { grid-template-columns: 150px 1fr; --carril-w: 150px; }
 .app.linea-grande, .app.con-sincronia { --timeline-h: min(62vh, 600px); }
 .linea-barra { gap: 12px; }
 .be-play__main, .be-play__btn { border: 0; cursor: pointer; }
@@ -57,9 +57,8 @@
 .carriles-boton { white-space: nowrap; border: 0; background: none; padding: 2px 6px; margin-left: -6px; border-radius: var(--r-sm); font-size: var(--fs-2xs); font-weight: 700; letter-spacing: .04em; text-transform: uppercase; color: var(--ink-3); cursor: pointer; }
 .carriles-boton:hover { background: var(--paper-2); color: var(--ink); }
 .carriles-boton b { color: var(--accent); font-weight: 700; }
-.linea-carriles { overflow: hidden; }
-.linea-carriles .be-lane-label { font-size: var(--fs-sm); position: relative; overflow: hidden; }
-.linea-carriles .be-lane-label > span:not(.edad):not(.be-tier) { overflow: hidden; text-overflow: ellipsis; }
+.carril-rotulo .be-lane-label { font-size: var(--fs-sm); position: relative; overflow: hidden; }
+.carril-rotulo .be-lane-label > span:not(.edad):not(.be-tier) { overflow: hidden; text-overflow: ellipsis; }
 .carril-nombre { flex: 0 0 auto; max-width: 75%; font-weight: 600; color: var(--ink-2); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .edad { flex: 0 1 auto; min-width: 0; overflow: hidden; font-weight: 500; color: var(--ink-3); font-size: var(--fs-xs); white-space: nowrap; }
 .carril-pin { position: absolute; right: 4px; top: 50%; transform: translateY(-50%); border: 0; background: var(--surface-2); padding: 2px; border-radius: var(--r-xs); color: var(--ink-4); cursor: pointer; opacity: 0; }
@@ -72,60 +71,14 @@
 .linea-pista.modo-regla { cursor: ew-resize; }
 .linea-pista:focus-visible { outline-offset: -2px; }
 .linea-svg { position: absolute; left: 0; top: 0; display: block; user-select: none; }
-.linea-svg text { font-family: var(--font-sans); font-size: 10.5px; font-weight: 600; pointer-events: none; }
-/* Los rótulos de los elementos se pulsan como su forma (linea.js, rotulo). El eje, el cursor y la regla, no. */
-.linea-svg .item-texto { cursor: pointer; }
-.linea-svg .item-texto text { pointer-events: auto; }
-.linea-svg .item-texto:hover text { text-decoration: underline; }
-.fila-par { fill: var(--surface-2); }
+.linea-svg text, .meses-svg text { font-family: var(--font-sans); font-size: 10.5px; font-weight: 600; pointer-events: none; }
 .tick-mayor { stroke: var(--line-2); }
 .tick-menor { stroke: var(--line-2); opacity: .7; }
 .rejilla { stroke: var(--rejilla); }
 .linea-eje { stroke: var(--line); }
 .tick-texto { fill: var(--ink-3); }
 .densidad { fill: rgba(123, 111, 96, .28); }
-.item { cursor: pointer; }
-.item:focus { outline: none; }
-.item:focus-visible rect { stroke: var(--focus); stroke-width: 2.5; }
-/* Contraste (be-64b.1): las barras van a color pleno y su texto en blanco o, si lee mejor, en tinta oscura (linea.js,
-   tonos). Una barra que casi no se distingue del fondo lleva borde. */
-.viaje:hover .barra-viaje, .viaje.encima .barra-viaje, .estancia:hover .barra-estancia, .estancia.encima .barra-estancia { stroke: var(--ink); stroke-width: 1.5; }
-.texto-barra { fill: #fff; }
-/* Halo del color pleno de su barra (linea.js pone el trazo): donde la barra se difumina, el texto se sigue leyendo. */
-.linea-svg .texto-barra { paint-order: stroke; stroke-width: 3px; stroke-linejoin: round; }
-.linea-svg .item-texto.atenuado text { stroke: none !important; }
-.linea-svg .sobre-claro { fill: #18221c; }
-.con-borde { stroke: var(--ink-3); stroke-width: 1; }
 .texto-fuera { fill: var(--ink-2); }
-/* Paradas en contorno: el color del viaje y su nombre se siguen leyendo debajo. La sombra oscura las separa también donde
-   la barra se difumina (fecha aproximada). */
-.marca-parada { fill: none; stroke: #fff; stroke-width: 1; pointer-events: all; filter: drop-shadow(0 0 .6px rgba(0, 0, 0, .75)); }
-.marca-parada.narrativa { stroke-dasharray: 2 2; }
-.marca-parada.en-borde, .parada.resaltado .marca-parada.en-borde { stroke: var(--ink); filter: none; }
-.parada:hover .marca-parada { fill: rgba(255, 255, 255, .3); stroke-width: 2; }
-.rombo { fill: var(--gold); stroke: #fff; stroke-width: 2; }
-.carta.seleccionada .rombo { fill: var(--accent); }
-.carta.seleccionada .tramo-carta { stroke: var(--accent); stroke-width: 2.5; }
-.texto-punto { fill: var(--ink-2); }
-.tramo-carta { fill: var(--surface); stroke: var(--gold); stroke-width: 1.5; }
-.texto-carta { fill: var(--gold); }
-.tramo-evento { fill: var(--surface); stroke: var(--gold); stroke-width: 1.5; }
-.rombo-evento { fill: var(--gold); stroke: #fff; stroke-width: 2; }
-.evento-fondo .tramo-evento { fill-opacity: .6; stroke-opacity: .85; }
-.texto-evento { fill: var(--gold); }
-/* Cálculo nuestro, sin verificar (C-03): rombo hueco y rosa, tramo rayado. */
-.rombo-evento.calculo { fill: var(--surface); stroke: var(--unverified); stroke-width: 1.6; }
-.tramo-evento.calculo { fill: var(--unverified-soft); stroke: var(--unverified); stroke-dasharray: 4 3; }
-.texto-calculo { fill: var(--unverified); }
-.pildora { fill: var(--ink); }
-.texto-pildora { fill: var(--surface); }
-.grupo-sucesos:hover .pildora { fill: var(--ink-2); }
-/* El color de cada periodo lo pone linea.js (colorPeriodo); las eras alternan dos tonos. */
-.barra-periodo { fill: var(--emp-roma); }
-/* Personas: actividad de fondo, estancias encima (rayadas si la fecha es estimada) y el camino entre ellas. */
-/* Las estancias largas («vivió en») van detrás, en contorno de su color: las cortas, llenas, se leen encima. */
-.estancia.larga .barra-estancia { fill: var(--surface-2); stroke-width: 1.5; }
-.texto-estancia-larga { fill: var(--ink-2); }
 .camino { stroke-width: 1.6; stroke-dasharray: 3 3; opacity: .7; }
 .banda-juntos { fill: color-mix(in srgb, var(--gold) 16%, transparent); stroke: color-mix(in srgb, var(--gold) 45%, transparent); stroke-dasharray: 2 2; pointer-events: none; }
 /* Meses (T-19): nuestros meses en contorno y letra de interfaz; los hebreos rellenos, rayados y en letra de libro.
@@ -136,11 +89,11 @@
 .mes--nuestros .mes-texto { fill: var(--ink-2); font-weight: 500; }
 .mes--hebreos .mes-caja { fill: var(--line); stroke: var(--ink-4); }
 .mes--hebreos.mes-1 .mes-caja { fill: var(--paper-2); }
-.linea-svg .mes--hebreos .mes-texto { fill: var(--ink); font-family: var(--font-serif); font-size: 13px; font-weight: 700; }
-.linea-svg .mes--hebreos.anacronico .mes-texto { font-style: italic; font-weight: 500; fill: var(--ink-2); }
+.meses-svg .mes--hebreos .mes-texto { fill: var(--ink); font-family: var(--font-serif); font-size: 13px; font-weight: 700; }
+.meses-svg .mes--hebreos.anacronico .mes-texto { font-style: italic; font-weight: 500; fill: var(--ink-2); }
 .mes--hebreos.anadido .mes-caja { stroke-dasharray: 4 2; stroke: var(--ink-3); }
 .mes-dia { stroke: var(--ink-4); stroke-width: 1; }
-.linea-svg .mes-num { fill: var(--ink-3); font-size: 9.5px; font-weight: 500; }
+.meses-svg .mes-num { fill: var(--ink-3); font-size: 9.5px; font-weight: 500; }
 .mes--hebreos .mes-num { fill: var(--ink-2); }
 /* Horas entre la puesta de sol y nuestra medianoche: ya son el día hebreo siguiente (Perspicacia «Día»). */
 .noche-hebrea rect { fill: rgba(31, 26, 20, .07); pointer-events: none; }
@@ -148,8 +101,8 @@
 .fiesta-caja { fill: var(--gold-soft); stroke: var(--gold); stroke-width: 1.2; }
 .fiesta-texto, .fiesta-texto--fuera { fill: var(--ink); }
 /* Etiquetas de las filas de meses y el enlace a la página del calendario. */
-.linea-carriles .carril-mes--hebreos > span { font-family: var(--font-serif); font-size: 13.5px; font-weight: 700; color: var(--ink); }
-.linea-carriles .carril-mes--nuestros > span { font-weight: 500; }
+.carril-rotulo .carril-mes--hebreos > span { font-family: var(--font-serif); font-size: 13.5px; font-weight: 700; color: var(--ink); }
+.carril-rotulo .carril-mes--nuestros > span { font-weight: 500; }
 .carril-ayuda { margin-left: auto; flex: none; display: inline-grid; place-items: center; width: 17px; height: 17px; border-radius: 50%; border: 1px solid var(--line-2); background: var(--surface); color: var(--link); font-size: var(--fs-2xs); font-weight: 700; text-decoration: none; }
 .carril-ayuda:hover { background: var(--paper-2); }
 .carril-ayuda, .nombre-corto { display: none; }   /* en la pantalla ancha, «¿Qué meses son estos?» va en la barra */
@@ -167,31 +120,11 @@
 .fecha-otra[hidden] { display: none; }
 .fecha-otra.anacronico { font-style: italic; }
 #fecha-valor i { font-style: italic; }
-/* Fechas seculares como nota (C-02, C-04). */
-.tramo-secular { fill: var(--secular-soft); stroke: var(--secular); stroke-width: 1.2; stroke-dasharray: 4 3; }
-.texto-secular { fill: var(--secular); }
-/* Con algo seleccionado (be-64b.1). Lo que no tiene que ver pasa a gris y hueco, pero se sigue leyendo: texto a 4,5:1 y
-   borde a 3:1. Lo que tiene que ver conserva su color y lleva borde grueso. Lo seleccionado, además, un anillo de tinta.
-   La diferencia es de forma (lleno o hueco, anillo) y no solo de color. Si nada de lo que se ve tiene que ver con la
-   selección, no se atenúa nada (linea.js, clase sin-foco). */
-.linea-svg:not(.sin-foco) .item.atenuado :is(.barra-viaje, .barra-periodo, .barra-estancia, .barra-actividad, .tramo-carta, .tramo-evento, .tramo-secular, .pildora) { fill: var(--surface-2) !important; stroke: var(--ink-3) !important; stroke-width: 1; stroke-opacity: 1; stroke-dasharray: none; }
-.linea-svg:not(.sin-foco) .item.atenuado :is(.rombo, .rombo-evento) { fill: var(--surface-2); stroke: var(--ink-3); stroke-width: 1.5; }
-.linea-svg:not(.sin-foco) .item.atenuado .marca-parada { fill: none; stroke: var(--ink-3); stroke-width: 1; }
-.linea-svg:not(.sin-foco) .item.atenuado rect[fill="url(#p-rayas-claras)"] { fill: url(#p-rayas-grises); }
-.linea-svg:not(.sin-foco) .item.atenuado .texto-pildora, .linea-svg:not(.sin-foco) .item-texto.atenuado text { fill: var(--ink-3) !important; font-weight: 500; }
-.item.resaltado :is(.barra-viaje, .barra-periodo, .tramo-carta, .tramo-evento, .barra-estancia, .tramo-secular) { stroke: var(--gold); stroke-width: 2.5; }
-.item.resaltado :is(.tramo-carta, .tramo-evento) { fill: var(--gold-soft); }
-.item.resaltado :is(.rombo, .rombo-evento) { stroke: var(--gold); stroke-width: 2.5; }
-.parada.resaltado .marca-parada { stroke: #fff; stroke-width: 2; }
-.parada.elegido .marca-parada { fill: #fff; stroke: var(--ink); stroke-width: 1.5; }
-.item-texto.resaltado text { font-weight: 700; }
-.item-texto.resaltado :is(.texto-evento, .texto-carta) { fill: var(--ink); }
-.anillo-elegido { fill: none; stroke: var(--ink); stroke-width: 2.5; pointer-events: none; }
 .cursor-linea { stroke: var(--gold); stroke-width: 2; }
 .cursor-bandera { fill: var(--gold); }
 .cursor-texto { fill: #fff; font-weight: 700 !important; }
 .banda-incierta { pointer-events: none; }
-#linea-cursor { pointer-events: none; }
+#linea-cursor, #fondo-cursor { pointer-events: none; }
 /* Regla (T-15), bucle (T-12) y marcadores (T-14). */
 .regla-banda { fill: color-mix(in srgb, var(--gold) 10%, transparent); pointer-events: none; }
 .regla-borde { stroke: var(--gold); stroke-dasharray: 3 3; pointer-events: none; }
@@ -203,13 +136,80 @@
 .bucle-marca { fill: none; stroke: var(--accent); stroke-width: 2; opacity: .8; }
 .marcador { fill: var(--accent); cursor: pointer; }
 
-/* Lista de elementos que se solapan en el punto pulsado (linea.js, elegirEntre) */
-.linea-eleccion { position: fixed; z-index: 31; overflow: auto; padding: 10px 10px 8px; box-shadow: var(--shadow-3); display: flex; flex-direction: column; gap: 1px; font-size: var(--fs-sm); }
-.linea-eleccion .be-card__eyebrow { margin: 0 8px 4px; }
-.linea-eleccion .eleccion-fila { flex-direction: column; align-items: flex-start; gap: 0; padding: 5px 8px; text-align: left; }
-.eleccion-fila span { font-weight: 600; color: var(--ink); }
-.eleccion-fila small { color: var(--ink-3); font-size: var(--fs-2xs); }
-.eleccion-fila:focus-visible { outline: 2px solid var(--focus); outline-offset: -2px; }
+
+/* ---------- Cuerpo de la línea: la regla arriba, fija al bajar; los carriles debajo, cada uno con sus filas ---------- */
+.linea-cuerpo { grid-column: 1 / -1; position: relative; min-height: 0; overflow-x: hidden; overflow-y: auto; overscroll-behavior: contain; }
+.linea-cabeza { position: sticky; top: 0; z-index: 6; display: grid; grid-template-columns: var(--carril-w) minmax(0, 1fr); background: var(--surface); border-bottom: 1px solid var(--line-2); }
+.linea-cabeza .carriles-eje { background: var(--surface-2); border-right: 1px solid var(--line); border-bottom: 0; }
+.linea-pista { position: relative; height: 26px; overflow: hidden; }
+.linea-filas { position: relative; user-select: none; -webkit-user-select: none; }
+.linea-fondo { position: absolute; left: var(--carril-w); top: 0; z-index: 0; pointer-events: none; display: block; }
+.linea-medida { position: absolute; left: 0; top: 0; visibility: hidden; pointer-events: none; }
+.carril { display: grid; grid-template-columns: var(--carril-w) minmax(0, 1fr); border-bottom: 1px solid var(--line); box-sizing: border-box; }
+.carril[hidden] { display: none; }
+/* El fondo de cada carril va en el carril, que no está posicionado: así queda debajo del fondo de la línea (cursor,
+   rejilla, noches), que va debajo de las marcas. */
+.carril:nth-child(even) { background: var(--surface-2); }
+.carril-rotulo { background: var(--surface-2); border-right: 1px solid var(--line); min-width: 0; }
+/* El nombre del carril se queda a la vista mientras se baja por un carril alto. */
+.carril-rotulo .be-lane-label { position: sticky; top: 27px; height: 26px; }
+.carril--meses .carril-rotulo .be-lane-label { position: relative; top: 0; height: 30px; }
+.carril-pista { position: relative; min-width: 0; overflow: hidden; touch-action: pan-y; cursor: grab; }
+.linea-filas.arrastrando .carril-pista { cursor: grabbing; }
+.carril--meses .carril-pista { cursor: crosshair; }
+.meses-svg { position: absolute; left: 0; top: 0; display: block; }
+.linea-vacios { margin: 0; padding: 6px 12px 8px calc(var(--carril-w) + 12px); font-size: var(--fs-xs); color: var(--ink-3); }
+.linea-vacios[hidden] { display: none; }
+/* La marca elegida que no se ve: un botón la trae sin cambiar la escala ni el cursor. */
+.linea-ir-sel { position: absolute; z-index: 8; max-width: 45%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; border: 1px solid var(--ink); border-radius: var(--r-pill); background: var(--surface); color: var(--ink); font: 600 var(--fs-xs) var(--font-sans); padding: 2px 10px; cursor: pointer; box-shadow: var(--shadow-1); }
+.linea-ir-sel[hidden] { display: none; }
+.linea-ir-sel.en-rotulos { max-width: calc(var(--carril-w) - 8px); }
+.sel-regla { fill: var(--ink); }
+
+/* ---------- Marcas: un botón por marca, con su dibujo y su nombre entero ---------- */
+/* Van por encima del fondo: ninguna raya de la regla ni la línea del cursor tachan un nombre. */
+.m { position: absolute; z-index: 1; padding: 0; margin: 0; border: 0; background: transparent; cursor: pointer; text-align: left; color: var(--ink); font: 500 var(--fs-sm) var(--font-sans); transition: none; }
+.m:focus { outline: none; }
+.m:focus-visible { outline: 2px solid var(--focus); outline-offset: 0; border-radius: 4px; z-index: 3; }
+.m > * { position: absolute; pointer-events: none; }
+.m-barra { top: calc(50% - 8px); height: 16px; border-radius: 3px; box-sizing: border-box; }
+.m--hueca .m-barra { border: 1.5px solid; }
+.m-ventana { top: calc(50% - 5px); height: 10px; box-sizing: border-box; }
+.m-ventana::before { content: ""; position: absolute; left: 0; right: 0; top: 4px; height: 2px; background: currentColor; opacity: .75; }
+.m-ventana.topes { border-left: 2px solid currentColor; border-right: 2px solid currentColor; }
+.m-punto { top: calc(50% - 5px); width: 10px; height: 10px; border-radius: 50%; box-sizing: border-box; }
+.m--hueca .m-punto { border: 2px solid; }
+/* Fechas seculares como nota (C-02, C-04): contorno de trazos. */
+.m--secular .m-barra { background: var(--secular-soft) !important; border: 1.2px dashed var(--secular); }
+.m-nombre { top: 0; height: 100%; display: flex; align-items: center; white-space: nowrap; font: 500 var(--fs-sm) var(--font-sans); letter-spacing: 0; color: var(--ink); }
+.m-nombre i { font-style: italic; font-weight: 400; }
+.m-nombre.en-barra { color: #fff; }
+.m-nombre.en-barra.sobre-claro { color: #18221c; }
+.carril { --fondo: var(--surface); }
+.carril:nth-child(even) { --fondo: var(--surface-2); }
+.m-nombre.fuera .t { background: var(--fondo); padding: 0 2px; margin: 0 -2px; border-radius: 3px; }
+.m-nombre.varias .t { white-space: normal; line-height: 14px; }
+.m:hover .m-nombre .t { text-decoration: underline; text-underline-offset: 3px; }
+.m.activo .m-barra { box-shadow: 0 0 0 1.5px var(--surface), 0 0 0 3px var(--accent); }
+/* Lo elegido: un marco de tinta alrededor de su dibujo y su nombre, que no depende del color. */
+.m[aria-pressed="true"] { z-index: 2; }
+.m[aria-pressed="true"]::after { content: ""; position: absolute; inset: 1px -3px; border: 2px solid var(--ink); border-radius: 5px; background: var(--gold-soft); z-index: -1; }
+.m[aria-pressed="true"] .m-nombre .t { text-decoration: underline 2px; text-underline-offset: 3px; background: transparent; }
+/* Con algo elegido (be-64b.1): lo que no tiene que ver pasa a gris y hueco, pero se sigue leyendo (texto a 4,5:1, borde a
+   3:1); lo que tiene que ver conserva su color y lleva un anillo. Si nada de lo que se ve tiene que ver, no se atenúa nada
+   (sin-foco). Ningún estado cambia el ancho de un nombre: el sitio de cada nombre se midió con su letra de siempre. */
+.linea-filas:not(.sin-foco) .m.atenuado :is(.m-barra, .m-punto) { background: var(--surface-2) !important; border: 1px solid var(--ink-3) !important; }
+.linea-filas:not(.sin-foco) .m.atenuado .m-ventana { color: var(--ink-3) !important; }
+.linea-filas:not(.sin-foco) .m.atenuado .m-nombre { color: var(--ink-3) !important; }
+.m.resaltado :is(.m-barra, .m-punto) { box-shadow: 0 0 0 1.5px var(--surface), 0 0 0 3px var(--gold); }
+@media (pointer: coarse) {
+  .linea-pista { height: 44px; }
+  .carril-rotulo .be-lane-label { top: 45px; height: 44px; }
+  .m-barra { top: calc(50% - 11px); height: 22px; }
+  .m-punto { top: calc(50% - 6px); width: 12px; height: 12px; }
+  .m-ventana { top: calc(50% - 6px); height: 12px; }
+  .m-ventana::before { top: 5px; }
+}
 
 /* Menú de la línea y elección de carriles */
 .linea-menu { position: fixed; z-index: 30; overflow: auto; padding: 12px 14px; box-shadow: var(--shadow-3); display: flex; flex-direction: column; gap: 2px; font-size: var(--fs-sm); }
@@ -306,7 +306,7 @@
 
 /* Barra compactada por pasos cuando no cabe (linea.js, ajustarBarra). */
 .linea-barra[data-compacta="1"] :is(.meses-etiqueta, .meses-que), .linea-barra[data-compacta="2"] :is(.meses-etiqueta, .meses-que), .linea-barra[data-compacta="3"] :is(.meses-etiqueta, .meses-que) { display: none; }
-.linea-barra:not([data-compacta="0"]) ~ .linea-carriles .carril-ayuda { display: inline-grid; }
+.linea-barra:not([data-compacta="0"]) ~ .linea-cuerpo .carril-ayuda { display: inline-grid; }
 .linea-barra[data-compacta="2"] .zoom .z-largo, .linea-barra[data-compacta="3"] .zoom .z-largo { display: none; }
 .linea-barra[data-compacta="2"] .zoom .z-corto, .linea-barra[data-compacta="3"] .zoom .z-corto { display: inline; }
 .linea-barra[data-compacta="3"] :is(.velocidad, .cronologia) { display: none; }
@@ -321,8 +321,8 @@
 /* ---------- Pantallas estrechas ---------- */
 @media (max-width: 760px) {
   .linea-estado, .linea-barra .velocidad, .cronologia, .minimapa { display: none !important; }
-  .linea-carriles .be-lane-label .be-i { display: none; }
-  .linea { grid-template-columns: 92px 1fr; }
+  .carril-rotulo .be-lane-label .be-i { display: none; }
+  .linea { grid-template-columns: 92px 1fr; --carril-w: 92px; }
   .linea-barra { gap: 4px; padding: 0 6px; }
   .linea-barra > .be-spacer { flex: 1 1 0; min-width: 0; }
   .linea-barra .be-play { gap: 2px; }
@@ -332,13 +332,13 @@
   .be-reunion .zoom-select { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='m7 10 5 5 5-5' fill='none' stroke='%23d8cdb8' stroke-width='2'/%3E%3C/svg%3E"); }
   .linea-barra .meses-control { display: none; }   /* no cabe: el selector va en el menú de la línea */
   .carril-ayuda { display: inline-grid; }
-  .linea-carriles .nombre-largo { display: none; }
-  .linea-carriles .nombre-corto { display: inline; }
+  .carril-rotulo .nombre-largo { display: none; }
+  .carril-rotulo .nombre-corto { display: inline; }
   #fecha:has(.fecha-otra:not([hidden])) { flex-direction: column; align-items: flex-start; gap: 0; padding-top: 2px; padding-bottom: 2px; }
   #fecha:has(.fecha-otra:not([hidden])) .be-date__value { font-size: 15px; }
   .fecha-otra { font-size: 10.5px; line-height: 1.1; }
   .linea-boton { width: 30px; height: 30px; }
-  .linea-carriles .be-lane-label { padding: 0 6px 0 10px; font-size: var(--fs-xs); gap: 5px; }
+  .carril-rotulo .be-lane-label { padding: 0 6px 0 10px; font-size: var(--fs-xs); gap: 5px; }
   .carril-pin { display: none; }
   .carriles-eje { padding: 0 4px 0 10px; }
   .carriles-boton { font-size: 9.5px; letter-spacing: 0; }

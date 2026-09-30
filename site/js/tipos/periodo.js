@@ -67,20 +67,14 @@ BE.tipo('periodo', {
       if (m != null && m >= a && m < tr[1] && (e.lugares || []).some((x) => p.lugares.includes(x))) r.claves.add(`evento:${e.id}`);
     }
   },
-  // Salta al principio de lo que sabemos del periodo (BE.inicioPeriodo), nunca a su fin. Si el cursor ya está dentro
-  // (Roma elegida en 49 e.c.), no se mueve, como con un lugar. No cuenta cuando lo implica otra selección (un lugar no
-  // salta a su gobernador).
+  // Elegido desde fuera de la línea, salta al principio de lo que sabemos del periodo (BE.inicioPeriodo), nunca a su fin.
+  // Si el cursor ya está dentro (Roma elegida en 49 e.c.), no se mueve, como con un lugar. No cuenta cuando lo implica
+  // otra selección (un lugar no salta a su gobernador). Elegirlo no cambia la escala: para verlo entero está el botón
+  // «Ver este tramo en la línea» de su ficha.
   momento: (id) => {
     const p = buscaPeriodo(id), a = BE.inicioPeriodo(p), tr = BE.tramoPeriodo(p);
     if (a == null) return null;
     return tr && E.t >= a && E.t < tr[1] ? null : a + 0.01;
-  },
-  // Una era o una potencia se enseña entera en la línea al elegirla, desde ese principio: así la reproducción la recorre
-  // en un par de minutos. Lo pide base.js al seleccionar con el cursor (_local/tiempo/PATCH-base.md).
-  encuadre: (id) => {
-    const p = buscaPeriodo(id), tr = BE.tramoPeriodo(p);
-    // Roma dura hasta 476, pero la línea acaba en BE.T_MAX: el tramo se corta ahí, o la ventana se correría hacia atrás.
-    return tr && (p.tipo === 'era' || p.tipo === 'potencia') ? [BE.inicioPeriodo(p), Math.min(tr[1], BE.T_MAX)] : null;
   },
   ficha: fichaPeriodo,
   buscar(q, nq, puntuar) {
