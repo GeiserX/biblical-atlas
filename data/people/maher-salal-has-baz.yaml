@@ -1,0 +1,44 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: maher-salal-has-baz
+name: Maher-Salal-Has-Baz
+names:
+- name: Maher-Salal-Has-Baz
+  note: Según la nota de Is 8:1, quizá significa que se corre al despojo y se viene deprisa al saqueo.
+perspicacia: '1200002848'
+summary: Segundo hijo de Isaías y de su esposa, la profetisa. Su nombre se escribió ante testigos antes de que naciera y anunciaba
+  que Asiria saquearía Damasco y Samaria antes de que el niño supiera llamar a sus padres.
+reason: Perspicacia «Maher-salal-has-baz» e «Isaías», apartado de su familia; Is 8:1-4, 18.
+sources:
+- it-maher-salal-has-baz
+- it-isaias
+- isaias-8
+links:
+- title: 'Perspicacia: «Maher-salal-has-baz»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002848
+  type: perspicacia
+- title: Isaías 8 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/23/8
+  type: bible
+relations:
+- type: kin
+  person: isaias
+  word: father
+  inferred: false
+  sources:
+  - isaias-8
+  - it-maher-salal-has-baz
+  reason: 'Is 8:3: Isaías tiene relaciones con la profetisa, su esposa, que da a luz a este hijo.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: lived_in
+  place: jerusalen
+  inferred: true
+  sources:
+  - si-isaias
+  - isaias-8
+  reason: «Toda Escritura», libro 23, párr. 3, sitúa a Isaías en Jerusalén con su esposa y al menos dos hijos; Is 8:3 cuenta
+    el nacimiento de este.
+  checked_on: '2026-09-30'
+  status: verified
+checked_on: '2026-09-30'
+status: verified

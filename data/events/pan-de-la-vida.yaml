@@ -25,6 +25,7 @@ roles:
   jesus: spoke
 passages:
 - Jn 6:22-71
+- Is 54:13
 summary: En la sinagoga de Capernaúm, Jesús dice a quienes lo buscan por el pan que él es el pan de la vida, y muchos discípulos
   lo dejan; Pedro responde por los doce y Jesús avisa de que uno es calumniador.
 reason: 'A7-D, fila 11: Capernaúm. Perspicacia «Capernaum» (párr. 10) dice que este discurso redujo sus seguidores; «Judas»
@@ -36,5 +37,6 @@ sources:
 - it-judas
 - jy-cap-54
 - jy-cap-55
-checked_on: '2026-09-29'
+- isaias-54
+checked_on: '2026-09-30'
 status: verified

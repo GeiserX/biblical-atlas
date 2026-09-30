@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>biblical-earth · Cada relato de la Biblia, en su lugar y en su tiempo</title>
+<meta name="description" content="La Biblia en el mapa y en el tiempo. Cada relato en su lugar y en su fecha, con cada dato enlazado a su fuente.">
+<link rel="icon" type="image/svg+xml" href="../assets/kit/favicon.svg">
+<link rel="preload" href="../assets/kit/fonts/EBGaramond-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../assets/kit/fonts/Inter-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../assets/kit/fonts.css">
+<link rel="stylesheet" href="../assets/kit/tokens.css">
+<link rel="stylesheet" href="../assets/kit/components.css">
+<link rel="stylesheet" href="tuned.css">
+<script>
+  // Los dos ajustes de lectura del sitio, antes del primer pintado (las mismas claves que usa el sitio).
+  try {
+    if (localStorage.getItem('biblical-earth:pref:reunion') === '1') document.documentElement.classList.add('be-reunion');
+    if (localStorage.getItem('biblical-earth:pref:letra-grande') === '1') document.documentElement.classList.add('be-letra-grande');
+  } catch { /* sin almacenamiento */ }
+</script>
+<!-- Dónde está el sitio y el aviso si no carga: lo comparten los seis prototipos. -->
+<script src="../assets/sitio.js"></script>
+<script defer src="data.js"></script>
+<script defer src="tuned.js"></script>
+</head>
+<body>
+<main class="portada" id="portada" aria-labelledby="portada-titulo">
+
+  <div class="banda banda--cab">
+    <header class="cab ancho">
+      <a class="be-logo cab-logo" href="#portada-titulo" aria-label="biblical-earth, principio de la portada">
+        <svg class="marca" viewBox="0 0 64 64" aria-hidden="true">
+          <path class="marca-hojas" d="M14 53Q15.2 40.2 3.5 34.7Q2.3 47.6 14 53Z M25.5 40Q33.8 49.9 45.9 45.5Q37.6 35.6 25.5 40Z M38 23Q40 11.4 29.4 6.1Q27.5 17.7 38 23Z M46.5 15.5Q52.5 23.5 61.9 20Q55.9 12 46.5 15.5Z"/>
+          <path class="marca-tallo" d="M8 57C18 50 24 42 30 33C36 24 44 14 57 8"/>
+          <circle class="marca-oliva" cx="20.5" cy="47" r="6"/><circle class="marca-oliva" cx="31" cy="31.5" r="6"/><circle class="marca-oliva" cx="47.5" cy="13.5" r="6"/>
+        </svg>
+        <span>biblical-earth</span>
+      </a>
+      <span class="be-spacer"></span>
+      <div class="ajustes" role="group" aria-label="Ajustes de lectura">
+        <button type="button" class="ajuste" id="ajuste-letra" aria-pressed="false" title="Letra grande en todo el sitio">
+          <svg class="be-i" viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 18 8 6l4.5 12M5.2 13.8h5.6M14 18l3.2-8.5L20.5 18M15.1 15.3h4.3" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span class="ajuste-texto">Letra grande</span>
+        </button>
+        <button type="button" class="ajuste" id="ajuste-reunion" aria-pressed="false" aria-label="Modo reunión: fondo oscuro, sin animaciones" title="Modo reunión: fondo oscuro, brillo bajo y sin animaciones">
+          <svg class="be-i" viewBox="0 0 24 24" aria-hidden="true"><path d="M19.5 14.5A7.5 7.5 0 0 1 9.5 4.5a7.5 7.5 0 1 0 10 10Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+    </header>
+  </div>
+
+  <section class="heroe" aria-labelledby="portada-titulo">
+    <div class="heroe-rejilla ancho">
+      <div class="heroe-texto">
+        <div class="vuelve" id="vuelve" hidden></div>
+        <p class="be-caps antetitulo">Para estudiar la Biblia</p>
+        <h1 class="titulo" id="portada-titulo" tabindex="-1">Cada relato de la Biblia, en su lugar y en su tiempo</h1>
+        <p class="sub">Un mapa y una línea de tiempo movidos por una sola fecha. Busca a alguien, un lugar, un capítulo o un año, y verás quién vivía, dónde estaba y qué pasaba alrededor. Cada dato enlaza a su fuente.</p>
+        <form class="busca" id="busca" role="search" autocomplete="off">
+          <div class="busca-fila">
+            <div class="caja" id="caja">
+              <svg class="be-i caja-lupa" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="m16 16 4.5 4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+              <label class="sr-only" for="q">Buscar en el atlas</label>
+              <input id="q" name="q" type="search" enterkeyhint="search" spellcheck="false" placeholder="Persona, lugar, capítulo o año"
+                role="combobox" aria-expanded="false" aria-controls="sugerencias" aria-autocomplete="list" aria-describedby="q-ayuda">
+              <button type="submit" class="caja-ir" aria-label="Buscar"><svg class="be-i" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6.5 18.5 12 13 17.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+            </div>
+            <button type="button" class="be-btn be-btn--primary explorar" id="explorar" data-entrar="explorar">Explorar el mapa</button>
+          </div>
+          <span class="sr-only" id="q-ayuda">Al escribir salen resultados debajo; con las flechas se elige y con Intro se abre en el mapa.</span>
+          <div class="sugerencias" id="sugerencias" role="listbox" aria-label="Resultados" hidden></div>
+        </form>
+        <p class="ejemplos" id="ejemplos"><span class="ejemplos-rotulo">Prueba:</span></p>
+      </div>
+
+      <div class="heroe-lado">
+        <div class="ventana" id="ventana">
+          <img class="ventana-img" id="ventana-img" alt="" fetchpriority="high" decoding="async"
+            src="../assets/img/paul-journeys-wide-1280.webp">
+          <div class="ventana-velo" aria-hidden="true"></div>
+          <!-- La ventana es el mapa en pequeño: con el ratón se toca entera; para el teclado y el lector basta «Explorar el mapa». -->
+          <button type="button" class="ventana-entrar" id="ventana-entrar" data-entrar="explorar" tabindex="-1" aria-hidden="true">
+            <span class="ventana-rotulo">Ver el mapa entero <span aria-hidden="true">→</span></span>
+          </button>
+          <p class="ventana-credito">Relieve: Natural Earth, USGS, NOAA, Copernicus, Mapzen · <a data-sitio="acerca.html#gracias" href="#">Créditos</a></p>
+        </div>
+
+        <section class="preguntas" aria-labelledby="preguntas-tit">
+          <h2 class="zona-tit zona-tit--peq" id="preguntas-tit">O empieza por una pregunta</h2>
+          <ul class="preguntas-lista" id="preguntas"></ul>
+        </section>
+      </div>
+    </div>
+  </section>
+
+  <section class="banda epocas" aria-labelledby="epocas-tit">
+    <div class="ancho">
+      <div class="zona-cab">
+        <h2 class="zona-tit" id="epocas-tit">Elige una época</h2>
+        <p class="zona-sub">Cada una abre el mapa en su tiempo y en sus lugares.</p>
+        <span class="be-spacer"></span>
+        <button type="button" class="enlace" data-entrar="linea">Ver la línea de tiempo completa <span aria-hidden="true">→</span></button>
+      </div>
+      <figure class="escala" id="escala">
+        <div class="escala-dibujo" id="escala-dibujo" aria-hidden="true"></div>
+        <figcaption class="escala-pie" id="escala-pie"></figcaption>
+      </figure>
+      <ol class="lista-epocas" id="lista-epocas"></ol>
+    </div>
+  </section>
+
+  <section class="banda recorridos" aria-labelledby="recorridos-tit">
+    <div class="ancho">
+      <div class="zona-cab">
+        <h2 class="zona-tit" id="recorridos-tit">Sigue un recorrido</h2>
+        <p class="zona-sub">Paradas en orden, cada una con su pasaje. Si lo dejas a medias, sigue donde ibas.</p>
+      </div>
+      <ul class="lista-recorridos" id="lista-recorridos"></ul>
+    </div>
+  </section>
+
+  <section class="banda banda--fuentes fuentes" aria-labelledby="fuentes-tit">
+    <div class="ancho fuentes-rejilla">
+      <div class="fuentes-texto">
+        <h2 class="zona-tit" id="fuentes-tit">De dónde salen los datos</h2>
+        <p class="fuentes-cifras" id="cifras"></p>
+        <ul class="niveles">
+          <li><a class="nivel" data-sitio="acerca.html#datos" href="#"><span class="marca-nivel marca-nivel--1" aria-hidden="true"></span><span><b>La Biblia y wol.jw.org.</b> La Traducción del Nuevo Mundo y las publicaciones de jw.org. Enlazamos; no copiamos sus textos.</span></a></li>
+          <li><a class="nivel" data-sitio="acerca.html#datos" href="#"><span class="marca-nivel marca-nivel--2" aria-hidden="true"></span><span><b>Arqueología e investigación,</b> solo cuando jw.org las usa, y siempre con su fuente.</span></a></li>
+          <li><a class="nivel" data-sitio="acerca.html#datos" href="#"><span class="marca-nivel marca-nivel--x" aria-hidden="true">?</span><span><b>Sin verificar:</b> se ve marcado, nunca escondido.</span></a></li>
+        </ul>
+      </div>
+      <article class="dato" id="dato" aria-labelledby="dato-tit"></article>
+    </div>
+  </section>
+
+  <footer class="banda pie">
+    <div class="ancho pie-texto">
+      <p>Relieve: Natural Earth, USGS, NOAA, Copernicus, Mapzen · Coordenadas: OpenBible.info (CC BY 4.0) · <a data-sitio="acerca.html#gracias" href="#">Créditos</a></p>
+      <p>En español · Sitio estático, sin cuentas · <a data-sitio="acerca.html#licencia" href="#">Código libre, GPL-3.0</a> · <a data-sitio="acerca.html" href="#">Qué es biblical-earth</a> · <span id="pie-datos">Datos del 29 de septiembre de 2026</span></p>
+    </div>
+  </footer>
+</main>
+
+<div class="sr-only" id="anuncio" aria-live="polite"></div>
+
+<!-- El sitio de verdad, detrás de la portada. Mientras la portada está puesta no recibe ni el teclado ni el puntero. -->
+<iframe class="sitio" id="sitio" title="El mapa de biblical-earth" tabindex="-1" aria-hidden="true" inert></iframe>
+
+<!-- Parte del prototipo, no del diseño: para pasar de un diseño a otro. -->
+<details class="proto" id="proto">
+  <summary><span>Diseños</span></summary>
+  <nav aria-label="Los seis diseños de portada">
+    <a href="../veil/">El velo</a>
+    <a href="../fullbleed/">Pantalla completa</a>
+    <a href="../time/">El tiempo</a>
+    <a href="../question/">La pregunta</a>
+    <a href="../live/">El mapa vivo</a>
+    <a href="../tuned/" aria-current="page">La de hoy, afinada</a>
+  </nav>
+</details>
+</body>
+</html>

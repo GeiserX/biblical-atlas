@@ -12,10 +12,15 @@ date:
 places:
 - lakis
 - jerusalen
+- libna
 people:
 - senaquerib
 - ezequias
 - isaias
+- eliaquim-hijo-de-hilquias
+- sebna
+- tirhaca
+- joa-hijo-de-asaf
 passages:
 - 2Re 18:13-19:36
 - Is 36:1-37:37
@@ -28,6 +33,10 @@ sources:
 - it-lakis
 - 2-reyes-18
 - 2-reyes-19
+- ip1-29
+- it-rabsaque
+- isaias-37
+- it-libna
 links:
 - title: 'Perspicacia: «Ezequías»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002011
@@ -43,12 +52,13 @@ present:
 - senaquerib
 history:
 - date: '2026-09-30'
-  change: Sin present, el sitio ponía en Lakís a Ezequías y a Isaías. Solo Senaquerib estaba allí (2Re 18:14, 17; 19:8); el
-    rey y el profeta seguían en Jerusalén.
-  source: 2-reyes-18
+  change: Sin present, el sitio ponía a Ezequías e Isaías en Lakís, el primer lugar. Is 36:2 deja a Ezequías en Jerusalén;
+    en Lakís solo estaba Senaquerib.
+  source: isaias-36
 - date: '2026-09-30'
-  change: La muerte de Senaquerib (2Re 19:37; Is 37:38), años después, pasa a muerte-de-senaquerib.
-  source: 2-reyes-19
+  change: 'Salen 2Re 19:37 e Is 37:38: el asesinato de Senaquerib ocurrió años después de 732 (Perspicacia «Senaquerib»; «Las
+    profecías de Isaías I», cap. 29, párr. 22) y es otro suceso, de Reyes.'
+  source: isaias-37
 narrative_order:
   series: 2-reyes
   order: 18013

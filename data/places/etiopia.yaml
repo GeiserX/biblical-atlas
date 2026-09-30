@@ -12,8 +12,8 @@ precision: zone
 coord_source: openbible:ab45bd3
 coord_url: https://www.openbible.info/geo/ancient/ab45bd3/ethiopia
 coord_note: Punto representativo de la región antigua.
-summary: 'Para los griegos, la región de África al sur de Egipto: grosso modo el actual Sudán y el extremo sur de
-  Egipto. No es la Etiopía de hoy. De allí era el funcionario bautizado por Felipe.'
+summary: 'Para los griegos, la región de África al sur de Egipto: grosso modo el actual Sudán y el extremo sur de Egipto.
+  No es la Etiopía de hoy. De allí era el funcionario bautizado por Felipe. Hubo judíos desterrados allí.'
 reason: 'Perspicacia «Etiopía» (párr. 2 y 5) y «Cus», núm. 2, que cuenta el topacio entre sus productos (Job 28:19); Hch 8:27.
   La coordenada es de OpenBible: solo tomamos el punto.'
 sources:
@@ -27,6 +27,12 @@ sources:
 - it-sofonias-libro
 - sofonias-3
 - 2-reyes-19
+- isaias-11
+- isaias-18
+- ip1-15
+- isaias-20
+- isaias-43
+- ip2-4
 links:
 - title: 'Perspicacia: «Etiopía»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001438
@@ -38,5 +44,8 @@ history:
 - date: '2026-09-29'
   change: 'Se añade Perspicacia «Cus», núm. 2: el topacio de Cus de Job 28:19 era uno de los productos de esta tierra.'
   source: job-28
+- date: '2026-09-30'
+  change: Se añade que fue una de las tierras de los judíos dispersados, como dice Perspicacia «Etiopía» al comentar Is 11:11.
+  source: it-etiopia
 checked_on: '2026-09-30'
 status: verified

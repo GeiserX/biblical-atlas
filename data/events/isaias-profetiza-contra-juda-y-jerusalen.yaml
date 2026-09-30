@@ -1,0 +1,61 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: isaias-profetiza-contra-juda-y-jerusalen
+title: Isaías profetiza contra Judá y Jerusalén
+date:
+  from: -777
+  to: -777
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 778 a.e.c. o algo antes
+narrative_order:
+  series: isaias
+  order: 1001
+places:
+- jerusalen
+- juda
+people:
+- isaias
+present: []
+passages:
+- Is 1:1-5:30
+summary: Jehová acusa a Judá y Jerusalén de rebeldía, culto vacío, injusticia y orgullo, y compara al pueblo con una viña
+  que solo dio uvas silvestres. Anuncia ruina y destierro, pero también que su casa será ensalzada.
+reason: Isaías empezó hacia 778, al morir Uzías o antes («Toda Escritura», libro 23, párr. 3, 10; «Las profecías de Isaías
+  I», cap. 5, pone Is 2:7 bajo Uzías). Perspicacia «Isaías, Libro de» admite que esto sea anterior a Is 6.
+sources:
+- isaias-1
+- isaias-2
+- si-isaias
+- it-isaias-libro
+- it-isaias
+- ip1-5
+- isaias-3
+- tnm-a6-a
+- tnm-a6-b
+- isaias-5
+- ip1-7
+- ip1-1
+- ip1-4
+- isaias-4
+- ip1-6
+- it-rama-brote
+links:
+- title: Isaías 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/23/1
+  type: bible
+- title: Isaías 3 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/23/3
+  type: bible
+- title: Isaías 5 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/23/5
+  type: bible
+- title: 'Perspicacia: «Isaías, Libro de»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002205
+  type: perspicacia
+- title: Isaías 4 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/23/4
+  type: bible
+checked_on: '2026-09-30'
+status: verified

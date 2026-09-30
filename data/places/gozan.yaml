@@ -44,15 +44,17 @@ candidates:
   coord_source: calculation
   note: 'Extremos aproximados nuestros: un punto al sureste del lago Urmia (36,6 N; 46,6 E) y la desembocadura del Sefid Rud
     en el Caspio (37,43 N; 49,95 E). Franja orientativa.'
-summary: Río, y al parecer también la región que lo rodeaba, a cuya orilla el rey de Asiria asentó a israelitas desterrados
-  del reino del norte.
-reason: 'Perspicacia «Gozán»: el nombre parece designar un lugar y un río. 2Re 17:6 y 18:11 hablan del río.'
+summary: Tierra del norte de Mesopotamia cuyos habitantes vencieron los reyes de Asiria, según presumió Senaquerib ante Ezequías.
+  En los relatos del destierro de Israel, el mismo nombre parece ser el de un río.
+reason: 'Perspicacia «Gozán», párr. 1 y 2; Is 37:12; 2Re 19:12. Allí es más que una ciudad, porque sus habitantes cuentan
+  entre las naciones vencidas. OpenBible: solo el punto.'
 sources:
 - it-gozan
 - openbible-geo
 - 2-reyes-17
 - 2-reyes-18
 - 2-reyes-19
+- isaias-37
 links:
 - title: 'Perspicacia: «Gozán»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001751
@@ -60,5 +62,16 @@ links:
 - title: 2 Reyes 19 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/19
   type: bible
+- title: Isaías 37 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/23/37
+  type: bible
+history:
+- date: '2026-09-30'
+  change: 'El punto de Tell Halaf pasa a ser uno de dos candidatos: Perspicacia «Gozán» también apunta al río Qezel Ouzan,
+    y cuando jw.org duda entre sitios el mapa no pone punto.'
+  source: it-gozan
 checked_on: '2026-09-30'
 status: verified
+not_claimed:
+- 'Dónde corría el río Gozán de 2Re 17:6: Perspicacia menciona el Qezel Ouzan, en el noroeste de Irán, y otra opinión que
+  lo pone en Mesopotamia.'

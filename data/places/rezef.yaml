@@ -9,21 +9,25 @@ lon: 38.756389
 precision: uncertain
 coord_source: openbible:aefdac1
 coord_url: https://www.openbible.info/geo/ancient/aefdac1/rezeph
-coord_note: Punto de Resafa (Rusafa), primera identificación de OpenBible y el sitio que nombra Perspicacia, que no da su
-  ubicación por segura.
-summary: Lugar que Senaquerib cuenta entre las naciones arruinadas por los reyes de Asiria. Había varios con ese nombre; uno
-  se identifica con Rusafa, al oeste del Éufrates y a unos 145 km al sur de Harán.
-reason: 'Perspicacia «Rézef»; 2Re 19:12. OpenBible: solo el punto.'
+coord_note: 'Punto de OpenBible en Resafa, al oeste del Éufrates: es la Rusafa que algunos proponen según Perspicacia. Hubo
+  varios lugares con este nombre y no se sabe cuál es.'
+summary: Lugar que Senaquerib puso en su carta a Ezequías entre los que los reyes de Asiria habían arruinado. Hubo varios
+  con ese nombre; uno, cerca de Gozán, quedaba al oeste del Éufrates.
+reason: 'Perspicacia «Rézef»; Is 37:12; 2Re 19:12. OpenBible: solo el punto.'
 sources:
 - it-rezef
 - openbible-geo
 - 2-reyes-19
+- isaias-37
 links:
 - title: 'Perspicacia: «Rézef»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003720
   type: perspicacia
 - title: 2 Reyes 19 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/19
+  type: bible
+- title: Isaías 37 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/23/37
   type: bible
 checked_on: '2026-09-30'
 status: verified

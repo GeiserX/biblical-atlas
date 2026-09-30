@@ -1,0 +1,31 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: horonaim
+name: Horonaim
+names:
+- name: Horonaim
+type: city
+lat: 31.09001
+lon: 35.64193
+precision: uncertain
+coord_source: openbible:a9dd823
+coord_url: https://www.openbible.info/geo/ancient/a9dd823/horonaim-1
+coord_note: Primera identificación de OpenBible, el-ʽIraq, unos 18 km al este del extremo sur del mar Muerto. Perspicacia
+  la propone solo de forma tentativa, por el posible sentido del nombre.
+summary: Lugar de Moab condenado por Jehová; por su camino gritan los fugitivos (Is 15:5; Jer 48:3, 5). Su nombre quizá signifique
+  dos cuevas. No se sabe con exactitud dónde estaba.
+reason: 'Perspicacia «Horonaim»; Is 15:5. OpenBible: solo el punto.'
+not_claimed:
+- 'Que sea la Hawronen que Mesá dice haber tomado en la Piedra Moabita: Perspicacia solo lo ve posible.'
+sources:
+- it-horonaim
+- openbible-geo
+- isaias-15
+links:
+- title: 'Perspicacia: «Horonaim»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002081
+  type: perspicacia
+- title: Isaías 15 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/23/15
+  type: bible
+checked_on: '2026-09-30'
+status: verified

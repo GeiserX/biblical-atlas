@@ -35,7 +35,7 @@ Qué versículos de la TNM se han leído y apuntado en `data/coverage/<libro>.ya
 | [Proverbios](../../../data/coverage/proverbios.yaml) | 31 de 31 | 915 de 915 | 100 % |
 | [Eclesiastés](../../../data/coverage/eclesiastes.yaml) | 12 de 12 | 222 de 222 | 100 % |
 | [El Cantar de los Cantares](../../../data/coverage/cantar-de-los-cantares.yaml) | 8 de 8 | 117 de 117 | 100 % |
-| Isaías | 0 de 66 | 0 de 1292 | 0 % |
+| [Isaías](../../../data/coverage/isaias.yaml) | 66 de 66 | 1292 de 1292 | 100 % |
 | Jeremías | 0 de 52 | 0 de 1364 | 0 % |
 | Lamentaciones | 0 de 5 | 0 de 154 | 0 % |
 | Ezequiel | 0 de 48 | 0 de 1273 | 0 % |
@@ -51,7 +51,7 @@ Qué versículos de la TNM se han leído y apuntado en `data/coverage/<libro>.ya
 | [Sofonías](../../../data/coverage/sofonias.yaml) | 3 de 3 | 53 de 53 | 100 % |
 | [Ageo](../../../data/coverage/ageo.yaml) | 2 de 2 | 38 de 38 | 100 % |
 | [Zacarías](../../../data/coverage/zacarias.yaml) | 14 de 14 | 211 de 211 | 100 % |
-| Malaquías | 0 de 4 | 0 de 55 | 0 % |
+| [Malaquías](../../../data/coverage/malaquias.yaml) | 4 de 4 | 55 de 55 | 100 % |
 | [Mateo](../../../data/coverage/mateo.yaml) | 28 de 28 | 1068 de 1068 | 100 % |
 | [Marcos](../../../data/coverage/marcos.yaml) | 16 de 16 | 661 de 661 | 100 % |
 | [Lucas](../../../data/coverage/lucas.yaml) | 24 de 24 | 1149 de 1149 | 100 % |
@@ -79,7 +79,7 @@ Qué versículos de la TNM se han leído y apuntado en `data/coverage/<libro>.ya
 | 3 Juan | 0 de 1 | 0 de 14 | 0 % |
 | Judas | 0 de 1 | 0 de 25 | 0 % |
 | Apocalipsis | 0 de 22 | 0 de 404 | 0 % |
-| **Total** | 826 de 1189 | 22409 de 31062 | 72 % |
+| **Total** | 896 de 1189 | 23756 de 31062 | 76 % |
 
 ## Capítulos empezados
 

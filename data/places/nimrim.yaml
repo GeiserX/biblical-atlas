@@ -1,0 +1,58 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: nimrim
+name: Nimrim
+names:
+- name: Nimrim
+- name: Aguas de Nimrim
+  note: Así las nombra Is 15:6.
+type: river
+lat: null
+lon: null
+precision: uncertain
+coord_source: null
+coord_url: null
+candidates:
+- name: Wadi en-Numeirah
+  geometry:
+    type: point
+    lat: 31.133611
+    lon: 35.526667
+  checked_on: '2026-09-30'
+  status: favored_level_1
+  sources:
+  - it-nimrim
+  - openbible-geo
+  reason: Perspicacia nota que el orden de los lugares de la profecía apunta al sur de Moab; por eso algunos prefieren este
+    wadi, unos 17 km al oeste-suroeste de Karak.
+  coord_source: openbible:ace3edc
+  coord_url: https://www.openbible.info/geo/ancient/ace3edc/nimrim
+- name: Wadi Nimrin
+  geometry:
+    type: point
+    lat: 31.8794
+    lon: 35.53933
+  checked_on: '2026-09-30'
+  status: alternative
+  sources:
+  - it-nimrim
+  - openbible-geo
+  reason: Otros, por lo fértil de la zona, lo ponen en este wadi que baja al Jordán al norte del mar Muerto (Perspicacia «Nimrim»).
+  coord_source: openbible:ace3edc
+  coord_url: https://www.openbible.info/geo/ancient/ace3edc/nimrim
+summary: Aguas de Moab que, según Isaías y Jeremías, se secarían por completo, en sentido figurado o porque el enemigo cegaría
+  sus arroyos (Is 15:6; Jer 48:34). Se duda entre un wadi del sur y otro del norte.
+reason: Perspicacia «Nimrim»; «Las profecías de Isaías I», cap. 15, párr. 10; Is 15:6.
+sources:
+- it-nimrim
+- ip1-15
+- openbible-geo
+- isaias-15
+links:
+- title: 'Perspicacia: «Nimrim»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003258
+  type: perspicacia
+- title: Isaías 15 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/23/15
+  type: bible
+checked_on: '2026-09-30'
+status: verified

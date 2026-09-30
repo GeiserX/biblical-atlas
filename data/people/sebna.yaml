@@ -6,13 +6,18 @@ names:
 - name: Sebnah
   note: Otra grafía, según la nota de 2Re 18:18.
 perspicacia: '1200003975'
-summary: Funcionario del rey Ezequías. Había estado sobre la casa real, pero Isaías anunció que Eliaquim ocuparía su puesto;
-  en 732 a.e.c. era el secretario y oyó al rabsaqué.
-reason: Perspicacia «Sebná, Sebnah»; Is 22:15-24; 2Re 18:18, 26, 37.
+summary: Mayordomo de la casa real en tiempos de Ezequías. Isaías le anunció que perdería el puesto por labrarse un sepulcro
+  llamativo; en 732 a.e.c. seguía sirviendo al rey como secretario.
+reason: Perspicacia «Sebná, Sebnah»; Is 22:15-19; 2Re 18:18, 37; Is 36:3.
 sources:
 - it-sebna
 - 2-reyes-18
 - 2-reyes-19
+- isaias-22
+- ip1-18
+- isaias-36
+- ip1-29
+- isaias-37
 links:
 - title: 'Perspicacia: «Sebná, Sebnah»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003975
@@ -27,13 +32,31 @@ relations:
 - type: tie
   person: ezequias
   word: master
-  inferred: true
+  inferred: false
   sources:
   - 2-reyes-18
   - it-sebna
   - 2-reyes-19
-  reason: Perspicacia «Sebná» lo llama oficial del rey Ezequías; 2Re 18:18, 37 lo da como secretario que informa al rey.
+  - isaias-22
+  - isaias-36
+  - isaias-37
+  reason: 'Is 37:2, 5: Ezequías lo envía a Isaías, y el texto lo cuenta entre los siervos del rey. Perspicacia lo llama oficial
+    de Ezequías.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: lived_in
+  place: jerusalen
+  inferred: true
+  sources:
+  - isaias-22
+  - ip1-18
+  - isaias-36
+  - ip1-29
+  reason: 'Is 22:15, 16: estaba sobre la casa real y se labraba allí su sepulcro; «Las profecías de Isaías I» sitúa esa tumba
+    en Jerusalén.'
   checked_on: '2026-09-30'
   status: verified
 checked_on: '2026-09-30'
 status: verified
+not_claimed:
+- 'Que Sebná muriera desterrado: «Las profecías de Isaías I» dice que no consta cómo se cumplió Is 22:18.'

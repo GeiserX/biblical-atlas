@@ -20,6 +20,9 @@ sources:
 - job-1
 - openbible-geo
 - hechos-7
+- isaias-23
+- isaias-47
+- isaias-48
 links:
 - title: 'Perspicacia: «Caldea, caldeo»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000917
@@ -27,5 +30,5 @@ links:
 - title: Job 1 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/18/1
   type: bible
-checked_on: '2026-09-29'
+checked_on: '2026-09-30'
 status: verified

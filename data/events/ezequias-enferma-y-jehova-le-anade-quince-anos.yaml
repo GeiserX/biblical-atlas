@@ -1,0 +1,46 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: ezequias-enferma-y-jehova-le-anade-quince-anos
+title: Ezequías enferma y Jehová le añade quince años
+date:
+  from: -731
+  to: -731
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 732 a.e.c.
+narrative_order:
+  series: isaias
+  order: 36001
+places:
+- jerusalen
+people:
+- ezequias
+- isaias
+present:
+- ezequias
+- isaias
+passages:
+- Is 38:1-8
+- Is 38:21, 22
+- 2Re 20:1-11
+summary: Ezequías enferma de muerte. Isaías se lo anuncia, el rey ora llorando y Jehová le manda decir que vivirá quince años
+  más y que librará la ciudad. La sombra retrocede diez escalones y una masa de higos lo cura.
+reason: Enfermó hacia cuando Senaquerib atacó Judá, su año 14 (732) (Perspicacia «Ezequías»; «Las profecías de Isaías I»,
+  cap. 29, párr. 23). Va antes de la liberación, porque Is 38:6 aún la promete. Is 38:21, 22 van con 2Re 20:7, 8.
+sources:
+- isaias-38
+- it-ezequias
+- it-sol
+- ip1-29
+- si-3
+- 2-reyes-20
+links:
+- title: Isaías 38 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/23/38
+  type: bible
+- title: 'Perspicacia: «Ezequías»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002011
+  type: perspicacia
+checked_on: '2026-09-30'
+status: verified

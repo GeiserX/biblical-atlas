@@ -1,0 +1,46 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: sargon
+name: Sargón
+names:
+- name: Sargón
+- name: Sargón II
+  note: Así lo llaman los historiadores, porque hubo antes un Sargón I, rey de Babilonia y no de Asiria.
+perspicacia: '1200003842'
+disambiguation: El rey asirio de Isaías 20:1, sucesor de Salmanasar V y padre de Senaquerib.
+summary: Rey de Asiria. La Biblia lo nombra una vez, cuando su tartán tomó Asdod. Sus ruinas de Jorsabad, halladas desde 1843,
+  acallaron a quienes dudaban de él. Murió poco después de estrenar su palacio.
+reason: Perspicacia «Sargón», párr. 1, 2, 7 y 9; «Las profecías de Isaías I», cap. 16, párr. 5 y 6; Is 20:1. Empezó a reinar
+  con la caída de Samaria, en 740 a.e.c., o poco después.
+sources:
+- it-sargon
+- ip1-16
+- isaias-20
+- si-3
+links:
+- title: 'Perspicacia: «Sargón»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003842
+  type: perspicacia
+- title: Isaías 20 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/23/20
+  type: bible
+relations:
+- type: holds_office
+  office: king
+  place: asiria
+  inferred: false
+  sources:
+  - isaias-20
+  reason: 'Is 20:1 lo llama «Sargón, el rey de Asiria», cuando envió al tartán contra Asdod.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: succeeds
+  person: salmanasar-v
+  office: king
+  inferred: true
+  sources:
+  - it-sargon
+  reason: 'Perspicacia «Sargón», párr. 1: ocupó el trono de Asiria después de Salmanasar V. Is 20:1 lo llama rey de Asiria.'
+  checked_on: '2026-09-30'
+  status: verified
+checked_on: '2026-09-30'
+status: verified

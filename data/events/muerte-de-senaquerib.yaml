@@ -4,12 +4,12 @@ title: Adramélec y Sarézer matan a Senaquerib en Nínive
 type: death
 date:
   from: -731
-  to: -711
+  to: -683
   precision: range
   approx: true
   type: narrative
   chronology: tnm
-  text: 'entre 732 y 712 a.e.c. (tiempo narrativo: algún tiempo después de volver de Judá)'
+  text: 'entre 732 y 684 a.e.c. (tiempo narrativo: después de volver a Nínive y antes de que su nieto Asurbanipal tomara Tebas)'
 narrative_order:
   series: 2-reyes
   order: 19037
@@ -21,10 +21,12 @@ people:
 - adramelec
 - sarezer-hijo-de-senaquerib
 - esar-hadon
+- adramelec-hijo-de-senaquerib
 present:
 - senaquerib
 - adramelec
 - sarezer-hijo-de-senaquerib
+- adramelec-hijo-de-senaquerib
 roles:
   senaquerib: died
 passages:
@@ -33,8 +35,8 @@ passages:
 - 2Cr 32:21
 summary: Mientras Senaquerib se postra ante Nisroc en el templo de ese dios, sus hijos Adramélec y Sarézer lo matan a espada
   y escapan a la tierra de Ararat. Otro hijo, Esar-Hadón, pasa a reinar.
-reason: 'Perspicacia «Senaquerib»: el texto no dice que muriera nada más volver; registros asirios de fiabilidad dudosa lo
-  ponen unos veinte años después de 732. «Rabsaqué» dice algún tiempo después.'
+reason: 'Perspicacia «Senaquerib»: la Biblia no dice que muriera nada más volver, y los registros asirios, poco fiables, hablan
+  de unos veinte años. Su nieto Asurbanipal ya tomó Tebas hacia 684 (Perspicacia «Cus»).'
 sources:
 - 2-reyes-19
 - it-senaquerib
@@ -42,9 +44,23 @@ sources:
 - it-esar-hadon
 - it-nisroc
 - si-3
+- isaias-37
+- it-adramelec
+- it-cus
 links:
 - title: 2 Reyes 19 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/19
   type: bible
+- title: Isaías 37 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/23/37
+  type: bible
+- title: 'Perspicacia: «Senaquerib»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003897
+  type: perspicacia
+history:
+- date: '2026-09-30'
+  change: 'Se funde con el suceso igual de 2 Reyes, dueño del relato: toma su título, su resumen y su orden en la serie de
+    2 Reyes. La fecha sigue hasta 684, que sostiene Perspicacia «Cus»; 712 no tenía fuente.'
+  source: 2-reyes-19
 checked_on: '2026-09-30'
 status: verified

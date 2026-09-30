@@ -1,0 +1,50 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: isaias-anuncia-el-juicio-y-la-salvacion-de-jehova
+title: Isaías anuncia el juicio y la salvación de Jehová
+date:
+  from: -777
+  to: -715
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 778 y 716 a.e.c. (tiempo narrativo: durante la obra de Isaías)'
+narrative_order:
+  series: isaias
+  order: 24001
+places:
+- juda
+- jerusalen
+- moab
+people:
+- isaias
+present: []
+passages:
+- Is 24:1-27:13
+summary: Isaías anuncia que Jehová dejará vacía la tierra de Judá porque su pueblo rompió el pacto, y que solo quedarán unos
+  pocos. También promete que un resto lo alabará y que Jehová reinará en Sion.
+reason: '«Toda Escritura», libro 23, párr. 17, agrupa Is 24:1-27:13. No lleva fecha: Isaías empezó hacia 778, y el encabezamiento
+  del libro las pone en días de reyes que acaban con Ezequías (716, A6-B). No dice dónde habló.'
+sources:
+- isaias-24
+- si-isaias
+- tnm-a6-b
+- tnm-tabla
+- it-isaias
+- it-isaias-libro
+- ip1-20
+- w06-isaias-1
+- isaias-25
+- ip1-21
+- isaias-26
+- isaias-27
+- it-leviatan
+links:
+- title: Isaías 24 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/23/24
+  type: bible
+- title: 'Perspicacia: «Isaías, Libro de»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002205
+  type: perspicacia
+checked_on: '2026-09-30'
+status: verified

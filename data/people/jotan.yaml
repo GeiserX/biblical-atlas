@@ -36,8 +36,9 @@ relations:
   - it-jotan
   - 2-reyes-15
   - mateo-1
+  - isaias-7
   reason: Hijo de Uzías y Jerusá (2Re 15:32-33).
-  checked_on: '2026-09-29'
+  checked_on: '2026-09-30'
   status: verified
 - type: succeeds
   person: uzias

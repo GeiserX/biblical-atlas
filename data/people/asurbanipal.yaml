@@ -24,6 +24,7 @@ sources:
 - it-asiria
 - it-no-amon
 - nahum-3
+- it-esar-hadon
 links:
 - title: 'Perspicacia: «Asurbanipal»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000430
@@ -57,7 +58,8 @@ relations:
   sources:
   - it-asnapar
   - it-esar-hadon
-  reason: 'Perspicacia «Asnapar», párr. 2, y «Esar-hadón», último párrafo: hijo de Esar-Hadón, que lo nombró heredero.'
+  reason: Perspicacia «Asnapar», párr. 2, dice que su padre fue Esar-Hadón, el rey de Esd 4:2, y «Esar-hadón», último párr.,
+    que este lo nombró heredero.
   checked_on: '2026-09-30'
   status: verified
 checked_on: '2026-09-30'

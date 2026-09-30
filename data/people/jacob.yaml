@@ -51,6 +51,7 @@ sources:
 - it-aram
 - oseas-12
 - josue-24
+- malaquias-1
 links:
 - title: 'Perspicacia: «Jacob»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002279
@@ -320,7 +321,7 @@ relations:
   checked_on: '2026-09-29'
   status: verified
 perspicacia: 1200002279#1
-checked_on: '2026-09-29'
+checked_on: '2026-09-30'
 status: verified
 distinct_from:
 - jacob-hijo-de-mattan

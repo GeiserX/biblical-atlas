@@ -24,6 +24,11 @@ sources:
 - 2-reyes-19
 - 2-reyes-20
 - 2-reyes-21
+- isaias-36
+- isaias-37
+- ip1-29
+- isaias-38
+- isaias-39
 links:
 - title: 'Perspicacia: «Ezequías»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002011
@@ -86,7 +91,8 @@ relations:
   - 2-reyes-18
   - it-ezequias
   - 2-reyes-20
-  reason: '2Re 18:3: hizo lo bueno como su antepasado David.'
+  - isaias-38
+  reason: 'Is 38:5: Jehová, el Dios de su antepasado David, le responde por medio de Isaías.'
   checked_on: '2026-09-30'
   status: verified
 - type: lived_in
@@ -95,7 +101,10 @@ relations:
   sources:
   - 2-reyes-18
   - it-ezequias
-  reason: '2Re 18:2, 17: reinó 29 años en Jerusalén, donde estaba cuando llegó el ejército asirio.'
+  - isaias-36
+  - isaias-37
+  - isaias-38
+  reason: 'Is 36:2: el ejército asirio va a Jerusalén, donde estaba el rey Ezequías.'
   checked_on: '2026-09-30'
   status: verified
 - type: tie
@@ -106,7 +115,10 @@ relations:
   - 2-reyes-18
   - it-ezequias
   - it-senaquerib
-  reason: '2Re 18:7, 13-17: se rebeló contra Asiria; Senaquerib invadió Judá y le exigió rendir Jerusalén.'
+  - isaias-36
+  - isaias-37
+  reason: 'Is 36:1, 5: Senaquerib ataca Judá y el rabsaqué reprocha a Ezequías que se rebelara contra el rey de Asiria (2Re
+    18:7).'
   checked_on: '2026-09-30'
   status: verified
 - type: kin

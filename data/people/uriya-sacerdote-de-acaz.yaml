@@ -4,9 +4,9 @@ name: Uriya
 names:
 - name: Uriya
 - name: Urías
-  note: Así se le llama en Isaías 8:2, según Perspicacia «Uriya», núm. 1.
+  note: Así lo escribe Is 8:2. Perspicacia «Urías», núm. 2, remite a «Uriya», núm. 1.
 perspicacia: 1200004523#1
-disambiguation: Sacerdote en días de Acaz; no es el profeta Uriya hijo de Semaya, ni el sacerdote hijo de Haqoz, ni Urías
+disambiguation: Sacerdote en tiempos de Acaz; no el profeta hijo de Semaya ni el sacerdote padre de Meremot, y tampoco Urías
   el hitita.
 distinct_from:
 - urias-el-hitita
@@ -18,19 +18,24 @@ date:
   type: narrative
   chronology: tnm
   text: 'entre 762 y 746 a.e.c. (tiempo narrativo: sacerdote en el reinado de Acaz)'
-summary: Sacerdote de Jerusalén en el reinado de Acaz. Construyó un altar según el plano que el rey mandó desde Damasco e
-  hizo en él las ofrendas que Acaz le ordenó. Quizá era el sumo sacerdote.
-reason: Perspicacia «Uriya», núm. 1; 2Re 16:10-16. Años del reinado de Acaz según A6-B.
+summary: Sacerdote en el reinado de Acaz. Fue testigo de lo que Isaías escribió en una tablilla grande, y construyó para el
+  rey un altar copiado del que este vio en Damasco. Perspicacia supone que era el sumo sacerdote.
+reason: Perspicacia «Uriya», núm. 1, y «Urías», núm. 2; Is 8:2; 2Re 16:10-16. Años del reinado de Acaz según A6-B.
 sources:
 - it-uriya
 - 2-reyes-16
 - tnm-a6-b
+- it-urias
+- isaias-8
 links:
 - title: 'Perspicacia: «Uriya»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004523
   type: perspicacia
 - title: 2 Reyes 16 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/16
+  type: bible
+- title: Isaías 8 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/23/8
   type: bible
 not_claimed:
 - 'Que fuera sumo sacerdote: el texto no lo dice y Perspicacia solo lo supone.'
@@ -41,7 +46,8 @@ relations:
   sources:
   - 2-reyes-16
   - it-uriya
-  reason: 2Re 16:10, 11 lo llaman el sacerdote Uriya.
+  - isaias-8
+  reason: Is 8:2 lo llama «el sacerdote Urías»; 2Re 16:10-16 lo muestra sirviendo en el templo a las órdenes de Acaz.
   checked_on: '2026-09-30'
   status: verified
 - type: lived_in

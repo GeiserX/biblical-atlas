@@ -25,6 +25,7 @@ passages:
 - Mt 8:14-17
 - Mr 1:21-34
 - Lu 4:31-41
+- Is 53:4
 summary: Un sábado, Jesús expulsa un demonio en la sinagoga de Capernaúm. En casa de Pedro cura a su suegra, que tenía fiebre,
   y al anochecer a muchos enfermos que le traen a la puerta.
 reason: 'A7-C, fila 4: Capernaúm. Perspicacia «Capernaum» (párr. 6) dice que Pedro y Andrés tenían allí su casa.'
@@ -35,5 +36,6 @@ sources:
 - lucas-4
 - it-capernaum
 - jy-cap-23
-checked_on: '2026-09-28'
+- isaias-53
+checked_on: '2026-09-30'
 status: verified

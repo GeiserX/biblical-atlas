@@ -1229,7 +1229,59 @@ def parents_children(hacia, words, err):
 
 # ---------------------------------------------------------------- sucesos (modelo.md, sección 7)
 
+RE_PASAJE = re.compile(r"^\s*((?:[123]\s?)?[^\d\s][^\d]*?)\.?\s+(\d[\d:,;\s–-]*)$")
+# Un tramo entre comas y puntos y comas: «v», «c:v», «v-v», «c:v-v» o «c:v-c:v». Nada vacío ni de más.
+RE_TRAMO = re.compile(r"^\s*(\d+)(?::(\d+))?(?:\s*-\s*(\d+)(?::(\d+))?)?\s*$")
+_FORMAS_LIBRO = {}
+
+
+def check_passages(o, donde, err, libros):
+    """Cada pasaje de passages cae en un capítulo del libro y en un versículo de ese capítulo (verses de
+    data/books.yaml): «Mal 3:19» es un error, porque Malaquías 3 tiene 18. Formas: «Rut 1:1-5», «1Sa 15:32, 33»,
+    «Joe 1:1-3:21», «Mt 26:30, 36-56», «Abd 11-14» (libro de un capítulo) y «Sl 34» (capítulos enteros)."""
+    clave = id(libros)
+    if clave not in _FORMAS_LIBRO:
+        _FORMAS_LIBRO.clear()
+        _FORMAS_LIBRO[clave] = bible_coverage.Citas(libros).por_forma
+    por_forma = _FORMAS_LIBRO[clave]
+    for i, pasaje in enumerate(o.get("passages") or []):
+        pd = f"{donde} passages[{i}] «{pasaje}»"
+        m = RE_PASAJE.match(str(pasaje))
+        libro = por_forma.get(bible_coverage._norm(m.group(1))) if m else None
+        if not libro:
+            err(f"{pd}: no se entiende como «<libro> <capítulo>:<versículos>» de data/books.yaml")
+            continue
+        items = [item for seg in m.group(2).replace("–", "-").split(";") for item in seg.split(",")]
+        malos = [item.strip() for item in items if not RE_TRAMO.match(item)]
+        if malos:
+            err(f"{pd}: {', '.join(f'«{x}»' for x in malos)} no es un tramo «v», «c:v», «v-v», «c:v-v» ni «c:v-c:v» "
+                f"(sin huecos entre comas y puntos y comas, ni dos puntos o guiones de más)")
+            continue
+        n, versos = int(libro.get("chapters") or 0), libro.get("verses")
+        tramos = [RE_TRAMO.match(item).groups() for item in items]
+        solo_caps = n > 1 and tramos[0][1] is None
+        cap = 1 if n == 1 else None
+        puntos = []
+        for x1, y1, x2, y2 in tramos:
+            for x, y in ((x1, y1), (x2, y2)):
+                if x is None:
+                    continue
+                if y is not None:
+                    cap = int(x)
+                    puntos.append((cap, int(y)))
+                elif solo_caps:
+                    puntos.append((int(x), None))
+                elif cap is not None:
+                    puntos.append((cap, int(x)))
+        for c, v in puntos:
+            if not 1 <= c <= n:
+                err(f"{pd}: {libro.get('name')} no tiene capítulo {c} (tiene {n})")
+            elif v is not None and isinstance(versos, list) and len(versos) == n and not 1 <= v <= versos[c - 1]:
+                err(f"{pd}: {libro.get('name')} {c} no tiene versículo {v} (tiene {versos[c - 1]})")
+
+
 def check_event(o, donde, err, warn, datos, meses):
+    check_passages(o, donde, err, datos["books"])
     voc = datos["vocabulary"]
     event_types, event_roles = voc.get("event_types") or {}, voc.get("event_roles") or {}
     places = {p.get("id") for p in datos["places"]}

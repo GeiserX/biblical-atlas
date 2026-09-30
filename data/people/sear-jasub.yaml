@@ -1,0 +1,45 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: sear-jasub
+name: Sear-Jasub
+names:
+- name: Sear-Jasub
+  note: 'La nota de Is 7:3 da su sentido: «solo un resto volverá».'
+perspicacia: '1200003969'
+summary: Primer hijo de Isaías. Fue con su padre a llevar a Acaz el mensaje de Jehová. Su nombre anunciaba que solo un resto
+  volvería del destierro, como pasó en 537 a.e.c.
+reason: Perspicacia «Sear-jasub» e «Isaías», apartado de su familia; Is 7:3 y 8:18.
+sources:
+- it-sear-jasub
+- it-isaias
+- isaias-7
+- isaias-8
+links:
+- title: 'Perspicacia: «Sear-jasub»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003969
+  type: perspicacia
+- title: Isaías 7 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/23/7
+  type: bible
+relations:
+- type: kin
+  person: isaias
+  word: father
+  inferred: false
+  sources:
+  - isaias-7
+  - it-sear-jasub
+  reason: 'Is 7:3: Jehová manda a Isaías salir con su hijo Sear-Jasub.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: lived_in
+  place: jerusalen
+  inferred: true
+  sources:
+  - si-isaias
+  - isaias-7
+  reason: «Toda Escritura», libro 23, párr. 3, sitúa a Isaías en Jerusalén con su esposa y al menos dos hijos; Is 7:3 da a
+    Sear-Jasub como uno de ellos.
+  checked_on: '2026-09-30'
+  status: verified
+checked_on: '2026-09-30'
+status: verified

@@ -28,7 +28,7 @@ candidates:
   coord_url: https://www.openbible.info/geo/ancient/ad9b1cd/jahaz
   note: Centro en el punto de OpenBible; el radio de 20 km es nuestro, para no fijar un sitio dudoso.
 summary: Ciudad al este del Jordán, al parecer al norte del Arnón, donde Sehón salió a pelear contra Israel y fue vencido.
-  Pasó a Rubén y después a los levitas de Merarí.
+  Pasó a Rubén y después a los levitas de Merarí. Más tarde volvió a Moab.
 reason: Perspicacia «Jáhaz» y «Amorreo»; Nú 21:23, 24.
 sources:
 - it-jahaz
@@ -39,6 +39,7 @@ sources:
 - josue-13
 - josue-21
 - jueces-11
+- isaias-15
 links:
 - title: 'Perspicacia: «Jáhaz»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002290
@@ -46,5 +47,9 @@ links:
 - title: Números 21 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/21
   type: bible
-checked_on: '2026-09-29'
+history:
+- date: '2026-09-30'
+  change: 'Añade que volvió a dominio moabita: Mesá dice haberla tomado e Isaías la nombra contra Moab (Perspicacia «Jáhaz»).'
+  source: isaias-15
+checked_on: '2026-09-30'
 status: verified

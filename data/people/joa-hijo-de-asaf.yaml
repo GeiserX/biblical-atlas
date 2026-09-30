@@ -6,20 +6,25 @@ names:
 - name: Joah
   note: Grafía de Perspicacia.
 perspicacia: 1200002470#3
-disambiguation: Funcionario de Ezequías, hijo de Asaf; no es el levita Joah hijo de Zimá ni el registrador de Josías.
-summary: Hijo de Asaf y funcionario de Ezequías, probablemente el registrador. Con Eliaquim y Sebná pidió al rabsaqué que
-  hablara en arameo y llevó sus amenazas al rey.
-reason: 'Perspicacia «Joah», núm. 3: la frase no aclara quién era el registrador, pero ve más probable que fuera Joah; 2Re
-  18:18, 26, 37.'
+disambiguation: Joá hijo de Asaf, funcionario de Ezequías; no el portero hijo de Obed-Edom, ni el levita hijo de Zimá, ni
+  el registrador de Josías, hijo de Joacaz.
+summary: Funcionario de Ezequías, hijo de Asaf y probablemente su registrador. Con Eliaquim y Sebná fue a oír al rabsaqué,
+  calló por orden del rey y le llevó el informe con la ropa rasgada.
+reason: Perspicacia «Joah», núm. 3; Is 36:3, 11, 21, 22; 2Re 18:18, 26, 37.
 sources:
 - it-joah
 - 2-reyes-18
+- isaias-36
+- ip1-29
 links:
 - title: 'Perspicacia: «Joah»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002470
   type: perspicacia
 - title: 2 Reyes 18 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/18
+  type: bible
+- title: Isaías 36 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/23/36
   type: bible
 relations:
 - type: kin
@@ -29,18 +34,32 @@ relations:
   sources:
   - 2-reyes-18
   - it-joah
-  reason: '2Re 18:18, 37: Joá hijo de Asaf.'
+  - isaias-36
+  reason: Is 36:3, 22 lo llaman Joá hijo de Asaf.
   checked_on: '2026-09-30'
   status: verified
 - type: tie
   person: ezequias
   word: master
-  inferred: true
+  inferred: false
   sources:
   - 2-reyes-18
   - it-joah
-  reason: 'Perspicacia «Joah», núm. 3: era del grupo que Ezequías envió a oír al rabsaqué (2Re 18:18, 36, 37).'
+  - isaias-36
+  reason: 'Is 36:21, 22: calla por orden del rey y le informa; Perspicacia lo pone en el grupo que envió Ezequías.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: lived_in
+  place: jerusalen
+  inferred: true
+  sources:
+  - isaias-36
+  - ip1-29
+  reason: 'Is 36:2, 3, 22: sale de Jerusalén a oír al rabsaqué y vuelve ante el rey; «Las profecías de Isaías I» dice que
+    salieron fuera de las murallas.'
   checked_on: '2026-09-30'
   status: verified
 checked_on: '2026-09-30'
 status: verified
+not_claimed:
+- 'Que el cargo de registrador fuera seguro suyo y no de su padre: la frase no lo aclara, y Perspicacia solo lo ve más probable.'

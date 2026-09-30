@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>biblical-earth · La Biblia en el mapa y en el tiempo</title>
+<meta name="description" content="Un atlas para estudiar la Biblia: cada relato en su lugar y en su tiempo, con su fuente.">
+<script>
+  // Modo reunión antes de pintar, con la misma preferencia que el sitio (base.js, iniciarReunion).
+  try { if (localStorage.getItem('biblical-earth:pref:reunion') === '1' || /[?&]tema=reunion/.test(location.search)) document.documentElement.classList.add('be-reunion'); } catch { /* sin almacenamiento */ }
+  document.documentElement.classList.add('fb-js');
+</script>
+<!-- Dónde está el sitio, el aviso si no carga y la letra grande: lo comparten los seis prototipos. -->
+<script src="../assets/sitio.js"></script>
+<link rel="stylesheet" href="../assets/kit/tokens.css">
+<link rel="stylesheet" href="../assets/kit/components.css">
+<link rel="stylesheet" href="fullbleed.css">
+<link rel="icon" href="../assets/kit/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+<main class="fb" id="fb-portada">
+
+  <!-- 1. La imagen: nuestro relieve de Egipto a Mesopotamia, lavado hacia el papel por el lado de las palabras. -->
+  <section class="fb-heroe" id="fb-heroe" data-img="bible-lands" aria-labelledby="fb-nombre">
+    <div class="fb-heroe__fondo" aria-hidden="true">
+      <div class="fb-lienzo" id="fb-lienzo">
+        <img class="fb-lienzo__img" id="fb-img" alt="" width="2560" height="1440" fetchpriority="high" decoding="async"
+          src="../assets/img/bible-lands-wide-1280.webp"
+          srcset="../assets/img/bible-lands-wide-1280.webp 1280w, ../assets/img/bible-lands-wide.webp 2560w"
+          sizes="(max-width: 760px) 170vw, 92vw">
+        <!-- La rama de olivo, una sola vez, al 38 % sobre el mar. -->
+        <svg class="fb-marca" id="fb-marca" viewBox="0 0 64 64" focusable="false">
+          <path class="fb-marca__hojas" d="M14 53Q15.2 40.2 3.5 34.7Q2.3 47.6 14 53Z M25.5 40Q33.8 49.9 45.9 45.5Q37.6 35.6 25.5 40Z M38 23Q40 11.4 29.4 6.1Q27.5 17.7 38 23Z M46.5 15.5Q52.5 23.5 61.9 20Q55.9 12 46.5 15.5Z"/>
+          <path class="fb-marca__tallo" d="M8 57C18 50 24 42 30 33C36 24 44 14 57 8" fill="none" stroke-width="5" stroke-linecap="round"/>
+          <circle class="fb-marca__oliva" cx="20.5" cy="47" r="6"/><circle class="fb-marca__oliva" cx="31" cy="31.5" r="6"/><circle class="fb-marca__oliva" cx="47.5" cy="13.5" r="6"/>
+        </svg>
+      </div>
+      <div class="fb-heroe__velo"></div>
+    </div>
+
+    <div class="fb-heroe__arriba">
+      <button type="button" class="fb-icono fb-icono--letra" id="fb-letra" aria-pressed="false" title="Letra grande"><span aria-hidden="true">Aa</span><span class="sr-only">Letra grande</span></button>
+      <button type="button" class="fb-icono" id="fb-reunion" aria-pressed="false" title="Modo reunión: fondo oscuro y sin animaciones">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19.5 14.5A7.5 7.5 0 0 1 9.5 4.5a7.5 7.5 0 1 0 10 10Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+        <span class="sr-only">Modo reunión</span>
+      </button>
+    </div>
+
+    <div class="fb-heroe__palabras">
+      <h1 class="fb-nombre" id="fb-nombre">biblical-earth</h1>
+      <span class="fb-regla" aria-hidden="true"></span>
+      <p class="fb-lema">La Biblia en el mapa y en el tiempo</p>
+      <p class="fb-que">Un atlas en español para estudiar la Biblia: cada relato en su lugar y en su fecha, con su fuente.</p>
+
+      <form class="fb-accion" id="fb-accion" role="search" autocomplete="off">
+        <div class="fb-busca" id="fb-busca">
+          <svg class="fb-busca__lupa" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="m16 16 4.5 4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          <label class="sr-only" for="fb-q">Buscar en el atlas</label>
+          <input id="fb-q" name="q" type="search" enterkeyhint="search" spellcheck="false"
+            placeholder="Busca una persona, un lugar, un capítulo o un año"
+            role="combobox" aria-expanded="false" aria-controls="fb-lista" aria-autocomplete="list" aria-describedby="fb-q-ayuda">
+          <span class="sr-only" id="fb-q-ayuda">Escribe y elige con las flechas, o pulsa Intro para ir al mapa.</span>
+        </div>
+        <button type="submit" class="fb-entrar" id="fb-entrar">Entrar al mapa</button>
+        <div class="fb-lista" id="fb-lista" role="listbox" aria-label="Sugerencias" hidden></div>
+      </form>
+      <p class="fb-ejemplos" role="group" aria-labelledby="fb-ejemplos-k"><span class="fb-ejemplos__k" id="fb-ejemplos-k">Prueba:</span>
+        <button type="button" class="fb-ejemplo" data-ejemplo="Pedro">Pedro</button>
+        <button type="button" class="fb-ejemplo" data-ejemplo="Hch 16">Hch 16</button>
+        <button type="button" class="fb-ejemplo" data-ejemplo="607 a.e.c.">607 a.e.c.</button></p>
+      <p class="fb-destino" id="fb-destino">«Entrar al mapa» lo abre en 537 a.e.c., sobre este mismo relieve: la vuelta de Babilonia a Jerusalén.</p>
+      <p class="fb-primera"><a href="#paseo" id="fb-paseo-enlace">¿Primera vez? Mira cómo funciona en tres pasos</a></p>
+    </div>
+
+    <!-- La línea de seis fechas del banner, a escala real, que se puede tocar. La pinta fullbleed.js. -->
+    <div class="fb-fechas" id="fb-fechas">
+      <h2 class="sr-only" id="fb-fechas-tit">Seis fechas, de 4026 a.e.c. a 100 e.c.</h2>
+      <p class="fb-fechas__pie" id="fb-fechas-pie" aria-hidden="true">Seis fechas a escala real. Toca una para entrar en ese momento.</p>
+      <div class="fb-fechas__linea" id="fb-fechas-linea" role="group" aria-labelledby="fb-fechas-tit"></div>
+    </div>
+
+    <p class="fb-credito">Relieve: Natural Earth, USGS, NOAA, Copernicus, Mapzen · <a href="../../../../../site/acerca.html#gracias">Créditos</a></p>
+  </section>
+
+  <!-- 2. La página, por debajo. Cada zona hace una sola cosa; ninguna raya de ancho completo las separa. -->
+  <div class="fb-zonas" id="fb-zonas">
+
+    <section class="fb-zona fb-vuelves" id="fb-vuelves" aria-labelledby="fb-vuelves-tit" hidden>
+      <h2 class="fb-caps" id="fb-vuelves-tit">Para seguir</h2>
+      <ul class="fb-vuelves__lista" id="fb-vuelves-lista"></ul>
+      <p class="fb-vuelves__nota">Guardado solo en este navegador. <button type="button" class="fb-enlace" id="fb-olvidar">Olvidar esta lista</button></p>
+    </section>
+
+    <section class="fb-zona fb-pregunta" aria-labelledby="fb-pregunta-tit">
+      <h2 class="fb-titulo" id="fb-pregunta-tit">Empieza por una pregunta</h2>
+      <div id="fb-pregunta"></div>
+    </section>
+
+    <section class="fb-zona fb-epocas" aria-labelledby="fb-epocas-tit">
+      <div class="fb-zona__cab">
+        <div>
+          <h2 class="fb-titulo" id="fb-epocas-tit">Nueve épocas, cada una donde ocurrió</h2>
+          <p class="fb-sub">Toca una y el mapa se abre en este mismo recorte, con la línea de tiempo en sus fechas.</p>
+        </div>
+        <button type="button" class="fb-enlace fb-enlace--44" id="fb-linea-completa">Ver toda la línea de tiempo</button>
+      </div>
+      <ol class="fb-epocas__lista" id="fb-epocas"></ol>
+    </section>
+
+    <section class="fb-zona fb-recorridos" aria-labelledby="fb-recorridos-tit">
+      <div class="fb-zona__cab">
+        <div>
+          <h2 class="fb-titulo" id="fb-recorridos-tit">Recorridos guiados</h2>
+          <p class="fb-sub">Paradas en orden, cada una con su fecha, su lugar y sus pasajes. Se retoman donde los dejaste.</p>
+        </div>
+      </div>
+      <ul class="fb-recorridos__lista" id="fb-recorridos"></ul>
+    </section>
+
+    <section class="fb-zona fb-dato" aria-labelledby="fb-dato-tit">
+      <div class="fb-zona__cab">
+        <div>
+          <h2 class="fb-titulo" id="fb-dato-tit">Cada dato, con su fuente</h2>
+          <p class="fb-sub" id="fb-cifras">Sucesos, lugares y personas, cada uno con su fuente.</p>
+        </div>
+      </div>
+      <div class="fb-dato__cuerpo">
+        <article class="fb-dato__ficha" id="fb-dato"></article>
+        <div class="fb-dato__niveles">
+          <h3 class="fb-caps">De dónde salen los datos</h3>
+          <p><span class="fb-nivel fb-nivel--1" aria-hidden="true"></span> <span><b>Nivel 1.</b> La Traducción del Nuevo Mundo y wol.jw.org. Enlazamos; no copiamos sus textos.</span></p>
+          <p><span class="fb-nivel fb-nivel--2" aria-hidden="true"></span> <span><b>Nivel 2.</b> Arqueología e investigación, solo cuando jw.org las usa, y siempre con su fuente.</span></p>
+          <p><span class="fb-nivel fb-nivel--x" aria-hidden="true"></span> <span><b>Sin verificar.</b> Se ve marcado, nunca escondido.</span></p>
+          <p><a class="fb-enlace fb-enlace--44" href="../../../../../site/acerca.html#datos">Cómo trabajamos con los datos</a></p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="fb-pie">
+      <p>Relieve: Natural Earth, USGS, NOAA, Copernicus, Mapzen · Coordenadas: OpenBible.info (CC BY 4.0) · <a href="../../../../../site/acerca.html#gracias">Créditos</a></p>
+      <p>En español · Sitio estático, sin cuentas · Código libre, GPL-3.0 · <a href="../../../../../site/acerca.html">Qué es biblical-earth</a> · <span id="fb-fecha-datos">Datos del 29 de septiembre de 2026</span></p>
+    </footer>
+  </div>
+</main>
+
+<!-- El sitio de verdad, detrás. Lo crea fullbleed.js cuando la página está quieta. -->
+<div class="fb-marco" id="fb-marco" hidden></div>
+
+<!-- El primer paseo (A8): tres tarjetas sobre el mapa vivo, siempre opcional. -->
+<section class="fb-paseo" id="fb-paseo" role="dialog" aria-modal="false" aria-labelledby="fb-paseo-tit" hidden>
+  <p class="fb-caps" id="fb-paseo-paso">Paso 1 de 3</p>
+  <h2 class="fb-paseo__tit" id="fb-paseo-tit" tabindex="-1"></h2>
+  <p class="fb-paseo__texto" id="fb-paseo-texto"></p>
+  <div class="fb-paseo__botones">
+    <button type="button" class="fb-boton fb-boton--primario" id="fb-paseo-sigue">Siguiente</button>
+    <button type="button" class="fb-boton" id="fb-paseo-sale">Salir del paseo</button>
+  </div>
+</section>
+
+<!-- Solo del prototipo, no del diseño: el paso a los otros cinco diseños y los estados para probar. -->
+<nav class="fb-proto" aria-label="Prototipo: otros diseños de la portada">
+  <details id="fb-proto">
+    <summary>Prototipo · diseño 2 de 6</summary>
+    <ul class="fb-proto__disenos">
+      <li><a href="../veil/">Velo</a></li>
+      <li><a href="../fullbleed/" aria-current="page">Una imagen a pantalla completa</a></li>
+      <li><a href="../time/">Tiempo</a></li>
+      <li><a href="../question/">Pregunta</a></li>
+      <li><a href="../live/">Vivo</a></li>
+      <li><a href="../tuned/">Afinado</a></li>
+    </ul>
+    <p class="fb-proto__cab">Estados</p>
+    <ul class="fb-proto__estados">
+      <li><a href="?">Primera visita</a></li>
+      <li><a href="?estado=vuelve">Quien vuelve (historial simulado, A7)</a></li>
+      <li><a href="?imagen=pablo">Comparación: los viajes de Pablo</a></li>
+      <li><a href="?tema=reunion">Modo reunión</a></li>
+      <li><a href="?fundir=1">K1 con fundido al mapa vivo</a></li>
+      <li><a href="?sinmapa=1">Solo la imagen, sin mapa vivo</a></li>
+    </ul>
+    <p class="fb-proto__nota" id="fb-proto-nota"></p>
+  </details>
+</nav>
+
+<div class="sr-only" id="fb-anuncio" aria-live="polite"></div>
+<script src="data.js"></script>
+<script src="fullbleed.js"></script>
+</body>
+</html>

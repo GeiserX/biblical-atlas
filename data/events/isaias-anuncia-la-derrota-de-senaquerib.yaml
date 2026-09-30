@@ -1,0 +1,43 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: isaias-anuncia-la-derrota-de-senaquerib
+title: Isaías anuncia la derrota de Senaquerib
+date:
+  from: -731
+  to: -731
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 732 a.e.c.
+narrative_order:
+  series: isaias
+  order: 37021
+places:
+- jerusalen
+people:
+- isaias
+- ezequias
+- senaquerib
+type: speech
+roles:
+  isaias: spoke
+present:
+- ezequias
+passages:
+- Is 37:21-35
+- 2Re 19:20-34
+summary: 'Isaías manda decir a Ezequías que Jehová oyó su oración: Sion se ríe del asirio, que no entrará en la ciudad ni
+  le lanzará una flecha y volverá por donde vino. Jehová la defenderá por él y por David.'
+reason: Responde a la oración de Is 37:14-20, en 732 a.e.c. (estudio 3). El texto dice que Isaías envió el mensaje, no dónde
+  estaba él; Ezequías seguía en Jerusalén.
+sources:
+- isaias-37
+- si-3
+- ip1-29
+- 2-reyes-19
+links:
+- title: Isaías 37 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/23/37
+  type: bible
+checked_on: '2026-09-30'
+status: verified

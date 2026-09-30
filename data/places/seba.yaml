@@ -26,14 +26,18 @@ candidates:
   note: 'Centro: punto que OpenBible da a Cus, la Etiopía antigua, al lado de Meroe. Radio nuestro.'
   coord_source: openbible:ac5a1ec
   coord_url: https://www.openbible.info/geo/ancient/ac5a1ec/cush-1
-summary: Tierra del este de África cuyos habitantes se llamaban sabeos. Sl 72:10 la pone entre los lugares lejanos cuyos reyes
-  traerán regalos. No es Saba, el reino de Arabia.
+summary: Tierra del este de África cuyos habitantes se llamaban sabeos; Is 45:14 los describe como gente alta. Sl 72:10 la
+  pone entre los lugares lejanos cuyos reyes traerán regalos. No es Saba, el reino de Arabia.
 reason: 'Perspicacia «Sebá», núm. 2; Sl 72:10. OpenBible no tiene ficha de Sebá: la zona se centra en su punto de Cus.'
 sources:
 - it-seba-cus
 - it-cus
 - salmos-72
 - openbible-geo
+- isaias-43
+- ip2-4
+- isaias-45
+- it-sabeos
 links:
 - title: 'Perspicacia: «Sebá»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003871
@@ -41,5 +45,10 @@ links:
 - title: Salmo 72 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/19/72
   type: bible
-checked_on: '2026-09-29'
+history:
+- date: '2026-09-30'
+  change: Se añade que Is 45:14 describe a los sabeos como gente alta; Perspicacia «Sabeos», núm. 2, y «Sebá», núm. 2, los
+    hacen habitantes de Sebá.
+  source: isaias-45
+checked_on: '2026-09-30'
 status: verified

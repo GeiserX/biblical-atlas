@@ -23,6 +23,7 @@ passages:
 - Lu 22:31-38
 - Jn 13:31-38
 - Zac 13:7
+- Is 53:12
 summary: Jesús anuncia que todos lo abandonarán y que Pedro negará conocerlo tres veces antes de que cante el gallo.
   Pedro asegura que no lo hará.
 reason: La tabla A7-H da el día y el lugar. Mt 26:31-35 y los pasajes paralelos.
@@ -35,6 +36,7 @@ sources:
 - jy-cap-118
 - jy-cap-123
 - zacarias-13
+- isaias-53
 narrative_order:
   series: a7
   order: 114
@@ -43,5 +45,5 @@ history:
 - date: '2026-09-29'
   change: La razón citaba la tabla A7-G, pero este suceso está en A7-H (parte 2), que es la que ya lleva en fuentes.
   source: tnm-a7-h
-checked_on: '2026-09-29'
+checked_on: '2026-09-30'
 status: verified

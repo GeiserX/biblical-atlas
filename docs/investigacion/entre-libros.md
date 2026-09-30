@@ -105,9 +105,9 @@ Los campos, los tipos de relación y sus palabras se nombran como en el esquema 
 - **Baal de Peor.** Os 9:10 alude a Nú 25: el suceso va en `mentions` del tramo Oseas 9:10-14.
 - **Admá y Zeboyim.** `destruccion-de-sodoma-y-gomorra` no las lleva en `places`, aunque Dt 29:23 las pone con Sodoma y Gomorra. Deuteronomio decide.
 
-## Para Isaías, Jeremías, Ezequiel y los demás profetas (desde Oseas)
+## Para Jeremías, Ezequiel y los demás profetas (desde Oseas)
 
-- **Menfis.** `menfis` lleva Nof en `names`: Is 19:13, Jer 2:16, 44:1, 46:14 y Ez 30 usan ese id.
+- **Menfis.** `menfis` lleva Nof en `names`: Jer 2:16, 44:1, 46:14 y Ez 30 usan ese id, como ya Is 19:13.
 - **Profecías sin escena.** Oseas 4-14 lleva un solo suceso, `juicios-profeticos-contra-efrain-y-juda` (Os 4:1-14:9, la sección de «Toda Escritura»), con fecha narrativa de la obra del profeta y `present: []`. Cada tramo lo pone en `entities`.
 - **«David su rey».** Os 3:5 lleva `person:david` y `person:jesus` en `mentions`: el nombre es el del rey histórico, y La Atalaya de 1991 lo aplica a Jesucristo, descendiente de David. Am 9:11 la sigue: Perspicacia «Cabaña» une la cabaña de David a Jesús, rey de su línea. Jer 30:9, Ez 34:23, 24 y 37:24, 25 siguen la misma regla.
 - **Alusiones al éxodo.** Los versículos que Perspicacia da como alusión a la salida de Egipto (Os 2:15; 11:1; 12:13) van en `passages` de `exodo` y en `entities`. La fórmula «tu Dios desde la tierra de Egipto» (Os 12:9; 13:4) va solo en `mentions`. Amós añade un caso: los versículos que afirman con sus palabras que Jehová sacó a Israel de Egipto (Am 2:10; 3:1; 9:7) van en `passages`, aunque Perspicacia no los cite. Miqueas lo hizo con Miq 6:4. Míriam no entra en `people` de `exodo`: sus pasajes son la noche de la salida, y el canto de Éx 15:20, 21, que es lo que recuerda La Atalaya de 2003, ya es `israel-canta-junto-al-mar-rojo`. Si Éxodo la quiere en `exodo`, lo explica en la `reason` del suceso.
@@ -121,7 +121,7 @@ Los campos, los tipos de relación y sus palabras se nombran como en el esquema 
 
 - **Un suceso por libro.** Amós lo siguió con `amos-profetiza-contra-israel` (Am 1:1-9:15), y su escena con Amasías en Betel es un suceso aparte. Joel lleva uno solo, `joel-anuncia-el-dia-de-jehova` (Joe 1:1-3:21), anclado en c. 820 a.e.c. (?) y con `present: []`, como Oseas 4-14.
 - **Las langostas de Joel 1 y 2.** Manda La Atalaya de abril de 2020 (`w20-ataque-del-norte`): son el ejército babilonio que tomó Jerusalén en 607 a.e.c., y no son las langostas de Ap 9. Los tramos Joel 1:2-4, 1:5-12, 2:1-11 y 2:18-27 llevan `destruccion-de-jerusalen-607` en `mentions`.
-- **Grecia.** `grecia` existe desde Joe 3:6 (OpenBible a4492a0, con Javán en `names`). Is 66:19, Ez 27:13, Da 8:21, 10:20, 11:2 y Hch 20:2 usan ese id cuando hablan de la tierra.
+- **Grecia.** `grecia` existe desde Joe 3:6 (OpenBible a4492a0, con Javán en `names`). Ez 27:13, Da 8:21, 10:20, 11:2 y Hch 20:2 usan ese id cuando hablan de la tierra, como Is 66:19.
 - **El valle de Jehosafat y el de la Decisión** (Joe 3:2, 12, 14) no llevan ficha: Perspicacia «Jehosafat, Llanura baja de» y La Atalaya de 2007 los llaman lugar simbólico.
 - **Sitim.** `sitim` es Perspicacia «Sitim», núm. 1 (Nú 25:1; 33:49; Jos 2:1; 3:1; Miq 6:5) y `valle-de-las-acacias` el núm. 2 (Joe 3:18). Cada una dice en `not_claimed` que no es la otra.
 
@@ -139,7 +139,7 @@ Los campos, los tipos de relación y sus palabras se nombran como en el esquema 
 
 - **Queriyot-hezrón.** Existe `queriyot-hezron` (Jos 15:25). Perspicacia «Judas», núm. 4, solo ve probable que Judas Iscariote y su padre fueran de allí, y los Evangelios no lo dicen: `judas-iscariote` y `simon-iscariote` no llevan relación con ese lugar.
 
-## Para Isaías, Jeremías y Nehemías
+## Para Jeremías y Nehemías
 
 - **Ciudades de Moab que ya existen.** `dibon`, `nebo` (la ciudad, no `monte-nebo`), `quiryataim`, `baal-meon`, `aroer`, `jahaz`, `hesbon`, `eleale`, `sibma`, `jazer`, `medeba`, `ar` y `arnon`. Perspicacia solo da como probable que Bet-Diblataim (Jer 48:22) sea `almon-diblataim`.
 - **Dibón de Judá.** El Dibón de Ne 11:25 es la entrada núm. 2 de Perspicacia y lleva otro id que `dibon`.
@@ -192,9 +192,8 @@ Los campos, los tipos de relación y sus palabras se nombran como en el esquema 
 
 - **Ciudades de Judá y Benjamín (Ne 11:25-36).** Reutilizan los ids de Jos 15 y 18: `cabzeel`, `molada`, `bet-pelet`, `hazar-sual`, `ziclag`, `zanoah`, `adulam`, `lakis`, `azeca`, `zora`, `jarmut`, `gueba` y los demás.
 
-## Para Isaías y Oseas (desde Josué)
+## Para Oseas (desde Josué)
 
-- **Valle de Acor.** Is 65:10 y Os 2:15 usan `valle-de-acor`.
 - **Bet-Aven.** La de Jos 7:2 y 18:12 es `bet-aven` (Perspicacia núm. 1). La de Os 4:15; 5:8; 10:5 (núm. 2) sigue como nombre de `betel`.
 
 ## Para Hechos, Hebreos y Santiago (desde Josué)
@@ -209,9 +208,8 @@ Los campos, los tipos de relación y sus palabras se nombran como en el esquema 
 - **Hermanos de David (1Cr 2:13-16).** `eliab-hijo-de-jese`, `abinadab-hijo-de-jese` y `sama-hijo-de-jese` (Simeá en `names`). `abisai/kin/david/uncle` (tío) sale de Perspicacia y 1Cr 2:16 le añade su capítulo.
 - **Bedán (1Cr 7:17).** Es Perspicacia «Bedán», núm. 2: otro id y `distinct_from` con `bedan-libertador`.
 
-## Para Isaías, Jeremías y Nehemías (desde 1 Samuel)
+## Para Jeremías y Nehemías (desde 1 Samuel)
 
-- **La marcha de Is 10:28-32.** Usa `micmash`, `migron`, `gueba`, `rama-de-benjamin` (no `ramataim-zofim`, la de Samuel), `guibea-de-benjamin` (Guibeá de Saúl en `names`) y `nob`. Perspicacia solo ve posible que la Galim de Is 10:30 sea `galim`.
 - **Siló abandonada (Jer 7:12, 14; 26:6, 9).** Recuerda lo que cuenta 1Sa 4: `los-filisteos-capturan-el-arca` va en `mentions` de esos tramos.
 - **Nob (Ne 11:32).** Usa `nob`.
 
@@ -220,10 +218,6 @@ Los campos, los tipos de relación y sus palabras se nombran como en el esquema 
 - **Pua.** La TNM escribe Pua para tres personas (Perspicacia «Puá»): `puva`, el hijo de Isacar, que 1Cr 7:1 llama Pua; `pua-partera`, de Éx 1:15; y `pua-hijo-de-dodo`, padre del juez Tolá.
 - **Baal-Hermón.** 1Cr 5:23 usa `baal-hermon`, junto a `monte-hermon`.
 - **Etam.** `penasco-de-etam` es Perspicacia «Etam», núm. 2 (Jue 15). La de 1Cr 4:32 (núm. 1) y la de 2Cr 11:6 (núm. 3) llevan otro id.
-
-## Para Isaías (desde Jueces)
-
-- **El día de Madián.** `gedeon-derrota-a-madian-con-300-hombres` lleva Is 9:4 y `los-efraimitas-capturan-a-oreb-y-zeeb`, Is 10:26, en `passages` (Perspicacia «Jueces, Libro de»): van en los tramos de Isaías 9 y 10. La razón de `roca-de-oreb` también cita Is 10:26.
 
 ## Para Ezequiel (desde Jueces)
 
@@ -250,9 +244,8 @@ Los campos, los tipos de relación y sus palabras se nombran como en el esquema 
 
 - **Cus el benjaminita.** Existe (`cus-el-benjaminita`) desde el Salmo 7. Perspicacia duda entre la corte de Saúl y Simeí, y 2 Samuel no lo aclara: ningún tramo lo nombra. Si otro libro lo decide, se añade la relación.
 
-## Para Isaías, Jeremías y Ezequiel (desde 2 Samuel)
+## Para Jeremías y Ezequiel (desde 2 Samuel)
 
-- **Monte Perazim (Is 28:21).** `baal-perazim` y `david-vence-a-los-filisteos-en-baal-perazim` van en `mentions` del tramo.
 - **Kimham (Jer 41:17).** Perspicacia no sabe si el alojamiento de Kimham es de `kimham`: lo decide Jeremías.
 - **Berotá (Ez 47:16).** Reutiliza `berota`.
 
@@ -299,12 +292,10 @@ Los campos, los tipos de relación y sus palabras se nombran como en el esquema 
 - **Queriyot.** `queriyot` (Am 2:2) no tiene punto: dos candidatos «alternativa», Ar y Saliyá. Jer 48:24, 41 usan ese id.
 - **Harmón.** `harmon` (Am 4:3) lleva como único candidato el peñasco de Rimón, en Rammun. Si Jueces 20:45-47 crea ese peñasco, el candidato de `harmon` puede remitir a él.
 
-## Para Isaías, Jeremías, Ezequiel y Hechos (desde Amós)
+## Para Jeremías, Ezequiel y Hechos (desde Amós)
 
-- **Quir.** `quir` existe sin punto (Am 1:5; 9:7): Is 22:6 lo usa.
-- **Bet-Edén.** `bet-eden` (Am 1:5) quizá sea la tierra de los hijos de Edén de 2Re 19:12 e Is 37:12; si Reyes o Isaías lo confirman con Perspicacia, lo apuntan.
-- **Calné y Calnó.** `calne-de-siria` (Am 6:2; Perspicacia «Calné», núm. 2) no es `calne` (Gé 10:10). Isaías decide si la Calnó de Is 10:9 es la misma; por ahora solo lo dice `not_claimed`.
-- **Hamat.** `hamat` existe (Hamat la Grande en `names`): Is 10:9, 11:11 y Jer 49:23 lo usan.
+- **Bet-Edén y Edén.** Los hijos de Edén de Is 37:12 y 2Re 19:12 son `eden-centro-comercial` (Perspicacia «Edén», núm. 2), que Ez 27:23 también usa. Perspicacia solo cree que sea una forma corta de Bet-Edén, así que `bet-eden` sigue aparte y lo dice `not_claimed`.
+- **Hamat.** `hamat` existe (Hamat la Grande en `names`): Jer 49:23 lo usa, como ya Is 10:9, 11:11 y 36:19.
 - **Creta es Caftor.** `creta` lleva Caftor en `names`: Jer 47:4 usa `creta`, y también Dt 2:23 cuando habla del lugar.
 - **Israel es José.** `israel` lleva «José» en `names` para el reino del norte (Am 5:6, 15; 6:6), como Efraín.
 - **Hechos 7 y 15.** Los tramos Amós 5:25-27 y 9:11-12 llevan `discurso-de-esteban` y `concilio-de-jerusalen-49` en `mentions`. Hechos no nombra a Amós, así que sus tramos no lo llevan.
@@ -330,18 +321,19 @@ Los campos, los tipos de relación y sus palabras se nombran como en el esquema 
 
 - **Zenán y Maarat.** `zaanan` (Miq 1:11) y `marot` (Miq 1:12) no llevan Zenán ni Maarat en `names`: Perspicacia solo dice que hay quien las iguala, y las dos lo dejan en `not_claimed`. Josué ya creó `zenan` (Jos 15:37) y `maarat` (Jos 15:59) con los mismos puntos: ʽAraq el-Kharba (31.599435, 34.803939) y Beit Ummar (31.621389, 35.102222). Allí la duda solo está en el `summary`; la integración les añade el `not_claimed` simétrico (que Zenán sea la Zaanán de Miq 1:11; que Maarat sea la Marot de Miq 1:12). Las dos `coord_note` describen bien su punto aunque digan cosas distintas: en la ficha Zaanan de OpenBible (a4e7fa8) ʽAraq el-Kharba es la segunda resolución de la primera identificación, y en la ficha Zenan (a5e1150), la segunda identificación.
 - **Moréset.** `moreset` existe (Moréset-Gat en `names`) y `miqueas-profeta` vive allí. Jer 26:18 usa ese id. Cuando Jeremías cree el suceso de Jer 26:17-19, en que se recuerda Miq 3:12 y que Ezequías hizo caso, va en `mentions` del tramo Miqueas 3:9-12.
-- **Ofel.** Perspicacia «Ofel» compara el «montículo» de Miq 4:8 con Ofel, y `jerusalen` no lo lleva en `names`. 2Cr 27:3 o Ne 3:26 lo añaden con una nota; entonces el tramo Miqueas 4:6-8 puede ponerlo en su `note`.
+- **Ofel.** Está en `names` de `jerusalen` desde Is 32:14. 2Cr 27:3 y Ne 3:26 usan esa ficha, y Perspicacia «Ofel» compara con él el «montículo» de Miq 4:8, que el tramo Miqueas 4:6-8 puede nombrar en su `note`.
 - **La montaña de la Casa.** `monte-moria` lleva ese nombre (Miq 3:12, cuya nota dice «el monte del templo»).
 
 ## Para 2 Crónicas, Esdras, Jeremías y Daniel (desde Nahúm)
 
 - **Asurbanipal y Asnapar.** `asurbanipal` (clave `1200000430`) existe desde Na 3:8-10. Esa clave es a propósito la entrada «Asurbanipal» de Perspicacia, que solo remite a «Asnapar»: así la del artículo, `1200000404`, queda libre para `asnapar`. Perspicacia «Asnapar» solo ve muy probable que sea el Asnapar de Esd 4:10, así que Esdras crea `asnapar` (`1200000404`) con `same_as` `asurbanipal`, `inferred: true` y `status: pending`.
+- **Esar-Hadón.** Existe desde Is 37:38 (`esar-hadon`, clave `1200001416`), hijo y sucesor de Senaquerib, y `asurbanipal` ya lleva `kin` `esar-hadon` con la palabra `father`. Esd 4:2 usa ese id.
 - **Nabopolasar y Ciaxares.** `nabopolasar` y `ciaxares` existen, con `perspicacia: null` porque Perspicacia no les dedica artículo. La integración de Nahúm puso a `nabucodonosor-ii` las relaciones `kin` `nabopolasar` con la palabra `father` y `succeeds` `nabopolasar`, y añadió `nabopolasar` a `nabopolasar-funda-dinastia`. Jeremías y Daniel reutilizan esos ids.
 
-## Para Isaías, Jeremías y Ezequiel (desde Nahúm)
+## Para Jeremías y Ezequiel (desde Nahúm)
 
 - **No-Amón.** `no-amon` existe (Tebas, OpenBible a9674fc), con No y Tebas en `names`: Jer 46:25 y Ez 30:14-16 usan ese id.
-- **Put como tierra.** `put` existe también como lugar (el pueblo y su tierra; la persona `put` es el hijo de Cam), con precisión incierta en el punto de Libia y un `not_claimed` porque Na 3:9 separa Put de los libios. Is 66:19, Jer 46:9 y Ez 27:10, 30:5 y 38:5 usan `place:put`, sin `person:put`.
+- **Put como tierra.** `put` existe también como lugar (el pueblo y su tierra; la persona `put` es el hijo de Cam), con precisión incierta en el punto de Libia y un `not_claimed` porque Na 3:9 separa Put de los libios. Jer 46:9 y Ez 27:10, 30:5 y 38:5 usan `place:put`, sin `person:put`. Is 66:19 no: la TNM dice Pul, que es otro lugar (`pul`).
 - **Elqós.** `elqos` existe sin punto (Beit Jibrin favorecido; Galilea como alternativa, en el punto de El Kauzeh de OpenBible). La TNM solo da el gentilicio «elcosita»; Elqós es la única grafía del lugar en jw.org.
 
 ## Para Josué y Jueces (desde Habacuc)
@@ -427,3 +419,52 @@ Los campos, los tipos de relación y sus palabras se nombran como en el esquema 
 - **Alejandro en Tiro.** `alejandro-destruye-tiro` (julio de 332 a.e.c., en `potencia-griega`) cita Eze 26:4, 12 en su `reason`: el tramo de Ezequiel 26 lo pone en `mentions`. Alejandro sigue sin ficha, como decidió Joel. Tiro y `alejandro-conquista-egipto` comparten año, así que van en la serie `alejandro` (órdenes 1 y 2, como los cuenta Perspicacia «Alejandro»); un suceso nuevo de Alejandro en 332 toma su número en esa serie.
 - **Satanás en una visión.** Zac 3:1, 2 muestra a Satanás oponiéndose a Josué dentro de la cuarta visión. Lo visto en una visión no es suceso (`versiculos.md`, sección 6) y tampoco relación: no hay `tie` hacia `satanas`, y la oposición queda en la `note` del tramo. Job 1-2 y Mt 4 narran escenas, no visiones: ahí vale la sección 7, y quien los reabra apunta la relación que el texto afirme.
 - **«La casa de X» (Zac 12:10-13:1).** La casa de un hombre cuyo linaje se nombra lleva a ese hombre en `mentions`: David y `natan-hijo-de-david`, este con la condición de Perspicacia «Natán», núm. 4. La casa de una tribu (Leví, José, Judá) y un clan (los simeítas) son pueblo, sin `person`.
+
+## Para 1 Reyes y 2 Reyes (desde Malaquías)
+
+- **Elías ya tiene ficha.** Es `elias-profeta` (`1200001307#1`, Perspicacia «Elías», núm. 1), creada antes de la migración con 1Re 17 y 18 en sus fuentes. 1 y 2 Reyes la usan y no crean `elias`: una ficha nueva con la misma clave se fundiría en esta. Mal 4:5, 6 ya la lleva en `mentions` del tramo 4:5-6, junto a Juan el Bautista, a quien Jesús y el ángel aplican la profecía; no hace falta añadir nada más a Malaquías.
+
+## Para Nehemías (desde Malaquías)
+
+- **El suceso de Malaquías cuelga de Nehemías 13.** `malaquias-reprende-a-sacerdotes-y-pueblo` (Mal 1:1-4:6, después de 443 a.e.c.) lleva `after: nehemias-vuelve-a-la-corte-443`, porque Perspicacia «Malaquías, Libro de» y «Toda Escritura», libro 39, lo ponen tras la vuelta de Nehemías a Jerusalén. Si Nehemías separa ese regreso en un suceso propio (Ne 13:6, 7), el `after` pasa a ese suceso con un `cambiar`, y los tramos Malaquías 1:1, 2:5-9, 2:10-12 y 3:6-12, que nombran el suceso actual por sus referencias a Ne 13, lo añaden a `mentions`.
+- **El gobernador de Mal 1:8.** El texto no lo nombra; «Toda Escritura», libro 39, párr. 3, deduce que era Nehemías. Por la sección 4 de `versiculos.md` va solo en la `note` del tramo 1:6-9, sin `mentions` ni relación. Nehemías no lo usa como pasaje suyo.
+
+## Para Jeremías, Ezequiel y Daniel (desde Malaquías)
+
+- **El suceso de todo un libro profético no sitúa a nadie.** Como Joel, Abdías, Nahúm, Habacuc, Sofonías y Malaquías, va sin `type` ni `roles` y con `present: []`, aunque la tabla diga dónde se escribió; la residencia deducida va en `lived_in`. Solo un mensaje que el texto fecha y sitúa, como los de Zacarías, lleva `type: speech`, `spoke` y `present`.
+
+## Para 2 Reyes y 2 Crónicas (desde Isaías)
+
+- **Personas que ya existen.** `amoz` (`1200000248`), `rezin-rey-de-siria` (Rezín, núm. 1, `1200003721#1`), `remalias` (`1200003688`), `tabeel-de-tiempos-de-acaz` (`1200004293#1`), `uriya-sacerdote-de-acaz` (`1200004523#1`, con Urías en `names`; 2Re 16:10-16), `sargon` (`1200003842`), `eliaquim-hijo-de-hilquias` (`1200001295#1`), `hilquias-padre-de-eliaquim` (`1200002026#3`), `sebna` (`1200003975`), `joa-hijo-de-asaf` (`1200002470#3`), `asaf-padre-de-joa` (`1200000400#3`), `tirhaca` (`1200004422`), `adramelec-hijo-de-senaquerib` (`1200000118#1`), `sarezer-hijo-de-senaquerib` (`1200003954#1`), `esar-hadon` (`1200001416`), `merodac-baladan` (`1200003002`, Berodac-Baladán en `names`) y `baladan` (`1200000544`). Isaías también puso las claves de `pecah` (`1200003415`), `senaquerib` (`1200003897`) y `ciro` (`1200001102`): nadie las vuelve a proponer.
+- **Lugares que ya existen.** `campo-del-lavandero` (2Re 18:17), `sefarvaim` (2Re 17:24, 31; 18:34; 19:13), `hena`, `iva` y `arpad` (2Re 18:34; 19:13), `gozan`, `rezef`, `tel-asar` y `eden-centro-comercial` (2Re 19:12), y `quir-de-moab`, con Quir-Haréset en `names` (2Re 3:25). En `names` de `jerusalen` están el Estanque superior (2Re 18:17), Siloé, el estanque inferior y el viejo, Ofel (2Cr 27:3) y la Escalera de Acaz (2Re 20:11). La Casa del Bosque del Líbano (Is 22:8) está en `names` de `monte-moria` desde 1 Reyes.
+- **Dos Selas.** `sela-de-la-profecia-contra-moab` es la Sela de Is 16:1, Perspicacia «Sela» núm. 3. La Sela de Edom que pasó a llamarse Jocteel (2Re 14:7) es la núm. 2: 2 Reyes le crea ficha propia, y cada una dice en `not_claimed` que Perspicacia no sabe si son la misma. `distinct_from` solo vale entre personas.
+- **Sucesos de Isaías 36-39.** Isaías los creó con sus pasajes y los de 2 Reyes; 2 Reyes los pone en `entities` de sus tramos y 2 Crónicas añade los suyos: `senaquerib-contra-jerusalen` (2Re 18:13-19:36, ya sin la muerte del rey y con `present: [senaquerib]`), `el-rabsaque-desafia-a-jerusalen` (2Re 18:17-37; 2Cr 32:9-19), `ezequias-consulta-a-isaias` (2Re 19:1-7), `ezequias-ora-ante-las-cartas-de-senaquerib` (2Re 19:8-19; 2Cr 32:17, 20), `isaias-anuncia-la-derrota-de-senaquerib` (2Re 19:20-34), `el-angel-de-jehova-mata-a-185000-asirios` (2Re 19:35, 36; 2Cr 32:21), `muerte-de-senaquerib` (2Re 19:37; 2Cr 32:21), `ezequias-enferma-y-jehova-le-anade-quince-anos` (2Re 20:1-11; 2Cr 32:24) y `mensajeros-de-babilonia-visitan-a-ezequias` (2Re 20:12-19; 2Cr 32:31).
+- **Relaciones que citan Reyes.** Varias relaciones nuevas citan 2Re 15-20 en su razón (Rezín, Pécah hijo de Remalías, los hijos de Senaquerib, Tirhacá, Eliaquim, Sebná y Joá): los tramos de 2 Reyes las llevan al cerrarse.
+- **Mayordomo, secretario y registrador.** El vocabulario no tiene esos cargos (Is 22:15; 36:3; 2Re 18:18), así que Eliaquim, Sebná y Joá no llevan `holds_office`, ni Eliaquim `succeeds` a Sebná. Si se añaden, citan Is 22 y 36 y 2Re 18.
+- **Sucesos que Isaías nombra y aún no existen.** Rezín y Pécah suben contra Jerusalén (2Re 16:5; Is 7:1): va en `entities` del tramo Isaías 7:1-2, con Is 7:1 en `passages`. Acaz paga a Tiglat-Piléser III, que toma Damasco (2Re 16:7-9): `mentions` de Isaías 7:18-25, 8:1-4, 10:5-11 y 17:1-3. La humillación de Galilea (2Re 15:29): Isaías 9:1-2. Ezequías vence a los filisteos hasta Gaza (2Re 18:8): Isaías 14:28-32. Quita los lugares altos (2Re 18:4): Isaías 36:4-10. El trato de Hosea con So de Egipto (2Re 17:4): Isaías 31:1-3. El destierro de Joaquín en 617 (2Re 24:10-16): Isaías 24:1-6.
+- **Senaquerib.** La razón de su `died_in` `ninive` se reescribió con palabras propias y cita Is 37:37, 38 y 2Re 19:36, 37.
+
+## Para Jeremías y Ezequiel (desde Isaías)
+
+- **Lugares que ya existen.** `patros` (Jer 44:1, 15; Ez 29:14; 30:14), `lud`, el Lud camita (Jer 46:9; Ez 27:10; 30:5), `tubal`, el pueblo (Ez 27:13; 32:26; 38:2, 3; 39:1), `dedan` (Jer 25:23; 49:8; Ez 25:13; 27:20; 38:13), `eden-centro-comercial` (Ez 27:23), `quir-de-moab`, con Quir-Haréset en `names` (Jer 48:31, 36 dice Quir-heres), `horonaim` (Jer 48:3, 5, 34), `luhit` (Jer 48:5), `nimrim` y `eglat-selisiya` (Jer 48:34). `sinim` no es Siene: Ez 29:10 y 30:6 crean `siene` aparte.
+- **Sucesos que Isaías nombra y aún no existen.** El sitio de Tiro por Nabucodonosor (Ez 29:17-20): `mentions` de los tramos Isaías 23:1-7, 8-12 y 13-14. La huida de los judíos a Egipto (Jer 43-44): Isaías 19:18-22. El castigo de Edom (Jer 49:7-22): Isaías 34:5-8 y 34:9-15.
+- **Tófet.** El de Is 30:33 es simbólico y va en la `note`. El Tófet real del valle de Hinón (2Re 23:10; Jer 7:31, 32; 19) no tiene ficha ni está en `names` de `valle-de-hinon`.
+- **El jardín de Dios.** `eden` lleva «Jardín de Jehová» en `names` (Is 51:3). Ezequiel decide si Ez 28:13 añade «jardín de Dios».
+- **Profecía y cumplimiento.** Isaías deja en `mentions`, sin pasaje, los sucesos cuyo cumplimiento solo identifica una publicación, como Joel y Miqueas, aunque el texto nombre a Babilonia o a Asiria (Is 13:17-19; 21:1-9; 31:4-9; 47; 48:14, 20). Solo entra el pasaje cuando el texto nombra a Ciro (Is 44:28; 45:1, 2) o cuando un Evangelio o Hechos lo cita en la escena.
+
+## Para Esdras y Nehemías (desde Isaías)
+
+- **La madera de Tiro (Esd 3:7).** «Las profecías de Isaías I» ve cumplido Is 23:18 en el cedro que Tiro vende para el templo. Cuando Esdras cree ese suceso, va en `mentions` del tramo Isaías 23:15-18.
+
+## Para Daniel (desde Isaías)
+
+- **La caída de Babilonia.** `caida-de-babilonia` nombra en su resumen las tropas de Ciro, pero `people` solo lleva a Belsasar y a Daniel. Perspicacia «Ciro» hace entrar al rey 17 días después: si Daniel lo añade, el suceso necesita `present`.
+
+## Para Mateo, Lucas, Hechos y Romanos (desde Isaías)
+
+- **Jesús y Jesé.** `jesus` lleva `kin` `jese` con la palabra `ancestor`, deducida, desde Is 11:1, 10. Mt 1:5, 6, Lu 3:32 y Ro 15:12 añaden su capítulo a esa relación si se reabren.
+- **Pasajes de Isaías en sucesos de los Evangelios.** Por la regla de Zacarías llevan un versículo de Isaías `jose-lleva-a-maria-a-su-casa` (Is 7:14), `hijo-del-funcionario-y-sinagoga-de-nazaret` (9:1, 2; 61:1, 2), `parabolas-del-reino` (6:9, 10), `jehova-habla-desde-el-cielo` (6:10; 53:1), `tradiciones-humanas` (29:13), `juan-comienza-su-ministerio` (40:3-5), `juan-niega-ser-el-cristo` (40:3), `mano-paralizada-en-sabado` (42:1-4), `curaciones-en-capernaum` (53:4), `predice-las-negaciones-de-pedro` (53:12), `pan-de-la-vida` (54:13), `higuera-maldita-y-limpieza-del-templo` (56:7), `entrada-triunfal-en-jerusalen` (62:11), `felipe-y-el-funcionario-etiope` (53:7, 8), `discurso-de-esteban` (66:1, 2), `discurso-en-antioquia-de-pisidia` (55:3), `expulsados-de-antioquia-de-pisidia` (49:6) y `pablo-da-testimonio-a-los-judios-de-roma` (6:9, 10). `regreso-a-nazaret` no lleva Is 11:1: Mt 2:23 no cita el versículo y solo la nota de estudio lo relaciona, así que va en `mentions` del tramo Isaías 11:1-5.
+
+## Para quien reabra Deuteronomio o Salmos (desde Malaquías)
+
+- **Horeb como región.** Perspicacia «Horeb» pone Mal 4:4, Dt 1:6, 19; 4:10, 15; 5:2; 9:8; 18:16; 29:1 y Sl 106:19 entre los pasajes en que el nombre designa la región del Sinaí. Mal 4:4, Dt 18:16 y 29:1 usan `desierto-de-sinai`; los tramos Dt 1:6-8, 1:19-21, 4:9-14, 4:15-24, 5:2-5 y Sl 106:19-23 usan `monte-sinai`, porque sus sucesos pasan en el monte. Quien los reabra decide si añade `desierto-de-sinai` a sus `mentions`.

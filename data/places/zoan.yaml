@@ -23,6 +23,8 @@ sources:
 - openbible-geo
 - salmos-78
 - numeros-13
+- isaias-19
+- isaias-30
 links:
 - title: 'Perspicacia: «Zoan»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004754
@@ -30,5 +32,5 @@ links:
 - title: Salmo 78 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/19/78
   type: bible
-checked_on: '2026-09-29'
+checked_on: '2026-09-30'
 status: verified
