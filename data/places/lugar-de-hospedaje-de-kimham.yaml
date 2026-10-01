@@ -4,12 +4,26 @@ name: Lugar de hospedaje de Kimham
 names:
 - name: Lugar de hospedaje de Kimham
 type: region
-lat: 31.704306
-lon: 35.207639
+lat: null
+lon: null
 precision: uncertain
-coord_source: openbible:a1c28f1
-coord_url: https://www.openbible.info/geo/ancient/a1c28f1/geruth-chimham
-coord_note: OpenBible solo lo pone a menos de 5 km de Belén, como el texto; su punto es aproximado y representa esa zona.
+coord_source: null
+coord_url: null
+candidates:
+- name: Cerca de Belén
+  geometry:
+    type: zone
+    lat: 31.704306
+    lon: 35.207639
+    radius_km: 5
+  checked_on: '2026-10-02'
+  status: favored_level_1
+  sources:
+  - it-kimham
+  reason: Jer 41:17 lo pone cerca de Belén; ni el texto ni Perspicacia «Kimham» dan el sitio.
+  note: Centro nuestro en el punto de Belén. Radio nuestro.
+  coord_source: calculation
+coord_note: 'Sin punto: solo se sabe que estaba cerca de Belén. El punto de OpenBible era el de la ciudad.'
 summary: Parada cerca de Belén donde el resto de Judá se detuvo en 607 a.e.c., camino de Egipto. No se sabe si el nombre viene
   del Kimham de los días de David.
 reason: 'Jer 41:17 lo sitúa cerca de Belén. Perspicacia «Kimham» no sabe a qué Kimham alude. OpenBible: solo tomamos el punto.'
@@ -24,5 +38,9 @@ links:
 - title: Jeremías 41 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/41/
   type: bible
-checked_on: '2026-09-30'
+checked_on: '2026-10-02'
 status: verified
+history:
+- date: '2026-10-02'
+  change: 'Pierde el punto, que era el de Belén: el texto solo dice que estaba cerca. Queda una zona candidata.'
+  source: it-kimham
