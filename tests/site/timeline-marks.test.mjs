@@ -125,6 +125,18 @@ function walkLanes(p) {
     return { seen: [...seen], problems, overLong: overLong.size };
   });
 }
+/** The label of the lane «Viajes de Pablo»: its name whole, in as many lines as it needs, inside the label. */
+async function viajesWhole(p, name, pinned = false) {
+  const label = await p.evaluate(() => {
+    const l = [...document.querySelectorAll('.carril-rotulo .be-lane-label')].find((x) => x.textContent.trim() === 'Viajes de Pablo');
+    const s = l?.querySelector('span');
+    if (!s) return null;
+    const a = l.getBoundingClientRect(), b = s.getBoundingClientRect(), lh = parseFloat(getComputedStyle(s).lineHeight);
+    return { pinned: !!l.querySelector('.carril-pin.on'), lines: Math.round(b.height / lh), cutX: s.scrollWidth > s.clientWidth + 0.5, cutY: s.scrollHeight > s.clientHeight + 1 || b.top < a.top - 0.5 || b.bottom > a.bottom + 0.5 };
+  });
+  note(`${name} «Viajes de Pablo»: ${label ? `${label.lines} line(s)${label.pinned ? ', pinned' : ''}${label.cutX || label.cutY ? ', cut' : ', whole'}` : 'no label'}`);
+  assert.ok(label && !label.cutX && !label.cutY && label.pinned === pinned, JSON.stringify(label));
+}
 /** What the timeline says it draws (BE.lineaMarcas) and what a mark in view is, measured from the data alone. */
 function hookView(p) {
   return p.evaluate(() => {
@@ -428,15 +440,7 @@ test('person lanes follow the row rule; selecting a period does not reframe the 
     assert.equal(silas.nombre, 'Silas');
     assert.equal(ids.indexOf('silas') + 1, ids.indexOf('pablo'), ids.join(' '));
     // Its name is whole on both screens: on the phone it goes in two lines inside the label, never cut.
-    const label = await p.evaluate(() => {
-      const l = [...document.querySelectorAll('.carril-rotulo .be-lane-label')].find((x) => x.textContent.trim() === 'Viajes de Pablo');
-      const s = l?.querySelector('span');
-      if (!s) return null;
-      const a = l.getBoundingClientRect(), b = s.getBoundingClientRect(), lh = parseFloat(getComputedStyle(s).lineHeight);
-      return { lines: Math.round(b.height / lh), cutX: s.scrollWidth > s.clientWidth + 0.5, cutY: s.scrollHeight > s.clientHeight + 1 || b.top < a.top - 0.5 || b.bottom > a.bottom + 0.5 };
-    });
-    note(`${screen.name} «Viajes de Pablo»: ${label ? `${label.lines} line(s)${label.cutX || label.cutY ? ', cut' : ', whole'}` : 'no label'}`);
-    assert.ok(label && !label.cutX && !label.cutY, JSON.stringify(label));
+    await viajesWhole(p, screen.name);
     assert.ok(personMarks.length > 0 && personMarks.every((x) => seen.has(x.id)));
     assert.deepEqual(walk.problems.filter((x) => x.startsWith('silas')), []);
     await p.context().close();
@@ -447,6 +451,11 @@ test('person lanes follow the row rule; selecting a period does not reframe the 
     assert.deepEqual(lanes.slice(0, 2).map((l) => l.id), ['timoteo', 'silas']);
     const qw = await walkLanes(q);
     assert.deepEqual(qw.problems, []);
+    // Pinned from an old link: the pin takes room from the name, which then goes in two lines, still whole.
+    const r = await open(screen, 't=50.5&v=8&carriles=pablo');
+    assert.equal((await hookView(r)).lanes[0].id, 'pablo');
+    await viajesWhole(r, `${screen.name} carriles=pablo`, true);
+    await r.context().close();
     // A period chosen from outside the strip (search, a card) keeps the scale; on the strip, clicking one too.
     for (const s of [40, 0.12]) {
       await goTo(q, 50.5, s);
