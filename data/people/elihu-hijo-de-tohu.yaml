@@ -8,14 +8,19 @@ names:
 - name: Eliel
   note: Así lo llama 1Cr 6:34, según la misma entrada de Perspicacia.
 perspicacia: 1200001306#2
-disambiguation: Elihú hijo de Tohu, antepasado de Samuel; no el joven que habló a Job ni los otros Elihú.
+disambiguation: Elihú hijo de Tohu, levita antepasado de Samuel, al que Crónicas llama también Eliab; no el joven que habló
+  a Job ni los otros Eliab y Elihú.
 distinct_from:
 - elihu-hijo-de-barakel
+- eliab-hijo-de-helon
+- eliab-hijo-de-jese
+- eliab-hijo-de-palu
 summary: Antepasado levita del profeta Samuel, hijo de Tohu y padre de Jeroham. Las Crónicas lo llaman también Eliab y Eliel.
 reason: Perspicacia «Elihú», núm. 2; 1Sa 1:1.
 sources:
 - it-elihu
 - 1-samuel-1
+- it-eliab
 links:
 - title: 'Perspicacia: «Elihú»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Elih%C3%BA/
@@ -30,5 +35,5 @@ relations:
   reason: '1Sa 1:1: Elihú era hijo de Tohu.'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-02'
 status: verified

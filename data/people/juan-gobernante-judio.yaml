@@ -5,7 +5,7 @@ names:
 - name: Juan
 perspicacia: 1200002489#5
 disambiguation: Gobernante judío del juicio de Hch 4:6, quizá pariente de Anás. No es el apóstol Juan, al que juzgaban, ni
-  Juan el Bautista ni Juan Marcos.
+  Juan el Bautista, ni Juan Marcos, ni el padre de Pedro.
 date:
   from: 33
   to: 33
@@ -30,6 +30,7 @@ distinct_from:
 - juan-apostol
 - juan-el-bautista
 - juan-marcos
+- jonas-padre-de-pedro
 relations:
 - type: kin
   person: anas
@@ -41,5 +42,5 @@ relations:
     era pariente de Anás.
   checked_on: '2026-09-29'
   status: pending
-checked_on: '2026-09-29'
+checked_on: '2026-10-02'
 status: verified

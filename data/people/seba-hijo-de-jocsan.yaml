@@ -29,8 +29,10 @@ relations:
   reason: Gé 25:3.
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-10-01'
+checked_on: '2026-10-02'
 status: verified
 distinct_from:
 - seba-hijo-de-bicri
 - seba-hijo-de-cus
+- seba-hijo-de-joctan
+- seba-hijo-de-raama

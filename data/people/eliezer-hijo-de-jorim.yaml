@@ -4,9 +4,11 @@ name: Eliezer
 names:
 - name: Eliezer
 perspicacia: 1200001304#11
-disambiguation: Eliezer hijo de Jorim (Lu 3:29); no Eliezer de Damasco, el siervo de Abrahán.
+disambiguation: Eliezer hijo de Jorim (Lu 3:29); no Eliezer de Damasco, el siervo de Abrahán, ni Eliezer, el hijo menor de
+  Moisés.
 distinct_from:
 - eliezer-de-damasco
+- eliezer-hijo-de-moises
 summary: Antepasado de María, madre de Jesús. En la lista de Lucas es hijo de Jorim y padre de Jesús.
 reason: Perspicacia «Eliezer», núm. 11; Lu 3:29.
 sources:
@@ -29,5 +31,5 @@ relations:
   reason: 'Lu 3:29: Eliezer, hijo de Jorim.'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-02'
 status: verified

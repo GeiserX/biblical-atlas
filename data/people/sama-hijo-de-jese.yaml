@@ -13,7 +13,7 @@ names:
   note: Otra grafía de Simeá que da la nota al pie de 2Sa 13:3 y 32.
 perspicacia: 1200003942#2
 disambiguation: Samá, tercer hijo de Jesé y hermano de David; no el jeque edomita hijo de Reuel ni los guerreros de David
-  con ese nombre. Tampoco es el Simeí que siguió fiel a David frente a Adonías.
+  con ese nombre. Tampoco es el Simeí fiel a David frente a Adonías ni Simeí hijo de Elá.
 distinct_from:
 - sama-hijo-de-reuel
 - sama-hijo-de-ague
@@ -22,6 +22,7 @@ distinct_from:
 - simei-hijo-de-guera
 - simei-hijo-de-guerson
 - simei-partidario-de-david
+- simei-hijo-de-ela
 summary: Tercer hijo de Jesé y hermano mayor de David, el tercero que Samuel descartó para rey. Estaba en el ejército de Saúl
   cuando Goliat retaba a Israel. Jonatán, hijo suyo, acabó con uno de los gigantes filisteos.
 reason: Perspicacia «Samah», núm. 2; 1Sa 16:9; 17:13.
@@ -63,5 +64,5 @@ relations:
   reason: '1Sa 16:13: Samuel unge a David delante de sus hermanos.'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-10-01'
+checked_on: '2026-10-02'
 status: verified

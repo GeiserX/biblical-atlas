@@ -3,9 +3,11 @@ id: jehoacaz-de-israel
 name: Jehoacaz
 names:
 - name: Jehoacaz
-disambiguation: Rey de Israel, hijo de Jehú; no es Jehoacaz de Judá, hijo de Josías.
+disambiguation: Rey de Israel, hijo de Jehú; no es Jehoacaz de Judá, hijo de Josías, ni Ocozías de Judá, al que Crónicas llama
+  también Jehoacaz.
 distinct_from:
 - jehoacaz-de-juda
+- ocozias-de-juda
 date:
   from: -875
   to: -858
@@ -92,5 +94,5 @@ history:
   change: Perspicacia «Jehoacaz» cerraba su reinado hacia 860 a.e.c.; A6-A, más reciente, da c. 859.
   source: tnm-a6-a
 perspicacia: 1200002372#2
-checked_on: '2026-09-30'
+checked_on: '2026-10-02'
 status: verified

@@ -40,5 +40,7 @@ relations:
   reason: 'Gé 46:8, 26, 27: figura en la lista de la casa de Jacob que se instaló en Egipto.'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-02'
 status: verified
+distinct_from:
+- shaul-de-edom

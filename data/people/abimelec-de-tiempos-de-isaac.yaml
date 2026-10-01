@@ -5,10 +5,11 @@ names:
 - name: Abimélec
 perspicacia: 1200000045#2
 disambiguation: El Abimélec de Guerar en tiempos de Isaac; quizá otro que el que trató con Abrahán. Abimélec pudo ser un título
-  de los reyes filisteos.
+  de los reyes filisteos; el Salmo 34 lo da a Akís, rey de Gat, que es otro.
 distinct_from:
 - abimelec-de-tiempos-de-abrahan
 - abimelec-hijo-de-gedeon
+- akis
 summary: Rey filisteo de Guerar cuando Isaac se instaló allí por el hambre. Protegió a Isaac y a Rebeca, luego le pidió que
   se fuera y al final pactó la paz con él en Beer-Seba.
 reason: Perspicacia «Abimélec», núm. 2; Gé 26:1-31.
@@ -42,5 +43,5 @@ relations:
   reason: 'Gé 26:26: Ahuzat, su consejero personal, fue con él desde Guerar a ver a Isaac.'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-02'
 status: verified

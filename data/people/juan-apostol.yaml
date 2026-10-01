@@ -62,6 +62,7 @@ distinct_from:
 - juan-el-bautista
 - juan-marcos
 - juan-gobernante-judio
+- jonas-padre-de-pedro
 not_claimed:
 - 'Que el emperador que lo desterró fuera Domiciano y el que lo liberó, Nerva: Perspicacia lo da como creencia general,
   no como dato bíblico.'
@@ -226,5 +227,5 @@ links:
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/apocalipsis/1/
   type: bible
 perspicacia: 1200002489#3
-checked_on: '2026-09-29'
+checked_on: '2026-10-02'
 status: verified

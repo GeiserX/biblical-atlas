@@ -6,10 +6,15 @@ names:
   note: Lu 7:40-44 lo llama así; el apelativo «el fariseo» es nuestro, para separarlo de los otros Simón.
 perspicacia: 1200004131#5
 disambiguation: El fariseo que invitó a Jesús a comer en Galilea (Lu 7:36-50). No es Simón el leproso, de Betania, en cuya
-  casa ungió María a Jesús, ni Simón Pedro.
+  casa ungió María a Jesús, ni Simón Pedro, ni los demás Simón.
 distinct_from:
 - simon-el-leproso
 - pedro
+- simon-de-cirene
+- simon-el-curtidor
+- simon-el-mago
+- simon-hijo-de-jose
+- simon-iscariote
 summary: Fariseo que invitó a Jesús a su mesa. No le dio agua para los pies, beso ni aceite, y juzgó por dentro a la pecadora
   que ungió los pies de Jesús. Jesús le respondió con el ejemplo de dos deudores.
 reason: Perspicacia «Simón», núm. 5; Lu 7:36-50. El libro jy (cap. 40) pone la casa en Galilea.
@@ -36,5 +41,5 @@ relations:
   checked_on: '2026-09-29'
   status: verified
 search: Simón el fariseo
-checked_on: '2026-09-29'
+checked_on: '2026-10-02'
 status: verified

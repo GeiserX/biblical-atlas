@@ -4,11 +4,13 @@ name: Juan el Bautista
 names:
 - name: Juan el Bautista
 - name: Juan
-disambiguation: Hijo del sacerdote Zacarías y precursor de Jesús; no es el apóstol Juan, hijo de Zebedeo.
+disambiguation: Hijo del sacerdote Zacarías y precursor de Jesús; no es el apóstol Juan, hijo de Zebedeo, ni los demás Juan,
+  como Juan Marcos o el padre de Pedro.
 distinct_from:
 - juan-apostol
 - juan-marcos
 - juan-gobernante-judio
+- jonas-padre-de-pedro
 date:
   from: 29
   to: 32
@@ -98,5 +100,5 @@ links:
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/lucas/1/
   type: bible
 perspicacia: 1200002489#1
-checked_on: '2026-09-29'
+checked_on: '2026-10-02'
 status: verified

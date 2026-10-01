@@ -4,8 +4,8 @@ name: Idó
 names:
 - name: Idó
 perspicacia: 1200002135#4
-disambiguation: Abuelo del profeta Zacarías. No es el Idó de las visiones que consultó el compilador de Crónicas ni el jefe
-  de los netineos de Casifía.
+disambiguation: Abuelo del profeta Zacarías. No es el Idó de las visiones que consultó el compilador de Crónicas, ni el padre
+  de Ahinadab, ni el jefe de los netineos de Casifía.
 summary: Abuelo del profeta Zacarías por su hijo Berekías. Zacarías lo incluye en su linaje al fechar sus mensajes.
 reason: Perspicacia «Idó», núm. 4; Zac 1:1, 7.
 not_claimed:
@@ -23,5 +23,7 @@ links:
 - title: Zacarías 1 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Zacar%C3%ADas/1/
   type: bible
-checked_on: '2026-09-29'
+checked_on: '2026-10-02'
 status: verified
+distinct_from:
+- ido-padre-de-ahinadab

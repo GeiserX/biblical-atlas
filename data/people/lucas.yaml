@@ -3,6 +3,8 @@ id: lucas
 name: Lucas
 names:
 - name: Lucas
+disambiguation: El médico compañero de Pablo, que escribió el tercer Evangelio y Hechos. Perspicacia no ve base para identificarlo
+  con Lucio de Cirene ni con Lucio, el pariente de Pablo.
 distinct_from:
 - lucio-de-cirene
 - lucio-pariente-de-pablo
@@ -29,7 +31,7 @@ history:
   change: La relación con Pablo de 56-61 cita ahora Col 4:14, donde Lucas manda saludos desde Roma (Perspicacia «Lucas», c.
     60-61); el resto de la lista no cambia.
   source: colosenses-4
-checked_on: '2026-09-29'
+checked_on: '2026-10-02'
 status: verified
 relations:
 - type: accompanies
