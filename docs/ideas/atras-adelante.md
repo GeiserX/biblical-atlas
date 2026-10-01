@@ -9,7 +9,7 @@ El sitio ya escribe historial de verdad. Cada vista nueva es una entrada del nav
 **Crea una entrada:**
 
 - abrir una ficha desde el mapa, la línea, una relación de otra ficha, una miga o un resultado de búsqueda;
-- quitarla, con Esc o con «Cerrar ficha»;
+- quitarla, con Esc, con «Cerrar ficha» o con un segundo clic en su marca de la línea;
 - un año buscado, como «607 a.e.c.», o elegido en «Ir a otra fecha»;
 - abrir o mover el grafo, la conexión, la lectura, un recorrido o la portada;
 - cada pasaje de la lectura y cada parada de un recorrido.

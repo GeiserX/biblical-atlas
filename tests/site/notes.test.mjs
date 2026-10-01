@@ -217,7 +217,9 @@ test('back and forward close the editor and keep the note under its own card', {
   const context = await newContext(DESKTOP);
   try {
     const page = await openSite(context, 'sel=persona:pablo');
-    await page.evaluate(() => window.BE.seleccionar({ tipo: 'persona', id: 'timoteo' }));   // as a click on Timoteo: a new entry of the history
+    // As a click on Timoteo: a press, then the choice, so it is a new entry of the history. Without the press the site
+    // takes it for part of the view the address brought, which makes no entry.
+    await page.evaluate(() => { window.dispatchEvent(new PointerEvent('pointerdown')); window.BE.seleccionar({ tipo: 'persona', id: 'timoteo' }); });
     await settle(page);
     await page.locator('#panel-cuerpo .note-pencil').first().click();
     const text = `Sobre Timoteo ${token()}`;

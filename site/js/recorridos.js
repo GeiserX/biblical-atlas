@@ -212,7 +212,8 @@ function presentar(on) {
 document.addEventListener('fullscreenchange', () => { if (!document.fullscreenElement && raiz.classList.contains('be-presentando')) presentar(false); });
 window.addEventListener('keydown', (e) => {
   // Un diálogo abierto (las notas) se queda sus teclas: flechas y avance de página no mueven la presentación de debajo.
-  if (!raiz.classList.contains('be-presentando') || e.target.matches?.('input, textarea, select') || e.target.closest?.('dialog[open]')) return;
+  // Con Alt, ⌘ o Ctrl las teclas son del navegador (Alt + ←, atrás; Ctrl + Av Pág, otra pestaña).
+  if (!raiz.classList.contains('be-presentando') || e.altKey || e.metaKey || e.ctrlKey || e.target.matches?.('input, textarea, select') || e.target.closest?.('dialog[open]')) return;
   const k = e.key;
   if (['ArrowRight', 'PageDown', 'ArrowDown'].includes(k) || (k === ' ' && !e.target.matches?.('button, a'))) { e.preventDefault(); e.stopImmediatePropagation(); avanzar(1); }
   else if (['ArrowLeft', 'PageUp', 'ArrowUp'].includes(k)) { e.preventDefault(); e.stopImmediatePropagation(); avanzar(-1); }

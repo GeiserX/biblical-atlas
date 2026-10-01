@@ -413,6 +413,7 @@ function iniciarCortina() {
   asa.addEventListener('pointerup', () => { arrastre = false; });
   asa.addEventListener('dblclick', () => { E.cortinaX = 0.5; pintarCortina(); });
   asa.addEventListener('keydown', (e) => {
+    if (e.altKey || e.metaKey || e.ctrlKey) return;   // Alt + ← y ⌘ + ←: atrás del navegador
     const menos = e.key === 'ArrowLeft' || e.key === 'ArrowUp', mas = e.key === 'ArrowRight' || e.key === 'ArrowDown';
     if (menos || mas) {
       e.preventDefault(); e.stopPropagation();

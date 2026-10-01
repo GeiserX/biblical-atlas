@@ -309,11 +309,18 @@ function textoHash() {
 }
 function guardarHash() {
   clearTimeout(hashTimer);
-  hashTimer = setTimeout(() => {
-    spanHash = span();
-    ultimoHash = '#' + textoHash();
-    if (location.hash !== ultimoHash) history.replaceState(null, '', ultimoHash);
-  }, 250);
+  hashTimer = setTimeout(escribirHash, 250);
+}
+/** Escribe ya la dirección que guardarHash dejó para dentro de 250 ms. BE.historia la escribe al crear una entrada y
+    antes de Atrás y Adelante: así cada entrada se queda con su vista aunque la siguiente llegue antes de tiempo. */
+function escribirHash() {
+  clearTimeout(hashTimer);
+  spanHash = span();
+  ultimoHash = '#' + textoHash();
+  // Cada entrada lleva su número y el nombre de su vista (BE.historia, buscar.js): se escriben con la dirección y
+  // nunca se pierden, porque de ellos salen atrás y adelante.
+  const estado = BE.historia?.sello();
+  if (location.hash !== ultimoHash || estado) history.replaceState(estado || history.state, '', ultimoHash);
 }
 function leerHash() {
   const p = new URLSearchParams(location.hash.slice(1));
@@ -430,7 +437,8 @@ function iniciarEventos() {
       if (t.matches?.('button, a, [role="button"]')) return;
       e.preventDefault(); reproducir(!E.play); return;
     }
-    if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+    // Con Alt, ⌘ o Ctrl las flechas son del navegador (Alt + ← y ⌘ + ←, atrás): no mueven el cursor.
+    if ((e.key === 'ArrowRight' || e.key === 'ArrowLeft') && !e.altKey && !e.metaKey && !e.ctrlKey) {
       e.preventDefault();
       const dir = e.key === 'ArrowRight' ? 1 : -1;
       if (e.shiftKey) saltar(dir);
@@ -551,6 +559,7 @@ function arrastrarMarco(asa, k) {
 /** Flechas: 20 px (80 con Mayúsculas); Inicio y Fin, el mínimo y el máximo; Intro, el de siempre (en un botón, Intro
     lo pulsa). */
 function teclaMarco(e, k, conIntro) {
+  if (e.altKey || e.metaKey || e.ctrlKey) return;   // Alt + ← y ⌘ + ←: atrás del navegador
   const m = MARCOS[k];
   const flechas = k === 'panel' ? { ArrowLeft: 1, ArrowRight: -1 } : { ArrowUp: 1, ArrowDown: -1 };
   let v;
@@ -652,7 +661,7 @@ Object.assign(BE, {
   // estado, registro y selección
   E, tipo, tipos: TIPOS, existe, parseSel, selTexto, implicados, momentoDe, nombreSel, seleccionar, limpiarSeleccion,
   // cursor, reproducción, dirección y pintado
-  sucio, programar, setT, span, asegurarVisible, reproducir, saltar, guardarHash, textoHash, aplicarHash, parametros,
+  sucio, programar, setT, span, asegurarVisible, reproducir, saltar, guardarHash, escribirHash, textoHash, aplicarHash, parametros,
   pintarPanel, pintores, inicios, avisar, ponerPreferencia,
 });
 // Con defer, DOMContentLoaded llega cuando ya se han ejecutado todos los scripts de site/js/: todos los tipos están registrados.
