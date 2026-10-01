@@ -2,7 +2,7 @@
 id: salomon-va-a-ezion-gueber
 name: Salomón va a Ezión-Guéber y Elot
 person: salomon
-reference: 1Re 9:26-28; 2Cr 8:17, 18
+reference: 1Re 9:26-28; 2Cr 8:12-18
 date:
   from: -1036
   to: -997
@@ -17,7 +17,7 @@ narrative_order:
 companions: []
 summary: Salomón baja a Ezión-Guéber y a Elot, en la costa del mar Rojo, donde tiene su flota. Sus siervos, con marineros
   que envía Hiram, navegan a Ofir y le traen oro.
-reason: 2Cr 8:17 dice que Salomón fue en persona a los dos puertos; 1Re 9:26-28, que allí hizo la flota. Fecha del suceso
+reason: 2Cr 8:17 dice que Salomón fue en persona a los dos puertos, y 8:12-16 lo dejan antes en Jerusalén; 1Re 9:26-28, que allí hizo la flota. Fecha del suceso
   flota-de-salomon-a-ofir, que abarca todo su reinado.
 sources:
 - 1-reyes-9
@@ -32,6 +32,26 @@ checked_on: '2026-09-30'
 status: verified
 stops:
 - order: 1
+  place: jerusalen
+  reference: 2Cr 8:12-17
+  date:
+    from: -1036
+    to: -997
+    precision: range
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 1037-998 a.e.c., en el reinado de Salomón
+  note: Salida, deducida. El texto no nombra de dónde sale, pero lo deja antes en Jerusalén, en el templo terminado.
+  reason: 2Cr 8:12-16 lo pone ofreciendo sacrificios y ordenando el servicio del templo, y 8:17 dice que entonces fue a los
+    puertos. Fecha del suceso flota-de-salomon-a-ofir.
+  sources:
+  - 2-cronicas-8
+  - it-salomon
+  - tnm-b7
+  checked_on: '2026-09-30'
+  status: pending
+- order: 2
   place: ezion-gueber
   reference: 1Re 9:26; 2Cr 8:17
   date:
@@ -51,7 +71,7 @@ stops:
   - tnm-b7
   checked_on: '2026-09-30'
   status: verified
-- order: 2
+- order: 3
   place: elat
   reference: 2Cr 8:17
   date:
