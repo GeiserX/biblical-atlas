@@ -553,6 +553,7 @@ function arrastrarMarco(asa, k) {
 /** Flechas: 20 px (80 con Mayúsculas); Inicio y Fin, el mínimo y el máximo; Intro, el de siempre (en un botón, Intro
     lo pulsa). */
 function teclaMarco(e, k, conIntro) {
+  if (e.altKey || e.metaKey || e.ctrlKey) return;   // Alt + ← y ⌘ + ←: atrás del navegador
   const m = MARCOS[k];
   const flechas = k === 'panel' ? { ArrowLeft: 1, ArrowRight: -1 } : { ArrowUp: 1, ArrowDown: -1 };
   let v;

@@ -293,3 +293,31 @@ test('focus stays on the pressed button, and moves to the other one when its own
   await settle(page);
   assert.equal(await page.evaluate(() => document.activeElement.id), 'adelante', 'focus was lost when Back switched off');
 });
+
+test('Alt, ⌘ and Ctrl with an arrow are the browser\'s on the panel separator, the curtain, «Meses» and the date panel', async () => {
+  const page = await openPage(DESKTOP, { hash: 't=50.3000&sel=persona:pablo&mapa=cortina' });
+  await page.evaluate(() => {
+    window.__prevented = [];
+    // Capture, then read once every handler has run: the date panel stops the key from bubbling.
+    window.addEventListener('keydown', (e) => { if (/^Arrow/.test(e.key) && (e.altKey || e.metaKey || e.ctrlKey)) setTimeout(() => window.__prevented.push(`${document.activeElement.id || document.activeElement.dataset.meses || document.activeElement.getAttribute('role')}:${e.defaultPrevented}`)); }, true);
+  });
+  const keys = ['Alt+ArrowLeft', 'Meta+ArrowLeft', 'Control+ArrowLeft', 'Alt+ArrowRight'];
+  const press = async () => { for (const k of keys) await page.keyboard.press(k); await page.waitForTimeout(50); };
+  const width = () => page.evaluate(() => document.getElementById('panel').getBoundingClientRect().width);
+  const w0 = await width();
+  await page.locator('#sep-panel').click();
+  await press();
+  assert.equal(await width(), w0, 'the panel width moved');
+  const c0 = await page.evaluate(() => window.BE.E.cortinaX);
+  await page.locator('#cortina-asa').focus();
+  await press();
+  assert.equal(await page.evaluate(() => window.BE.E.cortinaX), c0, 'the curtain moved');
+  await page.evaluate(() => { const m = document.getElementById('meses-control'); m.hidden = false; m.querySelector('[data-meses]').focus(); });
+  await press();
+  await page.locator('#fecha').click();
+  await page.locator('[role="dialog"] [role="radio"], dialog [role="radio"]').first().focus();
+  await press();
+  const got = await page.evaluate(() => window.__prevented);
+  assert.equal(got.length, keys.length * 4, JSON.stringify(got));
+  assert.deepEqual(got.filter((x) => x.endsWith(':true')), [], 'a handler took a browser shortcut');
+});

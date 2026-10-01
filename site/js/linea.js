@@ -1705,7 +1705,7 @@ function montarBarra() {
   meses.addEventListener('click', (e) => { const b = e.target.closest('[data-meses]'); if (b) ponerMeses(b.dataset.meses); });
   meses.addEventListener('keydown', (e) => {
     const i = MODOS_MESES.findIndex(([k]) => k === modoMeses()), d = { ArrowRight: 1, ArrowDown: 1, ArrowLeft: -1, ArrowUp: -1 }[e.key];
-    if (d == null || !e.target.closest('[data-meses]')) return;
+    if (d == null || e.altKey || e.metaKey || e.ctrlKey || !e.target.closest('[data-meses]')) return;   // con Alt, ⌘ o Ctrl, del navegador
     e.preventDefault(); e.stopPropagation();
     ponerMeses(MODOS_MESES[(i + d + 3) % 3][0]);
     meses.querySelector(`[data-meses="${modoMeses()}"]`)?.focus();

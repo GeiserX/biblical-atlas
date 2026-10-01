@@ -465,6 +465,7 @@ function onKey(e) {
   if (e.key === 'Tab') return;
   e.stopPropagation();
   if (!['ArrowLeft', 'ArrowRight', 'ArrowUp', 'ArrowDown', 'Home', 'End'].includes(e.key)) return;
+  if (e.altKey || e.metaKey || e.ctrlKey) return;   // Alt + ← y ⌘ + ←: atrás del navegador
   const b = e.target.closest?.('button');
   const radios = b?.getAttribute('role') === 'radio' ? b.closest('[role="radiogroup"]') : null;
   const group = radios || b?.closest('[data-dp-roving]');
