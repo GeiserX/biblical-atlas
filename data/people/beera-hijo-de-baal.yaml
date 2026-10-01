@@ -1,0 +1,35 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: beera-hijo-de-baal
+name: Beerá
+names:
+- name: Beerá
+- name: Beerah
+  note: Grafía de Perspicacia y de la nota de 1Cr 5:6.
+perspicacia: '1200000608'
+disambiguation: Beerá hijo de Baal, jefe de los rubenitas desterrado por Tiglat-Piléser III; no Beerá de Aser (1Cr 7:37),
+  que Perspicacia trata en otro artículo.
+date:
+  from: -761
+  to: -757
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 762 y c. 758 a.e.c. (tiempo narrativo: destierro bajo Tiglat-Piléser III, reinando Pécah)'
+summary: Jefe rubenita, hijo de Baal y descendiente de Joel. Tiglat-Piléser III, rey de Asiria, se lo llevó al destierro con
+  las tribus del este del Jordán.
+reason: 1Cr 5:4-6; Perspicacia «Beerah» sitúa el destierro al parecer en el reinado de Pécah. Fecha del suceso tiglat-pileser-deporta-al-norte-de-israel.
+sources:
+- it-beerah
+- 1-cronicas-5
+- it-tiglat-pileser
+- tnm-a6-b
+links:
+- title: 'Perspicacia: «Beerah»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Beerah/
+  type: perspicacia
+- title: 1 Crónicas 5 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/1-Cr%C3%B3nicas/5/
+  type: bible
+checked_on: '2026-09-30'
+status: verified

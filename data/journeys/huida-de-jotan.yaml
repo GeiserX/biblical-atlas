@@ -1,0 +1,70 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: huida-de-jotan
+name: Jotán huye a Beer
+person: jotan-hijo-de-gedeon
+reference: Jue 9:7-21
+date:
+  from: -1449
+  to: -1172
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre c. 1450 y c. 1173 a.e.c. (tiempo narrativo: tras morir Gedeón y antes de Jefté)'
+companions: []
+summary: Jotán, el menor de los hijos de Gedeón y el único que se salva, advierte a Siquem desde el monte Guerizim con la
+  parábola de los árboles y huye a Beer.
+reason: 'Jueces 9:7-21 da la salida y la llegada. Sin año en jw.org: el mismo tramo que el reinado de Abimélec, antes de Jefté,
+  c. 1173 (Perspicacia «Jefté»).'
+sources:
+- jueces-9
+- it-jotan
+- it-guerizim
+- it-beer
+- si-3
+- it-jueces
+- it-jefte
+checked_on: '2026-09-30'
+status: verified
+stops:
+- order: 1
+  place: monte-guerizim
+  reference: Jue 9:7-20
+  date:
+    from: -1449
+    to: -1172
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre c. 1450 y c. 1173 a.e.c. (tiempo narrativo: tras morir Gedeón y antes de Jefté)'
+  note: Salida. Desde la cima grita a los de Siquem la historia de los árboles.
+  reason: 'Jue 9:7 dice que, al saber que han hecho rey a Abimélec, Jotán sube al Guerizim y habla desde allí. Suceso ancla:
+    jotan-cuenta-el-relato-de-los-arboles (entre Gedeón y Jefté, c. 1173, según Perspicacia «Jefté»).'
+  sources:
+  - jueces-9
+  - it-jotan
+  - it-guerizim
+  - it-jefte
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: beer-de-jotan
+  reference: Jue 9:21
+  date:
+    from: -1449
+    to: -1172
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre c. 1450 y c. 1173 a.e.c. (tiempo narrativo: tras morir Gedeón y antes de Jefté)'
+  note: Llegada. Se queda allí por miedo a su hermano.
+  reason: 'Jue 9:21: Jotán escapa a Beer y vive allí. Perspicacia «Beer» no sabe dónde estaba. Suceso ancla: jotan-cuenta-el-relato-de-los-arboles
+    (entre Gedeón y Jefté, c. 1173, según Perspicacia «Jefté»).'
+  sources:
+  - jueces-9
+  - it-beer
+  - it-jefte
+  checked_on: '2026-09-30'
+  status: verified

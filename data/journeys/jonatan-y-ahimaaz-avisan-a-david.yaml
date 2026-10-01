@@ -1,0 +1,94 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: jonatan-y-ahimaaz-avisan-a-david
+name: Jonatán y Ahimáaz avisan a David
+person: jonatan-hijo-de-abiatar
+reference: 2Sa 17:15-22
+date:
+  from: -1069
+  to: -1039
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1070 y c. 1040 a.e.c. (tiempo narrativo: la rebelión de Absalón, tras el pacto con David y antes de acabarse
+    2 Samuel)'
+companions:
+- ahimaaz-hijo-de-sadoc
+summary: Jonatán y Ahimáaz esperan en En-Roguel el recado de Husai. Un joven los ve y se esconden en un pozo de Bahurim. Luego
+  llegan hasta David y le dicen que cruce el Jordán esa misma noche.
+reason: '2Sa 15:27, 36 y 17:15-22. Perspicacia «Ahimáaz», núm. 2, y «Jonatán», núm. 3. Sin año: entre 1070 y c. 1040 a.e.c.
+  (estudio 3).'
+sources:
+- 2-samuel-15
+- 2-samuel-17
+- it-ahimaaz
+- it-jonatan
+- it-en-roguel
+- it-bahurim
+- si-3
+checked_on: '2026-09-30'
+status: verified
+stops:
+- order: 1
+  place: en-roguel
+  reference: 2Sa 17:17
+  date:
+    from: -1069
+    to: -1039
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1070 y c. 1040 a.e.c. (tiempo narrativo: la rebelión de Absalón, tras el pacto con David y antes de acabarse
+      2 Samuel)'
+  note: No entran en la ciudad para no ser vistos; una sierva les lleva el mensaje.
+  reason: '2Sa 17:17: esperan en En-Roguel, adonde les llega el recado. Fecha: la del suceso jonatan-y-ahimaaz-se-esconden-en-un-pozo-de-bahurim.'
+  sources:
+  - 2-samuel-17
+  - it-en-roguel
+  - it-ahimaaz
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: bahurim
+  reference: 2Sa 17:18-20
+  date:
+    from: -1069
+    to: -1039
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1070 y c. 1040 a.e.c. (tiempo narrativo: la rebelión de Absalón, tras el pacto con David y antes de acabarse
+      2 Samuel)'
+  note: La mujer de la casa tapa el pozo con grano.
+  reason: '2Sa 17:18: descubiertos, corren a Bahurim y se meten en un pozo. Fecha: la del suceso jonatan-y-ahimaaz-se-esconden-en-un-pozo-de-bahurim.'
+  sources:
+  - 2-samuel-17
+  - it-bahurim
+  - it-jonatan
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: rio-jordan
+  reference: 2Sa 17:21, 22
+  date:
+    from: -1069
+    to: -1039
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1070 y c. 1040 a.e.c. (tiempo narrativo: la rebelión de Absalón, tras el pacto con David y antes de acabarse
+      2 Samuel)'
+  note: David esperaba en los lugares de paso del desierto.
+  reason: '2Sa 17:21 no dice dónde encuentran al rey; esperaba en los pasos del desierto (15:28; 17:16) y enseguida cruza
+    el Jordán. Es deducción nuestra. Fecha: la del suceso david-cruza-el-jordan-y-llega-a-mahanaim.'
+  sources:
+  - 2-samuel-15
+  - 2-samuel-17
+  - si-3
+  checked_on: '2026-09-30'
+  status: pending

@@ -1,0 +1,42 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: elasa
+name: Elasá
+names:
+- name: Elasá
+perspicacia: '1200001276'
+date:
+  from: -616
+  to: -608
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 617 y 609 a.e.c. (tiempo narrativo: reinado de Sedequías, antes del último sitio)'
+summary: Hijo de Safán. Sedequías lo mandó a Babilonia, ante Nabucodonosor, con Guemarías, y Jeremías les confió su carta
+  para los desterrados.
+reason: Perspicacia «Elasá»; Jer 29:1-3. El reinado de Sedequías y el último sitio, en el estudio 3, acotan la fecha.
+sources:
+- it-elasa
+- jeremias-29
+- it-safan
+- si-3
+links:
+- title: 'Perspicacia: «Elasá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Elas%C3%A1/
+  type: perspicacia
+- title: Jeremías 29 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/29/
+  type: bible
+relations:
+- type: kin
+  person: safan
+  word: father
+  inferred: false
+  sources:
+  - jeremias-29
+  - it-safan
+  reason: Jer 29:3 lo llama hijo de Safán; Perspicacia «Safán» lo cuenta entre los hijos del secretario de Josías.
+  checked_on: '2026-09-30'
+  status: verified
+checked_on: '2026-09-30'
+status: verified

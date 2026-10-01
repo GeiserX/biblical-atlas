@@ -1,0 +1,112 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: saul-libra-jabes-galaad
+name: Saúl libra a Jabés-Galaad
+person: saul
+reference: 1Sa 11:4-15
+date:
+  from: -1116
+  to: -1115
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1117 y 1116 a.e.c. (tiempo narrativo: un mes después de que Saúl fuera elegido rey)'
+companions: []
+summary: Al saber que Nahás el ammonita amenaza Jabés, Saúl convoca a Israel desde Guibeá, cuenta a sus tropas en Bézec, derrota
+  de madrugada a los ammonitas y va a Guilgal, donde el pueblo confirma su reinado.
+reason: 1 Samuel 11 da las paradas en orden. Perspicacia «Saúl», «Sus primeras victorias», pone el ataque de Nahás un mes
+  después de la elección; el estudio 3 fecha la unción en 1117.
+sources:
+- 1-samuel-11
+- it-nahas
+- it-saul
+- it-jabes-galaad
+- it-bezeq
+- it-guilgal
+- si-3
+checked_on: '2026-09-30'
+status: verified
+narrative_order:
+  series: saul
+  order: 2
+stops:
+- order: 1
+  place: guibea-de-benjamin
+  reference: 1Sa 11:4-7
+  date:
+    from: -1116
+    to: -1115
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1117 y 1116 a.e.c. (tiempo narrativo: un mes después de que Saúl fuera elegido rey)'
+  note: Salida. Vuelve del campo con el ganado cuando llegan los mensajeros de Jabés.
+  reason: '1Sa 11:4-7: la noticia llega a Guibeá de Saúl y él convoca a Israel. Suceso ancla: saul-reune-a-israel-contra-nahas
+    (un mes después de la elección, según Perspicacia «Saúl»; unción en 1117).'
+  sources:
+  - 1-samuel-11
+  - it-saul
+  - it-guibeah
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: bezec-cerca-de-siquem
+  reference: 1Sa 11:8
+  date:
+    from: -1116
+    to: -1115
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1117 y 1116 a.e.c. (tiempo narrativo: un mes después de que Saúl fuera elegido rey)'
+  note: Cuenta 300.000 hombres de Israel y 30.000 de Judá.
+  reason: '1Sa 11:8 dice que pasa revista al ejército en Bézec. Suceso ancla: saul-pasa-revista-al-ejercito-en-bezec (un mes
+    después de la elección, según Perspicacia «Saúl»; unción en 1117).'
+  sources:
+  - 1-samuel-11
+  - it-bezeq
+  - it-saul
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: jabes-galaad
+  reference: 1Sa 11:9-11
+  date:
+    from: -1116
+    to: -1115
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1117 y 1116 a.e.c. (tiempo narrativo: un mes después de que Saúl fuera elegido rey)'
+  note: En tres grupos, cae de madrugada sobre el campamento de Nahás.
+  reason: '1Sa 11:11 cuenta el ataque al campamento ammonita que sitiaba Jabés. Suceso ancla: saul-derrota-a-los-ammonitas-en-jabes-galaad
+    (un mes después de la elección, según Perspicacia «Saúl»; unción en 1117).'
+  sources:
+  - 1-samuel-11
+  - it-nahas
+  - it-jabes-galaad
+  - it-saul
+  checked_on: '2026-09-30'
+  status: verified
+- order: 4
+  place: guilgal
+  reference: 1Sa 11:14, 15
+  date:
+    from: -1116
+    to: -1115
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1117 y 1116 a.e.c. (tiempo narrativo: un mes después de que Saúl fuera elegido rey)'
+  note: Llegada. Samuel propone ir allí, y el pueblo confirma a Saúl como rey.
+  reason: '1Sa 11:14, 15: el pueblo va a Guilgal y hace rey a Saúl ante Jehová. Samuel está allí; el texto no dice que fuera a Jabés. Suceso ancla: saul-confirmado-rey-en-guilgal (un mes tras la elección, según Perspicacia «Saúl»).'
+  sources:
+  - 1-samuel-11
+  - it-guilgal
+  - it-saul
+  checked_on: '2026-09-30'
+  status: verified

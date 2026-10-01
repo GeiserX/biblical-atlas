@@ -1,0 +1,130 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: de-judea-a-galilea-por-samaria
+name: De Judea a Galilea por Samaria
+person: jesus
+reference: Jn 4:1-54; Lu 4:14-31; Mt 4:12-16; Mr 1:14, 15
+date:
+  from: 30
+  to: 30
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 30 e.c.
+narrative_order:
+  series: jesus
+  order: 3
+companions: []
+summary: Al saber que los fariseos lo vigilan, deja Judea y cruza Samaria, donde pasa dos días en Sicar. En Galilea cura desde
+  Caná al hijo de un funcionario, lo rechazan en Nazaret y se instala en Capernaúm.
+reason: Jn 4 y Lu 4 dan las paradas en orden. Fechas de los sucesos encarcelamiento-de-juan, jesus-en-sicar, anuncio-del-reino-en-galilea
+  e hijo-del-funcionario-y-sinagoga-de-nazaret (tablas A7-B y A7-C).
+sources:
+- juan-4
+- lucas-4
+- mateo-4
+- marcos-1
+- tnm-a7-b
+- tnm-a7-c
+- jy-cap-19
+- jy-cap-20
+- jy-cap-21
+- it-sicar
+checked_on: '2026-09-30'
+status: verified
+stops:
+- order: 1
+  place: judea
+  reference: Jn 4:1-3
+  date:
+    from: 30
+    to: 30
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 30 e.c.
+  note: Sale cuando encarcelan a Juan, según la tabla A7-B.
+  reason: 'Jn 4:1-3: al saber lo que oyen los fariseos, sale de Judea hacia Galilea. Fecha del suceso encarcelamiento-de-juan,
+    que incluye esos versículos.'
+  sources:
+  - juan-4
+  - tnm-a7-b
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: sicar
+  reference: Jn 4:4-42
+  date:
+    from: 30
+    to: 30
+    precision: month
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. kislev de 30 e.c.
+    detail:
+      month: kislev
+  note: Habla con una samaritana junto al pozo de Jacob y se queda dos días.
+  reason: Jn 4:4, 5 dice que tenía que pasar por Samaria y llega a Sicar. Fecha del suceso jesus-en-sicar.
+  sources:
+  - juan-4
+  - tnm-a7-b
+  - it-sicar
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: cana
+  reference: Jn 4:43-54
+  date:
+    from: 30
+    to: 30
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 30 e.c.
+  note: Llega a Galilea y cura a distancia al hijo de un funcionario de Capernaúm.
+  reason: 'Jn 4:43-46: tras dos días sale hacia Galilea y va otra vez a Caná. Fecha del suceso hijo-del-funcionario-y-sinagoga-de-nazaret.'
+  sources:
+  - juan-4
+  - tnm-a7-c
+  checked_on: '2026-09-30'
+  status: verified
+- order: 4
+  place: nazaret
+  reference: Lu 4:16-30
+  date:
+    from: 30
+    to: 30
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 30 e.c.
+  note: Lee Isaías en la sinagoga y quieren despeñarlo.
+  reason: Lu 4:16 lo lleva a Nazaret, donde se había criado. Fecha del suceso hijo-del-funcionario-y-sinagoga-de-nazaret.
+  sources:
+  - lucas-4
+  - tnm-a7-c
+  checked_on: '2026-09-30'
+  status: verified
+- order: 5
+  place: capernaum
+  reference: Lu 4:31; Mt 4:13
+  date:
+    from: 30
+    to: 30
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 30 e.c.
+  note: Se establece allí.
+  reason: Lu 4:31 lo hace bajar a Capernaúm, y Mt 4:13 dice que deja Nazaret para vivir allí. Fecha del suceso hijo-del-funcionario-y-sinagoga-de-nazaret.
+  sources:
+  - lucas-4
+  - mateo-4
+  - tnm-a7-c
+  checked_on: '2026-09-30'
+  status: verified

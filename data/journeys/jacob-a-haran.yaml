@@ -1,0 +1,95 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: jacob-a-haran
+name: Jacob huye a Harán
+person: jacob
+reference: Gé 27:42–29:14; Os 12:12
+date:
+  from: -1780
+  to: -1780
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 1781 a.e.c.
+companions: []
+summary: Amenazado por Esaú y enviado a buscar esposa entre los suyos, Jacob sale de Beer-Seba con 77 años. En Luz sueña con
+  una escalera y la llama Betel; sigue hacia el este hasta un pozo de Harán.
+reason: Gé 28:10 a 29:14 da la salida, la noche en Betel y la llegada. El estudio 3 fecha en 1781 a.e.c. la huida de Jacob,
+  y Perspicacia «Jacob» le da 77 años al dejar Beer-Seba.
+sources:
+- genesis-27
+- genesis-28
+- genesis-29
+- oseas-12
+- it-jacob
+- it-beer-seba
+- it-betel
+- it-haran
+- it-raquel
+- si-3
+checked_on: '2026-09-30'
+status: verified
+narrative_order:
+  series: jacob
+  order: 1
+stops:
+- order: 1
+  place: beer-seba
+  reference: Gé 28:10
+  date:
+    from: -1780
+    to: -1780
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 1781 a.e.c.
+  note: Isaac lo bendice y lo manda a Padán-Aram.
+  reason: Gé 28:10 dice que Jacob salió de Beer-Seba camino de Harán. Fecha del suceso «Isaac envía a Jacob a Padán-Aram».
+  sources:
+  - genesis-28
+  - it-jacob
+  - it-beer-seba
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: betel
+  reference: Gé 28:11-22
+  date:
+    from: -1780
+    to: -1780
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 1781 a.e.c.
+  note: La ciudad se llamaba antes Luz. Duerme con la cabeza sobre una piedra y luego la alza como columna.
+  reason: Gé 28:19 da el nombre de Betel al sitio donde durmió. Fecha del suceso «Jacob sueña con una escalera en Betel».
+  sources:
+  - genesis-28
+  - it-betel
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: haran
+  reference: Gé 29:1-14
+  date:
+    from: -1780
+    to: -1780
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 1781 a.e.c.
+  note: Cruza el país de los orientales; junto al pozo conoce a Raquel, y Labán lo recibe en su casa.
+  reason: Gé 29:4-14 pone junto al pozo a pastores de Harán y a Raquel, la hija de Labán. Fecha del suceso «Jacob conoce a
+    Raquel junto a un pozo de Harán».
+  sources:
+  - genesis-29
+  - it-haran
+  - it-raquel
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified

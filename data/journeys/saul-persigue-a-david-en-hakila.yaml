@@ -1,0 +1,98 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: saul-persigue-a-david-en-hakila
+name: Saúl persigue a David en Hakilá
+person: saul
+reference: 1Sa 26:1-25
+date:
+  from: -1089
+  to: -1079
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre c. 1090 y c. 1080 a.e.c. (tiempo narrativo: tras la muerte de Samuel y antes de que David se refugie en Gat)'
+companions:
+- abner
+summary: Avisado otra vez por los de Zif, Saúl baja con 3.000 hombres y acampa en la colina de Hakilá. De noche David le quita
+  la lanza y la jarra, le perdona la vida y Saúl vuelve a casa.
+reason: '1Sa 26:1-25 cuenta la salida, el campamento y la vuelta; Abner, jefe del ejército, duerme junto al rey (26:5, 7,
+  14). Perspicacia «Zif», núm. 3: la segunda delación. Fechas de los sucesos de Hakilá.'
+sources:
+- 1-samuel-26
+- it-saul
+- it-hakila
+- it-abner
+- it-zif
+- tnm-tabla
+- it-jonatan
+- si-3
+- 1-samuel-15
+checked_on: '2026-09-30'
+status: verified
+narrative_order:
+  series: saul
+  order: 7
+stops:
+- order: 1
+  place: guibea-de-benjamin
+  reference: 1Sa 26:1
+  date:
+    from: -1089
+    to: -1079
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre c. 1090 y c. 1080 a.e.c. (tiempo narrativo: tras la muerte de Samuel y antes de que David se refugie en Gat)'
+  note: null
+  reason: '1Sa 26:1: los de Zif vuelven a Guibeá para decirle a Saúl dónde está David. Fecha: la del suceso saul-vuelve-a-buscar-a-david-en-el-desierto-de-zif.'
+  sources:
+  - 1-samuel-26
+  - it-zif
+  - tnm-tabla
+  - it-jonatan
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: hakila
+  reference: 1Sa 26:2-25
+  date:
+    from: -1089
+    to: -1079
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre c. 1090 y c. 1080 a.e.c. (tiempo narrativo: tras la muerte de Samuel y antes de que David se refugie en Gat)'
+  note: Acampa junto al camino, frente a Jesimón, en el desierto de Zif.
+  reason: '1Sa 26:2-12: Saúl baja al desierto de Zif y acampa en la colina de Hakilá, donde David entra de noche en el campamento.
+    Fecha: la del suceso david-perdona-otra-vez-la-vida-a-saul.'
+  sources:
+  - 1-samuel-26
+  - it-hakila
+  - it-abner
+  - tnm-tabla
+  - it-jonatan
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: guibea-de-benjamin
+  reference: 1Sa 26:25
+  date:
+    from: -1089
+    to: -1079
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre c. 1090 y c. 1080 a.e.c. (tiempo narrativo: tras la muerte de Samuel y antes de que David se refugie en Gat)'
+  note: El texto dice que regresó a su casa.
+  reason: '1Sa 26:25: Saúl regresa a su casa, que estaba en Guibeá (1Sa 26:1; 15:34). Es deducción nuestra. Fecha: la del
+    suceso david-perdona-otra-vez-la-vida-a-saul.'
+  sources:
+  - 1-samuel-26
+  - 1-samuel-15
+  - tnm-tabla
+  - it-jonatan
+  checked_on: '2026-09-30'
+  status: pending

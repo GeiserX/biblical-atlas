@@ -1,0 +1,116 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: nebuzaradan-lleva-a-juda-al-destierro
+name: Nebuzaradán lleva a Judá al destierro
+person: nebuzaradan
+reference: 2Re 25:8-21; Jer 39:8-10; 40:1; 52:12-30; 2Cr 36:17-20
+date:
+  from: -606
+  to: -606
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 607 a.e.c.
+companions: []
+summary: Nebuzaradán, jefe de la guardia, llega a Jerusalén en el quinto mes, quema el templo y la ciudad y destierra al resto
+  del pueblo. En Ramá libera a Jeremías y en Riblá entrega a los principales a Nabucodonosor.
+reason: 2Re 25:8-21 y Jer 39, 40 y 52 dan las paradas. Fechas de los sucesos destruccion-de-jerusalen-607 y nabucodonosor-ejecuta-en-ribla-a-los-principales-de-jerusalen,
+  607 a.e.c.
+sources:
+- 2-reyes-25
+- jeremias-39
+- jeremias-40
+- jeremias-52
+- 2-cronicas-36
+- it-nebuzaradan
+- it-rama
+- it-ribla
+- si-3
+checked_on: '2026-09-30'
+status: verified
+stops:
+- order: 1
+  place: jerusalen
+  reference: 2Re 25:8-17; Jer 52:12-23
+  date:
+    from: -606
+    to: -606
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 607 a.e.c.
+    detail:
+      month: ab
+      day: 7
+  note: Llega el día 7 del quinto mes (2Re 25:8); según Perspicacia entra y quema el templo el día 10 (Jer 52:12, 13).
+  reason: '2Re 25:8-11: llega a Jerusalén, la quema y lleva al destierro al resto. Perspicacia «Nebuzaradán» explica los días
+    7 y 10. Suceso destruccion-de-jerusalen-607.'
+  sources:
+  - 2-reyes-25
+  - jeremias-52
+  - it-nebuzaradan
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: rama-de-benjamin
+  reference: Jer 40:1-5
+  date:
+    from: -606
+    to: -606
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 607 a.e.c.
+  note: Suelta a Jeremías, que iba esposado entre los desterrados (jeremias-liberado-en-rama).
+  reason: 'Jer 40:1: deja libre a Jeremías en Ramá; Perspicacia «Ramá», núm. 1, dice que allí se juntó a los cautivos. Fecha
+    del suceso nabucodonosor-pone-a-guedalias-al-mando.'
+  sources:
+  - jeremias-40
+  - it-rama
+  - it-nebuzaradan
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: ribla
+  reference: 2Re 25:18-21; Jer 52:24-27
+  date:
+    from: -606
+    to: -606
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 607 a.e.c.
+  note: Lleva a Seraya, a Sofonías y a otros principales. El texto no dice si pasó antes por Ramá o por Riblá.
+  reason: '2Re 25:20: los lleva ante el rey de Babilonia en Riblá, que los mata. Suceso nabucodonosor-ejecuta-en-ribla-a-los-principales-de-jerusalen.'
+  sources:
+  - 2-reyes-25
+  - jeremias-52
+  - it-ribla
+  checked_on: '2026-09-30'
+  status: verified
+- order: 4
+  place: babilonia
+  reference: 2Re 25:11; 2Cr 36:20; Jer 39:9
+  date:
+    from: -606
+    to: -606
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 607 a.e.c.
+  note: Destino de los desterrados.
+  reason: '2Re 25:11 y Jer 39:9: lleva al destierro en Babilonia al resto del pueblo; que él llegara con ellos se deduce (Jer
+    40:4). Fecha de 607.'
+  sources:
+  - 2-reyes-25
+  - 2-cronicas-36
+  - jeremias-39
+  - jeremias-40
+  checked_on: '2026-09-30'
+  status: pending

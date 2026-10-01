@@ -1,0 +1,90 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: timoteo-de-berea-a-corinto
+name: Timoteo, de Berea a Tesalónica y Corinto
+person: timoteo
+reference: Hch 17:14, 15; 18:5; 1Te 3:1-6
+date:
+  from: 50
+  to: 50
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 50 e.c.
+narrative_order:
+  series: timoteo
+  order: 1
+companions:
+- silas
+summary: Timoteo se queda en Berea cuando Pablo tiene que huir. Pablo le pide que visite a los hermanos de Tesalónica para
+  animarlos, y después llega a Corinto con buenas noticias de ellos.
+reason: Hch 17:14, 1Te 3:2, 6 y Hch 18:5 dan las paradas; Perspicacia «Timoteo» entiende que lo envían estando aún en Berea.
+  Fechas de los sucesos los-de-berea-examinan-las-escrituras, pablo-llega-a-corinto y primera-carta-de-pablo.
+sources:
+- hch-17
+- hch-18
+- 1-tesalonicenses-3
+- it-timoteo
+- it-atenas
+- si-3
+checked_on: '2026-09-30'
+status: verified
+stops:
+- order: 1
+  place: berea
+  reference: Hch 17:14
+  date:
+    from: 50
+    to: 50
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 50 e.c.
+  note: Se queda con Silas.
+  reason: 'Hch 17:14: los hermanos sacan a Pablo hacia el mar, y Silas y Timoteo se quedan en Berea. Fecha del suceso los-de-berea-examinan-las-escrituras.'
+  sources:
+  - hch-17
+  - it-timoteo
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: tesalonica
+  reference: 1Te 3:1-5
+  date:
+    from: 50
+    to: 50
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 50 e.c.
+  note: Otra lectura de 1Te 3:1 lo haría salir de Atenas; Perspicacia prefiere Berea.
+  reason: 1Te 3:2, 6 dice que lo enviaron a Tesalónica y que volvió de visitarlos. Perspicacia «Timoteo» lo hace salir de
+    Berea. Año del suceso primera-carta-de-pablo.
+  sources:
+  - 1-tesalonicenses-3
+  - it-timoteo
+  - it-atenas
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: corinto
+  reference: Hch 18:5; 1Te 3:6
+  date:
+    from: 50
+    to: 50
+    precision: season
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: otoño de 50 e.c.
+  note: Silas y Timoteo bajan de Macedonia.
+  reason: Hch 18:5 hace llegar a los dos desde Macedonia a Corinto, donde está Pablo. Fechas de los sucesos pablo-llega-a-corinto
+    y primera-carta-de-pablo.
+  sources:
+  - hch-18
+  - 1-tesalonicenses-3
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified

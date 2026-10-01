@@ -1,0 +1,82 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: campana-de-sisaq
+name: Campaña de Sisac contra Judá
+person: sisaq
+reference: 1Re 14:25-28; 2Cr 12:2-12
+date:
+  from: -992
+  to: -992
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 993 a.e.c.
+companions: []
+summary: En el año quinto de Rehoboam, Sisac sube desde Egipto con carros, jinetes y tropas de libios, sukiyim y etíopes.
+  Toma las ciudades fortificadas de Judá, llega a Jerusalén y se lleva los tesoros.
+reason: '2Cr 12:2-9 da el orden: Egipto, las ciudades de Judá y Jerusalén. Fecha del suceso sisaq-invade-juda.'
+sources:
+- 1-reyes-14
+- 2-cronicas-12
+- it-sisaq
+- it-rehoboam
+- si-3
+checked_on: '2026-09-30'
+status: verified
+stops:
+- order: 1
+  place: egipto
+  reference: 2Cr 12:2, 3
+  date:
+    from: -992
+    to: -992
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 993 a.e.c.
+  note: null
+  reason: '2Cr 12:3: sus tropas vienen con él desde Egipto. Fecha del suceso sisaq-invade-juda.'
+  sources:
+  - 2-cronicas-12
+  - it-sisaq
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: juda
+  reference: 2Cr 12:4
+  date:
+    from: -992
+    to: -992
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 993 a.e.c.
+  note: El texto no nombra las ciudades que toma.
+  reason: '2Cr 12:4: conquista las ciudades fortificadas de Judá. Fecha del suceso sisaq-invade-juda.'
+  sources:
+  - 2-cronicas-12
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: jerusalen
+  reference: 1Re 14:25, 26; 2Cr 12:4-9
+  date:
+    from: -992
+    to: -992
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 993 a.e.c.
+  note: Se lleva los tesoros del templo y del palacio, y los escudos de oro.
+  reason: 1Re 14:25, 26 y 2Cr 12:9 lo llevan a Jerusalén. Fecha del suceso sisaq-invade-juda.
+  sources:
+  - 1-reyes-14
+  - 2-cronicas-12
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified

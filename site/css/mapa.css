@@ -35,6 +35,10 @@
 .marca-lugar:hover .etiqueta { visibility: visible; color: var(--ink); }
 .marca-lugar:hover { z-index: 3; }
 .marca-lugar.resaltado, .marca-lugar.es-actual { z-index: 2; }   /* lo seleccionado queda encima de burbujas y candidatos */
+/* Con ratón, el punto de lo seleccionado se pulsa en un círculo de 24 px a cualquier zoom; con el dedo, 44 (tactil.css). */
+@media (pointer: fine) {
+  .marca-lugar.resaltado::after { content: ""; position: absolute; left: 50%; top: 50%; width: 24px; height: 24px; margin: -12px 0 0 -12px; border-radius: 50%; }
+}
 .region-texto { display: block; font-family: var(--font-serif); font-size: 14px; font-weight: 500; letter-spacing: .22em; text-transform: uppercase; color: var(--map-region); white-space: nowrap;
   text-shadow: 0 0 3px var(--map-label-halo), 0 0 8px var(--map-label-halo); opacity: .9; }
 .marca-region.atenuado { opacity: .4; }
@@ -67,9 +71,13 @@
 .mientras-titulo { display: block; border: 0; background: none; padding: 0; margin: 4px 0; text-align: left; cursor: pointer; font: 600 var(--fs-xl)/1.2 var(--font-serif); color: var(--ink); }
 .mientras p { margin: 0 0 8px; font-size: var(--fs-sm); color: var(--ink-2); line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
 .mientras-titulo { font-size: var(--fs-lg) !important; }
+/* Toda la tarjeta elige su suceso, como un clic en la línea, no solo el título; los pasajes siguen siendo enlaces. */
+.mientras-titulo::after { content: ""; position: absolute; inset: 0; border-radius: inherit; }
+.mientras .fila-chips { position: relative; z-index: 1; }
 .leyenda { position: absolute; left: 14px; bottom: 28px; z-index: 2; max-height: calc(100% - 120px); overflow: auto; }   /* con el mapa bajo (línea ampliada), la leyenda se desplaza en vez de tapar los botones del mapa */
 .leyenda .be-card__eyebrow { margin-bottom: 2px; }
 .leyenda-rastro { width: 26px; border-top: 2px solid var(--ink-3); opacity: .5; }
+.leyenda-viajero { width: 26px; border-top: 3px solid var(--viajero, var(--ink-3)); }
 .nota-carta { margin: 10px 0 0; font-size: var(--fs-sm); }
 .be-legend__line--pendiente { border-top: 2px dotted var(--gold); opacity: .85; }
 .leyenda-estimada { width: 18px; height: 18px; margin: 0 4px; border-radius: 50%; border: 2px dashed var(--accent); background: color-mix(in srgb, var(--accent) 8%, transparent); }

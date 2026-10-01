@@ -1,0 +1,153 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: jacob-de-siquem-a-hebron
+name: De Siquem a Betel y a Hebrón
+person: jacob
+reference: Gé 35:1-27
+date:
+  from: -1760
+  to: -1749
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1761 y 1750 a.e.c. (tiempo narrativo: tras la vuelta de Jacob y antes de la venta de José)'
+companions:
+- lea
+- bilha
+- zilpa
+- ruben-hijo-de-jacob
+- simeon-hijo-de-jacob
+- levi-hijo-de-jacob
+- juda-hijo-de-jacob
+- dan-hijo-de-jacob
+- neftali-hijo-de-jacob
+- gad-hijo-de-jacob
+- aser-hijo-de-jacob
+- isacar-hijo-de-jacob
+- zabulon-hijo-de-jacob
+- jose-hijo-de-jacob
+- dina
+summary: Dios manda a Jacob subir a Betel. Entierra los ídolos cerca de Siquem, levanta el altar de El-Betel y, camino del
+  sur, Raquel muere al nacer Benjamín cerca de Belén. Acampa tras la torre de Éder y llega a Mamré.
+reason: 'Gé 35:1-27 da las etapas en orden, entre la vuelta a Canaán y la venta de José (1750 a.e.c.). Raquel y Débora mueren
+  por el camino y Benjamín nace en él: van en las notas.'
+sources:
+- genesis-35
+- it-jacob
+- it-betel
+- it-debora
+- it-raquel
+- it-benjamin
+- it-belen
+- it-eder
+- it-mamre
+- it-hebron
+- si-3
+checked_on: '2026-09-30'
+status: verified
+narrative_order:
+  series: jacob
+  order: 3
+stops:
+- order: 1
+  place: siquem
+  reference: Gé 35:1-5
+  date:
+    from: -1760
+    to: -1750
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1761 y 1751 a.e.c. (tiempo narrativo: tras la vuelta de Jacob a Canaán y antes de nacer Benjamín)'
+  note: Entierran los dioses extranjeros y los aretes bajo el árbol grande próximo a la ciudad.
+  reason: Gé 35:1-4 pone la orden de Dios y la limpieza de ídolos junto a Siquem. Fecha narrativa del suceso «Jacob sube a
+    Betel y levanta el altar de El-Betel».
+  sources:
+  - genesis-35
+  - it-jacob
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: betel
+  reference: Gé 35:6-15
+  date:
+    from: -1760
+    to: -1750
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1761 y 1751 a.e.c. (tiempo narrativo: tras la vuelta de Jacob a Canaán y antes de nacer Benjamín)'
+  note: Luz, es decir, Betel. Muere Débora, la nodriza de Rebeca; Dios confirma a Jacob el nombre de Israel.
+  reason: Gé 35:6, 7 lo hace llegar a Luz y levantar allí el altar. Fecha narrativa de los sucesos de El-Betel y de la bendición.
+  sources:
+  - genesis-35
+  - it-betel
+  - it-debora
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: belen
+  reference: Gé 35:16-20
+  date:
+    from: -1760
+    to: -1750
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1761 y 1751 a.e.c. (tiempo narrativo: tras la vuelta de Jacob a Canaán y antes de nacer Benjamín)'
+  note: Aún lejos de Efrat, es decir, Belén, Raquel muere al dar a luz a Benjamín; Jacob pone una columna sobre su tumba.
+  reason: Gé 35:16, 19 pone el parto en el camino a Efrat, que es Belén. Fecha narrativa del suceso «Muere Raquel al dar a
+    luz a Benjamín».
+  sources:
+  - genesis-35
+  - it-raquel
+  - it-benjamin
+  - it-belen
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 4
+  place: torre-de-eder
+  reference: Gé 35:21, 22
+  date:
+    from: -1760
+    to: -1749
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1761 y 1750 a.e.c. (tiempo narrativo: tras nacer Benjamín y antes de la venta de José)'
+  note: Acampa más allá de la torre; Perspicacia lo sitúa entre Belén y Hebrón.
+  reason: Gé 35:21 lo hace acampar pasada la torre de Éder. Fecha narrativa del suceso «Rubén se acuesta con Bilhá».
+  sources:
+  - genesis-35
+  - it-eder
+  - it-jacob
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 5
+  place: mamre
+  reference: Gé 35:27
+  date:
+    from: -1760
+    to: -1749
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1761 y 1750 a.e.c. (tiempo narrativo: tras nacer Benjamín y antes de la venta de José)'
+  note: En Quiryat-Arbá, es decir, Hebrón, donde vive Isaac.
+  reason: Gé 35:27 lo hace llegar a Mamré, junto a Hebrón. Fecha narrativa del suceso «Jacob llega a Hebrón, donde vive Isaac».
+  sources:
+  - genesis-35
+  - it-mamre
+  - it-hebron
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified

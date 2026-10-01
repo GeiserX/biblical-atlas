@@ -1,0 +1,368 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: ultima-semana
+name: La última semana, de Betania al Gólgota
+person: jesus
+reference: Jn 12:1–19:42; Mt 21:1–27:61; Mr 11:1–15:47; Lu 19:29–23:56
+date:
+  from: 33
+  to: 33
+  precision: month
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: del 9 al 14 de nisán de 33 e.c.
+  detail:
+    month: nisan
+narrative_order:
+  series: jesus
+  order: 16
+companions: []
+summary: Desde Betania entra en Jerusalén montado en un burro y durante tres días enseña en el templo, volviendo de noche
+  a Betania. Celebra la Pascua, lo arrestan en Getsemaní, lo juzgan y muere en el Gólgota.
+reason: Los cuatro Evangelios dan las paradas; los días son los de las tablas A7-G, A7-H, B12-A y B12-B, que siguen los sucesos
+  anclados de cada parada.
+sources:
+- juan-12
+- juan-13
+- juan-18
+- juan-19
+- mateo-21
+- mateo-24
+- mateo-26
+- mateo-27
+- marcos-11
+- marcos-13
+- marcos-14
+- marcos-15
+- lucas-19
+- lucas-21
+- lucas-22
+- lucas-23
+- tnm-a7-g
+- tnm-a7-h
+- tnm-b12-a
+- tnm-b12-b
+- jy-cap-101
+- jy-cap-102
+- jy-cap-103
+- jy-cap-104
+- jy-cap-105
+- jy-cap-106
+- jy-cap-107
+- jy-cap-108
+- jy-cap-109
+- jy-cap-110
+- jy-cap-111
+- jy-cap-112
+- jy-cap-113
+- jy-cap-114
+- jy-cap-115
+- jy-cap-116
+- jy-cap-117
+- jy-cap-118
+- jy-cap-119
+- jy-cap-120
+- jy-cap-121
+- jy-cap-122
+- jy-cap-123
+- jy-cap-124
+- jy-cap-125
+- jy-cap-126
+- jy-cap-127
+- jy-cap-128
+- jy-cap-129
+- jy-cap-130
+- jy-cap-131
+checked_on: '2026-09-30'
+status: verified
+stops:
+- order: 1
+  place: betania
+  reference: Jn 12:1-11
+  date:
+    from: 33
+    to: 33
+    precision: day
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 9 de nisán de 33 e.c.
+    detail:
+      month: nisan
+      day: 9
+  note: Cena en casa de Simón el leproso; María derrama sobre él un aceite caro. Llegó el 8 (viaje anterior).
+  reason: Jn 12:2 y Mt 26:6 ponen la cena en Betania. La tabla B12-A la sitúa al empezar el 9 de nisán. Fecha del suceso maria-unge-a-jesus.
+  sources:
+  - juan-12
+  - mateo-26
+  - tnm-b12-a
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: betfague
+  reference: Mt 21:1-7; Lu 19:29
+  date:
+    from: 33
+    to: 33
+    precision: day
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 9 de nisán de 33 e.c.
+    detail:
+      month: nisan
+      day: 9
+  note: Manda a dos discípulos a buscar un burro.
+  reason: Mt 21:1 y Lu 19:29 lo llevan hasta Betfagué, en la ladera del monte de los Olivos. Fecha del suceso entrada-triunfal-en-jerusalen.
+  sources:
+  - mateo-21
+  - lucas-19
+  - tnm-b12-a
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: monte-de-los-olivos
+  reference: Lu 19:37-44
+  date:
+    from: 33
+    to: 33
+    precision: day
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 9 de nisán de 33 e.c.
+    detail:
+      month: nisan
+      day: 9
+  note: La multitud lo aclama en la bajada; él llora por la ciudad.
+  reason: Lu 19:37 lo pone en la bajada del monte de los Olivos, ya cerca de la ciudad. Fecha del suceso entrada-triunfal-en-jerusalen.
+  sources:
+  - lucas-19
+  - tnm-b12-a
+  checked_on: '2026-09-30'
+  status: verified
+- order: 4
+  place: jerusalen
+  reference: Mt 21:10-17; Mr 11:11
+  date:
+    from: 33
+    to: 33
+    precision: day
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 9 de nisán de 33 e.c.
+    detail:
+      month: nisan
+      day: 9
+  note: La ciudad entera se alborota; mira todo en el templo.
+  reason: Mt 21:10 y Mr 11:11 lo hacen entrar en Jerusalén y en el templo. Fecha del suceso entrada-triunfal-en-jerusalen.
+  sources:
+  - mateo-21
+  - marcos-11
+  - tnm-b12-a
+  checked_on: '2026-09-30'
+  status: verified
+- order: 5
+  place: betania
+  reference: Mr 11:11; Mt 21:17
+  date:
+    from: 33
+    to: 33
+    precision: day
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 10 de nisán de 33 e.c.
+    detail:
+      month: nisan
+      day: 10
+  note: Pasa allí la noche con los doce.
+  reason: 'Mr 11:11 y Mt 21:17: como ya es tarde, sale a Betania y duerme allí. El día judío empieza al ponerse el sol. Fecha
+    del suceso noche-en-betania-10-de-nisan.'
+  sources:
+  - marcos-11
+  - mateo-21
+  - tnm-b12-a
+  checked_on: '2026-09-30'
+  status: verified
+- order: 6
+  place: jerusalen
+  reference: Mr 11:12-19
+  date:
+    from: 33
+    to: 33
+    precision: day
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 10 de nisán de 33 e.c.
+    detail:
+      month: nisan
+      day: 10
+  note: Maldice una higuera por el camino y limpia el templo.
+  reason: 'Mr 11:12, 15: al día siguiente sale de Betania y entra en Jerusalén. Fecha del suceso higuera-maldita-y-limpieza-del-templo.'
+  sources:
+  - marcos-11
+  - tnm-b12-a
+  checked_on: '2026-09-30'
+  status: verified
+- order: 7
+  place: betania
+  reference: Mr 11:19
+  date:
+    from: 33
+    to: 33
+    precision: day
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 11 de nisán de 33 e.c.
+    detail:
+      month: nisan
+      day: 11
+  note: Lu 21:37 dice que esos días pasaba las noches en el monte de los Olivos, donde está Betania.
+  reason: Mr 11:19 solo dice que salen de la ciudad al atardecer; Betania se deduce de Mr 11:11, 12. El 11 de nisán empieza
+    al ponerse el sol. Fecha del suceso leccion-de-la-higuera-seca.
+  sources:
+  - marcos-11
+  - lucas-21
+  - tnm-b12-a
+  checked_on: '2026-09-30'
+  status: pending
+- order: 8
+  place: jerusalen
+  reference: Mr 11:20–12:44
+  date:
+    from: 33
+    to: 33
+    precision: day
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 11 de nisán de 33 e.c.
+    detail:
+      month: nisan
+      day: 11
+  note: Último día de enseñanza en el templo; la ofrenda de la viuda.
+  reason: 'Mr 11:20, 27: por la mañana pasan junto a la higuera y vuelven a Jerusalén. Fecha del suceso leccion-de-la-higuera-seca.'
+  sources:
+  - marcos-11
+  - marcos-12
+  - tnm-b12-a
+  checked_on: '2026-09-30'
+  status: verified
+- order: 9
+  place: monte-de-los-olivos
+  reference: Mt 24:3–25:46; Mr 13:3
+  date:
+    from: 33
+    to: 33
+    precision: day
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 11 de nisán de 33 e.c.
+    detail:
+      month: nisan
+      day: 11
+  note: Da la señal de su presencia. Del 12 de nisán la Biblia no dice dónde estuvo.
+  reason: Mt 24:3 y Mr 13:3 lo sientan en el monte de los Olivos frente al templo. Fecha del suceso senal-de-su-presencia.
+  sources:
+  - mateo-24
+  - marcos-13
+  - tnm-b12-a
+  checked_on: '2026-09-30'
+  status: verified
+- order: 10
+  place: jerusalen
+  reference: Mt 26:17-29; Jn 13:1–17:26
+  date:
+    from: 33
+    to: 33
+    precision: day
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 14 de nisán de 33 e.c.
+    detail:
+      month: nisan
+      day: 14
+  note: Los preparativos son del 13; la cena de la Pascua, en una habitación de arriba, al empezar el 14.
+  reason: Mt 26:18 manda preparar la Pascua en la ciudad, y Mt 26:20 la celebra al anochecer. Fecha del suceso ultima-pascua.
+  sources:
+  - mateo-26
+  - juan-13
+  - tnm-b12-b
+  checked_on: '2026-09-30'
+  status: verified
+- order: 11
+  place: getsemani
+  reference: Mt 26:30, 36-56; Jn 18:1-12
+  date:
+    from: 33
+    to: 33
+    precision: day
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 14 de nisán de 33 e.c.
+    detail:
+      month: nisan
+      day: 14
+  note: Ora y lo arrestan.
+  reason: Mt 26:30, 36 los lleva al monte de los Olivos y a Getsemaní, y Jn 18:1 dice que cruzan el Cedrón. Fecha del suceso
+    arresto-en-getsemani.
+  sources:
+  - mateo-26
+  - juan-18
+  - tnm-a7-h
+  - tnm-b12-b
+  checked_on: '2026-09-30'
+  status: verified
+- order: 12
+  place: jerusalen
+  reference: Mt 26:57–27:31; Jn 18:13–19:16
+  date:
+    from: 33
+    to: 33
+    precision: day
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 14 de nisán de 33 e.c.
+    detail:
+      month: nisan
+      day: 14
+  note: Ante Anás, Caifás y el Sanedrín, Pilato y Herodes.
+  reason: Mt 26:57 y Jn 18:13, 28 lo llevan a casa de Anás y de Caifás y después al palacio del gobernador. Fechas de los
+    sucesos juicio-ante-el-sanedrin y ante-pilato-y-herodes.
+  sources:
+  - mateo-26
+  - mateo-27
+  - juan-18
+  - tnm-a7-h
+  checked_on: '2026-09-30'
+  status: verified
+- order: 13
+  place: golgota
+  reference: Mt 27:33-56; Jn 19:17-30
+  date:
+    from: 33
+    to: 33
+    precision: day
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 14 de nisán de 33 e.c., hacia las 3 de la tarde
+    detail:
+      month: nisan
+      day: 14
+  note: Muere hacia la hora novena.
+  reason: Mt 27:33 y Jn 19:17 lo llevan al lugar llamado Gólgota. Lugar y fecha del suceso muerte-de-jesus.
+  sources:
+  - mateo-27
+  - juan-19
+  - tnm-a7-h
+  checked_on: '2026-09-30'
+  status: verified

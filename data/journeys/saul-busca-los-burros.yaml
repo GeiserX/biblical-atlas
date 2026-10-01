@@ -1,0 +1,173 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: saul-busca-los-burros
+name: Saúl busca los burros de su padre
+person: saul
+reference: 1Sa 9:3–10:16
+date:
+  from: -1116
+  to: -1116
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 1117 a.e.c.
+companions: []
+summary: Saúl y un sirviente buscan los burros de Quis por Efraín, Salisá, Saalim y Benjamín. En la tierra de Zuf, Samuel
+  lo unge rey, y al volver se cumplen las señales junto a Zelzá y al árbol de Tabor.
+reason: 1 Samuel 9 y 10 dan las paradas en orden. El estudio 3 fecha la unción de Saúl en 1117 a.e.c.
+sources:
+- 1-samuel-9
+- 1-samuel-10
+- it-saul
+- it-quis
+- it-zuf
+- it-salisa
+- it-saalim
+- it-zelzah
+- it-tabor
+- si-3
+checked_on: '2026-09-30'
+status: verified
+narrative_order:
+  series: saul
+  order: 1
+stops:
+- order: 1
+  place: region-montanosa-de-efrain
+  reference: 1Sa 9:4
+  date:
+    from: -1116
+    to: -1116
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 1117 a.e.c.
+  note: Salida de la búsqueda con un sirviente.
+  reason: '1Sa 9:3, 4: Saúl sale a buscar los burros de Quis y recorre primero la región montañosa de Efraín. Suceso ancla:
+    saul-busca-los-burros-de-quis (c. 1117, estudio 3).'
+  sources:
+  - 1-samuel-9
+  - it-saul
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: salisa
+  reference: 1Sa 9:4
+  date:
+    from: -1116
+    to: -1116
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 1117 a.e.c.
+  note: null
+  reason: '1Sa 9:4 nombra después la tierra de Salisá. Suceso ancla: saul-busca-los-burros-de-quis (c. 1117, estudio 3).'
+  sources:
+  - 1-samuel-9
+  - it-salisa
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: saalim
+  reference: 1Sa 9:4
+  date:
+    from: -1116
+    to: -1116
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 1117 a.e.c.
+  note: null
+  reason: '1Sa 9:4 dice que pasan por la tierra de Saalim. Suceso ancla: saul-busca-los-burros-de-quis (c. 1117, estudio 3).'
+  sources:
+  - 1-samuel-9
+  - it-saalim
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 4
+  place: benjamin
+  reference: 1Sa 9:4
+  date:
+    from: -1116
+    to: -1116
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 1117 a.e.c.
+  note: null
+  reason: '1Sa 9:4: recorren también toda la tierra de Benjamín sin hallarlos. Suceso ancla: saul-busca-los-burros-de-quis
+    (c. 1117, estudio 3).'
+  sources:
+  - 1-samuel-9
+  - it-saul
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 5
+  place: zuf
+  reference: 1Sa 9:5–10:1
+  date:
+    from: -1116
+    to: -1116
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 1117 a.e.c.
+  note: Encuentra a Samuel en una ciudad de esa tierra; allí lo unge rey.
+  reason: '1Sa 9:5-27 y 10:1 sitúan en la tierra de Zuf el encuentro y la unción, según Perspicacia «Zuf», núm. 2. Suceso
+    ancla: saul-ungido-rey (1117, estudio 3).'
+  sources:
+  - 1-samuel-9
+  - 1-samuel-10
+  - it-zuf
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 6
+  place: zelza
+  reference: 1Sa 10:2
+  date:
+    from: -1116
+    to: -1116
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 1117 a.e.c.
+  note: Junto a la tumba de Raquel le dicen que los burros han aparecido.
+  reason: '1Sa 10:2 anuncia el paso por la tumba de Raquel en Zelzá, y 10:9 dice que las señales se cumplieron ese día. Suceso
+    ancla: saul-se-une-a-los-profetas (1117).'
+  sources:
+  - 1-samuel-10
+  - it-zelzah
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 7
+  place: arbol-grande-de-tabor
+  reference: 1Sa 10:3, 4
+  date:
+    from: -1116
+    to: -1116
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 1117 a.e.c.
+  note: Llegada. Luego llega a la colina del Dios verdadero, sin ficha, donde se une a los profetas.
+  reason: '1Sa 10:3, 4 anuncia el encuentro junto al árbol grande de Tabor, y 10:9, 10 lo da por cumplido. Suceso ancla: saul-se-une-a-los-profetas
+    (1117, estudio 3).'
+  sources:
+  - 1-samuel-10
+  - it-tabor
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified

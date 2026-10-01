@@ -801,7 +801,7 @@ def clave_fecha(o, campo="fecha"):
 
 
 def orden_en_serie(o):
-    """Con la misma fecha, los sucesos de una serie van en el orden del relato y no por id."""
+    """Con la misma fecha, los sucesos y los viajes de una serie van en el orden del relato y no por id."""
     r = o.get("orden_relato") or {}
     n = r.get("orden")
     return (r.get("serie") or "", n if isinstance(n, (int, float)) else 10**9)
@@ -821,7 +821,10 @@ def componer(datos, hoy, leg=None):
         "calendario": L["calendario"],
         "lugares": {o["id"]: limpio(o) for o in sorted(L["lugares"], key=lambda o: o["id"])},
         "personas": {o["id"]: limpio(o) for o in sorted(L["personas"], key=lambda o: o["id"])},
-        "viajes": [limpio(o) for o in sorted(L["viajes"], key=lambda o: clave_fecha(o) + (o["id"],))],
+        # Un viaje empieza donde acaba el anterior de su persona: con el mismo año de salida manda el orden
+        # del relato, aunque sus anclas den a uno un final un año antes (Elías huye al Horeb tras el Carmelo).
+        "viajes": [limpio(o) for o in sorted(L["viajes"], key=lambda o: clave_fecha(o)[:1] + orden_en_serie(o)
+                                             + clave_fecha(o)[1:] + (o["id"],))],
         "cartas": [limpio(o) for o in cartas],
         "eventos": [limpio(o) for o in sorted(L["eventos"], key=lambda o: clave_fecha(o) + orden_en_serie(o) + (o["id"],))],
         "periodos": [limpio(o) for o in sorted(L["periodos"], key=lambda o: clave_fecha(o) + (o["id"],))],

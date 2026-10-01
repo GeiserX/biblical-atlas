@@ -1,0 +1,100 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: gira-por-galilea-con-los-cuatro
+name: Primera gira por Galilea
+person: jesus
+reference: Mr 1:16–2:22; Mt 4:18-25; 8:1-4, 14-17; 9:1-17; Lu 4:31–5:39
+date:
+  from: 30
+  to: 30
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 30 e.c.
+narrative_order:
+  series: jesus
+  order: 4
+companions:
+- pedro
+- andres
+- santiago-hijo-de-zebedeo
+- juan-apostol
+summary: Junto al mar llama a cuatro pescadores y cura a muchos en Capernaúm. De madrugada sale a predicar por las sinagogas
+  de toda Galilea y, días después, vuelve a Capernaúm, donde cura a un paralítico y llama a Mateo.
+reason: Marcos 1 y 2 dan el orden. Fechas de los sucesos llamada-de-cuatro-pescadores, curaciones-en-capernaum, primera-gira-por-galilea,
+  curacion-de-un-leproso, curacion-de-un-paralitico y llamada-de-mateo (tabla A7-C).
+sources:
+- marcos-1
+- marcos-2
+- mateo-4
+- mateo-8
+- mateo-9
+- lucas-4
+- lucas-5
+- tnm-a7-c
+- jy-cap-22
+- jy-cap-23
+- jy-cap-24
+- jy-cap-25
+- jy-cap-26
+- jy-cap-27
+checked_on: '2026-09-30'
+status: verified
+stops:
+- order: 1
+  place: capernaum
+  reference: Mr 1:16-38
+  date:
+    from: 30
+    to: 30
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 30 e.c.
+  note: Llama a los cuatro en la orilla y cura en la ciudad.
+  reason: 'Mr 1:16-21: llama a Pedro, Andrés, Santiago y Juan junto al mar y entran en Capernaúm. Fechas de los sucesos llamada-de-cuatro-pescadores
+    y curaciones-en-capernaum.'
+  sources:
+  - marcos-1
+  - tnm-a7-c
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: galilea
+  reference: Mr 1:39-45; Mt 4:23; Lu 4:42, 43
+  date:
+    from: 30
+    to: 30
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 30 e.c.
+  note: Pueblos vecinos y sus sinagogas; cura a un leproso.
+  reason: 'Mr 1:38, 39: va por toda Galilea predicando; la nota de estudio lo llama su primera gira con los cuatro. Fechas
+    de los sucesos primera-gira-por-galilea y curacion-de-un-leproso.'
+  sources:
+  - marcos-1
+  - mateo-4
+  - tnm-a7-c
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: capernaum
+  reference: Mr 2:1-22
+  date:
+    from: 30
+    to: 30
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 30 e.c.
+  note: Cura a un paralítico y llama a Mateo.
+  reason: Mr 2:1 dice que días después vuelve a entrar en Capernaúm. Fechas de los sucesos curacion-de-un-paralitico y llamada-de-mateo.
+  sources:
+  - marcos-2
+  - tnm-a7-c
+  checked_on: '2026-09-30'
+  status: verified

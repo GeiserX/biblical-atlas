@@ -1,0 +1,94 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: jonatan-levita-de-belen-a-dan
+name: El levita Jonatán, de Belén a Dan
+person: jonatan-levita
+reference: Jue 17:7–18:31
+date:
+  from: -1466
+  to: -1449
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1467 y c. 1450 a.e.c. (tiempo narrativo: poco antes de que los danitas tomaran Lais, en vida de Josué)'
+companions: []
+summary: Un joven levita deja Belén para buscar dónde vivir y se hace sacerdote de Miqueas en Efraín. Los danitas se lo llevan
+  con los ídolos a Lais, que pasan a llamar Dan. Jue 18:30 lo llama Jonatán.
+reason: Jueces 17 y 18 dan las paradas. Perspicacia «Jueces, Libro de», «Orden del libro», sitúa la toma de Lais antes de
+  la muerte de Josué; la conquista general acabó en 1467 (estudio 3).
+sources:
+- jueces-17
+- jueces-18
+- it-jonatan
+- it-miqueas
+- it-dan
+- it-lais
+- it-jueces
+- si-3
+checked_on: '2026-09-30'
+status: verified
+stops:
+- order: 1
+  place: belen
+  reference: Jue 17:7, 8
+  date:
+    from: -1466
+    to: -1449
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1467 y c. 1450 a.e.c. (tiempo narrativo: poco antes de que los danitas tomaran Lais, en vida de Josué)'
+  note: Salida. Es un joven levita que había vivido en Belén de Judá.
+  reason: 'Jue 17:7, 8: sale de Belén buscando dónde vivir. Suceso ancla: miqueas-toma-a-un-levita-como-sacerdote (entre el
+    fin de la conquista, 1467, y c. 1450).'
+  sources:
+  - jueces-17
+  - it-jonatan
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: region-montanosa-de-efrain
+  reference: Jue 17:8-13; 18:15-20
+  date:
+    from: -1466
+    to: -1449
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1467 y c. 1450 a.e.c. (tiempo narrativo: poco antes de que los danitas tomaran Lais, en vida de Josué)'
+  note: Casa de Miqueas. Es su sacerdote hasta que los danitas se lo llevan con los ídolos.
+  reason: 'Jue 17:8 lo lleva a la casa de Miqueas en la región montañosa de Efraín; 18:19, 20 cuenta cómo se va con los danitas.
+    Suceso ancla: los-danitas-roban-los-idolos-de-miqueas (entre el fin de la conquista, 1467, y c. 1450).'
+  sources:
+  - jueces-17
+  - jueces-18
+  - it-miqueas
+  - it-jonatan
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: dan
+  reference: Jue 18:27-31
+  date:
+    from: -1466
+    to: -1449
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1467 y c. 1450 a.e.c. (tiempo narrativo: poco antes de que los danitas tomaran Lais, en vida de Josué)'
+  note: Llegada. Los danitas toman Lais y la llaman Dan; él y sus hijos son sus sacerdotes.
+  reason: 'Jue 18:27-30: llegan a Lais, la reconstruyen con el nombre de Dan y ponen allí la imagen, con Jonatán de sacerdote.
+    Suceso ancla: los-danitas-colocan-en-dan-la-imagen-de-miqueas (entre el fin de la conquista, 1467, y c. 1450).'
+  sources:
+  - jueces-18
+  - it-dan
+  - it-lais
+  - it-jonatan
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified

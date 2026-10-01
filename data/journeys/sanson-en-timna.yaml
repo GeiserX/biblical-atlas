@@ -1,0 +1,138 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: sanson-en-timna
+name: Sansón busca esposa en Timná
+person: sanson
+reference: Jue 14:1-20
+date:
+  from: -1172
+  to: -1116
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre c. 1173 y 1117 a.e.c. (tiempo narrativo: en vida de Sansón, después de Jefté)'
+companions: []
+summary: Sansón ve en Timná a una filistea y pide a sus padres que se la consigan. En el camino mata un león; en la boda plantea
+  una adivinanza y paga la apuesta con ropa de 30 hombres de Asquelón.
+reason: 'Jueces 14 da las paradas; la casa de sus padres está en Zorá según Jue 13:2 y Perspicacia «Sansón». Sin año en jw.org:
+  después de Jefté (c. 1173) y antes de Saúl (1117, estudio 3).'
+sources:
+- jueces-13
+- jueces-14
+- it-sanson
+- it-timna
+- it-asquelon
+- it-jefte
+- it-jueces
+- si-3
+checked_on: '2026-09-30'
+status: verified
+narrative_order:
+  series: sanson
+  order: 1
+stops:
+- order: 1
+  place: timna-de-dan
+  reference: Jue 14:1
+  date:
+    from: -1172
+    to: -1116
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre c. 1173 y 1117 a.e.c. (tiempo narrativo: en vida de Sansón, después de Jefté)'
+  note: Salida. Ve allí a una mujer filistea.
+  reason: 'Jue 14:1: Sansón baja a Timná y se fija en una filistea. Suceso ancla: sanson-quiere-casarse-con-una-filistea (tras
+    Jefté, c. 1173, y antes de Saúl, 1117).'
+  sources:
+  - jueces-14
+  - it-sanson
+  - it-timna
+  - it-jefte
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: zora
+  reference: Jue 14:2-4
+  date:
+    from: -1172
+    to: -1116
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre c. 1173 y 1117 a.e.c. (tiempo narrativo: en vida de Sansón, después de Jefté)'
+  note: Pide a sus padres que le consigan a la filistea. El texto dice solo que sube adonde están ellos.
+  reason: 'Jue 14:2 no nombra el lugar; Jue 13:2 y Perspicacia «Sansón» hacen a su padre, Manóah, danita de Zorá. Es deducción.
+    Suceso ancla: sanson-quiere-casarse-con-una-filistea (tras Jefté, c. 1173, y antes de Saúl, 1117).'
+  sources:
+  - jueces-13
+  - jueces-14
+  - it-sanson
+  - it-jefte
+  checked_on: '2026-09-30'
+  status: pending
+- order: 3
+  place: timna-de-dan
+  reference: Jue 14:5-18
+  date:
+    from: -1172
+    to: -1116
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre c. 1173 y 1117 a.e.c. (tiempo narrativo: en vida de Sansón, después de Jefté)'
+  note: Mata un león en las viñas, más tarde halla miel en el cadáver y plantea su adivinanza en el banquete.
+  reason: 'Jue 14:5-18: baja con sus padres a Timná, donde pasan el león, la miel y los siete días de fiesta. Suceso ancla:
+    la-adivinanza-de-sanson (tras Jefté, c. 1173, y antes de Saúl, 1117).'
+  sources:
+  - jueces-14
+  - it-sanson
+  - it-timna
+  - it-jefte
+  checked_on: '2026-09-30'
+  status: verified
+- order: 4
+  place: asquelon
+  reference: Jue 14:19
+  date:
+    from: -1172
+    to: -1116
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre c. 1173 y 1117 a.e.c. (tiempo narrativo: en vida de Sansón, después de Jefté)'
+  note: Mata a 30 hombres y paga con su ropa la apuesta.
+  reason: 'Jue 14:19 dice que baja a Asquelón con el espíritu de Jehová. Suceso ancla: sanson-mata-a-treinta-hombres-de-asquelon
+    (tras Jefté, c. 1173, y antes de Saúl, 1117).'
+  sources:
+  - jueces-14
+  - it-asquelon
+  - it-sanson
+  - it-jefte
+  checked_on: '2026-09-30'
+  status: verified
+- order: 5
+  place: zora
+  reference: Jue 14:19
+  date:
+    from: -1172
+    to: -1116
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre c. 1173 y 1117 a.e.c. (tiempo narrativo: en vida de Sansón, después de Jefté)'
+  note: Llegada. Vuelve furioso a la casa de su padre.
+  reason: 'Jue 14:19 dice que sube a la casa paterna sin nombrarla; Zorá sale de Jue 13:2 y de Perspicacia «Sansón». Es deducción.
+    Suceso ancla: sanson-mata-a-treinta-hombres-de-asquelon (tras Jefté, c. 1173, y antes de Saúl, 1117).'
+  sources:
+  - jueces-13
+  - jueces-14
+  - it-sanson
+  - it-jefte
+  checked_on: '2026-09-30'
+  status: pending

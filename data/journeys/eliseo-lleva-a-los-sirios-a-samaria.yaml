@@ -1,0 +1,66 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: eliseo-lleva-a-los-sirios-a-samaria
+name: Eliseo lleva a los sirios a Samaria
+person: eliseo
+reference: 2Re 6:8-23
+date:
+  from: -916
+  to: -904
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 917 y 905 a.e.c. (tiempo narrativo: en el reinado de Jehoram de Israel)'
+narrative_order:
+  series: eliseo
+  order: 3
+companions: []
+summary: El rey de Siria manda tropas a Dotán para prender a Eliseo. Jehová las ciega y Eliseo las guía hasta Samaria; allí
+  recobran la vista, y el rey de Israel les da de comer y las despide.
+reason: 2Re 6:13-23 da las dos etapas. Fechas de los sucesos jehova-ciega-al-ejercito-sirio-en-dotan y eliseo-lleva-a-samaria-a-los-sirios-cegados.
+sources:
+- 2-reyes-6
+- it-eliseo
+- it-dotan
+- tnm-a6-a
+checked_on: '2026-09-30'
+status: verified
+stops:
+- order: 1
+  place: dotan
+  reference: 2Re 6:13-19
+  date:
+    from: -916
+    to: -904
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 917 y 905 a.e.c. (tiempo narrativo: en el reinado de Jehoram de Israel)'
+  note: El ejército sirio rodea la ciudad de noche.
+  reason: '2Re 6:13, 14: Eliseo está en Dotán cuando lo rodean. Fecha del suceso jehova-ciega-al-ejercito-sirio-en-dotan.'
+  sources:
+  - 2-reyes-6
+  - it-dotan
+  - tnm-a6-a
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: samaria
+  reference: 2Re 6:19-23
+  date:
+    from: -916
+    to: -904
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 917 y 905 a.e.c. (tiempo narrativo: en el reinado de Jehoram de Israel)'
+  note: null
+  reason: 2Re 6:19, 20 lleva a los sirios a Samaria. Fecha del suceso eliseo-lleva-a-samaria-a-los-sirios-cegados.
+  sources:
+  - 2-reyes-6
+  - it-eliseo
+  - tnm-a6-a
+  checked_on: '2026-09-30'
+  status: verified

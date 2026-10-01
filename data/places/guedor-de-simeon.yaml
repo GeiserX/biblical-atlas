@@ -1,0 +1,45 @@
+# biblical-atlas: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: guedor-de-simeon
+name: Guedor
+names:
+- name: Guedor
+  note: La de los simeonitas (Perspicacia «Guedor», núm. 5); no la de la montaña de Judá (núm. 4). La Septuaginta lee Guerar.
+type: city
+lat: null
+lon: null
+precision: uncertain
+coord_source: null
+coord_url: null
+candidates:
+- name: Guerar (Tel Haror), según la lectura de la Septuaginta
+  geometry:
+    type: point
+    lat: 31.3821
+    lon: 34.6065
+  checked_on: '2026-09-30'
+  status: alternative
+  sources:
+  - it-guedor
+  - it-guerar
+  - openbible-geo
+  reason: Perspicacia «Guedor», núm. 5, solo dice que la Septuaginta pone Guerar. El punto es el de Guerar en OpenBible; no
+    hay otra ubicación.
+  coord_source: openbible:a2fc530
+  coord_url: https://www.openbible.info/geo/ancient/a2fc530/gedor-2
+summary: Lugar junto a un valle, en el límite de los pastos que los simeonitas tomaron en días de Ezequías. No se sabe dónde
+  estaba.
+reason: 'Perspicacia «Guedor», núm. 5; 1Cr 4:39-41. Sin ubicación: un solo candidato, por la lectura griega. Coordenada de
+  OpenBible: solo el punto.'
+sources:
+- it-guedor
+- 1-cronicas-4
+- openbible-geo
+links:
+- title: 'Perspicacia: «Guedor»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Guedor/
+  type: perspicacia
+- title: 1 Crónicas 4 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/1-Cr%C3%B3nicas/4/
+  type: bible
+checked_on: '2026-09-30'
+status: verified

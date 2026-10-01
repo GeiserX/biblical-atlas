@@ -1,0 +1,120 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: cortejo-funebre-de-jacob
+name: José sube a Canaán a enterrar a Jacob
+person: jose-hijo-de-jacob
+reference: Gé 50:4-14; Hch 7:15
+date:
+  from: -1710
+  to: -1709
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1711 y 1710 a.e.c. (tiempo narrativo: después de los 70 días de luto en Egipto por Jacob, muerto en 1711)'
+companions:
+- ruben-hijo-de-jacob
+- simeon-hijo-de-jacob
+- levi-hijo-de-jacob
+- juda-hijo-de-jacob
+- dan-hijo-de-jacob
+- neftali-hijo-de-jacob
+- gad-hijo-de-jacob
+- aser-hijo-de-jacob
+- isacar-hijo-de-jacob
+- zabulon-hijo-de-jacob
+- benjamin-hijo-de-jacob
+summary: Acabado el luto, José pide permiso al faraón y sube con sus hermanos y una gran comitiva egipcia. Lloran siete días
+  en la era de Atad, entierran a Jacob en la cueva de Macpelá y vuelven a Egipto.
+reason: Gé 50:4-14 da la salida, el duelo, el entierro y la vuelta con los hermanos. Jacob murió en 1711 a.e.c., y el viaje
+  sigue a los 70 días de luto (Gé 50:3), sin año propio.
+sources:
+- genesis-50
+- hechos-7
+- it-jose
+- it-jacob
+- it-atad
+- it-macpela
+- si-3
+checked_on: '2026-09-30'
+status: verified
+narrative_order:
+  series: jose-hijo-de-jacob
+  order: 2
+stops:
+- order: 1
+  place: egipto
+  reference: Gé 50:4-9
+  date:
+    from: -1710
+    to: -1709
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1711 y 1710 a.e.c. (tiempo narrativo: después de los 70 días de luto en Egipto por Jacob, muerto en 1711)'
+  note: Los niños y el ganado se quedan en Gosén; van carros y jinetes.
+  reason: Gé 50:7-9 dice que José subió con la corte del faraón y con su familia. Fecha narrativa del suceso «Duelo por Jacob
+    en la era de Atad».
+  sources:
+  - genesis-50
+  - it-jose
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: atad
+  reference: Gé 50:10, 11
+  date:
+    from: -1710
+    to: -1709
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1711 y 1710 a.e.c. (tiempo narrativo: después de los 70 días de luto en Egipto por Jacob, muerto en 1711)'
+  note: En la región del Jordán; por el duelo, los cananeos la llaman Abel-Mizraim. Sin punto en el mapa.
+  reason: Gé 50:10, 11 pone siete días de duelo en la era de Atad. Misma fecha narrativa.
+  sources:
+  - genesis-50
+  - it-atad
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: macpela
+  reference: Gé 50:12, 13
+  date:
+    from: -1710
+    to: -1709
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1711 y 1710 a.e.c. (tiempo narrativo: después de los 70 días de luto en Egipto por Jacob, muerto en 1711)'
+  note: La cueva del campo que Abrahán compró, frente a Mamré.
+  reason: Gé 50:13 dice que lo enterraron en la cueva de Macpelá, en Canaán. Fecha narrativa del suceso «Entierran a Jacob
+    en la cueva de Macpelá».
+  sources:
+  - genesis-50
+  - it-macpela
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 4
+  place: egipto
+  reference: Gé 50:14
+  date:
+    from: -1710
+    to: -1709
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1711 y 1710 a.e.c. (tiempo narrativo: después de los 70 días de luto en Egipto por Jacob, muerto en 1711)'
+  note: Vuelven todos los que habían subido con él.
+  reason: Gé 50:14 hace volver a José a Egipto con sus hermanos tras el entierro. Misma fecha narrativa.
+  sources:
+  - genesis-50
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified

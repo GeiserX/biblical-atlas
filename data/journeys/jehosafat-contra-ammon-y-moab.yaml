@@ -1,0 +1,108 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: jehosafat-contra-ammon-y-moab
+name: Jehosafat contra Ammón y Moab
+person: jehosafat
+reference: 2Cr 20:1-30
+date:
+  from: -919
+  to: -916
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre c. 920 y c. 917 a.e.c. (tiempo narrativo: tras Ramot-Galaad y antes de la alianza con Ocozías de Israel)'
+narrative_order:
+  series: jehosafat
+  order: 2
+companions: []
+summary: Ammón, Moab y los de Seír invaden Judá. Jehosafat ora en Jerusalén y sale al desierto de Tecoa, donde los invasores
+  se matan entre ellos. Recogen el botín, alaban a Jehová en Beracá y vuelven cantando.
+reason: 2Cr 20 va tras la vuelta de Ramot-Galaad (2Cr 19:1) y antes de las naves con Ocozías (2Cr 20:35-37). Fechas de muerte-de-acab
+  y las-naves-de-jehosafat-se-destrozan-en-ezion-gueber.
+sources:
+- 2-cronicas-20
+- 2-cronicas-19
+- it-jehosafat
+- it-teqoa
+- it-beraca
+- it-en-guedi
+- tnm-a6-a
+checked_on: '2026-09-30'
+status: verified
+stops:
+- order: 1
+  place: jerusalen
+  reference: 2Cr 20:3-19
+  date:
+    from: -919
+    to: -916
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre c. 920 y c. 917 a.e.c. (tiempo narrativo: tras Ramot-Galaad y antes de la alianza con Ocozías de Israel)'
+  note: Los invasores acampan en Hazazón-Tamar, que es En-Guedí.
+  reason: 2Cr 20:5 lo pone de pie en la casa de Jehová. Misma fecha narrativa del viaje, entre muerte-de-acab y las-naves-de-jehosafat-se-destrozan-en-ezion-gueber.
+  sources:
+  - 2-cronicas-20
+  - it-en-guedi
+  - tnm-a6-a
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: tecoa
+  reference: 2Cr 20:20-25
+  date:
+    from: -919
+    to: -916
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre c. 920 y c. 917 a.e.c. (tiempo narrativo: tras Ramot-Galaad y antes de la alianza con Ocozías de Israel)'
+  note: El texto dice desierto de Tecoa; la ficha es la ciudad, y proponemos añadirle ese nombre.
+  reason: '2Cr 20:20: salen al desierto de Tecoa, que Perspicacia «Teqoa» pone al este de la ciudad. Misma fecha narrativa
+    del viaje, entre muerte-de-acab y las-naves-de-jehosafat-se-destrozan-en-ezion-gueber.'
+  sources:
+  - 2-cronicas-20
+  - it-teqoa
+  - tnm-a6-a
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: valle-de-beraca
+  reference: 2Cr 20:26
+  date:
+    from: -919
+    to: -916
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre c. 920 y c. 917 a.e.c. (tiempo narrativo: tras Ramot-Galaad y antes de la alianza con Ocozías de Israel)'
+  note: Al cuarto día se reúnen allí para bendecir a Jehová.
+  reason: 2Cr 20:26 nombra el valle y explica su nombre. Misma fecha narrativa del viaje, entre muerte-de-acab y las-naves-de-jehosafat-se-destrozan-en-ezion-gueber.
+  sources:
+  - 2-cronicas-20
+  - it-beraca
+  - tnm-a6-a
+  checked_on: '2026-09-30'
+  status: verified
+- order: 4
+  place: jerusalen
+  reference: 2Cr 20:27, 28
+  date:
+    from: -919
+    to: -916
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre c. 920 y c. 917 a.e.c. (tiempo narrativo: tras Ramot-Galaad y antes de la alianza con Ocozías de Israel)'
+  note: Vuelven con música al templo.
+  reason: '2Cr 20:27, 28: regresan alegres a Jerusalén. Misma fecha narrativa del viaje, entre muerte-de-acab y las-naves-de-jehosafat-se-destrozan-en-ezion-gueber.'
+  sources:
+  - 2-cronicas-20
+  - tnm-a6-a
+  checked_on: '2026-09-30'
+  status: verified

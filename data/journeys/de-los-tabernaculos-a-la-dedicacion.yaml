@@ -1,0 +1,166 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: de-los-tabernaculos-a-la-dedicacion
+name: Ministerio en Judea hasta la Dedicación
+person: jesus
+reference: Lu 10:1–13:21; Jn 10:22-42
+date:
+  from: 32
+  to: 33
+  precision: range
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: de la Fiesta de los Tabernáculos de 32 e.c. a principios de 33
+narrative_order:
+  series: jesus
+  order: 13
+companions: []
+summary: Tras la fiesta envía a setenta discípulos y enseña por Judea. Se aloja con Marta y María en Betania, vuelve a Jerusalén
+  para la Dedicación y, cuando quieren apedrearlo, cruza al otro lado del Jordán.
+reason: Lucas 10 a 13 y Juan 10 dan las paradas; el orden y los lugares probables son los de las tablas A7-E y A7-F. Fechas
+  de los sucesos envio-de-los-setenta, en-casa-de-marta-y-maria, fiesta-de-la-dedicacion-32 y va-a-betania-del-otro-lado-del-jordan.
+sources:
+- lucas-10
+- lucas-11
+- lucas-12
+- lucas-13
+- juan-10
+- tnm-a7-e
+- tnm-a7-f
+- jy-cap-72
+- jy-cap-73
+- jy-cap-74
+- jy-cap-75
+- jy-cap-76
+- jy-cap-77
+- jy-cap-78
+- jy-cap-79
+- jy-cap-80
+- jy-cap-81
+- it-betania
+- it-fiesta-dedicacion
+checked_on: '2026-09-30'
+status: verified
+stops:
+- order: 1
+  place: jerusalen
+  reference: Jn 7:10–10:21
+  date:
+    from: 32
+    to: 32
+    precision: month
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: Fiesta de los Tabernáculos de 32 e.c.
+    detail:
+      month: tisri
+  note: Enlace con el viaje anterior.
+  reason: Jn 7:10 a 10:21 lo mantiene en Jerusalén durante la fiesta. Fecha del suceso fiesta-de-los-tabernaculos-32.
+  sources:
+  - juan-7
+  - juan-10
+  - tnm-a7-e
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: judea
+  reference: Lu 10:1-37
+  date:
+    from: 32
+    to: 32
+    precision: season
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: otoño de 32 e.c., después de los Tabernáculos
+    detail: &id001
+      season: autumn
+  note: Envía a los setenta de dos en dos.
+  reason: Lu 10:1-37 no nombra el lugar; la tabla A7-E pone «probablemente Judea». Fecha del suceso envio-de-los-setenta.
+  sources:
+  - lucas-10
+  - tnm-a7-e
+  checked_on: '2026-09-30'
+  status: pending
+- order: 3
+  place: betania
+  reference: Lu 10:38-42
+  date:
+    from: 32
+    to: 32
+    precision: season
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: otoño de 32 e.c., después de los Tabernáculos
+    detail: *id001
+  note: Lucas dice «cierta aldea»; Jn 11:1 la identifica como la de Marta y María.
+  reason: 'Lu 10:38: entra en la aldea donde Marta lo hospeda. Lugar y fecha del suceso en-casa-de-marta-y-maria.'
+  sources:
+  - lucas-10
+  - tnm-a7-e
+  - it-betania
+  checked_on: '2026-09-30'
+  status: verified
+- order: 4
+  place: judea
+  reference: Lu 11:1–13:21
+  date:
+    from: 32
+    to: 32
+    precision: season
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: otoño de 32 e.c., después de los Tabernáculos
+    detail: *id001
+  note: Enseña a orar y sigue enseñando por la región.
+  reason: Lu 11 a 13:21 no nombra el lugar; la tabla A7-E pone «probablemente Judea». Fecha del suceso envio-de-los-setenta,
+    el más cercano con fecha.
+  sources:
+  - lucas-11
+  - lucas-12
+  - lucas-13
+  - tnm-a7-e
+  checked_on: '2026-09-30'
+  status: pending
+- order: 5
+  place: jerusalen
+  reference: Jn 10:22-39
+  date:
+    from: 32
+    to: 32
+    precision: month
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: Fiesta de la Dedicación de 32 e.c.
+    detail:
+      month: kislev
+  note: Era invierno; intentan apedrearlo.
+  reason: Jn 10:22, 23 lo pone en el templo de Jerusalén durante la Fiesta de la Dedicación. Fecha del suceso fiesta-de-la-dedicacion-32.
+  sources:
+  - juan-10
+  - tnm-a7-e
+  - it-fiesta-dedicacion
+  checked_on: '2026-09-30'
+  status: verified
+- order: 6
+  place: betania-del-otro-lado-del-jordan
+  reference: Jn 10:40-42
+  date:
+    from: 32
+    to: 33
+    precision: range
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: después de la Dedicación de 32 e.c. y antes de la Pascua de 33
+  note: Donde Juan bautizaba al principio.
+  reason: 'Jn 10:40: vuelve al otro lado del Jordán y se queda allí. Fecha del suceso va-a-betania-del-otro-lado-del-jordan.'
+  sources:
+  - juan-10
+  - tnm-a7-f
+  checked_on: '2026-09-30'
+  status: verified

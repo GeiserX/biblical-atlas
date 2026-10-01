@@ -1,0 +1,157 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: abner-en-gabaon
+name: Abner sale de Mahanaim a Gabaón
+person: abner
+reference: 2Sa 2:12-29
+date:
+  from: -1076
+  to: -1074
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'c. 1077-1075 a.e.c. (tiempo narrativo: en los dos años de reinado de Is-Bóset)'
+companions: []
+summary: Abner lleva a los siervos de Is-Bóset de Mahanaim a Gabaón. Vencido junto al estanque, mata a Asahel, pide a Joab
+  que pare en la colina de Amá y vuelve de noche por el Arabá y el Jordán.
+reason: 2Sa 2:12-29 da la ida y la vuelta. Perspicacia «Abner», párr. 4 y 5, calcula más de 80 km de regreso. Pasa en los
+  dos años de Is-Bóset, entre 1077 y c. 1075 a.e.c.
+sources:
+- 2-samuel-2
+- it-abner
+- it-mahanaim
+- it-ama
+- it-guiah
+- it-is-boset
+- it-david
+- si-3
+checked_on: '2026-09-30'
+status: verified
+narrative_order:
+  series: abner
+  order: 1
+stops:
+- order: 1
+  place: mahanaim
+  reference: 2Sa 2:8, 12
+  date:
+    from: -1076
+    to: -1074
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'c. 1077-1075 a.e.c. (tiempo narrativo: en los dos años de reinado de Is-Bóset)'
+  note: Capital de Is-Bóset, al otro lado del Jordán.
+  reason: '2Sa 2:8, 12: Abner había llevado a Is-Bóset a Mahanaim, y de allí sale hacia Gabaón. Fecha: la del suceso combate-junto-al-estanque-de-gabaon.'
+  sources:
+  - 2-samuel-2
+  - it-mahanaim
+  - it-abner
+  - si-3
+  - it-david
+  - it-is-boset
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: gabaon
+  reference: 2Sa 2:12-23
+  date:
+    from: -1076
+    to: -1074
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'c. 1077-1075 a.e.c. (tiempo narrativo: en los dos años de reinado de Is-Bóset)'
+  note: Junto al estanque, en el sitio llamado Helcat-Hazurim. Allí mata a Asahel.
+  reason: '2Sa 2:13-23: los dos bandos se encuentran en el estanque de Gabaón. Fecha: la del suceso combate-junto-al-estanque-de-gabaon.'
+  sources:
+  - 2-samuel-2
+  - it-abner
+  - si-3
+  - it-is-boset
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: colina-de-ama
+  reference: 2Sa 2:24-28
+  date:
+    from: -1076
+    to: -1074
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'c. 1077-1075 a.e.c. (tiempo narrativo: en los dos años de reinado de Is-Bóset)'
+  note: Frente a Guíah, camino del desierto de Gabaón. Joab deja de perseguirlo.
+  reason: '2Sa 2:24-28: al ponerse el sol llegan a la colina de Amá, y Abner pide a Joab que pare. Fecha: la del suceso abner-pide-a-joab-que-deje-de-perseguirlo.'
+  sources:
+  - 2-samuel-2
+  - it-ama
+  - it-guiah
+  - si-3
+  - it-is-boset
+  checked_on: '2026-09-30'
+  status: verified
+- order: 4
+  place: araba
+  reference: 2Sa 2:29
+  date:
+    from: -1076
+    to: -1074
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'c. 1077-1075 a.e.c. (tiempo narrativo: en los dos años de reinado de Is-Bóset)'
+  note: Caminan toda la noche.
+  reason: '2Sa 2:29: Abner y sus hombres marchan de noche por el Arabá. Fecha: la del suceso abner-vuelve-a-mahanaim.'
+  sources:
+  - 2-samuel-2
+  - it-abner
+  - si-3
+  - it-is-boset
+  checked_on: '2026-09-30'
+  status: verified
+- order: 5
+  place: rio-jordan
+  reference: 2Sa 2:29
+  date:
+    from: -1076
+    to: -1074
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'c. 1077-1075 a.e.c. (tiempo narrativo: en los dos años de reinado de Is-Bóset)'
+  note: null
+  reason: '2Sa 2:29: cruzan el Jordán. Fecha: la del suceso abner-vuelve-a-mahanaim.'
+  sources:
+  - 2-samuel-2
+  - it-abner
+  - si-3
+  - it-is-boset
+  checked_on: '2026-09-30'
+  status: verified
+- order: 6
+  place: mahanaim
+  reference: 2Sa 2:29
+  date:
+    from: -1076
+    to: -1074
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'c. 1077-1075 a.e.c. (tiempo narrativo: en los dos años de reinado de Is-Bóset)'
+  note: Llegan tras pasar por el barranco (quizás Bitrón, según la nota).
+  reason: '2Sa 2:29: recorren el barranco y llegan a Mahanaim; Perspicacia «Abner», párr. 5. Fecha: la del suceso abner-vuelve-a-mahanaim.'
+  sources:
+  - 2-samuel-2
+  - it-abner
+  - it-mahanaim
+  - si-3
+  - it-is-boset
+  checked_on: '2026-09-30'
+  status: verified

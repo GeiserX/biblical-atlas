@@ -1,0 +1,70 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: elias-se-esconde-en-kerit-y-sarepta
+name: Elías se esconde en Kerit y Sarepta
+person: elias-profeta
+reference: 1Re 17:1-24; Lu 4:25, 26
+date:
+  from: -939
+  to: -919
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 940 y 920 a.e.c. (tiempo narrativo: durante el reinado de Acab)'
+narrative_order:
+  series: elias-profeta
+  order: 1
+companions: []
+summary: Tras anunciar a Acab la sequía, Elías se esconde en Kerit, un valle al otro lado del Jordán, y los cuervos le llevan
+  comida. Seco el arroyo, Jehová lo envía a Sarepta, donde lo mantiene una viuda.
+reason: 1Re 17:2-10 da las dos etapas en orden; el lugar donde habla con Acab no se nombra. Fechas de los sucesos los-cuervos-alimentan-a-elias-en-el-valle-de-kerit
+  y elias-y-la-viuda-de-sarepta.
+sources:
+- 1-reyes-17
+- lucas-4
+- it-elias
+- it-kerit
+- it-sarepta
+- tnm-a6-a
+checked_on: '2026-09-30'
+status: verified
+stops:
+- order: 1
+  place: valle-de-kerit
+  reference: 1Re 17:2-7
+  date:
+    from: -939
+    to: -919
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 940 y 920 a.e.c. (tiempo narrativo: durante el reinado de Acab)'
+  note: Al este del Jordán; bebe del arroyo hasta que se seca.
+  reason: 1Re 17:3-5 lo manda a Kerit y cuenta que fue. Fecha del suceso los-cuervos-alimentan-a-elias-en-el-valle-de-kerit.
+  sources:
+  - 1-reyes-17
+  - it-kerit
+  - tnm-a6-a
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: sarepta
+  reference: 1Re 17:8-24
+  date:
+    from: -939
+    to: -919
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 940 y 920 a.e.c. (tiempo narrativo: durante el reinado de Acab)'
+  note: Ciudad de Sidón. Allí devuelve la vida al hijo de la viuda.
+  reason: 1Re 17:9, 10 lo lleva a Sarepta; Lu 4:25, 26 lo recuerda. Fecha del suceso elias-y-la-viuda-de-sarepta.
+  sources:
+  - 1-reyes-17
+  - lucas-4
+  - it-sarepta
+  - tnm-a6-a
+  checked_on: '2026-09-30'
+  status: verified

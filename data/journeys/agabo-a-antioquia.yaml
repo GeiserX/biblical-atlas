@@ -1,0 +1,64 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: agabo-a-antioquia
+name: Ágabo baja a Antioquía
+person: agabo
+reference: Hch 11:27, 28
+date:
+  from: 44
+  to: 44
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: 44 e.c.
+narrative_order:
+  series: agabo
+  order: 1
+companions: []
+summary: Unos profetas bajan de Jerusalén a Antioquía. Uno de ellos, Ágabo, anuncia una gran hambre, que llega en tiempos
+  de Claudio, y los discípulos deciden enviar ayuda a los hermanos de Judea.
+reason: Hch 11:27, 28 da la salida y la llegada. Fecha del suceso profecia-de-agabo, que sigue el estudio 3.
+sources:
+- hechos-11
+- it-agabo
+- si-3
+checked_on: '2026-09-30'
+status: verified
+stops:
+- order: 1
+  place: jerusalen
+  reference: Hch 11:27
+  date:
+    from: 44
+    to: 44
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: 44 e.c.
+  note: Van varios profetas; solo se nombra a Ágabo.
+  reason: 'Hch 11:27: unos profetas bajan de Jerusalén. Fecha del suceso profecia-de-agabo.'
+  sources:
+  - hechos-11
+  - it-agabo
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: antioquia-de-siria
+  reference: Hch 11:27, 28
+  date:
+    from: 44
+    to: 44
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: 44 e.c.
+  note: Anuncia el hambre.
+  reason: 'Hch 11:27, 28: llegan a Antioquía y Ágabo profetiza. Lugar y fecha del suceso profecia-de-agabo.'
+  sources:
+  - hechos-11
+  - it-agabo
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified

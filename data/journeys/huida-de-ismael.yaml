@@ -1,0 +1,80 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: huida-de-ismael
+name: Ismael mata a Guedalías y huye a Ammón
+person: ismael-hijo-de-netanias
+reference: Jer 40:14; 41:1-15
+date:
+  from: -606
+  to: -606
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: 607 a.e.c. (desde el mes de tisri)
+companions: []
+summary: Enviado por Baalís, rey de Ammón, Ismael mata al gobernador Guedalías en Mizpá y se lleva cautivos hacia Ammón. Johanán
+  lo alcanza en Gabaón y libera a los cautivos, pero él escapa con ocho hombres.
+reason: Jer 41:1 pone el asesinato en el séptimo mes; el estudio 3 lo fecha en 607 a.e.c. (suceso asesinato-de-guedalias).
+sources:
+- si-3
+- it-ismael
+- it-guedalias
+- it-gabaon
+- jeremias-40
+- jeremias-41
+checked_on: '2026-09-30'
+status: verified
+stops:
+- order: 1
+  place: mizpa-de-benjamin
+  reference: Jer 41:1-10
+  date: &id001
+    from: -606
+    to: -606
+    precision: month
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: tisri de 607 a.e.c.
+    detail:
+      month: tisri
+  note: Jer 40:14 dice que lo envió Baalís, rey de los ammonitas.
+  reason: 'Jer 41:1-10: en el mes séptimo mata a Guedalías en Mizpá y se lleva cautivo al resto de la gente. Fecha del suceso
+    asesinato-de-guedalias.'
+  sources:
+  - jeremias-40
+  - jeremias-41
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: gabaon
+  reference: Jer 41:12-14
+  date: *id001
+  note: Las grandes aguas de Gabaón; la nota al pie da también «el gran estanque».
+  reason: 'Jer 41:12-14: Johanán lo encuentra junto a las aguas de Gabaón y los cautivos se van con él. Mismo mes que el asesinato.'
+  sources:
+  - jeremias-41
+  - it-gabaon
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: ammon
+  reference: Jer 41:15
+  date:
+    from: -606
+    to: -606
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: 607 a.e.c.
+  note: null
+  reason: 'Jer 41:15: escapa con ocho de sus hombres a la tierra de los ammonitas. Año del suceso asesinato-de-guedalias.'
+  sources:
+  - jeremias-41
+  - it-ismael
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified

@@ -1,0 +1,96 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: primer-viaje-por-grano
+name: Los hermanos de José bajan por grano
+person: ruben-hijo-de-jacob
+reference: Gé 42:1-38; Hch 7:12
+date:
+  from: -1728
+  to: -1727
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1729 y 1728 a.e.c. (tiempo narrativo: unos diez años después de morir Isaac y antes del traslado a Egipto)'
+companions:
+- levi-hijo-de-jacob
+- juda-hijo-de-jacob
+- dan-hijo-de-jacob
+- neftali-hijo-de-jacob
+- gad-hijo-de-jacob
+- aser-hijo-de-jacob
+- isacar-hijo-de-jacob
+- zabulon-hijo-de-jacob
+summary: Con el hambre, Jacob manda a diez de sus hijos a comprar grano en Egipto y se queda con Benjamín. José los reconoce,
+  los trata como espías y retiene a Simeón; de vuelta, hallan el dinero en los costales.
+reason: Gé 42 da la ida, la estancia y la vuelta; Rubén, el primogénito, habla por todos (Gé 42:22, 37). Perspicacia «Jacob»
+  pone el viaje unos diez años después de morir Isaac. Simeón se queda en Egipto.
+sources:
+- genesis-42
+- hechos-7
+- it-jose
+- it-jacob
+- it-ruben
+- it-simeon
+- si-3
+checked_on: '2026-09-30'
+status: verified
+stops:
+- order: 1
+  place: canaan
+  reference: Gé 42:1-5
+  date:
+    from: -1728
+    to: -1727
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1729 y 1728 a.e.c. (tiempo narrativo: unos diez años después de morir Isaac y antes del traslado a Egipto)'
+  note: Casa de Jacob; Perspicacia la sitúa en Hebrón.
+  reason: Gé 42:5 dice que el hambre había llegado a Canaán, de donde salen. Fecha narrativa del suceso «Diez hermanos de
+    José bajan a Egipto por grano».
+  sources:
+  - genesis-42
+  - it-jacob
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: egipto
+  reference: Gé 42:6-25
+  date:
+    from: -1728
+    to: -1727
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1729 y 1728 a.e.c. (tiempo narrativo: unos diez años después de morir Isaac y antes del traslado a Egipto)'
+  note: José los acusa de espías y deja preso a Simeón hasta que traigan a Benjamín.
+  reason: Gé 42:6-25 pone el encuentro con José en Egipto. Misma fecha narrativa.
+  sources:
+  - genesis-42
+  - hechos-7
+  - it-jose
+  - it-simeon
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: canaan
+  reference: Gé 42:26-38
+  date:
+    from: -1728
+    to: -1727
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1729 y 1728 a.e.c. (tiempo narrativo: unos diez años después de morir Isaac y antes del traslado a Egipto)'
+  note: En el lugar donde se hospedan, sin nombre, uno encuentra su dinero en el costal.
+  reason: Gé 42:29 los hace volver a Jacob, en Canaán. Fecha narrativa del suceso «Los hermanos vuelven a Canaán sin Simeón».
+  sources:
+  - genesis-42
+  - it-ruben
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified

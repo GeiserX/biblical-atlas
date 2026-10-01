@@ -1,0 +1,66 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: herodes-agripa-baja-a-cesarea
+name: Herodes Agripa I baja a Cesarea
+person: herodes-agripa-i
+reference: Hch 12:1-23
+date:
+  from: 44
+  to: 44
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: 44 e.c.
+companions: []
+summary: Tras la fuga de Pedro, Herodes manda castigar a los guardias y baja de Judea a Cesarea. Allí recibe a los de Tiro
+  y Sidón, se deja aclamar como a un dios y muere.
+reason: Hch 12:19 da el traslado. Fechas de los sucesos pedro-liberado-de-la-carcel, herodes-castiga-a-los-guardias y muerte-de-herodes-agripa-i,
+  que siguen el estudio 3.
+sources:
+- hechos-12
+- it-herodes
+- it-blasto
+- si-3
+checked_on: '2026-09-30'
+status: verified
+stops:
+- order: 1
+  place: jerusalen
+  reference: Hch 12:1-19
+  date:
+    from: 44
+    to: 44
+    precision: month
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: Pascua de 44 e.c.
+    detail:
+      month: nisan
+  note: El texto dice que baja de Judea; lo anterior pasa en Jerusalén.
+  reason: Hch 12:3-19 lo pone en Jerusalén durante la Pascua, con Pedro en la cárcel. Fechas de los sucesos pedro-liberado-de-la-carcel
+    y herodes-castiga-a-los-guardias.
+  sources:
+  - hechos-12
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: cesarea
+  reference: Hch 12:19-23
+  date:
+    from: 44
+    to: 44
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: 44 e.c.
+  note: Muere allí.
+  reason: 'Hch 12:19: baja de Judea a Cesarea y se queda un tiempo. Lugar y fecha del suceso muerte-de-herodes-agripa-i.'
+  sources:
+  - hechos-12
+  - it-herodes
+  - it-blasto
+  checked_on: '2026-09-30'
+  status: verified

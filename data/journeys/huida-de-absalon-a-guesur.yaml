@@ -1,0 +1,95 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: huida-de-absalon-a-guesur
+name: Absalón mata a Amnón y huye a Guesur
+person: absalon
+reference: 2Sa 13:23-38
+date:
+  from: -1069
+  to: -1039
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1070 y c. 1040 a.e.c. (tiempo narrativo: tras el pacto con David y antes de acabarse 2 Samuel)'
+companions: []
+summary: Dos años después de lo de Tamar, Absalón invita a los hijos del rey al esquileo de Baal-Hazor y hace matar a Amnón.
+  Luego huye a Guesur, con su abuelo Talmái, y se queda allí tres años.
+reason: '2Sa 13:23-38. Perspicacia «Absalón», párr. 6, sitúa Baal-Hazor al nornordeste de Jerusalén, a unos 22 km, y Guesur
+  al este del mar de Galilea. Sin año: entre 1070 (lámina B7) y c. 1040 a.e.c.'
+sources:
+- 2-samuel-13
+- it-absalon
+- it-amnon
+- it-baal-hazor
+- it-guesur
+- it-talmai
+- tnm-b7
+- tnm-tabla
+checked_on: '2026-09-30'
+status: verified
+narrative_order:
+  series: absalon
+  order: 1
+stops:
+- order: 1
+  place: jerusalen
+  reference: 2Sa 13:24-27
+  date:
+    from: -1069
+    to: -1039
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1070 y c. 1040 a.e.c. (tiempo narrativo: tras el pacto con David y antes de acabarse 2 Samuel)'
+  note: Invita al rey, que no va y deja ir a Amnón.
+  reason: '2Sa 13:24-27: Absalón va a ver al rey para invitarlo. Fecha: la del suceso absalon-hace-matar-a-amnon.'
+  sources:
+  - 2-samuel-13
+  - it-absalon
+  - tnm-b7
+  - tnm-tabla
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: baal-hazor
+  reference: 2Sa 13:23, 28, 29
+  date:
+    from: -1069
+    to: -1039
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1070 y c. 1040 a.e.c. (tiempo narrativo: tras el pacto con David y antes de acabarse 2 Samuel)'
+  note: Sus siervos matan a Amnón en el banquete.
+  reason: '2Sa 13:23, 28, 29: en el esquileo de Baal-Hazor, cerca de Efraín, matan a Amnón. Fecha: la del suceso absalon-hace-matar-a-amnon.'
+  sources:
+  - 2-samuel-13
+  - it-baal-hazor
+  - it-amnon
+  - tnm-b7
+  - tnm-tabla
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: guesur
+  reference: 2Sa 13:37, 38
+  date:
+    from: -1069
+    to: -1039
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1070 y c. 1040 a.e.c. (tiempo narrativo: tras el pacto con David y antes de acabarse 2 Samuel)'
+  note: Con Talmái, rey de Guesur y abuelo suyo.
+  reason: '2Sa 13:37, 38: huye a Guesur y se queda tres años. Fecha: la del suceso absalon-huye-a-guesur.'
+  sources:
+  - 2-samuel-13
+  - it-guesur
+  - it-talmai
+  - tnm-b7
+  - tnm-tabla
+  checked_on: '2026-09-30'
+  status: verified

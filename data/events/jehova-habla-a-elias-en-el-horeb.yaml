@@ -3,12 +3,12 @@ id: jehova-habla-a-elias-en-el-horeb
 title: Jehová habla a Elías en el Horeb
 date:
   from: -939
-  to: -919
+  to: -920
   precision: range
   approx: true
   type: narrative
   chronology: tnm
-  text: 'entre 940 y 920 a.e.c. (tiempo narrativo: después del Carmelo, en el reinado de Acab)'
+  text: 'entre 940 y 921 a.e.c. (tiempo narrativo: después del Carmelo y antes de la viña de Nabot)'
 narrative_order:
   series: 1-reyes
   order: 19009
@@ -24,7 +24,7 @@ passages:
 summary: 'En una cueva del Horeb, Elías dice que solo queda él. Tras viento, terremoto y fuego, Jehová le habla con voz calmada:
   debe ungir a Hazael, a Jehú y a Eliseo, y aún quedan 7.000 fieles.'
 reason: 'Perspicacia «Elías», núm. 1, apartado «Huye de Jezabel»; «Jehú», núm. 3, párr. 1; «Hazael», párr. 2. Ro 11:2-4 recuerda
-  la queja y los 7.000. Fecha: tras el Carmelo, en el reinado de Acab (A6-A).'
+  la queja y los 7.000. Fecha: tras el Carmelo, antes de llamar a Eliseo y de la viña de Nabot (A6-A).'
 sources:
 - 1-reyes-19
 - it-elias

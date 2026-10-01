@@ -1,0 +1,92 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: gira-por-galilea-y-envio-de-los-doce
+name: Tercera gira por Galilea
+person: jesus
+reference: Mt 9:27-34; 9:35–11:1; 13:54-58; Mr 6:1-13; Lu 9:1-6
+date:
+  from: 31
+  to: 32
+  precision: range
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 31 o 32 e.c.
+narrative_order:
+  series: jesus
+  order: 8
+companions: []
+summary: Vuelve a su tierra, Nazaret, donde otra vez lo rechazan, y recorre las aldeas de alrededor enseñando. Después envía
+  a los doce de dos en dos para extender la predicación.
+reason: Marcos 6 da el orden. Fechas de los sucesos dos-ciegos-y-un-mudo, rechazado-otra-vez-en-nazaret y tercera-gira-y-envio-de-los-doce
+  (tabla A7-D).
+sources:
+- marcos-6
+- mateo-9
+- mateo-10
+- mateo-13
+- lucas-9
+- tnm-a7-d
+- jy-cap-48
+- jy-cap-49
+- jy-cap-50
+checked_on: '2026-09-30'
+status: verified
+stops:
+- order: 1
+  place: capernaum
+  reference: Mt 9:27-34
+  date:
+    from: 31
+    to: 32
+    precision: range
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 31 o 32 e.c.
+  note: Enlace con el viaje anterior.
+  reason: Mt 9:27-34 no nombra el lugar; la tabla A7-D pone «Capernaúm (?)». Fecha del suceso dos-ciegos-y-un-mudo.
+  sources:
+  - mateo-9
+  - tnm-a7-d
+  checked_on: '2026-09-30'
+  status: pending
+- order: 2
+  place: nazaret
+  reference: Mr 6:1-6; Mt 13:54-58
+  date:
+    from: 31
+    to: 32
+    precision: range
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 31 o 32 e.c.
+  note: Su tierra; se asombra de su falta de fe.
+  reason: Mr 6:1 lo lleva a su tierra con sus discípulos, y la tabla A7-D la llama Nazaret. Fecha del suceso rechazado-otra-vez-en-nazaret.
+  sources:
+  - marcos-6
+  - mateo-13
+  - tnm-a7-d
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: galilea
+  reference: Mr 6:6-13; Mt 9:35–11:1; Lu 9:1-6
+  date:
+    from: 31
+    to: 32
+    precision: range
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 31 o 32 e.c.
+  note: Aldeas vecinas; envía a los doce de dos en dos.
+  reason: 'Mr 6:6, 7: recorre las aldeas de alrededor y envía a los doce. Fecha del suceso tercera-gira-y-envio-de-los-doce.'
+  sources:
+  - marcos-6
+  - mateo-9
+  - mateo-10
+  - lucas-9
+  - tnm-a7-d
+  checked_on: '2026-09-30'
+  status: verified

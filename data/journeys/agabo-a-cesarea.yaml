@@ -1,0 +1,62 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: agabo-a-cesarea
+name: Ágabo baja a Cesarea
+person: agabo
+reference: Hch 21:10-14
+date:
+  from: 56
+  to: 56
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 56 e.c.
+narrative_order:
+  series: agabo
+  order: 2
+companions: []
+summary: Mientras Pablo se hospeda en casa de Felipe, el profeta Ágabo baja de Judea. Se ata con el cinturón de Pablo y anuncia
+  que así lo atarán en Jerusalén.
+reason: Perspicacia «Ágabo» fecha el encuentro hacia el año 56, al final del último viaje de Pablo; suceso agabo-anuncia-cadenas.
+sources:
+- hch-21
+- it-agabo
+checked_on: '2026-09-30'
+status: verified
+stops:
+- order: 1
+  place: judea
+  reference: Hch 21:10
+  date:
+    from: 56
+    to: 56
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 56 e.c.
+  note: null
+  reason: Hch 21:10 dice que bajó de Judea. Año del suceso agabo-anuncia-cadenas.
+  sources:
+  - hch-21
+  - it-agabo
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: cesarea
+  reference: Hch 21:10-14
+  date:
+    from: 56
+    to: 56
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 56 e.c.
+  note: Los discípulos ruegan a Pablo que no suba; él no cambia de idea.
+  reason: 'Hch 21:8-11: llega a la casa de Felipe en Cesarea y hace allí su profecía. Suceso agabo-anuncia-cadenas, c. 56.'
+  sources:
+  - hch-21
+  - it-agabo
+  checked_on: '2026-09-30'
+  status: verified

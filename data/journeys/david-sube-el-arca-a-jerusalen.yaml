@@ -1,0 +1,98 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: david-sube-el-arca-a-jerusalen
+name: David sube el Arca a Jerusalén
+person: david
+reference: 2Sa 6:1-19; 1Cr 13:1-14; 15:1–16:3
+date:
+  from: -1069
+  to: -1069
+  precision: year
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'c. 1070 a.e.c. (tiempo narrativo: el Arca llega a Jerusalén después de 1070)'
+companions: []
+summary: David va con 30.000 hombres a Baale-Judá por el Arca. En la era de Nacón muere Uzá y el Arca se queda tres meses
+  en casa de Obed-Edom. Luego los levitas la suben a hombros a la Ciudad de David.
+reason: '2Sa 6:1-19, 1Cr 13 y 15. Perspicacia «David», párr. 23: el segundo intento, unos tres meses después y con el Arca
+  a hombros. El estudio 3 pone su llegada después de 1070.'
+sources:
+- 2-samuel-6
+- 1-cronicas-13
+- 1-cronicas-15
+- si-3
+- it-david
+- it-arca-del-pacto
+- it-uzah
+- it-perez-uzah
+- it-nacon
+- it-obed-edom
+checked_on: '2026-09-30'
+status: verified
+narrative_order:
+  series: david
+  order: 8
+stops:
+- order: 1
+  place: quiryat-jearim
+  reference: 2Sa 6:2-4; 1Cr 13:6
+  date:
+    from: -1069
+    to: -1069
+    precision: year
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'c. 1070 a.e.c. (tiempo narrativo: unos tres meses antes de que el Arca llegara a Jerusalén)'
+  note: Baale-Judá; sacan el Arca de la casa de Abinadab.
+  reason: '2Sa 6:2 la llama Baale-Judá y 1Cr 13:6, Quiryat-Jearim. Fecha: la del suceso muerte-de-uza.'
+  sources:
+  - 2-samuel-6
+  - 1-cronicas-13
+  - it-arca-del-pacto
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: perez-uza
+  reference: 2Sa 6:6-11
+  date:
+    from: -1069
+    to: -1069
+    precision: year
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'c. 1070 a.e.c. (tiempo narrativo: unos tres meses antes de que el Arca llegara a Jerusalén)'
+  note: La era de Nacón (Kidón en 1Cr 13:9). El Arca pasa tres meses en casa de Obed-Edom, un sitio sin nombre.
+  reason: '2Sa 6:6-8: Uzá muere al tocar el Arca y el lugar recibe el nombre de Pérez-Uzá. Fecha: la del suceso muerte-de-uza.'
+  sources:
+  - 2-samuel-6
+  - it-perez-uzah
+  - it-nacon
+  - it-uzah
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: jerusalen
+  reference: 2Sa 6:12-19
+  date:
+    from: -1069
+    to: -1069
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: después de 1070 a.e.c.
+  note: Tres meses después, desde la casa de Obed-Edom.
+  reason: '2Sa 6:12-17: David sube el Arca a la Ciudad de David y la pone en la tienda que le había preparado. Fecha: la del
+    suceso david-sube-el-arca-a-la-ciudad-de-david.'
+  sources:
+  - 2-samuel-6
+  - 1-cronicas-15
+  - it-obed-edom
+  - it-david
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified

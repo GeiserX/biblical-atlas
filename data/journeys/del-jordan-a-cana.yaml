@@ -1,0 +1,158 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: del-jordan-a-cana
+name: Del bautismo a Caná
+person: jesus
+reference: Mr 1:9-13; Mt 3:13–4:11; Lu 4:1-13; Jn 1:28–2:12
+date:
+  from: 29
+  to: 29
+  precision: season
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: otoño de 29 e.c.
+  detail: &id002
+    season: autumn
+narrative_order:
+  series: jesus
+  order: 1
+companions: []
+summary: Jesús baja de Nazaret al Jordán y Juan lo bautiza. Pasa cuarenta días en el desierto, vuelve adonde bautiza Juan,
+  reúne a sus primeros discípulos, va a una boda en Caná y baja a Capernaúm.
+reason: Los tres primeros Evangelios dan el bautismo y el desierto; Juan 1 y 2, el resto. Fechas de los sucesos bautismo-de-jesus,
+  tentacion-en-el-desierto, primeros-discipulos y boda-en-cana (tabla A7-B).
+sources:
+- marcos-1
+- mateo-3
+- mateo-4
+- lucas-4
+- juan-1
+- juan-2
+- tnm-a7-b
+- jy-cap-12
+- jy-cap-13
+- jy-cap-14
+- jy-cap-15
+checked_on: '2026-09-30'
+status: verified
+stops:
+- order: 1
+  place: nazaret
+  reference: Mr 1:9
+  date:
+    from: 29
+    to: 29
+    precision: month
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. octubre de 29 e.c.
+    detail: &id001
+      month: tisri
+  note: null
+  reason: 'Mr 1:9: Jesús viene de Nazaret de Galilea para que Juan lo bautice. Fecha del suceso bautismo-de-jesus.'
+  sources:
+  - marcos-1
+  - tnm-a7-b
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: rio-jordan
+  reference: Mt 3:13-17; Mr 1:9-11
+  date:
+    from: 29
+    to: 29
+    precision: month
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. octubre de 29 e.c.
+    detail: *id001
+  note: La tabla A7-B lo pone en el río, tal vez en la Betania del lado este o en sus cercanías.
+  reason: Mt 3:13 y Mr 1:9 ponen el bautismo en el Jordán. Fecha del suceso bautismo-de-jesus.
+  sources:
+  - mateo-3
+  - marcos-1
+  - tnm-a7-b
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: desierto-de-juda
+  reference: Mt 4:1-11; Mr 1:12, 13
+  date:
+    from: 29
+    to: 29
+    precision: season
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: otoño de 29 e.c.
+    detail: *id002
+  note: 'Cuarenta días. El templo de Mt 4:5 no cuenta como parada: es parte de la prueba.'
+  reason: Mr 1:12, 13 y Mt 4:1 lo llevan al desierto nada más bautizarse. Lugar y fecha del suceso tentacion-en-el-desierto.
+  sources:
+  - mateo-4
+  - marcos-1
+  - tnm-a7-b
+  checked_on: '2026-09-30'
+  status: verified
+- order: 4
+  place: betania-del-otro-lado-del-jordan
+  reference: Jn 1:28-51
+  date:
+    from: 29
+    to: 29
+    precision: season
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: otoño de 29 e.c.
+    detail: *id002
+  note: Allí lo siguen Andrés, Pedro, Felipe y Natanael, que desde aquí van con él a Caná; no hacen el viaje entero.
+  reason: Jn 1:28-42 lo sitúa donde Juan bautizaba, la Betania del lado este del río, y allí se le unen sus primeros discípulos.
+    Fecha del suceso primeros-discipulos.
+  sources:
+  - juan-1
+  - tnm-a7-b
+  checked_on: '2026-09-30'
+  status: verified
+- order: 5
+  place: cana
+  reference: Jn 1:43; 2:1-11
+  date:
+    from: 29
+    to: 29
+    precision: season
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: otoño de 29 e.c.
+    detail: *id002
+  note: Primer milagro, en una boda.
+  reason: Jn 1:43 dice que decide ir a Galilea, y Jn 2:1-11 lo pone en una boda en Caná. Fecha del suceso boda-en-cana.
+  sources:
+  - juan-1
+  - juan-2
+  - tnm-a7-b
+  - jy-cap-15
+  checked_on: '2026-09-30'
+  status: verified
+- order: 6
+  place: capernaum
+  reference: Jn 2:12
+  date:
+    from: 29
+    to: 29
+    precision: season
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: otoño de 29 e.c.
+    detail: *id002
+  note: Baja con María, con los hermanos de Jesús y con los discípulos; se quedan pocos días.
+  reason: 'Jn 2:12: baja a Capernaúm y no se queda mucho. Fecha del suceso boda-en-cana, que incluye ese versículo.'
+  sources:
+  - juan-2
+  - tnm-a7-b
+  checked_on: '2026-09-30'
+  status: verified

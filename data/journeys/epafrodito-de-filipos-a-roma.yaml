@@ -1,0 +1,81 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: epafrodito-de-filipos-a-roma
+name: Epafrodito lleva el regalo de Filipos
+person: epafrodito
+reference: Flp 2:25-30; 4:18
+date:
+  from: 59
+  to: 61
+  precision: range
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 59-61 e.c.
+companions: []
+summary: La congregación de Filipos envía a Epafrodito con un regalo para Pablo, preso en Roma. Allí enferma y casi muere;
+  ya curado, Pablo lo manda de vuelta con su carta.
+reason: Perspicacia «Epafrodito» fecha la visita hacia 59-61. Sucesos epafrodito-lleva-a-pablo-el-regalo-de-filipos y pablo-envia-a-epafrodito-de-vuelta-a-filipos.
+sources:
+- filipenses-2
+- filipenses-4
+- it-epafrodito
+checked_on: '2026-09-30'
+status: verified
+stops:
+- order: 1
+  place: filipos
+  reference: Flp 2:25; 4:18
+  date:
+    from: 59
+    to: 61
+    precision: range
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 59-61 e.c. (primer encierro en Roma)
+  note: null
+  reason: 'Flp 2:25 y 4:18: los filipenses lo mandan con lo que querían dar a Pablo. Suceso epafrodito-lleva-a-pablo-el-regalo-de-filipos,
+    c. 59-61.'
+  sources:
+  - filipenses-2
+  - filipenses-4
+  - it-epafrodito
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: roma
+  reference: Flp 2:26, 27, 30
+  date:
+    from: 59
+    to: 61
+    precision: range
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 59-61 e.c. (primer encierro en Roma)
+  note: Se arriesgó la vida por la obra del Señor.
+  reason: 'Flp 2:26, 27: estando con Pablo enferma de gravedad. Perspicacia lo sitúa en Roma. Suceso epafrodito-lleva-a-pablo-el-regalo-de-filipos.'
+  sources:
+  - filipenses-2
+  - it-epafrodito
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: filipos
+  reference: Flp 2:25, 28, 29
+  date:
+    from: 60
+    to: 61
+    precision: range
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 60-61 e.c.
+  note: Lleva la carta a los Filipenses.
+  reason: 'Flp 2:25, 28: Pablo lo envía de vuelta para que se alegren al verlo. Suceso pablo-envia-a-epafrodito-de-vuelta-a-filipos,
+    c. 60-61.'
+  sources:
+  - filipenses-2
+  - it-epafrodito
+  checked_on: '2026-09-30'
+  status: verified

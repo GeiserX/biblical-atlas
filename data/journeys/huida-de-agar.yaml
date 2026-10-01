@@ -1,0 +1,71 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: huida-de-agar
+name: Agar huye de Sarái
+person: agar
+reference: Gé 16:6-14
+date:
+  from: -1932
+  to: -1931
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1933 y 1932 a.e.c. (tiempo narrativo: a los diez años en Canaán y antes de nacer Ismael)'
+companions: []
+summary: Embarazada de Abrán y maltratada por Sarái, Agar huye por el camino de Sur. Junto a un manantial del desierto el
+  ángel de Jehová la manda volver, y ella da nombre al pozo.
+reason: Gé 16:6-14 cuenta la huida y el encuentro. Gé 16:3 lo pone a los diez años de Abrán en Canaán, y Gé 16:16 antes de
+  nacer Ismael, en 1932 a.e.c.
+sources:
+- genesis-16
+- it-agar
+- it-beer-lahai-roi
+- it-sur
+- si-3
+checked_on: '2026-09-30'
+status: verified
+narrative_order:
+  series: agar
+  order: 1
+stops:
+- order: 1
+  place: canaan
+  reference: Gé 16:3-6
+  date:
+    from: -1932
+    to: -1931
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1933 y 1932 a.e.c. (tiempo narrativo: a los diez años en Canaán y antes de nacer Ismael)'
+  note: El texto no dice en qué parte de Canaán acampaba Abrán.
+  reason: Gé 16:3 dice que Abrán llevaba diez años en Canaán cuando Sarái le dio a Agar. Fecha del suceso «Sarái da a Agar
+    a Abrán como esposa».
+  sources:
+  - genesis-16
+  - it-agar
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: beer-lahai-roi
+  reference: Gé 16:7-14
+  date:
+    from: -1932
+    to: -1931
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1933 y 1932 a.e.c. (tiempo narrativo: a los diez años en Canaán y antes de nacer Ismael)'
+  note: El pozo queda entre Cadés y Bered, en el camino de Sur. Sin punto en el mapa.
+  reason: Gé 16:7, 14 pone el encuentro en ese manantial y le da nombre. Fecha del suceso «El ángel de Jehová encuentra a
+    Agar junto al pozo».
+  sources:
+  - genesis-16
+  - it-beer-lahai-roi
+  - it-sur
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified

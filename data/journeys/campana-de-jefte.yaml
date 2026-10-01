@@ -1,0 +1,167 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: campana-de-jefte
+name: Campaña de Jefté contra Ammón
+person: jefte
+reference: Jue 11:29-34
+date:
+  from: -1172
+  to: -1172
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 1173 a.e.c.
+companions: []
+summary: Con el espíritu de Jehová, Jefté atraviesa Galaad y Manasés hasta Mizpé, hace su voto y derrota a Ammón desde Aroer
+  hasta Minit y Abel-Keramim. Al volver a Mizpá sale a su encuentro su hija.
+reason: Jueces 11:29-34 da las paradas en orden. Perspicacia «Jefté» fecha el comienzo de su judicatura, y con ella esta victoria,
+  alrededor de 1173 a.e.c.
+sources:
+- jueces-11
+- it-jefte
+- it-minit
+- it-abel-keramim
+- it-aroer
+- it-mizpa
+checked_on: '2026-09-30'
+status: verified
+narrative_order:
+  series: jefte
+  order: 2
+stops:
+- order: 1
+  place: galaad
+  reference: Jue 11:29
+  date:
+    from: -1172
+    to: -1172
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 1173 a.e.c.
+  note: Cruza Galaad lleno del espíritu de Jehová.
+  reason: 'Jue 11:29 dice que pasa por Galaad y Manasés camino de Mizpé. Suceso ancla: jefte-hace-un-voto-a-jehova (c. 1173,
+    Perspicacia «Jefté»).'
+  sources:
+  - jueces-11
+  - it-jefte
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: manases
+  reference: Jue 11:29
+  date:
+    from: -1172
+    to: -1172
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 1173 a.e.c.
+  note: null
+  reason: 'Jue 11:29 nombra Manasés entre Galaad y Mizpé. Suceso ancla: jefte-hace-un-voto-a-jehova (c. 1173, Perspicacia
+    «Jefté»).'
+  sources:
+  - jueces-11
+  - it-jefte
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: mizpa-de-galaad
+  reference: Jue 11:29-31
+  date:
+    from: -1172
+    to: -1172
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 1173 a.e.c.
+  note: Mizpé de Galaad. De aquí sale contra Ammón tras hacer su voto.
+  reason: 'Jue 11:29-31: llega a Mizpé de Galaad y promete a Jehová lo primero que salga de su casa. Suceso ancla: jefte-hace-un-voto-a-jehova
+    (c. 1173).'
+  sources:
+  - jueces-11
+  - it-jefte
+  - it-mizpa
+  checked_on: '2026-09-30'
+  status: verified
+- order: 4
+  place: aroer-de-gad
+  reference: Jue 11:33
+  date:
+    from: -1172
+    to: -1172
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 1173 a.e.c.
+  note: 'Perspicacia «Aroer», núm. 2, la da solo como posible: la de Gad, frente a Rabá.'
+  reason: 'Jue 11:33 nombra Aroer como punto de partida de la matanza. Que sea la Aroer de Gad es una posibilidad de Perspicacia,
+    no una certeza. Suceso ancla: jefte-vence-a-los-ammonitas (c. 1173).'
+  sources:
+  - jueces-11
+  - it-aroer
+  - it-jefte
+  checked_on: '2026-09-30'
+  status: pending
+- order: 5
+  place: minit
+  reference: Jue 11:33
+  date:
+    from: -1172
+    to: -1172
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 1173 a.e.c.
+  note: Toma 20 ciudades en su avance.
+  reason: 'Jue 11:33: los derrota de Aroer a Minit. Suceso ancla: jefte-vence-a-los-ammonitas (c. 1173, Perspicacia «Jefté»).'
+  sources:
+  - jueces-11
+  - it-minit
+  - it-jefte
+  checked_on: '2026-09-30'
+  status: verified
+- order: 6
+  place: abel-keramim
+  reference: Jue 11:33
+  date:
+    from: -1172
+    to: -1172
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 1173 a.e.c.
+  note: null
+  reason: 'Jue 11:33 lleva la persecución hasta Abel-Keramim. Suceso ancla: jefte-vence-a-los-ammonitas (c. 1173, Perspicacia
+    «Jefté»).'
+  sources:
+  - jueces-11
+  - it-abel-keramim
+  - it-jefte
+  checked_on: '2026-09-30'
+  status: verified
+- order: 7
+  place: mizpa-de-galaad
+  reference: Jue 11:34
+  date:
+    from: -1172
+    to: -1172
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 1173 a.e.c.
+  note: Llegada. Su única hija sale a recibirlo bailando.
+  reason: 'Jue 11:34: al volver a su casa en Mizpá lo recibe su hija. Suceso ancla: jefte-cumple-su-voto-con-su-hija (c. 1173).'
+  sources:
+  - jueces-11
+  - it-jefte
+  - it-mizpa
+  checked_on: '2026-09-30'
+  status: verified

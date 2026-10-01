@@ -1,0 +1,72 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: jeremias-liberado-en-rama
+name: Jeremías, liberado en Ramá, va a Mizpá
+person: jeremias-profeta
+reference: Jer 38:28; 39:11-14; 40:1-6
+date: &id001
+  from: -606
+  to: -606
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: 607 a.e.c.
+narrative_order:
+  series: jeremias-profeta
+  order: 2
+companions: []
+summary: Preso en el Patio de la Guardia hasta la caída de la ciudad, Jeremías sale esposado con los deportados. En Ramá,
+  Nebuzaradán lo deja libre y él elige quedarse con Guedalías en Mizpá.
+reason: El estudio 3 fecha en 607 a.e.c. la destrucción de Jerusalén (suceso destruccion-de-jerusalen-607); el mismo año Nabucodonosor
+  pone a Guedalías al mando en Mizpá (suceso nabucodonosor-pone-a-guedalias-al-mando).
+sources:
+- si-3
+- it-jeremias
+- it-rama
+- it-guedalias
+- it-nebuzaradan
+- jeremias-38
+- jeremias-39
+- jeremias-40
+checked_on: '2026-09-30'
+status: verified
+stops:
+- order: 1
+  place: jerusalen
+  reference: Jer 38:28; 39:14
+  date: *id001
+  note: null
+  reason: 'Jer 38:28 y 39:14: sigue en el Patio de la Guardia hasta la toma de la ciudad y los príncipes de Babilonia lo sacan
+    de allí. Suceso destruccion-de-jerusalen-607.'
+  sources:
+  - jeremias-38
+  - jeremias-39
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: rama-de-benjamin
+  reference: Jer 40:1-5
+  date: *id001
+  note: Nebuzaradán le quita las esposas y lo despide con víveres y un regalo.
+  reason: 'Jer 40:1: lo habían llevado a Ramá entre los deportados y allí lo sueltan. Perspicacia «Ramá» pone allí la reunión
+    de los cautivos de 607 a.e.c.'
+  sources:
+  - jeremias-40
+  - it-rama
+  - it-nebuzaradan
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: mizpa-de-benjamin
+  reference: Jer 40:6
+  date: *id001
+  note: null
+  reason: 'Jer 40:6: va a Mizpá y se queda con Guedalías. Año del suceso nabucodonosor-pone-a-guedalias-al-mando.'
+  sources:
+  - jeremias-40
+  - it-guedalias
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified

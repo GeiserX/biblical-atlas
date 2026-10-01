@@ -91,14 +91,33 @@ const PALETA_ESCRITOR = leerLista('--cartas', ['#1f3b30', '#b34962', '#a75733', 
 const hash = (s) => [...String(s)].reduce((h, c) => (h * 31 + c.charCodeAt(0)) >>> 0, 7);
 const claveFecha = (f) => [f?.desde ?? 1e6, f?.hasta ?? 1e6];
 let coloresViaje = null, coloresEscritor = null;
+/** Pablo lleva un color por viaje, en orden. Cualquier otra persona, un solo color para todos sus viajes, distinto del
+    de las personas (y de los viajes de Pablo) cuyos viajes se dibujan a la vez que alguno de los suyos: así, con Saúl,
+    David y Samuel en el mapa, cada color es una persona. Se reparte por orden de su primer viaje; si las diez tintas
+    están cogidas, repite la suya de siempre. */
 function calcularColores() {
   coloresViaje = new Map();
   const porPersona = new Map();
   for (const v of BE.D.viajes) { const p = v.persona || 'pablo'; if (!porPersona.has(p)) porPersona.set(p, []); porPersona.get(p).push(v); }
-  for (const [p, vs] of porPersona) {
-    vs.sort((a, b) => claveFecha(a.fecha)[0] - claveFecha(b.fecha)[0] || claveFecha(a.fecha)[1] - claveFecha(b.fecha)[1] || a.id.localeCompare(b.id));
-    const base = p === 'pablo' ? 0 : 3 + (hash(p) % (PALETA.length - 3));
-    vs.forEach((v, i) => coloresViaje.set(v.id, PALETA[(base + i) % PALETA.length]));
+  const orden = (a, b) => claveFecha(a.fecha)[0] - claveFecha(b.fecha)[0] || claveFecha(a.fecha)[1] - claveFecha(b.fecha)[1] || a.id.localeCompare(b.id);
+  // Tramos con el año de margen con que la capa «Viajes» los dibuja (viajeEnEpoca).
+  const tramoDibujo = (v) => { const tr = tramo(v.fecha); return tr ? [tr[0], tr[1] + 1] : null; };
+  const ocupados = [];   // [tramo, índice de la tinta]
+  (porPersona.get('pablo') || []).sort(orden).forEach((v, i) => {
+    coloresViaje.set(v.id, PALETA[i % PALETA.length]);
+    const tr = tramoDibujo(v);
+    if (tr) ocupados.push([tr, i % PALETA.length]);
+  });
+  const otras = [...porPersona.entries()].filter(([p]) => p !== 'pablo').map(([p, vs]) => [p, vs.sort(orden)])
+    .sort((a, b) => orden(a[1][0], b[1][0]) || a[0].localeCompare(b[0]));
+  for (const [p, vs] of otras) {
+    const trs = vs.map(tramoDibujo).filter(Boolean);
+    const cogidas = new Set(ocupados.filter(([t]) => trs.some((x) => x[0] < t[1] && t[0] < x[1])).map(([, k]) => k));
+    const propia = 3 + (hash(p) % (PALETA.length - 3));
+    let k = propia;
+    for (let d = 0; d < PALETA.length; d++) { const c = (propia + d) % PALETA.length; if (!cogidas.has(c)) { k = c; break; } }
+    vs.forEach((v) => coloresViaje.set(v.id, PALETA[k]));
+    trs.forEach((tr) => ocupados.push([tr, k]));
   }
   // Escritores por la fecha de su primera carta; Pablo, el primero, lleva el color del tiempo (--gold), como el cursor.
   coloresEscritor = new Map();
@@ -255,7 +274,10 @@ function montarCapas() {
   map.addLayer({ id: 'be-zonas-carta', type: 'fill', source: 'be-zonas-carta', paint: { 'fill-pattern': 'be-rayado-carta', 'fill-opacity': 0.8 } });
   map.addLayer({ id: 'be-zonas-carta-borde', type: 'line', source: 'be-zonas-carta', paint: { 'line-color': color, 'line-width': 1.4, 'line-dasharray': [3, 3], 'line-opacity': 0.8 } });
   // Viajes
-  map.addLayer({ id: 'be-rastro', type: 'line', source: 'be-rastro', layout: lineas, paint: { 'line-color': color, 'line-width': ['case', ['==', ['get', 'estado'], 'actual'], 3, 2.2], 'line-opacity': ['match', ['get', 'estado'], 'futuro', 0.3, 'actual', 0.9, 0.6] } });
+  const pinturaRastro = { 'line-color': color, 'line-width': ['case', ['==', ['get', 'estado'], 'actual'], 3, 2.2], 'line-opacity': ['match', ['get', 'estado'], 'futuro', 0.3, 'actual', 0.9, 0.6] };
+  map.addLayer({ id: 'be-rastro', type: 'line', source: 'be-rastro', filter: ['!=', ['get', 'incierto'], true], layout: lineas, paint: pinturaRastro });
+  // El tramo que llega a un lugar incierto va a trazos hasta su candidato preferido o el centro de su zona (verticeRuta).
+  map.addLayer({ id: 'be-rastro-incierto', type: 'line', source: 'be-rastro', filter: ['==', ['get', 'incierto'], true], layout: { 'line-join': 'round' }, paint: { ...pinturaRastro, 'line-dasharray': [3, 2] } });
   map.addLayer({ id: 'be-rastro-flechas', source: 'be-rastro', ...flecha('line', ['match', ['get', 'estado'], 'futuro', 0.35, 'actual', 0.9, 0.5], 90) });
   // Cartas: un color por escritor; pendientes punteadas, escritas discontinuas, la seleccionada gruesa.
   map.addLayer({ id: 'be-cartas-o', type: 'line', source: 'be-cartas-o', layout: lineas, paint: { 'line-color': color, 'line-width': 1.4, 'line-dasharray': [0.4, 2.2], 'line-opacity': 0.9 } });
@@ -467,14 +489,27 @@ function imagenRayado(color, estado) {
 // Viajes (M-09): el que Pablo recorre en esta fecha se parte en hecho y falta; los demás, de cualquier persona,
 // se ven como rastro: en color si están ocurriendo, gris claro si ya pasaron y más claro si aún no han empezado.
 // ---------------------------------------------------------------------------
-/** Tramo de los viajes de una persona, de la primera salida a la última llegada. Fuera de él (con un año de margen al
-    final), el mapa no dibuja sus viajes ni los explica en la leyenda, salvo que se seleccione el viaje o la persona. */
-function tramoViajes(persona) {
-  if (persona === 'pablo' && BE.P.length) return [BE.P[0].a, BE.P.at(-1).b];
-  const trs = BE.D.viajes.filter((v) => (v.persona || 'pablo') === persona).map((v) => tramo(v.fecha)).filter(Boolean);
-  return trs.length ? [Math.min(...trs.map((x) => x[0])), Math.max(...trs.map((x) => x[1]))] : null;
+/** Ventana en la que la capa «Viajes» dibuja un viaje: para Pablo, el tramo de todos sus viajes (de la primera salida a
+    la última llegada); para cualquier otra persona, solo la del propio viaje, porque con Moisés o Pedro el tramo entero
+    llenaría el mapa de rastros. Fuera de ella (con un año de margen al final) no se dibuja ni se explica en la leyenda,
+    salvo que se seleccione el viaje o la persona. */
+function ventanaViaje(v) {
+  if ((v.persona || 'pablo') === 'pablo' && BE.P.length) return [BE.P[0].a, BE.P.at(-1).b];
+  return tramo(v.fecha);
 }
-const viajesEnEpoca = (persona, t) => { const tr = tramoViajes(persona); return !!tr && t >= tr[0] && t < tr[1] + 1; };
+const viajeEnEpoca = (v, t) => { const tr = ventanaViaje(v); return !!tr && t >= tr[0] && t < tr[1] + 1; };
+/** Vértice de una parada en la ruta de un viaje: el punto de su lugar o, si el lugar es incierto, su candidato
+    preferido de los que se ven (seguro, favorecido por jw.org, tradición, otra propuesta, otra fuente; nunca uno
+    descartado), o el centro de su zona. { c: [lon, lat], incierto } o null si no hay ninguno. Sin esto, Perea, Efraín o
+    Sodoma dejaban su viaje sin línea. */
+const PREFERENCIA_RUTA = ['seguro', 'favorecido_nivel_1', 'tradicion', 'alternativa', 'solo_nivel_2'];
+function verticeRuta(l) {
+  if (conPunto(l)) return { c: coord(l), incierto: l.precision === 'zona' };
+  const cs = candidatosVisibles(l).map(({ c }) => c).filter((c) => PREFERENCIA_RUTA.includes(c.estado) && c.geometria?.lat != null && c.geometria?.lon != null);
+  if (!cs.length) return null;
+  const c = cs.sort((a, b) => PREFERENCIA_RUTA.indexOf(a.estado) - PREFERENCIA_RUTA.indexOf(b.estado))[0];
+  return { c: [c.geometria.lon, c.geometria.lat], incierto: true };
+}
 function geoRutas(w) {
   const V = BE.viajeActual(w);
   const hecho = [], falta = [], rastro = [];
@@ -502,9 +537,9 @@ function geoRutas(w) {
     if (v === V) continue;
     const quien = v.persona || 'pablo';
     const ver = (E.sel?.tipo === 'viaje' && E.sel.id === v.id) || (selPersona && (selPersona === quien || (v.companeros || []).includes(selPersona)))
-      || (F.capas.viajes && viajesEnEpoca(quien, E.t));
+      || (F.capas.viajes && viajeEnEpoca(v, E.t));
     if (!ver) continue;
-    const pts = [...(v.paradas || [])].sort((a, b) => a.orden - b.orden).map((p) => BE.L[p.lugar]).filter(conPunto).map(coord);
+    const pts = [...(v.paradas || [])].sort((a, b) => a.orden - b.orden).map((p) => verticeRuta(BE.L[p.lugar])).filter(Boolean);
     if (pts.length < 2) continue;
     let estado;
     const dePablo = quien === 'pablo';
@@ -515,7 +550,16 @@ function geoRutas(w) {
       estado = !tr ? 'pasado' : E.t < tr[0] ? 'futuro' : E.t >= tr[1] ? 'pasado' : 'actual';
     }
     const c = colorViaje(v.id);
-    rastro.push(linea(pts, { viaje: v.id, estado, color: estado === 'pasado' ? apagar(c, 0.45) : c }));
+    const props = { viaje: v.id, estado, color: estado === 'pasado' ? apagar(c, 0.45) : c };
+    // Un trazo por cada tramo seguido del mismo tipo: firme entre lugares con punto, a trazos si toca un lugar incierto.
+    let tramoRuta = [pts[0].c], incierto = null;
+    for (let k = 1; k < pts.length; k++) {
+      const inc = pts[k - 1].incierto || pts[k].incierto;
+      if (incierto !== null && inc !== incierto) { rastro.push(linea(tramoRuta, { ...props, incierto })); tramoRuta = [pts[k - 1].c]; }
+      incierto = inc;
+      tramoRuta.push(pts[k].c);
+    }
+    rastro.push(linea(tramoRuta, { ...props, incierto }));
   }
   return { hecho, falta, rastro, V };
 }
@@ -1312,7 +1356,17 @@ function pintarLeyenda(V, w, g) {
     filas.push('<div class="be-legend__row"><span class="be-legend__line be-legend__line--todo"></span>Lo que falta del viaje</div>');
   }
   if (S) filas.push(`<div class="be-legend__row"><span class="be-legend__line${S === V ? ' be-legend__line--todo' : ''}"></span>${S === V ? 'Solo este viaje' : 'Solo este viaje, completo'}; vuelve a pulsarlo para ver todos</div>`);
-  else if (rastro.length) filas.push('<div class="be-legend__row"><span class="leyenda-rastro"></span>Otros viajes: gris claro si ya pasaron, más claro si aún no</div>');
+  else if (rastro.length) {
+    filas.push('<div class="be-legend__row"><span class="leyenda-rastro"></span>Otros viajes: gris claro si ya pasaron, más claro si aún no</div>');
+    // Con viajes de más de una persona, quién es cada color (Pablo lleva uno por viaje y ya tiene sus filas).
+    if (g.rastro.some((f) => f.properties.incierto)) filas.push('<div class="be-legend__row"><span class="be-legend__line be-legend__line--approx"></span>A trazos: tramo hacia un lugar incierto (su candidato preferido o el centro de su zona)</div>');
+    const quienes = [...new Set(rastro.map((v) => v.persona || 'pablo'))];
+    if (quienes.length > 1) {
+      for (const p of quienes.filter((x) => x !== 'pablo')) {
+        filas.push(`<div class="be-legend__row"><span class="leyenda-viajero" style="--viajero:${colorPersona(p)}"></span>${esc(nombrePersona(p))}</div>`);
+      }
+    }
+  }
   if (escritores.length) {
     filas.push(`<div class="be-legend__row"><span class="be-legend__line be-legend__line--letter" style="--carta:${colorEscritor(escritores[0])}"></span>Carta ${escritores.length > 1 ? `de ${esc(nombrePersona(escritores[0]))}` : 'escrita cerca de esta fecha'}</div>`);
     for (const e of escritores.slice(1)) filas.push(`<div class="be-legend__row"><span class="be-legend__line be-legend__line--letter" style="--carta:${colorEscritor(e)}"></span>Carta de ${esc(nombrePersona(e))}</div>`);
@@ -1394,7 +1448,10 @@ function pintarMientras(t) {
   // «Mientras tanto» solo cuando hay alguien situado con quien comparar (la persona elegida o, si no, Pablo) y el suceso
   // es de otro. El suceso elegido, el de esa persona o uno sin nadie situado es «Suceso».
   const quien = E.sel?.tipo === 'persona' && E.sel.id !== 'pablo' ? E.sel.id : 'pablo';
-  const propio = !!m && ((m.ev.personas || []).includes(quien) || (E.sel?.tipo === 'evento' && E.sel.id === m.ev.id)
+  // Con un lugar elegido, un suceso de otro sitio también es «Mientras tanto»: el mapa enseña Jerusalén y la tarjeta,
+  // Ecbátana.
+  const otroLugar = E.sel?.tipo === 'lugar' && !!m && !(m.ev.lugares || []).includes(E.sel.id);
+  const propio = !!m && !otroLugar && ((m.ev.personas || []).includes(quien) || (E.sel?.tipo === 'evento' && E.sel.id === m.ev.id)
     || !(quien === 'pablo' ? BE.dondeEsta(t) : BE.donde(quien, t)));
   const clave = m ? `${m.ev.id}|${m.lugar}|${propio}` : '';
   if (clave === pintarMientras.clave) return;
@@ -1743,12 +1800,14 @@ function iniciar() {
   });
 }
 
-/** Primer encuadre, al arrancar, con la dirección ya leída y el alto de la línea ya puesto: si Pablo queda fuera, el mapa
-    se centra en él antes de pintar nada, en vez de saltar al cargar el estilo (la línea alta deja menos mapa). */
+/** Primer encuadre, al arrancar, con la dirección ya leída y el alto de la línea ya puesto. Con selección (un enlace
+    compartido, una pregunta de la portada), se encuadra como al pulsarla en la línea; sin ella, si Pablo queda fuera, el
+    mapa se centra en él antes de pintar nada, en vez de saltar al cargar el estilo (la línea alta deja menos mapa). */
 function encuadreDeInicio() {
   if (!map) return;
   map.resize();
-  mostrarPablo();
+  if (E.sel) encuadrarLugares([...E.resaltado.lugares]);
+  else mostrarPablo();
 }
 BE.mapa = { resaltar, encuadrar: encuadrarLugares, volverAlInicio, iniciar, encuadreDeInicio, enfocarCandidato, get candidatoFoco() { return candFoco; }, get gl() { return map; } };
 Object.assign(BE, {

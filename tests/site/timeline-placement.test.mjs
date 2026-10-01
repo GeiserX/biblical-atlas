@@ -2,7 +2,9 @@
 // site exposes on window.BE and through the flag of the timeline cursor.
 //
 //  - Every event of Acts that one of its travellers lives at a stop of his journeys is placed while he is at that stop,
-//    not on the road between two stops (the six events of Philippi, the Areopagus, Elymas, the visit to Cephas).
+//    not on the road between two stops (the six events of Philippi, the Areopagus, Elymas, the visit to Cephas). Only
+//    stops at a place with a point count, and for anyone but Paul (whose stops follow the account) only a stop that
+//    tells a verse of the event.
 //  - A stop the data gives as one moment is stretched to hold its events by days, not months, and the stretched part
 //    is shown as estimated.
 //  - Nobody is placed after his death, except by an event that names him (a burial, the risen Jesus), and Jesus is
@@ -170,9 +172,29 @@ test('every event of Acts lived at a stop of a journey is placed while the trave
       const who = (e.personas || []).find((p) => travellers.has(p) && (!e.presentes || e.presentes.includes(p)));
       const te = years(e.fecha);
       if (!who || !te) continue;
-      // «Has a stop»: a stop of his journeys at one of the places of the event whose own years meet the event's years.
+      // «Has a stop»: a stop of his journeys at one of the places of the event, with a point on the map (BE.donde places
+      // nobody at a place without one: the burning bush on Sinai, Zuf), whose own years meet the event's years. Paul's
+      // stops carry his events; anyone else's stops follow the events of the account, so for them the stop also has to
+      // tell a verse of the event (the Red Sea camp of Num 33:10 is not the crossing of Exod 14, though both are «mar-rojo»).
+      const verses = (txt) => {
+        const out = [];
+        let book = null;
+        for (const part of String(txt || '').split(';')) {
+          const m = part.trim().match(/^((?:[123]\s?)?\p{L}+\.?)?\s*(\d+):(.+)$/u);
+          if (!m) continue;
+          if (m[1]) book = m[1].normalize('NFD').replace(/[\u0300-\u036f\s.]/g, '').toLowerCase();
+          for (const r of m[3].split(',')) {
+            const n = r.trim().match(/^(\d+)(?:\s*[-–]\s*(?:(\d+):)?(\d+))?/);
+            if (n && book) out.push([book, +m[2] * 1000 + +n[1], n[3] ? (n[2] ? +n[2] : +m[2]) * 1000 + +n[3] : +m[2] * 1000 + +n[1]]);
+          }
+        }
+        return out;
+      };
+      const ev = verses((e.pasajes || []).join('; '));
+      const tells = (s) => who === 'pablo' || verses(s.referencia).some(([l, a, b]) => ev.some(([m, c, d]) => l === m && a <= d && c <= b));
       const stops = BE.D.viajes.filter((v) => (v.persona || 'pablo') === who).flatMap((v) => v.paradas);
-      if (!stops.some((s) => (e.lugares || []).includes(s.lugar) && years(s.fecha) && years(s.fecha)[0] < te[1] && te[0] < years(s.fecha)[1])) continue;
+      if (!stops.some((s) => (e.lugares || []).includes(s.lugar) && BE.L[s.lugar]?.lat != null && years(s.fecha)
+        && years(s.fecha)[0] < te[1] && te[0] < years(s.fecha)[1] && tells(s))) continue;
       checked.push(e.id);
       const v = BE.ventanaEvento(e);
       for (const k of [0.001, 0.25, 0.5, 0.75, 0.999]) {

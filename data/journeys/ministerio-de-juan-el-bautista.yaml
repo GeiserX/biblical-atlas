@@ -1,0 +1,142 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: ministerio-de-juan-el-bautista
+name: Del desierto al Jordán y a Enón
+person: juan-el-bautista
+reference: Lu 1:80; 3:1-20; Mt 3:1-12; 14:3-5; Mr 1:4-8; Jn 1:19-34; 3:23, 24; 10:40
+date:
+  from: 29
+  to: 30
+  precision: range
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: de c. abril de 29 e.c. a 30 e.c.
+companions: []
+summary: Juan crece en el desierto y en 29 empieza a predicar por la región del Jordán. Bautiza en Betania, al otro lado del
+  río, y después en Enón, hasta que Herodes Antipas lo manda encarcelar.
+reason: Los Evangelios dan los lugares; el orden y las fechas son los de los sucesos juan-comienza-su-ministerio, bautismo-de-jesus,
+  juan-niega-ser-el-cristo, ultimo-testimonio-de-juan y encarcelamiento-de-juan (tablas A7-A y A7-B).
+sources:
+- lucas-1
+- lucas-3
+- mateo-3
+- mateo-14
+- marcos-1
+- juan-1
+- juan-3
+- juan-10
+- tnm-a7-a
+- tnm-a7-b
+- jy-cap-11
+- jy-cap-18
+- it-juan
+- it-enon
+- it-salim
+- it-jordan
+checked_on: '2026-09-30'
+status: verified
+stops:
+- order: 1
+  place: desierto-de-juda
+  reference: Lu 1:80; 3:2; Mt 3:1
+  date:
+    from: 29
+    to: 29
+    precision: month
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. abril de 29 e.c.
+    detail:
+      season: spring
+  note: Allí se crio y allí recibe el mensaje de Dios.
+  reason: Lu 1:80 y 3:2 lo sitúan en el desierto, y Mt 3:1 lo llama desierto de Judea. Fecha del suceso juan-comienza-su-ministerio.
+  sources:
+  - lucas-1
+  - lucas-3
+  - mateo-3
+  - tnm-a7-a
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: rio-jordan
+  reference: Lu 3:3; Mt 3:5, 6; Mr 1:5
+  date:
+    from: 29
+    to: 29
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: 29 e.c.
+  note: Recorre toda la región del Jordán.
+  reason: Lu 3:3 lo lleva por la región del Jordán, y Mt 3:6 y Mr 1:5 dicen que bautizaba en el río. Año de los sucesos juan-comienza-su-ministerio
+    y bautismo-de-jesus.
+  sources:
+  - lucas-3
+  - mateo-3
+  - marcos-1
+  - tnm-a7-a
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: betania-del-otro-lado-del-jordan
+  reference: Jn 1:28; 10:40
+  date:
+    from: 29
+    to: 29
+    precision: season
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: otoño de 29 e.c.
+    detail:
+      season: autumn
+  note: Al este del río. La nota de Jn 1:28 dice que no se sabe dónde estaba.
+  reason: Jn 1:28 pone allí su respuesta a los enviados de Jerusalén, y Jn 10:40 lo llama el sitio donde bautizaba al principio.
+    Fecha del suceso juan-niega-ser-el-cristo.
+  sources:
+  - juan-1
+  - juan-10
+  - tnm-a7-b
+  checked_on: '2026-09-30'
+  status: verified
+- order: 4
+  place: enon
+  reference: Jn 3:23, 24
+  date:
+    from: 30
+    to: 30
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 30 e.c., tras la Pascua
+  note: Cerca de Salim, porque allí había mucha agua.
+  reason: 'Jn 3:23, 24: bautiza en Enón cuando todavía no lo han encarcelado. Fecha del suceso ultimo-testimonio-de-juan.'
+  sources:
+  - juan-3
+  - tnm-a7-b
+  - it-enon
+  checked_on: '2026-09-30'
+  status: verified
+- order: 5
+  place: tiberiades
+  reference: Lu 3:19, 20; Mt 14:3
+  date:
+    from: 30
+    to: 30
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 30 e.c.
+  note: La Biblia no dice dónde lo encierran.
+  reason: Lu 3:19, 20 y Mt 14:3 cuentan que Herodes Antipas lo encarcela. El lugar sale de la tabla A7-B, igual que en el
+    suceso encarcelamiento-de-juan, del que toma la fecha.
+  sources:
+  - lucas-3
+  - mateo-14
+  - tnm-a7-b
+  checked_on: '2026-09-30'
+  status: pending

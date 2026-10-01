@@ -1,0 +1,46 @@
+# biblical-atlas: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: monte-zemaraim
+name: Monte Zemaraim
+names:
+- name: Monte Zemaraim
+type: mountain
+lat: null
+lon: null
+precision: uncertain
+coord_source: null
+coord_url: null
+candidates:
+- name: Cerca de Betel, en la región montañosa de Efraín
+  geometry:
+    type: zone
+    lat: 31.922778
+    lon: 35.241389
+    radius_km: 8
+  checked_on: '2026-09-30'
+  status: favored_level_1
+  sources:
+  - it-zemaraim
+  - openbible-geo
+  - 2-cronicas-13
+  reason: Perspicacia «Zemaraim», núm. 2, dice que Betel parece haber estado cerca; 2Cr 13:4 lo pone en la región montañosa
+    de Efraín y 13:19 cuenta la toma de Betel.
+  coord_source: calculation
+  note: Centro nuestro en el punto de Betel de OpenBible (Beitin). Radio nuestro.
+coord_note: Sin punto. OpenBible lo pone a menos de 5 km de la ciudad de Zemaraim, que jw.org tampoco sitúa.
+summary: Cumbre de la región montañosa de Efraín desde la que el rey Abías de Judá habló a Jeroboán y a su ejército antes
+  de la batalla. No se sabe dónde está; parece que Betel quedaba cerca.
+reason: 'Perspicacia «Zemaraim», núm. 2; 2Cr 13:4, 19. Sin punto: jw.org dice que su ubicación exacta sigue sin determinarse.
+  Otra ficha, zemaraim, es la ciudad de Benjamín, núm. 1.'
+sources:
+- it-zemaraim
+- openbible-geo
+- 2-cronicas-13
+links:
+- title: 'Perspicacia: «Zemaraim»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zemaraim/
+  type: perspicacia
+- title: 2 Crónicas 13 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-Cr%C3%B3nicas/13/
+  type: bible
+checked_on: '2026-09-30'
+status: verified

@@ -14,33 +14,33 @@ chapters:
     status: complete
     reviewed_on: 2026-09-29
     spans:
-    - {v: 1-8, type: narration, entities: [event:astrologos-ante-herodes, person:herodes-el-grande, person:jesus, place:jerusalen, place:belen, place:judea, relation:jesus/born_in/belen, relation:herodes-el-grande/lived_in/jerusalen, relation:herodes-el-grande/holds_office/judea], mentions: [event:nacimiento-de-jesus, person:miqueas-profeta, place:juda], note: "Los astrólogos no tienen nombre ni número. Vienen de Oriente, que Perspicacia cree probablemente Babilonia o Mesopotamia. La profecía citada es la de Miq 5:2."}
+    - {v: 1-8, type: narration, entities: [event:astrologos-ante-herodes, person:herodes-el-grande, person:jesus, place:jerusalen, place:belen, place:judea, relation:jesus/born_in/belen, relation:herodes-el-grande/lived_in/jerusalen, relation:herodes-el-grande/holds_office/judea, journey:de-nazaret-a-belen], mentions: [event:nacimiento-de-jesus, person:miqueas-profeta, place:juda], note: "Los astrólogos no tienen nombre ni número. Vienen de Oriente, que Perspicacia cree probablemente Babilonia o Mesopotamia. La profecía citada es la de Miq 5:2."}
     - {v: 9-12, type: narration, entities: [event:astrologos-en-belen, person:jesus, person:maria-madre-de-jesus, place:belen, relation:jesus/lived_in/belen, relation:maria-madre-de-jesus/lived_in/belen, relation:jose-esposo-de-maria/lived_in/belen], mentions: [person:herodes-el-grande]}
-    - {v: 13-15, type: narration, entities: [event:huida-a-egipto, person:jose-esposo-de-maria, person:jesus, person:maria-madre-de-jesus, person:herodes-el-grande, place:egipto, relation:jose-esposo-de-maria/lived_in/egipto, relation:maria-madre-de-jesus/lived_in/egipto, relation:jesus/lived_in/egipto], mentions: [person:oseas], note: "La cita «Llamé a mi hijo» es de Os 11:1. Egipto era entonces provincia romana."}
+    - {v: 13-15, type: narration, entities: [event:huida-a-egipto, person:jose-esposo-de-maria, person:jesus, person:maria-madre-de-jesus, person:herodes-el-grande, place:egipto, relation:jose-esposo-de-maria/lived_in/egipto, relation:maria-madre-de-jesus/lived_in/egipto, relation:jesus/lived_in/egipto, journey:huida-de-la-familia-a-egipto], mentions: [person:oseas], note: "La cita «Llamé a mi hijo» es de Os 11:1. Egipto era entonces provincia romana."}
     - {v: 16-18, type: narration, entities: [event:matanza-de-los-ninos-de-belen, person:herodes-el-grande, place:belen, place:rama-de-benjamin], mentions: [person:jeremias-profeta, person:raquel], note: "La cita es de Jer 31:15. Raquel, enterrada cerca de Belén, representa a las madres que lloran; no actúa en el suceso."}
-    - {v: 19-23, type: narration, entities: [event:regreso-a-nazaret, person:jose-esposo-de-maria, person:jesus, person:maria-madre-de-jesus, person:arquelao, person:herodes-el-grande, place:israel, place:judea, place:galilea, place:nazaret, relation:arquelao/kin/herodes-el-grande, relation:arquelao/succeeds/herodes-el-grande, relation:jesus/lived_in/nazaret, relation:jose-esposo-de-maria/lived_in/nazaret, relation:maria-madre-de-jesus/lived_in/nazaret, relation:arquelao/holds_office/judea], mentions: [person:isaias, place:egipto], note: "Nazareno, por Nazaret. Según la nota, Mateo alude al brote de Is 11:1 y quizá a otros profetas."}
+    - {v: 19-23, type: narration, entities: [event:regreso-a-nazaret, person:jose-esposo-de-maria, person:jesus, person:maria-madre-de-jesus, person:arquelao, person:herodes-el-grande, place:israel, place:judea, place:galilea, place:nazaret, relation:arquelao/kin/herodes-el-grande, relation:arquelao/succeeds/herodes-el-grande, relation:jesus/lived_in/nazaret, relation:jose-esposo-de-maria/lived_in/nazaret, relation:maria-madre-de-jesus/lived_in/nazaret, relation:arquelao/holds_office/judea, journey:vuelta-de-egipto-a-nazaret], mentions: [person:isaias, place:egipto], note: "Nazareno, por Nazaret. Según la nota, Mateo alude al brote de Is 11:1 y quizá a otros profetas."}
   3:
     status: complete
     reviewed_on: 2026-09-29
     spans:
-    - {v: 1-6, type: narration, entities: [event:juan-comienza-su-ministerio, person:juan-el-bautista, place:desierto-de-juda, place:judea, place:rio-jordan], mentions: [person:isaias, place:jerusalen], note: "La «región del Jordán» del versículo 5 se apunta en el río Jordán."}
+    - {v: 1-6, type: narration, entities: [event:juan-comienza-su-ministerio, person:juan-el-bautista, place:desierto-de-juda, place:judea, place:rio-jordan, journey:ministerio-de-juan-el-bautista], mentions: [person:isaias, place:jerusalen], note: "La «región del Jordán» del versículo 5 se apunta en el río Jordán."}
     - {v: 7-12, type: speech, entities: [event:juan-comienza-su-ministerio, person:juan-el-bautista], mentions: [person:abrahan], note: "Juan acusa a fariseos y saduceos de fiarse de ser hijos de Abrahán y anuncia a alguien más poderoso, que bautizará con espíritu santo y con fuego."}
-    - {v: 13-17, type: narration, entities: [event:bautismo-de-jesus, person:jesus, person:juan-el-bautista, place:rio-jordan], mentions: [place:galilea]}
+    - {v: 13-17, type: narration, entities: [event:bautismo-de-jesus, person:jesus, person:juan-el-bautista, place:rio-jordan, journey:del-jordan-a-cana], mentions: [place:galilea]}
   4:
     status: complete
     reviewed_on: 2026-09-29
     spans:
-    - {v: 1-11, type: narration, entities: [event:tentacion-en-el-desierto, person:jesus, person:satanas, place:desierto-de-juda, place:jerusalen], note: "Mateo lo llama la ciudad santa (v. 5). La montaña altísima del versículo 8 no tiene nombre."}
-    - {v: "12", type: narration, entities: [event:encarcelamiento-de-juan, person:juan-el-bautista, person:jesus, place:galilea], note: "Entre los versículos 11 y 12 pasa cerca de un año (Jn 1:29 a 4:3), según la nota de estudio."}
+    - {v: 1-11, type: narration, entities: [event:tentacion-en-el-desierto, person:jesus, person:satanas, place:desierto-de-juda, place:jerusalen, journey:del-jordan-a-cana], note: "Mateo lo llama la ciudad santa (v. 5). La montaña altísima del versículo 8 no tiene nombre."}
+    - {v: "12", type: narration, entities: [event:encarcelamiento-de-juan, person:juan-el-bautista, person:jesus, place:galilea, journey:de-judea-a-galilea-por-samaria], note: "Entre los versículos 11 y 12 pasa cerca de un año (Jn 1:29 a 4:3), según la nota de estudio."}
     - {v: 13-16, type: narration, entities: [event:hijo-del-funcionario-y-sinagoga-de-nazaret, person:jesus, relation:jesus/lived_in/capernaum, place:nazaret, place:capernaum, place:zabulon, place:neftali, place:galilea], mentions: [person:isaias, place:mar-de-galilea, place:rio-jordan], note: "Mateo ve cumplido Is 9:1, 2: la luz llega a la tierra de Zabulón y Neftalí, Galilea de las naciones."}
     - {v: "17", type: narration, entities: [event:anuncio-del-reino-en-galilea, person:jesus]}
-    - {v: 18-22, type: narration, entities: [event:llamada-de-cuatro-pescadores, person:jesus, person:pedro, person:andres, person:santiago-hijo-de-zebedeo, person:juan-apostol, person:zebedeo, place:mar-de-galilea, relation:andres/kin/pedro, relation:pedro/disciple_of/jesus, relation:andres/disciple_of/jesus, relation:santiago-hijo-de-zebedeo/kin/juan-apostol, relation:santiago-hijo-de-zebedeo/kin/zebedeo, relation:santiago-hijo-de-zebedeo/disciple_of/jesus, relation:juan-apostol/kin/zebedeo, relation:juan-apostol/disciple_of/jesus]}
+    - {v: 18-22, type: narration, entities: [event:llamada-de-cuatro-pescadores, person:jesus, person:pedro, person:andres, person:santiago-hijo-de-zebedeo, person:juan-apostol, person:zebedeo, place:mar-de-galilea, relation:andres/kin/pedro, relation:pedro/disciple_of/jesus, relation:andres/disciple_of/jesus, relation:santiago-hijo-de-zebedeo/kin/juan-apostol, relation:santiago-hijo-de-zebedeo/kin/zebedeo, relation:santiago-hijo-de-zebedeo/disciple_of/jesus, relation:juan-apostol/kin/zebedeo, relation:juan-apostol/disciple_of/jesus, journey:gira-por-galilea-con-los-cuatro]}
     - {v: 23-25, type: narration, entities: [event:primera-gira-por-galilea, person:jesus, place:galilea, place:siria, place:decapolis, place:perea, place:jerusalen], mentions: [place:judea, place:rio-jordan], note: "La región al otro lado del Jordán (v. 25) es Perea, según la nota de estudio."}
   5:
     status: complete
     reviewed_on: 2026-09-29
     spans:
-    - {v: 1-2, type: narration, entities: [event:sermon-del-monte, person:jesus], mentions: [place:capernaum], note: "La montaña no tiene nombre; la nota de estudio la pone cerca de Capernaúm y del mar de Galilea."}
+    - {v: 1-2, type: narration, entities: [event:sermon-del-monte, person:jesus, journey:gira-por-galilea-con-los-doce], mentions: [place:capernaum], note: "La montaña no tiene nombre; la nota de estudio la pone cerca de Capernaúm y del mar de Galilea."}
     - {v: 3-12, type: speech, entities: [event:sermon-del-monte], note: "Nueve veces «felices»: los que saben que necesitan a Dios, los que lloran, los apacibles, los misericordiosos, los limpios de corazón, los pacíficos y los perseguidos por hacer el bien."}
     - {v: 13-16, type: speech, note: "Los discípulos son la sal de la tierra y la luz del mundo: sus buenas obras han de dar gloria al Padre."}
     - {v: 17-20, type: speech, note: "Jesús viene a cumplir la Ley y los Profetas, no a anularlos; la justicia de sus discípulos tiene que superar a la de escribas y fariseos."}
@@ -54,7 +54,7 @@ chapters:
     status: complete
     reviewed_on: 2026-09-29
     spans:
-    - {v: 1-4, type: speech, entities: [event:sermon-del-monte, person:jesus], note: "Sigue el Sermón del Monte. Dar a los necesitados sin buscar el aplauso de nadie, no como los hipócritas de las sinagogas."}
+    - {v: 1-4, type: speech, entities: [event:sermon-del-monte, person:jesus, journey:gira-por-galilea-con-los-doce], note: "Sigue el Sermón del Monte. Dar a los necesitados sin buscar el aplauso de nadie, no como los hipócritas de las sinagogas."}
     - {v: 5-15, type: speech, entities: [event:sermon-del-monte], mentions: [person:satanas], note: "Orar en privado y sin frases repetidas de memoria. Jesús da el padrenuestro como modelo y condiciona el perdón de Dios a perdonar a los demás. El Maligno (v. 13) es Satanás."}
     - {v: 16-18, type: speech, entities: [event:sermon-del-monte], note: "Quien ayuna no lo muestra en la cara; basta con que lo vea el Padre."}
     - {v: 19-24, type: speech, entities: [event:sermon-del-monte], note: "Guardar tesoros en el cielo, tener la vista fija en una sola meta y no servir a dos amos. Las Riquezas se personifican como amo; no son un dios con ficha."}
@@ -63,7 +63,7 @@ chapters:
     status: complete
     reviewed_on: 2026-09-29
     spans:
-    - {v: 1-6, type: speech, entities: [event:sermon-del-monte, person:jesus], note: "No condenar a otros: quitarse antes la viga del propio ojo. Lo santo no se da a quien lo desprecia, figurados en perros y cerdos."}
+    - {v: 1-6, type: speech, entities: [event:sermon-del-monte, person:jesus, journey:gira-por-galilea-con-los-doce], note: "No condenar a otros: quitarse antes la viga del propio ojo. Lo santo no se da a quien lo desprecia, figurados en perros y cerdos."}
     - {v: 7-12, type: speech, entities: [event:sermon-del-monte], note: "Insistir al pedir, buscar y llamar; el Padre da cosas buenas. Tratar a los demás como uno quiere ser tratado resume la Ley y los Profetas."}
     - {v: 13-14, type: speech, entities: [event:sermon-del-monte], note: "Dos puertas y dos caminos: el ancho lleva a la destrucción; el estrecho, que pocos hallan, a la vida."}
     - {v: 15-23, type: speech, entities: [event:sermon-del-monte], note: "A los falsos profetas se les conoce por sus frutos. Entrar en el Reino exige hacer la voluntad del Padre, no solo decir «Señor»."}
@@ -73,27 +73,27 @@ chapters:
     status: complete
     reviewed_on: 2026-09-29
     spans:
-    - {v: 1-4, type: narration, entities: [event:curacion-de-un-leproso, person:jesus], mentions: [person:moises], note: "La montaña de 8:1 es la del sermón y no tiene nombre. El curado debe llevar al sacerdote la ofrenda que fijó la Ley de Moisés."}
+    - {v: 1-4, type: narration, entities: [event:curacion-de-un-leproso, person:jesus, journey:gira-por-galilea-con-los-cuatro, journey:gira-por-galilea-con-los-doce], mentions: [person:moises], note: "La montaña de 8:1 es la del sermón y no tiene nombre. El curado debe llevar al sacerdote la ofrenda que fijó la Ley de Moisés."}
     - {v: 5-13, type: narration, entities: [event:siervo-del-oficial, person:jesus, place:capernaum], mentions: [person:abrahan, person:isaac, person:jacob], note: "El oficial romano y su siervo no tienen nombre. Israel en 8:10 es el pueblo, sin ficha."}
     - {v: 14-17, type: narration, entities: [event:curaciones-en-capernaum, person:jesus, person:pedro, person:suegra-de-pedro, relation:pedro/kin/suegra-de-pedro], mentions: [person:isaias], note: "Mateo presenta estas curaciones como cumplimiento de una profecía de Isaías."}
-    - {v: 18, type: narration, entities: [event:calma-la-tormenta, person:jesus], note: "Jesús manda cruzar a la orilla oriental; el viaje sigue en 8:23."}
-    - {v: 19-22, type: narration, entities: [event:dejarlo-todo-por-el-reino, person:jesus], note: "El escriba y el discípulo no tienen nombre. La tabla A7-E pone este diálogo en 32 e.c., camino de Jerusalén, no antes de la tormenta."}
+    - {v: 18, type: narration, entities: [event:calma-la-tormenta, person:jesus, journey:travesia-a-gadara], note: "Jesús manda cruzar a la orilla oriental; el viaje sigue en 8:23."}
+    - {v: 19-22, type: narration, entities: [event:dejarlo-todo-por-el-reino, person:jesus, journey:subida-a-la-fiesta-de-los-tabernaculos], note: "El escriba y el discípulo no tienen nombre. La tabla A7-E pone este diálogo en 32 e.c., camino de Jerusalén, no antes de la tormenta."}
     - {v: 23-27, type: narration, entities: [event:calma-la-tormenta, person:jesus, place:mar-de-galilea]}
     - {v: 28-34, type: narration, entities: [event:demonios-a-los-cerdos, person:jesus, place:gadara, place:mar-de-galilea], note: "Los dos endemoniados no tienen nombre. Perspicacia no nombra la ciudad de 8:33."}
   9:
     status: complete
     reviewed_on: 2026-09-29
     spans:
-    - {v: 1-8, type: narration, entities: [event:curacion-de-un-paralitico, person:jesus, place:capernaum, relation:jesus/lived_in/capernaum], mentions: [place:mar-de-galilea], note: "La nota de estudio identifica «su ciudad» con Capernaúm; el mar que cruza es el de Galilea. Los escribas lo acusan de blasfemar."}
+    - {v: 1-8, type: narration, entities: [event:curacion-de-un-paralitico, person:jesus, place:capernaum, relation:jesus/lived_in/capernaum, journey:gira-por-galilea-con-los-cuatro], mentions: [place:mar-de-galilea], note: "La nota de estudio identifica «su ciudad» con Capernaúm; el mar que cruza es el de Galilea. Los escribas lo acusan de blasfemar."}
     - {v: 9-17, type: narration, entities: [event:llamada-de-mateo, person:mateo, relation:mateo/lived_in/capernaum], mentions: [person:juan-el-bautista], note: "Comida en casa de Mateo con cobradores de impuestos y pecadores; cita de Os 6:6. Los discípulos de Juan preguntan por el ayuno: el novio, el parche y los odres."}
-    - {v: 18-26, type: narration, entities: [event:hija-de-jairo, person:jairo], note: "Mateo no da el nombre del gobernante; la nota de estudio lo identifica con Jairo (Mr 5:22; Lu 8:41). La mujer con hemorragias queda sin nombre."}
-    - {v: 27-34, type: narration, entities: [event:dos-ciegos-y-un-mudo], mentions: [person:david], note: "Los ciegos lo llaman Hijo de David, título del Mesías. «Israel» (v. 33) es el pueblo. Los fariseos culpan al gobernante de los demonios, sin nombrarlo."}
+    - {v: 18-26, type: narration, entities: [event:hija-de-jairo, person:jairo, journey:travesia-a-gadara], note: "Mateo no da el nombre del gobernante; la nota de estudio lo identifica con Jairo (Mr 5:22; Lu 8:41). La mujer con hemorragias queda sin nombre."}
+    - {v: 27-34, type: narration, entities: [event:dos-ciegos-y-un-mudo, journey:gira-por-galilea-y-envio-de-los-doce], mentions: [person:david], note: "Los ciegos lo llaman Hijo de David, título del Mesías. «Israel» (v. 33) es el pueblo. Los fariseos culpan al gobernante de los demonios, sin nombrarlo."}
     - {v: 35-38, type: narration, entities: [event:tercera-gira-y-envio-de-los-doce], note: "Empieza la tercera gira por Galilea (A7-D). Jesús se compadece de la gente y pide rogar por más trabajadores para la cosecha."}
   10:
     status: complete
     reviewed_on: 2026-09-29
     spans:
-    - {v: "1", type: narration, entities: [event:tercera-gira-y-envio-de-los-doce, person:jesus], note: "Jesús reúne a los doce y les da autoridad sobre los espíritus malignos y para curar."}
+    - {v: "1", type: narration, entities: [event:tercera-gira-y-envio-de-los-doce, person:jesus, journey:gira-por-galilea-y-envio-de-los-doce], note: "Jesús reúne a los doce y les da autoridad sobre los espíritus malignos y para curar."}
     - {v: 2-4, type: list, entities: [person:pedro, person:andres, person:santiago-hijo-de-zebedeo, person:zebedeo, person:juan-apostol, person:felipe-apostol, person:bartolome, person:tomas, person:mateo, person:santiago-hijo-de-alfeo, person:alfeo-padre-de-santiago, person:tadeo, person:simon-el-cananita, person:judas-iscariote, relation:andres/kin/pedro, relation:santiago-hijo-de-zebedeo/kin/zebedeo, relation:santiago-hijo-de-zebedeo/kin/juan-apostol, relation:santiago-hijo-de-alfeo/kin/alfeo-padre-de-santiago, relation:pedro/disciple_of/jesus, relation:andres/disciple_of/jesus, relation:santiago-hijo-de-zebedeo/disciple_of/jesus, relation:juan-apostol/disciple_of/jesus, relation:felipe-apostol/disciple_of/jesus, relation:bartolome/disciple_of/jesus, relation:bartolome/same_as/natanael, relation:tomas/disciple_of/jesus, relation:mateo/disciple_of/jesus, relation:santiago-hijo-de-alfeo/disciple_of/jesus, relation:tadeo/disciple_of/jesus, relation:simon-el-cananita/disciple_of/jesus, relation:judas-iscariote/disciple_of/jesus, relation:judas-iscariote/holds_office/-], note: "Lista de los doce. La nota de estudio ve en Bartolomé al Natanael de Juan, sin darlo por seguro; Tadeo es el Judas hijo de Santiago de Lucas."}
     - {v: 5-15, type: speech, mentions: [place:region-de-samaria, place:sodoma, place:gomorra], note: "Instrucciones: ir solo a Israel, no a las naciones ni a Samaria; predicar sin cobrar ni llevar provisiones; sacudirse el polvo donde no los reciban."}
     - {v: 16-23, type: speech, mentions: [place:israel], note: "Aviso de persecución: tribunales, sinagogas, gobernadores y reyes; el espíritu hablará por ellos. «Las ciudades de Israel» (v. 23) son las de la tierra de Israel."}
@@ -104,7 +104,7 @@ chapters:
     reviewed_on: 2026-09-29
     spans:
     - {v: "1", type: narration, entities: [event:tercera-gira-y-envio-de-los-doce, person:jesus], note: "Cierre del envío de los doce: Jesús parte a enseñar y predicar en otras ciudades, según la nota de estudio las de Galilea."}
-    - {v: 2-6, type: narration, entities: [event:juan-envia-discipulos, person:jesus, person:juan-el-bautista], note: "Juan, preso, oye de las obras del Cristo y envía a sus discípulos a preguntarle si es el que había de venir. Jesús contesta señalando curaciones y resurrecciones."}
+    - {v: 2-6, type: narration, entities: [event:juan-envia-discipulos, person:jesus, person:juan-el-bautista, journey:gira-por-galilea-con-los-doce], note: "Juan, preso, oye de las obras del Cristo y envía a sus discípulos a preguntarle si es el que había de venir. Jesús contesta señalando curaciones y resurrecciones."}
     - {v: 7-15, type: speech, entities: [event:juan-envia-discipulos, person:jesus, person:juan-el-bautista], mentions: [person:elias-profeta], note: "Ante la multitud, Jesús dice que Juan es más que profeta: el mensajero anunciado en Malaquías 3:1 y el Elías que tenía que venir. Elías solo se nombra."}
     - {v: 16-19, type: speech, entities: [event:juan-envia-discipulos, person:jesus, person:juan-el-bautista], note: "Aquella generación rechazó a Juan, que ayunaba y no bebía vino, y también al Hijo del Hombre, que comía con cobradores de impuestos. Los resultados dan la razón a la sabiduría."}
     - {v: 20-24, type: speech, entities: [event:juan-envia-discipulos, person:jesus, place:corazin, place:betsaida, place:capernaum], mentions: [place:tiro, place:sidon, place:sodoma], note: "Reproche a Corazín, Betsaida y Capernaúm, donde hizo casi todos sus milagros sin que se arrepintieran. Tiro, Sidón y Sodoma solo sirven de comparación."}
@@ -113,7 +113,7 @@ chapters:
     status: complete
     reviewed_on: 2026-09-29
     spans:
-    - {v: 1-8, type: narration, entities: [event:espigas-en-sabado, person:jesus, event:david-recibe-el-pan-santo-en-nob], mentions: [person:david], note: "Los fariseos acusan a los discípulos de trabajar en sábado. Jesús recuerda los panes que comió David (1Sa 21:1-6) y el trabajo de los sacerdotes en el templo."}
+    - {v: 1-8, type: narration, entities: [event:espigas-en-sabado, person:jesus, event:david-recibe-el-pan-santo-en-nob, journey:gira-por-galilea-con-los-doce, journey:judea-y-pascua-de-31], mentions: [person:david], note: "Los fariseos acusan a los discípulos de trabajar en sábado. Jesús recuerda los panes que comió David (1Sa 21:1-6) y el trabajo de los sacerdotes en el templo."}
     - {v: 9-14, type: narration, entities: [event:mano-paralizada-en-sabado, person:jesus], note: "En una sinagoga sin nombre cura la mano de un hombre y razona con el ejemplo de la oveja caída en un hoyo. Los fariseos traman matarlo."}
     - {v: 15-21, type: narration, entities: [event:mano-paralizada-en-sabado, person:jesus], mentions: [person:isaias], note: "Se aparta, cura a los que lo siguen y les pide silencio. Mateo cita Isaías 42:1-4 sobre el siervo elegido que no gritará ni romperá la caña quebrada."}
     - {v: 22-24, type: narration, entities: [event:pecado-sin-perdon, person:jesus], mentions: [person:david, person:satanas], note: "Cura a un endemoniado ciego y mudo, sin nombre. La gente pregunta si es el Hijo de David; los fariseos lo atribuyen a Belcebú, nombre que la nota aplica a Satanás."}
@@ -125,26 +125,26 @@ chapters:
     status: complete
     reviewed_on: 2026-09-29
     spans:
-    - {v: 1-2, type: narration, entities: [event:parabolas-del-reino, person:jesus, place:mar-de-galilea], mentions: [place:capernaum], note: "El mismo día de Mt 12:46-50 Jesús sale de la casa, que el libro jy pone en Capernaúm, y enseña sentado en una barca a la gente de la orilla."}
+    - {v: 1-2, type: narration, entities: [event:parabolas-del-reino, person:jesus, place:mar-de-galilea, journey:travesia-a-gadara], mentions: [place:capernaum], note: "El mismo día de Mt 12:46-50 Jesús sale de la casa, que el libro jy pone en Capernaúm, y enseña sentado en una barca a la gente de la orilla."}
     - {v: 3-23, type: speech, entities: [event:parabolas-del-reino], mentions: [person:isaias, person:satanas], note: "Comparación del sembrador. A los discípulos les dice por qué enseña así, con Is 6:9, 10, y les explica qué representa cada terreno. El Maligno (v. 19) es Satanás."}
     - {v: 24-35, type: speech, entities: [event:parabolas-del-reino], note: "Comparaciones de la mala hierba, el grano de mostaza y la levadura. El profeta de 13:35 es el salmista de Sl 78:2, a quien el texto no nombra."}
     - {v: 36-53, type: speech, entities: [event:parabolas-del-reino, person:jesus], mentions: [person:satanas], note: "En la casa explica la mala hierba: el sembrador es el Hijo del Hombre y el enemigo, el Diablo, que no actúa en escena. Añade el tesoro, la perla, la red y el maestro instruido."}
-    - {v: 54-58, type: narration, entities: [event:rechazado-otra-vez-en-nazaret, event:jesus-crece-en-nazaret, person:jesus, place:nazaret, person:jose-esposo-de-maria, person:santiago-hermano-de-jesus, person:jose-hijo-de-jose, person:simon-hijo-de-jose, person:judas-hermano-de-jesus, relation:jesus/kin/maria-madre-de-jesus, relation:jesus/lived_in/nazaret, relation:jesus/kin/santiago-hermano-de-jesus, relation:jesus/kin/jose-hijo-de-jose, relation:jesus/kin/simon-hijo-de-jose, relation:jesus/kin/judas-hermano-de-jesus, relation:jesus/kin/jose-esposo-de-maria, relation:santiago-hermano-de-jesus/kin/maria-madre-de-jesus, relation:santiago-hermano-de-jesus/kin/jose-esposo-de-maria, relation:santiago-hermano-de-jesus/kin/jose-hijo-de-jose, relation:santiago-hermano-de-jesus/kin/simon-hijo-de-jose, relation:santiago-hermano-de-jesus/kin/judas-hermano-de-jesus, relation:santiago-hermano-de-jesus/lived_in/nazaret, relation:judas-hermano-de-jesus/kin/jose-esposo-de-maria, relation:judas-hermano-de-jesus/kin/maria-madre-de-jesus, relation:judas-hermano-de-jesus/lived_in/nazaret, relation:jose-hijo-de-jose/kin/jose-esposo-de-maria, relation:jose-hijo-de-jose/kin/maria-madre-de-jesus, relation:jose-hijo-de-jose/lived_in/nazaret, relation:simon-hijo-de-jose/kin/jose-esposo-de-maria, relation:simon-hijo-de-jose/kin/maria-madre-de-jesus, relation:simon-hijo-de-jose/lived_in/nazaret], mentions: [person:maria-madre-de-jesus], note: "La gente de Nazaret lo conoce como el hijo del carpintero, nombra a su madre y a sus cuatro hermanos y dice que sus hermanas viven allí."}
+    - {v: 54-58, type: narration, entities: [event:rechazado-otra-vez-en-nazaret, event:jesus-crece-en-nazaret, person:jesus, place:nazaret, person:jose-esposo-de-maria, person:santiago-hermano-de-jesus, person:jose-hijo-de-jose, person:simon-hijo-de-jose, person:judas-hermano-de-jesus, relation:jesus/kin/maria-madre-de-jesus, relation:jesus/lived_in/nazaret, relation:jesus/kin/santiago-hermano-de-jesus, relation:jesus/kin/jose-hijo-de-jose, relation:jesus/kin/simon-hijo-de-jose, relation:jesus/kin/judas-hermano-de-jesus, relation:jesus/kin/jose-esposo-de-maria, relation:santiago-hermano-de-jesus/kin/maria-madre-de-jesus, relation:santiago-hermano-de-jesus/kin/jose-esposo-de-maria, relation:santiago-hermano-de-jesus/kin/jose-hijo-de-jose, relation:santiago-hermano-de-jesus/kin/simon-hijo-de-jose, relation:santiago-hermano-de-jesus/kin/judas-hermano-de-jesus, relation:santiago-hermano-de-jesus/lived_in/nazaret, relation:judas-hermano-de-jesus/kin/jose-esposo-de-maria, relation:judas-hermano-de-jesus/kin/maria-madre-de-jesus, relation:judas-hermano-de-jesus/lived_in/nazaret, relation:jose-hijo-de-jose/kin/jose-esposo-de-maria, relation:jose-hijo-de-jose/kin/maria-madre-de-jesus, relation:jose-hijo-de-jose/lived_in/nazaret, relation:simon-hijo-de-jose/kin/jose-esposo-de-maria, relation:simon-hijo-de-jose/kin/maria-madre-de-jesus, relation:simon-hijo-de-jose/lived_in/nazaret, journey:gira-por-galilea-y-envio-de-los-doce], mentions: [person:maria-madre-de-jesus], note: "La gente de Nazaret lo conoce como el hijo del carpintero, nombra a su madre y a sus cuatro hermanos y dice que sus hermanas viven allí."}
   14:
     status: complete
     reviewed_on: 2026-09-29
     spans:
     - {v: 1-2, type: narration, entities: [event:muerte-de-juan-el-bautista, person:herodes-antipas, person:juan-el-bautista], mentions: [person:jesus], note: "Herodes oye hablar de Jesús y lo toma por Juan resucitado. A7-D lo junta con la muerte de Juan, que el relato cuenta a continuación volviendo atrás."}
-    - {v: 3-5, type: narration, entities: [event:encarcelamiento-de-juan, person:herodes-antipas, person:juan-el-bautista, person:herodias, person:filipo-esposo-de-herodias, relation:herodes-antipas/kin/herodias, relation:herodes-antipas/kin/filipo-esposo-de-herodias, relation:filipo-esposo-de-herodias/kin/herodias], note: "Recuerdo de la prisión de Juan, en 30 e.c.: reprochaba a Herodes vivir con Herodías, la esposa de su hermano Filipo, y Herodes no lo mataba por miedo a la gente."}
+    - {v: 3-5, type: narration, entities: [event:encarcelamiento-de-juan, person:herodes-antipas, person:juan-el-bautista, person:herodias, person:filipo-esposo-de-herodias, relation:herodes-antipas/kin/herodias, relation:herodes-antipas/kin/filipo-esposo-de-herodias, relation:filipo-esposo-de-herodias/kin/herodias, journey:ministerio-de-juan-el-bautista], note: "Recuerdo de la prisión de Juan, en 30 e.c.: reprochaba a Herodes vivir con Herodías, la esposa de su hermano Filipo, y Herodes no lo mataba por miedo a la gente."}
     - {v: 6-12, type: narration, entities: [event:muerte-de-juan-el-bautista, person:herodes-antipas, person:herodias, person:salome-hija-de-filipo, person:juan-el-bautista, place:tiberiades, relation:salome-hija-de-filipo/kin/herodias, relation:salome-hija-de-filipo/kin/filipo-esposo-de-herodias, relation:salome-hija-de-filipo/kin/herodes-antipas, relation:juan-el-bautista/died_in/tiberiades, relation:herodes-antipas/lived_in/tiberiades], mentions: [person:jesus], note: "La hija de Herodías, a la que Perspicacia llama Salomé, pide la cabeza de Juan. El texto no nombra el sitio; la nota de Mt 14:3 ve más probable Tiberíades."}
-    - {v: 13-21, type: narration, entities: [event:alimenta-a-5000, person:jesus, place:mar-de-galilea], mentions: [place:betsaida], note: "Mateo no nombra el lugar retirado; Lu 9:10 y Perspicacia «Betsaida» lo ponen junto a esa ciudad."}
+    - {v: 13-21, type: narration, entities: [event:alimenta-a-5000, person:jesus, place:mar-de-galilea, journey:retiro-a-betsaida], mentions: [place:betsaida], note: "Mateo no nombra el lugar retirado; Lu 9:10 y Perspicacia «Betsaida» lo ponen junto a esa ciudad."}
     - {v: 22-33, type: narration, entities: [event:camina-sobre-el-mar, person:jesus, person:pedro, place:mar-de-galilea]}
     - {v: 34-36, type: narration, entities: [event:camina-sobre-el-mar, person:jesus, place:genesaret]}
   15:
     status: complete
     reviewed_on: 2026-09-29
     spans:
-    - {v: 1-11, type: narration, entities: [event:tradiciones-humanas, person:jesus], mentions: [place:jerusalen, person:isaias], note: "Fariseos y escribas venidos de Jerusalén, grupos sin ficha, acusan a los discípulos. Jesús responde citando a Isaías y habla después a la multitud."}
+    - {v: 1-11, type: narration, entities: [event:tradiciones-humanas, person:jesus, journey:por-fenicia-y-la-decapolis], mentions: [place:jerusalen, person:isaias], note: "Fariseos y escribas venidos de Jerusalén, grupos sin ficha, acusan a los discípulos. Jesús responde citando a Isaías y habla después a la multitud."}
     - {v: 12-20, type: narration, entities: [event:tradiciones-humanas, person:jesus, person:pedro], note: "A petición de Pedro, Jesús explica a los discípulos qué contamina de verdad a una persona."}
     - {v: 21-28, type: narration, entities: [event:sirofenicia-y-4000, person:jesus, place:fenicia, place:tiro, place:sidon], mentions: [person:david], note: "La madre y su hija no tienen nombre; el griego la llama cananea y Marcos, sirofenicia. Ella llama a Jesús «Hijo de David». Israel es aquí el pueblo, sin ficha."}
     - {v: 29-31, type: narration, entities: [event:sirofenicia-y-4000, person:jesus, place:mar-de-galilea], note: "La montaña junto al lago no tiene nombre. Marcos 7:31 pone este paso en la Decápolis."}
@@ -154,7 +154,7 @@ chapters:
     status: complete
     reviewed_on: 2026-09-29
     spans:
-    - {v: 1-4, type: narration, entities: [event:senal-de-jonas-en-magadan, person:jesus], mentions: [person:jonas-profeta, event:un-gran-pez-se-traga-a-jonas], note: "Fariseos y saduceos, grupos sin ficha, le piden una señal del cielo. La escena sigue en Magadán, donde acaba el capítulo 15."}
+    - {v: 1-4, type: narration, entities: [event:senal-de-jonas-en-magadan, person:jesus, journey:hacia-cesarea-de-filipo, journey:por-fenicia-y-la-decapolis], mentions: [person:jonas-profeta, event:un-gran-pez-se-traga-a-jonas], note: "Fariseos y saduceos, grupos sin ficha, le piden una señal del cielo. La escena sigue en Magadán, donde acaba el capítulo 15."}
     - {v: 5-12, type: narration, entities: [event:levadura-y-ciego-de-betsaida, person:jesus], mentions: [event:alimenta-a-5000, event:sirofenicia-y-4000], note: "Cruzan el lago sin que el texto nombre el destino; la nota de 16:5 apunta a Betsaida. Jesús les recuerda las dos veces que multiplicó los panes."}
     - {v: 13-20, type: narration, entities: [event:llaves-del-reino, person:jesus, person:pedro, person:jonas-padre-de-pedro, place:cesarea-de-filipo, relation:pedro/kin/jonas-padre-de-pedro, relation:andres/kin/jonas-padre-de-pedro], mentions: [person:juan-el-bautista, person:elias-profeta, person:jeremias-profeta, person:andres], note: "La gente toma a Jesús por Juan el Bautista, Elías o Jeremías. Pedro lo reconoce como el Cristo y Jesús lo llama Simón hijo de Jonás."}
     - {v: 21-23, type: narration, entities: [event:llaves-del-reino, person:jesus, person:pedro], mentions: [place:jerusalen], note: "Primer anuncio de su muerte en Jerusalén. Al llamar «Satanás» a Pedro, Jesús lo trata de opositor, según la nota de 16:23; Satanás no actúa aquí."}
@@ -163,7 +163,7 @@ chapters:
     status: complete
     reviewed_on: 2026-09-29
     spans:
-    - {v: 1-9, type: narration, entities: [event:transfiguracion, place:monte-de-la-transfiguracion, person:jesus, person:pedro, person:santiago-hijo-de-zebedeo, person:juan-apostol, relation:santiago-hijo-de-zebedeo/kin/juan-apostol, relation:santiago-hijo-de-zebedeo/disciple_of/jesus, relation:juan-apostol/disciple_of/jesus], mentions: [person:moises, person:elias-profeta], note: "Jesús lo llama visión (17:9). Moisés y Elías aparecen en ella, pero Perspicacia «Transfiguración» dice que no estaban allí en persona; por eso solo se mencionan."}
+    - {v: 1-9, type: narration, entities: [event:transfiguracion, place:monte-de-la-transfiguracion, person:jesus, person:pedro, person:santiago-hijo-de-zebedeo, person:juan-apostol, relation:santiago-hijo-de-zebedeo/kin/juan-apostol, relation:santiago-hijo-de-zebedeo/disciple_of/jesus, relation:juan-apostol/disciple_of/jesus, journey:hacia-cesarea-de-filipo], mentions: [person:moises, person:elias-profeta], note: "Jesús lo llama visión (17:9). Moisés y Elías aparecen en ella, pero Perspicacia «Transfiguración» dice que no estaban allí en persona; por eso solo se mencionan."}
     - {v: 10-13, type: narration, entities: [event:transfiguracion, person:jesus, person:juan-el-bautista], mentions: [person:elias-profeta], note: "Al bajar, Jesús dice que el Elías anunciado ya vino y lo maltrataron; los discípulos entienden que habla de Juan el Bautista."}
     - {v: 14-20, type: narration, entities: [event:cura-al-muchacho-endemoniado, person:jesus], note: "El padre y el muchacho no tienen nombre. El versículo 21 no está en la TNM."}
     - {v: 22-23, type: narration, entities: [event:segundo-anuncio-de-su-muerte, person:jesus, place:galilea]}
@@ -172,7 +172,7 @@ chapters:
     status: complete
     reviewed_on: 2026-09-29
     spans:
-    - {v: 1-5, type: narration, entities: [event:el-mayor-en-el-reino, person:jesus], note: "Los discípulos preguntan quién es el mayor y Jesús pone a un niño en medio como ejemplo de humildad. La escena sigue en Capernaúm (Mt 17:24; tabla A7-E)."}
+    - {v: 1-5, type: narration, entities: [event:el-mayor-en-el-reino, person:jesus, journey:hacia-cesarea-de-filipo], note: "Los discípulos preguntan quién es el mayor y Jesús pone a un niño en medio como ejemplo de humildad. La escena sigue en Capernaúm (Mt 17:24; tabla A7-E)."}
     - {v: 6-14, type: speech, entities: [person:jesus], mentions: [place:valle-de-hinon], note: "Aviso contra hacer tropezar a los pequeños y parábola de la oveja que se pierde. La Gehena de fuego, el valle de Hinón, es aquí símbolo de destrucción eterna."}
     - {v: 15-20, type: speech, entities: [person:jesus], note: "Pasos para ganar de nuevo al hermano que peca: hablarle a solas, volver con uno o dos testigos y, al final, llevarlo a la congregación."}
     - {v: 21-22, type: narration, entities: [event:el-mayor-en-el-reino, person:pedro, person:jesus], note: "Pedro pregunta si basta con perdonar 7 veces; Jesús responde que 77, es decir, sin poner límite."}
@@ -181,7 +181,7 @@ chapters:
     status: complete
     reviewed_on: 2026-09-29
     spans:
-    - {v: 1-2, type: narration, entities: [event:matrimonio-y-divorcio, person:jesus, place:perea], mentions: [place:galilea, place:judea, place:rio-jordan], note: "Jesús deja Galilea y no vuelve hasta después de resucitar; la nota de 19:1 identifica «al otro lado del Jordán» con Perea. Allí cura a muchos."}
+    - {v: 1-2, type: narration, entities: [event:matrimonio-y-divorcio, person:jesus, place:perea, journey:ultima-subida-a-jerusalen], mentions: [place:galilea, place:judea, place:rio-jordan], note: "Jesús deja Galilea y no vuelve hasta después de resucitar; la nota de 19:1 identifica «al otro lado del Jordán» con Perea. Allí cura a muchos."}
     - {v: 3-9, type: narration, entities: [event:matrimonio-y-divorcio, person:jesus], mentions: [person:moises], note: "Unos fariseos lo prueban con el divorcio. Jesús recuerda cómo Dios creó a la primera pareja, sin dar sus nombres, y explica la concesión de Moisés."}
     - {v: 10-12, type: speech, entities: [person:jesus], note: "Los discípulos concluyen que es mejor no casarse; Jesús habla de quienes deciden quedarse solteros por el Reino."}
     - {v: 13-15, type: narration, entities: [event:bendice-a-unos-ninos, person:jesus, place:perea]}
@@ -191,7 +191,7 @@ chapters:
     status: complete
     reviewed_on: 2026-09-29
     spans:
-    - {v: 1-16, type: speech, entities: [event:joven-rico-y-trabajadores-de-la-vina, person:jesus], note: "Parábola del dueño de la viña que paga un denario a todos, empezando por los últimos. Sus personajes no llevan ficha."}
+    - {v: 1-16, type: speech, entities: [event:joven-rico-y-trabajadores-de-la-vina, person:jesus, journey:ultima-subida-a-jerusalen], note: "Parábola del dueño de la viña que paga un denario a todos, empezando por los últimos. Sus personajes no llevan ficha."}
     - {v: 17-19, type: narration, entities: [event:tercer-anuncio-de-su-muerte, person:jesus, place:perea], mentions: [place:jerusalen], note: "La tabla A7-F pone la escena probablemente en Perea; la nota de 20:17 dice que subían desde el valle del Jordán."}
     - {v: 20-28, type: narration, entities: [event:peticion-de-santiago-y-juan, person:jesus, person:santiago-hijo-de-zebedeo, person:juan-apostol, place:perea, relation:santiago-hijo-de-zebedeo/kin/zebedeo, relation:juan-apostol/kin/zebedeo, relation:santiago-hijo-de-zebedeo/kin/juan-apostol, relation:santiago-hijo-de-zebedeo/disciple_of/jesus, relation:juan-apostol/disciple_of/jesus], mentions: [person:zebedeo, person:salome-discipula], note: "La madre de los hijos de Zebedeo no se nombra; la nota de 20:20 dice que posiblemente era Salomé, así que va solo como mención."}
     - {v: 29-34, type: narration, entities: [event:jerico-ciegos-zaqueo-y-minas, person:jesus, person:bartimeo, place:jerico, relation:bartimeo/accompanies/jesus], mentions: [person:david], note: "Mateo habla de dos ciegos sin nombre; la nota de 20:30 explica que Marcos y Lucas se fijan en uno, Bartimeo."}
@@ -199,7 +199,7 @@ chapters:
     status: complete
     reviewed_on: 2026-09-29
     spans:
-    - {v: 1-11, type: narration, entities: [event:entrada-triunfal-en-jerusalen, person:jesus, place:betfague, place:monte-de-los-olivos, place:jerusalen, relation:jesus/lived_in/nazaret, relation:jesus/kin/david], mentions: [person:david, person:isaias, person:zacarias-profeta, place:nazaret, place:galilea], note: "Solo Mateo nombra la burra y su cría. La nota de estudio ve en los v. 4 y 5 una cita de Is 62:11 y de Zac 9:9; la hija de Sion es Jerusalén."}
+    - {v: 1-11, type: narration, entities: [event:entrada-triunfal-en-jerusalen, person:jesus, place:betfague, place:monte-de-los-olivos, place:jerusalen, relation:jesus/lived_in/nazaret, relation:jesus/kin/david, journey:ultima-semana], mentions: [person:david, person:isaias, person:zacarias-profeta, place:nazaret, place:galilea], note: "Solo Mateo nombra la burra y su cría. La nota de estudio ve en los v. 4 y 5 una cita de Is 62:11 y de Zac 9:9; la hija de Sion es Jerusalén."}
     - {v: 12-13, type: narration, entities: [event:higuera-maldita-y-limpieza-del-templo, person:jesus, place:monte-moria], note: "Mateo pone la limpieza del templo justo después de la entrada; la tabla A7-G la fecha el 10 de nisán, un día más tarde."}
     - {v: 14-17, type: narration, entities: [event:entrada-triunfal-en-jerusalen, event:noche-en-betania-10-de-nisan, person:jesus, place:monte-moria, place:jerusalen, place:betania], mentions: [person:david], note: "En el templo cura a ciegos y cojos, y los niños lo aclaman. A7-G lo junta con la entrada del 9 de nisán; al anochecer se va a dormir a Betania."}
     - {v: 18-22, type: narration, entities: [event:higuera-maldita-y-limpieza-del-templo, event:leccion-de-la-higuera-seca, person:jesus], note: "Mateo cuenta seguidas la maldición de la higuera (10 de nisán) y la lección sobre la fe, que Marcos deja para la mañana del 11."}
@@ -211,7 +211,7 @@ chapters:
     status: complete
     reviewed_on: 2026-09-29
     spans:
-    - {v: 1-14, type: speech, entities: [event:agricultores-asesinos-y-banquete-de-boda, person:jesus], note: "Parábola del banquete de boda del hijo del rey: los invitados no acuden y un hombre entra sin traje de boda. La ciudad quemada es parte del relato figurado."}
+    - {v: 1-14, type: speech, entities: [event:agricultores-asesinos-y-banquete-de-boda, person:jesus, journey:ultima-semana], note: "Parábola del banquete de boda del hijo del rey: los invitados no acuden y un hombre entra sin traje de boda. La ciudad quemada es parte del relato figurado."}
     - {v: 15-22, type: narration, entities: [event:cesar-resurreccion-y-mandamiento, person:jesus], mentions: [person:tiberio, person:herodes-antipas], note: "Discípulos de los fariseos y del partido de Herodes preguntan por el tributo. Según la nota de estudio, el César del denario era Tiberio; Perspicacia trata ese partido en tiempos de Herodes Antipas."}
     - {v: 23-33, type: narration, entities: [event:cesar-resurreccion-y-mandamiento, person:jesus], mentions: [person:moises, person:abrahan, person:isaac, person:jacob, event:moises-ante-la-zarza-ardiente], note: "Los saduceos, que niegan la resurrección, le ponen el caso de una viuda de siete hermanos según la ley de Moisés. Él responde con Éx 3:6."}
     - {v: 34-40, type: narration, entities: [event:cesar-resurreccion-y-mandamiento, person:jesus], note: "Un fariseo experto en la Ley le pregunta por el mandamiento mayor; Jesús responde con Dt 6:5 y añade Le 19:18."}
@@ -220,7 +220,7 @@ chapters:
     status: complete
     reviewed_on: 2026-09-29
     spans:
-    - {v: 1-12, type: speech, entities: [event:denuncia-a-escribas-y-fariseos, person:jesus], mentions: [person:moises], note: "A la multitud y a los discípulos: escribas y fariseos se sientan en el lugar de Moisés. Hay que cumplir lo que dicen, pero no copiar lo que hacen."}
+    - {v: 1-12, type: speech, entities: [event:denuncia-a-escribas-y-fariseos, person:jesus, journey:ultima-semana], mentions: [person:moises], note: "A la multitud y a los discípulos: escribas y fariseos se sientan en el lugar de Moisés. Hay que cumplir lo que dicen, pero no copiar lo que hacen."}
     - {v: 13-33, type: speech, entities: [event:denuncia-a-escribas-y-fariseos, person:jesus], mentions: [place:monte-moria, place:valle-de-hinon], note: "Siete ayes contra escribas y fariseos; la TNM no incluye el v. 14. La Gehena, del hebreo «valle de Hinón», al sur de Jerusalén, es aquí símbolo de destrucción total (nota de Mt 5:22)."}
     - {v: 34-36, type: prophecy, entities: [event:denuncia-a-escribas-y-fariseos, person:jesus, person:zacarias-hijo-de-jehoiada, person:baraquias, relation:zacarias-hijo-de-jehoiada/kin/baraquias, relation:zacarias-hijo-de-jehoiada/died_in/monte-moria, relation:baraquias/same_as/jehoiada-sumo-sacerdote, place:monte-moria], mentions: [person:abel], note: "De Abel (Gé 4:8) a Zacarías (2Cr 24:20-22): del primer al último justo asesinado en las Escrituras Hebreas. Las dos muertes son sucesos de Génesis y de Crónicas; los crean esos libros."}
     - {v: 37-39, type: prophecy, entities: [event:denuncia-a-escribas-y-fariseos, event:destruccion-de-jerusalen-70, person:jesus, place:jerusalen], note: "Lamento por Jerusalén, que mata a los profetas. Su casa, el templo, quedará abandonada; se cumplió en 70. La nota del v. 37 lo fecha el 11 de nisán. Cita Sl 118:26."}
@@ -228,7 +228,7 @@ chapters:
     status: complete
     reviewed_on: 2026-09-29
     spans:
-    - {v: 1-2, type: narration, entities: [event:senal-de-su-presencia, person:jesus, place:monte-moria, event:destruccion-de-jerusalen-70], note: "Jesús sale del templo y anuncia que será demolido del todo. La nota de estudio lo da por cumplido cuando Roma arrasó Jerusalén en 70 e.c."}
+    - {v: 1-2, type: narration, entities: [event:senal-de-su-presencia, person:jesus, place:monte-moria, event:destruccion-de-jerusalen-70, journey:ultima-semana], note: "Jesús sale del templo y anuncia que será demolido del todo. La nota de estudio lo da por cumplido cuando Roma arrasó Jerusalén en 70 e.c."}
     - {v: "3", type: narration, entities: [event:senal-de-su-presencia, person:jesus, place:monte-de-los-olivos], note: "Jesús se ha sentado en el monte de los Olivos y cuatro discípulos le piden aparte la señal. Mr 13:3 y la nota de estudio dicen quiénes eran: Pedro, Santiago, Juan y Andrés."}
     - {v: 4-14, type: prophecy, note: "Rasgos de la señal: falsos cristos, guerras, hambres, terremotos, persecución, falsos profetas, amor enfriado y la predicación del Reino por todo el mundo antes del fin."}
     - {v: 15-22, type: prophecy, entities: [place:judea, event:revuelta-judia-66, event:destruccion-de-jerusalen-70], mentions: [person:daniel], note: "La cosa repugnante de la que habló Daniel, en un lugar santo, es el aviso para huir de Judea a las montañas. Las notas lo ven cumplido en el cerco romano de 66 y la destrucción de 70."}
@@ -241,14 +241,14 @@ chapters:
     status: complete
     reviewed_on: 2026-09-29
     spans:
-    - {v: 1-13, type: speech, entities: [event:virgenes-talentos-ovejas-y-cabras, person:jesus], mentions: [place:monte-de-los-olivos], note: "Parábola de las diez vírgenes: cinco prudentes llevan aceite de reserva y cinco insensatas llegan tarde a la boda. Lección: mantenerse despiertos. Sigue el discurso del monte de los Olivos."}
+    - {v: 1-13, type: speech, entities: [event:virgenes-talentos-ovejas-y-cabras, person:jesus, journey:ultima-semana], mentions: [place:monte-de-los-olivos], note: "Parábola de las diez vírgenes: cinco prudentes llevan aceite de reserva y cinco insensatas llegan tarde a la boda. Lección: mantenerse despiertos. Sigue el discurso del monte de los Olivos."}
     - {v: 14-30, type: speech, note: "Parábola de los talentos: un amo reparte cinco, dos y un talento entre sus esclavos; premia a los dos que negociaron y castiga al que enterró el suyo."}
     - {v: 31-46, type: prophecy, entities: [person:jesus], mentions: [person:satanas], note: "El Hijo del Hombre, sentado en su trono, separa a las naciones como ovejas y cabras según cómo trataron a sus hermanos. Nombra al Diablo y sus ángeles, que aquí no actúan."}
   26:
     status: complete
     reviewed_on: 2026-09-29
     spans:
-    - {v: 1-5, type: narration, entities: [event:planean-matarlo-12-de-nisan, person:jesus, person:caifas, period:sumo-sacerdocio-de-caifas, place:jerusalen], note: "Al acabar el discurso de Mt 24 y 25, Jesús avisa de que lo entregarán en la Pascua. Los jefes se reúnen en el patio de Caifás."}
+    - {v: 1-5, type: narration, entities: [event:planean-matarlo-12-de-nisan, person:jesus, person:caifas, period:sumo-sacerdocio-de-caifas, place:jerusalen, journey:ultima-semana], note: "Al acabar el discurso de Mt 24 y 25, Jesús avisa de que lo entregarán en la Pascua. Los jefes se reúnen en el patio de Caifás."}
     - {v: 6-13, type: narration, entities: [event:maria-unge-a-jesus, person:jesus, person:simon-el-leproso, person:maria-de-betania, place:betania, relation:simon-el-leproso/lived_in/betania], note: "Mateo no da el nombre de la mujer; la nota de estudio del versículo 7 la identifica con María por Jn 12:3. La cena fue el 9 de nisán, antes del día 12."}
     - {v: 14-16, type: narration, entities: [event:judas-acuerda-la-traicion, person:judas-iscariote, place:jerusalen, relation:judas-iscariote/disciple_of/jesus], mentions: [person:jesus]}
     - {v: 17-19, type: narration, entities: [event:preparativos-de-la-pascua, person:jesus, place:jerusalen], note: "Mateo no nombra a los discípulos que preparan la cena ni al dueño de la casa, a quien llama Fulano; Lu 22:8 da Pedro y Juan."}
@@ -263,7 +263,7 @@ chapters:
     status: complete
     reviewed_on: 2026-09-29
     spans:
-    - {v: "1", type: narration, entities: [event:juicio-ante-el-sanedrin, person:jesus]}
+    - {v: "1", type: narration, entities: [event:juicio-ante-el-sanedrin, person:jesus, journey:ultima-semana]}
     - {v: "2", type: narration, entities: [event:ante-pilato-y-herodes, person:poncio-pilato, period:gobierno-de-poncio-pilato, find:inscripcion-de-poncio-pilato]}
     - {v: 3-10, type: narration, entities: [event:muerte-de-judas, person:judas-iscariote, place:akeldama, place:jerusalen], mentions: [person:jeremias-profeta, place:monte-moria], note: "Las palabras que Mateo atribuye a Jeremías parecen de Zac 11:12, 13, según la nota de estudio. «Hijos de Israel» es el pueblo, sin ficha."}
     - {v: 11-14, type: narration, entities: [event:ante-pilato-y-herodes, person:jesus, person:poncio-pilato]}
@@ -279,7 +279,7 @@ chapters:
     status: complete
     reviewed_on: 2026-09-29
     spans:
-    - {v: 1-7, type: narration, entities: [event:resurreccion-de-jesus, person:jesus, person:maria-magdalena, person:maria-esposa-de-clopas], mentions: [place:galilea], note: "El ángel de Jehová que mueve la piedra no tiene nombre."}
+    - {v: 1-7, type: narration, entities: [event:resurreccion-de-jesus, person:jesus, person:maria-magdalena, person:maria-esposa-de-clopas, journey:los-apostoles-en-galilea], mentions: [place:galilea], note: "El ángel de Jehová que mueve la piedra no tiene nombre."}
     - {v: 8-10, type: narration, entities: [event:aparicion-a-las-mujeres, person:jesus, person:maria-esposa-de-clopas], mentions: [person:maria-magdalena, place:galilea], note: "Según la armonía A7 y Perspicacia, María Magdalena había ido a avisar a Pedro y Juan (Jn 20:1, 2); la aparición es a la otra María y a otras mujeres."}
     - {v: 11-15, type: narration, entities: [event:resurreccion-de-jesus, place:jerusalen], mentions: [person:poncio-pilato], note: "Los sacerdotes sobornan a los guardias para que digan que robaron el cuerpo. El gobernador es Pilato, según la nota de Mt 28:14."}
     - {v: 16-20, type: narration, entities: [event:mandato-de-hacer-discipulos, person:jesus, place:galilea], note: "Los once discípulos van al monte de Galilea, que no tiene nombre. La nota de Mt 28:16 cree que asistieron más de 500 (1Co 15:6)."}

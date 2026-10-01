@@ -1,0 +1,96 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: sanson-se-venga-de-los-filisteos
+name: Sansón se venga de los filisteos
+person: sanson
+reference: Jue 15:1-19
+date:
+  from: -1172
+  to: -1116
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre c. 1173 y 1117 a.e.c. (tiempo narrativo: en vida de Sansón, después de Jefté)'
+companions: []
+summary: Al saber que su esposa de Timná es de otro, Sansón quema los campos filisteos y se esconde en el peñasco de Etam.
+  Los de Judá lo entregan atado en Lehí, y allí mata a mil hombres.
+reason: 'Jueces 15 da las paradas en orden. Sin año en jw.org: después de Jefté (c. 1173, Perspicacia «Jefté») y antes de
+  Saúl (1117, estudio 3).'
+sources:
+- jueces-15
+- it-sanson
+- it-etam
+- it-lehi
+- it-timnah
+- it-jefte
+- it-jueces
+- si-3
+checked_on: '2026-09-30'
+status: verified
+narrative_order:
+  series: sanson
+  order: 2
+stops:
+- order: 1
+  place: timna-de-dan
+  reference: Jue 15:1-8
+  date:
+    from: -1172
+    to: -1116
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre c. 1173 y 1117 a.e.c. (tiempo narrativo: en vida de Sansón, después de Jefté)'
+  note: Salida. En la siega del trigo va a ver a su esposa y halla que la han dado a otro; quema los campos con zorros atados.
+  reason: 'Jue 15:1-8: el suegro es el hombre de Timná (15:6). Allí empieza la venganza y la matanza. Suceso ancla: sanson-quema-los-campos-de-los-filisteos
+    (tras Jefté, c. 1173, y antes de Saúl, 1117).'
+  sources:
+  - jueces-15
+  - it-sanson
+  - it-timnah
+  - it-jefte
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: penasco-de-etam
+  reference: Jue 15:8-13
+  date:
+    from: -1172
+    to: -1116
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre c. 1173 y 1117 a.e.c. (tiempo narrativo: en vida de Sansón, después de Jefté)'
+  note: Se queda en una cueva del peñasco hasta que 3.000 hombres de Judá lo atan.
+  reason: 'Jue 15:8, 11-13 lo ponen en el peñasco de Etam. Suceso ancla: los-hombres-de-juda-entregan-a-sanson (tras Jefté,
+    c. 1173, y antes de Saúl, 1117).'
+  sources:
+  - jueces-15
+  - it-etam
+  - it-sanson
+  - it-jefte
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: lehi
+  reference: Jue 15:14-19
+  date:
+    from: -1172
+    to: -1116
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre c. 1173 y 1117 a.e.c. (tiempo narrativo: en vida de Sansón, después de Jefté)'
+  note: Llegada. Rompe las sogas, mata a mil con una quijada y Jehová le da agua en En-Hacore.
+  reason: 'Jue 15:14-19: lo llevan atado a Lehí, donde lo esperan los filisteos. Suceso ancla: sanson-mata-a-mil-filisteos-con-una-quijada
+    (tras Jefté, c. 1173, y antes de Saúl, 1117).'
+  sources:
+  - jueces-15
+  - it-lehi
+  - it-sanson
+  - it-jefte
+  checked_on: '2026-09-30'
+  status: verified

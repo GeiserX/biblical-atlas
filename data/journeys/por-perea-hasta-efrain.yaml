@@ -1,0 +1,121 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: por-perea-hasta-efrain
+name: Por Perea, Betania y Efraín
+person: jesus
+reference: Jn 10:40–11:54; Lu 13:22–17:10
+date:
+  from: 32
+  to: 33
+  precision: range
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: de finales de 32 e.c. a principios de 33
+narrative_order:
+  series: jesus
+  order: 14
+companions: []
+summary: Enseña por las ciudades y aldeas de Perea camino de Jerusalén. Al saber que Lázaro está enfermo sube a Betania y
+  lo resucita; como el Sanedrín decide matarlo, se retira a Efraín, cerca del desierto.
+reason: Juan 10 y 11 y Lucas 13 a 17 dan las paradas; el orden es el de la tabla A7-F. Fechas de los sucesos va-a-betania-del-otro-lado-del-jordan,
+  ensena-en-perea, resurreccion-de-lazaro y complot-y-retiro-a-efrain.
+sources:
+- juan-10
+- juan-11
+- lucas-13
+- lucas-14
+- lucas-15
+- lucas-16
+- lucas-17
+- tnm-a7-f
+- jy-cap-82
+- jy-cap-83
+- jy-cap-84
+- jy-cap-85
+- jy-cap-86
+- jy-cap-87
+- jy-cap-88
+- jy-cap-89
+- jy-cap-90
+- jy-cap-91
+- it-efrain
+- it-lazaro
+checked_on: '2026-09-30'
+status: verified
+stops:
+- order: 1
+  place: betania-del-otro-lado-del-jordan
+  reference: Jn 10:40-42; 11:6
+  date:
+    from: 32
+    to: 33
+    precision: range
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: después de la Dedicación de 32 e.c. y antes de la Pascua de 33
+  note: Enlace con el viaje anterior. Se queda dos días más tras saber que Lázaro está enfermo.
+  reason: Jn 10:40 y 11:6 lo mantienen al otro lado del Jordán. Fecha del suceso va-a-betania-del-otro-lado-del-jordan.
+  sources:
+  - juan-10
+  - juan-11
+  - tnm-a7-f
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: perea
+  reference: Lu 13:22–17:10
+  date:
+    from: 32
+    to: 33
+    precision: range
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: después de la Dedicación de 32 e.c. y antes de la Pascua de 33
+  note: Enseña por ciudades y pueblos mientras se dirige a Jerusalén.
+  reason: Lu 13:22 lo muestra enseñando por ciudades y aldeas camino de Jerusalén; la tabla A7-F pone Perea. Lugar y fecha
+    del suceso ensena-en-perea.
+  sources:
+  - lucas-13
+  - tnm-a7-f
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: betania
+  reference: Jn 11:7-46
+  date:
+    from: 33
+    to: 33
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: principios de 33 e.c.
+  note: Resucita a Lázaro, muerto hacía cuatro días.
+  reason: 'Jn 11:7, 17, 18: vuelve a Judea y llega a Betania, cerca de Jerusalén. Fecha del suceso resurreccion-de-lazaro.'
+  sources:
+  - juan-11
+  - tnm-a7-f
+  - it-lazaro
+  checked_on: '2026-09-30'
+  status: verified
+- order: 4
+  place: efrain
+  reference: Jn 11:54
+  date:
+    from: 33
+    to: 33
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: principios de 33 e.c., antes de la llegada a Betania
+  note: Una ciudad cerca del desierto.
+  reason: 'Jn 11:54: deja de andar en público y se va con sus discípulos a Efraín. Fecha del suceso complot-y-retiro-a-efrain.'
+  sources:
+  - juan-11
+  - tnm-a7-f
+  - it-efrain
+  checked_on: '2026-09-30'
+  status: verified

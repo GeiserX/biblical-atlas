@@ -1,0 +1,70 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: david-vence-en-helam
+name: David vence a los sirios en Helam
+person: david
+reference: 2Sa 10:15-19; 1Cr 19:16-19
+date:
+  from: -1069
+  to: -1039
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1070 y c. 1040 a.e.c. (tiempo narrativo: David ya reina en Jerusalén)'
+companions: []
+summary: Cuando Hadadézer trae sirios de la región del Río, David reúne a todo Israel, cruza el Jordán y los derrota en Helam,
+  donde muere Sobac. Los reyes que servían a Hadadézer hacen la paz con Israel.
+reason: 2Sa 10:15-19 y 1Cr 19:16-19; Perspicacia «Helam» y «Hadadézer». El texto no nombra la salida. Entre 1070 y c. 1040
+  a.e.c. (estudio 3).
+sources:
+- 2-samuel-10
+- 1-cronicas-19
+- si-3
+- it-helam
+- it-hadadezer
+- it-sobac
+checked_on: '2026-09-30'
+status: verified
+narrative_order:
+  series: david
+  order: 9
+stops:
+- order: 1
+  place: rio-jordan
+  reference: 2Sa 10:17
+  date:
+    from: -1069
+    to: -1039
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1070 y c. 1040 a.e.c. (tiempo narrativo: David ya reina en Jerusalén)'
+  note: Cruza el río con todo el ejército.
+  reason: '2Sa 10:17: David reúne a Israel y cruza el Jordán. Fecha: la del suceso david-vence-a-los-sirios-en-helam.'
+  sources:
+  - 2-samuel-10
+  - 1-cronicas-19
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: helam
+  reference: 2Sa 10:17, 18
+  date:
+    from: -1069
+    to: -1039
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1070 y c. 1040 a.e.c. (tiempo narrativo: David ya reina en Jerusalén)'
+  note: Muere Sobac, jefe del ejército sirio.
+  reason: '2Sa 10:17, 18: llega a Helam y vence a los sirios; Perspicacia «Helam». Fecha: la del suceso david-vence-a-los-sirios-en-helam.'
+  sources:
+  - 2-samuel-10
+  - it-helam
+  - it-sobac
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified

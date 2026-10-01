@@ -1,0 +1,473 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: de-cades-a-las-llanuras-de-moab
+name: De Cadés a las llanuras de Moab
+person: moises
+reference: Nú 20:1–22:1; Nú 33:37-49; Dt 2:1–3:29; Dt 10:6, 7; Jue 11:16-22
+date:
+  from: -1473
+  to: -1472
+  precision: range
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: 1474-1473 a.e.c. (de la vuelta a Cadés a las llanuras de Moab)
+companions:
+- eleazar-hijo-de-aaron
+- josue-hijo-de-nun
+- caleb-hijo-de-jefune
+summary: Edom no deja pasar a Israel y Aarón muere en el monte Hor. El pueblo rodea Edom y Moab, vence a Sehón y a Og, reyes
+  amorreos, y acampa en las llanuras de Moab, frente a Jericó.
+reason: Nú 20 a 22 y 33:37-49 dan las etapas; Dt 2, 3 y 10:6, 7 añaden otras. Nú 33:38 fecha la muerte de Aarón en el año
+  cuarenta, y los sucesos de Moab llevan c. 1473 a.e.c.
+sources:
+- numeros-20
+- numeros-21
+- numeros-22
+- numeros-33
+- deuteronomio-2
+- deuteronomio-3
+- deuteronomio-10
+- jueces-11
+- it-aaron
+- it-basan
+- it-qades
+- tnm-b3
+- si-3
+checked_on: '2026-09-30'
+status: verified
+narrative_order:
+  series: moises
+  order: 6
+stops:
+- order: 1
+  place: cades
+  reference: Nú 20:1-21; Jue 11:16, 17
+  date:
+    from: -1473
+    to: -1473
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: 1474 a.e.c. (año cuarenta, antes del quinto mes)
+  note: Muere Míriam y Jehová da agua en Meribá. Edom les niega el paso por el Camino del Rey.
+  reason: Nú 20:1-21 cuenta en Cadés la muerte de Míriam, el agua de Meribá y la negativa de Edom. Fecha de los sucesos «Moisés
+    saca agua del peñasco en Meribá» y «Edom niega el paso a Israel».
+  sources:
+  - numeros-20
+  - jueces-11
+  - it-qades
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: monte-hor
+  reference: Nú 20:22-29; 33:37-40; Dt 10:6
+  date:
+    from: -1473
+    to: -1473
+    precision: day
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 1 de ab de 1474 a.e.c.
+    detail:
+      month: ab
+      day: 1
+  note: Eleazar recibe las ropas de Aarón y el pueblo lo llora 30 días. Dt 10:6 llama Moserá al lugar; Nú 33:40 recuerda aquí
+    al rey de Arad.
+  reason: Nú 33:37, 38 lleva al pueblo de Cadés al monte Hor, en la frontera de Edom, y fecha la muerte de Aarón el día 1
+    del quinto mes del año cuarenta. Suceso «Muere Aarón en el monte Hor».
+  sources:
+  - numeros-20
+  - numeros-33
+  - deuteronomio-10
+  - it-aaron
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: hor-haguidgad
+  reference: Dt 10:7
+  date:
+    from: -1473
+    to: -1472
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1474 y 1473 a.e.c. (tiempo narrativo: después de morir Aarón en Moserá y antes de llegar a las llanuras de
+      Moab)'
+  note: Dt 10:7 la llama Gudgoda. Nú 33:32 ya la nombra en los 38 años.
+  reason: 'Dt 10:6, 7 lleva al pueblo de Moserá a Gudgoda, que Perspicacia identifica con Hor-Haguidgad. Sin año propio: fecha
+    del suceso «Israel acampa en Gudgoda y en Jotbatá», tras la muerte de Aarón.'
+  sources:
+  - deuteronomio-10
+  - it-gudgoda
+  checked_on: '2026-09-30'
+  status: verified
+- order: 4
+  place: jotbata
+  reference: Dt 10:7
+  date:
+    from: -1473
+    to: -1472
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1474 y 1473 a.e.c. (tiempo narrativo: después de morir Aarón en Moserá y antes de llegar a las llanuras de
+      Moab)'
+  note: Dt 10:7 la describe como tierra de arroyos. Nú 33:33 ya la nombra en los 38 años.
+  reason: 'Dt 10:7: de Gudgoda pasan a Jotbatá. Sin año propio: fecha del suceso «Israel acampa en Gudgoda y en Jotbatá».'
+  sources:
+  - deuteronomio-10
+  - it-jotbata
+  checked_on: '2026-09-30'
+  status: verified
+- order: 5
+  place: zalmona
+  reference: Nú 21:4-9; 33:41, 42
+  date:
+    from: -1473
+    to: -1472
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1474 y 1473 a.e.c. (tiempo narrativo: después de la muerte de Aarón y antes de llegar a las llanuras de Moab)'
+  note: Las serpientes venenosas y la de cobre caen en este tramo; el texto no dice en qué campamento.
+  reason: Nú 33:41 da Zalmoná como primera etapa tras el monte Hor, y Nú 21:4 dice que salieron de allí para rodear Edom.
+    Fecha del suceso «Israel acampa en Zalmoná y en Punón».
+  sources:
+  - numeros-21
+  - numeros-33
+  - it-zalmona
+  checked_on: '2026-09-30'
+  status: verified
+- order: 6
+  place: punon
+  reference: Nú 33:42, 43
+  date:
+    from: -1473
+    to: -1472
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1474 y 1473 a.e.c. (tiempo narrativo: después de la muerte de Aarón y antes de llegar a las llanuras de Moab)'
+  note: null
+  reason: 'Nú 33:42 pone Punón tras Zalmoná. Sin año propio: fecha del suceso «Israel acampa en Zalmoná y en Punón», entre
+    la muerte de Aarón y la llegada a Moab.'
+  sources:
+  - numeros-33
+  - it-punon
+  checked_on: '2026-09-30'
+  status: verified
+- order: 7
+  place: obot
+  reference: Nú 21:10; 33:43, 44
+  date:
+    from: -1473
+    to: -1472
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1474 y 1473 a.e.c. (tiempo narrativo: tras la muerte de Aarón y antes de vencer a Sehón)'
+  note: null
+  reason: Nú 21:10 y 33:43 nombran Obot tras Punón. Fecha del suceso «Israel acampa de Obot al Arnón».
+  sources:
+  - numeros-21
+  - numeros-33
+  - it-obot
+  checked_on: '2026-09-30'
+  status: verified
+- order: 8
+  place: iye-abarim
+  reference: Nú 21:11; 33:44, 45
+  date:
+    from: -1473
+    to: -1472
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1474 y 1473 a.e.c. (tiempo narrativo: tras la muerte de Aarón y antes de vencer a Sehón)'
+  note: En el límite oriental de Moab. Nú 33:45 la llama Iyim.
+  reason: Nú 21:11 y 33:44 la ponen después de Obot, en la frontera de Moab. Fecha del suceso «Israel acampa de Obot al Arnón».
+  sources:
+  - numeros-21
+  - numeros-33
+  - it-iye-abarim
+  checked_on: '2026-09-30'
+  status: verified
+- order: 9
+  place: valle-de-zered
+  reference: Nú 21:12; Dt 2:13, 14
+  date:
+    from: -1473
+    to: -1472
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1474 y 1473 a.e.c. (tiempo narrativo: tras la muerte de Aarón y antes de vencer a Sehón)'
+  note: Al cruzarlo se cumplen 38 años desde Cadés-Barnea y ya ha muerto la generación de guerreros.
+  reason: Nú 21:12 acampan junto al Zered y Dt 2:13 cuenta que lo cruzaron. Fecha del suceso «Israel acampa de Obot al Arnón».
+  sources:
+  - numeros-21
+  - deuteronomio-2
+  - it-zered
+  checked_on: '2026-09-30'
+  status: verified
+- order: 10
+  place: arnon
+  reference: Nú 21:13-15; Dt 2:18-24
+  date:
+    from: -1473
+    to: -1472
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1474 y 1473 a.e.c. (tiempo narrativo: tras la muerte de Aarón y antes de vencer a Sehón)'
+  note: Frontera entre Moab y los amorreos. Jehová les manda no atacar a Moab ni tocar Ar.
+  reason: Nú 21:13 acampan en la región del Arnón y Dt 2:24 manda cruzarlo. Fecha del suceso «Israel acampa de Obot al Arnón».
+  sources:
+  - numeros-21
+  - deuteronomio-2
+  - it-arnon
+  checked_on: '2026-09-30'
+  status: verified
+- order: 11
+  place: dibon
+  reference: Nú 33:45, 46
+  date:
+    from: -1473
+    to: -1472
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1474 y 1473 a.e.c. (tiempo narrativo: año cuarenta del éxodo, entre Iyé-Abarim y las llanuras de Moab)'
+  note: Dibón-Gad en la lista de Números.
+  reason: 'Nú 33:45 lleva al pueblo de Iyim a Dibón-Gad. Nú 21 no la nombra: el orden entre las dos listas es nuestro. Fecha
+    del suceso «Israel acampa en Dibón-Gad, Almón-Diblataim y las montañas de Abarim».'
+  sources:
+  - numeros-33
+  - it-dibon
+  checked_on: '2026-09-30'
+  status: pending
+- order: 12
+  place: almon-diblataim
+  reference: Nú 33:46, 47
+  date:
+    from: -1473
+    to: -1472
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1474 y 1473 a.e.c. (tiempo narrativo: año cuarenta del éxodo, entre Iyé-Abarim y las llanuras de Moab)'
+  note: null
+  reason: 'Nú 33:46 pone Almón-Diblataim tras Dibón-Gad. Nú 21 no la nombra: el orden entre las dos listas es nuestro. Fecha
+    del suceso «Israel acampa en Dibón-Gad, Almón-Diblataim y las montañas de Abarim».'
+  sources:
+  - numeros-33
+  - it-almon-diblataim
+  checked_on: '2026-09-30'
+  status: pending
+- order: 13
+  place: beer
+  reference: Nú 21:16-18
+  date:
+    from: -1473
+    to: -1472
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1474 y 1473 a.e.c. (tiempo narrativo: tras la muerte de Aarón y antes de vencer a Sehón)'
+  note: Jehová les da agua de un pozo y el pueblo le canta.
+  reason: Nú 21:16 dice que desde el Arnón fueron a Beer. Fecha del suceso «Jehová da agua a Israel en Beer».
+  sources:
+  - numeros-21
+  - it-beer
+  checked_on: '2026-09-30'
+  status: verified
+- order: 14
+  place: matana
+  reference: Nú 21:18, 19
+  date:
+    from: -1473
+    to: -1472
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1474 y 1473 a.e.c. (tiempo narrativo: tras la muerte de Aarón y antes de vencer a Sehón)'
+  note: null
+  reason: Nú 21:18 los lleva del desierto a Mataná. Fecha del suceso «Israel avanza de Mataná a Pisgá».
+  sources:
+  - numeros-21
+  - it-matana
+  checked_on: '2026-09-30'
+  status: verified
+- order: 15
+  place: nahaliel
+  reference: Nú 21:19
+  date:
+    from: -1473
+    to: -1472
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1474 y 1473 a.e.c. (tiempo narrativo: tras la muerte de Aarón y antes de vencer a Sehón)'
+  note: null
+  reason: 'Nú 21:19: de Mataná van a Nahaliel. Fecha del suceso «Israel avanza de Mataná a Pisgá».'
+  sources:
+  - numeros-21
+  - it-nahaliel
+  checked_on: '2026-09-30'
+  status: verified
+- order: 16
+  place: bamot-baal
+  reference: Nú 21:19, 20
+  date:
+    from: -1473
+    to: -1472
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1474 y 1473 a.e.c. (tiempo narrativo: tras la muerte de Aarón y antes de vencer a Sehón)'
+  note: Nú 21:19 la llama Bamot.
+  reason: 'Nú 21:19: de Nahaliel siguen a Bamot, que Perspicacia identifica con Bamot-Baal. Fecha del suceso «Israel avanza
+    de Mataná a Pisgá».'
+  sources:
+  - numeros-21
+  - it-bamot
+  checked_on: '2026-09-30'
+  status: verified
+- order: 17
+  place: pisga
+  reference: Nú 21:20; 33:47
+  date:
+    from: -1473
+    to: -1472
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1474 y 1473 a.e.c. (tiempo narrativo: tras la muerte de Aarón y antes de vencer a Sehón)'
+  note: Desde el desierto de Quedemot mandan mensajeros a Sehón (Dt 2:26).
+  reason: Nú 21:20 llega al valle de Moab, en lo alto del Pisgá, y Nú 33:47 a las montañas de Abarim frente a Nebo. Fecha
+    del suceso «Israel avanza de Mataná a Pisgá».
+  sources:
+  - numeros-21
+  - numeros-33
+  - deuteronomio-2
+  - it-pisga
+  checked_on: '2026-09-30'
+  status: verified
+- order: 18
+  place: jahaz
+  reference: Nú 21:21-24; Dt 2:26-33
+  date:
+    from: -1472
+    to: -1472
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 1473 a.e.c.
+  note: Sehón, rey amorreo, les niega el paso, sale a pelear y cae en la batalla.
+  reason: Nú 21:23 y Dt 2:32 sitúan en Jáhaz la batalla contra Sehón. Fecha del suceso «Israel vence a Sehón en Jáhaz».
+  sources:
+  - numeros-21
+  - deuteronomio-2
+  - it-sehon
+  - it-jahaz
+  checked_on: '2026-09-30'
+  status: verified
+- order: 19
+  place: hesbon
+  reference: Nú 21:25-31; Dt 2:34-36
+  date:
+    from: -1472
+    to: -1472
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 1473 a.e.c.
+  note: Toman Hesbón, la ciudad de Sehón, y las ciudades amorreas del Arnón al Jaboc.
+  reason: Nú 21:25 dice que Israel se quedó a vivir en Hesbón y en las ciudades amorreas. Fecha del suceso «Israel vence a
+    Sehón en Jáhaz».
+  sources:
+  - numeros-21
+  - deuteronomio-2
+  - it-hesbon
+  checked_on: '2026-09-30'
+  status: verified
+- order: 20
+  place: jazer
+  reference: Nú 21:32
+  date:
+    from: -1472
+    to: -1472
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 1473 a.e.c.
+  note: Los espías no tienen nombre.
+  reason: 'Nú 21:32: Moisés manda hombres a espiar Jazer y toman sus pueblos. No consta que Moisés fuera: la contamos como
+    etapa de la marcha. Fecha del suceso «Israel toma Jazer».'
+  sources:
+  - numeros-21
+  - it-jazer
+  checked_on: '2026-09-30'
+  status: pending
+- order: 21
+  place: edrei
+  reference: Nú 21:33-35; Dt 3:1-11
+  date:
+    from: -1472
+    to: -1472
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 1473 a.e.c.
+  note: Suben por el camino de Basán y vencen a Og, rey de Basán.
+  reason: Nú 21:33 y Dt 3:1 sitúan en Edréi la batalla contra Og. Fecha del suceso «Israel vence a Og en Edréi».
+  sources:
+  - numeros-21
+  - deuteronomio-3
+  - it-og
+  - it-edrei
+  checked_on: '2026-09-30'
+  status: verified
+- order: 22
+  place: llanuras-deserticas-de-moab
+  reference: Nú 22:1; 33:48, 49; Dt 3:29
+  date:
+    from: -1472
+    to: -1472
+    precision: year
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'c. 1473 a.e.c. (tiempo narrativo: en las llanuras de Moab, tras vencer a Sehón y a Og)'
+  note: Frente a Jericó; el campamento va de Bet-Jesimot a Abel-Sitim.
+  reason: 'Nú 22:1 y 33:48, 49 dan el último campamento: las llanuras desérticas de Moab, a orillas del Jordán. Fecha del
+    suceso «Israel acampa en las llanuras desérticas de Moab».'
+  sources:
+  - numeros-22
+  - numeros-33
+  - deuteronomio-3
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified

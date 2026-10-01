@@ -5,8 +5,8 @@ chapters:
     status: complete
     reviewed_on: 2026-09-29
     spans:
-    - {v: 1-5, type: narration, entities: [event:elimelec-se-va-a-moab, person:elimelec, person:noemi, person:mahlon, person:kilion, person:orpa, person:rut, place:belen, place:moab, relation:elimelec/kin/noemi, relation:elimelec/lived_in/belen, relation:elimelec/lived_in/moab, relation:elimelec/died_in/moab, relation:noemi/lived_in/moab, relation:mahlon/kin/elimelec, relation:mahlon/kin/noemi, relation:mahlon/kin/kilion, relation:mahlon/died_in/moab, relation:kilion/kin/elimelec, relation:kilion/kin/noemi, relation:kilion/kin/orpa, relation:kilion/died_in/moab, relation:orpa/lived_in/moab, relation:rut/born_in/moab], mentions: [place:juda]}
-    - {v: 6-18, type: narration, entities: [event:orpa-vuelve-y-rut-se-queda, person:noemi, person:orpa, person:rut, place:moab, relation:rut/kin/noemi, relation:orpa/kin/noemi], mentions: [place:juda]}
+    - {v: 1-5, type: narration, entities: [event:elimelec-se-va-a-moab, person:elimelec, person:noemi, person:mahlon, person:kilion, person:orpa, person:rut, place:belen, place:moab, relation:elimelec/kin/noemi, relation:elimelec/lived_in/belen, relation:elimelec/lived_in/moab, relation:elimelec/died_in/moab, relation:noemi/lived_in/moab, relation:mahlon/kin/elimelec, relation:mahlon/kin/noemi, relation:mahlon/kin/kilion, relation:mahlon/died_in/moab, relation:kilion/kin/elimelec, relation:kilion/kin/noemi, relation:kilion/kin/orpa, relation:kilion/died_in/moab, relation:orpa/lived_in/moab, relation:rut/born_in/moab, journey:viaje-de-elimelec-a-moab], mentions: [place:juda]}
+    - {v: 6-18, type: narration, entities: [event:orpa-vuelve-y-rut-se-queda, person:noemi, person:orpa, person:rut, place:moab, relation:rut/kin/noemi, relation:orpa/kin/noemi, journey:noemi-vuelve-a-belen], mentions: [place:juda]}
     - {v: 19-22, type: narration, entities: [event:noemi-y-rut-llegan-a-belen, person:noemi, person:rut, place:belen, relation:noemi/lived_in/belen, relation:rut/lived_in/belen], mentions: [place:moab]}
   2:
     status: complete

@@ -1,0 +1,84 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: acaz-va-a-damasco
+name: Acaz va a Damasco
+person: acaz
+reference: 2Re 16:10-16
+date:
+  from: -761
+  to: -745
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 762 y 746 a.e.c. (tiempo narrativo: tras la toma de Damasco, en el reinado de Acaz)'
+companions: []
+summary: Tomada Damasco por los asirios, Acaz va allí a ver a Tiglat-Piléser. Envía al sacerdote Uriya el dibujo de un altar
+  que ve en la ciudad y, al volver a Jerusalén, presenta ofrendas en la copia.
+reason: 2Re 16:10-12 da la ida desde Jerusalén y la vuelta. Fechas de los sucesos acaz-va-a-damasco-a-ver-a-tiglat-pileser y uriya-construye-un-altar-como-el-de-damasco.
+sources:
+- 2-reyes-16
+- it-acaz
+- it-uriya
+- it-damasco
+- it-tiglat-pileser
+- tnm-a6-b
+checked_on: '2026-09-30'
+status: verified
+stops:
+- order: 1
+  place: jerusalen
+  reference: 2Re 16:2, 10
+  date:
+    from: -761
+    to: -745
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 762 y 746 a.e.c. (tiempo narrativo: tras la toma de Damasco, en el reinado de Acaz)'
+  note: Salida. Desde Damasco manda el dibujo del altar a Uriya, que lo construye aquí antes de que vuelva.
+  reason: 2Re 16:2 lo hace reinar en Jerusalén, y 16:10, 11 manda el modelo al sacerdote Uriya, que lo levanta allí mientras
+    el rey está fuera. Suceso acaz-va-a-damasco-a-ver-a-tiglat-pileser.
+  sources:
+  - 2-reyes-16
+  - it-acaz
+  - it-uriya
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: damasco
+  reference: 2Re 16:10, 11
+  date:
+    from: -761
+    to: -745
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 762 y 746 a.e.c. (tiempo narrativo: tras la toma de Damasco, en el reinado de Acaz)'
+  note: null
+  reason: '2Re 16:10: va a Damasco a ver al rey de Asiria. Suceso acaz-va-a-damasco-a-ver-a-tiglat-pileser.'
+  sources:
+  - 2-reyes-16
+  - it-acaz
+  - it-damasco
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: jerusalen
+  reference: 2Re 16:12-16
+  date:
+    from: -761
+    to: -745
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 762 y 746 a.e.c. (tiempo narrativo: tras el viaje de Acaz a Damasco)'
+  note: Aparta el altar de cobre y ordena usar el nuevo.
+  reason: '2Re 16:12: vuelve de Damasco y ve el altar ya hecho. Suceso uriya-construye-un-altar-como-el-de-damasco.'
+  sources:
+  - 2-reyes-16
+  - it-uriya
+  checked_on: '2026-09-30'
+  status: verified

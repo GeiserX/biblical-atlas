@@ -1,0 +1,102 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: bernabe-a-antioquia-y-tarso
+name: Bernabé, enviado a Antioquía, busca a Saulo en Tarso
+person: bernabe
+reference: Hch 11:22-26
+date:
+  from: 36
+  to: 46
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 36 y c. 46 e.c. (tiempo narrativo: después de Cornelio y antes del socorro a Jerusalén)'
+narrative_order:
+  series: bernabe
+  order: 1
+companions: []
+summary: La congregación de Jerusalén envía a Bernabé a Antioquía al saber que muchos griegos creen. Viendo tanta gente, va
+  a Tarso a buscar a Saulo, lo trae, y enseñan juntos allí un año entero.
+reason: Hch 11:22-26 da las paradas en orden. Fechas de los sucesos buenas-noticias-en-antioquia y cristianos-en-antioquia,
+  anteriores a socorro-a-jerusalen.
+sources:
+- hechos-11
+- it-bernabe
+- it-antioquia
+- it-tarso
+checked_on: '2026-09-30'
+status: verified
+stops:
+- order: 1
+  place: jerusalen
+  reference: Hch 11:22
+  date:
+    from: 36
+    to: 44
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 36 y 44 e.c. (tiempo narrativo: después de Cornelio y antes de la profecía de Ágabo)'
+  note: null
+  reason: 'Hch 11:22: la congregación de Jerusalén envía a Bernabé. Fecha del suceso buenas-noticias-en-antioquia.'
+  sources:
+  - hechos-11
+  - it-bernabe
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: antioquia-de-siria
+  reference: Hch 11:22-24
+  date:
+    from: 36
+    to: 44
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 36 y 44 e.c. (tiempo narrativo: después de Cornelio y antes de la profecía de Ágabo)'
+  note: Anima a los nuevos creyentes.
+  reason: 'Hch 11:22, 23: llega a Antioquía y se alegra de lo que ve. Fecha del suceso buenas-noticias-en-antioquia.'
+  sources:
+  - hechos-11
+  - it-antioquia
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: tarso
+  reference: Hch 11:25
+  date:
+    from: 36
+    to: 46
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 36 y c. 46 e.c. (tiempo narrativo: antes del año en Antioquía)'
+  note: Busca a Saulo por todas partes.
+  reason: 'Hch 11:25: se va a Tarso a buscar a Saulo. Fecha del suceso cristianos-en-antioquia.'
+  sources:
+  - hechos-11
+  - it-tarso
+  checked_on: '2026-09-30'
+  status: verified
+- order: 4
+  place: antioquia-de-siria
+  reference: Hch 11:26
+  date:
+    from: 36
+    to: 46
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'antes de c. 46 e.c.: un año entero en Antioquía (Hch 11:26)'
+  note: Con Saulo, un año. Allí llaman cristianos a los discípulos por primera vez.
+  reason: 'Hch 11:26: lo lleva a Antioquía y enseñan un año con la congregación. Fecha del suceso cristianos-en-antioquia.'
+  sources:
+  - hechos-11
+  - it-bernabe
+  - it-antioquia
+  checked_on: '2026-09-30'
+  status: verified

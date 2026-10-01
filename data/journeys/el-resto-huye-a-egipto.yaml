@@ -1,0 +1,108 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: el-resto-huye-a-egipto
+name: El resto de Judá huye a Egipto
+person: johanan-hijo-de-carea
+reference: Jer 41:11–43:13; 2Re 25:26
+date:
+  from: -606
+  to: -606
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: 607 a.e.c. (desde el mes de tisri)
+companions:
+- jeremias-profeta
+- baruc-hijo-de-nerias
+- jaazanias-jefe-militar
+- seraya-hijo-de-tanhumet
+summary: Tras rescatar a los cautivos de Ismael, Johanán y los demás jefes esperan cerca de Belén la respuesta de Jehová.
+  Aunque Jeremías les manda quedarse, huyen a Egipto y se lo llevan con Baruc hasta Tahpanhés.
+reason: El estudio 3 fecha en 607 a.e.c. el asesinato de Guedalías y la huida a Egipto (sucesos asesinato-de-guedalias y el-resto-de-juda-huye-a-egipto).
+  Perspicacia «Johanán», núm. 5, cuenta el recorrido.
+sources:
+- si-3
+- it-johanan
+- it-jaazanias
+- it-seraya
+- it-kimham
+- it-tahpanhes
+- it-baruc
+- jeremias-41
+- jeremias-42
+- jeremias-43
+- 2-reyes-25
+checked_on: '2026-09-30'
+status: verified
+stops:
+- order: 1
+  place: mizpa-de-benjamin
+  reference: Jer 41:10, 14, 16
+  date: &id001
+    from: -606
+    to: -606
+    precision: month
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: tisri de 607 a.e.c.
+    detail:
+      month: tisri
+  note: Los rescatados eran la gente que Ismael sacó de Mizpá.
+  reason: 'Jer 41:16: llevan consigo al resto de la gente de Mizpá. El texto no dice desde dónde salió Johanán a perseguir
+    a Ismael: la salida se deduce.'
+  sources:
+  - jeremias-41
+  - it-johanan
+  - si-3
+  checked_on: '2026-09-30'
+  status: pending
+- order: 2
+  place: gabaon
+  reference: Jer 41:12-16
+  date: *id001
+  note: null
+  reason: 'Jer 41:12, 16: alcanzan a Ismael junto a las aguas de Gabaón y se llevan de allí a los rescatados. Mes del suceso
+    asesinato-de-guedalias.'
+  sources:
+  - jeremias-41
+  - it-gabaon
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: lugar-de-hospedaje-de-kimham
+  reference: Jer 41:17–43:3
+  date: &id002
+    from: -606
+    to: -606
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: 607 a.e.c.
+  note: Consultan a Jeremías y esperan diez días la respuesta de Jehová.
+  reason: 'Jer 41:17: se detienen en el lugar de hospedaje de Kimham, junto a Belén, con la idea de seguir a Egipto. Año de
+    los sucesos de 607 a.e.c.'
+  sources:
+  - jeremias-41
+  - jeremias-42
+  - jeremias-43
+  - it-kimham
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 4
+  place: tahpanhes
+  reference: Jer 43:7-13
+  date: *id002
+  note: Como señal, Jeremías esconde piedras grandes junto al acceso del edificio del faraón. Jer 44:1 los sitúa después también
+    en Migdol, Nof y Patrós.
+  reason: 'Jer 43:7: entran en Egipto y llegan hasta Tahpanhés. Suceso el-resto-de-juda-huye-a-egipto, 607 a.e.c.'
+  sources:
+  - jeremias-43
+  - it-tahpanhes
+  - 2-reyes-25
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified

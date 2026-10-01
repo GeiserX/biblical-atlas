@@ -1,0 +1,87 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: finehas-va-a-galaad
+name: Finehás pide cuentas a las tribus del este
+person: finehas-hijo-de-eleazar
+reference: Jos 22:10-34
+date:
+  from: -1466
+  to: -1449
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1467 y 1450 a.e.c. (tiempo narrativo: acabado el reparto desde Siló y en vida de Josué)'
+companions: []
+summary: Las tribus del este levantan un gran altar junto al Jordán. Israel, reunido en Siló, envía a Finehás con diez jefes
+  a Galaad; oye la explicación, queda satisfecho y vuelve a informar.
+reason: 'Jos 22:9-34 cuenta la reunión, el viaje y la vuelta. Sin año propio: después del reparto y en vida de Josué, como
+  los sucesos del capítulo.'
+sources:
+- josue-22
+- si-3
+- it-finehas
+- it-galaad
+- it-silo
+checked_on: '2026-09-30'
+status: verified
+stops:
+- order: 1
+  place: silo
+  reference: Jos 22:12-14
+  date:
+    from: -1466
+    to: -1449
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1467 y 1450 a.e.c. (tiempo narrativo: acabado el reparto desde Siló y en vida de Josué)'
+  note: Va con diez jefes, uno por cada tribu; no tienen ficha.
+  reason: 'Jos 22:12, 13: el pueblo se reúne en Siló y desde allí manda a Finehás. Fecha del suceso «Las tribus del este levantan
+    un altar junto al Jordán».'
+  sources:
+  - josue-22
+  - it-silo
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: galaad
+  reference: Jos 22:15-31
+  date:
+    from: -1466
+    to: -1449
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1467 y 1450 a.e.c. (tiempo narrativo: acabado el reparto desde Siló y en vida de Josué)'
+  note: null
+  reason: Jos 22:15 los lleva a la tierra de Galaad, donde hablan con las tribus del este. Fecha del suceso «Finehás pide
+    cuentas a las tribus del este por el altar».
+  sources:
+  - josue-22
+  - it-galaad
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: silo
+  reference: Jos 22:32-34
+  date:
+    from: -1466
+    to: -1449
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1467 y 1450 a.e.c. (tiempo narrativo: acabado el reparto desde Siló y en vida de Josué)'
+  note: El texto dice solo que vuelven a la tierra de Canaán.
+  reason: Jos 22:32 los hace volver a Canaán a informar; lo ponemos en Siló porque allí se reunió el pueblo (22:12). Fecha
+    del suceso «Finehás informa a Israel y se evita la guerra».
+  sources:
+  - josue-22
+  - it-silo
+  - si-3
+  checked_on: '2026-09-30'
+  status: pending

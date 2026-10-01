@@ -1,0 +1,52 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: elasa-y-guemarias-a-babilonia
+name: Elasá y Guemarías llevan la carta de Jeremías
+person: elasa
+reference: Jer 29:1-3
+date: &id001
+  from: -616
+  to: -608
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 617 y 609 a.e.c. (tiempo narrativo: reinado de Sedequías, antes del último sitio)'
+companions:
+- guemarias-hijo-de-hilquias
+summary: 'El rey Sedequías envía a Elasá y a Guemarías a presentarse ante Nabucodonosor. Jeremías les confía su carta para
+  los desterrados de 617: que construyan casas, planten huertos y pidan por la paz de Babilonia.'
+reason: La carta va a los llevados con Jeconías en 617 a.e.c. (suceso nabucodonosor-se-lleva-a-joaquin-a-babilonia) y la manda
+  Sedequías antes del sitio de 609 (suceso sitio-de-jerusalen-609). Perspicacia «Guemarías», núm. 2.
+sources:
+- it-elasa
+- it-guemarias
+- jeremias-29
+- si-3
+checked_on: '2026-09-30'
+status: verified
+stops:
+- order: 1
+  place: jerusalen
+  reference: Jer 29:1-3
+  date: *id001
+  note: null
+  reason: 'Jer 29:1: Jeremías envía la carta desde Jerusalén, y 29:3 dice que la llevan los dos enviados del rey. Tiempo narrativo
+    entre 617 y 609 a.e.c.'
+  sources:
+  - jeremias-29
+  - it-elasa
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: babilonia
+  reference: Jer 29:3
+  date: *id001
+  note: null
+  reason: 'Jer 29:3: Sedequías los envía a Babilonia ante Nabucodonosor. Perspicacia «Elasá» y «Guemarías», núm. 2, cuentan
+    el mismo viaje.'
+  sources:
+  - jeremias-29
+  - it-elasa
+  - it-guemarias
+  checked_on: '2026-09-30'
+  status: verified

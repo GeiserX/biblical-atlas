@@ -1,0 +1,95 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: saul-consulta-en-en-dor
+name: Saúl consulta a la médium de En-Dor
+person: saul
+reference: 1Sa 28:4-25
+date:
+  from: -1077
+  to: -1077
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 1078 a.e.c.
+companions: []
+summary: Con los filisteos acampados en Sunem y sin respuesta de Jehová, Saúl se disfraza y va de noche desde Guilboa a En-Dor
+  con dos de sus hombres. La médium le anuncia su muerte y él vuelve esa misma noche.
+reason: 1Sa 28:4-25; la vuelta al Guilboa sale de 31:1-6. Perspicacia «Saúl», párr. 15, y «En-dor». Todo pasa en 1078, año
+  de su muerte (Perspicacia «Jonatán», núm. 2; estudio 3).
+sources:
+- 1-samuel-28
+- 1-samuel-31
+- it-saul
+- it-en-dor
+- it-guilboa
+- it-jonatan
+- si-3
+checked_on: '2026-09-30'
+status: verified
+narrative_order:
+  series: saul
+  order: 8
+stops:
+- order: 1
+  place: monte-guilboa
+  reference: 1Sa 28:4-6
+  date:
+    from: -1077
+    to: -1077
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 1078 a.e.c.
+  note: Frente al campamento filisteo de Sunem.
+  reason: '1Sa 28:4: Saúl reúne a Israel y acampa en Guilboa. Fecha: la del suceso saul-acampa-en-guilboa-frente-a-los-filisteos.'
+  sources:
+  - 1-samuel-28
+  - it-guilboa
+  - it-jonatan
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: en-dor
+  reference: 1Sa 28:7-25
+  date:
+    from: -1077
+    to: -1077
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 1078 a.e.c.
+  note: Va disfrazado, con dos hombres sin nombre.
+  reason: '1Sa 28:7, 8: sus siervos le hablan de una médium en En-Dor y él va a verla de noche. Fecha: la del suceso saul-consulta-a-la-medium-de-en-dor.'
+  sources:
+  - 1-samuel-28
+  - it-en-dor
+  - it-saul
+  - it-jonatan
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: monte-guilboa
+  reference: 1Sa 28:25; 31:1-6
+  date:
+    from: -1077
+    to: -1077
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 1078 a.e.c.
+  note: Se van esa noche; al día siguiente muere en el monte Guilboa.
+  reason: '1Sa 28:25 dice que se marchan de noche, y 31:1-6 pone la batalla y su muerte en el monte Guilboa. Fecha: la del
+    suceso muerte-de-saul.'
+  sources:
+  - 1-samuel-28
+  - 1-samuel-31
+  - it-guilboa
+  - it-jonatan
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified

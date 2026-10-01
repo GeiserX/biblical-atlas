@@ -1,0 +1,41 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: mesobab
+name: Mesobab
+names:
+- name: Mesobab
+perspicacia: '1200003013'
+date:
+  from: -745
+  to: -715
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 746 y 716 a.e.c. (tiempo narrativo: en los días de Ezequías)'
+summary: Jefe de una familia numerosa de Simeón. En días de Ezequías fue con otros jefes simeonitas a buscar pastos junto
+  a Guedor, echaron a camitas y meunim y se quedaron en esa tierra.
+reason: Perspicacia «Mesobab»; 1Cr 4:34-41. Fecha por el reinado de Ezequías que nombra el texto (tabla A6-B).
+sources:
+- it-mesobab
+- 1-cronicas-4
+- it-ezequias
+- tnm-a6-b
+links:
+- title: 'Perspicacia: «Mesobab»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Mesobab/
+  type: perspicacia
+- title: 1 Crónicas 4 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/1-Cr%C3%B3nicas/4/
+  type: bible
+relations:
+- type: lived_in
+  place: guedor-de-simeon
+  inferred: false
+  sources:
+  - 1-cronicas-4
+  - it-mesobab
+  reason: '1Cr 4:41: los jefes de la lista se establecieron en los pastos de Guedor.'
+  checked_on: '2026-09-30'
+  status: verified
+checked_on: '2026-09-30'
+status: verified

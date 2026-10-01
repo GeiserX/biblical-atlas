@@ -1,0 +1,38 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: azarias-hijo-de-jehohanan
+name: Azarías
+names:
+- name: Azarías
+perspicacia: 1200000486#15
+disambiguation: Azarías hijo de Jehohanán, jefe de Efraín en días de Acaz y Pécah; no el rey Azarías (Uzías) ni los demás
+  Azarías de Perspicacia.
+distinct_from:
+- azarias-hijo-de-natan
+- azarias-hijo-de-sadoc
+- uzias
+- abednego
+date:
+  from: -761
+  to: -757
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 762 y c. 758 a.e.c. (tiempo narrativo: reinan Acaz en Judá y Pécah en Israel)'
+summary: Uno de los jefes de Efraín que, tras oír al profeta Oded, se negaron a quedarse con los cautivos que Israel había
+  traído de Judá y los mandaron de vuelta con ropa, comida y burros.
+reason: Perspicacia «Azarías», núm. 15; 2Cr 28:12-15. Fecha del suceso rezin-y-pecah-sitian-jerusalen, en cuyo tiempo cae
+  la derrota de Judá.
+sources:
+- it-azarias
+- 2-cronicas-28
+- tnm-a6-b
+links:
+- title: 'Perspicacia: «Azarías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Azar%C3%ADas/
+  type: perspicacia
+- title: 2 Crónicas 28 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-Cr%C3%B3nicas/28/
+  type: bible
+checked_on: '2026-09-30'
+status: verified

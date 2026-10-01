@@ -1,0 +1,181 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: saul-contra-amalec
+name: Saúl contra Amalec
+person: saul
+reference: 1Sa 15:4-34
+date:
+  from: -1116
+  to: -1077
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1117 y 1078 a.e.c. (tiempo narrativo: en el reinado de Saúl, antes de la unción de David)'
+companions: []
+summary: Saúl cuenta su ejército en Telaim, ataca la ciudad de Amalec y derrota a los amalequitas de Havilá a Sur, pero perdona
+  a Agag. Pasa por Carmelo y en Guilgal Samuel le anuncia su rechazo; vuelve a Guibeá.
+reason: '1 Samuel 15 da las paradas en orden. Sin año en jw.org: en el reinado de Saúl (1117-1078, estudio 3) y antes de que
+  Samuel unja a David.'
+sources:
+- 1-samuel-15
+- it-amaleq
+- it-agag
+- it-quenita
+- it-havila
+- it-sur
+- it-telaim
+- it-telem
+- it-carmelo
+- it-guilgal
+- it-saul
+- si-3
+checked_on: '2026-09-30'
+status: verified
+narrative_order:
+  series: saul
+  order: 4
+stops:
+- order: 1
+  place: telem
+  reference: 1Sa 15:4
+  date:
+    from: -1116
+    to: -1077
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1117 y 1078 a.e.c. (tiempo narrativo: en el reinado de Saúl, antes de la unción de David)'
+  note: Salida. Telaim; cuenta 200.000 soldados y 10.000 de Judá.
+  reason: '1Sa 15:4 dice que reúne y cuenta al ejército en Telaim; la ficha telem lleva ese nombre. Suceso ancla: saul-pasa-revista-al-ejercito-en-telaim
+    (reinado de Saúl, 1117-1078, estudio 3).'
+  sources:
+  - 1-samuel-15
+  - it-telaim
+  - it-telem
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: amalec
+  reference: 1Sa 15:5, 6
+  date:
+    from: -1116
+    to: -1077
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1117 y 1078 a.e.c. (tiempo narrativo: en el reinado de Saúl, antes de la unción de David)'
+  note: La ciudad de Amalec, sin nombre; avisa antes a los quenitas.
+  reason: '1Sa 15:5 dice que llega hasta la ciudad de Amalec y pone una emboscada junto al valle. Suceso ancla: saul-derrota-a-los-amalequitas
+    (reinado de Saúl, 1117-1078, estudio 3).'
+  sources:
+  - 1-samuel-15
+  - it-amaleq
+  - it-quenita
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: havila-cerca-de-sur
+  reference: 1Sa 15:7
+  date:
+    from: -1116
+    to: -1077
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1117 y 1078 a.e.c. (tiempo narrativo: en el reinado de Saúl, antes de la unción de David)'
+  note: Punto de partida de la derrota de los amalequitas.
+  reason: '1Sa 15:7: los va derrotando desde Havilá. Suceso ancla: saul-derrota-a-los-amalequitas (reinado de Saúl, 1117-1078,
+    estudio 3).'
+  sources:
+  - 1-samuel-15
+  - it-havila
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 4
+  place: sur
+  reference: 1Sa 15:7
+  date:
+    from: -1116
+    to: -1077
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1117 y 1078 a.e.c. (tiempo narrativo: en el reinado de Saúl, antes de la unción de David)'
+  note: Junto a Egipto. Captura vivo a Agag.
+  reason: '1Sa 15:7, 8 lleva la persecución hasta Sur, cerca de Egipto. Suceso ancla: saul-derrota-a-los-amalequitas (reinado
+    de Saúl, 1117-1078, estudio 3).'
+  sources:
+  - 1-samuel-15
+  - it-sur
+  - it-agag
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 5
+  place: carmelo-de-juda
+  reference: 1Sa 15:12
+  date:
+    from: -1116
+    to: -1077
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1117 y 1078 a.e.c. (tiempo narrativo: en el reinado de Saúl, antes de la unción de David)'
+  note: Se levanta un monumento en su propio honor.
+  reason: '1Sa 15:12: a Samuel le dicen que Saúl ha pasado por Carmelo. Suceso ancla: saul-levanta-un-monumento-en-carmelo
+    (reinado de Saúl, 1117-1078, estudio 3).'
+  sources:
+  - 1-samuel-15
+  - it-carmelo
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 6
+  place: guilgal
+  reference: 1Sa 15:12-33
+  date:
+    from: -1116
+    to: -1077
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1117 y 1078 a.e.c. (tiempo narrativo: en el reinado de Saúl, antes de la unción de David)'
+  note: Samuel le dice que Jehová ya no lo quiere por rey, y luego mata a Agag.
+  reason: '1Sa 15:12, 21, 33 lo sitúan en Guilgal, el del Jordán según Perspicacia «Guilgal». Suceso ancla: jehova-rechaza-a-saul-como-rey
+    (reinado de Saúl, 1117-1078, estudio 3).'
+  sources:
+  - 1-samuel-15
+  - it-guilgal
+  - it-samuel
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 7
+  place: guibea-de-benjamin
+  reference: 1Sa 15:34
+  date:
+    from: -1116
+    to: -1077
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1117 y 1078 a.e.c. (tiempo narrativo: en el reinado de Saúl, antes de la unción de David)'
+  note: Llegada. Guibeá de Saúl, su casa.
+  reason: '1Sa 15:34 dice que Saúl sube a su casa en Guibeá de Saúl. Suceso ancla: samuel-se-separa-de-saul (reinado de Saúl,
+    1117-1078, estudio 3).'
+  sources:
+  - 1-samuel-15
+  - it-guibeah
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified

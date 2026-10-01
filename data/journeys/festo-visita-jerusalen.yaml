@@ -1,0 +1,82 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: festo-visita-jerusalen
+name: Festo sube a Jerusalén
+person: festo
+reference: Hch 25:1-12
+date:
+  from: 58
+  to: 58
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 58 e.c.
+companions: []
+summary: A los tres días de tomar posesión, el gobernador Festo sube de Cesarea a Jerusalén, donde los jefes judíos le piden
+  a Pablo. De vuelta en Cesarea lo juzga y Pablo apela a César.
+reason: Sucesos festo-sube-a-jerusalen y pablo-apela-a-cesar, c. 58. La nota de estudio de Hch 25:1 explica que Cesarea era
+  la residencia del gobernador.
+sources:
+- hch-25
+- nota-hechos-25
+- it-festo
+checked_on: '2026-09-30'
+status: verified
+stops:
+- order: 1
+  place: cesarea
+  reference: Hch 25:1
+  date:
+    from: 58
+    to: 58
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 58 e.c.
+  note: Allí residía el gobernador de Judea.
+  reason: 'Hch 25:1 y su nota de estudio: llega a la provincia, que gobernaba desde Cesarea, y a los tres días se pone en
+    camino. Suceso festo-sube-a-jerusalen.'
+  sources:
+  - hch-25
+  - nota-hechos-25
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: jerusalen
+  reference: Hch 25:1-5
+  date:
+    from: 58
+    to: 58
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 58 e.c.
+  note: Le proponen traer a Pablo para tenderle una emboscada; él los cita en Cesarea.
+  reason: 'Hch 25:1-5: en Jerusalén los sacerdotes principales le presentan su acusación. Suceso festo-sube-a-jerusalen, c.
+    58.'
+  sources:
+  - hch-25
+  - it-festo
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: cesarea
+  reference: Hch 25:6-12
+  date:
+    from: 58
+    to: 58
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 58 e.c.
+  note: Pasó en Jerusalén unos ocho o diez días.
+  reason: 'Hch 25:6-12: vuelve a Cesarea, al día siguiente se sienta en el tribunal y Pablo apela a César. Suceso pablo-apela-a-cesar,
+    c. 58.'
+  sources:
+  - hch-25
+  - it-festo
+  checked_on: '2026-09-30'
+  status: verified

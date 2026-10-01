@@ -1,0 +1,115 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: joab-persigue-a-seba
+name: Joab persigue a Seba
+person: joab-hijo-de-zeruya
+reference: 2Sa 20:4-22
+date:
+  from: -1069
+  to: -1039
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1070 y c. 1040 a.e.c. (tiempo narrativo: tras la rebelión de Absalón, con David ya rey en Jerusalén)'
+companions:
+- abisai
+summary: Los hombres de Joab salen de Jerusalén tras Seba. Junto a la gran piedra de Gabaón, Joab mata a Amasá. Sigue a Seba
+  hasta Abel de Bet-Maacá y, cuando la ciudad le entrega su cabeza, vuelve al rey.
+reason: '2Sa 20:4-22; David da la orden a Abisái, y Joab y él persiguen juntos a Seba (20:6, 10). Perspicacia «Joab», núm.
+  2, y «Abel-bet-maacá». Sin año: entre 1070 y c. 1040 a.e.c.'
+sources:
+- 2-samuel-20
+- it-abel-bet-maaca
+- it-seba
+- it-joab
+- it-amasa
+- si-3
+- tnm-tabla
+checked_on: '2026-09-30'
+status: verified
+narrative_order:
+  series: joab-hijo-de-zeruya
+  order: 4
+stops:
+- order: 1
+  place: jerusalen
+  reference: 2Sa 20:6, 7
+  date:
+    from: -1069
+    to: -1039
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1070 y c. 1040 a.e.c. (tiempo narrativo: tras la rebelión de Absalón, con David ya rey en Jerusalén)'
+  note: null
+  reason: '2Sa 20:7: los hombres de Joab y los guerreros salen de Jerusalén tras Seba. Fecha: la del suceso joab-mata-a-amasa.'
+  sources:
+  - 2-samuel-20
+  - it-joab
+  - si-3
+  - tnm-tabla
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: gabaon
+  reference: 2Sa 20:8-13
+  date:
+    from: -1069
+    to: -1039
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1070 y c. 1040 a.e.c. (tiempo narrativo: tras la rebelión de Absalón, con David ya rey en Jerusalén)'
+  note: Junto a la gran piedra, Joab mata a Amasá.
+  reason: '2Sa 20:8-10: cerca de la gran piedra de Gabaón les sale al paso Amasá. Fecha: la del suceso joab-mata-a-amasa.'
+  sources:
+  - 2-samuel-20
+  - it-amasa
+  - it-joab
+  - si-3
+  - tnm-tabla
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: abel-de-bet-maaca
+  reference: 2Sa 20:14-22
+  date:
+    from: -1069
+    to: -1039
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1070 y c. 1040 a.e.c. (tiempo narrativo: tras la rebelión de Absalón, con David ya rey en Jerusalén)'
+  note: Seba había cruzado todas las tribus hasta allí; una mujer sabia trata con Joab.
+  reason: '2Sa 20:14-22: Joab cerca Abel de Bet-Maacá y la ciudad le arroja la cabeza de Seba. Fecha: la del suceso joab-sitia-abel-de-bet-maaca.'
+  sources:
+  - 2-samuel-20
+  - it-abel-bet-maaca
+  - it-seba
+  - si-3
+  - tnm-tabla
+  checked_on: '2026-09-30'
+  status: verified
+- order: 4
+  place: jerusalen
+  reference: 2Sa 20:22
+  date:
+    from: -1069
+    to: -1039
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1070 y c. 1040 a.e.c. (tiempo narrativo: tras la rebelión de Absalón, con David ya rey en Jerusalén)'
+  note: null
+  reason: '2Sa 20:22: acabada la rebelión, Joab vuelve al rey en Jerusalén. Fecha: la del suceso joab-sitia-abel-de-bet-maaca.'
+  sources:
+  - 2-samuel-20
+  - it-joab
+  - si-3
+  - tnm-tabla
+  checked_on: '2026-09-30'
+  status: verified

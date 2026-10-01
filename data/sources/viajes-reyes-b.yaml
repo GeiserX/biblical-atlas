@@ -1,0 +1,29 @@
+# biblical-atlas: fuentes del carril «viajes-reyes-b» (viajes de 2 Reyes 8-25, 2 Crónicas 21-36, 1 Crónicas 4-5, Jonás y Amós). Esquema en docs/investigacion/README.md.
+it-beerah:
+  title: Beerah
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Beerah/
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
+it-mesobab:
+  title: Mesobab
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Mesobab/
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
+it-pelatias:
+  title: Pelatías
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Pelat%C3%ADas/
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
+it-hara:
+  title: Hará
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Har%C3%A1/
+  level: 1
+  published: null
+  checked_on: '2026-09-30'

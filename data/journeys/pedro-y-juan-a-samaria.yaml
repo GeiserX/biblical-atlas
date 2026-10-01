@@ -1,0 +1,82 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: pedro-y-juan-a-samaria
+name: Pedro y Juan en Samaria
+person: pedro
+reference: Hch 8:14-25
+date:
+  from: 33
+  to: 36
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 33 y 36 e.c. (tiempo narrativo: después de la muerte de Esteban y antes de la visita a Cornelio)'
+narrative_order:
+  series: pedro
+  order: 2
+companions:
+- juan-apostol
+summary: Los apóstoles envían a Pedro y a Juan a Samaria para que los nuevos creyentes reciban espíritu santo. Rechazan el
+  dinero de Simón y vuelven a Jerusalén predicando en muchas aldeas samaritanas.
+reason: Hch 8:14 y 25 dan la ida y la vuelta. Fecha del suceso pedro-y-juan-en-samaria.
+sources:
+- hechos-8
+- it-pedro
+- bt-7
+checked_on: '2026-09-30'
+status: verified
+stops:
+- order: 1
+  place: jerusalen
+  reference: Hch 8:14
+  date:
+    from: 33
+    to: 36
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 33 y 36 e.c. (tiempo narrativo: después de la muerte de Esteban y antes de la visita a Cornelio)'
+  note: null
+  reason: 'Hch 8:14: los apóstoles que están en Jerusalén envían a Pedro y a Juan. Fecha del suceso pedro-y-juan-en-samaria.'
+  sources:
+  - hechos-8
+  - bt-7
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: region-de-samaria
+  reference: Hch 8:14-24
+  date:
+    from: 33
+    to: 36
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 33 y 36 e.c. (tiempo narrativo: después de la muerte de Esteban y antes de la visita a Cornelio)'
+  note: El mismo lugar que el suceso.
+  reason: 'Hch 8:14-17: llegan a Samaria e imponen las manos a los bautizados. Lugar y fecha del suceso pedro-y-juan-en-samaria.'
+  sources:
+  - hechos-8
+  - bt-7
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: jerusalen
+  reference: Hch 8:25
+  date:
+    from: 33
+    to: 36
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 33 y 36 e.c. (tiempo narrativo: después de la muerte de Esteban y antes de la visita a Cornelio)'
+  note: Predican en muchas aldeas de samaritanos por el camino.
+  reason: Hch 8:25 dice que regresan a Jerusalén. Fecha del suceso pedro-y-juan-en-samaria.
+  sources:
+  - hechos-8
+  - bt-7
+  checked_on: '2026-09-30'
+  status: verified

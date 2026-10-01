@@ -1,0 +1,75 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: baruc-hijo-de-nerias
+name: Baruc
+names:
+- name: Baruc
+perspicacia: 1200000571#1
+disambiguation: El secretario de Jeremías, hijo de Nerías; no los Baruc de los días de Nehemías (Perspicacia, núm. 2 a 4).
+date:
+  from: -624
+  to: -606
+  precision: range
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 625-607 a.e.c.
+summary: Secretario de Jeremías. Escribió dos veces el rollo que el profeta le dictaba, lo leyó en el templo, guardó la escritura
+  del campo de Anatot y acabó llevado a Egipto con él.
+reason: 'Perspicacia «Baruc», núm. 1: fecha su trabajo desde 625 a.e.c.; Jer 32:12-16; 36:4-32; 43:6, 7; 45:1-5.'
+sources:
+- it-baruc
+- jeremias-32
+- jeremias-36
+- jeremias-43
+- jeremias-45
+links:
+- title: 'Perspicacia: «Baruc»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Baruc/
+  type: perspicacia
+- title: Jeremías 36 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/36/
+  type: bible
+relations:
+- type: kin
+  person: seraya-hijo-de-nerias
+  word: brother
+  inferred: true
+  sources:
+  - jeremias-32
+  - jeremias-51
+  - it-baruc
+  - it-seraya
+  reason: Jer 32:12 y 51:59 dan a los dos por hijos de Nerías y nietos del mismo abuelo; Perspicacia «Baruc», núm. 1, los
+    llama hermanos.
+  checked_on: '2026-09-30'
+  status: verified
+- type: accompanies
+  person: jeremias-profeta
+  word: fellow_worker
+  date:
+    from: -624
+    to: -606
+    precision: range
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 625-607 a.e.c.
+  inferred: false
+  sources:
+  - jeremias-36
+  - jeremias-43
+  - it-baruc
+  reason: 'Jer 36:4 y 43:6: escribe lo que Jeremías le dicta y va con él hasta Egipto. Perspicacia lo presenta como su secretario.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: lived_in
+  place: egipto
+  inferred: false
+  sources:
+  - jeremias-43
+  - it-baruc
+  reason: 'Jer 43:6, 7: los que huyen se lo llevan con Jeremías a Egipto, hasta Tahpanhés.'
+  checked_on: '2026-09-30'
+  status: verified
+checked_on: '2026-09-30'
+status: verified

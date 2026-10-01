@@ -1,0 +1,28 @@
+# biblical-atlas: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: lugar-de-hospedaje-de-kimham
+name: Lugar de hospedaje de Kimham
+names:
+- name: Lugar de hospedaje de Kimham
+type: region
+lat: 31.704306
+lon: 35.207639
+precision: uncertain
+coord_source: openbible:a1c28f1
+coord_url: https://www.openbible.info/geo/ancient/a1c28f1/geruth-chimham
+coord_note: OpenBible solo lo pone a menos de 5 km de Belén, como el texto; su punto es aproximado y representa esa zona.
+summary: Parada cerca de Belén donde el resto de Judá se detuvo en 607 a.e.c., camino de Egipto. No se sabe si el nombre viene
+  del Kimham de los días de David.
+reason: 'Jer 41:17 lo sitúa cerca de Belén. Perspicacia «Kimham» no sabe a qué Kimham alude. OpenBible: solo tomamos el punto.'
+sources:
+- it-kimham
+- openbible-geo
+- jeremias-41
+links:
+- title: 'Perspicacia: «Kimham»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Kimham/
+  type: perspicacia
+- title: Jeremías 41 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/41/
+  type: bible
+checked_on: '2026-09-30'
+status: verified

@@ -1,0 +1,259 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: censo-de-david
+name: Joab hace el censo de Israel
+person: joab-hijo-de-zeruya
+reference: 2Sa 24:2-9; 1Cr 21:2-5
+date:
+  from: -1069
+  to: -1039
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1070 y c. 1040 a.e.c. (tiempo narrativo: hacia el final del reinado de David)'
+companions: []
+summary: Por orden de David, Joab y los jefes del ejército cruzan el Jordán, empiezan en Aroer, suben por Gad y Galaad hasta
+  Dan-Jaán, giran hacia Sidón y Tiro, bajan a Beer-Seba y vuelven a Jerusalén.
+reason: '2Sa 24:2-9 y 1Cr 21:2-5 dan la ruta. Perspicacia «Aroer», núm. 1: al parecer el censo empezó allí; «Inscripción»:
+  a finales del reinado. Sin año: entre 1070 y c. 1040 a.e.c. (estudio 3).'
+sources:
+- 2-samuel-24
+- 1-cronicas-21
+- it-inscripcion
+- it-gad
+- it-aroer
+- it-joab
+- si-3
+checked_on: '2026-09-30'
+status: verified
+narrative_order:
+  series: joab-hijo-de-zeruya
+  order: 5
+stops:
+- order: 1
+  place: jerusalen
+  reference: 2Sa 24:2-4
+  date:
+    from: -1069
+    to: -1039
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1070 y c. 1040 a.e.c. (tiempo narrativo: hacia el final del reinado de David)'
+  note: Joab se opone, pero el rey insiste.
+  reason: '2Sa 24:2-4: Joab y los jefes salen de delante del rey. Fecha: la del suceso david-manda-censar-a-israel-y-a-juda.'
+  sources:
+  - 2-samuel-24
+  - 1-cronicas-21
+  - it-inscripcion
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: rio-jordan
+  reference: 2Sa 24:5
+  date:
+    from: -1069
+    to: -1039
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1070 y c. 1040 a.e.c. (tiempo narrativo: hacia el final del reinado de David)'
+  note: null
+  reason: '2Sa 24:5: cruzan el Jordán. Fecha: la del suceso david-manda-censar-a-israel-y-a-juda.'
+  sources: &id001
+  - 2-samuel-24
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: aroer
+  reference: 2Sa 24:5
+  date:
+    from: -1069
+    to: -1039
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1070 y c. 1040 a.e.c. (tiempo narrativo: hacia el final del reinado de David)'
+  note: El campamento queda al lado de una ciudad del valle que no se nombra.
+  reason: '2Sa 24:5: acampan en Aroer; Perspicacia «Aroer», núm. 1, pone allí el comienzo del censo. Fecha: la del suceso
+    david-manda-censar-a-israel-y-a-juda.'
+  sources:
+  - 2-samuel-24
+  - si-3
+  - it-aroer
+  checked_on: '2026-09-30'
+  status: verified
+- order: 4
+  place: gad
+  reference: 2Sa 24:5
+  date:
+    from: -1069
+    to: -1039
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1070 y c. 1040 a.e.c. (tiempo narrativo: hacia el final del reinado de David)'
+  note: La tierra de los gaditas.
+  reason: '2Sa 24:5: de allí van hacia el territorio de Gad. Fecha: la del suceso david-manda-censar-a-israel-y-a-juda.'
+  sources: *id001
+  checked_on: '2026-09-30'
+  status: verified
+- order: 5
+  place: jazer
+  reference: 2Sa 24:5
+  date:
+    from: -1069
+    to: -1039
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1070 y c. 1040 a.e.c. (tiempo narrativo: hacia el final del reinado de David)'
+  note: null
+  reason: '2Sa 24:5: luego llegan a Jazer. Fecha: la del suceso david-manda-censar-a-israel-y-a-juda.'
+  sources: *id001
+  checked_on: '2026-09-30'
+  status: verified
+- order: 6
+  place: galaad
+  reference: 2Sa 24:6
+  date:
+    from: -1069
+    to: -1039
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1070 y c. 1040 a.e.c. (tiempo narrativo: hacia el final del reinado de David)'
+  note: null
+  reason: '2Sa 24:6: después van a Galaad. Fecha: la del suceso david-manda-censar-a-israel-y-a-juda.'
+  sources: *id001
+  checked_on: '2026-09-30'
+  status: verified
+- order: 7
+  place: tahtim-hodsi
+  reference: 2Sa 24:6
+  date:
+    from: -1069
+    to: -1039
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1070 y c. 1040 a.e.c. (tiempo narrativo: hacia el final del reinado de David)'
+  note: Territorio sin ubicación segura.
+  reason: '2Sa 24:6: pasan por la tierra de Tahtim-Hodsí. Fecha: la del suceso david-manda-censar-a-israel-y-a-juda.'
+  sources: *id001
+  checked_on: '2026-09-30'
+  status: verified
+- order: 8
+  place: dan-jaan
+  reference: 2Sa 24:6
+  date:
+    from: -1069
+    to: -1039
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1070 y c. 1040 a.e.c. (tiempo narrativo: hacia el final del reinado de David)'
+  note: null
+  reason: '2Sa 24:6: siguen hasta Dan-Jaán. Fecha: la del suceso david-manda-censar-a-israel-y-a-juda.'
+  sources: *id001
+  checked_on: '2026-09-30'
+  status: verified
+- order: 9
+  place: sidon
+  reference: 2Sa 24:6
+  date:
+    from: -1069
+    to: -1039
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1070 y c. 1040 a.e.c. (tiempo narrativo: hacia el final del reinado de David)'
+  note: El texto dice que giran hacia Sidón.
+  reason: '2Sa 24:6 dice que giran hacia Sidón; Perspicacia «Aroer», núm. 1, cuenta Sidón en el recorrido del censo. Fecha:
+    la del suceso david-manda-censar-a-israel-y-a-juda.'
+  sources:
+  - 2-samuel-24
+  - si-3
+  - it-aroer
+  checked_on: '2026-09-30'
+  status: verified
+- order: 10
+  place: tiro
+  reference: 2Sa 24:7
+  date:
+    from: -1069
+    to: -1039
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1070 y c. 1040 a.e.c. (tiempo narrativo: hacia el final del reinado de David)'
+  note: La fortaleza de Tiro y las ciudades de heveos y cananeos.
+  reason: '2Sa 24:7: van a la fortaleza de Tiro. Fecha: la del suceso david-manda-censar-a-israel-y-a-juda.'
+  sources: *id001
+  checked_on: '2026-09-30'
+  status: verified
+- order: 11
+  place: negueb
+  reference: 2Sa 24:7
+  date:
+    from: -1069
+    to: -1039
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1070 y c. 1040 a.e.c. (tiempo narrativo: hacia el final del reinado de David)'
+  note: El Négueb de Judá.
+  reason: '2Sa 24:7: terminan en el Négueb de Judá. Fecha: la del suceso david-manda-censar-a-israel-y-a-juda.'
+  sources: *id001
+  checked_on: '2026-09-30'
+  status: verified
+- order: 12
+  place: beer-seba
+  reference: 2Sa 24:7
+  date:
+    from: -1069
+    to: -1039
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1070 y c. 1040 a.e.c. (tiempo narrativo: hacia el final del reinado de David)'
+  note: null
+  reason: '2Sa 24:7: el último lugar del recorrido es Beer-Seba. Fecha: la del suceso david-manda-censar-a-israel-y-a-juda.'
+  sources: *id001
+  checked_on: '2026-09-30'
+  status: verified
+- order: 13
+  place: jerusalen
+  reference: 2Sa 24:8, 9
+  date:
+    from: -1069
+    to: -1039
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1070 y c. 1040 a.e.c. (tiempo narrativo: hacia el final del reinado de David)'
+  note: Tras 9 meses y 20 días. Leví y Benjamín quedan sin contar (1Cr 21:6).
+  reason: '2Sa 24:8, 9 y 1Cr 21:4: recorren todo el país y regresan a Jerusalén, donde Joab da las cifras al rey. Fecha: la
+    del suceso david-manda-censar-a-israel-y-a-juda.'
+  sources:
+  - 2-samuel-24
+  - 1-cronicas-21
+  - it-inscripcion
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified

@@ -15,8 +15,6 @@ companions:
 - silas
 - timoteo
 - lucas
-- aquila
-- priscila
 summary: Con Silas visita de nuevo Galacia, suma a Timoteo en Listra, cruza a Macedonia desde Troas (Lucas se une
   allí) y pasa 18 meses en Corinto. Áquila y Priscila lo acompañan de Cencreas a Éfeso.
 reason: El estudio 3 (párr. 24 y 25) fecha la salida a finales del verano de 49, el paso a Europa en la primavera
@@ -36,6 +34,9 @@ history:
   change: 'Las paradas que heredaban c. 49-52 se acotan con el estudio 3: invierno de 49-50 en Asia Menor, 50 en Macedonia
     y Grecia, 52 a la vuelta. Siria y Galacia van en las notas de Cilicia y Frigia.'
   source: si-3
+- date: '2026-09-30'
+  change: 'Áquila y Priscila salen de companions: solo van de Corinto a Éfeso, tramo que ya cuenta su viaje viajes-de-aquila-y-priscila.'
+  source: hch-18
 checked_on: '2026-09-29'
 status: verified
 stops:

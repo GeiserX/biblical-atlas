@@ -1,0 +1,70 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: acab-baja-a-la-vina-de-nabot
+name: Acab baja a la viña de Nabot
+person: acab
+reference: 1Re 21:16-29
+date:
+  from: -923
+  to: -920
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre c. 924 y c. 921 a.e.c. (tiempo narrativo: en los tres años de paz tras Afec, unos tres años antes de morir
+    Acab)'
+narrative_order:
+  series: acab
+  order: 1
+companions: []
+summary: Cuando Jezabel le dice que Nabot ha muerto apedreado, Acab baja a Jezreel para quedarse con su viña. Allí lo encuentra
+  Elías, que anuncia el fin de su casa, y Acab se humilla.
+reason: 1Re 21:16-20 cuenta la bajada y el encuentro. Fecha del suceso elias-condena-a-acab-por-la-vina-de-nabot.
+sources:
+- 1-reyes-21
+- it-acab
+- it-nabot
+- tnm-a6-a
+checked_on: '2026-09-30'
+status: verified
+stops:
+- order: 1
+  place: samaria
+  reference: 1Re 21:18
+  date:
+    from: -923
+    to: -920
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre c. 924 y c. 921 a.e.c. (tiempo narrativo: en los tres años de paz tras Afec, unos tres años antes de morir
+      Acab)'
+  note: Su capital; el texto dice que el rey está en Samaria.
+  reason: 1Re 21:18 llama a Acab rey que está en Samaria, con referencia a 1Re 16:29. Que saliera de allí es deducción nuestra.
+    Fecha del suceso elias-condena-a-acab-por-la-vina-de-nabot.
+  sources:
+  - 1-reyes-21
+  - it-acab
+  - tnm-a6-a
+  checked_on: '2026-09-30'
+  status: pending
+- order: 2
+  place: jezreel
+  reference: 1Re 21:16-24
+  date:
+    from: -923
+    to: -920
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre c. 924 y c. 921 a.e.c. (tiempo narrativo: en los tres años de paz tras Afec, unos tres años antes de morir
+      Acab)'
+  note: Elías lo encuentra en la viña.
+  reason: '1Re 21:1, 16: la viña estaba en Jezreel y Acab bajó a ella. Fecha del suceso elias-condena-a-acab-por-la-vina-de-nabot.'
+  sources:
+  - 1-reyes-21
+  - it-nabot
+  - tnm-a6-a
+  checked_on: '2026-09-30'
+  status: verified

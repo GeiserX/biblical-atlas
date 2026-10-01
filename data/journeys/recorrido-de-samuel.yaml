@@ -1,0 +1,128 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: recorrido-de-samuel
+name: Recorrido anual de Samuel
+person: samuel
+reference: 1Sa 7:15-17
+date:
+  from: -1172
+  to: -1079
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre c. 1173 y c. 1080 a.e.c. (tiempo narrativo: desde la victoria de Mizpá hasta su muerte)'
+companions: []
+summary: Cada año Samuel sale de su casa en Ramá, juzga a Israel en Betel, Guilgal y Mizpá y vuelve a Ramá, donde también
+  juzga. Es un circuito que repite toda su vida.
+reason: '1 Samuel 7:15-17 da el orden. Perspicacia «Samuel», párr. 7, describe el mismo circuito. Sin año en jw.org: desde
+  la victoria de Mizpá hasta la muerte de Samuel, antes de c. 1080.'
+sources:
+- 1-samuel-7
+- it-samuel
+- it-rama
+- it-guilgal
+- si-3
+checked_on: '2026-09-30'
+status: verified
+narrative_order:
+  series: samuel
+  order: 1
+stops:
+- order: 1
+  place: ramataim-zofim
+  reference: 1Sa 7:17
+  date:
+    from: -1172
+    to: -1079
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre c. 1173 y c. 1080 a.e.c. (tiempo narrativo: desde la victoria de Mizpá hasta su muerte)'
+  note: Salida. Su casa, donde también juzga y tiene un altar.
+  reason: '1Sa 7:17 dice que después vuelve a Ramá porque allí está su casa. Suceso ancla: samuel-juzga-a-israel-en-su-recorrido-anual
+    (tiempo narrativo, hasta su muerte antes de c. 1080).'
+  sources:
+  - 1-samuel-7
+  - it-samuel
+  - it-rama
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: betel
+  reference: 1Sa 7:16
+  date:
+    from: -1172
+    to: -1079
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre c. 1173 y c. 1080 a.e.c. (tiempo narrativo: desde la victoria de Mizpá hasta su muerte)'
+  note: null
+  reason: '1Sa 7:16 nombra Betel en primer lugar de su recorrido anual. Suceso ancla: samuel-juzga-a-israel-en-su-recorrido-anual
+    (tiempo narrativo, hasta su muerte antes de c. 1080).'
+  sources:
+  - 1-samuel-7
+  - it-samuel
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: guilgal
+  reference: 1Sa 7:16
+  date:
+    from: -1172
+    to: -1079
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre c. 1173 y c. 1080 a.e.c. (tiempo narrativo: desde la victoria de Mizpá hasta su muerte)'
+  note: Perspicacia «Guilgal» no sabe si es el del Jordán o otro del mismo nombre; la ficha es la del Jordán.
+  reason: '1Sa 7:16 nombra Guilgal en segundo lugar. Perspicacia «Guilgal», núm. 1, deja abierta la identificación, y el suceso
+    ancla no lo pone entre sus lugares. Suceso ancla: samuel-juzga-a-israel-en-su-recorrido-anual (tiempo narrativo, hasta
+    su muerte antes de c. 1080).'
+  sources:
+  - 1-samuel-7
+  - it-guilgal
+  checked_on: '2026-09-30'
+  status: pending
+- order: 4
+  place: mizpa-de-benjamin
+  reference: 1Sa 7:16
+  date:
+    from: -1172
+    to: -1079
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre c. 1173 y c. 1080 a.e.c. (tiempo narrativo: desde la victoria de Mizpá hasta su muerte)'
+  note: null
+  reason: '1Sa 7:16 nombra Mizpá en tercer lugar. Suceso ancla: samuel-juzga-a-israel-en-su-recorrido-anual (tiempo narrativo,
+    hasta su muerte antes de c. 1080).'
+  sources:
+  - 1-samuel-7
+  - it-samuel
+  checked_on: '2026-09-30'
+  status: verified
+- order: 5
+  place: ramataim-zofim
+  reference: 1Sa 7:17
+  date:
+    from: -1172
+    to: -1079
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre c. 1173 y c. 1080 a.e.c. (tiempo narrativo: desde la victoria de Mizpá hasta su muerte)'
+  note: Llegada. El recorrido se repite cada año.
+  reason: '1Sa 7:17: vuelve a Ramá al acabar la vuelta. Suceso ancla: samuel-juzga-a-israel-en-su-recorrido-anual (tiempo
+    narrativo, hasta su muerte antes de c. 1080).'
+  sources:
+  - 1-samuel-7
+  - it-samuel
+  - it-rama
+  checked_on: '2026-09-30'
+  status: verified

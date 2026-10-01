@@ -1,0 +1,50 @@
+# biblical-atlas: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: hara
+name: Hará
+names:
+- name: Hará
+type: region
+lat: null
+lon: null
+precision: uncertain
+coord_source: null
+coord_url: null
+candidates:
+- name: Montes de los medos, al este del valle del Tigris
+  geometry:
+    type: zone
+    lat: 34.8065
+    lon: 48.516247
+    radius_km: 250
+  checked_on: '2026-09-30'
+  status: alternative
+  sources:
+  - it-hara
+  - it-medos
+  - openbible-geo
+  reason: Perspicacia recoge que muchos eruditos leen aquí «los montes de los medos», como la Septuaginta en 2Re 17:6, y que
+    entonces Hará estaría al este del Tigris.
+  coord_source: openbible:ad2fadf
+  coord_url: https://www.openbible.info/geo/ancient/ad2fadf/media
+  note: 'Centro: el punto de Ecbátana que OpenBible da a Media. El radio de 250 km es nuestro, para abarcar las montañas
+    entre el Tigris y la meseta meda.'
+summary: Uno de los sitios adonde Tiglat-Piléser III llevó desterradas a las tribus del este del Jordán (Rubén, Gad y medio
+  Manasés). No se sabe dónde estaba; quizá el nombre venga de la palabra para «montaña».
+reason: 'Perspicacia «Hará»; 1Cr 5:26. Solo un candidato con zona: la otra opinión que recoge, una región montañosa de Turquía,
+  no da sitio que dibujar.'
+sources:
+- it-hara
+- it-medos
+- openbible-geo
+- 1-cronicas-5
+links:
+- title: 'Perspicacia: «Hará»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Har%C3%A1/
+  type: perspicacia
+- title: 1 Crónicas 5 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/1-Cr%C3%B3nicas/5/
+  type: bible
+checked_on: '2026-09-30'
+status: pending
+not_claimed:
+- 'Que Hará sea un lugar de Turquía: Perspicacia solo dice que lo creen quienes toman Gozán por una población y no por un río.'

@@ -1,0 +1,70 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: eliseo-va-a-sunem
+name: Eliseo va a Sunem
+person: eliseo
+reference: 2Re 4:25-37
+date:
+  from: -916
+  to: -904
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre c. 917 y c. 905 a.e.c. (tiempo narrativo: antes de que Guehazí se lo contara a Jehoram)'
+narrative_order:
+  series: eliseo
+  order: 2
+companions:
+- guehazi
+summary: Muerto su hijo, la sunamita va a buscar a Eliseo al monte Carmelo. Él manda por delante a Guehazí con su bastón,
+  va con ella a Sunem y, tras orar, devuelve la vida al niño.
+reason: '2Re 4:25-37: del Carmelo a la casa de la sunamita en Sunem (2Re 4:8). Fecha del suceso eliseo-resucita-al-hijo-de-la-sunamita.'
+sources:
+- 2-reyes-4
+- it-eliseo
+- it-sunamita
+- it-sunem
+- it-guehazi
+- tnm-a6-a
+checked_on: '2026-09-30'
+status: verified
+stops:
+- order: 1
+  place: monte-carmelo
+  reference: 2Re 4:25-30
+  date:
+    from: -916
+    to: -904
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre c. 917 y c. 905 a.e.c. (tiempo narrativo: antes de que Guehazí se lo contara a Jehoram)'
+  note: La mujer lo encuentra en la montaña.
+  reason: 2Re 4:25 pone a Eliseo en el monte Carmelo. Fecha del suceso eliseo-resucita-al-hijo-de-la-sunamita.
+  sources:
+  - 2-reyes-4
+  - it-sunamita
+  - tnm-a6-a
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: sunem
+  reference: 2Re 4:31-37
+  date:
+    from: -916
+    to: -904
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre c. 917 y c. 905 a.e.c. (tiempo narrativo: antes de que Guehazí se lo contara a Jehoram)'
+  note: Guehazí llega antes, pero el niño no reacciona.
+  reason: 2Re 4:8 sitúa la casa en Sunem y 4:30-32 lleva allí a Eliseo. Fecha del suceso eliseo-resucita-al-hijo-de-la-sunamita.
+  sources:
+  - 2-reyes-4
+  - it-sunem
+  - it-guehazi
+  - tnm-a6-a
+  checked_on: '2026-09-30'
+  status: verified

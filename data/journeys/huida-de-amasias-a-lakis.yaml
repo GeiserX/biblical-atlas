@@ -1,0 +1,85 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: huida-de-amasias-a-lakis
+name: Amasías huye a Lakís
+person: amasias
+reference: 2Re 14:19, 20; 2Cr 25:27, 28
+date:
+  from: -828
+  to: -828
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 829 a.e.c.
+companions: []
+summary: Cuando en Jerusalén traman una conspiración contra él, Amasías escapa a Lakís. Van tras él y lo matan allí; traen
+  su cuerpo a caballo y lo entierran en la Ciudad de David.
+reason: 2Re 14:19, 20 y 2Cr 25:27, 28 dan la salida, Lakís y la vuelta. Fecha del suceso conspiradores-matan-a-amasias-en-lakis.
+sources:
+- 2-reyes-14
+- 2-cronicas-25
+- it-amasias
+- it-lakis
+- si-3
+- tnm-a6-a
+checked_on: '2026-09-30'
+status: verified
+narrative_order:
+  series: amasias
+  order: 2
+stops:
+- order: 1
+  place: jerusalen
+  reference: 2Re 14:19; 2Cr 25:27
+  date:
+    from: -828
+    to: -828
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 829 a.e.c.
+  note: 'Salida: la conspiración se trama en la ciudad.'
+  reason: '2Re 14:19: conspiran contra él en Jerusalén. Suceso conspiradores-matan-a-amasias-en-lakis.'
+  sources:
+  - 2-reyes-14
+  - 2-cronicas-25
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: lakis
+  reference: 2Re 14:19; 2Cr 25:27
+  date:
+    from: -828
+    to: -828
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 829 a.e.c.
+  note: Lo matan allí los hombres enviados tras él.
+  reason: '2Re 14:19: huye a Lakís y allí lo matan. Mismo suceso ancla.'
+  sources:
+  - 2-reyes-14
+  - it-lakis
+  - it-amasias
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: jerusalen
+  reference: 2Re 14:20; 2Cr 25:28
+  date:
+    from: -828
+    to: -828
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 829 a.e.c.
+  note: Vuelve muerto, llevado a caballo.
+  reason: '2Re 14:20: lo traen a caballo y lo entierran en Jerusalén. Mismo suceso ancla.'
+  sources:
+  - 2-reyes-14
+  - 2-cronicas-25
+  checked_on: '2026-09-30'
+  status: verified

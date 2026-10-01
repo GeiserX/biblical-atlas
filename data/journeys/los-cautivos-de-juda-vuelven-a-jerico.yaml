@@ -1,0 +1,82 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: los-cautivos-de-juda-vuelven-a-jerico
+name: Los cautivos de Judá vuelven a Jericó
+person: azarias-hijo-de-jehohanan
+reference: 2Cr 28:5-15
+date:
+  from: -761
+  to: -757
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 762 y c. 758 a.e.c. (tiempo narrativo: ya reina Acaz y vive aún Pécah)'
+companions: []
+summary: Israel trae a Samaria 200.000 cautivos de Judá. Tras oír al profeta Oded, Azarías y otros tres jefes de Efraín rechazan
+  quedárselos; los visten, les dan de comer, suben a los débiles en burros y los llevan a Jericó.
+reason: '2Cr 28:5-15; Perspicacia «Azarías», núm. 15, lo pone entre los que liberaron a los cautivos. Fecha del suceso rezin-y-pecah-sitian-jerusalen:
+  reinan Acaz y Pécah.'
+sources:
+- 2-cronicas-28
+- it-azarias
+- it-peqah
+- tnm-a6-b
+checked_on: '2026-09-30'
+status: verified
+stops:
+- order: 1
+  place: samaria
+  reference: 2Cr 28:8-14
+  date:
+    from: -761
+    to: -757
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 762 y c. 758 a.e.c. (tiempo narrativo: ya reina Acaz y vive aún Pécah)'
+  note: Oded sale al encuentro del ejército. Con Azarías están Berekías, Jehizquías y Amasá, que no tienen ficha.
+  reason: '2Cr 28:9-12: Azarías y los otros jefes se enfrentan en Samaria a los que traen a los cautivos. Fecha del suceso
+    rezin-y-pecah-sitian-jerusalen.'
+  sources:
+  - 2-cronicas-28
+  - it-azarias
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: jerico
+  reference: 2Cr 28:15
+  date:
+    from: -761
+    to: -757
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 762 y c. 758 a.e.c. (tiempo narrativo: ya reina Acaz y vive aún Pécah)'
+  note: La ciudad de las palmeras.
+  reason: '2Cr 28:15: los hombres escogidos por nombre llevan a los cautivos a Jericó. Que Azarías fuera con ellos es probable,
+    no seguro. Mismo suceso ancla.'
+  sources:
+  - 2-cronicas-28
+  - it-azarias
+  checked_on: '2026-09-30'
+  status: pending
+- order: 3
+  place: samaria
+  reference: 2Cr 28:15
+  date:
+    from: -761
+    to: -757
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 762 y c. 758 a.e.c. (tiempo narrativo: ya reina Acaz y vive aún Pécah)'
+  note: null
+  reason: '2Cr 28:15: después vuelven a Samaria. Como en la parada anterior, que Azarías fuera con ellos no es seguro. Mismo
+    suceso ancla.'
+  sources:
+  - 2-cronicas-28
+  checked_on: '2026-09-30'
+  status: pending

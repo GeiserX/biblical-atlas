@@ -1,0 +1,91 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: pascua-de-30-y-judea
+name: A la Pascua de 30 y a la zona rural de Judea
+person: jesus
+reference: Jn 2:12–3:36
+date:
+  from: 29
+  to: 30
+  precision: range
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: de finales de 29 e.c. a 30 e.c.
+narrative_order:
+  series: jesus
+  order: 2
+companions: []
+summary: Desde Capernaúm sube a Jerusalén para la Pascua de 30, echa del templo a los comerciantes y habla de noche con Nicodemo.
+  Después pasa un tiempo en el campo de Judea, donde sus discípulos bautizan.
+reason: Jn 2:12, 13 y 3:22 dan el orden. Fechas de los sucesos primera-limpieza-del-templo, conversacion-con-nicodemo y ultimo-testimonio-de-juan
+  (tabla A7-B).
+sources:
+- juan-2
+- juan-3
+- tnm-a7-b
+- jy-cap-16
+- jy-cap-17
+- jy-cap-18
+checked_on: '2026-09-30'
+status: verified
+stops:
+- order: 1
+  place: capernaum
+  reference: Jn 2:12
+  date:
+    from: 29
+    to: 30
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: entre el otoño de 29 y la Pascua de 30 e.c. (tiempo narrativo)
+  note: null
+  reason: 'Jn 2:12 lo deja en Capernaúm, y Jn 2:13 lo hace subir a la Pascua. El texto no dice cuándo sale: tiempo narrativo
+    entre los sucesos boda-en-cana y primera-limpieza-del-templo.'
+  sources:
+  - juan-2
+  - tnm-a7-b
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: jerusalen
+  reference: Jn 2:13–3:21
+  date:
+    from: 30
+    to: 30
+    precision: month
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: Pascua de 30 e.c.
+    detail:
+      month: nisan
+  note: Limpia el templo y recibe de noche a Nicodemo.
+  reason: Jn 2:13 lo hace subir a Jerusalén cerca de la Pascua; la nota de estudio la identifica con la de 30. Fecha de los
+    sucesos primera-limpieza-del-templo y conversacion-con-nicodemo.
+  sources:
+  - juan-2
+  - juan-3
+  - tnm-a7-b
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: judea
+  reference: Jn 3:22-36
+  date:
+    from: 30
+    to: 30
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 30 e.c., tras la Pascua
+  note: La zona rural de Judea. Según Jn 4:2, bautizaban sus discípulos.
+  reason: 'Jn 3:22: después de esto va con sus discípulos al campo de Judea. Fecha del suceso ultimo-testimonio-de-juan.'
+  sources:
+  - juan-3
+  - tnm-a7-b
+  - jy-cap-18
+  checked_on: '2026-09-30'
+  status: verified

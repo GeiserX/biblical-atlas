@@ -1,0 +1,42 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: rehum-funcionario-persa
+name: Rehúm
+names:
+- name: Rehúm
+perspicacia: 1200003684#3
+disambiguation: El alto funcionario persa de Esd 4; no el Rehúm que volvió con Zorobabel ni el levita o el sacerdote del mismo
+  nombre.
+date:
+  from: -521
+  to: -521
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: 522 a.e.c.
+summary: Alto funcionario del gobierno persa al oeste del Éufrates. Con Simsái escribió a Artajerjes contra Jerusalén y, con
+  la respuesta del rey, fue allí a parar por la fuerza la obra.
+reason: Perspicacia «Rehúm», núm. 3; Esd 4:8-24. El estudio 3 fecha en 522 a.e.c. la prohibición de la obra.
+sources:
+- it-rehum
+- esdras-4
+- si-3
+links:
+- title: 'Perspicacia: «Rehúm»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Reh%C3%BAm/
+  type: perspicacia
+- title: Esdras 4 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/esdras/4/
+  type: bible
+relations:
+- type: lived_in
+  place: samaria
+  inferred: true
+  sources:
+  - esdras-4
+  - it-rehum
+  reason: Esd 4:17 pone en Samaria a sus compañeros; Perspicacia «Rehúm», núm. 3, cree probable que él viviera allí.
+  checked_on: '2026-09-30'
+  status: verified
+checked_on: '2026-09-30'
+status: verified

@@ -1,0 +1,63 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: onesiforo-busca-a-pablo
+name: Onesíforo busca a Pablo en Roma
+person: onesiforo
+reference: 2Ti 1:16-18; 4:19
+date:
+  from: 65
+  to: 65
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 65 e.c.
+companions: []
+summary: Cuando otros de Asia dejan solo a Pablo, Onesíforo lo busca por Roma hasta dar con él y lo anima sin avergonzarse
+  de sus cadenas, igual que lo había servido en Éfeso.
+reason: Perspicacia «Onesíforo» y la nota de estudio de 2Ti 1:17 ponen la búsqueda en el segundo encierro de Pablo; suceso
+  segundo-encierro-en-roma, c. 65.
+sources:
+- 2-timoteo-1
+- 2-timoteo-4
+- it-onesiforo
+checked_on: '2026-09-30'
+status: verified
+stops:
+- order: 1
+  place: efeso
+  reference: 2Ti 1:18; 4:19
+  date:
+    from: 65
+    to: 65
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 65 e.c.
+  note: Su casa estaba con Timoteo, en Éfeso.
+  reason: 2Ti 1:18 y 4:19 lo relacionan con Éfeso, pero el texto no dice de dónde partió; la nota de 2Ti 1:16 ni siquiera
+    sabe si fue por Pablo. Salida deducida.
+  sources:
+  - 2-timoteo-1
+  - 2-timoteo-4
+  - it-onesiforo
+  checked_on: '2026-09-30'
+  status: pending
+- order: 2
+  place: roma
+  reference: 2Ti 1:16, 17
+  date:
+    from: 65
+    to: 65
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 65 e.c.
+  note: null
+  reason: '2Ti 1:17: estando en Roma, lo buscó con empeño y lo encontró. Suceso segundo-encierro-en-roma, c. 65.'
+  sources:
+  - 2-timoteo-1
+  - it-onesiforo
+  checked_on: '2026-09-30'
+  status: verified

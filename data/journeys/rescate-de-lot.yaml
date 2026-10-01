@@ -1,0 +1,117 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: rescate-de-lot
+name: Abrán persigue a los reyes y rescata a Lot
+person: abrahan
+reference: Gé 14:13-24; Heb 7:1
+date:
+  from: -1942
+  to: -1932
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1943 y 1933 a.e.c. (tiempo narrativo: en los primeros diez años de Abrán en Canaán)'
+companions:
+- aner
+- escol
+- mamre
+summary: Al saber que Lot está cautivo, Abrán sale de Mamré con 318 hombres de su casa y sus aliados, sorprende a los reyes
+  en Dan, los persigue hasta Hobá y, al volver, Melquisedec lo bendice.
+reason: 'Gé 14:13-17 da la salida, la persecución y la vuelta en orden, y Gé 14:24 nombra a Aner, Escol y Mamré entre los
+  que fueron con él. Sin año propio: dentro de los diez primeros años en Canaán.'
+sources:
+- genesis-14
+- hebreos-7
+- it-abrahan
+- it-kedorlaomer
+- it-aner
+- it-dan
+- it-hoba
+- it-save
+- it-melquisedec
+- si-3
+checked_on: '2026-09-30'
+status: verified
+narrative_order:
+  series: abrahan
+  order: 4
+stops:
+- order: 1
+  place: mamre
+  reference: Gé 14:13, 14
+  date:
+    from: -1942
+    to: -1932
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1943 y 1933 a.e.c. (tiempo narrativo: en los primeros diez años de Abrán en Canaán)'
+  note: Un fugitivo le trae la noticia; reúne a sus siervos entrenados.
+  reason: Gé 14:13 dice que Abrán vivía entonces junto a los árboles de Mamré. Fecha narrativa del suceso «Abrán rescata a
+    Lot».
+  sources:
+  - genesis-14
+  - it-aner
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: dan
+  reference: Gé 14:14, 15
+  date:
+    from: -1942
+    to: -1932
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1943 y 1933 a.e.c. (tiempo narrativo: en los primeros diez años de Abrán en Canaán)'
+  note: Divide a sus hombres y ataca de noche.
+  reason: Gé 14:14, 15 lo lleva tras los invasores hasta Dan. Misma fecha narrativa.
+  sources:
+  - genesis-14
+  - it-dan
+  - it-kedorlaomer
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: hoba
+  reference: Gé 14:15, 16
+  date:
+    from: -1942
+    to: -1932
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1943 y 1933 a.e.c. (tiempo narrativo: en los primeros diez años de Abrán en Canaán)'
+  note: Recupera a Lot, sus bienes y los demás cautivos. Hobá no tiene punto en el mapa.
+  reason: Gé 14:15, 16 dice que los persiguió hasta Hobá, al norte de Damasco, y lo recobró todo. Misma fecha narrativa.
+  sources:
+  - genesis-14
+  - it-hoba
+  checked_on: '2026-09-30'
+  status: verified
+- order: 4
+  place: valle-de-save
+  reference: Gé 14:17-24; Heb 7:1
+  date:
+    from: -1942
+    to: -1932
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1943 y 1933 a.e.c. (tiempo narrativo: en los primeros diez años de Abrán en Canaán)'
+  note: También llamado valle del Rey. Melquisedec, rey de Salem, le saca pan y vino; Abrán no acepta nada del rey de Sodoma.
+    Sin punto en el mapa.
+  reason: Gé 14:17-20 pone el encuentro en el valle de Savé, y Heb 7:1 lo recuerda. Fecha narrativa del suceso «Melquisedec
+    bendice a Abrán».
+  sources:
+  - genesis-14
+  - hebreos-7
+  - it-save
+  - it-melquisedec
+  checked_on: '2026-09-30'
+  status: verified

@@ -1,0 +1,90 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: elcana-sube-a-silo
+name: Elcaná y Ana suben a Siló
+person: elcana-hijo-de-jeroham
+reference: 1Sa 1:1-20
+date:
+  from: -1179
+  to: -1179
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 1180 a.e.c.
+companions:
+- ana-madre-de-samuel
+- penina
+summary: Elcaná sube cada año de Ramá a Siló con sus esposas para adorar. En uno de esos viajes, Ana pide un hijo y lo promete
+  a Jehová; de vuelta en Ramá nace Samuel. El viaje se repite cada año.
+reason: 1 Samuel 1:1-20 da las paradas. La tabla de los libros hace empezar el relato de 1 Samuel hacia 1180 a.e.c., y los
+  sucesos del voto y del nacimiento llevan esa fecha.
+sources:
+- 1-samuel-1
+- tnm-tabla
+- it-samuel-libros
+- it-ana
+- it-eli
+- it-rama
+checked_on: '2026-09-30'
+status: verified
+stops:
+- order: 1
+  place: ramataim-zofim
+  reference: 1Sa 1:1-3
+  date:
+    from: -1179
+    to: -1179
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 1180 a.e.c.
+  note: Salida. Ramataim-Zofim, es decir, Ramá, su ciudad.
+  reason: '1Sa 1:1, 3 hace a Elcaná de Ramataim-Zofim y dice que subía cada año desde su ciudad. Suceso ancla: ana-hace-un-voto-en-silo
+    (c. 1180, tabla de libros).'
+  sources:
+  - 1-samuel-1
+  - it-rama
+  - tnm-tabla
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: silo
+  reference: 1Sa 1:3-18
+  date:
+    from: -1179
+    to: -1179
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 1180 a.e.c.
+  note: Ana pide un hijo y promete dárselo a Jehová; Elí la bendice.
+  reason: '1Sa 1:3, 9-18 sitúa en Siló el sacrificio anual y la oración de Ana. Suceso ancla: ana-hace-un-voto-en-silo (c.
+    1180, tabla de libros).'
+  sources:
+  - 1-samuel-1
+  - it-ana
+  - it-eli
+  - tnm-tabla
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: ramataim-zofim
+  reference: 1Sa 1:19, 20
+  date:
+    from: -1179
+    to: -1179
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 1180 a.e.c.
+  note: Llegada. Ana concibe y da a luz a Samuel.
+  reason: '1Sa 1:19 dice que vuelven a su casa en Ramá. Suceso ancla: nacimiento-de-samuel (c. 1180, tabla de libros).'
+  sources:
+  - 1-samuel-1
+  - it-rama
+  - tnm-tabla
+  checked_on: '2026-09-30'
+  status: verified

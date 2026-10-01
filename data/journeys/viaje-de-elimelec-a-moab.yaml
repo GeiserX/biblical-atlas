@@ -1,0 +1,72 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: viaje-de-elimelec-a-moab
+name: Elimélec se va a Moab
+person: elimelec
+reference: Rut 1:1-5
+date:
+  from: -1472
+  to: -1300
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1473 y 1301 a.e.c. (tiempo narrativo: en tiempos de los jueces y en vida de Boaz)'
+companions:
+- noemi
+- mahlon
+- kilion
+summary: En un tiempo de hambre, Elimélec deja Belén con su esposa Noemí y sus hijos Mahlón y Kilión para vivir en Moab. Allí
+  muere, y años más tarde mueren también sus dos hijos.
+reason: 'Rut 1:1-5 da la salida y la llegada. Sin año en jw.org: tras la entrada en Canaán (1473, estudio 3) y en vida de
+  Boaz, del siglo XIV a.e.c. (Perspicacia «Boaz, I»).'
+sources:
+- rut-1
+- si-3
+- it-elimelec
+- it-rut-libro
+- it-boaz
+checked_on: '2026-09-30'
+status: verified
+stops:
+- order: 1
+  place: belen
+  reference: Rut 1:1
+  date:
+    from: -1472
+    to: -1300
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1473 y 1301 a.e.c. (tiempo narrativo: en tiempos de los jueces y en vida de Boaz)'
+  note: Salida, por el hambre.
+  reason: 'Rut 1:1, 2: Elimélec es de Belén de Judá y se va con su familia. Suceso ancla: elimelec-se-va-a-moab (tras la entrada
+    en Canaán, 1473, y en vida de Boaz, siglo XIV).'
+  sources:
+  - rut-1
+  - it-elimelec
+  - it-boaz
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: moab
+  reference: Rut 1:2-5
+  date:
+    from: -1472
+    to: -1300
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1473 y 1301 a.e.c. (tiempo narrativo: en tiempos de los jueces y en vida de Boaz)'
+  note: Llegada. Allí mueren él y, unos diez años después, sus dos hijos.
+  reason: 'Rut 1:2-5: se instalan en Moab como extranjeros; allí mueren Elimélec, Mahlón y Kilión. Suceso ancla: elimelec-se-va-a-moab
+    (tras la entrada en Canaán, 1473, y en vida de Boaz, siglo XIV).'
+  sources:
+  - rut-1
+  - it-elimelec
+  - it-boaz
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified

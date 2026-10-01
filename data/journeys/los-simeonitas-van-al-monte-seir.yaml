@@ -1,0 +1,61 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: los-simeonitas-van-al-monte-seir
+name: Los simeonitas van al monte Seír
+person: pelatias-hijo-de-isi
+reference: 1Cr 4:42, 43
+date:
+  from: -745
+  to: -715
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 746 y 716 a.e.c. (tiempo narrativo: probablemente en el reinado de Ezequías)'
+companions: []
+summary: Pelatías y sus hermanos Nearías, Refayá y Uziel, hijos de Isí, guían a 500 simeonitas al monte Seír. Allí acaban
+  con los amalequitas que quedaban y se asientan en su lugar.
+reason: '1Cr 4:42, 43; Perspicacia «Pelatías», núm. 1, lo sitúa probablemente en el reinado de Ezequías. Sin suceso en data/events:
+  fecha por ese reinado (tabla A6-B).'
+sources:
+- 1-cronicas-4
+- it-pelatias
+- it-ezequias
+- tnm-a6-b
+checked_on: '2026-09-30'
+status: pending
+stops:
+- order: 1
+  place: simeon
+  reference: 1Cr 4:42
+  date:
+    from: -745
+    to: -715
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 746 y 716 a.e.c. (tiempo narrativo: probablemente en el reinado de Ezequías)'
+  note: 'Salida deducida: el texto solo dice que eran simeonitas.'
+  reason: 1Cr 4:42 no nombra de dónde salen; el territorio de Simeón es deducción nuestra. Fecha por el reinado de Ezequías.
+  sources:
+  - 1-cronicas-4
+  checked_on: '2026-09-30'
+  status: pending
+- order: 2
+  place: seir
+  reference: 1Cr 4:42, 43
+  date:
+    from: -745
+    to: -715
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 746 y 716 a.e.c. (tiempo narrativo: probablemente en el reinado de Ezequías)'
+  note: Viven allí aún cuando se escribe Crónicas.
+  reason: '1Cr 4:42, 43: van al monte Seír y se quedan. Perspicacia «Pelatías», núm. 1. Fecha por el reinado de Ezequías.'
+  sources:
+  - 1-cronicas-4
+  - it-pelatias
+  checked_on: '2026-09-30'
+  status: pending

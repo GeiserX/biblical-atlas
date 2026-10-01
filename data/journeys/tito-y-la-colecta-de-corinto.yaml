@@ -1,0 +1,109 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: tito-y-la-colecta-de-corinto
+name: Tito entre Corinto y Macedonia
+person: tito
+reference: 2Co 2:12, 13; 7:5-15; 8:6, 16-24; 12:17, 18
+date:
+  from: 55
+  to: 55
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 55 e.c.
+narrative_order:
+  series: tito
+  order: 1
+companions: []
+summary: Pablo manda a Tito a Corinto para poner en marcha la colecta y ver cómo reciben su carta. Tito le lleva buenas noticias
+  a Macedonia y regresa a Corinto para acabar la colecta.
+reason: Perspicacia «Tito» cuenta los tres trayectos hacia el año 55; sucesos pablo-envia-a-tito-a-corinto, tito-trae-noticias-de-corinto
+  y tito-vuelve-a-corinto-con-dos-hermanos.
+sources:
+- 2-corintios-2
+- 2-corintios-7
+- 2-corintios-8
+- 2-corintios-12
+- it-tito-persona
+checked_on: '2026-09-30'
+status: verified
+stops:
+- order: 1
+  place: efeso
+  reference: 2Co 12:17, 18
+  date:
+    from: 55
+    to: 55
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 55 e.c.
+  note: Pablo escribía entonces desde Éfeso (1Co 16:8).
+  reason: '2Co 12:18 dice que Pablo lo envió, pero no desde dónde. El suceso pablo-envia-a-tito-a-corinto pone el envío en
+    Éfeso: salida deducida.'
+  sources:
+  - 2-corintios-12
+  - it-tito-persona
+  - 1-corintios-16
+  checked_on: '2026-09-30'
+  status: pending
+- order: 2
+  place: corinto
+  reference: 2Co 7:13-15; 8:6
+  date:
+    from: 55
+    to: 55
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 55 e.c.
+  note: Empieza allí la colecta para los hermanos de Judea.
+  reason: '2Co 7:13-15 y 8:6: los corintios lo reciben con respeto y él inicia la colecta. Suceso pablo-envia-a-tito-a-corinto,
+    c. 55.'
+  sources:
+  - 2-corintios-7
+  - 2-corintios-8
+  - it-tito-persona
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: macedonia
+  reference: 2Co 7:5-7
+  date:
+    from: 55
+    to: 55
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 55 e.c.
+  note: Pablo lo había esperado en vano en Troas (2Co 2:12, 13).
+  reason: '2Co 7:5-7: Pablo, ya en Macedonia, se consuela con su llegada y con sus noticias. Suceso tito-trae-noticias-de-corinto,
+    c. 55.'
+  sources:
+  - 2-corintios-7
+  - 2-corintios-2
+  - it-tito-persona
+  checked_on: '2026-09-30'
+  status: verified
+- order: 4
+  place: corinto
+  reference: 2Co 8:6, 16-24
+  date:
+    from: 55
+    to: 55
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 55 e.c. (final del verano o principios del otoño)
+  note: Van con él dos hermanos cuyos nombres el texto no da; lleva 2 Corintios.
+  reason: '2Co 8:16, 17: sale de buena gana hacia Corinto para terminar la colecta. Suceso tito-vuelve-a-corinto-con-dos-hermanos,
+    final del verano u otoño de 55.'
+  sources:
+  - 2-corintios-8
+  - it-tito-persona
+  checked_on: '2026-09-30'
+  status: verified

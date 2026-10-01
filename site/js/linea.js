@@ -1810,16 +1810,18 @@ function iniciarLinea() {
   pista.setAttribute('aria-valuemin', String(BE.T_MIN));
   pista.setAttribute('aria-valuemax', String(BE.T_MAX));
   const moverVista = (v0) => { v0 = clamp(v0, BE.T_MIN, BE.T_MAX - span()); E.vista = [v0, v0 + span()]; sucio.linea = true; programar(); };
-  // Rueda: arriba y abajo bajan por los carriles (lo hace el navegador); con Ctrl o ⌘, o sobre la regla, cambia la
-  // escala; de lado o con Mayúsculas mueve la vista.
+  // Rueda sobre la regla y los carriles: arriba y abajo cambian la escala en el puntero, como siempre; de lado o con
+  // Mayúsculas mueve la vista; Ctrl o ⌘ (y la pinza del trackpad) también cambia la escala. Sobre los nombres de los
+  // carriles, la rueda los recorre de arriba abajo (lo hace el navegador); también la barra y arrastrar en vertical.
   cuerpo.addEventListener('wheel', (e) => {
+    const conTecla = e.ctrlKey || e.metaKey || e.shiftKey;
+    if (!conTecla && e.target.closest('.carril-rotulo, #carriles')) return;
+    e.preventDefault();
     const x = clamp(e.clientX - pista.getBoundingClientRect().left, 0, anchoLinea);
-    if (e.ctrlKey || e.metaKey || e.target.closest('#pista')) {
-      e.preventDefault();
-      zoomEn(Math.exp((e.deltaY || e.deltaX) * (e.ctrlKey ? 0.01 : 0.0015)), tDe(x));
-    } else if (e.shiftKey || Math.abs(e.deltaX) > Math.abs(e.deltaY)) {
-      e.preventDefault();
+    if (!e.ctrlKey && !e.metaKey && (e.shiftKey || Math.abs(e.deltaX) > Math.abs(e.deltaY))) {
       moverVista(E.vista[0] + ((e.shiftKey && !e.deltaX ? e.deltaY : e.deltaX) / anchoLinea) * span());
+    } else {
+      zoomEn(Math.exp((e.deltaY || e.deltaX) * (e.ctrlKey ? 0.01 : 0.0015)), tDe(x));
     }
   }, { passive: false });
   let scrollPendiente = false;
@@ -1907,6 +1909,12 @@ function iniciarLinea() {
     }
     if (!arrastre || arrastre.id !== e.pointerId) return;
     const dx = e.clientX - arrastre.x0, dy = e.clientY - arrastre.y0;
+    // Con el ratón, arrastrar en vertical recorre los carriles: la rueda sobre ellos cambia la escala. Con el dedo lo hace
+    // el navegador (touch-action: pan-y).
+    if (arrastre.raton && arrastre.top == null && !arrastre.movido && Math.abs(dy) > 6 && Math.abs(dy) > Math.abs(dx)) {
+      arrastre.top = cuerpo.scrollTop; tragarClic = true;
+    }
+    if (arrastre.top != null) { cuerpo.scrollTop = arrastre.top - dy; return; }
     if (!arrastre.movido && Math.abs(dx) > (arrastre.raton ? 6 : 10) && Math.abs(dx) > Math.abs(dy)) {
       arrastre.movido = true; tragarClic = true;
       hold = { rows: new Map(), edge: new Map() };
@@ -1936,7 +1944,7 @@ function iniciarLinea() {
     if (!a || a.id !== e.pointerId) return;
     arrastre = null;
     if (a.movido) { hold = null; sucio.linea = true; programar(); return; }
-    if (e.type !== 'pointerup' || a.cancelado) return;
+    if (a.top != null || e.type !== 'pointerup' || a.cancelado) return;
     // Con el dedo decide esta línea, no el navegador, que ajusta el toque a su manera y a veces a la marca de al lado: la
     // marca bajo el dedo o, si no hay, la de esa fila a menos de 12 px. El clic que da después el navegador no cuenta.
     if (!a.raton) {

@@ -1,0 +1,63 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: febe-a-roma
+name: Febe, de Cencreas a Roma
+person: febe
+reference: Ro 16:1, 2
+date:
+  from: 56
+  to: 56
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: principios de 56 e.c.
+companions: []
+summary: Pablo presenta a Febe, ministra de la congregación de Cencreas, y pide a los cristianos de Roma que la acojan y la
+  ayuden en lo que necesite. Quizá fue ella quien llevó la carta.
+reason: Suceso pablo-escribe-romanos, principios de 56. Perspicacia «Febe» ve posible que llevara la carta o que fuera con
+  quien la llevaba.
+sources:
+- romanos-16
+- it-febe
+- it-cencreas
+checked_on: '2026-09-30'
+status: verified
+stops:
+- order: 1
+  place: cencreas
+  reference: Ro 16:1
+  date:
+    from: 56
+    to: 56
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: principios de 56 e.c.
+  note: Cencreas era el puerto oriental de Corinto, desde donde escribe Pablo.
+  reason: Ro 16:1 la presenta como ministra de la congregación de Cencreas. Fecha del suceso pablo-escribe-romanos.
+  sources:
+  - romanos-16
+  - it-febe
+  - it-cencreas
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: roma
+  reference: Ro 16:2
+  date:
+    from: 56
+    to: 56
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: principios de 56 e.c.
+  note: Que llegara con la carta es solo una posibilidad.
+  reason: Ro 16:2 pide que la reciban en Roma; Perspicacia «Febe» dice que es posible que llevara la carta. El texto no narra
+    el viaje.
+  sources:
+  - romanos-16
+  - it-febe
+  checked_on: '2026-09-30'
+  status: pending

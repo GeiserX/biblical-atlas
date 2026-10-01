@@ -1,0 +1,114 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: jacob-a-egipto
+name: Jacob y su familia se trasladan a Egipto
+person: jacob
+reference: Gé 46:1–47:12; Hch 7:14, 15; Sl 105:23; Jos 24:4
+date:
+  from: -1727
+  to: -1727
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 1728 a.e.c.
+companions:
+- ruben-hijo-de-jacob
+- simeon-hijo-de-jacob
+- levi-hijo-de-jacob
+- juda-hijo-de-jacob
+- dan-hijo-de-jacob
+- neftali-hijo-de-jacob
+- gad-hijo-de-jacob
+- aser-hijo-de-jacob
+- isacar-hijo-de-jacob
+- zabulon-hijo-de-jacob
+- benjamin-hijo-de-jacob
+- dina
+summary: A los 130 años Jacob sale con toda su familia en los carros del faraón. En Beer-Seba Dios le dice que no tema bajar;
+  Judá se adelanta a avisar a José, que lo recibe en Gosén.
+reason: Gé 46:1 a 47:12 da las etapas; Gé 47:9 le da 130 años ante el faraón. Perspicacia «Cronología» y el estudio 3 fechan
+  la llegada a Egipto en 1728 a.e.c.
+sources:
+- genesis-37
+- genesis-46
+- genesis-47
+- hechos-7
+- salmos-105
+- josue-24
+- it-jacob
+- it-jose
+- it-beer-seba
+- it-gosen
+- it-cronologia
+- si-3
+checked_on: '2026-09-30'
+status: verified
+narrative_order:
+  series: jacob
+  order: 4
+stops:
+- order: 1
+  place: hebron
+  reference: Gé 37:14; 46:1
+  date:
+    from: -1727
+    to: -1727
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 1728 a.e.c.
+  note: Gé 46:1 no nombra el punto de salida.
+  reason: 'Perspicacia «Jacob» dice que se trasladó a Hebrón antes de la venta de José, sin precisar cuándo, y Gé 37:14 lo
+    muestra allí. Deducción: pendiente.'
+  sources:
+  - genesis-37
+  - genesis-46
+  - it-jacob
+  - si-3
+  checked_on: '2026-09-30'
+  status: pending
+- order: 2
+  place: beer-seba
+  reference: Gé 46:1-5
+  date:
+    from: -1727
+    to: -1727
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 1728 a.e.c.
+  note: Ofrece sacrificios, y Dios le habla de noche en una visión.
+  reason: Gé 46:1-5 lo hace llegar a Beer-Seba y salir de allí. Fecha del suceso «Dios habla a Jacob en Beer-Seba».
+  sources:
+  - genesis-46
+  - it-beer-seba
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: gosen
+  reference: Gé 46:28–47:12
+  date:
+    from: -1727
+    to: -1727
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 1728 a.e.c.
+  note: José lo abraza en Gosén y lo presenta al faraón; se instalan en la tierra de Ramesés. Sin punto en el mapa.
+  reason: Gé 46:28, 29 pone el encuentro en Gosén, y Gé 47:6, 11 da esa tierra a la familia. Fecha de los sucesos del encuentro
+    y de la instalación.
+  sources:
+  - genesis-46
+  - genesis-47
+  - hechos-7
+  - salmos-105
+  - josue-24
+  - it-gosen
+  - it-cronologia
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
