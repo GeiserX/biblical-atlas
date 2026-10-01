@@ -57,7 +57,7 @@ stops:
     type: anchored
     chronology: tnm
     text: c. 905 a.e.c.
-  note: Su oficial Bidcar va con él en el carro (2Re 9:25). Allí recibe las cabezas de los 70 hijos de Acab.
+  note: Su oficial Bidcar va con él en el carro (2Re 9:25). Allí le llevan en cestas las cabezas de setenta hijos de Acab (2Re 10:7).
   reason: '2Re 9:16-37 y 10:1-11: en Jezreel mata a Jehoram y a Jezabel y acaba con la casa de Acab. Sucesos jehu-mata-a-jehoram-en-el-terreno-de-nabot
     y muerte-de-jezabel.'
   sources:
@@ -65,7 +65,7 @@ stops:
   - 2-reyes-10
   - it-jehu
   - si-3
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-01'
   status: verified
 - order: 3
   place: casa-para-atar-de-los-pastores
