@@ -117,7 +117,7 @@ Los demás parámetros solo aparecen cuando no valen lo de siempre:
 | `nombres` | `antiguos`, `actuales` | Nombres del mapa; sin él, los dos donde ayuda |
 | `nivel` | `1` | Filtro «Solo la Biblia y jw.org» |
 | `cartas` | `todas`, `hasta`, `personas` | Qué cartas se dibujan; sin él, las cercanas a la fecha |
-| `carriles` | lista de ids de carril o de persona | Carriles fijados en la línea de tiempo |
+| `carriles` | lista de ids de carril o de persona | Carriles fijados en la línea de tiempo. El carril «Viajes de Pablo» conserva el id `pablo`, el mismo que tenía cuando se llamaba «Pablo» |
 | `secular` | `0` | Oculta las fechas seculares |
 | `pausa` | `0` | No se para en los sucesos al reproducir |
 | `regla`, `bucle` | `a~b` | Regla entre dos fechas; tramo que se repite al reproducir |
@@ -146,6 +146,8 @@ Los demás parámetros solo aparecen cuando no valen lo de siempre:
 | Alt + arrastrar sobre la línea | Regla entre dos fechas |
 
 Las marcas de la línea son una sola parada del tabulador. La rueda sobre la regla o los carriles cambia la escala en el puntero, de milenios a días, igual que Ctrl o ⌘ con la rueda y la pinza del trackpad; con Mayúsculas, o con un gesto horizontal en el trackpad, desplaza la vista. Cuando la línea es alta, los carriles se recorren de arriba abajo con la rueda sobre sus nombres, con la barra de desplazamiento o arrastrando en vertical. Arrastrar los carriles de lado mueve el tiempo; pulsar o arrastrar en la regla mueve el cursor.
+
+El carril «Viajes de Pablo» enseña solo los viajes de Pablo: un tramo por viaje y, debajo, sus paradas. Las demás personas no tienen carril propio hasta que se eligen o se fijan desde el menú de la línea. Entonces sale uno con su nombre (la persona elegida, justo antes de «Viajes de Pablo»; la fijada, arriba) con sus paradas, los sucesos que la sitúan y dónde vivió. En el móvil, «Viajes de Pablo» va en dos líneas para no cortarse.
 
 ## Ficheros
 

@@ -410,7 +410,7 @@ test('430: a horizontal finger drag moves time, a vertical one scrolls the lanes
 test('person lanes follow the row rule; selecting a period does not reframe the view', async () => {
   for (const screen of [DESKTOP, PHONE]) {
     const p = await open(screen, 't=50.5&v=8');
-    // A person picked from a card: its lane appears just before Pablo and its marks pass the same checks.
+    // A person picked from a card: its lane appears just before «Viajes de Pablo» and its marks pass the same checks.
     await p.evaluate(() => window.BE.seleccionar({ tipo: 'persona', id: 'timoteo' }, { mover: false }));
     await frames(p);
     await p.evaluate(() => { const c = document.querySelector('#panel-cuerpo [data-sel="persona:silas"]'); if (c) c.click(); else window.BE.seleccionar({ tipo: 'persona', id: 'silas' }, { mover: false }); });
@@ -422,6 +422,21 @@ test('person lanes follow the row rule; selecting a period does not reframe the 
     const personMarks = h.visible.filter((x) => x.lane === 'silas');
     note(`${screen.name} person lane: silas ${silas ? `${silas.filas} rows, ${personMarks.length} marks, ${personMarks.filter((x) => seen.has(x.id)).length} drawn` : 'absent'}; ${walk.problems.filter((x) => x.startsWith('silas')).length} problems`);
     assert.ok(silas && silas.alto > 0, 'the lane of the selected person shows');
+    // The fixed lane says what it shows (only Pablo's journeys); the person lane goes by the person's name, just before it.
+    const ids = h.lanes.filter((l) => l.alto).map((l) => l.id);
+    assert.equal(h.lanes.find((l) => l.id === 'pablo')?.nombre, 'Viajes de Pablo');
+    assert.equal(silas.nombre, 'Silas');
+    assert.equal(ids.indexOf('silas') + 1, ids.indexOf('pablo'), ids.join(' '));
+    // Its name is whole on both screens: on the phone it goes in two lines inside the label, never cut.
+    const label = await p.evaluate(() => {
+      const l = [...document.querySelectorAll('.carril-rotulo .be-lane-label')].find((x) => x.textContent.trim() === 'Viajes de Pablo');
+      const s = l?.querySelector('span');
+      if (!s) return null;
+      const a = l.getBoundingClientRect(), b = s.getBoundingClientRect(), lh = parseFloat(getComputedStyle(s).lineHeight);
+      return { lines: Math.round(b.height / lh), cutX: s.scrollWidth > s.clientWidth + 0.5, cutY: s.scrollHeight > s.clientHeight + 1 || b.top < a.top - 0.5 || b.bottom > a.bottom + 0.5 };
+    });
+    note(`${screen.name} «Viajes de Pablo»: ${label ? `${label.lines} line(s)${label.cutX || label.cutY ? ', cut' : ', whole'}` : 'no label'}`);
+    assert.ok(label && !label.cutX && !label.cutY, JSON.stringify(label));
     assert.ok(personMarks.length > 0 && personMarks.every((x) => seen.has(x.id)));
     assert.deepEqual(walk.problems.filter((x) => x.startsWith('silas')), []);
     await p.context().close();

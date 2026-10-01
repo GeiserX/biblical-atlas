@@ -342,6 +342,8 @@
   .carril-ayuda { display: inline-grid; }
   .carril-rotulo .nombre-largo { display: none; }
   .carril-rotulo .nombre-corto { display: inline; }
+  /* «Viajes de Pablo» no cabe en 92 px: va en dos líneas en vez de cortarse. */
+  .carril-rotulo .carril-viajes > span { white-space: normal; line-height: 1.1; }
   #fecha:has(.fecha-otra:not([hidden])) { flex-direction: column; align-items: flex-start; gap: 0; padding-top: 2px; padding-bottom: 2px; }
   #fecha:has(.fecha-otra:not([hidden])) .be-date__value { font-size: 15px; }
   .fecha-otra { font-size: 10.5px; line-height: 1.1; }

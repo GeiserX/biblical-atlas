@@ -167,7 +167,8 @@ function marcaEstancia(s, color, group, tipo) {
     cert, tipo, fecha: f ? textoFechaDe(f) : '', fechaTipo: f?.tipo === 'derivada' ? 'derivada' : s.narrativa ? 'narrativa' : f?.tipo, color, group };
   return s.b > s.a ? tramoMarca(o, [s.a, s.b]) : momentoMarca(o, [s.a, s.b]);
 }
-/** Pablo: un tramo por viaje y, en filas propias debajo, sus paradas. */
+/** «Viajes de Pablo»: un tramo por viaje y, en filas propias debajo, sus paradas. Solo los suyos: los viajes de
+    los demás salen en el carril de cada persona, como estancias. */
 function marcasPablo() {
   const out = [];
   for (const v of BE.D.viajes) {
@@ -221,7 +222,7 @@ function catalogo() {
     medir: medirMeses, ayuda: 'Nuestros meses y los meses hebreos, alineados. Las equivalencias son aproximadas.' });
   lanePeriodos('eras', 'Eras', 'reloj2', periodosDe('era'), 1, { clase: 'era' });
   lanePeriodos('imperios', 'Imperio (Dn 2)', 'corona', periodosDe('potencia'), 2, { clase: 'potencia' });
-  lista.push({ id: 'pablo', nombre: 'Pablo', icono: 'persona', tipo: 'pablo', orden: 20, marcas: marcasPablo });
+  lista.push({ id: 'pablo', nombre: 'Viajes de Pablo', icono: 'persona', tipo: 'pablo', orden: 20, clases: ['carril-viajes'], marcas: marcasPablo });
   if (D.cartas.length) lista.push({ id: 'cartas', nombre: 'Cartas', icono: 'carta', tipo: 'cartas', orden: 21, marcas: marcasCartas });
   lista.push({ id: 'sucesos', nombre: 'Sucesos', icono: 'reloj', tipo: 'sucesos', orden: 22, marcas: marcasSucesos });
   lanePeriodos('emperadores', 'Emperadores', 'corona', periodosDe('emperador'), 3);
@@ -289,8 +290,9 @@ function personasConCarril() {
   return [...ids].map((id) => BE.PERS[id]).filter(Boolean).sort((a, b) => a.nombre.localeCompare(b.nombre, 'es'));
 }
 /** Carriles de la línea, en su orden: los fijados arriba en el orden en que se fijaron; después los meses (solo a
-    escala de meses y días) y el resto del catálogo. La persona elegida tiene su carril justo antes de Pablo. Sin tope
-    ni prioridades: cada carril con algo en la vista enseña todas sus filas, y uno sin nada no ocupa sitio. */
+    escala de meses y días) y el resto del catálogo. La persona elegida tiene su carril justo antes de «Viajes de
+    Pablo». Sin tope ni prioridades: cada carril con algo en la vista enseña todas sus filas, y uno sin nada no ocupa
+    sitio. */
 let carrilesVista = [];
 function elegirCarriles() {
   const fijos = L.fijados.map(carrilPorId).filter((c) => c && (c.tipo !== 'secular' || L.secular));
