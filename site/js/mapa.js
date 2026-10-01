@@ -367,7 +367,7 @@ async function montarCortina() {
       canvas.width = Math.min(2048, img.naturalWidth); canvas.height = Math.round(canvas.width * img.naturalHeight / img.naturalWidth);
       const id = `be-cortina-${base.id}`;
       map.addSource(id, { type: 'canvas', canvas, coordinates: esquinas(base.ext), animate: false });
-      map.addLayer({ id, type: 'raster', source: id, paint: { 'raster-fade-duration': 0, 'raster-opacity': opacidadGL(base) } }, 'be-zonas-relleno');
+      map.addLayer({ id, type: 'raster', source: id, paint: { 'raster-fade-duration': 0, 'raster-opacity': opacidadGL(base) } }, 'be-formas-relleno');
       return { base, img, canvas, ctx: canvas.getContext('2d') };
     });
   }
