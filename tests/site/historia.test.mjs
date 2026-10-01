@@ -110,7 +110,8 @@ const hist = (page, pre = '') => page.evaluate((pre) => {
 }, pre);
 async function search(page, text) {
   await page.locator('#q').fill(text);
-  await page.waitForFunction((t) => { const r = document.querySelector('#resultados'); return !r.hidden && r.innerText.includes(t); }, text);
+  // The first search of a page builds the index: on a busy machine that takes longer than the default 8 s.
+  await page.waitForFunction((t) => { const r = document.querySelector('#resultados'); return !r.hidden && r.innerText.includes(t); }, text, { timeout: 20000 });
   await page.keyboard.press('Enter');
   await settle(page);
 }
@@ -305,34 +306,6 @@ test('focus stays on the pressed button, and moves to the other one when its own
   }
 });
 
-test('Alt, ⌘ and Ctrl with an arrow are the browser\'s on the panel separator, the curtain, «Meses» and the date panel', async () => {
-  const page = await openPage(DESKTOP, { hash: 't=50.3000&sel=persona:pablo&mapa=cortina' });
-  await page.evaluate(() => {
-    window.__prevented = [];
-    // Capture, then read once every handler has run: the date panel stops the key from bubbling.
-    window.addEventListener('keydown', (e) => { if (/^Arrow/.test(e.key) && (e.altKey || e.metaKey || e.ctrlKey)) setTimeout(() => window.__prevented.push(`${document.activeElement.id || document.activeElement.dataset.meses || document.activeElement.getAttribute('role')}:${e.defaultPrevented}`)); }, true);
-  });
-  const keys = ['Alt+ArrowLeft', 'Meta+ArrowLeft', 'Control+ArrowLeft', 'Alt+ArrowRight'];
-  const press = async () => { for (const k of keys) await page.keyboard.press(k); await page.waitForTimeout(50); };
-  const width = () => page.evaluate(() => document.getElementById('panel').getBoundingClientRect().width);
-  const w0 = await width();
-  await page.locator('#sep-panel').click();
-  await press();
-  assert.equal(await width(), w0, 'the panel width moved');
-  const c0 = await page.evaluate(() => window.BE.E.cortinaX);
-  await page.locator('#cortina-asa').focus();
-  await press();
-  assert.equal(await page.evaluate(() => window.BE.E.cortinaX), c0, 'the curtain moved');
-  await page.evaluate(() => { const m = document.getElementById('meses-control'); m.hidden = false; m.querySelector('[data-meses]').focus(); });
-  await press();
-  await page.locator('#fecha').click();
-  await page.locator('[role="dialog"] [role="radio"], dialog [role="radio"]').first().focus();
-  await press();
-  const got = await page.evaluate(() => window.__prevented);
-  assert.equal(got.length, keys.length * 4, JSON.stringify(got));
-  assert.deepEqual(got.filter((x) => x.endsWith(':true')), [], 'a handler took a browser shortcut');
-});
-
 test('with sessionStorage blocked, Back and Forward still know where they go', async () => {
   // Blocked storage (cookies off, a privacy mode): reading sessionStorage throws. The names live in memory too.
   const page = await openPage(DESKTOP, { hash: 't=50.3000', init: () => {
@@ -353,20 +326,36 @@ test('with sessionStorage blocked, Back and Forward still know where they go', a
   assert.deepEqual(page.pageErrors, []);
 });
 
-test('on a slow device a tap while the tour from the landing paints still makes one entry', async () => {
-  const page = await openPage();
-  const length = await page.evaluate(() => history.length);
-  await page.evaluate(() => { window.__lento = 600; });
-  await page.locator('[data-p="rec-pedro"]').click();
-  await page.waitForTimeout(350);
-  await page.evaluate(() => window.dispatchEvent(new PointerEvent('pointerdown')));
-  await page.waitForTimeout(2000);
-  await page.evaluate(() => { window.__lento = 0; });
+test('presses in a burst never leave the site, and stop at the last view', async () => {
+  const page = await openPage(DESKTOP, { hash: 't=50.3000' });
+  await search(page, 'Pablo');
+  const centre = async (sel) => { const b = await page.locator(sel).boundingBox(); return [b.x + b.width / 2, b.y + b.height / 2]; };
+  // One entry behind and a double click: the second press has nowhere to go.
+  await page.locator('#atras').dblclick();
+  await page.waitForTimeout(600);
   await settle(page);
-  const h = await hist(page);
-  assert.equal(h.length, length + 1, 'a tap between the address and the first frame made a second entry');
-  assert.equal(h.state.step, 1);
-  assert.equal(h.back.label, 'Atrás: la portada');
+  assert.ok(page.url().startsWith(`${base}index.html`), `a double click left the site: ${page.url()}`);
+  assert.equal((await hist(page)).state.step, 0);
+  for (const q of ['Corinto', 'Samotracia', 'Pedro']) await search(page, q);
+  const length = await page.evaluate(() => history.length);
+  // Three entries behind, ten clicks with no pause, before the first Back has arrived.
+  const [x, y] = await centre('#atras');
+  for (let i = 0; i < 10; i++) await page.mouse.click(x, y);
+  await page.waitForTimeout(800);
+  await settle(page);
+  assert.ok(page.url().startsWith(`${base}index.html`), `ten clicks left the site: ${page.url()}`);
+  let h = await hist(page);
+  assert.equal(h.state.step, 0);
+  assert.equal(h.length, length);
+  // And ten on Forward end on the last view.
+  const [fx, fy] = await centre('#adelante');
+  for (let i = 0; i < 10; i++) await page.mouse.click(fx, fy);
+  await page.waitForTimeout(800);
+  await settle(page);
+  h = await hist(page);
+  assert.equal(h.state.step, 3);
+  assert.equal((await snap(page)).sel, 'persona:pedro');
+  assert.deepEqual(page.pageErrors, []);
 });
 
 test('Back and Forward right after choosing keep the view just chosen, and two quick choices keep both', async () => {
@@ -398,7 +387,6 @@ test('Back and Forward right after choosing keep the view just chosen, and two q
   assert.equal((await snap(page)).sel, 'lugar:atenas');
   assert.equal((await hist(page)).back.label, 'Atrás: Roma');
 });
-
 
 test('a shared tour link opened fresh is one entry; the logo\'s landing keeps the page\'s title', async () => {
   const title = 'biblical-atlas · ¿Dónde y cuándo pasó lo que estás leyendo?';
@@ -456,38 +444,6 @@ test('a stateless entry reached by going back starts a visit there, and another 
   assert.equal(h.back.label, 'Atrás: Pablo');
 });
 
-test('presses in a burst never leave the site, and stop at the last view', async () => {
-  const page = await openPage(DESKTOP, { hash: 't=50.3000' });
-  await search(page, 'Pablo');
-  const centre = async (sel) => { const b = await page.locator(sel).boundingBox(); return [b.x + b.width / 2, b.y + b.height / 2]; };
-  // One entry behind and a double click: the second press has nowhere to go.
-  await page.locator('#atras').dblclick();
-  await page.waitForTimeout(600);
-  await settle(page);
-  assert.ok(page.url().startsWith(`${base}index.html`), `a double click left the site: ${page.url()}`);
-  assert.equal((await hist(page)).state.step, 0);
-  for (const q of ['Corinto', 'Samotracia', 'Pedro']) await search(page, q);
-  const length = await page.evaluate(() => history.length);
-  // Three entries behind, ten clicks with no pause, before the first Back has arrived.
-  const [x, y] = await centre('#atras');
-  for (let i = 0; i < 10; i++) await page.mouse.click(x, y);
-  await page.waitForTimeout(800);
-  await settle(page);
-  assert.ok(page.url().startsWith(`${base}index.html`), `ten clicks left the site: ${page.url()}`);
-  let h = await hist(page);
-  assert.equal(h.state.step, 0);
-  assert.equal(h.length, length);
-  // And ten on Forward end on the last view.
-  const [fx, fy] = await centre('#adelante');
-  for (let i = 0; i < 10; i++) await page.mouse.click(fx, fy);
-  await page.waitForTimeout(800);
-  await settle(page);
-  h = await hist(page);
-  assert.equal(h.state.step, 3);
-  assert.equal((await snap(page)).sel, 'persona:pedro');
-  assert.deepEqual(page.pageErrors, []);
-});
-
 test('on the phone the reading has its own pair, beside «Cerrar», that a finger reaches', async () => {
   const page = await openPage(PHONE, { hash: 'leer=hch-16' });
   await page.locator('#vista-lectura [data-lectura-pasaje="1"]').click();
@@ -508,6 +464,50 @@ test('on the phone the reading has its own pair, beside «Cerrar», that a finge
   const desk = await openPage(DESKTOP, { hash: 'leer=hch-16' });
   assert.equal(await desk.locator('#vista-lectura [data-historia="atras"]').isVisible(), false);
   assert.deepEqual(page.pageErrors, []);
+});
+
+test('on a slow device a tap while the tour from the landing paints still makes one entry', async () => {
+  const page = await openPage();
+  const length = await page.evaluate(() => history.length);
+  await page.evaluate(() => { window.__lento = 600; });
+  await page.locator('[data-p="rec-pedro"]').click();
+  await page.waitForTimeout(350);
+  await page.evaluate(() => window.dispatchEvent(new PointerEvent('pointerdown')));
+  await page.waitForTimeout(2000);
+  await page.evaluate(() => { window.__lento = 0; });
+  await settle(page);
+  const h = await hist(page);
+  assert.equal(h.length, length + 1, 'a tap between the address and the first frame made a second entry');
+  assert.equal(h.state.step, 1);
+  assert.equal(h.back.label, 'Atrás: la portada');
+});
+
+test('Alt, ⌘ and Ctrl with an arrow are the browser\'s on the panel separator, the curtain, «Meses» and the date panel', async () => {
+  const page = await openPage(DESKTOP, { hash: 't=50.3000&sel=persona:pablo&mapa=cortina' });
+  await page.evaluate(() => {
+    window.__prevented = [];
+    // Capture, then read once every handler has run: the date panel stops the key from bubbling.
+    window.addEventListener('keydown', (e) => { if (/^Arrow/.test(e.key) && (e.altKey || e.metaKey || e.ctrlKey)) setTimeout(() => window.__prevented.push(`${document.activeElement.id || document.activeElement.dataset.meses || document.activeElement.getAttribute('role')}:${e.defaultPrevented}`)); }, true);
+  });
+  const keys = ['Alt+ArrowLeft', 'Meta+ArrowLeft', 'Control+ArrowLeft', 'Alt+ArrowRight'];
+  const press = async () => { for (const k of keys) await page.keyboard.press(k); await page.waitForTimeout(50); };
+  const width = () => page.evaluate(() => document.getElementById('panel').getBoundingClientRect().width);
+  const w0 = await width();
+  await page.locator('#sep-panel').click();
+  await press();
+  assert.equal(await width(), w0, 'the panel width moved');
+  const c0 = await page.evaluate(() => window.BE.E.cortinaX);
+  await page.locator('#cortina-asa').focus();
+  await press();
+  assert.equal(await page.evaluate(() => window.BE.E.cortinaX), c0, 'the curtain moved');
+  await page.evaluate(() => { const m = document.getElementById('meses-control'); m.hidden = false; m.querySelector('[data-meses]').focus(); });
+  await press();
+  await page.locator('#fecha').click();
+  await page.locator('[role="dialog"] [role="radio"], dialog [role="radio"]').first().focus();
+  await press();
+  const got = await page.evaluate(() => window.__prevented);
+  assert.equal(got.length, keys.length * 4, JSON.stringify(got));
+  assert.deepEqual(got.filter((x) => x.endsWith(':true')), [], 'a handler took a browser shortcut');
 });
 
 test('entries that would read the same are told apart: a year searched over a reading, then «Ahora mismo»', async () => {
