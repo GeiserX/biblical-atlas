@@ -68,6 +68,9 @@
 .be-lane-label:hover .carril-pin, .carril-pin:focus-visible { opacity: 1; }
 .carril-pin.on { opacity: 1; background: none; }
 .be-lane-label:has(.carril-pin.on) { padding-right: 24px; }
+/* «Viajes de Pablo» no cabe en una línea cuando el carril está fijado (la chincheta le quita sitio) ni en el móvil: va en
+   dos líneas en vez de cortarse. Con interlínea 1, las dos caben en los 26 px del rótulo. */
+.carril-rotulo .carril-viajes > span { white-space: normal; line-height: 1; }
 .carril-pin.on { color: var(--accent); }
 .nivel-carril { height: 18px; margin-left: auto; }
 .linea-pista { cursor: crosshair; touch-action: none; }
@@ -158,6 +161,9 @@
 /* El nombre del carril se queda a la vista mientras se baja por un carril alto. */
 .carril-rotulo .be-lane-label { position: sticky; top: 27px; height: 26px; }
 .carril--meses .carril-rotulo .be-lane-label { position: relative; top: 0; height: 30px; }
+/* Con «Letra grande», las dos líneas de «Viajes de Pablo» miden 30 px: el rótulo crece hasta ellas. Cabe siempre en su
+   carril, que con esa letra mide al menos 32 px (una fila de 27 más el margen). Con el dedo el rótulo ya mide 44. */
+.carril-rotulo .carril-viajes { height: auto; min-height: 26px; }
 .carril-pista { position: relative; min-width: 0; overflow: hidden; touch-action: pan-y; cursor: grab; }
 .linea-filas.arrastrando .carril-pista { cursor: grabbing; }
 .carril--meses .carril-pista { cursor: crosshair; }
