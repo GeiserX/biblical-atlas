@@ -814,6 +814,21 @@ function travellerLane(p, id) {
   }, id);
 }
 
+/** Every lane label drawn: its name whole (no ellipsis, no clipped line) inside the label, and the label inside its lane. */
+function lanesLabels(p) {
+  return p.evaluate(() => [...document.querySelectorAll('#linea-filas .carril:not([hidden]) .carril-rotulo .be-lane-label')].map((l) => {
+    const s = l.querySelector('.carril-nombre') || l.querySelector(':scope > span:not(.edad):not(.be-tier)');
+    if (!s) return null;
+    const a = l.getBoundingClientRect(), b = s.getBoundingClientRect(), c = l.closest('.carril').getBoundingClientRect();
+    const lh = parseFloat(getComputedStyle(s).lineHeight) || b.height;
+    // Height on boxes, as in viajesWhole: with line height 1 the font's ascent and descent pass the line box.
+    const why = [[s.scrollWidth > s.clientWidth + 0.5, 'wider than its box'], [l.scrollHeight > l.clientHeight + 1, 'taller than its label'],
+      [b.top < a.top - 0.5 || b.bottom > a.bottom + 0.5 || b.right > a.right + 0.5, 'out of its label'],
+      [a.top < c.top - 0.5 || a.bottom > c.bottom + 0.5, `label ${Math.round(a.height)} px out of its lane of ${Math.round(c.height)}`]].filter(([x]) => x).map(([, w]) => w);
+    return { lane: l.closest('.carril').dataset.carril, name: s.textContent.trim(), lines: Math.round(b.height / lh), cut: why.join(', ') };
+  }).filter(Boolean));
+}
+
 test('every traveller lane carries one bar per journey with its stops below, like «Viajes de Pablo»', async () => {
   for (const screen of [DESKTOP, PHONE]) {
     const p = await open(screen, 't=30.5&v=40');
@@ -876,6 +891,33 @@ test('every traveller lane carries one bar per journey with its stops below, lik
     assert.equal(P.bars.length, 8);
     assert.ok(P.bars.every((b) => b.group === 0) && P.stops.length > 0 && P.stops.every((s) => s.group === 1));
     await q.context().close();
+  }
+});
+
+test('no lane name is cut: each goes in as many lines as it needs, pinned, with «Letra grande» and with a person', async () => {
+  for (const screen of [DESKTOP, PHONE]) {
+    const all = [];
+    const p = await open(screen, 't=-600.5&v=4125');
+    const ids = await p.evaluate(() => window.BE.lineaCarriles().map((c) => c.id).filter((id) => id !== 'meses'));
+    // The traveller with the longest name, selected: its lane goes by its name.
+    const larga = await p.evaluate(() => { const BE = window.BE; return [...new Set(BE.D.viajes.map((v) => v.persona || 'pablo'))].filter((id) => BE.PERS[id]).sort((a, b) => BE.PERS[b].nombre.length - BE.PERS[a].nombre.length)[0]; });
+    // Last, eight years around 520 a.e.c. with «Letra grande»: lanes of a single row, so the lane has to grow to its name.
+    const casos = [['milenios', null], ['pinned', `t=-600.5&v=4125&carriles=${ids.join(',')}`], ['letra grande', 'grande'], [`persona ${larga}`, 'persona'], ['8 años, letra grande', 'cerca']];
+    let q = p;
+    for (const [nombre, how] of casos) {
+      if (how && how.startsWith('t=')) { q = await open(screen, how); }
+      else if (how === 'grande') { await q.evaluate(() => window.BE.ponerPreferencia('letra-grande', true)); await frames(q, 4); }
+      else if (how === 'persona') { await q.evaluate((id) => window.BE.seleccionar({ tipo: 'persona', id }, { mover: false }), larga); await frames(q, 4); }
+      else if (how === 'cerca') { await goTo(q, -519.5, 8); await frames(q, 4); }
+      const ls = await lanesLabels(q);
+      const cut = ls.filter((l) => l.cut);
+      note(`${screen.name} lane names (${nombre}): ${ls.length} labels, ${ls.filter((l) => l.lines > 1).map((l) => `«${l.name}» ${l.lines}`).join(', ') || 'all in one line'}; ${cut.length} cut${cut.length ? `: ${cut.map((l) => `«${l.name}» (${l.cut})`).join(', ')}` : ''}`);
+      all.push(...cut.map((l) => `${nombre}: «${l.name}» (${l.lane}): ${l.cut}`));
+      assert.ok(ls.length >= (how === 'cerca' ? 3 : 8), `${nombre}: only ${ls.length} labels`);
+    }
+    await p.context().close();
+    if (q !== p) await q.context().close();
+    assert.deepEqual(all, []);
   }
 });
 

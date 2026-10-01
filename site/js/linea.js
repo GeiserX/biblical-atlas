@@ -472,11 +472,30 @@ const DEFS_MESES = '<defs><pattern id="p-hebreo" width="6" height="6" patternUni
 function medidasPanel(cuerpo = $('#linea-cuerpo')) {
   return { vh: cuerpo.clientHeight, top: cuerpo.scrollTop, cab: cuerpo.offsetTop, wCar: $('#carriles').offsetWidth, hLinea: $('#linea').clientHeight };
 }
+/** Alto del nombre de cada carril, que puede ir en dos o tres líneas: el carril mide al menos eso, así que ningún nombre
+    se sale por abajo. Se lee del DOM solo cuando cambian los nombres, la letra o el ancho, y antes de escribir nada. Un
+    carril escondido no se puede medir: se mide en el pintado siguiente, que se pide. */
+let claveNombres = '';
+const altosNombre = new Map();
+function medirNombres() {
+  const clave = `${claveEtiquetas}|${claveLetra}|${innerWidth}`;
+  if (clave !== claveNombres) { claveNombres = clave; altosNombre.clear(); }
+  let faltan = false;
+  for (const c of carrilesVista) {
+    if (altosNombre.has(c.id) || c.nombres) continue;
+    const x = carrilEls.get(c.id);
+    if (!x || x.el.hidden) { faltan = true; continue; }
+    altosNombre.set(c.id, x.rotulo.firstElementChild?.offsetHeight || 0);
+  }
+  return faltan;
+}
 function pintarFilas(V, med) {
   const view = { v0: E.vista[0], span: span() };
   const geom = { w: anchoLinea, t0: BE.T_MIN, G, key: `${claveLetra}|${G.row}` };
   const vacios = [];
   let top = 0, shownN = 0;
+  const faltan = medirNombres();
+  let otraVez = false;
   const selT = BE.selTexto(E.sel);
   for (const c of carrilesVista) {
     const x = carrilEls.get(c.id);
@@ -493,7 +512,8 @@ function pintarFilas(V, med) {
       if (lane.medida !== claveLetra) { FIL.measure(lane.items, medida, G); lane.medida = claveLetra; lane.packKey = null; }
       c.decor = decorDe(c);
       c.out = FIL.layoutLane(lane, view, geom, hold);
-      c.alto = c.out.nRows ? Math.max(c.out.nRows * G.row + c.decor + 3, altoRotulo()) : 0;
+      c.alto = c.out.nRows ? Math.max(c.out.nRows * G.row + c.decor + 3, altoRotulo(), altosNombre.get(c.id) || 0) : 0;
+      if (c.alto && faltan && !altosNombre.has(c.id)) otraVez = true;   // recién aparecido: se mide en el pintado siguiente
       if (!c.alto) vacios.push(c.nombre);
       for (const it of c.out.visible) it._clase = dim(it.sel);
     }
@@ -503,6 +523,7 @@ function pintarFilas(V, med) {
     top += c.alto;
   }
   altoFilas = top;
+  if (otraVez) { sucio.linea = true; programar(); }
   const filas = $('#linea-filas');
   filas.style.setProperty('--fila', `${G.row}px`);
   filas.classList.toggle('arrastrando', !!hold);
