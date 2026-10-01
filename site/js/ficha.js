@@ -67,7 +67,7 @@ function proponerHtml(tipo, id, nombre) {
   if (!carpeta || !id) return '';
   const fichero = `data/${carpeta}/${id}.yaml`;
   const titulo = `Corrección: ${nombre || id} (${tipo})`;
-  const cuerpo = `Fichero: \`${fichero}\`\nVista: ${location.href.split('?')[0].replace(/#.*$/, '')}#sel=${tipo}:${id}\n\n**Qué dato está mal**\n\n\n**Qué debería decir**\n\n\n**Fuente de jw.org que lo sostiene** (URL de jw.org y párrafo)\n\n`;
+  const cuerpo = `Fichero: \`${fichero}\`\nVista: ${location.href.split('?')[0].replace(/#.*$/, '')}#sel=${tipo}:${id}\n\n**Qué dato está mal**\n\n\n**Qué debería decir**\n\n\n**Fuente que lo sostiene** (enlace y párrafo)\n\n`;
   const url = `${REPO}/issues/new?title=${encodeURIComponent(titulo)}&body=${encodeURIComponent(cuerpo)}&labels=${encodeURIComponent('corrección')}`;
   return `<a class="be-wol proponer" href="${esc(url)}" ${EXTERNO} title="Abre una incidencia en GitHub con el fichero ${esc(fichero)}">Proponer una corrección</a>`;
 }

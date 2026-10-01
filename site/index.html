@@ -6,9 +6,9 @@
 <title>biblical-atlas · ¿Dónde y cuándo pasó lo que estás leyendo?</title>
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
-<meta name="description" content="La Biblia en el mapa y en el tiempo. Cada relato en su lugar y en su fecha, con cada dato enlazado a su fuente en jw.org.">
+<meta name="description" content="La Biblia en el mapa y en el tiempo. Cada relato en su lugar y en su fecha, con cada dato enlazado a su fuente.">
 <meta property="og:title" content="biblical-atlas">
-<meta property="og:description" content="La Biblia en el mapa y en el tiempo. Cada relato en su lugar y en su fecha, con cada dato enlazado a su fuente en jw.org.">
+<meta property="og:description" content="La Biblia en el mapa y en el tiempo. Cada relato en su lugar y en su fecha, con cada dato enlazado a su fuente.">
 <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@6.11.2/dist/maplibre-gl.css" integrity="sha384-ntw3zEt6rcVML7jDK0ULmHa5hxLB23afsPqzqfY+gLgMfAkbFCnCgPpkZvV5mmZX" crossorigin="anonymous">
 <link rel="stylesheet" href="kit/tokens.css">
 <link rel="stylesheet" href="kit/components.css">
@@ -107,7 +107,7 @@
     </div>
     <button class="filtro" id="filtro" type="button" hidden></button>
     <div class="be-spacer"></div>
-    <div class="be-date fecha" id="fecha" role="button" tabindex="0" aria-haspopup="dialog" aria-expanded="false" aria-live="polite"><span class="be-date__value" id="fecha-valor" title="Fechas según la cronología de la Traducción del Nuevo Mundo y de jw.org. Pulsa para ir a otra fecha.">c. 50 e.c.</span><span class="sr-only">, pulsa para ir a otra fecha</span><span class="fecha-ir" aria-hidden="true"><svg class="be-i be-i--sm" viewBox="0 0 24 24"><rect x="4" y="5.5" width="16" height="14.5" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M4 10h16M8.5 3.5v4M15.5 3.5v4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><span class="fecha-ir__texto">Ir a otra fecha</span></span></div>
+    <div class="be-date fecha" id="fecha" role="button" tabindex="0" aria-haspopup="dialog" aria-expanded="false" aria-live="polite"><span class="be-date__value" id="fecha-valor" title="Fechas según la cronología de la Traducción del Nuevo Mundo. Pulsa para ir a otra fecha.">c. 50 e.c.</span><span class="sr-only">, pulsa para ir a otra fecha</span><span class="fecha-ir" aria-hidden="true"><svg class="be-i be-i--sm" viewBox="0 0 24 24"><rect x="4" y="5.5" width="16" height="14.5" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M4 10h16M8.5 3.5v4M15.5 3.5v4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><span class="fecha-ir__texto">Ir a otra fecha</span></span></div>
     <div class="be-seg modos" role="radiogroup" aria-label="Mapa base">
       <button class="be-seg__opt" type="button" role="radio" data-mapa="antiguo" title="Mapa antiguo"><svg class="be-i be-i--sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6.5 9 4l6 2.5L20 4v13.5L15 20l-6-2.5L4 20Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>Mapa antiguo</button>
       <button class="be-seg__opt" type="button" role="radio" data-mapa="actual" title="Mapa actual"><svg class="be-i be-i--sm" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M4 12h16M12 4c2.5 2.5 2.5 13.5 0 16M12 4c-2.5 2.5-2.5 13.5 0 16" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>Actual</button>
@@ -159,7 +159,7 @@
       <span class="linea-estado" id="linea-estado"></span>
       <div class="be-spacer"></div>
       <button class="be-btn be-btn--icon be-btn--ghost linea-alto" id="linea-alto" type="button" aria-label="Alto de la línea de tiempo: arrastra hacia arriba o hacia abajo; pulsa para ampliarla o volver" title="Arrastra hacia arriba o hacia abajo para ver más o menos carriles; pulsa para ampliar la línea o volver"><svg class="be-i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v18M8 7l4-4 4 4M8 17l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-      <span class="cronologia" role="img" title="Las fechas siguen la cronología de la Traducción del Nuevo Mundo y de jw.org. Si una fecha secular difiere, sale solo como nota." aria-label="Las fechas siguen la cronología de la Traducción del Nuevo Mundo y de jw.org"><svg class="be-i be-i--sm" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 11v5.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="12" cy="7.8" r="1.2" fill="currentColor"/></svg><span class="cronologia-texto">Fechas</span></span>
+      <span class="cronologia" role="img" title="Las fechas siguen la cronología de la Traducción del Nuevo Mundo. Si una fecha secular difiere, sale solo como nota." aria-label="Las fechas siguen la cronología de la Traducción del Nuevo Mundo"><svg class="be-i be-i--sm" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 11v5.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="12" cy="7.8" r="1.2" fill="currentColor"/></svg><span class="cronologia-texto">Fechas</span></span>
     </div>
     <!-- Un solo desplazamiento: la regla queda arriba y los carriles bajan debajo (linea.js, linea-filas.js). -->
     <div class="linea-cuerpo" id="linea-cuerpo">
@@ -317,8 +317,8 @@
           <div class="portada-wrap">
             <h2 class="portada-zona__tit portada-zona__tit--peq" id="portada-fuentes-tit">¿De dónde sale cada dato?</h2>
             <ul class="portada-fuentes">
-              <li><span class="marca-nivel marca-nivel--1" role="img" title="Biblia o publicación de jw.org" aria-label="Biblia o publicación de jw.org"></span><span><b>La Traducción del Nuevo Mundo y jw.org.</b> Enlazamos; no copiamos sus textos.</span></li>
-              <li><span class="marca-nivel marca-nivel--2" role="img" title="Otra fuente que jw.org ha usado" aria-label="Otra fuente que jw.org ha usado"></span><span><b>Arqueología e investigación</b>, solo cuando jw.org las usa, y siempre con su fuente.</span></li>
+              <li><span class="marca-nivel marca-nivel--1" role="img" title="Biblia o publicación de jw.org" aria-label="Biblia o publicación de jw.org"></span><span><b>La Biblia y las publicaciones que la explican.</b> Cada dato enlaza a la página que lo dice.</span></li>
+              <li><span class="marca-nivel marca-nivel--2" role="img" title="Otra fuente que jw.org ha usado" aria-label="Otra fuente que jw.org ha usado"></span><span><b>Arqueología e investigación</b>, que acompañan a las anteriores, cada una con su enlace.</span></li>
               <li><span class="portada-sin-verificar" role="img" aria-label="Sin verificar"></span><span><b>Sin verificar:</b> se ve marcado, nunca escondido.</span></li>
             </ul>
             <p class="portada-fuentes__cifras" id="portada-cifras"></p>

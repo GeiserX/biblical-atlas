@@ -53,7 +53,7 @@ Los módulos, las interfaces y cómo añadir un tipo están en [`site/README.md`
 ## Qué no hace
 
 - No explica ni interpreta la Biblia. Sitúa el relato en su lugar y en su tiempo y lleva siempre a leer el pasaje.
-- No copia nada de jw.org y no prepara otros idiomas hasta que hagan falta. Solo en español.
+- No prepara otros idiomas hasta que hagan falta. Solo en español.
 - No hay analítica ni cuentas. Lo que recuerda (la última vista, los capítulos leídos, la letra grande, el modo reunión) vive en el almacenamiento de tu navegador.
 
 ## Licencia

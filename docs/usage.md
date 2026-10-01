@@ -7,7 +7,7 @@ Todo lo que hace la aplicación, vista a vista. La regla de la casa: **una fecha
 - Arrastra el cursor de la línea de tiempo, o pulsa reproducir (barra espaciadora). Con Mayúsculas y las flechas saltas a la parada o carta anterior o siguiente.
 - Pulsa la fecha de arriba para ver qué quiere decir, los sucesos cercanos y los momentos clave, y para ir a otra sin escribir: era, año, mes hebreo y día.
 - La rueda sobre la línea cambia la escala, de milenios a días. Al llegar a los meses y los días salen dos filas alineadas, nuestros meses y los meses hebreos. La página [El calendario de la Biblia](https://biblical-atlas.geiser.cloud/calendario.html) explica en qué se diferencian.
-- Las fechas siguen la cronología de la Traducción del Nuevo Mundo. Si la historia secular da otra fecha y una publicación de jw.org la menciona, sale como nota y no mueve el cursor.
+- Las fechas siguen la cronología de la Traducción del Nuevo Mundo. Si la historia secular da otra fecha y una fuente enlazada la menciona, sale como nota y no mueve el cursor.
 
 ## El mapa
 
@@ -23,7 +23,7 @@ Un lugar, una persona, un suceso, una carta, un viaje, un periodo, un hallazgo o
 
 ![La ficha de Filipos: qué fue, sus pasajes, su fuente con su marca y qué pasaba allí en el año 50](images/screenshots/ficha.png)
 
-- **Pasajes.** Cada cita lleva a su capítulo en jw.org, con los versículos citados resaltados. Nada se copia.
+- **Pasajes.** Cada cita lleva a su capítulo en jw.org, con los versículos citados resaltados.
 - **Por qué lo decimos.** Qué pasaje o qué párrafo sostiene cada dato. La marca dice de qué fuente es: punto lleno, la Biblia o una publicación de jw.org; aro, otra fuente que jw.org ha usado, que acompaña y nunca corrige a la primera.
 - **Pendiente de verificar.** Un dato que aún no hemos comprobado lo dice.
 - **Vídeos.** Los vídeos públicos de jw.org que nombran ese lugar, esa persona o ese capítulo, con enlace a cada uno.
