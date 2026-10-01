@@ -5,13 +5,26 @@ names:
 - name: Árbol grande de Tabor
   note: Perspicacia «Tabor», núm. 3; no es el monte Tabor (núm. 1) ni la ciudad levita de Zabulón (núm. 2).
 type: region
-lat: 31.922778
-lon: 35.241389
+lat: null
+lon: null
 precision: uncertain
-coord_source: openbible:a8530e9
-coord_url: https://www.openbible.info/geo/ancient/a8530e9/tabor-3
-coord_note: Punto de OpenBible para su primera propuesta, a unos 2 km de Betel. Perspicacia no da sitio; solo lo pone al
-  parecer en Benjamín, y Betel cae en Benjamín (Jos 18:22).
+coord_source: null
+coord_url: null
+candidates:
+- name: En Benjamín, según parece
+  geometry:
+    type: zone
+    lat: 31.859585
+    lon: 35.313958
+    radius_km: 22
+  checked_on: '2026-10-02'
+  status: favored_level_1
+  sources:
+  - it-tabor
+  reason: 'Perspicacia «Tabor», núm. 3: según parece estaba en Benjamín; hoy se desconoce su ubicación.'
+  note: Misma zona que la ficha benjamin; centro y radio nuestros.
+  coord_source: calculation
+coord_note: 'Sin punto: Perspicacia no da sitio y solo lo pone, al parecer, en Benjamín.'
 summary: Árbol conocido, al parecer en Benjamín, donde Saúl iba a encontrar a tres hombres que subían a Betel a adorar a Dios
   y que le darían dos panes. No se sabe dónde estaba.
 reason: 'Perspicacia «Tabor», núm. 3; 1Sa 10:3. Es un hito: «región» es el tipo más cercano. OpenBible: solo el punto.'
@@ -26,5 +39,10 @@ links:
 - title: 1 Samuel 10 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/1-samuel/10/
   type: bible
-checked_on: '2026-09-29'
+checked_on: '2026-10-02'
 status: verified
+history:
+- date: '2026-10-02'
+  change: 'Pierde el punto de OpenBible (31.922778, 35.241389): jw.org dice que no se sabe dónde estaba y no nombra ese sitio.
+    Queda como candidato lo que sí dice jw.org.'
+  source: it-tabor

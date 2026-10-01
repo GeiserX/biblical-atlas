@@ -6,13 +6,27 @@ names:
 - name: Halah
   note: Grafía de Perspicacia.
 type: region
-lat: 36.43173
-lon: 43.19459
+lat: null
+lon: null
 precision: uncertain
-coord_source: openbible:abf176f
-coord_url: https://www.openbible.info/geo/ancient/abf176f/halah
-coord_note: Primera identificación de OpenBible, la zona de Al Abbasiyah. Perspicacia dice que no se sabe dónde estaba y recoge
-  que hay quien la une a la Hallahu de los textos acadios.
+coord_source: null
+coord_url: null
+candidates:
+- name: En Asiria
+  geometry:
+    type: zone
+    lat: 36.3594
+    lon: 43.1528
+    radius_km: 150
+  checked_on: '2026-10-02'
+  status: favored_level_1
+  sources:
+  - it-halah
+  reason: 'Perspicacia «Halah»: lugar adonde los reyes asirios llevaron a los israelitas; aún se desconoce dónde estaba.'
+  note: Centro nuestro en el punto de Asiria de OpenBible. Radio nuestro.
+  coord_source: calculation
+coord_note: 'Sin punto: Perspicacia dice que no se sabe dónde estaba y solo recoge que hay quien la une a la Hallahu de los
+  textos acadios.'
 summary: Lugar de Asiria adonde los reyes asirios llevaron a israelitas desterrados. No se conoce su emplazamiento.
 reason: 'Perspicacia «Halah»; 2Re 17:6 y 18:11. Coordenada de OpenBible: solo tomamos el punto.'
 sources:
@@ -24,5 +38,10 @@ links:
 - title: 'Perspicacia: «Halah»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Halah/
   type: perspicacia
-checked_on: '2026-09-30'
+checked_on: '2026-10-02'
 status: verified
+history:
+- date: '2026-10-02'
+  change: 'Pierde el punto de OpenBible (36.43173, 43.19459): jw.org dice que no se sabe dónde estaba y no nombra ese sitio.
+    Queda como candidato lo que sí dice jw.org.'
+  source: it-halah

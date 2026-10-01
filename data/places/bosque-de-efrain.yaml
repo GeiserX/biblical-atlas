@@ -4,13 +4,28 @@ name: Bosque de Efraín
 names:
 - name: Bosque de Efraín
 type: region
-lat: 32.381111
-lon: 35.764722
+lat: null
+lon: null
 precision: uncertain
-coord_source: openbible:aa24ad4
-coord_url: https://www.openbible.info/geo/ancient/aa24ad4/ephraim-3
-coord_note: 'Punto de OpenBible en la reserva forestal de Ajlún. Perspicacia no conoce el sitio y solo lo cree cerca de Mahanaim.
-  Es un bosque: «región» es el tipo más cercano.'
+coord_source: null
+coord_url: null
+candidates:
+- name: En Galaad, probablemente cerca de Mahanaim
+  geometry:
+    type: zone
+    lat: 32.187016
+    lon: 35.69211
+    radius_km: 20
+  checked_on: '2026-10-02'
+  status: favored_level_1
+  sources:
+  - it-efrain
+  reason: 'Perspicacia «Efraín», núm. 4: se desconoce dónde estaba en Galaad, pero probablemente quedaba cerca de Mahanaim.'
+  note: Centro nuestro en el punto de Galaad de OpenBible, junto al Jaboq y a menos de 1 km de un candidato de Mahanaim. Radio
+    nuestro.
+  coord_source: calculation
+coord_note: 'Sin punto: Perspicacia no conoce el sitio y solo lo cree cerca de Mahanaim. Es un bosque: «región» es el tipo
+  más cercano.'
 summary: Zona de bosque en Galaad, al este del Jordán, donde el ejército de David venció al de Absalón y donde murió este.
   No se sabe dónde estaba; probablemente, cerca de Mahanaim.
 reason: 'Perspicacia «Efraín», núm. 4; 2Sa 18:6-17. OpenBible: solo el punto.'
@@ -25,5 +40,10 @@ links:
 - title: 2 Samuel 18 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-samuel/18/
   type: bible
-checked_on: '2026-09-29'
+checked_on: '2026-10-02'
 status: verified
+history:
+- date: '2026-10-02'
+  change: 'Pierde el punto de OpenBible (32.381111, 35.764722): jw.org dice que no se sabe dónde estaba y no nombra ese sitio.
+    Queda como candidato lo que sí dice jw.org.'
+  source: it-efrain
