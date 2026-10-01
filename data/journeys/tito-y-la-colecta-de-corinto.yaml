@@ -40,13 +40,14 @@ stops:
     chronology: tnm
     text: c. 55 e.c.
   note: Pablo escribía entonces desde Éfeso (1Co 16:8).
-  reason: '2Co 12:18 dice que Pablo lo envió, pero no desde dónde. El suceso pablo-envia-a-tito-a-corinto pone el envío en
-    Éfeso: salida deducida.'
+  reason: '2Co 12:18 dice que Pablo lo envió, pero no desde dónde. Perspicacia «Pablo», apartado «Tercer viaje misional», dice
+    que al parecer lo envió desde Éfeso: salida deducida.'
   sources:
   - 2-corintios-12
   - it-tito-persona
+  - it-pablo
   - 1-corintios-16
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-01'
   status: pending
 - order: 2
   place: corinto
