@@ -95,6 +95,8 @@ Para comprobar la alineación, Corinto (37,9058 N, 22,8787 E) debe caer en la co
 - Las paradas en **tiempo narrativo**, de las que sabemos el orden pero no la fecha, se reparten por igual entre las dos anclas que las rodean.
 - Entre dos paradas el marcador avanza en línea recta. Si una de las dos es narrativa, el marcador lleva un halo discontinuo, el rótulo «posición estimada» y la línea de tiempo raya el tramo que no sabemos fechar.
 - Fuera de las fechas de los datos, la ficha dice que no sabemos dónde estaba y ofrece las paradas más cercanas. Nunca se inventa una posición.
+- El mapa dibuja un solo viaje de Pablo, el que recorre en esa fecha, cada uno en su color: lo hecho en firme, lo que falta punteado y la región sin ruta conocida a trazos. Sus otros viajes no se dibujan. Sus ocho viajes van seguidos, de 34 a 65: mientras se queda en la última parada de uno, como Antioquía o Roma, se ve ese viaje entero. Antes de 34 y después de 65 no se dibuja nada de Pablo, igual que con cualquier otra persona fuera de las fechas de sus viajes.
+- Un viaje seleccionado se ve solo, entero y en su color, aunque la fecha caiga fuera de él. Seleccionar a una persona dibuja todos sus viajes: el de esa fecha en color y los demás en gris.
 
 ## Dirección de la página
 
