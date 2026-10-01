@@ -155,6 +155,7 @@ function irAMes(t, escala) {
 }
 function enlaceMes(m) {
   const vista = BE.textoHash ? BE.textoHash() : location.hash.slice(1);
+  BE.historia.dejar();
   location.href = `calendario.html${location.search}#desde=${encodeURIComponent(vista)}&mes=${encodeURIComponent(m.id)}`;
 }
 function preguntasMes(nq) {
@@ -459,35 +460,143 @@ function buscarTexto(texto) {
 // guardamos una copia de la entrada actual con pushState. Así la escritura siguiente sustituye la copia y la
 // entrada anterior queda en el historial con la vista de antes.
 // Nada depende del reloj: lo que tarde en pintarse la vista (el mapa cargando, un teléfono lento) no crea entradas.
+// Los botones «Atrás» y «Adelante» (docs/ideas/atras-adelante.md, opción E) llaman a history.back() y history.forward().
+// Para saber si hay adónde ir y cómo se llama, cada entrada lleva en history.state su número y el nombre de su vista, y
+// la pestaña guarda los nombres de cada visita en sessionStorage. Las reglas puras están en visit-history.js.
 // ---------------------------------------------------------------------------
 const historia = (() => {
+  const H = BE.visitHistory;
+  const CLAVE_VISITAS = 'biblical-atlas:visitas';
+  const TITULO = document.title;   // el de la portada
+  const leerVisitas = () => { try { return JSON.parse(sessionStorage.getItem(CLAVE_VISITAS) || '[]'); } catch { return []; } };
+  const guardarVisitas = (v) => { try { sessionStorage.setItem(CLAVE_VISITAS, JSON.stringify(v)); } catch { /* sin almacenamiento */ } };
+  const nuevaVisita = () => `${Date.now().toString(36)}${Math.random().toString(36).slice(2, 6)}`;
+  const enPortada = () => !location.hash || location.hash === '#' || /[#&]portada=1(&|$)/.test(location.hash);
+  const ponerTitulo = (nombre) => { document.title = H.pageTitle(nombre, { landing: enPortada(), base: TITULO }); };
+
+  // La entrada en la que estamos. Al cargar la página: la nuestra si recargamos o volvemos desde otra página; si no,
+  // empieza una visita. Antes de los datos solo se sabe nombrar la portada; lo demás lo nombra sello() al llegar.
+  let actual;
+  {
+    const r = H.begin(history.state, leerVisitas(), nuevaVisita(), enPortada() ? 'la portada' : null);
+    actual = r.state;
+    guardarVisitas(r.visits);
+    history.replaceState(actual, '', location.href);
+  }
+
+  /** Lo que enseña la vista de ahora, para ponerle nombre (BE.visitHistory.viewName). */
+  function vista() {
+    const p = new URLSearchParams(BE.textoHash());
+    const nombre = (s) => { const sel = BE.parseSel(s); return sel ? BE.nombreSel(sel) : null; };
+    const v = { date: $('#fecha-valor')?.textContent.trim() || fmtCursor(E.t) };
+    if (p.get('portada') === '1') v.landing = true;
+    if (p.has('leer')) v.reading = { chapter: nombre(`pasaje:${p.get('leer')}`), passage: +p.get('pas') || null };
+    if (p.has('paso') && E.sel?.tipo === 'recorrido') v.tour = { name: BE.nombreSel(E.sel), stop: +p.get('paso') || null };
+    if (p.has('conexion')) v.connection = p.get('conexion').split('~').map((x) => nombre(x));
+    if (p.has('grafo')) { const c = BE.grafo?.ruta.at(-1); v.graph = (c && nombre(c)) || ''; }
+    if (p.has('sinc')) v.sync = BE.L[p.get('sinc').split('~')[0]]?.nombre || '';
+    if (p.get('ahora') === '1') v.now = true;
+    if (E.sel) v.selection = BE.nombreSel(E.sel);
+    return v;
+  }
+  /** Enciende, apaga y rotula las dos parejas de botones. Navigation API, donde la hay, confirma lo que dicen los
+      números: con más de 50 entradas el navegador olvida las primeras, y una dirección escrita a mano a otra página
+      se lleva las de delante. */
+  function pintarBotones() {
+    const a = H.around(actual, leerVisitas());
+    const nav = window.navigation;
+    if (nav && typeof nav.canGoBack === 'boolean') { a.back.can = a.back.can && nav.canGoBack; a.forward.can = a.forward.can && nav.canGoForward; }
+    for (const [dir, cual] of [['back', 'atras'], ['forward', 'adelante']]) {
+      const texto = H.buttonLabel(dir, a[dir]);
+      for (const b of document.querySelectorAll(`[data-historia="${cual}"]`)) {
+        const conFoco = document.activeElement === b;
+        b.disabled = !a[dir].can;
+        if (b.title !== texto) { b.title = texto; b.setAttribute('aria-label', texto); }
+        // Un botón que se apaga pierde el foco: pasa al otro, que ahora tiene adónde ir.
+        if (conFoco && b.disabled) b.parentElement.querySelector('button:not(:disabled)')?.focus({ preventScroll: true });
+      }
+    }
+  }
+  function empujar() {
+    const r = H.push(actual, leerVisitas());
+    actual = r.state;
+    guardarVisitas(r.visits);
+    history.pushState(actual, '', location.href);
+    pintarBotones();
+  }
+  /** base.js, al escribir la dirección: el nombre de la vista de ahora pasa a la entrada y al título de la pestaña.
+      Devuelve el estado que hay que escribir, o null si no ha cambiado. */
+  function sello() {
+    if (!BE.D) return null;
+    revisar();   // una vista que cambió sin pintarse todavía («Ahora mismo») tiene su entrada antes de escribirse
+    const nombre = H.viewName(vista());
+    ponerTitulo(nombre);
+    const igual = nombre === actual.name && history.state?.visit === actual.visit && history.state?.step === actual.step;
+    if (!igual) { const r = H.rename(actual, leerVisitas(), nombre); actual = r.state; guardarVisitas(r.visits); }
+    pintarBotones();
+    return igual ? null : actual;
+  }
+  /** Salir de la página por un enlace: el navegador tira las entradas de delante, y aquí también. */
+  function dejar() { guardarVisitas(H.cutForward(actual, leerVisitas())); }
+
   // clave: la vista que ya tiene su entrada. quieto: tras entrar desde la portada o tras Atrás y Adelante, cada cambio
   // de vista que sigue es parte del mismo paso (un recorrido pone su parada un fotograma después), hasta que la persona
   // vuelve a pulsar o a teclear después de verlo pintado. absorber: marcar() ya guardó la entrada; el siguiente
   // fotograma solo apunta la clave nueva.
   let clave = null, quieto = false, pintado = false, absorber = false;
   const claveActual = () => [BE.selTexto(E.sel), ...BE.parametros.filter((x) => x.historia).map((x) => x.escribir() ?? '')].join('|');
-  function empujar() { history.pushState(null, '', location.href); }
   function quedarse() { quieto = true; pintado = false; absorber = false; }
-  BE.pintores.push(() => {
+  /** Si la vista cambió, guarda la de antes en su entrada. Lo llaman cada fotograma y sello(), antes de escribir la
+      dirección: así ningún cambio llega a la dirección sin su entrada, se pinte o no antes. */
+  function revisar() {
     const k = claveActual();
     if (clave === null) { clave = k; return; }   // arranque: la primera vista no crea entrada
     if (quieto || absorber) { clave = k; pintado = true; absorber = false; return; }
     if (k === clave) return;
     clave = k;
     empujar();
-  });
+  }
+  BE.pintores.push(revisar);
   const despertar = () => { if (quieto && pintado) quieto = false; };
   window.addEventListener('pointerdown', despertar, true);
   window.addEventListener('keydown', despertar, true);
-  // Antes de los datos no hay vista que poner: el arranque lee la dirección cuando llegan.
-  window.addEventListener('popstate', () => { quedarse(); if (BE.D) BE.aplicarHash(false); });
+  // Atrás o Adelante, del sitio o del navegador. Una entrada sin estado es nueva: un enlace con «#» o una dirección
+  // escrita a mano, siempre justo después de la nuestra. Antes de los datos no hay vista que poner: el arranque lee la
+  // dirección cuando llegan.
+  window.addEventListener('popstate', () => {
+    const r = H.arrive(actual, history.state, leerVisitas(), nuevaVisita());
+    actual = r.state;
+    guardarVisitas(r.visits);
+    if (r.fresh) history.replaceState(actual, '', location.href);
+    ponerTitulo(actual.name);
+    pintarBotones();
+    quedarse();
+    if (BE.D) BE.aplicarHash(false);
+  });
+  // De vuelta desde la caché del navegador: la lista pudo cambiar mientras tanto (se salió por un enlace).
+  window.addEventListener('pageshow', (e) => { if (e.persisted) pintarBotones(); });
+  document.addEventListener('click', (e) => {
+    const b = e.target.closest?.('[data-historia]');
+    if (!b || b.disabled) return;
+    if (b.dataset.historia === 'atras') history.back(); else history.forward();
+  });
+  // Un enlace a otra página en esta pestaña (Acerca de, el calendario, jw.org sin pestaña nueva).
+  window.addEventListener('click', (e) => {
+    if (e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+    const a = e.target.closest?.('a[href]');
+    if (!a || (a.target && a.target !== '_self') || a.hasAttribute('download')) return;
+    const u = new URL(a.href, location.href);
+    if (u.origin === location.origin && u.pathname === location.pathname && u.search === location.search) return;   // un «#»: llega por popstate
+    dejar();
+  });
+  pintarBotones();
   return {
     /** Un salto de fecha que merece su entrada (un año buscado, una parada): se guarda la vista de antes. */
     marcar() { if (clave !== null && !quieto) { empujar(); absorber = true; BE.programar(); } },
     /** Entrar desde la portada: una sola entrada nueva, sea cual sea el destino y tarde lo que tarde. Se guarda la de
         la portada; fn pone el destino, y lo que cambie después sin que la persona toque nada es parte de él. */
     entrar(fn) { empujar(); quedarse(); fn(); BE.programar(); },
+    empujar, sello, dejar,
   };
 })();
 

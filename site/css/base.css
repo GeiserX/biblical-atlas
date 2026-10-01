@@ -44,6 +44,13 @@ a { color: var(--link); }
   .be-date__value { font-size: 19px; }
 }
 
+/* ---------- Atrás y adelante de la visita (BE.historia, buscar.js) ---------- */
+/* Junto al logo en la barra; en el teléfono, en la fila de la hoja, a la izquierda de «Leyenda» (abajo). Apagados cuando no
+   hay adónde ir: se ven, pero más tenues. */
+.atras-adelante { display: flex; flex: none; gap: 2px; }
+.atras-adelante .be-btn { cursor: pointer; }
+.atras-adelante .be-btn:disabled { cursor: default; opacity: .4; }
+
 /* ---------- Fecha de la barra: se ve que abre algo ---------- */
 /* Un calendario e «Ir a otra fecha» al lado de la fecha, y el borde que se marca al pasar: es un botón, no un rótulo.
    Abre el panel de la fecha (datepicker.js, estilos en datepicker.css). */
@@ -120,6 +127,9 @@ a { color: var(--link); }
      también con la hoja plegada. */
   .sobre-hoja { display: flex; align-items: center; gap: 8px; order: 0; flex: none; padding: 0 10px 8px; background: var(--surface); border-bottom: 1px solid var(--line); }
   .sobre-hoja:not(:has(> :not([hidden]))) { display: none; }
+  /* Una sola pareja a la vista: la de la hoja, que se ve también plegada y queda al alcance del pulgar. */
+  .be-topbar > .atras-adelante { display: none; }
+  .atras-adelante--hoja .be-btn--icon { width: 32px; height: 32px; }
   .hoja-asa { order: -1; }
   .panel.plegada .panel-cuerpo { display: none; }
   .hoja-asa { display: block; width: 100%; border: 0; border-radius: 18px 18px 0 0; background: var(--surface); padding: 8px 0 2px; cursor: pointer; touch-action: none; }

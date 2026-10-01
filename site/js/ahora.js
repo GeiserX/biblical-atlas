@@ -390,8 +390,9 @@ BE.pintores.push((c) => {
   if (S.abierta && (c.cursor || c.panel)) cursorSincronia();
 });
 BE.parametros.push(
-  { nombre: 'ahora', escribir: () => (ahoraAbierta ? '1' : null), leer: (v) => { if ((v === '1') !== ahoraAbierta) ponerAhora(v === '1'); } },
-  { nombre: 'sinc', escribir: () => (S.abierta ? `${S.lugar || ''}~${S.periodo || ''}` : null),
+  // «Ahora mismo» y la sincronía son vistas, como el grafo y la lectura: cada una tiene su entrada de historial.
+  { nombre: 'ahora', historia: true, escribir: () => (ahoraAbierta ? '1' : null), leer: (v) => { if ((v === '1') !== ahoraAbierta) ponerAhora(v === '1'); } },
+  { nombre: 'sinc', historia: true, escribir: () => (S.abierta ? `${S.lugar || ''}~${S.periodo || ''}` : null),
     leer: (v) => {
       if (!v) { if (S.abierta) alternar(false); return; }
       const [lugar, periodo] = v.split('~');

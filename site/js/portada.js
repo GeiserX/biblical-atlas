@@ -108,14 +108,14 @@ function clave(el) { return el?.closest?.('[data-p]')?.dataset.p || null; }
 function entrarEn(href, desde) {
   vuelta.p = clave(desde);
   if (BE.D) {
-    BE.historia.entrar(() => { cerrarHoja(); history.replaceState(null, '', href); BE.aplicarHash(false); });
+    BE.historia.entrar(() => { cerrarHoja(); history.replaceState(history.state, '', href); BE.aplicarHash(false); });
     return;
   }
   if (BE.fallo) { avisarFallo(); return; }
   // Antes de los datos: la portada se queda con «Abriendo el mapa…» y el arranque lee la dirección como si fuera un
   // enlace compartido (la portada se quita al leerla). La entrada de la portada se guarda una sola vez.
-  if (!esperando) history.pushState(null, '', location.href);
-  history.replaceState(null, '', href);
+  if (!esperando) BE.historia.empujar();
+  history.replaceState(history.state, '', href);
   esperando?.removeAttribute('aria-busy');
   esperando = desde?.closest?.('a, button') || null;
   esperando?.setAttribute('aria-busy', 'true');
@@ -382,7 +382,7 @@ $('#inicio').addEventListener('click', () => { if (BE.D && !abierta) BE.historia
 // El foco va a la hoja (sin mover la página ni sacar el teclado del teléfono): Av Pág, las flechas y el espacio la
 // desplazan a ella, y las teclas del sitio de detrás no se disparan.
 if (abierta) {
-  if (!location.hash || location.hash === '#') history.replaceState(null, '', '#portada=1');
+  if (!location.hash || location.hash === '#') history.replaceState(history.state, '', '#portada=1');   // conserva el número de la entrada
   mostrar(true);
   hoja.focus({ preventScroll: true });
 }

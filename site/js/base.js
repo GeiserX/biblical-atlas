@@ -310,7 +310,10 @@ function guardarHash() {
   hashTimer = setTimeout(() => {
     spanHash = span();
     ultimoHash = '#' + textoHash();
-    if (location.hash !== ultimoHash) history.replaceState(null, '', ultimoHash);
+    // Cada entrada lleva su número y el nombre de su vista (BE.historia, buscar.js): se escriben con la dirección y
+    // nunca se pierden, porque de ellos salen atrás y adelante.
+    const estado = BE.historia?.sello();
+    if (location.hash !== ultimoHash || estado) history.replaceState(estado || history.state, '', ultimoHash);
   }, 250);
 }
 function leerHash() {

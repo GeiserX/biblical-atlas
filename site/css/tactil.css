@@ -12,6 +12,7 @@
   .buscador .be-search { height: 44px; }
   #fecha { min-height: 44px; align-items: center; }
   #estudio-boton, #acerca, #compartir, #reunion-boton { min-width: 44px; height: 44px; }
+  .atras-adelante .be-btn--icon { width: 44px; height: 44px; }   /* atrás y adelante, en la barra y en la hoja */
   .filtro { min-height: 44px; }
   .modos .be-seg__opt { height: 44px; min-width: 44px; justify-content: center; }
 
