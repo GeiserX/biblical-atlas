@@ -852,10 +852,21 @@ def escribir_json(salida, rutas, ruta_js):
 CONTADOS = ("lugares", "personas", "eventos", "periodos", "cartas", "viajes", "hallazgos", "recorridos", "fuentes", "libros")
 
 
+def cifras_fuentes(salida):
+    """(fuentes escritas que algún dato cita, capítulos de la Biblia que añade la compilación). Son las dos cifras de
+    la portada (cifrasFuentes en site/js/portada.js cuenta igual) y de las insignias del README."""
+    F = salida["fuentes"]
+    citadas = {fid for k, v in salida.items() if k != "fuentes" for _, fid in fuentes_de(v, ("fuentes", "fuente"))}
+    return (sum(1 for fid, f in F.items() if not f.get("implicita") and fid in citadas),
+            sum(1 for f in F.values() if f.get("implicita")))
+
+
 def resumen(salida):
-    """Cuántas fichas hay de cada tipo. Lo leen las insignias del README a través de site/stats.json."""
+    """Cuántas fichas hay de cada tipo. Lo leen las insignias del README a través de site/stats.json. `fuentes` son
+    las escritas que algún dato cita y `capitulos`, los capítulos de la Biblia que la compilación crea como fuentes."""
     r = {"generado": salida["generado"]}
     r.update({k: len(salida[k]) for k in CONTADOS})
+    r["fuentes"], r["capitulos"] = cifras_fuentes(salida)
     return r
 
 
