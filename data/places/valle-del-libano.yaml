@@ -10,6 +10,16 @@ precision: zone
 coord_source: openbible:ac2192b
 coord_url: https://www.openbible.info/geo/ancient/ac2192b/valley-of-lebanon
 coord_note: Punto representativo de la Becá en OpenBible, el valle que Perspicacia sitúa entre las dos cordilleras.
+shape:
+  type: ellipse
+  radii_km: [50, 6.5]
+  bearing: 22.5
+  note: 'Elipse nuestra de 100 km de largo y 13 de ancho, la media de lo que da Perspicacia, alrededor del punto de la Becá y orientada al NNE, como las cordilleras.'
+  sources:
+  - it-libano
+  reason: 'Perspicacia «Líbano», párr. 1: las dos cordilleras van paralelas unos 100 km, de NNE a SSO, y entre ellas queda un valle de 10 a 16 km de ancho.'
+  checked_on: '2026-10-02'
+  status: verified
 summary: Valle largo y fértil, de 10 a 16 km de ancho, entre las cordilleras del Líbano y del Antilíbano. En él estaba Baal-Gad,
   el límite norte de la conquista.
 reason: 'Perspicacia «Líbano», párr. 1: la Becá o Celesiria, con Jos 11:17 y 12:7. OpenBible: solo el punto.'

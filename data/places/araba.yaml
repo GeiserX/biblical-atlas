@@ -15,6 +15,27 @@ coord_source: openbible:a2bb5ef
 coord_url: https://www.openbible.info/geo/ancient/a2bb5ef/arabah
 coord_note: Punto representativo de OpenBible, al sur del mar Muerto; el Arabá de la Biblia llega al norte hasta el mar de
   Galilea.
+shape:
+  type: polygon
+  vertices:
+  - [33.258, 35.567]
+  - [32.823, 35.505]
+  - [31.766, 35.474]
+  - [31.018, 35.369]
+  - [30.435, 35.071]
+  - [29.541, 34.918]
+  - [29.52, 35.082]
+  - [30.398, 35.232]
+  - [30.982, 35.531]
+  - [31.757, 35.643]
+  - [32.815, 35.676]
+  - [33.24, 35.737]
+  note: 'Contorno nuestro: franja de 16 km, el ancho mayor que da Perspicacia, a lo largo de la fosa por Dan, el mar de Galilea, la boca del Jordán, el extremo sur del mar Salado, el punto de OpenBible y Elat.'
+  sources:
+  - it-araba
+  reason: 'Perspicacia «Arabá», párr. 1 a 3: la fosa baja del pie del Hermón por el Jordán y el mar Muerto al golfo de ʽAqaba, unos 435 km, con 800 m a 16 km de ancho.'
+  checked_on: '2026-10-02'
+  status: verified
 summary: Gran fosa que baja desde el pie del Hermón por el Jordán y el mar Muerto hasta el golfo de ʽAqaba, a lo largo de
   unos 435 km. Al sur del mar Muerto es muy árida.
 reason: 'Perspicacia «Arabá», párr. 1 a 4; Dt 1:7 y 2:8. OpenBible: solo el punto.'

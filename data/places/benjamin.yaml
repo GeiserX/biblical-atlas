@@ -26,6 +26,22 @@ candidates:
   coord_source: calculation
   note: 'Centro calculado por nosotros: punto medio entre Jericó (Tell es-Sultan) y Gabaón (el-Jib) de OpenBible. El radio
     también es nuestro.'
+  shape:
+    type: polygon
+    vertices:
+    - [31.874, 35.54]
+    - betel
+    - bet-horon-baja
+    - quiryat-jearim
+    - jerusalen
+    - rio-jordan
+    note: 'Contorno nuestro por los lugares que nombra la frontera: el Jordán frente a Jericó, Betel, Bet-horón Baja, Quiryat-jearim, Jerusalén y la boca del Jordán en el mar Salado.'
+    sources:
+    - it-benjamin
+    - josue-18
+    reason: 'Perspicacia «Benjamín», núm. 2, y Jos 18:11-20: al norte, del Jordán junto a Jericó por Betel a Bet-horón Baja; al oeste, a Quiryat-jearim; al sur, por Jerusalén al extremo norte del mar Muerto.'
+    checked_on: '2026-10-02'
+    status: verified
 summary: 'Territorio de la tribu de Benjamín, entre Judá y los hijos de José: del Jordán, junto a Jericó, hasta cerca de Bet-Horón
   y Quiryat-Jearim. Medía unos 45 km de este a oeste y 19 de norte a sur.'
 reason: Perspicacia «Benjamín», núm. 2, apartado del territorio; Jos 18:11-28. Zona calculada por nosotros.
