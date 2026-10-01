@@ -664,12 +664,16 @@ const historia = (() => {
     destinoTimer = setTimeout(() => { destino = null; }, 1000);
     if (atras) history.back(); else history.forward();
   });
-  // Un enlace a otra página en esta pestaña (Acerca de, el calendario, jw.org sin pestaña nueva).
+  // Un enlace a otra página en esta pestaña (Acerca de, el calendario). Solo cuenta lo que de verdad cierra esta página:
+  // un clic sencillo, sin Ctrl, ⌘, Mayúsculas ni Alt, en un enlace http(s) que se abre aquí. Un mailto:, un tel:, una
+  // pestaña nueva (las citas y las fuentes de jw.org) o una descarga dejan la página abierta y lo de delante sigue ahí.
   window.addEventListener('click', (e) => {
     if (e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
     const a = e.target.closest?.('a[href]');
     if (!a || (a.target && a.target !== '_self') || a.hasAttribute('download')) return;
-    const u = new URL(a.href, location.href);
+    let u;
+    try { u = new URL(a.getAttribute('href'), document.baseURI); } catch { return; }
+    if (u.protocol !== 'http:' && u.protocol !== 'https:') return;
     if (u.origin === location.origin && u.pathname === location.pathname && u.search === location.search) return;   // un «#»: llega por popstate
     dejar();
   });

@@ -444,6 +444,50 @@ test('a stateless entry reached by going back starts a visit there, and another 
   assert.equal(h.back.label, 'Atrás: Pablo');
 });
 
+test('only a link that unloads the page in this tab cuts what is ahead: mailto, a new tab or a modified click keep Forward', async () => {
+  const page = await openPage(DESKTOP, { hash: 't=50.3000' });
+  for (const q of ['Pablo', 'Corinto', 'Samotracia']) await search(page, q);
+  await page.locator('#atras').click();
+  await settle(page);
+  assert.equal((await hist(page)).forward.label, 'Adelante: Samotracia');
+  // Links that do not unload this document. A listener added after the site's cancels them once the site has seen the
+  // click, so nothing opens; the site sees each click as a person's.
+  await page.evaluate(() => {
+    const links = [['mailto:alguien@example.org', ''], ['tel:+34900000000', ''], ['javascript:void 0', ''],
+      ['acerca.html', '_blank'], ['https://wol.jw.org/es/', '_blank'], ['acerca.html', '']];
+    const box = document.createElement('div');
+    box.style.cssText = 'position:fixed;left:8px;bottom:8px;z-index:99999;background:#fff';
+    box.innerHTML = links.map(([href, target], i) => `<a data-prueba="${i}" href="${href}"${target ? ` target="${target}"` : ''}>enlace ${i}</a> `).join('');
+    document.body.append(box);
+    window.addEventListener('click', (e) => { if (e.target.closest?.('[data-prueba]')) e.preventDefault(); });
+  });
+  const stored = () => page.evaluate(() => sessionStorage.getItem('biblical-atlas:visitas'));
+  const before = await stored();
+  assert.match(before, /Samotracia/);
+  for (const i of [0, 1, 2, 3, 4]) await page.locator(`[data-prueba="${i}"]`).click();
+  for (const modifiers of [['Control'], ['Meta'], ['Shift'], ['Alt']]) await page.locator('[data-prueba="5"]').click({ modifiers });
+  assert.equal(await stored(), before, 'a click that keeps this page cut the names ahead');
+  // Forward still goes to Samotracia, and says so.
+  assert.equal((await hist(page)).forward.label, 'Adelante: Samotracia');
+  await page.locator('#adelante').click();
+  await settle(page);
+  assert.equal((await snap(page)).sel, 'lugar:samotracia', 'Forward did nothing after those clicks');
+  // A plain click on a same-tab link to another page («Acerca de», in the bar) still cuts, as the browser does.
+  await page.locator('#atras').click();
+  await settle(page);
+  await Promise.all([page.waitForURL(/acerca\.html/), page.locator('#acerca').click()]);
+  // Read on the other page, before coming back: there the Navigation API would cut it too, and hide a link that did not.
+  assert.doesNotMatch(await stored(), /Samotracia/, 'the link to another page left Samotracia ahead');
+  await page.goBack();
+  await page.waitForFunction(() => window.BE?.D && window.__be, null, { timeout: 30000 });
+  await settle(page);
+  const h = await hist(page);
+  assert.equal(h.state.step, 2);
+  assert.equal(h.forward.off, true, 'a same-tab link to another page left Samotracia ahead');
+  assert.equal(h.forward.label, 'No hay nada adelante');
+  assert.deepEqual(page.pageErrors, []);
+});
+
 test('on the phone the reading has its own pair, beside «Cerrar», that a finger reaches', async () => {
   const page = await openPage(PHONE, { hash: 'leer=hch-16' });
   await page.locator('#vista-lectura [data-lectura-pasaje="1"]').click();
