@@ -59,7 +59,8 @@ stops:
     type: anchored
     chronology: tnm
     text: 628 a.e.c.
-  note: Antes de la batalla manda mensajeros a Josías.
+  note: Iba hacia Carquemis, junto al Éufrates (2Cr 35:20), pero el texto no dice que llegara. Antes de la batalla manda
+    mensajeros a Josías.
   reason: '2Re 23:29 y 2Cr 35:22: se enfrenta a Josías en Meguidó. Suceso muerte-de-josias.'
   sources:
   - 2-reyes-23
@@ -68,26 +69,6 @@ stops:
   checked_on: '2026-09-30'
   status: verified
 - order: 3
-  place: carquemis
-  reference: 2Cr 35:20
-  date:
-    from: -627
-    to: -627
-    precision: year
-    approx: false
-    type: anchored
-    chronology: tnm
-    text: 628 a.e.c.
-  note: Junto al Éufrates. No es la batalla de 625 (suceso batalla-de-carquemis).
-  reason: 2Cr 35:20 da Carquemis como meta de la campaña, pero ni el texto ni Perspicacia «Carquemis» dicen que llegara. Parada
-    deducida.
-  sources:
-  - 2-cronicas-35
-  - it-carquemis
-  - it-neko
-  checked_on: '2026-09-30'
-  status: pending
-- order: 4
   place: ribla
   reference: 2Re 23:33
   date:
@@ -107,7 +88,7 @@ stops:
   - it-neko
   checked_on: '2026-09-30'
   status: verified
-- order: 5
+- order: 4
   place: egipto
   reference: 2Re 23:34; 2Cr 36:4
   date:
