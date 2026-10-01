@@ -18,7 +18,7 @@ hide:
 
 ---
 
-**biblical-atlas** es un mapa y una línea de tiempo que se mueven con una sola fecha, para estudiar la Biblia en familia. Eliges un año y ves quién vivía, dónde estaba y qué pasaba alrededor, de Adán a Juan en Patmos. Cada dato lleva a su fuente en wol.jw.org: se enlaza, nunca se copia. La aplicación está en [biblical-atlas.geiser.cloud](https://biblical-atlas.geiser.cloud/); estas páginas explican cómo usarla, de dónde salen los datos y cómo ayudar. Empieza por [Primeros pasos](getting-started.md) y sigue con [Uso](usage.md).
+**biblical-atlas** es un mapa y una línea de tiempo que se mueven con una sola fecha, para estudiar la Biblia en familia. Eliges un año y ves quién vivía, dónde estaba y qué pasaba alrededor, de Adán a Juan en Patmos. Cada dato lleva a su fuente en jw.org: se enlaza, nunca se copia. La aplicación está en [biblical-atlas.geiser.cloud](https://biblical-atlas.geiser.cloud/); estas páginas explican cómo usarla, de dónde salen los datos y cómo ayudar. Empieza por [Primeros pasos](getting-started.md) y sigue con [Uso](usage.md).
 
 <div class="grid cards ba-cards" markdown>
 
@@ -71,7 +71,7 @@ hide:
 </figure>
 </div>
 
-Una fecha lo mueve todo: arrastra el cursor o pulsa reproducir y el mapa enseña dónde estaba cada uno. Un lugar, una persona o un suceso abren su ficha, con los pasajes para leer en wol.jw.org y los vídeos de jw.org que lo nombran. La búsqueda entiende nombres, capítulos («Hch 16») y años. Encima van las vistas de estudio: el [grafo de personas](usage.md#grafo-de-personas-y-conexión-entre-dos), el [modo lectura](usage.md#modo-lectura), los cuatro [recorridos guiados](usage.md#recorridos-guiados), el modo presentación para la tablet o el televisor y la página [El calendario de la Biblia](https://biblical-atlas.geiser.cloud/calendario.html).
+Una fecha lo mueve todo: arrastra el cursor o pulsa reproducir y el mapa enseña dónde estaba cada uno. Un lugar, una persona o un suceso abren su ficha, con los pasajes para leer en jw.org y los vídeos de jw.org que lo nombran. La búsqueda entiende nombres, capítulos («Hch 16») y años. Encima van las vistas de estudio: el [grafo de personas](usage.md#grafo-de-personas-y-conexión-entre-dos), el [modo lectura](usage.md#modo-lectura), los cuatro [recorridos guiados](usage.md#recorridos-guiados), el modo presentación para la tablet o el televisor y la página [El calendario de la Biblia](https://biblical-atlas.geiser.cloud/calendario.html).
 
 ## Qué cubre
 
@@ -99,7 +99,7 @@ Una fecha lo mueve todo: arrastra el cursor o pulsa reproducir y el mapa enseña
 
 ## Ayuda
 
-- Un dato mal: «Proponer una corrección» en la ficha abre una incidencia en GitHub con el fichero ya puesto. Solo pide qué está mal, qué debería decir y la página de wol.jw.org que lo sostiene.
+- Un dato mal: «Proponer una corrección» en la ficha abre una incidencia en GitHub con el fichero ya puesto. Solo pide qué está mal, qué debería decir y la página de jw.org que lo sostiene.
 - Un cambio tuyo: [Desarrollo](development.md) explica cómo compilar, validar y proponer un PR. Lo decidido está en [Decisiones](decisiones.md) y lo que queda, en la [Hoja de ruta](hoja-de-ruta.md).
 - Un problema de seguridad: la [política de seguridad](https://github.com/GeiserX/biblical-atlas/blob/main/SECURITY.md), nunca una incidencia pública.
 

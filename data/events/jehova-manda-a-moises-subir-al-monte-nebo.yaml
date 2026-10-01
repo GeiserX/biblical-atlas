@@ -32,13 +32,13 @@ sources:
 - si-3
 links:
 - title: Deuteronomio 32 (TNM)
-  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/5/32
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/deuteronomio/32/
   type: bible
 - title: 'Perspicacia: «Moisés»'
-  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003118
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Mois%C3%A9s/
   type: perspicacia
 - title: 'Perspicacia: «Nebo»'
-  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003199
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Nebo/
   type: perspicacia
 checked_on: '2026-09-29'
 status: verified

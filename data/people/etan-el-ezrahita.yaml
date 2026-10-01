@@ -20,13 +20,13 @@ sources:
 - 1-reyes-4
 links:
 - title: 'Perspicacia: «Etán»'
-  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001434
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Et%C3%A1n/
   type: perspicacia
 - title: 'Perspicacia: «Ezrahíta»'
-  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001478
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ezrah%C3%ADta/
   type: perspicacia
 - title: Salmo 89 (TNM)
-  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/19/89
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/salmos/89/
   type: bible
 relations:
 - type: kin

@@ -16,10 +16,10 @@ sources:
 - genesis-26
 links:
 - title: 'Perspicacia: «Ficol»'
-  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003461
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ficol/
   type: perspicacia
 - title: Génesis 26 (TNM)
-  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/26
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/G%C3%A9nesis/26/
   type: bible
 relations:
 - type: tie

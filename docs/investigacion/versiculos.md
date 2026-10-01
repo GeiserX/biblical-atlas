@@ -15,7 +15,7 @@ Antes de empezar se leen el esquema, [`README.md`](README.md), y el formato de l
 
 ## 2. Qué se lee
 
-1. **El capítulo en la edición de estudio**: `https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/<número del libro>/<capítulo>` (el número está en `num` de [`data/books.yaml`](../../data/books.yaml)). Los ayudantes viven fuera del repo, porque las condiciones de jw.org no permiten herramientas de extracción dentro del proyecto:
+1. **El capítulo en la edición de estudio.** Los ayudantes lo leen de wol.jw.org con el número del libro, que está en `num` de [`data/books.yaml`](../../data/books.yaml). Viven fuera del repo, porque las condiciones de jw.org no permiten herramientas de extracción dentro del proyecto. Lo que se lee en wol.jw.org se cita con su dirección de jw.org, como dice «Qué dirección se escribe», más abajo.
 
    ```bash
    python3 /tmp/be-wol/estudio.py 8 1        # Rut 1: texto, y por versículo notas de estudio, notas al pie y referencias
@@ -30,7 +30,15 @@ Antes de empezar se leen el esquema, [`README.md`](README.md), y el formato de l
 4. **Fechas**: el estudio 3 «Sucesos fechados» (`si-3`), la tabla de los libros (`tnm-tabla`), las tablas A6 (reyes y profetas) y A7 (vida de Jesús) del apéndice, y lo que Perspicacia fecha. Los ids de esas fuentes ya están en `data/sources/`.
 5. **Antes de devolver la propuesta**, `python3 /tmp/be-wol/ochos.py <propuesta.json>` tiene que dar 0 coincidencias. Compara cada texto con las páginas que la propuesta cita (sus fuentes, sus enlaces y sus capítulos). El `title` de una fuente no se compara, porque es el nombre exacto de su página y no prosa nuestra. Con `--control "<frase copiada de una de esas páginas>"` se ve que la comprobación puede fallar.
 
-Solo valen fuentes de nivel 1 (la TNM y wol.jw.org). Las coordenadas salen de OpenBible (`/tmp/be-wol/ancient.jsonl`) y solo se toma el punto, nunca la identificación. Las notas de trabajo van a `/tmp/be-wol/notas/<etapa>/`. Nunca entra texto de jw.org en el repo: palabras nuestras, 40 como mucho por campo y ninguna secuencia de 8 palabras igual a la fuente. `checked_on` y `reviewed_on` son el día real de lectura.
+Solo valen fuentes de nivel 1, la TNM y las publicaciones de jw.org. Las coordenadas salen de OpenBible (`/tmp/be-wol/ancient.jsonl`) y solo se toma el punto, nunca la identificación. Las notas de trabajo van a `/tmp/be-wol/notas/<etapa>/`. Nunca entra texto de jw.org en el repo: palabras nuestras, 40 como mucho por campo y ninguna secuencia de 8 palabras igual a la fuente. `checked_on` y `reviewed_on` son el día real de lectura.
+
+### Qué dirección se escribe
+
+Cada `url` de `data/` es la página de www.jw.org, nunca la de wol.jw.org. `scripts/validate.py` da error con cualquier URL de wol.jw.org que no esté en [`scripts/wol_exceptions.yaml`](../../scripts/wol_exceptions.yaml).
+
+- **Un documento** (Perspicacia, un libro, una revista): se abre `https://www.jw.org/finder?wtlocale=S&docid=<documento>`, con el número que wol.jw.org da al final de su dirección, y se copia la dirección a la que lleva, sin lo que va detrás de `#`. Si el buscador lleva a la portada, el documento no existe. Si lleva a wol.jw.org, jw.org no lo tiene: entonces vale la URL de wol.jw.org, y se añade a `scripts/wol_exceptions.yaml` con su porqué.
+- **Un capítulo de la Biblia** no necesita fuente escrita: el id `<slug>-<capítulo>` (`rut-1`) basta, y `build.py` le pone la página de la Biblia de estudio de jw.org. Si hace falta escribirla, es la que da `https://www.jw.org/finder?wtlocale=S&pub=nwtsty&bible=<libro><ccc>000`, con el capítulo en tres cifras: Rut 1 es `bible=8001000` y lleva a `https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/rut/1/`.
+- **Unos versículos** se escriben como cita en `reference`, `passages` o la `reason` («Rut 1:1-5»), no como URL. El sitio enlaza la cita a su capítulo en jw.org con los versículos resaltados. Si una URL tiene que llevar a versículos concretos, la forma exacta es el capítulo con `#v<libro><ccc><vvv>` para uno y `#v<libro><ccc><vvv>-v<libro><ccc><vvv>` para un tramo del mismo capítulo: Rut 1:1-5 es `.../libros/rut/1/#v8001001-v8001005`.
 
 ## 3. Partir el capítulo en tramos
 
@@ -210,7 +218,7 @@ sources:
 - rut-1
 links:
 - title: 'Perspicacia: «Elimélec»'
-  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001310
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Elim%C3%A9lec/
   type: perspicacia
 relations:
 - type: kin
@@ -277,7 +285,7 @@ sources:
 - rut-1
 links:
 - title: 'Perspicacia: «Moab, moabitas»'
-  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003097
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Moab-moabitas/
   type: perspicacia
 checked_on: '2026-09-29'
 status: verified
@@ -328,7 +336,7 @@ sources:
 - it-boaz
 links:
 - title: Rut 1 (TNM)
-  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/8/1
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/rut/1/
   type: bible
 checked_on: '2026-09-29'
 status: verified
@@ -340,7 +348,7 @@ status: verified
 it-elimelec:
   title: Elimélec
   work: Perspicacia para comprender las Escrituras
-  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001310
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Elim%C3%A9lec/
   level: 1
   published: null
   checked_on: '2026-09-29'
@@ -382,7 +390,7 @@ El sobre de la propuesta tiene sus propias claves, que no cambian: `formato`, `l
   },
   "fuentes": {
     "it-elimelec": {"title": "Elimélec", "work": "Perspicacia para comprender las Escrituras",
-      "url": "https://wol.jw.org/es/wol/d/r4/lp-s/1200001310", "level": 1, "published": null,
+      "url": "https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Elim%C3%A9lec/", "level": 1, "published": null,
       "checked_on": "2026-09-29"}
   },
   "cambios": [
@@ -390,7 +398,7 @@ El sobre de la propuesta tiene sus propias claves, que no cambian: `formato`, `l
       "id": "elimelec", "name": "Elimélec", "names": [{"name": "Elimélec"}], "perspicacia": "1200001310",
       "summary": "Hombre de Belén de Judá que, en una época de hambre, se trasladó a Moab con su familia. Murió allí.",
       "reason": "Perspicacia «Elimélec»; Rut 1:1-3.", "sources": ["it-elimelec", "rut-1"],
-      "links": [{"title": "Perspicacia: «Elimélec»", "url": "https://wol.jw.org/es/wol/d/r4/lp-s/1200001310",
+      "links": [{"title": "Perspicacia: «Elimélec»", "url": "https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Elim%C3%A9lec/",
         "type": "perspicacia"}],
       "relations": [
         {"type": "kin", "person": "noemi", "word": "wife", "inferred": false, "sources": ["rut-1"],

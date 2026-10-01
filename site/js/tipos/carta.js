@@ -55,7 +55,7 @@ function fichaCarta(id) {
       ${c.nota ? `<p class="be-card__body be-muted nota-carta">${esc(c.nota)}</p>` : ''}
       <div class="fila-chips">${BE.chipsCitas(c.referencia)}${c.fecha?.texto && c.fecha.texto !== fechaCorta(c.fecha) ? `<span class="be-chrono be-chrono--approx">${esc(c.fecha.texto)}</span>` : ''}</div>
       ${BE.enlacesHtml(c.enlaces)}
-    </div><div class="be-card__foot">${BE.estadoHtml(c.estado)}<span class="be-spacer"></span>${cita ? `<a class="be-wol" href="${BE.urlCapitulo(cita.libro, 1)}" ${EXTERNO}>Leer ${esc(c.libro)} en wol.jw.org</a>` : ''}</div></section>
+    </div><div class="be-card__foot">${BE.estadoHtml(c.estado)}<span class="be-spacer"></span>${cita ? `<a class="be-wol" href="${BE.urlCapitulo(cita.libro, 1)}" ${EXTERNO}>Leer ${esc(c.libro)} en jw.org</a>` : ''}</div></section>
     ${BE.noSabemosHtml(noSabemos)}
     ${BE.porQueHtml(c)}`;
 }

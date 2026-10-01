@@ -90,11 +90,11 @@ body {
 .be-chip--active { background: var(--ink); border-color: var(--ink); color: #fbf7ef; }
 .be-chip__dot { width: 8px; height: 8px; border-radius: 50%; background: currentColor; }
 
-/* Referencia bíblica: se pulsa para leer en wol.jw.org */
+/* Referencia bíblica: se pulsa para leer en jw.org */
 .be-ref { display: inline-flex; align-items: center; gap: 5px; padding: 1px 8px 1px 7px; border-radius: var(--r-pill); background: var(--tier1-soft); color: var(--tier1); font-size: var(--fs-xs); font-weight: 600; white-space: nowrap; text-decoration: none; border: 1px solid var(--tier1-line); }
 .be-ref::before { content: ""; width: 10px; height: 12px; border-radius: 1.5px; border: 1.5px solid currentColor; border-left-width: 3px; opacity: .85; }
 
-/* Enlace de salida a wol.jw.org (nunca copiamos su contenido: enlazamos) */
+/* Enlace de salida a jw.org (nunca copiamos su contenido: enlazamos) */
 .be-wol { display: inline-flex; align-items: center; gap: 6px; color: var(--link); font-weight: 600; font-size: var(--fs-sm); text-decoration: none; white-space: nowrap; }
 .be-wol::after { content: "↗"; font-weight: 500; }
 

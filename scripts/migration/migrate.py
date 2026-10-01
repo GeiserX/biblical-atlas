@@ -383,8 +383,11 @@ class ChapterCiter:
         for fid in fuentes:                     # capítulos <libro>-<n> que build.py crea solos
             m = re.match(r"^(.+)-(\d+)$", str(fid))
             if fid not in srcs and m and m.group(1) in by_slug:
-                num = by_slug[m.group(1)].get("num")
-                srcs[fid] = {"url": f"https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/{num}/{m.group(2)}"}
+                libro, cap = by_slug[m.group(1)], int(m.group(2))
+                if hasattr(self.mod, "url_capitulo"):   # la página de la Biblia de estudio en jw.org
+                    srcs[fid] = {"url": self.mod.url_capitulo(libro, cap)}
+                else:                                   # una cobertura antigua solo lee la forma de wol.jw.org
+                    srcs[fid] = {"url": f"https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/{libro.get('num')}/{cap}"}
         razon = raw.get("razon", raw.get("reason"))
         o = {"razon": razon, "reason": razon, "fuentes": fuentes, "sources": fuentes}
         return self.mod.citas(o, self.datos, self.carpeta, self.finder)

@@ -70,7 +70,10 @@ function fechaCorta(f) {
   return a === b ? `${c}${fmtAnio(a)}` : `${c}${a > 0 && b > 0 ? `${a}-${b} e.c.` : `${fmtAnio(a)} - ${fmtAnio(b)}`}`;
 }
 function libro(s) { return LIBRO_POR_FORMA.get(norm(s).replace(/[\s.]+/g, '')) || null; }
-/** "Hch 15:1-3; Gál 2:1-10" → [{ libro, cap, capFin, texto }] */
+/** "Hch 15:1-3; Gál 2:1-10" → [{ libro, cap, capFin, verso, versoFin, texto }]. verso es el primero (null si la cita
+    es de capítulos enteros) y versoFin el último, que es del capítulo capFin: «Hch 21:40–22:21» da verso 40, versoFin 21.
+    Una lista en el mismo capítulo llega hasta su último versículo: «Mt 26:30, 36-56» da verso 30, versoFin 56.
+    Un libro de un solo capítulo se cita por versículo: «Flm 23» es el capítulo 1, versículo 23. */
 function citas(s) {
   const out = [];
   for (const parte of String(s || '').split(/\s*;\s*/)) {
@@ -78,14 +81,18 @@ function citas(s) {
     if (!m) continue;
     const lib = libro(m[1]);
     if (!lib) continue;
-    const cap = +m[2];
+    let cap = +m[2];
     let capFin = cap;
     if (m[5]) capFin = +m[4]; else if (!m[3] && m[4]) capFin = +m[4];
-    out.push({ libro: lib, cap, capFin, texto: parte.trim() });
+    let verso = m[3] ? +m[3] : null;
+    let versoFin = !verso ? null : m[5] ? +m[5] : m[4] ? +m[4] : verso;
+    if (!m[3] && lib.capitulos === 1) { verso = cap; versoFin = capFin; cap = 1; capFin = 1; }
+    const lista = verso && capFin === cap && parte.slice(m[0].length).match(/^(?:\s*,\s*\d+(?:\s*[-–]\s*\d+)?)+/);
+    if (lista) versoFin = Math.max(versoFin, ...lista[0].match(/\d+/g).map(Number));
+    out.push({ libro: lib, cap, capFin, verso, versoFin, texto: parte.trim() });
   }
   return out;
 }
-const urlCapitulo = (lib, cap) => `https://wol.jw.org/es/wol/b/r4/lp-s/nwt/${lib.num}/${cap}`;
 const EXTERNO = 'target="_blank" rel="noopener"';
 
 // Proyección de Mercator para interpolar sobre la línea tal como la dibuja el mapa.
@@ -639,7 +646,7 @@ async function iniciar() {
 Object.assign(BE, {
   // utilidades
   MESES, ES_FILE, T_INICIAL, VISTA_INICIAL, EXTERNO, ponerLibros, norm, esc, $, clamp, fmtAnio, fmtCursor, fmtDia, tramo, fechaCorta,
-  libro, citas, urlCapitulo, mercY, latDeY, interpolar,
+  libro, citas, mercY, latDeY, interpolar,
   // estado, registro y selección
   E, tipo, tipos: TIPOS, existe, parseSel, selTexto, implicados, momentoDe, nombreSel, seleccionar, limpiarSeleccion,
   // cursor, reproducción, dirección y pintado

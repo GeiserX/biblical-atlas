@@ -22,13 +22,13 @@ sources:
 - it-elimas
 links:
 - title: 'Perspicacia: «Bar-Jesús»'
-  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000563
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Bar-Jes%C3%BAs/
   type: perspicacia
 - title: Hechos 13 (TNM)
-  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/13
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/hechos/13/
   type: bible
 - title: 'Perspicacia: «Elimas»'
-  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001345
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Elimas/
   type: perspicacia
 perspicacia: '1200000563'
 checked_on: '2026-09-29'

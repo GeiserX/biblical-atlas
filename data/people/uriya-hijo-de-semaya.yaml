@@ -24,10 +24,10 @@ sources:
 - tnm-a6-b
 links:
 - title: 'Perspicacia: «Uriya»'
-  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004523
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Uriya/
   type: perspicacia
 - title: Jeremías 26 (TNM)
-  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/24/26
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/26/
   type: bible
 relations:
 - type: holds_office

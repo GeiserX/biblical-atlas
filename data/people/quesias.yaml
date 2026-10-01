@@ -12,10 +12,10 @@ sources:
 - job-42
 links:
 - title: 'Perspicacia: «Quesías»'
-  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002600
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ques%C3%ADas/
   type: perspicacia
 - title: Job 42 (TNM)
-  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/18/42
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/job/42/
   type: bible
 relations:
 - type: kin

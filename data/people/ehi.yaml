@@ -13,13 +13,13 @@ sources:
 - it-ahiram
 links:
 - title: 'Perspicacia: «Ehí»'
-  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001267
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Eh%C3%AD/
   type: perspicacia
 - title: Génesis 46 (TNM)
-  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/46
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/G%C3%A9nesis/46/
   type: bible
 - title: 'Perspicacia: «Ahiram»'
-  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000164
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ahiram/
   type: perspicacia
 relations:
 - type: kin

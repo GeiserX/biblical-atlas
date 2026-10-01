@@ -24,10 +24,10 @@ sources:
 - openbible-geo
 links:
 - title: 'Perspicacia: «Ur»'
-  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004518
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ur/
   type: perspicacia
 - title: Génesis 11 (TNM)
-  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/11
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/G%C3%A9nesis/11/
   type: bible
 checked_on: '2026-09-28'
 status: verified

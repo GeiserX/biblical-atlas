@@ -39,10 +39,10 @@ sources:
 - tnm-tabla
 links:
 - title: 'Perspicacia: «Sadoc»'
-  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004652
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sadoc/
   type: perspicacia
 - title: 2 Samuel 15 (TNM)
-  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/15
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-samuel/15/
   type: bible
 checked_on: '2026-09-29'
 status: verified

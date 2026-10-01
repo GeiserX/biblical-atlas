@@ -89,5 +89,56 @@ class Summary(unittest.TestCase):
                                                  "recorridos": 1, "fuentes": 3, "libros": 66})
 
 
+class ChapterUrls(unittest.TestCase):
+    """build.py y bible_coverage.py leen el capítulo de la URL de una fuente, en wol.jw.org o en jw.org."""
+    LIBROS = [{"slug": "genesis", "num": 1, "name": "Génesis"}, {"slug": "hechos", "num": 44, "name": "Hechos"},
+              {"slug": "2-samuel", "num": 10, "name": "2 Samuel"},
+              {"slug": "cantar-de-los-cantares", "num": 22, "name": "El Cantar de los Cantares"}]
+
+    def cap(self, url):
+        r = build.cov.capitulo_de_url(url, self.LIBROS)
+        return (r[0]["slug"], r[1]) if r else None
+
+    def test_wol(self):
+        self.assertEqual(self.cap("https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/16"), ("hechos", 16))
+
+    def test_jw_org_con_tilde_y_mayuscula(self):
+        base = "https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/"
+        self.assertEqual(self.cap(base + "G%C3%A9nesis/3/"), ("genesis", 3))
+        self.assertEqual(self.cap(base + "2-samuel/1/"), ("2-samuel", 1))
+        self.assertEqual(self.cap(base + "hechos/2/#v44002001-v44002047"), ("hechos", 2))
+        self.assertEqual(self.cap(base + "el-cantar-de-los-cantares/8/"), ("cantar-de-los-cantares", 8))
+
+    def test_url_capitulo_como_la_escribe_jw_org(self):
+        base = "https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/"
+        self.assertEqual(build.cov.url_capitulo({"name": "Génesis"}, 2), base + "G%C3%A9nesis/2/")
+        self.assertEqual(build.cov.url_capitulo({"name": "1 Crónicas"}, 2), base + "1-Cr%C3%B3nicas/2/")
+        self.assertEqual(build.cov.url_capitulo({"name": "1 Reyes"}, 3), base + "1-reyes/3/")
+        self.assertEqual(build.cov.url_capitulo({"name": "El Cantar de los Cantares"}, 2), base + "el-cantar-de-los-cantares/2/")
+
+    def test_url_capitulo_vuelve_a_su_capitulo_en_los_66_libros(self):
+        import yaml
+        libros = yaml.safe_load((HERE.parent / "data" / "books.yaml").read_text(encoding="utf-8"))["books"]
+        for libro in libros:
+            with self.subTest(libro=libro["name"]):
+                r = build.cov.capitulo_de_url(build.cov.url_capitulo(libro, 1), libros)
+                self.assertEqual((r[0]["num"], r[1]), (libro["num"], 1))
+
+    def test_source_chapters_con_las_dos_formas(self):
+        libros = [{"slug": "hechos", "num": 44, "name": "Hechos", "abbr": "Hch"},
+                  {"slug": "genesis", "num": 1, "name": "Génesis", "abbr": "Gé"}]
+        fuentes = {"hch-16": {"url": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/16"},
+                   "hch-17": {"url": "https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/hechos/17/"},
+                   "g-3": {"url": "https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/G%C3%A9nesis/3/"},
+                   "it-x": {"url": "https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/X/"}}
+        datos = {"books": libros, "sources": fuentes}
+        self.assertEqual(build.source_chapters(["hch-16", "hch-17", "g-3", "it-x"], datos), ["Hch 16", "Hch 17", "Gé 3"])
+
+    def test_lo_que_no_es_un_capitulo(self):
+        self.assertIsNone(self.cap("https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Tobias/1/"))
+        self.assertIsNone(self.cap("https://www.jw.org/es/biblioteca/libros/jesus/ministerio-en-galilea/"))
+        self.assertIsNone(self.cap("https://wol.jw.org/es/wol/d/r4/lp-s/1200000129"))
+
+
 if __name__ == "__main__":
     unittest.main(verbosity=1)

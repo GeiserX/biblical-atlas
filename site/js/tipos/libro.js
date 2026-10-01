@@ -1,13 +1,33 @@
 /* biblical-atlas · tipo «libro»: un libro de la Biblia («libro:hechos») con sus datos de la Tabla de los libros
    (escritor, lugar, fecha, tiempo que abarca), sus capítulos y lo que cuentan. Pone la lista de libros de data.json
-   en el buscador y en las citas, y la URL de capítulo de la Biblia de estudio (nwtsty). Dueño durante el reparto: app-estudio. */
+   en el buscador y en las citas, y la URL de capítulo de la Biblia de estudio de jw.org. Dueño durante el reparto: app-estudio. */
 'use strict';
 (() => {
 const BE = window.BE;
 const { esc, norm, EXTERNO, fechaCorta, tramo, citas } = BE;
 
-// Una sola forma de URL de capítulo: la Biblia de estudio, que lleva las notas de estudio al lado del texto.
-BE.urlCapitulo = (lib, cap) => `https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/${lib.num}/${cap}`;
+// Una sola forma de URL de capítulo: la Biblia de estudio de jw.org, que lleva las notas de estudio al lado del texto.
+// jw.org escribe el libro con guiones: con tildes, tal cual («G%C3%A9nesis», «1-Cr%C3%B3nicas»); sin tildes, en
+// minúsculas («1-reyes», «el-cantar-de-los-cantares»). Es la misma regla que url_capitulo de scripts/bible_coverage.py.
+const libroJw = (lib) => {
+  const s = String(lib.nombre).trim().replace(/\s+/g, '-');
+  return /^[\x00-\x7f]*$/.test(s) ? s.toLowerCase() : encodeURIComponent(s);
+};
+BE.urlCapitulo = (lib, cap) => `https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/${libroJw(lib)}/${cap}/`;
+
+/** La URL exacta de una cita de BE.citas: el capítulo con el versículo o el tramo resaltado (#v<libro><ccc><vvv>, el
+    ancla que jw.org resalta y lleva a la vista). Una cita que pasa a otro capítulo abre el primero, resaltado hasta su
+    último versículo: jw.org no resalta un tramo que cruza capítulos. Sin versículo, o con el capítulo entero, va sin ancla. */
+const ancla = (lib, cap, v) => `v${lib.num}${String(cap).padStart(3, '0')}${String(v).padStart(3, '0')}`;
+BE.urlCita = (c) => {
+  const url = BE.urlCapitulo(c.libro, c.cap);
+  if (!c.verso) return url;
+  const ultimo = c.libro.versiculos?.[c.cap - 1] || null;
+  let fin = c.capFin > c.cap ? ultimo : c.versoFin;
+  if (!fin || fin < c.verso) fin = c.verso;
+  if (c.verso === 1 && ultimo && fin >= ultimo) return url;
+  return `${url}#${ancla(c.libro, c.cap, c.verso)}${fin > c.verso ? `-${ancla(c.libro, c.cap, fin)}` : ''}`;
+};
 
 /** Los 66 libros de data.json sustituyen a la lista fija de base.js. El slug sin guiones también vale al buscar. */
 function prepararLibros() {

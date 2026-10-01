@@ -19,13 +19,13 @@ sources:
 - josue-21
 links:
 - title: 'Perspicacia: «Anaq»'
-  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000260
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Anaq/
   type: perspicacia
 - title: 'Perspicacia: «Arbá»'
-  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000340
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Arb%C3%A1/
   type: perspicacia
 - title: Josué 21 (TNM)
-  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/21
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Josu%C3%A9/21/
   type: bible
 relations:
 - type: kin

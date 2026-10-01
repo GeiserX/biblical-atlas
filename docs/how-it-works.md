@@ -5,7 +5,7 @@ La confianza que pide un mapa de la Biblia se gana con dos cosas: saber de dónd
 ## De dónde salen los datos
 
 - **jw.org y la Traducción del Nuevo Mundo son la fuente principal, y la información más reciente de jw.org gana.** Cuando dos publicaciones difieren, vale la más nueva y el cambio queda en el historial del hecho, con la fuente antigua y la nueva.
-- **Enlazamos, no copiamos.** Cada hecho lleva un resumen de 40 palabras como mucho, escrito con nuestras palabras, y el enlace a wol.jw.org donde se lee la fuente completa. Ningún párrafo, mapa, imagen ni vídeo de jw.org entra en el repositorio.
+- **Enlazamos, no copiamos.** Cada hecho lleva un resumen de 40 palabras como mucho, escrito con nuestras palabras, y el enlace a jw.org donde se lee la fuente completa. Ningún párrafo, mapa, imagen ni vídeo de jw.org entra en el repositorio.
 - **Nivel 2 solo si jw.org lo ha usado.** Arqueología, papers y coordenadas externas entran cuando jw.org ha citado esa fuente o afirma lo mismo, siempre junto a una fuente de nivel 1 y sin contradecirla en pantalla. Nada de otras confesiones.
 - **Fechas siempre con fuente.** Si jw.org da la fecha, es la fecha. Si se calcula a partir de datos de jw.org, la cuenta queda escrita y el hecho lleva `status: pending` hasta que una publicación la dé.
 - **Un lugar incierto lleva candidatos, no un punto.** Una zona, un punto o una franja, cada uno con su estado, su fuente y su razón. Las coordenadas vienen de OpenBible.info; qué lugar es cada uno, de jw.org.

@@ -39,16 +39,16 @@ sources:
 - isaias-33
 links:
 - title: 'Perspicacia: «Líbano»'
-  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002705
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/L%C3%ADbano/
   type: perspicacia
 - title: Salmos 29 (TNM)
-  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/19/29
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/salmos/29/
   type: bible
 - title: Salmo 72 (TNM)
-  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/19/72
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/salmos/72/
   type: bible
 - title: Salmo 92 (TNM)
-  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/19/92
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/salmos/92/
   type: bible
 checked_on: '2026-09-30'
 status: verified

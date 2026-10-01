@@ -32,10 +32,10 @@ relations:
   status: verified
 links:
 - title: 'Perspicacia: «Elisabet»'
-  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001323
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Elisabet/
   type: perspicacia
 - title: Lucas 1 (TNM)
-  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/42/1
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/lucas/1/
   type: bible
 perspicacia: '1200001323'
 checked_on: '2026-09-29'

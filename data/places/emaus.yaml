@@ -61,10 +61,10 @@ sources:
 - openbible-geo
 links:
 - title: 'Perspicacia: «Emaús»'
-  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001353
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ema%C3%BAs/
   type: perspicacia
 - title: Lucas 24 (TNM)
-  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/42/24
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/lucas/24/
   type: bible
 checked_on: '2026-09-28'
 status: verified

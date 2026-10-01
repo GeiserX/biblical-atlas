@@ -19,6 +19,7 @@ import datetime
 import re
 import sys
 import unicodedata
+import urllib.parse
 from pathlib import Path
 
 import yaml
@@ -38,6 +39,7 @@ RELATION = "relation"
 DIA = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 RE_V = re.compile(r"^\s*(\d+)\s*(?:[-–]\s*(\d+)\s*)?$")
 RE_NWTSTY = re.compile(r"/nwtsty/(\d+)/(\d+)(?:\D|$)")
+RE_JW_CAPITULO = re.compile(r"^https://www\.jw\.org/es/biblioteca/biblia/biblia-estudio/libros/([^/?#]+)/(\d+)/?(?:[?#]|$)")
 
 
 # ---------------------------------------------------------------- lectura
@@ -235,6 +237,32 @@ def _norm(s):
     return _sin_tildes(s).lower().replace(" ", "").replace(".", "")
 
 
+def url_capitulo(libro, cap):
+    """La página de un capítulo en la Biblia de estudio de jw.org, con el nombre del libro como lo escribe jw.org:
+    con tildes, el nombre tal cual y con guiones («G%C3%A9nesis», «1-Cr%C3%B3nicas»); sin tildes, en minúsculas
+    («1-reyes», «el-cantar-de-los-cantares»). Lo comprobamos con el buscador de jw.org para los 66 libros."""
+    nombre = str(libro["name"]).replace(" ", "-")
+    nombre = urllib.parse.quote(nombre) if not nombre.isascii() else nombre.lower()
+    return f"https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/{nombre}/{cap}/"
+
+
+def capitulo_de_url(url, libros):
+    """(libro, capítulo) de la URL de un capítulo de la Biblia de estudio, o None. Vale la de wol.jw.org
+    (nwtsty/<num>/<cap>) y la de jw.org (biblia-estudio/libros/<Libro>/<cap>/), que nombra el libro por su nombre
+    sin tildes ni mayúsculas y con guiones: «G%C3%A9nesis» es genesis y «el-cantar-de-los-cantares» es el libro
+    llamado «El Cantar de los Cantares»."""
+    u = str(url or "")
+    m = RE_NWTSTY.search(u)
+    if m:
+        libro = next((l for l in libros if l.get("num") == int(m.group(1))), None)
+    else:
+        m = RE_JW_CAPITULO.match(u)
+        clave = _sin_tildes(urllib.parse.unquote(m.group(1))).lower() if m else None
+        libro = next((l for l in libros if clave in (l.get("slug"), _sin_tildes(l.get("name") or "").lower()
+                                                      .replace(" ", "-"))), None) if m else None
+    return (libro, int(m.group(2))) if libro else None
+
+
 class Citas:
     """Busca citas bíblicas en un texto libre, como citasEnTexto de site/js/tipos/pasaje.js: la misma expresión, los
     mismos nombres de libro (abbr, name y forms de data/books.yaml) y la misma cola «Hch 17:14; 18:5». Una
@@ -305,16 +333,15 @@ def _fuentes_cita(o, carpeta):
 
 def citas(obj, datos, carpeta, buscador=None):
     """Capítulos que cita una entidad (o una relación, carpeta 'relation'), tal como los ve la página de un capítulo
-    en el sitio: sus fuentes que son capítulos de la TNM (rut-1, hch-16 o cualquier URL nwtsty/<num>/<cap>) y las
-    citas escritas en los campos de TEXTOS_CITA. Una carta cita además todos los capítulos de su propio libro."""
+    en el sitio: sus fuentes que son capítulos de la TNM (rut-1, hch-16 o la URL de un capítulo de la Biblia de
+    estudio, en wol.jw.org o en jw.org) y las citas escritas en los campos de TEXTOS_CITA. Una carta cita además todos
+    los capítulos de su propio libro."""
     buscador = buscador or Citas(datos["books"])
-    por_num = {l.get("num"): l for l in datos["books"]}
     out = set()
     for fid in _fuentes_cita(obj, carpeta):
-        m = RE_NWTSTY.search(str((datos["sources"].get(fid) or {}).get("url") or ""))
-        libro = por_num.get(int(m.group(1))) if m else None
-        if libro:
-            out.add((libro["slug"], int(m.group(2))))
+        cap = capitulo_de_url((datos["sources"].get(fid) or {}).get("url"), datos["books"])
+        if cap:
+            out.add((cap[0]["slug"], cap[1]))
     for t in TEXTOS_CITA.get(carpeta, lambda o: [])(obj):
         if isinstance(t, str):
             out |= buscador.capitulos(t)

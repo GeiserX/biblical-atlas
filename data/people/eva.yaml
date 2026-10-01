@@ -24,10 +24,10 @@ sources:
 - genesis-3
 links:
 - title: 'Perspicacia: «Eva»'
-  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001450
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Eva/
   type: perspicacia
 - title: Génesis 2 (TNM)
-  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/2
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/G%C3%A9nesis/2/
   type: bible
 relations:
 - type: lived_in

@@ -17,13 +17,13 @@ not_claimed:
   solo lo ve posible.'
 links:
 - title: 'Perspicacia: «Hadadézer»'
-  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001798
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hadad%C3%A9zer/
   type: perspicacia
 - title: 2 Samuel 8 (TNM)
-  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/8
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-samuel/8/
   type: bible
 - title: 2 Samuel 10 (TNM)
-  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/10
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-samuel/10/
   type: bible
 relations:
 - type: kin

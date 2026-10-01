@@ -103,10 +103,10 @@ relations:
   status: verified
 links:
 - title: 'Perspicacia: «María»'
-  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002918
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Mar%C3%ADa/
   type: perspicacia
 - title: Lucas 1 (TNM)
-  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/42/1
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/lucas/1/
   type: bible
 perspicacia: 1200002918#1
 checked_on: '2026-09-29'
