@@ -276,7 +276,7 @@ stops:
   status: verified
 - order: 10
   place: betania
-  reference: Lu 21:37, 38; Mt 26:1, 2
+  reference: Mt 26:1, 2; Mr 14:1
   date:
     from: 33
     to: 33
@@ -288,17 +288,42 @@ stops:
     detail:
       month: nisan
       day: 12
-  note: Vuelve a dormir aquí. Del día 12, B12-B solo dice que lo pasa con sus discípulos; al atardecer del 13 llega a Jerusalén
-    para la Pascua.
-  reason: 'La nota de estudio de Lu 21:37: en sus últimos días salía de noche hacia Betania. El 12 de nisán empieza al ponerse
-    el sol tras la señal de su presencia; día de la tabla B12-B.'
+  note: Vuelve a dormir aquí y pasa el día apartado con sus apóstoles, sin aparecer en público.
+  reason: 'La nota de estudio de Lu 21:37: en sus últimos días salía de noche hacia Betania. El 12 empieza al ponerse el sol
+    tras la señal de su presencia; B12-B y «Jesús», cap. 115, dan el día.'
   sources:
   - lucas-21
   - mateo-26
+  - marcos-14
   - tnm-b12-b
+  - jy-cap-115
   checked_on: '2026-10-01'
   status: verified
 - order: 11
+  place: betania
+  reference: Mr 14:12, 13; Lu 22:7, 8
+  date:
+    from: 33
+    to: 33
+    precision: day
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 13 de nisán de 33 e.c.
+    detail:
+      month: nisan
+      day: 13
+  note: Última noche aquí. Por la tarde envía a Pedro y a Juan a la ciudad a preparar la Pascua; él llega al atardecer.
+  reason: '«Jesús», cap. 115: la sexta y última noche en Betania abre el 13, y Jesús sigue allí cuando envía a los dos. Las notas
+    de Mr 14:12 y Lu 22:7 fechan los preparativos el 13.'
+  sources:
+  - marcos-14
+  - lucas-22
+  - tnm-b12-b
+  - jy-cap-115
+  checked_on: '2026-10-01'
+  status: verified
+- order: 12
   place: jerusalen
   reference: Mt 26:17-29; Mr 14:15; Lu 22:12; Jn 13:1–17:26
   date:
@@ -323,7 +348,7 @@ stops:
   - tnm-b12-b
   checked_on: '2026-10-01'
   status: verified
-- order: 12
+- order: 13
   place: getsemani
   reference: Mt 26:30, 36-56; Jn 18:1-12
   date:
@@ -347,7 +372,7 @@ stops:
   - tnm-b12-b
   checked_on: '2026-09-30'
   status: verified
-- order: 13
+- order: 14
   place: jerusalen
   reference: Mt 26:57–27:31; Lu 23:7-12; Jn 18:13–19:16
   date:
@@ -372,7 +397,7 @@ stops:
   - tnm-a7-h
   checked_on: '2026-10-01'
   status: verified
-- order: 14
+- order: 15
   place: golgota
   reference: Mt 27:33-56; Jn 19:17-30
   date:
