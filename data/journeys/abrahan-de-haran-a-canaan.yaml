@@ -30,7 +30,7 @@ sources:
 - it-betel
 - it-hai
 - it-negueb
-checked_on: '2026-09-30'
+checked_on: '2026-10-01'
 status: verified
 narrative_order:
   series: abrahan
@@ -48,13 +48,14 @@ stops:
     chronology: tnm
     text: 1943 a.e.c.
   note: Al salir cruza el Éufrates; Perspicacia «Pacto» fecha ese cruce el 14 de nisán.
-  reason: Gé 12:4 dice que Abrán tenía 75 años al dejar Harán. Fecha del suceso «Entra en vigor el pacto con Abrahán».
+  reason: 'Gé 12:4: Abrán tenía 75 años al dejar Harán. Año del suceso «Entra en vigor el pacto con Abrahán», sin su día:
+    ese 14 de nisán es el cruce del Éufrates, y la salida va antes sin fecha propia.'
   sources:
   - genesis-12
   - hechos-7
   - it-pacto
   - si-3
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-01'
   status: verified
 - order: 2
   place: siquem

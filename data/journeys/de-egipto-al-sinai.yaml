@@ -30,7 +30,7 @@ sources:
 - si-3
 - it-exodo
 - tnm-b3
-checked_on: '2026-09-30'
+checked_on: '2026-10-01'
 status: verified
 narrative_order:
   series: moises
@@ -73,12 +73,13 @@ stops:
     chronology: tnm
     text: 1513 a.e.c.
   note: Primer campamento. Sin punto en el mapa.
-  reason: Éx 12:37 y Nú 33:5 los hacen ir de Ramesés a Sucot. Fecha del suceso «Éxodo de Egipto», en 1513 a.e.c.
+  reason: 'Éx 12:37 y Nú 33:5 los hacen ir de Ramesés a Sucot. Año del suceso «Éxodo de Egipto», sin día: Nú 33:3 fecha la
+    salida de Ramesés el 15 de nisán, pero no la llegada a Sucot.'
   sources:
   - exodo-12
   - numeros-33
   - si-3
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-01'
   status: verified
 - order: 3
   place: ezam
