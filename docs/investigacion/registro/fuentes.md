@@ -1449,6 +1449,7 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-haniel | [Haniel](https://wol.jw.org/es/wol/d/r4/lp-s/1200001863) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-hanok | [Hanok](https://wol.jw.org/es/wol/d/r4/lp-s/1200001864) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-hanun | [Hanún](https://wol.jw.org/es/wol/d/r4/lp-s/1200001866) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
+| it-hara | [Hará](https://wol.jw.org/es/wol/d/r4/lp-s/1200001870) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-30 |
 | it-harada | [Haradá](https://wol.jw.org/es/wol/d/r4/lp-s/1200001871) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-haran | [Harán](https://wol.jw.org/es/wol/d/r4/lp-s/1200001872) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
 | it-hararita | [Hararita](https://wol.jw.org/es/wol/d/r4/lp-s/1200001873) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
