@@ -125,7 +125,7 @@ Hay 20 ríos, 6 mares, 14 lagos y 29 valles. Los que tienen candidatos (Pisón, 
 | Cisón y Sihor-Libnat | 32,82 N; 35,03 E los dos | Mismo punto. La nota de Sihor-Libnat lo dice; la del Cisón, no |
 | Río Abaná | 33,51 N; 36,31 E | A 0,3 km de Damasco, de Siria y del desierto de Damasco |
 | Río Jaboc | 32,12 N; 35,54 E | A 1,3 km de Adán |
-| Arabá | 30,42 N; 35,15 E, al sur del mar Muerto | Dos viajes de Abner y de Recab la cruzan al norte del mar Muerto: rodeos de 285 y 235 km |
+| Arabá | 30,42 N; 35,15 E, al sur del mar Muerto | Dos viajes, el de Abner y el de Recab y Baaná, lo cruzan al norte del mar Muerto: rodeos de 285 y 235 km |
 | Distrito del Jordán | 32,32 N; 35,57 E | Lot va de Betel a Sodoma por él: rodeo de 96 km |
 | Valle de Escol | El de Hebrón | Mismo punto que Hebrón e Idumea. La nota lo explica |
 | Valle del Líbano | 34,01 N; 36,15 E | Mismo punto que Bet-rehob, Rehob y Betah |
