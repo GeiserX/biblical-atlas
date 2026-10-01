@@ -117,7 +117,7 @@ Los demás parámetros solo aparecen cuando no valen lo de siempre:
 |---|---|---|
 | `ocultas` | lista de `viajes,cartas,inciertos,hallazgos,pendientes,relieve` | Capas apagadas en el menú de capas |
 | `nombres` | `antiguos`, `actuales` | Nombres del mapa; sin él, los dos donde ayuda |
-| `nivel` | `1` | Filtro «Solo la Biblia y jw.org» |
+| `nivel` | `1` | Filtro «Solo fuentes principales» |
 | `cartas` | `todas`, `hasta`, `personas` | Qué cartas se dibujan; sin él, las cercanas a la fecha |
 | `carriles` | lista de ids de carril o de persona | Carriles fijados en la línea de tiempo. El carril «Viajes de Pablo» conserva el id `pablo`, el mismo que tenía cuando se llamaba «Pablo» |
 | `secular` | `0` | Oculta las fechas seculares |
@@ -230,7 +230,7 @@ BE.tipo('lugar', {
 
 `trayectorias.js`, `linea.js` y `ahora.js` publican además `BE.estancias(persona)`, `BE.sucesoEn(persona, t)` (el suceso del que sale el lugar que da `BE.donde`; de ahí sale el de «Mientras tanto»), `BE.presentes(t)`, `BE.edad(persona, t)`, `BE.ventanaFecha(fecha)`, `BE.diaHebreo(t)`, `BE.anioHebreo(y)` (los 12 o 13 meses del año hebreo que empieza en la primavera de `y`), `BE.nombreMes(mes, y)` (el nombre del mes en esa época), `BE.fmtMes(t, fino)` (como `fmtCursor`, con la duración real de nuestros meses), `BE.irA(t, escala)`, `BE.encuadrarTiempo(a, b)`, `BE.inicioPeriodo(p)` (el principio conocido de un periodo: su `desde`; si no tiene, `consta_desde`; si tampoco, el principio del tramo dibujado), `BE.resumenAhora(t)`, `BE.fraseAhora(t)` y `BE.sincronia.alternar(on, { lugar, periodo })`.
 
-`ficha.js` publica `BE.marcaNivel(n)`, la marca del tipo de fuente que usan las fichas y los carriles (la portada escribe las mismas en su HTML): punto lleno para la Biblia y jw.org, aro para otra fuente que jw.org ha usado. El nombre va en el texto emergente y para los lectores de pantalla.
+`ficha.js` publica `BE.marcaNivel(n)`, la marca del tipo de fuente que usan las fichas y los carriles (la portada escribe las mismas en su HTML): punto lleno para la Biblia o una publicación que la explica, aro para otra fuente que acompaña. El nombre va en el texto emergente y para los lectores de pantalla.
 
 `window.__be` expone lo necesario para las pruebas en Chrome sin interfaz: `E`, `P`, `D`, `BE`, `dondeEsta`, `donde`, `ventana`, `ventanaCarta`, `ventanaEvento`, `setT`, `seleccionar`, `ponerMapa` y `map`.
 

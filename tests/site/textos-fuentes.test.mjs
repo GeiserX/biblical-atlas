@@ -21,6 +21,9 @@ const PROHIBIDAS = [
   /fuente (?:principal )?(?:es|en) (?:jw\.org|wol)/i, /\bsalen? de (?:jw\.org|wol|estas publicaciones de jw)/i,
   /de jw\.org gana/i, /\bfuentes citadas\b/i, /\bfuentes de jw\.org\b/i, /\bsolo cuando jw\.org/i,
   /tabla A7 de la TNM/i, /y de jw\.org\b/i, /de las que sale cada dato/i, /de jw\.org que lo sostiene/i,
+  // The words of the cards, the legend and the filter: they name the kind of source, not the site.
+  /\b(?:según|por) jw\.org\b/i, /\bcita jw\.org\b/i, /\bjw\.org (?:ha usado|usa|use)\b/i, /\bBiblia (?:y|ni|o) (?:(?:una )?publicación de )?jw\.org\b/i,
+  /\bfechas? de jw\.org\b/i, /\bres[uú]menes nuestros\b/i,
 ];
 
 function ficheros(rel) {
