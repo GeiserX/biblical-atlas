@@ -25,6 +25,7 @@ sources:
 - mateo-1
 - 2-reyes-14
 - isaias-6
+- it-azarias
 links:
 - title: 'Perspicacia: «Uzías»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004535
@@ -106,8 +107,14 @@ history:
   change: Perspicacia «Uzías» cerraba su reinado en 778 a.e.c.; A6-B, más reciente, empieza el de Jotán en 777.
   source: tnm-a6-a
 perspicacia: 1200004535#3
-checked_on: '2026-09-30'
+checked_on: '2026-10-01'
 status: verified
+disambiguation: El rey de Judá al que también se llama Azarías; no es ninguno de los otros Azarías que numera Perspicacia,
+  como el hijo de Natán, el hijo de Sadoc o el jefe efraimita hijo de Jehohanán.
 distinct_from:
 - azarias-hijo-de-natan
 - azarias-hijo-de-sadoc
+- azarias-hijo-de-jehohanan
+- jaazanias-jefe-militar
+- abednego
+- ocozias-de-juda

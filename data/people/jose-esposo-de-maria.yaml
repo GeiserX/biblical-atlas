@@ -3,12 +3,15 @@ id: jose-esposo-de-maria
 name: José
 names:
 - name: José
-disambiguation: Esposo de María y padre adoptivo de Jesús; no es José de Arimatea ni José, el medio hermano de Jesús.
+disambiguation: Esposo de María y padre adoptivo de Jesús; no es José de Arimatea, ni José, el medio hermano de Jesús, ni
+  José hijo de Jacob, ni los demás José que numera Perspicacia.
 distinct_from:
 - jose-de-arimatea
 - jose-hijo-de-jose
 - jose-hijo-de-matatias
 - jose-hijo-de-jonam
+- jose-hijo-de-jacob
+- jose-padre-de-igal
 summary: 'Carpintero de Nazaret descendiente de David, esposo de María y padre adoptivo de Jesús. Siguió los avisos que recibió
   en sueños: se casó con María, huyó a Egipto y se estableció en Nazaret. Parece que murió antes que Jesús.'
 reason: Perspicacia «José» (núm. 8) da su oficio, su familia, los sueños y el indicio de Jn 19:26, 27 sobre su muerte.
@@ -98,5 +101,5 @@ links:
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/40/1
   type: bible
 perspicacia: 1200002515#8
-checked_on: '2026-09-29'
+checked_on: '2026-10-01'
 status: verified

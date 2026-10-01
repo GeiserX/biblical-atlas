@@ -3,7 +3,8 @@ id: seraya-hijo-de-tanhumet
 name: Seraya
 names:
 - name: Seraya
-disambiguation: El jefe militar hijo de Tanhúmet; no es el sacerdote principal Seraya.
+disambiguation: El jefe militar hijo de Tanhúmet; no es el sacerdote principal Seraya ni Seraya hijo de Nerías, el hermano
+  de Baruc.
 date:
   from: -606
   to: -606
@@ -50,5 +51,6 @@ relations:
 distinct_from:
 - seraya-hijo-de-azarias
 - seraya-secretario-de-david
-checked_on: '2026-09-30'
+- seraya-hijo-de-nerias
+checked_on: '2026-10-01'
 status: verified

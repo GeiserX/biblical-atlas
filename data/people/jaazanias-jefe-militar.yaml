@@ -7,7 +7,15 @@ names:
   note: Otra forma de su nombre, según Perspicacia (Jer 40:8; 42:1).
 - name: Azarías
   note: Así lo llama Jer 43:2; Perspicacia «Jezanías» dice que es el mismo jefe.
-disambiguation: El jefe militar hijo del maacatita; Perspicacia registra otros tres hombres llamados Jaazanías.
+disambiguation: El jefe militar hijo del maacatita; Perspicacia registra otros tres hombres llamados Jaazanías. Jer 43:2 lo
+  llama Azarías, y no es ninguno de los otros Azarías que numera Perspicacia.
+distinct_from:
+- abednego
+- azarias-hijo-de-jehohanan
+- azarias-hijo-de-natan
+- azarias-hijo-de-sadoc
+- ocozias-de-juda
+- uzias
 date:
   from: -606
   to: -606
@@ -23,6 +31,7 @@ reason: Perspicacia «Jaazanías», núm. 4; 2Re 25:23, 26; Jer 40:7, 8; 41:11-1
 sources:
 - it-jaazanias
 - 2-reyes-25
+- it-azarias
 links:
 - title: 'Perspicacia: «Jaazanías»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002264
@@ -40,5 +49,5 @@ relations:
   reason: '2Re 25:26: los jefes del ejército se fueron a Egipto; Perspicacia «Jaazanías», núm. 4, dice que él fue uno de ellos.'
   checked_on: '2026-09-30'
   status: verified
-checked_on: '2026-09-30'
+checked_on: '2026-10-01'
 status: verified

@@ -17,6 +17,7 @@ sources:
 - lucas-5
 - lucas-6
 - hechos-1
+- it-levi
 relations:
 - type: lived_in
   place: capernaum
@@ -64,8 +65,11 @@ history:
   change: La relación con Jesús decía «apóstol de», que con la regla «Y es el R de X» se lee al revés; pasa a «maestro», como
     pide la tabla de relaciones (Mt 10:2-4).
   source: mateo-10
-checked_on: '2026-09-29'
+checked_on: '2026-10-01'
 status: verified
+disambiguation: El apóstol que antes recaudaba impuestos, llamado también Leví; no es Leví hijo de Jacob ni ninguno de los
+  demás Leví que numera Perspicacia.
 distinct_from:
 - levi-hijo-de-melqui
 - levi-hijo-de-simeon
+- levi-hijo-de-jacob
