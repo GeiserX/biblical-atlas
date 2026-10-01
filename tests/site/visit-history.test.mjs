@@ -83,6 +83,21 @@ test('a link with a «#» or a typed address: the browser makes an entry without
   assert.deepEqual(plain(lone.state), { visit: 'v3', step: 0, name: 'Pedro' });
 });
 
+test('a stateless entry reached by going back or forth is not a new one: a visit starts there', () => {
+  // A tab open before the buttons existed: its entries have no state. After a reload the last one has step 0; going back
+  // onto the one before must not count up, or the labels point the wrong way.
+  let { state, visits } = H.begin(null, [], 'v1', 'Samotracia');
+  const r = H.arrive(state, null, visits, 'v2', 'Corinto', true);
+  assert.equal(r.fresh, true);
+  assert.deepEqual(plain(r.state), { visit: 'v2', step: 0, name: 'Corinto' });
+  assert.deepEqual(plain(H.around(r.state, r.visits)), { back: { can: false, name: null }, forward: { can: false, name: null } });
+  // The same arrival as a new entry (a «#» link) still takes the next number.
+  assert.equal(H.arrive(state, null, visits, 'v2', 'Corinto', false).state.step, 1);
+  // Our own state wins over the flag.
+  ({ state, visits } = H.push(state, visits));
+  assert.deepEqual(plain(H.arrive(state, { visit: 'v1', step: 0, name: 'Samotracia' }, visits, 'v3', null, true).state), { visit: 'v1', step: 0, name: 'Samotracia' });
+});
+
 test('a reload keeps the visit and its step; a shared link opened fresh starts another, and both lists survive', () => {
   let { state, visits } = H.begin(null, [], 'v1', 'A');
   ({ state, visits } = H.push(state, visits)); ({ state, visits } = H.rename(state, visits, 'B'));

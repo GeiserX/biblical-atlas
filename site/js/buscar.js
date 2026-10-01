@@ -489,6 +489,7 @@ const historia = (() => {
   const deEstaPagina = (en) => {
     try { const u = new URL(en.url); return u.origin === location.origin && u.pathname === location.pathname && u.search === location.search; } catch { return false; }
   };
+  let ultimoIndice = null;
 
   // Al cargar la página: la nuestra si recargamos o volvemos desde otra página; si no, empieza una visita. Antes de los
   // datos solo se sabe nombrar la portada; lo demás lo nombra sello() al llegar.
@@ -497,6 +498,7 @@ const historia = (() => {
     actual = r.state;
     guardarVisitas(r.visits);
     history.replaceState(actual, '', location.href);
+    ultimoIndice = indice();
   }
 
   /** Lo que enseña la vista de ahora, para ponerle nombre (BE.visitHistory.viewName). */
@@ -551,6 +553,7 @@ const historia = (() => {
     actual = r.state;
     guardarVisitas(r.visits);
     history.pushState(actual, '', location.href);
+    ultimoIndice = indice();
     pintarBotones();
   }
   /** base.js, al escribir la dirección: el nombre de la vista de ahora pasa a la entrada y al título de la pestaña.
@@ -599,14 +602,18 @@ const historia = (() => {
   const despertar = () => { if (quieto && pintado) quieto = false; };
   window.addEventListener('pointerdown', despertar, true);
   window.addEventListener('keydown', despertar, true);
-  // Atrás o Adelante, del sitio o del navegador. Una entrada sin estado es nueva: un enlace con «#» o una dirección
-  // escrita a mano, siempre justo después de la nuestra. Antes de los datos no hay vista que poner: el arranque lee la
-  // dirección cuando llegan.
+  // Atrás o Adelante, del sitio o del navegador. Una entrada sin estado es nueva si está justo después de la nuestra: un
+  // enlace con «#» o una dirección escrita a mano. Si se llegó a ella yendo atrás o adelante (una pestaña de antes de
+  // los botones), empieza ahí una visita. Antes de los datos no hay vista que poner: el arranque lee la dirección
+  // cuando llegan.
   window.addEventListener('popstate', () => {
-    const r = H.arrive(actual, history.state, leerVisitas(), nuevaVisita());
+    const i = indice();
+    const recorrido = i !== null && ultimoIndice !== null && i !== ultimoIndice + 1;
+    const r = H.arrive(actual, history.state, leerVisitas(), nuevaVisita(), null, recorrido);
     actual = r.state;
     guardarVisitas(r.visits);
     if (r.fresh) history.replaceState(actual, '', location.href);
+    ultimoIndice = i;
     ponerTitulo(actual.name);
     pintarBotones();
     quedarse();

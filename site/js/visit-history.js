@@ -62,11 +62,13 @@ function rename(state, visits, name) {
   return { state: { ...state, name }, visits: withNames(visits, state.visit, names) };
 }
 /** popstate. Our state: Back or Forward inside the visit. No state: the browser made a new entry for an address typed
-    or a link with a «#», always right after the one we were on (`previous`); without one, visit `newId` starts. fresh
-    says the entry needs our state written. */
-function arrive(previous, state, visits, newId, name = null) {
+    or a link with a «#», always right after the one we were on (`previous`); without one, visit `newId` starts. A
+    stateless entry reached by going back or forth (`traversal`: a tab open before the buttons existed, or a state
+    someone erased) is not new and its place in the visit is unknown: visit `newId` starts there. fresh says the entry
+    needs our state written. */
+function arrive(previous, state, visits, newId, name = null, traversal = false) {
   if (isEntry(state)) return { ...begin(state, visits, state.visit, name), fresh: false };
-  if (!isEntry(previous)) return { ...begin(null, visits, newId, name), fresh: true };
+  if (!isEntry(previous) || traversal) return { ...begin(null, visits, newId, name), fresh: true };
   return { ...push(previous, visits, name), fresh: true };
 }
 /** Leaving the page by a link: the browser drops every entry ahead of this one. */

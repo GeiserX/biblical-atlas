@@ -419,3 +419,39 @@ test('a shared tour link opened fresh is one entry; the logo\'s landing keeps th
   await settle(page);
   assert.equal(await page.evaluate(() => document.title), title, 'the landing opened with the logo has another title');
 });
+
+test('a stateless entry reached by going back starts a visit there, and another page ahead switches Forward off', async () => {
+  const page = await openPage(DESKTOP, { hash: 't=50.3000' });
+  for (const q of ['Pablo', 'Corinto', 'Samotracia']) await search(page, q);
+  await page.locator('#atras').click();
+  await settle(page);
+  // The state erased on Corinto's entry (a tab open before the buttons existed), then Forward and the browser's Back.
+  const visit = await page.evaluate(() => { const v = history.state.visit; history.replaceState(null, '', location.href); return v; });
+  await page.goForward();
+  await settle(page);
+  await page.goBack();
+  await settle(page);
+  let h = await hist(page);
+  assert.equal((await snap(page)).sel, 'lugar:corinto');
+  assert.notEqual(h.state.visit, visit, 'the entry was counted as a new one after Samotracia');
+  assert.equal(h.state.step, 0);
+  assert.equal(h.back.off, true);
+  assert.equal(h.back.label, 'No hay nada atrás');
+  assert.equal(h.state.name, 'Corinto', 'the entry that arrived without state has no name');
+  assert.equal(h.title, 'Corinto · biblical-atlas');
+  // Another page of the site reached by a typed address, not a link, while something was ahead.
+  const p2 = await openPage(DESKTOP, { hash: 't=50.3000' });
+  for (const q of ['Pablo', 'Corinto', 'Samotracia']) await search(p2, q);
+  await p2.locator('#atras').click();
+  await settle(p2);
+  assert.equal((await hist(p2)).forward.label, 'Adelante: Samotracia');
+  await p2.goto(`${base}acerca.html`);
+  await p2.goBack();
+  await p2.waitForFunction(() => window.BE?.D && window.__be, null, { timeout: 30000 });
+  await settle(p2);
+  h = await hist(p2);
+  assert.equal(h.state.step, 2);
+  assert.equal(h.forward.off, true, 'Forward offers Samotracia but goes to acerca.html');
+  assert.equal(h.forward.label, 'No hay nada adelante');
+  assert.equal(h.back.label, 'Atrás: Pablo');
+});
