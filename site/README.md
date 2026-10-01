@@ -169,7 +169,7 @@ El carril «Viajes de Pablo» enseña solo los viajes de Pablo: un tramo por via
 
 | Fichero | Qué hace |
 |---|---|
-| `js/fundir-claves.js` | Script clásico sin `defer` y sin efectos: define `fundirClaves`, la regla para juntar dos juegos de claves guardadas. Lo de aquí manda, las notas se juntan por ficha y marcadores y capítulos leídos se unen. La usan `migrar-claves.js` y `traer.js` |
+| `js/fundir-claves.js` | Script clásico sin `defer` y sin efectos: define `fundirClaves`, la regla para juntar dos juegos de claves guardadas. Lo de aquí manda, las notas se juntan por ficha y marcadores y capítulos leídos se unen. La usa `migrar-claves.js` |
 | `js/migrar-claves.js` | Script clásico sin `defer`, antes que ningún otro que lea el almacenamiento: junta las claves guardadas con el prefijo anterior con las del nuevo, `biblical-atlas:`, con `fundirClaves`. Nunca borra ni pisa. La marca `biblical-atlas:migrado` guarda una huella de cada clave antigua ya juntada: solo vuelve a juntar una que haya cambiado desde entonces |
 | `js/base.js` | Utilidades, estado, carga de datos, registro de tipos, selección, cursor, reproducción, dirección, bucle de pintado, teclado y arranque |
 | `js/mapa.js` | MapLibre, relieve en cuatro extensiones, cortina, rutas, arcos de cartas, lugares inciertos, hallazgos, etiquetas, capas, leyenda y «Mientras tanto» |
