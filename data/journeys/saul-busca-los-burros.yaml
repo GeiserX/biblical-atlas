@@ -162,12 +162,12 @@ stops:
     type: anchored
     chronology: tnm
     text: 1117 a.e.c.
-  note: Llegada. Luego llega a la colina del Dios verdadero, sin ficha, donde se une a los profetas.
+  note: Última parada con ficha. El relato sigue hasta la colina del Dios verdadero, sin ficha, donde se une a los profetas.
   reason: '1Sa 10:3, 4 anuncia el encuentro junto al árbol grande de Tabor, y 10:9, 10 lo da por cumplido. Suceso ancla: saul-se-une-a-los-profetas
     (1117, estudio 3).'
   sources:
   - 1-samuel-10
   - it-tabor
   - si-3
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-01'
   status: verified

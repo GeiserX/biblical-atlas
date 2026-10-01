@@ -59,13 +59,15 @@ stops:
     type: anchored
     chronology: tnm
     text: c. 1473 a.e.c.
-  note: Antes, en un camino sin nombre, habla la burra y el ángel le cierra el paso.
+  note: Antes, en un camino sin nombre, habla la burra y el ángel le cierra el paso. El encuentro es en una ciudad de Moab
+    junto al río; Perspicacia «Ar» recoge que hay quien la identifica con Ar.
   reason: 'Nú 22:36: Balac sale a su encuentro en la ciudad de Moab junto al Arnón, en la frontera. Fecha del suceso «Balac
     sale a recibir a Balaam junto al Arnón».'
   sources:
   - numeros-22
   - it-arnon
-  checked_on: '2026-09-30'
+  - it-ar
+  checked_on: '2026-10-01'
   status: verified
 - order: 3
   place: quiryat-huzot

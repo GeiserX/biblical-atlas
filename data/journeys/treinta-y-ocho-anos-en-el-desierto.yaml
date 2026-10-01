@@ -190,12 +190,12 @@ stops:
     text: 'entre 1512 y 1474 a.e.c. (tiempo narrativo: de la salida de Cadés tras el informe de los espías a la vuelta a Cadés
       el año cuarenta)'
   note: null
-  reason: 'Nú 33:24 nombra Haradá como la etapa que sigue a el monte Séfer. Sin año propio: fecha del suceso «Israel anda
+  reason: 'Nú 33:24 nombra Haradá como la etapa que sigue al monte Séfer. Sin año propio: fecha del suceso «Israel anda
     errante por el desierto», entre las dos estancias en Cadés.'
   sources:
   - numeros-33
   - it-qades
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-01'
   status: verified
 - order: 9
   place: maquelot

@@ -133,14 +133,14 @@ stops:
     chronology: tnm
     text: 1513 a.e.c.
   note: Pasan el mar en seco; después, Moisés y Míriam cantan a Jehová. El lugar exacto del cruce no es seguro.
-  reason: Éx 14:21, 22 y Nú 33:8 los hacen pasar por en medio del mar. Fecha de los sucesos del cruce y del canto junto al
-    mar.
+  reason: Éx 14:21, 22 y Nú 33:8 los hacen pasar por en medio del mar. Fecha de los sucesos
+    «Israel cruza el mar Rojo en seco» y «Moisés y Míriam cantan a Jehová junto al mar».
   sources:
   - exodo-14
   - exodo-15
   - numeros-33
   - si-3
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-01'
   status: verified
 - order: 6
   place: mara
@@ -270,13 +270,13 @@ stops:
     chronology: tnm
     text: 1513 a.e.c.
   note: Agua de la roca en Masá y Meribá, y victoria sobre Amalec con Josué al frente de la batalla.
-  reason: Éx 17:1 y Nú 33:14 los hacen acampar en Refidim sin agua. Fecha de los sucesos del agua de la roca y de la batalla
-    contra los amalequitas.
+  reason: Éx 17:1 y Nú 33:14 los hacen acampar en Refidim sin agua. Fecha de los sucesos
+    «Moisés saca agua de la roca en Horeb» e «Israel vence a los amalequitas en Refidim».
   sources:
   - exodo-17
   - numeros-33
   - si-3
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-01'
   status: verified
 - order: 13
   place: desierto-de-sinai
