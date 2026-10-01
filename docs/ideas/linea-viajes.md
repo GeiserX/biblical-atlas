@@ -66,7 +66,7 @@ La regla de «Viajes de Pablo» pasa a todos. En el ordenador van en dos líneas
 
 ## 3. Pablo elegido en el mapa
 
-Desde la última corrección del mapa, sin nada elegido se ve un solo viaje de Pablo, el de la fecha. Al elegir a Pablo se vuelven a pintar todos: el de la fecha en color y los demás en gris. Con cualquier otra persona elegida pasa lo mismo. El ejemplo es Pablo en Corinto hacia el 51 e.c., durante el segundo viaje. En las maquetas del mapa se ha quitado la tarjeta «Mientras tanto», que tapaba las rutas.
+Desde la última corrección del mapa, sin nada elegido se ve un solo viaje de Pablo, el de la fecha. Al elegir a Pablo se vuelven a pintar todos: el de la fecha en color, los ya pasados en gris y los que aún no han empezado con su color. Con cualquier otra persona elegida pasa lo mismo. El ejemplo es Pablo en Corinto hacia el 51 e.c., durante el segundo viaje. En las maquetas del mapa se ha quitado la tarjeta «Mientras tanto», que tapaba las rutas.
 
 ### A. Solo el viaje en curso en la fecha del cursor
 
@@ -80,7 +80,7 @@ Elegir a Pablo no cambia las rutas: se ve el mismo viaje que sin selección, má
 
 ![3B: los ocho viajes, el segundo en color y el resto en gris](img/linea-viajes/3b.png)
 
-Sin coste. Con la persona elegida se vuelve a la vista que quitamos por no leerse: rutas grises encima de rutas grises, sobre todo en Grecia y Asia Menor.
+Sin coste. Con la persona elegida se vuelve a la vista que quitamos por no leerse: rutas grises y de color unas encima de otras, sobre todo en Grecia y Asia Menor.
 
 ### C. Todos, cada uno en su color, con la leyenda que los nombra
 
