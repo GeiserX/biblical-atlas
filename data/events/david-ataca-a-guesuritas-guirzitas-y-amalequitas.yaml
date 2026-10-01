@@ -9,8 +9,8 @@ date:
   type: derived
   chronology: tnm
   text: c. 1080-1078 a.e.c.
-  note: 'Cuenta nuestra: David vivió entre los filisteos un año y cuatro meses (1Sa 27:7), hasta la muerte de Saúl en 1078
-    (estudio 3; Perspicacia «Jonatán», núm. 2). Contando hacia atrás, llegó a finales de 1080 o en 1079.'
+  note: 'Cuenta nuestra: un año y cuatro meses entre los filisteos (1Sa 27:7), hasta subir a Hebrón poco después de morir Saúl
+    en 1078 (Perspicacia «Jonatán», núm. 2; 2Sa 2:1-4). Contando hacia atrás, llegó a finales de 1080 o en 1079.'
 narrative_order:
   series: 1-samuel
   order: 27008
@@ -30,10 +30,11 @@ passages:
 summary: David sale a saquear a los pueblos que vivían de Telam a Sur, hacia Egipto, sin dejar a nadie vivo. A Akís le cuenta
   que ha atacado el sur de Judá, y el rey cree que Israel ya lo detesta.
 reason: 'Perspicacia «Akís», párr. 2; «Guirzitas»; «Guesuritas», núm. 2; «Jerahmeelitas»; «Négueb»: amalequitas del Négueb.
-  Fecha: cuenta nuestra, dieciséis meses (1Sa 27:7) hasta la muerte de Saúl en 1078 (estudio 3; Perspicacia «Jonatán», núm.
-  2).'
+  Fecha: cuenta nuestra, dieciséis meses (1Sa 27:7) hasta subir a Hebrón, poco después de morir Saúl en 1078
+  (Perspicacia «Jonatán», núm. 2).'
 sources:
 - 1-samuel-27
+- 2-samuel-2
 - it-akis
 - it-guirzitas
 - it-guesuritas
@@ -47,5 +48,5 @@ links:
 - title: 1 Samuel 27 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/1-samuel/27/
   type: bible
-checked_on: '2026-09-29'
+checked_on: '2026-10-01'
 status: pending
