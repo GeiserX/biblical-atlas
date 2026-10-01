@@ -1567,6 +1567,7 @@ def validar(datos):
     check_relations(datos, err, warn)
     validar_consta_desde(datos, err)
     validar_claves_perspicacia(datos, err)
+    validar_wol(datos, err)
     errores.extend(integrity(datos))
     errores.extend(pablo_en_su_sitio(datos))
     errores.extend(meses_en_su_anio(datos))
@@ -1574,6 +1575,39 @@ def validar(datos):
     for slug, obj in (datos.get("coverage") or {}).items():
         textos_largos(clean(obj), obj["_fichero"], err)
     return errores, avisos
+
+
+EXCEPCIONES_WOL = RAIZ / "scripts" / "wol_exceptions.yaml"
+
+
+def validar_wol(datos, err, excepciones=None):
+    """Una URL de wol.jw.org en data/ es un error salvo las de scripts/wol_exceptions.yaml, que jw.org no tiene: la
+    fuente se escribe con su página de www.jw.org, la que da el buscador de jw.org con el documento."""
+    if excepciones is None:
+        excepciones = set((_read(EXCEPCIONES_WOL) or {}) if EXCEPCIONES_WOL.exists() else {})
+
+    def rec(x, donde):
+        if isinstance(x, dict):
+            for k, v in x.items():
+                if k in ("url", "coord_url") and isinstance(v, str):
+                    if v.startswith(("https://wol.jw.org/", "http://wol.jw.org/")) and v not in excepciones:
+                        err(f"{donde}: {v} es de wol.jw.org; escribe la página de www.jw.org que da "
+                            f"https://www.jw.org/finder?wtlocale=S&docid=<documento> (las que jw.org no tiene van "
+                            f"en scripts/wol_exceptions.yaml con su porqué)")
+                else:
+                    rec(v, donde)
+        elif isinstance(x, list):
+            for v in x:
+                rec(v, donde)
+
+    origen = datos.get("_origen_fuentes") or {}
+    for fid, f in (datos.get("sources") or {}).items():
+        rec(f, f"{origen.get(fid, 'data/sources/')} ({fid})")
+    for t in TYPES:
+        for o in datos.get(t) or []:
+            rec(clean(o), o.get("_fichero", f"data/{t}"))
+    rec(datos.get("calendar") or {}, "data/calendar.yaml")
+    rec(datos.get("books") or [], "data/books.yaml")
 
 
 RE_PERSPICACIA = re.compile(r"^(\d{10})(?:#([1-9]\d?))?$")

@@ -99,7 +99,7 @@ Una fecha lo mueve todo: arrastra el cursor o pulsa reproducir y el mapa enseña
 
 ## Ayuda
 
-- Un dato mal: «Proponer una corrección» en la ficha abre una incidencia en GitHub con el fichero ya puesto. Solo pide qué está mal, qué debería decir y la página de wol.jw.org que lo sostiene.
+- Un dato mal: «Proponer una corrección» en la ficha abre una incidencia en GitHub con el fichero ya puesto. Solo pide qué está mal, qué debería decir y la página de jw.org que lo sostiene.
 - Un cambio tuyo: [Desarrollo](development.md) explica cómo compilar, validar y proponer un PR. Lo decidido está en [Decisiones](decisiones.md) y lo que queda, en la [Hoja de ruta](hoja-de-ruta.md).
 - Un problema de seguridad: la [política de seguridad](https://github.com/GeiserX/biblical-atlas/blob/main/SECURITY.md), nunca una incidencia pública.
 
