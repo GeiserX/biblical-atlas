@@ -34,13 +34,13 @@ sources:
 - si-3
 links:
 - title: Gálatas 1 (TNM)
-  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/48/1
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/G%C3%A1latas/1/
   type: bible
 - title: Gálatas 6 (TNM)
-  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/48/6
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/G%C3%A1latas/6/
   type: bible
 - title: 'Perspicacia: «Gálatas, Carta a los»'
-  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001595
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/G%C3%A1latas-Carta-a-los/
   type: perspicacia
 search: Pablo escribe carta Gálatas
 checked_on: '2026-09-29'

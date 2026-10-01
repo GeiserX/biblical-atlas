@@ -18,13 +18,13 @@ sources:
 - ip1-29
 links:
 - title: 'Perspicacia: «Joah»'
-  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002470
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Joah/
   type: perspicacia
 - title: 2 Reyes 18 (TNM)
-  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/18
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-reyes/18/
   type: bible
 - title: Isaías 36 (TNM)
-  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/23/36
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Isa%C3%ADas/36/
   type: bible
 relations:
 - type: kin

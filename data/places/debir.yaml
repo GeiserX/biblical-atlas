@@ -30,16 +30,16 @@ sources:
 - jueces-1
 links:
 - title: 'Perspicacia: «Debir»'
-  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001137
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Debir/
   type: perspicacia
 - title: Josué 10 (TNM)
-  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/10
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Josu%C3%A9/10/
   type: bible
 - title: Josué 11 (TNM)
-  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/11
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Josu%C3%A9/11/
   type: bible
 - title: Josué 21 (TNM)
-  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/21
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Josu%C3%A9/21/
   type: bible
 checked_on: '2026-09-29'
 status: verified

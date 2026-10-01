@@ -39,5 +39,30 @@ class Pasajes(unittest.TestCase):
                 self.assertIn("no es un tramo", e[0])
 
 
+def errores_perspicacia(links, clave="1200000129"):
+    out = []
+    validate.validar_claves_perspicacia({"people": [{"_fichero": "data/people/x.yaml", "perspicacia": clave,
+                                                     "links": links, "sources": []}], "sources": {}}, out.append)
+    return out
+
+
+class ClavePerspicacia(unittest.TestCase):
+    JW = "https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/%C3%81gabo/"
+
+    def test_wol_con_el_documento(self):
+        self.assertEqual(errores_perspicacia([{"type": "perspicacia", "url": "https://wol.jw.org/es/wol/d/r4/lp-s/1200000129"}]), [])
+
+    def test_wol_con_otro_documento_es_error(self):
+        self.assertEqual(len(errores_perspicacia([{"type": "perspicacia", "url": "https://wol.jw.org/es/wol/d/r4/lp-s/1200000130"}])), 1)
+
+    def test_articulo_de_perspicacia_en_jw_org(self):
+        self.assertEqual(errores_perspicacia([{"type": "perspicacia", "url": self.JW}]), [])
+
+    def test_jw_org_que_no_es_perspicacia_es_error(self):
+        otra = "https://www.jw.org/es/biblioteca/libros/jesus/ministerio-en-galilea/vision-transfiguracion/"
+        self.assertEqual(len(errores_perspicacia([{"type": "perspicacia", "url": otra}])), 1)
+        self.assertEqual(len(errores_perspicacia([{"type": "bible", "url": self.JW}])), 1)
+
+
 if __name__ == "__main__":
     unittest.main()

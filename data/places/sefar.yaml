@@ -35,10 +35,10 @@ sources:
 - openbible-geo
 links:
 - title: 'Perspicacia: «Sefar»'
-  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003899
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sefar/
   type: perspicacia
 - title: Génesis 10 (TNM)
-  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/10
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/G%C3%A9nesis/10/
   type: bible
 checked_on: '2026-09-29'
 status: verified

@@ -21,10 +21,10 @@ sources:
 - openbible-geo
 links:
 - title: 'Perspicacia: «Ecbátana»'
-  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001254
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ecb%C3%A1tana/
   type: perspicacia
 - title: Esdras 6 (TNM)
-  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/15/6
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/esdras/6/
   type: bible
 checked_on: '2026-09-28'
 status: verified

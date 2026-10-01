@@ -28,10 +28,10 @@ sources:
 - jueces-12
 links:
 - title: 'Perspicacia: «Elón»'
-  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001333
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/El%C3%B3n/
   type: perspicacia
 - title: Jueces 12 (TNM)
-  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/12
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/jueces/12/
   type: bible
 relations:
 - type: succeeds

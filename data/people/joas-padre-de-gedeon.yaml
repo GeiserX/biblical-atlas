@@ -20,13 +20,13 @@ sources:
 - jueces-8
 links:
 - title: 'Perspicacia: «Joás»'
-  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002474
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jo%C3%A1s/
   type: perspicacia
 - title: Jueces 6 (TNM)
-  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/6
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/jueces/6/
   type: bible
 - title: Jueces 8 (TNM)
-  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/8
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/jueces/8/
   type: bible
 relations:
 - type: kin

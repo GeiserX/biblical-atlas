@@ -24,13 +24,13 @@ sources:
 - 2-corintios-11
 links:
 - title: 'Perspicacia: «Aretas»'
-  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000356
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Aretas/
   type: perspicacia
 - title: 'Perspicacia: «Arabia»'
-  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000327
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Arabia/
   type: perspicacia
 - title: 2 Corintios 11 (TNM)
-  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/47/11
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-corintios/11/
   type: bible
 relations:
 - type: lived_in

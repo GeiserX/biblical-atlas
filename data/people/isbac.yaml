@@ -11,10 +11,10 @@ sources:
 - genesis-25
 links:
 - title: 'Perspicacia: «Isbaq»'
-  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002209
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Isbaq/
   type: perspicacia
 - title: Génesis 25 (TNM)
-  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/25
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/G%C3%A9nesis/25/
   type: bible
 relations:
 - type: kin

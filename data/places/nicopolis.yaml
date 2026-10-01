@@ -19,10 +19,10 @@ sources:
 - openbible-geo
 links:
 - title: 'Perspicacia: «Nicópolis»'
-  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003251
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Nic%C3%B3polis/
   type: perspicacia
 - title: Tito 3 (TNM)
-  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/56/3
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/tito/3/
   type: bible
 checked_on: '2026-09-28'
 status: verified

@@ -18,13 +18,13 @@ sources:
 - 1-reyes-4
 links:
 - title: 'Perspicacia: «Hemán»'
-  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001982
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hem%C3%A1n/
   type: perspicacia
 - title: 'Perspicacia: «Ezrahíta»'
-  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001478
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ezrah%C3%ADta/
   type: perspicacia
 - title: Salmo 88 (TNM)
-  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/19/88
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/salmos/88/
   type: bible
 relations:
 - type: kin

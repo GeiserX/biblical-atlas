@@ -59,13 +59,13 @@ sources:
 - genesis-18
 links:
 - title: 'Perspicacia: «Sodoma»'
-  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004176
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sodoma/
   type: perspicacia
 - title: 'Perspicacia: «Mar Salado»'
-  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003813
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Mar-Salado/
   type: perspicacia
 - title: Génesis 19 (TNM)
-  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/19
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/G%C3%A9nesis/19/
   type: bible
 checked_on: '2026-09-29'
 status: verified

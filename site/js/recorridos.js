@@ -57,11 +57,11 @@ function fichaRecorrido(id) {
     <section class="be-card recorrido"><div class="be-card__pad">
       <div class="be-card__eyebrow">Recorrido guiado · parada ${i + 1} de ${n}${libros.length ? ` · ${esc(libros.slice(0, 3).join(', '))}` : ''}</div>
       <div class="progreso" role="list" aria-label="Paradas del recorrido">${rc.paradas.map((x, k) => `<button type="button" role="listitem" class="progreso-tramo${k < i ? ' progreso-tramo--visto' : ''}${k === i ? ' progreso-tramo--actual' : ''}" data-recorrido-ir="${k}" aria-label="Parada ${k + 1}: ${esc(nombreDe(x))}"${k === i ? ' aria-current="step"' : ''}><span class="progreso-barra"></span><span class="progreso-anio">${esc(fmtAnio(Math.floor(x.t)))}</span></button>`).join('')}</div>
-      ${i === 0 ? `<div class="be-note recorrido-entrada"><span aria-hidden="true">◎</span><span>Vas a ver ${n} paradas${libros.length ? ` con ${esc(libros.join(', '))}` : ''}. Cada una mueve el cursor, el mapa y la ficha. Los textos son resúmenes nuestros: el relato se lee en wol.jw.org.</span></div>` : ''}
+      ${i === 0 ? `<div class="be-note recorrido-entrada"><span aria-hidden="true">◎</span><span>Vas a ver ${n} paradas${libros.length ? ` con ${esc(libros.join(', '))}` : ''}. Cada una mueve el cursor, el mapa y la ficha. Los textos son resúmenes nuestros: el relato se lee en jw.org.</span></div>` : ''}
       <div class="parada-cab"><span class="be-num parada-num">${i + 1}</span><span class="be-chrono be-chrono--tnm">${esc(fechaParada(p))}</span></div>
       <h2 class="be-card__title">${s ? `<button type="button" class="enlace-titulo" data-sel="${esc(p.sel)}" title="Abrir su ficha">${esc(titulo)}</button>` : esc(titulo)}</h2>
       <p class="recorrido-texto">${esc(p.texto)}</p>
-      ${(p.pasajes || []).length ? `<div class="fila-chips"><span class="be-muted">Lee el relato:</span>${BE.chipsCitas(p.pasajes.join('; '))}${cita0 ? `<a class="be-wol" href="${BE.urlCapitulo(cita0.libro, cita0.cap)}" ${EXTERNO}>Leer ${esc(cita0.libro.nombre)} ${cita0.cap} en wol.jw.org</a>` : ''}</div>` : ''}
+      ${(p.pasajes || []).length ? `<div class="fila-chips"><span class="be-muted">Lee el relato:</span>${BE.chipsCitas(p.pasajes.join('; '))}${cita0 ? `<a class="be-wol" href="${BE.urlCita(cita0)}" ${EXTERNO}>Leer ${esc(cita0.texto)} en jw.org</a>` : ''}</div>` : ''}
       ${p.no_sabemos ? `<div class="be-note be-note--uncertain"><span aria-hidden="true">?</span><span><b>Qué no sabemos.</b> ${esc(p.no_sabemos)}</span></div>` : ''}
     </div></section>
     ${q ? `<section class="be-card ficha-sec pregunta"><div class="be-card__pad"><h3 class="be-card__eyebrow">Pregunta de repaso</h3>
@@ -180,7 +180,7 @@ function hojaImpresion(id) {
     <ol class="hoja-paradas">${rc.paradas.map((p) => { const s = BE.parseSel(p.sel); return `<li><b>${esc(s ? BE.nombreSel(s) : p.sel)}</b> <span class="hoja-fecha">${esc(fechaParada(p))}</span><br>${esc(p.texto)}${(p.pasajes || []).length ? `<br><i>${esc(p.pasajes.join('; '))}</i>` : ''}${p.no_sabemos ? `<br>No sabemos: ${esc(p.no_sabemos)}` : ''}</li>`; }).join('')}</ol>
     ${qs.length ? `<h2>Preguntas</h2><ol class="hoja-preguntas">${qs.map(({ p }) => `<li>${esc(p.pregunta.texto)} <span class="hoja-opciones">(${esc(p.pregunta.opciones.join(' · '))})</span></li>`).join('')}</ol>
       <h2>Respuestas</h2><ol class="hoja-respuestas">${qs.map(({ p }) => `<li><b>${esc(p.pregunta.respuesta)}.</b> ${esc(p.pregunta.explicacion)}</li>`).join('')}</ol>` : ''}
-    <p class="hoja-meta">Los textos son resúmenes nuestros. El relato se lee en wol.jw.org. Vista en línea: ${esc(location.href)}</p>`;
+    <p class="hoja-meta">Los textos son resúmenes nuestros. El relato se lee en jw.org. Vista en línea: ${esc(location.href)}</p>`;
   window.print();
 }
 

@@ -26,16 +26,16 @@ sources:
 - 1-reyes-7
 links:
 - title: 'Perspicacia: «Sucot»'
-  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004256
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sucot/
   type: perspicacia
 - title: Génesis 33 (TNM)
-  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/33
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/G%C3%A9nesis/33/
   type: bible
 - title: Salmo 108 (TNM)
-  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/19/108
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/salmos/108/
   type: bible
 - title: Salmo 60 (TNM)
-  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/19/60
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/salmos/60/
   type: bible
 checked_on: '2026-09-30'
 status: verified

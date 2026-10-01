@@ -11,10 +11,10 @@ sources:
 - genesis-4
 links:
 - title: 'Perspicacia: «Metusael»'
-  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003023
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Metusael/
   type: perspicacia
 - title: Génesis 4 (TNM)
-  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/4
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/G%C3%A9nesis/4/
   type: bible
 relations:
 - type: kin

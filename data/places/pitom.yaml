@@ -18,10 +18,10 @@ sources:
 - exodo-1
 links:
 - title: 'Perspicacia: «Pitom»'
-  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003504
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Pitom/
   type: perspicacia
 - title: Éxodo 1 (TNM)
-  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/2/1
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/%C3%89xodo/1/
   type: bible
 checked_on: '2026-09-29'
 status: pending

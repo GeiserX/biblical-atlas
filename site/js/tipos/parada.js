@@ -29,7 +29,7 @@ function fichaParada(s, w) {
       <div class="fila-chips">${BE.chipsCitas(s.p.referencia)}<span class="be-chrono be-chrono--tnm">${esc(s.narrativa ? fechaCorta(f) : (f.texto || fechaCorta(f)))}</span>
       ${s.narrativa ? '<span class="be-chrono be-chrono--approx">orden seguro, fecha aproximada</span>' : ''}</div>
       ${enCamino ? `<div class="be-list">${BE.botonSel(`parada:${w.sig.key}`, `Siguiente: ${w.sig.lugar.nombre}`, esc(w.sig.p.referencia))}</div>` : ''}
-    </div><div class="be-card__foot">${BE.estadoHtml(s.p.estado)}<span class="be-spacer"></span>${citas(s.p.referencia)[0] ? `<a class="be-wol" href="${BE.urlCapitulo(citas(s.p.referencia)[0].libro, citas(s.p.referencia)[0].cap)}" ${EXTERNO}>Leer en wol.jw.org</a>` : ''}</div></section>
+    </div><div class="be-card__foot">${BE.estadoHtml(s.p.estado)}<span class="be-spacer"></span>${citas(s.p.referencia)[0] ? `<a class="be-wol" href="${BE.urlCita(citas(s.p.referencia)[0])}" ${EXTERNO}>Leer en jw.org</a>` : ''}</div></section>
     ${comp.length ? `<section class="be-card ficha-sec"><div class="be-card__pad"><h3 class="be-card__eyebrow">Con ${esc(BE.PERS[v.persona || 'pablo']?.nombre || 'Pablo')} en este viaje</h3>
       <div class="companeros">${comp.map((p) => `<button type="button" class="companero" data-sel="persona:${esc(p.id)}"><span class="be-node be-node--persona be-node--sm">${esc(p.nombre[0])}</span><span><b>${esc(p.nombre)}</b><span class="be-row__meta">${esc(p.resumen)}</span></span></button>`).join('')}</div></div></section>` : ''}
     ${BE.porQueHtml(s.p)}

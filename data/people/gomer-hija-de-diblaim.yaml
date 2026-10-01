@@ -19,13 +19,13 @@ sources:
 - oseas-3
 links:
 - title: 'Perspicacia: «Gómer»'
-  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001740
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/G%C3%B3mer/
   type: perspicacia
 - title: Oseas 1 (TNM)
-  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/28/1
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/oseas/1/
   type: bible
 - title: Oseas 3 (TNM)
-  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/28/3
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/oseas/3/
   type: bible
 relations:
 - type: kin

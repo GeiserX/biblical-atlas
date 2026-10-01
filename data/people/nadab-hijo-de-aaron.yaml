@@ -34,13 +34,13 @@ sources:
 - numeros-26
 links:
 - title: 'Perspicacia: «Nadab»'
-  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003159
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Nadab/
   type: perspicacia
 - title: Éxodo 6 (TNM)
-  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/2/6
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/%C3%89xodo/6/
   type: bible
 - title: Éxodo 24 (TNM)
-  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/2/24
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/%C3%89xodo/24/
   type: bible
 relations:
 - type: kin

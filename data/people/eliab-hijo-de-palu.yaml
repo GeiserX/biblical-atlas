@@ -16,13 +16,13 @@ sources:
 - deuteronomio-11
 links:
 - title: 'Perspicacia: «Eliab»'
-  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001292
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Eliab/
   type: perspicacia
 - title: Números 16 (TNM)
-  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/16
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/N%C3%BAmeros/16/
   type: bible
 - title: Números 26 (TNM)
-  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/26
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/N%C3%BAmeros/26/
   type: bible
 relations:
 - type: kin

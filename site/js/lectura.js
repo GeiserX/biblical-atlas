@@ -1,7 +1,7 @@
 /* biblical-atlas · modo lectura (pantalla 12, #vista-lectura): cualquier capítulo de cualquier libro con datos, al lado
    del mapa (A-02). Índice de pasajes con título nuestro, el mapa que sigue la lectura con las paradas numeradas,
-   capítulos leídos guardados solo en este navegador (A-09), enlaces a wol.jw.org con las notas de estudio (B-18) y los
-   vídeos de jw.org que citan el capítulo. El texto bíblico no está aquí: se lee en wol.jw.org.
+   capítulos leídos guardados solo en este navegador (A-09), enlaces a jw.org con las notas de estudio (B-18) y los
+   vídeos de jw.org que citan el capítulo. El texto bíblico no está aquí: se lee en jw.org.
    Dueño durante el reparto: app-estudio. */
 'use strict';
 (() => {
@@ -92,8 +92,8 @@ function pintar() {
     </header>
     <div class="lectura-cuerpo">
     <nav class="capitulos capitulos--lectura" aria-label="Capítulos de ${esc(lib.nombre)}">${Array.from({ length: lib.capitulos || cap }, (_, i) => i + 1).map((c) => `<button type="button" class="cap${conDatos[c] ? ' cap--datos' : ''}${lds.has(`${lib.num}-${c}`) ? ' cap--leido' : ''}${c === cap ? ' cap--actual' : ''}" data-lectura-cap="${c}"${c === cap ? ' aria-current="page"' : ''} aria-label="Capítulo ${c}${lds.has(`${lib.num}-${c}`) ? ', leído' : ''}">${c}</button>`).join('')}</nav>
-    <a class="be-btn be-btn--primary lectura-wol" href="${BE.urlCapitulo(lib, cap)}" ${EXTERNO} data-lectura-wol>Leer ${esc(lib.nombre)} ${cap} en wol.jw.org <span aria-hidden="true">↗</span></a>
-    <p class="be-muted lectura-nota">El texto y las notas de estudio se leen en wol.jw.org. Aquí van el mapa, la fecha y el orden.</p>
+    <a class="be-btn be-btn--primary lectura-wol" href="${BE.urlCapitulo(lib, cap)}" ${EXTERNO} data-lectura-wol>Leer ${esc(lib.nombre)} ${cap} en jw.org <span aria-hidden="true">↗</span></a>
+    <p class="be-muted lectura-nota">El texto y las notas de estudio se leen en jw.org. Aquí van el mapa, la fecha y el orden.</p>
     <div class="lectura-controles">
       <label class="interruptor"><input type="checkbox" data-lectura-sigue ${L.sigue ? 'checked' : ''}> El mapa sigue la lectura</label>
       <label class="interruptor"><input type="checkbox" data-lectura-leido ${leido ? 'checked' : ''}> Leído</label>

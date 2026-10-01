@@ -33,22 +33,22 @@ sources:
 - ip1-13
 links:
 - title: 'Perspicacia: «Mar Rojo»'
-  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003669
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Mar-Rojo/
   type: perspicacia
 - title: Salmo 136 (TNM)
-  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/19/136
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/salmos/136/
   type: bible
 - title: Salmo 106 (TNM)
-  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/19/106
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/salmos/106/
   type: bible
 - title: Éxodo 10 (TNM)
-  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/2/10
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/%C3%89xodo/10/
   type: bible
 - title: Éxodo 13 (TNM)
-  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/2/13
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/%C3%89xodo/13/
   type: bible
 - title: Éxodo 23 (TNM)
-  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/2/23
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/%C3%89xodo/23/
   type: bible
 checked_on: '2026-09-30'
 status: verified

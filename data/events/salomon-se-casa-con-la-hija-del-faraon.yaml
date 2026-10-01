@@ -31,10 +31,10 @@ sources:
 - si-3
 links:
 - title: 1 Reyes 3 (TNM)
-  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/3
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/1-reyes/3/
   type: bible
 - title: 'Perspicacia: «Faraón»'
-  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003458
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Fara%C3%B3n/
   type: perspicacia
 checked_on: '2026-09-30'
 status: verified

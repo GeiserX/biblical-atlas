@@ -40,7 +40,7 @@ Las fuentes son de dos niveles. Nivel 1: la Traducción del Nuevo Mundo y las pu
 
 - Cada carril escribe solo `data/sources/<carril>.yaml`. `build.py` junta todos los ficheros.
 - Un id repetido con la misma `url` y el mismo `title` se funde en uno y se queda el `checked_on` más reciente. Un id repetido con datos distintos es un error que nombra los dos ficheros.
-- **Los capítulos de la Biblia son fuentes implícitas.** Un id `<slug>-<capítulo>` (`mateo-26`, `esdras-7`) que no esté en ningún fichero lo crea `build.py` a partir de `data/books.yaml`: título «Mateo 26», obra TNM de estudio, URL `https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/40/26`, nivel 1. Un capítulo que no existe (`mateo-29`) es un error. Los `hch-N` y los capítulos de cartas que ya estaban escritos se quedan como están.
+- **Los capítulos de la Biblia son fuentes implícitas.** Un id `<slug>-<capítulo>` (`mateo-26`, `esdras-7`) que no esté en ningún fichero lo crea `build.py` a partir de `data/books.yaml`: título «Mateo 26», obra TNM de estudio, URL `https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/mateo/26/`, nivel 1. Un capítulo que no existe (`mateo-29`) es un error. Los `hch-N` y los capítulos de cartas que ya estaban escritos se quedan como están.
 
 ## Fechas
 

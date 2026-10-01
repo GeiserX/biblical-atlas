@@ -16,10 +16,10 @@ sources:
 - jueces-10
 links:
 - title: 'Perspicacia: «Jaír»'
-  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002305
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ja%C3%ADr/
   type: perspicacia
 - title: Jueces 10 (TNM)
-  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/10
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/jueces/10/
   type: bible
 relations:
 - type: succeeds

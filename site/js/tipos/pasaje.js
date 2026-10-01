@@ -50,15 +50,20 @@ function citasEnTexto(s) {
   }
   return out;
 }
-/** Una fuente que es un capítulo (hch-16, mateo-26 o su URL de wol.jw.org) → { libro, cap }. */
+/** Una fuente que es un capítulo (hch-16, mateo-26 o su URL de wol.jw.org o de jw.org) → { libro, cap }.
+    En jw.org el libro va por su nombre sin tildes ni mayúsculas y con guiones («G%C3%A9nesis», «el-cantar-de-los-cantares»). */
 function capituloDeFuente(id) {
   const p = pasajeDeId(id);
   if (p) return p;
-  const f = BE.D.fuentes?.[id];
-  const m = String(f?.url || '').match(/\/wol\/b\/r4\/lp-s\/nwt(?:sty)?\/(\d+)\/(\d+)/);
-  if (!m) return null;
-  const lib = (BE.LIBROS || []).find((l) => l.num === +m[1]);
-  return lib ? { libro: lib, cap: +m[2] } : null;
+  const url = String(BE.D.fuentes?.[id]?.url || '');
+  const m = url.match(/\/wol\/b\/r4\/lp-s\/nwt(?:sty)?\/(\d+)\/(\d+)/);
+  const j = !m && url.match(/^https:\/\/www\.jw\.org\/es\/biblioteca\/biblia\/(?:biblia-estudio|nwt)\/libros\/([^/?#]+)\/(\d+)\/?(?:[?#]|$)/);
+  if (!m && !j) return null;
+  let slug = null;
+  if (j) { try { slug = norm(decodeURIComponent(j[1])); } catch { return null; } }
+  const lib = (BE.LIBROS || []).find((l) => (m ? l.num === +m[1] : l.slug === slug || norm(l.nombre).replace(/\s+/g, '-') === slug));
+  const cap = +(m || j)[2];
+  return lib ? { libro: lib, cap } : null;
 }
 
 // Índice «aparece en» (B-12): capítulo → selecciones que lo citan en su referencia, sus pasajes, su razón o sus fuentes.
@@ -147,7 +152,7 @@ function fichaPasaje(id) {
     <section class="be-card"><div class="be-card__pad">
       <div class="be-card__eyebrow">Pasaje · <button type="button" class="enlace-texto" data-sel="libro:${esc(lib.slug)}">${esc(lib.nombre)}</button></div>
       <h2 class="be-card__title">${esc(lib.nombre)} ${cap}</h2>
-      <p class="be-card__body">El texto no se copia aquí: se lee en wol.jw.org, con las notas de estudio al lado. En el mapa y en la línea de tiempo queda resaltado lo que cuenta este capítulo.</p>
+      <p class="be-card__body">El texto no se copia aquí: se lee en jw.org, con las notas de estudio al lado. En el mapa y en la línea de tiempo queda resaltado lo que cuenta este capítulo.</p>
     </div><div class="be-card__foot"><button type="button" class="be-btn be-btn--sm" data-leer="${esc(idPasaje(lib, cap))}">Modo lectura</button><span class="be-spacer"></span><a class="be-wol" href="${BE.urlCapitulo(lib, cap)}" ${EXTERNO}>Leer ${esc(lib.nombre)} ${cap} y sus notas de estudio</a></div></section>
     ${paradas.length ? `<section class="be-card ficha-sec"><div class="be-card__pad"><h3 class="be-card__eyebrow">Paradas de Pablo <b class="cuenta">${paradas.length}</b></h3>
       <div class="be-list">${paradas.map((s) => BE.botonSel(`parada:${s.key}`, s.lugar.nombre, `${esc(s.p.referencia)} · ${esc(s.viaje.nombre)}`)).join('')}</div></div></section>` : ''}
