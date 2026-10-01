@@ -74,12 +74,12 @@ stops:
     chronology: tnm
     text: después de la Dedicación de 32 e.c. y antes de la Pascua de 33
   note: Enseña por ciudades y pueblos mientras se dirige a Jerusalén.
-  reason: Lu 13:22 lo muestra enseñando por ciudades y aldeas camino de Jerusalén; la tabla A7-F pone Perea. Lugar y fecha
-    del suceso ensena-en-perea.
+  reason: Lu 13:22 lo muestra enseñando por ciudades y aldeas camino de Jerusalén; la tabla A7-F pone Perea para 13:22-35
+    y probablemente Perea para 14:1–17:10. Lugar y fecha del suceso ensena-en-perea.
   sources:
   - lucas-13
   - tnm-a7-f
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-01'
   status: verified
 - order: 3
   place: betania
