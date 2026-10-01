@@ -87,15 +87,17 @@ test('an era shows its last sentence that names a book, or its first', () => {
 
 test('the source figures: written sources some fact cites, and the Bible chapters the build adds, apart', () => {
   // «u» is written but nothing cites it; «mateo-26» and «mateo-27» are chapters the build adds (implicita), cited or
-  // not; a loose «fuente» and a list nested at any depth both count, and an id cited twice counts once.
+  // not; a loose «fuente» and a list nested at any depth both count, and an id cited twice counts once. «w» is cited
+  // only by an office, which the build compiles with «sources».
   const D = {
-    fuentes: { s: {}, t: {}, u: {}, v: {}, 'mateo-26': { implicita: true }, 'mateo-27': { implicita: true } },
+    fuentes: { s: {}, t: {}, u: {}, v: {}, w: {}, 'mateo-26': { implicita: true }, 'mateo-27': { implicita: true } },
+    personas: { p: { offices: [{ office: 'king', sources: ['w'] }] } },
     eventos: [{ fuentes: ['s', 't'] }],
     lugares: { a: { candidatos: [{ fuentes: ['t', 'mateo-26'] }] } },
     recorridos: [{ paradas: [{ fuente: 'v' }] }],
     calendario: { explicacion: [{ fuentes: ['s'] }] },
   };
-  assert.deepEqual({ ...R.cifrasFuentes(D) }, { enlazadas: 3, capitulos: 2 });
+  assert.deepEqual({ ...R.cifrasFuentes(D) }, { enlazadas: 4, capitulos: 2 });
   assert.deepEqual({ ...R.cifrasFuentes({}) }, { enlazadas: 0, capitulos: 0 });
 });
 

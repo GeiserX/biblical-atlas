@@ -854,9 +854,11 @@ CONTADOS = ("lugares", "personas", "eventos", "periodos", "cartas", "viajes", "h
 
 def cifras_fuentes(salida):
     """(fuentes escritas que algún dato cita, capítulos de la Biblia que añade la compilación). Son las dos cifras de
-    la portada (cifrasFuentes en site/js/portada.js cuenta igual) y de las insignias del README."""
+    la portada (cifrasFuentes en site/js/portada.js cuenta igual) y de las insignias del README. Los cargos de una
+    persona (`offices`) se compilan con sus fuentes en `sources`, así que se cuentan las dos claves."""
     F = salida["fuentes"]
-    citadas = {fid for k, v in salida.items() if k != "fuentes" for _, fid in fuentes_de(v, ("fuentes", "fuente"))}
+    citadas = {fid for k, v in salida.items() if k != "fuentes"
+               for claves in (("fuentes", "fuente"), ("sources", "source")) for _, fid in fuentes_de(v, claves)}
     return (sum(1 for fid, f in F.items() if not f.get("implicita") and fid in citadas),
             sum(1 for f in F.values() if f.get("implicita")))
 

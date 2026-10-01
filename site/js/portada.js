@@ -48,7 +48,7 @@ function lineaEpoca(resumen, libros) {
   return [...frases].reverse().find(nombra) || frases[0] || '';
 }
 /** Las dos cifras de las fuentes: las escritas que algún dato cita (en una lista `fuentes` o en una `fuente` suelta,
-    a cualquier profundidad) y los capítulos de la Biblia que añade la compilación (`implicita`). Cuenta igual que
+    a cualquier profundidad; los cargos de una persona las llevan en `sources`) y los capítulos de la Biblia que añade la compilación (`implicita`). Cuenta igual que
     cifras_fuentes en scripts/build.py, que las escribe en stats.json para las insignias del README. */
 function cifrasFuentes(D) {
   const F = D?.fuentes || {};
@@ -59,8 +59,8 @@ function cifrasFuentes(D) {
     if (Array.isArray(x)) { pila.push(...x); continue; }
     if (!x || typeof x !== 'object') continue;
     for (const [k, v] of Object.entries(x)) {
-      if (k === 'fuentes' && Array.isArray(v)) v.forEach((id) => citadas.add(id));
-      else if (k === 'fuente' && typeof v === 'string') citadas.add(v);
+      if ((k === 'fuentes' || k === 'sources') && Array.isArray(v)) v.forEach((id) => citadas.add(id));
+      else if ((k === 'fuente' || k === 'source') && typeof v === 'string') citadas.add(v);
       else pila.push(v);
     }
   }

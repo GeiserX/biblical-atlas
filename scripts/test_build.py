@@ -90,14 +90,16 @@ class Summary(unittest.TestCase):
 
     def test_sources_count_only_written_ones_some_fact_cites_and_chapters_apart(self):
         # «u» no la cita nadie; «mateo-26» y «mateo-27» los añade la compilación; una fuente suelta («fuente») y una
-        # anidada (un candidato, el calendario) también cuentan, y un id citado dos veces cuenta una vez.
-        F = {"s": {}, "t": {}, "u": {}, "v": {}, "mateo-26": {"implicita": True}, "mateo-27": {"implicita": True}}
+        # anidada (un candidato, el calendario) también cuentan, y un id citado dos veces cuenta una vez. «w» solo lo
+        # cita un cargo, que se compila con `sources`.
+        F = {"s": {}, "t": {}, "u": {}, "v": {}, "w": {}, "mateo-26": {"implicita": True}, "mateo-27": {"implicita": True}}
         salida = {"generado": "2026-09-30", "fuentes": F, "libros": [], "periodos": [], "cartas": [], "viajes": [],
-                  "hallazgos": [], "recorridos": [{"paradas": [{"fuente": "v"}]}], "personas": {},
+                  "hallazgos": [], "recorridos": [{"paradas": [{"fuente": "v"}]}],
+                  "personas": {"p": {"offices": [{"office": "king", "sources": ["w"]}]}},
                   "lugares": {"a": {"candidatos": [{"fuentes": ["t", "mateo-26"]}]}},
                   "eventos": [{"fuentes": ["s", "t"]}], "calendario": {"explicacion": [{"fuentes": ["s"]}]}}
-        self.assertEqual(build.cifras_fuentes(salida), (3, 2))
-        self.assertEqual({k: build.resumen(salida)[k] for k in ("fuentes", "capitulos")}, {"fuentes": 3, "capitulos": 2})
+        self.assertEqual(build.cifras_fuentes(salida), (4, 2))
+        self.assertEqual({k: build.resumen(salida)[k] for k in ("fuentes", "capitulos")}, {"fuentes": 4, "capitulos": 2})
 
 
 class ChapterUrls(unittest.TestCase):
