@@ -484,6 +484,11 @@ const historia = (() => {
   const nuevaVisita = () => `${Date.now().toString(36)}${Math.random().toString(36).slice(2, 6)}`;
   const enPortada = () => !location.hash || location.hash === '#' || /[#&]portada=1(&|$)/.test(location.hash);
   const ponerTitulo = (nombre, portada = enPortada()) => { document.title = H.pageTitle(nombre, { landing: portada, base: TITULO }); };
+  // Dónde está la entrada en la lista del navegador (Navigation API, donde la hay).
+  const indice = () => { const i = window.navigation?.currentEntry?.index; return Number.isInteger(i) && i >= 0 ? i : null; };
+  const deEstaPagina = (en) => {
+    try { const u = new URL(en.url); return u.origin === location.origin && u.pathname === location.pathname && u.search === location.search; } catch { return false; }
+  };
 
   // Al cargar la página: la nuestra si recargamos o volvemos desde otra página; si no, empieza una visita. Antes de los
   // datos solo se sabe nombrar la portada; lo demás lo nombra sello() al llegar.
@@ -509,13 +514,26 @@ const historia = (() => {
     if (E.sel) v.selection = BE.nombreSel(E.sel);
     return v;
   }
-  /** Enciende, apaga y rotula las dos parejas de botones. Navigation API, donde la hay, confirma lo que dicen los
-      números: con más de 50 entradas el navegador olvida las primeras, y una dirección escrita a mano a otra página
-      se lleva las de delante. */
-  function pintarBotones() {
+  /** Lo que hay detrás y delante, como lo enseñan los botones. Navigation API, donde la hay, confirma lo que dicen los
+      números: con más de 50 entradas el navegador olvida las primeras, y la entrada vecina tiene que ser de esta página.
+      Una dirección escrita a mano o un marcador a otra página del sitio, sin pasar por un enlace, deja delante esa página
+      con los nombres de antes en la lista: se cortan, como hace dejar(). */
+  function alrededor() {
     const a = H.around(actual, leerVisitas());
     const nav = window.navigation;
-    if (nav && typeof nav.canGoBack === 'boolean') { a.back.can = a.back.can && nav.canGoBack; a.forward.can = a.forward.can && nav.canGoForward; }
+    if (!nav || typeof nav.canGoBack !== 'boolean') return a;
+    a.back.can = a.back.can && nav.canGoBack;
+    a.forward.can = a.forward.can && nav.canGoForward;
+    const i = indice(), es = i === null ? null : nav.entries?.();
+    if (es) {
+      if (a.back.can && !(es[i - 1] && deEstaPagina(es[i - 1]))) a.back.can = false;
+      if (a.forward.can && !(es[i + 1] && deEstaPagina(es[i + 1]))) { a.forward.can = false; dejar(); }
+    }
+    return a;
+  }
+  /** Enciende, apaga y rotula todas las parejas de botones: la de la barra, la de la hoja y la de la lectura. */
+  function pintarBotones() {
+    const a = alrededor();
     const foco = document.activeElement?.closest?.('[data-historia]');
     for (const [dir, cual] of [['back', 'atras'], ['forward', 'adelante']]) {
       const texto = H.buttonLabel(dir, a[dir]);
