@@ -483,7 +483,7 @@ const historia = (() => {
   const guardarVisitas = (v) => { memoria = v; try { sessionStorage.setItem(CLAVE_VISITAS, JSON.stringify(v)); } catch { /* sin almacenamiento */ } };
   const nuevaVisita = () => `${Date.now().toString(36)}${Math.random().toString(36).slice(2, 6)}`;
   const enPortada = () => !location.hash || location.hash === '#' || /[#&]portada=1(&|$)/.test(location.hash);
-  const ponerTitulo = (nombre) => { document.title = H.pageTitle(nombre, { landing: enPortada(), base: TITULO }); };
+  const ponerTitulo = (nombre, portada = enPortada()) => { document.title = H.pageTitle(nombre, { landing: portada, base: TITULO }); };
 
   // Al cargar la página: la nuestra si recargamos o volvemos desde otra página; si no, empieza una visita. Antes de los
   // datos solo se sabe nombrar la portada; lo demás lo nombra sello() al llegar.
@@ -539,8 +539,10 @@ const historia = (() => {
   function sello() {
     if (!BE.D) return null;
     revisar(false);   // una vista que cambió sin pintarse todavía («Ahora mismo») tiene su entrada antes de escribirse
-    const nombre = H.viewName(vista());
-    ponerTitulo(nombre);
+    const v = vista();
+    const nombre = H.viewName(v);
+    // La portada se decide por la vista, no por la dirección: aún es la de la vista de antes.
+    ponerTitulo(nombre, !!v.landing);
     const igual = nombre === actual.name && history.state?.visit === actual.visit && history.state?.step === actual.step;
     if (!igual) { const r = H.rename(actual, leerVisitas(), nombre); actual = r.state; guardarVisitas(r.visits); }
     pintarBotones();

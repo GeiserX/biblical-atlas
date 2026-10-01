@@ -389,7 +389,8 @@ test('Back and Forward right after choosing keep the view just chosen, and two q
   assert.equal((await hist(page)).back.label, 'Atrás: Roma');
 });
 
-test('a shared tour link opened fresh is one entry, named after the tour', async () => {
+
+test('a shared tour link opened fresh is one entry; the logo\'s landing keeps the page\'s title', async () => {
   const title = 'biblical-atlas · ¿Dónde y cuándo pasó lo que estás leyendo?';
   for (const hash of ['sel=recorrido:pedro&paso=1', 'sel=recorrido:pedro&paso=3', 'sel=recorrido:pedro']) {
     const page = await openPage(DESKTOP, { hash });
@@ -402,4 +403,9 @@ test('a shared tour link opened fresh is one entry, named after the tour', async
     assert.notEqual(h.title, title, `${hash}: the tour has the landing's title`);
     await page.context().close();
   }
+  const page = await openPage(DESKTOP, { hash: 't=50.3000' });
+  await search(page, 'Pablo');
+  await page.locator('#inicio').click();
+  await settle(page);
+  assert.equal(await page.evaluate(() => document.title), title, 'the landing opened with the logo has another title');
 });
