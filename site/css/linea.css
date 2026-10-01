@@ -161,6 +161,9 @@
 /* El nombre del carril se queda a la vista mientras se baja por un carril alto. */
 .carril-rotulo .be-lane-label { position: sticky; top: 27px; height: 26px; }
 .carril--meses .carril-rotulo .be-lane-label { position: relative; top: 0; height: 30px; }
+/* Con «Letra grande», las dos líneas de «Viajes de Pablo» miden 30 px: el rótulo crece hasta ellas. Cabe siempre en su
+   carril, que con esa letra mide al menos 32 px (una fila de 27 más el margen). Con el dedo el rótulo ya mide 44. */
+.carril-rotulo .carril-viajes { height: auto; min-height: 26px; }
 .carril-pista { position: relative; min-width: 0; overflow: hidden; touch-action: pan-y; cursor: grab; }
 .linea-filas.arrastrando .carril-pista { cursor: grabbing; }
 .carril--meses .carril-pista { cursor: crosshair; }

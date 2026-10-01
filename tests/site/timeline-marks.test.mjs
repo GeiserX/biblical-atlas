@@ -125,16 +125,18 @@ function walkLanes(p) {
     return { seen: [...seen], problems, overLong: overLong.size };
   });
 }
-/** The label of the lane «Viajes de Pablo»: its name whole, in as many lines as it needs, inside the label. */
+/** The label of the lane «Viajes de Pablo»: its name whole, in as many lines as it needs, inside the label, and the label
+    inside its lane. Height is measured on boxes: with line height 1 the font's ascent and descent pass the line box
+    (scrollHeight 32 for two lines of 30 px with «Letra grande») without any letter being cut. */
 async function viajesWhole(p, name, pinned = false) {
   const label = await p.evaluate(() => {
     const l = [...document.querySelectorAll('.carril-rotulo .be-lane-label')].find((x) => x.textContent.trim() === 'Viajes de Pablo');
     const s = l?.querySelector('span');
     if (!s) return null;
-    const a = l.getBoundingClientRect(), b = s.getBoundingClientRect(), lh = parseFloat(getComputedStyle(s).lineHeight);
-    return { pinned: !!l.querySelector('.carril-pin.on'), lines: Math.round(b.height / lh), cutX: s.scrollWidth > s.clientWidth + 0.5, cutY: s.scrollHeight > s.clientHeight + 1 || b.top < a.top - 0.5 || b.bottom > a.bottom + 0.5 };
+    const a = l.getBoundingClientRect(), b = s.getBoundingClientRect(), c = l.closest('.carril').getBoundingClientRect(), lh = parseFloat(getComputedStyle(s).lineHeight);
+    return { pinned: !!l.querySelector('.carril-pin.on'), lines: Math.round(b.height / lh), label: Math.round(a.height), cutX: s.scrollWidth > s.clientWidth + 0.5, cutY: l.scrollHeight > l.clientHeight + 1 || b.top < a.top - 0.5 || b.bottom > a.bottom + 0.5 || a.top < c.top - 0.5 || a.bottom > c.bottom + 0.5 };
   });
-  note(`${name} «Viajes de Pablo»: ${label ? `${label.lines} line(s)${label.pinned ? ', pinned' : ''}${label.cutX || label.cutY ? ', cut' : ', whole'}` : 'no label'}`);
+  note(`${name} «Viajes de Pablo»: ${label ? `${label.lines} line(s) in ${label.label} px${label.pinned ? ', pinned' : ''}${label.cutX || label.cutY ? ', cut' : ', whole'}` : 'no label'}`);
   assert.ok(label && !label.cutX && !label.cutY && label.pinned === pinned, JSON.stringify(label));
 }
 /** What the timeline says it draws (BE.lineaMarcas) and what a mark in view is, measured from the data alone. */
@@ -455,6 +457,10 @@ test('person lanes follow the row rule; selecting a period does not reframe the 
     const r = await open(screen, 't=50.5&v=8&carriles=pablo');
     assert.equal((await hookView(r)).lanes[0].id, 'pablo');
     await viajesWhole(r, `${screen.name} carriles=pablo`, true);
+    // With «Letra grande» the two lines are taller than the label was: it grows to hold them, inside its lane.
+    await r.evaluate(() => window.BE.ponerPreferencia('letra-grande', true));
+    await frames(r, 4);
+    await viajesWhole(r, `${screen.name} carriles=pablo letra grande`, true);
     await r.context().close();
     // A period chosen from outside the strip (search, a card) keeps the scale; on the strip, clicking one too.
     for (const s of [40, 0.12]) {
