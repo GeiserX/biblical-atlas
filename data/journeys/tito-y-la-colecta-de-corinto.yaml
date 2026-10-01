@@ -15,7 +15,7 @@ narrative_order:
   series: tito
   order: 1
 companions: []
-summary: Pablo manda a Tito a Corinto para poner en marcha la colecta y ver cómo reciben su carta. Tito le lleva buenas noticias
+summary: Pablo manda a Tito a Corinto para poner en marcha la colecta y, quizás, ver cómo reciben su carta. Tito le lleva buenas noticias
   a Macedonia y regresa a Corinto para acabar la colecta.
 reason: Perspicacia «Tito» cuenta los tres trayectos hacia el año 55; sucesos pablo-envia-a-tito-a-corinto, tito-trae-noticias-de-corinto
   y tito-vuelve-a-corinto-con-dos-hermanos.
@@ -25,7 +25,7 @@ sources:
 - 2-corintios-8
 - 2-corintios-12
 - it-tito-persona
-checked_on: '2026-09-30'
+checked_on: '2026-10-01'
 status: verified
 stops:
 - order: 1
@@ -99,11 +99,13 @@ stops:
     type: anchored
     chronology: tnm
     text: c. 55 e.c. (final del verano o principios del otoño)
-  note: Van con él dos hermanos cuyos nombres el texto no da; lleva 2 Corintios.
+  note: Van con él dos hermanos cuyos nombres el texto no da. Probablemente lleva 2 Corintios (Perspicacia «Corintios, Cartas
+    a los»).
   reason: '2Co 8:16, 17: sale de buena gana hacia Corinto para terminar la colecta. Suceso tito-vuelve-a-corinto-con-dos-hermanos,
     final del verano u otoño de 55.'
   sources:
   - 2-corintios-8
   - it-tito-persona
-  checked_on: '2026-09-30'
+  - it-corintios
+  checked_on: '2026-10-01'
   status: verified
