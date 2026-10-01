@@ -921,6 +921,35 @@ test('no lane name is cut: each goes in as many lines as it needs, pinned, with 
   }
 });
 
+test('a journey that repeated every year says «↻ cada año» after its name', async () => {
+  for (const screen of [DESKTOP, PHONE]) {
+    const p = await open(screen, 't=50.5&v=40');
+    const found = [];
+    for (const [persona, viaje] of [['elcana-hijo-de-jeroham', 'elcana-sube-a-silo'], ['samuel', 'recorrido-de-samuel'], ['jose-esposo-de-maria', 'pascua-de-jesus-a-los-12']]) {
+      await p.evaluate((id) => window.BE.seleccionar({ tipo: 'persona', id }, { mover: false }), persona);
+      await frames(p);
+      const L = await travellerLane(p, persona);
+      const b = L.bars.find((x) => x.sel === `viaje:${viaje}`);
+      assert.ok(b, `${viaje}: a bar in the lane of ${persona}`);
+      await goTo(p, (b.t0 + b.t1) / 2, 8);
+      await p.evaluate((id) => window.BE.seleccionar({ tipo: 'persona', id }, { mover: false }), persona);
+      await frames(p);
+      const drawn = await p.evaluate((sel) => { const m = document.querySelector(`#linea-filas .m[data-sel="${sel}"] .m-nombre .t`); return m ? m.textContent : null; }, `viaje:${viaje}`);
+      const others = L.bars.filter((x) => x.sel !== `viaje:${viaje}` && x.repite).map((x) => x.sel);
+      note(`${screen.name} ${viaje}: label «${b.label}», drawn «${drawn}»`);
+      found.push(viaje);
+      assert.ok(b.repite && b.label.endsWith('↻ cada año'), b.label);
+      assert.equal(drawn, b.label);
+      assert.deepEqual(others, [], `${persona}: only the yearly journey carries the mark`);
+    }
+    // A journey that happened once carries no mark.
+    const pablo = await travellerLane(p, 'pablo');
+    assert.ok(pablo.bars.length && pablo.bars.every((x) => !x.repite && !/cada año/.test(x.label)));
+    assert.equal(found.length, 3);
+    await p.context().close();
+  }
+});
+
 test('no console error, no page error and no failed request in the whole run', () => {
   assert.deepEqual(errors, []);
   assert.deepEqual(failed, []);

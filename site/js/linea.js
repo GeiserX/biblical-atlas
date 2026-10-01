@@ -168,7 +168,8 @@ function marcaEstancia(s, color, group, tipo) {
   return s.b > s.a ? tramoMarca(o, [s.a, s.b]) : momentoMarca(o, [s.a, s.b]);
 }
 /** Los viajes de una persona (T-06): un tramo por viaje y, en filas propias debajo, sus paradas. P son sus paradas en
-    orden. Pablo lleva un color por viaje y cualquier otro viajero el suyo, el mismo que en el mapa. */
+    orden. Pablo lleva un color por viaje y cualquier otro viajero el suyo, el mismo que en el mapa. Un viaje que se
+    repetía cada año (`repeats: yearly`) lo dice tras su nombre. */
 function marcasViajes(P, colorDe) {
   const out = [];
   for (const v of BE.D.viajes) {
@@ -176,7 +177,7 @@ function marcasViajes(P, colorDe) {
     if (!ps.length) continue;
     const color = colorDe(v);
     out.push(tramoMarca({ id: `viaje:${v.id}`, sel: `viaje:${v.id}`, name: v.nombre, cert: FIL.certainty(v.fecha), tipo: 'Viaje',
-      fecha: textoFechaDe(v.fecha), color }, [Math.min(...ps.map((s) => s.a)), Math.max(...ps.map((s) => s.b))]));
+      fecha: textoFechaDe(v.fecha), color, repite: v.repeats === 'yearly' }, [Math.min(...ps.map((s) => s.a)), Math.max(...ps.map((s) => s.b))]));
     for (const s of ps) out.push(marcaEstancia(s, color, 1, 'Parada de un viaje'));
   }
   return out;
@@ -576,7 +577,7 @@ function crearMarca(it) {
   b.tabIndex = -1;
   // Lo calculado lo dice el nombre accesible con palabras: «situada por el orden del relato» si sale de él.
   const cert = it.cert === 'computed' && /narrativa/.test(it.fechaTipo || '') ? 'situada por el orden del relato' : CERT_ARIA[it.cert];
-  b.setAttribute('aria-label', `${it.titulo ? `${it.titulo}, ` : ''}${it.name}. ${it.tipo}, ${it.shape === 'moment' ? 'momento' : 'tramo'}, ${cert}${it.fecha ? `. ${it.fecha}` : ''}`);
+  b.setAttribute('aria-label', `${it.titulo ? `${it.titulo}, ` : ''}${it.name}. ${it.tipo}, ${it.shape === 'moment' ? 'momento' : 'tramo'}, ${cert}${it.fecha ? `. ${it.fecha}` : ''}${it.repite ? '. Se repetía cada año' : ''}`);
   b.setAttribute('aria-pressed', 'false');
   if (it.shape === 'span') {
     it.barEl = document.createElement('span');
@@ -596,6 +597,7 @@ function crearMarca(it) {
   txt.textContent = it.name;
   const tag = FIL.TAG[it.cert];
   if (tag) { const i = document.createElement('i'); i.textContent = tag; txt.append(' ', i); }
+  if (it.repite) { const i = document.createElement('i'); i.className = 'm-repite'; i.textContent = FIL.REPEAT; txt.append(' ', i); }
   lab.appendChild(txt);
   b.appendChild(lab);
   it.labEl = lab;
@@ -853,7 +855,7 @@ BE.lineaMarcas = () => {
     const vis = new Set(c.alto && c.out ? c.out.visible : []);
     for (const it of c.lane.items) {
       const v = vis.has(it);
-      out.push({ id: it.id, sel: it.sel, lane: c.id, name: it.name, label: FIL.labelText(it), cert: it.cert, shape: it.shape, hollow: FIL.hollow(it), group: it.group || 0, rowWorld: it.row ?? null,
+      out.push({ id: it.id, sel: it.sel, lane: c.id, name: it.name, label: FIL.labelText(it), cert: it.cert, shape: it.shape, hollow: FIL.hollow(it), group: it.group || 0, rowWorld: it.row ?? null, repite: !!it.repite,
         t0: it.shape === 'moment' ? it.w0 : it.start, t1: it.shape === 'moment' ? it.w1 : it.end, anchor: it.anchor ?? null,
         visible: v, row: v ? it._drow : null, x: v ? it._hit[0] : null, w: v ? it._hit[1] - it._hit[0] : null, top: v ? topDe(it, c) : null,
         labelX: v ? it._lx : null, labelW: v ? FIL.lwOf(it) : null, secular: !!it.secular });

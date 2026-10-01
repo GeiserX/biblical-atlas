@@ -491,7 +491,7 @@ function imagenRayado(color, estado) {
 // y falta; sus otros viajes no se dibujan. Los de otra persona se ven como rastro en la fecha del propio viaje: en
 // color mientras ocurre y gris claro el año siguiente. Un viaje seleccionado se ve entero y en su color. Elegir a una
 // persona no añade rutas: el mapa dice dónde está ahora, con la misma regla que sin nada elegido, y la línea de tiempo
-// enseña todos sus viajes.
+// enseña todos sus viajes. Un viaje que se repetía cada año lleva la marca «↻ cada año» sobre su ruta.
 // ---------------------------------------------------------------------------
 /** ¿Dibuja la capa «Viajes» este viaje de otra persona en t? Solo dentro de su propia fecha (con un año de margen al
     final), porque con Moisés o Pedro todos sus viajes a la vez llenarían el mapa. Los de Pablo no pasan por aquí: sus
@@ -561,6 +561,34 @@ function geoRutas(w) {
     rastro.push(linea(tramoRuta, { ...props, incierto }));
   }
   return { hecho, falta, rastro, V };
+}
+
+/** Viajes dibujados que se repetían cada año (`repeats: yearly`), en el orden de los datos. */
+const viajesRepetidos = (g) => {
+  const ids = new Set([...g.hecho, ...g.falta, ...g.rastro].map((f) => f.properties.viaje));
+  return BE.D.viajes.filter((v) => v.repeats === 'yearly' && ids.has(v.id));
+};
+/** La marca «↻ cada año» de cada viaje dibujado que se repite: en medio de su primer tramo, del color de su ruta. */
+const marcasRepite = new Map();       // id de viaje → marker
+function pintarRepite(g) {
+  const vs = viajesRepetidos(g), vivos = new Set(vs.map((v) => v.id));
+  for (const [id, m] of marcasRepite) if (!vivos.has(id)) { m.remove(); marcasRepite.delete(id); }
+  for (const v of vs) {
+    const f = [...g.hecho, ...g.falta, ...g.rastro].find((x) => x.properties.viaje === v.id);
+    const [a, b] = f.geometry.coordinates;
+    let m = marcasRepite.get(v.id);
+    if (!m) {
+      const el = document.createElement('span');
+      el.className = 'marca-repite';
+      el.dataset.viaje = v.id;
+      el.textContent = '↻ cada año';
+      el.title = `${v.nombre}: se repetía cada año`;
+      m = new maplibregl.Marker({ element: el, anchor: 'bottom', offset: [0, -6] }).setLngLat([(a[0] + b[0]) / 2, (a[1] + b[1]) / 2]).addTo(map);
+      marcasRepite.set(v.id, m);
+    }
+    m.setLngLat([(a[0] + b[0]) / 2, (a[1] + b[1]) / 2]);
+    m.getElement().style.setProperty('--viajero', f.properties.color);
+  }
 }
 
 // ---------------------------------------------------------------------------
@@ -882,6 +910,7 @@ function pintarMapa() {
   }
   pintarInciertos();
   pintarHallazgos();
+  pintarRepite(g);
   // Pablo
   if (w && verViajes && (!soloViaje || soloViaje === V?.id)) {
     marcaPablo.setLngLat(w.pos);
@@ -1345,7 +1374,8 @@ function pintarLeyenda(V, w, g) {
   const estimada = (marcaPablo?.puesta && !!w?.estimada) || [...marcasViajero.values()].some((m) => m.puesta && m.el.classList.contains('estimada'));
   const viajeros = [...marcasViajero.values()].some((m) => m.puesta);
   const apagado = g.rastro.some((f) => f.properties.estado !== 'actual');   // algún rastro en gris
-  const clave = `${apagado}|${V?.id}|${estimada}|${E.sel?.tipo}|${E.sel?.id}|${pendiente}|${escritores}|${inciertos}|${hallazgos}|${F.capas.viajes}|${F.nivel1}|${rastro.map((v) => v.id)}|${dePablo}|${viajeros}`;
+  const repiten = viajesRepetidos(g);
+  const clave = `${repiten.map((v) => v.id)}|${apagado}|${V?.id}|${estimada}|${E.sel?.tipo}|${E.sel?.id}|${pendiente}|${escritores}|${inciertos}|${hallazgos}|${F.capas.viajes}|${F.nivel1}|${rastro.map((v) => v.id)}|${dePablo}|${viajeros}`;
   if (clave === pintarLeyenda.clave) return;
   pintarLeyenda.clave = clave;
   const filas = [];
@@ -1370,6 +1400,7 @@ function pintarLeyenda(V, w, g) {
       }
     }
   }
+  if (repiten.length) filas.push(`<div class="be-legend__row"><span class="leyenda-repite" aria-hidden="true">↻</span>Se repite cada año: ${repiten.map((v) => esc(v.nombre)).join(', ')}</div>`);
   if (escritores.length) {
     filas.push(`<div class="be-legend__row"><span class="be-legend__line be-legend__line--letter" style="--carta:${colorEscritor(escritores[0])}"></span>Carta ${escritores.length > 1 ? `de ${esc(nombrePersona(escritores[0]))}` : 'escrita cerca de esta fecha'}</div>`);
     for (const e of escritores.slice(1)) filas.push(`<div class="be-legend__row"><span class="be-legend__line be-legend__line--letter" style="--carta:${colorEscritor(e)}"></span>Carta de ${esc(nombrePersona(e))}</div>`);

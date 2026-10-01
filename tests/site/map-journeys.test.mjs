@@ -2,7 +2,8 @@
 // that journey and none of the others, faded or not; after his last stop it draws nothing of his; each journey has its
 // own colour and the legend names the one in course. A journey selected outside its date is drawn whole and in its
 // colour. The «Viajes» layer switched off draws no journey. Other travellers keep their rule: Jesús in 32 and David in
-// 1077 a.e.c. still draw their own journeys. Selecting a person adds no route (Pablo in 44: one of his, not eight).
+// 1077 a.e.c. still draw their own journeys. Selecting a person adds no route (Pablo in 44: one of his, not eight), and a
+// journey that repeated every year carries «↻ cada año» on its route and a legend row.
 //
 // Run from the repository root, one browser at a time:
 //   node --test --test-concurrency=1 tests/site/map-journeys.test.mjs
@@ -97,6 +98,7 @@ function drawnAt(page, t, sel = null) {
       rastroEstados: rastro.map((f) => `${f.viaje}:${f.estado}:${f.color}`),
       otros: ids(rastro.filter((f) => quien(f.viaje) !== 'pablo')),
       todos: ids([...hecho, ...falta, ...rastro]),
+      repite: [...document.querySelectorAll('.marca-repite')].map((m) => `${m.dataset.viaje}:${m.textContent}`).sort(),
       leyenda: document.querySelector('#leyenda')?.textContent.replace(/\s+/g, ' ').trim() ?? '',
     };
   }, { t, sel });
@@ -197,3 +199,22 @@ test('a selected person adds no route: the map draws the journey in course, as w
   assert.deepEqual(bad, []);
 });
 
+test('a journey that repeated every year carries «↻ cada año» on its route and a legend row', async () => {
+  for (const screen of [DESKTOP, PHONE]) {
+    const page = await openMap(screen);
+    for (const [viaje, t] of [['elcana-sube-a-silo', -1178.5], ['recorrido-de-samuel', -1120.5], ['pascua-de-jesus-a-los-12', 12.3]]) {
+      const d = await drawnAt(page, t, null);
+      const nombre = await page.evaluate((id) => window.__be.BE.D.viajes.find((v) => v.id === id).nombre, viaje);
+      console.log(`${screen.width}px ${viaje} at ${t}: drawn ${d.todos.includes(viaje)}, marks ${d.repite.join(' ')}; legend «${d.leyenda}»`);
+      assert.ok(d.todos.includes(viaje), `${viaje} is drawn at ${t}`);
+      assert.ok(d.repite.includes(`${viaje}:↻ cada año`), `${viaje}: mark on its route, got ${d.repite}`);
+      assert.ok(d.leyenda.includes('Se repite cada año') && d.leyenda.includes(nombre), `«${d.leyenda}»`);
+    }
+    // A date with no yearly journey: no mark and no legend row.
+    const d = await drawnAt(page, 50.5, null);
+    assert.deepEqual(d.repite, []);
+    assert.ok(!/Se repite cada año/.test(d.leyenda), d.leyenda);
+    assert.deepEqual(page.pageErrors, []);
+    await page.context().close();
+  }
+});

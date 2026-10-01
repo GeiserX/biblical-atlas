@@ -97,6 +97,7 @@ Para comprobar la alineación, Corinto (37,9058 N, 22,8787 E) debe caer en la co
 - Fuera de las fechas de los datos, la ficha dice que no sabemos dónde estaba y ofrece las paradas más cercanas. Nunca se inventa una posición.
 - El mapa dibuja un solo viaje de Pablo, el que recorre en esa fecha, cada uno en su color: lo hecho en firme, lo que falta punteado y la región sin ruta conocida a trazos. Sus otros viajes no se dibujan. Sus ocho viajes van seguidos, de 34 a 65: mientras se queda en la última parada de uno, como Antioquía o Roma, se ve ese viaje entero. Antes de 34 y después de 65 no se dibuja nada de Pablo, igual que con cualquier otra persona fuera de las fechas de sus viajes.
 - Un viaje seleccionado se ve solo, entero y en su color, aunque la fecha caiga fuera de él. Seleccionar a una persona no añade rutas: se ve lo mismo que sin nada elegido, el viaje que recorre en esa fecha. Todos sus viajes están en su carril de la línea de tiempo.
+- Un viaje con `repeats: yearly` lleva «↻ cada año» sobre su ruta, y la leyenda lo nombra en la fila «Se repite cada año».
 
 ## Dirección de la página
 
@@ -150,7 +151,7 @@ Los demás parámetros solo aparecen cuando no valen lo de siempre:
 
 Las marcas de la línea son una sola parada del tabulador. La rueda sobre la regla o los carriles cambia la escala en el puntero, de milenios a días, igual que Ctrl o ⌘ con la rueda y la pinza del trackpad; con Mayúsculas, o con un gesto horizontal en el trackpad, desplaza la vista. Cuando la línea es alta, los carriles se recorren de arriba abajo con la rueda sobre sus nombres, con la barra de desplazamiento o arrastrando en vertical. Arrastrar los carriles de lado mueve el tiempo; pulsar o arrastrar en la regla mueve el cursor.
 
-El carril «Viajes de Pablo» enseña solo los viajes de Pablo: un tramo por viaje y, debajo, sus paradas. Las demás personas no tienen carril propio hasta que se eligen o se fijan desde el menú de la línea. Entonces sale uno con su nombre (la persona elegida, justo antes de «Viajes de Pablo»; la fijada, arriba). Si la persona viaja, su carril lleva sus viajes igual que el de Pablo, un tramo por viaje en su color del mapa y sus paradas debajo, y después, en filas propias, los sucesos que la sitúan y dónde vivió. Pulsar una marca de ese carril no lo quita. Cuando un nombre de carril no cabe en una línea (en el móvil, con el carril fijado o con «Letra grande»), va en dos, o en tres en el móvil, para no cortarse.
+El carril «Viajes de Pablo» enseña solo los viajes de Pablo: un tramo por viaje y, debajo, sus paradas. Las demás personas no tienen carril propio hasta que se eligen o se fijan desde el menú de la línea. Entonces sale uno con su nombre (la persona elegida, justo antes de «Viajes de Pablo»; la fijada, arriba). Si la persona viaja, su carril lleva sus viajes igual que el de Pablo, un tramo por viaje en su color del mapa y sus paradas debajo, y después, en filas propias, los sucesos que la sitúan y dónde vivió. Pulsar una marca de ese carril no lo quita. Un viaje que se repetía cada año dice «↻ cada año» tras su nombre. Cuando un nombre de carril no cabe en una línea (en el móvil, con el carril fijado o con «Letra grande»), va en dos, o en tres en el móvil, para no cortarse.
 
 ## Ficheros
 

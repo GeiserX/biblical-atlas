@@ -101,5 +101,30 @@ class SinWol(unittest.TestCase):
                 self.assertTrue(e.get("source") and e.get("reason"))
 
 
+def errores_repite(viaje):
+    out = []
+    validate.validar_repite(viaje, "data/journeys/x.yaml", out.append)
+    return out
+
+
+class Repite(unittest.TestCase):
+    def test_sin_repeats_o_cada_anio_vale(self):
+        self.assertEqual(errores_repite({}), [])
+        self.assertEqual(errores_repite({"repeats": "yearly"}), [])
+
+    def test_otro_valor_es_error(self):
+        for valor in ["monthly", "cada año", True, None]:
+            with self.subTest(valor=valor):
+                e = errores_repite({"repeats": valor})
+                self.assertEqual(len(e), 1, e)
+                self.assertIn("repeats", e[0])
+
+    def test_los_viajes_de_cada_anio_lo_llevan(self):
+        datos = HERE.parent / "data" / "journeys"
+        con = sorted(f.stem for f in datos.glob("*.yaml")
+                     if (yaml.safe_load(f.read_text(encoding="utf-8")) or {}).get("repeats") == "yearly")
+        self.assertEqual(con, ["elcana-sube-a-silo", "pascua-de-jesus-a-los-12", "recorrido-de-samuel"])
+
+
 if __name__ == "__main__":
     unittest.main()

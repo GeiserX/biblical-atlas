@@ -16,7 +16,9 @@ const BE = window.BE;
 // Qué palabra lleva el nombre según la certeza. Una fecha calculada no lleva palabra: la marca hueca ya lo dice, y la
 // ficha lo cuenta entero. Quitar o poner una palabra es cambiar esta tabla y nada más: medir y dibujar la leen los dos.
 const TAG = { approx: 'aprox.', uncertain: '¿?' };
-const labelText = (it) => (TAG[it.cert] ? `${it.name} ${TAG[it.cert]}` : it.name);
+// Un viaje que se repetía cada año lo dice tras el nombre (y tras su palabra, si la lleva), con la letra de la palabra.
+const REPEAT = '↻ cada año';
+const labelText = (it) => [it.name, TAG[it.cert], it.repite && REPEAT].filter(Boolean).join(' ');
 // Hueco quiere decir una sola cosa: fecha calculada por nosotros. Lo dudoso se difumina y lleva «¿?».
 const hollow = (it) => it.cert === 'computed';
 const clamp = (v, a, b) => Math.max(a, Math.min(b, v));
@@ -40,6 +42,7 @@ function measure(items, meas, G) {
     const toks = it.name.split(' ').map((w) => ({ w: meas.name(w), gap: meas.space }));
     const tag = TAG[it.cert];
     if (tag) toks.push({ w: meas.tag(tag), gap: meas.space });
+    if (it.repite) for (const w of REPEAT.split(' ')) toks.push({ w: meas.tag(w), gap: meas.space });
     const full = toks.reduce((sum, t, i) => sum + t.w + (i ? t.gap : 0), 0);
     it.fullW = Math.ceil(full) + 2;   // en una sola línea: así va dentro de una barra que la cabe
     it.lines = 1;
@@ -377,5 +380,5 @@ const inView = (hit, y, v) => hit[1] > 0 && hit[0] < v.w && y + v.row > v.top &&
     ver con él (`relatedInView`). Fuera de la vista lo elegido, las demás recuperan su color; la selección se queda. */
 const dimOthers = ({ own, ownInView, relatedInView }) => (own ? ownInView : relatedInView);
 
-BE.filas = { TAG, labelText, hollow, softEnds, measure, extent, packOrder, pack, place, hitOf, lwOf, rescueEdges, edgeRows, layoutLane, clickTarget, certainty, storyOrder, norm, nextSel, inView, dimOthers };
+BE.filas = { TAG, REPEAT, labelText, hollow, softEnds, measure, extent, packOrder, pack, place, hitOf, lwOf, rescueEdges, edgeRows, layoutLane, clickTarget, certainty, storyOrder, norm, nextSel, inView, dimOthers };
 })();
