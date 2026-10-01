@@ -100,6 +100,8 @@ class Summary(unittest.TestCase):
                   "eventos": [{"fuentes": ["s", "t"]}], "calendario": {"explicacion": [{"fuentes": ["s"]}]}}
         self.assertEqual(build.cifras_fuentes(salida), (4, 2))
         self.assertEqual({k: build.resumen(salida)[k] for k in ("fuentes", "capitulos")}, {"fuentes": 4, "capitulos": 2})
+        # El índice del registro dice el total de su página y, dentro, las mismas cifras.
+        self.assertEqual(build._cuenta_fuentes(salida), "7: 4 enlazadas por algún dato, 2 capítulos de la Biblia y 1 sin citar")
 
 
 class ChapterUrls(unittest.TestCase):
