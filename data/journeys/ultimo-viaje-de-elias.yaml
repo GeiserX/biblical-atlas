@@ -1,0 +1,108 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: ultimo-viaje-de-elias
+name: Último viaje de Elías
+person: elias-profeta
+reference: 2Re 2:1-11
+date:
+  from: -916
+  to: -916
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 917 a.e.c.
+narrative_order:
+  series: elias-profeta
+  order: 4
+companions:
+- eliseo
+summary: Elías va de Guilgal a Betel, a Jericó y al Jordán, y Eliseo se niega a separarse de él. Cruzan el río en seco; un
+  carro de fuego los separa y Elías sube al cielo en la tempestad.
+reason: 2Re 2:1-11 da las etapas en orden. Fechas de los sucesos elias-y-eliseo-bajan-de-guilgal-a-betel, elias-y-eliseo-van-de-betel-a-jerico
+  y elias-llevado-en-la-tempestad.
+sources:
+- 2-reyes-2
+- it-elias
+- it-eliseo
+- it-guilgal
+- it-betel
+- it-jerico
+checked_on: '2026-09-30'
+status: verified
+stops:
+- order: 1
+  place: guilgal-cerca-de-betel
+  reference: 2Re 2:1, 2
+  date:
+    from: -916
+    to: -916
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 917 a.e.c.
+  note: Salen juntos.
+  reason: '2Re 2:1: Elías y Eliseo salen de Guilgal. Fecha del suceso elias-y-eliseo-bajan-de-guilgal-a-betel.'
+  sources:
+  - 2-reyes-2
+  - it-guilgal
+  - it-eliseo
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: betel
+  reference: 2Re 2:2, 3
+  date:
+    from: -916
+    to: -916
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 917 a.e.c.
+  note: Los hijos de los profetas avisan a Eliseo.
+  reason: '2Re 2:2: bajan a Betel. Fecha del suceso elias-y-eliseo-bajan-de-guilgal-a-betel.'
+  sources:
+  - 2-reyes-2
+  - it-betel
+  - it-eliseo
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: jerico
+  reference: 2Re 2:4, 5
+  date:
+    from: -916
+    to: -916
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 917 a.e.c.
+  note: null
+  reason: '2Re 2:4: llegan a Jericó. Fecha del suceso elias-y-eliseo-van-de-betel-a-jerico.'
+  sources:
+  - 2-reyes-2
+  - it-jerico
+  - it-eliseo
+  checked_on: '2026-09-30'
+  status: verified
+- order: 4
+  place: rio-jordan
+  reference: 2Re 2:6-11
+  date:
+    from: -916
+    to: -916
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 917 a.e.c.
+  note: Elías golpea el agua con su prenda oficial y la cruzan por suelo seco.
+  reason: 2Re 2:6-8 los lleva al Jordán y al otro lado. Fecha del suceso elias-llevado-en-la-tempestad.
+  sources:
+  - 2-reyes-2
+  - it-elias
+  - it-eliseo
+  checked_on: '2026-09-30'
+  status: verified

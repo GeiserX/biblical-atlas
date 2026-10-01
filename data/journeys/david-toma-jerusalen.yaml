@@ -1,0 +1,75 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: david-toma-jerusalen
+name: David toma Jerusalén
+person: david
+reference: 2Sa 5:1-9; 1Cr 11:1-7
+date:
+  from: -1069
+  to: -1069
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 1070 a.e.c.
+companions:
+- joab-hijo-de-zeruya
+summary: Ungido rey de todo Israel en Hebrón, David va con sus hombres contra los jebuseos de Jerusalén. Joab sube el primero,
+  David conquista la fortaleza de Sion y la llama Ciudad de David.
+reason: 2Sa 5:1-9 y 1Cr 11:1-7; Joab va en el ataque (1Cr 11:6; Perspicacia «Joab», núm. 2). El estudio 3 fecha en 1070 el
+  reinado sobre todo Israel y la nueva capital.
+sources:
+- 2-samuel-5
+- 1-cronicas-11
+- si-3
+- it-jerusalen
+- it-david
+- it-joab
+- it-monticulo
+checked_on: '2026-09-30'
+status: verified
+narrative_order:
+  series: david
+  order: 6
+stops:
+- order: 1
+  place: hebron
+  reference: 2Sa 5:1-5
+  date:
+    from: -1069
+    to: -1069
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 1070 a.e.c.
+  note: Los ancianos de Israel lo ungen rey.
+  reason: '2Sa 5:1-3: las tribus van a Hebrón y ungen a David rey de Israel; el estudio 3 da 1070. Fecha: la del suceso david-rey-de-todo-israel.'
+  sources:
+  - 2-samuel-5
+  - 1-cronicas-11
+  - it-david
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: jerusalen
+  reference: 2Sa 5:6-9
+  date:
+    from: -1069
+    to: -1069
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 1070 a.e.c.
+  note: Toma la fortaleza de Sion y se queda a vivir en ella.
+  reason: '2Sa 5:6-9 y 1Cr 11:4-7: el rey y sus hombres marchan contra Jebús y toman Sion. Fecha: la del suceso david-toma-la-fortaleza-de-sion.'
+  sources:
+  - 2-samuel-5
+  - 1-cronicas-11
+  - it-jerusalen
+  - it-joab
+  - it-monticulo
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified

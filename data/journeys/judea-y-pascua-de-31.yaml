@@ -1,0 +1,117 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: judea-y-pascua-de-31
+name: Por Judea a la Pascua de 31 y vuelta a Galilea
+person: jesus
+reference: Lu 4:44; Jn 5:1-47; Mt 12:1-21; Mr 2:23–3:12; Lu 6:1-11
+date:
+  from: 30
+  to: 31
+  precision: range
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: de 30 e.c. a 31 e.c., tras la Pascua
+narrative_order:
+  series: jesus
+  order: 5
+companions: []
+summary: Predica en las sinagogas de Judea y sube a la Pascua de 31, donde cura a un enfermo junto al estanque de Betzata.
+  De vuelta, sus discípulos arrancan espigas en sábado, y en Galilea sigue curando junto al mar.
+reason: Lu 4:44, Jn 5 y Mr 3 dan los lugares; el orden es el de la tabla A7-C. Fechas de los sucesos predica-en-judea, curacion-en-betzata,
+  espigas-en-sabado y mano-paralizada-en-sabado.
+sources:
+- lucas-4
+- lucas-6
+- juan-5
+- mateo-12
+- marcos-2
+- marcos-3
+- tnm-a7-c
+- jy-cap-29
+- jy-cap-30
+- jy-cap-31
+- jy-cap-32
+- jy-cap-33
+- it-betzata
+checked_on: '2026-09-30'
+status: verified
+stops:
+- order: 1
+  place: capernaum
+  reference: Mr 2:13-22
+  date:
+    from: 30
+    to: 30
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 30 e.c.
+  note: Enlace con la gira anterior.
+  reason: Mr 2:13-22 lo deja junto al mar, en Capernaúm, tras llamar a Mateo. Fecha del suceso llamada-de-mateo.
+  sources:
+  - marcos-2
+  - tnm-a7-c
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: judea
+  reference: Lu 4:44
+  date:
+    from: 30
+    to: 30
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 30 e.c.
+  note: Predica en las sinagogas de Judea.
+  reason: Lu 4:44 lo pone predicando en Judea. Que esta estancia lleve a la Pascua de Jn 5:1 lo dice el orden de la tabla
+    A7-C, no el texto. Fecha del suceso predica-en-judea.
+  sources:
+  - lucas-4
+  - tnm-a7-c
+  checked_on: '2026-09-30'
+  status: pending
+- order: 3
+  place: jerusalen
+  reference: Jn 5:1-47
+  date:
+    from: 31
+    to: 31
+    precision: month
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: Pascua de 31 e.c.
+    detail:
+      month: nisan
+  note: Cura a un hombre junto al estanque de Betzata.
+  reason: Jn 5:1 lo hace subir a Jerusalén para una fiesta; la nota de estudio da razones para ver en ella la Pascua de 31.
+    Fecha del suceso curacion-en-betzata.
+  sources:
+  - juan-5
+  - tnm-a7-c
+  - it-betzata
+  checked_on: '2026-09-30'
+  status: verified
+- order: 4
+  place: mar-de-galilea
+  reference: Mt 12:9-21; Mr 3:1-12
+  date:
+    from: 31
+    to: 31
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 31 e.c., tras la Pascua
+  note: 'Por el camino, las espigas en sábado (Mr 2:23-28), sin lugar: la tabla A7-C pone «al volver de Jerusalén (?)».'
+  reason: Mr 3:7 lo lleva con sus discípulos al mar de Galilea tras curar la mano paralizada. Fechas de los sucesos espigas-en-sabado
+    y mano-paralizada-en-sabado.
+  sources:
+  - marcos-3
+  - mateo-12
+  - tnm-a7-c
+  checked_on: '2026-09-30'
+  status: verified

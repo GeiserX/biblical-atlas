@@ -1,0 +1,90 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: pascua-de-jesus-a-los-12
+name: Jesús, con 12 años, en la Pascua
+person: jose-esposo-de-maria
+reference: Lu 2:41-52
+date:
+  from: 12
+  to: 12
+  precision: month
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: Pascua de 12 e.c.
+  detail: &id001
+    month: nisan
+narrative_order:
+  series: jose-esposo-de-maria
+  order: 4
+companions:
+- maria-madre-de-jesus
+- jesus
+summary: Como cada año, la familia sube a Jerusalén para la Pascua. De regreso, José y María caminan un día sin Jesús; vuelven,
+  lo hallan en el templo al tercer día y bajan juntos a Nazaret.
+reason: Lu 2:41-51 da la ida, la estancia y la vuelta. Fecha del suceso jesus-en-el-templo-a-los-12; la vuelta abre jesus-crece-en-nazaret.
+  Tabla A7-A.
+sources:
+- lucas-2
+- tnm-a7-a
+- jy-cap-10
+checked_on: '2026-09-30'
+status: verified
+stops:
+- order: 1
+  place: nazaret
+  reference: Lu 2:41, 42
+  date:
+    from: 12
+    to: 12
+    precision: month
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: Pascua de 12 e.c.
+    detail: *id001
+  note: Viaje que hacían todos los años. La nota de Lu 2:41 habla de unos 300 km entre ida y vuelta.
+  reason: Lu 2:39 y 41 dejan a la familia en Nazaret y dicen que subía a la Pascua cada año. Fecha del suceso jesus-en-el-templo-a-los-12.
+  sources:
+  - lucas-2
+  - tnm-a7-a
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: jerusalen
+  reference: Lu 2:42-50
+  date:
+    from: 12
+    to: 12
+    precision: month
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: Pascua de 12 e.c.
+    detail: *id001
+  note: 'Un día de camino de regreso y la vuelta a buscarlo van aquí: el texto no nombra el lugar.'
+  reason: 'Lu 2:42-46: acabada la fiesta vuelven a Jerusalén y lo encuentran en el templo con los maestros. Fecha del suceso
+    jesus-en-el-templo-a-los-12.'
+  sources:
+  - lucas-2
+  - tnm-a7-a
+  - jy-cap-10
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: nazaret
+  reference: Lu 2:51, 52
+  date:
+    from: 12
+    to: 12
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 12 e.c., tras la Pascua
+  note: null
+  reason: Lu 2:51 dice que bajó con ellos a Nazaret. Año del suceso jesus-en-el-templo-a-los-12; empieza jesus-crece-en-nazaret.
+  sources:
+  - lucas-2
+  - tnm-a7-a
+  checked_on: '2026-09-30'
+  status: verified

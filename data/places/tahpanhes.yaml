@@ -1,0 +1,31 @@
+# biblical-atlas: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: tahpanhes
+name: Tahpanhés
+names:
+- name: Tahpanhés
+- name: Tahpanés
+  note: Otra forma del nombre que recoge el título de Perspicacia.
+- name: Tehafnehés
+  note: Forma de Eze 30:18, según Perspicacia.
+type: city
+lat: 30.860556
+lon: 32.171389
+precision: uncertain
+coord_source: openbible:adb008c
+coord_url: https://www.openbible.info/geo/ancient/adb008c/tahpanhes
+coord_note: 'Única identificación de OpenBible: Tell Defenneh. Perspicacia solo dice que algunos geógrafos la ponen en Tell
+  Defneh, al sudoeste de Port Said.'
+summary: Ciudad importante del nordeste del delta del Nilo. Fue el primer sitio de Egipto adonde llegaron los judíos que huyeron
+  en 607 a.e.c., con Jeremías y Baruc; algunos se quedaron a vivir allí.
+reason: 'Perspicacia «Tahpanés, Tahpanhés, Tehafnehés»; Jer 43:7-9; 44:1. OpenBible: solo tomamos el punto.'
+sources:
+- it-tahpanhes
+- openbible-geo
+- jeremias-43
+- jeremias-44
+links:
+- title: 'Perspicacia: «Tahpanés, Tahpanhés, Tehafnehés»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004305
+  type: perspicacia
+checked_on: '2026-09-30'
+status: verified

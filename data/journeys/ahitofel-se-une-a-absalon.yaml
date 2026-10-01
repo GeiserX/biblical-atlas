@@ -1,0 +1,93 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: ahitofel-se-une-a-absalon
+name: Ahitofel se une a Absalón
+person: ahitofel
+reference: 2Sa 15:12; 16:15–17:23
+date:
+  from: -1069
+  to: -1039
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1070 y c. 1040 a.e.c. (tiempo narrativo: la rebelión de Absalón, en el reinado de David en Jerusalén)'
+companions: []
+summary: Mientras ofrece sacrificios en Hebrón, Absalón manda llamar a Ahitofel, que está en Guiló. Ahitofel le aconseja en
+  Jerusalén; cuando Absalón prefiere el consejo de Husai, vuelve a su pueblo y se ahorca.
+reason: '2Sa 15:12; 16:15-23; 17:1-23. Perspicacia «Ahitofel»: natural de Guiló. El texto no dice que llegara a Hebrón, así
+  que no es parada. Sin año: entre 1070 y c. 1040 a.e.c.'
+sources:
+- 2-samuel-15
+- 2-samuel-16
+- 2-samuel-17
+- it-ahitofel
+- it-absalon
+- it-guilo
+- tnm-b7
+- tnm-tabla
+- si-3
+checked_on: '2026-09-30'
+status: verified
+stops:
+- order: 1
+  place: guilo
+  reference: 2Sa 15:12
+  date:
+    from: -1069
+    to: -1039
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1070 y c. 1040 a.e.c. (tiempo narrativo: la rebelión de Absalón, en el reinado de David en Jerusalén)'
+  note: Absalón lo manda llamar desde Hebrón.
+  reason: '2Sa 15:12: Ahitofel el guilonita estaba en Guiló, su ciudad. Fecha: la del suceso absalon-se-proclama-rey-en-hebron.'
+  sources:
+  - 2-samuel-15
+  - it-ahitofel
+  - tnm-b7
+  - tnm-tabla
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: jerusalen
+  reference: 2Sa 16:15–17:14
+  date:
+    from: -1069
+    to: -1039
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1070 y c. 1040 a.e.c. (tiempo narrativo: la rebelión de Absalón, en el reinado de David en Jerusalén)'
+  note: Aconseja tomar a las concubinas y perseguir a David esa misma noche.
+  reason: '2Sa 16:15: Ahitofel entra en Jerusalén con Absalón. Fecha: la del suceso absalon-toma-las-concubinas-de-su-padre.'
+  sources:
+  - 2-samuel-16
+  - 2-samuel-17
+  - it-ahitofel
+  - tnm-b7
+  - tnm-tabla
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: guilo
+  reference: 2Sa 17:23
+  date:
+    from: -1069
+    to: -1039
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1070 y c. 1040 a.e.c. (tiempo narrativo: la rebelión de Absalón, tras el pacto con David y antes de acabarse
+      2 Samuel)'
+  note: Da instrucciones a su casa y se ahorca.
+  reason: '2Sa 17:23: ensilla un burro y vuelve a su pueblo, que es Guiló (2Sa 15:12). Fecha: la del suceso muerte-de-ahitofel.'
+  sources:
+  - 2-samuel-17
+  - it-ahitofel
+  - it-guilo
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified

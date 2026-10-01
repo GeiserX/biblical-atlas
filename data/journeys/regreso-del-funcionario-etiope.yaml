@@ -1,0 +1,64 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: regreso-del-funcionario-etiope
+name: El funcionario etíope vuelve de Jerusalén
+person: eunuco-etiope
+reference: Hch 8:26-39
+date:
+  from: 33
+  to: 36
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 33 y 36 e.c. (tiempo narrativo: después de la muerte de Esteban y antes de la visita a Cornelio)'
+companions: []
+summary: Un alto funcionario de la reina de los etíopes vuelve en su carro de adorar en Jerusalén, leyendo a Isaías. Felipe
+  le explica el pasaje y lo bautiza junto al camino; él sigue su viaje contento.
+reason: Hch 8:27, 28 da la salida y el camino. Fecha del suceso felipe-y-el-funcionario-etiope. El destino, Etiopía, no se
+  narra y va en la nota.
+sources:
+- hechos-8
+- it-eunuco
+- it-etiopia
+- bt-7
+checked_on: '2026-09-30'
+status: verified
+stops:
+- order: 1
+  place: jerusalen
+  reference: Hch 8:27
+  date:
+    from: 33
+    to: 36
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 33 y 36 e.c. (tiempo narrativo: después de la muerte de Esteban y antes de la visita a Cornelio)'
+  note: Había ido a adorar a Dios.
+  reason: Hch 8:27, 28 dice que había ido a Jerusalén a adorar y que volvía. Fecha del suceso felipe-y-el-funcionario-etiope.
+  sources:
+  - hechos-8
+  - it-eunuco
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: gaza
+  reference: Hch 8:26-39
+  date:
+    from: 33
+    to: 36
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 33 y 36 e.c. (tiempo narrativo: después de la muerte de Esteban y antes de la visita a Cornelio)'
+  note: Lo bautizan en el camino a Gaza. Después sigue hacia su tierra, Etiopía, que el texto no narra.
+  reason: Hch 8:26-28 sitúa el encuentro en el camino de Jerusalén a Gaza; el punto de la ciudad solo marca la dirección.
+    Fecha del suceso felipe-y-el-funcionario-etiope.
+  sources:
+  - hechos-8
+  - it-gaza
+  - it-etiopia
+  checked_on: '2026-09-30'
+  status: pending

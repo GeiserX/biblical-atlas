@@ -1,0 +1,160 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: rebelion-de-absalon
+name: Rebelión de Absalón
+person: absalon
+reference: 2Sa 15:7–18:17
+date:
+  from: -1069
+  to: -1039
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1070 y c. 1040 a.e.c. (tiempo narrativo: la rebelión de Absalón, en el reinado de David en Jerusalén)'
+companions: []
+summary: Absalón pide permiso para cumplir un voto en Hebrón y allí se proclama rey. Entra en Jerusalén, prefiere el consejo
+  de Husai, cruza el Jordán con Amasá al frente del ejército y muere en el bosque de Efraín.
+reason: '2Sa 15:7–18:17. Perspicacia «Absalón», párr. 10 a 15. Sin año: tras el pacto con David (1070, lámina B7) y antes
+  de acabar 2 Samuel, c. 1040 (estudio 3).'
+sources:
+- 2-samuel-15
+- 2-samuel-16
+- 2-samuel-17
+- 2-samuel-18
+- it-absalon
+- it-ahitofel
+- it-husai
+- it-joab
+- it-amasa
+- tnm-b7
+- tnm-tabla
+- si-3
+checked_on: '2026-09-30'
+status: verified
+narrative_order:
+  series: absalon
+  order: 2
+stops:
+- order: 1
+  place: jerusalen
+  reference: 2Sa 15:7-9
+  date:
+    from: -1069
+    to: -1039
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1070 y c. 1040 a.e.c. (tiempo narrativo: la rebelión de Absalón, en el reinado de David en Jerusalén)'
+  note: Pide permiso al rey.
+  reason: '2Sa 15:7-9: Absalón pide al rey ir a Hebrón y el rey lo deja ir. Fecha: la del suceso absalon-se-proclama-rey-en-hebron.'
+  sources:
+  - 2-samuel-15
+  - it-absalon
+  - tnm-b7
+  - tnm-tabla
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: hebron
+  reference: 2Sa 15:9-12
+  date:
+    from: -1069
+    to: -1039
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1070 y c. 1040 a.e.c. (tiempo narrativo: la rebelión de Absalón, en el reinado de David en Jerusalén)'
+  note: Van con él 200 hombres de Jerusalén que no saben nada.
+  reason: '2Sa 15:9-12: en Hebrón ofrece sacrificios y sus espías lo proclaman rey. Fecha: la del suceso absalon-se-proclama-rey-en-hebron.'
+  sources:
+  - 2-samuel-15
+  - it-absalon
+  - tnm-b7
+  - tnm-tabla
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: jerusalen
+  reference: 2Sa 16:15–17:14
+  date:
+    from: -1069
+    to: -1039
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1070 y c. 1040 a.e.c. (tiempo narrativo: la rebelión de Absalón, en el reinado de David en Jerusalén)'
+  note: Ahitofel va con él y Husai se le presenta.
+  reason: '2Sa 16:15: Absalón llega a Jerusalén con los hombres de Israel. Fecha: la del suceso husai-se-presenta-ante-absalon.'
+  sources:
+  - 2-samuel-16
+  - 2-samuel-17
+  - it-husai
+  - tnm-b7
+  - tnm-tabla
+  checked_on: '2026-09-30'
+  status: verified
+- order: 4
+  place: rio-jordan
+  reference: 2Sa 17:24
+  date:
+    from: -1069
+    to: -1039
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1070 y c. 1040 a.e.c. (tiempo narrativo: la rebelión de Absalón, tras el pacto con David y antes de acabarse
+      2 Samuel)'
+  note: Amasá manda el ejército en lugar de Joab.
+  reason: '2Sa 17:24, 25: Absalón pasa el Jordán al frente de los israelitas, con Amasá como jefe del ejército. Fecha: la
+    del suceso absalon-cruza-el-jordan-con-amasa-al-frente-del-ejercito.'
+  sources:
+  - 2-samuel-17
+  - it-amasa
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 5
+  place: galaad
+  reference: 2Sa 17:26
+  date:
+    from: -1069
+    to: -1039
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1070 y c. 1040 a.e.c. (tiempo narrativo: la rebelión de Absalón, tras el pacto con David y antes de acabarse
+      2 Samuel)'
+  note: null
+  reason: '2Sa 17:26: Absalón y los israelitas acampan en la tierra de Galaad. Fecha: la del suceso absalon-cruza-el-jordan-con-amasa-al-frente-del-ejercito.'
+  sources:
+  - 2-samuel-17
+  - it-amasa
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 6
+  place: bosque-de-efrain
+  reference: 2Sa 18:6-17
+  date:
+    from: -1069
+    to: -1039
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1070 y c. 1040 a.e.c. (tiempo narrativo: la rebelión de Absalón, tras el pacto con David y antes de acabarse
+      2 Samuel)'
+  note: Se le enreda la cabeza en un árbol y Joab lo mata.
+  reason: '2Sa 18:6-17: la batalla se da en el bosque de Efraín, y allí muere Absalón. Fecha: la del suceso muerte-de-absalon.'
+  sources:
+  - 2-samuel-18
+  - it-absalon
+  - it-joab
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified

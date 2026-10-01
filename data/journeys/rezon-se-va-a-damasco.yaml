@@ -1,0 +1,63 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: rezon-se-va-a-damasco
+name: Rezón se va a Damasco
+person: rezon
+reference: 1Re 11:23-25
+date:
+  from: -1069
+  to: -997
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1070 y 998 a.e.c. (tiempo narrativo: después de que David venciera a Zobá, y enemigo de Salomón toda su vida)'
+companions: []
+summary: Rezón, que había huido de Hadadézer, rey de Zobá, junta una banda de saqueadores tras la victoria de David. Se instalan
+  en Damasco, donde reina y se opone a Israel mientras vive Salomón.
+reason: '1Re 11:23-25: huye de su señor de Zobá y acaba reinando en Damasco. Fecha del suceso rezon-se-hace-rey-en-damasco.'
+sources:
+- 1-reyes-11
+- it-rezon
+- it-zoba
+- si-3
+checked_on: '2026-09-30'
+status: verified
+stops:
+- order: 1
+  place: zoba
+  reference: 1Re 11:23, 24
+  date:
+    from: -1069
+    to: -997
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1070 y 998 a.e.c. (tiempo narrativo: después de que David venciera a Zobá, y enemigo de Salomón toda su vida)'
+  note: Deja a su señor Hadadézer.
+  reason: 1Re 11:23 lo presenta huido del rey de Zobá. Fecha del suceso rezon-se-hace-rey-en-damasco.
+  sources:
+  - 1-reyes-11
+  - it-rezon
+  - it-zoba
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: damasco
+  reference: 1Re 11:24, 25
+  date:
+    from: -1069
+    to: -997
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1070 y 998 a.e.c. (tiempo narrativo: después de que David venciera a Zobá, y enemigo de Salomón toda su vida)'
+  note: Reina allí sobre Siria.
+  reason: '1Re 11:24: se van a Damasco y reinan allí. Fecha del suceso rezon-se-hace-rey-en-damasco.'
+  sources:
+  - 1-reyes-11
+  - it-rezon
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified

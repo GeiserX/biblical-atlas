@@ -1,0 +1,66 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: epafras-a-roma
+name: Epafras lleva noticias de Colosas
+person: epafras
+reference: Col 1:7, 8; 4:12, 13; Flm 23
+date:
+  from: 59
+  to: 61
+  precision: range
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 59-61 e.c. (primer encierro en Roma)
+companions: []
+summary: Epafras, que había llevado las buenas nuevas a Colosas, viaja a Roma para contar a Pablo el amor y la firmeza de
+  aquella congregación. Se queda con él al menos un tiempo.
+reason: Perspicacia «Epafras» pone el viaje en el primer encierro de Pablo en Roma; suceso epafras-informa-a-pablo-en-roma,
+  c. 59-61.
+sources:
+- colosenses-1
+- colosenses-4
+- filemon-1
+- it-epafras
+checked_on: '2026-09-30'
+status: verified
+stops:
+- order: 1
+  place: colosas
+  reference: Col 1:7; 4:12
+  date:
+    from: 59
+    to: 61
+    precision: range
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 59-61 e.c. (primer encierro en Roma)
+  note: También se esforzaba por los hermanos de Laodicea y Hierápolis.
+  reason: 'Col 1:7 y 4:12: les enseñó y es uno de ellos. Que saliera de Colosas es deducción (regla 2b). Fecha del suceso
+    epafras-informa-a-pablo-en-roma.'
+  sources:
+  - colosenses-1
+  - colosenses-4
+  - it-epafras
+  checked_on: '2026-09-30'
+  status: pending
+- order: 2
+  place: roma
+  reference: Col 1:8; 4:12; Flm 23
+  date:
+    from: 59
+    to: 61
+    precision: range
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 59-61 e.c. (primer encierro en Roma)
+  note: Pablo lo llama su compañero de cautiverio.
+  reason: 'Col 1:8: informa a Pablo del amor de los colosenses. Perspicacia dice que fue a Roma durante el primer encierro.
+    Suceso epafras-informa-a-pablo-en-roma.'
+  sources:
+  - colosenses-1
+  - filemon-1
+  - it-epafras
+  checked_on: '2026-09-30'
+  status: verified

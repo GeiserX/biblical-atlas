@@ -1,0 +1,118 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: joab-en-gabaon
+name: Joab en Gabaón
+person: joab-hijo-de-zeruya
+reference: 2Sa 2:13-32
+date:
+  from: -1076
+  to: -1074
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'c. 1077-1075 a.e.c. (tiempo narrativo: en los dos años de reinado de Is-Bóset)'
+companions:
+- abisai
+summary: Joab sale con los siervos de David al encuentro de Abner en Gabaón. Lo persigue hasta la colina de Amá, entierra
+  a su hermano Asahel en Belén y camina toda la noche hasta Hebrón.
+reason: 2Sa 2:13-32; Abisái persigue con él (2:24). Perspicacia «Joab», núm. 2, y «Abner», párr. 5, que da más de 22 km de
+  noche hasta Hebrón. Entre 1077 y c. 1075 a.e.c.
+sources:
+- 2-samuel-2
+- it-joab
+- it-abner
+- it-ama
+- it-guiah
+- it-david
+- it-hebron
+- it-is-boset
+- si-3
+checked_on: '2026-09-30'
+status: verified
+narrative_order:
+  series: joab-hijo-de-zeruya
+  order: 1
+stops:
+- order: 1
+  place: gabaon
+  reference: 2Sa 2:13-23
+  date:
+    from: -1076
+    to: -1074
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'c. 1077-1075 a.e.c. (tiempo narrativo: en los dos años de reinado de Is-Bóset)'
+  note: El texto no dice desde dónde sale; David reinaba en Hebrón.
+  reason: '2Sa 2:13: Joab y los siervos de David salen y se encuentran con Abner en el estanque de Gabaón. Fecha: la del suceso
+    combate-junto-al-estanque-de-gabaon.'
+  sources:
+  - 2-samuel-2
+  - it-joab
+  - si-3
+  - it-is-boset
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: colina-de-ama
+  reference: 2Sa 2:24-28
+  date:
+    from: -1076
+    to: -1074
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'c. 1077-1075 a.e.c. (tiempo narrativo: en los dos años de reinado de Is-Bóset)'
+  note: Toca el cuerno y la lucha termina.
+  reason: '2Sa 2:24, 28: Joab y Abisái llegan a la colina de Amá persiguiendo a Abner. Fecha: la del suceso abner-pide-a-joab-que-deje-de-perseguirlo.'
+  sources:
+  - 2-samuel-2
+  - it-ama
+  - it-joab
+  - si-3
+  - it-is-boset
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: belen
+  reference: 2Sa 2:32
+  date:
+    from: -1076
+    to: -1074
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'c. 1077-1075 a.e.c. (tiempo narrativo: en los dos años de reinado de Is-Bóset)'
+  note: Entierran a Asahel en la tumba de su padre.
+  reason: '2Sa 2:32: se llevan a Asahel y lo entierran en Belén. Fecha: la del suceso entierran-a-asahel-en-belen.'
+  sources:
+  - 2-samuel-2
+  - it-abner
+  - si-3
+  - it-is-boset
+  checked_on: '2026-09-30'
+  status: verified
+- order: 4
+  place: hebron
+  reference: 2Sa 2:32
+  date:
+    from: -1076
+    to: -1074
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'c. 1077-1075 a.e.c. (tiempo narrativo: en los dos años de reinado de Is-Bóset)'
+  note: Llegan al amanecer.
+  reason: '2Sa 2:32: después del entierro marchan de noche hasta Hebrón. Fecha: la del suceso entierran-a-asahel-en-belen.'
+  sources:
+  - 2-samuel-2
+  - it-abner
+  - it-hebron
+  - si-3
+  - it-is-boset
+  checked_on: '2026-09-30'
+  status: verified

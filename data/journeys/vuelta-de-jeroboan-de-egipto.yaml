@@ -1,0 +1,112 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: vuelta-de-jeroboan-de-egipto
+name: Jeroboán vuelve de Egipto
+person: jeroboan-i
+reference: 1Re 12:2-33; 2Cr 10:2-19
+date:
+  from: -996
+  to: -996
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 997 a.e.c.
+narrative_order:
+  series: jeroboan-i
+  order: 2
+companions: []
+summary: Muerto Salomón, mandan llamar a Jeroboán, que está en Egipto. En Siquem habla por el pueblo ante Rehoboam y lo hacen
+  rey de diez tribus. Reconstruye Siquem y Penuel e inaugura en Betel su propia fiesta.
+reason: '1Re 12:2-33 da el orden: la vuelta, Siquem, Penuel y Betel. Fechas de los sucesos division-del-reino, jeroboan-fortifica-siquem-y-penuel
+  y jeroboan-instituye-su-fiesta-en-betel.'
+sources:
+- 1-reyes-12
+- 2-cronicas-10
+- it-jeroboan
+- it-siquem
+- it-penuel
+- it-betel
+- si-3
+checked_on: '2026-09-30'
+status: verified
+stops:
+- order: 1
+  place: egipto
+  reference: 1Re 12:2; 2Cr 10:2
+  date:
+    from: -996
+    to: -996
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 997 a.e.c.
+  note: Allí le llega el aviso.
+  reason: '1Re 12:2, 3: seguía en Egipto cuando lo mandaron llamar. Fecha del suceso division-del-reino.'
+  sources:
+  - 1-reyes-12
+  - 2-cronicas-10
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: siquem
+  reference: 1Re 12:3-20, 25; 2Cr 10:3-19
+  date:
+    from: -996
+    to: -996
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 997 a.e.c.
+  note: Lo hacen rey de Israel y se queda a vivir allí.
+  reason: 1Re 12:3, 20, 25 lo pone en Siquem. Fecha del suceso division-del-reino.
+  sources:
+  - 1-reyes-12
+  - 2-cronicas-10
+  - it-siquem
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: penuel
+  reference: 1Re 12:25
+  date:
+    from: -996
+    to: -996
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: 997 a.e.c.
+  note: Sale de Siquem para reconstruirla.
+  reason: '1Re 12:25: sale de Siquem y reconstruye Penuel. Fecha del suceso jeroboan-fortifica-siquem-y-penuel.'
+  sources:
+  - 1-reyes-12
+  - it-penuel
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 4
+  place: betel
+  reference: 1Re 12:29-33
+  date:
+    from: -996
+    to: -996
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: 15 hesván 997 a.e.c.
+    detail:
+      month: hesvan
+      day: 15
+  note: Sube al altar el día 15 del octavo mes. El otro becerro está en Dan, pero el texto no dice que él fuera.
+  reason: 1Re 12:32, 33 lo pone ante el altar de Betel. Fecha del suceso jeroboan-instituye-su-fiesta-en-betel.
+  sources:
+  - 1-reyes-12
+  - it-betel
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified

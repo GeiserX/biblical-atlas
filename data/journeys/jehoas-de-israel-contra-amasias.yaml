@@ -1,0 +1,84 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: jehoas-de-israel-contra-amasias
+name: Jehoás de Israel contra Amasías
+person: jehoas-de-israel
+reference: 2Re 14:8-14; 2Cr 25:17-24
+date:
+  from: -857
+  to: -843
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 858 y c. 844 a.e.c. (tiempo narrativo: tras la victoria sobre Edom y antes de la muerte de Jehoás)'
+companions: []
+summary: Retado por Amasías, Jehoás de Israel sube y lo vence en Bet-Semes. Lo lleva preso a Jerusalén, derriba 400 codos
+  de muralla y vuelve a Samaria con rehenes y con los tesoros del templo y del palacio.
+reason: 2Re 14:8-14 y 2Cr 25:17-24 dan las tres paradas en orden. Fechas de los sucesos jehoas-vence-a-amasias-en-bet-semes
+  y jehoas-abre-brecha-en-la-muralla-de-jerusalen.
+sources:
+- 2-reyes-14
+- 2-cronicas-25
+- it-jehoas
+- it-bet-semes
+- it-amasias
+- tnm-a6-a
+checked_on: '2026-09-30'
+status: verified
+stops:
+- order: 1
+  place: bet-semes
+  reference: 2Re 14:11-13; 2Cr 25:21-23
+  date:
+    from: -857
+    to: -843
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 858 y c. 844 a.e.c. (tiempo narrativo: tras la victoria sobre Edom y antes de la muerte de Jehoás)'
+  note: Ciudad de Judá; allí captura a Amasías.
+  reason: '2Re 14:11-13: la batalla es en Bet-Semes. Suceso jehoas-vence-a-amasias-en-bet-semes.'
+  sources:
+  - 2-reyes-14
+  - 2-cronicas-25
+  - it-bet-semes
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: jerusalen
+  reference: 2Re 14:13, 14; 2Cr 25:23, 24
+  date:
+    from: -857
+    to: -843
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 858 y c. 844 a.e.c. (tiempo narrativo: después de la batalla de Bet-Semes)'
+  note: Abre la brecha entre la Puerta de Efraín y la de la Esquina.
+  reason: '2Re 14:13, 14: viene a Jerusalén y derriba parte de la muralla. Suceso jehoas-abre-brecha-en-la-muralla-de-jerusalen.'
+  sources:
+  - 2-reyes-14
+  - 2-cronicas-25
+  - it-jehoas
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: samaria
+  reference: 2Re 14:14; 2Cr 25:24
+  date:
+    from: -857
+    to: -843
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 858 y c. 844 a.e.c. (tiempo narrativo: después de la batalla de Bet-Semes)'
+  note: null
+  reason: '2Re 14:14 y 2Cr 25:24: vuelve a Samaria con el botín. Mismo suceso ancla, que ya la incluye.'
+  sources:
+  - 2-reyes-14
+  - 2-cronicas-25
+  checked_on: '2026-09-30'
+  status: verified

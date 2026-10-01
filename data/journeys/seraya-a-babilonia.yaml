@@ -1,0 +1,49 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: seraya-a-babilonia
+name: Seraya lleva a Babilonia el libro contra Babilonia
+person: seraya-hijo-de-nerias
+reference: Jer 51:59-64
+date: &id001
+  from: -613
+  to: -613
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: 614 a.e.c.
+companions:
+- sedequias
+summary: En el cuarto año de Sedequías, Seraya, hermano de Baruc, va con el rey a Babilonia. Lleva un libro de Jeremías contra
+  la ciudad, que debe leer allí en voz alta y hundir en el Éufrates atado a una piedra.
+reason: Perspicacia «Seraya», núm. 5, fecha el viaje en 614 a.e.c., cuarto año de Sedequías (Jer 51:59). Ningún suceso lo
+  ancla aún; lo creará la lectura de Jeremías.
+sources:
+- it-seraya
+- it-baruc
+- jeremias-51
+checked_on: '2026-09-30'
+status: verified
+stops:
+- order: 1
+  place: jerusalen
+  reference: Jer 51:59
+  date: *id001
+  note: null
+  reason: 'El texto no nombra la salida: sale con el rey, que reinaba en Jerusalén. Fecha de Perspicacia «Seraya», núm. 5.'
+  sources:
+  - jeremias-51
+  - it-seraya
+  checked_on: '2026-09-30'
+  status: pending
+- order: 2
+  place: babilonia
+  reference: Jer 51:60-64
+  date: *id001
+  note: Tras leer el libro, debía arrojarlo al Éufrates, que cruza la ciudad, para mostrar que Babilonia se hundiría.
+  reason: Jer 51:59-64 manda leer el libro en Babilonia; Perspicacia «Seraya», núm. 5, dice que acompañó a Sedequías hasta
+    allí en 614 a.e.c.
+  sources:
+  - jeremias-51
+  - it-seraya
+  checked_on: '2026-09-30'
+  status: verified

@@ -1,0 +1,387 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: huida-de-david
+name: David huye de Saúl
+person: david
+reference: 1Sa 19:18–27:7
+date:
+  from: -1106
+  to: -1077
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1107 y 1078 a.e.c. (tiempo narrativo: David huye de Saúl, que muere en 1078)'
+companions: []
+summary: 'Durante años David huye de Saúl: de Ramá a Nob y a Gat, a la cueva de Adulam, a Moab, a Queilá y por los desiertos
+  de Zif, Maón, En-Guedí y Parán, hasta refugiarse con Akís, que le da Ziclag.'
+reason: '1 Samuel 19 a 27 dan las paradas en orden. Sin año en jw.org: entre el nacimiento de David (1107) y la muerte de
+  Saúl (1078), según el estudio 3; el final se cuenta desde 1Sa 27:7.'
+sources:
+- 1-samuel-19
+- 1-samuel-20
+- 1-samuel-21
+- 1-samuel-22
+- 1-samuel-23
+- 1-samuel-24
+- 1-samuel-25
+- 1-samuel-26
+- 1-samuel-27
+- it-david
+- it-akis
+- it-adulam
+- it-nob
+- it-queila
+- it-zif
+- it-hores
+- it-maon
+- it-en-guedi
+- it-paran
+- it-hakila
+- it-ziqlag
+- it-heret
+- si-3
+- it-jonatan
+- tnm-tabla
+checked_on: '2026-09-30'
+status: verified
+narrative_order:
+  series: david
+  order: 2
+stops:
+- order: 1
+  place: ramataim-zofim
+  reference: 1Sa 19:18-24
+  date:
+    from: -1106
+    to: -1077
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1107 y 1078 a.e.c. (tiempo narrativo: David huye de Saúl, que muere en 1078)'
+  note: Salida. Va con Samuel a Nayot, en Ramá.
+  reason: '1Sa 19:18 dice que David huye a Samuel en Ramá y los dos se quedan en Nayot. Suceso ancla: david-huye-a-samuel-en-rama
+    (entre 1107 y 1078, estudio 3).'
+  sources:
+  - 1-samuel-19
+  - it-samuel
+  - it-nayot
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: nob
+  reference: 1Sa 21:1-9
+  date:
+    from: -1106
+    to: -1077
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1107 y 1078 a.e.c. (tiempo narrativo: David huye de Saúl, que muere en 1078)'
+  note: Antes (1Sa 20) se despide de Jonatán cerca de la corte, en un sitio que el texto no nombra. El sacerdote Ahimélec
+    le da pan santo y la espada de Goliat.
+  reason: '1Sa 21:1 dice que David llega a Nob, donde está Ahimélec. Suceso ancla: david-recibe-el-pan-santo-en-nob (entre
+    1107 y 1078, estudio 3).'
+  sources:
+  - 1-samuel-20
+  - 1-samuel-21
+  - it-nob
+  - it-david
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: gat
+  reference: 1Sa 21:10-15
+  date:
+    from: -1106
+    to: -1077
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1107 y 1078 a.e.c. (tiempo narrativo: David huye de Saúl, que muere en 1078)'
+  note: Ante el rey Akís se hace el loco.
+  reason: '1Sa 21:10-13: sigue huyendo, llega a Akís de Gat y finge haber perdido el juicio. Suceso ancla: david-se-hace-el-loco-ante-akis
+    (entre 1107 y 1078, estudio 3).'
+  sources:
+  - 1-samuel-21
+  - it-akis
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 4
+  place: adulam
+  reference: 1Sa 22:1, 2
+  date:
+    from: -1106
+    to: -1077
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1107 y 1078 a.e.c. (tiempo narrativo: David huye de Saúl, que muere en 1078)'
+  note: Se le unen su familia y unos 400 descontentos.
+  reason: '1Sa 22:1 lo lleva de Gat a la cueva de Adulam. Suceso ancla: david-se-refugia-en-la-cueva-de-adulam (entre 1107
+    y 1078, estudio 3).'
+  sources:
+  - 1-samuel-22
+  - it-adulam
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 5
+  place: mizpe-de-moab
+  reference: 1Sa 22:3, 4
+  date:
+    from: -1106
+    to: -1077
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1107 y 1078 a.e.c. (tiempo narrativo: David huye de Saúl, que muere en 1078)'
+  note: Deja a sus padres con el rey de Moab.
+  reason: '1Sa 22:3 dice que de allí va a Mizpé de Moab. Suceso ancla: david-deja-a-sus-padres-con-el-rey-de-moab (entre 1107
+    y 1078, estudio 3).'
+  sources:
+  - 1-samuel-22
+  - it-mizpa
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 6
+  place: bosque-de-heret
+  reference: 1Sa 22:5
+  date:
+    from: -1106
+    to: -1077
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1107 y 1078 a.e.c. (tiempo narrativo: David huye de Saúl, que muere en 1078)'
+  note: El profeta Gad le dice que vuelva a Judá.
+  reason: '1Sa 22:5: por consejo de Gad entra en el bosque de Héret. Suceso ancla: gad-manda-a-david-volver-a-juda (entre
+    1107 y 1078, estudio 3).'
+  sources:
+  - 1-samuel-22
+  - it-heret
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 7
+  place: queila
+  reference: 1Sa 23:1-13
+  date:
+    from: -1106
+    to: -1077
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1107 y 1078 a.e.c. (tiempo narrativo: David huye de Saúl, que muere en 1078)'
+  note: Libra la ciudad de los filisteos; aquí se le une Abiatar con el efod. Sale al saber que Saúl viene.
+  reason: '1Sa 23:5, 6, 13: David lucha en Queilá y se va de allí con unos 600 hombres. Suceso ancla: david-libra-queila-de-los-filisteos
+    (entre 1107 y 1078, estudio 3).'
+  sources:
+  - 1-samuel-23
+  - it-queila
+  - it-abiatar
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 8
+  place: zif
+  reference: 1Sa 23:14, 15
+  date:
+    from: -1106
+    to: -1077
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1107 y 1078 a.e.c. (tiempo narrativo: David huye de Saúl, que muere en 1078)'
+  note: El desierto de Zif, en lugares de difícil acceso.
+  reason: '1Sa 23:14 lo esconde en los montes del desierto de Zif. Suceso ancla: jonatan-anima-a-david-en-hores (entre 1107
+    y 1078, estudio 3).'
+  sources:
+  - 1-samuel-23
+  - it-zif
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 9
+  place: hores
+  reference: 1Sa 23:15-18
+  date:
+    from: -1106
+    to: -1077
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1107 y 1078 a.e.c. (tiempo narrativo: David huye de Saúl, que muere en 1078)'
+  note: Jonatán va a animarlo y hacen un pacto.
+  reason: '1Sa 23:15, 16, 18 lo sitúan en Hores, dentro del desierto de Zif (Perspicacia «Hores»). Suceso ancla: jonatan-anima-a-david-en-hores
+    (entre 1107 y 1078, estudio 3).'
+  sources:
+  - 1-samuel-23
+  - it-hores
+  - it-jonatan
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 10
+  place: maon
+  reference: 1Sa 23:24-26
+  date:
+    from: -1106
+    to: -1077
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1107 y 1078 a.e.c. (tiempo narrativo: David huye de Saúl, que muere en 1078)'
+  note: Desierto de Maón, en el Arabá; Jesimón queda al norte.
+  reason: '1Sa 23:24, 25 lo lleva al desierto de Maón mientras los zifitas avisan a Saúl. Suceso ancla: saul-persigue-a-david-en-el-desierto-de-maon
+    (entre 1107 y 1078, estudio 3).'
+  sources:
+  - 1-samuel-23
+  - it-maon
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 11
+  place: penasco-de-las-divisiones
+  reference: 1Sa 23:26-28
+  date:
+    from: -1106
+    to: -1077
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1107 y 1078 a.e.c. (tiempo narrativo: David huye de Saúl, que muere en 1078)'
+  note: Saúl casi lo alcanza, pero se retira por un ataque filisteo.
+  reason: '1Sa 23:25-28: David baja hacia el peñasco, que recibe su nombre cuando Saúl deja la persecución. Suceso ancla:
+    saul-persigue-a-david-en-el-desierto-de-maon (entre 1107 y 1078, estudio 3).'
+  sources:
+  - 1-samuel-23
+  - it-maon
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 12
+  place: en-guedi
+  reference: 1Sa 23:29–24:22
+  date:
+    from: -1106
+    to: -1077
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1107 y 1078 a.e.c. (tiempo narrativo: David huye de Saúl, que muere en 1078)'
+  note: Perdona la vida a Saúl en una cueva.
+  reason: '1Sa 23:29 dice que sube a esconderse en En-Guedí, y el capítulo 24 cuenta allí el encuentro. Suceso ancla: david-perdona-la-vida-a-saul-en-en-guedi
+    (entre 1107 y 1078, estudio 3).'
+  sources:
+  - 1-samuel-23
+  - 1-samuel-24
+  - it-en-guedi
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 13
+  place: desierto-de-paran
+  reference: 1Sa 25:1-42
+  date:
+    from: -1089
+    to: -1079
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre c. 1090 y c. 1080 a.e.c. (tiempo narrativo: después de la muerte de Samuel y antes de que David se refugie
+      en Gat)'
+  note: Tras morir Samuel. Nabal lo desprecia y Abigail sale a su encuentro desde Carmelo.
+  reason: '1Sa 25:1 dice que David baja al desierto de Parán; Perspicacia «Parán» nota que la Septuaginta dice Maón, pero
+    sigue el texto hebreo. Suceso ancla: david-baja-al-desierto-de-paran (tras morir Samuel, c. 1090-1080, tabla de libros).'
+  sources:
+  - 1-samuel-25
+  - it-paran
+  - it-abigail
+  - tnm-tabla
+  checked_on: '2026-09-30'
+  status: verified
+- order: 14
+  place: hakila
+  reference: 1Sa 26:1-25
+  date:
+    from: -1089
+    to: -1079
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre c. 1090 y c. 1080 a.e.c. (tiempo narrativo: después de la muerte de Samuel y antes de que David se refugie
+      en Gat)'
+  note: En la colina, frente a Jesimón, vuelve a perdonar a Saúl.
+  reason: '1Sa 26:1-5: los zifitas lo delatan en la colina de Hakilá, donde acampa Saúl y adonde David entra de noche. Suceso
+    ancla: david-perdona-otra-vez-la-vida-a-saul (tras morir Samuel, c. 1090-1080, tabla de libros).'
+  sources:
+  - 1-samuel-26
+  - it-hakila
+  - it-zif
+  - tnm-tabla
+  checked_on: '2026-09-30'
+  status: verified
+- order: 15
+  place: gat
+  reference: 1Sa 27:1-4
+  date:
+    from: -1079
+    to: -1077
+    precision: range
+    approx: true
+    type: derived
+    chronology: tnm
+    text: c. 1080-1078 a.e.c.
+    note: 'Cuenta nuestra: David vivió entre los filisteos un año y cuatro meses (1Sa 27:7), hasta la muerte de Saúl en 1078
+      (estudio 3; Perspicacia «Jonatán», núm. 2). Contando hacia atrás, llegó a finales de 1080 o en 1079.'
+  note: Con sus 600 hombres y sus dos esposas se instala con Akís.
+  reason: '1Sa 27:2, 3: David pasa a Gat para que Saúl deje de buscarlo. Suceso ancla: david-se-refugia-con-akis-en-gat, con
+    fecha derivada: año y cuatro meses antes de la muerte de Saúl en 1078.'
+  sources:
+  - 1-samuel-27
+  - it-akis
+  - it-jonatan
+  - si-3
+  checked_on: '2026-09-30'
+  status: pending
+- order: 16
+  place: ziclag
+  reference: 1Sa 27:5-7
+  date:
+    from: -1079
+    to: -1077
+    precision: range
+    approx: true
+    type: derived
+    chronology: tnm
+    text: c. 1080-1078 a.e.c.
+    note: 'Cuenta nuestra: David vivió entre los filisteos un año y cuatro meses (1Sa 27:7), hasta la muerte de Saúl en 1078
+      (estudio 3; Perspicacia «Jonatán», núm. 2). Contando hacia atrás, llegó a finales de 1080 o en 1079.'
+  note: Llegada. Vive en el campo filisteo un año y cuatro meses.
+  reason: '1Sa 27:6 dice que Akís le da Ziclag. Suceso ancla: akis-da-ziclag-a-david, con fecha derivada: año y cuatro meses
+    antes de la muerte de Saúl en 1078.'
+  sources:
+  - 1-samuel-27
+  - it-ziqlag
+  - it-jonatan
+  - si-3
+  checked_on: '2026-09-30'
+  status: pending

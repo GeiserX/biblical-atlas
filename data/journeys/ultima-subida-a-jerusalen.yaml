@@ -1,0 +1,167 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: ultima-subida-a-jerusalen
+name: De Efraín a Betania por Perea y Jericó
+person: jesus
+reference: Lu 17:11–19:28; Mt 19:1–20:34; Mr 10:1-52; Jn 11:55–12:1
+date:
+  from: 33
+  to: 33
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: principios de 33 e.c., hasta el 8 de nisán
+narrative_order:
+  series: jesus
+  order: 15
+companions: []
+summary: Desde Efraín va hacia el norte, entre Samaria y Galilea, cruza a Perea y baja por el Jordán hasta Jericó, donde cura
+  a dos ciegos y se hospeda con Zaqueo. Seis días antes de la Pascua llega a Betania.
+reason: Lucas 17 a 19, Mateo 19 y 20 y Juan 11 y 12 dan las paradas. Fechas de los sucesos cura-a-diez-leprosos, matrimonio-y-divorcio,
+  tercer-anuncio-de-su-muerte, jerico-ciegos-zaqueo-y-minas y llegada-a-betania-8-de-nisan (tablas A7-F y A7-G).
+sources:
+- lucas-17
+- lucas-18
+- lucas-19
+- mateo-19
+- mateo-20
+- marcos-10
+- juan-11
+- juan-12
+- tnm-a7-f
+- tnm-a7-g
+- jy-cap-92
+- jy-cap-93
+- jy-cap-94
+- jy-cap-95
+- jy-cap-96
+- jy-cap-97
+- jy-cap-98
+- jy-cap-99
+- jy-cap-100
+- jy-cap-101
+- it-jerico
+checked_on: '2026-09-30'
+status: verified
+stops:
+- order: 1
+  place: efrain
+  reference: Jn 11:54
+  date:
+    from: 33
+    to: 33
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: principios de 33 e.c.
+  note: Enlace con el viaje anterior.
+  reason: Jn 11:54 lo deja en Efraín con sus discípulos. Fecha del suceso complot-y-retiro-a-efrain.
+  sources:
+  - juan-11
+  - tnm-a7-f
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: region-de-samaria
+  reference: Lu 17:11-37
+  date:
+    from: 33
+    to: 33
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: principios de 33 e.c.
+  note: Pasa entre Samaria y Galilea; cura a diez leprosos.
+  reason: 'Lu 17:11: camino de Jerusalén pasa entre Samaria y Galilea. Fecha del suceso cura-a-diez-leprosos.'
+  sources:
+  - lucas-17
+  - tnm-a7-f
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: galilea
+  reference: Lu 17:11; Mt 19:1
+  date:
+    from: 33
+    to: 33
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: principios de 33 e.c.
+  note: Última visita a Galilea antes de su muerte.
+  reason: Lu 17:11 lo pone en el límite de Galilea, y Mt 19:1 dice que sale de allí. Fecha del suceso cura-a-diez-leprosos.
+  sources:
+  - lucas-17
+  - mateo-19
+  - tnm-a7-f
+  checked_on: '2026-09-30'
+  status: verified
+- order: 4
+  place: perea
+  reference: Mt 19:1–20:28; Mr 10:1-45
+  date:
+    from: 33
+    to: 33
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: principios de 33 e.c.
+  note: Al otro lado del Jordán. Habla del divorcio y anuncia otra vez su muerte.
+  reason: Mt 19:1 y Mr 10:1 lo llevan a la región de Judea al otro lado del Jordán; la tabla A7-F la llama Perea. Fechas de
+    los sucesos matrimonio-y-divorcio y tercer-anuncio-de-su-muerte.
+  sources:
+  - mateo-19
+  - mateo-20
+  - marcos-10
+  - tnm-a7-f
+  checked_on: '2026-09-30'
+  status: verified
+- order: 5
+  place: jerico
+  reference: Lu 18:35–19:28; Mr 10:46-52
+  date:
+    from: 33
+    to: 33
+    precision: season
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: primavera de 33 e.c., antes del 8 de nisán
+    detail:
+      season: spring
+  note: Cura a dos ciegos, se hospeda con Zaqueo y cuenta la parábola de las minas.
+  reason: Lu 18:35 y 19:1 lo hacen llegar a Jericó y cruzarla. Fecha del suceso jerico-ciegos-zaqueo-y-minas.
+  sources:
+  - lucas-18
+  - lucas-19
+  - marcos-10
+  - tnm-a7-f
+  - it-jerico
+  checked_on: '2026-09-30'
+  status: verified
+- order: 6
+  place: betania
+  reference: Jn 11:55–12:1
+  date:
+    from: 33
+    to: 33
+    precision: day
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 8 de nisán de 33 e.c.
+    detail:
+      month: nisan
+      day: 8
+  note: Seis días antes de la Pascua.
+  reason: 'Jn 12:1: llega a Betania cuando faltan seis días para la Pascua. Fecha del suceso llegada-a-betania-8-de-nisan.'
+  sources:
+  - juan-12
+  - tnm-a7-g
+  - jy-cap-101
+  checked_on: '2026-09-30'
+  status: verified

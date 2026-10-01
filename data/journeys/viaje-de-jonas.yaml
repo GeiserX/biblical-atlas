@@ -1,0 +1,71 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: viaje-de-jonas
+name: Viaje de Jonás
+person: jonas-profeta
+reference: Jon 1:1-4:11
+date:
+  from: -843
+  to: -843
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 844 a.e.c.
+companions: []
+summary: Mandado a Nínive, Jonás embarca en Jope rumbo a Tarsis. Una tormenta hace que lo arrojen al mar, un pez lo deja en
+  tierra y, a la segunda orden, predica en Nínive, que se arrepiente.
+reason: Jonás 1 a 4 da Jope y Nínive. Sus sucesos van fechados en c. 844 a.e.c. (estudio 3; tabla de los libros).
+sources:
+- jonas-1
+- jonas-2
+- jonas-3
+- jonas-4
+- it-jonas
+- it-jope
+- it-tarsis
+- it-ninive
+- si-jonas
+- si-3
+checked_on: '2026-09-30'
+status: verified
+stops:
+- order: 1
+  place: jope
+  reference: Jon 1:3
+  date:
+    from: -843
+    to: -843
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 844 a.e.c.
+  note: Paga el pasaje a Tarsis, adonde no llega; el mar y el pez (Jon 1:4-2:10) no tienen lugar con nombre.
+  reason: 'Jon 1:3: baja a Jope y sube a un barco que va a Tarsis. Suceso jonas-huye-hacia-tarsis, c. 844.'
+  sources:
+  - jonas-1
+  - it-jope
+  - it-tarsis
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: ninive
+  reference: Jon 3:3-4:11
+  date:
+    from: -843
+    to: -843
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 844 a.e.c.
+  note: Después se sienta al este de la ciudad, bajo un refugio.
+  reason: 'Jon 3:3, 4: va a Nínive y la recorre anunciando su ruina. Suceso jonas-predica-en-ninive, c. 844.'
+  sources:
+  - jonas-3
+  - jonas-4
+  - it-ninive
+  - si-jonas
+  checked_on: '2026-09-30'
+  status: verified

@@ -1,0 +1,116 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: jose-a-egipto
+name: José, de Hebrón a Egipto
+person: jose-hijo-de-jacob
+reference: Gé 37:12-36; 39:1; Sl 105:17; Hch 7:9
+date:
+  from: -1749
+  to: -1749
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 1750 a.e.c.
+companions: []
+summary: Jacob manda a José, de 17 años, a ver cómo están sus hermanos. No los halla en Siquem y los encuentra en Dotán, donde
+  lo venden a una caravana que baja de Galaad; en Egipto lo compra Potifar.
+reason: Gé 37:12-28 da la ruta y la venta, y Gé 37:36 con 39:1 la llegada a Egipto. El estudio 3 fecha la venta en 1750 a.e.c.,
+  con José de 17 años (Gé 37:2).
+sources:
+- genesis-37
+- genesis-39
+- salmos-105
+- hechos-7
+- it-jose
+- it-jacob
+- it-hebron
+- it-siquem
+- it-dotan
+- si-3
+checked_on: '2026-09-30'
+status: verified
+narrative_order:
+  series: jose-hijo-de-jacob
+  order: 1
+stops:
+- order: 1
+  place: hebron
+  reference: Gé 37:14
+  date:
+    from: -1749
+    to: -1749
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 1750 a.e.c.
+  note: Sale del valle de Hebrón.
+  reason: Gé 37:14 hace salir a José del valle de Hebrón rumbo a Siquem. Fecha del suceso «Sus hermanos venden a José en Dotán».
+  sources:
+  - genesis-37
+  - it-hebron
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: siquem
+  reference: Gé 37:14-17
+  date:
+    from: -1749
+    to: -1749
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 1750 a.e.c.
+  note: Un hombre lo encuentra perdido por el campo y le dice adónde fueron.
+  reason: Gé 37:14-17 lo hace llegar a Siquem sin hallar a sus hermanos. Misma fecha.
+  sources:
+  - genesis-37
+  - it-siquem
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: dotan
+  reference: Gé 37:17-28
+  date:
+    from: -1749
+    to: -1749
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 1750 a.e.c.
+  note: Lo echan en una cisterna vacía y lo venden por 20 piezas de plata. Perspicacia pone Dotán a unos 100 km de Hebrón.
+  reason: Gé 37:17 dice que los halló en Dotán, y allí lo venden. Fecha del suceso «Sus hermanos venden a José en Dotán».
+  sources:
+  - genesis-37
+  - it-dotan
+  - it-jacob
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 4
+  place: egipto
+  reference: Gé 37:28, 36; 39:1
+  date:
+    from: -1749
+    to: -1749
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 1750 a.e.c.
+  note: Lo compra Potifar, jefe de la guardia del faraón.
+  reason: Gé 37:36 y 39:1 lo llevan a Egipto y a casa de Potifar. El suceso «José, esclavo en casa de Potifar» hace llegar
+    a José en 1750 a.e.c.
+  sources:
+  - genesis-37
+  - genesis-39
+  - salmos-105
+  - hechos-7
+  - it-jose
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified

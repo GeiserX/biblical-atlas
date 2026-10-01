@@ -1,0 +1,301 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: de-egipto-al-sinai
+name: De Egipto al monte Sinaí
+person: moises
+reference: Éx 12:37–17:16; 19:1, 2; Nú 33:3-15
+date:
+  from: -1512
+  to: -1512
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 1513 a.e.c. (del 15 de abib, o nisán, al tercer mes)
+companions:
+- aaron
+- miriam-hermana-de-moises
+summary: Israel sale de Ramesés el día siguiente a la Pascua, cruza el mar Rojo y, pasando por Mará, Elim, el desierto de
+  Sin y Refidim, llega en el tercer mes al desierto de Sinaí.
+reason: Éxodo 12 a 17 y 19 cuentan la marcha, y Nú 33:3-15 da la lista de campamentos. El estudio 3 fecha el éxodo en 1513
+  a.e.c.; Nú 33:3 da el día de salida y Éx 19:1 el mes de llegada.
+sources:
+- exodo-12
+- exodo-13
+- exodo-14
+- exodo-15
+- exodo-16
+- exodo-17
+- exodo-19
+- numeros-33
+- si-3
+- it-exodo
+- tnm-b3
+checked_on: '2026-09-30'
+status: verified
+narrative_order:
+  series: moises
+  order: 3
+stops:
+- order: 1
+  place: rameses
+  reference: Éx 12:37; Nú 33:3-5
+  date:
+    from: -1512
+    to: -1512
+    precision: day
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 15 de abib (nisán) de 1513 a.e.c.
+    detail:
+      month: nisan
+      day: 15
+  note: Salen el día después de la Pascua con mucho ganado y con los huesos de José (Éx 13:19). Sin punto en el mapa.
+  reason: Nú 33:3 da el día 15 del primer mes, y Éx 12:37 el punto de partida. El suceso «Éxodo de Egipto» lleva el 14, día
+    de la liberación.
+  sources:
+  - exodo-12
+  - exodo-13
+  - numeros-33
+  - it-exodo
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: sucot-de-egipto
+  reference: Éx 12:37; Nú 33:5
+  date:
+    from: -1512
+    to: -1512
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 1513 a.e.c.
+  note: Primer campamento. Sin punto en el mapa.
+  reason: Éx 12:37 y Nú 33:5 los hacen ir de Ramesés a Sucot. Fecha del suceso «Éxodo de Egipto», en 1513 a.e.c.
+  sources:
+  - exodo-12
+  - numeros-33
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: ezam
+  reference: Éx 13:20-22; Nú 33:6
+  date:
+    from: -1512
+    to: -1512
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 1513 a.e.c.
+  note: Acampan donde empieza el desierto; los guía una columna de nube de día y otra de fuego de noche. Sin punto en el mapa.
+  reason: Éx 13:20 y Nú 33:6 los llevan de Sucot a Ezam. Fecha del suceso «Israel va de Sucot a Ezam guiado por la columna
+    de nube».
+  sources:
+  - exodo-13
+  - numeros-33
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 4
+  place: pihahirot
+  reference: Éx 14:1-14; Nú 33:7
+  date:
+    from: -1512
+    to: -1512
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 1513 a.e.c.
+  note: Dan la vuelta y acampan frente a Baal-Zefón, ante Migdol; allí los alcanza el ejército del faraón. Sin punto en el
+    mapa.
+  reason: Éx 14:2 y Nú 33:7 dan el giro hacia Pihahirot. Fecha del suceso «El faraón persigue a Israel hasta Pihahirot».
+  sources:
+  - exodo-14
+  - numeros-33
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 5
+  place: cruce-del-mar-rojo
+  reference: Éx 14:15–15:21; Nú 33:8
+  date:
+    from: -1512
+    to: -1512
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 1513 a.e.c.
+  note: Pasan el mar en seco; después, Moisés y Míriam cantan a Jehová. El lugar exacto del cruce no es seguro.
+  reason: Éx 14:21, 22 y Nú 33:8 los hacen pasar por en medio del mar. Fecha de los sucesos del cruce y del canto junto al
+    mar.
+  sources:
+  - exodo-14
+  - exodo-15
+  - numeros-33
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 6
+  place: mara
+  reference: Éx 15:22-26; Nú 33:8
+  date:
+    from: -1512
+    to: -1512
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 1513 a.e.c.
+  note: Tres días sin agua por el desierto de Sur, que Nú 33:8 llama de Ezam; Jehová endulza el agua amarga.
+  reason: Éx 15:22, 23 y Nú 33:8 los llevan a Mará. Fecha del suceso «Jehová hace dulce el agua de Mará».
+  sources:
+  - exodo-15
+  - numeros-33
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 7
+  place: elim
+  reference: Éx 15:27; Nú 33:9
+  date:
+    from: -1512
+    to: -1512
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 1513 a.e.c.
+  note: Oasis con 12 manantiales y 70 palmeras.
+  reason: Éx 15:27 y Nú 33:9 los hacen acampar en Elim. Fecha del suceso «Israel acampa en Elim».
+  sources:
+  - exodo-15
+  - numeros-33
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 8
+  place: mar-rojo
+  reference: Nú 33:10
+  date:
+    from: -1512
+    to: -1512
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 1513 a.e.c.
+  note: Solo la lista de Números nombra este campamento; el punto del mapa es el del mar entero.
+  reason: Nú 33:10 pone un campamento junto al mar Rojo después de Elim. Fecha del suceso «Israel acampa junto al mar Rojo».
+  sources:
+  - numeros-33
+  - tnm-b3
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 9
+  place: desierto-de-sin
+  reference: Éx 16:1-36; Nú 33:11
+  date:
+    from: -1512
+    to: -1512
+    precision: day
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 15 de ziv (iyar) de 1513 a.e.c.
+    detail:
+      month: iyar
+      day: 15
+  note: Entre Elim y Sinaí. Llegan las codornices, empieza el maná y guardan el primer sábado.
+  reason: Éx 16:1 da la llegada el día 15 del segundo mes, y Nú 33:11 la etapa. Mes del suceso «Jehová da codornices y maná
+    en el desierto de Sin».
+  sources:
+  - exodo-16
+  - numeros-33
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 10
+  place: dofca
+  reference: Nú 33:12
+  date:
+    from: -1512
+    to: -1512
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 1513 a.e.c.
+  note: Solo la lista de Números la nombra.
+  reason: Nú 33:12 pone Dofcá después del desierto de Sin. Fecha del suceso «Israel acampa en Dofcá y en Alús».
+  sources:
+  - numeros-33
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 11
+  place: alus
+  reference: Nú 33:13
+  date:
+    from: -1512
+    to: -1512
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 1513 a.e.c.
+  note: Solo la lista de Números la nombra. Sin punto en el mapa.
+  reason: Nú 33:13 pone Alús después de Dofcá. Fecha del suceso «Israel acampa en Dofcá y en Alús».
+  sources:
+  - numeros-33
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 12
+  place: refidim
+  reference: Éx 17:1-16; Nú 33:14
+  date:
+    from: -1512
+    to: -1512
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 1513 a.e.c.
+  note: Agua de la roca en Masá y Meribá, y victoria sobre Amalec con Josué al frente de la batalla.
+  reason: Éx 17:1 y Nú 33:14 los hacen acampar en Refidim sin agua. Fecha de los sucesos del agua de la roca y de la batalla
+    contra los amalequitas.
+  sources:
+  - exodo-17
+  - numeros-33
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 13
+  place: desierto-de-sinai
+  reference: Éx 19:1, 2; Nú 33:15
+  date:
+    from: -1512
+    to: -1512
+    precision: month
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: tercer mes de 1513 a.e.c.
+    detail:
+      month: sivan
+  note: Acampan frente a la montaña, donde recibirán la Ley.
+  reason: Éx 19:1, 2 los hace llegar al desierto de Sinaí el tercer mes, y Nú 33:15 cierra aquí la etapa. Fecha del suceso
+    «Israel llega al desierto de Sinaí».
+  sources:
+  - exodo-19
+  - numeros-33
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified

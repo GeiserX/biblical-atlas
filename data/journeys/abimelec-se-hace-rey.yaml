@@ -1,0 +1,94 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: abimelec-se-hace-rey
+name: Abimélec se hace rey en Siquem
+person: abimelec-hijo-de-gedeon
+reference: Jue 9:1-6
+date:
+  from: -1449
+  to: -1172
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre c. 1450 y c. 1173 a.e.c. (tiempo narrativo: tras morir Gedeón y antes de Jefté)'
+companions: []
+summary: Muerto Gedeón, su hijo Abimélec busca en Siquem el apoyo de la familia de su madre, vuelve a Ofrá para matar a sus
+  hermanos y regresa a Siquem, donde lo proclaman rey.
+reason: 'Jueces 9:1-6 da las tres paradas. Sin año en jw.org: entre el comienzo del libro, c. 1450 (estudio 3), y Jefté, c.
+  1173 (Perspicacia «Jefté»).'
+sources:
+- jueces-9
+- si-3
+- it-abimelec
+- it-siquem
+- it-jueces
+- it-jefte
+checked_on: '2026-09-30'
+status: verified
+narrative_order:
+  series: abimelec-hijo-de-gedeon
+  order: 1
+stops:
+- order: 1
+  place: siquem
+  reference: Jue 9:1-4
+  date:
+    from: -1449
+    to: -1172
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre c. 1450 y c. 1173 a.e.c. (tiempo narrativo: tras morir Gedeón y antes de Jefté)'
+  note: Salida. Los parientes de su madre le ganan a los líderes de la ciudad.
+  reason: 'Jue 9:1-4: Abimélec va a Siquem, habla con la familia de su madre y recibe plata del templo de Baal-Berit. Suceso
+    ancla: abimelec-gana-el-apoyo-de-siquem (entre Gedeón y Jefté, c. 1173, según Perspicacia «Jefté»).'
+  sources:
+  - jueces-9
+  - it-abimelec
+  - it-siquem
+  - it-jefte
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: ofra-de-gedeon
+  reference: Jue 9:5
+  date:
+    from: -1449
+    to: -1172
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre c. 1450 y c. 1173 a.e.c. (tiempo narrativo: tras morir Gedeón y antes de Jefté)'
+  note: En la casa de su padre mata a sus hermanos; solo escapa Jotán.
+  reason: 'Jue 9:5 dice que va a la casa paterna en Ofrá y mata a los 70 hijos de Jerubaal sobre una piedra. Suceso ancla:
+    abimelec-mata-a-sus-hermanos-en-ofra (entre Gedeón y Jefté, c. 1173, según Perspicacia «Jefté»).'
+  sources:
+  - jueces-9
+  - it-ofra
+  - it-abimelec
+  - it-jefte
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: siquem
+  reference: Jue 9:6
+  date:
+    from: -1449
+    to: -1172
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre c. 1450 y c. 1173 a.e.c. (tiempo narrativo: tras morir Gedeón y antes de Jefté)'
+  note: Llegada. Lo proclaman rey junto al árbol grande.
+  reason: 'Jue 9:6: los líderes de Siquem y Bet-Miló lo hacen rey junto a la columna de la ciudad. Suceso ancla: abimelec-es-hecho-rey-en-siquem
+    (entre Gedeón y Jefté, c. 1173, según Perspicacia «Jefté»).'
+  sources:
+  - jueces-9
+  - it-abimelec
+  - it-siquem
+  - it-jefte
+  checked_on: '2026-09-30'
+  status: verified

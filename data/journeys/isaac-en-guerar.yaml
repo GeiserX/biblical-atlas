@@ -1,0 +1,167 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: isaac-en-guerar
+name: Isaac en tierra filistea
+person: isaac
+reference: Gé 25:11; 26:1-33
+date:
+  from: -1842
+  to: -1780
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1843 y 1781 a.e.c. (tiempo narrativo: después de la muerte de Abrahán y antes de que Jacob huya a Harán)'
+companions:
+- rebeca
+summary: Por otra hambre, Isaac va a Guerar en vez de bajar a Egipto. La envidia de los filisteos lo aparta al valle, donde
+  reabre los pozos de su padre y cava Ésec, Sitná y Rehobot; luego sube a Beer-Seba.
+reason: Gé 25:11 y 26:1-33 dan las etapas en orden. Todos sus sucesos van entre la muerte de Abrahán (1843 a.e.c.) y la huida
+  de Jacob (1781 a.e.c.), sin año propio.
+sources:
+- genesis-25
+- genesis-26
+- it-isaac
+- it-abimelec
+- it-guerar
+- it-esec
+- it-sitna
+- it-rehobot
+- it-beer-seba
+- it-beer-lahai-roi
+- si-3
+checked_on: '2026-09-30'
+status: verified
+stops:
+- order: 1
+  place: beer-lahai-roi
+  reference: Gé 25:11
+  date:
+    from: -1842
+    to: -1780
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1843 y 1781 a.e.c. (tiempo narrativo: después de la muerte de Abrahán y antes de que Jacob huya a Harán)'
+  note: Vive allí tras la muerte de Abrahán. Sin punto en el mapa.
+  reason: 'Gé 25:11 dice que, muerto su padre, Isaac vivía cerca de Beer-Lahái-Roí. Sin suceso propio: va antes de los de
+    Guerar.'
+  sources:
+  - genesis-25
+  - it-beer-lahai-roi
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: guerar
+  reference: Gé 26:1-16
+  date:
+    from: -1842
+    to: -1780
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1843 y 1781 a.e.c. (tiempo narrativo: después de la muerte de Abrahán y antes de que Jacob huya a Harán)'
+  note: Dice que Rebeca es su hermana y Abimélec lo descubre. Siembra y se hace muy rico. Sin punto en el mapa.
+  reason: Gé 26:1, 6 lo lleva a Guerar por el hambre. Fecha narrativa de los sucesos de la promesa confirmada y de Abimélec
+    con Rebeca.
+  sources:
+  - genesis-26
+  - it-guerar
+  - it-abimelec
+  - it-isaac
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: valle-de-guerar
+  reference: Gé 26:17-19
+  date:
+    from: -1842
+    to: -1780
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1843 y 1781 a.e.c. (tiempo narrativo: después de la muerte de Abrahán y antes de que Jacob huya a Harán)'
+  note: Reabre los pozos que había cavado Abrahán y les devuelve sus nombres.
+  reason: Gé 26:16, 17 dice que Abimélec lo alejó y que acampó en el valle de Guerar. Fecha narrativa del suceso «Isaac reabre
+    los pozos de Abrahán».
+  sources:
+  - genesis-26
+  - it-isaac
+  checked_on: '2026-09-30'
+  status: verified
+- order: 4
+  place: esec
+  reference: Gé 26:20
+  date:
+    from: -1842
+    to: -1780
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1843 y 1781 a.e.c. (tiempo narrativo: después de la muerte de Abrahán y antes de que Jacob huya a Harán)'
+  note: Pozo disputado por los pastores de Guerar. Sin punto en el mapa.
+  reason: Gé 26:20 da nombre al pozo por la pelea. Misma fecha narrativa.
+  sources:
+  - genesis-26
+  - it-esec
+  checked_on: '2026-09-30'
+  status: verified
+- order: 5
+  place: sitna
+  reference: Gé 26:21
+  date:
+    from: -1842
+    to: -1780
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1843 y 1781 a.e.c. (tiempo narrativo: después de la muerte de Abrahán y antes de que Jacob huya a Harán)'
+  note: Segundo pozo disputado. Sin punto en el mapa.
+  reason: Gé 26:21 da nombre al segundo pozo. Misma fecha narrativa.
+  sources:
+  - genesis-26
+  - it-sitna
+  checked_on: '2026-09-30'
+  status: verified
+- order: 6
+  place: rehobot-pozo-de-isaac
+  reference: Gé 26:22
+  date:
+    from: -1842
+    to: -1780
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1843 y 1781 a.e.c. (tiempo narrativo: después de la muerte de Abrahán y antes de que Jacob huya a Harán)'
+  note: Ya nadie pelea por él. Sin punto en el mapa.
+  reason: Gé 26:22 dice que se apartó de allí, cavó otro pozo y lo llamó Rehobot. Misma fecha narrativa.
+  sources:
+  - genesis-26
+  - it-rehobot
+  checked_on: '2026-09-30'
+  status: verified
+- order: 7
+  place: beer-seba
+  reference: Gé 26:23-33
+  date:
+    from: -1842
+    to: -1780
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1843 y 1781 a.e.c. (tiempo narrativo: después de la muerte de Abrahán y antes de que Jacob huya a Harán)'
+  note: Jehová se le aparece de noche; después hace un pacto de paz con Abimélec.
+  reason: Gé 26:23 dice que subió de allí a Beer-Seba. Fecha narrativa de los sucesos de la aparición y del pacto con Abimélec.
+  sources:
+  - genesis-26
+  - it-beer-seba
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified

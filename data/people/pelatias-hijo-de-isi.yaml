@@ -1,0 +1,43 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: pelatias-hijo-de-isi
+name: Pelatías
+names:
+- name: Pelatías
+perspicacia: 1200003420#1
+disambiguation: Pelatías hijo de Isí, simeonita del monte Seír; no Pelatías hijo de Benaya, al que Ezequiel ve en visión,
+  ni los otros dos de Perspicacia.
+date:
+  from: -745
+  to: -715
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 746 y 716 a.e.c. (tiempo narrativo: probablemente en el reinado de Ezequías)'
+summary: Simeonita, hijo de Isí. Con sus hermanos Nearías, Refayá y Uziel guió a 500 hombres al monte Seír, donde acabaron
+  con los amalequitas que quedaban y se asentaron.
+reason: Perspicacia «Pelatías», núm. 1, lo sitúa probablemente en el reinado de Ezequías; 1Cr 4:42, 43.
+sources:
+- it-pelatias
+- 1-cronicas-4
+- it-ezequias
+- tnm-a6-b
+links:
+- title: 'Perspicacia: «Pelatías»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003420
+  type: perspicacia
+- title: 1 Crónicas 4 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/13/4
+  type: bible
+relations:
+- type: lived_in
+  place: seir
+  inferred: false
+  sources:
+  - 1-cronicas-4
+  - it-pelatias
+  reason: '1Cr 4:42, 43: los simeonitas que él guiaba se quedaron a vivir en el monte Seír.'
+  checked_on: '2026-09-30'
+  status: verified
+checked_on: '2026-09-30'
+status: verified

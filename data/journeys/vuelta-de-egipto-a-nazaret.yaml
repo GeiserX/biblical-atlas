@@ -1,0 +1,106 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: vuelta-de-egipto-a-nazaret
+name: De Egipto a Nazaret
+person: jose-esposo-de-maria
+reference: Mt 2:19-23; Lu 2:39
+date:
+  from: 0
+  to: 1
+  precision: range
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: entre 1 a.e.c. y 1 e.c.
+narrative_order:
+  series: jose-esposo-de-maria
+  order: 3
+companions:
+- maria-madre-de-jesus
+- jesus
+summary: Muerto Herodes, otro sueño manda a José volver a la tierra de Israel. Como en Judea reina Arquelao, se aparta a Galilea
+  y se instala con la familia en Nazaret.
+reason: Mt 2:19-23 da las etapas en orden, y Lu 2:39 confirma la llegada a Nazaret. Fecha del suceso regreso-a-nazaret. La
+  nota de Mt 2:15 pone la muerte de Herodes probablemente en 1 a.e.c.
+sources:
+- mateo-2
+- lucas-2
+- tnm-a7-a
+- jy-cap-8
+- it-arquelao
+- it-nazaret
+checked_on: '2026-09-30'
+status: verified
+stops:
+- order: 1
+  place: egipto
+  reference: Mt 2:19, 20
+  date:
+    from: 0
+    to: 1
+    precision: range
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: entre 1 a.e.c. y 1 e.c.
+  note: null
+  reason: 'Mt 2:19, 20: el ángel se aparece a José, que sigue en Egipto, cuando ya ha muerto Herodes. Fecha del suceso regreso-a-nazaret.'
+  sources:
+  - mateo-2
+  - tnm-a7-a
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: israel
+  reference: Mt 2:21
+  date:
+    from: 0
+    to: 1
+    precision: range
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: entre 1 a.e.c. y 1 e.c.
+  note: El texto dice «la tierra de Israel», sin ciudad. El lugar no tiene punto en el mapa.
+  reason: Mt 2:21 dice que regresa a la tierra de Israel. Fecha del suceso regreso-a-nazaret.
+  sources:
+  - mateo-2
+  - tnm-a7-a
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: galilea
+  reference: Mt 2:22
+  date:
+    from: 0
+    to: 1
+    precision: range
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: entre 1 a.e.c. y 1 e.c.
+  note: Evita Judea, donde gobierna Arquelao, hijo de Herodes.
+  reason: 'Mt 2:22: por miedo a Arquelao y avisado en un sueño, se retira al territorio de Galilea. Fecha del suceso regreso-a-nazaret.'
+  sources:
+  - mateo-2
+  - tnm-a7-a
+  checked_on: '2026-09-30'
+  status: verified
+- order: 4
+  place: nazaret
+  reference: Mt 2:23; Lu 2:39
+  date:
+    from: 0
+    to: 1
+    precision: range
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: entre 1 a.e.c. y 1 e.c.
+  note: null
+  reason: Mt 2:23 y Lu 2:39 lo dejan viviendo en Nazaret. Fecha del suceso regreso-a-nazaret.
+  sources:
+  - mateo-2
+  - lucas-2
+  - tnm-a7-a
+  checked_on: '2026-09-30'
+  status: verified

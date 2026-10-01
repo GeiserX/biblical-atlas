@@ -1,0 +1,76 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: noemi-vuelve-a-belen
+name: Noemí y Rut vuelven a Belén
+person: noemi
+reference: Rut 1:6-22
+date:
+  from: -1472
+  to: -1300
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1473 y 1301 a.e.c. (tiempo narrativo: en tiempos de los jueces y en vida de Boaz)'
+companions:
+- rut
+summary: Viuda y sin hijos, Noemí deja Moab al oír que Jehová ha dado pan a su pueblo. Orpá se vuelve, pero Rut sigue con
+  ella, y llegan a Belén cuando empieza la siega de la cebada.
+reason: 'Rut 1:6-22 da la salida y la llegada. Sin año en jw.org: tras la entrada en Canaán (1473, estudio 3) y en vida de
+  Boaz, del siglo XIV a.e.c. (Perspicacia «Boaz, I»).'
+sources:
+- rut-1
+- si-3
+- tnm-b15
+- it-noemi
+- it-rut
+- it-orpa
+- it-rut-libro
+- it-boaz
+checked_on: '2026-09-30'
+status: verified
+stops:
+- order: 1
+  place: moab
+  reference: Rut 1:6-18
+  date:
+    from: -1472
+    to: -1300
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1473 y 1301 a.e.c. (tiempo narrativo: en tiempos de los jueces y en vida de Boaz)'
+  note: Salida. En el camino Orpá se vuelve; el texto no nombra el sitio.
+  reason: 'Rut 1:6, 7: Noemí sale de donde vivía, en Moab, al saber que hay alimento en Judá. Suceso ancla: orpa-vuelve-y-rut-se-queda
+    (tras la entrada en Canaán, 1473, y en vida de Boaz, siglo XIV).'
+  sources:
+  - rut-1
+  - it-noemi
+  - it-orpa
+  - it-boaz
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: belen
+  reference: Rut 1:19-22
+  date:
+    from: -1472
+    to: -1300
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1473 y 1301 a.e.c. (tiempo narrativo: en tiempos de los jueces y en vida de Boaz)'
+  note: Llegada, al empezar la siega de la cebada.
+  reason: 'Rut 1:19, 22: las dos llegan a Belén y la ciudad se alborota. La cebada se siega hacia nisán (tabla B15). Suceso
+    ancla: noemi-y-rut-llegan-a-belen (tras la entrada en Canaán, 1473, y en vida de Boaz, siglo XIV).'
+  sources:
+  - rut-1
+  - it-noemi
+  - it-rut
+  - tnm-b15
+  - it-boaz
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified

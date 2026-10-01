@@ -1,0 +1,90 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: jehosafat-va-con-acab-a-ramot-galaad
+name: Jehosafat va con Acab a Ramot-Galaad
+person: jehosafat
+reference: 1Re 22:1-38; 2Cr 18:1–19:1
+date:
+  from: -919
+  to: -919
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 920 a.e.c.
+narrative_order:
+  series: jehosafat
+  order: 1
+companions: []
+summary: Jehosafat baja a Samaria a visitar a Acab y acepta ir con él contra los sirios. En Ramot-Galaad los carros lo confunden
+  con el rey de Israel, pero se salva. Acab muere, y Jehosafat vuelve ileso a Jerusalén.
+reason: 1Re 22 y 2Cr 18:1-19:1 cuentan la visita, la batalla y la vuelta. Fechas de los sucesos acab-y-jehosafat-consultan-a-los-profetas
+  y muerte-de-acab.
+sources:
+- 1-reyes-22
+- 2-cronicas-18
+- 2-cronicas-19
+- it-jehosafat
+- it-ramot-galaad
+- it-micaya
+- tnm-a6-a
+checked_on: '2026-09-30'
+status: verified
+stops:
+- order: 1
+  place: samaria
+  reference: 1Re 22:2-28; 2Cr 18:2-27
+  date:
+    from: -919
+    to: -919
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 920 a.e.c.
+  note: Consultan a los profetas; Micaya anuncia la derrota.
+  reason: 2Cr 18:2 lo hace bajar a Samaria y 1Re 22:10 lo sienta a la puerta de la ciudad. Fecha del suceso acab-y-jehosafat-consultan-a-los-profetas.
+  sources:
+  - 1-reyes-22
+  - 2-cronicas-18
+  - it-micaya
+  - tnm-a6-a
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: ramot-galaad
+  reference: 1Re 22:29-36; 2Cr 18:28-34
+  date:
+    from: -919
+    to: -919
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 920 a.e.c.
+  note: Va con sus ropas de rey y los sirios lo atacan por error.
+  reason: '1Re 22:29 y 2Cr 18:28: suben los dos reyes a Ramot-Galaad. Fecha del suceso muerte-de-acab.'
+  sources:
+  - 1-reyes-22
+  - 2-cronicas-18
+  - it-ramot-galaad
+  - tnm-a6-a
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: jerusalen
+  reference: 2Cr 19:1
+  date:
+    from: -919
+    to: -919
+    precision: year
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'c. 920 a.e.c. (tiempo narrativo: justo después de la batalla)'
+  note: Allí le sale al paso el vidente Jehú.
+  reason: '2Cr 19:1 lo devuelve a su casa en Jerusalén. Fecha: la de muerte-de-acab, porque vuelve tras la batalla.'
+  sources:
+  - 2-cronicas-19
+  - tnm-a6-a
+  checked_on: '2026-09-30'
+  status: verified

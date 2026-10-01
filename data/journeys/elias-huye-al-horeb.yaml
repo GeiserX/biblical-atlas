@@ -1,0 +1,109 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: elias-huye-al-horeb
+name: Elías huye al Horeb
+person: elias-profeta
+reference: 1Re 19:1-21; Ro 11:2-4
+date:
+  from: -939
+  to: -920
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 940 y 921 a.e.c. (tiempo narrativo: después del Carmelo y antes de la viña de Nabot)'
+narrative_order:
+  series: elias-profeta
+  order: 3
+companions: []
+summary: Jezabel jura matarlo y Elías huye a Beer-Seba. Sigue un día por el desierto y, fortalecido por el pan que le da un
+  ángel, camina cuarenta días hasta el Horeb. Al volver, llama a Eliseo como sucesor.
+reason: 1Re 19:1-21 da las etapas en orden. Fechas de los sucesos jezabel-jura-matar-a-elias, un-angel-alimenta-a-elias-en-el-desierto,
+  jehova-habla-a-elias-en-el-horeb y elias-llama-a-eliseo.
+sources:
+- 1-reyes-19
+- romanos-11
+- it-elias
+- it-horeb
+- it-beer-seba
+- it-abel-mehola
+- tnm-a6-a
+checked_on: '2026-09-30'
+status: verified
+stops:
+- order: 1
+  place: jezreel
+  reference: 1Re 19:1, 2
+  date:
+    from: -939
+    to: -920
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 940 y 921 a.e.c. (tiempo narrativo: después del Carmelo y antes de la viña de Nabot)'
+  note: Recibe la amenaza de Jezabel.
+  reason: 1Re 19:1, 2 sigue a 18:46, que lo deja en Jezreel. Fecha del suceso jezabel-jura-matar-a-elias.
+  sources:
+  - 1-reyes-18
+  - 1-reyes-19
+  - tnm-a6-a
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: beer-seba
+  reference: 1Re 19:3-7
+  date:
+    from: -939
+    to: -920
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 940 y 921 a.e.c. (tiempo narrativo: después del Carmelo y antes de la viña de Nabot)'
+  note: Deja allí a su ayudante. La retama donde lo alimenta el ángel está a un día de camino, en el desierto.
+  reason: 1Re 19:3 dice que llegó a Beer-Seba, en Judá. Fecha del suceso un-angel-alimenta-a-elias-en-el-desierto.
+  sources:
+  - 1-reyes-19
+  - it-beer-seba
+  - tnm-a6-a
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: monte-sinai
+  reference: 1Re 19:8-18
+  date:
+    from: -939
+    to: -920
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 940 y 921 a.e.c. (tiempo narrativo: después del Carmelo y antes de la viña de Nabot)'
+  note: Horeb, nombre que ya tiene la ficha. Pasa la noche en una cueva y oye la voz de Jehová.
+  reason: 1Re 19:8 lo lleva en cuarenta días al Horeb. Fecha del suceso jehova-habla-a-elias-en-el-horeb.
+  sources:
+  - 1-reyes-19
+  - it-horeb
+  - tnm-a6-a
+  checked_on: '2026-09-30'
+  status: verified
+- order: 4
+  place: abel-mehola
+  reference: 1Re 19:19-21
+  date:
+    from: -939
+    to: -920
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 940 y 921 a.e.c. (tiempo narrativo: después del Carmelo y antes de la viña de Nabot)'
+  note: Encuentra a Eliseo arando. Jehová lo había mandado al desierto de Damasco, pero el texto no dice que llegara.
+  reason: 'El texto no nombra el lugar: Abel-Meholá sale de 1Re 19:16 y de Perspicacia «Elías», núm. 1. Fecha del suceso elias-llama-a-eliseo.'
+  sources:
+  - 1-reyes-19
+  - it-elias
+  - it-abel-mehola
+  - tnm-a6-a
+  checked_on: '2026-09-30'
+  status: pending

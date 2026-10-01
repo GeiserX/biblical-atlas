@@ -1,0 +1,69 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: abimelec-va-a-ver-a-isaac
+name: Abimélec va a ver a Isaac
+person: abimelec-de-tiempos-de-isaac
+reference: Gé 26:26-31
+date:
+  from: -1842
+  to: -1780
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1843 y 1781 a.e.c. (tiempo narrativo: después de la muerte de Abrahán y antes de que Jacob huya a Harán)'
+companions:
+- ahuzat
+- ficol-de-tiempos-de-isaac
+summary: El rey de Guerar sale con su consejero Ahuzat y su general Ficol hacia Beer-Seba, donde vive ya Isaac. Le pide un
+  pacto porque ve que Jehová lo bendice; tras el banquete juran y se vuelven en paz.
+reason: Gé 26:26 nombra la salida, Guerar, y los acompañantes; 26:23 y 26:33 sitúan a Isaac en Beer-Seba. Fecha del suceso
+  pacto-de-isaac-con-abimelec.
+sources:
+- genesis-26
+- it-abimelec
+- it-guerar
+- it-beer-seba
+- si-3
+checked_on: '2026-09-30'
+status: verified
+stops:
+- order: 1
+  place: guerar
+  reference: Gé 26:26
+  date:
+    from: -1842
+    to: -1780
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1843 y 1781 a.e.c. (tiempo narrativo: después de la muerte de Abrahán y antes de que Jacob huya a Harán)'
+  note: Salida. Sin punto en el mapa.
+  reason: 'Gé 26:26: Abimélec sale de Guerar, su ciudad, para ir a ver a Isaac. Fecha del suceso pacto-de-isaac-con-abimelec.'
+  sources:
+  - genesis-26
+  - it-abimelec
+  - it-guerar
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: beer-seba
+  reference: Gé 26:26-31
+  date:
+    from: -1842
+    to: -1780
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1843 y 1781 a.e.c. (tiempo narrativo: después de la muerte de Abrahán y antes de que Jacob huya a Harán)'
+  note: Isaac les reprocha que lo echaran; comen juntos, juran el pacto al amanecer y se van en paz. El texto no nombra adónde
+    vuelven.
+  reason: Isaac había subido a Beer-Seba (Gé 26:23) y el pozo Sibá da nombre a la ciudad ese mismo día (26:33). Suceso
+    pacto-de-isaac-con-abimelec.
+  sources:
+  - genesis-26
+  - it-abimelec
+  - it-beer-seba
+  checked_on: '2026-09-30'
+  status: verified

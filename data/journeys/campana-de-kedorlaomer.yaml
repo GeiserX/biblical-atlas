@@ -1,0 +1,222 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: campana-de-kedorlaomer
+name: La campaña de Kedorlaomer
+person: kedorlaomer
+reference: Gé 14:1-16
+date:
+  from: -1942
+  to: -1932
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1943 y 1933 a.e.c. (tiempo narrativo: en los primeros diez años de Abrán en Canaán)'
+companions:
+- amrafel
+- arioc-de-elasar
+- tidal
+summary: Tras la rebelión de las ciudades del distrito, Kedorlaomer y otros tres reyes arrasan pueblos al este del Jordán
+  y en el sur, vencen en Sidim y se llevan a Lot, hasta que Abrán los ataca en Dan.
+reason: Gé 14:5-15 da las etapas en orden. Todos sus sucesos van en los diez primeros años de Abrán en Canaán (estudio 3),
+  sin año propio.
+sources:
+- genesis-14
+- it-kedorlaomer
+- it-asterot-qarnaim
+- it-cam
+- it-save-quiryataim
+- it-seir
+- it-el-paran
+- it-qades
+- it-hazazon-tamar
+- it-sidim
+- it-dan
+- it-hoba
+- si-3
+checked_on: '2026-09-30'
+status: verified
+stops:
+- order: 1
+  place: asterot-carnaim
+  reference: Gé 14:5
+  date:
+    from: -1942
+    to: -1932
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1943 y 1933 a.e.c. (tiempo narrativo: en los primeros diez años de Abrán en Canaán)'
+  note: Vencen a los refaím.
+  reason: Gé 14:5 abre la campaña en Asterot-Carnaim. Fecha narrativa del suceso «Kedorlaomer y sus aliados arrasan la región».
+  sources:
+  - genesis-14
+  - it-asterot-qarnaim
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: cam
+  reference: Gé 14:5
+  date:
+    from: -1942
+    to: -1932
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1943 y 1933 a.e.c. (tiempo narrativo: en los primeros diez años de Abrán en Canaán)'
+  note: Vencen a los zuzim.
+  reason: Gé 14:5 nombra Cam como segunda victoria. Misma fecha narrativa.
+  sources:
+  - genesis-14
+  - it-cam
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: save-quiryataim
+  reference: Gé 14:5
+  date:
+    from: -1942
+    to: -1932
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1943 y 1933 a.e.c. (tiempo narrativo: en los primeros diez años de Abrán en Canaán)'
+  note: Vencen a los emim.
+  reason: Gé 14:5 nombra Savé-Quiryataim como tercera victoria. Misma fecha narrativa.
+  sources:
+  - genesis-14
+  - it-save-quiryataim
+  checked_on: '2026-09-30'
+  status: verified
+- order: 4
+  place: seir
+  reference: Gé 14:6
+  date:
+    from: -1942
+    to: -1932
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1943 y 1933 a.e.c. (tiempo narrativo: en los primeros diez años de Abrán en Canaán)'
+  note: Vencen a los horeos en sus montañas.
+  reason: Gé 14:6 lleva la campaña a las montañas de Seír. Misma fecha narrativa.
+  sources:
+  - genesis-14
+  - it-seir
+  checked_on: '2026-09-30'
+  status: verified
+- order: 5
+  place: el-paran
+  reference: Gé 14:6
+  date:
+    from: -1942
+    to: -1932
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1943 y 1933 a.e.c. (tiempo narrativo: en los primeros diez años de Abrán en Canaán)'
+  note: El punto más al sur, junto al desierto. Sin punto en el mapa.
+  reason: Gé 14:6 dice que llegaron hasta El-Parán. Misma fecha narrativa.
+  sources:
+  - genesis-14
+  - it-el-paran
+  checked_on: '2026-09-30'
+  status: verified
+- order: 6
+  place: cades
+  reference: Gé 14:7
+  date:
+    from: -1942
+    to: -1932
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1943 y 1933 a.e.c. (tiempo narrativo: en los primeros diez años de Abrán en Canaán)'
+  note: El texto la llama también En-Mispat. Desde allí dominan el territorio amalequita. Sin punto en el mapa.
+  reason: Gé 14:7 dice que dieron la vuelta y llegaron a En-Mispat, que es Cadés. Misma fecha narrativa.
+  sources:
+  - genesis-14
+  - it-qades
+  checked_on: '2026-09-30'
+  status: verified
+- order: 7
+  place: en-guedi
+  reference: Gé 14:7
+  date:
+    from: -1942
+    to: -1932
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1943 y 1933 a.e.c. (tiempo narrativo: en los primeros diez años de Abrán en Canaán)'
+  note: El texto dice Hazazón-Tamar, que 2Cr 20:2 iguala con En-Guedí; Perspicacia admite otro sitio más al sur. Vencen a
+    los amorreos.
+  reason: Gé 14:7 nombra Hazazón-Tamar tras Cadés. Misma fecha narrativa.
+  sources:
+  - genesis-14
+  - it-hazazon-tamar
+  checked_on: '2026-09-30'
+  status: verified
+- order: 8
+  place: valle-de-sidim
+  reference: Gé 14:8-12
+  date:
+    from: -1942
+    to: -1932
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1943 y 1933 a.e.c. (tiempo narrativo: en los primeros diez años de Abrán en Canaán)'
+  note: Derrotan a los cinco reyes, saquean Sodoma y Gomorra y capturan a Lot. Sin punto en el mapa.
+  reason: Gé 14:8-12 pone la batalla en el valle de Sidim. Fecha narrativa del suceso «Batalla del valle de Sidim y captura
+    de Lot».
+  sources:
+  - genesis-14
+  - it-sidim
+  checked_on: '2026-09-30'
+  status: verified
+- order: 9
+  place: dan
+  reference: Gé 14:14, 15
+  date:
+    from: -1942
+    to: -1932
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1943 y 1933 a.e.c. (tiempo narrativo: en los primeros diez años de Abrán en Canaán)'
+  note: Abrán los sorprende de noche.
+  reason: Gé 14:14 dice que Abrán los alcanzó en Dan. Fecha narrativa del suceso «Abrán rescata a Lot».
+  sources:
+  - genesis-14
+  - it-dan
+  checked_on: '2026-09-30'
+  status: verified
+- order: 10
+  place: hoba
+  reference: Gé 14:15
+  date:
+    from: -1942
+    to: -1932
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1943 y 1933 a.e.c. (tiempo narrativo: en los primeros diez años de Abrán en Canaán)'
+  note: Huyen hasta allí, al norte de Damasco. Sin punto en el mapa.
+  reason: Gé 14:15 dice que Abrán los persiguió hasta Hobá. Misma fecha narrativa.
+  sources:
+  - genesis-14
+  - it-hoba
+  - it-kedorlaomer
+  checked_on: '2026-09-30'
+  status: verified

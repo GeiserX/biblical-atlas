@@ -1,0 +1,177 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: viaje-de-los-doce-espias
+name: Los doce espías recorren Canaán
+person: josue-hijo-de-nun
+reference: Nú 13:1-33; Dt 1:22-25
+date:
+  from: -1511
+  to: -1511
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 1512 a.e.c. (40 días, en la época de las primeras uvas)
+companions:
+- caleb-hijo-de-jefune
+- samua-hijo-de-zacur
+- safat-hijo-de-hori
+- igal-hijo-de-jose
+- palti-hijo-de-rafu
+- gadiel
+- gaddi
+- amiel-hijo-de-guemali
+- setur
+- nahbi
+- gueuel
+summary: Moisés envía a doce jefes, uno por tribu, a explorar Canaán. En 40 días van del desierto de Zin a Rehob, ven a los
+  anaquim en Hebrón y vuelven a Cadés con un gran racimo de Escol.
+reason: Nú 13 da el encargo, el recorrido y la vuelta, y Dt 1:22-25 lo repite. Perspicacia «Espías» fecha el envío en 1512
+  a.e.c. Josué va como dueño del viaje y los otros once como acompañantes.
+sources:
+- numeros-13
+- deuteronomio-1
+- si-3
+- it-espias
+- it-escol
+- it-rehob
+- tnm-b15
+checked_on: '2026-09-30'
+status: verified
+narrative_order:
+  series: josue-hijo-de-nun
+  order: 1
+stops:
+- order: 1
+  place: cades
+  reference: Nú 13:1-20; Dt 1:22, 23
+  date:
+    from: -1511
+    to: -1511
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 1512 a.e.c.
+  note: Moisés elige a un jefe por tribu y les explica qué deben mirar.
+  reason: Nú 13:3 los envía desde el desierto de Parán, y 13:26 llama Cadés a ese campamento. Perspicacia «Espías» fecha el
+    envío en 1512 a.e.c.; suceso «Moisés envía a los doce espías a Canaán».
+  sources:
+  - numeros-13
+  - deuteronomio-1
+  - it-espias
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: desierto-de-zin
+  reference: Nú 13:21
+  date:
+    from: -1511
+    to: -1511
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 1512 a.e.c.
+  note: Extremo sur del recorrido.
+  reason: Nú 13:21 da el desierto de Zin como punto de arranque de la exploración. Fecha del suceso «Los espías recorren Canaán
+    y cortan un racimo en Escol».
+  sources:
+  - numeros-13
+  - it-espias
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: negueb
+  reference: Nú 13:17, 22
+  date:
+    from: -1511
+    to: -1511
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 1512 a.e.c.
+  note: null
+  reason: Moisés les manda subir al Négueb (13:17) y 13:22 dice que lo hicieron. Fecha del suceso «Los espías recorren Canaán
+    y cortan un racimo en Escol».
+  sources:
+  - numeros-13
+  checked_on: '2026-09-30'
+  status: verified
+- order: 4
+  place: hebron
+  reference: Nú 13:22
+  date:
+    from: -1511
+    to: -1511
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 1512 a.e.c.
+  note: Allí viven Ahimán, Sesái y Talmái, de los anaquim.
+  reason: 'Nú 13:22: desde el Négueb llegan a Hebrón. Fecha del suceso «Los espías recorren Canaán y cortan un racimo en Escol».'
+  sources:
+  - numeros-13
+  checked_on: '2026-09-30'
+  status: verified
+- order: 5
+  place: valle-de-escol
+  reference: Nú 13:23, 24; Dt 1:24, 25
+  date:
+    from: -1511
+    to: -1511
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 1512 a.e.c.
+  note: Cortan un racimo que llevan entre dos en una barra, además de granadas e higos.
+  reason: Nú 13:23 y Dt 1:24 nombran el valle de Escol. Perspicacia «Escol» lo sitúa tal vez un poco al norte de Hebrón. Fecha
+    del suceso «Los espías recorren Canaán y cortan un racimo en Escol».
+  sources:
+  - numeros-13
+  - deuteronomio-1
+  - it-escol
+  checked_on: '2026-09-30'
+  status: verified
+- order: 6
+  place: rehob
+  reference: Nú 13:21
+  date:
+    from: -1511
+    to: -1511
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 1512 a.e.c.
+  note: Cerca de Lebó-Hamat.
+  reason: 'Nú 13:21 da Rehob como extremo norte. El texto no dice cuándo llegaron: el orden tras Escol es nuestro, y Perspicacia
+    «Espías» cree que se repartieron por parejas.'
+  sources:
+  - numeros-13
+  - it-rehob
+  - it-espias
+  checked_on: '2026-09-30'
+  status: pending
+- order: 7
+  place: cades
+  reference: Nú 13:25-33; Dt 1:25
+  date:
+    from: -1511
+    to: -1511
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 1512 a.e.c.
+  note: Enseñan el fruto; el informe de diez de ellos asusta al pueblo.
+  reason: 'Nú 13:25, 26: a los 40 días vuelven a Cadés. Fecha del suceso «Los espías vuelven a Cadés con un informe que asusta
+    al pueblo».'
+  sources:
+  - numeros-13
+  - deuteronomio-1
+  - it-espias
+  checked_on: '2026-09-30'
+  status: verified

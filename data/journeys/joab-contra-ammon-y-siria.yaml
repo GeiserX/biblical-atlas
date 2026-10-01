@@ -1,0 +1,92 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: joab-contra-ammon-y-siria
+name: Joab contra ammonitas y sirios
+person: joab-hijo-de-zeruya
+reference: 2Sa 10:7-14; 1Cr 19:8-15
+date:
+  from: -1069
+  to: -1039
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1070 y c. 1040 a.e.c. (tiempo narrativo: David ya reina en Jerusalén)'
+companions:
+- abisai
+summary: David envía a Joab con el ejército contra los ammonitas y los sirios que ellos han pagado. Joab vence a los sirios
+  ante Medebá, Abisái hace huir a los ammonitas a su ciudad y Joab vuelve a Jerusalén.
+reason: '2Sa 10:7-14 y 1Cr 19:7-15. Perspicacia «Medebá»: Joab vence a los sirios acampados ante Medebá; «Rabá», núm. 1: la
+  ciudad de Abisái era probablemente Rabá. Entre 1070 y c. 1040 a.e.c.'
+sources:
+- 2-samuel-10
+- 1-cronicas-19
+- si-3
+- it-joab
+- it-medeba
+- it-raba
+checked_on: '2026-09-30'
+status: verified
+narrative_order:
+  series: joab-hijo-de-zeruya
+  order: 2
+stops:
+- order: 1
+  place: jerusalen
+  reference: 2Sa 10:7
+  date:
+    from: -1069
+    to: -1039
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1070 y c. 1040 a.e.c. (tiempo narrativo: David ya reina en Jerusalén)'
+  note: David lo envía.
+  reason: '2Sa 10:7 y 10:14: David envía a Joab, que al final vuelve a Jerusalén; de allí sale. Fecha: la del suceso joab-y-abisai-vencen-a-ammonitas-y-sirios.'
+  sources:
+  - 2-samuel-10
+  - it-joab
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: medeba
+  reference: 2Sa 10:8-14; 1Cr 19:7-15
+  date:
+    from: -1069
+    to: -1039
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1070 y c. 1040 a.e.c. (tiempo narrativo: David ya reina en Jerusalén)'
+  note: Abisái se enfrenta a los ammonitas ante la puerta de su ciudad, que Perspicacia cree que era Rabá.
+  reason: '1Cr 19:7 pone a los sirios acampados ante Medebá, y Perspicacia «Medebá» dice que allí los venció Joab. Fecha:
+    la del suceso joab-y-abisai-vencen-a-ammonitas-y-sirios.'
+  sources:
+  - 2-samuel-10
+  - 1-cronicas-19
+  - it-medeba
+  - it-raba
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: jerusalen
+  reference: 2Sa 10:14
+  date:
+    from: -1069
+    to: -1039
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1070 y c. 1040 a.e.c. (tiempo narrativo: David ya reina en Jerusalén)'
+  note: null
+  reason: '2Sa 10:14: cuando los ammonitas se encierran en su ciudad, Joab regresa a Jerusalén. Fecha: la del suceso joab-y-abisai-vencen-a-ammonitas-y-sirios.'
+  sources:
+  - 2-samuel-10
+  - it-joab
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified

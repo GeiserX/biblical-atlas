@@ -1,0 +1,88 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: tito-de-creta-a-dalmacia
+name: Tito, de Creta a Nicópolis y Dalmacia
+person: tito
+reference: Tit 1:5; 3:12; 2Ti 4:10
+date:
+  from: 61
+  to: 65
+  precision: range
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 61-65 e.c.
+narrative_order:
+  series: tito
+  order: 2
+companions: []
+summary: Pablo deja a Tito en Creta para corregir lo que falta y nombrar ancianos, y luego le pide que vaya a verlo a Nicópolis.
+  En el segundo encierro de Pablo, Tito se marcha a Dalmacia.
+reason: Perspicacia «Tito» fecha Creta entre 61 y 64 (suceso tito-queda-en-creta) y la ida a Dalmacia hacia 65 (suceso segundo-encierro-en-roma).
+sources:
+- tito-1
+- tito-3
+- 2-timoteo-4
+- it-tito-persona
+- it-dalmacia
+- it-nicopolis
+checked_on: '2026-09-30'
+status: verified
+stops:
+- order: 1
+  place: creta
+  reference: Tit 1:5
+  date:
+    from: 61
+    to: 64
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'dentro de c. 61-64 e.c. (tiempo narrativo: orden cierto, fecha aproximada)'
+  note: Una tarea pasajera, según Perspicacia.
+  reason: 'Tit 1:5: Pablo lo dejó en Creta para nombrar ancianos. Suceso tito-queda-en-creta, dentro de 61-64.'
+  sources:
+  - tito-1
+  - it-tito-persona
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: nicopolis
+  reference: Tit 3:12
+  date:
+    from: 61
+    to: 64
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'dentro de c. 61-64 e.c. (tiempo narrativo: orden cierto, fecha aproximada)'
+  note: Pablo pensaba pasar allí el invierno.
+  reason: 'Tit 3:12 solo le pide que vaya. La nota de estudio de 2Ti 4:10 cree que estuvo allí con Pablo: deducción de jw.org
+    (regla 2a).'
+  sources:
+  - tito-3
+  - 2-timoteo-4
+  - it-nicopolis
+  checked_on: '2026-09-30'
+  status: pending
+- order: 3
+  place: ilirico
+  reference: 2Ti 4:10
+  date:
+    from: 65
+    to: 65
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 65 e.c.
+  note: Dalmacia, la parte sur de Ilírico; quizá siguió allí como misionero.
+  reason: '2Ti 4:10: Tito se ha ido a Dalmacia. Perspicacia «Tito» lo sitúa en el segundo encierro de Pablo, suceso segundo-encierro-en-roma,
+    c. 65.'
+  sources:
+  - 2-timoteo-4
+  - it-tito-persona
+  - it-dalmacia
+  checked_on: '2026-09-30'
+  status: verified

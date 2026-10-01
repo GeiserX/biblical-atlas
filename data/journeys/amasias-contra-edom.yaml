@@ -1,0 +1,87 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: amasias-contra-edom
+name: Amasías contra Edom
+person: amasias
+reference: 2Re 14:7; 2Cr 25:5-16
+date:
+  from: -857
+  to: -843
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 858 y c. 844 a.e.c. (tiempo narrativo: reinando Amasías, antes de su batalla con Jehoás de Israel)'
+companions: []
+summary: Amasías despide a los soldados que había pagado en Israel, lleva su ejército al valle de la Sal, mata a 10.000 de
+  Seír y toma Sela. Vuelve con los dioses de Edom y se pone a adorarlos.
+reason: 2Re 14:7 y 2Cr 25:5-16 dan el valle, Sela y la vuelta. Fecha del suceso amasias-derrota-a-edom-en-el-valle-de-la-sal.
+sources:
+- 2-reyes-14
+- 2-cronicas-25
+- it-amasias
+- it-valle-de-la-sal
+- it-sela
+- tnm-a6-a
+checked_on: '2026-09-30'
+status: verified
+narrative_order:
+  series: amasias
+  order: 1
+stops:
+- order: 1
+  place: valle-de-la-sal
+  reference: 2Re 14:7; 2Cr 25:11
+  date:
+    from: -857
+    to: -843
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 858 y c. 844 a.e.c. (tiempo narrativo: reinando Amasías, antes de su batalla con Jehoás de Israel)'
+  note: null
+  reason: 2Re 14:7 y 2Cr 25:11 ponen la batalla en el valle de la Sal. Suceso amasias-derrota-a-edom-en-el-valle-de-la-sal.
+  sources:
+  - 2-reyes-14
+  - 2-cronicas-25
+  - it-valle-de-la-sal
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: sela-de-edom
+  reference: 2Re 14:7; 2Cr 25:12
+  date:
+    from: -857
+    to: -843
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 858 y c. 844 a.e.c. (tiempo narrativo: reinando Amasías, antes de su batalla con Jehoás de Israel)'
+  note: Le cambia el nombre a Jocteel. No se sabe si es la Sela de Isaías 16:1.
+  reason: '2Re 14:7: en esa guerra conquista Sela; Perspicacia «Sela», núm. 2. Mismo suceso ancla.'
+  sources:
+  - 2-reyes-14
+  - it-sela
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: jerusalen
+  reference: 2Cr 25:14-16
+  date:
+    from: -857
+    to: -843
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 858 y c. 844 a.e.c. (tiempo narrativo: reinando Amasías, antes de su batalla con Jehoás de Israel)'
+  note: Allí lo reprende un profeta por los dioses de Seír.
+  reason: 2Cr 25:14 dice que regresó de la batalla, sin nombrar adónde; Jerusalén es su capital (2Re 14:2). Parada deducida.
+    Mismo suceso ancla.
+  sources:
+  - 2-cronicas-25
+  - 2-reyes-14
+  - it-amasias
+  checked_on: '2026-09-30'
+  status: pending

@@ -1,0 +1,55 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: seraya-hijo-de-nerias
+name: Seraya
+names:
+- name: Seraya
+perspicacia: 1200003904#5
+disambiguation: El hermano de Baruc que acompañó a Sedequías a Babilonia; no el sacerdote principal ni el jefe militar hijo
+  de Tanhúmet.
+distinct_from:
+- seraya-hijo-de-azarias
+- seraya-hijo-de-tanhumet
+- seraya-secretario-de-david
+date:
+  from: -613
+  to: -613
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: 614 a.e.c.
+summary: Hijo de Nerías y funcionario del rey Sedequías. Viajó con él a Babilonia llevando un rollo de Jeremías contra esa
+  ciudad, que tenía que leer y hundir en el Éufrates.
+reason: Perspicacia «Seraya», núm. 5, que fecha el viaje en 614 a.e.c., cuarto año de Sedequías; Jer 51:59-64.
+sources:
+- it-seraya
+- jeremias-51
+links:
+- title: 'Perspicacia: «Seraya»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003904
+  type: perspicacia
+- title: Jeremías 51 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/24/51
+  type: bible
+relations:
+- type: accompanies
+  person: sedequias
+  word: companion
+  date:
+    from: -613
+    to: -613
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: 614 a.e.c.
+  inferred: false
+  sources:
+  - jeremias-51
+  - it-seraya
+  reason: 'Jer 51:59: va con el rey Sedequías a Babilonia en su cuarto año. Perspicacia «Seraya», núm. 5, lo fecha en 614
+    a.e.c.'
+  checked_on: '2026-09-30'
+  status: verified
+checked_on: '2026-09-30'
+status: verified

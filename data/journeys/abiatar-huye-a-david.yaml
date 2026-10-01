@@ -1,0 +1,73 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: abiatar-huye-a-david
+name: Abiatar huye a David
+person: abiatar
+reference: 1Sa 22:20–23:6
+date:
+  from: -1106
+  to: -1077
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1107 y 1078 a.e.c. (tiempo narrativo: David huye de Saúl, que muere en 1078)'
+companions: []
+summary: Cuando Doeg mata a los sacerdotes de Nob, Abiatar, hijo de Ahimélec, es el único que escapa. Huye con el efod hasta
+  Queilá y se queda con David.
+reason: 1Sa 22:20 y 23:6 cuentan la huida de Nob a Queilá; Perspicacia «Abiatar», párr. 2 y 3. Fechas de los sucesos doeg-arrasa-nob
+  y abiatar-escapa-y-se-une-a-david.
+sources:
+- 1-samuel-22
+- 1-samuel-23
+- it-abiatar
+- it-nob
+- it-queila
+- si-3
+- it-jonatan
+checked_on: '2026-09-30'
+status: verified
+stops:
+- order: 1
+  place: nob
+  reference: 1Sa 22:19, 20
+  date:
+    from: -1106
+    to: -1077
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1107 y 1078 a.e.c. (tiempo narrativo: David huye de Saúl, que muere en 1078)'
+  note: Doeg mata a los sacerdotes y a la gente de la ciudad.
+  reason: '1Sa 22:19, 20: de la matanza de Nob solo escapa Abiatar. Fecha: la del suceso doeg-arrasa-nob.'
+  sources:
+  - 1-samuel-22
+  - it-abiatar
+  - it-nob
+  - si-3
+  - it-jonatan
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: queila
+  reference: 1Sa 22:20-23; 23:6
+  date:
+    from: -1106
+    to: -1077
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1107 y 1078 a.e.c. (tiempo narrativo: David huye de Saúl, que muere en 1078)'
+  note: Lleva consigo un efod.
+  reason: '1Sa 23:6: huye a Queilá para unirse a David; Perspicacia «Abiatar», párr. 2, sitúa allí a David en ese momento.
+    Fecha: la del suceso abiatar-escapa-y-se-une-a-david.'
+  sources:
+  - 1-samuel-22
+  - 1-samuel-23
+  - it-abiatar
+  - it-queila
+  - si-3
+  - it-jonatan
+  checked_on: '2026-09-30'
+  status: verified

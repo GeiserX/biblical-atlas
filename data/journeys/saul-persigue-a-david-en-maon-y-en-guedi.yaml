@@ -1,0 +1,160 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: saul-persigue-a-david-en-maon-y-en-guedi
+name: Saúl persigue a David en Maón y En-Guedí
+person: saul
+reference: 1Sa 23:19–24:22
+date:
+  from: -1106
+  to: -1077
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1107 y 1078 a.e.c. (tiempo narrativo: David huye de Saúl, que muere en 1078)'
+companions: []
+summary: Los de Zif avisan a Saúl en Guibeá. Saúl baja tras David al desierto de Maón y casi lo alcanza, pero un ataque filisteo
+  lo aparta. Después lo busca en En-Guedí, donde David le perdona la vida.
+reason: 1Sa 23:19-28 y 24:1-22 dan el recorrido en orden; Perspicacia «Saúl», párr. 14, lo resume. Fechas de los sucesos de
+  Zif, Maón y En-Guedí.
+sources:
+- 1-samuel-23
+- 1-samuel-24
+- it-saul
+- it-zif
+- it-maon
+- it-en-guedi
+- si-3
+- it-jonatan
+- 1-samuel-15
+checked_on: '2026-09-30'
+status: verified
+narrative_order:
+  series: saul
+  order: 6
+stops:
+- order: 1
+  place: guibea-de-benjamin
+  reference: 1Sa 23:19-23
+  date:
+    from: -1106
+    to: -1077
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1107 y 1078 a.e.c. (tiempo narrativo: David huye de Saúl, que muere en 1078)'
+  note: Los de Zif le dicen dónde se esconde David.
+  reason: '1Sa 23:19: los de Zif suben a Guibeá, donde está Saúl. Fecha: la del suceso los-de-zif-delatan-a-david-ante-saul.'
+  sources:
+  - 1-samuel-23
+  - it-zif
+  - si-3
+  - it-jonatan
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: zif
+  reference: 1Sa 23:24, 25
+  date:
+    from: -1106
+    to: -1077
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1107 y 1078 a.e.c. (tiempo narrativo: David huye de Saúl, que muere en 1078)'
+  note: Los de Zif se le adelantan y él llega después.
+  reason: '1Sa 23:24, 25: los de Zif van por delante a su ciudad y Saúl llega detrás en busca de David. Perspicacia «Zif»,
+    núm. 3. Fecha: la del suceso los-de-zif-delatan-a-david-ante-saul.'
+  sources:
+  - 1-samuel-23
+  - it-zif
+  - si-3
+  - it-jonatan
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: maon
+  reference: 1Sa 23:25, 26
+  date:
+    from: -1106
+    to: -1077
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1107 y 1078 a.e.c. (tiempo narrativo: David huye de Saúl, que muere en 1078)'
+  note: Lo persigue por el desierto de Maón.
+  reason: '1Sa 23:25, 26: Saúl va tras David por el desierto de Maón. Fecha: la del suceso saul-persigue-a-david-en-el-desierto-de-maon.'
+  sources:
+  - 1-samuel-23
+  - it-maon
+  - si-3
+  - it-jonatan
+  checked_on: '2026-09-30'
+  status: verified
+- order: 4
+  place: penasco-de-las-divisiones
+  reference: 1Sa 23:26-28
+  date:
+    from: -1106
+    to: -1077
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1107 y 1078 a.e.c. (tiempo narrativo: David huye de Saúl, que muere en 1078)'
+  note: Un mensajero le avisa de un ataque filisteo y deja de perseguirlo.
+  reason: '1Sa 23:26-28: al otro lado del monte casi atrapa a David; por eso el sitio se llamó Peñasco de las Divisiones.
+    Fecha: la del suceso saul-persigue-a-david-en-el-desierto-de-maon.'
+  sources:
+  - 1-samuel-23
+  - it-saul
+  - si-3
+  - it-jonatan
+  checked_on: '2026-09-30'
+  status: verified
+- order: 5
+  place: en-guedi
+  reference: 1Sa 24:1-22
+  date:
+    from: -1106
+    to: -1077
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1107 y 1078 a.e.c. (tiempo narrativo: David huye de Saúl, antes de la muerte del rey)'
+  note: Antes lucha contra los filisteos en un sitio que el texto no nombra. En la cueva, David le corta el borde de la túnica.
+  reason: '1Sa 24:1, 2: de regreso de la lucha contra los filisteos, Saúl busca a David en En-Guedí con 3.000 hombres. Fecha:
+    la del suceso david-perdona-la-vida-a-saul-en-en-guedi.'
+  sources:
+  - 1-samuel-24
+  - it-en-guedi
+  - it-saul
+  - si-3
+  - it-jonatan
+  checked_on: '2026-09-30'
+  status: verified
+- order: 6
+  place: guibea-de-benjamin
+  reference: 1Sa 24:22
+  date:
+    from: -1106
+    to: -1077
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1107 y 1078 a.e.c. (tiempo narrativo: David huye de Saúl, antes de la muerte del rey)'
+  note: El texto dice que se fue a su casa.
+  reason: '1Sa 24:22 dice que Saúl se fue a su casa, y su casa estaba en Guibeá (1Sa 15:34; 23:19). Es deducción nuestra.
+    Fecha: la del suceso saul-reconoce-que-david-sera-rey.'
+  sources:
+  - 1-samuel-24
+  - 1-samuel-15
+  - 1-samuel-23
+  - si-3
+  - it-jonatan
+  checked_on: '2026-09-30'
+  status: pending

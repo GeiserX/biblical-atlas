@@ -1,0 +1,125 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: campana-del-norte-de-josue
+name: Campaña de Josué en el norte
+person: josue-hijo-de-nun
+reference: Jos 11:1-15
+date:
+  from: -1472
+  to: -1466
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1473 y 1467 a.e.c. (tiempo narrativo: durante la conquista de Canaán, tras la campaña del sur)'
+companions: []
+summary: Jabín de Hazor reúne a los reyes del norte junto a las aguas de Merom. Josué los sorprende, los persigue hasta Sidón,
+  Misrefot-Maim y el valle de Mizpé, y a la vuelta toma y quema Hazor.
+reason: 'Jos 11:1-15 da las etapas. Sin año propio: va tras la campaña del sur y antes del fin de la conquista general, que
+  el estudio 3 pone en 1467 a.e.c.'
+sources:
+- josue-11
+- si-3
+- it-josue
+- it-jabin
+- it-merom
+- it-hazor
+- tnm-b4
+checked_on: '2026-09-30'
+status: verified
+narrative_order:
+  series: josue-hijo-de-nun
+  order: 4
+stops:
+- order: 1
+  place: aguas-de-merom
+  reference: Jos 11:5-7
+  date:
+    from: -1472
+    to: -1466
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1473 y 1467 a.e.c. (tiempo narrativo: durante la conquista de Canaán, tras la campaña del sur)'
+  note: El texto no dice desde dónde sale Josué.
+  reason: 'Jos 11:7: Josué cae de improviso sobre los reyes en las aguas de Merom. Fecha del suceso «Josué vence a los reyes
+    del norte en las aguas de Merom».'
+  sources:
+  - josue-11
+  - it-merom
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: sidon
+  reference: Jos 11:8
+  date:
+    from: -1472
+    to: -1466
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1473 y 1467 a.e.c. (tiempo narrativo: durante la conquista de Canaán, tras la campaña del sur)'
+  note: Límite de la persecución.
+  reason: Jos 11:8 lleva la persecución hasta Sidón la Grande. El versículo da tres extremos, no un orden de marcha, ni dice
+    que Josué llegara. Fecha del suceso «Josué vence a los reyes del norte en las aguas de Merom».
+  sources:
+  - josue-11
+  checked_on: '2026-09-30'
+  status: pending
+- order: 3
+  place: misrefot-maim
+  reference: Jos 11:8
+  date:
+    from: -1472
+    to: -1466
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1473 y 1467 a.e.c. (tiempo narrativo: durante la conquista de Canaán, tras la campaña del sur)'
+  note: null
+  reason: Jos 11:8 nombra Misrefot-Maim en la persecución. El versículo da tres extremos, no un orden de marcha. Fecha del
+    suceso «Josué vence a los reyes del norte en las aguas de Merom».
+  sources:
+  - josue-11
+  checked_on: '2026-09-30'
+  status: pending
+- order: 4
+  place: tierra-de-mizpa
+  reference: Jos 11:8
+  date:
+    from: -1472
+    to: -1466
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1473 y 1467 a.e.c. (tiempo narrativo: durante la conquista de Canaán, tras la campaña del sur)'
+  note: El valle de Mizpé.
+  reason: Jos 11:8 lleva también la persecución al valle de Mizpé, al este. El versículo no da un orden de marcha. Fecha del
+    suceso «Josué vence a los reyes del norte en las aguas de Merom».
+  sources:
+  - josue-11
+  checked_on: '2026-09-30'
+  status: pending
+- order: 5
+  place: hazor
+  reference: Jos 11:10-13
+  date:
+    from: -1472
+    to: -1466
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1473 y 1467 a.e.c. (tiempo narrativo: durante la conquista de Canaán, tras la campaña del sur)'
+  note: La única ciudad del norte que quemó.
+  reason: 'Jos 11:10: Josué vuelve y conquista Hazor, y 11:13 dice que fue la única que quemó. Fecha del suceso «Josué toma
+    Hazor y la quema».'
+  sources:
+  - josue-11
+  - it-hazor
+  checked_on: '2026-09-30'
+  status: verified

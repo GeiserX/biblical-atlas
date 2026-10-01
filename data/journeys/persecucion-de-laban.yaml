@@ -1,0 +1,90 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: persecucion-de-laban
+name: Labán persigue a Jacob
+person: laban
+reference: Gé 31:19-55
+date:
+  from: -1760
+  to: -1760
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 1761 a.e.c.
+companions: []
+summary: Al tercer día sabe Labán que Jacob se ha ido. Lo persigue siete días y lo alcanza en las montañas de Galaad, pero
+  Dios le advierte en sueños; pactan en Galeed y Labán vuelve a su casa.
+reason: Gé 31:22-55 cuenta la persecución, el pacto y el regreso, y Perspicacia «Labán» pone su casa en Harán. Fecha de los
+  sucesos de Galaad, en 1761 a.e.c.
+sources:
+- genesis-31
+- it-laban
+- it-jacob
+- it-galaad
+- it-galeed
+- it-haran
+- si-3
+checked_on: '2026-09-30'
+status: verified
+stops:
+- order: 1
+  place: haran
+  reference: Gé 31:19-23
+  date:
+    from: -1760
+    to: -1760
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 1761 a.e.c.
+  note: Estaba esquilando sus ovejas cuando Jacob se fue; reúne a sus parientes.
+  reason: Gé 31:19-23 deja a Labán en casa al empezar la huida, y Perspicacia «Labán» lo hace vivir en Harán. Fecha del suceso
+    «Labán alcanza a Jacob en los montes de Galaad».
+  sources:
+  - genesis-31
+  - it-laban
+  - it-haran
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: galaad
+  reference: Gé 31:23-54
+  date:
+    from: -1760
+    to: -1760
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 1761 a.e.c.
+  note: El montón de piedras del pacto se llama Galeed y también Atalaya.
+  reason: Gé 31:23, 25 pone el encuentro en las montañas de Galaad. Fecha de los sucesos del encuentro y del pacto en Galeed.
+  sources:
+  - genesis-31
+  - it-galaad
+  - it-galeed
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: haran
+  reference: Gé 31:55
+  date:
+    from: -1760
+    to: -1760
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 1761 a.e.c.
+  note: Antes de irse besa a sus hijas y a sus nietos y los bendice.
+  reason: Gé 31:55 dice que Labán volvió a su hogar a la mañana siguiente. Fecha del suceso «Jacob y Labán pactan la paz en
+    Galeed».
+  sources:
+  - genesis-31
+  - it-laban
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified

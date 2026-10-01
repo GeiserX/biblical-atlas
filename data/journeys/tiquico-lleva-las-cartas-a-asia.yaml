@@ -1,0 +1,89 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: tiquico-lleva-las-cartas-a-asia
+name: Tíquico lleva las cartas a Éfeso y Colosas
+person: tiquico
+reference: Ef 6:21, 22; Col 4:7-9; Flm 10-12
+date:
+  from: 60
+  to: 61
+  precision: range
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 60-61 e.c.
+narrative_order:
+  series: tiquico
+  order: 1
+companions:
+- onesimo
+summary: Desde su primer encierro en Roma, Pablo envía a Tíquico con las cartas para Éfeso y Colosas. Con él va Onésimo, que
+  vuelve con su amo y lleva la carta a Filemón.
+reason: Perspicacia «Tíquico» y «Onésimo» cuentan el envío; suceso pablo-envia-a-tiquico-a-efeso-y-colosas, c. 60-61.
+sources:
+- efesios-6
+- colosenses-4
+- filemon-1
+- it-tiquico
+- it-onesimo
+checked_on: '2026-09-30'
+status: verified
+stops:
+- order: 1
+  place: roma
+  reference: Ef 6:21; Col 4:7
+  date:
+    from: 60
+    to: 61
+    precision: range
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 60-61 e.c.
+  note: null
+  reason: 'Perspicacia «Tíquico»: Pablo lo manda desde su encierro en Roma. Suceso pablo-envia-a-tiquico-a-efeso-y-colosas,
+    c. 60-61.'
+  sources:
+  - efesios-6
+  - colosenses-4
+  - it-tiquico
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: efeso
+  reference: Ef 6:21, 22
+  date:
+    from: 60
+    to: 61
+    precision: range
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 60-61 e.c.
+  note: El texto no dice en qué orden visitó las dos ciudades; ponemos Éfeso primero por el camino.
+  reason: 'Ef 6:21, 22: Tíquico les contará cómo está Pablo. El orden respecto a Colosas es nuestro, no del texto. Suceso
+    pablo-envia-a-tiquico-a-efeso-y-colosas.'
+  sources:
+  - efesios-6
+  - it-tiquico
+  checked_on: '2026-09-30'
+  status: pending
+- order: 3
+  place: colosas
+  reference: Col 4:7-9
+  date:
+    from: 60
+    to: 61
+    precision: range
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 60-61 e.c.
+  note: Onésimo vuelve a casa de Filemón.
+  reason: 'Col 4:7-9: Tíquico y Onésimo les darán las noticias de Roma. Suceso pablo-envia-a-tiquico-a-efeso-y-colosas, c.
+    60-61.'
+  sources:
+  - colosenses-4
+  - filemon-1
+  - it-onesimo
+  checked_on: '2026-09-30'
+  status: verified

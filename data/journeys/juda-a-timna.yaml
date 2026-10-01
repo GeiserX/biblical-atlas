@@ -1,0 +1,75 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: juda-a-timna
+name: Judá sube a Timná
+person: juda-hijo-de-jacob
+reference: Gé 38:12-23
+date:
+  from: -1749
+  to: -1727
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1750 y 1728 a.e.c. (tiempo narrativo: después de la venta de José y antes de que Pérez entre en Egipto con
+    Jacob)'
+companions:
+- hira
+summary: Viudo, Judá sube con su amigo Hirá el adulamita a Timná, donde esquilan sus ovejas. A la entrada de Enaim, Tamar,
+  disfrazada, lo espera; después Hirá vuelve allí a pagarle y no la halla.
+reason: 'Gé 38:12-23 da el camino a Timná y la escena de Enaim. Sin año propio: fecha narrativa del suceso «Tamar, disfrazada,
+  se encuentra con Judá en Enaim». El texto no nombra la salida.'
+sources:
+- genesis-38
+- it-juda
+- it-hira
+- it-tamar
+- it-enaim
+- it-timnah
+- it-adulam
+- si-3
+checked_on: '2026-09-30'
+status: verified
+narrative_order:
+  series: juda-hijo-de-jacob
+  order: 1
+stops:
+- order: 1
+  place: enaim
+  reference: Gé 38:14-21
+  date:
+    from: -1749
+    to: -1727
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1750 y 1728 a.e.c. (tiempo narrativo: después de la venta de José y antes de que Pérez entre en Egipto con
+      Jacob)'
+  note: Junto al camino. Sin punto en el mapa.
+  reason: Gé 38:14 pone Enaim en el camino a Timná, y allí se encuentran Judá y Tamar. Fecha narrativa del suceso de Enaim.
+  sources:
+  - genesis-38
+  - it-enaim
+  - it-tamar
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: timna-de-la-region-montanosa
+  reference: Gé 38:12, 13
+  date:
+    from: -1749
+    to: -1727
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1750 y 1728 a.e.c. (tiempo narrativo: después de la venta de José y antes de que Pérez entre en Egipto con
+      Jacob)'
+  note: Allí trabajan los esquiladores de sus ovejas.
+  reason: Gé 38:12, 13 dice que Judá subía a Timná para el esquileo. Misma fecha narrativa; el lugar es el que usa el suceso.
+  sources:
+  - genesis-38
+  - it-timnah
+  checked_on: '2026-09-30'
+  status: verified

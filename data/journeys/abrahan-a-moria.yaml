@@ -1,0 +1,94 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: abrahan-a-moria
+name: Abrahán lleva a Isaac a Moria
+person: abrahan
+reference: Gé 22:1-19; Heb 11:17-19
+date:
+  from: -1912
+  to: -1880
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1913 y 1881 a.e.c. (tiempo narrativo: después del despido de Ismael y antes de la muerte de Sara)'
+companions:
+- isaac
+summary: Dios pide a Abrahán que ofrezca a Isaac. Tras tres días de camino desde Beer-Seba, en una montaña de Moria el ángel
+  lo detiene y Dios pone un carnero en lugar del hijo; todos vuelven a Beer-Seba.
+reason: 'Gé 21:33, 34 y 22:19 dejan a Abrahán en Beer-Seba antes y después, y Perspicacia «Abrahán» da el viaje desde Beer-Seba
+  hasta Moria. Sin año propio: fecha narrativa del suceso «Abrahán ofrece a Isaac en Moria».'
+sources:
+- genesis-21
+- genesis-22
+- hebreos-11
+- it-abrahan
+- it-isaac
+- it-moria
+- it-jehova-yire
+- it-beer-seba
+- si-3
+checked_on: '2026-09-30'
+status: verified
+narrative_order:
+  series: abrahan
+  order: 6
+stops:
+- order: 1
+  place: beer-seba
+  reference: Gé 21:33; 22:1-3
+  date:
+    from: -1912
+    to: -1880
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1913 y 1881 a.e.c. (tiempo narrativo: después del despido de Ismael y antes de la muerte de Sara)'
+  note: Sale de madrugada con Isaac, dos siervos, un burro y la leña.
+  reason: Gé 21:33 lo pone en Beer-Seba, y Perspicacia «Abrahán» hace salir de allí el viaje a Moria. Fecha narrativa del
+    suceso «Abrahán ofrece a Isaac en Moria».
+  sources:
+  - genesis-21
+  - genesis-22
+  - it-abrahan
+  - it-beer-seba
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: monte-moria
+  reference: Gé 22:4-18
+  date:
+    from: -1912
+    to: -1880
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1913 y 1881 a.e.c. (tiempo narrativo: después del despido de Ismael y antes de la muerte de Sara)'
+  note: Llega al tercer día. Llama al lugar Jehová-Yiré.
+  reason: Gé 22:2-14 pone el sacrificio en un monte de la tierra de Moria. Misma fecha narrativa.
+  sources:
+  - genesis-22
+  - it-moria
+  - it-jehova-yire
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: beer-seba
+  reference: Gé 22:19
+  date:
+    from: -1912
+    to: -1880
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1913 y 1881 a.e.c. (tiempo narrativo: después del despido de Ismael y antes de la muerte de Sara)'
+  note: Abrahán sigue viviendo allí.
+  reason: Gé 22:19 dice que volvieron juntos a Beer-Seba. Misma fecha narrativa.
+  sources:
+  - genesis-22
+  - it-beer-seba
+  checked_on: '2026-09-30'
+  status: verified

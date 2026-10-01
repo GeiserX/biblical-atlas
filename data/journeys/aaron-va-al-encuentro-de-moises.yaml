@@ -1,0 +1,85 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: aaron-va-al-encuentro-de-moises
+name: Aarón va al encuentro de Moisés
+person: aaron
+reference: Éx 4:14, 27-31
+date:
+  from: -1513
+  to: -1512
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1514 y 1513 a.e.c. (tiempo narrativo: después de la zarza y antes del éxodo)'
+companions: []
+summary: Jehová manda a Aarón al desierto a recibir a su hermano. Se encuentran en la montaña del Dios verdadero, Moisés le
+  explica su encargo y los dos vuelven juntos a Egipto.
+reason: 'Éx 4:14 anuncia que Aarón saldrá a su encuentro, y Éx 4:27-31 cuenta la ida, el encuentro y la vuelta; Perspicacia
+  «Aarón» los hace regresar juntos a Egipto. Sin año propio: después de la zarza y antes del éxodo.'
+sources:
+- exodo-3
+- exodo-4
+- si-3
+- it-aaron
+checked_on: '2026-09-30'
+status: verified
+stops:
+- order: 1
+  place: egipto
+  reference: Éx 4:14, 27
+  date:
+    from: -1513
+    to: -1512
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1514 y 1513 a.e.c. (tiempo narrativo: después de la zarza y antes del éxodo)'
+  note: Recibe la orden de salir al desierto.
+  reason: Éx 4:27 lo manda al desierto a recibir a Moisés, y Perspicacia «Aarón» dice que después volvieron a Egipto. Fecha
+    narrativa del suceso «Aarón sale al encuentro de Moisés en la montaña de Dios».
+  sources:
+  - exodo-4
+  - it-aaron
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: monte-sinai
+  reference: Éx 4:27, 28
+  date:
+    from: -1513
+    to: -1512
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1514 y 1513 a.e.c. (tiempo narrativo: después de la zarza y antes del éxodo)'
+  note: Saluda a Moisés con un beso y escucha lo que Jehová le encargó. Sin punto en el mapa.
+  reason: Éx 4:27, 28 pone el encuentro en la montaña del Dios verdadero, que Éx 3:1 llama Horeb. Misma fecha narrativa.
+  sources:
+  - exodo-3
+  - exodo-4
+  - it-aaron
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: egipto
+  reference: Éx 4:29-31
+  date:
+    from: -1513
+    to: -1512
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1514 y 1513 a.e.c. (tiempo narrativo: después de la zarza y antes del éxodo)'
+  note: Habla al pueblo en nombre de Moisés, y las señales convencen a los israelitas.
+  reason: Éx 4:29-31 los lleva a reunir a los ancianos de Israel. Fecha narrativa del suceso «Moisés y Aarón muestran las
+    señales a los ancianos de Israel».
+  sources:
+  - exodo-4
+  - it-aaron
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified

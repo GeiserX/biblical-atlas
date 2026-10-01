@@ -1,0 +1,72 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: david-sube-a-hebron
+name: David sube a Hebrón
+person: david
+reference: 2Sa 2:1-4
+date:
+  from: -1077
+  to: -1076
+  precision: range
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 1078-1077 a.e.c.
+companions:
+- ahinoam-esposa-de-david
+- abigail-esposa-de-david
+summary: Tras la muerte de Saúl, David pregunta a Jehová y sube de Ziclag a Hebrón con sus dos esposas, Ahinoam y Abigaíl,
+  y con sus hombres. Allí los de Judá lo ungen rey.
+reason: 2Sa 1:1 y 2:1-4 dan la salida y la llegada; 2:2 nombra a las dos esposas. El estudio 3 fecha la unción en 1077; Perspicacia
+  «David», párr. 20.
+sources:
+- 2-samuel-1
+- 2-samuel-2
+- si-3
+- it-david
+- it-hebron
+- it-jonatan
+checked_on: '2026-09-30'
+status: verified
+narrative_order:
+  series: david
+  order: 5
+stops:
+- order: 1
+  place: ziclag
+  reference: 2Sa 1:1; 2:1
+  date:
+    from: -1077
+    to: -1077
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 1078 a.e.c.
+  note: Allí se entera de la muerte de Saúl y de Jonatán.
+  reason: '2Sa 1:1: tras vencer a los amalequitas, David sigue en Ziclag. Fecha: la del suceso david-canta-el-arco-por-saul-y-jonatan.'
+  sources:
+  - 2-samuel-1
+  - it-david
+  - it-jonatan
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: hebron
+  reference: 2Sa 2:1-4
+  date:
+    from: -1076
+    to: -1076
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 1077 a.e.c.
+  note: Sus hombres se quedan en las ciudades de alrededor.
+  reason: '2Sa 2:1-4: Jehová lo manda a Hebrón y allí lo ungen rey de Judá; el estudio 3 da 1077. Fecha: la del suceso david-rey-en-hebron.'
+  sources:
+  - 2-samuel-2
+  - it-hebron
+  - it-david
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified

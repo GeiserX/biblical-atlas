@@ -1,0 +1,104 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: segundo-viaje-por-grano
+name: Los hermanos vuelven a Egipto con Benjamín
+person: juda-hijo-de-jacob
+reference: Gé 43:1–45:28; Hch 7:13
+date:
+  from: -1728
+  to: -1727
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: entre 1729 y 1728 a.e.c. (tiempo narrativo; la estancia en Egipto y la vuelta, en 1728)
+companions:
+- ruben-hijo-de-jacob
+- levi-hijo-de-jacob
+- dan-hijo-de-jacob
+- neftali-hijo-de-jacob
+- gad-hijo-de-jacob
+- aser-hijo-de-jacob
+- isacar-hijo-de-jacob
+- zabulon-hijo-de-jacob
+- benjamin-hijo-de-jacob
+summary: Judá responde por Benjamín y los hermanos vuelven con regalos. José los sienta a su mesa, esconde su copa en el costal
+  de Benjamín y, ante la súplica de Judá, se da a conocer; suben con carros por Jacob.
+reason: Gé 43 a 45 da la ida, la estancia y la vuelta; Judá habla por los demás ante Jacob y ante José (Gé 43:3-10; 44:18-34).
+  Los sucesos de Egipto son de 1728 a.e.c. Simeón se une allí.
+sources:
+- genesis-43
+- genesis-44
+- genesis-45
+- hechos-7
+- it-juda
+- it-jose
+- it-benjamin
+- si-3
+checked_on: '2026-09-30'
+status: verified
+narrative_order:
+  series: juda-hijo-de-jacob
+  order: 2
+stops:
+- order: 1
+  place: canaan
+  reference: Gé 43:1-15
+  date:
+    from: -1728
+    to: -1727
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1729 y 1728 a.e.c. (tiempo narrativo: unos diez años después de morir Isaac y antes del traslado a Egipto)'
+  note: Llevan el doble de dinero y productos del país como regalo.
+  reason: Gé 43:1-15 pone la decisión en casa de Jacob, en Canaán. Fecha narrativa del suceso «Judá responde por Benjamín
+    ante Jacob».
+  sources:
+  - genesis-43
+  - it-juda
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: egipto
+  reference: Gé 43:15–45:24
+  date:
+    from: -1727
+    to: -1727
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 1728 a.e.c.
+  note: Comen en casa de José; los alcanzan por la copa y vuelven a la ciudad. Simeón queda libre y se une a ellos.
+  reason: Gé 43:15 los hace bajar a Egipto con Benjamín. Fecha de los sucesos de la comida, la copa y el reconocimiento, en
+    1728 a.e.c.
+  sources:
+  - genesis-43
+  - genesis-44
+  - genesis-45
+  - hechos-7
+  - it-jose
+  - it-benjamin
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: canaan
+  reference: Gé 45:25-28
+  date:
+    from: -1727
+    to: -1727
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 1728 a.e.c.
+  note: Jacob no los cree hasta ver los carros que envía José.
+  reason: Gé 45:25 dice que subieron de Egipto hasta Jacob, en Canaán. Fecha del suceso «Jacob se entera de que José vive».
+  sources:
+  - genesis-45
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified

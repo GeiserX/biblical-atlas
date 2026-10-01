@@ -1,0 +1,75 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: esau-a-seir
+name: Esaú se muda a Seír
+person: esau
+reference: Gé 36:6-8; Jos 24:4
+date:
+  from: -1737
+  to: -1727
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1738 y 1728 a.e.c. (tiempo narrativo: tras morir Isaac y antes de que Jacob bajara a Egipto)'
+companions:
+- ada-hija-de-elon
+- oholibama-hija-de-ana
+- basemat-hija-de-ismael
+- elifaz-hijo-de-esau
+- reuel-hijo-de-esau
+- jeus-hijo-de-esau
+- jalam
+- core-hijo-de-esau
+summary: Los rebaños de los dos hermanos ya no caben en el mismo país. Esaú se lleva a sus esposas, sus hijos, sus hijas y
+  todo lo que tiene de Canaán a la región montañosa de Seír.
+reason: Gé 36:6-8 cuenta el traslado y Jos 24:4 lo recuerda. Fecha narrativa del suceso «Esaú se traslada a la región montañosa
+  de Seír», tras la muerte de Isaac.
+sources:
+- genesis-36
+- josue-24
+- it-esau
+- it-edom
+- it-seir
+- si-3
+checked_on: '2026-09-30'
+status: verified
+stops:
+- order: 1
+  place: canaan
+  reference: Gé 36:6, 7
+  date:
+    from: -1737
+    to: -1727
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1738 y 1728 a.e.c. (tiempo narrativo: tras morir Isaac y antes de que Jacob bajara a Egipto)'
+  note: Allí había reunido su ganado y sus riquezas.
+  reason: Gé 36:6 dice que se llevó lo que había juntado en la tierra de Canaán. Fecha narrativa del suceso del traslado.
+  sources:
+  - genesis-36
+  - it-esau
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: seir
+  reference: Gé 36:8; Jos 24:4
+  date:
+    from: -1737
+    to: -1727
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1738 y 1728 a.e.c. (tiempo narrativo: tras morir Isaac y antes de que Jacob bajara a Egipto)'
+  note: 'Esaú es Edom: de él sale el pueblo que vivirá allí.'
+  reason: Gé 36:8 y Jos 24:4 lo instalan en la región montañosa de Seír. Misma fecha narrativa.
+  sources:
+  - genesis-36
+  - josue-24
+  - it-seir
+  - it-edom
+  checked_on: '2026-09-30'
+  status: verified

@@ -1,0 +1,64 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: apolos-de-efeso-a-corinto
+name: Apolos, de Éfeso a Corinto
+person: apolos
+reference: Hch 18:24–19:1; 1Co 3:6
+date:
+  from: 52
+  to: 53
+  precision: range
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 52-53 e.c.
+companions: []
+summary: Apolos, judío de Alejandría, llega a Éfeso, donde Áquila y Priscila le explican mejor el camino de Dios. Con una
+  carta de los hermanos pasa a Acaya, y en Corinto sigue la obra que Pablo empezó.
+reason: Hch 18:24, 27 y 19:1 dan las dos paradas. Fechas de los sucesos apolos-en-efeso y apolos-en-acaya.
+sources:
+- hch-18
+- hch-19
+- 1-corintios-3
+- nota-hechos-18
+- it-apolos
+checked_on: '2026-09-30'
+status: verified
+stops:
+- order: 1
+  place: efeso
+  reference: Hch 18:24-27
+  date:
+    from: 52
+    to: 52
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 52 e.c.
+  note: Era natural de Alejandría; el texto no cuenta ese trayecto.
+  reason: 'Hch 18:24: Apolos llega a Éfeso. Lugar y fecha del suceso apolos-en-efeso.'
+  sources:
+  - hch-18
+  - it-apolos
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: corinto
+  reference: Hch 18:27–19:1
+  date:
+    from: 52
+    to: 53
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'c. 52-53 e.c. (tiempo narrativo: después de llegar a Éfeso hacia 52)'
+  note: Riega lo que Pablo plantó (1Co 3:6).
+  reason: Hch 18:27 lo lleva a Acaya, y Hch 19:1 dice que estaba en Corinto. Fecha del suceso apolos-en-acaya.
+  sources:
+  - hch-18
+  - hch-19
+  - 1-corintios-3
+  - it-apolos
+  checked_on: '2026-09-30'
+  status: verified

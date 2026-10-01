@@ -1,0 +1,124 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: viajes-de-felipe
+name: Felipe, de Samaria a Cesarea
+person: felipe-evangelizador
+reference: Hch 8:1-40; 21:8
+date:
+  from: 33
+  to: 36
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 33 y 36 e.c. (tiempo narrativo: después de la muerte de Esteban y antes de la visita a Cornelio)'
+companions: []
+summary: Dispersado tras la muerte de Esteban, Felipe predica en la ciudad de Samaria. Un ángel lo manda al camino de Jerusalén
+  a Gaza, donde bautiza a un funcionario etíope; después predica desde Asdod hasta Cesarea.
+reason: Hechos 8 da las paradas en orden y Hch 21:8 lo encuentra aún en Cesarea. Fechas de los sucesos muerte-de-esteban,
+  felipe-predica-en-samaria, felipe-y-el-funcionario-etiope y felipe-de-asdod-a-cesarea, anteriores a pedro-predica-a-cornelio.
+sources:
+- hechos-8
+- hch-21
+- it-felipe
+- it-samaria
+- it-gaza
+- it-asdod
+- it-cesarea
+- bt-7
+checked_on: '2026-09-30'
+status: verified
+stops:
+- order: 1
+  place: jerusalen
+  reference: Hch 8:1-4
+  date:
+    from: 33
+    to: 34
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 33 y 34 e.c. (tiempo narrativo: después de Pentecostés y antes de la conversión de Saulo)'
+  note: La persecución dispersa a todos salvo a los apóstoles.
+  reason: 'Hch 8:1, 4: tras la muerte de Esteban los discípulos se dispersan desde Jerusalén. Fecha del suceso muerte-de-esteban.'
+  sources:
+  - hechos-8
+  - bt-7
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: samaria
+  reference: Hch 8:5-13
+  date:
+    from: 33
+    to: 36
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 33 y 36 e.c. (tiempo narrativo: después de la muerte de Esteban y antes de la visita a Cornelio)'
+  note: La nota de estudio la llama la ciudad principal del distrito.
+  reason: 'Hch 8:5: Felipe baja a la ciudad de Samaria y predica. Fecha del suceso felipe-predica-en-samaria.'
+  sources:
+  - hechos-8
+  - it-felipe
+  - it-samaria
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: gaza
+  reference: Hch 8:26-39
+  date:
+    from: 33
+    to: 36
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 33 y 36 e.c. (tiempo narrativo: después de la muerte de Esteban y antes de la visita a Cornelio)'
+  note: El encuentro es en el camino de Jerusalén a Gaza, por el desierto, no en la ciudad.
+  reason: Hch 8:26 lo manda al camino que baja a Gaza. El punto de la ciudad solo marca la dirección. Fecha del suceso felipe-y-el-funcionario-etiope.
+  sources:
+  - hechos-8
+  - it-felipe
+  - it-gaza
+  checked_on: '2026-09-30'
+  status: pending
+- order: 4
+  place: asdod
+  reference: Hch 8:40
+  date:
+    from: 33
+    to: 36
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 33 y 36 e.c. (tiempo narrativo: después de la muerte de Esteban y antes de la visita a Cornelio)'
+  note: En el siglo I se llamaba Azoto.
+  reason: 'Hch 8:40: Felipe aparece en Asdod y predica por las ciudades del camino. Fecha del suceso felipe-de-asdod-a-cesarea.'
+  sources:
+  - hechos-8
+  - it-asdod
+  checked_on: '2026-09-30'
+  status: verified
+- order: 5
+  place: cesarea
+  reference: Hch 8:40; 21:8
+  date:
+    from: 33
+    to: 36
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 33 y 36 e.c. (tiempo narrativo: después de la muerte de Esteban y antes de la visita a Cornelio)'
+  note: Perspicacia «Felipe» lo sitúa allí unos veinte años después, con sus cuatro hijas.
+  reason: Hch 8:40 lo hace llegar a Cesarea, y Hch 21:8 lo encuentra viviendo allí. Fecha del suceso felipe-de-asdod-a-cesarea.
+  sources:
+  - hechos-8
+  - hch-21
+  - it-felipe
+  - it-cesarea
+  checked_on: '2026-09-30'
+  status: verified

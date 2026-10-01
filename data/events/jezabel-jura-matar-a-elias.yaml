@@ -3,12 +3,12 @@ id: jezabel-jura-matar-a-elias
 title: Jezabel jura matar a Elías
 date:
   from: -939
-  to: -919
+  to: -920
   precision: range
   approx: true
   type: narrative
   chronology: tnm
-  text: 'entre 940 y 920 a.e.c. (tiempo narrativo: después del Carmelo, en el reinado de Acab)'
+  text: 'entre 940 y 921 a.e.c. (tiempo narrativo: después del Carmelo y antes de la viña de Nabot)'
 narrative_order:
   series: 1-reyes
   order: 19001
@@ -26,7 +26,7 @@ passages:
 summary: Acab cuenta a Jezabel que Elías ha hecho morir a espada a los profetas de Baal. Ella le manda un mensajero y jura
   por sus dioses que al día siguiente correrá la misma suerte.
 reason: 'Perspicacia «Acab», núm. 1, párr. 4: Acab volvió a Jezreel, donde estaba Jezabel, y se lo contó; «Jezabel», núm.
-  1, párr. 3. Fecha: tras el Carmelo, en el reinado de Acab (A6-A).'
+  1, párr. 3. Fecha: tras el Carmelo, antes de llamar a Eliseo y de la viña de Nabot (A6-A).'
 sources:
 - 1-reyes-19
 - it-acab

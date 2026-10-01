@@ -1,0 +1,86 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: josias-sale-contra-neko
+name: Josías sale contra Nekó
+person: josias
+reference: 2Re 23:29, 30; 2Cr 35:20-25
+date:
+  from: -627
+  to: -627
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 628 a.e.c.
+companions: []
+summary: Nekó le avisa que no viene contra Judá, pero Josías se disfraza y le sale al paso en la llanura de Meguidó. Los arqueros
+  lo hieren; sus siervos lo pasan a otro carro y lo llevan a Jerusalén, donde muere.
+reason: 2Re 23:29, 30 y 2Cr 35:20-24 dan la salida, Meguidó y la vuelta. Fecha del suceso muerte-de-josias, 628 a.e.c.
+sources:
+- 2-reyes-23
+- 2-cronicas-35
+- it-josias
+- it-meguido
+- it-neko
+- si-3
+- tnm-a6-b
+checked_on: '2026-09-30'
+status: verified
+narrative_order:
+  series: josias
+  order: 2
+stops:
+- order: 1
+  place: jerusalen
+  reference: 2Cr 35:20
+  date:
+    from: -627
+    to: -627
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 628 a.e.c.
+  note: 'Salida deducida: el texto dice que salió a enfrentarse con Nekó.'
+  reason: 2Cr 35:20 dice que Josías salió contra Nekó sin nombrar desde dónde; Jerusalén es su capital. Suceso muerte-de-josias.
+  sources:
+  - 2-cronicas-35
+  checked_on: '2026-09-30'
+  status: pending
+- order: 2
+  place: meguido
+  reference: 2Re 23:29; 2Cr 35:22, 23
+  date:
+    from: -627
+    to: -627
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 628 a.e.c.
+  note: Pelea disfrazado en la llanura.
+  reason: '2Re 23:29 y 2Cr 35:22, 23: lo hieren en Meguidó. Suceso muerte-de-josias.'
+  sources:
+  - 2-reyes-23
+  - 2-cronicas-35
+  - it-meguido
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: jerusalen
+  reference: 2Re 23:30; 2Cr 35:24
+  date:
+    from: -627
+    to: -627
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 628 a.e.c.
+  note: 2Re 23:30 habla de llevar su cadáver; 2Cr 35:24 dice que murió al llegar.
+  reason: '2Re 23:30 y 2Cr 35:24: lo traen en carro a Jerusalén y lo entierran allí. Suceso muerte-de-josias.'
+  sources:
+  - 2-reyes-23
+  - 2-cronicas-35
+  - it-josias
+  checked_on: '2026-09-30'
+  status: verified

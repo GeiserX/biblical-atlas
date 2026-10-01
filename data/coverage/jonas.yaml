@@ -5,24 +5,24 @@ chapters:
     status: complete
     reviewed_on: 2026-09-29
     spans:
-    - {v: 1-3, type: narration, entities: [person:jonas-profeta, person:amitai, relation:jonas-profeta/kin/amitai, event:jonas-huye-hacia-tarsis, place:ninive, place:jope, place:tarsis], mentions: [event:senal-de-jonas-en-galilea, event:dedo-de-dios-y-senal-de-jonas], note: "La nota da «paloma» como significado de Jonás. Jehová lo manda a anunciar un juicio contra Nínive por su maldad; él baja a Jope y embarca hacia Tarsis. Perspicacia lo identifica con el profeta de 2Re 14:25."}
+    - {v: 1-3, type: narration, entities: [person:jonas-profeta, person:amitai, relation:jonas-profeta/kin/amitai, event:jonas-huye-hacia-tarsis, place:ninive, place:jope, place:tarsis, journey:viaje-de-jonas], mentions: [event:senal-de-jonas-en-galilea, event:dedo-de-dios-y-senal-de-jonas], note: "La nota da «paloma» como significado de Jonás. Jehová lo manda a anunciar un juicio contra Nínive por su maldad; él baja a Jope y embarca hacia Tarsis. Perspicacia lo identifica con el profeta de 2Re 14:25."}
     - {v: 4-16, type: narration, entities: [event:los-marineros-arrojan-a-jonas-al-mar, person:jonas-profeta], note: "Jehová lanza una tormenta. Los marineros y su capitán, sin nombre, claman a sus dioses y echan suertes, que señalan a Jonás. Él, hebreo, pide que lo arrojen; al hacerlo, el mar se calma."}
     - {v: "17", type: narration, entities: [event:un-gran-pez-se-traga-a-jonas, person:jonas-profeta], mentions: [event:senal-de-jonas-en-galilea, event:senal-de-jonas-en-magadan, event:dedo-de-dios-y-senal-de-jonas], note: "Jehová envía un pez enorme que se traga a Jonás, y pasa dentro tres días con sus noches. Las referencias llevan a la señal de Jonás que Jesús da en Mt 12:39, 40, 16:4 y Lu 11:29, 30."}
   2:
     status: complete
     reviewed_on: 2026-09-29
     spans:
-    - {v: 1-9, type: poetry, entities: [event:un-gran-pez-se-traga-a-jonas, person:jonas-profeta], mentions: [event:senal-de-jonas-en-galilea], note: "Desde el vientre del pez, Jonás ora: se hundió en el mar, pero Jehová lo sacó de la Tumba, el Seol según la nota, un lugar simbólico. Promete cumplir sus votos, porque la salvación viene de Jehová."}
+    - {v: 1-9, type: poetry, entities: [event:un-gran-pez-se-traga-a-jonas, person:jonas-profeta, journey:viaje-de-jonas], mentions: [event:senal-de-jonas-en-galilea], note: "Desde el vientre del pez, Jonás ora: se hundió en el mar, pero Jehová lo sacó de la Tumba, el Seol según la nota, un lugar simbólico. Promete cumplir sus votos, porque la salvación viene de Jehová."}
     - {v: "10", type: narration, entities: [event:un-gran-pez-se-traga-a-jonas, person:jonas-profeta], note: "Jehová da la orden y el pez deja a Jonás en la orilla. El texto no dice dónde; Perspicacia «Jonás, Libro de» recuerda que el relato omite ese detalle."}
   3:
     status: complete
     reviewed_on: 2026-09-29
     spans:
-    - {v: 1-4, type: narration, entities: [event:jonas-predica-en-ninive, person:jonas-profeta, place:ninive], note: "Segundo encargo de Jehová, y esta vez Jonás obedece. La nota al pie traduce literalmente «ciudad grande para Dios»: recorrerla a pie llevaba tres días. Tras un día de camino por ella anuncia su ruina en 40 días."}
+    - {v: 1-4, type: narration, entities: [event:jonas-predica-en-ninive, person:jonas-profeta, place:ninive, journey:viaje-de-jonas], note: "Segundo encargo de Jehová, y esta vez Jonás obedece. La nota al pie traduce literalmente «ciudad grande para Dios»: recorrerla a pie llevaba tres días. Tras un día de camino por ella anuncia su ruina en 40 días."}
     - {v: 5-10, type: narration, entities: [event:ninive-se-arrepiente, place:ninive], mentions: [event:senal-de-jonas-en-galilea, event:dedo-de-dios-y-senal-de-jonas], note: "El rey de Nínive y sus nobles no tienen nombre ni ficha; Perspicacia «Asiria» ve posible, sin seguridad, que reinara Adad-nirari III. Las referencias llevan a Mt 12:41 y Lu 11:32, donde Jesús recuerda este arrepentimiento."}
   4:
     status: complete
     reviewed_on: 2026-09-29
     spans:
-    - {v: 1-4, type: narration, entities: [event:jonas-se-enfurece-por-el-perdon-de-ninive, event:jonas-huye-hacia-tarsis, person:jonas-profeta], mentions: [place:tarsis], note: "Jonás explica que huyó a Tarsis porque sabía que Jehová es compasivo, paciente y de amor leal (Éx 34:6), y pide morir, como Elías en 1Re 19:4."}
+    - {v: 1-4, type: narration, entities: [event:jonas-se-enfurece-por-el-perdon-de-ninive, event:jonas-huye-hacia-tarsis, person:jonas-profeta, journey:viaje-de-jonas], mentions: [place:tarsis], note: "Jonás explica que huyó a Tarsis porque sabía que Jehová es compasivo, paciente y de amor leal (Éx 34:6), y pide morir, como Elías en 1Re 19:4."}
     - {v: 5-11, type: narration, entities: [event:leccion-de-la-calabaza-vinatera, person:jonas-profeta, place:ninive], note: "La nota del v. 6 da «ricino» como posible planta. Los más de 120.000 que no saben distinguir el bien del mal son, según otra nota, los que no distinguen su mano derecha de la izquierda."}

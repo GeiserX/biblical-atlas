@@ -1,0 +1,99 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: david-con-akis-en-afec
+name: David va con Akís a Afec
+person: david
+reference: 1Sa 28:1, 2; 29:1–30:1
+date:
+  from: -1077
+  to: -1077
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 1078 a.e.c.
+companions: []
+summary: Akís lleva a David y a sus hombres en la retaguardia del ejército filisteo hasta Afec. Los príncipes filisteos no
+  se fían de él y Akís lo manda de vuelta. Al tercer día llega a Ziclag.
+reason: 1Sa 28:1, 2 y 29:1-11 cuentan la marcha y el rechazo, y 30:1 la llegada. Perspicacia «Afeq», núm. 4, y «David», párr.
+  17. En 1078 (Perspicacia «Jonatán», núm. 2).
+sources:
+- 1-samuel-27
+- 1-samuel-28
+- 1-samuel-29
+- 1-samuel-30
+- it-afeq
+- it-akis
+- it-jezreel
+- it-david
+- it-jonatan
+- si-3
+checked_on: '2026-09-30'
+status: verified
+narrative_order:
+  series: david
+  order: 3
+stops:
+- order: 1
+  place: ziclag
+  reference: 1Sa 27:6; 28:1, 2
+  date:
+    from: -1077
+    to: -1077
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 1078 a.e.c.
+  note: El texto no dice desde dónde sale; vivía en Ziclag.
+  reason: '1Sa 27:6, 7: Akís le había dado Ziclag y vivía allí. Que saliera de Ziclag es deducción nuestra. Fecha: la del
+    suceso akis-hace-a-david-su-guardaespaldas.'
+  sources:
+  - 1-samuel-27
+  - 1-samuel-28
+  - it-akis
+  - it-jonatan
+  - si-3
+  checked_on: '2026-09-30'
+  status: pending
+- order: 2
+  place: afec-cerca-de-jezreel
+  reference: 1Sa 29:1-11
+  date:
+    from: -1077
+    to: -1077
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 1078 a.e.c.
+  note: Los filisteos pasan revista; Israel acampa junto al manantial de Jezreel.
+  reason: '1Sa 29:1-11: en Afec los príncipes filisteos rechazan a David. Perspicacia «Afeq», núm. 4, la pone en la llanura
+    de Jezreel. Fecha: la del suceso los-principes-filisteos-rechazan-a-david.'
+  sources:
+  - 1-samuel-29
+  - it-afeq
+  - it-jezreel
+  - it-jonatan
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: ziclag
+  reference: 1Sa 29:11; 30:1
+  date:
+    from: -1077
+    to: -1077
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 1078 a.e.c.
+  note: Encuentra la ciudad quemada por los amalequitas.
+  reason: '1Sa 29:11 y 30:1: salen de madrugada y llegan a Ziclag al tercer día. Fecha: la del suceso los-amalequitas-saquean-ziclag.'
+  sources:
+  - 1-samuel-29
+  - 1-samuel-30
+  - it-jonatan
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified

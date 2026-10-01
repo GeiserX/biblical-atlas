@@ -1,0 +1,65 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: betel-envia-a-sarezer
+name: Betel envía a Sarézer y Réguem-Mélec a Jerusalén
+person: sarezer-de-betel
+reference: Zac 7:1-3
+date:
+  from: -517
+  to: -517
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: 518 a.e.c.
+companions:
+- reguem-melec
+summary: Desde Betel parten Sarézer, Réguem-Mélec y su gente hacia la casa de Jehová. Quieren pedir su favor y consultar a los sacerdotes
+  si hay que mantener el ayuno del quinto mes.
+reason: Zac 7:1-3 fecha la consulta el 4 de kislev del cuarto año de Darío, 518 a.e.c. (suceso betel-consulta-sobre-el-ayuno).
+sources:
+- it-sarezer
+- it-reguem-melec
+- si-zacarias
+- zacarias-7
+checked_on: '2026-09-30'
+status: verified
+stops:
+- order: 1
+  place: betel
+  reference: Zac 7:2
+  date:
+    from: -517
+    to: -517
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: 518 a.e.c.
+  note: null
+  reason: 'Zac 7:2: los envía la gente de Betel. Año del suceso betel-consulta-sobre-el-ayuno.'
+  sources:
+  - zacarias-7
+  - it-sarezer
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: jerusalen
+  reference: Zac 7:2, 3
+  date:
+    from: -517
+    to: -517
+    precision: day
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: 4 de kislev de 518 a.e.c.
+    detail:
+      month: kislev
+      day: 4
+  note: La consulta se hace ante los sacerdotes y los profetas de la casa de Jehová.
+  reason: 'Zac 7:1, 3: el día cuatro de kislev del año cuarto de Darío preguntan en la casa de Jehová. Fecha del suceso betel-consulta-sobre-el-ayuno.'
+  sources:
+  - zacarias-7
+  - si-zacarias
+  checked_on: '2026-09-30'
+  status: verified

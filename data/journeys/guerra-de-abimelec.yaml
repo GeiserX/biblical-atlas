@@ -1,0 +1,175 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: guerra-de-abimelec
+name: Guerra de Abimélec contra Siquem
+person: abimelec-hijo-de-gedeon
+reference: Jue 9:22-55
+date:
+  from: -1449
+  to: -1172
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre c. 1450 y c. 1173 a.e.c. (tiempo narrativo: tras morir Gedeón y antes de Jefté)'
+companions: []
+summary: Siquem se rebela con Gaal. Abimélec, avisado por Zebul, lo vence, arrasa la ciudad, quema a los refugiados de la
+  torre con ramas del Zalmón y muere en Tebez herido por una mujer.
+reason: 'Jueces 9:22-55 da las paradas en orden. Sin año en jw.org: tras los tres años de su gobierno (Jue 9:22) y antes de
+  Jefté, c. 1173 (Perspicacia «Jefté»; estudio 3 para el comienzo del libro).'
+sources:
+- jueces-9
+- si-3
+- it-abimelec
+- it-siquem
+- it-aruma
+- it-zalmon
+- it-tebez
+- it-jueces
+- it-jefte
+checked_on: '2026-09-30'
+status: verified
+narrative_order:
+  series: abimelec-hijo-de-gedeon
+  order: 2
+stops:
+- order: 1
+  place: aruma
+  reference: Jue 9:31-34, 41
+  date:
+    from: -1449
+    to: -1172
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre c. 1450 y c. 1173 a.e.c. (tiempo narrativo: tras morir Gedeón y antes de Jefté)'
+  note: Salida. Zebul le manda mensajeros; el texto no dice dónde los recibe.
+  reason: 'Jue 9:41 lo sitúa viviendo en Arumá y Perspicacia «Arumá» dice que desde allí atacó Siquem. Es deducción: la nota
+    de 9:31 no nombra Arumá. Suceso ancla: abimelec-derrota-a-gaal (entre Gedeón y Jefté, c. 1173, según Perspicacia «Jefté»).'
+  sources:
+  - jueces-9
+  - it-aruma
+  - it-jefte
+  checked_on: '2026-09-30'
+  status: pending
+- order: 2
+  place: siquem
+  reference: Jue 9:34-40
+  date:
+    from: -1449
+    to: -1172
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre c. 1450 y c. 1173 a.e.c. (tiempo narrativo: tras morir Gedeón y antes de Jefté)'
+  note: Embosca a Gaal ante la puerta y lo pone en fuga.
+  reason: 'Jue 9:34-40: de noche, en cuatro grupos, se esconde a las afueras de Siquem y vence a Gaal. Suceso ancla: abimelec-derrota-a-gaal
+    (entre Gedeón y Jefté, c. 1173, según Perspicacia «Jefté»).'
+  sources:
+  - jueces-9
+  - it-siquem
+  - it-jefte
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: aruma
+  reference: Jue 9:41
+  date:
+    from: -1449
+    to: -1172
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre c. 1450 y c. 1173 a.e.c. (tiempo narrativo: tras morir Gedeón y antes de Jefté)'
+  note: Zebul expulsa a Gaal de la ciudad.
+  reason: 'Jue 9:41 lo sitúa en Arumá tras la batalla. Suceso ancla: abimelec-derrota-a-gaal (entre Gedeón y Jefté, c. 1173,
+    según Perspicacia «Jefté»).'
+  sources:
+  - jueces-9
+  - it-aruma
+  - it-jefte
+  checked_on: '2026-09-30'
+  status: verified
+- order: 4
+  place: siquem
+  reference: Jue 9:42-45
+  date:
+    from: -1449
+    to: -1172
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre c. 1450 y c. 1173 a.e.c. (tiempo narrativo: tras morir Gedeón y antes de Jefté)'
+  note: Al día siguiente toma la ciudad, la arrasa y la siembra de sal.
+  reason: 'Jue 9:42-45 cuenta el ataque a los que salen al campo y la destrucción de Siquem. Suceso ancla: abimelec-destruye-siquem
+    (entre Gedeón y Jefté, c. 1173, según Perspicacia «Jefté»).'
+  sources:
+  - jueces-9
+  - it-siquem
+  - it-jefte
+  checked_on: '2026-09-30'
+  status: verified
+- order: 5
+  place: monte-zalmon
+  reference: Jue 9:48
+  date:
+    from: -1449
+    to: -1172
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre c. 1450 y c. 1173 a.e.c. (tiempo narrativo: tras morir Gedeón y antes de Jefté)'
+  note: Sube con sus hombres a cortar ramas.
+  reason: 'Jue 9:48: al saber que los de la torre se han refugiado en el templo, sube al monte Zalmón. Suceso ancla: abimelec-quema-la-torre-de-siquem
+    (entre Gedeón y Jefté, c. 1173, según Perspicacia «Jefté»).'
+  sources:
+  - jueces-9
+  - it-zalmon
+  - it-jefte
+  checked_on: '2026-09-30'
+  status: verified
+- order: 6
+  place: siquem
+  reference: Jue 9:46-49
+  date:
+    from: -1449
+    to: -1172
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre c. 1450 y c. 1173 a.e.c. (tiempo narrativo: tras morir Gedeón y antes de Jefté)'
+  note: Quema el refugio de la torre de Siquem; mueren unas mil personas.
+  reason: 'Jue 9:49: apilan las ramas contra el refugio del templo de El-Berit y le prenden fuego. Suceso ancla: abimelec-quema-la-torre-de-siquem
+    (entre Gedeón y Jefté, c. 1173, según Perspicacia «Jefté»).'
+  sources:
+  - jueces-9
+  - it-siquem
+  - it-jefte
+  checked_on: '2026-09-30'
+  status: verified
+- order: 7
+  place: tebez
+  reference: Jue 9:50-54
+  date:
+    from: -1449
+    to: -1172
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre c. 1450 y c. 1173 a.e.c. (tiempo narrativo: tras morir Gedeón y antes de Jefté)'
+  note: Llegada. Una mujer le rompe el cráneo con una piedra de molino y su escudero lo remata.
+  reason: 'Jue 9:50-54: toma Tebez y muere al atacar su torre. Suceso ancla: muerte-de-abimelec (entre Gedeón y Jefté, c.
+    1173, según Perspicacia «Jefté»).'
+  sources:
+  - jueces-9
+  - it-tebez
+  - it-abimelec
+  - it-jefte
+  checked_on: '2026-09-30'
+  status: verified

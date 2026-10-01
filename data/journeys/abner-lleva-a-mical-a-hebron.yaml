@@ -1,0 +1,121 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: abner-lleva-a-mical-a-hebron
+name: Abner lleva a Mical a David
+person: abner
+reference: 2Sa 3:12-27
+date:
+  from: -1076
+  to: -1074
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'c. 1077-1075 a.e.c. (tiempo narrativo: al final de los dos años de reinado de Is-Bóset)'
+companions: []
+summary: Abner pacta con David y le lleva a Mical. Su esposo, Paltiel, la sigue llorando hasta Bahurim. En Hebrón David recibe
+  a Abner y lo despide, pero Joab lo hace volver desde la cisterna de Sirá y lo mata.
+reason: 2Sa 3:12-27 da las etapas; 3:15 no dice dónde estaba Mical, así que el viaje empieza en Bahurim. Perspicacia «Abner»,
+  párr. 6, y «Paltiel», núm. 2. Entre 1077 y c. 1075 a.e.c.
+sources:
+- 2-samuel-3
+- it-abner
+- it-bahurim
+- it-paltiel
+- it-mical
+- it-joab
+- it-hebron
+- it-is-boset
+- it-david
+- si-3
+checked_on: '2026-09-30'
+status: verified
+narrative_order:
+  series: abner
+  order: 2
+stops:
+- order: 1
+  place: bahurim
+  reference: 2Sa 3:15, 16
+  date:
+    from: -1076
+    to: -1074
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'c. 1077-1075 a.e.c. (tiempo narrativo: al final de los dos años de reinado de Is-Bóset)'
+  note: Abner manda a Paltiel que se vuelva.
+  reason: '2Sa 3:16: Paltiel sigue a Mical hasta Bahurim, donde Abner le dice que regrese. Fecha: la del suceso is-boset-devuelve-a-mical-a-david.'
+  sources:
+  - 2-samuel-3
+  - it-bahurim
+  - it-paltiel
+  - si-3
+  - it-is-boset
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: hebron
+  reference: 2Sa 3:19-21
+  date:
+    from: -1076
+    to: -1074
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'c. 1077-1075 a.e.c. (tiempo narrativo: al final de los dos años de reinado de Is-Bóset)'
+  note: Va con 20 hombres y David les da un banquete.
+  reason: '2Sa 3:19, 20: Abner va a ver a David a Hebrón. Fecha: la del suceso abner-visita-a-david-en-hebron.'
+  sources:
+  - 2-samuel-3
+  - it-abner
+  - it-hebron
+  - si-3
+  - it-is-boset
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: cisterna-de-sira
+  reference: 2Sa 3:26
+  date:
+    from: -1076
+    to: -1074
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'c. 1077-1075 a.e.c. (tiempo narrativo: al final de los dos años de reinado de Is-Bóset)'
+  note: Los mensajeros de Joab lo alcanzan allí.
+  reason: '2Sa 3:26: Joab envía mensajeros tras Abner, que regresa desde la cisterna de Sirá sin que David lo sepa. Fecha:
+    la del suceso joab-mata-a-abner.'
+  sources:
+  - 2-samuel-3
+  - it-abner
+  - it-joab
+  - si-3
+  - it-is-boset
+  checked_on: '2026-09-30'
+  status: verified
+- order: 4
+  place: hebron
+  reference: 2Sa 3:27
+  date:
+    from: -1076
+    to: -1074
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'c. 1077-1075 a.e.c. (tiempo narrativo: al final de los dos años de reinado de Is-Bóset)'
+  note: Joab lo mata en la puerta de la ciudad.
+  reason: '2Sa 3:27: al volver Abner a Hebrón, Joab lo aparta dentro de la puerta y lo apuñala. Fecha: la del suceso joab-mata-a-abner.'
+  sources:
+  - 2-samuel-3
+  - it-abner
+  - it-joab
+  - it-hebron
+  - si-3
+  - it-is-boset
+  checked_on: '2026-09-30'
+  status: verified

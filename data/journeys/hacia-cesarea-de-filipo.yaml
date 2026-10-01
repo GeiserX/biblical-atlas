@@ -1,0 +1,182 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: hacia-cesarea-de-filipo
+name: De Magadán a Cesarea de Filipo y vuelta a Capernaúm
+person: jesus
+reference: Mr 8:13–9:50; Mt 16:5–18:35; Lu 9:18-50
+date:
+  from: 32
+  to: 32
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 32 e.c., tras la Pascua
+narrative_order:
+  series: jesus
+  order: 11
+companions:
+- pedro
+- santiago-hijo-de-zebedeo
+- juan-apostol
+summary: Cruza a Betsaida y sube al norte, a las aldeas de Cesarea de Filipo, donde Pedro lo reconoce como el Cristo. En una
+  montaña alta se transfigura ante tres apóstoles; luego cruza Galilea sin darse a conocer hasta Capernaúm.
+reason: Marcos 8 y 9 dan las etapas. Fechas de los sucesos levadura-y-ciego-de-betsaida, llaves-del-reino, transfiguracion,
+  cura-al-muchacho-endemoniado, segundo-anuncio-de-su-muerte, moneda-en-la-boca-del-pez y el-mayor-en-el-reino (tablas A7-D
+  y A7-E).
+sources:
+- marcos-8
+- marcos-9
+- mateo-16
+- mateo-17
+- mateo-18
+- lucas-9
+- nota-mateo-17
+- tnm-a7-d
+- tnm-a7-e
+- jy-cap-59
+- jy-cap-60
+- jy-cap-61
+- jy-cap-62
+- jy-cap-63
+- jy-cap-64
+- it-cesarea-de-filipo
+- it-hermon
+checked_on: '2026-09-30'
+status: verified
+stops:
+- order: 1
+  place: magadan
+  reference: Mt 16:4, 5; Mr 8:13
+  date:
+    from: 32
+    to: 32
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 32 e.c., tras la Pascua
+  note: Enlace con el viaje anterior.
+  reason: Mr 8:13 dice que los deja y vuelve a subir a la barca hacia la otra orilla. Fecha del suceso senal-de-jonas-en-magadan.
+  sources:
+  - marcos-8
+  - mateo-16
+  - tnm-a7-d
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: betsaida
+  reference: Mr 8:13-26
+  date:
+    from: 32
+    to: 32
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 32 e.c., tras la Pascua
+  note: Cura a un ciego.
+  reason: 'Mr 8:22: llegan a Betsaida y le traen a un ciego. Fecha del suceso levadura-y-ciego-de-betsaida.'
+  sources:
+  - marcos-8
+  - tnm-a7-e
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: cesarea-de-filipo
+  reference: Mr 8:27–9:1; Mt 16:13-28
+  date:
+    from: 32
+    to: 32
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 32 e.c., tras la Pascua
+  note: Las aldeas de alrededor. Pedro lo reconoce como el Cristo.
+  reason: Mr 8:27 lo lleva con los discípulos a los pueblos que rodean Cesarea de Filipo. Fecha del suceso llaves-del-reino.
+  sources:
+  - marcos-8
+  - mateo-16
+  - tnm-a7-e
+  - it-cesarea-de-filipo
+  checked_on: '2026-09-30'
+  status: verified
+- order: 4
+  place: monte-de-la-transfiguracion
+  reference: Mr 9:2-13; Mt 17:1-13
+  date:
+    from: 32
+    to: 32
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 32 e.c., tras la Pascua
+  note: Seis días después, con Pedro, Santiago y Juan. La tabla A7-E dice que probablemente fue el Hermón.
+  reason: Mr 9:2 sube con los tres a una montaña alta. Lugar y fecha del suceso transfiguracion.
+  sources:
+  - marcos-9
+  - mateo-17
+  - nota-mateo-17
+  - tnm-a7-e
+  - it-hermon
+  checked_on: '2026-09-30'
+  status: verified
+- order: 5
+  place: cesarea-de-filipo
+  reference: Mr 9:14-29
+  date:
+    from: 32
+    to: 32
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 32 e.c., tras la Pascua
+  note: Cura a un muchacho endemoniado.
+  reason: Mr 9:14 los reúne con los demás discípulos sin nombrar el lugar; la tabla A7-E pone «por Cesarea de Filipo». Fecha
+    del suceso cura-al-muchacho-endemoniado.
+  sources:
+  - marcos-9
+  - tnm-a7-e
+  checked_on: '2026-09-30'
+  status: pending
+- order: 6
+  place: galilea
+  reference: Mr 9:30-32; Mt 17:22, 23
+  date:
+    from: 32
+    to: 32
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 32 e.c., tras la Pascua
+  note: No quiere que nadie lo sepa; anuncia otra vez su muerte.
+  reason: 'Mr 9:30: salen de allí y cruzan Galilea. Fecha del suceso segundo-anuncio-de-su-muerte.'
+  sources:
+  - marcos-9
+  - mateo-17
+  - tnm-a7-e
+  checked_on: '2026-09-30'
+  status: verified
+- order: 7
+  place: capernaum
+  reference: Mr 9:33-50; Mt 17:24–18:35
+  date:
+    from: 32
+    to: 32
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 32 e.c., tras la Pascua
+  note: La moneda en la boca del pez y quién es el mayor.
+  reason: Mr 9:33 y Mt 17:24 los hacen llegar a Capernaúm. Fechas de los sucesos moneda-en-la-boca-del-pez y el-mayor-en-el-reino.
+  sources:
+  - marcos-9
+  - mateo-17
+  - mateo-18
+  - tnm-a7-e
+  checked_on: '2026-09-30'
+  status: verified

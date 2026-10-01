@@ -1,0 +1,94 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: regreso-de-esdras
+name: Regreso de Esdras
+person: esdras
+reference: Esd 7:1–8:36
+date:
+  from: -467
+  to: -467
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: 468 a.e.c. (del 1 de nisán al 1 de ab)
+companions: []
+summary: Con una carta del rey Artajerjes, el sacerdote y copista Esdras reúne a los que quieren volver junto al río Ahavá,
+  busca levitas, ayuna pidiendo protección y llega a Jerusalén sin escolta cuatro meses después.
+reason: El estudio 3 fecha la vuelta de Esdras en 468 a.e.c. (suceso esdras-regresa-468). Esd 7:9 y 8:31 dan los días de salida
+  y de llegada.
+sources:
+- si-3
+- it-esdras
+- it-artajerjes
+- it-ahava
+- esdras-7
+- esdras-8
+checked_on: '2026-09-30'
+status: verified
+stops:
+- order: 1
+  place: babilonia
+  reference: Esd 7:6, 9
+  date:
+    from: -467
+    to: -467
+    precision: day
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: 1 de nisán de 468 a.e.c.
+    detail:
+      month: nisan
+      day: 1
+  note: Lleva la carta del rey, que autoriza a ir con él a quien lo desee.
+  reason: 'Esd 7:6, 9: sale de Babilonia el día 1 del mes primero. Año del suceso esdras-regresa-468 (estudio 3).'
+  sources:
+  - esdras-7
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: rio-ahava
+  reference: Esd 8:15-31
+  date:
+    from: -467
+    to: -467
+    precision: day
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: 12 de nisán de 468 a.e.c. (salida hacia Jerusalén)
+    detail:
+      month: nisan
+      day: 12
+  note: Acampan tres días. Desde allí piden levitas a Casifía (Esd 8:17), un lugar que el atlas no sitúa, y ayunan antes de
+    seguir.
+  reason: 'Esd 8:15, 21 y 31: reúne al grupo junto al río que va a Ahavá y parte de allí el día 12 del primer mes.'
+  sources:
+  - esdras-8
+  - it-ahava
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: jerusalen
+  reference: Esd 7:8, 9; 8:32-36
+  date:
+    from: -467
+    to: -467
+    precision: day
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: 1 de ab de 468 a.e.c.
+    detail:
+      month: ab
+      day: 1
+  note: Al cuarto día entregan en el templo, contados y pesados, los donativos que traían.
+  reason: 'Esd 7:9 y 8:32: entra en Jerusalén el día 1 del mes quinto. Fecha del suceso esdras-regresa-468.'
+  sources:
+  - esdras-7
+  - esdras-8
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified

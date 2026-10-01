@@ -1,0 +1,70 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: moises-sube-al-nebo
+name: Moisés sube al monte Nebo
+person: moises
+reference: Dt 32:48-52; 34:1-8
+date:
+  from: -1472
+  to: -1472
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 1473 a.e.c.
+companions: []
+summary: Acabados sus discursos, Moisés deja las llanuras de Moab y sube al Nebo, hasta la cima del Pisgá. Jehová le muestra
+  la tierra prometida y allí muere, con 120 años.
+reason: Dt 32:48-52 da la orden y Dt 34:1-8 cuenta la subida y la muerte. El estudio 3 fecha la muerte de Moisés en 1473 a.e.c.
+sources:
+- deuteronomio-32
+- deuteronomio-34
+- si-3
+- it-moises
+- it-nebo
+- it-pisga
+checked_on: '2026-09-30'
+status: verified
+narrative_order:
+  series: moises
+  order: 7
+stops:
+- order: 1
+  place: llanuras-deserticas-de-moab
+  reference: Dt 32:48-52; 34:1
+  date:
+    from: -1472
+    to: -1472
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 1473 a.e.c.
+  note: Jehová le ordena subir, ver Canaán y morir en la montaña.
+  reason: 'Dt 34:1: Moisés sube desde las llanuras desérticas de Moab. Fecha del suceso «Jehová manda a Moisés subir al monte
+    Nebo».'
+  sources:
+  - deuteronomio-32
+  - deuteronomio-34
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: monte-nebo
+  reference: Dt 34:1-8
+  date:
+    from: -1472
+    to: -1472
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 1473 a.e.c.
+  note: Ve la tierra desde la cima del Pisgá. Jehová lo entierra en un valle de Moab, frente a Bet-Peor.
+  reason: Dt 34:1, 5 pone la subida al monte Nebo y la muerte en la tierra de Moab. Fecha del suceso «Muere Moisés en el monte
+    Nebo».
+  sources:
+  - deuteronomio-34
+  - it-nebo
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified

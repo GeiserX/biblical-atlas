@@ -1,0 +1,85 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: urias-va-a-jerusalen
+name: Urías va a Jerusalén y vuelve a Rabá
+person: urias-el-hitita
+reference: 2Sa 11:6-17
+date:
+  from: -1069
+  to: -1039
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1070 y c. 1040 a.e.c. (tiempo narrativo: con el Arca ya en Jerusalén y antes de terminarse 2 Samuel)'
+companions: []
+summary: Durante el sitio de Rabá, David hace venir a Urías para tapar su pecado con Bat-Seba. Urías no quiere ir a su casa,
+  y el rey lo devuelve a Joab con una carta que ordena dejarlo solo en la batalla.
+reason: '2Sa 11:1-17. Perspicacia «Urías», núm. 1, y «Rabá», núm. 1: una flecha lo alcanzó junto al muro. Entre 1070 y c.
+  1040 a.e.c. (estudio 3).'
+sources:
+- 2-samuel-11
+- si-3
+- it-urias
+- it-raba
+checked_on: '2026-09-30'
+status: verified
+stops:
+- order: 1
+  place: raba
+  reference: 2Sa 11:1, 6
+  date:
+    from: -1069
+    to: -1039
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1070 y c. 1040 a.e.c. (tiempo narrativo: con el Arca ya en Jerusalén y antes de terminarse 2 Samuel)'
+  note: Está en el sitio con Joab.
+  reason: '2Sa 11:1, 6: el ejército cerca Rabá y Joab manda a Urías al rey. Fecha: la del suceso joab-sitia-raba.'
+  sources:
+  - 2-samuel-11
+  - it-raba
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: jerusalen
+  reference: 2Sa 11:7-14
+  date:
+    from: -1069
+    to: -1039
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1070 y c. 1040 a.e.c. (tiempo narrativo: con el Arca ya en Jerusalén y antes de terminarse 2 Samuel)'
+  note: Pasa la noche junto a la puerta del palacio.
+  reason: '2Sa 11:7-13: Urías llega y pasa dos días en Jerusalén sin bajar a su casa. Fecha: la del suceso urias-se-niega-a-ir-a-su-casa.'
+  sources:
+  - 2-samuel-11
+  - it-urias
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: raba
+  reference: 2Sa 11:14-17
+  date:
+    from: -1069
+    to: -1039
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1070 y c. 1040 a.e.c. (tiempo narrativo: con el Arca ya en Jerusalén y antes de terminarse 2 Samuel)'
+  note: Muere cerca de la muralla.
+  reason: '2Sa 11:14-17: lleva la carta a Joab y muere en el combate ante la ciudad; Perspicacia «Rabá», núm. 1. Fecha: la
+    del suceso muerte-de-urias.'
+  sources:
+  - 2-samuel-11
+  - it-urias
+  - it-raba
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified

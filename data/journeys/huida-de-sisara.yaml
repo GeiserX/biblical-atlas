@@ -1,0 +1,89 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: huida-de-sisara
+name: Huida de Sísara
+person: sisara-de-haroset
+reference: Jue 4:13-21
+date:
+  from: -1449
+  to: -1172
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre c. 1450 y c. 1173 a.e.c. (tiempo narrativo: tras la muerte de Josué y antes de que Jefté empiece a juzgar)'
+companions: []
+summary: Sísara lleva sus 900 carros desde Haróset hasta el arroyo de Cisón. Vencido por Barac, deja el carro, huye a pie
+  hasta la tienda de Jael y allí muere mientras duerme.
+reason: 'Jueces 4:13-21 da la salida, la derrota y la huida. Sin año propio: entre la muerte de Josué y el comienzo de Jefté,
+  como los sucesos del capítulo.'
+sources:
+- jueces-4
+- it-sisara
+- it-jael
+- it-zaananim
+- it-haroset
+- si-3
+- it-jefte
+checked_on: '2026-09-30'
+status: verified
+stops:
+- order: 1
+  place: haroset
+  reference: Jue 4:2, 13
+  date:
+    from: -1449
+    to: -1172
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre c. 1450 y c. 1173 a.e.c. (tiempo narrativo: tras la muerte de Josué y antes de que Jefté empiece a juzgar)'
+  note: Su cuartel, según Perspicacia «Haróset».
+  reason: Jue 4:2 dice que Sísara vivía en Haróset, y 4:13 que salió de allí con sus carros. Fecha del suceso «Barac derrota
+    al ejército de Sísara junto al Cisón».
+  sources:
+  - jueces-4
+  - it-haroset
+  - it-jefte
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: cison
+  reference: Jue 4:13-15
+  date:
+    from: -1449
+    to: -1172
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre c. 1450 y c. 1173 a.e.c. (tiempo narrativo: tras la muerte de Josué y antes de que Jefté empiece a juzgar)'
+  note: null
+  reason: Jue 4:13 lo lleva al arroyo de Cisón, y 4:15 cuenta que dejó el carro y escapó a pie. Fecha del suceso «Barac derrota
+    al ejército de Sísara junto al Cisón».
+  sources:
+  - jueces-4
+  - it-cison
+  - it-sisara
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: zaananim
+  reference: Jue 4:17-21
+  date:
+    from: -1449
+    to: -1172
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre c. 1450 y c. 1173 a.e.c. (tiempo narrativo: tras la muerte de Josué y antes de que Jefté empiece a juzgar)'
+  note: Jael, esposa de Héber el quenita, lo esconde y lo mata mientras duerme.
+  reason: Jue 4:17 lo lleva a pie hasta la tienda de Jael, que 4:11 pone junto al árbol de Zaananim. Fecha del suceso «Jael
+    mata a Sísara en su tienda».
+  sources:
+  - jueces-4
+  - it-jael
+  - it-zaananim
+  checked_on: '2026-09-30'
+  status: verified

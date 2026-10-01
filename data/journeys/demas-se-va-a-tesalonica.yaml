@@ -1,0 +1,61 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: demas-se-va-a-tesalonica
+name: Demas deja a Pablo
+person: demas
+reference: 2Ti 4:10; Col 4:14; Flm 24
+date:
+  from: 65
+  to: 65
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 65 e.c.
+companions: []
+summary: Demas, que había estado con Pablo en su primer encierro, lo abandona en el segundo y se marcha a Tesalónica, quizá
+  su ciudad, por amor a este sistema.
+reason: Perspicacia «Demas» y la nota de estudio de 2Ti 4:10; suceso segundo-encierro-en-roma, c. 65.
+sources:
+- 2-timoteo-4
+- colosenses-4
+- filemon-1
+- it-demas
+checked_on: '2026-09-30'
+status: verified
+stops:
+- order: 1
+  place: roma
+  reference: 2Ti 4:10
+  date:
+    from: 65
+    to: 65
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 65 e.c.
+  note: null
+  reason: 'El texto no dice de dónde se fue: 2 Timoteo se escribe desde Roma, en el segundo encierro (regla 2b). Suceso segundo-encierro-en-roma.'
+  sources:
+  - 2-timoteo-4
+  - it-demas
+  checked_on: '2026-09-30'
+  status: pending
+- order: 2
+  place: tesalonica
+  reference: 2Ti 4:10
+  date:
+    from: 65
+    to: 65
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 65 e.c.
+  note: Pablo no dice que se volviera un opositor.
+  reason: '2Ti 4:10: me abandonó y se fue a Tesalónica. Suceso segundo-encierro-en-roma, c. 65.'
+  sources:
+  - 2-timoteo-4
+  - it-demas
+  checked_on: '2026-09-30'
+  status: verified

@@ -1,0 +1,109 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: david-vuelve-a-jerusalen
+name: David vuelve a Jerusalén
+person: david
+reference: 2Sa 19:8–20:3
+date:
+  from: -1069
+  to: -1039
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1070 y c. 1040 a.e.c. (tiempo narrativo: tras la rebelión de Absalón, con David ya rey en Jerusalén)'
+companions: []
+summary: Judá pide al rey que vuelva. David baja de Mahanaim al Jordán, perdona a Simeí y se despide de Barzilái. Cruza hacia
+  Guilgal con Kimham y, tras la disputa entre Judá e Israel, llega a su casa en Jerusalén.
+reason: '2Sa 19:8-43 y 20:2, 3 dan las etapas. Perspicacia «Simeí», núm. 12, y «Zibá». Sin año: entre 1070 (estudio 3) y c.
+  1040 a.e.c. (tabla de los libros).'
+sources:
+- 2-samuel-19
+- 2-samuel-20
+- it-simei
+- it-ziba
+- it-mefiboset
+- si-3
+- tnm-tabla
+checked_on: '2026-09-30'
+status: verified
+narrative_order:
+  series: david
+  order: 12
+stops:
+- order: 1
+  place: mahanaim
+  reference: 2Sa 19:8-14
+  date:
+    from: -1069
+    to: -1039
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1070 y c. 1040 a.e.c. (tiempo narrativo: tras la rebelión de Absalón, con David ya rey en Jerusalén)'
+  note: Se sienta a la puerta y manda recado a los ancianos de Judá.
+  reason: '2Sa 19:8-14: el rey sigue en Mahanaim cuando Judá le pide que vuelva. Fecha: la del suceso david-pide-a-juda-que-lo-haga-volver.'
+  sources:
+  - 2-samuel-19
+  - si-3
+  - tnm-tabla
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: rio-jordan
+  reference: 2Sa 19:15-39
+  date:
+    from: -1069
+    to: -1039
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1070 y c. 1040 a.e.c. (tiempo narrativo: tras la rebelión de Absalón, con David ya rey en Jerusalén)'
+  note: Simeí baja desde Bahurim y Barzilái desde Roguelim.
+  reason: '2Sa 19:15-39: el rey llega al Jordán, perdona a Simeí y se despide de Barzilái. Fecha: la del suceso david-perdona-a-simei-junto-al-jordan.'
+  sources:
+  - 2-samuel-19
+  - it-simei
+  - si-3
+  - tnm-tabla
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: guilgal
+  reference: 2Sa 19:40-43
+  date:
+    from: -1069
+    to: -1039
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1070 y c. 1040 a.e.c. (tiempo narrativo: tras la rebelión de Absalón, con David ya rey en Jerusalén)'
+  note: Judá e Israel discuten por el rey.
+  reason: '2Sa 19:15, 40: el rey cruza hacia Guilgal y Kimham va con él. Fecha: la del suceso juda-e-israel-discuten-por-el-rey-en-guilgal.'
+  sources:
+  - 2-samuel-19
+  - si-3
+  - tnm-tabla
+  checked_on: '2026-09-30'
+  status: verified
+- order: 4
+  place: jerusalen
+  reference: 2Sa 20:2, 3
+  date:
+    from: -1069
+    to: -1039
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1070 y c. 1040 a.e.c. (tiempo narrativo: tras la rebelión de Absalón, con David ya rey en Jerusalén)'
+  note: Recluye a las diez concubinas.
+  reason: '2Sa 20:2, 3: los de Judá lo acompañan desde el Jordán y llega a su casa de Jerusalén. Fecha: la del suceso david-recluye-a-sus-diez-concubinas.'
+  sources:
+  - 2-samuel-20
+  - si-3
+  - tnm-tabla
+  checked_on: '2026-09-30'
+  status: verified

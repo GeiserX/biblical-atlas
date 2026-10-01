@@ -1,0 +1,113 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: pedro-de-lida-a-cesarea
+name: Pedro en Lida, Jope y Cesarea
+person: pedro
+reference: Hch 9:32–11:18
+date:
+  from: 36
+  to: 36
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: 36 e.c.
+narrative_order:
+  series: pedro
+  order: 3
+companions: []
+summary: Recorriendo la región, Pedro cura a Eneas en Lida y resucita a Dorcas en Jope. Tras una visión va a Cesarea y predica
+  a Cornelio y los suyos; en Jerusalén explica por qué entró en casa de gentiles.
+reason: Hechos 9 a 11 da las paradas en orden. Fechas de los sucesos pedro-sana-a-eneas, pedro-resucita-a-dorcas, vision-de-pedro-en-jope,
+  pedro-predica-a-cornelio y pedro-da-cuentas-en-jerusalen.
+sources:
+- hch-9
+- hechos-10
+- hechos-11
+- si-3
+- it-pedro
+- it-lida
+- it-jope
+- it-cornelio
+- bt-8
+- bt-9
+checked_on: '2026-09-30'
+status: verified
+stops:
+- order: 1
+  place: lida
+  reference: Hch 9:32-35
+  date:
+    from: 36
+    to: 36
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: 36 e.c.
+  note: El texto no dice de dónde sale.
+  reason: 'Hch 9:32: viajando por toda la región, baja a ver a los santos de Lida. Fecha del suceso pedro-sana-a-eneas.'
+  sources:
+  - hch-9
+  - it-lida
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: jope
+  reference: Hch 9:36–10:23
+  date:
+    from: 36
+    to: 36
+    precision: season
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: otoño de 36 e.c.
+    detail: &id001
+      season: autumn
+  note: Resucita a Dorcas y se aloja con Simón el curtidor, donde tiene la visión.
+  reason: 'Hch 9:38, 39: lo llaman de Jope, cerca de Lida, y va. Fechas de los sucesos pedro-resucita-a-dorcas y vision-de-pedro-en-jope.'
+  sources:
+  - hch-9
+  - hechos-10
+  - it-jope
+  - bt-9
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: cesarea
+  reference: Hch 10:24-48
+  date:
+    from: 36
+    to: 36
+    precision: season
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: otoño de 36 e.c.
+    detail: *id001
+  note: Lo acompañan unos hermanos de Jope.
+  reason: 'Hch 10:23, 24: sale al día siguiente y llega a Cesarea un día después. Fecha del suceso pedro-predica-a-cornelio.'
+  sources:
+  - hechos-10
+  - si-3
+  - it-cornelio
+  checked_on: '2026-09-30'
+  status: verified
+- order: 4
+  place: jerusalen
+  reference: Hch 11:2-18
+  date:
+    from: 36
+    to: 36
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: 36 e.c. (poco después de la visita a Cornelio)
+  note: Los partidarios de la circuncisión lo critican.
+  reason: Hch 11:2 dice que Pedro sube a Jerusalén. Fecha del suceso pedro-da-cuentas-en-jerusalen.
+  sources:
+  - hechos-11
+  - it-pedro
+  checked_on: '2026-09-30'
+  status: verified

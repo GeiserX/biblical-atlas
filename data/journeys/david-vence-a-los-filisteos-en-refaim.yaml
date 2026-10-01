@@ -1,0 +1,152 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: david-vence-a-los-filisteos-en-refaim
+name: David vence dos veces a los filisteos en Refaím
+person: david
+reference: 2Sa 5:17-25; 1Cr 14:8-17
+date:
+  from: -1069
+  to: -1069
+  precision: year
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'c. 1070 a.e.c. (tiempo narrativo: tras tomar Sion y antes de subir el Arca)'
+companions: []
+summary: Cuando los filisteos se despliegan en el valle de Refaím, David baja al refugio y los vence en Baal-Perazim. La segunda
+  vez los rodea, cae sobre ellos por la espalda y los persigue desde Gueba hasta Guézer.
+reason: 2Sa 5:17-25 y 1Cr 14:8-17. Perspicacia «David», párr. 22, cuenta las dos batallas tras la toma de Sion y antes del
+  Arca; «Adulam», párr. 3, dice que fue su base en estas guerras.
+sources:
+- 2-samuel-5
+- 1-cronicas-14
+- it-baal-perazim
+- it-david
+- it-adulam
+- it-guezer
+- si-3
+checked_on: '2026-09-30'
+status: verified
+narrative_order:
+  series: david
+  order: 7
+stops:
+- order: 1
+  place: jerusalen
+  reference: 2Sa 5:17
+  date:
+    from: -1069
+    to: -1069
+    precision: year
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'c. 1070 a.e.c. (tiempo narrativo: tras tomar Sion y antes de subir el Arca)'
+  note: Ya vive en la Ciudad de David.
+  reason: '2Sa 5:17 no nombra la salida; ya reinaba en Jerusalén (2Sa 5:9-16). Es deducción nuestra. Fecha: la del suceso
+    david-vence-a-los-filisteos-en-baal-perazim.'
+  sources:
+  - 2-samuel-5
+  - it-david
+  - si-3
+  checked_on: '2026-09-30'
+  status: pending
+- order: 2
+  place: adulam
+  reference: 2Sa 5:17
+  date:
+    from: -1069
+    to: -1069
+    precision: year
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'c. 1070 a.e.c. (tiempo narrativo: tras tomar Sion y antes de subir el Arca)'
+  note: El refugio adonde baja; Perspicacia lo relaciona con Adulam.
+  reason: '2Sa 5:17 dice que bajó al refugio; Perspicacia «Adulam», párr. 3, cita este pasaje y dice que usó Adulam como base
+    contra los filisteos. Fecha: la del suceso david-vence-a-los-filisteos-en-baal-perazim.'
+  sources:
+  - 2-samuel-5
+  - it-adulam
+  - si-3
+  checked_on: '2026-09-30'
+  status: pending
+- order: 3
+  place: baal-perazim
+  reference: 2Sa 5:18-21
+  date:
+    from: -1069
+    to: -1069
+    precision: year
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'c. 1070 a.e.c. (tiempo narrativo: tras tomar Sion y antes de subir el Arca)'
+  note: Los filisteos dejan allí sus ídolos.
+  reason: '2Sa 5:20 y 1Cr 14:11: David va a Baal-Perazim y los derrota. Fecha: la del suceso david-vence-a-los-filisteos-en-baal-perazim.'
+  sources:
+  - 2-samuel-5
+  - 1-cronicas-14
+  - it-baal-perazim
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 4
+  place: valle-de-refaim
+  reference: 2Sa 5:22-25
+  date:
+    from: -1069
+    to: -1069
+    precision: year
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'c. 1070 a.e.c. (tiempo narrativo: tras tomar Sion y antes de subir el Arca)'
+  note: Da la vuelta y los ataca desde atrás.
+  reason: '2Sa 5:22-25: los filisteos vuelven al valle de Refaím y David los sorprende por la espalda. Fecha: la del suceso
+    david-vence-otra-vez-a-los-filisteos-en-el-valle-de-refaim.'
+  sources:
+  - 2-samuel-5
+  - it-david
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 5
+  place: gueba
+  reference: 2Sa 5:25
+  date:
+    from: -1069
+    to: -1069
+    precision: year
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'c. 1070 a.e.c. (tiempo narrativo: tras tomar Sion y antes de subir el Arca)'
+  note: 1Cr 14:16 dice «desde Gabaón».
+  reason: '2Sa 5:25: la persecución empieza en Gueba. Fecha: la del suceso david-vence-otra-vez-a-los-filisteos-en-el-valle-de-refaim.'
+  sources:
+  - 2-samuel-5
+  - 1-cronicas-14
+  - it-guezer
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 6
+  place: guezer
+  reference: 2Sa 5:25
+  date:
+    from: -1069
+    to: -1069
+    precision: year
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'c. 1070 a.e.c. (tiempo narrativo: tras tomar Sion y antes de subir el Arca)'
+  note: Fin de la persecución.
+  reason: '2Sa 5:25 y 1Cr 14:16: la persecución llega hasta Guézer; Perspicacia «Guézer». Fecha: la del suceso david-vence-otra-vez-a-los-filisteos-en-el-valle-de-refaim.'
+  sources:
+  - 2-samuel-5
+  - 1-cronicas-14
+  - it-guezer
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified

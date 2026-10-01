@@ -1,0 +1,53 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: rehum-y-simsai-detienen-la-obra
+name: Rehúm y Simsái detienen la obra
+person: rehum-funcionario-persa
+reference: Esd 4:17-24
+date: &id001
+  from: -521
+  to: -521
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: 522 a.e.c.
+companions:
+- simsai
+summary: Con la respuesta de Artajerjes en la mano, el alto funcionario persa Rehúm y el escriba Simsái acuden deprisa a Jerusalén
+  y paran por la fuerza la reconstrucción, que queda detenida hasta el segundo año de Darío.
+reason: El estudio 3 fecha en 522 a.e.c. la prohibición de la obra (suceso obra-del-templo-prohibida-522). Esd 4:23 cuenta
+  que fueron a Jerusalén en cuanto les leyeron la carta del rey.
+sources:
+- si-3
+- it-artajerjes
+- it-rehum
+- it-simsai
+- esdras-4
+checked_on: '2026-09-30'
+status: verified
+stops:
+- order: 1
+  place: samaria
+  reference: Esd 4:17
+  date: *id001
+  note: El texto dice que sus compañeros vivían en Samaria.
+  reason: 'Esd 4:17 no dice de dónde salieron. Perspicacia («Rehúm», núm. 3) cree probable que Rehúm viviera en Samaria: la
+    salida es una deducción. Año del suceso obra-del-templo-prohibida-522.'
+  sources:
+  - esdras-4
+  - it-rehum
+  - si-3
+  checked_on: '2026-09-30'
+  status: pending
+- order: 2
+  place: jerusalen
+  reference: Esd 4:23, 24
+  date: *id001
+  note: null
+  reason: 'Esd 4:23, 24: van a toda prisa a Jerusalén y hacen parar la obra del templo. Fecha del suceso obra-del-templo-prohibida-522
+    (estudio 3).'
+  sources:
+  - esdras-4
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified

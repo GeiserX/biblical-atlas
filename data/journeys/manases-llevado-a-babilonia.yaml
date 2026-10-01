@@ -1,0 +1,79 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: manases-llevado-a-babilonia
+name: Manasés, llevado a Babilonia
+person: manases-de-juda
+reference: 2Cr 33:10-13
+date:
+  from: -715
+  to: -660
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 716 y 661 a.e.c. (tiempo narrativo: durante el reinado de Manasés)'
+companions: []
+summary: Los jefes del ejército asirio capturan a Manasés con garfios y se lo llevan con grilletes a Babilonia. Allí se humilla
+  y ora a Jehová, que lo devuelve a su trono en Jerusalén.
+reason: 2Cr 33:10-13 da el destierro y la vuelta; no dice el año. Fecha del reinado de Manasés, como el suceso manases-llena-juda-de-idolatria.
+sources:
+- 2-cronicas-33
+- it-manases
+- it-babilonia
+- tnm-a6-b
+checked_on: '2026-09-30'
+status: verified
+stops:
+- order: 1
+  place: jerusalen
+  reference: 2Cr 33:10, 11
+  date:
+    from: -715
+    to: -660
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 716 y 661 a.e.c. (tiempo narrativo: durante el reinado de Manasés)'
+  note: 'Salida deducida: el texto no dice dónde lo capturan.'
+  reason: 2Cr 33:11 cuenta la captura sin decir el lugar; Jerusalén es su capital (2Cr 33:1). Fecha del reinado (suceso manases-llena-juda-de-idolatria).
+  sources:
+  - 2-cronicas-33
+  - it-manases
+  checked_on: '2026-09-30'
+  status: pending
+- order: 2
+  place: babilonia
+  reference: 2Cr 33:11-13
+  date:
+    from: -715
+    to: -660
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 716 y 661 a.e.c. (tiempo narrativo: durante el reinado de Manasés)'
+  note: Perspicacia «Manasés» la llama una de las ciudades reales del rey de Asiria.
+  reason: 2Cr 33:11 dice que lo llevaron a Babilonia; Perspicacia «Manasés», núm. 4, lo confirma. Fecha del reinado.
+  sources:
+  - 2-cronicas-33
+  - it-manases
+  - it-babilonia
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: jerusalen
+  reference: 2Cr 33:13
+  date:
+    from: -715
+    to: -660
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 716 y 661 a.e.c. (tiempo narrativo: durante el reinado de Manasés)'
+  note: null
+  reason: '2Cr 33:13: Dios lo devuelve a su reinado en Jerusalén. Fecha del reinado.'
+  sources:
+  - 2-cronicas-33
+  checked_on: '2026-09-30'
+  status: verified

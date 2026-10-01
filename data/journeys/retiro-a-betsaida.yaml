@@ -1,0 +1,138 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: retiro-a-betsaida
+name: Retiro a Betsaida y vuelta por Genesaret
+person: jesus
+reference: Mr 6:30-56; Mt 14:13-36; Lu 9:10-17; Jn 6:1-71
+date:
+  from: 32
+  to: 32
+  precision: month
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: cerca de la Pascua de 32 e.c.
+  detail: &id001
+    month: nisan
+narrative_order:
+  series: jesus
+  order: 9
+companions: []
+summary: Cuando vuelven los apóstoles, se los lleva en barca hacia Betsaida para descansar. Allí da de comer a unos 5.000
+  hombres; esa noche camina sobre el mar, desembarcan en Genesaret y enseña en la sinagoga de Capernaúm.
+reason: Marcos 6 y Juan 6 dan el orden. Fechas de los sucesos alimenta-a-5000, camina-sobre-el-mar y pan-de-la-vida (tabla
+  A7-D).
+sources:
+- marcos-6
+- mateo-14
+- lucas-9
+- juan-6
+- tnm-a7-d
+- jy-cap-52
+- jy-cap-53
+- jy-cap-54
+- jy-cap-55
+- it-betsaida
+- it-genesaret
+checked_on: '2026-09-30'
+status: verified
+stops:
+- order: 1
+  place: capernaum
+  reference: Mr 6:30-32
+  date:
+    from: 32
+    to: 32
+    precision: month
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: cerca de la Pascua de 32 e.c.
+    detail: *id001
+  note: Los apóstoles vuelven de su gira.
+  reason: Mr 6:30-32 no nombra el lugar de salida; la tabla A7-D pone «Capernaúm (?)». Fecha del suceso alimenta-a-5000.
+  sources:
+  - marcos-6
+  - tnm-a7-d
+  checked_on: '2026-09-30'
+  status: pending
+- order: 2
+  place: betsaida
+  reference: Lu 9:10-17; Jn 6:1-15
+  date:
+    from: 32
+    to: 32
+    precision: month
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: cerca de la Pascua de 32 e.c.
+    detail: *id001
+  note: Al noreste del lago. Da de comer a unos 5.000 hombres.
+  reason: Lu 9:10 se los lleva hacia una ciudad llamada Betsaida. Fecha del suceso alimenta-a-5000.
+  sources:
+  - lucas-9
+  - juan-6
+  - tnm-a7-d
+  - it-betsaida
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: mar-de-galilea
+  reference: Mr 6:45-52; Jn 6:16-21
+  date:
+    from: 32
+    to: 32
+    precision: month
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: cerca de la Pascua de 32 e.c.
+    detail: *id001
+  note: Camina sobre el agua hasta la barca.
+  reason: 'Mr 6:45-48: manda a los discípulos cruzar en barca y los alcanza andando sobre el mar. Fecha del suceso camina-sobre-el-mar.'
+  sources:
+  - marcos-6
+  - juan-6
+  - tnm-a7-d
+  checked_on: '2026-09-30'
+  status: verified
+- order: 4
+  place: genesaret
+  reference: Mr 6:53-56; Mt 14:34-36
+  date:
+    from: 32
+    to: 32
+    precision: month
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: cerca de la Pascua de 32 e.c.
+    detail: *id001
+  note: Cura a muchos.
+  reason: 'Mr 6:53: tras cruzar llegan a Genesaret. Fecha del suceso camina-sobre-el-mar.'
+  sources:
+  - marcos-6
+  - mateo-14
+  - tnm-a7-d
+  - it-genesaret
+  checked_on: '2026-09-30'
+  status: verified
+- order: 5
+  place: capernaum
+  reference: Jn 6:22-71
+  date:
+    from: 32
+    to: 32
+    precision: month
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: cerca de la Pascua de 32 e.c.
+    detail: *id001
+  note: Se presenta como el pan de la vida; muchos lo dejan.
+  reason: Jn 6:24 y 59 lo sitúan en Capernaúm, enseñando en una sinagoga. Fecha del suceso pan-de-la-vida.
+  sources:
+  - juan-6
+  - tnm-a7-d
+  checked_on: '2026-09-30'
+  status: verified

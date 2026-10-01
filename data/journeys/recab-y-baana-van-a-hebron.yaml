@@ -1,0 +1,95 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: recab-y-baana-van-a-hebron
+name: Recab y Baaná llevan la cabeza de Is-Bóset a Hebrón
+person: recab-hijo-de-rimon
+reference: 2Sa 4:5-12
+date:
+  from: -1076
+  to: -1074
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'c. 1077-1075 a.e.c. (tiempo narrativo: al final de los dos años de reinado de Is-Bóset)'
+companions:
+- baana-hijo-de-rimon
+summary: Los dos hijos de Rimón entran a mediodía en casa de Is-Bóset, lo matan en su cama y caminan toda la noche por el
+  Arabá con su cabeza. En Hebrón David los manda ejecutar.
+reason: 2Sa 4:5-12. El texto no nombra la ciudad de Is-Bóset; Perspicacia «Mahanaim» cree que fue su capital. Perspicacia
+  «Recab», núm. 1, y «Baanah», núm. 1. Entre 1077 y c. 1075 a.e.c.
+sources:
+- 2-samuel-4
+- it-is-boset
+- it-mahanaim
+- it-recab
+- it-baanah
+- it-david
+- it-hebron
+- si-3
+checked_on: '2026-09-30'
+status: verified
+stops:
+- order: 1
+  place: mahanaim
+  reference: 2Sa 4:5-7
+  date:
+    from: -1076
+    to: -1074
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'c. 1077-1075 a.e.c. (tiempo narrativo: al final de los dos años de reinado de Is-Bóset)'
+  note: El texto no nombra la ciudad.
+  reason: '2Sa 4:5-7 no dice dónde vivía Is-Bóset; Perspicacia «Mahanaim» pone allí el asesinato, en su capital. Fecha: la
+    del suceso recab-y-baana-matan-a-is-boset.'
+  sources:
+  - 2-samuel-4
+  - it-mahanaim
+  - it-is-boset
+  - si-3
+  - it-david
+  checked_on: '2026-09-30'
+  status: pending
+- order: 2
+  place: araba
+  reference: 2Sa 4:7
+  date:
+    from: -1076
+    to: -1074
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'c. 1077-1075 a.e.c. (tiempo narrativo: al final de los dos años de reinado de Is-Bóset)'
+  note: Caminan toda la noche.
+  reason: '2Sa 4:7: con la cabeza de Is-Bóset marchan de noche por el camino del Arabá. Fecha: la del suceso recab-y-baana-matan-a-is-boset.'
+  sources:
+  - 2-samuel-4
+  - it-recab
+  - si-3
+  - it-is-boset
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: hebron
+  reference: 2Sa 4:8-12
+  date:
+    from: -1076
+    to: -1074
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'c. 1077-1075 a.e.c. (tiempo narrativo: justo después de la muerte de Is-Bóset)'
+  note: Los cuelgan junto al estanque de Hebrón.
+  reason: '2Sa 4:8-12: llevan la cabeza al rey en Hebrón y él manda matarlos. Fecha: la del suceso david-manda-matar-a-recab-y-baana.'
+  sources:
+  - 2-samuel-4
+  - it-recab
+  - it-baanah
+  - it-hebron
+  - si-3
+  - it-is-boset
+  checked_on: '2026-09-30'
+  status: verified

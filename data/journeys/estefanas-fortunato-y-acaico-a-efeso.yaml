@@ -1,0 +1,66 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: estefanas-fortunato-y-acaico-a-efeso
+name: Estéfanas, Fortunato y Acaico visitan a Pablo
+person: estefanas
+reference: 1Co 16:15-18
+date:
+  from: 55
+  to: 55
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 55 e.c.
+companions:
+- fortunato
+- acaico
+summary: Tres hermanos de Corinto, con Estéfanas al frente, viajan a Éfeso para ver a Pablo. Él dice que su visita le devolvió
+  el ánimo y suplió la falta de la congregación.
+reason: Perspicacia «Estéfanas» sitúa la visita en Éfeso hacia el año 55; suceso estefanas-fortunato-y-acaico-visitan-a-pablo.
+  Pablo escribe desde Éfeso (1Co 16:8).
+sources:
+- 1-corintios-16
+- it-estefanas
+- it-fortunato
+- it-acaico
+checked_on: '2026-09-30'
+status: verified
+stops:
+- order: 1
+  place: corinto
+  reference: 1Co 16:15
+  date:
+    from: 55
+    to: 55
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 55 e.c.
+  note: La casa de Estéfanas fue la primera de Acaya en creer.
+  reason: 'El texto no dice de dónde salieron: 1Co 16:15, 17 los hace miembros de la congregación de Corinto. Salida deducida
+    (regla 2b), año del suceso de la visita.'
+  sources:
+  - 1-corintios-16
+  - it-estefanas
+  checked_on: '2026-09-30'
+  status: pending
+- order: 2
+  place: efeso
+  reference: 1Co 16:8, 17, 18
+  date:
+    from: 55
+    to: 55
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 55 e.c.
+  note: Perspicacia cree posible que llevaran de vuelta 1 Corintios.
+  reason: '1Co 16:8, 17: Pablo, que está en Éfeso, se alegra de tenerlos allí. Suceso estefanas-fortunato-y-acaico-visitan-a-pablo,
+    c. 55.'
+  sources:
+  - 1-corintios-16
+  - it-estefanas
+  checked_on: '2026-09-30'
+  status: verified

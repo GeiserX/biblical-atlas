@@ -1,0 +1,89 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: visita-de-jetro
+name: Jetró visita a Moisés
+person: jetro
+reference: Éx 18:1-27
+date:
+  from: -1512
+  to: -1512
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 1513 a.e.c.
+companions: []
+summary: Jetró se entera de lo que Jehová hizo por Israel y lleva a Ziporá y a sus dos nietos hasta el campamento de Moisés.
+  Le aconseja repartir el trabajo de juzgar y después vuelve a su tierra.
+reason: Éxodo 18 cuenta la ida, la estancia y la vuelta. El estudio 3 fecha en 1513 a.e.c. la salida de Egipto y la llegada
+  al Sinaí, y los sucesos de este capítulo llevan ese año.
+sources:
+- exodo-18
+- si-3
+- it-jetro
+- it-refidim
+- it-sinai
+checked_on: '2026-09-30'
+status: verified
+stops:
+- order: 1
+  place: madian
+  reference: Éx 18:1-6
+  date:
+    from: -1512
+    to: -1512
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 1513 a.e.c.
+  note: Sale con Ziporá, Guersom y Eliezer, a quienes Moisés había mandado antes a casa de Jetró.
+  reason: 'Éx 18:1 lo presenta como sacerdote de Madián y 18:6 lo pone en camino. El versículo no nombra el punto de salida:
+    lo deducimos. Fecha del suceso «Jetró lleva a Moisés su esposa y sus hijos».'
+  sources:
+  - exodo-18
+  - it-jetro
+  - si-3
+  checked_on: '2026-09-30'
+  status: pending
+- order: 2
+  place: desierto-de-sinai
+  reference: Éx 18:5-26
+  date:
+    from: -1512
+    to: -1512
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 1513 a.e.c.
+  note: Por la posición del relato, Perspicacia «Refidim» cree que el campamento aún estaba en Refidim.
+  reason: Éx 18:5 pone el encuentro en el desierto, junto a la montaña de Dios, y Perspicacia «Jetró» dice Horeb. Seguimos
+    el lugar del suceso; Perspicacia «Refidim» propone otro campamento.
+  sources:
+  - exodo-18
+  - it-jetro
+  - it-refidim
+  - it-sinai
+  - si-3
+  checked_on: '2026-09-30'
+  status: pending
+- order: 3
+  place: madian
+  reference: Éx 18:27
+  date:
+    from: -1512
+    to: -1512
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 1513 a.e.c.
+  note: El texto no dice que Ziporá y los hijos se vayan con él.
+  reason: 'Éx 18:27: Moisés lo despide y él vuelve a su tierra, que por 18:1 es Madián; el nombre no sale en el versículo.
+    Fecha del suceso «Moisés nombra jefes para juzgar al pueblo».'
+  sources:
+  - exodo-18
+  - it-jetro
+  - si-3
+  checked_on: '2026-09-30'
+  status: pending
