@@ -25,6 +25,8 @@ summary: Los rebaños de los dos hermanos ya no caben en el mismo país. Esaú s
 reason: Gé 36:6-8 cuenta el traslado y Jos 24:4 lo recuerda. Fecha narrativa del suceso «Esaú se traslada a la región montañosa
   de Seír», tras la muerte de Isaac.
 sources:
+- genesis-32
+- genesis-35
 - genesis-36
 - josue-24
 - it-esau
@@ -35,8 +37,8 @@ checked_on: '2026-09-30'
 status: verified
 stops:
 - order: 1
-  place: canaan
-  reference: Gé 36:6, 7
+  place: hebron
+  reference: Gé 35:29; 36:6, 7
   date:
     from: -1737
     to: -1727
@@ -45,14 +47,17 @@ stops:
     type: narrative
     chronology: tnm
     text: 'entre 1738 y 1728 a.e.c. (tiempo narrativo: tras morir Isaac y antes de que Jacob bajara a Egipto)'
-  note: Allí había reunido su ganado y sus riquezas.
-  reason: Gé 36:6 dice que se llevó lo que había juntado en la tierra de Canaán. Fecha narrativa del suceso del traslado.
+  note: Gé 36:6 solo dice la tierra de Canaán. Allí había reunido su ganado y sus riquezas.
+  reason: 'Perspicacia «Edom», apartado «Seír y Edom», dice que hasta morir Isaac mantuvo su casa o su campamento en la región
+    de Hebrón, donde los dos hermanos lo entierran (Gé 35:29). Deducción: pendiente.'
   sources:
+  - genesis-35
   - genesis-36
+  - it-edom
   - it-esau
   - si-3
-  checked_on: '2026-09-30'
-  status: verified
+  checked_on: '2026-10-02'
+  status: pending
 - order: 2
   place: seir
   reference: Gé 36:8; Jos 24:4
@@ -64,12 +69,21 @@ stops:
     type: narrative
     chronology: tnm
     text: 'entre 1738 y 1728 a.e.c. (tiempo narrativo: tras morir Isaac y antes de que Jacob bajara a Egipto)'
-  note: 'Esaú es Edom: de él sale el pueblo que vivirá allí.'
-  reason: Gé 36:8 y Jos 24:4 lo instalan en la región montañosa de Seír. Misma fecha narrativa.
+  note: 'Esaú es Edom: de él sale el pueblo que vivirá allí. Ya se había instalado en Seír mientras Jacob estaba en Harán
+    (Gé 32:3); este es el traslado definitivo.'
+  reason: Gé 36:8 y Jos 24:4 lo instalan en la región montañosa de Seír. Perspicacia «Esaú» y «Seír», núm. 2, distinguen el
+    primer asentamiento de Gé 32:3 de esta mudanza. Misma fecha narrativa.
   sources:
+  - genesis-32
   - genesis-36
   - josue-24
   - it-seir
   - it-edom
-  checked_on: '2026-09-30'
+  - it-esau
+  checked_on: '2026-10-02'
   status: verified
+history:
+- date: '2026-10-02'
+  change: 'La salida pasa de Canaán, una zona con el punto en Galilea, a Hebrón: Perspicacia «Edom» pone allí la casa de Esaú
+    hasta la muerte de Isaac.'
+  source: it-edom
