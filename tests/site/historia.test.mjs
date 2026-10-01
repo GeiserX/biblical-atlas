@@ -509,3 +509,19 @@ test('on the phone the reading has its own pair, beside «Cerrar», that a finge
   assert.equal(await desk.locator('#vista-lectura [data-historia="atras"]').isVisible(), false);
   assert.deepEqual(page.pageErrors, []);
 });
+
+test('entries that would read the same are told apart: a year searched over a reading, then «Ahora mismo»', async () => {
+  const page = await openPage(DESKTOP, { hash: 'leer=hch-1&t=33.4000' });
+  assert.equal(await name(page), 'Lectura de Hechos 1');
+  await search(page, '607 a.e.c.');
+  let h = await hist(page);
+  assert.equal(h.state.step, 1);
+  assert.equal(h.state.name, 'Lectura de Hechos 1 en c. 607 a.e.c.', 'the year searched kept the reading\'s name, or the date before the jump');
+  assert.equal(h.title, 'Lectura de Hechos 1 en c. 607 a.e.c. · biblical-atlas');
+  assert.equal(h.back.label, 'Atrás: Lectura de Hechos 1');
+  await page.locator('#ahora-boton').click();
+  await settle(page);
+  h = await hist(page);
+  assert.equal(h.state.name, 'Ahora mismo en c. 607 a.e.c.', '«Ahora mismo» over a reading has the reading\'s name');
+  assert.equal(h.back.label, 'Atrás: Lectura de Hechos 1 en c. 607 a.e.c.');
+});

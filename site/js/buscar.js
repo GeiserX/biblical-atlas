@@ -503,6 +503,9 @@ const historia = (() => {
 
   /** Lo que enseña la vista de ahora, para ponerle nombre (BE.visitHistory.viewName). */
   function vista() {
+    // La fecha de la barra se pinta en el fotograma, y la dirección puede escribirse antes (un salto de fecha en un
+    // equipo ocupado): se pinta ya, para no nombrar la vista con la fecha de antes.
+    if (BE.sucio.cursor) { BE.sucio.cursor = false; BE.pintarCursor(); }
     const p = new URLSearchParams(BE.textoHash());
     const nombre = (s) => { const sel = BE.parseSel(s); return sel ? BE.nombreSel(sel) : null; };
     const v = { date: $('#fecha-valor')?.textContent.trim() || fmtCursor(E.t) };
@@ -571,7 +574,8 @@ const historia = (() => {
     if (!BE.D) return null;
     revisar(false);   // una vista que cambió sin pintarse todavía («Ahora mismo») tiene su entrada antes de escribirse
     const v = vista();
-    const nombre = H.viewName(v);
+    // Un nombre igual al de la entrada de detrás (un año buscado con la lectura abierta) lleva la fecha.
+    const nombre = H.distinctName(H.viewName(v), H.around(actual, leerVisitas()).back.name, v.date);
     // La portada se decide por la vista, no por la dirección: aún es la de la vista de antes.
     ponerTitulo(nombre, !!v.landing);
     const igual = nombre === actual.name && history.state?.visit === actual.visit && history.state?.step === actual.step;

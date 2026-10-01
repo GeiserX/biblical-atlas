@@ -19,7 +19,7 @@ const plain = (x) => JSON.parse(JSON.stringify(x));
 
 test('the file loads without a document and publishes its rules', () => {
   assert.ok(H, 'BE.visitHistory is missing');
-  for (const k of ['isEntry', 'begin', 'push', 'rename', 'arrive', 'cutForward', 'around', 'buttonLabel', 'viewName', 'pageTitle']) assert.equal(typeof H[k], 'function', k);
+  for (const k of ['isEntry', 'begin', 'push', 'rename', 'arrive', 'cutForward', 'around', 'buttonLabel', 'viewName', 'distinctName', 'pageTitle']) assert.equal(typeof H[k], 'function', k);
 });
 
 test('only our own state counts as an entry', () => {
@@ -164,6 +164,9 @@ test('each view is named by what it shows, the most specific first', () => {
   assert.equal(H.viewName({ sync: 'Corinto', date }), 'Sincronía de Corinto');
   assert.equal(H.viewName({ sync: '', date }), 'Sincronía');
   assert.equal(H.viewName({ now: true, date }), 'Ahora mismo en c. 50 e.c.');
+  // «Ahora mismo» and the sincronía are opened over a reading or a tour: they name the view.
+  assert.equal(H.viewName({ now: true, reading: { chapter: 'Hechos 1' }, date }), 'Ahora mismo en c. 50 e.c.');
+  assert.equal(H.viewName({ sync: 'Corinto', reading: { chapter: 'Hechos 1' }, tour: { name: 'X', stop: 1 }, date }), 'Sincronía de Corinto');
   assert.equal(H.viewName({ selection: 'Samotracia', date }), 'Samotracia');
   assert.equal(H.viewName({ date }), 'El mapa en c. 50 e.c.');
   assert.equal(H.viewName({}), 'El mapa');
@@ -175,4 +178,18 @@ test('the tab title names the view, so the browser history list tells entries ap
   assert.equal(H.pageTitle('la portada', { landing: true, base }), base);
   assert.equal(H.pageTitle('El mapa en c. 50 e.c.', { base }), 'El mapa en c. 50 e.c. · biblical-atlas');
   assert.equal(H.pageTitle(null, { base }), base);
+});
+
+test('a name that would read the same as the one behind it gets the date', () => {
+  const H607 = '607 a.e.c.';
+  assert.equal(H.distinctName('Lectura de Hechos 1', 'Lectura de Hechos 1', H607), 'Lectura de Hechos 1 en 607 a.e.c.');
+  assert.equal(H.distinctName('Pablo', 'Pablo', 'c. 50 e.c.'), 'Pablo en c. 50 e.c.');
+  // The second year after the first is told apart from both.
+  assert.equal(H.distinctName('Pablo', 'Pablo en 607 a.e.c.', '700 a.e.c.'), 'Pablo en 700 a.e.c.');
+  // Another name, a name with the date already in it, or nothing behind: as it is.
+  assert.equal(H.distinctName('Corinto', 'Pablo', H607), 'Corinto');
+  assert.equal(H.distinctName('Ahora mismo en 607 a.e.c.', 'Ahora mismo en 607 a.e.c.', H607), 'Ahora mismo en 607 a.e.c.');
+  assert.equal(H.distinctName('Pablo', null, H607), 'Pablo');
+  assert.equal(H.distinctName('Pablo', 'Pablo', ''), 'Pablo');
+  assert.equal(H.distinctName(null, null, H607), null);
 });

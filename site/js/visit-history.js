@@ -106,15 +106,24 @@ function viewName(v = {}) {
     if (a && b) return `Conexión entre ${a} ${and(b)} ${b}`;
     return a || b ? `Conexión desde ${a || b}` : 'Conexión entre dos';
   }
-  if (v.reading?.chapter) return `Lectura de ${v.reading.chapter}${v.reading.passage ? `, pasaje ${v.reading.passage}` : ''}`;
-  if (v.tour?.name) return v.tour.stop ? `${v.tour.name}, parada ${v.tour.stop}` : v.tour.name;
+  // «Ahora mismo» and the sincronía are opened over whatever is behind, a reading too: they name the view.
   if (v.sync !== undefined && v.sync !== null) return v.sync ? `Sincronía de ${v.sync}` : 'Sincronía';
   if (v.now) return v.date ? `Ahora mismo en ${v.date}` : 'Ahora mismo';
+  if (v.reading?.chapter) return `Lectura de ${v.reading.chapter}${v.reading.passage ? `, pasaje ${v.reading.passage}` : ''}`;
+  if (v.tour?.name) return v.tour.stop ? `${v.tour.name}, parada ${v.tour.stop}` : v.tour.name;
   if (v.selection) return v.selection;
   return v.date ? `El mapa en ${v.date}` : 'El mapa';
 }
 /** «y», or «e» before a word that starts with the sound i (Isaac, Hiram), but not before ie, ia… (Hierápolis). */
 function and(word) { return /^h?[ií](?![aeiouáéíóú])/i.test(word || '') ? 'e' : 'y'; }
+/** The name of a new entry that would read the same as the one behind it (a year searched while a reading or a card
+    stays open, the second year after the first) gets the date, so the label and the browser's list tell them apart. A name with the date already in
+    it stays as it is. */
+function distinctName(name, previous, date) {
+  if (!name || !date || !previous || name.endsWith(` en ${date}`)) return name;
+  if (previous !== name && !previous.startsWith(`${name} en `)) return name;
+  return `${name} en ${date}`;
+}
 /** The tab's title for a view: its name first, so the browser's history list and bookmarks tell entries apart. The
     landing keeps the page's own title. */
 function pageTitle(name, { landing = false, base = 'biblical-atlas' } = {}) {
@@ -122,5 +131,5 @@ function pageTitle(name, { landing = false, base = 'biblical-atlas' } = {}) {
   return `${name.charAt(0).toUpperCase()}${name.slice(1)} · biblical-atlas`;
 }
 
-BE.visitHistory = { isEntry, begin, push, rename, arrive, cutForward, around, buttonLabel, viewName, pageTitle, MAX_VISITS };
+BE.visitHistory = { isEntry, begin, push, rename, arrive, cutForward, around, buttonLabel, viewName, distinctName, pageTitle, MAX_VISITS };
 })();
