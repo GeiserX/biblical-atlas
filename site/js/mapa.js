@@ -1394,7 +1394,10 @@ function pintarMientras(t) {
   // «Mientras tanto» solo cuando hay alguien situado con quien comparar (la persona elegida o, si no, Pablo) y el suceso
   // es de otro. El suceso elegido, el de esa persona o uno sin nadie situado es «Suceso».
   const quien = E.sel?.tipo === 'persona' && E.sel.id !== 'pablo' ? E.sel.id : 'pablo';
-  const propio = !!m && ((m.ev.personas || []).includes(quien) || (E.sel?.tipo === 'evento' && E.sel.id === m.ev.id)
+  // Con un lugar elegido, un suceso de otro sitio también es «Mientras tanto»: el mapa enseña Jerusalén y la tarjeta,
+  // Ecbátana.
+  const otroLugar = E.sel?.tipo === 'lugar' && !!m && !(m.ev.lugares || []).includes(E.sel.id);
+  const propio = !!m && !otroLugar && ((m.ev.personas || []).includes(quien) || (E.sel?.tipo === 'evento' && E.sel.id === m.ev.id)
     || !(quien === 'pablo' ? BE.dondeEsta(t) : BE.donde(quien, t)));
   const clave = m ? `${m.ev.id}|${m.lugar}|${propio}` : '';
   if (clave === pintarMientras.clave) return;
@@ -1743,12 +1746,14 @@ function iniciar() {
   });
 }
 
-/** Primer encuadre, al arrancar, con la dirección ya leída y el alto de la línea ya puesto: si Pablo queda fuera, el mapa
-    se centra en él antes de pintar nada, en vez de saltar al cargar el estilo (la línea alta deja menos mapa). */
+/** Primer encuadre, al arrancar, con la dirección ya leída y el alto de la línea ya puesto. Con selección (un enlace
+    compartido, una pregunta de la portada), se encuadra como al pulsarla en la línea; sin ella, si Pablo queda fuera, el
+    mapa se centra en él antes de pintar nada, en vez de saltar al cargar el estilo (la línea alta deja menos mapa). */
 function encuadreDeInicio() {
   if (!map) return;
   map.resize();
-  mostrarPablo();
+  if (E.sel) encuadrarLugares([...E.resaltado.lugares]);
+  else mostrarPablo();
 }
 BE.mapa = { resaltar, encuadrar: encuadrarLugares, volverAlInicio, iniciar, encuadreDeInicio, enfocarCandidato, get candidatoFoco() { return candFoco; }, get gl() { return map; } };
 Object.assign(BE, {
