@@ -123,20 +123,25 @@ test('a place with a shape draws it while selected, frames all of it and its car
 });
 
 test('the shape takes no click: a click inside Canaán, highlighted by an event, leaves the event selected', async () => {
-  const page = await openMap(DESKTOP, 't=-1465.5');
+  // With the uncertain places and the journeys hidden, nothing else on the map takes the click.
+  const page = await openMap(DESKTOP, 't=-1465.5&ocultas=inciertos,viajes,cartas');
   const sel = { tipo: 'evento', id: 'conquista-de-canaan' };
   const d = await shapesAt(page, sel);
   assert.ok(d.formas?.some((f) => f.lugar === 'canaan'), `the event highlights Canaán and draws its shape: ${JSON.stringify(d.formas)}`);
   const capas = await page.evaluate(() => window.__be.map.getStyle().layers.map((l) => l.id));
   assert.ok(capas.indexOf('be-formas-relleno') < capas.indexOf('be-zonas-relleno'), 'the shape sits under the candidate zones');
-  // A pixel inside the outline with the bare map under it (no place name, no candidate zone).
-  const xy = await page.evaluate(() => {
+  // Closer in, a pixel inside the outline with the bare map under it: no place name, no candidate zone, no route.
+  const xy = await page.evaluate(async () => {
     const { map } = window.__be;
-    for (let lat = 31.3; lat < 33.3; lat += 0.05) for (let lon = 34.8; lon < 35.5; lon += 0.05) {
-      const p = map.project([lon, lat]);
-      const el = document.elementFromPoint(p.x, p.y);
-      if (el?.tagName === 'CANVAS' && !map.queryRenderedFeatures([p.x, p.y], { layers: ['be-zonas-relleno', 'be-rastro-toque', 'be-cartas-toque', 'be-hecho', 'be-falta'].filter((id) => map.getLayer(id)) }).length
-        && map.queryRenderedFeatures([p.x, p.y], { layers: ['be-formas-relleno'] }).length) return [p.x, p.y];
+    map.jumpTo({ center: [35.0, 32.3], zoom: 9 });
+    await new Promise((r) => map.once('idle', r));
+    const clic = ['be-zonas-relleno', 'be-rastro-toque', 'be-cartas-toque', 'be-hecho', 'be-falta'].filter((id) => map.getLayer(id));
+    // queryRenderedFeatures counts from the map's corner; elementFromPoint and the mouse, from the page's.
+    const caja = map.getContainer().getBoundingClientRect();
+    for (let y = 100; y < caja.height - 100; y += 30) for (let x = 100; x < caja.width - 100; x += 30) {
+      const el = document.elementFromPoint(caja.left + x, caja.top + y);
+      if (el?.tagName === 'CANVAS' && !map.queryRenderedFeatures([x, y], { layers: clic }).length
+        && map.queryRenderedFeatures([x, y], { layers: ['be-formas-relleno'] }).length) return [caja.left + x, caja.top + y];
     }
     return null;
   });
