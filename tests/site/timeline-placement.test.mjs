@@ -70,6 +70,10 @@ const EXPECTED_CHANGES = {
   'evento:tito-trae-noticias-de-corinto': 2, 'evento:segundo-encierro-en-roma': 2, 'carta:2-corintios': 2, 'carta:2-timoteo': 2,
   'evento:muere-isaac': 3, 'evento:hombres-de-ezequias-copian-proverbios-de-salomon': 3,
   'evento:pablo-corrige-a-pedro-en-antioquia': 4,
+  // 2 Reyes gave these a series (2-reyes): the «tras» of Ahaz in Damascus (2Re 16) bounded its old group (1), and
+  // Jehoiakim differs only by the cut at its end (3).
+  'evento:elias-llevado-en-la-tempestad': 1, 'evento:jehu-acaba-con-la-casa-de-acab': 1, 'evento:atalia-usurpa-el-trono': 1,
+  'evento:jehoas-coronado': 1, 'evento:jehoiaquim-vasallo-de-babilonia': 3,
 };
 // Deaths named by the id of their event, not by the rule of the code: the person dies in that event.
 const DEATHS = {

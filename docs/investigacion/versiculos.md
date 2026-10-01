@@ -128,6 +128,7 @@ roles:
 
 - Génesis 10-11: el capítulo 10 da las naciones ya repartidas y 11:1-9 cuenta cómo se dispersaron en Babel, en días de Péleg (Gé 10:25; Perspicacia «Babel»).
 - Jueces 1:1-3:6 mezcla sucesos de antes y de después de la muerte de Josué, y los capítulos 17-21 pasan mucho antes que Sansón (Perspicacia «Jueces, Libro de», «Orden del libro»). Los capítulos 19 a 21 van en su propia serie, `jueces-apendice`: en la serie `jueces`, su fecha, más temprana, dejaba antes de c. 1400 a.e.c. todo lo que el libro cuenta antes que ellos.
+- 1 Reyes 11:14-20 vuelve a los días de David al presentar a Hadad: Joab en Edom tras la victoria del valle de la Sal, la huida de Hadad y su boda en Egipto (Perspicacia «Edom»). Van en su propia serie, `1-reyes-hadad`: en la serie `1-reyes` quedaban tras el templo, donde su fecha no cabe.
 - Jeremías: sus capítulos van por temas; cada uno se fecha por el rey que nombra (Jer 21 es de Sedequías y Jer 25, del año cuarto de Jehoiaquim).
 - Daniel 7 y 8 son de los años primero y tercero de Belsasar, antes de Daniel 5.
 - Ezequiel 29:17-21 es del año 27 del destierro, posterior a los capítulos que lo siguen (40:1 es del año 25).
