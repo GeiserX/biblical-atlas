@@ -396,7 +396,7 @@ function iniciarEventos() {
     const cerrar = e.target.closest('[data-accion="cerrar"]');
     if (cerrar) { limpiarSeleccion(); return; }
     const s = e.target.closest('[data-sel]');
-    // Las marcas de la línea de tiempo las elige linea.js: el cursor entra por donde se pulsó y un segundo clic no suelta.
+    // Las marcas de la línea de tiempo las elige linea.js: el cursor entra por donde se pulsó y un segundo clic suelta.
     if (s && !s.closest('#resultados') && !s.matches('#linea-filas .m')) {
       const sel = parseSel(s.dataset.sel);
       if (sel) {

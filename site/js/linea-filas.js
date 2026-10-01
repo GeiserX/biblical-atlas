@@ -361,5 +361,9 @@ function storyOrder(items) {
   }
 }
 
-BE.filas = { TAG, labelText, hollow, softEnds, measure, extent, packOrder, pack, place, hitOf, lwOf, rescueEdges, edgeRows, layoutLane, clickTarget, certainty, storyOrder, norm };
+/** Lo que queda elegido al pulsar una marca: la marca, o nada si ya era la elegida (un segundo clic la suelta, como en el
+    mapa). `markSel` y `selT` son textos de selección («evento:…»); `selT` vacío si no hay nada elegido. */
+const nextSel = (markSel, selT) => (markSel === selT ? null : markSel);
+
+BE.filas = { TAG, labelText, hollow, softEnds, measure, extent, packOrder, pack, place, hitOf, lwOf, rescueEdges, edgeRows, layoutLane, clickTarget, certainty, storyOrder, norm, nextSel };
 })();

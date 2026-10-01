@@ -719,8 +719,10 @@ function teclaMarca(e) {
 const vivo = (texto) => { const v = $('#linea-vivo'); if (v) v.textContent = texto; };
 
 /** Elegir una marca: el cursor entra en ella por el punto señalado (con el teclado, por el más cercano) y la marca se
-    elige y abre su ficha. Ni la escala, ni la vista, ni los carriles se mueven. Una fecha secular no mueve el cursor. */
+    elige y abre su ficha. Ni la escala, ni la vista, ni los carriles se mueven. Una fecha secular no mueve el cursor.
+    Pulsar la marca elegida la suelta, como un segundo clic en el mapa, y el cursor no se mueve. */
 function elegirMarca(it, tSeñalado) {
+  if (FIL.nextSel(it.sel, BE.selTexto(E.sel)) == null) { BE.limpiarSeleccion(); vivo('Nada elegido.'); return; }
   const t = it.sinCursor ? null : FIL.clickTarget(it, tSeñalado, E.t, { v0: E.vista[0], span: span() }, BE.DIA);
   if (t != null) setT(t);
   desdeFranja = true;
