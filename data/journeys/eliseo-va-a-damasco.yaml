@@ -1,0 +1,71 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: eliseo-va-a-damasco
+name: Eliseo va a Damasco
+person: eliseo
+reference: 2Re 6:32; 8:7-15
+date:
+  from: -916
+  to: -904
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 917 y 905 a.e.c. (tiempo narrativo: en el reinado de Jehoram de Israel)'
+narrative_order:
+  series: eliseo
+  order: 4
+companions: []
+summary: El profeta llega a Damasco mientras Ben-Hadad está enfermo. Hazael le trae cuarenta camellos de regalos para que
+  consulte a Jehová; Eliseo llora por el daño que hará a Israel y le dice que será rey.
+reason: 2Re 8:7 nombra la llegada a Damasco; la salida no se nombra y la deducimos de Samaria, donde lo dejan 6:19-23 y 6:32.
+  Fecha del suceso hazael-mata-a-ben-hadad-y-reina-en-siria.
+sources:
+- 2-reyes-6
+- 2-reyes-8
+- it-eliseo
+- it-hazael
+- it-damasco
+- tnm-a6-a
+checked_on: '2026-09-30'
+status: verified
+stops:
+- order: 1
+  place: samaria
+  reference: 2Re 6:32
+  date:
+    from: -916
+    to: -904
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 917 y 905 a.e.c. (tiempo narrativo: en el reinado de Jehoram de Israel)'
+  note: Salida deducida. Allí acaba el viaje anterior y allí sigue en su casa durante el sitio de la ciudad.
+  reason: 'Deducida: 2Re 8:7 no dice de dónde sale. El último lugar en que lo pone el relato es su casa durante el sitio de
+    Samaria (2Re 6:24, 32). Fecha del suceso hazael-mata-a-ben-hadad-y-reina-en-siria.'
+  sources:
+  - 2-reyes-6
+  - it-eliseo
+  - tnm-a6-a
+  checked_on: '2026-09-30'
+  status: pending
+- order: 2
+  place: damasco
+  reference: 2Re 8:7-15
+  date:
+    from: -916
+    to: -904
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 917 y 905 a.e.c. (tiempo narrativo: en el reinado de Jehoram de Israel)'
+  note: Al día siguiente de la visita, Hazael mata al rey y reina en su lugar.
+  reason: '2Re 8:7: Eliseo llega a Damasco y avisan al rey enfermo. Suceso hazael-mata-a-ben-hadad-y-reina-en-siria.'
+  sources:
+  - 2-reyes-8
+  - it-eliseo
+  - it-hazael
+  - it-damasco
+  checked_on: '2026-09-30'
+  status: verified
