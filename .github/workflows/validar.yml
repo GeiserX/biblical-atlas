@@ -27,8 +27,11 @@ jobs:
       - run: python3 scripts/migration/test_migrate.py
       - run: python3 scripts/videos/test_videos.py
       - run: python3 scripts/bible_coverage.py
-      # La portada: sus reglas y sus destinos escritos a mano contra los datos recién compilados. Sin navegador.
-      - run: BE_DATA_FILE=site/data.json node --test tests/site/portada-reglas.test.mjs tests/site/portada-destinos.test.mjs
+      # La portada: sus reglas y sus destinos escritos a mano contra los datos recién compilados. Los enlaces a jw.org:
+      # el capítulo de cada fuente, el ancla de cada cita y cada cita de los datos dentro de su libro. Sin navegador.
+      - run: >-
+          BE_DATA_FILE=site/data.json node --test tests/site/portada-reglas.test.mjs tests/site/portada-destinos.test.mjs
+          tests/site/capitulo-fuente.test.mjs tests/site/enlaces-versiculos.test.mjs tests/site/citas-datos.test.mjs
       # Las reglas de «Atrás» y «Adelante»: el número y el nombre de cada entrada. Sin navegador.
       - run: node --test tests/site/visit-history.test.mjs
       - name: Enlaces (solo en main y en la revisión semanal)

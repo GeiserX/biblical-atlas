@@ -72,7 +72,8 @@ function fechaCorta(f) {
 function libro(s) { return LIBRO_POR_FORMA.get(norm(s).replace(/[\s.]+/g, '')) || null; }
 /** "Hch 15:1-3; Gál 2:1-10" → [{ libro, cap, capFin, verso, versoFin, texto }]. verso es el primero (null si la cita
     es de capítulos enteros) y versoFin el último, que es del capítulo capFin: «Hch 21:40–22:21» da verso 40, versoFin 21.
-    Una lista en el mismo capítulo llega hasta su último versículo: «Mt 26:30, 36-56» da verso 30, versoFin 56. */
+    Una lista en el mismo capítulo llega hasta su último versículo: «Mt 26:30, 36-56» da verso 30, versoFin 56.
+    Un libro de un solo capítulo se cita por versículo: «Flm 23» es el capítulo 1, versículo 23. */
 function citas(s) {
   const out = [];
   for (const parte of String(s || '').split(/\s*;\s*/)) {
@@ -80,11 +81,12 @@ function citas(s) {
     if (!m) continue;
     const lib = libro(m[1]);
     if (!lib) continue;
-    const cap = +m[2];
+    let cap = +m[2];
     let capFin = cap;
     if (m[5]) capFin = +m[4]; else if (!m[3] && m[4]) capFin = +m[4];
-    const verso = m[3] ? +m[3] : null;
+    let verso = m[3] ? +m[3] : null;
     let versoFin = !verso ? null : m[5] ? +m[5] : m[4] ? +m[4] : verso;
+    if (!m[3] && lib.capitulos === 1) { verso = cap; versoFin = capFin; cap = 1; capFin = 1; }
     const lista = verso && capFin === cap && parte.slice(m[0].length).match(/^(?:\s*,\s*\d+(?:\s*[-–]\s*\d+)?)+/);
     if (lista) versoFin = Math.max(versoFin, ...lista[0].match(/\d+/g).map(Number));
     out.push({ libro: lib, cap, capFin, verso, versoFin, texto: parte.trim() });

@@ -10,7 +10,7 @@ date:
   chronology: tnm
   text: 'entre 1070 y c. 1040 a.e.c. (tiempo narrativo: tras la victoria de David sobre Edom)'
 narrative_order:
-  series: 1-reyes
+  series: 1-reyes-hadad
   order: 11017
   after: joab-pasa-seis-meses-matando-a-los-varones-de-edom
 places:
@@ -39,5 +39,5 @@ links:
 - title: 'Perspicacia: «Hadad»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hadad/
   type: perspicacia
-checked_on: '2026-09-30'
+checked_on: '2026-10-01'
 status: verified

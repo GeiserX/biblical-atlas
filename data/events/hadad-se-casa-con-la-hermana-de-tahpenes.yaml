@@ -10,7 +10,7 @@ date:
   chronology: tnm
   text: 'entre 1070 y 1038 a.e.c. (tiempo narrativo: después de huir a Egipto y antes de la muerte de David)'
 narrative_order:
-  series: 1-reyes
+  series: 1-reyes-hadad
   order: 11019
   after: hadad-el-edomita-huye-a-egipto
 places:
@@ -37,5 +37,5 @@ links:
 - title: 1 Reyes 11 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/1-reyes/11/
   type: bible
-checked_on: '2026-09-30'
+checked_on: '2026-10-01'
 status: verified
