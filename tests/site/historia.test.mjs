@@ -293,6 +293,16 @@ test('focus stays on the pressed button, and moves to the other one when its own
   await page.keyboard.press('Enter');
   await settle(page);
   assert.equal(await page.evaluate(() => document.activeElement.id), 'adelante', 'focus was lost when Back switched off');
+  // A visit of two entries: Forward is still off when Back switches off, and is switched on in the same paint.
+  for (const [screen, pre] of [[DESKTOP, ''], [PHONE, 'hoja-']]) {
+    const two = await openPage(screen, { hash: 't=50.3000' });
+    await search(two, 'Pablo');
+    await two.locator(`#${pre}atras`).focus();
+    await two.keyboard.press('Enter');
+    await settle(two);
+    assert.equal((await hist(two, pre)).state.step, 0);
+    assert.equal(await two.evaluate(() => document.activeElement.id), `${pre}adelante`, `${pre || 'desktop'}: focus fell to the page in a visit of two`);
+  }
 });
 
 test('Alt, ⌘ and Ctrl with an arrow are the browser\'s on the panel separator, the curtain, «Meses» and the date panel', async () => {

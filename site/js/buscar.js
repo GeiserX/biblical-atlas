@@ -516,16 +516,17 @@ const historia = (() => {
     const a = H.around(actual, leerVisitas());
     const nav = window.navigation;
     if (nav && typeof nav.canGoBack === 'boolean') { a.back.can = a.back.can && nav.canGoBack; a.forward.can = a.forward.can && nav.canGoForward; }
+    const foco = document.activeElement?.closest?.('[data-historia]');
     for (const [dir, cual] of [['back', 'atras'], ['forward', 'adelante']]) {
       const texto = H.buttonLabel(dir, a[dir]);
       for (const b of document.querySelectorAll(`[data-historia="${cual}"]`)) {
-        const conFoco = document.activeElement === b;
         b.disabled = !a[dir].can;
         if (b.title !== texto) { b.title = texto; b.setAttribute('aria-label', texto); }
-        // Un botón que se apaga pierde el foco: pasa al otro, que ahora tiene adónde ir.
-        if (conFoco && b.disabled) b.parentElement.querySelector('button:not(:disabled)')?.focus({ preventScroll: true });
       }
     }
+    // Un botón que se apaga pierde el foco: pasa al otro de su pareja, que ahora tiene adónde ir. Después de pintar los
+    // cuatro: antes, el otro aún estaría apagado.
+    if (foco?.disabled) foco.parentElement.querySelector('button:not(:disabled)')?.focus({ preventScroll: true });
   }
   function empujar() {
     const r = H.push(actual, leerVisitas());
