@@ -24,7 +24,16 @@ const PROHIBIDAS = [
   // The words of the cards, the legend and the filter: they name the kind of source, not the site.
   /\b(?:según|por) jw\.org\b/i, /\bcita jw\.org\b/i, /\bjw\.org (?:ha usado|usa|use)\b/i, /\bBiblia (?:y|ni|o) (?:(?:una )?publicación de )?jw\.org\b/i,
   /\bfechas? de jw\.org\b/i, /\bres[uú]menes nuestros\b/i,
+  // The general shapes, so that a new wording of the same idea fails too: any «de/según/por jw.org» (the links that only
+  // say where to read, «en jw.org», stay), a publication «de jw.org», content taken or coming from it, and any «not
+  // copied».
+  /\b(?:de|según|por|desde) (?:wol\.)?jw\.org\b/i, /\bpublicaci(?:ón|ones) de jw\b/i,
+  /\b(?:extra[ií]d|tomad|sacad|copiad|procede|viene|sale)\w* de (?:(?:la )?web de )?(?:jw|wol|sus publicaciones)\b/i,
+  /\b(?:no|nunca|jam[aá]s|ni)\s+(?:se\s+|lo\s+|la\s+|los\s+|las\s+)?copi(?:a|amos|an|ado|ados|ada|adas|ar)\b/i, /\bsin copiar\b/i,
 ];
+// Names of things that are themselves on jw.org, not claims about where the content comes from: the videos section and
+// «No es un sitio de jw.org».
+const PERMITIDAS = [/v[ií]deos (?:p[uú]blicos )?de jw\.org/gi, /un sitio de jw\.org/gi];
 
 function ficheros(rel) {
   const p = ROOT + rel;
@@ -32,14 +41,17 @@ function ficheros(rel) {
   return fs.readdirSync(p, { recursive: true }).filter((f) => String(f).endsWith('.js')).map((f) => `${rel}/${f}`);
 }
 // A comment in the code is for whoever edits it, not for readers.
-const sinComentarios = (rel, s) => (rel.endsWith('.js') ? s.replace(/\/\*[\s\S]*?\*\//g, '').replace(/^\s*\/\/.*$/gm, '') : s);
+// A block comment keeps its line breaks, so the line numbers in a failure are the file's own.
+const sinComentarios = (rel, s) => (rel.endsWith('.js')
+  ? s.replace(/\/\*[\s\S]*?\*\//g, (c) => c.replace(/[^\n]/g, '')).replace(/^\s*\/\/.*$/gm, '') : s);
 
 test('no text for readers says where the content comes from or that it is not copied', () => {
   const hallados = [];
   for (const rel of LECTORES.flatMap(ficheros)) {
     const texto = sinComentarios(rel, fs.readFileSync(ROOT + rel, 'utf8'));
-    texto.split('\n').forEach((linea, i) => {
-      for (const re of PROHIBIDAS) if (re.test(linea)) hallados.push(`${rel}:${i + 1} ${re} «${linea.trim().slice(0, 120)}»`);
+    texto.split('\n').forEach((original, i) => {
+      const linea = PERMITIDAS.reduce((l, re) => l.replace(re, ''), original);
+      for (const re of PROHIBIDAS) if (re.test(linea)) hallados.push(`${rel}:${i + 1} ${re} «${original.trim().slice(0, 120)}»`);
     });
   }
   assert.deepEqual(hallados, []);
