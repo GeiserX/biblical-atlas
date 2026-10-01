@@ -35,12 +35,12 @@ stops:
   reference: 1Re 19:1, 2
   date:
     from: -939
-    to: -919
+    to: -920
     precision: range
     approx: true
     type: narrative
     chronology: tnm
-    text: 'entre 940 y 920 a.e.c. (tiempo narrativo: después del Carmelo, en el reinado de Acab)'
+    text: 'entre 940 y 921 a.e.c. (tiempo narrativo: después del Carmelo y antes de la viña de Nabot)'
   note: Recibe la amenaza de Jezabel.
   reason: 1Re 19:1, 2 sigue a 18:46, que lo deja en Jezreel. Fecha del suceso jezabel-jura-matar-a-elias.
   sources:
@@ -54,12 +54,12 @@ stops:
   reference: 1Re 19:3-7
   date:
     from: -939
-    to: -919
+    to: -920
     precision: range
     approx: true
     type: narrative
     chronology: tnm
-    text: 'entre 940 y 920 a.e.c. (tiempo narrativo: después del Carmelo, en el reinado de Acab)'
+    text: 'entre 940 y 921 a.e.c. (tiempo narrativo: después del Carmelo y antes de la viña de Nabot)'
   note: Deja allí a su ayudante. La retama donde lo alimenta el ángel está a un día de camino, en el desierto.
   reason: 1Re 19:3 dice que llegó a Beer-Seba, en Judá. Fecha del suceso un-angel-alimenta-a-elias-en-el-desierto.
   sources:
@@ -73,12 +73,12 @@ stops:
   reference: 1Re 19:8-18
   date:
     from: -939
-    to: -919
+    to: -920
     precision: range
     approx: true
     type: narrative
     chronology: tnm
-    text: 'entre 940 y 920 a.e.c. (tiempo narrativo: después del Carmelo, en el reinado de Acab)'
+    text: 'entre 940 y 921 a.e.c. (tiempo narrativo: después del Carmelo y antes de la viña de Nabot)'
   note: Horeb, nombre que ya tiene la ficha. Pasa la noche en una cueva y oye la voz de Jehová.
   reason: 1Re 19:8 lo lleva en cuarenta días al Horeb. Fecha del suceso jehova-habla-a-elias-en-el-horeb.
   sources:
