@@ -486,18 +486,14 @@ function imagenRayado(color, estado) {
 }
 
 // ---------------------------------------------------------------------------
-// Viajes (M-09): el que Pablo recorre en esta fecha se parte en hecho y falta; los demás, de cualquier persona,
-// se ven como rastro: en color si están ocurriendo, gris claro si ya pasaron y más claro si aún no han empezado.
+// Viajes (M-09): cada viaje es su propia ruta. De Pablo se dibuja solo el que recorre en esta fecha, partido en hecho
+// y falta; sus otros viajes no se dibujan. Los de otra persona se ven como rastro en la fecha del propio viaje: en
+// color mientras ocurre y gris claro el año siguiente. Un viaje seleccionado se ve entero y en su color.
 // ---------------------------------------------------------------------------
-/** Ventana en la que la capa «Viajes» dibuja un viaje: para Pablo, el tramo de todos sus viajes (de la primera salida a
-    la última llegada); para cualquier otra persona, solo la del propio viaje, porque con Moisés o Pedro el tramo entero
-    llenaría el mapa de rastros. Fuera de ella (con un año de margen al final) no se dibuja ni se explica en la leyenda,
-    salvo que se seleccione el viaje o la persona. */
-function ventanaViaje(v) {
-  if ((v.persona || 'pablo') === 'pablo' && BE.P.length) return [BE.P[0].a, BE.P.at(-1).b];
-  return tramo(v.fecha);
-}
-const viajeEnEpoca = (v, t) => { const tr = ventanaViaje(v); return !!tr && t >= tr[0] && t < tr[1] + 1; };
+/** ¿Dibuja la capa «Viajes» este viaje de otra persona en t? Solo dentro de su propia fecha (con un año de margen al
+    final), porque con Moisés o Pedro todos sus viajes a la vez llenarían el mapa. Los de Pablo no pasan por aquí: sus
+    viajes van uno detrás de otro, de 34 a 65, y en cada fecha se ve solo el que recorre (BE.viajeActual). */
+const viajeEnEpoca = (v, t) => { const tr = tramo(v.fecha); return !!tr && t >= tr[0] && t < tr[1] + 1; };
 /** Vértice de una parada en la ruta de un viaje: el punto de su lugar o, si el lugar es incierto, su candidato
     preferido de los que se ven (seguro, favorecido por jw.org, tradición, otra propuesta, otra fuente; nunca uno
     descartado), o el centro de su zona. { c: [lon, lat], incierto } o null si no hay ninguno. Sin esto, Perea, Efraín o
@@ -536,15 +532,17 @@ function geoRutas(w) {
   for (const v of BE.D.viajes) {
     if (v === V) continue;
     const quien = v.persona || 'pablo';
-    const ver = (E.sel?.tipo === 'viaje' && E.sel.id === v.id) || (selPersona && (selPersona === quien || (v.companeros || []).includes(selPersona)))
-      || (F.capas.viajes && viajeEnEpoca(v, E.t));
+    const elegido = E.sel?.tipo === 'viaje' && E.sel.id === v.id;
+    const ver = elegido || (selPersona && (selPersona === quien || (v.companeros || []).includes(selPersona)))
+      || (F.capas.viajes && quien !== 'pablo' && viajeEnEpoca(v, E.t));
     if (!ver) continue;
     const pts = [...(v.paradas || [])].sort((a, b) => a.orden - b.orden).map((p) => verticeRuta(BE.L[p.lugar])).filter(Boolean);
     if (pts.length < 2) continue;
     let estado;
     const dePablo = quien === 'pablo';
     const ps = dePablo ? BE.P.filter((s) => s.viaje === v) : [];
-    if (ps.length) estado = ps[0].a > E.t ? 'futuro' : 'pasado';
+    if (elegido) estado = 'actual';                  // el viaje elegido fuera de su fecha, entero y en su color
+    else if (ps.length) estado = ps[0].a > E.t ? 'futuro' : 'pasado';
     else {
       const tr = tramo(v.fecha);
       estado = !tr ? 'pasado' : E.t < tr[0] ? 'futuro' : E.t >= tr[1] ? 'pasado' : 'actual';
@@ -1345,7 +1343,8 @@ function pintarLeyenda(V, w, g) {
   const dePablo = !!(V && g.hecho.length + g.falta.length) || rastro.some((v) => (v.persona || 'pablo') === 'pablo');
   const estimada = (marcaPablo?.puesta && !!w?.estimada) || [...marcasViajero.values()].some((m) => m.puesta && m.el.classList.contains('estimada'));
   const viajeros = [...marcasViajero.values()].some((m) => m.puesta);
-  const clave = `${V?.id}|${estimada}|${E.sel?.tipo}|${E.sel?.id}|${pendiente}|${escritores}|${inciertos}|${hallazgos}|${F.capas.viajes}|${F.nivel1}|${rastro.map((v) => v.id)}|${dePablo}|${viajeros}`;
+  const apagado = g.rastro.some((f) => f.properties.estado !== 'actual');   // algún rastro en gris
+  const clave = `${apagado}|${V?.id}|${estimada}|${E.sel?.tipo}|${E.sel?.id}|${pendiente}|${escritores}|${inciertos}|${hallazgos}|${F.capas.viajes}|${F.nivel1}|${rastro.map((v) => v.id)}|${dePablo}|${viajeros}`;
   if (clave === pintarLeyenda.clave) return;
   pintarLeyenda.clave = clave;
   const filas = [];
@@ -1355,14 +1354,17 @@ function pintarLeyenda(V, w, g) {
     if (BE.P.some((s) => s.viaje === V && s.lugar.precision === 'zona')) filas.push('<div class="be-legend__row"><span class="be-legend__line be-legend__line--approx"></span>Ruta sin trazado conocido (región)</div>');
     filas.push('<div class="be-legend__row"><span class="be-legend__line be-legend__line--todo"></span>Lo que falta del viaje</div>');
   }
-  if (S) filas.push(`<div class="be-legend__row"><span class="be-legend__line${S === V ? ' be-legend__line--todo' : ''}"></span>${S === V ? 'Solo este viaje' : 'Solo este viaje, completo'}; vuelve a pulsarlo para ver todos</div>`);
+  if (S) filas.push(`<div class="be-legend__row"><span class="be-legend__line${S === V ? ' be-legend__line--todo' : ''}"></span>${S === V ? 'Solo este viaje' : 'Solo este viaje, completo'}; vuelve a pulsarlo para quitarlo</div>`);
   else if (rastro.length) {
-    filas.push('<div class="be-legend__row"><span class="leyenda-rastro"></span>Otros viajes: gris claro si ya pasaron, más claro si aún no</div>');
-    // Con viajes de más de una persona, quién es cada color (Pablo lleva uno por viaje y ya tiene sus filas).
+    // Solo si hay algún rastro apagado: un viaje en curso va en su color y esta fila no lo describe.
+    if (apagado) filas.push('<div class="be-legend__row"><span class="leyenda-rastro"></span>Otros viajes: gris claro si ya pasaron, más claro si aún no</div>');
+    // Con viajes de más de una persona, quién es cada color (Pablo lleva uno por viaje y ya tiene sus filas). El viaje
+    // de Pablo en curso cuenta como una persona más, aunque no vaya en el rastro.
     if (g.rastro.some((f) => f.properties.incierto)) filas.push('<div class="be-legend__row"><span class="be-legend__line be-legend__line--approx"></span>A trazos: tramo hacia un lugar incierto (su candidato preferido o el centro de su zona)</div>');
-    const quienes = [...new Set(rastro.map((v) => v.persona || 'pablo'))];
-    if (quienes.length > 1) {
-      for (const p of quienes.filter((x) => x !== 'pablo')) {
+    const quienes = new Set(rastro.map((v) => v.persona || 'pablo'));
+    if (V && g.hecho.length + g.falta.length) quienes.add('pablo');
+    if (quienes.size > 1) {
+      for (const p of [...quienes].filter((x) => x !== 'pablo')) {
         filas.push(`<div class="be-legend__row"><span class="leyenda-viajero" style="--viajero:${colorPersona(p)}"></span>${esc(nombrePersona(p))}</div>`);
       }
     }
