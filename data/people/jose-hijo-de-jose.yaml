@@ -5,12 +5,13 @@ names:
 - name: José
 perspicacia: 1200002515#9
 disambiguation: Medio hermano de Jesús, hijo de José y María. No es José, el esposo de María, ni José de Arimatea, ni José
-  hijo de Jacob.
+  hijo de Jacob, ni los demás José que numera Perspicacia.
 distinct_from:
 - jose-esposo-de-maria
 - jose-de-arimatea
 - jose-hijo-de-jacob
 - joses
+- jose-padre-de-igal
 summary: Uno de los cuatro medio hermanos de Jesús que nombran en Nazaret. Al principio no creía en él; después cambió,
   y en 33 estaba con los discípulos reunidos en Jerusalén.
 reason: Perspicacia «José», núm. 9; Mt 13:55 y Mr 6:3. «Testimonio completo», cap. 2, párr. 17, pone a cuatro hijos de
@@ -63,5 +64,5 @@ history:
   change: 'El resumen daba como muy posible, con Perspicacia «José», núm. 9, que estuviera en Jerusalén en 33.
     «Testimonio completo», más reciente, dice que María vio allí a cuatro de sus hijos.'
   source: bt-2
-checked_on: '2026-09-29'
+checked_on: '2026-10-01'
 status: verified
