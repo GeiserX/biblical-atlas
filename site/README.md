@@ -141,7 +141,7 @@ Los demás parámetros solo aparecen cuando no valen lo de siempre:
 | Espacio | Reproducir o pausar |
 | ← → | Mover el cursor un paso (depende del zoom de la línea). Con el foco en una marca de la línea, ir a la marca de al lado sin mover el cursor |
 | ↑ ↓, Inicio, Fin | Con el foco en una marca de la línea: a la fila de arriba o de abajo, a la primera o a la última de su fila |
-| Intro | Con el foco en una marca de la línea: elegirla; el cursor entra en ella por el punto más cercano |
+| Intro, Espacio | Con el foco en una marca de la línea: elegirla; el cursor entra en ella por el punto más cercano. Si es la misma marca que se eligió la última vez, soltarla, igual que un segundo clic |
 | Mayúsculas + ← → | Saltar a la parada o carta anterior o siguiente |
 | Esc | Borrar la búsqueda y la selección |
 | `T` | Ampliar o reducir la línea de tiempo |

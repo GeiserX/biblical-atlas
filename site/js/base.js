@@ -403,8 +403,10 @@ function iniciarEventos() {
     const cerrar = e.target.closest('[data-accion="cerrar"]');
     if (cerrar) { limpiarSeleccion(); return; }
     const s = e.target.closest('[data-sel]');
-    // Las marcas de la línea de tiempo las elige linea.js: el cursor entra por donde se pulsó y un segundo clic no suelta.
-    if (s && !s.closest('#resultados') && !s.matches('#linea-filas .m')) {
+    // Las marcas de la línea de tiempo las elige linea.js: el cursor entra por donde se pulsó y un segundo clic suelta.
+    // Se reconocen por su clase y su data-id, no por estar dentro de la línea: soltar una persona quita su carril, y la
+    // marca pulsada ya no está en la página cuando el clic llega aquí.
+    if (s && !s.closest('#resultados') && !s.matches('.m[data-id]')) {
       const sel = parseSel(s.dataset.sel);
       if (sel) {
         e.preventDefault();
