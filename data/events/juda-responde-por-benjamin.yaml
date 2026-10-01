@@ -13,6 +13,7 @@ narrative_order:
   series: genesis
   order: 43001
 places:
+- hebron
 - canaan
 people:
 - juda-hijo-de-jacob
@@ -23,14 +24,20 @@ passages:
 summary: Acabado el grano, Judá recuerda a Jacob que sin Benjamín no pueden volver y se hace responsable del muchacho. Jacob
   cede y los envía con un regalo y el doble de dinero.
 reason: 'Perspicacia «Jacob», párr. 38: cedió cuando se terminó lo comprado en Egipto, antes del traslado de 1728 a.e.c. (estudio
-  3). Canaán es donde vivía la familia, según los capítulos 42 y 44.'
+  3). La familia vivía en Canaán; «Jacob» y «José» ponen su casa en Hebrón, que va primero.'
 sources:
 - genesis-43
 - it-jacob
 - si-3
+- it-jose
 links:
 - title: Génesis 43 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/G%C3%A9nesis/43/
   type: bible
-checked_on: '2026-09-29'
+checked_on: '2026-10-02'
 status: verified
+history:
+- date: '2026-10-02'
+  change: Hebrón pasa a ser el primer lugar; Canaán, una zona con el punto en Galilea, situaba a la familia a 140 km de la
+    casa de Jacob.
+  source: it-jacob

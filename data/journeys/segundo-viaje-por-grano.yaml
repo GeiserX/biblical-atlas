@@ -41,7 +41,7 @@ narrative_order:
   order: 2
 stops:
 - order: 1
-  place: canaan
+  place: hebron
   reference: Gé 43:1-15
   date:
     from: -1728
@@ -51,15 +51,17 @@ stops:
     type: narrative
     chronology: tnm
     text: 'entre 1729 y 1728 a.e.c. (tiempo narrativo: unos diez años después de morir Isaac y antes del traslado a Egipto)'
-  note: Llevan el doble de dinero y productos del país como regalo.
-  reason: Gé 43:1-15 pone la decisión en casa de Jacob, en Canaán. Fecha narrativa del suceso «Judá responde por Benjamín
-    ante Jacob».
+  note: Casa de Jacob. Llevan el doble de dinero y productos del país como regalo.
+  reason: 'Gé 43:1-15 pone la decisión en casa de Jacob, en Canaán, que Perspicacia «Jacob» y «José» sitúan en Hebrón. Fecha
+    narrativa del suceso «Judá responde por Benjamín ante Jacob». Deducción: pendiente.'
   sources:
   - genesis-43
   - it-juda
   - si-3
-  checked_on: '2026-09-30'
-  status: verified
+  - it-jacob
+  - it-jose
+  checked_on: '2026-10-02'
+  status: pending
 - order: 2
   place: egipto
   reference: Gé 43:15–45:24
@@ -85,7 +87,7 @@ stops:
   checked_on: '2026-09-30'
   status: verified
 - order: 3
-  place: canaan
+  place: hebron
   reference: Gé 45:25-28
   date:
     from: -1727
@@ -95,10 +97,18 @@ stops:
     type: anchored
     chronology: tnm
     text: 1728 a.e.c.
-  note: Jacob no los cree hasta ver los carros que envía José.
-  reason: Gé 45:25 dice que subieron de Egipto hasta Jacob, en Canaán. Fecha del suceso «Jacob se entera de que José vive».
+  note: Casa de Jacob. Jacob no los cree hasta ver los carros que envía José.
+  reason: 'Gé 45:25 dice que subieron de Egipto hasta Jacob, en Canaán; Perspicacia «Jacob» y «José» ponen su casa en Hebrón.
+    Fecha del suceso «Jacob se entera de que José vive». Deducción: pendiente.'
   sources:
   - genesis-45
   - si-3
-  checked_on: '2026-09-30'
-  status: verified
+  - it-jacob
+  - it-jose
+  checked_on: '2026-10-02'
+  status: pending
+history:
+- date: '2026-10-02'
+  change: La salida y la vuelta pasa de Canaán, una zona con el punto en Galilea, a Hebrón, donde Perspicacia «Jacob» y «José»
+    ponen la casa de Jacob.
+  source: it-jacob
