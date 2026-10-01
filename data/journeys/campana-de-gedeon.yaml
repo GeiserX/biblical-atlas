@@ -77,7 +77,7 @@ stops:
   status: verified
 - order: 3
   place: colina-de-more
-  reference: Jue 7:9-22
+  reference: Jue 7:9-24
   date:
     from: -1449
     to: -1172
@@ -86,39 +86,19 @@ stops:
     type: narrative
     chronology: tnm
     text: 'entre c. 1450 y c. 1173 a.e.c. (tiempo narrativo: antes de que Jefté empezara a juzgar)'
-  note: Baja de noche con Purá al campamento enemigo, que está junto a la colina.
+  note: Baja de noche con Purá al campamento enemigo, que está junto a la colina. Madián huye hacia Bet-Sitá, Zererá y Abel-Meholá;
+    los de Efraín cierran los pasos hasta Bet-Bará.
   reason: 'Jue 7:1, 9-15: el campamento madianita está en la llanura junto a Moré; Gedeón baja hasta su borde y luego lo ataca.
     Suceso ancla: gedeon-derrota-a-madian-con-300-hombres (antes de Jefté, c. 1173, según Perspicacia «Jefté»).'
   sources:
   - jueces-7
   - it-more
   - it-jefte
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-02'
   status: verified
 - order: 4
-  place: rio-jordan
-  reference: Jue 7:22–8:4
-  date:
-    from: -1449
-    to: -1172
-    precision: range
-    approx: true
-    type: narrative
-    chronology: tnm
-    text: 'entre c. 1450 y c. 1173 a.e.c. (tiempo narrativo: antes de que Jefté empezara a juzgar)'
-  note: Madián huye hacia Bet-Sitá, Zererá y Abel-Meholá; los de Efraín cierran los pasos hasta Bet-Bará.
-  reason: 'Jue 8:4: Gedeón llega al Jordán y lo cruza con sus 300 hombres, cansados pero sin dejar la persecución. Suceso
-    ancla: gedeon-derrota-a-madian-con-300-hombres (antes de Jefté, c. 1173, según Perspicacia «Jefté»).'
-  sources:
-  - jueces-7
-  - jueces-8
-  - it-gedeon
-  - it-jefte
-  checked_on: '2026-09-30'
-  status: verified
-- order: 5
   place: sucot
-  reference: Jue 8:5-7
+  reference: Jue 8:4-7
   date:
     from: -1449
     to: -1172
@@ -127,16 +107,17 @@ stops:
     type: narrative
     chronology: tnm
     text: 'entre c. 1450 y c. 1173 a.e.c. (tiempo narrativo: antes de que Jefté empezara a juzgar)'
-  note: Los príncipes de la ciudad le niegan pan.
-  reason: 'Jue 8:5-7 cuenta que pide pan a los de Sucot y ellos se burlan. Suceso ancla: sucot-niega-pan-a-gedeon (antes de
-    Jefté, c. 1173, según Perspicacia «Jefté»).'
+  note: Llega tras cruzar el Jordán con los 300, cansados y tras Madián (Jue 8:4). Los príncipes de la ciudad le niegan pan.
+  reason: 'Jue 8:4-7: cruza el Jordán, pide pan a los de Sucot y ellos se burlan. El cruce va en esta nota: solo se cruza.
+    Suceso ancla: sucot-niega-pan-a-gedeon (antes de Jefté, c. 1173, según Perspicacia «Jefté»).'
   sources:
   - jueces-8
   - it-sucot
+  - it-gedeon
   - it-jefte
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-02'
   status: verified
-- order: 6
+- order: 5
   place: penuel
   reference: Jue 8:8, 9
   date:
@@ -156,7 +137,7 @@ stops:
   - it-jefte
   checked_on: '2026-09-30'
   status: verified
-- order: 7
+- order: 6
   place: jogbeha
   reference: Jue 8:11
   date:
@@ -177,7 +158,7 @@ stops:
   - it-jefte
   checked_on: '2026-09-30'
   status: verified
-- order: 8
+- order: 7
   place: carcor
   reference: Jue 8:10-12
   date:
@@ -197,7 +178,7 @@ stops:
   - it-jefte
   checked_on: '2026-09-30'
   status: verified
-- order: 9
+- order: 8
   place: paso-de-heres
   reference: Jue 8:13
   date:
@@ -217,7 +198,7 @@ stops:
   - it-jefte
   checked_on: '2026-09-30'
   status: verified
-- order: 10
+- order: 9
   place: sucot
   reference: Jue 8:14-16
   date:
@@ -237,7 +218,7 @@ stops:
   - it-jefte
   checked_on: '2026-09-30'
   status: verified
-- order: 11
+- order: 10
   place: penuel
   reference: Jue 8:17
   date:
@@ -257,7 +238,7 @@ stops:
   - it-jefte
   checked_on: '2026-09-30'
   status: verified
-- order: 12
+- order: 11
   place: ofra-de-gedeon
   reference: Jue 8:27, 29
   date:
