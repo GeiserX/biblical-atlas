@@ -1,5 +1,6 @@
 // The timeline strip in a real headless browser: every mark in view shows its whole name, never covered and never cut;
-// clicking a mark selects it and puts the cursor at the pointed moment without moving the scale, the view or the lanes;
+// clicking a mark selects it and puts the cursor at the pointed moment without moving the scale, the view or the lanes,
+// and clicking the selected mark again releases it;
 // no label says «cálculo»; dragging moves time, the ruler moves the cursor, the wheel zooms at the pointer and the lanes
 // scroll with the wheel over their names or a vertical drag; person lanes
 // follow the same rule; selecting a period does not reframe the view; the map follows the cursor.
@@ -259,14 +260,21 @@ for (const screen of [DESKTOP, PHONE]) {
   });
 }
 
-test('1440: a second click keeps the selection, Esc releases it, an empty click releases it; the keyboard walks the strip', async () => {
+test('1440: a second click on the selected mark releases it, Esc releases it, an empty click releases it; the keyboard walks the strip', async () => {
   const p = await open(DESKTOP, 't=50.5&v=8');
   const it = (await hookView(p)).visible.filter((x) => !x.secular && x.top < 250 && x.x > 0 && x.x + x.w < 1200).sort((a, b) => a.top - b.top)[0];
   const box = async () => p.evaluate((id) => { const r = document.querySelector(`#linea-filas .m[data-id="${CSS.escape(id)}"] .m-nombre .t`).getBoundingClientRect(); return [r.left + r.width / 2, r.top + r.height / 2]; }, it.id);
   let [x, y] = await box();
   await p.mouse.click(x, y); await frames(p);
+  const first = await state(p);
+  assert.equal(first.sel, it.sel, 'the first click selects');
+  // A second click on the selected mark lets it go, as on the map, and moves neither the cursor nor the view.
   await p.mouse.click(x, y); await frames(p);
-  assert.equal((await state(p)).sel, it.sel, 'a second click keeps the selection');
+  const second = await state(p);
+  assert.equal(second.sel, '', 'a second click releases the selection');
+  assert.equal(second.t, first.t); assert.deepEqual(second.vista, first.vista);
+  await p.mouse.click(x, y); await frames(p);
+  assert.equal((await state(p)).sel, it.sel, 'a third click selects it again');
   const before = await state(p);
   await p.keyboard.press('Escape'); await frames(p);
   const esc = await state(p);
@@ -295,6 +303,8 @@ test('1440: a second click keeps the selection, Esc releases it, an empty click 
   assert.equal(k2.sel, f.sel);
   assert.ok(k2.t >= Math.max(f.t0, k2.vista[0]) - 1e-9 && k2.t <= Math.min(f.t1, k2.vista[1]) + 1e-9, 'Enter puts the cursor inside the mark');
   assert.deepEqual(k2.vista, k1.vista);
+  await p.keyboard.press('Enter'); await frames(p);
+  assert.equal((await state(p)).sel, '', 'Enter on the selected mark releases it');
   const ring = await p.evaluate(() => { const s = getComputedStyle(document.activeElement); return `${s.outlineStyle} ${s.outlineWidth}`; });
   note(`1440 keyboard: focus ring ${ring}`);
   await p.context().close();
