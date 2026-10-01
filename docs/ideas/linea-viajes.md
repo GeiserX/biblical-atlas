@@ -1,5 +1,14 @@
 # Viajes en la línea y en el mapa: cuatro preguntas
 
+## Elegido
+
+**A, B, A, B**, lo que recomendábamos, y ya está en el sitio:
+
+1. **A.** El carril de cada viajero, elegido o fijado, lleva un tramo por viaje en su color del mapa, sus paradas debajo y, después, los sucesos y los sitios donde vivió. «Viajes de Pablo» hace lo mismo y conserva su id `pablo`. Pulsar una marca del carril ya no lo quita.
+2. **B.** Cualquier nombre de carril va en dos líneas, o en tres en el teléfono, y el carril crece hasta su nombre. Ninguno se corta a 1440 ni a 430, tampoco fijado ni con «Letra grande».
+3. **A.** Con una persona elegida, el mapa enseña lo mismo que sin nada elegido: el viaje en curso. Pablo en el 44 pasa de 8 rutas suyas a 1, y Jesús en el 32 de 19 rutas a 10.
+4. **B.** Campo cerrado `repeats: yearly` en los tres viajes de cada año, comprobado con 1Sa 1:3, 1Sa 7:16 y Lu 2:41. Se ve como «↻ cada año» tras el nombre en la línea, sobre la ruta y en la leyenda del mapa.
+
 Desde que viajan 125 personas, la línea de tiempo y el mapa tratan sus viajes de cuatro maneras que no encajan entre sí. Solo Pablo tiene un carril con un tramo por viaje. Solo «Viajes de Pablo» parte su nombre en dos líneas. Con Pablo elegido, el mapa vuelve a pintar todos sus viajes, el de la fecha en color y el resto en gris. Y los viajes que se hacían cada año salen como si se hubieran hecho una vez. Este documento plantea cada pregunta con sus opciones, una maqueta por opción sobre el sitio de verdad, lo que cuesta construirla y lo que recomendamos. No cambia nada de `site/` ni de `data/`.
 
 Cada imagen enseña el ordenador a 1440 × 900 y el teléfono a 430 de ancho, con el tema claro y el modo reunión.
