@@ -17,13 +17,13 @@ sources:
 - isaias-37
 links:
 - title: 'Perspicacia: «Sarézer»'
-  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003954
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sar%C3%A9zer/
   type: perspicacia
 - title: 2 Reyes 19 (TNM)
-  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/19
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-reyes/19/
   type: bible
 - title: Isaías 37 (TNM)
-  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/23/37
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Isa%C3%ADas/37/
   type: bible
 relations:
 - type: kin

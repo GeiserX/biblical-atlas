@@ -82,10 +82,10 @@ sources:
 - 1-reyes-5
 links:
 - title: 'Perspicacia: «David»'
-  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001130
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/David/
   type: perspicacia
 - title: 2 Samuel 5 (TNM)
-  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/5
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-samuel/5/
   type: bible
 relations:
 - type: born_in

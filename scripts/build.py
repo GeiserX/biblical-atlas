@@ -37,12 +37,10 @@ TYPES = ["places", "people", "journeys", "letters", "events", "periods", "finds"
 SINGULAR = {"places": "place", "people": "person", "journeys": "journey", "letters": "letter", "events": "event",
             "periods": "period", "finds": "find", "tours": "tour"}
 WOL_BUSCAR = "https://wol.jw.org/es/wol/s/r4/lp-s?q={q}&p=par&r=occ&st=a"
-WOL_CAPITULO = "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/{num}/{cap}"
 OBRA_TNM = "La Biblia. Traducción del Nuevo Mundo (edición de estudio)"
 ORDEN_LIBROS = ["romanos", "1-corintios", "2-corintios", "galatas", "efesios", "filipenses", "colosenses",
                 "1-tesalonicenses", "2-tesalonicenses", "1-timoteo", "2-timoteo", "tito", "filemon", "hebreos"]
 CAPITULO = re.compile(r"^([a-z0-9]+(?:-[a-z0-9]+)*)-(\d+)$")
-RE_NWTSTY = re.compile(r"/nwtsty/(\d+)/(\d+)(?:\D|$)")
 # Claves que no vienen de ningún YAML: las añade build.py. Salen en data.json con su nombre de siempre.
 BUILD_KEYS = {"implicit": "implicita"}
 # Grupo de la tarjeta de familia visto desde el otro lado: padres e hijos se cruzan, cónyuges y hermanos se repiten.
@@ -153,7 +151,7 @@ def capitulo_de(fid, libros):
 
 def fuente_capitulo(libro, cap):
     return {"title": f"{libro['name']} {cap}", "work": OBRA_TNM,
-            "url": WOL_CAPITULO.format(num=libro["num"], cap=cap), "level": 1, "published": None,
+            "url": cov.url_capitulo(libro, cap), "level": 1, "published": None,
             "checked_on": None, "implicit": True}
 
 
@@ -315,16 +313,13 @@ def citation_texts(texto, citas):
 
 def source_chapters(fuentes_ids, datos):
     """Los capítulos de la TNM que hay entre las fuentes, escritos «Jn 1»."""
-    por_num = {l.get("num"): l for l in datos["books"]}
     out = []
     for fid in fuentes_ids or []:
         cap = capitulo_de(fid, datos["books"])
         if cap:
             libro, c = cap
         else:
-            m = RE_NWTSTY.search(str((datos["sources"].get(fid) or {}).get("url") or ""))
-            libro = por_num.get(int(m.group(1))) if m else None
-            c = int(m.group(2)) if m else None
+            libro, c = cov.capitulo_de_url((datos["sources"].get(fid) or {}).get("url"), datos["books"]) or (None, None)
         if libro:
             t = f"{libro.get('abbr')} {c}"
             if t not in out:

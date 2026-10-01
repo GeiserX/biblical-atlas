@@ -6,7 +6,7 @@
 <title>El calendario de la Biblia · biblical-atlas</title>
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
-<meta name="description" content="Cómo se contaban los meses y los años en la Biblia, qué nombres tenían en cada época y cómo los pone la línea de tiempo de biblical-atlas. Cada dato enlaza a su fuente en wol.jw.org.">
+<meta name="description" content="Cómo se contaban los meses y los años en la Biblia, qué nombres tenían en cada época y cómo los pone la línea de tiempo de biblical-atlas. Cada dato enlaza a su fuente en jw.org.">
 <link rel="stylesheet" href="kit/tokens.css">
 <link rel="stylesheet" href="kit/components.css">
 <link rel="stylesheet" href="css/calendario.css">
@@ -137,7 +137,7 @@ function pintar(D) {
       <p>El selector «Meses» de la línea elige qué se ve: los dos calendarios, solo el nuestro o solo el hebreo.</p>` },
   ];
   const lista = [...usadas].map((id) => F[id]).sort((a, b) => nombreFuente(a).localeCompare(nombreFuente(b), 'es'));
-  secciones.push({ id: 'fuentes', titulo: 'Fuentes', html: `<p>Todo lo que dice esta página sale de estas publicaciones de wol.jw.org. Pulsa una para leerla entera.</p>
+  secciones.push({ id: 'fuentes', titulo: 'Fuentes', html: `<p>Todo lo que dice esta página sale de estas publicaciones de jw.org. Pulsa una para leerla entera.</p>
     <ul class="cal-lista-fuentes">${lista.map((f) => `<li><a href="${esc(f.url)}" ${EXTERNO}>${esc(f.titulo)}</a><span>${esc(f.obra)}</span></li>`).join('')}</ul>` });
 
   document.getElementById('indice').innerHTML = secciones.map((s) => `<li><a href="#${s.id}">${esc(s.titulo)}</a></li>`).join('');

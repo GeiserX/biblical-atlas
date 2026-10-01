@@ -18,10 +18,10 @@ sources:
 - openbible-geo
 links:
 - title: 'Perspicacia: «Mitilene»'
-  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003091
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Mitilene/
   type: perspicacia
 - title: Hechos 20 (TNM)
-  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/20
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/hechos/20/
   type: bible
 checked_on: '2026-09-27'
 status: verified

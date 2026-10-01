@@ -14,13 +14,13 @@ sources:
 - 2-reyes-23
 links:
 - title: 'Perspicacia: «Hilquías»'
-  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002026
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hilqu%C3%ADas/
   type: perspicacia
 - title: 2 Reyes 22 (TNM)
-  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/22
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-reyes/22/
   type: bible
 - title: 2 Reyes 23 (TNM)
-  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/23
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-reyes/23/
   type: bible
 relations:
 - type: holds_office

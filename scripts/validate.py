@@ -31,7 +31,6 @@ import bible_coverage  # noqa: E402
 RAIZ = Path(__file__).resolve().parent.parent
 MAP = RAIZ / "scripts" / "migration" / "map.yaml"
 TYPES = ["places", "people", "journeys", "letters", "events", "periods", "finds", "tours"]
-WOL_CAPITULO = "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/{num}/{cap}"
 OBRA_TNM = "La Biblia. Traducción del Nuevo Mundo (edición de estudio)"
 CAPITULO = re.compile(r"^([a-z0-9]+(?:-[a-z0-9]+)*)-(\d+)$")
 
@@ -223,7 +222,7 @@ def load(data_dir):
         if cap and 1 <= cap[1] <= int(cap[0].get("chapters") or 0):
             libro, n = cap
             fuentes[fid] = {"title": f"{libro['name']} {n}", "work": OBRA_TNM,
-                            "url": WOL_CAPITULO.format(num=libro["num"], cap=n), "level": 1, "published": None,
+                            "url": bible_coverage.url_capitulo(libro, n), "level": 1, "published": None,
                             "checked_on": None, "_implicit": True}
             origen[fid] = "data/books.yaml (capítulo implícito)"
     return datos
@@ -1578,6 +1577,8 @@ def validar(datos):
 
 
 RE_PERSPICACIA = re.compile(r"^(\d{10})(?:#([1-9]\d?))?$")
+# La URL de un artículo de Perspicacia en jw.org lleva su nombre, no el documento.
+RE_JW_PERSPICACIA = re.compile(r"^https://www\.jw\.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/[^/?#]+/$")
 
 
 def validar_claves_perspicacia(datos, err):
@@ -1596,9 +1597,13 @@ def validar_claves_perspicacia(datos, err):
             err(f"{o['_fichero']}: perspicacia '{v}' debe ser '<documento de 10 cifras>' o '<documento>#<número de la "
                 f"entrada>' (1200003629#1), o null si Perspicacia no tiene artículo")
             continue
-        urls_ = [str(e.get("url") or "") for e in o.get("links") or [] if isinstance(e, dict)]
+        enlaces = [e for e in o.get("links") or [] if isinstance(e, dict)]
+        urls_ = [str(e.get("url") or "") for e in enlaces]
         urls_ += [str((datos["sources"].get(f) or {}).get("url") or "") for f in o.get("sources") or []]
-        if not any(u.rstrip("/").endswith("/" + m.group(1)) for u in urls_):
+        # En wol.jw.org la URL termina en el documento. En jw.org no lo lleva: basta un enlace de tipo perspicacia
+        # a un artículo de Perspicacia; que sea el del documento lo comprobó quien pasó la URL a jw.org.
+        en_jw = any(e.get("type") == "perspicacia" and RE_JW_PERSPICACIA.match(str(e.get("url") or "")) for e in enlaces)
+        if not en_jw and not any(u.rstrip("/").endswith("/" + m.group(1)) for u in urls_):
             err(f"{o['_fichero']}: perspicacia '{v}': ningún enlace ni fuente de la ficha lleva al documento {m.group(1)}")
         if v in vistas:
             err(f"{o['_fichero']}: perspicacia '{v}' es también la clave de {vistas[v]}; son la misma persona, "

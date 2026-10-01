@@ -28,10 +28,10 @@ sources:
 - si-3
 links:
 - title: 'Perspicacia: «Justo»'
-  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002561
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Justo/
   type: perspicacia
 - title: Hechos 18 (TNM)
-  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/18
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/hechos/18/
   type: bible
 relations:
 - type: lived_in

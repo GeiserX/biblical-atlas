@@ -36,13 +36,13 @@ sources:
 - jueces-11
 links:
 - title: 'Perspicacia: «Sehón»'
-  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004117
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Seh%C3%B3n/
   type: perspicacia
 - title: Salmo 135 (TNM)
-  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/19/135
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/salmos/135/
   type: bible
 - title: Salmo 136 (TNM)
-  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/19/136
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/salmos/136/
   type: bible
 checked_on: '2026-09-29'
 status: verified

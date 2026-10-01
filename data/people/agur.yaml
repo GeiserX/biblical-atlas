@@ -30,10 +30,10 @@ sources:
 - tnm-a6-b
 links:
 - title: 'Perspicacia: «Agur»'
-  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000137
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Agur/
   type: perspicacia
 - title: Proverbios 30 (TNM)
-  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/20/30
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/proverbios/30/
   type: bible
 relations:
 - type: kin

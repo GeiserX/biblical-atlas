@@ -34,10 +34,10 @@ sources:
 - openbible-geo
 links:
 - title: 'Perspicacia: «Sitná»'
-  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004152
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sitn%C3%A1/
   type: perspicacia
 - title: Génesis 26 (TNM)
-  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/26
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/G%C3%A9nesis/26/
   type: bible
 checked_on: '2026-09-29'
 status: verified

@@ -29,10 +29,10 @@ relations:
   status: verified
 links:
 - title: 'Perspicacia: «Eunuco»'
-  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001444
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Eunuco/
   type: perspicacia
 - title: Hechos 8 (TNM)
-  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/8
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/hechos/8/
   type: bible
 perspicacia: null
 checked_on: '2026-09-29'

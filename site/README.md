@@ -34,7 +34,7 @@ El mapa lleva solo la atribución que piden las licencias (OpenBible.info, el re
 
 El método de los tres índices está en [`docs/investigacion/videos-jw.md`](../docs/investigacion/videos-jw.md).
 
-No copiamos ni incrustamos texto de jw.org. La ficha enlaza cada pasaje a su capítulo en wol.jw.org y cada dato a su fuente. La fecha de consulta queda en los YAML, en la SQLite y en el registro, no en la ficha.
+No copiamos ni incrustamos texto de jw.org. La ficha enlaza cada pasaje a su capítulo en jw.org, con los versículos citados resaltados, y cada dato a su fuente. La fecha de consulta queda en los YAML, en la SQLite y en el registro, no en la ficha.
 
 ## Mapas base
 
@@ -220,7 +220,7 @@ BE.tipo('lugar', {
 | `BE.inicios` | Funciones que se llaman una vez con los datos ya cargados, antes de leer la dirección |
 | `BE.parametros` | Parámetros extra de la dirección: `{ nombre, escribir() → texto o null, leer(texto, inicial) }` |
 
-`base.js` lee a través de `BE` estos valores, que su dueño puede cambiar desde su propio fichero sin tocar `base.js`: `BE.T_MIN` y `BE.T_MAX` (rango del cursor), `BE.velocidad()`, `BE.textoVelocidad()` y `BE.hitos()`, que pone `linea.js` (redondea la velocidad a un escalón con nombre, «3 meses por segundo», y deja elegirla con − y +); `BE.urlCapitulo(libro, cap)` y `BE.ponerLibros(lista)`, que cambia la lista de libros que entienden `citas` y la búsqueda, y que pone `tipos/libro.js`.
+`base.js` lee a través de `BE` estos valores, que su dueño puede cambiar desde su propio fichero sin tocar `base.js`: `BE.T_MIN` y `BE.T_MAX` (rango del cursor), `BE.velocidad()`, `BE.textoVelocidad()` y `BE.hitos()`, que pone `linea.js` (redondea la velocidad a un escalón con nombre, «3 meses por segundo», y deja elegirla con − y +); `BE.urlCapitulo(libro, cap)`, `BE.urlCita(cita)` (el capítulo en jw.org con el versículo o el tramo resaltado) y `BE.ponerLibros(lista)`, que cambia la lista de libros que entienden `citas` y la búsqueda, y que pone `tipos/libro.js`.
 
 `trayectorias.js`, `linea.js` y `ahora.js` publican además `BE.estancias(persona)`, `BE.sucesoEn(persona, t)` (el suceso del que sale el lugar que da `BE.donde`; de ahí sale el de «Mientras tanto»), `BE.presentes(t)`, `BE.edad(persona, t)`, `BE.ventanaFecha(fecha)`, `BE.diaHebreo(t)`, `BE.anioHebreo(y)` (los 12 o 13 meses del año hebreo que empieza en la primavera de `y`), `BE.nombreMes(mes, y)` (el nombre del mes en esa época), `BE.fmtMes(t, fino)` (como `fmtCursor`, con la duración real de nuestros meses), `BE.irA(t, escala)`, `BE.encuadrarTiempo(a, b)`, `BE.inicioPeriodo(p)` (el principio conocido de un periodo: su `desde`; si no tiene, `consta_desde`; si tampoco, el principio del tramo dibujado), `BE.resumenAhora(t)`, `BE.fraseAhora(t)` y `BE.sincronia.alternar(on, { lugar, periodo })`.
 

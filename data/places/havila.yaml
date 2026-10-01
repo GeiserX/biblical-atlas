@@ -37,10 +37,10 @@ sources:
 - genesis-2
 links:
 - title: 'Perspicacia: «Havilá»'
-  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001921
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Havil%C3%A1/
   type: perspicacia
 - title: Génesis 2 (TNM)
-  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/2
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/G%C3%A9nesis/2/
   type: bible
 checked_on: '2026-09-29'
 status: verified

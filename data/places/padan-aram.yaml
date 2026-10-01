@@ -32,22 +32,22 @@ sources:
 - oseas-12
 links:
 - title: 'Perspicacia: «Padán»'
-  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003357
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Pad%C3%A1n/
   type: perspicacia
 - title: Génesis 25 (TNM)
-  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/25
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/G%C3%A9nesis/25/
   type: bible
 - title: Génesis 28 (TNM)
-  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/28
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/G%C3%A9nesis/28/
   type: bible
 - title: Génesis 33 (TNM)
-  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/33
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/G%C3%A9nesis/33/
   type: bible
 - title: Génesis 46 (TNM)
-  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/46
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/G%C3%A9nesis/46/
   type: bible
 - title: Génesis 48 (TNM)
-  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/48
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/G%C3%A9nesis/48/
   type: bible
 checked_on: '2026-09-29'
 status: verified

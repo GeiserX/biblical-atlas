@@ -27,7 +27,7 @@ function marcaNivel(n) {
 }
 
 function chipsCitas(ref) {
-  return citas(ref).map((c) => `<a class="be-ref" href="${BE.urlCapitulo(c.libro, c.cap)}" ${EXTERNO} title="Leer ${esc(c.libro.nombre)} ${c.cap} en wol.jw.org">${esc(c.texto)}</a>`).join('');
+  return citas(ref).map((c) => `<a class="be-ref" href="${BE.urlCita(c)}" ${EXTERNO} title="Leer ${esc(c.texto)} en jw.org">${esc(c.texto)}</a>`).join('');
 }
 function estadoHtml(estado) {
   const v = estado === 'verificado';
@@ -97,7 +97,7 @@ function enlacesHtml(enlaces) {
   // «Hechos 18 (TNM)» se lee «Hechos 18»: la sigla es jerga para quien lee y pasa al texto emergente.
   return `<div class="enlaces">${enlaces.map((e) => {
     const tnm = / \(TNM\)$/.test(e.titulo);
-    return `<a class="be-wol" href="${esc(e.url)}" ${EXTERNO}${tnm ? ' title="Traducción del Nuevo Mundo, en wol.jw.org"' : ''}>${esc(tnm ? e.titulo.replace(/ \(TNM\)$/, '') : e.titulo)}</a>`;
+    return `<a class="be-wol" href="${esc(e.url)}" ${EXTERNO}${tnm ? ' title="Traducción del Nuevo Mundo, en jw.org"' : ''}>${esc(tnm ? e.titulo.replace(/ \(TNM\)$/, '') : e.titulo)}</a>`;
   }).join('')}</div>`;
 }
 /** Vídeos de jw.org que nombran un lugar (BE.VIDEOS, de videos.json) o una persona (V, de videos-personas.json).

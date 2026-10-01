@@ -25,19 +25,19 @@ sources:
 - 1-reyes-4
 links:
 - title: 'Perspicacia: «Sadoc»'
-  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004652
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sadoc/
   type: perspicacia
 - title: 2 Samuel 8 (TNM)
-  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/8
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-samuel/8/
   type: bible
 - title: 2 Samuel 15 (TNM)
-  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/15
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-samuel/15/
   type: bible
 - title: 2 Samuel 17 (TNM)
-  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/17
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-samuel/17/
   type: bible
 - title: 2 Samuel 19 (TNM)
-  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/19
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-samuel/19/
   type: bible
 relations:
 - type: kin

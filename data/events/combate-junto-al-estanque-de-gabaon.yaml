@@ -37,13 +37,13 @@ sources:
 - it-hebron
 links:
 - title: 2 Samuel 2 (TNM)
-  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/2
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-samuel/2/
   type: bible
 - title: 'Perspicacia: «Gabaón»'
-  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001682
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Gaba%C3%B3n/
   type: perspicacia
 - title: 'Perspicacia: «Joab»'
-  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002469
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Joab/
   type: perspicacia
 checked_on: '2026-09-29'
 status: verified

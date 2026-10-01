@@ -32,13 +32,13 @@ sources:
 - lucas-11
 links:
 - title: 'Perspicacia: «Zacarías»'
-  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004681
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zacar%C3%ADas/
   type: perspicacia
 - title: 'Perspicacia: «Baraquías»'
-  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000558
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Baraqu%C3%ADas/
   type: perspicacia
 - title: Mateo 23 (TNM)
-  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/40/23
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/mateo/23/
   type: bible
 relations:
 - type: kin

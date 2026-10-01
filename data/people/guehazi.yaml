@@ -16,13 +16,13 @@ sources:
 - 2-reyes-8
 links:
 - title: 'Perspicacia: «Guehazí»'
-  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001641
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Guehaz%C3%AD/
   type: perspicacia
 - title: 2 Reyes 4 (TNM)
-  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/4
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-reyes/4/
   type: bible
 - title: 2 Reyes 5 (TNM)
-  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/5
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-reyes/5/
   type: bible
 relations:
 - type: tie

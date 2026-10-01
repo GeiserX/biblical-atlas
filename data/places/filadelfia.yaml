@@ -20,10 +20,10 @@ sources:
 - openbible-geo
 links:
 - title: 'Perspicacia: «Filadelfia»'
-  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003462
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Filadelfia/
   type: perspicacia
 - title: Apocalipsis 3 (TNM)
-  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/66/3
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/apocalipsis/3/
   type: bible
 checked_on: '2026-09-28'
 status: verified

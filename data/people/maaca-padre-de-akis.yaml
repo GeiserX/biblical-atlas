@@ -19,13 +19,13 @@ sources:
 - 1-reyes-2
 links:
 - title: 'Perspicacia: «Maacá»'
-  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002803
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Maac%C3%A1/
   type: perspicacia
 - title: 'Perspicacia: «Maoc»'
-  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002894
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Maoc/
   type: perspicacia
 - title: 1 Reyes 2 (TNM)
-  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/2
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/1-reyes/2/
   type: bible
 relations:
 - type: same_as

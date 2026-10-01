@@ -31,10 +31,10 @@ sources:
 - genesis-9
 links:
 - title: 'Perspicacia: «Arco iris»'
-  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003626
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Arco-iris/
   type: perspicacia
 - title: Génesis 9 (TNM)
-  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/9
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/G%C3%A9nesis/9/
   type: bible
 checked_on: '2026-09-29'
 status: verified

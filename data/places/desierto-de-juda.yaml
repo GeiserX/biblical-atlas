@@ -46,13 +46,13 @@ sources:
 - jueces-1
 links:
 - title: 'Perspicacia: «Judá, Desierto de»'
-  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002539
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jud%C3%A1-Desierto-de/
   type: perspicacia
 - title: Mateo 3 (TNM)
-  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/40/3
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/mateo/3/
   type: bible
 - title: Salmo 63 (TNM)
-  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/19/63
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/salmos/63/
   type: bible
 checked_on: '2026-09-29'
 status: verified

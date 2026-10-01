@@ -11,10 +11,10 @@ sources:
 - genesis-36
 links:
 - title: 'Perspicacia: «Gatam»'
-  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001616
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Gatam/
   type: perspicacia
 - title: Génesis 36 (TNM)
-  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/36
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/G%C3%A9nesis/36/
   type: bible
 relations:
 - type: kin

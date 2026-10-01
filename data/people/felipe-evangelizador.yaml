@@ -59,10 +59,10 @@ relations:
   status: verified
 links:
 - title: 'Perspicacia: «Felipe»'
-  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003466
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Felipe/
   type: perspicacia
 - title: Hechos 8 (TNM)
-  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/8
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/hechos/8/
   type: bible
 perspicacia: 1200003466#2
 checked_on: '2026-09-29'

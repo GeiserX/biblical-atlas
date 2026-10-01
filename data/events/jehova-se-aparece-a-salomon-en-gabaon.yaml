@@ -33,13 +33,13 @@ sources:
 - si-3
 links:
 - title: 1 Reyes 3 (TNM)
-  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/3
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/1-reyes/3/
   type: bible
 - title: 'Perspicacia: «Salomón»'
-  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004178
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Salom%C3%B3n/
   type: perspicacia
 - title: 'Perspicacia: «Gabaón»'
-  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001682
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Gaba%C3%B3n/
   type: perspicacia
 checked_on: '2026-09-30'
 status: verified

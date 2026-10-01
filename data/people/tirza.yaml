@@ -16,16 +16,16 @@ sources:
 - josue-17
 links:
 - title: 'Perspicacia: «Tirzá»'
-  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004426
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Tirz%C3%A1/
   type: perspicacia
 - title: Números 26 (TNM)
-  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/26
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/N%C3%BAmeros/26/
   type: bible
 - title: Números 27 (TNM)
-  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/27
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/N%C3%BAmeros/27/
   type: bible
 - title: Números 36 (TNM)
-  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/36
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/N%C3%BAmeros/36/
   type: bible
 relations:
 - type: kin

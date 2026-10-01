@@ -23,10 +23,10 @@ sources:
 - tnm-a6-b
 links:
 - title: 'Perspicacia: «Salum»'
-  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003933
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Salum/
   type: perspicacia
 - title: 2 Reyes 15 (TNM)
-  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/15
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-reyes/15/
   type: bible
 relations:
 - type: succeeds

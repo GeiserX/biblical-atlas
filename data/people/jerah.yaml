@@ -11,10 +11,10 @@ sources:
 - genesis-10
 links:
 - title: 'Perspicacia: «Jérah»'
-  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002415
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/J%C3%A9rah/
   type: perspicacia
 - title: Génesis 10 (TNM)
-  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/10
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/G%C3%A9nesis/10/
   type: bible
 relations:
 - type: kin

@@ -20,7 +20,7 @@ Tres marcos gobernados por una sola fecha:
 
 Prueba esto en el primer minuto:
 
-1. Escribe «Hch 16» en la búsqueda (o pulsa `/`). El cursor va al año 50, el mapa encuadra los lugares del capítulo y la ficha lo abre, con el enlace para leerlo en wol.jw.org.
+1. Escribe «Hch 16» en la búsqueda (o pulsa `/`). El cursor va al año 50, el mapa encuadra los lugares del capítulo y la ficha lo abre, con el enlace para leerlo en jw.org.
 2. Arrastra el cursor de la línea de tiempo. Pablo se mueve por su ruta y la ficha de la fecha dice qué pasa.
 3. En la barra de arriba, pulsa el mapa actual (el globo) y luego la cortina. Los mismos lugares sobre el mapa de hoy.
 

@@ -40,13 +40,13 @@ sources:
 - isaias-37
 links:
 - title: 'Perspicacia: «Edén»'
-  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001256
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ed%C3%A9n/
   type: perspicacia
 - title: 'Perspicacia: «Bet-edén»'
-  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000681
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Bet-ed%C3%A9n/
   type: perspicacia
 - title: Isaías 37 (TNM)
-  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/23/37
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Isa%C3%ADas/37/
   type: bible
 checked_on: '2026-09-30'
 status: verified

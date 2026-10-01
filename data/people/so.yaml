@@ -15,10 +15,10 @@ sources:
 - 2-reyes-17
 links:
 - title: 'Perspicacia: «So»'
-  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004172
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/So/
   type: perspicacia
 - title: 2 Reyes 17 (TNM)
-  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/17
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-reyes/17/
   type: bible
 relations:
 - type: holds_office

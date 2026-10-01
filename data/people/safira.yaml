@@ -31,10 +31,10 @@ relations:
   status: verified
 links:
 - title: 'Perspicacia: «Safira»'
-  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003835
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Safira/
   type: perspicacia
 - title: Hechos 5 (TNM)
-  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/5
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/hechos/5/
   type: bible
 perspicacia: '1200003835'
 checked_on: '2026-09-29'

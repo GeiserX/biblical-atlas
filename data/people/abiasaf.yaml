@@ -12,10 +12,10 @@ sources:
 - exodo-6
 links:
 - title: 'Perspicacia: «Abiasaf»'
-  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000029
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Abiasaf/
   type: perspicacia
 - title: Éxodo 6 (TNM)
-  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/2/6
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/%C3%89xodo/6/
   type: bible
 relations:
 - type: kin
