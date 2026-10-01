@@ -361,9 +361,12 @@ function storyOrder(items) {
   }
 }
 
-/** Lo que queda elegido al pulsar una marca: la marca, o nada si ya era la elegida (un segundo clic la suelta, como en el
-    mapa). `markSel` y `selT` son textos de selección («evento:…»); `selT` vacío si no hay nada elegido. */
-const nextSel = (markSel, selT) => (markSel === selT ? null : markSel);
+/** Lo que queda elegido al pulsar una marca: la marca, o nada si es lo elegido y la misma marca que se pulsó la última
+    vez (un segundo clic la suelta, como en el mapa). Otra marca de lo mismo (otra estancia de la persona elegida) lleva
+    el cursor a ella y no suelta nada. `markSel` y `selT` son textos de selección («persona:pablo»), `selT` vacío si no
+    hay nada elegido; `markId` es la marca pulsada y `lastId` la última pulsada, o null si lo elegido llegó de otro sitio
+    (el mapa, un enlace, la búsqueda). */
+const nextSel = (markSel, markId, selT, lastId) => (markSel === selT && markId === lastId ? null : markSel);
 /** Si se ve algo de una marca: su caja (`hit`, dibujo y nombre, en px de la franja) toca el ancho de la franja `w`, y su
     fila (de `y` a `y + row`, en px de los carriles) toca lo que enseña el panel, de `top` a `top + h`. Deja de verse
     cuando sale entera; un píxel dentro basta para que se vea. */

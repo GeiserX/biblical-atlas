@@ -1,5 +1,6 @@
 // The selection rules of the timeline (site/js/linea-filas.js), in plain node: no browser, no build, no data.
-//  - A click on a mark selects it; a second click on the selected mark lets it go, as on the map.
+//  - A click on a mark selects it; a second click on the same mark lets it go, as on the map. A click on another mark of
+//    the same selection (another stay of the selected person) moves the cursor into it and keeps the selection.
 //  - While something is selected the other marks are dimmed only while a mark of the selection is in view. When the
 //    selected mark leaves the view entirely (out of the time range, or its row scrolled out of the tall panel), the
 //    others get their colours back and the selection stays; when it comes back, the dimming returns. A selection with
@@ -20,16 +21,42 @@ vm.createContext(context);
 vm.runInContext(fs.readFileSync(path.join(ROOT, 'site/js/linea-filas.js'), 'utf8'), context);
 const F = context.window.BE.filas;
 
+// The strip remembers the id of the mark clicked last (`last`); a selection that arrives another way (the map, a link,
+// the search) has no remembered mark. `click` returns the selection and the remembered mark after a click.
+const click = (state, mark) => {
+  const sel = F.nextSel(mark.sel, mark.id, state.sel, state.last);
+  return sel == null ? { sel: '', last: null, released: true } : { sel, last: mark.id, released: false };
+};
+
 test('a second click on the selected mark lets it go', () => {
   assert.equal(typeof F.nextSel, 'function', 'linea-filas.js has no nextSel');
-  let sel = '';
-  sel = F.nextSel('evento:concilio-de-jerusalen-49', sel) ?? '';
-  assert.equal(sel, 'evento:concilio-de-jerusalen-49', 'the first click selects the mark');
-  sel = F.nextSel('evento:concilio-de-jerusalen-49', sel) ?? '';
-  assert.equal(sel, '', 'the second click on the same mark leaves nothing selected');
-  sel = F.nextSel('evento:concilio-de-jerusalen-49', sel) ?? '';
-  assert.equal(sel, 'evento:concilio-de-jerusalen-49', 'a third click selects it again');
-  assert.equal(F.nextSel('carta:galatas', sel), 'carta:galatas', 'a click on another mark moves the selection to it');
+  const ev = { sel: 'evento:concilio-de-jerusalen-49', id: 'evento:concilio-de-jerusalen-49' };
+  let s = { sel: '', last: null };
+  s = click(s, ev);
+  assert.equal(s.sel, ev.sel, 'the first click selects the mark');
+  s = click(s, ev);
+  assert.equal(s.sel, '', 'the second click on the same mark leaves nothing selected');
+  s = click(s, ev);
+  assert.equal(s.sel, ev.sel, 'a third click selects it again');
+  s = click(s, { sel: 'carta:galatas', id: 'carta:galatas' });
+  assert.equal(s.sel, 'carta:galatas', 'a click on another mark moves the selection to it');
+});
+
+test('with a person selected, a click on another of their stays keeps the person; a second click on the same stay lets go', () => {
+  // Two stays of Pablo in his lane share the selection «persona:pablo».
+  const A = { sel: 'persona:pablo', id: 'persona:pablo#rel:pablo:0' };
+  const B = { sel: 'persona:pablo', id: 'persona:pablo#rel:pablo:1' };
+  // Pablo selected from the map, a link or the search: no mark remembered.
+  let s = { sel: 'persona:pablo', last: null };
+  s = click(s, A);
+  assert.deepEqual([s.sel, s.released], ['persona:pablo', false], 'the first click on stay A keeps the person (the cursor moves into A)');
+  s = click(s, B);
+  assert.deepEqual([s.sel, s.released], ['persona:pablo', false], 'a click on stay B keeps the person (the cursor moves into B)');
+  s = click(s, B);
+  assert.deepEqual([s.sel, s.released], ['', true], 'a second click on stay B lets the person go');
+  // A selection that arrives another way forgets the remembered mark: the first click on that same mark moves, never releases.
+  s = click({ sel: 'persona:pablo', last: null }, B);
+  assert.equal(s.released, false, 'with nothing remembered, a click on B moves into it');
 });
 
 // A strip 1000 px wide whose panel shows rows 200 to 500 px down the lanes, rows 22 px tall.

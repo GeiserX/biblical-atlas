@@ -260,6 +260,32 @@ for (const screen of [DESKTOP, PHONE]) {
   });
 }
 
+test('1440: with a person selected, a click on another of their stays moves the cursor there; a second click on the same stay releases the person', async () => {
+  // Moisés selected by the address, so no mark was clicked yet. His lane goes away when he is released: the click that
+  // releases him must not select him again on its way up the page.
+  const p = await open(DESKTOP, 't=-1480&v=100&sel=persona:moises');
+  const own = (await hookView(p)).visible.filter((x) => x.sel === 'persona:moises' && x.x > 0 && x.x + x.w < 1200);
+  assert.ok(own.length >= 2, `only ${own.length} stays of Moisés in view`);
+  const [A, B] = own;
+  const clickOn = async (m) => {
+    await p.evaluate((id) => { const c = document.querySelector('#linea-cuerpo'); const x = window.BE.lineaMarcas().find((q) => q.id === id); c.scrollTop = Math.max(0, x.top - 120); }, m.id);
+    await frames(p);
+    const [x, y] = await p.evaluate((id) => { const r = document.querySelector(`#linea-filas .m[data-id="${CSS.escape(id)}"] .m-nombre .t`).getBoundingClientRect(); return [r.left + r.width / 2, r.top + r.height / 2]; }, m.id);
+    await p.mouse.click(x, y); await frames(p);
+    return state(p);
+  };
+  const a = await clickOn(A);
+  assert.equal(a.sel, 'persona:moises', 'a click on stay A keeps the person');
+  assert.ok(a.t >= A.t0 - 1e-9 && a.t <= A.t1 + 1e-9, 'the cursor is inside stay A');
+  const b = await clickOn(B);
+  assert.equal(b.sel, 'persona:moises', 'a click on stay B keeps the person');
+  assert.ok(b.t >= B.t0 - 1e-9 && b.t <= B.t1 + 1e-9, 'the cursor is inside stay B');
+  const again = await clickOn(B);
+  assert.equal(again.sel, '', 'a second click on stay B releases the person');
+  assert.equal(again.t, b.t, 'releasing does not move the cursor');
+  await p.context().close();
+});
+
 test('1440: a second click on the selected mark releases it, Esc releases it, an empty click releases it; the keyboard walks the strip', async () => {
   const p = await open(DESKTOP, 't=50.5&v=8');
   const it = (await hookView(p)).visible.filter((x) => !x.secular && x.top < 250 && x.x > 0 && x.x + x.w < 1200).sort((a, b) => a.top - b.top)[0];

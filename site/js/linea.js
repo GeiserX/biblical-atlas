@@ -401,7 +401,7 @@ const decorDe = (c) => (c.tipo === 'persona' ? 8 : 2);   // la franja de adorno 
 
 /** Mientras se arrastra la franja, las filas se congelan: ninguna marca cambia de fila y ningún carril encoge. */
 let hold = null;
-let desdeFranja = false, ultimaSel = '';
+let desdeFranja = false, ultimaSel = '', lastClicked = null;   // la marca pulsada la última vez (FIL.nextSel)
 function pintarLineaFija() {
   const svg = $('#linea-svg');
   const pista = $('#pista'), cuerpo = $('#linea-cuerpo');
@@ -494,6 +494,7 @@ function pintarFilas(V, med) {
   // Una selección que llega de fuera de la franja (la búsqueda, una ficha, el grafo, la dirección) baja los carriles
   // hasta su marca, una vez. Un clic en una marca nunca los mueve.
   if (selT !== ultimaSel) {
+    if (!desdeFranja) lastClicked = null;   // lo elegido llegó de otro sitio: ninguna marca recordada
     if (selT && !desdeFranja) { const it = marcasDeSel(selT)[0]; if (it) { verFila(it); med = null; } }
     ultimaSel = selT;
   }
@@ -712,9 +713,11 @@ const vivo = (texto) => { const v = $('#linea-vivo'); if (v) v.textContent = tex
 
 /** Elegir una marca: el cursor entra en ella por el punto señalado (con el teclado, por el más cercano) y la marca se
     elige y abre su ficha. Ni la escala, ni la vista, ni los carriles se mueven. Una fecha secular no mueve el cursor.
-    Pulsar la marca elegida la suelta, como un segundo clic en el mapa, y el cursor no se mueve. */
+    Pulsar otra vez la misma marca suelta lo elegido, como un segundo clic en el mapa, y el cursor no se mueve. Otra
+    marca de lo elegido (otra estancia de la persona) lleva el cursor a ella y no suelta nada. */
 function elegirMarca(it, tSeñalado) {
-  if (FIL.nextSel(it.sel, BE.selTexto(E.sel)) == null) { BE.limpiarSeleccion(); vivo('Nada elegido.'); return; }
+  if (FIL.nextSel(it.sel, it.id, BE.selTexto(E.sel), lastClicked) == null) { BE.limpiarSeleccion(); vivo('Nada elegido.'); return; }
+  lastClicked = it.id;
   const t = it.sinCursor ? null : FIL.clickTarget(it, tSeñalado, E.t, { v0: E.vista[0], span: span() }, BE.DIA);
   if (t != null) setT(t);
   desdeFranja = true;
