@@ -1,0 +1,156 @@
+// The rules behind «Atrás» and «Adelante» (site/js/visit-history.js, BE.visitHistory), loaded in node:vm without a
+// browser: the number and name each history entry carries, the names this tab keeps per visit, whether there is
+// anything behind or ahead, the buttons' labels, the name of each view and the tab's title.
+//
+//   node --test tests/site/visit-history.test.mjs
+//
+// No browser, no data: it runs anywhere, and in CI (.github/workflows/validar.yml).
+import { test } from 'node:test';
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import vm from 'node:vm';
+
+const code = fs.readFileSync(new URL('../../site/js/visit-history.js', import.meta.url), 'utf8');
+const window = { BE: {} };
+vm.runInNewContext(code, { window });
+const H = window.BE.visitHistory;
+// Objects made inside the vm have another Object.prototype: compare plain copies.
+const plain = (x) => JSON.parse(JSON.stringify(x));
+
+test('the file loads without a document and publishes its rules', () => {
+  assert.ok(H, 'BE.visitHistory is missing');
+  for (const k of ['isEntry', 'begin', 'push', 'rename', 'arrive', 'cutForward', 'around', 'buttonLabel', 'viewName', 'pageTitle']) assert.equal(typeof H[k], 'function', k);
+});
+
+test('only our own state counts as an entry', () => {
+  assert.equal(H.isEntry({ visit: 'a', step: 0, name: 'x' }), true);
+  for (const s of [null, undefined, 'x', {}, { visit: 'a' }, { visit: '', step: 0 }, { visit: 'a', step: -1 }, { visit: 'a', step: 1.5 }]) assert.equal(H.isEntry(s), false, JSON.stringify(s));
+});
+
+test('a page load without our state starts a visit at step 0, with nothing behind or ahead', () => {
+  const r = H.begin(null, [], 'v1', 'la portada');
+  assert.deepEqual(plain(r.state), { visit: 'v1', step: 0, name: 'la portada' });
+  assert.deepEqual(plain(r.visits), [['v1', ['la portada']]]);
+  const a = H.around(r.state, r.visits);
+  assert.deepEqual(plain(a), { back: { can: false, name: null }, forward: { can: false, name: null } });
+});
+
+test('each new entry gets the next step and cuts what was ahead', () => {
+  let { state, visits } = H.begin(null, [], 'v1', 'El mapa en c. 50 e.c.');
+  ({ state, visits } = H.push(state, visits));                  // the copy carries the old name until it is renamed
+  assert.deepEqual(plain(state), { visit: 'v1', step: 1, name: 'El mapa en c. 50 e.c.' });
+  ({ state, visits } = H.rename(state, visits, 'Pablo'));
+  ({ state, visits } = H.push(state, visits));
+  ({ state, visits } = H.rename(state, visits, 'Samotracia'));
+  assert.deepEqual(plain(visits), [['v1', ['El mapa en c. 50 e.c.', 'Pablo', 'Samotracia']]]);
+  assert.deepEqual(plain(H.around(state, visits)), { back: { can: true, name: 'Pablo' }, forward: { can: false, name: null } });
+  // Back twice: the browser hands us the state of step 0; Forward is possible and says where.
+  const at0 = H.arrive(state, { visit: 'v1', step: 0, name: 'El mapa en c. 50 e.c.' }, visits, 'v2');
+  assert.equal(at0.fresh, false);
+  assert.deepEqual(plain(H.around(at0.state, at0.visits)), { back: { can: false, name: null }, forward: { can: true, name: 'Pablo' } });
+  // A new entry from step 0 drops Pablo and Samotracia, as the browser does.
+  let n = H.push(at0.state, at0.visits);
+  n = H.rename(n.state, n.visits, 'Corinto');
+  assert.deepEqual(plain(n.visits), [['v1', ['El mapa en c. 50 e.c.', 'Corinto']]]);
+  assert.equal(H.around(n.state, n.visits).forward.can, false);
+});
+
+test('Back and Forward never grow the list: arriving at our own entry only reads it', () => {
+  let { state, visits } = H.begin(null, [], 'v1', 'A');
+  for (const x of ['B', 'C', 'D']) { ({ state, visits } = H.push(state, visits)); ({ state, visits } = H.rename(state, visits, x)); }
+  const before = plain(visits);
+  let s = state;
+  for (const step of [2, 1, 0, 1, 2, 3, 2]) {
+    const r = H.arrive(s, { visit: 'v1', step, name: 'ABCD'[step] }, visits, 'v9');
+    assert.equal(r.fresh, false);
+    visits = r.visits; s = r.state;
+    assert.deepEqual(plain(visits), before, `after arriving at ${step}`);
+  }
+  assert.deepEqual(plain(H.around(s, visits)), { back: { can: true, name: 'B' }, forward: { can: true, name: 'D' } });
+});
+
+test('a link with a «#» or a typed address: the browser makes an entry without state, right after ours', () => {
+  let { state, visits } = H.begin(null, [], 'v1', 'A');
+  ({ state, visits } = H.push(state, visits)); ({ state, visits } = H.rename(state, visits, 'B'));
+  ({ state, visits } = H.push(state, visits)); ({ state, visits } = H.rename(state, visits, 'C'));
+  const back = H.arrive(state, { visit: 'v1', step: 1, name: 'B' }, visits, 'v2');   // Back to B
+  const r = H.arrive(back.state, null, back.visits, 'v2', 'Pedro');                 // then the hash link
+  assert.equal(r.fresh, true);
+  assert.deepEqual(plain(r.state), { visit: 'v1', step: 2, name: 'Pedro' });
+  assert.deepEqual(plain(r.visits), [['v1', ['A', 'B', 'Pedro']]]);
+  // Without a previous entry of ours (it cannot happen after begin, but never throw): a visit starts.
+  const lone = H.arrive(null, null, [], 'v3', 'Pedro');
+  assert.deepEqual(plain(lone.state), { visit: 'v3', step: 0, name: 'Pedro' });
+});
+
+test('a reload keeps the visit and its step; a shared link opened fresh starts another, and both lists survive', () => {
+  let { state, visits } = H.begin(null, [], 'v1', 'A');
+  ({ state, visits } = H.push(state, visits)); ({ state, visits } = H.rename(state, visits, 'B'));
+  const reload = H.begin(state, visits, 'nuevo', 'B');
+  assert.deepEqual(plain(reload.state), { visit: 'v1', step: 1, name: 'B' });
+  assert.deepEqual(plain(H.around(reload.state, reload.visits).back), { can: true, name: 'A' });
+  const fresh = H.begin(null, reload.visits, 'v2', 'Pedro');
+  assert.deepEqual(plain(fresh.visits.map((v) => v[0])), ['v1', 'v2']);
+  assert.equal(H.around(fresh.state, fresh.visits).back.can, false);
+  // Back into the first page of the tab again: its names are still there.
+  const again = H.begin({ visit: 'v1', step: 1, name: 'B' }, fresh.visits, 'v3');
+  assert.deepEqual(plain(H.around(again.state, again.visits).back), { can: true, name: 'A' });
+  // Our state with no names kept (storage cleared): the step still says whether there is something behind.
+  const lost = H.begin({ visit: 'v7', step: 3, name: 'Corinto' }, [], 'v8');
+  assert.deepEqual(plain(H.around(lost.state, lost.visits)), { back: { can: true, name: null }, forward: { can: false, name: null } });
+});
+
+test('only the newest visits of the tab are kept, and unreadable storage counts as none', () => {
+  let visits = [];
+  for (let i = 0; i < H.MAX_VISITS + 3; i++) visits = H.begin(null, visits, `v${i}`, 'x').visits;
+  assert.equal(visits.length, H.MAX_VISITS);
+  assert.equal(visits[0][0], 'v3');
+  for (const bad of [null, 'x', {}, [1, 2], [['a', 'b']]]) assert.deepEqual(plain(H.begin(null, bad, 'v1', 'A').visits), [['v1', ['A']]]);
+});
+
+test('leaving by a link drops what was ahead, so coming back offers no stale Forward', () => {
+  let { state, visits } = H.begin(null, [], 'v1', 'A');
+  for (const x of ['B', 'C']) { ({ state, visits } = H.push(state, visits)); ({ state, visits } = H.rename(state, visits, x)); }
+  const atA = H.arrive(state, { visit: 'v1', step: 0, name: 'A' }, visits, 'v2');
+  assert.equal(H.around(atA.state, atA.visits).forward.can, true);
+  const cut = H.cutForward(atA.state, atA.visits);
+  assert.deepEqual(plain(cut), [['v1', ['A']]]);
+  assert.equal(H.around(atA.state, cut).forward.can, false);
+});
+
+test('the buttons say where they go, and say so when there is nowhere', () => {
+  assert.equal(H.buttonLabel('back', { can: true, name: 'Samotracia' }), 'Atrás: Samotracia');
+  assert.equal(H.buttonLabel('forward', { can: true, name: 'Neápolis' }), 'Adelante: Neápolis');
+  assert.equal(H.buttonLabel('back', { can: true, name: 'la portada' }), 'Atrás: la portada');
+  assert.equal(H.buttonLabel('back', { can: false, name: 'x' }), 'No hay nada atrás');
+  assert.equal(H.buttonLabel('forward', { can: false, name: null }), 'No hay nada adelante');
+  assert.equal(H.buttonLabel('back', { can: true, name: null }), 'Atrás: la vista anterior');
+  assert.equal(H.buttonLabel('forward', { can: true, name: null }), 'Adelante: la vista siguiente');
+});
+
+test('each view is named by what it shows, the most specific first', () => {
+  const date = 'c. 50 e.c.';
+  assert.equal(H.viewName({ landing: true, selection: 'Pablo', date }), 'la portada');
+  assert.equal(H.viewName({ reading: { chapter: 'Hechos 16', passage: 3 }, selection: 'Pablo', date }), 'Lectura de Hechos 16, pasaje 3');
+  assert.equal(H.viewName({ reading: { chapter: 'Hechos 16' }, date }), 'Lectura de Hechos 16');
+  assert.equal(H.viewName({ tour: { name: 'De Babilonia a Jerusalén', stop: 4 }, selection: 'De Babilonia a Jerusalén', date }), 'De Babilonia a Jerusalén, parada 4');
+  assert.equal(H.viewName({ connection: ['Loida', 'Pablo'], date }), 'Conexión entre Loida y Pablo');
+  assert.equal(H.viewName({ connection: ['Loida', null], date }), 'Conexión desde Loida');
+  assert.equal(H.viewName({ connection: [null, null], date }), 'Conexión entre dos');
+  assert.equal(H.viewName({ graph: 'Pablo', selection: 'Pablo', date }), 'Grafo de Pablo');
+  assert.equal(H.viewName({ graph: '', date }), 'Grafo de personas');
+  assert.equal(H.viewName({ sync: 'Corinto', date }), 'Sincronía de Corinto');
+  assert.equal(H.viewName({ sync: '', date }), 'Sincronía');
+  assert.equal(H.viewName({ now: true, date }), 'Ahora mismo en c. 50 e.c.');
+  assert.equal(H.viewName({ selection: 'Samotracia', date }), 'Samotracia');
+  assert.equal(H.viewName({ date }), 'El mapa en c. 50 e.c.');
+  assert.equal(H.viewName({}), 'El mapa');
+});
+
+test('the tab title names the view, so the browser history list tells entries apart', () => {
+  const base = 'biblical-atlas · ¿Dónde y cuándo pasó lo que estás leyendo?';
+  assert.equal(H.pageTitle('Samotracia', { base }), 'Samotracia · biblical-atlas');
+  assert.equal(H.pageTitle('la portada', { landing: true, base }), base);
+  assert.equal(H.pageTitle('El mapa en c. 50 e.c.', { base }), 'El mapa en c. 50 e.c. · biblical-atlas');
+  assert.equal(H.pageTitle(null, { base }), base);
+});
