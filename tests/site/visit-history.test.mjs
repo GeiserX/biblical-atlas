@@ -135,6 +135,10 @@ test('each view is named by what it shows, the most specific first', () => {
   assert.equal(H.viewName({ reading: { chapter: 'Hechos 16' }, date }), 'Lectura de Hechos 16');
   assert.equal(H.viewName({ tour: { name: 'De Babilonia a Jerusalén', stop: 4 }, selection: 'De Babilonia a Jerusalén', date }), 'De Babilonia a Jerusalén, parada 4');
   assert.equal(H.viewName({ connection: ['Loida', 'Pablo'], date }), 'Conexión entre Loida y Pablo');
+  assert.equal(H.viewName({ connection: ['Abrahán', 'Isaac'], date }), 'Conexión entre Abrahán e Isaac');
+  assert.equal(H.viewName({ connection: ['David', 'Hiram'], date }), 'Conexión entre David e Hiram');
+  assert.equal(H.viewName({ connection: ['Pablo', 'Hierápolis'], date }), 'Conexión entre Pablo y Hierápolis');
+  assert.equal(H.viewName({ connection: ['Pablo', 'Iconio'], date }), 'Conexión entre Pablo e Iconio');
   assert.equal(H.viewName({ connection: ['Loida', null], date }), 'Conexión desde Loida');
   assert.equal(H.viewName({ connection: [null, null], date }), 'Conexión entre dos');
   assert.equal(H.viewName({ graph: 'Pablo', selection: 'Pablo', date }), 'Grafo de Pablo');

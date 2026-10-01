@@ -101,7 +101,7 @@ function viewName(v = {}) {
   if (v.graph !== undefined && v.graph !== null) return v.graph ? `Grafo de ${v.graph}` : 'Grafo de personas';
   if (v.connection) {
     const [a, b] = v.connection;
-    if (a && b) return `Conexión entre ${a} y ${b}`;
+    if (a && b) return `Conexión entre ${a} ${and(b)} ${b}`;
     return a || b ? `Conexión desde ${a || b}` : 'Conexión entre dos';
   }
   if (v.reading?.chapter) return `Lectura de ${v.reading.chapter}${v.reading.passage ? `, pasaje ${v.reading.passage}` : ''}`;
@@ -111,6 +111,8 @@ function viewName(v = {}) {
   if (v.selection) return v.selection;
   return v.date ? `El mapa en ${v.date}` : 'El mapa';
 }
+/** «y», or «e» before a word that starts with the sound i (Isaac, Hiram), but not before ie, ia… (Hierápolis). */
+function and(word) { return /^h?[ií](?![aeiouáéíóú])/i.test(word || '') ? 'e' : 'y'; }
 /** The tab's title for a view: its name first, so the browser's history list and bookmarks tell entries apart. The
     landing keeps the page's own title. */
 function pageTitle(name, { landing = false, base = 'biblical-atlas' } = {}) {
