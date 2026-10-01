@@ -67,7 +67,7 @@ before(async () => {
 afterEach(async () => { for (const c of browser?.contexts() || []) await c.close().catch(() => {}); });
 after(async () => { await browser?.close(); server?.close(); if (tmp) fs.rmSync(tmp, { recursive: true, force: true }); });
 
-async function openPage(screen = DESKTOP, { hash = '', storage = null, route = null, wait = true } = {}) {
+async function openPage(screen = DESKTOP, { hash = '', storage = null, route = null, wait = true, init = null } = {}) {
   const context = await browser.newContext({ deviceScaleFactor: 1, ...screen });
   context.setDefaultTimeout(8000);
   // A slow device on demand: with window.__lento = ms, every frame is painted that much later (the map loading, a
@@ -76,6 +76,7 @@ async function openPage(screen = DESKTOP, { hash = '', storage = null, route = n
     const raf = window.requestAnimationFrame.bind(window);
     window.requestAnimationFrame = (cb) => raf(() => { if (window.__lento) setTimeout(() => cb(performance.now()), window.__lento); else cb(performance.now()); });
   });
+  if (init) await context.addInitScript(init);
   if (storage) await context.addInitScript((s) => { if (!sessionStorage.getItem('be-init')) { for (const [k, v] of Object.entries(s)) localStorage.setItem(k, v); sessionStorage.setItem('be-init', '1'); } }, storage);
   const page = await context.newPage();
   page.pageErrors = [];
@@ -320,4 +321,24 @@ test('Alt, ⌘ and Ctrl with an arrow are the browser\'s on the panel separator,
   const got = await page.evaluate(() => window.__prevented);
   assert.equal(got.length, keys.length * 4, JSON.stringify(got));
   assert.deepEqual(got.filter((x) => x.endsWith(':true')), [], 'a handler took a browser shortcut');
+});
+
+test('with sessionStorage blocked, Back and Forward still know where they go', async () => {
+  // Blocked storage (cookies off, a privacy mode): reading sessionStorage throws. The names live in memory too.
+  const page = await openPage(DESKTOP, { hash: 't=50.3000', init: () => {
+    Object.defineProperty(window, 'sessionStorage', { configurable: true, get() { throw new DOMException('blocked', 'SecurityError'); } });
+  } });
+  await search(page, 'Pablo');
+  await search(page, 'Corinto');
+  await page.locator('#atras').click();
+  await settle(page);
+  const h = await hist(page);
+  assert.equal(h.state.step, 1);
+  assert.equal(h.forward.off, false, 'Forward stayed off after Back');
+  assert.equal(h.forward.label, 'Adelante: Corinto');
+  assert.equal(h.back.label, 'Atrás: El mapa en c. 50 e.c.');
+  await page.locator('#adelante').click();
+  await settle(page);
+  assert.equal((await snap(page)).sel, 'lugar:corinto');
+  assert.deepEqual(page.pageErrors, []);
 });

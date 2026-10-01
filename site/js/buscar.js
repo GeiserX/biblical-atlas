@@ -468,15 +468,25 @@ const historia = (() => {
   const H = BE.visitHistory;
   const CLAVE_VISITAS = 'biblical-atlas:visitas';
   const TITULO = document.title;   // el de la portada
-  const leerVisitas = () => { try { return JSON.parse(sessionStorage.getItem(CLAVE_VISITAS) || '[]'); } catch { return []; } };
-  const guardarVisitas = (v) => { try { sessionStorage.setItem(CLAVE_VISITAS, JSON.stringify(v)); } catch { /* sin almacenamiento */ } };
+  // La entrada en la que estamos: { visit, step, name }.
+  let actual = null;
+  // La lista también vive en memoria: con el almacenamiento bloqueado o lleno, o con un valor ilegible o de otra visita,
+  // los botones siguen sabiendo adónde van mientras la página está abierta.
+  let memoria = [];
+  const leerVisitas = () => {
+    try {
+      const v = JSON.parse(sessionStorage.getItem(CLAVE_VISITAS) || 'null');
+      if (Array.isArray(v) && (!actual || v.some((x) => Array.isArray(x) && x[0] === actual.visit))) return v;
+    } catch { /* sin almacenamiento, o ilegible */ }
+    return memoria;
+  };
+  const guardarVisitas = (v) => { memoria = v; try { sessionStorage.setItem(CLAVE_VISITAS, JSON.stringify(v)); } catch { /* sin almacenamiento */ } };
   const nuevaVisita = () => `${Date.now().toString(36)}${Math.random().toString(36).slice(2, 6)}`;
   const enPortada = () => !location.hash || location.hash === '#' || /[#&]portada=1(&|$)/.test(location.hash);
   const ponerTitulo = (nombre) => { document.title = H.pageTitle(nombre, { landing: enPortada(), base: TITULO }); };
 
-  // La entrada en la que estamos. Al cargar la página: la nuestra si recargamos o volvemos desde otra página; si no,
-  // empieza una visita. Antes de los datos solo se sabe nombrar la portada; lo demás lo nombra sello() al llegar.
-  let actual;
+  // Al cargar la página: la nuestra si recargamos o volvemos desde otra página; si no, empieza una visita. Antes de los
+  // datos solo se sabe nombrar la portada; lo demás lo nombra sello() al llegar.
   {
     const r = H.begin(history.state, leerVisitas(), nuevaVisita(), enPortada() ? 'la portada' : null);
     actual = r.state;
