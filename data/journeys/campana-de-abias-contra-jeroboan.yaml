@@ -14,8 +14,8 @@ date:
 companions: []
 summary: Abías habla a Jeroboán y a su ejército desde el monte Zemaraim. Pese a una emboscada, Judá vence, y Abías, en la
   persecución, le quita Betel, Jesaná y Efrén con sus pueblos.
-reason: '2Cr 13:4-19 da el orden: el discurso en Zemaraim, la batalla y la persecución. Sin suceso en data/events: fecha del
-  periodo abias-de-juda (tabla A6-A), por eso va pendiente.'
+reason: '2Cr 13:4-19 da el orden: el discurso en Zemaraim, la batalla y la persecución. Fecha: el reinado de Abías, que nombra
+  el texto (2Cr 13:1, 2), según la tabla A6-A; aún sin suceso en data/events.'
 sources:
 - 2-cronicas-13
 - it-abias
@@ -24,8 +24,8 @@ sources:
 - it-efron
 - it-efrain
 - tnm-a6-a
-checked_on: '2026-09-30'
-status: pending
+checked_on: '2026-10-02'
+status: verified
 stops:
 - order: 1
   place: monte-zemaraim
@@ -45,8 +45,8 @@ stops:
   - 2-cronicas-13
   - it-zemaraim
   - tnm-a6-a
-  checked_on: '2026-09-30'
-  status: pending
+  checked_on: '2026-10-02'
+  status: verified
 - order: 2
   place: betel
   reference: 2Cr 13:19
@@ -64,8 +64,8 @@ stops:
   sources:
   - 2-cronicas-13
   - tnm-a6-a
-  checked_on: '2026-09-30'
-  status: pending
+  checked_on: '2026-10-02'
+  status: verified
 - order: 3
   place: jesana
   reference: 2Cr 13:19
@@ -83,8 +83,8 @@ stops:
   - 2-cronicas-13
   - it-jesana
   - tnm-a6-a
-  checked_on: '2026-09-30'
-  status: pending
+  checked_on: '2026-10-02'
+  status: verified
 - order: 4
   place: efrain
   reference: 2Cr 13:19
