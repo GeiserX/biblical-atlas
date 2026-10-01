@@ -559,17 +559,21 @@ const historia = (() => {
   /** Si la vista cambió, guarda la de antes en su entrada. Lo llaman cada fotograma (pintor = true) y sello(), antes
       de escribir la dirección: así ningún cambio llega a la dirección sin su entrada, se pinte o no antes. Solo un
       fotograma pintado cuenta como visto: si no, una pulsación entre la escritura de la dirección y el primer fotograma
-      despertaría la vista y lo que el destino pone después crearía otra entrada. */
+      despertaría la vista y lo que el destino pone después crearía otra entrada. Devuelve si hay una entrada nueva
+      cuya dirección falta escribir. */
   function revisar(pintor) {
     const k = claveActual();
-    if (clave === null) { clave = k; if (pintor) pintado = true; return; }   // arranque: la primera vista no crea entrada
-    if (absorber) { clave = k; absorber = false; if (pintor) pintado = true; return; }
-    if (quieto) { clave = k; if (pintor) pintado = true; return; }
-    if (k === clave) return;
+    if (clave === null) { clave = k; if (pintor) pintado = true; return false; }   // arranque: la primera vista no crea entrada
+    if (absorber) { clave = k; absorber = false; if (pintor) pintado = true; return true; }
+    if (quieto) { clave = k; if (pintor) pintado = true; return false; }
+    if (k === clave) return false;
     clave = k;
     empujar();
+    return true;
   }
-  BE.pintores.push(() => revisar(true));
+  // La entrada nueva se queda con su dirección en el mismo fotograma, no 250 ms después: una segunda vista en ese
+  // tiempo, o Atrás, la dejaban con la dirección de la anterior. La escritura de siempre sigue después.
+  BE.pintores.push(() => { if (revisar(true)) { BE.escribirHash(); BE.guardarHash(); } });
   const despertar = () => { if (quieto && pintado) quieto = false; };
   window.addEventListener('pointerdown', despertar, true);
   window.addEventListener('keydown', despertar, true);
@@ -591,6 +595,9 @@ const historia = (() => {
   document.addEventListener('click', (e) => {
     const b = e.target.closest?.('[data-historia]');
     if (!b || b.disabled) return;
+    // La vista de ahora se queda con su entrada y su dirección antes de irse: si cambió hace un instante, Atrás saltaba
+    // una vista y Adelante volvía a una copia de esta.
+    if (BE.D) BE.escribirHash();
     if (b.dataset.historia === 'atras') history.back(); else history.forward();
   });
   // Un enlace a otra página en esta pestaña (Acerca de, el calendario, jw.org sin pestaña nueva).

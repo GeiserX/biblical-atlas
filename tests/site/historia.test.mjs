@@ -358,3 +358,33 @@ test('on a slow device a tap while the tour from the landing paints still makes 
   assert.equal(h.state.step, 1);
   assert.equal(h.back.label, 'Atrás: la portada');
 });
+
+test('Back and Forward right after choosing keep the view just chosen, and two quick choices keep both', async () => {
+  const page = await openPage(DESKTOP, { hash: 't=50.3000' });
+  await search(page, 'Pablo');
+  await search(page, 'Corinto');
+  // Roma chosen and Back pressed in the same instant: no frame painted yet, no address written.
+  await page.evaluate(() => { window.BE.seleccionar(window.BE.parseSel('lugar:roma')); document.getElementById('atras').click(); });
+  await settle(page);
+  let h = await hist(page);
+  assert.equal((await snap(page)).sel, 'lugar:corinto', 'Back skipped the view before Roma');
+  assert.equal(h.forward.label, 'Adelante: Roma');
+  await page.locator('#adelante').click();
+  await settle(page);
+  assert.equal((await snap(page)).sel, 'lugar:roma', 'Forward did not go back to Roma');
+  // Two choices inside base.js's 250 ms: each keeps its own entry and address. A press first, as a click would: after
+  // Forward the next change without one is part of the same step.
+  await page.evaluate(async () => {
+    const BE = window.BE, frame = () => new Promise((ok) => requestAnimationFrame(ok));
+    window.dispatchEvent(new PointerEvent('pointerdown'));
+    BE.seleccionar(BE.parseSel('lugar:atenas')); await frame(); await frame();
+    BE.seleccionar(BE.parseSel('lugar:samotracia'));
+  });
+  await settle(page);
+  h = await hist(page);
+  assert.equal(h.back.label, 'Atrás: Atenas');
+  await page.locator('#atras').click();
+  await settle(page);
+  assert.equal((await snap(page)).sel, 'lugar:atenas');
+  assert.equal((await hist(page)).back.label, 'Atrás: Roma');
+});

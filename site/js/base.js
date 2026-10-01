@@ -309,14 +309,18 @@ function textoHash() {
 }
 function guardarHash() {
   clearTimeout(hashTimer);
-  hashTimer = setTimeout(() => {
-    spanHash = span();
-    ultimoHash = '#' + textoHash();
-    // Cada entrada lleva su número y el nombre de su vista (BE.historia, buscar.js): se escriben con la dirección y
-    // nunca se pierden, porque de ellos salen atrás y adelante.
-    const estado = BE.historia?.sello();
-    if (location.hash !== ultimoHash || estado) history.replaceState(estado || history.state, '', ultimoHash);
-  }, 250);
+  hashTimer = setTimeout(escribirHash, 250);
+}
+/** Escribe ya la dirección que guardarHash dejó para dentro de 250 ms. BE.historia la escribe al crear una entrada y
+    antes de Atrás y Adelante: así cada entrada se queda con su vista aunque la siguiente llegue antes de tiempo. */
+function escribirHash() {
+  clearTimeout(hashTimer);
+  spanHash = span();
+  ultimoHash = '#' + textoHash();
+  // Cada entrada lleva su número y el nombre de su vista (BE.historia, buscar.js): se escriben con la dirección y
+  // nunca se pierden, porque de ellos salen atrás y adelante.
+  const estado = BE.historia?.sello();
+  if (location.hash !== ultimoHash || estado) history.replaceState(estado || history.state, '', ultimoHash);
 }
 function leerHash() {
   const p = new URLSearchParams(location.hash.slice(1));
@@ -655,7 +659,7 @@ Object.assign(BE, {
   // estado, registro y selección
   E, tipo, tipos: TIPOS, existe, parseSel, selTexto, implicados, momentoDe, nombreSel, seleccionar, limpiarSeleccion,
   // cursor, reproducción, dirección y pintado
-  sucio, programar, setT, span, asegurarVisible, reproducir, saltar, guardarHash, textoHash, aplicarHash, parametros,
+  sucio, programar, setT, span, asegurarVisible, reproducir, saltar, guardarHash, escribirHash, textoHash, aplicarHash, parametros,
   pintarPanel, pintores, inicios, avisar, ponerPreferencia,
 });
 // Con defer, DOMContentLoaded llega cuando ya se han ejecutado todos los scripts de site/js/: todos los tipos están registrados.
