@@ -825,6 +825,8 @@ def validar_persona(o, donde, err):
     ncc = o.get("distinct_from")
     if ncc is not None and (not isinstance(ncc, list) or not all(ID.match(str(x)) for x in ncc)):
         err(f"{donde}: distinct_from debe ser una lista de ids de personas")
+    if ncc and not str(o.get("disambiguation") or "").strip():
+        err(f"{donde}: lleva distinct_from y le falta disambiguation, el texto que dice qué la separa de sus homónimos")
     na = o.get("not_claimed")
     if na is not None and not isinstance(na, list):
         err(f"{donde}: not_claimed debe ser una lista de frases")
@@ -1568,6 +1570,7 @@ def validar(datos):
     validar_consta_desde(datos, err)
     validar_claves_perspicacia(datos, err)
     validar_wol(datos, err)
+    validar_homonimos(datos, err)
     errores.extend(integrity(datos))
     errores.extend(pablo_en_su_sitio(datos))
     errores.extend(meses_en_su_anio(datos))
@@ -1608,6 +1611,70 @@ def validar_wol(datos, err, excepciones=None):
             rec(clean(o), o.get("_fichero", f"data/{t}"))
     rec(datos.get("calendar") or {}, "data/calendar.yaml")
     rec(datos.get("books") or [], "data/books.yaml")
+
+
+EXCEPCIONES_HOMONIMOS = RAIZ / "scripts" / "homonym_exceptions.yaml"
+
+
+def clave_nombre(nombre):
+    """La clave con que se comparan dos nombres de persona: hoy, el nombre exacto en español, con sus tildes y sus
+    mayúsculas (Aná y Ana no son homónimos).
+    Multilingüe: dos nombres que coinciden en español pueden diferir en otro idioma, y al revés. Cuando los datos
+    lleven nombres en más de un idioma, esta función recibe el idioma y los nombres se comparan dentro de cada uno."""
+    return nombre
+
+
+def claves_de_nombres(o):
+    """Las claves de name y de cada entrada de names de una persona."""
+    nombres = [o.get("name")] + [n.get("name") for n in o.get("names") or [] if isinstance(n, dict)]
+    return {clave_nombre(n) for n in nombres if isinstance(n, str) and n}
+
+
+def validar_homonimos(datos, err, excepciones=None):
+    """Dos personas que comparten una entrada de name o de names se distinguen con distinct_from en las dos fichas o
+    se dan como quizá la misma con un same_as. distinct_from va siempre en las dos direcciones y nunca en un par que
+    lleva same_as. Los pares de scripts/homonym_exceptions.yaml comparten nombre sin ser homónimos."""
+    if excepciones is None:
+        lista = (_read(EXCEPCIONES_HOMONIMOS) or []) if EXCEPCIONES_HOMONIMOS.exists() else []
+        excepciones = {frozenset(e.get("people") or []) for e in lista if isinstance(e, dict)}
+    personas = {o.get("id"): o for o in datos["people"]}
+    distintos = {pid: set(o.get("distinct_from") or []) if isinstance(o.get("distinct_from"), list) else set()
+                 for pid, o in personas.items()}
+    iguales = {frozenset((pid, r.get("person"))) for pid, o in personas.items()
+               for r in o.get("relations") or [] if isinstance(r, dict) and r.get("type") == "same_as"}
+    dobles = set()
+    for pid in sorted(distintos):
+        for otro in sorted(distintos[pid]):
+            if otro in personas and pid not in distintos[otro]:
+                err(f"{personas[pid]['_fichero']}: distinct_from nombra a {otro}, pero {otro} no la nombra a ella; "
+                    f"van en las dos fichas")
+            if frozenset((pid, otro)) in iguales and frozenset((pid, otro)) not in dobles:
+                dobles.add(frozenset((pid, otro)))
+                err(f"{personas[pid]['_fichero']}: {otro} va a la vez en distinct_from y en un same_as; si quizá son "
+                    f"la misma persona, solo same_as")
+    por_nombre = collections.defaultdict(set)
+    for pid, o in personas.items():
+        for k in claves_de_nombres(o):
+            por_nombre[k].add(pid)
+    vistos = set()
+    for nombre in sorted(por_nombre):
+        ids = sorted(por_nombre[nombre])
+        for i, a in enumerate(ids):
+            for b in ids[i + 1:]:
+                par = frozenset((a, b))
+                if par in vistos or par in excepciones or par in iguales:
+                    continue
+                vistos.add(par)
+                if b not in distintos[a] and a not in distintos[b]:
+                    err(f"{personas[a]['_fichero']}: comparte el nombre «{nombre}» con {b} y ninguna de las dos "
+                        f"nombra a la otra; van en distinct_from de las dos (con disambiguation) o en un same_as "
+                        f"si quizá son la misma persona")
+    for par in sorted(excepciones, key=sorted):
+        ids = sorted(par)
+        if len(ids) != 2 or not all(i in personas for i in ids):
+            err(f"scripts/homonym_exceptions.yaml: {ids} debe ser un par de ids de personas que existen")
+        elif not claves_de_nombres(personas[ids[0]]) & claves_de_nombres(personas[ids[1]]):
+            err(f"scripts/homonym_exceptions.yaml: {ids[0]} y {ids[1]} ya no comparten nombre; la excepción sobra")
 
 
 RE_PERSPICACIA = re.compile(r"^(\d{10})(?:#([1-9]\d?))?$")
