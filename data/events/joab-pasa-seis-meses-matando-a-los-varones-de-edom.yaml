@@ -10,7 +10,7 @@ date:
   chronology: tnm
   text: 'entre 1070 y c. 1040 a.e.c. (tiempo narrativo: tras la victoria de David sobre Edom)'
 narrative_order:
-  series: 1-reyes
+  series: 1-reyes-hadad
   order: 11015
   after: david-derrota-a-edom-en-el-valle-de-la-sal
 places:
@@ -21,8 +21,8 @@ passages:
 - 1Re 11:15, 16
 summary: Después de la derrota de Edom, Joab, jefe del ejército de David, sube a enterrar a los caídos. Él y las tropas de
   Israel se quedan seis meses y matan a todos los varones edomitas.
-reason: 1Re 11:15, 16 lo cuenta al presentar a Hadad. Perspicacia «Edom» lo relaciona con la victoria de David en el valle
-  de la Sal, fechada entre 1070 y c. 1040 a.e.c.; el libro vuelve atrás.
+reason: '1Re 11:15, 16 vuelve atrás al presentar a Hadad; Perspicacia «Edom» lo une a la victoria del valle de la Sal (entre
+  1070 y c. 1040 a.e.c.). Serie propia con Hadad: en la de 1 Reyes caería tras el templo.'
 sources:
 - 1-reyes-11
 - it-edom
@@ -33,5 +33,5 @@ links:
 - title: 1 Reyes 11 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/1-reyes/11/
   type: bible
-checked_on: '2026-09-30'
+checked_on: '2026-10-01'
 status: verified
