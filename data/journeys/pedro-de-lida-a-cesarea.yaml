@@ -30,7 +30,7 @@ sources:
 - it-cornelio
 - bt-8
 - bt-9
-checked_on: '2026-09-30'
+checked_on: '2026-10-01'
 status: verified
 stops:
 - order: 1
@@ -57,21 +57,21 @@ stops:
   date:
     from: 36
     to: 36
-    precision: season
+    precision: year
     approx: true
     type: anchored
     chronology: tnm
-    text: otoño de 36 e.c.
-    detail: &id001
-      season: autumn
+    text: 36 e.c.
   note: Resucita a Dorcas y se aloja con Simón el curtidor, donde tiene la visión.
-  reason: 'Hch 9:38, 39: lo llaman de Jope, cerca de Lida, y va. Fechas de los sucesos pedro-resucita-a-dorcas y vision-de-pedro-en-jope.'
+  reason: 'Hch 9:38, 39: lo llaman de Jope, cerca de Lida, y va. Fecha del suceso pedro-resucita-a-dorcas; la visión del otoño
+    llega después de bastantes días en Jope (Hch 9:43).'
   sources:
   - hch-9
   - hechos-10
   - it-jope
+  - it-dorcas
   - bt-9
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-01'
   status: verified
 - order: 3
   place: cesarea
@@ -84,7 +84,8 @@ stops:
     type: anchored
     chronology: tnm
     text: otoño de 36 e.c.
-    detail: *id001
+    detail:
+      season: autumn
   note: Lo acompañan unos hermanos de Jope.
   reason: 'Hch 10:23, 24: sale al día siguiente y llega a Cesarea un día después. Fecha del suceso pedro-predica-a-cornelio.'
   sources:

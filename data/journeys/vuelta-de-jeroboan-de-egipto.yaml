@@ -98,7 +98,7 @@ stops:
     approx: true
     type: anchored
     chronology: tnm
-    text: 15 hesván 997 a.e.c.
+    text: 15 de bul (hesván) de 997 a.e.c.
     detail:
       month: hesvan
       day: 15
@@ -108,5 +108,5 @@ stops:
   - 1-reyes-12
   - it-betel
   - si-3
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-01'
   status: verified

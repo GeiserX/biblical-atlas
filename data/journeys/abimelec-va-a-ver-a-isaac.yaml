@@ -5,12 +5,12 @@ person: abimelec-de-tiempos-de-isaac
 reference: Gé 26:26-31
 date:
   from: -1842
-  to: -1780
+  to: -1817
   precision: range
   approx: true
   type: narrative
   chronology: tnm
-  text: 'entre 1843 y 1781 a.e.c. (tiempo narrativo: después de la muerte de Abrahán y antes de que Jacob huya a Harán)'
+  text: 'entre 1843 y 1818 a.e.c. (tiempo narrativo: después de la muerte de Abrahán y antes de que Esaú se case)'
 companions:
 - ahuzat
 - ficol-de-tiempos-de-isaac
@@ -24,7 +24,7 @@ sources:
 - it-guerar
 - it-beer-seba
 - si-3
-checked_on: '2026-09-30'
+checked_on: '2026-10-01'
 status: verified
 stops:
 - order: 1
@@ -32,31 +32,31 @@ stops:
   reference: Gé 26:26
   date:
     from: -1842
-    to: -1780
+    to: -1817
     precision: range
     approx: true
     type: narrative
     chronology: tnm
-    text: 'entre 1843 y 1781 a.e.c. (tiempo narrativo: después de la muerte de Abrahán y antes de que Jacob huya a Harán)'
+    text: 'entre 1843 y 1818 a.e.c. (tiempo narrativo: después de la muerte de Abrahán y antes de que Esaú se case)'
   note: Salida. Sin punto en el mapa.
   reason: 'Gé 26:26: Abimélec sale de Guerar, su ciudad, para ir a ver a Isaac. Fecha del suceso pacto-de-isaac-con-abimelec.'
   sources:
   - genesis-26
   - it-abimelec
   - it-guerar
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-01'
   status: verified
 - order: 2
   place: beer-seba
   reference: Gé 26:26-31
   date:
     from: -1842
-    to: -1780
+    to: -1817
     precision: range
     approx: true
     type: narrative
     chronology: tnm
-    text: 'entre 1843 y 1781 a.e.c. (tiempo narrativo: después de la muerte de Abrahán y antes de que Jacob huya a Harán)'
+    text: 'entre 1843 y 1818 a.e.c. (tiempo narrativo: después de la muerte de Abrahán y antes de que Esaú se case)'
   note: Isaac les reprocha que lo echaran; comen juntos, juran el pacto al amanecer y se van en paz. El texto no nombra adónde
     vuelven.
   reason: Isaac había subido a Beer-Seba (Gé 26:23) y el pozo Sibá da nombre a la ciudad ese mismo día (26:33). Suceso
@@ -65,5 +65,5 @@ stops:
   - genesis-26
   - it-abimelec
   - it-beer-seba
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-01'
   status: verified

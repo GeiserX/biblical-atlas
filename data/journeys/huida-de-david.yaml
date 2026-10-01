@@ -14,8 +14,8 @@ date:
 companions: []
 summary: 'Durante años David huye de Saúl: de Ramá a Nob y a Gat, a la cueva de Adulam, a Moab, a Queilá y por los desiertos
   de Zif, Maón, En-Guedí y Parán, hasta refugiarse con Akís, que le da Ziclag.'
-reason: '1 Samuel 19 a 27 dan las paradas en orden. Sin año en jw.org: entre el nacimiento de David (1107) y la muerte de
-  Saúl (1078), según el estudio 3; el final se cuenta desde 1Sa 27:7.'
+reason: '1 Samuel 19 a 27 dan las paradas en orden. Sin año en jw.org: entre el nacimiento de David (1107, estudio 3) y la
+  muerte de Saúl (1078, Perspicacia «Jonatán», núm. 2); el final se cuenta desde 1Sa 27:7.'
 sources:
 - 1-samuel-19
 - 1-samuel-20
@@ -42,7 +42,7 @@ sources:
 - si-3
 - it-jonatan
 - tnm-tabla
-checked_on: '2026-09-30'
+checked_on: '2026-10-01'
 status: verified
 narrative_order:
   series: david
@@ -58,7 +58,7 @@ stops:
     approx: true
     type: narrative
     chronology: tnm
-    text: 'entre 1107 y 1078 a.e.c. (tiempo narrativo: David huye de Saúl, que muere en 1078)'
+    text: 'entre 1107 y 1078 a.e.c. (tiempo narrativo: tras la victoria sobre Goliat, en vida de Saúl, Jonatán y Samuel)'
   note: Salida. Va con Samuel a Nayot, en Ramá.
   reason: '1Sa 19:18 dice que David huye a Samuel en Ramá y los dos se quedan en Nayot. Suceso ancla: david-huye-a-samuel-en-rama
     (entre 1107 y 1078, estudio 3).'
@@ -67,7 +67,7 @@ stops:
   - it-samuel
   - it-nayot
   - si-3
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-01'
   status: verified
 - order: 2
   place: nob
@@ -284,7 +284,7 @@ stops:
     approx: true
     type: narrative
     chronology: tnm
-    text: 'entre 1107 y 1078 a.e.c. (tiempo narrativo: David huye de Saúl, que muere en 1078)'
+    text: 'entre 1107 y 1078 a.e.c. (tiempo narrativo: David huye de Saúl, antes de la muerte del rey)'
   note: Perdona la vida a Saúl en una cueva.
   reason: '1Sa 23:29 dice que sube a esconderse en En-Guedí, y el capítulo 24 cuenta allí el encuentro. Suceso ancla: david-perdona-la-vida-a-saul-en-en-guedi
     (entre 1107 y 1078, estudio 3).'
@@ -293,7 +293,7 @@ stops:
   - 1-samuel-24
   - it-en-guedi
   - si-3
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-01'
   status: verified
 - order: 13
   place: desierto-de-paran
@@ -350,8 +350,8 @@ stops:
     type: derived
     chronology: tnm
     text: c. 1080-1078 a.e.c.
-    note: 'Cuenta nuestra: David vivió entre los filisteos un año y cuatro meses (1Sa 27:7), hasta la muerte de Saúl en 1078
-      (estudio 3; Perspicacia «Jonatán», núm. 2). Contando hacia atrás, llegó a finales de 1080 o en 1079.'
+    note: 'Cuenta nuestra: un año y cuatro meses entre los filisteos (1Sa 27:7), hasta subir a Hebrón poco después de morir Saúl
+      en 1078 (Perspicacia «Jonatán», núm. 2; 2Sa 2:1-4). Contando hacia atrás, llegó a finales de 1080 o en 1079.'
   note: Con sus 600 hombres y sus dos esposas se instala con Akís.
   reason: '1Sa 27:2, 3: David pasa a Gat para que Saúl deje de buscarlo. Suceso ancla: david-se-refugia-con-akis-en-gat, con
     fecha derivada: año y cuatro meses antes de la muerte de Saúl en 1078.'
@@ -360,7 +360,7 @@ stops:
   - it-akis
   - it-jonatan
   - si-3
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-01'
   status: pending
 - order: 16
   place: ziclag
@@ -373,8 +373,8 @@ stops:
     type: derived
     chronology: tnm
     text: c. 1080-1078 a.e.c.
-    note: 'Cuenta nuestra: David vivió entre los filisteos un año y cuatro meses (1Sa 27:7), hasta la muerte de Saúl en 1078
-      (estudio 3; Perspicacia «Jonatán», núm. 2). Contando hacia atrás, llegó a finales de 1080 o en 1079.'
+    note: 'Cuenta nuestra: un año y cuatro meses entre los filisteos (1Sa 27:7), hasta subir a Hebrón poco después de morir Saúl
+      en 1078 (Perspicacia «Jonatán», núm. 2; 2Sa 2:1-4). Contando hacia atrás, llegó a finales de 1080 o en 1079.'
   note: Llegada. Vive en el campo filisteo un año y cuatro meses.
   reason: '1Sa 27:6 dice que Akís le da Ziclag. Suceso ancla: akis-da-ziclag-a-david, con fecha derivada: año y cuatro meses
     antes de la muerte de Saúl en 1078.'
@@ -383,5 +383,5 @@ stops:
   - it-ziqlag
   - it-jonatan
   - si-3
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-01'
   status: pending

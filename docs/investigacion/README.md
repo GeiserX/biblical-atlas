@@ -80,6 +80,14 @@ Con `candidates`, `lat`, `lon`, `coord_source` y `coord_url` pueden ser `null` y
 
 **Viajes.** `person`, `reference`, `date`, `companions` (quienes van en todo el viaje) y `stops`. Cada parada lleva `order`, `place`, `reference` y `date`, y es un hecho anidado con sus `sources`, `reason`, `checked_on` y `status`.
 
+Una parada es un lugar que el texto dice que se alcanzó o se pasó, en el orden del relato. Tres clases de parada deducida entran también, siempre con `status: pending` y la deducción escrita en `reason`:
+
+- el lugar que jw.org da como salida o llegada (Perspicacia «Jacob» pone a Jacob en Hebrón);
+- la salida de un viaje que solo cuenta una carta, que es el `written_in` de esa carta (Crescente sale de Roma en 2Ti 4:10);
+- la salida o la vuelta que el relato deja ver sin nombrarla: la capital donde reina quien sale (Jerusalén en 2Sa 5:17), la casa adonde vuelve (Saúl a Guibeá en 1Sa 24:22) o el último lugar donde el relato dejó a quien sale (Eliseo en Samaria antes de 2Re 8:7).
+
+Una deducción que el texto contradice no entra: si el relato pone la salida en otro sitio, manda el relato (el resto de Judá sale de Gabaón en Jer 41:12-16, no de Mizpá). Lo que solo se cruza o se anuncia (el Éufrates, Ofir adonde navega una flota) va en la `note` de la parada más cercana.
+
 **Cartas.** `writer` es obligatorio (id de persona; las 14 de Pablo llevan `writer: pablo`). Opcionales: `recipients.people`, `carriers` y `people` (las nombradas en la carta), listas de ids de personas que `build.py` comprueba. La comprobación de que una carta cae en una parada de Pablo solo mira las cartas de Pablo.
 
 **Sucesos.** `places` va en orden: el primero es donde ocurre lo principal, y es el único donde el sitio sitúa a las personas del suceso. Si ese lugar no tiene punto (un lugar incierto), el suceso no sitúa a nadie. `present` es opcional: lista de ids de `people` que estaban en ese primer lugar. Si está, solo ellas se sitúan allí y las demás solo se nombran, como Augusto en el nacimiento de Jesús. `present: []` es un suceso que no sitúa a nadie, porque pasa en un sitio que el texto no nombra (en el camino de Moab a Judá). `build.py` comprueba que cada id de `present` está también en `people`.

@@ -1,6 +1,6 @@
 # biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
 id: neko-sube-al-eufrates
-name: Nekó sube al Éufrates
+name: Nekó sube hacia el Éufrates
 person: neko
 reference: 2Re 23:29-35; 2Cr 35:20-36:4
 date:
@@ -26,7 +26,7 @@ sources:
 - it-ribla
 - si-3
 - tnm-a6-b
-checked_on: '2026-09-30'
+checked_on: '2026-10-01'
 status: verified
 stops:
 - order: 1

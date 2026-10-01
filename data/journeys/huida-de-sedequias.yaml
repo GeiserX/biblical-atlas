@@ -24,7 +24,7 @@ sources:
 - it-araba
 - it-ribla
 - si-3
-checked_on: '2026-09-30'
+checked_on: '2026-10-01'
 status: verified
 stops:
 - order: 1
@@ -50,29 +50,6 @@ stops:
   checked_on: '2026-09-30'
   status: verified
 - order: 2
-  place: araba
-  reference: 2Re 25:4; Jer 39:4; 52:7
-  date:
-    from: -606
-    to: -606
-    precision: year
-    approx: false
-    type: anchored
-    chronology: tnm
-    text: 607 a.e.c.
-    detail:
-      month: tamuz
-      day: 9
-  note: Toma el camino del Arabá.
-  reason: '2Re 25:4: se va por el camino del Arabá. Mismo suceso ancla.'
-  sources:
-  - 2-reyes-25
-  - jeremias-39
-  - jeremias-52
-  - it-araba
-  checked_on: '2026-09-30'
-  status: verified
-- order: 3
   place: llanuras-deserticas-de-jerico
   reference: 2Re 25:5; Jer 39:5; 52:8
   date:
@@ -86,15 +63,17 @@ stops:
     detail:
       month: tamuz
       day: 9
-  note: Sus soldados se dispersan.
-  reason: '2Re 25:5: el ejército caldeo lo alcanza en las llanuras desérticas de Jericó. Mismo suceso ancla.'
+  note: Llega por el camino del Arabá, que baja al valle del Jordán. Aquí lo alcanzan y sus soldados se dispersan.
+  reason: '2Re 25:4, 5: sale por el camino del Arabá y el ejército caldeo lo alcanza en las llanuras desérticas de Jericó, que
+    Perspicacia «Arabá», párr. 4, cuenta dentro del Arabá. Mismo suceso ancla.'
   sources:
   - 2-reyes-25
   - jeremias-39
   - jeremias-52
-  checked_on: '2026-09-30'
+  - it-araba
+  checked_on: '2026-10-01'
   status: verified
-- order: 4
+- order: 3
   place: ribla
   reference: 2Re 25:6, 7; Jer 39:5-7; 52:9-11
   date:
@@ -115,7 +94,7 @@ stops:
   - it-sedequias
   checked_on: '2026-09-30'
   status: verified
-- order: 5
+- order: 4
   place: babilonia
   reference: 2Re 25:7; Jer 52:11
   date:
