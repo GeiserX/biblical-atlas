@@ -614,6 +614,7 @@ const historia = (() => {
     guardarVisitas(r.visits);
     if (r.fresh) history.replaceState(actual, '', location.href);
     ultimoIndice = i;
+    if (destino !== null && (actual.step === destino || r.fresh)) { destino = null; clearTimeout(destinoTimer); }
     ponerTitulo(actual.name);
     pintarBotones();
     quedarse();
@@ -626,13 +627,23 @@ const historia = (() => {
   });
   // De vuelta desde la caché del navegador: la lista pudo cambiar mientras tanto (se salió por un enlace).
   window.addEventListener('pageshow', (e) => { if (e.persisted) pintarBotones(); });
+  // Las pulsaciones seguidas: destino es el número al que van las que aún no han llegado. Cada una cuenta desde ahí,
+  // así diez pulsaciones de golpe nunca pasan de la primera vista ni de la última. Si un viaje no llega, se olvida.
+  let destino = null, destinoTimer = 0;
   document.addEventListener('click', (e) => {
     const b = e.target.closest?.('[data-historia]');
     if (!b || b.disabled) return;
+    const atras = b.dataset.historia === 'atras';
     // La vista de ahora se queda con su entrada y su dirección antes de irse: si cambió hace un instante, Atrás saltaba
     // una vista y Adelante volvía a una copia de esta.
-    if (BE.D) BE.escribirHash();
-    if (b.dataset.historia === 'atras') history.back(); else history.forward();
+    if (destino === null && BE.D) BE.escribirHash();
+    const desde = destino ?? actual.step;
+    const a = H.around({ ...actual, step: desde }, leerVisitas());
+    if (atras ? !a.back.can : !a.forward.can) return;
+    destino = desde + (atras ? -1 : 1);
+    clearTimeout(destinoTimer);
+    destinoTimer = setTimeout(() => { destino = null; }, 1000);
+    if (atras) history.back(); else history.forward();
   });
   // Un enlace a otra página en esta pestaña (Acerca de, el calendario, jw.org sin pestaña nueva).
   window.addEventListener('click', (e) => {

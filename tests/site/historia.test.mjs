@@ -455,3 +455,35 @@ test('a stateless entry reached by going back starts a visit there, and another 
   assert.equal(h.forward.label, 'No hay nada adelante');
   assert.equal(h.back.label, 'Atrás: Pablo');
 });
+
+test('presses in a burst never leave the site, and stop at the last view', async () => {
+  const page = await openPage(DESKTOP, { hash: 't=50.3000' });
+  await search(page, 'Pablo');
+  const centre = async (sel) => { const b = await page.locator(sel).boundingBox(); return [b.x + b.width / 2, b.y + b.height / 2]; };
+  // One entry behind and a double click: the second press has nowhere to go.
+  await page.locator('#atras').dblclick();
+  await page.waitForTimeout(600);
+  await settle(page);
+  assert.ok(page.url().startsWith(`${base}index.html`), `a double click left the site: ${page.url()}`);
+  assert.equal((await hist(page)).state.step, 0);
+  for (const q of ['Corinto', 'Samotracia', 'Pedro']) await search(page, q);
+  const length = await page.evaluate(() => history.length);
+  // Three entries behind, ten clicks with no pause, before the first Back has arrived.
+  const [x, y] = await centre('#atras');
+  for (let i = 0; i < 10; i++) await page.mouse.click(x, y);
+  await page.waitForTimeout(800);
+  await settle(page);
+  assert.ok(page.url().startsWith(`${base}index.html`), `ten clicks left the site: ${page.url()}`);
+  let h = await hist(page);
+  assert.equal(h.state.step, 0);
+  assert.equal(h.length, length);
+  // And ten on Forward end on the last view.
+  const [fx, fy] = await centre('#adelante');
+  for (let i = 0; i < 10; i++) await page.mouse.click(fx, fy);
+  await page.waitForTimeout(800);
+  await settle(page);
+  h = await hist(page);
+  assert.equal(h.state.step, 3);
+  assert.equal((await snap(page)).sel, 'persona:pedro');
+  assert.deepEqual(page.pageErrors, []);
+});
