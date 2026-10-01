@@ -349,7 +349,7 @@ stops:
   status: verified
 - order: 13
   place: jerusalen
-  reference: Mt 26:57–27:31; Jn 18:13–19:16
+  reference: Mt 26:57–27:31; Lu 23:7-12; Jn 18:13–19:16
   date:
     from: 33
     to: 33
@@ -367,9 +367,10 @@ stops:
   sources:
   - mateo-26
   - mateo-27
+  - lucas-23
   - juan-18
   - tnm-a7-h
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-01'
   status: verified
 - order: 14
   place: golgota
