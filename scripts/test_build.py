@@ -140,5 +140,24 @@ class ChapterUrls(unittest.TestCase):
         self.assertIsNone(self.cap("https://wol.jw.org/es/wol/d/r4/lp-s/1200000129"))
 
 
+class Formas(unittest.TestCase):
+    """build.py añade a cada forma su contorno y su caja, que el sitio dibuja y encuadra sin hacer cuentas."""
+
+    def test_contorno_y_caja_de_un_lugar_y_de_un_candidato(self):
+        elipse = {"type": "ellipse", "radii_km": [40, 10], "bearing": 0}
+        poligono = {"type": "polygon", "vertices": [[30.9, 33.9], [31.1, 33.9], "b"]}
+        lugares = [{"id": "a", "lat": 32.0, "lon": 35.0, "shape": elipse,
+                    "candidatos": [{"geometria": {"lat": 31.0, "lon": 34.0}, "shape": poligono}]}]
+        build.compile_shapes(lugares, {"places": [{"id": "b", "lat": 31.0, "lon": 34.2}]})
+        self.assertEqual(len(elipse["ring"]), 73)
+        self.assertEqual(elipse["ring"][0], elipse["ring"][-1])
+        (o, s_), (e, n) = elipse["bbox"]
+        # 80 km de norte a sur y 20 de este a oeste: 0,72 grados de latitud y 0,21 de longitud a 32 N.
+        self.assertAlmostEqual(n - s_, 80 / 111.2, places=2)
+        self.assertAlmostEqual(e - o, 20 / (111.2 * 0.848), places=2)
+        self.assertEqual(poligono["ring"], [[33.9, 30.9], [33.9, 31.1], [34.2, 31.0], [33.9, 30.9]])
+        self.assertEqual(poligono["bbox"], [[33.9, 30.9], [34.2, 31.1]])
+
+
 if __name__ == "__main__":
     unittest.main(verbosity=1)

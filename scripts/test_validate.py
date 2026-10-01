@@ -101,5 +101,80 @@ class SinWol(unittest.TestCase):
                 self.assertTrue(e.get("source") and e.get("reason"))
 
 
+HECHO = {"sources": ["it-x"], "reason": "Razón de prueba.", "checked_on": "2026-10-02", "status": "verified",
+         "note": "Cuenta de prueba."}
+
+
+def errores_forma(forma, candidato=False, puntos=None):
+    """Errores de un lugar de prueba en (32, 35) con esta forma, en el lugar o en su único candidato."""
+    lugar = {"type": "region", "precision": "zone", "lat": 32.0, "lon": 35.0, "links": [], "status": "pending"}
+    if candidato:
+        lugar.update(lat=None, lon=None, candidates=[{
+            "name": "Zona", "geometry": {"type": "zone", "lat": 32.0, "lon": 35.0, "radius_km": 30},
+            "coord_source": "calculation", "note": "Centro de prueba.", "shape": forma, "sources": ["it-x"], "reason": "Razón de prueba.",
+            "checked_on": "2026-10-02", "status": "favored_level_1"}])
+    else:
+        lugar["shape"] = forma
+    out = []
+    validate.validar_lugar(lugar, "data/places/x.yaml", out.append, {}, puntos or {})
+    return out
+
+
+class Formas(unittest.TestCase):
+    ELIPSE = {"type": "ellipse", "radii_km": [40, 10], "bearing": 5, **HECHO}
+
+    def test_formas_validas(self):
+        for forma in [self.ELIPSE, {"type": "circle", "radius_km": 20, **HECHO},
+                      {"type": "box", "bounds": {"south": 31.8, "west": 34.8, "north": 32.2, "east": 35.3}, **HECHO},
+                      {"type": "polygon", "vertices": [[31.9, 34.9], [32.1, 34.9], "aqui"], **HECHO}]:
+            with self.subTest(tipo=forma["type"]):
+                self.assertEqual(errores_forma(forma, puntos={"aqui": (32.0, 35.2)}), [])
+        self.assertEqual(errores_forma(self.ELIPSE, candidato=True), [])
+
+    def test_el_punto_fuera_de_la_forma_es_error(self):
+        lejos = {**self.ELIPSE, "center": {"lat": 32.5, "lon": 35.0}}
+        e = errores_forma(lejos)
+        self.assertEqual(len(e), 1, e)
+        self.assertIn("queda fuera de la forma", e[0])
+        # De través la elipse mide 10 km a cada lado: a 20 km del eje, fuera; a lo largo, a 20 km del centro, dentro.
+        self.assertEqual(len(errores_forma({**self.ELIPSE, "bearing": 0, "center": {"lat": 32.0, "lon": 35.21}})), 1)
+        self.assertEqual(errores_forma({**self.ELIPSE, "bearing": 0, "center": {"lat": 32.18, "lon": 35.0}}), [])
+
+    def test_un_poligono_que_se_cruza_es_error(self):
+        e = errores_forma({"type": "polygon", "vertices": [[31.9, 34.9], [32.1, 35.1], [32.1, 34.9], [31.9, 35.1]], **HECHO})
+        self.assertTrue(any("se cruza" in x for x in e), e)
+
+    def test_un_vertice_que_no_es_un_lugar_con_punto_es_error(self):
+        e = errores_forma({"type": "polygon", "vertices": [[31.9, 34.9], [32.1, 34.9], "sodoma"], **HECHO})
+        self.assertTrue(any("'sodoma' no es un lugar con punto" in x for x in e), e)
+
+    def test_demasiados_vertices_es_error(self):
+        vs = [[32 + 0.1 * __import__("math").sin(k), 35 + 0.1 * __import__("math").cos(k)] for k in range(13)]
+        self.assertTrue(any("de 3 a 12" in x for x in errores_forma({"type": "polygon", "vertices": vs, **HECHO})))
+
+    def test_sin_fuente_ni_cuenta_es_error(self):
+        e = errores_forma({"type": "ellipse", "radii_km": [40, 10], "bearing": 5, "checked_on": "2026-10-02",
+                           "status": "verified"})
+        self.assertTrue(any("'sources' vacío" in x for x in e) and any("falta note" in x for x in e), e)
+
+    def test_tipo_fuera_del_vocabulario_y_campos_de_otro_tipo(self):
+        self.assertTrue(any("no es uno de" in x for x in errores_forma({"type": "hexagon", **HECHO})))
+        e = errores_forma({**self.ELIPSE, "radius_km": 40})
+        self.assertTrue(any("campos que no son de un ellipse" in x for x in e), e)
+        e = errores_forma({"type": "ellipse", "radii_km": [10, 40], "bearing": 200, **HECHO})
+        self.assertEqual(len(e), 2, e)
+
+    def test_un_candidato_no_repite_su_circulo(self):
+        e = errores_forma({"type": "circle", "radius_km": 20, **HECHO}, candidato=True)
+        self.assertTrue(any("ya es un círculo" in x for x in e), e)
+
+    def test_un_lugar_sin_zona_no_lleva_forma(self):
+        lugar = {"type": "city", "precision": "point", "lat": 32.0, "lon": 35.0, "links": [], "status": "pending",
+                 "shape": self.ELIPSE}
+        out = []
+        validate.validar_lugar(lugar, "data/places/x.yaml", out.append, {}, {})
+        self.assertTrue(any("shape solo va en un lugar con punto y precision: zone" in x for x in out), out)
+
+
 if __name__ == "__main__":
     unittest.main()
