@@ -48,6 +48,8 @@ a { color: var(--link); }
 /* Junto al logo en la barra; en el teléfono, en la fila de la hoja, a la izquierda de «Leyenda» (abajo). Apagados cuando no
    hay adónde ir: se ven, pero más tenues. */
 .atras-adelante { display: flex; flex: none; gap: 2px; }
+/* El logo no cede su sitio a las flechas: con el dedo (44 px) la barra no cabía y el logo se encogía. Cede la búsqueda. */
+.be-topbar > .be-logo { flex-shrink: 0; }
 .atras-adelante .be-btn { cursor: pointer; }
 .atras-adelante .be-btn:disabled { cursor: default; opacity: .4; }
 
