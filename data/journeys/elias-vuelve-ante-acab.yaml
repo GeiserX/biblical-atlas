@@ -2,7 +2,7 @@
 id: elias-vuelve-ante-acab
 name: Elías vuelve ante Acab
 person: elias-profeta
-reference: 1Re 18:1-46
+reference: 1Re 17:9, 10; 18:1-46
 date:
   from: -939
   to: -919
@@ -17,9 +17,10 @@ narrative_order:
 companions: []
 summary: Al tercer año de sequía, Jehová envía a Elías ante Acab. En el monte Carmelo desafía a los profetas de Baal y los
   mata en el Cisón; luego ora por lluvia y corre delante del carro del rey hasta Jezreel.
-reason: '1Re 18:19-46 da el orden: Carmelo, Cisón, la cima del Carmelo y Jezreel. Fechas de los sucesos elias-en-el-carmelo,
-  elias-mata-a-los-profetas-de-baal-en-el-cison y elias-ora-y-jehova-envia-la-lluvia.'
+reason: 'Sale de Sarepta (1Re 18:1, 2); 18:19-46 da el orden: Carmelo, Cisón, la cima del Carmelo y Jezreel. Fechas de los
+  sucesos elias-en-el-carmelo, elias-mata-a-los-profetas-de-baal-en-el-cison y elias-ora-y-jehova-envia-la-lluvia.'
 sources:
+- 1-reyes-17
 - 1-reyes-18
 - santiago-5
 - it-elias
@@ -30,6 +31,27 @@ checked_on: '2026-09-30'
 status: verified
 stops:
 - order: 1
+  place: sarepta
+  reference: 1Re 17:9, 10; 18:1, 2
+  date:
+    from: -939
+    to: -919
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 940 y 920 a.e.c. (tiempo narrativo: tercer año de la sequía, en el reinado de Acab)'
+  note: Salida. Allí acaba el viaje anterior, en casa de la viuda.
+  reason: 1Re 17:9-24 lo deja en Sarepta y 18:1, 2 lo manda desde allí a presentarse ante Acab, sin nombrar otro sitio. Fecha
+    del suceso elias-se-presenta-ante-abdias-y-acab.
+  sources:
+  - 1-reyes-17
+  - 1-reyes-18
+  - it-elias
+  - tnm-a6-a
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
   place: monte-carmelo
   reference: 1Re 18:19-39
   date:
@@ -48,7 +70,7 @@ stops:
   - tnm-a6-a
   checked_on: '2026-09-30'
   status: verified
-- order: 2
+- order: 3
   place: cison
   reference: 1Re 18:40
   date:
@@ -67,7 +89,7 @@ stops:
   - tnm-a6-a
   checked_on: '2026-09-30'
   status: verified
-- order: 3
+- order: 4
   place: monte-carmelo
   reference: 1Re 18:41-44
   date:
@@ -86,7 +108,7 @@ stops:
   - tnm-a6-a
   checked_on: '2026-09-30'
   status: verified
-- order: 4
+- order: 5
   place: jezreel
   reference: 1Re 18:45, 46
   date:
