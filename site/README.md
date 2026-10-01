@@ -145,7 +145,7 @@ Los demás parámetros solo aparecen cuando no valen lo de siempre:
 | `T` | Ampliar o reducir la línea de tiempo |
 | Alt + arrastrar sobre la línea | Regla entre dos fechas |
 
-Las marcas de la línea son una sola parada del tabulador. La rueda sobre los carriles los recorre de arriba abajo; con Ctrl o ⌘, o sobre la regla, cambia la escala, de milenios a días; con Mayúsculas, o con un gesto horizontal en el trackpad, desplaza la vista. Arrastrar los carriles mueve el tiempo; pulsar o arrastrar en la regla mueve el cursor.
+Las marcas de la línea son una sola parada del tabulador. La rueda sobre la regla o los carriles cambia la escala en el puntero, de milenios a días, igual que Ctrl o ⌘ con la rueda y la pinza del trackpad; con Mayúsculas, o con un gesto horizontal en el trackpad, desplaza la vista. Cuando la línea es alta, los carriles se recorren de arriba abajo con la rueda sobre sus nombres, con la barra de desplazamiento o arrastrando en vertical. Arrastrar los carriles de lado mueve el tiempo; pulsar o arrastrar en la regla mueve el cursor.
 
 ## Ficheros
 

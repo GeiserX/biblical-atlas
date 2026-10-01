@@ -1,6 +1,7 @@
 // The timeline strip in a real headless browser: every mark in view shows its whole name, never covered and never cut;
 // clicking a mark selects it and puts the cursor at the pointed moment without moving the scale, the view or the lanes;
-// no label says «cálculo»; dragging moves time, the ruler moves the cursor, the wheel scrolls the lanes; person lanes
+// no label says «cálculo»; dragging moves time, the ruler moves the cursor, the wheel zooms at the pointer and the lanes
+// scroll with the wheel over their names or a vertical drag; person lanes
 // follow the same rule; selecting a period does not reframe the view; the map follows the cursor.
 //
 // It walks six scales around three dates (50 e.c., the last Passover in 33 e.c., 1513 a.e.c.) at 1440x900 with a mouse
@@ -285,7 +286,7 @@ test('1440: a second click keeps the selection, Esc releases it, an empty click 
   await p.context().close();
 });
 
-test('1440: dragging moves time, the ruler moves the cursor, the wheel scrolls the lanes (Shift pans, Ctrl zooms)', async () => {
+test('1440: dragging moves time, the ruler moves the cursor, the wheel zooms at the pointer, the lanes scroll by their names or a vertical drag (Shift pans, Ctrl zooms)', async () => {
   const p = await open(DESKTOP, 't=50.5&v=40');
   await frames(p);
   const w = await p.evaluate(() => document.querySelector('#pista').clientWidth);
@@ -309,12 +310,30 @@ test('1440: dragging moves time, the ruler moves the cursor, the wheel scrolls t
   assert.ok(Math.abs(c.t - expectT) < (c.vista[1] - c.vista[0]) / w * 2);
   assert.deepEqual(c.vista, b.vista);
   assert.equal(await p.getAttribute('#pista', 'role'), 'slider');
-  // The wheel over the lanes scrolls them; Shift pans; Ctrl zooms.
+  // The wheel over the lanes zooms at the pointer: the moment under it stays put and the lanes do not scroll.
+  const x0 = await p.evaluate(() => document.querySelector('#pista').getBoundingClientRect().left);
+  const under = (s) => s.vista[0] + ((lane[0] - x0) / w) * (s.vista[1] - s.vista[0]);
   await p.mouse.move(lane[0], lane[1] + 20);
   await p.mouse.wheel(0, 300); await frames(p);
+  const z = await state(p);
+  note(`1440 wheel over the lanes: span ${(c.vista[1] - c.vista[0]).toFixed(3)} → ${(z.vista[1] - z.vista[0]).toFixed(3)}, moment under the pointer ${under(c).toFixed(3)} → ${under(z).toFixed(3)}, scrollTop ${c.scroll} → ${z.scroll}`);
+  assert.ok((z.vista[1] - z.vista[0]) > (c.vista[1] - c.vista[0]) * 1.2, 'the wheel did not zoom out');
+  assert.ok(Math.abs(under(z) - under(c)) < (z.vista[1] - z.vista[0]) / w * 2, 'the moment under the pointer moved');
+  assert.equal(z.scroll, c.scroll);
+  // The wheel over the lane names scrolls the lanes and leaves the view; so does a vertical drag on the lanes.
+  const names = await p.evaluate(() => { const r = document.querySelector('#linea-filas .carril:not([hidden]) .carril-rotulo').getBoundingClientRect(); return [r.left + r.width / 2, r.top + r.height / 2]; });
+  await p.mouse.move(names[0], names[1]);
+  await p.mouse.wheel(0, 300); await frames(p);
+  const y = await state(p);
+  note(`1440 wheel over the lane names: scrollTop ${z.scroll} → ${y.scroll}, view ${y.vista[0] === z.vista[0] ? 'unchanged' : 'moved'}`);
+  assert.ok(y.scroll > z.scroll); assert.deepEqual(y.vista, z.vista);
+  await p.evaluate(() => { document.querySelector('#linea-cuerpo').scrollTop = 0; });
+  await p.mouse.move(lane[0], lane[1] + 60); await p.mouse.down();
+  for (let i = 1; i <= 10; i++) await p.mouse.move(lane[0] + 1, lane[1] + 60 - i * 10);
+  await p.mouse.up(); await frames(p);
   const d = await state(p);
-  note(`1440 wheel: scrollTop ${c.scroll} → ${d.scroll}, view ${d.vista[0] === c.vista[0] ? 'unchanged' : 'moved'}`);
-  assert.ok(d.scroll > c.scroll); assert.deepEqual(d.vista, c.vista);
+  note(`1440 vertical drag of 100 px: scrollTop 0 → ${d.scroll}, view ${d.vista[0] === y.vista[0] ? 'unchanged' : 'moved'}, selection ${d.sel || 'none'}`);
+  assert.ok(d.scroll > 0); assert.deepEqual(d.vista, y.vista); assert.equal(d.sel, '');
   await p.keyboard.down('Shift'); await p.mouse.wheel(0, 200); await p.keyboard.up('Shift'); await frames(p);
   const e = await state(p);
   assert.notEqual(e.vista[0], d.vista[0]); assert.ok(Math.abs((e.vista[1] - e.vista[0]) - (d.vista[1] - d.vista[0])) < 1e-9);
@@ -702,7 +721,8 @@ test('1440: the focus never falls out of the strip: a person released with Esc, 
   assert.ok(!['BODY', 'HTML', undefined].includes(esc.focus), `the focus fell to ${esc.focus}`);
   await goTo(p, -1512.5, 4125);
   const first = await p.evaluate(() => { const b = document.querySelector('#linea-filas .m[tabindex="0"]'); b.focus(); return b.dataset.id; });
-  const r = await p.evaluate(() => { const c = document.querySelector('#linea-cuerpo').getBoundingClientRect(); return [c.left + 400, c.top + c.height / 2]; });
+  // Over the lane names, where the wheel scrolls the lanes (over the tracks it zooms).
+  const r = await p.evaluate(() => { const c = document.querySelector('#linea-cuerpo').getBoundingClientRect(), n = document.querySelector('#linea-filas .carril-rotulo').getBoundingClientRect(); return [n.left + n.width / 2, c.top + c.height / 2]; });
   await p.mouse.move(r[0], r[1]);
   const ids = new Set();
   for (let i = 0; i < 12; i++) { await p.mouse.wheel(0, 400); await frames(p); ids.add(await p.evaluate(() => document.activeElement?.dataset?.id || document.activeElement?.tagName)); }
