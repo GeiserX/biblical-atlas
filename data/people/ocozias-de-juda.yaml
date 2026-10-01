@@ -7,11 +7,14 @@ names:
   note: Variante de 2 Crónicas 21:17.
 - name: Azarías
   note: 2 Crónicas 22:6.
-disambiguation: Rey de Judá, nieto de Jehosafat; su tío Ocozías, hijo de Acab, reinó antes en Israel.
+disambiguation: Rey de Judá, nieto de Jehosafat; su tío Ocozías, hijo de Acab, reinó antes en Israel. También se le llama
+  Azarías, pero no es ninguno de los otros Azarías que numera Perspicacia.
 distinct_from:
 - ocozias-de-israel
 - azarias-hijo-de-natan
 - azarias-hijo-de-sadoc
+- azarias-hijo-de-jehohanan
+- jaazanias-jefe-militar
 date:
   from: -905
   to: -904
@@ -31,6 +34,7 @@ sources:
 - 2-reyes-8
 - 2-reyes-10
 - 2-reyes-11
+- it-azarias
 links:
 - title: 'Perspicacia: «Ocozías»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000145
@@ -138,5 +142,5 @@ relations:
   checked_on: '2026-09-30'
   status: verified
 perspicacia: 1200000145#2
-checked_on: '2026-09-30'
+checked_on: '2026-10-01'
 status: verified

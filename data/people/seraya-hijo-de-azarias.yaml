@@ -49,5 +49,6 @@ relations:
 distinct_from:
 - seraya-secretario-de-david
 - seraya-hijo-de-tanhumet
-checked_on: '2026-09-30'
+- seraya-hijo-de-nerias
+checked_on: '2026-10-01'
 status: verified
