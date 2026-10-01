@@ -21,7 +21,13 @@ BE.ponerLibros([
   { num: 15, nombre: 'Esdras', abr: 'Esd', formas: ['esd', 'esdras'], versiculos: [11, 70, 13, 24, 17, 22, 28, 36, 15, 44] },
   { num: 1, nombre: 'Génesis', abr: 'Gé', formas: ['ge', 'genesis'], versiculos: [31, 25] },
   { num: 44, nombre: 'Hechos', abr: 'Hch', formas: ['hch', 'hechos'], versiculos: Array(28).fill(40) },
-  { num: 19, nombre: 'Salmos', abr: 'Sl', formas: ['sl', 'salmos'], versiculos: Array(150).fill(10) },
+  { num: 19, nombre: 'Salmos', abr: 'Sl', formas: ['sl', 'salmos'], capitulos: 150,
+    versiculos: Object.assign(Array(150).fill(10), { 118: 176 }) },
+  { num: 31, nombre: 'Abdías', abr: 'Abd', formas: ['abd', 'abdias'], capitulos: 1, versiculos: [21] },
+  { num: 57, nombre: 'Filemón', abr: 'Flm', formas: ['flm', 'filemon'], capitulos: 1, versiculos: [25] },
+  { num: 63, nombre: '2 Juan', abr: '2Jn', formas: ['2jn', '2juan'], capitulos: 1, versiculos: [13] },
+  { num: 64, nombre: '3 Juan', abr: '3Jn', formas: ['3jn', '3juan'], capitulos: 1, versiculos: [14] },
+  { num: 65, nombre: 'Judas', abr: 'Jud', formas: ['jud', 'judas'], capitulos: 1, versiculos: [25] },
 ]);
 const url = (ref) => BE.urlCita(BE.citas(ref)[0]);
 const J = 'https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/';
@@ -35,6 +41,19 @@ test('a list in one chapter runs from its first to its last verse', () => {
 test('a book with an accent and a one-digit number', () => assert.equal(url('Gé 2:3-10'), `${J}G%C3%A9nesis/2/#v1002003-v1002010`));
 test('a reference that crosses chapters opens the first one to its last verse', () => {
   assert.equal(url('Hch 21:38–22:5'), `${J}hechos/21/#v44021038-v44021040`);
+});
+test('a three-digit chapter', () => {
+  assert.equal(url('Sl 119:105'), `${J}salmos/119/#v19119105`);
+  assert.equal(url('Sl 119:97-105'), `${J}salmos/119/#v19119097-v19119105`);
+});
+test('a one-chapter book is cited by verse: chapter 1, that verse', () => {
+  assert.equal(url('Flm 23'), `${J}Filem%C3%B3n/1/#v57001023`);
+  assert.equal(url('Jud 9'), `${J}judas/1/#v65001009`);
+  assert.equal(url('Abd 3'), `${J}Abd%C3%ADas/1/#v31001003`);
+  assert.equal(url('Abd 11-14'), `${J}Abd%C3%ADas/1/#v31001011-v31001014`);
+  assert.equal(url('2Jn 12'), `${J}2-juan/1/#v63001012`);
+  assert.equal(url('3Jn 14'), `${J}3-juan/1/#v64001014`);
+  assert.equal(url('Flm 1:23'), `${J}Filem%C3%B3n/1/#v57001023`);
 });
 test('a whole chapter has no anchor', () => {
   assert.equal(url('Sl 34'), `${J}salmos/34/`);

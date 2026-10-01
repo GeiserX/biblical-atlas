@@ -1,0 +1,101 @@
+# URL de wol.jw.org que pueden quedar en data/. Cualquier otra es un error de scripts/validate.py: la fuente se
+# escribe con su página de www.jw.org. Estas son las que el buscador de jw.org
+# (https://www.jw.org/finder?wtlocale=S&docid=<documento>) devuelve a wol.jw.org porque jw.org no tiene la página.
+# Comprobado el 2026-10-01. Una URL sale de aquí cuando jw.org la publique.
+
+https://wol.jw.org/es/wol/d/r4/lp-s/1001070617:
+  source: nota-mateo-17
+  reason: Notas de estudio de un capítulo de la Biblia de estudio, que jw.org da junto al capítulo y no como documento propio.
+https://wol.jw.org/es/wol/d/r4/lp-s/1001070668:
+  source: nota-lucas-24
+  reason: Notas de estudio de un capítulo de la Biblia de estudio, que jw.org da junto al capítulo y no como documento propio.
+https://wol.jw.org/es/wol/d/r4/lp-s/1001070669:
+  source: nota-juan-1
+  reason: Notas de estudio de un capítulo de la Biblia de estudio, que jw.org da junto al capítulo y no como documento propio.
+https://wol.jw.org/es/wol/d/r4/lp-s/1001070687:
+  source: nota-juan-19
+  reason: Notas de estudio de un capítulo de la Biblia de estudio, que jw.org da junto al capítulo y no como documento propio.
+https://wol.jw.org/es/wol/d/r4/lp-s/1001070698:
+  source: nota-hechos-9
+  reason: Notas de estudio de un capítulo de la Biblia de estudio, que jw.org da junto al capítulo y no como documento propio.
+https://wol.jw.org/es/wol/d/r4/lp-s/1001070702:
+  source: nota-hechos-13
+  reason: Notas de estudio de un capítulo de la Biblia de estudio, que jw.org da junto al capítulo y no como documento propio.
+https://wol.jw.org/es/wol/d/r4/lp-s/1001070703:
+  source: nota-hechos-14
+  reason: Notas de estudio de un capítulo de la Biblia de estudio, que jw.org da junto al capítulo y no como documento propio.
+https://wol.jw.org/es/wol/d/r4/lp-s/1001070705:
+  source: nota-hechos-16
+  reason: Notas de estudio de un capítulo de la Biblia de estudio, que jw.org da junto al capítulo y no como documento propio.
+https://wol.jw.org/es/wol/d/r4/lp-s/1001070706:
+  source: nota-hechos-17
+  reason: Notas de estudio de un capítulo de la Biblia de estudio, que jw.org da junto al capítulo y no como documento propio.
+https://wol.jw.org/es/wol/d/r4/lp-s/1001070707:
+  source: nota-hechos-18
+  reason: Notas de estudio de un capítulo de la Biblia de estudio, que jw.org da junto al capítulo y no como documento propio.
+https://wol.jw.org/es/wol/d/r4/lp-s/1001070708:
+  source: nota-hechos-19
+  reason: Notas de estudio de un capítulo de la Biblia de estudio, que jw.org da junto al capítulo y no como documento propio.
+https://wol.jw.org/es/wol/d/r4/lp-s/1001070709:
+  source: nota-hechos-20
+  reason: Notas de estudio de un capítulo de la Biblia de estudio, que jw.org da junto al capítulo y no como documento propio.
+https://wol.jw.org/es/wol/d/r4/lp-s/1001070712:
+  source: nota-hechos-23
+  reason: Notas de estudio de un capítulo de la Biblia de estudio, que jw.org da junto al capítulo y no como documento propio.
+https://wol.jw.org/es/wol/d/r4/lp-s/1001070713:
+  source: nota-hechos-24
+  reason: Notas de estudio de un capítulo de la Biblia de estudio, que jw.org da junto al capítulo y no como documento propio.
+https://wol.jw.org/es/wol/d/r4/lp-s/1001070714:
+  source: nota-hechos-25
+  reason: Notas de estudio de un capítulo de la Biblia de estudio, que jw.org da junto al capítulo y no como documento propio.
+https://wol.jw.org/es/wol/d/r4/lp-s/1001070715:
+  source: nota-hechos-26
+  reason: Notas de estudio de un capítulo de la Biblia de estudio, que jw.org da junto al capítulo y no como documento propio.
+https://wol.jw.org/es/wol/d/r4/lp-s/1001070716:
+  source: nota-hechos-27
+  reason: Notas de estudio de un capítulo de la Biblia de estudio, que jw.org da junto al capítulo y no como documento propio.
+https://wol.jw.org/es/wol/d/r4/lp-s/1001070717:
+  source: nota-hechos-28
+  reason: Notas de estudio de un capítulo de la Biblia de estudio, que jw.org da junto al capítulo y no como documento propio.
+https://wol.jw.org/es/wol/d/r4/lp-s/1001072160:
+  source: tnm-mapa-pentecostes-33
+  reason: Mapa de la Biblia de estudio que jw.org no publica como página propia.
+https://wol.jw.org/es/wol/d/r4/lp-s/101990450:
+  source: g90-meroe
+  reason: Artículo de ¡Despertad! anterior a las revistas que jw.org publica.
+https://wol.jw.org/es/wol/d/r4/lp-s/101996573:
+  source: g96-observando-el-mundo
+  reason: Artículo de ¡Despertad! anterior a las revistas que jw.org publica.
+https://wol.jw.org/es/wol/d/r4/lp-s/101999285:
+  source: g99-monte-sinai
+  reason: Artículo de ¡Despertad! anterior a las revistas que jw.org publica.
+https://wol.jw.org/es/wol/d/r4/lp-s/1200270440:
+  source: ip-araba-valle-torrencial
+  reason: Entrada del Índice de las publicaciones, que solo está en wol.jw.org.
+https://wol.jw.org/es/wol/d/r4/lp-s/1976043:
+  source: w76-hacha
+  reason: Artículo de La Atalaya anterior a las revistas que jw.org publica.
+https://wol.jw.org/es/wol/d/r4/lp-s/1986767:
+  source: w86-salmos-42-72
+  reason: Artículo de La Atalaya anterior a las revistas que jw.org publica.
+https://wol.jw.org/es/wol/d/r4/lp-s/1989365:
+  source: w89-salvacion-venganza
+  reason: Artículo de La Atalaya anterior a las revistas que jw.org publica.
+https://wol.jw.org/es/wol/d/r4/lp-s/1991603:
+  source: w91-abundante-bondad
+  reason: Artículo de La Atalaya anterior a las revistas que jw.org publica.
+https://wol.jw.org/es/wol/d/r4/lp-s/1993322:
+  source: w93-sinai
+  reason: Artículo de La Atalaya anterior a las revistas que jw.org publica.
+https://wol.jw.org/es/wol/d/r4/lp-s/1996527:
+  source: w96-gamaliel
+  reason: Artículo de La Atalaya anterior a las revistas que jw.org publica.
+https://wol.jw.org/es/wol/d/r4/lp-s/1996682:
+  source: w96-rendir-cuenta
+  reason: Artículo de La Atalaya anterior a las revistas que jw.org publica.
+https://wol.jw.org/es/wol/d/r4/lp-s/1997208:
+  source: w97-ehud
+  reason: Artículo de La Atalaya anterior a las revistas que jw.org publica.
+https://wol.jw.org/es/wol/d/r4/lp-s/1997442:
+  source: w97-arqueologia-jerusalen
+  reason: Artículo de La Atalaya anterior a las revistas que jw.org publica.

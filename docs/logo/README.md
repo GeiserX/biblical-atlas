@@ -52,7 +52,7 @@ Un tell es un montículo formado por ciudades construidas una encima de otra dur
 
 ## 5. Lámpara para mi pie
 
-Una lámpara de aceite de barro con la llama encendida y, debajo, el camino que ilumina: en tinta lo ya andado y en oro lo que tiene delante. Viene de [Salmo 119:105](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/19/119#v=19:119:105), donde la palabra de Dios alumbra cada paso y el camino entero.
+Una lámpara de aceite de barro con la llama encendida y, debajo, el camino que ilumina: en tinta lo ya andado y en oro lo que tiene delante. Viene de [Salmo 119:105](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/salmos/119/#v19119105), donde la palabra de Dios alumbra cada paso y el camino entero.
 
 ![Cabecera con la propuesta 5](propuestas/5-lampara/vista.png)
 
