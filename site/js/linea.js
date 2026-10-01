@@ -167,20 +167,22 @@ function marcaEstancia(s, color, group, tipo) {
     cert, tipo, fecha: f ? textoFechaDe(f) : '', fechaTipo: f?.tipo === 'derivada' ? 'derivada' : s.narrativa ? 'narrativa' : f?.tipo, color, group };
   return s.b > s.a ? tramoMarca(o, [s.a, s.b]) : momentoMarca(o, [s.a, s.b]);
 }
-/** «Viajes de Pablo»: un tramo por viaje y, en filas propias debajo, sus paradas. Solo los suyos: los viajes de
-    los demás salen en el carril de cada persona, como estancias. */
-function marcasPablo() {
+/** Los viajes de una persona (T-06): un tramo por viaje y, en filas propias debajo, sus paradas. P son sus paradas en
+    orden. Pablo lleva un color por viaje y cualquier otro viajero el suyo, el mismo que en el mapa. */
+function marcasViajes(P, colorDe) {
   const out = [];
   for (const v of BE.D.viajes) {
-    const ps = BE.P.filter((x) => x.viaje === v);
+    const ps = P.filter((x) => x.viaje === v);
     if (!ps.length) continue;
-    const color = BE.colorViaje(v.id);
+    const color = colorDe(v);
     out.push(tramoMarca({ id: `viaje:${v.id}`, sel: `viaje:${v.id}`, name: v.nombre, cert: FIL.certainty(v.fecha), tipo: 'Viaje',
-      fecha: textoFechaDe(v.fecha), color }, [ps[0].a, ps.at(-1).b]));
+      fecha: textoFechaDe(v.fecha), color }, [Math.min(...ps.map((s) => s.a)), Math.max(...ps.map((s) => s.b))]));
     for (const s of ps) out.push(marcaEstancia(s, color, 1, 'Parada de un viaje'));
   }
   return out;
 }
+/** «Viajes de Pablo»: solo los suyos. Los de los demás van en el carril de cada persona, con la misma forma. */
+const marcasPablo = () => marcasViajes(BE.P, (v) => BE.colorViaje(v.id));
 function marcasPeriodos(c) {
   return c.ps.map((p) => {
     const tr = BE.tramoPeriodo(p);
@@ -267,8 +269,10 @@ function reinos() {
   });
 }
 const cachePersona = new Map();
-/** Carril de una persona (T-06): sus estancias con lugar, nombradas por el lugar. Su actividad y los caminos entre
-    estancias van de adorno en una franja fina arriba del carril, nunca en las filas. */
+/** Carril de una persona (T-06): sus estancias con lugar, nombradas por el lugar. Si viaja, primero sus viajes como en
+    «Viajes de Pablo» (un tramo por viaje y sus paradas debajo) y después, en filas propias, los sucesos y los sitios
+    donde vivió. Su actividad y los caminos entre estancias van de adorno en una franja fina arriba del carril, nunca en
+    las filas. */
 function carrilPersona(id) {
   if (id === 'pablo') return catalogo().find((c) => c.id === 'pablo');
   const p = BE.PERS[id];
@@ -277,8 +281,12 @@ function carrilPersona(id) {
   if (guardado && guardado.D === BE.D) return guardado.c;
   const est = BE.estancias(id);
   const act = p.fecha ? tramo(p.fecha) : null;
-  const c = !est.length && !act ? null : { id, nombre: p.nombre, icono: 'persona', tipo: 'persona', persona: id, orden: 19, est, act,
-    marcas: () => est.map((s) => marcaEstancia(s, BE.colorPersona(id), 0, 'Estancia')) };
+  const enViaje = est.filter((s) => s.origen === 'viaje');
+  const marcas = () => {
+    const color = BE.colorPersona(id), resto = est.filter((s) => s.origen !== 'viaje');
+    return [...marcasViajes(enViaje, () => color), ...resto.map((s) => marcaEstancia(s, color, enViaje.length ? 2 : 0, 'Estancia'))];
+  };
+  const c = !est.length && !act ? null : { id, nombre: p.nombre, icono: 'persona', tipo: 'persona', persona: id, orden: 19, est, act, marcas };
   cachePersona.set(id, { D: BE.D, c });
   return c;
 }
@@ -294,11 +302,23 @@ function personasConCarril() {
     Pablo». Sin tope ni prioridades: cada carril con algo en la vista enseña todas sus filas, y uno sin nada no ocupa
     sitio. */
 let carrilesVista = [];
+/** De quién es el carril que trajo la selección. Elegir a una persona lo trae; elegir después una marca de ese mismo
+    carril (un viaje, una parada, un suceso) no lo quita, así que la marca pulsada no desaparece bajo el dedo. */
+let personaSel = null;
+function personaDelCarril() {
+  if (E.sel?.tipo === 'persona') personaSel = E.sel.id;
+  else if (personaSel) {
+    const selT = BE.selTexto(E.sel), c = carrilPersona(personaSel);
+    if (!selT || !c || !marcasDe(c).items.some((it) => it.sel === selT)) personaSel = null;
+  }
+  return personaSel;
+}
 function elegirCarriles() {
   const fijos = L.fijados.map(carrilPorId).filter((c) => c && (c.tipo !== 'secular' || L.secular));
   const ids = new Set(fijos.map((c) => c.id));
   const resto = [];
-  if (E.sel?.tipo === 'persona' && !ids.has(E.sel.id)) { const c = carrilPersona(E.sel.id); if (c && c.id !== 'pablo') resto.push(c); }
+  const quien = personaDelCarril();
+  if (quien && !ids.has(quien)) { const c = carrilPersona(quien); if (c && c.id !== 'pablo') resto.push(c); }
   for (const c of catalogo()) {
     if (ids.has(c.id) || (c.tipo === 'meses' && !c.hay()) || (c.tipo === 'secular' && !L.secular)) continue;
     resto.push(c);
@@ -812,7 +832,7 @@ BE.lineaMarcas = () => {
     const vis = new Set(c.alto && c.out ? c.out.visible : []);
     for (const it of c.lane.items) {
       const v = vis.has(it);
-      out.push({ id: it.id, sel: it.sel, lane: c.id, name: it.name, label: FIL.labelText(it), cert: it.cert, shape: it.shape, hollow: FIL.hollow(it),
+      out.push({ id: it.id, sel: it.sel, lane: c.id, name: it.name, label: FIL.labelText(it), cert: it.cert, shape: it.shape, hollow: FIL.hollow(it), group: it.group || 0, rowWorld: it.row ?? null,
         t0: it.shape === 'moment' ? it.w0 : it.start, t1: it.shape === 'moment' ? it.w1 : it.end, anchor: it.anchor ?? null,
         visible: v, row: v ? it._drow : null, x: v ? it._hit[0] : null, w: v ? it._hit[1] - it._hit[0] : null, top: v ? topDe(it, c) : null,
         labelX: v ? it._lx : null, labelW: v ? FIL.lwOf(it) : null, secular: !!it.secular });

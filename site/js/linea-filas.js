@@ -6,7 +6,8 @@
    - shape «moment»: un punto en `anchor`, con la ventana [w0, w1) en la que pudo ser;
    - shape «span»: una barra de `start` a `end`;
    - cert: «exact» (la fuente la da), «approx» («c.»), «computed» (cuenta nuestra o el orden del relato), «uncertain»;
-   - group: 0 o 1; las del grupo 1 (las paradas bajo sus viajes) van en filas propias, debajo;
+   - group: 0, 1 o 2; cada grupo va en filas propias, debajo del anterior: los viajes, sus paradas (1) y, en el carril
+     de un viajero, sus sucesos y los sitios donde vivió (2);
    - seq: orden del relato entre marcas de la misma ventana (storyOrder). */
 'use strict';
 (() => {
@@ -96,7 +97,7 @@ function pack(lane, ppy, t0, G, key) {
   if (lane.packKey === key) return false;
   lane.packKey = key;
   let base = 0;
-  for (const g of [0, 1]) {
+  for (const g of [0, 1, 2]) {
     const list = lane.items.filter((it) => (it.group || 0) === g);
     if (!list.length) continue;
     for (const it of list) extent(it, ppy, t0, G);

@@ -797,6 +797,88 @@ test('1440: the focus never falls out of the strip: a person released with Esc, 
   await p.context().close();
 });
 
+/** The lane of a traveller as the timeline builds it (BE.lineaMarcas): the journeys of that person that have a stop on the
+    map, the bars (one per journey), the stops and the rest of the marks, each with its group of rows. */
+function travellerLane(p, id) {
+  return p.evaluate((id) => {
+    const BE = window.BE;
+    const ms = BE.lineaMarcas().filter((m) => m.lane === id);
+    const P = id === 'pablo' ? BE.P : BE.estancias(id).filter((s) => s.origen === 'viaje');
+    const pick = (m) => ({ id: m.id, sel: m.sel, group: m.group, t0: m.t0, t1: m.t1, row: m.rowWorld, visible: m.visible, label: m.label, repite: m.repite });
+    return {
+      journeys: [...new Set(P.map((s) => s.viaje.id))].sort(),
+      bars: ms.filter((m) => m.sel.startsWith('viaje:')).map(pick),
+      stops: ms.filter((m) => m.sel.startsWith('parada:')).map((m) => ({ ...pick(m), journey: m.sel.slice(7).split('/')[0] })),
+      rest: ms.filter((m) => !m.sel.startsWith('viaje:') && !m.sel.startsWith('parada:')).map(pick),
+    };
+  }, id);
+}
+
+test('every traveller lane carries one bar per journey with its stops below, like «Viajes de Pablo»', async () => {
+  for (const screen of [DESKTOP, PHONE]) {
+    const p = await open(screen, 't=30.5&v=40');
+    for (const id of ['jesus', 'david', 'abrahan']) {
+      await p.evaluate((id) => window.BE.seleccionar({ tipo: 'persona', id }, { mover: false }), id);
+      await frames(p);
+      const L = await travellerLane(p, id);
+      assert.ok(L.bars.length, `${screen.name} ${id}: no journey bar in the lane (${L.journeys.length} journeys, ${L.stops.length} stops as loose marks)`);
+      const bad = [];
+      if (JSON.stringify(L.bars.map((b) => b.sel.slice(6)).sort()) !== JSON.stringify(L.journeys)) bad.push(`bars ${L.bars.map((b) => b.sel)} for journeys ${L.journeys}`);
+      for (const b of L.bars) if (b.group !== 0) bad.push(`${b.sel} in group ${b.group}`);
+      for (const s of L.stops) {
+        const b = L.bars.find((x) => x.sel === `viaje:${s.journey}`);
+        if (s.group !== 1) bad.push(`${s.sel} in group ${s.group}`);
+        if (!b || s.t0 < b.t0 - 1e-6 || s.t1 > b.t1 + 3 / 365) bad.push(`${s.sel} outside its bar`);
+      }
+      for (const r of L.rest) if (r.group !== 2) bad.push(`${r.sel} in group ${r.group}`);
+      // In a view around its first journey: bars above stops and stops above the rest (in the rows of the world: a name
+      // that does not fit beside a screen edge moves to an edge row at the bottom, as in every lane), every name whole.
+      const first = L.bars.sort((a, b) => a.t0 - b.t0)[0];
+      await goTo(p, (first.t0 + first.t1) / 2, Math.max(2, (first.t1 - first.t0) * 3));
+      await p.evaluate((id) => window.BE.seleccionar({ tipo: 'persona', id }, { mover: false }), id);
+      await frames(p);
+      const V = await travellerLane(p, id);
+      const rows = (xs) => xs.filter((x) => x.row != null).map((x) => x.row);
+      const [rb, rs, rr] = [rows(V.bars), rows(V.stops), rows(V.rest)];
+      if (rb.length && rs.length && Math.max(...rb) >= Math.min(...rs)) bad.push(`a bar row ${Math.max(...rb)} is not above the stop rows from ${Math.min(...rs)}`);
+      if (rs.length && rr.length && Math.max(...rs) >= Math.min(...rr)) bad.push(`a stop row ${Math.max(...rs)} is not above the other rows from ${Math.min(...rr)}`);
+      const inView = V.bars.filter((x) => x.visible).length;
+      const walk = await walkLanes(p);
+      bad.push(...walk.problems.filter((x) => x.startsWith(`${id}:`)));
+      note(`${screen.name} ${id}: ${L.journeys.length} journeys, ${L.bars.length} bars, ${L.stops.length} stops, ${L.rest.length} other marks; rows of the world: bars ${Math.min(...rb)}-${Math.max(...rb)}, stops ${Math.min(...rs)}-${Math.max(...rs)}, others from ${rr.length ? Math.min(...rr) : '-'}; ${inView} bars in view around «${first.sel}»; ${bad.length} problems`);
+      assert.ok(inView > 0, `${id}: no bar in view around its first journey`);
+      assert.deepEqual(bad, []);
+    }
+    // Clicking a bar of that lane selects the journey and leaves the lane where it was.
+    await goTo(p, 30.5, 8);
+    await p.evaluate(() => window.BE.seleccionar({ tipo: 'persona', id: 'jesus' }, { mover: false }));
+    await frames(p);
+    const bar = await p.evaluate(() => {
+      const b = [...document.querySelectorAll('#linea-filas .carril[data-carril="jesus"] .m')].find((x) => x.dataset.sel.startsWith('viaje:'));
+      if (!b) return null;
+      b.scrollIntoView({ block: 'center' });
+      const r = b.querySelector('.m-barra').getBoundingClientRect(), pr = b.closest('.carril-pista').getBoundingClientRect();
+      const x0 = Math.max(r.left, pr.left + 2), x1 = Math.min(r.right, pr.right - 2);
+      return { sel: b.dataset.sel, x: (x0 + x1) / 2, y: r.top + r.height / 2 };
+    });
+    assert.ok(bar, 'a bar of Jesús in view');
+    if (screen.hasTouch) await p.touchscreen.tap(bar.x, bar.y); else await p.mouse.click(bar.x, bar.y);
+    await frames(p);
+    const after = await p.evaluate(() => ({ sel: window.BE.selTexto(window.BE.E.sel), lane: !!document.querySelector('#linea-filas .carril[data-carril="jesus"]:not([hidden])') }));
+    note(`${screen.name} click on «${bar.sel}» in the lane of Jesús: selected ${after.sel}, lane ${after.lane ? 'still there' : 'gone'}`);
+    assert.equal(after.sel, bar.sel);
+    assert.ok(after.lane, 'the lane of Jesús stays while one of its marks is selected');
+    await p.context().close();
+    // The fixed lane keeps its id and its meaning in an old link: Pablo's eight journeys, each with its stops below.
+    const q = await open(screen, 't=50.5&v=40&carriles=pablo');
+    const P = await travellerLane(q, 'pablo');
+    note(`${screen.name} carriles=pablo: ${P.bars.length} bars, ${P.stops.length} stops`);
+    assert.equal(P.bars.length, 8);
+    assert.ok(P.bars.every((b) => b.group === 0) && P.stops.length > 0 && P.stops.every((s) => s.group === 1));
+    await q.context().close();
+  }
+});
+
 test('no console error, no page error and no failed request in the whole run', () => {
   assert.deepEqual(errors, []);
   assert.deepEqual(failed, []);
