@@ -488,6 +488,65 @@ test('only a link that unloads the page in this tab cuts what is ahead: mailto, 
   assert.deepEqual(page.pageErrors, []);
 });
 
+test('a second click on a timeline mark releases it in its own entry; Back brings the mark back, once, with the right labels', async () => {
+  for (const [screen, pre] of [[DESKTOP, ''], [PHONE, 'hoja-']]) {
+    const page = await openPage(screen, { hash: 't=50.5000&v=8' });
+    await page.waitForFunction(() => document.querySelector('#linea-filas .m[data-id]'), null, { timeout: 25000 });
+    await settle(page);
+    // A mark whose name is in view and not covered: the point a person would press.
+    const target = await page.evaluate(() => {
+      for (const b of document.querySelectorAll('#linea-filas .m[data-id]')) {
+        const r = b.querySelector('.m-nombre .t')?.getBoundingClientRect();
+        if (!r || r.width < 8 || r.left < 0 || r.right > innerWidth || r.top < 0 || r.bottom > innerHeight) continue;
+        const x = r.left + r.width / 2, y = r.top + r.height / 2;
+        if (document.elementFromPoint(x, y)?.closest('.m[data-id]') === b) return { x, y, sel: b.dataset.sel, id: b.dataset.id };
+      }
+      return null;
+    });
+    assert.ok(target, `${pre || 'desktop'}: no mark of the timeline can be pressed`);
+    const press = async () => {
+      if (screen.hasTouch) await page.touchscreen.tap(target.x, target.y); else await page.mouse.click(target.x, target.y);
+      await settle(page);
+    };
+    const h0 = await hist(page, pre), v0 = await snap(page);
+    await press();
+    const h1 = await hist(page, pre), v1 = await snap(page);
+    assert.equal(v1.sel, target.sel, 'the first press selects the mark');
+    assert.equal(h1.state.step, h0.state.step + 1, 'selecting a mark is one entry');
+    await press();
+    const h2 = await hist(page, pre), v2 = await snap(page);
+    assert.equal(v2.sel, null, 'the second press on the same mark releases it');
+    assert.equal(h2.state.step, h1.state.step + 1, 'releasing is one entry, as closing the card is');
+    assert.equal(h2.length, h0.length + 2, 'a press made more than one entry');
+    assert.equal(h2.back.label, `Atrás: ${h1.state.name}`);
+    assert.equal(h2.forward.off, true);
+    // The site's Back brings the mark back, selected, with the same address; Forward releases it again.
+    await page.locator(`#${pre}atras`).click();
+    await settle(page);
+    let h = await hist(page, pre);
+    assert.deepEqual(await snap(page), v1, 'Back after the release is not the view with the mark selected');
+    assert.equal(h.state.step, h1.state.step);
+    assert.equal(h.length, h2.length, 'Back added an entry');
+    assert.equal(h.back.label, `Atrás: ${h0.state.name}`);
+    assert.equal(h.forward.label, `Adelante: ${h2.state.name}`);
+    assert.ok(await page.evaluate((id) => !!document.querySelector(`#linea-filas .m[data-id="${CSS.escape(id)}"]`), target.id), 'the mark is not on the strip after Back');
+    await page.locator(`#${pre}adelante`).click();
+    await settle(page);
+    h = await hist(page, pre);
+    assert.deepEqual(await snap(page), v2);
+    assert.equal(h.forward.off, true);
+    // The browser's Back agrees, and one more reaches the view before the mark.
+    await page.goBack();
+    await settle(page);
+    assert.deepEqual(await snap(page), v1, 'the browser\'s Back after the release');
+    await page.goBack();
+    await settle(page);
+    assert.deepEqual(await snap(page), v0);
+    assert.equal((await hist(page, pre)).length, h2.length);
+    assert.deepEqual(page.pageErrors, []);
+  }
+});
+
 test('on the phone the reading has its own pair, beside «Cerrar», that a finger reaches', async () => {
   const page = await openPage(PHONE, { hash: 'leer=hch-16' });
   await page.locator('#vista-lectura [data-lectura-pasaje="1"]').click();
