@@ -487,3 +487,25 @@ test('presses in a burst never leave the site, and stop at the last view', async
   assert.equal((await snap(page)).sel, 'persona:pedro');
   assert.deepEqual(page.pageErrors, []);
 });
+
+test('on the phone the reading has its own pair, beside «Cerrar», that a finger reaches', async () => {
+  const page = await openPage(PHONE, { hash: 'leer=hch-16' });
+  await page.locator('#vista-lectura [data-lectura-pasaje="1"]').click();
+  await settle(page);
+  assert.equal((await hist(page, 'hoja-')).state.step, 1);
+  const atras = page.locator('#vista-lectura [data-historia="atras"]');
+  assert.equal(await atras.isVisible(), true, 'no Back in the reading');
+  assert.equal(await atras.getAttribute('aria-label'), (await hist(page, 'hoja-')).back.label);
+  const hit = await atras.evaluate((b) => { const r = b.getBoundingClientRect(); return b.contains(document.elementFromPoint(r.x + r.width / 2, r.y + r.height / 2)); });
+  assert.equal(hit, true, 'something covers the reading\'s Back');
+  const box = await atras.boundingBox();
+  assert.equal(box.width, 44); assert.equal(box.height, 44);
+  await atras.click();
+  await settle(page);
+  assert.equal((await hist(page, 'hoja-')).state.step, 0);
+  assert.equal(await page.locator('#vista-lectura [data-historia="adelante"]').isEnabled(), true);
+  // On the computer the reading has none: the top bar's pair is there.
+  const desk = await openPage(DESKTOP, { hash: 'leer=hch-16' });
+  assert.equal(await desk.locator('#vista-lectura [data-historia="atras"]').isVisible(), false);
+  assert.deepEqual(page.pageErrors, []);
+});

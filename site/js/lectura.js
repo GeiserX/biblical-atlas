@@ -88,7 +88,7 @@ function pintar() {
       <div><div class="be-card__eyebrow">Modo lectura</div>
       <label class="lectura-libro"><span class="sr-only">Libro</span><select data-lectura-libro>${(BE.LIBROS || []).filter((l) => l.slug).map((l) => `<option value="${esc(l.slug)}"${l.num === lib.num ? ' selected' : ''}>${esc(l.nombre)}</option>`).join('')}</select></label>
       <h2 class="lectura-titulo">${esc(lib.nombre)} ${cap}</h2></div>
-      <button type="button" class="be-btn be-btn--sm be-btn--ghost vista-cerrar" data-lectura-cerrar aria-label="Cerrar el modo lectura">Cerrar <span aria-hidden="true">×</span></button>
+      ${BE.historia?.pareja() || ''}<button type="button" class="be-btn be-btn--sm be-btn--ghost vista-cerrar" data-lectura-cerrar aria-label="Cerrar el modo lectura">Cerrar <span aria-hidden="true">×</span></button>
     </header>
     <div class="lectura-cuerpo">
     <nav class="capitulos capitulos--lectura" aria-label="Capítulos de ${esc(lib.nombre)}">${Array.from({ length: lib.capitulos || cap }, (_, i) => i + 1).map((c) => `<button type="button" class="cap${conDatos[c] ? ' cap--datos' : ''}${lds.has(`${lib.num}-${c}`) ? ' cap--leido' : ''}${c === cap ? ' cap--actual' : ''}" data-lectura-cap="${c}"${c === cap ? ' aria-current="page"' : ''} aria-label="Capítulo ${c}${lds.has(`${lib.num}-${c}`) ? ', leído' : ''}">${c}</button>`).join('')}</nav>

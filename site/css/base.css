@@ -52,6 +52,8 @@ a { color: var(--link); }
 .be-topbar > .be-logo { flex-shrink: 0; }
 .atras-adelante .be-btn { cursor: pointer; }
 .atras-adelante .be-btn:disabled { cursor: default; opacity: .4; }
+/* La pareja de la lectura (lectura.js): solo en el teléfono, donde la lectura tapa la fila de la hoja. */
+.atras-adelante--lectura { display: none; }
 
 /* ---------- Fecha de la barra: se ve que abre algo ---------- */
 /* Un calendario e «Ir a otra fecha» al lado de la fecha, y el borde que se marca al pasar: es un botón, no un rótulo.
@@ -131,7 +133,10 @@ a { color: var(--link); }
   .sobre-hoja:not(:has(> :not([hidden]))) { display: none; }
   /* Una sola pareja a la vista: la de la hoja, que se ve también plegada y queda al alcance del pulgar. */
   .be-topbar > .atras-adelante { display: none; }
-  .atras-adelante--hoja .be-btn--icon { width: 32px; height: 32px; }
+  .atras-adelante--hoja .be-btn--icon, .atras-adelante--lectura .be-btn--icon { width: 32px; height: 32px; }
+  /* En la lectura, junto a «Cerrar»: la lectura tapa la fila de la hoja y su pareja. */
+  .atras-adelante--lectura { display: flex; margin-left: auto; }
+  .atras-adelante--lectura + .vista-cerrar { margin-left: 0; }
   .hoja-asa { order: -1; }
   .panel.plegada .panel-cuerpo { display: none; }
   .hoja-asa { display: block; width: 100%; border: 0; border-radius: 18px 18px 0 0; background: var(--surface); padding: 8px 0 2px; cursor: pointer; touch-action: none; }

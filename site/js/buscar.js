@@ -548,6 +548,15 @@ const historia = (() => {
     // cuatro: antes, el otro aún estaría apagado.
     if (foco?.disabled) foco.parentElement.querySelector('button:not(:disabled)')?.focus({ preventScroll: true });
   }
+  /** La pareja de la lectura (lectura.js la pone junto a «Cerrar»): en el teléfono la lectura tapa la fila de la hoja.
+      Es una copia de la de la hoja, ya pintada, sin sus id. */
+  function pareja() {
+    const g = document.querySelector('.atras-adelante--hoja')?.cloneNode(true);
+    if (!g) return '';
+    g.classList.replace('atras-adelante--hoja', 'atras-adelante--lectura');
+    for (const x of g.querySelectorAll('[id]')) x.removeAttribute('id');
+    return g.outerHTML;
+  }
   function empujar() {
     const r = H.push(actual, leerVisitas());
     actual = r.state;
@@ -615,6 +624,7 @@ const historia = (() => {
     if (r.fresh) history.replaceState(actual, '', location.href);
     ultimoIndice = i;
     if (destino !== null && (actual.step === destino || r.fresh)) { destino = null; clearTimeout(destinoTimer); }
+    const foco = document.activeElement?.closest?.('#vista-lectura [data-historia]')?.dataset.historia;
     ponerTitulo(actual.name);
     pintarBotones();
     quedarse();
@@ -623,6 +633,11 @@ const historia = (() => {
       // Una entrada que llega sin nombre (un enlace compartido, una pestaña de antes) lo recibe ya, y el título de la
       // pestaña con él.
       if (!actual.name) BE.escribirHash();
+    }
+    // La lectura se vuelve a pintar entera: el foco vuelve a su botón.
+    if (foco && !document.activeElement?.closest?.('[data-historia]')) {
+      const b = document.querySelector(`#vista-lectura [data-historia="${foco}"]`);
+      (b && !b.disabled ? b : b?.parentElement.querySelector('button:not(:disabled)'))?.focus({ preventScroll: true });
     }
   });
   // De vuelta desde la caché del navegador: la lista pudo cambiar mientras tanto (se salió por un enlace).
@@ -661,7 +676,7 @@ const historia = (() => {
     /** Entrar desde la portada: una sola entrada nueva, sea cual sea el destino y tarde lo que tarde. Se guarda la de
         la portada; fn pone el destino, y lo que cambie después sin que la persona toque nada es parte de él. */
     entrar(fn) { empujar(); quedarse(); fn(); BE.programar(); },
-    empujar, sello, dejar,
+    empujar, sello, dejar, pareja,
   };
 })();
 
