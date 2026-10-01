@@ -489,7 +489,9 @@ function imagenRayado(color, estado) {
 // ---------------------------------------------------------------------------
 // Viajes (M-09): cada viaje es su propia ruta. De Pablo se dibuja solo el que recorre en esta fecha, partido en hecho
 // y falta; sus otros viajes no se dibujan. Los de otra persona se ven como rastro en la fecha del propio viaje: en
-// color mientras ocurre y gris claro el año siguiente. Un viaje seleccionado se ve entero y en su color.
+// color mientras ocurre y gris claro el año siguiente. Un viaje seleccionado se ve entero y en su color. Elegir a una
+// persona no añade rutas: el mapa dice dónde está ahora, con la misma regla que sin nada elegido, y la línea de tiempo
+// enseña todos sus viajes.
 // ---------------------------------------------------------------------------
 /** ¿Dibuja la capa «Viajes» este viaje de otra persona en t? Solo dentro de su propia fecha (con un año de margen al
     final), porque con Moisés o Pedro todos sus viajes a la vez llenarían el mapa. Los de Pablo no pasan por aquí: sus
@@ -529,13 +531,11 @@ function geoRutas(w) {
       falta.push(linea([w.pos, coord(w.sig.lugar)], { viaje: V.id, incierto: false, color }));
     }
   }
-  const selPersona = E.sel?.tipo === 'persona' ? E.sel.id : null;
   for (const v of BE.D.viajes) {
     if (v === V) continue;
     const quien = v.persona || 'pablo';
     const elegido = E.sel?.tipo === 'viaje' && E.sel.id === v.id;
-    const ver = elegido || (selPersona && (selPersona === quien || (v.companeros || []).includes(selPersona)))
-      || (F.capas.viajes && quien !== 'pablo' && viajeEnEpoca(v, E.t));
+    const ver = elegido || (F.capas.viajes && quien !== 'pablo' && viajeEnEpoca(v, E.t));
     if (!ver) continue;
     const pts = [...(v.paradas || [])].sort((a, b) => a.orden - b.orden).map((p) => verticeRuta(BE.L[p.lugar])).filter(Boolean);
     if (pts.length < 2) continue;

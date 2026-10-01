@@ -2,7 +2,7 @@
 // that journey and none of the others, faded or not; after his last stop it draws nothing of his; each journey has its
 // own colour and the legend names the one in course. A journey selected outside its date is drawn whole and in its
 // colour. The «Viajes» layer switched off draws no journey. Other travellers keep their rule: Jesús in 32 and David in
-// 1077 a.e.c. still draw their own journeys.
+// 1077 a.e.c. still draw their own journeys. Selecting a person adds no route (Pablo in 44: one of his, not eight).
 //
 // Run from the repository root, one browser at a time:
 //   node --test --test-concurrency=1 tests/site/map-journeys.test.mjs
@@ -96,6 +96,7 @@ function drawnAt(page, t, sel = null) {
       pabloRastro: ids(rastro.filter((f) => quien(f.viaje) === 'pablo')),
       rastroEstados: rastro.map((f) => `${f.viaje}:${f.estado}:${f.color}`),
       otros: ids(rastro.filter((f) => quien(f.viaje) !== 'pablo')),
+      todos: ids([...hecho, ...falta, ...rastro]),
       leyenda: document.querySelector('#leyenda')?.textContent.replace(/\s+/g, ' ').trim() ?? '',
     };
   }, { t, sel });
@@ -174,3 +175,25 @@ test('with the «Viajes» layer off no journey is drawn, and other travellers st
   assert.deepEqual(page.pageErrors, []);
   await page.context().close();
 });
+
+test('a selected person adds no route: the map draws the journey in course, as with nothing selected', async () => {
+  const page = await openMap();
+  const quien = (id) => page.evaluate((id) => window.__be.BE.D.viajes.find((v) => v.id === id)?.persona || 'pablo', id);
+  const bad = [];
+  // Abrahán at the middle of his first journey that has a date.
+  const abrahan = await page.evaluate(() => { const v = window.__be.BE.D.viajes.find((x) => x.persona === 'abrahan' && x.fecha?.desde != null); return (v.fecha.desde + (v.fecha.hasta ?? v.fecha.desde)) / 2 + 0.5; });
+  for (const [persona, t] of [['pablo', 44.5], ['pablo', 50.5], ['jesus', 32.5], ['david', -1076.5], ['abrahan', abrahan]]) {
+    const nada = await drawnAt(page, t, null);
+    const sel = await drawnAt(page, t, { tipo: 'persona', id: persona });
+    const suyos = [];
+    for (const v of sel.todos) if ((await quien(v)) === persona) suyos.push(v);
+    console.log(`${persona} at ${t}: ${sel.todos.length} routes with the person selected (${suyos.length} of theirs), ${nada.todos.length} with nothing selected`);
+    if (JSON.stringify(sel.todos) !== JSON.stringify(nada.todos)) bad.push(`${persona} at ${t}: ${sel.todos} selected, ${nada.todos} with nothing`);
+    if (persona === 'pablo' && suyos.length !== (sel.V ? 1 : 0)) bad.push(`pablo at ${t}: ${suyos.length} of his routes, journey in course ${sel.V}`);
+  }
+  await drawnAt(page, 50.5, null);
+  assert.deepEqual(page.pageErrors, []);
+  await page.context().close();
+  assert.deepEqual(bad, []);
+});
+
