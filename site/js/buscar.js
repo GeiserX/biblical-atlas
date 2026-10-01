@@ -549,11 +549,12 @@ const historia = (() => {
   /** Salir de la página por un enlace: el navegador tira las entradas de delante, y aquí también. */
   function dejar() { guardarVisitas(H.cutForward(actual, leerVisitas())); }
 
-  // clave: la vista que ya tiene su entrada. quieto: tras entrar desde la portada o tras Atrás y Adelante, cada cambio
-  // de vista que sigue es parte del mismo paso (un recorrido pone su parada un fotograma después), hasta que la persona
-  // vuelve a pulsar o a teclear después de verlo pintado. absorber: marcar() ya guardó la entrada; el siguiente
-  // fotograma solo apunta la clave nueva.
-  let clave = null, quieto = false, pintado = false, absorber = false;
+  // clave: la vista que ya tiene su entrada. quieto: al cargar la página, tras entrar desde la portada o tras Atrás y
+  // Adelante, cada cambio de vista que sigue es parte del mismo paso (un recorrido pone su parada un fotograma después),
+  // hasta que la persona vuelve a pulsar o a teclear después de verlo pintado. Al cargar, lo que se ve es lo que trajo
+  // la dirección: la primera pulsación ya despierta (no siempre hay un fotograma antes). absorber: marcar() ya guardó la
+  // entrada; el siguiente fotograma solo apunta la clave nueva.
+  let clave = null, quieto = true, pintado = true, absorber = false;
   const claveActual = () => [BE.selTexto(E.sel), ...BE.parametros.filter((x) => x.historia).map((x) => x.escribir() ?? '')].join('|');
   function quedarse() { quieto = true; pintado = false; absorber = false; }
   /** Si la vista cambió, guarda la de antes en su entrada. Lo llaman cada fotograma (pintor = true) y sello(), antes
@@ -588,7 +589,12 @@ const historia = (() => {
     ponerTitulo(actual.name);
     pintarBotones();
     quedarse();
-    if (BE.D) BE.aplicarHash(false);
+    if (BE.D) {
+      BE.aplicarHash(false);
+      // Una entrada que llega sin nombre (un enlace compartido, una pestaña de antes) lo recibe ya, y el título de la
+      // pestaña con él.
+      if (!actual.name) BE.escribirHash();
+    }
   });
   // De vuelta desde la caché del navegador: la lista pudo cambiar mientras tanto (se salió por un enlace).
   window.addEventListener('pageshow', (e) => { if (e.persisted) pintarBotones(); });

@@ -388,3 +388,18 @@ test('Back and Forward right after choosing keep the view just chosen, and two q
   assert.equal((await snap(page)).sel, 'lugar:atenas');
   assert.equal((await hist(page)).back.label, 'Atrás: Roma');
 });
+
+test('a shared tour link opened fresh is one entry, named after the tour', async () => {
+  const title = 'biblical-atlas · ¿Dónde y cuándo pasó lo que estás leyendo?';
+  for (const hash of ['sel=recorrido:pedro&paso=1', 'sel=recorrido:pedro&paso=3', 'sel=recorrido:pedro']) {
+    const page = await openPage(DESKTOP, { hash });
+    await page.waitForTimeout(400);
+    await settle(page);
+    const h = await hist(page);
+    assert.equal(h.state.step, 0, `${hash}: the stop placed after the load made an entry`);
+    assert.equal(h.back.off, true);
+    assert.match(h.state.name, /^Pedro/);
+    assert.notEqual(h.title, title, `${hash}: the tour has the landing's title`);
+    await page.context().close();
+  }
+});
