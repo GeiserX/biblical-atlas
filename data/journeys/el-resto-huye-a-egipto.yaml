@@ -7,13 +7,11 @@ date:
   from: -606
   to: -606
   precision: year
-  approx: true
+  approx: false
   type: anchored
   chronology: tnm
   text: 607 a.e.c. (desde el mes de tisri)
 companions:
-- jeremias-profeta
-- baruc-hijo-de-nerias
 - jaazanias-jefe-militar
 - seraya-hijo-de-tanhumet
 summary: Tras rescatar a los cautivos de Ismael, Johanán y los demás jefes esperan cerca de Belén la respuesta de Jehová.
@@ -32,77 +30,72 @@ sources:
 - jeremias-42
 - jeremias-43
 - 2-reyes-25
-checked_on: '2026-09-30'
+checked_on: '2026-10-01'
 status: verified
 stops:
 - order: 1
-  place: mizpa-de-benjamin
-  reference: Jer 41:10, 14, 16
-  date: &id001
-    from: -606
-    to: -606
-    precision: month
-    approx: true
-    type: anchored
-    chronology: tnm
-    text: tisri de 607 a.e.c.
-    detail:
-      month: tisri
-  note: Los rescatados eran la gente que Ismael sacó de Mizpá.
-  reason: 'Jer 41:16: llevan consigo al resto de la gente de Mizpá. El texto no dice desde dónde salió Johanán a perseguir
-    a Ismael: la salida se deduce.'
-  sources:
-  - jeremias-41
-  - it-johanan
-  - si-3
-  checked_on: '2026-09-30'
-  status: pending
-- order: 2
   place: gabaon
   reference: Jer 41:12-16
-  date: *id001
-  note: null
-  reason: 'Jer 41:12, 16: alcanzan a Ismael junto a las aguas de Gabaón y se llevan de allí a los rescatados. Mes del suceso
-    asesinato-de-guedalias.'
+  date:
+    from: -606
+    to: -606
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 607 a.e.c.
+    detail:
+      month: tisri
+  note: Rescatan a la gente que Ismael se había llevado de Mizpá y salen de aquí con ella.
+  reason: 'Jer 41:12, 16: alcanzan a Ismael junto a las aguas de Gabaón y se llevan de allí a los rescatados. Fecha del suceso
+    asesinato-de-guedalias, en tisri: el rescate lo sigue de cerca (Jer 41:4, 11).'
   sources:
   - jeremias-41
   - it-gabaon
   - si-3
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-01'
   status: verified
-- order: 3
+- order: 2
   place: lugar-de-hospedaje-de-kimham
   reference: Jer 41:17–43:3
-  date: &id002
+  date:
     from: -606
     to: -606
     precision: year
-    approx: true
+    approx: false
     type: anchored
     chronology: tnm
     text: 607 a.e.c.
-  note: Consultan a Jeremías y esperan diez días la respuesta de Jehová.
-  reason: 'Jer 41:17: se detienen en el lugar de hospedaje de Kimham, junto a Belén, con la idea de seguir a Egipto. Año de
-    los sucesos de 607 a.e.c.'
+  note: Aquí consultan a Jeremías, que va con ellos (Jer 42:2), y esperan diez días la respuesta de Jehová.
+  reason: 'Jer 41:17: se detienen en el lugar de hospedaje de Kimham, junto a Belén, con la idea de seguir a Egipto. Fecha
+    del suceso el-resto-de-juda-huye-a-egipto.'
   sources:
   - jeremias-41
   - jeremias-42
   - jeremias-43
   - it-kimham
   - si-3
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-01'
   status: verified
-- order: 4
+- order: 3
   place: tahpanhes
-  reference: Jer 43:7-13
-  date: *id002
-  note: Como señal, Jeremías esconde piedras grandes junto al acceso del edificio del faraón. Jer 44:1 los sitúa después también
-    en Migdol, Nof y Patrós.
-  reason: 'Jer 43:7: entran en Egipto y llegan hasta Tahpanhés. Suceso el-resto-de-juda-huye-a-egipto, 607 a.e.c.'
+  reference: Jer 43:5-13
+  date:
+    from: -606
+    to: -606
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 607 a.e.c.
+  note: Con ellos van Jeremías y Baruc (Jer 43:6). Como señal, Jeremías esconde piedras grandes junto al edificio del faraón.
+    Jer 44:1 los sitúa después en Migdol, Nof y Patrós.
+  reason: 'Jer 43:7: entran en Egipto y llegan hasta Tahpanhés. Fecha del suceso el-resto-de-juda-huye-a-egipto, 607 a.e.c.'
   sources:
   - jeremias-43
   - it-tahpanhes
+  - it-baruc
   - 2-reyes-25
   - si-3
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-01'
   status: verified

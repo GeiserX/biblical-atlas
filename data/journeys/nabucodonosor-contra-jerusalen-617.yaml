@@ -41,14 +41,14 @@ stops:
       month: adar
   note: Joaquín sale a entregarse con su madre y su corte; el rey saca los tesoros del templo y del palacio. No se nombra de
     dónde salió.
-  reason: '2Re 24:11, 12: llega a la ciudad sitiada y recibe la rendición; Perspicacia «Nabucodonosor», párr. 7, la pone en
-    adar. Suceso nabucodonosor-se-lleva-a-joaquin-a-babilonia.'
+  reason: '2Re 24:11, 12: llega a la ciudad sitiada y recibe la rendición; Perspicacia «Nabucodonosor», apartado «Conquista
+    de Jerusalén», párr. 1, la pone en adar. Suceso nabucodonosor-se-lleva-a-joaquin-a-babilonia.'
   sources:
   - 2-reyes-24
   - daniel-1
   - it-nabucodonosor
   - si-3
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-01'
   status: verified
 - order: 2
   place: babilonia
@@ -62,7 +62,7 @@ stops:
     chronology: tnm
     text: 617 a.e.c.
   note: El mismo convoy que dibujan joaquin-llevado-a-babilonia y daniel-a-babilonia; los objetos del templo van a la casa
-    de su dios.
+    de su dios. 2Cr 36:10 dice que mandó traerlo, y el texto no fija si el rey fue con el convoy.
   reason: '2Re 24:15: se lleva a Joaquín a Babilonia, y 2Cr 36:10 dice que el rey mandó traerlo; Da 1:2 lleva los utensilios
     a Sinar. Mismo suceso ancla.'
   sources:
@@ -70,5 +70,5 @@ stops:
   - 2-cronicas-36
   - daniel-1
   - it-nabucodonosor
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-01'
   status: verified

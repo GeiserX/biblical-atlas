@@ -58,13 +58,13 @@ stops:
     chronology: tnm
     text: 'dentro de c. 61-64 e.c. (tiempo narrativo: orden cierto, fecha aproximada)'
   note: Pablo pensaba pasar allí el invierno.
-  reason: 'Tit 3:12 solo le pide que vaya. La nota de estudio de 2Ti 4:10 cree que estuvo allí con Pablo: deducción de jw.org
+  reason: 'Tit 3:12 solo le pide que vaya. La nota de estudio sobre 2Ti 4:10 cree que estuvo allí con Pablo: deducción de jw.org
     (regla 2a).'
   sources:
   - tito-3
   - 2-timoteo-4
   - it-nicopolis
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-01'
   status: pending
 - order: 3
   place: ilirico

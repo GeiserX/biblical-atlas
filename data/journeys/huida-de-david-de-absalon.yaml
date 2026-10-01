@@ -11,13 +11,15 @@ date:
   type: narrative
   chronology: tnm
   text: 'entre 1070 y c. 1040 a.e.c. (tiempo narrativo: la rebelión de Absalón, en el reinado de David en Jerusalén)'
-companions: []
+companions:
+- ittai-el-guitita
 summary: Avisado de la rebelión, David deja Jerusalén, cruza el valle de Cedrón y sube llorando el monte de los Olivos. En
   Bahurim lo maldice Simeí. Avisado de noche, cruza el Jordán y llega a Mahanaim.
-reason: '2Sa 15:13–17:29 da las etapas en orden. Perspicacia «Absalón», párr. 14, y «David», párr. 28, que pone aquí el Salmo
-  3. Sin año: entre 1070 (lámina B7) y c. 1040 a.e.c.'
+reason: '2Sa 15:13–17:29 da las etapas; Perspicacia «Absalón», párr. 14, y «David», párr. 28, con el Salmo 3. Ittái va de
+  principio a fin (2Sa 18:2; «Ittai», núm. 1). Sin año: entre 1070 (lámina B7) y c. 1040 a.e.c.'
 sources:
 - 2-samuel-15
+- it-ittai
 - 2-samuel-16
 - 2-samuel-17
 - salmos-3
@@ -31,7 +33,7 @@ sources:
 - tnm-b7
 - tnm-tabla
 - si-3
-checked_on: '2026-09-30'
+checked_on: '2026-10-01'
 status: verified
 narrative_order:
   series: david
@@ -68,14 +70,15 @@ stops:
     type: narrative
     chronology: tnm
     text: 'entre 1070 y c. 1040 a.e.c. (tiempo narrativo: la rebelión de Absalón, en el reinado de David en Jerusalén)'
-  note: Ittái el guitita se le une; Sadoc y Abiatar devuelven el Arca a la ciudad.
+  note: Ittái el guitita, que sale de la ciudad con él, no quiere volverse; Sadoc y Abiatar devuelven el Arca a la ciudad.
   reason: '2Sa 15:23: el rey está junto al valle de Cedrón mientras su gente lo cruza hacia el desierto. Fecha: la del suceso
     david-devuelve-el-arca-a-jerusalen.'
   sources:
   - 2-samuel-15
+  - it-ittai
   - tnm-b7
   - tnm-tabla
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-01'
   status: verified
 - order: 3
   place: monte-de-los-olivos

@@ -121,14 +121,17 @@ stops:
     type: narrative
     chronology: tnm
     text: 'c. 1070 a.e.c. (tiempo narrativo: tras tomar Sion y antes de subir el Arca)'
-  note: 1Cr 14:16 dice «desde Gabaón».
+  note: 1Cr 14:16 dice «desde Gabaón», y Perspicacia «Baal-perazim» lee la huida por el camino de Gabaón y Guézer. «Guibeah»
+    advierte que Gueba y Guibeá se escriben casi igual en hebreo.
   reason: '2Sa 5:25: la persecución empieza en Gueba. Fecha: la del suceso david-vence-otra-vez-a-los-filisteos-en-el-valle-de-refaim.'
   sources:
   - 2-samuel-5
   - 1-cronicas-14
   - it-guezer
+  - it-baal-perazim
+  - it-guibeah
   - si-3
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-01'
   status: verified
 - order: 6
   place: guezer

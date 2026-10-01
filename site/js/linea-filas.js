@@ -361,5 +361,20 @@ function storyOrder(items) {
   }
 }
 
-BE.filas = { TAG, labelText, hollow, softEnds, measure, extent, packOrder, pack, place, hitOf, lwOf, rescueEdges, edgeRows, layoutLane, clickTarget, certainty, storyOrder, norm };
+/** Lo que queda elegido al pulsar una marca: la marca, o nada si es lo elegido y la misma marca que se pulsó la última
+    vez (un segundo clic la suelta, como en el mapa). Otra marca de lo mismo (otra estancia de la persona elegida) lleva
+    el cursor a ella y no suelta nada. `markSel` y `selT` son textos de selección («persona:pablo»), `selT` vacío si no
+    hay nada elegido; `markId` es la marca pulsada y `lastId` la última pulsada, o null si lo elegido llegó de otro sitio
+    (el mapa, un enlace, la búsqueda). */
+const nextSel = (markSel, markId, selT, lastId) => (markSel === selT && markId === lastId ? null : markSel);
+/** Si se ve algo de una marca: su caja (`hit`, dibujo y nombre, en px de la franja) toca el ancho de la franja `w`, y su
+    fila (de `y` a `y + row`, en px de los carriles) toca lo que enseña el panel, de `top` a `top + h`. Deja de verse
+    cuando sale entera; un píxel dentro basta para que se vea. */
+const inView = (hit, y, v) => hit[1] > 0 && hit[0] < v.w && y + v.row > v.top && y < v.top + v.h;
+/** Si lo que no tiene que ver con lo elegido se atenúa: mientras se ve una marca de lo elegido (`own`: si tiene alguna en
+    los carriles; `ownInView`: si se ve alguna) o, si no tiene marca propia (un lugar), mientras se ve algo que tiene que
+    ver con él (`relatedInView`). Fuera de la vista lo elegido, las demás recuperan su color; la selección se queda. */
+const dimOthers = ({ own, ownInView, relatedInView }) => (own ? ownInView : relatedInView);
+
+BE.filas = { TAG, labelText, hollow, softEnds, measure, extent, packOrder, pack, place, hitOf, lwOf, rescueEdges, edgeRows, layoutLane, clickTarget, certainty, storyOrder, norm, nextSel, inView, dimOthers };
 })();

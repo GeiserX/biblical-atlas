@@ -73,7 +73,7 @@ sources:
 - jy-cap-129
 - jy-cap-130
 - jy-cap-131
-checked_on: '2026-09-30'
+checked_on: '2026-10-01'
 status: verified
 stops:
 - order: 1
@@ -222,14 +222,14 @@ stops:
       month: nisan
       day: 11
   note: Lu 21:37 dice que esos días pasaba las noches en el monte de los Olivos, donde está Betania.
-  reason: Mr 11:19 solo dice que salen de la ciudad al atardecer; Betania se deduce de Mr 11:11, 12. El 11 de nisán empieza
-    al ponerse el sol. Fecha del suceso leccion-de-la-higuera-seca.
+  reason: Mr 11:19 dice que salen de la ciudad al atardecer, y sus notas de estudio y la de Lu 21:37 los llevan a Betania.
+    El 11 de nisán empieza al ponerse el sol. Fecha del suceso leccion-de-la-higuera-seca.
   sources:
   - marcos-11
   - lucas-21
   - tnm-b12-a
-  checked_on: '2026-09-30'
-  status: pending
+  checked_on: '2026-10-01'
+  status: verified
 - order: 8
   place: jerusalen
   reference: Mr 11:20–12:44
@@ -266,17 +266,66 @@ stops:
     detail:
       month: nisan
       day: 11
-  note: Da la señal de su presencia. Del 12 de nisán la Biblia no dice dónde estuvo.
+  note: Da la señal de su presencia.
   reason: Mt 24:3 y Mr 13:3 lo sientan en el monte de los Olivos frente al templo. Fecha del suceso senal-de-su-presencia.
   sources:
   - mateo-24
   - marcos-13
   - tnm-b12-a
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-01'
   status: verified
 - order: 10
+  place: betania
+  reference: Mt 26:1, 2; Mr 14:1
+  date:
+    from: 33
+    to: 33
+    precision: day
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 12 de nisán de 33 e.c.
+    detail:
+      month: nisan
+      day: 12
+  note: Vuelve a dormir aquí y pasa el día apartado con sus apóstoles, sin aparecer en público.
+  reason: 'La nota de estudio de Lu 21:37: en sus últimos días salía de noche hacia Betania. El 12 empieza al ponerse el sol
+    tras la señal de su presencia; B12-B y «Jesús», cap. 115, dan el día.'
+  sources:
+  - lucas-21
+  - mateo-26
+  - marcos-14
+  - tnm-b12-b
+  - jy-cap-115
+  checked_on: '2026-10-01'
+  status: verified
+- order: 11
+  place: betania
+  reference: Mr 14:12, 13; Lu 22:7, 8
+  date:
+    from: 33
+    to: 33
+    precision: day
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 13 de nisán de 33 e.c.
+    detail:
+      month: nisan
+      day: 13
+  note: Última noche aquí. Por la tarde envía a Pedro y a Juan a la ciudad a preparar la Pascua; él llega al atardecer.
+  reason: '«Jesús», cap. 115: la sexta y última noche en Betania abre el 13, y Jesús sigue allí cuando envía a los dos. Las notas
+    de Mr 14:12 y Lu 22:7 fechan los preparativos el 13.'
+  sources:
+  - marcos-14
+  - lucas-22
+  - tnm-b12-b
+  - jy-cap-115
+  checked_on: '2026-10-01'
+  status: verified
+- order: 12
   place: jerusalen
-  reference: Mt 26:17-29; Jn 13:1–17:26
+  reference: Mt 26:17-29; Mr 14:15; Lu 22:12; Jn 13:1–17:26
   date:
     from: 33
     to: 33
@@ -289,14 +338,17 @@ stops:
       month: nisan
       day: 14
   note: Los preparativos son del 13; la cena de la Pascua, en una habitación de arriba, al empezar el 14.
-  reason: Mt 26:18 manda preparar la Pascua en la ciudad, y Mt 26:20 la celebra al anochecer. Fecha del suceso ultima-pascua.
+  reason: Mt 26:18 manda preparar la Pascua en la ciudad, y Mt 26:20 la celebra al anochecer; Mr 14:15 y Lu 22:12 dan la
+    habitación de arriba. Fecha del suceso ultima-pascua.
   sources:
   - mateo-26
+  - marcos-14
+  - lucas-22
   - juan-13
   - tnm-b12-b
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-01'
   status: verified
-- order: 11
+- order: 13
   place: getsemani
   reference: Mt 26:30, 36-56; Jn 18:1-12
   date:
@@ -320,9 +372,9 @@ stops:
   - tnm-b12-b
   checked_on: '2026-09-30'
   status: verified
-- order: 12
+- order: 14
   place: jerusalen
-  reference: Mt 26:57–27:31; Jn 18:13–19:16
+  reference: Mt 26:57–27:31; Lu 23:7-12; Jn 18:13–19:16
   date:
     from: 33
     to: 33
@@ -340,11 +392,12 @@ stops:
   sources:
   - mateo-26
   - mateo-27
+  - lucas-23
   - juan-18
   - tnm-a7-h
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-01'
   status: verified
-- order: 13
+- order: 15
   place: golgota
   reference: Mt 27:33-56; Jn 19:17-30
   date:

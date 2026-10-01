@@ -401,7 +401,7 @@ const decorDe = (c) => (c.tipo === 'persona' ? 8 : 2);   // la franja de adorno 
 
 /** Mientras se arrastra la franja, las filas se congelan: ninguna marca cambia de fila y ningún carril encoge. */
 let hold = null;
-let desdeFranja = false, ultimaSel = '';
+let desdeFranja = false, ultimaSel = '', lastClicked = null;   // la marca pulsada la última vez (FIL.nextSel)
 function pintarLineaFija() {
   const svg = $('#linea-svg');
   const pista = $('#pista'), cuerpo = $('#linea-cuerpo');
@@ -458,7 +458,6 @@ function pintarFilas(V, med) {
   const vacios = [];
   let top = 0, shownN = 0;
   const selT = BE.selTexto(E.sel);
-  let resaltadoVisto = false, atenuadoVisto = false;
   for (const c of carrilesVista) {
     const x = carrilEls.get(c.id);
     c.top = top;
@@ -476,11 +475,7 @@ function pintarFilas(V, med) {
       c.out = FIL.layoutLane(lane, view, geom, hold);
       c.alto = c.out.nRows ? Math.max(c.out.nRows * G.row + c.decor + 3, altoRotulo()) : 0;
       if (!c.alto) vacios.push(c.nombre);
-      for (const it of c.out.visible) {
-        it._clase = dim(it.sel);
-        if (it._clase === ' resaltado' && it._hit[1] > 0 && it._hit[0] < anchoLinea) resaltadoVisto = true;
-        if (it._clase === ' atenuado') atenuadoVisto = true;
-      }
+      for (const it of c.out.visible) it._clase = dim(it.sel);
     }
     x.el.hidden = !c.alto;
     x.el.classList.toggle('par', !!c.alto && shownN++ % 2 === 1);   // el fondo alterno cuenta solo los carriles que se ven
@@ -491,9 +486,6 @@ function pintarFilas(V, med) {
   const filas = $('#linea-filas');
   filas.style.setProperty('--fila', `${G.row}px`);
   filas.classList.toggle('arrastrando', !!hold);
-  // Atenuar solo tiene sentido si en la vista hay algo que resaltar: si nada de lo que se ve tiene que ver con la
-  // selección (Edén en 1473 a.e.c.), todo va a opacidad plena en vez de quedar gris.
-  filas.classList.toggle('sin-foco', atenuadoVisto && !resaltadoVisto);
   const vac = $('#linea-vacios');
   vac.textContent = vacios.length ? `Sin nada en esta vista: ${vacios.join(', ')}.` : '';
   vac.hidden = !vacios.length;
@@ -502,6 +494,7 @@ function pintarFilas(V, med) {
   // Una selección que llega de fuera de la franja (la búsqueda, una ficha, el grafo, la dirección) baja los carriles
   // hasta su marca, una vez. Un clic en una marca nunca los mueve.
   if (selT !== ultimaSel) {
+    if (!desdeFranja) lastClicked = null;   // lo elegido llegó de otro sitio: ninguna marca recordada
     if (selT && !desdeFranja) { const it = marcasDeSel(selT)[0]; if (it) { verFila(it); med = null; } }
     ultimaSel = selT;
   }
@@ -719,8 +712,12 @@ function teclaMarca(e) {
 const vivo = (texto) => { const v = $('#linea-vivo'); if (v) v.textContent = texto; };
 
 /** Elegir una marca: el cursor entra en ella por el punto señalado (con el teclado, por el más cercano) y la marca se
-    elige y abre su ficha. Ni la escala, ni la vista, ni los carriles se mueven. Una fecha secular no mueve el cursor. */
+    elige y abre su ficha. Ni la escala, ni la vista, ni los carriles se mueven. Una fecha secular no mueve el cursor.
+    Pulsar otra vez la misma marca suelta lo elegido, como un segundo clic en el mapa, y el cursor no se mueve. Otra
+    marca de lo elegido (otra estancia de la persona) lleva el cursor a ella y no suelta nada. */
 function elegirMarca(it, tSeñalado) {
+  if (FIL.nextSel(it.sel, it.id, BE.selTexto(E.sel), lastClicked) == null) { BE.limpiarSeleccion(); vivo('Nada elegido.'); return; }
+  lastClicked = it.id;
   const t = it.sinCursor ? null : FIL.clickTarget(it, tSeñalado, E.t, { v0: E.vista[0], span: span() }, BE.DIA);
   if (t != null) setT(t);
   desdeFranja = true;
@@ -734,6 +731,7 @@ function elegirMarca(it, tSeñalado) {
 // La marca elegida fuera de la vista: un botón la trae sin cambiar la escala ni el cursor
 // ---------------------------------------------------------------------------
 function pintarIrSel(med) {
+  paintDimming(med || medidasPanel());
   const b = $('#linea-ir-sel');
   if (!b) return;
   const selT = BE.selTexto(E.sel);
@@ -769,6 +767,26 @@ function pintarIrSel(med) {
   else { b.style.left = '4px'; b.style.bottom = `${m.hLinea - cab - m.vh + 6}px`; }
   b.classList.toggle('en-rotulos', lado === 'arriba' || lado === 'abajo');
   b._it = it;
+}
+/** Atenuar solo tiene sentido mientras se ve lo elegido (FIL.dimOthers). Si su marca sale entera de la vista, de lado o
+    por arriba o por abajo del panel alto, las demás recuperan su color y la selección se queda; al volver, se atenúan
+    otra vez. Lo elegido sin marca propia (Edén en 1473 a.e.c.) atenúa mientras se ve algo que tiene que ver con él. Va
+    aquí porque el botón de traer la marca se decide con las mismas medidas: al pintar, al desplazar y al cambiar el alto. */
+function paintDimming(m) {
+  const selT = BE.selTexto(E.sel);
+  const v = { w: anchoLinea, top: m.top, h: m.vh - cabAlto, row: G.row };
+  const s = { own: false, ownInView: false, relatedInView: false };
+  let othersInView = false;
+  for (const c of carrilesVista) {
+    if (!c.lane || !c.out) continue;
+    if (selT && !s.own) s.own = c.lane.items.some((it) => it.sel === selT);
+    for (const it of c.out.visible) {
+      if (it._clase === ' atenuado') othersInView = true;
+      else if (it._clase === ' resaltado' && it._hit[1] > 0 && it._hit[0] < anchoLinea) s.relatedInView = true;
+      if (it.sel === selT && !s.ownInView) s.ownInView = FIL.inView(it._hit, topDe(it, c), v);
+    }
+  }
+  $('#linea-filas').classList.toggle('sin-foco', othersInView && !FIL.dimOthers(s));
 }
 function irASel(b) {
   const it = b._it;

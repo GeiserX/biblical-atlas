@@ -17,13 +17,16 @@ places:
 people:
 - jesus
 - caifas
+present:
+- caifas
 passages:
 - Mt 26:1-5
 - Mr 14:1, 2
 - Lu 22:1, 2
 summary: Los sacerdotes principales y los ancianos se reúnen en el patio de Caifás y deciden arrestar a Jesús con
   engaño y matarlo, pero no durante la fiesta.
-reason: La tabla A7-G da el día y el lugar. Mt 26:3-5; B12-B dice que Jesús pasó ese día con sus discípulos.
+reason: 'La tabla A7-G da el día y el lugar, y Mt 26:3-5 pone la reunión en el patio de Caifás. Jesús no está allí: B12-B
+  dice que pasó ese día con sus discípulos.'
 sources:
 - tnm-a7-g
 - mateo-26
@@ -35,5 +38,5 @@ narrative_order:
   series: a7
   order: 107
 search: Los líderes judíos planean matarlo
-checked_on: '2026-09-28'
+checked_on: '2026-10-01'
 status: verified

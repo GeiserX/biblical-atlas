@@ -7,7 +7,7 @@ date:
   from: -467
   to: -467
   precision: year
-  approx: true
+  approx: false
   type: anchored
   chronology: tnm
   text: 468 a.e.c. (del 1 de nisán al 1 de ab)
@@ -23,7 +23,7 @@ sources:
 - it-ahava
 - esdras-7
 - esdras-8
-checked_on: '2026-09-30'
+checked_on: '2026-10-01'
 status: verified
 stops:
 - order: 1
@@ -33,7 +33,7 @@ stops:
     from: -467
     to: -467
     precision: day
-    approx: true
+    approx: false
     type: anchored
     chronology: tnm
     text: 1 de nisán de 468 a.e.c.
@@ -45,7 +45,7 @@ stops:
   sources:
   - esdras-7
   - si-3
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-01'
   status: verified
 - order: 2
   place: rio-ahava
@@ -54,7 +54,7 @@ stops:
     from: -467
     to: -467
     precision: day
-    approx: true
+    approx: false
     type: anchored
     chronology: tnm
     text: 12 de nisán de 468 a.e.c. (salida hacia Jerusalén)
@@ -68,7 +68,7 @@ stops:
   - esdras-8
   - it-ahava
   - si-3
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-01'
   status: verified
 - order: 3
   place: jerusalen
@@ -77,7 +77,7 @@ stops:
     from: -467
     to: -467
     precision: day
-    approx: true
+    approx: false
     type: anchored
     chronology: tnm
     text: 1 de ab de 468 a.e.c.
@@ -90,5 +90,5 @@ stops:
   - esdras-7
   - esdras-8
   - si-3
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-01'
   status: verified

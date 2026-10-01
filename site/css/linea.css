@@ -210,8 +210,9 @@
 .m[aria-pressed="true"]::after { content: ""; position: absolute; inset: 1px -3px; border: 2px solid var(--ink); border-radius: 5px; background: var(--gold-soft); z-index: -1; }
 .m[aria-pressed="true"] .m-nombre .t { text-decoration: underline 2px; text-underline-offset: 3px; background: transparent; }
 /* Con algo elegido (be-64b.1): lo que no tiene que ver pasa a gris y hueco, pero se sigue leyendo (texto a 4,5:1, borde a
-   3:1); lo que tiene que ver conserva su color y lleva un anillo. Si nada de lo que se ve tiene que ver, no se atenúa nada
-   (sin-foco). Ningún estado cambia el ancho de un nombre: el sitio de cada nombre se midió con su letra de siempre. */
+   3:1); lo que tiene que ver conserva su color y lleva un anillo. Si la marca elegida sale entera de la vista, o nada de
+   lo que se ve tiene que ver, no se atenúa nada (sin-foco, linea.js). Ningún estado cambia el ancho de un nombre: el
+   sitio de cada nombre se midió con su letra de siempre. */
 .linea-filas:not(.sin-foco) .m.atenuado :is(.m-barra, .m-punto) { background: var(--surface-2) !important; border: 1px solid var(--ink-3) !important; }
 .linea-filas:not(.sin-foco) .m.atenuado .m-ventana { color: var(--ink-3) !important; }
 .linea-filas:not(.sin-foco) .m.atenuado .m-nombre { color: var(--ink-3) !important; }

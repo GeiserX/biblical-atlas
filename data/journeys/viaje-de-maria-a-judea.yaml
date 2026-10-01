@@ -12,7 +12,7 @@ date:
   chronology: tnm
   text: c. principios de 2 a.e.c.
 companions: []
-summary: Poco después de la visita de Gabriel, María deja Nazaret con prisa, sube a una ciudad de la región montañosa de Judá,
+summary: Poco después de la visita de Gabriel, María deja Nazaret con prisa, sube a una ciudad de Judá, en la región montañosa,
   pasa unos tres meses con Elisabet y regresa a su casa.
 reason: Lu 1:26, 39, 40 y 56 dan la salida, la llegada y la vuelta. La fecha es la de los sucesos anuncio-a-maria y maria-visita-a-elisabet,
   que siguen la tabla A7-A.
@@ -22,7 +22,7 @@ sources:
 - jy-cap-2
 - it-maria
 - it-elisabet
-checked_on: '2026-09-30'
+checked_on: '2026-10-01'
 status: verified
 stops:
 - order: 1

@@ -60,14 +60,14 @@ stops:
     type: narrative
     chronology: tnm
     text: 'entre c. 920 y c. 917 a.e.c. (tiempo narrativo: tras Ramot-Galaad y antes de la alianza con Ocozías de Israel)'
-  note: El texto dice desierto de Tecoa; la ficha es la ciudad, y proponemos añadirle ese nombre.
+  note: El texto dice desierto de Tecoa; la ficha es la ciudad, que lleva ese nombre entre los suyos.
   reason: '2Cr 20:20: salen al desierto de Tecoa, que Perspicacia «Teqoa» pone al este de la ciudad. Misma fecha narrativa
     del viaje, entre muerte-de-acab y las-naves-de-jehosafat-se-destrozan-en-ezion-gueber.'
   sources:
   - 2-cronicas-20
   - it-teqoa
   - tnm-a6-a
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-01'
   status: verified
 - order: 3
   place: valle-de-beraca
