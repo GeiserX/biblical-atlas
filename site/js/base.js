@@ -426,7 +426,8 @@ function iniciarEventos() {
       if (t.matches?.('button, a, [role="button"]')) return;
       e.preventDefault(); reproducir(!E.play); return;
     }
-    if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+    // Con Alt, ⌘ o Ctrl las flechas son del navegador (Alt + ← y ⌘ + ←, atrás): no mueven el cursor.
+    if ((e.key === 'ArrowRight' || e.key === 'ArrowLeft') && !e.altKey && !e.metaKey && !e.ctrlKey) {
       e.preventDefault();
       const dir = e.key === 'ArrowRight' ? 1 : -1;
       if (e.shiftKey) saltar(dir);

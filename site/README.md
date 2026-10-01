@@ -144,6 +144,7 @@ Los demás parámetros solo aparecen cuando no valen lo de siempre:
 | Intro | Con el foco en una marca de la línea: elegirla; el cursor entra en ella por el punto más cercano |
 | Mayúsculas + ← → | Saltar a la parada o carta anterior o siguiente |
 | Esc | Borrar la búsqueda y la selección |
+| Alt + ← →; ⌘ + ← →, ⌘ + [ ] en el Mac | Atrás y adelante del navegador. El sitio no toma las flechas con Alt, ⌘ o Ctrl, tampoco en la presentación |
 | `T` | Ampliar o reducir la línea de tiempo |
 | Alt + arrastrar sobre la línea | Regla entre dos fechas |
 
