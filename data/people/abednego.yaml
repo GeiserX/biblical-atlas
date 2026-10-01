@@ -21,6 +21,7 @@ sources:
 - it-daniel
 - it-mesac
 - daniel-1
+- it-azarias
 links:
 - title: 'Perspicacia: «Abednego»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Abednego/
@@ -52,8 +53,14 @@ relations:
     cuándo vivió.'
   checked_on: '2026-09-28'
   status: verified
-checked_on: '2026-09-28'
+checked_on: '2026-10-01'
 status: verified
+disambiguation: Azarías, compañero de Daniel, al que en Babilonia pusieron el nombre de Abednego; no es ninguno de los otros
+  Azarías que numera Perspicacia, como el hijo de Natán o el jefe efraimita hijo de Jehohanán.
 distinct_from:
 - azarias-hijo-de-natan
 - azarias-hijo-de-sadoc
+- azarias-hijo-de-jehohanan
+- jaazanias-jefe-militar
+- ocozias-de-juda
+- uzias

@@ -5,6 +5,8 @@ names:
 - name: Timná
 perspicacia: 1200004410#2
 disambiguation: Timná hija de Seír; quizá la misma que la concubina de Elifaz; no el jeque Timná.
+distinct_from:
+- timna-jeque-de-edom
 summary: Hermana de Lotán y, por tanto, hija de Seír el horeo. Perspicacia no descarta que sea Timná, la concubina de Elifaz.
 reason: Perspicacia «Timná», núm. 2; Gé 36:22.
 sources:
@@ -38,5 +40,5 @@ relations:
   reason: 'Perspicacia «Timná», núm. 2: hija de Seír, por ser hermana de Lotán (Gé 36:22).'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-01'
 status: verified

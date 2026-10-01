@@ -95,6 +95,8 @@ Para comprobar la alineación, Corinto (37,9058 N, 22,8787 E) debe caer en la co
 - Las paradas en **tiempo narrativo**, de las que sabemos el orden pero no la fecha, se reparten por igual entre las dos anclas que las rodean.
 - Entre dos paradas el marcador avanza en línea recta. Si una de las dos es narrativa, el marcador lleva un halo discontinuo, el rótulo «posición estimada» y la línea de tiempo raya el tramo que no sabemos fechar.
 - Fuera de las fechas de los datos, la ficha dice que no sabemos dónde estaba y ofrece las paradas más cercanas. Nunca se inventa una posición.
+- El mapa dibuja un solo viaje de Pablo, el que recorre en esa fecha, cada uno en su color: lo hecho en firme, lo que falta punteado y la región sin ruta conocida a trazos. Sus otros viajes no se dibujan. Sus ocho viajes van seguidos, de 34 a 65: mientras se queda en la última parada de uno, como Antioquía o Roma, se ve ese viaje entero. Antes de 34 y después de 65 no se dibuja nada de Pablo, igual que con cualquier otra persona fuera de las fechas de sus viajes.
+- Un viaje seleccionado se ve solo, entero y en su color, aunque la fecha caiga fuera de él. Seleccionar a una persona dibuja todos sus viajes: el de esa fecha en color y los demás en gris.
 
 ## Dirección de la página
 
@@ -117,7 +119,7 @@ Los demás parámetros solo aparecen cuando no valen lo de siempre:
 | `nombres` | `antiguos`, `actuales` | Nombres del mapa; sin él, los dos donde ayuda |
 | `nivel` | `1` | Filtro «Solo la Biblia y jw.org» |
 | `cartas` | `todas`, `hasta`, `personas` | Qué cartas se dibujan; sin él, las cercanas a la fecha |
-| `carriles` | lista de ids de carril o de persona | Carriles fijados en la línea de tiempo |
+| `carriles` | lista de ids de carril o de persona | Carriles fijados en la línea de tiempo. El carril «Viajes de Pablo» conserva el id `pablo`, el mismo que tenía cuando se llamaba «Pablo» |
 | `secular` | `0` | Oculta las fechas seculares |
 | `pausa` | `0` | No se para en los sucesos al reproducir |
 | `regla`, `bucle` | `a~b` | Regla entre dos fechas; tramo que se repite al reproducir |
@@ -146,6 +148,8 @@ Los demás parámetros solo aparecen cuando no valen lo de siempre:
 | Alt + arrastrar sobre la línea | Regla entre dos fechas |
 
 Las marcas de la línea son una sola parada del tabulador. La rueda sobre la regla o los carriles cambia la escala en el puntero, de milenios a días, igual que Ctrl o ⌘ con la rueda y la pinza del trackpad; con Mayúsculas, o con un gesto horizontal en el trackpad, desplaza la vista. Cuando la línea es alta, los carriles se recorren de arriba abajo con la rueda sobre sus nombres, con la barra de desplazamiento o arrastrando en vertical. Arrastrar los carriles de lado mueve el tiempo; pulsar o arrastrar en la regla mueve el cursor.
+
+El carril «Viajes de Pablo» enseña solo los viajes de Pablo: un tramo por viaje y, debajo, sus paradas. Las demás personas no tienen carril propio hasta que se eligen o se fijan desde el menú de la línea. Entonces sale uno con su nombre (la persona elegida, justo antes de «Viajes de Pablo»; la fijada, arriba) con sus paradas, los sucesos que la sitúan y dónde vivió. Cuando el nombre no cabe en una línea (en el móvil, con el carril fijado o con «Letra grande»), «Viajes de Pablo» va en dos líneas para no cortarse.
 
 ## Ficheros
 

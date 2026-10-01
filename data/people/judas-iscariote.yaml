@@ -4,13 +4,14 @@ name: Judas Iscariote
 names:
 - name: Judas Iscariote
 - name: Judas
-disambiguation: El apóstol que traicionó a Jesús; no es Judas Tadeo, el otro apóstol, ni Judas, el medio hermano
-  de Jesús.
+disambiguation: El apóstol que traicionó a Jesús; no es Judas Tadeo, el otro apóstol, ni Judas, el medio hermano de Jesús,
+  ni los demás Judas que numera Perspicacia.
 distinct_from:
 - judas-hermano-de-jesus
 - tadeo
 - judas-el-galileo
 - judas-de-damasco
+- judas-hijo-de-jose
 not_claimed:
 - Judas estaba predestinado a traicionar a Jesús.
 - 'Judas participó en la Cena del Señor: se fue antes de que Jesús la estableciera.'
@@ -95,5 +96,5 @@ history:
 - date: '2026-09-29'
   change: La relación con Jesús pasa a llevar relacion maestro, como la de los otros once apóstoles (Mr 3:14-19).
   source: marcos-3
-checked_on: '2026-09-29'
+checked_on: '2026-10-01'
 status: verified

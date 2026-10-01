@@ -10,6 +10,7 @@ disambiguation: Sacerdote en tiempos de Acaz; no el profeta hijo de Semaya ni el
   el hitita.
 distinct_from:
 - urias-el-hitita
+- uriya-hijo-de-semaya
 date:
   from: -761
   to: -745
@@ -59,5 +60,5 @@ relations:
   reason: '2Re 16:11-16: sirve en el altar del templo de Jerusalén; el texto no dice dónde vivía.'
   checked_on: '2026-09-30'
   status: verified
-checked_on: '2026-09-30'
+checked_on: '2026-10-01'
 status: verified

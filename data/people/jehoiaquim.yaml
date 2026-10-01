@@ -21,6 +21,7 @@ sources:
 - 2-reyes-23
 - 2-reyes-24
 - tnm-a6-b
+- it-eliaquim
 links:
 - title: 'Perspicacia: «Jehoiaquim»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jehoiaquim/
@@ -129,10 +130,12 @@ relations:
     medio hermanos.
   checked_on: '2026-09-30'
   status: verified
-disambiguation: Rey de Judá, hijo de Josías, que antes se llamaba Eliaquim. No es Eliaquim hijo de Abiud, antepasado de Jesús.
+disambiguation: Rey de Judá, hijo de Josías, que antes se llamaba Eliaquim. No es Eliaquim hijo de Abiud ni Eliaquim hijo
+  de Meleá, antepasados de Jesús.
 perspicacia: '1200002377'
-checked_on: '2026-09-30'
+checked_on: '2026-10-01'
 status: verified
 distinct_from:
 - eliaquim-hijo-de-abiud
 - eliaquim-hijo-de-hilquias
+- eliaquim-hijo-de-melea

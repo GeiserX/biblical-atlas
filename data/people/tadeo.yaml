@@ -7,12 +7,14 @@ names:
   note: Así lo llaman Lu 6:16 y Hch 1:13.
 - name: Judas
   note: Así lo llama Jn 14:22, que lo distingue del Iscariote.
-disambiguation: El apóstol Judas hijo de Santiago, «no el Iscariote» (Jn 14:22).
+disambiguation: El apóstol Judas hijo de Santiago, «no el Iscariote» (Jn 14:22); tampoco es ninguno de los demás Judas que
+  numera Perspicacia.
 distinct_from:
 - judas-iscariote
 - judas-hermano-de-jesus
 - judas-el-galileo
 - judas-de-damasco
+- judas-hijo-de-jose
 summary: Apóstol al que Lucas llama Judas hijo de Santiago y Juan distingue como «Judas, no el Iscariote». Tal vez el nombre
   Tadeo servía para distinguirlo del otro apóstol llamado Judas.
 reason: Perspicacia «Judas» (núm. 3) y «Tadeo» comparan las cuatro listas de apóstoles (Mt 10, Mr 3, Lu 6 y Hch 1).
@@ -62,5 +64,5 @@ history:
   change: La relación con Jesús decía «apóstol de», que con la regla «Y es el R de X» se lee al revés; pasa a «maestro», como
     pide la tabla de relaciones (Mt 10:2-4).
   source: mateo-10
-checked_on: '2026-09-29'
+checked_on: '2026-10-01'
 status: verified

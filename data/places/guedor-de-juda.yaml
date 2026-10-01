@@ -3,6 +3,7 @@ id: guedor-de-juda
 name: Guedor
 names:
 - name: Guedor
+  note: La de la montaña de Judá (Perspicacia «Guedor», núm. 4); no la de los simeonitas (núm. 5), que tiene otra ficha.
 type: city
 lat: 31.632629
 lon: 35.092145
@@ -20,5 +21,5 @@ links:
 - title: 'Perspicacia: «Guedor»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Guedor/
   type: perspicacia
-checked_on: '2026-09-29'
+checked_on: '2026-10-01'
 status: verified

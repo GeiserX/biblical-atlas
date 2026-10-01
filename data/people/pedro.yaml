@@ -13,7 +13,8 @@ names:
 - name: Simón Pedro
 - name: Barjonás
   note: «Hijo de Jonás» con la palabra aramea bar; forma que da la nota de estudio de Mt 16:17.
-disambiguation: El apóstol. No es Simón el mago de Samaria ni Simón el curtidor de Jope, con quien se hospedó.
+disambiguation: El apóstol. No es Simón el mago de Samaria, ni Simón el curtidor de Jope, con quien se hospedó, ni los demás
+  Simón que numera Perspicacia.
 date:
   from: 29
   to: 64
@@ -79,6 +80,7 @@ sources:
 - 1-corintios-15
 - galatas-1
 - galatas-2
+- it-simon
 distinct_from:
 - simon-el-mago
 - simon-el-curtidor
@@ -86,6 +88,7 @@ distinct_from:
 - simon-hijo-de-jose
 - simon-iscariote
 - symeon-niger
+- simon-el-fariseo
 not_claimed:
 - 'Que Pedro estuviera en Roma o dirigiera allí la congregación: Perspicacia dice que esa idea solo se apoya en
   tradiciones dudosas.'
@@ -317,5 +320,5 @@ history:
   change: La relación con su suegra decía que Perspicacia deduce de ella el matrimonio. Perspicacia «Pedro», párr. 4, lo da
     por 1Co 9:5 y cuenta aparte lo de la suegra (Mr 1:29-31).
   source: 1-corintios-9
-checked_on: '2026-09-29'
+checked_on: '2026-10-01'
 status: verified
