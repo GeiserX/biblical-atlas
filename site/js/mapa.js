@@ -274,7 +274,10 @@ function montarCapas() {
   map.addLayer({ id: 'be-zonas-carta', type: 'fill', source: 'be-zonas-carta', paint: { 'fill-pattern': 'be-rayado-carta', 'fill-opacity': 0.8 } });
   map.addLayer({ id: 'be-zonas-carta-borde', type: 'line', source: 'be-zonas-carta', paint: { 'line-color': color, 'line-width': 1.4, 'line-dasharray': [3, 3], 'line-opacity': 0.8 } });
   // Viajes
-  map.addLayer({ id: 'be-rastro', type: 'line', source: 'be-rastro', layout: lineas, paint: { 'line-color': color, 'line-width': ['case', ['==', ['get', 'estado'], 'actual'], 3, 2.2], 'line-opacity': ['match', ['get', 'estado'], 'futuro', 0.3, 'actual', 0.9, 0.6] } });
+  const pinturaRastro = { 'line-color': color, 'line-width': ['case', ['==', ['get', 'estado'], 'actual'], 3, 2.2], 'line-opacity': ['match', ['get', 'estado'], 'futuro', 0.3, 'actual', 0.9, 0.6] };
+  map.addLayer({ id: 'be-rastro', type: 'line', source: 'be-rastro', filter: ['!=', ['get', 'incierto'], true], layout: lineas, paint: pinturaRastro });
+  // El tramo que llega a un lugar incierto va a trazos hasta su candidato preferido o el centro de su zona (verticeRuta).
+  map.addLayer({ id: 'be-rastro-incierto', type: 'line', source: 'be-rastro', filter: ['==', ['get', 'incierto'], true], layout: { 'line-join': 'round' }, paint: { ...pinturaRastro, 'line-dasharray': [3, 2] } });
   map.addLayer({ id: 'be-rastro-flechas', source: 'be-rastro', ...flecha('line', ['match', ['get', 'estado'], 'futuro', 0.35, 'actual', 0.9, 0.5], 90) });
   // Cartas: un color por escritor; pendientes punteadas, escritas discontinuas, la seleccionada gruesa.
   map.addLayer({ id: 'be-cartas-o', type: 'line', source: 'be-cartas-o', layout: lineas, paint: { 'line-color': color, 'line-width': 1.4, 'line-dasharray': [0.4, 2.2], 'line-opacity': 0.9 } });
@@ -495,6 +498,18 @@ function ventanaViaje(v) {
   return tramo(v.fecha);
 }
 const viajeEnEpoca = (v, t) => { const tr = ventanaViaje(v); return !!tr && t >= tr[0] && t < tr[1] + 1; };
+/** Vértice de una parada en la ruta de un viaje: el punto de su lugar o, si el lugar es incierto, su candidato
+    preferido de los que se ven (seguro, favorecido por jw.org, tradición, otra propuesta, otra fuente; nunca uno
+    descartado), o el centro de su zona. { c: [lon, lat], incierto } o null si no hay ninguno. Sin esto, Perea, Efraín o
+    Sodoma dejaban su viaje sin línea. */
+const PREFERENCIA_RUTA = ['seguro', 'favorecido_nivel_1', 'tradicion', 'alternativa', 'solo_nivel_2'];
+function verticeRuta(l) {
+  if (conPunto(l)) return { c: coord(l), incierto: l.precision === 'zona' };
+  const cs = candidatosVisibles(l).map(({ c }) => c).filter((c) => PREFERENCIA_RUTA.includes(c.estado) && c.geometria?.lat != null && c.geometria?.lon != null);
+  if (!cs.length) return null;
+  const c = cs.sort((a, b) => PREFERENCIA_RUTA.indexOf(a.estado) - PREFERENCIA_RUTA.indexOf(b.estado))[0];
+  return { c: [c.geometria.lon, c.geometria.lat], incierto: true };
+}
 function geoRutas(w) {
   const V = BE.viajeActual(w);
   const hecho = [], falta = [], rastro = [];
@@ -524,7 +539,7 @@ function geoRutas(w) {
     const ver = (E.sel?.tipo === 'viaje' && E.sel.id === v.id) || (selPersona && (selPersona === quien || (v.companeros || []).includes(selPersona)))
       || (F.capas.viajes && viajeEnEpoca(v, E.t));
     if (!ver) continue;
-    const pts = [...(v.paradas || [])].sort((a, b) => a.orden - b.orden).map((p) => BE.L[p.lugar]).filter(conPunto).map(coord);
+    const pts = [...(v.paradas || [])].sort((a, b) => a.orden - b.orden).map((p) => verticeRuta(BE.L[p.lugar])).filter(Boolean);
     if (pts.length < 2) continue;
     let estado;
     const dePablo = quien === 'pablo';
@@ -535,7 +550,16 @@ function geoRutas(w) {
       estado = !tr ? 'pasado' : E.t < tr[0] ? 'futuro' : E.t >= tr[1] ? 'pasado' : 'actual';
     }
     const c = colorViaje(v.id);
-    rastro.push(linea(pts, { viaje: v.id, estado, color: estado === 'pasado' ? apagar(c, 0.45) : c }));
+    const props = { viaje: v.id, estado, color: estado === 'pasado' ? apagar(c, 0.45) : c };
+    // Un trazo por cada tramo seguido del mismo tipo: firme entre lugares con punto, a trazos si toca un lugar incierto.
+    let tramoRuta = [pts[0].c], incierto = null;
+    for (let k = 1; k < pts.length; k++) {
+      const inc = pts[k - 1].incierto || pts[k].incierto;
+      if (incierto !== null && inc !== incierto) { rastro.push(linea(tramoRuta, { ...props, incierto })); tramoRuta = [pts[k - 1].c]; }
+      incierto = inc;
+      tramoRuta.push(pts[k].c);
+    }
+    rastro.push(linea(tramoRuta, { ...props, incierto }));
   }
   return { hecho, falta, rastro, V };
 }
@@ -1335,6 +1359,7 @@ function pintarLeyenda(V, w, g) {
   else if (rastro.length) {
     filas.push('<div class="be-legend__row"><span class="leyenda-rastro"></span>Otros viajes: gris claro si ya pasaron, más claro si aún no</div>');
     // Con viajes de más de una persona, quién es cada color (Pablo lleva uno por viaje y ya tiene sus filas).
+    if (g.rastro.some((f) => f.properties.incierto)) filas.push('<div class="be-legend__row"><span class="be-legend__line be-legend__line--approx"></span>A trazos: tramo hacia un lugar incierto (su candidato preferido o el centro de su zona)</div>');
     const quienes = [...new Set(rastro.map((v) => v.persona || 'pablo'))];
     if (quienes.length > 1) {
       for (const p of quienes.filter((x) => x !== 'pablo')) {
