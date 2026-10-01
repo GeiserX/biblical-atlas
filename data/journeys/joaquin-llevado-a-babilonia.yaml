@@ -2,7 +2,7 @@
 id: joaquin-llevado-a-babilonia
 name: Joaquín, llevado a Babilonia
 person: joaquin
-reference: 2Re 24:8-16; 2Cr 36:9, 10; Da 1:1, 2
+reference: 2Re 24:8-16; 2Cr 36:9, 10; Da 1:1, 2; Eze 1:1, 2
 date:
   from: -616
   to: -616
@@ -13,16 +13,19 @@ date:
   text: 617 a.e.c.
 companions:
 - nehusta
+- ezequiel
 summary: Con Jerusalén sitiada, Joaquín se rinde a Nabucodonosor tras tres meses de reinado. Lo llevan a Babilonia con su
   madre, sus esposas, sus funcionarios, 10.000 desterrados y los tesoros del templo.
-reason: 2Re 24:8-16 y 2Cr 36:9, 10; Perspicacia «Joaquín» une a este sitio Da 1:1, 2. Fecha del suceso nabucodonosor-se-lleva-a-joaquin-a-babilonia,
-  617 a.e.c.
+reason: 2Re 24:8-16 y 2Cr 36:9, 10; Perspicacia «Joaquín» une a este sitio Da 1:1, 2. Ezequiel va entre estos desterrados (2Re 24:14-16;
+  Eze 1:1, 2 fecha su visión por el destierro de Joaquín). Fecha del suceso nabucodonosor-se-lleva-a-joaquin-a-babilonia.
 sources:
 - 2-reyes-24
 - 2-cronicas-36
 - daniel-1
 - it-joaquin
 - it-nehusta
+- it-ezequiel
+- ezequiel-1
 - si-3
 checked_on: '2026-09-30'
 status: verified

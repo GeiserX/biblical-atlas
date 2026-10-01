@@ -2,7 +2,7 @@
 id: daniel-a-babilonia
 name: Daniel y sus compañeros, llevados a Babilonia
 person: daniel
-reference: Da 1:1-7; 2Re 24:12-16; Eze 1:2
+reference: Da 1:1-7; 2Re 24:12-16
 date: &id001
   from: -616
   to: -616
@@ -15,19 +15,16 @@ companions:
 - sadrac
 - mesac
 - abednego
-- ezequiel
 summary: Con el rey Joaquín y los primeros deportados, Daniel, Hananías, Misael y Azarías son llevados de Jerusalén a Babilonia,
   donde reciben nombres babilonios y tres años de formación para servir en la corte.
 reason: El estudio 3 fecha en 617 a.e.c. el destierro con Joaquín (sucesos daniel-llevado-a-babilonia y nabucodonosor-se-lleva-a-joaquin-a-babilonia).
-  Ezequiel fue en el mismo destierro (Eze 1:2; Perspicacia «Ezequiel»).
+  Ezequiel va en el mismo convoy, como acompañante de joaquin-llevado-a-babilonia (Eze 1:2).
 sources:
 - si-3
 - it-daniel
 - it-mesac
-- it-ezequiel
 - daniel-1
 - 2-reyes-24
-- ezequiel-1
 checked_on: '2026-09-30'
 status: verified
 stops:
