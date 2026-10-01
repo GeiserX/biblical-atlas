@@ -538,7 +538,7 @@ const historia = (() => {
       Devuelve el estado que hay que escribir, o null si no ha cambiado. */
   function sello() {
     if (!BE.D) return null;
-    revisar();   // una vista que cambió sin pintarse todavía («Ahora mismo») tiene su entrada antes de escribirse
+    revisar(false);   // una vista que cambió sin pintarse todavía («Ahora mismo») tiene su entrada antes de escribirse
     const nombre = H.viewName(vista());
     ponerTitulo(nombre);
     const igual = nombre === actual.name && history.state?.visit === actual.visit && history.state?.step === actual.step;
@@ -556,17 +556,20 @@ const historia = (() => {
   let clave = null, quieto = false, pintado = false, absorber = false;
   const claveActual = () => [BE.selTexto(E.sel), ...BE.parametros.filter((x) => x.historia).map((x) => x.escribir() ?? '')].join('|');
   function quedarse() { quieto = true; pintado = false; absorber = false; }
-  /** Si la vista cambió, guarda la de antes en su entrada. Lo llaman cada fotograma y sello(), antes de escribir la
-      dirección: así ningún cambio llega a la dirección sin su entrada, se pinte o no antes. */
-  function revisar() {
+  /** Si la vista cambió, guarda la de antes en su entrada. Lo llaman cada fotograma (pintor = true) y sello(), antes
+      de escribir la dirección: así ningún cambio llega a la dirección sin su entrada, se pinte o no antes. Solo un
+      fotograma pintado cuenta como visto: si no, una pulsación entre la escritura de la dirección y el primer fotograma
+      despertaría la vista y lo que el destino pone después crearía otra entrada. */
+  function revisar(pintor) {
     const k = claveActual();
-    if (clave === null) { clave = k; return; }   // arranque: la primera vista no crea entrada
-    if (quieto || absorber) { clave = k; pintado = true; absorber = false; return; }
+    if (clave === null) { clave = k; if (pintor) pintado = true; return; }   // arranque: la primera vista no crea entrada
+    if (absorber) { clave = k; absorber = false; if (pintor) pintado = true; return; }
+    if (quieto) { clave = k; if (pintor) pintado = true; return; }
     if (k === clave) return;
     clave = k;
     empujar();
   }
-  BE.pintores.push(revisar);
+  BE.pintores.push(() => revisar(true));
   const despertar = () => { if (quieto && pintado) quieto = false; };
   window.addEventListener('pointerdown', despertar, true);
   window.addEventListener('keydown', despertar, true);

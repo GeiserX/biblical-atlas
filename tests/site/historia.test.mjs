@@ -342,3 +342,19 @@ test('with sessionStorage blocked, Back and Forward still know where they go', a
   assert.equal((await snap(page)).sel, 'lugar:corinto');
   assert.deepEqual(page.pageErrors, []);
 });
+
+test('on a slow device a tap while the tour from the landing paints still makes one entry', async () => {
+  const page = await openPage();
+  const length = await page.evaluate(() => history.length);
+  await page.evaluate(() => { window.__lento = 600; });
+  await page.locator('[data-p="rec-pedro"]').click();
+  await page.waitForTimeout(350);
+  await page.evaluate(() => window.dispatchEvent(new PointerEvent('pointerdown')));
+  await page.waitForTimeout(2000);
+  await page.evaluate(() => { window.__lento = 0; });
+  await settle(page);
+  const h = await hist(page);
+  assert.equal(h.length, length + 1, 'a tap between the address and the first frame made a second entry');
+  assert.equal(h.state.step, 1);
+  assert.equal(h.back.label, 'Atrás: la portada');
+});
