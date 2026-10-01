@@ -229,6 +229,8 @@ ol.paradas li:first-child .be-row { border-top: 0; }
 .leyenda-cand--tradicion { background: radial-gradient(circle, color-mix(in srgb, var(--cand) 60%, transparent) 1.2px, transparent 1.6px) 0 0 / 6px 6px; }
 .leyenda-cand--solo_nivel_2 { border-style: dotted; background: none; }
 .leyenda-cand--descartado_nivel_1 { border-style: dotted; background: linear-gradient(45deg, transparent 45%, var(--cand) 45% 55%, transparent 55%), linear-gradient(-45deg, transparent 45%, var(--cand) 45% 55%, transparent 55%); }
+/* La forma de una región (be-formas en mapa.js): borde a trazos y relleno claro en --tier1, como en el mapa. */
+.leyenda-forma { width: 22px; height: 14px; border-radius: 3px; border: 1.5px dashed var(--tier1); flex: none; background: color-mix(in srgb, var(--tier1) 12%, transparent); }
 .leyenda-hallazgo { width: 11px; height: 11px; margin: 0 6px; background: var(--node-hallazgo); border-radius: 2px; }
 
 /* Control de capas y paneles sobre el mapa */

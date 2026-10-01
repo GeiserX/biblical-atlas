@@ -201,6 +201,35 @@ document.addEventListener('click', (e) => {
   actualizarHistoria();
 });
 
+// ---- La forma de una zona (shape): qué es, de dónde sale y que es nuestra ----
+const RUMBOS = ['N', 'NNE', 'NE', 'ENE', 'E', 'ESE', 'SE', 'SSE'];
+const ARTICULO = { circle: 'un', ellipse: 'una', box: 'un', polygon: 'un' };
+const km = (x) => Math.round(x).toLocaleString('es-ES');
+/** «elipse de unos 80 × 20 km, alargada hacia el N», «rectángulo de unos 40 km de este a oeste y 60 de norte a sur»,
+    «contorno de 7 vértices, por Sidón, Dan, Gaza y Jope». */
+function textoForma(f) {
+  if (f.type === 'circle') return `círculo de unos ${km(f.radius_km)} km de radio`;
+  if (f.type === 'ellipse') return `elipse de unos ${km(2 * f.radii_km[0])} × ${km(2 * f.radii_km[1])} km, alargada hacia el ${RUMBOS[Math.round(f.bearing / 22.5) % 8]}`;
+  if (f.type === 'box') {
+    const [[o, s], [e, n]] = f.bbox;
+    return `rectángulo de unos ${km((e - o) * 111.2 * Math.cos(((s + n) / 2) * Math.PI / 180))} km de este a oeste y ${km((n - s) * 111.2)} de norte a sur`;
+  }
+  const nombres = (f.vertices || []).filter((v) => typeof v === 'string').map((v) => BE.L[v]?.nombre || v);
+  return `contorno de ${f.vertices.length} vértices${nombres.length ? `, por ${nombres.join(', ').replace(/, ([^,]*)$/, ' y $1')}` : ''}`;
+}
+/** Sección de la ficha de un lugar con punto que tiene forma: la forma, su razón, su cuenta y sus fuentes. */
+function formaHtml(l) {
+  const f = l.shape;
+  if (!f) return '';
+  return `<section class="be-card ficha-sec"><div class="be-card__pad"><h3 class="be-card__eyebrow">Qué abarca</h3>
+    <p class="be-card__body">En el mapa, ${ARTICULO[f.type]} ${esc(textoForma(f))}.</p>
+    ${f.reason ? `<p class="be-row__meta">${esc(f.reason)}</p>` : ''}
+    ${f.note ? `<p class="be-row__meta"><span class="insignia-calculado">calculado</span> ${esc(f.note)}</p>` : ''}
+    ${BE.insigniaHtml(f.sources)}
+    <p class="be-note"><span>Es un contorno aproximado y nuestro, sacado de lo que la fuente describe con palabras: no es una frontera trazada.</span></p>
+  </div></section>`;
+}
+
 // ---- Candidatos de ubicación (M-10, M-11, C-07, C-08, C-09) ----
 function candidatosHtml(l) {
   const todos = BE.candidatosDe(l);
@@ -212,7 +241,7 @@ function candidatosHtml(l) {
     return `<section class="be-card ficha-sec"><div class="be-card__pad"><h3 class="be-card__eyebrow">¿Dónde estaba?</h3>
       <p class="be-note be-note--uncertain"><span>No sabemos dónde estaba. Ninguna fuente da un candidato con base, así que el mapa no dibuja nada.</span></p></div></section>`;
   }
-  const geo = (g) => (g.tipo === 'zona' ? `zona de unos ${Math.round(g.radio_km)} km de radio` : g.tipo === 'franja' ? 'franja entre dos puntos' : 'punto');
+  const geo = (c) => { const g = c.geometria; return c.shape ? `zona dibujada como ${ARTICULO[c.shape.type]} ${textoForma(c.shape)}` : g.tipo === 'zona' ? `zona de unos ${Math.round(g.radio_km)} km de radio` : g.tipo === 'franja' ? 'franja entre dos puntos' : 'punto'; };
   return `<section class="be-card ficha-sec"><div class="be-card__pad">
     <h3 class="be-card__eyebrow">Candidatos y su base <b class="cuenta">${vis.length}</b></h3>
     <ul class="candidatos">${vis.map(({ c, i }) => {
@@ -220,9 +249,10 @@ function candidatosHtml(l) {
       const calculado = /calcul/i.test(c.nota || '');
       return `<li><button type="button" class="candidato${foco && foco.lugar === l.id && foco.i === i ? ' candidato--foco' : ''}" data-cand="${esc(l.id)}|${i}" aria-label="${esc(`Ver en el mapa: ${c.nombre}`)}">
         <span class="leyenda-cand leyenda-cand--${c.estado}" style="--cand:${s.color}" aria-hidden="true"></span>
-        <span class="candidato-texto"><b>${esc(c.nombre)}</b><span class="be-row__meta">${esc(geo(c.geometria))}${c.razon ? ` · ${esc(c.razon)}` : ''}</span>
-        ${c.nota ? `<span class="be-row__meta">${calculado ? '<span class="insignia-calculado">calculado</span> ' : ''}${esc(c.nota)}</span>` : ''}</span>
-        <span class="estado-cand estado-cand--${c.estado}" style="--cand:${s.color}">${esc(s.corto)}</span></button>${BE.insigniaHtml(c.fuentes)}</li>`;
+        <span class="candidato-texto"><b>${esc(c.nombre)}</b><span class="be-row__meta">${esc(geo(c))}${c.razon ? ` · ${esc(c.razon)}` : ''}</span>
+        ${c.nota ? `<span class="be-row__meta">${calculado ? '<span class="insignia-calculado">calculado</span> ' : ''}${esc(c.nota)}</span>` : ''}
+        ${c.shape ? `<span class="be-row__meta">Forma: ${esc(c.shape.reason || '')} <span class="insignia-calculado">calculado</span> ${esc(c.shape.note || '')}</span>` : ''}</span>
+        <span class="estado-cand estado-cand--${c.estado}" style="--cand:${s.color}">${esc(s.corto)}</span></button>${BE.insigniaHtml([...new Set([...(c.fuentes || []), ...(c.shape?.sources || [])])])}</li>`;
     }).join('')}</ul>
     ${ocultos ? `<p class="be-muted oculto-n2">${ocultos} ${ocultos === 1 ? 'candidato de otra fuente oculto' : 'candidatos de otras fuentes ocultos'} por el filtro «Solo la Biblia y jw.org».</p>` : ''}
     <p class="be-note be-note--uncertain"><span><b>¿Por qué no hay un punto?</b> Ni la Biblia ni jw.org dan un sitio exacto. Dibujamos las zonas y los candidatos que se citan, cada uno con su base; un punto haría creer que se sabe.</span></p>
@@ -279,6 +309,7 @@ function fichaLugar(id) {
       ${l.resumen ? `<p class="be-card__body">${esc(l.resumen)}</p>` : ''}
       ${BE.enlacesHtml(l.enlaces)}
     </div><div class="be-card__foot">${BE.estadoHtml(l.estado)}<span class="be-spacer"></span>${l.coord_url ? `<a class="be-wol" href="${esc(l.coord_url)}" ${EXTERNO} title="Solo tomamos el punto, nunca su identificación">Coordenada: ${/^openbible/.test(l.coord_fuente || '') ? 'OpenBible.info (CC BY 4.0)' : esc(String(l.coord_fuente || 'fuente').split(':')[0])}</a>` : ''}</div></section>
+    ${formaHtml(l)}
     ${candidatosHtml(l)}
     <div id="lugar-ahora" data-clave="${esc(claveAhora(id, E.t))}">${ahoraHtml(id, E.t)}</div>
     ${tira}
