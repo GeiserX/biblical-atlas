@@ -2,7 +2,7 @@
 
 Quieres que toda la Biblia se recorra como Pablo. Ya hay 223 viajes de 125 personas, con 925 paradas. Al escribirlos quedaron ocho decisiones abiertas sobre qué es un viaje, qué parada cuenta, quién acompaña y cuánto tiempo se dibuja. En cada una aplicamos un valor por defecto para no parar. Aquí están con opciones por letras, un ejemplo de los datos de hoy para cada opción, lo que cuesta y lo que recomendamos.
 
-Este documento no cambia `data/`, `site/` ni `scripts/`. Las cifras salen de los datos y el código de `main`; las del mapa, de un navegador real con esos mismos datos.
+Este documento no cambia [`data/`](../../data/), [`site/`](../../site/) ni [`scripts/`](../../scripts/). Las cifras salen de los datos y el código de `main`; las del mapa, de un navegador real con esos mismos datos.
 
 ## 1. Grupos y objetos que viajan sin ficha de persona
 
@@ -13,9 +13,9 @@ Este documento no cambia `data/`, `site/` ni `scripts/`. Las cifras salen de los
 **B. Un campo `group` opcional.** El cambio de esquema:
 
 - `person` puede ser `null` si el viaje lleva `group`, un texto de 40 palabras como mucho («el arca del pacto», «los 600 benjaminitas»). Uno de los dos es obligatorio.
-- `scripts/validate.py:1402` y `scripts/build.py:508` comprueban `person` solo si no es `null`, y dan error si no hay ni `person` ni `group`. `build.py` pasa `group` al sitio como `grupo`.
-- En el sitio, hoy un viaje sin `persona` es de Pablo (`trayectorias.js:149-150`), así que el Arca saldría como un viaje de Pablo. Hay que darle a cada viaje de grupo su propia clave de dueño (`grupo:<id del viaje>`) y cambiar las 11 líneas que leen `v.persona || 'pablo'`: `trayectorias.js:150`, `mapa.js:101, 135, 535, 922, 1344, 1365`, `grafo.js:68, 299, 305` y `lectura.js:48`. Un grupo no lleva marcador de viajero; la leyenda y la ficha dicen el texto de `group` donde hoy va el nombre.
-- Dos pruebas: un viaje con `group` en `scripts/test_validate.py` y en `tests/site/notes.test.mjs`, que recorre todos los viajes.
+- [`scripts/validate.py:1402`](../../scripts/validate.py) y [`scripts/build.py:508`](../../scripts/build.py) comprueban `person` solo si no es `null`, y dan error si no hay ni `person` ni `group`. `build.py` pasa `group` al sitio como `grupo`.
+- En el sitio, hoy un viaje sin `persona` es de Pablo ([`trayectorias.js:149-150`](../../site/js/trayectorias.js)), así que el Arca saldría como un viaje de Pablo. Hay que darle a cada viaje de grupo su propia clave de dueño (`grupo:<id del viaje>`) y cambiar las 11 líneas que leen `v.persona || 'pablo'`: `trayectorias.js:150`, [`mapa.js`](../../site/js/mapa.js) (101, 135, 535, 922, 1344 y 1365), [`grafo.js`](../../site/js/grafo.js) (68, 299 y 305) y [`lectura.js:48`](../../site/js/lectura.js). Un grupo no lleva marcador de viajero; la leyenda y la ficha dicen el texto de `group` donde hoy va el nombre.
+- Dos pruebas, un viaje con `group` en [`scripts/test_validate.py`](../../scripts/test_validate.py) y en [`tests/site/notes.test.mjs`](../../tests/site/notes.test.mjs), que recorre todos los viajes.
 
 Un viaje completo con el campo nuevo:
 
@@ -184,7 +184,7 @@ Con la misma forma vuelven Juan Marcos a `primer-viaje` (1 a 5, Hch 13:5, 13), R
 
 ## 4. Tramos largos
 
-**Hoy.** El mapa dibuja el viaje de cualquiera que no sea Pablo durante toda su fecha y un año más (`viajeEnEpoca`, `mapa.js:497`). 54 de los 215 viajes que no son de Pablo abarcan 20 años o más: la expulsión de Agar va de 1913 a 1843 a.e.c.; 16 viajes desde 2 Samuel 10 comparten de 1070 a c. 1040; 7 de Jueces comparten de c. 1450 a c. 1173, 277 años. Medido en un navegador: en 1070 a.e.c. el mapa dibuja 20 viajes a la vez, en 1051 a.e.c. 17, y en cualquier año de c. 1450 a c. 1173 al menos 7.
+**Hoy.** El mapa dibuja el viaje de cualquiera que no sea Pablo durante toda su fecha y un año más (`viajeEnEpoca`, `mapa.js:497`). 54 de los 215 viajes que no son de Pablo abarcan 20 años o más: la expulsión de Agar va de 1913 a 1843 a.e.c.; 16 viajes desde 2 Samuel 10 comparten de 1070 a c. 1040; 7 de Jueces comparten de c. 1450 a c. 1173, 277 años. En un navegador real, el mapa dibuja 20 viajes a la vez en 1070 a.e.c., 17 en 1051 y al menos 7 en cualquier año de c. 1450 a c. 1173.
 
 **A. Como hoy.** No cuesta nada. Así se ve 1051 a.e.c.:
 
@@ -196,7 +196,7 @@ Con la misma forma vuelven Juan Marcos a `primer-viaje` (1 a 5, Hch 13:5, 13), R
 
 **C. Acortar a mano.** Agar acaba en 1913 y la parada de Parán lleva su propio tramo; los viajes de David esperan a que el carril de sucesos dé fechas más finas. Cuesta un fichero ahora y decenas después, y solo arregla lo que se edita.
 
-**Recomendamos B.** Arregla los 54 a la vez sin tocar un dato, y el mapa deja de enseñar una guerra de Joab veinte años después de que acabara.
+**Recomendamos B.** Arregla los 54 a la vez sin tocar un dato. Hoy el mapa sigue enseñando la guerra de Joab contra Ammón veinte años después de acabar.
 
 ## 5. Los sucesos mandan, salvo con Pablo
 
@@ -277,7 +277,7 @@ Cada una, contrastada con el texto de la TNM y con Perspicacia. Lo que dicen va 
 
 **Recomendamos A.** jw.org dice que no se sabe, y nunca ponemos un punto falso.
 
-**8b. Tahpanhés** (Jer 43:7). Perspicacia la sitúa en el ángulo nordeste del delta y cuenta que algunos geógrafos la identifican con Tell Defneh, a unos 50 km al sur-sudoeste de Port Said, por el nombre que le da la Septuaginta. Hoy tiene el punto de Tell Defenneh de OpenBible con precisión incierta.
+**8b. Tahpanhés** (Jer 43:7). Perspicacia la sitúa en el ángulo nordeste del delta. Cuenta que, por el nombre griego de la Septuaginta, algunos geógrafos la ponen en Tell Defneh, cerca de Port Said, pero no lo hace suyo. Hoy tiene el punto de Tell Defenneh de OpenBible con precisión incierta.
 
 - **A. El punto, como hoy.**
 - **B. Sin punto, con Tell Defneh como candidato que jw.org solo refiere.** Cuesta un fichero de lugar. La línea llega al mismo sitio, a trazos.
