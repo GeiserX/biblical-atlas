@@ -47,8 +47,10 @@
 .date-picker__year { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
 .date-picker__era { display: inline-flex; gap: 4px; }
 .date-picker__year-value { margin: 0; font: 600 var(--fs-2xl)/1 var(--font-serif); color: var(--gold-ink); font-variant-numeric: tabular-nums; }
-.date-picker__steps { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
-.date-picker__steps-side { display: grid; grid-template-columns: repeat(4, 1fr); gap: 4px; }
+/* The eight year steps go in two rows of four (minus above, plus below) at every width. Side by side, each button got
+   44 px in the 420 px panel: «−1000» touched its border and with large type spilled out of it. */
+.date-picker__steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 4px; }
+.date-picker__steps-side { display: contents; }
 .date-picker__step { min-width: 0; height: 36px; padding: 0 2px; border: 1px solid var(--line-2); border-radius: var(--r-md); background: var(--surface); color: var(--ink); font-weight: 600; font-variant-numeric: tabular-nums; cursor: pointer; }
 .date-picker__step:hover:not([disabled]) { border-color: var(--gold-ink); }
 .date-picker__step[disabled] { opacity: .45; cursor: default; }
@@ -89,11 +91,6 @@
   .date-picker__close { width: 44px; height: 44px; }
   .date-picker__option { min-width: 44px; }
   .date-picker__grid--days { grid-template-columns: repeat(auto-fill, minmax(44px, 1fr)); }
-}
-/* On a phone the eight year steps go in two rows of four (minus above, plus below), so each stays wider than 44 px. */
-@media (max-width: 480px) {
-  .date-picker__steps { grid-template-columns: repeat(4, 1fr); gap: 4px; }
-  .date-picker__steps-side { display: contents; }
 }
 @media (max-width: 380px) {
   .date-picker__moments--milestones { grid-template-columns: 1fr; }
