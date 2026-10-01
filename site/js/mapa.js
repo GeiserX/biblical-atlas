@@ -91,14 +91,33 @@ const PALETA_ESCRITOR = leerLista('--cartas', ['#1f3b30', '#b34962', '#a75733', 
 const hash = (s) => [...String(s)].reduce((h, c) => (h * 31 + c.charCodeAt(0)) >>> 0, 7);
 const claveFecha = (f) => [f?.desde ?? 1e6, f?.hasta ?? 1e6];
 let coloresViaje = null, coloresEscritor = null;
+/** Pablo lleva un color por viaje, en orden. Cualquier otra persona, un solo color para todos sus viajes, distinto del
+    de las personas (y de los viajes de Pablo) cuyos viajes se dibujan a la vez que alguno de los suyos: así, con Saúl,
+    David y Samuel en el mapa, cada color es una persona. Se reparte por orden de su primer viaje; si las diez tintas
+    están cogidas, repite la suya de siempre. */
 function calcularColores() {
   coloresViaje = new Map();
   const porPersona = new Map();
   for (const v of BE.D.viajes) { const p = v.persona || 'pablo'; if (!porPersona.has(p)) porPersona.set(p, []); porPersona.get(p).push(v); }
-  for (const [p, vs] of porPersona) {
-    vs.sort((a, b) => claveFecha(a.fecha)[0] - claveFecha(b.fecha)[0] || claveFecha(a.fecha)[1] - claveFecha(b.fecha)[1] || a.id.localeCompare(b.id));
-    const base = p === 'pablo' ? 0 : 3 + (hash(p) % (PALETA.length - 3));
-    vs.forEach((v, i) => coloresViaje.set(v.id, PALETA[(base + i) % PALETA.length]));
+  const orden = (a, b) => claveFecha(a.fecha)[0] - claveFecha(b.fecha)[0] || claveFecha(a.fecha)[1] - claveFecha(b.fecha)[1] || a.id.localeCompare(b.id);
+  // Tramos con el año de margen con que la capa «Viajes» los dibuja (viajeEnEpoca).
+  const tramoDibujo = (v) => { const tr = tramo(v.fecha); return tr ? [tr[0], tr[1] + 1] : null; };
+  const ocupados = [];   // [tramo, índice de la tinta]
+  (porPersona.get('pablo') || []).sort(orden).forEach((v, i) => {
+    coloresViaje.set(v.id, PALETA[i % PALETA.length]);
+    const tr = tramoDibujo(v);
+    if (tr) ocupados.push([tr, i % PALETA.length]);
+  });
+  const otras = [...porPersona.entries()].filter(([p]) => p !== 'pablo').map(([p, vs]) => [p, vs.sort(orden)])
+    .sort((a, b) => orden(a[1][0], b[1][0]) || a[0].localeCompare(b[0]));
+  for (const [p, vs] of otras) {
+    const trs = vs.map(tramoDibujo).filter(Boolean);
+    const cogidas = new Set(ocupados.filter(([t]) => trs.some((x) => x[0] < t[1] && t[0] < x[1])).map(([, k]) => k));
+    const propia = 3 + (hash(p) % (PALETA.length - 3));
+    let k = propia;
+    for (let d = 0; d < PALETA.length; d++) { const c = (propia + d) % PALETA.length; if (!cogidas.has(c)) { k = c; break; } }
+    vs.forEach((v) => coloresViaje.set(v.id, PALETA[k]));
+    trs.forEach((tr) => ocupados.push([tr, k]));
   }
   // Escritores por la fecha de su primera carta; Pablo, el primero, lleva el color del tiempo (--gold), como el cursor.
   coloresEscritor = new Map();
@@ -1313,7 +1332,16 @@ function pintarLeyenda(V, w, g) {
     filas.push('<div class="be-legend__row"><span class="be-legend__line be-legend__line--todo"></span>Lo que falta del viaje</div>');
   }
   if (S) filas.push(`<div class="be-legend__row"><span class="be-legend__line${S === V ? ' be-legend__line--todo' : ''}"></span>${S === V ? 'Solo este viaje' : 'Solo este viaje, completo'}; vuelve a pulsarlo para ver todos</div>`);
-  else if (rastro.length) filas.push('<div class="be-legend__row"><span class="leyenda-rastro"></span>Otros viajes: gris claro si ya pasaron, más claro si aún no</div>');
+  else if (rastro.length) {
+    filas.push('<div class="be-legend__row"><span class="leyenda-rastro"></span>Otros viajes: gris claro si ya pasaron, más claro si aún no</div>');
+    // Con viajes de más de una persona, quién es cada color (Pablo lleva uno por viaje y ya tiene sus filas).
+    const quienes = [...new Set(rastro.map((v) => v.persona || 'pablo'))];
+    if (quienes.length > 1) {
+      for (const p of quienes.filter((x) => x !== 'pablo')) {
+        filas.push(`<div class="be-legend__row"><span class="leyenda-viajero" style="--viajero:${colorPersona(p)}"></span>${esc(nombrePersona(p))}</div>`);
+      }
+    }
+  }
   if (escritores.length) {
     filas.push(`<div class="be-legend__row"><span class="be-legend__line be-legend__line--letter" style="--carta:${colorEscritor(escritores[0])}"></span>Carta ${escritores.length > 1 ? `de ${esc(nombrePersona(escritores[0]))}` : 'escrita cerca de esta fecha'}</div>`);
     for (const e of escritores.slice(1)) filas.push(`<div class="be-legend__row"><span class="be-legend__line be-legend__line--letter" style="--carta:${colorEscritor(e)}"></span>Carta de ${esc(nombrePersona(e))}</div>`);

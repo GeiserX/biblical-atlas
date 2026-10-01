@@ -70,6 +70,7 @@
 .leyenda { position: absolute; left: 14px; bottom: 28px; z-index: 2; max-height: calc(100% - 120px); overflow: auto; }   /* con el mapa bajo (línea ampliada), la leyenda se desplaza en vez de tapar los botones del mapa */
 .leyenda .be-card__eyebrow { margin-bottom: 2px; }
 .leyenda-rastro { width: 26px; border-top: 2px solid var(--ink-3); opacity: .5; }
+.leyenda-viajero { width: 26px; border-top: 3px solid var(--viajero, var(--ink-3)); }
 .nota-carta { margin: 10px 0 0; font-size: var(--fs-sm); }
 .be-legend__line--pendiente { border-top: 2px dotted var(--gold); opacity: .85; }
 .leyenda-estimada { width: 18px; height: 18px; margin: 0 4px; border-radius: 50%; border: 2px dashed var(--accent); background: color-mix(in srgb, var(--accent) 8%, transparent); }
