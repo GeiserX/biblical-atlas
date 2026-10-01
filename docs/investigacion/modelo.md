@@ -502,6 +502,7 @@ Escribe el aviso y sale con 0. Cada aviso tiene un código:
 | `no_reference` | Una relación sin referencia (sección 10). | 68 |
 | `title_type` | Un suceso sin `type` cuyo título empieza por «Nace», «Nacimiento», «Muere» o «Muerte»: el sitio lo lee del título. | 2 |
 | `type_without_role` | Un suceso con `type` y sin el papel de ese tipo, salvo con `roles: {}`. | 0 |
+| `shared_point` | Un río, un mar o un valle a menos de 0,5 km de otro lugar que no es una región, y su `coord_note` no nombra a ese lugar. | 4 |
 
 Son 225 avisos. Cada uno se va con una decisión de la sección 16.
 

@@ -86,7 +86,7 @@ CAMPOS_PAPEL = {"role", "date", "place"}
 # Avisos (modelo.md, sección 13). Escriben y salen con 0; con --strict, fallan.
 WARNING_CODES = ("wrong_owner", "pair_twice", "outside_pending", "unlisted_caption", "kin_without_word",
                  "bare_company", "no_office", "no_certainty", "same_as_owner", "no_reference", "title_type",
-                 "type_without_role")
+                 "type_without_role", "shared_point")
 # «De aviso a error»: cuando main llega a 0 avisos de un código, el código se añade aquí, en un cambio revisado, y ya
 # no vuelve atrás. Un código de esta lista sale como error.
 PROMOTED = set()
@@ -1566,6 +1566,7 @@ def validar(datos):
                 validar_recorrido(limpio_, donde, err)
     check_relations(datos, err, warn)
     validar_consta_desde(datos, err)
+    puntos_compartidos(datos, warn)
     validar_claves_perspicacia(datos, err)
     validar_wol(datos, err)
     errores.extend(integrity(datos))
@@ -1652,6 +1653,37 @@ def validar_claves_perspicacia(datos, err):
         if formas == {True, False}:
             err(f"data/people: el documento {doc} sale como clave sin número y con número; si el artículo trata de "
                 f"varias personas, todas llevan su número de entrada")
+
+
+# Un lugar largo (río, mar, valle) se rotula con un solo punto: si cae encima de otro lugar, el mapa da el sitio a uno y
+# el otro nombre desaparece. Las regiones no cuentan, porque el mapa las rotula aparte (REGION en site/js/mapa.js).
+LUGARES_LARGOS = {"river", "sea", "valley"}
+ROTULO_APARTE = {"region", "province", "country", "kingdom", "desert", "plain", "valley"}
+RADIO_COMPARTIDO_KM = 0.5
+
+
+def _km(a, b):
+    la1, lo1, la2, lo2 = map(math.radians, (a["lat"], a["lon"], b["lat"], b["lon"]))
+    h = math.sin((la2 - la1) / 2) ** 2 + math.cos(la1) * math.cos(la2) * math.sin((lo2 - lo1) / 2) ** 2
+    return 2 * 6371.0 * math.asin(math.sqrt(min(1.0, h)))
+
+
+def puntos_compartidos(datos, warn):
+    """Aviso shared_point: un río, mar o valle a menos de 0,5 km de otro lugar que no sea una región, salvo que su
+    coord_note nombre a ese lugar (con su nombre o uno de sus names)."""
+    con_punto = [o for o in datos["places"] if _numero(o.get("lat")) and _numero(o.get("lon"))]
+    for o in con_punto:
+        if o.get("type") not in LUGARES_LARGOS:
+            continue
+        nota = str(o.get("coord_note") or "").lower()
+        for q in con_punto:
+            if q is o or q.get("type") in ROTULO_APARTE or _km(o, q) >= RADIO_COMPARTIDO_KM:
+                continue
+            nombres = {str(q.get("name") or "")} | {str(n.get("name") or "") for n in q.get("names") or []}
+            if any(n and n.lower() in nota for n in nombres):
+                continue
+            warn("shared_point", f"{o['_fichero']}: su punto está a {_km(o, q):.2f} km del de {q.get('id')} y "
+                                 f"coord_note no lo nombra; muévelo con su razón o explica en coord_note por qué lo comparte")
 
 
 def validar_consta_desde(datos, err):

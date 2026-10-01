@@ -101,5 +101,47 @@ class SinWol(unittest.TestCase):
                 self.assertTrue(e.get("source") and e.get("reason"))
 
 
+def avisos_punto(*lugares):
+    out = []
+    datos = {"places": [dict(l, _fichero=f"data/places/{l['id']}.yaml") for l in lugares]}
+    validate.puntos_compartidos(datos, lambda codigo, texto: out.append((codigo, texto)))
+    return out
+
+
+class PuntoCompartido(unittest.TestCase):
+    RIO = {"id": "rio-x", "name": "Río X", "names": [{"name": "Río X"}], "type": "river", "lat": 33.5, "lon": 36.3,
+           "coord_note": "Punto representativo."}
+    CIUDAD = {"id": "ciudad-y", "name": "Ciudad Y", "names": [{"name": "Ciudad Y"}, {"name": "Yeta"}], "type": "city",
+              "lat": 33.502, "lon": 36.3}
+
+    def test_rio_encima_de_una_ciudad_avisa(self):
+        a = avisos_punto(self.RIO, self.CIUDAD)
+        self.assertEqual([c for c, _ in a], ["shared_point"], a)
+        self.assertIn("data/places/rio-x.yaml", a[0][1])
+        self.assertIn("ciudad-y", a[0][1])
+
+    def test_valle_y_mar_tambien(self):
+        for tipo in ("valley", "sea"):
+            with self.subTest(tipo=tipo):
+                self.assertEqual(len(avisos_punto(dict(self.RIO, type=tipo), self.CIUDAD)), 1)
+
+    def test_la_nota_que_nombra_al_otro_lugar_lo_quita(self):
+        for nota in ("Mismo punto que Ciudad Y.", "Comparte punto con yeta, su otro nombre."):
+            with self.subTest(nota=nota):
+                self.assertEqual(avisos_punto(dict(self.RIO, coord_note=nota), self.CIUDAD), [])
+
+    def test_una_region_no_cuenta(self):
+        self.assertEqual(avisos_punto(self.RIO, dict(self.CIUDAD, type="region")), [])
+
+    def test_a_medio_kilometro_o_mas_no_avisa(self):
+        self.assertEqual(avisos_punto(self.RIO, dict(self.CIUDAD, lat=33.5046)), [])
+
+    def test_dos_ciudades_juntas_no_son_cosa_de_esta_regla(self):
+        self.assertEqual(avisos_punto(dict(self.RIO, type="city"), self.CIUDAD), [])
+
+    def test_un_lugar_sin_punto_no_rompe(self):
+        self.assertEqual(avisos_punto(self.RIO, dict(self.CIUDAD, lat=None, lon=None)), [])
+
+
 if __name__ == "__main__":
     unittest.main()
