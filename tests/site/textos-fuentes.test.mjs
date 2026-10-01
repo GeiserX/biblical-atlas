@@ -5,8 +5,8 @@
 //
 //   node --test tests/site/textos-fuentes.test.mjs
 //
-// No browser, no data. The working rules for contributors (CONTRIBUTING.md, docs/investigacion/, docs/decisiones.md,
-// the «De dónde salen los datos» rules of docs/how-it-works.md, the validator) are not texts for readers and are not read here.
+// No browser, no data. The working rules for contributors (CONTRIBUTING.md, docs/investigacion/, docs/decisiones.md, the
+// validator) are not texts for readers and are not read here.
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
@@ -14,7 +14,7 @@ import { fileURLToPath } from 'node:url';
 
 const ROOT = fileURLToPath(new URL('../../', import.meta.url));
 const LECTORES = ['site/index.html', 'site/acerca.html', 'site/calendario.html', 'site/js', 'README.md', 'mkdocs.yml',
-  'docs/index.md', 'docs/getting-started.md', 'docs/usage.md'];
+  'docs/index.md', 'docs/getting-started.md', 'docs/usage.md', 'docs/how-it-works.md'];
 // Sentences that name where the content comes from, or say it is not copied.
 const PROHIBIDAS = [
   /\bno (?:se )?copia(?:mos|n)?\b/i, /\bnunca (?:se )?copia(?:mos)?\b/i, /\bnada se copia\b/i, /\bsolo enlaza\b/i,
@@ -43,7 +43,7 @@ test('no text for readers says where the content comes from or that it is not co
 });
 
 test('each of those texts still says that facts link to their sources', () => {
-  for (const rel of ['site/index.html', 'site/acerca.html', 'README.md', 'docs/index.md', 'mkdocs.yml']) {
+  for (const rel of ['site/index.html', 'site/acerca.html', 'README.md', 'docs/index.md', 'mkdocs.yml', 'docs/how-it-works.md']) {
     assert.match(fs.readFileSync(ROOT + rel, 'utf8'), /enlaza(?:do)? a su fuente|enlazado a su fuente|enlaza a la página/, rel);
   }
 });
