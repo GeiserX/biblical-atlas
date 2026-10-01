@@ -138,6 +138,9 @@ test('each view is named by what it shows, the most specific first', () => {
   assert.equal(H.viewName({ connection: ['Loida', null], date }), 'Conexión desde Loida');
   assert.equal(H.viewName({ connection: [null, null], date }), 'Conexión entre dos');
   assert.equal(H.viewName({ graph: 'Pablo', selection: 'Pablo', date }), 'Grafo de Pablo');
+  // The graph covers the map: it names the view over the tour or the reading open behind it.
+  assert.equal(H.viewName({ graph: 'Las cartas de Pablo', tour: { name: 'Las cartas de Pablo', stop: 2 }, reading: { chapter: 'Hechos 16' }, date }), 'Grafo de Las cartas de Pablo');
+  assert.equal(H.viewName({ connection: ['Loida', 'Pablo'], reading: { chapter: 'Hechos 16' }, date }), 'Conexión entre Loida y Pablo');
   assert.equal(H.viewName({ graph: '', date }), 'Grafo de personas');
   assert.equal(H.viewName({ sync: 'Corinto', date }), 'Sincronía de Corinto');
   assert.equal(H.viewName({ sync: '', date }), 'Sincronía');

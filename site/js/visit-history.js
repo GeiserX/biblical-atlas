@@ -97,14 +97,15 @@ function buttonLabel(dir, { can, name }) {
     { landing, reading: { chapter, passage }, tour: { name, stop }, connection: [a, b], graph, sync, now, selection, date }. */
 function viewName(v = {}) {
   if (v.landing) return 'la portada';
-  if (v.reading?.chapter) return `Lectura de ${v.reading.chapter}${v.reading.passage ? `, pasaje ${v.reading.passage}` : ''}`;
-  if (v.tour?.name) return v.tour.stop ? `${v.tour.name}, parada ${v.tour.stop}` : v.tour.name;
+  // The graph and the connection cover the whole map, so they name the view over a reading or a tour behind them.
+  if (v.graph !== undefined && v.graph !== null) return v.graph ? `Grafo de ${v.graph}` : 'Grafo de personas';
   if (v.connection) {
     const [a, b] = v.connection;
     if (a && b) return `Conexión entre ${a} y ${b}`;
     return a || b ? `Conexión desde ${a || b}` : 'Conexión entre dos';
   }
-  if (v.graph !== undefined && v.graph !== null) return v.graph ? `Grafo de ${v.graph}` : 'Grafo de personas';
+  if (v.reading?.chapter) return `Lectura de ${v.reading.chapter}${v.reading.passage ? `, pasaje ${v.reading.passage}` : ''}`;
+  if (v.tour?.name) return v.tour.stop ? `${v.tour.name}, parada ${v.tour.stop}` : v.tour.name;
   if (v.sync !== undefined && v.sync !== null) return v.sync ? `Sincronía de ${v.sync}` : 'Sincronía';
   if (v.now) return v.date ? `Ahora mismo en ${v.date}` : 'Ahora mismo';
   if (v.selection) return v.selection;
