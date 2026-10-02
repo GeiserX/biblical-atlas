@@ -882,6 +882,10 @@ test('every traveller lane carries one bar per journey with its stops below, lik
       const V = await travellerLane(p, id);
       const rows = (xs) => xs.filter((x) => x.row != null).map((x) => x.row);
       const [rb, rs, rr] = [rows(V.bars), rows(V.stops), rows(V.rest)];
+      // Every mark of the lane has its row, so an unpacked group cannot hide behind an empty list below.
+      const noRow = [...V.bars, ...V.stops, ...V.rest].filter((x) => x.row == null).map((x) => x.sel);
+      if (noRow.length) bad.push(`${noRow.length} marks without a row of the world: ${noRow.slice(0, 4).join(', ')}`);
+      if (!rb.length || !rs.length || !rr.length) bad.push(`an empty band of rows: bars ${rb.length}, stops ${rs.length}, others ${rr.length}`);
       if (rb.length && rs.length && Math.max(...rb) >= Math.min(...rs)) bad.push(`a bar row ${Math.max(...rb)} is not above the stop rows from ${Math.min(...rs)}`);
       if (rs.length && rr.length && Math.max(...rs) >= Math.min(...rr)) bad.push(`a stop row ${Math.max(...rs)} is not above the other rows from ${Math.min(...rr)}`);
       const inView = V.bars.filter((x) => x.visible).length;
