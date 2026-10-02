@@ -13,7 +13,9 @@ narrative_order:
   series: 1-samuel
   order: 6010
   elapsed:
-    reason: '1Sa 6:10-12: hacen lo que les dicen y sueltan la carreta. El texto no dice cuántos días tardan.'
+    since: los-filisteos-capturan-el-arca
+    months: 7
+    reason: '1Sa 6:1: el Arca pasa siete meses en tierra filistea, desde que la capturan hasta que las vacas la sacan hacia Bet-Semes.'
 places:
 - bet-semes
 - ecron
