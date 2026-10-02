@@ -51,6 +51,7 @@ stops:
   status: verified
 - order: 2
   place: hala
+  branches_from: 1
   reference: 2Re 17:6; 18:11
   date:
     from: -739
@@ -61,7 +62,7 @@ stops:
     chronology: tnm
     text: 740 a.e.c.
   note: Uno de los destinos. Perspicacia no sabe dónde estaba.
-  reason: 2Re 17:6 y 18:11. Suceso asiria-destierra-a-israel; Perspicacia «Halah».
+  reason: 2Re 17:6 y 18:11. Suceso asiria-destierra-a-israel; Perspicacia «Halah». Se llega desde Samaria a la vez que a los otros destinos, porque el texto los enumera sin ruta.
   sources:
   - 2-reyes-17
   - 2-reyes-18
@@ -70,6 +71,7 @@ stops:
   status: verified
 - order: 3
   place: habor
+  branches_from: 1
   reference: 2Re 17:6; 18:11
   date:
     from: -739
@@ -80,7 +82,7 @@ stops:
     chronology: tnm
     text: 740 a.e.c.
   note: Junto al río Gozán. Perspicacia da dos propuestas y no elige.
-  reason: 2Re 17:6 y 18:11. Suceso asiria-destierra-a-israel; Perspicacia «Habor».
+  reason: 2Re 17:6 y 18:11. Suceso asiria-destierra-a-israel; Perspicacia «Habor». Se llega desde Samaria a la vez que a los otros destinos, porque el texto los enumera sin ruta.
   sources:
   - 2-reyes-17
   - 2-reyes-18
@@ -89,6 +91,7 @@ stops:
   status: verified
 - order: 4
   place: gozan
+  branches_from: 1
   reference: 2Re 17:6; 18:11
   date:
     from: -739
@@ -99,7 +102,7 @@ stops:
     chronology: tnm
     text: 740 a.e.c.
   note: El río junto al que estaba Habor.
-  reason: 2Re 17:6 y 18:11. Suceso asiria-destierra-a-israel; Perspicacia «Gozán».
+  reason: 2Re 17:6 y 18:11. Suceso asiria-destierra-a-israel; Perspicacia «Gozán». Se llega desde Samaria a la vez que a los otros destinos, porque el texto los enumera sin ruta.
   sources:
   - 2-reyes-17
   - 2-reyes-18
@@ -108,6 +111,7 @@ stops:
   status: verified
 - order: 5
   place: media
+  branches_from: 1
   reference: 2Re 17:6; 18:11
   date:
     from: -739
@@ -117,8 +121,8 @@ stops:
     type: anchored
     chronology: tnm
     text: 740 a.e.c.
-  note: Llegada. Ciudades de los medos, algunas ya vasallas de Asiria.
-  reason: 2Re 17:6 y 18:11. Suceso asiria-destierra-a-israel; Perspicacia «Medos, Media».
+  note: Otro de los destinos. Ciudades de los medos, algunas ya vasallas de Asiria.
+  reason: 2Re 17:6 y 18:11. Suceso asiria-destierra-a-israel; Perspicacia «Medos, Media». Se llega desde Samaria a la vez que a los otros destinos, porque el texto los enumera sin ruta.
   sources:
   - 2-reyes-17
   - 2-reyes-18
