@@ -869,6 +869,58 @@ test('1440: with an event selected the other marks keep their shape and their co
   await p.context().close();
 });
 
+test('«Carriles» is a button that looks like one and says what it does; a click, a tap and Enter open the lane chooser', async () => {
+  // The owner: nobody knew that «CARRILES» could be pressed. It is a button with a border and an arrow, an accessible
+  // name that says what it does and aria-expanded, and it fits the lane column in both themes and with «Letra grande».
+  for (const screen of [DESKTOP, PHONE]) {
+    const p = await open(screen, 't=50.5&v=8');
+    const look = () => p.evaluate(() => {
+      const b = document.querySelector('#carriles .carriles-boton'), s = getComputedStyle(b), r = b.getBoundingClientRect();
+      const col = document.querySelector('#carriles').getBoundingClientRect();
+      const menu = document.querySelector('#linea-menu');
+      return { tag: b.tagName, name: b.getAttribute('aria-label'), title: b.title, expanded: b.getAttribute('aria-expanded'), popup: b.getAttribute('aria-haspopup'),
+        border: `${s.borderTopStyle} ${parseFloat(s.borderTopWidth)}`, cursor: s.cursor, icon: !!b.querySelector('svg'),
+        fits: r.left >= col.left - 0.5 && r.right <= col.right + 0.5 && r.top >= col.top - 0.5 && r.bottom <= col.bottom + 0.5, cut: b.scrollWidth > b.clientWidth + 1,
+        open: !!menu && !menu.hidden && /Carriles/.test(menu.textContent) && !!menu.querySelector('[data-fijar]') };
+    });
+    for (const cls of ['', 'be-reunion', 'be-letra-grande', 'be-reunion be-letra-grande']) {
+      await p.evaluate((c) => { const h = document.documentElement; h.classList.remove('be-reunion', 'be-letra-grande'); if (c) h.classList.add(...c.split(' ')); }, cls);
+      await frames(p);
+      const l = await look();
+      note(`${screen.name} «Carriles» ${cls || 'claro'}: ${l.tag}, «${l.name}», border ${l.border}, ${l.fits ? 'inside' : 'outside'} its column${l.cut ? ', cut' : ''}`);
+      assert.equal(l.tag, 'BUTTON');
+      assert.match(l.name, /^Carriles: elegir cuáles se ven/);
+      assert.ok(l.title, 'no tooltip');
+      assert.equal(l.popup, 'dialog');
+      assert.equal(l.expanded, 'false');
+      assert.equal(l.border, 'solid 1', `${cls}: no border`);
+      assert.equal(l.cursor, 'pointer');
+      assert.ok(l.icon, 'no arrow');
+      assert.ok(l.fits && !l.cut, `${screen.name} ${cls}: the button leaves its column or is cut`);
+    }
+    await p.evaluate(() => document.documentElement.classList.remove('be-reunion', 'be-letra-grande'));
+    await frames(p);
+    const b = p.locator('#carriles .carriles-boton');
+    if (screen.hasTouch) await b.tap(); else await b.click();
+    await frames(p);
+    let l = await look();
+    assert.ok(l.open, `${screen.name}: a ${screen.hasTouch ? 'tap' : 'click'} did not open the lane chooser`);
+    assert.equal(l.expanded, 'true');
+    if (screen.hasTouch) await b.tap(); else await b.click();
+    await frames(p);
+    l = await look();
+    assert.ok(!l.open, `${screen.name}: a second press did not close it`);
+    assert.equal(l.expanded, 'false');
+    await b.focus();
+    await p.keyboard.press('Enter');
+    await frames(p);
+    l = await look();
+    assert.ok(l.open, `${screen.name}: Enter did not open the lane chooser`);
+    assert.equal(l.expanded, 'true');
+    await p.context().close();
+  }
+});
+
 test('430: a pinch that starts during a drag, and the ruler used with a finger, leave the strip as it was', async () => {
   const p = await open(PHONE, 't=50.5&v=8');
   const cdp = await p.context().newCDPSession(p);

@@ -57,8 +57,13 @@
 
 /* Carriles */
 .carriles-eje { height: 26px; border-bottom: 1px solid var(--line); display: flex; align-items: center; padding: 0 6px 0 12px; }
-.carriles-boton { white-space: nowrap; border: 0; background: none; padding: 2px 6px; margin-left: -6px; border-radius: var(--r-sm); font-size: var(--fs-2xs); font-weight: 700; letter-spacing: .04em; text-transform: uppercase; color: var(--ink-3); cursor: pointer; }
-.carriles-boton:hover { background: var(--paper-2); color: var(--ink); }
+/* «Carriles» es un botón: borde de píldora y flecha, como «Sobre las fechas» y los botones de la barra. */
+.carriles-boton { display: inline-flex; align-items: center; gap: 2px; max-width: 100%; min-width: 0; white-space: nowrap; border: 1px solid var(--line-2); background: var(--surface); padding: 1px 4px 1px 8px; margin-left: -6px; border-radius: var(--r-pill); font-size: var(--fs-2xs); font-weight: 700; letter-spacing: .04em; text-transform: uppercase; color: var(--ink-2); cursor: pointer; }
+.carriles-boton > span { overflow: hidden; text-overflow: ellipsis; }
+.carriles-boton .be-i { flex: none; width: 14px; height: 14px; }
+.carriles-boton:hover { background: var(--paper-2); border-color: var(--ink-3); color: var(--ink); }
+.carriles-boton:focus-visible { outline: 2px solid var(--focus); outline-offset: 1px; }
+.carriles-boton[aria-expanded="true"] { background: var(--gold-soft); border-color: var(--gold-line, var(--line-2)); color: var(--gold-ink, var(--ink)); }
 .carriles-boton b { color: var(--accent); font-weight: 700; }
 .carril-rotulo .be-lane-label { font-size: var(--fs-sm); position: relative; overflow: hidden; }
 .carril-rotulo .be-lane-label > span:not(.edad):not(.be-tier) { overflow: hidden; text-overflow: ellipsis; }
@@ -365,7 +370,7 @@
   .carril-rotulo .be-lane-label { padding: 0 6px 0 10px; font-size: var(--fs-xs); gap: 5px; }
   .carril-pin { display: none; }
   .carriles-eje { padding: 0 4px 0 10px; }
-  .carriles-boton { font-size: 9.5px; letter-spacing: 0; }
+  .carriles-boton { font-size: 9.5px; letter-spacing: 0; padding: 1px 2px 1px 6px; margin-left: -4px; }
   .nivel-carril { display: none; }
   .edad { display: none; }
   .vista-ahora { left: 8px; right: 8px; top: 48px; width: auto; max-height: 45%; }

@@ -45,6 +45,7 @@ const ICONOS = {
   secular: '<svg class="be-i be-i--sm" viewBox="0 0 24 24"><rect x="4" y="6" width="16" height="12" rx="3" fill="none" stroke="currentColor" stroke-width="1.7" stroke-dasharray="3 2.4"/></svg>',
   alfiler: '<svg class="be-i be-i--sm" viewBox="0 0 24 24"><path d="M9 3h6l-1 6 3 3H7l3-3Zm3 9v9" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>',
   info: '<svg class="be-i be-i--sm" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 11v5.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="12" cy="7.8" r="1.2" fill="currentColor"/></svg>',
+  desplegar: '<svg class="be-i be-i--sm" viewBox="0 0 24 24" aria-hidden="true"><path d="m7 10 5 5 5-5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>',
   menu: '<svg class="be-i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="5" cy="12" r="1.8" fill="currentColor"/><circle cx="12" cy="12" r="1.8" fill="currentColor"/><circle cx="19" cy="12" r="1.8" fill="currentColor"/></svg>',
 };
 function colorPotencia(p) {
@@ -358,7 +359,8 @@ function pintarCarriles() {
   if (clave === claveEtiquetas) return;
   claveEtiquetas = clave;
   const filas = $('#linea-filas');
-  if (!$('#carriles .carriles-boton')) $('#carriles').innerHTML = '<button type="button" class="carriles-boton" data-linea="carriles" aria-label="Elegir y fijar carriles" title="Elegir y fijar carriles">Carriles</button>';
+  // «Carriles» abre el menú de los carriles: se dibuja como un botón, con su flecha, para que se vea que se pulsa.
+  if (!$('#carriles .carriles-boton')) $('#carriles').innerHTML = `<button type="button" class="carriles-boton" data-linea="carriles" aria-haspopup="dialog" aria-expanded="false" aria-label="Carriles: elegir cuáles se ven y fijarlos" title="Elegir qué carriles se ven y fijarlos arriba"><span>Carriles</span>${ICONOS.desplegar}</button>`;
   const vivos = new Set();
   for (const c of carrilesVista) {
     let x = carrilEls.get(c.id);
@@ -1501,6 +1503,7 @@ function cerrarMenu() {
   const dentro = menuEl.contains(document.activeElement);
   menuEl.hidden = true;
   $('#linea-menu-boton')?.setAttribute('aria-expanded', 'false');
+  $('.carriles-boton')?.setAttribute('aria-expanded', 'false');
   if (dentro) menuOrigen?.focus();
 }
 function abrirMenu(seccion = 'todo') {
@@ -1552,7 +1555,8 @@ function abrirMenu(seccion = 'todo') {
   menuEl.style.left = `${clamp(seccion === 'carriles' ? r.left : r.right - w, 8, window.innerWidth - w - 8)}px`;
   menuEl.style.bottom = `${window.innerHeight - r.top + 8}px`;
   menuEl.style.maxHeight = `${Math.max(160, r.top - 16)}px`;
-  $('#linea-menu-boton')?.setAttribute('aria-expanded', 'true');
+  $('#linea-menu-boton')?.setAttribute('aria-expanded', String(seccion !== 'carriles'));
+  $('.carriles-boton')?.setAttribute('aria-expanded', String(seccion === 'carriles'));
   // Es un diálogo: al abrirlo, el foco entra en su primer control (al repintarlo abierto no se mueve).
   if (!yaAbierto) { menuOrigen = b; menuEl.querySelector('button, input, select')?.focus(); }
   else if (foco && !menuEl.contains(document.activeElement)) (menuEl.querySelector(claveFoco || 'button, input, select') || menuEl.querySelector('button, input, select'))?.focus();
