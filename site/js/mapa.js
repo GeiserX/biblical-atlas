@@ -1704,6 +1704,21 @@ function rellenoConMientras() {
   if (visible || saldra) padding.right = Math.max(padding.right, (visible ? mi.offsetWidth : 290) + 40);
   return caber(padding);
 }
+/** Relleno para encuadrar la forma de una zona. En escritorio con el mapa bajo (la línea de tiempo ocupa media
+    pantalla), la leyenda no deja sitio encima de ella y caber() encogía el relleno de abajo hasta meter la forma debajo:
+    entonces la forma va a la derecha de la leyenda, con todo el alto libre. */
+function rellenoForma() {
+  const p = rellenoConMientras(), ley = $('#leyenda');
+  if (estrecha() || !ley || !ley.offsetParent) return p;
+  const alto = map.getContainer().clientHeight;
+  // La leyenda va abajo a la izquierda (28 px del borde) y aún puede tener el contenido de antes: al menos su alto habitual.
+  const arriba = alto - 28 - Math.min(Math.max(ley.offsetHeight, 210), alto - 120);
+  if (arriba - p.top >= 160) return p;
+  return caber({ ...p, bottom: 40, left: Math.max(p.left, ley.offsetLeft + ley.offsetWidth + 30) });
+}
+/** Zoom más lejano al que se encuadra la forma de una zona: el de su punto (una región, 5,5). Si la forma no cabe, se
+    corta por arriba y por abajo en vez de quedarse diminuta. */
+const ZOOM_FORMA = 5.5;
 /** Puntos que ocupa un lugar: su coordenada o, si es incierto, sus candidatos con el borde de cada zona. */
 function puntosDe(id) {
   const l = BE.L[id];
@@ -1754,10 +1769,12 @@ function encuadrarLugares(ids) {
   if (!map) return;
   const foco = lugaresEnFoco(ids);
   // Un lugar con forma se encuadra entero (Canaán va de Sidón a Gaza, no se queda en su punto de Galilea).
-  const pts = foco.flatMap((id) => (conPunto(BE.L[id]) && BE.L[id].shape?.bbox) || puntosDe(id));
+  const forma = (id) => conPunto(BE.L[id]) && BE.L[id].shape?.bbox;
+  const pts = foco.flatMap((id) => forma(id) || puntosDe(id));
   // Una selección sin lugar en el mapa (la muerte de Adán, la Septuaginta) no deja el encuadre de antes: enseña su época.
   if (!pts.length) { if (E.sel) encuadrarEpoca(E.t); return; }
-  const padding = rellenoConMientras();
+  const conForma = foco.some(forma);
+  const padding = conForma ? rellenoForma() : rellenoConMientras();
   if (pts.length === 1) {   // fitBounds no deja el relleno fijado en el mapa, easeTo sí
     const [x, y] = pts[0];
     // Una ciudad se ve con la tierra de Israel ya en relieve fino y sus vecinos con nombre; una región, de más lejos; un
@@ -1780,6 +1797,11 @@ function encuadrarLugares(ids) {
   // Ofir en un móvil con la hoja abierta, se acerca hasta que cabe en vertical: se corta por los lados en vez de enseñar
   // el mar Caspio.
   const cam = map.cameraForBounds(caja, { padding, maxZoom: tope });
+  if (cam && conForma && cam.zoom < ZOOM_FORMA) {
+    const centro = [(caja[0][0] + caja[1][0]) / 2, latDeY((mercY(caja[0][1]) + mercY(caja[1][1])) / 2)];
+    map.easeTo({ center: centro, zoom: ZOOM_FORMA, offset: [(padding.left - padding.right) / 2, (padding.top - padding.bottom) / 2], duration: 700 });
+    return;
+  }
   if (cam) {
     const H = map.getContainer().clientHeight, libre = H - padding.top - padding.bottom;
     // En vertical, el centro de la caja; en horizontal, la mediana de los puntos: el lado donde hay más.
