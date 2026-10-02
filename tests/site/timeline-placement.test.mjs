@@ -176,8 +176,8 @@ test('every event of Acts lived at a stop of a journey is placed while the trave
       const who = (e.personas || []).find((p) => travellers.has(p) && (!e.presentes || e.presentes.includes(p)));
       const te = years(e.fecha);
       if (!who || !te) continue;
-      // «Has a stop»: a stop of his journeys at one of the places of the event, with a point on the map (BE.donde places
-      // nobody at a place without one: the burning bush on Sinai, Zuf), whose own years meet the event's years. Paul's
+      // «Has a stop»: a stop of his journeys at one of the places of the event, with a point on the map (a place without
+      // one is a stay too, but this record was taken with places that have one), whose own years meet the event's years. Paul's
       // stops carry his events; anyone else's stops follow the events of the account, so for them the stop also has to
       // tell a verse of the event (the Red Sea camp of Num 33:10 is not the crossing of Exod 14, though both are «mar-rojo»).
       const verses = (txt) => {
@@ -203,7 +203,10 @@ test('every event of Acts lived at a stop of a journey is placed while the trave
       const v = BE.ventanaEvento(e);
       for (const k of [0.001, 0.25, 0.5, 0.75, 0.999]) {
         const t = v[0] + (v[1] - v[0]) * k, w = BE.donde(who, t);
-        if (!w || !w.parada || !(e.lugares || []).includes(w.en.lugar.id)) {
+        // A stop the data gives as one instant that falls exactly on t is where he is at that instant, not the road:
+        // on 14 Nisan 33 Jesus is at Golgotha at the instant of that stop, inside the day of his sentence.
+        const instante = w?.parada && w.en.viaje && w.en.b - w.en.a < 1e-9;
+        if (!w || !w.parada || (!(e.lugares || []).includes(w.en.lugar.id) && !instante)) {
           wrong.push(`${e.id} at ${t.toFixed(3)}: ${w ? `${w.parada ? 'en' : 'hacia'} ${(w.parada ? w.en : w.sig).lugar.id}` : 'nowhere'}`);
           break;
         }

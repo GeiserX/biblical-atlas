@@ -147,6 +147,11 @@ Los años van en numeración astronómica: 537 a.e.c. es −536, y 1 a.e.c. es 0
 
 **El suceso de todo un libro profético no sitúa a nadie.** Va sin `type` ni `roles` y con `present: []`, aunque la tabla diga dónde se escribió; la residencia deducida del profeta va en su relación `lived_in`. Solo un mensaje que el texto fecha y sitúa, como los de Zacarías, lleva `type: speech`, el papel `spoke` y `present`.
 
+**Quién lleva un viaje propio.** Dos reglas para los viajes de `data/journeys/`:
+
+- Un rey invasor que el texto lleva en persona de un lugar a otro tiene su viaje, con las paradas que nombra el texto: Kedorlaomer (`campana-de-kedorlaomer`), Sisaq, Hazael, Senaquerib, Nekó y Nabucodonosor en 617. Si el texto solo lo pone en un sitio, no hay viaje: lo sitúa su suceso. La campaña de 609 a 607 aún no tiene viaje: sus sucesos ponen a Nabucodonosor ante Jerusalén en 609 (2Re 25:1) y en Riblá en 607 (2Re 25:6).
+- Cuando dos personas con ficha hacen el mismo trayecto, van dos viajes si el texto cuenta el camino de cada una, como Acab y Jehosafat hacia Ramot-Galaad, que acaban en sitios distintos. Va un solo viaje, con la otra en `companions`, si el texto las envía o las lleva juntas, como a Judas y Silas con la carta de Jerusalén.
+
 ## 7. Relaciones
 
 Se apunta cada relación que el texto afirma, con el capítulo en sus `sources` y el pasaje en su `reason`. Sin un pasaje, la relación no se dibuja en el sitio.

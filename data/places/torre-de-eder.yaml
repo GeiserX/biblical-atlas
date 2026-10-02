@@ -6,12 +6,28 @@ names:
 - name: Migdal-Éder
   note: Forma hebrea que recoge Perspicacia.
 type: region
-lat: 31.707306
-lon: 35.230111
+lat: null
+lon: null
 precision: uncertain
-coord_source: openbible:ab80fa1
-coord_url: https://www.openbible.info/geo/ancient/ab80fa1/eder-1
-coord_note: Una torre, no una ciudad. Perspicacia dice que no se conoce su ubicación exacta; el punto es el de OpenBible.
+coord_source: null
+coord_url: null
+candidates:
+- name: Entre Belén y Hebrón
+  geometry:
+    type: strip
+    lat: 31.704306
+    lon: 35.207639
+    to:
+      lat: 31.525087
+      lon: 35.10222
+  checked_on: '2026-10-02'
+  status: favored_level_1
+  sources:
+  - it-eder
+  reason: 'Perspicacia «Éder», núm. 4: no se conoce su ubicación exacta, pero probablemente estaba entre Belén y Hebrón.'
+  note: 'Extremos: los puntos de Belén y Hebrón de este atlas.'
+  coord_source: calculation
+coord_note: 'Una torre, no una ciudad. Sin punto: Perspicacia dice que no se conoce su ubicación exacta.'
 summary: Torre desde la que se vigilaban rebaños; Jacob plantó sus tiendas más allá de ella tras morir Raquel, quizá entre
   Belén y Hebrón. Allí Rubén tuvo relaciones con Bilhá.
 reason: 'Perspicacia «Éder», núm. 4, párr. 1; Gé 35:21, 22. OpenBible: solo el punto.'
@@ -26,5 +42,10 @@ links:
 - title: Génesis 35 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/G%C3%A9nesis/35/
   type: bible
-checked_on: '2026-09-29'
+checked_on: '2026-10-02'
 status: verified
+history:
+- date: '2026-10-02'
+  change: 'Pierde el punto de OpenBible (31.707306, 35.230111): jw.org dice que no se sabe dónde estaba y no nombra ese sitio.
+    Queda como candidato lo que sí dice jw.org.'
+  source: it-eder

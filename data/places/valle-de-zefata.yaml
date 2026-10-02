@@ -4,13 +4,28 @@ name: Valle de Zefata
 names:
 - name: Valle de Zefata
 type: valley
-lat: 31.610556
-lon: 34.953056
+lat: null
+lon: null
 precision: uncertain
-coord_source: openbible:a6bf8d4
-coord_url: https://www.openbible.info/geo/ancient/a6bf8d4/valley-of-zephathah
-coord_note: Punto de Wadi Safiyeh, primera identificación de OpenBible, que jw.org no nombra. Perspicacia lo cuenta, al
-  parecer, entre los valles al norte de Maresá, y este punto cae al noreste de la ficha maresa.
+coord_source: null
+coord_url: null
+candidates:
+- name: Junto a Maresá, al norte
+  geometry:
+    type: zone
+    lat: 31.62
+    lon: 34.9
+    radius_km: 5
+  checked_on: '2026-10-02'
+  status: favored_level_1
+  sources:
+  - it-zefata
+  - 2-cronicas-14
+  reason: 2Cr 14:10 lo pone junto a Maresá; Perspicacia «Zefata» cree que es uno de los valles al norte de la ciudad. No nombra
+    ningún sitio.
+  note: Centro nuestro unos 3 km al norte del punto de maresa. Radio nuestro.
+  coord_source: calculation
+coord_note: 'Sin punto: jw.org no nombra ningún sitio; solo lo pone cerca de Maresá, al parecer al norte.'
 summary: Valle cercano a Maresá donde el ejército de Asá formó contra las tropas del etíope Zérah. Jehová dio la victoria
   a Judá, que Perspicacia fecha en 967 a.e.c.
 reason: 'Perspicacia «Zefata»; 2Cr 14:9-12. Coordenada de OpenBible: solo tomamos el punto, con precisión incierta porque
@@ -26,5 +41,10 @@ links:
 - title: 2 Crónicas 14 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-Cr%C3%B3nicas/14/
   type: bible
-checked_on: '2026-09-30'
+checked_on: '2026-10-02'
 status: verified
+history:
+- date: '2026-10-02'
+  change: 'Pierde el punto de OpenBible (31.610556, 34.953056): jw.org no nombra ese sitio. Queda como candidato lo que sí
+    dicen el texto y jw.org.'
+  source: it-zefata

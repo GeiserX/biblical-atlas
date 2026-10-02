@@ -127,7 +127,7 @@ Una deducción que el texto contradice no entra: si el relato pone la salida en 
 
 **Cartas.** `writer` es obligatorio (id de persona; las 14 de Pablo llevan `writer: pablo`). Opcionales: `recipients.people`, `carriers` y `people` (las nombradas en la carta), listas de ids de personas que `build.py` comprueba. La comprobación de que una carta cae en una parada de Pablo solo mira las cartas de Pablo.
 
-**Sucesos.** `places` va en orden: el primero es donde ocurre lo principal, y es el único donde el sitio sitúa a las personas del suceso. Si ese lugar no tiene punto (un lugar incierto), el suceso no sitúa a nadie. `present` es opcional: lista de ids de `people` que estaban en ese primer lugar. Si está, solo ellas se sitúan allí y las demás solo se nombran, como Augusto en el nacimiento de Jesús. `present: []` es un suceso que no sitúa a nadie, porque pasa en un sitio que el texto no nombra (en el camino de Moab a Judá). `build.py` comprueba que cada id de `present` está también en `people`.
+**Sucesos.** `places` va en orden: el primero es donde ocurre lo principal, y es el único donde el sitio sitúa a las personas del suceso. Si ese lugar no tiene punto (un lugar incierto), las sitúa igual allí: el mapa las dibuja en su candidato preferido como posición estimada y, si no tiene candidatos, no las dibuja. `present` es opcional: lista de ids de `people` que estaban en ese primer lugar. Si está, solo ellas se sitúan allí y las demás solo se nombran, como Augusto en el nacimiento de Jesús. `present: []` es un suceso que no sitúa a nadie, porque pasa en un sitio que el texto no nombra (en el camino de Moab a Judá). `build.py` comprueba que cada id de `present` está también en `people`.
 
 Quién nace, muere, escribe o habla lo dicen `type` y `roles`:
 

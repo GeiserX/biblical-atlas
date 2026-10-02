@@ -5,12 +5,26 @@ names:
 - name: Hakilá
   note: La TNM la llama «la colina de Hakilá».
 type: mountain
-lat: 31.4703
-lon: 35.2228
+lat: null
+lon: null
 precision: uncertain
-coord_source: openbible:a28a7df
-coord_url: https://www.openbible.info/geo/ancient/a28a7df/hachilah
-coord_note: Zahrat al-Kula, primera identificación de OpenBible. Perspicacia no nombra ningún sitio.
+coord_source: null
+coord_url: null
+candidates:
+- name: En el desierto de Zif
+  geometry:
+    type: zone
+    lat: 31.47475
+    lon: 35.13514
+    radius_km: 10
+  checked_on: '2026-10-02'
+  status: favored_level_1
+  sources:
+  - it-hakila
+  reason: 'Perspicacia «Hakilá»: colina del desierto de Zif cuyo emplazamiento exacto hoy se desconoce.'
+  note: Centro nuestro en el punto de la ciudad de Zif. Radio nuestro.
+  coord_source: calculation
+coord_note: 'Sin punto: Perspicacia no nombra ningún sitio; solo la pone en el desierto de Zif.'
 summary: Colina del desierto de Zif, al sur de Jesimón, donde David y sus hombres se escondieron de Saúl. Hoy no se sabe dónde
   estaba.
 reason: 'Perspicacia «Hakilá»; 1Sa 23:19. OpenBible: solo el punto.'
@@ -29,5 +43,10 @@ links:
 - title: 1 Samuel 26 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/1-samuel/26/
   type: bible
-checked_on: '2026-09-29'
+checked_on: '2026-10-02'
 status: verified
+history:
+- date: '2026-10-02'
+  change: 'Pierde el punto de OpenBible (31.4703, 35.2228): jw.org dice que no se sabe dónde estaba y no nombra ese sitio.
+    Queda como candidato lo que sí dice jw.org.'
+  source: it-hakila

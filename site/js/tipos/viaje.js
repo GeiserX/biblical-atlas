@@ -9,18 +9,16 @@ function paradasDe(v) {
   const quien = BE.duenoViaje(v);
   return (quien === 'pablo' ? BE.P : BE.estancias(quien)).filter((s) => s.viaje === v);
 }
-/** Filas de la ficha: todas las paradas del viaje en su orden. Las que tienen punto abren su parada; una parada cuyo
-    lugar no tiene punto (Gat, Sodoma) no está en el mapa ni en la línea, pero el relato pasa por ella: abre su lugar.
-    Si el lugar sí tiene punto y la parada no está entre las estancias de la persona, lo que falta es su sitio en la línea
-    de tiempo, no la coordenada, y la fila lo dice así. */
+/** Filas de la ficha: todas las paradas del viaje en su orden. Cada una abre su parada, también la de un lugar sin
+    punto (Mahanaim, Sodoma), que es una estancia como las demás. Si una parada no está entre las estancias de la
+    persona (cae después de su muerte), lo que falta es su sitio en la línea de tiempo: abre su lugar y la fila lo dice. */
 function filasParadas(v, ps) {
   const conPunto = new Map(ps.map((s) => [s.p, s]));
   return [...(v.paradas || [])].sort((a, b) => a.orden - b.orden).map((p, i) => {
     const s = conPunto.get(p);
     if (s) return BE.botonSel(`parada:${s.key}`, `${i + 1}. ${s.lugar.nombre}`, `${esc(s.p.referencia)}${s.narrativa ? ' · fecha aproximada' : ` · ${esc(s.p.fecha?.texto || '')}`}`);
     const l = BE.L[p.lugar];
-    const motivo = l?.lat != null && l?.lon != null ? 'fuera de la línea de tiempo' : 'sin punto en el mapa';
-    return l ? BE.botonSel(`lugar:${l.id}`, `${i + 1}. ${l.nombre}`, `${esc(p.referencia || '')} · ${motivo}`) : '';
+    return l ? BE.botonSel(`lugar:${l.id}`, `${i + 1}. ${l.nombre}`, `${esc(p.referencia || '')} · fuera de la línea de tiempo`) : '';
   });
 }
 /** Dónde va un acompañante que no hace todo el viaje: «de Listra a Berea y en Corinto». Vacío si va en todo. */

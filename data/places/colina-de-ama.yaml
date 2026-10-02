@@ -6,13 +6,26 @@ names:
 - name: Amá
   note: Perspicacia le da, quizá, el sentido de «codo».
 type: mountain
-lat: 31.841047
-lon: 35.279535
+lat: null
+lon: null
 precision: uncertain
-coord_source: openbible:a8e4a15
-coord_url: https://www.openbible.info/geo/ancient/a8e4a15/ammah
-coord_note: OpenBible solo la pone en la región al este de Gabaón. Perspicacia la cree probablemente al este de la ciudad,
-  sin saber qué colina era.
+coord_source: null
+coord_url: null
+candidates:
+- name: Al este de Gabaón
+  geometry:
+    type: zone
+    lat: 31.847451
+    lon: 35.225351
+    radius_km: 5
+  checked_on: '2026-10-02'
+  status: favored_level_1
+  sources:
+  - it-ama
+  reason: 'Perspicacia «Amá»: probablemente quedaba al este de Gabaón, sin saber cuál de las colinas era.'
+  note: Centro nuestro 4 km al este del punto de Gabaón. Radio nuestro.
+  coord_source: calculation
+coord_note: 'Sin punto: Perspicacia la cree al este de Gabaón y no sabe qué colina era.'
 summary: Colina situada ante Guíah, camino del desierto de Gabaón. Allí se agruparon los benjaminitas con Abner, y este convenció
   a Joab de que dejara de perseguirlos.
 reason: 'Perspicacia «Amá»; 2Sa 2:24-28. OpenBible: solo el punto.'
@@ -27,5 +40,10 @@ links:
 - title: 2 Samuel 2 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-samuel/2/
   type: bible
-checked_on: '2026-09-29'
+checked_on: '2026-10-02'
 status: verified
+history:
+- date: '2026-10-02'
+  change: 'Pierde el punto de OpenBible (31.841047, 35.279535): jw.org dice que no se sabe dónde estaba y no nombra ese sitio.
+    Queda como candidato lo que sí dice jw.org.'
+  source: it-ama
