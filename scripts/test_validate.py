@@ -436,6 +436,27 @@ class DestinosEnParalelo(unittest.TestCase):
         e = errores_ramas({2: 1, 3: 1, 4: 1, 5: 1}, companions=cs)
         self.assertTrue(any("ya va en las paradas 1 a 2" in x for x in e), e)
 
+    def test_un_acompanante_no_va_en_dos_ramas(self):
+        # Halá y Habor salen los dos de Samaria: la misma persona no llega a los dos.
+        cs = [{"person": "beera", "from": 2, "to": 2}, {"person": "beera", "from": 3, "to": 3}]
+        e = errores_ramas({2: 1, 3: 1, 4: 1, 5: 1}, companions=cs)
+        self.assertTrue(any("ya va en las paradas 2 a 2, en otra rama" in x for x in e), e)
+
+    def test_dos_tramos_sueltos_en_la_misma_ruta_valen(self):
+        # 1 > 2 > 3 > 5 con 4 desde 3: los tramos 1-1 y 3-5 no se tocan y van por la misma ruta.
+        cs = [{"person": "beera", "from": 1, "to": 1}, {"person": "beera", "from": 5, "to": 5}]
+        self.assertEqual(errores_ramas({4: 3}, companions=cs), [])
+
+    def test_un_order_o_un_branches_from_que_no_son_enteros_no_rompen(self):
+        v = viaje_con_ramas({2: 1, 3: 1, 4: 1, 5: 1})
+        v["stops"][1]["order"] = [2]
+        out = []
+        validate.validar_ramas(v, "viaje", out.append)
+        validate.validar_viaje(v, "viaje", out.append)
+        self.assertTrue(any("stop [2]: branches_from es el order de una parada anterior" in x for x in out), out)
+        e = errores_ramas({3: [1], 4: 1, 5: 1})
+        self.assertTrue(any("stop 3: branches_from es el order de una parada anterior" in x for x in e), e)
+
     def test_los_dos_destierros_del_repositorio_pasan(self):
         for nombre, salida in (("destierro-de-israel-en-740", 1), ("destierro-de-beera", 1)):
             with self.subTest(viaje=nombre):

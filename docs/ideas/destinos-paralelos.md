@@ -24,7 +24,7 @@ Un viaje es una lista de paradas en orden, y el mapa las une en ese orden. En do
 - la parada nombrada existe, es del mismo viaje y es anterior, así que no puede haber ciclos;
 - no es a su vez un destino en paralelo, porque ningún texto pide hoy una cadena de ramas;
 - de ella salen al menos dos caminos, contando la parada que sigue en la línea; si sale uno solo, la clave no dice nada;
-- un acompañante con tramo `{person, from, to}` va en la ruta de `from` a `to`, que sigue una sola rama. Ir de Samaria a Habor son las paradas 1 y 3, no la 2. Nadie va en todo un viaje con destinos en paralelo, porque estaría en todos a la vez.
+- un acompañante con tramo `{person, from, to}` va en la ruta de `from` a `to`, que sigue una sola rama. Ir de Samaria a Habor son las paradas 1 y 3, no la 2. Sus tramos van todos por la misma ruta: nadie va a Halá y a Habor. Nadie va en todo un viaje con destinos en paralelo, porque estaría en todos a la vez.
 
 **En `data.json`**, que escribe [`build.py`](../../scripts/build.py), cada parada conserva `orden` y `lugar`, que leen el sitio y el servidor MCP del atlas, y la clave nueva va aparte, con su nombre en inglés. La SQLite la guarda en la columna `branches_from` de `paradas`.
 
