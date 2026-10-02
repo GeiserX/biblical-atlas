@@ -76,10 +76,13 @@ function calcularAristas(id) {
     }
   }
   for (const v of BE.D.viajes || []) {
-    const gente = [v.persona, ...(v.companeros || [])].filter(Boolean);
+    const gente = [v.persona, ...BE.acompanantes(v)].filter(Boolean);
     if (!gente.includes(id)) continue;
+    // Un acompañante puede ir solo en un tramo (pregunta 3 de viajes-modelo): viajan juntos los que comparten una parada.
+    const paradas = (x) => (v.paradas || []).filter((p) => x === v.persona || BE.acompanantes(v, p.orden).includes(x)).map((p) => p.orden);
+    const mias = paradas(id);
     poner({ sel: `viaje:${v.id}`, grupo: 'Hechos', verbo: v.persona === id ? 'su viaje' : 'va en este viaje', fecha: v.fecha, ref: v.referencia, fuentes: v.fuentes, razon: v.razon, estado: v.estado, origen: 'viaje' });
-    for (const g of gente) if (g !== id && BE.PERS[g]) poner({ sel: `persona:${g}`, grupo: 'Personas', verbo: `viajan juntos · ${v.nombre}`, fecha: v.fecha, ref: v.referencia, fuentes: v.fuentes, razon: v.razon, estado: v.estado, origen: 'viaje' });
+    for (const g of gente) if (g !== id && BE.PERS[g] && paradas(g).some((k) => mias.includes(k))) poner({ sel: `persona:${g}`, grupo: 'Personas', verbo: `viajan juntos · ${v.nombre}`, fecha: v.fecha, ref: v.referencia, fuentes: v.fuentes, razon: v.razon, estado: v.estado, origen: 'viaje' });
   }
   // Los lugares de sus paradas, cada uno en el tramo en que estuvo allí (hoy solo Pablo tiene paradas).
   for (const s of BE.P || []) {
@@ -264,7 +267,7 @@ function fichaPersona(id) {
 }
 
 function implicadosPersona(id, r) {
-  const viajes = BE.D.viajes.filter((v) => v.persona === id || (v.companeros || []).includes(id));
+  const viajes = BE.D.viajes.filter((v) => v.persona === id || BE.acompanantes(v).includes(id));
   viajes.forEach((v) => { r.claves.add(`viaje:${v.id}`); BE.P.filter((s) => s.viaje === v).forEach((s) => BE.anadirParada(r, s)); });
   BE.D.cartas.filter((c) => c.escritor === id || (!c.escritor && id === 'pablo') || (c.portadores || []).includes(id) || (c.destinatarios?.personas || []).includes(id)).forEach((c) => BE.anadirCarta(r, c));
   (BE.D.eventos || []).filter((e) => (e.personas || []).includes(id)).forEach((e) => {

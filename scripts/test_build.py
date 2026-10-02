@@ -141,18 +141,18 @@ class ChapterUrls(unittest.TestCase):
 
 
 class JourneysForTheSite(unittest.TestCase):
-    """A group journey reaches data.json with the name the site reads."""
+    """A group journey and a companion's range of stops reach data.json with the names the site reads."""
 
-    def test_group(self):
+    def test_group_and_companion_ranges(self):
         leg = build.Legacy(build.load_map())
         v = {"person": None, "group": "el Arca del pacto",
-             "companions": ["silas"]}
+             "companions": ["silas", {"person": "lucas", "from": 7, "to": 10}]}
         out = {}
         for k, x in v.items():
             es, hijo = leg.key(k, leg.roots["journeys"], "journeys")
             out[es] = leg.translate(x, hijo, f"journeys.{k}")
         self.assertEqual(out, {"persona": None, "grupo": "el Arca del pacto",
-                               "companeros": ["silas"]})
+                               "companeros": ["silas", {"persona": "lucas", "desde": 7, "hasta": 10}]})
         self.assertEqual(leg.errors, [])
 
 

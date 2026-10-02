@@ -135,5 +135,36 @@ class QuienViaja(unittest.TestCase):
         self.assertEqual(out, [])
 
 
+class Acompanantes(unittest.TestCase):
+    """Cada acompañante es un id (todo el viaje) o {person, from, to} (pregunta 3)."""
+
+    def test_id_y_tramos_valen(self):
+        cs = ["bernabe", {"person": "silas", "from": 1, "to": 2}, {"person": "silas", "from": 4, "to": 4}]
+        self.assertEqual(errores_viaje(companions=cs), [])
+
+    def test_tramo_fuera_del_viaje_es_error(self):
+        for a, b in ((0, 2), (3, 6), (4, 3)):
+            with self.subTest(desde=a, hasta=b):
+                cs = [{"person": "silas", "from": a, "to": b}]
+                self.assertTrue(any("1 <= from <= to <= 5" in e for e in errores_viaje(companions=cs)))
+
+    def test_tramos_que_se_tocan_son_error(self):
+        cs = [{"person": "silas", "from": 1, "to": 3}, {"person": "silas", "from": 3, "to": 4}]
+        self.assertTrue(any("ya va en las paradas 1 a 3" in e for e in errores_viaje(companions=cs)))
+        self.assertTrue(any("ya va" in e for e in errores_viaje(companions=["silas", {"person": "silas", "from": 2, "to": 2}])))
+
+    def test_todo_el_viaje_se_escribe_con_el_id(self):
+        cs = [{"person": "silas", "from": 1, "to": 5}]
+        self.assertTrue(any("se escribe solo su id" in e for e in errores_viaje(companions=cs)))
+
+    def test_claves_de_mas_o_sin_persona_son_error(self):
+        for c in ({"person": "silas", "from": 1, "to": 2, "note": "x"}, {"from": 1, "to": 2}, 7):
+            with self.subTest(c=c):
+                self.assertTrue(errores_viaje(companions=[c]))
+
+    def test_quien_viaja_no_se_acompana(self):
+        self.assertTrue(any("es quien viaja" in e for e in errores_viaje(companions=["pablo"])))
+
+
 if __name__ == "__main__":
     unittest.main()

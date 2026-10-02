@@ -17,7 +17,8 @@ function fichaParada(s, w) {
   const enCamino = w && !w.parada && w.sig;
   const eyebrow = w ? (enCamino ? `${ordinal} · De camino a ${w.sig.lugar.nombre}` : `${ordinal} · Dónde está ${BE.nombreDueno(v)}`) : ordinal;
   const f = s.p.fecha || {};
-  const comp = (v.companeros || []).map((id) => BE.PERS[id]).filter(Boolean);
+  // Solo quienes van en esta parada: un acompañante puede unirse o separarse a mitad del viaje.
+  const comp = BE.acompanantes(v, s.p.orden).map((id) => BE.PERS[id]).filter(Boolean);
   const quien = BE.nombreDueno(v, true);
   return `${BE.migas(quien, v.nombre, s.lugar.nombre)}${E.sel ? BE.cerrarHtml() : ''}
     <section class="be-card"><div class="be-card__pad">
@@ -30,7 +31,7 @@ function fichaParada(s, w) {
       ${s.narrativa ? '<span class="be-chrono be-chrono--approx">orden seguro, fecha aproximada</span>' : ''}</div>
       ${enCamino ? `<div class="be-list">${BE.botonSel(`parada:${w.sig.key}`, `Siguiente: ${w.sig.lugar.nombre}`, esc(w.sig.p.referencia))}</div>` : ''}
     </div><div class="be-card__foot">${BE.estadoHtml(s.p.estado)}<span class="be-spacer"></span>${citas(s.p.referencia)[0] ? `<a class="be-wol" href="${BE.urlCita(citas(s.p.referencia)[0])}" ${EXTERNO}>Leer en jw.org</a>` : ''}</div></section>
-    ${comp.length ? `<section class="be-card ficha-sec"><div class="be-card__pad"><h3 class="be-card__eyebrow">Con ${esc(BE.nombreDueno(v))} en este viaje</h3>
+    ${comp.length ? `<section class="be-card ficha-sec"><div class="be-card__pad"><h3 class="be-card__eyebrow">Con ${esc(BE.nombreDueno(v))} en esta parada</h3>
       <div class="companeros">${comp.map((p) => `<button type="button" class="companero" data-sel="persona:${esc(p.id)}"><span class="be-node be-node--persona be-node--sm">${esc(p.nombre[0])}</span><span><b>${esc(p.nombre)}</b><span class="be-row__meta">${esc(p.resumen)}</span></span></button>`).join('')}</div></div></section>` : ''}
     ${BE.porQueHtml(s.p)}
     ${BE.videosHtml(s.lugar.id)}

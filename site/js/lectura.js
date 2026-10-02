@@ -45,7 +45,7 @@ function pasajes(lib, cap) {
     const aqui = citaEnCap(s.p.referencia, lib, cap);
     if (!aqui) continue;
     if (versoInicial(s.p.referencia, lib, cap) === 0 && BE.citas(s.p.referencia).some((c) => c.cap < cap && c.capFin >= cap + 1)) continue;   // un tramo que cruza el capítulo entero no es un pasaje de este
-    out.push({ sel: `parada:${s.key}`, ref: aqui, verso: versoInicial(s.p.referencia, lib, cap), titulo: `${BE.nombreDueno(s.viaje, true)} en ${s.lugar.nombre}`, resumen: s.p.resumen || s.p.nota || '', lugares: [s.lugar.id], personas: [s.viaje.persona, ...(s.viaje.companeros || [])].filter((x) => x && BE.PERS[x]), fecha: s.p.fecha, narrativa: s.narrativa, orden: s.g + 0.5 });
+    out.push({ sel: `parada:${s.key}`, ref: aqui, verso: versoInicial(s.p.referencia, lib, cap), titulo: `${BE.nombreDueno(s.viaje, true)} en ${s.lugar.nombre}`, resumen: s.p.resumen || s.p.nota || '', lugares: [s.lugar.id], personas: [BE.duenoViaje(s.viaje), ...BE.acompanantes(s.viaje, s.p.orden)].filter((x) => x && BE.PERS[x]), fecha: s.p.fecha, narrativa: s.narrativa, orden: s.g + 0.5 });
   }
   return out.sort((a, b) => a.verso - b.verso || a.orden - b.orden);
 }

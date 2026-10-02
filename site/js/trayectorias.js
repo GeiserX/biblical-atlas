@@ -164,6 +164,18 @@ function nombreDeDueno(dueno) {
   const v = (BE.D.viajes || []).find((x) => x.id === dueno.slice(6));
   return v ? nombreDueno(v, true) : dueno;
 }
+/** Acompañantes de un viaje: un id va en todo el viaje; { persona, desde, hasta }, de la parada desde a la parada
+    hasta. Con `orden`, solo los que van en esa parada. Ids sin repetir, en el orden de los datos. */
+function acompanantes(v, orden = null) {
+  const out = [];
+  for (const c of v?.companeros || []) {
+    const id = typeof c === 'string' ? c : c?.persona;
+    if (!id || out.includes(id)) continue;
+    if (orden != null && typeof c === 'object' && !(c.desde <= orden && orden <= c.hasta)) continue;
+    out.push(id);
+  }
+  return out;
+}
 const escritorDe = (c) => c.escritor || 'pablo';
 const esDe = (v, persona) => duenoViaje(v) === persona;
 /** Quién lleva sus sucesos y cartas en sus paradas: Pablo, cuyas paradas se fecharon una a una con Hechos (el modelo de
@@ -854,7 +866,7 @@ function inicioPeriodo(p) {
 }
 
 Object.assign(BE, {
-  prepararParadas: () => itinerario('pablo').P, duenoViaje, esGrupo, nombreDueno, nombreDeDueno, dondeEsta, viajeActual, ventanaPablo, ventanaCarta, ventanaEvento, momentoCarta, momentoEvento,
+  prepararParadas: () => itinerario('pablo').P, duenoViaje, esGrupo, nombreDueno, nombreDeDueno, acompanantes, dondeEsta, viajeActual, ventanaPablo, ventanaCarta, ventanaEvento, momentoCarta, momentoEvento,
   donde, sucesoEn, ventana, estancias, presentes, personasConEstancias, edad, tramoPotencia, tramoPeriodo, inicioPeriodo, ventanaFecha, inicioMes, diaHebreo, anioHebreo, nombreMes, eventoEstimado, calendario, DIA, MES_LUNAR,
 });
 })();

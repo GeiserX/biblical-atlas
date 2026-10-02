@@ -819,9 +819,15 @@ def validar_lugar(o, donde, err, fuentes):
         err(f"{donde}: sin enlace a Perspicacia debe llevar status: pending")
 
 
+def companion_ids(v):
+    """Ids de persona de `companions`, en las dos formas: un id (todo el viaje) o {person, from, to}."""
+    return [c.get("person") if isinstance(c, dict) else c for c in v.get("companions") or []]
+
+
 def validar_viaje(v, donde, err):
-    """Quién viaja (README.md, «Viajes»): una persona con ficha (`person`) o un grupo sin ficha (`group`, un texto,
-    con `person: null`)."""
+    """Quién viaja y quién acompaña (README.md, «Viajes»). Viaja una persona con ficha (`person`) o un grupo sin ficha
+    (`group`, un texto, con `person: null`). Cada acompañante es un id, si va en todo el viaje, o {person, from, to}
+    con la parada donde se une y la parada donde se separa. Una persona puede ir en dos tramos que no se tocan."""
     persona, grupo = v.get("person"), v.get("group")
     if grupo is not None and (not isinstance(grupo, str) or not grupo.strip()):
         err(f"{donde}: group debe ser un texto: quién viaja sin ficha de persona («el Arca del pacto»)")
@@ -829,6 +835,34 @@ def validar_viaje(v, donde, err):
         err(f"{donde}: falta quién viaja: person (id de persona) o group (texto, con person: null)")
     elif persona is not None and grupo is not None:
         err(f"{donde}: person y group a la vez; un viaje de grupo lleva person: null")
+    comps = v.get("companions")
+    if not isinstance(comps, list):
+        err(f"{donde}: companions debe ser una lista ([] si nadie acompaña)")
+        return
+    n = len(v.get("stops") or [])
+    tramos = {}
+    for i, c in enumerate(comps):
+        if isinstance(c, str):
+            pid, a, b = c, 1, n
+        elif isinstance(c, dict):
+            pid, a, b = c.get("person"), c.get("from"), c.get("to")
+            if set(c) - {"person", "from", "to"} or not isinstance(pid, str):
+                err(f"{donde}: companions[{i}] lleva solo person, from y to")
+                continue
+            if not _entero(a) or not _entero(b) or not 1 <= a <= b <= n:
+                err(f"{donde}: companions[{i}] ({pid}): from y to son paradas del viaje, 1 <= from <= to <= {n}")
+                continue
+            if (a, b) == (1, n):
+                err(f"{donde}: companions[{i}] ({pid}) va en todo el viaje: se escribe solo su id")
+        else:
+            err(f"{donde}: companions[{i}] debe ser un id de persona o {{person, from, to}}")
+            continue
+        if pid == persona:
+            err(f"{donde}: companions[{i}]: {pid} es quien viaja")
+        for x, y in tramos.get(pid, []):
+            if a <= y and x <= b:
+                err(f"{donde}: companions[{i}]: {pid} ya va en las paradas {x} a {y}")
+        tramos.setdefault(pid, []).append((a, b))
 
 
 def validar_persona(o, donde, err):
@@ -1413,7 +1447,7 @@ def integrity(datos):
             if tipo == "journeys":
                 if o.get("person") is not None:
                     ref(f, "person", o.get("person"), "people")
-                for p in o.get("companions") or []:
+                for p in companion_ids(o):
                     ref(f, "companions", p, "people")
                 for p in o.get("stops") or []:
                     ref(f, f"stop {p.get('order')}: place", p.get("place"), "places")

@@ -509,7 +509,7 @@ def integridad(datos):
                 if o.get("person") is not None or not o.get("group"):
                     ref(f, "person", o.get("person"), "people")
                 for p in o.get("companions") or []:
-                    ref(f, "companions", p, "people")
+                    ref(f, "companions", p.get("person") if isinstance(p, dict) else p, "people")
                 for p in o.get("stops") or []:
                     ref(f, f"stop {p.get('order')}: place", p.get("place"), "places")
             elif tipo == "letters":

@@ -78,9 +78,18 @@ Con `candidates`, `lat`, `lon`, `coord_source` y `coord_url` pueden ser `null` y
 
 **Personas.** `perspicacia` (la clave de identidad: el documento de su artículo de Perspicacia y, si el artículo trata de varias personas, `#` y el número de la entrada, como `'1200003629#1'`; `null` si no tiene artículo; única entre las personas y obligatoria para las que salen en `entities` de la cobertura), `date` (actividad conocida, con fuente), `disambiguation` (qué la distingue de sus homónimos), `distinct_from` (ids de personas), `not_claimed` (frases con lo que no decimos, como «Pedro murió en Roma») y `relations`, que tienen su sección más abajo.
 
-**Viajes.** `person`, `reference`, `date`, `companions` (quienes van en todo el viaje) y `stops`. Cada parada lleva `order`, `place`, `reference` y `date`, y es un hecho anidado con sus `sources`, `reason`, `checked_on` y `status`.
+**Viajes.** `person`, `reference`, `date`, `companions` y `stops`. Cada parada lleva `order`, `place`, `reference` y `date`, y es un hecho anidado con sus `sources`, `reason`, `checked_on` y `status`.
 
 Quien viaja es una persona con ficha (`person`) o un grupo sin ficha: `person: null` y `group`, un texto de 40 palabras como mucho («el Arca del pacto», «los 600 benjaminitas»). Uno de los dos, nunca los dos. Un grupo no lleva marcador de viajero ni carril; la leyenda y la ficha dicen su `group`.
+
+Cada entrada de `companions` es un id de persona, si va en todo el viaje, o `{person, from, to}` con el número de la parada donde se une y el de la parada donde se separa. Una persona puede ir en dos tramos que no se tocan. El modo lectura y la ficha de una parada la ponen solo en las paradas de su tramo.
+
+```yaml
+companions:
+  - bernabe                                # todo el viaje
+  - {person: silas, from: 1, to: 14}       # Hch 15:40 a 17:14
+  - {person: silas, from: 16, to: 16}      # Hch 18:5
+```
 
 Una parada es un lugar que el texto dice que se alcanzó o se pasó, en el orden del relato. Tres clases de parada deducida entran también, siempre con `status: pending` y la deducción escrita en `reason`:
 

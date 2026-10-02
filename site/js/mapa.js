@@ -541,7 +541,7 @@ function geoRutas(w) {
     if (v === V) continue;
     const quien = BE.duenoViaje(v);
     const elegido = E.sel?.tipo === 'viaje' && E.sel.id === v.id;
-    const ver = elegido || (selPersona && (selPersona === quien || (v.companeros || []).includes(selPersona)))
+    const ver = elegido || (selPersona && (selPersona === quien || BE.acompanantes(v).includes(selPersona)))
       || (F.capas.viajes && quien !== 'pablo' && viajeEnEpoca(v, E.t));
     if (!ver) continue;
     const pts = [...(v.paradas || [])].sort((a, b) => a.orden - b.orden).map((p) => { const x = verticeRuta(BE.L[p.lugar]); return x && { ...x, deducida: deducida(p) }; }).filter(Boolean);
