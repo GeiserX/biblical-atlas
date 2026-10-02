@@ -13,6 +13,7 @@
 //  - Selecting such a place frames its zone.
 //  - A region, whose point stands for the whole region, also looks estimated (Paul in Galatia).
 //  - The legend explains that look whenever Paul's marker has it.
+//  - When Paul is at a place with nowhere to draw, following him does not break the map.
 //
 // Run from the repository root, one browser at a time:
 //   node --test --test-concurrency=1 tests/site/estancias-sin-punto.test.mjs
@@ -93,6 +94,13 @@ before(async () => {
   execFileSync('python3', [path.join(ROOT, 'scripts/build.py'), '--out', tmp], { cwd: ROOT, stdio: 'pipe' });
   variant('sin-candidatos', (D) => { delete D.lugares.mahanaim.candidatos; });
   variant('solo-pablo', (D) => { D.viajes = D.viajes.filter((v) => (v.persona || 'pablo') === 'pablo'); });
+  // Two of Paul's stops lose their point: Salamis with no candidate, Paphos with a zone around its old point.
+  variant('pablo-sin-punto', (D) => {
+    const s = D.lugares.salamina, f = D.lugares.pafos;
+    s.lat = s.lon = null; s.precision = 'incierto'; s.candidatos = [];
+    f.candidatos = [{ nombre: 'Zona de prueba', estado: 'favorecido_nivel_1', geometria: { tipo: 'zona', lat: f.lat, lon: f.lon, radio_km: 10 } }];
+    f.lat = f.lon = null; f.precision = 'incierto';
+  });
   server = await serve(path.join(ROOT, 'site'), tmp);
   origin = `http://127.0.0.1:${server.address().port}`;
   const chromium = await loadChromium();
@@ -282,6 +290,22 @@ test('the legend explains the estimated look whenever Paul\'s marker has it', as
   assert.equal(r.estimada, false, 'the date is not estimated');
   assert.equal(r.marca, true, JSON.stringify(r));
   assert.ok(/Posición estimada/.test(r.leyenda), `the legend has the row: ${JSON.stringify(r)}`);
+  await p.context().close();
+});
+
+test('when Paul is at a place with nowhere to draw, following him does not break the map', async () => {
+  const antes = errors.length;
+  const t = await page.evaluate(() => { const s = window.BE.P.find((x) => x.key === 'primer-viaje/3'); return (s.a + s.b) / 2; });
+  const p = await open('/pablo-sin-punto', `t=${t}`);
+  const r = await p.evaluate(() => {
+    const { BE, E } = window.__be;
+    const w = BE.dondeEsta(E.t);
+    let fallo = null;
+    try { BE.seguirPablo(); } catch (e) { fallo = e.message; }
+    return { lugar: w?.en.lugar.id, pos: w ? w.pos : 'sin w', fallo };
+  });
+  assert.deepEqual(r, { lugar: 'salamina', pos: null, fallo: null });
+  assert.deepEqual(errors.slice(antes), [], 'no page errors on load (mostrarPablo) either');
   await p.context().close();
 });
 

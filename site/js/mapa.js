@@ -989,11 +989,12 @@ function seguir(pos, forzar = false) {
   }
 }
 /** Tras un salto en el tiempo, Pablo no puede quedar fuera. Si los datos no lo sitúan en esa fecha y no hay selección,
-    el mapa enseña la época (encuadrarEpoca), si no se ve ya. */
+    el mapa enseña la época (encuadrarEpoca), si no se ve ya. Una estancia en un lugar sin dónde dibujarlo cuenta como
+    sin situar. */
 function seguirPablo() {
   tSalto = E.t;
   const w = BE.dondeEsta(E.t);
-  if (w) seguir(w.pos, true);
+  if (w?.pos) seguir(w.pos, true);
   else if (!E.sel) encuadrarEpoca(E.t, { siVisible: true });
 }
 /** Un salto grande en el tiempo sin selección (una fecha escrita, un año buscado, un clic lejano en la pista a escala de
@@ -1667,7 +1668,7 @@ function encuadrarEpoca(t, { siVisible = false } = {}) {
 function mostrarPablo() {
   if (E.sel || !map) return;
   const w = BE.dondeEsta(E.t);
-  if (!w) { encuadrarEpoca(E.t, { siVisible: true }); return; }
+  if (!w?.pos) { encuadrarEpoca(E.t, { siVisible: true }); return; }
   const hoja = altoHoja();
   const z = zonaLibre(), q = map.project(w.pos), m = 40;
   if (q.x > z.x0 + m && q.x < z.x1 - m && q.y > z.y0 + m && q.y < z.y1 - m) return;
