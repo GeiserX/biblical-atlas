@@ -4,16 +4,50 @@
 const BE = window.BE;
 const { E, esc, EXTERNO, fechaCorta, citas } = BE;
 
-/** Añade una parada y su lugar a lo que implica una selección. */
-function anadirParada(r, s) { r.claves.add(`parada:${s.key}`); r.lugares.add(s.lugar.id); }
+/** Añade una parada y su lugar a lo que implica una selección. Un área desconocida no tiene lugar: cuenta el de su parada
+    vecina, donde el mapa la dibuja, así que el encuadre se queda allí y no salta a la época. */
+function anadirParada(r, s) { r.claves.add(`parada:${s.key}`); r.lugares.add(s.lugar.area ? s.vecina?.lugar.id : s.lugar.id); r.lugares.delete(undefined); r.lugares.delete(null); }
 /** Una parada de Pablo o, si no, de los viajes de otra persona. */
 const buscaParada = (id) => BE.P.find((x) => x.key === id)
   || BE.D.viajes.filter((v) => BE.duenoViaje(v) !== 'pablo').flatMap((v) => BE.paradasDe(v)).find((x) => x.key === id);
-const momentoParada = (id) => { const s = buscaParada(id); return (s.a + s.b) / 2; };
+/** El momento de una parada: el medio de su estancia. El de un área desconocida cae dentro de la fecha del viaje: el
+    origen, en la llegada a su vecina (aún abierto), y el destino, justo después de salir de ella. Su estancia puede
+    quedar fuera de la fecha, pegada a la vecina, y el cursor no debe salir de la fecha del viaje. */
+const momentoParada = (id) => {
+  const s = buscaParada(id);
+  if (!s.lugar.area || !s.vecina) return (s.a + s.b) / 2;
+  const f = BE.tramo(s.viaje.fecha) || [-Infinity, Infinity];
+  const llega = s.i < s.vecina.i;
+  const t = llega ? s.vecina.a : Math.min((s.a + s.b) / 2, Math.max(f[1] - 1e-3, s.vecina.b + 1e-4));
+  return Math.max(f[0], Math.min(f[1] - 1e-4, t));
+};
+/** Cuántas paradas con lugar tiene un viaje: las que numeran «parada 1 de N». Un área no cuenta. */
+const paradasConLugar = (v) => (v.paradas || []).filter((p) => !p.unknown_area).length;
 
+/** Rumbo de un área desconocida, en palabras: el que da la fuente (`direction`). */
+const RUMBOS = { north: 'norte', northeast: 'nordeste', east: 'este', southeast: 'sudeste', south: 'sur', southwest: 'suroeste', west: 'oeste', northwest: 'noroeste' };
+/** Ficha de una parada que la fuente no sitúa: sus palabras, que no se sabe dónde es y la parada con lugar de al lado. */
+function fichaArea(s) {
+  const v = s.viaje, f = s.p.fecha || {}, a = s.lugar.area, k = s.vecina;
+  const llega = k && s.i < k.i;
+  return `${BE.migas(BE.nombreDueno(v, true), v.nombre, s.lugar.nombre)}${E.sel ? BE.cerrarHtml() : ''}
+    <section class="be-card"><div class="be-card__pad">
+      <div class="be-card__eyebrow"><span class="icono-lugar icono-lugar--area" aria-hidden="true"></span>${llega ? 'Origen del viaje' : 'Destino del viaje'}</div>
+      <h2 class="be-card__title">${esc(s.lugar.nombre)}</h2>
+      <p class="be-card__body"><b>La fuente no dice dónde.</b> ${a.rumbo ? `Solo da el rumbo: el ${RUMBOS[a.rumbo] || a.rumbo}. ` : ''}${a.zonas?.length ? 'En su fecha, el mapa lo dibuja en la zona de abajo, que es una conjetura, nunca como un punto.' : `En su fecha, el mapa lo dibuja como un área sin lugar junto a ${esc(k ? k.lugar.nombre : 'la parada vecina')}, nunca como un punto.`}</p>
+      ${s.p.nota ? `<p class="be-card__body">${esc(s.p.nota)}</p>` : ''}
+      <div class="fila-chips">${BE.chipsCitas(s.p.referencia)}<span class="be-chrono be-chrono--tnm">${esc(fechaCorta(f))}</span><span class="be-chrono be-chrono--approx">orden seguro, fecha aproximada</span></div>
+      ${k ? `<div class="be-list">${BE.botonSel(`parada:${k.key}`, `${llega ? 'Siguiente' : 'Anterior'}: ${k.lugar.nombre}`, esc(k.p.referencia))}</div>` : ''}
+    </div><div class="be-card__foot">${BE.estadoHtml(s.p.estado)}<span class="be-spacer"></span>${citas(s.p.referencia)[0] ? `<a class="be-wol" href="${BE.urlCita(citas(s.p.referencia)[0])}" ${EXTERNO}>Leer en jw.org</a>` : ''}</div></section>
+    ${a.zonas?.length ? `<section class="be-card ficha-sec"><div class="be-card__pad"><h3 class="be-card__eyebrow">Dónde pudo estar: una conjetura</h3>
+      ${a.zonas.map((z, i) => `<div class="zona-probable"><p class="be-card__body"><b>${esc(i ? `Otra ${BE.textoZona(z)}` : BE.textoZona(z).replace(/^z/, 'Z'))}.</b> ${esc(z.razon || '')}</p>
+        <p class="be-muted">${esc(z.nota || '')} No es lo que dice el texto.</p>${BE.fuentesHtml(z.fuentes)}</div>`).join('')}</div></section>` : ''}
+    ${BE.porQueHtml(s.p)}`;
+}
 function fichaParada(s, w) {
+  if (s.lugar.area) return fichaArea(s);
   const v = s.viaje;
-  const ordinal = `Parada ${s.i + 1} de ${s.n}`;
+  const ordinal = `Parada ${s.p.orden} de ${paradasConLugar(v)}`;
   const enCamino = w && !w.parada && w.sig;
   const eyebrow = w ? (enCamino ? `${ordinal} · De camino a ${w.sig.lugar.nombre}` : `${ordinal} · Dónde está ${BE.nombreDueno(v)}`) : ordinal;
   const f = s.p.fecha || {};
@@ -50,5 +84,5 @@ BE.tipo('parada', {
   ficha: (id) => fichaParada(buscaParada(id), null),
 });
 
-Object.assign(BE, { anadirParada, fichaParada });
+Object.assign(BE, { anadirParada, fichaParada, paradasConLugar });
 })();

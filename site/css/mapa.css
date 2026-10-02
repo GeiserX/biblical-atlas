@@ -86,6 +86,60 @@
 .be-legend__line--pendiente { border-top: 2px dotted var(--gold); opacity: .85; }
 .leyenda-estimada { width: 18px; height: 18px; margin: 0 4px; border-radius: 50%; border: 2px dashed var(--accent); background: color-mix(in srgb, var(--accent) 8%, transparent); }
 
+/* Área desconocida (mapa.js, pintarAreas): de dónde viene o adónde va un viaje cuando la fuente no lo sitúa. Es la
+   posición estimada en grande (contorno de trazos en el color del viaje), con un relleno claro que tapa el relieve y los
+   nombres de debajo, para que no parezca que encierra un sitio del mapa. Va en píxeles de pantalla junto a la parada
+   vecina, con un hilo y una flecha que dicen si el viaje viene de allí o va allí. Cerrada, se encoge hasta la parada;
+   la transición solo corre con --anima, y nunca con movimiento reducido. */
+.area-desc { width: 0; height: 0; pointer-events: none; z-index: 2; --rx: 68px; --ry: 30px; }
+.area-desc--anillo { --rx: 34px; --ry: 34px; }
+.area-desc__hilo { position: absolute; left: 0; top: -1px; width: var(--hilo); border-top: 2px dashed var(--viajero); transform-origin: 0 1px;
+  transform: rotate(var(--ang)) translateX(6px); opacity: .9; }
+/* La flecha: hacia la parada si el viaje viene del área, hacia el área si va allí. */
+.area-desc__hilo::after { content: ""; position: absolute; top: -6px; border: 5px solid transparent; }
+.area-desc--llega .area-desc__hilo::after { left: -4px; border-right: 8px solid var(--viajero); border-left-width: 0; }
+.area-desc--sale .area-desc__hilo::after { right: -4px; border-left: 8px solid var(--viajero); border-right-width: 0; }
+.area-desc__zona { position: absolute; left: calc(-1 * var(--rx)); top: calc(-1 * var(--ry)); width: calc(2 * var(--rx)); height: calc(2 * var(--ry));
+  padding: 0; border: 0; background: none; cursor: pointer; pointer-events: auto; transform: translate(var(--dx), var(--dy)); opacity: .95; }
+.area-desc__forma { position: absolute; inset: 0; border-radius: 50%; border: 2px dashed var(--viajero);
+  background: color-mix(in srgb, color-mix(in srgb, var(--viajero) 12%, var(--surface)) 80%, transparent);
+  box-shadow: 0 0 12px 2px color-mix(in srgb, var(--viajero) 22%, transparent); }
+.area-desc--anillo .area-desc__forma { background: color-mix(in srgb, var(--viajero) 8%, transparent); }
+.area-desc__rotulo { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); display: flex; flex-direction: column; align-items: center;
+  white-space: nowrap; font: 700 12.5px/1.15 var(--font-sans); color: var(--viajero); }
+.area-desc__rotulo small { font: italic 500 10.5px/1.15 var(--font-sans); color: var(--ink-2); }
+/* En el modo reunión el color del viaje es oscuro sobre un relleno oscuro: el nombre va aclarado. */
+.be-reunion .area-desc__rotulo b { color: color-mix(in srgb, var(--viajero) 45%, #fff); }
+.area-desc--anillo .area-desc__rotulo { top: auto; bottom: calc(100% + 4px); transform: translateX(-50%); padding: 2px 7px; border-radius: 6px;
+  background: color-mix(in srgb, var(--surface) 92%, transparent); border: 1px dashed var(--viajero); }
+.area-desc--cerrada .area-desc__zona { transform: translate(0, 0) scale(.06); opacity: 0; pointer-events: none; }
+.area-desc--cerrada .area-desc__hilo { transform: rotate(var(--ang)) translateX(6px) scaleX(0); opacity: 0; }
+/* Llega: acelera hacia la parada. Sale: se abre desde ella, frena y se difumina hasta su contorno suave. */
+.area-desc--anima .area-desc__zona, .area-desc--anima .area-desc__hilo { transition: transform .45s cubic-bezier(.55, 0, .9, .45), opacity .45s ease-in; }
+.area-desc--sale.area-desc--anima .area-desc__zona, .area-desc--sale.area-desc--anima .area-desc__hilo { transition: transform .45s cubic-bezier(.1, .55, .45, 1), opacity .2s ease-out; }
+.area-desc--sale.area-desc--anima.area-desc--abierta .area-desc__forma { animation: area-desc-difumina .45s ease-out; }
+@keyframes area-desc-difumina { from { border-style: solid; box-shadow: 0 0 0 4px var(--viajero); } to { box-shadow: 0 0 12px 2px color-mix(in srgb, var(--viajero) 22%, transparent); } }
+@media (prefers-reduced-motion: reduce) { .area-desc *, .area-desc *::before { transition: none !important; animation: none !important; } }
+/* El rótulo de una zona conjeturada: va en el centro de la zona (mapa.js, componerZonas), que se dibuja en el mapa. */
+.area-desc--zona .area-desc__zona { position: absolute; left: 0; top: 0; width: auto; height: auto; transform: translate(-50%, -50%); padding: 3px 8px;
+  border-radius: 8px; border: 1px dashed var(--viajero); background: color-mix(in srgb, var(--surface) 88%, transparent); opacity: 1; }
+.area-desc--zona .area-desc__rotulo { position: static; transform: none; }
+.area-desc--zona.area-desc--otra .area-desc__zona { border-style: dotted; }
+/* La ficha del borde de una zona que no se ve (mapa.js, pintarChipsZona): sus palabras, su conjetura y una flecha. */
+.area-chip { position: absolute; z-index: 4; transform: translate(-50%, -50%); display: inline-flex; align-items: center; gap: 6px; width: max-content; max-width: none; white-space: nowrap;
+  padding: 5px 10px; border-radius: var(--r-pill); border: 1.5px dashed var(--viajero); background: color-mix(in srgb, var(--surface) 94%, transparent);
+  color: var(--ink); font: 500 12px/1.2 var(--font-sans); box-shadow: var(--shadow-1); cursor: pointer; text-align: left; }
+.area-chip b { color: var(--viajero); }
+.be-reunion .area-chip b { color: color-mix(in srgb, var(--viajero) 45%, #fff); }
+.area-chip__flecha { display: inline-block; color: var(--viajero); transform: rotate(var(--angulo)); }
+.area-chip[data-lado="este"] { transform: translate(-100%, -50%); }
+.area-chip[data-lado="oeste"] { transform: translate(0, -50%); }
+.area-chip[data-lado="norte"] { transform: translate(-50%, 0); }
+.area-chip[data-lado="sur"] { transform: translate(-50%, -100%); }
+.area-chip[hidden] { display: none; }
+.leyenda-area { width: 26px; height: 16px; margin: 0 0 0 0; border-radius: 50%; border: 2px dashed var(--viajero, var(--accent)); background: color-mix(in srgb, var(--viajero, var(--accent)) 9%, transparent); }
+.icono-lugar--area { border-radius: 50%; border-style: dashed; transform: none; }
+
 /* Cortina */
 .cortina { position: absolute; inset: 0; z-index: 2; pointer-events: none; --x: 50%; }
 .cortina::before { content: ""; position: absolute; top: 0; bottom: 0; left: var(--x); border-left: 2px solid #fff; box-shadow: 0 0 0 1px rgba(0, 0, 0, .12); }

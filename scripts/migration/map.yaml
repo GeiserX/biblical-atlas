@@ -239,7 +239,13 @@ relation_keys:
 # Claves nuevas del modelo: no tienen nombre antiguo. build.py no las traduce, las añade con este mismo nombre.
 new_keys:
   relations[]: [word, caption, inverse_caption, office, certainty, checked_on]
-  journeys.stops[]: [checked_on]
+  journeys.stops[]: [checked_on, unknown_area]
+  # Un área desconocida sale entera en inglés, como en el YAML: las palabras de la fuente y su rumbo.
+  unknown_area: [words, direction, guesses]
+  # Las zonas que conjeturamos para un área: una forma con su nombre y status: conjecture; build.py añade ring y bbox.
+  unknown_area.guesses[]: [type, center, radius_km, radii_km, bearing, bounds, vertices, name, strength, according_to, note, sources, reason, checked_on, status]
+  unknown_area.guesses[].center: [lat, lon]
+  unknown_area.guesses[].bounds: [south, west, north, east]
   places.candidates[]: [checked_on, shape]
   places: [shape]
   # La forma de una zona sale entera en inglés, como en el YAML; build.py le añade `ring` y `bbox`.

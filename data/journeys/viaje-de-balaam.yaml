@@ -147,3 +147,49 @@ stops:
   - it-peor
   checked_on: '2026-09-30'
   status: verified
+- order: 7
+  place: null
+  unknown_area:
+    words: su lugar
+    guesses:
+    - name: madianitas junto a Moab
+      type: ellipse
+      center: {lat: 31.75, lon: 36.3}
+      radii_km: [50, 25]
+      bearing: 20
+      note: Elipse nuestra en la meseta al este de Peor y de Hesbón, sin tocarlos, hacia el desierto. Ninguna fuente da
+        contorno.
+      according_to: it-balaam
+      sources: [it-balaam, it-madian, josue-13, numeros-31]
+      reason: Perspicacia «Balaam» cita que se quedó entre los madianitas, y «Madián» dice que, al parecer, muchos vivían
+        entonces junto a Moab y al reino de Sehón. Allí lo matan con sus jefes (Nú 31:8; Jos 13:21, 22).
+      checked_on: '2026-10-02'
+      status: conjecture
+    - name: Petor
+      type: circle
+      center: {lat: 36.7014, lon: 38.0865}
+      radius_km: 60
+      strength: possible
+      note: Círculo nuestro de 60 km alrededor del punto incierto de Petor, su ciudad (Nú 22:5).
+      according_to: numeros-24
+      sources: [numeros-24, numeros-22, it-petor, it-balaam]
+      reason: Balac lo manda a su casa (Nú 24:11) y él dice que vuelve a su pueblo (24:14), que era Petor (22:5).
+        Perspicacia «Balaam» advierte que «su lugar» no tiene por qué ser Petor.
+      checked_on: '2026-10-02'
+      status: conjecture
+  reference: Nú 24:25
+  date:
+    from: -1472
+    to: -1472
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 1473 a.e.c.
+  note: Se va de Peor. La fuente no dice adónde, y no tiene por qué ser Petor.
+  reason: Nú 24:25. Perspicacia «Balaam» explica que la expresión solo dice que dejó Peor, no que regresara a su casa de Petor.
+  sources:
+  - numeros-24
+  - it-balaam
+  checked_on: '2026-10-02'
+  status: verified

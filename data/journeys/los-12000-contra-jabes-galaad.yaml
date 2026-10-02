@@ -1,6 +1,6 @@
 # biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
 id: los-12000-contra-jabes-galaad
-name: Los 12.000, de Jabés-Galaad a Siló
+name: Los 12.000, del campamento a Jabés-Galaad y Siló
 person: null
 group: los 12.000 guerreros que Israel envía contra Jabés-Galaad
 reference: Jue 21:8-12
@@ -27,6 +27,42 @@ sources:
 checked_on: '2026-10-02'
 status: verified
 stops:
+- order: 0
+  place: null
+  unknown_area:
+    words: el campamento
+    guesses:
+    - name: entre Mizpá, Betel y Siló
+      type: ellipse
+      center: {lat: 31.97, lon: 35.253}
+      radii_km: [13, 6]
+      bearing: 20
+      strength: possible
+      note: Elipse nuestra que abarca Mizpá (su candidato preferido), Betel y Siló, unos 20 km de sur a norte.
+      according_to: jueces-21
+      sources: [jueces-21, jueces-20, it-mizpa, it-silo]
+      reason: Deducción nuestra con los sitios del relato. La reunión fue en Mizpá (Jue 21:8; 20:1), el pueblo lloró en
+        Betel (21:2) y, a la vuelta, el campamento estaba en Siló (21:12).
+      checked_on: '2026-10-02'
+      status: conjecture
+  reference: Jue 21:8-10
+  date:
+    from: -1449
+    to: -1399
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre c. 1450 y c. 1400 a.e.c. (tiempo narrativo: pocos años después de morir Josué, con Finehás de sumo sacerdote)'
+  note: Salida deducida. La asamblea los envía (21:10) sin que el texto diga desde dónde; 21:8 llama a la reunión «el
+    campamento».
+  reason: Deducción nuestra. Jue 21:10 no dice desde dónde salen; el campamento de 21:8 es la reunión de Mizpá, el pueblo
+    está luego en Betel (21:2) y el campamento, en Siló (21:12).
+  sources:
+  - jueces-21
+  - jueces-20
+  checked_on: '2026-10-02'
+  status: pending
 - order: 1
   place: jabes-galaad
   reference: Jue 21:10-12
@@ -38,7 +74,7 @@ stops:
     type: narrative
     chronology: tnm
     text: 'entre c. 1450 y c. 1400 a.e.c. (tiempo narrativo: pocos años después de morir Josué, con Finehás de sumo sacerdote)'
-  note: Salen del campamento de Israel, que el texto no sitúa al mandarlos. Perspicacia no sabe con seguridad dónde estaba la ciudad.
+  note: Perspicacia no sabe con seguridad dónde estaba la ciudad.
   reason: Jue 21:10-12. Suceso israel-castiga-a-jabes-galaad; Perspicacia «Jabés-galaad».
   sources:
   - jueces-21

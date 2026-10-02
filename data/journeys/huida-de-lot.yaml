@@ -60,8 +60,7 @@ stops:
     type: anchored
     chronology: tnm
     text: 1919 a.e.c.
-  note: Pequeña ciudad que se salva por su ruego. Luego se van a vivir a una cueva de las montañas, sin nombre. Zóar no tiene
-    punto en el mapa.
+  note: Pequeña ciudad que se salva por su ruego. Zóar no tiene punto en el mapa.
   reason: Gé 19:22, 23 lo hace llegar a Zóar al salir el sol, y Gé 19:30 lo saca de allí por miedo. Fecha de los sucesos de
     la huida y de la destrucción.
   sources:
@@ -69,4 +68,40 @@ stops:
   - it-zoar
   - si-3
   checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: null
+  unknown_area:
+    words: la región montañosa
+    guesses:
+    - name: montes junto a Zóar
+      type: ellipse
+      center: {lat: 31.06, lon: 35.62}
+      radii_km: [15, 7]
+      bearing: 0
+      note: Elipse nuestra sobre el borde montañoso que se alza al este de Zóar, a menos de 20 km de su candidato
+        preferido. Ninguna fuente da contorno.
+      according_to: it-zoar
+      sources: [it-zoar, it-lot, genesis-19]
+      reason: Perspicacia «Zóar» dice que, según parece, la ciudad estaba en Moab o cerca, junto a sus montes y al sudeste
+        del mar Muerto, y llama cercana a la región de la cueva.
+      checked_on: '2026-10-02'
+      status: conjecture
+  reference: Gé 19:30
+  date:
+    from: -1918
+    to: -1918
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 1919 a.e.c.
+  note: Con miedo de seguir en Zóar, sube con sus hijas a vivir en una cueva. La fuente no nombra esos montes.
+  reason: Gé 19:30 lo saca de Zóar hacia la región montañosa. Perspicacia «Zóar» la llama cercana y no la sitúa. Fecha del
+    viaje.
+  sources:
+  - genesis-19
+  - it-zoar
+  - it-lot
+  checked_on: '2026-10-02'
   status: verified
