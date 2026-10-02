@@ -12,6 +12,8 @@ date:
 narrative_order:
   series: 1-samuel
   order: 7001
+  elapsed:
+    reason: '1Sa 6:21; 7:1: avisan a Quiryat-Jearim y vienen por el Arca. El texto no da el plazo.'
 places:
 - quiryat-jearim
 people:
@@ -34,5 +36,5 @@ links:
 - title: 1 Samuel 7 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/1-samuel/7/
   type: bible
-checked_on: '2026-09-29'
+checked_on: '2026-10-02'
 status: verified

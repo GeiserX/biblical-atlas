@@ -12,6 +12,10 @@ date:
 narrative_order:
   series: jueces-apendice
   order: 20029
+  elapsed:
+    since: israel-pierde-la-segunda-batalla-contra-benjamin
+    days: 1
+    reason: 'Jue 20:26-30: tras la segunda derrota ayunan en Betel aquel día; allí Jehová les promete la victoria para mañana, el tercer día de lucha.'
 places:
 - guibea-de-benjamin
 - baal-tamar
@@ -39,5 +43,5 @@ history:
   change: 'Pasa de la serie jueces a jueces-apendice. Perspicacia «Jueces, Libro de», «Orden del libro», pone los capítulos
     19 a 21 poco después de morir Josué, aparte de los jueces; en su serie adelantaban Jue 1:8-11:3.'
   source: it-jueces
-checked_on: '2026-09-29'
+checked_on: '2026-10-02'
 status: verified

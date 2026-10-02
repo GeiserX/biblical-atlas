@@ -254,7 +254,9 @@ test('1B: a group journey (the Ark) has its own owner, route, legend name and ca
     return { s: s && [s.a, s.b], w, s0: s0 && [s0.lugar.id, s0.a, s0.b], w0, lugar };
   });
   assert.ok(g.s && g.w && g.s[0] < g.w[1] && g.w[0] < g.s[1], `Ebenézer follows the capture of the Ark: stop ${g.s}, event ${g.w}`);
-  assert.ok(g.s0 && g.s0[0] === 'silo' && g.w0 && g.s0[1] < g.w0[1] && g.w0[0] < g.s0[2],
+  // A window is [start, end): since the Ark's account is a block of days (narrative_order.elapsed), the stop at Siló can
+  // be one instant at the very start of that event, which is inside it.
+  assert.ok(g.s0 && g.s0[0] === 'silo' && g.w0 && g.s0[1] < g.w0[1] && g.w0[0] <= g.s0[2],
     `the Ark leaves Siló when Israel takes it to the camp (1Sa 4:3-5): stop ${g.s0}, event ${g.w0}`);
   assert.match(g.lugar, /El Arca del pacto · /, 'the Asdod card names the group in its journey row');
   assert.ok(!d.pabloRastro.includes('el-arca-en-filistea'));
