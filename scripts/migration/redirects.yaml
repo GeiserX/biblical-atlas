@@ -392,10 +392,12 @@
   reason: '1Re 2:35; 4:4: jefe del ejército de Salomón. Es tie con master y el encargo va en la razón. Se queda el tie que
     ya había, con las fuentes de los dos.'
 - from: aquila/lived_in/roma
-  to: aquila/lived_in/roma@49
+  to: aquila/lived_in/roma
   removed_on: '2026-10-02'
-  reason: La estancia anterior al decreto de Claudio lleva su fecha para separarla de la vuelta hacia 56, que es otra relación.
+  reason: 'La relación sin fecha juntaba dos estancias: antes del decreto de Claudio (@49) y la vuelta hacia 56 (@56).
+    Lleva a la misma clave, que casa con las dos, para que apply.py se pare y alguien elija el tramo.'
 - from: priscila/lived_in/roma
-  to: priscila/lived_in/roma@49
+  to: priscila/lived_in/roma
   removed_on: '2026-10-02'
-  reason: La estancia anterior al decreto de Claudio lleva su fecha para separarla de la vuelta hacia 56, que es otra relación.
+  reason: 'La relación sin fecha juntaba dos estancias: antes del decreto de Claudio (@49) y la vuelta hacia 56 (@56).
+    Lleva a la misma clave, que casa con las dos, para que apply.py se pare y alguien elija el tramo.'

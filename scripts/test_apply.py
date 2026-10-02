@@ -515,6 +515,34 @@ class Prueba(unittest.TestCase):
         cob = read_yaml(a / "coverage" / "prueba.yaml")["chapters"][1]["spans"][0]["entities"]
         self.assertEqual(cob, ["person:ciro", "relation:cambises-ii/kin/ciro"])
 
+    def test_a_removed_key_split_in_two_stays_stops(self):
+        """Una clave sin fecha que se partió en dos tramos (aquila/lived_in/roma, en 49 y en 56) lleva en redirects.yaml
+        la misma clave: una propuesta que la trae, con fecha o sin ella, se para sin escribir y alguien elige el tramo."""
+        a = self.data("a")
+        tramo = ("- type: lived_in\n  place: aldea\n  date: {{from: {d}, to: {d}, precision: year, approx: true, "
+                 "type: anchored, chronology: tnm, text: x}}\n  inferred: false\n  sources: [f-comun]\n  reason: Prueba.\n"
+                 "  checked_on: '2026-01-01'\n  status: verified\n")
+        texto = ANA.replace("relations:\n", "relations:\n" + tramo.format(d=49) + tramo.format(d=56))
+        texto = texto.replace("- type: lived_in\n  place: aldea\n  inferred", "- type: lived_in\n  place: pueblo\n  inferred")
+        (a / "people" / "ana.yaml").write_text(texto, encoding="utf-8")
+        filas = a.parent / "scripts" / "migration"
+        filas.mkdir(parents=True)
+        (filas / "redirects.yaml").write_text(
+            "- from: ana/lived_in/aldea\n  to: ana/lived_in/aldea\n  removed_on: '2026-10-02'\n  reason: Prueba.\n",
+            encoding="utf-8")
+        fecha = {"desde": 56, "hasta": 56, "precision": "año", "aprox": True, "tipo": "anclada", "cronologia": "tnm",
+                 "texto": "c. 56"}
+        for nombre, extra in (("sin fecha", {}), ("con la fecha del segundo tramo", {"fecha": fecha})):
+            with self.subTest(nombre):
+                r = {"tipo": "vivio_en", "lugar": "aldea", "deducido": False, "fuentes": ["nueva"], "razon": "Prueba.",
+                     "estado": "verificado", **extra}
+                p = propuesta(1, [{"op": "anadir", "tipo": "personas", "id": "ana", "campo": "relaciones", "valores": [r]}],
+                              leido="2026-09-30")
+                codigo, salida = self.correr(a, p)
+                self.assertEqual(codigo, 1, salida)
+                self.assertIn("no casa con una sola relación", salida)
+                self.assertEqual((a / "people" / "ana.yaml").read_text(encoding="utf-8"), texto)
+
     # -- claves nuevas del modelo (new_keys de scripts/migration/map.yaml), que no tienen nombre antiguo
     EVENTO = """# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
 id: muerte
