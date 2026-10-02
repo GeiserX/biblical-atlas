@@ -92,7 +92,7 @@ Nueve zonas cuyas fuentes describen bien su extensión. Las demás siguen como e
 | Lugar | Forma | Lo que dice la fuente | Cómo sacamos el contorno |
 |---|---|---|---|
 | Desierto de Judá (candidato) | Elipse 80 × 20 km, al N | Perspicacia: unos 80 km junto al mar Muerto, de 16 a 24 de ancho | Desde el este del monte de los Olivos hacia el sur; ancho medio |
-| Arabá | Polígono de 12 vértices | Perspicacia: del pie del Hermón al golfo de ʽAqaba, 435 km, de 800 m a 16 km de ancho | Franja de 16 km por Dan, el mar de Galilea, la boca del Jordán, el sur del mar Salado, su punto y Elat |
+| Arabá | Polígono de 12 vértices | Perspicacia: del pie del Hermón al golfo de ʽAqaba, 435 km, de 800 m a 16 km de ancho | Franja de 16 km, el ancho mayor y no el de cada tramo, por Dan, el mar de Galilea, la boca del Jordán, el sur del mar Salado, su punto y Elat |
 | Canaán | Polígono de 11 vértices | Perspicacia, Gé 10:19 y Nú 34:3, 6: al oeste del Jordán, de Sidón a Guerar junto a Gaza y hacia Sodoma, de sitio incierto; la costa al oeste | Sidón, Dan, el Jordán y el mar Salado hasta su extremo sur, una recta nuestra hasta Gaza y la costa, algo mar adentro para que entren sus ciudades |
 | Galilea | Caja de 40 × 60 km | Perspicacia: en tiempos de Jesús, 40 km de este a oeste y 60 de norte a sur, con sus límites | Lado este en el Jordán, lado sur a la altura de Bet-seán |
 | Llanura de Sarón | Elipse 60 × 17,5 km, al NNE | Perspicacia: 60 km del Crocodilon a Jope, de 16 a 19 de ancho | Junto a la costa; ancho medio |
