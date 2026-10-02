@@ -2,18 +2,20 @@
 
 ## Elegido
 
-Elegimos 1B, 2D, 3C, 4B, 5A, 6aA, 6bA, 7A y en la 8 aA, bB, cA, dC, eC, fA, gB y hA. Lo que cambia el esquema y el sitio (1 a 4) ya está hecho; las respuestas de datos (5 a 8) van en su propio cambio. Así quedó:
+Elegimos 1B, 2D, 3C y 4B, lo que cambia el esquema y el sitio, y ya está hecho. Las preguntas de datos (5 a 8) van en su propio cambio. Así quedó:
 
 - **1B. Viajes de grupo.** Un viaje lleva `person` o, si lo hace un grupo sin ficha, `person: null` y `group`, un texto de 40 palabras como mucho. [`validate.py`](../../scripts/validate.py) exige uno de los dos y nunca los dos. En el sitio cada viaje de grupo es su propio dueño, `grupo:<id del viaje>`, con su ruta, su color y su nombre en la leyenda y en la ficha, sin marcador de viajero ni carril. Sus paradas siguen a los sucesos que cuentan un versículo de su referencia. El primero es `el-arca-en-filistea`, de Ebenézer a Quiryat-Jearim; los otros trece vienen después.
-- **2D. Paradas deducidas.** El tramo que llega a una parada pendiente o sale de ella se dibuja de puntos, y la leyenda dice «De puntos: tramo hacia una parada deducida, pendiente de verificar». Los datos no cambian.
-- **3C. Un tramo por acompañante.** Cada acompañante es un id (todo el viaje) o `{person, from, to}`. `validate.py` comprueba que las paradas existen, que `from` no pasa de `to` y que los tramos de una persona no se tocan. El modo lectura y la ficha de una parada nombran solo a quien va en esa parada; la ficha del viaje dice el tramo («de Listra a Berea y en Corinto»). Cambian diez viajes, cada tramo con su versículo. Trófimo sale de los últimos años de Pablo y pasa a la nota de Roma, porque se quedó en Mileto. Raquel va de la parada 1 a la 3, no a la 2, porque muere al dar a luz a Benjamín en el camino de Belén, donde empieza el tramo de Benjamín.
-- **4B. La ventana de las paradas.** El mapa dibuja el viaje de otra persona o de un grupo desde su primera parada hasta la última, tal como las coloca la línea de tiempo, y un año más en gris. Medido en un navegador con los datos de hoy, en 1070 a.e.c. pasan de 20 viajes a 3, en 1051 de 17 a 5, y el máximo en un año cualquiera, de 20 a 9, en 33 e.c., con Jesús y los suyos.
+- **2D. Paradas deducidas.** El tramo que llega a una parada pendiente o sale de ella se dibuja de puntos, y la leyenda dice «De puntos: tramo hacia una parada pendiente de verificar». La regla mira `status: pending`, así que también van de puntos las 18 paradas cuyo lugar da el texto y solo falta la fecha; separarlas pediría un campo nuevo. Los datos no cambian.
+- **3C. Un tramo por acompañante.** Cada acompañante es un id (todo el viaje) o `{person, from, to}`. `validate.py` comprueba que las paradas existen, que `from` no pasa de `to` y que los tramos de una persona no se tocan. El modo lectura y la ficha de una parada nombran solo a quien va en esa parada; la ficha del viaje dice el tramo («de Listra a Berea y en Corinto»). Cambian diez viajes, cada tramo con su versículo. En el tercero, los siete de Hch 20:4 van en Corinto y en Troas, pero no en Filipos, porque se adelantan. Trófimo sale de los últimos años de Pablo y pasa a la nota de Roma, porque se quedó en Mileto. Raquel va de la parada 1 a la 3, no a la 2, porque muere al dar a luz a Benjamín en el camino de Belén, donde empieza el tramo de Benjamín. En `data.json`, `companeros` sigue siendo una lista de ids, la que lee el servidor MCP, y los tramos van en `tramos_companeros`.
+- **4B. La ventana de las paradas.** El mapa dibuja el viaje de otra persona o de un grupo desde su primera parada hasta la última, tal como las coloca la línea de tiempo, sin salir nunca de la fecha del viaje, y un año más en gris. Sin ese recorte, la huida de Moisés a Madián se dibujaría cuarenta años y el viaje de Epafras a Roma, desde 33 e.c. Medido en un navegador con los datos de hoy, en 1070 a.e.c. pasan de 20 viajes a 3, en 1051 de 17 a 5, y el máximo en un año cualquiera, de 20 a 8, en 33 e.c., todos de Jesús y los suyos.
 
 ![El Arca elegida: su ruta de Ebenézer a Quiryat-Jearim, con Gat a trazos por ser incierta, y la ficha «Viaje del Arca del pacto»](img/viajes-modelo/esquema-arca.png)
 
 ![Jacob a Egipto: de Hebrón, parada deducida, a Beer-Seba de puntos; hacia Gosén, sin punto, a trazos](img/viajes-modelo/esquema-deducida.png)
 
 ![Modo lectura de Hechos 16 y 17: en Derbe van Pablo y Silas; en Listra se une Timoteo; en Atenas, Pablo solo](img/viajes-modelo/esquema-lectura.png)
+
+![1070 a.e.c.: tres viajes de David en gris, en vez de veinte](img/viajes-modelo/esquema-1070.png)
 
 ![1051 a.e.c.: cinco viajes, de Ahimáaz, Hadad, Jonatán, Absalón y David, en vez de diecisiete](img/viajes-modelo/esquema-1051.png)
 
