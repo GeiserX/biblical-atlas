@@ -192,21 +192,23 @@ test('with reduced motion there is no transition, only the two states; without i
     const el = document.querySelector(`.area-desc [data-sel="parada:${ASTRO}/1"]`).closest('.area-desc'), zona = el.querySelector('.area-desc__zona');
     setT(b);
     await new Promise((r) => requestAnimationFrame(() => requestAnimationFrame(r)));
-    await new Promise((r) => setTimeout(r, 120));
     const escala = () => new DOMMatrixReadOnly(getComputedStyle(zona).transform).a;
-    const medio = { estado: el.dataset.estado, duracion: getComputedStyle(zona).transitionDuration, escala: escala() };
+    // The running transitions of the shape, read from the page rather than timed: none with reduced motion.
+    const transiciones = zona.getAnimations().map((a) => a.effect.getTiming().duration);
+    const medio = { estado: el.dataset.estado, duracion: getComputedStyle(zona).transitionDuration, transiciones, escala: escala() };
     await new Promise((r) => setTimeout(r, 700));
     return { medio, final: escala() };
   }, { ASTRO, a: (ps[0].a + ps[0].b) / 2, b: ps[1].a + 0.001 });
   const normal = await cruzar(page);
   assert.equal(normal.medio.estado, 'cerrada');
   assert.deepEqual(normal.medio.duracion.split(', '), ['0.45s', '0.45s'], 'transform and opacity, under half a second');
-  assert.ok(normal.medio.escala > 0.1 && normal.medio.escala < 0.99, `mid-way through the collapse: ${JSON.stringify(normal)}`);
-  assert.ok(Math.abs(normal.final - 0.08) < 0.01, JSON.stringify(normal));
+  assert.deepEqual(normal.medio.transiciones, [450, 450], `transform and opacity run as transitions: ${JSON.stringify(normal)}`);
+  assert.ok(Math.abs(normal.final - 0.06) < 0.01, `closed into the stop: ${JSON.stringify(normal)}`);
   const p = await open({ hash: 't=0.5&linea=normal', reducedMotion: 'reduce' });
   const reducido = await cruzar(p);
   assert.deepEqual([...new Set(reducido.medio.duracion.split(', '))], ['0s']);
-  assert.ok(Math.abs(reducido.medio.escala - 0.08) < 0.01, `already closed, with no motion: ${JSON.stringify(reducido)}`);
+  assert.deepEqual(reducido.medio.transiciones, [], JSON.stringify(reducido));
+  assert.ok(Math.abs(reducido.medio.escala - 0.06) < 0.01, `already closed, with no motion: ${JSON.stringify(reducido)}`);
   await p.context().close();
 });
 
