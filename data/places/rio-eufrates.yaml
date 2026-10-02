@@ -11,12 +11,12 @@ lon: 38.2056
 precision: zone
 coord_source: calculation
 coord_url: https://github.com/nvkelso/natural-earth-vector/blob/v5.1.2/geojson/ne_10m_rivers_lake_centerlines.geojson
-coord_note: 'Cálculo propio: mitad, sobre el cauce actual de Natural Earth, de los 122 km entre Carquemis y Tifsá, tramo
-  al sur de Carquemis donde Perspicacia pone a Jeremías. Dista 47 km de Carquemis y 55 de Tifsá.'
+coord_note: 'Cálculo propio: mitad, sobre el cauce actual de Natural Earth, de los 122 km entre Carquemis y Tifsá. Dista 47 km
+  de Carquemis y 55 de Tifsá. Perspicacia sitúa a Jeremías al sur de Carquemis; Tifsá como final es nuestro.'
 summary: Cuarto brazo del río de Edén y el río más largo del suroeste de Asia, de unos 2.700 km. Nace en el este de Turquía
   y cruza Siria y Mesopotamia hasta el golfo Pérsico.
 reason: 'Perspicacia «Éufrates», párr. 2 y apartados «Afluentes y curso del río» y «Frontera; Jeremías estuvo allí»; Gé 2:14.
-  El punto es nuestro: el centro del tramo de Jer 13, para que no tape a Tifsá.'
+  El punto es nuestro: mitad del cauce entre Carquemis y Tifsá, para que no tape a Tifsá.'
 sources:
 - it-eufrates
 - it-tifsah
