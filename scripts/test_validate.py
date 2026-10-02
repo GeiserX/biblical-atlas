@@ -312,6 +312,21 @@ class AreaDesconocida(unittest.TestCase):
                 self.assertEqual(len(e), 1, e)
                 self.assertIn(trozo, e[0])
 
+    def test_zona_conjeturada_con_fuente_razon_y_estado_de_conjetura(self):
+        zona = {"name": "Babilonia", "type": "ellipse", "center": {"lat": 31.9, "lon": 46.0}, "radii_km": [240, 110],
+                "bearing": 135, "note": "Elipse nuestra.", "sources": ["it-este"], "reason": "Perspicacia «Este».",
+                "checked_on": "2026-10-02", "status": "conjecture"}
+        area = lambda **cambios: {"place": None, "unknown_area": {"words": "Oriente", "guesses": [dict(zona, **cambios)]}}
+        self.assertEqual(errores_areas(area(), {"place": "belen"}), [])
+        for cambio, trozo in [({"status": "verified"}, "status 'verified'"), ({"sources": []}, "'sources' vacío"),
+                              ({"reason": ""}, "'reason' vacía"), ({"name": ""}, "name, el nombre corto"),
+                              ({"center": None}, "necesita center"), ({"note": ""}, "falta note")]:
+            with self.subTest(cambio=cambio):
+                e = errores_areas(area(**cambio), {"place": "belen"})
+                self.assertTrue(any(trozo in x for x in e), e)
+        e = errores_areas({"place": None, "unknown_area": {"words": "Oriente", "guesses": []}}, {"place": "belen"})
+        self.assertTrue(any("lista de zonas" in x for x in e), e)
+
     def test_solo_en_los_extremos_y_con_algun_lugar(self):
         e = errores_areas({"place": "jerusalen"}, ORIENTE, {"place": "belen"})
         self.assertEqual(len(e), 1, e)
@@ -324,7 +339,8 @@ class AreaDesconocida(unittest.TestCase):
         # Sobre los datos de verdad: el área de los astrólogos pasa, y sin fuentes o con lugar a la vez da error.
         datos = validate.load(HERE.parent / "data")
         viaje = next(v for v in datos["journeys"] if v["id"] == "los-astrologos-de-oriente")
-        self.assertEqual(viaje["stops"][0]["unknown_area"], {"words": "Oriente", "direction": "east"})
+        area = viaje["stops"][0]["unknown_area"]
+        self.assertEqual((area["words"], area["direction"], area["guesses"][0]["status"]), ("Oriente", "east", "conjecture"))
         errores, _ = validate.validar(datos)
         self.assertEqual([e for e in errores if "los-astrologos" in e], [])
         viaje["stops"][0]["place"] = "jerusalen"

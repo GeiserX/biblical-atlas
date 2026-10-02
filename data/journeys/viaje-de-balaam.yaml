@@ -151,6 +151,29 @@ stops:
   place: null
   unknown_area:
     words: su lugar
+    guesses:
+    - name: madianitas junto a Moab
+      type: ellipse
+      center: {lat: 31.75, lon: 36.05}
+      radii_km: [50, 30]
+      bearing: 20
+      note: Elipse nuestra en la meseta al este de Peor, por donde dominaba Sehón y junto a Moab. Ninguna fuente da
+        contorno.
+      sources: [it-balaam, it-madian, josue-13, numeros-31]
+      reason: Perspicacia «Balaam» cita que se quedó entre los madianitas, y «Madián» los pone entonces junto a Moab y
+        al reino de Sehón. Allí lo matan con sus jefes (Nú 31:8; Jos 13:21, 22).
+      checked_on: '2026-10-02'
+      status: conjecture
+    - name: Petor
+      type: circle
+      center: {lat: 36.7014, lon: 38.0865}
+      radius_km: 60
+      note: Círculo nuestro de 60 km alrededor del punto incierto de Petor.
+      sources: [it-balaam, it-petor, numeros-22]
+      reason: Petor era su ciudad (Nú 22:5). Perspicacia «Balaam» dice que «su lugar» no tiene por qué ser Petor, pero
+        no lo descarta.
+      checked_on: '2026-10-02'
+      status: conjecture
   reference: Nú 24:25
   date:
     from: -1472

@@ -31,6 +31,18 @@ stops:
   place: null
   unknown_area:
     words: el campamento
+    guesses:
+    - name: entre Mizpá, Betel y Siló
+      type: ellipse
+      center: {lat: 31.97, lon: 35.253}
+      radii_km: [13, 6]
+      bearing: 20
+      note: Elipse nuestra que abarca Mizpá (su candidato preferido), Betel y Siló, unos 20 km de sur a norte.
+      sources: [jueces-20, jueces-21, it-mizpa, it-silo]
+      reason: La asamblea se reunió en Mizpá (Jue 20:1; 21:5, 8), el pueblo lloró en Betel (21:2) y, a la vuelta, el
+        campamento estaba en Siló (21:12). El de 21:8 estaría en esa zona.
+      checked_on: '2026-10-02'
+      status: conjecture
   reference: Jue 21:8-10
   date:
     from: -1449

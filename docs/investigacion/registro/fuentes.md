@@ -1275,6 +1275,7 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-estanque | [Estanque](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Estanque/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-30 |
 | it-estaol | [Estaol](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Estaol/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-estaquis | [Estaquis](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Estaquis/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
+| it-este | [Este](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Este/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-02 |
 | it-esteban | [Esteban](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Esteban/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
 | it-estefanas | [Estéfanas](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Est%C3%A9fanas/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
 | it-estemoa | [Estemoa, Estemó](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Estemoa-Estem%C3%B3/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |

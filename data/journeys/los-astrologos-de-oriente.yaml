@@ -31,6 +31,30 @@ stops:
   unknown_area:
     words: Oriente
     direction: east
+    guesses:
+    - name: Babilonia
+      type: ellipse
+      center: {lat: 31.9, lon: 46.0}
+      radii_km: [240, 110]
+      bearing: 135
+      note: Elipse nuestra sobre la llanura de Babilonia, del norte de la ciudad al golfo, a lo largo del Éufrates y el
+        Tigris. Ninguna fuente da contorno.
+      sources: [it-este, it-astrologos, jy-cap-7]
+      reason: Perspicacia «Este» dice que vinieron de la dirección de Babilonia, y «Astrólogos» recoge que los estudios
+        hacen de Babilonia el centro de esa magia. Siguieron la estrella cientos de kilómetros (Jesús, cap. 7).
+      checked_on: '2026-10-02'
+      status: conjecture
+    - name: Media
+      type: ellipse
+      center: {lat: 34.81, lon: 48.52}
+      radii_km: [260, 150]
+      bearing: 135
+      note: Elipse nuestra alrededor del punto de Media, a lo largo de sus montes. Ninguna fuente da contorno.
+      sources: [it-astrologos]
+      reason: Perspicacia «Astrólogos» recoge que Heródoto hacía de los magos una tribu meda, aunque se inclina por
+        Babilonia. Es la otra propuesta que cita.
+      checked_on: '2026-10-02'
+      status: conjecture
   reference: Mt 2:1, 2
   date:
     from: 0
@@ -90,6 +114,31 @@ stops:
   place: null
   unknown_area:
     words: su país
+    direction: east
+    guesses:
+    - name: Babilonia
+      type: ellipse
+      center: {lat: 31.9, lon: 46.0}
+      radii_km: [240, 110]
+      bearing: 135
+      note: Elipse nuestra sobre la llanura de Babilonia, del norte de la ciudad al golfo, a lo largo del Éufrates y el
+        Tigris. Ninguna fuente da contorno.
+      sources: [it-este, it-astrologos, jy-cap-7]
+      reason: Perspicacia «Este» dice que vinieron de la dirección de Babilonia, y «Astrólogos» recoge que los estudios
+        hacen de Babilonia el centro de esa magia. Siguieron la estrella cientos de kilómetros (Jesús, cap. 7).
+      checked_on: '2026-10-02'
+      status: conjecture
+    - name: Media
+      type: ellipse
+      center: {lat: 34.81, lon: 48.52}
+      radii_km: [260, 150]
+      bearing: 135
+      note: Elipse nuestra alrededor del punto de Media, a lo largo de sus montes. Ninguna fuente da contorno.
+      sources: [it-astrologos]
+      reason: Perspicacia «Astrólogos» recoge que Heródoto hacía de los magos una tribu meda, aunque se inclina por
+        Babilonia. Es la otra propuesta que cita.
+      checked_on: '2026-10-02'
+      status: conjecture
   reference: Mt 2:12
   date:
     from: 0
@@ -100,9 +149,11 @@ stops:
     chronology: tnm
     text: entre 1 a.e.c. y 1 e.c.
   note: Avisados en un sueño, se marchan por otro camino sin volver a Herodes. La fuente no dice dónde queda su país.
-  reason: Mt 2:12 los devuelve a su país. Ni el versículo ni Perspicacia «Astrólogos» lo sitúan ni le dan rumbo.
+  reason: Mt 2:12 los devuelve a su país, sin situarlo. Es donde vieron la estrella (Jesús, cap. 7), así que su rumbo
+    es el de Oriente (Mt 2:1, 2).
   sources:
   - mateo-2
   - it-astrologos
+  - jy-cap-7
   checked_on: '2026-10-02'
   status: verified

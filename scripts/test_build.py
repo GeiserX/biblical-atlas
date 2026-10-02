@@ -2,6 +2,7 @@
 """Pruebas de lo que scripts/build.py compila de un par escrito en las dos fichas. Uso: python3 scripts/test_build.py
 
 Trabajan sobre un data/ pequeño en una carpeta temporal, con el vocabulario de verdad (data/vocabulary.yaml)."""
+import json
 import shutil
 import sqlite3
 import sys
@@ -135,17 +136,22 @@ class SqliteAreaDesconocida(unittest.TestCase):
                                 " order by viaje_id, orden").fetchall()
             sin_lugar = con.execute("select count(*) from paradas where lugar_id is null and unknown_area is null").fetchone()[0]
             con.close()
-        self.assertIn(("los-astrologos-de-oriente", 1, None, '{"words": "Oriente", "direction": "east"}'), filas)
-        self.assertIn(("los-astrologos-de-oriente", 4, None, '{"words": "su país"}'), filas)
+        areas = {(v, o): json.loads(a) for v, o, _, a in filas}
+        self.assertEqual([x[2] for x in filas if x[0] == "los-astrologos-de-oriente"], [None, None])
+        self.assertEqual(areas[("los-astrologos-de-oriente", 1)]["words"], "Oriente")
+        self.assertEqual(areas[("los-astrologos-de-oriente", 4)]["words"], "su país")
         self.assertEqual(sin_lugar, 0)
 
     def test_data_json_lleva_el_area_en_la_parada(self):
         datos, _ = build.cargar(HERE.parent / "data")
         salida, _, _ = build.componer(datos, "2026-10-02")
         v = next(x for x in salida["viajes"] if x["id"] == "los-astrologos-de-oriente")
-        self.assertEqual([(p["orden"], p["lugar"], p.get("unknown_area")) for p in v["paradas"]],
-                         [(1, None, {"words": "Oriente", "direction": "east"}), (2, "jerusalen", None), (3, "belen", None),
-                          (4, None, {"words": "su país"})])
+        self.assertEqual([(p["orden"], p["lugar"], (p.get("unknown_area") or {}).get("words")) for p in v["paradas"]],
+                         [(1, None, "Oriente"), (2, "jerusalen", None), (3, "belen", None), (4, None, "su país")])
+        # Cada zona conjeturada sale con su contorno y su caja, como la forma de una zona, y su estado de conjetura.
+        z = v["paradas"][0]["unknown_area"]["guesses"][0]
+        self.assertEqual((z["name"], z["status"], len(z["ring"]), z["ring"][0] == z["ring"][-1]), ("Babilonia", "conjecture", 73, True))
+        self.assertEqual(len(z["bbox"]), 2)
 
 
 class ChapterUrls(unittest.TestCase):
