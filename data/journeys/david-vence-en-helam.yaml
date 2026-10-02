@@ -30,7 +30,7 @@ narrative_order:
   order: 9
 stops:
 - order: 1
-  place: rio-jordan
+  place: jerusalen
   reference: 2Sa 10:17
   date:
     from: -1069
@@ -40,14 +40,15 @@ stops:
     type: narrative
     chronology: tnm
     text: 'entre 1070 y c. 1040 a.e.c. (tiempo narrativo: David ya reina en Jerusalén)'
-  note: Cruza el río con todo el ejército.
-  reason: '2Sa 10:17: David reúne a Israel y cruza el Jordán. Fecha: la del suceso david-vence-a-los-sirios-en-helam.'
+  note: Ya reina en Jerusalén.
+  reason: '2Sa 10:17 no nombra la salida; ya reinaba en Jerusalén (2Sa 5:9-12). Es deducción nuestra. Fecha: la del suceso
+    david-vence-a-los-sirios-en-helam.'
   sources:
   - 2-samuel-10
-  - 1-cronicas-19
+  - 2-samuel-5
   - si-3
-  checked_on: '2026-09-30'
-  status: verified
+  checked_on: '2026-10-02'
+  status: pending
 - order: 2
   place: helam
   reference: 2Sa 10:17, 18
@@ -59,12 +60,14 @@ stops:
     type: narrative
     chronology: tnm
     text: 'entre 1070 y c. 1040 a.e.c. (tiempo narrativo: David ya reina en Jerusalén)'
-  note: Muere Sobac, jefe del ejército sirio.
-  reason: '2Sa 10:17, 18: llega a Helam y vence a los sirios; Perspicacia «Helam». Fecha: la del suceso david-vence-a-los-sirios-en-helam.'
+  note: Antes cruza el Jordán con todo Israel (2Sa 10:17). Muere Sobac, jefe del ejército sirio.
+  reason: '2Sa 10:17, 18: cruza el Jordán, llega a Helam y vence a los sirios; Perspicacia «Helam». El cruce va en esta nota:
+    solo se cruza. Fecha: la del suceso david-vence-a-los-sirios-en-helam.'
   sources:
   - 2-samuel-10
+  - 1-cronicas-19
   - it-helam
   - it-sobac
   - si-3
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-02'
   status: verified

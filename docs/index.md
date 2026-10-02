@@ -18,7 +18,7 @@ hide:
 
 ---
 
-**biblical-atlas** es un mapa y una línea de tiempo que se mueven con una sola fecha, para estudiar la Biblia en familia. Eliges un año y ves quién vivía, dónde estaba y qué pasaba alrededor, de Adán a Juan en Patmos. Cada dato lleva a su fuente en jw.org: se enlaza, nunca se copia. La aplicación está en [biblical-atlas.geiser.cloud](https://biblical-atlas.geiser.cloud/); estas páginas explican cómo usarla, de dónde salen los datos y cómo ayudar. Empieza por [Primeros pasos](getting-started.md) y sigue con [Uso](usage.md).
+**biblical-atlas** es un mapa y una línea de tiempo que se mueven con una sola fecha, para estudiar la Biblia en familia. Eliges un año y ves quién vivía, dónde estaba y qué pasaba alrededor, de Adán a Juan en Patmos. Cada dato enlaza a su fuente. La aplicación está en [biblical-atlas.geiser.cloud](https://biblical-atlas.geiser.cloud/); estas páginas explican cómo usarla, de dónde salen los datos y cómo ayudar. Empieza por [Primeros pasos](getting-started.md) y sigue con [Uso](usage.md).
 
 <div class="grid cards ba-cards" markdown>
 
@@ -75,7 +75,7 @@ Una fecha lo mueve todo: arrastra el cursor o pulsa reproducir y el mapa enseña
 
 ## Qué cubre
 
-- De Adán a Juan en Patmos: los reyes de Judá e Israel, Judá bajo los medos y los persas, Babilonia a lo largo de los siglos, la vida de Jesús en armonía con la tabla A7 de la TNM de estudio, todo Hechos y los viajes y las cartas de Pablo y de Pedro.
+- De Adán a Juan en Patmos: los reyes de Judá e Israel, Judá bajo los medos y los persas, Babilonia a lo largo de los siglos, la vida de Jesús con los cuatro evangelios en armonía, todo Hechos y los viajes y las cartas de Pablo y de Pedro.
 - Los lugares inciertos se dibujan como zonas o como candidatos, nunca como un punto seguro.
 - Cada persona con sus nombres por época, sus relaciones con su verbo y su pasaje, y su posición en cada momento.
 - Cuántas fichas hay de cada tipo, al día: la portada del [registro](investigacion/registro/index.md).
@@ -89,7 +89,6 @@ Una fecha lo mueve todo: arrastra el cursor o pulsa reproducir y el mapa enseña
 ## Qué no hace
 
 - No es un sitio de jw.org ni habla en su nombre. No explica ni interpreta la Biblia: cada ficha lleva al pasaje y a las publicaciones que lo sostienen.
-- No copia textos, mapas, imágenes ni vídeos de jw.org. Solo enlaza.
 - No entra nada de otras confesiones, ni una fecha sin fuente.
 
 ## Privacidad
@@ -99,7 +98,7 @@ Una fecha lo mueve todo: arrastra el cursor o pulsa reproducir y el mapa enseña
 
 ## Ayuda
 
-- Un dato mal: «Proponer una corrección» en la ficha abre una incidencia en GitHub con el fichero ya puesto. Solo pide qué está mal, qué debería decir y la página de jw.org que lo sostiene.
+- Un dato mal: «Proponer una corrección» en la ficha abre una incidencia en GitHub con el fichero ya puesto. Solo pide qué está mal, qué debería decir y la página que lo sostiene.
 - Un cambio tuyo: [Desarrollo](development.md) explica cómo compilar, validar y proponer un PR. Lo decidido está en [Decisiones](decisiones.md) y lo que queda, en la [Hoja de ruta](hoja-de-ruta.md).
 - Un problema de seguridad: la [política de seguridad](https://github.com/GeiserX/biblical-atlas/blob/main/SECURITY.md), nunca una incidencia pública.
 

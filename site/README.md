@@ -27,7 +27,7 @@ El mapa lleva solo la atribución que piden las licencias (OpenBible.info, el re
 
 - `data.json`: lo escribe [`scripts/build.py`](../scripts/build.py) a partir de los YAML de [`data/`](../data/). No se edita a mano: para cambiar un dato, edita el YAML y vuelve a compilar. El formato es `biblical-atlas/v0` y está descrito en [`docs/ideas/modelo-de-datos.md`](../docs/ideas/modelo-de-datos.md).
 - `data.js`: el mismo contenido que `data.json`, envuelto en `window.BIBLICAL_ATLAS_DATA = …;`. Solo se usa al abrir el sitio desde `file://`, donde `fetch` no funciona. También lo escribe `scripts/build.py`, así que nunca se queda atrás.
-- `stats.json`: cuántas fichas hay de cada tipo. También lo escribe `scripts/build.py`; el README del repositorio lo lee para sus insignias.
+- `stats.json`: cuántas fichas hay de cada tipo, con `fuentes` (las escritas que algún dato cita) y `capitulos` (los capítulos de la Biblia que añade la compilación), las mismas cifras que `cifrasFuentes` pinta en la portada. También lo escribe `scripts/build.py`; el README del repositorio lo lee para sus insignias.
 - `videos.json`: vídeos de jw.org que nombran cada lugar, con la forma `{ "<id de lugar>": [ { "titulo", "url", "publicado", "menciones" } ] }`. Lo escribe [`scripts/videos/index.py`](../scripts/videos/index.py). Si falta, la ficha de lugar no enseña esa sección.
 - `videos-pasajes.json`: vídeos que citan cada capítulo, con la forma `{ "<libro>": { "serie": [ … ], "capitulos": { "16": [ … ] } } }`. Lo escribe [`scripts/videos/passages.py`](../scripts/videos/passages.py) y lo leen la ficha de pasaje y el modo lectura. Si falta, la sección no sale.
 - `videos-personas.json`: vídeos que nombran cada persona, con la misma forma que `videos.json`. Lo escribe `index.py` y lo lee la ficha de persona. Si falta, o desde `file://`, la sección no sale.
@@ -118,7 +118,7 @@ Los demás parámetros solo aparecen cuando no valen lo de siempre:
 |---|---|---|
 | `ocultas` | lista de `viajes,cartas,inciertos,hallazgos,pendientes,relieve` | Capas apagadas en el menú de capas |
 | `nombres` | `antiguos`, `actuales` | Nombres del mapa; sin él, los dos donde ayuda |
-| `nivel` | `1` | Filtro «Solo la Biblia y jw.org» |
+| `nivel` | `1` | Filtro «Solo fuentes principales» |
 | `cartas` | `todas`, `hasta`, `personas` | Qué cartas se dibujan; sin él, las cercanas a la fecha |
 | `carriles` | lista de ids de carril o de persona | Carriles fijados en la línea de tiempo. El carril «Viajes de Pablo» conserva el id `pablo`, el mismo que tenía cuando se llamaba «Pablo» |
 | `secular` | `0` | Oculta las fechas seculares |
@@ -231,7 +231,7 @@ BE.tipo('lugar', {
 
 `trayectorias.js`, `linea.js` y `ahora.js` publican además `BE.estancias(persona)`, `BE.sucesoEn(persona, t)` (el suceso del que sale el lugar que da `BE.donde`; de ahí sale el de «Mientras tanto»), `BE.presentes(t)`, `BE.edad(persona, t)`, `BE.ventanaFecha(fecha)`, `BE.diaHebreo(t)`, `BE.anioHebreo(y)` (los 12 o 13 meses del año hebreo que empieza en la primavera de `y`), `BE.nombreMes(mes, y)` (el nombre del mes en esa época), `BE.fmtMes(t, fino)` (como `fmtCursor`, con la duración real de nuestros meses), `BE.irA(t, escala)`, `BE.encuadrarTiempo(a, b)`, `BE.inicioPeriodo(p)` (el principio conocido de un periodo: su `desde`; si no tiene, `consta_desde`; si tampoco, el principio del tramo dibujado), `BE.resumenAhora(t)`, `BE.fraseAhora(t)` y `BE.sincronia.alternar(on, { lugar, periodo })`.
 
-`ficha.js` publica `BE.marcaNivel(n)`, la marca del tipo de fuente que usan las fichas y los carriles (la portada escribe las mismas en su HTML): punto lleno para la Biblia y jw.org, aro para otra fuente que jw.org ha usado. El nombre va en el texto emergente y para los lectores de pantalla.
+`ficha.js` publica `BE.marcaNivel(n)`, la marca del tipo de fuente que usan las fichas y los carriles (la portada escribe las mismas en su HTML): punto lleno para la Biblia o una publicación que la explica, aro para otra fuente que acompaña. El nombre va en el texto emergente y para los lectores de pantalla.
 
 `window.__be` expone lo necesario para las pruebas en Chrome sin interfaz: `E`, `P`, `D`, `BE`, `dondeEsta`, `donde`, `ventana`, `ventanaCarta`, `ventanaEvento`, `setT`, `seleccionar`, `ponerMapa` y `map`.
 

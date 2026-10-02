@@ -17,7 +17,7 @@ const R = window.BE.portada?.reglas;
 
 test('the file loads without a document and publishes its rules', () => {
   assert.ok(R, 'BE.portada.reglas is missing');
-  for (const k of ['ordenPortada', 'dirPeriodo', 'dirRecorrido', 'dirLineaCompleta', 'vueltaValida', 'debeGuardar', 'lineaEpoca']) assert.equal(typeof R[k], 'function', k);
+  for (const k of ['ordenPortada', 'dirPeriodo', 'dirRecorrido', 'dirLineaCompleta', 'vueltaValida', 'debeGuardar', 'lineaEpoca', 'cifrasFuentes', 'fraseCifras']) assert.equal(typeof R[k], 'function', k);
 });
 
 test('the landing list: the exact name first, then points, then the site order', () => {
@@ -83,4 +83,32 @@ test('an era shows its last sentence that names a book, or its first', () => {
   assert.equal(R.lineaEpoca('Nacen Juan el Bautista y Jesús. Lo cuentan Mateo, Marcos, Lucas y Juan.', libros), 'Lo cuentan Mateo, Marcos, Lucas y Juan.');
   assert.equal(R.lineaEpoca('Cuatro siglos sin libro bíblico. Grecia y después Roma dominan Judea.', libros), 'Cuatro siglos sin libro bíblico.');
   assert.equal(R.lineaEpoca('', libros), '');
+});
+
+test('the source figures: written sources some fact cites, and the Bible chapters the build adds, apart', () => {
+  // «u» is written but nothing cites it; «mateo-26» and «mateo-27» are chapters the build adds (implicita), cited or
+  // not; a loose «fuente» and a list nested at any depth both count, and an id cited twice counts once. «w» is cited
+  // only by an office, which the build compiles with «sources».
+  const D = {
+    fuentes: { s: {}, t: {}, u: {}, v: {}, w: {}, 'mateo-26': { implicita: true }, 'mateo-27': { implicita: true } },
+    personas: { p: { offices: [{ office: 'king', sources: ['w'] }] } },
+    eventos: [{ fuentes: ['s', 't'] }],
+    lugares: { a: { candidatos: [{ fuentes: ['t', 'mateo-26'] }] } },
+    recorridos: [{ paradas: [{ fuente: 'v' }] }],
+    calendario: { explicacion: [{ fuentes: ['s'] }] },
+  };
+  assert.deepEqual({ ...R.cifrasFuentes(D) }, { enlazadas: 4, capitulos: 2 });
+  assert.deepEqual({ ...R.cifrasFuentes({}) }, { enlazadas: 0, capitulos: 0 });
+});
+
+test('the figures sentence names the sources it links, and leaves out what is zero', () => {
+  assert.equal(R.fraseCifras({ sucesos: 1439, lugares: 934, personas: 1312, enlazadas: 2463, capitulos: 834 }),
+    '1439 sucesos, 934 lugares y 1312 personas, enlazados a 2463 fuentes y a 834 capítulos de la Biblia.');
+  assert.equal(R.fraseCifras({ sucesos: 12345, lugares: 2, personas: 3, enlazadas: 4, capitulos: 0 }),
+    '12.345 sucesos, 2 lugares y 3 personas, enlazados a 4 fuentes.');
+  assert.equal(R.fraseCifras({ sucesos: 0, lugares: 5, personas: 0, enlazadas: 0, capitulos: 7 }),
+    '5 lugares, enlazados a 7 capítulos de la Biblia.');
+  assert.equal(R.fraseCifras({ sucesos: 3, lugares: 0, personas: 0 }), '3 sucesos.');
+  assert.equal(R.fraseCifras({}), '');
+  assert.doesNotMatch(R.fraseCifras({ sucesos: 1, enlazadas: 2, capitulos: 3 }), /jw\.org|citadas/);
 });
