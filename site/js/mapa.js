@@ -568,14 +568,21 @@ const viajesRepetidos = (g) => {
   const ids = new Set([...g.hecho, ...g.falta, ...g.rastro].map((f) => f.properties.viaje));
   return BE.D.viajes.filter((v) => v.repeats === 'yearly' && ids.has(v.id));
 };
-/** La marca «↻ cada año» de cada viaje dibujado que se repite: en medio de su primer tramo, del color de su ruta. */
+/** La marca «↻ cada año» de cada viaje dibujado que se repite: en medio de su tramo más largo, lejos de los nombres de
+    sus lugares, y del color de su ruta. */
 const marcasRepite = new Map();       // id de viaje → marker
 function pintarRepite(g) {
   const vs = viajesRepetidos(g), vivos = new Set(vs.map((v) => v.id));
   for (const [id, m] of marcasRepite) if (!vivos.has(id)) { m.remove(); marcasRepite.delete(id); }
   for (const v of vs) {
-    const f = [...g.hecho, ...g.falta, ...g.rastro].find((x) => x.properties.viaje === v.id);
-    const [a, b] = f.geometry.coordinates;
+    const fs = [...g.hecho, ...g.falta, ...g.rastro].filter((x) => x.properties.viaje === v.id);
+    let a = null, b = null, f = fs[0];
+    for (const x of fs) {
+      const cs = x.geometry.coordinates;
+      for (let i = 1; i < cs.length; i++) {
+        if (!a || Math.hypot(cs[i][0] - cs[i - 1][0], cs[i][1] - cs[i - 1][1]) > Math.hypot(b[0] - a[0], b[1] - a[1])) { [a, b] = [cs[i - 1], cs[i]]; f = x; }
+      }
+    }
     let m = marcasRepite.get(v.id);
     if (!m) {
       const el = document.createElement('span');
