@@ -1,6 +1,6 @@
 # biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
 id: los-astrologos-de-oriente
-name: Los astrólogos, de Jerusalén a Belén
+name: Los astrólogos, de Oriente a Belén
 person: null
 group: los astrólogos de Oriente
 reference: Mt 2:1-12
@@ -15,8 +15,8 @@ date:
 companions: []
 summary: Unos astrólogos de Oriente llegan a Jerusalén preguntando por el rey de los judíos. Herodes los manda a Belén; ven
   al niño en una casa, le dan oro, olíbano y mirra y vuelven a su tierra por otro camino.
-reason: 'Mateo 2:1-12 da las dos paradas; tabla A7-A, fila 7. Mateo no nombra su país ni dice cuántos eran (Perspicacia «Astrólogos»):
-  no tienen ficha ni punto de salida.'
+reason: 'Mateo 2:1-12 da las paradas; tabla A7-A, fila 7. Mateo no nombra su país ni dice cuántos eran (Perspicacia «Astrólogos»):
+  no tienen ficha, y la salida y la vuelta son áreas desconocidas.'
 sources:
 - mateo-2
 - tnm-a7-a
@@ -26,6 +26,54 @@ sources:
 checked_on: '2026-10-02'
 status: verified
 stops:
+- order: 0
+  place: null
+  unknown_area:
+    words: Oriente
+    direction: east
+    guesses:
+    - name: región de Babilonia
+      type: ellipse
+      center: {lat: 31.9, lon: 46.0}
+      radii_km: [240, 110]
+      bearing: 135
+      note: Elipse nuestra sobre la llanura de Babilonia y la baja Mesopotamia, del norte de la ciudad al golfo. Ninguna
+        fuente da contorno.
+      according_to: it-estrella
+      sources: [it-estrella, it-herodes, ia-jose-protegio-a-su-familia, it-este]
+      reason: Perspicacia «Estrella» los hace de la vecindad de Babilonia; «Herodes» ve probable que llegaran de
+        Babilonia o Mesopotamia, y Ejemplos de fe, de la lejana Babilonia. «Este» da esa dirección.
+      checked_on: '2026-10-02'
+      status: conjecture
+    - name: Partia
+      type: circle
+      center: {lat: 35.5, lon: 56.0}
+      radius_km: 350
+      strength: possible
+      note: El círculo de 350 km del candidato de Partia en su ficha, al sudeste del mar Caspio. Ninguna fuente da contorno.
+      according_to: sh-cap-4
+      sources: [sh-cap-4, it-partos]
+      reason: El hombre en busca de Dios, cap. 4, recoge que algunos doctos los suponen de una escuela caldea y
+        medopersa de astrología, en Partia. Solo lo recoge; no lo afirma.
+      checked_on: '2026-10-02'
+      status: conjecture
+  reference: Mt 2:1, 2
+  date:
+    from: 0
+    to: 1
+    precision: range
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: entre 1 a.e.c. y 1 e.c.
+  note: Salida. Allí vieron la estrella; la fuente no dice qué país era ni a qué distancia queda.
+  reason: Mt 2:1, 2 los trae de Oriente, y la nota de estudio de 2:2 entiende que es donde estaban al ver la estrella. Perspicacia
+    «Astrólogos» habla de las partes orientales sin situarlas.
+  sources:
+  - mateo-2
+  - it-astrologos
+  checked_on: '2026-10-02'
+  status: verified
 - order: 1
   place: jerusalen
   reference: Mt 2:1-8
@@ -62,5 +110,53 @@ stops:
   - mateo-2
   - tnm-a7-a
   - it-astrologos
+  checked_on: '2026-10-02'
+  status: verified
+- order: 3
+  place: null
+  unknown_area:
+    words: su país
+    guesses:
+    - name: región de Babilonia
+      type: ellipse
+      center: {lat: 31.9, lon: 46.0}
+      radii_km: [240, 110]
+      bearing: 135
+      note: Elipse nuestra sobre la llanura de Babilonia y la baja Mesopotamia, del norte de la ciudad al golfo. Ninguna
+        fuente da contorno.
+      according_to: it-estrella
+      sources: [it-estrella, it-herodes, ia-jose-protegio-a-su-familia, it-este]
+      reason: Perspicacia «Estrella» los hace de la vecindad de Babilonia; «Herodes» ve probable que llegaran de
+        Babilonia o Mesopotamia, y Ejemplos de fe, de la lejana Babilonia. «Este» da esa dirección.
+      checked_on: '2026-10-02'
+      status: conjecture
+    - name: Partia
+      type: circle
+      center: {lat: 35.5, lon: 56.0}
+      radius_km: 350
+      strength: possible
+      note: El círculo de 350 km del candidato de Partia en su ficha, al sudeste del mar Caspio. Ninguna fuente da contorno.
+      according_to: sh-cap-4
+      sources: [sh-cap-4, it-partos]
+      reason: El hombre en busca de Dios, cap. 4, recoge que algunos doctos los suponen de una escuela caldea y
+        medopersa de astrología, en Partia. Solo lo recoge; no lo afirma.
+      checked_on: '2026-10-02'
+      status: conjecture
+  reference: Mt 2:12
+  date:
+    from: 0
+    to: 1
+    precision: range
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: entre 1 a.e.c. y 1 e.c.
+  note: Avisados en un sueño, se marchan por otro camino sin volver a Herodes. La fuente no dice dónde queda su país.
+  reason: Mt 2:12 los devuelve a su país, sin situarlo ni darle rumbo. Es donde vieron la estrella (Jesús, cap. 7), así
+    que su zona probable es la de Oriente.
+  sources:
+  - mateo-2
+  - it-astrologos
+  - jy-cap-7
   checked_on: '2026-10-02'
   status: verified

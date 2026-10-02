@@ -512,7 +512,9 @@ def integridad(datos):
                 for p in o.get("companions") or []:
                     ref(f, "companions", p.get("person") if isinstance(p, dict) else p, "people")
                 for p in o.get("stops") or []:
-                    ref(f, f"stop {p.get('order')}: place", p.get("place"), "places")
+                    # Un área desconocida (`place: null` y `unknown_area`) no tiene lugar (validate.py, validar_areas).
+                    if p.get("place") is not None or "unknown_area" not in p:
+                        ref(f, f"stop {p.get('order')}: place", p.get("place"), "places")
             elif tipo == "letters":
                 ref(f, "writer", o.get("writer"), "people")
                 for lid in o.get("written_in") or []:
@@ -772,6 +774,7 @@ def legacy_data(datos, leg):
         out[raiz] = lista
     merge_pair_copies(compiled, partners, voc)
     compile_shapes(out[leg.roots["places"]], datos)
+    compile_guesses(out[leg.roots["journeys"]], datos)
     return out
 
 
@@ -787,6 +790,18 @@ def compile_shapes(lugares, datos):
             if forma and lat is not None and lon is not None:
                 forma["ring"] = formas.anillo(forma, lat, lon, puntos)
                 forma["bbox"] = formas.caja(forma["ring"])
+
+
+def compile_guesses(viajes, datos):
+    """Añade su contorno (`ring`) y su caja (`bbox`) a cada zona que conjeturamos para un área desconocida
+    (`unknown_area.guesses`), como a la forma de una zona: el sitio la dibuja y la encuadra tal cual."""
+    puntos = formas.puntos_de_vertices(datos["places"])
+    for v in viajes:
+        for p in v.get("paradas") or []:
+            for z in (p.get("unknown_area") or {}).get("guesses") or []:
+                c = z.get("center") or {}
+                z["ring"] = formas.anillo(z, c.get("lat"), c.get("lon"), puntos)
+                z["bbox"] = formas.caja(z["ring"])
 
 
 def merge_pair_copies(compiled, partners, voc):
@@ -958,7 +973,8 @@ def escribir_sqlite(salida, ruta):
         referencia TEXT, {fecha}, companeros TEXT, tramos_companeros TEXT, resumen TEXT, razon TEXT, consultado TEXT, estado TEXT,
         repeats TEXT);
     CREATE TABLE paradas (viaje_id TEXT REFERENCES viajes(id), orden INTEGER, lugar_id TEXT REFERENCES lugares(id),
-        referencia TEXT, {fecha}, nota TEXT, razon TEXT, estado TEXT, checked_on TEXT, PRIMARY KEY (viaje_id, orden));
+        referencia TEXT, {fecha}, nota TEXT, razon TEXT, estado TEXT, checked_on TEXT, unknown_area TEXT,
+        PRIMARY KEY (viaje_id, orden));
     CREATE TABLE cartas (id TEXT PRIMARY KEY, libro TEXT, escritor TEXT, referencia TEXT, escrita_en TEXT, {fecha},
         destinatarios_texto TEXT, destinatarios_lugares TEXT, destinatarios_personas TEXT, portadores TEXT,
         contexto_origen TEXT, contexto_destino TEXT, razon TEXT, consultado TEXT, estado TEXT);
@@ -1023,7 +1039,8 @@ def escribir_sqlite(salida, ruta):
         fuentes_hecho("viaje", o["id"], {k: v for k, v in o.items() if k != "paradas"})
         for p in o.get("paradas") or []:
             ins("paradas", (o["id"], p["orden"], p["lugar"], p["referencia"], *_fecha_cols(p.get("fecha")),
-                            p.get("nota"), p["razon"], p["estado"], p.get("checked_on")))
+                            p.get("nota"), p["razon"], p["estado"], p.get("checked_on"),
+                            json.dumps(p["unknown_area"], ensure_ascii=False) if p.get("unknown_area") else None))
             fuentes_hecho("parada", f"{o['id']}#{p['orden']}", p)
     for o in salida["cartas"]:
         d = o.get("destinatarios") or {}
@@ -1222,7 +1239,9 @@ def registros(salida, legado, datos):
     filas = []
     for v in salida["viajes"]:
         for p in v.get("paradas") or []:
-            lug = L.get(p["lugar"], {}).get("nombre", p["lugar"])
+            # Un área desconocida no tiene lugar: va con las palabras de la fuente.
+            area = p.get("unknown_area")
+            lug = f"«{area['words']}» (área desconocida)" if area else L.get(p["lugar"], {}).get("nombre", p["lugar"])
             filas.append(_fila(f"{v['nombre']}, parada {p['orden']}: **{lug}** ({p['referencia']}), {_texto_fecha(p.get('fecha'))}",
                                fich[("viajes", v["id"])], p["fuentes"], F, p.get("checked_on") or v.get("consultado"),
                                p["razon"], p["estado"]))

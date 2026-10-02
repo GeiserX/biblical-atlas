@@ -73,6 +73,19 @@ REQUERIDOS = {
 REQ_PARADA = ["order", "place", "reference", "date", "note", "reason", "sources", "checked_on", "status"]
 # Valores cerrados de `repeats` en un viaje: el texto dice que el viaje se hacía cada año (1Sa 1:3, Lu 2:41).
 REPITE = {"yearly"}
+# Un área desconocida (`unknown_area` de una parada sin `place`): las palabras de la fuente y, si la fuente lo da, el
+# rumbo, uno de los ocho de la rosa. Las palabras son pocas (siete como mucho) porque son las de la fuente: así nunca
+# llegan a la racha de ocho palabras copiadas.
+RUMBOS = {"north", "northeast", "east", "southeast", "south", "southwest", "west", "northwest"}
+CAMPOS_AREA = {"words", "direction", "guesses"}
+# Una zona que conjeturamos para un área desconocida (`guesses`): una forma con su nombre, que nunca es lo que dice el
+# texto. Su estado es siempre `conjecture`.
+ESTADOS_CONJETURA = {"conjecture"}
+MAX_PALABRAS_NOMBRE_ZONA = 6
+# Cuán fuerte es una zona conjeturada: «probable» (lo que la fuente propone) o «posible» (lo que solo recoge o no
+# descarta). Sin `strength`, probable.
+FUERZAS_CONJETURA = {"probable", "possible"}
+MAX_PALABRAS_AREA = 7
 REQ_PARADA_RECORRIDO = ["sel", "t", "text", "passages"]
 REQ_FUENTE = ["title", "work", "url", "level", "published", "checked_on"]
 ESTRUCTURA_LIBRO = {"slug", "num", "name", "abbr", "forms", "spoken", "chapters"}
@@ -239,6 +252,73 @@ def validar_repite(viaje, donde, err):
     """`repeats` es opcional en un viaje y, si está, es uno de REPITE. Lo sostienen las fuentes y la razón del viaje."""
     if "repeats" in viaje and (not isinstance(viaje["repeats"], str) or viaje["repeats"] not in REPITE):
         err(f"{donde}: repeats debe ser uno de {sorted(REPITE)}, no {viaje['repeats']!r}")
+
+
+def validar_conjetura(z, donde, err, puntos):
+    """Una zona que conjeturamos para un área desconocida: una forma (circle y ellipse con center, porque no hay punto)
+    con `name`, su fuente, su razón y `status: conjecture`. No dice que el texto la nombre."""
+    if not isinstance(z, dict):
+        err(f"{donde}: debe ser un objeto: una forma con name, sources, reason, checked_on y status: conjecture")
+        return
+    nombre = z.get("name")
+    if not isinstance(nombre, str) or not nombre.strip() or len(nombre.split()) > MAX_PALABRAS_NOMBRE_ZONA:
+        err(f"{donde}: name, el nombre corto de la zona («Babilonia»), de 1 a {MAX_PALABRAS_NOMBRE_ZONA} palabras")
+    if z.get("type") in ("circle", "ellipse") and not isinstance(z.get("center"), dict):
+        err(f"{donde}: un {z.get('type')} conjeturado necesita center: no hay punto que lo sitúe")
+        return
+    # Quien hace la afirmación de la zona: el sitio escribe «según …» con esta fuente, nunca con el orden de la lista.
+    quien = z.get("according_to")
+    if not isinstance(quien, str) or quien not in (z.get("sources") if isinstance(z.get("sources"), list) else []):
+        err(f"{donde}: according_to es la fuente que propone esta zona y tiene que ser una de sus sources")
+    fuerza = z.get("strength", "probable")
+    if not isinstance(fuerza, str) or fuerza not in FUERZAS_CONJETURA:
+        err(f"{donde}: strength debe ser uno de {sorted(FUERZAS_CONJETURA)}, no {fuerza!r}")
+    c = z.get("center") if isinstance(z.get("center"), dict) else {}
+    validar_forma(z, donde, err, c.get("lat"), c.get("lon"), puntos, estados=ESTADOS_CONJETURA,
+                  extra={"name", "according_to", "strength"})
+
+
+def validar_areas(viaje, donde, err, puntos=None):
+    """Una parada lleva `place` (id de lugar) o, si el texto dice que se viene de un sitio o se va a uno que no sitúa,
+    `place: null` y `unknown_area: {words, direction}`, nunca las dos cosas. Solo la primera y la última parada pueden
+    ser un área desconocida, y al menos una parada tiene lugar (README de la investigación, «Viajes»). Un área puede
+    llevar `guesses`, las zonas que conjeturamos para ella (validar_conjetura)."""
+    puntos = puntos or {}
+    paradas = [p for p in viaje.get("stops") or [] if isinstance(p, dict)]
+    for i, p in enumerate(paradas):
+        pd = f"{donde} stop {p.get('order', i)}"
+        area = p.get("unknown_area")
+        if "unknown_area" not in p:
+            if p.get("place") is None:
+                err(f"{pd}: sin place; una parada que el texto no sitúa lleva place: null y unknown_area")
+            continue
+        if p.get("place") is not None:
+            err(f"{pd}: place y unknown_area a la vez; un área desconocida lleva place: null")
+        if not isinstance(area, dict):
+            err(f"{pd}: unknown_area debe ser un objeto {{words, direction}}")
+            continue
+        if set(area) - CAMPOS_AREA:
+            err(f"{pd}: unknown_area lleva solo words, direction y guesses, no {sorted(set(area) - CAMPOS_AREA)}")
+        palabras = area.get("words")
+        if not isinstance(palabras, str) or not palabras.strip():
+            err(f"{pd}: unknown_area.words: las palabras con que la fuente nombra el sitio («Oriente», «su país»)")
+        elif len(palabras.split()) > MAX_PALABRAS_AREA:
+            err(f"{pd}: unknown_area.words tiene {len(palabras.split())} palabras; como mucho {MAX_PALABRAS_AREA}")
+        if "direction" in area and (not isinstance(area["direction"], str) or area["direction"] not in RUMBOS):
+            err(f"{pd}: unknown_area.direction debe ser uno de {sorted(RUMBOS)}, no {area['direction']!r}")
+        if 0 < i < len(paradas) - 1:
+            err(f"{pd}: un área desconocida solo puede ser la primera o la última parada")
+        if i == 0 and len(paradas) > 1 and p.get("order") != 0:
+            err(f"{pd}: un área de origen lleva order: 0, para que las paradas con lugar sigan siendo 1, 2, 3...")
+        if "guesses" in area:
+            zonas = area["guesses"]
+            if not isinstance(zonas, list) or not zonas:
+                err(f"{pd}: unknown_area.guesses es una lista de zonas, la preferida primero")
+                continue
+            for j, z in enumerate(zonas):
+                validar_conjetura(z, f"{pd} unknown_area.guesses[{j}]", err, puntos)
+    if paradas and all("unknown_area" in p for p in paradas):
+        err(f"{donde}: todas las paradas son áreas desconocidas; un viaje necesita al menos un lugar")
 
 
 # ---------------------------------------------------------------- el esquema antiguo
@@ -787,7 +867,7 @@ def _radio(x):
     return _numero(x) and math.isfinite(x) and 0 < x <= formas.MAX_RADIO_KM
 
 
-def validar_forma(f, donde, err, lat, lon, puntos, en_candidato=False):
+def validar_forma(f, donde, err, lat, lon, puntos, en_candidato=False, estados=ESTADOS, extra=frozenset()):
     """La forma de una zona (`shape`): un hecho con su fuente y su razón, de un vocabulario cerrado, que contiene el punto
     del lugar o del candidato. Devuelve el contorno, o None si la forma no se puede dibujar."""
     donde = f"{donde} shape"
@@ -800,10 +880,10 @@ def validar_forma(f, donde, err, lat, lon, puntos, en_candidato=False):
         return None
     if en_candidato and t == "circle":
         err(f"{donde}: un candidato ya es un círculo (geometry.radius_km); su forma es ellipse, box o polygon")
-    validar_hecho(f, donde, err)
+    validar_hecho(f, donde, err, estados=estados)
     if not str(f.get("note") or "").strip():
         err(f"{donde}: falta note, cómo se calculó el contorno con lo que dice la fuente")
-    sobran = set(f) - CAMPOS_FORMA - PARAMETROS_FORMA[t]
+    sobran = set(f) - CAMPOS_FORMA - PARAMETROS_FORMA[t] - set(extra)
     if sobran:
         err(f"{donde}: campos que no son de un {t}: {sorted(sobran)}")
     if "center" in f and (t not in ("circle", "ellipse") or not isinstance(f["center"], dict)
@@ -851,7 +931,7 @@ def validar_forma(f, donde, err, lat, lon, puntos, en_candidato=False):
     ring = formas.anillo(f, lat, lon, puntos)
     if t == "polygon" and formas.se_cruza(ring):
         err(f"{donde}: el contorno se cruza o se toca consigo mismo; ordena los vértices alrededor de la zona")
-    if not formas.dentro(ring, lat, lon):
+    if lat is not None and not formas.dentro(ring, lat, lon):
         err(f"{donde}: el punto ({lat}, {lon}) queda fuera de la forma; la forma rodea el punto que la representa")
     return ring
 
@@ -943,7 +1023,7 @@ def validar_viaje(v, donde, err):
     if not isinstance(comps, list):
         err(f"{donde}: companions debe ser una lista ([] si nadie acompaña)")
         return
-    n = len(v.get("stops") or [])
+    n = max([p.get("order") for p in v.get("stops") or [] if isinstance(p, dict) and _entero(p.get("order"))] or [0])
     tramos = {}
     for i, c in enumerate(comps):
         if isinstance(c, str):
@@ -1557,7 +1637,9 @@ def integrity(datos):
                 for p in companion_ids(o):
                     ref(f, "companions", p, "people")
                 for p in o.get("stops") or []:
-                    ref(f, f"stop {p.get('order')}: place", p.get("place"), "places")
+                    # Un área desconocida no tiene lugar: lo comprueba validar_areas.
+                    if p.get("place") is not None or "unknown_area" not in p:
+                        ref(f, f"stop {p.get('order')}: place", p.get("place"), "places")
             elif tipo == "letters":
                 ref(f, "writer", o.get("writer"), "people")
                 for lid in o.get("written_in") or []:
@@ -1668,6 +1750,7 @@ def validar(datos):
             if tipo == "journeys":
                 validar_viaje(limpio_, donde, err)
                 validar_repite(limpio_, donde, err)
+                validar_areas(limpio_, donde, err, puntos)
                 ordenes = []
                 for i, p in enumerate(limpio_.get("stops") or []):
                     pd = f"{donde} stop {p.get('order', i)}"
@@ -1679,8 +1762,10 @@ def validar(datos):
                     if "date" in p:
                         validar_fecha(p["date"], pd, err, meses, p.get("status"))
                     ordenes.append(p.get("order"))
-                if ordenes != list(range(1, len(ordenes) + 1)):
-                    err(f"{donde}: las paradas deben numerarse 1, 2, 3... sin huecos")
+                # Un área de origen va antes de la parada 1, con order 0: así los enlaces a las paradas no cambian.
+                origen = bool(limpio_.get("stops")) and isinstance(limpio_["stops"][0], dict) and "unknown_area" in limpio_["stops"][0]
+                if ordenes != list(range(0 if origen else 1, len(ordenes) + (0 if origen else 1))):
+                    err(f"{donde}: las paradas deben numerarse 1, 2, 3... sin huecos (0 solo para un área de origen)")
             if tipo == "letters":
                 for k in ("context_origin", "context_destination"):
                     c = limpio_.get(k) or {}

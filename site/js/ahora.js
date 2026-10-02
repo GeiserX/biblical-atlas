@@ -190,6 +190,7 @@ function estanciasEn(a, b) {
     for (const s of BE.estancias(id)) {
       if (s.b <= a || s.a >= b) continue;
       const l = s.lugar.id;
+      if (!l) continue;   // un área desconocida no es un lugar de la sincronía
       if (!m.has(l)) m.set(l, new Map());
       const pm = m.get(l);
       if (!pm.has(id)) pm.set(id, []);
