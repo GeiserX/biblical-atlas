@@ -70,7 +70,7 @@ before(async () => {
 afterEach(async () => { for (const c of browser?.contexts() || []) await c.close().catch(() => {}); });
 after(async () => { await browser?.close(); server?.close(); if (tmp) fs.rmSync(tmp, { recursive: true, force: true }); });
 
-async function openPage(screen = DESKTOP, { hash = '', storage = null, route = null, wait = true, init = null, map = false } = {}) {
+async function openPage(screen = DESKTOP, { hash = '', storage = null, route = null, wait = true, init = null, map = false, page: file = 'index.html' } = {}) {
   const context = await browser.newContext({ deviceScaleFactor: 1, ...screen });
   context.setDefaultTimeout(8000);
   // A slow device on demand: with window.__lento = ms, every frame is painted that much later (the map loading, a
@@ -88,8 +88,8 @@ async function openPage(screen = DESKTOP, { hash = '', storage = null, route = n
   if (route) await page.route('**/data.json*', route);
   // Not until «load»: that waits for every image of the page too, which a loaded machine took more than 8 s to serve.
   // What a test needs, the data and the first frames, ready() waits for.
-  await page.goto(`${base}index.html${hash ? `#${hash}` : ''}`, { waitUntil: 'domcontentloaded' });
-  if (wait) await ready(page, { map });
+  await page.goto(`${base}${file}${hash ? `#${hash}` : ''}`, { waitUntil: 'domcontentloaded' });
+  if (wait && file === 'index.html') await ready(page, { map });
   return page;
 }
 /** The map page has its data, its first frames painted and its address written; with `map`, MapLibre has loaded and
@@ -749,4 +749,46 @@ test('each entry keeps the map where it was left: Back, Forward and a reload bri
     sameFrame(await frame(shared), framed, `${who}, a shared link to Filipos`);
     assert.deepEqual(page.pageErrors, []);
   }
+});
+
+test('«Volver al mapa» goes back to the entry the map was on, with its Back; from the landing, a shared link or a section it stays a link', async () => {
+  const volver = (page) => Promise.all([page.waitForURL(/index\.html/, { waitUntil: 'domcontentloaded' }), page.locator('a.be-btn[data-volver]').click()]);
+  const page = await openPage(DESKTOP, { hash: 't=50.3000' });
+  await search(page, 'Pablo');
+  await search(page, 'Corinto');
+  const before = await hist(page);
+  // «Acerca de», from the top bar, and the calendar, from the date panel.
+  const ways = [['Acerca de', /acerca\.html/, async () => page.locator('#acerca').click()],
+    ['the calendar', /calendario\.html/, async () => { await page.locator('#fecha').click(); await page.locator('a.date-picker__link[data-calendario]').click(); }]];
+  for (const [what, url, go] of ways) {
+    await Promise.all([page.waitForURL(url, { waitUntil: 'domcontentloaded' }), go()]);
+    await volver(page);
+    await ready(page);
+    const h = await hist(page);
+    assert.equal((await snap(page)).sel, 'lugar:corinto', what);
+    assert.equal(h.state.visit, before.state.visit, `${what}: «Volver al mapa» started a new visit`);
+    assert.equal(h.state.step, before.state.step);
+    assert.equal(h.back.label, 'Atrás: Pablo');
+    assert.equal(h.length, before.length + 1, `${what}: «Volver al mapa» added an entry instead of going back`);
+  }
+  // From a section of the page (#gracias, an entry of its own) Back is not the map: the button stays a link.
+  await Promise.all([page.waitForURL(/acerca\.html/, { waitUntil: 'domcontentloaded' }), page.locator('#acerca').click()]);
+  await page.evaluate(() => { location.hash = 'gracias'; });
+  await volver(page);
+  await ready(page);
+  assert.match(page.url(), /index\.html#.*sel=lugar:corinto/);
+  assert.equal((await hist(page)).state.step, 0, 'from a section the button went back to the page');
+  // From the landing, Back would be the landing: the button leads to the map, as a link.
+  const land = await openPage(DESKTOP);
+  assert.equal((await snap(land)).landing, true);
+  await Promise.all([land.waitForURL(/acerca\.html/, { waitUntil: 'domcontentloaded' }), land.locator('a[href^="acerca.html"]', { hasText: 'Qué es biblical-atlas' }).click()]);
+  await volver(land);
+  await ready(land);
+  assert.equal((await snap(land)).landing, false, 'from the landing «Volver al mapa» went back to the landing');
+  // A shared link to «Acerca de», even one that says volver=atras, has nothing behind: a link.
+  const shared = await openPage(DESKTOP, { page: `acerca.html?desde=${encodeURIComponent('t=50.3000&sel=lugar:corinto')}&volver=atras` });
+  await volver(shared);
+  await ready(shared);
+  assert.equal((await snap(shared)).sel, 'lugar:corinto');
+  assert.equal((await hist(shared)).state.step, 0);
 });

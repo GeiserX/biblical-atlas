@@ -1734,18 +1734,22 @@ function montarBarra() {
   $('#fecha-valor').after(otra);
   // Los enlaces a las páginas del calendario y de «Acerca de» llevan la vista: su «Volver al mapa» vuelve a esta fecha y
   // esta selección. El calendario la recibe en #desde=…; «Acerca de» en ?desde=…, porque su # es la sección («#gracias»).
+  // Desde el mapa llevan también volver=atras: allí «Volver al mapa» vuelve con Atrás a esta misma entrada
+  // (js/volver.js). Desde la portada no, porque Atrás llevaría a la portada.
   document.addEventListener('click', (e) => {
     const a = e.target.closest?.('a[data-calendario]');
     const b = e.target.closest?.('a[href^="acerca.html"]');
     if (!a && !b) return;
     // La vista se lee ahora, no de location.hash, que se escribe con un cuarto de segundo de retraso. Sin la portada:
     // su botón dice «Volver al mapa» y lleva al mapa de detrás; Atrás sigue volviendo a la portada.
-    const vista = BE.textoHash().split('&').filter((x) => x !== 'portada=1').join('&');
-    if (a) a.href = `calendario.html${location.search}#desde=${encodeURIComponent(vista)}`;
+    const partes = BE.textoHash().split('&'), portada = partes.includes('portada=1');
+    const vista = partes.filter((x) => x !== 'portada=1').join('&');
+    if (a) a.href = `calendario.html${location.search}#desde=${encodeURIComponent(vista)}${portada ? '' : '&volver=atras'}`;
     if (b) {
       b.dataset.ancla ??= b.getAttribute('href').split('#')[1] || '';
       const q = new URLSearchParams(location.search);
       q.set('desde', vista);
+      if (!portada) q.set('volver', 'atras');
       b.href = `acerca.html${String(q) ? `?${q}` : ''}${b.dataset.ancla ? `#${b.dataset.ancla}` : ''}`;
     }
   }, true);

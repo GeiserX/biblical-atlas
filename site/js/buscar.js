@@ -155,8 +155,11 @@ function irAMes(t, escala) {
 }
 function enlaceMes(m) {
   const vista = BE.textoHash ? BE.textoHash() : location.hash.slice(1);
+  // Desde el mapa, volver=atras, como los enlaces de linea.js (js/volver.js); desde la portada, no.
+  const portada = vista.split('&').includes('portada=1');
+  BE.escribirHash();   // la entrada del mapa se queda con su vista: «Volver al mapa» vuelve a ella
   BE.historia.dejar();
-  location.href = `calendario.html${location.search}#desde=${encodeURIComponent(vista)}&mes=${encodeURIComponent(m.id)}`;
+  location.href = `calendario.html${location.search}#desde=${encodeURIComponent(vista)}&mes=${encodeURIComponent(m.id)}${portada ? '' : '&volver=atras'}`;
 }
 function preguntasMes(nq) {
   // «segundo Adar» es lo que quiere decir Veadar; «de adar» es como lo dice quien lo oyó y no lo leyó.
@@ -692,6 +695,9 @@ const historia = (() => {
     try { u = new URL(a.getAttribute('href'), document.baseURI); } catch { return; }
     if (u.protocol !== 'http:' && u.protocol !== 'https:') return;
     if (u.origin === location.origin && u.pathname === location.pathname && u.search === location.search) return;   // un «#»: llega por popstate
+    // La entrada se queda con la vista de ahora, no con la de hace un cuarto de segundo: «Volver al mapa» (y el Atrás
+    // del navegador) vuelven a ella.
+    if (BE.D) BE.escribirHash();
     dejar();
   });
   pintarBotones();

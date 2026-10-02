@@ -33,6 +33,7 @@
   <a href="acerca.html" data-acerca>Acerca de biblical-atlas</a>
 </footer>
 
+<script src="js/volver.js"></script>
 <script>
 /* biblical-atlas · página «El calendario»: la explicación y la tabla de los meses salen de data.json (calendario.explicacion
    y calendario.meses). Script clásico, sin módulos: la página también abre desde file://, donde carga data.js. */
@@ -42,8 +43,10 @@ const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '
 const fmtAnio = (y) => (y > 0 ? `${y} e.c.` : `${1 - y} a.e.c.`);
 const EXTERNO = 'target="_blank" rel="noopener"';
 
-// «Volver al mapa» vuelve a la vista desde la que se llegó (#desde=…) y con los mismos datos de prueba (?datos=…).
+// «Volver al mapa» vuelve a la vista desde la que se llegó (#desde=…) y con los mismos datos de prueba (?datos=…). Con
+// volver=atras, si el mapa está justo detrás, vuelve como el Atrás del navegador (js/volver.js).
 const desde = new URLSearchParams(location.hash.slice(1)).get('desde');
+window.BEVolver.iniciar(new URLSearchParams(location.hash.slice(1)).get('volver') === 'atras');
 document.querySelectorAll('[data-volver]').forEach((a) => { a.href = `index.html${location.search}${desde ? `#${desde}` : ''}`; });
 // «Acerca de» recibe la vista en ?desde=…: su # es la sección.
 document.querySelectorAll('[data-acerca]').forEach((a) => {
