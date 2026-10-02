@@ -4,13 +4,26 @@ name: Secú
 names:
 - name: Secú
 type: region
-lat: 31.937378
-lon: 35.144736
+lat: null
+lon: null
 precision: uncertain
-coord_source: openbible:a4052df
-coord_url: https://www.openbible.info/geo/ancient/a4052df/secu
-coord_note: Punto único de OpenBible, a medio camino entre Guibeá y Ramá. Perspicacia solo dice que estaba cerca de Ramá y
-  que hoy no se sabe dónde.
+coord_source: null
+coord_url: null
+candidates:
+- name: Cerca de Ramá
+  geometry:
+    type: zone
+    lat: 32.028056
+    lon: 35.019444
+    radius_km: 6
+  checked_on: '2026-10-02'
+  status: favored_level_1
+  sources:
+  - it-secu
+  reason: 'Perspicacia «Secú»: estaba cerca de Ramá, pero hoy no se sabe dónde.'
+  note: Centro nuestro en el punto de ramataim-zofim, la Ramá de Samuel en este atlas, que también es incierto. Radio nuestro.
+  coord_source: calculation
+coord_note: 'Sin punto: Perspicacia solo dice que estaba cerca de Ramá.'
 summary: Lugar cercano a Ramá con una gran cisterna, donde Saúl preguntó por Samuel y David camino de Nayot. Algunas versiones
   antiguas leen ahí otra expresión en lugar del nombre.
 reason: 'Perspicacia «Secú»; 1Sa 19:22. Coordenada de OpenBible: solo el punto.'
@@ -25,5 +38,10 @@ links:
 - title: 1 Samuel 19 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/1-samuel/19/
   type: bible
-checked_on: '2026-09-29'
+checked_on: '2026-10-02'
 status: verified
+history:
+- date: '2026-10-02'
+  change: 'Pierde el punto de OpenBible (31.937378, 35.144736): jw.org dice que no se sabe dónde estaba y no nombra ese sitio.
+    Queda como candidato lo que sí dice jw.org.'
+  source: it-secu

@@ -8,13 +8,27 @@ names:
 - name: Valle torrencial de Kerit
   note: Así lo titula Perspicacia.
 type: valley
-lat: 32.394722
-lon: 35.591389
+lat: null
+lon: null
 precision: uncertain
-coord_source: openbible:aa7bee8
-coord_url: https://www.openbible.info/geo/ancient/aa7bee8/cherith
-coord_note: Punto de Wadi al Yabis, primera identificación de OpenBible, que jw.org no nombra. Perspicacia «Kerit» no conoce
-  el sitio y «Elías», núm. 1, lo pone en tierras de Gad.
+coord_source: null
+coord_url: null
+candidates:
+- name: Al este del Jordán, en Gad
+  geometry:
+    type: zone
+    lat: 32.047428
+    lon: 35.662695
+    radius_km: 35
+  checked_on: '2026-10-02'
+  status: favored_level_1
+  sources:
+  - it-kerit
+  - it-elias
+  reason: 'Perspicacia «Kerit»: al este del Jordán, sin ubicación conocida; «Elías», núm. 1, lo pone en el territorio de Gad.'
+  note: Misma zona que la ficha gad; centro y radio nuestros.
+  coord_source: calculation
+coord_note: 'Sin punto: jw.org no nombra ningún sitio.'
 summary: Valle torrencial al este del Jordán donde Elías se escondió al comienzo de la sequía. Bebía de su arroyo y los cuervos
   le traían comida, hasta que el agua se agotó.
 reason: 'Perspicacia «Kerit, Valle torrencial de» y «Elías», núm. 1, párr. 3; 1Re 17:3-7. Coordenada de OpenBible: solo tomamos
@@ -32,5 +46,10 @@ links:
 - title: 1 Reyes 17 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/1-reyes/17/
   type: bible
-checked_on: '2026-09-30'
+checked_on: '2026-10-02'
 status: verified
+history:
+- date: '2026-10-02'
+  change: 'Pierde el punto de OpenBible (32.394722, 35.591389): jw.org dice que no se sabe dónde estaba y no nombra ese sitio.
+    Queda como candidato lo que sí dice jw.org.'
+  source: it-kerit

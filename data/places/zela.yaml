@@ -6,12 +6,26 @@ names:
 - name: Zelah
   note: Otra grafía, en la nota de Jos 18:28.
 type: city
-lat: 31.802528
-lon: 35.209636
+lat: null
+lon: null
 precision: uncertain
-coord_source: openbible:a597dd0
-coord_url: https://www.openbible.info/geo/ancient/a597dd0/zela
-coord_note: Punto de OpenBible en Khirbet Salah. Perspicacia no sabe dónde estaba.
+coord_source: null
+coord_url: null
+candidates:
+- name: En Benjamín
+  geometry:
+    type: zone
+    lat: 31.859585
+    lon: 35.313958
+    radius_km: 22
+  checked_on: '2026-10-02'
+  status: favored_level_1
+  sources:
+  - it-zela
+  reason: 'Perspicacia «Zelá, Zelah»: ciudad de Benjamín cuya ubicación exacta se desconoce.'
+  note: Misma zona que la ficha benjamin; centro y radio nuestros.
+  coord_source: calculation
+coord_note: 'Sin punto: Perspicacia dice que no se sabe dónde estaba dentro de Benjamín.'
 summary: Ciudad de Benjamín donde estaba la tumba de Quis. Allí enterraron también los huesos de Saúl y de Jonatán. No se
   sabe dónde estaba.
 reason: 'Perspicacia «Zelá, Zelah»; Jos 18:28; 2Sa 21:14. OpenBible: solo el punto.'
@@ -27,5 +41,10 @@ links:
 - title: Josué 18 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Josu%C3%A9/18/
   type: bible
-checked_on: '2026-09-29'
+checked_on: '2026-10-02'
 status: verified
+history:
+- date: '2026-10-02'
+  change: 'Pierde el punto de OpenBible (31.802528, 35.209636): jw.org dice que no se sabe dónde estaba y no nombra ese sitio.
+    Queda como candidato lo que sí dice jw.org.'
+  source: it-zela

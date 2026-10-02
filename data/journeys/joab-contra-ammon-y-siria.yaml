@@ -60,16 +60,18 @@ stops:
     type: narrative
     chronology: tnm
     text: 'entre 1070 y c. 1040 a.e.c. (tiempo narrativo: David ya reina en Jerusalén)'
-  note: Abisái se enfrenta a los ammonitas ante la puerta de su ciudad, que Perspicacia cree que era Rabá.
-  reason: '1Cr 19:7 pone a los sirios acampados ante Medebá, y Perspicacia «Medebá» dice que allí los venció Joab. Fecha:
-    la del suceso joab-y-abisai-vencen-a-ammonitas-y-sirios.'
+  note: Joab lucha aquí contra los sirios. Abisái hace huir a los ammonitas hasta su ciudad, que Perspicacia cree que era
+    Rabá, a unos 30 km; Joab no va a Rabá hasta la campaña siguiente.
+  reason: '1Cr 19:7 acampa a los sirios ante Medebá, y Perspicacia «Medebá» dice que allí los venció Joab. «Rabá», núm. 1,
+    da la ciudad de 1Cr 19:9, 15 solo como probable. Fecha: la del suceso joab-y-abisai-vencen-a-ammonitas-y-sirios.'
   sources:
   - 2-samuel-10
   - 1-cronicas-19
   - it-medeba
   - it-raba
+  - it-joab
   - si-3
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-02'
   status: verified
 - order: 3
   place: jerusalen

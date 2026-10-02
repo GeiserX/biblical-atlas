@@ -4,12 +4,28 @@ name: Peñasco de las Divisiones
 names:
 - name: Peñasco de las Divisiones
 type: mountain
-lat: 31.451513
-lon: 35.232889
+lat: null
+lon: null
 precision: uncertain
-coord_source: openbible:a897bdb
-coord_url: https://www.openbible.info/geo/ancient/a897bdb/rock-of-escape
-coord_note: Punto de OpenBible a lo largo de Wadi Malaqi, su primera identificación. jw.org no lo sitúa.
+coord_source: null
+coord_url: null
+candidates:
+- name: En el desierto de Maón
+  geometry:
+    type: zone
+    lat: 31.409448
+    lon: 35.133839
+    radius_km: 10
+  checked_on: '2026-10-02'
+  status: favored_level_1
+  sources:
+  - 1-samuel-23
+  - it-maon
+  reason: 1Sa 23:25-28 lo pone en el desierto de Maón; Perspicacia «Maón», núm. 2, dice que esa zona desértica rodeaba la
+    ciudad.
+  note: Centro nuestro en el punto de maon. Radio nuestro.
+  coord_source: calculation
+coord_note: 'Sin punto: jw.org no lo sitúa; solo se sabe que estaba en el desierto de Maón.'
 summary: Peñasco del desierto de Maón donde Saúl estaba a punto de atrapar a David cuando un aviso de ataque filisteo lo hizo
   volver. Por eso recibió ese nombre.
 reason: '1Sa 23:25-28. Perspicacia no le dedica artículo; «Maón», núm. 2, sitúa la persecución en el desierto de esa ciudad.
@@ -25,5 +41,10 @@ links:
 - title: 'Perspicacia: «Maón»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ma%C3%B3n/
   type: perspicacia
-checked_on: '2026-09-29'
+checked_on: '2026-10-02'
 status: verified
+history:
+- date: '2026-10-02'
+  change: 'Pierde el punto de OpenBible (31.451513, 35.232889): jw.org no nombra ese sitio. Queda como candidato lo que sí
+    dicen el texto y jw.org.'
+  source: 1-samuel-23

@@ -14,30 +14,30 @@ date: &id001
 companions: []
 summary: Uriya, profeta de Quiryat-Jearim, anuncia contra Jerusalén lo mismo que Jeremías. Cuando Jehoiaquim decide matarlo,
   huye a Egipto, pero los hombres del rey lo traen de vuelta y el rey lo ejecuta.
-reason: 'Ningún suceso fecha el episodio: cae en los años en que reina Jehoiaquim, de 628 a 618 a.e.c. (tabla A6-B, periodo jehoiaquim).
-  Queda pendiente hasta que la lectura de Jeremías cree el suceso.'
+reason: 'Fecha: los años en que reina Jehoiaquim, de 628 a 618 a.e.c. (tabla A6-B, periodo jehoiaquim), el rey que nombra
+  el texto (Jer 26:21-23). Aún sin suceso en data/events.'
 sources:
 - it-uriya
 - it-elnatan
 - jeremias-26
 - tnm-a6-b
 - it-jehoiaquim
-checked_on: '2026-10-01'
-status: pending
+checked_on: '2026-10-02'
+status: verified
 stops:
 - order: 1
   place: egipto
   reference: Jer 26:21, 22
   date: *id001
   note: El texto no dice de qué lugar salió; Quiryat-Jearim era su ciudad.
-  reason: 'Jer 26:21: al saber que el rey quería matarlo, huye a Egipto. Fecha: los años en que reina Jehoiaquim (tabla
-    A6-B), sin suceso que la ancle.'
+  reason: 'Jer 26:21: al saber que el rey quería matarlo, huye a Egipto. Fecha: los años en que reina Jehoiaquim (tabla A6-B),
+    sin suceso que la ancle.'
   sources:
   - jeremias-26
   - it-uriya
   - tnm-a6-b
-  checked_on: '2026-09-30'
-  status: pending
+  checked_on: '2026-10-02'
+  status: verified
 - order: 2
   place: jerusalen
   reference: Jer 26:22, 23

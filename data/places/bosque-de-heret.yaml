@@ -4,12 +4,26 @@ name: Bosque de Héret
 names:
 - name: Bosque de Héret
 type: region
-lat: 31.614106
-lon: 35.043133
+lat: null
+lon: null
 precision: uncertain
-coord_source: openbible:a7df136
-coord_url: https://www.openbible.info/geo/ancient/a7df136/hereth
-coord_note: Kharas, primera identificación de OpenBible. Perspicacia no nombra ningún sitio y dice que no se sabe dónde estaba.
+coord_source: null
+coord_url: null
+candidates:
+- name: En la tierra de Judá
+  geometry:
+    type: zone
+    lat: 31.668687
+    lon: 35.181342
+    radius_km: 50
+  checked_on: '2026-10-02'
+  status: favored_level_1
+  sources:
+  - it-heret
+  reason: 'Perspicacia «Héret, Bosque de»: estaba en la tierra de Judá, pero no se sabe dónde.'
+  note: Misma zona que la ficha juda; centro y radio nuestros.
+  coord_source: calculation
+coord_note: 'Sin punto: Perspicacia no nombra ningún sitio y dice que no se sabe dónde estaba.'
 summary: Bosque de la tierra de Judá al que fue David, huido de Saúl, cuando el profeta Gad le dijo que dejara el refugio.
   Al parecer tomaba el nombre de un pueblo cercano.
 reason: 'Perspicacia «Héret, Bosque de»; 1Sa 22:5. OpenBible: solo el punto.'
@@ -24,5 +38,10 @@ links:
 - title: 1 Samuel 22 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/1-samuel/22/
   type: bible
-checked_on: '2026-09-29'
+checked_on: '2026-10-02'
 status: verified
+history:
+- date: '2026-10-02'
+  change: 'Pierde el punto de OpenBible (31.614106, 35.043133): jw.org dice que no se sabe dónde estaba y no nombra ese sitio.
+    Queda como candidato lo que sí dice jw.org.'
+  source: it-heret

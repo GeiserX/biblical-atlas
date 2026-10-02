@@ -5,11 +5,40 @@ names:
 - name: Mahanaim
   note: La nota de Gé 32:2 explica que significa «dos campamentos».
 type: city
-lat: 32.18575
-lon: 35.68667
-precision: point
-coord_source: openbible:ae5bfe9
-coord_url: https://www.openbible.info/geo/ancient/ae5bfe9/mahanaim
+lat: null
+lon: null
+precision: uncertain
+coord_source: null
+coord_url: null
+candidates:
+- name: Tell edh-Dhahab el-Gharbi, en la orilla norte del Jaboq
+  geometry:
+    type: point
+    lat: 32.18575
+    lon: 35.68667
+  checked_on: '2026-10-02'
+  status: alternative
+  sources:
+  - it-mahanaim
+  - openbible-geo
+  reason: Perspicacia «Mahanaim» recoge que un arqueólogo la pone en este montículo, a unos 12 km al este del Jordán.
+  note: Primera identificación de OpenBible; solo tomamos el punto.
+  coord_source: openbible:ae5bfe9
+  coord_url: https://www.openbible.info/geo/ancient/ae5bfe9/mahanaim
+- name: Khirbet Mahneh, unos 19 km al norte del Jaboq
+  geometry:
+    type: point
+    lat: 32.363911
+    lon: 35.748791
+  checked_on: '2026-10-02'
+  status: alternative
+  sources:
+  - it-mahanaim
+  - openbible-geo
+  reason: 'Perspicacia «Mahanaim»: algunos la identifican así, pero muchos lo ven demasiado al norte del Jaboq.'
+  note: Punto de Khirbet Mehna en OpenBible; solo tomamos el punto.
+  coord_source: openbible:ae5bfe9
+  coord_url: https://www.openbible.info/geo/ancient/ae5bfe9/mahanaim
 summary: Lugar al este del Jordán donde unos ángeles salieron al encuentro de Jacob cuando volvía de Harán. Más tarde hubo
   allí una ciudad, capital de Is-Bóset y refugio de David.
 reason: 'Perspicacia «Mahanaim», párr. 1 y 2; Gé 32:1, 2. OpenBible: solo el punto.'
@@ -36,5 +65,10 @@ history:
 - date: '2026-09-29'
   change: Is-bóset pasa a Is-Bóset, la grafía de la TNM en 2Sa 2:8-12.
   source: 2-samuel-2
-checked_on: '2026-09-30'
+- date: '2026-10-02'
+  change: 'Pierde el punto: Perspicacia dice que su ubicación es incierta y recoge dos sitios, que pasan a candidatos.'
+  source: it-mahanaim
+checked_on: '2026-10-02'
 status: verified
+coord_note: 'Sin punto: Perspicacia dice que su ubicación exacta es incierta, al este del Jordán y al parecer al norte del
+  Jaboq, y recoge dos propuestas.'

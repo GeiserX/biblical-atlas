@@ -32,11 +32,11 @@ sources:
 - it-ruben
 - it-simeon
 - si-3
-checked_on: '2026-09-30'
+checked_on: '2026-10-02'
 status: verified
 stops:
 - order: 1
-  place: canaan
+  place: hebron
   reference: Gé 42:1-5
   date:
     from: -1728
@@ -46,15 +46,16 @@ stops:
     type: narrative
     chronology: tnm
     text: 'entre 1729 y 1728 a.e.c. (tiempo narrativo: unos diez años después de morir Isaac y antes del traslado a Egipto)'
-  note: Casa de Jacob; Perspicacia la sitúa en Hebrón.
-  reason: Gé 42:5 dice que el hambre había llegado a Canaán, de donde salen. Fecha narrativa del suceso «Diez hermanos de
-    José bajan a Egipto por grano».
+  note: Casa de Jacob. Gé 42:5 solo dice Canaán.
+  reason: 'Gé 42:5: el hambre llega a Canaán, de donde salen. Perspicacia «Jacob» lo pone en Hebrón desde antes de la venta
+    de José, y «José» también. Deducción: pendiente.'
   sources:
   - genesis-42
   - it-jacob
   - si-3
-  checked_on: '2026-09-30'
-  status: verified
+  - it-jose
+  checked_on: '2026-10-02'
+  status: pending
 - order: 2
   place: egipto
   reference: Gé 42:6-25
@@ -76,7 +77,7 @@ stops:
   checked_on: '2026-09-30'
   status: verified
 - order: 3
-  place: canaan
+  place: hebron
   reference: Gé 42:26-38
   date:
     from: -1728
@@ -86,11 +87,19 @@ stops:
     type: narrative
     chronology: tnm
     text: 'entre 1729 y 1728 a.e.c. (tiempo narrativo: unos diez años después de morir Isaac y antes del traslado a Egipto)'
-  note: En el lugar donde se hospedan, sin nombre, uno encuentra su dinero en el costal.
-  reason: Gé 42:29 los hace volver a Jacob, en Canaán. Fecha narrativa del suceso «Los hermanos vuelven a Canaán sin Simeón».
+  note: Vuelven a casa de Jacob; en el lugar donde se hospedan, sin nombre, uno encuentra su dinero en el costal.
+  reason: 'Gé 42:29 los hace volver a Jacob, en Canaán; su casa estaba en Hebrón según Perspicacia «Jacob» y «José». Fecha
+    narrativa del suceso «Los hermanos vuelven a Canaán sin Simeón». Deducción: pendiente.'
   sources:
   - genesis-42
   - it-ruben
   - si-3
-  checked_on: '2026-09-30'
-  status: verified
+  - it-jacob
+  - it-jose
+  checked_on: '2026-10-02'
+  status: pending
+history:
+- date: '2026-10-02'
+  change: 'La salida y la vuelta pasan de Canaán, una zona con el punto en Galilea, a Hebrón, por deducción: allí dejan a Jacob
+    los artículos «Jacob» y «José» en 1750.'
+  source: it-jacob
