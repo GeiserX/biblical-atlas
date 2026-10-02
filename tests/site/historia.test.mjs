@@ -9,8 +9,8 @@
 // Needs playwright-core with a Chromium (importable, or PLAYWRIGHT_CORE=<path to playwright-core>). It uses
 // site/data.json when it exists, BE_DATA_FILE=<data.json> when given, or builds the data into a temporary directory
 // with python3 scripts/build.py. BE_SITE_DIR=<dir> tests another copy of the site (a checkout of main is the control,
-// and fails: it has no buttons). Hosts other than the local server are blocked, so the map itself does not load: the
-// map's frame after each press is checked by hand (site/README.md, «Atrás y adelante»).
+// and fails: it has no buttons). Hosts other than the local server are blocked, so the map itself does not load, except
+// in the test of the map's frame, which lets MapLibre come from unpkg.com.
 //
 // Chromium runs without SwiftShader: no test here draws WebGL through it, and with it every frame is drawn on the CPU
 // (a selection took up to 1.7 s of frames on an idle Mac mini, 40 ms without it), so on a loaded machine the frames,
@@ -70,7 +70,7 @@ before(async () => {
 afterEach(async () => { for (const c of browser?.contexts() || []) await c.close().catch(() => {}); });
 after(async () => { await browser?.close(); server?.close(); if (tmp) fs.rmSync(tmp, { recursive: true, force: true }); });
 
-async function openPage(screen = DESKTOP, { hash = '', storage = null, route = null, wait = true, init = null } = {}) {
+async function openPage(screen = DESKTOP, { hash = '', storage = null, route = null, wait = true, init = null, map = false } = {}) {
   const context = await browser.newContext({ deviceScaleFactor: 1, ...screen });
   context.setDefaultTimeout(8000);
   // A slow device on demand: with window.__lento = ms, every frame is painted that much later (the map loading, a
@@ -84,18 +84,25 @@ async function openPage(screen = DESKTOP, { hash = '', storage = null, route = n
   const page = await context.newPage();
   page.pageErrors = [];
   page.on('pageerror', (e) => page.pageErrors.push(e.message));
-  await page.route((url) => !url.href.startsWith(base), (r) => r.abort());
+  await page.route((url) => !url.href.startsWith(base) && !(map && url.hostname.endsWith('unpkg.com')), (r) => r.abort());
   if (route) await page.route('**/data.json*', route);
   // Not until «load»: that waits for every image of the page too, which a loaded machine took more than 8 s to serve.
   // What a test needs, the data and the first frames, ready() waits for.
   await page.goto(`${base}index.html${hash ? `#${hash}` : ''}`, { waitUntil: 'domcontentloaded' });
-  if (wait) await ready(page);
+  if (wait) await ready(page, { map });
   return page;
 }
-/** The map page has its data, its first frames painted and its address written. */
-async function ready(page) {
+/** The map page has its data, its first frames painted and its address written; with `map`, MapLibre has loaded and
+    stopped moving. */
+async function ready(page, { map = false } = {}) {
   await page.waitForFunction(() => window.BE?.D && window.__be, null, { timeout: 30000 });
+  if (map) await still(page);
   await settle(page);
+}
+/** The map has loaded and is not moving: the frame it stopped at is the entry's. */
+async function still(page) {
+  await page.waitForFunction(() => { const m = window.__be?.map; return !!m && m.loaded() && !m.isMoving(); }, null, { timeout: 30000 });
+  await page.evaluate(() => new Promise((ok) => requestAnimationFrame(() => requestAnimationFrame(ok))));
 }
 /** Waits for the page to settle after a press or a Back: two painted frames (every painter, the history's too, has seen
     the change) and base.js's address written. It waits on those, never on a fixed time; the assertions come after. */
@@ -692,4 +699,54 @@ test('a tour opened from the search or from a card link is one entry, and one Ba
   assert.match((await snap(four)).hash, /paso=4/);
   assert.equal((await hist(four)).state.step, 0);
   assert.equal((await hist(four)).state.name, `${TOUR}, parada 4`);
+});
+
+/** Where the map is: its centre and zoom. */
+const frame = (page) => page.evaluate(() => { const m = window.__be.map, c = m.getCenter(); return { lon: c.lng, lat: c.lat, zoom: m.getZoom() }; });
+/** Two frames are the same map: the entry keeps the centre to about a metre and the zoom to a hundredth. */
+function sameFrame(a, b, what) {
+  assert.ok(Math.abs(a.zoom - b.zoom) < 0.01 && Math.abs(a.lon - b.lon) < 1e-4 && Math.abs(a.lat - b.lat) < 1e-4,
+    `${what}: the map is at ${JSON.stringify(a)}, it was left at ${JSON.stringify(b)}`);
+}
+
+test('each entry keeps the map where it was left: Back, Forward and a reload bring it back; moving it makes no entry; a shared link frames its selection', async () => {
+  for (const [screen, pre] of [[DESKTOP, ''], [PHONE, 'hoja-']]) {
+    const who = pre || 'desktop';
+    const page = await openPage(screen, { hash: 't=50.3000', map: true });
+    await search(page, 'Filipos');
+    await still(page);
+    const framed = await frame(page);
+    const h0 = await hist(page, pre), url0 = page.url();
+    // Moved by hand to zoom 9.5, to the north-east. A drag with Playwright's mouse starts and never ends in headless
+    // Chromium (MapLibre fires dragstart and nothing more, on main too), so the move is MapLibre's own: it ends in the
+    // same moveend a hand's does.
+    await page.evaluate(({ lon, lat }) => window.__be.map.jumpTo({ center: [lon + 0.3, lat + 0.2], zoom: 9.5 }), framed);
+    await still(page);
+    const left = await frame(page);
+    const h1 = await hist(page, pre);
+    assert.equal(h1.length, h0.length, `${who}: moving the map made an entry`);
+    assert.equal(h1.state.step, h0.state.step);
+    assert.equal(page.url(), url0, `${who}: moving the map changed the address`);
+    await search(page, 'Corinto');
+    await still(page);
+    const corinto = await frame(page);
+    await page.locator(`#${pre}atras`).click();
+    await settle(page);
+    await still(page);
+    assert.equal((await snap(page)).sel, 'lugar:filipos');
+    sameFrame(await frame(page), left, `${who}, Back to Filipos`);
+    await page.locator(`#${pre}adelante`).click();
+    await settle(page);
+    await still(page);
+    sameFrame(await frame(page), corinto, `${who}, Forward to Corinto`);
+    await page.goBack();
+    await settle(page);
+    await page.reload({ waitUntil: 'domcontentloaded' });
+    await ready(page, { map: true });
+    sameFrame(await frame(page), left, `${who}, reload of Filipos`);
+    // The same address in a new tab has no frame of its own: it frames Filipos as a shared link always did.
+    const shared = await openPage(screen, { hash: (await snap(page)).hash.slice(1), map: true });
+    sameFrame(await frame(shared), framed, `${who}, a shared link to Filipos`);
+    assert.deepEqual(page.pageErrors, []);
+  }
 });

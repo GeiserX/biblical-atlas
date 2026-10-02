@@ -19,7 +19,7 @@ const plain = (x) => JSON.parse(JSON.stringify(x));
 
 test('the file loads without a document and publishes its rules', () => {
   assert.ok(H, 'BE.visitHistory is missing');
-  for (const k of ['isEntry', 'begin', 'push', 'rename', 'arrive', 'cutForward', 'around', 'buttonLabel', 'viewName', 'distinctName', 'pageTitle']) assert.equal(typeof H[k], 'function', k);
+  for (const k of ['isEntry', 'isFrame', 'withFrame', 'withMark', 'begin', 'push', 'rename', 'arrive', 'cutForward', 'around', 'buttonLabel', 'viewName', 'distinctName', 'pageTitle']) assert.equal(typeof H[k], 'function', k);
 });
 
 test('only our own state counts as an entry', () => {
@@ -192,4 +192,32 @@ test('a name that would read the same as the one behind it gets the date', () =>
   assert.equal(H.distinctName('Pablo', null, H607), 'Pablo');
   assert.equal(H.distinctName('Pablo', 'Pablo', ''), 'Pablo');
   assert.equal(H.distinctName(null, null, H607), null);
+});
+
+test('an entry keeps the map\'s frame and the mark pressed in it through a reload, Back and a rename; a new entry starts without them', () => {
+  let { state, visits } = H.begin(null, [], 'v1', 'Filipos');
+  state = H.withMark(H.withFrame(state, { lon: 24.789531234, lat: 40.927041234, zoom: 9.4987 }), 'periodo:galion');
+  // Rounded: about a metre and a hundredth of a zoom step, so history.state stays small.
+  assert.deepEqual(plain(state), { visit: 'v1', step: 0, name: 'Filipos', frame: { lon: 24.78953, lat: 40.92704, zoom: 9.5 }, mark: 'periodo:galion' });
+  // A reload, or Back into this page from another one, reads them back.
+  assert.deepEqual(plain(H.begin(state, visits, 'v2').state), plain(state));
+  assert.deepEqual(plain(H.rename(state, visits, 'Filipos en c. 50 e.c.').state.frame), plain(state.frame));
+  const n = H.push(state, visits);
+  assert.equal(n.state.frame, undefined, 'a new entry has the frame of the one before');
+  assert.equal(n.state.mark, undefined, 'a new entry has the mark of the one before');
+  // Back to it: popstate hands over the state as it was written.
+  assert.deepEqual(plain(H.arrive(n.state, state, n.visits, 'v3').state), plain(state));
+  // Without a mark, or with an unreadable frame, the field goes.
+  assert.equal(H.withMark(state, null).mark, undefined);
+  assert.equal(H.withFrame(state, { lon: 'x', lat: 1, zoom: 2 }).frame, undefined);
+});
+
+test('only a centre inside the world and a zoom a map can take count as a frame', () => {
+  assert.equal(H.isFrame({ lon: 24.8, lat: 40.9, zoom: 9.5 }), true);
+  for (const f of [null, {}, { lon: 1, lat: 2 }, { lon: 200, lat: 0, zoom: 5 }, { lon: 0, lat: -91, zoom: 5 }, { lon: 0, lat: 0, zoom: 30 }, { lon: NaN, lat: 0, zoom: 5 }, { lon: '1', lat: 0, zoom: 5 }]) {
+    assert.equal(H.isFrame(f), false, JSON.stringify(f));
+  }
+  // A stored state with a broken frame keeps its number and name and drops the frame.
+  const r = H.begin({ visit: 'v1', step: 1, name: 'Corinto', frame: { lon: 0, lat: 0, zoom: 99 }, mark: '' }, [], 'v2');
+  assert.deepEqual(plain(r.state), { visit: 'v1', step: 1, name: 'Corinto' });
 });

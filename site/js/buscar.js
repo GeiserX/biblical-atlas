@@ -570,8 +570,9 @@ const historia = (() => {
     ultimoIndice = indice();
     pintarBotones();
   }
-  /** base.js, al escribir la dirección: el nombre de la vista de ahora pasa a la entrada y al título de la pestaña.
-      Devuelve el estado que hay que escribir, o null si no ha cambiado. */
+  /** base.js, al escribir la dirección: el nombre de la vista de ahora pasa a la entrada y al título de la pestaña, y
+      la marca de la línea pulsada la última vez, a la entrada. Devuelve el estado que hay que escribir, o null si no ha
+      cambiado. */
   function sello() {
     if (!BE.D) return null;
     revisar(false);   // una vista que cambió sin pintarse todavía («Ahora mismo») tiene su entrada antes de escribirse
@@ -580,11 +581,24 @@ const historia = (() => {
     const nombre = H.distinctName(H.viewName(v), H.around(actual, leerVisitas()).back.name, v.date);
     // La portada se decide por la vista, no por la dirección: aún es la de la vista de antes.
     ponerTitulo(nombre, !!v.landing);
-    const igual = nombre === actual.name && history.state?.visit === actual.visit && history.state?.step === actual.step;
-    if (!igual) { const r = H.rename(actual, leerVisitas(), nombre); actual = r.state; guardarVisitas(r.visits); }
+    const marca = BE.marcaPulsada?.() ?? null;
+    const igual = nombre === actual.name && marca === (actual.mark ?? null)
+      && history.state?.visit === actual.visit && history.state?.step === actual.step;
+    if (!igual) { const r = H.rename(actual, leerVisitas(), nombre); actual = H.withMark(r.state, marca); guardarVisitas(r.visits); }
     pintarBotones();
     return igual ? null : actual;
   }
+  /** mapa.js, cuando el mapa se para: la entrada de ahora guarda su encuadre, sin crear otra ni tocar la dirección.
+      Una vista que cambió sin su entrada todavía la recibe antes, como en sello(): el encuadre es de la vista nueva. */
+  function encuadre(marco) {
+    if (!BE.D || !actual) return;
+    if (revisar(false)) BE.escribirHash();
+    actual = H.withFrame(actual, marco);
+    history.replaceState(actual, '', location.href);
+  }
+  /** Al llegar a una entrada (Atrás, Adelante, una recarga, la vuelta desde otra página), la línea recupera la marca
+      que se pulsó en ella: el primer clic en esa marca la suelta, como antes de irse. */
+  function llegar() { BE.ponerMarcaPulsada?.(actual?.mark ?? null); }
   /** Salir de la página por un enlace: el navegador tira las entradas de delante, y aquí también. */
   function dejar() { guardarVisitas(H.cutForward(actual, leerVisitas())); }
 
@@ -636,6 +650,7 @@ const historia = (() => {
     quedarse();
     if (BE.D) {
       BE.aplicarHash(false);
+      llegar();
       // Una entrada que llega sin nombre (un enlace compartido, una pestaña de antes) lo recibe ya, y el título de la
       // pestaña con él.
       if (!actual.name) BE.escribirHash();
@@ -686,7 +701,9 @@ const historia = (() => {
     /** Entrar desde la portada: una sola entrada nueva, sea cual sea el destino y tarde lo que tarde. Se guarda la de
         la portada; fn pone el destino, y lo que cambie después sin que la persona toque nada es parte de él. */
     entrar(fn) { empujar(); quedarse(); fn(); BE.programar(); },
-    empujar, sello, dejar, pareja,
+    /** El encuadre que guarda la entrada de ahora, o null: base.js y mapa.js lo ponen al llegar a ella. */
+    marco: () => actual?.frame ?? null,
+    empujar, sello, dejar, pareja, encuadre, llegar,
   };
 })();
 

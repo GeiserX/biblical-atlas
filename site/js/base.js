@@ -338,6 +338,10 @@ function leerHash() {
 function aplicarHash(inicial) {
   const h = leerHash();
   const tAntes = E.t;
+  // Una entrada a la que se vuelve con Atrás o Adelante guarda el encuadre en que se dejó el mapa (BE.historia): se
+  // pone ese, no el de la selección. Se lee antes de nada: lo que mueva el mapa en esta vuelta lo reescribiría. Al
+  // arrancar lo pone encuadreDeInicio.
+  const encuadreGuardado = inicial ? null : BE.historia?.marco();
   if (h.t != null) E.t = h.t;
   if (h.mapa) BE.ponerMapa(h.mapa, false);
   for (const x of parametros) x.leer(h.p.get(x.nombre), inicial);
@@ -345,8 +349,9 @@ function aplicarHash(inicial) {
   const otraSel = inicial || selTexto(s) !== selTexto(E.sel);
   // Al arrancar, la selección la encuadra encuadreDeInicio, con el mapa ya a su tamaño: si no, un enlace compartido la
   // dejaba en el borde de abajo del mapa en vez de donde la pone un clic en la línea.
-  if (otraSel) seleccionar(s, { mover: h.t == null, encuadrar: !inicial });
-  else if (E.t !== tAntes) BE.seguirPablo();   // al arrancar lo hace mostrarPablo; con otra selección, su encuadre
+  if (otraSel) seleccionar(s, { mover: h.t == null, encuadrar: !inicial && !encuadreGuardado });
+  else if (E.t !== tAntes && !encuadreGuardado) BE.seguirPablo();   // al arrancar lo hace mostrarPablo; con otra selección, su encuadre
+  if (encuadreGuardado) BE.mapa.ponerMarco(encuadreGuardado);
   if (h.v != null) {
     const v0 = clamp(E.t - h.v * 0.4, BE.T_MIN, BE.T_MAX - h.v);
     E.vista = [v0, v0 + h.v];
@@ -646,6 +651,7 @@ async function iniciar() {
   for (const f of inicios) f();
   if (matchMedia('(max-width: 760px)').matches) E.vista = [E.t - 5, E.t + 7];
   aplicarHash(true);
+  BE.historia?.llegar();   // una recarga o la vuelta desde otra página: la marca pulsada de esta entrada
   BE.mapa.encuadreDeInicio?.();
   setTimeout(() => { for (const st of Object.values(marco)) st.arranque = false; }, 0);
   window.__be = {

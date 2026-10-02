@@ -2045,8 +2045,13 @@ BE.parametros.push(
   { nombre: 'meses', escribir: () => L.meses, leer: (v) => { L.meses = MODOS_MESES.some(([k]) => k === v) ? v : null; } },
 );
 
+// La marca pulsada la última vez, para la entrada del historial (buscar.js): al volver a una entrada con Atrás o
+// Adelante la línea la recupera, y un primer clic en ella la suelta, como antes de irse.
+const marcaPulsada = () => lastClicked;
+function ponerMarcaPulsada(id) { lastClicked = id ?? null; }
+
 Object.assign(BE, {
   pintarLineaFija, pintarCursor, iniciarLinea, irA, encuadrarTiempo, duracion, ponerGrande, alternarGrande, colorPotencia, fmtMes,
-  lineaEstado: L, SPAN_MIN,
+  marcaPulsada, ponerMarcaPulsada, lineaEstado: L, SPAN_MIN,
 });
 })();
