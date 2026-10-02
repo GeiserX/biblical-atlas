@@ -98,7 +98,7 @@ stops:
   status: verified
 - order: 4
   place: sucot
-  reference: Jue 8:4-7
+  reference: Jue 7:25–8:7
   date:
     from: -1449
     to: -1172
@@ -107,9 +107,10 @@ stops:
     type: narrative
     chronology: tnm
     text: 'entre c. 1450 y c. 1173 a.e.c. (tiempo narrativo: antes de que Jefté empezara a juzgar)'
-  note: Llega tras cruzar el Jordán con los 300, cansados y tras Madián (Jue 8:4). Los príncipes de la ciudad le niegan pan.
-  reason: 'Jue 8:4-7: cruza el Jordán, pide pan a los de Sucot y ellos se burlan. El cruce va en esta nota: solo se cruza.
-    Suceso ancla: sucot-niega-pan-a-gedeon (antes de Jefté, c. 1173, según Perspicacia «Jefté»).'
+  note: Antes de cruzar, en la región del Jordán, recibe las cabezas de Oreb y Zeeb y calma a Efraín. Llega tras cruzar con
+    los 300, cansados y tras Madián. Los príncipes de la ciudad le niegan pan.
+  reason: 'Jue 7:25–8:3 lo sitúan en la región del Jordán; 8:4-7, cruza y Sucot le niega pan. El cruce va en esta nota: solo
+    se cruza. Suceso ancla: sucot-niega-pan-a-gedeon (antes de Jefté, c. 1173, según Perspicacia «Jefté»).'
   sources:
   - jueces-8
   - it-sucot
