@@ -215,6 +215,29 @@ class JourneysForTheSite(unittest.TestCase):
         self.assertIn('"silas"', tramos[0])
         self.assertIn('"desde": 16', tramos[1])
 
+    def test_branches_from_reaches_data_json_under_its_own_key(self):
+        """A parallel destination keeps `orden` and `lugar` as the site and the MCP reader read them, and adds
+        `branches_from`; a stop without it has no such key."""
+        v = next(x for x in self.salida()["viajes"] if x["id"] == "destierro-de-israel-en-740")
+        self.assertEqual([(p["orden"], p["lugar"], p.get("branches_from")) for p in v["paradas"]],
+                         [(1, "samaria", None), (2, "hala", 1), (3, "habor", 1), (4, "gozan", 1), (5, "media", 1)])
+        self.assertNotIn("branches_from", v["paradas"][0])
+        con = [x["id"] for x in self.salida()["viajes"] if any("branches_from" in p for p in x["paradas"])]
+        self.assertEqual(sorted(con), ["destierro-de-beera", "destierro-de-israel-en-740"])
+
+    def test_sqlite_keeps_branches_from(self):
+        import sqlite3
+        with tempfile.TemporaryDirectory() as d:
+            ruta = Path(d) / "atlas.sqlite"
+            build.escribir_sqlite(self.salida(), ruta)
+            con = sqlite3.connect(ruta)
+            filas = con.execute("SELECT orden, branches_from FROM paradas WHERE viaje_id = 'destierro-de-beera' "
+                                "ORDER BY orden").fetchall()
+            nulas = con.execute("SELECT COUNT(*) FROM paradas WHERE viaje_id = 'segundo-viaje' AND branches_from IS NOT NULL").fetchone()
+            con.close()
+        self.assertEqual(filas, [(1, None), (2, 1), (3, 1), (4, 1), (5, 1)])
+        self.assertEqual(nulas, (0,))
+
     _salida = None
 
     @classmethod
