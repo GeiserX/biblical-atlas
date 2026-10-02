@@ -98,7 +98,7 @@ Nueve zonas cuyas fuentes describen bien su extensión. Las demás siguen como e
 | Llanura de Sarón | Elipse 60 × 17,5 km, al NNE | Perspicacia: 60 km del Crocodilon a Jope, de 16 a 19 de ancho | Junto a la costa; ancho medio |
 | Filistea | Polígono de 5 vértices | Perspicacia: unos 80 km de costa de Jope a Gaza y 24 tierra adentro | Gaza, Asquelón y Jope, y una paralela a 24 km |
 | Valle del Líbano | Elipse 100 × 13 km, al NNE | Perspicacia: cordilleras paralelas unos 100 km, de NNE a SSO, con un valle de 10 a 16 km | Su extremo sur al pie oeste del Hermón, donde Perspicacia pone Baal-gad, y el eje por el punto de la Becá; ancho medio |
-| Benjamín (candidato) | Polígono de 6 vértices | Perspicacia y Jos 18:11-20: la frontera por Jericó, Betel, Bet-horón Baja, Quiryat-jearim y Jerusalén | Esos lugares y la boca del Jordán |
+| Benjamín (candidato) | Polígono de 6 vértices | Perspicacia y Jos 18:11-20: la frontera por Jericó, Betel, Bet-horón Baja, Quiryat-jearim y Jerusalén | Esos lugares, con el rincón noroeste en la montaña al sur de Bet-horón Baja (Jos 18:13), y la boca del Jordán |
 | Genesaret | Triángulo | Perspicacia: llanura casi triangular de unos 5 por 2,5 km en la orilla noroeste del lago | 5 km de orilla y un vértice 2,5 km tierra adentro |
 
 ![Después: Canaán con su contorno, de Sidón a Gaza](img/zonas-formas/despues-canaan-1440.png)

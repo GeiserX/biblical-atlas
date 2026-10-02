@@ -31,15 +31,15 @@ candidates:
     vertices:
     - [31.874, 35.54]
     - betel
-    - bet-horon-baja
+    - [31.875, 35.085]
     - quiryat-jearim
     - jerusalen
     - [31.761, 35.558]
-    note: 'Contorno nuestro por los lugares que nombra la frontera: el Jordán frente a Jericó, Betel, Bet-horón Baja, Quiryat-jearim, Jerusalén y la boca del Jordán en el mar Salado.'
+    note: 'Contorno nuestro por lo que nombra la frontera: el Jordán frente a Jericó, Betel, la montaña unos 2 km al sur de Bet-horón Baja, Quiryat-jearim, Jerusalén y la boca del Jordán en el mar Salado.'
     sources:
     - it-benjamin
     - josue-18
-    reason: 'Perspicacia «Benjamín», núm. 2, y Jos 18:11-20: al norte, del Jordán junto a Jericó por Betel a Bet-horón Baja; al oeste, a Quiryat-jearim; al sur, por Jerusalén al extremo norte del mar Muerto.'
+    reason: 'Perspicacia «Benjamín», núm. 2, y Jos 18:11-20: al norte, del Jordán junto a Jericó por Betel a la montaña al sur de Bet-horón Baja; al oeste, a Quiryat-jearim; al sur, por Jerusalén al extremo norte del mar Muerto.'
     checked_on: '2026-10-02'
     status: verified
 summary: 'Territorio de la tribu de Benjamín, entre Judá y los hijos de José: del Jordán, junto a Jericó, hasta cerca de Bet-Horón
