@@ -345,7 +345,8 @@ function rotuloHtml(c) {
     const clase = c.clases?.[i] ? ` ${c.clases[i]}` : '';
     const mas = c.tipo === 'meses' && i === Math.max(0, (c.tiposFila || []).indexOf('hebreos')) ? enlaceCalendario('carril-ayuda', '?', '¿Qué meses son estos?') : '';
     const texto = c.cortos?.[i] ? `<span class="nombre-largo">${esc(nm)}</span><span class="nombre-corto" aria-hidden="true">${esc(c.cortos[i])}</span>` : esc(nm);
-    return `<div class="be-lane-label${c.persona ? ' carril-persona' : ''}${clase}"${ayuda ? ` title="${esc(ayuda)}"` : ''}>${icono}${c.persona ? `<button type="button" class="carril-nombre enlace-titulo" data-sel="persona:${esc(c.persona)}">${esc(nm)}</button><span class="edad" data-edad="${esc(c.persona)}"></span>` : `<span>${texto}</span>`}${mas}${i === 0 ? `${n2}${pin}` : ''}</div>`;
+    const una = /\s/.test(nm.trim()) ? '' : ' una-palabra';   // solo un nombre de una palabra se parte con guion (linea.css)
+    return `<div class="be-lane-label${c.persona ? ' carril-persona' : ''}${clase}${una}"${ayuda ? ` title="${esc(ayuda)}"` : ''}>${icono}${c.persona ? `<button type="button" class="carril-nombre enlace-titulo" data-sel="persona:${esc(c.persona)}">${esc(nm)}</button><span class="edad" data-edad="${esc(c.persona)}"></span>` : `<span>${texto}</span>`}${mas}${i === 0 ? `${n2}${pin}` : ''}</div>`;
   }).join('');
 }
 /** Un elemento por carril: su nombre a la izquierda y su franja, donde van las marcas. Se conservan entre pintados, así

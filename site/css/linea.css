@@ -62,17 +62,19 @@
 .carriles-boton b { color: var(--accent); font-weight: 700; }
 .carril-rotulo .be-lane-label { font-size: var(--fs-sm); position: relative; overflow: hidden; }
 .carril-rotulo .be-lane-label > span:not(.edad):not(.be-tier) { overflow: hidden; text-overflow: ellipsis; }
-.carril-nombre { flex: 0 1 auto; min-width: 0; max-width: 75%; font-weight: 600; color: var(--ink-2); text-align: left; }
+.carril-nombre { flex: 0 0 auto; max-width: 75%; font-weight: 600; color: var(--ink-2); text-align: left; }   /* la edad cede antes que el nombre */
 .edad { flex: 0 1 auto; min-width: 0; overflow: hidden; font-weight: 500; color: var(--ink-3); font-size: var(--fs-xs); white-space: nowrap; }
 .carril-pin { position: absolute; right: 4px; top: 50%; transform: translateY(-50%); border: 0; background: var(--surface-2); padding: 2px; border-radius: var(--r-xs); color: var(--ink-4); cursor: pointer; opacity: 0; }
 .be-lane-label:hover .carril-pin, .carril-pin:focus-visible { opacity: 1; }
 .carril-pin.on { opacity: 1; background: none; }
 .be-lane-label:has(.carril-pin.on) { padding-right: 24px; }
 /* Un nombre de carril que no cabe en una línea («Reyes · Persia y Babilonia», «Viajes de Pablo» fijado) va en dos, o en
-   tres en el móvil, en vez de cortarse; una sola palabra larga («Gobernadores» en el móvil) se parte con guion. Con
-   interlínea 1 y 2 px arriba y abajo para que no se recorten las letras que bajan, tres líneas caben en los 44 px del dedo;
-   en el ordenador el carril crece hasta su nombre (medirNombres en linea.js). */
-.carril-rotulo .be-lane-label > span:not(.edad):not(.be-tier), .carril-rotulo .carril-nombre { white-space: normal; line-height: 1; padding-top: 2px; padding-bottom: 2px; hyphens: auto; overflow-wrap: break-word; }
+   tres en el móvil, en vez de cortarse. Las palabras van enteras; solo un nombre de una sola palabra que no cabe
+   («Gobernadores» en el móvil) se parte, con guion: con varias, el guion partiría «Samaria» aunque cabe en la línea
+   siguiente. Con interlínea 1 y 2 px arriba y abajo para que no se recorten las letras que bajan, tres líneas caben en
+   los 44 px del dedo; en el ordenador el carril crece hasta su nombre (medirNombres en linea.js). */
+.carril-rotulo .be-lane-label > span:not(.edad):not(.be-tier), .carril-rotulo .carril-nombre { white-space: normal; line-height: 1; padding-top: 2px; padding-bottom: 2px; overflow-wrap: break-word; }
+.carril-rotulo .una-palabra > span:not(.edad):not(.be-tier), .carril-rotulo .una-palabra .carril-nombre { hyphens: auto; }
 .carril-pin.on { color: var(--accent); }
 .nivel-carril { height: 18px; margin-left: auto; }
 .linea-pista { cursor: crosshair; touch-action: none; }

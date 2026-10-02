@@ -814,17 +814,44 @@ function travellerLane(p, id) {
   }, id);
 }
 
-/** Every lane label drawn: its name whole (no ellipsis, no clipped line) inside the label, and the label inside its lane. */
+/** Every lane label drawn: its name whole (no ellipsis, no clipped line) inside the label, and the label inside its lane.
+    A word is split across lines only when it is wider than the box on its own («Gobernadores» on a phone), never
+    «Je-sús» beside the age. */
 function lanesLabels(p) {
   return p.evaluate(() => [...document.querySelectorAll('#linea-filas .carril:not([hidden]) .carril-rotulo .be-lane-label')].map((l) => {
     const s = l.querySelector('.carril-nombre') || l.querySelector(':scope > span:not(.edad):not(.be-tier)');
     if (!s) return null;
     const a = l.getBoundingClientRect(), b = s.getBoundingClientRect(), c = l.closest('.carril').getBoundingClientRect();
-    const lh = parseFloat(getComputedStyle(s).lineHeight) || b.height;
+    const cs = getComputedStyle(s);
+    const lh = parseFloat(cs.lineHeight) || b.height;
+    const ctx = (window.__lanesCtx ||= document.createElement('canvas').getContext('2d'));
+    ctx.font = `${cs.fontStyle} ${cs.fontWeight} ${cs.fontSize} ${cs.fontFamily}`;
+    // The room the name could have: the label without its padding and its icon; a person's name, 75 % of it at most.
+    const lcs = getComputedStyle(l), icon = l.querySelector(':scope > svg');
+    const content = l.clientWidth - parseFloat(lcs.paddingLeft) - parseFloat(lcs.paddingRight);
+    const room = content - (icon?.checkVisibility() ? icon.getBoundingClientRect().width + (parseFloat(lcs.columnGap) || 0) : 0);
+    const inner = (s.classList.contains('carril-nombre') ? Math.min(room, 0.75 * content) : room) - parseFloat(cs.paddingLeft) - parseFloat(cs.paddingRight);
+    const split = [];
+    const walk = document.createTreeWalker(s, NodeFilter.SHOW_TEXT);
+    for (let n = walk.nextNode(); n; n = walk.nextNode()) {
+      if (!n.parentElement.checkVisibility()) continue;
+      for (const m of n.data.matchAll(/\S+/g)) {
+        const r = document.createRange();
+        r.setStart(n, m.index); r.setEnd(n, m.index + m[0].length);
+        const lines = new Set([...r.getClientRects()].map((x) => Math.round(x.top)));
+        if (lines.size > 1 && ctx.measureText(m[0]).width <= inner + 0.5) split.push(m[0]);
+      }
+    }
     // Height on boxes, as in viajesWhole: with line height 1 the font's ascent and descent pass the line box.
-    const why = [[s.scrollWidth > s.clientWidth + 0.5, 'wider than its box'], [l.scrollHeight > l.clientHeight + 1, 'taller than its label'],
+    // The text itself, measured on its line boxes: scrollWidth would count the transparent ::after that widens a
+    // button for a finger.
+    const all = document.createRange();
+    all.selectNodeContents(s);
+    const tr = all.getBoundingClientRect();
+    const why = [[tr.left < b.left - 0.5 || tr.right > b.right + 0.5, 'wider than its box'], [l.scrollHeight > l.clientHeight + 1, 'taller than its label'],
       [b.top < a.top - 0.5 || b.bottom > a.bottom + 0.5 || b.right > a.right + 0.5, 'out of its label'],
-      [a.top < c.top - 0.5 || a.bottom > c.bottom + 0.5, `label ${Math.round(a.height)} px out of its lane of ${Math.round(c.height)}`]].filter(([x]) => x).map(([, w]) => w);
+      [a.top < c.top - 0.5 || a.bottom > c.bottom + 0.5, `label ${Math.round(a.height)} px out of its lane of ${Math.round(c.height)}`],
+      [split.length, `split ${split.map((w) => `«${w}»`).join(', ')}, which fits on its own`]].filter(([x]) => x).map(([, w]) => w);
     return { lane: l.closest('.carril').dataset.carril, name: s.textContent.trim(), lines: Math.round(b.height / lh), cut: why.join(', ') };
   }).filter(Boolean));
 }
@@ -902,11 +929,13 @@ test('no lane name is cut: each goes in as many lines as it needs, pinned, with 
     // The traveller with the longest name, selected: its lane goes by its name.
     const larga = await p.evaluate(() => { const BE = window.BE; return [...new Set(BE.D.viajes.map((v) => v.persona || 'pablo'))].filter((id) => BE.PERS[id]).sort((a, b) => BE.PERS[b].nombre.length - BE.PERS[a].nombre.length)[0]; });
     // Last, eight years around 520 a.e.c. with «Letra grande»: lanes of a single row, so the lane has to grow to its name.
-    const casos = [['milenios', null], ['pinned', `t=-600.5&v=4125&carriles=${ids.join(',')}`], ['letra grande', 'grande'], [`persona ${larga}`, 'persona'], ['8 años, letra grande', 'cerca']];
+    // Jesús in 30 e.c. carries his age beside his name, which takes room from it.
+    const casos = [['milenios', null], ['persona jesus', 'jesus'], ['pinned', `t=-600.5&v=4125&carriles=${ids.join(',')}`], ['letra grande', 'grande'], [`persona ${larga}`, 'persona'], ['8 años, letra grande', 'cerca']];
     let q = p;
     for (const [nombre, how] of casos) {
       if (how && how.startsWith('t=')) { q = await open(screen, how); }
       else if (how === 'grande') { await q.evaluate(() => window.BE.ponerPreferencia('letra-grande', true)); await frames(q, 4); }
+      else if (how === 'jesus') { await goTo(q, 30.9, 8); await q.evaluate(() => window.BE.seleccionar({ tipo: 'persona', id: 'jesus' }, { mover: false })); await frames(q, 4); }
       else if (how === 'persona') { await q.evaluate((id) => window.BE.seleccionar({ tipo: 'persona', id }, { mover: false }), larga); await frames(q, 4); }
       else if (how === 'cerca') { await goTo(q, -519.5, 8); await frames(q, 4); }
       const ls = await lanesLabels(q);
