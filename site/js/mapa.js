@@ -1763,10 +1763,12 @@ function tapas() {
     tanto», nunca debajo. En el móvil la hoja inferior tapa el fondo del mapa. */
 function rellenoEncuadre(caja = [[0, 0], [0, 0]]) {
   const c = map.getContainer(), W = c.clientWidth, H = c.clientHeight, base = map.getPadding();
-  // Los márgenes dejan sitio a la píldora de números de un recorrido («1·5·6·7·8», unos 75 × 26 px), que va centrada
-  // 14 px encima de su lugar: media píldora y algo de aire a cada lado, y la píldora entera por encima.
-  const borde = estrecha() ? { top: 46, bottom: Math.min(altoHoja() + 20, H * 0.6), left: 48, right: 50 } : { top: 46, bottom: 24, left: 48, right: 60 };
-  const ts = tapas(), LADO = 48, ENCIMA = 46, DEBAJO = 16;
+  // Los bordes del mapa dejan sitio a la píldora de números de un recorrido («1·5·6·7·8», unos 75 × 26 px), que va
+  // centrada 14 px encima de su lugar: media píldora y algo de aire a cada lado, para que no salga cortada. Junto a una
+  // tarjeta el margen es menor: con el mapa bajo de 1440 × 900, uno de 48 px dejaba entre la leyenda y «Mientras
+  // tanto» una columna de 53 px, y una zona de 20 km se veía con 4 grados de ancho.
+  const borde = estrecha() ? { top: 44, bottom: Math.min(altoHoja() + 20, H * 0.6), left: 48, right: 50 } : { top: 44, bottom: 24, left: 48, right: 60 };
+  const ts = tapas(), LADO = 24, ENCIMA = 40, DEBAJO = 16;
   // La forma de la caja en píxeles al zoom 0; un punto cuenta como una caja diminuta, y gana el hueco más ancho y alto.
   const [[o, s], [e, n]] = caja;
   const bw = Math.max(((e - o) / 360) * 512, 1e-6), bh = Math.max(((mercY(n) - mercY(s)) / (2 * Math.PI)) * 512, 1e-6);
