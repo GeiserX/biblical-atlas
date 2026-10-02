@@ -68,11 +68,11 @@
 .be-lane-label:hover .carril-pin, .carril-pin:focus-visible { opacity: 1; }
 .carril-pin.on { opacity: 1; background: none; }
 .be-lane-label:has(.carril-pin.on) { padding-right: 24px; }
-/* Un nombre de carril que no cabe en una línea («Reyes · Persia y Babilonia», «Viajes de Pablo» fijado) va en dos, o en
-   tres en el móvil, en vez de cortarse. Las palabras van enteras; solo un nombre de una sola palabra que no cabe
+/* Un nombre de carril que no cabe en una línea («Reyes · Persia y Babilonia», «Viajes de Pablo» fijado) va en las
+   líneas que necesite (hasta cuatro en el móvil con «Letra grande») en vez de cortarse. Las palabras van enteras; solo un nombre de una sola palabra que no cabe
    («Gobernadores» en el móvil) se parte, con guion: con varias, el guion partiría «Samaria» aunque cabe en la línea
    siguiente. Con interlínea 1 y 2 px arriba y abajo para que no se recorten las letras que bajan, tres líneas caben en
-   los 44 px del dedo; en el ordenador el carril crece hasta su nombre (medirNombres en linea.js). */
+   los 44 px del dedo; con más, o en el ordenador, el carril crece hasta su nombre (medirNombres en linea.js). */
 .carril-rotulo .be-lane-label > span:not(.edad):not(.be-tier), .carril-rotulo .carril-nombre { white-space: normal; line-height: 1; padding-top: 2px; padding-bottom: 2px; overflow-wrap: break-word; }
 .carril-rotulo .una-palabra > span:not(.edad):not(.be-tier), .carril-rotulo .una-palabra .carril-nombre { hyphens: auto; }
 .carril-pin.on { color: var(--accent); }

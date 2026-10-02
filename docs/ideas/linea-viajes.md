@@ -5,7 +5,7 @@
 **A, B, A, B**, lo que recomendábamos, y ya está en el sitio:
 
 1. **A.** El carril de cada viajero, elegido o fijado, lleva un tramo por viaje en su color del mapa, sus paradas debajo y, después, los sucesos y los sitios donde vivió. «Viajes de Pablo» hace lo mismo y conserva su id `pablo`. Pulsar una marca del carril ya no lo quita.
-2. **B.** Cualquier nombre de carril va en dos líneas, o en tres en el teléfono, y el carril crece hasta su nombre. Ninguno se corta a 1440 ni a 430, tampoco fijado ni con «Letra grande».
+2. **B.** Cualquier nombre de carril va en las líneas que necesite, hasta cuatro en el teléfono con «Letra grande», y el carril crece hasta su nombre. Ninguno se corta a 1440 ni a 430, tampoco fijado ni con «Letra grande».
 3. **A.** Con una persona elegida, el mapa enseña lo mismo que sin nada elegido: el viaje en curso. Pablo en el 44 pasa de 8 rutas suyas a 1, y Jesús en el 32 de 19 rutas a 10.
 4. **B.** Campo cerrado `repeats: yearly` en los tres viajes de cada año, comprobado con 1Sa 1:3, 1Sa 7:16 y Lu 2:41. Se ve como «↻ cada año» tras el nombre en la línea, sobre la ruta y en la leyenda del mapa.
 

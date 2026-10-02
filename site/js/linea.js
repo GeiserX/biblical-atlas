@@ -474,7 +474,7 @@ const DEFS_MESES = '<defs><pattern id="p-hebreo" width="6" height="6" patternUni
 function medidasPanel(cuerpo = $('#linea-cuerpo')) {
   return { vh: cuerpo.clientHeight, top: cuerpo.scrollTop, cab: cuerpo.offsetTop, wCar: $('#carriles').offsetWidth, hLinea: $('#linea').clientHeight };
 }
-/** Alto del nombre de cada carril, que puede ir en dos o tres líneas: el carril mide al menos eso, así que ningún nombre
+/** Alto del nombre de cada carril, que puede ir en varias líneas: el carril mide al menos eso, así que ningún nombre
     se sale por abajo. Se lee del DOM solo cuando cambian los nombres, la letra o el ancho, y antes de escribir nada. Un
     carril escondido no se puede medir: se mide en el pintado siguiente, que se pide. */
 let claveNombres = '';
