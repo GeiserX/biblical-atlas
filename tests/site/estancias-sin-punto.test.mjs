@@ -14,6 +14,7 @@
 //  - A region, whose point stands for the whole region, also looks estimated (Paul in Galatia).
 //  - The legend explains that look whenever Paul's marker has it.
 //  - When Paul is at a place with nowhere to draw, following him does not break the map.
+//  - Paul's journey in course goes to the candidate of a stop without a point and skips one with nowhere to draw.
 //
 // Run from the repository root, one browser at a time:
 //   node --test --test-concurrency=1 tests/site/estancias-sin-punto.test.mjs
@@ -306,6 +307,35 @@ test('when Paul is at a place with nowhere to draw, following him does not break
   });
   assert.deepEqual(r, { lugar: 'salamina', pos: null, fallo: null });
   assert.deepEqual(errors.slice(antes), [], 'no page errors on load (mostrarPablo) either');
+  await p.context().close();
+});
+
+test('Paul\'s journey in course goes to the candidate of a stop without a point, and skips a stop with nowhere to draw', async () => {
+  const p = await open('/pablo-sin-punto');
+  const r = await p.evaluate(async () => {
+    const { BE, map, setT } = window.__be;
+    const pinta = async (key) => {
+      const s = BE.P.find((x) => x.key === key);
+      setT((s.a + s.b) / 2);
+      await new Promise((res) => requestAnimationFrame(() => requestAnimationFrame(res)));
+      const fs = (await Promise.all(['be-hecho', 'be-falta'].map(async (id) => (await map.getSource(id).getData()).features))).flat();
+      const prox = document.querySelector('.proxima');
+      return { fs, malas: fs.flatMap((f) => f.geometry.coordinates).filter(([x, y]) => !Number.isFinite(x) || !Number.isFinite(y)).length, proxima: prox?.isConnected ? prox.textContent : null };
+    };
+    // At Seleucia the next stop is Salamis, with nowhere to draw: no next-stop label, no broken vertex.
+    const seleucia = await pinta('primer-viaje/2');
+    // At Paphos (a zone candidate in this copy) Paul is drawn there, and a leg reaches it, dashed.
+    const pafos = await pinta('primer-viaje/4');
+    const c = BE.L.pafos.candidatos[0].geometria;
+    const llega = pafos.fs.find((f) => f.geometry.coordinates.some(([x, y]) => x === c.lon && y === c.lat));
+    return { seleucia: { n: seleucia.fs.length, malas: seleucia.malas, proxima: seleucia.proxima },
+      pafos: { n: pafos.fs.length, malas: pafos.malas, incierto: llega ? llega.properties.incierto : null } };
+  });
+  assert.ok(r.seleucia.n > 0 && r.pafos.n > 0, JSON.stringify(r));
+  assert.equal(r.seleucia.malas, 0, `every vertex is a real position at Seleucia: ${JSON.stringify(r)}`);
+  assert.equal(r.seleucia.proxima, null, `no next-stop label at a place with nowhere to draw: ${JSON.stringify(r)}`);
+  assert.equal(r.pafos.malas, 0, `every vertex is a real position at Paphos: ${JSON.stringify(r)}`);
+  assert.equal(r.pafos.incierto, true, `a leg reaches the candidate of Paphos, dashed: ${JSON.stringify(r)}`);
   await p.context().close();
 });
 

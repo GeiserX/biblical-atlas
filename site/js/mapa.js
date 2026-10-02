@@ -511,19 +511,21 @@ function geoRutas(w) {
     const ps = BE.P.filter((s) => s.viaje === V);
     const corte = w.parada ? w.en.i : (w.en.viaje === V ? w.en.i : -1);
     const color = colorViaje(V.id);
-    for (let k = 0; k < ps.length - 1; k++) {
-      const A = ps[k], B = ps[k + 1];
-      const incierto = A.lugar.precision === 'zona' || B.lugar.precision === 'zona';
-      const props = { viaje: V.id, incierto, color };
-      if (k < corte) hecho.push(linea([coord(A.lugar), coord(B.lugar)], props));
-      else if (k === corte && !w.parada) {
-        hecho.push(linea([coord(A.lugar), w.pos], props));
-        falta.push(linea([w.pos, coord(B.lugar)], props));
-      } else falta.push(linea([coord(A.lugar), coord(B.lugar)], props));
+    // Los vértices son los de verticeRuta, como en los demás viajes; una parada sin dónde dibujarse se salta.
+    const vs = ps.map((s) => ({ s, v: verticeRuta(s.lugar) })).filter((x) => x.v);
+    for (let k = 0; k < vs.length - 1; k++) {
+      const A = vs[k], B = vs[k + 1];
+      const props = { viaje: V.id, incierto: A.v.incierto || B.v.incierto, color };
+      if (B.s.i <= corte) hecho.push(linea([A.v.c, B.v.c], props));
+      else if (A.s.i <= corte && !w.parada && w.pos) {
+        hecho.push(linea([A.v.c, w.pos], props));
+        falta.push(linea([w.pos, B.v.c], props));
+      } else falta.push(linea([A.v.c, B.v.c], props));
     }
-    if (!w.parada && w.en.viaje !== V) {             // tramo de enlace entre dos viajes
-      hecho.push(linea([coord(w.en.lugar), w.pos], { viaje: V.id, incierto: false, color }));
-      falta.push(linea([w.pos, coord(w.sig.lugar)], { viaje: V.id, incierto: false, color }));
+    const de = verticeRuta(w.en.lugar), a = w.sig && verticeRuta(w.sig.lugar);
+    if (!w.parada && w.en.viaje !== V && w.pos && de && a) {             // tramo de enlace entre dos viajes
+      hecho.push(linea([de.c, w.pos], { viaje: V.id, incierto: false, color }));
+      falta.push(linea([w.pos, a.c], { viaje: V.id, incierto: false, color }));
     }
   }
   for (const v of BE.D.viajes) {
@@ -913,13 +915,14 @@ function pintarMapa() {
     if (!marcaPablo.puesta) { marcaPablo.addTo(map); marcaPablo.puesta = true; }
     marcaPablo.getElement().classList.toggle('estimada', !!(w.estimada || w.incierto));
     const sig = w.parada ? BE.P[w.en.g + 1] : w.sig;
-    if (sig && sig.viaje === V) {
+    const vSig = sig && verticeRuta(sig.lugar);
+    if (sig && sig.viaje === V && vSig) {
       const q = marcaProxima.getElement();
       if (q.dataset.key !== sig.key) {
         q.dataset.key = sig.key;
         q.innerHTML = `<span class="proxima-icono" aria-hidden="true">›</span>Próxima: <b>${esc(sig.lugar.nombre)}</b> <span class="proxima-ref">${esc(sig.p.referencia)}</span>`;
         q.setAttribute('aria-label', `Ir a la próxima parada: ${sig.lugar.nombre}`);
-        marcaProxima.setLngLat(coord(sig.lugar));
+        marcaProxima.setLngLat(vSig.c);
       }
       if (!marcaProxima.puesta) { marcaProxima.addTo(map); marcaProxima.puesta = true; }
     } else if (marcaProxima.puesta) { marcaProxima.remove(); marcaProxima.puesta = false; }
