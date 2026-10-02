@@ -2,7 +2,9 @@
 // that journey and none of the others, faded or not; after his last stop it draws nothing of his; each journey has its
 // own colour and the legend names the one in course. A journey selected outside its date is drawn whole and in its
 // colour. The «Viajes» layer switched off draws no journey. Other travellers keep their rule: Jesús in 32 and David in
-// 1077 a.e.c. still draw their own journeys.
+// 1077 a.e.c. still draw their own journeys. The four choices of docs/ideas/viajes-modelo.md: a group journey (the Ark)
+// is its own and not Pablo's (1B); a segment to a deduced stop is dotted (2D); a companion shows only on the stops of
+// his range (3C); another traveller's journey is drawn only while its stops last, plus a grey year (4B).
 //
 // Run from the repository root, one browser at a time:
 //   node --test --test-concurrency=1 tests/site/map-journeys.test.mjs
@@ -249,6 +251,25 @@ test('3C: a companion shows only on the stops of his range, in reading mode and 
   // Choosing Lucas still draws the second journey on the map.
   const d = await drawnAt(page, 30.5, { tipo: 'persona', id: 'lucas' });
   assert.ok(d.rastro.includes('segundo-viaje'), `selecting Lucas draws the journeys he went on: ${d.rastro}`);
+  assert.deepEqual(page.pageErrors, []);
+  await page.context().close();
+});
+
+test('4B: another traveller\'s journey is drawn only while its stops last, plus a grey year', async () => {
+  const page = await openMap();
+  const out = {};
+  // 1070 and 1051 a.e.c. (astronomical -1069 and -1050, mid-year): with the whole date of each journey, 20 and 17.
+  for (const t of [-1068.5, -1049.5]) {
+    const d = await drawnAt(page, t);
+    const fuera = await page.evaluate((args) => {
+      const { BE } = window.__be;
+      return args.ids.filter((id) => { const ps = BE.paradasDe(BE.D.viajes.find((v) => v.id === id)); return !ps.length || args.t < Math.min(...ps.map((s) => s.a)) || args.t >= Math.max(...ps.map((s) => s.b)) + 1; });
+    }, { ids: d.otros, t });
+    out[t] = d.otros;
+    assert.deepEqual(fuera, [], `${t}: every journey drawn has a stop window around the date`);
+    assert.ok(d.otros.length <= 7, `${t}: ${d.otros.length} journeys drawn: ${d.otros}`);
+  }
+  assert.ok(!out[-1049.5].includes('joab-contra-ammon-y-siria'), 'Joab against Ammon is not drawn twenty years after it ended');
   assert.deepEqual(page.pageErrors, []);
   await page.context().close();
 });

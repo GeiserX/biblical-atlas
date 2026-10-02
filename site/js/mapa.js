@@ -100,7 +100,7 @@ function calcularColores() {
   const porPersona = new Map();
   for (const v of BE.D.viajes) { const p = BE.duenoViaje(v); if (!porPersona.has(p)) porPersona.set(p, []); porPersona.get(p).push(v); }
   const orden = (a, b) => claveFecha(a.fecha)[0] - claveFecha(b.fecha)[0] || claveFecha(a.fecha)[1] - claveFecha(b.fecha)[1] || a.id.localeCompare(b.id);
-  // Tramos con el año de margen con que la capa «Viajes» los dibuja (viajeEnEpoca).
+  // Toda la fecha de cada viaje, con un año de margen: contiene la ventana en que la capa «Viajes» lo dibuja (viajeEnEpoca).
   const tramoDibujo = (v) => { const tr = tramo(v.fecha); return tr ? [tr[0], tr[1] + 1] : null; };
   const ocupados = [];   // [tramo, índice de la tinta]
   (porPersona.get('pablo') || []).sort(orden).forEach((v, i) => {
@@ -495,10 +495,23 @@ function imagenRayado(color, estado) {
 // y falta; sus otros viajes no se dibujan. Los de otra persona se ven como rastro en la fecha del propio viaje: en
 // color mientras ocurre y gris claro el año siguiente. Un viaje seleccionado se ve entero y en su color.
 // ---------------------------------------------------------------------------
-/** ¿Dibuja la capa «Viajes» este viaje de otra persona en t? Solo dentro de su propia fecha (con un año de margen al
-    final), porque con Moisés o Pedro todos sus viajes a la vez llenarían el mapa. Los de Pablo no pasan por aquí: sus
-    viajes van uno detrás de otro, de 34 a 65, y en cada fecha se ve solo el que recorre (BE.viajeActual). */
-const viajeEnEpoca = (v, t) => { const tr = tramo(v.fecha); return !!tr && t >= tr[0] && t < tr[1] + 1; };
+/** Ventana [a, b] en que un viaje de otra persona o de un grupo está en curso: de su primera parada a su última, en el
+    momento en que las coloca la línea de tiempo (BE.paradasDe, que sale de BE.estancias), no toda la fecha del viaje.
+    Con la fecha entera, los dieciséis viajes de 2 Samuel 10 en adelante, que comparten de 1070 a c. 1040, se dibujaban
+    a la vez durante treinta años. Un viaje sin paradas en la línea usa su fecha. */
+let ventanasViaje = null;
+function ventanaViaje(v) {
+  if (!ventanasViaje || ventanasViaje.D !== BE.D) ventanasViaje = { D: BE.D, m: new Map() };
+  if (!ventanasViaje.m.has(v)) {
+    const ps = BE.paradasDe?.(v) || [];
+    ventanasViaje.m.set(v, ps.length ? [Math.min(...ps.map((s) => s.a)), Math.max(...ps.map((s) => s.b))] : tramo(v.fecha));
+  }
+  return ventanasViaje.m.get(v);
+}
+/** ¿Dibuja la capa «Viajes» este viaje de otra persona en t? Solo mientras duran sus paradas (ventanaViaje) y un año
+    más, en gris, porque con Moisés o Pedro todos sus viajes a la vez llenarían el mapa. Los de Pablo no pasan por aquí:
+    sus viajes van uno detrás de otro, de 34 a 65, y en cada fecha se ve solo el que recorre (BE.viajeActual). */
+const viajeEnEpoca = (v, t) => { const w = ventanaViaje(v); return !!w && t >= w[0] && t < w[1] + 1; };
 /** Vértice de una parada en la ruta de un viaje: el punto de su lugar o, si el lugar es incierto, su candidato
     preferido de los que se ven (seguro, favorecido por jw.org, tradición, otra propuesta, otra fuente; nunca uno
     descartado), o el centro de su zona. { c: [lon, lat], incierto } o null si no hay ninguno. Sin esto, Perea, Efraín o
@@ -552,7 +565,7 @@ function geoRutas(w) {
     if (elegido) estado = 'actual';                  // el viaje elegido fuera de su fecha, entero y en su color
     else if (ps.length) estado = ps[0].a > E.t ? 'futuro' : 'pasado';
     else {
-      const tr = tramo(v.fecha);
+      const tr = ventanaViaje(v);
       estado = !tr ? 'pasado' : E.t < tr[0] ? 'futuro' : E.t >= tr[1] ? 'pasado' : 'actual';
     }
     const c = colorViaje(v.id);
