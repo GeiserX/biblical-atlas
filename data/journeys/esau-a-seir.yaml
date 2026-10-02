@@ -33,7 +33,7 @@ sources:
 - it-edom
 - it-seir
 - si-3
-checked_on: '2026-09-30'
+checked_on: '2026-10-02'
 status: verified
 stops:
 - order: 1

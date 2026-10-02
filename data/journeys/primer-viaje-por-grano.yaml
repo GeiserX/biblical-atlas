@@ -32,7 +32,7 @@ sources:
 - it-ruben
 - it-simeon
 - si-3
-checked_on: '2026-09-30'
+checked_on: '2026-10-02'
 status: verified
 stops:
 - order: 1
@@ -100,6 +100,6 @@ stops:
   status: pending
 history:
 - date: '2026-10-02'
-  change: La salida y la vuelta pasa de Canaán, una zona con el punto en Galilea, a Hebrón, donde Perspicacia «Jacob» y «José»
-    ponen la casa de Jacob.
+  change: 'La salida y la vuelta pasan de Canaán, una zona con el punto en Galilea, a Hebrón, por deducción: allí dejan a Jacob
+    los artículos «Jacob» y «José» en 1750.'
   source: it-jacob
