@@ -438,7 +438,9 @@ function iniciarBusqueda() {
     else if (e.key === 'Enter') { e.preventDefault(); elegir(activo); }
     else if (e.key === 'Escape') { e.preventDefault(); e.stopPropagation(); limpiarSeleccion(); q.blur(); }
   });
-  q.addEventListener('blur', () => setTimeout(cerrarResultados, 150));
+  // La lista se cierra un momento después de salir de la caja, para que la pulsación en un resultado llegue antes. Si
+  // para entonces se ha vuelto a la caja (otra búsqueda escrita enseguida), la lista nueva se queda.
+  q.addEventListener('blur', () => setTimeout(() => { if (document.activeElement !== q) cerrarResultados(); }, 150));
   $('#resultados').addEventListener('pointerdown', (e) => {
     const s = e.target.closest('[data-sugerencia]');
     if (s) { e.preventDefault(); q.value = s.dataset.sugerencia; resultados = buscar(q.value); activo = 0; pintarResultados(); return; }

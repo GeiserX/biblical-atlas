@@ -628,3 +628,21 @@ test('entries that would read the same are told apart: a year searched over a re
   assert.equal(h.state.name, 'Ahora mismo en c. 607 a.e.c.', '«Ahora mismo» over a reading has the reading\'s name');
   assert.equal(h.back.label, 'Atrás: Lectura de Hechos 1 en c. 607 a.e.c.');
 });
+
+test('a search typed right after choosing a result keeps its list open', async () => {
+  // Choosing a result leaves the box, and the list closes 150 ms later. A search typed in that time (a fast person, or a
+  // test on a loaded machine) had its list closed under it.
+  const page = await openPage(DESKTOP, { hash: 't=50.3000' });
+  const r = await page.evaluate(async () => {
+    const q = document.getElementById('q');
+    const type = (text) => { q.focus(); q.value = text; q.dispatchEvent(new Event('input', { bubbles: true })); };
+    type('Pablo');
+    q.dispatchEvent(new KeyboardEvent('keydown', { key: 'Enter', bubbles: true }));
+    type('Corinto');
+    await new Promise((ok) => setTimeout(ok, 400));
+    return { hidden: document.getElementById('resultados').hidden, focus: document.activeElement.id, sel: window.BE.selTexto(window.BE.E.sel) };
+  });
+  assert.equal(r.sel, 'persona:pablo', 'Enter did not choose Pablo');
+  assert.equal(r.focus, 'q');
+  assert.equal(r.hidden, false, 'the list of the second search closed while the box had the focus');
+});
