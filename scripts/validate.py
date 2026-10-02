@@ -70,6 +70,8 @@ REQUERIDOS = {
     "tours": ["id", "title", "stops", "sources", "reason", "checked_on", "status"],
 }
 REQ_PARADA = ["order", "place", "reference", "date", "note", "reason", "sources", "checked_on", "status"]
+# Valores cerrados de `repeats` en un viaje: el texto dice que el viaje se hacía cada año (1Sa 1:3, Lu 2:41).
+REPITE = {"yearly"}
 REQ_PARADA_RECORRIDO = ["sel", "t", "text", "passages"]
 REQ_FUENTE = ["title", "work", "url", "level", "published", "checked_on"]
 ESTRUCTURA_LIBRO = {"slug", "num", "name", "abbr", "forms", "spoken", "chapters"}
@@ -230,6 +232,12 @@ def load(data_dir):
 
 def clean(o):
     return {k: v for k, v in o.items() if not k.startswith("_")}
+
+
+def validar_repite(viaje, donde, err):
+    """`repeats` es opcional en un viaje y, si está, es uno de REPITE. Lo sostienen las fuentes y la razón del viaje."""
+    if "repeats" in viaje and (not isinstance(viaje["repeats"], str) or viaje["repeats"] not in REPITE):
+        err(f"{donde}: repeats debe ser uno de {sorted(REPITE)}, no {viaje['repeats']!r}")
 
 
 # ---------------------------------------------------------------- el esquema antiguo
@@ -1513,6 +1521,7 @@ def validar(datos):
             if tipo == "people":
                 validar_persona(limpio_, donde, err)
             if tipo == "journeys":
+                validar_repite(limpio_, donde, err)
                 ordenes = []
                 for i, p in enumerate(limpio_.get("stops") or []):
                     pd = f"{donde} stop {p.get('order', i)}"

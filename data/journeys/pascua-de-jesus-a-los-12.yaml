@@ -16,18 +16,19 @@ date:
 narrative_order:
   series: jose-esposo-de-maria
   order: 4
+repeats: yearly
 companions:
 - maria-madre-de-jesus
 - jesus
 summary: Como cada año, la familia sube a Jerusalén para la Pascua. De regreso, José y María caminan un día sin Jesús; vuelven,
   lo hallan en el templo al tercer día y bajan juntos a Nazaret.
-reason: Lu 2:41-51 da la ida, la estancia y la vuelta. Fecha del suceso jesus-en-el-templo-a-los-12; la vuelta abre jesus-crece-en-nazaret.
-  Tabla A7-A.
+reason: Lu 2:41-51 da la ida, la estancia y la vuelta; Lu 2:41 y su nota de estudio dicen que la familia subía todos los
+  años. Fecha del suceso jesus-en-el-templo-a-los-12; la vuelta abre jesus-crece-en-nazaret. Tabla A7-A.
 sources:
 - lucas-2
 - tnm-a7-a
 - jy-cap-10
-checked_on: '2026-09-30'
+checked_on: '2026-10-02'
 status: verified
 stops:
 - order: 1

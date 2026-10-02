@@ -242,6 +242,40 @@ class Homonimos(unittest.TestCase):
         out = []
         validate.validar_persona({"distinct_from": ["uz-b"], "disambiguation": "Uz hijo de Aram."}, "x", out.append)
         self.assertEqual(out, [])
+def errores_repite(viaje):
+    out = []
+    validate.validar_repite(viaje, "data/journeys/x.yaml", out.append)
+    return out
+
+
+class Repite(unittest.TestCase):
+    def test_sin_repeats_o_cada_anio_vale(self):
+        self.assertEqual(errores_repite({}), [])
+        self.assertEqual(errores_repite({"repeats": "yearly"}), [])
+
+    def test_otro_valor_es_error(self):
+        for valor in ["monthly", "cada año", True, None, ["yearly"], {"yearly": True}]:
+            with self.subTest(valor=valor):
+                e = errores_repite({"repeats": valor})
+                self.assertEqual(len(e), 1, e)
+                self.assertIn("repeats", e[0])
+
+    def test_los_viajes_de_cada_anio_lo_llevan(self):
+        datos = HERE.parent / "data" / "journeys"
+        con = sorted(f.stem for f in datos.glob("*.yaml")
+                     if (yaml.safe_load(f.read_text(encoding="utf-8")) or {}).get("repeats") == "yearly")
+        self.assertEqual(con, ["elcana-sube-a-silo", "pascua-de-jesus-a-los-12", "recorrido-de-samuel"])
+
+    def test_validar_mira_repeats_en_cada_viaje(self):
+        # Sobre los datos de verdad, con un valor que no vale puesto en memoria: el error sale de validar().
+        datos = validate.load(HERE.parent / "data")
+        viaje = next(v for v in datos["journeys"] if v["id"] == "recorrido-de-samuel")
+        viaje["repeats"] = "monthly"
+        errores, _ = validate.validar(datos)
+        self.assertEqual([e for e in errores if "repeats debe" in e],
+                         [f"{viaje['_fichero']}: repeats debe ser uno de ['yearly'], no 'monthly'"])
+
+
 def avisos_punto(*lugares):
     out = []
     datos = {"places": [dict(l, _fichero=f"data/places/{l['id']}.yaml") for l in lugares]}

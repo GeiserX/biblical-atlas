@@ -272,3 +272,20 @@ test('T12 on a touch screen long names wrap to at most three lines and every tar
   assert.ok(lane.items.at(-1).lines >= 2);
   for (const it of F.layoutLane(lane, { v0: 45, span: 8 }, geom(390, GC)).visible) assert.ok(it._hit[1] - it._hit[0] >= 44 - 1e-9, `${it.name}: ${it._hit[1] - it._hit[0]} px`);
 });
+
+test('T13 a traveller lane packs its journeys (group 0), their stops (1) and the rest (2) in three bands of rows, top down', () => {
+  const items = [];
+  for (let i = 0; i < 4; i++) {
+    items.push({ id: `v${i}`, name: `Viaje ${i}`, cert: 'approx', shape: 'span', start: 30 + i, end: 32 + i, group: 0 });
+    items.push({ id: `p${i}`, name: `Parada ${i}`, cert: 'approx', shape: 'span', start: 30.5 + i, end: 31 + i, group: 1 });
+    items.push({ id: `s${i}`, name: `Suceso ${i}`, cert: 'exact', shape: 'moment', start: 31 + i, end: 31.01 + i, anchor: 31.005 + i, w0: 31 + i, w1: 31.01 + i, group: 2 });
+  }
+  F.measure(items, MEAS, G);
+  const lane = { id: 'viajero', items };
+  F.pack(lane, 800 / 8, T0, G, 'k');
+  const rows = (g) => items.filter((it) => it.group === g).map((it) => it.row);
+  const [r0, r1, r2] = [rows(0), rows(1), rows(2)];
+  for (const r of [...r0, ...r1, ...r2]) assert.ok(Number.isInteger(r), `a mark without a row: ${r0} | ${r1} | ${r2}`);
+  assert.ok(Math.max(...r0) < Math.min(...r1), `journeys ${r0} not above stops ${r1}`);
+  assert.ok(Math.max(...r1) < Math.min(...r2), `stops ${r1} not above the rest ${r2}`);
+});

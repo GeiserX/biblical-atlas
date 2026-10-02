@@ -11,18 +11,19 @@ date:
   type: narrative
   chronology: tnm
   text: 'entre c. 1173 y c. 1080 a.e.c. (tiempo narrativo: desde la victoria de Mizpá hasta su muerte)'
+repeats: yearly
 companions: []
 summary: Cada año Samuel sale de su casa en Ramá, juzga a Israel en Betel, Guilgal y Mizpá y vuelve a Ramá, donde también
   juzga. Es un circuito que repite toda su vida.
-reason: '1 Samuel 7:15-17 da el orden. Perspicacia «Samuel», párr. 7, describe el mismo circuito. Sin año en jw.org: desde
-  la victoria de Mizpá hasta la muerte de Samuel, antes de c. 1080.'
+reason: '1 Samuel 7:15-17 da el orden, y 7:16 dice que lo recorría cada año. Perspicacia «Samuel», párr. 7, describe el
+  mismo circuito. Sin año en jw.org: desde la victoria de Mizpá hasta la muerte de Samuel, antes de c. 1080.'
 sources:
 - 1-samuel-7
 - it-samuel
 - it-rama
 - it-guilgal
 - si-3
-checked_on: '2026-09-30'
+checked_on: '2026-10-02'
 status: verified
 narrative_order:
   series: samuel
