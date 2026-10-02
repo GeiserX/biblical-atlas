@@ -80,6 +80,8 @@ Con `candidates`, `lat`, `lon`, `coord_source` y `coord_url` pueden ser `null` y
 
 **Viajes.** `person`, `reference`, `date`, `companions` (quienes van en todo el viaje) y `stops`. Cada parada lleva `order`, `place`, `reference` y `date`, y es un hecho anidado con sus `sources`, `reason`, `checked_on` y `status`.
 
+`repeats` es opcional y su único valor es `yearly`: el texto cuenta el viaje como una costumbre de cada año (1Sa 1:3, 1Sa 7:16, Lu 2:41). El viaje se escribe una vez, con la fecha que da la fuente, y su `reason` dice qué versículo habla de la repetición. El sitio lo marca «↻ cada año» en la línea de tiempo, sobre la ruta y en la leyenda del mapa. `validate.py` rechaza otro valor.
+
 Una parada es un lugar que el texto dice que se alcanzó o se pasó, en el orden del relato. Tres clases de parada deducida entran también, siempre con `status: pending` y la deducción escrita en `reason`:
 
 - el lugar que jw.org da como salida o llegada (Perspicacia «Jacob» pone a Jacob en Hebrón);

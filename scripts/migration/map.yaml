@@ -245,6 +245,7 @@ new_keys:
   events: [type, roles]
   events.roles.<id>: [role, date, place]
   periods: [office]
+  journeys: [repeats]
 
 # Mapas cuyas claves son ids o números y no cambian. `events.roles` es nuevo y también lo es.
 id_maps:

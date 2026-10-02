@@ -3,6 +3,7 @@
 
 Trabajan sobre un data/ pequeño en una carpeta temporal, con el vocabulario de verdad (data/vocabulary.yaml)."""
 import shutil
+import sqlite3
 import sys
 import tempfile
 import unittest
@@ -102,6 +103,22 @@ class Summary(unittest.TestCase):
         self.assertEqual({k: build.resumen(salida)[k] for k in ("fuentes", "capitulos")}, {"fuentes": 4, "capitulos": 2})
         # El índice del registro dice el total de su página y, dentro, las mismas cifras.
         self.assertEqual(build._cuenta_fuentes(salida), "7: 4 enlazadas por algún dato, 2 capítulos de la Biblia y 1 sin citar")
+
+
+class SqliteRepite(unittest.TestCase):
+    def test_la_tabla_viajes_guarda_repeats(self):
+        # Con los datos de verdad: los tres viajes de cada año llevan 'yearly' en la base, y ningún otro lleva nada.
+        datos, _ = build.cargar(HERE.parent / "data")
+        salida, _, errores = build.componer(datos, "2026-10-02")
+        self.assertEqual(errores, [])
+        with tempfile.TemporaryDirectory() as tmp:
+            ruta = Path(tmp) / "a.sqlite"
+            build.escribir_sqlite(salida, ruta)
+            con = sqlite3.connect(ruta)
+            filas = con.execute("select id, repeats from viajes where repeats is not null order by id").fetchall()
+            con.close()
+        self.assertEqual(filas, [("elcana-sube-a-silo", "yearly"), ("pascua-de-jesus-a-los-12", "yearly"),
+                                 ("recorrido-de-samuel", "yearly")])
 
 
 class ChapterUrls(unittest.TestCase):

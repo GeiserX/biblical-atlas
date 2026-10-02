@@ -167,20 +167,23 @@ function marcaEstancia(s, color, group, tipo) {
     cert, tipo, fecha: f ? textoFechaDe(f) : '', fechaTipo: f?.tipo === 'derivada' ? 'derivada' : s.narrativa ? 'narrativa' : f?.tipo, color, group };
   return s.b > s.a ? tramoMarca(o, [s.a, s.b]) : momentoMarca(o, [s.a, s.b]);
 }
-/** «Viajes de Pablo»: un tramo por viaje y, en filas propias debajo, sus paradas. Solo los suyos: los viajes de
-    los demás salen en el carril de cada persona, como estancias. */
-function marcasPablo() {
+/** Los viajes de una persona (T-06): un tramo por viaje y, en filas propias debajo, sus paradas. P son sus paradas en
+    orden. Pablo lleva un color por viaje y cualquier otro viajero el suyo, el mismo que en el mapa. Un viaje que se
+    repetía cada año (`repeats: yearly`) lo dice tras su nombre. */
+function marcasViajes(P, colorDe) {
   const out = [];
   for (const v of BE.D.viajes) {
-    const ps = BE.P.filter((x) => x.viaje === v);
+    const ps = P.filter((x) => x.viaje === v);
     if (!ps.length) continue;
-    const color = BE.colorViaje(v.id);
+    const color = colorDe(v);
     out.push(tramoMarca({ id: `viaje:${v.id}`, sel: `viaje:${v.id}`, name: v.nombre, cert: FIL.certainty(v.fecha), tipo: 'Viaje',
-      fecha: textoFechaDe(v.fecha), color }, [ps[0].a, ps.at(-1).b]));
+      fecha: textoFechaDe(v.fecha), color, repite: v.repeats === 'yearly' }, [Math.min(...ps.map((s) => s.a)), Math.max(...ps.map((s) => s.b))]));
     for (const s of ps) out.push(marcaEstancia(s, color, 1, 'Parada de un viaje'));
   }
   return out;
 }
+/** «Viajes de Pablo»: solo los suyos. Los de los demás van en el carril de cada persona, con la misma forma. */
+const marcasPablo = () => marcasViajes(BE.P, (v) => BE.colorViaje(v.id));
 function marcasPeriodos(c) {
   return c.ps.map((p) => {
     const tr = BE.tramoPeriodo(p);
@@ -221,7 +224,7 @@ function catalogo() {
   if (D.calendario?.meses?.length) lista.push({ id: 'meses', nombre: 'Meses', icono: 'calendario', tipo: 'meses', filas: 1, orden: 0, hay: () => span() < 2.5,
     medir: medirMeses, ayuda: 'Nuestros meses y los meses hebreos, alineados. Las equivalencias son aproximadas.' });
   lanePeriodos('eras', 'Eras', 'reloj2', periodosDe('era'), 1, { clase: 'era' });
-  lanePeriodos('imperios', 'Imperio (Dn 2)', 'corona', periodosDe('potencia'), 2, { clase: 'potencia' });
+  lanePeriodos('imperios', 'Imperio (Dn\u00a02)', 'corona', periodosDe('potencia'), 2, { clase: 'potencia' });
   lista.push({ id: 'pablo', nombre: 'Viajes de Pablo', icono: 'persona', tipo: 'pablo', orden: 20, clases: ['carril-viajes'], marcas: marcasPablo });
   if (D.cartas.length) lista.push({ id: 'cartas', nombre: 'Cartas', icono: 'carta', tipo: 'cartas', orden: 21, marcas: marcasCartas });
   lista.push({ id: 'sucesos', nombre: 'Sucesos', icono: 'reloj', tipo: 'sucesos', orden: 22, marcas: marcasSucesos });
@@ -267,8 +270,10 @@ function reinos() {
   });
 }
 const cachePersona = new Map();
-/** Carril de una persona (T-06): sus estancias con lugar, nombradas por el lugar. Su actividad y los caminos entre
-    estancias van de adorno en una franja fina arriba del carril, nunca en las filas. */
+/** Carril de una persona (T-06): sus estancias con lugar, nombradas por el lugar. Si viaja, primero sus viajes como en
+    «Viajes de Pablo» (un tramo por viaje y sus paradas debajo) y después, en filas propias, los sucesos y los sitios
+    donde vivió. Su actividad y los caminos entre estancias van de adorno en una franja fina arriba del carril, nunca en
+    las filas. */
 function carrilPersona(id) {
   if (id === 'pablo') return catalogo().find((c) => c.id === 'pablo');
   const p = BE.PERS[id];
@@ -277,8 +282,12 @@ function carrilPersona(id) {
   if (guardado && guardado.D === BE.D) return guardado.c;
   const est = BE.estancias(id);
   const act = p.fecha ? tramo(p.fecha) : null;
-  const c = !est.length && !act ? null : { id, nombre: p.nombre, icono: 'persona', tipo: 'persona', persona: id, orden: 19, est, act,
-    marcas: () => est.map((s) => marcaEstancia(s, BE.colorPersona(id), 0, 'Estancia')) };
+  const enViaje = est.filter((s) => s.origen === 'viaje');
+  const marcas = () => {
+    const color = BE.colorPersona(id), resto = est.filter((s) => s.origen !== 'viaje');
+    return [...marcasViajes(enViaje, () => color), ...resto.map((s) => marcaEstancia(s, color, enViaje.length ? 2 : 0, 'Estancia'))];
+  };
+  const c = !est.length && !act ? null : { id, nombre: p.nombre, icono: 'persona', tipo: 'persona', persona: id, orden: 19, est, act, marcas };
   cachePersona.set(id, { D: BE.D, c });
   return c;
 }
@@ -294,11 +303,23 @@ function personasConCarril() {
     Pablo». Sin tope ni prioridades: cada carril con algo en la vista enseña todas sus filas, y uno sin nada no ocupa
     sitio. */
 let carrilesVista = [];
+/** De quién es el carril que trajo la selección. Elegir a una persona lo trae; elegir después una marca de ese mismo
+    carril (un viaje, una parada, un suceso) no lo quita, así que la marca pulsada no desaparece bajo el dedo. */
+let personaSel = null;
+function personaDelCarril() {
+  if (E.sel?.tipo === 'persona') personaSel = E.sel.id;
+  else if (personaSel) {
+    const selT = BE.selTexto(E.sel), c = carrilPersona(personaSel);
+    if (!selT || !c || !marcasDe(c).items.some((it) => it.sel === selT)) personaSel = null;
+  }
+  return personaSel;
+}
 function elegirCarriles() {
   const fijos = L.fijados.map(carrilPorId).filter((c) => c && (c.tipo !== 'secular' || L.secular));
   const ids = new Set(fijos.map((c) => c.id));
   const resto = [];
-  if (E.sel?.tipo === 'persona' && !ids.has(E.sel.id)) { const c = carrilPersona(E.sel.id); if (c && c.id !== 'pablo') resto.push(c); }
+  const quien = personaDelCarril();
+  if (quien && !ids.has(quien)) { const c = carrilPersona(quien); if (c && c.id !== 'pablo') resto.push(c); }
   for (const c of catalogo()) {
     if (ids.has(c.id) || (c.tipo === 'meses' && !c.hay()) || (c.tipo === 'secular' && !L.secular)) continue;
     resto.push(c);
@@ -324,7 +345,8 @@ function rotuloHtml(c) {
     const clase = c.clases?.[i] ? ` ${c.clases[i]}` : '';
     const mas = c.tipo === 'meses' && i === Math.max(0, (c.tiposFila || []).indexOf('hebreos')) ? enlaceCalendario('carril-ayuda', '?', '¿Qué meses son estos?') : '';
     const texto = c.cortos?.[i] ? `<span class="nombre-largo">${esc(nm)}</span><span class="nombre-corto" aria-hidden="true">${esc(c.cortos[i])}</span>` : esc(nm);
-    return `<div class="be-lane-label${c.persona ? ' carril-persona' : ''}${clase}"${ayuda ? ` title="${esc(ayuda)}"` : ''}>${icono}${c.persona ? `<button type="button" class="carril-nombre enlace-titulo" data-sel="persona:${esc(c.persona)}">${esc(nm)}</button><span class="edad" data-edad="${esc(c.persona)}"></span>` : `<span>${texto}</span>`}${mas}${i === 0 ? `${n2}${pin}` : ''}</div>`;
+    const una = /\s/.test(nm.trim()) ? '' : ' una-palabra';   // solo un nombre de una palabra se parte con guion (linea.css)
+    return `<div class="be-lane-label${c.persona ? ' carril-persona' : ''}${clase}${una}"${ayuda ? ` title="${esc(ayuda)}"` : ''}>${icono}${c.persona ? `<button type="button" class="carril-nombre enlace-titulo" data-sel="persona:${esc(c.persona)}">${esc(nm)}</button><span class="edad" data-edad="${esc(c.persona)}"></span>` : `<span>${texto}</span>`}${mas}${i === 0 ? `${n2}${pin}` : ''}</div>`;
   }).join('');
 }
 /** Un elemento por carril: su nombre a la izquierda y su franja, donde van las marcas. Se conservan entre pintados, así
@@ -452,11 +474,30 @@ const DEFS_MESES = '<defs><pattern id="p-hebreo" width="6" height="6" patternUni
 function medidasPanel(cuerpo = $('#linea-cuerpo')) {
   return { vh: cuerpo.clientHeight, top: cuerpo.scrollTop, cab: cuerpo.offsetTop, wCar: $('#carriles').offsetWidth, hLinea: $('#linea').clientHeight };
 }
+/** Alto del nombre de cada carril, que puede ir en varias líneas: el carril mide al menos eso, así que ningún nombre
+    se sale por abajo. Se lee del DOM solo cuando cambian los nombres, la letra o el ancho, y antes de escribir nada. Un
+    carril escondido no se puede medir: se mide en el pintado siguiente, que se pide. */
+let claveNombres = '';
+const altosNombre = new Map();
+function medirNombres() {
+  const clave = `${claveEtiquetas}|${claveLetra}|${innerWidth}`;
+  if (clave !== claveNombres) { claveNombres = clave; altosNombre.clear(); }
+  let faltan = false;
+  for (const c of carrilesVista) {
+    if (altosNombre.has(c.id) || c.nombres) continue;
+    const x = carrilEls.get(c.id);
+    if (!x || x.el.hidden) { faltan = true; continue; }
+    altosNombre.set(c.id, x.rotulo.firstElementChild?.offsetHeight || 0);
+  }
+  return faltan;
+}
 function pintarFilas(V, med) {
   const view = { v0: E.vista[0], span: span() };
   const geom = { w: anchoLinea, t0: BE.T_MIN, G, key: `${claveLetra}|${G.row}` };
   const vacios = [];
   let top = 0, shownN = 0;
+  const faltan = medirNombres();
+  let otraVez = false;
   const selT = BE.selTexto(E.sel);
   for (const c of carrilesVista) {
     const x = carrilEls.get(c.id);
@@ -473,7 +514,8 @@ function pintarFilas(V, med) {
       if (lane.medida !== claveLetra) { FIL.measure(lane.items, medida, G); lane.medida = claveLetra; lane.packKey = null; }
       c.decor = decorDe(c);
       c.out = FIL.layoutLane(lane, view, geom, hold);
-      c.alto = c.out.nRows ? Math.max(c.out.nRows * G.row + c.decor + 3, altoRotulo()) : 0;
+      c.alto = c.out.nRows ? Math.max(c.out.nRows * G.row + c.decor + 3, altoRotulo(), altosNombre.get(c.id) || 0) : 0;
+      if (c.alto && faltan && !altosNombre.has(c.id)) otraVez = true;   // recién aparecido: se mide en el pintado siguiente
       if (!c.alto) vacios.push(c.nombre);
       for (const it of c.out.visible) it._clase = dim(it.sel);
     }
@@ -483,6 +525,7 @@ function pintarFilas(V, med) {
     top += c.alto;
   }
   altoFilas = top;
+  if (otraVez) { sucio.linea = true; programar(); }
   const filas = $('#linea-filas');
   filas.style.setProperty('--fila', `${G.row}px`);
   filas.classList.toggle('arrastrando', !!hold);
@@ -535,7 +578,7 @@ function crearMarca(it) {
   b.tabIndex = -1;
   // Lo calculado lo dice el nombre accesible con palabras: «situada por el orden del relato» si sale de él.
   const cert = it.cert === 'computed' && /narrativa/.test(it.fechaTipo || '') ? 'situada por el orden del relato' : CERT_ARIA[it.cert];
-  b.setAttribute('aria-label', `${it.titulo ? `${it.titulo}, ` : ''}${it.name}. ${it.tipo}, ${it.shape === 'moment' ? 'momento' : 'tramo'}, ${cert}${it.fecha ? `. ${it.fecha}` : ''}`);
+  b.setAttribute('aria-label', `${it.titulo ? `${it.titulo}, ` : ''}${it.name}. ${it.tipo}, ${it.shape === 'moment' ? 'momento' : 'tramo'}, ${cert}${it.fecha ? `. ${it.fecha}` : ''}${it.repite ? '. Se repetía cada año' : ''}`);
   b.setAttribute('aria-pressed', 'false');
   if (it.shape === 'span') {
     it.barEl = document.createElement('span');
@@ -555,6 +598,7 @@ function crearMarca(it) {
   txt.textContent = it.name;
   const tag = FIL.TAG[it.cert];
   if (tag) { const i = document.createElement('i'); i.textContent = tag; txt.append(' ', i); }
+  if (it.repite) { const i = document.createElement('i'); i.className = 'm-repite'; i.textContent = FIL.REPEAT; txt.append(' ', i); }
   lab.appendChild(txt);
   b.appendChild(lab);
   it.labEl = lab;
@@ -812,7 +856,7 @@ BE.lineaMarcas = () => {
     const vis = new Set(c.alto && c.out ? c.out.visible : []);
     for (const it of c.lane.items) {
       const v = vis.has(it);
-      out.push({ id: it.id, sel: it.sel, lane: c.id, name: it.name, label: FIL.labelText(it), cert: it.cert, shape: it.shape, hollow: FIL.hollow(it),
+      out.push({ id: it.id, sel: it.sel, lane: c.id, name: it.name, label: FIL.labelText(it), cert: it.cert, shape: it.shape, hollow: FIL.hollow(it), group: it.group || 0, rowWorld: it.row ?? null, repite: !!it.repite,
         t0: it.shape === 'moment' ? it.w0 : it.start, t1: it.shape === 'moment' ? it.w1 : it.end, anchor: it.anchor ?? null,
         visible: v, row: v ? it._drow : null, x: v ? it._hit[0] : null, w: v ? it._hit[1] - it._hit[0] : null, top: v ? topDe(it, c) : null,
         labelX: v ? it._lx : null, labelW: v ? FIL.lwOf(it) : null, secular: !!it.secular });
