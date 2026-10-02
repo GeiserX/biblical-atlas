@@ -434,7 +434,19 @@ class DestinosEnParalelo(unittest.TestCase):
     def test_dos_tramos_en_ramas_distintas_se_tocan_en_la_salida(self):
         cs = [{"person": "beera", "from": 1, "to": 2}, {"person": "beera", "from": 3, "to": 3}]
         e = errores_ramas({2: 1, 3: 1, 4: 1, 5: 1}, companions=cs)
-        self.assertTrue(any("ya va en las paradas 1 a 2" in x for x in e), e)
+        self.assertTrue(any("ya va en las paradas 1 a 2, en otra rama" in x for x in e), e)
+
+    def test_tramos_en_ramas_distintas_no_piden_unirse(self):
+        # 2 y 3 salen de 1, el tronco sigue 1 > 4 > 5: un tramo 1-5 no pasa por 2, así que unirlos no es el arreglo.
+        cs = [{"person": "beera", "from": 1, "to": 2}, {"person": "beera", "from": 4, "to": 5}]
+        e = errores_ramas({2: 1, 3: 1}, companions=cs)
+        self.assertTrue(any("ya va en las paradas 1 a 2, en otra rama" in x for x in e), e)
+        self.assertFalse(any("un tramo pegado se une a ese" in x for x in e), e)
+
+    def test_tramos_pegados_en_la_misma_ruta_piden_unirse(self):
+        cs = [{"person": "beera", "from": 1, "to": 2}, {"person": "beera", "from": 3, "to": 4}]
+        e = errores_ramas({5: 3}, companions=cs)
+        self.assertTrue(any("ya va en las paradas 1 a 2; un tramo pegado se une a ese" in x for x in e), e)
 
     def test_un_acompanante_no_va_en_dos_ramas(self):
         # Halá y Habor salen los dos de Samaria: la misma persona no llega a los dos.

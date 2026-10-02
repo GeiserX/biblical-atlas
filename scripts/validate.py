@@ -1039,16 +1039,17 @@ def validar_viaje(v, donde, err):
             continue
         if pid == persona:
             err(f"{donde}: companions[{i}]: {pid} es quien viaja")
-        # Dos tramos pegados (1-2 y 3-4) son uno solo (1-4): tampoco se tocan. Con ramas, se tocan si comparten una
-        # parada o si uno sale de la última del otro.
+        # Dos tramos en ramas distintas no caben en una ruta: ese es el error, aunque compartan la salida. Si van por
+        # la misma ruta, dos tramos pegados (1-2 y 3-4) son uno solo (1-4): tampoco se tocan. Con ramas, se tocan si
+        # comparten una parada o si uno sale de la última del otro.
         mio = camino_paradas(ant, a, b) or set()
         for x, y in tramos.get(pid, []):
             otro = camino_paradas(ant, x, y) or set()
-            if mio & otro or any(ant.get(s) in otro for s in mio) or any(ant.get(s) in mio for s in otro):
-                err(f"{donde}: companions[{i}]: {pid} ya va en las paradas {x} a {y}; un tramo pegado se une a ese")
-            elif camino_paradas(ant, b, y) is None and camino_paradas(ant, y, b) is None:
+            if camino_paradas(ant, b, y) is None and camino_paradas(ant, y, b) is None:
                 err(f"{donde}: companions[{i}]: {pid} ya va en las paradas {x} a {y}, en otra rama; no llega a dos "
                     f"destinos en paralelo")
+            elif mio & otro or any(ant.get(s) in otro for s in mio) or any(ant.get(s) in mio for s in otro):
+                err(f"{donde}: companions[{i}]: {pid} ya va en las paradas {x} a {y}; un tramo pegado se une a ese")
         tramos.setdefault(pid, []).append((a, b))
 
 
