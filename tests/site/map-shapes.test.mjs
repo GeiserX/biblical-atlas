@@ -2,7 +2,10 @@
 // outline only while it is selected or highlighted, on a layer that takes no click, and the map frames the whole shape;
 // a place without one draws nothing there. A candidate zone with a shape (the desert of Judah) draws its ellipse
 // instead of its circle. The place card says what the shape is and where it comes from, and the outline takes its
-// colour from --tier1, so the meeting theme repaints it.
+// colour from --tier1, so the meeting theme repaints it. Framing a shape zooms in on a small one and, at 1440 by 900,
+// keeps a big one on the map and clear of the legend; an uncertain place and its focused candidate frame the shape's
+// box. The shape comes back after a style reload, the curtain sits under it, a letter destination with a shape draws
+// it, and the card links the shape's sources.
 //
 // Run from the repository root, one browser at a time:
 //   node --test --test-concurrency=1 tests/site/map-shapes.test.mjs
@@ -104,11 +107,11 @@ test('a place with a shape draws it while selected, frames all of it and its car
   for (const screen of [DESKTOP, PHONE]) {
     const page = await openMap(screen, 't=-1900');
     const d = await shapesAt(page, { tipo: 'lugar', id: 'canaan' });
-    assert.deepEqual(d.formas?.map((f) => `${f.lugar}:${f.n}`), ['canaan:8'], `${screen.width}px: Canaán draws its 7-vertex outline`);
+    assert.deepEqual(d.formas?.map((f) => `${f.lugar}:${f.n}`), ['canaan:12'], `${screen.width}px: Canaán draws its 11-vertex outline`);
     // Sidón (north) and Gaza (south-west) are both in view: the frame is the shape, not the point in Galilea.
     assert.ok(dentro(d.caja, [33.561, 35.372]) && dentro(d.caja, [31.504, 34.464]), `${screen.width}px: Sidón and Gaza in view, bounds ${d.caja}`);
     assert.match(d.ficha, /Qué abarca/);
-    assert.match(d.ficha, /contorno de 7 vértices, por Sidón, Dan, .*Gaza y Jope/);
+    assert.match(d.ficha, /contorno de 11 vértices, por Sidón, Dan y Gaza/);
     assert.match(d.ficha, /no es una frontera trazada/);
     assert.match(d.leyenda, /Lo que abarca una región/);
     const g = await shapesAt(page, { tipo: 'lugar', id: 'galilea' });
@@ -177,6 +180,144 @@ test('the meeting theme repaints the outline with its own --tier1', async () => 
   assert.notEqual(claro.formas[0].color, oscuro.formas[0].color);
   assert.equal(oscuro.formas[0].color, tier1);
   await page.evaluate(() => window.__be.BE.ponerPreferencia('reunion', false));
+  assert.deepEqual(page.pageErrors, []);
+  await page.context().close();
+});
+
+/** Selects and lets the map frame the selection (mover: true), then reads the zoom and the shape's screen box. */
+function frameAt(page, sel) {
+  return page.evaluate(async (sel) => {
+    const { map, seleccionar, BE } = window.__be;
+    seleccionar(sel, { mover: true });
+    await new Promise((r) => setTimeout(r, 1500));
+    await new Promise((r) => requestAnimationFrame(() => requestAnimationFrame(r)));
+    const c = map.getContainer().getBoundingClientRect(), ley = document.querySelector('#leyenda');
+    const lb = ley && ley.offsetParent ? ley.getBoundingClientRect() : null;
+    const bbox = BE.L[sel.id]?.shape?.bbox || BE.L[sel.id]?.candidatos?.[0]?.shape?.bbox;
+    let tapados = 0;
+    if (bbox) {
+      const a = map.project([bbox[0][0], bbox[1][1]]), b = map.project([bbox[1][0], bbox[0][1]]);
+      // 121 points across the shape's box: each must be on the map and not under the legend.
+      for (let i = 0; i <= 10; i++) for (let j = 0; j <= 10; j++) {
+        const x = c.left + a.x + (b.x - a.x) * i / 10, y = c.top + a.y + (b.y - a.y) * j / 10;
+        const fuera = x < c.left || x > c.right || y < c.top || y > c.bottom;
+        if (fuera || (lb && x >= lb.left && x <= lb.right && y >= lb.top && y <= lb.bottom)) tapados++;
+      }
+    }
+    return { zoom: map.getZoom(), tapados, caja: bbox && [map.project(bbox[0]), map.project(bbox[1])].map((p) => [Math.round(p.x), Math.round(p.y)]).join(' ') };
+  }, sel);
+}
+
+test('framing a shape: a small one zooms in, and at 1440 a big one stays on the map and clear of the legend', async () => {
+  const page = await openMap(DESKTOP, 't=29.5');
+  // Genesaret is 5 by 2.5 km: framed by its shape, not by the region zoom of its point (5.5).
+  const g = await frameAt(page, { tipo: 'lugar', id: 'genesaret' });
+  assert.ok(g.zoom >= 9, `Genesaret framed at zoom ${g.zoom.toFixed(2)}`);
+  // At 1440 by 900 the timeline leaves the map 282 px tall and the legend fills its lower left: Canaán goes to the
+  // right of the legend, no further out than the zoom of its point.
+  await page.evaluate(() => window.__be.setT(-1467.5));
+  const c = await frameAt(page, { tipo: 'lugar', id: 'canaan' });
+  assert.equal(c.tapados, 0, `points of Canaán's box off the map or under the legend: ${c.tapados}/121`);
+  assert.ok(c.zoom >= 5.49, `Canaán framed at zoom ${c.zoom.toFixed(2)}`);
+  // The same for an uncertain place whose candidate has a shape.
+  await page.evaluate(() => window.__be.setT(-1431));
+  const b = await frameAt(page, { tipo: 'lugar', id: 'benjamin' });
+  assert.equal(b.tapados, 0, `points of Benjamín's box off the map or under the legend: ${b.tapados}/121 at zoom ${b.zoom.toFixed(2)}, box ${b.caja}`);
+  assert.deepEqual(page.pageErrors, []);
+  await page.context().close();
+});
+
+test('an uncertain place frames its candidate shape, and focusing the candidate frames that shape too', async () => {
+  const page = await openMap(DESKTOP, 't=-1440.5');
+  const r = await page.evaluate(async () => {
+    const { map, seleccionar, BE } = window.__be;
+    const cajas = [];
+    const cam = map.cameraForBounds.bind(map), fit = map.fitBounds.bind(map);
+    map.cameraForBounds = (b, o) => { cajas.push(['camara', JSON.parse(JSON.stringify(b))]); return cam(b, o); };
+    map.fitBounds = (b, o) => { cajas.push(['encuadre', JSON.parse(JSON.stringify(b))]); return fit(b, o); };
+    seleccionar({ tipo: 'lugar', id: 'benjamin' }, { mover: true });
+    await new Promise((res) => setTimeout(res, 1200));
+    const n = cajas.length;
+    document.querySelector('#panel-cuerpo [data-cand="benjamin|0"]').click();
+    await new Promise((res) => setTimeout(res, 1200));
+    return { bbox: BE.L.benjamin.candidatos[0].shape.bbox, alSeleccionar: cajas.slice(0, n), alEnfocar: cajas.slice(n) };
+  });
+  const igual = (b) => b && b.flat().every((v, k) => Math.abs(v - r.bbox.flat()[k]) < 1e-6);
+  assert.ok(r.alSeleccionar.some(([, b]) => igual(b)), `selecting Benjamín frames its polygon's box ${JSON.stringify(r)}`);
+  assert.ok(r.alEnfocar.some(([k, b]) => k === 'encuadre' && igual(b)), `focusing the candidate frames its polygon's box ${JSON.stringify(r.alEnfocar)}`);
+  assert.deepEqual(page.pageErrors, []);
+  await page.context().close();
+});
+
+test('the shape survives a reload of the map style, and the curtain puts its images under it', async () => {
+  const page = await openMap(DESKTOP, 't=-1900');
+  await shapesAt(page, { tipo: 'lugar', id: 'canaan' });
+  // A new style (OpenFreeMap failing over to our relief does this) drops every source: montarCapas must draw it again.
+  const tras = await page.evaluate(async () => {
+    const { map } = window.__be;
+    const st = map.getStyle();
+    st.layers = st.layers.filter((l) => !l.id.startsWith('be-'));
+    for (const k of Object.keys(st.sources)) if (k.startsWith('be-')) delete st.sources[k];
+    map.setStyle(st, { diff: false });
+    await new Promise((r) => setTimeout(r, 1500));
+    return (await map.getSource('be-formas').getData()).features.map((f) => f.properties.lugar);
+  });
+  assert.deepEqual(tras, ['canaan'], 'Canaán is drawn again after the style reload');
+  const capas = await page.evaluate(async () => {
+    const { map, ponerMapa } = window.__be;
+    ponerMapa('cortina');
+    for (let i = 0; i < 50 && !map.getStyle().layers.some((l) => l.id.startsWith('be-cortina-')); i++) await new Promise((r) => setTimeout(r, 200));
+    return map.getStyle().layers.map((l) => l.id);
+  });
+  const cortinas = capas.filter((id) => id.startsWith('be-cortina-'));
+  assert.ok(cortinas.length, 'the curtain mounted its layers');
+  for (const id of cortinas) assert.ok(capas.indexOf(id) < capas.indexOf('be-formas-relleno'), `${id} sits under the shape`);
+  assert.deepEqual(page.pageErrors, []);
+  await page.context().close();
+});
+
+test('a letter destination with a shape draws the shape instead of the fixed circle', async () => {
+  const page = await openMap(DESKTOP, 't=55.5');
+  const r = await page.evaluate(async () => {
+    const { map, seleccionar, setT, BE } = window.__be;
+    const leer = async () => (await map.getSource('be-zonas-carta').getData()).features.map((f) => f.geometry.coordinates[0].length);
+    // A fixture: every zone with a point gets a triangle around it, so a destination drawn from its shape has 4 points.
+    for (const l of Object.values(BE.L)) {
+      if (l.lat == null || l.shape || l.candidatos) continue;
+      const ring = [[l.lon - 0.3, l.lat - 0.2], [l.lon + 0.3, l.lat - 0.2], [l.lon, l.lat + 0.3], [l.lon - 0.3, l.lat - 0.2]];
+      l.shape = { type: 'polygon', vertices: ring.slice(0, 3).map(([x, y]) => [y, x]), ring, bbox: [[l.lon - 0.3, l.lat - 0.2], [l.lon + 0.3, l.lat + 0.3]] };
+    }
+    for (const t of [55.5, 50.5, 57.5, 60.5, 62.5]) {
+      setT(t);
+      seleccionar({ tipo: 'lugar', id: 'jerusalen' }, { mover: false });
+      await new Promise((res) => setTimeout(res, 700));
+      const n = await leer();
+      if (n.length) return n;
+    }
+    return [];
+  });
+  assert.ok(r.length, 'some letter destination drew a zone');
+  assert.ok(r.every((n) => n === 4), `every letter zone is the fixture's triangle: ${r}`);
+  assert.deepEqual(page.pageErrors, []);
+  await page.context().close();
+});
+
+test('the card shows the sources of a shape, on a place and on a candidate', async () => {
+  const page = await openMap(DESKTOP, 't=-1440.5');
+  const r = await page.evaluate(async () => {
+    const { seleccionar } = window.__be;
+    const enlaces = (el) => [...(el?.querySelectorAll('details.insignia a') || [])].map((a) => a.getAttribute('href'));
+    seleccionar({ tipo: 'lugar', id: 'canaan' }, { mover: false });
+    await new Promise((res) => setTimeout(res, 600));
+    const sec = [...document.querySelectorAll('#panel-cuerpo .ficha-sec')].find((s) => /Qué abarca/.test(s.textContent));
+    seleccionar({ tipo: 'lugar', id: 'benjamin' }, { mover: false });
+    await new Promise((res) => setTimeout(res, 600));
+    const li = document.querySelector('#panel-cuerpo [data-cand="benjamin|0"]')?.closest('li');
+    return { canaan: enlaces(sec), benjamin: enlaces(li), fila: li?.textContent.replace(/\s+/g, ' ') ?? '' };
+  });
+  assert.ok(r.canaan.some((u) => /N%C3%BAmeros\/34|numeros\/34/i.test(u)), `«Qué abarca» links Números 34: ${r.canaan}`);
+  assert.ok(r.benjamin.some((u) => /Josu%C3%A9\/18/.test(u)), `the candidate links Josué 18, a source of its shape: ${r.benjamin}`);
+  assert.match(r.fila, /Forma: Perspicacia «Benjamín»/);
   assert.deepEqual(page.pageErrors, []);
   await page.context().close();
 });

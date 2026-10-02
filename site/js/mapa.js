@@ -71,7 +71,7 @@ BE.parametros.push(
 );
 /** Tras cambiar un filtro: repinta el mapa, la ficha y el menú, y lo guarda en la dirección. */
 function filtrosCambiados(guardar = true) {
-  pintarMapa.claveCartas = null; claveInciertos = ''; claveFormas = ''; pintarLeyenda.clave = null; pintarHallazgos.clave = null;
+  pintarMapa.claveCartas = null; claveInciertos = ''; pintarLeyenda.clave = null; pintarHallazgos.clave = null;
   sucio.mapa = sucio.etiquetas = true;
   if (mapaListo) aplicarRelieve();
   pintarMenuCapas();
