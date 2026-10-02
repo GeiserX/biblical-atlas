@@ -72,7 +72,7 @@ candidates:
     checked_on: '2026-09-29'
 ```
 
-Cada candidato dice de dónde sale su punto: `coord_source: openbible:<id>` con `coord_url` a esa ficha de OpenBible, o `coord_source: calculation` con `note` que da la cuenta del centro. Un lugar que comparte punto con otro, como una región con su capital, lo explica en `coord_note`. Un río, un mar o un valle a menos de 0,5 km de otro lugar que no sea una región avisa (`shared_point`) si su `coord_note` no nombra a ese lugar: o se mueve con su razón, o la nota dice por qué lo comparte.
+Cada candidato dice de dónde sale su punto: `coord_source: openbible:<id>` con `coord_url` a esa ficha de OpenBible, o `coord_source: calculation` con `note` que da la cuenta del centro. Un lugar que comparte punto con otro, como una región con su capital, lo explica en `coord_note`. Un río, un mar o un valle a menos de 0,5 km de otro lugar que no sea una región, provincia, país, reino, desierto, llanura o valle (los que el mapa rotula aparte) avisa (`shared_point`) si su `coord_note` no nombra a ese lugar: o se mueve con su razón, o la nota dice por qué lo comparte.
 
 Con `candidates`, `lat`, `lon`, `coord_source` y `coord_url` pueden ser `null` y `precision` tiene que ser `zone` o `uncertain`. Una lista de candidatos vacía solo vale con `status: pending`. Sin candidatos, `lat` y `lon` son obligatorios. Si jw.org no sitúa un lugar y nadie lo sitúa con seguridad, van candidatos o una zona, nunca un punto inventado.
 
