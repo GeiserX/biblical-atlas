@@ -205,7 +205,10 @@ test('a selected person adds no route: the map draws the journey in course, as w
 test('a journey that repeated every year carries «↻ cada año» on its route and a legend row', async () => {
   for (const screen of [DESKTOP, PHONE]) {
     const page = await openMap(screen);
-    for (const [viaje, t] of [['elcana-sube-a-silo', -1178.5], ['recorrido-de-samuel', -1120.5], ['pascua-de-jesus-a-los-12', 12.3]]) {
+    // Each at the middle of the window its stops take on the timeline (4B): Samuel's circuit runs from c. 1173 to
+    // c. 1080 a.e.c., but the map draws it only while its stops last.
+    for (const viaje of ['elcana-sube-a-silo', 'recorrido-de-samuel', 'pascua-de-jesus-a-los-12']) {
+      const t = await page.evaluate((id) => { const { BE } = window.__be; const w = BE.mapa.ventanaViaje(BE.D.viajes.find((v) => v.id === id)); return (w[0] + w[1]) / 2; }, viaje);
       const d = await drawnAt(page, t, null);
       const nombre = await page.evaluate((id) => window.__be.BE.D.viajes.find((v) => v.id === id).nombre, viaje);
       console.log(`${screen.width}px ${viaje} at ${t}: drawn ${d.todos.includes(viaje)}, marks ${d.repite.join(' ')}; legend «${d.leyenda}»`);
