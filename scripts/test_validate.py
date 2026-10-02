@@ -116,7 +116,7 @@ class Repite(unittest.TestCase):
         self.assertEqual(errores_repite({"repeats": "yearly"}), [])
 
     def test_otro_valor_es_error(self):
-        for valor in ["monthly", "cada año", True, None]:
+        for valor in ["monthly", "cada año", True, None, ["yearly"], {"yearly": True}]:
             with self.subTest(valor=valor):
                 e = errores_repite({"repeats": valor})
                 self.assertEqual(len(e), 1, e)

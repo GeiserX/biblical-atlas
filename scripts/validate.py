@@ -236,7 +236,7 @@ def clean(o):
 
 def validar_repite(viaje, donde, err):
     """`repeats` es opcional en un viaje y, si está, es uno de REPITE. Lo sostienen las fuentes y la razón del viaje."""
-    if "repeats" in viaje and viaje["repeats"] not in REPITE:
+    if "repeats" in viaje and (not isinstance(viaje["repeats"], str) or viaje["repeats"] not in REPITE):
         err(f"{donde}: repeats debe ser uno de {sorted(REPITE)}, no {viaje['repeats']!r}")
 
 
