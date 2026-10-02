@@ -98,7 +98,7 @@ Para comprobar la alineación, Corinto (37,9058 N, 22,8787 E) debe caer en la co
 - El mapa dibuja un solo viaje de Pablo, el que recorre en esa fecha, cada uno en su color: lo hecho en firme, lo que falta punteado y la región sin ruta conocida a trazos. Sus otros viajes no se dibujan. Sus ocho viajes van seguidos, de 34 a 65: mientras se queda en la última parada de uno, como Antioquía o Roma, se ve ese viaje entero. Antes de 34 y después de 65 no se dibuja nada de Pablo, igual que con cualquier otra persona fuera de las fechas de sus viajes.
 - Un viaje seleccionado se ve solo, entero y en su color, aunque la fecha caiga fuera de él. Seleccionar a una persona dibuja todos sus viajes: el de esa fecha en color y los demás en gris.
 - El viaje de cualquier otra persona, o de un grupo como el Arca, se dibuja solo mientras duran sus paradas, en la ventana que les da la línea de tiempo, y un año más en gris. No se dibuja toda la fecha del viaje.
-- El tramo que llega a una parada deducida (pendiente de verificar) o sale de ella va de puntos, y la leyenda lo dice.
+- El tramo que llega a una parada pendiente de verificar o sale de ella va de puntos, y la leyenda lo dice. Casi todas son deducciones; unas pocas son lugares del texto con la fecha por confirmar.
 
 ## Dirección de la página
 

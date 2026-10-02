@@ -528,8 +528,9 @@ function verticeRuta(l) {
   const c = cs.sort((a, b) => PREFERENCIA_RUTA.indexOf(a.estado) - PREFERENCIA_RUTA.indexOf(b.estado))[0];
   return { c: [c.geometria.lon, c.geometria.lat], incierto: true };
 }
-/** Una parada deducida (README de la investigación, «Viajes») lleva `estado: pendiente`: el tramo que llega a ella o
-    sale de ella se dibuja de puntos, para no dibujar una suposición con la misma línea que el texto. */
+/** Una parada pendiente de verificar (`estado: pendiente`) es casi siempre una deducción (README de la investigación,
+    «Viajes»), y alguna vez un lugar del texto con la fecha por confirmar: el tramo que llega a ella o sale de ella se
+    dibuja de puntos, para no dibujarla con la misma línea que el texto. La leyenda dice «pendiente», no «deducida». */
 const deducida = (p) => p?.estado === 'pendiente';
 function geoRutas(w) {
   const V = BE.viajeActual(w);
@@ -1397,7 +1398,7 @@ function pintarLeyenda(V, w, g) {
       }
     }
   }
-  if (deducidos) filas.push('<div class="be-legend__row"><span class="be-legend__line be-legend__line--deducida"></span>De puntos: tramo hacia una parada deducida, pendiente de verificar</div>');
+  if (deducidos) filas.push('<div class="be-legend__row"><span class="be-legend__line be-legend__line--deducida"></span>De puntos: tramo hacia una parada pendiente de verificar</div>');
   if (escritores.length) {
     filas.push(`<div class="be-legend__row"><span class="be-legend__line be-legend__line--letter" style="--carta:${colorEscritor(escritores[0])}"></span>Carta ${escritores.length > 1 ? `de ${esc(nombrePersona(escritores[0]))}` : 'escrita cerca de esta fecha'}</div>`);
     for (const e of escritores.slice(1)) filas.push(`<div class="be-legend__row"><span class="be-legend__line be-legend__line--letter" style="--carta:${colorEscritor(e)}"></span>Carta de ${esc(nombrePersona(e))}</div>`);

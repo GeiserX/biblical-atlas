@@ -224,7 +224,7 @@ test('2D: a segment that reaches or leaves a deduced stop is dotted, the verifie
   assert.ok(jacob.deducidos >= 1 && jacob.n > jacob.deducidos, `dotted and solid segments: ${jacob.deducidos} of ${jacob.n}`);
   assert.deepEqual(jacob.mal, [], 'dotted exactly where a segment touches a deduced stop');
   assert.ok(Array.isArray(jacob.dash) && jacob.dash[0] < 0.5, `the deduced layer is dotted: ${jacob.dash}`);
-  assert.match(jacob.leyenda, /De puntos: tramo hacia una parada deducida/);
+  assert.match(jacob.leyenda, /De puntos: tramo hacia una parada pendiente de verificar/);
   const moab = await read('campana-contra-moab');
   assert.equal(moab.deducidos, 0, 'a journey whose stops are all verified has no dotted segment');
   assert.doesNotMatch(moab.leyenda, /De puntos/);
