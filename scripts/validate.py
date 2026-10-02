@@ -1792,6 +1792,7 @@ def validar(datos):
             if tipo == "tours":
                 validar_recorrido(limpio_, donde, err)
     check_relations(datos, err, warn)
+    validar_transcurrido(datos, err)
     validar_consta_desde(datos, err)
     puntos_compartidos(datos, warn)
     validar_claves_perspicacia(datos, err)
@@ -1804,6 +1805,111 @@ def validar(datos):
     for slug, obj in (datos.get("coverage") or {}).items():
         textos_largos(clean(obj), obj["_fichero"], err)
     return errores, avisos
+
+
+PLAZOS = ("days", "months", "years")
+UN_DIA = 1 / 365.2425
+# Lo que vale cada unidad en años, como en site/js/trayectorias.js: el mes del relato es lunar.
+UNIDAD = {"days": UN_DIA, "months": (29 + 12 / 24 + 44 / 1440) * UN_DIA, "years": 1}
+
+
+def _ancla(o):
+    """Un suceso con mes o día en date.detail tiene una ventana de 40 días o menos: el sitio lo pone en su fecha y no lo
+    ata a una cadena (trayectorias.js, ANCLA_MAX)."""
+    return bool(((o.get("date") or {}).get("detail") or {}).get("month"))
+
+
+def _tramo(o):
+    f = o.get("date") or {}
+    a, b = f.get("from", f.get("to")), f.get("to", f.get("from"))
+    return None if a is None or b is None else (a, b + 1)
+
+
+def validar_transcurrido(datos, err):
+    """narrative_order.elapsed: lo que el relato dice que pasa desde el suceso anterior de la serie, o desde `since`.
+    Lleva `reason` y como mucho una cifra (days, months o years, un número finito no negativo); sin cifra, el texto no
+    la da. Recorre cada serie como site/js/trayectorias.js (cadenas) y rechaza lo que el sitio no sabría dibujar: un
+    suceso de partida que no es la cabeza ni está atado, uno anterior a la cabeza, un ancla (fecha de mes o de día) a
+    un lado del plazo, fechas que no se tocan y un bloque más largo que el tramo común de sus fechas (be-64b.15)."""
+    serie = {}
+    for k, o in enumerate(datos.get("events") or []):
+        n = o.get("narrative_order")
+        if isinstance(n, dict) and isinstance(n.get("series"), str) and _entero(n.get("order")):
+            serie.setdefault(n["series"], []).append((n["order"], k, o))
+    for nombre, xs in serie.items():
+        xs.sort(key=lambda x: (x[0], x[1]))
+        cadena = None   # {"off": {id: años desde la cabeza}, "ult": id del último atado, "tramo": (a, b), "pend": [...]}
+        previo = None
+        for _, _, o in xs:
+            n = o["narrative_order"]
+            el = n.get("elapsed")
+            donde = o.get("_fichero", o.get("id"))
+            if el is not None and not isinstance(el, dict):
+                err(f"{donde}: narrative_order.elapsed debe ser {{reason, days|months|years, since}}")
+                el = None
+            if _ancla(o):
+                if el is not None:
+                    err(f"{donde}: narrative_order.elapsed en un suceso con mes o día en su fecha, que es un ancla: el sitio lo pone en su "
+                        f"fecha y no lo ata; quita el plazo o la fecha fina")
+                cadena, previo = None, o
+                continue
+            if el is None:
+                if cadena:
+                    cadena["pend"].append(o)
+                previo = o
+                continue
+            sobra = set(el) - {"since", "reason", *PLAZOS}
+            if sobra:
+                err(f"{donde}: narrative_order.elapsed no admite {sorted(sobra)}")
+            if not isinstance(el.get("reason"), str) or not el["reason"].strip():
+                err(f"{donde}: narrative_order.elapsed necesita reason, con el versículo que da el plazo o dice que no lo da")
+            cifras = [k for k in PLAZOS if k in el]
+            if len(cifras) > 1:
+                err(f"{donde}: narrative_order.elapsed lleva una sola cifra, no {cifras}")
+            plazo = UN_DIA
+            for k in cifras[:1]:
+                if not _numero(el[k]) or not math.isfinite(el[k]) or el[k] < 0:
+                    err(f"{donde}: narrative_order.elapsed.{k} debe ser un número finito no negativo")
+                else:
+                    plazo = el[k] * UNIDAD[k]
+            since = el.get("since")
+            if since is None:
+                if previo is None:
+                    err(f"{donde}: narrative_order.elapsed sin since necesita un suceso anterior en la serie {nombre}")
+                    continue
+                if _ancla(previo):
+                    err(f"{donde}: narrative_order.elapsed parte de '{previo.get('id')}', que tiene mes o día en su fecha; el "
+                        f"sitio no ata un plazo a un ancla")
+                    cadena, previo = None, o
+                    continue
+                if not cadena or cadena["ult"] != previo.get("id"):
+                    cadena = {"off": {previo.get("id"): 0.0}, "ult": previo.get("id"), "tramo": _tramo(previo), "pend": []}
+                ref = previo.get("id")
+            else:
+                if not cadena or since not in cadena["off"]:
+                    err(f"{donde}: narrative_order.elapsed.since '{since}' no es la cabeza ni un suceso atado de la cadena de "
+                        f"la serie {nombre} en que va este; el sitio no sabría desde dónde contar")
+                    cadena, previo = None, o
+                    continue
+                ref = since
+            tr = cadena["tramo"]
+            for p in cadena["pend"] + [o]:
+                tp = _tramo(p)
+                tr = None if tr is None or tp is None else (max(tr[0], tp[0]), min(tr[1], tp[1]))
+            if tr is None or tr[0] >= tr[1]:
+                err(f"{donde}: narrative_order.elapsed ata sucesos cuyas fechas no se tocan (desde '{ref}')")
+                cadena, previo = None, o
+                continue
+            ult = cadena["off"][cadena["ult"]]
+            off = cadena["off"][ref] + plazo
+            if off <= ult:
+                off = ult + UN_DIA / 4
+            cadena.update(ult=o.get("id"), tramo=tr, pend=[])
+            cadena["off"][o.get("id")] = off
+            if off + UN_DIA > tr[1] - tr[0] + 1e-9:
+                err(f"{donde}: el bloque de la serie {nombre} dura {off + UN_DIA:.2f} años con este plazo y las fechas de sus "
+                    f"sucesos solo dejan {tr[1] - tr[0]:.2f}; revisa la cifra o las fechas")
+            previo = o
 
 
 EXCEPCIONES_WOL = RAIZ / "scripts" / "wol_exceptions.yaml"

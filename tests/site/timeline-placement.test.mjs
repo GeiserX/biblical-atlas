@@ -434,6 +434,31 @@ test('an event whose window is its own date but for the cut at the end is not «
   assert.deepEqual(r, ['dios-toma-a-enoc false', 'muere-isaac false', ...shared.map((id) => `${id} true`)]);
 });
 
+test('an old link to an event of a block takes the cursor to the event; the card and the header say what is estimated', async () => {
+  // Before be-64b.15 the gathering at Mizpah sat in 1432 a.e.c.; links shared then carry that t.
+  const id = 'israel-se-reune-en-mizpa-contra-guibea';
+  const p = await open('', `t=-1432.7&v=12&sel=evento:${id}`);
+  await p.waitForFunction(() => document.querySelector('#panel')?.textContent.includes('Cuándo'), null, { timeout: 10000 });
+  const r = await p.evaluate((id) => {
+    const BE = window.BE, e = BE.D.eventos.find((x) => x.id === id), w = BE.ventanaEvento(e), t = window.__be.E.t;
+    return { w, t, panel: document.querySelector('#panel').textContent.replace(/\s+/g, ' '), ayuda: document.querySelector('#fecha-valor').title };
+  }, id);
+  await p.context().close();
+  assert.ok(r.w[0] <= r.t && r.t < r.w[1], `the cursor is inside the event (${r.t.toFixed(4)} in ${r.w.map((x) => x.toFixed(4))})`);
+  assert.match(r.panel, /El texto no da cuánto tiempo pasa desde el suceso anterior/, 'the card says the text gives no interval');
+  assert.match(r.ayuda, /Fecha estimada: sabemos el orden del relato/, `the header says the date is estimated: «${r.ayuda}»`);
+  // A link whose t is inside the event stays where it is (the control), and a gap with a figure shows its reason.
+  const q = await open('', 'sel=evento:israel-pierde-la-segunda-batalla-contra-benjamin');
+  const dentro = await q.evaluate(() => { const BE = window.BE; const w = BE.ventanaEvento(BE.D.eventos.find((x) => x.id === 'israel-pierde-la-segunda-batalla-contra-benjamin')); return w[0] + (w[1] - w[0]) / 3; });
+  await q.context().close();
+  const q2 = await open('', `t=${dentro}&v=0.05&sel=evento:israel-pierde-la-segunda-batalla-contra-benjamin`);
+  await q2.waitForFunction(() => document.querySelector('#panel')?.textContent.includes('Cuándo'), null, { timeout: 10000 });
+  const r2 = await q2.evaluate(() => ({ t: window.__be.E.t, panel: document.querySelector('#panel').textContent.replace(/\s+/g, ' ') }));
+  await q2.context().close();
+  assert.ok(Math.abs(r2.t - dentro) < 1e-6, `a t inside the event is kept (${r2.t} and ${dentro})`);
+  assert.match(r2.panel, /Plazo que da el texto\. Jue 20:22-25/, 'the card shows the reason of the gap');
+});
+
 test('during the baptism of Lydia the flag says Paul is in Philippi, on a desktop and on a phone', async () => {
   const w = await page.evaluate(() => window.BE.ventanaEvento(window.BE.D.eventos.find((e) => e.id === 'lidia-se-bautiza')));
   assert.ok(w, 'the baptism of Lydia exists');
