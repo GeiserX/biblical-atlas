@@ -932,21 +932,24 @@ test('no lane name is cut: each goes in as many lines as it needs, pinned, with 
     const ids = await p.evaluate(() => window.BE.lineaCarriles().map((c) => c.id).filter((id) => id !== 'meses'));
     // The traveller with the longest name, selected: its lane goes by its name.
     const larga = await p.evaluate(() => { const BE = window.BE; return [...new Set(BE.D.viajes.map((v) => v.persona || 'pablo'))].filter((id) => BE.PERS[id]).sort((a, b) => BE.PERS[b].nombre.length - BE.PERS[a].nombre.length)[0]; });
-    // Last, eight years around 520 a.e.c. with «Letra grande»: lanes of a single row, so the lane has to grow to its name.
-    // Jesús in 30 e.c. carries his age beside his name, which takes room from it.
-    const casos = [['milenios', null], ['persona jesus', 'jesus'], ['pinned', `t=-600.5&v=4125&carriles=${ids.join(',')}`], ['letra grande', 'grande'], [`persona ${larga}`, 'persona'], ['8 años, letra grande', 'cerca']];
+    // Last, eight years around 520 a.e.c.: lanes of a single row, so the lane has to grow to its name. There «Letra
+    // grande» goes on, and then the window narrows, with the same lanes: the heights of the names are measured again
+    // although the list of lanes did not change. Jesús in 30 e.c. carries his age beside his name, which takes room from it.
+    const casos = [['milenios', null], ['persona jesus', 'jesus'], ['pinned', `t=-600.5&v=4125&carriles=${ids.join(',')}`], ['letra grande', 'grande'], [`persona ${larga}`, 'persona'],
+      ['8 años', 'cerca'], ['8 años, letra grande', 'grande'], ['8 años, letra grande, más estrecho', 'estrecho']];
     let q = p;
     for (const [nombre, how] of casos) {
       if (how && how.startsWith('t=')) { q = await open(screen, how); }
       else if (how === 'grande') { await q.evaluate(() => window.BE.ponerPreferencia('letra-grande', true)); await frames(q, 4); }
       else if (how === 'jesus') { await goTo(q, 30.9, 8); await q.evaluate(() => window.BE.seleccionar({ tipo: 'persona', id: 'jesus' }, { mover: false })); await frames(q, 4); }
       else if (how === 'persona') { await q.evaluate((id) => window.BE.seleccionar({ tipo: 'persona', id }, { mover: false }), larga); await frames(q, 4); }
-      else if (how === 'cerca') { await goTo(q, -519.5, 8); await frames(q, 4); }
+      else if (how === 'cerca') { await q.evaluate(() => window.BE.ponerPreferencia('letra-grande', false)); await goTo(q, -519.5, 8); await frames(q, 4); }
+      else if (how === 'estrecho') { await q.setViewportSize({ width: screen.viewport.width - 70, height: screen.viewport.height }); await frames(q, 4); }
       const ls = await lanesLabels(q);
       const cut = ls.filter((l) => l.cut);
       note(`${screen.name} lane names (${nombre}): ${ls.length} labels, ${ls.filter((l) => l.lines > 1).map((l) => `«${l.name}» ${l.lines}`).join(', ') || 'all in one line'}; ${cut.length} cut${cut.length ? `: ${cut.map((l) => `«${l.name}» (${l.cut})`).join(', ')}` : ''}`);
       all.push(...cut.map((l) => `${nombre}: «${l.name}» (${l.lane}): ${l.cut}`));
-      assert.ok(ls.length >= (how === 'cerca' ? 3 : 8), `${nombre}: only ${ls.length} labels`);
+      assert.ok(ls.length >= (nombre.startsWith('8 años') ? 3 : 8), `${nombre}: only ${ls.length} labels`);
     }
     await p.context().close();
     if (q !== p) await q.context().close();
