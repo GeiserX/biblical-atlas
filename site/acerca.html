@@ -172,14 +172,18 @@
   <a href="https://github.com/GeiserX/biblical-atlas" target="_blank" rel="noopener">Código en GitHub</a>
   <a href="index.html" data-volver>Volver al mapa</a>
 </footer>
+<script src="js/volver.js"></script>
 <script>
 /* «Volver al mapa» vuelve a la vista desde la que se llegó (?desde=…, con los mismos datos de prueba de ?datos=…). El
-   enlace al calendario le pasa esa vista en su #desde=…, para que su propia vuelta también llegue ahí. */
+   enlace al calendario le pasa esa vista en su #desde=…, para que su propia vuelta también llegue ahí. Con
+   ?volver=atras, si el mapa está justo detrás, el botón vuelve como el Atrás del navegador (js/volver.js). */
 'use strict';
 (() => {
   const q = new URLSearchParams(location.search);
   const desde = q.get('desde');
+  window.BEVolver.iniciar(q.get('volver') === 'atras');
   q.delete('desde');
+  q.delete('volver');
   const datos = String(q) ? `?${q}` : '';
   document.querySelectorAll('[data-volver]').forEach((a) => { a.href = `index.html${datos}${desde ? `#${desde}` : ''}`; });
   document.querySelectorAll('[data-calendario]').forEach((a) => { a.href = `calendario.html${datos}${desde ? `#desde=${encodeURIComponent(desde)}` : ''}`; });

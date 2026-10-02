@@ -9,8 +9,12 @@
 // Needs playwright-core with a Chromium (importable, or PLAYWRIGHT_CORE=<path to playwright-core>). It uses
 // site/data.json when it exists, BE_DATA_FILE=<data.json> when given, or builds the data into a temporary directory
 // with python3 scripts/build.py. BE_SITE_DIR=<dir> tests another copy of the site (a checkout of main is the control,
-// and fails: it has no buttons). Hosts other than the local server are blocked, so the map itself does not load: the
-// map's frame after each press is checked by hand (site/README.md, «Atrás y adelante»).
+// and fails: it has no buttons). Hosts other than the local server are blocked, so the map itself does not load, except
+// in the test of the map's frame, which lets MapLibre come from unpkg.com.
+//
+// Chromium runs without SwiftShader: no test here draws WebGL through it, and with it every frame is drawn on the CPU
+// (a selection took up to 1.7 s of frames on an idle Mac mini, 40 ms without it), so on a loaded machine the frames,
+// and every wait that polls on them, fell behind the page's timers.
 import { test, before, after, afterEach } from 'node:test';
 import assert from 'node:assert/strict';
 import http from 'node:http';
@@ -60,14 +64,13 @@ before(async () => {
   server = await serve(SITE_DIR, data);
   base = `http://127.0.0.1:${server.address().port}/`;
   const chromium = loadChromium();
-  const args = ['--use-angle=swiftshader', '--enable-unsafe-swiftshader', '--ignore-gpu-blocklist'];
-  try { browser = await chromium.launch({ headless: true, args }); }
-  catch { browser = await chromium.launch({ headless: true, args, channel: 'chrome' }); }
+  try { browser = await chromium.launch({ headless: true }); }
+  catch { browser = await chromium.launch({ headless: true, channel: 'chrome' }); }
 });
 afterEach(async () => { for (const c of browser?.contexts() || []) await c.close().catch(() => {}); });
 after(async () => { await browser?.close(); server?.close(); if (tmp) fs.rmSync(tmp, { recursive: true, force: true }); });
 
-async function openPage(screen = DESKTOP, { hash = '', storage = null, route = null, wait = true, init = null } = {}) {
+async function openPage(screen = DESKTOP, { hash = '', storage = null, route = null, wait = true, init = null, map = false, page: file = 'index.html' } = {}) {
   const context = await browser.newContext({ deviceScaleFactor: 1, ...screen });
   context.setDefaultTimeout(8000);
   // A slow device on demand: with window.__lento = ms, every frame is painted that much later (the map loading, a
@@ -81,11 +84,25 @@ async function openPage(screen = DESKTOP, { hash = '', storage = null, route = n
   const page = await context.newPage();
   page.pageErrors = [];
   page.on('pageerror', (e) => page.pageErrors.push(e.message));
-  await page.route((url) => !url.href.startsWith(base), (r) => r.abort());
+  await page.route((url) => !url.href.startsWith(base) && !(map && url.hostname.endsWith('unpkg.com')), (r) => r.abort());
   if (route) await page.route('**/data.json*', route);
-  await page.goto(`${base}index.html${hash ? `#${hash}` : ''}`);
-  if (wait) { await page.waitForFunction(() => window.BE?.D && window.__be, null, { timeout: 30000 }); await page.waitForTimeout(400); }
+  // Not until «load»: that waits for every image of the page too, which a loaded machine took more than 8 s to serve.
+  // What a test needs, the data and the first frames, ready() waits for.
+  await page.goto(`${base}${file}${hash ? `#${hash}` : ''}`, { waitUntil: 'domcontentloaded' });
+  if (wait && file === 'index.html') await ready(page, { map });
   return page;
+}
+/** The map page has its data, its first frames painted and its address written; with `map`, MapLibre has loaded and
+    stopped moving. */
+async function ready(page, { map = false } = {}) {
+  await page.waitForFunction(() => window.BE?.D && window.__be, null, { timeout: 30000 });
+  if (map) await still(page);
+  await settle(page);
+}
+/** The map has loaded and is not moving: the frame it stopped at is the entry's. */
+async function still(page) {
+  await page.waitForFunction(() => { const m = window.__be?.map; return !!m && m.loaded() && !m.isMoving(); }, null, { timeout: 30000 });
+  await page.evaluate(() => new Promise((ok) => requestAnimationFrame(() => requestAnimationFrame(ok))));
 }
 /** Waits for the page to settle after a press or a Back: two painted frames (every painter, the history's too, has seen
     the change) and base.js's address written. It waits on those, never on a fixed time; the assertions come after. */
@@ -110,8 +127,10 @@ const hist = (page, pre = '') => page.evaluate((pre) => {
 }, pre);
 async function search(page, text) {
   await page.locator('#q').fill(text);
-  // The first search of a page builds the index: on a busy machine that takes longer than the default 8 s.
-  await page.waitForFunction((t) => { const r = document.querySelector('#resultados'); return !r.hidden && r.innerText.includes(t); }, text, { timeout: 20000 });
+  // A search takes a few milliseconds. What made this wait run out on a loaded machine was the site closing the list:
+  // the previous Enter left the box, and 150 ms later the list closed even with the box focused again and the next
+  // search shown. This wait polls on frames, which a loaded machine delays more than timers, so it lost that race.
+  await page.waitForFunction((t) => { const r = document.querySelector('#resultados'); return !r.hidden && r.innerText.includes(t); }, text);
   await page.keyboard.press('Enter');
   await settle(page);
 }
@@ -250,9 +269,8 @@ test('a link with a «#» takes the next number, a reload keeps it, and going ba
   for (let i = 0; i < 2; i++) { await page.locator('#atras').click(); await settle(page); }
   for (let i = 0; i < 2; i++) { await page.locator('#adelante').click(); await settle(page); }
   assert.equal(await visits(), kept, 'Back and Forward changed the list');
-  await page.reload();
-  await page.waitForFunction(() => window.BE?.D && window.__be, null, { timeout: 30000 });
-  await settle(page);
+  await page.reload({ waitUntil: 'domcontentloaded' });
+  await ready(page);
   h = await hist(page);
   assert.equal(h.state.step, 2, 'a reload lost the number');
   assert.equal(h.back.off, false);
@@ -433,10 +451,9 @@ test('a stateless entry reached by going back starts a visit there, and another 
   await p2.locator('#atras').click();
   await settle(p2);
   assert.equal((await hist(p2)).forward.label, 'Adelante: Samotracia');
-  await p2.goto(`${base}acerca.html`);
-  await p2.goBack();
-  await p2.waitForFunction(() => window.BE?.D && window.__be, null, { timeout: 30000 });
-  await settle(p2);
+  await p2.goto(`${base}acerca.html`, { waitUntil: 'domcontentloaded' });
+  await p2.goBack({ waitUntil: 'domcontentloaded' });
+  await ready(p2);
   h = await hist(p2);
   assert.equal(h.state.step, 2);
   assert.equal(h.forward.off, true, 'Forward offers Samotracia but goes to acerca.html');
@@ -475,12 +492,11 @@ test('only a link that unloads the page in this tab cuts what is ahead: mailto, 
   // A plain click on a same-tab link to another page («Acerca de», in the bar) still cuts, as the browser does.
   await page.locator('#atras').click();
   await settle(page);
-  await Promise.all([page.waitForURL(/acerca\.html/), page.locator('#acerca').click()]);
+  await Promise.all([page.waitForURL(/acerca\.html/, { waitUntil: 'domcontentloaded' }), page.locator('#acerca').click()]);
   // Read on the other page, before coming back: there the Navigation API would cut it too, and hide a link that did not.
   assert.doesNotMatch(await stored(), /Samotracia/, 'the link to another page left Samotracia ahead');
-  await page.goBack();
-  await page.waitForFunction(() => window.BE?.D && window.__be, null, { timeout: 30000 });
-  await settle(page);
+  await page.goBack({ waitUntil: 'domcontentloaded' });
+  await ready(page);
   const h = await hist(page);
   assert.equal(h.state.step, 2);
   assert.equal(h.forward.off, true, 'a same-tab link to another page left Samotracia ahead');
@@ -627,4 +643,278 @@ test('entries that would read the same are told apart: a year searched over a re
   h = await hist(page);
   assert.equal(h.state.name, 'Ahora mismo en c. 607 a.e.c.', '«Ahora mismo» over a reading has the reading\'s name');
   assert.equal(h.back.label, 'Atrás: Lectura de Hechos 1 en c. 607 a.e.c.');
+});
+
+test('a search typed right after choosing a result keeps its list open', async () => {
+  // Choosing a result leaves the box, and the list closes 150 ms later. A search typed in that time (a fast person, or a
+  // test on a loaded machine) had its list closed under it.
+  const page = await openPage(DESKTOP, { hash: 't=50.3000' });
+  const r = await page.evaluate(async () => {
+    const q = document.getElementById('q');
+    const type = (text) => { q.focus(); q.value = text; q.dispatchEvent(new Event('input', { bubbles: true })); };
+    type('Pablo');
+    q.dispatchEvent(new KeyboardEvent('keydown', { key: 'Enter', bubbles: true }));
+    type('Corinto');
+    await new Promise((ok) => setTimeout(ok, 400));
+    return { hidden: document.getElementById('resultados').hidden, focus: document.activeElement.id, sel: window.BE.selTexto(window.BE.E.sel) };
+  });
+  assert.equal(r.sel, 'persona:pablo', 'Enter did not choose Pablo');
+  assert.equal(r.focus, 'q');
+  assert.equal(r.hidden, false, 'the list of the second search closed while the box had the focus');
+});
+
+const TOUR = 'Las cartas de Pablo y las ciudades que las recibieron';
+test('a tour opened from the search or from a card link is one entry, and one Back leaves it; paso=4 still opens at stop 4', async () => {
+  for (const [screen, pre] of [[DESKTOP, ''], [PHONE, 'hoja-']]) {
+    const page = await openPage(screen, { hash: 't=50.3000' });
+    await search(page, 'Pablo');
+    const h0 = await hist(page, pre);
+    await search(page, 'Las cartas de Pablo y las ciudades');
+    await settle(page);   // the second entry, when there was one, came a frame after the first
+    const h1 = await hist(page, pre);
+    assert.equal(h1.length, h0.length + 1, `${pre || 'desktop'}: opening the tour from the search made ${h1.length - h0.length} entries`);
+    assert.equal(h1.state.step, h0.state.step + 1);
+    assert.equal(h1.state.name, `${TOUR}, parada 1`);
+    assert.equal(h1.back.label, 'Atrás: Pablo');
+    await page.locator(`#${pre}atras`).click();
+    await settle(page);
+    assert.equal((await snap(page)).sel, 'persona:pablo', `${pre || 'desktop'}: one Back did not leave the tour`);
+    assert.deepEqual(page.pageErrors, []);
+  }
+  // From a card: the last stop of Pedro's tour links the other tours.
+  const page = await openPage(DESKTOP, { hash: 'sel=recorrido:pedro&paso=16' });
+  const h0 = await hist(page);
+  await page.locator('#panel-cuerpo [data-sel="recorrido:cartas-y-ciudades"]').click();
+  await settle(page);
+  await settle(page);
+  const h1 = await hist(page);
+  assert.equal(h1.length, h0.length + 1, `opening the tour from a card link made ${h1.length - h0.length} entries`);
+  assert.equal(h1.state.name, `${TOUR}, parada 1`);
+  await page.locator('#atras').click();
+  await settle(page);
+  assert.equal((await snap(page)).sel, 'recorrido:pedro', 'one Back did not leave the tour opened from the card');
+  // A shared link with paso=4 opens at stop 4, in one entry.
+  const four = await openPage(DESKTOP, { hash: 'sel=recorrido:cartas-y-ciudades&paso=4' });
+  assert.match(await four.locator('#panel-cuerpo .recorrido .be-card__eyebrow').textContent(), /parada 4 de 14/);
+  assert.match((await snap(four)).hash, /paso=4/);
+  assert.equal((await hist(four)).state.step, 0);
+  assert.equal((await hist(four)).state.name, `${TOUR}, parada 4`);
+});
+
+/** Where the map is: its centre and zoom. */
+const frame = (page) => page.evaluate(() => { const m = window.__be.map, c = m.getCenter(); return { lon: c.lng, lat: c.lat, zoom: m.getZoom() }; });
+/** Two frames are the same map: the entry keeps the centre to about a metre and the zoom to a hundredth. */
+function sameFrame(a, b, what) {
+  assert.ok(Math.abs(a.zoom - b.zoom) < 0.01 && Math.abs(a.lon - b.lon) < 1e-4 && Math.abs(a.lat - b.lat) < 1e-4,
+    `${what}: the map is at ${JSON.stringify(a)}, it was left at ${JSON.stringify(b)}`);
+}
+
+test('each entry keeps the map where it was left: Back, Forward and a reload bring it back; moving it makes no entry; a shared link frames its selection', async () => {
+  for (const [screen, pre] of [[DESKTOP, ''], [PHONE, 'hoja-']]) {
+    const who = pre || 'desktop';
+    const page = await openPage(screen, { hash: 't=50.3000', map: true });
+    await search(page, 'Filipos');
+    await still(page);
+    const framed = await frame(page);
+    const h0 = await hist(page, pre), url0 = page.url();
+    // Moved by hand to zoom 9.5, to the north-east. A drag with Playwright's mouse starts and never ends in headless
+    // Chromium (MapLibre fires dragstart and nothing more, on main too), so the move is MapLibre's own: it ends in the
+    // same moveend a hand's does.
+    await page.evaluate(({ lon, lat }) => window.__be.map.jumpTo({ center: [lon + 0.3, lat + 0.2], zoom: 9.5 }), framed);
+    await still(page);
+    const left = await frame(page);
+    const h1 = await hist(page, pre);
+    assert.equal(h1.length, h0.length, `${who}: moving the map made an entry`);
+    assert.equal(h1.state.step, h0.state.step);
+    assert.equal(page.url(), url0, `${who}: moving the map changed the address`);
+    await search(page, 'Corinto');
+    await still(page);
+    const corinto = await frame(page);
+    await page.locator(`#${pre}atras`).click();
+    await settle(page);
+    await still(page);
+    assert.equal((await snap(page)).sel, 'lugar:filipos');
+    sameFrame(await frame(page), left, `${who}, Back to Filipos`);
+    await page.locator(`#${pre}adelante`).click();
+    await settle(page);
+    await still(page);
+    sameFrame(await frame(page), corinto, `${who}, Forward to Corinto`);
+    await page.goBack();
+    await settle(page);
+    await page.reload({ waitUntil: 'domcontentloaded' });
+    await ready(page, { map: true });
+    sameFrame(await frame(page), left, `${who}, reload of Filipos`);
+    // The same address in a new tab has no frame of its own: it frames Filipos as a shared link always did.
+    const shared = await openPage(screen, { hash: (await snap(page)).hash.slice(1), map: true });
+    sameFrame(await frame(shared), framed, `${who}, a shared link to Filipos`);
+    assert.deepEqual(page.pageErrors, []);
+  }
+});
+
+test('with no selection the map stays where it was left: a reload does not recentre on Pablo, and Back over a jump in time does not reframe it', async () => {
+  const page = await openPage(DESKTOP, { hash: 't=50.3000', map: true });
+  const pablo = await frame(page);
+  // Away from Pablo by hand, far enough that his frame is not this one.
+  await page.evaluate(({ lon, lat }) => window.__be.map.jumpTo({ center: [lon + 9, lat - 4], zoom: 6 }), pablo);
+  await still(page);
+  const left = await frame(page);
+  await page.reload({ waitUntil: 'domcontentloaded' });
+  await ready(page, { map: true });
+  // MapLibre's load arrives after the first frame: Pablo was put there then.
+  await page.waitForTimeout(1500);
+  await still(page);
+  sameFrame(await frame(page), left, 'reload with no selection');
+  // A year searched more than 20 years away asks for Pablo's frame 300 ms later; Back to the entry of before must
+  // cancel the one that Back's own jump asks for.
+  await search(page, '607 a.e.c.');
+  await page.waitForTimeout(1500);
+  await still(page);
+  await page.goBack();
+  await settle(page);
+  await page.waitForTimeout(1500);
+  await still(page);
+  assert.equal((await snap(page)).t, '50.3000');
+  sameFrame(await frame(page), left, 'Back over a jump in time');
+  assert.deepEqual(page.pageErrors, []);
+});
+
+test('a tour entry keeps the map where it was left: Back into it from another selection and a reload do not reframe its stop', async () => {
+  // The tour opens one frame after its entry is read, and framing its stop then overwrote the frame the entry kept. The
+  // browser's Back showed it on every run; the site's button did not always.
+  for (const [screen, pre] of [[DESKTOP, ''], [PHONE, 'hoja-']]) {
+    const who = pre || 'desktop';
+    const page = await openPage(screen, { hash: 't=50.3000', map: true });
+    await search(page, 'Pablo');
+    await search(page, 'Las cartas de Pablo y las ciudades');
+    await still(page);
+    const framed = await frame(page);
+    await page.evaluate(({ lon, lat }) => window.__be.map.jumpTo({ center: [lon + 0.3, lat + 0.2], zoom: 9.5 }), framed);
+    await still(page);
+    const left = await frame(page);
+    await search(page, 'Corinto');
+    await still(page);
+    await page.goBack();
+    await settle(page);
+    await still(page);
+    assert.equal((await snap(page)).sel, 'recorrido:cartas-y-ciudades');
+    sameFrame(await frame(page), left, `${who}, Back into the tour`);
+    sameFrame((await hist(page, pre)).state.frame, left, `${who}, the entry's frame after Back`);
+    await page.reload({ waitUntil: 'domcontentloaded' });
+    await ready(page, { map: true });
+    assert.equal((await snap(page)).sel, 'recorrido:cartas-y-ciudades');
+    sameFrame(await frame(page), left, `${who}, reload of the tour entry`);
+    assert.deepEqual(page.pageErrors, []);
+  }
+});
+
+test('resizing the window writes nothing to the history: a map that stops where it was keeps its entry as it is', async () => {
+  // Safari refuses more than 100 history writes in 10 seconds, and then the site's own entries are lost. A resize ends in
+  // MapLibre's moveend with the same centre and zoom: one write per resize event filled that budget while dragging an edge.
+  const page = await openPage(DESKTOP, { hash: 't=50.3000&sel=lugar:corinto', map: true });
+  await page.evaluate(() => {
+    window.__escrituras = 0;
+    window.__paradas = 0;
+    for (const k of ['pushState', 'replaceState']) {
+      const f = history[k].bind(history);
+      history[k] = (...a) => { window.__escrituras++; return f(...a); };
+    }
+    window.__be.map.on('moveend', () => { window.__paradas++; });
+  });
+  for (let i = 0; i < 30; i++) {
+    await page.setViewportSize({ width: 1440 - (i % 2) * 37 - i, height: 900 - (i % 3) * 11 });
+    await page.evaluate(() => new Promise((ok) => requestAnimationFrame(ok)));
+  }
+  await still(page);
+  const r = await page.evaluate(() => ({ escrituras: window.__escrituras, paradas: window.__paradas }));
+  assert.ok(r.paradas > 0, 'no resize ended in moveend: this test checks nothing');
+  assert.equal(r.escrituras, 0, `${r.paradas} resizes wrote ${r.escrituras} times to the history`);
+  // Past the limit Safari throws: the map still stops and moves, without an error out of its moveend.
+  await page.evaluate(() => {
+    history.replaceState = () => { throw new DOMException('Attempt to use history.replaceState() more than 100 times per 10 seconds', 'SecurityError'); };
+    const m = window.__be.map, c = m.getCenter();
+    m.jumpTo({ center: [c.lng + 0.5, c.lat], zoom: m.getZoom() + 1 });
+  });
+  await still(page);
+  assert.deepEqual(page.pageErrors, []);
+});
+
+test('«Volver al mapa» goes back to the entry the map was on, with its Back; from the landing, a shared link or a section it stays a link', async () => {
+  const volver = (page) => Promise.all([page.waitForURL(/index\.html/, { waitUntil: 'domcontentloaded' }), page.locator('a.be-btn[data-volver]').click()]);
+  const page = await openPage(DESKTOP, { hash: 't=50.3000' });
+  await search(page, 'Pablo');
+  await search(page, 'Corinto');
+  const before = await hist(page);
+  // «Acerca de», from the top bar, and the calendar, from the date panel.
+  const ways = [['Acerca de', /acerca\.html/, async () => page.locator('#acerca').click()],
+    ['the calendar', /calendario\.html/, async () => { await page.locator('#fecha').click(); await page.locator('a.date-picker__link[data-calendario]').click(); }]];
+  const copied = [];
+  for (const [what, url, go] of ways) {
+    await Promise.all([page.waitForURL(url, { waitUntil: 'domcontentloaded' }), go()]);
+    // The mark lives in the entry, not in the address a person copies or bookmarks.
+    await page.waitForFunction(() => history.state?.volverAlMapa === true);
+    assert.doesNotMatch(page.url(), /volver=/, `${what}: the address still says volver=atras`);
+    copied.push(page.url());
+    await volver(page);
+    await ready(page);
+    const h = await hist(page);
+    assert.equal((await snap(page)).sel, 'lugar:corinto', what);
+    assert.equal(h.state.visit, before.state.visit, `${what}: «Volver al mapa» started a new visit`);
+    assert.equal(h.state.step, before.state.step);
+    assert.equal(h.back.label, 'Atrás: Pablo');
+    assert.equal(h.length, before.length + 1, `${what}: «Volver al mapa» added an entry instead of going back`);
+  }
+  // Ctrl or ⌘ with the click opens the map in a new tab, as a link does, and this tab stays on «Acerca de».
+  await Promise.all([page.waitForURL(/acerca\.html/, { waitUntil: 'domcontentloaded' }), page.locator('#acerca').click()]);
+  const [tab] = await Promise.all([page.context().waitForEvent('page'), page.locator('a.be-btn[data-volver]').click({ modifiers: ['ControlOrMeta'] })]);
+  await tab.waitForLoadState('domcontentloaded');
+  assert.match(tab.url(), /index\.html#.*sel=lugar:corinto/);
+  assert.match(page.url(), /acerca\.html/, 'a modified click went back in this tab');
+  await tab.close();
+  await volver(page);
+  await ready(page);
+  // From a section of the page (#gracias, an entry of its own) Back is not the map: the button stays a link.
+  await Promise.all([page.waitForURL(/acerca\.html/, { waitUntil: 'domcontentloaded' }), page.locator('#acerca').click()]);
+  await page.evaluate(() => { location.hash = 'gracias'; });
+  await volver(page);
+  await ready(page);
+  assert.match(page.url(), /index\.html#.*sel=lugar:corinto/);
+  assert.equal((await hist(page)).state.step, 0, 'from a section the button went back to the page');
+  // From the landing, Back would be the landing: the button leads to the map, as a link.
+  const land = await openPage(DESKTOP);
+  assert.equal((await snap(land)).landing, true);
+  await Promise.all([land.waitForURL(/acerca\.html/, { waitUntil: 'domcontentloaded' }), land.locator('a[href^="acerca.html"]', { hasText: 'Qué es biblical-atlas' }).click()]);
+  await volver(land);
+  await ready(land);
+  assert.equal((await snap(land)).landing, false, 'from the landing «Volver al mapa» went back to the landing');
+  // A shared link to «Acerca de», even one that says volver=atras, has nothing behind: a link.
+  const shared = await openPage(DESKTOP, { page: `acerca.html?desde=${encodeURIComponent('t=50.3000&sel=lugar:corinto')}&volver=atras` });
+  await volver(shared);
+  await ready(shared);
+  assert.equal((await snap(shared)).sel, 'lugar:corinto');
+  assert.equal((await hist(shared)).state.step, 0);
+  // The address copied from either page, pasted over the landing in the same tab: the button leads to the map's view,
+  // never back to the landing behind it.
+  for (const url of copied) {
+    const over = await openPage(DESKTOP);
+    assert.equal((await snap(over)).landing, true);
+    await over.goto(url, { waitUntil: 'domcontentloaded' });
+    await volver(over);
+    await ready(over);
+    const v = await snap(over);
+    assert.equal(v.landing, false, `${url}: pasted over the landing, «Volver al mapa» went back to the landing`);
+    assert.equal(v.sel, 'lugar:corinto');
+  }
+  // Without the Navigation API (document.referrer instead), a reload of a section of «Acerca de» still has the map as
+  // its referrer: the button stays a link and does not go back to the page.
+  const sinApi = await openPage(DESKTOP, { hash: 't=50.3000', init: () => { Object.defineProperty(window, 'navigation', { value: undefined, configurable: true }); } });
+  await search(sinApi, 'Corinto');
+  await Promise.all([sinApi.waitForURL(/acerca\.html/, { waitUntil: 'domcontentloaded' }), sinApi.locator('#acerca').click()]);
+  assert.equal(await sinApi.evaluate(() => window.navigation), undefined, 'the Navigation API is still there: this case checks nothing');
+  assert.equal(await sinApi.evaluate(() => history.state?.volverAlMapa), true, 'without the API the referrer did not mark the entry');
+  await sinApi.evaluate(() => { location.hash = 'gracias'; });
+  await sinApi.reload({ waitUntil: 'domcontentloaded' });
+  await volver(sinApi);
+  await ready(sinApi);
+  assert.match(sinApi.url(), /index\.html#.*sel=lugar:corinto/);
+  assert.deepEqual([page.pageErrors, sinApi.pageErrors], [[], []]);
 });

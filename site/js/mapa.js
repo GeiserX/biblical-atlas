@@ -193,7 +193,12 @@ function crearMapa() {
     if (e?.error?.message) console.warn('Mapa:', e.error.message, url);
   });
   map.on('style.load', () => { cargado = true; montarCapas(); });
-  map.on('moveend', () => { sucio.etiquetas = true; programar(); if (E.mapa === 'cortina') pintarCortina(); pintarNombresEncuadre(); if (pintarLeyenda.args) pintarLeyenda(...pintarLeyenda.args); });
+  map.on('moveend', () => {
+    sucio.etiquetas = true; programar(); if (E.mapa === 'cortina') pintarCortina(); pintarNombresEncuadre(); if (pintarLeyenda.args) pintarLeyenda(...pintarLeyenda.args);
+    // La entrada del historial guarda dónde se paró el mapa: Atrás, Adelante y una recarga lo devuelven así.
+    const c = map.getCenter();
+    BE.historia?.encuadre({ lon: c.lng, lat: c.lat, zoom: map.getZoom() });
+  });
   map.on('move', () => { if (imgsDom.length) colocarImgsDom(); if (E.mapa === 'cortina') pintarCortina(); pintarSituacion(); });
   map.on('resize', () => { if (imgsDom.length) colocarImgsDom(); });
   // Un clic en una marca HTML también llega a MapLibre: esa marca ya lo gestiona su propio manejador.
@@ -1819,7 +1824,8 @@ function iniciar() {
   } else {
     crearPanelesMapa();
     crearMapa();
-    map.once('load', () => { crearMarcas(); sucio.mapa = sucio.etiquetas = true; programar(); pintarSituacion(); requestAnimationFrame(() => requestAnimationFrame(mostrarPablo)); });
+    // Con el encuadre de la entrada ya puesto (una recarga), Pablo no lo cambia.
+    map.once('load', () => { crearMarcas(); sucio.mapa = sucio.etiquetas = true; programar(); pintarSituacion(); requestAnimationFrame(() => requestAnimationFrame(() => { if (!marcoDeInicio) mostrarPablo(); })); });
   }
   iniciarCortina();
   ponerMapa(E.mapa, false);
@@ -1838,13 +1844,26 @@ function iniciar() {
 /** Primer encuadre, al arrancar, con la dirección ya leída y el alto de la línea ya puesto. Con selección (un enlace
     compartido, una pregunta de la portada), se encuadra como al pulsarla en la línea; sin ella, si Pablo queda fuera, el
     mapa se centra en él antes de pintar nada, en vez de saltar al cargar el estilo (la línea alta deja menos mapa). */
+let marcoDeInicio = false;
 function encuadreDeInicio() {
   if (!map) return;
+  // Una recarga, o la vuelta desde otra página, abre la entrada con el encuadre en que se dejó. Se lee antes de
+  // resize(), que también acaba en moveend y lo reescribiría.
+  const marco = BE.historia?.marco();
   map.resize();
-  if (E.sel) encuadrarLugares([...E.resaltado.lugares]);
+  if (marco) { marcoDeInicio = true; ponerMarco(marco); }
+  else if (E.sel) encuadrarLugares([...E.resaltado.lugares]);
   else mostrarPablo();
 }
-BE.mapa = { resaltar, encuadrar: encuadrarLugares, volverAlInicio, iniciar, encuadreDeInicio, enfocarCandidato, get candidatoFoco() { return candFoco; }, get gl() { return map; } };
+/** Pone el mapa en el encuadre que guardó una entrada del historial, sin animar, y sin que un salto en el tiempo de la
+    misma vuelta lo cambie (vigilarSalto). */
+function ponerMarco({ lon, lat, zoom }) {
+  if (!map) return;
+  map.jumpTo({ center: [lon, lat], zoom });
+  tSalto = E.t;
+  clearTimeout(saltoTimer);
+}
+BE.mapa = { resaltar, encuadrar: encuadrarLugares, volverAlInicio, iniciar, encuadreDeInicio, ponerMarco, enfocarCandidato, get candidatoFoco() { return candFoco; }, get gl() { return map; } };
 Object.assign(BE, {
   ponerMapa, pintarMapa, pintarEtiquetas, seguirPablo, cartaVisible, cartaEnMapa, estadoCarta, colorViaje, colorEscritor, colorPersona,
   nombreHoy, nombreEn, candidatosDe, candidatosVisibles, CANDIDATO: CAND, ventanaDeCarta,
