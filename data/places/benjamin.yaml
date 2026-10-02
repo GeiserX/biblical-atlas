@@ -34,7 +34,7 @@ candidates:
     - bet-horon-baja
     - quiryat-jearim
     - jerusalen
-    - rio-jordan
+    - [31.761, 35.558]
     note: 'Contorno nuestro por los lugares que nombra la frontera: el Jordán frente a Jericó, Betel, Bet-horón Baja, Quiryat-jearim, Jerusalén y la boca del Jordán en el mar Salado.'
     sources:
     - it-benjamin

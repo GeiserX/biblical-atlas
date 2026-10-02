@@ -146,7 +146,17 @@ class Formas(unittest.TestCase):
 
     def test_un_vertice_que_no_es_un_lugar_con_punto_es_error(self):
         e = errores_forma({"type": "polygon", "vertices": [[31.9, 34.9], [32.1, 34.9], "sodoma"], **HECHO})
-        self.assertTrue(any("'sodoma' no es un lugar con punto" in x for x in e), e)
+        self.assertTrue(any("'sodoma' no es un lugar con punto exacto" in x for x in e), e)
+
+    def test_un_vertice_no_cuelga_del_punto_de_una_zona(self):
+        # validate.py y build.py solo dan a los vértices los lugares con precision: point; un río con punto
+        # representativo no entra, aunque tenga lat y lon.
+        datos_puntos = {"aqui": (32.0, 35.2)}
+        bien = {"type": "polygon", "vertices": [[31.9, 34.9], [32.1, 34.9], "aqui"], **HECHO}
+        self.assertEqual(errores_forma(bien, puntos=datos_puntos), [])
+        lugares = [{"id": "aqui", "lat": 32.0, "lon": 35.2, "precision": "point"},
+                   {"id": "rio", "lat": 32.0, "lon": 35.2, "precision": "zone"}]
+        self.assertEqual(set(validate.formas.puntos_de_vertices(lugares)), {"aqui"})
 
     def test_demasiados_vertices_es_error(self):
         vs = [[32 + 0.1 * __import__("math").sin(k), 35 + 0.1 * __import__("math").cos(k)] for k in range(13)]

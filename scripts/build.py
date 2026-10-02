@@ -776,8 +776,7 @@ def legacy_data(datos, leg):
 def compile_shapes(lugares, datos):
     """Añade a cada `shape` su contorno (`ring`, [[lon, lat], ...] cerrado) y su caja (`bbox`), que el sitio dibuja y
     encuadra tal cual. La forma de un lugar rodea su punto; la de un candidato, el de su zona."""
-    puntos = {o.get("id"): (o["lat"], o["lon"]) for o in datos["places"]
-              if o.get("lat") is not None and o.get("lon") is not None and o.get("candidates") is None}
+    puntos = formas.puntos_de_vertices(datos["places"])
     for o in lugares:
         hay = [(o.get("shape"), o.get("lat"), o.get("lon"))]
         hay += [(c.get("shape"), (c.get("geometria") or {}).get("lat"), (c.get("geometria") or {}).get("lon"))

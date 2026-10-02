@@ -824,10 +824,10 @@ def validar_forma(f, donde, err, lat, lon, puntos, en_candidato=False):
         for i, v in enumerate(vs):
             if isinstance(v, str):
                 if v not in puntos:
-                    err(f"{donde}: vertices[{i}] '{v}' no es un lugar con punto")
+                    err(f"{donde}: vertices[{i}] '{v}' no es un lugar con punto exacto (precision: point); escribe [lat, lon]")
                     bien = False
             elif not _par(v):
-                err(f"{donde}: vertices[{i}] debe ser [lat, lon] dentro de rango o el id de un lugar con punto")
+                err(f"{donde}: vertices[{i}] debe ser [lat, lon] dentro de rango o el id de un lugar con precision: point")
                 bien = False
         if bien and len({tuple(p) for p in formas.vertices(f, puntos)}) != len(vs):
             err(f"{donde}: dos vértices caen en el mismo punto")
@@ -1558,9 +1558,7 @@ def validar(datos):
     meses = validar_calendario(datos, err)
     validar_libros(datos, err, meses)
     offices = (datos["vocabulary"].get("offices") or {})
-    # Los lugares con punto, para los vértices de un polígono que nombran un lugar.
-    puntos = {o.get("id"): (o["lat"], o["lon"]) for o in datos["places"]
-              if _numero(o.get("lat")) and _numero(o.get("lon")) and o.get("candidates") is None}
+    puntos = formas.puntos_de_vertices(datos["places"])
 
     for tipo in TYPES:
         vistos = set()

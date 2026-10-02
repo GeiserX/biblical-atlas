@@ -43,7 +43,7 @@ Dos ejemplos de lo que cuesta el círculo:
 | `circle` | `radius_km` | Lo que la fuente pone «alrededor de» un sitio. Es la forma por defecto: un candidato de zona ya es su círculo y no la repite. |
 | `ellipse` | `radii_km: [a lo largo, de través]`, `bearing` | Lo alargado: un valle, una llanura de la costa, un desierto a lo largo de un mar. |
 | `box` | `bounds: {south, west, north, east}` | Lo que la fuente mide en kilómetros de este a oeste y de norte a sur. |
-| `polygon` | `vertices`, de 3 a 12 | Lo que tiene frontera escrita. Cada vértice es `[lat, lon]` o el id de un lugar con punto. |
+| `polygon` | `vertices`, de 3 a 12 | Lo que tiene frontera escrita. Cada vértice es `[lat, lon]` o el id de un lugar con `precision: point`. |
 
 `circle` y `ellipse` admiten `center` cuando la zona no está centrada en el punto que la representa (la llanura de Sarón, cuyo punto de OpenBible queda al norte). El esquema completo está en [`docs/investigacion/README.md`](../investigacion/README.md#campos-por-tipo).
 
@@ -76,7 +76,7 @@ shape:
 
 ## Qué cambia en cada pieza
 
-- **[`validate.py`](../../scripts/validate.py)** comprueba el vocabulario, los campos de cada forma, que el punto cae dentro (con medio kilómetro de holgura), que un polígono no se cruza, que cada vértice con id es un lugar con punto, y las fuentes y la razón como en cualquier hecho. La cuenta del contorno vive en [`scripts/formas.py`](../../scripts/formas.py), la misma para `validate.py` y `build.py`.
+- **[`validate.py`](../../scripts/validate.py)** comprueba el vocabulario, los campos de cada forma, que el punto cae dentro (con medio kilómetro de holgura), que un polígono no se cruza, que cada vértice con id es un lugar con `precision: point` (nunca el punto representativo de un río o una región), y las fuentes y la razón como en cualquier hecho. La cuenta del contorno vive en [`scripts/formas.py`](../../scripts/formas.py), la misma para `validate.py` y `build.py`.
 - **[`build.py`](../../scripts/build.py)** añade a cada forma su contorno (`ring`, una lista cerrada de `[lon, lat]`) y su caja (`bbox`). El sitio los dibuja tal cual y no hace cuentas. La base SQLite gana una columna `forma` en `lugares` y en `candidatos`, y el registro una sección «Formas de las zonas».
 - **El dibujo.** La forma de un lugar con punto se ve cuando ese lugar está elegido o lo resalta la selección (un suceso en Canaán, una persona que vivió en Galilea), con borde a trazos y relleno claro en el color `--tier1`, que cambia con el modo reunión. Un candidato con forma dibuja su contorno en lugar de su círculo, con el rayado de su estado de siempre. El destino de una carta con forma dibuja la forma en lugar del círculo fijo.
 - **El encuadre.** Al elegir un lugar con forma, el mapa encuadra la forma entera. Canaán va de Sidón a Gaza y deja de quedarse en Galilea. El encuadre de la época sigue mirando puntos, así que la vista de inicio no cambia.

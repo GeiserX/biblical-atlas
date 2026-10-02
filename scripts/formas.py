@@ -33,6 +33,14 @@ def centro(forma, lat, lon):
     return (c["lat"], c["lon"]) if isinstance(c, dict) else (lat, lon)
 
 
+def puntos_de_vertices(lugares):
+    """{id: (lat, lon)} de los lugares que un vértice puede nombrar: los de punto exacto (precision: point). El punto de
+    una zona (un río, una región) solo la representa: si se moviera, cambiaría el contorno de otra ficha sin aviso."""
+    num = lambda v: isinstance(v, (int, float)) and not isinstance(v, bool)
+    return {o.get("id"): (o["lat"], o["lon"]) for o in lugares
+            if num(o.get("lat")) and num(o.get("lon")) and o.get("candidates") is None and o.get("precision") == "point"}
+
+
 def vertices(forma, puntos):
     """Los vértices de un polígono como (lat, lon): un par escrito o el punto del lugar que nombra el id."""
     out = []

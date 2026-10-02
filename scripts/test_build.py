@@ -148,7 +148,7 @@ class Formas(unittest.TestCase):
         poligono = {"type": "polygon", "vertices": [[30.9, 33.9], [31.1, 33.9], "b"]}
         lugares = [{"id": "a", "lat": 32.0, "lon": 35.0, "shape": elipse,
                     "candidatos": [{"geometria": {"lat": 31.0, "lon": 34.0}, "shape": poligono}]}]
-        build.compile_shapes(lugares, {"places": [{"id": "b", "lat": 31.0, "lon": 34.2}]})
+        build.compile_shapes(lugares, {"places": [{"id": "b", "lat": 31.0, "lon": 34.2, "precision": "point"}]})
         self.assertEqual(len(elipse["ring"]), 73)
         self.assertEqual(elipse["ring"][0], elipse["ring"][-1])
         (o, s_), (e, n) = elipse["bbox"]
