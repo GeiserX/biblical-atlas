@@ -179,6 +179,32 @@ class Homonimos(unittest.TestCase):
                 self.assertEqual(len(e), 1, e)
                 self.assertIn("par de dos ids distintos", e[0])
 
+    def test_una_excepcion_sin_reason_es_error(self):
+        juan = persona("juan", "Juan", otros=["Boanerges"])
+        santiago = persona("santiago", "Santiago", otros=["Boanerges"])
+        e = errores_homonimos(juan, santiago, excepciones=[excepcion("juan", "santiago", porque="")])
+        self.assertEqual(len(e), 1, e)
+        self.assertIn("falta reason", e[0])
+
+    def test_una_excepcion_de_un_par_ya_marcado_sobra(self):
+        for a, b in [(persona("uz-a", "Uz", ["uz-b"]), persona("uz-b", "Uz", ["uz-a"])),
+                     (persona("uz-a", "Uz", same_as="uz-b"), persona("uz-b", "Uz"))]:
+            with self.subTest(a=a):
+                e = errores_homonimos(a, b, excepciones=[excepcion("uz-a", "uz-b", nombre="Uz")])
+                self.assertEqual(len(e), 1, e)
+                self.assertIn("ya llevan distinct_from o same_as", e[0])
+
+    def test_una_lista_de_excepciones_que_no_es_lista_es_error(self):
+        out = []
+        validate.validar_homonimos({"people": [persona("juan", "Juan")]}, out.append, {"juan": "santiago"})
+        self.assertEqual(len(out), 1, out)
+        self.assertIn("debe ser una lista", out[0])
+
+    def test_distinct_from_que_se_nombra_a_si_misma_es_error(self):
+        e = errores_homonimos(persona("lucas", "Lucas", ["lucas"]))
+        self.assertEqual(len(e), 1, e)
+        self.assertIn("se nombra a sí misma", e[0])
+
     def test_cuenta_el_nombre_de_name_aunque_no_vaya_en_names(self):
         maria = {"id": "maria-a", "_fichero": "data/people/maria-a.yaml", "name": "María",
                  "names": [{"name": "María de Betania"}]}
