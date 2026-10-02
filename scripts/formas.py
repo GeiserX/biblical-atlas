@@ -10,6 +10,7 @@ MAX_VERTICES = 12
 PASOS = 72             # puntos de un círculo o una elipse
 R = 6371.0             # radio de la Tierra, km
 HOLGURA_KM = 0.5       # un punto a menos de esto del borde cuenta como dentro
+MAX_RADIO_KM = 2000    # ninguna zona del atlas pasa de aquí; un radio mayor es un error de escritura
 
 
 def destino(lat, lon, rumbo, km):
@@ -98,10 +99,25 @@ def dentro(ring, lat, lon, holgura_km=HOLGURA_KM):
 
 
 def se_cruza(ring):
-    """¿Se cortan dos lados no contiguos del contorno? Un polígono que se cruza no encierra una zona clara."""
-    def cruce(p1, p2, p3, p4):
-        d = lambda a, b, c: (b[0] - a[0]) * (c[1] - a[1]) - (b[1] - a[1]) * (c[0] - a[0])
-        return d(p3, p4, p1) * d(p3, p4, p2) < 0 and d(p1, p2, p3) * d(p1, p2, p4) < 0
+    """¿Se cortan o se tocan dos lados del contorno? Un polígono que se cruza, que pisa un vértice sobre otro lado o que
+    vuelve sobre sus pasos no encierra una zona clara. Dos lados contiguos solo pueden compartir su vértice."""
+    eps = 1e-12
+    d = lambda a, b, c: (b[0] - a[0]) * (c[1] - a[1]) - (b[1] - a[1]) * (c[0] - a[0])
+
+    def sobre(a, b, p):   # p está en el segmento ab
+        return abs(d(a, b, p)) <= eps and min(a[0], b[0]) - eps <= p[0] <= max(a[0], b[0]) + eps \
+            and min(a[1], b[1]) - eps <= p[1] <= max(a[1], b[1]) + eps
+
+    def tocan(p1, p2, p3, p4):
+        if d(p3, p4, p1) * d(p3, p4, p2) < 0 and d(p1, p2, p3) * d(p1, p2, p4) < 0:
+            return True
+        return sobre(p3, p4, p1) or sobre(p3, p4, p2) or sobre(p1, p2, p3) or sobre(p1, p2, p4)
+
+    def vuelve(a, b, c):   # el lado bc vuelve sobre ab: alineados y en sentido contrario
+        return abs(d(a, b, c)) <= eps and (b[0] - a[0]) * (c[0] - b[0]) + (b[1] - a[1]) * (c[1] - b[1]) < 0
+
     lados = [(ring[i], ring[i + 1]) for i in range(len(ring) - 1)]
     n = len(lados)
-    return any(cruce(*lados[i], *lados[j]) for i in range(n) for j in range(i + 2, n) if not (i == 0 and j == n - 1))
+    if any(vuelve(lados[i][0], lados[i][1], lados[(i + 1) % n][1]) for i in range(n)):
+        return True
+    return any(tocan(*lados[i], *lados[j]) for i in range(n) for j in range(i + 2, n) if not (i == 0 and j == n - 1))

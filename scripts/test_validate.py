@@ -144,6 +144,31 @@ class Formas(unittest.TestCase):
         e = errores_forma({"type": "polygon", "vertices": [[31.9, 34.9], [32.1, 35.1], [32.1, 34.9], [31.9, 35.1]], **HECHO})
         self.assertTrue(any("se cruza" in x for x in e), e)
 
+    def test_un_poligono_que_vuelve_sobre_si_o_pisa_otro_lado_es_error(self):
+        # Un lado que vuelve sobre el anterior (de 32 a 31,5 por la misma línea) y un vértice sobre otro lado.
+        for vs in ([[31.0, 35.0], [32.0, 35.0], [31.5, 35.0], [31.5, 36.0]],
+                   [[31.8, 34.8], [31.8, 35.2], [32.2, 35.2], [31.8, 35.0], [32.2, 34.8]],
+                   [[31.0, 35.0], [32.0, 35.0], [33.0, 35.0]]):
+            with self.subTest(vertices=vs):
+                e = errores_forma({"type": "polygon", "vertices": vs, **HECHO})
+                self.assertTrue(any("se cruza o se toca" in x for x in e), e)
+
+    def test_numeros_infinitos_y_radios_desmedidos_son_error(self):
+        inf, nan = float("inf"), float("nan")
+        casos = [({"type": "circle", "radius_km": inf}, "radius_km mayor que 0"),
+                 ({"type": "circle", "radius_km": nan}, "radius_km mayor que 0"),
+                 ({"type": "circle", "radius_km": 30000}, "radius_km mayor que 0"),
+                 ({"type": "ellipse", "radii_km": [inf, 10], "bearing": 5}, "radii_km"),
+                 ({"type": "ellipse", "radii_km": [3000, 10], "bearing": 5}, "radii_km"),
+                 ({"type": "ellipse", "radii_km": [40, 10], "bearing": 5, "center": {"lat": nan, "lon": 35.0}},
+                  "center solo va"),
+                 ({"type": "box", "bounds": {"south": 31.8, "west": -inf, "north": 32.2, "east": 35.3}}, "un box"),
+                 ({"type": "polygon", "vertices": [[nan, 34.9], [32.1, 34.9], [32.0, 35.2]]}, "vertices[0]")]
+        for forma, texto in casos:
+            with self.subTest(forma=forma):
+                e = errores_forma({**forma, **HECHO})   # sin excepción: un error que se lee
+                self.assertTrue(any(texto in x for x in e), e)
+
     def test_un_vertice_que_no_es_un_lugar_con_punto_es_error(self):
         e = errores_forma({"type": "polygon", "vertices": [[31.9, 34.9], [32.1, 34.9], "sodoma"], **HECHO})
         self.assertTrue(any("'sodoma' no es un lugar con punto exacto" in x for x in e), e)
