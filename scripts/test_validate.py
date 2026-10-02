@@ -2,7 +2,10 @@
 """Pruebas de scripts/validate.py. Uso: python3 scripts/test_validate.py
 
 Leen data/books.yaml de verdad y no escriben nada."""
+import contextlib
+import io
 import sys
+import tempfile
 import unittest
 from pathlib import Path
 
@@ -137,8 +140,20 @@ class PuntoCompartido(unittest.TestCase):
                 self.assertEqual(len(avisos_punto(dict(self.RIO, coord_note=nota), ur)), 1)
         self.assertEqual(avisos_punto(dict(self.RIO, coord_note="Mismo punto que Ur, a propósito."), ur), [])
 
-    def test_una_region_no_cuenta(self):
-        self.assertEqual(avisos_punto(self.RIO, dict(self.CIUDAD, type="region")), [])
+    def test_el_name_cuenta_aunque_no_este_en_names(self):
+        ciudad = dict(self.CIUDAD, names=[{"name": "Yeta"}])
+        self.assertEqual(avisos_punto(dict(self.RIO, coord_note="Mismo punto que Ciudad Y."), ciudad), [])
+
+    def test_los_tipos_que_el_mapa_rotula_aparte_no_cuentan(self):
+        # La lista va escrita aquí, no leída de ROTULO_APARTE, para que quitar un tipo de allí se note. Solo cuenta el
+        # aviso del río: un valle es también un lugar largo y avisa por su cuenta si el río le cae encima.
+        for tipo in ("region", "province", "country", "kingdom", "desert", "plain", "valley"):
+            with self.subTest(tipo=tipo):
+                a = avisos_punto(self.RIO, dict(self.CIUDAD, type=tipo))
+                self.assertEqual([t for _, t in a if t.startswith("data/places/rio-x.yaml")], [])
+
+    def test_justo_por_debajo_de_medio_kilometro_avisa(self):
+        self.assertEqual(len(avisos_punto(self.RIO, dict(self.CIUDAD, lat=33.504))), 1)
 
     def test_a_medio_kilometro_o_mas_no_avisa(self):
         self.assertEqual(avisos_punto(self.RIO, dict(self.CIUDAD, lat=33.5046)), [])
@@ -148,6 +163,30 @@ class PuntoCompartido(unittest.TestCase):
 
     def test_un_lugar_sin_punto_no_rompe(self):
         self.assertEqual(avisos_punto(self.RIO, dict(self.CIUDAD, lat=None, lon=None)), [])
+
+
+class PuntoCompartidoEnValidate(unittest.TestCase):
+    """La regla pasa por validate.main: sale como aviso y cuenta en el resumen."""
+    def correr(self, lat_ciudad):
+        with tempfile.TemporaryDirectory() as d:
+            lugares = Path(d) / "places"
+            lugares.mkdir()
+            (lugares / "rio-x.yaml").write_text("id: rio-x\nname: Río X\ntype: river\nlat: 33.5\nlon: 36.3\n"
+                                                "coord_note: Punto representativo.\n", encoding="utf-8")
+            (lugares / "ciudad-y.yaml").write_text(f"id: ciudad-y\nname: Ciudad Y\ntype: city\nlat: {lat_ciudad}\n"
+                                                   "lon: 36.3\n", encoding="utf-8")
+            out = io.StringIO()
+            with contextlib.redirect_stdout(out):
+                validate.main(["--data", d])
+            return out.getvalue()
+
+    def test_sale_como_aviso_y_en_el_resumen(self):
+        salida = self.correr(33.502)
+        self.assertIn("AVISO [shared_point] data/places/rio-x.yaml", salida)
+        self.assertIn("(shared_point 1)", salida)
+
+    def test_lejos_no_sale(self):
+        self.assertNotIn("shared_point", self.correr(33.6))
 
 
 if __name__ == "__main__":
