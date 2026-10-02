@@ -1763,9 +1763,10 @@ function tapas() {
     tanto», nunca debajo. En el móvil la hoja inferior tapa el fondo del mapa. */
 function rellenoEncuadre(caja = [[0, 0], [0, 0]]) {
   const c = map.getContainer(), W = c.clientWidth, H = c.clientHeight, base = map.getPadding();
-  // Los bordes dejan sitio a la píldora de números de un recorrido («1·5·6·7·8», unos 75 px), que va encima de su lugar.
-  const borde = estrecha() ? { top: 56, bottom: Math.min(altoHoja() + 30, H * 0.6), left: 44, right: 50 } : { top: 56, bottom: 30, left: 64, right: 70 };
-  const ts = tapas(), M = 24;
+  // Los márgenes dejan sitio a la píldora de números de un recorrido («1·5·6·7·8», unos 75 × 26 px), que va centrada
+  // 14 px encima de su lugar: media píldora y algo de aire a cada lado, y la píldora entera por encima.
+  const borde = estrecha() ? { top: 46, bottom: Math.min(altoHoja() + 20, H * 0.6), left: 48, right: 50 } : { top: 46, bottom: 24, left: 48, right: 60 };
+  const ts = tapas(), LADO = 48, ENCIMA = 46, DEBAJO = 16;
   // La forma de la caja en píxeles al zoom 0; un punto cuenta como una caja diminuta, y gana el hueco más ancho y alto.
   const [[o, s], [e, n]] = caja;
   const bw = Math.max(((e - o) / 360) * 512, 1e-6), bh = Math.max(((mercY(n) - mercY(s)) / (2 * Math.PI)) * 512, 1e-6);
@@ -1773,8 +1774,8 @@ function rellenoEncuadre(caja = [[0, 0], [0, 0]]) {
   for (let k = 0; k < 1 << ts.length; k++) {
     const p = { ...borde };
     ts.forEach((t, i) => {
-      if (k & (1 << i)) { if (t.izq) p.left = Math.max(p.left, t.x1 + M); else p.right = Math.max(p.right, W - t.x0 + M); }
-      else if (t.arriba) p.top = Math.max(p.top, t.y1 + M); else p.bottom = Math.max(p.bottom, H - t.y0 + M);
+      if (k & (1 << i)) { if (t.izq) p.left = Math.max(p.left, t.x1 + LADO); else p.right = Math.max(p.right, W - t.x0 + LADO); }
+      else if (t.arriba) p.top = Math.max(p.top, t.y1 + ENCIMA); else p.bottom = Math.max(p.bottom, H - t.y0 + DEBAJO);
     });
     const w = W - base.left - base.right - p.left - p.right, h = H - base.top - base.bottom - p.top - p.bottom;
     if (w < 20 || h < 20) continue;
