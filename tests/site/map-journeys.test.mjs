@@ -337,8 +337,14 @@ test('3C: a companion shows only on the stops of his range, in reading mode and 
   assert.ok(t.en20[8] && !t.en20[8].includes('sopater') && t.en20[8].includes('lucas'), `in Filipos, Lucas and not the seven of Hch 20:4: ${t.en20[8]}`);
   assert.ok(t.en20[9]?.includes('sopater'), `Sópater waits in Troas: ${t.en20[9]}`);
   assert.match(r.corinto, /Con Pablo en esta parada.*Silas/);
-  // Choosing Lucas adds no route (a selected person draws what the date draws), and highlights only the stops of his
-  // range.
+  // Choosing Lucas, a companion, adds no route: the map draws what the date draws with nothing selected, and his journeys
+  // stay off the map. It highlights only the stops of his range.
+  for (const t of [30.5, 47.5]) {
+    const nada = await drawnAt(page, t, null);
+    const lucas = await drawnAt(page, t, { tipo: 'persona', id: 'lucas' });
+    assert.deepEqual(lucas.todos, nada.todos, `${t}: selecting Lucas changed the routes: ${lucas.todos} with Lucas, ${nada.todos} with nothing`);
+    assert.ok(!lucas.todos.includes('segundo-viaje') && !lucas.todos.includes('tercer-viaje'), `${t}: Lucas's journeys drawn: ${lucas.todos}`);
+  }
   await drawnAt(page, 30.5, { tipo: 'persona', id: 'lucas' });
   const imp = await page.evaluate(() => { const r = window.__be.BE.implicados({ tipo: 'persona', id: 'lucas' }); return { claves: [...r.claves], lugares: [...r.lugares] }; });
   assert.ok(imp.claves.includes('parada:segundo-viaje/7') && imp.claves.includes('parada:tercer-viaje/8'), 'his stops are highlighted');
