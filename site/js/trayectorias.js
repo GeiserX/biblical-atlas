@@ -146,36 +146,9 @@ function momentos(f) {
   else if (hits.length === 1 && hits[0] === ESTACIONES.invierno) fin = h + 0.15;
   return [ini, Math.max(ini, fin)];
 }
-// Un viaje sin `persona` es de Pablo y una carta sin `escritor` es suya: así lo dice el esquema de los datos. Un viaje
-// de grupo (`persona: null` y `grupo`, como el Arca por Filistea) es su propio dueño, `grupo:<id del viaje>`: sus
-// paradas se calculan como las de una persona, pero no tiene ficha, marcador ni carril.
-const duenoViaje = (v) => v.persona || (v.grupo ? `grupo:${v.id}` : 'pablo');
-const esGrupo = (dueno) => String(dueno).startsWith('grupo:');
-/** Nombre de quien hace el viaje: la persona, el texto del grupo («el Arca del pacto») o Pablo. Con `mayuscula`, el
-    del grupo empieza en mayúscula, para un rótulo. */
-function nombreDueno(v, mayuscula = false) {
-  if (v.persona) return BE.PERS[v.persona]?.nombre || v.persona;
-  if (v.grupo) return mayuscula ? v.grupo[0].toUpperCase() + v.grupo.slice(1) : v.grupo;
-  return 'Pablo';
-}
-/** Nombre de un dueño de viajes (una persona o `grupo:<id>`), para la leyenda del mapa. */
-function nombreDeDueno(dueno) {
-  if (!esGrupo(dueno)) return BE.PERS[dueno]?.nombre || dueno;
-  const v = (BE.D.viajes || []).find((x) => x.id === dueno.slice(6));
-  return v ? nombreDueno(v, true) : dueno;
-}
-/** Acompañantes de un viaje: un id va en todo el viaje; { persona, desde, hasta }, de la parada desde a la parada
-    hasta. Con `orden`, solo los que van en esa parada. Ids sin repetir, en el orden de los datos. */
-function acompanantes(v, orden = null) {
-  const out = [];
-  for (const c of v?.companeros || []) {
-    const id = typeof c === 'string' ? c : c?.persona;
-    if (!id || out.includes(id)) continue;
-    if (orden != null && typeof c === 'object' && !(c.desde <= orden && orden <= c.hasta)) continue;
-    out.push(id);
-  }
-  return out;
-}
+// Un viaje sin `persona` es de Pablo y una carta sin `escritor` es suya: así lo dice el esquema de los datos. Quién hace
+// cada viaje (una persona, un grupo o Pablo) lo dicen BE.duenoViaje y sus vecinas, en base.js.
+const { duenoViaje, esGrupo } = BE;
 const escritorDe = (c) => c.escritor || 'pablo';
 const esDe = (v, persona) => duenoViaje(v) === persona;
 /** Quién lleva sus sucesos y cartas en sus paradas: Pablo, cuyas paradas se fecharon una a una con Hechos (el modelo de
@@ -866,7 +839,7 @@ function inicioPeriodo(p) {
 }
 
 Object.assign(BE, {
-  prepararParadas: () => itinerario('pablo').P, duenoViaje, esGrupo, nombreDueno, nombreDeDueno, acompanantes, dondeEsta, viajeActual, ventanaPablo, ventanaCarta, ventanaEvento, momentoCarta, momentoEvento,
+  prepararParadas: () => itinerario('pablo').P, dondeEsta, viajeActual, ventanaPablo, ventanaCarta, ventanaEvento, momentoCarta, momentoEvento,
   donde, sucesoEn, ventana, estancias, presentes, personasConEstancias, edad, tramoPotencia, tramoPeriodo, inicioPeriodo, ventanaFecha, inicioMes, diaHebreo, anioHebreo, nombreMes, eventoEstimado, calendario, DIA, MES_LUNAR,
 });
 })();

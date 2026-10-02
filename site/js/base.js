@@ -654,10 +654,45 @@ async function iniciar() {
   };
 }
 
+// ---------------------------------------------------------------------------
+// Viajes: quién los hace y quién acompaña
+// ---------------------------------------------------------------------------
+// Quién hace cada viaje. Un viaje sin `persona` es de Pablo, como dice el esquema de los datos. Un viaje
+// de grupo (`persona: null` y `grupo`, como el Arca por Filistea) es su propio dueño, `grupo:<id del viaje>`: sus
+// paradas se calculan como las de una persona, pero no tiene ficha, marcador ni carril. Viven aquí, y no en
+// trayectorias.js, porque el mapa y las fichas las usan y base.js se carga antes que todos.
+const duenoViaje = (v) => v.persona || (v.grupo ? `grupo:${v.id}` : 'pablo');
+const esGrupo = (dueno) => String(dueno).startsWith('grupo:');
+/** Nombre de quien hace el viaje: la persona, el texto del grupo («el Arca del pacto») o Pablo. Con `mayuscula`, el
+    del grupo empieza en mayúscula, para un rótulo. */
+function nombreDueno(v, mayuscula = false) {
+  if (v.persona) return BE.PERS[v.persona]?.nombre || v.persona;
+  if (v.grupo) return mayuscula ? v.grupo[0].toUpperCase() + v.grupo.slice(1) : v.grupo;
+  return 'Pablo';
+}
+/** Nombre de un dueño de viajes (una persona o `grupo:<id>`), para la leyenda del mapa. */
+function nombreDeDueno(dueno) {
+  if (!esGrupo(dueno)) return BE.PERS[dueno]?.nombre || dueno;
+  const v = (BE.D.viajes || []).find((x) => x.id === dueno.slice(6));
+  return v ? nombreDueno(v, true) : dueno;
+}
+/** Acompañantes de un viaje: un id va en todo el viaje; { persona, desde, hasta }, de la parada desde a la parada
+    hasta. Con `orden`, solo los que van en esa parada. Ids sin repetir, en el orden de los datos. */
+function acompanantes(v, orden = null) {
+  const out = [];
+  for (const c of v?.companeros || []) {
+    const id = typeof c === 'string' ? c : c?.persona;
+    if (!id || out.includes(id)) continue;
+    if (orden != null && typeof c === 'object' && !(c.desde <= orden && orden <= c.hasta)) continue;
+    out.push(id);
+  }
+  return out;
+}
+
 Object.assign(BE, {
   // utilidades
   MESES, ES_FILE, T_INICIAL, VISTA_INICIAL, EXTERNO, ponerLibros, norm, esc, $, clamp, fmtAnio, fmtCursor, fmtDia, tramo, fechaCorta,
-  libro, citas, mercY, latDeY, interpolar,
+  libro, citas, mercY, latDeY, interpolar, duenoViaje, esGrupo, nombreDueno, nombreDeDueno, acompanantes,
   // estado, registro y selección
   E, tipo, tipos: TIPOS, existe, parseSel, selTexto, implicados, momentoDe, nombreSel, seleccionar, limpiarSeleccion,
   // cursor, reproducción, dirección y pintado
