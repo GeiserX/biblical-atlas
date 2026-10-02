@@ -163,9 +163,12 @@ test('the map draws each exile as a fan from its departure, with no line between
     assert.match(r.leyenda, /En abanico: destinos a los que el grupo llega a la vez, sin orden entre ellos/, `${id}: «${r.leyenda}»`);
     assert.deepEqual(r.viajeros.filter((s) => /grupo|destierro/.test(s)), [], `${id}: a group has no traveller marker`);
   }
-  // Media has a point of its own (a region's centre), the other two only candidates: all three segments are dashed.
+  // A branch is dashed exactly when its destination is drawn on a candidate or a region's centre. Counted from the
+  // vertices, not fixed: a place that loses its candidate loses its branch, and the count follows the data.
   const r = await lee(p, ISRAEL);
-  assert.equal(r.trazos.filter((x) => x.rama != null && x.incierto).length, 3);
+  const conPunto = r.paradas.filter((s) => s.desde === 1).map((s) => s.orden).filter((o) => r.vertices[o]);
+  assert.ok(conPunto.some((o) => r.vertices[o].incierto), `some destination of ${ISRAEL} has no point of its own`);
+  assert.equal(r.trazos.filter((x) => x.rama != null && x.incierto).length, conPunto.filter((o) => r.vertices[o].incierto).length);
   assert.deepEqual(p.errors, []);
   await p.context().close();
 });
