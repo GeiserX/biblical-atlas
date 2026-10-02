@@ -159,5 +159,86 @@ class Formas(unittest.TestCase):
         self.assertEqual(poligono["bbox"], [[33.9, 30.9], [34.2, 31.1]])
 
 
+    def test_el_rumbo_gira_la_elipse(self):
+        # Rumbo 90: el eje largo va de oeste a este, así que la caja es más ancha que alta (en km).
+        elipse = {"type": "ellipse", "radii_km": [40, 10], "bearing": 90}
+        build.compile_shapes([{"id": "a", "lat": 32.0, "lon": 35.0, "shape": elipse}], {"places": []})
+        (o, s_), (e, n) = elipse["bbox"]
+        self.assertAlmostEqual((e - o) * 111.2 * 0.848, 80, delta=1)
+        self.assertAlmostEqual((n - s_) * 111.2, 20, delta=1)
+
+    def test_contorno_de_una_caja(self):
+        caja = {"type": "box", "bounds": {"south": 31.9, "west": 34.9, "north": 32.1, "east": 35.2}}
+        build.compile_shapes([{"id": "a", "lat": 32.0, "lon": 35.0, "shape": caja}], {"places": []})
+        self.assertEqual(caja["ring"], [[34.9, 31.9], [35.2, 31.9], [35.2, 32.1], [34.9, 32.1], [34.9, 31.9]])
+        self.assertEqual(caja["bbox"], [[34.9, 31.9], [35.2, 32.1]])
+
+
+LLANO = """id: llano
+name: Llano
+names:
+- name: Llano
+type: plain
+lat: 32.0
+lon: 35.0
+precision: zone
+coord_source: openbible:a1
+coord_url: https://www.openbible.info/geo/ancient/a1/x
+shape:
+  type: box
+  bounds: {south: 31.9, west: 34.9, north: 32.1, east: 35.2}
+  note: Caja de prueba.
+  sources: [it-prueba]
+  reason: Prueba.
+  checked_on: '2026-10-02'
+  status: verified
+summary: Prueba.
+reason: Prueba.
+sources: [it-prueba]
+links: []
+checked_on: '2026-10-02'
+status: pending
+"""
+
+
+class FormasEnLaSalida(unittest.TestCase):
+    """La forma llega a la base SQLite (columna forma) y al registro (sección «Formas de las zonas»)."""
+
+    def setUp(self):
+        self.tmp = tempfile.TemporaryDirectory()
+        self.dir = Path(self.tmp.name)
+        d = self.dir / "data"
+        (d / "places").mkdir(parents=True)
+        (d / "sources").mkdir()
+        (d / "books.yaml").write_text(BOOKS, encoding="utf-8")
+        (d / "sources" / "prueba.yaml").write_text(SOURCES, encoding="utf-8")
+        shutil.copy(HERE.parent / "data" / "vocabulary.yaml", d / "vocabulary.yaml")
+        (d / "places" / "llano.yaml").write_text(LLANO, encoding="utf-8")
+        self.datos, _ = build.cargar(d)
+        self.salida, self.legado, errores = build.componer(self.datos, "2026-10-02")
+        self.assertEqual(errores, [])
+
+    def tearDown(self):
+        self.tmp.cleanup()
+
+    def test_columna_forma_en_sqlite(self):
+        import json
+        import sqlite3
+        ruta = self.dir / "x.sqlite"
+        build.escribir_sqlite(self.salida, ruta)
+        con = sqlite3.connect(ruta)
+        try:
+            (forma,), = con.execute("SELECT forma FROM lugares WHERE id = 'llano'").fetchall()
+        finally:
+            con.close()
+        self.assertEqual(json.loads(forma)["bbox"], [[34.9, 31.9], [35.2, 32.1]])
+
+    def test_seccion_del_registro(self):
+        build.escribir_registro(self.salida, self.legado, self.datos, self.dir / "registro")
+        texto = (self.dir / "registro" / "lugares.md").read_text(encoding="utf-8")
+        self.assertIn("Formas de las zonas", texto)
+        self.assertIn("**Llano**: caja. Caja de prueba.", texto)
+
+
 if __name__ == "__main__":
     unittest.main(verbosity=1)

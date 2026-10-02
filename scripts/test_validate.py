@@ -169,6 +169,29 @@ class Formas(unittest.TestCase):
                 e = errores_forma({**forma, **HECHO})   # sin excepción: un error que se lee
                 self.assertTrue(any(texto in x for x in e), e)
 
+    def test_cada_parametro_mal_escrito_es_error(self):
+        casos = [({"type": "box", "bounds": {"south": 31.8, "west": 34.8, "north": 32.2, "east": 35.3},
+                   "center": {"lat": 32.0, "lon": 35.0}}, "center solo va en circle o ellipse"),
+                 ({"type": "circle", "radius_km": 0}, "un circle necesita radius_km"),
+                 ({"type": "box", "bounds": {"south": 32.2, "west": 34.8, "north": 31.8, "east": 35.3}}, "south < north"),
+                 ({"type": "box", "bounds": {"south": 31.8, "west": 35.3, "north": 32.2, "east": 34.8}}, "west < east"),
+                 ({"type": "polygon", "vertices": [[31.9, 34.9], [32.1, 34.9], [32.0, 35.2], [31.9, 34.9]]},
+                  "dos vértices caen en el mismo punto")]
+        for forma, texto in casos:
+            with self.subTest(forma=forma):
+                e = errores_forma({**forma, **HECHO})
+                self.assertTrue(any(texto in x for x in e), e)
+
+    def test_un_candidato_de_punto_no_lleva_forma(self):
+        lugar = {"type": "region", "precision": "zone", "lat": None, "lon": None, "links": [], "status": "pending",
+                 "candidates": [{"name": "Punto", "geometry": {"type": "point", "lat": 32.0, "lon": 35.0},
+                                 "coord_source": "calculation", "note": "Punto de prueba.", "sources": ["it-x"],
+                                 "reason": "Razón de prueba.", "checked_on": "2026-10-02", "status": "favored_level_1",
+                                 "shape": self.ELIPSE}]}
+        out = []
+        validate.validar_lugar(lugar, "data/places/x.yaml", out.append, {}, {})
+        self.assertTrue(any("shape solo va en un candidato de geometry.type zone" in x for x in out), out)
+
     def test_un_vertice_que_no_es_un_lugar_con_punto_es_error(self):
         e = errores_forma({"type": "polygon", "vertices": [[31.9, 34.9], [32.1, 34.9], "sodoma"], **HECHO})
         self.assertTrue(any("'sodoma' no es un lugar con punto exacto" in x for x in e), e)
