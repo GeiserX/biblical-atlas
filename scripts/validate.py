@@ -73,7 +73,7 @@ REQUERIDOS = {
 REQ_PARADA = ["order", "place", "reference", "date", "note", "reason", "sources", "checked_on", "status"]
 # Claves opcionales de una parada. Una que no esté aquí ni en REQ_PARADA es una errata: `branches_form` dejaría en
 # silencio un destino en paralelo como una etapa más de la línea.
-OPCIONALES_PARADA = {"branches_from"}
+OPCIONALES_PARADA = {"branches_from", "unknown_area"}
 # Valores cerrados de `repeats` en un viaje: el texto dice que el viaje se hacía cada año (1Sa 1:3, Lu 2:41).
 REPITE = {"yearly"}
 REQ_PARADA_RECORRIDO = ["sel", "t", "text", "passages"]
