@@ -77,7 +77,8 @@ async function open(prefix = '', hash = 't=50.5') {
   // Tiles from other hosts are aborted on purpose (below): their «Failed to load resource» is ours, not the site's.
   p.on('console', (m) => { if (m.type() === 'error' && !/^Failed to load resource: net::ERR_FAILED/.test(m.text())) p.errors.push(`console: ${m.text()}`); });
   await p.route((url) => !url.href.startsWith(origin) && !url.hostname.endsWith('unpkg.com'), (route) => route.abort());
-  await p.goto(`${origin}${prefix}/index.html#${hash}`);
+  // A loaded machine takes more than the 8 s default to serve the first page: the same 30 s as the map below.
+  await p.goto(`${origin}${prefix}/index.html#${hash}`, { timeout: 30000 });
   await p.waitForFunction(() => window.__be?.map?.loaded?.() && window.__be.map.getSource('be-rastro'), null, { timeout: 30000 });
   return p;
 }
