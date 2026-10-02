@@ -2,6 +2,7 @@
 """Pruebas de lo que scripts/build.py compila de un par escrito en las dos fichas. Uso: python3 scripts/test_build.py
 
 Trabajan sobre un data/ pequeño en una carpeta temporal, con el vocabulario de verdad (data/vocabulary.yaml)."""
+import json
 import shutil
 import sqlite3
 import sys
@@ -119,6 +120,38 @@ class SqliteRepite(unittest.TestCase):
             con.close()
         self.assertEqual(filas, [("elcana-sube-a-silo", "yearly"), ("pascua-de-jesus-a-los-12", "yearly"),
                                  ("recorrido-de-samuel", "yearly")])
+
+
+class SqliteAreaDesconocida(unittest.TestCase):
+    def test_la_tabla_paradas_guarda_el_area_desconocida(self):
+        # Con los datos de verdad: una parada que la fuente no sitúa va sin lugar y con sus palabras; las demás, sin área.
+        datos, _ = build.cargar(HERE.parent / "data")
+        salida, _, errores = build.componer(datos, "2026-10-02")
+        self.assertEqual(errores, [])
+        with tempfile.TemporaryDirectory() as tmp:
+            ruta = Path(tmp) / "a.sqlite"
+            build.escribir_sqlite(salida, ruta)
+            con = sqlite3.connect(ruta)
+            filas = con.execute("select viaje_id, orden, lugar_id, unknown_area from paradas where unknown_area is not null"
+                                " order by viaje_id, orden").fetchall()
+            sin_lugar = con.execute("select count(*) from paradas where lugar_id is null and unknown_area is null").fetchone()[0]
+            con.close()
+        areas = {(v, o): json.loads(a) for v, o, _, a in filas}
+        self.assertEqual([x[2] for x in filas if x[0] == "los-astrologos-de-oriente"], [None, None])
+        self.assertEqual(areas[("los-astrologos-de-oriente", 0)]["words"], "Oriente")
+        self.assertEqual(areas[("los-astrologos-de-oriente", 3)]["words"], "su país")
+        self.assertEqual(sin_lugar, 0)
+
+    def test_data_json_lleva_el_area_en_la_parada(self):
+        datos, _ = build.cargar(HERE.parent / "data")
+        salida, _, _ = build.componer(datos, "2026-10-02")
+        v = next(x for x in salida["viajes"] if x["id"] == "los-astrologos-de-oriente")
+        self.assertEqual([(p["orden"], p["lugar"], (p.get("unknown_area") or {}).get("words")) for p in v["paradas"]],
+                         [(0, None, "Oriente"), (1, "jerusalen", None), (2, "belen", None), (3, None, "su país")])
+        # Cada zona conjeturada sale con su contorno y su caja, como la forma de una zona, y su estado de conjetura.
+        z = v["paradas"][0]["unknown_area"]["guesses"][0]
+        self.assertEqual((z["name"], z["status"], len(z["ring"]), z["ring"][0] == z["ring"][-1]), ("región de Babilonia", "conjecture", 73, True))
+        self.assertEqual(len(z["bbox"]), 2)
 
 
 class ChapterUrls(unittest.TestCase):

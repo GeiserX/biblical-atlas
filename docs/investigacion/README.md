@@ -103,7 +103,7 @@ Una forma es un hecho como los demás: `sources`, `reason`, `checked_on`, `statu
 
 **Personas.** `perspicacia` (la clave de identidad: el documento de su artículo de Perspicacia y, si el artículo trata de varias personas, `#` y el número de la entrada, como `'1200003629#1'`; `null` si no tiene artículo; única entre las personas y obligatoria para las que salen en `entities` de la cobertura), `date` (actividad conocida, con fuente), `disambiguation` (qué la distingue de sus homónimos), `distinct_from` (ids de los homónimos; va en las dos fichas y pide `disambiguation`), `not_claimed` (frases con lo que no decimos, como «Pedro murió en Roma») y `relations`, que tienen su sección más abajo.
 
-**Viajes.** `person`, `reference`, `date`, `companions` y `stops`. Cada parada lleva `order`, `place`, `reference` y `date`, y es un hecho anidado con sus `sources`, `reason`, `checked_on` y `status`.
+**Viajes.** `person`, `reference`, `date`, `companions` y `stops`. Cada parada lleva `order`, `place` (o `place: null` y `unknown_area`, abajo), `reference` y `date`, y es un hecho anidado con sus `sources`, `reason`, `checked_on` y `status`.
 
 Quien viaja es una persona con ficha (`person`) o un grupo sin ficha: `person: null` y `group`, un texto de 40 palabras como mucho («el Arca del pacto», «los 600 benjaminitas»). Uno de los dos, nunca los dos. Un grupo no lleva marcador de viajero ni carril; la leyenda y la ficha dicen su `group`.
 
@@ -116,7 +116,7 @@ companions:
   - {person: silas, from: 16, to: 16}      # Hch 18:5
 ```
 
-`branches_from` es opcional en una parada y dice que se llega a ella en paralelo desde una parada anterior del mismo viaje: el grupo se reparte y cada parte va a un destino, sin orden entre ellos (2Re 17:6: Halá, Habor junto al río Gozán y las ciudades de los medos). Su valor es el `order` de esa parada, y `validate.py` rechaza cualquier otra clave que no sea de la parada, para que una errata como `branches_form` no la vuelva en silencio una etapa. Una parada sin la clave sigue, como siempre, a la anterior que no la lleva, así que un viaje sin `branches_from` no cambia. `validate.py` comprueba que la parada nombrada existe y es anterior, que no es a su vez un destino en paralelo (ningún texto pide hoy una cadena), que de ella salen al menos dos caminos y que el viaje es de un grupo: una persona no llega a dos sitios a la vez. Con destinos en paralelo, el tramo `{person, from, to}` de un acompañante es la ruta de `from` a `to`, que sigue una sola rama; si va en dos tramos, los dos van por la misma ruta, nunca uno en cada rama, y nadie va en todo el viaje. El sitio dibuja un trazo de la parada de salida a cada destino, les da un mismo momento (de él salen la ventana en que el mapa dibuja el viaje y la fecha de sus fichas; un grupo no tiene carril, así que la línea de tiempo no los enseña) y lo dice en las fichas ([destinos-paralelos.md](../ideas/destinos-paralelos.md)).
+`branches_from` es opcional en una parada y dice que se llega a ella en paralelo desde una parada anterior del mismo viaje: el grupo se reparte y cada parte va a un destino, sin orden entre ellos (2Re 17:6: Halá, Habor junto al río Gozán y las ciudades de los medos). Su valor es el `order` de esa parada, y `validate.py` rechaza cualquier otra clave que no sea de la parada, para que una errata como `branches_form` no la vuelva en silencio una etapa. Una parada sin la clave sigue, como siempre, a la anterior que no la lleva, así que un viaje sin `branches_from` no cambia. `validate.py` comprueba que la parada nombrada existe y es anterior, que no es a su vez un destino en paralelo (ningún texto pide hoy una cadena), que de ella salen al menos dos caminos, que ni ella ni el destino son un área desconocida (`unknown_area`, sin punto del que salir ni al que llegar) y que el viaje es de un grupo: una persona no llega a dos sitios a la vez. Con destinos en paralelo, el tramo `{person, from, to}` de un acompañante es la ruta de `from` a `to`, que sigue una sola rama; si va en dos tramos, los dos van por la misma ruta, nunca uno en cada rama, y nadie va en todo el viaje. El sitio dibuja un trazo de la parada de salida a cada destino, les da un mismo momento (de él salen la ventana en que el mapa dibuja el viaje y la fecha de sus fichas; un grupo no tiene carril, así que la línea de tiempo no los enseña) y lo dice en las fichas ([destinos-paralelos.md](../ideas/destinos-paralelos.md)).
 
 ```yaml
 - order: 3
@@ -133,6 +133,42 @@ Una parada es un lugar que el texto dice que se alcanzó o se pasó, en el orden
 - la salida o la vuelta que el relato deja ver sin nombrarla: la capital donde reina quien sale (Jerusalén en 2Sa 5:17), la casa adonde vuelve (Saúl a Guibeá en 1Sa 24:22) o el último lugar donde el relato dejó a quien sale (Eliseo en Samaria antes de 2Re 8:7).
 
 Una deducción que el texto contradice no entra: si el relato pone la salida en otro sitio, manda el relato (el resto de Judá sale de Gabaón en Jer 41:12-16, no de Mizpá). Lo que solo se cruza o se anuncia (el Éufrates, Ofir adonde navega una flota) va en la `note` de la parada más cercana. En el mapa, el tramo que llega a una parada pendiente o sale de ella se dibuja de puntos.
+
+**Un área desconocida.** Cuando el texto dice que el viaje viene de un sitio o va a uno que no sitúa, y la fuente tampoco lo sitúa, la primera o la última parada lleva `place: null` y `unknown_area`, con las palabras de la fuente y, si la fuente lo da, el rumbo. No se inventa un lugar ni un punto. Solo entra cuando el texto cuenta esa salida o esa vuelta, y nunca en medio del viaje.
+
+```yaml
+- order: 0              # un área de origen va antes de la parada 1
+  place: null
+  unknown_area:
+    words: Oriente      # las palabras de la fuente, 7 como mucho
+    direction: east     # opcional: north, northeast, east, southeast, south, southwest, west o northwest
+  reference: Mt 2:1, 2
+  # date, note, reason, sources, checked_on y status, como en cualquier parada
+```
+
+Si una publicación deja adivinar dónde estaba el sitio, el área lleva `guesses`: las zonas que conjeturamos, la preferida primero. Cada una es una forma como la de una zona (`circle` o `ellipse` con `center`, porque no hay punto; `box` o `polygon`), con `name`, el nombre corto de la zona; `according_to`, la fuente que propone esa zona, que tiene que estar en sus `sources` y con la que el sitio escribe «según …»; `strength` opcional, `probable` (lo de siempre) o `possible` (lo que la fuente solo recoge o no descarta), y `note`, `sources`, `reason`, `checked_on` y `status: conjecture`, que dice que es una conjetura nuestra y no lo que dice el texto. Una fuente de nivel 2 solo entra junto a una de nivel 1 y sin contradecirla. Sigue sin haber ficha de lugar ni punto: nadie se sitúa en la zona.
+
+```yaml
+  unknown_area:
+    words: Oriente
+    direction: east
+    guesses:
+    - name: región de Babilonia
+      type: ellipse
+      center: {lat: 31.9, lon: 46.0}
+      radii_km: [240, 110]
+      bearing: 135
+      note: Cómo se trazó el contorno.
+      according_to: it-estrella
+      sources: [it-estrella, it-herodes, ia-jose-protegio-a-su-familia, it-este]
+      reason: Qué dice cada fuente que lleva a esta zona.
+      checked_on: '2026-10-02'
+      status: conjecture
+```
+
+Un área de origen lleva `order: 0` y una de destino, el número siguiente a la última parada: así las paradas con lugar conservan su número y un enlace a la parada 1 sigue abriendo la misma.
+
+`validate.py` comprueba que cada parada lleva un lugar o un área, nunca los dos; que el área va primera o última, con `order: 0` si es de origen, y que al menos una parada tiene lugar; que `words` no está vacío ni pasa de 7 palabras, y que `direction`, si está, es uno de los ocho rumbos. De cada zona conjeturada comprueba la forma como la de una zona, su `name` (de 1 a 6 palabras), que `according_to` es una de sus fuentes, `strength`, su razón, su nota y que su estado es `conjecture`. `build.py` le añade su contorno (`ring`) y su caja (`bbox`). En `data.json` la parada sale con `lugar: null` y la clave nueva `unknown_area`, igual que en el YAML. El sitio la dibuja en su zona conjeturada o, si no tiene, como un área que no reclama sitio junto a la parada vecina; lo explica [area-desconocida.md](../ideas/area-desconocida.md).
 
 **Cartas.** `writer` es obligatorio (id de persona; las 14 de Pablo llevan `writer: pablo`). Opcionales: `recipients.people`, `carriers` y `people` (las nombradas en la carta), listas de ids de personas que `build.py` comprueba. La comprobación de que una carta cae en una parada de Pablo solo mira las cartas de Pablo.
 

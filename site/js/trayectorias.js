@@ -218,19 +218,23 @@ function ventanaParada(f) {
     la vez: se coloca el primero y los demás toman su momento, sin ir uno detrás de otro. */
 function prepararParadas(persona = 'pablo') {
   const viajes = BE.D.viajes.filter((v) => esDe(v, persona)).sort((a, b) => (a.fecha?.desde ?? 0) - (b.fecha?.desde ?? 0));
-  const out = [], paralelas = [];
+  const todas = [];
   for (const v of viajes) {
     const ps = [...v.paradas].sort((a, b) => a.orden - b.orden);
     const primera = new Map();          // parada de salida → el primero de sus destinos en paralelo
     ps.forEach((p, i) => {
-      const lugar = BE.L[p.lugar];
+      const lugar = p.unknown_area ? lugarDesconocido(p.unknown_area) : BE.L[p.lugar];
       if (!lugar) return;
-      const s = { key: `${v.id}/${p.orden}`, viaje: v, p, lugar, i, n: ps.length, narrativa: p.fecha?.tipo === 'narrativa' || !momentos(p.fecha || {}) };
-      if (p.branches_from != null && primera.has(p.branches_from)) { s.paralelaDe = primera.get(p.branches_from); paralelas.push(s); return; }
-      if (p.branches_from != null) primera.set(p.branches_from, s);
-      out.push(s);
+      const s = { key: `${v.id}/${p.orden}`, viaje: v, p, lugar, i, n: ps.length, narrativa: !!p.unknown_area || p.fecha?.tipo === 'narrativa' || !momentos(p.fecha || {}) };
+      // El primer destino de una salida entra en el reparto; los demás toman su momento después (paralelaDe).
+      if (p.branches_from != null && primera.has(p.branches_from)) s.paralelaDe = primera.get(p.branches_from);
+      else if (p.branches_from != null) primera.set(p.branches_from, s);
+      todas.push(s);
     });
   }
+  // Las áreas desconocidas no entran en el reparto: van pegadas a su parada vecina con lugar (colocarAreas). Tampoco
+  // los destinos en paralelo que no son el primero de su salida: toman el momento de ese primero.
+  const out = todas.filter((s) => !s.lugar.area && !s.paralelaDe);
   const suceso = SUCESOS_EN_PARADAS.has(persona) ? new Map() : sucesosDeParadas(persona, out);
   const anclas = out.map((s, i) => (s.narrativa && !suceso.has(s) ? -1 : i)).filter((i) => i >= 0);
   // La muerte de la persona (su fecha, sin colocar: colocarla depende de estas paradas) cierra el tiempo de sus paradas.
@@ -291,13 +295,46 @@ function prepararParadas(persona = 'pablo') {
     }
     prev = j;
   }
-  if (paralelas.length) {
-    for (const s of paralelas) { s.a = s.paralelaDe.a; s.b = s.paralelaDe.b; if (s.paralelaDe.banda) s.banda = s.paralelaDe.banda; }
-    const todas = out.flatMap((s) => [s, ...paralelas.filter((x) => x.paralelaDe === s)]);
-    out.splice(0, out.length, ...todas);
+  for (const s of todas) if (s.paralelaDe) { s.a = s.paralelaDe.a; s.b = s.paralelaDe.b; if (s.paralelaDe.banda) s.banda = s.paralelaDe.banda; }
+  // Cada destino en paralelo va justo después del primero de su salida, que es el que tiene su momento.
+  const P = colocarAreas(todas.some((s) => s.paralelaDe) ? todas.flatMap((s) => (s.paralelaDe ? [] : [s, ...todas.filter((x) => x.paralelaDe === s)])) : todas);
+  P.forEach((s, i) => { s.g = i; s.sel = `parada:${s.key}`; s.titulo = s.lugar.nombre; s.referencia = s.p.referencia; });
+  return P;
+}
+/** El «lugar» de una parada que la fuente no sitúa (`unknown_area`): sin id ni punto, con las palabras de la fuente
+    como nombre y su rumbo, si lo da. BE.puntoLugar no le encuentra sitio, así que la persona no se dibuja allí y el
+    mapa dibuja el área (mapa.js, pintarAreas). */
+function lugarDesconocido(area) {
+  return { id: null, nombre: area.words, area: { palabras: area.words, rumbo: area.direction || null, zonas: (area.guesses || []).map(zonaConjeturada) } };
+}
+/** Una zona que conjeturamos para un área desconocida (`guesses`), con su contorno de build.py: la preferida va primera.
+    Es una conjetura con su fuente, no lo que dice el texto: nadie se sitúa en ella (BE.puntoLugar no la mira). */
+function zonaConjeturada(g) {
+  const b = g.bbox, c = g.center ? [g.center.lon, g.center.lat] : [(b[0][0] + b[1][0]) / 2, (b[0][1] + b[1][1]) / 2];
+  return { nombre: g.name, ring: g.ring, bbox: b, centro: c, fuentes: g.sources || [], segun: g.according_to, fuerza: g.strength || 'probable',
+    razon: g.reason, nota: g.note, estado: g.status };
+}
+/** Tiempo de cada área desconocida, ya colocadas las demás paradas: un tramo de camino antes de la primera parada con
+    lugar de su viaje (de allí vienen) o después de la última (allí van), sin salir de la fecha del viaje si cabe. El
+    tramo es el de siempre entre dos paradas, 0.04 años; si la fecha no deja sitio, la mitad de lo que deja. Es una
+    estimación: la parada va como narrativa. Un viaje sin ninguna parada con lugar no la coloca. */
+function colocarAreas(todas) {
+  const TRAMO = 0.04;
+  for (const s of todas) {
+    if (!s.lugar.area) continue;
+    const delViaje = todas.filter((x) => x.viaje === s.viaje && !x.lugar.area && x.a != null);
+    if (!delViaje.length) continue;
+    const f = tramo(s.viaje.fecha);
+    if (s.i < delViaje[0].i) {
+      const k = delViaje[0], hueco = f && k.a - f[0] > DIA ? Math.min(TRAMO, (k.a - f[0]) / 2) : TRAMO;
+      s.b = k.a - hueco; s.a = s.b - hueco;
+    } else {
+      const k = delViaje[delViaje.length - 1], hueco = f && f[1] - k.b > DIA ? Math.min(TRAMO, (f[1] - k.b) / 2) : TRAMO;
+      s.a = k.b + hueco; s.b = s.a + hueco;
+    }
+    s.vecina = s.i < delViaje[0].i ? delViaje[0] : delViaje[delViaje.length - 1];
   }
-  out.forEach((s, i) => { s.g = i; s.sel = `parada:${s.key}`; s.titulo = s.lugar.nombre; s.referencia = s.p.referencia; });
-  return out;
+  return todas.filter((s) => s.a != null);
 }
 
 // ---------------------------------------------------------------------------
@@ -887,7 +924,8 @@ function presentes(t) {
   const out = [];
   for (const id of personasConEstancias()) {
     const w = donde(id, t);
-    if (w && w.parada) out.push({ persona: id, w });
+    // En un área desconocida la persona está de viaje, pero en ningún lugar que se pueda nombrar.
+    if (w && w.parada && w.en.lugar.id) out.push({ persona: id, w });
   }
   return out;
 }

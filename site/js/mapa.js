@@ -199,7 +199,7 @@ function crearMapa() {
     const c = map.getCenter();
     BE.historia?.encuadre({ lon: c.lng, lat: c.lat, zoom: map.getZoom() });
   });
-  map.on('move', () => { if (imgsDom.length) colocarImgsDom(); if (E.mapa === 'cortina') pintarCortina(); pintarSituacion(); });
+  map.on('move', () => { if (imgsDom.length) colocarImgsDom(); if (E.mapa === 'cortina') pintarCortina(); pintarSituacion(); if (zonasArea.size) pintarChipsZona(); });
   map.on('resize', () => { if (imgsDom.length) colocarImgsDom(); });
   // Un clic en una marca HTML también llega a MapLibre: esa marca ya lo gestiona su propio manejador.
   const enMarca = (e) => !!e.originalEvent?.target?.closest?.('.maplibregl-marker');
@@ -218,6 +218,14 @@ function crearMapa() {
     if (p?.lugar) elegirCandidato(p.lugar, p.i);
   });
   puntero('be-zonas-relleno');
+  // La zona conjeturada de un área desconocida abre la ficha de su parada, nunca la de un lugar.
+  map.on('click', 'be-areas-relleno', (e) => {
+    if (enMarca(e) || e.defaultPrevented) return;
+    e.preventDefault();
+    const sel = e.features?.[0]?.properties?.sel;
+    if (sel) alternar(BE.parseSel(sel));
+  });
+  puntero('be-areas-relleno');
 }
 /** Selecciona, o deselecciona si ya estaba seleccionado. */
 function alternar(sel, opciones = {}) {
@@ -259,7 +267,7 @@ function montarCapas() {
     colocarImgsDom();
   }
   const vacio = { type: 'FeatureCollection', features: [] };
-  for (const id of ['be-rastro', 'be-hecho', 'be-falta', 'be-cartas', 'be-cartas-o', 'be-halo', 'be-zonas', 'be-cand-lineas', 'be-zonas-carta', 'be-formas']) map.addSource(id, { type: 'geojson', data: vacio });
+  for (const id of ['be-rastro', 'be-hecho', 'be-falta', 'be-cartas', 'be-cartas-o', 'be-halo', 'be-zonas', 'be-cand-lineas', 'be-zonas-carta', 'be-formas', 'be-areas']) map.addSource(id, { type: 'geojson', data: vacio });
   const lineas = { 'line-cap': 'round', 'line-join': 'round' };
   for (const v of BE.D.viajes) map.addImage(`be-flecha-${v.id}`, imagenFlecha(colorViaje(v.id)));
   for (const [k, s] of Object.entries(CAND)) map.addImage(`be-rayado-${k}`, imagenRayado(s.color, k));
@@ -282,6 +290,13 @@ function montarCapas() {
   map.addLayer({ id: 'be-cand-franja', type: 'line', source: 'be-cand-lineas', filter: ['==', ['get', 'clase'], 'franja'], layout: lineas, paint: { 'line-color': color, 'line-width': 5, 'line-opacity': ['*', 0.85, ['get', 'opacidad']] } });
   map.addLayer({ id: 'be-zonas-carta', type: 'fill', source: 'be-zonas-carta', paint: { 'fill-pattern': 'be-rayado-carta', 'fill-opacity': 0.8 } });
   map.addLayer({ id: 'be-zonas-carta-borde', type: 'line', source: 'be-zonas-carta', paint: { 'line-color': color, 'line-width': 1.4, 'line-dasharray': [3, 3], 'line-opacity': 0.8 } });
+  // Zonas que conjeturamos para un área desconocida (pintarAreas): el aspecto de lo incierto, en el color del viaje, y un
+  // hilo de trazos hasta la parada vecina. Se encogen hasta ella al llegar y se abren desde ella al salir.
+  const opArea = ['get', 'opacidad'];
+  map.addLayer({ id: 'be-areas-relleno', type: 'fill', source: 'be-areas', filter: ['==', ['geometry-type'], 'Polygon'], paint: { 'fill-color': color, 'fill-opacity': ['*', 0.13, opArea] } });
+  map.addLayer({ id: 'be-areas-halo', type: 'line', source: 'be-areas', filter: ['==', ['geometry-type'], 'Polygon'], paint: { 'line-color': color, 'line-width': 10, 'line-blur': 8, 'line-opacity': ['*', 0.3, opArea] } });
+  map.addLayer({ id: 'be-areas-borde', type: 'line', source: 'be-areas', filter: ['==', ['geometry-type'], 'Polygon'], paint: { 'line-color': color, 'line-width': 2, 'line-dasharray': [3, 2], 'line-opacity': opArea } });
+  map.addLayer({ id: 'be-areas-hilo', type: 'line', source: 'be-areas', filter: ['==', ['geometry-type'], 'LineString'], layout: lineas, paint: { 'line-color': color, 'line-width': 2, 'line-dasharray': [1, 2], 'line-opacity': ['*', 0.8, opArea] } });
   // Viajes
   const pinturaRastro = { 'line-color': color, 'line-width': ['case', ['==', ['get', 'estado'], 'actual'], 3, 2.2], 'line-opacity': ['match', ['get', 'estado'], 'actual', 0.9, 0.6] };
   const sinDeducir = ['!=', ['get', 'deducido'], true], deducidos = ['==', ['get', 'deducido'], true];
@@ -511,14 +526,17 @@ function imagenRayado(color, estado) {
     Con la fecha entera, los dieciséis viajes de 2 Samuel 10 en adelante, que comparten de 1070 a c. 1040, se dibujaban
     a la vez durante treinta años. La ventana nunca sale de la fecha del viaje: la línea alarga la última parada hasta
     la siguiente estancia de la persona (Moisés sigue en Madián cuarenta años), y eso no es el viaje. Un viaje sin
-    paradas en la línea, o cuyas paradas caen fuera de su fecha, usa su fecha. */
+    paradas en la línea, o cuyas paradas caen fuera de su fecha, usa su fecha. Las áreas desconocidas sí la alargan. */
 let ventanasViaje = null;
 function ventanaViaje(v) {
   if (!ventanasViaje || ventanasViaje.D !== BE.D) ventanasViaje = { D: BE.D, m: new Map() };
   if (!ventanasViaje.m.has(v)) {
-    const ps = BE.paradasDe?.(v) || [], f = tramo(v.fecha);
+    const todas = BE.paradasDe?.(v) || [], f = tramo(v.fecha), ps = todas.filter((s) => !s.lugar.area);
     let w = ps.length ? [Math.min(...ps.map((s) => s.a)), Math.max(...ps.map((s) => s.b))] : f;
     if (ps.length && f) { const a = Math.max(w[0], f[0]), b = Math.min(w[1], f[1]); w = b > a ? [a, b] : f; }
+    // Un área desconocida va pegada a su vecina aunque quede fuera de la fecha (los astrólogos ya están en Jerusalén al
+    // empezar la suya): sin ella, el área de origen nunca se vería abierta.
+    for (const s of todas) if (s.lugar.area && w) w = [Math.min(w[0], s.a), Math.max(w[1], s.b)];
     ventanasViaje.m.set(v, w);
   }
   return ventanasViaje.m.get(v);
@@ -636,6 +654,272 @@ function pintarRepite(g) {
     m.setLngLat([(a[0] + b[0]) / 2, (a[1] + b[1]) / 2]);
     m.getElement().style.setProperty('--viajero', f.properties.color);
   }
+}
+
+// ---------------------------------------------------------------------------
+// Áreas desconocidas: de dónde viene o adónde va un viaje cuando la fuente no lo sitúa
+// ---------------------------------------------------------------------------
+/** Una parada en un extremo del viaje que no tiene dónde dibujarse: un área que la fuente no sitúa (`unknown_area`:
+    Oriente, «su país») o un lugar sin punto ni candidato. Se dibuja como un área que no reclama sitio: un contorno de
+    trazos en el color del viaje, como la posición estimada, junto a la parada vecina con lugar y en píxeles de la
+    pantalla, así que no cambia con el zoom, no dice una distancia y el encuadre no la cuenta. Va hacia el rumbo que da la
+    fuente; sin rumbo, es un anillo alrededor de la parada vecina, que no señala ningún sitio. Pulsarla abre la ficha de
+    su parada, no la de un lugar.
+    Cuando el cursor pasa por la llegada a la parada vecina, el área se encoge y entra en ella (el viaje viene de allí);
+    al salir de la última parada, el área se abre desde ella y se queda suave (el viaje va allí). La transición dura
+    0,45 s de reloj, sea cual sea la velocidad, y depende solo de la fecha: arrastrar el cursor la hace igual, hacia
+    delante y hacia atrás. Con movimiento reducido no hay transición: solo los dos estados. */
+const marcasArea = new Map();         // clave de la parada → { marker, el, estado }
+const RUMBO_GRADOS = { north: 0, northeast: 45, east: 90, southeast: 135, south: 180, southwest: 225, west: 270, northwest: 315 };
+const AREA = { lejos: 124, lejosMovil: 104, rx: 68, ry: 30 };
+let areasCache = null;
+/** Viajes con alguna parada en un extremo sin dónde dibujarse, una vez por carga de datos y filtro de nivel. */
+function viajesConArea() {
+  const k = `${F.nivel1}`;
+  if (areasCache && areasCache.D === BE.D && areasCache.k === k) return areasCache.vs;
+  const vs = BE.D.viajes.filter((v) => (v.paradas || []).some((p) => p.unknown_area || !verticeRuta(BE.L[p.lugar])));
+  areasCache = { D: BE.D, k, vs };
+  return vs;
+}
+/** Las áreas de un viaje: { s, k, llega }, con s la parada sin sitio, k su vecina con sitio y llega si el viaje viene
+    del área (está antes de la primera parada con sitio). Una parada sin sitio en medio del viaje no se dibuja: no tiene
+    un solo vecino del que salir o al que llegar. */
+function areasDe(v) {
+  const ps = BE.paradasDe(v), conSitio = ps.filter((s) => verticeRuta(s.lugar));
+  if (!conSitio.length) return [];
+  const primera = conSitio[0], ultima = conSitio[conSitio.length - 1];
+  return ps.filter((s) => !verticeRuta(s.lugar) && (s.i < primera.i || s.i > ultima.i))
+    .map((s) => ({ s, k: s.i < primera.i ? primera : ultima, llega: s.i < primera.i }));
+}
+/** Abierta: el área se ve. La de origen se ve hasta que el viaje llega a su vecina, en ese momento aún abierta. La de
+    destino, desde que sale de su vecina (una parada de un solo momento, como Peor, aún no la ha dejado en ese momento)
+    hasta que acaba su propia estancia, salvo con el viaje elegido: así se cierra con el viaje y no se queda el año en
+    gris. */
+const areaAbierta = (x, t, elegido) => (x.llega ? t <= x.k.a : t > x.k.b && (elegido || t <= x.s.b));
+const movimientoReducido = () => matchMedia('(prefers-reduced-motion: reduce)').matches;
+/** ¿Está elegido el viaje, o la parada de una de sus áreas? Entonces se ve entero, como el viaje elegido. */
+const viajeElegido = (v) => (E.sel?.tipo === 'viaje' && E.sel.id === v.id) || (E.sel?.tipo === 'parada' && E.sel.id.startsWith(`${v.id}/`));
+function pintarAreas(soloViaje, verViajes, V) {
+  const vivas = new Set();
+  for (const v of viajesConArea()) {
+    const quien = BE.duenoViaje(v), elegido = viajeElegido(v);
+    const ver = soloViaje ? v.id === soloViaje : verViajes && (quien === 'pablo' ? v === V : elegido || viajeEnEpoca(v, E.t));
+    if (!ver) continue;
+    const pasado = !elegido && quien !== 'pablo' && E.t >= ventanaViaje(v)[1];
+    const color = pasado ? apagar(colorViaje(v.id), 0.45) : colorViaje(v.id);
+    for (const x of areasDe(v)) {
+      const ancla = verticeRuta(x.k.lugar);
+      if (!ancla) continue;
+      vivas.add(x.s.key);
+      const estado = areaAbierta(x, E.t, elegido) ? 'abierta' : 'cerrada';
+      if (x.s.lugar.area?.zonas?.length) zonaArea(x, ancla.c, color, estado);
+      else marcaArea(x, ancla.c, color, estado);
+    }
+  }
+  for (const [k, m] of marcasArea) if (!vivas.has(k)) { m.marker.remove(); marcasArea.delete(k); }
+  for (const [k, z] of zonasArea) if (!vivas.has(k)) { z.etiquetas.forEach((m) => m.marker.remove()); z.chip?.remove(); zonasArea.delete(k); componerZonas.sucio = true; }
+  if (componerZonas.sucio) componerZonas();
+}
+
+// Zonas conjeturadas: cuando la fuente no sitúa el área pero una publicación deja adivinar dónde estaba (Perspicacia
+// «Estrella» pone a los astrólogos en la vecindad de Babilonia), el área se dibuja en esa zona, con el aspecto de lo
+// incierto y un hilo hasta la parada vecina. Es una conjetura: la ficha y la leyenda dicen «zona probable» o «zona
+// posible» y según quién (`according_to`, nunca el orden de las fuentes), y nadie se sitúa en ella. Al cruzar la
+// llegada, cada vértice de la zona va hacia la parada vecina mientras se apaga, así que el contorno se cierra a la vez
+// que entra en ella; al salir de la última parada, lo mismo al revés. 0,45 s de reloj, con requestAnimationFrame y la
+// fuente de datos del mapa, que solo se escribe cuando algo cambia; con movimiento reducido o en el modo reunión, solo
+// los dos estados. Si la zona queda fuera del mapa, una ficha pequeña en el borde, del lado de la zona, dice sus
+// palabras y su conjetura, y la animación entra desde ese borde o sale hacia él.
+const zonasArea = new Map();          // clave de la parada → { x, ancla, color, estado, p, anim, etiquetas, chip }
+const DURACION_AREA = 450;
+const sinMovimiento = () => movimientoReducido() || document.documentElement.classList.contains('be-reunion');
+/** Cómo nombra el sitio la fuente de una conjetura: «Perspicacia «Estrella»», un capítulo («Jueces 21») o la obra. */
+const fuenteCorta = (id) => {
+  const f = BE.D.fuentes?.[id];
+  if (!f) return '';
+  if (/^Perspicacia/.test(f.obra || '')) return `Perspicacia «${f.titulo}»`;
+  if (/Traducción del Nuevo Mundo/.test(f.obra || '')) return f.titulo;
+  return `«${f.obra || f.titulo}»`;
+};
+/** «zona probable: región de Babilonia, según Perspicacia «Estrella»»: lo que dicen la ficha y la leyenda de una zona.
+    Según quién lo dice `according_to` de la zona, la fuente que la propone. */
+const textoZona = BE.textoZona = (z) => `zona ${z.fuerza === 'possible' ? 'posible' : 'probable'}: ${z.nombre}${z.segun ? `, según ${fuenteCorta(z.segun)}` : ''}`;
+function zonaArea(x, ancla, color, estado) {
+  let z = zonasArea.get(x.s.key);
+  if (!z) {
+    z = { x, p: estado === 'abierta' ? 0 : 1, anim: null, estado, etiquetas: [] };
+    const zonas = x.s.lugar.area.zonas;
+    z.etiquetas = zonas.map((zo, i) => {
+      const el = document.createElement('div');
+      el.className = `area-desc area-desc--zona area-desc--${x.llega ? 'llega' : 'sale'}${i ? ' area-desc--otra' : ''}`;
+      el.dataset.lado = x.llega ? 'llega' : 'sale';
+      el.innerHTML = `<button type="button" class="area-desc__zona" data-sel="parada:${esc(x.s.key)}" aria-label="${esc(`${x.s.lugar.nombre}, ${textoZona(zo)}: ${x.llega ? 'origen' : 'destino'} de ${BE.nombreDueno(x.s.viaje)}`)}">
+        <span class="area-desc__rotulo">${i ? '' : `<b>${esc(x.s.lugar.nombre)}</b>`}<small>${esc(i ? `o ${zo.nombre}` : `zona ${zo.fuerza === 'possible' ? 'posible' : 'probable'}: ${zo.nombre}`)}</small></span></button>`;
+      return { el, zona: zo, marker: new maplibregl.Marker({ element: el, anchor: 'center' }).setLngLat(zo.centro).addTo(map) };
+    });
+    zonasArea.set(x.s.key, z);
+    componerZonas.sucio = true;
+  }
+  if (z.color !== color || z.ancla?.[0] !== ancla[0] || z.ancla?.[1] !== ancla[1]) componerZonas.sucio = true;
+  z.x = x; z.ancla = ancla; z.color = color;
+  const zo = x.s.lugar.area.zonas[0];
+  z.fila = `${x.llega ? 'Origen' : 'Destino'} de ${BE.nombreDueno(x.s.viaje)}: ${x.s.lugar.nombre}; ${textoZona(zo)}`;
+  if (z.estado === estado) return;
+  z.estado = estado;
+  componerZonas.sucio = true;
+  const meta = estado === 'abierta' ? 0 : 1;
+  if (sinMovimiento()) { z.p = meta; z.anim = null; return; }
+  // Si la zona no se ve, la animación va desde el borde del mapa, donde está su ficha, y no desde la zona de verdad.
+  z.anim = { de: z.p, a: meta, t0: performance.now(), borde: !zonaEnVista(zo) };
+  if (!componerZonas.raf) componerZonas.raf = requestAnimationFrame(pasoZonas);
+}
+function pasoZonas(ahora) {
+  componerZonas.raf = 0;
+  let siguen = false;
+  for (const z of zonasArea.values()) {
+    if (!z.anim) continue;
+    const f = Math.min(1, (ahora - z.anim.t0) / (DURACION_AREA * Math.max(0.2, Math.abs(z.anim.a - z.anim.de))));
+    z.p = z.anim.de + (z.anim.a - z.anim.de) * f;
+    if (f >= 1) z.anim = null; else siguen = true;
+  }
+  componerZonas.sucio = true;
+  componerZonas();
+  if (siguen) componerZonas.raf = requestAnimationFrame(pasoZonas);
+}
+/** ¿Se ve alguna parte de la zona en el mapa? */
+function zonaEnVista(zo) {
+  const b = map.getBounds(), [[o, s], [e, n]] = zo.bbox;
+  return !(e < b.getWest() || o > b.getEast() || n < b.getSouth() || s > b.getNorth());
+}
+/** Punto del borde del mapa, del lado de la zona, en píxeles: la recta del centro de lo visible al centro de la zona
+    corta el rectángulo libre (sin la hoja, los márgenes ni la tarjeta «Mientras tanto»). */
+function puntoBorde(zo) {
+  const c = map.getContainer(), pad = rellenoConMientras();   // sin la hoja, la leyenda ni «Mientras tanto»
+  const caja = { x0: pad.left, y0: pad.top, x1: c.clientWidth - pad.right, y1: c.clientHeight - pad.bottom };
+  const cx = (caja.x0 + caja.x1) / 2, cy = (caja.y0 + caja.y1) / 2;
+  const q = map.project(zo.centro), dx = q.x - cx, dy = q.y - cy;
+  const k = Math.min(dx ? Math.abs((dx > 0 ? caja.x1 - cx : cx - caja.x0) / dx) : Infinity, dy ? Math.abs((dy > 0 ? caja.y1 - cy : cy - caja.y0) / dy) : Infinity);
+  return { x: cx + dx * k, y: cy + dy * k, angulo: (Math.atan2(dy, dx) * 180) / Math.PI };
+}
+/** Dibuja cada zona en su momento: p = 0, abierta en su sitio; p = 1, cerrada en la parada vecina. Al llegar acelera hacia
+    la parada; al salir frena al abrirse. Con la zona fuera de la vista, la que se mueve es una copia de unos 120 px
+    puesta en el borde del mapa. Solo escribe la fuente del mapa si algo cambió. */
+function componerZonas() {
+  componerZonas.sucio = false;
+  const fs = [];
+  for (const [k, z] of zonasArea) {
+    const e = z.x.llega ? z.p * z.p : 1 - (1 - z.p) * (1 - z.p);
+    const op = Math.max(0, 1 - z.p);
+    z.x.s.lugar.area.zonas.forEach((zo, i) => {
+      let ring = zo.ring, centro = zo.centro;
+      if (z.anim?.borde) {
+        const b = puntoBorde(zo), cc = map.unproject([b.x, b.y]), q = map.project(zo.centro);
+        const ancho = Math.max(1, Math.abs(map.project([zo.bbox[1][0], zo.bbox[0][1]]).x - map.project(zo.bbox[0]).x));
+        const f = 120 / ancho;
+        centro = [cc.lng, cc.lat];
+        ring = zo.ring.map((v) => { const w = map.project(v); const u = map.unproject([b.x + (w.x - q.x) * f, b.y + (w.y - q.y) * f]); return [u.lng, u.lat]; });
+      }
+      const hacia = ([lon, lat]) => [lon + (z.ancla[0] - lon) * e, lat + (z.ancla[1] - lat) * e];
+      const props = { sel: `parada:${k}`, viaje: z.x.s.viaje.id, color: z.color, opacidad: op * (i ? 0.55 : 1) };
+      if (!i) z.centro = hacia(centro);
+      if (op > 0 && (!i || !z.anim?.borde)) {
+        fs.push({ type: 'Feature', properties: props, geometry: { type: 'Polygon', coordinates: [ring.map(hacia)] } });
+        if (!i) fs.push(linea([hacia(centro), z.ancla], props));
+      }
+      const m = z.etiquetas[i];
+      m.marker.setLngLat(hacia(centro));
+      m.el.style.setProperty('--viajero', z.color);
+      m.el.style.opacity = String(op * (i ? 0.8 : 1));
+      m.el.style.visibility = op > 0 && !(i && z.anim?.borde) ? '' : 'hidden';
+      m.el.dataset.estado = z.estado;
+    });
+  }
+  componerZonas.escrituras = (componerZonas.escrituras || 0) + 1;
+  map.getSource('be-areas')?.setData({ type: 'FeatureCollection', features: fs });
+  pintarChipsZona();
+}
+componerZonas.sucio = false;
+/** La ficha del borde de cada zona abierta que no se ve: sus palabras, su conjetura y una flecha hacia ella. Pulsarla
+    encuadra la zona con su parada vecina. */
+function pintarChipsZona() {
+  for (const [k, z] of zonasArea) {
+    const zo = z.x.s.lugar.area.zonas[0];
+    const ver = z.estado === 'abierta' && !z.anim && z.p === 0 && !zonaEnVista(zo);
+    if (!ver) { if (z.chip) z.chip.hidden = true; continue; }
+    if (!z.chip) {
+      z.chip = document.createElement('button');
+      z.chip.type = 'button';
+      z.chip.className = 'area-chip';
+      z.chip.dataset.area = k;
+      z.chip.innerHTML = `<span class="area-chip__flecha" aria-hidden="true">➜</span><span><b>${esc(z.x.s.lugar.nombre)}</b> · ${esc(`zona ${zo.fuerza === 'possible' ? 'posible' : 'probable'}: ${zo.nombre}`)}</span>`;
+      z.chip.setAttribute('aria-label', `${z.x.s.lugar.nombre}, ${textoZona(zo)}: ver la zona`);
+      z.chip.addEventListener('click', (ev) => {
+        ev.stopPropagation();
+        map.fitBounds(cajaDe([...zo.bbox, z.ancla]), { padding: rellenoConMientras(), duration: 700 });
+      });
+      map.getContainer().appendChild(z.chip);
+    }
+    const b = puntoBorde(zo);
+    z.chip.hidden = false;
+    z.chip.style.setProperty('--viajero', z.color);
+    z.chip.style.left = `${b.x}px`;
+    z.chip.style.top = `${b.y}px`;
+    z.chip.style.setProperty('--angulo', `${b.angulo}deg`);
+    z.chip.dataset.lado = Math.abs(b.angulo) <= 45 ? 'este' : Math.abs(b.angulo) >= 135 ? 'oeste' : b.angulo > 0 ? 'sur' : 'norte';
+  }
+}
+/** Esquinas de la zona conjeturada preferida de lo elegido (un viaje con áreas o la parada de un área), solo si caben con
+    las paradas: el encuadre nunca aleja tanto el mapa que las paradas de verdad se junten (menos de 40 px entre las
+    dos más alejadas). Si no caben, el encuadre se queda en las paradas y la zona se señala desde el borde. */
+const SEPARACION_PARADAS = 40;
+function puntosZonasSel(base) {
+  const s = E.sel;
+  if (!s || (s.tipo !== 'viaje' && s.tipo !== 'parada')) return [];
+  const v = BE.D.viajes.find((x) => x.id === (s.tipo === 'viaje' ? s.id : s.id.split('/')[0]));
+  if (!v || !viajesConArea().includes(v)) return [];
+  const zona = areasDe(v).filter((x) => s.tipo === 'viaje' || x.s.key === s.id).flatMap((x) => (x.s.lugar.area?.zonas || []).slice(0, 1).flatMap((zo) => zo.bbox));
+  if (!zona.length || base.length < 2) return zona;
+  const cam = map.cameraForBounds(cajaDe([...base, ...zona]), { padding: rellenoConMientras() });
+  if (!cam) return [];
+  const mundo = base.map((q) => mundo0(q));
+  let lejos = 0;
+  for (const a of mundo) for (const b of mundo) lejos = Math.max(lejos, Math.hypot(a.x - b.x, a.y - b.y));
+  return lejos * 2 ** cam.zoom >= SEPARACION_PARADAS ? zona : [];
+}
+function marcaArea(x, pos, color, estado) {
+  const { s, llega } = x;
+  let m = marcasArea.get(s.key);
+  if (!m) {
+    const el = document.createElement('div');
+    const rumbo = s.lugar.area?.rumbo, lejos = estrecha() ? AREA.lejosMovil : AREA.lejos;
+    const g = rumbo != null ? RUMBO_GRADOS[rumbo] : null;
+    const rad = g == null ? 0 : (g * Math.PI) / 180, dx = g == null ? 0 : lejos * Math.sin(rad), dy = g == null ? 0 : -lejos * Math.cos(rad);
+    // El hilo va de la parada al borde del área: el radio de la elipse en esa dirección.
+    const borde = (AREA.rx * AREA.ry) / Math.hypot(AREA.ry * Math.sin(rad), AREA.rx * Math.cos(rad));
+    el.className = `area-desc area-desc--${llega ? 'llega' : 'sale'}${g == null ? ' area-desc--anillo' : ''}`;
+    el.dataset.lado = llega ? 'llega' : 'sale';
+    el.style.setProperty('--dx', `${dx.toFixed(1)}px`);
+    el.style.setProperty('--dy', `${dy.toFixed(1)}px`);
+    el.style.setProperty('--ang', `${g == null ? 0 : g - 90}deg`);
+    el.style.setProperty('--hilo', `${g == null ? 0 : Math.max(0, lejos - borde - 4).toFixed(1)}px`);
+    const nombre = s.lugar.nombre, nota = s.lugar.area ? 'la fuente no dice dónde' : 'sin ubicación conocida';
+    el.innerHTML = `<span class="area-desc__hilo" aria-hidden="true"></span><button type="button" class="area-desc__zona" data-sel="parada:${esc(s.key)}"
+      aria-label="${esc(`${nombre}, ${nota}: ${llega ? 'origen' : 'destino'} de ${BE.nombreDueno(s.viaje)}`)}"><span class="area-desc__forma" aria-hidden="true"></span>
+      <span class="area-desc__rotulo"><b>${esc(nombre)}</b><small>${nota}</small></span></button>`;
+    m = { el, marker: new maplibregl.Marker({ element: el, anchor: 'center' }).setLngLat(pos).addTo(map), estado: null,
+      fila: `${llega ? 'Origen' : 'Destino'} de ${BE.nombreDueno(s.viaje)}: ${nombre}, ${nota}` };
+    marcasArea.set(s.key, m);
+  }
+  m.marker.setLngLat(pos);
+  m.el.style.setProperty('--viajero', color);
+  if (m.estado === estado) return;
+  // La primera vez se pone el estado sin transición; después, cada cambio la anima (salvo con movimiento reducido).
+  const animar = m.estado !== null && !movimientoReducido();
+  m.el.classList.toggle('area-desc--anima', animar);
+  m.el.classList.toggle('area-desc--abierta', estado === 'abierta');
+  m.el.classList.toggle('area-desc--cerrada', estado === 'cerrada');
+  m.el.dataset.estado = estado;
+  m.estado = estado;
 }
 
 // ---------------------------------------------------------------------------
@@ -974,6 +1258,7 @@ function pintarMapa() {
   pintarFormas();
   pintarHallazgos();
   pintarRepite(g);
+  pintarAreas(soloViaje, verViajes, V);
   // Pablo
   if (w?.pos && verViajes && (!soloViaje || soloViaje === V?.id)) {
     marcaPablo.setLngLat(w.pos);
@@ -1445,7 +1730,9 @@ function pintarLeyenda(V, w, g) {
   const repiten = viajesRepetidos(g);
   const deducidos = [...g.rastro, ...g.hecho, ...g.falta].some((f) => f.properties.deducido);
   const abanico = g.rastro.some((f) => f.properties.rama != null);
-  const clave = `${repiten.map((v) => v.id)}|${apagado}|${deducidos}|${abanico}|${V?.id}|${estimada}|${E.sel?.tipo}|${E.sel?.id}|${pendiente}|${escritores}|${inciertos}|${formas}|${hallazgos}|${F.capas.viajes}|${F.nivel1}|${rastro.map((v) => v.id)}|${dePablo}|${viajeros}`;
+  // Solo las áreas que el mapa dibuja ahora: abiertas.
+  const areas = [...marcasArea.values(), ...zonasArea.values()].filter((m) => m.estado === 'abierta');
+  const clave = `${areas.map((m) => m.fila)}|${repiten.map((v) => v.id)}|${apagado}|${deducidos}|${abanico}|${V?.id}|${estimada}|${E.sel?.tipo}|${E.sel?.id}|${pendiente}|${escritores}|${inciertos}|${formas}|${hallazgos}|${F.capas.viajes}|${F.nivel1}|${rastro.map((v) => v.id)}|${dePablo}|${viajeros}`;
   if (clave === pintarLeyenda.clave) return;
   pintarLeyenda.clave = clave;
   const filas = [];
@@ -1472,6 +1759,7 @@ function pintarLeyenda(V, w, g) {
   }
   if (deducidos) filas.push('<div class="be-legend__row"><span class="be-legend__line be-legend__line--deducida"></span>De puntos: tramo hacia una parada pendiente de verificar</div>');
   if (abanico) filas.push('<div class="be-legend__row"><svg class="leyenda-abanico" viewBox="0 0 22 12" aria-hidden="true"><path d="M2 6 20 1M2 6h18M2 6l18 5"/></svg>En abanico: destinos a los que el grupo llega a la vez, sin orden entre ellos</div>');
+  for (const m of areas) filas.push(`<div class="be-legend__row"><span class="leyenda-area" style="--viajero:${m.color || m.el.style.getPropertyValue('--viajero')}"></span>${esc(m.fila)}</div>`);
   if (repiten.length) filas.push(`<div class="be-legend__row"><span class="leyenda-repite" aria-hidden="true">↻</span>Se repite cada año: ${repiten.map((v) => esc(v.nombre)).join(', ')}</div>`);
   if (escritores.length) {
     filas.push(`<div class="be-legend__row"><span class="be-legend__line be-legend__line--letter" style="--carta:${colorEscritor(escritores[0])}"></span>Carta ${escritores.length > 1 ? `de ${esc(nombrePersona(escritores[0]))}` : 'escrita cerca de esta fecha'}</div>`);
@@ -1487,7 +1775,7 @@ function pintarLeyenda(V, w, g) {
   if (formas) filas.push('<div class="be-legend__row"><span class="leyenda-forma"></span>Lo que abarca una región, aproximado con su fuente</div>');
   if (hallazgos) filas.push('<div class="be-legend__row"><span class="leyenda-hallazgo"></span>Hallazgo arqueológico</div>');
   if (estimada) filas.push('<div class="be-legend__row"><span class="leyenda-estimada"></span>Posición estimada (tiempo narrativo o lugar incierto)</div>');
-  if (F.capas.viajes && !S && !dePablo && !rastro.length && !viajeros) filas.push('<div class="be-legend__row be-muted">Ningún viaje cerca de esta fecha</div>');
+  if (F.capas.viajes && !S && !dePablo && !rastro.length && !viajeros && !areas.length) filas.push('<div class="be-legend__row be-muted">Ningún viaje cerca de esta fecha</div>');
   if (F.nivel1) filas.push('<div class="be-legend__row"><span class="be-tier be-tier--1" data-n="1">Solo fuentes principales</span></div>');
   const cabecera = titulo ? `${esc(titulo.nombre)} · ${esc(fechaCorta(titulo.fecha))}` : selIncierto ? `${esc(selIncierto.nombre)} · cómo dibujamos lo incierto`
     : dePablo ? 'Viajes de Pablo' : rastro.length ? 'Viajes' : 'Leyenda';
@@ -1853,7 +2141,8 @@ function encuadrarLugares(ids) {
   const foco = lugaresEnFoco(ids);
   // Un lugar con forma se encuadra entero (Canaán va de Sidón a Gaza, no se queda en su punto de Galilea).
   const forma = (id) => conPunto(BE.L[id]) && BE.L[id].shape?.bbox;
-  const pts = foco.flatMap((id) => forma(id) || puntosDe(id));
+  const base = foco.flatMap((id) => forma(id) || puntosDe(id));
+  const pts = [...base, ...puntosZonasSel(base)];
   // Una selección sin lugar en el mapa (la muerte de Adán, la Septuaginta) no deja el encuadre de antes: enseña su época.
   if (!pts.length) { if (E.sel) encuadrarEpoca(E.t); return; }
   // Un lugar incierto con un candidato con forma (Benjamín, el desierto de Judá) se encuadra igual.
@@ -1955,7 +2244,8 @@ function ponerMarco({ lon, lat, zoom }) {
   tSalto = E.t;
   clearTimeout(saltoTimer);
 }
-BE.mapa = { resaltar, ventanaViaje, encuadrar: encuadrarLugares, volverAlInicio, iniciar, encuadreDeInicio, ponerMarco, enfocarCandidato, get candidatoFoco() { return candFoco; }, get gl() { return map; } };
+BE.mapa = { areas: () => [...zonasArea].map(([k, z]) => ({ key: k, estado: z.estado, p: z.p, animando: !!z.anim, borde: !!z.anim?.borde, centro: z.centro, zonas: z.etiquetas.length, chip: !!z.chip && !z.chip.hidden })),
+  escriturasAreas: () => componerZonas.escrituras || 0, resaltar, ventanaViaje, encuadrar: encuadrarLugares, volverAlInicio, iniciar, encuadreDeInicio, ponerMarco, enfocarCandidato, get candidatoFoco() { return candFoco; }, get gl() { return map; } };
 Object.assign(BE, {
   ponerMapa, pintarMapa, pintarEtiquetas, seguirPablo, cartaVisible, cartaEnMapa, estadoCarta, colorViaje, colorEscritor, colorPersona,
   nombreHoy, nombreEn, candidatosDe, candidatosVisibles, CANDIDATO: CAND, ventanaDeCarta,
