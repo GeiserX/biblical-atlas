@@ -259,13 +259,17 @@ function montarCapas() {
     colocarImgsDom();
   }
   const vacio = { type: 'FeatureCollection', features: [] };
-  for (const id of ['be-rastro', 'be-hecho', 'be-falta', 'be-cartas', 'be-cartas-o', 'be-halo', 'be-zonas', 'be-cand-lineas', 'be-zonas-carta']) map.addSource(id, { type: 'geojson', data: vacio });
+  for (const id of ['be-rastro', 'be-hecho', 'be-falta', 'be-cartas', 'be-cartas-o', 'be-halo', 'be-zonas', 'be-cand-lineas', 'be-zonas-carta', 'be-formas']) map.addSource(id, { type: 'geojson', data: vacio });
   const lineas = { 'line-cap': 'round', 'line-join': 'round' };
   for (const v of BE.D.viajes) map.addImage(`be-flecha-${v.id}`, imagenFlecha(colorViaje(v.id)));
   for (const [k, s] of Object.entries(CAND)) map.addImage(`be-rayado-${k}`, imagenRayado(s.color, k));
   map.addImage('be-rayado-carta', imagenRayado(cssVar('--gold') || '#1f3b30', 'alternativa'));
   const color = ['get', 'color'];
   const flecha = (placement, opacity, spacing) => ({ type: 'symbol', layout: { 'symbol-placement': placement, 'symbol-spacing': spacing, 'icon-image': ['concat', 'be-flecha-', ['get', 'viaje']], 'icon-size': 0.5, 'icon-rotation-alignment': 'map', 'icon-allow-overlap': true, 'icon-ignore-placement': true }, paint: { 'icon-opacity': opacity } });
+  // La forma de una zona con punto (Canaán, Galilea, el Arabá): solo la del lugar elegido o resaltado, debajo de todo y
+  // sin clic, para que una región grande no tape los lugares que tiene dentro. Su nombre sigue siendo lo que se pulsa.
+  map.addLayer({ id: 'be-formas-relleno', type: 'fill', source: 'be-formas', paint: { 'fill-color': color, 'fill-opacity': 0.1 } });
+  map.addLayer({ id: 'be-formas-borde', type: 'line', source: 'be-formas', layout: lineas, paint: { 'line-color': color, 'line-width': 2, 'line-dasharray': [2, 1.5], 'line-opacity': 0.9 } });
   // Lugares inciertos: zonas rayadas con borde difuminado, franjas y el abanico que une a los candidatos.
   // Una zona pequeña (Getsemaní, 1 km) cubre toda la ciudad a zoom 13: de cerca su rayado se aclara.
   const deCerca = ['interpolate', ['linear'], ['zoom'], 10, ['get', 'opacidad'], 13, ['*', 0.3, ['get', 'opacidad']]];
@@ -307,7 +311,7 @@ function montarCapas() {
   cortina = null;
   aplicarModoMapa();
   aplicarRelieve();
-  claveInciertos = ''; pintarMapa.claveCartas = null;
+  claveInciertos = ''; claveFormas = ''; pintarMapa.claveCartas = null;
   sucio.mapa = sucio.etiquetas = true;
   programar();
 }
@@ -372,7 +376,7 @@ async function montarCortina() {
       canvas.width = Math.min(2048, img.naturalWidth); canvas.height = Math.round(canvas.width * img.naturalHeight / img.naturalWidth);
       const id = `be-cortina-${base.id}`;
       map.addSource(id, { type: 'canvas', canvas, coordinates: esquinas(base.ext), animate: false });
-      map.addLayer({ id, type: 'raster', source: id, paint: { 'raster-fade-duration': 0, 'raster-opacity': opacidadGL(base) } }, 'be-zonas-relleno');
+      map.addLayer({ id, type: 'raster', source: id, paint: { 'raster-fade-duration': 0, 'raster-opacity': opacidadGL(base) } }, 'be-formas-relleno');
       return { base, img, canvas, ctx: canvas.getContext('2d') };
     });
   }
@@ -654,7 +658,7 @@ function geoCartas(t) {
     const l = BE.L[id];
     if (zonasVistas.has(id) || !conPunto(l) || !(REGION.has(l.tipo) || l.precision === 'zona')) return;
     zonasVistas.add(id);
-    zonas.push({ type: 'Feature', properties: { color }, geometry: { type: 'Polygon', coordinates: [circulo(l.lat, l.lon, l.tipo === 'provincia' || l.tipo === 'region' ? 70 : 45)] } });
+    zonas.push({ type: 'Feature', properties: { color }, geometry: { type: 'Polygon', coordinates: [l.shape?.ring || circulo(l.lat, l.lon, l.tipo === 'provincia' || l.tipo === 'region' ? 70 : 45)] } });
   };
   for (const c of BE.cartasOrdenadas()) {
     if (!cartaEnMapa(c, t)) continue;
@@ -744,7 +748,8 @@ function pintarInciertos() {
       const g = c.geometria, s = CAND[c.estado] || CAND.alternativa;
       const enfocado = candFoco && candFoco.lugar === l.id && candFoco.i === i;
       const props = { lugar: l.id, i, estado: c.estado, color: s.color, trazo: s.trazo, opacidad: enfocado ? 1 : op };
-      if (g.tipo === 'zona') zonas.push({ type: 'Feature', properties: props, geometry: { type: 'Polygon', coordinates: [circulo(g.lat, g.lon, g.radio_km)] } });
+      // Una zona con forma (`shape`: elipse, caja o polígono) dibuja su contorno, que trae data.json; sin ella, su círculo.
+      if (g.tipo === 'zona') zonas.push({ type: 'Feature', properties: props, geometry: { type: 'Polygon', coordinates: [c.shape?.ring || circulo(g.lat, g.lon, g.radio_km)] } });
       else if (g.tipo === 'franja') lineasC.push(linea([[g.lon, g.lat], [g.hasta.lon, g.hasta.lat]], { ...props, clase: 'franja' }));
       if (g.tipo !== 'zona') {
         const k = `${l.id}|${i}`; vivas.add(k);
@@ -762,6 +767,20 @@ function pintarInciertos() {
   for (const [k, m] of marcasCand) if (!vivas.has(k)) { m.marker.remove(); marcasCand.delete(k); }
   map.getSource('be-zonas').setData({ type: 'FeatureCollection', features: zonas });
   map.getSource('be-cand-lineas').setData({ type: 'FeatureCollection', features: lineasC });
+  sucio.etiquetas = true;
+}
+let claveFormas = '';
+/** Formas de los lugares con punto que la tienen: la del lugar elegido y las de los lugares que resalta la selección.
+    El color sale de --tier1, que cambia con el modo reunión. */
+function pintarFormas() {
+  const selL = E.sel?.tipo === 'lugar' ? E.sel.id : null;
+  const res = resaltadoMapa ?? E.resaltado?.lugares;
+  const ids = [...new Set([selL, ...(res || [])])].filter((id) => conPunto(BE.L[id]) && BE.L[id].shape?.ring);
+  const color = cssVar('--tier1') || '#2a5d78';
+  const clave = `${ids}|${color}`;
+  if (clave === claveFormas) return;
+  claveFormas = clave;
+  map.getSource('be-formas').setData({ type: 'FeatureCollection', features: ids.map((id) => ({ type: 'Feature', properties: { lugar: id, color }, geometry: { type: 'Polygon', coordinates: [BE.L[id].shape.ring] } })) });
   sucio.etiquetas = true;
 }
 function marcaCandidato(k, l, c, i, pos, op, enfocado, foco = false) {
@@ -812,7 +831,7 @@ function enfocarCandidato(lugar, i, volar = true) {
   const c = candidatosDe(BE.L[lugar])?.[+i];
   if (c && volar && map) {
     const g = c.geometria;
-    if (g.tipo === 'zona') map.fitBounds(cajaDe([[g.lon, g.lat]], g.radio_km), { padding: rellenoEncuadre(), maxZoom: g.radio_km < 3 ? 12 : 8, duration: 700 });
+    if (g.tipo === 'zona') map.fitBounds(c.shape?.bbox || cajaDe([[g.lon, g.lat]], g.radio_km), { padding: rellenoEncuadre(), maxZoom: g.radio_km < 3 ? 12 : 8, duration: 700 });
     else map.easeTo({ center: centroCandidato(c), zoom: Math.max(map.getZoom(), 7), duration: 700 });
   }
   document.querySelectorAll('#panel-cuerpo [data-cand]').forEach((el) => {
@@ -941,6 +960,7 @@ function pintarMapa() {
     sucio.etiquetas = true;
   }
   pintarInciertos();
+  pintarFormas();
   pintarHallazgos();
   pintarRepite(g);
   // Pablo
@@ -1398,6 +1418,7 @@ function pintarLeyenda(V, w, g) {
   const pendiente = BE.D.cartas.some((c) => cartaEnMapa(c, E.t) && estadoCarta(c, E.t) === 'pendiente');
   const escritores = [...new Set(BE.D.cartas.filter((c) => cartaEnMapa(c, E.t)).map((c) => c.escritor || 'pablo'))];
   const inciertos = claveInciertos.split('|')[0];
+  const formas = claveFormas.split('|')[0];
   // Solo si alguna marca de hallazgo cae en el encuadre: se vuelve a mirar al mover el mapa.
   const caja = map.getBounds();
   const hallazgos = [...marcasHallazgo.values()].some((m) => caja.contains(m.marker.getLngLat()));
@@ -1409,7 +1430,7 @@ function pintarLeyenda(V, w, g) {
   const apagado = g.rastro.some((f) => f.properties.estado !== 'actual');   // algún rastro en gris
   const repiten = viajesRepetidos(g);
   const deducidos = [...g.rastro, ...g.hecho, ...g.falta].some((f) => f.properties.deducido);
-  const clave = `${repiten.map((v) => v.id)}|${apagado}|${deducidos}|${V?.id}|${estimada}|${E.sel?.tipo}|${E.sel?.id}|${pendiente}|${escritores}|${inciertos}|${hallazgos}|${F.capas.viajes}|${F.nivel1}|${rastro.map((v) => v.id)}|${dePablo}|${viajeros}`;
+  const clave = `${repiten.map((v) => v.id)}|${apagado}|${deducidos}|${V?.id}|${estimada}|${E.sel?.tipo}|${E.sel?.id}|${pendiente}|${escritores}|${inciertos}|${formas}|${hallazgos}|${F.capas.viajes}|${F.nivel1}|${rastro.map((v) => v.id)}|${dePablo}|${viajeros}`;
   if (clave === pintarLeyenda.clave) return;
   pintarLeyenda.clave = clave;
   const filas = [];
@@ -1447,6 +1468,7 @@ function pintarLeyenda(V, w, g) {
     const estados = new Set(candidatosVisibles(selIncierto).map(({ c }) => c.estado));
     for (const [k, s] of Object.entries(CAND)) if (estados.has(k)) filas.push(`<div class="be-legend__row"><span class="leyenda-cand leyenda-cand--${k}" style="--cand:${s.color}"></span>${esc(s.rotulo)}</div>`);
   } else if (inciertos) filas.push(`<div class="be-legend__row"><span class="leyenda-cand leyenda-cand--favorecido_nivel_1" style="--cand:${CAND.favorecido_nivel_1.color}"></span>Lugar incierto: zona o candidatos, nunca un punto</div>`);
+  if (formas) filas.push('<div class="be-legend__row"><span class="leyenda-forma"></span>Lo que abarca una región, aproximado con su fuente</div>');
   if (hallazgos) filas.push('<div class="be-legend__row"><span class="leyenda-hallazgo"></span>Hallazgo arqueológico</div>');
   if (estimada) filas.push('<div class="be-legend__row"><span class="leyenda-estimada"></span>Posición estimada (tiempo narrativo)</div>');
   if (F.capas.viajes && !S && !dePablo && !rastro.length && !viajeros) filas.push('<div class="be-legend__row be-muted">Ningún viaje cerca de esta fecha</div>');
@@ -1748,6 +1770,22 @@ function rellenoConMientras() {
   if (visible || saldra) padding.right = Math.max(padding.right, (visible ? mi.offsetWidth : 290) + 40);
   return caber(padding);
 }
+/** Relleno para encuadrar la forma de una zona. En escritorio con el mapa bajo (la línea de tiempo ocupa media
+    pantalla), la leyenda no deja sitio encima de ella y caber() encogía el relleno de abajo hasta meter la forma debajo:
+    entonces la forma va a la derecha de la leyenda, con todo el alto libre. */
+function rellenoForma() {
+  const p = rellenoConMientras(), ley = $('#leyenda');
+  if (estrecha() || !ley || !ley.offsetParent) return p;
+  const alto = map.getContainer().clientHeight;
+  // La leyenda va abajo a la izquierda (28 px del borde) y aún puede tener el contenido de antes: se cuenta al menos su
+  // alto habitual y el ancho que le da su fila más larga («A trazos: tramo hacia un lugar incierto…», unos 510 px).
+  const arriba = alto - 28 - Math.min(Math.max(ley.offsetHeight, 210), alto - 120);
+  if (arriba - p.top >= 160) return p;
+  return caber({ ...p, bottom: 40, left: Math.max(p.left, ley.offsetLeft + Math.max(ley.offsetWidth, 520) + 30) });
+}
+/** Zoom más lejano al que se encuadra la forma de una zona: el de su punto (una región, 5,5). Si la forma no cabe, se
+    corta por arriba y por abajo en vez de quedarse diminuta. */
+const ZOOM_FORMA = 5.5;
 /** Puntos que ocupa un lugar: su coordenada o, si es incierto, sus candidatos con el borde de cada zona. */
 function puntosDe(id) {
   const l = BE.L[id];
@@ -1756,7 +1794,7 @@ function puntosDe(id) {
   const out = [];
   for (const { c } of candidatosVisibles(l)) {
     const g = c.geometria;
-    if (g.tipo === 'zona') out.push(...cajaDe([[g.lon, g.lat]], g.radio_km));
+    if (g.tipo === 'zona') out.push(...(c.shape?.bbox || cajaDe([[g.lon, g.lat]], g.radio_km)));
     else { out.push([g.lon, g.lat]); if (g.hasta) out.push([g.hasta.lon, g.hasta.lat]); }
   }
   return out;
@@ -1797,10 +1835,14 @@ const diagonalKm = ([[o, s], [e, n]]) => Math.hypot((e - o) * 111 * Math.cos((((
 function encuadrarLugares(ids) {
   if (!map) return;
   const foco = lugaresEnFoco(ids);
-  const pts = foco.flatMap(puntosDe);
+  // Un lugar con forma se encuadra entero (Canaán va de Sidón a Gaza, no se queda en su punto de Galilea).
+  const forma = (id) => conPunto(BE.L[id]) && BE.L[id].shape?.bbox;
+  const pts = foco.flatMap((id) => forma(id) || puntosDe(id));
   // Una selección sin lugar en el mapa (la muerte de Adán, la Septuaginta) no deja el encuadre de antes: enseña su época.
   if (!pts.length) { if (E.sel) encuadrarEpoca(E.t); return; }
-  const padding = rellenoConMientras();
+  // Un lugar incierto con un candidato con forma (Benjamín, el desierto de Judá) se encuadra igual.
+  const conForma = foco.some((id) => forma(id) || candidatosVisibles(BE.L[id]).some(({ c }) => c.shape?.bbox));
+  const padding = conForma ? rellenoForma() : rellenoConMientras();
   if (pts.length === 1) {   // fitBounds no deja el relleno fijado en el mapa, easeTo sí
     const [x, y] = pts[0];
     // Una ciudad se ve con la tierra de Israel ya en relieve fino y sus vecinos con nombre; una región, de más lejos; un
@@ -1823,6 +1865,11 @@ function encuadrarLugares(ids) {
   // Ofir en un móvil con la hoja abierta, se acerca hasta que cabe en vertical: se corta por los lados en vez de enseñar
   // el mar Caspio.
   const cam = map.cameraForBounds(caja, { padding, maxZoom: tope });
+  if (cam && conForma && cam.zoom < ZOOM_FORMA) {
+    const centro = [(caja[0][0] + caja[1][0]) / 2, latDeY((mercY(caja[0][1]) + mercY(caja[1][1])) / 2)];
+    map.easeTo({ center: centro, zoom: ZOOM_FORMA, offset: [(padding.left - padding.right) / 2, (padding.top - padding.bottom) / 2], duration: 700 });
+    return;
+  }
   if (cam) {
     const H = map.getContainer().clientHeight, libre = H - padding.top - padding.bottom;
     // En vertical, el centro de la caja; en horizontal, la mediana de los puntos: el lado donde hay más.

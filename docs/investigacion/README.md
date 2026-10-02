@@ -76,6 +76,30 @@ Cada candidato dice de dónde sale su punto: `coord_source: openbible:<id>` con 
 
 Con `candidates`, `lat`, `lon`, `coord_source` y `coord_url` pueden ser `null` y `precision` tiene que ser `zone` o `uncertain`. Una lista de candidatos vacía solo vale con `status: pending`. Sin candidatos, `lat` y `lon` son obligatorios. Si jw.org no sitúa un lugar y nadie lo sitúa con seguridad, van candidatos o una zona, nunca un punto inventado.
 
+**La forma de una zona.** Un lugar con punto y `precision: zone`, o un candidato con `geometry.type: zone`, puede llevar `shape`: lo que abarca, cuando la fuente lo describe con palabras (un largo, un ancho, los lugares de su frontera). Sin `shape`, un candidato sigue siendo su círculo y un lugar con punto no dibuja zona. El diseño y el porqué están en [zonas-formas.md](../ideas/zonas-formas.md).
+
+```yaml
+shape:
+  type: ellipse            # circle, ellipse, box o polygon
+  center: {lat: 31.42, lon: 35.29}   # opcional en circle y ellipse; sin él, el punto del lugar o del candidato
+  radii_km: [40, 10]       # ellipse: a lo largo del eje y de través, el primero el mayor
+  bearing: 6               # ellipse: rumbo del eje largo, de 0 a menos de 180 grados
+  note: Cómo se calculó el contorno con lo que dice la fuente.
+  sources: [it-desierto-de-juda]
+  reason: Qué dice la fuente de su extensión.
+  checked_on: '2026-10-02'
+  status: verified
+```
+
+| `type` | Lleva | Para qué |
+|---|---|---|
+| `circle` | `radius_km` | Lo que la fuente sitúa «alrededor de» un sitio. En un candidato no hace falta: ya es su círculo. |
+| `ellipse` | `radii_km`, `bearing` | Lo alargado: un valle, una llanura de la costa, un desierto a lo largo de un mar. |
+| `box` | `bounds: {south, west, north, east}` | Lo que la fuente da en kilómetros de este a oeste y de norte a sur. |
+| `polygon` | `vertices`, de 3 a 12 | Lo que tiene frontera escrita. Cada vértice es `[lat, lon]` o el id de un lugar con `precision: point`. |
+
+Una forma es un hecho como los demás: `sources`, `reason`, `checked_on`, `status` y `note`, que dice cómo se sacó el contorno de lo que describe la fuente. El contorno es nuestro y aproximado, nunca calcado de un mapa publicado. `validate.py` comprueba que el punto del lugar o del candidato cae dentro de la forma (con medio kilómetro de holgura), que un polígono no se cruza ni se toca consigo mismo, que los números son finitos y ningún radio pasa de 2.000 km, y que cada vértice con id es un lugar con `precision: point`: el punto de una zona, como el de un río, solo la representa, y si se moviera cambiaría otro contorno sin aviso. `build.py` añade a la forma su contorno (`ring`) y su caja (`bbox`) en `data.json`; el sitio los dibuja tal cual.
+
 **Personas.** `perspicacia` (la clave de identidad: el documento de su artículo de Perspicacia y, si el artículo trata de varias personas, `#` y el número de la entrada, como `'1200003629#1'`; `null` si no tiene artículo; única entre las personas y obligatoria para las que salen en `entities` de la cobertura), `date` (actividad conocida, con fuente), `disambiguation` (qué la distingue de sus homónimos), `distinct_from` (ids de los homónimos; va en las dos fichas y pide `disambiguation`), `not_claimed` (frases con lo que no decimos, como «Pedro murió en Roma») y `relations`, que tienen su sección más abajo.
 
 **Viajes.** `person`, `reference`, `date`, `companions` y `stops`. Cada parada lleva `order`, `place`, `reference` y `date`, y es un hecho anidado con sus `sources`, `reason`, `checked_on` y `status`.

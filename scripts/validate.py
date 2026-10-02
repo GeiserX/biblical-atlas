@@ -27,6 +27,7 @@ import yaml
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import bible_coverage  # noqa: E402
+import formas  # noqa: E402
 
 RAIZ = Path(__file__).resolve().parent.parent
 MAP = RAIZ / "scripts" / "migration" / "map.yaml"
@@ -771,7 +772,92 @@ def validar_explicacion(cal, err):
         textos_largos(e, donde, err)
 
 
-def validar_lugar(o, donde, err, fuentes):
+CAMPOS_FORMA = {"type", "center", "note", "sources", "reason", "checked_on", "status"}
+PARAMETROS_FORMA = {"circle": {"radius_km"}, "ellipse": {"radii_km", "bearing"}, "box": {"bounds"},
+                    "polygon": {"vertices"}}
+
+
+def _par(p):
+    return isinstance(p, list) and len(p) == 2 and all(_numero(x) and math.isfinite(x) for x in p) \
+        and -90 <= p[0] <= 90 and -180 <= p[1] <= 180
+
+
+def _radio(x):
+    """Un radio de forma: un número finito, mayor que 0 y no mayor que formas.MAX_RADIO_KM."""
+    return _numero(x) and math.isfinite(x) and 0 < x <= formas.MAX_RADIO_KM
+
+
+def validar_forma(f, donde, err, lat, lon, puntos, en_candidato=False):
+    """La forma de una zona (`shape`): un hecho con su fuente y su razón, de un vocabulario cerrado, que contiene el punto
+    del lugar o del candidato. Devuelve el contorno, o None si la forma no se puede dibujar."""
+    donde = f"{donde} shape"
+    if not isinstance(f, dict):
+        err(f"{donde}: debe ser un objeto")
+        return None
+    t = f.get("type")
+    if t not in formas.TIPOS:
+        err(f"{donde}: type '{t}' no es uno de {list(formas.TIPOS)}")
+        return None
+    if en_candidato and t == "circle":
+        err(f"{donde}: un candidato ya es un círculo (geometry.radius_km); su forma es ellipse, box o polygon")
+    validar_hecho(f, donde, err)
+    if not str(f.get("note") or "").strip():
+        err(f"{donde}: falta note, cómo se calculó el contorno con lo que dice la fuente")
+    sobran = set(f) - CAMPOS_FORMA - PARAMETROS_FORMA[t]
+    if sobran:
+        err(f"{donde}: campos que no son de un {t}: {sorted(sobran)}")
+    if "center" in f and (t not in ("circle", "ellipse") or not isinstance(f["center"], dict)
+                          or not _par([f["center"].get("lat"), f["center"].get("lon")])):
+        err(f"{donde}: center solo va en circle o ellipse, como {{lat, lon}} dentro de rango")
+        return None
+    bien = True
+    if t == "circle" and not _radio(f.get("radius_km")):
+        err(f"{donde}: un circle necesita radius_km mayor que 0 y no mayor que {formas.MAX_RADIO_KM}")
+        bien = False
+    if t == "ellipse":
+        r = f.get("radii_km")
+        if not (isinstance(r, list) and len(r) == 2 and all(_radio(x) for x in r) and r[0] >= r[1]):
+            err(f"{donde}: una ellipse necesita radii_km: [a lo largo, de través], mayores que 0, no mayores que "
+                f"{formas.MAX_RADIO_KM} y el primero el mayor")
+            bien = False
+        if not _numero(f.get("bearing")) or not 0 <= f["bearing"] < 180:
+            err(f"{donde}: una ellipse necesita bearing, el rumbo del eje largo en grados, de 0 a menos de 180")
+            bien = False
+    if t == "box":
+        c = f.get("bounds")
+        if not (isinstance(c, dict) and set(c) == {"south", "west", "north", "east"}
+                and _par([c["south"], c["west"]]) and _par([c["north"], c["east"]])
+                and c["south"] < c["north"] and c["west"] < c["east"]):
+            err(f"{donde}: un box necesita bounds: {{south, west, north, east}}, con south < north y west < east")
+            bien = False
+    if t == "polygon":
+        vs = f.get("vertices")
+        if not isinstance(vs, list) or not 3 <= len(vs) <= formas.MAX_VERTICES:
+            err(f"{donde}: un polygon necesita de 3 a {formas.MAX_VERTICES} vertices")
+            return None
+        for i, v in enumerate(vs):
+            if isinstance(v, str):
+                if v not in puntos:
+                    err(f"{donde}: vertices[{i}] '{v}' no es un lugar con punto exacto (precision: point); escribe [lat, lon]")
+                    bien = False
+            elif not _par(v):
+                err(f"{donde}: vertices[{i}] debe ser [lat, lon] dentro de rango o el id de un lugar con precision: point")
+                bien = False
+        if bien and len({tuple(p) for p in formas.vertices(f, puntos)}) != len(vs):
+            err(f"{donde}: dos vértices caen en el mismo punto")
+            bien = False
+    if not bien:
+        return None
+    ring = formas.anillo(f, lat, lon, puntos)
+    if t == "polygon" and formas.se_cruza(ring):
+        err(f"{donde}: el contorno se cruza o se toca consigo mismo; ordena los vértices alrededor de la zona")
+    if not formas.dentro(ring, lat, lon):
+        err(f"{donde}: el punto ({lat}, {lon}) queda fuera de la forma; la forma rodea el punto que la representa")
+    return ring
+
+
+def validar_lugar(o, donde, err, fuentes, puntos=None):
+    puntos = puntos or {}
     if o.get("type") not in TIPOS_LUGAR:
         err(f"{donde}: type '{o.get('type')}' no es uno de {sorted(TIPOS_LUGAR)}")
     if o.get("precision") not in PRECISION_LUGAR:
@@ -814,6 +900,11 @@ def validar_lugar(o, donde, err, fuentes):
                 err(f"{cd}: una zona necesita radius_km mayor que 0")
             if g["type"] == "strip" and g.get("to") is None:
                 err(f"{cd}: una franja necesita to: {{lat, lon}}")
+            if "shape" in c:
+                if g["type"] != "zone":
+                    err(f"{cd}: shape solo va en un candidato de geometry.type zone")
+                elif _numero(g.get("lat")) and _numero(g.get("lon")):
+                    validar_forma(c["shape"], cd, err, g["lat"], g["lon"], puntos, en_candidato=True)
             cf = str(c.get("coord_source") or "")
             if cf == "calculation":
                 if not str(c.get("note") or "").strip():
@@ -823,6 +914,11 @@ def validar_lugar(o, donde, err, fuentes):
                     err(f"{cd}: coord_url debe ser la ficha de OpenBible de {cf}")
             else:
                 err(f"{cd}: coord_source debe ser openbible:<id> o calculation (de dónde sale el punto)")
+    if "shape" in o:
+        if cands is not None or o.get("precision") != "zone" or sin_punto:
+            err(f"{donde}: shape solo va en un lugar con punto y precision: zone; en un lugar incierto va en su candidato")
+        elif _numero(lat) and _numero(lon):
+            validar_forma(o["shape"], donde, err, lat, lon, puntos)
     if not any(e.get("type") == "perspicacia" for e in o.get("links") or []) and o.get("status") != "pending":
         err(f"{donde}: sin enlace a Perspicacia debe llevar status: pending")
 
@@ -1526,6 +1622,7 @@ def validar(datos):
     meses = validar_calendario(datos, err)
     validar_libros(datos, err, meses)
     offices = (datos["vocabulary"].get("offices") or {})
+    puntos = formas.puntos_de_vertices(datos["places"])
 
     for tipo in TYPES:
         vistos = set()
@@ -1556,7 +1653,7 @@ def validar(datos):
                 err(f"{donde}: narrative_order.after debe ser el id de un suceso")
             textos_largos(limpio_, donde, err)
             if tipo == "places":
-                validar_lugar(limpio_, donde, err, fuentes)
+                validar_lugar(limpio_, donde, err, fuentes, puntos)
             if tipo in ("places", "people"):
                 for i, n in enumerate(limpio_.get("names") or []):
                     if not n.get("name"):
