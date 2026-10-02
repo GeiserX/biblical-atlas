@@ -271,6 +271,30 @@ test('1B: a group journey (the Ark) has its own owner, route, legend name and ca
   await page.context().close();
 });
 
+test('1B: every group journey is its own, sits on the timeline and is drawn with its group in the legend while its stops last', async () => {
+  const page = await openMap();
+  const gs = await page.evaluate(() => {
+    const { BE } = window.__be;
+    return BE.D.viajes.filter((v) => v.grupo).map((v) => {
+      const ps = BE.paradasDe(v);
+      return { id: v.id, grupo: v.grupo, dueno: BE.duenoViaje(v), dePablo: BE.P.some((s) => s.viaje === v), n: ps.length,
+        t: ps.length ? (ps[0].a + ps.at(-1).b) / 2 : null, nombre: BE.nombreDeDueno(BE.duenoViaje(v)) };
+    });
+  });
+  assert.ok(gs.length >= 15, `the group journeys reach the site: ${gs.map((g) => g.id)}`);
+  for (const g of gs) {
+    assert.equal(g.dueno, `grupo:${g.id}`, `${g.id} is its own owner`);
+    assert.equal(g.dePablo, false, `${g.id} is not among Pablo's stops`);
+    assert.ok(g.n >= 2, `${g.id} has its stops on the timeline (${g.n})`);
+    assert.equal(g.nombre, g.grupo[0].toUpperCase() + g.grupo.slice(1), `${g.id}: the legend name is its group`);
+    const d = await drawnAt(page, g.t);
+    assert.ok(d.otros.includes(g.id), `${g.id} is drawn at ${g.t.toFixed(2)}: ${d.otros}`);
+    assert.ok(d.leyenda.includes(g.nombre), `${g.id}: the legend names «${g.nombre}»: «${d.leyenda}»`);
+  }
+  assert.deepEqual(page.pageErrors, []);
+  await page.context().close();
+});
+
 test('2D: a segment that reaches or leaves a deduced stop is dotted, the verified ones keep their line, and the legend says so', async () => {
   const page = await openMap();
   const read = (id) => page.evaluate(async (id) => {

@@ -1,0 +1,107 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: los-600-benjaminitas
+name: Los 600 benjaminitas, del peñasco de Rimón a su tierra
+person: null
+group: los 600 benjaminitas que escapan
+reference: Jue 20:42-47; 21:13-23
+date:
+  from: -1449
+  to: -1399
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre c. 1450 y c. 1400 a.e.c. (tiempo narrativo: pocos años después de morir Josué, con Finehás de sumo sacerdote)'
+companions: []
+summary: Vencidos junto a Guibeá, 600 benjaminitas huyen al peñasco de Rimón y pasan allí cuatro meses. Ofrecida la paz, bajan,
+  reciben mujeres de Jabés-Galaad y en Siló toman las que faltan; vuelven a reconstruir sus ciudades.
+reason: Jueces 20 y 21 dan las paradas. Perspicacia «Rimón», núm. 4, y «Siló», núm. 2, cuentan la huida y las esposas. Fecha
+  de sus sucesos (estudio 3; «Jueces, Libro de», «Orden del libro»).
+sources:
+- jueces-20
+- jueces-21
+- it-rimon
+- it-silo
+- it-jabes-galaad
+- it-benjamin
+- it-jueces
+- si-3
+- it-finehas
+checked_on: '2026-10-02'
+status: verified
+stops:
+- order: 1
+  place: guibea-de-benjamin
+  reference: Jue 20:41-45
+  date:
+    from: -1449
+    to: -1399
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre c. 1450 y c. 1400 a.e.c. (tiempo narrativo: pocos años después de morir Josué, con Finehás de sumo sacerdote)'
+  note: Salida. Huyen al ver arder la ciudad; en el camino caen miles.
+  reason: 'Jue 20:41-45: huyen del campo de batalla de Guibeá. Suceso israel-persigue-a-los-benjaminitas-hasta-guidom.'
+  sources:
+  - jueces-20
+  - it-guibeah
+  checked_on: '2026-10-02'
+  status: verified
+- order: 2
+  place: penasco-de-rimon
+  reference: Jue 20:45-47; 21:13
+  date:
+    from: -1449
+    to: -1399
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre c. 1450 y c. 1400 a.e.c. (tiempo narrativo: pocos años después de morir Josué, con Finehás de sumo sacerdote)'
+  note: Cuatro meses en el peñasco, hasta que las tribus les mandan un mensaje de paz.
+  reason: Jue 20:47 y 21:13. Sucesos los-600-benjaminitas-se-refugian-en-el-penasco-de-rimon e israel-ofrece-la-paz-a-los-benjaminitas-del-penasco-de-rimon;
+    Perspicacia «Rimón», núm. 4.
+  sources:
+  - jueces-20
+  - jueces-21
+  - it-rimon
+  checked_on: '2026-10-02'
+  status: verified
+- order: 3
+  place: silo
+  reference: Jue 21:14-23
+  date:
+    from: -1449
+    to: -1399
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre c. 1450 y c. 1400 a.e.c. (tiempo narrativo: pocos años después de morir Josué, con Finehás de sumo sacerdote)'
+  note: Reciben 400 jóvenes de Jabés-Galaad; los 200 que se quedan sin esposa raptan a jóvenes de Siló en la fiesta.
+  reason: 'Jue 21:12-14 y 21:20-23; Perspicacia «Siló», núm. 2: las 400 de Jabés llegan a Siló y se las dan. Suceso los-benjaminitas-se-llevan-a-las-jovenes-de-silo.'
+  sources:
+  - jueces-21
+  - it-silo
+  - it-jabes-galaad
+  checked_on: '2026-10-02'
+  status: verified
+- order: 4
+  place: benjamin
+  reference: Jue 21:23
+  date:
+    from: -1449
+    to: -1399
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre c. 1450 y c. 1400 a.e.c. (tiempo narrativo: pocos años después de morir Josué, con Finehás de sumo sacerdote)'
+  note: Llegada. Reconstruyen sus ciudades y se quedan a vivir en ellas.
+  reason: Jue 21:23. Suceso los-benjaminitas-se-llevan-a-las-jovenes-de-silo.
+  sources:
+  - jueces-21
+  - it-benjamin
+  checked_on: '2026-10-02'
+  status: verified

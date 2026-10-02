@@ -1,0 +1,253 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: israel-contra-benjamin
+name: Israel contra Benjamín
+person: null
+group: el ejército de las tribus de Israel
+reference: Jue 20:1–21:24
+date:
+  from: -1449
+  to: -1399
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre c. 1450 y c. 1400 a.e.c. (tiempo narrativo: pocos años después de morir Josué, con Finehás de sumo sacerdote)'
+companions: []
+summary: Las tribus se reúnen en Mizpá contra Guibeá. Entre Betel, donde consultan a Dios, y Guibeá pierden dos batallas;
+  en la tercera vencen, persiguen a Benjamín y queman sus ciudades. Lloran en Betel y acampan en Siló.
+reason: Jueces 20 y 21 dan las paradas en orden, con tres subidas a Betel. Perspicacia «Betel» cree que el Arca estaba allí
+  por la guerra. Fecha de sus sucesos (estudio 3; «Jueces, Libro de», «Orden del libro»).
+sources:
+- jueces-20
+- jueces-21
+- it-mizpa
+- it-betel
+- it-guibeah
+- it-baal-tamar
+- it-guidom
+- it-benjamin
+- it-silo
+- it-jueces
+- si-3
+- it-finehas
+checked_on: '2026-10-02'
+status: verified
+stops:
+- order: 1
+  place: mizpa-de-benjamin
+  reference: Jue 20:1-11
+  date:
+    from: -1449
+    to: -1399
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre c. 1450 y c. 1400 a.e.c. (tiempo narrativo: pocos años después de morir Josué, con Finehás de sumo sacerdote)'
+  note: Salida. Son 400.000, de Dan a Beer-Seba y de Galaad, y deciden no volver a casa hasta castigar a Guibeá.
+  reason: Jue 20:1-11. Suceso israel-se-reune-en-mizpa-contra-guibea; Perspicacia «Mizpá, Mizpé», núm. 3.
+  sources:
+  - jueces-20
+  - it-mizpa
+  checked_on: '2026-10-02'
+  status: verified
+- order: 2
+  place: betel
+  reference: Jue 20:18
+  date:
+    from: -1449
+    to: -1399
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre c. 1450 y c. 1400 a.e.c. (tiempo narrativo: pocos años después de morir Josué, con Finehás de sumo sacerdote)'
+  note: Preguntan a Dios quién irá primero; la respuesta es Judá.
+  reason: Jue 20:18. Suceso israel-pierde-la-primera-batalla-contra-benjamin; Perspicacia «Betel».
+  sources:
+  - jueces-20
+  - it-betel
+  checked_on: '2026-10-02'
+  status: verified
+- order: 3
+  place: guibea-de-benjamin
+  reference: Jue 20:19-22
+  date:
+    from: -1449
+    to: -1399
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre c. 1450 y c. 1400 a.e.c. (tiempo narrativo: pocos años después de morir Josué, con Finehás de sumo sacerdote)'
+  note: 'Primera batalla: caen 22.000 israelitas.'
+  reason: Jue 20:19-21. Suceso israel-pierde-la-primera-batalla-contra-benjamin.
+  sources:
+  - jueces-20
+  - it-guibeah
+  checked_on: '2026-10-02'
+  status: verified
+- order: 4
+  place: betel
+  reference: Jue 20:23
+  date:
+    from: -1449
+    to: -1399
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre c. 1450 y c. 1400 a.e.c. (tiempo narrativo: pocos años después de morir Josué, con Finehás de sumo sacerdote)'
+  note: Lloran hasta la tarde y vuelven a preguntar.
+  reason: Jue 20:23. Suceso israel-pierde-la-segunda-batalla-contra-benjamin.
+  sources:
+  - jueces-20
+  - it-betel
+  checked_on: '2026-10-02'
+  status: verified
+- order: 5
+  place: guibea-de-benjamin
+  reference: Jue 20:24, 25
+  date:
+    from: -1449
+    to: -1399
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre c. 1450 y c. 1400 a.e.c. (tiempo narrativo: pocos años después de morir Josué, con Finehás de sumo sacerdote)'
+  note: 'Segunda batalla: caen 18.000.'
+  reason: Jue 20:24, 25. Suceso israel-pierde-la-segunda-batalla-contra-benjamin.
+  sources:
+  - jueces-20
+  - it-guibeah
+  checked_on: '2026-10-02'
+  status: verified
+- order: 6
+  place: betel
+  reference: Jue 20:26-28
+  date:
+    from: -1449
+    to: -1399
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre c. 1450 y c. 1400 a.e.c. (tiempo narrativo: pocos años después de morir Josué, con Finehás de sumo sacerdote)'
+  note: Ayunan y ofrecen sacrificios ante el Arca, que sirve Finehás. Dios les promete la victoria.
+  reason: Jue 20:26-28. Suceso israel-ayuna-en-betel-y-consulta-a-jehova; Perspicacia «Betel».
+  sources:
+  - jueces-20
+  - it-betel
+  - it-finehas
+  checked_on: '2026-10-02'
+  status: verified
+- order: 7
+  place: guibea-de-benjamin
+  reference: Jue 20:29-32
+  date:
+    from: -1449
+    to: -1399
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre c. 1450 y c. 1400 a.e.c. (tiempo narrativo: pocos años después de morir Josué, con Finehás de sumo sacerdote)'
+  note: Ponen una emboscada y fingen huir por los caminos de Betel y de Guibeá.
+  reason: Jue 20:29-32. Suceso israel-vence-a-benjamin-y-quema-guibea.
+  sources:
+  - jueces-20
+  - it-guibeah
+  checked_on: '2026-10-02'
+  status: verified
+- order: 8
+  place: baal-tamar
+  reference: Jue 20:33-41
+  date:
+    from: -1449
+    to: -1399
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre c. 1450 y c. 1400 a.e.c. (tiempo narrativo: pocos años después de morir Josué, con Finehás de sumo sacerdote)'
+  note: Forman aquí mientras la emboscada toma y quema Guibeá; entonces se vuelven contra Benjamín.
+  reason: Jue 20:33. Suceso israel-vence-a-benjamin-y-quema-guibea; Perspicacia «Baal-tamar».
+  sources:
+  - jueces-20
+  - it-baal-tamar
+  checked_on: '2026-10-02'
+  status: verified
+- order: 9
+  place: guidom
+  reference: Jue 20:42-46
+  date:
+    from: -1449
+    to: -1399
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre c. 1450 y c. 1400 a.e.c. (tiempo narrativo: pocos años después de morir Josué, con Finehás de sumo sacerdote)'
+  note: Persiguen a los que huyen hacia el desierto hasta aquí. Mueren 25.000 benjaminitas ese día.
+  reason: Jue 20:45. Suceso israel-persigue-a-los-benjaminitas-hasta-guidom; Perspicacia «Guidom».
+  sources:
+  - jueces-20
+  - it-guidom
+  checked_on: '2026-10-02'
+  status: verified
+- order: 10
+  place: benjamin
+  reference: Jue 20:48
+  date:
+    from: -1449
+    to: -1399
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre c. 1450 y c. 1400 a.e.c. (tiempo narrativo: pocos años después de morir Josué, con Finehás de sumo sacerdote)'
+  note: Matan a quien queda en las ciudades y les prenden fuego.
+  reason: Jue 20:48. Suceso israel-quema-las-ciudades-de-benjamin.
+  sources:
+  - jueces-20
+  - it-benjamin
+  checked_on: '2026-10-02'
+  status: verified
+- order: 11
+  place: betel
+  reference: Jue 21:2-4
+  date:
+    from: -1449
+    to: -1399
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre c. 1450 y c. 1400 a.e.c. (tiempo narrativo: pocos años después de morir Josué, con Finehás de sumo sacerdote)'
+  note: Lloran porque falta una tribu y al día siguiente levantan un altar.
+  reason: Jue 21:2-4. Suceso israel-llora-en-betel-por-la-tribu-de-benjamin; Perspicacia «Betel».
+  sources:
+  - jueces-21
+  - it-betel
+  checked_on: '2026-10-02'
+  status: verified
+- order: 12
+  place: silo
+  reference: Jue 21:12-24
+  date:
+    from: -1449
+    to: -1399
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre c. 1450 y c. 1400 a.e.c. (tiempo narrativo: pocos años después de morir Josué, con Finehás de sumo sacerdote)'
+  note: Llegada. Desde el campamento se buscan esposas para los benjaminitas que quedan.
+  reason: Jue 21:12 pone el campamento en Siló, y 21:24 dice que de allí se va cada uno a su tierra. Sucesos israel-castiga-a-jabes-galaad
+    y los-benjaminitas-se-llevan-a-las-jovenes-de-silo; Perspicacia «Siló», núm. 2.
+  sources:
+  - jueces-21
+  - it-silo
+  checked_on: '2026-10-02'
+  status: verified

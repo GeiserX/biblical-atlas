@@ -1,0 +1,164 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: los-danitas-buscan-donde-vivir
+name: Los danitas, de Zorá a Lais
+person: null
+group: 'los danitas de Zorá y Estaol: primero cinco espías y después 600 guerreros con sus familias'
+reference: Jue 18:1-31
+date:
+  from: -1466
+  to: -1449
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1467 y c. 1450 a.e.c. (tiempo narrativo: poco antes de que los danitas tomaran Lais, en vida de Josué)'
+companions:
+- person: jonatan-levita
+  from: 6
+  to: 7
+summary: Sin tierra donde vivir, los danitas mandan cinco espías hasta Lais, que vuelven a Zorá. Después marchan 600 armados,
+  acampan junto a Quiryat-Jearim, roban los ídolos de Miqueas y toman Lais, que llaman Dan.
+reason: Jueces 18 da las paradas en orden. Perspicacia «Jueces, Libro de», «Orden del libro», sitúa la toma de Lais antes
+  de morir Josué; la conquista general acabó en 1467 (estudio 3). Ningún danita tiene nombre.
+sources:
+- jueces-18
+- it-jueces
+- it-dan
+- it-lais
+- it-mahane-dan
+- it-zora
+- it-estaol
+- si-3
+checked_on: '2026-10-02'
+status: verified
+stops:
+- order: 1
+  place: zora
+  reference: Jue 18:1, 2
+  date:
+    from: -1466
+    to: -1449
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1467 y c. 1450 a.e.c. (tiempo narrativo: poco antes de que los danitas tomaran Lais, en vida de Josué)'
+  note: Salida de los cinco espías, de Zorá y de la cercana Estaol.
+  reason: 'Jue 18:2: los cinco son hombres de Zorá y Estaol. Suceso los-espias-danitas-consultan-al-levita-de-miqueas.'
+  sources:
+  - jueces-18
+  - it-zora
+  - it-estaol
+  checked_on: '2026-10-02'
+  status: verified
+- order: 2
+  place: region-montanosa-de-efrain
+  reference: Jue 18:2-6
+  date:
+    from: -1466
+    to: -1449
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1467 y c. 1450 a.e.c. (tiempo narrativo: poco antes de que los danitas tomaran Lais, en vida de Josué)'
+  note: Pasan la noche en casa de Miqueas y piden al joven levita que consulte a Dios.
+  reason: 'Jue 18:2-6: duermen junto a la casa de Miqueas. Suceso los-espias-danitas-consultan-al-levita-de-miqueas.'
+  sources:
+  - jueces-18
+  - it-miqueas
+  checked_on: '2026-10-02'
+  status: verified
+- order: 3
+  place: dan
+  reference: Jue 18:7
+  date:
+    from: -1466
+    to: -1449
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1467 y c. 1450 a.e.c. (tiempo narrativo: poco antes de que los danitas tomaran Lais, en vida de Josué)'
+  note: Lais, que después se llamará Dan. Ven un pueblo tranquilo, confiado y sin aliados.
+  reason: Jue 18:7. Suceso los-espias-danitas-exploran-lais; Perspicacia «Lais».
+  sources:
+  - jueces-18
+  - it-lais
+  - it-dan
+  checked_on: '2026-10-02'
+  status: verified
+- order: 4
+  place: zora
+  reference: Jue 18:8-11
+  date:
+    from: -1466
+    to: -1449
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1467 y c. 1450 a.e.c. (tiempo narrativo: poco antes de que los danitas tomaran Lais, en vida de Josué)'
+  note: Los espías animan a sus hermanos a marchar. Salen de aquí 600 hombres armados.
+  reason: Jue 18:8 los hace volver a Zorá y Estaol, y 18:11 hace salir de allí a los 600. Sucesos los-espias-danitas-exploran-lais
+    y los-danitas-acampan-en-mahane-dan.
+  sources:
+  - jueces-18
+  - it-zora
+  checked_on: '2026-10-02'
+  status: verified
+- order: 5
+  place: mahane-dan
+  reference: Jue 18:11, 12
+  date:
+    from: -1466
+    to: -1449
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1467 y c. 1450 a.e.c. (tiempo narrativo: poco antes de que los danitas tomaran Lais, en vida de Josué)'
+  note: Ya van los 600 armados con sus familias. Perspicacia no sabe dónde estaba el campamento.
+  reason: 'Jue 18:12: acampan al oeste de Quiryat-Jearim, en Judá. Suceso los-danitas-acampan-en-mahane-dan; Perspicacia «Mahané-dan».'
+  sources:
+  - jueces-18
+  - it-mahane-dan
+  checked_on: '2026-10-02'
+  status: verified
+- order: 6
+  place: region-montanosa-de-efrain
+  reference: Jue 18:13-26
+  date:
+    from: -1466
+    to: -1449
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1467 y c. 1450 a.e.c. (tiempo narrativo: poco antes de que los danitas tomaran Lais, en vida de Josué)'
+  note: Se llevan los ídolos de Miqueas y a su sacerdote, Jonatán, que se une a ellos.
+  reason: Jue 18:13-26. Suceso los-danitas-roban-los-idolos-de-miqueas.
+  sources:
+  - jueces-18
+  - it-miqueas
+  checked_on: '2026-10-02'
+  status: verified
+- order: 7
+  place: dan
+  reference: Jue 18:27-31
+  date:
+    from: -1466
+    to: -1449
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1467 y c. 1450 a.e.c. (tiempo narrativo: poco antes de que los danitas tomaran Lais, en vida de Josué)'
+  note: Llegada. Queman Lais, la reconstruyen con el nombre de Dan y ponen allí la imagen robada.
+  reason: Jue 18:27-31. Sucesos los-danitas-toman-lesem y los-danitas-colocan-en-dan-la-imagen-de-miqueas.
+  sources:
+  - jueces-18
+  - it-dan
+  - it-lais
+  checked_on: '2026-10-02'
+  status: verified
