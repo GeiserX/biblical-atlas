@@ -12,6 +12,10 @@ date:
 narrative_order:
   series: jueces-apendice
   order: 21013
+  elapsed:
+    since: los-600-benjaminitas-se-refugian-en-el-penasco-de-rimon
+    months: 4
+    reason: 'Jue 20:47; 21:13, 14: pasan cuatro meses en el peñasco y vuelven cuando Israel les ofrece la paz.'
 places:
 - penasco-de-rimon
 people: []
@@ -38,5 +42,5 @@ history:
   change: 'Pasa de la serie jueces a jueces-apendice. Perspicacia «Jueces, Libro de», «Orden del libro», pone los capítulos
     19 a 21 poco después de morir Josué, aparte de los jueces; en su serie adelantaban Jue 1:8-11:3.'
   source: it-jueces
-checked_on: '2026-09-29'
+checked_on: '2026-10-02'
 status: verified

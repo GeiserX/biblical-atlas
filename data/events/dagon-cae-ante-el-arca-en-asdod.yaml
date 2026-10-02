@@ -12,6 +12,8 @@ date:
 narrative_order:
   series: 1-samuel
   order: 5001
+  elapsed:
+    reason: '1Sa 5:1-4: llevan el Arca de Ebenézer a Asdod, y Dagón cae al día siguiente. El texto no dice cuándo llegó.'
 places:
 - asdod
 - ebenezer
@@ -47,5 +49,5 @@ history:
   change: 'Empezaba c. 1180 y se ordenaba antes de Jefté. Ahora empieza c. 1173: Jefté juzga en los primeros años de Samuel,
     y aquí Samuel ya es un profeta conocido.'
   source: it-jefte
-checked_on: '2026-09-29'
+checked_on: '2026-10-02'
 status: verified

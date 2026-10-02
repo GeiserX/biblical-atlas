@@ -12,6 +12,9 @@ date:
 narrative_order:
   series: 1-samuel
   order: 4012
+  elapsed:
+    days: 0
+    reason: '1Sa 4:12-18: un benjaminita corre desde la batalla y llega a Siló aquel mismo día con la noticia.'
 places:
 - silo
 people:
@@ -42,5 +45,5 @@ history:
   change: 'Empezaba c. 1180 y se ordenaba antes de Jefté. Ahora empieza c. 1173: Jefté juzga en los primeros años de Samuel,
     y aquí Samuel ya es un profeta conocido.'
   source: it-jefte
-checked_on: '2026-09-29'
+checked_on: '2026-10-02'
 status: verified

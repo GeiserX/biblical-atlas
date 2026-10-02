@@ -12,6 +12,10 @@ date:
 narrative_order:
   series: 1-samuel
   order: 6001
+  elapsed:
+    since: los-filisteos-capturan-el-arca
+    months: 7
+    reason: '1Sa 6:1, 2: el Arca lleva siete meses en tierra filistea cuando llaman a sacerdotes y adivinos.'
 places:
 - filistea
 - bet-semes
@@ -47,5 +51,5 @@ history:
   change: 'Empezaba c. 1180 y se ordenaba antes de Jefté. Ahora empieza c. 1173: Jefté juzga en los primeros años de Samuel,
     y aquí Samuel ya es un profeta conocido.'
   source: it-jefte
-checked_on: '2026-09-29'
+checked_on: '2026-10-02'
 status: verified
