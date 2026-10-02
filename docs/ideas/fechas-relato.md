@@ -59,7 +59,7 @@ Medido con `relato_spans.mjs --compare` sobre cada suceso, carta, parada de viaj
 
 | Qué | Antes | Después |
 |---|---:|---:|
-| Jueces 19 a 21, los 18 sucesos | 50,0 años | 4,3 meses, hacia 1424 a.e.c. |
+| Jueces 19 a 21, los 18 sucesos | 50,0 años | 4,3 meses, hacia 1425 a.e.c. |
 | Viaje del levita y su concubina | 16,7 años | 7 días |
 | Viaje de Israel contra Benjamín | 36,1 años | 4,1 meses |
 | Viaje de los 600 benjaminitas | 19,4 años | 4,0 meses |
@@ -73,7 +73,7 @@ Medido con `relato_spans.mjs --compare` sobre cada suceso, carta, parada de viaj
 
 Cada cosa que se mueve, y por qué:
 
-- **36 sucesos, todos dentro de un bloque.** Los 18 de Jueces 19 a 21; los 16 de 1 Samuel 4:1 a 7:14, de la batalla de Ebenézer a la victoria de Mizpá; y la presentación de Samuel con el cántico de Ana, que van el mismo día (1Sa 2:1; Perspicacia «Ana»). Ningún suceso fuera de un bloque se mueve: «Jehová llama a Samuel» sigue en 1161-1157 a.e.c., como en `main`.
+- **36 sucesos, todos dentro de un bloque.** Los 18 de Jueces 19 a 21; los 16 de 1 Samuel 4:1 a 7:14, de la batalla de Ebenézer a la victoria de Mizpá; y la presentación de Samuel con el cántico de Ana, que van el mismo día (1Sa 2:1; Perspicacia «Ana»). Ningún suceso fuera de un bloque se mueve: «Jehová llama a Samuel» sigue en 1162-1159 a.e.c., como en `main`.
 - **34 paradas de los viajes de esos relatos**, que siguen a sus sucesos: el levita (6), Israel contra Benjamín (12), los 600 (4), los 12.000 (2), el Arca (7) y Ana con Samuel a Siló (3).
 - **13 paradas de otros viajes**: siete tomaban la ventana entera de un suceso narrativo más largo que su propia fecha anclada (Epafras en Colosas, Moisés en Madián, José en Egipto, Jefté al volver de Tob, Eliseo al volver del Jordán, Jesús en Nazaret a los 12 años, Timoteo en Corinto) y ahora quedan dentro de esa fecha; las otras seis son paradas vecinas de la misma persona, que se corren con ellas (tres de José, dos de la vuelta de Moisés a Egipto y una de Eliseo).
 - **16 estancias de persona**, copias de esos sucesos: Ana, Elcaná, Elí y Samuel en la presentación; Hofní y Finehás hijo de Elí en el campamento y la captura; Elí al morir; Josué el betsemita en Bet-Semes; Abinadab y Eleazar en Quiryat-Jearim; Samuel en Mizpá; Finehás hijo de Eleazar en Betel.
@@ -86,7 +86,7 @@ Antes, a escala de decenios: el levita, la reunión en Mizpá y las batallas van
 
 ![Jueces 19 y 20 antes, repartidos por decenios](img/fechas-relato/antes-jueces-1440.png)
 
-Después: el mismo relato cabe en unas semanas de 1449 a.e.c. y el mapa dibuja el viaje del levita.
+Después: el mismo relato cabe en unos meses de 1425 a.e.c., en medio de su tramo, y el mapa dibuja el viaje del levita y el del ejército.
 
 ![Jueces 19 y 20 después, en semanas](img/fechas-relato/despues-jueces-1440.png)
 
@@ -99,6 +99,12 @@ El Arca antes (decenios) y después (meses): de Ebenézer a Asdod, Gat y Ecrón 
 ![El Arca antes](img/fechas-relato/antes-arca-1440.png)
 
 ![El Arca después](img/fechas-relato/despues-arca-1440.png)
+
+La ficha de un suceso sin plazo en el texto, la reunión de Mizpá, dice que el texto no lo da y que el día de la línea solo enseña el orden; la de la oferta de paz enseña su plazo de cuatro meses. Un enlace de antes, con la fecha del reparto antiguo, abre con el cursor en el suceso.
+
+![La ficha de la reunión de Mizpá](img/fechas-relato/despues-mizpa-ficha-1440.png)
+
+![Un enlace de antes](img/fechas-relato/enlace-viejo-1440.png)
 
 En el teléfono, el Arca en Gat: [despues-arca-430.png](img/fechas-relato/despues-arca-430.png). Las demás capturas a 430 px están en la misma carpeta.
 
