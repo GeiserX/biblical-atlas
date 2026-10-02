@@ -34,7 +34,7 @@ Dentro de su YAML, cada hecho (un lugar, una persona, un viaje, una carta, un su
 
 Tres clases de objeto llevan fuentes y no son hechos anidados, porque no llevan `reason`: las fechas de `alternatives`, los `context_origin` y `context_destination` de una carta y las entradas de `history`. Toman el `checked_on` y el `status` de la ficha que los contiene.
 
-Las fuentes son de dos niveles. Nivel 1: la Traducción del Nuevo Mundo y las publicaciones de wol.jw.org y jw.org. Nivel 2: arqueología o investigación, y solo cuando jw.org las ha usado; nunca en contra del nivel 1. De OpenBible tomamos únicamente coordenadas. Nunca copiamos texto de jw.org: `summary`, `reason`, `note`, `text`, `explanation`, `disambiguation`, `unknown`, `weather`, `harvest` y cada frase de `not_claimed` tienen 40 palabras como mucho (`scripts/validate.py` lo comprueba) y se escriben con nuestras palabras, siempre con enlace.
+Las fuentes son de dos niveles. Nivel 1: la Traducción del Nuevo Mundo y las publicaciones de wol.jw.org y jw.org. Nivel 2: arqueología o investigación, y solo cuando jw.org las ha usado; nunca en contra del nivel 1. De OpenBible tomamos únicamente coordenadas; de Natural Earth, solo el cauce para medir el punto de un río. Nunca copiamos texto de jw.org: `summary`, `reason`, `note`, `text`, `explanation`, `disambiguation`, `unknown`, `weather`, `harvest` y cada frase de `not_claimed` tienen 40 palabras como mucho (`scripts/validate.py` lo comprueba) y se escriben con nuestras palabras, siempre con enlace.
 
 ## Fuentes
 
