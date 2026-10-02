@@ -72,6 +72,6 @@ Buscamos en `data/journeys` grupos que se dividen, mensajeros enviados a varios 
 - **Los correos de Ezequías** (2Cr 30:6-10) van «de ciudad en ciudad» por Efraín y Manasés hasta Zabulón: es un recorrido, no un reparto. Se queda como está.
 - **El censo de David** (2Sa 24:5-8) da su recorrido en orden, de Aroer a Beer-seba, y la vuelta a Jerusalén. Se queda como está.
 - **Judá y Simeón contra los cananeos** (Jue 1) cuenta una campaña, una ciudad tras otra. Se queda como está.
-- **Los simeonitas** (1Cr 4:39-43) se dividen: unos van a Guedor y quinientos al monte Seir. Ya son dos viajes, cada uno con su jefe.
+- **Los simeonitas** (1Cr 4:39-43) se dividen: unos van a Guedor y quinientos al monte Seír. Ya son dos viajes, cada uno con su jefe.
 - **La campaña de Tiglat-Piléser III** (2Re 15:29) nombra las ciudades que toma. Es el viaje de una persona y sigue el orden de sus sucesos. Se queda como está.
-- **La campaña de Senaquerib** (2Re 18:17; 19:8): desde Lakís manda al Rabsaqué a Jerusalén mientras él sigue a Libna. Jerusalén no es hoy una parada del viaje.
+- **La campaña de Senaquerib** (2Re 18:17; 19:8): desde Lakís manda al Rabsaqué a Jerusalén mientras él sigue a Libná. Jerusalén no es hoy una parada del viaje.
