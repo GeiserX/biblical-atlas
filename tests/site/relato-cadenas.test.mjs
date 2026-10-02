@@ -3,11 +3,15 @@
 //
 //  - The events that narrative_order.elapsed ties together form one block as long as the text says: Judges 19 to 21
 //    takes months, not decades; the Ark is seven months among the Philistines and twenty years at Kiriath-jearim.
-//  - The block stays inside the dates of its events and every event in it says it is estimated.
+//  - The block stays inside the dates of its events, in the middle of the stretch the even spread gave its events, and
+//    every event in it says it is estimated. Every event outside a block stays where the even spread puts it.
+//  - The drawing conventions: six hours between two events of one day, one day for a step the text gives no figure
+//    for, one day for the last event of a block.
 //  - Without elapsed the same events spread over decades again (the control that proves the first test can fail),
-//    and a block too long for its dates falls back to that spread without leaving them.
+//    and a block too long for its stretch falls back to exactly that spread and is reported (validate.py rejects it).
 //  - A stop with an anchored date is not stretched by an event that only the order of the account places: Epaphras
-//    leaves Colossae c. 59-61, not from 33.
+//    leaves Colossae c. 59-61, not from 33. A stop with a narrative date, or one stretched by an anchored event, is not
+//    cut.
 //
 //   BE_DATA_FILE=site/data.json node --test tests/site/relato-cadenas.test.mjs
 //
@@ -86,11 +90,16 @@ test('Judges 19 to 21 is one block of months, with the days and months the text 
 test('the Ark is seven months among the Philistines and twenty years at Kiriath-jearim', () => {
   const S = sitio();
   enOrden(S, '1-samuel');
-  cerca(S.w('los-filisteos-deciden-devolver-el-arca')[0] - S.w('los-filisteos-capturan-el-arca')[0], 7 * MES, 'seven months (1Sa 6:1)');
+  cerca(S.w('las-vacas-llevan-el-arca-a-bet-semes')[0] - S.w('los-filisteos-capturan-el-arca')[0], 7 * MES, 'seven months in Philistia, until the cows take it out (1Sa 6:1)');
   cerca(S.w('samuel-exhorta-a-israel-a-servir-solo-a-jehova')[0] - S.w('el-arca-queda-en-casa-de-abinadab')[0], 20, 'twenty years (1Sa 7:2)');
   const gat = S.w('jehova-castiga-a-gat-con-hemorroides');
-  assert.ok(gat[0] > S.w('los-filisteos-capturan-el-arca')[0] && gat[1] < S.w('los-filisteos-deciden-devolver-el-arca')[0], 'Gath falls inside the seven months');
-  const ss = S.BE.estancias('grupo:el-arca-en-filistea');
+  const consulta = S.w('los-filisteos-deciden-devolver-el-arca');
+  assert.ok(gat[0] > S.w('los-filisteos-capturan-el-arca')[0] && gat[1] <= consulta[0] && consulta[1] <= S.w('las-vacas-llevan-el-arca-a-bet-semes')[0], 'Gath and the consultation fall inside the seven months');
+  // Perspicacia «Samuel»: weaned perhaps at three at least. Hannah's song is of the same visit (1Sa 2:1, «Ana»).
+  const entrega = S.w('ana-lleva-a-samuel-a-silo');
+  assert.ok(entrega[0] - S.ev('nacimiento-de-samuel').fecha.desde >= 3, `Samuel is presented when weaned (${(entrega[0] + 1179).toFixed(2)} years after the start of his birth year)`);
+  cerca(S.w('cantico-de-ana')[0] - entrega[0], DIA / 4, 'the song is the same day as the presentation');
+  const ss = S.BE.estancias('grupo:el-arca-en-filistea').filter((x) => x.viaje).sort((x, y) => x.p.orden - y.p.orden);
   const filistea = ss.at(-2).b - ss[0].a;
   assert.ok(filistea < 0.7, `from Shiloh to Beth-shemesh the Ark takes ${(filistea * 12).toFixed(1)} months`);
 });
@@ -102,11 +111,44 @@ test('without elapsed the same accounts spread over decades: the tests above can
   assert.ok(S.w('los-filisteos-deciden-devolver-el-arca')[0] - S.w('los-filisteos-capturan-el-arca')[0] > 1, 'the seven months become years again');
 });
 
-test('a block too long for its dates falls back to the even spread and never leaves them', () => {
+test('a block too long for its stretch falls back to exactly the even spread, and is reported', () => {
   const S = sitio((D) => { D.eventos.find((e) => e.id === 'samuel-exhorta-a-israel-a-servir-solo-a-jehova').orden_relato.elapsed.years = 200; });
+  const L = sitio((D) => { for (const e of D.eventos) if (e.orden_relato?.serie === '1-samuel') delete e.orden_relato.elapsed; });
   enOrden(S, '1-samuel');
-  const d = S.w('samuel-exhorta-a-israel-a-servir-solo-a-jehova')[0] - S.w('el-arca-queda-en-casa-de-abinadab')[0];
-  assert.ok(d < 60, `no event is pushed out of its date (${d.toFixed(1)} years)`);
+  const roto = serie(S.D, '1-samuel').filter((e) => JSON.stringify(S.BE.ventanaEvento(e)) !== JSON.stringify(L.BE.ventanaEvento(L.ev(e.id))));
+  // Only the presentation and the song (a block of their own that fits) differ from the spread without elapsed.
+  assert.deepEqual(roto.map((e) => e.id), ['ana-lleva-a-samuel-a-silo', 'cantico-de-ana'], 'the Ark\'s block falls back to the spread');
+  assert.deepEqual([...S.BE.bloquesSinSitio()], ['los-filisteos-derrotan-a-israel-junto-a-ebenezer'], 'the block that did not fit is reported');
+  assert.deepEqual([...sitio().BE.bloquesSinSitio()], [], 'every block of the real data has its place');
+});
+
+test('a block sits in the middle of its stretch, and nothing outside a block moves', () => {
+  const S = sitio(), L = sitio((D) => { for (const e of D.eventos) delete e.orden_relato?.elapsed; });
+  // The stretch of the block: what the spread without elapsed gave its events.
+  const xs = serie(S.D, 'jueces-apendice'), wL = xs.map((e) => L.BE.ventanaEvento(L.ev(e.id))), wS = xs.map((e) => S.BE.ventanaEvento(e));
+  const antes = wS[0][0] - wL[0][0], despues = wL.at(-1)[1] - wS.at(-1)[1];
+  assert.ok(antes > 20 && Math.abs(antes - despues) < 2e-3, `the same room before and after Judges 19 to 21 (${antes.toFixed(3)} and ${despues.toFixed(3)} years)`);
+  // Every event that moves lies between the start of a tie (its since, or the event before) and the tied event.
+  const dentro = new Set();
+  for (const s of new Set(S.D.eventos.map((e) => e.orden_relato?.serie).filter(Boolean))) {
+    const ys = serie(S.D, s);
+    ys.forEach((e, j) => {
+      const el = e.orden_relato.elapsed;
+      if (!el) return;
+      const i = el.since ? ys.findIndex((y) => y.id === el.since) : j - 1;
+      for (let k = i; k <= j; k++) dentro.add(ys[k].id);
+    });
+  }
+  const fuera = S.D.eventos.filter((e) => !dentro.has(e.id) && JSON.stringify(S.BE.ventanaEvento(e)) !== JSON.stringify(L.BE.ventanaEvento(L.ev(e.id))));
+  assert.deepEqual(fuera.map((e) => e.id), [], 'no event outside a block moves');
+});
+
+test('the drawing conventions: six hours within a day, one day for a step with no figure, one day for the last event', () => {
+  const S = sitio();
+  cerca(S.w('un-anciano-de-efrain-acoge-al-levita-en-guibea')[0] - S.w('el-levita-no-quiere-pasar-la-noche-en-jebus')[0], DIA / 4, 'the same day: six hours later');
+  cerca(S.w('el-levita-envia-a-israel-los-pedazos-de-su-concubina')[0] - S.w('los-hombres-de-guibea-abusan-de-la-concubina-del-levita')[0], DIA, 'no figure in the text: one day later');
+  const ultimo = S.w('los-benjaminitas-se-llevan-a-las-jovenes-de-silo');
+  assert.ok(ultimo[1] - ultimo[0] <= DIA && ultimo[1] - ultimo[0] > DIA - 1.1e-3, `the last event of the block lasts one day (${((ultimo[1] - ultimo[0]) / DIA).toFixed(2)} days)`);
 });
 
 test('a stop with an anchored date is not stretched by an event placed only by the account', () => {
@@ -114,4 +156,12 @@ test('a stop with an anchored date is not stretched by an event placed only by t
   const colosas = S.BE.estancias('epafras').find((s) => s.key === 'epafras-a-roma/1');
   assert.ok(colosas, 'the first stop of Epaphras exists');
   assert.ok(colosas.a >= 59 && colosas.b <= 62, `Epaphras leaves Colossae c. 59-61 (${colosas.a.toFixed(2)} to ${colosas.b.toFixed(2)})`);
+  const parada = (quien, key) => { const p = S.BE.estancias(quien).find((s) => s.key === key); assert.ok(p, `${key} exists`); return p; };
+  // Narrative own date: it follows its event beyond c. 1400 (Judges 1).
+  const juda = parada(S.BE.duenoViaje(S.D.viajes.find((v) => v.id === 'juda-y-simeon-contra-los-cananeos')), 'juda-y-simeon-contra-los-cananeos/2');
+  assert.ok(juda.b > -1390, `a stop with a narrative date keeps its event's window (${juda.b.toFixed(2)})`);
+  // Stretched by an anchored event: Jehoiachin is taken in 617, with the whole of his event.
+  const joaquin = S.D.viajes.find((v) => v.id === 'joaquin-llevado-a-babilonia');
+  const j1 = parada(S.BE.duenoViaje(joaquin), 'joaquin-llevado-a-babilonia/1');
+  assert.ok(j1.a < -615.99, `a stop stretched by an anchored event is not cut (${j1.a.toFixed(3)})`);
 });
