@@ -140,8 +140,8 @@ relations:
   - romanos-16
   - it-aquila
   - it-prisca
-  reason: Hacia 56 Pablo escribe a Roma y saluda a Prisca y a Áquila, con la congregación que se reúne en su casa (Ro 16:3-5).
-    La nota de estudio de Ro 16:3 dice que habían vuelto tras morir Claudio.
+  reason: 'En su carta a Roma, hacia 56, Pablo los saluda con la congregación que se reúne en su casa (Ro 16:3-5): es el
+    propio texto el que pone allí su casa. La nota de Ro 16:3 añade que habían vuelto.'
   checked_on: '2026-10-02'
   status: verified
 - type: lived_in
