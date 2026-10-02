@@ -26,7 +26,7 @@ function filasParadas(v, ps) {
 /** Dónde va un acompañante que no hace todo el viaje: «de Listra a Berea y en Corinto». Vacío si va en todo. */
 function tramosDe(v, id) {
   const lugar = (n) => BE.L[(v.paradas || []).find((p) => p.orden === n)?.lugar]?.nombre || `la parada ${n}`;
-  return (v.companeros || []).filter((c) => typeof c === 'object' && c.persona === id)
+  return (v.tramos_companeros || []).filter((c) => c.persona === id)
     .map((c) => (c.desde === c.hasta ? `en ${lugar(c.desde)}` : `de ${lugar(c.desde)} a ${lugar(c.hasta)}`)).join(' y ');
 }
 function fichaViaje(id) {

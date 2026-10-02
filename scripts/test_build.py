@@ -155,6 +155,23 @@ class JourneysForTheSite(unittest.TestCase):
                                "companeros": ["silas", {"persona": "lucas", "desde": 7, "hasta": 10}]})
         self.assertEqual(leg.errors, [])
 
+    def test_companions_stay_a_list_of_ids(self):
+        """data.json keeps `companeros` as ids, the shape the atlas MCP server decodes; the ranges go apart."""
+        v = {"id": "x", "companeros": ["silas", {"persona": "lucas", "desde": 7, "hasta": 10},
+                                       {"persona": "lucas", "desde": 12, "hasta": 12}], "resumen": "y"}
+        self.assertEqual(build.tramos_aparte(v), {
+            "id": "x", "companeros": ["silas", "lucas"],
+            "tramos_companeros": [{"persona": "lucas", "desde": 7, "hasta": 10}, {"persona": "lucas", "desde": 12, "hasta": 12}],
+            "resumen": "y"})
+        self.assertIs(build.tramos_aparte({"id": "z", "companeros": ["silas"]})["companeros"][0], "silas")
+
+    def test_every_journey_of_data_has_companions_as_ids(self):
+        datos, _ = build.cargar(HERE.parent / "data")
+        salida, _, _ = build.componer(datos, "2026-10-02")
+        malos = [v["id"] for v in salida["viajes"] if not all(isinstance(c, str) for c in v.get("companeros") or [])]
+        self.assertEqual(malos, [])
+        self.assertTrue(any(v.get("tramos_companeros") for v in salida["viajes"]), "the ranges reach data.json")
+
 
 if __name__ == "__main__":
     unittest.main(verbosity=1)

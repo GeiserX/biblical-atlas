@@ -82,7 +82,7 @@ Con `candidates`, `lat`, `lon`, `coord_source` y `coord_url` pueden ser `null` y
 
 Quien viaja es una persona con ficha (`person`) o un grupo sin ficha: `person: null` y `group`, un texto de 40 palabras como mucho («el Arca del pacto», «los 600 benjaminitas»). Uno de los dos, nunca los dos. Un grupo no lleva marcador de viajero ni carril; la leyenda y la ficha dicen su `group`.
 
-Cada entrada de `companions` es un id de persona, si va en todo el viaje, o `{person, from, to}` con el número de la parada donde se une y el de la parada donde se separa. Una persona puede ir en dos tramos que no se tocan. El modo lectura y la ficha de una parada la ponen solo en las paradas de su tramo.
+Cada entrada de `companions` es un id de persona, si va en todo el viaje, o `{person, from, to}` con el número de la parada donde se une y el de la parada donde se separa. Una persona puede ir en dos tramos que no se tocan. El modo lectura y la ficha de una parada la ponen solo en las paradas de su tramo. En `data.json`, `companeros` sigue siendo una lista de ids, la forma que lee el servidor MCP del atlas, y los tramos van aparte en `tramos_companeros`.
 
 ```yaml
 companions:

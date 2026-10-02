@@ -676,17 +676,16 @@ function nombreDeDueno(dueno) {
   const v = (BE.D.viajes || []).find((x) => x.id === dueno.slice(6));
   return v ? nombreDueno(v, true) : dueno;
 }
-/** Acompañantes de un viaje: un id va en todo el viaje; { persona, desde, hasta }, de la parada desde a la parada
-    hasta. Con `orden`, solo los que van en esa parada. Ids sin repetir, en el orden de los datos. */
+/** Acompañantes de un viaje: los ids de `companeros`. Quien tiene tramos en `tramos_companeros` ({ persona, desde,
+    hasta }) va solo de la parada desde a la parada hasta; los demás, en todo el viaje. Con `orden`, solo los que van
+    en esa parada. Ids sin repetir, en el orden de los datos. */
 function acompanantes(v, orden = null) {
-  const out = [];
-  for (const c of v?.companeros || []) {
-    const id = typeof c === 'string' ? c : c?.persona;
-    if (!id || out.includes(id)) continue;
-    if (orden != null && typeof c === 'object' && !(c.desde <= orden && orden <= c.hasta)) continue;
-    out.push(id);
-  }
-  return out;
+  const tramos = v?.tramos_companeros || [];
+  return [...new Set(v?.companeros || [])].filter((id) => {
+    if (orden == null) return true;
+    const ts = tramos.filter((c) => c.persona === id);
+    return !ts.length || ts.some((c) => c.desde <= orden && orden <= c.hasta);
+  });
 }
 
 Object.assign(BE, {
