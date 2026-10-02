@@ -504,7 +504,7 @@ Escribe el aviso y sale con 0. Cada aviso tiene un código:
 | `type_without_role` | Un suceso con `type` y sin el papel de ese tipo, salvo con `roles: {}`. | 0 |
 | `shared_point` | Un río, un mar o un valle a menos de 0,5 km de otro lugar que no es una región, provincia, país, reino, desierto, llanura o valle (los que el mapa rotula aparte), y su `coord_note` no nombra a ese lugar. | 4 |
 
-Son 225 avisos. Cada uno se va con una decisión de la sección 16.
+Son 225 avisos tras la migración; `shared_point` llegó después y entró con 4. Cada uno se va con una decisión de la sección 16.
 
 Las ocho relaciones de parentesco que hoy están al revés salen todas. Seis salen como `outside_pending` y dos como `wrong_owner`, las de Áquila y Félix, que llaman «esposo» a su esposa. No hace falta comparar la palabra con el sexo de nadie, porque `husband` solo puede escribirse en la ficha que no manda.
 
