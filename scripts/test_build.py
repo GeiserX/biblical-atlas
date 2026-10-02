@@ -166,11 +166,31 @@ class JourneysForTheSite(unittest.TestCase):
         self.assertIs(build.tramos_aparte({"id": "z", "companeros": ["silas"]})["companeros"][0], "silas")
 
     def test_every_journey_of_data_has_companions_as_ids(self):
-        datos, _ = build.cargar(HERE.parent / "data")
-        salida, _, _ = build.componer(datos, "2026-10-02")
-        malos = [v["id"] for v in salida["viajes"] if not all(isinstance(c, str) for c in v.get("companeros") or [])]
+        malos = [v["id"] for v in self.salida()["viajes"] if not all(isinstance(c, str) for c in v.get("companeros") or [])]
         self.assertEqual(malos, [])
-        self.assertTrue(any(v.get("tramos_companeros") for v in salida["viajes"]), "the ranges reach data.json")
+        self.assertTrue(any(v.get("tramos_companeros") for v in self.salida()["viajes"]), "the ranges reach data.json")
+
+    def test_sqlite_keeps_the_group_and_the_ranges(self):
+        import sqlite3
+        with tempfile.TemporaryDirectory() as d:
+            ruta = Path(d) / "atlas.sqlite"
+            build.escribir_sqlite(self.salida(), ruta)
+            con = sqlite3.connect(ruta)
+            fila = con.execute("SELECT persona_id, grupo FROM viajes WHERE id = 'el-arca-en-filistea'").fetchone()
+            tramos = con.execute("SELECT companeros, tramos_companeros FROM viajes WHERE id = 'segundo-viaje'").fetchone()
+            con.close()
+        self.assertEqual(fila, (None, "el Arca del pacto"))
+        self.assertIn('"silas"', tramos[0])
+        self.assertIn('"desde": 16', tramos[1])
+
+    _salida = None
+
+    @classmethod
+    def salida(cls):
+        if cls._salida is None:
+            datos, _ = build.cargar(HERE.parent / "data")
+            cls._salida = build.componer(datos, "2026-10-02")[0]
+        return cls._salida
 
 
 if __name__ == "__main__":

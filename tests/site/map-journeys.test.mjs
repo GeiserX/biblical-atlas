@@ -193,6 +193,17 @@ test('1B: a group journey (the Ark) has its own owner, route, legend name and ca
   assert.equal(r.nombre, 'El Arca del pacto', 'the legend names the group');
   const d = await drawnAt(page, r.t);
   assert.ok(d.otros.includes('el-arca-en-filistea'), `drawn at ${r.t.toFixed(2)} as another traveller's journey: ${d.otros}`);
+  assert.ok(d.otros.length > 1 && d.leyenda.includes('El Arca del pacto'), `the legend row names the group: «${d.leyenda}»`);
+  const g = await page.evaluate(() => {
+    const { BE } = window.__be;
+    const v = BE.D.viajes.find((x) => x.id === 'el-arca-en-filistea');
+    const s = BE.paradasDe(v).find((x) => x.p.orden === 1);
+    const w = BE.ventanaEvento(BE.D.eventos.find((e) => e.id === 'los-filisteos-capturan-el-arca'));
+    const lugar = BE.tipo('lugar').ficha('asdod').replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ');
+    return { s: s && [s.a, s.b], w, lugar };
+  });
+  assert.ok(g.s && g.w && g.s[0] < g.w[1] && g.w[0] < g.s[1], `Ebenézer follows the capture of the Ark: stop ${g.s}, event ${g.w}`);
+  assert.match(g.lugar, /El Arca del pacto · /, 'the Asdod card names the group in its journey row');
   assert.ok(!d.pabloRastro.includes('el-arca-en-filistea'));
   const marcas = await page.evaluate(() => [...document.querySelectorAll('.viajero')].map((e) => e.dataset.sel));
   assert.ok(!marcas.some((m) => /grupo|arca/i.test(m)), `no traveller marker for a group: ${marcas}`);
@@ -232,6 +243,20 @@ test('2D: a segment that reaches or leaves a deduced stop is dotted, the verifie
   const moab = await read('campana-contra-moab');
   assert.equal(moab.deducidos, 0, 'a journey whose stops are all verified has no dotted segment');
   assert.doesNotMatch(moab.leyenda, /De puntos/);
+  // Pablo's journey in course (be-hecho, be-falta): his last years, with Creta and Nicópolis pending.
+  const pablo = await page.evaluate(async () => {
+    const { map, BE, setT, seleccionar } = window.__be;
+    seleccionar(null, { mover: false, encuadrar: false });
+    setT(62.5);
+    await new Promise((r) => requestAnimationFrame(() => requestAnimationFrame(r)));
+    const V = BE.viajeActual(BE.dondeEsta(62.5));
+    const fs = [...(await map.getSource('be-hecho').getData()).features, ...(await map.getSource('be-falta').getData()).features].filter((f) => f.properties.viaje === V?.id);
+    return { V: V?.id, n: fs.length, deducidos: fs.filter((f) => f.properties.deducido).length,
+      filtros: Object.fromEntries(['be-rastro', 'be-rastro-incierto', 'be-hecho', 'be-hecho-incierto'].map((id) => [id, JSON.stringify(map.getFilter(id))])) };
+  });
+  assert.equal(pablo.V, 'ultimos-anos-de-pablo');
+  assert.ok(pablo.deducidos >= 1 && pablo.n > pablo.deducidos, `Pablo's route has dotted and solid segments: ${pablo.deducidos} of ${pablo.n}`);
+  for (const [id, f] of Object.entries(pablo.filtros)) assert.match(f, /deducido/, `${id} leaves the dotted segments to its dotted layer: ${f}`);
   assert.deepEqual(page.pageErrors, []);
   await page.context().close();
 });
@@ -251,6 +276,18 @@ test('3C: a companion shows only on the stops of his range, in reading mode and 
   assert.deepEqual(en(15), ['pablo'], 'Pablo reaches Atenas alone (Hch 17:14, 15)');
   for (const p of ['silas', 'timoteo', 'aquila', 'priscila']) assert.ok(en(16).includes(p), `${p} in Corinto: ${en(16)}`);
   assert.ok(!/Con Pablo en esta parada/.test(r.atenas), 'the Atenas card names no companion');
+  const t = await page.evaluate(() => {
+    const { BE } = window.__be;
+    const lib = BE.LIBROS.find((l) => l.num === 44);
+    const en20 = Object.fromEntries(BE.lectura.pasajes(lib, 20).filter((x) => x.sel.startsWith('parada:tercer-viaje/')).map((x) => [x.sel.split('/')[1], x.personas]));
+    const viaje = BE.tipo('viaje').ficha('segundo-viaje').replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ');
+    const juntos = BE.aristas('lucas').filter((a) => a.sel.startsWith('persona:') && /^viajan juntos · Segundo viaje/.test(a.verbo)).map((a) => a.sel);
+    return { en20, viaje, juntos };
+  });
+  assert.match(t.viaje, /Timoteo \(de Listra a Berea y en Corinto\)/, 'the journey card says where Timoteo goes');
+  assert.ok(t.juntos.includes('persona:silas') && !t.juntos.includes('persona:aquila'), `Lucas travels with Silas, never with Áquila: ${t.juntos}`);
+  assert.ok(t.en20[8] && !t.en20[8].includes('sopater') && t.en20[8].includes('lucas'), `in Filipos, Lucas and not the seven of Hch 20:4: ${t.en20[8]}`);
+  assert.ok(t.en20[9]?.includes('sopater'), `Sópater waits in Troas: ${t.en20[9]}`);
   assert.match(r.corinto, /Con Pablo en esta parada.*Silas/);
   // Choosing Lucas still draws the second journey on the map, but highlights only the stops of his range.
   const d = await drawnAt(page, 30.5, { tipo: 'persona', id: 'lucas' });

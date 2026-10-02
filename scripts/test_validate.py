@@ -124,6 +124,11 @@ class QuienViaja(unittest.TestCase):
     def test_persona_y_grupo_a_la_vez_es_error(self):
         self.assertTrue(any("a la vez" in e for e in errores_viaje(group="los 600 benjaminitas")))
 
+    def test_grupo_de_mas_de_40_palabras_es_error(self):
+        out = []
+        validate.textos_largos({"person": None, "group": " ".join(["grupo"] * 41)}, "viaje", out.append)
+        self.assertTrue(any("viaje.group: 41 palabras" in e for e in out), out)
+
     def test_grupo_vacio_es_error(self):
         self.assertTrue(any("group debe ser un texto" in e for e in errores_viaje(person=None, group=" ")))
 
@@ -158,6 +163,12 @@ class Acompanantes(unittest.TestCase):
         self.assertTrue(any("ya va en las paradas 1 a 2" in e for e in errores_viaje(companions=cs)))
         cs = [{"person": "silas", "from": 4, "to": 4}, {"person": "silas", "from": 2, "to": 3}]
         self.assertTrue(any("ya va en las paradas 4 a 4" in e for e in errores_viaje(companions=cs)))
+
+    def test_paradas_que_no_son_numeros_son_error(self):
+        for a, b in (("2", 3), (2, "3"), (1.5, 3), (True, 3)):
+            with self.subTest(desde=a, hasta=b):
+                cs = [{"person": "silas", "from": a, "to": b}]
+                self.assertTrue(any("1 <= from <= to <= 5" in e for e in errores_viaje(companions=cs)))
 
     def test_todo_el_viaje_se_escribe_con_el_id(self):
         cs = [{"person": "silas", "from": 1, "to": 5}]
