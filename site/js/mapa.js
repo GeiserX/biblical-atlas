@@ -1763,7 +1763,8 @@ function tapas() {
     tanto», nunca debajo. En el móvil la hoja inferior tapa el fondo del mapa. */
 function rellenoEncuadre(caja = [[0, 0], [0, 0]]) {
   const c = map.getContainer(), W = c.clientWidth, H = c.clientHeight, base = map.getPadding();
-  const borde = estrecha() ? { top: 44, bottom: Math.min(altoHoja() + 30, H * 0.6), left: 24, right: 50 } : { top: 44, bottom: 30, left: 40, right: 60 };
+  // Los bordes dejan sitio a la píldora de números de un recorrido («1·5·6·7·8», unos 75 px), que va encima de su lugar.
+  const borde = estrecha() ? { top: 56, bottom: Math.min(altoHoja() + 30, H * 0.6), left: 44, right: 50 } : { top: 56, bottom: 30, left: 64, right: 70 };
   const ts = tapas(), M = 24;
   // La forma de la caja en píxeles al zoom 0; un punto cuenta como una caja diminuta, y gana el hueco más ancho y alto.
   const [[o, s], [e, n]] = caja;
@@ -1777,8 +1778,9 @@ function rellenoEncuadre(caja = [[0, 0], [0, 0]]) {
     });
     const w = W - base.left - base.right - p.left - p.right, h = H - base.top - base.bottom - p.top - p.bottom;
     if (w < 20 || h < 20) continue;
+    // A igual tamaño de lo encuadrado (un punto cabe igual en muchos huecos), gana el hueco más grande.
     const z = Math.min(w / bw, h / bh);
-    if (!mejor || z > mejor.z) mejor = { z, p };
+    if (!mejor || z > mejor.z * 1.001 || (z > mejor.z / 1.001 && w * h > mejor.area)) mejor = { z, p, area: w * h };
   }
   // caber() no encoge lo elegido: devolvería lo encuadrado bajo la leyenda.
   return mejor?.p || caber(borde);
@@ -1842,7 +1844,7 @@ function topeRelieve(lon, lat) {
 }
 /** Distancia en km de la diagonal de una caja [[oeste, sur], [este, norte]]. */
 const diagonalKm = ([[o, s], [e, n]]) => Math.hypot((e - o) * 111 * Math.cos((((s + n) / 2) * Math.PI) / 180), (n - s) * 111);
-function encuadrarLugares(ids) {
+function encuadrarLugares(ids, { duracion = 700 } = {}) {
   if (!map) return;
   // Antes de que cargue el mapa no hay leyenda ni «Mientras tanto» que esquivar: al cargar se encuadra otra vez.
   encuadrePendiente = mapaListo && marcaPablo ? null : { ids, sel: BE.selTexto(E.sel) };
@@ -1865,7 +1867,7 @@ function encuadrarLugares(ids) {
     const pegado = l && !MAYORES.has(l.id) && Object.values(BE.L).some((o) => o !== l && o.lat != null && !REGION.has(o.tipo) && o.precision !== 'zona' && Math.hypot((o.lon - x) * 94, (o.lat - y) * 111) < 3);
     const tope = topeRelieve(x, y);
     const cerca = !l || REGION.has(l.tipo) ? 5.5 : pegado ? Math.min(12.5, tope) : 7.5;
-    map.fitBounds([[x - 0.01, y - 0.01], [x + 0.01, y + 0.01]], { padding, maxZoom: Math.max(cerca, Math.min(map.getZoom(), tope)), duration: 700 });
+    map.fitBounds([[x - 0.01, y - 0.01], [x + 0.01, y + 0.01]], { padding, maxZoom: Math.max(cerca, Math.min(map.getZoom(), tope)), duration: duracion });
     return;
   }
   // Lo que cabe en unos kilómetros (la última semana en Jerusalén) se acerca hasta que los rótulos se separan.
@@ -1879,7 +1881,7 @@ function encuadrarLugares(ids) {
   const cam = map.cameraForBounds(caja, { padding, maxZoom: tope });
   if (cam && conForma && cam.zoom < ZOOM_FORMA) {
     const centro = [(caja[0][0] + caja[1][0]) / 2, latDeY((mercY(caja[0][1]) + mercY(caja[1][1])) / 2)];
-    map.easeTo({ center: centro, zoom: ZOOM_FORMA, offset: [(padding.left - padding.right) / 2, (padding.top - padding.bottom) / 2], duration: 700 });
+    map.easeTo({ center: centro, zoom: ZOOM_FORMA, offset: [(padding.left - padding.right) / 2, (padding.top - padding.bottom) / 2], duration: duracion });
     return;
   }
   if (cam) {
@@ -1892,11 +1894,11 @@ function encuadrarLugares(ids) {
     const zN = zoomPara(libre / 2 + padding.top, mercY(MUNDO.norte) - mercY(lat));
     const z = Math.min(ZOOM_MAX, Math.max(zS, zN));
     if (z > cam.zoom + 0.05) {
-      map.easeTo({ center: [lon, lat], zoom: z, offset: [(padding.left - padding.right) / 2, (padding.top - padding.bottom) / 2], duration: 700 });
+      map.easeTo({ center: [lon, lat], zoom: z, offset: [(padding.left - padding.right) / 2, (padding.top - padding.bottom) / 2], duration: duracion });
       return;
     }
   }
-  map.fitBounds(caja, { padding, maxZoom: tope, duration: 700 });
+  map.fitBounds(caja, { padding, maxZoom: tope, duration: duracion });
 }
 /** Resalta en el mapa estos lugares por encima de lo que implique la selección. resaltar(null) vuelve a la selección. */
 function resaltar(ids) {
@@ -1913,7 +1915,7 @@ function iniciar() {
     crearPanelesMapa();
     crearMapa();
     // Con el encuadre de la entrada ya puesto (una recarga), Pablo no lo cambia.
-    map.once('load', () => { crearMarcas(); sucio.mapa = sucio.etiquetas = true; programar(); pintarSituacion(); requestAnimationFrame(() => requestAnimationFrame(() => { if (!marcoDeInicio) mostrarPablo(); encuadrarAlCargar(); })); });
+    map.once('load', () => { crearMarcas(); encuadrarAlCargar(); sucio.mapa = sucio.etiquetas = true; programar(); pintarSituacion(); requestAnimationFrame(() => requestAnimationFrame(() => { if (!marcoDeInicio) mostrarPablo(); })); });
   }
   iniciarCortina();
   ponerMapa(E.mapa, false);
@@ -1944,13 +1946,13 @@ function encuadreDeInicio() {
   else mostrarPablo();
 }
 /** Lo último que se pidió encuadrar antes de que cargara el mapa, con la selección de entonces: al cargar, con la leyenda
-    y «Mientras tanto» ya pintadas, se encuadra otra vez si la selección sigue siendo esa. El encuadre guardado de una
-    entrada (ponerMarco) lo anula. */
+    y «Mientras tanto» ya pintadas, se encuadra otra vez, sin animar, si la selección sigue siendo esa. El encuadre
+    guardado de una entrada (ponerMarco) lo anula. */
 let encuadrePendiente = null;
 function encuadrarAlCargar() {
   const p = encuadrePendiente;
   encuadrePendiente = null;
-  if (p && p.sel === BE.selTexto(E.sel)) encuadrarLugares(p.ids);
+  if (p && p.sel === BE.selTexto(E.sel)) encuadrarLugares(p.ids, { duracion: 0 });
 }
 /** Pone el mapa en el encuadre que guardó una entrada del historial, sin animar, y sin que un salto en el tiempo de la
     misma vuelta lo cambie (vigilarSalto). */
