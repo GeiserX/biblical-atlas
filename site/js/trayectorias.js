@@ -185,7 +185,7 @@ function sucesosDeParadas(persona, P) {
     // Una fecha anclada gana a un tramo narrativo: la parada no sale de la suya aunque la alargue un suceso que solo el
     // orden del relato sitúa (Epafras enseña en Colosas entre 33 y 61; la parada es su salida hacia Roma, c. 59-61).
     const propia = w && narr && s.p.fecha?.tipo === 'anclada' && ventanaParada(s.p.fecha);
-    if (propia && Math.max(w[0], propia[0]) < Math.min(w[1], propia[1])) w = [Math.max(w[0], propia[0]), Math.min(w[1], propia[1])];
+    if (propia) w = Math.max(w[0], propia[0]) < Math.min(w[1], propia[1]) ? [Math.max(w[0], propia[0]), Math.min(w[1], propia[1])] : propia;
     if (w) { m.set(s, { w, exacta: true }); continue; }
     const r = vs[0], f = s.p.fecha || {};
     if (!r || !ts || s.narrativa || f.detalle) continue;
@@ -733,8 +733,11 @@ function colocar(tanda, lo, hi, m, cads = []) {
     const a = ws[0]?.[0], b = ws.at(-1)?.[1];
     if (ws.some((w) => !w) || !(b - a >= c.largo)) { sinSitio.add(c.xs[0].e.id); continue; }
     const t = a + (b - a - c.largo) / 2;   // en medio: es lo que menos afirma sobre el año
+    const nuevas = c.xs.map((x, k) => [t + c.ini[k], t + c.ini[k] + c.dur[k] - Math.min(1e-3, c.dur[k] / 10)]);
+    // Cada suceso dentro de su propia fecha, o la cadena no va.
+    if (nuevas.some((w, k) => w[0] < c.xs[k].v[0] - 1e-9 || w[1] > c.xs[k].v[1] + 1e-9)) { sinSitio.add(c.xs[0].e.id); continue; }
     c.xs.forEach((x, k) => {
-      const corte = Math.min(1e-3, c.dur[k] / 10), w = [t + c.ini[k], t + c.ini[k] + c.dur[k] - corte];
+      const w = nuevas[k], corte = Math.min(1e-3, c.dur[k] / 10);
       if (w[0] > x.v[0] + 1e-6 || w[1] < x.v[1] - corte - 1e-6) m.set(x.e, w); else m.delete(x.e);
     });
   }

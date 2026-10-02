@@ -120,6 +120,10 @@ test('a block too long for its stretch falls back to exactly the even spread, an
   assert.deepEqual(roto.map((e) => e.id), ['ana-lleva-a-samuel-a-silo', 'cantico-de-ana'], 'the Ark\'s block falls back to the spread');
   assert.deepEqual([...S.BE.bloquesSinSitio()], ['los-filisteos-derrotan-a-israel-junto-a-ebenezer'], 'the block that did not fit is reported');
   assert.deepEqual([...sitio().BE.bloquesSinSitio()], [], 'every block of the real data has its place');
+  // A member with a narrower date than the stretch: the middle of the stretch would take it out of its date.
+  const N = sitio((D) => Object.assign(D.eventos.find((e) => e.id === 'los-benjaminitas-se-llevan-a-las-jovenes-de-silo').fecha, { desde: -1399, hasta: -1399 }));
+  enOrden(N, 'jueces-apendice');
+  assert.deepEqual([...N.BE.bloquesSinSitio()], ['un-levita-va-a-belen-a-buscar-a-su-concubina'], 'a block that would take a member out of its date is reported');
 });
 
 test('a block sits in the middle of its stretch, and nothing outside a block moves', () => {

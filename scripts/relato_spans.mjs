@@ -7,7 +7,7 @@
 // data.json defaults to site/data.json (python3 scripts/build.py writes it). Columns: kind (series run or journey), years
 // on the timeline, events or stops, chapters, first and last passage, id, the date as the data writes it.
 // --dump writes where every event, letter, journey stop and person's stay falls, rounded to 1e-6 years; --compare lists
-// what moved between two dumps and exits 1 if anything did.
+// what moved between two dumps and exits 1 if anything did, 2 without both files.
 import fs from 'node:fs';
 import path from 'node:path';
 import vm from 'node:vm';
@@ -51,7 +51,13 @@ function compare(a, b) {
 const args = process.argv.slice(2);
 const opt = (name) => { const i = args.indexOf(name); return i < 0 ? null : args.splice(i, 2)[1]; };
 const cmp = args.indexOf('--compare');
-if (cmp >= 0) process.exit(compare(args[cmp + 1], args[cmp + 2]) ? 1 : 0);
+if (cmp >= 0) {
+  if (!args[cmp + 1] || !args[cmp + 2]) {
+    console.error('usage: node scripts/relato_spans.mjs --compare before.json after.json');
+    process.exit(2);
+  }
+  process.exit(compare(args[cmp + 1], args[cmp + 2]) ? 1 : 0);
+}
 const top = +(opt('--top') || 40), dump = opt('--dump');
 const BE = load(args[0] || path.join(ROOT, 'site/data.json'));
 const D = BE.D;
