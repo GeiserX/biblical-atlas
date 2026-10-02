@@ -1,6 +1,7 @@
 # Pares de personas que comparten una entrada de name o names y no son homónimos. Cualquier otro par que comparte
 # nombre es un error de scripts/validate.py si no lleva distinct_from en las dos fichas o un same_as entre ellas.
-# Cada entrada dice por qué el nombre compartido no los hace homónimos. Comprobado el 2026-10-02.
+# Cada entrada exime al par solo del nombre de su campo name y dice por qué ese nombre no los hace homónimos;
+# si comparten otro nombre, la regla lo sigue mirando. Comprobado el 2026-10-02.
 
 - people: [juan-apostol, santiago-hijo-de-zebedeo]
   name: Boanerges

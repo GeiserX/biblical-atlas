@@ -111,10 +111,14 @@ def persona(pid, nombre, distinct_from=None, same_as=None, otros=()):
     return o
 
 
-def errores_homonimos(*personas, excepciones=frozenset()):
+def errores_homonimos(*personas, excepciones=()):
     out = []
-    validate.validar_homonimos({"people": list(personas)}, out.append, set(excepciones))
+    validate.validar_homonimos({"people": list(personas)}, out.append, list(excepciones))
     return out
+
+
+def excepcion(a, b, nombre="Boanerges", porque="Sobrenombre que comparten."):
+    return {"people": [a, b], "name": nombre, "reason": porque}
 
 
 class Homonimos(unittest.TestCase):
@@ -148,13 +152,39 @@ class Homonimos(unittest.TestCase):
         self.assertIn("a la vez en distinct_from y en un same_as", e[0])
 
     def test_una_excepcion_vale_y_caduca_si_ya_no_comparten_nombre(self):
-        par = frozenset(("juan", "santiago"))
         juan = persona("juan", "Juan", otros=["Boanerges"])
         self.assertEqual(errores_homonimos(juan, persona("santiago", "Santiago", otros=["Boanerges"]),
-                                           excepciones={par}), [])
-        e = errores_homonimos(juan, persona("santiago", "Santiago"), excepciones={par})
+                                           excepciones=[excepcion("juan", "santiago")]), [])
+        e = errores_homonimos(juan, persona("santiago", "Santiago"), excepciones=[excepcion("juan", "santiago")])
         self.assertEqual(len(e), 1, e)
         self.assertIn("la excepción sobra", e[0])
+
+    def test_una_excepcion_solo_exime_su_nombre(self):
+        juan = persona("juan", "Juan", otros=["Boanerges"])
+        santiago = persona("santiago", "Santiago", otros=["Boanerges", "Juan"])
+        e = errores_homonimos(juan, santiago, excepciones=[excepcion("juan", "santiago")])
+        self.assertEqual(len(e), 1, e)
+        self.assertIn("comparte el nombre «Juan» con santiago", e[0])
+
+    def test_una_excepcion_con_un_id_que_no_existe_es_error(self):
+        e = errores_homonimos(persona("juan", "Juan"), excepciones=[excepcion("juan", "nadie")])
+        self.assertEqual(len(e), 1, e)
+        self.assertIn("ids de personas que existen", e[0])
+
+    def test_una_excepcion_que_no_es_un_par_de_ids_es_error_y_no_rompe(self):
+        for gente in [[["juan"], "santiago"], ["juan"], ["juan", "juan"], "juan", None]:
+            with self.subTest(gente=gente):
+                e = errores_homonimos(persona("juan", "Juan"), persona("santiago", "Santiago"),
+                                      excepciones=[{"people": gente, "name": "Juan", "reason": "x"}])
+                self.assertEqual(len(e), 1, e)
+                self.assertIn("par de dos ids distintos", e[0])
+
+    def test_cuenta_el_nombre_de_name_aunque_no_vaya_en_names(self):
+        maria = {"id": "maria-a", "_fichero": "data/people/maria-a.yaml", "name": "María",
+                 "names": [{"name": "María de Betania"}]}
+        e = errores_homonimos(maria, persona("maria-b", "María"))
+        self.assertEqual(len(e), 1, e)
+        self.assertIn("comparte el nombre «María» con maria-b", e[0])
 
     def test_las_excepciones_del_repositorio_son_pares_con_su_porque(self):
         lista = yaml.safe_load(validate.EXCEPCIONES_HOMONIMOS.read_text(encoding="utf-8"))
@@ -163,6 +193,17 @@ class Homonimos(unittest.TestCase):
             with self.subTest(e=e):
                 self.assertEqual(len(set(e.get("people") or [])), 2)
                 self.assertTrue(e.get("name") and e.get("reason"))
+
+    def test_la_regla_corre_desde_validar(self):
+        datos = validate.load(str(HERE.parent / "data"))
+        for o in datos["people"]:
+            if o["id"] in ("uz-hijo-de-disan", "uz-hijo-de-nacor"):
+                o["distinct_from"] = [i for i in o["distinct_from"] if i not in ("uz-hijo-de-disan", "uz-hijo-de-nacor")]
+        errores, _ = validate.validar(datos)
+        self.assertEqual([e for e in errores if "comparte el nombre «Uz»" in e],
+                         ["data/people/uz-hijo-de-disan.yaml: comparte el nombre «Uz» con uz-hijo-de-nacor y ninguna "
+                          "de las dos nombra a la otra; van en distinct_from de las dos (con disambiguation) o en un "
+                          "same_as si quizá son la misma persona"], errores)
 
     def test_distinct_from_sin_disambiguation_es_error(self):
         out = []

@@ -1633,10 +1633,11 @@ def claves_de_nombres(o):
 def validar_homonimos(datos, err, excepciones=None):
     """Dos personas que comparten una entrada de name o de names se distinguen con distinct_from en las dos fichas o
     se dan como quizá la misma con un same_as. distinct_from va siempre en las dos direcciones y nunca en un par que
-    lleva same_as. Los pares de scripts/homonym_exceptions.yaml comparten nombre sin ser homónimos."""
+    lleva same_as. Cada entrada de scripts/homonym_exceptions.yaml (o de la lista excepciones, si se pasa) exime a un
+    par de un solo nombre, el de su campo name."""
+    donde = "scripts/homonym_exceptions.yaml"
     if excepciones is None:
-        lista = (_read(EXCEPCIONES_HOMONIMOS) or []) if EXCEPCIONES_HOMONIMOS.exists() else []
-        excepciones = {frozenset(e.get("people") or []) for e in lista if isinstance(e, dict)}
+        excepciones = (_read(EXCEPCIONES_HOMONIMOS) or []) if EXCEPCIONES_HOMONIMOS.exists() else []
     personas = {o.get("id"): o for o in datos["people"]}
     distintos = {pid: set(o.get("distinct_from") or []) if isinstance(o.get("distinct_from"), list) else set()
                  for pid, o in personas.items()}
@@ -1644,7 +1645,7 @@ def validar_homonimos(datos, err, excepciones=None):
                for r in o.get("relations") or [] if isinstance(r, dict) and r.get("type") == "same_as"}
     dobles = set()
     for pid in sorted(distintos):
-        for otro in sorted(distintos[pid]):
+        for otro in sorted(distintos[pid], key=str):
             if otro in personas and pid not in distintos[otro]:
                 err(f"{personas[pid]['_fichero']}: distinct_from nombra a {otro}, pero {otro} no la nombra a ella; "
                     f"van en las dos fichas")
@@ -1652,6 +1653,26 @@ def validar_homonimos(datos, err, excepciones=None):
                 dobles.add(frozenset((pid, otro)))
                 err(f"{personas[pid]['_fichero']}: {otro} va a la vez en distinct_from y en un same_as; si quizá son "
                     f"la misma persona, solo same_as")
+    exentos = collections.defaultdict(set)
+    for e in excepciones:
+        gente = e.get("people") if isinstance(e, dict) else None
+        if not (isinstance(gente, list) and len(gente) == 2 and all(isinstance(i, str) for i in gente)
+                and gente[0] != gente[1]):
+            err(f"{donde}: people {gente!r} debe ser un par de dos ids distintos")
+            continue
+        a, b = sorted(gente)
+        if not (a in personas and b in personas):
+            err(f"{donde}: {[a, b]} debe ser un par de ids de personas que existen")
+            continue
+        nombre = e.get("name")
+        if not isinstance(nombre, str) or not nombre.strip():
+            err(f"{donde}: {a} y {b}: falta name, el nombre que comparten sin ser homónimos")
+            continue
+        par = frozenset((a, b))
+        k = clave_nombre(nombre)
+        if k not in claves_de_nombres(personas[a]) & claves_de_nombres(personas[b]):
+            err(f"{donde}: {a} y {b} ya no comparten el nombre «{nombre}»; la excepción sobra")
+        exentos[par].add(k)
     por_nombre = collections.defaultdict(set)
     for pid, o in personas.items():
         for k in claves_de_nombres(o):
@@ -1662,19 +1683,13 @@ def validar_homonimos(datos, err, excepciones=None):
         for i, a in enumerate(ids):
             for b in ids[i + 1:]:
                 par = frozenset((a, b))
-                if par in vistos or par in excepciones or par in iguales:
+                if par in vistos or par in iguales or nombre in exentos.get(par, ()):
                     continue
                 vistos.add(par)
                 if b not in distintos[a] and a not in distintos[b]:
                     err(f"{personas[a]['_fichero']}: comparte el nombre «{nombre}» con {b} y ninguna de las dos "
                         f"nombra a la otra; van en distinct_from de las dos (con disambiguation) o en un same_as "
                         f"si quizá son la misma persona")
-    for par in sorted(excepciones, key=sorted):
-        ids = sorted(par)
-        if len(ids) != 2 or not all(i in personas for i in ids):
-            err(f"scripts/homonym_exceptions.yaml: {ids} debe ser un par de ids de personas que existen")
-        elif not claves_de_nombres(personas[ids[0]]) & claves_de_nombres(personas[ids[1]]):
-            err(f"scripts/homonym_exceptions.yaml: {ids[0]} y {ids[1]} ya no comparten nombre; la excepción sobra")
 
 
 RE_PERSPICACIA = re.compile(r"^(\d{10})(?:#([1-9]\d?))?$")
