@@ -360,6 +360,100 @@ class Acompanantes(unittest.TestCase):
         self.assertTrue(any("es quien viaja" in e for e in errores_viaje(companions=["pablo"])))
 
 
+def viaje_con_ramas(ramas, **campos):
+    """Un viaje de grupo de cinco paradas; ramas = {order: branches_from}."""
+    v = {"person": None, "group": "los desterrados", "companions": [],
+         "stops": [{"order": i, **({"branches_from": ramas[i]} if i in ramas else {})} for i in range(1, 6)]}
+    v.update(campos)
+    return v
+
+
+def errores_ramas(ramas, **campos):
+    out = []
+    v = viaje_con_ramas(ramas, **campos)
+    validate.validar_ramas(v, "viaje", out.append)
+    validate.validar_viaje(v, "viaje", out.append)
+    return out
+
+
+class DestinosEnParalelo(unittest.TestCase):
+    """`branches_from`: destinos a los que se llega en paralelo desde una parada anterior (docs/ideas/destinos-paralelos.md)."""
+
+    def test_sin_la_clave_cada_parada_sigue_a_la_anterior(self):
+        v = viaje_con_ramas({})
+        self.assertEqual(validate.anteriores(v), {1: None, 2: 1, 3: 2, 4: 3, 5: 4})
+        self.assertEqual(validate.camino_paradas(validate.anteriores(v), 2, 4), {2, 3, 4})
+
+    def test_abanico_desde_la_primera_vale(self):
+        self.assertEqual(errores_ramas({2: 1, 3: 1, 4: 1, 5: 1}), [])
+        v = viaje_con_ramas({2: 1, 3: 1, 4: 1, 5: 1})
+        self.assertEqual(validate.anteriores(v), {1: None, 2: 1, 3: 1, 4: 1, 5: 1})
+
+    def test_una_rama_y_el_tronco_que_sigue_valen(self):
+        # 1 > 2 > 3 > 5, y 4 sale de 3 a la vez que 5: la parada 5 sigue al tronco, no a la rama.
+        self.assertEqual(errores_ramas({4: 3}), [])
+        self.assertEqual(validate.anteriores(viaje_con_ramas({4: 3}))[5], 3)
+
+    def test_parada_que_no_existe_o_no_es_anterior_es_error(self):
+        for r in (9, 0, 5, 3, "1", 1.0, None, True):
+            with self.subTest(r=r):
+                e = errores_ramas({3: r, 4: 1, 5: 1}) if r != 3 else errores_ramas({3: 3, 4: 1, 5: 1})
+                self.assertTrue(any("parada anterior del mismo viaje" in x for x in e), e)
+
+    def test_ciclo_es_error(self):
+        e = errores_ramas({2: 3, 3: 2})
+        self.assertTrue(any("stop 2: branches_from es el order de una parada anterior" in x for x in e), e)
+
+    def test_cadena_de_ramas_es_error(self):
+        e = errores_ramas({2: 1, 3: 1, 4: 2})
+        self.assertTrue(any("branches_from 2 es a su vez un destino en paralelo" in x for x in e), e)
+
+    def test_un_solo_camino_desde_la_parada_es_error(self):
+        # 5 sale de 4, y de 4 no sale nada más: la clave no dice nada que el orden no diga ya.
+        e = errores_ramas({5: 4})
+        self.assertTrue(any("stop 4: de ella sale un solo camino" in x for x in e), e)
+
+    def test_viaje_de_persona_no_se_reparte(self):
+        e = errores_ramas({2: 1, 3: 1}, person="pablo", group=None)
+        self.assertTrue(any("solo vale en un viaje de grupo" in x for x in e), e)
+
+    def test_acompanante_de_todo_el_viaje_con_ramas_es_error(self):
+        e = errores_ramas({2: 1, 3: 1, 4: 1, 5: 1}, companions=["beera"])
+        self.assertTrue(any("iría en todos los destinos en paralelo" in x for x in e), e)
+
+    def test_tramo_que_sigue_una_rama_vale(self):
+        cs = [{"person": "beera", "from": 1, "to": 3}]
+        self.assertEqual(errores_ramas({2: 1, 3: 1, 4: 1, 5: 1}, companions=cs), [])
+        self.assertEqual(validate.camino_paradas(validate.anteriores(viaje_con_ramas({2: 1, 3: 1, 4: 1, 5: 1})), 1, 3), {1, 3})
+
+    def test_tramo_que_cruza_dos_ramas_es_error(self):
+        cs = [{"person": "beera", "from": 2, "to": 3}]
+        e = errores_ramas({2: 1, 3: 1, 4: 1, 5: 1}, companions=cs)
+        self.assertTrue(any("la parada 3 no está en la ruta que sale de la parada 2" in x for x in e), e)
+
+    def test_dos_tramos_en_ramas_distintas_se_tocan_en_la_salida(self):
+        cs = [{"person": "beera", "from": 1, "to": 2}, {"person": "beera", "from": 3, "to": 3}]
+        e = errores_ramas({2: 1, 3: 1, 4: 1, 5: 1}, companions=cs)
+        self.assertTrue(any("ya va en las paradas 1 a 2" in x for x in e), e)
+
+    def test_los_dos_destierros_del_repositorio_pasan(self):
+        for nombre, salida in (("destierro-de-israel-en-740", 1), ("destierro-de-beera", 1)):
+            with self.subTest(viaje=nombre):
+                v = validate._read(HERE.parent / "data" / "journeys" / f"{nombre}.yaml")
+                self.assertEqual([p.get("branches_from") for p in v["stops"]], [None, salida, salida, salida, salida])
+                out = []
+                validate.validar_ramas(v, nombre, out.append)
+                validate.validar_viaje(v, nombre, out.append)
+                self.assertEqual(out, [])
+
+    def test_validar_mira_las_ramas_en_cada_viaje(self):
+        datos = validate.load(HERE.parent / "data")
+        viaje = next(v for v in datos["journeys"] if v["id"] == "destierro-de-beera")
+        viaje["stops"][2]["branches_from"] = 2
+        errores, _ = validate.validar(datos)
+        self.assertTrue(any("destierro-de-beera" in e and "es a su vez un destino en paralelo" in e for e in errores), errores)
+
+
 HECHO = {"sources": ["it-x"], "reason": "Razón de prueba.", "checked_on": "2026-10-02", "status": "verified",
          "note": "Cuenta de prueba."}
 

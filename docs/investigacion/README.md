@@ -115,6 +115,14 @@ companions:
   - {person: silas, from: 16, to: 16}      # Hch 18:5
 ```
 
+`branches_from` es opcional en una parada y dice que se llega a ella en paralelo desde una parada anterior del mismo viaje: el grupo se reparte y cada parte va a un destino, sin orden entre ellos (2Re 17:6: Halá, Habor, el río Gozán y las ciudades de los medos). Su valor es el `order` de esa parada. Una parada sin la clave sigue, como siempre, a la anterior que no la lleva, así que un viaje sin `branches_from` no cambia. `validate.py` comprueba que la parada nombrada existe y es anterior, que no es a su vez un destino en paralelo (ningún texto pide hoy una cadena), que de ella salen al menos dos caminos y que el viaje es de un grupo: una persona no llega a dos sitios a la vez. Con destinos en paralelo, el tramo `{person, from, to}` de un acompañante es la ruta de `from` a `to`, que sigue una sola rama, y nadie va en todo el viaje. El sitio dibuja un trazo de la parada de salida a cada destino, los pone a la vez en la línea de tiempo y lo dice en las fichas ([destinos-paralelos.md](../ideas/destinos-paralelos.md)).
+
+```yaml
+- order: 3
+  place: habor
+  branches_from: 1        # sale de Samaria, a la vez que Halá, el Gozán y Media
+```
+
 `repeats` es opcional y su único valor es `yearly`: el texto cuenta el viaje como una costumbre de cada año (1Sa 1:3, 1Sa 7:16, Lu 2:41). El viaje se escribe una vez, con la fecha que da la fuente, y su `reason` dice qué versículo habla de la repetición. El sitio lo marca «↻ cada año» en la línea de tiempo, sobre la ruta y en la leyenda del mapa. `validate.py` rechaza otro valor.
 
 Una parada es un lugar que el texto dice que se alcanzó o se pasó, en el orden del relato. Tres clases de parada deducida entran también, siempre con `status: pending` y la deducción escrita en `reason`:

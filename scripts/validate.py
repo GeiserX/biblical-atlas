@@ -928,10 +928,71 @@ def companion_ids(v):
     return [c.get("person") if isinstance(c, dict) else c for c in v.get("companions") or []]
 
 
+def anteriores(v):
+    """{order: order de la parada de la que se llega a ella, o None en la primera}. Una parada con `branches_from` sale
+    de la parada que nombra; las demás siguen a la anterior que no lleva `branches_from`. Sin la clave, cada parada
+    sigue a la anterior, como siempre (README.md de la investigación, «Viajes»)."""
+    out, tronco = {}, None
+    paradas = [p for p in v.get("stops") or [] if isinstance(p, dict) and _entero(p.get("order"))]
+    for p in sorted(paradas, key=lambda p: p["order"]):
+        if p.get("branches_from") is None:
+            out[p["order"]] = tronco
+            tronco = p["order"]
+        else:
+            out[p["order"]] = p["branches_from"]
+    return out
+
+
+def camino_paradas(ant, a, b):
+    """Paradas de la ruta de la parada a a la parada b, siguiendo hacia atrás desde b; None si a no está en ella. Sin
+    destinos en paralelo son a, a+1, ..., b."""
+    vistas, x = [], b
+    while x is not None and x not in vistas:
+        vistas.append(x)
+        if x == a:
+            return set(vistas)
+        x = ant.get(x)
+    return None
+
+
+def validar_ramas(v, donde, err):
+    """`branches_from` en una parada: un destino al que se llega en paralelo desde una parada anterior del mismo viaje
+    (2Re 17:6: Halá, Habor, el Gozán y las ciudades de los medos). Solo en un viaje de grupo; nombra una parada anterior
+    que no es a su vez un destino en paralelo, y de esa parada salen al menos dos caminos."""
+    paradas = [p for p in v.get("stops") or [] if isinstance(p, dict)]
+    ramas = [(p.get("order"), p["branches_from"]) for p in paradas if "branches_from" in p]
+    if not ramas:
+        return
+    if v.get("person") is not None:
+        err(f"{donde}: branches_from solo vale en un viaje de grupo: una persona no llega a dos sitios a la vez, "
+            f"un grupo se reparte")
+    ordenes = {p.get("order") for p in paradas if _entero(p.get("order"))}
+    de = dict(ramas)
+    validas = set()
+    for o, r in ramas:
+        pd = f"{donde} stop {o}"
+        if not _entero(r) or r not in ordenes or not _entero(o) or r >= o:
+            err(f"{pd}: branches_from es el order de una parada anterior del mismo viaje, no {r!r}")
+        elif de.get(r) is not None:
+            err(f"{pd}: branches_from {r} es a su vez un destino en paralelo; ningún texto sostiene hoy una cadena de "
+                f"ramas")
+        else:
+            validas.add(r)
+    salidas = {}
+    for x in anteriores(v).values():
+        if x is not None:
+            salidas[x] = salidas.get(x, 0) + 1
+    for r in sorted(validas):
+        if salidas.get(r, 0) < 2:
+            err(f"{donde} stop {r}: de ella sale un solo camino; branches_from se escribe cuando salen dos o más a la vez")
+
+
 def validar_viaje(v, donde, err):
     """Quién viaja y quién acompaña (README.md, «Viajes»). Viaja una persona con ficha (`person`) o un grupo sin ficha
     (`group`, un texto, con `person: null`). Cada acompañante es un id, si va en todo el viaje, o {person, from, to}
-    con la parada donde se une y la parada donde se separa. Una persona puede ir en dos tramos que no se tocan."""
+    con la parada donde se une y la parada donde se separa. Una persona puede ir en dos tramos que no se tocan. En un
+    viaje con destinos en paralelo (`branches_from`), el tramo es la ruta de from a to, que sigue una sola rama, y nadie
+    va en todo el viaje: estaría en dos sitios a la vez."""
     persona, grupo = v.get("person"), v.get("group")
     if grupo is not None and (not isinstance(grupo, str) or not grupo.strip()):
         err(f"{donde}: group debe ser un texto: quién viaja sin ficha de persona («el Arca del pacto»)")
@@ -944,10 +1005,16 @@ def validar_viaje(v, donde, err):
         err(f"{donde}: companions debe ser una lista ([] si nadie acompaña)")
         return
     n = len(v.get("stops") or [])
+    ant = anteriores(v)
+    con_ramas = any(isinstance(p, dict) and "branches_from" in p for p in v.get("stops") or [])
     tramos = {}
     for i, c in enumerate(comps):
         if isinstance(c, str):
             pid, a, b = c, 1, n
+            if con_ramas:
+                err(f"{donde}: companions[{i}] ({pid}) iría en todos los destinos en paralelo a la vez; escribe "
+                    f"{{person, from, to}} con la rama que sigue")
+                continue
         elif isinstance(c, dict):
             pid, a, b = c.get("person"), c.get("from"), c.get("to")
             if set(c) - {"person", "from", "to"} or not isinstance(pid, str):
@@ -956,16 +1023,23 @@ def validar_viaje(v, donde, err):
             if not _entero(a) or not _entero(b) or not 1 <= a <= b <= n:
                 err(f"{donde}: companions[{i}] ({pid}): from y to son paradas del viaje, 1 <= from <= to <= {n}")
                 continue
-            if (a, b) == (1, n):
+            if camino_paradas(ant, a, b) is None:
+                err(f"{donde}: companions[{i}] ({pid}): la parada {b} no está en la ruta que sale de la parada {a}; "
+                    f"un tramo sigue una sola rama")
+                continue
+            if camino_paradas(ant, a, b) == set(ant):
                 err(f"{donde}: companions[{i}] ({pid}) va en todo el viaje: se escribe solo su id")
         else:
             err(f"{donde}: companions[{i}] debe ser un id de persona o {{person, from, to}}")
             continue
         if pid == persona:
             err(f"{donde}: companions[{i}]: {pid} es quien viaja")
-        # Dos tramos pegados (1-2 y 3-4) son uno solo (1-4): tampoco se tocan.
+        # Dos tramos pegados (1-2 y 3-4) son uno solo (1-4): tampoco se tocan. Con ramas, se tocan si comparten una
+        # parada o si uno sale de la última del otro.
+        mio = camino_paradas(ant, a, b) or set()
         for x, y in tramos.get(pid, []):
-            if a <= y + 1 and x <= b + 1:
+            otro = camino_paradas(ant, x, y) or set()
+            if mio & otro or any(ant.get(s) in otro for s in mio) or any(ant.get(s) in mio for s in otro):
                 err(f"{donde}: companions[{i}]: {pid} ya va en las paradas {x} a {y}; un tramo pegado se une a ese")
         tramos.setdefault(pid, []).append((a, b))
 
@@ -1668,6 +1742,7 @@ def validar(datos):
             if tipo == "journeys":
                 validar_viaje(limpio_, donde, err)
                 validar_repite(limpio_, donde, err)
+                validar_ramas(limpio_, donde, err)
                 ordenes = []
                 for i, p in enumerate(limpio_.get("stops") or []):
                     pd = f"{donde} stop {p.get('order', i)}"
