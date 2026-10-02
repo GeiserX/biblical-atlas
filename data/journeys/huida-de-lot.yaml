@@ -74,16 +74,17 @@ stops:
   unknown_area:
     words: la región montañosa
     guesses:
-    - name: montes de Moab, junto a Zóar
+    - name: montes junto a Zóar
       type: ellipse
-      center: {lat: 31.2, lon: 35.68}
-      radii_km: [32, 10]
+      center: {lat: 31.06, lon: 35.62}
+      radii_km: [15, 7]
       bearing: 0
-      note: Elipse nuestra sobre el borde montañoso al este del sur del mar Muerto, junto al candidato preferido de
-        Zóar. Ninguna fuente da contorno.
+      note: Elipse nuestra sobre el borde montañoso que se alza al este de Zóar, a menos de 20 km de su candidato
+        preferido. Ninguna fuente da contorno.
+      according_to: it-zoar
       sources: [it-zoar, it-lot, genesis-19]
-      reason: Perspicacia «Zóar» pone la ciudad junto a la región montañosa de Moab, al sudeste del mar Muerto, y llama
-        cercana a la de la cueva. De las hijas descienden Moab y Ammón (Gé 19:37, 38).
+      reason: Perspicacia «Zóar» dice que, según parece, la ciudad estaba en Moab o cerca, junto a sus montes y al sudeste
+        del mar Muerto, y llama cercana a la región de la cueva.
       checked_on: '2026-10-02'
       status: conjecture
   reference: Gé 19:30

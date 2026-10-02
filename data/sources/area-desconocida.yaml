@@ -6,3 +6,24 @@ it-este:
   level: 1
   published: null
   checked_on: '2026-10-02'
+it-estrella:
+  title: Estrella
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Estrella/
+  level: 1
+  published: null
+  checked_on: '2026-10-02'
+ia-jose-protegio-a-su-familia:
+  title: José protegió a su familia
+  work: Ejemplos de fe
+  url: https://www.jw.org/es/biblioteca/libros/ejemplos-de-fe/jos%C3%A9-protegi%C3%B3-a-su-familia/
+  level: 1
+  published: null
+  checked_on: '2026-10-02'
+sh-cap-4:
+  title: En busca de lo desconocido por la magia y el espiritismo
+  work: El hombre en busca de Dios
+  url: https://www.jw.org/es/biblioteca/libros/El-hombre-en-busca-de-Dios/En-busca-de-lo-desconocido-por-la-magia-y-el-espiritismo/
+  level: 1
+  published: null
+  checked_on: '2026-10-02'
