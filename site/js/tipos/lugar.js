@@ -74,13 +74,13 @@ function ahoraHtml(id, t) {
   const despues = fechados.filter((h) => h.tr[0] > t).sort((a, b) => a.tr[0] - b.tr[0]);
   const nombre = BE.nombreEn(l, t);
   const fila = (h, extra = '') => `<li class="hecho"><button type="button" class="enlace-titulo" data-sel="${esc(h.sel)}">${esc(h.titulo)}</button> ${BE.insigniaHtml(h.fuentes)}${h.estado === 'pendiente' ? ' <span class="sin-verificar">sin verificar</span>' : ''}${h.deducido ? ' <span class="be-muted">(deducido)</span>' : ''}<span class="be-row__meta">${esc(fechaTexto(h))}${extra}</span></li>`;
-  const bloque = (nivel, lista) => lista.length ? `<div class="bloque-nivel bloque-nivel--${nivel}"><span class="be-tier be-tier--${nivel}" data-n="${nivel}">${nivel === 1 ? 'Biblia y jw.org' : 'Historia y arqueología'}</span>${nivel === 2 ? '<span class="be-muted acompana">acompaña, nunca corrige</span>' : ''}<ul class="hechos">${lista.map((h) => fila(h)).join('')}</ul></div>` : '';
+  const bloque = (nivel, lista) => lista.length ? `<div class="bloque-nivel bloque-nivel--${nivel}"><span class="be-tier be-tier--${nivel}" data-n="${nivel}">${nivel === 1 ? 'Fuentes principales' : 'Historia y arqueología'}</span>${nivel === 2 ? '<span class="be-muted acompana">acompaña, nunca corrige</span>' : ''}<ul class="hechos">${lista.map((h) => fila(h)).join('')}</ul></div>` : '';
   let cuerpo;
   if (ahora.length) {
     const n2 = ahora.filter((h) => h.nivel === 2);
     // Sin nivel 2 el bloque sale igual, vacío y diciéndolo: que no haya historia o arqueología es un dato (pantalla 08).
     cuerpo = bloque(1, ahora.filter((h) => h.nivel !== 2)) + (n2.length ? bloque(2, n2)
-      : '<div class="bloque-nivel bloque-nivel--2 bloque-vacio"><span class="be-tier be-tier--2" data-n="2">Historia y arqueología</span><span class="be-muted acompana">acompaña, nunca corrige</span><p class="be-muted">Sin otra fuente que jw.org use para esta fecha.</p></div>');
+      : '<div class="bloque-nivel bloque-nivel--2 bloque-vacio"><span class="be-tier be-tier--2" data-n="2">Historia y arqueología</span><span class="be-muted acompana">acompaña, nunca corrige</span><p class="be-muted">Sin otra fuente que acompañe para esta fecha.</p></div>');
   } else {
     const a = antes[0], d = despues[0];
     cuerpo = `<p class="be-muted">No tenemos hechos de ${esc(nombre)} en esta fecha.</p>`;
@@ -166,7 +166,7 @@ function historiaHtml(id) {
     partes.push(`<li class="historia-fila historia-fila--${h.tipo}${ahora ? ' historia-fila--ahora' : ''}${h.nivel === 2 ? ' historia-fila--n2' : ''}">
       <span class="historia-fecha">${esc(h.corto)}</span><span class="historia-marca" aria-hidden="true"></span>
       <span class="historia-texto"><button type="button" class="enlace-titulo historia-titulo" data-ir-t="${medio}"${h.sel ? ` data-ir-sel="${esc(h.sel)}"` : ''} title="Llevar el cursor a ${esc(largo)}">${esc(h.titulo)}</button>
-      <span class="historia-meta">${ahora ? '<b class="historia-ahora">ahora</b> · ' : ''}${esc(tipo)}${largo && largo !== h.corto ? ` · ${esc(largo)}` : ''}${h.estado === 'pendiente' ? ' · <span class="sin-verificar">sin verificar</span>' : ''}${h.nivel === 2 ? ' · otra fuente que jw.org usa' : ''}</span></span></li>`);
+      <span class="historia-meta">${ahora ? '<b class="historia-ahora">ahora</b> · ' : ''}${esc(tipo)}${largo && largo !== h.corto ? ` · ${esc(largo)}` : ''}${h.estado === 'pendiente' ? ' · <span class="sin-verificar">sin verificar</span>' : ''}${h.nivel === 2 ? ' · otra fuente que acompaña' : ''}</span></span></li>`);
     fin = Math.max(fin, h.tr[1]);
   }
   if (pos >= a && (todo || pos === filas.length)) partes.push(cursor());
@@ -224,8 +224,8 @@ function candidatosHtml(l) {
         ${c.nota ? `<span class="be-row__meta">${calculado ? '<span class="insignia-calculado">calculado</span> ' : ''}${esc(c.nota)}</span>` : ''}</span>
         <span class="estado-cand estado-cand--${c.estado}" style="--cand:${s.color}">${esc(s.corto)}</span></button>${BE.insigniaHtml(c.fuentes)}</li>`;
     }).join('')}</ul>
-    ${ocultos ? `<p class="be-muted oculto-n2">${ocultos} ${ocultos === 1 ? 'candidato de otra fuente oculto' : 'candidatos de otras fuentes ocultos'} por el filtro «Solo la Biblia y jw.org».</p>` : ''}
-    <p class="be-note be-note--uncertain"><span><b>¿Por qué no hay un punto?</b> Ni la Biblia ni jw.org dan un sitio exacto. Dibujamos las zonas y los candidatos que se citan, cada uno con su base; un punto haría creer que se sabe.</span></p>
+    ${ocultos ? `<p class="be-muted oculto-n2">${ocultos} ${ocultos === 1 ? 'candidato de otra fuente oculto' : 'candidatos de otras fuentes ocultos'} por el filtro «Solo fuentes principales».</p>` : ''}
+    <p class="be-note be-note--uncertain"><span><b>¿Por qué no hay un punto?</b> Ni la Biblia ni las fuentes enlazadas dan un sitio exacto. Dibujamos las zonas y los candidatos que se citan, cada uno con su base; un punto haría creer que se sabe.</span></p>
   </div></section>`;
 }
 

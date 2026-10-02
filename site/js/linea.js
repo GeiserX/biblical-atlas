@@ -1359,7 +1359,7 @@ function pintarCursor() {
     otra.title = !txt ? '' : modoMeses() === 'nuestros' ? `Fecha hebrea aproximada.${fc.anacronicoSegunda ? ` ${CURSIVA_CHIP}` : ''}` : 'Nuestros meses, aproximados: el calendario gregoriano es de 1582 y aquí solo orienta';
   }
   // La cronología va en el texto emergente de la fecha, no en una pista visible: es jerga para quien lee.
-  const ayuda = `${pw?.estimada ? 'Fecha estimada: sabemos el orden del relato, no el día. ' : ''}${fc.anacronico ? `${CURSIVA_CHIP} ` : ''}Fechas según la cronología de la Traducción del Nuevo Mundo y de jw.org. Pulsa para ir a otra fecha.`;
+  const ayuda = `${pw?.estimada ? 'Fecha estimada: sabemos el orden del relato, no el día. ' : ''}${fc.anacronico ? `${CURSIVA_CHIP} ` : ''}Fechas según la cronología de la Traducción del Nuevo Mundo. Pulsa para ir a otra fecha.`;
   if ($('#fecha-valor').title !== ayuda) $('#fecha-valor').title = ayuda;
   $('#linea-estado').textContent = BE.fraseAhora ? BE.fraseAhora(E.t) : '';
   // Edad en la fecha, solo con base (T-18).
@@ -1566,7 +1566,7 @@ function abrirAyudaFechas(origen) {
     });
   }
   ayudaFechas.innerHTML = `<div class="fa-cabecera"><h2 class="be-card__eyebrow" id="fechas-ayuda-titulo">Sobre las fechas</h2><button type="button" class="menu-x" data-fa="cerrar" aria-label="Cerrar">×</button></div>
-    <p class="fa-texto">Las fechas siguen la cronología de la Traducción del Nuevo Mundo y de las publicaciones de jw.org.</p>
+    <p class="fa-texto">Las fechas siguen la cronología de la Traducción del Nuevo Mundo.</p>
     <ul class="fa-lista">
       <li><span class="fa-c">c.</span><span>Junto a la fecha de arriba: fecha aproximada. La fuente da el año más o menos, la sacamos del orden del relato, o es un mes o un día de un calendario que solo podemos aproximar.</span></li>
       <li>${muestra('<rect x="3" y="6" width="28" height="2" fill="var(--gold)" opacity=".75"/><rect x="2" y="3" width="2" height="8" fill="var(--gold)"/><rect x="30" y="3" width="2" height="8" fill="var(--gold)"/><circle cx="17" cy="7" r="4.5" fill="var(--gold)"/>')}<span>Un punto es algo que pasó en un momento. La línea fina de debajo marca entre qué fechas pudo ser.</span></li>
