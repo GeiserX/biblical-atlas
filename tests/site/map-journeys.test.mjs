@@ -248,9 +248,13 @@ test('3C: a companion shows only on the stops of his range, in reading mode and 
   for (const p of ['silas', 'timoteo', 'aquila', 'priscila']) assert.ok(en(16).includes(p), `${p} in Corinto: ${en(16)}`);
   assert.ok(!/Con Pablo en esta parada/.test(r.atenas), 'the Atenas card names no companion');
   assert.match(r.corinto, /Con Pablo en esta parada.*Silas/);
-  // Choosing Lucas still draws the second journey on the map.
+  // Choosing Lucas still draws the second journey on the map, but highlights only the stops of his range.
   const d = await drawnAt(page, 30.5, { tipo: 'persona', id: 'lucas' });
   assert.ok(d.rastro.includes('segundo-viaje'), `selecting Lucas draws the journeys he went on: ${d.rastro}`);
+  const imp = await page.evaluate(() => { const r = window.__be.BE.implicados({ tipo: 'persona', id: 'lucas' }); return { claves: [...r.claves], lugares: [...r.lugares] }; });
+  assert.ok(imp.claves.includes('parada:segundo-viaje/7') && imp.claves.includes('parada:tercer-viaje/8'), 'his stops are highlighted');
+  assert.ok(!imp.claves.includes('parada:segundo-viaje/15') && !imp.claves.includes('parada:tercer-viaje/1'), `Atenas and Antioquía are not his: ${imp.claves.filter((k) => k.startsWith('parada:'))}`);
+  assert.ok(!imp.lugares.includes('atenas'), 'Atenas is not highlighted for Lucas');
   assert.deepEqual(page.pageErrors, []);
   await page.context().close();
 });

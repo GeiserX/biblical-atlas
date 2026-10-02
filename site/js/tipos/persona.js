@@ -268,7 +268,8 @@ function fichaPersona(id) {
 
 function implicadosPersona(id, r) {
   const viajes = BE.D.viajes.filter((v) => v.persona === id || BE.acompanantes(v).includes(id));
-  viajes.forEach((v) => { r.claves.add(`viaje:${v.id}`); BE.P.filter((s) => s.viaje === v).forEach((s) => BE.anadirParada(r, s)); });
+  // De un viaje ajeno, solo las paradas de su tramo: Lucas no estuvo en Atenas aunque vaya en el segundo viaje.
+  viajes.forEach((v) => { r.claves.add(`viaje:${v.id}`); BE.P.filter((s) => s.viaje === v && (BE.duenoViaje(v) === id || BE.acompanantes(v, s.p.orden).includes(id))).forEach((s) => BE.anadirParada(r, s)); });
   BE.D.cartas.filter((c) => c.escritor === id || (!c.escritor && id === 'pablo') || (c.portadores || []).includes(id) || (c.destinatarios?.personas || []).includes(id)).forEach((c) => BE.anadirCarta(r, c));
   (BE.D.eventos || []).filter((e) => (e.personas || []).includes(id)).forEach((e) => {
     r.claves.add(`evento:${e.id}`);
