@@ -243,7 +243,7 @@ new_keys:
   # Un área desconocida sale entera en inglés, como en el YAML: las palabras de la fuente y su rumbo.
   unknown_area: [words, direction, guesses]
   # Las zonas que conjeturamos para un área: una forma con su nombre y status: conjecture; build.py añade ring y bbox.
-  unknown_area.guesses[]: [type, center, radius_km, radii_km, bearing, bounds, vertices, name, note, sources, reason, checked_on, status]
+  unknown_area.guesses[]: [type, center, radius_km, radii_km, bearing, bounds, vertices, name, strength, according_to, note, sources, reason, checked_on, status]
   unknown_area.guesses[].center: [lat, lon]
   unknown_area.guesses[].bounds: [south, west, north, east]
   places.candidates[]: [checked_on, shape]

@@ -82,6 +82,9 @@ CAMPOS_AREA = {"words", "direction", "guesses"}
 # texto. Su estado es siempre `conjecture`.
 ESTADOS_CONJETURA = {"conjecture"}
 MAX_PALABRAS_NOMBRE_ZONA = 6
+# Cuán fuerte es una zona conjeturada: «probable» (lo que la fuente propone) o «posible» (lo que solo recoge o no
+# descarta). Sin `strength`, probable.
+FUERZAS_CONJETURA = {"probable", "possible"}
 MAX_PALABRAS_AREA = 7
 REQ_PARADA_RECORRIDO = ["sel", "t", "text", "passages"]
 REQ_FUENTE = ["title", "work", "url", "level", "published", "checked_on"]
@@ -263,8 +266,16 @@ def validar_conjetura(z, donde, err, puntos):
     if z.get("type") in ("circle", "ellipse") and not isinstance(z.get("center"), dict):
         err(f"{donde}: un {z.get('type')} conjeturado necesita center: no hay punto que lo sitúe")
         return
+    # Quien hace la afirmación de la zona: el sitio escribe «según …» con esta fuente, nunca con el orden de la lista.
+    quien = z.get("according_to")
+    if not isinstance(quien, str) or quien not in (z.get("sources") if isinstance(z.get("sources"), list) else []):
+        err(f"{donde}: according_to es la fuente que propone esta zona y tiene que ser una de sus sources")
+    fuerza = z.get("strength", "probable")
+    if not isinstance(fuerza, str) or fuerza not in FUERZAS_CONJETURA:
+        err(f"{donde}: strength debe ser uno de {sorted(FUERZAS_CONJETURA)}, no {fuerza!r}")
     c = z.get("center") if isinstance(z.get("center"), dict) else {}
-    validar_forma(z, donde, err, c.get("lat"), c.get("lon"), puntos, estados=ESTADOS_CONJETURA, extra={"name"})
+    validar_forma(z, donde, err, c.get("lat"), c.get("lon"), puntos, estados=ESTADOS_CONJETURA,
+                  extra={"name", "according_to", "strength"})
 
 
 def validar_areas(viaje, donde, err, puntos=None):
@@ -293,10 +304,12 @@ def validar_areas(viaje, donde, err, puntos=None):
             err(f"{pd}: unknown_area.words: las palabras con que la fuente nombra el sitio («Oriente», «su país»)")
         elif len(palabras.split()) > MAX_PALABRAS_AREA:
             err(f"{pd}: unknown_area.words tiene {len(palabras.split())} palabras; como mucho {MAX_PALABRAS_AREA}")
-        if "direction" in area and area["direction"] not in RUMBOS:
+        if "direction" in area and (not isinstance(area["direction"], str) or area["direction"] not in RUMBOS):
             err(f"{pd}: unknown_area.direction debe ser uno de {sorted(RUMBOS)}, no {area['direction']!r}")
         if 0 < i < len(paradas) - 1:
             err(f"{pd}: un área desconocida solo puede ser la primera o la última parada")
+        if i == 0 and len(paradas) > 1 and p.get("order") != 0:
+            err(f"{pd}: un área de origen lleva order: 0, para que las paradas con lugar sigan siendo 1, 2, 3...")
         if "guesses" in area:
             zonas = area["guesses"]
             if not isinstance(zonas, list) or not zonas:
@@ -1010,7 +1023,7 @@ def validar_viaje(v, donde, err):
     if not isinstance(comps, list):
         err(f"{donde}: companions debe ser una lista ([] si nadie acompaña)")
         return
-    n = len(v.get("stops") or [])
+    n = max([p.get("order") for p in v.get("stops") or [] if isinstance(p, dict) and _entero(p.get("order"))] or [0])
     tramos = {}
     for i, c in enumerate(comps):
         if isinstance(c, str):
@@ -1749,8 +1762,10 @@ def validar(datos):
                     if "date" in p:
                         validar_fecha(p["date"], pd, err, meses, p.get("status"))
                     ordenes.append(p.get("order"))
-                if ordenes != list(range(1, len(ordenes) + 1)):
-                    err(f"{donde}: las paradas deben numerarse 1, 2, 3... sin huecos")
+                # Un área de origen va antes de la parada 1, con order 0: así los enlaces a las paradas no cambian.
+                origen = bool(limpio_.get("stops")) and isinstance(limpio_["stops"][0], dict) and "unknown_area" in limpio_["stops"][0]
+                if ordenes != list(range(0 if origen else 1, len(ordenes) + (0 if origen else 1))):
+                    err(f"{donde}: las paradas deben numerarse 1, 2, 3... sin huecos (0 solo para un área de origen)")
             if tipo == "letters":
                 for k in ("context_origin", "context_destination"):
                     c = limpio_.get(k) or {}

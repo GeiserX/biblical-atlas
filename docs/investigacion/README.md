@@ -129,7 +129,7 @@ Una deducción que el texto contradice no entra: si el relato pone la salida en 
 **Un área desconocida.** Cuando el texto dice que el viaje viene de un sitio o va a uno que no sitúa, y la fuente tampoco lo sitúa, la primera o la última parada lleva `place: null` y `unknown_area`, con las palabras de la fuente y, si la fuente lo da, el rumbo. No se inventa un lugar ni un punto. Solo entra cuando el texto cuenta esa salida o esa vuelta, y nunca en medio del viaje.
 
 ```yaml
-- order: 1
+- order: 0              # un área de origen va antes de la parada 1
   place: null
   unknown_area:
     words: Oriente      # las palabras de la fuente, 7 como mucho
@@ -138,26 +138,29 @@ Una deducción que el texto contradice no entra: si el relato pone la salida en 
   # date, note, reason, sources, checked_on y status, como en cualquier parada
 ```
 
-Si una publicación deja adivinar dónde estaba el sitio, el área lleva `guesses`: las zonas que conjeturamos, la preferida primero. Cada una es una forma como la de una zona (`circle` o `ellipse` con `center`, porque no hay punto; `box` o `polygon`), con `name`, el nombre corto de la zona, y `note`, `sources`, `reason`, `checked_on` y `status: conjecture`, que dice que es una conjetura nuestra y no lo que dice el texto. Una fuente de nivel 2 solo entra junto a una de nivel 1 y sin contradecirla. Sigue sin haber ficha de lugar ni punto: nadie se sitúa en la zona.
+Si una publicación deja adivinar dónde estaba el sitio, el área lleva `guesses`: las zonas que conjeturamos, la preferida primero. Cada una es una forma como la de una zona (`circle` o `ellipse` con `center`, porque no hay punto; `box` o `polygon`), con `name`, el nombre corto de la zona; `according_to`, la fuente que propone esa zona, que tiene que estar en sus `sources` y con la que el sitio escribe «según …»; `strength` opcional, `probable` (lo de siempre) o `possible` (lo que la fuente solo recoge o no descarta), y `note`, `sources`, `reason`, `checked_on` y `status: conjecture`, que dice que es una conjetura nuestra y no lo que dice el texto. Una fuente de nivel 2 solo entra junto a una de nivel 1 y sin contradecirla. Sigue sin haber ficha de lugar ni punto: nadie se sitúa en la zona.
 
 ```yaml
   unknown_area:
     words: Oriente
     direction: east
     guesses:
-    - name: Babilonia
+    - name: región de Babilonia
       type: ellipse
       center: {lat: 31.9, lon: 46.0}
       radii_km: [240, 110]
       bearing: 135
       note: Cómo se trazó el contorno.
-      sources: [it-este, it-astrologos, jy-cap-7]
+      according_to: it-estrella
+      sources: [it-estrella, it-herodes, ia-jose-protegio-a-su-familia, it-este]
       reason: Qué dice cada fuente que lleva a esta zona.
       checked_on: '2026-10-02'
       status: conjecture
 ```
 
-`validate.py` comprueba que cada parada lleva un lugar o un área, nunca los dos; que el área va primera o última y que al menos una parada tiene lugar; que `words` no está vacío ni pasa de 7 palabras, y que `direction`, si está, es uno de los ocho rumbos. De cada zona conjeturada comprueba la forma como la de una zona, su `name` (de 1 a 6 palabras), sus fuentes, su razón, su nota y que su estado es `conjecture`. `build.py` le añade su contorno (`ring`) y su caja (`bbox`). En `data.json` la parada sale con `lugar: null` y la clave nueva `unknown_area`, igual que en el YAML. El sitio la dibuja en su zona conjeturada o, si no tiene, como un área que no reclama sitio junto a la parada vecina; lo explica [area-desconocida.md](../ideas/area-desconocida.md).
+Un área de origen lleva `order: 0` y una de destino, el número siguiente a la última parada: así las paradas con lugar conservan su número y un enlace a la parada 1 sigue abriendo la misma.
+
+`validate.py` comprueba que cada parada lleva un lugar o un área, nunca los dos; que el área va primera o última, con `order: 0` si es de origen, y que al menos una parada tiene lugar; que `words` no está vacío ni pasa de 7 palabras, y que `direction`, si está, es uno de los ocho rumbos. De cada zona conjeturada comprueba la forma como la de una zona, su `name` (de 1 a 6 palabras), que `according_to` es una de sus fuentes, `strength`, su razón, su nota y que su estado es `conjecture`. `build.py` le añade su contorno (`ring`) y su caja (`bbox`). En `data.json` la parada sale con `lugar: null` y la clave nueva `unknown_area`, igual que en el YAML. El sitio la dibuja en su zona conjeturada o, si no tiene, como un área que no reclama sitio junto a la parada vecina; lo explica [area-desconocida.md](../ideas/area-desconocida.md).
 
 **Cartas.** `writer` es obligatorio (id de persona; las 14 de Pablo llevan `writer: pablo`). Opcionales: `recipients.people`, `carriers` y `people` (las nombradas en la carta), listas de ids de personas que `build.py` comprueba. La comprobación de que una carta cae en una parada de Pablo solo mira las cartas de Pablo.
 
