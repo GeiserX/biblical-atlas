@@ -12,6 +12,15 @@ precision: zone
 coord_source: openbible:a9cf1e8
 coord_url: https://www.openbible.info/geo/ancient/a9cf1e8/galilee-1
 coord_note: Punto representativo de la región.
+shape:
+  type: box
+  bounds: {south: 32.5, west: 35.172, north: 33.04, east: 35.6}
+  note: 'Caja nuestra de 40 km de este a oeste y 60 de norte a sur, con el lado este en el Jordán y el mar de Galilea y el sur a la altura de Bet-seán.'
+  sources:
+  - it-galilea
+  reason: 'Perspicacia «Galilea», apartado «Límites»: en tiempos de Jesús medía unos 40 km de este a oeste y 60 de norte a sur; al sur lindaba con Samaria hasta Bet-seán, al este con el Jordán.'
+  checked_on: '2026-10-02'
+  status: verified
 summary: Región del norte, al oeste del Jordán y del mar de Galilea. En tiempos de Jesús la gobernaba Herodes Antipas y medía
   unos 40 km de este a oeste y 60 de norte a sur.
 reason: Perspicacia «Galilea» (párr. 3 y 4) da la extensión y los límites en el siglo I; B10 la marca como territorio de Herodes

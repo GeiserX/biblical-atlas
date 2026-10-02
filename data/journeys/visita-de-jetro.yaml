@@ -56,17 +56,18 @@ stops:
     type: anchored
     chronology: tnm
     text: 1513 a.e.c.
-  note: Por la posición del relato, Perspicacia «Refidim» cree que el campamento aún estaba en Refidim.
-  reason: Éx 18:5 pone el encuentro en el desierto, junto a la montaña de Dios, y Perspicacia «Jetró» dice Horeb. Seguimos
-    el lugar del suceso; Perspicacia «Refidim» propone otro campamento.
+  note: Perspicacia «Refidim» cree, por el lugar del relato en el libro, que el campamento seguía en Refidim, a unos 13 km.
+    «Sinaí», núm. 2, y «Jetró» lo ponen en el desierto de Sinaí, junto a Horeb.
+  reason: Éx 18:5 sitúa el encuentro en el desierto, junto a la montaña de Dios. Perspicacia «Sinaí», núm. 2, dice que Jetró
+    llevó a Ziporá y a los hijos al desierto de Sinaí, y «Jetró», a Horeb. Fecha del suceso jetro-visita-a-moises.
   sources:
   - exodo-18
   - it-jetro
   - it-refidim
   - it-sinai
   - si-3
-  checked_on: '2026-09-30'
-  status: pending
+  checked_on: '2026-10-02'
+  status: verified
 - order: 3
   place: madian
   reference: Éx 18:27

@@ -3,7 +3,8 @@
    viaja manda el relato: sus sucesos quedan donde los ponen su fecha y el orden del relato, y sus paradas los siguen
    (sucesosDeParadas). Cualquier otra persona se sitúa con sus viajes, los sucesos que la nombran con lugar y sus relaciones fechadas
    (vivio_en, nacio_en, murio_en). Nunca se inventa una posición: fuera de lo que dicen los datos, BE.donde devuelve
-   null. Dueño durante el reparto: app-tiempo. */
+   null. Un lugar sin punto sigue siendo una estancia; el mapa la dibuja donde dice BE.puntoLugar. Dueño durante el
+   reparto: app-tiempo. */
 'use strict';
 (() => {
 const BE = window.BE;
@@ -146,8 +147,9 @@ function momentos(f) {
   else if (hits.length === 1 && hits[0] === ESTACIONES.invierno) fin = h + 0.15;
   return [ini, Math.max(ini, fin)];
 }
-// Un viaje sin `persona` es de Pablo y una carta sin `escritor` es suya: así lo dice el esquema de los datos.
-const duenoViaje = (v) => v.persona || 'pablo';
+// Un viaje sin `persona` es de Pablo y una carta sin `escritor` es suya: así lo dice el esquema de los datos. Quién hace
+// cada viaje (una persona, un grupo o Pablo) lo dicen BE.duenoViaje y sus vecinas, en base.js.
+const { duenoViaje, esGrupo } = BE;
 const escritorDe = (c) => c.escritor || 'pablo';
 const esDe = (v, persona) => duenoViaje(v) === persona;
 /** Quién lleva sus sucesos y cartas en sus paradas: Pablo, cuyas paradas se fecharon una a una con Hechos (el modelo de
@@ -163,8 +165,10 @@ const SUCESOS_EN_PARADAS = new Set(['pablo']);
 function sucesosDeParadas(persona, P) {
   const m = new Map();
   // Para el orden cuenta todo suceso que la nombra; para estar en la parada, solo aquel en que está (`presentes`).
-  const evs = (BE.D.eventos || []).filter((e) => (e.personas || []).includes(persona))
-    .map((e) => ({ e, presente: !e.presentes || e.presentes.includes(persona), vs: versiculos((e.pasajes || []).join('; ')), primero: versiculos((e.pasajes || [])[0])[0], v: null }));
+  // Un grupo no sale en `personas`: sus sucesos son los que cuentan algún versículo de la referencia del viaje.
+  const vsGrupo = esGrupo(persona) ? versiculos((BE.D.viajes || []).find((v) => v.id === persona.slice(6))?.referencia) : null;
+  const evs = (BE.D.eventos || []).filter((e) => (vsGrupo ? seCruzan(versiculos((e.pasajes || []).join('; ')), vsGrupo) : (e.personas || []).includes(persona)))
+    .map((e) => ({ e, presente: !!vsGrupo || !e.presentes || e.presentes.includes(persona), vs: versiculos((e.pasajes || []).join('; ')), primero: versiculos((e.pasajes || [])[0])[0], v: null }));
   if (!evs.length) return m;
   const ventana = (x) => (x.v ??= ventanaEvento(x.e) || false);
   for (const s of P) {
@@ -213,7 +217,7 @@ function prepararParadas(persona = 'pablo') {
     const ps = [...v.paradas].sort((a, b) => a.orden - b.orden);
     ps.forEach((p, i) => {
       const lugar = BE.L[p.lugar];
-      if (!lugar || lugar.lat == null) return;
+      if (!lugar) return;
       out.push({ key: `${v.id}/${p.orden}`, viaje: v, p, lugar, i, n: ps.length, narrativa: p.fecha?.tipo === 'narrativa' || !momentos(p.fecha || {}) });
     });
   }
@@ -440,6 +444,39 @@ function colocarEnParadas(P, persona, quien) {
   return m;
 }
 
+// ---------------------------------------------------------------------------
+// Dónde se dibuja un lugar
+// ---------------------------------------------------------------------------
+/** Candidatos por los que se dibuja un lugar sin punto, del preferido al último; nunca uno descartado. */
+const PREFERENCIA_PUNTO = ['seguro', 'favorecido_nivel_1', 'tradicion', 'alternativa', 'solo_nivel_2'];
+/** Dónde se dibuja un lugar y cuán seguro es: { c: [lon, lat], incierto, candidato } o null si no hay dónde.
+    Un lugar con punto va en su punto, incierto si el punto es el de una región (precision zona). Un lugar sin punto va
+    en su candidato preferido de los que se ven (con «Solo fuentes principales», nunca uno que solo propone otra
+    fuente): el centro de su zona o de su franja, o el sitio propuesto. Es incierto y lleva el candidato. Sin candidato,
+    null: la estancia existe, pero el mapa no la dibuja. Lo usan BE.donde (el marcador de la persona) y el mapa (las
+    rutas de los viajes y los nombres del encuadre), así que la persona y la línea de su viaje llegan al mismo sitio. */
+function puntoLugar(l) {
+  if (!l) return null;
+  if (!Array.isArray(l.candidatos)) return l.lat != null && l.lon != null ? { c: [l.lon, l.lat], incierto: l.precision === 'zona', candidato: null } : null;
+  const cs = l.candidatos.filter((c) => PREFERENCIA_PUNTO.includes(c.estado) && !(BE.filtros?.nivel1 && c.estado === 'solo_nivel_2')
+    && c.geometria?.lat != null && c.geometria?.lon != null);
+  if (!cs.length) return null;
+  const c = cs.sort((a, b) => PREFERENCIA_PUNTO.indexOf(a.estado) - PREFERENCIA_PUNTO.indexOf(b.estado))[0], g = c.geometria;
+  return { c: g.tipo === 'franja' && g.hasta ? [(g.lon + g.hasta.lon) / 2, (g.lat + g.hasta.lat) / 2] : [g.lon, g.lat], incierto: true, candidato: c };
+}
+/** Parte de una respuesta de BE.donde que dice dónde se dibuja la persona en un lugar: pos ([lon, lat] o null, si el
+    lugar no tiene dónde) e incierto (lo que diga puntoLugar: un candidato o el punto de una región se dibujan como
+    posición estimada). */
+function sitio(l) {
+  const d = puntoLugar(l);
+  return { pos: d ? d.c : null, incierto: d ? d.incierto : true };
+}
+/** Lo mismo de camino entre dos lugares, a la fracción f del tramo; sin posición si uno de los dos no tiene dónde. */
+function camino(a, b, f) {
+  const x = puntoLugar(a), y = puntoLugar(b);
+  return { pos: x && y ? interpolar({ lon: x.c[0], lat: x.c[1] }, { lon: y.c[0], lat: y.c[1] }, f) : null, incierto: !x || !y || x.incierto || y.incierto };
+}
+
 /** Dónde está alguien en t según una lista de paradas ordenadas (el modelo de Pablo). null si ninguna lo cubre. */
 function dondeEnParadas(P, t) {
   if (!P.length || t < P[0].a || t > P[P.length - 1].b) return null;
@@ -449,12 +486,12 @@ function dondeEnParadas(P, t) {
   if (t <= s.b || lo === P.length - 1) {
     // Fuera de [a0, b0] la parada está alargada para acoger sus sucesos: esa parte de la estancia es nuestra, estimada.
     const alargada = !s.narrativa && (t < (s.a0 ?? s.a) || t > (s.b0 ?? s.b));
-    return { en: s, sig: P[lo + 1] || null, parada: true, estimada: s.narrativa || alargada, pos: [s.lugar.lon, s.lugar.lat], banda: s.banda || (alargada ? [s.a, s.b] : null) };
+    return { en: s, sig: P[lo + 1] || null, parada: true, estimada: s.narrativa || alargada, ...sitio(s.lugar), banda: s.banda || (alargada ? [s.a, s.b] : null) };
   }
   const n = P[lo + 1];
   const f = (t - s.b) / Math.max(1e-6, n.a - s.b);
   const banda = s.narrativa ? s.banda : (n.narrativa ? n.banda : null);
-  return { en: s, sig: n, parada: false, f, estimada: s.narrativa || n.narrativa, pos: interpolar(s.lugar, n.lugar, f), banda };
+  return { en: s, sig: n, parada: false, f, estimada: s.narrativa || n.narrativa, ...camino(s.lugar, n.lugar, f), banda };
 }
 /** ¿Dónde está Pablo en t? null si ninguna parada lo cubre. */
 const dondeEsta = (t) => dondeEnParadas(BE.P, t);
@@ -665,13 +702,12 @@ const eventoEstimado = (e) => !!(e.fecha?.aprox || e.fecha?.tipo === 'narrativa'
 // ---------------------------------------------------------------------------
 // Cualquier persona
 // ---------------------------------------------------------------------------
-const lugarConPunto = (id) => { const l = BE.L[id]; return l && l.lat != null && l.lon != null ? l : null; };
 const RELACIONES_LUGAR = new Set(['vivio_en', 'nacio_en', 'murio_en']);
 const cacheEst = new Map();
 /** Estancias de una persona, ordenadas: { key, sel, lugar, a, b, narrativa, titulo, referencia, origen }.
     Pablo: sus paradas. Los demás: sus viajes, los sucesos que la nombran con un lugar situado y sus relaciones
-    vivio_en, nacio_en y murio_en con fecha. Un suceso con varios lugares la pone en el primero; si el primero no tiene
-    punto (un lugar incierto), no la sitúa: el siguiente lugar de la lista no es donde estaba. Si el suceso trae
+    vivio_en, nacio_en y murio_en con fecha. Un suceso con varios lugares la pone en el primero, tenga punto o no (un
+    lugar incierto): el siguiente lugar de la lista no es donde estaba. Si el suceso trae
     `presentes`, solo sitúa a esas personas: las demás de `personas` solo se nombran (Augusto en el nacimiento de Jesús). */
 function estancias(persona) {
   if (persona === 'pablo') return BE.P;
@@ -682,7 +718,7 @@ function estancias(persona) {
   }
   for (const e of BE.D.eventos || []) {
     if (!(e.personas || []).includes(persona) || (e.presentes && !e.presentes.includes(persona))) continue;
-    const lugar = lugarConPunto((e.lugares || [])[0]);
+    const lugar = BE.L[(e.lugares || [])[0]];
     const v = ventanaEvento(e);
     if (!lugar || !v) continue;
     lista.push({ key: `evento:${e.id}`, sel: `evento:${e.id}`, lugar, a: v[0], b: v[1], narrativa: eventoEstimado(e), titulo: e.titulo,
@@ -691,7 +727,7 @@ function estancias(persona) {
   const p = BE.PERS[persona];
   (p?.relaciones || []).forEach((r, i) => {
     if (!RELACIONES_LUGAR.has(r.tipo) || !r.fecha) return;
-    const lugar = lugarConPunto(r.lugar), v = ventanaFecha(r.fecha);
+    const lugar = BE.L[r.lugar], v = ventanaFecha(r.fecha);
     if (!lugar || !v) return;
     lista.push({ key: `rel:${persona}:${i}`, sel: `persona:${persona}`, lugar, a: v[0], b: v[1],
       narrativa: !!(r.fecha.aprox || r.fecha.tipo === 'narrativa' || r.deducido), titulo: `${({ vivio_en: 'En', nacio_en: 'Nace en', murio_en: 'Muere en' })[r.tipo]} ${lugar.nombre}`,
@@ -720,7 +756,7 @@ function dondeGeneral(persona, t) {
   for (const s of L) if (s.a <= t && t <= s.b && (!mejor || s.b - s.a < mejor.b - mejor.a)) mejor = s;
   if (mejor) {
     const sig = L.find((s) => s.a > mejor.b) || null;
-    return { persona, en: mejor, sig, parada: true, estimada: mejor.narrativa, pos: [mejor.lugar.lon, mejor.lugar.lat], banda: mejor.narrativa ? [mejor.a, mejor.b] : null };
+    return { persona, en: mejor, sig, parada: true, estimada: mejor.narrativa, ...sitio(mejor.lugar), banda: mejor.narrativa ? [mejor.a, mejor.b] : null };
   }
   let prev = null, sig = null;
   for (const s of L) { if (s.b < t && (!prev || s.b > prev.b)) prev = s; if (s.a > t && (!sig || s.a < sig.a)) sig = s; }
@@ -728,11 +764,11 @@ function dondeGeneral(persona, t) {
   const hueco = sig.a - prev.b;
   if (prev.lugar.id === sig.lugar.id) {
     if (hueco > HUECO_MISMO) return null;
-    return { persona, en: prev, sig, parada: true, entre: true, estimada: true, pos: [prev.lugar.lon, prev.lugar.lat], banda: [prev.b, sig.a] };
+    return { persona, en: prev, sig, parada: true, entre: true, estimada: true, ...sitio(prev.lugar), banda: [prev.b, sig.a] };
   }
   if (hueco > HUECO_CAMINO) return null;
   const f = (t - prev.b) / Math.max(1e-6, sig.a - prev.b);
-  return { persona, en: prev, sig, parada: false, f, estimada: true, pos: interpolar(prev.lugar, sig.lugar, f), banda: [prev.b, sig.a] };
+  return { persona, en: prev, sig, parada: false, f, estimada: true, ...camino(prev.lugar, sig.lugar, f), banda: [prev.b, sig.a] };
 }
 /** Suceso en el que BE.donde pone a la persona en t, o null si su lugar no sale de un suceso. La tarjeta «Mientras
     tanto» lo usa para nombrar el mismo suceso y el mismo lugar que la bandera de la línea. */
@@ -836,7 +872,7 @@ function inicioPeriodo(p) {
 }
 
 Object.assign(BE, {
-  prepararParadas: () => itinerario('pablo').P, dondeEsta, viajeActual, ventanaPablo, ventanaCarta, ventanaEvento, momentoCarta, momentoEvento,
+  prepararParadas: () => itinerario('pablo').P, dondeEsta, puntoLugar, viajeActual, ventanaPablo, ventanaCarta, ventanaEvento, momentoCarta, momentoEvento,
   donde, sucesoEn, ventana, estancias, presentes, personasConEstancias, edad, tramoPotencia, tramoPeriodo, inicioPeriodo, ventanaFecha, inicioMes, diaHebreo, anioHebreo, nombreMes, eventoEstimado, calendario, DIA, MES_LUNAR,
 });
 })();

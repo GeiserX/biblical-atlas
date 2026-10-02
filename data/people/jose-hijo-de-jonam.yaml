@@ -4,17 +4,23 @@ name: José
 names:
 - name: José
 perspicacia: 1200002515#4
-disambiguation: José hijo de Jonam (Lu 3:30); no José, el esposo de María, ni José hijo de Matatías, ni los demás José que
-  numera Perspicacia.
+disambiguation: José hijo de Jonam (Lu 3:30); no José, el esposo de María, ni José hijo de Matatías, ni Bernabé, ni los demás
+  José que numera Perspicacia.
 distinct_from:
 - jose-esposo-de-maria
 - jose-hijo-de-matatias
 - jose-padre-de-igal
+- bernabe
+- jesus-hijo-de-eliezer
+- jose-de-arimatea
+- jose-hijo-de-jacob
+- jose-hijo-de-jose
 summary: Antepasado de Jesucristo por la línea de María y descendiente de David, anterior a la caída de Jerusalén ante Babilonia.
 reason: Perspicacia «José», núm. 4; Lu 3:30.
 sources:
 - it-jose
 - lucas-3
+- it-bernabe
 links:
 - title: 'Perspicacia: «José»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jos%C3%A9/
@@ -32,5 +38,5 @@ relations:
   reason: 'Lu 3:30: José, hijo de Jonam.'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-10-01'
+checked_on: '2026-10-02'
 status: verified

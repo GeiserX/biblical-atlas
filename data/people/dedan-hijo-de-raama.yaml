@@ -27,5 +27,7 @@ relations:
   reason: 'Gé 10:7: Raamá tuvo dos hijos, Seba y Dedán.'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-02'
 status: verified
+distinct_from:
+- dedan-hijo-de-jocsan

@@ -27,6 +27,7 @@ import yaml
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import bible_coverage  # noqa: E402
+import formas  # noqa: E402
 
 RAIZ = Path(__file__).resolve().parent.parent
 MAP = RAIZ / "scripts" / "migration" / "map.yaml"
@@ -49,7 +50,7 @@ ESTADOS_CANDIDATO = {"certain", "favored_level_1", "tradition", "alternative", "
 TIPOS_ENLACE = {"perspicacia", "bible", "video", "external"}
 TIPOS_PERIODO = {"emperor", "governor", "power", "king", "era", "high_priest"}
 CAMPOS_TEXTO = {"summary", "reason", "note", "change", "text", "explanation", "disambiguation", "unknown",
-                "weather", "harvest", "kept_at", "caption", "inverse_caption"}
+                "weather", "harvest", "kept_at", "caption", "inverse_caption", "group"}
 IDENTIFICACIONES = {"certain", "uncertain"}
 # Un año con su era: «537 a.e.c.», «c. 49-52 e.c.», «33 E.C.».
 RE_ANIO = re.compile(r"(?<![\d-])(\d{1,4})(?:\s*[-–]\s*(\d{1,4}))?\s*(a\.\s*e\.\s*c\.|e\.\s*c\.)", re.I)
@@ -70,6 +71,8 @@ REQUERIDOS = {
     "tours": ["id", "title", "stops", "sources", "reason", "checked_on", "status"],
 }
 REQ_PARADA = ["order", "place", "reference", "date", "note", "reason", "sources", "checked_on", "status"]
+# Valores cerrados de `repeats` en un viaje: el texto dice que el viaje se hacía cada año (1Sa 1:3, Lu 2:41).
+REPITE = {"yearly"}
 REQ_PARADA_RECORRIDO = ["sel", "t", "text", "passages"]
 REQ_FUENTE = ["title", "work", "url", "level", "published", "checked_on"]
 ESTRUCTURA_LIBRO = {"slug", "num", "name", "abbr", "forms", "spoken", "chapters"}
@@ -86,7 +89,7 @@ CAMPOS_PAPEL = {"role", "date", "place"}
 # Avisos (modelo.md, sección 13). Escriben y salen con 0; con --strict, fallan.
 WARNING_CODES = ("wrong_owner", "pair_twice", "outside_pending", "unlisted_caption", "kin_without_word",
                  "bare_company", "no_office", "no_certainty", "same_as_owner", "no_reference", "title_type",
-                 "type_without_role")
+                 "type_without_role", "shared_point")
 # «De aviso a error»: cuando main llega a 0 avisos de un código, el código se añade aquí, en un cambio revisado, y ya
 # no vuelve atrás. Un código de esta lista sale como error.
 PROMOTED = set()
@@ -230,6 +233,12 @@ def load(data_dir):
 
 def clean(o):
     return {k: v for k, v in o.items() if not k.startswith("_")}
+
+
+def validar_repite(viaje, donde, err):
+    """`repeats` es opcional en un viaje y, si está, es uno de REPITE. Lo sostienen las fuentes y la razón del viaje."""
+    if "repeats" in viaje and (not isinstance(viaje["repeats"], str) or viaje["repeats"] not in REPITE):
+        err(f"{donde}: repeats debe ser uno de {sorted(REPITE)}, no {viaje['repeats']!r}")
 
 
 # ---------------------------------------------------------------- el esquema antiguo
@@ -763,7 +772,92 @@ def validar_explicacion(cal, err):
         textos_largos(e, donde, err)
 
 
-def validar_lugar(o, donde, err, fuentes):
+CAMPOS_FORMA = {"type", "center", "note", "sources", "reason", "checked_on", "status"}
+PARAMETROS_FORMA = {"circle": {"radius_km"}, "ellipse": {"radii_km", "bearing"}, "box": {"bounds"},
+                    "polygon": {"vertices"}}
+
+
+def _par(p):
+    return isinstance(p, list) and len(p) == 2 and all(_numero(x) and math.isfinite(x) for x in p) \
+        and -90 <= p[0] <= 90 and -180 <= p[1] <= 180
+
+
+def _radio(x):
+    """Un radio de forma: un número finito, mayor que 0 y no mayor que formas.MAX_RADIO_KM."""
+    return _numero(x) and math.isfinite(x) and 0 < x <= formas.MAX_RADIO_KM
+
+
+def validar_forma(f, donde, err, lat, lon, puntos, en_candidato=False):
+    """La forma de una zona (`shape`): un hecho con su fuente y su razón, de un vocabulario cerrado, que contiene el punto
+    del lugar o del candidato. Devuelve el contorno, o None si la forma no se puede dibujar."""
+    donde = f"{donde} shape"
+    if not isinstance(f, dict):
+        err(f"{donde}: debe ser un objeto")
+        return None
+    t = f.get("type")
+    if t not in formas.TIPOS:
+        err(f"{donde}: type '{t}' no es uno de {list(formas.TIPOS)}")
+        return None
+    if en_candidato and t == "circle":
+        err(f"{donde}: un candidato ya es un círculo (geometry.radius_km); su forma es ellipse, box o polygon")
+    validar_hecho(f, donde, err)
+    if not str(f.get("note") or "").strip():
+        err(f"{donde}: falta note, cómo se calculó el contorno con lo que dice la fuente")
+    sobran = set(f) - CAMPOS_FORMA - PARAMETROS_FORMA[t]
+    if sobran:
+        err(f"{donde}: campos que no son de un {t}: {sorted(sobran)}")
+    if "center" in f and (t not in ("circle", "ellipse") or not isinstance(f["center"], dict)
+                          or not _par([f["center"].get("lat"), f["center"].get("lon")])):
+        err(f"{donde}: center solo va en circle o ellipse, como {{lat, lon}} dentro de rango")
+        return None
+    bien = True
+    if t == "circle" and not _radio(f.get("radius_km")):
+        err(f"{donde}: un circle necesita radius_km mayor que 0 y no mayor que {formas.MAX_RADIO_KM}")
+        bien = False
+    if t == "ellipse":
+        r = f.get("radii_km")
+        if not (isinstance(r, list) and len(r) == 2 and all(_radio(x) for x in r) and r[0] >= r[1]):
+            err(f"{donde}: una ellipse necesita radii_km: [a lo largo, de través], mayores que 0, no mayores que "
+                f"{formas.MAX_RADIO_KM} y el primero el mayor")
+            bien = False
+        if not _numero(f.get("bearing")) or not 0 <= f["bearing"] < 180:
+            err(f"{donde}: una ellipse necesita bearing, el rumbo del eje largo en grados, de 0 a menos de 180")
+            bien = False
+    if t == "box":
+        c = f.get("bounds")
+        if not (isinstance(c, dict) and set(c) == {"south", "west", "north", "east"}
+                and _par([c["south"], c["west"]]) and _par([c["north"], c["east"]])
+                and c["south"] < c["north"] and c["west"] < c["east"]):
+            err(f"{donde}: un box necesita bounds: {{south, west, north, east}}, con south < north y west < east")
+            bien = False
+    if t == "polygon":
+        vs = f.get("vertices")
+        if not isinstance(vs, list) or not 3 <= len(vs) <= formas.MAX_VERTICES:
+            err(f"{donde}: un polygon necesita de 3 a {formas.MAX_VERTICES} vertices")
+            return None
+        for i, v in enumerate(vs):
+            if isinstance(v, str):
+                if v not in puntos:
+                    err(f"{donde}: vertices[{i}] '{v}' no es un lugar con punto exacto (precision: point); escribe [lat, lon]")
+                    bien = False
+            elif not _par(v):
+                err(f"{donde}: vertices[{i}] debe ser [lat, lon] dentro de rango o el id de un lugar con precision: point")
+                bien = False
+        if bien and len({tuple(p) for p in formas.vertices(f, puntos)}) != len(vs):
+            err(f"{donde}: dos vértices caen en el mismo punto")
+            bien = False
+    if not bien:
+        return None
+    ring = formas.anillo(f, lat, lon, puntos)
+    if t == "polygon" and formas.se_cruza(ring):
+        err(f"{donde}: el contorno se cruza o se toca consigo mismo; ordena los vértices alrededor de la zona")
+    if not formas.dentro(ring, lat, lon):
+        err(f"{donde}: el punto ({lat}, {lon}) queda fuera de la forma; la forma rodea el punto que la representa")
+    return ring
+
+
+def validar_lugar(o, donde, err, fuentes, puntos=None):
+    puntos = puntos or {}
     if o.get("type") not in TIPOS_LUGAR:
         err(f"{donde}: type '{o.get('type')}' no es uno de {sorted(TIPOS_LUGAR)}")
     if o.get("precision") not in PRECISION_LUGAR:
@@ -806,6 +900,11 @@ def validar_lugar(o, donde, err, fuentes):
                 err(f"{cd}: una zona necesita radius_km mayor que 0")
             if g["type"] == "strip" and g.get("to") is None:
                 err(f"{cd}: una franja necesita to: {{lat, lon}}")
+            if "shape" in c:
+                if g["type"] != "zone":
+                    err(f"{cd}: shape solo va en un candidato de geometry.type zone")
+                elif _numero(g.get("lat")) and _numero(g.get("lon")):
+                    validar_forma(c["shape"], cd, err, g["lat"], g["lon"], puntos, en_candidato=True)
             cf = str(c.get("coord_source") or "")
             if cf == "calculation":
                 if not str(c.get("note") or "").strip():
@@ -815,8 +914,60 @@ def validar_lugar(o, donde, err, fuentes):
                     err(f"{cd}: coord_url debe ser la ficha de OpenBible de {cf}")
             else:
                 err(f"{cd}: coord_source debe ser openbible:<id> o calculation (de dónde sale el punto)")
+    if "shape" in o:
+        if cands is not None or o.get("precision") != "zone" or sin_punto:
+            err(f"{donde}: shape solo va en un lugar con punto y precision: zone; en un lugar incierto va en su candidato")
+        elif _numero(lat) and _numero(lon):
+            validar_forma(o["shape"], donde, err, lat, lon, puntos)
     if not any(e.get("type") == "perspicacia" for e in o.get("links") or []) and o.get("status") != "pending":
         err(f"{donde}: sin enlace a Perspicacia debe llevar status: pending")
+
+
+def companion_ids(v):
+    """Ids de persona de `companions`, en las dos formas: un id (todo el viaje) o {person, from, to}."""
+    return [c.get("person") if isinstance(c, dict) else c for c in v.get("companions") or []]
+
+
+def validar_viaje(v, donde, err):
+    """Quién viaja y quién acompaña (README.md, «Viajes»). Viaja una persona con ficha (`person`) o un grupo sin ficha
+    (`group`, un texto, con `person: null`). Cada acompañante es un id, si va en todo el viaje, o {person, from, to}
+    con la parada donde se une y la parada donde se separa. Una persona puede ir en dos tramos que no se tocan."""
+    persona, grupo = v.get("person"), v.get("group")
+    if grupo is not None and (not isinstance(grupo, str) or not grupo.strip()):
+        err(f"{donde}: group debe ser un texto: quién viaja sin ficha de persona («el Arca del pacto»)")
+    if persona is None and grupo is None:
+        err(f"{donde}: falta quién viaja: person (id de persona) o group (texto, con person: null)")
+    elif persona is not None and grupo is not None:
+        err(f"{donde}: person y group a la vez; un viaje de grupo lleva person: null")
+    comps = v.get("companions")
+    if not isinstance(comps, list):
+        err(f"{donde}: companions debe ser una lista ([] si nadie acompaña)")
+        return
+    n = len(v.get("stops") or [])
+    tramos = {}
+    for i, c in enumerate(comps):
+        if isinstance(c, str):
+            pid, a, b = c, 1, n
+        elif isinstance(c, dict):
+            pid, a, b = c.get("person"), c.get("from"), c.get("to")
+            if set(c) - {"person", "from", "to"} or not isinstance(pid, str):
+                err(f"{donde}: companions[{i}] lleva solo person, from y to")
+                continue
+            if not _entero(a) or not _entero(b) or not 1 <= a <= b <= n:
+                err(f"{donde}: companions[{i}] ({pid}): from y to son paradas del viaje, 1 <= from <= to <= {n}")
+                continue
+            if (a, b) == (1, n):
+                err(f"{donde}: companions[{i}] ({pid}) va en todo el viaje: se escribe solo su id")
+        else:
+            err(f"{donde}: companions[{i}] debe ser un id de persona o {{person, from, to}}")
+            continue
+        if pid == persona:
+            err(f"{donde}: companions[{i}]: {pid} es quien viaja")
+        # Dos tramos pegados (1-2 y 3-4) son uno solo (1-4): tampoco se tocan.
+        for x, y in tramos.get(pid, []):
+            if a <= y + 1 and x <= b + 1:
+                err(f"{donde}: companions[{i}]: {pid} ya va en las paradas {x} a {y}; un tramo pegado se une a ese")
+        tramos.setdefault(pid, []).append((a, b))
 
 
 def validar_persona(o, donde, err):
@@ -825,6 +976,8 @@ def validar_persona(o, donde, err):
     ncc = o.get("distinct_from")
     if ncc is not None and (not isinstance(ncc, list) or not all(ID.match(str(x)) for x in ncc)):
         err(f"{donde}: distinct_from debe ser una lista de ids de personas")
+    if ncc and not str(o.get("disambiguation") or "").strip():
+        err(f"{donde}: lleva distinct_from y le falta disambiguation, el texto que dice qué la separa de sus homónimos")
     na = o.get("not_claimed")
     if na is not None and not isinstance(na, list):
         err(f"{donde}: not_claimed debe ser una lista de frases")
@@ -1399,8 +1552,9 @@ def integrity(datos):
             for pid in o.get("distinct_from") or []:
                 ref(f, "distinct_from", pid, "people")
             if tipo == "journeys":
-                ref(f, "person", o.get("person"), "people")
-                for p in o.get("companions") or []:
+                if o.get("person") is not None:
+                    ref(f, "person", o.get("person"), "people")
+                for p in companion_ids(o):
                     ref(f, "companions", p, "people")
                 for p in o.get("stops") or []:
                     ref(f, f"stop {p.get('order')}: place", p.get("place"), "places")
@@ -1468,6 +1622,7 @@ def validar(datos):
     meses = validar_calendario(datos, err)
     validar_libros(datos, err, meses)
     offices = (datos["vocabulary"].get("offices") or {})
+    puntos = formas.puntos_de_vertices(datos["places"])
 
     for tipo in TYPES:
         vistos = set()
@@ -1498,7 +1653,7 @@ def validar(datos):
                 err(f"{donde}: narrative_order.after debe ser el id de un suceso")
             textos_largos(limpio_, donde, err)
             if tipo == "places":
-                validar_lugar(limpio_, donde, err, fuentes)
+                validar_lugar(limpio_, donde, err, fuentes, puntos)
             if tipo in ("places", "people"):
                 for i, n in enumerate(limpio_.get("names") or []):
                     if not n.get("name"):
@@ -1511,6 +1666,8 @@ def validar(datos):
             if tipo == "people":
                 validar_persona(limpio_, donde, err)
             if tipo == "journeys":
+                validar_viaje(limpio_, donde, err)
+                validar_repite(limpio_, donde, err)
                 ordenes = []
                 for i, p in enumerate(limpio_.get("stops") or []):
                     pd = f"{donde} stop {p.get('order', i)}"
@@ -1566,8 +1723,10 @@ def validar(datos):
                 validar_recorrido(limpio_, donde, err)
     check_relations(datos, err, warn)
     validar_consta_desde(datos, err)
+    puntos_compartidos(datos, warn)
     validar_claves_perspicacia(datos, err)
     validar_wol(datos, err)
+    validar_homonimos(datos, err)
     errores.extend(integrity(datos))
     errores.extend(pablo_en_su_sitio(datos))
     errores.extend(meses_en_su_anio(datos))
@@ -1608,6 +1767,95 @@ def validar_wol(datos, err, excepciones=None):
             rec(clean(o), o.get("_fichero", f"data/{t}"))
     rec(datos.get("calendar") or {}, "data/calendar.yaml")
     rec(datos.get("books") or [], "data/books.yaml")
+
+
+EXCEPCIONES_HOMONIMOS = RAIZ / "scripts" / "homonym_exceptions.yaml"
+
+
+def clave_nombre(nombre):
+    """La clave con que se comparan dos nombres de persona: hoy, el nombre exacto en español, con sus tildes y sus
+    mayúsculas (Aná y Ana no son homónimos).
+    Multilingüe: dos nombres que coinciden en español pueden diferir en otro idioma, y al revés. Cuando los datos
+    lleven nombres en más de un idioma, esta función recibe el idioma y los nombres se comparan dentro de cada uno."""
+    return nombre
+
+
+def claves_de_nombres(o):
+    """Las claves de name y de cada entrada de names de una persona."""
+    nombres = [o.get("name")] + [n.get("name") for n in o.get("names") or [] if isinstance(n, dict)]
+    return {clave_nombre(n) for n in nombres if isinstance(n, str) and n}
+
+
+def validar_homonimos(datos, err, excepciones=None):
+    """Dos personas que comparten una entrada de name o de names se distinguen con distinct_from en las dos fichas o
+    se dan como quizá la misma con un same_as. distinct_from va siempre en las dos direcciones, nunca nombra a la
+    propia ficha y nunca va en un par que lleva same_as. Cada entrada de scripts/homonym_exceptions.yaml (o de la
+    lista excepciones, si se pasa) exime a un par de un solo nombre, el de su campo name, y lleva su reason."""
+    donde = "scripts/homonym_exceptions.yaml"
+    if excepciones is None:
+        excepciones = (_read(EXCEPCIONES_HOMONIMOS) or []) if EXCEPCIONES_HOMONIMOS.exists() else []
+    personas = {o.get("id"): o for o in datos["people"]}
+    distintos = {pid: set(o.get("distinct_from") or []) if isinstance(o.get("distinct_from"), list) else set()
+                 for pid, o in personas.items()}
+    iguales = {frozenset((pid, r.get("person"))) for pid, o in personas.items()
+               for r in o.get("relations") or [] if isinstance(r, dict) and r.get("type") == "same_as"}
+    dobles = set()
+    for pid in sorted(distintos):
+        for otro in sorted(distintos[pid], key=str):
+            if otro == pid:
+                err(f"{personas[pid]['_fichero']}: distinct_from se nombra a sí misma")
+                continue
+            if otro in personas and pid not in distintos[otro]:
+                err(f"{personas[pid]['_fichero']}: distinct_from nombra a {otro}, pero {otro} no la nombra a ella; "
+                    f"van en las dos fichas")
+            if frozenset((pid, otro)) in iguales and frozenset((pid, otro)) not in dobles:
+                dobles.add(frozenset((pid, otro)))
+                err(f"{personas[pid]['_fichero']}: {otro} va a la vez en distinct_from y en un same_as; si quizá son "
+                    f"la misma persona, solo same_as")
+    exentos = collections.defaultdict(set)
+    if not isinstance(excepciones, list):
+        err(f"{donde}: debe ser una lista de entradas con people, name y reason")
+        excepciones = []
+    for e in excepciones:
+        gente = e.get("people") if isinstance(e, dict) else None
+        if not (isinstance(gente, list) and len(gente) == 2 and all(isinstance(i, str) for i in gente)
+                and gente[0] != gente[1]):
+            err(f"{donde}: people {gente!r} debe ser un par de dos ids distintos")
+            continue
+        a, b = sorted(gente)
+        if not (a in personas and b in personas):
+            err(f"{donde}: {[a, b]} debe ser un par de ids de personas que existen")
+            continue
+        nombre = e.get("name")
+        if not isinstance(nombre, str) or not nombre.strip():
+            err(f"{donde}: {a} y {b}: falta name, el nombre que comparten sin ser homónimos")
+            continue
+        if not str(e.get("reason") or "").strip():
+            err(f"{donde}: {a} y {b}: falta reason, por qué «{nombre}» no los hace homónimos")
+        par = frozenset((a, b))
+        if par in iguales or b in distintos[a] or a in distintos[b]:
+            err(f"{donde}: {a} y {b} ya llevan distinct_from o same_as; la excepción sobra")
+        k = clave_nombre(nombre)
+        if k not in claves_de_nombres(personas[a]) & claves_de_nombres(personas[b]):
+            err(f"{donde}: {a} y {b} ya no comparten el nombre «{nombre}»; la excepción sobra")
+        exentos[par].add(k)
+    por_nombre = collections.defaultdict(set)
+    for pid, o in personas.items():
+        for k in claves_de_nombres(o):
+            por_nombre[k].add(pid)
+    vistos = set()
+    for nombre in sorted(por_nombre):
+        ids = sorted(por_nombre[nombre])
+        for i, a in enumerate(ids):
+            for b in ids[i + 1:]:
+                par = frozenset((a, b))
+                if par in vistos or par in iguales or nombre in exentos.get(par, ()):
+                    continue
+                vistos.add(par)
+                if b not in distintos[a] and a not in distintos[b]:
+                    err(f"{personas[a]['_fichero']}: comparte el nombre «{nombre}» con {b} y ninguna de las dos "
+                        f"nombra a la otra; van en distinct_from de las dos (con disambiguation) o en un same_as "
+                        f"si quizá son la misma persona")
 
 
 RE_PERSPICACIA = re.compile(r"^(\d{10})(?:#([1-9]\d?))?$")
@@ -1652,6 +1900,38 @@ def validar_claves_perspicacia(datos, err):
         if formas == {True, False}:
             err(f"data/people: el documento {doc} sale como clave sin número y con número; si el artículo trata de "
                 f"varias personas, todas llevan su número de entrada")
+
+
+# Un lugar largo (río, mar, valle) se rotula con un solo punto: si cae encima de otro lugar, el mapa da el sitio a uno y
+# el otro nombre desaparece. Las regiones no cuentan, porque el mapa las rotula aparte (REGION en site/js/mapa.js).
+LUGARES_LARGOS = {"river", "sea", "valley"}
+ROTULO_APARTE = {"region", "province", "country", "kingdom", "desert", "plain", "valley"}
+RADIO_COMPARTIDO_KM = 0.5
+
+
+def _km(a, b):
+    la1, lo1, la2, lo2 = map(math.radians, (a["lat"], a["lon"], b["lat"], b["lon"]))
+    h = math.sin((la2 - la1) / 2) ** 2 + math.cos(la1) * math.cos(la2) * math.sin((lo2 - lo1) / 2) ** 2
+    return 2 * 6371.0 * math.asin(math.sqrt(min(1.0, h)))
+
+
+def puntos_compartidos(datos, warn):
+    """Aviso shared_point: un río, mar o valle a menos de 0,5 km de otro lugar que no sea una región, salvo que su
+    coord_note nombre a ese lugar (con su nombre o uno de sus names, como palabra entera: «Ur» no cuenta dentro de
+    «curso»)."""
+    con_punto = [o for o in datos["places"] if _numero(o.get("lat")) and _numero(o.get("lon"))]
+    for o in con_punto:
+        if o.get("type") not in LUGARES_LARGOS:
+            continue
+        nota = str(o.get("coord_note") or "").lower()
+        for q in con_punto:
+            if q is o or q.get("type") in ROTULO_APARTE or _km(o, q) >= RADIO_COMPARTIDO_KM:
+                continue
+            nombres = {str(q.get("name") or "")} | {str(n.get("name") or "") for n in q.get("names") or []}
+            if any(n and re.search(r"(?<!\w)" + re.escape(n.lower()) + r"(?!\w)", nota) for n in nombres):
+                continue
+            warn("shared_point", f"{o['_fichero']}: su punto está a {_km(o, q):.2f} km del de {q.get('id')} y "
+                                 f"coord_note no lo nombra; muévelo con su razón o explica en coord_note por qué lo comparte")
 
 
 def validar_consta_desde(datos, err):

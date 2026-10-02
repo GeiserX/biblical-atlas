@@ -35,10 +35,12 @@ history:
   change: El resumen escribía Ziqlag, la grafía de Perspicacia; la TNM y el lugar del atlas dicen Ziclag. Se añade que Akís
     nombró a David su guardaespaldas (1Sa 28:2).
   source: 1-samuel-28
-checked_on: '2026-09-30'
+checked_on: '2026-10-02'
 status: verified
 distinct_from:
 - abimelec-hijo-de-gedeon
+- abimelec-de-tiempos-de-abrahan
+- abimelec-de-tiempos-de-isaac
 relations:
 - type: lived_in
   place: gat

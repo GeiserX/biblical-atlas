@@ -8,6 +8,8 @@ names:
   note: Forma de 2Sa 20:24 y 1Re 12:18.
 - name: Hadoram
   note: Forma de 2Cr 10:18; Perspicacia tiene otro artículo «Hadoram» para otras personas.
+disambiguation: Adoniram hijo de Abdá, jefe de los trabajos forzados, llamado también Hadoram; no Hadoram hijo de Joctán ni
+  Joram hijo de Toi, al que Crónicas llama Hadoram.
 perspicacia: '1200000112'
 summary: Hijo de Abdá y jefe de los reclutados para trabajo obligatorio con David, Salomón y Rehoboam. En 997 a.e.c. Rehoboam
   lo envió a las tribus sublevadas, que lo mataron a pedradas.
@@ -18,6 +20,7 @@ sources:
 - 1-reyes-4
 - 1-reyes-5
 - 1-reyes-12
+- it-hadoram
 links:
 - title: 'Perspicacia: «Adoniram»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Adoniram/
@@ -67,7 +70,7 @@ relations:
   reason: '1Re 12:18: el rey Rehoboam lo envió a las tribus sublevadas como jefe de los reclutados para el trabajo obligatorio.'
   checked_on: '2026-09-30'
   status: verified
-checked_on: '2026-09-30'
+checked_on: '2026-10-02'
 status: verified
 distinct_from:
 - hadoram-hijo-de-joctan

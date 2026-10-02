@@ -7,13 +7,29 @@ names:
 - name: Desierto de Bet-Aven
   note: Jos 18:12 lo nombra como tramo de la frontera norte de Benjamín.
 type: city
-lat: 31.86921
-lon: 35.26807
+lat: null
+lon: null
 precision: uncertain
-coord_source: openbible:a03cb21
-coord_url: https://www.openbible.info/geo/ancient/a03cb21/beth-aven-1
-coord_note: 'Punto de Tell Maryam, primera identificación de OpenBible. jw.org no nombra ningún sitio: solo la pone cerca
-  de Hai, al este de Betel y al oeste de Micmash.'
+coord_source: null
+coord_url: null
+candidates:
+- name: Entre Betel y Micmash, cerca de Hai
+  geometry:
+    type: zone
+    lat: 31.8978
+    lon: 35.2591
+    radius_km: 4
+  checked_on: '2026-10-02'
+  status: favored_level_1
+  sources:
+  - it-bet-aven
+  - josue-7
+  - 1-samuel-13
+  reason: 'Perspicacia «Bet-aven», núm. 1: junto a Hai, en el desierto, al este de Betel y al oeste de Micmash. No nombra
+    ningún sitio.'
+  note: Centro nuestro a medio camino entre los puntos de betel y micmash. Radio nuestro.
+  coord_source: calculation
+coord_note: 'Sin punto: jw.org no nombra ningún sitio; solo la pone cerca de Hai, entre Betel y Micmash.'
 summary: Ciudad de Benjamín próxima a Hai, en una zona desértica al este de Betel y al oeste de Micmash. Josué 7:2 la usa
   para situar Hai.
 reason: 'Perspicacia «Bet-aven», núm. 1; Jos 7:2. Coordenada de OpenBible: solo tomamos el punto.'
@@ -34,5 +50,10 @@ links:
 - title: Josué 18 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Josu%C3%A9/18/
   type: bible
-checked_on: '2026-09-29'
+checked_on: '2026-10-02'
 status: verified
+history:
+- date: '2026-10-02'
+  change: 'Pierde el punto de OpenBible (31.86921, 35.26807): jw.org no nombra ese sitio. Queda como candidato lo que sí dicen
+    el texto y jw.org.'
+  source: it-bet-aven

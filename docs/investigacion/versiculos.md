@@ -85,6 +85,10 @@ Un tramo es una unidad de sentido: una escena, un discurso, una lista, un poema.
 
 **Fundir o separar.** Dos nombres son una sola ficha (con los dos en `names`) solo si jw.org dice que son la misma persona: Jesúa y Josué el sumo sacerdote. Si jw.org solo lo da como probable o posible, van dos fichas y una relación `same_as` con `inferred: true` y `certainty`: `probable` si la fuente la da por probable, `possible` si solo la da por posible. Va en la ficha cuyo id va primero por orden alfabético. Su `status` dice, como en todo hecho, si alguien abrió la fuente y dice eso.
 
+**Homónimos.** Dos personas son homónimas si comparten una entrada exacta de `name` o de `names`, con sus tildes: Aná y Ana no lo son. Cada par lleva el id de la otra en `distinct_from` de las dos fichas, y cada ficha con `distinct_from` lleva `disambiguation`, con nuestras palabras y una fuente de la ficha que lo diga. Si jw.org ve probable o posible que sean la misma persona, el par lleva `same_as` y no `distinct_from`. Un par que comparte nombre sin ser homónimo, como Juan y Santiago con el sobrenombre común Boanerges, va en `scripts/homonym_exceptions.yaml` con ese nombre y su porqué; la excepción vale solo para ese nombre. `validate.py` da error si un par que comparte nombre no lleva nada de eso, si `distinct_from` va en una sola dirección o si un par lleva `distinct_from` y `same_as`.
+
+Hoy los nombres se comparan en español. Dos nombres que coinciden en español pueden ser distintos en otro idioma, y al revés. Cuando los datos lleven nombres en más de un idioma, la comparación se hará dentro de cada idioma: la clave sale de una sola función, `clave_nombre` de `validate.py`, que entonces recibirá el idioma.
+
 ## 5. Lugares
 
 **Cada lugar con nombre es un lugar**: ciudades, regiones, países, montes, ríos, mares, valles, desiertos, y también los que solo salen en una lista de fronteras o de etapas. Los dioses, las visiones y las construcciones siguen la tabla de la sección 4. Un lugar con varios nombres es una sola ficha, con los demás en `names` y su época si la fuente la da (Luz y Betel).
@@ -142,6 +146,11 @@ Las series `a7` y `hechos` ya tienen su propia numeración.
 Los años van en numeración astronómica: 537 a.e.c. es −536, y 1 a.e.c. es 0.
 
 **El suceso de todo un libro profético no sitúa a nadie.** Va sin `type` ni `roles` y con `present: []`, aunque la tabla diga dónde se escribió; la residencia deducida del profeta va en su relación `lived_in`. Solo un mensaje que el texto fecha y sitúa, como los de Zacarías, lleva `type: speech`, el papel `spoke` y `present`.
+
+**Quién lleva un viaje propio.** Dos reglas para los viajes de `data/journeys/`:
+
+- Un rey invasor que el texto lleva en persona de un lugar a otro tiene su viaje, con las paradas que nombra el texto: Kedorlaomer (`campana-de-kedorlaomer`), Sisaq, Hazael, Senaquerib, Nekó y Nabucodonosor en 617. Si el texto solo lo pone en un sitio, no hay viaje: lo sitúa su suceso. La campaña de 609 a 607 aún no tiene viaje: sus sucesos ponen a Nabucodonosor ante Jerusalén en 609 (2Re 25:1) y en Riblá en 607 (2Re 25:6).
+- Cuando dos personas con ficha hacen el mismo trayecto, van dos viajes si el texto cuenta el camino de cada una, como Acab y Jehosafat hacia Ramot-Galaad, que acaban en sitios distintos. Va un solo viaje, con la otra en `companions`, si el texto las envía o las lleva juntas, como a Judas y Silas con la carta de Jerusalén.
 
 ## 7. Relaciones
 

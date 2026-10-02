@@ -6,12 +6,15 @@ names:
   note: Su nombre; Bernabé es un sobrenombre que le dieron los apóstoles.
 - name: Bernabé
   note: Sobrenombre que significa «hijo del consuelo» (Hch 4:36); la nota de estudio lo liga a su don para animar a otros.
+disambiguation: José, el levita de Chipre al que los apóstoles pusieron el sobrenombre de Bernabé (Hch 4:36); no es ninguno
+  de los demás José de la Biblia.
 summary: Levita nacido en Chipre, llamado José; los apóstoles le pusieron Bernabé. En Jerusalén vendió un terreno y dio el
   dinero a los apóstoles. Acompañó a Pablo en el primer viaje y a la reunión de Jerusalén de 49.
 reason: Perspicacia «Bernabé» lo presenta como levita chipriota y compañero de Pablo; Hechos 13 a 15 narra los viajes
   juntos.
 sources:
 - it-bernabe
+- it-jose
 - hch-13
 - hch-15
 - hechos-4
@@ -46,7 +49,7 @@ history:
   change: 'La relación con Pablo hasta c. 49 cita ahora Gál 2:1, 9, 13: suben juntos a Jerusalén, las columnas les dan la
     mano y Bernabé sigue a su lado en Antioquía.'
   source: galatas-2
-checked_on: '2026-09-29'
+checked_on: '2026-10-02'
 status: verified
 relations:
 - type: born_in
@@ -143,3 +146,12 @@ relations:
     Bernabé.
   checked_on: '2026-09-29'
   status: verified
+distinct_from:
+- jesus-hijo-de-eliezer
+- jose-de-arimatea
+- jose-esposo-de-maria
+- jose-hijo-de-jacob
+- jose-hijo-de-jonam
+- jose-hijo-de-jose
+- jose-hijo-de-matatias
+- jose-padre-de-igal

@@ -12,6 +12,20 @@ precision: zone
 coord_source: openbible:ac71e65
 coord_url: https://www.openbible.info/geo/ancient/ac71e65/philistia
 coord_note: Punto representativo de OpenBible para la llanura costera de los filisteos.
+shape:
+  type: polygon
+  vertices:
+  - gaza
+  - asquelon
+  - jope
+  - [31.967, 34.986]
+  - [31.416, 34.696]
+  note: 'Contorno nuestro: la costa de Gaza a Jope, pasando por Asquelón, y una línea paralela a ella 24 km tierra adentro.'
+  sources:
+  - it-filistea
+  reason: 'Perspicacia «Filistea, filisteos», párr. 1: unos 80 km de costa, desde cerca de Jope hasta Gaza, y unos 24 km hacia el interior.'
+  checked_on: '2026-10-02'
+  status: verified
 summary: Franja de la costa mediterránea, desde cerca de Jope hasta Gaza, tierra de los filisteos. Ya en tiempos de Abrahán
   vivían filisteos en Guerar, con su rey Abimélec.
 reason: 'Perspicacia «Filistea, filisteos», párr. 1 y 3; Gé 21:32, 34. Coordenada de OpenBible: solo tomamos el punto.'

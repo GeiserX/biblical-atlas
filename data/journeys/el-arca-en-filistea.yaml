@@ -1,0 +1,173 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: el-arca-en-filistea
+name: El Arca, de Siló a Quiryat-Jearim
+person: null
+group: el Arca del pacto
+reference: 1Sa 4:3-11; 5:1–7:2
+date:
+  from: -1172
+  to: -1116
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre c. 1173 y 1117 a.e.c. (tiempo narrativo: antes de que Saúl fuera ungido rey)'
+companions:
+- person: hofni
+  from: 1
+  to: 2
+- person: finehas-hijo-de-eli
+  from: 1
+  to: 2
+summary: Israel trae el Arca de Siló al campamento, y los filisteos la capturan junto a Ebenézer. Siete meses la pasan
+  de una de sus ciudades a otra mientras sufren plagas; al fin la devuelven a Bet-Semes, y sube a Quiryat-Jearim.
+reason: 1Sa 4:3–7:2 da el orden de los lugares, y Perspicacia «Arca del pacto» lo resume. Hofní y Finehás la acompañan
+  hasta morir en Ebenézer (4:4, 11). Fecha de sus sucesos, entre Jefté y la unción de Saúl (estudio 3).
+sources:
+- 1-samuel-4
+- 1-samuel-5
+- 1-samuel-6
+- 1-samuel-7
+- it-arca-del-pacto
+- it-jefte
+- it-silo
+- si-3
+checked_on: '2026-10-02'
+status: verified
+stops:
+- order: 1
+  place: silo
+  reference: 1Sa 4:3-5
+  date:
+    from: -1172
+    to: -1116
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre c. 1173 y 1117 a.e.c. (tiempo narrativo: poco antes de morir Elí)'
+  note: Salida. Tras una derrota, los ancianos mandan traerla para que los salve; Hofní y Finehás van con ella.
+  reason: 1Sa 4:3, 4 la trae de Siló y 4:5 la hace llegar al campamento. Suceso israel-lleva-el-arca-al-campamento; Perspicacia
+    «Siló», núm. 2.
+  sources:
+  - 1-samuel-4
+  - it-silo
+  - it-arca-del-pacto
+  checked_on: '2026-10-02'
+  status: verified
+- order: 2
+  place: ebenezer
+  reference: 1Sa 4:5, 10, 11; 5:1
+  date:
+    from: -1172
+    to: -1116
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre c. 1173 y 1117 a.e.c. (tiempo narrativo: poco antes de morir Elí)'
+  note: Llega al campamento de Israel. Cae en manos filisteas en la segunda batalla, y de allí se la llevan.
+  reason: 1Sa 4:1 pone el campamento junto a Ebenézer y 5:1 dice que la llevan desde allí. Sucesos israel-lleva-el-arca-al-campamento
+    y los-filisteos-capturan-el-arca.
+  sources:
+  - 1-samuel-4
+  - 1-samuel-5
+  - it-ebenezer
+  checked_on: '2026-10-02'
+  status: verified
+- order: 3
+  place: asdod
+  reference: 1Sa 5:1-8
+  date:
+    from: -1172
+    to: -1116
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre c. 1173 y 1117 a.e.c. (tiempo narrativo: antes de que Saúl fuera ungido rey)'
+  note: En el templo de Dagón, cuya imagen amanece caída dos veces; la ciudad sufre hemorroides.
+  reason: Sucesos dagon-cae-ante-el-arca-en-asdod y jehova-castiga-a-asdod-con-hemorroides.
+  sources:
+  - 1-samuel-5
+  - it-asdod
+  - it-dagon
+  checked_on: '2026-10-02'
+  status: verified
+- order: 4
+  place: gat
+  reference: 1Sa 5:8, 9
+  date:
+    from: -1172
+    to: -1116
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre c. 1173 y 1117 a.e.c. (tiempo narrativo: antes de que Saúl fuera ungido rey)'
+  note: Los gobernantes filisteos deciden mandarla aquí, y la plaga alcanza a toda la ciudad.
+  reason: Suceso jehova-castiga-a-gat-con-hemorroides.
+  sources:
+  - 1-samuel-5
+  - it-gat
+  checked_on: '2026-10-02'
+  status: verified
+- order: 5
+  place: ecron
+  reference: 1Sa 5:10–6:12
+  date:
+    from: -1172
+    to: -1116
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre c. 1173 y 1117 a.e.c. (tiempo narrativo: antes de que Saúl fuera ungido rey)'
+  note: Los de Ecrón piden que la devuelvan. La cargan en una carreta nueva con dos vacas y una ofrenda de oro.
+  reason: 1Sa 6:16 cuenta que los gobernantes vuelven a Ecrón. Sucesos ecron-pide-que-se-devuelva-el-arca y
+    los-filisteos-deciden-devolver-el-arca.
+  sources:
+  - 1-samuel-5
+  - 1-samuel-6
+  - it-eqron
+  checked_on: '2026-10-02'
+  status: verified
+- order: 6
+  place: bet-semes
+  reference: 1Sa 6:12-21
+  date:
+    from: -1172
+    to: -1116
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre c. 1173 y 1117 a.e.c. (tiempo narrativo: antes de que Saúl fuera ungido rey)'
+  note: Las vacas paran en el campo de Josué el betsemita; mueren muchos por mirar el Arca.
+  reason: Sucesos las-vacas-llevan-el-arca-a-bet-semes y jehova-castiga-a-los-de-bet-semes-por-mirar-el-arca.
+  sources:
+  - 1-samuel-6
+  - it-bet-semes
+  - it-arca-del-pacto
+  checked_on: '2026-10-02'
+  status: verified
+- order: 7
+  place: quiryat-jearim
+  reference: 1Sa 6:21–7:2
+  date:
+    from: -1172
+    to: -1116
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre c. 1173 y 1117 a.e.c. (tiempo narrativo: tras la pérdida del Arca y antes de reinar Saúl)'
+  note: Llegada. La suben a la casa de Abinadab, en la colina; Perspicacia dice que siguió en la ciudad unos setenta años.
+  reason: Suceso el-arca-queda-en-casa-de-abinadab. Perspicacia «Arca del pacto», párr. 16.
+  sources:
+  - 1-samuel-6
+  - 1-samuel-7
+  - it-quiryat-jearim
+  - it-arca-del-pacto
+  checked_on: '2026-10-02'
+  status: verified

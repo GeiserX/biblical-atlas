@@ -10,7 +10,9 @@ const { E, esc, $, EXTERNO, fmtAnio, fechaCorta } = BE;
 const reducido = () => matchMedia('(prefers-reduced-motion: reduce)').matches || document.documentElement.classList.contains('be-reunion');
 const busca = (id) => (BE.D.recorridos || []).find((r) => r.id === id);
 const CLAVE_PASO = 'biblical-atlas:recorrido:';
-const R = { id: null, paso: 0, pasoHash: null, respuestas: {}, play: 0, marcas: [] };
+// marcoLlegada: el encuadre guardado de la entrada a la que se acaba de llegar (Atrás, Adelante, una recarga), solo
+// hasta el siguiente fotograma, el que abre el recorrido (seguirSeleccion).
+const R = { id: null, paso: 0, pasoHash: null, marcoLlegada: null, respuestas: {}, play: 0, marcas: [] };
 const pasoDe = (id) => (R.id === id ? R.paso : (R.pasoHash ?? guardado(id)));
 // El paso guardado es un entero desde 0; un valor que no es un número (una copia estropeada) cuenta como el primero.
 // Quien lo usa lo recorta al número de paradas.
@@ -57,7 +59,7 @@ function fichaRecorrido(id) {
     <section class="be-card recorrido"><div class="be-card__pad">
       <div class="be-card__eyebrow">Recorrido guiado · parada ${i + 1} de ${n}${libros.length ? ` · ${esc(libros.slice(0, 3).join(', '))}` : ''}</div>
       <div class="progreso" role="list" aria-label="Paradas del recorrido">${rc.paradas.map((x, k) => `<button type="button" role="listitem" class="progreso-tramo${k < i ? ' progreso-tramo--visto' : ''}${k === i ? ' progreso-tramo--actual' : ''}" data-recorrido-ir="${k}" aria-label="Parada ${k + 1}: ${esc(nombreDe(x))}"${k === i ? ' aria-current="step"' : ''}><span class="progreso-barra"></span><span class="progreso-anio">${esc(fmtAnio(Math.floor(x.t)))}</span></button>`).join('')}</div>
-      ${i === 0 ? `<div class="be-note recorrido-entrada"><span aria-hidden="true">◎</span><span>Vas a ver ${n} paradas${libros.length ? ` con ${esc(libros.join(', '))}` : ''}. Cada una mueve el cursor, el mapa y la ficha. Los textos son resúmenes nuestros: el relato se lee en jw.org.</span></div>` : ''}
+      ${i === 0 ? `<div class="be-note recorrido-entrada"><span aria-hidden="true">◎</span><span>Vas a ver ${n} paradas${libros.length ? ` con ${esc(libros.join(', '))}` : ''}. Cada una mueve el cursor, el mapa y la ficha. El relato se lee en jw.org.</span></div>` : ''}
       <div class="parada-cab"><span class="be-num parada-num">${i + 1}</span><span class="be-chrono be-chrono--tnm">${esc(fechaParada(p))}</span></div>
       <h2 class="be-card__title">${s ? `<button type="button" class="enlace-titulo" data-sel="${esc(p.sel)}" title="Abrir su ficha">${esc(titulo)}</button>` : esc(titulo)}</h2>
       <p class="recorrido-texto">${esc(p.texto)}</p>
@@ -116,8 +118,8 @@ function marcas() {
   }
 }
 
-/** Va a la parada i: cursor, mapa (su lugar resaltado y encuadrado), ficha y dirección. */
-function irA(i, { historia = true } = {}) {
+/** Va a la parada i: cursor, mapa (su lugar resaltado y, si encuadrar, encuadrado), ficha y dirección. */
+function irA(i, { historia = true, encuadrar = true } = {}) {
   const rc = busca(R.id);
   if (!rc) return;
   i = Math.max(0, Math.min(rc.paradas.length - 1, i));
@@ -130,13 +132,15 @@ function irA(i, { historia = true } = {}) {
   const ls = lugaresParada(p);
   vistaSobreMapa();   // antes de encuadrar: el encuadre deja libre el sitio de esta tarjeta
   BE.mapa.resaltar(ls.length ? ls : null);
-  if (ls.length) BE.mapa.encuadrar(ls);
+  if (ls.length && encuadrar) BE.mapa.encuadrar(ls);
   BE.pintarPanel(true);
   marcas();
   BE.guardarHash();
 }
 /** Se llama en cada fotograma: entra o sale del recorrido según la selección. */
 function seguirSeleccion() {
+  const marco = R.marcoLlegada;
+  R.marcoLlegada = null;
   const id = E.sel?.tipo === 'recorrido' ? E.sel.id : null;
   if (id === R.id) return;
   if (R.id) { parar(); BE.mapa.resaltar(null); }
@@ -146,7 +150,9 @@ function seguirSeleccion() {
     const rc = busca(id);
     R.paso = Math.min(rc.paradas.length - 1, R.pasoHash ?? guardado(id));
     R.pasoHash = null;
-    irA(R.paso, { historia: false });
+    // Al llegar a una entrada que guarda su encuadre, el mapa se queda como se dejó, no en el de la parada.
+    irA(R.paso, { historia: false, encuadrar: !marco });
+    if (marco) BE.mapa.ponerMarco(marco);
   } else { vistaSobreMapa(); marcas(); }
 }
 function parar() { clearTimeout(R.play); R.play = 0; }
@@ -175,12 +181,12 @@ function hojaImpresion(id) {
   let h = document.getElementById('hoja-recorrido');
   if (!h) { h = document.createElement('div'); h.id = 'hoja-recorrido'; h.className = 'hoja-impresion'; document.body.appendChild(h); }
   h.innerHTML = `<h1>${esc(rc.titulo)}</h1>${rc.resumen ? `<p>${esc(rc.resumen)}</p>` : ''}
-    <p class="hoja-meta">${rc.paradas.length} paradas · ${esc(fechaCorta({ desde: Math.floor(a), hasta: Math.floor(z) }))} · fechas según jw.org · biblical-atlas</p>
+    <p class="hoja-meta">${rc.paradas.length} paradas · ${esc(fechaCorta({ desde: Math.floor(a), hasta: Math.floor(z) }))} · fechas según la Traducción del Nuevo Mundo · biblical-atlas</p>
     ${escala}
     <ol class="hoja-paradas">${rc.paradas.map((p) => { const s = BE.parseSel(p.sel); return `<li><b>${esc(s ? BE.nombreSel(s) : p.sel)}</b> <span class="hoja-fecha">${esc(fechaParada(p))}</span><br>${esc(p.texto)}${(p.pasajes || []).length ? `<br><i>${esc(p.pasajes.join('; '))}</i>` : ''}${p.no_sabemos ? `<br>No sabemos: ${esc(p.no_sabemos)}` : ''}</li>`; }).join('')}</ol>
     ${qs.length ? `<h2>Preguntas</h2><ol class="hoja-preguntas">${qs.map(({ p }) => `<li>${esc(p.pregunta.texto)} <span class="hoja-opciones">(${esc(p.pregunta.opciones.join(' · '))})</span></li>`).join('')}</ol>
       <h2>Respuestas</h2><ol class="hoja-respuestas">${qs.map(({ p }) => `<li><b>${esc(p.pregunta.respuesta)}.</b> ${esc(p.pregunta.explicacion)}</li>`).join('')}</ol>` : ''}
-    <p class="hoja-meta">Los textos son resúmenes nuestros. El relato se lee en jw.org. Vista en línea: ${esc(location.href)}</p>`;
+    <p class="hoja-meta">El relato se lee en jw.org. Vista en línea: ${esc(location.href)}</p>`;
   window.print();
 }
 
@@ -309,9 +315,22 @@ function salir() {
 BE.inicios.push(iniciar);
 BE.pintores.push(seguirSeleccion);
 // La parada solo va en la dirección mientras el recorrido está elegido: al quitarlo (Atrás a la portada, otra
-// selección) no se queda colgada hasta el fotograma que lo cierra.
-BE.parametros.push({ nombre: 'paso', historia: true, escribir: () => (R.id && E.sel?.tipo === 'recorrido' && E.sel.id === R.id ? String(R.paso + 1) : null),
-  leer(v) { const n = v ? Math.max(0, (+v || 1) - 1) : null; if (R.id && n != null && n !== R.paso) irA(n, { historia: false }); else R.pasoHash = n; } });
+// selección) no se queda colgada hasta el fotograma que lo cierra. Recién elegido, antes de que seguirSeleccion lo
+// abra, ya dice la parada en la que va a abrir (la de la dirección, la guardada o la primera): si no, el historial veía
+// dos vistas, el recorrido sin parada y la parada, y guardaba dos entradas que se ven igual.
+function pasoEscrito() {
+  if (E.sel?.tipo !== 'recorrido') return null;
+  if (E.sel.id === R.id) return String(R.paso + 1);
+  const rc = BE.D && busca(E.sel.id);
+  return rc ? String(Math.min(rc.paradas.length - 1, pasoDe(E.sel.id)) + 1) : null;
+}
+BE.parametros.push({ nombre: 'paso', historia: true, escribir: pasoEscrito,
+  leer(v) {
+    const n = v ? Math.max(0, (+v || 1) - 1) : null;
+    // Se lee al llegar a una entrada: si el recorrido se abre en el fotograma siguiente, su encuadre es el guardado.
+    R.marcoLlegada = BE.historia?.marco() ?? null;
+    if (R.id && n != null && n !== R.paso) irA(n, { historia: false }); else R.pasoHash = n;
+  } });
 
 BE.recorridos = { ficha: fichaRecorrido, irA, pasoDe, salir, presentar, avanzar };
 BE.reducido = reducido;

@@ -4,6 +4,8 @@ name: Claudio Lisias
 names:
 - name: Claudio Lisias
 - name: Lisias
+disambiguation: Claudio Lisias, comandante romano en Jerusalén que rescató a Pablo; no es el emperador Claudio, que reinó
+  del 41 al 54.
 date:
   from: 56
   to: 56
@@ -20,6 +22,7 @@ sources:
 - hch-21
 - hch-23
 - hch-22
+- it-claudio
 links:
 - title: 'Perspicacia: «Claudio Lisias»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Claudio-Lisias/
@@ -30,7 +33,7 @@ links:
 distinct_from:
 - claudio
 perspicacia: '1200000988'
-checked_on: '2026-09-29'
+checked_on: '2026-10-02'
 status: verified
 relations:
 - type: lived_in

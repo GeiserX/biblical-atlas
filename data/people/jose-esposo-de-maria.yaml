@@ -4,7 +4,7 @@ name: José
 names:
 - name: José
 disambiguation: Esposo de María y padre adoptivo de Jesús; no es José de Arimatea, ni José, el medio hermano de Jesús, ni
-  José hijo de Jacob, ni los demás José que numera Perspicacia.
+  José hijo de Jacob, ni Bernabé, ni los demás José de Perspicacia.
 distinct_from:
 - jose-de-arimatea
 - jose-hijo-de-jose
@@ -12,6 +12,8 @@ distinct_from:
 - jose-hijo-de-jonam
 - jose-hijo-de-jacob
 - jose-padre-de-igal
+- bernabe
+- jesus-hijo-de-eliezer
 summary: 'Carpintero de Nazaret descendiente de David, esposo de María y padre adoptivo de Jesús. Siguió los avisos que recibió
   en sueños: se casó con María, huyó a Egipto y se estableció en Nazaret. Parece que murió antes que Jesús.'
 reason: Perspicacia «José» (núm. 8) da su oficio, su familia, los sueños y el indicio de Jn 19:26, 27 sobre su muerte.
@@ -23,6 +25,7 @@ sources:
 - lucas-1
 - lucas-2
 - lucas-3
+- it-bernabe
 relations:
 - type: kin
   person: maria-madre-de-jesus
@@ -101,5 +104,5 @@ links:
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/mateo/1/
   type: bible
 perspicacia: 1200002515#8
-checked_on: '2026-10-01'
+checked_on: '2026-10-02'
 status: verified

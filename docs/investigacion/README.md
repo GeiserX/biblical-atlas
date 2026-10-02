@@ -34,7 +34,7 @@ Dentro de su YAML, cada hecho (un lugar, una persona, un viaje, una carta, un su
 
 Tres clases de objeto llevan fuentes y no son hechos anidados, porque no llevan `reason`: las fechas de `alternatives`, los `context_origin` y `context_destination` de una carta y las entradas de `history`. Toman el `checked_on` y el `status` de la ficha que los contiene.
 
-Las fuentes son de dos niveles. Nivel 1: la Traducción del Nuevo Mundo y las publicaciones de wol.jw.org y jw.org. Nivel 2: arqueología o investigación, y solo cuando jw.org las ha usado; nunca en contra del nivel 1. De OpenBible tomamos únicamente coordenadas. Nunca copiamos texto de jw.org: `summary`, `reason`, `note`, `text`, `explanation`, `disambiguation`, `unknown`, `weather`, `harvest` y cada frase de `not_claimed` tienen 40 palabras como mucho (`scripts/validate.py` lo comprueba) y se escriben con nuestras palabras, siempre con enlace.
+Las fuentes son de dos niveles. Nivel 1: la Traducción del Nuevo Mundo y las publicaciones de wol.jw.org y jw.org, la fuente principal. Nivel 2: arqueología o investigación, y solo cuando jw.org las ha usado o afirma lo mismo, siempre junto a una de nivel 1 y nunca en contra de ella en pantalla. Nada de otras confesiones. De OpenBible tomamos únicamente coordenadas, y de Natural Earth solo el cauce para medir el punto de un río; qué lugar es cada uno lo dice el nivel 1. Si jw.org da una fecha, es la fecha; si no, el cálculo se marca como `type: derived`. Ningún párrafo, mapa, imagen ni vídeo de jw.org entra en el repositorio. Nunca copiamos texto de jw.org: `summary`, `reason`, `note`, `text`, `explanation`, `disambiguation`, `unknown`, `weather`, `harvest` y cada frase de `not_claimed` tienen 40 palabras como mucho (`scripts/validate.py` lo comprueba) y se escriben con nuestras palabras, siempre con enlace.
 
 ## Fuentes
 
@@ -72,13 +72,50 @@ candidates:
     checked_on: '2026-09-29'
 ```
 
-Cada candidato dice de dónde sale su punto: `coord_source: openbible:<id>` con `coord_url` a esa ficha de OpenBible, o `coord_source: calculation` con `note` que da la cuenta del centro. Un lugar que comparte punto con otro, como una región con su capital, lo explica en `coord_note`.
+Cada candidato dice de dónde sale su punto: `coord_source: openbible:<id>` con `coord_url` a esa ficha de OpenBible, o `coord_source: calculation` con `note` que da la cuenta del centro. Un lugar que comparte punto con otro, como una región con su capital, lo explica en `coord_note`. Un río, un mar o un valle a menos de 0,5 km de otro lugar que no sea una región, provincia, país, reino, desierto, llanura o valle (los que el mapa rotula aparte) avisa (`shared_point`) si su `coord_note` no nombra a ese lugar: o se mueve con su razón, o la nota dice por qué lo comparte.
 
 Con `candidates`, `lat`, `lon`, `coord_source` y `coord_url` pueden ser `null` y `precision` tiene que ser `zone` o `uncertain`. Una lista de candidatos vacía solo vale con `status: pending`. Sin candidatos, `lat` y `lon` son obligatorios. Si jw.org no sitúa un lugar y nadie lo sitúa con seguridad, van candidatos o una zona, nunca un punto inventado.
 
-**Personas.** `perspicacia` (la clave de identidad: el documento de su artículo de Perspicacia y, si el artículo trata de varias personas, `#` y el número de la entrada, como `'1200003629#1'`; `null` si no tiene artículo; única entre las personas y obligatoria para las que salen en `entities` de la cobertura), `date` (actividad conocida, con fuente), `disambiguation` (qué la distingue de sus homónimos), `distinct_from` (ids de personas), `not_claimed` (frases con lo que no decimos, como «Pedro murió en Roma») y `relations`, que tienen su sección más abajo.
+**La forma de una zona.** Un lugar con punto y `precision: zone`, o un candidato con `geometry.type: zone`, puede llevar `shape`: lo que abarca, cuando la fuente lo describe con palabras (un largo, un ancho, los lugares de su frontera). Sin `shape`, un candidato sigue siendo su círculo y un lugar con punto no dibuja zona. El diseño y el porqué están en [zonas-formas.md](../ideas/zonas-formas.md).
 
-**Viajes.** `person`, `reference`, `date`, `companions` (quienes van en todo el viaje) y `stops`. Cada parada lleva `order`, `place`, `reference` y `date`, y es un hecho anidado con sus `sources`, `reason`, `checked_on` y `status`.
+```yaml
+shape:
+  type: ellipse            # circle, ellipse, box o polygon
+  center: {lat: 31.42, lon: 35.29}   # opcional en circle y ellipse; sin él, el punto del lugar o del candidato
+  radii_km: [40, 10]       # ellipse: a lo largo del eje y de través, el primero el mayor
+  bearing: 6               # ellipse: rumbo del eje largo, de 0 a menos de 180 grados
+  note: Cómo se calculó el contorno con lo que dice la fuente.
+  sources: [it-desierto-de-juda]
+  reason: Qué dice la fuente de su extensión.
+  checked_on: '2026-10-02'
+  status: verified
+```
+
+| `type` | Lleva | Para qué |
+|---|---|---|
+| `circle` | `radius_km` | Lo que la fuente sitúa «alrededor de» un sitio. En un candidato no hace falta: ya es su círculo. |
+| `ellipse` | `radii_km`, `bearing` | Lo alargado: un valle, una llanura de la costa, un desierto a lo largo de un mar. |
+| `box` | `bounds: {south, west, north, east}` | Lo que la fuente da en kilómetros de este a oeste y de norte a sur. |
+| `polygon` | `vertices`, de 3 a 12 | Lo que tiene frontera escrita. Cada vértice es `[lat, lon]` o el id de un lugar con `precision: point`. |
+
+Una forma es un hecho como los demás: `sources`, `reason`, `checked_on`, `status` y `note`, que dice cómo se sacó el contorno de lo que describe la fuente. El contorno es nuestro y aproximado, nunca calcado de un mapa publicado. `validate.py` comprueba que el punto del lugar o del candidato cae dentro de la forma (con medio kilómetro de holgura), que un polígono no se cruza ni se toca consigo mismo, que los números son finitos y ningún radio pasa de 2.000 km, y que cada vértice con id es un lugar con `precision: point`: el punto de una zona, como el de un río, solo la representa, y si se moviera cambiaría otro contorno sin aviso. `build.py` añade a la forma su contorno (`ring`) y su caja (`bbox`) en `data.json`; el sitio los dibuja tal cual.
+
+**Personas.** `perspicacia` (la clave de identidad: el documento de su artículo de Perspicacia y, si el artículo trata de varias personas, `#` y el número de la entrada, como `'1200003629#1'`; `null` si no tiene artículo; única entre las personas y obligatoria para las que salen en `entities` de la cobertura), `date` (actividad conocida, con fuente), `disambiguation` (qué la distingue de sus homónimos), `distinct_from` (ids de los homónimos; va en las dos fichas y pide `disambiguation`), `not_claimed` (frases con lo que no decimos, como «Pedro murió en Roma») y `relations`, que tienen su sección más abajo.
+
+**Viajes.** `person`, `reference`, `date`, `companions` y `stops`. Cada parada lleva `order`, `place`, `reference` y `date`, y es un hecho anidado con sus `sources`, `reason`, `checked_on` y `status`.
+
+Quien viaja es una persona con ficha (`person`) o un grupo sin ficha: `person: null` y `group`, un texto de 40 palabras como mucho («el Arca del pacto», «los 600 benjaminitas»). Uno de los dos, nunca los dos. Un grupo no lleva marcador de viajero ni carril; la leyenda y la ficha dicen su `group`.
+
+Cada entrada de `companions` es un id de persona, si va en todo el viaje, o `{person, from, to}` con el número de la parada donde se une y el de la parada donde se separa. Una persona puede ir en dos tramos que no se tocan. El modo lectura y la ficha de una parada la ponen solo en las paradas de su tramo. En `data.json`, `companeros` sigue siendo una lista de ids, la forma que lee el servidor MCP del atlas, y los tramos van aparte en `tramos_companeros`.
+
+```yaml
+companions:
+  - bernabe                                # todo el viaje
+  - {person: silas, from: 1, to: 14}       # Hch 15:40 a 17:14
+  - {person: silas, from: 16, to: 16}      # Hch 18:5
+```
+
+`repeats` es opcional y su único valor es `yearly`: el texto cuenta el viaje como una costumbre de cada año (1Sa 1:3, 1Sa 7:16, Lu 2:41). El viaje se escribe una vez, con la fecha que da la fuente, y su `reason` dice qué versículo habla de la repetición. El sitio lo marca «↻ cada año» en la línea de tiempo, sobre la ruta y en la leyenda del mapa. `validate.py` rechaza otro valor.
 
 Una parada es un lugar que el texto dice que se alcanzó o se pasó, en el orden del relato. Tres clases de parada deducida entran también, siempre con `status: pending` y la deducción escrita en `reason`:
 
@@ -86,11 +123,11 @@ Una parada es un lugar que el texto dice que se alcanzó o se pasó, en el orden
 - la salida de un viaje que solo cuenta una carta, que es el `written_in` de esa carta (Crescente sale de Roma en 2Ti 4:10);
 - la salida o la vuelta que el relato deja ver sin nombrarla: la capital donde reina quien sale (Jerusalén en 2Sa 5:17), la casa adonde vuelve (Saúl a Guibeá en 1Sa 24:22) o el último lugar donde el relato dejó a quien sale (Eliseo en Samaria antes de 2Re 8:7).
 
-Una deducción que el texto contradice no entra: si el relato pone la salida en otro sitio, manda el relato (el resto de Judá sale de Gabaón en Jer 41:12-16, no de Mizpá). Lo que solo se cruza o se anuncia (el Éufrates, Ofir adonde navega una flota) va en la `note` de la parada más cercana.
+Una deducción que el texto contradice no entra: si el relato pone la salida en otro sitio, manda el relato (el resto de Judá sale de Gabaón en Jer 41:12-16, no de Mizpá). Lo que solo se cruza o se anuncia (el Éufrates, Ofir adonde navega una flota) va en la `note` de la parada más cercana. En el mapa, el tramo que llega a una parada pendiente o sale de ella se dibuja de puntos.
 
 **Cartas.** `writer` es obligatorio (id de persona; las 14 de Pablo llevan `writer: pablo`). Opcionales: `recipients.people`, `carriers` y `people` (las nombradas en la carta), listas de ids de personas que `build.py` comprueba. La comprobación de que una carta cae en una parada de Pablo solo mira las cartas de Pablo.
 
-**Sucesos.** `places` va en orden: el primero es donde ocurre lo principal, y es el único donde el sitio sitúa a las personas del suceso. Si ese lugar no tiene punto (un lugar incierto), el suceso no sitúa a nadie. `present` es opcional: lista de ids de `people` que estaban en ese primer lugar. Si está, solo ellas se sitúan allí y las demás solo se nombran, como Augusto en el nacimiento de Jesús. `present: []` es un suceso que no sitúa a nadie, porque pasa en un sitio que el texto no nombra (en el camino de Moab a Judá). `build.py` comprueba que cada id de `present` está también en `people`.
+**Sucesos.** `places` va en orden: el primero es donde ocurre lo principal, y es el único donde el sitio sitúa a las personas del suceso. Si ese lugar no tiene punto (un lugar incierto), las sitúa igual allí: el mapa las dibuja en su candidato preferido como posición estimada y, si no tiene candidatos, no las dibuja. `present` es opcional: lista de ids de `people` que estaban en ese primer lugar. Si está, solo ellas se sitúan allí y las demás solo se nombran, como Augusto en el nacimiento de Jesús. `present: []` es un suceso que no sitúa a nadie, porque pasa en un sitio que el texto no nombra (en el camino de Moab a Judá). `build.py` comprueba que cada id de `present` está también en `people`.
 
 Quién nace, muere, escribe o habla lo dicen `type` y `roles`:
 

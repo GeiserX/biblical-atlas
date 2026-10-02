@@ -4,12 +4,29 @@ name: Jazer
 names:
 - name: Jazer
 type: city
-lat: 31.944471
-lon: 35.830077
+lat: null
+lon: null
 precision: uncertain
-coord_source: openbible:a095b6e
-coord_url: https://www.openbible.info/geo/ancient/a095b6e/jazer
-coord_note: Punto de OpenBible en Khirbet Sara. Perspicacia dice que no se conoce el sitio exacto.
+coord_source: null
+coord_url: null
+candidates:
+- name: Al este del Jordán, en Gad
+  geometry:
+    type: zone
+    lat: 32.047428
+    lon: 35.662695
+    radius_km: 35
+  checked_on: '2026-10-02'
+  status: favored_level_1
+  sources:
+  - it-jazer
+  - numeros-21
+  - numeros-32
+  reason: 'Perspicacia «Jazer»: sitio exacto desconocido, al este del Jordán. Nú 21:24 la pone en la frontera de Ammón y Nú
+    32:34, 35 entre las ciudades de Gad.'
+  note: Misma zona que la ficha gad; centro y radio nuestros.
+  coord_source: calculation
+coord_note: 'Sin punto: Perspicacia dice que su ubicación exacta sigue sin conocerse y no nombra ningún sitio.'
 summary: Ciudad amorrea con pueblos dependientes al este del Jordán, junto a la frontera de Ammón. Moisés la mandó espiar
   e Israel la tomó; luego fue de Gad y de los levitas. Hacia el siglo VIII a.e.c. era moabita.
 reason: 'Perspicacia «Jazer»; Nú 21:24, 32. OpenBible: solo el punto.'
@@ -32,10 +49,14 @@ links:
 - title: Números 32 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/N%C3%BAmeros/32/
   type: bible
+checked_on: '2026-10-02'
+status: verified
 history:
 - date: '2026-09-30'
   change: Añade que en tiempos de Isaías Jazer era de Moab y tenía fama por su vino (Perspicacia «Jazer», párr. 2; Is 16:8,
     9).
   source: isaias-16
-checked_on: '2026-09-30'
-status: verified
+- date: '2026-10-02'
+  change: 'Pierde el punto de OpenBible (31.944471, 35.830077): jw.org no nombra ese sitio. Queda como candidato lo que sí
+    dicen el texto y jw.org.'
+  source: it-jazer

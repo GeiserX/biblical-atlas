@@ -27,10 +27,13 @@ companions:
 - zabulon-hijo-de-jacob
 - jose-hijo-de-jacob
 - dina
+- {person: raquel, from: 1, to: 3}
+- {person: debora-nodriza-de-rebeca, from: 1, to: 2}
+- {person: benjamin-hijo-de-jacob, from: 3, to: 5}
 summary: Dios manda a Jacob subir a Betel. Entierra los ídolos cerca de Siquem, levanta el altar de El-Betel y, camino del
   sur, Raquel muere al nacer Benjamín cerca de Belén. Acampa tras la torre de Éder y llega a Mamré.
-reason: 'Gé 35:1-27 da las etapas en orden, entre la vuelta a Canaán y la venta de José (1750 a.e.c.). Raquel y Débora mueren
-  por el camino y Benjamín nace en él: van en las notas.'
+reason: 'Gé 35:1-27 da las etapas en orden, entre la vuelta a Canaán y la venta de José (1750 a.e.c.). Raquel y Débora
+  mueren por el camino y Benjamín nace en él: cada uno va en las paradas de su tramo.'
 sources:
 - genesis-35
 - it-jacob
@@ -43,7 +46,7 @@ sources:
 - it-mamre
 - it-hebron
 - si-3
-checked_on: '2026-09-30'
+checked_on: '2026-10-02'
 status: verified
 narrative_order:
   series: jacob

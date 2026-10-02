@@ -6,13 +6,28 @@ names:
 - name: Jabés
   note: Forma breve que usan 1Sa 11:1 y otros pasajes (Perspicacia «Jabés», núm. 1).
 type: city
-lat: 32.40237
-lon: 35.6823
+lat: null
+lon: null
 precision: uncertain
-coord_source: openbible:af92088
-coord_url: https://www.openbible.info/geo/ancient/af92088/jabesh-gilead
-coord_note: 'Punto de Tell el-Maqlub, primera identificación de OpenBible. Perspicacia no da sitio: solo dice que casi todos
-  la ponen junto al Wadi Yabis.'
+coord_source: null
+coord_url: null
+candidates:
+- name: Junto al Wadi Yabis, al este del Jordán
+  geometry:
+    type: zone
+    lat: 32.40052
+    lon: 35.62264
+    radius_km: 8
+  checked_on: '2026-10-02'
+  status: favored_level_1
+  sources:
+  - it-jabes-galaad
+  - openbible-geo
+  reason: 'Perspicacia «Jabés-galaad»: su ubicación exacta no es segura; casi todos la ponen junto al Wadi Yabis, unos 35
+    km al sur del mar de Galilea.'
+  note: 'Centro nuestro: media de los tres sitios junto al Wadi Yabis que propone OpenBible. Radio nuestro.'
+  coord_source: calculation
+coord_note: 'Sin punto: Perspicacia no da sitio, solo la zona del Wadi Yabis.'
 summary: Ciudad de Gad al este del Jordán, hacia unos 35 km al sur del mar de Galilea. Castigada por no ir contra Benjamín,
   dio 400 vírgenes a los benjaminitas. Saúl la libró de Nahás, y sus guerreros enterraron al rey.
 reason: 'Perspicacia «Jabés-galaad», párr. 1 a 3; Jue 21:8-14; 1Sa 11:1-11; 31:11-13. OpenBible: solo el punto.'
@@ -40,5 +55,9 @@ history:
   change: 'Se añade lo que cuenta 1Sa 31:11-13: sus guerreros quitaron de la muralla de Bet-San los cuerpos de Saúl y sus
     hijos y los enterraron en Jabés.'
   source: 1-samuel-31
-checked_on: '2026-09-29'
+- date: '2026-10-02'
+  change: 'Pierde el punto de OpenBible (32.40237, 35.6823): jw.org dice que no se sabe dónde estaba y no nombra ese sitio.
+    Queda como candidato lo que sí dice jw.org.'
+  source: it-jabes-galaad
+checked_on: '2026-10-02'
 status: verified

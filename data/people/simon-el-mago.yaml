@@ -4,7 +4,8 @@ name: Simón el mago
 names:
 - name: Simón
   note: Nombre que comparte con Pedro y con otros.
-disambiguation: El mago de Samaria (Hch 8:9). No es Simón Pedro ni Simón el curtidor de Jope.
+disambiguation: El mago de Samaria (Hch 8:9). No es Simón Pedro, ni Simón el curtidor de Jope, ni los demás Simón que numera
+  Perspicacia.
 summary: Mago de la ciudad de Samaria a quien la gente admiraba. Creyó y se bautizó con la predicación de Felipe,
   pero luego ofreció dinero a Pedro y Juan por su poder, y Pedro lo reprendió.
 reason: Perspicacia «Simón», apartado 8 (párr. 9); nota de estudio de Hch 8:18; Hch 8:9-24.
@@ -15,6 +16,9 @@ distinct_from:
 - pedro
 - simon-el-curtidor
 - simon-hijo-de-jose
+- simon-de-cirene
+- simon-el-fariseo
+- simon-iscariote
 relations:
 - type: lived_in
   place: samaria
@@ -47,5 +51,5 @@ links:
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/hechos/8/
   type: bible
 perspicacia: 1200004131#8
-checked_on: '2026-09-29'
+checked_on: '2026-10-02'
 status: verified

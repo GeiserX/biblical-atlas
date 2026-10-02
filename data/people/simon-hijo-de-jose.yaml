@@ -13,6 +13,8 @@ distinct_from:
 - simon-de-cirene
 - simon-el-mago
 - simon-el-curtidor
+- simon-el-fariseo
+- simon-iscariote
 summary: Medio hermano menor de Jesús, nombrado por la gente de Nazaret. Todavía no creía en él en 32 e.c.; después
   cambió, y en 33 estaba con los discípulos reunidos en Jerusalén.
 reason: Perspicacia «Simón», núm. 4; Mt 13:55 y Mr 6:3. «Testimonio completo», cap. 2, párr. 17, pone a cuatro hijos de
@@ -65,5 +67,5 @@ history:
   change: 'El resumen decía, con Perspicacia «Simón», núm. 4, que no consta si estaba en Jerusalén en 33. «Testimonio
     completo», más reciente, dice que María vio allí a cuatro de sus hijos.'
   source: bt-2
-checked_on: '2026-09-29'
+checked_on: '2026-10-02'
 status: verified

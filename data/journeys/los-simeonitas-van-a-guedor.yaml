@@ -14,16 +14,16 @@ date:
 companions: []
 summary: En días de Ezequías, Mesobab y otros doce jefes de Simeón con familias numerosas buscan pastos. Junto a Guedor, al
   este del valle, hallan tierra buena y tranquila, acaban con camitas y meunim y se quedan allí.
-reason: '1Cr 4:34-41; Perspicacia «Mesobab». No hay suceso en data/events: fecha por el reinado de Ezequías (tabla A6-B),
-  que nombra el texto (1Cr 4:41).'
+reason: '1Cr 4:34-41; Perspicacia «Mesobab». Fecha: el reinado de Ezequías, que nombra el texto (1Cr 4:41), según la tabla
+  A6-B; aún sin suceso en data/events.'
 sources:
 - 1-cronicas-4
 - it-mesobab
 - it-guedor
 - it-ezequias
 - tnm-a6-b
-checked_on: '2026-09-30'
-status: pending
+checked_on: '2026-10-02'
+status: verified
 stops:
 - order: 1
   place: simeon
@@ -61,5 +61,5 @@ stops:
   - it-guedor
   - it-mesobab
   - it-ezequias
-  checked_on: '2026-09-30'
-  status: pending
+  checked_on: '2026-10-02'
+  status: verified

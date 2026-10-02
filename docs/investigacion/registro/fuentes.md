@@ -29,6 +29,7 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | 1-corintios-7 | [1 Corintios 7](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/1-corintios/7/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | 1-corintios-8 | [1 Corintios 8](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/1-corintios/8/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | 1-corintios-9 | [1 Corintios 9](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/1-corintios/9/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
+| 1-cronicas-10 | [1 Crónicas 10](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/1-Cr%C3%B3nicas/10/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | 1-cronicas-11 | [1 Crónicas 11](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/1-Cr%C3%B3nicas/11/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | 1-cronicas-13 | [1 Crónicas 13](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/1-Cr%C3%B3nicas/13/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | 1-cronicas-14 | [1 Crónicas 14](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/1-Cr%C3%B3nicas/14/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
@@ -133,6 +134,7 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | 2-cronicas-28 | [2 Crónicas 28](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-Cr%C3%B3nicas/28/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | 2-cronicas-29 | [2 Crónicas 29](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-Cr%C3%B3nicas/29/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | 2-cronicas-3 | [2 Crónicas 3](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-Cr%C3%B3nicas/3/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
+| 2-cronicas-30 | [2 Crónicas 30](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-Cr%C3%B3nicas/30/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | 2-cronicas-32 | [2 Crónicas 32](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-Cr%C3%B3nicas/32/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | 2-cronicas-33 | [2 Crónicas 33](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-Cr%C3%B3nicas/33/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | 2-cronicas-34 | [2 Crónicas 34](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-Cr%C3%B3nicas/34/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
@@ -283,6 +285,7 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | deuteronomio-7 | [Deuteronomio 7](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/deuteronomio/7/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | deuteronomio-8 | [Deuteronomio 8](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/deuteronomio/8/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | deuteronomio-9 | [Deuteronomio 9](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/deuteronomio/9/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
+| dp-12 | [Un mensajero de Dios fortalece a Daniel](https://www.jw.org/es/biblioteca/libros/Prestemos-atenci%C3%B3n-a-las-profec%C3%ADas-de-Daniel/Un-mensajero-de-Dios-fortalece-a-Daniel/) | ¡Prestemos atención a las profecías de Daniel! | 1 | sin dato | 2026-10-02 |
 | eclesiastes-1 | [Eclesiastés 1](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Eclesiast%C3%A9s/1/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | eclesiastes-12 | [Eclesiastés 12](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Eclesiast%C3%A9s/12/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | eclesiastes-2 | [Eclesiastés 2](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Eclesiast%C3%A9s/2/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
@@ -3080,6 +3083,7 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | nahum-1 | [Nahúm 1](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Nah%C3%BAm/1/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | nahum-2 | [Nahúm 2](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Nah%C3%BAm/2/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | nahum-3 | [Nahúm 3](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Nah%C3%BAm/3/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
+| natural-earth-rios | [Rivers + lake centerlines, 1:10m (v5.1.2)](https://github.com/nvkelso/natural-earth-vector/blob/v5.1.2/geojson/ne_10m_rivers_lake_centerlines.geojson) | Natural Earth (dominio público) | 2 | sin dato | 2026-10-02 |
 | nehemias-1 | [Nehemías 1](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Nehem%C3%ADas/1/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | nehemias-12 | [Nehemías 12](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Nehem%C3%ADas/12/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | nehemias-13 | [Nehemías 13](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Nehem%C3%ADas/13/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |

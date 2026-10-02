@@ -5,13 +5,17 @@ names:
 - name: José
 - name: José de Arimatea
   note: Arimatea era una ciudad de Judea (Lu 23:51).
-disambiguation: El de Arimatea, miembro del Sanedrín; no es José, el padre adoptivo de Jesús, ni José hijo de Jacob, ni los
-  demás José que numera Perspicacia.
+disambiguation: El de Arimatea, miembro del Sanedrín; no es José, el padre adoptivo de Jesús, ni José hijo de Jacob, ni Bernabé,
+  ni los demás José que numera Perspicacia.
 distinct_from:
 - jose-esposo-de-maria
 - jose-hijo-de-jose
 - jose-hijo-de-jacob
 - jose-padre-de-igal
+- bernabe
+- jesus-hijo-de-eliezer
+- jose-hijo-de-jonam
+- jose-hijo-de-matatias
 summary: Hombre rico, miembro del Sanedrín y discípulo en secreto. No apoyó la decisión contra Jesús, pidió su cuerpo
   a Pilato y lo puso en su propia tumba nueva.
 reason: Perspicacia «José», apartado 10, y la nota de Mt 27:57; Jn 19:38-42.
@@ -21,6 +25,7 @@ sources:
 - juan-19
 - marcos-15
 - lucas-23
+- it-bernabe
 links:
 - title: 'Perspicacia: «José»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jos%C3%A9/
@@ -30,7 +35,7 @@ links:
   type: bible
 search: José de Arimatea
 perspicacia: 1200002515#10
-checked_on: '2026-10-01'
+checked_on: '2026-10-02'
 status: verified
 relations:
 - type: lived_in

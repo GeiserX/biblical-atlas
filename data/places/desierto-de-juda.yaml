@@ -29,6 +29,17 @@ candidates:
   note: 'Centro calculado: latitud del punto del mar Muerto de OpenBible (31,5 N) y longitud a medio camino entre el monte
     de los Olivos (35,2457 E) y ese punto (35,5 E). Radio nuestro de 40 km, la mitad del largo.'
   coord_source: calculation
+  shape:
+    type: ellipse
+    center: {lat: 31.42, lon: 35.29}
+    radii_km: [40, 10]
+    bearing: 6
+    note: 'Elipse nuestra: 80 km de largo desde el este del monte de los Olivos hacia el sur, paralela a la orilla oeste del mar Salado, y 20 km de ancho, la media de lo que da Perspicacia.'
+    sources:
+    - it-desierto-de-juda
+    reason: 'Perspicacia «Judá, Desierto de», párr. 1: arranca al este del monte de los Olivos, sigue la orilla oeste del mar Muerto unos 80 km y mide de 16 a 24 km de ancho.'
+    checked_on: '2026-10-02'
+    status: verified
 summary: Vertiente oriental de las montañas de Judea, seca y casi sin gente, que baja unos 1.200 m hacia el mar Muerto. Allí
   empezó Juan el Bautista a predicar y, según parece, allí tentó el Diablo a Jesús.
 reason: 'Perspicacia «Judá, Desierto de», párr. 1 y 3; nota de estudio de Mt 3:1. Ni jw.org ni OpenBible le dan un punto: va

@@ -44,7 +44,7 @@ function fechasHtml(o, momento) {
   const calc = f.tipo === 'derivada';
   const t = momento ?? (tr ? (tr[0] + tr[1]) / 2 : null);
   const tarjetas = [`<button type="button" class="fecha-tarjeta fecha-tnm${calc ? ' fecha-calculo' : ''}" ${t != null ? `data-ir-t="${t}"` : ''} title="Llevar el cursor a esta fecha">
-      <span class="fecha-eyebrow">${calc ? 'Cálculo nuestro · sin verificar' : 'Fecha según jw.org'}</span>
+      <span class="fecha-eyebrow">${calc ? 'Cálculo nuestro · sin verificar' : 'Fecha según la fuente'}</span>
       <span class="fecha-grande${(f.texto || '').length > 16 ? ' fecha-grande--larga' : ''}">${marcaPrecision(f)}${esc(f.texto || fechaCorta(f))}</span>
       <span class="fecha-sub">${esc([det, pr?.t].filter(Boolean).join(' · '))}</span>
       ${calc && f.nota ? `<span class="fecha-nota">${esc(f.nota)}</span>` : ''}</button>`];
@@ -66,7 +66,7 @@ function fechasHtml(o, momento) {
     if (a.fuentes?.length) notas.push(`<p class="fecha-linea fecha-fuentes">Fuente de la nota secular: ${fuentesCortas(a.fuentes)}</p>`);
   }
   return `<div class="fechas${tarjetas.length > 1 ? ' fechas--dos' : ''}">${tarjetas.join('')}</div>${notas.join('')}
-    ${alts.length ? '<p class="fecha-regla">Usamos la fecha de jw.org. La otra se enseña como nota y no mueve el cursor.</p>' : ''}`;
+    ${alts.length ? '<p class="fecha-regla">Usamos la fecha de la cronología de la Traducción del Nuevo Mundo. La otra se enseña como nota y no mueve el cursor.</p>' : ''}`;
 }
 
 function fichaEvento(id) {
@@ -115,7 +115,7 @@ document.addEventListener('click', (ev) => {
   if (sec) {
     const t = +sec.dataset.irSecular;
     BE.setT(t); BE.asegurarVisible(t, true);
-    BE.avisar('Fecha secular, solo como nota: seguimos las fechas de jw.org.');
+    BE.avisar('Fecha secular, solo como nota: seguimos la cronología de la Traducción del Nuevo Mundo.');
   }
 });
 

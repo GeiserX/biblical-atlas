@@ -1,0 +1,65 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: los-12000-contra-jabes-galaad
+name: Los 12.000, de Jabés-Galaad a Siló
+person: null
+group: los 12.000 guerreros que Israel envía contra Jabés-Galaad
+reference: Jue 21:8-12
+date:
+  from: -1449
+  to: -1399
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre c. 1450 y c. 1400 a.e.c. (tiempo narrativo: pocos años después de morir Josué, con Finehás de sumo sacerdote)'
+companions: []
+summary: Nadie de Jabés-Galaad acudió a Mizpá. La asamblea manda 12.000 guerreros que matan a sus habitantes, salvo 400 jóvenes
+  vírgenes, y las llevan al campamento de Siló para los benjaminitas.
+reason: Jue 21:8-12 da el encargo, la ciudad y la vuelta a Siló; Perspicacia «Jabés-galaad» y «Siló», núm. 2. Fecha de sus
+  sucesos (estudio 3; «Jueces, Libro de», «Orden del libro»).
+sources:
+- jueces-21
+- it-jabes-galaad
+- it-silo
+- it-jueces
+- si-3
+- it-finehas
+checked_on: '2026-10-02'
+status: verified
+stops:
+- order: 1
+  place: jabes-galaad
+  reference: Jue 21:10-12
+  date:
+    from: -1449
+    to: -1399
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre c. 1450 y c. 1400 a.e.c. (tiempo narrativo: pocos años después de morir Josué, con Finehás de sumo sacerdote)'
+  note: Salen del campamento de Israel, que el texto no sitúa al mandarlos. Perspicacia no sabe con seguridad dónde estaba la ciudad.
+  reason: Jue 21:10-12. Suceso israel-castiga-a-jabes-galaad; Perspicacia «Jabés-galaad».
+  sources:
+  - jueces-21
+  - it-jabes-galaad
+  checked_on: '2026-10-02'
+  status: verified
+- order: 2
+  place: silo
+  reference: Jue 21:12
+  date:
+    from: -1449
+    to: -1399
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre c. 1450 y c. 1400 a.e.c. (tiempo narrativo: pocos años después de morir Josué, con Finehás de sumo sacerdote)'
+  note: Llegada, con las 400 jóvenes, al campamento de Siló, en la tierra de Canaán.
+  reason: Jue 21:12. Suceso israel-castiga-a-jabes-galaad; Perspicacia «Siló», núm. 2.
+  sources:
+  - jueces-21
+  - it-silo
+  checked_on: '2026-10-02'
+  status: verified

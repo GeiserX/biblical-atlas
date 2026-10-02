@@ -59,14 +59,15 @@ stops:
     chronology: tnm
     text: 1728 a.e.c.
   note: Gé 46:1 no nombra el punto de salida.
-  reason: 'Perspicacia «Jacob» dice que se trasladó a Hebrón antes de la venta de José, sin precisar cuándo, y Gé 37:14 lo
-    muestra allí. Deducción: pendiente.'
+  reason: 'Perspicacia «Jacob» dice que se trasladó a Hebrón antes de la venta de José, sin precisar cuándo, y «José» lo pone
+    allí cuando envía a su hijo (Gé 37:14). Deducción: pendiente.'
   sources:
   - genesis-37
   - genesis-46
   - it-jacob
+  - it-jose
   - si-3
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-02'
   status: pending
 - order: 2
   place: beer-seba

@@ -5,7 +5,7 @@ names:
 - name: Simón
 - name: Simón de Cirene
   note: Cirene era una ciudad del norte de África.
-disambiguation: El de Cirene; no es Simón Pedro ni Simón el leproso.
+disambiguation: El de Cirene; no es Simón Pedro, ni Simón el leproso, ni los demás Simón que numera Perspicacia.
 summary: Hombre de Cirene, padre de Alejandro y Rufo. Volvía del campo cuando los soldados lo obligaron a llevar
   el madero de tormento de Jesús.
 reason: Perspicacia «Simón», apartado 7; Mr 15:21 y las notas de Mt 27:32 y Mr 15:21.
@@ -23,7 +23,7 @@ links:
   type: bible
 search: Simón de Cirene
 perspicacia: 1200004131#7
-checked_on: '2026-09-29'
+checked_on: '2026-10-02'
 status: verified
 relations:
 - type: born_in
@@ -40,3 +40,8 @@ relations:
   status: verified
 distinct_from:
 - simon-hijo-de-jose
+- pedro
+- simon-el-curtidor
+- simon-el-fariseo
+- simon-el-mago
+- simon-iscariote

@@ -1,0 +1,93 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: los-espias-de-jerico
+name: Los dos espías, de Sitim a Jericó
+person: null
+group: los dos espías que envía Josué
+reference: Jos 2:1-24; 3:1
+date:
+  from: -1472
+  to: -1472
+  precision: season
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: primavera de 1473 a.e.c.
+  detail:
+    season: spring
+companions: []
+summary: Josué manda en secreto a dos hombres desde Sitim a ver Jericó. Rahab los esconde y los descuelga por la muralla;
+  pasan tres días en los montes, cruzan el Jordán y le informan.
+reason: Josué 2 da las paradas, y Jos 3:1 pone a Josué en Sitim al día siguiente. Perspicacia «Rahab», núm. 1, y «Espías»
+  fechan la misión en la primavera de 1473 a.e.c.
+sources:
+- josue-2
+- josue-3
+- it-rahab
+- it-espias
+- it-sitim
+- it-jerico
+checked_on: '2026-10-02'
+status: verified
+stops:
+- order: 1
+  place: sitim
+  reference: Jos 2:1
+  date:
+    from: -1472
+    to: -1472
+    precision: season
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: primavera de 1473 a.e.c.
+    detail:
+      season: spring
+  note: Salida, del campamento de Israel en las llanuras de Moab.
+  reason: 'Jos 2:1: los envía desde Sitim. Suceso rahab-esconde-a-los-espias; Perspicacia «Sitim», núm. 1.'
+  sources:
+  - josue-2
+  - it-sitim
+  checked_on: '2026-10-02'
+  status: verified
+- order: 2
+  place: jerico
+  reference: Jos 2:1-21
+  date:
+    from: -1472
+    to: -1472
+    precision: season
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: primavera de 1473 a.e.c.
+    detail:
+      season: spring
+  note: En casa de Rahab, sobre la muralla. Ella los oculta bajo el lino del techo y les hace jurar.
+  reason: Jos 2:1-21. Suceso rahab-esconde-a-los-espias; Perspicacia «Rahab», núm. 1.
+  sources:
+  - josue-2
+  - it-rahab
+  - it-jerico
+  checked_on: '2026-10-02'
+  status: verified
+- order: 3
+  place: sitim
+  reference: Jos 2:22-24; 3:1
+  date:
+    from: -1472
+    to: -1472
+    precision: season
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: primavera de 1473 a.e.c.
+    detail:
+      season: spring
+  note: Llegada. Antes se esconden tres días en la región montañosa y luego vadean el Jordán.
+  reason: Jos 2:23 los lleva ante Josué, y Jos 3:1 lo pone en Sitim. Suceso los-dos-espias-vuelven-a-josue.
+  sources:
+  - josue-2
+  - josue-3
+  - it-sitim
+  checked_on: '2026-10-02'
+  status: verified

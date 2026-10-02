@@ -5,6 +5,8 @@ names:
 - name: Abí-Albón
 - name: Abiel
   note: Nombre de la lista paralela de 1Cr 11:32; Perspicacia lo da por la misma persona.
+disambiguation: Abí-Albón el arbatita, guerrero de David, al que Crónicas llama Abiel; no es Abiel hijo de Zeror, el antepasado
+  de Saúl.
 perspicacia: '1200000028'
 summary: Benjaminita, uno de los treinta y siete guerreros más valientes de David. Lo llaman arbatita, quizá porque era de
   Bet-Arabá.
@@ -37,7 +39,7 @@ relations:
   reason: '2Sa 23:31: uno de los treinta guerreros de David.'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-02'
 status: verified
 distinct_from:
 - abiel-hijo-de-zeror

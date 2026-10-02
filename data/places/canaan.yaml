@@ -12,6 +12,29 @@ precision: zone
 coord_source: openbible:a581f0c
 coord_url: https://www.openbible.info/geo/ancient/a581f0c/canaan
 coord_note: Punto representativo de OpenBible para toda la tierra de Canaán.
+shape:
+  type: polygon
+  vertices:
+  - sidon
+  - dan
+  - [32.71, 35.57]
+  - [31.761, 35.558]
+  - [31.0, 35.45]
+  - gaza
+  - [31.70, 34.50]
+  - [32.06, 34.72]
+  - [32.62, 34.88]
+  - [32.84, 34.94]
+  - [33.30, 35.16]
+  note: 'Contorno nuestro: de Sidón a Dan; el Jordán y la orilla oeste del mar Salado hasta su extremo sur; una recta nuestra hasta Gaza; la costa, algo mar adentro. Sodoma y Guerar no tienen punto.'
+  sources:
+  - it-canaan
+  - genesis-10
+  - it-sodoma
+  - numeros-34
+  reason: 'Perspicacia «Canaán»: al oeste del Jordán, de Sidón a Guerar, junto a Gaza, y hacia Sodoma, de sitio incierto (Gé 10:19). Nú 34:3, 6: la frontera sur sale del extremo del mar Salado; la oeste es la costa.'
+  checked_on: '2026-10-02'
+  status: verified
 summary: Tierra al oeste del Jordán, entre Egipto y Siria, que debe su nombre a Canaán, hijo de Cam, cuyos descendientes la
   poblaron. Abrahán vivió en ella como extranjero.
 reason: 'Perspicacia «Canaán», núm. 1 y 2; Gé 23:2, 19. Coordenada de OpenBible: solo tomamos el punto.'

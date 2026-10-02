@@ -6,16 +6,27 @@ names:
 - name: José
   note: Así leen algunos manuscritos antiguos, según la nota de Lu 3:29 y Perspicacia.
 perspicacia: 1200002450#2
-disambiguation: Jesús hijo de Eliezer (Lu 3:29), antepasado de Jesucristo; no es Jesucristo.
+disambiguation: Jesús hijo de Eliezer (Lu 3:29), antepasado de Jesucristo; no es Jesucristo. Algunos manuscritos lo llaman
+  José, y tampoco es ninguno de los José de Perspicacia ni Bernabé.
 distinct_from:
 - jesus
 - jesus-justo
+- bernabe
+- jose-de-arimatea
+- jose-esposo-de-maria
+- jose-hijo-de-jacob
+- jose-hijo-de-jonam
+- jose-hijo-de-jose
+- jose-hijo-de-matatias
+- jose-padre-de-igal
 summary: Antepasado de Jesucristo, al parecer por la línea de María. La nota de estudio recuerda que el nombre equivale a
   Josué.
 reason: Perspicacia «Jesús», núm. 2; Lu 3:29.
 sources:
 - it-jesus
 - lucas-3
+- it-jose
+- it-bernabe
 links:
 - title: 'Perspicacia: «Jesús»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jes%C3%BAs/
@@ -33,5 +44,5 @@ relations:
   reason: 'Lu 3:29: Jesús, hijo de Eliezer.'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-02'
 status: verified
