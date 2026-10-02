@@ -34,7 +34,7 @@ Dentro de su YAML, cada hecho (un lugar, una persona, un viaje, una carta, un su
 
 Tres clases de objeto llevan fuentes y no son hechos anidados, porque no llevan `reason`: las fechas de `alternatives`, los `context_origin` y `context_destination` de una carta y las entradas de `history`. Toman el `checked_on` y el `status` de la ficha que los contiene.
 
-Las fuentes son de dos niveles. Nivel 1: la Traducción del Nuevo Mundo y las publicaciones de wol.jw.org y jw.org, la fuente principal. Nivel 2: arqueología o investigación, y solo cuando jw.org las ha usado o afirma lo mismo, siempre junto a una de nivel 1 y nunca en contra de ella en pantalla. Nada de otras confesiones. De OpenBible tomamos únicamente coordenadas; qué lugar es cada uno lo dice el nivel 1. Si jw.org da una fecha, es la fecha; si no, el cálculo se marca como `type: derived`. Ningún párrafo, mapa, imagen ni vídeo de jw.org entra en el repositorio. Nunca copiamos texto de jw.org: `summary`, `reason`, `note`, `text`, `explanation`, `disambiguation`, `unknown`, `weather`, `harvest` y cada frase de `not_claimed` tienen 40 palabras como mucho (`scripts/validate.py` lo comprueba) y se escriben con nuestras palabras, siempre con enlace.
+Las fuentes son de dos niveles. Nivel 1: la Traducción del Nuevo Mundo y las publicaciones de wol.jw.org y jw.org, la fuente principal. Nivel 2: arqueología o investigación, y solo cuando jw.org las ha usado o afirma lo mismo, siempre junto a una de nivel 1 y nunca en contra de ella en pantalla. Nada de otras confesiones. De OpenBible tomamos únicamente coordenadas, y de Natural Earth solo el cauce para medir el punto de un río; qué lugar es cada uno lo dice el nivel 1. Si jw.org da una fecha, es la fecha; si no, el cálculo se marca como `type: derived`. Ningún párrafo, mapa, imagen ni vídeo de jw.org entra en el repositorio. Nunca copiamos texto de jw.org: `summary`, `reason`, `note`, `text`, `explanation`, `disambiguation`, `unknown`, `weather`, `harvest` y cada frase de `not_claimed` tienen 40 palabras como mucho (`scripts/validate.py` lo comprueba) y se escriben con nuestras palabras, siempre con enlace.
 
 ## Fuentes
 
@@ -72,7 +72,7 @@ candidates:
     checked_on: '2026-09-29'
 ```
 
-Cada candidato dice de dónde sale su punto: `coord_source: openbible:<id>` con `coord_url` a esa ficha de OpenBible, o `coord_source: calculation` con `note` que da la cuenta del centro. Un lugar que comparte punto con otro, como una región con su capital, lo explica en `coord_note`.
+Cada candidato dice de dónde sale su punto: `coord_source: openbible:<id>` con `coord_url` a esa ficha de OpenBible, o `coord_source: calculation` con `note` que da la cuenta del centro. Un lugar que comparte punto con otro, como una región con su capital, lo explica en `coord_note`. Un río, un mar o un valle a menos de 0,5 km de otro lugar que no sea una región, provincia, país, reino, desierto, llanura o valle (los que el mapa rotula aparte) avisa (`shared_point`) si su `coord_note` no nombra a ese lugar: o se mueve con su razón, o la nota dice por qué lo comparte.
 
 Con `candidates`, `lat`, `lon`, `coord_source` y `coord_url` pueden ser `null` y `precision` tiene que ser `zone` o `uncertain`. Una lista de candidatos vacía solo vale con `status: pending`. Sin candidatos, `lat` y `lon` son obligatorios. Si jw.org no sitúa un lugar y nadie lo sitúa con seguridad, van candidatos o una zona, nunca un punto inventado.
 

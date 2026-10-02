@@ -2,7 +2,10 @@
 """Pruebas de scripts/validate.py. Uso: python3 scripts/test_validate.py
 
 Leen data/books.yaml de verdad y no escriben nada."""
+import contextlib
+import io
 import sys
+import tempfile
 import unittest
 from pathlib import Path
 
@@ -181,6 +184,91 @@ class Acompanantes(unittest.TestCase):
 
     def test_quien_viaja_no_se_acompana(self):
         self.assertTrue(any("es quien viaja" in e for e in errores_viaje(companions=["pablo"])))
+
+
+def avisos_punto(*lugares):
+    out = []
+    datos = {"places": [dict(l, _fichero=f"data/places/{l['id']}.yaml") for l in lugares]}
+    validate.puntos_compartidos(datos, lambda codigo, texto: out.append((codigo, texto)))
+    return out
+
+
+class PuntoCompartido(unittest.TestCase):
+    RIO = {"id": "rio-x", "name": "Río X", "names": [{"name": "Río X"}], "type": "river", "lat": 33.5, "lon": 36.3,
+           "coord_note": "Punto representativo."}
+    CIUDAD = {"id": "ciudad-y", "name": "Ciudad Y", "names": [{"name": "Ciudad Y"}, {"name": "Yeta"}], "type": "city",
+              "lat": 33.502, "lon": 36.3}
+
+    def test_rio_encima_de_una_ciudad_avisa(self):
+        a = avisos_punto(self.RIO, self.CIUDAD)
+        self.assertEqual([c for c, _ in a], ["shared_point"], a)
+        self.assertIn("data/places/rio-x.yaml", a[0][1])
+        self.assertIn("ciudad-y", a[0][1])
+
+    def test_valle_y_mar_tambien(self):
+        for tipo in ("valley", "sea"):
+            with self.subTest(tipo=tipo):
+                self.assertEqual(len(avisos_punto(dict(self.RIO, type=tipo), self.CIUDAD)), 1)
+
+    def test_la_nota_que_nombra_al_otro_lugar_lo_quita(self):
+        for nota in ("Mismo punto que Ciudad Y.", "Comparte punto con yeta, su otro nombre."):
+            with self.subTest(nota=nota):
+                self.assertEqual(avisos_punto(dict(self.RIO, coord_note=nota), self.CIUDAD), [])
+
+    def test_un_nombre_corto_dentro_de_otra_palabra_no_lo_quita(self):
+        ur = dict(self.CIUDAD, name="Ur", names=[{"name": "Ur"}])
+        for nota in ("Punto representativo del curso.", "Punto en la desembocadura."):
+            with self.subTest(nota=nota):
+                self.assertEqual(len(avisos_punto(dict(self.RIO, coord_note=nota), ur)), 1)
+        self.assertEqual(avisos_punto(dict(self.RIO, coord_note="Mismo punto que Ur, a propósito."), ur), [])
+
+    def test_el_name_cuenta_aunque_no_este_en_names(self):
+        ciudad = dict(self.CIUDAD, names=[{"name": "Yeta"}])
+        self.assertEqual(avisos_punto(dict(self.RIO, coord_note="Mismo punto que Ciudad Y."), ciudad), [])
+
+    def test_los_tipos_que_el_mapa_rotula_aparte_no_cuentan(self):
+        # La lista va escrita aquí, no leída de ROTULO_APARTE, para que quitar un tipo de allí se note. Solo cuenta el
+        # aviso del río: un valle es también un lugar largo y avisa por su cuenta si el río le cae encima.
+        for tipo in ("region", "province", "country", "kingdom", "desert", "plain", "valley"):
+            with self.subTest(tipo=tipo):
+                a = avisos_punto(self.RIO, dict(self.CIUDAD, type=tipo))
+                self.assertEqual([t for _, t in a if t.startswith("data/places/rio-x.yaml")], [])
+
+    def test_justo_por_debajo_de_medio_kilometro_avisa(self):
+        self.assertEqual(len(avisos_punto(self.RIO, dict(self.CIUDAD, lat=33.504))), 1)
+
+    def test_a_medio_kilometro_o_mas_no_avisa(self):
+        self.assertEqual(avisos_punto(self.RIO, dict(self.CIUDAD, lat=33.5046)), [])
+
+    def test_dos_ciudades_juntas_no_son_cosa_de_esta_regla(self):
+        self.assertEqual(avisos_punto(dict(self.RIO, type="city"), self.CIUDAD), [])
+
+    def test_un_lugar_sin_punto_no_rompe(self):
+        self.assertEqual(avisos_punto(self.RIO, dict(self.CIUDAD, lat=None, lon=None)), [])
+
+
+class PuntoCompartidoEnValidate(unittest.TestCase):
+    """La regla pasa por validate.main: sale como aviso y cuenta en el resumen."""
+    def correr(self, lat_ciudad):
+        with tempfile.TemporaryDirectory() as d:
+            lugares = Path(d) / "places"
+            lugares.mkdir()
+            (lugares / "rio-x.yaml").write_text("id: rio-x\nname: Río X\ntype: river\nlat: 33.5\nlon: 36.3\n"
+                                                "coord_note: Punto representativo.\n", encoding="utf-8")
+            (lugares / "ciudad-y.yaml").write_text(f"id: ciudad-y\nname: Ciudad Y\ntype: city\nlat: {lat_ciudad}\n"
+                                                   "lon: 36.3\n", encoding="utf-8")
+            out = io.StringIO()
+            with contextlib.redirect_stdout(out):
+                validate.main(["--data", d])
+            return out.getvalue()
+
+    def test_sale_como_aviso_y_en_el_resumen(self):
+        salida = self.correr(33.502)
+        self.assertIn("AVISO [shared_point] data/places/rio-x.yaml", salida)
+        self.assertIn("(shared_point 1)", salida)
+
+    def test_lejos_no_sale(self):
+        self.assertNotIn("shared_point", self.correr(33.6))
 
 
 if __name__ == "__main__":
