@@ -959,7 +959,7 @@ function pintarViajeros(ver) {
       marcasViajero.set(p, m);
     }
     m.marker.setLngLat(w.pos);
-    // Fecha estimada o lugar sin punto (se dibuja en su candidato): el mismo aspecto de posición estimada.
+    // Fecha estimada o lugar incierto (un candidato o el punto de una región): el mismo aspecto de posición estimada.
     m.el.classList.toggle('estimada', !!(w.estimada || w.incierto));
     if (!m.puesta) { m.marker.addTo(map); m.puesta = true; }
   }
@@ -1410,7 +1410,7 @@ function pintarLeyenda(V, w, g) {
     for (const [k, s] of Object.entries(CAND)) if (estados.has(k)) filas.push(`<div class="be-legend__row"><span class="leyenda-cand leyenda-cand--${k}" style="--cand:${s.color}"></span>${esc(s.rotulo)}</div>`);
   } else if (inciertos) filas.push(`<div class="be-legend__row"><span class="leyenda-cand leyenda-cand--favorecido_nivel_1" style="--cand:${CAND.favorecido_nivel_1.color}"></span>Lugar incierto: zona o candidatos, nunca un punto</div>`);
   if (hallazgos) filas.push('<div class="be-legend__row"><span class="leyenda-hallazgo"></span>Hallazgo arqueológico</div>');
-  if (estimada) filas.push('<div class="be-legend__row"><span class="leyenda-estimada"></span>Posición estimada (tiempo narrativo o lugar sin punto)</div>');
+  if (estimada) filas.push('<div class="be-legend__row"><span class="leyenda-estimada"></span>Posición estimada (tiempo narrativo o lugar incierto)</div>');
   if (F.capas.viajes && !S && !dePablo && !rastro.length && !viajeros) filas.push('<div class="be-legend__row be-muted">Ningún viaje cerca de esta fecha</div>');
   if (F.nivel1) filas.push('<div class="be-legend__row"><span class="be-tier be-tier--1" data-n="1">Solo fuentes principales</span></div>');
   const cabecera = titulo ? `${esc(titulo.nombre)} · ${esc(fechaCorta(titulo.fecha))}` : selIncierto ? `${esc(selIncierto.nombre)} · cómo dibujamos lo incierto`

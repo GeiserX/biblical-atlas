@@ -11,6 +11,7 @@
 //  - A place with no candidate at all keeps the stay (card, timeline), and the map draws nothing for it: Caín at Enoc,
 //    and Mahanaim with its candidates removed in a temporary copy of the data.
 //  - Selecting such a place frames its zone.
+//  - A region, whose point stands for the whole region, also looks estimated (Paul in Galatia).
 //
 // Run from the repository root, one browser at a time:
 //   node --test --test-concurrency=1 tests/site/estancias-sin-punto.test.mjs
@@ -76,13 +77,13 @@ function variant(name, change) {
 let browser, server, origin, tmp, page;
 const errors = [];
 /** A page with the data and the map loaded. Tiles from other hosts are not needed; MapLibre from unpkg is. */
-async function open(prefix = '') {
+async function open(prefix = '', hash = 't=50.5') {
   const context = await browser.newContext({ deviceScaleFactor: 1, ...DESKTOP });
   const p = await context.newPage();
   p.setDefaultTimeout(8000);
   p.on('pageerror', (e) => errors.push(`pageerror: ${e.message}`));
   await p.route((url) => !url.href.startsWith(origin) && !url.hostname.endsWith('unpkg.com'), (route) => route.abort());
-  await p.goto(`${origin}${prefix}/index.html#t=50.5`);
+  await p.goto(`${origin}${prefix}/index.html#${hash}`);
   await p.waitForFunction(() => window.__be?.map?.loaded?.() && window.__be.map.getSource('be-rastro'), null, { timeout: 30000 });
   return p;
 }
@@ -244,6 +245,30 @@ test('selecting a place without a point frames its zone', async () => {
   });
   assert.ok(r.dentro, JSON.stringify(r));
   assert.ok(r.ancho < 3, `the map is framed on the zone, not left on the Mediterranean: ${JSON.stringify(r)}`);
+});
+
+/** Puts the cursor in the middle of one of Paul's stops and reads his marker and the legend. */
+function pabloEn(p, key) {
+  return p.evaluate(async (key) => {
+    const { BE, setT, seleccionar } = window.__be;
+    const s = BE.P.find((x) => x.key === key);
+    const t = (s.a + s.b) / 2;
+    seleccionar(null, { mover: false, encuadrar: false });
+    setT(t);
+    await new Promise((r) => requestAnimationFrame(() => requestAnimationFrame(r)));
+    const w = BE.dondeEsta(t), el = document.querySelector('.pablo');
+    return { lugar: w?.en.lugar.id, precision: s.lugar.precision, estimada: !!w?.estimada, incierto: !!w?.incierto,
+      marca: el?.isConnected ? el.classList.contains('estimada') : null, leyenda: document.querySelector('#leyenda')?.textContent.replace(/\s+/g, ' ') ?? '' };
+  }, key);
+}
+
+test('a stay at a region, whose point stands for the whole region, looks estimated even with an exact date (Paul in Galatia)', async () => {
+  const r = await pabloEn(page, 'tercer-viaje/2');
+  assert.equal(r.lugar, 'galacia', JSON.stringify(r));
+  assert.equal(r.precision, 'zona', 'the point of Galatia stands for the whole region');
+  assert.equal(r.estimada, false, 'the case under test: the date is not estimated');
+  assert.equal(r.incierto, true, `BE.donde says the place is uncertain: ${JSON.stringify(r)}`);
+  assert.equal(r.marca, true, 'and the marker has the look of an estimated position');
 });
 
 test('no page errors', () => {
