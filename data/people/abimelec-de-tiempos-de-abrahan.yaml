@@ -11,11 +11,13 @@ date:
   type: anchored
   chronology: tnm
   text: c. 1919 a.e.c. (cuando Abrahán vivía en Guerar)
-disambiguation: El rey de Guerar en tiempos de Abrahán; quizá no el que trató con Isaac, y no el hijo del juez Gedeón.
+disambiguation: El rey de Guerar en tiempos de Abrahán; quizá no el que trató con Isaac. No es el hijo del juez Gedeón ni
+  Akís, el rey de Gat al que el Salmo 34 llama Abimélec.
 perspicacia: 1200000045#1
 distinct_from:
 - abimelec-de-tiempos-de-isaac
 - abimelec-hijo-de-gedeon
+- akis
 summary: Rey filisteo de Guerar. Se llevó a Sara creyendo que era hermana de Abrahán; avisado por Dios en un sueño, la devolvió
   con regalos. Después pactó con Abrahán en Beer-Seba. Su nombre quizá era un título.
 reason: Perspicacia «Abimélec», núm. 1; Gé 20:1-18 y 21:22-34.
@@ -49,5 +51,5 @@ relations:
   reason: 'Gé 21:32: después del pacto volvió a la tierra de los filisteos.'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-02'
 status: verified

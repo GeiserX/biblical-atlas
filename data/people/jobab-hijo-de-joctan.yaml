@@ -27,7 +27,8 @@ relations:
   reason: Gé 10:29 lo cuenta entre los trece hijos de Joctán.
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-02'
 status: verified
 distinct_from:
 - jobab-rey-de-madon
+- jobab-hijo-de-zerah

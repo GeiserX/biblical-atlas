@@ -54,5 +54,7 @@ history:
 - date: '2026-09-29'
   change: El resumen cuenta que sacó los cuerpos de Nadab y Abihú, pero la ficha no citaba Le 10, de donde sale.
   source: levitico-10
-checked_on: '2026-09-29'
+checked_on: '2026-10-02'
 status: verified
+distinct_from:
+- mesac

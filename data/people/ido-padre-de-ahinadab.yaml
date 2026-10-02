@@ -15,5 +15,7 @@ links:
 - title: 'Perspicacia: «Idó»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Id%C3%B3/
   type: perspicacia
-checked_on: '2026-09-30'
+checked_on: '2026-10-02'
 status: verified
+distinct_from:
+- ido-padre-de-berekias

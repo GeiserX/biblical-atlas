@@ -89,6 +89,7 @@ distinct_from:
 - simon-iscariote
 - symeon-niger
 - simon-el-fariseo
+- simon-de-cirene
 not_claimed:
 - 'Que Pedro estuviera en Roma o dirigiera allí la congregación: Perspicacia dice que esa idea solo se apoya en
   tradiciones dudosas.'
@@ -320,5 +321,5 @@ history:
   change: La relación con su suegra decía que Perspicacia deduce de ella el matrimonio. Perspicacia «Pedro», párr. 4, lo da
     por 1Co 9:5 y cuenta aparte lo de la suegra (Mr 1:29-31).
   source: 1-corintios-9
-checked_on: '2026-10-01'
+checked_on: '2026-10-02'
 status: verified

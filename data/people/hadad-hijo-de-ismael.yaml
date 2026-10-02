@@ -28,7 +28,9 @@ relations:
   reason: 'Gé 25:13-16: uno de los doce hijos de Ismael.'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-30'
+checked_on: '2026-10-02'
 status: verified
 distinct_from:
 - hadad-el-edomita
+- hadad-hijo-de-bedad
+- hadar

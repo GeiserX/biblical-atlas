@@ -4,7 +4,8 @@ name: Zérah
 names:
 - name: Zérah
 perspicacia: 1200004704#2
-disambiguation: Zérah de Bozrá, padre de Jobab; quizá el mismo que Zérah hijo de Reuel.
+disambiguation: Zérah de Bozrá, padre de Jobab; quizá el mismo que Zérah hijo de Reuel. No es Zérah hijo de Judá ni Zóhar
+  hijo de Simeón, al que también llaman Zérah.
 summary: Edomita de Bozrá, padre del rey Jobab. Perspicacia cree posible que sea Zérah hijo de Reuel, nieto de Esaú.
 reason: Perspicacia «Zérah», núm. 2; Gé 36:33.
 sources:
@@ -37,5 +38,8 @@ relations:
   checked_on: '2026-09-29'
   certainty: possible
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-02'
 status: verified
+distinct_from:
+- zerah-hijo-de-juda
+- zohar-hijo-de-simeon

@@ -28,5 +28,8 @@ relations:
   reason: Gé 10:23 lo nombra el primero de los hijos de Aram.
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-02'
 status: verified
+distinct_from:
+- uz-hijo-de-disan
+- uz-hijo-de-nacor

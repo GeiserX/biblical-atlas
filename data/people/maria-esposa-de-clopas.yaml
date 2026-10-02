@@ -7,12 +7,14 @@ names:
   note: Así la llama Mateo (Mt 27:61; 28:1).
 - name: María la madre de Santiago
   note: Así la llaman Mr 16:1 y Lu 24:10.
-disambiguation: «La otra María» de Mateo; no es María Magdalena ni la madre de Jesús.
+disambiguation: «La otra María» de Mateo; no es María Magdalena, ni la madre de Jesús, ni María de Betania, ni la madre de
+  Juan Marcos.
 distinct_from:
 - maria-magdalena
 - maria-madre-de-jesus
 - maria-de-betania
 - maria-de-roma
+- maria-madre-de-juan-marcos
 not_claimed:
 - 'María, la esposa de Clopas, era tía de Jesús: lo dice solo la tradición.'
 summary: Esposa de Clopas; sus hijos eran Santiago el Menor y Josés. Estuvo junto al madero, vio dónde pusieron
@@ -39,7 +41,7 @@ links:
   type: bible
 search: María
 perspicacia: 1200002918#4
-checked_on: '2026-09-29'
+checked_on: '2026-10-02'
 status: verified
 relations:
 - type: disciple_of

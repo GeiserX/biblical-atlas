@@ -5,6 +5,8 @@ names:
 - name: Jemuel
 - name: Nemuel
   note: Nombre que le dan Números 26 y 1 Crónicas 4, según Perspicacia.
+disambiguation: Jemuel hijo de Simeón, al que otros pasajes llaman Nemuel; no es Nemuel hijo de Eliab, el rubenita hermano
+  de Datán y Abiram.
 perspicacia: '1200002412'
 summary: Hijo de Simeón, el primero de su lista. Bajó a Egipto con Jacob y cuenta entre las setenta personas de su casa.
 reason: Perspicacia «Jemuel»; Gé 46:10.
@@ -13,6 +15,7 @@ sources:
 - genesis-46
 - exodo-6
 - numeros-26
+- it-nemuel
 links:
 - title: 'Perspicacia: «Jemuel»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jemuel/
@@ -86,7 +89,7 @@ relations:
   reason: 'Éx 6:15: Saúl es otro de los hijos de Simeón, este de una mujer cananea.'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-02'
 status: verified
 distinct_from:
 - nemuel-hijo-de-eliab

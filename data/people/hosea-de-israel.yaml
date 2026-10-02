@@ -3,9 +3,11 @@ id: hosea-de-israel
 name: Hosea
 names:
 - name: Hosea
-disambiguation: Último rey de Israel; no es el profeta Oseas, cuyo nombre hebreo es el mismo.
+disambiguation: Último rey de Israel; no es el profeta Oseas, cuyo nombre hebreo es el mismo, ni Josué hijo de Nun, que antes
+  se llamaba Hosea.
 distinct_from:
 - oseas
+- josue-hijo-de-nun
 date:
   from: -757
   to: -739
@@ -84,5 +86,5 @@ relations:
   checked_on: '2026-09-30'
   status: verified
 perspicacia: 1200002090#4
-checked_on: '2026-09-30'
+checked_on: '2026-10-02'
 status: verified

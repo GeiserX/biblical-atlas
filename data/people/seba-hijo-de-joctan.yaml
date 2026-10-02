@@ -9,6 +9,7 @@ distinct_from:
 - seba-hijo-de-raama
 - seba-hijo-de-cus
 - seba-hijo-de-bicri
+- seba-hijo-de-jocsan
 summary: Hijo de Joctán, de la línea de Sem, y antepasado de una de las trece tribus árabes. Quizá eran de esa tribu los sabeos
   que asaltaron a Job.
 reason: Perspicacia «Seba», núm. 2; Gé 10:28.
@@ -32,5 +33,5 @@ relations:
   reason: Gé 10:28 lo cuenta entre los trece hijos de Joctán.
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-02'
 status: verified

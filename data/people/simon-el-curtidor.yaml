@@ -3,7 +3,8 @@ id: simon-el-curtidor
 name: Simón el curtidor
 names:
 - name: Simón
-disambiguation: El curtidor de Jope (Hch 9:43). No es Simón Pedro, su huésped, ni Simón el mago.
+disambiguation: El curtidor de Jope (Hch 9:43). No es Simón Pedro, su huésped, ni Simón el mago, ni los demás Simón que numera
+  Perspicacia.
 summary: Curtidor de Jope con casa junto al mar. Pedro se alojó con él bastantes días en 36; en su azotea tuvo la
   visión que lo preparó para ir a casa de Cornelio.
 reason: Perspicacia «Simón», apartado 9 (párr. 10), y la nota de estudio a Hch 10:6, que explica por qué muchos judíos
@@ -17,6 +18,9 @@ distinct_from:
 - pedro
 - simon-el-mago
 - simon-hijo-de-jose
+- simon-de-cirene
+- simon-el-fariseo
+- simon-iscariote
 relations:
 - type: lived_in
   place: jope
@@ -44,5 +48,5 @@ date:
   type: anchored
   chronology: tnm
   text: 36 e.c.
-checked_on: '2026-09-29'
+checked_on: '2026-10-02'
 status: verified

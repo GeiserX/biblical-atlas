@@ -46,5 +46,7 @@ relations:
   reason: Reinó en Edom tras Samlá (Gé 36:31, 37).
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-02'
 status: verified
+distinct_from:
+- shaul-hijo-de-simeon

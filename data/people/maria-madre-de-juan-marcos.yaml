@@ -3,7 +3,8 @@ id: maria-madre-de-juan-marcos
 name: María, madre de Juan Marcos
 names:
 - name: María
-disambiguation: La madre de Juan Marcos (Hch 12:12). No es María, la madre de Jesús, ni otra de las Marías.
+disambiguation: Madre de Juan Marcos; en su casa de Jerusalén se reunían los discípulos a orar (Hch 12:12). No es María, la
+  madre de Jesús, ni otra de las Marías.
 summary: Cristiana de Jerusalén en cuya casa, grande y con sirvienta, se reunía la congregación. Allí fue Pedro
   al salir de la cárcel en 44. Quizá era viuda; era tía de Bernabé.
 reason: Perspicacia «María», apartado 5 (párr. 30), y la nota de estudio de Hch 12:12.
@@ -13,6 +14,8 @@ sources:
 distinct_from:
 - maria-madre-de-jesus
 - maria-de-roma
+- maria-de-betania
+- maria-esposa-de-clopas
 relations:
 - type: lived_in
   place: jerusalen
@@ -31,5 +34,5 @@ links:
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/hechos/12/
   type: bible
 perspicacia: 1200002918#5
-checked_on: '2026-09-29'
+checked_on: '2026-10-02'
 status: verified

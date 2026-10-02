@@ -4,7 +4,7 @@ name: Zérah
 names:
 - name: Zérah
 perspicacia: 1200004704#1
-disambiguation: Zérah hijo de Reuel; no Zérah hijo de Judá ni Zérah el etíope.
+disambiguation: Zérah hijo de Reuel; no Zérah hijo de Judá, ni Zóhar hijo de Simeón, llamado también Zérah, ni Zérah el etíope.
 summary: Nieto de Esaú y Basemat por Reuel, y jeque en Edom. Perspicacia no descarta que sea el Zérah de Bozrá cuyo hijo Jobab
   reinó en Edom.
 reason: Perspicacia «Zérah», núm. 1 y 2; Gé 36:13, 17.
@@ -47,5 +47,8 @@ relations:
   reason: 'Gé 36:17: fue jeque en la tierra de Edom.'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-02'
 status: verified
+distinct_from:
+- zerah-hijo-de-juda
+- zohar-hijo-de-simeon

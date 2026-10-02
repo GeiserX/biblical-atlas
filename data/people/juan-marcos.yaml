@@ -8,16 +8,20 @@ names:
   note: Sobrenombre romano.
 - name: Juan Marcos
   note: Forma que usa Hechos.
+disambiguation: Juan, de sobrenombre Marcos, hijo de María de Jerusalén y primo de Bernabé; escribió el Evangelio de Marcos.
+  No es el apóstol Juan, ni Juan el Bautista, ni los demás Juan.
 distinct_from:
 - juan-el-bautista
 - juan-apostol
 - juan-gobernante-judio
+- jonas-padre-de-pedro
 summary: Hijo de María de Jerusalén y primo de Bernabé; escribió el Evangelio de Marcos. Quizá fue el joven que huyó desnudo
   de Getsemaní. Dejó el primer viaje en Perga y volvió a Jerusalén.
 reason: Perspicacia «Marcos» lo identifica con el Juan Marcos de Hechos y con el Juan de Hch 13:5, 13, y ve probable que fuera
   el joven de Mr 14:51, 52.
 sources:
 - it-marcos
+- it-juan
 - hch-13
 - marcos-14
 - hechos-12
@@ -42,7 +46,7 @@ history:
   change: La relación con Pablo de 60-61 pasa a decir colaborador en los dos sentidos, como lo llama Col 4:11; el resto de
     la lista no cambia.
   source: colosenses-4
-checked_on: '2026-09-29'
+checked_on: '2026-10-02'
 status: verified
 relations:
 - type: accompanies

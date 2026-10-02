@@ -58,9 +58,7 @@ history:
   source: it-sostenes
 disambiguation: El presidente de la sinagoga de Corinto golpeado ante Galión (Hch 18:17). Perspicacia ve posible que sea el
   hermano Sóstenes de 1Co 1:1, que tiene ficha aparte.
-distinct_from:
-- sostenes-companero-de-pablo
-checked_on: '2026-09-29'
+checked_on: '2026-10-02'
 status: verified
 relations:
 - type: lived_in

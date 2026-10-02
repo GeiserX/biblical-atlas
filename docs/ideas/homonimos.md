@@ -2,6 +2,13 @@
 
 Dos personas con el mismo nombre se distinguen con dos campos de su ficha: `disambiguation`, un texto que dice qué la separa de sus homónimos, y `distinct_from`, la lista de ids de los homónimos. Este documento cuenta los pares que todavía no se nombran, propone cómo cerrarlos y cómo evitar que salgan más, y responde si cada entrada de `distinct_from` debe llevar su propia razón y sus fuentes. No cambia nada de `data/`, `site/` ni `scripts/`.
 
+## Elegido
+
+- **Pregunta 1: A, C y E.** Los pares sin marcar se marcan en las dos fichas y una regla de `validate.py` da error si vuelve a salir uno, si `distinct_from` va en una sola dirección o si un par lleva `distinct_from` y `same_as`. De los 77, 76 llevan ya `distinct_from`. El que queda, Juan y Santiago, solo comparte el sobrenombre Boanerges, que Jesús les dio a los dos juntos: no son homónimos y van en `scripts/homonym_exceptions.yaml` con su porqué. Sóstenes y su posible doble se quedan solo con `same_as`. Los lugares siguen como están.
+- **Pregunta 2: A.** Una razón por ficha, la de `disambiguation`. Llevar `distinct_from` sin `disambiguation` es error, y las seis fichas que fallaban tienen ya su texto.
+- **Pregunta 3:** el sitio no cambia.
+- **Para cuando haya más idiomas:** dos nombres que coinciden en español pueden ser distintos en otro idioma, y al revés. Ese día la regla comparará los nombres dentro de cada idioma; la clave del nombre ya sale de una sola función, `clave_nombre`, para que entonces reciba el idioma.
+
 ## Cómo se marcan hoy
 
 - **El esquema** ([README de la investigación](../investigacion/README.md#campos-por-tipo)) da a cada persona un solo `disambiguation` y una lista `distinct_from` de ids. Los lugares no tienen `distinct_from`: el aviso va en la `note` del nombre.

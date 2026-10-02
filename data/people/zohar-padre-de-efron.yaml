@@ -17,5 +17,7 @@ links:
 - title: Génesis 23 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/G%C3%A9nesis/23/
   type: bible
-checked_on: '2026-09-29'
+checked_on: '2026-10-02'
 status: verified
+distinct_from:
+- zohar-hijo-de-simeon

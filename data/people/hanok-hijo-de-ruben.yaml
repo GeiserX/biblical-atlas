@@ -67,5 +67,7 @@ relations:
   reason: 'Éx 6:14: Carmí es otro de los hijos de Rubén.'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-02'
 status: verified
+distinct_from:
+- hanok-hijo-de-madian
