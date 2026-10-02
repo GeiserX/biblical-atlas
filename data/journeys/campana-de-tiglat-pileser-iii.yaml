@@ -1,0 +1,189 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: campana-de-tiglat-pileser-iii
+name: Campaña de Tiglat-Piléser III contra Damasco e Israel
+person: tiglat-pileser-iii
+reference: 2Re 16:9; 15:29; 1Cr 5:26; 2Cr 28:20
+date:
+  from: -761
+  to: -757
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 762 y c. 758 a.e.c. (tiempo narrativo: tras el soborno de Acaz y antes de la muerte de Pécah)'
+companions: []
+summary: Sobornado por Acaz, el rey de Asiria toma Damasco y conquista el norte de Israel, con Galaad y Galilea, y destierra
+  a su gente.
+reason: 2Re 16:9 y 15:29; Perspicacia «Tiglat-piléser III», «Péqah» y «Damasco». Orden y fechas de los sucesos ancla. El tributo
+  de Menahem (2Re 15:19) es otra entrada, en un solo lugar, y lo sitúa su suceso.
+sources:
+- 2-reyes-15
+- 2-reyes-16
+- 1-cronicas-5
+- 2-cronicas-28
+- it-tiglat-pileser
+- it-peqah
+- it-damasco
+- it-quir
+- it-acaz
+- tnm-a6-b
+checked_on: '2026-10-02'
+status: verified
+stops:
+- order: 1
+  place: damasco
+  reference: 2Re 16:9
+  date:
+    from: -761
+    to: -757
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 762 y c. 758 a.e.c. (tiempo narrativo: tras el soborno de Acaz y antes de la muerte de Pécah)'
+  note: 'Destierra a su gente a Quir, cuyo sitio no se conoce. La visita de Acaz (2Re 16:10) la cuenta su propio suceso, acaz-va-a-damasco-a-ver-a-tiglat-pileser.'
+  reason: '2Re 16:9: sube a Damasco, la toma y mata a Rezín. Perspicacia «Damasco»: atacó en cuanto recibió el soborno. Suceso tiglat-pileser-toma-damasco. 2Cr 28:20 dice que atacó a Acaz, sin lugar.'
+  sources:
+  - 2-reyes-16
+  - 2-cronicas-28
+  - it-damasco
+  - it-quir
+  - it-tiglat-pileser
+  - it-acaz
+  checked_on: '2026-10-02'
+  status: verified
+- order: 2
+  place: ijon
+  reference: 2Re 15:29
+  date:
+    from: -761
+    to: -757
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 762 y c. 758 a.e.c. (tiempo narrativo: tras el soborno de Acaz y antes de la muerte de Pécah)'
+  note: 'Perspicacia «Tiglat-piléser III» cuenta el norte antes que Damasco; «Péqah» cuenta antes Damasco y dice que el norte parece de esa misma campaña. Ninguna da orden de marcha; seguimos el de nuestros sucesos.'
+  reason: '2Re 15:29 da siete lugares sin orden de marcha; seguimos el del texto. Suceso tiglat-pileser-deporta-al-norte-de-israel.'
+  sources:
+  - 2-reyes-15
+  - it-tiglat-pileser
+  - it-ijon
+  - it-peqah
+  checked_on: '2026-10-02'
+  status: pending
+- order: 3
+  place: abel-de-bet-maaca
+  reference: 2Re 15:29
+  date:
+    from: -761
+    to: -757
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 762 y c. 758 a.e.c. (tiempo narrativo: tras el soborno de Acaz y antes de la muerte de Pécah)'
+  note: null
+  reason: '2Re 15:29, segundo lugar de la lista, sin orden de marcha. Mismo suceso.'
+  sources:
+  - 2-reyes-15
+  - it-tiglat-pileser
+  - it-abel-bet-maaca
+  checked_on: '2026-10-02'
+  status: pending
+- order: 4
+  place: janoah-del-norte
+  reference: 2Re 15:29
+  date:
+    from: -761
+    to: -757
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 762 y c. 758 a.e.c. (tiempo narrativo: tras el soborno de Acaz y antes de la muerte de Pécah)'
+  note: 'Perspicacia da su sitio por incierto; el punto es el que prefiere la mayoría.'
+  reason: '2Re 15:29, tercer lugar de la lista, sin orden de marcha. Mismo suceso.'
+  sources:
+  - 2-reyes-15
+  - it-tiglat-pileser
+  - it-janoah
+  checked_on: '2026-10-02'
+  status: pending
+- order: 5
+  place: quedes-de-neftali
+  reference: 2Re 15:29
+  date:
+    from: -761
+    to: -757
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 762 y c. 758 a.e.c. (tiempo narrativo: tras el soborno de Acaz y antes de la muerte de Pécah)'
+  note: null
+  reason: '2Re 15:29, cuarto lugar de la lista, sin orden de marcha. Mismo suceso.'
+  sources:
+  - 2-reyes-15
+  - it-tiglat-pileser
+  - it-quedes
+  checked_on: '2026-10-02'
+  status: pending
+- order: 6
+  place: hazor
+  reference: 2Re 15:29
+  date:
+    from: -761
+    to: -757
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 762 y c. 758 a.e.c. (tiempo narrativo: tras el soborno de Acaz y antes de la muerte de Pécah)'
+  note: null
+  reason: '2Re 15:29, quinto lugar de la lista, sin orden de marcha. Mismo suceso.'
+  sources:
+  - 2-reyes-15
+  - it-tiglat-pileser
+  - it-hazor
+  checked_on: '2026-10-02'
+  status: pending
+- order: 7
+  place: galaad
+  reference: 2Re 15:29
+  date:
+    from: -761
+    to: -757
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 762 y c. 758 a.e.c. (tiempo narrativo: tras el soborno de Acaz y antes de la muerte de Pécah)'
+  note: 'Al este del Jordán. 1Cr 5:26 nombra a los desterrados de Rubén, Gad y media Manasés; su camino es otro viaje.'
+  reason: '2Re 15:29, sexto lugar de la lista, sin orden de marcha. Perspicacia «Galaad» dice que se llevó al exilio a su gente. Mismo suceso.'
+  sources:
+  - 2-reyes-15
+  - it-tiglat-pileser
+  - it-galaad
+  - 1-cronicas-5
+  checked_on: '2026-10-02'
+  status: pending
+- order: 8
+  place: galilea
+  reference: 2Re 15:29
+  date:
+    from: -761
+    to: -757
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 762 y c. 758 a.e.c. (tiempo narrativo: tras el soborno de Acaz y antes de la muerte de Pécah)'
+  note: 'El texto la llama toda la tierra de Neftalí. Aquí acaba el viaje: ninguna fuente cuenta su vuelta.'
+  reason: '2Re 15:29, último lugar de la lista, sin orden de marcha. Mismo suceso.'
+  sources:
+  - 2-reyes-15
+  - it-tiglat-pileser
+  - it-galilea
+  checked_on: '2026-10-02'
+  status: pending
