@@ -309,8 +309,16 @@ function salir() {
 BE.inicios.push(iniciar);
 BE.pintores.push(seguirSeleccion);
 // La parada solo va en la dirección mientras el recorrido está elegido: al quitarlo (Atrás a la portada, otra
-// selección) no se queda colgada hasta el fotograma que lo cierra.
-BE.parametros.push({ nombre: 'paso', historia: true, escribir: () => (R.id && E.sel?.tipo === 'recorrido' && E.sel.id === R.id ? String(R.paso + 1) : null),
+// selección) no se queda colgada hasta el fotograma que lo cierra. Recién elegido, antes de que seguirSeleccion lo
+// abra, ya dice la parada en la que va a abrir (la de la dirección, la guardada o la primera): si no, el historial veía
+// dos vistas, el recorrido sin parada y la parada, y guardaba dos entradas que se ven igual.
+function pasoEscrito() {
+  if (E.sel?.tipo !== 'recorrido') return null;
+  if (E.sel.id === R.id) return String(R.paso + 1);
+  const rc = BE.D && busca(E.sel.id);
+  return rc ? String(Math.min(rc.paradas.length - 1, pasoDe(E.sel.id)) + 1) : null;
+}
+BE.parametros.push({ nombre: 'paso', historia: true, escribir: pasoEscrito,
   leer(v) { const n = v ? Math.max(0, (+v || 1) - 1) : null; if (R.id && n != null && n !== R.paso) irA(n, { historia: false }); else R.pasoHash = n; } });
 
 BE.recorridos = { ficha: fichaRecorrido, irA, pasoDe, salir, presentar, avanzar };

@@ -655,3 +655,41 @@ test('a search typed right after choosing a result keeps its list open', async (
   assert.equal(r.focus, 'q');
   assert.equal(r.hidden, false, 'the list of the second search closed while the box had the focus');
 });
+
+const TOUR = 'Las cartas de Pablo y las ciudades que las recibieron';
+test('a tour opened from the search or from a card link is one entry, and one Back leaves it; paso=4 still opens at stop 4', async () => {
+  for (const [screen, pre] of [[DESKTOP, ''], [PHONE, 'hoja-']]) {
+    const page = await openPage(screen, { hash: 't=50.3000' });
+    await search(page, 'Pablo');
+    const h0 = await hist(page, pre);
+    await search(page, 'Las cartas de Pablo y las ciudades');
+    await settle(page);   // the second entry, when there was one, came a frame after the first
+    const h1 = await hist(page, pre);
+    assert.equal(h1.length, h0.length + 1, `${pre || 'desktop'}: opening the tour from the search made ${h1.length - h0.length} entries`);
+    assert.equal(h1.state.step, h0.state.step + 1);
+    assert.equal(h1.state.name, `${TOUR}, parada 1`);
+    assert.equal(h1.back.label, 'Atrás: Pablo');
+    await page.locator(`#${pre}atras`).click();
+    await settle(page);
+    assert.equal((await snap(page)).sel, 'persona:pablo', `${pre || 'desktop'}: one Back did not leave the tour`);
+    assert.deepEqual(page.pageErrors, []);
+  }
+  // From a card: the last stop of Pedro's tour links the other tours.
+  const page = await openPage(DESKTOP, { hash: 'sel=recorrido:pedro&paso=16' });
+  const h0 = await hist(page);
+  await page.locator('#panel-cuerpo [data-sel="recorrido:cartas-y-ciudades"]').click();
+  await settle(page);
+  await settle(page);
+  const h1 = await hist(page);
+  assert.equal(h1.length, h0.length + 1, `opening the tour from a card link made ${h1.length - h0.length} entries`);
+  assert.equal(h1.state.name, `${TOUR}, parada 1`);
+  await page.locator('#atras').click();
+  await settle(page);
+  assert.equal((await snap(page)).sel, 'recorrido:pedro', 'one Back did not leave the tour opened from the card');
+  // A shared link with paso=4 opens at stop 4, in one entry.
+  const four = await openPage(DESKTOP, { hash: 'sel=recorrido:cartas-y-ciudades&paso=4' });
+  assert.match(await four.locator('#panel-cuerpo .recorrido .be-card__eyebrow').textContent(), /parada 4 de 14/);
+  assert.match((await snap(four)).hash, /paso=4/);
+  assert.equal((await hist(four)).state.step, 0);
+  assert.equal((await hist(four)).state.name, `${TOUR}, parada 4`);
+});
