@@ -1026,7 +1026,7 @@ test('no lane name is cut: each goes in as many lines as it needs, pinned, with 
     const p = await open(screen, 't=-600.5&v=4125');
     const ids = await p.evaluate(() => window.BE.lineaCarriles().map((c) => c.id).filter((id) => id !== 'meses'));
     // The traveller with the longest name, selected: its lane goes by its name.
-    const larga = await p.evaluate(() => { const BE = window.BE; return [...new Set(BE.D.viajes.map((v) => v.persona || 'pablo'))].filter((id) => BE.PERS[id]).sort((a, b) => BE.PERS[b].nombre.length - BE.PERS[a].nombre.length)[0]; });
+    const larga = await p.evaluate(() => { const BE = window.BE; return [...new Set(BE.D.viajes.map(BE.duenoViaje))].filter((id) => BE.PERS[id]).sort((a, b) => BE.PERS[b].nombre.length - BE.PERS[a].nombre.length)[0]; });
     // Last, eight years around 520 a.e.c.: lanes of a single row, so the lane has to grow to its name. There «Letra
     // grande» goes on, and then the window narrows, with the same lanes: the heights of the names are measured again
     // although the list of lanes did not change. Jesús in 30 e.c. carries his age beside his name, which takes room from it.
