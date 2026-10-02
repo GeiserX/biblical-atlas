@@ -859,9 +859,10 @@ def validar_viaje(v, donde, err):
             continue
         if pid == persona:
             err(f"{donde}: companions[{i}]: {pid} es quien viaja")
+        # Dos tramos pegados (1-2 y 3-4) son uno solo (1-4): tampoco se tocan.
         for x, y in tramos.get(pid, []):
-            if a <= y and x <= b:
-                err(f"{donde}: companions[{i}]: {pid} ya va en las paradas {x} a {y}")
+            if a <= y + 1 and x <= b + 1:
+                err(f"{donde}: companions[{i}]: {pid} ya va en las paradas {x} a {y}; un tramo pegado se une a ese")
         tramos.setdefault(pid, []).append((a, b))
 
 

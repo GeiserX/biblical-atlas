@@ -153,6 +153,12 @@ class Acompanantes(unittest.TestCase):
         self.assertTrue(any("ya va en las paradas 1 a 3" in e for e in errores_viaje(companions=cs)))
         self.assertTrue(any("ya va" in e for e in errores_viaje(companions=["silas", {"person": "silas", "from": 2, "to": 2}])))
 
+    def test_tramos_pegados_son_un_solo_tramo(self):
+        cs = [{"person": "silas", "from": 1, "to": 2}, {"person": "silas", "from": 3, "to": 4}]
+        self.assertTrue(any("ya va en las paradas 1 a 2" in e for e in errores_viaje(companions=cs)))
+        cs = [{"person": "silas", "from": 4, "to": 4}, {"person": "silas", "from": 2, "to": 3}]
+        self.assertTrue(any("ya va en las paradas 4 a 4" in e for e in errores_viaje(companions=cs)))
+
     def test_todo_el_viaje_se_escribe_con_el_id(self):
         cs = [{"person": "silas", "from": 1, "to": 5}]
         self.assertTrue(any("se escribe solo su id" in e for e in errores_viaje(companions=cs)))
