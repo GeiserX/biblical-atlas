@@ -75,6 +75,28 @@ Cada suceso y cada parada que se mueve, y por qué:
 - **1 Samuel 1 a 8** (26 sucesos) y las paradas del Arca, de Ana con Samuel a Siló y del recorrido anual de Samuel: el bloque de 1 Samuel 4 a 7 deja de contar como 16 sucesos y pasa a contar como uno con su largo, así que los seis sucesos de 1 Samuel 1 a 3 se reparten un tramo mayor (de 3,6 a 5,7 años cada uno) y 1 Samuel 7:15 a 8:22 se corre unos meses.
 - **Trece paradas de otros viajes**: siete tomaban la ventana entera de un suceso narrativo más largo que su propia fecha anclada (Epafras en Colosas, Moisés en Madián, José en Egipto, Jefté al volver de Tob, Eliseo al volver del Jordán, Jesús en Nazaret a los 12 años, Timoteo en Corinto) y ahora quedan dentro de esa fecha; las otras seis son paradas vecinas de la misma persona, que se corren con ellas (tres de José, dos de la vuelta de Moisés a Egipto y una de Eliseo).
 
+## Capturas
+
+Antes, a escala de decenios: el levita, la reunión en Mizpá y las batallas van de 1450 a 1415 a.e.c.
+
+![Jueces 19 y 20 antes, repartidos por decenios](img/fechas-relato/antes-jueces-1440.png)
+
+Después: el mismo relato cabe en unas semanas de 1449 a.e.c. y el mapa dibuja el viaje del levita.
+
+![Jueces 19 y 20 después, en semanas](img/fechas-relato/despues-jueces-1440.png)
+
+Después, a escala de días: el ayuno en Betel cae el día de la segunda batalla, y el mapa dibuja la guerra contra Benjamín.
+
+![La guerra contra Benjamín por días](img/fechas-relato/despues-guerra-1440.png)
+
+El Arca antes (decenios) y después (meses): de Ebenézer a Asdod, Gat y Ecrón dentro de los siete meses.
+
+![El Arca antes](img/fechas-relato/antes-arca-1440.png)
+
+![El Arca después](img/fechas-relato/despues-arca-1440.png)
+
+En el teléfono, el Arca en Gat: [despues-arca-430.png](img/fechas-relato/despues-arca-430.png). Las demás capturas a 430 px están en la misma carpeta.
+
 ## Lo que queda
 
 - **Más relatos del mismo tipo.** La campaña de Gedeón (63,6 años), Barac y Sísara (18,7), la guerra de Abimelec (15,0) y Sansón están dentro de la tanda de Jueces 2 a 11 o de 12 a 16, que abarca siglos de verdad. Atarlos con `elapsed` es barato en datos, pero cada bloque libera sitio en una tanda de 49 sucesos y mueve la era de los jueces entera; conviene hacerlo en un cambio aparte, mirando a la vez los años que el libro sí da (veinte de Jabín, cuarenta de paz, siete de Madián, tres de Abimelec).
