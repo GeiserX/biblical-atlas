@@ -93,9 +93,9 @@ chapters:
     status: complete
     reviewed_on: 2026-09-30
     spans:
-    - {v: 1-10, type: narration, entities: [event:la-reina-de-saba-visita-a-salomon, person:salomon, place:jerusalen, place:reino-de-saba], mentions: [place:israel], note: "La reina no tiene nombre en la Biblia y no lleva ficha. La nota del v. 1 da también la lectura Seba."}
+    - {v: 1-10, type: narration, entities: [event:la-reina-de-saba-visita-a-salomon, person:salomon, place:jerusalen, place:reino-de-saba, journey:la-reina-de-saba], mentions: [place:israel], note: "La reina no tiene nombre en la Biblia y no lleva ficha. La nota del v. 1 da también la lectura Seba."}
     - {v: 11-12, type: narration, entities: [event:flota-de-salomon-a-ofir, person:salomon, person:hiram-rey-de-tiro, place:ofir, relation:hiram-rey-de-tiro/tie/salomon], mentions: [journey:salomon-va-a-ezion-gueber]}
-    - {v: "13", type: narration, entities: [event:la-reina-de-saba-visita-a-salomon, person:salomon, place:reino-de-saba]}
+    - {v: "13", type: narration, entities: [event:la-reina-de-saba-visita-a-salomon, person:salomon, place:reino-de-saba, journey:la-reina-de-saba]}
     - {v: 14-21, type: narration, entities: [event:riqueza-de-salomon, person:salomon, place:jerusalen], mentions: [place:arabia, place:monte-moria], note: "Los reyes de los árabes son un pueblo, sin ficha. La Casa del Bosque del Líbano es un nombre de monte-moria."}
     - {v: "22", type: narration, entities: [event:las-naves-de-tarsis-traen-riquezas-a-salomon, person:salomon, person:hiram-rey-de-tiro, place:tarsis]}
     - {v: 23-29, type: narration, entities: [event:riqueza-de-salomon, person:salomon, place:jerusalen, place:sefela, relation:salomon/lived_in/jerusalen], mentions: [place:egipto, place:siria, place:cilicia], note: "Los hititas son un pueblo, sin ficha. Cilicia viene de la nota del v. 28, que lee quizás Coa y la relaciona con ella."}

@@ -1,0 +1,83 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: la-reina-de-saba
+name: La reina de Saba visita a Salomón
+person: null
+group: la reina de Saba y su séquito
+reference: 1Re 10:1-13; 2Cr 9:1-12
+date:
+  from: -1013
+  to: -997
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1014 y 998 a.e.c. (tiempo narrativo: después de muchas obras de Salomón y antes de su muerte)'
+companions: []
+summary: La reina de Saba oye de la sabiduría de Salomón y viene a Jerusalén con camellos cargados de aceite balsámico, oro
+  y piedras preciosas. Le hace preguntas difíciles, le da regalos y vuelve a su país.
+reason: 1 Reyes 10 y 2 Crónicas 9. Perspicacia «Seba», núm. 6, dice que no se da su nombre y que venía del reino del suroeste
+  de Arabia. Fecha del suceso la-reina-de-saba-visita-a-salomon.
+sources:
+- 1-reyes-10
+- 2-cronicas-9
+- it-seba
+- it-salomon
+checked_on: '2026-10-02'
+status: verified
+stops:
+- order: 1
+  place: reino-de-saba
+  reference: 1Re 10:1, 2
+  date:
+    from: -1013
+    to: -997
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1014 y 998 a.e.c. (tiempo narrativo: después de muchas obras de Salomón y antes de su muerte)'
+  note: Salida. Perspicacia cuenta unos 1.900 km de su capital, Marib, a Ezión-Guéber.
+  reason: 1Re 10:1 la llama reina de Saba y 10:13 la hace volver a su país; Perspicacia «Seba», núm. 6, pone ese reino en
+    el suroeste de Arabia. Suceso la-reina-de-saba-visita-a-salomon.
+  sources:
+  - 1-reyes-10
+  - it-seba
+  checked_on: '2026-10-02'
+  status: verified
+- order: 2
+  place: jerusalen
+  reference: 1Re 10:2-13
+  date:
+    from: -1013
+    to: -997
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1014 y 998 a.e.c. (tiempo narrativo: después de muchas obras de Salomón y antes de su muerte)'
+  note: Ve la sabiduría y la casa de Salomón, alaba a Jehová y le regala 120 talentos de oro.
+  reason: 1Re 10:2-13. Suceso la-reina-de-saba-visita-a-salomon.
+  sources:
+  - 1-reyes-10
+  - it-seba
+  checked_on: '2026-10-02'
+  status: verified
+- order: 3
+  place: reino-de-saba
+  reference: 1Re 10:13
+  date:
+    from: -1013
+    to: -997
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1014 y 998 a.e.c. (tiempo narrativo: después de muchas obras de Salomón y antes de su muerte)'
+  note: Llegada. Vuelve con sus siervos y con lo que Salomón le dio.
+  reason: 1Re 10:13 y 2Cr 9:12. Suceso la-reina-de-saba-visita-a-salomon.
+  sources:
+  - 1-reyes-10
+  - 2-cronicas-9
+  - it-seba
+  checked_on: '2026-10-02'
+  status: verified

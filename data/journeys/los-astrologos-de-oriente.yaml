@@ -1,0 +1,66 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: los-astrologos-de-oriente
+name: Los astrólogos, de Jerusalén a Belén
+person: null
+group: los astrólogos de Oriente
+reference: Mt 2:1-12
+date:
+  from: 0
+  to: 1
+  precision: range
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: entre 1 a.e.c. y 1 e.c.
+companions: []
+summary: Unos astrólogos de Oriente llegan a Jerusalén preguntando por el rey de los judíos. Herodes los manda a Belén; ven
+  al niño en una casa, le dan oro, olíbano y mirra y vuelven a su tierra por otro camino.
+reason: 'Mateo 2:1-12 da las dos paradas; tabla A7-A, fila 7. Mateo no nombra su país ni dice cuántos eran (Perspicacia «Astrólogos»):
+  no tienen ficha ni punto de salida.'
+sources:
+- mateo-2
+- tnm-a7-a
+- it-astrologos
+- it-herodes
+- jy-cap-7
+checked_on: '2026-10-02'
+status: verified
+stops:
+- order: 1
+  place: jerusalen
+  reference: Mt 2:1-8
+  date:
+    from: 0
+    to: 1
+    precision: range
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: entre 1 a.e.c. y 1 e.c.
+  note: Vienen de Oriente, que el texto no sitúa. Herodes les pregunta en secreto cuándo vieron la estrella.
+  reason: Mt 2:1-8. Suceso astrologos-ante-herodes; tabla A7-A, fila 7.
+  sources:
+  - mateo-2
+  - tnm-a7-a
+  - it-herodes
+  checked_on: '2026-10-02'
+  status: verified
+- order: 2
+  place: belen
+  reference: Mt 2:9-12
+  date:
+    from: 0
+    to: 1
+    precision: range
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: entre 1 a.e.c. y 1 e.c.
+  note: Llegada. Un sueño les avisa de no volver a Herodes; regresan a su país por otra ruta que no se nombra.
+  reason: Mt 2:9-12. Suceso astrologos-en-belen; la nota de Mt 2:11.
+  sources:
+  - mateo-2
+  - tnm-a7-a
+  - it-astrologos
+  checked_on: '2026-10-02'
+  status: verified

@@ -1,0 +1,102 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: los-correos-de-ezequias
+name: Los correos de Ezequías
+person: null
+group: los correos de Ezequías
+reference: 2Cr 30:1-11
+date:
+  from: -745
+  to: -744
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 746 y 745 a.e.c. (tiempo narrativo: al empezar el reinado de Ezequías)'
+companions: []
+summary: Ezequías invita a todo Israel a celebrar la Pascua en Jerusalén el segundo mes. Sus correos van de ciudad en ciudad
+  por Efraín y Manasés hasta Zabulón; casi todos se burlan, pero algunos acuden.
+reason: 2 Crónicas 30 da el recorrido. Perspicacia «Efraín» pone esta Pascua en el primer año de Ezequías, que cuenta desde
+  nisán de 745 («Ezequías»); A6-B abre su reinado en 746. 2 Crónicas 30 aún no tiene sucesos.
+sources:
+- 2-cronicas-30
+- it-ezequias
+- it-efrain
+- it-manases
+- it-zabulon
+- it-pascua
+- tnm-a6-b
+checked_on: '2026-10-02'
+status: verified
+stops:
+- order: 1
+  place: jerusalen
+  reference: 2Cr 30:1-6
+  date:
+    from: -745
+    to: -744
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 746 y 745 a.e.c. (tiempo narrativo: al empezar el reinado de Ezequías)'
+  note: Salida. El aviso es para todo Israel, de Beer-Seba a Dan.
+  reason: '2Cr 30:1-6: los manda el rey desde Jerusalén con sus cartas; Perspicacia «Ezequías», párr. 11.'
+  sources:
+  - 2-cronicas-30
+  - it-ezequias
+  checked_on: '2026-10-02'
+  status: verified
+- order: 2
+  place: territorio-de-efrain
+  reference: 2Cr 30:10
+  date:
+    from: -745
+    to: -744
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 746 y 745 a.e.c. (tiempo narrativo: al empezar el reinado de Ezequías)'
+  note: Van de ciudad en ciudad; la gente se ríe de ellos.
+  reason: 2Cr 30:10; Perspicacia «Efraín».
+  sources:
+  - 2-cronicas-30
+  - it-efrain
+  checked_on: '2026-10-02'
+  status: verified
+- order: 3
+  place: manases
+  reference: 2Cr 30:10, 11
+  date:
+    from: -745
+    to: -744
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 746 y 745 a.e.c. (tiempo narrativo: al empezar el reinado de Ezequías)'
+  note: La media tribu del oeste, en el reino del norte.
+  reason: '2Cr 30:10, 11; Perspicacia «Manasés»: algunos manasitas se humillan y van.'
+  sources:
+  - 2-cronicas-30
+  - it-manases
+  checked_on: '2026-10-02'
+  status: verified
+- order: 4
+  place: zabulon
+  reference: 2Cr 30:10, 11
+  date:
+    from: -745
+    to: -744
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 746 y 745 a.e.c. (tiempo narrativo: al empezar el reinado de Ezequías)'
+  note: 'Llegada: el punto más lejano que nombra el texto. El texto no cuenta la vuelta.'
+  reason: 2Cr 30:10, 11; Perspicacia «Zabulón».
+  sources:
+  - 2-cronicas-30
+  - it-zabulon
+  checked_on: '2026-10-02'
+  status: verified

@@ -1,0 +1,127 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: destierro-de-israel-en-740
+name: Destierro de Israel a Asiria
+person: null
+group: los israelitas del reino del norte
+reference: 2Re 17:5, 6; 18:9-12
+date:
+  from: -739
+  to: -739
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 740 a.e.c.
+companions: []
+summary: Tras tres años de sitio cae Samaria, y el rey de Asiria se lleva a los israelitas. Los reparte por Halá, por Habor,
+  a orillas del Gozán, y por ciudades de los medos.
+reason: 2Re 17:6 y 18:11 nombran los destinos; Perspicacia «Medos, Media» y «Samaria» lo fechan en 740 a.e.c. (estudio 3).
+  Son los destinos de todo el pueblo, no las etapas de una ruta.
+sources:
+- 2-reyes-17
+- 2-reyes-18
+- it-samaria
+- it-hosea
+- it-halah
+- it-habor
+- it-gozan
+- it-medos
+- si-3
+checked_on: '2026-10-02'
+status: verified
+stops:
+- order: 1
+  place: samaria
+  reference: 2Re 17:5, 6; 18:9-11
+  date:
+    from: -739
+    to: -739
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 740 a.e.c.
+  note: Salida. Los sitiaba Salmanasar V; el texto no dice qué rey se los llevó.
+  reason: 2Re 17:5, 6 y 18:9, 10. Sucesos caida-de-samaria y asiria-destierra-a-israel; Perspicacia «Samaria».
+  sources:
+  - 2-reyes-17
+  - 2-reyes-18
+  - it-samaria
+  checked_on: '2026-10-02'
+  status: verified
+- order: 2
+  place: hala
+  reference: 2Re 17:6; 18:11
+  date:
+    from: -739
+    to: -739
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 740 a.e.c.
+  note: Uno de los destinos. Perspicacia no sabe dónde estaba.
+  reason: 2Re 17:6 y 18:11. Suceso asiria-destierra-a-israel; Perspicacia «Halah».
+  sources:
+  - 2-reyes-17
+  - 2-reyes-18
+  - it-halah
+  checked_on: '2026-10-02'
+  status: verified
+- order: 3
+  place: habor
+  reference: 2Re 17:6; 18:11
+  date:
+    from: -739
+    to: -739
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 740 a.e.c.
+  note: Junto al río Gozán. Perspicacia da dos propuestas y no elige.
+  reason: 2Re 17:6 y 18:11. Suceso asiria-destierra-a-israel; Perspicacia «Habor».
+  sources:
+  - 2-reyes-17
+  - 2-reyes-18
+  - it-habor
+  checked_on: '2026-10-02'
+  status: verified
+- order: 4
+  place: gozan
+  reference: 2Re 17:6; 18:11
+  date:
+    from: -739
+    to: -739
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 740 a.e.c.
+  note: El río junto al que estaba Habor.
+  reason: 2Re 17:6 y 18:11. Suceso asiria-destierra-a-israel; Perspicacia «Gozán».
+  sources:
+  - 2-reyes-17
+  - 2-reyes-18
+  - it-gozan
+  checked_on: '2026-10-02'
+  status: verified
+- order: 5
+  place: media
+  reference: 2Re 17:6; 18:11
+  date:
+    from: -739
+    to: -739
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 740 a.e.c.
+  note: Llegada. Ciudades de los medos, algunas ya vasallas de Asiria.
+  reason: 2Re 17:6 y 18:11. Suceso asiria-destierra-a-israel; Perspicacia «Medos, Media».
+  sources:
+  - 2-reyes-17
+  - 2-reyes-18
+  - it-medos
+  checked_on: '2026-10-02'
+  status: verified

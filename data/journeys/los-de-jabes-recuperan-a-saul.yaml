@@ -1,0 +1,84 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: los-de-jabes-recuperan-a-saul
+name: Los de Jabés-Galaad recuperan el cuerpo de Saúl
+person: null
+group: los guerreros de Jabés-Galaad
+reference: 1Sa 31:11-13; 1Cr 10:11, 12
+date:
+  from: -1077
+  to: -1077
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 1078 a.e.c.
+companions: []
+summary: Al saber que los filisteos colgaron a Saúl y a sus hijos en la muralla de Bet-Seán, los guerreros de Jabés marchan
+  de noche, se llevan los cuerpos y los entierran en su ciudad.
+reason: 1Sa 31:11-13; Perspicacia «Jabés-galaad», párr. 3. Fecha del suceso los-de-jabes-galaad-entierran-a-saul-y-a-sus-hijos,
+  días después de la batalla de 1078 a.e.c. Es la ciudad que Saúl había salvado (1Sa 11).
+sources:
+- 1-samuel-31
+- 1-cronicas-10
+- it-jabes-galaad
+- it-bet-sean
+- it-tamarisco
+- it-jonatan
+checked_on: '2026-10-02'
+status: verified
+stops:
+- order: 1
+  place: jabes-galaad
+  reference: 1Sa 31:11, 12
+  date:
+    from: -1077
+    to: -1077
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 1078 a.e.c.
+  note: Salida. Perspicacia no sabe con seguridad dónde estaba la ciudad.
+  reason: 1Sa 31:11, 12. Suceso los-de-jabes-galaad-entierran-a-saul-y-a-sus-hijos; Perspicacia «Jabés-galaad».
+  sources:
+  - 1-samuel-31
+  - it-jabes-galaad
+  checked_on: '2026-10-02'
+  status: verified
+- order: 2
+  place: bet-sean
+  reference: 1Sa 31:12
+  date:
+    from: -1077
+    to: -1077
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 1078 a.e.c.
+  note: Tras andar toda la noche, bajan los cuerpos de la muralla.
+  reason: 1Sa 31:10, 12. Suceso los-de-jabes-galaad-entierran-a-saul-y-a-sus-hijos; Perspicacia «Bet-seán, Bet-san».
+  sources:
+  - 1-samuel-31
+  - it-bet-sean
+  checked_on: '2026-10-02'
+  status: verified
+- order: 3
+  place: jabes-galaad
+  reference: 1Sa 31:12, 13
+  date:
+    from: -1077
+    to: -1077
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 1078 a.e.c.
+  note: Llegada. Queman los cuerpos, entierran los huesos bajo el tamarisco y ayunan siete días.
+  reason: 1Sa 31:12, 13. Suceso los-de-jabes-galaad-entierran-a-saul-y-a-sus-hijos; Perspicacia «Tamarisco».
+  sources:
+  - 1-samuel-31
+  - it-jabes-galaad
+  - it-tamarisco
+  checked_on: '2026-10-02'
+  status: verified
