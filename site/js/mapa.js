@@ -1711,10 +1711,11 @@ function rellenoForma() {
   const p = rellenoConMientras(), ley = $('#leyenda');
   if (estrecha() || !ley || !ley.offsetParent) return p;
   const alto = map.getContainer().clientHeight;
-  // La leyenda va abajo a la izquierda (28 px del borde) y aún puede tener el contenido de antes: al menos su alto habitual.
+  // La leyenda va abajo a la izquierda (28 px del borde) y aún puede tener el contenido de antes: se cuenta al menos su
+  // alto habitual y el ancho que le da su fila más larga («A trazos: tramo hacia un lugar incierto…», unos 510 px).
   const arriba = alto - 28 - Math.min(Math.max(ley.offsetHeight, 210), alto - 120);
   if (arriba - p.top >= 160) return p;
-  return caber({ ...p, bottom: 40, left: Math.max(p.left, ley.offsetLeft + ley.offsetWidth + 30) });
+  return caber({ ...p, bottom: 40, left: Math.max(p.left, ley.offsetLeft + Math.max(ley.offsetWidth, 520) + 30) });
 }
 /** Zoom más lejano al que se encuadra la forma de una zona: el de su punto (una región, 5,5). Si la forma no cabe, se
     corta por arriba y por abajo en vez de quedarse diminuta. */
@@ -1773,7 +1774,8 @@ function encuadrarLugares(ids) {
   const pts = foco.flatMap((id) => forma(id) || puntosDe(id));
   // Una selección sin lugar en el mapa (la muerte de Adán, la Septuaginta) no deja el encuadre de antes: enseña su época.
   if (!pts.length) { if (E.sel) encuadrarEpoca(E.t); return; }
-  const conForma = foco.some(forma);
+  // Un lugar incierto con un candidato con forma (Benjamín, el desierto de Judá) se encuadra igual.
+  const conForma = foco.some((id) => forma(id) || candidatosVisibles(BE.L[id]).some(({ c }) => c.shape?.bbox));
   const padding = conForma ? rellenoForma() : rellenoConMientras();
   if (pts.length === 1) {   // fitBounds no deja el relleno fijado en el mapa, easeTo sí
     const [x, y] = pts[0];
