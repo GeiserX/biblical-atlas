@@ -32,6 +32,9 @@ history:
 - date: '2026-09-30'
   change: 'Juan Marcos sale de companions: solo va de Antioquía a Perga, y su vuelta a Jerusalén es ahora el viaje juan-marcos-vuelve-a-jerusalen.'
   source: hch-13
+- date: '2026-10-02'
+  change: 'Juan Marcos vuelve a companions con su tramo, de Antioquía a Perga (paradas 1 a 5): el esquema ya admite un acompañante en parte del viaje.'
+  source: hch-13
 checked_on: '2026-10-02'
 status: verified
 stops:

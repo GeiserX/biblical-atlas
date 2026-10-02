@@ -28,6 +28,10 @@ sources:
 - it-mesa
 - it-quir-hareset
 - it-eliseo
+history:
+- date: '2026-10-02'
+  change: 'Jehosafat pasa de ir en todo el viaje a ir desde el camino de Edom: Jehoram sale solo de Samaria y se le une por el camino.'
+  source: 2-reyes-3
 checked_on: '2026-10-02'
 status: verified
 stops:

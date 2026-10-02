@@ -43,6 +43,12 @@ history:
 - date: '2026-09-30'
   change: 'Áquila y Priscila salen de companions: solo van de Corinto a Éfeso, tramo que ya cuenta su viaje viajes-de-aquila-y-priscila.'
   source: hch-18
+- date: '2026-10-02'
+  change: 'Silas, Timoteo y Lucas pasan de ir en todo el viaje a ir solo en sus paradas: Pablo llega solo a Atenas y Lucas va de Troas a Filipos.'
+  source: hch-17
+- date: '2026-10-02'
+  change: 'Áquila y Priscila vuelven a companions con su tramo, de Corinto a Éfeso (paradas 16 a 18): el esquema ya admite un acompañante en parte del viaje.'
+  source: hch-18
 checked_on: '2026-10-02'
 status: verified
 stops:

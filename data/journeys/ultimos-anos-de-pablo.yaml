@@ -27,6 +27,10 @@ sources:
 - tito-1
 - 1-timoteo-1
 - it-trofimo
+history:
+- date: '2026-10-02'
+  change: 'Tito pasa a ir solo en Creta y Timoteo solo en Éfeso. Trófimo sale de companions y queda en la nota de Roma: se había quedado enfermo en Mileto.'
+  source: it-trofimo
 checked_on: '2026-10-02'
 status: verified
 stops:
