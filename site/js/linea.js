@@ -224,7 +224,7 @@ function catalogo() {
   if (D.calendario?.meses?.length) lista.push({ id: 'meses', nombre: 'Meses', icono: 'calendario', tipo: 'meses', filas: 1, orden: 0, hay: () => span() < 2.5,
     medir: medirMeses, ayuda: 'Nuestros meses y los meses hebreos, alineados. Las equivalencias son aproximadas.' });
   lanePeriodos('eras', 'Eras', 'reloj2', periodosDe('era'), 1, { clase: 'era' });
-  lanePeriodos('imperios', 'Imperio (Dn 2)', 'corona', periodosDe('potencia'), 2, { clase: 'potencia' });
+  lanePeriodos('imperios', 'Imperio (Dn\u00a02)', 'corona', periodosDe('potencia'), 2, { clase: 'potencia' });
   lista.push({ id: 'pablo', nombre: 'Viajes de Pablo', icono: 'persona', tipo: 'pablo', orden: 20, clases: ['carril-viajes'], marcas: marcasPablo });
   if (D.cartas.length) lista.push({ id: 'cartas', nombre: 'Cartas', icono: 'carta', tipo: 'cartas', orden: 21, marcas: marcasCartas });
   lista.push({ id: 'sucesos', nombre: 'Sucesos', icono: 'reloj', tipo: 'sucesos', orden: 22, marcas: marcasSucesos });
