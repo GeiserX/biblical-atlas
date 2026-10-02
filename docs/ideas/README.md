@@ -93,6 +93,7 @@ Son capturas de maquetas HTML hechas con el [kit](mockups/README.md), con datos 
 | [Fuentes y proyectos](fuentes-y-proyectos.md) | Publicaciones de nivel 1 que enlazamos, términos de uso de jw.org, proyectos parecidos, datos abiertos, geografía antigua, imágenes con licencia y herramientas. |
 | [Kit de maquetas](mockups/README.md) | Cómo crear y renderizar una maqueta: mapas base, proyección, componentes, [fuentes tipográficas](mockups/kit/fonts/) (EB Garamond, Inter y Noto Serif Hebrew, licencia OFL) y [créditos de las fotos](mockups/kit/photos/CREDITS.md). |
 | [Datos de ejemplo](mockups/data/README.md) | Los JSON comprobados que usan las maquetas y el formato de fechas (años astronómicos: 1 a.e.c. = 0). |
+| [Zonas con forma: elipses, cajas y polígonos](zonas-formas.md) | Qué zonas son hoy un círculo y cuánto dicen de más, un vocabulario cerrado de cuatro formas con su fuente, qué cambia en la validación, el dibujo, el encuadre, los clics, la regla de los 0,5 km y el lector MCP, y la primera tanda de nueve zonas convertidas. |
 
 ## Decisiones tomadas
 
