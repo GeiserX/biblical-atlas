@@ -5,7 +5,7 @@
 //    candidate (BE.puntoLugar: the centre of its zone or the favoured proposed site) with the look of an estimated
 //    position, even when the date is exact (Lot in Sodoma). David is in Mahanaim in 1050 a.e.c.; Abner in Mahanaim in
 //    1075.5 a.e.c. (2Sa 2:8-12), not in Gabaon.
-//  - Six people whose only stays are at such places keep them.
+//  - Five people whose only stays are at such places keep them.
 //  - A journey with such a stop keeps the stop as a stay, so its neighbours do not stretch over it, and its line goes
 //    to the same estimated position, dashed (the journey that ends at Tahpanhés).
 //  - A place with no candidate at all keeps the stay (card, timeline), and the map draws nothing for it: Caín at Enoc,
@@ -34,7 +34,9 @@ import { fileURLToPath } from 'node:url';
 
 const ROOT = process.env.BE_ROOT ? path.resolve(process.env.BE_ROOT) : path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
 const DESKTOP = { viewport: { width: 1440, height: 900 } };
-const SIX = ['is-boset', 'jael', 'makir-hijo-de-amiel', 'nahas-rey-de-ammon', 'sobi', 'beera-hijo-de-baal'];
+// Beerá left the list when his exile became the group journey of the three eastern tribes (destierro-de-beera): he
+// goes in its note, so he has no stay of his own.
+const FIVE = ['is-boset', 'jael', 'makir-hijo-de-amiel', 'nahas-rey-de-ammon', 'sobi'];
 
 async function loadChromium() {
   for (const name of ['playwright-core', 'playwright']) {
@@ -169,7 +171,7 @@ test('Abner is in Mahanaim in 1075.5 a.e.c. (2Sa 2:8-12), not in Gabaon', async 
   assert.ok(cerca(r.pos, r.esperado), JSON.stringify(r));
 });
 
-test('the six people whose stays are all at places without a point keep them', async () => {
+test('the five people whose stays are all at places without a point keep them', async () => {
   const r = await page.evaluate((ids) => {
     const BE = window.BE;
     return ids.map((id) => {
@@ -178,7 +180,7 @@ test('the six people whose stays are all at places without a point keep them', a
       const w = s && BE.donde(id, (s.a + s.b) / 2);
       return { id, n: L.length, lugar: s?.lugar.id, punto: s ? s.lugar.lat != null : null, donde: w?.en.lugar.id ?? null, pos: !!w?.pos };
     });
-  }, SIX);
+  }, FIVE);
   for (const x of r) {
     assert.ok(x.n > 0, `${x.id} has stays: ${JSON.stringify(x)}`);
     assert.equal(x.donde, x.lugar, `${x.id} is placed at his first stay: ${JSON.stringify(x)}`);
