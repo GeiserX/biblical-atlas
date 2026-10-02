@@ -797,6 +797,195 @@ test('1440: the focus never falls out of the strip: a person released with Esc, 
   await p.context().close();
 });
 
+/** The lane of a traveller as the timeline builds it (BE.lineaMarcas): the journeys of that person that have a stop on the
+    map, the bars (one per journey), the stops and the rest of the marks, each with its group of rows. */
+function travellerLane(p, id) {
+  return p.evaluate((id) => {
+    const BE = window.BE;
+    const ms = BE.lineaMarcas().filter((m) => m.lane === id);
+    const P = id === 'pablo' ? BE.P : BE.estancias(id).filter((s) => s.origen === 'viaje');
+    const pick = (m) => ({ id: m.id, sel: m.sel, group: m.group, t0: m.t0, t1: m.t1, row: m.rowWorld, visible: m.visible, label: m.label, repite: m.repite });
+    return {
+      journeys: [...new Set(P.map((s) => s.viaje.id))].sort(),
+      bars: ms.filter((m) => m.sel.startsWith('viaje:')).map(pick),
+      stops: ms.filter((m) => m.sel.startsWith('parada:')).map((m) => ({ ...pick(m), journey: m.sel.slice(7).split('/')[0] })),
+      rest: ms.filter((m) => !m.sel.startsWith('viaje:') && !m.sel.startsWith('parada:')).map(pick),
+    };
+  }, id);
+}
+
+/** Every lane label drawn: its name whole (no ellipsis, no clipped line) inside the label, and the label inside its lane.
+    A word is split across lines only when it is wider than the box on its own («Gobernadores» on a phone), never
+    «Je-sús» beside the age. */
+function lanesLabels(p) {
+  return p.evaluate(() => [...document.querySelectorAll('#linea-filas .carril:not([hidden]) .carril-rotulo .be-lane-label')].map((l) => {
+    const s = l.querySelector('.carril-nombre') || l.querySelector(':scope > span:not(.edad):not(.be-tier)');
+    if (!s) return null;
+    const a = l.getBoundingClientRect(), b = s.getBoundingClientRect(), c = l.closest('.carril').getBoundingClientRect();
+    const cs = getComputedStyle(s);
+    const lh = parseFloat(cs.lineHeight) || b.height;
+    const ctx = (window.__lanesCtx ||= document.createElement('canvas').getContext('2d'));
+    ctx.font = `${cs.fontStyle} ${cs.fontWeight} ${cs.fontSize} ${cs.fontFamily}`;
+    // The room the name could have: the label without its padding and its icon; a person's name, 75 % of it at most.
+    const lcs = getComputedStyle(l), icon = l.querySelector(':scope > svg');
+    const content = l.clientWidth - parseFloat(lcs.paddingLeft) - parseFloat(lcs.paddingRight);
+    const room = content - (icon?.checkVisibility() ? icon.getBoundingClientRect().width + (parseFloat(lcs.columnGap) || 0) : 0);
+    const inner = (s.classList.contains('carril-nombre') ? Math.min(room, 0.75 * content) : room) - parseFloat(cs.paddingLeft) - parseFloat(cs.paddingRight);
+    const split = [];
+    const walk = document.createTreeWalker(s, NodeFilter.SHOW_TEXT);
+    for (let n = walk.nextNode(); n; n = walk.nextNode()) {
+      if (!n.parentElement.checkVisibility()) continue;
+      for (const m of n.data.matchAll(/\S+/g)) {
+        const r = document.createRange();
+        r.setStart(n, m.index); r.setEnd(n, m.index + m[0].length);
+        const lines = new Set([...r.getClientRects()].map((x) => Math.round(x.top)));
+        if (lines.size > 1 && ctx.measureText(m[0]).width <= inner + 0.5) split.push(m[0]);
+      }
+    }
+    // Height on boxes, as in viajesWhole: with line height 1 the font's ascent and descent pass the line box.
+    // The text itself, measured on its line boxes: scrollWidth would count the transparent ::after that widens a
+    // button for a finger.
+    const all = document.createRange();
+    all.selectNodeContents(s);
+    const tr = all.getBoundingClientRect();
+    const why = [[tr.left < b.left - 0.5 || tr.right > b.right + 0.5, 'wider than its box'], [l.scrollHeight > l.clientHeight + 1, 'taller than its label'],
+      [b.top < a.top - 0.5 || b.bottom > a.bottom + 0.5 || b.right > a.right + 0.5, 'out of its label'],
+      [a.top < c.top - 0.5 || a.bottom > c.bottom + 0.5, `label ${Math.round(a.height)} px out of its lane of ${Math.round(c.height)}`],
+      [split.length, `split ${split.map((w) => `«${w}»`).join(', ')}, which fits on its own`]].filter(([x]) => x).map(([, w]) => w);
+    return { lane: l.closest('.carril').dataset.carril, name: s.textContent.trim(), lines: Math.round(b.height / lh), cut: why.join(', ') };
+  }).filter(Boolean));
+}
+
+test('every traveller lane carries one bar per journey with its stops below, like «Viajes de Pablo»', async () => {
+  for (const screen of [DESKTOP, PHONE]) {
+    const p = await open(screen, 't=30.5&v=40');
+    for (const id of ['jesus', 'david', 'abrahan']) {
+      await p.evaluate((id) => window.BE.seleccionar({ tipo: 'persona', id }, { mover: false }), id);
+      await frames(p);
+      const L = await travellerLane(p, id);
+      assert.ok(L.bars.length, `${screen.name} ${id}: no journey bar in the lane (${L.journeys.length} journeys, ${L.stops.length} stops as loose marks)`);
+      const bad = [];
+      if (JSON.stringify(L.bars.map((b) => b.sel.slice(6)).sort()) !== JSON.stringify(L.journeys)) bad.push(`bars ${L.bars.map((b) => b.sel)} for journeys ${L.journeys}`);
+      for (const b of L.bars) if (b.group !== 0) bad.push(`${b.sel} in group ${b.group}`);
+      for (const s of L.stops) {
+        const b = L.bars.find((x) => x.sel === `viaje:${s.journey}`);
+        if (s.group !== 1) bad.push(`${s.sel} in group ${s.group}`);
+        if (!b || s.t0 < b.t0 - 1e-6 || s.t1 > b.t1 + 3 / 365) bad.push(`${s.sel} outside its bar`);
+      }
+      for (const r of L.rest) if (r.group !== 2) bad.push(`${r.sel} in group ${r.group}`);
+      // In a view around its first journey: bars above stops and stops above the rest (in the rows of the world: a name
+      // that does not fit beside a screen edge moves to an edge row at the bottom, as in every lane), every name whole.
+      const first = L.bars.sort((a, b) => a.t0 - b.t0)[0];
+      await goTo(p, (first.t0 + first.t1) / 2, Math.max(2, (first.t1 - first.t0) * 3));
+      await p.evaluate((id) => window.BE.seleccionar({ tipo: 'persona', id }, { mover: false }), id);
+      await frames(p);
+      const V = await travellerLane(p, id);
+      const rows = (xs) => xs.filter((x) => x.row != null).map((x) => x.row);
+      const [rb, rs, rr] = [rows(V.bars), rows(V.stops), rows(V.rest)];
+      // Every mark of the lane has its row, so an unpacked group cannot hide behind an empty list below.
+      const noRow = [...V.bars, ...V.stops, ...V.rest].filter((x) => x.row == null).map((x) => x.sel);
+      if (noRow.length) bad.push(`${noRow.length} marks without a row of the world: ${noRow.slice(0, 4).join(', ')}`);
+      if (!rb.length || !rs.length || !rr.length) bad.push(`an empty band of rows: bars ${rb.length}, stops ${rs.length}, others ${rr.length}`);
+      if (rb.length && rs.length && Math.max(...rb) >= Math.min(...rs)) bad.push(`a bar row ${Math.max(...rb)} is not above the stop rows from ${Math.min(...rs)}`);
+      if (rs.length && rr.length && Math.max(...rs) >= Math.min(...rr)) bad.push(`a stop row ${Math.max(...rs)} is not above the other rows from ${Math.min(...rr)}`);
+      const inView = V.bars.filter((x) => x.visible).length;
+      const walk = await walkLanes(p);
+      bad.push(...walk.problems.filter((x) => x.startsWith(`${id}:`)));
+      note(`${screen.name} ${id}: ${L.journeys.length} journeys, ${L.bars.length} bars, ${L.stops.length} stops, ${L.rest.length} other marks; rows of the world: bars ${Math.min(...rb)}-${Math.max(...rb)}, stops ${Math.min(...rs)}-${Math.max(...rs)}, others from ${rr.length ? Math.min(...rr) : '-'}; ${inView} bars in view around «${first.sel}»; ${bad.length} problems`);
+      assert.ok(inView > 0, `${id}: no bar in view around its first journey`);
+      assert.deepEqual(bad, []);
+    }
+    // Clicking a bar of that lane selects the journey and leaves the lane where it was.
+    await goTo(p, 30.5, 8);
+    await p.evaluate(() => window.BE.seleccionar({ tipo: 'persona', id: 'jesus' }, { mover: false }));
+    await frames(p);
+    const bar = await p.evaluate(() => {
+      const b = [...document.querySelectorAll('#linea-filas .carril[data-carril="jesus"] .m')].find((x) => x.dataset.sel.startsWith('viaje:'));
+      if (!b) return null;
+      b.scrollIntoView({ block: 'center' });
+      const r = b.querySelector('.m-barra').getBoundingClientRect(), pr = b.closest('.carril-pista').getBoundingClientRect();
+      const x0 = Math.max(r.left, pr.left + 2), x1 = Math.min(r.right, pr.right - 2);
+      return { sel: b.dataset.sel, x: (x0 + x1) / 2, y: r.top + r.height / 2 };
+    });
+    assert.ok(bar, 'a bar of Jesús in view');
+    if (screen.hasTouch) await p.touchscreen.tap(bar.x, bar.y); else await p.mouse.click(bar.x, bar.y);
+    await frames(p);
+    const after = await p.evaluate(() => ({ sel: window.BE.selTexto(window.BE.E.sel), lane: !!document.querySelector('#linea-filas .carril[data-carril="jesus"]:not([hidden])') }));
+    note(`${screen.name} click on «${bar.sel}» in the lane of Jesús: selected ${after.sel}, lane ${after.lane ? 'still there' : 'gone'}`);
+    assert.equal(after.sel, bar.sel);
+    assert.ok(after.lane, 'the lane of Jesús stays while one of its marks is selected');
+    await p.context().close();
+    // The fixed lane keeps its id and its meaning in an old link: Pablo's eight journeys, each with its stops below.
+    const q = await open(screen, 't=50.5&v=40&carriles=pablo');
+    const P = await travellerLane(q, 'pablo');
+    note(`${screen.name} carriles=pablo: ${P.bars.length} bars, ${P.stops.length} stops`);
+    assert.equal(P.bars.length, 8);
+    assert.ok(P.bars.every((b) => b.group === 0) && P.stops.length > 0 && P.stops.every((s) => s.group === 1));
+    await q.context().close();
+  }
+});
+
+test('no lane name is cut: each goes in as many lines as it needs, pinned, with «Letra grande» and with a person', async () => {
+  for (const screen of [DESKTOP, PHONE]) {
+    const all = [];
+    const p = await open(screen, 't=-600.5&v=4125');
+    const ids = await p.evaluate(() => window.BE.lineaCarriles().map((c) => c.id).filter((id) => id !== 'meses'));
+    // The traveller with the longest name, selected: its lane goes by its name.
+    const larga = await p.evaluate(() => { const BE = window.BE; return [...new Set(BE.D.viajes.map((v) => v.persona || 'pablo'))].filter((id) => BE.PERS[id]).sort((a, b) => BE.PERS[b].nombre.length - BE.PERS[a].nombre.length)[0]; });
+    // Last, eight years around 520 a.e.c.: lanes of a single row, so the lane has to grow to its name. There «Letra
+    // grande» goes on, and then the window narrows, with the same lanes: the heights of the names are measured again
+    // although the list of lanes did not change. Jesús in 30 e.c. carries his age beside his name, which takes room from it.
+    const casos = [['milenios', null], ['persona jesus', 'jesus'], ['pinned', `t=-600.5&v=4125&carriles=${ids.join(',')}`], ['letra grande', 'grande'], [`persona ${larga}`, 'persona'],
+      ['8 años', 'cerca'], ['8 años, letra grande', 'grande'], ['8 años, letra grande, más estrecho', 'estrecho']];
+    let q = p;
+    for (const [nombre, how] of casos) {
+      if (how && how.startsWith('t=')) { q = await open(screen, how); }
+      else if (how === 'grande') { await q.evaluate(() => window.BE.ponerPreferencia('letra-grande', true)); await frames(q, 4); }
+      else if (how === 'jesus') { await goTo(q, 30.9, 8); await q.evaluate(() => window.BE.seleccionar({ tipo: 'persona', id: 'jesus' }, { mover: false })); await frames(q, 4); }
+      else if (how === 'persona') { await q.evaluate((id) => window.BE.seleccionar({ tipo: 'persona', id }, { mover: false }), larga); await frames(q, 4); }
+      else if (how === 'cerca') { await q.evaluate(() => window.BE.ponerPreferencia('letra-grande', false)); await goTo(q, -519.5, 8); await frames(q, 4); }
+      else if (how === 'estrecho') { await q.setViewportSize({ width: screen.viewport.width - 70, height: screen.viewport.height }); await frames(q, 4); }
+      const ls = await lanesLabels(q);
+      const cut = ls.filter((l) => l.cut);
+      note(`${screen.name} lane names (${nombre}): ${ls.length} labels, ${ls.filter((l) => l.lines > 1).map((l) => `«${l.name}» ${l.lines}`).join(', ') || 'all in one line'}; ${cut.length} cut${cut.length ? `: ${cut.map((l) => `«${l.name}» (${l.cut})`).join(', ')}` : ''}`);
+      all.push(...cut.map((l) => `${nombre}: «${l.name}» (${l.lane}): ${l.cut}`));
+      assert.ok(ls.length >= (nombre.startsWith('8 años') ? 3 : 8), `${nombre}: only ${ls.length} labels`);
+    }
+    await p.context().close();
+    if (q !== p) await q.context().close();
+    assert.deepEqual(all, []);
+  }
+});
+
+test('a journey that repeated every year says «↻ cada año» after its name', async () => {
+  for (const screen of [DESKTOP, PHONE]) {
+    const p = await open(screen, 't=50.5&v=40');
+    const found = [];
+    for (const [persona, viaje] of [['elcana-hijo-de-jeroham', 'elcana-sube-a-silo'], ['samuel', 'recorrido-de-samuel'], ['jose-esposo-de-maria', 'pascua-de-jesus-a-los-12']]) {
+      await p.evaluate((id) => window.BE.seleccionar({ tipo: 'persona', id }, { mover: false }), persona);
+      await frames(p);
+      const L = await travellerLane(p, persona);
+      const b = L.bars.find((x) => x.sel === `viaje:${viaje}`);
+      assert.ok(b, `${viaje}: a bar in the lane of ${persona}`);
+      await goTo(p, (b.t0 + b.t1) / 2, 8);
+      await p.evaluate((id) => window.BE.seleccionar({ tipo: 'persona', id }, { mover: false }), persona);
+      await frames(p);
+      const drawn = await p.evaluate((sel) => { const m = document.querySelector(`#linea-filas .m[data-sel="${sel}"] .m-nombre .t`); return m ? m.textContent : null; }, `viaje:${viaje}`);
+      const others = L.bars.filter((x) => x.sel !== `viaje:${viaje}` && x.repite).map((x) => x.sel);
+      note(`${screen.name} ${viaje}: label «${b.label}», drawn «${drawn}»`);
+      found.push(viaje);
+      assert.ok(b.repite && b.label.endsWith('↻ cada año'), b.label);
+      assert.equal(drawn, b.label);
+      assert.deepEqual(others, [], `${persona}: only the yearly journey carries the mark`);
+    }
+    // A journey that happened once carries no mark.
+    const pablo = await travellerLane(p, 'pablo');
+    assert.ok(pablo.bars.length && pablo.bars.every((x) => !x.repite && !/cada año/.test(x.label)));
+    assert.equal(found.length, 3);
+    await p.context().close();
+  }
+});
+
 test('no console error, no page error and no failed request in the whole run', () => {
   assert.deepEqual(errors, []);
   assert.deepEqual(failed, []);

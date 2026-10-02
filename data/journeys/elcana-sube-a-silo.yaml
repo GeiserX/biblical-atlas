@@ -11,13 +11,14 @@ date:
   type: anchored
   chronology: tnm
   text: c. 1180 a.e.c.
+repeats: yearly
 companions:
 - ana-madre-de-samuel
 - penina
 summary: Elcaná sube cada año de Ramá a Siló con sus esposas para adorar. En uno de esos viajes, Ana pide un hijo y lo promete
   a Jehová; de vuelta en Ramá nace Samuel. El viaje se repite cada año.
-reason: 1 Samuel 1:1-20 da las paradas. La tabla de los libros hace empezar el relato de 1 Samuel hacia 1180 a.e.c., y los
-  sucesos del voto y del nacimiento llevan esa fecha.
+reason: 1 Samuel 1:1-20 da las paradas, y 1Sa 1:3 y 7 dicen que la subida se hacía cada año. La tabla de los libros sitúa
+  el relato hacia 1180 a.e.c., fecha del voto y del nacimiento.
 sources:
 - 1-samuel-1
 - tnm-tabla
@@ -25,7 +26,7 @@ sources:
 - it-ana
 - it-eli
 - it-rama
-checked_on: '2026-09-30'
+checked_on: '2026-10-02'
 status: verified
 stops:
 - order: 1

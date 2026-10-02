@@ -78,6 +78,10 @@
 .leyenda .be-card__eyebrow { margin-bottom: 2px; }
 .leyenda-rastro { width: 26px; border-top: 2px solid var(--ink-3); opacity: .5; }
 .leyenda-viajero { width: 26px; border-top: 3px solid var(--viajero, var(--ink-3)); }
+/* «↻ cada año» sobre la ruta de un viaje que se repetía cada año, en el color de la ruta, y su fila de la leyenda. No se
+   pulsa: la ruta de debajo sigue eligiendo el viaje. */
+.marca-repite { padding: 1px 7px; border-radius: var(--r-pill); background: var(--surface); border: 1px solid var(--viajero, var(--ink-3)); color: var(--ink); font-size: var(--fs-xs); font-weight: 700; white-space: nowrap; pointer-events: none; box-shadow: var(--shadow-1); z-index: 3; }
+.leyenda-repite { width: 26px; text-align: center; font-weight: 700; color: var(--ink-2); }
 .nota-carta { margin: 10px 0 0; font-size: var(--fs-sm); }
 .be-legend__line--pendiente { border-top: 2px dotted var(--gold); opacity: .85; }
 .leyenda-estimada { width: 18px; height: 18px; margin: 0 4px; border-radius: 50%; border: 2px dashed var(--accent); background: color-mix(in srgb, var(--accent) 8%, transparent); }
