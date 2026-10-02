@@ -242,6 +242,8 @@ class Homonimos(unittest.TestCase):
         out = []
         validate.validar_persona({"distinct_from": ["uz-b"], "disambiguation": "Uz hijo de Aram."}, "x", out.append)
         self.assertEqual(out, [])
+
+
 def errores_repite(viaje):
     out = []
     validate.validar_repite(viaje, "data/journeys/x.yaml", out.append)
@@ -274,6 +276,88 @@ class Repite(unittest.TestCase):
         errores, _ = validate.validar(datos)
         self.assertEqual([e for e in errores if "repeats debe" in e],
                          [f"{viaje['_fichero']}: repeats debe ser uno de ['yearly'], no 'monthly'"])
+
+
+def errores_viaje(**campos):
+    v = {"person": "pablo", "companions": [], "stops": [{"order": i} for i in range(1, 6)]}
+    v.update(campos)
+    out = []
+    validate.validar_viaje(v, "viaje", out.append)
+    return out
+
+
+class QuienViaja(unittest.TestCase):
+    """Un viaje lo hace una persona con ficha o un grupo sin ficha (docs/ideas/viajes-modelo.md, pregunta 1)."""
+
+    def test_persona_vale(self):
+        self.assertEqual(errores_viaje(), [])
+
+    def test_grupo_con_persona_nula_vale(self):
+        self.assertEqual(errores_viaje(person=None, group="el Arca del pacto"), [])
+
+    def test_sin_persona_ni_grupo_es_error(self):
+        self.assertTrue(any("falta quién viaja" in e for e in errores_viaje(person=None)))
+
+    def test_persona_y_grupo_a_la_vez_es_error(self):
+        self.assertTrue(any("a la vez" in e for e in errores_viaje(group="los 600 benjaminitas")))
+
+    def test_grupo_de_mas_de_40_palabras_es_error(self):
+        out = []
+        validate.textos_largos({"person": None, "group": " ".join(["grupo"] * 41)}, "viaje", out.append)
+        self.assertTrue(any("viaje.group: 41 palabras" in e for e in out), out)
+
+    def test_grupo_vacio_es_error(self):
+        self.assertTrue(any("group debe ser un texto" in e for e in errores_viaje(person=None, group=" ")))
+
+    def test_el_viaje_de_grupo_del_repositorio_pasa(self):
+        v = validate._read(HERE.parent / "data" / "journeys" / "el-arca-en-filistea.yaml")
+        self.assertIsNone(v["person"])
+        out = []
+        validate.validar_viaje(v, "el-arca-en-filistea", out.append)
+        self.assertEqual(out, [])
+
+
+class Acompanantes(unittest.TestCase):
+    """Cada acompañante es un id (todo el viaje) o {person, from, to} (pregunta 3)."""
+
+    def test_id_y_tramos_valen(self):
+        cs = ["bernabe", {"person": "silas", "from": 1, "to": 2}, {"person": "silas", "from": 4, "to": 4}]
+        self.assertEqual(errores_viaje(companions=cs), [])
+
+    def test_tramo_fuera_del_viaje_es_error(self):
+        for a, b in ((0, 2), (3, 6), (4, 3)):
+            with self.subTest(desde=a, hasta=b):
+                cs = [{"person": "silas", "from": a, "to": b}]
+                self.assertTrue(any("1 <= from <= to <= 5" in e for e in errores_viaje(companions=cs)))
+
+    def test_tramos_que_se_tocan_son_error(self):
+        cs = [{"person": "silas", "from": 1, "to": 3}, {"person": "silas", "from": 3, "to": 4}]
+        self.assertTrue(any("ya va en las paradas 1 a 3" in e for e in errores_viaje(companions=cs)))
+        self.assertTrue(any("ya va" in e for e in errores_viaje(companions=["silas", {"person": "silas", "from": 2, "to": 2}])))
+
+    def test_tramos_pegados_son_un_solo_tramo(self):
+        cs = [{"person": "silas", "from": 1, "to": 2}, {"person": "silas", "from": 3, "to": 4}]
+        self.assertTrue(any("ya va en las paradas 1 a 2" in e for e in errores_viaje(companions=cs)))
+        cs = [{"person": "silas", "from": 4, "to": 4}, {"person": "silas", "from": 2, "to": 3}]
+        self.assertTrue(any("ya va en las paradas 4 a 4" in e for e in errores_viaje(companions=cs)))
+
+    def test_paradas_que_no_son_numeros_son_error(self):
+        for a, b in (("2", 3), (2, "3"), (1.5, 3), (True, 3)):
+            with self.subTest(desde=a, hasta=b):
+                cs = [{"person": "silas", "from": a, "to": b}]
+                self.assertTrue(any("1 <= from <= to <= 5" in e for e in errores_viaje(companions=cs)))
+
+    def test_todo_el_viaje_se_escribe_con_el_id(self):
+        cs = [{"person": "silas", "from": 1, "to": 5}]
+        self.assertTrue(any("se escribe solo su id" in e for e in errores_viaje(companions=cs)))
+
+    def test_claves_de_mas_o_sin_persona_son_error(self):
+        for c in ({"person": "silas", "from": 1, "to": 2, "note": "x"}, {"from": 1, "to": 2}, 7):
+            with self.subTest(c=c):
+                self.assertTrue(errores_viaje(companions=[c]))
+
+    def test_quien_viaja_no_se_acompana(self):
+        self.assertTrue(any("es quien viaja" in e for e in errores_viaje(companions=["pablo"])))
 
 
 def avisos_punto(*lugares):

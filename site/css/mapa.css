@@ -167,6 +167,8 @@ ol.paradas li:first-child .be-row { border-top: 0; }
 
 /* La leyenda sigue el color del viaje activo también en el tramo sin trazado conocido. */
 #leyenda .be-legend__line--approx { border-color: var(--accent); }
+/* El tramo hacia una parada deducida (pendiente) va de puntos, como en el mapa. */
+.be-legend__line--deducida { border-top-style: dotted; }
 
 /* ---------- app-mapa v1: extensiones, capas, inciertos, hallazgos ---------- */
 .app.sin-relieve .mapa { background: var(--paper); }

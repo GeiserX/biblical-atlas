@@ -169,7 +169,7 @@ test('every event of Acts lived at a stop of a journey is placed while the trave
   const r = await page.evaluate(() => {
     const BE = window.BE;
     const years = (f) => (f && (f.desde ?? f.hasta) != null ? [f.desde ?? f.hasta, (f.hasta ?? f.desde) + 1] : null);
-    const travellers = new Set(BE.D.viajes.map((v) => v.persona || 'pablo'));
+    const travellers = new Set(BE.D.viajes.map(BE.duenoViaje));
     const checked = [], wrong = [];
     for (const e of BE.D.eventos) {
       if (!(e.pasajes || []).some((p) => /^\s*Hch\b/.test(p))) continue;
@@ -196,7 +196,7 @@ test('every event of Acts lived at a stop of a journey is placed while the trave
       };
       const ev = verses((e.pasajes || []).join('; '));
       const tells = (s) => who === 'pablo' || verses(s.referencia).some(([l, a, b]) => ev.some(([m, c, d]) => l === m && a <= d && c <= b));
-      const stops = BE.D.viajes.filter((v) => (v.persona || 'pablo') === who).flatMap((v) => v.paradas);
+      const stops = BE.D.viajes.filter((v) => BE.duenoViaje(v) === who).flatMap((v) => v.paradas);
       if (!stops.some((s) => (e.lugares || []).includes(s.lugar) && BE.L[s.lugar]?.lat != null && years(s.fecha)
         && years(s.fecha)[0] < te[1] && te[0] < years(s.fecha)[1] && tells(s))) continue;
       checked.push(e.id);
@@ -280,7 +280,7 @@ test('nobody is placed after his death except by an event that names him, and Je
 test('the events of each series come in the order of the account, and «tras» is read on the placed window of its target', async () => {
   const r = await page.evaluate(() => {
     const BE = window.BE;
-    const travellers = new Set(BE.D.viajes.map((v) => v.persona || 'pablo'));
+    const travellers = new Set(BE.D.viajes.map(BE.duenoViaje));
     const share = (a, b) => (a.personas || []).some((p) => (b.personas || []).includes(p));
     const onJourney = (e) => (e.personas || []).some((p) => travellers.has(p));
     const series = new Map();

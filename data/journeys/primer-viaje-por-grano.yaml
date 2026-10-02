@@ -20,6 +20,7 @@ companions:
 - aser-hijo-de-jacob
 - isacar-hijo-de-jacob
 - zabulon-hijo-de-jacob
+- {person: simeon-hijo-de-jacob, from: 1, to: 2}
 summary: Con el hambre, Jacob manda a diez de sus hijos a comprar grano en Egipto y se queda con Benjamín. José los reconoce,
   los trata como espías y retiene a Simeón; de vuelta, hallan el dinero en los costales.
 reason: Gé 42 da la ida, la estancia y la vuelta; Rubén, el primogénito, habla por todos (Gé 42:22, 37). Perspicacia «Jacob»
@@ -32,7 +33,7 @@ sources:
 - it-ruben
 - it-simeon
 - si-3
-checked_on: '2026-09-30'
+checked_on: '2026-10-02'
 status: verified
 stops:
 - order: 1

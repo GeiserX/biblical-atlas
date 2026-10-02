@@ -98,6 +98,8 @@ Para comprobar la alineación, Corinto (37,9058 N, 22,8787 E) debe caer en la co
 - El mapa dibuja un solo viaje de Pablo, el que recorre en esa fecha, cada uno en su color: lo hecho en firme, lo que falta punteado y la región sin ruta conocida a trazos. Sus otros viajes no se dibujan. Sus ocho viajes van seguidos, de 34 a 65: mientras se queda en la última parada de uno, como Antioquía o Roma, se ve ese viaje entero. Antes de 34 y después de 65 no se dibuja nada de Pablo, igual que con cualquier otra persona fuera de las fechas de sus viajes.
 - Un viaje seleccionado se ve solo, entero y en su color, aunque la fecha caiga fuera de él. Seleccionar a una persona no añade rutas: se ve lo mismo que sin nada elegido, el viaje que recorre en esa fecha. Todos sus viajes están en su carril de la línea de tiempo.
 - Un viaje con `repeats: yearly` lleva «↻ cada año» sobre su ruta, y la leyenda lo nombra en la fila «Se repite cada año».
+- El viaje de cualquier otra persona, o de un grupo como el Arca, se dibuja solo mientras duran sus paradas, en la ventana que les da la línea de tiempo, y un año más en gris. No se dibuja toda la fecha del viaje.
+- El tramo que llega a una parada pendiente de verificar o sale de ella va de puntos, y la leyenda lo dice. Casi todas son deducciones; unas pocas son lugares del texto con la fecha por confirmar.
 
 ## Dirección de la página
 
@@ -222,6 +224,8 @@ BE.tipo('lugar', {
 |---|---|
 | `BE.donde(persona, t)` | Para `'pablo'`, lo mismo que `BE.dondeEsta(t)`. Para otra persona, sale de sus viajes, de los sucesos que la nombran con lugar y de sus relaciones fechadas `vivio_en`, `nacio_en` y `murio_en`. `null` si los datos no la sitúan |
 | `BE.ventana(persona, fecha, lugares)` | La parte de la fecha en que los datos ponen a la persona en uno de esos lugares |
+| `BE.duenoViaje(v)`, `BE.nombreDueno(v)` | Quién hace un viaje: el id de su persona, `grupo:<id del viaje>` si es de un grupo sin ficha, o `'pablo'`; y su nombre |
+| `BE.acompanantes(v, orden)` | Los ids de los acompañantes de un viaje; con `orden`, solo los que van en esa parada |
 | `BE.mapa.resaltar(ids)` | Resalta esos lugares en el mapa por encima de la selección. `resaltar(null)` vuelve a la selección |
 | `BE.mapa.encuadrar(ids)` | Encuadra el mapa en esos lugares, descontando la hoja inferior en el móvil |
 | `BE.pintores` | Lista de funciones que el bucle de pintado llama en cada fotograma, después de las suyas, con las marcas de lo que cambió (`{ mapa, etiquetas, panel, linea, cursor }`) |

@@ -172,5 +172,58 @@ class ChapterUrls(unittest.TestCase):
         self.assertIsNone(self.cap("https://wol.jw.org/es/wol/d/r4/lp-s/1200000129"))
 
 
+class JourneysForTheSite(unittest.TestCase):
+    """A group journey and a companion's range of stops reach data.json with the names the site reads."""
+
+    def test_group_and_companion_ranges(self):
+        leg = build.Legacy(build.load_map())
+        v = {"person": None, "group": "el Arca del pacto",
+             "companions": ["silas", {"person": "lucas", "from": 7, "to": 10}]}
+        out = {}
+        for k, x in v.items():
+            es, hijo = leg.key(k, leg.roots["journeys"], "journeys")
+            out[es] = leg.translate(x, hijo, f"journeys.{k}")
+        self.assertEqual(out, {"persona": None, "grupo": "el Arca del pacto",
+                               "companeros": ["silas", {"persona": "lucas", "desde": 7, "hasta": 10}]})
+        self.assertEqual(leg.errors, [])
+
+    def test_companions_stay_a_list_of_ids(self):
+        """data.json keeps `companeros` as ids, the shape the atlas MCP server decodes; the ranges go apart."""
+        v = {"id": "x", "companeros": ["silas", {"persona": "lucas", "desde": 7, "hasta": 10},
+                                       {"persona": "lucas", "desde": 12, "hasta": 12}], "resumen": "y"}
+        self.assertEqual(build.tramos_aparte(v), {
+            "id": "x", "companeros": ["silas", "lucas"],
+            "tramos_companeros": [{"persona": "lucas", "desde": 7, "hasta": 10}, {"persona": "lucas", "desde": 12, "hasta": 12}],
+            "resumen": "y"})
+        self.assertIs(build.tramos_aparte({"id": "z", "companeros": ["silas"]})["companeros"][0], "silas")
+
+    def test_every_journey_of_data_has_companions_as_ids(self):
+        malos = [v["id"] for v in self.salida()["viajes"] if not all(isinstance(c, str) for c in v.get("companeros") or [])]
+        self.assertEqual(malos, [])
+        self.assertTrue(any(v.get("tramos_companeros") for v in self.salida()["viajes"]), "the ranges reach data.json")
+
+    def test_sqlite_keeps_the_group_and_the_ranges(self):
+        import sqlite3
+        with tempfile.TemporaryDirectory() as d:
+            ruta = Path(d) / "atlas.sqlite"
+            build.escribir_sqlite(self.salida(), ruta)
+            con = sqlite3.connect(ruta)
+            fila = con.execute("SELECT persona_id, grupo FROM viajes WHERE id = 'el-arca-en-filistea'").fetchone()
+            tramos = con.execute("SELECT companeros, tramos_companeros FROM viajes WHERE id = 'segundo-viaje'").fetchone()
+            con.close()
+        self.assertEqual(fila, (None, "el Arca del pacto"))
+        self.assertIn('"silas"', tramos[0])
+        self.assertIn('"desde": 16', tramos[1])
+
+    _salida = None
+
+    @classmethod
+    def salida(cls):
+        if cls._salida is None:
+            datos, _ = build.cargar(HERE.parent / "data")
+            cls._salida = build.componer(datos, "2026-10-02")[0]
+        return cls._salida
+
+
 if __name__ == "__main__":
     unittest.main(verbosity=1)

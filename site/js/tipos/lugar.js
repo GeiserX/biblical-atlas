@@ -27,10 +27,10 @@ function calcularHechos(id) {
   for (const p of D.periodos || []) if ((p.lugares || []).includes(id)) add({ sel: `periodo:${p.id}`, titulo: p.nombre, tr: tramo(p.fecha), fecha: p.fecha, fuentes: p.fuentes, estado: p.estado, tipo: 'periodo' });
   for (const s of BE.P) if (s.lugar.id === id) add({ sel: `parada:${s.key}`, titulo: `Pablo · ${s.viaje.nombre}`, tr: [s.a, Math.max(s.b, s.a + 0.05)], fecha: s.p.fecha, fuentes: s.p.fuentes, estado: s.p.estado, tipo: 'parada', pasajes: [s.p.referencia] });
   for (const v of D.viajes) {
-    if ((v.persona || 'pablo') === 'pablo') continue;
+    if (BE.duenoViaje(v) === 'pablo') continue;
     for (const p of v.paradas || []) if (p.lugar === id) {
       const key = `${v.id}/${p.orden}`;
-      add({ sel: BE.existe('parada', key) ? `parada:${key}` : `viaje:${v.id}`, titulo: `${persona(v.persona)} · ${v.nombre}`, tr: tramo(p.fecha) || tramo(v.fecha), fecha: p.fecha || v.fecha, fuentes: p.fuentes || v.fuentes, estado: p.estado || v.estado, tipo: 'parada', pasajes: [p.referencia] });
+      add({ sel: BE.existe('parada', key) ? `parada:${key}` : `viaje:${v.id}`, titulo: `${v.persona ? persona(v.persona) : BE.nombreDueno(v, true)} · ${v.nombre}`, tr: tramo(p.fecha) || tramo(v.fecha), fecha: p.fecha || v.fecha, fuentes: p.fuentes || v.fuentes, estado: p.estado || v.estado, tipo: 'parada', pasajes: [p.referencia] });
     }
   }
   for (const c of D.cartas) {

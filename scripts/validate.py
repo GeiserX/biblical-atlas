@@ -49,7 +49,7 @@ ESTADOS_CANDIDATO = {"certain", "favored_level_1", "tradition", "alternative", "
 TIPOS_ENLACE = {"perspicacia", "bible", "video", "external"}
 TIPOS_PERIODO = {"emperor", "governor", "power", "king", "era", "high_priest"}
 CAMPOS_TEXTO = {"summary", "reason", "note", "change", "text", "explanation", "disambiguation", "unknown",
-                "weather", "harvest", "kept_at", "caption", "inverse_caption"}
+                "weather", "harvest", "kept_at", "caption", "inverse_caption", "group"}
 IDENTIFICACIONES = {"certain", "uncertain"}
 # Un año con su era: «537 a.e.c.», «c. 49-52 e.c.», «33 E.C.».
 RE_ANIO = re.compile(r"(?<![\d-])(\d{1,4})(?:\s*[-–]\s*(\d{1,4}))?\s*(a\.\s*e\.\s*c\.|e\.\s*c\.)", re.I)
@@ -827,6 +827,53 @@ def validar_lugar(o, donde, err, fuentes):
         err(f"{donde}: sin enlace a Perspicacia debe llevar status: pending")
 
 
+def companion_ids(v):
+    """Ids de persona de `companions`, en las dos formas: un id (todo el viaje) o {person, from, to}."""
+    return [c.get("person") if isinstance(c, dict) else c for c in v.get("companions") or []]
+
+
+def validar_viaje(v, donde, err):
+    """Quién viaja y quién acompaña (README.md, «Viajes»). Viaja una persona con ficha (`person`) o un grupo sin ficha
+    (`group`, un texto, con `person: null`). Cada acompañante es un id, si va en todo el viaje, o {person, from, to}
+    con la parada donde se une y la parada donde se separa. Una persona puede ir en dos tramos que no se tocan."""
+    persona, grupo = v.get("person"), v.get("group")
+    if grupo is not None and (not isinstance(grupo, str) or not grupo.strip()):
+        err(f"{donde}: group debe ser un texto: quién viaja sin ficha de persona («el Arca del pacto»)")
+    if persona is None and grupo is None:
+        err(f"{donde}: falta quién viaja: person (id de persona) o group (texto, con person: null)")
+    elif persona is not None and grupo is not None:
+        err(f"{donde}: person y group a la vez; un viaje de grupo lleva person: null")
+    comps = v.get("companions")
+    if not isinstance(comps, list):
+        err(f"{donde}: companions debe ser una lista ([] si nadie acompaña)")
+        return
+    n = len(v.get("stops") or [])
+    tramos = {}
+    for i, c in enumerate(comps):
+        if isinstance(c, str):
+            pid, a, b = c, 1, n
+        elif isinstance(c, dict):
+            pid, a, b = c.get("person"), c.get("from"), c.get("to")
+            if set(c) - {"person", "from", "to"} or not isinstance(pid, str):
+                err(f"{donde}: companions[{i}] lleva solo person, from y to")
+                continue
+            if not _entero(a) or not _entero(b) or not 1 <= a <= b <= n:
+                err(f"{donde}: companions[{i}] ({pid}): from y to son paradas del viaje, 1 <= from <= to <= {n}")
+                continue
+            if (a, b) == (1, n):
+                err(f"{donde}: companions[{i}] ({pid}) va en todo el viaje: se escribe solo su id")
+        else:
+            err(f"{donde}: companions[{i}] debe ser un id de persona o {{person, from, to}}")
+            continue
+        if pid == persona:
+            err(f"{donde}: companions[{i}]: {pid} es quien viaja")
+        # Dos tramos pegados (1-2 y 3-4) son uno solo (1-4): tampoco se tocan.
+        for x, y in tramos.get(pid, []):
+            if a <= y + 1 and x <= b + 1:
+                err(f"{donde}: companions[{i}]: {pid} ya va en las paradas {x} a {y}; un tramo pegado se une a ese")
+        tramos.setdefault(pid, []).append((a, b))
+
+
 def validar_persona(o, donde, err):
     if "disambiguation" in o and not str(o.get("disambiguation") or "").strip():
         err(f"{donde}: disambiguation vacía")
@@ -1409,8 +1456,9 @@ def integrity(datos):
             for pid in o.get("distinct_from") or []:
                 ref(f, "distinct_from", pid, "people")
             if tipo == "journeys":
-                ref(f, "person", o.get("person"), "people")
-                for p in o.get("companions") or []:
+                if o.get("person") is not None:
+                    ref(f, "person", o.get("person"), "people")
+                for p in companion_ids(o):
                     ref(f, "companions", p, "people")
                 for p in o.get("stops") or []:
                     ref(f, f"stop {p.get('order')}: place", p.get("place"), "places")
@@ -1521,6 +1569,7 @@ def validar(datos):
             if tipo == "people":
                 validar_persona(limpio_, donde, err)
             if tipo == "journeys":
+                validar_viaje(limpio_, donde, err)
                 validar_repite(limpio_, donde, err)
                 ordenes = []
                 for i, p in enumerate(limpio_.get("stops") or []):

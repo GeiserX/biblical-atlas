@@ -73,14 +73,20 @@ function libro(s) { return LIBRO_POR_FORMA.get(norm(s).replace(/[\s.]+/g, '')) |
 /** "Hch 15:1-3; Gál 2:1-10" → [{ libro, cap, capFin, verso, versoFin, texto }]. verso es el primero (null si la cita
     es de capítulos enteros) y versoFin el último, que es del capítulo capFin: «Hch 21:40–22:21» da verso 40, versoFin 21.
     Una lista en el mismo capítulo llega hasta su último versículo: «Mt 26:30, 36-56» da verso 30, versoFin 56.
-    Un libro de un solo capítulo se cita por versículo: «Flm 23» es el capítulo 1, versículo 23. */
+    Un libro de un solo capítulo se cita por versículo: «Flm 23» es el capítulo 1, versículo 23. Un trozo sin libro es
+    del libro del trozo anterior, como escribe la TNM: «1Sa 4:10, 11; 5:1–7:2» da también 1Sa 5:1–7:2. */
 function citas(s) {
   const out = [];
+  let previo = null;
   for (const parte of String(s || '').split(/\s*;\s*/)) {
-    const m = parte.match(/^\s*([123]?\s?[A-Za-zÁÉÍÓÚáéíóúÑñ]+)\.?\s+(\d+)(?::(\d+))?(?:\s*[-–]\s*(\d+)(?::(\d+))?)?/);
-    if (!m) continue;
-    const lib = libro(m[1]);
-    if (!lib) continue;
+    let m = parte.match(/^\s*([123]?\s?[A-Za-zÁÉÍÓÚáéíóúÑñ]+)\.?\s+(\d+)(?::(\d+))?(?:\s*[-–]\s*(\d+)(?::(\d+))?)?/);
+    let lib = m && libro(m[1]), texto = parte.trim();
+    if (!m && previo) {
+      m = parte.match(/^\s*()(\d+)(?::(\d+))?(?:\s*[-–]\s*(\d+)(?::(\d+))?)?/);
+      if (m) { lib = previo; texto = `${lib.abr} ${texto}`; }
+    }
+    if (!m || !lib) continue;
+    previo = lib;
     let cap = +m[2];
     let capFin = cap;
     if (m[5]) capFin = +m[4]; else if (!m[3] && m[4]) capFin = +m[4];
@@ -89,7 +95,7 @@ function citas(s) {
     if (!m[3] && lib.capitulos === 1) { verso = cap; versoFin = capFin; cap = 1; capFin = 1; }
     const lista = verso && capFin === cap && parte.slice(m[0].length).match(/^(?:\s*,\s*\d+(?:\s*[-–]\s*\d+)?)+/);
     if (lista) versoFin = Math.max(versoFin, ...lista[0].match(/\d+/g).map(Number));
-    out.push({ libro: lib, cap, capFin, verso, versoFin, texto: parte.trim() });
+    out.push({ libro: lib, cap, capFin, verso, versoFin, texto });
   }
   return out;
 }
@@ -660,10 +666,44 @@ async function iniciar() {
   };
 }
 
+// ---------------------------------------------------------------------------
+// Viajes: quién los hace y quién acompaña
+// ---------------------------------------------------------------------------
+// Quién hace cada viaje. Un viaje sin `persona` es de Pablo, como dice el esquema de los datos. Un viaje
+// de grupo (`persona: null` y `grupo`, como el Arca por Filistea) es su propio dueño, `grupo:<id del viaje>`: sus
+// paradas se calculan como las de una persona, pero no tiene ficha, marcador ni carril. Viven aquí, y no en
+// trayectorias.js, porque el mapa y las fichas las usan y base.js se carga antes que todos.
+const duenoViaje = (v) => v.persona || (v.grupo ? `grupo:${v.id}` : 'pablo');
+const esGrupo = (dueno) => String(dueno).startsWith('grupo:');
+/** Nombre de quien hace el viaje: la persona, el texto del grupo («el Arca del pacto») o Pablo. Con `mayuscula`, el
+    del grupo empieza en mayúscula, para un rótulo. */
+function nombreDueno(v, mayuscula = false) {
+  if (v.persona) return BE.PERS[v.persona]?.nombre || v.persona;
+  if (v.grupo) return mayuscula ? v.grupo[0].toUpperCase() + v.grupo.slice(1) : v.grupo;
+  return 'Pablo';
+}
+/** Nombre de un dueño de viajes (una persona o `grupo:<id>`), para la leyenda del mapa. */
+function nombreDeDueno(dueno) {
+  if (!esGrupo(dueno)) return BE.PERS[dueno]?.nombre || dueno;
+  const v = (BE.D.viajes || []).find((x) => x.id === dueno.slice(6));
+  return v ? nombreDueno(v, true) : dueno;
+}
+/** Acompañantes de un viaje: los ids de `companeros`. Quien tiene tramos en `tramos_companeros` ({ persona, desde,
+    hasta }) va solo de la parada desde a la parada hasta; los demás, en todo el viaje. Con `orden`, solo los que van
+    en esa parada. Ids sin repetir, en el orden de los datos. */
+function acompanantes(v, orden = null) {
+  const tramos = v?.tramos_companeros || [];
+  return [...new Set(v?.companeros || [])].filter((id) => {
+    if (orden == null) return true;
+    const ts = tramos.filter((c) => c.persona === id);
+    return !ts.length || ts.some((c) => c.desde <= orden && orden <= c.hasta);
+  });
+}
+
 Object.assign(BE, {
   // utilidades
   MESES, ES_FILE, T_INICIAL, VISTA_INICIAL, EXTERNO, ponerLibros, norm, esc, $, clamp, fmtAnio, fmtCursor, fmtDia, tramo, fechaCorta,
-  libro, citas, mercY, latDeY, interpolar,
+  libro, citas, mercY, latDeY, interpolar, duenoViaje, esGrupo, nombreDueno, nombreDeDueno, acompanantes,
   // estado, registro y selección
   E, tipo, tipos: TIPOS, existe, parseSel, selTexto, implicados, momentoDe, nombreSel, seleccionar, limpiarSeleccion,
   // cursor, reproducción, dirección y pintado

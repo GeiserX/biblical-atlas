@@ -3,7 +3,10 @@
 // own colour and the legend names the one in course. A journey selected outside its date is drawn whole and in its
 // colour. The «Viajes» layer switched off draws no journey. Other travellers keep their rule: Jesús in 32 and David in
 // 1077 a.e.c. still draw their own journeys. Selecting a person adds no route (Pablo in 44: one of his, not eight), and a
-// journey that repeated every year carries «↻ cada año» on its route and a legend row.
+// journey that repeated every year carries «↻ cada año» on its route and a legend row. The four choices of
+// docs/ideas/viajes-modelo.md: a group journey (the Ark) is its own and not Pablo's (1B); a segment to a deduced stop is
+// dotted (2D); a companion shows only on the stops of his range (3C); another traveller's journey is drawn only while
+// its stops last, plus a grey year (4B).
 //
 // Run from the repository root, one browser at a time:
 //   node --test --test-concurrency=1 tests/site/map-journeys.test.mjs
@@ -89,7 +92,7 @@ function drawnAt(page, t, sel = null) {
     await new Promise((r) => requestAnimationFrame(() => requestAnimationFrame(r)));
     const read = async (id) => (await map.getSource(id).getData()).features.map((f) => f.properties);
     const [hecho, falta, rastro] = await Promise.all(['be-hecho', 'be-falta', 'be-rastro'].map(read));
-    const quien = (id) => BE.D.viajes.find((v) => v.id === id)?.persona || 'pablo';
+    const quien = (id) => BE.duenoViaje(BE.D.viajes.find((v) => v.id === id));
     const ids = (fs) => [...new Set(fs.map((f) => f.viaje))].sort();
     return {
       V: BE.viajeActual(BE.dondeEsta(t))?.id ?? null,
@@ -180,7 +183,7 @@ test('with the «Viajes» layer off no journey is drawn, and other travellers st
 
 test('a selected person adds no route: the map draws the journey in course, as with nothing selected', async () => {
   const page = await openMap();
-  const quien = (id) => page.evaluate((id) => window.__be.BE.D.viajes.find((v) => v.id === id)?.persona || 'pablo', id);
+  const quien = (id) => page.evaluate((id) => { const { BE } = window.__be; return BE.duenoViaje(BE.D.viajes.find((v) => v.id === id)); }, id);
   const bad = [];
   // Abrahán at the middle of his first journey that has a date.
   const abrahan = await page.evaluate(() => { const v = window.__be.BE.D.viajes.find((x) => x.persona === 'abrahan' && x.fecha?.desde != null); return (v.fecha.desde + (v.fecha.hasta ?? v.fecha.desde)) / 2 + 0.5; });
@@ -217,4 +220,171 @@ test('a journey that repeated every year carries «↻ cada año» on its route 
     assert.deepEqual(page.pageErrors, []);
     await page.context().close();
   }
+});
+
+test('1B: a group journey (the Ark) has its own owner, route, legend name and card, and no traveller marker', async () => {
+  const page = await openMap();
+  const r = await page.evaluate(() => {
+    const { BE } = window.__be;
+    const v = BE.D.viajes.find((x) => x.id === 'el-arca-en-filistea');
+    const ps = BE.paradasDe(v);
+    return { persona: v.persona, grupo: v.grupo, dueno: BE.duenoViaje(v), dePablo: BE.P.some((s) => s.viaje === v), n: ps.length,
+      t: (ps[0].a + ps.at(-1).b) / 2, nombre: BE.nombreDeDueno(BE.duenoViaje(v)) };
+  });
+  assert.equal(r.persona, null);
+  assert.equal(r.dueno, 'grupo:el-arca-en-filistea', 'a journey with no person and a group is not Pablo\'s');
+  assert.equal(r.dePablo, false, 'none of its stops is among Pablo\'s');
+  assert.ok(r.n >= 4, `its stops with a point are placed on the timeline (${r.n})`);
+  assert.equal(r.nombre, 'El Arca del pacto', 'the legend names the group');
+  const d = await drawnAt(page, r.t);
+  assert.ok(d.otros.includes('el-arca-en-filistea'), `drawn at ${r.t.toFixed(2)} as another traveller's journey: ${d.otros}`);
+  assert.ok(d.otros.length > 1 && d.leyenda.includes('El Arca del pacto'), `the legend row names the group: «${d.leyenda}»`);
+  const g = await page.evaluate(() => {
+    const { BE } = window.__be;
+    const v = BE.D.viajes.find((x) => x.id === 'el-arca-en-filistea');
+    const s = BE.paradasDe(v).find((x) => x.p.orden === 1);
+    const w = BE.ventanaEvento(BE.D.eventos.find((e) => e.id === 'los-filisteos-capturan-el-arca'));
+    const lugar = BE.tipo('lugar').ficha('asdod').replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ');
+    return { s: s && [s.a, s.b], w, lugar };
+  });
+  assert.ok(g.s && g.w && g.s[0] < g.w[1] && g.w[0] < g.s[1], `Ebenézer follows the capture of the Ark: stop ${g.s}, event ${g.w}`);
+  assert.match(g.lugar, /El Arca del pacto · /, 'the Asdod card names the group in its journey row');
+  assert.ok(!d.pabloRastro.includes('el-arca-en-filistea'));
+  const marcas = await page.evaluate(() => [...document.querySelectorAll('.viajero')].map((e) => e.dataset.sel));
+  assert.ok(!marcas.some((m) => /grupo|arca/i.test(m)), `no traveller marker for a group: ${marcas}`);
+  await drawnAt(page, r.t, { tipo: 'viaje', id: 'el-arca-en-filistea' });
+  const ficha = await page.evaluate(() => document.querySelector('#panel')?.textContent.replace(/\s+/g, ' ') ?? '');
+  assert.ok(/Viaje del Arca del pacto/.test(ficha) && !/Pablo/.test(ficha.slice(0, 200)), `the card names the group: «${ficha.slice(0, 200)}»`);
+  // Its reference, «1Sa 4:10, 11; 5:1–7:2», keeps its second piece: a chip of its own and the journey in 1 Samuel 5 to 7.
+  assert.match(ficha, /1Sa 5:1–7:2/);
+  const enCap = await page.evaluate(() => { const { BE } = window.__be; const lib = BE.LIBROS.find((l) => l.num === 9); return [4, 5, 6, 7].map((c) => BE.implicados({ tipo: 'pasaje', id: BE.idPasaje(lib, c) }).claves.has('viaje:el-arca-en-filistea')); });
+  assert.deepEqual(enCap, [true, true, true, true], '1 Samuel 4, 5, 6 and 7 name the journey');
+  assert.deepEqual(page.pageErrors, []);
+  await page.context().close();
+});
+
+test('2D: a segment that reaches or leaves a deduced stop is dotted, the verified ones keep their line, and the legend says so', async () => {
+  const page = await openMap();
+  const read = (id) => page.evaluate(async (id) => {
+    const { map, BE, setT, seleccionar } = window.__be;
+    seleccionar({ tipo: 'viaje', id }, { mover: false, encuadrar: false });
+    setT(50.5);
+    await new Promise((r) => requestAnimationFrame(() => requestAnimationFrame(r)));
+    const v = BE.D.viajes.find((x) => x.id === id);
+    const pendientes = v.paradas.filter((p) => p.estado === 'pendiente').map((p) => BE.L[p.lugar]).filter((l) => l?.lat != null).map((l) => `${l.lon},${l.lat}`);
+    const fs = (await map.getSource('be-rastro').getData()).features.filter((f) => f.properties.viaje === id);
+    const toca = (f) => f.geometry.coordinates.some((c) => pendientes.includes(`${c[0]},${c[1]}`));
+    const layer = map.getLayer('be-rastro-deducido');
+    return { n: fs.length, mal: fs.filter((f) => !!f.properties.deducido !== toca(f)).map((f) => JSON.stringify(f.properties)),
+      deducidos: fs.filter((f) => f.properties.deducido).length, dash: layer && map.getPaintProperty('be-rastro-deducido', 'line-dasharray'),
+      leyenda: document.querySelector('#leyenda')?.textContent ?? '' };
+  }, id);
+  // Jacob sale de Hebrón, que jw.org da como probable (parada 1 pendiente); las demás paradas están verificadas.
+  const jacob = await read('jacob-a-egipto');
+  assert.ok(jacob.deducidos >= 1 && jacob.n > jacob.deducidos, `dotted and solid segments: ${jacob.deducidos} of ${jacob.n}`);
+  assert.deepEqual(jacob.mal, [], 'dotted exactly where a segment touches a deduced stop');
+  assert.ok(Array.isArray(jacob.dash) && jacob.dash[0] < 0.5, `the deduced layer is dotted: ${jacob.dash}`);
+  assert.match(jacob.leyenda, /De puntos: tramo hacia una parada pendiente de verificar/);
+  const moab = await read('campana-contra-moab');
+  assert.equal(moab.deducidos, 0, 'a journey whose stops are all verified has no dotted segment');
+  assert.doesNotMatch(moab.leyenda, /De puntos/);
+  // Pablo's journey in course (be-hecho, be-falta): his last years, with Creta and Nicópolis pending.
+  const pablo = await page.evaluate(async () => {
+    const { map, BE, setT, seleccionar } = window.__be;
+    seleccionar(null, { mover: false, encuadrar: false });
+    setT(62.5);
+    await new Promise((r) => requestAnimationFrame(() => requestAnimationFrame(r)));
+    const V = BE.viajeActual(BE.dondeEsta(62.5));
+    const fs = [...(await map.getSource('be-hecho').getData()).features, ...(await map.getSource('be-falta').getData()).features].filter((f) => f.properties.viaje === V?.id);
+    return { V: V?.id, n: fs.length, deducidos: fs.filter((f) => f.properties.deducido).length,
+      filtros: Object.fromEntries(['be-rastro', 'be-rastro-incierto', 'be-hecho', 'be-hecho-incierto'].map((id) => [id, JSON.stringify(map.getFilter(id))])) };
+  });
+  assert.equal(pablo.V, 'ultimos-anos-de-pablo');
+  assert.ok(pablo.deducidos >= 1 && pablo.n > pablo.deducidos, `Pablo's route has dotted and solid segments: ${pablo.deducidos} of ${pablo.n}`);
+  for (const [id, f] of Object.entries(pablo.filtros)) assert.match(f, /deducido/, `${id} leaves the dotted segments to its dotted layer: ${f}`);
+  assert.deepEqual(page.pageErrors, []);
+  await page.context().close();
+});
+
+test('3C: a companion shows only on the stops of his range, in reading mode and in the stop card', async () => {
+  const page = await openMap();
+  const r = await page.evaluate(() => {
+    const { BE } = window.__be;
+    const lib = BE.LIBROS.find((l) => l.num === 44);
+    const ps = [15, 16, 17, 18].flatMap((c) => BE.lectura.pasajes(lib, c)).filter((x) => x.sel.startsWith('parada:segundo-viaje/'));
+    const ficha = (k) => BE.tipo('parada').ficha(`segundo-viaje/${k}`).replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ');
+    return { en: Object.fromEntries(ps.map((x) => [x.sel.split('/')[1], x.personas])), atenas: ficha(15), corinto: ficha(16) };
+  });
+  const en = (k) => r.en[k] || [];
+  assert.ok(!en(3).includes('timoteo') && en(4).includes('timoteo'), `Timoteo joins in Listra: Derbe ${en(3)}, Listra ${en(4)}`);
+  assert.ok(!en(6).includes('lucas') && en(7).includes('lucas') && en(10).includes('lucas') && !en(13).includes('lucas'), 'Lucas from Troas to Filipos');
+  assert.deepEqual(en(15), ['pablo'], 'Pablo reaches Atenas alone (Hch 17:14, 15)');
+  for (const p of ['silas', 'timoteo', 'aquila', 'priscila']) assert.ok(en(16).includes(p), `${p} in Corinto: ${en(16)}`);
+  assert.ok(!/Con Pablo en esta parada/.test(r.atenas), 'the Atenas card names no companion');
+  const t = await page.evaluate(() => {
+    const { BE } = window.__be;
+    const lib = BE.LIBROS.find((l) => l.num === 44);
+    const en20 = Object.fromEntries(BE.lectura.pasajes(lib, 20).filter((x) => x.sel.startsWith('parada:tercer-viaje/')).map((x) => [x.sel.split('/')[1], x.personas]));
+    const viaje = BE.tipo('viaje').ficha('segundo-viaje').replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ');
+    const juntos = BE.aristas('lucas').filter((a) => a.sel.startsWith('persona:') && /^viajan juntos · Segundo viaje/.test(a.verbo)).map((a) => a.sel);
+    return { en20, viaje, juntos };
+  });
+  assert.match(t.viaje, /Timoteo \(de Listra a Berea y en Corinto\)/, 'the journey card says where Timoteo goes');
+  assert.ok(t.juntos.includes('persona:silas') && !t.juntos.includes('persona:aquila'), `Lucas travels with Silas, never with Áquila: ${t.juntos}`);
+  assert.ok(t.en20[8] && !t.en20[8].includes('sopater') && t.en20[8].includes('lucas'), `in Filipos, Lucas and not the seven of Hch 20:4: ${t.en20[8]}`);
+  assert.ok(t.en20[9]?.includes('sopater'), `Sópater waits in Troas: ${t.en20[9]}`);
+  assert.match(r.corinto, /Con Pablo en esta parada.*Silas/);
+  // Choosing Lucas adds no route (a selected person draws what the date draws), and highlights only the stops of his
+  // range.
+  await drawnAt(page, 30.5, { tipo: 'persona', id: 'lucas' });
+  const imp = await page.evaluate(() => { const r = window.__be.BE.implicados({ tipo: 'persona', id: 'lucas' }); return { claves: [...r.claves], lugares: [...r.lugares] }; });
+  assert.ok(imp.claves.includes('parada:segundo-viaje/7') && imp.claves.includes('parada:tercer-viaje/8'), 'his stops are highlighted');
+  assert.ok(!imp.claves.includes('parada:segundo-viaje/15') && !imp.claves.includes('parada:tercer-viaje/1'), `Atenas and Antioquía are not his: ${imp.claves.filter((k) => k.startsWith('parada:'))}`);
+  assert.ok(!imp.lugares.includes('atenas'), 'Atenas is not highlighted for Lucas');
+  assert.deepEqual(page.pageErrors, []);
+  await page.context().close();
+});
+
+test('4B: another traveller\'s journey is drawn only while its stops last, plus a grey year', async () => {
+  const page = await openMap();
+  const out = {};
+  // 1070 and 1051 a.e.c. (astronomical -1069 and -1050, mid-year): with the whole date of each journey, 20 and 17.
+  for (const t of [-1068.5, -1049.5]) {
+    const d = await drawnAt(page, t);
+    const fuera = await page.evaluate((args) => {
+      const { BE } = window.__be;
+      return args.ids.filter((id) => { const ps = BE.paradasDe(BE.D.viajes.find((v) => v.id === id)); return !ps.length || args.t < Math.min(...ps.map((s) => s.a)) || args.t >= Math.max(...ps.map((s) => s.b)) + 1; });
+    }, { ids: d.otros, t });
+    out[t] = d.otros;
+    assert.deepEqual(fuera, [], `${t}: every journey drawn has a stop window around the date`);
+    assert.ok(d.otros.length <= 7, `${t}: ${d.otros.length} journeys drawn: ${d.otros}`);
+  }
+  assert.ok(!out[-1049.5].includes('joab-contra-ammon-y-siria'), 'Joab against Ammon is not drawn twenty years after it ended');
+  // In colour while its stops last, grey the year after, gone after that: Joab against Ammon, whose date runs on for
+  // decades after its stops.
+  const w = await page.evaluate(() => { const { BE } = window.__be; const v = BE.D.viajes.find((x) => x.id === 'joab-contra-ammon-y-siria'); return { w: BE.mapa.ventanaViaje(v), tr: BE.tramo(v.fecha) }; });
+  assert.ok(w.w[1] + 2 < w.tr[1], `its stops end long before its date: ${w.w} inside ${w.tr}`);
+  const estado = async (t) => (await drawnAt(page, t)).rastroEstados.find((x) => x.startsWith('joab-contra-ammon-y-siria:'))?.split(':')[1] ?? null;
+  assert.equal(await estado((w.w[0] + w.w[1]) / 2), 'actual');
+  assert.equal(await estado(w.w[1] + 0.5), 'pasado', 'the grey year after its last stop');
+  assert.equal(await estado(w.w[1] + 1.5), null, 'not drawn after the grey year');
+  assert.deepEqual(page.pageErrors, []);
+  await page.context().close();
+});
+
+test('4B: no journey is drawn outside its own date plus the grey year, even when its last stop lasts on', async () => {
+  const page = await openMap();
+  // The timeline keeps a traveller at his last stop until his next one: Moisés in Madián for forty years, Epafras in
+  // Colosas from 33, Jesús in Nazaret after the Passover at twelve, José in Egipto. None of that is the journey.
+  for (const [t, id] of [[-1530.5, 'huida-de-moises-a-madian'], [40.5, 'epafras-a-roma'], [20.5, 'pascua-de-jesus-a-los-12'], [-1740.5, 'jose-a-egipto']]) {
+    const d = await drawnAt(page, t);
+    const fuera = await page.evaluate((a) => {
+      const { BE } = window.__be;
+      return a.ids.filter((x) => { const tr = BE.tramo(BE.D.viajes.find((v) => v.id === x).fecha); return !tr || a.t < tr[0] || a.t >= tr[1] + 1; });
+    }, { ids: d.otros, t });
+    assert.deepEqual(fuera, [], `${t}: journeys drawn outside their date: ${fuera}`);
+    assert.ok(!d.otros.includes(id), `${t}: ${id} is not drawn`);
+  }
+  assert.deepEqual(page.pageErrors, []);
+  await page.context().close();
 });

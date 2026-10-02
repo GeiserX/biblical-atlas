@@ -505,9 +505,11 @@ def integridad(datos):
             for pid in o.get("distinct_from") or []:
                 ref(f, "distinct_from", pid, "people")
             if tipo == "journeys":
-                ref(f, "person", o.get("person"), "people")
+                # Un viaje de grupo lleva person: null y group (validate.py, validar_viaje).
+                if o.get("person") is not None or not o.get("group"):
+                    ref(f, "person", o.get("person"), "people")
                 for p in o.get("companions") or []:
-                    ref(f, "companions", p, "people")
+                    ref(f, "companions", p.get("person") if isinstance(p, dict) else p, "people")
                 for p in o.get("stops") or []:
                     ref(f, f"stop {p.get('order')}: place", p.get("place"), "places")
             elif tipo == "letters":
@@ -807,6 +809,25 @@ def orden_en_serie(o):
     return (r.get("serie") or "", n if isinstance(n, (int, float)) else 10**9)
 
 
+def tramos_aparte(v):
+    """En data.json, `companeros` es una lista de ids, como la lee el servidor MCP del atlas (formato v0). Un acompañante
+    que va solo en un tramo de paradas deja su id allí y su tramo en `tramos_companeros`, {persona, desde, hasta}."""
+    comps = v.get("companeros") or []
+    if all(isinstance(c, str) for c in comps):
+        return v
+    ids, tramos = [], [c for c in comps if isinstance(c, dict)]
+    for c in comps:
+        pid = c.get("persona") if isinstance(c, dict) else c
+        if pid not in ids:
+            ids.append(pid)
+    out = {}
+    for k, x in v.items():
+        out[k] = ids if k == "companeros" else x
+        if k == "companeros":
+            out["tramos_companeros"] = tramos
+    return out
+
+
 def componer(datos, hoy, leg=None):
     """data.json a partir de los datos en inglés. Devuelve (salida, legado, errores del adaptador)."""
     leg = leg or Legacy(load_map())
@@ -823,7 +844,7 @@ def componer(datos, hoy, leg=None):
         "personas": {o["id"]: limpio(o) for o in sorted(L["personas"], key=lambda o: o["id"])},
         # Un viaje empieza donde acaba el anterior de su persona: con el mismo año de salida manda el orden
         # del relato, aunque sus anclas den a uno un final un año antes (Elías huye al Horeb tras el Carmelo).
-        "viajes": [limpio(o) for o in sorted(L["viajes"], key=lambda o: clave_fecha(o)[:1] + orden_en_serie(o)
+        "viajes": [tramos_aparte(limpio(o)) for o in sorted(L["viajes"], key=lambda o: clave_fecha(o)[:1] + orden_en_serie(o)
                                              + clave_fecha(o)[1:] + (o["id"],))],
         "cartas": [limpio(o) for o in cartas],
         "eventos": [limpio(o) for o in sorted(L["eventos"], key=lambda o: clave_fecha(o) + orden_en_serie(o) + (o["id"],))],
@@ -917,8 +938,9 @@ def escribir_sqlite(salida, ruta):
     CREATE TABLE relaciones (persona_id TEXT REFERENCES personas(id), orden INTEGER, tipo TEXT, persona TEXT,
         lugar TEXT, relacion TEXT, relacion_inversa TEXT, {fecha}, deducido INTEGER, razon TEXT, estado TEXT,
         type TEXT, word TEXT, office TEXT, certainty TEXT, checked_on TEXT, key TEXT);
-    CREATE TABLE viajes (id TEXT PRIMARY KEY, nombre TEXT, persona_id TEXT REFERENCES personas(id), referencia TEXT,
-        {fecha}, companeros TEXT, resumen TEXT, razon TEXT, consultado TEXT, estado TEXT, repeats TEXT);
+    CREATE TABLE viajes (id TEXT PRIMARY KEY, nombre TEXT, persona_id TEXT REFERENCES personas(id), grupo TEXT,
+        referencia TEXT, {fecha}, companeros TEXT, tramos_companeros TEXT, resumen TEXT, razon TEXT, consultado TEXT, estado TEXT,
+        repeats TEXT);
     CREATE TABLE paradas (viaje_id TEXT REFERENCES viajes(id), orden INTEGER, lugar_id TEXT REFERENCES lugares(id),
         referencia TEXT, {fecha}, nota TEXT, razon TEXT, estado TEXT, checked_on TEXT, PRIMARY KEY (viaje_id, orden));
     CREATE TABLE cartas (id TEXT PRIMARY KEY, libro TEXT, escritor TEXT, referencia TEXT, escrita_en TEXT, {fecha},
@@ -978,8 +1000,8 @@ def escribir_sqlite(salida, ruta):
                                r.get("certainty"), r.get("checked_on"), r.get("key")))
         fuentes_hecho("persona", o["id"], {k: v for k, v in o.items() if k != "offices"})
     for o in salida["viajes"]:
-        ins("viajes", (o["id"], o["nombre"], o["persona"], o["referencia"], *_fecha_cols(o.get("fecha")),
-                       j(o.get("companeros")), o["resumen"], o.get("razon"), o.get("consultado"), o.get("estado"),
+        ins("viajes", (o["id"], o["nombre"], o["persona"], o.get("grupo"), o["referencia"], *_fecha_cols(o.get("fecha")),
+                       j(o.get("companeros")), j(o.get("tramos_companeros")), o["resumen"], o.get("razon"), o.get("consultado"), o.get("estado"),
                        o.get("repeats")))
         fuentes_hecho("viaje", o["id"], {k: v for k, v in o.items() if k != "paradas"})
         for p in o.get("paradas") or []:

@@ -16,11 +16,16 @@ date:
 narrative_order:
   series: jesus
   order: 1
-companions: []
+companions:
+- {person: andres, from: 4, to: 6}
+- {person: pedro, from: 4, to: 6}
+- {person: felipe-apostol, from: 4, to: 6}
+- {person: natanael, from: 4, to: 6}
 summary: Jesús baja de Nazaret al Jordán y Juan lo bautiza. Pasa cuarenta días en el desierto, vuelve adonde bautiza Juan,
   reúne a sus primeros discípulos, va a una boda en Caná y baja a Capernaúm.
-reason: Los tres primeros Evangelios dan el bautismo y el desierto; Juan 1 y 2, el resto. Fechas de los sucesos bautismo-de-jesus,
-  tentacion-en-el-desierto, primeros-discipulos y boda-en-cana (tabla A7-B).
+reason: Los tres primeros Evangelios dan el bautismo y el desierto; Juan 1 y 2, el resto. Fechas de los sucesos
+  bautismo-de-jesus, tentacion-en-el-desierto, primeros-discipulos y boda-en-cana (tabla A7-B). Andrés, Pedro, Felipe y
+  Natanael lo siguen desde Betania (Jn 1:35-51; 2:2, 12).
 sources:
 - marcos-1
 - mateo-3
@@ -33,7 +38,9 @@ sources:
 - jy-cap-13
 - jy-cap-14
 - jy-cap-15
-checked_on: '2026-09-30'
+- it-andres
+- it-natanael
+checked_on: '2026-10-02'
 status: verified
 stops:
 - order: 1
