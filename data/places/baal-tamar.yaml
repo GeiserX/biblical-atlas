@@ -5,19 +5,33 @@ names:
 - name: Baal-Tamar
   note: Perspicacia da como significado «dueño de la palmera».
 type: region
-lat: 31.831498
-lon: 35.241283
+lat: null
+lon: null
 precision: uncertain
-coord_source: openbible:a66136c
-coord_url: https://www.openbible.info/geo/ancient/a66136c/baal-tamar
-coord_note: 'Punto de Ras et-Tawil, primera identificación de OpenBible. Perspicacia no da sitio: solo dice que estaba cerca
-  de Guibeá.'
+coord_source: null
+coord_url: null
+candidates:
+- name: Cerca de Guibeá
+  geometry:
+    type: zone
+    lat: 31.823113
+    lon: 35.230718
+    radius_km: 5
+  checked_on: '2026-10-02'
+  status: favored_level_1
+  sources:
+  - it-baal-tamar
+  - jueces-20
+  reason: 'Perspicacia «Baal-tamar» solo dice que estaba cerca de Guibeá y que su ubicación es incierta; Jue 20:31-33 pone
+    allí al ejército tras alejar de la ciudad a los benjaminitas. No nombra ningún sitio.'
+  note: Centro nuestro en el punto de guibea-de-benjamin. El radio de 5 km también es nuestro.
+  coord_source: calculation
+coord_note: 'Sin punto: jw.org no nombra ningún sitio; solo dice que estaba cerca de Guibeá.'
 summary: Lugar próximo a Guibeá donde formó el grueso del ejército de Israel en la tercera batalla contra Benjamín, mientras
   otra parte esperaba emboscada. Se desconoce dónde estaba.
-reason: 'Perspicacia «Baal-tamar»; Jue 20:33. OpenBible: solo el punto.'
+reason: 'Perspicacia «Baal-tamar»; Jue 20:33. Sin punto: solo una zona candidata alrededor de Guibeá.'
 sources:
 - it-baal-tamar
-- openbible-geo
 - jueces-20
 links:
 - title: 'Perspicacia: «Baal-tamar»'
@@ -26,5 +40,10 @@ links:
 - title: Jueces 20 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/jueces/20/
   type: bible
-checked_on: '2026-09-29'
+checked_on: '2026-10-02'
 status: verified
+history:
+- date: '2026-10-02'
+  change: 'Pierde el punto de OpenBible (31.831498, 35.241283), Ras et-Tawil: jw.org no nombra ese sitio y da la ubicación
+    por incierta. Queda como candidato lo que sí dice: cerca de Guibeá.'
+  source: it-baal-tamar
