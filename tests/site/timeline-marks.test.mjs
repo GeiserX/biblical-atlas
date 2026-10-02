@@ -336,20 +336,23 @@ test('1440: a second click on the selected mark releases it, Esc releases it, an
   await p.context().close();
 });
 
+/** Scrolls the lanes to the mark called `name` and clicks or taps its name, as a person would. */
+async function pressMark(p, screen, name) {
+  const id = await p.evaluate((n) => { const m = window.BE.lineaMarcas().find((q) => q.name === n); const c = document.querySelector('#linea-cuerpo'); c.scrollTop = Math.max(0, m.top - 60); return m.id; }, name);
+  await frames(p);
+  const [x, y] = await p.evaluate((i) => { const r = document.querySelector(`#linea-filas .m[data-id="${CSS.escape(i)}"] .m-nombre .t`).getBoundingClientRect(); return [r.left + Math.min(r.width / 2, 20), r.top + r.height / 2]; }, id);
+  if (screen.hasTouch) await p.touchscreen.tap(x, y); else await p.mouse.click(x, y);
+  await frames(p);
+  return { id, ...(await state(p)) };
+}
+
 test('after Back reselects a mark, the first click or tap on it releases it, on the computer and on the phone', async () => {
   // docs/ideas/atras-adelante-flecos.md, question 4: each entry remembers the mark pressed in it, and Back gives it back
   // to the strip. Before, Back counted as a selection from elsewhere: the first click only moved the cursor, or nothing.
   for (const [screen, first, second, back] of [[DESKTOP, 'Galión, procónsul de Acaya', 'Segundo viaje misional', '#atras'],
     [PHONE, 'La congregación cristiana', 'Roma, sexta potencia mundial', '#hoja-atras']]) {
     const p = await open(screen, 't=50.5&v=8');
-    const press = async (name) => {
-      const id = await p.evaluate((n) => { const m = window.BE.lineaMarcas().find((q) => q.name === n); const c = document.querySelector('#linea-cuerpo'); c.scrollTop = Math.max(0, m.top - 60); return m.id; }, name);
-      await frames(p);
-      const [x, y] = await p.evaluate((i) => { const r = document.querySelector(`#linea-filas .m[data-id="${CSS.escape(i)}"] .m-nombre .t`).getBoundingClientRect(); return [r.left + Math.min(r.width / 2, 20), r.top + r.height / 2]; }, id);
-      if (screen.hasTouch) await p.touchscreen.tap(x, y); else await p.mouse.click(x, y);
-      await frames(p);
-      return { id, ...(await state(p)) };
-    };
+    const press = (name) => pressMark(p, screen, name);
     const a = await press(first);
     assert.notEqual(a.sel, '', `${screen.name}: «${first}» was not selected`);
     const b = await press(second);
@@ -362,6 +365,29 @@ test('after Back reselects a mark, the first click or tap on it releases it, on 
     const released = await press(first);
     assert.equal(released.sel, '', `${screen.name}: the first click after Back on «${first}» did not release it`);
     assert.equal(released.t, back1.t, `${screen.name}: releasing moved the cursor`);
+    await p.context().close();
+  }
+});
+
+test('after a reload, or «Acerca de» and back with «Volver al mapa», the first click or tap on the pressed mark releases it', async () => {
+  // The entry keeps the mark pressed in it, and the page gives it back to the strip when it loads, not only on Back.
+  const marked = async (p) => { await p.waitForFunction(() => window.BE?.lineaMarcas && document.querySelector('#linea-filas .m'), null, { timeout: 25000 }); await frames(p, 6); };
+  for (const [screen, name, way] of [[DESKTOP, 'Galión, procónsul de Acaya', 'reload'], [DESKTOP, 'Galión, procónsul de Acaya', 'volver'],
+    [PHONE, 'La congregación cristiana', 'reload']]) {
+    const p = await open(screen, 't=50.5&v=8');
+    const a = await pressMark(p, screen, name);
+    assert.notEqual(a.sel, '', `${screen.name}: «${name}» was not selected`);
+    await p.waitForFunction((id) => history.state?.mark === id, a.id, { timeout: 3000 });
+    if (way === 'reload') await p.reload();
+    else {
+      await Promise.all([p.waitForURL(/acerca\.html/), p.locator('#acerca').click()]);
+      await Promise.all([p.waitForURL(/index\.html/), p.locator('a.be-btn[data-volver]').click()]);
+    }
+    await marked(p);
+    const back = await state(p);
+    assert.equal(back.sel, a.sel, `${screen.name}, ${way}: «${name}» is not selected after it`);
+    const released = await pressMark(p, screen, name);
+    assert.equal(released.sel, '', `${screen.name}, ${way}: the first click after it on «${name}» did not release it`);
     await p.context().close();
   }
 });

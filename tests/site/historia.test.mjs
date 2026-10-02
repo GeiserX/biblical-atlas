@@ -751,6 +751,33 @@ test('each entry keeps the map where it was left: Back, Forward and a reload bri
   }
 });
 
+test('with no selection the map stays where it was left: a reload does not recentre on Pablo, and Back over a jump in time does not reframe it', async () => {
+  const page = await openPage(DESKTOP, { hash: 't=50.3000', map: true });
+  const pablo = await frame(page);
+  // Away from Pablo by hand, far enough that his frame is not this one.
+  await page.evaluate(({ lon, lat }) => window.__be.map.jumpTo({ center: [lon + 9, lat - 4], zoom: 6 }), pablo);
+  await still(page);
+  const left = await frame(page);
+  await page.reload({ waitUntil: 'domcontentloaded' });
+  await ready(page, { map: true });
+  // MapLibre's load arrives after the first frame: Pablo was put there then.
+  await page.waitForTimeout(1500);
+  await still(page);
+  sameFrame(await frame(page), left, 'reload with no selection');
+  // A year searched more than 20 years away asks for Pablo's frame 300 ms later; Back to the entry of before must
+  // cancel the one that Back's own jump asks for.
+  await search(page, '607 a.e.c.');
+  await page.waitForTimeout(1500);
+  await still(page);
+  await page.goBack();
+  await settle(page);
+  await page.waitForTimeout(1500);
+  await still(page);
+  assert.equal((await snap(page)).t, '50.3000');
+  sameFrame(await frame(page), left, 'Back over a jump in time');
+  assert.deepEqual(page.pageErrors, []);
+});
+
 test('a tour entry keeps the map where it was left: Back into it from another selection and a reload do not reframe its stop', async () => {
   // The tour opens one frame after its entry is read, and framing its stop then overwrote the frame the entry kept. The
   // browser's Back showed it on every run; the site's button did not always.
@@ -836,6 +863,15 @@ test('«Volver al mapa» goes back to the entry the map was on, with its Back; f
     assert.equal(h.back.label, 'Atrás: Pablo');
     assert.equal(h.length, before.length + 1, `${what}: «Volver al mapa» added an entry instead of going back`);
   }
+  // Ctrl or ⌘ with the click opens the map in a new tab, as a link does, and this tab stays on «Acerca de».
+  await Promise.all([page.waitForURL(/acerca\.html/, { waitUntil: 'domcontentloaded' }), page.locator('#acerca').click()]);
+  const [tab] = await Promise.all([page.context().waitForEvent('page'), page.locator('a.be-btn[data-volver]').click({ modifiers: ['ControlOrMeta'] })]);
+  await tab.waitForLoadState('domcontentloaded');
+  assert.match(tab.url(), /index\.html#.*sel=lugar:corinto/);
+  assert.match(page.url(), /acerca\.html/, 'a modified click went back in this tab');
+  await tab.close();
+  await volver(page);
+  await ready(page);
   // From a section of the page (#gracias, an entry of its own) Back is not the map: the button stays a link.
   await Promise.all([page.waitForURL(/acerca\.html/, { waitUntil: 'domcontentloaded' }), page.locator('#acerca').click()]);
   await page.evaluate(() => { location.hash = 'gracias'; });
