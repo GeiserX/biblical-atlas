@@ -12,11 +12,17 @@ date:
   type: narrative
   chronology: tnm
   text: 'entre c. 1173 y 1117 a.e.c. (tiempo narrativo: antes de que Saúl fuera ungido rey)'
-companions: []
+companions:
+- person: hofni
+  from: 1
+  to: 2
+- person: finehas-hijo-de-eli
+  from: 1
+  to: 2
 summary: Israel trae el Arca de Siló al campamento, y los filisteos la capturan junto a Ebenézer. Siete meses la pasan
   de una de sus ciudades a otra mientras sufren plagas; al fin la devuelven a Bet-Semes, y sube a Quiryat-Jearim.
-reason: 1 Samuel 4:3 a 7:2 da el orden de los lugares; Perspicacia «Arca del pacto», párr. 13 y 16, lo resume. Sin año
-  propio; fecha de sus sucesos, entre Jefté y la unción de Saúl (estudio 3).
+reason: 1Sa 4:3–7:2 da el orden de los lugares, y Perspicacia «Arca del pacto» lo resume. Hofní y Finehás la acompañan
+  hasta morir en Ebenézer (4:4, 11). Fecha de sus sucesos, entre Jefté y la unción de Saúl (estudio 3).
 sources:
 - 1-samuel-4
 - 1-samuel-5
