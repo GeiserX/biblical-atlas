@@ -174,3 +174,29 @@ test('with the «Viajes» layer off no journey is drawn, and other travellers st
   assert.deepEqual(page.pageErrors, []);
   await page.context().close();
 });
+
+test('1B: a group journey (the Ark) has its own owner, route, legend name and card, and no traveller marker', async () => {
+  const page = await openMap();
+  const r = await page.evaluate(() => {
+    const { BE } = window.__be;
+    const v = BE.D.viajes.find((x) => x.id === 'el-arca-en-filistea');
+    const ps = BE.paradasDe(v);
+    return { persona: v.persona, grupo: v.grupo, dueno: BE.duenoViaje(v), dePablo: BE.P.some((s) => s.viaje === v), n: ps.length,
+      t: (ps[0].a + ps.at(-1).b) / 2, nombre: BE.nombreDeDueno(BE.duenoViaje(v)) };
+  });
+  assert.equal(r.persona, null);
+  assert.equal(r.dueno, 'grupo:el-arca-en-filistea', 'a journey with no person and a group is not Pablo\'s');
+  assert.equal(r.dePablo, false, 'none of its stops is among Pablo\'s');
+  assert.ok(r.n >= 4, `its stops with a point are placed on the timeline (${r.n})`);
+  assert.equal(r.nombre, 'El Arca del pacto', 'the legend names the group');
+  const d = await drawnAt(page, r.t);
+  assert.ok(d.otros.includes('el-arca-en-filistea'), `drawn at ${r.t.toFixed(2)} as another traveller's journey: ${d.otros}`);
+  assert.ok(!d.pabloRastro.includes('el-arca-en-filistea'));
+  const marcas = await page.evaluate(() => [...document.querySelectorAll('.viajero')].map((e) => e.dataset.sel));
+  assert.ok(!marcas.some((m) => /grupo|arca/i.test(m)), `no traveller marker for a group: ${marcas}`);
+  await drawnAt(page, r.t, { tipo: 'viaje', id: 'el-arca-en-filistea' });
+  const ficha = await page.evaluate(() => document.querySelector('#panel')?.textContent.replace(/\s+/g, ' ') ?? '');
+  assert.ok(/Viaje del Arca del pacto/.test(ficha) && !/Pablo/.test(ficha.slice(0, 200)), `the card names the group: «${ficha.slice(0, 200)}»`);
+  assert.deepEqual(page.pageErrors, []);
+  await page.context().close();
+});

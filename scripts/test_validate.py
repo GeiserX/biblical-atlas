@@ -127,6 +127,12 @@ class QuienViaja(unittest.TestCase):
     def test_grupo_vacio_es_error(self):
         self.assertTrue(any("group debe ser un texto" in e for e in errores_viaje(person=None, group=" ")))
 
+    def test_el_viaje_de_grupo_del_repositorio_pasa(self):
+        v = validate._read(HERE.parent / "data" / "journeys" / "el-arca-en-filistea.yaml")
+        self.assertIsNone(v["person"])
+        out = []
+        validate.validar_viaje(v, "el-arca-en-filistea", out.append)
+        self.assertEqual(out, [])
 
 
 if __name__ == "__main__":
