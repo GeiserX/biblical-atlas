@@ -18,7 +18,7 @@ Lee [`data/`](../data/) (las fuentes de `data/sources/*.yaml`, `data/books.yaml`
 
 - `dist/data.json`: todos los datos en un fichero, con el formato `biblical-atlas/v0`. Además de las entidades lleva `libros` (la lista de `data/books.yaml`) y `calendario`.
 - `site/data.json`: el mismo contenido, que es lo que lee la web.
-- `site/stats.json`: cuántas fichas hay de cada tipo y la fecha de compilación. Lo leen las insignias del README, así que los números de la portada del repositorio nunca se quedan atrás.
+- `site/stats.json`: cuántas fichas hay de cada tipo y la fecha de compilación. `fuentes` cuenta solo las escritas que algún dato cita, y `capitulos`, los capítulos de la Biblia que la compilación añade; la portada del sitio cuenta lo mismo. Lo leen las insignias del README, así que los números de la portada del repositorio nunca se quedan atrás.
 - `site/data.js`: el mismo objeto envuelto en `window.BIBLICAL_ATLAS_DATA = …;`, para abrir la web desde `file://`.
 - `dist/biblical-atlas.sqlite`: las mismas tablas en SQLite, más `hechos_fuentes(tipo, id, fuente_id)` para saber qué fuente sostiene cada hecho.
 - [`docs/investigacion/registro/`](../docs/investigacion/registro/index.md): el registro de investigación, un fichero por tipo de entidad. Borra los `.md` que ya no genera.
