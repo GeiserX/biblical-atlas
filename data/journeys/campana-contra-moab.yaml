@@ -15,11 +15,12 @@ narrative_order:
   series: jehoram-de-israel
   order: 1
 companions:
-- jehosafat
+- {person: jehosafat, from: 2, to: 4}
 summary: Moab se rebela tras la muerte de Acab. Jehoram sale de Samaria con Jehosafat y el rey de Edom; tras siete días por
   el desierto de Edom sin agua, Eliseo anuncia que llegará. Entran en Moab y cercan Quir-Haréset.
-reason: '2Re 3:6-27 da el orden: Samaria, el camino de Edom, Moab y Quir-Haréset. Fechas de los sucesos tres-reyes-marchan-contra-moab
-  y mesa-sacrifica-a-su-primogenito-en-quir-hareset.'
+reason: '2Re 3:6-27 da el orden: Samaria, el camino de Edom, Moab y Quir-Haréset. Fechas de los sucesos
+  tres-reyes-marchan-contra-moab y mesa-sacrifica-a-su-primogenito-en-quir-hareset. Jehosafat se une por el camino de
+  Edom (2Re 3:7-9).'
 sources:
 - 2-reyes-3
 - it-jehoram
@@ -27,7 +28,7 @@ sources:
 - it-mesa
 - it-quir-hareset
 - it-eliseo
-checked_on: '2026-09-30'
+checked_on: '2026-10-02'
 status: verified
 stops:
 - order: 1
@@ -41,12 +42,12 @@ stops:
     type: anchored
     chronology: tnm
     text: entre 917 y 913 a.e.c.
-  note: Jehosafat se une a la marcha; el rey de Edom no tiene nombre.
+  note: Jehoram pide por mensaje la ayuda de Jehosafat, que se une a la marcha por el camino de Edom; el rey de Edom no tiene nombre.
   reason: '2Re 3:6: Jehoram sale de Samaria. Fecha del suceso tres-reyes-marchan-contra-moab.'
   sources:
   - 2-reyes-3
   - it-jehoram
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-02'
   status: verified
 - order: 2
   place: edom

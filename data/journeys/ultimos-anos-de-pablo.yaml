@@ -12,20 +12,22 @@ date:
   chronology: tnm
   text: c. 61-65 e.c.
 companions:
-- tito
-- timoteo
-- trofimo
+- {person: tito, from: 2, to: 2}
+- {person: timoteo, from: 3, to: 3}
 summary: 'Libre hacia 61, Pablo vuelve a viajar: deja a Tito en Creta y a Timoteo en Éfeso, escribe desde Macedonia
   y piensa invernar en Nicópolis. Hacia 65 está otra vez preso en Roma.'
-reason: Perspicacia «Pablo», «Tito, Carta a» y «Timoteo, Cartas a»; nota de estudio de Hch 28:30. Hechos no lo narra
-  y el orden de las paradas no es seguro.
+reason: Perspicacia «Pablo», «Tito, Carta a» y «Timoteo, Cartas a»; nota de estudio de Hch 28:30. Hechos no lo narra y
+  el orden de las paradas no es seguro. Tito queda en Creta y Timoteo en Éfeso (Tit 1:5; 1Ti 1:3).
 sources:
 - it-pablo
 - it-tito
 - it-timoteo-cartas
 - nota-hechos-28
 - si-3
-checked_on: '2026-09-28'
+- tito-1
+- 1-timoteo-1
+- it-trofimo
+checked_on: '2026-10-02'
 status: verified
 stops:
 - order: 1
@@ -133,11 +135,12 @@ stops:
     type: anchored
     chronology: tnm
     text: c. 65 e.c.
-  note: Escribe 2 Timoteo.
+  note: Escribe 2 Timoteo. Trófimo, que viajaba con él, se había quedado enfermo en Mileto (2Ti 4:20).
   reason: El estudio 3 (párr. 28) y Perspicacia «Timoteo, Cartas a» sitúan el último encierro hacia 65.
   sources:
   - si-3
   - it-timoteo-cartas
   - 2-timoteo-4
-  checked_on: '2026-09-28'
+  - it-trofimo
+  checked_on: '2026-10-02'
   status: verified

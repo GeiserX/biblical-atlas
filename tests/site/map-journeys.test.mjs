@@ -229,3 +229,26 @@ test('2D: a segment that reaches or leaves a deduced stop is dotted, the verifie
   assert.deepEqual(page.pageErrors, []);
   await page.context().close();
 });
+
+test('3C: a companion shows only on the stops of his range, in reading mode and in the stop card', async () => {
+  const page = await openMap();
+  const r = await page.evaluate(() => {
+    const { BE } = window.__be;
+    const lib = BE.LIBROS.find((l) => l.num === 44);
+    const ps = [15, 16, 17, 18].flatMap((c) => BE.lectura.pasajes(lib, c)).filter((x) => x.sel.startsWith('parada:segundo-viaje/'));
+    const ficha = (k) => BE.tipo('parada').ficha(`segundo-viaje/${k}`).replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ');
+    return { en: Object.fromEntries(ps.map((x) => [x.sel.split('/')[1], x.personas])), atenas: ficha(15), corinto: ficha(16) };
+  });
+  const en = (k) => r.en[k] || [];
+  assert.ok(!en(3).includes('timoteo') && en(4).includes('timoteo'), `Timoteo joins in Listra: Derbe ${en(3)}, Listra ${en(4)}`);
+  assert.ok(!en(6).includes('lucas') && en(7).includes('lucas') && en(10).includes('lucas') && !en(13).includes('lucas'), 'Lucas from Troas to Filipos');
+  assert.deepEqual(en(15), ['pablo'], 'Pablo reaches Atenas alone (Hch 17:14, 15)');
+  for (const p of ['silas', 'timoteo', 'aquila', 'priscila']) assert.ok(en(16).includes(p), `${p} in Corinto: ${en(16)}`);
+  assert.ok(!/Con Pablo en esta parada/.test(r.atenas), 'the Atenas card names no companion');
+  assert.match(r.corinto, /Con Pablo en esta parada.*Silas/);
+  // Choosing Lucas still draws the second journey on the map.
+  const d = await drawnAt(page, 30.5, { tipo: 'persona', id: 'lucas' });
+  assert.ok(d.rastro.includes('segundo-viaje'), `selecting Lucas draws the journeys he went on: ${d.rastro}`);
+  assert.deepEqual(page.pageErrors, []);
+  await page.context().close();
+});

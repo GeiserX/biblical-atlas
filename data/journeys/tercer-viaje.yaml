@@ -12,20 +12,22 @@ date:
   chronology: tnm
   text: c. 52-56 e.c.
 companions:
-- timoteo
-- lucas
-- aristarco
-- gayo-de-macedonia
-- erasto-colaborador-de-pablo
-- sopater
-- segundo
-- tiquico
-- trofimo
-- gayo-de-derbe
+- {person: timoteo, from: 4, to: 4}
+- {person: timoteo, from: 6, to: 9}
+- {person: lucas, from: 8, to: 21}
+- {person: aristarco, from: 4, to: 4}
+- {person: aristarco, from: 7, to: 9}
+- {person: gayo-de-macedonia, from: 4, to: 4}
+- {person: erasto-colaborador-de-pablo, from: 4, to: 4}
+- {person: sopater, from: 7, to: 9}
+- {person: segundo, from: 7, to: 9}
+- {person: tiquico, from: 7, to: 9}
+- {person: trofimo, from: 7, to: 21}
+- {person: gayo-de-derbe, from: 7, to: 9}
 summary: Pablo vuelve a Galacia y Frigia, pasa unos tres años en Éfeso, recorre Macedonia y Grecia y regresa por
   mar a Jerusalén para Pentecostés de 56.
-reason: El estudio 3 (párr. 26) da las fechas; Hechos 20:4, 5 nombra a Timoteo entre los acompañantes y el relato
-  vuelve a usar «nosotros», señal de que Lucas iba con él.
+reason: El estudio 3 (párr. 26) da las fechas. Cada acompañante va en las paradas que dan Hch 19:22, 29; 20:4-6; 21:29,
+  2Co 1:1 y Ro 16:21; el «nosotros» de Hch 20:5 pone a Lucas desde Filipos.
 sources:
 - si-3
 - it-pablo
@@ -43,6 +45,9 @@ sources:
 - it-trofimo
 - 2-corintios-2
 - it-troas
+- it-timoteo
+- nota-hechos-20
+- romanos-16
 history:
 - date: '2026-09-29'
   change: 'Se añade Frigia (Hch 18:23). Las paradas que heredaban c. 52-56 se acotan con el estudio 3 y Perspicacia: 52 al
@@ -52,7 +57,7 @@ history:
   change: 'Se añade la parada de Troas entre Éfeso y Macedonia: 2Co 2:12, 13 y Perspicacia «Troas», párr. 4. Las paradas 5
     a 20 pasan a ser 6 a 21.'
   source: 2-corintios-2
-checked_on: '2026-09-29'
+checked_on: '2026-10-02'
 status: verified
 stops:
 - order: 1
