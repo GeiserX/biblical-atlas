@@ -199,6 +199,10 @@ test('1B: a group journey (the Ark) has its own owner, route, legend name and ca
   await drawnAt(page, r.t, { tipo: 'viaje', id: 'el-arca-en-filistea' });
   const ficha = await page.evaluate(() => document.querySelector('#panel')?.textContent.replace(/\s+/g, ' ') ?? '');
   assert.ok(/Viaje del Arca del pacto/.test(ficha) && !/Pablo/.test(ficha.slice(0, 200)), `the card names the group: «${ficha.slice(0, 200)}»`);
+  // Its reference, «1Sa 4:10, 11; 5:1–7:2», keeps its second piece: a chip of its own and the journey in 1 Samuel 5 to 7.
+  assert.match(ficha, /1Sa 5:1–7:2/);
+  const enCap = await page.evaluate(() => { const { BE } = window.__be; const lib = BE.LIBROS.find((l) => l.num === 9); return [4, 5, 6, 7].map((c) => BE.implicados({ tipo: 'pasaje', id: BE.idPasaje(lib, c) }).claves.has('viaje:el-arca-en-filistea')); });
+  assert.deepEqual(enCap, [true, true, true, true], '1 Samuel 4, 5, 6 and 7 name the journey');
   assert.deepEqual(page.pageErrors, []);
   await page.context().close();
 });
