@@ -774,6 +774,7 @@ def legacy_data(datos, leg):
         out[raiz] = lista
     merge_pair_copies(compiled, partners, voc)
     compile_shapes(out[leg.roots["places"]], datos)
+    compile_guesses(out[leg.roots["journeys"]], datos)
     return out
 
 
@@ -789,6 +790,18 @@ def compile_shapes(lugares, datos):
             if forma and lat is not None and lon is not None:
                 forma["ring"] = formas.anillo(forma, lat, lon, puntos)
                 forma["bbox"] = formas.caja(forma["ring"])
+
+
+def compile_guesses(viajes, datos):
+    """Añade su contorno (`ring`) y su caja (`bbox`) a cada zona que conjeturamos para un área desconocida
+    (`unknown_area.guesses`), como a la forma de una zona: el sitio la dibuja y la encuadra tal cual."""
+    puntos = formas.puntos_de_vertices(datos["places"])
+    for v in viajes:
+        for p in v.get("paradas") or []:
+            for z in (p.get("unknown_area") or {}).get("guesses") or []:
+                c = z.get("center") or {}
+                z["ring"] = formas.anillo(z, c.get("lat"), c.get("lon"), puntos)
+                z["bbox"] = formas.caja(z["ring"])
 
 
 def merge_pair_copies(compiled, partners, voc):
