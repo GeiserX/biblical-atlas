@@ -12,6 +12,7 @@
 //    and Mahanaim with its candidates removed in a temporary copy of the data.
 //  - Selecting such a place frames its zone.
 //  - A region, whose point stands for the whole region, also looks estimated (Paul in Galatia).
+//  - The legend explains that look whenever Paul's marker has it.
 //
 // Run from the repository root, one browser at a time:
 //   node --test --test-concurrency=1 tests/site/estancias-sin-punto.test.mjs
@@ -91,6 +92,7 @@ before(async () => {
   tmp = fs.mkdtempSync(path.join(os.tmpdir(), 'be-estancias-sin-punto-'));
   execFileSync('python3', [path.join(ROOT, 'scripts/build.py'), '--out', tmp], { cwd: ROOT, stdio: 'pipe' });
   variant('sin-candidatos', (D) => { delete D.lugares.mahanaim.candidatos; });
+  variant('solo-pablo', (D) => { D.viajes = D.viajes.filter((v) => (v.persona || 'pablo') === 'pablo'); });
   server = await serve(path.join(ROOT, 'site'), tmp);
   origin = `http://127.0.0.1:${server.address().port}`;
   const chromium = await loadChromium();
@@ -269,6 +271,18 @@ test('a stay at a region, whose point stands for the whole region, looks estimat
   assert.equal(r.estimada, false, 'the case under test: the date is not estimated');
   assert.equal(r.incierto, true, `BE.donde says the place is uncertain: ${JSON.stringify(r)}`);
   assert.equal(r.marca, true, 'and the marker has the look of an estimated position');
+});
+
+test('the legend explains the estimated look whenever Paul\'s marker has it', async () => {
+  // Only Paul travels in this copy of the data, so only his marker can bring the legend row.
+  const p = await open('/solo-pablo');
+  const r = await pabloEn(p, 'tercer-viaje/2');
+  const otros = await p.evaluate(() => document.querySelectorAll('.viajero').length);
+  assert.equal(otros, 0, 'no other traveller on the map');
+  assert.equal(r.estimada, false, 'the date is not estimated');
+  assert.equal(r.marca, true, JSON.stringify(r));
+  assert.ok(/Posición estimada/.test(r.leyenda), `the legend has the row: ${JSON.stringify(r)}`);
+  await p.context().close();
 });
 
 test('no page errors', () => {

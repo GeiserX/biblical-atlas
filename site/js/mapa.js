@@ -1368,7 +1368,7 @@ function pintarLeyenda(V, w, g) {
   const S = E.sel?.tipo === 'viaje' ? BE.D.viajes.find((v) => v.id === E.sel.id) : null;   // viaje seleccionado abajo
   const rastro = g.rastroVisible;
   const dePablo = !!(V && g.hecho.length + g.falta.length) || rastro.some((v) => (v.persona || 'pablo') === 'pablo');
-  const estimada = (marcaPablo?.puesta && !!w?.estimada) || [...marcasViajero.values()].some((m) => m.puesta && m.el.classList.contains('estimada'));
+  const estimada = (marcaPablo?.puesta && marcaPablo.getElement().classList.contains('estimada')) || [...marcasViajero.values()].some((m) => m.puesta && m.el.classList.contains('estimada'));
   const viajeros = [...marcasViajero.values()].some((m) => m.puesta);
   const apagado = g.rastro.some((f) => f.properties.estado !== 'actual');   // algún rastro en gris
   const repiten = viajesRepetidos(g);
