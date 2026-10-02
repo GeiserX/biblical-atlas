@@ -152,7 +152,7 @@ function fichaPasaje(id) {
     <section class="be-card"><div class="be-card__pad">
       <div class="be-card__eyebrow">Pasaje · <button type="button" class="enlace-texto" data-sel="libro:${esc(lib.slug)}">${esc(lib.nombre)}</button></div>
       <h2 class="be-card__title">${esc(lib.nombre)} ${cap}</h2>
-      <p class="be-card__body">El texto no se copia aquí: se lee en jw.org, con las notas de estudio al lado. En el mapa y en la línea de tiempo queda resaltado lo que cuenta este capítulo.</p>
+      <p class="be-card__body">El texto se lee en jw.org, con las notas de estudio al lado. En el mapa y en la línea de tiempo queda resaltado lo que cuenta este capítulo.</p>
     </div><div class="be-card__foot"><button type="button" class="be-btn be-btn--sm" data-leer="${esc(idPasaje(lib, cap))}">Modo lectura</button><span class="be-spacer"></span><a class="be-wol" href="${BE.urlCapitulo(lib, cap)}" ${EXTERNO}>Leer ${esc(lib.nombre)} ${cap} y sus notas de estudio</a></div></section>
     ${paradas.length ? `<section class="be-card ficha-sec"><div class="be-card__pad"><h3 class="be-card__eyebrow">Paradas de Pablo <b class="cuenta">${paradas.length}</b></h3>
       <div class="be-list">${paradas.map((s) => BE.botonSel(`parada:${s.key}`, s.lugar.nombre, `${esc(s.p.referencia)} · ${esc(s.viaje.nombre)}`)).join('')}</div></div></section>` : ''}

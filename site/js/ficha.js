@@ -20,7 +20,7 @@ function nivelDe(ids) {
 }
 
 /** Marca pequeña del tipo de fuente, sin jerga: el nombre del nivel va en el texto emergente y para los lectores de pantalla. */
-const NIVEL_TEXTO = { 1: 'Biblia o publicación de jw.org', 2: 'Otra fuente que jw.org ha usado' };
+const NIVEL_TEXTO = { 1: 'La Biblia o una publicación que la explica', 2: 'Otra fuente que acompaña' };
 function marcaNivel(n) {
   const k = n === 1 ? 1 : 2;
   return `<span class="marca-nivel marca-nivel--${k}" role="img" title="${NIVEL_TEXTO[k]}" aria-label="${NIVEL_TEXTO[k]}"></span>`;
@@ -43,7 +43,7 @@ function fuentesHtml(ids) {
   return `<ul class="fuentes">${fs.map(([, f]) => `<li>
     ${marcaNivel(f.nivel)}
     <div><a href="${esc(f.url)}" ${EXTERNO}>${esc(f.titulo)}</a><span class="fuente-obra">${esc(f.obra)}${f.publicado ? ` · ${esc(f.publicado)}` : ''}</span>
-    ${avisoFuenteHtml(f)}</div></li>`).join('')}</ul>${ocultas ? `<p class="be-muted oculto-n2">${ocultas} ${ocultas === 1 ? 'otra fuente oculta' : 'otras fuentes ocultas'} por el filtro «Solo la Biblia y jw.org».</p>` : ''}`;
+    ${avisoFuenteHtml(f)}</div></li>`).join('')}</ul>${ocultas ? `<p class="be-muted oculto-n2">${ocultas} ${ocultas === 1 ? 'otra fuente oculta' : 'otras fuentes ocultas'} por el filtro «Solo fuentes principales».</p>` : ''}`;
 }
 /** Marca del tipo de fuente de un hecho (C-01). Al pulsarla se despliegan sus fuentes con enlace. */
 function insigniaHtml(ids) {
@@ -67,7 +67,7 @@ function proponerHtml(tipo, id, nombre) {
   if (!carpeta || !id) return '';
   const fichero = `data/${carpeta}/${id}.yaml`;
   const titulo = `Corrección: ${nombre || id} (${tipo})`;
-  const cuerpo = `Fichero: \`${fichero}\`\nVista: ${location.href.split('?')[0].replace(/#.*$/, '')}#sel=${tipo}:${id}\n\n**Qué dato está mal**\n\n\n**Qué debería decir**\n\n\n**Fuente de jw.org que lo sostiene** (URL de jw.org y párrafo)\n\n`;
+  const cuerpo = `Fichero: \`${fichero}\`\nVista: ${location.href.split('?')[0].replace(/#.*$/, '')}#sel=${tipo}:${id}\n\n**Qué dato está mal**\n\n\n**Qué debería decir**\n\n\n**Fuente que lo sostiene** (enlace y párrafo)\n\n`;
   const url = `${REPO}/issues/new?title=${encodeURIComponent(titulo)}&body=${encodeURIComponent(cuerpo)}&labels=${encodeURIComponent('corrección')}`;
   return `<a class="be-wol proponer" href="${esc(url)}" ${EXTERNO} title="Abre una incidencia en GitHub con el fichero ${esc(fichero)}">Proponer una corrección</a>`;
 }

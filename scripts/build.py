@@ -852,10 +852,35 @@ def escribir_json(salida, rutas, ruta_js):
 CONTADOS = ("lugares", "personas", "eventos", "periodos", "cartas", "viajes", "hallazgos", "recorridos", "fuentes", "libros")
 
 
+def cifras_fuentes(salida):
+    """(fuentes escritas que algún dato cita, capítulos de la Biblia que añade la compilación). Son las dos cifras de
+    la portada (cifrasFuentes en site/js/portada.js cuenta igual) y de las insignias del README. Los cargos de una
+    persona (`offices`) se compilan con sus fuentes en `sources`, así que se cuentan las dos claves."""
+    F = salida["fuentes"]
+    citadas = {fid for k, v in salida.items() if k != "fuentes"
+               for claves in (("fuentes", "fuente"), ("sources", "source")) for _, fid in fuentes_de(v, claves)}
+    return (sum(1 for fid, f in F.items() if not f.get("implicita") and fid in citadas),
+            sum(1 for f in F.values() if f.get("implicita")))
+
+
+def _cuenta_fuentes(salida):
+    """La fila «Fuentes» del índice del registro: el total de su página y, dentro, las mismas dos cifras que la
+    portada y las insignias del README, para que las tres no parezcan contar cosas distintas."""
+    total = len(salida["fuentes"])
+    enlazadas, capitulos = cifras_fuentes(salida)
+    sin_citar = total - enlazadas - capitulos
+    partes = [f"{enlazadas} enlazadas por algún dato", f"{capitulos} capítulos de la Biblia"]
+    if sin_citar:
+        partes.append(f"{sin_citar} sin citar")
+    return f"{total}: {', '.join(partes[:-1])} y {partes[-1]}"
+
+
 def resumen(salida):
-    """Cuántas fichas hay de cada tipo. Lo leen las insignias del README a través de site/stats.json."""
+    """Cuántas fichas hay de cada tipo. Lo leen las insignias del README a través de site/stats.json. `fuentes` son
+    las escritas que algún dato cita y `capitulos`, los capítulos de la Biblia que la compilación crea como fuentes."""
     r = {"generado": salida["generado"]}
     r.update({k: len(salida[k]) for k in CONTADOS})
+    r["fuentes"], r["capitulos"] = cifras_fuentes(salida)
     return r
 
 
@@ -1269,7 +1294,7 @@ def registros(salida, legado, datos):
                "hallazgos": len(salida["hallazgos"]), "recorridos": len(salida["recorridos"]),
                "libros": f"{len(salida['libros'])} libros, {len(salida['calendario'].get('meses') or [])} meses",
                "cobertura": f"{tot_cob['completos']} de {tot_cob['capitulos']} capítulos completos",
-               "fuentes": len(F)}
+               "fuentes": _cuenta_fuentes(salida)}
     indice = ["<!-- Generado por scripts/build.py a partir de data/. No editar a mano. -->", "",
               "# Registro de investigación", "",
               "> Lo genera `scripts/build.py` a partir de `data/`, un fichero por tipo. No se edita a mano.",
