@@ -4,7 +4,7 @@
 # nunca borre la aplicación (mkdocs vacía site_dir antes de escribir).
 site_name: biblical-atlas
 site_url: https://biblical-atlas.geiser.cloud/docs/
-site_description: Mapa y línea de tiempo para estudiar la Biblia en familia, con cada dato enlazado a su fuente en jw.org
+site_description: Mapa y línea de tiempo para estudiar la Biblia en familia, con cada dato enlazado a su fuente
 repo_url: https://github.com/GeiserX/biblical-atlas
 repo_name: GeiserX/biblical-atlas
 edit_uri: edit/main/docs/

@@ -48,7 +48,7 @@ function serve(dir, dataFile) {
   return new Promise((ok) => server.listen(0, '127.0.0.1', () => ok(server)));
 }
 
-let browser, server, base, tmp;
+let browser, server, base, tmp, statsFile;
 before(async () => {
   let data = process.env.BE_DATA_FILE ? path.resolve(process.env.BE_DATA_FILE) : path.join(SITE_DIR, 'data.json');
   if (!fs.existsSync(data)) {
@@ -56,6 +56,7 @@ before(async () => {
     execFileSync('python3', [path.join(ROOT, 'scripts/build.py'), '--salida', tmp], { cwd: ROOT, stdio: 'pipe' });
     data = path.join(tmp, 'data.json');
   }
+  statsFile = path.join(path.dirname(data), 'stats.json');   // build.py writes it beside data.json
   server = await serve(SITE_DIR, data);
   base = `http://127.0.0.1:${server.address().port}/`;
   const chromium = loadChromium();
@@ -122,6 +123,18 @@ test('a cold open shows the landing over an inert site; an address opens its vie
   assert.equal(t.inert, 0);
   assert.equal(await shared.locator('#vista-portada').isVisible(), false);
   assert.deepEqual([...page.pageErrors, ...shared.pageErrors], []);
+});
+
+test('the landing paints the figures build.py counts for the README badges', async (t) => {
+  // stats.json comes from scripts/build.py, not from portada.js: if the landing counted every source again (3321
+  // instead of the cited ones), or a figure went missing, the painted sentence would differ.
+  if (!fs.existsSync(statsFile)) { t.skip(`${statsFile} is missing: build the data with python3 scripts/build.py`); return; }
+  const st = JSON.parse(fs.readFileSync(statsFile, 'utf8'));
+  const n = (k) => st[k].toLocaleString('es');
+  const page = await openPage();
+  assert.equal((await page.locator('#portada-cifras').textContent()).trim(),
+    `${n('eventos')} sucesos, ${n('lugares')} lugares y ${n('personas')} personas, enlazados a ${n('fuentes')} fuentes y a ${n('capitulos')} capítulos de la Biblia.`);
+  assert.deepEqual(page.pageErrors, []);
 });
 
 test('on a cold open the keys scroll the landing and never drive the site behind it', async () => {

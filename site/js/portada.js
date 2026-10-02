@@ -47,7 +47,40 @@ function lineaEpoca(resumen, libros) {
   const nombra = (f) => { const n = ` ${normal(f).replace(/[^a-z0-9ñ ]+/g, ' ')} `; return nombres.some((l) => n.includes(` ${l} `)); };
   return [...frases].reverse().find(nombra) || frases[0] || '';
 }
-const reglas = { ordenPortada, dirPeriodo, dirRecorrido, dirLineaCompleta, vueltaValida, debeGuardar, lineaEpoca };
+/** Las dos cifras de las fuentes: las escritas que algún dato cita (en una lista `fuentes` o en una `fuente` suelta,
+    a cualquier profundidad; los cargos de una persona las llevan en `sources`) y los capítulos de la Biblia que añade la compilación (`implicita`). Cuenta igual que
+    cifras_fuentes en scripts/build.py, que las escribe en stats.json para las insignias del README. */
+function cifrasFuentes(D) {
+  const F = D?.fuentes || {};
+  const citadas = new Set();
+  const pila = Object.keys(D || {}).filter((k) => k !== 'fuentes').map((k) => D[k]);
+  while (pila.length) {
+    const x = pila.pop();
+    if (Array.isArray(x)) { pila.push(...x); continue; }
+    if (!x || typeof x !== 'object') continue;
+    for (const [k, v] of Object.entries(x)) {
+      if ((k === 'fuentes' || k === 'sources') && Array.isArray(v)) v.forEach((id) => citadas.add(id));
+      else if ((k === 'fuente' || k === 'source') && typeof v === 'string') citadas.add(v);
+      else pila.push(v);
+    }
+  }
+  let enlazadas = 0, capitulos = 0;
+  for (const [id, f] of Object.entries(F)) {
+    if (f?.implicita) capitulos++;
+    else if (citadas.has(id)) enlazadas++;
+  }
+  return { enlazadas, capitulos };
+}
+/** La frase de las cifras: «1439 sucesos, 934 lugares y 1312 personas, enlazados a 2463 fuentes y a 834 capítulos
+    de la Biblia.» Lo que vale cero no se nombra. */
+function fraseCifras({ sucesos = 0, lugares = 0, personas = 0, enlazadas = 0, capitulos = 0 }) {
+  const y = (xs, sep = ' y ') => (xs.length > 1 ? `${xs.slice(0, -1).join(', ')}${sep}${xs[xs.length - 1]}` : xs[0] || '');
+  const fichas = [[sucesos, 'sucesos'], [lugares, 'lugares'], [personas, 'personas']].filter(([k]) => k > 0).map(([k, w]) => `${k.toLocaleString('es')} ${w}`);
+  if (!fichas.length) return '';
+  const fuentes = [[enlazadas, 'fuentes'], [capitulos, 'capítulos de la Biblia']].filter(([k]) => k > 0).map(([k, w], i) => `${i ? 'a ' : ''}${k.toLocaleString('es')} ${w}`);
+  return `${y(fichas)}${fuentes.length ? `, enlazados a ${y(fuentes)}` : ''}.`;
+}
+const reglas = { ordenPortada, dirPeriodo, dirRecorrido, dirLineaCompleta, vueltaValida, debeGuardar, lineaEpoca, cifrasFuentes, fraseCifras };
 
 if (typeof document === 'undefined') { BE.portada = { reglas }; return; }
 
@@ -354,10 +387,7 @@ function pintarDatos() {
       <span class="portada-recorrido__ir" aria-hidden="true">Empezar</span></a></li>`;
   }).join('');
   const n = (x) => (Array.isArray(x) ? x.length : Object.keys(x || {}).length);
-  const partes = [[n(D.eventos), 'sucesos'], [n(D.lugares), 'lugares'], [n(D.personas), 'personas']].filter(([k]) => k > 0).map(([k, w]) => `${k.toLocaleString('es')} ${w}`);
-  const fuentes = n(D.fuentes);
-  $('#portada-cifras').textContent = partes.length
-    ? `${partes.length > 1 ? `${partes.slice(0, -1).join(', ')} y ${partes[partes.length - 1]}` : partes[0]}.${fuentes ? ` ${fuentes.toLocaleString('es')} fuentes citadas.` : ''}` : '';
+  $('#portada-cifras').textContent = fraseCifras({ sucesos: n(D.eventos), lugares: n(D.lugares), personas: n(D.personas), ...cifrasFuentes(D) });
   if (D.generado) $('#portada-generado').textContent = ` · Datos del ${BE.fmtDia(D.generado)}`;
   // Un destino escrito a mano, o guardado en «Seguir», que ya no está en los datos no se ofrece.
   pintarSeguir();

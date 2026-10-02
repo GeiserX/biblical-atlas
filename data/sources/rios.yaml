@@ -1,0 +1,16 @@
+# biblical-atlas: fuentes del carril «ríos» (dónde va el punto de un río largo). Esquema en docs/investigacion/README.md.
+natural-earth-rios:
+  title: Rivers + lake centerlines, 1:10m (v5.1.2)
+  work: Natural Earth (dominio público)
+  url: https://github.com/nvkelso/natural-earth-vector/blob/v5.1.2/geojson/ne_10m_rivers_lake_centerlines.geojson
+  level: 2
+  published: null
+  checked_on: '2026-10-02'
+  note: Cauce de hoy. Solo lo usamos para medir sobre él el punto de un río.
+dp-12:
+  title: Un mensajero de Dios fortalece a Daniel
+  work: ¡Prestemos atención a las profecías de Daniel!
+  url: https://www.jw.org/es/biblioteca/libros/Prestemos-atenci%C3%B3n-a-las-profec%C3%ADas-de-Daniel/Un-mensajero-de-Dios-fortalece-a-Daniel/
+  level: 1
+  published: null
+  checked_on: '2026-10-02'
