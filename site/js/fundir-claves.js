@@ -1,6 +1,6 @@
 /* biblical-atlas · junta dos juegos de claves guardadas sin perder nada. Script clásico y sin efectos: solo define
-   window.fundirClaves. Lo usan migrar-claves.js (el prefijo anterior, en este mismo navegador) y traer.js (la dirección
-   anterior del sitio), así que va antes que los dos en index.html.
+   window.fundirClaves. Lo usa migrar-claves.js (el prefijo anterior, en este mismo navegador), así que va antes en
+   index.html.
    - lo que ya hay aquí manda: nunca se borra ni se pisa una clave;
    - las notas de fichas que aquí no tienen nota se añaden; si una ficha tiene una nota distinta en cada lado, se queda la
      de aquí y la copia que llega se aparta entera una vez, como las notas que no se pudieron leer, y «Mis notas» la
@@ -10,7 +10,7 @@
 'use strict';
 window.fundirClaves = (() => {
   const APARTE = 'notes:unreadable:';
-  const FUERA = new Set(['migrado', 'traido']);
+  const FUERA = new Set(['migrado']);
 
   const parse = (s) => { try { return JSON.parse(s); } catch { return undefined; } };
   const esNotas = (o) => !!o && typeof o === 'object' && !!o.notes && typeof o.notes === 'object' && !Array.isArray(o.notes);
