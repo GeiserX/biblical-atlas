@@ -349,6 +349,11 @@ function aplicarHash(inicial) {
   // arrancar lo pone encuadreDeInicio.
   const encuadreGuardado = inicial ? null : BE.historia?.marco();
   if (h.t != null) E.t = h.t;
+  // Un enlace con un suceso y una fecha fuera de donde la línea pone hoy ese suceso (los enlaces de antes de que el relato
+  // se atara con sus plazos, be-64b.15): el cursor va al suceso, para que su marca se vea.
+  const ev = inicial && h.t != null && h.sel?.tipo === 'evento' ? BE.D.eventos.find((e) => e.id === h.sel.id) : null;
+  const wv = ev && BE.ventanaEvento(ev);
+  if (wv && !(wv[0] <= E.t && E.t < wv[1])) E.t = BE.momentoEvento(ev);
   if (h.mapa) BE.ponerMapa(h.mapa, false);
   for (const x of parametros) x.leer(h.p.get(x.nombre), inicial);
   const s = h.sel ?? null;

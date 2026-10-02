@@ -12,6 +12,8 @@ date:
 narrative_order:
   series: jueces-apendice
   order: 20012
+  elapsed:
+    reason: 'Jue 20:12-14: desde Mizpá mandan mensajeros a Benjamín, que se niega. El texto no da el plazo.'
 places:
 - guibea-de-benjamin
 - benjamin
@@ -38,5 +40,5 @@ history:
   change: 'Pasa de la serie jueces a jueces-apendice. Perspicacia «Jueces, Libro de», «Orden del libro», pone los capítulos
     19 a 21 poco después de morir Josué, aparte de los jueces; en su serie adelantaban Jue 1:8-11:3.'
   source: it-jueces
-checked_on: '2026-09-29'
+checked_on: '2026-10-02'
 status: verified

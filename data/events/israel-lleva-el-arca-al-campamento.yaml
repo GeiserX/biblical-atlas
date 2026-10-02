@@ -12,6 +12,8 @@ date:
 narrative_order:
   series: 1-samuel
   order: 4003
+  elapsed:
+    reason: '1Sa 4:3, 4: tras la derrota mandan traer el Arca desde Siló. El texto no dice cuántos días pasan.'
 places:
 - ebenezer
 - silo
@@ -42,5 +44,5 @@ history:
   change: 'Empezaba c. 1180 y se ordenaba antes de Jefté. Ahora empieza c. 1173: Jefté juzga en los primeros años de Samuel,
     y aquí Samuel ya es un profeta conocido.'
   source: it-jefte
-checked_on: '2026-09-29'
+checked_on: '2026-10-02'
 status: verified

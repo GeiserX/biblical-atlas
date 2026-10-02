@@ -12,6 +12,9 @@ date:
 narrative_order:
   series: 1-samuel
   order: 2001
+  elapsed:
+    days: 0
+    reason: '1Sa 2:1; Perspicacia «Ana»: el cántico es de la misma visita en que presentan a Samuel en el tabernáculo.'
 places:
 - silo
 people:
@@ -31,5 +34,5 @@ links:
 - title: 1 Samuel 2 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/1-samuel/2/
   type: bible
-checked_on: '2026-09-29'
+checked_on: '2026-10-02'
 status: verified

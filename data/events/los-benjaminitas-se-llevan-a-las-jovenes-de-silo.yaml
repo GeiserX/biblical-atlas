@@ -12,6 +12,8 @@ date:
 narrative_order:
   series: jueces-apendice
   order: 21016
+  elapsed:
+    reason: 'Jue 21:14-21: faltan esposas tras la paz y esperan la fiesta anual de Siló. El texto no dice cuánto después.'
 places:
 - silo
 - benjamin
@@ -37,5 +39,5 @@ history:
   change: 'Pasa de la serie jueces a jueces-apendice. Perspicacia «Jueces, Libro de», «Orden del libro», pone los capítulos
     19 a 21 poco después de morir Josué, aparte de los jueces; en su serie adelantaban Jue 1:8-11:3.'
   source: it-jueces
-checked_on: '2026-09-29'
+checked_on: '2026-10-02'
 status: verified

@@ -578,5 +578,90 @@ class PuntoCompartidoEnValidate(unittest.TestCase):
         self.assertNotIn("shared_point", self.correr(33.6))
 
 
+class Transcurrido(unittest.TestCase):
+    """narrative_order.elapsed: lo que validate.py deja escribir es lo que el sitio sabe dibujar (be-64b.15)."""
+    def suceso(self, sid, orden, elapsed=None, desde=-1449, hasta=-1399, detalle=None):
+        n = {"series": "s", "order": orden}
+        if elapsed is not None:
+            n["elapsed"] = elapsed
+        f = {"from": desde, "to": hasta}
+        if detalle:
+            f["detail"] = detalle
+        return {"id": sid, "_fichero": f"data/events/{sid}.yaml", "narrative_order": n, "date": f}
+
+    def errores(self, *sucesos):
+        out = []
+        validate.validar_transcurrido({"events": list(sucesos)}, out.append)
+        return out
+
+    def test_validos(self):
+        a = self.suceso("a", 1)
+        self.assertEqual(self.errores(a, self.suceso("b", 2, {"days": 4, "reason": "Jue 19:8."})), [])
+        self.assertEqual(self.errores(a, self.suceso("b", 2, {"reason": "Sin plazo en el texto."})), [])
+        # since a la cabeza, con sucesos sin elapsed en medio: se reparten entre los dos (Asdod, Gat y Ecrón).
+        self.assertEqual(self.errores(a, self.suceso("b", 2, {"reason": "x"}), self.suceso("c", 3),
+                                      self.suceso("d", 4, {"since": "a", "months": 4, "reason": "x"})), [])
+        # since a uno atado de la cadena.
+        self.assertEqual(self.errores(a, self.suceso("b", 2, {"days": 1, "reason": "x"}), self.suceso("c", 3, {"days": 0, "reason": "x"}),
+                                      self.suceso("d", 4, {"since": "b", "days": 1, "reason": "x"})), [])
+
+    def test_errores_de_forma(self):
+        a = self.suceso("a", 1)
+        casos = {
+            "sin reason": {"days": 1},
+            "dos cifras": {"days": 1, "months": 2, "reason": "x"},
+            "negativa": {"years": -1, "reason": "x"},
+            "no es número": {"days": "uno", "reason": "x"},
+            "nan": {"days": float("nan"), "reason": "x"},
+            "infinita": {"years": float("inf"), "reason": "x"},
+            "clave de más": {"days": 1, "reason": "x", "note": "y"},
+            "since posterior": {"since": "c", "reason": "x"},
+            "since que no existe": {"since": "z", "reason": "x"},
+        }
+        for nombre, el in casos.items():
+            with self.subTest(nombre):
+                self.assertEqual(len(self.errores(a, self.suceso("b", 2, el), self.suceso("c", 3))), 1)
+
+    def test_since_a_un_suceso_sin_atar_entre_dos_atados(self):
+        # Revisión del motor, caso 1: since a Gat, que no lleva elapsed, dibujaba la devolución 65 meses después de Gat.
+        e = self.errores(self.suceso("captura", 1), self.suceso("dagon", 2, {"reason": "x"}), self.suceso("gat", 3),
+                         self.suceso("devolucion", 4, {"since": "gat", "months": 1, "reason": "x"}))
+        self.assertEqual(len(e), 1)
+        self.assertIn("no es la cabeza ni un suceso atado", e[0])
+
+    def test_since_anterior_a_la_cabeza(self):
+        # Caso 2: since a un suceso de antes de la cabeza de la cadena.
+        e = self.errores(self.suceso("antes", 1), self.suceso("cabeza", 2), self.suceso("b", 3, {"reason": "x"}),
+                         self.suceso("c", 4, {"since": "antes", "months": 1, "reason": "x"}))
+        self.assertEqual(len(e), 1)
+        self.assertIn("no es la cabeza ni un suceso atado", e[0])
+
+    def test_un_ancla_a_un_lado_del_plazo(self):
+        # Caso 3: «tres días después» de un suceso con mes y día: el sitio lo dibujaba un día después, sin avisar.
+        ancla = self.suceso("templo", 1, desde=-1033, hasta=-1033, detalle={"month": "ziv", "day": 2})
+        e = self.errores(ancla, self.suceso("b", 2, {"days": 3, "reason": "x"}, -1033, -1033))
+        self.assertEqual(len(e), 1)
+        self.assertIn("ancla", e[0])
+        e = self.errores(self.suceso("a", 1), self.suceso("b", 2, {"days": 3, "reason": "x"}, -1033, -1033, {"month": "ziv"}))
+        self.assertEqual(len(e), 1)
+        self.assertIn("ancla", e[0])
+
+    def test_un_bloque_mas_largo_que_sus_fechas(self):
+        # Revisión del motor, hallazgo 1: tres años detrás de un nacimiento de un año, y 200 años en un tramo de 56.
+        nacimiento = self.suceso("nacimiento", 1, desde=-1179, hasta=-1179)
+        e = self.errores(nacimiento, self.suceso("entrega", 2, {"years": 3, "reason": "x"}, -1179, -1116))
+        self.assertEqual(len(e), 1)
+        self.assertIn("solo dejan 1.00", e[0])
+        e = self.errores(self.suceso("a", 1, desde=-1172, hasta=-1116), self.suceso("b", 2, {"years": 200, "reason": "x"}, -1172, -1116))
+        self.assertEqual(len(e), 1)
+        self.assertEqual(self.errores(self.suceso("a", 1, desde=-1172, hasta=-1116), self.suceso("b", 2, {"years": 20, "reason": "x"}, -1172, -1116)), [])
+
+    def test_el_primero_de_la_serie_no_tiene_de_donde_partir(self):
+        self.assertEqual(len(self.errores(self.suceso("a", 1, {"days": 1, "reason": "x"}))), 1)
+
+    def test_fechas_que_no_se_tocan(self):
+        self.assertEqual(len(self.errores(self.suceso("a", 1), self.suceso("b", 2, {"days": 1, "reason": "x"}, -1300, -1290))), 1)
+
+
 if __name__ == "__main__":
     unittest.main()

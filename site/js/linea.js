@@ -1407,7 +1407,7 @@ function pintarCursor() {
     otra.title = !txt ? '' : modoMeses() === 'nuestros' ? `Fecha hebrea aproximada.${fc.anacronicoSegunda ? ` ${CURSIVA_CHIP}` : ''}` : 'Nuestros meses, aproximados: el calendario gregoriano es de 1582 y aquí solo orienta';
   }
   // La cronología va en el texto emergente de la fecha, no en una pista visible: es jerga para quien lee.
-  const ayuda = `${pw?.estimada ? 'Fecha estimada: sabemos el orden del relato, no el día. ' : ''}${fc.anacronico ? `${CURSIVA_CHIP} ` : ''}Fechas según la cronología de la Traducción del Nuevo Mundo. Pulsa para ir a otra fecha.`;
+  const ayuda = `${pw?.estimada || BE.relatoEn?.(E.t) ? 'Fecha estimada: sabemos el orden del relato, no el día. ' : ''}${fc.anacronico ? `${CURSIVA_CHIP} ` : ''}Fechas según la cronología de la Traducción del Nuevo Mundo. Pulsa para ir a otra fecha.`;
   if ($('#fecha-valor').title !== ayuda) $('#fecha-valor').title = ayuda;
   $('#linea-estado').textContent = BE.fraseAhora ? BE.fraseAhora(E.t) : '';
   // Edad en la fecha, solo con base (T-18).
