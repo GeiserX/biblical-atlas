@@ -302,7 +302,8 @@ function lugarDesconocido(area) {
     Es una conjetura con su fuente, no lo que dice el texto: nadie se sitúa en ella (BE.puntoLugar no la mira). */
 function zonaConjeturada(g) {
   const b = g.bbox, c = g.center ? [g.center.lon, g.center.lat] : [(b[0][0] + b[1][0]) / 2, (b[0][1] + b[1][1]) / 2];
-  return { nombre: g.name, ring: g.ring, bbox: b, centro: c, fuentes: g.sources || [], razon: g.reason, nota: g.note, estado: g.status };
+  return { nombre: g.name, ring: g.ring, bbox: b, centro: c, fuentes: g.sources || [], segun: g.according_to, fuerza: g.strength || 'probable',
+    razon: g.reason, nota: g.note, estado: g.status };
 }
 /** Tiempo de cada área desconocida, ya colocadas las demás paradas: un tramo de camino antes de la primera parada con
     lugar de su viaje (de allí vienen) o después de la última (allí van), sin salir de la fecha del viaje si cabe. El

@@ -125,6 +125,18 @@
   border-radius: 8px; border: 1px dashed var(--viajero); background: color-mix(in srgb, var(--surface) 88%, transparent); opacity: 1; }
 .area-desc--zona .area-desc__rotulo { position: static; transform: none; }
 .area-desc--zona.area-desc--otra .area-desc__zona { border-style: dotted; }
+/* La ficha del borde de una zona que no se ve (mapa.js, pintarChipsZona): sus palabras, su conjetura y una flecha. */
+.area-chip { position: absolute; z-index: 4; transform: translate(-50%, -50%); display: inline-flex; align-items: center; gap: 6px; max-width: min(320px, 70%);
+  padding: 5px 10px; border-radius: var(--r-pill); border: 1.5px dashed var(--viajero); background: color-mix(in srgb, var(--surface) 94%, transparent);
+  color: var(--ink); font: 500 12px/1.2 var(--font-sans); box-shadow: var(--shadow-1); cursor: pointer; text-align: left; }
+.area-chip b { color: var(--viajero); }
+.be-reunion .area-chip b { color: color-mix(in srgb, var(--viajero) 45%, #fff); }
+.area-chip__flecha { display: inline-block; color: var(--viajero); transform: rotate(var(--angulo)); }
+.area-chip[data-lado="este"] { transform: translate(-100%, -50%); }
+.area-chip[data-lado="oeste"] { transform: translate(0, -50%); }
+.area-chip[data-lado="norte"] { transform: translate(-50%, 0); }
+.area-chip[data-lado="sur"] { transform: translate(-50%, -100%); }
+.area-chip[hidden] { display: none; }
 .leyenda-area { width: 26px; height: 16px; margin: 0 0 0 0; border-radius: 50%; border: 2px dashed var(--viajero, var(--accent)); background: color-mix(in srgb, var(--viajero, var(--accent)) 9%, transparent); }
 .icono-lugar--area { border-radius: 50%; border-style: dashed; transform: none; }
 

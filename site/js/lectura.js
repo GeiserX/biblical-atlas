@@ -63,7 +63,10 @@ function pasajes(lib, cap) {
     antes que lo demás de su versículo y el destino, después. */
 function pasajeArea(s, aqui, lib, cap) {
   const llega = s.vecina && s.i < s.vecina.i;
-  return { sel: `parada:${s.key}`, ref: aqui, verso: versoInicial(s.p.referencia, lib, cap), titulo: `${BE.nombreDueno(s.viaje, true)}: ${llega ? 'de' : 'a'} ${s.lugar.nombre}, la fuente no dice dónde`,
+  // «de el campamento» y «a el campamento» se contraen, como en el habla.
+  const prep = (llega ? 'de ' : 'a ') + s.lugar.nombre;
+  const titulo = prep.replace(/^de el /, 'del ').replace(/^a el /, 'al ');
+  return { sel: `parada:${s.key}`, ref: aqui, verso: versoInicial(s.p.referencia, lib, cap), titulo: `${BE.nombreDueno(s.viaje, true)}: ${titulo}, la fuente no dice dónde`,
     vecina: s.vecina?.lugar.id, resumen: s.p.nota || '', lugares: [], personas: [BE.duenoViaje(s.viaje)].filter((x) => BE.PERS[x]), fecha: s.p.fecha, narrativa: true, orden: llega ? -1e9 : 1e9 };
 }
 
