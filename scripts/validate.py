@@ -1670,7 +1670,8 @@ def _km(a, b):
 
 def puntos_compartidos(datos, warn):
     """Aviso shared_point: un río, mar o valle a menos de 0,5 km de otro lugar que no sea una región, salvo que su
-    coord_note nombre a ese lugar (con su nombre o uno de sus names)."""
+    coord_note nombre a ese lugar (con su nombre o uno de sus names, como palabra entera: «Ur» no cuenta dentro de
+    «curso»)."""
     con_punto = [o for o in datos["places"] if _numero(o.get("lat")) and _numero(o.get("lon"))]
     for o in con_punto:
         if o.get("type") not in LUGARES_LARGOS:
@@ -1680,7 +1681,7 @@ def puntos_compartidos(datos, warn):
             if q is o or q.get("type") in ROTULO_APARTE or _km(o, q) >= RADIO_COMPARTIDO_KM:
                 continue
             nombres = {str(q.get("name") or "")} | {str(n.get("name") or "") for n in q.get("names") or []}
-            if any(n and n.lower() in nota for n in nombres):
+            if any(n and re.search(r"(?<!\w)" + re.escape(n.lower()) + r"(?!\w)", nota) for n in nombres):
                 continue
             warn("shared_point", f"{o['_fichero']}: su punto está a {_km(o, q):.2f} km del de {q.get('id')} y "
                                  f"coord_note no lo nombra; muévelo con su razón o explica en coord_note por qué lo comparte")

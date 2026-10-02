@@ -130,6 +130,13 @@ class PuntoCompartido(unittest.TestCase):
             with self.subTest(nota=nota):
                 self.assertEqual(avisos_punto(dict(self.RIO, coord_note=nota), self.CIUDAD), [])
 
+    def test_un_nombre_corto_dentro_de_otra_palabra_no_lo_quita(self):
+        ur = dict(self.CIUDAD, name="Ur", names=[{"name": "Ur"}])
+        for nota in ("Punto representativo del curso.", "Punto en la desembocadura."):
+            with self.subTest(nota=nota):
+                self.assertEqual(len(avisos_punto(dict(self.RIO, coord_note=nota), ur)), 1)
+        self.assertEqual(avisos_punto(dict(self.RIO, coord_note="Mismo punto que Ur, a propósito."), ur), [])
+
     def test_una_region_no_cuenta(self):
         self.assertEqual(avisos_punto(self.RIO, dict(self.CIUDAD, type="region")), [])
 
