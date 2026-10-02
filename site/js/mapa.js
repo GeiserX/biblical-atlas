@@ -828,7 +828,7 @@ function enfocarCandidato(lugar, i, volar = true) {
   const c = candidatosDe(BE.L[lugar])?.[+i];
   if (c && volar && map) {
     const g = c.geometria;
-    if (g.tipo === 'zona') map.fitBounds(c.shape?.bbox || cajaDe([[g.lon, g.lat]], g.radio_km), { padding: rellenoEncuadre(), maxZoom: g.radio_km < 3 ? 12 : 8, duration: 700 });
+    if (g.tipo === 'zona') { const caja = c.shape?.bbox || cajaDe([[g.lon, g.lat]], g.radio_km); map.fitBounds(caja, { padding: rellenoEncuadre(caja), maxZoom: g.radio_km < 3 ? 12 : 8, duration: 700 }); }
     else map.easeTo({ center: centroCandidato(c), zoom: Math.max(map.getZoom(), 7), duration: 700 });
   }
   document.querySelectorAll('#panel-cuerpo [data-cand]').forEach((el) => {
@@ -1713,8 +1713,7 @@ function encuadrarEpoca(t, { siVisible = false } = {}) {
   if (!map) return;   // sin MapLibre (unpkg caído) la línea y las fichas siguen: no hay nada que encuadrar
   const pts = lugaresDeEpoca(t).flatMap(puntosDe);
   if (!pts.length) return;
-  // Como encuadrarLugares, pero sin dejar nada bajo la tarjeta «Mientras tanto» (arriba a la derecha en escritorio).
-  const padding = rellenoConMientras();
+  const padding = rellenoEncuadre(cajaDe(pts));
   // «Ya se ve» es dentro de la parte libre del mapa: en el móvil, un punto bajo la hoja inferior no se ve.
   if (siVisible) {
     const z = zonaLibre();
@@ -1741,15 +1740,48 @@ function cajaDe(pts, km = 0) {
   const dLat = km / 111, dLon = km / (111 * Math.cos((lats[0] * Math.PI) / 180));
   return [[Math.min(...lons) - dLon, Math.min(...lats) - dLat], [Math.max(...lons) + dLon, Math.max(...lats) + dLat]];
 }
-function rellenoEncuadre() {
-  const hoja = altoHoja(), alto = map.getContainer().clientHeight;
-  // En escritorio la leyenda ocupa la esquina de abajo a la izquierda: lo encuadrado no queda debajo de ella. Al
-  // encuadrar, la leyenda aún puede tener el contenido de antes, así que se cuenta al menos su alto habitual.
-  const ley = $('#leyenda'), bajoLeyenda = !estrecha() && ley && ley.offsetParent ? Math.max(ley.offsetHeight, 210) + 40 : 0;
-  // En escritorio la tarjeta del recorrido guiado ocupa la esquina de arriba a la izquierda: se deja libre su ancho y
-  // media píldora de números de parada, que va encima de su lugar.
-  const rec = $('#vista-recorrido'), junto = !estrecha() && rec && !rec.hidden && rec.offsetParent ? rec.offsetLeft + rec.offsetWidth + 84 : 0;
-  return caber({ top: estrecha() ? 56 : 80, bottom: Math.min(Math.max(hoja + 50, bajoLeyenda), alto * 0.6), left: Math.max(estrecha() ? 30 : 70, junto), right: estrecha() ? 50 : 80 });
+/** Tarjetas que tapan el mapa, en píxeles del contenedor, con la esquina en que están: la leyenda (abajo a la izquierda),
+    «Mientras tanto» (arriba a la derecha), las del recorrido guiado, «Ahora mismo» y el mapa de situación (arriba a la
+    izquierda). Antes de medirlas se pintan la leyenda y «Mientras tanto» de la selección y la fecha nuevas: al encuadrar
+    aún tienen las de antes, y con ellas lo encuadrado acababa debajo. */
+function tapas() {
+  pintarMapa();
+  const c = map.getContainer().getBoundingClientRect(), out = [];
+  const els = [$('#leyenda'), $('#mientras'), ...document.querySelectorAll('#vista-recorrido > *'), $('#vista-ahora'), $('#situacion')];
+  for (const el of els) {
+    if (!el || el.hidden || !el.offsetParent) continue;
+    const r = el.getBoundingClientRect();
+    if (r.width < 2 || r.height < 2 || r.right <= c.left || r.left >= c.right || r.bottom <= c.top || r.top >= c.bottom) continue;
+    out.push({ x0: r.left - c.left, x1: r.right - c.left, y0: r.top - c.top, y1: r.bottom - c.top,
+      izq: r.left + r.right < c.left + c.right, arriba: r.top + r.bottom < c.top + c.bottom });
+  }
+  return out;
+}
+/** Relleno para encuadrar la caja [[oeste, sur], [este, norte]] en la parte del mapa que no tapan las tarjetas (tapas).
+    Cada tarjeta se deja libre por su lado o por encima o debajo; de todas las maneras se queda la que deja la caja más
+    grande. Con el mapa bajo (la línea de tiempo alta), lo encuadrado va encima de la leyenda o entre ella y «Mientras
+    tanto», nunca debajo. En el móvil la hoja inferior tapa el fondo del mapa. */
+function rellenoEncuadre(caja = [[0, 0], [0, 0]]) {
+  const c = map.getContainer(), W = c.clientWidth, H = c.clientHeight, base = map.getPadding();
+  const borde = estrecha() ? { top: 44, bottom: Math.min(altoHoja() + 30, H * 0.6), left: 24, right: 50 } : { top: 44, bottom: 30, left: 40, right: 60 };
+  const ts = tapas(), M = 24;
+  // La forma de la caja en píxeles al zoom 0; un punto cuenta como una caja diminuta, y gana el hueco más ancho y alto.
+  const [[o, s], [e, n]] = caja;
+  const bw = Math.max(((e - o) / 360) * 512, 1e-6), bh = Math.max(((mercY(n) - mercY(s)) / (2 * Math.PI)) * 512, 1e-6);
+  let mejor = null;
+  for (let k = 0; k < 1 << ts.length; k++) {
+    const p = { ...borde };
+    ts.forEach((t, i) => {
+      if (k & (1 << i)) { if (t.izq) p.left = Math.max(p.left, t.x1 + M); else p.right = Math.max(p.right, W - t.x0 + M); }
+      else if (t.arriba) p.top = Math.max(p.top, t.y1 + M); else p.bottom = Math.max(p.bottom, H - t.y0 + M);
+    });
+    const w = W - base.left - base.right - p.left - p.right, h = H - base.top - base.bottom - p.top - p.bottom;
+    if (w < 20 || h < 20) continue;
+    const z = Math.min(w / bw, h / bh);
+    if (!mejor || z > mejor.z) mejor = { z, p };
+  }
+  // caber() no encoge lo elegido: devolvería lo encuadrado bajo la leyenda.
+  return mejor?.p || caber(borde);
 }
 /** Que el relleno quepa en lo que deja el relleno propio del mapa: con el grafo abierto, grafo.js lo pone a 768 px a la
     izquierda, y los márgenes más la tarjeta «Mientras tanto» ya no cabían («Map cannot fit within canvas…»). Se encoge
@@ -1760,28 +1792,6 @@ function caber(p) {
   const fx = p.left + p.right > libreX ? libreX / (p.left + p.right) : 1;
   const fy = p.top + p.bottom > libreY ? libreY / (p.top + p.bottom) : 1;
   return { top: p.top * fy, bottom: p.bottom * fy, left: p.left * fx, right: p.right * fx };
-}
-/** rellenoEncuadre y, en escritorio, sin dejar nada bajo la tarjeta «Mientras tanto» (arriba a la derecha). Al encuadrar
-    tras cambiar de selección la tarjeta aún no se ha repintado: si va a salir en esta fecha, se cuenta su ancho. */
-function rellenoConMientras() {
-  const padding = rellenoEncuadre(), mi = $('#mientras');
-  if (estrecha() || !mi) return padding;
-  const visible = !mi.hidden && mi.offsetParent, saldra = !!eleccionMientras(E.t);
-  if (visible || saldra) padding.right = Math.max(padding.right, (visible ? mi.offsetWidth : 290) + 40);
-  return caber(padding);
-}
-/** Relleno para encuadrar la forma de una zona. En escritorio con el mapa bajo (la línea de tiempo ocupa media
-    pantalla), la leyenda no deja sitio encima de ella y caber() encogía el relleno de abajo hasta meter la forma debajo:
-    entonces la forma va a la derecha de la leyenda, con todo el alto libre. */
-function rellenoForma() {
-  const p = rellenoConMientras(), ley = $('#leyenda');
-  if (estrecha() || !ley || !ley.offsetParent) return p;
-  const alto = map.getContainer().clientHeight;
-  // La leyenda va abajo a la izquierda (28 px del borde) y aún puede tener el contenido de antes: se cuenta al menos su
-  // alto habitual y el ancho que le da su fila más larga («A trazos: tramo hacia un lugar incierto…», unos 510 px).
-  const arriba = alto - 28 - Math.min(Math.max(ley.offsetHeight, 210), alto - 120);
-  if (arriba - p.top >= 160) return p;
-  return caber({ ...p, bottom: 40, left: Math.max(p.left, ley.offsetLeft + Math.max(ley.offsetWidth, 520) + 30) });
 }
 /** Zoom más lejano al que se encuadra la forma de una zona: el de su punto (una región, 5,5). Si la forma no cabe, se
     corta por arriba y por abajo en vez de quedarse diminuta. */
@@ -1834,6 +1844,8 @@ function topeRelieve(lon, lat) {
 const diagonalKm = ([[o, s], [e, n]]) => Math.hypot((e - o) * 111 * Math.cos((((s + n) / 2) * Math.PI) / 180), (n - s) * 111);
 function encuadrarLugares(ids) {
   if (!map) return;
+  // Antes de que cargue el mapa no hay leyenda ni «Mientras tanto» que esquivar: al cargar se encuadra otra vez.
+  encuadrePendiente = mapaListo && marcaPablo ? null : { ids, sel: BE.selTexto(E.sel) };
   const foco = lugaresEnFoco(ids);
   // Un lugar con forma se encuadra entero (Canaán va de Sidón a Gaza, no se queda en su punto de Galilea).
   const forma = (id) => conPunto(BE.L[id]) && BE.L[id].shape?.bbox;
@@ -1842,7 +1854,7 @@ function encuadrarLugares(ids) {
   if (!pts.length) { if (E.sel) encuadrarEpoca(E.t); return; }
   // Un lugar incierto con un candidato con forma (Benjamín, el desierto de Judá) se encuadra igual.
   const conForma = foco.some((id) => forma(id) || candidatosVisibles(BE.L[id]).some(({ c }) => c.shape?.bbox));
-  const padding = conForma ? rellenoForma() : rellenoConMientras();
+  const padding = rellenoEncuadre(cajaDe(pts));
   if (pts.length === 1) {   // fitBounds no deja el relleno fijado en el mapa, easeTo sí
     const [x, y] = pts[0];
     // Una ciudad se ve con la tierra de Israel ya en relieve fino y sus vecinos con nombre; una región, de más lejos; un
@@ -1901,7 +1913,7 @@ function iniciar() {
     crearPanelesMapa();
     crearMapa();
     // Con el encuadre de la entrada ya puesto (una recarga), Pablo no lo cambia.
-    map.once('load', () => { crearMarcas(); sucio.mapa = sucio.etiquetas = true; programar(); pintarSituacion(); requestAnimationFrame(() => requestAnimationFrame(() => { if (!marcoDeInicio) mostrarPablo(); })); });
+    map.once('load', () => { crearMarcas(); sucio.mapa = sucio.etiquetas = true; programar(); pintarSituacion(); requestAnimationFrame(() => requestAnimationFrame(() => { if (!marcoDeInicio) mostrarPablo(); encuadrarAlCargar(); })); });
   }
   iniciarCortina();
   ponerMapa(E.mapa, false);
@@ -1931,10 +1943,20 @@ function encuadreDeInicio() {
   else if (E.sel) encuadrarLugares([...E.resaltado.lugares]);
   else mostrarPablo();
 }
+/** Lo último que se pidió encuadrar antes de que cargara el mapa, con la selección de entonces: al cargar, con la leyenda
+    y «Mientras tanto» ya pintadas, se encuadra otra vez si la selección sigue siendo esa. El encuadre guardado de una
+    entrada (ponerMarco) lo anula. */
+let encuadrePendiente = null;
+function encuadrarAlCargar() {
+  const p = encuadrePendiente;
+  encuadrePendiente = null;
+  if (p && p.sel === BE.selTexto(E.sel)) encuadrarLugares(p.ids);
+}
 /** Pone el mapa en el encuadre que guardó una entrada del historial, sin animar, y sin que un salto en el tiempo de la
     misma vuelta lo cambie (vigilarSalto). */
 function ponerMarco({ lon, lat, zoom }) {
   if (!map) return;
+  encuadrePendiente = null;
   map.jumpTo({ center: [lon, lat], zoom });
   tSalto = E.t;
   clearTimeout(saltoTimer);
