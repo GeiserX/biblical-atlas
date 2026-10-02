@@ -73,6 +73,12 @@ REQUERIDOS = {
 REQ_PARADA = ["order", "place", "reference", "date", "note", "reason", "sources", "checked_on", "status"]
 # Valores cerrados de `repeats` en un viaje: el texto dice que el viaje se hacía cada año (1Sa 1:3, Lu 2:41).
 REPITE = {"yearly"}
+# Un área desconocida (`unknown_area` de una parada sin `place`): las palabras de la fuente y, si la fuente lo da, el
+# rumbo, uno de los ocho de la rosa. Las palabras son pocas (siete como mucho) porque son las de la fuente: así nunca
+# llegan a la racha de ocho palabras copiadas.
+RUMBOS = {"north", "northeast", "east", "southeast", "south", "southwest", "west", "northwest"}
+CAMPOS_AREA = {"words", "direction"}
+MAX_PALABRAS_AREA = 7
 REQ_PARADA_RECORRIDO = ["sel", "t", "text", "passages"]
 REQ_FUENTE = ["title", "work", "url", "level", "published", "checked_on"]
 ESTRUCTURA_LIBRO = {"slug", "num", "name", "abbr", "forms", "spoken", "chapters"}
@@ -239,6 +245,38 @@ def validar_repite(viaje, donde, err):
     """`repeats` es opcional en un viaje y, si está, es uno de REPITE. Lo sostienen las fuentes y la razón del viaje."""
     if "repeats" in viaje and (not isinstance(viaje["repeats"], str) or viaje["repeats"] not in REPITE):
         err(f"{donde}: repeats debe ser uno de {sorted(REPITE)}, no {viaje['repeats']!r}")
+
+
+def validar_areas(viaje, donde, err):
+    """Una parada lleva `place` (id de lugar) o, si el texto dice que se viene de un sitio o se va a uno que no sitúa,
+    `place: null` y `unknown_area: {words, direction}`, nunca las dos cosas. Solo la primera y la última parada pueden
+    ser un área desconocida, y al menos una parada tiene lugar (README de la investigación, «Viajes»)."""
+    paradas = [p for p in viaje.get("stops") or [] if isinstance(p, dict)]
+    for i, p in enumerate(paradas):
+        pd = f"{donde} stop {p.get('order', i)}"
+        area = p.get("unknown_area")
+        if "unknown_area" not in p:
+            if p.get("place") is None:
+                err(f"{pd}: sin place; una parada que el texto no sitúa lleva place: null y unknown_area")
+            continue
+        if p.get("place") is not None:
+            err(f"{pd}: place y unknown_area a la vez; un área desconocida lleva place: null")
+        if not isinstance(area, dict):
+            err(f"{pd}: unknown_area debe ser un objeto {{words, direction}}")
+            continue
+        if set(area) - CAMPOS_AREA:
+            err(f"{pd}: unknown_area lleva solo words y direction, no {sorted(set(area) - CAMPOS_AREA)}")
+        palabras = area.get("words")
+        if not isinstance(palabras, str) or not palabras.strip():
+            err(f"{pd}: unknown_area.words: las palabras con que la fuente nombra el sitio («Oriente», «su país»)")
+        elif len(palabras.split()) > MAX_PALABRAS_AREA:
+            err(f"{pd}: unknown_area.words tiene {len(palabras.split())} palabras; como mucho {MAX_PALABRAS_AREA}")
+        if "direction" in area and area["direction"] not in RUMBOS:
+            err(f"{pd}: unknown_area.direction debe ser uno de {sorted(RUMBOS)}, no {area['direction']!r}")
+        if 0 < i < len(paradas) - 1:
+            err(f"{pd}: un área desconocida solo puede ser la primera o la última parada")
+    if paradas and all("unknown_area" in p for p in paradas):
+        err(f"{donde}: todas las paradas son áreas desconocidas; un viaje necesita al menos un lugar")
 
 
 # ---------------------------------------------------------------- el esquema antiguo
@@ -1557,7 +1595,9 @@ def integrity(datos):
                 for p in companion_ids(o):
                     ref(f, "companions", p, "people")
                 for p in o.get("stops") or []:
-                    ref(f, f"stop {p.get('order')}: place", p.get("place"), "places")
+                    # Un área desconocida no tiene lugar: lo comprueba validar_areas.
+                    if p.get("place") is not None or "unknown_area" not in p:
+                        ref(f, f"stop {p.get('order')}: place", p.get("place"), "places")
             elif tipo == "letters":
                 ref(f, "writer", o.get("writer"), "people")
                 for lid in o.get("written_in") or []:
@@ -1668,6 +1708,7 @@ def validar(datos):
             if tipo == "journeys":
                 validar_viaje(limpio_, donde, err)
                 validar_repite(limpio_, donde, err)
+                validar_areas(limpio_, donde, err)
                 ordenes = []
                 for i, p in enumerate(limpio_.get("stops") or []):
                     pd = f"{donde} stop {p.get('order', i)}"
