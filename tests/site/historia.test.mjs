@@ -820,8 +820,13 @@ test('«Volver al mapa» goes back to the entry the map was on, with its Back; f
   // «Acerca de», from the top bar, and the calendar, from the date panel.
   const ways = [['Acerca de', /acerca\.html/, async () => page.locator('#acerca').click()],
     ['the calendar', /calendario\.html/, async () => { await page.locator('#fecha').click(); await page.locator('a.date-picker__link[data-calendario]').click(); }]];
+  const copied = [];
   for (const [what, url, go] of ways) {
     await Promise.all([page.waitForURL(url, { waitUntil: 'domcontentloaded' }), go()]);
+    // The mark lives in the entry, not in the address a person copies or bookmarks.
+    await page.waitForFunction(() => history.state?.volverAlMapa === true);
+    assert.doesNotMatch(page.url(), /volver=/, `${what}: the address still says volver=atras`);
+    copied.push(page.url());
     await volver(page);
     await ready(page);
     const h = await hist(page);
@@ -851,4 +856,29 @@ test('«Volver al mapa» goes back to the entry the map was on, with its Back; f
   await ready(shared);
   assert.equal((await snap(shared)).sel, 'lugar:corinto');
   assert.equal((await hist(shared)).state.step, 0);
+  // The address copied from either page, pasted over the landing in the same tab: the button leads to the map's view,
+  // never back to the landing behind it.
+  for (const url of copied) {
+    const over = await openPage(DESKTOP);
+    assert.equal((await snap(over)).landing, true);
+    await over.goto(url, { waitUntil: 'domcontentloaded' });
+    await volver(over);
+    await ready(over);
+    const v = await snap(over);
+    assert.equal(v.landing, false, `${url}: pasted over the landing, «Volver al mapa» went back to the landing`);
+    assert.equal(v.sel, 'lugar:corinto');
+  }
+  // Without the Navigation API (document.referrer instead), a reload of a section of «Acerca de» still has the map as
+  // its referrer: the button stays a link and does not go back to the page.
+  const sinApi = await openPage(DESKTOP, { hash: 't=50.3000', init: () => { Object.defineProperty(window, 'navigation', { value: undefined, configurable: true }); } });
+  await search(sinApi, 'Corinto');
+  await Promise.all([sinApi.waitForURL(/acerca\.html/, { waitUntil: 'domcontentloaded' }), sinApi.locator('#acerca').click()]);
+  assert.equal(await sinApi.evaluate(() => window.navigation), undefined, 'the Navigation API is still there: this case checks nothing');
+  assert.equal(await sinApi.evaluate(() => history.state?.volverAlMapa), true, 'without the API the referrer did not mark the entry');
+  await sinApi.evaluate(() => { location.hash = 'gracias'; });
+  await sinApi.reload({ waitUntil: 'domcontentloaded' });
+  await volver(sinApi);
+  await ready(sinApi);
+  assert.match(sinApi.url(), /index\.html#.*sel=lugar:corinto/);
+  assert.deepEqual([page.pageErrors, sinApi.pageErrors], [[], []]);
 });

@@ -6,7 +6,8 @@
    El mapa marca el enlace con volver=atras al salir; desde la portada no lo marca, porque Atrás llevaría a la portada y
    el botón promete el mapa. La pestaña lo confirma: la entrada de antes es index.html de este sitio (Navigation API o,
    sin ella, document.referrer). Se apunta en la entrada de esta página al cargarla: un ancla de la página (#gracias)
-   crea otra entrada, y desde ella Atrás ya no lleva al mapa. Script clásico: la página abre también desde file://. */
+   crea otra entrada, y desde ella Atrás ya no lleva al mapa. En ese momento la dirección pierde volver=atras. Script
+   clásico: la página abre también desde file://. */
 'use strict';
 (() => {
 const CLAVE = 'volverAlMapa';
@@ -25,11 +26,18 @@ function mapaDetras() {
   if (Number.isInteger(i) && typeof nav.entries === 'function') return esMapa(nav.entries()[i - 1]?.url);
   return esMapa(document.referrer);
 }
-/** marca: si el mapa dijo volver=atras al salir. */
+/** La dirección de ahora sin volver=atras (en ?… o en #…). */
+function sinMarca() {
+  const u = new URL(location.href);
+  if (u.searchParams.has('volver')) u.searchParams.delete('volver');
+  if (u.hash.includes('volver=')) u.hash = u.hash.slice(1).split('&').filter((x) => !x.startsWith('volver=')).join('&');
+  return u.href;
+}
+/** marca: si el mapa dijo volver=atras al salir. La marca pasa a la entrada y sale de la dirección: una dirección
+    copiada o guardada no la lleva, y abierta otro día sobre la portada no volvería a ella. */
 function iniciar(marca) {
-  if (marca && mapaDetras()) {
-    try { history.replaceState({ ...(history.state || {}), [CLAVE]: true }, '', location.href); } catch { /* sin historial */ }
-  }
+  const estado = marca && mapaDetras() ? { ...(history.state || {}), [CLAVE]: true } : history.state;
+  try { history.replaceState(estado, '', sinMarca()); } catch { /* sin historial */ }
   document.addEventListener('click', (e) => {
     const a = e.target.closest?.('a[data-volver]');
     if (!a || !history.state?.[CLAVE] || e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
