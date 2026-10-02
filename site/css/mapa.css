@@ -120,6 +120,11 @@
 .area-desc--sale.area-desc--anima.area-desc--abierta .area-desc__forma { animation: area-desc-difumina .45s ease-out; }
 @keyframes area-desc-difumina { from { border-style: solid; box-shadow: 0 0 0 4px var(--viajero); } to { box-shadow: 0 0 12px 2px color-mix(in srgb, var(--viajero) 22%, transparent); } }
 @media (prefers-reduced-motion: reduce) { .area-desc *, .area-desc *::before { transition: none !important; animation: none !important; } }
+/* El rótulo de una zona conjeturada: va en el centro de la zona (mapa.js, componerZonas), que se dibuja en el mapa. */
+.area-desc--zona .area-desc__zona { position: absolute; left: 0; top: 0; width: auto; height: auto; transform: translate(-50%, -50%); padding: 3px 8px;
+  border-radius: 8px; border: 1px dashed var(--viajero); background: color-mix(in srgb, var(--surface) 88%, transparent); opacity: 1; }
+.area-desc--zona .area-desc__rotulo { position: static; transform: none; }
+.area-desc--zona.area-desc--otra .area-desc__zona { border-style: dotted; }
 .leyenda-area { width: 26px; height: 16px; margin: 0 0 0 0; border-radius: 50%; border: 2px dashed var(--viajero, var(--accent)); background: color-mix(in srgb, var(--viajero, var(--accent)) 9%, transparent); }
 .icono-lugar--area { border-radius: 50%; border-style: dashed; transform: none; }
 

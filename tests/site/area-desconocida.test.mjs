@@ -3,17 +3,18 @@
 // that claims no place, beside its neighbouring stop, and animates it when the cursor crosses the arrival or the
 // departure.
 //
-//  - The astrologers come from «Oriente» (east) and go back to «su país» (no direction): four stops, the areas first
-//    and last, both pinned to their neighbour, the first one east of Jerusalén and the last a ring around Belén. The
-//    origin is open until they reach Jerusalén and then closes; the return opens when they leave Belén.
+//  - The astrologers come from «Oriente» and go back to «su país»: four stops, the areas first and last. Both are drawn
+//    at their guessed zone, Babilonia (Perspicacia «Este»), with Media as the other guess. The origin is open until
+//    they reach Jerusalén and then closes into it; the return opens out from Belén when they leave.
 //  - Balaam's journey ends in «su lugar»: after Peor his marker goes and the area opens beside Peor.
 //  - With reduced motion there is no transition, only the two states; without it the change lasts well under a second.
 //  - Scrubbing back and forth over the arrival leaves the state of the last date, with one marker per area.
 //  - Clicking the area opens its stop card, never a place card: the card says the source does not say where.
 //  - Reading mode steps onto the area's passage and the map does not move.
-//  - Selecting the journey, or the area's stop from far away, frames the known stops and never zooms out to the area.
-//  - A stop at a place with no point and no candidate, at either end, uses the same drawing (Mahanaim without its
-//    candidates, in a copy of the data).
+//  - Selecting the journey frames its known stops and its guessed zone, on a desktop and on a phone; selecting the area's
+//    stop from far away frames the zone and the neighbouring stop, never the epoch.
+//  - An area with no guessed zone, like a stop at a place with no point and no candidate at either end, is drawn beside
+//    its neighbour in screen pixels (Mahanaim without its candidates, in a copy of the data).
 //
 // Run from the repository root, one browser at a time:
 //   node --test --test-concurrency=1 tests/site/area-desconocida.test.mjs
@@ -132,34 +133,48 @@ function areasEn(p, t, sel = null, esperar = 700) {
   }, { t, sel, esperar });
 }
 
-test('the astrologers come from Oriente and go back to su país: areas first and last, open before the arrival and after the departure', async () => {
+/** Puts the selection and the cursor, waits until no zone is moving and reads the zones: { key, estado, p, centro }. */
+function zonasEn(p, t, sel = null) {
+  return p.evaluate(async ({ t, sel }) => {
+    const { BE, setT, seleccionar } = window.__be;
+    if (sel !== undefined) seleccionar(sel ? BE.parseSel(sel) : null, { mover: false, encuadrar: false });
+    setT(t);
+    await new Promise((r) => requestAnimationFrame(() => requestAnimationFrame(r)));
+    const t0 = performance.now();
+    while (BE.mapa.areas().some((z) => z.animando) && performance.now() - t0 < 3000) await new Promise((r) => setTimeout(r, 50));
+    const textos = (k) => [...document.querySelectorAll(`.area-desc--zona [data-sel="parada:${k}"]`)].map((b) => b.textContent.replace(/\s+/g, ' ').trim());
+    return BE.mapa.areas().map((z) => ({ ...z, textos: textos(z.key) }));
+  }, { t, sel });
+}
+
+test('the astrologers come from Oriente and go back to su país: drawn at the guessed zone, open before the arrival and after the departure', async () => {
   const ps = await paradas(page, ASTRO);
   assert.deepEqual(ps.map((s) => [s.key, s.nombre, s.area]), [[`${ASTRO}/1`, 'Oriente', true], [`${ASTRO}/2`, 'Jerusalén', false],
     [`${ASTRO}/3`, 'Belén', false], [`${ASTRO}/4`, 'su país', true]]);
   // Each area sits right next to its neighbour on the timeline: just before Jerusalén, just after Belén.
   assert.ok(ps[0].b <= ps[1].a && ps[1].a - ps[0].a <= 0.1, JSON.stringify(ps));
   assert.ok(ps[3].a >= ps[2].b && ps[3].b - ps[2].b <= 0.1, JSON.stringify(ps));
-  // The group is nowhere while in an area: no position is invented.
+  // The group is nowhere while in an area: the zone is a guess, and no position is invented.
   const pos = await page.evaluate(({ ASTRO, t }) => window.__be.BE.donde(`grupo:${ASTRO}`, t)?.pos ?? null, { ASTRO, t: (ps[0].a + ps[0].b) / 2 });
   assert.equal(pos, null);
-  // Not selected, in the origin's own time: the journey is drawn and the origin is open, east of Jerusalén.
-  const antes = await areasEn(page, (ps[0].a + ps[0].b) / 2, null);
-  const oriente = antes.find((x) => x.sel === `parada:${ASTRO}/1`), pais = antes.find((x) => x.sel === `parada:${ASTRO}/4`);
+  // Not selected, in the origin's own time: the journey is drawn and the origin is open at Babilonia, with Media too.
+  const antes = await zonasEn(page, (ps[0].a + ps[0].b) / 2, null);
+  const oriente = antes.find((x) => x.key === `${ASTRO}/1`), pais = antes.find((x) => x.key === `${ASTRO}/4`);
   assert.equal(oriente?.estado, 'abierta', JSON.stringify(antes));
-  assert.equal(oriente.lado, 'llega');
-  assert.ok(oriente.dx > 60 && Math.abs(oriente.dy) < 6, `east of Jerusalén, on the screen: ${JSON.stringify(oriente)}`);
-  assert.match(oriente.texto, /^Oriente\s*la fuente no dice dónde$/);
+  assert.equal(oriente.p, 0);
+  assert.ok(Math.abs(oriente.centro[0] - 46) < 0.01 && Math.abs(oriente.centro[1] - 31.9) < 0.01, `at the Babilonia zone: ${JSON.stringify(oriente)}`);
+  assert.deepEqual(oriente.textos, ['Orientezona probable: Babilonia', 'o Media'], 'the words, then the guess, on two lines');
   assert.equal(pais.estado, 'cerrada');
-  // At Jerusalén the origin has closed into it; after Belén the return is open, a ring around Belén (no direction).
-  const enJerusalen = await areasEn(page, ps[1].a + 0.001);
-  assert.equal(enJerusalen.find((x) => x.sel === `parada:${ASTRO}/1`).estado, 'cerrada');
-  const despues = await areasEn(page, (ps[3].a + ps[3].b) / 2);
-  const vuelta = despues.find((x) => x.sel === `parada:${ASTRO}/4`);
-  assert.deepEqual([vuelta.estado, vuelta.lado, vuelta.anillo, vuelta.dx, vuelta.dy], ['abierta', 'sale', true, 0, 0], JSON.stringify(vuelta));
-  // The legend names both ends with the source's words.
+  // At Jerusalén the origin has closed into it: its centre is Jerusalén's point. After Belén the return is open.
+  const enJerusalen = (await zonasEn(page, ps[1].a + 0.001)).find((x) => x.key === `${ASTRO}/1`);
+  const jerusalen = await page.evaluate(() => [window.__be.BE.L.jerusalen.lon, window.__be.BE.L.jerusalen.lat]);
+  assert.deepEqual([enJerusalen.estado, enJerusalen.p, enJerusalen.centro], ['cerrada', 1, jerusalen]);
+  const vuelta = (await zonasEn(page, (ps[3].a + ps[3].b) / 2)).find((x) => x.key === `${ASTRO}/4`);
+  assert.deepEqual([vuelta.estado, vuelta.p], ['abierta', 0], JSON.stringify(vuelta));
+  // The legend names both ends with the source's words and says the zone is a guess, and whose.
   const leyenda = await page.evaluate(() => document.querySelector('#leyenda').textContent.replace(/\s+/g, ' '));
-  assert.match(leyenda, /Origen de los astrólogos de Oriente: Oriente, la fuente no dice dónde/);
-  assert.match(leyenda, /Destino de los astrólogos de Oriente: su país, la fuente no dice dónde/);
+  assert.match(leyenda, /Origen de los astrólogos de Oriente: Oriente; zona probable: Babilonia, según Perspicacia «Este»/);
+  assert.match(leyenda, /Destino de los astrólogos de Oriente: su país; zona probable: Babilonia, según Perspicacia «Este»/);
 });
 
 test('a journey with an unknown end: Balaam leaves Peor for «su lugar», his marker goes and the area opens beside Peor', async () => {
@@ -171,9 +186,9 @@ test('a journey with an unknown end: Balaam leaves Peor for «su lugar», his ma
     seleccionar(null, { mover: false, encuadrar: false });
     setT(t);
     await new Promise((r) => setTimeout(r, 700));
-    const el = document.querySelector('.area-desc [data-sel="parada:viaje-de-balaam/7"]')?.closest('.area-desc');
+    const z = BE.mapa.areas().find((x) => x.key === 'viaje-de-balaam/7');
     const marca = document.querySelector('.viajero[data-sel="persona:balaam"]');
-    return { estado: el?.dataset.estado ?? null, marca: !!marca?.isConnected, pos: BE.donde('balaam', t)?.pos ?? null };
+    return { estado: z?.estado ?? null, marca: !!marca?.isConnected, pos: BE.donde('balaam', t)?.pos ?? null };
   }, t);
   const enPeor = await leer(peor.b);
   assert.equal(enPeor.estado, 'cerrada', JSON.stringify(enPeor));
@@ -188,27 +203,30 @@ test('with reduced motion there is no transition, only the two states; without i
     const { setT, seleccionar, BE } = window.__be;
     seleccionar(BE.parseSel(`viaje:${ASTRO}`), { mover: false, encuadrar: false });
     setT(a);
-    await new Promise((r) => requestAnimationFrame(() => requestAnimationFrame(r)));
-    const el = document.querySelector(`.area-desc [data-sel="parada:${ASTRO}/1"]`).closest('.area-desc'), zona = el.querySelector('.area-desc__zona');
-    setT(b);
-    await new Promise((r) => requestAnimationFrame(() => requestAnimationFrame(r)));
-    const escala = () => new DOMMatrixReadOnly(getComputedStyle(zona).transform).a;
-    // The running transitions of the shape, read from the page rather than timed: none with reduced motion.
-    const transiciones = zona.getAnimations().map((a) => a.effect.getTiming().duration);
-    const medio = { estado: el.dataset.estado, duracion: getComputedStyle(zona).transitionDuration, transiciones, escala: escala() };
     await new Promise((r) => setTimeout(r, 700));
-    return { medio, final: escala() };
+    const zona = () => BE.mapa.areas().find((x) => x.key === `${ASTRO}/1`);
+    // One reading per frame from the change until the zone stops. A slow headless frame may skip the steps in between,
+    // so what is measured is whether it animated at all and for how long, in wall time.
+    setT(b);
+    const ps = [];
+    let t0 = null, t1 = null;
+    for (let k = 0; k < 400; k++) {
+      await new Promise((r) => requestAnimationFrame(r));
+      const z = zona();
+      ps.push(+z.p.toFixed(3));
+      if (z.animando && t0 === null) t0 = performance.now();
+      if (!z.animando && k > 2) { t1 = performance.now(); break; }
+    }
+    return { estado: zona().estado, animo: t0 !== null, pasos: ps.length, final: zona().p, duracion: t0 === null ? 0 : t1 - t0 };
   }, { ASTRO, a: (ps[0].a + ps[0].b) / 2, b: ps[1].a + 0.001 });
   const normal = await cruzar(page);
-  assert.equal(normal.medio.estado, 'cerrada');
-  assert.deepEqual(normal.medio.duracion.split(', '), ['0.45s', '0.45s'], 'transform and opacity, under half a second');
-  assert.deepEqual(normal.medio.transiciones, [450, 450], `transform and opacity run as transitions: ${JSON.stringify(normal)}`);
-  assert.ok(Math.abs(normal.final - 0.06) < 0.01, `closed into the stop: ${JSON.stringify(normal)}`);
+  assert.equal(normal.estado, 'cerrada');
+  assert.ok(normal.animo, `the zone animates from open to closed: ${JSON.stringify(normal)}`);
+  assert.equal(normal.final, 1);
+  assert.ok(normal.duracion > 300 && normal.duracion < 1000, `about 0.45 s, well under a second: ${JSON.stringify(normal)}`);
   const p = await open({ hash: 't=0.5&linea=normal', reducedMotion: 'reduce' });
   const reducido = await cruzar(p);
-  assert.deepEqual([...new Set(reducido.medio.duracion.split(', '))], ['0s']);
-  assert.deepEqual(reducido.medio.transiciones, [], JSON.stringify(reducido));
-  assert.ok(Math.abs(reducido.medio.escala - 0.06) < 0.01, `already closed, with no motion: ${JSON.stringify(reducido)}`);
+  assert.deepEqual([reducido.animo, reducido.final], [false, 1], `closed at once, with no motion: ${JSON.stringify(reducido)}`);
   await p.context().close();
 });
 
@@ -222,20 +240,22 @@ test('scrubbing back and forth over the arrival leaves the state of the last dat
     // A hand on the ruler: small steps forwards past the arrival, back before it and forwards again, one per frame.
     for (const [de, a2] of [[a, b], [b, a], [a, b], [b, a]]) {
       for (let k = 0; k <= 12; k++) { setT(de + ((a2 - de) * k) / 12); await frame(); }
-      const els = [...document.querySelectorAll(`.area-desc [data-sel="parada:${ASTRO}/1"]`)];
-      estados.push({ n: els.length, estado: els[0]?.closest('.area-desc').dataset.estado });
+      while (BE.mapa.areas().some((z) => z.animando)) await frame();
+      const els = [...document.querySelectorAll(`.area-desc--zona [data-sel="parada:${ASTRO}/1"]`)];
+      const z = BE.mapa.areas().find((x) => x.key === `${ASTRO}/1`);
+      estados.push({ n: els.length, estado: els[0]?.closest('.area-desc').dataset.estado, p: z.p });
     }
     return estados;
   }, { ASTRO, a: ps[0].a, b: ps[1].a + 0.01 });
-  assert.deepEqual(r, [{ n: 1, estado: 'cerrada' }, { n: 1, estado: 'abierta' }, { n: 1, estado: 'cerrada' }, { n: 1, estado: 'abierta' }]);
+  // Two labels per area: Babilonia and Media.
+  assert.deepEqual(r, [{ n: 2, estado: 'cerrada', p: 1 }, { n: 2, estado: 'abierta', p: 0 }, { n: 2, estado: 'cerrada', p: 1 }, { n: 2, estado: 'abierta', p: 0 }]);
 });
 
 test('clicking the area opens its stop card, which says the source does not say where, and never a place card', async () => {
   const ps = await paradas(page, ASTRO);
-  await areasEn(page, (ps[0].a + ps[0].b) / 2, `viaje:${ASTRO}`);
-  await page.waitForTimeout(800);
-  // The open area, whatever it points to: the click must land on the stop, never on a place.
-  await page.click('.area-desc--abierta .area-desc__zona');
+  await zonasEn(page, (ps[0].a + ps[0].b) / 2, `viaje:${ASTRO}`);
+  // The open area's label, whatever it points to: the click must land on the stop, never on a place.
+  await page.click('.area-desc--zona.area-desc--llega:not(.area-desc--otra) .area-desc__zona');
   await page.waitForTimeout(300);
   const r = await page.evaluate(() => {
     const { E } = window.__be.BE;
@@ -249,6 +269,9 @@ test('clicking the area opens its stop card, which says the source does not say 
   assert.equal(r.lugarEnTitulo, false, 'the title opens no place');
   assert.match(r.cuerpo, /La fuente no dice dónde\. Solo da el rumbo: el este\./);
   assert.match(r.cuerpo, /Parada 1 de 4 · Origen/);
+  assert.match(r.cuerpo, /Zona probable: Babilonia, según Perspicacia «Este»\./);
+  assert.match(r.cuerpo, /Otra zona probable: Media, según Perspicacia «Astrólogos»\./);
+  assert.match(r.cuerpo, /No es lo que dice el texto\./);
   assert.equal(r.vecina, true, 'the card leads to the Jerusalén stop');
 });
 
@@ -266,7 +289,7 @@ test('reading mode steps onto the area and the map does not move', async () => {
     document.querySelector(`#vista-lectura [data-lectura-pasaje="${i}"]`).click();
     await new Promise((r) => setTimeout(r, 1200));
     const c = map.getCenter();
-    const el = document.querySelector('.area-desc [data-sel="parada:los-astrologos-de-oriente/1"]')?.closest('.area-desc');
+    const el = { dataset: { estado: BE.mapa.areas().find((x) => x.key === 'los-astrologos-de-oriente/1')?.estado } };
     return { i, j, n: ps.length, primera: ps[0].sel, ultima: ps.at(-1).sel, sel: `${BE.E.sel?.tipo}:${BE.E.sel?.id}`,
       centro: [+c.lng.toFixed(3), +c.lat.toFixed(3)], zoom: +map.getZoom().toFixed(2), estado: el?.dataset.estado ?? null,
       texto: document.querySelector('#vista-lectura .pasaje-item--abierto')?.textContent.replace(/\s+/g, ' ') ?? '' };
@@ -280,11 +303,11 @@ test('reading mode steps onto the area and the map does not move', async () => {
   await p.context().close();
 });
 
-test('framing never zooms out to the area: the journey frames its known stops, and the area stop frames its neighbour', async () => {
-  const r = await page.evaluate(async (ASTRO) => {
+test('framing includes the guessed zone: the journey frames its stops and Babilonia at 1440 and at 430, and the area stop its zone', async () => {
+  const encuadres = (p) => p.evaluate(async (ASTRO) => {
     const { BE, map, seleccionar } = window.__be;
     const quieto = () => new Promise((res) => { const t0 = performance.now(); const f = () => (!map.isMoving() && performance.now() - t0 > 300) || performance.now() - t0 > 6000 ? res() : requestAnimationFrame(f); f(); });
-    const leer = () => { const b = map.getBounds(), c = map.getCenter(); return { ancho: +(b.getEast() - b.getWest()).toFixed(2), zoom: +map.getZoom().toFixed(1), centro: [+c.lng.toFixed(2), +c.lat.toFixed(2)], jerusalen: b.contains([BE.L.jerusalen.lon, BE.L.jerusalen.lat]), belen: b.contains([BE.L.belen.lon, BE.L.belen.lat]) }; };
+    const leer = () => { const b = map.getBounds(); return { zoom: +map.getZoom().toFixed(1), jerusalen: b.contains([BE.L.jerusalen.lon, BE.L.jerusalen.lat]), belen: b.contains([BE.L.belen.lon, BE.L.belen.lat]), babilonia: b.contains([46.0, 31.9]) }; };
     const desdeLejos = async (sel) => {
       seleccionar(null, { mover: false, encuadrar: false });
       map.jumpTo({ center: [12, 42], zoom: 4 });
@@ -292,13 +315,21 @@ test('framing never zooms out to the area: the journey frames its known stops, a
       await quieto();
       return leer();
     };
-    return { viaje: await desdeLejos(`viaje:${ASTRO}`), jerusalen: await desdeLejos(`parada:${ASTRO}/2`), area: await desdeLejos(`parada:${ASTRO}/1`) };
+    return { viaje: await desdeLejos(`viaje:${ASTRO}`), area: await desdeLejos(`parada:${ASTRO}/1`) };
   }, ASTRO);
-  assert.ok(r.viaje.jerusalen && r.viaje.belen && r.viaje.ancho < 1, `the journey frames Jerusalén and Belén only: ${JSON.stringify(r)}`);
-  // The area stop is framed like the Jerusalén stop, where the area is drawn: not the epoch, not a wider view.
-  // The legend's height moves the centre a little; the zoom is the same.
-  assert.equal(r.area.zoom, r.jerusalen.zoom, JSON.stringify(r));
-  assert.ok(Math.abs(r.area.centro[0] - r.jerusalen.centro[0]) < 0.1 && Math.abs(r.area.centro[1] - r.jerusalen.centro[1]) < 0.1, JSON.stringify(r));
+  const escritorio = await encuadres(page);
+  assert.deepEqual(escritorio.viaje, { ...escritorio.viaje, jerusalen: true, belen: true, babilonia: true }, JSON.stringify(escritorio));
+  assert.deepEqual(escritorio.area, { ...escritorio.area, jerusalen: true, babilonia: true }, JSON.stringify(escritorio));
+  // Not a world view: the Mediterranean to the Gulf is about zoom 5.
+  assert.ok(escritorio.viaje.zoom >= 4.5, JSON.stringify(escritorio));
+  const ctx = await browser.newContext({ viewport: { width: 430, height: 932 }, deviceScaleFactor: 1, isMobile: true, hasTouch: true });
+  const tel = await ctx.newPage();
+  await tel.route((url) => !url.href.startsWith(origin) && !url.hostname.endsWith('unpkg.com'), (route) => route.abort());
+  await tel.goto(`${origin}/index.html#t=0.5`);
+  await tel.waitForFunction(() => window.__be?.map?.loaded?.() && window.__be.map.getSource('be-rastro'), null, { timeout: 30000 });
+  const movil = await encuadres(tel);
+  assert.deepEqual(movil.viaje, { ...movil.viaje, jerusalen: true, belen: true, babilonia: true }, JSON.stringify(movil));
+  await ctx.close();
 });
 
 test('a stop at a place with no point and no candidate, at either end of a journey, uses the same drawing', async () => {

@@ -291,7 +291,13 @@ function prepararParadas(persona = 'pablo') {
     como nombre y su rumbo, si lo da. BE.puntoLugar no le encuentra sitio, así que la persona no se dibuja allí y el
     mapa dibuja el área (mapa.js, pintarAreas). */
 function lugarDesconocido(area) {
-  return { id: null, nombre: area.words, area: { palabras: area.words, rumbo: area.direction || null } };
+  return { id: null, nombre: area.words, area: { palabras: area.words, rumbo: area.direction || null, zonas: (area.guesses || []).map(zonaConjeturada) } };
+}
+/** Una zona que conjeturamos para un área desconocida (`guesses`), con su contorno de build.py: la preferida va primera.
+    Es una conjetura con su fuente, no lo que dice el texto: nadie se sitúa en ella (BE.puntoLugar no la mira). */
+function zonaConjeturada(g) {
+  const b = g.bbox, c = g.center ? [g.center.lon, g.center.lat] : [(b[0][0] + b[1][0]) / 2, (b[0][1] + b[1][1]) / 2];
+  return { nombre: g.name, ring: g.ring, bbox: b, centro: c, fuentes: g.sources || [], razon: g.reason, nota: g.note, estado: g.status };
 }
 /** Tiempo de cada área desconocida, ya colocadas las demás paradas: un tramo de camino antes de la primera parada con
     lugar de su viaje (de allí vienen) o después de la última (allí van), sin salir de la fecha del viaje si cabe. El
