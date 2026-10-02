@@ -778,9 +778,9 @@ function zonaEnVista(zo) {
   return !(e < b.getWest() || o > b.getEast() || n < b.getSouth() || s > b.getNorth());
 }
 /** Punto del borde del mapa, del lado de la zona, en píxeles: la recta del centro de lo visible al centro de la zona
-    corta el rectángulo libre (sin la hoja ni los márgenes). */
+    corta el rectángulo libre (sin la hoja, los márgenes ni la tarjeta «Mientras tanto»). */
 function puntoBorde(zo) {
-  const c = map.getContainer(), pad = rellenoEncuadre();
+  const c = map.getContainer(), pad = rellenoConMientras();   // sin la hoja, la leyenda ni «Mientras tanto»
   const caja = { x0: pad.left, y0: pad.top, x1: c.clientWidth - pad.right, y1: c.clientHeight - pad.bottom };
   const cx = (caja.x0 + caja.x1) / 2, cy = (caja.y0 + caja.y1) / 2;
   const q = map.project(zo.centro), dx = q.x - cx, dy = q.y - cy;

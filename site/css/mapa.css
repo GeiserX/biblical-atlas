@@ -126,7 +126,7 @@
 .area-desc--zona .area-desc__rotulo { position: static; transform: none; }
 .area-desc--zona.area-desc--otra .area-desc__zona { border-style: dotted; }
 /* La ficha del borde de una zona que no se ve (mapa.js, pintarChipsZona): sus palabras, su conjetura y una flecha. */
-.area-chip { position: absolute; z-index: 4; transform: translate(-50%, -50%); display: inline-flex; align-items: center; gap: 6px; max-width: min(320px, 70%);
+.area-chip { position: absolute; z-index: 4; transform: translate(-50%, -50%); display: inline-flex; align-items: center; gap: 6px; width: max-content; max-width: none; white-space: nowrap;
   padding: 5px 10px; border-radius: var(--r-pill); border: 1.5px dashed var(--viajero); background: color-mix(in srgb, var(--surface) 94%, transparent);
   color: var(--ink); font: 500 12px/1.2 var(--font-sans); box-shadow: var(--shadow-1); cursor: pointer; text-align: left; }
 .area-chip b { color: var(--viajero); }
