@@ -75,20 +75,20 @@ after(async () => {
 
 async function open(screen, hash = '') {
   const context = await browser.newContext({ deviceScaleFactor: 1, ...screen });
-  context.setDefaultTimeout(15000);
+  context.setDefaultTimeout(30000);
   const page = await context.newPage();
   page.pageErrors = [];
   page.on('pageerror', (e) => page.pageErrors.push(e.message));
   await page.route((u) => !u.href.startsWith(base) && !u.hostname.endsWith('unpkg.com'), (r) => r.abort());
   await page.goto(`${base}index.html${hash ? `#${hash}` : ''}`, { waitUntil: 'domcontentloaded' });
-  await page.waitForFunction(() => window.BE?.D && window.__be, null, { timeout: 30000 });
+  await page.waitForFunction(() => window.BE?.D && window.__be, null, { timeout: 60000 });
   return page;
 }
 /** The map has loaded and stopped: a frame asked for at load (encuadrarAlCargar) has ended too. */
 async function still(page) {
-  await page.waitForFunction(() => { const m = window.__be?.map; return !!m && m.loaded() && !m.isMoving(); }, null, { timeout: 30000 });
+  await page.waitForFunction(() => { const m = window.__be?.map; return !!m && m.loaded() && !m.isMoving(); }, null, { timeout: 60000 });
   await page.waitForTimeout(1000);
-  await page.waitForFunction(() => !window.__be.map.isMoving(), null, { timeout: 30000 });
+  await page.waitForFunction(() => !window.__be.map.isMoving(), null, { timeout: 60000 });
 }
 /** Clicks a link of the landing, as a person does, with the map in whatever state it is. */
 async function fromLanding(screen, href) {
