@@ -69,6 +69,15 @@ function fechasHtml(o, momento) {
     ${alts.length ? '<p class="fecha-regla">Usamos la fecha de la cronología de la Traducción del Nuevo Mundo. La otra se enseña como nota y no mueve el cursor.</p>' : ''}`;
 }
 
+/** El plazo desde el suceso anterior del relato (orden_relato.elapsed): con su razón. Sin cifra, dice que el texto no la
+    da y que el día de la línea solo enseña el orden. */
+function plazoHtml(e) {
+  const el = e.orden_relato?.elapsed;
+  if (!el) return '';
+  const cifra = ['days', 'months', 'years'].some((k) => typeof el[k] === 'number');
+  return `<p class="fecha-linea plazo-relato">${cifra ? 'Plazo que da el texto' : 'El texto no da cuánto tiempo pasa desde el suceso anterior; en la línea va un día después, solo para que se vea el orden'}. ${esc(el.reason || '')}</p>`;
+}
+
 function fichaEvento(id) {
   const e = BE.D.eventos.find((x) => x.id === id);
   const personas = (e.personas || []).filter((x) => BE.PERS[x]);
@@ -81,7 +90,7 @@ function fichaEvento(id) {
       <div class="fila-chips">${BE.chipsCitas((e.pasajes || []).join('; '))}${(e.lugares || []).map((x) => BE.L[x] ? `<button type="button" class="be-chip" data-sel="lugar:${esc(x)}">${esc(BE.L[x].nombre)}</button>` : '').join('')}</div>
       ${personas.length ? `<div class="fila-chips">${personas.map((x) => `<button type="button" class="be-chip" data-sel="persona:${esc(x)}"><span class="be-chip__dot" style="background:${BE.colorPersona(x)}"></span>${esc(BE.PERS[x].nombre)}</button>`).join('')}</div>` : ''}
     </div><div class="be-card__foot">${BE.estadoHtml(e.estado)}</div></section>
-    <section class="be-card ficha-sec"><div class="be-card__pad"><h3 class="be-card__eyebrow">Cuándo</h3>${fechasHtml(e, BE.momentoEvento(e))}</div></section>
+    <section class="be-card ficha-sec"><div class="be-card__pad"><h3 class="be-card__eyebrow">Cuándo</h3>${fechasHtml(e, BE.momentoEvento(e))}${plazoHtml(e)}</div></section>
     ${BE.porQueHtml(e, BE.notaHtml(e.nota))}`;
 }
 

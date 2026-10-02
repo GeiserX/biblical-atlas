@@ -12,6 +12,9 @@ date:
 narrative_order:
   series: jueces-apendice
   order: 19022
+  elapsed:
+    days: 0
+    reason: 'Jue 19:22-26: pasa esa misma noche; la dejan ir al amanecer.'
 places:
 - guibea-de-benjamin
 people: []
@@ -37,5 +40,5 @@ history:
   change: 'Pasa de la serie jueces a jueces-apendice. Perspicacia «Jueces, Libro de», «Orden del libro», pone los capítulos
     19 a 21 poco después de morir Josué, aparte de los jueces; en su serie adelantaban Jue 1:8-11:3.'
   source: it-jueces
-checked_on: '2026-09-29'
+checked_on: '2026-10-02'
 status: verified

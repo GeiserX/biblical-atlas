@@ -249,6 +249,9 @@ new_keys:
   calendar.months[].names[]: [checked_on]
   calendar.months[].festivals[]: [checked_on]
   events: [type, roles]
+  # Lo que el relato dice que pasa desde un suceso anterior de su serie (be-64b.15).
+  events.narrative_order: [elapsed]
+  events.narrative_order.elapsed: [since, days, months, years, reason]
   events.roles.<id>: [role, date, place]
   periods: [office]
   journeys: [repeats]

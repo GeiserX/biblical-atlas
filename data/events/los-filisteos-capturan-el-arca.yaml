@@ -12,6 +12,8 @@ date:
 narrative_order:
   series: 1-samuel
   order: 4010
+  elapsed:
+    reason: '1Sa 4:5-10: los filisteos oyen los gritos al llegar el Arca y vuelven a luchar. El texto no da el plazo.'
 places:
 - ebenezer
 - antipatris
@@ -47,5 +49,5 @@ history:
   change: 'Empezaba c. 1180 y se ordenaba antes de Jefté. Ahora empieza c. 1173: Jefté juzga en los primeros años de Samuel,
     y aquí Samuel ya es un profeta conocido.'
   source: it-jefte
-checked_on: '2026-09-29'
+checked_on: '2026-10-02'
 status: verified

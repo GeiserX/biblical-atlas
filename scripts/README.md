@@ -56,6 +56,16 @@ rsync -a --relative <tus ficheros bajo data/> "$T/"
 python3 scripts/validate.py --data "$T/data"
 ```
 
+## Medir cuánto dura cada relato
+
+```bash
+node scripts/relato_spans.mjs                     # site/data.json; las 40 tandas y viajes más largos
+node scripts/relato_spans.mjs /tmp/prueba/data.json --top 100 --dump /tmp/despues.json
+node scripts/relato_spans.mjs --compare /tmp/antes.json /tmp/despues.json   # qué se movió; sale con 1 si algo cambió
+```
+
+Corre el código del sitio (`site/js/base.js` y `trayectorias.js`) en node, sin navegador, y lista cuántos años ocupa en la línea de tiempo cada tanda de sucesos de una serie que comparten una fecha sin anclar y cada viaje, de más a menos. Sirve para encontrar relatos de días repartidos por decenios ([fechas-relato.md](../docs/ideas/fechas-relato.md)). Con `--dump` guarda dónde cae cada suceso, carta y parada; `--compare` compara dos volcados.
+
 ## Aplicar las propuestas de lectura
 
 ```bash
