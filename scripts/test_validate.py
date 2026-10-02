@@ -468,6 +468,15 @@ class DestinosEnParalelo(unittest.TestCase):
                 validate.validar_viaje(v, nombre, out.append)
                 self.assertEqual(out, [])
 
+    def test_una_clave_mal_escrita_en_la_parada_es_error(self):
+        # Sin el aviso, branches_form deja a Habor como etapa que sigue a Samaria, con 0 errores.
+        datos = validate.load(HERE.parent / "data")
+        viaje = next(v for v in datos["journeys"] if v["id"] == "destierro-de-israel-en-740")
+        viaje["stops"][2]["branches_form"] = viaje["stops"][2].pop("branches_from")
+        errores, _ = validate.validar(datos)
+        self.assertTrue(any("destierro-de-israel-en-740" in e and "stop 3: campos desconocidos ['branches_form']" in e
+                            for e in errores), errores)
+
     def test_validar_mira_las_ramas_en_cada_viaje(self):
         datos = validate.load(HERE.parent / "data")
         viaje = next(v for v in datos["journeys"] if v["id"] == "destierro-de-beera")

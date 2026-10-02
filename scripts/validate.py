@@ -71,6 +71,9 @@ REQUERIDOS = {
     "tours": ["id", "title", "stops", "sources", "reason", "checked_on", "status"],
 }
 REQ_PARADA = ["order", "place", "reference", "date", "note", "reason", "sources", "checked_on", "status"]
+# Claves opcionales de una parada. Una que no esté aquí ni en REQ_PARADA es una errata: `branches_form` dejaría en
+# silencio un destino en paralelo como una etapa más de la línea.
+OPCIONALES_PARADA = {"branches_from"}
 # Valores cerrados de `repeats` en un viaje: el texto dice que el viaje se hacía cada año (1Sa 1:3, Lu 2:41).
 REPITE = {"yearly"}
 REQ_PARADA_RECORRIDO = ["sel", "t", "text", "passages"]
@@ -1754,6 +1757,10 @@ def validar(datos):
                     for k in REQ_PARADA:
                         if k not in p:
                             err(f"{pd}: falta '{k}'")
+                    sobran = set(p) - set(REQ_PARADA) - OPCIONALES_PARADA
+                    if sobran:
+                        err(f"{pd}: campos desconocidos {sorted(sobran)}; una parada lleva "
+                            f"{', '.join(REQ_PARADA)} y, si hace falta, {', '.join(sorted(OPCIONALES_PARADA))}")
                     validar_comun(p, pd, err, fuentes)
                     validar_hecho(p, pd, err)
                     if "date" in p:
