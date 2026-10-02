@@ -584,10 +584,10 @@ const historia = (() => {
     const nombre = H.distinctName(H.viewName(v), H.around(actual, leerVisitas()).back.name, v.date);
     // La portada se decide por la vista, no por la dirección: aún es la de la vista de antes.
     ponerTitulo(nombre, !!v.landing);
-    const marca = BE.marcaPulsada?.() ?? null;
-    const igual = nombre === actual.name && marca === (actual.mark ?? null)
+    const marca = BE.marcaPulsada?.() ?? null, carril = marca ? BE.carrilPulsado?.() ?? null : null;
+    const igual = nombre === actual.name && marca === (actual.mark ?? null) && carril === (actual.lane ?? null)
       && history.state?.visit === actual.visit && history.state?.step === actual.step;
-    if (!igual) { const r = H.rename(actual, leerVisitas(), nombre); actual = H.withMark(r.state, marca); guardarVisitas(r.visits); }
+    if (!igual) { const r = H.rename(actual, leerVisitas(), nombre); actual = H.withMark(r.state, marca, carril); guardarVisitas(r.visits); }
     pintarBotones();
     return igual ? null : actual;
   }
@@ -605,8 +605,9 @@ const historia = (() => {
     try { history.replaceState(actual, '', location.href); } catch { /* escritura rechazada: la entrada sigue en memoria */ }
   }
   /** Al llegar a una entrada (Atrás, Adelante, una recarga, la vuelta desde otra página), la línea recupera la marca
-      que se pulsó en ella: el primer clic en esa marca la suelta, como antes de irse. */
-  function llegar() { BE.ponerMarcaPulsada?.(actual?.mark ?? null); }
+      que se pulsó en ella, y el carril de la persona donde se pulsó: el primer clic en esa marca la suelta, como antes
+      de irse. */
+  function llegar() { BE.ponerMarcaPulsada?.(actual?.mark ?? null, actual?.lane ?? null); }
   /** Salir de la página por un enlace: el navegador tira las entradas de delante, y aquí también. */
   function dejar() { guardarVisitas(H.cutForward(actual, leerVisitas())); }
 

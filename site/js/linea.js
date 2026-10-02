@@ -2094,12 +2094,18 @@ BE.parametros.push(
 );
 
 // La marca pulsada la última vez, para la entrada del historial (buscar.js): al volver a una entrada con Atrás o
-// Adelante la línea la recupera, y un primer clic en ella la suelta, como antes de irse.
+// Adelante la línea la recupera, y un primer clic en ella la suelta, como antes de irse. Si se pulsó en el carril de
+// una persona, la entrada guarda también de quién es: ese carril solo está mientras su persona o una de sus marcas
+// está elegida, y sin él la marca volvería sin sitio donde verse.
 const marcaPulsada = () => lastClicked;
-function ponerMarcaPulsada(id) { lastClicked = id ?? null; }
+const carrilPulsado = () => (lastClicked ? personaSel : null);
+function ponerMarcaPulsada(id, persona = null) {
+  lastClicked = id ?? null;
+  if (lastClicked && persona) personaSel = persona;
+}
 
 Object.assign(BE, {
   pintarLineaFija, pintarCursor, iniciarLinea, irA, encuadrarTiempo, duracion, ponerGrande, alternarGrande, colorPotencia, fmtMes,
-  marcaPulsada, ponerMarcaPulsada, lineaEstado: L, SPAN_MIN,
+  marcaPulsada, carrilPulsado, ponerMarcaPulsada, lineaEstado: L, SPAN_MIN,
 });
 })();

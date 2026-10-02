@@ -369,6 +369,45 @@ test('after Back reselects a mark, the first click or tap on it releases it, on 
   }
 });
 
+test('after Back, a journey bar pressed in a traveller\'s lane comes back in that lane, pressed, and the first click releases it', async () => {
+  // The bar of a journey of Jesús lives only in his lane, which stays while one of its marks is selected. A selection
+  // from elsewhere takes the lane away; Back brings the bar back, so it brings the lane back with it.
+  const p = await open(DESKTOP, 't=30.5&v=8');
+  await p.keyboard.press('Shift');   // a key wakes the history: the next view gets its entry
+  await p.evaluate(() => window.BE.seleccionar({ tipo: 'persona', id: 'jesus' }, { mover: false }));
+  await frames(p, 6);
+  const barIn = (id) => p.evaluate((i) => {
+    const b = document.querySelector(`#linea-filas .carril[data-carril="jesus"]:not([hidden]) .m[data-id="${CSS.escape(i)}"]`);
+    if (!b) return null;
+    b.scrollIntoView({ block: 'center' });
+    const r = b.querySelector('.m-barra').getBoundingClientRect(), pr = b.closest('.carril-pista').getBoundingClientRect();
+    const x0 = Math.max(r.left, pr.left + 2), x1 = Math.min(r.right, pr.right - 2);
+    return { x: (x0 + x1) / 2, y: r.top + r.height / 2, pressed: b.getAttribute('aria-pressed') };
+  }, id);
+  const id = await p.evaluate(() => window.BE.lineaMarcas().find((m) => m.lane === 'jesus' && m.sel.startsWith('viaje:') && m.visible)?.id);
+  assert.ok(id, 'a journey bar of Jesús in view');
+  const a = await barIn(id);
+  await p.mouse.click(a.x, a.y);
+  await frames(p, 6);
+  assert.equal((await state(p)).sel, id, `the bar «${id}» was not selected`);
+  await p.waitForFunction((i) => history.state?.mark === i, id, { timeout: 3000 });
+  await p.locator('#q').fill('Corinto');
+  await p.waitForFunction(() => !document.querySelector('#resultados').hidden);
+  await p.keyboard.press('Enter');
+  await frames(p, 6);
+  assert.equal(await barIn(id), null, 'the lane of Jesús is still there after selecting Corinto');
+  await p.locator('#atras').click();
+  await frames(p, 6);
+  assert.equal((await state(p)).sel, id, 'Back did not bring the journey back');
+  const b = await barIn(id);
+  assert.ok(b, 'after Back the bar has no lane to be in: the lane of Jesús is gone');
+  assert.equal(b.pressed, 'true', 'after Back the bar is not pressed');
+  await p.mouse.click(b.x, b.y);
+  await frames(p, 6);
+  assert.equal((await state(p)).sel, '', 'the first click after Back on the bar did not release it');
+  await p.context().close();
+});
+
 test('after a reload, or «Acerca de» and back with «Volver al mapa», the first click or tap on the pressed mark releases it', async () => {
   // The entry keeps the mark pressed in it, and the page gives it back to the strip when it loads, not only on Back.
   const marked = async (p) => { await p.waitForFunction(() => window.BE?.lineaMarcas && document.querySelector('#linea-filas .m'), null, { timeout: 25000 }); await frames(p, 6); };

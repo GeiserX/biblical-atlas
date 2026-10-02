@@ -11,8 +11,9 @@
 
    An entry also keeps what the address does not say, so Back, Forward and a reload bring it back as it was left: the
    map's frame, { lon, lat, zoom }, written when the map stops moving, and the timeline mark pressed last (its id), so a
-   second press on it releases it (docs/ideas/atras-adelante-flecos.md, questions 2 and 4). A new entry starts without
-   either. */
+   second press on it releases it (docs/ideas/atras-adelante-flecos.md, questions 2 and 4). A mark pressed in a person's
+   lane keeps that lane (its person's id) too: the lane is there only while its person or one of its marks is selected,
+   so without it Back would give the mark back with no lane to show it in. A new entry starts without any of them. */
 'use strict';
 (() => {
 const BE = window.BE;
@@ -26,11 +27,15 @@ const isEntry = (s) => !!s && typeof s === 'object' && typeof s.visit === 'strin
 /** A map frame: a centre inside the world and a zoom a map can take. */
 const isFrame = (f) => !!f && typeof f === 'object' && [f.lon, f.lat, f.zoom].every(Number.isFinite)
   && Math.abs(f.lon) <= 180 && Math.abs(f.lat) <= 90 && f.zoom >= 0 && f.zoom <= 24;
-/** What an entry keeps besides its number and name, when it is readable: { frame, mark }. */
+/** What an entry keeps besides its number and name, when it is readable: { frame, mark, lane }. A lane goes only with
+    its mark. */
 function extras(s) {
   const out = {};
   if (isFrame(s?.frame)) out.frame = { lon: s.frame.lon, lat: s.frame.lat, zoom: s.frame.zoom };
-  if (typeof s?.mark === 'string' && s.mark !== '') out.mark = s.mark;
+  if (typeof s?.mark === 'string' && s.mark !== '') {
+    out.mark = s.mark;
+    if (typeof s.lane === 'string' && s.lane !== '') out.lane = s.lane;
+  }
   return out;
 }
 /** The entry with the map's frame, rounded (about a metre, a hundredth of a zoom step). An unreadable frame is dropped. */
@@ -40,10 +45,11 @@ function withFrame(state, frame) {
   const r = (x, d) => Math.round(x * 10 ** d) / 10 ** d;
   return { ...rest, frame: { lon: r(frame.lon, 5), lat: r(frame.lat, 5), zoom: r(frame.zoom, 2) } };
 }
-/** The entry with the timeline mark pressed last, or without one. */
-function withMark(state, mark) {
-  const { mark: _, ...rest } = state;
-  return typeof mark === 'string' && mark !== '' ? { ...rest, mark } : rest;
+/** The entry with the timeline mark pressed last and the person whose lane it was pressed in, or without them. */
+function withMark(state, mark, lane = null) {
+  const { mark: _, lane: __, ...rest } = state;
+  if (typeof mark !== 'string' || mark === '') return rest;
+  return typeof lane === 'string' && lane !== '' ? { ...rest, mark, lane } : { ...rest, mark };
 }
 
 /** Visits are a list of [id, names], the newest last. Unreadable input counts as none. */

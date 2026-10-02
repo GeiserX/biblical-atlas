@@ -212,6 +212,22 @@ test('an entry keeps the map\'s frame and the mark pressed in it through a reloa
   assert.equal(H.withFrame(state, { lon: 'x', lat: 1, zoom: 2 }).frame, undefined);
 });
 
+test('a mark pressed in a person\'s lane keeps that lane with it, through a reload and Back; a new entry starts without it', () => {
+  // A journey bar in the lane of Jesús lives only in that lane: the entry keeps whose lane it was, or Back gives the
+  // mark back with no lane to show it in.
+  let { state, visits } = H.begin(null, [], 'v1', 'Del Jordán a Caná');
+  state = H.withMark(state, 'viaje:del-jordan-a-cana', 'jesus');
+  assert.deepEqual(plain(state), { visit: 'v1', step: 0, name: 'Del Jordán a Caná', mark: 'viaje:del-jordan-a-cana', lane: 'jesus' });
+  assert.deepEqual(plain(H.begin(state, visits, 'v2').state), plain(state));
+  const n = H.push(state, visits);
+  assert.equal(n.state.lane, undefined, 'a new entry has the lane of the one before');
+  assert.deepEqual(plain(H.arrive(n.state, state, n.visits, 'v3').state), plain(state));
+  // A lane without a mark, or a mark from a lane that is no person's, keeps no lane.
+  assert.equal(H.withMark(state, null, 'jesus').lane, undefined);
+  assert.equal(H.withMark(state, 'periodo:galion').lane, undefined);
+  assert.equal(H.begin({ visit: 'v1', step: 0, name: 'x', lane: 'jesus' }, [], 'v2').state.lane, undefined);
+});
+
 test('only a centre inside the world and a zoom a map can take count as a frame', () => {
   assert.equal(H.isFrame({ lon: 24.8, lat: 40.9, zoom: 9.5 }), true);
   for (const f of [null, {}, { lon: 1, lat: 2 }, { lon: 200, lat: 0, zoom: 5 }, { lon: 0, lat: -91, zoom: 5 }, { lon: 0, lat: 0, zoom: 30 }, { lon: NaN, lat: 0, zoom: 5 }, { lon: '1', lat: 0, zoom: 5 }]) {
