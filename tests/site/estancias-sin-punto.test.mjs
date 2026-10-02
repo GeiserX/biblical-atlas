@@ -94,7 +94,8 @@ before(async () => {
   tmp = fs.mkdtempSync(path.join(os.tmpdir(), 'be-estancias-sin-punto-'));
   execFileSync('python3', [path.join(ROOT, 'scripts/build.py'), '--out', tmp], { cwd: ROOT, stdio: 'pipe' });
   variant('sin-candidatos', (D) => { delete D.lugares.mahanaim.candidatos; });
-  variant('solo-pablo', (D) => { D.viajes = D.viajes.filter((v) => (v.persona || 'pablo') === 'pablo'); });
+  // The owner rule of BE.duenoViaje: a group journey (the Ark, `persona: null` with `grupo`) is not Paul's.
+  variant('solo-pablo', (D) => { D.viajes = D.viajes.filter((v) => (v.persona || (v.grupo ? `grupo:${v.id}` : 'pablo')) === 'pablo'); });
   // Two of Paul's stops lose their point: Salamis with no candidate, Paphos with a zone around its old point.
   variant('pablo-sin-punto', (D) => {
     const s = D.lugares.salamina, f = D.lugares.pafos;
@@ -285,6 +286,8 @@ test('a stay at a region, whose point stands for the whole region, looks estimat
 test('the legend explains the estimated look whenever Paul\'s marker has it', async () => {
   // Only Paul travels in this copy of the data, so only his marker can bring the legend row.
   const p = await open('/solo-pablo');
+  const ajenos = await p.evaluate(() => window.BE.D.viajes.filter((v) => window.BE.duenoViaje(v) !== 'pablo').map((v) => v.id));
+  assert.deepEqual(ajenos, [], 'this copy of the data keeps only Paul\'s journeys');
   const r = await pabloEn(p, 'tercer-viaje/2');
   const otros = await p.evaluate(() => document.querySelectorAll('.viajero').length);
   assert.equal(otros, 0, 'no other traveller on the map');
