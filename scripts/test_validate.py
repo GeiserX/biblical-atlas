@@ -125,6 +125,15 @@ class Repite(unittest.TestCase):
                      if (yaml.safe_load(f.read_text(encoding="utf-8")) or {}).get("repeats") == "yearly")
         self.assertEqual(con, ["elcana-sube-a-silo", "pascua-de-jesus-a-los-12", "recorrido-de-samuel"])
 
+    def test_validar_mira_repeats_en_cada_viaje(self):
+        # Sobre los datos de verdad, con un valor que no vale puesto en memoria: el error sale de validar().
+        datos = validate.load(HERE.parent / "data")
+        viaje = next(v for v in datos["journeys"] if v["id"] == "recorrido-de-samuel")
+        viaje["repeats"] = "monthly"
+        errores, _ = validate.validar(datos)
+        self.assertEqual([e for e in errores if "repeats debe" in e],
+                         [f"{viaje['_fichero']}: repeats debe ser uno de ['yearly'], no 'monthly'"])
+
 
 if __name__ == "__main__":
     unittest.main()
