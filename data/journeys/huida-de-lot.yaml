@@ -60,8 +60,7 @@ stops:
     type: anchored
     chronology: tnm
     text: 1919 a.e.c.
-  note: Pequeña ciudad que se salva por su ruego. Luego se van a vivir a una cueva de las montañas, sin nombre. Zóar no tiene
-    punto en el mapa.
+  note: Pequeña ciudad que se salva por su ruego. Zóar no tiene punto en el mapa.
   reason: Gé 19:22, 23 lo hace llegar a Zóar al salir el sol, y Gé 19:30 lo saca de allí por miedo. Fecha de los sucesos de
     la huida y de la destrucción.
   sources:
@@ -69,4 +68,26 @@ stops:
   - it-zoar
   - si-3
   checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: null
+  unknown_area:
+    words: la región montañosa
+  reference: Gé 19:30
+  date:
+    from: -1918
+    to: -1918
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 1919 a.e.c.
+  note: Con miedo de seguir en Zóar, sube con sus hijas a vivir en una cueva. La fuente no nombra esos montes.
+  reason: Gé 19:30 lo saca de Zóar hacia la región montañosa. Perspicacia «Zóar» la llama cercana y no la sitúa. Fecha del
+    viaje.
+  sources:
+  - genesis-19
+  - it-zoar
+  - it-lot
+  checked_on: '2026-10-02'
   status: verified

@@ -1,6 +1,6 @@
 # biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
 id: los-astrologos-de-oriente
-name: Los astrólogos, de Jerusalén a Belén
+name: Los astrólogos, de Oriente a Belén
 person: null
 group: los astrólogos de Oriente
 reference: Mt 2:1-12
@@ -15,8 +15,8 @@ date:
 companions: []
 summary: Unos astrólogos de Oriente llegan a Jerusalén preguntando por el rey de los judíos. Herodes los manda a Belén; ven
   al niño en una casa, le dan oro, olíbano y mirra y vuelven a su tierra por otro camino.
-reason: 'Mateo 2:1-12 da las dos paradas; tabla A7-A, fila 7. Mateo no nombra su país ni dice cuántos eran (Perspicacia «Astrólogos»):
-  no tienen ficha ni punto de salida.'
+reason: 'Mateo 2:1-12 da las paradas; tabla A7-A, fila 7. Mateo no nombra su país ni dice cuántos eran (Perspicacia «Astrólogos»):
+  no tienen ficha, y la salida y la vuelta son áreas desconocidas.'
 sources:
 - mateo-2
 - tnm-a7-a
@@ -27,6 +27,28 @@ checked_on: '2026-10-02'
 status: verified
 stops:
 - order: 1
+  place: null
+  unknown_area:
+    words: Oriente
+    direction: east
+  reference: Mt 2:1, 2
+  date:
+    from: 0
+    to: 1
+    precision: range
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: entre 1 a.e.c. y 1 e.c.
+  note: Salida. Allí vieron la estrella; la fuente no dice qué país era ni a qué distancia queda.
+  reason: Mt 2:1, 2 los trae de Oriente, y la nota de estudio de 2:2 entiende que es donde estaban al ver la estrella. Perspicacia
+    «Astrólogos» habla de las partes orientales sin situarlas.
+  sources:
+  - mateo-2
+  - it-astrologos
+  checked_on: '2026-10-02'
+  status: verified
+- order: 2
   place: jerusalen
   reference: Mt 2:1-8
   date:
@@ -45,7 +67,7 @@ stops:
   - it-herodes
   checked_on: '2026-10-02'
   status: verified
-- order: 2
+- order: 3
   place: belen
   reference: Mt 2:9-12
   date:
@@ -61,6 +83,26 @@ stops:
   sources:
   - mateo-2
   - tnm-a7-a
+  - it-astrologos
+  checked_on: '2026-10-02'
+  status: verified
+- order: 4
+  place: null
+  unknown_area:
+    words: su país
+  reference: Mt 2:12
+  date:
+    from: 0
+    to: 1
+    precision: range
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: entre 1 a.e.c. y 1 e.c.
+  note: Avisados en un sueño, se marchan por otro camino sin volver a Herodes. La fuente no dice dónde queda su país.
+  reason: Mt 2:12 los devuelve a su país. Ni el versículo ni Perspicacia «Astrólogos» lo sitúan ni le dan rumbo.
+  sources:
+  - mateo-2
   - it-astrologos
   checked_on: '2026-10-02'
   status: verified

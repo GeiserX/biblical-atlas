@@ -121,6 +121,33 @@ class SqliteRepite(unittest.TestCase):
                                  ("recorrido-de-samuel", "yearly")])
 
 
+class SqliteAreaDesconocida(unittest.TestCase):
+    def test_la_tabla_paradas_guarda_el_area_desconocida(self):
+        # Con los datos de verdad: una parada que la fuente no sitúa va sin lugar y con sus palabras; las demás, sin área.
+        datos, _ = build.cargar(HERE.parent / "data")
+        salida, _, errores = build.componer(datos, "2026-10-02")
+        self.assertEqual(errores, [])
+        with tempfile.TemporaryDirectory() as tmp:
+            ruta = Path(tmp) / "a.sqlite"
+            build.escribir_sqlite(salida, ruta)
+            con = sqlite3.connect(ruta)
+            filas = con.execute("select viaje_id, orden, lugar_id, unknown_area from paradas where unknown_area is not null"
+                                " order by viaje_id, orden").fetchall()
+            sin_lugar = con.execute("select count(*) from paradas where lugar_id is null and unknown_area is null").fetchone()[0]
+            con.close()
+        self.assertIn(("los-astrologos-de-oriente", 1, None, '{"words": "Oriente", "direction": "east"}'), filas)
+        self.assertIn(("los-astrologos-de-oriente", 4, None, '{"words": "su país"}'), filas)
+        self.assertEqual(sin_lugar, 0)
+
+    def test_data_json_lleva_el_area_en_la_parada(self):
+        datos, _ = build.cargar(HERE.parent / "data")
+        salida, _, _ = build.componer(datos, "2026-10-02")
+        v = next(x for x in salida["viajes"] if x["id"] == "los-astrologos-de-oriente")
+        self.assertEqual([(p["orden"], p["lugar"], p.get("unknown_area")) for p in v["paradas"]],
+                         [(1, None, {"words": "Oriente", "direction": "east"}), (2, "jerusalen", None), (3, "belen", None),
+                          (4, None, {"words": "su país"})])
+
+
 class ChapterUrls(unittest.TestCase):
     """build.py y bible_coverage.py leen el capítulo de la URL de una fuente, en wol.jw.org o en jw.org."""
     LIBROS = [{"slug": "genesis", "num": 1, "name": "Génesis"}, {"slug": "hechos", "num": 44, "name": "Hechos"},

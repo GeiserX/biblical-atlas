@@ -278,6 +278,63 @@ class Repite(unittest.TestCase):
                          [f"{viaje['_fichero']}: repeats debe ser uno de ['yearly'], no 'monthly'"])
 
 
+def errores_areas(*paradas):
+    out = []
+    validate.validar_areas({"stops": [dict(p, order=i) for i, p in enumerate(paradas, 1)]}, "viaje", out.append)
+    return out
+
+
+ORIENTE = {"place": None, "unknown_area": {"words": "Oriente", "direction": "east"}}
+SU_PAIS = {"place": None, "unknown_area": {"words": "su país"}}
+
+
+class AreaDesconocida(unittest.TestCase):
+    def test_salida_y_vuelta_desconocidas_valen(self):
+        self.assertEqual(errores_areas(ORIENTE, {"place": "jerusalen"}, {"place": "belen"}, SU_PAIS), [])
+
+    def test_lugar_o_area_nunca_las_dos_ni_ninguna(self):
+        e = errores_areas({"place": "jerusalen", "unknown_area": {"words": "Oriente"}}, {"place": "belen"})
+        self.assertEqual(len(e), 1, e)
+        self.assertIn("place y unknown_area a la vez", e[0])
+        e = errores_areas({"place": None}, {"place": "belen"})
+        self.assertEqual(len(e), 1, e)
+        self.assertIn("sin place", e[0])
+
+    def test_palabras_y_rumbo(self):
+        for area, trozo in [({}, "unknown_area.words"), ({"words": "  "}, "unknown_area.words"),
+                            ({"words": "uno dos tres cuatro cinco seis siete ocho"}, "como mucho 7"),
+                            ({"words": "Oriente", "direction": "este"}, "direction debe ser"),
+                            ({"words": "Oriente", "direction": None}, "direction debe ser"),
+                            ({"words": "Oriente", "lat": 31}, "solo words y direction"),
+                            ("Oriente", "debe ser un objeto")]:
+            with self.subTest(area=area):
+                e = errores_areas({"place": None, "unknown_area": area}, {"place": "belen"})
+                self.assertEqual(len(e), 1, e)
+                self.assertIn(trozo, e[0])
+
+    def test_solo_en_los_extremos_y_con_algun_lugar(self):
+        e = errores_areas({"place": "jerusalen"}, ORIENTE, {"place": "belen"})
+        self.assertEqual(len(e), 1, e)
+        self.assertIn("la primera o la última", e[0])
+        e = errores_areas(ORIENTE, SU_PAIS)
+        self.assertEqual(len(e), 1, e)
+        self.assertIn("al menos un lugar", e[0])
+
+    def test_validar_mira_las_areas_y_los_hechos_de_la_parada(self):
+        # Sobre los datos de verdad: el área de los astrólogos pasa, y sin fuentes o con lugar a la vez da error.
+        datos = validate.load(HERE.parent / "data")
+        viaje = next(v for v in datos["journeys"] if v["id"] == "los-astrologos-de-oriente")
+        self.assertEqual(viaje["stops"][0]["unknown_area"], {"words": "Oriente", "direction": "east"})
+        errores, _ = validate.validar(datos)
+        self.assertEqual([e for e in errores if "los-astrologos" in e], [])
+        viaje["stops"][0]["place"] = "jerusalen"
+        del viaje["stops"][-1]["sources"]
+        errores, _ = validate.validar(datos)
+        mios = [e for e in errores if "los-astrologos" in e]
+        self.assertTrue(any("place y unknown_area a la vez" in e for e in mios), mios)
+        self.assertTrue(any("stop 4" in e and "sources" in e for e in mios), mios)
+
+
 def errores_viaje(**campos):
     v = {"person": "pablo", "companions": [], "stops": [{"order": i} for i in range(1, 6)]}
     v.update(campos)

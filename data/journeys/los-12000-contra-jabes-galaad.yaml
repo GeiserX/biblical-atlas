@@ -1,6 +1,6 @@
 # biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
 id: los-12000-contra-jabes-galaad
-name: Los 12.000, de Jabés-Galaad a Siló
+name: Los 12.000, del campamento a Jabés-Galaad y Siló
 person: null
 group: los 12.000 guerreros que Israel envía contra Jabés-Galaad
 reference: Jue 21:8-12
@@ -28,6 +28,26 @@ checked_on: '2026-10-02'
 status: verified
 stops:
 - order: 1
+  place: null
+  unknown_area:
+    words: el campamento
+  reference: Jue 21:8-10
+  date:
+    from: -1449
+    to: -1399
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre c. 1450 y c. 1400 a.e.c. (tiempo narrativo: pocos años después de morir Josué, con Finehás de sumo sacerdote)'
+  note: Salida. El pueblo los manda desde el campamento donde se había reunido, que la fuente no sitúa.
+  reason: Jue 21:8-10 no dice dónde acampaban al enviarlos. Antes el pueblo llora en Betel (21:2) y después el campamento está
+    en Siló (21:12).
+  sources:
+  - jueces-21
+  checked_on: '2026-10-02'
+  status: verified
+- order: 2
   place: jabes-galaad
   reference: Jue 21:10-12
   date:
@@ -38,14 +58,14 @@ stops:
     type: narrative
     chronology: tnm
     text: 'entre c. 1450 y c. 1400 a.e.c. (tiempo narrativo: pocos años después de morir Josué, con Finehás de sumo sacerdote)'
-  note: Salen del campamento de Israel, que el texto no sitúa al mandarlos. Perspicacia no sabe con seguridad dónde estaba la ciudad.
+  note: Perspicacia no sabe con seguridad dónde estaba la ciudad.
   reason: Jue 21:10-12. Suceso israel-castiga-a-jabes-galaad; Perspicacia «Jabés-galaad».
   sources:
   - jueces-21
   - it-jabes-galaad
   checked_on: '2026-10-02'
   status: verified
-- order: 2
+- order: 3
   place: silo
   reference: Jue 21:12
   date:

@@ -147,3 +147,23 @@ stops:
   - it-peor
   checked_on: '2026-09-30'
   status: verified
+- order: 7
+  place: null
+  unknown_area:
+    words: su lugar
+  reference: Nú 24:25
+  date:
+    from: -1472
+    to: -1472
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 1473 a.e.c.
+  note: Se va de Peor. La fuente no dice adónde, y no tiene por qué ser Petor.
+  reason: Nú 24:25. Perspicacia «Balaam» explica que la expresión solo dice que dejó Peor, no que regresara a su casa de Petor.
+  sources:
+  - numeros-24
+  - it-balaam
+  checked_on: '2026-10-02'
+  status: verified
