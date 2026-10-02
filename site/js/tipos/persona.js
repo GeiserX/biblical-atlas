@@ -256,7 +256,7 @@ function fichaPersona(id) {
     ${cartas.length ? `<section class="be-card ficha-sec"><div class="be-card__pad"><h3 class="be-card__eyebrow">Cartas <b class="cuenta">${cartas.length}</b></h3>
       <div class="be-list">${cartas.sort((x, y) => (x.tr?.[0] ?? 1e9) - (y.tr?.[0] ?? 1e9)).map((a) => BE.botonSel(a.sel, nombreDe(a.sel), esc(`${a.verbo} · ${textoFecha(a)}`))).join('')}</div></div></section>` : ''}
     ${(p.no_afirmamos || []).length ? `<section class="be-card ficha-sec"><div class="be-card__pad"><h3 class="be-card__eyebrow">Lo que no afirmamos</h3>
-      <ul class="no-afirmamos">${p.no_afirmamos.map((x) => `<li>${esc(x)}</li>`).join('')}</ul><p class="be-muted">Ni la Biblia ni jw.org lo dicen; por eso no sale en el mapa ni en la línea.</p></div></section>` : ''}
+      <ul class="no-afirmamos">${p.no_afirmamos.map((x) => `<li>${esc(x)}</li>`).join('')}</ul><p class="be-muted">Ni la Biblia ni las fuentes enlazadas lo dicen; por eso no sale en el mapa ni en la línea.</p></div></section>` : ''}
     ${(p.no_confundir_con || []).filter((x) => BE.PERS[x]).length ? `<section class="be-card ficha-sec"><div class="be-card__pad"><h3 class="be-card__eyebrow">No confundir con</h3>
       <div class="be-list">${p.no_confundir_con.filter((x) => BE.PERS[x]).map((x) => BE.botonSel(`persona:${x}`, BE.PERS[x].nombre, esc(BE.PERS[x].desambiguacion || BE.PERS[x].resumen || ''))).join('')}</div></div></section>` : ''}
     ${BE.videosHtml(id, VIDEOS_PERSONAS || {}, true)}

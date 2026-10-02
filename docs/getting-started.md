@@ -47,5 +47,5 @@ En los dos casos hace falta conexión: MapLibre GL JS 6.11.2 llega desde unpkg.c
 ## Qué hacer después
 
 - [Uso](usage.md): cada vista, la dirección de la página y el teclado.
-- [Cómo funciona](how-it-works.md): de dónde salen los datos y las reglas de las fuentes.
+- [Cómo funciona](how-it-works.md): cómo tratamos las fuentes y cómo está montada la aplicación.
 - [Desarrollo](development.md): compilar, validar y proponer un cambio.

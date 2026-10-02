@@ -9,12 +9,13 @@ import { test, before, after } from 'node:test';
 import assert from 'node:assert/strict';
 import { execFileSync } from 'node:child_process';
 import fs from 'node:fs';
+import vm from 'node:vm';
 import os from 'node:os';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const ROOT = fileURLToPath(new URL('../../', import.meta.url));
-let D, tmp, html, controles;
+let D, tmp, html, controles, statsFile;
 const norm = (s) => String(s || '').normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
 const fmtAnio = (y) => (y > 0 ? `${y} e.c.` : `${1 - y} a.e.c.`);
 // Every parameter some module of the site reads (base.js and each BE.parametros.push in site/js).
@@ -28,6 +29,7 @@ before(() => {
     file = path.join(tmp, 'data.json');
   }
   D = JSON.parse(fs.readFileSync(file, 'utf8'));
+  statsFile = path.join(path.dirname(file), 'stats.json');   // build.py writes it beside data.json
   for (const f of fs.readdirSync(path.join(ROOT, 'site/js'), { recursive: true })) {
     if (!String(f).endsWith('.js')) continue;
     const js = fs.readFileSync(path.join(ROOT, 'site/js', f), 'utf8');
@@ -111,4 +113,18 @@ test('the era count in the text is the count in the data', () => {
   const eras = D.periodos.filter((p) => p.tipo === 'era');
   const palabras = ['cero', 'una', 'dos', 'tres', 'cuatro', 'cinco', 'seis', 'siete', 'ocho', 'nueve', 'diez', 'once', 'doce'];
   assert.match(html, new RegExp(`${palabras[eras.length][0].toUpperCase()}${palabras[eras.length].slice(1)} épocas`));
+});
+
+test('the landing counts its sources as build.py does for the README badges (stats.json)', () => {
+  // site/js/portada.js and scripts/build.py each count the written sources some fact cites and the Bible chapters the
+  // build adds; the landing and the badges must say the same numbers.
+  assert.ok(fs.existsSync(statsFile), `${statsFile} is missing: build the data with python3 scripts/build.py`);
+  const stats = JSON.parse(fs.readFileSync(statsFile, 'utf8'));
+  const window = { BE: {} };
+  vm.runInNewContext(fs.readFileSync(path.join(ROOT, 'site/js/portada.js'), 'utf8'), { window });
+  const c = { ...window.BE.portada.reglas.cifrasFuentes(D) };   // a plain object, not one from the vm realm
+  assert.deepEqual(c, { enlazadas: stats.fuentes, capitulos: stats.capitulos });
+  const escritas = Object.values(D.fuentes).filter((f) => !f.implicita).length;
+  assert.ok(c.enlazadas > 0 && c.enlazadas <= escritas, `${c.enlazadas} cited of ${escritas} written`);
+  assert.equal(c.enlazadas + c.capitulos <= Object.keys(D.fuentes).length, true);
 });
