@@ -298,7 +298,7 @@ def validar_areas(viaje, donde, err, puntos=None):
             err(f"{pd}: unknown_area debe ser un objeto {{words, direction}}")
             continue
         if set(area) - CAMPOS_AREA:
-            err(f"{pd}: unknown_area lleva solo words y direction, no {sorted(set(area) - CAMPOS_AREA)}")
+            err(f"{pd}: unknown_area lleva solo words, direction y guesses, no {sorted(set(area) - CAMPOS_AREA)}")
         palabras = area.get("words")
         if not isinstance(palabras, str) or not palabras.strip():
             err(f"{pd}: unknown_area.words: las palabras con que la fuente nombra el sitio («Oriente», «su país»)")

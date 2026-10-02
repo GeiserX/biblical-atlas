@@ -307,7 +307,7 @@ class AreaDesconocida(unittest.TestCase):
                             ({"words": "uno dos tres cuatro cinco seis siete ocho"}, "como mucho 7"),
                             ({"words": "Oriente", "direction": "este"}, "direction debe ser"),
                             ({"words": "Oriente", "direction": None}, "direction debe ser"),
-                            ({"words": "Oriente", "lat": 31}, "solo words y direction"),
+                            ({"words": "Oriente", "lat": 31}, "solo words, direction y guesses"),
                             ("Oriente", "debe ser un objeto")]:
             with self.subTest(area=area):
                 e = errores_areas({"place": None, "unknown_area": area}, {"place": "belen"})
