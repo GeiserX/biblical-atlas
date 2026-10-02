@@ -11,6 +11,10 @@
 // with python3 scripts/build.py. BE_SITE_DIR=<dir> tests another copy of the site (a checkout of main is the control,
 // and fails: it has no buttons). Hosts other than the local server are blocked, so the map itself does not load: the
 // map's frame after each press is checked by hand (site/README.md, «Atrás y adelante»).
+//
+// Chromium runs without SwiftShader: no test here draws WebGL through it, and with it every frame is drawn on the CPU
+// (a selection took up to 1.7 s of frames on an idle Mac mini, 40 ms without it), so on a loaded machine the frames,
+// and every wait that polls on them, fell behind the page's timers.
 import { test, before, after, afterEach } from 'node:test';
 import assert from 'node:assert/strict';
 import http from 'node:http';
@@ -60,9 +64,8 @@ before(async () => {
   server = await serve(SITE_DIR, data);
   base = `http://127.0.0.1:${server.address().port}/`;
   const chromium = loadChromium();
-  const args = ['--use-angle=swiftshader', '--enable-unsafe-swiftshader', '--ignore-gpu-blocklist'];
-  try { browser = await chromium.launch({ headless: true, args }); }
-  catch { browser = await chromium.launch({ headless: true, args, channel: 'chrome' }); }
+  try { browser = await chromium.launch({ headless: true }); }
+  catch { browser = await chromium.launch({ headless: true, channel: 'chrome' }); }
 });
 afterEach(async () => { for (const c of browser?.contexts() || []) await c.close().catch(() => {}); });
 after(async () => { await browser?.close(); server?.close(); if (tmp) fs.rmSync(tmp, { recursive: true, force: true }); });
@@ -83,9 +86,16 @@ async function openPage(screen = DESKTOP, { hash = '', storage = null, route = n
   page.on('pageerror', (e) => page.pageErrors.push(e.message));
   await page.route((url) => !url.href.startsWith(base), (r) => r.abort());
   if (route) await page.route('**/data.json*', route);
-  await page.goto(`${base}index.html${hash ? `#${hash}` : ''}`);
-  if (wait) { await page.waitForFunction(() => window.BE?.D && window.__be, null, { timeout: 30000 }); await page.waitForTimeout(400); }
+  // Not until «load»: that waits for every image of the page too, which a loaded machine took more than 8 s to serve.
+  // What a test needs, the data and the first frames, ready() waits for.
+  await page.goto(`${base}index.html${hash ? `#${hash}` : ''}`, { waitUntil: 'domcontentloaded' });
+  if (wait) await ready(page);
   return page;
+}
+/** The map page has its data, its first frames painted and its address written. */
+async function ready(page) {
+  await page.waitForFunction(() => window.BE?.D && window.__be, null, { timeout: 30000 });
+  await settle(page);
 }
 /** Waits for the page to settle after a press or a Back: two painted frames (every painter, the history's too, has seen
     the change) and base.js's address written. It waits on those, never on a fixed time; the assertions come after. */
@@ -110,8 +120,10 @@ const hist = (page, pre = '') => page.evaluate((pre) => {
 }, pre);
 async function search(page, text) {
   await page.locator('#q').fill(text);
-  // The first search of a page builds the index: on a busy machine that takes longer than the default 8 s.
-  await page.waitForFunction((t) => { const r = document.querySelector('#resultados'); return !r.hidden && r.innerText.includes(t); }, text, { timeout: 20000 });
+  // A search takes a few milliseconds. What made this wait run out on a loaded machine was the site closing the list:
+  // the previous Enter left the box, and 150 ms later the list closed even with the box focused again and the next
+  // search shown. This wait polls on frames, which a loaded machine delays more than timers, so it lost that race.
+  await page.waitForFunction((t) => { const r = document.querySelector('#resultados'); return !r.hidden && r.innerText.includes(t); }, text);
   await page.keyboard.press('Enter');
   await settle(page);
 }
@@ -250,9 +262,8 @@ test('a link with a «#» takes the next number, a reload keeps it, and going ba
   for (let i = 0; i < 2; i++) { await page.locator('#atras').click(); await settle(page); }
   for (let i = 0; i < 2; i++) { await page.locator('#adelante').click(); await settle(page); }
   assert.equal(await visits(), kept, 'Back and Forward changed the list');
-  await page.reload();
-  await page.waitForFunction(() => window.BE?.D && window.__be, null, { timeout: 30000 });
-  await settle(page);
+  await page.reload({ waitUntil: 'domcontentloaded' });
+  await ready(page);
   h = await hist(page);
   assert.equal(h.state.step, 2, 'a reload lost the number');
   assert.equal(h.back.off, false);
@@ -433,10 +444,9 @@ test('a stateless entry reached by going back starts a visit there, and another 
   await p2.locator('#atras').click();
   await settle(p2);
   assert.equal((await hist(p2)).forward.label, 'Adelante: Samotracia');
-  await p2.goto(`${base}acerca.html`);
-  await p2.goBack();
-  await p2.waitForFunction(() => window.BE?.D && window.__be, null, { timeout: 30000 });
-  await settle(p2);
+  await p2.goto(`${base}acerca.html`, { waitUntil: 'domcontentloaded' });
+  await p2.goBack({ waitUntil: 'domcontentloaded' });
+  await ready(p2);
   h = await hist(p2);
   assert.equal(h.state.step, 2);
   assert.equal(h.forward.off, true, 'Forward offers Samotracia but goes to acerca.html');
@@ -475,12 +485,11 @@ test('only a link that unloads the page in this tab cuts what is ahead: mailto, 
   // A plain click on a same-tab link to another page («Acerca de», in the bar) still cuts, as the browser does.
   await page.locator('#atras').click();
   await settle(page);
-  await Promise.all([page.waitForURL(/acerca\.html/), page.locator('#acerca').click()]);
+  await Promise.all([page.waitForURL(/acerca\.html/, { waitUntil: 'domcontentloaded' }), page.locator('#acerca').click()]);
   // Read on the other page, before coming back: there the Navigation API would cut it too, and hide a link that did not.
   assert.doesNotMatch(await stored(), /Samotracia/, 'the link to another page left Samotracia ahead');
-  await page.goBack();
-  await page.waitForFunction(() => window.BE?.D && window.__be, null, { timeout: 30000 });
-  await settle(page);
+  await page.goBack({ waitUntil: 'domcontentloaded' });
+  await ready(page);
   const h = await hist(page);
   assert.equal(h.state.step, 2);
   assert.equal(h.forward.off, true, 'a same-tab link to another page left Samotracia ahead');
