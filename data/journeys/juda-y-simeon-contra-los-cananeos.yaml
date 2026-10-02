@@ -15,8 +15,8 @@ date:
 companions: []
 summary: Judá sube primero, con Simeón. Vencen a Adoni-Bézec en Bézec y lo llevan a Jerusalén. Después destruyen Zefat, que
   pasa a llamarse Hormá, y Judá toma Gaza, Asquelón y Ecrón.
-reason: Jueces 1 da el orden. Perspicacia «Adoni-bézeq» pone Bézec poco después de morir Josué, y «Hormá», la toma de Zefat
-  más tarde. Hebrón y Debir (Jue 1:9-15) fueron antes, en vida de Josué (Jos 15:13-19), y no entran.
+reason: Jueces 1 da el orden; Perspicacia «Adoni-bézeq» pone Bézec tras morir Josué. Deducimos que Hebrón y Debir (Jue
+  1:9-15) quedan fuera, porque van en el viaje de Caleb, cuyos sucesos (Jos 15:13-19) caen antes, entre 1467 y 1450.
 sources:
 - jueces-1
 - it-adoni-bezeq
@@ -24,6 +24,9 @@ sources:
 - it-horma
 - it-simeon
 - it-jueces
+- josue-15
+- it-debir
+- it-anaquim
 - si-3
 checked_on: '2026-10-02'
 status: verified
