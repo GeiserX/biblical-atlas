@@ -275,9 +275,12 @@ function montarCapas() {
   map.addLayer({ id: 'be-zonas-carta-borde', type: 'line', source: 'be-zonas-carta', paint: { 'line-color': color, 'line-width': 1.4, 'line-dasharray': [3, 3], 'line-opacity': 0.8 } });
   // Viajes
   const pinturaRastro = { 'line-color': color, 'line-width': ['case', ['==', ['get', 'estado'], 'actual'], 3, 2.2], 'line-opacity': ['match', ['get', 'estado'], 'futuro', 0.3, 'actual', 0.9, 0.6] };
-  map.addLayer({ id: 'be-rastro', type: 'line', source: 'be-rastro', filter: ['!=', ['get', 'incierto'], true], layout: lineas, paint: pinturaRastro });
+  const sinDeducir = ['!=', ['get', 'deducido'], true], deducidos = ['==', ['get', 'deducido'], true];
+  map.addLayer({ id: 'be-rastro', type: 'line', source: 'be-rastro', filter: ['all', ['!=', ['get', 'incierto'], true], sinDeducir], layout: lineas, paint: pinturaRastro });
   // El tramo que llega a un lugar incierto va a trazos hasta su candidato preferido o el centro de su zona (verticeRuta).
-  map.addLayer({ id: 'be-rastro-incierto', type: 'line', source: 'be-rastro', filter: ['==', ['get', 'incierto'], true], layout: { 'line-join': 'round' }, paint: { ...pinturaRastro, 'line-dasharray': [3, 2] } });
+  map.addLayer({ id: 'be-rastro-incierto', type: 'line', source: 'be-rastro', filter: ['all', ['==', ['get', 'incierto'], true], sinDeducir], layout: { 'line-join': 'round' }, paint: { ...pinturaRastro, 'line-dasharray': [3, 2] } });
+  // El que llega a una parada deducida o sale de ella, de puntos (deducida).
+  map.addLayer({ id: 'be-rastro-deducido', type: 'line', source: 'be-rastro', filter: deducidos, layout: lineas, paint: { ...pinturaRastro, 'line-dasharray': [0.1, 1.8] } });
   map.addLayer({ id: 'be-rastro-flechas', source: 'be-rastro', ...flecha('line', ['match', ['get', 'estado'], 'futuro', 0.35, 'actual', 0.9, 0.5], 90) });
   // Cartas: un color por escritor; pendientes punteadas, escritas discontinuas, la seleccionada gruesa.
   map.addLayer({ id: 'be-cartas-o', type: 'line', source: 'be-cartas-o', layout: lineas, paint: { 'line-color': color, 'line-width': 1.4, 'line-dasharray': [0.4, 2.2], 'line-opacity': 0.9 } });
@@ -288,8 +291,9 @@ function montarCapas() {
   map.addLayer({ id: 'be-halo', type: 'circle', source: 'be-halo', paint: { 'circle-radius': 16, 'circle-color': color, 'circle-opacity': 0.12, 'circle-stroke-color': color, 'circle-stroke-width': 1.5 } });
   map.addLayer({ id: 'be-falta', type: 'line', source: 'be-falta', layout: lineas, paint: { 'line-color': color, 'line-width': 2.5, 'line-dasharray': [0.3, 2.6], 'line-opacity': 0.75 } });
   map.addLayer({ id: 'be-hecho-casing', type: 'line', source: 'be-hecho', layout: lineas, paint: { 'line-color': '#fffcf4', 'line-width': 7, 'line-opacity': 0.8 } });
-  map.addLayer({ id: 'be-hecho', type: 'line', source: 'be-hecho', filter: ['!', ['get', 'incierto']], layout: lineas, paint: { 'line-color': color, 'line-width': 3.5 } });
-  map.addLayer({ id: 'be-hecho-incierto', type: 'line', source: 'be-hecho', filter: ['get', 'incierto'], layout: { 'line-join': 'round' }, paint: { 'line-color': color, 'line-width': 3, 'line-dasharray': [3, 2], 'line-opacity': 0.9 } });
+  map.addLayer({ id: 'be-hecho', type: 'line', source: 'be-hecho', filter: ['all', ['!', ['get', 'incierto']], sinDeducir], layout: lineas, paint: { 'line-color': color, 'line-width': 3.5 } });
+  map.addLayer({ id: 'be-hecho-incierto', type: 'line', source: 'be-hecho', filter: ['all', ['get', 'incierto'], sinDeducir], layout: { 'line-join': 'round' }, paint: { 'line-color': color, 'line-width': 3, 'line-dasharray': [3, 2], 'line-opacity': 0.9 } });
+  map.addLayer({ id: 'be-hecho-deducido', type: 'line', source: 'be-hecho', filter: deducidos, layout: lineas, paint: { 'line-color': color, 'line-width': 3.5, 'line-dasharray': [0.1, 1.6] } });
   map.addLayer({ id: 'be-falta-flechas', source: 'be-falta', ...flecha('line-center', 0.6, 80) });
   map.addLayer({ id: 'be-hecho-flechas', source: 'be-hecho', ...flecha('line-center', 1, 80) });
   map.addLayer({ id: 'be-rastro-toque', type: 'line', source: 'be-rastro', layout: lineas, paint: { 'line-color': '#000', 'line-width': 12, 'line-opacity': 0 } });
@@ -507,6 +511,9 @@ function verticeRuta(l) {
   const c = cs.sort((a, b) => PREFERENCIA_RUTA.indexOf(a.estado) - PREFERENCIA_RUTA.indexOf(b.estado))[0];
   return { c: [c.geometria.lon, c.geometria.lat], incierto: true };
 }
+/** Una parada deducida (README de la investigación, «Viajes») lleva `estado: pendiente`: el tramo que llega a ella o
+    sale de ella se dibuja de puntos, para no dibujar una suposición con la misma línea que el texto. */
+const deducida = (p) => p?.estado === 'pendiente';
 function geoRutas(w) {
   const V = BE.viajeActual(w);
   const hecho = [], falta = [], rastro = [];
@@ -517,7 +524,7 @@ function geoRutas(w) {
     for (let k = 0; k < ps.length - 1; k++) {
       const A = ps[k], B = ps[k + 1];
       const incierto = A.lugar.precision === 'zona' || B.lugar.precision === 'zona';
-      const props = { viaje: V.id, incierto, color };
+      const props = { viaje: V.id, incierto, deducido: deducida(A.p) || deducida(B.p), color };
       if (k < corte) hecho.push(linea([coord(A.lugar), coord(B.lugar)], props));
       else if (k === corte && !w.parada) {
         hecho.push(linea([coord(A.lugar), w.pos], props));
@@ -525,8 +532,8 @@ function geoRutas(w) {
       } else falta.push(linea([coord(A.lugar), coord(B.lugar)], props));
     }
     if (!w.parada && w.en.viaje !== V) {             // tramo de enlace entre dos viajes
-      hecho.push(linea([coord(w.en.lugar), w.pos], { viaje: V.id, incierto: false, color }));
-      falta.push(linea([w.pos, coord(w.sig.lugar)], { viaje: V.id, incierto: false, color }));
+      hecho.push(linea([coord(w.en.lugar), w.pos], { viaje: V.id, incierto: false, deducido: false, color }));
+      falta.push(linea([w.pos, coord(w.sig.lugar)], { viaje: V.id, incierto: false, deducido: false, color }));
     }
   }
   const selPersona = E.sel?.tipo === 'persona' ? E.sel.id : null;
@@ -537,7 +544,7 @@ function geoRutas(w) {
     const ver = elegido || (selPersona && (selPersona === quien || (v.companeros || []).includes(selPersona)))
       || (F.capas.viajes && quien !== 'pablo' && viajeEnEpoca(v, E.t));
     if (!ver) continue;
-    const pts = [...(v.paradas || [])].sort((a, b) => a.orden - b.orden).map((p) => verticeRuta(BE.L[p.lugar])).filter(Boolean);
+    const pts = [...(v.paradas || [])].sort((a, b) => a.orden - b.orden).map((p) => { const x = verticeRuta(BE.L[p.lugar]); return x && { ...x, deducida: deducida(p) }; }).filter(Boolean);
     if (pts.length < 2) continue;
     let estado;
     const dePablo = quien === 'pablo';
@@ -550,15 +557,16 @@ function geoRutas(w) {
     }
     const c = colorViaje(v.id);
     const props = { viaje: v.id, estado, color: estado === 'pasado' ? apagar(c, 0.45) : c };
-    // Un trazo por cada tramo seguido del mismo tipo: firme entre lugares con punto, a trazos si toca un lugar incierto.
-    let tramoRuta = [pts[0].c], incierto = null;
+    // Un trazo por cada tramo seguido del mismo tipo: firme entre lugares con punto, a trazos si toca un lugar incierto
+    // y de puntos si llega a una parada deducida o sale de ella.
+    let tramoRuta = [pts[0].c], incierto = null, deducido = null;
     for (let k = 1; k < pts.length; k++) {
-      const inc = pts[k - 1].incierto || pts[k].incierto;
-      if (incierto !== null && inc !== incierto) { rastro.push(linea(tramoRuta, { ...props, incierto })); tramoRuta = [pts[k - 1].c]; }
-      incierto = inc;
+      const inc = pts[k - 1].incierto || pts[k].incierto, ded = pts[k - 1].deducida || pts[k].deducida;
+      if (incierto !== null && (inc !== incierto || ded !== deducido)) { rastro.push(linea(tramoRuta, { ...props, incierto, deducido })); tramoRuta = [pts[k - 1].c]; }
+      incierto = inc; deducido = ded;
       tramoRuta.push(pts[k].c);
     }
-    rastro.push(linea(tramoRuta, { ...props, incierto }));
+    rastro.push(linea(tramoRuta, { ...props, incierto, deducido }));
   }
   return { hecho, falta, rastro, V };
 }
@@ -1346,7 +1354,8 @@ function pintarLeyenda(V, w, g) {
   const estimada = (marcaPablo?.puesta && !!w?.estimada) || [...marcasViajero.values()].some((m) => m.puesta && m.el.classList.contains('estimada'));
   const viajeros = [...marcasViajero.values()].some((m) => m.puesta);
   const apagado = g.rastro.some((f) => f.properties.estado !== 'actual');   // algún rastro en gris
-  const clave = `${apagado}|${V?.id}|${estimada}|${E.sel?.tipo}|${E.sel?.id}|${pendiente}|${escritores}|${inciertos}|${hallazgos}|${F.capas.viajes}|${F.nivel1}|${rastro.map((v) => v.id)}|${dePablo}|${viajeros}`;
+  const deducidos = [...g.rastro, ...g.hecho, ...g.falta].some((f) => f.properties.deducido);
+  const clave = `${apagado}|${deducidos}|${V?.id}|${estimada}|${E.sel?.tipo}|${E.sel?.id}|${pendiente}|${escritores}|${inciertos}|${hallazgos}|${F.capas.viajes}|${F.nivel1}|${rastro.map((v) => v.id)}|${dePablo}|${viajeros}`;
   if (clave === pintarLeyenda.clave) return;
   pintarLeyenda.clave = clave;
   const filas = [];
@@ -1371,6 +1380,7 @@ function pintarLeyenda(V, w, g) {
       }
     }
   }
+  if (deducidos) filas.push('<div class="be-legend__row"><span class="be-legend__line be-legend__line--deducida"></span>De puntos: tramo hacia una parada deducida, pendiente de verificar</div>');
   if (escritores.length) {
     filas.push(`<div class="be-legend__row"><span class="be-legend__line be-legend__line--letter" style="--carta:${colorEscritor(escritores[0])}"></span>Carta ${escritores.length > 1 ? `de ${esc(nombrePersona(escritores[0]))}` : 'escrita cerca de esta fecha'}</div>`);
     for (const e of escritores.slice(1)) filas.push(`<div class="be-legend__row"><span class="be-legend__line be-legend__line--letter" style="--carta:${colorEscritor(e)}"></span>Carta de ${esc(nombrePersona(e))}</div>`);

@@ -200,3 +200,32 @@ test('1B: a group journey (the Ark) has its own owner, route, legend name and ca
   assert.deepEqual(page.pageErrors, []);
   await page.context().close();
 });
+
+test('2D: a segment that reaches or leaves a deduced stop is dotted, the verified ones keep their line, and the legend says so', async () => {
+  const page = await openMap();
+  const read = (id) => page.evaluate(async (id) => {
+    const { map, BE, setT, seleccionar } = window.__be;
+    seleccionar({ tipo: 'viaje', id }, { mover: false, encuadrar: false });
+    setT(50.5);
+    await new Promise((r) => requestAnimationFrame(() => requestAnimationFrame(r)));
+    const v = BE.D.viajes.find((x) => x.id === id);
+    const pendientes = v.paradas.filter((p) => p.estado === 'pendiente').map((p) => BE.L[p.lugar]).filter((l) => l?.lat != null).map((l) => `${l.lon},${l.lat}`);
+    const fs = (await map.getSource('be-rastro').getData()).features.filter((f) => f.properties.viaje === id);
+    const toca = (f) => f.geometry.coordinates.some((c) => pendientes.includes(`${c[0]},${c[1]}`));
+    const layer = map.getLayer('be-rastro-deducido');
+    return { n: fs.length, mal: fs.filter((f) => !!f.properties.deducido !== toca(f)).map((f) => JSON.stringify(f.properties)),
+      deducidos: fs.filter((f) => f.properties.deducido).length, dash: layer && map.getPaintProperty('be-rastro-deducido', 'line-dasharray'),
+      leyenda: document.querySelector('#leyenda')?.textContent ?? '' };
+  }, id);
+  // Jacob sale de Hebrón, que jw.org da como probable (parada 1 pendiente); las demás paradas están verificadas.
+  const jacob = await read('jacob-a-egipto');
+  assert.ok(jacob.deducidos >= 1 && jacob.n > jacob.deducidos, `dotted and solid segments: ${jacob.deducidos} of ${jacob.n}`);
+  assert.deepEqual(jacob.mal, [], 'dotted exactly where a segment touches a deduced stop');
+  assert.ok(Array.isArray(jacob.dash) && jacob.dash[0] < 0.5, `the deduced layer is dotted: ${jacob.dash}`);
+  assert.match(jacob.leyenda, /De puntos: tramo hacia una parada deducida/);
+  const moab = await read('campana-contra-moab');
+  assert.equal(moab.deducidos, 0, 'a journey whose stops are all verified has no dotted segment');
+  assert.doesNotMatch(moab.leyenda, /De puntos/);
+  assert.deepEqual(page.pageErrors, []);
+  await page.context().close();
+});

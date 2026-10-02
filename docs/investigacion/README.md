@@ -88,7 +88,7 @@ Una parada es un lugar que el texto dice que se alcanzó o se pasó, en el orden
 - la salida de un viaje que solo cuenta una carta, que es el `written_in` de esa carta (Crescente sale de Roma en 2Ti 4:10);
 - la salida o la vuelta que el relato deja ver sin nombrarla: la capital donde reina quien sale (Jerusalén en 2Sa 5:17), la casa adonde vuelve (Saúl a Guibeá en 1Sa 24:22) o el último lugar donde el relato dejó a quien sale (Eliseo en Samaria antes de 2Re 8:7).
 
-Una deducción que el texto contradice no entra: si el relato pone la salida en otro sitio, manda el relato (el resto de Judá sale de Gabaón en Jer 41:12-16, no de Mizpá). Lo que solo se cruza o se anuncia (el Éufrates, Ofir adonde navega una flota) va en la `note` de la parada más cercana.
+Una deducción que el texto contradice no entra: si el relato pone la salida en otro sitio, manda el relato (el resto de Judá sale de Gabaón en Jer 41:12-16, no de Mizpá). Lo que solo se cruza o se anuncia (el Éufrates, Ofir adonde navega una flota) va en la `note` de la parada más cercana. En el mapa, el tramo que llega a una parada pendiente o sale de ella se dibuja de puntos.
 
 **Cartas.** `writer` es obligatorio (id de persona; las 14 de Pablo llevan `writer: pablo`). Opcionales: `recipients.people`, `carriers` y `people` (las nombradas en la carta), listas de ids de personas que `build.py` comprueba. La comprobación de que una carta cae en una parada de Pablo solo mira las cartas de Pablo.
 
