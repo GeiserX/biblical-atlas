@@ -271,7 +271,7 @@ test('1B: a group journey (the Ark) has its own owner, route, legend name and ca
   await page.context().close();
 });
 
-test('1B: every group journey is its own, sits on the timeline and is drawn with its group in the legend while its stops last', async () => {
+test('1B: every group journey is its own, sits on the timeline, is drawn while its stops last and its card names its group', async () => {
   const page = await openMap();
   const gs = await page.evaluate(() => {
     const { BE } = window.__be;
@@ -289,7 +289,11 @@ test('1B: every group journey is its own, sits on the timeline and is drawn with
     assert.equal(g.nombre, g.grupo[0].toUpperCase() + g.grupo.slice(1), `${g.id}: the legend name is its group`);
     const d = await drawnAt(page, g.t);
     assert.ok(d.otros.includes(g.id), `${g.id} is drawn at ${g.t.toFixed(2)}: ${d.otros}`);
-    assert.ok(d.leyenda.includes(g.nombre), `${g.id}: the legend names «${g.nombre}»: «${d.leyenda}»`);
+    // The legend names who travels only when it draws more than one traveller's journey.
+    if (d.otros.length > 1) assert.ok(d.leyenda.includes(g.nombre), `${g.id}: the legend names «${g.nombre}»: «${d.leyenda}»`);
+    await drawnAt(page, g.t, { tipo: 'viaje', id: g.id });
+    const ficha = await page.evaluate(() => document.querySelector('#panel')?.textContent.replace(/\s+/g, ' ') ?? '');
+    assert.ok(ficha.includes(g.grupo.replace(/^el /, '')) && !/Pablo/.test(ficha.slice(0, 200)), `${g.id}: the card names the group: «${ficha.slice(0, 200)}»`);
   }
   assert.deepEqual(page.pageErrors, []);
   await page.context().close();
