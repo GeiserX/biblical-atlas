@@ -70,7 +70,7 @@ shape:
 
 - **El contorno es nuestro y aproximado.** Sale de lo que la fuente dice con palabras: un largo, un ancho, un rumbo, los lugares de su frontera. Nunca se calca de un mapa publicado.
 - **Sin medida o sin frontera, no hay forma.** El Antilíbano corre unos 100 km, pero ninguna fuente da su ancho, así que sigue sin forma. Una zona que la fuente no describe se queda en su círculo.
-- **Un lugar sin punto nunca es vértice.** Si la fuente dice que no se sabe dónde estaba, no se sabe. Gé 10:19 lleva Canaán hasta Guerar y Sodoma, que no tienen punto. El polígono usa Gaza y el extremo sur del mar Salado, y la nota lo dice.
+- **Un lugar sin punto nunca es vértice.** Si la fuente dice que no se sabe dónde estaba, no se sabe. Gé 10:19 lleva Canaán hasta Guerar y Sodoma, que no tienen punto. El polígono no dibuja Sodoma: usa Gaza y el extremo sur del mar Salado, donde Nú 34:3 empieza la frontera sur de la tierra, y la nota lo dice.
 - **El punto queda dentro.** La forma rodea el punto que representa al lugar o al candidato. Un polígono no se cruza consigo mismo.
 - **Doce vértices como mucho.** Es una aproximación para leer el mapa, no una frontera.
 
@@ -93,7 +93,7 @@ Nueve zonas cuyas fuentes describen bien su extensión. Las demás siguen como e
 |---|---|---|---|
 | Desierto de Judá (candidato) | Elipse 80 × 20 km, al N | Perspicacia: unos 80 km junto al mar Muerto, de 16 a 24 de ancho | Desde el este del monte de los Olivos hacia el sur; ancho medio |
 | Arabá | Polígono de 12 vértices | Perspicacia: del pie del Hermón al golfo de ʽAqaba, 435 km, de 800 m a 16 km de ancho | Franja de 16 km por Dan, el mar de Galilea, la boca del Jordán, el sur del mar Salado, su punto y Elat |
-| Canaán | Polígono de 7 vértices | Perspicacia y Gé 10:19: al oeste del Jordán, de Sidón a Guerar junto a Gaza y hacia Sodoma | Sidón, Dan, el Jordán hasta el mar Salado y su extremo sur, Gaza y Jope |
+| Canaán | Polígono de 7 vértices | Perspicacia, Gé 10:19 y Nú 34:3: al oeste del Jordán, de Sidón a Guerar junto a Gaza y hacia Sodoma, de sitio incierto | Sidón, Dan, el Jordán hasta el mar Salado y su extremo sur, Gaza y Jope |
 | Galilea | Caja de 40 × 60 km | Perspicacia: en tiempos de Jesús, 40 km de este a oeste y 60 de norte a sur, con sus límites | Lado este en el Jordán, lado sur a la altura de Bet-seán |
 | Llanura de Sarón | Elipse 60 × 17,5 km, al NNE | Perspicacia: 60 km del Crocodilon a Jope, de 16 a 19 de ancho | Junto a la costa; ancho medio |
 | Filistea | Polígono de 5 vértices | Perspicacia: unos 80 km de costa de Jope a Gaza y 24 tierra adentro | Gaza, Asquelón y Jope, y una paralela a 24 km |

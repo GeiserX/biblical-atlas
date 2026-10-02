@@ -22,11 +22,13 @@ shape:
   - [31.0, 35.45]
   - gaza
   - jope
-  note: 'Contorno nuestro: Sidón; Dan, junto a las fuentes del Jordán; el Jordán por el mar de Galilea hasta el mar Salado y su extremo sur; Gaza y Jope por la costa. Guerar y Sodoma no tienen punto.'
+  note: 'Contorno nuestro: Sidón, Dan, el Jordán hasta el mar Salado y su orilla oeste hasta el extremo sur, donde empieza la frontera sur de Nú 34:3, y Gaza y Jope por la costa. Sodoma y Guerar no tienen punto.'
   sources:
   - it-canaan
   - genesis-10
-  reason: 'Perspicacia «Canaán», núm. 2: la tierra al oeste del Jordán. Gé 10:19 la lleva de Sidón a Guerar, junto a Gaza, y hacia Sodoma y sus vecinas, al sureste.'
+  - it-sodoma
+  - numeros-34
+  reason: 'Perspicacia «Canaán», núm. 2: al oeste del Jordán, de Sidón a Guerar, junto a Gaza, y hacia Sodoma, de sitio incierto (Gé 10:19). Nú 34:3: la frontera sur empieza en el extremo del mar Salado.'
   checked_on: '2026-10-02'
   status: verified
 summary: Tierra al oeste del Jordán, entre Egipto y Siria, que debe su nombre a Canaán, hijo de Cam, cuyos descendientes la
