@@ -13,21 +13,28 @@ date:
   text: c. 52-56 e.c.
 companions:
 - {person: timoteo, from: 4, to: 4}
-- {person: timoteo, from: 6, to: 9}
+- {person: timoteo, from: 6, to: 7}
+- {person: timoteo, from: 9, to: 9}
 - {person: lucas, from: 8, to: 21}
 - {person: aristarco, from: 4, to: 4}
-- {person: aristarco, from: 7, to: 9}
+- {person: aristarco, from: 7, to: 7}
+- {person: aristarco, from: 9, to: 9}
 - {person: gayo-de-macedonia, from: 4, to: 4}
 - {person: erasto-colaborador-de-pablo, from: 4, to: 4}
-- {person: sopater, from: 7, to: 9}
-- {person: segundo, from: 7, to: 9}
-- {person: tiquico, from: 7, to: 9}
-- {person: trofimo, from: 7, to: 21}
-- {person: gayo-de-derbe, from: 7, to: 9}
+- {person: sopater, from: 7, to: 7}
+- {person: sopater, from: 9, to: 9}
+- {person: segundo, from: 7, to: 7}
+- {person: segundo, from: 9, to: 9}
+- {person: tiquico, from: 7, to: 7}
+- {person: tiquico, from: 9, to: 9}
+- {person: trofimo, from: 7, to: 7}
+- {person: trofimo, from: 9, to: 21}
+- {person: gayo-de-derbe, from: 7, to: 7}
+- {person: gayo-de-derbe, from: 9, to: 9}
 summary: Pablo vuelve a Galacia y Frigia, pasa unos tres años en Éfeso, recorre Macedonia y Grecia y regresa por
   mar a Jerusalén para Pentecostés de 56.
 reason: El estudio 3 (párr. 26) da las fechas. Cada acompañante va en las paradas que dan Hch 19:22, 29; 20:4-6; 21:29,
-  2Co 1:1 y Ro 16:21; el «nosotros» de Hch 20:5 pone a Lucas desde Filipos.
+  2Co 1:1 y Ro 16:21. Los siete de Hch 20:4 se adelantan a Troas; en Filipos, solo Lucas.
 sources:
 - si-3
 - it-pablo
@@ -57,6 +64,10 @@ history:
   change: 'Se añade la parada de Troas entre Éfeso y Macedonia: 2Co 2:12, 13 y Perspicacia «Troas», párr. 4. Las paradas 5
     a 20 pasan a ser 6 a 21.'
   source: 2-corintios-2
+- date: '2026-10-02'
+  change: 'Cada acompañante pasa de ir en todo el viaje a ir solo en sus paradas. Los siete de Hch 20:4 se adelantan a Troas:
+    no van en Filipos, donde Pablo embarca con Lucas.'
+  source: hch-20
 checked_on: '2026-10-02'
 status: verified
 stops:
