@@ -496,16 +496,11 @@ function imagenRayado(color, estado) {
     viajes van uno detrás de otro, de 34 a 65, y en cada fecha se ve solo el que recorre (BE.viajeActual). */
 const viajeEnEpoca = (v, t) => { const tr = tramo(v.fecha); return !!tr && t >= tr[0] && t < tr[1] + 1; };
 /** Vértice de una parada en la ruta de un viaje: el punto de su lugar o, si el lugar es incierto, su candidato
-    preferido de los que se ven (seguro, favorecido por la fuente principal, tradición, otra propuesta, otra fuente; nunca uno
-    descartado), o el centro de su zona. { c: [lon, lat], incierto } o null si no hay ninguno. Sin esto, Perea, Efraín o
-    Sodoma dejaban su viaje sin línea. */
-const PREFERENCIA_RUTA = ['seguro', 'favorecido_nivel_1', 'tradicion', 'alternativa', 'solo_nivel_2'];
+    preferido o el centro de su zona. Lo dice BE.puntoLugar (trayectorias.js), que es también donde BE.donde pone a la
+    persona. { c: [lon, lat], incierto } o null si no hay ninguno. Sin esto, Perea, Efraín o Sodoma dejaban su viaje
+    sin línea. */
 function verticeRuta(l) {
-  if (conPunto(l)) return { c: coord(l), incierto: l.precision === 'zona' };
-  const cs = candidatosVisibles(l).map(({ c }) => c).filter((c) => PREFERENCIA_RUTA.includes(c.estado) && c.geometria?.lat != null && c.geometria?.lon != null);
-  if (!cs.length) return null;
-  const c = cs.sort((a, b) => PREFERENCIA_RUTA.indexOf(a.estado) - PREFERENCIA_RUTA.indexOf(b.estado))[0];
-  return { c: [c.geometria.lon, c.geometria.lat], incierto: true };
+  return BE.puntoLugar(l);
 }
 function geoRutas(w) {
   const V = BE.viajeActual(w);
@@ -883,10 +878,10 @@ function pintarMapa() {
   pintarInciertos();
   pintarHallazgos();
   // Pablo
-  if (w && verViajes && (!soloViaje || soloViaje === V?.id)) {
+  if (w?.pos && verViajes && (!soloViaje || soloViaje === V?.id)) {
     marcaPablo.setLngLat(w.pos);
     if (!marcaPablo.puesta) { marcaPablo.addTo(map); marcaPablo.puesta = true; }
-    marcaPablo.getElement().classList.toggle('estimada', w.estimada);
+    marcaPablo.getElement().classList.toggle('estimada', !!(w.estimada || w.incierto));
     const sig = w.parada ? BE.P[w.en.g + 1] : w.sig;
     if (sig && sig.viaje === V) {
       const q = marcaProxima.getElement();
@@ -914,7 +909,7 @@ function pintarMapa() {
   if (kt !== claveTiempo) { claveTiempo = kt; sucio.etiquetas = true; }
   pintarLeyenda(V, w, g);
   pintarMientras(t);
-  if (E.play && w) seguir(w.pos);
+  if (E.play && w?.pos) seguir(w.pos);
   vigilarSalto();
 }
 /** Marcadores de otras personas con viajes (Pedro, Jesús…) cuando BE.donde sabe dónde están. */
@@ -934,7 +929,8 @@ function pintarViajeros(ver) {
       marcasViajero.set(p, m);
     }
     m.marker.setLngLat(w.pos);
-    m.el.classList.toggle('estimada', !!w.estimada);
+    // Fecha estimada o lugar sin punto (se dibuja en su candidato): el mismo aspecto de posición estimada.
+    m.el.classList.toggle('estimada', !!(w.estimada || w.incierto));
     if (!m.puesta) { m.marker.addTo(map); m.puesta = true; }
   }
 }
@@ -1382,7 +1378,7 @@ function pintarLeyenda(V, w, g) {
     for (const [k, s] of Object.entries(CAND)) if (estados.has(k)) filas.push(`<div class="be-legend__row"><span class="leyenda-cand leyenda-cand--${k}" style="--cand:${s.color}"></span>${esc(s.rotulo)}</div>`);
   } else if (inciertos) filas.push(`<div class="be-legend__row"><span class="leyenda-cand leyenda-cand--favorecido_nivel_1" style="--cand:${CAND.favorecido_nivel_1.color}"></span>Lugar incierto: zona o candidatos, nunca un punto</div>`);
   if (hallazgos) filas.push('<div class="be-legend__row"><span class="leyenda-hallazgo"></span>Hallazgo arqueológico</div>');
-  if (estimada) filas.push('<div class="be-legend__row"><span class="leyenda-estimada"></span>Posición estimada (tiempo narrativo)</div>');
+  if (estimada) filas.push('<div class="be-legend__row"><span class="leyenda-estimada"></span>Posición estimada (tiempo narrativo o lugar sin punto)</div>');
   if (F.capas.viajes && !S && !dePablo && !rastro.length && !viajeros) filas.push('<div class="be-legend__row be-muted">Ningún viaje cerca de esta fecha</div>');
   if (F.nivel1) filas.push('<div class="be-legend__row"><span class="be-tier be-tier--1" data-n="1">Solo fuentes principales</span></div>');
   const cabecera = titulo ? `${esc(titulo.nombre)} · ${esc(fechaCorta(titulo.fecha))}` : selIncierto ? `${esc(selIncierto.nombre)} · cómo dibujamos lo incierto`
@@ -1551,7 +1547,7 @@ function pintarNombresEncuadre() {
   const filas = [];
   for (const l of Object.values(BE.L)) {
     const cs = candidatosDe(l);
-    const p = cs ? (candidatosVisibles(l)[0] && centroCandidato(candidatosVisibles(l)[0].c)) : conPunto(l) ? coord(l) : null;
+    const p = BE.puntoLugar(l)?.c;
     if (!p || !b.contains(p)) continue;
     const hoy = nombreHoy(l);
     if (!hoy && !cs) continue;
