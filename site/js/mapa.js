@@ -498,13 +498,17 @@ function imagenRayado(color, estado) {
 /** Ventana [a, b] en que un viaje de otra persona o de un grupo está en curso: de su primera parada a su última, en el
     momento en que las coloca la línea de tiempo (BE.paradasDe, que sale de BE.estancias), no toda la fecha del viaje.
     Con la fecha entera, los dieciséis viajes de 2 Samuel 10 en adelante, que comparten de 1070 a c. 1040, se dibujaban
-    a la vez durante treinta años. Un viaje sin paradas en la línea usa su fecha. */
+    a la vez durante treinta años. La ventana nunca sale de la fecha del viaje: la línea alarga la última parada hasta
+    la siguiente estancia de la persona (Moisés sigue en Madián cuarenta años), y eso no es el viaje. Un viaje sin
+    paradas en la línea, o cuyas paradas caen fuera de su fecha, usa su fecha. */
 let ventanasViaje = null;
 function ventanaViaje(v) {
   if (!ventanasViaje || ventanasViaje.D !== BE.D) ventanasViaje = { D: BE.D, m: new Map() };
   if (!ventanasViaje.m.has(v)) {
-    const ps = BE.paradasDe?.(v) || [];
-    ventanasViaje.m.set(v, ps.length ? [Math.min(...ps.map((s) => s.a)), Math.max(...ps.map((s) => s.b))] : tramo(v.fecha));
+    const ps = BE.paradasDe?.(v) || [], f = tramo(v.fecha);
+    let w = ps.length ? [Math.min(...ps.map((s) => s.a)), Math.max(...ps.map((s) => s.b))] : f;
+    if (ps.length && f) { const a = Math.max(w[0], f[0]), b = Math.min(w[1], f[1]); w = b > a ? [a, b] : f; }
+    ventanasViaje.m.set(v, w);
   }
   return ventanasViaje.m.get(v);
 }
@@ -1836,7 +1840,7 @@ function encuadreDeInicio() {
   if (E.sel) encuadrarLugares([...E.resaltado.lugares]);
   else mostrarPablo();
 }
-BE.mapa = { resaltar, encuadrar: encuadrarLugares, volverAlInicio, iniciar, encuadreDeInicio, enfocarCandidato, get candidatoFoco() { return candFoco; }, get gl() { return map; } };
+BE.mapa = { resaltar, ventanaViaje, encuadrar: encuadrarLugares, volverAlInicio, iniciar, encuadreDeInicio, enfocarCandidato, get candidatoFoco() { return candFoco; }, get gl() { return map; } };
 Object.assign(BE, {
   ponerMapa, pintarMapa, pintarEtiquetas, seguirPablo, cartaVisible, cartaEnMapa, estadoCarta, colorViaje, colorEscritor, colorPersona,
   nombreHoy, nombreEn, candidatosDe, candidatosVisibles, CANDIDATO: CAND, ventanaDeCarta,

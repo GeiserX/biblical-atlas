@@ -270,6 +270,31 @@ test('4B: another traveller\'s journey is drawn only while its stops last, plus 
     assert.ok(d.otros.length <= 7, `${t}: ${d.otros.length} journeys drawn: ${d.otros}`);
   }
   assert.ok(!out[-1049.5].includes('joab-contra-ammon-y-siria'), 'Joab against Ammon is not drawn twenty years after it ended');
+  // In colour while its stops last, grey the year after, gone after that: Joab against Ammon, whose date runs on for
+  // decades after its stops.
+  const w = await page.evaluate(() => { const { BE } = window.__be; const v = BE.D.viajes.find((x) => x.id === 'joab-contra-ammon-y-siria'); return { w: BE.mapa.ventanaViaje(v), tr: BE.tramo(v.fecha) }; });
+  assert.ok(w.w[1] + 2 < w.tr[1], `its stops end long before its date: ${w.w} inside ${w.tr}`);
+  const estado = async (t) => (await drawnAt(page, t)).rastroEstados.find((x) => x.startsWith('joab-contra-ammon-y-siria:'))?.split(':')[1] ?? null;
+  assert.equal(await estado((w.w[0] + w.w[1]) / 2), 'actual');
+  assert.equal(await estado(w.w[1] + 0.5), 'pasado', 'the grey year after its last stop');
+  assert.equal(await estado(w.w[1] + 1.5), null, 'not drawn after the grey year');
+  assert.deepEqual(page.pageErrors, []);
+  await page.context().close();
+});
+
+test('4B: no journey is drawn outside its own date plus the grey year, even when its last stop lasts on', async () => {
+  const page = await openMap();
+  // The timeline keeps a traveller at his last stop until his next one: Moisés in Madián for forty years, Epafras in
+  // Colosas from 33, Jesús in Nazaret after the Passover at twelve, José in Egipto. None of that is the journey.
+  for (const [t, id] of [[-1530.5, 'huida-de-moises-a-madian'], [40.5, 'epafras-a-roma'], [20.5, 'pascua-de-jesus-a-los-12'], [-1740.5, 'jose-a-egipto']]) {
+    const d = await drawnAt(page, t);
+    const fuera = await page.evaluate((a) => {
+      const { BE } = window.__be;
+      return a.ids.filter((x) => { const tr = BE.tramo(BE.D.viajes.find((v) => v.id === x).fecha); return !tr || a.t < tr[0] || a.t >= tr[1] + 1; });
+    }, { ids: d.otros, t });
+    assert.deepEqual(fuera, [], `${t}: journeys drawn outside their date: ${fuera}`);
+    assert.ok(!d.otros.includes(id), `${t}: ${id} is not drawn`);
+  }
   assert.deepEqual(page.pageErrors, []);
   await page.context().close();
 });
