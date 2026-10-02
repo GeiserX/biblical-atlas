@@ -465,15 +465,16 @@ function puntoLugar(l) {
   return { c: g.tipo === 'franja' && g.hasta ? [(g.lon + g.hasta.lon) / 2, (g.lat + g.hasta.lat) / 2] : [g.lon, g.lat], incierto: true, candidato: c };
 }
 /** Parte de una respuesta de BE.donde que dice dónde se dibuja la persona en un lugar: pos ([lon, lat] o null, si el
-    lugar no tiene dónde) e incierto (el lugar no tiene punto: se dibuja en un candidato, como posición estimada). */
+    lugar no tiene dónde) e incierto (lo que diga puntoLugar: un candidato o el punto de una región se dibujan como
+    posición estimada). */
 function sitio(l) {
   const d = puntoLugar(l);
-  return { pos: d ? d.c : null, incierto: !!d?.candidato || !d };
+  return { pos: d ? d.c : null, incierto: d ? d.incierto : true };
 }
 /** Lo mismo de camino entre dos lugares, a la fracción f del tramo; sin posición si uno de los dos no tiene dónde. */
 function camino(a, b, f) {
   const x = puntoLugar(a), y = puntoLugar(b);
-  return { pos: x && y ? interpolar({ lon: x.c[0], lat: x.c[1] }, { lon: y.c[0], lat: y.c[1] }, f) : null, incierto: !!(x?.candidato || y?.candidato || !x || !y) };
+  return { pos: x && y ? interpolar({ lon: x.c[0], lat: x.c[1] }, { lon: y.c[0], lat: y.c[1] }, f) : null, incierto: !x || !y || x.incierto || y.incierto };
 }
 
 /** Dónde está alguien en t según una lista de paradas ordenadas (el modelo de Pablo). null si ninguna lo cubre. */

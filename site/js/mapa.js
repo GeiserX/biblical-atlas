@@ -545,19 +545,21 @@ function geoRutas(w) {
     const ps = BE.P.filter((s) => s.viaje === V);
     const corte = w.parada ? w.en.i : (w.en.viaje === V ? w.en.i : -1);
     const color = colorViaje(V.id);
-    for (let k = 0; k < ps.length - 1; k++) {
-      const A = ps[k], B = ps[k + 1];
-      const incierto = A.lugar.precision === 'zona' || B.lugar.precision === 'zona';
-      const props = { viaje: V.id, incierto, deducido: deducida(A.p) || deducida(B.p), color };
-      if (k < corte) hecho.push(linea([coord(A.lugar), coord(B.lugar)], props));
-      else if (k === corte && !w.parada) {
-        hecho.push(linea([coord(A.lugar), w.pos], props));
-        falta.push(linea([w.pos, coord(B.lugar)], props));
-      } else falta.push(linea([coord(A.lugar), coord(B.lugar)], props));
+    // Los vértices son los de verticeRuta, como en los demás viajes; una parada sin dónde dibujarse se salta.
+    const vs = ps.map((s) => ({ s, v: verticeRuta(s.lugar) })).filter((x) => x.v);
+    for (let k = 0; k < vs.length - 1; k++) {
+      const A = vs[k], B = vs[k + 1];
+      const props = { viaje: V.id, incierto: A.v.incierto || B.v.incierto, deducido: deducida(A.s.p) || deducida(B.s.p), color };
+      if (B.s.i <= corte) hecho.push(linea([A.v.c, B.v.c], props));
+      else if (A.s.i <= corte && !w.parada && w.pos) {
+        hecho.push(linea([A.v.c, w.pos], props));
+        falta.push(linea([w.pos, B.v.c], props));
+      } else falta.push(linea([A.v.c, B.v.c], props));
     }
-    if (!w.parada && w.en.viaje !== V) {             // tramo de enlace entre dos viajes
-      hecho.push(linea([coord(w.en.lugar), w.pos], { viaje: V.id, incierto: false, deducido: false, color }));
-      falta.push(linea([w.pos, coord(w.sig.lugar)], { viaje: V.id, incierto: false, deducido: false, color }));
+    const de = verticeRuta(w.en.lugar), a = w.sig && verticeRuta(w.sig.lugar);
+    if (!w.parada && w.en.viaje !== V && w.pos && de && a) {             // tramo de enlace entre dos viajes
+      hecho.push(linea([de.c, w.pos], { viaje: V.id, incierto: false, deducido: false, color }));
+      falta.push(linea([w.pos, a.c], { viaje: V.id, incierto: false, deducido: false, color }));
     }
   }
   for (const v of BE.D.viajes) {
@@ -964,13 +966,14 @@ function pintarMapa() {
     if (!marcaPablo.puesta) { marcaPablo.addTo(map); marcaPablo.puesta = true; }
     marcaPablo.getElement().classList.toggle('estimada', !!(w.estimada || w.incierto));
     const sig = w.parada ? BE.P[w.en.g + 1] : w.sig;
-    if (sig && sig.viaje === V) {
+    const vSig = sig && verticeRuta(sig.lugar);
+    if (sig && sig.viaje === V && vSig) {
       const q = marcaProxima.getElement();
       if (q.dataset.key !== sig.key) {
         q.dataset.key = sig.key;
         q.innerHTML = `<span class="proxima-icono" aria-hidden="true">›</span>Próxima: <b>${esc(sig.lugar.nombre)}</b> <span class="proxima-ref">${esc(sig.p.referencia)}</span>`;
         q.setAttribute('aria-label', `Ir a la próxima parada: ${sig.lugar.nombre}`);
-        marcaProxima.setLngLat(coord(sig.lugar));
+        marcaProxima.setLngLat(vSig.c);
       }
       if (!marcaProxima.puesta) { marcaProxima.addTo(map); marcaProxima.puesta = true; }
     } else if (marcaProxima.puesta) { marcaProxima.remove(); marcaProxima.puesta = false; }
@@ -1011,7 +1014,7 @@ function pintarViajeros(ver) {
       marcasViajero.set(p, m);
     }
     m.marker.setLngLat(w.pos);
-    // Fecha estimada o lugar sin punto (se dibuja en su candidato): el mismo aspecto de posición estimada.
+    // Fecha estimada o lugar incierto (un candidato o el punto de una región): el mismo aspecto de posición estimada.
     m.el.classList.toggle('estimada', !!(w.estimada || w.incierto));
     if (!m.puesta) { m.marker.addTo(map); m.puesta = true; }
   }
@@ -1041,11 +1044,12 @@ function seguir(pos, forzar = false) {
   }
 }
 /** Tras un salto en el tiempo, Pablo no puede quedar fuera. Si los datos no lo sitúan en esa fecha y no hay selección,
-    el mapa enseña la época (encuadrarEpoca), si no se ve ya. */
+    el mapa enseña la época (encuadrarEpoca), si no se ve ya. Una estancia en un lugar sin dónde dibujarlo cuenta como
+    sin situar. */
 function seguirPablo() {
   tSalto = E.t;
   const w = BE.dondeEsta(E.t);
-  if (w) seguir(w.pos, true);
+  if (w?.pos) seguir(w.pos, true);
   else if (!E.sel) encuadrarEpoca(E.t, { siVisible: true });
 }
 /** Un salto grande en el tiempo sin selección (una fecha escrita, un año buscado, un clic lejano en la pista a escala de
@@ -1421,7 +1425,7 @@ function pintarLeyenda(V, w, g) {
   const S = E.sel?.tipo === 'viaje' ? BE.D.viajes.find((v) => v.id === E.sel.id) : null;   // viaje seleccionado abajo
   const rastro = g.rastroVisible;
   const dePablo = !!(V && g.hecho.length + g.falta.length) || rastro.some((v) => BE.duenoViaje(v) === 'pablo');
-  const estimada = (marcaPablo?.puesta && !!w?.estimada) || [...marcasViajero.values()].some((m) => m.puesta && m.el.classList.contains('estimada'));
+  const estimada = (marcaPablo?.puesta && marcaPablo.getElement().classList.contains('estimada')) || [...marcasViajero.values()].some((m) => m.puesta && m.el.classList.contains('estimada'));
   const viajeros = [...marcasViajero.values()].some((m) => m.puesta);
   const apagado = g.rastro.some((f) => f.properties.estado !== 'actual');   // algún rastro en gris
   const repiten = viajesRepetidos(g);
@@ -1466,7 +1470,7 @@ function pintarLeyenda(V, w, g) {
   } else if (inciertos) filas.push(`<div class="be-legend__row"><span class="leyenda-cand leyenda-cand--favorecido_nivel_1" style="--cand:${CAND.favorecido_nivel_1.color}"></span>Lugar incierto: zona o candidatos, nunca un punto</div>`);
   if (formas) filas.push('<div class="be-legend__row"><span class="leyenda-forma"></span>Lo que abarca una región, aproximado con su fuente</div>');
   if (hallazgos) filas.push('<div class="be-legend__row"><span class="leyenda-hallazgo"></span>Hallazgo arqueológico</div>');
-  if (estimada) filas.push('<div class="be-legend__row"><span class="leyenda-estimada"></span>Posición estimada (tiempo narrativo o lugar sin punto)</div>');
+  if (estimada) filas.push('<div class="be-legend__row"><span class="leyenda-estimada"></span>Posición estimada (tiempo narrativo o lugar incierto)</div>');
   if (F.capas.viajes && !S && !dePablo && !rastro.length && !viajeros) filas.push('<div class="be-legend__row be-muted">Ningún viaje cerca de esta fecha</div>');
   if (F.nivel1) filas.push('<div class="be-legend__row"><span class="be-tier be-tier--1" data-n="1">Solo fuentes principales</span></div>');
   const cabecera = titulo ? `${esc(titulo.nombre)} · ${esc(fechaCorta(titulo.fecha))}` : selIncierto ? `${esc(selIncierto.nombre)} · cómo dibujamos lo incierto`
@@ -1723,7 +1727,7 @@ function encuadrarEpoca(t, { siVisible = false } = {}) {
 function mostrarPablo() {
   if (E.sel || !map) return;
   const w = BE.dondeEsta(E.t);
-  if (!w) { encuadrarEpoca(E.t, { siVisible: true }); return; }
+  if (!w?.pos) { encuadrarEpoca(E.t, { siVisible: true }); return; }
   const hoja = altoHoja();
   const z = zonaLibre(), q = map.project(w.pos), m = 40;
   if (q.x > z.x0 + m && q.x < z.x1 - m && q.y > z.y0 + m && q.y < z.y1 - m) return;

@@ -11,6 +11,10 @@
 //  - A place with no candidate at all keeps the stay (card, timeline), and the map draws nothing for it: Caín at Enoc,
 //    and Mahanaim with its candidates removed in a temporary copy of the data.
 //  - Selecting such a place frames its zone.
+//  - A region, whose point stands for the whole region, also looks estimated (Paul in Galatia).
+//  - The legend explains that look whenever Paul's marker has it.
+//  - When Paul is at a place with nowhere to draw, following him does not break the map.
+//  - Paul's journey in course goes to the candidate of a stop without a point and skips one with nowhere to draw.
 //
 // Run from the repository root, one browser at a time:
 //   node --test --test-concurrency=1 tests/site/estancias-sin-punto.test.mjs
@@ -76,13 +80,13 @@ function variant(name, change) {
 let browser, server, origin, tmp, page;
 const errors = [];
 /** A page with the data and the map loaded. Tiles from other hosts are not needed; MapLibre from unpkg is. */
-async function open(prefix = '') {
+async function open(prefix = '', hash = 't=50.5') {
   const context = await browser.newContext({ deviceScaleFactor: 1, ...DESKTOP });
   const p = await context.newPage();
   p.setDefaultTimeout(8000);
   p.on('pageerror', (e) => errors.push(`pageerror: ${e.message}`));
   await p.route((url) => !url.href.startsWith(origin) && !url.hostname.endsWith('unpkg.com'), (route) => route.abort());
-  await p.goto(`${origin}${prefix}/index.html#t=50.5`);
+  await p.goto(`${origin}${prefix}/index.html#${hash}`);
   await p.waitForFunction(() => window.__be?.map?.loaded?.() && window.__be.map.getSource('be-rastro'), null, { timeout: 30000 });
   return p;
 }
@@ -90,6 +94,14 @@ before(async () => {
   tmp = fs.mkdtempSync(path.join(os.tmpdir(), 'be-estancias-sin-punto-'));
   execFileSync('python3', [path.join(ROOT, 'scripts/build.py'), '--out', tmp], { cwd: ROOT, stdio: 'pipe' });
   variant('sin-candidatos', (D) => { delete D.lugares.mahanaim.candidatos; });
+  variant('solo-pablo', (D) => { D.viajes = D.viajes.filter((v) => (v.persona || 'pablo') === 'pablo'); });
+  // Two of Paul's stops lose their point: Salamis with no candidate, Paphos with a zone around its old point.
+  variant('pablo-sin-punto', (D) => {
+    const s = D.lugares.salamina, f = D.lugares.pafos;
+    s.lat = s.lon = null; s.precision = 'incierto'; s.candidatos = [];
+    f.candidatos = [{ nombre: 'Zona de prueba', estado: 'favorecido_nivel_1', geometria: { tipo: 'zona', lat: f.lat, lon: f.lon, radio_km: 10 } }];
+    f.lat = f.lon = null; f.precision = 'incierto';
+  });
   server = await serve(path.join(ROOT, 'site'), tmp);
   origin = `http://127.0.0.1:${server.address().port}`;
   const chromium = await loadChromium();
@@ -244,6 +256,87 @@ test('selecting a place without a point frames its zone', async () => {
   });
   assert.ok(r.dentro, JSON.stringify(r));
   assert.ok(r.ancho < 3, `the map is framed on the zone, not left on the Mediterranean: ${JSON.stringify(r)}`);
+});
+
+/** Puts the cursor in the middle of one of Paul's stops and reads his marker and the legend. */
+function pabloEn(p, key) {
+  return p.evaluate(async (key) => {
+    const { BE, setT, seleccionar } = window.__be;
+    const s = BE.P.find((x) => x.key === key);
+    const t = (s.a + s.b) / 2;
+    seleccionar(null, { mover: false, encuadrar: false });
+    setT(t);
+    await new Promise((r) => requestAnimationFrame(() => requestAnimationFrame(r)));
+    const w = BE.dondeEsta(t), el = document.querySelector('.pablo');
+    return { lugar: w?.en.lugar.id, precision: s.lugar.precision, estimada: !!w?.estimada, incierto: !!w?.incierto,
+      marca: el?.isConnected ? el.classList.contains('estimada') : null, leyenda: document.querySelector('#leyenda')?.textContent.replace(/\s+/g, ' ') ?? '' };
+  }, key);
+}
+
+test('a stay at a region, whose point stands for the whole region, looks estimated even with an exact date (Paul in Galatia)', async () => {
+  const r = await pabloEn(page, 'tercer-viaje/2');
+  assert.equal(r.lugar, 'galacia', JSON.stringify(r));
+  assert.equal(r.precision, 'zona', 'the point of Galatia stands for the whole region');
+  assert.equal(r.estimada, false, 'the case under test: the date is not estimated');
+  assert.equal(r.incierto, true, `BE.donde says the place is uncertain: ${JSON.stringify(r)}`);
+  assert.equal(r.marca, true, 'and the marker has the look of an estimated position');
+});
+
+test('the legend explains the estimated look whenever Paul\'s marker has it', async () => {
+  // Only Paul travels in this copy of the data, so only his marker can bring the legend row.
+  const p = await open('/solo-pablo');
+  const r = await pabloEn(p, 'tercer-viaje/2');
+  const otros = await p.evaluate(() => document.querySelectorAll('.viajero').length);
+  assert.equal(otros, 0, 'no other traveller on the map');
+  assert.equal(r.estimada, false, 'the date is not estimated');
+  assert.equal(r.marca, true, JSON.stringify(r));
+  assert.ok(/Posición estimada/.test(r.leyenda), `the legend has the row: ${JSON.stringify(r)}`);
+  await p.context().close();
+});
+
+test('when Paul is at a place with nowhere to draw, following him does not break the map', async () => {
+  const antes = errors.length;
+  const t = await page.evaluate(() => { const s = window.BE.P.find((x) => x.key === 'primer-viaje/3'); return (s.a + s.b) / 2; });
+  const p = await open('/pablo-sin-punto', `t=${t}`);
+  const r = await p.evaluate(() => {
+    const { BE, E } = window.__be;
+    const w = BE.dondeEsta(E.t);
+    let fallo = null;
+    try { BE.seguirPablo(); } catch (e) { fallo = e.message; }
+    return { lugar: w?.en.lugar.id, pos: w ? w.pos : 'sin w', fallo };
+  });
+  assert.deepEqual(r, { lugar: 'salamina', pos: null, fallo: null });
+  assert.deepEqual(errors.slice(antes), [], 'no page errors on load (mostrarPablo) either');
+  await p.context().close();
+});
+
+test('Paul\'s journey in course goes to the candidate of a stop without a point, and skips a stop with nowhere to draw', async () => {
+  const p = await open('/pablo-sin-punto');
+  const r = await p.evaluate(async () => {
+    const { BE, map, setT } = window.__be;
+    const pinta = async (key) => {
+      const s = BE.P.find((x) => x.key === key);
+      setT((s.a + s.b) / 2);
+      await new Promise((res) => requestAnimationFrame(() => requestAnimationFrame(res)));
+      const fs = (await Promise.all(['be-hecho', 'be-falta'].map(async (id) => (await map.getSource(id).getData()).features))).flat();
+      const prox = document.querySelector('.proxima');
+      return { fs, malas: fs.flatMap((f) => f.geometry.coordinates).filter(([x, y]) => !Number.isFinite(x) || !Number.isFinite(y)).length, proxima: prox?.isConnected ? prox.textContent : null };
+    };
+    // At Seleucia the next stop is Salamis, with nowhere to draw: no next-stop label, no broken vertex.
+    const seleucia = await pinta('primer-viaje/2');
+    // At Paphos (a zone candidate in this copy) Paul is drawn there, and a leg reaches it, dashed.
+    const pafos = await pinta('primer-viaje/4');
+    const c = BE.L.pafos.candidatos[0].geometria;
+    const llega = pafos.fs.find((f) => f.geometry.coordinates.some(([x, y]) => x === c.lon && y === c.lat));
+    return { seleucia: { n: seleucia.fs.length, malas: seleucia.malas, proxima: seleucia.proxima },
+      pafos: { n: pafos.fs.length, malas: pafos.malas, incierto: llega ? llega.properties.incierto : null } };
+  });
+  assert.ok(r.seleucia.n > 0 && r.pafos.n > 0, JSON.stringify(r));
+  assert.equal(r.seleucia.malas, 0, `every vertex is a real position at Seleucia: ${JSON.stringify(r)}`);
+  assert.equal(r.seleucia.proxima, null, `no next-stop label at a place with nowhere to draw: ${JSON.stringify(r)}`);
+  assert.equal(r.pafos.malas, 0, `every vertex is a real position at Paphos: ${JSON.stringify(r)}`);
+  assert.equal(r.pafos.incierto, true, `a leg reaches the candidate of Paphos, dashed: ${JSON.stringify(r)}`);
+  await p.context().close();
 });
 
 test('no page errors', () => {
