@@ -245,12 +245,17 @@ test('1B: a group journey (the Ark) has its own owner, route, legend name and ca
   const g = await page.evaluate(() => {
     const { BE } = window.__be;
     const v = BE.D.viajes.find((x) => x.id === 'el-arca-en-filistea');
-    const s = BE.paradasDe(v).find((x) => x.p.orden === 1);
+    const ps = BE.paradasDe(v);
+    const s = ps.find((x) => x.lugar.id === 'ebenezer');
     const w = BE.ventanaEvento(BE.D.eventos.find((e) => e.id === 'los-filisteos-capturan-el-arca'));
+    const s0 = ps.find((x) => x.p.orden === 1);
+    const w0 = BE.ventanaEvento(BE.D.eventos.find((e) => e.id === 'israel-lleva-el-arca-al-campamento'));
     const lugar = BE.tipo('lugar').ficha('asdod').replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ');
-    return { s: s && [s.a, s.b], w, lugar };
+    return { s: s && [s.a, s.b], w, s0: s0 && [s0.lugar.id, s0.a, s0.b], w0, lugar };
   });
   assert.ok(g.s && g.w && g.s[0] < g.w[1] && g.w[0] < g.s[1], `Ebenézer follows the capture of the Ark: stop ${g.s}, event ${g.w}`);
+  assert.ok(g.s0 && g.s0[0] === 'silo' && g.w0 && g.s0[1] < g.w0[1] && g.w0[0] < g.s0[2],
+    `the Ark leaves Siló when Israel takes it to the camp (1Sa 4:3-5): stop ${g.s0}, event ${g.w0}`);
   assert.match(g.lugar, /El Arca del pacto · /, 'the Asdod card names the group in its journey row');
   assert.ok(!d.pabloRastro.includes('el-arca-en-filistea'));
   const marcas = await page.evaluate(() => [...document.querySelectorAll('.viajero')].map((e) => e.dataset.sel));
@@ -258,7 +263,7 @@ test('1B: a group journey (the Ark) has its own owner, route, legend name and ca
   await drawnAt(page, r.t, { tipo: 'viaje', id: 'el-arca-en-filistea' });
   const ficha = await page.evaluate(() => document.querySelector('#panel')?.textContent.replace(/\s+/g, ' ') ?? '');
   assert.ok(/Viaje del Arca del pacto/.test(ficha) && !/Pablo/.test(ficha.slice(0, 200)), `the card names the group: «${ficha.slice(0, 200)}»`);
-  // Its reference, «1Sa 4:10, 11; 5:1–7:2», keeps its second piece: a chip of its own and the journey in 1 Samuel 5 to 7.
+  // Its reference, «1Sa 4:3-11; 5:1–7:2», keeps its second piece: a chip of its own and the journey in 1 Samuel 5 to 7.
   assert.match(ficha, /1Sa 5:1–7:2/);
   const enCap = await page.evaluate(() => { const { BE } = window.__be; const lib = BE.LIBROS.find((l) => l.num === 9); return [4, 5, 6, 7].map((c) => BE.implicados({ tipo: 'pasaje', id: BE.idPasaje(lib, c) }).claves.has('viaje:el-arca-en-filistea')); });
   assert.deepEqual(enCap, [true, true, true, true], '1 Samuel 4, 5, 6 and 7 name the journey');
