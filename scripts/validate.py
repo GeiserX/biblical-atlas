@@ -958,7 +958,7 @@ def camino_paradas(ant, a, b):
 
 def validar_ramas(v, donde, err):
     """`branches_from` en una parada: un destino al que se llega en paralelo desde una parada anterior del mismo viaje
-    (2Re 17:6: Halá, Habor, el Gozán y las ciudades de los medos). Solo en un viaje de grupo; nombra una parada anterior
+    (2Re 17:6: Halá, Habor junto al río Gozán y las ciudades de los medos). Solo en un viaje de grupo; nombra una parada anterior
     que no es a su vez un destino en paralelo, y de esa parada salen al menos dos caminos."""
     paradas = [p for p in v.get("stops") or [] if isinstance(p, dict)]
     ramas = [(p.get("order"), p["branches_from"]) for p in paradas if "branches_from" in p]

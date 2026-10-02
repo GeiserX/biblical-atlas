@@ -458,10 +458,11 @@ class DestinosEnParalelo(unittest.TestCase):
         self.assertTrue(any("stop 3: branches_from es el order de una parada anterior" in x for x in e), e)
 
     def test_los_dos_destierros_del_repositorio_pasan(self):
-        for nombre, salida in (("destierro-de-israel-en-740", 1), ("destierro-de-beera", 1)):
+        # 2Re 17:6 da tres destinos (el Gozán es el río junto a Habor); 1Cr 5:26 da cuatro.
+        for nombre, ramas in (("destierro-de-israel-en-740", [None, 1, 1, 1]), ("destierro-de-beera", [None, 1, 1, 1, 1])):
             with self.subTest(viaje=nombre):
                 v = validate._read(HERE.parent / "data" / "journeys" / f"{nombre}.yaml")
-                self.assertEqual([p.get("branches_from") for p in v["stops"]], [None, salida, salida, salida, salida])
+                self.assertEqual([p.get("branches_from") for p in v["stops"]], ramas)
                 out = []
                 validate.validar_ramas(v, nombre, out.append)
                 validate.validar_viaje(v, nombre, out.append)

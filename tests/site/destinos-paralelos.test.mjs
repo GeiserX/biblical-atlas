@@ -153,18 +153,19 @@ function abanico(r, salida, destinos) {
 
 test('the map draws each exile as a fan from its departure, with no line between destinations, and the legend says so', async () => {
   const p = await open();
-  for (const [id, salida] of [[ISRAEL, 1], [ESTE, 1]]) {
+  // 2Re 17:6 gives three destinations (the Gozán is the river by Habor); 1Cr 5:26 gives four.
+  for (const [id, salida, n] of [[ISRAEL, 1, 3], [ESTE, 1, 4]]) {
     const r = await lee(p, id);
     const destinos = r.paradas.filter((s) => s.desde === salida).map((s) => s.orden);
-    assert.ok(destinos.length >= 4, `${id}: four destinations branch from stop ${salida}: ${JSON.stringify(r.paradas)}`);
+    assert.equal(destinos.length, n, `${id}: ${n} destinations branch from stop ${salida}: ${JSON.stringify(r.paradas)}`);
     abanico(r, salida, destinos);
     assert.ok(r.trazos.every((x) => x.estado === 'actual'), `${id}: in colour while its stops last`);
     assert.match(r.leyenda, /En abanico: destinos a los que el grupo llega a la vez, sin orden entre ellos/, `${id}: «${r.leyenda}»`);
     assert.deepEqual(r.viajeros.filter((s) => /grupo|destierro/.test(s)), [], `${id}: a group has no traveller marker`);
   }
-  // Media has a point of its own (a region's centre), the other three only candidates: all four segments are dashed.
+  // Media has a point of its own (a region's centre), the other two only candidates: all three segments are dashed.
   const r = await lee(p, ISRAEL);
-  assert.equal(r.trazos.filter((x) => x.rama != null && x.incierto).length, 4);
+  assert.equal(r.trazos.filter((x) => x.rama != null && x.incierto).length, 3);
   assert.deepEqual(p.errors, []);
   await p.context().close();
 });
@@ -190,7 +191,7 @@ test('the destinations share one moment on the timeline and one window on the ma
 test('selected, the journey is drawn whole as a fan; selecting a person adds no route', async () => {
   const p = await open();
   const r = await lee(p, ISRAEL, { t: -1000, sel: { tipo: 'viaje', id: ISRAEL } });
-  abanico(r, 1, [2, 3, 4, 5]);
+  abanico(r, 1, [2, 3, 4]);
   assert.match(r.leyenda, /Solo este viaje, completo/);
   assert.match(r.leyenda, /En abanico/);
   // Hosea, the last king of Israel (2Re 17:1-6): the map draws what the date draws with nothing selected.
@@ -210,13 +211,13 @@ test('the journey card and the stop cards say the destinations are reached in pa
     const texto = (h) => h.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ');
     return { viaje: texto(BE.tipo('viaje').ficha(id)), habor: texto(BE.tipo('parada').ficha(`${id}/3`)), samaria: texto(BE.tipo('parada').ficha(`${id}/1`)) };
   }, { id: ISRAEL });
-  assert.match(r.viaje, /Desde Samaria se llega a la vez a Halá, Habor, Gozán y Media: el grupo se reparte y el texto no da orden entre esos destinos\./);
+  assert.match(r.viaje, /Desde Samaria se llega a la vez a Halá, Habor y Media: el grupo se reparte y el texto no da orden entre esos destinos\./);
   assert.match(r.viaje, /3\. Habor en paralelo desde Samaria · 2Re 17:6; 18:11/);
   assert.doesNotMatch(r.viaje, /1\. Samaria en paralelo/);
   assert.match(r.habor, /Destino en paralelo desde Samaria/);
-  assert.doesNotMatch(r.habor, /Parada 3 de 5/);
-  assert.match(r.habor, /Desde Samaria se llega a la vez a Halá, Habor, Gozán y Media/);
-  assert.match(r.samaria, /Parada 1 de 5/);
+  assert.doesNotMatch(r.habor, /Parada 3 de 4/);
+  assert.match(r.habor, /Desde Samaria se llega a la vez a Halá, Habor y Media/);
+  assert.match(r.samaria, /Parada 1 de 4/);
   assert.doesNotMatch(r.samaria, /en paralelo/);
   assert.deepEqual(p.errors, []);
   await p.context().close();
@@ -228,10 +229,10 @@ test('a companion\'s range follows one branch: Samaria to Habor is stops 1 and 3
     const { BE } = window.__be;
     const v = BE.D.viajes.find((x) => x.id === id);
     const texto = (h) => h.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ');
-    return { en: [1, 2, 3, 4, 5].map((o) => BE.acompanantes(v, o).includes('hosea-de-israel')), viaje: texto(BE.tipo('viaje').ficha(id)),
+    return { en: [1, 2, 3, 4].map((o) => BE.acompanantes(v, o).includes('hosea-de-israel')), viaje: texto(BE.tipo('viaje').ficha(id)),
       habor: texto(BE.tipo('parada').ficha(`${id}/3`)), hala: texto(BE.tipo('parada').ficha(`${id}/2`)) };
   }, { id: ISRAEL });
-  assert.deepEqual(r.en, [true, false, true, false, false], 'the range is the route from Samaria to Habor');
+  assert.deepEqual(r.en, [true, false, true, false], 'the range is the route from Samaria to Habor');
   assert.match(r.viaje, /\(de Samaria a Habor\)/);
   assert.match(r.habor, /en esta parada/);
   assert.doesNotMatch(r.hala, /en esta parada/);
@@ -256,7 +257,7 @@ test('a pending destination is dotted on its own branch only', async () => {
   const p = await open('/pendiente');
   const r = await lee(p, ISRAEL);
   const habor = r.vertices[3].c;
-  assert.equal(r.trazos.filter((y) => y.rama != null).length, 4, 'one segment per destination');
+  assert.equal(r.trazos.filter((y) => y.rama != null).length, 3, 'one segment per destination');
   assert.equal(r.trazos.filter((y) => y.deducido).length, 1, 'only one segment is dotted');
   for (const x of r.trazos.filter((y) => y.rama != null)) assert.equal(x.deducido, x.coords.at(-1) === habor, JSON.stringify(x));
   assert.match(r.leyenda, /De puntos: tramo hacia una parada pendiente de verificar/);
@@ -283,7 +284,7 @@ test('reading mode on 2 Kings 17 draws the fan, never a line between destination
       await new Promise((r) => requestAnimationFrame(() => requestAnimationFrame(r)));
       const v = BE.D.viajes.find((x) => x.id === id);
       const clave = (c) => `${c[0].toFixed(6)},${c[1].toFixed(6)}`;
-      // Halá, Habor, Gozán and Media (stops 2 to 5), named here and not read from branches_from.
+      // Halá, Habor and Media (stops 2 to 4), named here and not read from branches_from.
       const destinos = new Set(v.paradas.filter((x) => x.orden > 1).map((x) => BE.puntoLugar(BE.L[x.lugar])).filter(Boolean).map((x) => clave(x.c)));
       const fs = (await map.getSource('be-rastro').getData()).features.filter((f) => f.properties.viaje === id);
       return { n: fs.length, juntos: fs.filter((f) => f.geometry.coordinates.filter((c) => destinos.has(clave(c))).length > 1).length, abierta: BE.lectura.abierta };
@@ -314,10 +315,10 @@ test('Back and Forward bring a destination back like any other stop', async () =
   assert.equal(s.sel, `parada:${ISRAEL}/3`, 'Back returns to Habor');
   assert.match(s.panel, /Destino en paralelo desde Samaria/);
   const r = await lee(p, ISRAEL, { t: await p.evaluate(() => window.__be.E.t), sel: 'mantener' });
-  assert.equal(r.trazos.filter((x) => x.rama != null).length, 4, 'the map still draws the fan');
+  assert.equal(r.trazos.filter((x) => x.rama != null).length, 3, 'the map still draws the fan');
   await p.goForward();
   await p.waitForTimeout(500);
-  assert.equal((await estado()).sel, `parada:${ISRAEL}/4`, 'Forward returns to Gozán');
+  assert.equal((await estado()).sel, `parada:${ISRAEL}/4`, 'Forward returns to Media');
   assert.deepEqual(p.errors, []);
   await p.context().close();
 });

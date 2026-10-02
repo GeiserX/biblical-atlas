@@ -220,7 +220,7 @@ class JourneysForTheSite(unittest.TestCase):
         `branches_from`; a stop without it has no such key."""
         v = next(x for x in self.salida()["viajes"] if x["id"] == "destierro-de-israel-en-740")
         self.assertEqual([(p["orden"], p["lugar"], p.get("branches_from")) for p in v["paradas"]],
-                         [(1, "samaria", None), (2, "hala", 1), (3, "habor", 1), (4, "gozan", 1), (5, "media", 1)])
+                         [(1, "samaria", None), (2, "hala", 1), (3, "habor", 1), (4, "media", 1)])
         self.assertNotIn("branches_from", v["paradas"][0])
         con = [x["id"] for x in self.salida()["viajes"] if any("branches_from" in p for p in x["paradas"])]
         self.assertEqual(sorted(con), ["destierro-de-beera", "destierro-de-israel-en-740"])

@@ -738,7 +738,7 @@ function destinosParalelos(v) {
   }
   return [...por].map(([o, destinos]) => ({ desde: (v.paradas || []).find((p) => p.orden === o), destinos }));
 }
-/** «Desde Samaria se llega a la vez a Halá, Habor, Gozán y Media», una frase por cada parada de la que salen destinos en
+/** «Desde Samaria se llega a la vez a Halá, Habor y Media», una frase por cada parada de la que salen destinos en
     paralelo. Lo dicen la ficha del viaje y la de cada uno de esos destinos. */
 function frasesParalelos(v) {
   const nombre = (p) => BE.L?.[p?.lugar]?.nombre || p?.lugar || '';
