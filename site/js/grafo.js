@@ -65,7 +65,9 @@ function eventWindow(sel) {
 /** «del segundo viaje misional» for a journey whose name says it is one («Segundo viaje misional», «Viaje a Roma»);
     null for the rest («Arresto y custodia»). */
 const journeyPhrase = (v) => (/^((primer|segundo|tercer|cuarto|quinto)\s+)?viaje\b/i.test(v?.nombre || '') ? `del ${v.nombre[0].toLowerCase()}${v.nombre.slice(1)}` : null);
-const traveller = (v) => BE.PERS[v.persona || 'pablo']?.nombre || '';
+const traveller = (v) => BE.nombreDueno(v);
+/** «de Pablo», y «del Arca del pacto» para un grupo cuyo texto empieza por «el». */
+const deWho = (who) => (/^el /.test(who) ? `del ${who.slice(3)}` : `de ${who}`);
 /** A stop is named by what it is, never only by the place it hangs from: «Parada en Frigia del segundo viaje misional
     de Pablo · Hch 16:6». Around its own place the place is the centre, so the name leaves it out («Parada del segundo
     viaje misional de Pablo · Hch 16:6»). A journey whose name is not a journey's goes in brackets, and the traveller
@@ -77,12 +79,12 @@ function stopName(key) {
   const who = traveller(x.viaje), f = journeyPhrase(x.viaje), ref = x.p?.referencia ? ` · ${x.p.referencia}` : '';
   const place = x.lugar?.id && centro() !== `lugar:${x.lugar.id}` ? BE.L[x.lugar.id]?.nombre || x.lugar.nombre || '' : '';
   const at = place ? ` en ${place}` : '';
-  if (f) return `Parada${at} ${f}${who ? ` de ${who}` : ''}${ref}`;
+  if (f) return `Parada${at} ${f}${who ? ` ${deWho(who)}` : ''}${ref}`;
   const named = who && x.viaje.nombre.includes(who);
-  return `Parada${who && !named ? ` de ${who}` : ''}${at} (${x.viaje.nombre})${ref}`;
+  return `Parada${who && !named ? ` ${deWho(who)}` : ''}${at} (${x.viaje.nombre})${ref}`;
 }
 /** The word of the line from a place to a stop: «parada del segundo viaje misional», or «parada de Pablo». */
-const stopWord = (v) => { const f = journeyPhrase(v), who = traveller(v); return f ? `parada ${f}` : `parada${who ? ` de ${who}` : ''}`; };
+const stopWord = (v) => { const f = journeyPhrase(v), who = traveller(v); return f ? `parada ${f}` : `parada${who ? ` ${deWho(who)}` : ''}`; };
 /** The verb of each role of a person in an event: the words of data/vocabulary.yaml (event_roles). site/data.json does
     not carry them yet; a verb that the data gives in the role (roles[id].verb) wins over this table. */
 const ROLE_VERB = { born: 'nació', died: 'murió', wrote: 'escribió', spoke: 'habló', raised: 'volvió a la vida' };
@@ -296,13 +298,13 @@ function aristasSel(sel) {
     (o.lugares || []).forEach((l) => { if (BE.L[l]) poner({ ...base, sel: `lugar:${l}`, verbo: 'su territorio' }); });
   } else if (s.tipo === 'viaje') {
     for (const x of BE.P || []) if (x.viaje === o) poner({ sel: `lugar:${x.lugar.id}`, verbo: x.b - x.a > 0.4 ? 'se queda aquí' : 'pasa por aquí', tr: [x.a, x.b], fecha: x.p.fecha, ref: x.p.referencia, fuentes: x.p.fuentes || o.fuentes, estado: x.p.estado, incierto: !!x.narrativa, origen: 'parada' });
-    if ((o.persona || 'pablo') !== 'pablo') for (const p of o.paradas || []) if (BE.L[p.lugar]) poner({ ...base, sel: `lugar:${p.lugar}`, verbo: 'parada del viaje', fecha: p.fecha || o.fecha, ref: p.referencia || base.ref, fuentes: p.fuentes || o.fuentes });
+    if (BE.duenoViaje(o) !== 'pablo') for (const p of o.paradas || []) if (BE.L[p.lugar]) poner({ ...base, sel: `lugar:${p.lugar}`, verbo: 'parada del viaje', fecha: p.fecha || o.fecha, ref: p.referencia || base.ref, fuentes: p.fuentes || o.fuentes });
   } else if (s.tipo === 'parada') {
     const x = (BE.P || []).find((y) => y.key === s.id);
     if (x) {
       const b = { tr: [x.a, x.b], fecha: x.p.fecha, ref: x.p.referencia, fuentes: x.p.fuentes || x.viaje.fuentes, estado: x.p.estado, incierto: !!x.narrativa, origen: 'parada' };
       poner({ ...b, sel: `lugar:${x.lugar.id}`, verbo: 'aquí' });
-      poner({ ...b, sel: `persona:${x.viaje.persona || 'pablo'}`, verbo: 'de viaje' });
+      if (BE.PERS[BE.duenoViaje(x.viaje)]) poner({ ...b, sel: `persona:${BE.duenoViaje(x.viaje)}`, verbo: 'de viaje' });
       poner({ ...b, sel: `viaje:${x.viaje.id}`, verbo: 'parte de este viaje' });
     }
   } else if (s.tipo === 'hallazgo') {

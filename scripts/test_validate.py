@@ -101,5 +101,33 @@ class SinWol(unittest.TestCase):
                 self.assertTrue(e.get("source") and e.get("reason"))
 
 
+def errores_viaje(**campos):
+    v = {"person": "pablo", "companions": [], "stops": [{"order": i} for i in range(1, 6)]}
+    v.update(campos)
+    out = []
+    validate.validar_viaje(v, "viaje", out.append)
+    return out
+
+
+class QuienViaja(unittest.TestCase):
+    """Un viaje lo hace una persona con ficha o un grupo sin ficha (docs/ideas/viajes-modelo.md, pregunta 1)."""
+
+    def test_persona_vale(self):
+        self.assertEqual(errores_viaje(), [])
+
+    def test_grupo_con_persona_nula_vale(self):
+        self.assertEqual(errores_viaje(person=None, group="el Arca del pacto"), [])
+
+    def test_sin_persona_ni_grupo_es_error(self):
+        self.assertTrue(any("falta quién viaja" in e for e in errores_viaje(person=None)))
+
+    def test_persona_y_grupo_a_la_vez_es_error(self):
+        self.assertTrue(any("a la vez" in e for e in errores_viaje(group="los 600 benjaminitas")))
+
+    def test_grupo_vacio_es_error(self):
+        self.assertTrue(any("group debe ser un texto" in e for e in errores_viaje(person=None, group=" ")))
+
+
+
 if __name__ == "__main__":
     unittest.main()

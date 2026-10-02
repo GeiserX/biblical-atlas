@@ -140,5 +140,21 @@ class ChapterUrls(unittest.TestCase):
         self.assertIsNone(self.cap("https://wol.jw.org/es/wol/d/r4/lp-s/1200000129"))
 
 
+class JourneysForTheSite(unittest.TestCase):
+    """A group journey reaches data.json with the name the site reads."""
+
+    def test_group(self):
+        leg = build.Legacy(build.load_map())
+        v = {"person": None, "group": "el Arca del pacto",
+             "companions": ["silas"]}
+        out = {}
+        for k, x in v.items():
+            es, hijo = leg.key(k, leg.roots["journeys"], "journeys")
+            out[es] = leg.translate(x, hijo, f"journeys.{k}")
+        self.assertEqual(out, {"persona": None, "grupo": "el Arca del pacto",
+                               "companeros": ["silas"]})
+        self.assertEqual(leg.errors, [])
+
+
 if __name__ == "__main__":
     unittest.main(verbosity=1)

@@ -146,8 +146,24 @@ function momentos(f) {
   else if (hits.length === 1 && hits[0] === ESTACIONES.invierno) fin = h + 0.15;
   return [ini, Math.max(ini, fin)];
 }
-// Un viaje sin `persona` es de Pablo y una carta sin `escritor` es suya: así lo dice el esquema de los datos.
-const duenoViaje = (v) => v.persona || 'pablo';
+// Un viaje sin `persona` es de Pablo y una carta sin `escritor` es suya: así lo dice el esquema de los datos. Un viaje
+// de grupo (`persona: null` y `grupo`, como el Arca por Filistea) es su propio dueño, `grupo:<id del viaje>`: sus
+// paradas se calculan como las de una persona, pero no tiene ficha, marcador ni carril.
+const duenoViaje = (v) => v.persona || (v.grupo ? `grupo:${v.id}` : 'pablo');
+const esGrupo = (dueno) => String(dueno).startsWith('grupo:');
+/** Nombre de quien hace el viaje: la persona, el texto del grupo («el Arca del pacto») o Pablo. Con `mayuscula`, el
+    del grupo empieza en mayúscula, para un rótulo. */
+function nombreDueno(v, mayuscula = false) {
+  if (v.persona) return BE.PERS[v.persona]?.nombre || v.persona;
+  if (v.grupo) return mayuscula ? v.grupo[0].toUpperCase() + v.grupo.slice(1) : v.grupo;
+  return 'Pablo';
+}
+/** Nombre de un dueño de viajes (una persona o `grupo:<id>`), para la leyenda del mapa. */
+function nombreDeDueno(dueno) {
+  if (!esGrupo(dueno)) return BE.PERS[dueno]?.nombre || dueno;
+  const v = (BE.D.viajes || []).find((x) => x.id === dueno.slice(6));
+  return v ? nombreDueno(v, true) : dueno;
+}
 const escritorDe = (c) => c.escritor || 'pablo';
 const esDe = (v, persona) => duenoViaje(v) === persona;
 /** Quién lleva sus sucesos y cartas en sus paradas: Pablo, cuyas paradas se fecharon una a una con Hechos (el modelo de
@@ -163,8 +179,10 @@ const SUCESOS_EN_PARADAS = new Set(['pablo']);
 function sucesosDeParadas(persona, P) {
   const m = new Map();
   // Para el orden cuenta todo suceso que la nombra; para estar en la parada, solo aquel en que está (`presentes`).
-  const evs = (BE.D.eventos || []).filter((e) => (e.personas || []).includes(persona))
-    .map((e) => ({ e, presente: !e.presentes || e.presentes.includes(persona), vs: versiculos((e.pasajes || []).join('; ')), primero: versiculos((e.pasajes || [])[0])[0], v: null }));
+  // Un grupo no sale en `personas`: sus sucesos son los que cuentan algún versículo de la referencia del viaje.
+  const vsGrupo = esGrupo(persona) ? versiculos((BE.D.viajes || []).find((v) => v.id === persona.slice(6))?.referencia) : null;
+  const evs = (BE.D.eventos || []).filter((e) => (vsGrupo ? seCruzan(versiculos((e.pasajes || []).join('; ')), vsGrupo) : (e.personas || []).includes(persona)))
+    .map((e) => ({ e, presente: !!vsGrupo || !e.presentes || e.presentes.includes(persona), vs: versiculos((e.pasajes || []).join('; ')), primero: versiculos((e.pasajes || [])[0])[0], v: null }));
   if (!evs.length) return m;
   const ventana = (x) => (x.v ??= ventanaEvento(x.e) || false);
   for (const s of P) {
@@ -836,7 +854,7 @@ function inicioPeriodo(p) {
 }
 
 Object.assign(BE, {
-  prepararParadas: () => itinerario('pablo').P, dondeEsta, viajeActual, ventanaPablo, ventanaCarta, ventanaEvento, momentoCarta, momentoEvento,
+  prepararParadas: () => itinerario('pablo').P, duenoViaje, esGrupo, nombreDueno, nombreDeDueno, dondeEsta, viajeActual, ventanaPablo, ventanaCarta, ventanaEvento, momentoCarta, momentoEvento,
   donde, sucesoEn, ventana, estancias, presentes, personasConEstancias, edad, tramoPotencia, tramoPeriodo, inicioPeriodo, ventanaFecha, inicioMes, diaHebreo, anioHebreo, nombreMes, eventoEstimado, calendario, DIA, MES_LUNAR,
 });
 })();

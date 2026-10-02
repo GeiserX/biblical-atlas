@@ -163,6 +163,7 @@ keys:
   fuentes: sources
   generado: generated_on
   geometria: geometry
+  grupo: group
   habladas: spoken
   hasta: to
   historial: history

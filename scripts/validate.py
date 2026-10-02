@@ -49,7 +49,7 @@ ESTADOS_CANDIDATO = {"certain", "favored_level_1", "tradition", "alternative", "
 TIPOS_ENLACE = {"perspicacia", "bible", "video", "external"}
 TIPOS_PERIODO = {"emperor", "governor", "power", "king", "era", "high_priest"}
 CAMPOS_TEXTO = {"summary", "reason", "note", "change", "text", "explanation", "disambiguation", "unknown",
-                "weather", "harvest", "kept_at", "caption", "inverse_caption"}
+                "weather", "harvest", "kept_at", "caption", "inverse_caption", "group"}
 IDENTIFICACIONES = {"certain", "uncertain"}
 # Un año con su era: «537 a.e.c.», «c. 49-52 e.c.», «33 E.C.».
 RE_ANIO = re.compile(r"(?<![\d-])(\d{1,4})(?:\s*[-–]\s*(\d{1,4}))?\s*(a\.\s*e\.\s*c\.|e\.\s*c\.)", re.I)
@@ -819,6 +819,18 @@ def validar_lugar(o, donde, err, fuentes):
         err(f"{donde}: sin enlace a Perspicacia debe llevar status: pending")
 
 
+def validar_viaje(v, donde, err):
+    """Quién viaja (README.md, «Viajes»): una persona con ficha (`person`) o un grupo sin ficha (`group`, un texto,
+    con `person: null`)."""
+    persona, grupo = v.get("person"), v.get("group")
+    if grupo is not None and (not isinstance(grupo, str) or not grupo.strip()):
+        err(f"{donde}: group debe ser un texto: quién viaja sin ficha de persona («el Arca del pacto»)")
+    if persona is None and grupo is None:
+        err(f"{donde}: falta quién viaja: person (id de persona) o group (texto, con person: null)")
+    elif persona is not None and grupo is not None:
+        err(f"{donde}: person y group a la vez; un viaje de grupo lleva person: null")
+
+
 def validar_persona(o, donde, err):
     if "disambiguation" in o and not str(o.get("disambiguation") or "").strip():
         err(f"{donde}: disambiguation vacía")
@@ -1399,7 +1411,8 @@ def integrity(datos):
             for pid in o.get("distinct_from") or []:
                 ref(f, "distinct_from", pid, "people")
             if tipo == "journeys":
-                ref(f, "person", o.get("person"), "people")
+                if o.get("person") is not None:
+                    ref(f, "person", o.get("person"), "people")
                 for p in o.get("companions") or []:
                     ref(f, "companions", p, "people")
                 for p in o.get("stops") or []:
@@ -1511,6 +1524,7 @@ def validar(datos):
             if tipo == "people":
                 validar_persona(limpio_, donde, err)
             if tipo == "journeys":
+                validar_viaje(limpio_, donde, err)
                 ordenes = []
                 for i, p in enumerate(limpio_.get("stops") or []):
                     pd = f"{donde} stop {p.get('order', i)}"

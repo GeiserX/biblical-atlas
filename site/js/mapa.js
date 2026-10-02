@@ -98,7 +98,7 @@ let coloresViaje = null, coloresEscritor = null;
 function calcularColores() {
   coloresViaje = new Map();
   const porPersona = new Map();
-  for (const v of BE.D.viajes) { const p = v.persona || 'pablo'; if (!porPersona.has(p)) porPersona.set(p, []); porPersona.get(p).push(v); }
+  for (const v of BE.D.viajes) { const p = BE.duenoViaje(v); if (!porPersona.has(p)) porPersona.set(p, []); porPersona.get(p).push(v); }
   const orden = (a, b) => claveFecha(a.fecha)[0] - claveFecha(b.fecha)[0] || claveFecha(a.fecha)[1] - claveFecha(b.fecha)[1] || a.id.localeCompare(b.id);
   // Tramos con el año de margen con que la capa «Viajes» los dibuja (viajeEnEpoca).
   const tramoDibujo = (v) => { const tr = tramo(v.fecha); return tr ? [tr[0], tr[1] + 1] : null; };
@@ -132,7 +132,7 @@ const colorViaje = (id) => { if (!coloresViaje) calcularColores(); return colore
 let oroClase = null, oroValor = null;
 const oro = () => { const k = document.documentElement.className; if (k !== oroClase) { oroClase = k; oroValor = cssVar('--gold') || PALETA_ESCRITOR[0]; } return oroValor; };
 const colorEscritor = (id) => { if (!coloresEscritor) calcularColores(); const c = coloresEscritor.get(id || 'pablo'); return !c || c === PALETA_ESCRITOR[0] ? oro() : c; };
-const colorPersona = (id) => { const v = BE.D.viajes.find((x) => (x.persona || 'pablo') === id); return v ? colorViaje(v.id) : PALETA[hash(id) % PALETA.length]; };
+const colorPersona = (id) => { const v = BE.D.viajes.find((x) => BE.duenoViaje(x) === id); return v ? colorViaje(v.id) : PALETA[hash(id) % PALETA.length]; };
 /** Mezcla un color con el gris del papel: el rastro de un viaje ya hecho (M-09). */
 function apagar(hex, f = 0.5) {
   const n = parseInt(hex.slice(1), 16), g = [0x9a, 0x90, 0x83];
@@ -532,7 +532,7 @@ function geoRutas(w) {
   const selPersona = E.sel?.tipo === 'persona' ? E.sel.id : null;
   for (const v of BE.D.viajes) {
     if (v === V) continue;
-    const quien = v.persona || 'pablo';
+    const quien = BE.duenoViaje(v);
     const elegido = E.sel?.tipo === 'viaje' && E.sel.id === v.id;
     const ver = elegido || (selPersona && (selPersona === quien || (v.companeros || []).includes(selPersona)))
       || (F.capas.viajes && quien !== 'pablo' && viajeEnEpoca(v, E.t));
@@ -919,7 +919,8 @@ function pintarMapa() {
 }
 /** Marcadores de otras personas con viajes (Pedro, Jesús…) cuando BE.donde sabe dónde están. */
 function pintarViajeros(ver) {
-  const personas = new Set(BE.D.viajes.map((v) => v.persona || 'pablo'));
+  // Un grupo (el Arca) no lleva marcador: solo su ruta.
+  const personas = new Set(BE.D.viajes.map(BE.duenoViaje).filter((p) => !BE.esGrupo(p)));
   personas.delete('pablo');
   for (const p of personas) {
     const w = ver ? BE.donde(p, E.t) : null;
@@ -1341,7 +1342,7 @@ function pintarLeyenda(V, w, g) {
   const hallazgos = [...marcasHallazgo.values()].some((m) => caja.contains(m.marker.getLngLat()));
   const S = E.sel?.tipo === 'viaje' ? BE.D.viajes.find((v) => v.id === E.sel.id) : null;   // viaje seleccionado abajo
   const rastro = g.rastroVisible;
-  const dePablo = !!(V && g.hecho.length + g.falta.length) || rastro.some((v) => (v.persona || 'pablo') === 'pablo');
+  const dePablo = !!(V && g.hecho.length + g.falta.length) || rastro.some((v) => BE.duenoViaje(v) === 'pablo');
   const estimada = (marcaPablo?.puesta && !!w?.estimada) || [...marcasViajero.values()].some((m) => m.puesta && m.el.classList.contains('estimada'));
   const viajeros = [...marcasViajero.values()].some((m) => m.puesta);
   const apagado = g.rastro.some((f) => f.properties.estado !== 'actual');   // algún rastro en gris
@@ -1362,11 +1363,11 @@ function pintarLeyenda(V, w, g) {
     // Con viajes de más de una persona, quién es cada color (Pablo lleva uno por viaje y ya tiene sus filas). El viaje
     // de Pablo en curso cuenta como una persona más, aunque no vaya en el rastro.
     if (g.rastro.some((f) => f.properties.incierto)) filas.push('<div class="be-legend__row"><span class="be-legend__line be-legend__line--approx"></span>A trazos: tramo hacia un lugar incierto (su candidato preferido o el centro de su zona)</div>');
-    const quienes = new Set(rastro.map((v) => v.persona || 'pablo'));
+    const quienes = new Set(rastro.map(BE.duenoViaje));
     if (V && g.hecho.length + g.falta.length) quienes.add('pablo');
     if (quienes.size > 1) {
       for (const p of [...quienes].filter((x) => x !== 'pablo')) {
-        filas.push(`<div class="be-legend__row"><span class="leyenda-viajero" style="--viajero:${colorPersona(p)}"></span>${esc(nombrePersona(p))}</div>`);
+        filas.push(`<div class="be-legend__row"><span class="leyenda-viajero" style="--viajero:${colorPersona(p)}"></span>${esc(BE.nombreDeDueno(p))}</div>`);
       }
     }
   }

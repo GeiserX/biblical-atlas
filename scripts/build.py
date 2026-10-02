@@ -505,7 +505,9 @@ def integridad(datos):
             for pid in o.get("distinct_from") or []:
                 ref(f, "distinct_from", pid, "people")
             if tipo == "journeys":
-                ref(f, "person", o.get("person"), "people")
+                # Un viaje de grupo lleva person: null y group (validate.py, validar_viaje).
+                if o.get("person") is not None or not o.get("group"):
+                    ref(f, "person", o.get("person"), "people")
                 for p in o.get("companions") or []:
                     ref(f, "companions", p, "people")
                 for p in o.get("stops") or []:
@@ -892,8 +894,8 @@ def escribir_sqlite(salida, ruta):
     CREATE TABLE relaciones (persona_id TEXT REFERENCES personas(id), orden INTEGER, tipo TEXT, persona TEXT,
         lugar TEXT, relacion TEXT, relacion_inversa TEXT, {fecha}, deducido INTEGER, razon TEXT, estado TEXT,
         type TEXT, word TEXT, office TEXT, certainty TEXT, checked_on TEXT, key TEXT);
-    CREATE TABLE viajes (id TEXT PRIMARY KEY, nombre TEXT, persona_id TEXT REFERENCES personas(id), referencia TEXT,
-        {fecha}, companeros TEXT, resumen TEXT, razon TEXT, consultado TEXT, estado TEXT);
+    CREATE TABLE viajes (id TEXT PRIMARY KEY, nombre TEXT, persona_id TEXT REFERENCES personas(id), grupo TEXT,
+        referencia TEXT, {fecha}, companeros TEXT, resumen TEXT, razon TEXT, consultado TEXT, estado TEXT);
     CREATE TABLE paradas (viaje_id TEXT REFERENCES viajes(id), orden INTEGER, lugar_id TEXT REFERENCES lugares(id),
         referencia TEXT, {fecha}, nota TEXT, razon TEXT, estado TEXT, checked_on TEXT, PRIMARY KEY (viaje_id, orden));
     CREATE TABLE cartas (id TEXT PRIMARY KEY, libro TEXT, escritor TEXT, referencia TEXT, escrita_en TEXT, {fecha},
@@ -953,7 +955,7 @@ def escribir_sqlite(salida, ruta):
                                r.get("certainty"), r.get("checked_on"), r.get("key")))
         fuentes_hecho("persona", o["id"], {k: v for k, v in o.items() if k != "offices"})
     for o in salida["viajes"]:
-        ins("viajes", (o["id"], o["nombre"], o["persona"], o["referencia"], *_fecha_cols(o.get("fecha")),
+        ins("viajes", (o["id"], o["nombre"], o["persona"], o.get("grupo"), o["referencia"], *_fecha_cols(o.get("fecha")),
                        j(o.get("companeros")), o["resumen"], o.get("razon"), o.get("consultado"), o.get("estado")))
         fuentes_hecho("viaje", o["id"], {k: v for k, v in o.items() if k != "paradas"})
         for p in o.get("paradas") or []:

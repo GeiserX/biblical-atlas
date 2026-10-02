@@ -80,6 +80,8 @@ Con `candidates`, `lat`, `lon`, `coord_source` y `coord_url` pueden ser `null` y
 
 **Viajes.** `person`, `reference`, `date`, `companions` (quienes van en todo el viaje) y `stops`. Cada parada lleva `order`, `place`, `reference` y `date`, y es un hecho anidado con sus `sources`, `reason`, `checked_on` y `status`.
 
+Quien viaja es una persona con ficha (`person`) o un grupo sin ficha: `person: null` y `group`, un texto de 40 palabras como mucho («el Arca del pacto», «los 600 benjaminitas»). Uno de los dos, nunca los dos. Un grupo no lleva marcador de viajero ni carril; la leyenda y la ficha dicen su `group`.
+
 Una parada es un lugar que el texto dice que se alcanzó o se pasó, en el orden del relato. Tres clases de parada deducida entran también, siempre con `status: pending` y la deducción escrita en `reason`:
 
 - el lugar que jw.org da como salida o llegada (Perspicacia «Jacob» pone a Jacob en Hebrón);

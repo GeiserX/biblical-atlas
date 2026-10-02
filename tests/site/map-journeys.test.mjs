@@ -88,7 +88,7 @@ function drawnAt(page, t, sel = null) {
     await new Promise((r) => requestAnimationFrame(() => requestAnimationFrame(r)));
     const read = async (id) => (await map.getSource(id).getData()).features.map((f) => f.properties);
     const [hecho, falta, rastro] = await Promise.all(['be-hecho', 'be-falta', 'be-rastro'].map(read));
-    const quien = (id) => BE.D.viajes.find((v) => v.id === id)?.persona || 'pablo';
+    const quien = (id) => BE.duenoViaje(BE.D.viajes.find((v) => v.id === id));
     const ids = (fs) => [...new Set(fs.map((f) => f.viaje))].sort();
     return {
       V: BE.viajeActual(BE.dondeEsta(t))?.id ?? null,

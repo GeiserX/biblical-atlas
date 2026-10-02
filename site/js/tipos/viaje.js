@@ -6,7 +6,7 @@ const { E, esc, fechaCorta } = BE;
 
 /** Paradas de un viaje: las de Pablo salen de BE.P; las de otra persona, de sus estancias. */
 function paradasDe(v) {
-  const quien = v.persona || 'pablo';
+  const quien = BE.duenoViaje(v);
   return (quien === 'pablo' ? BE.P : BE.estancias(quien)).filter((s) => s.viaje === v);
 }
 /** Filas de la ficha: todas las paradas del viaje en su orden. Las que tienen punto abren su parada; una parada cuyo
@@ -28,9 +28,9 @@ function fichaViaje(id) {
   const ps = paradasDe(v);
   const filas = filasParadas(v, ps);
   const comp = (v.companeros || []).map((x) => BE.PERS[x]).filter(Boolean);
-  return `${BE.migas(BE.PERS[v.persona || 'pablo']?.nombre || 'Pablo', v.nombre)}${BE.cerrarHtml()}
+  return `${BE.migas(BE.nombreDueno(v, true), v.nombre)}${BE.cerrarHtml()}
     <section class="be-card"><div class="be-card__pad">
-      <div class="be-card__eyebrow">Viaje · ${filas.length} paradas</div>
+      <div class="be-card__eyebrow">${BE.esGrupo(BE.duenoViaje(v)) ? `Viaje ${esc(/^el /.test(v.grupo) ? `del ${v.grupo.slice(3)}` : `de ${v.grupo}`)}` : 'Viaje'} · ${filas.length} paradas</div>
       <h2 class="be-card__title">${esc(v.nombre)}</h2>
       ${v.resumen ? `<p class="be-card__body">${esc(v.resumen)}</p>` : ''}
       ${comp.length ? `<p class="be-card__sub">Con ${comp.map((p) => `<button type="button" class="enlace-titulo" data-sel="persona:${esc(p.id)}">${esc(p.nombre)}</button>`).join(', ')}</p>` : ''}
