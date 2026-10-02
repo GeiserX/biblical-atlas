@@ -1722,6 +1722,7 @@ def validar(datos):
             if tipo == "tours":
                 validar_recorrido(limpio_, donde, err)
     check_relations(datos, err, warn)
+    validar_transcurrido(datos, err)
     validar_consta_desde(datos, err)
     puntos_compartidos(datos, warn)
     validar_claves_perspicacia(datos, err)
@@ -1734,6 +1735,58 @@ def validar(datos):
     for slug, obj in (datos.get("coverage") or {}).items():
         textos_largos(clean(obj), obj["_fichero"], err)
     return errores, avisos
+
+
+PLAZOS = ("days", "months", "years")
+
+
+def validar_transcurrido(datos, err):
+    """narrative_order.elapsed: lo que el relato dice que pasa desde el suceso anterior de la serie, o desde `since`.
+    Lleva `reason` y como mucho una cifra (days, months o years, un número no negativo); sin cifra, el texto no la da.
+    El suceso de partida es de la misma serie, va antes en el orden y su fecha toca la de este (be-64b.15)."""
+    serie = {}
+    for o in datos.get("events") or []:
+        n = o.get("narrative_order")
+        if isinstance(n, dict) and isinstance(n.get("series"), str):
+            serie.setdefault(n["series"], []).append(o)
+    porid = {o.get("id"): o for o in datos.get("events") or []}
+    for o in datos.get("events") or []:
+        n = o.get("narrative_order")
+        el = n.get("elapsed") if isinstance(n, dict) else None
+        if el is None:
+            continue
+        donde = o.get("_fichero", o.get("id"))
+        if not isinstance(el, dict):
+            err(f"{donde}: narrative_order.elapsed debe ser {{reason, days|months|years, since}}")
+            continue
+        sobra = set(el) - {"since", "reason", *PLAZOS}
+        if sobra:
+            err(f"{donde}: narrative_order.elapsed no admite {sorted(sobra)}")
+        if not isinstance(el.get("reason"), str) or not el["reason"].strip():
+            err(f"{donde}: narrative_order.elapsed necesita reason, con el versículo que da el plazo o dice que no lo da")
+        cifras = [k for k in PLAZOS if k in el]
+        if len(cifras) > 1:
+            err(f"{donde}: narrative_order.elapsed lleva una sola cifra, no {cifras}")
+        for k in cifras:
+            if not _numero(el[k]) or el[k] < 0:
+                err(f"{donde}: narrative_order.elapsed.{k} debe ser un número no negativo")
+        orden = n.get("order") if _entero(n.get("order")) else None
+        antes = [x for x in serie.get(n.get("series"), []) if x is not o and _entero((x.get("narrative_order") or {}).get("order"))
+                 and orden is not None and x["narrative_order"]["order"] < orden]
+        if "since" in el:
+            d = porid.get(el["since"])
+            if d is None or d not in antes:
+                err(f"{donde}: narrative_order.elapsed.since '{el['since']}' no es un suceso anterior de la serie {n.get('series')}")
+                continue
+        elif not antes:
+            err(f"{donde}: narrative_order.elapsed sin since necesita un suceso anterior en la serie {n.get('series')}")
+            continue
+        else:
+            d = max(antes, key=lambda x: x["narrative_order"]["order"])
+        fa, fb = o.get("date") or {}, d.get("date") or {}
+        ta, tb = (fa.get("from", fa.get("to")), fa.get("to", fa.get("from"))), (fb.get("from", fb.get("to")), fb.get("to", fb.get("from")))
+        if None in ta or None in tb or ta[0] > tb[1] or tb[0] > ta[1]:
+            err(f"{donde}: narrative_order.elapsed parte de '{d.get('id')}', cuya fecha no toca la de este suceso")
 
 
 EXCEPCIONES_WOL = RAIZ / "scripts" / "wol_exceptions.yaml"

@@ -578,5 +578,46 @@ class PuntoCompartidoEnValidate(unittest.TestCase):
         self.assertNotIn("shared_point", self.correr(33.6))
 
 
+class Transcurrido(unittest.TestCase):
+    """narrative_order.elapsed: una cifra o ninguna, con reason, desde un suceso anterior de la serie con fecha que toca."""
+    def suceso(self, sid, orden, elapsed=None, desde=-1449, hasta=-1399):
+        n = {"series": "s", "order": orden}
+        if elapsed is not None:
+            n["elapsed"] = elapsed
+        return {"id": sid, "_fichero": f"data/events/{sid}.yaml", "narrative_order": n, "date": {"from": desde, "to": hasta}}
+
+    def errores(self, *sucesos):
+        out = []
+        validate.validar_transcurrido({"events": list(sucesos)}, out.append)
+        return out
+
+    def test_validos(self):
+        a = self.suceso("a", 1)
+        self.assertEqual(self.errores(a, self.suceso("b", 2, {"days": 4, "reason": "Jue 19:8."})), [])
+        self.assertEqual(self.errores(a, self.suceso("b", 2, {"reason": "Sin plazo en el texto."})), [])
+        self.assertEqual(self.errores(a, self.suceso("b", 2), self.suceso("c", 3, {"since": "a", "months": 4, "reason": "x"})), [])
+
+    def test_errores(self):
+        a = self.suceso("a", 1)
+        casos = {
+            "sin reason": {"days": 1},
+            "dos cifras": {"days": 1, "months": 2, "reason": "x"},
+            "negativa": {"years": -1, "reason": "x"},
+            "no es número": {"days": "uno", "reason": "x"},
+            "clave de más": {"days": 1, "reason": "x", "note": "y"},
+            "since posterior": {"since": "c", "reason": "x"},
+            "since que no existe": {"since": "z", "reason": "x"},
+        }
+        for nombre, el in casos.items():
+            with self.subTest(nombre):
+                self.assertEqual(len(self.errores(a, self.suceso("b", 2, el), self.suceso("c", 3))), 1)
+
+    def test_el_primero_de_la_serie_no_tiene_de_donde_partir(self):
+        self.assertEqual(len(self.errores(self.suceso("a", 1, {"days": 1, "reason": "x"}))), 1)
+
+    def test_fechas_que_no_se_tocan(self):
+        self.assertEqual(len(self.errores(self.suceso("a", 1), self.suceso("b", 2, {"days": 1, "reason": "x"}, -1300, -1290))), 1)
+
+
 if __name__ == "__main__":
     unittest.main()
