@@ -614,6 +614,8 @@ function colorear(it) {
   const forma = it.barEl || it.dotEl;
   forma.style.borderColor = hueca ? c : '';
   forma.style.background = hueca ? 'var(--surface)' : c;
+  // Atenuada, la marca se pinta con su color lavado hacia el fondo (linea.css): lo toma de --c.
+  it.el.style.setProperty('--c', c);
   if (it.winEl) it.winEl.style.color = c;
   // Una fecha secular se pinta clara con contorno de trazos (linea.css): su nombre va en el color secular, no según c.
   const tn = it.secular ? { texto: '', forma: '' } : tonos(c);

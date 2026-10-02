@@ -796,6 +796,79 @@ test('1440: names on bars read in both themes and faint bars carry a border', as
   await p.context().close();
 });
 
+/** The colours of every mark the strip draws, by id: the fill and edge of its dot or bar, its name and the lane under
+    it. Computed colours come as rgb() or, for a color-mix(), as color(srgb …) with channels from 0 to 1. */
+const markColours = (p) => p.evaluate(() => {
+  const rgb = (c) => { const n = (c.match(/-?[\d.]+/g) || []).map(Number).slice(0, 3); return c.startsWith('color(') ? n.map((v) => Math.round(v * 255)) : n; };
+  const out = {};
+  for (const b of document.querySelectorAll('#linea-filas .carril:not([hidden]) .m')) {
+    const f = b.querySelector('.m-barra, .m-punto'), s = getComputedStyle(f), lab = b.querySelector('.m-nombre');
+    let el = b.closest('.carril'), fondo;
+    while (el && /rgba\(.*, 0\)$|transparent/.test(fondo = getComputedStyle(el).backgroundColor)) el = el.parentElement;
+    out[b.dataset.id] = { sel: b.dataset.sel, bar: f.classList.contains('m-barra'), hollow: b.matches('.m--hueca'), secular: b.matches('.m--secular'), dim: b.matches('.atenuado'),
+      onBar: lab.classList.contains('en-barra'), name: lab.textContent, fill: rgb(s.backgroundColor), edge: rgb(s.borderTopColor), shadow: s.boxShadow, text: rgb(getComputedStyle(lab).color), lane: rgb(fondo) };
+  }
+  return out;
+});
+const lum = (c) => { const [r, g, b] = c.map((v) => { v /= 255; return v <= 0.03928 ? v / 12.92 : ((v + 0.055) / 1.055) ** 2.4; }); return 0.2126 * r + 0.7152 * g + 0.0722 * b; };
+const ratio = (a, b) => { const x = lum(a), y = lum(b); return (Math.max(x, y) + 0.05) / (Math.min(x, y) + 0.05); };
+function hue([r, g, b]) {
+  const mx = Math.max(r, g, b), mn = Math.min(r, g, b), d = mx - mn;
+  if (!d) return null;
+  const h = mx === r ? ((g - b) / d) % 6 : mx === g ? (b - r) / d + 2 : (r - g) / d + 4;
+  return (h * 60 + 360) % 360;
+}
+const spread = (c) => Math.max(...c) - Math.min(...c);
+
+test('1440: with an event selected the other marks keep their shape and their colour, washed; releasing gives it all back', async () => {
+  // The owner: with a mark selected, the others lost their colour (white bars, hollow dots). Now a bar keeps its colour
+  // at 45 % toward the background, with its name in ink at 4.5:1 or more, and a dot keeps its circle at 60 %, so the
+  // nearly black ones read grey. When nothing is selected, every mark is at full colour again.
+  const p = await open(DESKTOP, 't=-605.4422&v=40');
+  for (const theme of ['claro', 'reunión']) {
+    await p.evaluate((dark) => document.documentElement.classList.toggle('be-reunion', dark), theme === 'reunión');
+    await frames(p);
+    const full = await markColours(p);
+    const a = await pressMark(p, DESKTOP, 'Babilonia destruye Jerusalén');
+    assert.equal(a.sel, 'evento:destruccion-de-jerusalen-607');
+    assert.equal(await p.evaluate(() => document.querySelector('#linea-filas').classList.contains('sin-foco')), false, `${theme}: nothing is dimmed`);
+    const dimmed = await markColours(p);
+    const dots = [], bars = [], low = [];
+    for (const [id, d] of Object.entries(dimmed)) {
+      const f = full[id];
+      if (!f) continue;
+      if (d.sel === a.sel) { assert.deepEqual([d.fill, d.edge], [f.fill, f.edge], `${theme}: the selected mark changed colour`); continue; }
+      if (!d.dim || d.secular) continue;
+      if (!d.bar && !d.hollow) {
+        // The dot keeps its circle: filled, apart from the lane and lighter than before (toward the background).
+        dots.push(`${d.name} ${f.fill} -> ${d.fill}`);
+        assert.ok(ratio(d.fill, d.lane) >= 1.5, `${theme}: «${d.name}» lost its dot: ${d.fill} on ${d.lane}`);
+        assert.ok(ratio(d.fill, f.lane) < ratio(f.fill, f.lane), `${theme}: «${d.name}» is not washed: ${f.fill} -> ${d.fill}`);
+        if (theme === 'claro' && spread(f.fill) < 40) assert.ok(spread(d.fill) < 30 && lum(d.fill) > 0.12, `${theme}: «${d.name}» was dark and is not grey: ${d.fill}`);
+      }
+      if (d.bar && !d.hollow) {
+        // The bar keeps its hue and loses strength.
+        bars.push(`${d.name} ${f.fill} -> ${d.fill}`);
+        const h0 = hue(f.fill), h1 = hue(d.fill);
+        if (h0 != null && spread(f.fill) >= 30) assert.ok(h1 != null && Math.min(Math.abs(h0 - h1), 360 - Math.abs(h0 - h1)) < 15, `${theme}: «${d.name}» changed hue: ${f.fill} -> ${d.fill}`);
+        assert.ok(ratio(d.fill, f.lane) < ratio(f.fill, f.lane), `${theme}: «${d.name}» is not washed: ${f.fill} -> ${d.fill}`);
+        assert.ok(ratio(d.fill, d.lane) > 1.15, `${theme}: «${d.name}» is the colour of its lane: ${d.fill}`);
+        if (d.onBar && ratio(d.text, d.fill) < 4.5) low.push(`${d.name} ${ratio(d.text, d.fill).toFixed(2)}`);
+      }
+    }
+    note(`1440 ${theme}, one event selected: ${dots.length} dots and ${bars.length} bars dimmed, ${low.length} names under 4.5:1; e.g. ${dots[0]}; ${bars[0]}`);
+    assert.ok(dots.length >= 3 && bars.length >= 2, `${theme}: too few dimmed marks to judge (${dots.length} dots, ${bars.length} bars)`);
+    assert.deepEqual(low, [], `${theme}: names on washed bars under 4.5:1`);
+    // A second click releases the selection, and every mark is back to its full colour.
+    const r = await pressMark(p, DESKTOP, 'Babilonia destruye Jerusalén');
+    assert.equal(r.sel, '');
+    const back = await markColours(p);
+    for (const [id, f] of Object.entries(full)) if (back[id]) assert.deepEqual([back[id].fill, back[id].edge, back[id].text], [f.fill, f.edge, f.text], `${theme}: «${f.name}» did not get its colour back`);
+  }
+  await p.evaluate(() => document.documentElement.classList.remove('be-reunion'));
+  await p.context().close();
+});
+
 test('430: a pinch that starts during a drag, and the ruler used with a finger, leave the strip as it was', async () => {
   const p = await open(PHONE, 't=50.5&v=8');
   const cdp = await p.context().newCDPSession(p);
