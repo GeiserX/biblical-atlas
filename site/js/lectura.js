@@ -45,9 +45,26 @@ function pasajes(lib, cap) {
     const aqui = citaEnCap(s.p.referencia, lib, cap);
     if (!aqui) continue;
     if (versoInicial(s.p.referencia, lib, cap) === 0 && BE.citas(s.p.referencia).some((c) => c.cap < cap && c.capFin >= cap + 1)) continue;   // un tramo que cruza el capítulo entero no es un pasaje de este
+    if (s.lugar.area) { out.push(pasajeArea(s, aqui, lib, cap)); continue; }
     out.push({ sel: `parada:${s.key}`, ref: aqui, verso: versoInicial(s.p.referencia, lib, cap), titulo: `${BE.nombreDueno(s.viaje, true)} en ${s.lugar.nombre}`, resumen: s.p.resumen || s.p.nota || '', lugares: [s.lugar.id], personas: [BE.duenoViaje(s.viaje), ...BE.acompanantes(s.viaje, s.p.orden)].filter((x) => x && BE.PERS[x]), fecha: s.p.fecha, narrativa: s.narrativa, orden: s.g + 0.5 });
   }
+  // Las demás paradas las cuentan sus sucesos; un área desconocida no tiene suceso, así que va como pasaje propio.
+  for (const v of BE.D.viajes) {
+    if (BE.duenoViaje(v) === 'pablo' || !(v.paradas || []).some((p) => p.unknown_area)) continue;
+    for (const s of BE.paradasDe(v)) {
+      const aqui = s.lugar.area && citaEnCap(s.p.referencia, lib, cap);
+      if (aqui) out.push(pasajeArea(s, aqui, lib, cap));
+    }
+  }
   return out.sort((a, b) => a.verso - b.verso || a.orden - b.orden);
+}
+
+/** Pasaje de un área que la fuente no sitúa: sin lugares, así que el mapa no se mueve («Lugar no indicado»); el origen va
+    antes que lo demás de su versículo y el destino, después. */
+function pasajeArea(s, aqui, lib, cap) {
+  const llega = s.vecina && s.i < s.vecina.i;
+  return { sel: `parada:${s.key}`, ref: aqui, verso: versoInicial(s.p.referencia, lib, cap), titulo: `${BE.nombreDueno(s.viaje, true)}: ${llega ? 'de' : 'a'} ${s.lugar.nombre}, la fuente no dice dónde`,
+    vecina: s.vecina?.lugar.id, resumen: s.p.nota || '', lugares: [], personas: [BE.duenoViaje(s.viaje)].filter((x) => BE.PERS[x]), fecha: s.p.fecha, narrativa: true, orden: llega ? -1e9 : 1e9 };
 }
 
 function marcasMapa(ps) {
@@ -124,7 +141,11 @@ function abrirPasaje(i, { encuadrar } = {}) {
   L.pas = i;
   const sel = BE.parseSel(x.sel);
   pintar();
-  if (sel) BE.seleccionar(sel, { mover: true, encuadrar: encuadrar ?? L.sigue });
+  // Un área que la fuente no sitúa no mueve el mapa si su parada vecina, junto a la que se dibuja, ya se ve; si no, el
+  // mapa va a la vecina, nunca a la época.
+  const vecina = x.vecina && BE.puntoLugar(BE.L[x.vecina]), gl = BE.mapa.gl;
+  const quieto = x.sel.startsWith('parada:') && !x.lugares.length && !!vecina && !!gl?.getBounds().contains(vecina.c);
+  if (sel) BE.seleccionar(sel, { mover: true, encuadrar: encuadrar ?? (L.sigue && !quieto) });
   $('#vista-lectura').querySelector('.pasaje-item--abierto')?.scrollIntoView({ block: 'nearest' });
   BE.guardarHash();
 }

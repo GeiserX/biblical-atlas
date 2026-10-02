@@ -511,14 +511,17 @@ function imagenRayado(color, estado) {
     Con la fecha entera, los dieciséis viajes de 2 Samuel 10 en adelante, que comparten de 1070 a c. 1040, se dibujaban
     a la vez durante treinta años. La ventana nunca sale de la fecha del viaje: la línea alarga la última parada hasta
     la siguiente estancia de la persona (Moisés sigue en Madián cuarenta años), y eso no es el viaje. Un viaje sin
-    paradas en la línea, o cuyas paradas caen fuera de su fecha, usa su fecha. */
+    paradas en la línea, o cuyas paradas caen fuera de su fecha, usa su fecha. Las áreas desconocidas sí la alargan. */
 let ventanasViaje = null;
 function ventanaViaje(v) {
   if (!ventanasViaje || ventanasViaje.D !== BE.D) ventanasViaje = { D: BE.D, m: new Map() };
   if (!ventanasViaje.m.has(v)) {
-    const ps = BE.paradasDe?.(v) || [], f = tramo(v.fecha);
+    const todas = BE.paradasDe?.(v) || [], f = tramo(v.fecha), ps = todas.filter((s) => !s.lugar.area);
     let w = ps.length ? [Math.min(...ps.map((s) => s.a)), Math.max(...ps.map((s) => s.b))] : f;
     if (ps.length && f) { const a = Math.max(w[0], f[0]), b = Math.min(w[1], f[1]); w = b > a ? [a, b] : f; }
+    // Un área desconocida va pegada a su vecina aunque quede fuera de la fecha (los astrólogos ya están en Jerusalén al
+    // empezar la suya): sin ella, el área de origen nunca se vería abierta.
+    for (const s of todas) if (s.lugar.area && w) w = [Math.min(w[0], s.a), Math.max(w[1], s.b)];
     ventanasViaje.m.set(v, w);
   }
   return ventanasViaje.m.get(v);
@@ -622,6 +625,98 @@ function pintarRepite(g) {
     m.setLngLat([(a[0] + b[0]) / 2, (a[1] + b[1]) / 2]);
     m.getElement().style.setProperty('--viajero', f.properties.color);
   }
+}
+
+// ---------------------------------------------------------------------------
+// Áreas desconocidas: de dónde viene o adónde va un viaje cuando la fuente no lo sitúa
+// ---------------------------------------------------------------------------
+/** Una parada en un extremo del viaje que no tiene dónde dibujarse: un área que la fuente no sitúa (`unknown_area`:
+    Oriente, «su país») o un lugar sin punto ni candidato. Se dibuja como un área que no reclama sitio: un contorno de
+    trazos en el color del viaje, como la posición estimada, junto a la parada vecina con lugar y en píxeles de la
+    pantalla, así que no cambia con el zoom, no dice una distancia y el encuadre no la cuenta. Va hacia el rumbo que da la
+    fuente; sin rumbo, es un anillo alrededor de la parada vecina, que no señala ningún sitio. Pulsarla abre la ficha de
+    su parada, no la de un lugar.
+    Cuando el cursor pasa por la llegada a la parada vecina, el área se encoge y entra en ella (el viaje viene de allí);
+    al salir de la última parada, el área se abre desde ella y se queda suave (el viaje va allí). La transición dura
+    0,45 s de reloj, sea cual sea la velocidad, y depende solo de la fecha: arrastrar el cursor la hace igual, hacia
+    delante y hacia atrás. Con movimiento reducido no hay transición: solo los dos estados. */
+const marcasArea = new Map();         // clave de la parada → { marker, el, estado }
+const RUMBO_GRADOS = { north: 0, northeast: 45, east: 90, southeast: 135, south: 180, southwest: 225, west: 270, northwest: 315 };
+const AREA = { lejos: 124, lejosMovil: 104, rx: 68, ry: 30 };
+let areasCache = null;
+/** Viajes con alguna parada en un extremo sin dónde dibujarse, una vez por carga de datos y filtro de nivel. */
+function viajesConArea() {
+  const k = `${F.nivel1}`;
+  if (areasCache && areasCache.D === BE.D && areasCache.k === k) return areasCache.vs;
+  const vs = BE.D.viajes.filter((v) => (v.paradas || []).some((p) => p.unknown_area || !verticeRuta(BE.L[p.lugar])));
+  areasCache = { D: BE.D, k, vs };
+  return vs;
+}
+/** Las áreas de un viaje: { s, k, llega }, con s la parada sin sitio, k su vecina con sitio y llega si el viaje viene
+    del área (está antes de la primera parada con sitio). Una parada sin sitio en medio del viaje no se dibuja: no tiene
+    un solo vecino del que salir o al que llegar. */
+function areasDe(v) {
+  const ps = BE.paradasDe(v), conSitio = ps.filter((s) => verticeRuta(s.lugar));
+  if (!conSitio.length) return [];
+  const primera = conSitio[0], ultima = conSitio[conSitio.length - 1];
+  return ps.filter((s) => !verticeRuta(s.lugar) && (s.i < primera.i || s.i > ultima.i))
+    .map((s) => ({ s, k: s.i < primera.i ? primera : ultima, llega: s.i < primera.i }));
+}
+/** Abierta: el área se ve. El área de origen se ve hasta que el viaje llega a su vecina; la de destino, desde que sale
+    de su vecina (una parada de un solo momento, como Peor, aún no la ha dejado en ese momento). */
+const areaAbierta = (x, t) => (x.llega ? t < x.k.a : t > x.k.b);
+const movimientoReducido = () => matchMedia('(prefers-reduced-motion: reduce)').matches;
+function pintarAreas(soloViaje, verViajes, V) {
+  const vivas = new Set();
+  for (const v of viajesConArea()) {
+    const quien = BE.duenoViaje(v), elegido = E.sel?.tipo === 'viaje' && E.sel.id === v.id;
+    const ver = soloViaje ? v.id === soloViaje : verViajes && (quien === 'pablo' ? v === V : elegido || viajeEnEpoca(v, E.t));
+    if (!ver) continue;
+    const pasado = !elegido && quien !== 'pablo' && E.t >= ventanaViaje(v)[1];
+    const color = pasado ? apagar(colorViaje(v.id), 0.45) : colorViaje(v.id);
+    for (const x of areasDe(v)) {
+      const ancla = verticeRuta(x.k.lugar);
+      if (!ancla) continue;
+      vivas.add(x.s.key);
+      marcaArea(x, ancla.c, color, areaAbierta(x, E.t) ? 'abierta' : 'cerrada');
+    }
+  }
+  for (const [k, m] of marcasArea) if (!vivas.has(k)) { m.marker.remove(); marcasArea.delete(k); }
+}
+function marcaArea(x, pos, color, estado) {
+  const { s, llega } = x;
+  let m = marcasArea.get(s.key);
+  if (!m) {
+    const el = document.createElement('div');
+    const rumbo = s.lugar.area?.rumbo, lejos = estrecha() ? AREA.lejosMovil : AREA.lejos;
+    const g = rumbo != null ? RUMBO_GRADOS[rumbo] : null;
+    const rad = g == null ? 0 : (g * Math.PI) / 180, dx = g == null ? 0 : lejos * Math.sin(rad), dy = g == null ? 0 : -lejos * Math.cos(rad);
+    // El hilo va de la parada al borde del área: el radio de la elipse en esa dirección.
+    const borde = (AREA.rx * AREA.ry) / Math.hypot(AREA.ry * Math.sin(rad), AREA.rx * Math.cos(rad));
+    el.className = `area-desc area-desc--${llega ? 'llega' : 'sale'}${g == null ? ' area-desc--anillo' : ''}`;
+    el.dataset.lado = llega ? 'llega' : 'sale';
+    el.style.setProperty('--dx', `${dx.toFixed(1)}px`);
+    el.style.setProperty('--dy', `${dy.toFixed(1)}px`);
+    el.style.setProperty('--ang', `${g == null ? 0 : g - 90}deg`);
+    el.style.setProperty('--hilo', `${g == null ? 0 : Math.max(0, lejos - borde - 4).toFixed(1)}px`);
+    const nombre = s.lugar.nombre, nota = s.lugar.area ? 'la fuente no dice dónde' : 'sin ubicación conocida';
+    el.innerHTML = `<span class="area-desc__hilo" aria-hidden="true"></span><button type="button" class="area-desc__zona" data-sel="parada:${esc(s.key)}"
+      aria-label="${esc(`${nombre}, ${nota}: ${llega ? 'origen' : 'destino'} de ${BE.nombreDueno(s.viaje)}`)}"><span class="area-desc__forma" aria-hidden="true"></span>
+      <span class="area-desc__rotulo"><b>${esc(nombre)}</b><small>${nota}</small></span></button>`;
+    m = { el, marker: new maplibregl.Marker({ element: el, anchor: 'center' }).setLngLat(pos).addTo(map), estado: null,
+      fila: `${llega ? 'Origen' : 'Destino'} de ${BE.nombreDueno(s.viaje)}: ${nombre}, ${nota}` };
+    marcasArea.set(s.key, m);
+  }
+  m.marker.setLngLat(pos);
+  m.el.style.setProperty('--viajero', color);
+  if (m.estado === estado) return;
+  // La primera vez se pone el estado sin transición; después, cada cambio la anima (salvo con movimiento reducido).
+  const animar = m.estado !== null && !movimientoReducido();
+  m.el.classList.toggle('area-desc--anima', animar);
+  m.el.classList.toggle('area-desc--abierta', estado === 'abierta');
+  m.el.classList.toggle('area-desc--cerrada', estado === 'cerrada');
+  m.el.dataset.estado = estado;
+  m.estado = estado;
 }
 
 // ---------------------------------------------------------------------------
@@ -960,6 +1055,7 @@ function pintarMapa() {
   pintarFormas();
   pintarHallazgos();
   pintarRepite(g);
+  pintarAreas(soloViaje, verViajes, V);
   // Pablo
   if (w?.pos && verViajes && (!soloViaje || soloViaje === V?.id)) {
     marcaPablo.setLngLat(w.pos);
@@ -1430,7 +1526,8 @@ function pintarLeyenda(V, w, g) {
   const apagado = g.rastro.some((f) => f.properties.estado !== 'actual');   // algún rastro en gris
   const repiten = viajesRepetidos(g);
   const deducidos = [...g.rastro, ...g.hecho, ...g.falta].some((f) => f.properties.deducido);
-  const clave = `${repiten.map((v) => v.id)}|${apagado}|${deducidos}|${V?.id}|${estimada}|${E.sel?.tipo}|${E.sel?.id}|${pendiente}|${escritores}|${inciertos}|${formas}|${hallazgos}|${F.capas.viajes}|${F.nivel1}|${rastro.map((v) => v.id)}|${dePablo}|${viajeros}`;
+  const areas = [...marcasArea.values()];
+  const clave = `${areas.map((m) => m.fila)}|${repiten.map((v) => v.id)}|${apagado}|${deducidos}|${V?.id}|${estimada}|${E.sel?.tipo}|${E.sel?.id}|${pendiente}|${escritores}|${inciertos}|${formas}|${hallazgos}|${F.capas.viajes}|${F.nivel1}|${rastro.map((v) => v.id)}|${dePablo}|${viajeros}`;
   if (clave === pintarLeyenda.clave) return;
   pintarLeyenda.clave = clave;
   const filas = [];
@@ -1456,6 +1553,7 @@ function pintarLeyenda(V, w, g) {
     }
   }
   if (deducidos) filas.push('<div class="be-legend__row"><span class="be-legend__line be-legend__line--deducida"></span>De puntos: tramo hacia una parada pendiente de verificar</div>');
+  for (const m of areas) filas.push(`<div class="be-legend__row"><span class="leyenda-area" style="--viajero:${m.el.style.getPropertyValue('--viajero')}"></span>${esc(m.fila)}</div>`);
   if (repiten.length) filas.push(`<div class="be-legend__row"><span class="leyenda-repite" aria-hidden="true">↻</span>Se repite cada año: ${repiten.map((v) => esc(v.nombre)).join(', ')}</div>`);
   if (escritores.length) {
     filas.push(`<div class="be-legend__row"><span class="be-legend__line be-legend__line--letter" style="--carta:${colorEscritor(escritores[0])}"></span>Carta ${escritores.length > 1 ? `de ${esc(nombrePersona(escritores[0]))}` : 'escrita cerca de esta fecha'}</div>`);
@@ -1471,7 +1569,7 @@ function pintarLeyenda(V, w, g) {
   if (formas) filas.push('<div class="be-legend__row"><span class="leyenda-forma"></span>Lo que abarca una región, aproximado con su fuente</div>');
   if (hallazgos) filas.push('<div class="be-legend__row"><span class="leyenda-hallazgo"></span>Hallazgo arqueológico</div>');
   if (estimada) filas.push('<div class="be-legend__row"><span class="leyenda-estimada"></span>Posición estimada (tiempo narrativo o lugar incierto)</div>');
-  if (F.capas.viajes && !S && !dePablo && !rastro.length && !viajeros) filas.push('<div class="be-legend__row be-muted">Ningún viaje cerca de esta fecha</div>');
+  if (F.capas.viajes && !S && !dePablo && !rastro.length && !viajeros && !areas.length) filas.push('<div class="be-legend__row be-muted">Ningún viaje cerca de esta fecha</div>');
   if (F.nivel1) filas.push('<div class="be-legend__row"><span class="be-tier be-tier--1" data-n="1">Solo fuentes principales</span></div>');
   const cabecera = titulo ? `${esc(titulo.nombre)} · ${esc(fechaCorta(titulo.fecha))}` : selIncierto ? `${esc(selIncierto.nombre)} · cómo dibujamos lo incierto`
     : dePablo ? 'Viajes de Pablo' : rastro.length ? 'Viajes' : 'Leyenda';

@@ -875,7 +875,7 @@ function pintarJuntos() {
     if (Math.abs(B.top - (A.top + A.alto)) > 0.5) continue;   // solo si van seguidos
     const ea = BE.estancias(A.id === 'pablo' ? 'pablo' : A.persona), eb = BE.estancias(B.id === 'pablo' ? 'pablo' : B.persona);
     for (const a of ea) for (const b of eb) {
-      if (a.lugar.id !== b.lugar.id) continue;
+      if (!a.lugar.id || a.lugar.id !== b.lugar.id) continue;   // dos áreas desconocidas no son el mismo sitio
       const t0 = Math.max(a.a, b.a), t1 = Math.min(a.b, b.b);
       if (t1 <= t0 || t1 < E.vista[0] || t0 > E.vista[1]) continue;
       const x0 = xDe(t0), x1 = Math.max(xDe(t1), x0 + 3);
