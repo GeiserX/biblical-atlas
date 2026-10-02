@@ -596,8 +596,13 @@ const historia = (() => {
   function encuadre(marco) {
     if (!BE.D || !actual) return;
     if (revisar(false)) BE.escribirHash();
-    actual = H.withFrame(actual, marco);
-    history.replaceState(actual, '', location.href);
+    // Un cambio de tamaño también acaba aquí, con el mismo centro y el mismo zoom: no se escribe nada. Safari no deja
+    // más de 100 escrituras en el historial cada 10 s, y una ventana arrastrada por su borde las gastaba.
+    const nuevo = H.withFrame(actual, marco), a = actual.frame, b = nuevo.frame;
+    if (a && b && a.lon === b.lon && a.lat === b.lat && a.zoom === b.zoom
+      && history.state?.visit === actual.visit && history.state?.step === actual.step) return;
+    actual = nuevo;
+    try { history.replaceState(actual, '', location.href); } catch { /* escritura rechazada: la entrada sigue en memoria */ }
   }
   /** Al llegar a una entrada (Atrás, Adelante, una recarga, la vuelta desde otra página), la línea recupera la marca
       que se pulsó en ella: el primer clic en esa marca la suelta, como antes de irse. */

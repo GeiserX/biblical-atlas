@@ -780,6 +780,37 @@ test('a tour entry keeps the map where it was left: Back into it from another se
   }
 });
 
+test('resizing the window writes nothing to the history: a map that stops where it was keeps its entry as it is', async () => {
+  // Safari refuses more than 100 history writes in 10 seconds, and then the site's own entries are lost. A resize ends in
+  // MapLibre's moveend with the same centre and zoom: one write per resize event filled that budget while dragging an edge.
+  const page = await openPage(DESKTOP, { hash: 't=50.3000&sel=lugar:corinto', map: true });
+  await page.evaluate(() => {
+    window.__escrituras = 0;
+    window.__paradas = 0;
+    for (const k of ['pushState', 'replaceState']) {
+      const f = history[k].bind(history);
+      history[k] = (...a) => { window.__escrituras++; return f(...a); };
+    }
+    window.__be.map.on('moveend', () => { window.__paradas++; });
+  });
+  for (let i = 0; i < 30; i++) {
+    await page.setViewportSize({ width: 1440 - (i % 2) * 37 - i, height: 900 - (i % 3) * 11 });
+    await page.evaluate(() => new Promise((ok) => requestAnimationFrame(ok)));
+  }
+  await still(page);
+  const r = await page.evaluate(() => ({ escrituras: window.__escrituras, paradas: window.__paradas }));
+  assert.ok(r.paradas > 0, 'no resize ended in moveend: this test checks nothing');
+  assert.equal(r.escrituras, 0, `${r.paradas} resizes wrote ${r.escrituras} times to the history`);
+  // Past the limit Safari throws: the map still stops and moves, without an error out of its moveend.
+  await page.evaluate(() => {
+    history.replaceState = () => { throw new DOMException('Attempt to use history.replaceState() more than 100 times per 10 seconds', 'SecurityError'); };
+    const m = window.__be.map, c = m.getCenter();
+    m.jumpTo({ center: [c.lng + 0.5, c.lat], zoom: m.getZoom() + 1 });
+  });
+  await still(page);
+  assert.deepEqual(page.pageErrors, []);
+});
+
 test('«Volver al mapa» goes back to the entry the map was on, with its Back; from the landing, a shared link or a section it stays a link', async () => {
   const volver = (page) => Promise.all([page.waitForURL(/index\.html/, { waitUntil: 'domcontentloaded' }), page.locator('a.be-btn[data-volver]').click()]);
   const page = await openPage(DESKTOP, { hash: 't=50.3000' });
