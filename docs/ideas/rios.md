@@ -1,5 +1,15 @@
 # Ríos y otros lugares largos: dónde va su punto
 
+## Elegido
+
+Elegimos A para el Éufrates, B para el Tigris y la regla 1. Así quedó:
+
+- **Éufrates.** Su punto pasa a 36,4402 N; 38,2056 E, a mitad de los 122 km de cauce entre Carquemis y Tifsá, medidos sobre la línea de Natural Earth. Tifsá vuelve a tener su punto para ella sola. La línea de Jeremías acaba allí, a 586 km de Jerusalén.
+- **Tigris.** Su punto pasa a 32,9742 N; 44,7280 E, el punto del cauce más cercano a Babilonia, a 56 km. Lo apoyan Daniel 10:4 y el capítulo 12 de «¡Prestemos atención a las profecías de Daniel!».
+- **Regla 1.** [`validate.py`](../../scripts/validate.py) avisa con el código `shared_point` cuando un río, un mar o un valle queda a menos de 0,5 km de otro lugar que no es una región, provincia, país, reino, desierto, llanura o valle (los que el mapa rotula aparte) y su `coord_note` no lo nombra. Al entrar avisó en el Cisón, el Abaná, el valle del Líbano y el Cedrón. Sihor-Libnat pasó al río que propone Perspicacia, el Nahr ez-Zerqa, y el Cisón dejó de avisar. Los otros tres siguen avisando hasta que se decida qué hacer con ellos.
+- **Cruces del Jordán.** Gedeón y David camino de Helam solo cruzan el río, así que el cruce pasa a la nota de la parada siguiente. La campaña de Gedeón mide ahora 198 km en vez de 291. El viaje a Helam sale de Jerusalén, la capital donde reina David.
+- **Sin cambiar.** Los puntos del Jordán y del Arabá siguen donde estaban. Las otras 13 paradas en el Jordán están revisadas una a una, y la propuesta para los dos puntos queda pendiente de decisión.
+
 Un río es un lugar con un solo punto, y un punto no puede representar 2.700 km de cauce. Desde que el Éufrates pasó al punto de Dibseh, su nombre comparte coordenada con Tifsá. El Tigris sigue en una confluencia que en tiempos bíblicos quizá no existía. Este documento plantea tres preguntas, cada una con opciones, maquetas, lo que cuesta cada opción y lo que recomendamos. No cambia nada de `data/` ni de `site/`.
 
 ## Qué pasa hoy
