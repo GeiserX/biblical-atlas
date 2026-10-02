@@ -34,7 +34,7 @@ Las pruebas de cada regla están en [`tests/site/destinos-paralelos.test.mjs`](.
 
 - **El mapa** dibuja un trazo de la parada de salida a cada destino y ninguno entre dos destinos. Cada trazo sigue las reglas de cualquier ruta. Va a trazos si toca un lugar sin punto propio (su candidato preferido o el centro de su zona), de puntos si toca una parada pendiente, con flechas hacia el destino y en gris el año siguiente. Un destino sin dónde dibujarse no lleva trazo. Si la parada de salida no tiene punto, el trazo sale de la última parada anterior que lo tiene.
 - **La leyenda** añade la fila «En abanico: destinos a los que el grupo llega a la vez, sin orden entre ellos».
-- **La línea de tiempo** pone los destinos de una misma salida en el mismo momento, después de la salida. La ventana en que el mapa dibuja el viaje va de la salida a ese momento.
+- **El momento de los destinos.** Los destinos de una misma salida comparten un momento, después de la salida (`BE.paradasDe`). De él sale la ventana en que el mapa dibuja el viaje, que va de la salida a ese momento, y la fecha a la que lleva la ficha de cada destino. Un grupo no tiene carril, así que la línea de tiempo no enseña esas paradas.
 - **La ficha del viaje** dice «Desde Samaria se llega a la vez a Halá, Habor y Media», y la fila de cada destino dice «en paralelo desde Samaria».
 - **La ficha de cada destino** cambia «Parada 3 de 4» por «Destino en paralelo desde Samaria» y repite la frase.
 - **El modo lectura** dibuja el abanico, nunca una línea entre destinos, y Atrás y Adelante devuelven un destino como cualquier otra parada.
