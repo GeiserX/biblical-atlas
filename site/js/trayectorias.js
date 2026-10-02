@@ -547,9 +547,11 @@ const ventanaPablo = (f, lugares) => ventanaEnLista(BE.P, f, lugares);
     la tanda. Devuelve Map(evento → [a, b]) solo con los que cambian. */
 const ANCLA_MAX = 40 * DIA;
 let relatoCache = null;
+const sinSitio = new Set();   // cabezas de las cadenas que no cupieron en su trozo (relato-cadenas.test.mjs pide que no haya)
 const enParadas = (e) => itinerarios().quien.has(e);
 function repartoRelato() {
   if (relatoCache && relatoCache.D === BE.D) return relatoCache.m;
+  sinSitio.clear();
   const porId = new Map((BE.D.eventos || []).map((e) => [e.id, e]));
   const series = new Map();
   (BE.D.eventos || []).forEach((e, i) => {
@@ -583,7 +585,7 @@ function repartoRelato() {
     // el ancla anterior.
     let fin = -Infinity, ini = -Infinity, tanda = [];
     const cerrar = (inicio) => {
-      if (tanda.length) colocar(cadenas(tanda), fin < inicio ? fin : ini, inicio, m);
+      if (tanda.length) colocar(tanda, fin < inicio ? fin : ini, inicio, m, cadenas(tanda));
       tanda = [];
     };
     const anclar = (v) => { cerrar(v[0]); fin = Math.max(fin, v[1]); ini = v[0]; };
@@ -635,48 +637,45 @@ const PLAZO = { days: DIA, months: MES_LUNAR, years: 1 };
 /** Años que el relato dice que pasan (orden_relato.elapsed), o null si el texto no da la cifra. */
 const plazo = (el) => { for (const k in PLAZO) if (typeof el[k] === 'number') return el[k] * PLAZO[k]; return null; };
 /** Cadenas de una tanda (be-64b.15). Un suceso con orden_relato.elapsed se ata al suceso anterior de su serie, o al de
-    `since`, y con él forma un bloque del largo que dice el texto: empieza a ese plazo del suceso al que se ata; sin cifra
+    `since` (la cabeza de la cadena o uno atado de ella), y con él forma un bloque del largo que dice el texto: empieza a ese plazo del suceso al que se ata; sin cifra
     en el texto, un día después, lo mínimo que se dibuja. Dos del mismo día van con seis horas entre uno y otro, para
     que se vea su orden. Los que no llevan elapsed entre dos atados se reparten por igual entre ellos (el Arca pasa por
-    Gat y Ecrón dentro de los siete meses). Cada uno dura hasta que empieza el siguiente, y el último, un día. Devuelve la tanda con cada cadena en un solo elemento, { e, v, lo, hi, cadena }; colocar le guarda
-    su largo. Si las fechas de la cadena no se tocan o su `since` no está en ella, la cadena se corta ahí. */
+    Asdod, Gat y Ecrón dentro de los siete meses). Cada uno dura hasta que empieza el siguiente, y el último, un día.
+    Devuelve [{ xs, ini, dur, largo }]: los sucesos de la tanda, dónde empieza cada uno (años desde el primero), cuánto
+    dura y el largo del bloque. Un `since` que no está en la cadena, o fechas que no se tocan, la cortan ahí;
+    validate.py no deja escribir ninguno de los dos. */
 function cadenas(tanda) {
   const out = [];
   let C = null;
   const soltar = () => {
-    if (!C) return;
-    out.push(C.xs.length > 1 ? bloque(C) : C.xs[0], ...C.pend);
+    if (C && C.xs.length > 1) {
+      const xs = C.xs, ini = xs.map((y) => C.off.get(y)), largo = ini.at(-1) + DIA;
+      out.push({ xs, ini, dur: ini.map((a, k) => (k + 1 < ini.length ? ini[k + 1] : largo) - a), largo });
+    }
     C = null;
   };
-  for (const x of tanda) {
+  tanda.forEach((x, k) => {
     const el = x.e.orden_relato?.elapsed;
-    if (!el) { (C ? C.pend : out).push(x); continue; }
+    if (!el) { C?.pend.push(x); return; }
+    // Sin `since` se ata al suceso de justo antes. Si ese no está atado, la cadena de antes acaba y empieza otra en él.
+    if (!el.since && C && C.xs.at(-1) !== tanda[k - 1]) soltar();
     if (!C) {
-      if (!out.length || out.at(-1).cadena) { out.push(x); continue; }
-      const cabeza = out.pop();
-      C = { xs: [cabeza], off: new Map([[cabeza, 0]]), pend: [], v: cabeza.v };
+      if (!k || el.since) return;
+      C = { xs: [tanda[k - 1]], off: new Map([[tanda[k - 1], 0]]), pend: [], v: tanda[k - 1].v };
     }
     const ref = el.since ? C.xs.find((y) => y.e.id === el.since) : C.xs.at(-1);
     let v = C.v;
     for (const y of [...C.pend, x]) v = [Math.max(v[0], y.v[0]), Math.min(v[1], y.v[1])];
-    if (!ref || !(v[1] > v[0])) { soltar(); out.push(x); continue; }
+    if (!ref || !(v[1] > v[0])) { soltar(); return; }
     const ult = C.off.get(C.xs.at(-1));
     let o = C.off.get(ref) + (plazo(el) ?? DIA);
     if (o <= ult) o = ult + DIA / 4;   // el orden del relato manda
-    C.pend.forEach((y, k) => { C.off.set(y, ult + (o - ult) * (k + 1) / (C.pend.length + 1)); C.xs.push(y); });
+    C.pend.forEach((y, n) => { C.off.set(y, ult + (o - ult) * (n + 1) / (C.pend.length + 1)); C.xs.push(y); });
     C.pend = [];
     C.xs.push(x); C.off.set(x, o); C.v = v;
-  }
+  });
   soltar();
   return out;
-}
-/** Una cadena como un solo elemento de la tanda: dónde empieza cada suceso (ini, en años desde el primero), cuánto dura
-    (dur, hasta que empieza el siguiente) y su largo. */
-function bloque(C) {
-  const xs = C.xs, ini = xs.map((y) => C.off.get(y)), largo = ini.at(-1) + DIA;
-  const dur = ini.map((a, k) => (k + 1 < ini.length ? ini[k + 1] : largo) - a);
-  return { e: xs[0].e, i: xs[0].i, v: C.v, lo: Math.max(...xs.map((y) => y.lo ?? -Infinity)), hi: Math.min(...xs.map((y) => y.hi ?? Infinity)),
-    cadena: { xs, ini, dur, largo } };
 }
 /** Coloca una tanda entre lo (fin del ancla anterior) y hi (inicio de la siguiente) sin romper el orden del relato ni
     sacar a nadie de su fecha. Los seguidos con la misma fecha y los mismos límites propios (x.lo y x.hi, de un «tras» o
@@ -684,10 +683,11 @@ function bloque(C) {
     propio; si sus fechas se solapan, el trozo común se reparte entre los dos según cuántos sucesos lleva cada uno.
     El límite propio de fin (x.hi) solo acorta a su grupo: no empuja hacia atrás a los anteriores. Si lo deja sin sitio,
     el grupo va junto a ese límite, con lo que le tocaba. Dentro de un grupo, los sucesos se reparten por igual.
-    Una cadena (cadenas) va en el grupo de su fecha como un suceso más que además necesita su largo: el grupo lo aparta
-    antes de repartir, y la cadena va al principio de lo que le toca. Si no cabe, sus sucesos se reparten como los
-    demás. */
-function colocar(tanda, lo, hi, m) {
+    Después, cada cadena (cadenas) toma el trozo que el reparto dio a sus sucesos y va en medio de él, con los plazos del
+    texto: lo de fuera queda donde estaba. Si no cabe, sus sucesos se quedan con su reparto y la cadena se apunta en
+    sinSitio. */
+function colocar(tanda, lo, hi, m, cads = []) {
+  const pos = new Map();
   const grupos = [];
   for (const x of tanda) {
     const g = grupos.at(-1);
@@ -695,7 +695,6 @@ function colocar(tanda, lo, hi, m) {
     if (g && g.v[0] === x.v[0] && g.v[1] === x.v[1] && g.lo === xlo && g.hi === xhi) g.xs.push(x);
     else grupos.push({ v: x.v, lo: xlo, hi: xhi, xs: [x] });
   }
-  for (const g of grupos) g.F = g.xs.reduce((t, x) => t + (x.cadena?.largo || 0), 0);   // lo que piden sus cadenas
   const n = grupos.length;
   for (let j = 0; j < n; j++) grupos[j].L = Math.max(lo, grupos[j].v[0], grupos[j].lo, j ? grupos[j - 1].L : -Infinity);
   for (let j = n - 1; j >= 0; j--) grupos[j].U = Math.min(hi, grupos[j].v[1], j < n - 1 ? grupos[j + 1].U : Infinity);
@@ -706,8 +705,7 @@ function colocar(tanda, lo, hi, m) {
     const h = grupos[j + 1];
     if (h) {
       const a = Math.max(h.L, inicio), b = U;
-      const libre = b - a - g.F - h.F, ng = g.xs.length, nh = h.xs.length;
-      const corte = !(b > a) ? b : libre > 0 ? a + g.F + libre * ng / (ng + nh) : a + (b - a) * ng / (ng + nh);
+      const corte = b > a ? a + (b - a) * g.xs.length / (g.xs.length + h.xs.length) : b;
       fin = Math.min(corte, U);
       g.sig = Math.max(corte, h.L);
     }
@@ -719,37 +717,27 @@ function colocar(tanda, lo, hi, m) {
       junto = true;
     }
     if (!(b - a > 2e-4)) return;                   // no cabe entre las anclas: cada uno se queda con su fecha
-    if (g.F && b - a > g.F) {
-      // Cada suceso suelto y cada cadena se lleva lo mismo de lo que sobra; la cadena, además, su largo.
-      const resto = (b - a - g.F) / g.xs.length;
-      let t = a;
-      for (const x of g.xs) {
-        const c = x.cadena;
-        if (!c) {
-          const corte = Math.min(1e-3, resto / 10), w = [t, t + resto - corte];
-          if (w[0] > x.v[0] + 1e-6 || w[1] < x.v[1] - corte - 1e-6) m.set(x.e, w);
-          t += resto;
-          continue;
-        }
-        c.xs.forEach((y, k) => {
-          const corte = Math.min(1e-3, c.dur[k] / 10), w = [t + c.ini[k], t + c.ini[k] + c.dur[k] - corte];
-          if (w[0] > y.v[0] + 1e-6 || w[1] < y.v[1] - corte - 1e-6) m.set(y.e, w);
-        });
-        t += c.largo + resto;
-      }
-      return;
-    }
-    const xs = g.xs.flatMap((x) => x.cadena?.xs || [x]);   // sin cadenas, o sin sitio para ellas
-    const paso = (b - a) / xs.length;
-    xs.forEach((x, k) => {
+    const paso = (b - a) / g.xs.length;
+    g.xs.forEach((x, k) => {
       // Junto a su límite, el último acaba en él y no un poco antes: ese límite puede ser el final del destino de su
       // «tras» (la expulsión del inmoral, entre la visita de Estéfanas y 1 Corintios, que acaban juntas en Éfeso).
-      const corte = junto && k === xs.length - 1 ? 0 : Math.min(1e-3, paso / 10);
+      const corte = junto && k === g.xs.length - 1 ? 0 : Math.min(1e-3, paso / 10);
       const w = [a + k * paso, a + (k + 1) * paso - corte];
+      pos.set(x, w);
       // Solo cambia si se aparta de su fecha más que el corte del final.
       if (w[0] > x.v[0] + 1e-6 || w[1] < x.v[1] - corte - 1e-6) m.set(x.e, w);
     });
   });
+  for (const c of cads) {
+    const ws = c.xs.map((x) => pos.get(x));
+    const a = ws[0]?.[0], b = ws.at(-1)?.[1];
+    if (ws.some((w) => !w) || !(b - a >= c.largo)) { sinSitio.add(c.xs[0].e.id); continue; }
+    const t = a + (b - a - c.largo) / 2;   // en medio: es lo que menos afirma sobre el año
+    c.xs.forEach((x, k) => {
+      const corte = Math.min(1e-3, c.dur[k] / 10), w = [t + c.ini[k], t + c.ini[k] + c.dur[k] - corte];
+      if (w[0] > x.v[0] + 1e-6 || w[1] < x.v[1] - corte - 1e-6) m.set(x.e, w); else m.delete(x.e);
+    });
+  }
 }
 const ventanas = new Map();
 /** Las cartas de quien viaja (Pablo) siguen sus paradas (colocarEnParadas); las de otro escritor, las estancias de ese
@@ -775,6 +763,14 @@ const ventanaEvento = (e) => {
 };
 const momentoCarta = (c) => { const v = ventanaCarta(c); return v ? (v[0] + v[1]) / 2 : null; };
 const momentoEvento = (e) => { const v = ventanaEvento(e); return v ? (v[0] + v[1]) / 2 : null; };
+/** Sucesos que el orden del relato coloca dentro de su fecha, por sus ventanas, para saber en un instante si la fecha que
+    se lee de la línea sale de él: Map(evento → ventana). */
+let relatoEnCache = null;
+/** ¿Cae t dentro de un suceso que el orden del relato coloca? La cabecera lo dice en su texto emergente. */
+function relatoEn(t) {
+  if (!relatoEnCache || relatoEnCache.D !== BE.D) relatoEnCache = { D: BE.D, ws: [...repartoRelato().values()] };
+  return relatoEnCache.ws.some((w) => w[0] <= t && t < w[1]);
+}
 /** ¿El suceso tiene una fecha que no es exacta (narrativa, aproximada, repartida por el relato o calculada)? */
 const eventoEstimado = (e) => !!(e.fecha?.aprox || e.fecha?.tipo === 'narrativa' || e.fecha?.tipo === 'derivada' || repartoRelato().has(e));
 
@@ -952,6 +948,6 @@ function inicioPeriodo(p) {
 
 Object.assign(BE, {
   prepararParadas: () => itinerario('pablo').P, dondeEsta, puntoLugar, viajeActual, ventanaPablo, ventanaCarta, ventanaEvento, momentoCarta, momentoEvento,
-  donde, sucesoEn, ventana, estancias, presentes, personasConEstancias, edad, tramoPotencia, tramoPeriodo, inicioPeriodo, ventanaFecha, inicioMes, diaHebreo, anioHebreo, nombreMes, eventoEstimado, calendario, DIA, MES_LUNAR,
+  bloquesSinSitio: () => (repartoRelato(), [...sinSitio]), relatoEn, donde, sucesoEn, ventana, estancias, presentes, personasConEstancias, edad, tramoPotencia, tramoPeriodo, inicioPeriodo, ventanaFecha, inicioMes, diaHebreo, anioHebreo, nombreMes, eventoEstimado, calendario, DIA, MES_LUNAR,
 });
 })();
