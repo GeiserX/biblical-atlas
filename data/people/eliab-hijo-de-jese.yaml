@@ -4,11 +4,12 @@ name: Eliab
 names:
 - name: Eliab
 perspicacia: 1200001292#4
-disambiguation: Eliab, primogénito de Jesé y hermano mayor de David; no el jefe de Zabulón hijo de Helón ni el rubenita hijo
-  de Palú.
+disambiguation: Eliab, primogénito de Jesé y hermano mayor de David; no el jefe de Zabulón hijo de Helón, ni el rubenita hijo
+  de Palú, ni el levita antepasado de Samuel.
 distinct_from:
 - eliab-hijo-de-helon
 - eliab-hijo-de-palu
+- elihu-hijo-de-tohu
 summary: Hijo mayor de Jesé, de Belén. Su porte y su estatura hicieron creer a Samuel que era el elegido para rey, pero Jehová
   lo descartó. Después sirvió en el ejército de Saúl.
 reason: Perspicacia «Eliab», núm. 4, párr. 1 y 2; 1Sa 16:6, 7; 17:13, 28.
@@ -65,5 +66,5 @@ relations:
   reason: '1Sa 16:13: Samuel unge a David delante de sus hermanos.'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-02'
 status: verified

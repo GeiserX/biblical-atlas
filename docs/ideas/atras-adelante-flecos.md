@@ -1,5 +1,15 @@
 # Atrás y adelante: lo que queda por decidir
 
+## Elegido
+
+- **1A.** «Volver al mapa», en «Acerca de» y en el calendario, vuelve con Atrás a la entrada del mapa de la que se salió, con su Atrás y sin entradas nuevas. El mapa marca sus enlaces con `volver=atras`, y la portada no. Con un enlace compartido, una pestaña nueva, una sección de la página o la salida desde la portada, sigue siendo el enlace a la vista. Está en [`js/volver.js`](../../site/js/volver.js).
+- **2B.** Cada entrada guarda en `history.state` el encuadre del mapa, escrito cada vez que el mapa se para. Atrás, Adelante y una recarga lo devuelven tal cual. Mover el mapa no crea entrada ni cambia la dirección, y un enlace compartido abre con el encuadre de su selección.
+- **3A.** Un recorrido abierto desde la búsqueda o desde una ficha es una sola entrada: `paso` dice la parada en la que va a abrir en cuanto se elige. Un enlace con `paso=4` sigue abriendo en la parada 4.
+- **4.** Cada entrada recuerda también la marca de la línea pulsada la última vez, y Atrás y Adelante se la devuelven a la línea: el primer clic tras Atrás la suelta, en el ordenador y en el teléfono. Una selección que llega de la búsqueda, del mapa o de un enlace sigue la regla de antes.
+- **5** va en un cambio aparte.
+
+Las cuatro tienen su prueba en [`historia.test.mjs`](../../tests/site/historia.test.mjs) y [`timeline-marks.test.mjs`](../../tests/site/timeline-marks.test.mjs). Lo que sigue es el documento tal como se escribió para decidir.
+
 Ya están los botones de «atrás» y «adelante», como los del navegador ([atras-adelante.md](atras-adelante.md), opción E). Al usarlos salieron cuatro flecos. El quinto, la cifra de fuentes de la portada, venía de antes. Cada pregunta trae lo que hace hoy el sitio, medido en un navegador real, las opciones con lo que cuestan y lo que recomendamos. Se contesta con letras. No cambia nada de `site/` ni de `data/`.
 
 **Cómo lo medimos.** Chromium sin interfaz en un Mac mini, con `main` en a9cee0ce, los datos compilados con `python3 scripts/build.py` y `site/` servido en local. Medimos en el ordenador a 1440 × 900 y en el teléfono a 430 × 900, con toque. Para la pregunta 2 el mapa carga de verdad. En ninguna sesión hubo errores de consola.

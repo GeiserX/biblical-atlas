@@ -12,6 +12,8 @@ distinct_from:
 - jose-esposo-de-maria
 - jose-hijo-de-jose
 - jose-de-arimatea
+- bernabe
+- jesus-hijo-de-eliezer
 summary: Hombre de Isacar, padre de Igal, el jefe que representó a su tribu entre los doce espías enviados a Canaán.
 reason: Perspicacia «José», núm. 2; Nú 13:7.
 sources:
@@ -21,5 +23,5 @@ links:
 - title: 'Perspicacia: «José»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jos%C3%A9/
   type: perspicacia
-checked_on: '2026-09-29'
+checked_on: '2026-10-02'
 status: verified

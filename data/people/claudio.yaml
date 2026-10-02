@@ -6,7 +6,8 @@ names:
 - name: César
   note: Hch 17:7 lo nombra por el título; la nota de estudio de ese versículo dice que el emperador era Claudio.
 perspicacia: '1200000987'
-disambiguation: El emperador romano de Hch 11:28 y 18:2. No es Claudio Lisias, el comandante de la guarnición de Jerusalén.
+disambiguation: El emperador romano de Hch 11:28 y 18:2. No es Claudio Lisias, el comandante de Jerusalén, ni Nerón, que lo
+  sucedió en el trono; los dos llevaron el título de César.
 date:
   from: 41
   to: 54
@@ -27,6 +28,7 @@ sources:
 - nota-hechos-17
 - hch-17
 - hch-18
+- it-cesar
 links:
 - title: 'Perspicacia: «Claudio»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Claudio/
@@ -39,5 +41,6 @@ links:
   type: bible
 distinct_from:
 - claudio-lisias
-checked_on: '2026-09-29'
+- neron
+checked_on: '2026-10-02'
 status: verified

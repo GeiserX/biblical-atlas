@@ -51,7 +51,8 @@ relations:
   checked_on: '2026-09-29'
   certainty: possible
   status: verified
-checked_on: '2026-09-30'
+checked_on: '2026-10-02'
 status: verified
 distinct_from:
 - basemat-hija-de-salomon
+- basemat-hija-de-elon

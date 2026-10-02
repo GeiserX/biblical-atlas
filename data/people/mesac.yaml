@@ -4,6 +4,7 @@ name: Mesac
 names:
 - name: Mesac
 - name: Misael
+disambiguation: Misael, compañero de Daniel, al que en Babilonia llamaron Mesac; no es el levita Misael hijo de Uziel.
 date:
   from: -616
   to: -616
@@ -20,6 +21,7 @@ sources:
 - it-mesac
 - it-daniel
 - daniel-1
+- it-misael
 links:
 - title: 'Perspicacia: «Mesac»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Mesac/
@@ -51,5 +53,7 @@ relations:
     vivió.'
   checked_on: '2026-09-28'
   status: verified
-checked_on: '2026-09-28'
+checked_on: '2026-10-02'
 status: verified
+distinct_from:
+- misael-hijo-de-uziel

@@ -42,5 +42,7 @@ relations:
   reason: 'Gé 46:12, 26, 27; Perspicacia «Hezrón», núm. 2: está entre las setenta almas y debió de morir en Egipto.'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-02'
 status: verified
+distinct_from:
+- hezron-hijo-de-ruben

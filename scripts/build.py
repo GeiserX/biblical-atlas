@@ -27,6 +27,7 @@ import yaml
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import bible_coverage as cov  # noqa: E402
+import formas  # noqa: E402
 
 RAIZ = Path(__file__).resolve().parent.parent
 MAP_PATH = RAIZ / "scripts" / "migration" / "map.yaml"
@@ -505,9 +506,11 @@ def integridad(datos):
             for pid in o.get("distinct_from") or []:
                 ref(f, "distinct_from", pid, "people")
             if tipo == "journeys":
-                ref(f, "person", o.get("person"), "people")
+                # Un viaje de grupo lleva person: null y group (validate.py, validar_viaje).
+                if o.get("person") is not None or not o.get("group"):
+                    ref(f, "person", o.get("person"), "people")
                 for p in o.get("companions") or []:
-                    ref(f, "companions", p, "people")
+                    ref(f, "companions", p.get("person") if isinstance(p, dict) else p, "people")
                 for p in o.get("stops") or []:
                     ref(f, f"stop {p.get('order')}: place", p.get("place"), "places")
             elif tipo == "letters":
@@ -768,7 +771,22 @@ def legacy_data(datos, leg):
             lista.append(obj)
         out[raiz] = lista
     merge_pair_copies(compiled, partners, voc)
+    compile_shapes(out[leg.roots["places"]], datos)
     return out
+
+
+def compile_shapes(lugares, datos):
+    """Añade a cada `shape` su contorno (`ring`, [[lon, lat], ...] cerrado) y su caja (`bbox`), que el sitio dibuja y
+    encuadra tal cual. La forma de un lugar rodea su punto; la de un candidato, el de su zona."""
+    puntos = formas.puntos_de_vertices(datos["places"])
+    for o in lugares:
+        hay = [(o.get("shape"), o.get("lat"), o.get("lon"))]
+        hay += [(c.get("shape"), (c.get("geometria") or {}).get("lat"), (c.get("geometria") or {}).get("lon"))
+                for c in o.get("candidatos") or []]
+        for forma, lat, lon in hay:
+            if forma and lat is not None and lon is not None:
+                forma["ring"] = formas.anillo(forma, lat, lon, puntos)
+                forma["bbox"] = formas.caja(forma["ring"])
 
 
 def merge_pair_copies(compiled, partners, voc):
@@ -807,6 +825,25 @@ def orden_en_serie(o):
     return (r.get("serie") or "", n if isinstance(n, (int, float)) else 10**9)
 
 
+def tramos_aparte(v):
+    """En data.json, `companeros` es una lista de ids, como la lee el servidor MCP del atlas (formato v0). Un acompañante
+    que va solo en un tramo de paradas deja su id allí y su tramo en `tramos_companeros`, {persona, desde, hasta}."""
+    comps = v.get("companeros") or []
+    if all(isinstance(c, str) for c in comps):
+        return v
+    ids, tramos = [], [c for c in comps if isinstance(c, dict)]
+    for c in comps:
+        pid = c.get("persona") if isinstance(c, dict) else c
+        if pid not in ids:
+            ids.append(pid)
+    out = {}
+    for k, x in v.items():
+        out[k] = ids if k == "companeros" else x
+        if k == "companeros":
+            out["tramos_companeros"] = tramos
+    return out
+
+
 def componer(datos, hoy, leg=None):
     """data.json a partir de los datos en inglés. Devuelve (salida, legado, errores del adaptador)."""
     leg = leg or Legacy(load_map())
@@ -823,7 +860,7 @@ def componer(datos, hoy, leg=None):
         "personas": {o["id"]: limpio(o) for o in sorted(L["personas"], key=lambda o: o["id"])},
         # Un viaje empieza donde acaba el anterior de su persona: con el mismo año de salida manda el orden
         # del relato, aunque sus anclas den a uno un final un año antes (Elías huye al Horeb tras el Carmelo).
-        "viajes": [limpio(o) for o in sorted(L["viajes"], key=lambda o: clave_fecha(o)[:1] + orden_en_serie(o)
+        "viajes": [tramos_aparte(limpio(o)) for o in sorted(L["viajes"], key=lambda o: clave_fecha(o)[:1] + orden_en_serie(o)
                                              + clave_fecha(o)[1:] + (o["id"],))],
         "cartas": [limpio(o) for o in cartas],
         "eventos": [limpio(o) for o in sorted(L["eventos"], key=lambda o: clave_fecha(o) + orden_en_serie(o) + (o["id"],))],
@@ -907,18 +944,19 @@ def escribir_sqlite(salida, ruta):
         lugar TEXT, {fecha}, abarca_texto TEXT, razon TEXT, consultado TEXT, estado TEXT);
     CREATE TABLE meses (id TEXT PRIMARY KEY, orden INTEGER, nombre TEXT, otros_nombres TEXT);
     CREATE TABLE lugares (id TEXT PRIMARY KEY, nombre TEXT, tipo TEXT, lat REAL, lon REAL, precision TEXT,
-        coord_fuente TEXT, coord_url TEXT, resumen TEXT, razon TEXT, consultado TEXT, estado TEXT);
+        coord_fuente TEXT, coord_url TEXT, resumen TEXT, razon TEXT, consultado TEXT, estado TEXT, forma TEXT);
     CREATE TABLE lugar_nombres (lugar_id TEXT REFERENCES lugares(id), orden INTEGER, nombre TEXT,
         desde INTEGER, hasta INTEGER, nota TEXT);
     CREATE TABLE candidatos (lugar_id TEXT REFERENCES lugares(id), orden INTEGER, nombre TEXT, geometria TEXT,
-        estado TEXT, razon TEXT, checked_on TEXT);
+        estado TEXT, razon TEXT, checked_on TEXT, forma TEXT);
     CREATE TABLE personas (id TEXT PRIMARY KEY, nombre TEXT, nombres TEXT, {fecha}, desambiguacion TEXT,
         resumen TEXT, razon TEXT, consultado TEXT, estado TEXT);
     CREATE TABLE relaciones (persona_id TEXT REFERENCES personas(id), orden INTEGER, tipo TEXT, persona TEXT,
         lugar TEXT, relacion TEXT, relacion_inversa TEXT, {fecha}, deducido INTEGER, razon TEXT, estado TEXT,
         type TEXT, word TEXT, office TEXT, certainty TEXT, checked_on TEXT, key TEXT);
-    CREATE TABLE viajes (id TEXT PRIMARY KEY, nombre TEXT, persona_id TEXT REFERENCES personas(id), referencia TEXT,
-        {fecha}, companeros TEXT, resumen TEXT, razon TEXT, consultado TEXT, estado TEXT, repeats TEXT);
+    CREATE TABLE viajes (id TEXT PRIMARY KEY, nombre TEXT, persona_id TEXT REFERENCES personas(id), grupo TEXT,
+        referencia TEXT, {fecha}, companeros TEXT, tramos_companeros TEXT, resumen TEXT, razon TEXT, consultado TEXT, estado TEXT,
+        repeats TEXT);
     CREATE TABLE paradas (viaje_id TEXT REFERENCES viajes(id), orden INTEGER, lugar_id TEXT REFERENCES lugares(id),
         referencia TEXT, {fecha}, nota TEXT, razon TEXT, estado TEXT, checked_on TEXT, PRIMARY KEY (viaje_id, orden));
     CREATE TABLE cartas (id TEXT PRIMARY KEY, libro TEXT, escritor TEXT, referencia TEXT, escrita_en TEXT, {fecha},
@@ -935,6 +973,7 @@ def escribir_sqlite(salida, ruta):
     CREATE TABLE hechos_fuentes (tipo TEXT, id TEXT, fuente_id TEXT REFERENCES fuentes(id));
     """)
     j = lambda x: json.dumps(x or [], ensure_ascii=False)
+    forma = lambda o: json.dumps(o["shape"], ensure_ascii=False) if o.get("shape") else None
     fuentes_legado = ("fuentes", "fuente")
 
     def ins(tabla, valores):
@@ -961,12 +1000,12 @@ def escribir_sqlite(salida, ruta):
         fuentes_hecho("mes", m["id"], m)
     for o in salida["lugares"].values():
         ins("lugares", (o["id"], o["nombre"], o["tipo"], o["lat"], o["lon"], o["precision"], o["coord_fuente"],
-                        o["coord_url"], o["resumen"], o["razon"], o["consultado"], o["estado"]))
+                        o["coord_url"], o["resumen"], o["razon"], o["consultado"], o["estado"], forma(o)))
         for i, n in enumerate(o.get("nombres") or []):
             ins("lugar_nombres", (o["id"], i, n["nombre"], n.get("desde"), n.get("hasta"), n.get("nota")))
         for i, c in enumerate(o.get("candidatos") or []):
             ins("candidatos", (o["id"], i, c.get("nombre"), json.dumps(c.get("geometria"), ensure_ascii=False),
-                               c.get("estado"), c.get("razon"), c.get("checked_on")))
+                               c.get("estado"), c.get("razon"), c.get("checked_on"), forma(c)))
         fuentes_hecho("lugar", o["id"], o)
     for o in salida["personas"].values():
         ins("personas", (o["id"], o["nombre"], j(o.get("nombres")), *_fecha_cols(o.get("fecha")),
@@ -978,8 +1017,8 @@ def escribir_sqlite(salida, ruta):
                                r.get("certainty"), r.get("checked_on"), r.get("key")))
         fuentes_hecho("persona", o["id"], {k: v for k, v in o.items() if k != "offices"})
     for o in salida["viajes"]:
-        ins("viajes", (o["id"], o["nombre"], o["persona"], o["referencia"], *_fecha_cols(o.get("fecha")),
-                       j(o.get("companeros")), o["resumen"], o.get("razon"), o.get("consultado"), o.get("estado"),
+        ins("viajes", (o["id"], o["nombre"], o["persona"], o.get("grupo"), o["referencia"], *_fecha_cols(o.get("fecha")),
+                       j(o.get("companeros")), j(o.get("tramos_companeros")), o["resumen"], o.get("razon"), o.get("consultado"), o.get("estado"),
                        o.get("repeats")))
         fuentes_hecho("viaje", o["id"], {k: v for k, v in o.items() if k != "paradas"})
         for p in o.get("paradas") or []:
@@ -1065,6 +1104,7 @@ REGISTROS = [  # (fichero, título)
     ("libros", "Libros y calendario"), ("cobertura", "Cobertura de la Biblia"), ("fuentes", "Fuentes"),
 ]
 ESTADOS_LEGADO = {"verified": "verificado", "pending": "pendiente"}
+FORMAS_ES = {"circle": "círculo", "ellipse": "elipse", "box": "caja", "polygon": "polígono"}
 
 
 def _cabeza(titulo):
@@ -1120,7 +1160,7 @@ def registros(salida, legado, datos):
     docs = {}
 
     out = _cabeza("Lugares")
-    filas, cands, alts = [], [], []
+    filas, cands, alts, formas_ = [], [], [], []
     for o in L.values():
         f = fich[("lugares", o["id"])]
         filas.append(_fila(f"**{o['nombre']}** ({o['tipo']}, {o['precision']}): {o['resumen']}", f, o["fuentes"], F,
@@ -1130,9 +1170,17 @@ def registros(salida, legado, datos):
             cands.append(_fila(f"**{o['nombre']}**, candidato «{c.get('nombre')}» ({g.get('tipo')}, {c.get('estado')})",
                                f, c.get("fuentes"), F, c.get("checked_on") or o["consultado"], c.get("razon"),
                                o["estado"]))
+        for de, s in [("", o.get("shape"))] + [(f", candidato «{c.get('nombre')}»", c.get("shape"))
+                                                for c in o.get("candidatos") or []]:
+            if s:
+                formas_.append(_fila(f"**{o['nombre']}**{de}: {FORMAS_ES.get(s['type'], s['type'])}. {s.get('note', '')}", f,
+                                     s.get("sources"), F, s.get("checked_on"), s.get("reason"),
+                                     ESTADOS_LEGADO.get(s.get("status"), s.get("status"))))
         alts += _alternativas(o, f, F)
     _seccion(out, "Lugares", filas)
     _seccion(out, "Candidatos de ubicación", cands)
+    if formas_:
+        _seccion(out, "Formas de las zonas", formas_)
     if alts:
         _seccion(out, "Cronología secular", alts)
     _revisar(out, "lugares", list(L.values()))

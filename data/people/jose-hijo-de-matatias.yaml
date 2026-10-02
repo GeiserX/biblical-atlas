@@ -4,17 +4,23 @@ name: José
 names:
 - name: José
 perspicacia: 1200002515#7
-disambiguation: José hijo de Matatías (Lu 3:24, 25); no José, el esposo de María, ni José hijo de Jonam, ni los demás José
-  que numera Perspicacia.
+disambiguation: José hijo de Matatías (Lu 3:24, 25); no José, el esposo de María, ni José hijo de Jonam, ni Bernabé, ni los
+  demás José que numera Perspicacia.
 distinct_from:
 - jose-esposo-de-maria
 - jose-hijo-de-jonam
 - jose-padre-de-igal
+- bernabe
+- jesus-hijo-de-eliezer
+- jose-de-arimatea
+- jose-hijo-de-jacob
+- jose-hijo-de-jose
 summary: Antepasado de Jesús por la línea de María. Perspicacia lo sitúa unos años después del regreso del destierro.
 reason: Perspicacia «José», núm. 7; Lu 3:24.
 sources:
 - it-jose
 - lucas-3
+- it-bernabe
 links:
 - title: 'Perspicacia: «José»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jos%C3%A9/
@@ -32,5 +38,5 @@ relations:
   reason: 'Lu 3:24, 25: José, hijo de Matatías.'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-10-01'
+checked_on: '2026-10-02'
 status: verified

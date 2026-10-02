@@ -28,5 +28,8 @@ relations:
   reason: 'Gé 36:28: hijo de Disán.'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-02'
 status: verified
+distinct_from:
+- uz-hijo-de-aram
+- uz-hijo-de-nacor

@@ -28,5 +28,7 @@ relations:
   reason: 'Gé 22:21: Quemuel es el padre de Aram.'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-02'
 status: verified
+distinct_from:
+- aram-hijo-de-sem

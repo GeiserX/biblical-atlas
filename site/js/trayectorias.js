@@ -147,8 +147,9 @@ function momentos(f) {
   else if (hits.length === 1 && hits[0] === ESTACIONES.invierno) fin = h + 0.15;
   return [ini, Math.max(ini, fin)];
 }
-// Un viaje sin `persona` es de Pablo y una carta sin `escritor` es suya: así lo dice el esquema de los datos.
-const duenoViaje = (v) => v.persona || 'pablo';
+// Un viaje sin `persona` es de Pablo y una carta sin `escritor` es suya: así lo dice el esquema de los datos. Quién hace
+// cada viaje (una persona, un grupo o Pablo) lo dicen BE.duenoViaje y sus vecinas, en base.js.
+const { duenoViaje, esGrupo } = BE;
 const escritorDe = (c) => c.escritor || 'pablo';
 const esDe = (v, persona) => duenoViaje(v) === persona;
 /** Quién lleva sus sucesos y cartas en sus paradas: Pablo, cuyas paradas se fecharon una a una con Hechos (el modelo de
@@ -164,8 +165,10 @@ const SUCESOS_EN_PARADAS = new Set(['pablo']);
 function sucesosDeParadas(persona, P) {
   const m = new Map();
   // Para el orden cuenta todo suceso que la nombra; para estar en la parada, solo aquel en que está (`presentes`).
-  const evs = (BE.D.eventos || []).filter((e) => (e.personas || []).includes(persona))
-    .map((e) => ({ e, presente: !e.presentes || e.presentes.includes(persona), vs: versiculos((e.pasajes || []).join('; ')), primero: versiculos((e.pasajes || [])[0])[0], v: null }));
+  // Un grupo no sale en `personas`: sus sucesos son los que cuentan algún versículo de la referencia del viaje.
+  const vsGrupo = esGrupo(persona) ? versiculos((BE.D.viajes || []).find((v) => v.id === persona.slice(6))?.referencia) : null;
+  const evs = (BE.D.eventos || []).filter((e) => (vsGrupo ? seCruzan(versiculos((e.pasajes || []).join('; ')), vsGrupo) : (e.personas || []).includes(persona)))
+    .map((e) => ({ e, presente: !!vsGrupo || !e.presentes || e.presentes.includes(persona), vs: versiculos((e.pasajes || []).join('; ')), primero: versiculos((e.pasajes || [])[0])[0], v: null }));
   if (!evs.length) return m;
   const ventana = (x) => (x.v ??= ventanaEvento(x.e) || false);
   for (const s of P) {

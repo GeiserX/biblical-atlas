@@ -12,13 +12,17 @@ date:
   chronology: tnm
   text: c. 49-52 e.c. (sale a finales del verano de 49; vuelve en el verano de 52)
 companions:
-- silas
-- timoteo
-- lucas
+- {person: silas, from: 1, to: 14}
+- {person: silas, from: 16, to: 16}
+- {person: timoteo, from: 4, to: 14}
+- {person: timoteo, from: 16, to: 16}
+- {person: lucas, from: 7, to: 10}
+- {person: aquila, from: 16, to: 18}
+- {person: priscila, from: 16, to: 18}
 summary: Con Silas visita de nuevo Galacia, suma a Timoteo en Listra, cruza a Macedonia desde Troas (Lucas se une
   allí) y pasa 18 meses en Corinto. Áquila y Priscila lo acompañan de Cencreas a Éfeso.
-reason: El estudio 3 (párr. 24 y 25) fecha la salida a finales del verano de 49, el paso a Europa en la primavera
-  de 50 y la vuelta en el verano de 52.
+reason: 'El estudio 3 (párr. 24 y 25) fecha la salida a finales del verano de 49, el paso a Europa en la primavera de 50
+  y la vuelta en el verano de 52. Acompañantes: Hch 15:40; 16:1-17; 17:14; 18:2-19.'
 sources:
 - si-3
 - it-pablo
@@ -29,6 +33,8 @@ sources:
 - hch-16
 - hch-17
 - hch-18
+- it-silas
+- nota-hechos-16
 history:
 - date: '2026-09-29'
   change: 'Las paradas que heredaban c. 49-52 se acotan con el estudio 3: invierno de 49-50 en Asia Menor, 50 en Macedonia
@@ -37,7 +43,13 @@ history:
 - date: '2026-09-30'
   change: 'Áquila y Priscila salen de companions: solo van de Corinto a Éfeso, tramo que ya cuenta su viaje viajes-de-aquila-y-priscila.'
   source: hch-18
-checked_on: '2026-09-29'
+- date: '2026-10-02'
+  change: 'Silas, Timoteo y Lucas pasan de ir en todo el viaje a ir solo en sus paradas: Pablo llega solo a Atenas y Lucas va de Troas a Filipos.'
+  source: hch-17
+- date: '2026-10-02'
+  change: 'Áquila y Priscila vuelven a companions con su tramo, de Corinto a Éfeso (paradas 16 a 18): el esquema ya admite un acompañante en parte del viaje.'
+  source: hch-18
+checked_on: '2026-10-02'
 status: verified
 stops:
 - order: 1

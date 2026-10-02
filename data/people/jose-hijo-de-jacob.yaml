@@ -13,12 +13,17 @@ date:
   type: anchored
   chronology: tnm
   text: 1767-1657 a.e.c.
-disambiguation: José hijo de Jacob, gobernante en Egipto; no José el esposo de María ni José de Arimatea.
+disambiguation: José hijo de Jacob, gobernante en Egipto; no José el esposo de María, ni José de Arimatea, ni Bernabé, ni
+  los demás José que numera Perspicacia.
 distinct_from:
 - jose-esposo-de-maria
 - jose-de-arimatea
 - jose-hijo-de-jose
 - jose-padre-de-igal
+- bernabe
+- jesus-hijo-de-eliezer
+- jose-hijo-de-jonam
+- jose-hijo-de-matatias
 summary: Primer hijo de Jacob y Raquel. Sus medio hermanos lo vendieron como esclavo a los 17 años. En Egipto resistió la
   tentación, estuvo preso y Faraón lo hizo segundo gobernante. Así salvó a su familia del hambre.
 reason: 'Perspicacia «José», núm. 1, párr. 2, 5, 8, 11, 17 y 40. El estudio 3: nace en 1767, lo venden en 1750 y muere en
@@ -47,6 +52,7 @@ sources:
 - juan-4
 - hechos-7
 - josue-24
+- it-bernabe
 links:
 - title: 'Perspicacia: «José»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jos%C3%A9/
@@ -203,5 +209,5 @@ history:
 - date: '2026-09-29'
   change: El nombre egipcio pasa a escribirse Zafenat-Panéah, como en el texto de la TNM de Gé 41:45.
   source: genesis-41
-checked_on: '2026-09-29'
+checked_on: '2026-10-02'
 status: verified

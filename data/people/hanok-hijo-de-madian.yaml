@@ -28,5 +28,7 @@ relations:
   reason: Gé 25:4.
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-02'
 status: verified
+distinct_from:
+- hanok-hijo-de-ruben

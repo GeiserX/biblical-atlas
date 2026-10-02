@@ -172,5 +172,158 @@ class ChapterUrls(unittest.TestCase):
         self.assertIsNone(self.cap("https://wol.jw.org/es/wol/d/r4/lp-s/1200000129"))
 
 
+class JourneysForTheSite(unittest.TestCase):
+    """A group journey and a companion's range of stops reach data.json with the names the site reads."""
+
+    def test_group_and_companion_ranges(self):
+        leg = build.Legacy(build.load_map())
+        v = {"person": None, "group": "el Arca del pacto",
+             "companions": ["silas", {"person": "lucas", "from": 7, "to": 10}]}
+        out = {}
+        for k, x in v.items():
+            es, hijo = leg.key(k, leg.roots["journeys"], "journeys")
+            out[es] = leg.translate(x, hijo, f"journeys.{k}")
+        self.assertEqual(out, {"persona": None, "grupo": "el Arca del pacto",
+                               "companeros": ["silas", {"persona": "lucas", "desde": 7, "hasta": 10}]})
+        self.assertEqual(leg.errors, [])
+
+    def test_companions_stay_a_list_of_ids(self):
+        """data.json keeps `companeros` as ids, the shape the atlas MCP server decodes; the ranges go apart."""
+        v = {"id": "x", "companeros": ["silas", {"persona": "lucas", "desde": 7, "hasta": 10},
+                                       {"persona": "lucas", "desde": 12, "hasta": 12}], "resumen": "y"}
+        self.assertEqual(build.tramos_aparte(v), {
+            "id": "x", "companeros": ["silas", "lucas"],
+            "tramos_companeros": [{"persona": "lucas", "desde": 7, "hasta": 10}, {"persona": "lucas", "desde": 12, "hasta": 12}],
+            "resumen": "y"})
+        self.assertIs(build.tramos_aparte({"id": "z", "companeros": ["silas"]})["companeros"][0], "silas")
+
+    def test_every_journey_of_data_has_companions_as_ids(self):
+        malos = [v["id"] for v in self.salida()["viajes"] if not all(isinstance(c, str) for c in v.get("companeros") or [])]
+        self.assertEqual(malos, [])
+        self.assertTrue(any(v.get("tramos_companeros") for v in self.salida()["viajes"]), "the ranges reach data.json")
+
+    def test_sqlite_keeps_the_group_and_the_ranges(self):
+        import sqlite3
+        with tempfile.TemporaryDirectory() as d:
+            ruta = Path(d) / "atlas.sqlite"
+            build.escribir_sqlite(self.salida(), ruta)
+            con = sqlite3.connect(ruta)
+            fila = con.execute("SELECT persona_id, grupo FROM viajes WHERE id = 'el-arca-en-filistea'").fetchone()
+            tramos = con.execute("SELECT companeros, tramos_companeros FROM viajes WHERE id = 'segundo-viaje'").fetchone()
+            con.close()
+        self.assertEqual(fila, (None, "el Arca del pacto"))
+        self.assertIn('"silas"', tramos[0])
+        self.assertIn('"desde": 16', tramos[1])
+
+    _salida = None
+
+    @classmethod
+    def salida(cls):
+        if cls._salida is None:
+            datos, _ = build.cargar(HERE.parent / "data")
+            cls._salida = build.componer(datos, "2026-10-02")[0]
+        return cls._salida
+
+
+class Formas(unittest.TestCase):
+    """build.py añade a cada forma su contorno y su caja, que el sitio dibuja y encuadra sin hacer cuentas."""
+
+    def test_contorno_y_caja_de_un_lugar_y_de_un_candidato(self):
+        elipse = {"type": "ellipse", "radii_km": [40, 10], "bearing": 0}
+        poligono = {"type": "polygon", "vertices": [[30.9, 33.9], [31.1, 33.9], "b"]}
+        lugares = [{"id": "a", "lat": 32.0, "lon": 35.0, "shape": elipse,
+                    "candidatos": [{"geometria": {"lat": 31.0, "lon": 34.0}, "shape": poligono}]}]
+        build.compile_shapes(lugares, {"places": [{"id": "b", "lat": 31.0, "lon": 34.2, "precision": "point"}]})
+        self.assertEqual(len(elipse["ring"]), 73)
+        self.assertEqual(elipse["ring"][0], elipse["ring"][-1])
+        (o, s_), (e, n) = elipse["bbox"]
+        # 80 km de norte a sur y 20 de este a oeste: 0,72 grados de latitud y 0,21 de longitud a 32 N.
+        self.assertAlmostEqual(n - s_, 80 / 111.2, places=2)
+        self.assertAlmostEqual(e - o, 20 / (111.2 * 0.848), places=2)
+        self.assertEqual(poligono["ring"], [[33.9, 30.9], [33.9, 31.1], [34.2, 31.0], [33.9, 30.9]])
+        self.assertEqual(poligono["bbox"], [[33.9, 30.9], [34.2, 31.1]])
+
+
+    def test_el_rumbo_gira_la_elipse(self):
+        # Rumbo 90: el eje largo va de oeste a este, así que la caja es más ancha que alta (en km).
+        elipse = {"type": "ellipse", "radii_km": [40, 10], "bearing": 90}
+        build.compile_shapes([{"id": "a", "lat": 32.0, "lon": 35.0, "shape": elipse}], {"places": []})
+        (o, s_), (e, n) = elipse["bbox"]
+        self.assertAlmostEqual((e - o) * 111.2 * 0.848, 80, delta=1)
+        self.assertAlmostEqual((n - s_) * 111.2, 20, delta=1)
+
+    def test_contorno_de_una_caja(self):
+        caja = {"type": "box", "bounds": {"south": 31.9, "west": 34.9, "north": 32.1, "east": 35.2}}
+        build.compile_shapes([{"id": "a", "lat": 32.0, "lon": 35.0, "shape": caja}], {"places": []})
+        self.assertEqual(caja["ring"], [[34.9, 31.9], [35.2, 31.9], [35.2, 32.1], [34.9, 32.1], [34.9, 31.9]])
+        self.assertEqual(caja["bbox"], [[34.9, 31.9], [35.2, 32.1]])
+
+
+LLANO = """id: llano
+name: Llano
+names:
+- name: Llano
+type: plain
+lat: 32.0
+lon: 35.0
+precision: zone
+coord_source: openbible:a1
+coord_url: https://www.openbible.info/geo/ancient/a1/x
+shape:
+  type: box
+  bounds: {south: 31.9, west: 34.9, north: 32.1, east: 35.2}
+  note: Caja de prueba.
+  sources: [it-prueba]
+  reason: Prueba.
+  checked_on: '2026-10-02'
+  status: verified
+summary: Prueba.
+reason: Prueba.
+sources: [it-prueba]
+links: []
+checked_on: '2026-10-02'
+status: pending
+"""
+
+
+class FormasEnLaSalida(unittest.TestCase):
+    """La forma llega a la base SQLite (columna forma) y al registro (sección «Formas de las zonas»)."""
+
+    def setUp(self):
+        self.tmp = tempfile.TemporaryDirectory()
+        self.dir = Path(self.tmp.name)
+        d = self.dir / "data"
+        (d / "places").mkdir(parents=True)
+        (d / "sources").mkdir()
+        (d / "books.yaml").write_text(BOOKS, encoding="utf-8")
+        (d / "sources" / "prueba.yaml").write_text(SOURCES, encoding="utf-8")
+        shutil.copy(HERE.parent / "data" / "vocabulary.yaml", d / "vocabulary.yaml")
+        (d / "places" / "llano.yaml").write_text(LLANO, encoding="utf-8")
+        self.datos, _ = build.cargar(d)
+        self.salida, self.legado, errores = build.componer(self.datos, "2026-10-02")
+        self.assertEqual(errores, [])
+
+    def tearDown(self):
+        self.tmp.cleanup()
+
+    def test_columna_forma_en_sqlite(self):
+        import json
+        import sqlite3
+        ruta = self.dir / "x.sqlite"
+        build.escribir_sqlite(self.salida, ruta)
+        con = sqlite3.connect(ruta)
+        try:
+            (forma,), = con.execute("SELECT forma FROM lugares WHERE id = 'llano'").fetchall()
+        finally:
+            con.close()
+        self.assertEqual(json.loads(forma)["bbox"], [[34.9, 31.9], [35.2, 32.1]])
+
+    def test_seccion_del_registro(self):
+        build.escribir_registro(self.salida, self.legado, self.datos, self.dir / "registro")
+        texto = (self.dir / "registro" / "lugares.md").read_text(encoding="utf-8")
+        self.assertIn("Formas de las zonas", texto)
+        self.assertIn("**Llano**: caja. Caja de prueba.", texto)
+
+
 if __name__ == "__main__":
     unittest.main(verbosity=1)

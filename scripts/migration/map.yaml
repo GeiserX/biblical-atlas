@@ -163,6 +163,7 @@ keys:
   fuentes: sources
   generado: generated_on
   geometria: geometry
+  grupo: group
   habladas: spoken
   hasta: to
   historial: history
@@ -239,7 +240,12 @@ relation_keys:
 new_keys:
   relations[]: [word, caption, inverse_caption, office, certainty, checked_on]
   journeys.stops[]: [checked_on]
-  places.candidates[]: [checked_on]
+  places.candidates[]: [checked_on, shape]
+  places: [shape]
+  # La forma de una zona sale entera en inglés, como en el YAML; build.py le añade `ring` y `bbox`.
+  shape: [type, center, radius_km, radii_km, bearing, bounds, vertices, note, sources, reason, checked_on, status]
+  shape.center: [lat, lon]
+  shape.bounds: [south, west, north, east]
   calendar.months[].names[]: [checked_on]
   calendar.months[].festivals[]: [checked_on]
   events: [type, roles]

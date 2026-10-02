@@ -10,7 +10,9 @@ const { E, esc, $, EXTERNO, fmtAnio, fechaCorta } = BE;
 const reducido = () => matchMedia('(prefers-reduced-motion: reduce)').matches || document.documentElement.classList.contains('be-reunion');
 const busca = (id) => (BE.D.recorridos || []).find((r) => r.id === id);
 const CLAVE_PASO = 'biblical-atlas:recorrido:';
-const R = { id: null, paso: 0, pasoHash: null, respuestas: {}, play: 0, marcas: [] };
+// marcoLlegada: el encuadre guardado de la entrada a la que se acaba de llegar (Atrás, Adelante, una recarga), solo
+// hasta el siguiente fotograma, el que abre el recorrido (seguirSeleccion).
+const R = { id: null, paso: 0, pasoHash: null, marcoLlegada: null, respuestas: {}, play: 0, marcas: [] };
 const pasoDe = (id) => (R.id === id ? R.paso : (R.pasoHash ?? guardado(id)));
 // El paso guardado es un entero desde 0; un valor que no es un número (una copia estropeada) cuenta como el primero.
 // Quien lo usa lo recorta al número de paradas.
@@ -116,8 +118,8 @@ function marcas() {
   }
 }
 
-/** Va a la parada i: cursor, mapa (su lugar resaltado y encuadrado), ficha y dirección. */
-function irA(i, { historia = true } = {}) {
+/** Va a la parada i: cursor, mapa (su lugar resaltado y, si encuadrar, encuadrado), ficha y dirección. */
+function irA(i, { historia = true, encuadrar = true } = {}) {
   const rc = busca(R.id);
   if (!rc) return;
   i = Math.max(0, Math.min(rc.paradas.length - 1, i));
@@ -130,13 +132,15 @@ function irA(i, { historia = true } = {}) {
   const ls = lugaresParada(p);
   vistaSobreMapa();   // antes de encuadrar: el encuadre deja libre el sitio de esta tarjeta
   BE.mapa.resaltar(ls.length ? ls : null);
-  if (ls.length) BE.mapa.encuadrar(ls);
+  if (ls.length && encuadrar) BE.mapa.encuadrar(ls);
   BE.pintarPanel(true);
   marcas();
   BE.guardarHash();
 }
 /** Se llama en cada fotograma: entra o sale del recorrido según la selección. */
 function seguirSeleccion() {
+  const marco = R.marcoLlegada;
+  R.marcoLlegada = null;
   const id = E.sel?.tipo === 'recorrido' ? E.sel.id : null;
   if (id === R.id) return;
   if (R.id) { parar(); BE.mapa.resaltar(null); }
@@ -146,7 +150,9 @@ function seguirSeleccion() {
     const rc = busca(id);
     R.paso = Math.min(rc.paradas.length - 1, R.pasoHash ?? guardado(id));
     R.pasoHash = null;
-    irA(R.paso, { historia: false });
+    // Al llegar a una entrada que guarda su encuadre, el mapa se queda como se dejó, no en el de la parada.
+    irA(R.paso, { historia: false, encuadrar: !marco });
+    if (marco) BE.mapa.ponerMarco(marco);
   } else { vistaSobreMapa(); marcas(); }
 }
 function parar() { clearTimeout(R.play); R.play = 0; }
@@ -309,9 +315,22 @@ function salir() {
 BE.inicios.push(iniciar);
 BE.pintores.push(seguirSeleccion);
 // La parada solo va en la dirección mientras el recorrido está elegido: al quitarlo (Atrás a la portada, otra
-// selección) no se queda colgada hasta el fotograma que lo cierra.
-BE.parametros.push({ nombre: 'paso', historia: true, escribir: () => (R.id && E.sel?.tipo === 'recorrido' && E.sel.id === R.id ? String(R.paso + 1) : null),
-  leer(v) { const n = v ? Math.max(0, (+v || 1) - 1) : null; if (R.id && n != null && n !== R.paso) irA(n, { historia: false }); else R.pasoHash = n; } });
+// selección) no se queda colgada hasta el fotograma que lo cierra. Recién elegido, antes de que seguirSeleccion lo
+// abra, ya dice la parada en la que va a abrir (la de la dirección, la guardada o la primera): si no, el historial veía
+// dos vistas, el recorrido sin parada y la parada, y guardaba dos entradas que se ven igual.
+function pasoEscrito() {
+  if (E.sel?.tipo !== 'recorrido') return null;
+  if (E.sel.id === R.id) return String(R.paso + 1);
+  const rc = BE.D && busca(E.sel.id);
+  return rc ? String(Math.min(rc.paradas.length - 1, pasoDe(E.sel.id)) + 1) : null;
+}
+BE.parametros.push({ nombre: 'paso', historia: true, escribir: pasoEscrito,
+  leer(v) {
+    const n = v ? Math.max(0, (+v || 1) - 1) : null;
+    // Se lee al llegar a una entrada: si el recorrido se abre en el fotograma siguiente, su encuadre es el guardado.
+    R.marcoLlegada = BE.historia?.marco() ?? null;
+    if (R.id && n != null && n !== R.paso) irA(n, { historia: false }); else R.pasoHash = n;
+  } });
 
 BE.recorridos = { ficha: fichaRecorrido, irA, pasoDe, salir, presentar, avanzar };
 BE.reducido = reducido;

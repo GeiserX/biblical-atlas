@@ -47,5 +47,7 @@ relations:
   reason: Gé 36:31, 32 lo pone el primero de los reyes que reinaron en Edom.
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-02'
 status: verified
+distinct_from:
+- bela-hijo-de-benjamin

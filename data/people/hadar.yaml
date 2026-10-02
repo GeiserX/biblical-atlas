@@ -6,15 +6,17 @@ names:
 - name: Hadad
   note: Así lo llama la lista paralela; Perspicacia cree que Hadar puede venir de confundir dos letras hebreas parecidas.
 perspicacia: '1200001800'
-disambiguation: Hadar, último rey de Edom de la lista; no Hadad hijo de Bedad.
+disambiguation: Hadar, último rey de Edom de la lista; no Hadad hijo de Bedad, otro rey de Edom, ni Hadad hijo de Ismael.
 distinct_from:
 - hadad-hijo-de-bedad
 - hadad-el-edomita
+- hadad-hijo-de-ismael
 summary: Rey de Edom que sucedió a Baal-Hanán; su ciudad era Paú y su esposa, Mehetabel. Otra lista lo llama Hadad.
 reason: Perspicacia «Hadar» y «Hadad», núm. 3; Gé 36:39.
 sources:
 - it-hadar
 - genesis-36
+- it-hadad
 links:
 - title: 'Perspicacia: «Hadar»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hadar/
@@ -61,5 +63,5 @@ relations:
   reason: Reinó en Edom tras Baal-Hanán (Gé 36:31, 39).
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-02'
 status: verified

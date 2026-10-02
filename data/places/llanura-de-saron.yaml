@@ -12,6 +12,17 @@ precision: zone
 coord_source: openbible:a83fd43
 coord_url: https://www.openbible.info/geo/ancient/a83fd43/sharon-1
 coord_note: Punto representativo de la llanura.
+shape:
+  type: ellipse
+  center: {lat: 32.276, lon: 34.914}
+  radii_km: [30, 8.75]
+  bearing: 14
+  note: 'Elipse nuestra de 60 km de largo y 17,5 de ancho, la media de lo que da Perspicacia, junto a la costa desde la boca del Nahr ez-Zerqa hasta Jope.'
+  sources:
+  - it-saron
+  reason: 'Perspicacia «Sarón», núm. 1: llanura costera que baja unos 60 km desde el río Crocodilon (Nahr ez-Zerqa) hasta Jope, con 16 a 19 km de ancho.'
+  checked_on: '2026-10-02'
+  status: verified
 summary: Llanura fértil de la costa, de unos 60 km, del río Crocodilon a Jope; al parecer la invasión asiria la desoló en
   buena parte (Is 33:9). Al curar Pedro a Eneas, los de Lida y Sarón se volvieron al Señor.
 reason: 'Perspicacia «Sarón», apartado 1 (párr. 2 y 3); Hch 9:35. La coordenada es de OpenBible: solo tomamos el

@@ -336,6 +336,101 @@ test('1440: a second click on the selected mark releases it, Esc releases it, an
   await p.context().close();
 });
 
+/** Scrolls the lanes to the mark called `name` and clicks or taps its name, as a person would. */
+async function pressMark(p, screen, name) {
+  const id = await p.evaluate((n) => { const m = window.BE.lineaMarcas().find((q) => q.name === n); const c = document.querySelector('#linea-cuerpo'); c.scrollTop = Math.max(0, m.top - 60); return m.id; }, name);
+  await frames(p);
+  const [x, y] = await p.evaluate((i) => { const r = document.querySelector(`#linea-filas .m[data-id="${CSS.escape(i)}"] .m-nombre .t`).getBoundingClientRect(); return [r.left + Math.min(r.width / 2, 20), r.top + r.height / 2]; }, id);
+  if (screen.hasTouch) await p.touchscreen.tap(x, y); else await p.mouse.click(x, y);
+  await frames(p);
+  return { id, ...(await state(p)) };
+}
+
+test('after Back reselects a mark, the first click or tap on it releases it, on the computer and on the phone', async () => {
+  // docs/ideas/atras-adelante-flecos.md, question 4: each entry remembers the mark pressed in it, and Back gives it back
+  // to the strip. Before, Back counted as a selection from elsewhere: the first click only moved the cursor, or nothing.
+  for (const [screen, first, second, back] of [[DESKTOP, 'Galión, procónsul de Acaya', 'Segundo viaje misional', '#atras'],
+    [PHONE, 'La congregación cristiana', 'Roma, sexta potencia mundial', '#hoja-atras']]) {
+    const p = await open(screen, 't=50.5&v=8');
+    const press = (name) => pressMark(p, screen, name);
+    const a = await press(first);
+    assert.notEqual(a.sel, '', `${screen.name}: «${first}» was not selected`);
+    const b = await press(second);
+    assert.notEqual(b.sel, a.sel, `${screen.name}: «${second}» was not selected`);
+    await p.locator(back).click();
+    await frames(p, 6);
+    const back1 = await state(p);
+    assert.equal(back1.sel, a.sel, `${screen.name}: Back did not bring «${first}» back`);
+    assert.ok(Math.abs(back1.t - a.t) < 1e-4, `${screen.name}: Back did not bring the cursor back (${back1.t}, was ${a.t})`);   // the address keeps 4 decimals
+    const released = await press(first);
+    assert.equal(released.sel, '', `${screen.name}: the first click after Back on «${first}» did not release it`);
+    assert.equal(released.t, back1.t, `${screen.name}: releasing moved the cursor`);
+    await p.context().close();
+  }
+});
+
+test('after Back, a journey bar pressed in a traveller\'s lane comes back in that lane, pressed, and the first click releases it', async () => {
+  // The bar of a journey of Jesús lives only in his lane, which stays while one of its marks is selected. A selection
+  // from elsewhere takes the lane away; Back brings the bar back, so it brings the lane back with it.
+  const p = await open(DESKTOP, 't=30.5&v=8');
+  await p.keyboard.press('Shift');   // a key wakes the history: the next view gets its entry
+  await p.evaluate(() => window.BE.seleccionar({ tipo: 'persona', id: 'jesus' }, { mover: false }));
+  await frames(p, 6);
+  const barIn = (id) => p.evaluate((i) => {
+    const b = document.querySelector(`#linea-filas .carril[data-carril="jesus"]:not([hidden]) .m[data-id="${CSS.escape(i)}"]`);
+    if (!b) return null;
+    b.scrollIntoView({ block: 'center' });
+    const r = b.querySelector('.m-barra').getBoundingClientRect(), pr = b.closest('.carril-pista').getBoundingClientRect();
+    const x0 = Math.max(r.left, pr.left + 2), x1 = Math.min(r.right, pr.right - 2);
+    return { x: (x0 + x1) / 2, y: r.top + r.height / 2, pressed: b.getAttribute('aria-pressed') };
+  }, id);
+  const id = await p.evaluate(() => window.BE.lineaMarcas().find((m) => m.lane === 'jesus' && m.sel.startsWith('viaje:') && m.visible)?.id);
+  assert.ok(id, 'a journey bar of Jesús in view');
+  const a = await barIn(id);
+  await p.mouse.click(a.x, a.y);
+  await frames(p, 6);
+  assert.equal((await state(p)).sel, id, `the bar «${id}» was not selected`);
+  await p.waitForFunction((i) => history.state?.mark === i, id, { timeout: 3000 });
+  await p.locator('#q').fill('Corinto');
+  await p.waitForFunction(() => !document.querySelector('#resultados').hidden);
+  await p.keyboard.press('Enter');
+  await frames(p, 6);
+  assert.equal(await barIn(id), null, 'the lane of Jesús is still there after selecting Corinto');
+  await p.locator('#atras').click();
+  await frames(p, 6);
+  assert.equal((await state(p)).sel, id, 'Back did not bring the journey back');
+  const b = await barIn(id);
+  assert.ok(b, 'after Back the bar has no lane to be in: the lane of Jesús is gone');
+  assert.equal(b.pressed, 'true', 'after Back the bar is not pressed');
+  await p.mouse.click(b.x, b.y);
+  await frames(p, 6);
+  assert.equal((await state(p)).sel, '', 'the first click after Back on the bar did not release it');
+  await p.context().close();
+});
+
+test('after a reload, or «Acerca de» and back with «Volver al mapa», the first click or tap on the pressed mark releases it', async () => {
+  // The entry keeps the mark pressed in it, and the page gives it back to the strip when it loads, not only on Back.
+  const marked = async (p) => { await p.waitForFunction(() => window.BE?.lineaMarcas && document.querySelector('#linea-filas .m'), null, { timeout: 25000 }); await frames(p, 6); };
+  for (const [screen, name, way] of [[DESKTOP, 'Galión, procónsul de Acaya', 'reload'], [DESKTOP, 'Galión, procónsul de Acaya', 'volver'],
+    [PHONE, 'La congregación cristiana', 'reload']]) {
+    const p = await open(screen, 't=50.5&v=8');
+    const a = await pressMark(p, screen, name);
+    assert.notEqual(a.sel, '', `${screen.name}: «${name}» was not selected`);
+    await p.waitForFunction((id) => history.state?.mark === id, a.id, { timeout: 3000 });
+    if (way === 'reload') await p.reload();
+    else {
+      await Promise.all([p.waitForURL(/acerca\.html/), p.locator('#acerca').click()]);
+      await Promise.all([p.waitForURL(/index\.html/), p.locator('a.be-btn[data-volver]').click()]);
+    }
+    await marked(p);
+    const back = await state(p);
+    assert.equal(back.sel, a.sel, `${screen.name}, ${way}: «${name}» is not selected after it`);
+    const released = await pressMark(p, screen, name);
+    assert.equal(released.sel, '', `${screen.name}, ${way}: the first click after it on «${name}» did not release it`);
+    await p.context().close();
+  }
+});
+
 test('1440: dragging moves time, the ruler moves the cursor, the wheel zooms at the pointer, the lanes scroll by their names or a vertical drag (Shift pans, Ctrl zooms)', async () => {
   const p = await open(DESKTOP, 't=50.5&v=40');
   await frames(p);

@@ -6,8 +6,6 @@ names:
 perspicacia: null
 disambiguation: El hermano Sóstenes que envía 1 Corintios con Pablo desde Éfeso (1Co 1:1). Perspicacia no le da artículo propio
   y solo ve posible que sea el jefe de la sinagoga de Corinto golpeado ante Galión.
-distinct_from:
-- sostenes
 date:
   from: 55
   to: 55
@@ -33,7 +31,7 @@ links:
 - title: 'Perspicacia: «Corintios, Cartas a los»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Corintios-Cartas-a-los/
   type: perspicacia
-checked_on: '2026-09-29'
+checked_on: '2026-10-02'
 status: verified
 relations:
 - type: accompanies

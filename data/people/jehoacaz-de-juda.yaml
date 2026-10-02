@@ -5,11 +5,13 @@ names:
 - name: Jehoacaz
 - name: Salum
   note: Nombre que le dan Jeremías 22:11 y 1 Crónicas 3:15.
-disambiguation: Rey de Judá, hijo de Josías; no es Jehoacaz de Israel, hijo de Jehú.
+disambiguation: Rey de Judá, hijo de Josías; no es Jehoacaz de Israel, hijo de Jehú, ni Ocozías de Judá, al que Crónicas llama
+  también Jehoacaz.
 distinct_from:
 - jehoacaz-de-israel
 - salum-de-israel
 - salum-hijo-de-ticva
+- ocozias-de-juda
 date:
   from: -627
   to: -627
@@ -114,5 +116,5 @@ relations:
   checked_on: '2026-09-30'
   status: verified
 perspicacia: 1200002372#3
-checked_on: '2026-09-30'
+checked_on: '2026-10-02'
 status: verified

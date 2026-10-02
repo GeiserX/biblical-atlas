@@ -17,9 +17,10 @@ date:
   chronology: tnm
   text: 54-68 e.c.
 disambiguation: El César y el Augusto de Hch 25 a 28, según las notas de estudio de Hch 25:8, 21 y 26:32. No es Octavio, el
-  primer César Augusto.
+  primer César Augusto, ni Claudio, el César anterior.
 distinct_from:
 - augusto
+- claudio
 not_claimed:
 - 'Que Pablo muriera por orden suya: Perspicacia «César» solo lo da como probable.'
 - 'Que Nerón juzgara a Pablo en persona: la nota de estudio de Hch 28:30 dice que quizá fue él o uno de sus representantes.'
@@ -49,5 +50,5 @@ links:
 - title: Hechos 27 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/hechos/27/
   type: bible
-checked_on: '2026-09-29'
+checked_on: '2026-10-02'
 status: verified

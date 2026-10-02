@@ -55,6 +55,13 @@ test('a one-chapter book is cited by verse: chapter 1, that verse', () => {
   assert.equal(url('3Jn 14'), `${J}3-juan/1/#v64001014`);
   assert.equal(url('Flm 1:23'), `${J}Filem%C3%B3n/1/#v57001023`);
 });
+test('a piece with no book is of the book before it, and its chip names that book', () => {
+  const cs = BE.citas('Hch 4:10, 11; 5:1–7:2; 9');
+  assert.deepEqual([...cs].map((c) => [c.libro.abr, c.cap, c.capFin, c.verso, c.versoFin, c.texto]),
+    [['Hch', 4, 4, 10, 11, 'Hch 4:10, 11'], ['Hch', 5, 7, 1, 2, 'Hch 5:1–7:2'], ['Hch', 9, 9, null, null, 'Hch 9']]);
+  assert.deepEqual([...BE.citas('5:1; Esd 2:1')].map((c) => c.texto), ['Esd 2:1'], 'a first piece with no book has none to take');
+});
+
 test('a whole chapter has no anchor', () => {
   assert.equal(url('Sl 34'), `${J}salmos/34/`);
   assert.equal(url('Esd 5:1-17'), `${J}esdras/5/`);

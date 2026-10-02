@@ -1,0 +1,8 @@
+# Pares de personas que comparten una entrada de name o names y no son homónimos. Cualquier otro par que comparte
+# nombre es un error de scripts/validate.py si no lleva distinct_from en las dos fichas o un same_as entre ellas.
+# Cada entrada exime al par solo del nombre de su campo name y dice por qué ese nombre no los hace homónimos;
+# si comparten otro nombre, la regla lo sigue mirando. Comprobado el 2026-10-02.
+
+- people: [juan-apostol, santiago-hijo-de-zebedeo]
+  name: Boanerges
+  reason: Es el sobrenombre que Jesús dio a los dos hermanos juntos, no el nombre de cada uno (Perspicacia «Boanerges»; Mr 3:17).

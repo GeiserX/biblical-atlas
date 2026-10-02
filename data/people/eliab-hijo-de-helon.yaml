@@ -4,7 +4,8 @@ name: Eliab
 names:
 - name: Eliab
 perspicacia: 1200001292#1
-disambiguation: Eliab hijo de Helón, jefe de Zabulón; no el rubenita padre de Datán y Abiram ni el hermano mayor de David.
+disambiguation: Eliab hijo de Helón, jefe de Zabulón; no el rubenita padre de Datán y Abiram, ni el hermano mayor de David,
+  ni el levita antepasado de Samuel, llamado también Elihú.
 summary: Zabulonita, hijo de Helón. Uno de los doce jefes que Jehová nombró para ayudar en el censo del Sinaí; mandaba el
   ejército de Zabulón, en la división de Judá.
 reason: Perspicacia «Eliab», núm. 1; Nú 1:9, 16; 2:7.
@@ -50,8 +51,9 @@ relations:
   reason: 'Nú 1:4, 9, 44: fue uno de los doce jefes que estuvieron con Moisés y Aarón para registrar a Israel.'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-02'
 status: verified
 distinct_from:
 - eliab-hijo-de-palu
 - eliab-hijo-de-jese
+- elihu-hijo-de-tohu

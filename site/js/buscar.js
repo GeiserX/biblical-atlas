@@ -155,8 +155,11 @@ function irAMes(t, escala) {
 }
 function enlaceMes(m) {
   const vista = BE.textoHash ? BE.textoHash() : location.hash.slice(1);
+  // Desde el mapa, volver=atras, como los enlaces de linea.js (js/volver.js); desde la portada, no.
+  const portada = vista.split('&').includes('portada=1');
+  BE.escribirHash();   // la entrada del mapa se queda con su vista: «Volver al mapa» vuelve a ella
   BE.historia.dejar();
-  location.href = `calendario.html${location.search}#desde=${encodeURIComponent(vista)}&mes=${encodeURIComponent(m.id)}`;
+  location.href = `calendario.html${location.search}#desde=${encodeURIComponent(vista)}&mes=${encodeURIComponent(m.id)}${portada ? '' : '&volver=atras'}`;
 }
 function preguntasMes(nq) {
   // «segundo Adar» es lo que quiere decir Veadar; «de adar» es como lo dice quien lo oyó y no lo leyó.
@@ -438,7 +441,9 @@ function iniciarBusqueda() {
     else if (e.key === 'Enter') { e.preventDefault(); elegir(activo); }
     else if (e.key === 'Escape') { e.preventDefault(); e.stopPropagation(); limpiarSeleccion(); q.blur(); }
   });
-  q.addEventListener('blur', () => setTimeout(cerrarResultados, 150));
+  // La lista se cierra un momento después de salir de la caja, para que la pulsación en un resultado llegue antes. Si
+  // para entonces se ha vuelto a la caja (otra búsqueda escrita enseguida), la lista nueva se queda.
+  q.addEventListener('blur', () => setTimeout(() => { if (document.activeElement !== q) cerrarResultados(); }, 150));
   $('#resultados').addEventListener('pointerdown', (e) => {
     const s = e.target.closest('[data-sugerencia]');
     if (s) { e.preventDefault(); q.value = s.dataset.sugerencia; resultados = buscar(q.value); activo = 0; pintarResultados(); return; }
@@ -568,8 +573,9 @@ const historia = (() => {
     ultimoIndice = indice();
     pintarBotones();
   }
-  /** base.js, al escribir la dirección: el nombre de la vista de ahora pasa a la entrada y al título de la pestaña.
-      Devuelve el estado que hay que escribir, o null si no ha cambiado. */
+  /** base.js, al escribir la dirección: el nombre de la vista de ahora pasa a la entrada y al título de la pestaña, y
+      la marca de la línea pulsada la última vez, a la entrada. Devuelve el estado que hay que escribir, o null si no ha
+      cambiado. */
   function sello() {
     if (!BE.D) return null;
     revisar(false);   // una vista que cambió sin pintarse todavía («Ahora mismo») tiene su entrada antes de escribirse
@@ -578,11 +584,30 @@ const historia = (() => {
     const nombre = H.distinctName(H.viewName(v), H.around(actual, leerVisitas()).back.name, v.date);
     // La portada se decide por la vista, no por la dirección: aún es la de la vista de antes.
     ponerTitulo(nombre, !!v.landing);
-    const igual = nombre === actual.name && history.state?.visit === actual.visit && history.state?.step === actual.step;
-    if (!igual) { const r = H.rename(actual, leerVisitas(), nombre); actual = r.state; guardarVisitas(r.visits); }
+    const marca = BE.marcaPulsada?.() ?? null, carril = marca ? BE.carrilPulsado?.() ?? null : null;
+    const igual = nombre === actual.name && marca === (actual.mark ?? null) && carril === (actual.lane ?? null)
+      && history.state?.visit === actual.visit && history.state?.step === actual.step;
+    if (!igual) { const r = H.rename(actual, leerVisitas(), nombre); actual = H.withMark(r.state, marca, carril); guardarVisitas(r.visits); }
     pintarBotones();
     return igual ? null : actual;
   }
+  /** mapa.js, cuando el mapa se para: la entrada de ahora guarda su encuadre, sin crear otra ni tocar la dirección.
+      Una vista que cambió sin su entrada todavía la recibe antes, como en sello(): el encuadre es de la vista nueva. */
+  function encuadre(marco) {
+    if (!BE.D || !actual) return;
+    if (revisar(false)) BE.escribirHash();
+    // Un cambio de tamaño también acaba aquí, con el mismo centro y el mismo zoom: no se escribe nada. Safari no deja
+    // más de 100 escrituras en el historial cada 10 s, y una ventana arrastrada por su borde las gastaba.
+    const nuevo = H.withFrame(actual, marco), a = actual.frame, b = nuevo.frame;
+    if (a && b && a.lon === b.lon && a.lat === b.lat && a.zoom === b.zoom
+      && history.state?.visit === actual.visit && history.state?.step === actual.step) return;
+    actual = nuevo;
+    try { history.replaceState(actual, '', location.href); } catch { /* escritura rechazada: la entrada sigue en memoria */ }
+  }
+  /** Al llegar a una entrada (Atrás, Adelante, una recarga, la vuelta desde otra página), la línea recupera la marca
+      que se pulsó en ella, y el carril de la persona donde se pulsó: el primer clic en esa marca la suelta, como antes
+      de irse. */
+  function llegar() { BE.ponerMarcaPulsada?.(actual?.mark ?? null, actual?.lane ?? null); }
   /** Salir de la página por un enlace: el navegador tira las entradas de delante, y aquí también. */
   function dejar() { guardarVisitas(H.cutForward(actual, leerVisitas())); }
 
@@ -634,6 +659,7 @@ const historia = (() => {
     quedarse();
     if (BE.D) {
       BE.aplicarHash(false);
+      llegar();
       // Una entrada que llega sin nombre (un enlace compartido, una pestaña de antes) lo recibe ya, y el título de la
       // pestaña con él.
       if (!actual.name) BE.escribirHash();
@@ -675,6 +701,9 @@ const historia = (() => {
     try { u = new URL(a.getAttribute('href'), document.baseURI); } catch { return; }
     if (u.protocol !== 'http:' && u.protocol !== 'https:') return;
     if (u.origin === location.origin && u.pathname === location.pathname && u.search === location.search) return;   // un «#»: llega por popstate
+    // La entrada se queda con la vista de ahora, no con la de hace un cuarto de segundo: «Volver al mapa» (y el Atrás
+    // del navegador) vuelven a ella.
+    if (BE.D) BE.escribirHash();
     dejar();
   });
   pintarBotones();
@@ -684,7 +713,9 @@ const historia = (() => {
     /** Entrar desde la portada: una sola entrada nueva, sea cual sea el destino y tarde lo que tarde. Se guarda la de
         la portada; fn pone el destino, y lo que cambie después sin que la persona toque nada es parte de él. */
     entrar(fn) { empujar(); quedarse(); fn(); BE.programar(); },
-    empujar, sello, dejar, pareja,
+    /** El encuadre que guarda la entrada de ahora, o null: base.js y mapa.js lo ponen al llegar a ella. */
+    marco: () => actual?.frame ?? null,
+    empujar, sello, dejar, pareja, encuadre, llegar,
   };
 })();
 

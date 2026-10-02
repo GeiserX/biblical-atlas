@@ -4,8 +4,8 @@ name: Eliab
 names:
 - name: Eliab
 perspicacia: 1200001292#2
-disambiguation: El rubenita padre de Datán y Abiram; no el principal de Zabulón hijo de Helón ni el hermano mayor de David,
-  que Perspicacia «Eliab» trata aparte.
+disambiguation: El rubenita padre de Datán y Abiram; no el principal de Zabulón hijo de Helón, ni el hermano mayor de David,
+  ni el levita antepasado de Samuel, que Perspicacia «Eliab» trata aparte.
 summary: Rubenita, hijo de Palú. Sus hijos Datán y Abiram se sumaron a la rebelión de Coré y murieron con sus familias cuando
   se abrió la tierra. Nú 26:9 le da otro hijo, Nemuel.
 reason: Perspicacia «Eliab», núm. 2; Nú 16:1, 12; 26:8, 9.
@@ -49,8 +49,9 @@ history:
 - date: '2026-09-29'
   change: El otro hijo, Nemuel, lo da el propio texto (Nú 26:9), no Perspicacia.
   source: numeros-26
-checked_on: '2026-09-29'
+checked_on: '2026-10-02'
 status: verified
 distinct_from:
 - eliab-hijo-de-helon
 - eliab-hijo-de-jese
+- elihu-hijo-de-tohu
