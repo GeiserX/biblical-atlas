@@ -733,7 +733,7 @@ span.etiqueta-deducido, span.etiqueta-incierto, span.etiqueta-texto { border-rad
 }
 
 /* ---------- Marca del tipo de fuente, sin jerga ---------- */
-/* Un punto lleno: Biblia o publicación de jw.org. Un aro: otra fuente que jw.org ha usado. El nombre va en el texto
+/* Un punto lleno: la Biblia o una publicación que la explica. Un aro: otra fuente que acompaña. El nombre va en el texto
    emergente y en aria-label (ficha.js, marcaNivel). La forma distingue los dos sin depender solo del color. */
 .marca-nivel { display: inline-block; flex: none; width: 10px; height: 10px; border-radius: 50%; vertical-align: 0; background: var(--tier1); }
 .marca-nivel--2 { background: transparent; box-shadow: inset 0 0 0 2px var(--tier2); }
@@ -742,7 +742,7 @@ span.etiqueta-deducido, span.etiqueta-incierto, span.etiqueta-texto { border-rad
 .insignia--2 summary { background: transparent; }
 .insignia summary:hover { background: var(--paper-2); }
 .insignia-pop .marca-nivel { margin-right: 4px; }
-/* Las píldoras que quedan («Biblia y jw.org», «Historia y arqueología», la leyenda, las fuentes de una fecha secular)
+/* Las píldoras que quedan («Fuentes principales», «Historia y arqueología», la leyenda, las fuentes de una fecha secular)
    llevan la misma marca en lugar del número 1 o 2 del kit. */
 .be-tier--1::before, .be-tier--2::before { content: ""; width: 10px; height: 10px; }
 .be-tier--2::before { background: transparent; box-shadow: inset 0 0 0 2px var(--tier2); }

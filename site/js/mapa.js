@@ -145,11 +145,11 @@ function apagar(hex, f = 0.5) {
 // ---------------------------------------------------------------------------
 const CAND = {
   seguro: { color: cssVar('--tier1') || '#2f5d50', rotulo: 'Seguro', corto: 'seguro', trazo: 'solido' },
-  favorecido_nivel_1: { color: '#7a5c8e', rotulo: 'Favorecido por jw.org', corto: 'favorecido', trazo: 'raya' },
-  tradicion: { color: '#86601c', rotulo: 'Tradición que cita jw.org', corto: 'tradición', trazo: 'raya' },
-  alternativa: { color: '#8a8295', rotulo: 'Otra propuesta que cita jw.org', corto: 'otra propuesta', trazo: 'raya' },
+  favorecido_nivel_1: { color: '#7a5c8e', rotulo: 'Favorecido por la fuente principal', corto: 'favorecido', trazo: 'raya' },
+  tradicion: { color: '#86601c', rotulo: 'Tradición que cita la fuente principal', corto: 'tradición', trazo: 'raya' },
+  alternativa: { color: '#8a8295', rotulo: 'Otra propuesta que cita la fuente principal', corto: 'otra propuesta', trazo: 'raya' },
   solo_nivel_2: { color: '#86601c', rotulo: 'Solo lo propone otra fuente', corto: 'solo otra fuente', trazo: 'punto' },
-  descartado_nivel_1: { color: '#7b6f60', rotulo: 'Descartado por jw.org', corto: 'descartado', trazo: 'punto' },
+  descartado_nivel_1: { color: '#7b6f60', rotulo: 'Descartado por la fuente principal', corto: 'descartado', trazo: 'punto' },
 };
 const candidatosDe = (l) => (Array.isArray(l?.candidatos) ? l.candidatos : null);
 /** Candidatos que se ven con los filtros actuales, con su índice original. */
@@ -501,7 +501,7 @@ function imagenRayado(color, estado) {
     viajes van uno detrás de otro, de 34 a 65, y en cada fecha se ve solo el que recorre (BE.viajeActual). */
 const viajeEnEpoca = (v, t) => { const tr = tramo(v.fecha); return !!tr && t >= tr[0] && t < tr[1] + 1; };
 /** Vértice de una parada en la ruta de un viaje: el punto de su lugar o, si el lugar es incierto, su candidato
-    preferido de los que se ven (seguro, favorecido por jw.org, tradición, otra propuesta, otra fuente; nunca uno
+    preferido de los que se ven (seguro, favorecido por la fuente principal, tradición, otra propuesta, otra fuente; nunca uno
     descartado), o el centro de su zona. { c: [lon, lat], incierto } o null si no hay ninguno. Sin esto, Perea, Efraín o
     Sodoma dejaban su viaje sin línea. */
 const PREFERENCIA_RUTA = ['seguro', 'favorecido_nivel_1', 'tradicion', 'alternativa', 'solo_nivel_2'];
@@ -1389,7 +1389,7 @@ function pintarLeyenda(V, w, g) {
   if (hallazgos) filas.push('<div class="be-legend__row"><span class="leyenda-hallazgo"></span>Hallazgo arqueológico</div>');
   if (estimada) filas.push('<div class="be-legend__row"><span class="leyenda-estimada"></span>Posición estimada (tiempo narrativo)</div>');
   if (F.capas.viajes && !S && !dePablo && !rastro.length && !viajeros) filas.push('<div class="be-legend__row be-muted">Ningún viaje cerca de esta fecha</div>');
-  if (F.nivel1) filas.push('<div class="be-legend__row"><span class="be-tier be-tier--1" data-n="1">Solo la Biblia y jw.org</span></div>');
+  if (F.nivel1) filas.push('<div class="be-legend__row"><span class="be-tier be-tier--1" data-n="1">Solo fuentes principales</span></div>');
   const cabecera = titulo ? `${esc(titulo.nombre)} · ${esc(fechaCorta(titulo.fecha))}` : selIncierto ? `${esc(selIncierto.nombre)} · cómo dibujamos lo incierto`
     : dePablo ? 'Viajes de Pablo' : rastro.length ? 'Viajes' : 'Leyenda';
   $('#leyenda').innerHTML = `<div class="be-card__eyebrow">${cabecera}</div>${filas.join('')}`;
@@ -1544,7 +1544,7 @@ function pintarMenuCapas() {
   if (!menu) return;
   const radio = (grupo, [k, t], actual) => `<label class="capa-opcion"><input type="radio" name="${grupo}" value="${k}"${actual === k ? ' checked' : ''}> ${esc(t)}</label>`;
   menu.innerHTML = `<fieldset><legend class="be-card__eyebrow">Capas</legend>${CAPAS.map(([k, t]) => `<label class="capa-opcion"><input type="checkbox" name="capa" value="${k}"${F.capas[k] ? ' checked' : ''}> ${esc(t)}${k === 'pendientes' ? ' <span class="muestra-pendiente" aria-hidden="true"></span>' : ''}</label>`).join('')}</fieldset>
-    <fieldset><legend class="be-card__eyebrow">Fuentes</legend><label class="capa-opcion"><input type="checkbox" name="nivel1"${F.nivel1 ? ' checked' : ''}> Solo la Biblia y jw.org</label></fieldset>
+    <fieldset><legend class="be-card__eyebrow">Fuentes</legend><label class="capa-opcion"><input type="checkbox" name="nivel1"${F.nivel1 ? ' checked' : ''}> Solo fuentes principales</label></fieldset>
     <fieldset><legend class="be-card__eyebrow">Nombres en el mapa</legend>${NOMBRES.map((o) => radio('nombres', o, F.nombres)).join('')}</fieldset>
     <fieldset><legend class="be-card__eyebrow">Cartas</legend>${FILTRO_CARTAS.map((o) => radio('cartas', o, F.cartas)).join('')}</fieldset>`;
   document.querySelector('#capas-boton')?.classList.toggle('con-filtros', CAPAS.some(([k]) => !F.capas[k]) || F.nivel1 || F.cartas !== 'cerca');

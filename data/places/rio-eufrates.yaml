@@ -6,21 +6,21 @@ names:
 - name: el Río
   note: Así lo llama Gé 31:21; la nota al pie dice que es el Éufrates.
 type: river
-lat: 35.95
-lon: 38.16667
+lat: 36.4402
+lon: 38.2056
 precision: zone
-coord_source: openbible:aab8f2d
-coord_url: https://www.openbible.info/geo/ancient/aab8f2d/tiphsah-1
-coord_note: 'Punto de Dibseh en la ficha de Tifsah de OpenBible, a orillas del río (Perspicacia «Tifsah»). Por coordenadas queda
-  al sur de Carquemis: tramo de Jer 13 y de la frontera norte. El río sigue hasta el golfo Pérsico.'
+coord_source: calculation
+coord_url: https://github.com/nvkelso/natural-earth-vector/blob/v5.1.2/geojson/ne_10m_rivers_lake_centerlines.geojson
+coord_note: 'Cálculo propio: mitad, sobre el cauce actual de Natural Earth, de los 122 km entre Carquemis y Tifsá. Dista 47 km
+  de Carquemis y 55 de Tifsá. Perspicacia sitúa a Jeremías al sur de Carquemis; Tifsá como final es nuestro.'
 summary: Cuarto brazo del río de Edén y el río más largo del suroeste de Asia, de unos 2.700 km. Nace en el este de Turquía
   y cruza Siria y Mesopotamia hasta el golfo Pérsico.
 reason: 'Perspicacia «Éufrates», párr. 2 y apartados «Afluentes y curso del río» y «Frontera; Jeremías estuvo allí»; Gé 2:14.
-  El punto marca el tramo sirio (Perspicacia «Tifsah», núm. 1). Coordenada de OpenBible: solo tomamos el punto.'
+  El punto es nuestro: mitad del cauce entre Carquemis y Tifsá, para que no tape a Tifsá.'
 sources:
 - it-eufrates
 - it-tifsah
-- openbible-geo
+- natural-earth-rios
 - genesis-2
 - genesis-15
 - genesis-31
@@ -49,5 +49,5 @@ links:
 - title: Salmo 72 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/salmos/72/
   type: bible
-checked_on: '2026-10-01'
+checked_on: '2026-10-02'
 status: verified
