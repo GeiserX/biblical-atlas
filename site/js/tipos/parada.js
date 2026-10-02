@@ -13,7 +13,9 @@ const momentoParada = (id) => { const s = buscaParada(id); return (s.a + s.b) / 
 
 function fichaParada(s, w) {
   const v = s.viaje;
-  const ordinal = `Parada ${s.i + 1} de ${s.n}`;
+  // Un destino en paralelo no es la parada que sigue a la anterior: la ficha lo dice en vez de su número de orden.
+  const paralelo = s.p.branches_from != null ? BE.frasesParalelos(v).find((f) => f.desde?.orden === s.p.branches_from) : null;
+  const ordinal = paralelo ? `Destino en paralelo desde ${BE.L[paralelo.desde.lugar]?.nombre || paralelo.desde.lugar}` : `Parada ${s.i + 1} de ${s.n}`;
   const enCamino = w && !w.parada && w.sig;
   const eyebrow = w ? (enCamino ? `${ordinal} · De camino a ${w.sig.lugar.nombre}` : `${ordinal} · Dónde está ${BE.nombreDueno(v)}`) : ordinal;
   const f = s.p.fecha || {};
@@ -25,6 +27,7 @@ function fichaParada(s, w) {
       <div class="be-card__eyebrow"><span class="icono-lugar" aria-hidden="true"></span>${esc(eyebrow)}</div>
       <h2 class="be-card__title"><button type="button" class="enlace-titulo" data-sel="lugar:${esc(s.lugar.id)}">${esc(s.lugar.nombre)}</button></h2>
       ${BE.nombresHtml(s.lugar)}
+      ${paralelo ? `<p class="be-card__sub paralelos">${esc(paralelo.texto)}</p>` : ''}
       ${s.p.nota ? `<p class="be-card__body">${esc(s.p.nota)}</p>` : ''}
       ${s.lugar.resumen ? `<p class="be-card__body be-muted">${esc(s.lugar.resumen)}</p>` : ''}
       <div class="fila-chips">${BE.chipsCitas(s.p.referencia)}<span class="be-chrono be-chrono--tnm">${esc(s.narrativa ? fechaCorta(f) : (f.texto || fechaCorta(f)))}</span>

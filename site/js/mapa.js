@@ -568,8 +568,11 @@ function geoRutas(w) {
     const elegido = E.sel?.tipo === 'viaje' && E.sel.id === v.id;
     const ver = elegido || (F.capas.viajes && quien !== 'pablo' && viajeEnEpoca(v, E.t));
     if (!ver) continue;
-    const pts = [...(v.paradas || [])].sort((a, b) => a.orden - b.orden).map((p) => { const x = verticeRuta(BE.L[p.lugar]); return x && { ...x, deducida: deducida(p) }; }).filter(Boolean);
-    if (pts.length < 2) continue;
+    // Los destinos en paralelo (`branches_from`) no van en la línea: cada uno lleva su trazo desde su parada de salida.
+    const ordenadas = [...(v.paradas || [])].sort((a, b) => a.orden - b.orden);
+    const ramas = ordenadas.filter((p) => p.branches_from != null);
+    const pts = ordenadas.filter((p) => p.branches_from == null).map((p) => { const x = verticeRuta(BE.L[p.lugar]); return x && { ...x, deducida: deducida(p), orden: p.orden }; }).filter(Boolean);
+    if (pts.length < 2 && !ramas.length) continue;
     // Sin elegirlo, un viaje solo se ve mientras duran sus paradas y un año más (viajeEnEpoca, ventanaViaje): en curso o
     // ya pasado, nunca por venir. El viaje elegido va entero y en su color aunque esté fuera de su fecha.
     const estado = elegido || E.t < ventanaViaje(v)[1] ? 'actual' : 'pasado';
@@ -577,14 +580,25 @@ function geoRutas(w) {
     const props = { viaje: v.id, estado, color: estado === 'pasado' ? apagar(c, 0.45) : c };
     // Un trazo por cada tramo seguido del mismo tipo: firme entre lugares con punto, a trazos si toca un lugar incierto
     // y de puntos si llega a una parada deducida o sale de ella.
-    let tramoRuta = [pts[0].c], incierto = null, deducido = null;
-    for (let k = 1; k < pts.length; k++) {
-      const inc = pts[k - 1].incierto || pts[k].incierto, ded = pts[k - 1].deducida || pts[k].deducida;
-      if (incierto !== null && (inc !== incierto || ded !== deducido)) { rastro.push(linea(tramoRuta, { ...props, incierto, deducido })); tramoRuta = [pts[k - 1].c]; }
-      incierto = inc; deducido = ded;
-      tramoRuta.push(pts[k].c);
+    if (pts.length >= 2) {
+      let tramoRuta = [pts[0].c], incierto = null, deducido = null;
+      for (let k = 1; k < pts.length; k++) {
+        const inc = pts[k - 1].incierto || pts[k].incierto, ded = pts[k - 1].deducida || pts[k].deducida;
+        if (incierto !== null && (inc !== incierto || ded !== deducido)) { rastro.push(linea(tramoRuta, { ...props, incierto, deducido })); tramoRuta = [pts[k - 1].c]; }
+        incierto = inc; deducido = ded;
+        tramoRuta.push(pts[k].c);
+      }
+      rastro.push(linea(tramoRuta, { ...props, incierto, deducido }));
     }
-    rastro.push(linea(tramoRuta, { ...props, incierto, deducido }));
+    // Un trazo por destino en paralelo, desde su parada de salida o, si esa no tiene dónde dibujarse, desde la última
+    // de la línea antes de ella. Con las mismas reglas: a trazos hacia un lugar incierto, de puntos si toca una parada
+    // pendiente. Un destino sin dónde dibujarse no lleva trazo.
+    for (const p of ramas) {
+      const b = verticeRuta(BE.L[p.lugar]);
+      const a = [...pts].reverse().find((x) => x.orden <= p.branches_from);
+      if (!a || !b) continue;
+      rastro.push(linea([a.c, b.c], { ...props, incierto: a.incierto || b.incierto, deducido: a.deducida || deducida(p), rama: a.orden }));
+    }
   }
   return { hecho, falta, rastro, V };
 }
@@ -1430,7 +1444,8 @@ function pintarLeyenda(V, w, g) {
   const apagado = g.rastro.some((f) => f.properties.estado !== 'actual');   // algún rastro en gris
   const repiten = viajesRepetidos(g);
   const deducidos = [...g.rastro, ...g.hecho, ...g.falta].some((f) => f.properties.deducido);
-  const clave = `${repiten.map((v) => v.id)}|${apagado}|${deducidos}|${V?.id}|${estimada}|${E.sel?.tipo}|${E.sel?.id}|${pendiente}|${escritores}|${inciertos}|${formas}|${hallazgos}|${F.capas.viajes}|${F.nivel1}|${rastro.map((v) => v.id)}|${dePablo}|${viajeros}`;
+  const abanico = g.rastro.some((f) => f.properties.rama != null);
+  const clave = `${repiten.map((v) => v.id)}|${apagado}|${deducidos}|${abanico}|${V?.id}|${estimada}|${E.sel?.tipo}|${E.sel?.id}|${pendiente}|${escritores}|${inciertos}|${formas}|${hallazgos}|${F.capas.viajes}|${F.nivel1}|${rastro.map((v) => v.id)}|${dePablo}|${viajeros}`;
   if (clave === pintarLeyenda.clave) return;
   pintarLeyenda.clave = clave;
   const filas = [];
@@ -1456,6 +1471,7 @@ function pintarLeyenda(V, w, g) {
     }
   }
   if (deducidos) filas.push('<div class="be-legend__row"><span class="be-legend__line be-legend__line--deducida"></span>De puntos: tramo hacia una parada pendiente de verificar</div>');
+  if (abanico) filas.push('<div class="be-legend__row"><svg class="leyenda-abanico" viewBox="0 0 22 12" aria-hidden="true"><path d="M2 6 20 1M2 6h18M2 6l18 5"/></svg>En abanico: destinos a los que el grupo llega a la vez, sin orden entre ellos</div>');
   if (repiten.length) filas.push(`<div class="be-legend__row"><span class="leyenda-repite" aria-hidden="true">↻</span>Se repite cada año: ${repiten.map((v) => esc(v.nombre)).join(', ')}</div>`);
   if (escritores.length) {
     filas.push(`<div class="be-legend__row"><span class="be-legend__line be-legend__line--letter" style="--carta:${colorEscritor(escritores[0])}"></span>Carta ${escritores.length > 1 ? `de ${esc(nombrePersona(escritores[0]))}` : 'escrita cerca de esta fecha'}</div>`);

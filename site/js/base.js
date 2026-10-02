@@ -696,14 +696,57 @@ function acompanantes(v, orden = null) {
   return [...new Set(v?.companeros || [])].filter((id) => {
     if (orden == null) return true;
     const ts = tramos.filter((c) => c.persona === id);
-    return !ts.length || ts.some((c) => c.desde <= orden && orden <= c.hasta);
+    return !ts.length || ts.some((c) => enTramo(v, c, orden));
   });
+}
+/** Destinos en paralelo (`branches_from`, README de la investigación, «Viajes»): Map(orden → orden de la parada de la
+    que se llega a ella, o null en la primera). Una parada con `branches_from` sale de la que nombra; las demás siguen a
+    la anterior que no lo lleva. Sin la clave, cada parada sigue a la anterior, como siempre. */
+const conRamas = (v) => (v?.paradas || []).some((p) => p.branches_from != null);
+function anterioresParada(v) {
+  const out = new Map();
+  let tronco = null;
+  for (const p of [...(v?.paradas || [])].sort((a, b) => a.orden - b.orden)) {
+    if (p.branches_from == null) { out.set(p.orden, tronco); tronco = p.orden; } else out.set(p.orden, p.branches_from);
+  }
+  return out;
+}
+/** ¿Va en la parada `orden` quien tiene el tramo {desde, hasta}? Sin destinos en paralelo, las paradas de desde a hasta;
+    con ellos, las de la ruta de desde a hasta, que sigue una sola rama (validate.py, validar_viaje). */
+function enTramo(v, c, orden) {
+  if (!conRamas(v)) return c.desde <= orden && orden <= c.hasta;
+  const ant = anterioresParada(v), vistas = new Set();
+  for (let x = c.hasta; x != null && !vistas.has(x); x = ant.get(x)) {
+    vistas.add(x);
+    if (x === c.desde) return vistas.has(orden);
+  }
+  return false;
+}
+/** Los destinos en paralelo de un viaje, agrupados por la parada de la que salen: [{ desde, destinos }], con las paradas
+    de los datos en su orden. Vacío en un viaje sin `branches_from`. */
+function destinosParalelos(v) {
+  const por = new Map();
+  for (const p of [...(v?.paradas || [])].sort((a, b) => a.orden - b.orden)) {
+    if (p.branches_from == null) continue;
+    if (!por.has(p.branches_from)) por.set(p.branches_from, []);
+    por.get(p.branches_from).push(p);
+  }
+  return [...por].map(([o, destinos]) => ({ desde: (v.paradas || []).find((p) => p.orden === o), destinos }));
+}
+/** «Desde Samaria se llega a la vez a Halá, Habor, Gozán y Media», una frase por cada parada de la que salen destinos en
+    paralelo. Lo dicen la ficha del viaje y la de cada uno de esos destinos. */
+function frasesParalelos(v) {
+  const nombre = (p) => BE.L?.[p?.lugar]?.nombre || p?.lugar || '';
+  const lista = (xs) => (xs.length > 1 ? `${xs.slice(0, -1).join(', ')} y ${xs.at(-1)}` : xs[0] || '');
+  return destinosParalelos(v).map(({ desde, destinos }) => ({ desde, destinos,
+    texto: `Desde ${nombre(desde)} se llega a la vez a ${lista(destinos.map(nombre))}: el grupo se reparte y el texto no da orden entre esos destinos.` }));
 }
 
 Object.assign(BE, {
   // utilidades
   MESES, ES_FILE, T_INICIAL, VISTA_INICIAL, EXTERNO, ponerLibros, norm, esc, $, clamp, fmtAnio, fmtCursor, fmtDia, tramo, fechaCorta,
   libro, citas, mercY, latDeY, interpolar, duenoViaje, esGrupo, nombreDueno, nombreDeDueno, acompanantes,
+  conRamas, anterioresParada, destinosParalelos, frasesParalelos,
   // estado, registro y selección
   E, tipo, tipos: TIPOS, existe, parseSel, selTexto, implicados, momentoDe, nombreSel, seleccionar, limpiarSeleccion,
   // cursor, reproducción, dirección y pintado
