@@ -751,6 +751,35 @@ test('each entry keeps the map where it was left: Back, Forward and a reload bri
   }
 });
 
+test('a tour entry keeps the map where it was left: Back into it from another selection and a reload do not reframe its stop', async () => {
+  // The tour opens one frame after its entry is read, and framing its stop then overwrote the frame the entry kept. The
+  // browser's Back showed it on every run; the site's button did not always.
+  for (const [screen, pre] of [[DESKTOP, ''], [PHONE, 'hoja-']]) {
+    const who = pre || 'desktop';
+    const page = await openPage(screen, { hash: 't=50.3000', map: true });
+    await search(page, 'Pablo');
+    await search(page, 'Las cartas de Pablo y las ciudades');
+    await still(page);
+    const framed = await frame(page);
+    await page.evaluate(({ lon, lat }) => window.__be.map.jumpTo({ center: [lon + 0.3, lat + 0.2], zoom: 9.5 }), framed);
+    await still(page);
+    const left = await frame(page);
+    await search(page, 'Corinto');
+    await still(page);
+    await page.goBack();
+    await settle(page);
+    await still(page);
+    assert.equal((await snap(page)).sel, 'recorrido:cartas-y-ciudades');
+    sameFrame(await frame(page), left, `${who}, Back into the tour`);
+    sameFrame((await hist(page, pre)).state.frame, left, `${who}, the entry's frame after Back`);
+    await page.reload({ waitUntil: 'domcontentloaded' });
+    await ready(page, { map: true });
+    assert.equal((await snap(page)).sel, 'recorrido:cartas-y-ciudades');
+    sameFrame(await frame(page), left, `${who}, reload of the tour entry`);
+    assert.deepEqual(page.pageErrors, []);
+  }
+});
+
 test('«Volver al mapa» goes back to the entry the map was on, with its Back; from the landing, a shared link or a section it stays a link', async () => {
   const volver = (page) => Promise.all([page.waitForURL(/index\.html/, { waitUntil: 'domcontentloaded' }), page.locator('a.be-btn[data-volver]').click()]);
   const page = await openPage(DESKTOP, { hash: 't=50.3000' });
