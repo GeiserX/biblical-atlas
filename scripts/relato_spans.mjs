@@ -6,8 +6,8 @@
 //
 // data.json defaults to site/data.json (python3 scripts/build.py writes it). Columns: kind (series run or journey), years
 // on the timeline, events or stops, chapters, first and last passage, id, the date as the data writes it.
-// --dump writes where every event, letter and stop falls, rounded to 1e-6 years; --compare lists what moved between two
-// dumps and exits 1 if anything did.
+// --dump writes where every event, letter, journey stop and person's stay falls, rounded to 1e-6 years; --compare lists
+// what moved between two dumps and exits 1 if anything did.
 import fs from 'node:fs';
 import path from 'node:path';
 import vm from 'node:vm';
@@ -35,9 +35,9 @@ function load(file) {
 function compare(a, b) {
   const [A, B] = [a, b].map((f) => JSON.parse(fs.readFileSync(f, 'utf8')));
   let n = 0;
-  for (const k of ['events', 'letters', 'stops']) {
-    for (const id of new Set([...Object.keys(A[k]), ...Object.keys(B[k])])) {
-      const x = A[k][id], y = B[k][id];
+  for (const k of ['events', 'letters', 'stops', 'stays']) {
+    for (const id of new Set([...Object.keys(A[k] || {}), ...Object.keys(B[k] || {})])) {
+      const x = A[k]?.[id], y = B[k]?.[id];
       if (JSON.stringify(x) === JSON.stringify(y)) continue;
       n++;
       const f = (w) => (w ? w.map((t) => t.toFixed(3)).join('..') : '-');
@@ -61,10 +61,12 @@ const owners = new Set(D.viajes.map(BE.duenoViaje));
 const stops = new Map();
 for (const p of owners) for (const s of BE.estancias(p)) if (s.viaje) { if (!stops.has(s.viaje.id)) stops.set(s.viaje.id, []); stops.get(s.viaje.id).push(s); }
 if (dump) {
-  const out = { events: {}, letters: {}, stops: {} };
+  const out = { events: {}, letters: {}, stops: {}, stays: {} };
   for (const e of D.eventos) out.events[e.id] = BE.ventanaEvento(e)?.map(r6) || null;
   for (const c of D.cartas || []) out.letters[c.id] = BE.ventanaCarta(c)?.map(r6) || null;
   for (const ss of stops.values()) for (const s of ss) out.stops[s.key] = [r6(s.a), r6(s.b)];
+  // A person's stays: the copies of events and relations that place them (journey stops are already above).
+  for (const p of Object.keys(D.personas || {})) for (const s of BE.estancias(p)) if (!s.viaje) out.stays[`${p} ${s.key}`] = [r6(s.a), r6(s.b)];
   fs.writeFileSync(dump, JSON.stringify(out));
 }
 
