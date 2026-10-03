@@ -36,12 +36,13 @@ links:
 relations:
 - type: succeeds
   person: ibzan
+  office: judge
   inferred: false
   sources:
   - jueces-12
   - it-elon
   reason: 'Jue 12:11: juzgó a Israel después de Ibzán.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-03'
   status: verified
 - type: died_in
   place: ayalon-de-zabulon

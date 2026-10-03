@@ -123,6 +123,7 @@ relations:
   status: verified
 - type: succeeds
   person: aaron
+  office: high_priest
   date:
     from: -1473
     to: -1473
@@ -139,7 +140,7 @@ relations:
   - deuteronomio-10
   reason: 'Nú 20:25-28: Moisés le pone las ropas de Aarón antes de morir este; Perspicacia «Eleazar», núm. 1: así pasó a ser
     sumo sacerdote.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-03'
   status: verified
 history:
 - date: '2026-09-29'
