@@ -1,0 +1,72 @@
+name: sitio
+
+# Las pruebas de tests/site en un Chromium de verdad, en cada PR y en cada push a main. El repositorio es público: los
+# runners de GitHub no cuestan nada, así que nada de esto corre en máquinas propias. Si una prueba falla, las trazas de
+# Playwright de su fichero se suben como artefacto «trazas» (se abren con `npx playwright-core show-trace <fichero>.zip`).
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: sitio-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  PLAYWRIGHT_VERSION: 1.63.0
+
+jobs:
+  navegador:
+    name: pruebas del sitio
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          # timeline-placement.test.mjs compara con el código de un commit antiguo: necesita la historia entera.
+          fetch-depth: 0
+          persist-credentials: false
+
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements.txt
+      - run: pip install -r requirements.txt
+      - name: Compilar los datos
+        run: python3 scripts/build.py
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: "24"
+      - name: Instalar playwright-core
+        run: npm install --no-save --no-package-lock --prefix "$RUNNER_TEMP/pw" "playwright-core@$PLAYWRIGHT_VERSION"
+      - name: Caché de Chromium
+        uses: actions/cache@v6
+        with:
+          path: ~/.cache/ms-playwright
+          key: chromium-${{ runner.os }}-${{ env.PLAYWRIGHT_VERSION }}
+      # Con la caché puesta solo instala las bibliotecas del sistema; sin ella, también descarga el navegador.
+      - name: Instalar Chromium
+        run: node "$RUNNER_TEMP/pw/node_modules/playwright-core/cli.js" install --with-deps --only-shell chromium
+
+      # Un fichero detrás de otro (--test-concurrency=1): las pruebas abren un navegador cada una.
+      - name: Pruebas
+        env:
+          PLAYWRIGHT_CORE: ${{ runner.temp }}/pw/node_modules/playwright-core
+          PLAYWRIGHT_MODULE_DIR: ${{ runner.temp }}/pw/node_modules
+          BE_TRACES: ${{ runner.temp }}/trazas
+        run: node --test --test-concurrency=1 --import ./tests/site/failure-traces.mjs tests/site/*.test.mjs
+
+      - name: Subir las trazas de lo que falló
+        if: failure()
+        uses: actions/upload-artifact@v7
+        with:
+          name: trazas
+          path: ${{ runner.temp }}/trazas
+          if-no-files-found: ignore
+          retention-days: 14
