@@ -8,6 +8,7 @@ import sys
 import tempfile
 import unittest
 from pathlib import Path
+from unittest import mock
 
 import yaml
 
@@ -836,7 +837,63 @@ class PuntoCompartidoEnValidate(unittest.TestCase):
         self.assertIn("(shared_point 1)", salida)
 
     def test_lejos_no_sale(self):
-        self.assertNotIn("shared_point", self.correr(33.6))
+        self.assertNotIn("AVISO [shared_point]", self.correr(33.6))
+
+
+class Presupuesto(unittest.TestCase):
+    """El presupuesto de avisos, por validate.main con los datos y los avisos fijados: solo el presupuesto decide el
+    código de salida. Un código que pasa de su número falla y escribe sus avisos; por debajo pide bajar el número; un
+    fichero mal escrito falla en vez de dejar pasar."""
+    AVISOS = [("shared_point", "data/places/rio-x.yaml: su punto está a 0.22 km del de ciudad-y"),
+              ("no_reference", "data/people/x.yaml relations[0]: x/lived_in/y no cita ningún pasaje")]
+
+    def correr(self, presupuesto, avisos=AVISOS):
+        datos = {t: [] for t in validate.TYPES}
+        datos.update(sources={}, books=[], coverage={})
+        with tempfile.TemporaryDirectory() as d:
+            tope = Path(d) / "presupuesto.txt"
+            tope.write_text(presupuesto, encoding="utf-8")
+            out = io.StringIO()
+            with mock.patch.object(validate, "load", return_value=datos), \
+                    mock.patch.object(validate, "old_schema", return_value=[]), \
+                    mock.patch.object(validate, "validar", return_value=([], list(avisos))), \
+                    contextlib.redirect_stdout(out):
+                codigo = validate.main(["--budget", str(tope)])
+            return codigo, out.getvalue()
+
+    def test_dentro_del_presupuesto_pasa(self):
+        codigo, salida = self.correr("# un comentario\nshared_point 1  # y otro\nno_reference 1\n")
+        self.assertEqual(codigo, 0, salida)
+        self.assertNotIn("presupuesto", salida.lower())
+
+    def test_pasar_del_presupuesto_falla_y_escribe_sus_avisos(self):
+        codigo, salida = self.correr("shared_point 0\nno_reference 1\n")
+        self.assertEqual(codigo, 1, salida)
+        self.assertIn("PRESUPUESTO [shared_point] 1 avisos y el presupuesto es 0", salida)
+        self.assertIn("  AVISO [shared_point] data/places/rio-x.yaml", salida)
+        self.assertNotIn("PRESUPUESTO [no_reference]", salida)
+
+    def test_un_codigo_que_no_esta_admite_cero(self):
+        codigo, salida = self.correr("no_reference 5\n")
+        self.assertEqual(codigo, 1, salida)
+        self.assertIn("PRESUPUESTO [shared_point]", salida)
+
+    def test_por_debajo_pide_bajar_el_numero_sin_fallar(self):
+        codigo, salida = self.correr("shared_point 3\nno_reference 1\n")
+        self.assertEqual(codigo, 0, salida)
+        self.assertIn("presupuesto [shared_point]: 1 avisos y el presupuesto es 3; baja el número", salida)
+
+    def test_fichero_mal_escrito_o_ausente_falla(self):
+        for malo in ["shared_pont 1\n", "shared_point uno\n", "shared_point 1\nshared_point 2\n", "shared_point\n"]:
+            with self.subTest(malo=malo):
+                codigo, salida = self.correr(malo + "no_reference 1\n", avisos=self.AVISOS[1:])
+                self.assertEqual(codigo, 1, salida)
+                self.assertIn("ERROR presupuesto de avisos", salida)
+        self.assertRaises(OSError, validate.leer_presupuesto, "/no/existe/presupuesto.txt")
+
+    def test_el_presupuesto_del_repositorio_se_lee(self):
+        tope = validate.leer_presupuesto(validate.PRESUPUESTO)
+        self.assertTrue(set(tope) <= set(validate.WARNING_CODES))
 
 
 class Transcurrido(unittest.TestCase):

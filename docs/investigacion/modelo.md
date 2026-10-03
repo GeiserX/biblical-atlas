@@ -510,7 +510,7 @@ Las ocho relaciones de parentesco que hoy están al revés salen todas. Seis sal
 
 ### De aviso a error
 
-Cuando `main` llega a 0 avisos de un código, ese código pasa a ser un error en `validate.py`, en un cambio revisado, y ya no vuelve atrás. No hay un modo aparte: cada código sube por separado, y `unlisted_caption`, que ya está en 0, sube el día que se fusione la última rama de libro migrada.
+Cuando `main` llega a 0 avisos de un código, ese código pasa a ser un error en `validate.py`, en un cambio revisado, y ya no vuelve atrás. Hasta entonces, [`scripts/avisos-presupuesto.txt`](../../scripts/avisos-presupuesto.txt) dice cuántos avisos admite cada código y `validate.py` falla cuando uno pasa de su número. El número solo baja: quien arregla un aviso lo baja en el mismo cambio. No hay un modo aparte: cada código sube por separado, y `unlisted_caption`, que ya está en 0, sube el día que se fusione la última rama de libro migrada.
 
 ### Lo que `validate.py` no puede comprobar
 

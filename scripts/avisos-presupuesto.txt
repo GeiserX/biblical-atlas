@@ -1,0 +1,13 @@
+# Cuántos avisos de cada código admite main. validate.py sale con 1 si un código pasa de su número y escribe sus
+# avisos; si se queda por debajo, pide bajar el número. Un código que no sale aquí admite 0. Al arreglar un aviso se
+# baja su número en el mismo cambio; nunca se sube para dejar pasar uno nuevo. Qué dice cada código: modelo.md, sección 13.
+outside_pending 3
+unlisted_caption 23
+kin_without_word 10
+bare_company 9
+no_office 7
+no_certainty 7
+same_as_owner 4
+no_reference 54
+title_type 10
+shared_point 3
