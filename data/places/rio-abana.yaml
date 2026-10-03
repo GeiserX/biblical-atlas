@@ -9,7 +9,8 @@ lon: 36.305
 precision: zone
 coord_source: openbible:aea17b7
 coord_url: https://www.openbible.info/geo/ancient/aea17b7/abana
-coord_note: Punto representativo de OpenBible para el Barada, el río con el que Perspicacia lo identifica.
+coord_note: Punto representativo de OpenBible para el Barada, el río con el que Perspicacia lo identifica. Queda a 0,3 km
+  del de Damasco porque, según «Abaná», el río cruza el norte de la ciudad.
 summary: Río de Damasco que, con el Farpar, Naamán tenía por mejor que el Jordán. Suele identificarse con el Barada, que baja
   del Antilíbano, pasa por la ciudad y riega su oasis.
 reason: 'Perspicacia «Abaná», párr. 1 y 2; 2Re 5:12. OpenBible: solo tomamos el punto.'
@@ -24,5 +25,5 @@ links:
 - title: 2 Reyes 5 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-reyes/5/
   type: bible
-checked_on: '2026-09-30'
+checked_on: '2026-10-03'
 status: verified

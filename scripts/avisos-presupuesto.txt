@@ -10,4 +10,4 @@ no_certainty 0
 same_as_owner 0
 no_reference 54
 title_type 0
-shared_point 3
+shared_point 0

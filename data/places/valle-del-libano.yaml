@@ -9,7 +9,8 @@ lon: 36.145278
 precision: zone
 coord_source: openbible:ac2192b
 coord_url: https://www.openbible.info/geo/ancient/ac2192b/valley-of-lebanon
-coord_note: Punto representativo de la Becá en OpenBible, el valle que Perspicacia sitúa entre las dos cordilleras.
+coord_note: 'Punto representativo de la Becá en OpenBible, el valle que Perspicacia sitúa entre las dos cordilleras.
+  Bétah lleva este punto: su sitio no se conoce, y la Becá, que «Tibhat» ve probable, es una de las propuestas de OpenBible.'
 shape:
   type: ellipse
   center: {lat: 33.759, lon: 35.96}
@@ -38,5 +39,5 @@ links:
 - title: Josué 11 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Josu%C3%A9/11/
   type: bible
-checked_on: '2026-09-29'
+checked_on: '2026-10-03'
 status: verified
