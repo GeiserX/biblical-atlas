@@ -87,7 +87,8 @@ jobs:
             'marcas, clics') run --test-name-pattern="$clics" tests/site/timeline-marks.test.mjs | tee "$RUNNER_TEMP/clics.txt"
                              grep -q '^ℹ pass 2$' "$RUNNER_TEMP/clics.txt" || { echo '::error::no se corrieron las 2 pruebas de clics'; exit 1; } ;;
             'marcas, resto') run --test-skip-pattern="$clics" tests/site/timeline-marks.test.mjs ;;
-            *) run --test-shard="$PARTE" $(ls tests/site/*.test.mjs | grep -v '/timeline-marks\.test\.mjs$') ;;
+            *) files=(); for f in tests/site/*.test.mjs; do [[ $f == */timeline-marks.test.mjs ]] || files+=("$f"); done
+               run --test-shard="$PARTE" "${files[@]}" ;;
           esac
 
       - name: Subir las trazas de lo que falló
