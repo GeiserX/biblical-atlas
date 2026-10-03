@@ -20,9 +20,9 @@ env:
   PLAYWRIGHT_VERSION: 1.63.0
 
 jobs:
-  # En un solo runner la batería pasa de 45 minutos: se reparte en cinco a la vez. timeline-marks.test.mjs va solo, porque
-  # él solo tarda tanto como varios ficheros juntos; el resto lo reparte node (--test-shard), así que un fichero nuevo
-  # entra solo en una de las cuatro partes.
+  # En un solo runner la batería pasa de 45 minutos: se reparte en seis a la vez. timeline-marks.test.mjs tarda 26 minutos
+  # él solo, y sus dos pruebas de clics sobre las marcas, 15: van en dos trabajos aparte. El resto lo reparte node
+  # (--test-shard), así que un fichero nuevo entra solo en una de las cuatro partes.
   navegador:
     name: pruebas (${{ matrix.parte }})
     runs-on: ubuntu-latest
@@ -30,7 +30,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        parte: ['1/4', '2/4', '3/4', '4/4', timeline-marks]
+        parte: ['1/4', '2/4', '3/4', '4/4', 'marcas, clics', 'marcas, resto']
     steps:
       - uses: actions/checkout@v7
         with:
@@ -76,14 +76,19 @@ jobs:
           PLAYWRIGHT_CORE: ${{ runner.temp }}/pw/node_modules/playwright-core
           PLAYWRIGHT_MODULE_DIR: ${{ runner.temp }}/pw/node_modules
           BE_TRACES: ${{ runner.temp }}/trazas
+          # Los presupuestos de tiempo de timeline-marks se midieron en un Mac mini; un runner tarda hasta tres veces más.
+          BE_TIME_SCALE: "4"
           PARTE: ${{ matrix.parte }}
         run: |
-          if [ "$PARTE" = timeline-marks ]; then
-            node --test --test-concurrency=1 --import ./tests/site/failure-traces.mjs tests/site/timeline-marks.test.mjs
-          else
-            node --test --test-concurrency=1 --test-shard="$PARTE" --import ./tests/site/failure-traces.mjs \
-              $(ls tests/site/*.test.mjs | grep -v '/timeline-marks\.test\.mjs$')
-          fi
+          run() { node --test --test-concurrency=1 --import ./tests/site/failure-traces.mjs "$@"; }
+          clics='clicking a mark keeps the scale'
+          case "$PARTE" in
+            # Si alguien renombra esas dos pruebas, el filtro no encontraría ninguna y el trabajo saldría verde.
+            'marcas, clics') run --test-name-pattern="$clics" tests/site/timeline-marks.test.mjs | tee "$RUNNER_TEMP/clics.txt"
+                             grep -q '^ℹ pass 2$' "$RUNNER_TEMP/clics.txt" || { echo '::error::no se corrieron las 2 pruebas de clics'; exit 1; } ;;
+            'marcas, resto') run --test-skip-pattern="$clics" tests/site/timeline-marks.test.mjs ;;
+            *) run --test-shard="$PARTE" $(ls tests/site/*.test.mjs | grep -v '/timeline-marks\.test\.mjs$') ;;
+          esac
 
       - name: Subir las trazas de lo que falló
         if: failure()
