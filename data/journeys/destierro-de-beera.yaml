@@ -57,6 +57,7 @@ stops:
   status: verified
 - order: 2
   place: hala
+  branches_from: 1
   reference: 1Cr 5:26
   date:
     from: -761
@@ -67,7 +68,7 @@ stops:
     chronology: tnm
     text: 'entre 762 y c. 758 a.e.c. (tiempo narrativo: tras el soborno de Acaz y antes de la muerte de Pécah)'
   note: 'Destinos de todo el destierro, no las etapas de una ruta. Perspicacia no sabe dónde estaba.'
-  reason: 1Cr 5:26 nombra Halá como destino de las tribus del este. Suceso tiglat-pileser-deporta-al-norte-de-israel.
+  reason: 1Cr 5:26 nombra Halá como destino de las tribus del este. Suceso tiglat-pileser-deporta-al-norte-de-israel. Se llega desde Galaad a la vez que a los otros destinos, porque el texto los enumera sin ruta.
   sources:
   - 1-cronicas-5
   - it-halah
@@ -75,6 +76,7 @@ stops:
   status: verified
 - order: 3
   place: habor
+  branches_from: 1
   reference: 1Cr 5:26
   date:
     from: -761
@@ -85,7 +87,7 @@ stops:
     chronology: tnm
     text: 'entre 762 y c. 758 a.e.c. (tiempo narrativo: tras el soborno de Acaz y antes de la muerte de Pécah)'
   note: null
-  reason: 1Cr 5:26 nombra Habor como destino de las tribus del este. Suceso tiglat-pileser-deporta-al-norte-de-israel.
+  reason: 1Cr 5:26 nombra Habor como destino de las tribus del este. Suceso tiglat-pileser-deporta-al-norte-de-israel. Se llega desde Galaad a la vez que a los otros destinos, porque el texto los enumera sin ruta.
   sources:
   - 1-cronicas-5
   - it-habor
@@ -93,6 +95,7 @@ stops:
   status: verified
 - order: 4
   place: hara
+  branches_from: 1
   reference: 1Cr 5:26
   date:
     from: -761
@@ -103,7 +106,7 @@ stops:
     chronology: tnm
     text: 'entre 762 y c. 758 a.e.c. (tiempo narrativo: tras el soborno de Acaz y antes de la muerte de Pécah)'
   note: Sin punto en el mapa; quizá los montes de los medos.
-  reason: 1Cr 5:26 nombra Hará entre Habor y el río Gozán como destino de las tribus del este. Suceso tiglat-pileser-deporta-al-norte-de-israel.
+  reason: 1Cr 5:26 nombra Hará entre Habor y el río Gozán como destino de las tribus del este. Suceso tiglat-pileser-deporta-al-norte-de-israel. Se llega desde Galaad a la vez que a los otros destinos, porque el texto los enumera sin ruta.
   sources:
   - 1-cronicas-5
   - it-hara
@@ -111,6 +114,7 @@ stops:
   status: verified
 - order: 5
   place: gozan
+  branches_from: 1
   reference: 1Cr 5:26
   date:
     from: -761
@@ -121,7 +125,7 @@ stops:
     chronology: tnm
     text: 'entre 762 y c. 758 a.e.c. (tiempo narrativo: tras el soborno de Acaz y antes de la muerte de Pécah)'
   note: El río Gozán.
-  reason: 1Cr 5:26 nombra el río Gozán como destino de las tribus del este. Suceso tiglat-pileser-deporta-al-norte-de-israel.
+  reason: 1Cr 5:26 nombra el río Gozán como destino de las tribus del este. Suceso tiglat-pileser-deporta-al-norte-de-israel. Se llega desde Galaad a la vez que a los otros destinos, porque el texto los enumera sin ruta.
   sources:
   - 1-cronicas-5
   - it-gozan

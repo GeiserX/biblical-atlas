@@ -214,20 +214,27 @@ function ventanaParada(f) {
     anterior, pero ese empujón nunca la saca de su propia fecha ni la deja después de la muerte de la persona: si no hay
     sitio, las anteriores se adelantan dentro de las suyas y los empujones se acortan (dieciocho paradas de un mismo
     año caben en ese año; tres paradas del 9 de nisán, en ese día). Paradas en tiempo narrativo: repartidas por igual
-    entre las dos anclas que las rodean. */
+    entre las dos anclas que las rodean. Los destinos en paralelo que salen de una misma parada (`branches_from`) van a
+    la vez: se coloca el primero y los demás toman su momento, sin ir uno detrás de otro. */
 function prepararParadas(persona = 'pablo') {
   const viajes = BE.D.viajes.filter((v) => esDe(v, persona)).sort((a, b) => (a.fecha?.desde ?? 0) - (b.fecha?.desde ?? 0));
   const todas = [];
   for (const v of viajes) {
     const ps = [...v.paradas].sort((a, b) => a.orden - b.orden);
+    const primera = new Map();          // parada de salida → el primero de sus destinos en paralelo
     ps.forEach((p, i) => {
       const lugar = p.unknown_area ? lugarDesconocido(p.unknown_area) : BE.L[p.lugar];
       if (!lugar) return;
-      todas.push({ key: `${v.id}/${p.orden}`, viaje: v, p, lugar, i, n: ps.length, narrativa: !!p.unknown_area || p.fecha?.tipo === 'narrativa' || !momentos(p.fecha || {}) });
+      const s = { key: `${v.id}/${p.orden}`, viaje: v, p, lugar, i, n: ps.length, narrativa: !!p.unknown_area || p.fecha?.tipo === 'narrativa' || !momentos(p.fecha || {}) };
+      // El primer destino de una salida entra en el reparto; los demás toman su momento después (paralelaDe).
+      if (p.branches_from != null && primera.has(p.branches_from)) s.paralelaDe = primera.get(p.branches_from);
+      else if (p.branches_from != null) primera.set(p.branches_from, s);
+      todas.push(s);
     });
   }
-  // Las áreas desconocidas no entran en el reparto: van pegadas a su parada vecina con lugar (colocarAreas).
-  const out = todas.filter((s) => !s.lugar.area);
+  // Las áreas desconocidas no entran en el reparto: van pegadas a su parada vecina con lugar (colocarAreas). Tampoco
+  // los destinos en paralelo que no son el primero de su salida: toman el momento de ese primero.
+  const out = todas.filter((s) => !s.lugar.area && !s.paralelaDe);
   const suceso = SUCESOS_EN_PARADAS.has(persona) ? new Map() : sucesosDeParadas(persona, out);
   const anclas = out.map((s, i) => (s.narrativa && !suceso.has(s) ? -1 : i)).filter((i) => i >= 0);
   // La muerte de la persona (su fecha, sin colocar: colocarla depende de estas paradas) cierra el tiempo de sus paradas.
@@ -288,7 +295,9 @@ function prepararParadas(persona = 'pablo') {
     }
     prev = j;
   }
-  const P = colocarAreas(todas);
+  for (const s of todas) if (s.paralelaDe) { s.a = s.paralelaDe.a; s.b = s.paralelaDe.b; if (s.paralelaDe.banda) s.banda = s.paralelaDe.banda; }
+  // Cada destino en paralelo va justo después del primero de su salida, que es el que tiene su momento.
+  const P = colocarAreas(todas.some((s) => s.paralelaDe) ? todas.flatMap((s) => (s.paralelaDe ? [] : [s, ...todas.filter((x) => x.paralelaDe === s)])) : todas);
   P.forEach((s, i) => { s.g = i; s.sel = `parada:${s.key}`; s.titulo = s.lugar.nombre; s.referencia = s.p.referencia; });
   return P;
 }
