@@ -17,8 +17,10 @@ relations:
   inferred: true
   sources:
   - it-jairo
-  reason: 'Perspicacia «Jairo» (párr. 2): su sinagoga era probablemente la de Capernaúm.'
-  checked_on: '2026-09-29'
+  - mateo-9
+  reason: 'Perspicacia «Jairo»: su sinagoga era probablemente la de Capernaúm. Mt 9:1, 18 pone su ruego en la ciudad de Jesús,
+    que la nota del v. 1 dice que es Capernaúm.'
+  checked_on: '2026-10-03'
   status: verified
 links:
 - title: 'Perspicacia: «Jairo»'

@@ -52,8 +52,9 @@ relations:
   inferred: true
   sources:
   - it-asir
-  reason: 'Perspicacia «Asir», núm. 1: levita nacido en Egipto.'
-  checked_on: '2026-09-29'
+  - exodo-6
+  reason: 'Perspicacia «Asir», núm. 1: levita nacido en Egipto; Éx 6:24 lo nombra primero entre los hijos de Coré.'
+  checked_on: '2026-10-03'
   status: verified
 checked_on: '2026-09-29'
 status: verified

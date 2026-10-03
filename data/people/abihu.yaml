@@ -68,8 +68,9 @@ relations:
   inferred: true
   sources:
   - it-abihu
-  reason: 'Perspicacia «Abihú», párr. 1: nació en Egipto y era ya adulto en el éxodo.'
-  checked_on: '2026-09-29'
+  - exodo-6
+  reason: 'Perspicacia «Abihú», párr. 1: hijo de Aarón y Eliseba (Éx 6:23), nació en Egipto y ya era adulto en el éxodo.'
+  checked_on: '2026-10-03'
   status: verified
 - type: died_in
   place: desierto-de-sinai

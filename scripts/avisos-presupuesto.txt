@@ -8,6 +8,6 @@ bare_company 2
 no_office 0
 no_certainty 0
 same_as_owner 0
-no_reference 54
+no_reference 27
 title_type 0
 shared_point 0

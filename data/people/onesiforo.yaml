@@ -33,8 +33,11 @@ relations:
   inferred: false
   sources:
   - it-asia
-  reason: Perspicacia «Asia» dice que parece fuera de duda que vivía en Éfeso.
-  checked_on: '2026-09-28'
+  - 2-timoteo-1
+  - 2-timoteo-4
+  reason: Perspicacia «Asia» lo da por vecino de Éfeso, donde Pablo recuerda sus servicios (2Ti 1:16-18); 2Ti 4:19 saluda
+    a su casa.
+  checked_on: '2026-10-03'
   status: verified
 - type: accompanies
   person: pablo

@@ -12,7 +12,7 @@ distinct_from:
 - abias-hija-de-zacarias
 summary: Sacerdote de la línea de Aarón, cabeza de una casa paterna cuando David repartió a los sacerdotes en 24 turnos. A
   su casa le tocó por sorteo el octavo, llamado desde entonces la división de Abías.
-reason: Perspicacia «Abías», núm. 4, y la nota de estudio de Lu 1:5, que remite a 1Cr 24:3-10.
+reason: Perspicacia «Abías», núm. 4, y la nota de Lu 1:5, que remite a 1Cr 24:3-10.
 sources:
 - it-abias
 - lucas-1
@@ -23,8 +23,10 @@ relations:
   inferred: true
   sources:
   - it-abias
-  reason: Perspicacia «Abías», núm. 4, lo presenta como sacerdote descendiente de Aarón.
-  checked_on: '2026-09-29'
+  - 1-cronicas-24
+  reason: 'Perspicacia «Abías», núm. 4: sacerdote descendiente de Aarón; su casa encabezó la octava de las divisiones de los
+    descendientes de Aarón (1Cr 24:1, 10).'
+  checked_on: '2026-10-03'
   status: verified
 links:
 - title: 'Perspicacia: «Abías»'

@@ -51,8 +51,10 @@ relations:
   sources:
   - it-ester-libro
   - it-susa
-  reason: 'Perspicacia «Susa»: el libro de Ester transcurre en Susa.'
-  checked_on: '2026-09-28'
+  - ester-2
+  reason: 'Perspicacia «Susa»: el libro de Ester transcurre en Susa, y Est 2:8 cuenta que a ella la llevaron a la casa del
+    rey en aquel castillo.'
+  checked_on: '2026-10-03'
   status: verified
 - type: kin
   person: mardoqueo

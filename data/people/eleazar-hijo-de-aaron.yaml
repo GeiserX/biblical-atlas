@@ -89,8 +89,10 @@ relations:
   inferred: true
   sources:
   - it-eleazar
-  reason: 'Perspicacia «Eleazar», núm. 1: tenía más de veinte años cuando Israel salió de Egipto.'
-  checked_on: '2026-09-29'
+  - exodo-6
+  reason: 'Perspicacia «Eleazar», núm. 1: tenía más de veinte años al salir de Egipto. Éx 6:23, 25 lo nombra entre los hijos
+    de Aarón en la genealogía que el relato da en Egipto.'
+  checked_on: '2026-10-03'
   status: verified
 - type: kin
   person: itamar
