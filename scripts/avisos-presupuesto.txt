@@ -3,7 +3,7 @@
 # baja su número en el mismo cambio; nunca se sube para dejar pasar uno nuevo. Qué dice cada código: modelo.md, sección 13.
 outside_pending 3
 unlisted_caption 23
-kin_without_word 10
+kin_without_word 1
 bare_company 9
 no_office 0
 no_certainty 0
