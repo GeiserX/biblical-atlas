@@ -1282,6 +1282,15 @@ books:
   reason: 'Fila de «Hechos» en la tabla de libros de la Biblia de estudio: escritor, lugar, fecha y tiempo abarcado.'
   checked_on: '2026-09-28'
   status: verified
+  en:
+    name: Acts
+    abbr: Ac
+    slug: acts
+    writer: Luke
+    place: Rome
+    reason: 'Row for “Acts” in the table of books of the study Bible: writer, place, date and time covered.'
+    checked_on: '2026-10-03'
+    status: verified
 - slug: romanos
   num: 45
   name: Romanos
@@ -1421,6 +1430,15 @@ books:
   reason: 'Fila de «Filipenses» en la tabla de libros de la Biblia de estudio: escritor, lugar y fecha.'
   checked_on: '2026-09-28'
   status: verified
+  en:
+    name: Philippians
+    abbr: Php
+    slug: philippians
+    writer: Paul
+    place: Rome
+    reason: 'Row for “Philippians” in the table of books of the study Bible: writer, place and date.'
+    checked_on: '2026-10-03'
+    status: verified
 - slug: colosenses
   num: 51
   name: Colosenses
