@@ -104,7 +104,9 @@ function tramoEntidad(sel) {
   const o = objetoSel(sel);
   const f = o?.fecha || o?.abarca;
   if (f && (f.desde != null || f.hasta != null)) return [f.desde ?? f.hasta, (f.hasta ?? f.desde) + 1];
-  if (sel.tipo === 'persona') {   // sin fecha propia: lo que abarcan sus conexiones con fecha
+  // Sin fecha propia: lo que abarcan sus conexiones con fecha. BE.aristas lee las relaciones del detalle y guarda lo
+  // que calcula: sin el detalle, la pregunta usa el momento de la persona.
+  if (sel.tipo === 'persona' && BE.chunks.ready()) {
     const trs = BE.aristas(sel.id).map((a) => a.tr).filter((tr) => tr && Number.isFinite(tr[0]) && Number.isFinite(tr[1]));
     if (trs.length) return [Math.min(...trs.map((x) => x[0])), Math.max(...trs.map((x) => x[1]))];
   }
@@ -431,10 +433,11 @@ function elegirResultado(r) {
     seleccionar(r.sel);
   }
 }
-/** Busca y abre la lista. La búsqueda lee textos del detalle (js/data-chunks.js): si aún no ha llegado, busca al
-    llegar, si la caja sigue con algo escrito y con el foco. */
+/** Busca y abre la lista. La búsqueda contesta con el núcleo; el detalle (js/data-chunks.js) solo añade la línea que
+    distingue a dos personas del mismo nombre. Si aún no ha llegado, lo pide y busca otra vez al llegar, si la caja
+    sigue con algo escrito y con el foco. */
 function buscarYPintar(texto) {
-  if (!BE.chunks.ready(rebuscar)) return;
+  BE.chunks.ready(rebuscar);
   resultados = buscar(texto); activo = 0; pintarResultados();
 }
 function rebuscar() {
@@ -444,7 +447,7 @@ function rebuscar() {
 function iniciarBusqueda() {
   const q = $('#q');
   q.addEventListener('input', () => buscarYPintar(q.value));
-  q.addEventListener('focus', () => { if (q.value.trim() && BE.chunks.ready(rebuscar)) { resultados = buscar(q.value); pintarResultados(); } });
+  q.addEventListener('focus', () => { if (q.value.trim()) { BE.chunks.ready(rebuscar); resultados = buscar(q.value); pintarResultados(); } });
   q.addEventListener('keydown', (e) => {
     if (e.key === 'ArrowDown') { e.preventDefault(); activo = Math.min(activo + 1, resultados.length - 1); pintarResultados(); }
     else if (e.key === 'ArrowUp') { e.preventDefault(); activo = Math.max(activo - 1, 0); pintarResultados(); }

@@ -1,9 +1,9 @@
 // The data in two chunks (site/js/data-chunks.js, docs/development.md «Los trozos de los datos»), tested in a real
 // headless browser: the site opens with data.core.json and asks for data.detail.json once, whoever needs it first; a
-// card waits for the detail and says so; a failed detail is said in the card, not thrown; file:// and a folder with no
-// core still load the whole data.json; and the map, the timeline, «Mientras tanto», «Ahora» and the landing painted
-// from the core alone are the same as painted from the whole data.json. The last test opens every view with the chunks
-// and counts the console errors.
+// card waits for the detail and says so, while the map, the timeline and the search do not; a failed detail is said in
+// the card, not thrown; file:// and a folder with no core still load the whole data.json; and the map, the timeline,
+// «Mientras tanto», «Ahora» and the landing painted from the core alone are the same as painted from the whole
+// data.json. The last test opens every view with the chunks and counts the console errors.
 //
 // Run from the root of the repository, one browser at a time:
 //   node --test --test-concurrency=1 tests/site/data-chunks.test.mjs
@@ -106,7 +106,7 @@ test('the site opens with the core and asks for the detail once, whoever needs i
   assert.deepEqual([...page.pageErrors, ...page.consoleErrors], []);
 });
 
-test('a card waits for the detail, says so, and paints when it arrives', async () => {
+test('a card waits for the detail, says so, and paints when it arrives; the search does not wait', async () => {
   let release;
   const held = new Promise((ok) => { release = ok; });
   const page = await openPage({ hash: 'sel=persona:pablo&t=50.3000', detail: held });
@@ -117,6 +117,10 @@ test('a card waits for the detail, says so, and paints when it arrives', async (
   // The map and the timeline did not wait: Pablo is already highlighted.
   assert.equal(await page.evaluate(() => window.BE.E.sel?.id), 'pablo');
   assert.ok(await page.locator('#linea-filas .m').count() > 0);
+  // Nor does the search: it answers with the core, and the line that tells two namesakes apart comes with the detail.
+  await page.locator('#q').fill('Zacarías');
+  await page.locator('#resultados [data-i]').first().waitFor();
+  assert.equal(count(page, 'data.detail.json'), 1);
   release();
   await page.locator('#panel-cuerpo .razon', { hasText: D.personas.pablo.razon.slice(0, 40) }).first().waitFor();
   assert.equal(await busy.count(), 0);
