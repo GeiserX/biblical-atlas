@@ -143,8 +143,14 @@ const errors = [];
 async function open(prefix = '', hash = '', opts = DESKTOP) {
   const context = await browser.newContext({ deviceScaleFactor: 1, ...opts });
   const p = await context.newPage();
-  p.on('pageerror', (e) => errors.push(`pageerror: ${e.message}`));
-  p.on('console', (m) => { if (m.type() === 'error' && !/GPU stall|GL Driver Message|ReadPixels/.test(m.text())) errors.push(`console: ${m.text()}`); });
+  // A variant with its own trayectorias.js (the reference code of the record test) runs old code inside today's site.
+  // If its map finishes loading before the test closes it, today's map code calls BE.puntoLugar, which the old code
+  // lacks. Whether the map wins depends on the machine and the network (on the GitHub runners it did, and the error
+  // then failed the last test of the file, the baptism of Lydia), so what that page throws is not the site's error.
+  if (!variants[prefix.slice(1)]?.code) {
+    p.on('pageerror', (e) => errors.push(`pageerror: ${e.message}`));
+    p.on('console', (m) => { if (m.type() === 'error' && !/GPU stall|GL Driver Message|ReadPixels/.test(m.text())) errors.push(`console: ${m.text()}`); });
+  }
   await p.goto(`${origin}${prefix}/index.html${hash ? `#${hash}` : ''}`);
   await p.waitForFunction(() => window.BE && window.BE.D && Array.isArray(window.BE.P) && window.BE.P.length, null, { timeout: 20000 });
   return p;
