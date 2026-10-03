@@ -667,8 +667,9 @@ test('1440: a selected mark out of view is named at the edge, and its button bri
   void a;
 });
 
-test('1440: the panel opens tall, the splitter shrinks it and the size survives a reload', async () => {
-  const context = await browser.newContext({ deviceScaleFactor: 1, ...DESKTOP });
+test('1440 × 1100: the panel opens tall, the splitter shrinks it and the size survives a reload; at 900 px tall it opens normal', async () => {
+  // A screen 1000 px tall or more opens the strip tall; a lower one, normal, so the map keeps its room.
+  const context = await browser.newContext({ deviceScaleFactor: 1, viewport: { width: 1440, height: 1100 } });
   const p = await context.newPage();
   p.on('pageerror', (e) => errors.push(`panel pageerror: ${e.message}`));
   await p.goto(`${base}#t=50.5&v=8`);
@@ -692,12 +693,13 @@ test('1440: the panel opens tall, the splitter shrinks it and the size survives 
   await frames(p, 6);
   const h2 = await p.evaluate(() => document.querySelector('#linea').offsetHeight);
   note(`1440 panel: opens at ${h0} px, splitter −200 px → ${h1} px, after a reload ${h2} px; hash «${await p.evaluate(() => location.hash)}»`);
-  assert.ok(Math.abs(h0 - Math.min(900 * 0.62, 600)) <= 2, `opens at ${h0}`);
+  assert.ok(Math.abs(h0 - Math.min(1100 * 0.62, 600)) <= 2, `opens at ${h0}`);
   assert.ok(Math.abs(h1 - (h0 - 200)) <= 4);
   assert.ok(Math.abs(h2 - h1) <= 2);
   await context.close();
-  // On a low screen the strip opens at its normal height, so the map keeps its room; T still raises it.
-  const low = await browser.newContext({ deviceScaleFactor: 1, viewport: { width: 1366, height: 768 } });
+  // On a screen 900 px tall the strip opens at its normal height, so the map keeps its room; T still raises it. With
+  // the tall strip a tour opened from the landing had 282 px of map, most of it under the legend and «Mientras tanto».
+  const low = await browser.newContext({ deviceScaleFactor: 1, ...DESKTOP });
   const q = await low.newPage();
   q.on('pageerror', (e) => errors.push(`panel 768 pageerror: ${e.message}`));
   await q.goto(`${base}#t=50.5&v=8`);
@@ -707,7 +709,7 @@ test('1440: the panel opens tall, the splitter shrinks it and the size survives 
   await q.evaluate(() => document.activeElement?.blur());
   await q.keyboard.press('t'); await frames(q, 4);
   const l1 = await q.evaluate(() => document.querySelector('#linea').offsetHeight);
-  note(`1366x768 panel: opens at ${l0} px, T → ${l1} px; hash «${await q.evaluate(() => location.hash)}»`);
+  note(`1440x900 panel: opens at ${l0} px, T → ${l1} px; hash «${await q.evaluate(() => location.hash)}»`);
   assert.ok(l0 <= 260, `opens at ${l0}`);
   assert.ok(l1 > l0 + 100);
   await low.close();
@@ -906,6 +908,8 @@ test('«Carriles» is a button that looks like one and says what it does; a clic
     let l = await look();
     assert.ok(l.open, `${screen.name}: a ${screen.hasTouch ? 'tap' : 'click'} did not open the lane chooser`);
     assert.equal(l.expanded, 'true');
+    // The dialog belongs to the «…» button too: it says it is open, whichever button opened it.
+    assert.equal(await p.evaluate(() => document.querySelector('#linea-menu-boton').getAttribute('aria-expanded')), 'true');
     if (screen.hasTouch) await b.tap(); else await b.click();
     await frames(p);
     l = await look();

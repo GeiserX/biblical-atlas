@@ -1449,8 +1449,10 @@ function encuadrarTiempo(a, b, ocupa = 1 / 1.08) {
   E.vista = [v0, v0 + s];
   sucio.linea = true; programar();
 }
-/** La línea abre alta en la pantalla ancha si al mapa le quedan unos 260 px; en una pantalla baja abre normal. */
-const altaDeInicio = () => !estrecha() && innerHeight >= 840;
+/** La línea abre alta en la pantalla ancha de 1000 px de alto o más; en una más baja abre normal. A 1440 × 900 la línea
+    alta dejaba al mapa 282 px, casi todos bajo la leyenda y «Mientras tanto»: un recorrido abierto desde la portada no
+    enseñaba mapa. */
+const altaDeInicio = () => !estrecha() && innerHeight >= 1000;
 /** Con el grafo o la conexión encima del mapa, la línea alta de inicio les deja su sitio (linea.css); pedida con la T,
     el botón o el menú, se ve alta también con ellos. */
 const grafoEncima = () => !!document.querySelector('.mapa > :is(.vista-grafo, .vista-conexion):not([hidden])');
@@ -1555,7 +1557,7 @@ function abrirMenu(seccion = 'todo') {
   menuEl.style.left = `${clamp(seccion === 'carriles' ? r.left : r.right - w, 8, window.innerWidth - w - 8)}px`;
   menuEl.style.bottom = `${window.innerHeight - r.top + 8}px`;
   menuEl.style.maxHeight = `${Math.max(160, r.top - 16)}px`;
-  $('#linea-menu-boton')?.setAttribute('aria-expanded', String(seccion !== 'carriles'));
+  $('#linea-menu-boton')?.setAttribute('aria-expanded', 'true');   // el diálogo es el suyo, lo abra quien lo abra
   $('.carriles-boton')?.setAttribute('aria-expanded', String(seccion === 'carriles'));
   // Es un diálogo: al abrirlo, el foco entra en su primer control (al repintarlo abierto no se mueve).
   if (!yaAbierto) { menuOrigen = b; menuEl.querySelector('button, input, select')?.focus(); }
