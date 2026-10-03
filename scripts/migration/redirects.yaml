@@ -401,3 +401,19 @@
   removed_on: '2026-10-02'
   reason: 'La relación sin fecha juntaba dos estancias: antes del decreto de Claudio (@49) y la vuelta hacia 56 (@56).
     Lleva a la misma clave, que casa con las dos, para que apply.py se pare y alguien elija el tramo.'
+- from: clopas/same_as/alfeo-padre-de-santiago
+  to: alfeo-padre-de-santiago/same_as/clopas
+  removed_on: '2026-10-03'
+  reason: La probable identidad queda escrita en la ficha de Alfeo, cuyo id va primero, con certainty probable.
+- from: pelez-padre-de-on/same_as/palu
+  to: palu/same_as/pelez-padre-de-on
+  removed_on: '2026-10-03'
+  reason: La posible identidad queda escrita en la ficha de Palú, cuyo id va primero, con certainty possible.
+- from: sosipatro/same_as/sopater
+  to: sopater/same_as/sosipatro
+  removed_on: '2026-10-03'
+  reason: La probable identidad queda escrita en la ficha de Sópater, cuyo id va primero, con certainty probable.
+- from: sostenes-companero-de-pablo/same_as/sostenes
+  to: sostenes/same_as/sostenes-companero-de-pablo
+  removed_on: '2026-10-03'
+  reason: La posible identidad queda escrita en la ficha del jefe de sinagoga, cuyo id va primero, con certainty possible.

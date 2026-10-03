@@ -70,3 +70,14 @@ relations:
   reason: Presidía la sinagoga de Corinto cuando Pablo estaba allí (Hch 18:17).
   checked_on: '2026-09-29'
   status: verified
+- type: same_as
+  person: sostenes-companero-de-pablo
+  certainty: possible
+  inferred: true
+  sources:
+  - it-sostenes
+  - 1-corintios-1
+  reason: Perspicacia «Sóstenes» y la nota de 1Co 1:1 ven posible que el jefe de sinagoga golpeado en Corinto se hiciera cristiano
+    y sea el hermano que saluda con Pablo; el nombre era poco común.
+  checked_on: '2026-10-03'
+  status: verified

@@ -30,12 +30,13 @@ relations:
   status: verified
 - type: same_as
   person: ehi
+  certainty: probable
   inferred: true
   sources:
   - numeros-26
   - it-ahiram
   reason: Perspicacia «Ahiram» lo identifica, solo al parecer, con Ehí, de la lista de Jacob en Génesis; por eso son dos fichas.
-  checked_on: '2026-09-29'
-  status: pending
+  checked_on: '2026-10-03'
+  status: verified
 checked_on: '2026-09-29'
 status: verified
