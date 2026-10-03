@@ -3,6 +3,8 @@ id: lidia
 name: Lidia
 names:
 - name: Lidia
+  en:
+    name: Lydia
 date:
   from: 50
   to: 50
@@ -22,12 +24,25 @@ links:
 - title: 'Perspicacia: «Lidia»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Lidia/
   type: perspicacia
+  en:
+    title: 'Insight: “Lydia”'
+    url: https://www.jw.org/en/library/books/Insight-on-the-Scriptures/Lydia/
 - title: Hechos 16 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/hechos/16/
   type: bible
+  en:
+    title: Acts 16 (NWT)
+    url: https://www.jw.org/en/library/bible/study-bible/books/acts/16/
 perspicacia: '1200002798'
 checked_on: '2026-09-29'
 status: verified
+en:
+  name: Lydia
+  summary: A seller of purple from Thyatira who lived in Philippi. She worshipped God, was baptized with her household
+    about 50 C.E., and gave Paul and his companions lodging in her home.
+  reason: Insight, “Lydia” (pars. 1 and 2), and the study note on Ac 16:14; Ac 16:13-15, 40.
+  checked_on: '2026-10-03'
+  status: verified
 relations:
 - type: lived_in
   place: filipos
@@ -38,6 +53,8 @@ relations:
   reason: Pablo la encuentra junto al río, a las afueras de Filipos, y se aloja en su casa (Hch 16:13-15).
   checked_on: '2026-09-29'
   status: verified
+  en:
+    reason: Paul meets her by the river outside Philippi and stays in her house (Ac 16:13-15).
 - type: lived_in
   place: tiatira
   inferred: false
@@ -48,3 +65,6 @@ relations:
     sabemos si nació en ella.
   checked_on: '2026-09-29'
   status: verified
+  en:
+    reason: Ac 16:14 presents her as one from the city of Thyatira, and Insight, “Lydia”, says she first lived there. We
+      do not know whether she was born there.

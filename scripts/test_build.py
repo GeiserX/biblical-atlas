@@ -381,5 +381,51 @@ class FormasEnLaSalida(unittest.TestCase):
         self.assertIn("**Llano**: caja. Caja de prueba.", texto)
 
 
+class CapaIngles(unittest.TestCase):
+    """site/data.en.json (docs/ideas/ingles.md): los textos en inglés con las claves y la forma de data.json, y
+    data.json sin un solo bloque de idioma."""
+
+    @classmethod
+    def setUpClass(cls):
+        datos, _ = build.cargar(HERE.parent / "data")
+        cls.salida, _, cls.errores = build.componer(datos, "2026-10-03")
+        cls.capa = build.capas_idioma(datos)["en"]
+
+    def test_data_json_sigue_en_espanol(self):
+        self.assertEqual(self.errores, [])
+        self.assertNotIn('"en":', json.dumps(self.salida, ensure_ascii=False))
+        self.assertEqual(self.salida["lugares"]["filipos"]["nombre"], "Filipos")
+
+    def test_la_capa_tiene_la_forma_de_data_json(self):
+        f = self.capa["lugares"]["filipos"]
+        self.assertEqual(f["nombre"], "Philippi")
+        self.assertEqual(f["nombres"], [{"nombre": "Philippi"}])
+        self.assertEqual([e["url"] for e in f["enlaces"]],
+                         ["https://www.jw.org/en/library/books/Insight-on-the-Scriptures/Philippi/",
+                          "https://www.jw.org/en/library/bible/study-bible/books/acts/16/"])
+        self.assertNotIn("estado", f)   # el sello de la traducción no va al sitio
+        # Las relaciones de la capa van una a una con las de data.json (sin las de holds_office).
+        self.assertEqual(len(self.capa["personas"]["lidia"]["relaciones"]), len(self.salida["personas"]["lidia"]["relaciones"]))
+        e = self.capa["eventos"]["lidia-se-bautiza"]
+        self.assertEqual(e["fecha"], {"texto": "c. 50 C.E."})   # la fecha simple se escribe sola
+        self.assertEqual(e["buscar"], "Lydia Philippi")
+
+    def test_fuentes_y_libros(self):
+        F = self.capa["fuentes"]
+        self.assertEqual(F["it-lidia"]["url"], "https://www.jw.org/en/library/books/Insight-on-the-Scriptures/Lydia/")
+        self.assertEqual(F["hechos-16"]["titulo"], "Acts 16")          # capítulo implícito
+        self.assertEqual(F["hch-16"]["url"], "https://www.jw.org/en/library/bible/study-bible/books/acts/16/")
+        self.assertNotIn("openbible-geo", F)                           # no cambia con el idioma
+        self.assertNotIn("mateo-1", F)                                 # su libro aún no tiene el inglés
+        self.assertEqual(self.capa["libros"]["hechos"]["abr"], "Ac")
+
+    def test_layer_y_strip(self):
+        import languages
+        o = {"name": "A", "en": {"name": "B", "checked_on": "2026-10-03"}, "names": [{"name": "A"}, {"name": "C", "en": {"name": "D"}}],
+             "date": {"from": -606, "to": -606, "text": "607 a.e.c."}}
+        self.assertEqual(languages.layer(o, "en"), {"name": "B", "names": [None, {"name": "D"}], "date": {"text": "607 B.C.E."}})
+        self.assertNotIn('"en"', json.dumps(languages.strip(o)))
+
+
 if __name__ == "__main__":
     unittest.main(verbosity=1)

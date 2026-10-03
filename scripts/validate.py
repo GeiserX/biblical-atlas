@@ -28,6 +28,7 @@ import yaml
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import bible_coverage  # noqa: E402
 import formas  # noqa: E402
+import languages  # noqa: E402
 
 RAIZ = Path(__file__).resolve().parent.parent
 MAP = RAIZ / "scripts" / "migration" / "map.yaml"
@@ -228,6 +229,7 @@ def load(data_dir):
             obj["_nombre_fichero"] = ruta.stem
             datos[tipo].append(obj)
     datos["coverage"] = bible_coverage.cargar(data_dir, errores)
+    datos["languages"] = (_read(data_dir / "languages.yaml") or {}) if (data_dir / "languages.yaml").exists() else {}
 
     # Capítulos de la Biblia como fuentes implícitas: <slug>-<cap> que nadie ha escrito se crea desde books.yaml.
     citadas = [fid for t in TYPES for o in datos[t] for _, fid in sources_of(clean(o))]
@@ -699,7 +701,7 @@ def validar_libros(datos, err, meses):
                 err(f"{donde}: la forma de búsqueda '{fm}' ya es de {formas[fm]}")
             formas[fm] = l.get("slug")
         bible_coverage.validar_libro(l, donde, err)
-        extra = set(l) - ESTRUCTURA_LIBRO - ESTRUCTURA_LIBRO_OPCIONAL
+        extra = set(l) - ESTRUCTURA_LIBRO - ESTRUCTURA_LIBRO_OPCIONAL - set(languages.LANGUAGES)
         if extra - HECHOS_LIBRO - comunes:
             err(f"{donde}: campos desconocidos {sorted(extra - HECHOS_LIBRO - comunes)}")
         if extra:
@@ -755,8 +757,8 @@ def validar_nombres_mes(m, donde, err):
         if not isinstance(n, dict):
             err(f"{nd}: debe ser un objeto {{name, from, to, note, sources, reason, checked_on}}")
             continue
-        if set(n) - CAMPOS_NOMBRE_MES:
-            err(f"{nd}: campos desconocidos {sorted(set(n) - CAMPOS_NOMBRE_MES)}")
+        if set(n) - CAMPOS_NOMBRE_MES - set(languages.LANGUAGES):
+            err(f"{nd}: campos desconocidos {sorted(set(n) - CAMPOS_NOMBRE_MES - set(languages.LANGUAGES))}")
         if not isinstance(n.get("name"), str) or not n["name"].strip():
             err(f"{nd}: sin 'name'")
         elif n["name"] in vistos:
@@ -810,8 +812,8 @@ def validar_fiestas(m, donde, err):
         if not isinstance(f, dict):
             err(f"{fd}: debe ser un objeto {{name, from, to, instituted_in, sources, reason, checked_on}}")
             continue
-        if set(f) - CAMPOS_FIESTA:
-            err(f"{fd}: campos desconocidos {sorted(set(f) - CAMPOS_FIESTA)}")
+        if set(f) - CAMPOS_FIESTA - set(languages.LANGUAGES):
+            err(f"{fd}: campos desconocidos {sorted(set(f) - CAMPOS_FIESTA - set(languages.LANGUAGES))}")
         if not isinstance(f.get("name"), str) or not f["name"].strip():
             err(f"{fd}: sin 'name'")
         for k in ("from", "to"):
@@ -838,8 +840,8 @@ def validar_explicacion(cal, err):
         if not isinstance(e, dict):
             err(f"{donde}: debe ser un objeto")
             continue
-        if set(e) - CAMPOS_EXPLICACION:
-            err(f"{donde}: campos desconocidos {sorted(set(e) - CAMPOS_EXPLICACION)}")
+        if set(e) - CAMPOS_EXPLICACION - set(languages.LANGUAGES):
+            err(f"{donde}: campos desconocidos {sorted(set(e) - CAMPOS_EXPLICACION - set(languages.LANGUAGES))}")
         if not ID.match(str(e.get("id"))):
             err(f"{donde}: id '{e.get('id')}' no es un slug ASCII en minúsculas")
         elif e["id"] in ids:
@@ -1851,7 +1853,7 @@ def validar(datos):
                     for k in REQ_PARADA:
                         if k not in p:
                             err(f"{pd}: falta '{k}'")
-                    sobran = set(p) - set(REQ_PARADA) - OPCIONALES_PARADA
+                    sobran = set(p) - set(REQ_PARADA) - OPCIONALES_PARADA - set(languages.LANGUAGES)
                     if sobran:
                         err(f"{pd}: campos desconocidos {sorted(sobran)}; una parada lleva "
                             f"{', '.join(REQ_PARADA)} y, si hace falta, {', '.join(sorted(OPCIONALES_PARADA))}")
@@ -1911,6 +1913,7 @@ def validar(datos):
     validar_claves_perspicacia(datos, err)
     validar_wol(datos, err)
     validar_homonimos(datos, err)
+    datos["_idiomas"] = validar_idiomas(datos, err)
     errores.extend(integrity(datos))
     errores.extend(pablo_en_su_sitio(datos))
     errores.extend(meses_en_su_anio(datos))
@@ -2037,6 +2040,8 @@ def validar_wol(datos, err, excepciones=None):
     def rec(x, donde):
         if isinstance(x, dict):
             for k, v in x.items():
+                if k in languages.LANGUAGES:
+                    continue   # la dirección en otro idioma la mira validar_idiomas
                 if k in ("url", "coord_url") and isinstance(v, str):
                     if v.startswith(("https://wol.jw.org/", "http://wol.jw.org/")) and v not in excepciones:
                         err(f"{donde}: {v} es de wol.jw.org; escribe la página de www.jw.org que da "
@@ -2056,6 +2061,118 @@ def validar_wol(datos, err, excepciones=None):
             rec(clean(o), o.get("_fichero", f"data/{t}"))
     rec(datos.get("calendar") or {}, "data/calendar.yaml")
     rec(datos.get("books") or [], "data/books.yaml")
+
+
+def validar_bloque(obj, block, lang, donde, err, primer_nivel=False, claves_extra=(), sello=True):
+    """Un bloque de idioma (`en`) de un objeto: solo textos que el objeto tiene, con la misma forma, y en el primer
+    nivel de una ficha, su `checked_on` y su `status`. Una fuente (sello=False) puede llevar `checked_on` sin `status`."""
+    if not isinstance(block, dict):
+        err(f"{donde}.{lang}: debe ser un mapa con los textos de este objeto en ese idioma")
+        return
+    for k, v in block.items():
+        es = obj.get(k)
+        if k in languages.STAMP_KEYS:
+            if not primer_nivel:
+                err(f"{donde}.{lang}.{k}: solo el bloque del primer nivel de la ficha lleva {k}")
+            continue
+        if k == "url":
+            if not isinstance(es, str):
+                err(f"{donde}.{lang}.url: el objeto no tiene url en español")
+            elif not isinstance(v, str) or not v.startswith(languages.LANGUAGE_URL[lang]):
+                err(f"{donde}.{lang}.url: {v} no es una página de jw.org en ese idioma "
+                    f"({' o '.join(languages.LANGUAGE_URL[lang])})")
+            elif v.startswith("https://wol.") and not es.startswith("https://wol."):
+                err(f"{donde}.{lang}.url: {v} es de wol.jw.org y la española es de www.jw.org; escribe la de www.jw.org")
+            continue
+        if k not in languages.TEXT_KEYS and k not in claves_extra:
+            err(f"{donde}.{lang}.{k}: no es un texto; en el bloque de un idioma solo van textos y su url")
+        elif es is None and k not in claves_extra:
+            err(f"{donde}.{lang}.{k}: el objeto no tiene {k} en español; una pareja necesita los dos")
+        elif isinstance(es, list):
+            if not isinstance(v, list) or len(v) != len(es) or not all(isinstance(x, str) and x.strip() for x in v):
+                err(f"{donde}.{lang}.{k}: debe ser una lista de {len(es)} frases, una por cada una en español")
+        elif not isinstance(v, str) or not v.strip():
+            err(f"{donde}.{lang}.{k}: debe ser un texto no vacío")
+    if primer_nivel and not sello:
+        if "checked_on" in block and not DIA.match(str(block["checked_on"])):
+            err(f"{donde}.{lang}.checked_on: '{block['checked_on']}' no es AAAA-MM-DD")
+    elif primer_nivel:
+        if not DIA.match(str(block.get("checked_on") or "")):
+            err(f"{donde}.{lang}: falta checked_on (AAAA-MM-DD), el día en que se cotejó con la fuente en ese idioma")
+        if block.get("status") not in ESTADOS:
+            err(f"{donde}.{lang}: status debe ser uno de {sorted(ESTADOS)}")
+
+
+def validar_idiomas(datos, err):
+    """Los textos en otro idioma (docs/ideas/ingles.md). La unidad es la ficha: si su primer nivel lleva `en`, cada texto
+    de dentro lleva su pareja, cada fuente que cita tiene su página en ese idioma y el bloque lleva su `checked_on` y su
+    `status`. Un bloque dentro de una ficha sin el del primer nivel es una ficha a medias. Los tipos que
+    data/languages.yaml da por completos piden el bloque en cada ficha. Devuelve {tipo: fichas con el idioma}."""
+    libros = datos.get("books") or []
+    fuentes = datos.get("sources") or {}
+    origen = datos.get("_origen_fuentes") or {}
+    cuenta = collections.Counter()
+    for lang in languages.LANGUAGES:
+        completos = set(((datos.get("languages") or {}).get(lang) or {}).get("complete") or [])
+        for t in sorted(completos - set(TYPES) - {"sources", "books"}):
+            err(f"data/languages.yaml: {lang}.complete nombra '{t}', que no es un tipo de data/")
+
+        def unidad(o, donde, extra=(), requeridas=()):
+            bloques = languages.blocks(o, lang)
+            arriba = lang in o
+            for camino, obj, block, _ in bloques:
+                validar_bloque(obj, block, lang, f"{donde}{'.' + camino if camino else ''}", err,
+                               primer_nivel=(camino == ""), claves_extra=extra if camino == "" else ())
+            if bloques and not arriba:
+                err(f"{donde}: tiene textos en '{lang}' pero no el bloque '{lang}' de su primer nivel; la ficha se "
+                    f"traduce entera, con su checked_on y su status")
+                return False
+            if not arriba:
+                return False
+            for camino, k in languages.missing_pairs(o, lang, donde, extra_keys=extra):
+                err(f"{camino}.{k}: le falta su pareja en '{lang}' (la ficha ya lleva '{lang}')")
+            for k in requeridas:
+                if not (o.get(lang) or {}).get(k):
+                    err(f"{donde}.{lang}: falta {k}")
+            for camino, fid in sources_of(o):
+                f = fuentes.get(fid)
+                if f is not None and languages.source_in(f, libros, lang) is None:
+                    err(f"{donde}{camino}: la fuente '{fid}' no tiene su página en '{lang}' "
+                        f"({origen.get(fid, 'data/sources/')}: añade su bloque {lang} con title, work y url)")
+            return True
+
+        for t in TYPES:
+            for o in datos.get(t) or []:
+                if unidad(clean(o), o["_fichero"]):
+                    cuenta[t] += 1
+                elif t in completos:
+                    err(f"{o['_fichero']}: data/languages.yaml da '{t}' por completo en '{lang}' y esta ficha no lo lleva")
+        for b in libros:
+            if unidad(b, f"data/books.yaml ({b.get('slug')})", extra=languages.BOOK_KEYS, requeridas=("name", "abbr", "slug")):
+                cuenta["books"] += 1
+            elif "books" in completos:
+                err(f"data/books.yaml ({b.get('slug')}): data/languages.yaml da los libros por completos y este no lleva '{lang}'")
+        vistos = {}
+        for b in libros:
+            ab = (b.get(lang) or {}).get("abbr") if isinstance(b.get(lang), dict) else None
+            if ab in vistos:
+                err(f"data/books.yaml ({b.get('slug')}): la abreviatura '{ab}' en '{lang}' ya es de {vistos[ab]}")
+            elif ab:
+                vistos[ab] = b.get("slug")
+        cal = datos.get("calendar") or {}
+        for m in (cal.get("months") or []) + (cal.get("explanation") or []):
+            unidad(m, f"data/calendar.yaml ({m.get('id')})")
+        for fid, f in fuentes.items():
+            donde = f"{origen.get(fid, 'data/sources/')} ({fid})"
+            if lang in f:
+                validar_bloque(f, f[lang], lang, donde, err, primer_nivel=True, sello=False)
+                for k in ("title", "url") + (("work",) if f.get("work") else ()):
+                    if not isinstance(f[lang], dict) or not f[lang].get(k):
+                        err(f"{donde}.{lang}: falta {k}")
+                cuenta["sources"] += 1
+            elif "sources" in completos and languages.source_in(f, libros, lang) is None:
+                err(f"{donde}: data/languages.yaml da las fuentes por completas y esta no tiene su página en '{lang}'")
+    return cuenta
 
 
 EXCEPCIONES_HOMONIMOS = RAIZ / "scripts" / "homonym_exceptions.yaml"
@@ -2303,6 +2420,9 @@ def main(argv=None):
     print(f"validate: {n} ficheros de entidades, {len(datos['sources'])} fuentes ({n_impl} capítulos implícitos), "
           f"{len(datos['books'])} libros y {len(datos.get('coverage') or {})} ficheros de cobertura; "
           f"{len(errores)} errores de esquema y {len(avisos)} avisos{' (' + detalle + ')' if detalle else ''}.")
+    idiomas = datos.get("_idiomas") or {}
+    if idiomas:
+        print("validate: con inglés, " + ", ".join(f"{n} de {k}" for k, n in sorted(idiomas.items())) + ".")
     fallos = []
     if args.links:
         lista = urls(datos)

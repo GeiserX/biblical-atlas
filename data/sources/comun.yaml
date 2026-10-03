@@ -6,6 +6,11 @@ tnm-tabla:
   level: 1
   published: null
   checked_on: '2026-09-27'
+  en:
+    title: Table of the Books of the Bible
+    work: New World Translation of the Holy Scriptures (Study Edition)
+    url: https://www.jw.org/en/library/bible/study-bible/books-of-the-bible-list/
+    checked_on: '2026-10-03'
 si-3:
   title: 'Estudio número 3: Sucesos fechados en la corriente del tiempo'
   work: “Toda Escritura es inspirada de Dios y provechosa”
@@ -350,6 +355,11 @@ it-timoteo:
   level: 1
   published: null
   checked_on: '2026-09-27'
+  en:
+    title: Timothy
+    work: Insight on the Scriptures
+    url: https://www.jw.org/en/library/books/Insight-on-the-Scriptures/Timothy/
+    checked_on: '2026-10-03'
 it-lucas:
   title: Lucas
   work: Perspicacia para comprender las Escrituras
@@ -525,6 +535,11 @@ it-filipos:
   level: 1
   published: null
   checked_on: '2026-09-27'
+  en:
+    title: Philippi
+    work: Insight on the Scriptures
+    url: https://www.jw.org/en/library/books/Insight-on-the-Scriptures/Philippi/
+    checked_on: '2026-10-03'
 it-anfipolis:
   title: Anfípolis
   work: Perspicacia para comprender las Escrituras

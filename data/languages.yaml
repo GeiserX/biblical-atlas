@@ -1,0 +1,7 @@
+# biblical-atlas: qué está ya en cada idioma además del español. El diseño está en docs/ideas/ingles.md.
+#
+# Una ficha con el bloque `en` en su primer nivel lleva el inglés de cada texto suyo; scripts/validate.py lo comprueba
+# siempre. `complete` es la lista de tipos (places, people, events..., sources, books) que ya lo tienen en cada ficha:
+# desde que un tipo entra aquí, una ficha de ese tipo sin su inglés es un error. La última tanda de un tipo lo añade.
+en:
+  complete: []

@@ -37,5 +37,17 @@ history:
   change: 'Timoteo, añadido a personas, no tenía fuente: Perspicacia «Timoteo» lo pone con Pablo en Filipos (Hch
     16:11-17:10).'
   source: it-timoteo
+  en:
+    change: 'Timothy, added to the people, had no source: Insight, “Timothy”, places him with Paul in Philippi (Ac
+      16:11-17:10).'
 checked_on: '2026-09-29'
 status: verified
+en:
+  title: Lydia and her household are baptized in Philippi
+  summary: On a Sabbath, by a river outside Philippi, Paul speaks to some women. Lydia listens, is baptized with her
+    household, and persuades the group to stay at her home.
+  reason: Insight, “Lydia” (pars. 1 and 2), and the study note on Ac 16:14 date her conversion to about 50 C.E.
+    Insight, “Timothy”, places him with Paul in Philippi.
+  search: Lydia Philippi
+  checked_on: '2026-10-03'
+  status: verified
