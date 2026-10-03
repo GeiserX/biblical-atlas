@@ -2063,7 +2063,10 @@ function rellenoEncuadre(caja = [[0, 0], [0, 0]]) {
   // centrada 14 px encima de su lugar: media píldora y algo de aire a cada lado, para que no salga cortada. Junto a una
   // tarjeta el margen es menor: con el mapa bajo de 1440 × 900, uno de 48 px dejaba entre la leyenda y «Mientras
   // tanto» una columna de 53 px, y una zona de 20 km se veía con 4 grados de ancho.
-  const borde = estrecha() ? { top: 44, bottom: Math.min(altoHoja() + 20, H * 0.6), left: 48, right: 50 } : { top: 44, bottom: 24, left: 48, right: 60 };
+  // En el móvil la hoja inferior (la ficha o la de lectura, 46vh) se deja libre entera mientras quede un mapa usable
+  // encima; solo si dejaría menos de 80 px, se acepta que tape un poco y el relleno se queda en el 60 % del mapa.
+  const hoja = altoHoja() + 20, arriba = 44;
+  const borde = estrecha() ? { top: arriba, bottom: H - arriba - hoja >= 80 ? hoja : Math.min(hoja, H * 0.6), left: 48, right: 50 } : { top: arriba, bottom: 24, left: 48, right: 60 };
   const ts = tapas(), LADO = 24, ENCIMA = 40, DEBAJO = 16;
   // La forma de la caja en píxeles al zoom 0; un punto cuenta como una caja diminuta, y gana el hueco más ancho y alto.
   const [[o, s], [e, n]] = caja;

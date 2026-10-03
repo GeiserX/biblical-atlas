@@ -115,7 +115,7 @@ async function fromSearch(screen, text) {
 const hidden = (page) => page.evaluate(() => {
   const { BE } = window.__be, E = BE.E, m = window.__be.map, sel = E.sel;
   const c = m.getContainer().getBoundingClientRect();
-  const cards = ['#leyenda', '#mientras', '#vista-recorrido > *', '#vista-ahora', '#situacion', '#mapa .maplibregl-ctrl-top-right', '.modos', '#tira-suceso', '#leyenda-boton', ...(innerWidth <= 760 ? ['#panel'] : [])]
+  const cards = ['#leyenda', '#mientras', '#vista-recorrido > *', '#vista-ahora', '#situacion', '#mapa .maplibregl-ctrl-top-right', '.modos', '#tira-suceso', '#leyenda-boton', ...(innerWidth <= 760 ? ['#panel', '#vista-lectura'] : [])]
     .flatMap((q) => [...document.querySelectorAll(q)]).filter((el) => !el.hidden && el.offsetParent)
     .map((el) => ({ el, r: el.getBoundingClientRect() }));
   const places = (p) => { const s = BE.parseSel(p?.sel); return !s ? [] : s.tipo === 'lugar' ? [s.id] : [...BE.implicados(s).lugares]; };
@@ -214,5 +214,19 @@ test('the tour with the strip raised at 1440, and an event chosen on the timelin
   await still(page);
   assert.equal(await page.evaluate(() => window.BE.selTexto(window.BE.E.sel)), 'evento:destruccion-de-jerusalen-607');
   await assertFramed(page, '430, an event pressed on the timeline');
+  await page.context().close();
+});
+
+test('430: in reading mode the passage chosen is framed above the reading sheet, not under it', async () => {
+  // The reading sheet takes 46 % of the screen, more than the 60 % of the map the margin was capped at: the lower part
+  // of the sheet covered what was framed.
+  const page = await open(PHONE, 'leer=hch-16');
+  await still(page);
+  await page.waitForFunction(() => !document.querySelector('#vista-lectura')?.hidden && document.querySelector('[data-lectura-pasaje]'));
+  for (const i of [0, 3]) {
+    await page.evaluate((k) => document.querySelector(`[data-lectura-pasaje="${k}"]`).click(), i);
+    await still(page);
+    await assertFramed(page, `430, reading Hechos 16, passage ${i + 1}`);
+  }
   await page.context().close();
 });
