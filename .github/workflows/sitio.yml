@@ -20,10 +20,17 @@ env:
   PLAYWRIGHT_VERSION: 1.63.0
 
 jobs:
+  # En un solo runner la batería pasa de 45 minutos: se reparte en cinco a la vez. timeline-marks.test.mjs va solo, porque
+  # él solo tarda tanto como varios ficheros juntos; el resto lo reparte node (--test-shard), así que un fichero nuevo
+  # entra solo en una de las cuatro partes.
   navegador:
-    name: pruebas del sitio
+    name: pruebas (${{ matrix.parte }})
     runs-on: ubuntu-latest
-    timeout-minutes: 45
+    timeout-minutes: 40
+    strategy:
+      fail-fast: false
+      matrix:
+        parte: ['1/4', '2/4', '3/4', '4/4', timeline-marks]
     steps:
       - uses: actions/checkout@v7
         with:
@@ -46,13 +53,22 @@ jobs:
       - name: Instalar playwright-core
         run: npm install --no-save --no-package-lock --prefix "$RUNNER_TEMP/pw" "playwright-core@$PLAYWRIGHT_VERSION"
       - name: Caché de Chromium
-        uses: actions/cache@v6
+        id: chromium
+        uses: actions/cache/restore@v6
         with:
           path: ~/.cache/ms-playwright
           key: chromium-${{ runner.os }}-${{ env.PLAYWRIGHT_VERSION }}
       # Con la caché puesta solo instala las bibliotecas del sistema; sin ella, también descarga el navegador.
       - name: Instalar Chromium
         run: node "$RUNNER_TEMP/pw/node_modules/playwright-core/cli.js" install --with-deps --only-shell chromium
+      # Se guarda ya, no al final: una prueba roja no debe costar la descarga de la vez siguiente.
+      - name: Guardar Chromium en la caché
+        if: steps.chromium.outputs.cache-hit != 'true'
+        uses: actions/cache/save@v6
+        continue-on-error: true
+        with:
+          path: ~/.cache/ms-playwright
+          key: chromium-${{ runner.os }}-${{ env.PLAYWRIGHT_VERSION }}
 
       # Un fichero detrás de otro (--test-concurrency=1): las pruebas abren un navegador cada una.
       - name: Pruebas
@@ -60,13 +76,29 @@ jobs:
           PLAYWRIGHT_CORE: ${{ runner.temp }}/pw/node_modules/playwright-core
           PLAYWRIGHT_MODULE_DIR: ${{ runner.temp }}/pw/node_modules
           BE_TRACES: ${{ runner.temp }}/trazas
-        run: node --test --test-concurrency=1 --import ./tests/site/failure-traces.mjs tests/site/*.test.mjs
+          PARTE: ${{ matrix.parte }}
+        run: |
+          if [ "$PARTE" = timeline-marks ]; then
+            node --test --test-concurrency=1 --import ./tests/site/failure-traces.mjs tests/site/timeline-marks.test.mjs
+          else
+            node --test --test-concurrency=1 --test-shard="$PARTE" --import ./tests/site/failure-traces.mjs \
+              $(ls tests/site/*.test.mjs | grep -v '/timeline-marks\.test\.mjs$')
+          fi
 
       - name: Subir las trazas de lo que falló
         if: failure()
         uses: actions/upload-artifact@v7
         with:
-          name: trazas
+          name: trazas-${{ strategy.job-index }}
           path: ${{ runner.temp }}/trazas
           if-no-files-found: ignore
           retention-days: 14
+
+  # Un solo nombre para todo: es el que se marca como obligatorio en main, y no cambia si cambian las partes.
+  resultado:
+    name: pruebas del sitio
+    if: always()
+    needs: navegador
+    runs-on: ubuntu-latest
+    steps:
+      - run: test "${{ needs.navegador.result }}" = success
