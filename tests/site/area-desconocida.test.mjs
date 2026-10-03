@@ -79,6 +79,9 @@ function variant(name, change) {
   fs.mkdirSync(dir);
   fs.writeFileSync(path.join(dir, 'data.json'), JSON.stringify(D));
   fs.writeFileSync(path.join(dir, 'data.js'), `window.BIBLICAL_ATLAS_DATA = ${JSON.stringify(D)};\n`);
+  // The site opens with data.core.json (site/js/data-chunks.js): the changed data whole as the core, and nothing to add.
+  fs.writeFileSync(path.join(dir, 'data.core.json'), JSON.stringify(D));
+  fs.writeFileSync(path.join(dir, 'data.detail.json'), '{}');
   variants[name] = { data: dir };
 }
 
