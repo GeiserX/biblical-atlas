@@ -431,10 +431,20 @@ function elegirResultado(r) {
     seleccionar(r.sel);
   }
 }
+/** Busca y abre la lista. La búsqueda lee textos del detalle (js/data-chunks.js): si aún no ha llegado, busca al
+    llegar, si la caja sigue con algo escrito y con el foco. */
+function buscarYPintar(texto) {
+  if (!BE.chunks.ready(rebuscar)) return;
+  resultados = buscar(texto); activo = 0; pintarResultados();
+}
+function rebuscar() {
+  const q = $('#q');
+  if (q.value.trim() && document.activeElement === q) buscarYPintar(q.value);
+}
 function iniciarBusqueda() {
   const q = $('#q');
-  q.addEventListener('input', () => { resultados = buscar(q.value); activo = 0; pintarResultados(); });
-  q.addEventListener('focus', () => { if (q.value.trim()) { resultados = buscar(q.value); pintarResultados(); } });
+  q.addEventListener('input', () => buscarYPintar(q.value));
+  q.addEventListener('focus', () => { if (q.value.trim() && BE.chunks.ready(rebuscar)) { resultados = buscar(q.value); pintarResultados(); } });
   q.addEventListener('keydown', (e) => {
     if (e.key === 'ArrowDown') { e.preventDefault(); activo = Math.min(activo + 1, resultados.length - 1); pintarResultados(); }
     else if (e.key === 'ArrowUp') { e.preventDefault(); activo = Math.max(activo - 1, 0); pintarResultados(); }
@@ -446,7 +456,7 @@ function iniciarBusqueda() {
   q.addEventListener('blur', () => setTimeout(() => { if (document.activeElement !== q) cerrarResultados(); }, 150));
   $('#resultados').addEventListener('pointerdown', (e) => {
     const s = e.target.closest('[data-sugerencia]');
-    if (s) { e.preventDefault(); q.value = s.dataset.sugerencia; resultados = buscar(q.value); activo = 0; pintarResultados(); return; }
+    if (s) { e.preventDefault(); q.value = s.dataset.sugerencia; buscarYPintar(q.value); return; }
     const o = e.target.closest('[data-i]');
     if (o) { e.preventDefault(); elegir(+o.dataset.i); }
   });
@@ -457,7 +467,7 @@ function buscarTexto(texto) {
   const q = $('#q');
   q.value = texto;
   q.focus();
-  resultados = buscar(texto); activo = 0; pintarResultados();
+  buscarYPintar(texto);
 }
 
 // ---------------------------------------------------------------------------

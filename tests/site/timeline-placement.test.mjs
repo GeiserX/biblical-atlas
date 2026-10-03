@@ -118,7 +118,7 @@ function serve(siteDir, dataDir) {
       return;
     }
     const data = v?.data || dataDir;
-    const file = ['data.json', 'data.js'].includes(rel) ? path.join(data, rel) : path.join(siteDir, rel);
+    const file = /^data(\.[a-z]+)?\.json$|^data\.js$/.test(rel) ? path.join(data, rel) : path.join(siteDir, rel);
     if (!file.startsWith(siteDir) && !file.startsWith(dataDir)) { res.writeHead(403).end(); return; }
     fs.readFile(file, (err, body) => {
       if (err) { res.writeHead(404).end(); return; }

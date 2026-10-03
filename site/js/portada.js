@@ -182,9 +182,13 @@ hoja.addEventListener('click', (e) => {
 // ---------------------------------------------------------------------------
 let filas = [], activa = 0, todas = 0;
 const maxFilas = () => (estrecha() ? 4 : 6);
+/** ¿Puede contestar la búsqueda? Necesita el núcleo y el detalle (js/data-chunks.js); si falta el detalle, lo pide y
+    vuelve a contestar al llegar. Mientras tanto, la caja dice «Cargando los nombres…» y contesta los años. */
+const listos = () => !!BE.D && BE.chunks.ready(reactualizar);
+function reactualizar() { if (document.activeElement === input && input.value.trim()) actualizar(); }
 function filasDe(q) {
   todas = 0;
-  if (!BE.D) {
+  if (!listos()) {
     const y = BE.anioPregunta(q);   // la misma regla que la búsqueda del sitio: «607» es a.e.c.
     return y == null ? [] : [{ anio: y, titulo: `Ir a ${BE.fmtAnio(y)}`, forma: 'anio', tipo: 'fecha', meta: 'mueve el cursor de tiempo y enseña quién había' }];
   }
@@ -207,7 +211,7 @@ function pintarLista() {
     if (BE.D && todas > filas.length && !estrecha()) {
       html += `<li role="option" id="portada-op-todo" class="portada-op portada-op--todo${activa === filas.length ? ' portada-op--activa' : ''}" aria-selected="${activa === filas.length}" data-todo="1"><span class="portada-op__texto"><span class="portada-op__tit">Ver los ${todas} resultados en el mapa</span></span></li>`;
     }
-  } else if (!BE.D) {
+  } else if (!listos()) {
     html = `<li class="portada-op portada-op--vacia" role="presentation">${BE.fallo ? 'No se ha podido abrir el mapa.' : 'Cargando los nombres…'}</li>`;
   } else {
     const sug = BE.sugerencias(q);
@@ -224,7 +228,7 @@ function pintarLista() {
   else input.removeAttribute('aria-activedescendant');
   // Lo que se anuncia es lo que se ofrece: en el teléfono, sin la fila «Ver los…», «4 de 14 sugerencias».
   const total = todas || filas.length, sinTodo = filas.length < total && n === filas.length;
-  const texto = filas.length ? `${sinTodo ? `${filas.length} de ${total}` : total} ${total === 1 ? 'sugerencia' : 'sugerencias'}` : (BE.D ? `No encontramos «${q.trim()}».` : 'Cargando los nombres…');
+  const texto = filas.length ? `${sinTodo ? `${filas.length} de ${total}` : total} ${total === 1 ? 'sugerencia' : 'sugerencias'}` : (listos() ? `No encontramos «${q.trim()}».` : 'Cargando los nombres…');
   if (texto !== estado.textContent) estado.textContent = texto;
 }
 function cerrarLista() {
