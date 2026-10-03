@@ -48,6 +48,10 @@ const ROOT = process.env.BE_ROOT ? path.resolve(process.env.BE_ROOT) : path.reso
 const REFERENCE_REV = process.env.BE_REFERENCE_REV || 'c150bd3';
 const DESKTOP = { viewport: { width: 1440, height: 900 } };
 const PHONE = { viewport: { width: 430, height: 932 }, isMobile: true, hasTouch: true };
+// How long a page may take to start and paint its first frame. These tests wait for the state they read (the data, the
+// card, the flag), never for a fixed time; this is only when they give up. With the map drawn by SwiftShader on the CPU,
+// the first frame after the data came 10 s later on a loaded machine, and the flag of the baptism of Lydia was never read.
+const BOOT = 60000;
 
 // Events and letters outside Acts that this change moves, and why. 1: a «tras» of the same series bounded the whole
 // group with the raw date of its target, so the group did not fit and fell back to its dates. 2: Paul was drawn on
@@ -152,7 +156,7 @@ async function open(prefix = '', hash = '', opts = DESKTOP) {
     p.on('console', (m) => { if (m.type() === 'error' && !/GPU stall|GL Driver Message|ReadPixels/.test(m.text())) errors.push(`console: ${m.text()}`); });
   }
   await p.goto(`${origin}${prefix}/index.html${hash ? `#${hash}` : ''}`);
-  await p.waitForFunction(() => window.BE && window.BE.D && Array.isArray(window.BE.P) && window.BE.P.length, null, { timeout: 20000 });
+  await p.waitForFunction(() => window.BE && window.BE.D && Array.isArray(window.BE.P) && window.BE.P.length, null, { timeout: BOOT });
   return p;
 }
 before(async () => {
@@ -444,7 +448,7 @@ test('an old link to an event of a block takes the cursor to the event; the card
   // Before be-64b.15 the gathering at Mizpah sat in 1432 a.e.c.; links shared then carry that t.
   const id = 'israel-se-reune-en-mizpa-contra-guibea';
   const p = await open('', `t=-1432.7&v=12&sel=evento:${id}`);
-  await p.waitForFunction(() => document.querySelector('#panel')?.textContent.includes('Cuándo'), null, { timeout: 10000 });
+  await p.waitForFunction(() => document.querySelector('#panel')?.textContent.includes('Cuándo'), null, { timeout: BOOT });
   const r = await p.evaluate((id) => {
     const BE = window.BE, e = BE.D.eventos.find((x) => x.id === id), w = BE.ventanaEvento(e), t = window.__be.E.t;
     return { w, t, panel: document.querySelector('#panel').textContent.replace(/\s+/g, ' '), ayuda: document.querySelector('#fecha-valor').title };
@@ -458,7 +462,7 @@ test('an old link to an event of a block takes the cursor to the event; the card
   const dentro = await q.evaluate(() => { const BE = window.BE; const w = BE.ventanaEvento(BE.D.eventos.find((x) => x.id === 'israel-pierde-la-segunda-batalla-contra-benjamin')); return w[0] + (w[1] - w[0]) / 3; });
   await q.context().close();
   const q2 = await open('', `t=${dentro}&v=0.05&sel=evento:israel-pierde-la-segunda-batalla-contra-benjamin`);
-  await q2.waitForFunction(() => document.querySelector('#panel')?.textContent.includes('Cuándo'), null, { timeout: 10000 });
+  await q2.waitForFunction(() => document.querySelector('#panel')?.textContent.includes('Cuándo'), null, { timeout: BOOT });
   const r2 = await q2.evaluate(() => ({ t: window.__be.E.t, panel: document.querySelector('#panel').textContent.replace(/\s+/g, ' ') }));
   await q2.context().close();
   assert.ok(Math.abs(r2.t - dentro) < 1e-6, `a t inside the event is kept (${r2.t} and ${dentro})`);
@@ -474,7 +478,7 @@ test('during the baptism of Lydia the flag says Paul is in Philippi, on a deskto
   for (const opts of [DESKTOP, PHONE]) {
     for (const t of moments) {
       const p = await open('', `t=${t}`, opts);
-      await p.waitForFunction(() => document.querySelector('#pista')?.getAttribute('aria-valuetext'), null, { timeout: 10000 });
+      await p.waitForFunction(() => document.querySelector('#pista')?.getAttribute('aria-valuetext'), null, { timeout: BOOT });
       const flag = await p.getAttribute('#pista', 'aria-valuetext');
       assert.match(flag, /Pablo en Filipos/, `${opts.viewport.width} px at ${t}: the flag says «${flag}»`);
       await p.context().close();
