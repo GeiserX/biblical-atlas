@@ -46,6 +46,8 @@ __pycache__/
 /site/stats.json
 .DS_Store
 /site/data.js
+/site/data.core.json
+/site/data.detail.json
 /site/_local/
 /site/docs/
 

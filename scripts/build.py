@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
-"""Compila data/ en dist/data.json, site/data.json, site/data.js, dist/biblical-atlas.sqlite
-y el registro de investigación de docs/investigacion/registro/.
+"""Compila data/ en dist/data.json, site/data.json, site/data.js, site/data.core.json, site/data.detail.json,
+dist/biblical-atlas.sqlite y el registro de investigación de docs/investigacion/registro/.
 
 Uso:  python3 scripts/build.py [--data DIR] [--out DIR]
 
-Con --out DIR (alias --salida) escribe data.json, data.js, biblical-atlas.sqlite y registro/ dentro de DIR y no
-toca site/, dist/ ni docs/. Sirve para probar datos sin pisar lo que compila otro.
+Con --out DIR (alias --salida) escribe data.json, data.js, los dos trozos del sitio (data.core.json y
+data.detail.json), biblical-atlas.sqlite y registro/ dentro de DIR y no toca site/, dist/ ni docs/. Sirve para probar datos sin pisar lo que compila otro.
 
 Los YAML de data/ tienen el núcleo en inglés (docs/investigacion/modelo.md). build.py hace de adaptador: lo que el
 sitio ya leía sale con sus nombres y valores de siempre, con el mapa de scripts/migration/map.yaml leído al revés, y
@@ -901,6 +901,145 @@ def escribir_json(salida, rutas, ruta_js):
     ruta_js.write_text(js, encoding="utf-8")
 
 
+# ---------------------------------------------------------------- los dos trozos del sitio
+
+# El sitio abre con data.core.json y pide data.detail.json cuando una ficha, el grafo o la búsqueda lo necesitan
+# (site/js/data-chunks.js). data.json sigue entero para el servidor MCP y para quien lo lea de fuera. La regla está
+# en docs/development.md, «Los trozos de los datos»: una clave de DETAIL_KEYS va al detalle, a cualquier profundidad
+# dentro de cada ficha de su colección; las demás se quedan en el núcleo. Las relaciones y las fuentes van al revés:
+# solo las claves de RELATION_CORE_KEYS y SOURCE_CORE_KEYS se quedan en el núcleo. Las demás colecciones van enteras
+# en el núcleo.
+DETAIL_KEYS = {
+    "personas": {"razon", "historial", "enlaces", "consultado", "checked_on", "perspicacia", "no_afirmamos",
+                 "no_confundir_con", "desambiguacion", "resumen", "offices"},
+    "lugares": {"razon", "historial", "enlaces", "consultado", "checked_on", "coord_nota", "coord_url", "coord_fuente",
+                "no_afirmamos", "resumen"},
+    "eventos": {"razon", "historial", "enlaces", "consultado"},
+    "viajes": {"razon", "historial", "consultado", "checked_on", "resumen"},
+}
+# Lo que leen el mapa y la línea de una relación: dónde y cuándo sitúa a alguien, si es deducida y sus fuentes.
+RELATION_CORE_KEYS = {"tipo", "persona", "lugar", "fecha", "fuentes", "deducido", "estado"}
+# De una fuente, el filtro «Solo fuentes principales» lee su nivel y las cifras de la portada, si es un capítulo.
+SOURCE_CORE_KEYS = {"nivel", "implicita"}
+CHUNK_FILES = {"core": "data.core.json", "detail": "data.detail.json"}
+
+
+def _strip_keys(value, keys):
+    """(núcleo, detalle) de un valor: las claves de `keys` van enteras al detalle, a cualquier profundidad. Una lista
+    deja en el detalle una lista igual de larga, con null donde no hay nada que mover; sin nada que mover, None."""
+    if isinstance(value, dict):
+        core, detail = {}, {}
+        for k, v in value.items():
+            if k in keys:
+                detail[k] = v
+                continue
+            core[k], d = _strip_keys(v, keys)
+            if d is not None:
+                detail[k] = d
+        return core, (detail or None)
+    if isinstance(value, list):
+        pairs = [_strip_keys(v, keys) for v in value]
+        details = [d for _, d in pairs]
+        return [c for c, _ in pairs], (details if any(d is not None for d in details) else None)
+    return value, None
+
+
+def _keep_keys(obj, keys):
+    """(núcleo, detalle) de un objeto que solo deja en el núcleo las claves de `keys`."""
+    core = {k: v for k, v in obj.items() if k in keys}
+    detail = {k: v for k, v in obj.items() if k not in keys}
+    return core, (detail or None)
+
+
+def split_chunks(salida):
+    """(núcleo, detalle) de data.json. Unir el detalle al núcleo con merge_chunks da data.json otra vez."""
+    core, detail = {}, {}
+    for name, value in salida.items():
+        if name == "fuentes":
+            core[name], detail[name] = {}, {}
+            for fid, f in value.items():
+                core[name][fid], d = _keep_keys(f, SOURCE_CORE_KEYS)
+                if d:
+                    detail[name][fid] = d
+            continue
+        if name not in DETAIL_KEYS:
+            core[name] = value
+            continue
+        by_id = isinstance(value, dict)
+        items = list(value.items()) if by_id else list(enumerate(value))
+        cores, details = {}, {}
+        for key, obj in items:
+            obj = dict(obj)
+            rel_detail = None
+            if obj.get("relaciones"):
+                pairs = [_keep_keys(r, RELATION_CORE_KEYS) for r in obj["relaciones"]]
+                obj["relaciones"] = [c for c, _ in pairs]
+                if any(d for _, d in pairs):
+                    rel_detail = [d for _, d in pairs]
+            c, d = _strip_keys(obj, DETAIL_KEYS[name])
+            if rel_detail:
+                d = {**(d or {}), "relaciones": rel_detail}
+            cores[key] = c
+            if d:
+                details[key] = d
+        if by_id:
+            core[name], detail[name] = cores, details
+        else:
+            core[name] = [cores[i] for i in range(len(value))]
+            detail[name] = [details.get(i) for i in range(len(value))]
+    return core, detail
+
+
+def merge_chunks(core, detail):
+    """Une el detalle al núcleo, como hace el sitio (mergeInto en site/js/data-chunks.js): un objeto se une clave a
+    clave, una lista posición a posición (null no aporta nada) y cualquier otro valor se pone. Cambia `core`."""
+    if detail is None:
+        return core
+    if isinstance(core, dict) and isinstance(detail, dict):
+        for k, v in detail.items():
+            core[k] = merge_chunks(core[k], v) if k in core else v
+        return core
+    if isinstance(core, list) and isinstance(detail, list) and len(core) == len(detail):
+        return [merge_chunks(c, d) for c, d in zip(core, detail)]
+    return detail
+
+
+def check_chunks(salida, core, detail):
+    """Errores de los trozos: el núcleo más el detalle tienen que dar data.json, clave a clave, y las cifras de las
+    fuentes de la portada (que cuenta sobre el núcleo) tienen que ser las de data.json."""
+    errores = []
+    union = merge_chunks(json.loads(json.dumps(core)), json.loads(json.dumps(detail)))
+    if union != salida:
+        perdidas = sorted(_diff_paths(salida, union))
+        errores.append(f"núcleo + detalle no dan data.json: {len(perdidas)} diferencias, la primera en {perdidas[0]}")
+    if cifras_fuentes(core) != cifras_fuentes(salida):
+        errores.append(f"las cifras de las fuentes del núcleo {cifras_fuentes(core)} no son las de data.json "
+                       f"{cifras_fuentes(salida)}: alguna fuente solo la cita una clave que va al detalle")
+    return errores
+
+
+def _diff_paths(a, b, path="$"):
+    """Rutas donde a y b no coinciden: falta una clave, sobra o cambia un valor."""
+    if isinstance(a, dict) and isinstance(b, dict):
+        for k in a.keys() | b.keys():
+            if k not in a or k not in b:
+                yield f"{path}.{k}"
+            else:
+                yield from _diff_paths(a[k], b[k], f"{path}.{k}")
+    elif isinstance(a, list) and isinstance(b, list) and len(a) == len(b):
+        for i, (x, y) in enumerate(zip(a, b)):
+            yield from _diff_paths(x, y, f"{path}[{i}]")
+    elif a != b:
+        yield path
+
+
+def escribir_trozos(trozos, carpeta):
+    """data.core.json y data.detail.json junto al data.json del sitio, sin espacios: el sitio no los lee a mano."""
+    for nombre, valor in trozos.items():
+        (carpeta / CHUNK_FILES[nombre]).write_text(json.dumps(valor, ensure_ascii=False, separators=(",", ":")) + "\n",
+                                                  encoding="utf-8")
+
+
 CONTADOS = ("lugares", "personas", "eventos", "periodos", "cartas", "viajes", "hallazgos", "recorridos", "fuentes", "libros")
 
 
@@ -1396,13 +1535,18 @@ def main(argv=None):
     ap = argparse.ArgumentParser(description="Compila data/ en dist/, site/data.json, site/data.js y el registro de investigación.")
     ap.add_argument("--data", default=str(RAIZ / "data"), help="directorio de datos (por defecto data/)")
     ap.add_argument("--out", "--salida", dest="out", default=None,
-                    help="escribe data.json, data.js, stats.json, biblical-atlas.sqlite y registro/ en DIR en vez de site/, dist/ y docs/")
+                    help="escribe data.json, data.js, los dos trozos, stats.json, biblical-atlas.sqlite y registro/ en DIR "
+                         "en vez de site/, dist/ y docs/")
     args = ap.parse_args(argv)
     datos, _ = cargar(args.data)
     errores = integridad(datos)
     salida = legado = None
     if not errores:
         salida, legado, errores = componer(datos, datetime.date.today().isoformat())
+    if not errores:
+        core, detail = split_chunks(salida)
+        trozos = {"core": core, "detail": detail}
+        errores = check_chunks(salida, core, detail)
     if errores:
         for e in errores:
             print("ERROR", e, file=sys.stderr)
@@ -1411,12 +1555,14 @@ def main(argv=None):
     if args.out:
         destino = Path(args.out).resolve()
         escribir_json(salida, [destino / "data.json"], destino / "data.js")
+        escribir_trozos(trozos, destino)
         escribir_resumen(salida, destino / "stats.json")
         n_hf = escribir_sqlite(salida, destino / "biblical-atlas.sqlite")
         escribir_registro(salida, legado, datos, destino / "registro")
         donde = f" en {destino}"
     else:
         escribir_json(salida, [RAIZ / "dist" / "data.json", RAIZ / "site" / "data.json"], RAIZ / "site" / "data.js")
+        escribir_trozos(trozos, RAIZ / "site")
         escribir_resumen(salida, RAIZ / "site" / "stats.json")
         n_hf = escribir_sqlite(salida, RAIZ / "dist" / "biblical-atlas.sqlite")
         escribir_registro(salida, legado, datos, RAIZ / "docs" / "investigacion" / "registro")
