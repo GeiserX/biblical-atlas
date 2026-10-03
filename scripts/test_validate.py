@@ -924,5 +924,113 @@ class Transcurrido(unittest.TestCase):
         self.assertEqual(len(self.errores(self.suceso("a", 1), self.suceso("b", 2, {"days": 1, "reason": "x"}, -1300, -1290))), 1)
 
 
+class Idiomas(unittest.TestCase):
+    """validar_idiomas: la ficha se traduce entera, cada fuente que cita tiene su página en ese idioma, y un tipo que
+    data/languages.yaml da por completo pide el inglés en cada ficha (docs/ideas/ingles.md)."""
+
+    LIBROS = [{"slug": "hechos", "num": 44, "name": "Hechos", "abbr": "Hch", "chapters": 28,
+               "en": {"name": "Acts", "abbr": "Ac", "slug": "acts", "checked_on": "2026-10-03", "status": "verified"}},
+              {"slug": "romanos", "num": 45, "name": "Romanos", "abbr": "Ro", "chapters": 16}]
+    FUENTES = {"it-x": {"title": "X", "work": "Perspicacia", "url": "https://www.jw.org/es/biblioteca/libros/P/X/", "level": 1,
+                        "en": {"title": "X", "work": "Insight on the Scriptures",
+                               "url": "https://www.jw.org/en/library/books/Insight-on-the-Scriptures/X/"}},
+               "it-y": {"title": "Y", "work": "Perspicacia", "url": "https://www.jw.org/es/biblioteca/libros/P/Y/", "level": 1},
+               "hechos-16": {"title": "Hechos 16", "url": "https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/hechos/16/"},
+               "romanos-1": {"title": "Romanos 1", "url": "https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/romanos/1/"},
+               "geo": {"title": "Bible Geocoding Data", "url": "https://github.com/openbibleinfo/Bible-Geocoding-Data", "level": 2}}
+
+    def lugar(self, en=True, **cambios):
+        o = {"id": "x", "_fichero": "data/places/x.yaml", "name": "Equis", "names": [{"name": "Equis", "en": {"name": "Ex"}}],
+             "summary": "Un lugar.", "reason": "Perspicacia «X».", "sources": ["it-x", "hechos-16", "geo"],
+             "links": [{"title": "Perspicacia: «X»", "url": "https://www.jw.org/es/biblioteca/libros/P/X/", "type": "perspicacia",
+                        "en": {"title": "Insight: “X”", "url": "https://www.jw.org/en/library/books/Insight-on-the-Scriptures/X/"}}],
+             "date": {"from": 49, "to": 49, "text": "c. 50 e.c."},
+             "checked_on": "2026-10-03", "status": "verified"}
+        if en:
+            o["en"] = {"name": "Ex", "summary": "A place.", "reason": "Insight, “X”.", "checked_on": "2026-10-03", "status": "verified"}
+        o.update(cambios)
+        return o
+
+    def errores(self, *lugares, completos=()):
+        datos = {"books": self.LIBROS, "sources": self.FUENTES, "calendar": {}, "_origen_fuentes": {},
+                 "languages": {"en": {"complete": list(completos)}}, "places": list(lugares)}
+        out = []
+        cuenta = validate.validar_idiomas(datos, out.append)
+        return out, cuenta
+
+    def test_una_ficha_entera_vale(self):
+        e, cuenta = self.errores(self.lugar())
+        self.assertEqual(e, [])
+        self.assertEqual(cuenta["places"], 1)
+
+    def test_sin_ingles_no_pide_nada(self):
+        o = self.lugar(en=False)
+        o["names"] = [{"name": "Equis"}]
+        o["links"][0].pop("en")
+        self.assertEqual(self.errores(o)[0], [])
+
+    def test_falta_una_pareja(self):
+        o = self.lugar()
+        del o["en"]["summary"]
+        e, _ = self.errores(o)
+        self.assertEqual(len(e), 1)
+        self.assertIn("x.yaml.summary: le falta su pareja", e[0])
+        o = self.lugar()
+        del o["names"][0]["en"]
+        self.assertIn("names[0].name: le falta su pareja", self.errores(o)[0][0])
+
+    def test_un_bloque_dentro_sin_el_de_arriba_es_una_ficha_a_medias(self):
+        e, _ = self.errores(self.lugar(en=False))
+        self.assertEqual(len(e), 1)
+        self.assertIn("la ficha se traduce entera", e[0])
+
+    def test_la_fecha_que_se_escribe_sola_no_pide_pareja_y_la_otra_si(self):
+        self.assertEqual(self.errores(self.lugar(date={"from": 49, "to": 49, "text": "c. 50 e.c."}))[0], [])
+        e, _ = self.errores(self.lugar(date={"from": 49, "to": 49, "text": "primavera de 50 e.c."}))
+        self.assertEqual(len(e), 1)
+        self.assertIn("date.text: le falta su pareja", e[0])
+
+    def test_una_fuente_sin_pagina_en_ingles(self):
+        e, _ = self.errores(self.lugar(sources=["it-x", "it-y"]))
+        self.assertEqual(len(e), 1)
+        self.assertIn("'it-y' no tiene su página en 'en'", e[0])
+        # Un capítulo se escribe solo si su libro ya tiene el slug en inglés.
+        self.assertEqual(self.errores(self.lugar(sources=["hechos-16"]))[0], [])
+        self.assertIn("'romanos-1' no tiene su página", self.errores(self.lugar(sources=["romanos-1"]))[0][0])
+
+    def test_lo_que_no_es_pareja_ni_texto(self):
+        o = self.lugar()
+        o["en"]["disambiguation"] = "No es la otra."
+        self.assertIn("no tiene disambiguation en español", self.errores(o)[0][0])
+        o = self.lugar()
+        o["en"]["lat"] = 1
+        self.assertIn("no es un texto", self.errores(o)[0][0])
+        o = self.lugar()
+        o["names"][0]["en"]["status"] = "verified"
+        self.assertIn("solo el bloque del primer nivel", self.errores(o)[0][0])
+
+    def test_sello_y_direccion(self):
+        o = self.lugar()
+        del o["en"]["checked_on"]
+        self.assertIn("falta checked_on", self.errores(o)[0][0])
+        o = self.lugar()
+        o["links"][0]["en"]["url"] = "https://www.jw.org/es/biblioteca/libros/P/X/"
+        self.assertIn("no es una página de jw.org en ese idioma", self.errores(o)[0][0])
+
+    def test_una_lista_con_otro_largo(self):
+        o = self.lugar(not_claimed=["Uno.", "Dos."])
+        o["en"]["not_claimed"] = ["One."]
+        self.assertIn("una lista de 2 frases", self.errores(o)[0][0])
+
+    def test_un_tipo_completo_pide_cada_ficha(self):
+        otro = self.lugar(en=False, id="y", _fichero="data/places/y.yaml")
+        otro["names"] = [{"name": "Ye"}]
+        otro["links"][0].pop("en")
+        self.assertEqual(self.errores(self.lugar(), otro)[0], [])
+        e, _ = self.errores(self.lugar(), otro, completos=["places"])
+        self.assertEqual(len(e), 1)
+        self.assertIn("data/places/y.yaml: data/languages.yaml da 'places' por completo", e[0])
+
+
 if __name__ == "__main__":
     unittest.main()
