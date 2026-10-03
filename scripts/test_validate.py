@@ -584,6 +584,27 @@ class DestinosEnParalelo(unittest.TestCase):
                 validate.validar_ramas(v, "viaje", out.append)
                 self.assertTrue(any("un área desconocida no es salida ni destino en paralelo" in x for x in out), out)
 
+    def test_un_area_con_order_que_no_es_entero_no_rompe_las_ramas(self):
+        v = viaje_con_ramas({2: 1, 3: 1})
+        v["stops"][3]["unknown_area"] = {"words": "Oriente"}
+        v["stops"][3]["order"] = [4]
+        out = []
+        validate.validar_ramas(v, "viaje", out.append)
+        self.assertIsInstance(out, list)
+
+    def test_el_camino_del_tronco_que_sale_del_abanico_no_es_un_area(self):
+        # 2 sale de 1 con la clave; 3 sigue a 1 sin ella y es el último: también llega desde la salida del abanico.
+        v = {"person": None, "group": "g", "companions": [],
+             "stops": [{"order": 1}, {"order": 2, "branches_from": 1}, {"order": 3, "unknown_area": {"words": "su país"}}]}
+        out = []
+        validate.validar_ramas(v, "viaje", out.append)
+        self.assertTrue(any("stop 3: sigue a la parada 1, de la que sale un abanico" in x for x in out), out)
+        # Con lugar, el mismo viaje vale.
+        del v["stops"][2]["unknown_area"]
+        out = []
+        validate.validar_ramas(v, "viaje", out.append)
+        self.assertEqual(out, [])
+
     def test_con_area_de_origen_el_acompanante_de_1_a_n_va_en_todo_el_viaje(self):
         # Un área de origen lleva order 0; el viaje de quien acompaña sigue siendo de la parada 1 a la última.
         v = {"person": None, "group": "g", "companions": [{"person": "x", "from": 1, "to": 3}],

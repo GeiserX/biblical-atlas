@@ -1052,7 +1052,7 @@ def validar_ramas(v, donde, err):
             f"un grupo se reparte")
     ordenes = {p.get("order") for p in paradas if _entero(p.get("order"))}
     # Un área desconocida no tiene punto: ni el abanico sale de ella ni llega a ella. Ningún texto lo pide hoy.
-    areas = {p.get("order") for p in paradas if "unknown_area" in p}
+    areas = {p.get("order") for p in paradas if "unknown_area" in p and _entero(p.get("order"))}
     de = {o: r for o, r in ramas if _entero(o)}
     validas = set()
     for o, r in ramas:
@@ -1066,13 +1066,18 @@ def validar_ramas(v, donde, err):
                 f"ramas")
         else:
             validas.add(r)
+    ant = anteriores(v)
     salidas = {}
-    for x in anteriores(v).values():
+    for x in ant.values():
         if x is not None:
             salidas[x] = salidas.get(x, 0) + 1
     for r in sorted(validas):
         if salidas.get(r, 0) < 2:
             err(f"{donde} stop {r}: de ella sale un solo camino; branches_from se escribe cuando salen dos o más a la vez")
+        # La parada que sigue a la salida sin branches_from también es un camino del abanico: tampoco puede ser un área.
+        for x in sorted(o for o, a in ant.items() if a == r and o in areas and o not in de):
+            err(f"{donde} stop {x}: sigue a la parada {r}, de la que sale un abanico, así que es uno de sus caminos; "
+                f"un área desconocida no tiene punto al que llegue el trazo")
 
 
 def validar_viaje(v, donde, err):
