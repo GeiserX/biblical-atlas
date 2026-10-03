@@ -2,7 +2,7 @@
 # avisos; si se queda por debajo, pide bajar el número. Un código que no sale aquí admite 0. Al arreglar un aviso se
 # baja su número en el mismo cambio; nunca se sube para dejar pasar uno nuevo. Qué dice cada código: modelo.md, sección 13.
 outside_pending 0
-unlisted_caption 23
+unlisted_caption 3
 kin_without_word 1
 bare_company 2
 no_office 0

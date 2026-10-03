@@ -445,3 +445,47 @@
   to: piram/tie/adoni-zedec/ally
   removed_on: '2026-10-03'
   reason: 'Jos 10:3-5: los cinco reyes amorreos se unen contra Gabaón. Es una alianza, no una compañía.'
+- from: blasto/accompanies/herodes-agripa-i
+  to: blasto/tie/herodes-agripa-i/master
+  removed_on: '2026-10-03'
+  reason: 'Hch 12:20: estaba a cargo de la casa del rey. Herodes es su señor; el encargo va en la razón.'
+- from: pura/accompanies/gedeon
+  to: pura/tie/gedeon/master
+  removed_on: '2026-10-03'
+  reason: 'Jue 7:10: Jehová lo llama ayudante de Gedeón. Gedeón es su señor; el encargo va en la razón.'
+- from: sisara-de-haroset/accompanies/jabin-rey-de-canaan
+  to: sisara-de-haroset/tie/jabin-rey-de-canaan/master
+  removed_on: '2026-10-03'
+  reason: 'Jue 4:2: jefe del ejército de Jabín. Como Abner con Saúl, es tie con master y el encargo va en la razón.'
+- from: zebul/accompanies/abimelec-hijo-de-gedeon
+  to: zebul/tie/abimelec-hijo-de-gedeon/master
+  removed_on: '2026-10-03'
+  reason: 'Jue 9:28: representante de Abimélec en Siquem. Abimélec es su señor; el encargo va en la razón.'
+- from: jonatan-levita/accompanies/miqueas-de-efrain
+  to: jonatan-levita/tie/miqueas-de-efrain/master
+  removed_on: '2026-10-03'
+  reason: 'Jue 17:10-12: Miqueas lo contrata como su sacerdote. Es tie con master y el encargo va en la razón.'
+- from: rode/accompanies/maria-madre-de-juan-marcos
+  to: rode/tie/maria-madre-de-juan-marcos/mistress
+  removed_on: '2026-10-03'
+  reason: 'Perspicacia «Rode»: posiblemente sirvienta de la casa de María. Es tie con mistress, como Bilhá con Raquel.'
+- from: evi/accompanies/sehon
+  to: evi/tie/sehon/master
+  removed_on: '2026-10-03'
+  reason: 'Jos 13:21 y su nota: rey madianita subordinado a Sehón. Sehón es su señor; la razón dice que era su vasallo.'
+- from: hur-rey-de-madian/accompanies/sehon
+  to: hur-rey-de-madian/tie/sehon/master
+  removed_on: '2026-10-03'
+  reason: 'Jos 13:21 y su nota: rey madianita subordinado a Sehón. Sehón es su señor; la razón dice que era su vasallo.'
+- from: reba/accompanies/sehon
+  to: reba/tie/sehon/master
+  removed_on: '2026-10-03'
+  reason: 'Jos 13:21 y su nota: rey madianita subordinado a Sehón. Sehón es su señor; la razón dice que era su vasallo.'
+- from: requem-rey-de-madian/accompanies/sehon
+  to: requem-rey-de-madian/tie/sehon/master
+  removed_on: '2026-10-03'
+  reason: 'Jos 13:21 y su nota: rey madianita subordinado a Sehón. Sehón es su señor; la razón dice que era su vasallo.'
+- from: zur-rey-de-madian/accompanies/sehon
+  to: zur-rey-de-madian/tie/sehon/master
+  removed_on: '2026-10-03'
+  reason: 'Jos 13:21 y su nota: rey madianita subordinado a Sehón. Sehón es su señor; la razón dice que era su vasallo.'
