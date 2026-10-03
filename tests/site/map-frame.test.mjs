@@ -1,11 +1,12 @@
 // How the map frames what is opened, in a real headless browser with MapLibre loaded. Opening a tour, a journey, a
-// person or a place puts all its stops in the part of the map that no card covers: not under the legend (lower left),
-// «Mientras tanto» (upper right), the tour's card (upper left) or, on the phone, the sheet. A tour's first stop shows
+// person or a place puts all its stops in the part of the map that nothing covers: not under the legend (lower left),
+// «Mientras tanto» (upper right), the tour's card (upper left), the map's controls (the buttons at the top right, the
+// map modes, the event row and «Leyenda» on the phone) or, on the phone, the sheet. A tour's first stop shows
 // the whole tour; a later stop keeps the one before and the one after in view. Each way in is checked: a card of the
 // landing, the search box and, for the tour, the size the owner reported (1730 by 1170) and the step after it.
 //
-// At 1440 by 900 the timeline opens tall and leaves the map 282 px; at 430 the sheet covers the lower half. Those are
-// the sizes where the cards covered the stops.
+// At 1440 by 900 the timeline opens at its normal height; raised (linea=grande) it leaves the map 282 px, the hardest
+// case. At 430 the sheet covers the lower half. Those are the sizes where the cards covered the stops.
 //
 // Run from the repository root, one browser at a time:
 //   node --test --test-concurrency=1 tests/site/map-frame.test.mjs
@@ -114,7 +115,7 @@ async function fromSearch(screen, text) {
 const hidden = (page) => page.evaluate(() => {
   const { BE } = window.__be, E = BE.E, m = window.__be.map, sel = E.sel;
   const c = m.getContainer().getBoundingClientRect();
-  const cards = ['#leyenda', '#mientras', '#vista-recorrido > *', '#vista-ahora', '#situacion', ...(innerWidth <= 760 ? ['#panel'] : [])]
+  const cards = ['#leyenda', '#mientras', '#vista-recorrido > *', '#vista-ahora', '#situacion', '#mapa .maplibregl-ctrl-top-right', '.modos', '#tira-suceso', '#leyenda-boton', ...(innerWidth <= 760 ? ['#panel'] : [])]
     .flatMap((q) => [...document.querySelectorAll(q)]).filter((el) => !el.hidden && el.offsetParent)
     .map((el) => ({ el, r: el.getBoundingClientRect() }));
   const places = (p) => { const s = BE.parseSel(p?.sel); return !s ? [] : s.tipo === 'lugar' ? [s.id] : [...BE.implicados(s).lugares]; };
@@ -136,7 +137,7 @@ const hidden = (page) => page.evaluate(() => {
     const p = m.project([BE.L[id].lon, BE.L[id].lat]), x = c.left + p.x, y = c.top + p.y;
     if (x < c.left || x > c.right || y < c.top || y > c.bottom) { out.push(`${id} off the map`); continue; }
     const under = cards.find(({ r }) => x >= r.left && x <= r.right && y >= r.top && y <= r.bottom);
-    if (under) out.push(`${id} under ${under.el.id || under.el.className.split(' ')[0]}`);
+    if (under) out.push(`${id} under ${under.el.id || [...under.el.classList].find((k) => k !== 'be-float') || under.el.tagName}`);
   }
   return { sel: BE.selTexto(sel), n: ids.length, out, zoom: +m.getZoom().toFixed(2), map: `${Math.round(c.width)}x${Math.round(c.height)}` };
 });
@@ -194,4 +195,24 @@ test('a tour and a journey from the search box frame all their stops; the next s
     await assertFramed(journey, `${screen.name}, search, a journey`);
     await journey.context().close();
   }
+});
+
+test('the tour with the strip raised at 1440, and an event chosen on the timeline on the phone, keep every stop clear', async () => {
+  // Raised by hand (T or linea=grande) the map is 282 px tall: the stops go above the legend or between the cards.
+  const tall = await open(DESKTOP, `t=-605.4422&v=40&${TOUR}&linea=grande`);
+  await still(tall);
+  await assertFramed(tall, '1440, strip raised, the tour');
+  await tall.context().close();
+  // On the phone, «Babilonia destruye Jerusalén» pressed on the timeline put Babilonia under the map's buttons.
+  const page = await open(PHONE, 't=-605.4422&v=40');
+  await still(page);
+  const id = await page.evaluate(() => { const m = window.BE.lineaMarcas().find((q) => q.name === 'Babilonia destruye Jerusalén'); document.querySelector('#linea-cuerpo').scrollTop = Math.max(0, m.top - 60); return m.id; });
+  // The lanes draw only the marks near what is in view: wait for this one after scrolling to it.
+  await page.waitForFunction((i) => document.querySelector(`#linea-filas .m[data-id="${CSS.escape(i)}"]`), id);
+  const [x, y] = await page.evaluate((i) => { const r = document.querySelector(`#linea-filas .m[data-id="${CSS.escape(i)}"] .m-nombre .t`).getBoundingClientRect(); return [r.left + Math.min(r.width / 2, 20), r.top + r.height / 2]; }, id);
+  await page.touchscreen.tap(x, y);
+  await still(page);
+  assert.equal(await page.evaluate(() => window.BE.selTexto(window.BE.E.sel)), 'evento:destruccion-de-jerusalen-607');
+  await assertFramed(page, '430, an event pressed on the timeline');
+  await page.context().close();
 });

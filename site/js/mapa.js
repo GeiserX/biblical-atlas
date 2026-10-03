@@ -778,9 +778,9 @@ function zonaEnVista(zo) {
   return !(e < b.getWest() || o > b.getEast() || n < b.getSouth() || s > b.getNorth());
 }
 /** Punto del borde del mapa, del lado de la zona, en píxeles: la recta del centro de lo visible al centro de la zona
-    corta el rectángulo libre (sin la hoja, los márgenes ni la tarjeta «Mientras tanto»). */
+    corta el rectángulo libre (sin la hoja, los márgenes ni lo que tapa el mapa, rellenoEncuadre). */
 function puntoBorde(zo) {
-  const c = map.getContainer(), pad = rellenoConMientras();   // sin la hoja, la leyenda ni «Mientras tanto»
+  const c = map.getContainer(), pad = rellenoEncuadre();   // sin la hoja ni lo que tapa el mapa
   const caja = { x0: pad.left, y0: pad.top, x1: c.clientWidth - pad.right, y1: c.clientHeight - pad.bottom };
   const cx = (caja.x0 + caja.x1) / 2, cy = (caja.y0 + caja.y1) / 2;
   const q = map.project(zo.centro), dx = q.x - cx, dy = q.y - cy;
@@ -841,7 +841,8 @@ function pintarChipsZona() {
       z.chip.setAttribute('aria-label', `${z.x.s.lugar.nombre}, ${textoZona(zo)}: ver la zona`);
       z.chip.addEventListener('click', (ev) => {
         ev.stopPropagation();
-        map.fitBounds(cajaDe([...zo.bbox, z.ancla]), { padding: rellenoConMientras(), duration: 700 });
+        const caja = cajaDe([...zo.bbox, z.ancla]);
+        map.fitBounds(caja, { padding: rellenoEncuadre(caja), duration: 700 });
       });
       map.getContainer().appendChild(z.chip);
     }
@@ -865,7 +866,8 @@ function puntosZonasSel(base) {
   if (!v || !viajesConArea().includes(v)) return [];
   const zona = areasDe(v).filter((x) => s.tipo === 'viaje' || x.s.key === s.id).flatMap((x) => (x.s.lugar.area?.zonas || []).slice(0, 1).flatMap((zo) => zo.bbox));
   if (!zona.length || base.length < 2) return zona;
-  const cam = map.cameraForBounds(cajaDe([...base, ...zona]), { padding: rellenoConMientras() });
+  const caja = cajaDe([...base, ...zona]);
+  const cam = map.cameraForBounds(caja, { padding: rellenoEncuadre(caja) });
   if (!cam) return [];
   const mundo = base.map((q) => mundo0(q));
   let lejos = 0;
@@ -1112,7 +1114,7 @@ function enfocarCandidato(lugar, i, volar = true) {
   const c = candidatosDe(BE.L[lugar])?.[+i];
   if (c && volar && map) {
     const g = c.geometria;
-    if (g.tipo === 'zona') { const caja = c.shape?.bbox || cajaDe([[g.lon, g.lat]], g.radio_km); map.fitBounds(caja, { padding: rellenoEncuadre(caja), maxZoom: g.radio_km < 3 ? 12 : 8, duration: 700 }); }
+    if (g.tipo === 'zona') { const caja = c.shape?.bbox || cajaDe([[g.lon, g.lat]], g.radio_km); repintarParaEncuadrar(); map.fitBounds(caja, { padding: rellenoEncuadre(caja), maxZoom: g.radio_km < 3 ? 12 : 8, duration: 700 }); }
     else map.easeTo({ center: centroCandidato(c), zoom: Math.max(map.getZoom(), 7), duration: 700 });
   }
   document.querySelectorAll('#panel-cuerpo [data-cand]').forEach((el) => {
@@ -1659,8 +1661,7 @@ function pintarEtiquetas() {
   // En pantalla: el tramo de zoom manda; además, lo que no es el lugar seleccionado no puede salirse del mapa ni quedar
   // bajo las tarjetas y los controles. Esconderlo no deja el sitio a otro, así que el reparto no cambia al moverse.
   const caja = (el) => el.getBoundingClientRect();
-  const tapas = [$('#mientras'), $('#leyenda'), $('#situacion'), $('#tira-suceso'), $('#leyenda-boton'), $('.modos'), $('#vista-recorrido'), map.getContainer().querySelector('.maplibregl-ctrl-top-right')]
-    .filter((el) => el && !el.hidden && el.offsetParent).map(caja).filter((r) => r.width > 0);
+  const tapas = loQueTapa().map(caja).filter((r) => r.width > 0);
   const choca = (r, c) => !(r.right < c.left || r.left > c.right || r.bottom < c.top || r.top > c.bottom);
   const dentro = (r) => r.left >= marco.left && r.right <= marco.right && r.top >= marco.top && r.bottom <= marco.bottom;
   const ver = items.map((x) => {
@@ -2001,6 +2002,7 @@ function encuadrarEpoca(t, { siVisible = false } = {}) {
   if (!map) return;   // sin MapLibre (unpkg caído) la línea y las fichas siguen: no hay nada que encuadrar
   const pts = lugaresDeEpoca(t).flatMap(puntosDe);
   if (!pts.length) return;
+  repintarParaEncuadrar();
   const padding = rellenoEncuadre(cajaDe(pts));
   // «Ya se ve» es dentro de la parte libre del mapa: en el móvil, un punto bajo la hoja inferior no se ve.
   if (siVisible) {
@@ -2028,16 +2030,19 @@ function cajaDe(pts, km = 0) {
   const dLat = km / 111, dLon = km / (111 * Math.cos((lats[0] * Math.PI) / 180));
   return [[Math.min(...lons) - dLon, Math.min(...lats) - dLat], [Math.max(...lons) + dLon, Math.max(...lats) + dLat]];
 }
-/** Tarjetas que tapan el mapa, en píxeles del contenedor, con la esquina en que están: la leyenda (abajo a la izquierda),
-    «Mientras tanto» (arriba a la derecha), las del recorrido guiado, «Ahora mismo» y el mapa de situación (arriba a la
-    izquierda). Antes de medirlas se pintan la leyenda y «Mientras tanto» de la selección y la fecha nuevas: al encuadrar
-    aún tienen las de antes, y con ellas lo encuadrado acababa debajo. */
+/** Lo que se pone encima del mapa, visible: las tarjetas (la leyenda, «Mientras tanto», las del recorrido guiado,
+    «Ahora mismo», el mapa de situación) y los controles (los botones de arriba a la derecha, los modos del mapa y, en el
+    móvil, la fila del suceso y el botón «Leyenda»). Una sola lista para el encuadre (tapas) y para los rótulos. */
+function loQueTapa() {
+  const els = [$('#leyenda'), $('#mientras'), ...document.querySelectorAll('#vista-recorrido > *'), $('#vista-ahora'), $('#situacion'),
+    map.getContainer().querySelector('.maplibregl-ctrl-top-right'), $('.modos'), $('#tira-suceso'), $('#leyenda-boton')];
+  return els.filter((el) => el && !el.hidden && el.offsetParent);
+}
+/** Lo que tapa el mapa (loQueTapa), en píxeles del contenedor, con la esquina en que está. Solo mide: quien encuadra
+    pinta antes la leyenda y «Mientras tanto» de lo nuevo (repintarParaEncuadrar). */
 function tapas() {
-  pintarMapa();
   const c = map.getContainer().getBoundingClientRect(), out = [];
-  const els = [$('#leyenda'), $('#mientras'), ...document.querySelectorAll('#vista-recorrido > *'), $('#vista-ahora'), $('#situacion')];
-  for (const el of els) {
-    if (!el || el.hidden || !el.offsetParent) continue;
+  for (const el of loQueTapa()) {
     const r = el.getBoundingClientRect();
     if (r.width < 2 || r.height < 2 || r.right <= c.left || r.left >= c.right || r.bottom <= c.top || r.top >= c.bottom) continue;
     out.push({ x0: r.left - c.left, x1: r.right - c.left, y0: r.top - c.top, y1: r.bottom - c.top,
@@ -2045,6 +2050,9 @@ function tapas() {
   }
   return out;
 }
+/** Al encuadrar, la leyenda y «Mientras tanto» aún tienen el contenido de antes, y con ellas lo encuadrado acababa debajo:
+    se pinta el mapa de la selección y la fecha nuevas antes de medirlas. Solo al encuadrar, nunca en cada fotograma. */
+function repintarParaEncuadrar() { pintarMapa(); }
 /** Relleno para encuadrar la caja [[oeste, sur], [este, norte]] en la parte del mapa que no tapan las tarjetas (tapas).
     Cada tarjeta se deja libre por su lado o por encima o debajo; de todas las maneras se queda la que deja la caja más
     grande. Con el mapa bajo (la línea de tiempo alta), lo encuadrado va encima de la leyenda o entre ella y «Mientras
@@ -2139,6 +2147,7 @@ function encuadrarLugares(ids, { duracion = 700 } = {}) {
   if (!map) return;
   // Antes de que cargue el mapa no hay leyenda ni «Mientras tanto» que esquivar: al cargar se encuadra otra vez.
   encuadrePendiente = mapaListo && marcaPablo ? null : { ids, sel: BE.selTexto(E.sel) };
+  repintarParaEncuadrar();
   const foco = lugaresEnFoco(ids);
   // Un lugar con forma se encuadra entero (Canaán va de Sidón a Gaza, no se queda en su punto de Galilea).
   const forma = (id) => conPunto(BE.L[id]) && BE.L[id].shape?.bbox;
