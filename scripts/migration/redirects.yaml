@@ -417,3 +417,15 @@
   to: sostenes/same_as/sostenes-companero-de-pablo
   removed_on: '2026-10-03'
   reason: La posible identidad queda escrita en la ficha del jefe de sinagoga, cuyo id va primero, con certainty possible.
+- from: claudio-lisias/tie/pablo@56
+  to: pablo/tie/claudio-lisias/custodian@56
+  removed_on: '2026-10-03'
+  reason: Va en la ficha de quien va custodiado, con la palabra custodian y la razón escrita desde allí, como Julio.
+- from: felix/tie/pablo@56
+  to: pablo/tie/felix/custodian@56
+  removed_on: '2026-10-03'
+  reason: Va en la ficha de quien va custodiado, con la palabra custodian y la razón escrita desde allí, como Julio.
+- from: festo/tie/pablo@58
+  to: pablo/tie/festo/custodian@58
+  removed_on: '2026-10-03'
+  reason: Va en la ficha de quien va custodiado, con la palabra custodian y la razón escrita desde allí, como Julio.
