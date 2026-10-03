@@ -4,7 +4,7 @@
 outside_pending 0
 unlisted_caption 23
 kin_without_word 1
-bare_company 9
+bare_company 2
 no_office 0
 no_certainty 0
 same_as_owner 0

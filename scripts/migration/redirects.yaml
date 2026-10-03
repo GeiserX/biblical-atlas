@@ -429,3 +429,19 @@
   to: pablo/tie/festo/custodian@58
   removed_on: '2026-10-03'
   reason: Va en la ficha de quien va custodiado, con la palabra custodian y la razón escrita desde allí, como Julio.
+- from: debir-rey-de-eglon/accompanies/adoni-zedec
+  to: debir-rey-de-eglon/tie/adoni-zedec/ally
+  removed_on: '2026-10-03'
+  reason: 'Jos 10:3-5: los cinco reyes amorreos se unen contra Gabaón. Es una alianza, no una compañía.'
+- from: hoham/accompanies/adoni-zedec
+  to: hoham/tie/adoni-zedec/ally
+  removed_on: '2026-10-03'
+  reason: 'Jos 10:3-5: los cinco reyes amorreos se unen contra Gabaón. Es una alianza, no una compañía.'
+- from: jafia-rey-de-lakis/accompanies/adoni-zedec
+  to: jafia-rey-de-lakis/tie/adoni-zedec/ally
+  removed_on: '2026-10-03'
+  reason: 'Jos 10:3-5: los cinco reyes amorreos se unen contra Gabaón. Es una alianza, no una compañía.'
+- from: piram/accompanies/adoni-zedec
+  to: piram/tie/adoni-zedec/ally
+  removed_on: '2026-10-03'
+  reason: 'Jos 10:3-5: los cinco reyes amorreos se unen contra Gabaón. Es una alianza, no una compañía.'
