@@ -22,11 +22,11 @@ python3 scripts/validate.py --links
 
 Para probar sin tocar lo compilado, `build.py --out DIR` escribe en otra carpeta, y `build.py --data DIR` y `validate.py --data DIR` leen otra copia de `data/`. Los detalles están en [scripts/README.md](scripts/README.md).
 
-En cada PR, el CI compila y valida el esquema. Un id que no existe o un hecho sin fuente bloquean el PR. Los enlaces se comprueban en `main` y cada semana, así que pasa `--links` tú antes de abrirlo.
+En cada PR, el CI compila, valida el esquema y corre las pruebas del sitio en un navegador. Un id que no existe, un hecho sin fuente o una prueba que falla dejan el PR en rojo. Los enlaces se comprueban en `main` y cada semana, así que pasa `--links` tú antes de abrirlo.
 
 ## Mejorar el sitio
 
-El sitio es estático y vive en [`site/`](site/). Léete [`site/README.md`](site/README.md): explica los módulos de `site/js/`, cómo se registra un tipo y cómo cargar datos de prueba con `?datos=_local/<nombre>/data.json`. Sirve la carpeta con `python3 -m http.server` desde `site/` después de compilar los datos. No añadas dependencias que necesiten un servidor, y comprueba que la página sigue abriendo desde `file://`. Si añades datos, mapas, código o letras de otros, añádelos a «Gracias» en [`site/acerca.html`](site/acerca.html) con su enlace y su licencia.
+El sitio es estático y vive en [`site/`](site/). Léete [`site/README.md`](site/README.md): explica los módulos de `site/js/`, cómo se registra un tipo y cómo cargar datos de prueba con `?datos=_local/<nombre>/data.json`. Sirve la carpeta con `python3 -m http.server` desde `site/` después de compilar los datos. Las pruebas de `tests/site/` corren en CI en cada PR; cómo correrlas en local está en [docs/development.md](docs/development.md). No añadas dependencias que necesiten un servidor, y comprueba que la página sigue abriendo desde `file://`. Si añades datos, mapas, código o letras de otros, añádelos a «Gracias» en [`site/acerca.html`](site/acerca.html) con su enlace y su licencia.
 
 ## Lo que no entra
 
