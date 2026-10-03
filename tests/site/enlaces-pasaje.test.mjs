@@ -152,6 +152,11 @@ test('a passage cited by several opens the first by date and lists the others to
   const events = when.filter(([k]) => k === 'evento').map(([, t]) => t);
   assert.ok(when.findIndex(([k]) => k !== 'evento') >= events.length, 'an event comes after another kind');
   assert.deepEqual(events, [...events].sort((a, b) => a - b), 'the events are not by date');
+  // A long range is cited by events far apart in time: the earliest opens.
+  const long = await page.evaluate(() => window.BE.pasajeEnlace.resolve('Hch13:1-14:28').found.filter((s) => s.startsWith('evento:'))
+    .map((s) => window.BE.momentoDe(window.BE.parseSel(s))));
+  assert.ok(long.length > 2 && long[0] < long.at(-1), 'Hch 13:1-14:28 is no test of the order');
+  assert.deepEqual(long, [...long].sort((a, b) => a - b), 'the events of Hch 13:1-14:28 are not by date');
   assert.equal(v.box.rows.length, f.list.length - 1, 'the list does not offer every other record');
   assert.ok(v.box.current, 'the open record is not marked in the list');
   // Switching to another keeps the list, with the new one marked and the passage in the address.
@@ -182,8 +187,10 @@ test('a passage cited by none says so, keeps the selection empty and offers the 
   assert.match(v.box.text, /Ningún suceso, parada, carta ni viaje del atlas cita todavía Santiago 1:5/);
   assert.deepEqual(v.box.rows, ['pasaje:snt-1']);
   assert.match(v.hash, /[#&]p=Snt1:5(&|$)/);
-  // The map and the rest of the panel stay: «Ahora mismo» is under the notice.
-  assert.ok(await page.locator('#panel-cuerpo .ahora').count(), 'the panel lost «Ahora mismo»');
+  // The rest of the panel stays: what it shows with nothing selected (where Pablo is, or «Ahora mismo») is under the notice.
+  const below = await page.evaluate(() => { const b = document.querySelector('#panel-cuerpo'); return { first: b.firstElementChild?.classList.contains('pasaje-enlace'), more: b.querySelectorAll(':scope > .be-card:not(.pasaje-enlace)').length }; });
+  assert.ok(below.first, 'the notice is not at the top of the panel');
+  assert.ok(below.more > 0, 'the panel lost what it shows with nothing selected');
   // Escape closes the notice.
   await page.keyboard.press('Escape');
   await settle(page);
