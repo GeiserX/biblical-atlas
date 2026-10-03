@@ -27,17 +27,17 @@ function marcaNivel(n) {
 }
 
 function chipsCitas(ref) {
-  return citas(ref).map((c) => `<a class="be-ref" href="${BE.urlCita(c)}" ${EXTERNO} title="Leer ${esc(c.texto)} en jw.org">${esc(c.texto)}</a>`).join('');
+  return citas(ref).map((c) => `<a class="be-ref" href="${BE.urlCita(c)}" ${EXTERNO} title="${esc(BE.t('Leer {cita} en jw.org', { cita: c.texto }))}">${esc(c.texto)}</a>`).join('');
 }
 function estadoHtml(estado) {
   const v = estado === 'verificado';
-  return `<span class="estado estado--${v ? 'verificado' : 'pendiente'}" title="${v ? 'Alguien abrió la fuente enlazada y lo dice.' : 'Todavía nadie lo ha comprobado en la fuente.'}">${v ? 'Verificado' : 'Pendiente de verificar'}</span>`;
+  return `<span class="estado estado--${v ? 'verificado' : 'pendiente'}" title="${BE.t(v ? 'Alguien abrió la fuente enlazada y lo dice.' : 'Todavía nadie lo ha comprobado en la fuente.')}">${BE.t(v ? 'Verificado' : 'Pendiente de verificar')}</span>`;
 }
 /** Aviso de fuente sustituida por una publicación más reciente (C-10). La fecha de consulta se queda en los datos, no en la ficha. */
 const avisoFuenteHtml = (f) => (f.nota === 'sustituida' ? '<span class="fuente-fecha"><b class="fuente-aviso">Sustituida por una publicación más reciente</b></span>' : '');
 function fuentesHtml(ids) {
   let fs = (ids || []).map((id) => [id, fuente(id)]).filter(([, f]) => f);
-  if (!fs.length) return '<p class="be-muted">Sin fuente todavía.</p>';
+  if (!fs.length) return `<p class="be-muted">${BE.t('Sin fuente todavía.')}</p>`;
   const ocultas = soloNivel1() ? fs.filter(([, f]) => f.nivel !== 1).length : 0;
   if (ocultas) fs = fs.filter(([, f]) => f.nivel === 1);
   return `<ul class="fuentes">${fs.map(([, f]) => `<li>
@@ -56,7 +56,7 @@ function insigniaHtml(ids) {
 function historialHtml(obj) {
   const hs = obj?.historial || [];
   if (!hs.length) return '';
-  return `<details class="historial"><summary>Historial <b class="cuenta">${hs.length}</b></summary><ol>${[...hs].sort((a, b) => String(b.fecha).localeCompare(String(a.fecha))).map((h) => {
+  return `<details class="historial"><summary>${BE.t('Historial')} <b class="cuenta">${hs.length}</b></summary><ol>${[...hs].sort((a, b) => String(b.fecha).localeCompare(String(a.fecha))).map((h) => {
     const f = fuente(h.fuente);
     return `<li><span class="fuente-fecha">${esc(fmtDia(h.fecha))}</span> ${esc(h.cambio)}${f ? ` <a href="${esc(f.url)}" ${EXTERNO}>${esc(f.titulo)}</a>` : ''}</li>`;
   }).join('')}</ol></details>`;
@@ -69,14 +69,14 @@ function proponerHtml(tipo, id, nombre) {
   const titulo = `Corrección: ${nombre || id} (${tipo})`;
   const cuerpo = `Fichero: \`${fichero}\`\nVista: ${location.href.split('?')[0].replace(/#.*$/, '')}#sel=${tipo}:${id}\n\n**Qué dato está mal**\n\n\n**Qué debería decir**\n\n\n**Fuente que lo sostiene** (enlace y párrafo)\n\n`;
   const url = `${REPO}/issues/new?title=${encodeURIComponent(titulo)}&body=${encodeURIComponent(cuerpo)}&labels=${encodeURIComponent('corrección')}`;
-  return `<a class="be-wol proponer" href="${esc(url)}" ${EXTERNO} title="Abre una incidencia en GitHub con el fichero ${esc(fichero)}">Proponer una corrección</a>`;
+  return `<a class="be-wol proponer" href="${esc(url)}" ${EXTERNO} title="${esc(BE.t('Abre una incidencia en GitHub con el fichero {fichero}', { fichero }))}">${BE.t('Proponer una corrección')}</a>`;
 }
 function porQueHtml(obj, extra = '') {
   // El tipo y el nombre salen de la selección cuando la ficha es la del objeto seleccionado.
   const deSel = E.sel && obj?.id && E.sel.id === obj.id;
   const propuesta = deSel ? proponerHtml(E.sel.tipo, obj.id, BE.nombreSel(E.sel)) : '';
   return `<section class="be-card ficha-sec por-que"><div class="be-card__pad">
-    <h3 class="be-card__eyebrow">Por qué lo decimos</h3>
+    <h3 class="be-card__eyebrow">${BE.t('Por qué lo decimos')}</h3>
     ${obj.razon ? `<p class="razon">${esc(obj.razon)}</p>` : ''}${extra}
     ${fuentesHtml(obj.fuentes)}
     ${historialHtml(obj)}
@@ -84,20 +84,20 @@ function porQueHtml(obj, extra = '') {
   </div></section>`;
 }
 /** La `nota` de un hecho (cómo se repartió una fecha sin año, qué no dice el relato del lugar): va con el «por qué». */
-const notaHtml = (nota) => (nota ? `<p class="razon nota-hecho"><b>Nota:</b> ${esc(nota)}</p>` : '');
+const notaHtml = (nota) => (nota ? `<p class="razon nota-hecho"><b>${BE.t('Nota:')}</b> ${esc(nota)}</p>` : '');
 /** «Lo que el texto no dice» (C-11): frases de no_afirmamos más las que deduce cada ficha. */
 function noSabemosHtml(frases) {
   const xs = (frases || []).filter(Boolean);
   if (!xs.length) return '';
-  return `<section class="be-card ficha-sec"><div class="be-card__pad"><h3 class="be-card__eyebrow">Lo que el texto no dice</h3>
+  return `<section class="be-card ficha-sec"><div class="be-card__pad"><h3 class="be-card__eyebrow">${BE.t('Lo que el texto no dice')}</h3>
     <ul class="no-sabemos">${xs.map((x) => `<li class="be-note be-note--uncertain">${esc(x)}</li>`).join('')}</ul></div></section>`;
 }
 function enlacesHtml(enlaces) {
   if (!enlaces?.length) return '';
-  // «Hechos 18 (TNM)» se lee «Hechos 18»: la sigla es jerga para quien lee y pasa al texto emergente.
+  // «Hechos 18 (TNM)» se lee «Hechos 18»: la sigla es jerga para quien lee y pasa al texto emergente. En inglés, «(NWT)».
   return `<div class="enlaces">${enlaces.map((e) => {
-    const tnm = / \(TNM\)$/.test(e.titulo);
-    return `<a class="be-wol" href="${esc(e.url)}" ${EXTERNO}${tnm ? ' title="Traducción del Nuevo Mundo, en jw.org"' : ''}>${esc(tnm ? e.titulo.replace(/ \(TNM\)$/, '') : e.titulo)}</a>`;
+    const tnm = / \((TNM|NWT)\)$/.test(e.titulo);
+    return `<a class="be-wol" href="${esc(e.url)}" ${EXTERNO}${tnm ? ` title="${esc(BE.t('Traducción del Nuevo Mundo, en jw.org'))}"` : ''}>${esc(tnm ? e.titulo.replace(/ \((TNM|NWT)\)$/, '') : e.titulo)}</a>`;
   }).join('')}</div>`;
 }
 /** Vídeos de jw.org que nombran un lugar (BE.VIDEOS, de videos.json) o una persona (V, de videos-personas.json).
@@ -110,7 +110,7 @@ function videosHtml(id, V = BE.VIDEOS, callar = false) {
   if (!vs.length) return '';
   const max = 6;
   return `<section class="be-card ficha-sec"><div class="be-card__pad">
-    <h3 class="be-card__eyebrow">Vídeos de jw.org <b class="cuenta">${vs.length}</b></h3>
+    <h3 class="be-card__eyebrow">${BE.t('Vídeos de jw.org')} <b class="cuenta">${vs.length}</b></h3>
     <ul class="videos">${vs.slice(0, max).map((v) => `<li><a href="${esc(v.url)}" ${EXTERNO}>${esc(v.titulo)}</a><span class="be-row__meta">${v.publicado ? esc(fmtDia(v.publicado)) : ''}${v.menciones ? ` · lo nombra ${v.menciones} ${v.menciones === 1 ? 'vez' : 'veces'}` : ''}</span></li>`).join('')}</ul>
     ${vs.length > max ? `<p class="be-muted">Y ${vs.length - max} más en jw.org.</p>` : ''}
   </div></section>`;
@@ -125,10 +125,10 @@ function nombresHtml(obj) {
   }).join('')}</ul>`;
 }
 const botonSel = (sel, titulo, meta = '') => `<button type="button" class="be-row fila-boton" data-sel="${esc(sel)}"><span><span class="be-row__title">${esc(titulo)}</span>${meta ? `<span class="be-row__meta">${meta}</span>` : ''}</span><span class="be-row__end" aria-hidden="true">›</span></button>`;
-const migas = (...xs) => `<nav class="be-crumbs" aria-label="Ruta">${xs.map((x) => `<span>${esc(x)}</span>`).join('<span class="be-sep" aria-hidden="true">›</span>')}</nav>`;
+const migas = (...xs) => `<nav class="be-crumbs" aria-label="${esc(BE.t('Ruta'))}">${xs.map((x) => `<span>${esc(x)}</span>`).join('<span class="be-sep" aria-hidden="true">›</span>')}</nav>`;
 /** «Cerrar ficha» y, a su lado, el lápiz de la nota privada de lo seleccionado (notes.js). */
 const cerrarHtml = () => {
-  const cerrar = '<button type="button" class="be-btn be-btn--sm cerrar-ficha" data-accion="cerrar">Cerrar ficha <span aria-hidden="true">×</span></button>';
+  const cerrar = `<button type="button" class="be-btn be-btn--sm cerrar-ficha" data-accion="cerrar">${BE.t('Cerrar ficha')} <span aria-hidden="true">×</span></button>`;
   const lapiz = BE.notes?.pencilForSel(E.sel) || '';
   return lapiz ? `<div class="card-tools">${lapiz}${cerrar}</div>` : cerrar;
 };

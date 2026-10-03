@@ -10,12 +10,12 @@ const { E, esc, fechaCorta, tramo, norm, EXTERNO } = BE;
 function precision(f) {
   if (!f) return null;
   const tx = norm(f.texto || '');
-  if (f.tipo === 'derivada') return { s: '?', t: 'cálculo nuestro, sin verificar' };
-  if (/^a\.\s|^antes de/.test(tx)) return { s: 'a.', t: 'antes de esta fecha' };
-  if (/^d\.\s|^despues de/.test(tx)) return { s: 'd.', t: 'después de esta fecha' };
-  if (f.tipo === 'narrativa') return { s: 'c.', t: 'orden seguro, fecha aproximada' };
-  if (f.aprox) return { s: 'c.', t: 'fecha aproximada' };
-  return { s: '', t: 'fecha exacta según la fuente' };
+  if (f.tipo === 'derivada') return { s: '?', t: BE.t('cálculo nuestro, sin verificar') };
+  if (/^a\.\s|^antes de/.test(tx)) return { s: 'a.', t: BE.t('antes de esta fecha') };
+  if (/^d\.\s|^despues de/.test(tx)) return { s: 'd.', t: BE.t('después de esta fecha') };
+  if (f.tipo === 'narrativa') return { s: 'c.', t: BE.t('orden seguro, fecha aproximada') };
+  if (f.aprox) return { s: 'c.', t: BE.t('fecha aproximada') };
+  return { s: '', t: BE.t('fecha exacta según la fuente') };
 }
 const marcaPrecision = (f) => { const p = precision(f); return p?.s ? `<span class="prec" title="${esc(p.t)}" aria-label="${esc(p.t)}">${esc(p.s)}</span>` : ''; };
 /** «14 de nisán», «mes de tisri», «otoño», a partir de fecha.detalle. */
@@ -43,8 +43,8 @@ function fechasHtml(o, momento) {
   const pr = precision(f);
   const calc = f.tipo === 'derivada';
   const t = momento ?? (tr ? (tr[0] + tr[1]) / 2 : null);
-  const tarjetas = [`<button type="button" class="fecha-tarjeta fecha-tnm${calc ? ' fecha-calculo' : ''}" ${t != null ? `data-ir-t="${t}"` : ''} title="Llevar el cursor a esta fecha">
-      <span class="fecha-eyebrow">${calc ? 'Cálculo nuestro · sin verificar' : 'Fecha según la fuente'}</span>
+  const tarjetas = [`<button type="button" class="fecha-tarjeta fecha-tnm${calc ? ' fecha-calculo' : ''}" ${t != null ? `data-ir-t="${t}"` : ''} title="${esc(BE.t('Llevar el cursor a esta fecha'))}">
+      <span class="fecha-eyebrow">${BE.t(calc ? 'Cálculo nuestro · sin verificar' : 'Fecha según la fuente')}</span>
       <span class="fecha-grande${(f.texto || '').length > 16 ? ' fecha-grande--larga' : ''}">${marcaPrecision(f)}${esc(f.texto || fechaCorta(f))}</span>
       <span class="fecha-sub">${esc([det, pr?.t].filter(Boolean).join(' · '))}</span>
       ${calc && f.nota ? `<span class="fecha-nota">${esc(f.nota)}</span>` : ''}</button>`];
@@ -82,15 +82,15 @@ function fichaEvento(id) {
   const e = BE.D.eventos.find((x) => x.id === id);
   const personas = (e.personas || []).filter((x) => BE.PERS[x]);
   const lugar = BE.L[(e.lugares || [])[0]];
-  return `${BE.migas(lugar ? lugar.nombre : 'Sucesos', e.titulo)}${BE.cerrarHtml()}
+  return `${BE.migas(lugar ? lugar.nombre : BE.t('Sucesos'), e.titulo)}${BE.cerrarHtml()}
     <section class="be-card"><div class="be-card__pad">
-      <div class="be-card__eyebrow">Suceso${BE.eventoEstimado(e) ? ' · fecha estimada' : ''}</div>
+      <div class="be-card__eyebrow">${BE.t('Suceso')}${BE.eventoEstimado(e) ? BE.t(' · fecha estimada') : ''}</div>
       <h2 class="be-card__title">${esc(e.titulo)}</h2>
       ${e.resumen ? `<p class="be-card__body">${esc(e.resumen)}</p>` : ''}
       <div class="fila-chips">${BE.chipsCitas((e.pasajes || []).join('; '))}${(e.lugares || []).map((x) => BE.L[x] ? `<button type="button" class="be-chip" data-sel="lugar:${esc(x)}">${esc(BE.L[x].nombre)}</button>` : '').join('')}</div>
       ${personas.length ? `<div class="fila-chips">${personas.map((x) => `<button type="button" class="be-chip" data-sel="persona:${esc(x)}"><span class="be-chip__dot" style="background:${BE.colorPersona(x)}"></span>${esc(BE.PERS[x].nombre)}</button>`).join('')}</div>` : ''}
     </div><div class="be-card__foot">${BE.estadoHtml(e.estado)}</div></section>
-    <section class="be-card ficha-sec"><div class="be-card__pad"><h3 class="be-card__eyebrow">Cuándo</h3>${fechasHtml(e, BE.momentoEvento(e))}${plazoHtml(e)}</div></section>
+    <section class="be-card ficha-sec"><div class="be-card__pad"><h3 class="be-card__eyebrow">${BE.t('Cuándo')}</h3>${fechasHtml(e, BE.momentoEvento(e))}${plazoHtml(e)}</div></section>
     ${BE.porQueHtml(e, BE.notaHtml(e.nota))}`;
 }
 

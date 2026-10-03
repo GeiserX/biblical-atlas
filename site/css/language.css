@@ -1,0 +1,7 @@
+/* biblical-atlas · the language switch and the line of a card not yet translated (js/language.js). */
+.idioma-boton { min-width: 34px; font-weight: 600; letter-spacing: .04em; }
+.idioma-pendiente { margin: 0 0 8px; font-size: var(--fs-sm); }
+/* On a phone the bar has no room: the switch lives in the Estudio menu. */
+@media (max-width: 760px) {
+  .idioma-boton { display: none !important; }
+}
