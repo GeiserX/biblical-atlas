@@ -636,7 +636,8 @@ for (const screen of [DESKTOP, PHONE]) {
 }
 
 test('1440: a selected mark out of view is named at the edge, and its button brings it back without changing the scale or the cursor', async () => {
-  const p = await open(DESKTOP, 't=50.5&v=8');
+  // The strip raised, as it opened at 900 px tall before: the letters lane is in it and the panel scrolls.
+  const p = await open(DESKTOP, 't=50.5&v=8&linea=grande');
   const it = (await hookView(p)).visible.find((x) => x.lane === 'cartas');
   await p.evaluate(({ id }) => { const b = document.querySelector(`#linea-filas .m[data-id="${CSS.escape(id)}"]`); b.scrollIntoView({ block: 'center' }); }, it);
   await frames(p);
