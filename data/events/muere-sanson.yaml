@@ -1,6 +1,7 @@
 # biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
 id: muere-sanson
 title: Muere Sansón al derribar la casa de Dagón
+type: death
 date:
   from: -1172
   to: -1116
@@ -16,6 +17,8 @@ places:
 - gaza
 people:
 - sanson
+roles:
+  sanson: died
 passages:
 - Jue 16:23-30
 summary: 'Los filisteos celebran su captura con un sacrificio a Dagón y sacan a Sansón para reírse de él. Pide a Jehová fuerza,
@@ -40,5 +43,5 @@ links:
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Gaza/
   type: perspicacia
 search: muerte de Sansón casa de Dagón
-checked_on: '2026-09-29'
+checked_on: '2026-10-03'
 status: verified

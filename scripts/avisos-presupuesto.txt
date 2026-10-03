@@ -9,5 +9,5 @@ no_office 7
 no_certainty 7
 same_as_owner 4
 no_reference 54
-title_type 10
+title_type 0
 shared_point 3
