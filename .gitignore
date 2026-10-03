@@ -54,6 +54,8 @@ __pycache__/
 *.db
 .beads-credential-key
 .beads/proxieddb/
+# Beads: bead text lives in the Dolt tracker only, never in git
+.beads/*.jsonl
 
 # Espacios de trabajo locales de los agentes
 .claude/worktrees/
