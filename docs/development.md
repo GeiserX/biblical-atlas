@@ -8,7 +8,7 @@ Python 3.12 o más nuevo y PyYAML:
 
 ```bash
 pip install -r requirements.txt
-python3 scripts/build.py          # data/ -> site/data.json, site/data.js, site/stats.json, dist/ y docs/investigacion/registro/
+python3 scripts/build.py          # data/ -> site/data.json, site/data.js, los dos trozos, site/stats.json, dist/ y docs/investigacion/registro/
 python3 scripts/validate.py       # esquema, fuentes, fechas, calendario; debe dar 0 errores
 python3 scripts/validate.py --links   # y además cada URL (lento: medio segundo por petición)
 python3 scripts/review.py --fail  # lo que lleva más de un año sin releer
@@ -27,6 +27,23 @@ python3 scripts/bible_coverage.py
 ```
 
 `build.py --out DIR` escribe en otra carpeta sin tocar `site/`, `dist/` ni `docs/`; `build.py --data DIR` y `validate.py --data DIR` leen otra copia de `data/`. El sitio carga esa copia con `index.html?datos=_local/<nombre>/data.json`. Cada script está explicado en [`scripts/README.md`](https://github.com/GeiserX/biblical-atlas/blob/main/scripts/README.md).
+
+## Los trozos de los datos
+
+`build.py` escribe los datos enteros en `data.json` y, para el sitio, partidos en dos trozos. `data.json` no cambia: lo leen el servidor MCP y quien quiera los datos. El sitio no lo descarga. Abre con el núcleo y pide el detalle cuando hace falta ([`site/js/data-chunks.js`](https://github.com/GeiserX/biblical-atlas/blob/main/site/js/data-chunks.js)).
+
+| Fichero | Qué lleva | Cuándo lo pide el sitio |
+|---|---|---|
+| `data.core.json` | Lo que pintan el mapa, la línea de tiempo y la portada. Los lugares con sus puntos, candidatos y formas. Las personas con sus nombres, fechas y relaciones, de cada relación solo `tipo`, `persona`, `lugar`, `fecha`, `fuentes`, `deducido` y `estado`. Los viajes con sus paradas. Los sucesos con sus fechas, lugares, personas y resumen. Los periodos, las cartas, los hallazgos, los recorridos, los libros, el calendario y la cobertura, enteros. De cada fuente, `nivel` e `implicita`. | Al arrancar. |
+| `data.detail.json` | Los textos de las fichas: `razon`, `historial`, `enlaces`, `consultado` y `checked_on`. De las personas, también `resumen`, `desambiguacion`, `no_confundir_con`, `no_afirmamos`, `perspicacia` y `offices`. De los lugares, `resumen`, `no_afirmamos` y las coordenadas citadas (`coord_nota`, `coord_url`, `coord_fuente`). De los viajes, `resumen`. El resto de cada relación: verbos, referencia, palabra y razón. El resto de cada fuente: título, obra, enlace y fechas. | La primera vez que lo necesita una ficha, el grafo, la conexión o la búsqueda, al entrar en una caja de búsqueda o cuando el mapa queda quieto por primera vez. Una sola vez. |
+
+Una ficha, el grafo o la conexión dicen «Cargando…» mientras llega el detalle, y la búsqueda contesta al llegar. El detalle se une sobre los mismos objetos del núcleo: un objeto clave a clave, una lista posición a posición, y un `null` del detalle no aporta nada.
+
+**Un campo nuevo.** Va al núcleo sin hacer nada, y el sitio lo tiene desde el arranque. Va al detalle si se añade a `DETAIL_KEYS` en `scripts/build.py`, que dice qué claves de cada colección se mueven, a cualquier profundidad. En una relación o una fuente es al revés: va al detalle salvo que se añada a `RELATION_CORE_KEYS` o a `SOURCE_CORE_KEYS`. Solo puede ir al detalle lo que leen las fichas, el grafo, la conexión o la búsqueda. Lo que lee el mapa, la línea o la portada se queda en el núcleo.
+
+Tres comprobaciones lo vigilan. `build.py` no escribe nada si el núcleo y el detalle unidos no dan `data.json`, o si las cifras de las fuentes que la portada cuenta sobre el núcleo no son las de `data.json` (`scripts/test_build.py`, clase `Chunks`). Y [`tests/site/data-chunks.test.mjs`](https://github.com/GeiserX/biblical-atlas/blob/main/tests/site/data-chunks.test.mjs) compara el mapa, la línea, «Mientras tanto», «Ahora mismo» y la portada pintados con el núcleo solo y con `data.json` entero, en el escritorio y en el teléfono.
+
+**Desde `file://` y con `?datos=`.** Desde `file://` el sitio carga `data.js`, que sigue siendo `data.json` entero, así que no pide nada después. Con `?datos=_local/<nombre>/data.json` busca `data.core.json` y `data.detail.json` en esa carpeta y, si no hay núcleo, carga su `data.json` entero.
 
 ## Esta documentación
 

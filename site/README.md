@@ -26,7 +26,8 @@ El mapa lleva solo la atribución que piden las licencias (OpenBible.info, el re
 ## De dónde salen los datos
 
 - `data.json`: lo escribe [`scripts/build.py`](../scripts/build.py) a partir de los YAML de [`data/`](../data/). No se edita a mano: para cambiar un dato, edita el YAML y vuelve a compilar. El formato es `biblical-atlas/v0` y está descrito en [`docs/ideas/modelo-de-datos.md`](../docs/ideas/modelo-de-datos.md).
-- `data.js`: el mismo contenido que `data.json`, envuelto en `window.BIBLICAL_ATLAS_DATA = …;`. Solo se usa al abrir el sitio desde `file://`, donde `fetch` no funciona. También lo escribe `scripts/build.py`, así que nunca se queda atrás.
+- `data.core.json` y `data.detail.json`: `data.json` en dos trozos, que también escribe `scripts/build.py`. El sitio abre con el núcleo, lo que pintan el mapa, la línea y la portada, y pide el detalle (los textos de las fichas, las relaciones y las fuentes) una sola vez, cuando hace falta ([`js/data-chunks.js`](js/data-chunks.js)). Qué va en cada uno y la regla para un campo nuevo: [Desarrollo](../docs/development.md#los-trozos-de-los-datos). `data.json` sigue entero para el servidor MCP y quien lo lea de fuera.
+- `data.js`: el mismo contenido que `data.json`, envuelto en `window.BIBLICAL_ATLAS_DATA = …;`. Solo se usa al abrir el sitio desde `file://`, donde `fetch` no funciona: trae los datos enteros y no hay nada que pedir después. También lo escribe `scripts/build.py`, así que nunca se queda atrás.
 - `stats.json`: cuántas fichas hay de cada tipo, con `fuentes` (las escritas que algún dato cita) y `capitulos` (los capítulos de la Biblia que añade la compilación), las mismas cifras que `cifrasFuentes` pinta en la portada. También lo escribe `scripts/build.py`; el README del repositorio lo lee para sus insignias.
 - `videos.json`: vídeos de jw.org que nombran cada lugar, con la forma `{ "<id de lugar>": [ { "titulo", "url", "publicado", "menciones" } ] }`. Lo escribe [`scripts/videos/index.py`](../scripts/videos/index.py). Si falta, la ficha de lugar no enseña esa sección.
 - `videos-pasajes.json`: vídeos que citan cada capítulo, con la forma `{ "<libro>": { "serie": [ … ], "capitulos": { "16": [ … ] } } }`. Lo escribe [`scripts/videos/passages.py`](../scripts/videos/passages.py) y lo leen la ficha de pasaje y el modo lectura. Si falta, la sección no sale.
@@ -180,7 +181,8 @@ El carril «Viajes de Pablo» enseña solo los viajes de Pablo: un tramo por via
 |---|---|
 | `js/fundir-claves.js` | Script clásico sin `defer` y sin efectos: define `fundirClaves`, la regla para juntar dos juegos de claves guardadas. Lo de aquí manda, las notas se juntan por ficha y marcadores y capítulos leídos se unen. La usa `migrar-claves.js` |
 | `js/migrar-claves.js` | Script clásico sin `defer`, antes que ningún otro que lea el almacenamiento: junta las claves guardadas con el prefijo anterior con las del nuevo, `biblical-atlas:`, con `fundirClaves`. Nunca borra ni pisa. La marca `biblical-atlas:migrado` guarda una huella de cada clave antigua ya juntada: solo vuelve a juntar una que haya cambiado desde entonces |
-| `js/base.js` | Utilidades, estado, carga de datos, registro de tipos, selección, cursor, reproducción, dirección, bucle de pintado, teclado y arranque |
+| `js/base.js` | Utilidades, estado, registro de tipos, selección, cursor, reproducción, dirección, bucle de pintado, teclado y arranque |
+| `js/data-chunks.js` | La carga de los datos (`BE.chunks`): el núcleo al arrancar, el detalle una sola vez cuando una ficha, el grafo, la conexión o la búsqueda lo piden, `?datos=` y `file://` |
 | `js/mapa.js` | MapLibre, relieve en cuatro extensiones, cortina, rutas, arcos de cartas, lugares inciertos, hallazgos, etiquetas, capas, leyenda y «Mientras tanto» |
 | `js/ficha.js` | Piezas comunes de las fichas: citas, fuentes y su marca (punto o aro), estado, «Por qué lo decimos», historial, «Proponer una corrección», nombres y vídeos |
 | `js/trayectorias.js` | Dónde está cada persona en cada momento, ventanas de fecha de cartas y sucesos, y el calendario hebreo: meses de luna nueva a luna nueva, Veadar y nombres por época |
@@ -297,7 +299,7 @@ Dos flechas, «Atrás» y «Adelante», llevan a la vista anterior y a la siguie
 
 ### Datos de prueba
 
-`index.html?datos=_local/<nombre>/data.json` carga otro `data.json`. Solo acepta rutas dentro de `_local/` que acaben en `.json`; cualquier otra cosa enseña un error en la ficha. Desde `file://` carga el `data.js` de la misma carpeta. Para compilar ahí sin pisar `site/data.json`:
+`index.html?datos=_local/<nombre>/data.json` carga otros datos: el `data.core.json` y el `data.detail.json` de esa carpeta o, si no tiene núcleo, su `data.json` entero. Solo acepta rutas dentro de `_local/` que acaben en `.json`; cualquier otra cosa enseña un error en la ficha. Desde `file://` carga el `data.js` de la misma carpeta. Para compilar ahí sin pisar `site/data.json`:
 
 ```bash
 python3 scripts/build.py --out site/_local/<nombre>/
@@ -314,4 +316,4 @@ El sitio está partido en módulos para que varias personas puedan trabajar en �
 | `js/trayectorias.js`, `js/linea-filas.js`, `js/linea.js`, `js/ahora.js`, `js/tipos/viaje.js`, `js/tipos/parada.js`, `js/tipos/evento.js`, `js/tipos/periodo.js`, `css/linea.css` | Tiempo |
 | `js/buscar.js`, `js/grafo.js`, `js/lectura.js`, `js/recorridos.js`, `js/portada.js`, `js/tipos/persona.js`, `js/tipos/pasaje.js`, `js/tipos/libro.js`, `js/tipos/recorrido.js`, `css/estudio.css` | Estudio |
 
-`data.json`, `data.js` y los tres índices de vídeos son derivados y nadie los edita a mano.
+`data.json`, `data.js`, los dos trozos y los tres índices de vídeos son derivados y nadie los edita a mano.

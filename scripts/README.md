@@ -17,13 +17,13 @@ python3 scripts/test_build.py                # sus pruebas: lo que compila de un
 Lee [`data/`](../data/) (las fuentes de `data/sources/*.yaml`, `data/books.yaml`, `data/calendar.yaml` y una carpeta por tipo; `data/_proposals/` no) y escribe:
 
 - `dist/data.json`: todos los datos en un fichero, con el formato `biblical-atlas/v0`. Además de las entidades lleva `libros` (la lista de `data/books.yaml`) y `calendario`.
-- `site/data.json`: el mismo contenido, que es lo que lee la web.
+- `site/data.json`: el mismo contenido. La web no lo descarga entero: lee `site/data.core.json` al abrir y `site/data.detail.json` cuando lo necesita, los dos trozos que `build.py` saca de él y comprueba que, unidos, dan `data.json` ([Desarrollo](../docs/development.md#los-trozos-de-los-datos)).
 - `site/stats.json`: cuántas fichas hay de cada tipo y la fecha de compilación. `fuentes` cuenta solo las escritas que algún dato cita, y `capitulos`, los capítulos de la Biblia que la compilación añade; la portada del sitio cuenta lo mismo. Lo leen las insignias del README, así que los números de la portada del repositorio nunca se quedan atrás.
 - `site/data.js`: el mismo objeto envuelto en `window.BIBLICAL_ATLAS_DATA = …;`, para abrir la web desde `file://`.
 - `dist/biblical-atlas.sqlite`: las mismas tablas en SQLite, más `hechos_fuentes(tipo, id, fuente_id)` para saber qué fuente sostiene cada hecho.
 - [`docs/investigacion/registro/`](../docs/investigacion/registro/index.md): el registro de investigación, un fichero por tipo de entidad. Borra los `.md` que ya no genera.
 
-Con `--out DIR` escribe `data.json`, `data.js`, `stats.json`, `biblical-atlas.sqlite` y `registro/` dentro de `DIR`. Sirve para probar datos sin pisar lo que compila otro: el sitio carga ese `data.json` con `index.html?datos=_local/<nombre>/data.json` si `DIR` es `site/_local/<nombre>/`. `--data DIR` compila otra copia de los datos.
+Con `--out DIR` escribe `data.json`, `data.js`, los dos trozos, `stats.json`, `biblical-atlas.sqlite` y `registro/` dentro de `DIR`. Sirve para probar datos sin pisar lo que compila otro: el sitio carga ese `data.json` con `index.html?datos=_local/<nombre>/data.json` si `DIR` es `site/_local/<nombre>/`. `--data DIR` compila otra copia de los datos.
 
 Antes de escribir comprueba que cada lugar, persona, selección y fuente citada existe. Los capítulos de la Biblia (`mateo-26`) que ninguna fuente escribe los crea a partir de `data/books.yaml`. Si falta algo, no escribe nada y sale con error.
 
