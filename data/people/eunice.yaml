@@ -37,8 +37,10 @@ relations:
   sources:
   - it-eunice
   - bt-15
-  reason: Perspicacia cree muy probable que Pablo la conociera en Listra en su primer viaje.
-  checked_on: '2026-09-29'
+  - hch-16
+  reason: Perspicacia cree muy probable que Pablo la conociera en Listra en su primer viaje; Hch 16:1 sitúa allí a Timoteo,
+    su hijo.
+  checked_on: '2026-10-03'
   status: verified
 - type: kin
   person: loida

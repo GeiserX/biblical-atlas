@@ -23,15 +23,5 @@ links:
 - title: Números 16 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/N%C3%BAmeros/16/
   type: bible
-relations:
-- type: same_as
-  person: palu
-  inferred: true
-  sources:
-  - it-palu
-  - numeros-16
-  reason: Perspicacia «Palú» lo ve posiblemente como el mismo hijo de Rubén que Nú 16:1 llama Pélez; solo lo da como probable.
-  checked_on: '2026-09-29'
-  status: pending
 checked_on: '2026-09-29'
 status: verified

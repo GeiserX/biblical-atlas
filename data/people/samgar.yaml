@@ -35,12 +35,15 @@ relations:
   status: verified
 - type: succeeds
   person: ehud-hijo-de-guera
+  office: judge
   inferred: false
   sources:
   - jueces-3
   - it-samgar
-  reason: Jue 3:31 lo pone después de Ehúd; Perspicacia «Samgar» lo sitúa entre Ehúd y Barac.
-  checked_on: '2026-09-29'
+  - it-jueces-cargo
+  reason: Jue 3:31 lo pone después de Ehúd; Perspicacia «Samgar» lo sitúa entre Ehúd y Barac, y «Jueces» lo cuenta entre los
+    doce jueces.
+  checked_on: '2026-10-03'
   status: verified
 not_claimed:
 - 'Que Samgar fuera de Bet-Anat, en Neftalí: Perspicacia solo apunta que el apelativo «hijo de Anat» podría indicarlo.'

@@ -27,14 +27,15 @@ relations:
   reason: Jos 10:3 lo llama rey de Hebrón.
   checked_on: '2026-09-29'
   status: verified
-- type: accompanies
+- type: tie
   person: adoni-zedec
+  word: ally
   inferred: false
   sources:
   - josue-10
   - it-hoham
   reason: 'Jos 10:3-5: respondió a la llamada de Adoni-Zédec y se alió con él contra Gabaón.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-03'
   status: verified
 - type: died_in
   place: maqueda

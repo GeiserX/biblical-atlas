@@ -33,8 +33,10 @@ relations:
   sources:
   - it-asuero
   - it-persia
-  reason: 'Perspicacia «Asuero», núm. 3: hijo de Darío el Grande.'
-  checked_on: '2026-09-29'
+  - ester-1
+  reason: 'Perspicacia «Asuero», núm. 3: hijo de Darío el Grande. La nota al pie de Est 1:1 dice lo mismo: se cree que Asuero
+    fue Jerjes I, hijo de Darío.'
+  checked_on: '2026-10-03'
   word: father
   status: verified
 - type: succeeds
@@ -62,9 +64,10 @@ relations:
   - it-asuero
   - it-susa
   - it-persia
-  reason: 'Perspicacia «Asuero», núm. 3: su capital estuvo en Susa durante la mayor parte de su gobierno. «Persia, persas» fecha
-    su muerte en 475.'
-  checked_on: '2026-09-28'
+  - ester-1
+  reason: 'Perspicacia «Asuero», núm. 3: su capital estuvo en Susa casi todo su gobierno, y Est 1:2 lo pone en el trono en
+    aquel castillo. «Persia, persas» fecha su muerte en 475.'
+  checked_on: '2026-10-03'
   status: verified
 - type: kin
   person: ester

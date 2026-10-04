@@ -19,9 +19,10 @@ relations:
   inferred: true
   sources:
   - it-herodes
-  reason: Perspicacia (apartado 2) lo da como hijo de Herodes el Grande y de Maltace; el dato sale de la historia, no del texto
-    bíblico.
-  checked_on: '2026-09-29'
+  - mateo-14
+  reason: Perspicacia (apartado 2) lo da como hijo de Herodes el Grande y de Maltace, y la nota de Mt 14:1 también lo llama
+    hijo de Herodes el Grande.
+  checked_on: '2026-10-03'
   status: verified
 - type: kin
   person: herodias

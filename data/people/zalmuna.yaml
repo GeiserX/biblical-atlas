@@ -24,9 +24,21 @@ status: verified
 relations:
 - type: accompanies
   person: zebah
+  date:
+    from: -1449
+    to: -1172
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre c. 1450 y c. 1173 a.e.c. (tiempo narrativo: tras morir Josué y antes de que Jefté
+      empezara a juzgar)'
   inferred: false
   sources:
   - jueces-8
-  reason: 'Jue 8:5, 12: los dos son los reyes de Madián y actúan siempre juntos.'
-  checked_on: '2026-09-29'
+  - si-3
+  - it-jefte
+  reason: 'Jue 8:5, 12: los dos son los reyes de Madián y actúan siempre juntos. Fecha del relato: tras morir Josué, c. 1450
+    (estudio 3), y antes de Jefté, c. 1173 (Perspicacia «Jefté»).'
+  checked_on: '2026-10-03'
   status: verified
