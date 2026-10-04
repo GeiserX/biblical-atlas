@@ -41,8 +41,10 @@ const TYPES = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript; ch
 function serve(dir, dataFile) {
   const server = http.createServer((req, res) => {
     const rel = decodeURIComponent(new URL(req.url, 'http://x').pathname);
-    const file = rel === '/data.json' ? dataFile : path.join(dir, rel.endsWith('/') ? `${rel}index.html` : rel);
-    if (!file.startsWith(dir) && file !== dataFile) { res.writeHead(404); res.end(); return; }
+    // The chunks of the data (data.core.json, data.detail.json) live beside data.json.
+    const chunk = /^\/data\.[a-z]+\.json$/.test(rel) ? path.join(path.dirname(dataFile), rel) : null;
+    const file = rel === '/data.json' ? dataFile : chunk || path.join(dir, rel.endsWith('/') ? `${rel}index.html` : rel);
+    if (!file.startsWith(dir) && file !== dataFile && file !== chunk) { res.writeHead(404); res.end(); return; }
     if (!fs.existsSync(file) || !fs.statSync(file).isFile()) { res.writeHead(404); res.end(); return; }
     res.writeHead(200, { 'content-type': TYPES[path.extname(file)] || 'application/octet-stream' });
     res.end(fs.readFileSync(file));
@@ -83,7 +85,7 @@ async function openPage(screen = DESKTOP, { hash = '', storage = null, route = n
   page.pageErrors = [];
   page.on('pageerror', (e) => page.pageErrors.push(e.message));
   await page.route((url) => !url.href.startsWith(base) && !(map && url.hostname.endsWith('unpkg.com')), (r) => r.abort());
-  if (route) await page.route('**/data.json*', route);
+  if (route) await page.route(/\/data(\.core|\.detail)?\.json/, route);   // data.json, or its two chunks
   // Not until «load»: that waits for every image of the page too, which a loaded machine took more than 8 s to serve.
   // What a test needs, the data and the first frames, ready() waits for.
   await page.goto(`${base}${file}${hash ? `#${hash}` : ''}`, { waitUntil: 'domcontentloaded' });
@@ -218,7 +220,9 @@ test('the order by date does not lean on the order of the data', async () => {
   const D = JSON.parse(fs.readFileSync(dataFile, 'utf8'));
   for (const k of ['eventos', 'cartas', 'viajes']) D[k].reverse();
   const body = JSON.stringify(D);
-  const page = await openPage(DESKTOP, { hash: 'p=2Ti4:10', route: (r) => r.fulfill({ contentType: 'application/json', body }) });
+  // The whole data goes as the core, and the detail adds nothing: its lists, by position, would not match reversed ones.
+  const route = (r) => r.fulfill({ contentType: 'application/json', body: r.request().url().includes('/data.detail.json') ? '{}' : body });
+  const page = await openPage(DESKTOP, { hash: 'p=2Ti4:10', route });
   for (const p of ['2Ti4:10', 'Hch13:1-14:28', '2Re17:6']) {
     const groups = await page.evaluate((p) => {
       const BE = window.BE, out = {};
