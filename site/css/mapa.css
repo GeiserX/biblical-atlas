@@ -31,6 +31,10 @@
 .marca-lugar.resaltado .punto { box-shadow: 0 0 0 2px #fff, 0 0 0 4px var(--gold); }
 .marca-lugar.atenuado { opacity: .38; }
 .marca-lugar.atenuado .punto { border-color: var(--ink-4); background: var(--surface); box-shadow: none; }
+/* Junto al borde derecho o a una tarjeta, el nombre va a la izquierda del punto, a la misma distancia (pintarEtiquetas). */
+.marca-lugar.rotulo-izq .etiqueta { left: auto; right: 14px; align-items: flex-end; text-align: right; }
+.marca-lugar.menor.rotulo-izq .etiqueta { left: auto; right: 11px; }
+.marca-lugar.es-actual.rotulo-izq .etiqueta { left: auto; right: 22px; }
 .marca-lugar.sin-etiqueta .etiqueta, .marca-region.sin-etiqueta .region-texto { visibility: hidden; }
 .marca-lugar:hover .etiqueta { visibility: visible; color: var(--ink); }
 .marca-lugar:hover { z-index: 3; }
