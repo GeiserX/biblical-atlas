@@ -56,7 +56,7 @@ chapters:
     spans:
     - {v: 1-7, type: letter, entities: [letter:romanos], mentions: [person:pablo, person:jesus, event:muerte-de-jesus, event:entierro-de-jesus, event:resurreccion-de-jesus], note: "No hay que seguir pecando para recibir más bondad. Los bautizados en Cristo lo son en su muerte y quedan enterrados con él para vivir de nuevo; la vieja personalidad muere en el madero con él."}
     - {v: 8-11, type: letter, mentions: [person:jesus, event:muerte-de-jesus, event:resurreccion-de-jesus], note: "Cristo, levantado de entre los muertos, ya no muere: murió una sola vez para quitar el pecado y ahora vive para Dios. Los cristianos deben verse muertos al pecado y vivos para Dios."}
-    - {v: 12-14, type: letter, note: "Que el pecado no reine en el cuerpo: sus miembros han de servir a Dios como armas de la justicia, porque ahora los rige la bondad inmerecida de Dios y no la ley."}
+    - {v: 12-14, type: letter, note: "Que el pecado no reine en el cuerpo: sus miembros han de servir a Dios como armas de la justicia, porque ahora no los rige la ley, sino la bondad inmerecida de Dios."}
     - {v: 15-20, type: letter, note: "Ejemplo de la esclavitud: cada uno es esclavo de aquel a quien obedece, del pecado que lleva a muerte o de la justicia. Liberados del pecado, ahora sirven a la justicia."}
     - {v: 21-23, type: letter, mentions: [person:jesus], note: "Lo de antes daba vergüenza y acababa en muerte; ahora el fruto es la santidad y la vida eterna. El pecado paga con la muerte, pero Dios regala vida eterna por Cristo Jesús."}
   7:
