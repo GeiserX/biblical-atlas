@@ -309,7 +309,7 @@ Dos flechas, «Atrás» y «Adelante», llevan a la vista anterior y a la siguie
 - **«Enlace al pasaje»**, junto a «Citar» en la ficha de un suceso, una parada, una carta, un viaje o un capítulo, copia el enlace a su primer pasaje, o al que la abrió. Si ese pasaje abriría primero otra ficha, el enlace lleva también `sel`; en la de un capítulo no, porque el capítulo no está en la lista: su enlace abre lo primero que lo cita. «Citar» añade la misma dirección.
 - **Atrás y Adelante.** Un enlace con `#p=` crea su entrada como cualquier enlace con «#»; la dirección se reescribe con `t`, `sel` y `p`, así que Atrás vuelve a la vista de antes y Adelante devuelve la ficha con su lista. `p` cuenta como parte de la vista: un enlace que no abre nada tiene su propia entrada, con el nombre del pasaje («Enlace a Santiago 1:5»).
 
-[`enlaces-pasaje-reglas.test.mjs`](../tests/site/enlaces-pasaje-reglas.test.mjs) prueba las reglas sin navegador y lee cada referencia de los datos. [`enlaces-pasaje.test.mjs`](../tests/site/enlaces-pasaje.test.mjs) usa Chromium: un pasaje que cita un dato, varios, ninguno, un tramo, un libro con tilde, Atrás tras un enlace, con y sin selección, y «Enlace al pasaje».
+[`enlaces-pasaje-reglas.test.mjs`](../tests/site/enlaces-pasaje-reglas.test.mjs) prueba las reglas sin navegador y lee cada referencia de los datos, también en [`validar.yml`](../.github/workflows/validar.yml). [`enlaces-pasaje.test.mjs`](../tests/site/enlaces-pasaje.test.mjs) usa Chromium: un pasaje que cita un dato, varios, ninguno, un tramo, un libro con tilde, Atrás tras un enlace, con y sin selección, y «Enlace al pasaje».
 
 ### Datos de prueba
 
