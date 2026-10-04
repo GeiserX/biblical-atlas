@@ -56,7 +56,9 @@ test('what is not one passage of an existing chapter and verse is refused, and s
   assert.equal(one('Xyz3:4'), 'book');
   assert.equal(one('16:1'), 'book');
   assert.equal(one(''), 'book');
-  for (const s of ['Hch29:1', 'Hch16:41', 'Hch0:1', 'Hch16:5-1', 'Hch16:1, 99', 'Hch', 'Hch16:1x']) assert.equal(one(s), 'numbers', s);
+  for (const s of ['Hch29:1', 'Hch16:41', 'Hch0:1', 'Hch16:5-1', 'Hch16:1, 99', 'Hch16:1x']) assert.equal(one(s), 'numbers', s);
+  // A book alone lacks its chapter: its own reason too.
+  for (const s of ['Hch', 'Filemón', 'Génesis']) assert.equal(one(s), 'chapter', s);
   // Comma items that stay apart are two stretches: their own reason, not a verse that does not exist.
   for (const s of ['Hch16:1, 5', 'Hch16:1,3', 'Gé2:7, 9']) assert.equal(one(s), 'stretches', s);
 });

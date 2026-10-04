@@ -144,11 +144,11 @@ function parseRefs(s) {
 }
 /** One passage of a link («Hch16:1», «2 Reyes 17:6», «Génesis 12», «Hch13:1-14:28») → { ok, stretch } or
     { ok: false, why }: 'book' when no book is named, 'numbers' when the chapter or verse does not exist or does not read,
-    'stretches' when its comma items do not join into one stretch («Hch16:1, 5»). */
+    'stretches' when its comma items do not join into one stretch («Hch16:1, 5»), 'chapter' when it names a book alone. */
 function parsePassage(text) {
   const s = String(text || '').trim();
   const m = s.match(/^((?:[123][\s-]*)?\p{L}[\p{L}\s.\-]*?)\s*\.?\s*(\d.*)$/u);
-  if (!m) { const book = bookOf(s); return book ? { ok: false, why: 'numbers', book } : { ok: false, why: 'book' }; }
+  if (!m) { const book = bookOf(s); return book ? { ok: false, why: 'chapter', book } : { ok: false, why: 'book' }; }
   const book = bookOf(m[1]);
   if (!book) return { ok: false, why: 'book' };
   const rs = numbers(book, m[2].replace(/\s+/g, ''));
@@ -259,6 +259,7 @@ function noticeHtml() {
   if (a.error) {
     const what = a.error === 'book' ? `No reconozco «${esc(a.text)}» como pasaje de la Biblia.`
       : a.error === 'stretches' ? `«${esc(a.text)}» junta tramos separados, y un enlace lleva uno solo.`
+        : a.error === 'chapter' ? `«${esc(a.text)}» nombra ${esc(a.book.nombre)}, pero le falta el capítulo.`
         : `${esc(a.book?.nombre || 'Ese libro')} no tiene ese capítulo o ese versículo: «${esc(a.text)}».`;
     return `<section class="be-card pasaje-enlace" role="status"><div class="be-card__pad">
       <div class="be-card__eyebrow">Enlace al pasaje</div><p class="be-card__body">${what} Se escribe el libro y el capítulo, con el versículo si hace falta: <code>#p=Hch16:1</code> o <code>#p=Génesis12</code>.</p>
