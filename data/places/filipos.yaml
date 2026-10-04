@@ -3,6 +3,8 @@ id: filipos
 name: Filipos
 names:
 - name: Filipos
+  en:
+    name: Philippi
 type: city
 lat: 41.01207
 lon: 24.28458
@@ -24,13 +26,30 @@ links:
 - title: 'Perspicacia: «Filipos»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Filipos/
   type: perspicacia
+  en:
+    title: 'Insight: “Philippi”'
+    url: https://www.jw.org/en/library/books/Insight-on-the-Scriptures/Philippi/
 - title: Hechos 16 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/hechos/16/
   type: bible
+  en:
+    title: Acts 16 (NWT)
+    url: https://www.jw.org/en/library/bible/study-bible/books/acts/16/
 history:
 - date: '2026-09-29'
   change: Añade que era colonia romana (nota de estudio de Flp 1:27; Perspicacia «Filipos»), la primera ciudad europea que
     oyó a Pablo, y la ayuda de su congregación.
   source: filipenses-1
+  en:
+    change: Adds that it was a Roman colony (study note on Php 1:27; Insight, “Philippi”), the first European city to
+      hear Paul, and the help its congregation gave him.
 checked_on: '2026-09-29'
 status: verified
+en:
+  name: Philippi
+  summary: A Roman colony and the principal city of its district of Macedonia, on the Egnatian Way. Around 50 C.E. it
+    became the first European city where Paul preached, and the congregation he left there helped him several times.
+  reason: 'Insight (“Philippi”) describes the place; it appears at Ac 16:12-40. The coordinate is from OpenBible: we
+    take only the point.'
+  checked_on: '2026-10-03'
+  status: verified

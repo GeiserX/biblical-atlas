@@ -20,6 +20,11 @@ it-lidia:
   level: 1
   published: null
   checked_on: '2026-09-28'
+  en:
+    title: Lydia
+    work: Insight on the Scriptures
+    url: https://www.jw.org/en/library/books/Insight-on-the-Scriptures/Lydia/
+    checked_on: '2026-10-03'
 it-dionisio:
   title: Dionisio
   work: Perspicacia para comprender las Escrituras
@@ -489,6 +494,11 @@ nota-hechos-16:
   level: 1
   published: null
   checked_on: '2026-09-28'
+  en:
+    title: Acts Study Notes, Chapter 16
+    work: New World Translation of the Holy Scriptures (Study Edition)
+    url: https://wol.jw.org/en/wol/d/r1/lp-e/1001070705
+    checked_on: '2026-10-03'
 nota-hechos-17:
   title: Notas de estudio de Hechos. Capítulo 17
   work: La Biblia. Traducción del Nuevo Mundo (edición de estudio)
