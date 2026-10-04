@@ -207,6 +207,23 @@ test('after a failed detail, nobody asks again for RETRY_MS (5 s); the next card
   assert.deepEqual(page.pageErrors, []);
 });
 
+test('the search, on top and on the landing, is redone with the line that tells namesakes apart when the detail arrives', async () => {
+  // «Rey de Israel» is the `desambiguacion` of one Zacarías, in the detail: the lists answer without it, then with it.
+  const line = D.personas['zacarias-de-israel'].desambiguacion.split(';')[0];
+  for (const [hash, box, list] of [['t=50.3000', '#q', '#resultados'], ['', '#portada-q', '#portada-lista']]) {
+    let release;
+    const held = new Promise((ok) => { release = ok; });
+    const page = await openPage({ hash, detail: held });
+    await page.locator(box).fill('Zacarías');
+    await page.locator(`${list} [data-i], ${list} [role="option"]`).first().waitFor();
+    await frames(page);
+    assert.ok(!(await page.locator(list).textContent()).includes(line), `${box}: the line showed before the detail arrived`);
+    release();
+    await page.locator(list, { hasText: line }).waitFor();
+    assert.deepEqual([...page.pageErrors, ...page.consoleErrors], []);
+  }
+});
+
 test('in English, the detail that arrives after the core gets its English too', async () => {
   // language.js puts data.en.json over the core; the summary and the reason of Filipos come later, in Spanish, with
   // the detail, and the loader has to apply the layer again after merging it. The detail is held until the layer is
