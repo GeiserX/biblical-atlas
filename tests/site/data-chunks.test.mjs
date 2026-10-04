@@ -214,8 +214,8 @@ test('a ?datos= folder with no core loads its data.json whole', async () => {
   assert.deepEqual(page.pageErrors, []);
 });
 
-/** What the views that open first paint: the timeline marks, the map's GeoJSON sources and markers, «Mientras tanto»,
-    the «Ahora» panel when nothing is chosen, and the landing. */
+/** What the views that open first paint: the timeline marks, the map's GeoJSON sources, markers and legend,
+    «Mientras tanto», the «Ahora» panel when nothing is chosen, and the landing. */
 const snapshot = (page) => page.evaluate(() => {
   const map = window.__be.map;
   const sources = {};
@@ -227,6 +227,7 @@ const snapshot = (page) => page.evaluate(() => {
     timeline: document.querySelector('#linea-filas')?.innerHTML || '',
     sources,
     markers: [...document.querySelectorAll('.maplibregl-marker')].map((m) => `${m.textContent.trim()}|${m.getAttribute('aria-label') || m.querySelector('[aria-label]')?.getAttribute('aria-label') || ''}`).sort(),
+    leyenda: text('#leyenda'),
     mientras: text('#mientras'),
     panel: window.BE.E.sel ? '' : text('#panel-cuerpo'),
     landing: `${text('#portada-cifras')}|${text('#portada-epocas')}|${text('#portada-recorridos')}`,
@@ -250,8 +251,10 @@ for (const [name, screen] of [['desktop', DESKTOP], ['phone', PHONE]]) {
     const views = [
       [null, 0.08], [null, 0.35], [null, 0.5031], [null, 0.97],
       ['persona:pablo', null], ['lugar:jerusalen', null], ['persona:abrahan', null], ['viaje:primer-viaje', null],
+      // An unknown place drawn as a probable zone: its legend row and its labels name the source that proposes it.
+      ['viaje:los-astrologos-de-oriente', null],
     ];
-    const seen = { sources: 0, mientras: 0 };   // a comparison of two empty maps would prove nothing
+    const seen = { sources: 0, mientras: 0, zona: 0 };   // a comparison of two empty maps would prove nothing
     for (const [sel, f] of views) {
       for (const p of [core, whole]) {
         await p.evaluate(([s, t]) => {
@@ -261,15 +264,17 @@ for (const [name, screen] of [['desktop', DESKTOP], ['phone', PHONE]]) {
       }
       await settle(core); await settle(whole);
       const a = await snapshot(core), b = await snapshot(whole);
-      for (const k of ['timeline', 'mientras', 'panel']) assert.equal(a[k], b[k], `${sel || f}: ${k} differs`);
+      for (const k of ['timeline', 'leyenda', 'mientras', 'panel']) assert.equal(a[k], b[k], `${sel || f}: ${k} differs`);
       assert.deepEqual(a.markers, b.markers, `${sel || f}: map markers differ`);
       assert.deepEqual(Object.keys(a.sources).sort(), Object.keys(b.sources).sort());
       for (const id of Object.keys(a.sources)) assert.equal(a.sources[id], b.sources[id], `${sel || f}: map source ${id} differs`);
       seen.sources += Object.keys(a.sources).length;
       if (a.mientras) seen.mientras++;
+      if (a.markers.some((m) => m.includes('zona probable'))) seen.zona++;
     }
     assert.ok(seen.sources > 0, 'the map painted no source: MapLibre did not load');
     assert.ok(seen.mientras > 0, '«Mientras tanto» never showed: the comparison did not cover it');
+    assert.ok(seen.zona > 0, 'no probable zone showed: the comparison did not cover the sources the map names');
     assert.deepEqual([...core.pageErrors, ...whole.pageErrors], []);
   });
 }

@@ -968,8 +968,8 @@ def escribir_json(salida, rutas, ruta_js):
 # (site/js/data-chunks.js). data.json sigue entero para el servidor MCP y para quien lo lea de fuera. La regla está
 # en docs/development.md, «Los trozos de los datos»: una clave de DETAIL_KEYS va al detalle, a cualquier profundidad
 # dentro de cada ficha de su colección; las demás se quedan en el núcleo. Las relaciones y las fuentes van al revés:
-# solo las claves de RELATION_CORE_KEYS y SOURCE_CORE_KEYS se quedan en el núcleo. Las demás colecciones van enteras
-# en el núcleo.
+# solo las claves de RELATION_CORE_KEYS y SOURCE_CORE_KEYS se quedan en el núcleo (y SOURCE_MAP_KEYS en las fuentes que
+# nombra el mapa). Las demás colecciones van enteras en el núcleo.
 DETAIL_KEYS = {
     "personas": {"razon", "historial", "enlaces", "consultado", "checked_on", "perspicacia", "no_afirmamos",
                  "no_confundir_con", "desambiguacion", "resumen", "offices"},
@@ -982,6 +982,9 @@ DETAIL_KEYS = {
 RELATION_CORE_KEYS = {"tipo", "persona", "lugar", "fecha", "fuentes", "deducido", "estado"}
 # De una fuente, el filtro «Solo fuentes principales» lee su nivel y las cifras de la portada, si es un capítulo.
 SOURCE_CORE_KEYS = {"nivel", "implicita"}
+# De la fuente que propone la zona de un lugar desconocido (`according_to`), la leyenda y las etiquetas del mapa leen
+# también su título y su obra: «según Perspicacia «Estrella»».
+SOURCE_MAP_KEYS = {"titulo", "obra"}
 CHUNK_FILES = {"core": "data.core.json", "detail": "data.detail.json"}
 
 
@@ -1012,14 +1015,21 @@ def _keep_keys(obj, keys):
     return core, (detail or None)
 
 
+def fuentes_del_mapa(salida):
+    """Las fuentes que nombra el mapa: las que proponen la zona de un lugar desconocido (`according_to`)."""
+    return {g["according_to"] for v in salida.get("viajes") or [] for p in v.get("paradas") or []
+            for g in (p.get("unknown_area") or {}).get("guesses") or [] if g.get("according_to")}
+
+
 def split_chunks(salida):
     """(núcleo, detalle) de data.json. Unir el detalle al núcleo con merge_chunks da data.json otra vez."""
     core, detail = {}, {}
+    del_mapa = fuentes_del_mapa(salida)
     for name, value in salida.items():
         if name == "fuentes":
             core[name], detail[name] = {}, {}
             for fid, f in value.items():
-                core[name][fid], d = _keep_keys(f, SOURCE_CORE_KEYS)
+                core[name][fid], d = _keep_keys(f, SOURCE_CORE_KEYS | (SOURCE_MAP_KEYS if fid in del_mapa else set()))
                 if d:
                     detail[name][fid] = d
             continue

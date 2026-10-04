@@ -130,10 +130,22 @@ class Chunks(unittest.TestCase):
         self.assertIn("fuentes", pablo)
         for r in pablo["relaciones"]:
             self.assertLessEqual(set(r), build.RELATION_CORE_KEYS)
-        self.assertTrue(all(set(f) <= build.SOURCE_CORE_KEYS for f in self.core["fuentes"].values()))
+        del_mapa = build.fuentes_del_mapa(self.salida)
+        self.assertTrue(all(set(f) <= build.SOURCE_CORE_KEYS for i, f in self.core["fuentes"].items() if i not in del_mapa))
         self.assertIn("resumen", self.core["eventos"][0])           # «Mientras tanto» lo enseña al abrir
         self.assertNotIn("razon", self.core["eventos"][0])
         self.assertEqual(self.core["periodos"], self.salida["periodos"])
+
+    def test_the_core_keeps_the_title_of_the_sources_the_map_names(self):
+        # La leyenda y las etiquetas de una zona dicen «según Perspicacia «Estrella»» (fuenteCorta, site/js/mapa.js).
+        del_mapa = build.fuentes_del_mapa(self.salida)
+        self.assertIn("it-estrella", del_mapa)
+        for i in del_mapa:
+            f = self.core["fuentes"][i]
+            self.assertTrue(f.get("titulo") or f.get("obra"), i)
+            self.assertEqual({k: f[k] for k in build.SOURCE_MAP_KEYS if k in f},
+                             {k: self.salida["fuentes"][i][k] for k in build.SOURCE_MAP_KEYS if k in self.salida["fuentes"][i]})
+        self.assertNotIn("titulo", self.core["fuentes"]["it-pablo"])   # las demás, solo en el detalle
 
     def test_a_key_lost_on_the_way_fails(self):
         core, detail = self.copies()
