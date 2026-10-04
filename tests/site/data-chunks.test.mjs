@@ -102,11 +102,12 @@ const count = (page, file) => page.requests.filter((p) => p.endsWith(`/${file}`)
 const panelText = (page) => page.locator('#panel-cuerpo').textContent();
 
 test('the site opens with the core and asks for the detail once, whoever needs it first', async () => {
-  // The detail is held back, so every requester asks while it is still on its way: the address, the card, the graph,
-  // two direct calls and the search on top.
+  // The detail is held back, so every requester asks while it is still on its way: the map, the card, the graph,
+  // two direct calls and the search on top. (An address with a card waits for the detail to start: see below.)
   let release;
   const held = new Promise((ok) => { release = ok; });
-  const page = await openPage({ hash: 'sel=persona:pablo&t=50.3000', detail: held });
+  const page = await openPage({ hash: 't=50.3000', detail: held });
+  await page.evaluate(() => { window.location.hash = 'sel=persona:pablo&t=50.3000'; });
   await page.evaluate(() => { window.BE.grafo.abrir('pablo'); window.BE.chunks.load(); window.BE.chunks.load(); });
   await page.locator('#vista-grafo [role="status"]', { hasText: 'Cargando el grafo' }).waitFor();
   await page.locator('#q').fill('Bernabé');
@@ -125,9 +126,20 @@ test('the site opens with the core and asks for the detail once, whoever needs i
   assert.deepEqual([...page.pageErrors, ...page.consoleErrors], []);
 });
 
-test('an address that opens a card asks for the detail at the same time as the core', async () => {
-  const page = await openPage({ hash: 'sel=persona:pablo&t=50.3000' });
+test('an address that opens a card asks for the detail at the same time as the core, and starts with both', async () => {
+  // The site starts when both have arrived, as it did with data.json: if the map started with the core alone, its
+  // downloads would share the line with the detail and the card would come later. So the card never says «Cargando»,
+  // even with the detail 1.5 s behind the core.
+  const page = await openPage({ hash: 'sel=persona:pablo&t=50.3000', routes: async (p) => {
+    await p.route('**/data.detail.json', async (r) => { await new Promise((ok) => setTimeout(ok, 1500)); return r.continue(); });
+    await p.addInitScript(() => {
+      window.__busy = 0;
+      new MutationObserver(() => { if (document.querySelector('#panel-cuerpo [aria-busy="true"]')) window.__busy++; })
+        .observe(document, { childList: true, subtree: true });
+    });
+  } });
   await page.locator('#panel-cuerpo .razon', { hasText: D.personas.pablo.razon.slice(0, 40) }).first().waitFor();
+  assert.equal(await page.evaluate(() => window.__busy), 0, 'the card said «Cargando la ficha…» first');
   const at = (p, e) => p.events.indexOf(e);
   assert.ok(at(page, 'ask /data.detail.json') >= 0 && at(page, 'ask /data.detail.json') < at(page, 'got /data.core.json'), page.events.join(', '));
   // Without a card in the address, the detail waits for the map (or for whoever needs it first): never before the core.
@@ -144,7 +156,8 @@ test('an address that opens a card asks for the detail at the same time as the c
 test('a card waits for the detail, says so, and paints when it arrives; the search does not wait', async () => {
   let release;
   const held = new Promise((ok) => { release = ok; });
-  const page = await openPage({ hash: 'sel=persona:pablo&t=50.3000', detail: held });
+  const page = await openPage({ hash: 't=50.3000', detail: held });
+  await page.evaluate(() => { window.location.hash = 'sel=persona:pablo&t=50.3000'; });
   await frames(page);
   const busy = page.locator('#panel-cuerpo [role="status"][aria-busy="true"]');
   assert.equal((await busy.textContent()).trim(), 'Cargando la ficha…');
@@ -231,8 +244,9 @@ test('in English, the detail that arrives after the core gets its English too', 
   const EN = JSON.parse(fs.readFileSync(path.join(SITE_DIR, 'data.en.json'), 'utf8')).lugares.filipos;
   let release;
   const held = new Promise((ok) => { release = ok; });
-  const page = await openPage({ url: 'index.html?lang=en', hash: 'sel=lugar:filipos&t=50.3000', detail: held });
+  const page = await openPage({ url: 'index.html?lang=en', hash: 't=50.3000', detail: held });
   await page.waitForFunction((name) => window.BE.D.lugares.filipos.nombre === name, EN.nombre);
+  await page.evaluate(() => { window.location.hash = 'sel=lugar:filipos&t=50.3000'; });
   assert.deepEqual(await page.evaluate(() => window.BE.chunks.loaded), []);
   release();
   await page.locator('#panel-cuerpo .be-card__body', { hasText: EN.resumen.slice(0, 40) }).first().waitFor();

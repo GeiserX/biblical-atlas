@@ -38,6 +38,7 @@ let core = null;            // promesa del núcleo
 const loads = new Map();    // nombre del trozo → promesa de ese trozo ya unido al núcleo
 const merged = new Set();   // trozos ya unidos
 const waiting = new Set();  // repintados que esperan al detalle
+let early = null;           // el detalle pedido por la dirección antes de arrancar: start() lo espera
 let failure = null, failedAt = 0;   // el error de la última descarga fallida y cuándo
 const RETRY_MS = 5000;      // tras un fallo, un repintado no vuelve a pedirlo antes: nada de bucles sin red
 
@@ -59,6 +60,15 @@ function loadCore() {
     })();
   }
   return core;
+}
+
+/** Lo que espera base.js para arrancar: el núcleo y, si la dirección ya abre una ficha y el detalle baja a la vez,
+    también el detalle (o su fallo, que dice la ficha). Si el mapa arrancara con el núcleo solo, sus descargas se
+    repartirían la línea con el detalle y la ficha llegaría más tarde que con data.json entero. */
+async function start() {
+  const D = await loadCore();
+  if (early) await early.catch(() => {});
+  return D;
 }
 
 /** Une `detail` a `target` como scripts/build.py (merge_chunks): un objeto clave a clave, una lista posición a
@@ -127,7 +137,8 @@ function waitingHtml(what = 'la ficha') {
 }
 
 // El detalle se pide antes de que haga falta. Si la dirección ya abre una ficha (también un enlace a un pasaje, #p=),
-// el grafo o la conexión, a la vez que el núcleo: si esperara al mapa, en el teléfono llegaría detrás de su relieve. Si no, al entrar en una caja de
+// el grafo o la conexión, a la vez que el núcleo, y el arranque lo espera (start): si esperara al mapa, en el teléfono
+// llegaría detrás de su relieve. Si no, al entrar en una caja de
 // búsqueda y cuando el mapa queda quieto por primera vez (después del primer pintado, sin quitarle red a sus teselas).
 // La primera regla va al final del fichero, cuando BE.chunks ya existe.
 document.addEventListener('focusin', (e) => { if (e.target.matches?.('#q, #portada-q')) load().catch(() => {}); });
@@ -139,9 +150,10 @@ BE.inicios.push(() => {
 });
 
 BE.chunks = {
-  loadCore, load, ready, whenReady, waitingHtml, mergeInto,
+  loadCore, start, load, ready, whenReady, waitingHtml, mergeInto,
   get loaded() { return whole ? ['whole'] : [...merged]; },
   get failed() { return !!failure; },
 };
-try { if (/(^#|&)(sel|grafo|conexion|p)=/.test(location.hash)) load().catch(() => {}); } catch { /* ?datos= no vale: lo dice el arranque */ }
+try { if (/(^#|&)(sel|grafo|conexion|p)=/.test(location.hash)) early = load(); } catch { /* ?datos= no vale: lo dice el arranque */ }
+early?.catch(() => {});
 })();
