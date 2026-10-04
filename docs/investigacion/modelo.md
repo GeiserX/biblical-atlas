@@ -307,6 +307,8 @@ El vocabulario tiene 43 palabras. Diez no las lleva ninguna relación de `14b6c0
 
 **Quitar una copia deja rastro.** Quien quita o mueve una relación a mano añade una fila a `scripts/migration/redirects.yaml` con la clave que desaparece y la que queda. `apply.py` y la comprobación de la cobertura lo leen. Así una propuesta en marcha que cita la copia quitada llega a la que queda, en vez de romper la referencia o de escribir otra vez el par.
 
+Poner `word`, `office` o `date.from` a una relación que no los llevaba no es quitarla ni moverla, y no lleva fila. Una fila sin ese campo casaría también con una propuesta que trae otra palabra, otro cargo u otro tramo, y `apply.py` le sumaría sus fuentes sin avisar. Una propuesta que la trae sin el campo se para sola: sin fecha junto a la fechada, `apply.py` da un choque; sin palabra o sin cargo, vuelve a avisar y el presupuesto de avisos la frena.
+
 ## 6. La clave de una relación y las referencias de la cobertura
 
 **La clave** de una relación es (`type`, destino, `word` u `office`, `date.from`). El cuarto campo es el cargo en `succeeds` y en `holds_office`, y la palabra en los demás tipos; el vocabulario lo dice en `key_field`. Dos relaciones de una ficha no pueden compartir clave.
