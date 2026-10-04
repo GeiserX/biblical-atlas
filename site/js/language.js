@@ -165,7 +165,7 @@ function translateDisplay() {
   };
   BE.chipsCitas = (ref) => BE.citas(ref).map((c) => {
     const label = refText(c);
-    return `<a class="be-ref" href="${BE.urlCita(c)}" ${BE.EXTERNO} title="${esc(t('Leer {cita} en jw.org', { cita: label }))}">${esc(label)}</a>`;
+    return `<a class="be-ref" href="${esc(BE.urlCita(c))}" ${BE.EXTERNO} title="${esc(t('Leer {cita} en jw.org', { cita: label }))}">${esc(label)}</a>`;
   }).join('');
 }
 function refText(c) {

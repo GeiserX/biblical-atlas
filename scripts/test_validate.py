@@ -1094,6 +1094,11 @@ class Idiomas(unittest.TestCase):
         self.assertEqual(len(e), 1)
         self.assertIn("la abreviatura 'Ac' en 'en' ya es de hechos", e[0])
 
+    def test_el_slug_ingles_tiene_la_forma_del_espanol(self):
+        self.LIBROS = [dict(self.LIBROS[0], en=dict(self.LIBROS[0]["en"], slug='acts/"x')), self.LIBROS[1]]
+        e, _ = self.errores(self.lugar())
+        self.assertTrue(any("slug 'acts/\"x' en 'en' no es un slug ASCII" in x for x in e), e)
+
     def test_una_lista_con_otro_largo(self):
         o = self.lugar(not_claimed=["Uno.", "Dos."])
         o["en"]["not_claimed"] = ["One."]

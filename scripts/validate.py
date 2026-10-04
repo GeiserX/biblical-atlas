@@ -2160,6 +2160,10 @@ def validar_idiomas(datos, err):
         vistos = {}
         for b in libros:
             ab = (b.get(lang) or {}).get("abbr") if isinstance(b.get(lang), dict) else None
+            sl = (b.get(lang) or {}).get("slug") if isinstance(b.get(lang), dict) else None
+            if sl is not None and not ID.match(str(sl)):
+                # El slug va dentro de la dirección del capítulo: la misma forma que el español, nada que la rompa.
+                err(f"data/books.yaml ({b.get('slug')}): slug '{sl}' en '{lang}' no es un slug ASCII en minúsculas")
             if ab in vistos:
                 err(f"data/books.yaml ({b.get('slug')}): la abreviatura '{ab}' en '{lang}' ya es de {vistos[ab]}")
             elif ab:
