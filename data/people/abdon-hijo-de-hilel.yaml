@@ -46,12 +46,13 @@ relations:
   status: verified
 - type: succeeds
   person: elon-el-zabulonita
+  office: judge
   inferred: false
   sources:
   - jueces-12
   - it-abdon
   reason: 'Jue 12:13: juzgó a Israel después de Elón.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-03'
   status: verified
 - type: born_in
   place: territorio-de-efrain

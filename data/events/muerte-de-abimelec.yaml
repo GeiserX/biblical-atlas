@@ -1,6 +1,7 @@
 # biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
 id: muerte-de-abimelec
 title: Muere Abimélec en Tebez
+type: death
 date:
   from: -1449
   to: -1172
@@ -16,6 +17,8 @@ places:
 - tebez
 people:
 - abimelec-hijo-de-gedeon
+roles:
+  abimelec-hijo-de-gedeon: died
 passages:
 - Jue 9:50-57
 - 2Sa 11:21
@@ -34,5 +37,5 @@ links:
 - title: Jueces 9 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/jueces/9/
   type: bible
-checked_on: '2026-09-29'
+checked_on: '2026-10-03'
 status: verified

@@ -1,13 +1,15 @@
 #!/usr/bin/env python3
 """Valida data/: esquema, fechas, identificadores, fuentes, razones, relaciones, sucesos y cobertura.
 
-Uso:  python3 scripts/validate.py [--data DIR] [--links] [--strict]
+Uso:  python3 scripts/validate.py [--data DIR] [--links] [--strict] [--budget FICHERO]
 
 --data DIR valida otra copia de los datos (por ejemplo, HEAD más los ficheros de un carril, en /tmp).
 --links descarga cada URL una sola vez (GET, 0,5 s entre peticiones) y falla si alguna no da 200.
 --strict hace que los avisos también fallen.
+--budget FICHERO lee otro presupuesto de avisos (por defecto scripts/avisos-presupuesto.txt).
 
-Un error sale con código 1. Un aviso (AVISO [código]) se escribe y sale con 0, salvo con --strict. Los códigos de
+Un error sale con código 1. Un aviso (AVISO [código]) se escribe y sale con 0, salvo con --strict o cuando los avisos
+de un código pasan de su presupuesto: entonces sale con 1 y escribe los avisos de ese código. Los códigos de
 aviso y cuándo pasan a ser errores están en docs/investigacion/modelo.md, sección 13; el esquema, en ese mismo
 documento y en docs/investigacion/README.md. El vocabulario de las relaciones es data/vocabulary.yaml.
 """
@@ -102,7 +104,8 @@ SECCIONES_CALENDARIO = {"months", "explanation"}
 CAMPOS_FIESTA = {"name", "from", "to", "instituted_in", "sources", "reason", "status", "checked_on"}
 CAMPOS_PAPEL = {"role", "date", "place"}
 
-# Avisos (modelo.md, sección 13). Escriben y salen con 0; con --strict, fallan.
+# Avisos (modelo.md, sección 13). Escriben y salen con 0 mientras cada código quede dentro de su presupuesto
+# (avisos-presupuesto.txt); con --strict, fallan.
 WARNING_CODES = ("wrong_owner", "pair_twice", "outside_pending", "unlisted_caption", "kin_without_word",
                  "bare_company", "no_office", "no_certainty", "same_as_owner", "no_reference", "title_type",
                  "type_without_role", "shared_point")
@@ -112,6 +115,8 @@ PROMOTED = set()
 # Un campo que su tipo pide y que falta: estos dos avisan hasta sus decisiones (O1 y O2); cualquier otro es un error.
 MISSING_WARNS = {("succeeds", "office"): "no_office", ("same_as", "certainty"): "no_certainty"}
 RE_TITULO_PAPEL = re.compile(r"^(Nace|Nacimiento|Muere|Muerte)\b")
+# Cuántos avisos de cada código admite main. Un código que no sale en el fichero admite 0. Se baja editando el número.
+PRESUPUESTO = Path(__file__).resolve().parent / "avisos-presupuesto.txt"
 
 
 # ---------------------------------------------------------------- carga
@@ -2282,11 +2287,45 @@ def comprobar_enlaces(lista):
     return fallos
 
 
+# ---------------------------------------------------------------- presupuesto de avisos
+
+def leer_presupuesto(ruta):
+    """Devuelve {código: avisos que se admiten}. Cada línea es un código y un número; # empieza un comentario.
+
+    Un código que no existe, un número que no lo es o un código repetido dan ValueError: un presupuesto mal escrito
+    no puede dejar pasar avisos en silencio."""
+    tope = {}
+    for n, linea in enumerate(Path(ruta).read_text(encoding="utf-8").splitlines(), 1):
+        partes = linea.split("#", 1)[0].split()
+        if not partes:
+            continue
+        if len(partes) != 2 or partes[0] not in WARNING_CODES or not partes[1].isdigit() or partes[0] in tope:
+            raise ValueError(f"{ruta}:{n}: «{linea.strip()}» no es «código número» con un código de aviso, una vez")
+        tope[partes[0]] = int(partes[1])
+    return tope
+
+
+def comparar_presupuesto(avisos, tope):
+    """Devuelve (excesos, holguras). Un exceso es (código, hay, tope, textos) cuando un código pasa de su número; una
+    holgura, (código, hay, tope) cuando se queda por debajo y el número se puede bajar."""
+    cuenta = collections.Counter(c for c, _ in avisos)
+    excesos, holguras = [], []
+    for c in WARNING_CODES:
+        hay, permitido = cuenta[c], tope.get(c, 0)
+        if hay > permitido:
+            excesos.append((c, hay, permitido, [t for k, t in avisos if k == c]))
+        elif hay < permitido:
+            holguras.append((c, hay, permitido))
+    return excesos, holguras
+
+
 def main(argv=None):
     ap = argparse.ArgumentParser(description="Valida los datos de biblical-atlas.")
     ap.add_argument("--data", default=str(RAIZ / "data"), help="directorio de datos (por defecto data/)")
     ap.add_argument("--links", action="store_true", help="comprueba que cada URL responde 200")
     ap.add_argument("--strict", action="store_true", help="los avisos también hacen fallar")
+    ap.add_argument("--budget", default=str(PRESUPUESTO),
+                    help="avisos que se admiten por código (por defecto scripts/avisos-presupuesto.txt)")
     args = ap.parse_args(argv)
     datos = load(args.data)
     errores = old_schema(args.data)
@@ -2303,6 +2342,20 @@ def main(argv=None):
     print(f"validate: {n} ficheros de entidades, {len(datos['sources'])} fuentes ({n_impl} capítulos implícitos), "
           f"{len(datos['books'])} libros y {len(datos.get('coverage') or {})} ficheros de cobertura; "
           f"{len(errores)} errores de esquema y {len(avisos)} avisos{' (' + detalle + ')' if detalle else ''}.")
+    try:
+        excesos, holguras = comparar_presupuesto(avisos, leer_presupuesto(args.budget))
+    except (OSError, ValueError) as e:
+        print("ERROR presupuesto de avisos:", e)
+        excesos, holguras = [None], []
+    for codigo, hay, tope, textos in filter(None, excesos):
+        print(f"PRESUPUESTO [{codigo}] {hay} avisos y el presupuesto es {tope}: arregla el nuevo, no subas el número. "
+              f"Los de este código:")
+        for t in textos:
+            print(f"  AVISO [{codigo}] {t}")
+    for codigo, hay, tope in holguras:
+        donde = Path(args.budget).resolve()
+        donde = donde.relative_to(RAIZ) if donde.is_relative_to(RAIZ) else donde
+        print(f"presupuesto [{codigo}]: {hay} avisos y el presupuesto es {tope}; baja el número en {donde}")
     fallos = []
     if args.links:
         lista = urls(datos)
@@ -2310,7 +2363,7 @@ def main(argv=None):
         for f in fallos:
             print("ENLACE ROTO", f)
         print(f"validate --links: {len(lista)} enlaces comprobados, {len(fallos)} fallos.")
-    return 1 if errores or fallos or (args.strict and avisos) else 0
+    return 1 if errores or fallos or excesos or (args.strict and avisos) else 0
 
 
 if __name__ == "__main__":

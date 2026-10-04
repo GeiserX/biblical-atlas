@@ -1,6 +1,7 @@
 # biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
 id: muerte-de-aaron
 title: Muere Aarón en el monte Hor
+type: death
 date:
   from: -1473
   to: -1473
@@ -29,6 +30,8 @@ present:
 - aaron
 - moises
 - eleazar-hijo-de-aaron
+roles:
+  aaron: died
 passages:
 - Nú 20:22-29
 - Nú 33:37-39
@@ -50,5 +53,5 @@ links:
 - title: Números 20 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/N%C3%BAmeros/20/
   type: bible
-checked_on: '2026-09-29'
+checked_on: '2026-10-03'
 status: verified

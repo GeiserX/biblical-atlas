@@ -28,16 +28,15 @@ relations:
     Jerusalén.
   checked_on: '2026-09-29'
   status: verified
-- type: accompanies
+- type: tie
   person: maria-madre-de-juan-marcos
-  caption: sirvienta
-  inverse_caption: señora
+  word: mistress
   inferred: true
   sources:
   - it-rode
   - hechos-12
   reason: Perspicacia «Rode» la cree posiblemente sirvienta de la casa de María; Hch 12:12, 13 la pone a la puerta de esa casa.
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-03'
   status: pending
 links:
 - title: 'Perspicacia: «Rode»'

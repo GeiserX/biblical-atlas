@@ -9,11 +9,13 @@ Python 3.12 o más nuevo y PyYAML:
 ```bash
 pip install -r requirements.txt
 python3 scripts/build.py          # data/ -> site/data.json, site/data.js, site/stats.json, dist/ y docs/investigacion/registro/
-python3 scripts/validate.py       # esquema, fuentes, fechas, calendario; debe dar 0 errores
+python3 scripts/validate.py       # esquema, fuentes, fechas, calendario; 0 errores y avisos dentro del presupuesto
 python3 scripts/validate.py --links   # y además cada URL (lento: medio segundo por petición)
 python3 scripts/review.py --fail  # lo que lleva más de un año sin releer
 python3 -m http.server -d site    # y abrir http://localhost:8000
 ```
+
+Los avisos (`AVISO [código]`) señalan lo que pide leer el texto y no bloquean, pero tienen un presupuesto: [`scripts/avisos-presupuesto.txt`](https://github.com/GeiserX/biblical-atlas/blob/main/scripts/avisos-presupuesto.txt) dice cuántos admite cada código. `validate.py` lo aplica siempre, en local y en el CI: si un código pasa de su número sale con 1 y escribe los avisos de ese código para encontrar el nuevo; si se queda por debajo, pide bajar el número. Quien arregla un aviso baja su número en el mismo cambio; el número nunca se sube para dejar pasar uno nuevo. Un código que no está en el fichero admite 0. `--budget FICHERO` lee otro presupuesto.
 
 Las pruebas de los scripts:
 

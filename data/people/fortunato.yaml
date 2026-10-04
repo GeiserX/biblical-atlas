@@ -57,8 +57,7 @@ relations:
   status: verified
 - type: accompanies
   person: estefanas
-  caption: compañero de viaje
-  inverse_caption: compañero de viaje
+  word: companion
   date:
     from: 55
     to: 55
@@ -74,7 +73,7 @@ relations:
   - it-estefanas
   reason: 1Co 16:17 nombra juntos a Estéfanas, Fortunato y Acaico, que llegaron a la vez; Perspicacia dice que fue a ver a
     Pablo con los otros dos, y en «Estéfanas» fecha la visita hacia 55.
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-03'
   status: verified
 checked_on: '2026-09-29'
 status: verified

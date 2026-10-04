@@ -38,13 +38,14 @@ relations:
   status: verified
 - type: kin
   person: pablo
+  word: relative
   inferred: false
   sources:
   - it-herodion
   - romanos-16
   reason: 'Ro 16:11: «mi pariente». Perspicacia «Herodión» lo cree familiar cercano, porque Pablo no llama así a todos los
     judíos que saluda.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-03'
   status: verified
 checked_on: '2026-09-29'
 status: verified

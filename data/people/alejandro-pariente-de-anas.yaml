@@ -32,13 +32,14 @@ distinct_from:
 relations:
 - type: kin
   person: anas
+  word: relative
   inferred: true
   sources:
   - it-alejandro
   - hechos-4
   reason: Hch 4:6 lo pone entre Caifás y los parientes del sacerdote principal; Perspicacia «Alejandro», núm. 3, lo llama pariente
     de Anás.
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-03'
   status: verified
 checked_on: '2026-09-29'
 status: verified

@@ -48,16 +48,16 @@ relations:
   reason: 'Jue 17:11, 12 y 18:15: se quedó a vivir en una casa junto a la de Miqueas, en la región montañosa de Efraín.'
   checked_on: '2026-09-29'
   status: verified
-- type: accompanies
+- type: tie
   person: miqueas-de-efrain
-  caption: sacerdote de
+  word: master
   inferred: false
   sources:
   - jueces-17
   - jueces-18
   - it-miqueas
   reason: 'Jue 17:10-12 y 18:4: Miqueas lo contrató por diez piezas de plata al año y lo nombró su sacerdote.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-03'
   status: verified
 - type: kin
   person: guersom-hijo-de-moises
