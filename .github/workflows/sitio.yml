@@ -2,7 +2,8 @@ name: sitio
 
 # Las pruebas de tests/site en un Chromium de verdad, en cada PR y en cada push a main. El repositorio es público: los
 # runners de GitHub no cuestan nada, así que nada de esto corre en máquinas propias. Si una prueba falla, las trazas de
-# Playwright de su fichero se suben como artefacto «trazas» (se abren con `npx playwright-core show-trace <fichero>.zip`).
+# Playwright de su fichero se suben como artefacto `trazas-<n>`, con n el número del trabajo en la matriz (se abren con
+# `npx playwright-core show-trace <fichero>.zip`).
 on:
   pull_request:
   push:
