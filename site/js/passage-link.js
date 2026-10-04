@@ -67,7 +67,7 @@ function valid(r) {
   return !before(r.c2, r.v2, r.c1, r.v1);
 }
 
-const ITEM = /^(\d{1,4})(?:\s*:\s*(\d{1,4}))?(?:\s*[-–—]\s*(\d{1,4})(?:\s*:\s*(\d{1,4}))?)?$/;
+const ITEM = /^(\d{1,4})(?:\s*:\s*(\d{1,4}))?(?:\s*[-\u2013\u2014]\s*(\d{1,4})(?:\s*:\s*(\d{1,4}))?)?$/;
 /** The chapter and verse part of one reference: every comma item a stretch, joined to the one before when they touch.
     null when an item is not numbers. */
 function numbers(book, s) {
