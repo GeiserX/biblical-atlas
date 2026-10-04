@@ -45,7 +45,9 @@ Dos cosas se repiten. Un nombre va siempre a la derecha de su punto, y si ahí s
 
 ![Maqueta B: «Babilonia» arriba, unida a su punto por una raya](img/rotulos-movil/alt-b-babilonia-430.webp)
 
-**C. Un margen mayor en el encuadre.** El encuadre del móvil deja 160 px a la derecha en lugar de 50, para que el nombre quepa. Babilonia sale con nombre al abrir, pero el mapa se aleja y lo que no es el borde empeora: en todas las paradas, Babilonia 8/13 (A: 12/13), la última semana 16/44 (A: 18/44) y Pedro 6/57 (A: 13/57). Además solo sirve al encuadrar: al mover el mapa con el dedo, el nombre vuelve a esconderse. Dejar que el nombre se corte en el borde lo descartamos sin maqueta: «Babil» se lee mal.
+**C. Un margen mayor en el encuadre.** El encuadre del móvil deja 160 px a la derecha en lugar de 50, para que el nombre quepa. Babilonia sale con nombre al abrir, pero el mapa se aleja y lo que no es el borde empeora: en todas las paradas, Babilonia 8/13 (A: 12/13), la última semana 16/44 (A: 18/44) y Pedro 6/57 (A: 13/57). Además solo sirve al encuadrar: al mover el mapa con el dedo, el nombre vuelve a esconderse.
+
+«Un margen más pequeño» admite otra lectura: dejar que el nombre se acerque al borde o lo pase unos píxeles, es decir, aflojar la regla de que un nombre cabe entero en el mapa. Esa no la medimos ni tiene maqueta. Un nombre que sobresale sale cortado («Babil» en lugar de «Babilonia») y se lee mal, mientras que A pone entero, al otro lado del punto, todo nombre que cabe allí. Si se quiere ver, basta con aflojar `dentro` en `pintarEtiquetas` y pasar `contar-rotulos.mjs`.
 
 ![Maqueta C: el mapa más lejos para dejar sitio a la derecha](img/rotulos-movil/alt-c-babilonia-430.webp)
 
