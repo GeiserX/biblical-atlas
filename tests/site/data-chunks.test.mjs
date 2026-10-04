@@ -170,9 +170,15 @@ test('a detail that fails is said in the card, with no page error, and the map k
 
 test('in English, the detail that arrives after the core gets its English too', async () => {
   // language.js puts data.en.json over the core; the summary and the reason of Filipos come later, in Spanish, with
-  // the detail, and the loader has to apply the layer again after merging it.
+  // the detail, and the loader has to apply the layer again after merging it. The detail is held until the layer is
+  // on the core, or it could be merged first and the test would pass without the second apply.
   const EN = JSON.parse(fs.readFileSync(path.join(SITE_DIR, 'data.en.json'), 'utf8')).lugares.filipos;
-  const page = await openPage({ url: 'index.html?lang=en', hash: 'sel=lugar:filipos&t=50.3000' });
+  let release;
+  const held = new Promise((ok) => { release = ok; });
+  const page = await openPage({ url: 'index.html?lang=en', hash: 'sel=lugar:filipos&t=50.3000', detail: held });
+  await page.waitForFunction((name) => window.BE.D.lugares.filipos.nombre === name, EN.nombre);
+  assert.deepEqual(await page.evaluate(() => window.BE.chunks.loaded), []);
+  release();
   await page.locator('#panel-cuerpo .be-card__body', { hasText: EN.resumen.slice(0, 40) }).first().waitFor();
   const f = await page.evaluate(() => { const l = window.BE.D.lugares.filipos; return { resumen: l.resumen, razon: l.razon }; });
   assert.deepEqual(f, { resumen: EN.resumen, razon: EN.razon });
