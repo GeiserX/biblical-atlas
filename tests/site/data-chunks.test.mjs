@@ -4,12 +4,13 @@
 // the card, not thrown; file:// and a folder with no core still load the whole data.json; and the map, the timeline,
 // «Mientras tanto», «Ahora» and the landing painted from the core alone are the same as painted from the whole
 // data.json. The last test opens every view with the chunks and counts the console errors.
+// MapLibre comes from unpkg.com, so the map tests need the network for it; every other host is blocked.
 //
 // Run from the root of the repository, one browser at a time:
 //   node --test --test-concurrency=1 tests/site/data-chunks.test.mjs
 // Needs playwright-core with a Chromium (importable, or PLAYWRIGHT_CORE=<path to playwright-core>) and the data built
 // into site/ with python3 scripts/build.py (data.json, data.js, data.core.json, data.detail.json, stats.json).
-// BE_SITE_DIR=<dir> tests another copy of the site. Hosts other than the local server are blocked.
+// BE_SITE_DIR=<dir> tests another copy of the site. Hosts other than the local server and unpkg.com are blocked.
 import { test, before, after, afterEach } from 'node:test';
 import assert from 'node:assert/strict';
 import http from 'node:http';
@@ -75,7 +76,7 @@ async function openPage({ screen = DESKTOP, url = 'index.html', hash = '', detai
   page.on('requestfinished', (r) => page.events.push(`got ${new URL(r.url()).pathname}`));
   page.on('pageerror', (e) => page.pageErrors.push(e.message));
   page.on('console', (m) => { if (m.type() === 'error' && (m.location().url || '').startsWith(base)) page.consoleErrors.push(m.text()); });
-  await page.route((u) => !u.href.startsWith(base), (r) => r.abort());
+  await page.route((u) => !u.href.startsWith(base) && !u.hostname.endsWith('unpkg.com'), (r) => r.abort());   // MapLibre comes from unpkg
   if (detail !== 'pass') {
     await page.route('**/data.detail.json', async (r) => {
       if (detail === 'abort') return r.abort();
@@ -88,17 +89,31 @@ async function openPage({ screen = DESKTOP, url = 'index.html', hash = '', detai
   return page;
 }
 const frames = (page, n = 3) => page.evaluate((k) => new Promise((ok) => { const f = () => (k-- ? requestAnimationFrame(f) : ok()); f(); }), n);
+/** Waits until the map stands still: a jump in time reframes it 300 ms later, and the labels and groups are laid out
+    when it stops. */
+const settle = async (page) => {
+  await page.waitForTimeout(400);
+  await page.waitForFunction(() => { const m = window.__be.map; return !m || (!m.isMoving() && m.loaded()); }, null, { timeout: 30000 });
+  await frames(page, 6);
+};
 const count = (page, file) => page.requests.filter((p) => p.endsWith(`/${file}`)).length;
 const panelText = (page) => page.locator('#panel-cuerpo').textContent();
 
 test('the site opens with the core and asks for the detail once, whoever needs it first', async () => {
-  const page = await openPage({ hash: 'sel=persona:pablo&t=50.3000' });
-  // The card, the graph, the search on top and the connection, one after another and two at a time.
-  await page.locator('#panel-cuerpo .razon', { hasText: D.personas.pablo.razon.slice(0, 40) }).first().waitFor();
+  // The detail is held back, so every requester asks while it is still on its way: the address, the card, the graph,
+  // two direct calls and the search on top.
+  let release;
+  const held = new Promise((ok) => { release = ok; });
+  const page = await openPage({ hash: 'sel=persona:pablo&t=50.3000', detail: held });
   await page.evaluate(() => { window.BE.grafo.abrir('pablo'); window.BE.chunks.load(); window.BE.chunks.load(); });
-  await page.locator('#vista-grafo [data-gnodo-sel], #vista-grafo [data-grafo-centro]').first().waitFor();
+  await page.locator('#vista-grafo [role="status"]', { hasText: 'Cargando el grafo' }).waitFor();
   await page.locator('#q').fill('Bernabé');
   await page.locator('#resultados [data-i]').first().waitFor();
+  await frames(page);
+  assert.deepEqual(await page.evaluate(() => window.BE.chunks.loaded), [], 'the detail arrived before it was released');
+  release();
+  await page.locator('#panel-cuerpo .razon', { hasText: D.personas.pablo.razon.slice(0, 40) }).first().waitFor();
+  await page.locator('#vista-grafo [data-gnodo-sel], #vista-grafo [data-grafo-centro]').first().waitFor();
   await page.evaluate(() => window.BE.conexion.abrir('persona:pablo', 'persona:bernabe'));
   await frames(page);
   assert.equal(count(page, 'data.core.json'), 1);
@@ -206,26 +221,32 @@ for (const [name, screen] of [['desktop', DESKTOP], ['phone', PHONE]]) {
     for (const p of [core, whole]) {
       await p.evaluate(() => { window.location.hash = 't=50.3000'; });
       await p.waitForFunction(() => !window.BE.portada?.abierta);
+      await p.waitForFunction(() => window.__be.map?.loaded?.() && window.__be.map.getSource('be-rastro'), null, { timeout: 60000 });
     }
     const [t0, t1] = await core.evaluate(() => [window.BE.T_MIN, window.BE.T_MAX]);
     const views = [
       [null, 0.08], [null, 0.35], [null, 0.5031], [null, 0.97],
       ['persona:pablo', null], ['lugar:jerusalen', null], ['persona:abrahan', null], ['viaje:primer-viaje', null],
     ];
+    const seen = { sources: 0, mientras: 0 };   // a comparison of two empty maps would prove nothing
     for (const [sel, f] of views) {
       for (const p of [core, whole]) {
         await p.evaluate(([s, t]) => {
           window.BE.seleccionar(s ? window.BE.parseSel(s) : null, { mover: true, encuadrar: false });
           if (t != null) window.BE.setT(t);
         }, [sel, f == null ? null : t0 + f * (t1 - t0)]);
-        await frames(p, 6);
       }
+      await settle(core); await settle(whole);
       const a = await snapshot(core), b = await snapshot(whole);
       for (const k of ['timeline', 'mientras', 'panel']) assert.equal(a[k], b[k], `${sel || f}: ${k} differs`);
       assert.deepEqual(a.markers, b.markers, `${sel || f}: map markers differ`);
       assert.deepEqual(Object.keys(a.sources).sort(), Object.keys(b.sources).sort());
       for (const id of Object.keys(a.sources)) assert.equal(a.sources[id], b.sources[id], `${sel || f}: map source ${id} differs`);
+      seen.sources += Object.keys(a.sources).length;
+      if (a.mientras) seen.mientras++;
     }
+    assert.ok(seen.sources > 0, 'the map painted no source: MapLibre did not load');
+    assert.ok(seen.mientras > 0, '«Mientras tanto» never showed: the comparison did not cover it');
     assert.deepEqual([...core.pageErrors, ...whole.pageErrors], []);
   });
 }
