@@ -4,6 +4,8 @@
 //   point when it fits there. The rules that already held still hold: no two names drawn touch, a name never covers
 //   the point of another place, nothing drawn leaves the map or sits under a card, the selected place keeps its name,
 //   in the light theme and in meeting mode.
+// - A name on the inner side never covers the point of a candidate or a find, even one half under a card: those points
+//   are drawn always.
 // - On the phone the tour's card is one line (title, «n de m» and two arrows) that opens on a tap and closes with Escape;
 //   the arrows move between stops. At 1440 the card is the one it was.
 // - The phone frames the tour «Las cartas de Pablo y las ciudades» with its eleven stops clear of the card, the map's
@@ -182,6 +184,51 @@ test('a stop next to the right edge keeps its name on the inner side, and the ol
     assert.deepEqual(page.pageErrors, []);
     await page.context().close();
   }
+});
+
+test('430: a name moved to the inner side keeps off a candidate point half under the map controls', async () => {
+  const page = await open(PHONE);
+  // The revolt of Edom chosen, so Zaír is on the map with its name, and the line of time over 500 years, so the Valley of
+  // Salt is in time and its candidates are drawn: «Llanura al sur del mar Salado» lies up and to the left of Zaír, with
+  // nothing else around. A candidate point is drawn always, also when it is half under a card and so not free of it: it
+  // still counts as taken, and the name of Zaír does not go over it.
+  await page.evaluate(() => { location.hash = 't=-904&v=500&sel=evento:edom-y-libna-se-rebelan-contra-jehoram-de-juda'; });
+  await page.waitForFunction(() => window.BE.E.sel?.tipo === 'evento');
+  await still(page);
+  await page.evaluate(() => window.__be.map.jumpTo({ zoom: 8 }));
+  await still(page);
+  const CAND = 'Llanura al sur del mar Salado';
+  // Zaír 20 px from the right edge, its name just below the controls; the zoom puts the candidate on their edge.
+  await page.evaluate((name) => {
+    const m = window.__be.map, mc = m.getContainer(), c = mc.getBoundingClientRect();
+    const cb = mc.querySelector('.maplibregl-ctrl-top-right').getBoundingClientRect().bottom - c.top;
+    const el = mc.querySelector('.marca-lugar[data-sel="lugar:zair"]');
+    const pr = el.querySelector('.punto').getBoundingClientRect(), et = el.querySelector('.etiqueta').getBoundingClientRect();
+    const up = (pr.top + pr.bottom) / 2 - et.top;   // from the point up to the top of its name
+    const Z = window.BE.L.zair, G = window.BE.L['valle-de-la-sal'].candidatos.find((x) => x.nombre.startsWith(name)).geometria;
+    const dy = m.project([G.lon, G.lat]).y - m.project([Z.lon, Z.lat]).y;
+    m.jumpTo({ zoom: m.getZoom() + Math.log2(-(up + 2) / dy) });
+    const p = m.project([Z.lon, Z.lat]), x = c.width - 20, y = cb + 2 + up;
+    m.jumpTo({ center: m.unproject([c.width / 2 + p.x - x, c.height / 2 + p.y - y]) });
+  }, CAND);
+  await still(page);
+  const s = await page.evaluate((name) => {
+    const mc = window.__be.map.getContainer(), c = mc.getBoundingClientRect(), k = mc.querySelector('.maplibregl-ctrl-top-right').getBoundingClientRect();
+    const el = mc.querySelector('.marca-lugar[data-sel="lugar:zair"]');
+    const pr = el.querySelector('.punto').getBoundingClientRect(), et = el.querySelector('.etiqueta').getBoundingClientRect(), cx = (pr.left + pr.right) / 2;
+    const inner = el.classList.contains('rotulo-izq') ? et : { left: 2 * cx - et.right, right: 2 * cx - et.left, top: et.top, bottom: et.bottom };
+    const cand = [...mc.querySelectorAll('.cand')].find((x) => x.getAttribute('aria-label').includes(name));
+    const d = cand?.querySelector('.cand-punto').getBoundingClientRect();
+    const touch = (a, b) => !(a.right <= b.left || a.left >= b.right || a.bottom <= b.top || a.top >= b.bottom);
+    return { zair: el.checkVisibility() && !el.classList.contains('otra-epoca'), candDrawn: !!cand?.checkVisibility({ visibilityProperty: true }),
+      halfUnder: !!d && touch(d, k) && d.bottom > k.bottom, rightOff: (el.classList.contains('rotulo-izq') ? 2 * cx - et.left : et.right) > c.right,
+      innerClear: inner.top > k.bottom, onTheWay: !!d && touch(inner, d) };
+  }, CAND);
+  assert.deepEqual(s, { zair: true, candDrawn: true, halfUnder: true, rightOff: true, innerClear: true, onTheWay: true }, 'the scene: the candidate half under the controls, on the inner side of Zaír');
+  const a = await audit(page);
+  assert.deepEqual(a.out, [], 'the rules, with the candidate half under the controls');
+  assert.deepEqual(page.pageErrors, []);
+  await page.context().close();
 });
 
 test('at 1440 the names follow the same rules, and one moves only where the right side does not fit', async () => {
