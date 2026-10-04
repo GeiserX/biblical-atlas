@@ -65,7 +65,7 @@ after(async () => { await browser?.close(); server?.close(); });
 
 /** Opens the site with a request log, page errors and console errors from our own files. `detail` decides what the
     detail request gets: 'pass', 'abort' or a promise that releases it. */
-async function openPage({ screen = DESKTOP, url = 'index.html', hash = '', detail = 'pass', wait = true } = {}) {
+async function openPage({ screen = DESKTOP, url = 'index.html', hash = '', detail = 'pass', wait = true, routes = null } = {}) {
   const context = await browser.newContext({ deviceScaleFactor: 1, ...screen });
   context.setDefaultTimeout(10000);
   const page = await context.newPage();
@@ -85,6 +85,7 @@ async function openPage({ screen = DESKTOP, url = 'index.html', hash = '', detai
       return r.continue();
     });
   }
+  if (routes) await routes(page);
   await page.goto(`${base}${url}${hash ? `#${hash}` : ''}`);
   if (wait) await page.waitForFunction(() => window.BE?.D && window.__be, null, { timeout: 30000 });
   return page;
@@ -206,6 +207,19 @@ test('in English, the detail that arrives after the core gets its English too', 
   const f = await page.evaluate(() => { const l = window.BE.D.lugares.filipos; return { resumen: l.resumen, razon: l.razon }; });
   assert.deepEqual(f, { resumen: EN.resumen, razon: EN.razon });
   assert.equal(count(page, 'data.detail.json'), 1);
+  assert.deepEqual([...page.pageErrors, ...page.consoleErrors], []);
+});
+
+test('in English, a detail merged before the later scripts run leaves the English display to the start', async () => {
+  // ficha.js arrives 2.5 s late, so the core and the detail are both merged before the scripts after it run. If the
+  // loader applied the layer then, language.js would wrap the citations before ficha.js replaces them, for good.
+  const page = await openPage({ url: 'index.html?lang=en', hash: 'sel=persona:pablo&t=50.3000', routes: (p) =>
+    p.route('**/js/ficha.js', async (r) => { await new Promise((ok) => setTimeout(ok, 2500)); return r.continue(); }) });
+  await page.locator('#panel-cuerpo .razon').first().waitFor();
+  // Acts is one of the books the English layer translates (data.en.json, libros): «Hch 21:39» reads «Ac 21:39».
+  const refs = await page.locator('#panel-cuerpo a.be-ref').evaluateAll((as) => as.map((a) => `${a.textContent} ${a.href}`));
+  assert.ok(refs.some((r) => r.startsWith('Ac ') && r.includes('jw.org/en/')), 'no citation of Acts in English');
+  assert.deepEqual(refs.filter((r) => r.startsWith('Hch ') || r.includes('/libros/hechos/')), [], 'a citation of Acts stayed in Spanish');
   assert.deepEqual([...page.pageErrors, ...page.consoleErrors], []);
 });
 

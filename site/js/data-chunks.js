@@ -88,7 +88,9 @@ function load(name = 'detail') {
     const p = loadCore().then(async (D) => {
       if (!whole) {
         mergeInto(D, await pending);
-        await BE.idioma?.apply(D);   // language.js: lo recién llegado pasa al idioma de quien lee
+        // language.js: lo recién llegado pasa al idioma de quien lee. Antes de que base.js ponga BE.D no: los scripts
+        // que vienen detrás aún no han corrido, y el apply de base.js al arrancar ya cubre lo unido.
+        if (BE.D) await BE.idioma?.apply(D);
       }
       merged.add(name);
     });
