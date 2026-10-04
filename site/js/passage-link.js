@@ -15,7 +15,7 @@
    timeline gives them. The first match opens; the card lists every match so the reader can switch. With no match the
    panel says so and offers the chapter's card when the chapter has data.
 
-   The pure part (parsePassage, parseRefs, overlaps, compact) runs in node:vm in tests/site/passage-link.test.mjs; the
+   The pure part (parsePassage, parseRefs, overlaps, compact) runs in node:vm in tests/site/enlaces-pasaje-reglas.test.mjs; the
    wiring below it needs the page. */
 'use strict';
 (() => {
