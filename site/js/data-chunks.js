@@ -82,8 +82,11 @@ function load(name = 'detail') {
   if (whole || merged.has(name)) return Promise.resolve();
   if (!loads.has(name)) {
     failure = null;
+    // Pedido antes de que llegue el núcleo (una dirección que abre una ficha), baja a la vez que él.
+    const pending = FILE ? null : fetchJson(chunkPath(name));
+    pending?.catch(() => {});   // si el núcleo resulta ser data.json entero, el detalle sobra
     const p = loadCore().then(async (D) => {
-      if (!whole) mergeInto(D, await fetchJson(chunkPath(name)));
+      if (!whole) mergeInto(D, await pending);
       merged.add(name);
     });
     loads.set(name, p);
@@ -111,8 +114,10 @@ function waitingHtml(what = 'la ficha') {
     : `<div class="be-card__pad"><p class="be-muted" role="status" aria-busy="true">Cargando ${what}…</p></div>`;
 }
 
-// El detalle se pide antes de que haga falta: al entrar en una caja de búsqueda, y cuando el mapa queda quieto por
-// primera vez (después del primer pintado, sin quitarle red a sus teselas).
+// El detalle se pide antes de que haga falta. Si la dirección ya abre una ficha, el grafo o la conexión, a la vez que
+// el núcleo: si esperara al mapa, en el teléfono llegaría detrás de su relieve. Si no, al entrar en una caja de
+// búsqueda y cuando el mapa queda quieto por primera vez (después del primer pintado, sin quitarle red a sus teselas).
+// La primera regla va al final del fichero, cuando BE.chunks ya existe.
 document.addEventListener('focusin', (e) => { if (e.target.matches?.('#q, #portada-q')) load().catch(() => {}); });
 BE.inicios.push(() => {
   const gl = BE.mapa?.gl;
@@ -126,4 +131,5 @@ BE.chunks = {
   get loaded() { return whole ? ['whole'] : [...merged]; },
   get failed() { return !!failure; },
 };
+try { if (/(^#|&)(sel|grafo|conexion)=/.test(location.hash)) load().catch(() => {}); } catch { /* ?datos= no vale: lo dice el arranque */ }
 })();

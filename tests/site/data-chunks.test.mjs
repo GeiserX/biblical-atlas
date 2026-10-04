@@ -70,7 +70,9 @@ async function openPage({ screen = DESKTOP, url = 'index.html', hash = '', detai
   page.requests = [];
   page.pageErrors = [];
   page.consoleErrors = [];
-  page.on('request', (r) => page.requests.push(new URL(r.url()).pathname));
+  page.events = [];   // «ask /data.core.json», «got /data.core.json», in the order they happen
+  page.on('request', (r) => { page.requests.push(new URL(r.url()).pathname); page.events.push(`ask ${new URL(r.url()).pathname}`); });
+  page.on('requestfinished', (r) => page.events.push(`got ${new URL(r.url()).pathname}`));
   page.on('pageerror', (e) => page.pageErrors.push(e.message));
   page.on('console', (m) => { if (m.type() === 'error' && (m.location().url || '').startsWith(base)) page.consoleErrors.push(m.text()); });
   await page.route((u) => !u.href.startsWith(base), (r) => r.abort());
@@ -104,6 +106,18 @@ test('the site opens with the core and asks for the detail once, whoever needs i
   assert.equal(count(page, 'data.json'), 0);
   assert.deepEqual(await page.evaluate(() => window.BE.chunks.loaded), ['detail']);
   assert.deepEqual([...page.pageErrors, ...page.consoleErrors], []);
+});
+
+test('an address that opens a card asks for the detail at the same time as the core', async () => {
+  const page = await openPage({ hash: 'sel=persona:pablo&t=50.3000' });
+  await page.locator('#panel-cuerpo .razon', { hasText: D.personas.pablo.razon.slice(0, 40) }).first().waitFor();
+  const at = (p, e) => p.events.indexOf(e);
+  assert.ok(at(page, 'ask /data.detail.json') >= 0 && at(page, 'ask /data.detail.json') < at(page, 'got /data.core.json'), page.events.join(', '));
+  // Without a card in the address, the detail waits for the map (or for whoever needs it first): never before the core.
+  const map = await openPage({ hash: 't=50.3000' });
+  await map.waitForFunction(() => window.BE.chunks.loaded.length, null, { timeout: 30000 });
+  assert.ok(at(map, 'ask /data.detail.json') > at(map, 'got /data.core.json'), map.events.join(', '));
+  assert.deepEqual([...page.pageErrors, ...page.consoleErrors, ...map.pageErrors], []);
 });
 
 test('a card waits for the detail, says so, and paints when it arrives; the search does not wait', async () => {
@@ -152,8 +166,9 @@ test('from file:// the site loads data.js whole and a card opens with its texts'
 });
 
 test('a ?datos= folder with no core loads its data.json whole', async () => {
-  const page = await openPage({ url: `index.html?datos=${WHOLE}`, hash: 'sel=persona:pablo&t=50.3000' });
+  const page = await openPage({ url: `index.html?datos=${WHOLE}`, hash: 't=50.3000' });
   assert.deepEqual(await page.evaluate(() => window.BE.chunks.loaded), ['whole']);
+  await page.evaluate(() => window.BE.seleccionar(window.BE.parseSel('persona:pablo')));
   await page.locator('#panel-cuerpo .razon', { hasText: D.personas.pablo.razon.slice(0, 40) }).first().waitFor();
   assert.equal(count(page, 'data.core.json'), 1);   // asked, 404
   assert.equal(count(page, 'data.json'), 1);
