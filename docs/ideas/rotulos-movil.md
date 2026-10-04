@@ -34,7 +34,7 @@ Dos cosas se repiten. Un nombre va siempre a la derecha de su punto, y si ahí s
 
 ## a. Nombres junto al borde: tres maneras
 
-**A. El nombre al lado interior (la elegida).** Si a la derecha de su punto el nombre se sale del mapa o cae bajo una tarjeta o un botón, va a la izquierda, a la misma distancia. Solo si allí no toca un nombre, un número, una burbuja ni el punto de otro lugar; si tampoco cabe, se esconde como antes. El reparto por zoom (`repartir`) sigue contando el nombre a la derecha, así que el cambio de lado no aparta a ningún otro y no baila al mover el mapa: se decide siempre desde la derecha.
+**A. El nombre al lado interior (la elegida).** Si a la derecha de su punto el nombre se sale del mapa o cae bajo una tarjeta o un botón, va a la izquierda, a la misma distancia. Solo si allí no toca un nombre, un número, una burbuja ni el punto de otro lugar, de un candidato o de un hallazgo, aunque ese punto quede a medias bajo una tarjeta; si tampoco cabe, se esconde como antes. El reparto por zoom (`repartir`) sigue contando el nombre a la derecha, así que el cambio de lado no aparta a ningún otro y no baila al mover el mapa: se decide siempre desde la derecha.
 
 | Antes | Después |
 |---|---|
@@ -102,4 +102,4 @@ Los otros dos recorridos con menos nombres en el móvil, al abrirlos:
 
 ## Las pruebas
 
-[`tests/site/map-labels.test.mjs`](../../tests/site/map-labels.test.mjs): Babilonia, Jerusalén elegida y cuatro ciudades del segundo viaje llevadas al borde derecho, en el tema claro y en modo reunión, con las reglas de siempre comprobadas en cada caso; las mismas reglas a 1440; la tarjeta de una línea con sus flechas, el toque, Escape y el teclado; y las 11 paradas de «Las cartas de Pablo» libres en el móvil.
+[`tests/site/map-labels.test.mjs`](../../tests/site/map-labels.test.mjs): Babilonia, Jerusalén elegida y cuatro ciudades del segundo viaje llevadas al borde derecho, en el tema claro y en modo reunión, con las reglas de siempre comprobadas en cada caso; Zaír junto al borde con un candidato del valle de la Sal medio tapado por los botones del mapa, que su nombre no pisa; las mismas reglas a 1440; la tarjeta de una línea con sus flechas, el toque, Escape y el teclado; y las 11 paradas de «Las cartas de Pablo» libres en el móvil.
