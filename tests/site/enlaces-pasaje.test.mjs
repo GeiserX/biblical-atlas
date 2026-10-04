@@ -50,7 +50,7 @@ function serve(dir, dataFile) {
   return new Promise((ok) => server.listen(0, '127.0.0.1', () => ok(server)));
 }
 
-let browser, server, base, tmp;
+let browser, server, base, tmp, dataFile;
 before(async () => {
   let data = process.env.BE_DATA_FILE ? path.resolve(process.env.BE_DATA_FILE) : path.join(SITE_DIR, 'data.json');
   if (!fs.existsSync(data)) {
@@ -58,6 +58,7 @@ before(async () => {
     execFileSync('python3', [path.join(ROOT, 'scripts/build.py'), '--salida', tmp], { cwd: ROOT, stdio: 'pipe' });
     data = path.join(tmp, 'data.json');
   }
+  dataFile = data;
   server = await serve(SITE_DIR, data);
   base = `http://127.0.0.1:${server.address().port}/`;
   const chromium = loadChromium();
@@ -211,6 +212,27 @@ test('a passage cited by none says so, keeps the selection empty and offers the 
   assert.deepEqual([...page.pageErrors, ...bad.pageErrors, ...late.pageErrors, ...apart.pageErrors, ...joined.pageErrors], []);
 });
 
+test('the order by date does not lean on the order of the data', async () => {
+  // The events, letters and journeys of data.json come out of build.py already by date, which would hide a missing sort:
+  // here they arrive reversed, and every group must still come out by date.
+  const D = JSON.parse(fs.readFileSync(dataFile, 'utf8'));
+  for (const k of ['eventos', 'cartas', 'viajes']) D[k].reverse();
+  const body = JSON.stringify(D);
+  const page = await openPage(DESKTOP, { hash: 'p=2Ti4:10', route: (r) => r.fulfill({ contentType: 'application/json', body }) });
+  for (const p of ['2Ti4:10', 'Hch13:1-14:28', '2Re17:6']) {
+    const groups = await page.evaluate((p) => {
+      const BE = window.BE, out = {};
+      for (const s of BE.pasajeEnlace.resolve(p).found) (out[s.split(':')[0]] ||= []).push(BE.momentoDe(BE.parseSel(s)) ?? Infinity);
+      return out;
+    }, p);
+    const order = Object.keys(groups);
+    assert.deepEqual(order, ['evento', 'parada', 'carta', 'viaje'].filter((k) => order.includes(k)), `${p}: the groups are out of order`);
+    assert.ok(Object.values(groups).some((ts) => ts.length > 1), `${p} is no test of the order`);
+    for (const [k, ts] of Object.entries(groups)) assert.deepEqual(ts, [...ts].sort((a, b) => a - b), `${p}: the ${k} group is not by date`);
+  }
+  assert.deepEqual(page.pageErrors, []);
+});
+
 test('a range opens what cites any verse of it', async () => {
   const page = await openPage(DESKTOP, { hash: 'p=Hch16:1-5' });
   const f = await found(page, 'Hch16:1-5');
@@ -279,6 +301,14 @@ test('a passage link with nothing selected is its own entry, named by the passag
   await settle(page);
   assert.ok((await view(page)).box, 'Forward lost the notice');
   assert.equal(await page.evaluate(() => document.title), 'Enlace a Santiago 1:5 · biblical-atlas');
+  // Closing the notice is another view, as closing «Ahora mismo» is: Back brings the notice back.
+  await page.locator('#panel-cuerpo [data-pasaje-cerrar]').click();
+  await settle(page);
+  assert.equal((await view(page)).box, null);
+  assert.equal(await page.evaluate(() => document.getElementById('atras').getAttribute('aria-label')), 'Atrás: Enlace a Santiago 1:5');
+  await page.locator('#atras').click();
+  await settle(page);
+  assert.ok((await view(page)).box, 'Back after closing did not bring the notice back');
   assert.deepEqual(page.pageErrors, []);
 });
 
