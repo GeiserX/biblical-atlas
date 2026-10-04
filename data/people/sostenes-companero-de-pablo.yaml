@@ -72,13 +72,3 @@ relations:
     16:8; nota de estudio de 1Co 1:1).
   checked_on: '2026-09-29'
   status: verified
-- type: same_as
-  person: sostenes
-  inferred: true
-  sources:
-  - it-sostenes
-  - 1-corintios-1
-  reason: Perspicacia «Sóstenes» y la nota de 1Co 1:1 solo ven posible que el jefe de sinagoga golpeado en Corinto se hiciera
-    cristiano y sea este hermano, porque el nombre era poco común.
-  checked_on: '2026-09-29'
-  status: pending

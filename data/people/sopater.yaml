@@ -60,3 +60,16 @@ relations:
   reason: Hch 20:4 lo llama hijo de Pirro; Perspicacia «Sópater» y «Pirro» lo repiten.
   checked_on: '2026-09-29'
   status: verified
+- type: same_as
+  person: sosipatro
+  certainty: probable
+  inferred: true
+  sources:
+  - it-sosipatro
+  - it-sopater
+  - romanos-16
+  - hch-20
+  reason: 'Perspicacia «Sosípatro» lo cree probable y «Sópater» dice que podría serlo: los dos estaban con Pablo en Grecia
+    (Hch 20:4; Ro 16:21).'
+  checked_on: '2026-10-03'
+  status: verified

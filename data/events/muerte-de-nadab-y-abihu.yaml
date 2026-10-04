@@ -1,6 +1,7 @@
 # biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
 id: muerte-de-nadab-y-abihu
 title: Muerte de Nadab y Abihú por ofrecer fuego no autorizado
+type: death
 date:
   from: -1511
   to: -1511
@@ -26,6 +27,9 @@ people:
 - elizafan-hijo-de-uziel
 - eleazar-hijo-de-aaron
 - itamar
+roles:
+  nadab-hijo-de-aaron: died
+  abihu: died
 passages:
 - Le 10:1-11
 - Nú 3:4
@@ -54,5 +58,5 @@ links:
 - title: 'Perspicacia: «Nadab»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Nadab/
   type: perspicacia
-checked_on: '2026-09-29'
+checked_on: '2026-10-03'
 status: verified

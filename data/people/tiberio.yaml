@@ -42,8 +42,9 @@ relations:
   inferred: true
   sources:
   - it-tiberio
-  reason: 'Perspicacia «Tiberio»: Augusto lo escogió como sucesor y, tras su muerte, el Senado lo nombró emperador en 14 e.c.'
-  checked_on: '2026-09-29'
+  - lucas-3
+  reason: 'Perspicacia «Tiberio» y la nota de Lu 3:1: muerto Augusto en 14 e.c., el Senado lo proclamó emperador.'
+  checked_on: '2026-10-03'
   office: emperor
   status: verified
 - type: kin

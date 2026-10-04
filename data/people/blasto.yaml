@@ -30,14 +30,13 @@ perspicacia: '1200000770'
 checked_on: '2026-09-29'
 status: verified
 relations:
-- type: accompanies
+- type: tie
   person: herodes-agripa-i
-  caption: encargado de su casa
-  inverse_caption: señor
+  word: master
   inferred: false
   sources:
   - hechos-12
   - it-blasto
   reason: Hch 12:20 lo pone al frente de la casa real; según la nota de estudio, literalmente, de su dormitorio.
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-03'
   status: verified

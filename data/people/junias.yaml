@@ -52,11 +52,12 @@ relations:
   status: verified
 - type: kin
   person: pablo
+  word: relative
   inferred: false
   sources:
   - romanos-16
   - it-junias
   reason: 'Ro 16:7: Pablo lo llama pariente suyo, junto con Andrónico. Perspicacia «Junias» da como sentido principal el de
     familiar de sangre.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-03'
   status: verified
