@@ -120,6 +120,9 @@ span.etiqueta-deducido, span.etiqueta-incierto, span.etiqueta-texto { border-rad
 .sector-punto--cartas { border-radius: var(--node-shape-texto); }
 .sector-punto--hechos { border-radius: 1px; transform: rotate(45deg) scale(.8); }
 .grafo-oculto { font-size: var(--fs-xs); }
+/* Vacía no ocupa sitio: si el interruptor llena la fila, una nota vacía bajaba sola a otra fila y la separación de
+   filas (16 px en táctil) se comía el alto del grafo en el móvil. aria-describedby la sigue leyendo oculta. */
+.grafo-oculto:empty { display: none; }
 .grafo-lienzo { flex: none; margin: 0 8px; }
 .grafo-lienzo svg { pointer-events: none; }
 .arista line { stroke: var(--ink-4); stroke-width: 1.6; }

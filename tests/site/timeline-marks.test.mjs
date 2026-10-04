@@ -28,6 +28,9 @@ const ROOT = process.env.BE_ROOT ? path.resolve(process.env.BE_ROOT) : path.reso
 const DESKTOP = { name: '1440', viewport: { width: 1440, height: 900 } };
 const PHONE = { name: '430', viewport: { width: 430, height: 900 }, isMobile: true, hasTouch: true };
 const SCALES = [4125, 400, 40, 8, 1.5, 0.12];
+// The time budgets of the speed test were set on a Mac mini. BE_TIME_SCALE=<n> multiplies them on a slower machine: a
+// GitHub runner (4 shared cores, no GPU) took 54 ms to draw the lanes at milenios and 41 ms per drag frame at 430.
+const TIME_SCALE = Number(process.env.BE_TIME_SCALE) || 1;
 const DAY = 1 / 365.2425;
 
 async function loadChromium() {
@@ -515,11 +518,11 @@ test('430: a horizontal finger drag moves time, a vertical one scrolls the lanes
   note(`430 finger drag 150 px: view moved ${(a.vista[0] - b.vista[0]).toFixed(3)} years (expected ${(150 * span / r.w).toFixed(3)}), cursor ${a.t === b.t ? 'unchanged' : 'moved'}`);
   assert.ok(Math.abs((a.vista[0] - b.vista[0]) - (150 * span) / r.w) < span * 0.02);
   assert.equal(b.t, a.t);
-  // A vertical swipe goes through the browser's own gesture path (touch-action: pan-y lets it scroll natively).
-  // Headless Chromium refuses a gesture that starts below about 800 px, so it starts at the top of the lanes.
+  // A vertical swipe goes through the browser's own gesture path (touch-action: pan-y lets it scroll natively). It is
+  // sent as touch events, like the drag above: Input.synthesizeScrollGesture scrolled on a Mac but never on Linux (the
+  // GitHub runners), whatever the start. It starts at the top of the lanes.
   const y0 = await p.evaluate(() => Math.round(document.querySelector('#linea-filas').getBoundingClientRect().top + 30));
-  await cdp.send('Input.synthesizeScrollGesture', { x: Math.round(r.x + 40), y: Math.min(y0, 790), yDistance: -80, xDistance: 0, gestureSourceType: 'touch', speed: 600 });
-  await frames(p, 4);
+  await touch(Math.round(r.x + 40), y0, Math.round(r.x + 40), y0 - 80);
   const c = await state(p);
   note(`430 finger up 80 px: scrollTop ${b.scroll} → ${c.scroll}, view ${c.vista[0] === b.vista[0] ? 'unchanged' : 'moved'}`);
   assert.ok(c.scroll > b.scroll); assert.deepEqual(c.vista, b.vista);
@@ -629,8 +632,8 @@ for (const screen of [DESKTOP, PHONE]) {
     });
     note(`${screen.name} speed: milenios render median ${m.render.toFixed(1)} ms, décadas drag frame median ${m.drag.toFixed(1)} ms; at milenios ${m.attached} buttons in the page for ${m.total} marks in view (${m.budget} within three panel heights), lanes ${m.height} px tall`);
     assert.ok(m.attached <= m.budget + 5, `${m.attached} buttons in the page, ${m.budget} expected at most`);
-    assert.ok(m.render <= 50, `render ${m.render} ms`);
-    assert.ok(m.drag <= 16, `drag frame ${m.drag} ms`);
+    assert.ok(m.render <= 50 * TIME_SCALE, `render ${m.render} ms, budget ${50 * TIME_SCALE}`);
+    assert.ok(m.drag <= 16 * TIME_SCALE, `drag frame ${m.drag} ms, budget ${16 * TIME_SCALE}`);
     await p.context().close();
   });
 }
