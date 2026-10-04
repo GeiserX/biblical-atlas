@@ -56,7 +56,15 @@ test('what is not one passage of an existing chapter and verse is refused, and s
   assert.equal(one('Xyz3:4'), 'book');
   assert.equal(one('16:1'), 'book');
   assert.equal(one(''), 'book');
-  for (const s of ['Hch29:1', 'Hch16:41', 'Hch0:1', 'Hch16:5-1', 'Hch16:1, 5', 'Hch', 'Hch16:1x']) assert.equal(one(s), 'numbers', s);
+  for (const s of ['Hch29:1', 'Hch16:41', 'Hch0:1', 'Hch16:5-1', 'Hch16:1, 99', 'Hch', 'Hch16:1x']) assert.equal(one(s), 'numbers', s);
+  // Comma items that stay apart are two stretches: their own reason, not a verse that does not exist.
+  for (const s of ['Hch16:1, 5', 'Hch16:1,3', 'Gé2:7, 9']) assert.equal(one(s), 'stretches', s);
+});
+test('comma items that join are one stretch, as on the server, and the link writes them as a range', () => {
+  assert.deepEqual(one('Hch16:1,2'), ['Hch', 16, 1, 16, 2]);
+  assert.deepEqual(one('Gé 2:7, 8'), ['Gé', 2, 7, 2, 8]);
+  assert.deepEqual(one('Hch16:40, 17:1'), ['Hch', 16, 40, 17, 1]);
+  assert.equal(P.compact(P.parsePassage('Hch16:1,2').stretch), 'Hch16:1-2');
 });
 test('a reference of the data splits like the server splits it', () => {
   const r = (s) => [...P.parseRefs(s)].map(span);

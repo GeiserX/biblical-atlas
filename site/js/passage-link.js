@@ -6,6 +6,8 @@
      without accents, case, spaces, dots or hyphens: «Hch», «Hechos», «2Re», «2 Reyes», «2-reyes» and «Génesis» all work.
    - A passage is one book and one stretch: a chapter («Hch16»), chapters («Hch16-17»), a verse («Hch16:1»), verses in a
      chapter («Hch16:1-5») or verses across chapters («Hch13:1-14:28»). A one-chapter book is cited by verse («Flm10»).
+     Comma items that join into one stretch are that stretch («Hch16:1, 2» is «Hch16:1-2»); items that do not join are
+     refused with their own notice.
    - A reference in the data is split like the server splits it: «;» separates parts, a part with no book is of the book
      before it, each comma item is its own stretch («Gé 6:1, 2, 4» never covers verse 3) and items that touch join.
    - A record matches when one of its stretches shares at least one verse with the passage.
@@ -141,7 +143,8 @@ function parseRefs(s) {
   return out;
 }
 /** One passage of a link («Hch16:1», «2 Reyes 17:6», «Génesis 12», «Hch13:1-14:28») → { ok, stretch } or
-    { ok: false, why }: 'book' when no book is named, 'numbers' when the chapter or verse does not exist or does not read. */
+    { ok: false, why }: 'book' when no book is named, 'numbers' when the chapter or verse does not exist or does not read,
+    'stretches' when its comma items do not join into one stretch («Hch16:1, 5»). */
 function parsePassage(text) {
   const s = String(text || '').trim();
   const m = s.match(/^((?:[123][\s-]*)?\p{L}[\p{L}\s.\-]*?)\s*\.?\s*(\d.*)$/u);
@@ -149,7 +152,8 @@ function parsePassage(text) {
   const book = bookOf(m[1]);
   if (!book) return { ok: false, why: 'book' };
   const rs = numbers(book, m[2].replace(/\s+/g, ''));
-  if (!rs || rs.length !== 1 || !valid(rs[0]) || m[2].includes(',')) return { ok: false, why: 'numbers', book };
+  if (!rs || !rs.every(valid)) return { ok: false, why: 'numbers', book };
+  if (rs.length !== 1) return { ok: false, why: 'stretches', book };
   return { ok: true, stretch: rs[0] };
 }
 /** A stretch as a link writes it: the abbreviation without accents and no spaces, «Hch16:1-5», «Ge12», «Flm10». */
@@ -251,7 +255,9 @@ function listHtml() {
 function noticeHtml() {
   const a = active;
   if (a.error) {
-    const what = a.error === 'book' ? `No reconozco «${esc(a.text)}» como pasaje de la Biblia.` : `${esc(a.book?.nombre || 'Ese libro')} no tiene ese capítulo o ese versículo: «${esc(a.text)}».`;
+    const what = a.error === 'book' ? `No reconozco «${esc(a.text)}» como pasaje de la Biblia.`
+      : a.error === 'stretches' ? `«${esc(a.text)}» junta tramos separados, y un enlace lleva uno solo.`
+        : `${esc(a.book?.nombre || 'Ese libro')} no tiene ese capítulo o ese versículo: «${esc(a.text)}».`;
     return `<section class="be-card pasaje-enlace" role="status"><div class="be-card__pad">
       <div class="be-card__eyebrow">Enlace al pasaje</div><p class="be-card__body">${what} Se escribe el libro y el capítulo, con el versículo si hace falta: <code>#p=Hch16:1</code> o <code>#p=Génesis12</code>.</p>
     </div><div class="be-card__foot"><span class="be-spacer"></span><button type="button" class="be-btn be-btn--sm" data-pasaje-cerrar>Cerrar</button></div></section>`;

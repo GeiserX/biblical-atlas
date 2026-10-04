@@ -202,7 +202,12 @@ test('a passage cited by none says so, keeps the selection empty and offers the 
   assert.match(b.box.text, /No reconozco «Xyz3:4»/);
   const late = await openPage(DESKTOP, { hash: 'p=Hch29:1' });
   assert.match((await view(late)).box.text, /Hechos no tiene ese capítulo o ese versículo/);
-  assert.deepEqual([...page.pageErrors, ...bad.pageErrors, ...late.pageErrors], []);
+  // Two stretches apart say so, not that the verse is missing; two that touch are one, written back as a range.
+  const apart = await openPage(DESKTOP, { hash: 'p=Hch16:1,5' });
+  assert.match((await view(apart)).box.text, /junta tramos separados/);
+  const joined = await openPage(DESKTOP, { hash: 'p=Hch16:1,2' });
+  assert.match((await view(joined)).hash, /[#&]p=Hch16:1-2(&|$)/);
+  assert.deepEqual([...page.pageErrors, ...bad.pageErrors, ...late.pageErrors, ...apart.pageErrors, ...joined.pageErrors], []);
 });
 
 test('a range opens what cites any verse of it', async () => {
