@@ -884,7 +884,8 @@ class Presupuesto(unittest.TestCase):
         self.assertIn("presupuesto [shared_point]: 1 avisos y el presupuesto es 3; baja el número", salida)
 
     def test_fichero_mal_escrito_o_ausente_falla(self):
-        for malo in ["shared_pont 1\n", "shared_point uno\n", "shared_point 1\nshared_point 2\n", "shared_point\n"]:
+        for malo in ["shared_pont 1\n", "shared_point uno\n", "shared_point 1\nshared_point 2\n", "shared_point\n",
+                     "shared_point -1\n"]:
             with self.subTest(malo=malo):
                 codigo, salida = self.correr(malo + "no_reference 1\n", avisos=self.AVISOS[1:])
                 self.assertEqual(codigo, 1, salida)
