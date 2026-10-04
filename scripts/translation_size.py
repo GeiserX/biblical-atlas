@@ -2,6 +2,8 @@
 """Cuánto texto hay que pasar a otro idioma: campos de texto y palabras de data/, por tipo de entidad y por clase.
 
 Uso:  python3 scripts/translation_size.py [--data DIR] [--json]
+      python3 scripts/translation_size.py --sample > docs/ideas/ingles-muestra.txt
+      python3 scripts/translation_size.py --hreflang [docs/ideas/ingles-muestra.txt]
 
 Cuenta cada cadena de un campo de texto, también en los hechos anidados (nombres, candidatos, relaciones, paradas,
 historial, enlaces). Las clases dicen cuánto trabajo pide cada una:
@@ -16,12 +18,20 @@ historial, enlaces). Las clases dicen cuánto trabajo pide cada una:
 - search: el término de búsqueda de wol.jw.org de la revisión anual.
 
 Las citas (`passages`, `reference`) no se cuentan como texto: se convierten con las abreviaturas de los libros. Las
-fuentes, los libros, el calendario y el vocabulario van aparte, en sus filas.
+fuentes, los libros, el calendario y el vocabulario van aparte, en sus filas. De las fuentes se cuenta además su `work`
+(la obra), que también pide pareja: pocas obras distintas repetidas en muchas fuentes.
+
+--sample escribe una muestra fija de fuentes de jw.org (20 de Perspicacia y 15 de otras obras, elegidas por el sha1 de
+su id, así que sale igual cada vez) y --hreflang abre la página de cada id de la muestra y dice si enlaza su versión
+inglesa (`<link hreflang="en">`). Es la cifra de las fuentes que «casi se escriben solas» en docs/ideas/ingles.md.
 """
 import argparse
+import hashlib
 import json
 import re
 import sys
+import time
+import urllib.request
 from pathlib import Path
 
 import yaml
@@ -108,7 +118,8 @@ def measure(data_dir):
     tally = Tally()
     chapter = re.compile(r"^https://www\.jw\.org/es/biblioteca/biblia/biblia-estudio/libros/[^/]+/\d+/?$")
     insight = "/Perspicacia-para-comprender-las-Escrituras/"
-    tally.bible_chapters = tally.insight = 0
+    tally.bible_chapters = tally.insight = tally.work_fields = 0
+    tally.works = set()
     seen = {}
     for f in sorted((data_dir / "sources").glob("*.yaml")):
         for sid, s in (yaml.safe_load(f.read_text(encoding="utf-8")) or {}).items():
@@ -121,6 +132,9 @@ def measure(data_dir):
             continue
         tally.insight += insight in str(s.get("url") or "")
         tally.add("names", s.get("title") or "")
+        if isinstance(s.get("work"), str) and s["work"].strip():
+            tally.work_fields += 1
+            tally.works.add(s["work"].strip())
     out["sources"] = tally
     for name, path in (("books", "books.yaml"), ("calendar", "calendar.yaml"), ("vocabulary", "vocabulary.yaml")):
         tally = Tally()
@@ -177,15 +191,83 @@ def table(out):
     lines.append("")
     lines.append(f"Cada celda de clase es «campos / palabras». Citas que se convierten solas: {tot.references}. "
                  f"Fuentes escritas: {out['sources'].entities}; {out['sources'].bible_chapters} son un capítulo de la Biblia, sin "
-                 f"texto que traducir, y {out['sources'].insight} son artículos de Perspicacia.")
+                 f"texto que traducir, y {out['sources'].insight} son artículos de Perspicacia. Además, {out['sources'].work_fields} "
+                 f"fuentes llevan `work`, con {len(out['sources'].works)} obras distintas.")
     return "\n".join(lines)
+
+
+INSIGHT = "/Perspicacia-para-comprender-las-Escrituras/"
+SAMPLE = ROOT / "docs" / "ideas" / "ingles-muestra.txt"
+
+
+def jw_sources(data_dir):
+    """{id: url} de las fuentes de jw.org que no son un capítulo de la Biblia: las que necesitan su página inglesa."""
+    chapter = re.compile(r"/biblioteca/biblia/biblia-estudio/libros/[^/]+/\d+/?$")
+    out = {}
+    for f in sorted((Path(data_dir) / "sources").glob("*.yaml")):
+        for sid, s in (yaml.safe_load(f.read_text(encoding="utf-8")) or {}).items():
+            url = str((s or {}).get("url") or "") if isinstance(s, dict) else ""
+            if "jw.org/" in url and not chapter.search(url):
+                out.setdefault(sid, url)
+    return out
+
+
+def sample(data_dir, insight=20, other=15):
+    """La muestra fija: los ids con el sha1 más bajo de cada grupo."""
+    key = lambda sid: hashlib.sha1(sid.encode()).hexdigest()
+    src = jw_sources(data_dir)
+    ins = sorted((i for i, u in src.items() if INSIGHT in u), key=key)[:insight]
+    oth = sorted((i for i, u in src.items() if INSIGHT not in u), key=key)[:other]
+    return ins + oth
+
+
+def english_link(html):
+    """La dirección de `<link ... hreflang="en" ... href=...>` de una página, o None."""
+    for tag in re.findall(r"<link\b[^>]*>", html, re.I):
+        if re.search(r'hreflang=["\']en["\']', tag, re.I):
+            m = re.search(r'href=["\']([^"\']+)', tag, re.I)
+            if m:
+                return m.group(1)
+    return None
+
+
+def hreflang(data_dir, ids_file):
+    src = jw_sources(data_dir)
+    ids = [x.strip() for x in Path(ids_file).read_text(encoding="utf-8").splitlines() if x.strip() and not x.startswith("#")]
+    found = {"insight": [0, 0], "other": [0, 0]}
+    for sid in ids:
+        url = src.get(sid)
+        group = "insight" if url and INSIGHT in url else "other"
+        found[group][1] += 1
+        en = None
+        if url:
+            try:
+                req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+                en = english_link(urllib.request.urlopen(req, timeout=30).read().decode("utf-8", "replace"))
+            except OSError as e:
+                en = None
+                print(f"{sid}\terror {e}", file=sys.stderr)
+            time.sleep(1)
+        found[group][0] += bool(en)
+        print(f"{sid}\t{en or '-'}")
+    print(f"hreflang: {found['insight'][0]} de {found['insight'][1]} de Perspicacia y {found['other'][0]} de "
+          f"{found['other'][1]} de otras obras enlazan su página inglesa.")
 
 
 def main(argv=None):
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     ap.add_argument("--data", default=str(ROOT / "data"))
     ap.add_argument("--json", action="store_true", help="las cifras en JSON en vez de la tabla")
+    ap.add_argument("--sample", action="store_true", help="escribe la muestra fija de fuentes de jw.org")
+    ap.add_argument("--hreflang", nargs="?", const=str(SAMPLE), metavar="IDS",
+                    help="abre cada fuente de la muestra y dice si enlaza su página inglesa")
     a = ap.parse_args(argv)
+    if a.sample:
+        print("\n".join(sample(a.data)))
+        return 0
+    if a.hreflang:
+        hreflang(a.data, a.hreflang)
+        return 0
     out = measure(a.data)
     if a.json:
         print(json.dumps({t: {"entities": x.entities, "fields": x.fields, "words": x.words,

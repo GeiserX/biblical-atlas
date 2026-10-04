@@ -12,7 +12,7 @@ Este documento decide el modelo antes de tocar los datos. Tiene cuatro preguntas
 
 ## Cuánto texto hay
 
-[`scripts/translation_size.py`](../../scripts/translation_size.py) cuenta cada texto de `data/`, también en los hechos anidados, por tipo y por clase. Cada celda de clase es «campos / palabras».
+[`scripts/translation_size.py`](../../scripts/translation_size.py) cuenta cada texto de `data/`, también en los hechos anidados, por tipo y por clase. Cada celda de clase es «campos / palabras». Las cifras son de los datos del 2026-10-03 y cambian un poco con cada carril de datos: el script las vuelve a dar.
 
 | Tipo | Fichas | Campos | Palabras | Nombres y títulos | Prosa | Razones | Historial | Títulos de enlace | Fechas escritas (se escriben solas) | Búsqueda |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -35,7 +35,7 @@ Lo que se lee de la tabla:
 - **436.256 palabras en 38.206 campos.** La prosa y las razones son el 77 %: 337.154 palabras que alguien tiene que escribir con sus palabras y otro tiene que cotejar.
 - **Los lugares, la primera tanda, son 934 fichas, 8.836 campos y 89.946 palabras.** Una quinta parte del total.
 - **Parte se escribe sola.** 1.353 de las 3.407 fechas escritas son solo años con su era («c. 50 e.c.» pasa a «c. 50 C.E.»). Las 3.706 citas («Hch 16:13-15») no se traducen: se escriben con la abreviatura inglesa al enseñarlas. Los 868 capítulos de la Biblia que son fuente (32 escritos y 836 implícitos) salen de los libros.
-- **Las fuentes casi se escriben solas.** De 2.461 títulos, 2.127 son artículos de Perspicacia. En una muestra de 35 fuentes, las 20 de Perspicacia y 11 de las 15 restantes traen en su propia página el enlace a la versión inglesa (`hreflang="en"`). Las otras 4 son notas de estudio, que viven en wol.jw.org con el mismo número de documento, y un número antiguo de La Atalaya.
+- **Las fuentes casi se escriben solas.** De 2.461 títulos, 2.127 son artículos de Perspicacia. En una muestra fija de 35 fuentes de jw.org (la lista está en `docs/ideas/ingles-muestra.txt` y la escribe `translation_size.py --sample`), las 20 de Perspicacia y 14 de las 15 restantes traen en su propia página el enlace a la versión inglesa (`hreflang="en"`); lo vuelve a medir `translation_size.py --hreflang`. La que falta es una nota de estudio, que vive en wol.jw.org con el mismo número de documento. El `work` de cada fuente también pide pareja, pero son 59 obras distintas.
 
 ## Pregunta 1. Dónde viven los dos idiomas en los datos
 
@@ -160,7 +160,7 @@ La captura grande enseña lo que queda: la línea de tiempo, la leyenda, el busc
 
 | Orden | Tanda | Tamaño |
 |---|---|---|
-| 0 | La base: los 66 libros (nombre, abreviatura y slug de la TNM inglesa, y sus hechos), el vocabulario (181 textos), el calendario (27 entradas), el catálogo de la interfaz (unas 800 cadenas) y las páginas inglesas de las fuentes (2.461 títulos: un script lee el `hreflang` y alguien coteja cada título). | 9.267 palabras más la interfaz |
+| 0 | La base: los 66 libros (nombre, abreviatura y slug de la TNM inglesa, y sus hechos), el vocabulario (181 textos), el calendario (27 entradas), el catálogo de la interfaz (unas 800 cadenas) y las páginas inglesas de las fuentes (2.461 títulos: `translation_size.py --hreflang` lee el `hreflang` de cada página y alguien coteja cada título). | 9.267 palabras más la interfaz |
 | 1 | Lugares, en tandas de unos 100 ficheros. | 934 fichas, 89.946 palabras |
 | 2 | Personas. | 1.312 fichas, 126.904 palabras |
 | 3 | Sucesos. | 1.439 fichas, 138.977 palabras |
@@ -198,7 +198,7 @@ Las pruebas son [`scripts/test_validate.py`](../../scripts/test_validate.py) (12
 - **El número de documento empareja los artículos.** La página inglesa de Perspicacia lleva el mismo documento que la española (1200002798 en «Lidia» y «Lydia», 1200003467 en «Filipos» y «Philippi»), así que la clave `perspicacia` de una persona sirve en los dos idiomas. Su `#n`, el de una entrada numerada, se coteja en cada tanda.
 - **Las notas de estudio no tienen página en www.jw.org** en ningún idioma: su página inglesa es la de wol.jw.org con el mismo número de documento. La validación lo acepta solo cuando la española ya es de wol.jw.org.
 - **Algunos títulos de jw.org llevan raya**, como el de las notas de estudio de Hechos 16 entre «Acts Study Notes» y «Chapter 16». Nosotros no la usamos y escribimos una coma.
-- **Una fuente sin página inglesa** (el número antiguo de La Atalaya de la muestra) deja sin traducir la ficha que la cita. Falta decidir si basta con su página española, marcada como tal.
+- **Una fuente sin página inglesa** deja sin traducir la ficha que la cita. Falta decidir si basta con su página española, marcada como tal.
 - **Los homónimos se comparan por idioma.** Dos nombres iguales en español pueden no serlo en inglés, y al revés; `clave_nombre` de `validate.py` ya lo anticipa.
 - **Las listas se funden por posición.** La capa conserva el largo y el orden de cada lista de `data.json`. Un elemento o una clave que los datos aún no tienen, porque su trozo no ha llegado, no se añade: espera a la llamada siguiente. Las relaciones `holds_office`, que `data.json` no lleva en `relaciones`, tampoco van ahí en la capa: sus textos van en `offices`, como en `data.json`, que `build.py` compila otra vez con el inglés en su sitio y en el mismo orden.
 - **Cambiar de idioma recarga la página** y vuelve a cargar `data.json`. La vista no se pierde porque está entera en la dirección. El cambio es una entrada más del historial, así que Atrás devuelve el idioma de antes.
