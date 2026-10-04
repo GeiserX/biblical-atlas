@@ -191,13 +191,13 @@ function markUntranslated() {
 // ---------------------------------------------------------------------------
 const other = () => (current === 'es' ? 'en' : 'es');
 const visible = () => LAUNCHED || current !== BASE;
-/** Stores the choice and opens the same view in the other language. */
+/** Stores the choice and opens the same view in the other language, as a new entry: Back returns to the language before. */
 function switchTo(lang) {
   try { localStorage.setItem(PREF, lang); } catch { /* no storage: the address still carries it */ }
   const u = new URL(location.href);
   u.searchParams.set('lang', lang);
   if (BE.D) u.hash = BE.textoHash();
-  location.replace(u);
+  location.assign(u);
 }
 const label = (lang) => (lang === 'en' ? 'Read in English' : 'Leer en español');
 function addButton() {

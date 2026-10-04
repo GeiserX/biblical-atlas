@@ -201,7 +201,7 @@ Las pruebas son [`scripts/test_validate.py`](../../scripts/test_validate.py) (10
 - **Una fuente sin página inglesa** (el número antiguo de La Atalaya de la muestra) deja sin traducir la ficha que la cita. Falta decidir si basta con su página española, marcada como tal.
 - **Los homónimos se comparan por idioma.** Dos nombres iguales en español pueden no serlo en inglés, y al revés; `clave_nombre` de `validate.py` ya lo anticipa.
 - **Las listas se funden por posición.** La capa conserva el largo y el orden de cada lista de `data.json`. Un elemento o una clave que los datos aún no tienen, porque su trozo no ha llegado, no se añade: espera a la llamada siguiente. Las relaciones `holds_office`, que `data.json` no lleva en `relaciones`, tampoco van en la capa.
-- **Cambiar de idioma recarga la página** y vuelve a cargar `data.json`. La vista no se pierde porque está entera en la dirección.
+- **Cambiar de idioma recarga la página** y vuelve a cargar `data.json`. La vista no se pierde porque está entera en la dirección. El cambio es una entrada más del historial, así que Atrás devuelve el idioma de antes.
 - **La detección espera al lanzamiento.** Encenderla hoy daría a cada navegador inglés un sitio casi entero en español.
 
 ## Lo que decide el dueño

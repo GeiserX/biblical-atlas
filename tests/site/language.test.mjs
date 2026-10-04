@@ -8,7 +8,7 @@
 //  - A record with no English yet keeps its Spanish text and says so.
 //  - apply() can run again after a chunk of the data is merged: only what the data has gets its English.
 //  - The switch (bar button, and the Estudio menu on a phone) stores the choice and opens the same view in Spanish;
-//    the stored choice holds on the next visit; «?lang=» in a shared link wins over it.
+//    Back returns to the language before; the stored choice holds on the next visit; «?lang=» in a shared link wins over it.
 //  - Once launched, the browser's language decides: en-GB is English, es-MX is Spanish, fr-FR gets English.
 //  - Every key of site/i18n/en.js still appears in site/js, so a string changed in the code leaves no dead translation.
 //
@@ -203,6 +203,10 @@ test('the switch keeps the view, stores the choice, and a shared link wins over 
   assert.equal(new URLSearchParams(c.search).get('lang'), 'es');
   assert.equal(new URLSearchParams(c.hash.slice(1)).get('sel'), new URLSearchParams(before.hash.slice(1)).get('sel'));
   assert.equal(await p.evaluate(() => localStorage.getItem('biblical-atlas:pref:idioma')), 'es');
+  // The switch is a new entry in the history: Back returns to the English view.
+  await p.goBack();
+  await p.waitForFunction(() => document.querySelector('#panel-cuerpo .be-card__title')?.textContent.trim() === 'Lydia', null, { timeout: 30000 });
+  assert.equal(new URLSearchParams((await card(p)).search).get('lang'), 'en');
   // Next visit without lang: the stored Spanish; a link with lang=en: English, without changing what is stored.
   await p.close();
   p = await open('', 'sel=lugar:filipos&t=50.5', { context: ctx });
