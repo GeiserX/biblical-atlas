@@ -103,7 +103,12 @@ const audit = (page) => page.evaluate(() => {
   const touch = (a, b) => !(a.right <= b.left || a.left >= b.right || a.bottom <= b.top || a.top >= b.bottom);
   const markers = [...mc.querySelectorAll('.marca-lugar')].filter((el) => el.checkVisibility());
   const names = markers.filter((el) => !el.classList.contains('sin-etiqueta')).map((el) => ({ el, id: el.dataset.sel.slice(6), r: el.querySelector('.etiqueta').getBoundingClientRect() }));
-  const dots = markers.map((el) => ({ el, r: el.querySelector('.punto').getBoundingClientRect() }));
+  const dots = markers.map((el) => ({ el, id: el.dataset.sel.slice(6), r: el.querySelector('.punto').getBoundingClientRect() }));
+  // The points of candidates and finds are drawn always, even half under a card: a name on the inner side keeps off them.
+  for (const el of mc.querySelectorAll('.cand, .marca-hallazgo')) {
+    const d = el.classList.contains('cand') ? el.querySelector('.cand-punto') : el;
+    if (d && el.checkVisibility({ visibilityProperty: true })) dots.push({ el, id: el.getAttribute('aria-label'), r: d.getBoundingClientRect() });
+  }
   const sel = window.BE.E.sel?.tipo === 'lugar' ? window.BE.E.sel.id : null;
   const out = [];
   for (const [i, a] of names.entries()) {
@@ -117,7 +122,7 @@ const audit = (page) => page.evaluate(() => {
     // A name moves to the inner side only when the right side does not fit, and there it never covers a point; on the
     // right side the reparto rules stay as they were.
     if (a.el.classList.contains('rotulo-izq')) {
-      for (const d of dots) if (d.el !== a.el && touch(a.r, d.r)) out.push(`${a.id} covers the point of ${d.el.dataset.sel.slice(6)}`);
+      for (const d of dots) if (d.el !== a.el && touch(a.r, d.r)) out.push(`${a.id} covers the point of ${d.id}`);
       const p = a.el.querySelector('.punto').getBoundingClientRect(), cx = (p.left + p.right) / 2;
       const right = { left: 2 * cx - a.r.right, right: 2 * cx - a.r.left, top: a.r.top, bottom: a.r.bottom };
       if (right.right <= c.right && !cards.some((x) => touch(right, x.r))) out.push(`${a.id} moved to the inner side with room on the right`);
