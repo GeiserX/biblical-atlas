@@ -119,6 +119,10 @@
   .leyenda.abierta { max-width: calc(100% - 128px); }
   .panel-mapa { right: 118px; }
   .leyenda.abierta .be-legend__row { white-space: normal; }
+  /* La línea del recorrido llega hasta la columna doble de botones del mapa, y sus flechas se pulsan en 44 px. */
+  .vista-recorrido { right: 118px; }
+  .recorrido-linea { min-height: 44px; }
+  .recorrido-flecha { width: 44px; }
   /* «Ahora mismo» no tapa los botones del mapa ni se mete bajo la hoja. */
   .vista-ahora { right: 118px; max-height: calc(100% - 72px - var(--hoja-max)); }
 }
