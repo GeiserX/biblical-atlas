@@ -2,7 +2,8 @@
 // one record opens that record's card at its date; cited by several, it opens the first by date and the card lists the
 // others to switch to; cited by none, the panel says so and the selection stays empty; a range and a book written with
 // an accent read like their abbreviation; Back after a passage link goes back to the view before it and Forward returns
-// to the passage with its list; «Enlace al pasaje» copies the link. The rules without a browser are in
+// to the passage with its list, and with nothing selected the notice has its own entry named by the passage; «Enlace al
+// pasaje» copies the link. The rules without a browser are in
 // enlaces-pasaje-reglas.test.mjs.
 //
 // Run from the root of the repository, one browser at a time:
@@ -258,6 +259,26 @@ test('Back after a passage link returns to the view before it; Forward brings th
   assert.equal(c.sel, at.sel);
   assert.ok(c.box, 'Forward lost the passage list');
   assert.match(c.hash, /[#&]p=2Re17:6(&|$)/);
+  assert.deepEqual(page.pageErrors, []);
+});
+
+test('a passage link with nothing selected is its own entry, named by the passage, and Back closes its notice', async () => {
+  const page = await openPage(DESKTOP, { hash: 't=50.3000' });
+  const before = await page.evaluate(() => document.title);
+  await page.evaluate(() => { location.hash = 'p=Snt1:5'; });
+  await settle(page);
+  assert.ok((await view(page)).box, 'no notice');
+  assert.equal(await page.evaluate(() => document.title), 'Enlace a Santiago 1:5 · biblical-atlas');
+  assert.equal(await page.evaluate(() => document.getElementById('atras').getAttribute('aria-label')), `Atrás: ${before.replace(' · biblical-atlas', '')}`);
+  await page.locator('#atras').click();
+  await settle(page);
+  const b = await view(page);
+  assert.equal(b.box, null, 'the notice stayed on the view before it');
+  assert.doesNotMatch(b.hash, /[#&]p=/);
+  await page.goForward();
+  await settle(page);
+  assert.ok((await view(page)).box, 'Forward lost the notice');
+  assert.equal(await page.evaluate(() => document.title), 'Enlace a Santiago 1:5 · biblical-atlas');
   assert.deepEqual(page.pageErrors, []);
 });
 

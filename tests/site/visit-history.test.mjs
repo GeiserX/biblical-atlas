@@ -168,6 +168,7 @@ test('each view is named by what it shows, the most specific first', () => {
   assert.equal(H.viewName({ now: true, reading: { chapter: 'Hechos 1' }, date }), 'Ahora mismo en c. 50 e.c.');
   assert.equal(H.viewName({ sync: 'Corinto', reading: { chapter: 'Hechos 1' }, tour: { name: 'X', stop: 1 }, date }), 'Sincronía de Corinto');
   assert.equal(H.viewName({ selection: 'Samotracia', date }), 'Samotracia');
+  assert.equal(H.viewName({ passage: 'Santiago 1:5', date }), 'Enlace a Santiago 1:5');
   assert.equal(H.viewName({ date }), 'El mapa en c. 50 e.c.');
   assert.equal(H.viewName({}), 'El mapa');
 });

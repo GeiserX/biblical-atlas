@@ -147,6 +147,8 @@ function viewName(v = {}) {
   if (v.reading?.chapter) return `Lectura de ${v.reading.chapter}${v.reading.passage ? `, pasaje ${v.reading.passage}` : ''}`;
   if (v.tour?.name) return v.tour.stop ? `${v.tour.name}, parada ${v.tour.stop}` : v.tour.name;
   if (v.selection) return v.selection;
+  // A passage link that opened nothing (its notice, passage-link.js).
+  if (v.passage) return `Enlace a ${v.passage}`;
   return v.date ? `El mapa en ${v.date}` : 'El mapa';
 }
 /** «y», or «e» before a word that starts with the sound i (Isaac, Hiram), but not before ie, ia… (Hierápolis). */

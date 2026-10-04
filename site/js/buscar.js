@@ -522,6 +522,8 @@ const historia = (() => {
     if (p.has('sinc')) v.sync = BE.L[p.get('sinc').split('~')[0]]?.nombre || '';
     if (p.get('ahora') === '1') v.now = true;
     if (E.sel) v.selection = BE.nombreSel(E.sel);
+    // Un enlace a un pasaje sin selección (su aviso, passage-link.js) se nombra por el pasaje.
+    else if (p.has('p')) v.passage = BE.pasajeEnlace?.active?.readable || p.get('p');
     return v;
   }
   /** Lo que hay detrás y delante, como lo enseñan los botones. Navigation API, donde la hay, confirma lo que dicen los

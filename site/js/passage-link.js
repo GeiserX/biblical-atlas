@@ -215,8 +215,10 @@ function resolve(text) {
 let active = null;
 const showing = () => !!active && (active.found?.length ? !!E.sel && active.found.includes(BE.selTexto(E.sel)) : !E.sel);
 
+// historia: a passage link is a view of its own, also with nothing selected (its notice), and the history names it.
 BE.parametros.push({
   nombre: 'p',
+  historia: true,
   escribir: () => (showing() ? active.text : null),
   leer(v) { active = v ? resolve(v) : null; },
 });
