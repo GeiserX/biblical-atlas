@@ -1,0 +1,37 @@
+# Muestra fija de fuentes de jw.org para contar las que enlazan su página inglesa (docs/ideas/ingles.md).
+# La escribe: python3 scripts/translation_size.py --sample
+it-rezon
+it-jafia
+it-fanuel
+it-guera-i
+it-sefela
+it-quenat
+it-cencreas
+it-esdras
+it-abihu
+it-abinadab
+it-resplandeciente
+it-apolos
+it-nahalol
+it-hamot-dor
+it-sema
+it-sem
+it-jehova-salom
+it-guibeton
+it-litera
+it-proverbios-libro
+ia-hombre-de-gran-lealtad
+ip2-5
+bt-9
+nota-hechos-20
+w10-salmo-72
+tnm-b7
+w03-esperanza-verdadera
+jy-cap-86
+jy-cap-24
+jy-cap-33
+jy-cap-15
+bt-26
+bt-25
+jy-cap-130
+w05-profecias-de-oseas

@@ -234,7 +234,7 @@ function fichaPersona(id) {
   const cartas = as.filter((a) => a.origen === 'carta');
   const recorridos = (BE.D.recorridos || []).filter((r) => (r.paradas || []).some((x) => x.sel === `persona:${id}`));
   const tag = (a) => (a.deducido ? '<span class="be-chip etiqueta-deducido" title="Lo deduce la fuente; el texto bíblico no lo dice">deducido</span>' : '');
-  return `${BE.migas('Personas', p.nombre)}${BE.cerrarHtml()}
+  return `${BE.migas(BE.t('Personas'), p.nombre)}${BE.cerrarHtml()}
     <section class="be-card"><div class="be-card__pad">
       <div class="cabecera-carta"><span class="be-node be-node--persona be-node--lg" aria-hidden="true">${esc(p.nombre[0])}</span>
       <div><h2 class="be-card__title">${esc(p.nombre)}</h2>${BE.nombresHtml(p)}</div></div>
@@ -242,17 +242,17 @@ function fichaPersona(id) {
       ${p.desambiguacion ? `<div class="be-note"><span aria-hidden="true">≠</span><span>${esc(p.desambiguacion)}</span></div>` : ''}
       ${barraVida(p)}
       ${BE.enlacesHtml(p.enlaces)}
-      <div class="acciones-persona"><button type="button" class="be-btn be-btn--sm" data-grafo="${esc(id)}">Ver en el grafo</button><button type="button" class="be-btn be-btn--sm" data-relacionar="persona:${esc(id)}">Relacionar con…</button></div>
+      <div class="acciones-persona"><button type="button" class="be-btn be-btn--sm" data-grafo="${esc(id)}">${BE.t('Ver en el grafo')}</button><button type="button" class="be-btn be-btn--sm" data-relacionar="persona:${esc(id)}">${BE.t('Relacionar con…')}</button></div>
     </div><div class="be-card__foot">${BE.estadoHtml(p.estado)}</div></section>
     ${familiaHtml(id)}
     ${recorridos.length ? `<div class="be-note be-note--uncertain aviso-recorrido"><span aria-hidden="true">◎</span><span>Esta ficha forma parte de un recorrido: ${recorridos.map((r) => `<button type="button" class="enlace-texto" data-sel="recorrido:${esc(r.id)}">${esc(r.titulo)}</button>`).join(', ')}.</span></div>` : ''}
-    ${rels.length || avisoSinPasaje ? `<section class="be-card ficha-sec"><div class="be-card__pad"><h3 class="be-card__eyebrow">Relaciones <b class="cuenta">${rels.length}</b></h3>
+    ${rels.length || avisoSinPasaje ? `<section class="be-card ficha-sec"><div class="be-card__pad"><h3 class="be-card__eyebrow">${BE.t('Relaciones')} <b class="cuenta">${rels.length}</b></h3>
       ${rels.length ? `<ul class="relaciones">${rels.map((a) => `<li>${verboConBoton(a)}${tag(a)}
         <span class="rel-meta">${a.fecha ? esc(textoFecha(a)) : ''}${a.fecha && a.ref ? ' · ' : ''}${a.ref ? BE.chipsCitas(a.ref) : ''}</span>${a.razon ? `<span class="rel-razon">${esc(a.razon)}</span>` : ''}</li>`).join('')}</ul>` : ''}${avisoSinPasaje}</div></section>` : ''}
-    ${lugares.length ? `<section class="be-card ficha-sec"><div class="be-card__pad"><h3 class="be-card__eyebrow">Lugares de su vida <b class="cuenta">${lugares.length}</b></h3>
+    ${lugares.length ? `<section class="be-card ficha-sec"><div class="be-card__pad"><h3 class="be-card__eyebrow">${BE.t('Lugares de su vida')} <b class="cuenta">${lugares.length}</b></h3>
       <div class="be-list">${lugares.slice(0, 14).map((a) => BE.botonSel(a.sel, nombreDe(a.sel), esc([a.tr ? textoFecha(a) : '', a.verbo].filter(Boolean).join(' · ')))).join('')}</div>
       ${lugares.length > 14 ? `<p class="be-muted">Y ${lugares.length - 14} más: están todos en el grafo.</p>` : ''}</div></section>` : ''}
-    ${eventos.length ? `<section class="be-card ficha-sec"><div class="be-card__pad"><h3 class="be-card__eyebrow">Sucesos <b class="cuenta">${eventos.length}</b></h3>
+    ${eventos.length ? `<section class="be-card ficha-sec"><div class="be-card__pad"><h3 class="be-card__eyebrow">${BE.t('Sucesos')} <b class="cuenta">${eventos.length}</b></h3>
       <div class="be-list">${eventos.map((a) => BE.botonSel(a.sel, nombreDe(a.sel), esc([textoFecha(a), a.ref].filter(Boolean).join(' · ')))).join('')}</div></div></section>` : ''}
     ${viajes.length ? `<section class="be-card ficha-sec"><div class="be-card__pad"><h3 class="be-card__eyebrow">${viajes.some((a) => a.verbo === 'su viaje') ? 'Sus viajes' : 'Viajes'}</h3>
       <div class="be-list">${viajes.map((a) => BE.botonSel(a.sel, nombreDe(a.sel), `${esc(a.ref || '')} · ${esc(textoFecha(a))}`)).join('')}</div></div></section>` : ''}
@@ -319,7 +319,7 @@ BE.tipo('persona', {
     const mismos = {};
     for (const p of Object.values(BE.PERS)) mismos[BE.norm(p.nombre)] = (mismos[BE.norm(p.nombre)] || 0) + 1;
     for (const p of Object.values(BE.PERS)) {
-      const pp = puntuar([p.nombre, ...(p.nombres || []).map((n) => n.nombre)]);
+      const pp = puntuar([p.nombre, ...(p.nombres || []).map((n) => n.nombre), ...(p._es || [])]);
       if (!pp) continue;
       const n = mismos[BE.norm(p.nombre)];
       out.push({ grupo: 'Personas', sel: { tipo: 'persona', id: p.id }, titulo: p.nombre, meta: p.desambiguacion || p.resumen || '', puntos: pp, etiqueta: n > 1 ? `${n} con este nombre` : '' });

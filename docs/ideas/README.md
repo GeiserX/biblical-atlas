@@ -103,6 +103,7 @@ Son capturas de maquetas HTML hechas con el [kit](mockups/README.md), con datos 
 | [Zonas con forma: elipses, cajas y polígonos](zonas-formas.md) | Qué zonas son hoy un círculo y cuánto dicen de más, un vocabulario cerrado de cuatro formas con su fuente, qué cambia en la validación, el dibujo, el encuadre, los clics, la regla de los 0,5 km y el lector MCP, y la primera tanda de nueve zonas convertidas. |
 | [Área desconocida: de dónde viene un viaje cuando la fuente no lo sitúa](area-desconocida.md) | Una parada sin lugar con las palabras de la fuente («Oriente», «su país») y su rumbo; cómo la dibuja el mapa junto a la parada vecina sin reclamar sitio, la animación al llegar y al salir, los viajes que la usan y los que no, con capturas, y lo que queda por decidir. |
 | [Los nombres del mapa en el móvil](rotulos-movil.md) | Cuántos nombres de parada dibuja el mapa y cuántos esconde, y por qué, en cada recorrido y en los viajes de Pablo y de Jesús, a 430 y a 1440 de ancho; tres maneras de salvar el nombre junto al borde, la tarjeta del recorrido en una línea y el encuadre que la descuenta, con capturas de antes y después. |
+| [Inglés: el atlas en dos idiomas](ingles.md) | Cómo guardan los datos el inglés (un bloque `en` junto a cada texto, la ficha como unidad), cómo elige el sitio el idioma (`?lang=`, lo guardado y el navegador, con su botón), cómo siguen la documentación y el README, el orden de las tandas con su revisión, las 436.256 palabras que hay que pasar y un prototipo con Filipos, Lidia y su bautismo en inglés. |
 
 ## Decisiones tomadas
 
