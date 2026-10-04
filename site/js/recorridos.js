@@ -12,7 +12,7 @@ const busca = (id) => (BE.D.recorridos || []).find((r) => r.id === id);
 const CLAVE_PASO = 'biblical-atlas:recorrido:';
 // marcoLlegada: el encuadre guardado de la entrada a la que se acaba de llegar (Atrás, Adelante, una recarga), solo
 // hasta el siguiente fotograma, el que abre el recorrido (seguirSeleccion).
-const R = { id: null, paso: 0, pasoHash: null, marcoLlegada: null, respuestas: {}, play: 0, marcas: [] };
+const R = { id: null, paso: 0, pasoHash: null, marcoLlegada: null, respuestas: {}, play: 0, marcas: [], abierta: false };
 const pasoDe = (id) => (R.id === id ? R.paso : (R.pasoHash ?? guardado(id)));
 // El paso guardado es un entero desde 0; un valor que no es un número (una copia estropeada) cuenta como el primero.
 // Quien lo usa lo recorta al número de paradas.
@@ -88,15 +88,35 @@ function fichaRecorrido(id) {
     ${BE.porQueHtml(rc)}`;
 }
 
+/** La tarjeta del recorrido sobre el mapa. En el móvil es una sola línea (título, «3 de 11» y las flechas) que se abre
+    al pulsarla, para que el mapa conserve su alto; en el escritorio se ve abierta, como siempre (estudio.css). */
 function vistaSobreMapa() {
   const v = $('#vista-recorrido');
   const rc = R.id && busca(R.id);
-  if (!rc) { v.hidden = true; v.innerHTML = ''; return; }
-  const p = rc.paradas[R.paso];
+  if (!rc) { v.hidden = true; v.innerHTML = ''; R.abierta = false; v.classList.remove('abierta'); return; }
+  const p = rc.paradas[R.paso], n = rc.paradas.length;
+  const nombreDe = (x) => { const y = BE.parseSel(x.sel); return y ? BE.nombreSel(y) : x.sel; };
+  const ant = rc.paradas[R.paso - 1], sig = rc.paradas[R.paso + 1];
+  // Al pasar de parada la tarjeta se pinta de nuevo: el foco vuelve al mismo botón, o al título si la flecha ya no vale.
+  const foco = v.contains(document.activeElement) ? document.activeElement.dataset.foco : null;
   v.hidden = false;
-  v.innerHTML = `<div class="be-float recorrido-flota"><span class="be-caps">Recorrido guiado</span><b>${esc(rc.titulo)}</b><span class="be-muted">parada ${R.paso + 1} de ${rc.paradas.length}</span>
+  v.classList.toggle('abierta', R.abierta);
+  v.innerHTML = `<div class="be-float recorrido-linea">
+      <button type="button" class="recorrido-flecha" data-foco="ant" ${ant ? `data-recorrido-ir="${R.paso - 1}" aria-label="Parada anterior, ${R.paso}: ${esc(nombreDe(ant))}"` : 'disabled aria-label="Es la primera parada"'}><span aria-hidden="true">‹</span></button>
+      <button type="button" class="recorrido-resumen" data-foco="abrir" data-recorrido-abrir aria-expanded="${R.abierta}" aria-controls="recorrido-flota" aria-label="Recorrido guiado: ${esc(rc.titulo)}, parada ${R.paso + 1} de ${n}. ${R.abierta ? 'Plegar' : 'Desplegar'} la tarjeta"><b>${esc(rc.titulo)}</b><span class="recorrido-paso">${R.paso + 1} de ${n}</span></button>
+      <button type="button" class="recorrido-flecha" data-foco="sig" ${sig ? `data-recorrido-ir="${R.paso + 1}" aria-label="Parada siguiente, ${R.paso + 2}: ${esc(nombreDe(sig))}"` : 'disabled aria-label="Es la última parada"'}><span aria-hidden="true">›</span></button>
+    </div>
+    <div class="be-float recorrido-flota" id="recorrido-flota"><span class="be-caps">Recorrido guiado</span><b>${esc(rc.titulo)}</b><span class="be-muted">parada ${R.paso + 1} de ${n}</span>
     <button type="button" class="be-btn be-btn--sm be-btn--ghost" data-recorrido-salir>Salir y explorar</button></div>
     ${p?.no_sabemos ? `<div class="be-float recorrido-nosabemos"><span class="be-caps">Qué no sabemos</span><p>${esc(p.no_sabemos)}</p></div>` : ''}`;
+  if (foco) (v.querySelector(`[data-foco="${foco}"]:not([disabled])`) || v.querySelector('[data-foco="abrir"]')).focus();
+}
+/** Abre o pliega la tarjeta de una línea del móvil. No mueve el mapa: la tarjeta abierta flota encima, y los nombres
+    que quedan debajo se esconden mientras tanto (loQueTapa en mapa.js). */
+function plegar(abierta) {
+  R.abierta = abierta;
+  vistaSobreMapa();
+  BE.sucio.etiquetas = true; BE.programar();
 }
 function marcas() {
   for (const m of R.marcas) m.remove();
@@ -136,6 +156,7 @@ function irA(i, { historia = true, encuadrar = true } = {}) {
   BE.setT(p.t);
   BE.asegurarVisible(BE.E.t, true);
   const ls = lugaresParada(p);
+  R.abierta = false;  // la tarjeta del móvil se pliega al cambiar de parada: el encuadre cuenta solo su línea
   vistaSobreMapa();   // antes de encuadrar: el encuadre deja libre el sitio de esta tarjeta
   BE.mapa.resaltar(ls.length ? ls : null);
   if (encuadrar) { const caja = encuadreParada(rc, i); if (caja.length) BE.mapa.encuadrar(caja); }
@@ -151,6 +172,7 @@ function seguirSeleccion() {
   if (id === R.id) return;
   if (R.id) { parar(); BE.mapa.resaltar(null); }
   R.id = id;
+  R.abierta = false;
   if (id) {
     BE.estudio?.abrirSolo?.('recorrido');   // el recorrido lleva su propio mapa: se cierran grafo, conexión y lectura
     const rc = busca(id);
@@ -303,7 +325,16 @@ function iniciar() {
     if (t.closest('[data-recorrido-imprimir]')) { hojaImpresion(R.id); return; }
     if (t.closest('[data-recorrido-repasar]')) { const rc = busca(R.id); const k = rc.paradas.findIndex((x) => x.pregunta); for (const key of Object.keys(R.respuestas)) if (key.startsWith(`${R.id}/`)) delete R.respuestas[key]; if (k >= 0) irA(k); }
   });
-  document.getElementById('vista-recorrido').addEventListener('click', (e) => { if (e.target.closest('[data-recorrido-salir]')) salir(); });
+  const vista = document.getElementById('vista-recorrido');
+  vista.addEventListener('click', (e) => {
+    if (e.target.closest('[data-recorrido-salir]')) { salir(); return; }
+    const ir = e.target.closest('[data-recorrido-ir]');
+    if (ir) { parar(); irA(+ir.dataset.recorridoIr); return; }
+    if (e.target.closest('[data-recorrido-abrir]')) plegar(!R.abierta);
+  });
+  vista.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && R.abierta) { e.stopPropagation(); plegar(false); vista.querySelector('[data-recorrido-abrir]')?.focus(); }
+  });
   document.addEventListener('click', (e) => { if (e.target.closest('[data-presentar]')) presentar(!raiz.classList.contains('be-presentando')); });
   // Deslizar el dedo sobre la ficha en el móvil pasa de parada.
   let x0 = null;
