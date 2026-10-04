@@ -1,6 +1,7 @@
 # biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
 id: muerte-de-acan
 title: Muerte de Acán en el valle de Acor
+type: death
 date:
   from: -1472
   to: -1472
@@ -17,6 +18,8 @@ places:
 people:
 - acan-hijo-de-carmi
 - josue-hijo-de-nun
+roles:
+  acan-hijo-de-carmi: died
 passages:
 - Jos 7:24-26
 - Jos 22:20
@@ -32,5 +35,5 @@ links:
 - title: Josué 7 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Josu%C3%A9/7/
   type: bible
-checked_on: '2026-09-29'
+checked_on: '2026-10-03'
 status: verified

@@ -62,13 +62,14 @@ relations:
   status: verified
 - type: same_as
   person: gayo-de-macedonia
+  certainty: possible
   inferred: true
   sources:
   - it-gayo
   - hch-20
   reason: Perspicacia «Gayo», núm. 2, lo ve posible porque el relato nombra también a Aristarco; si lo fuera, sería un macedonio
     que vivía en Derbe.
-  checked_on: '2026-09-29'
-  status: pending
+  checked_on: '2026-10-03'
+  status: verified
 checked_on: '2026-09-29'
 status: verified

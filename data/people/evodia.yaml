@@ -40,22 +40,20 @@ relations:
   status: verified
 - type: accompanies
   person: pablo
-  caption: colaboradora
-  inverse_caption: colaborador
+  word: fellow_worker
   inferred: false
   sources:
   - filipenses-4
   - it-evodia
   reason: 'Flp 4:3: se esforzó con Pablo a favor de las buenas noticias. Perspicacia «Evodia» no dice dónde ni cuándo.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-03'
   status: verified
 - type: accompanies
   person: clemente
-  caption: colaboradora
-  inverse_caption: colaborador
+  word: fellow_worker
   inferred: false
   sources:
   - filipenses-4
   reason: 'Flp 4:3: Evodia se esforzó por las buenas noticias junto a Pablo y también junto a Clemente.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-03'
   status: verified

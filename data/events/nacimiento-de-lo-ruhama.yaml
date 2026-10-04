@@ -1,6 +1,7 @@
 # biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
 id: nacimiento-de-lo-ruhama
 title: Nace Lo-Ruhamá
+type: birth
 date:
   from: -828
   to: -739
@@ -18,6 +19,8 @@ people:
 - gomer-hija-de-diblaim
 - oseas
 present: []
+roles:
+  lo-ruhama: born
 passages:
 - Os 1:6, 7
 summary: 'Gómer da a luz una hija. Dios manda llamarla Lo-Ruhamá: ya no se compadecerá de Israel y lo expulsará, pero salvará
@@ -33,5 +36,5 @@ links:
 - title: Oseas 1 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/oseas/1/
   type: bible
-checked_on: '2026-09-29'
+checked_on: '2026-10-03'
 status: verified

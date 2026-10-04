@@ -1,6 +1,7 @@
 # biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
 id: muerte-de-core
 title: Muerte de Coré y de los 250 que ofrecían incienso
+type: death
 date:
   from: -1511
   to: -1473
@@ -16,6 +17,8 @@ places: []
 people:
 - core-hijo-de-izhar
 present: []
+roles:
+  core-hijo-de-izhar: died
 passages:
 - Nú 16:35
 - Nú 26:10
@@ -41,5 +44,5 @@ links:
 - title: 'Perspicacia: «Coré»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Cor%C3%A9/
   type: perspicacia
-checked_on: '2026-09-29'
+checked_on: '2026-10-03'
 status: verified

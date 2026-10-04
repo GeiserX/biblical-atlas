@@ -45,8 +45,9 @@ relations:
   inferred: true
   sources:
   - it-atalia-reina
-  reason: Perspicacia la presenta como hija de Acab y Jezabel.
-  checked_on: '2026-09-29'
+  - 2-reyes-8
+  reason: 'Perspicacia «Atalía», núm. 1: hija de Acab y de Jezabel, y nieta de Omrí (2Re 8:18, 26).'
+  checked_on: '2026-10-03'
   status: verified
 - type: succeeds
   person: ocozias-de-juda

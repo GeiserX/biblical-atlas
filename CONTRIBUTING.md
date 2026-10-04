@@ -22,7 +22,7 @@ python3 scripts/validate.py --links
 
 Para probar sin tocar lo compilado, `build.py --out DIR` escribe en otra carpeta, y `build.py --data DIR` y `validate.py --data DIR` leen otra copia de `data/`. Los detalles están en [scripts/README.md](scripts/README.md).
 
-En cada PR, el CI compila y valida el esquema. Un id que no existe o un hecho sin fuente bloquean el PR. Los enlaces se comprueban en `main` y cada semana, así que pasa `--links` tú antes de abrirlo.
+En cada PR, el CI compila y valida el esquema. Un id que no existe o un hecho sin fuente bloquean el PR. También lo bloquea un aviso nuevo: [`scripts/avisos-presupuesto.txt`](scripts/avisos-presupuesto.txt) dice cuántos avisos admite cada código, y `validate.py` falla si alguno pasa de su número. Si tu cambio arregla un aviso, baja ese número en el mismo PR; nunca lo subas. Los enlaces se comprueban en `main` y cada semana, así que pasa `--links` tú antes de abrirlo.
 
 ## Mejorar el sitio
 

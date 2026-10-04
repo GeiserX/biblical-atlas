@@ -24,12 +24,13 @@ links:
 relations:
 - type: succeeds
   person: tola-hijo-de-pua
+  office: judge
   inferred: false
   sources:
   - jueces-10
   - it-jair
   reason: 'Jue 10:3: después de Tolá surgió Jaír y juzgó a Israel.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-03'
   status: verified
 - type: lived_in
   place: galaad

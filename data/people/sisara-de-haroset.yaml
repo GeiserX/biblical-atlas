@@ -36,15 +36,15 @@ relations:
   reason: 'Jue 4:2: vivía en Haróset de las naciones; Perspicacia «Sísara», núm. 1, subraya que no en Hazor.'
   checked_on: '2026-09-29'
   status: verified
-- type: accompanies
+- type: tie
   person: jabin-rey-de-canaan
-  caption: jefe del ejército de
+  word: master
   inferred: false
   sources:
   - jueces-4
   - it-sisara
   reason: 'Jue 4:2, 7: mandaba el ejército de Jabín, rey de Canaán.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-03'
   status: verified
 - type: died_in
   place: zaananim

@@ -22,12 +22,13 @@ links:
 relations:
 - type: same_as
   person: salmanasar-v
+  certainty: probable
   inferred: true
   sources:
   - it-salman
   reason: Perspicacia «Salmán» (Os 10:14) ve el nombre como forma breve de Salmanasar y señala a Salmanasar V, que invadió
     Israel cuando Oseas acababa su obra.
-  checked_on: '2026-09-29'
-  status: pending
+  checked_on: '2026-10-03'
+  status: verified
 checked_on: '2026-09-29'
 status: verified

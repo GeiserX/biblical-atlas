@@ -67,25 +67,6 @@ relations:
   reason: Llega a Cesarea y juzga allí a Pablo (Hch 25:1, 6).
   checked_on: '2026-09-29'
   status: verified
-- type: tie
-  person: pablo
-  caption: custodio
-  inverse_caption: custodiado por
-  date:
-    from: 58
-    to: 58
-    precision: year
-    approx: true
-    type: anchored
-    chronology: tnm
-    text: c. 58 e.c.
-  inferred: false
-  sources:
-  - hch-25
-  - it-festo
-  reason: 'Hch 25:4, 21: al llegar dispone que Pablo siga preso en Cesarea y lo mantiene arrestado hasta mandarlo a César.'
-  checked_on: '2026-09-29'
-  status: verified
 - type: holds_office
   place: judea
   office: governor

@@ -30,12 +30,13 @@ links:
 relations:
 - type: kin
   person: diblaim
+  word: relative
   inferred: false
   sources:
   - oseas-1
   - it-diblaim
   reason: Os 1:3 la llama hija de Diblaim; Perspicacia «Diblaim» lo da como pariente suyo, sin decir el grado.
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-03'
   status: verified
 checked_on: '2026-09-29'
 status: verified

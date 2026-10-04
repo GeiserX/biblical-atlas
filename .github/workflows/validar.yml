@@ -18,9 +18,10 @@ jobs:
           python-version: "3.12"
       - run: pip install -r requirements.txt
       - run: python3 scripts/build.py
-      # Sin --strict: tras la migración main tiene avisos que esperan una decisión (docs/investigacion/modelo.md,
-      # secciones 13 y 16). Cada código pasa a error por separado, en validate.py, cuando main llega a 0.
-      - run: python3 scripts/validate.py
+      # Sin --strict: main tiene avisos que esperan una decisión (docs/investigacion/modelo.md, secciones 13 y 16). Los
+      # avisos de cada código no pueden pasar de su número en scripts/avisos-presupuesto.txt: un aviso nuevo falla aquí.
+      - name: Esquema, y avisos dentro del presupuesto
+        run: python3 scripts/validate.py
       - run: python3 scripts/test_apply.py
       - run: python3 scripts/test_build.py
       - run: python3 scripts/test_validate.py

@@ -57,25 +57,3 @@ relations:
   reason: Tiene a Pablo preso en el palacio de Herodes, en Cesarea (Hch 23:35).
   checked_on: '2026-09-29'
   status: verified
-- type: tie
-  person: pablo
-  caption: custodio
-  inverse_caption: custodiado por
-  date:
-    from: 56
-    to: 58
-    precision: range
-    approx: true
-    type: anchored
-    chronology: tnm
-    text: c. 56-58 e.c.
-  inferred: false
-  sources:
-  - hch-23
-  - hch-24
-  - it-felix
-  - si-3
-  reason: Recibe a Pablo en Cesarea y lo mantiene vigilado dos años, con cierta libertad, hasta que llega Festo (Hch 23:33-35;
-    24:23, 27).
-  checked_on: '2026-09-29'
-  status: verified

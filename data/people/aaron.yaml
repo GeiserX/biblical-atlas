@@ -115,8 +115,9 @@ relations:
   inferred: false
   sources:
   - it-aaron
-  reason: 'Perspicacia «Aarón», párr. 2: nació en Egipto en 1597 a.e.c.'
-  checked_on: '2026-09-29'
+  - exodo-6
+  reason: 'Perspicacia «Aarón», párr. 2: nació en Egipto en 1597 a.e.c., hijo de Amram y Jokébed (Éx 6:16-20).'
+  checked_on: '2026-10-03'
   status: verified
 - type: accompanies
   person: moises

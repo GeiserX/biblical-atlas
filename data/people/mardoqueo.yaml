@@ -45,9 +45,10 @@ relations:
   - it-mardoqueo
   - it-susa
   - tnm-tabla
-  reason: 'Perspicacia «Mardoqueo»: estaba sentado en la puerta del rey en Susa. Años que abarca Ester en la Tabla de los libros:
-    493 a c. 475.'
-  checked_on: '2026-09-28'
+  - ester-2
+  reason: Est 2:5 lo hace vecino del castillo de Susa, y Perspicacia «Mardoqueo» lo pone a la puerta del rey. Ester abarca
+    de 493 a c. 475 (Tabla de los libros).
+  checked_on: '2026-10-03'
   status: verified
 checked_on: '2026-09-28'
 status: verified

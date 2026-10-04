@@ -19,4 +19,4 @@ Cada fila es una afirmación con su fichero, su fuente, el día en que se leyó,
 | [Recorridos](recorridos.md) | 4 |
 | [Libros y calendario](libros.md) | 66 libros, 13 meses |
 | [Cobertura de la Biblia](cobertura.md) | 896 de 1189 capítulos completos |
-| [Fuentes](fuentes.md) | 3329: 2469 enlazadas por algún dato, 836 capítulos de la Biblia y 24 sin citar |
+| [Fuentes](fuentes.md) | 3332: 2470 enlazadas por algún dato, 838 capítulos de la Biblia y 24 sin citar |
