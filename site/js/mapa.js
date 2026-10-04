@@ -1498,7 +1498,7 @@ function repartir(items, burbujas) {
     if (x.d < x.h) puestos.push(x);
   }
 }
-const firma = (el) => [...el.classList].filter((c) => c !== 'sin-etiqueta' && c !== 'agrupado' && c !== 'cand--junto' && !c.startsWith('maplibregl-')).join('.');
+const firma = (el) => [...el.classList].filter((c) => c !== 'sin-etiqueta' && c !== 'agrupado' && c !== 'cand--junto' && c !== 'rotulo-izq' && !c.startsWith('maplibregl-')).join('.');
 function pintarEtiquetas() {
   if (!mapaListo) return;
   const w = BE.dondeEsta(E.t);
@@ -1628,6 +1628,8 @@ function pintarEtiquetas() {
     const p = map.project(x.pos);
     const ax = marco.left + p.x, ay = marco.top + p.y;
     x.caja = { x0: Math.floor(r.left - ax), x1: Math.ceil(r.right - ax), y0: Math.floor(r.top - ay), y1: Math.ceil(r.bottom - ay) };
+    // El reparto cuenta siempre el nombre a la derecha de su punto: uno que ahora va a la izquierda se mide al revés.
+    if (x.deLugar && x.el.classList.contains('rotulo-izq')) x.caja = { ...x.caja, x0: -x.caja.x1, x1: -x.caja.x0 };
     // El número de un recorrido es una píldora redonda sobre su lugar: sin su borde de abajo deja sitio al nombre del lugar.
     if (x.ajeno && !x.obstaculo) x.caja.y1 -= 4;
     x.el[k] = { f, c: x.caja };
@@ -1678,13 +1680,46 @@ function pintarEtiquetas() {
   const tapas = loQueTapa().map(caja).filter((r) => r.width > 0);
   const choca = (r, c) => !(r.right < c.left || r.left > c.right || r.bottom < c.top || r.top > c.bottom);
   const dentro = (r) => r.left >= marco.left && r.right <= marco.right && r.top >= marco.top && r.bottom <= marco.bottom;
-  const ver = items.map((x) => {
-    const ok = !!x.caja && x.d <= zoom && zoom < x.h;
-    if (!ok || x.esSel) return ok;
-    const r = x.medir.getBoundingClientRect();
-    return dentro(r) && !tapas.some((c) => choca(r, c));
+  const libre = (r) => dentro(r) && !tapas.some((c) => choca(r, c));
+  // Un nombre de lugar va a la derecha de su punto. El que ahí se saldría del mapa o caería bajo una tarjeta se pone a
+  // la izquierda, si allí cabe sin tocar nada de lo que ya se dibuja: el punto de una parada junto al borde derecho
+  // conserva su nombre (docs/ideas/rotulos-movil.md). Se decide siempre desde la derecha, así que no baila.
+  const centro = (x) => marco.left + map.project(x.pos).x;
+  const espejo = (r, cx) => ({ left: 2 * cx - r.right, right: 2 * cx - r.left, top: r.top, bottom: r.bottom });
+  const rects = items.map((x) => (x.caja && x.d <= zoom && zoom < x.h ? x.medir.getBoundingClientRect() : null));
+  const izq = new Set(), probar = [];
+  const ver = items.map((x, i) => {
+    if (!rects[i]) return false;
+    if (x.deLugar && x.el.classList.contains('rotulo-izq')) rects[i] = espejo(rects[i], centro(x));
+    if (libre(rects[i])) return true;
+    if (x.deLugar) probar.push(i);
+    return !!x.esSel;
   });
-  items.forEach((x, i) => { if (!x.ajeno || x.num) x.el.classList.toggle('sin-etiqueta', !ver[i]); });
+  if (probar.length) {
+    // Lo que ya se dibuja: los nombres, números y puntos que se ven, con el aire del reparto (3 px a los lados, 1 arriba
+    // y abajo), los puntos de los lugares y las burbujas.
+    const ocupado = items.map((x, i) => (ver[i] && !probar.includes(i) ? rects[i] : null)).filter(Boolean);
+    for (const { m } of marcas) {
+      if (m.region || m.clase === 'agua' || m.el.classList.contains('agrupado')) continue;
+      const p = map.project([m.l.lon, m.l.lat]), r = m.el.classList.contains('es-actual') ? 7 : 5;
+      ocupado.push({ left: marco.left + p.x - r, right: marco.left + p.x + r, top: marco.top + p.y - r, bottom: marco.top + p.y + r, punto: m.el });
+    }
+    for (const b of burbujas) {
+      if (!(b.d <= zoom && zoom < b.h)) continue;
+      const p = map.project(b.pos);
+      ocupado.push({ left: marco.left + p.x + b.caja.x0, right: marco.left + p.x + b.caja.x1, top: marco.top + p.y - 12, bottom: marco.top + p.y + 12 });
+    }
+    const toca = (r, o) => !(r.right + 3 <= o.left || r.left - 3 >= o.right || r.bottom + 1 <= o.top || r.top - 1 >= o.bottom);
+    probar.sort((a, b) => items[b].prio - items[a].prio || (items[b].peso || 0) - (items[a].peso || 0));
+    for (const i of probar) {
+      const x = items[i], r = espejo(rects[i], centro(x));
+      if (!libre(r) || ocupado.some((o) => o.punto !== x.el && toca(r, o))) { if (x.esSel) ocupado.push(rects[i]); continue; }
+      izq.add(x);
+      ver[i] = true;
+      ocupado.push(r);
+    }
+  }
+  items.forEach((x, i) => { if (!x.ajeno || x.num) x.el.classList.toggle('sin-etiqueta', !ver[i]); if (x.deLugar) x.el.classList.toggle('rotulo-izq', izq.has(x)); });
   for (const { m, it } of marcas) m.el.classList.toggle('agrupado', agrupables.has(it) && zoom < grupos.libre.get(it.id));
   pintarBurbujas(burbujas.filter((b) => b.d <= zoom && zoom < b.h));
 }

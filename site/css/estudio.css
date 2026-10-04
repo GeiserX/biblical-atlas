@@ -291,6 +291,8 @@ span.etiqueta-deducido, span.etiqueta-incierto, span.etiqueta-texto { border-rad
 .vista-recorrido { position: absolute; top: 14px; left: 14px; z-index: 3; display: flex; flex-direction: column; gap: 8px; max-width: 300px; pointer-events: none; }
 .vista-recorrido > * { pointer-events: auto; }
 .recorrido-flota { display: flex; flex-direction: column; gap: 2px; padding: 10px 12px; font-size: var(--fs-sm); }
+/* La línea del móvil (vistaSobreMapa en recorridos.js): en el escritorio no se ve. */
+.recorrido-linea { display: none; }
 .recorrido-flota .be-btn { align-self: flex-start; margin: 4px 0 0 -8px; cursor: pointer; }
 .recorrido-nosabemos { padding: 10px 12px; font-size: var(--fs-sm); background: #f4eff8; }
 .recorrido-nosabemos p { margin: 4px 0 0; }
@@ -727,7 +729,19 @@ span.etiqueta-deducido, span.etiqueta-incierto, span.etiqueta-texto { border-rad
   .vista-lectura { top: auto; left: 0; right: 0; width: auto; bottom: var(--timeline-h); max-height: 46vh; border-right: 0; border-radius: 18px 18px 0 0; box-shadow: 0 -6px 30px rgba(40, 28, 10, .18); }
   .lectura-titulo { font-size: var(--fs-2xl); }
   .marca-num { min-width: 30px; height: 30px; border-radius: 15px; font-size: 14px; }
-  .vista-recorrido { top: 50px; left: 10px; max-width: 60%; }
+  /* En el móvil la tarjeta del recorrido es una sola línea a lo ancho, hasta los botones del mapa: título, «3 de 11» y
+     las flechas. Pulsada, se abre debajo la tarjeta entera; el mapa no cambia de alto ni de encuadre. */
+  .vista-recorrido { top: 50px; left: 10px; right: 52px; max-width: none; }
+  .recorrido-linea { display: flex; align-items: stretch; min-height: 40px; padding: 0; overflow: hidden; }
+  .vista-recorrido:not(.abierta) .recorrido-flota { display: none; }
+  .recorrido-flecha { flex: none; width: 40px; border: 0; background: none; color: var(--ink); font: 600 24px/1 var(--font-sans); cursor: pointer; }
+  .recorrido-flecha:disabled { color: var(--ink-4); cursor: default; }
+  .recorrido-resumen { flex: 1; min-width: 0; display: flex; align-items: center; gap: 8px; padding: 0 10px; border: 0; border-inline: 1px solid var(--line); background: none; color: var(--ink); font: 600 var(--fs-sm)/1.2 var(--font-sans); text-align: left; cursor: pointer; }
+  .recorrido-resumen b { flex: 1; min-width: 0; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .recorrido-paso { flex: none; color: var(--ink-2); font-size: var(--fs-xs); font-variant-numeric: tabular-nums; }
+  .recorrido-resumen::after { content: ""; flex: none; width: 7px; height: 7px; margin: -4px 2px 0 0; border: solid var(--ink-2); border-width: 0 2px 2px 0; transform: rotate(45deg); }
+  .recorrido-resumen[aria-expanded="true"]::after { margin-top: 4px; transform: rotate(-135deg); }
+  .recorrido-flecha:focus-visible, .recorrido-resumen:focus-visible { outline-offset: -3px; }
   .recorrido-nosabemos { display: none; }
   .recorrido-texto { font-size: var(--fs-lg); }
 }
