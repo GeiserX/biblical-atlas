@@ -104,8 +104,8 @@ function load(name = 'detail') {
   return loads.get(name);
 }
 /** ¿Está el detalle? Si no, lo pide y llama a `repaint` cuando llegue, o cuando falle, para que lo diga: una ficha,
-    el grafo, la conexión o la búsqueda pintan un aviso mientras tanto. Tras un fallo, un repintado no lo vuelve a
-    pedir antes de RETRY_MS; la acción siguiente (otra ficha, otra búsqueda) sí. */
+    el grafo, la conexión o la búsqueda pintan un aviso mientras tanto. Tras un fallo nadie lo vuelve a pedir antes de
+    RETRY_MS, ni un repintado ni otra ficha: sin red, nada de bucles. Pasado ese tiempo, lo pide quien lo necesite. */
 function ready(repaint, name = 'detail') {
   if (whole || merged.has(name)) return true;
   if (repaint) waiting.add(repaint);

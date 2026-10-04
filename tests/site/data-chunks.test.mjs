@@ -192,6 +192,21 @@ test('a detail that fails is said in the card, with no page error, and the map k
   assert.deepEqual(page.pageErrors, []);
 });
 
+test('after a failed detail, nobody asks again for RETRY_MS (5 s); the next card after that does, and paints', async () => {
+  let asked = 0;
+  const page = await openPage({ hash: 't=50.3000', routes: (p) =>
+    p.route('**/data.detail.json', (r) => (++asked === 1 ? r.abort() : r.continue())) });
+  await page.waitForFunction(() => window.BE.chunks.failed, null, { timeout: 30000 });
+  await page.evaluate(() => window.BE.seleccionar(window.BE.parseSel('lugar:filipos')));
+  await page.locator('#panel-cuerpo [role="status"]', { hasText: 'No se pudo cargar la ficha' }).waitFor();
+  assert.equal(count(page, 'data.detail.json'), 1, 'a card asked again before RETRY_MS');
+  await page.waitForTimeout(5500);
+  await page.evaluate(() => window.BE.seleccionar(window.BE.parseSel('lugar:corinto')));
+  await page.locator('#panel-cuerpo .razon', { hasText: D.lugares.corinto.razon.slice(0, 40) }).first().waitFor();
+  assert.equal(count(page, 'data.detail.json'), 2);
+  assert.deepEqual(page.pageErrors, []);
+});
+
 test('in English, the detail that arrives after the core gets its English too', async () => {
   // language.js puts data.en.json over the core; the summary and the reason of Filipos come later, in Spanish, with
   // the detail, and the loader has to apply the layer again after merging it. The detail is held until the layer is
