@@ -730,7 +730,9 @@ function textoCita(sel) {
   let wol = '';
   const c = BE.citas(refs)[0] || (sel.tipo === 'pasaje' ? { libro: BE.pasajeDeId(sel.id).libro, cap: BE.pasajeDeId(sel.id).cap } : null);
   if (c) wol = c.texto ? BE.urlCita(c) : BE.urlCapitulo(c.libro, c.cap);
-  return [`${nombre}${o.resumen ? `: ${o.resumen}` : ''}`, refs && `Referencias: ${refs}.`, wol && `Leer en jw.org: ${wol}`, fuentes.length && `Fuentes: ${fuentes.join('; ')}.`, `Vista en biblical-atlas: ${location.href}`].filter(Boolean).join('\n');
+  const pasaje = BE.pasajeEnlace?.linkFor(sel);   // #p=Hch16:1, el enlace que abre el pasaje (passage-link.js)
+  return [`${nombre}${o.resumen ? `: ${o.resumen}` : ''}`, refs && `Referencias: ${refs}.`, wol && `Leer en jw.org: ${wol}`, fuentes.length && `Fuentes: ${fuentes.join('; ')}.`, `Vista en biblical-atlas: ${location.href}`,
+    pasaje && `Pasaje en biblical-atlas: ${pasaje.url}`].filter(Boolean).join('\n');
 }
 function accionesFicha() {
   const cuerpo = $('#panel-cuerpo');
