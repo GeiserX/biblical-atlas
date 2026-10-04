@@ -897,12 +897,19 @@ def capas_idioma(datos, leg=None):
     La capa tiene las claves y la forma de data.json: `lugares`, `personas` y `eventos` (y los demás tipos) por id, cada
     ficha con solo sus textos en ese idioma; `fuentes` por id con `titulo`, `obra` y `url`; `libros` por slug. Una lista
     de la ficha (nombres, enlaces, relaciones, historial) conserva su largo y su orden de data.json, con null donde no hay
-    texto: el sitio funde la capa sobre data.json elemento a elemento. Solo entran las fichas cuyo primer nivel lleva el
+    texto: el sitio funde la capa sobre data.json elemento a elemento. Los cargos de una persona van en `offices`, como
+    en data.json, con los textos de sus relaciones holds_office y de sus periodos. Solo entran las fichas cuyo primer nivel lleva el
     idioma; validate.py ya ha comprobado que están enteras."""
     leg = leg or Legacy(load_map())
+    voc = Vocabulary(datos.get("vocabulary"))
+    cargos = compile_offices(datos, voc, leg)
     out = {}
     for lang in languages.LANGUAGES:
         capa = {"formato": FORMATO, "idioma": lang}
+        # Los cargos (`offices` de data.json) salen de las relaciones holds_office y de los periodos con persona: se
+        # compilan otra vez con los textos de este idioma en su sitio, en el mismo orden, y la capa lleva lo que cambia.
+        cargos_lang = compile_offices({"people": languages.localized(datos["people"], lang),
+                                       "periods": languages.localized(datos["periods"], lang)}, voc, leg)
         for t in TYPES:
             raiz = leg.roots[t]
             fichas = {}
@@ -914,6 +921,10 @@ def capas_idioma(datos, leg=None):
                     # data.json no lleva en `relaciones` las de holds_office (van en `offices`): mismo largo y orden.
                     o["relations"] = [r for r in o.get("relations") or [] if isinstance(r, dict) and r.get("type") != "holds_office"]
                 fichas[o["id"]] = leg.translate(languages.layer(o, lang), raiz, t)
+                if t == "people":
+                    of = languages.changed_texts(cargos.get(o["id"]), cargos_lang.get(o["id"]))
+                    if of:
+                        fichas[o["id"]]["offices"] = of
             capa[raiz] = fichas
         capa["fuentes"] = {}
         for fid in sorted(datos["sources"]):

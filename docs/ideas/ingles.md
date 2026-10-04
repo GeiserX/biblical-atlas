@@ -190,7 +190,7 @@ Un lugar, una persona y un suceso llevan su inglés de punta a punta: Filipos, L
 | `site/i18n/en.js` | 65 cadenas: las de las tres fichas. |
 | [`scripts/translation_size.py`](../../scripts/translation_size.py) | Las cifras de arriba. |
 
-Las pruebas son [`scripts/test_validate.py`](../../scripts/test_validate.py) (12 casos de `Idiomas`), [`scripts/test_build.py`](../../scripts/test_build.py) (4 casos de `CapaIngles`) y [`tests/site/language.test.mjs`](../../tests/site/language.test.mjs) (7 casos en un navegador de verdad).
+Las pruebas son [`scripts/test_validate.py`](../../scripts/test_validate.py) (12 casos de `Idiomas`), [`scripts/test_build.py`](../../scripts/test_build.py) (5 casos de `CapaIngles`) y [`tests/site/language.test.mjs`](../../tests/site/language.test.mjs) (7 casos en un navegador de verdad).
 
 ## Trampas
 
@@ -200,7 +200,7 @@ Las pruebas son [`scripts/test_validate.py`](../../scripts/test_validate.py) (12
 - **Algunos títulos de jw.org llevan raya**, como el de las notas de estudio de Hechos 16 entre «Acts Study Notes» y «Chapter 16». Nosotros no la usamos y escribimos una coma.
 - **Una fuente sin página inglesa** (el número antiguo de La Atalaya de la muestra) deja sin traducir la ficha que la cita. Falta decidir si basta con su página española, marcada como tal.
 - **Los homónimos se comparan por idioma.** Dos nombres iguales en español pueden no serlo en inglés, y al revés; `clave_nombre` de `validate.py` ya lo anticipa.
-- **Las listas se funden por posición.** La capa conserva el largo y el orden de cada lista de `data.json`. Un elemento o una clave que los datos aún no tienen, porque su trozo no ha llegado, no se añade: espera a la llamada siguiente. Las relaciones `holds_office`, que `data.json` no lleva en `relaciones`, tampoco van en la capa.
+- **Las listas se funden por posición.** La capa conserva el largo y el orden de cada lista de `data.json`. Un elemento o una clave que los datos aún no tienen, porque su trozo no ha llegado, no se añade: espera a la llamada siguiente. Las relaciones `holds_office`, que `data.json` no lleva en `relaciones`, tampoco van ahí en la capa: sus textos van en `offices`, como en `data.json`, que `build.py` compila otra vez con el inglés en su sitio y en el mismo orden.
 - **Cambiar de idioma recarga la página** y vuelve a cargar `data.json`. La vista no se pierde porque está entera en la dirección. El cambio es una entrada más del historial, así que Atrás devuelve el idioma de antes.
 - **La detección espera al lanzamiento.** Encenderla hoy daría a cada navegador inglés un sitio casi entero en español.
 

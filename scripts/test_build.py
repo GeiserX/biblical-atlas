@@ -388,6 +388,7 @@ class CapaIngles(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         datos, _ = build.cargar(HERE.parent / "data")
+        cls.datos = datos
         cls.salida, _, cls.errores = build.componer(datos, "2026-10-03")
         cls.capa = build.capas_idioma(datos)["en"]
 
@@ -418,6 +419,20 @@ class CapaIngles(unittest.TestCase):
         self.assertNotIn("openbible-geo", F)                           # no cambia con el idioma
         self.assertNotIn("mateo-1", F)                                 # su libro aún no tiene el inglés
         self.assertEqual(self.capa["libros"]["hechos"]["abr"], "Ac")
+
+    def test_los_cargos_llevan_su_ingles(self):
+        # Una relación holds_office no va en `relaciones` sino en `offices`: su inglés va ahí, en el mismo orden.
+        import copy
+        datos = copy.deepcopy(self.datos)
+        lidia = next(p for p in datos["people"] if p["id"] == "lidia")
+        lidia["relations"].append({"type": "holds_office", "office": "rey", "sources": ["it-lidia"],
+                                   "reason": "Razón del cargo.", "en": {"reason": "Reason for the office."},
+                                   "date": {"from": 49, "to": 49, "text": "c. 50 e.c."}})
+        salida, _, _ = build.componer(datos, "2026-10-03")
+        capa = build.capas_idioma(datos)["en"]
+        self.assertEqual(len(capa["personas"]["lidia"]["offices"]), len(salida["personas"]["lidia"]["offices"]))
+        self.assertEqual(capa["personas"]["lidia"]["offices"][-1], {"reason": "Reason for the office.", "date": {"texto": "c. 50 C.E."}})
+        self.assertNotIn("offices", self.capa["personas"]["lidia"])   # sin cargos, nada que añadir
 
     def test_layer_y_strip(self):
         import languages

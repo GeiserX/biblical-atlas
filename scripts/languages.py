@@ -137,6 +137,36 @@ def layer(obj, lang, parent=None):
     return None
 
 
+def localized(obj, lang, parent=None):
+    """obj con los textos de `lang` en el sitio de los españoles y sin bloques: lo que lee una compilación que deriva
+    textos (los cargos de una persona salen de sus relaciones y de los periodos) para escribirlos en ese idioma."""
+    if isinstance(obj, dict):
+        out = {k: localized(v, lang, k) for k, v in obj.items() if k not in LANGUAGES}
+        block = obj.get(lang)
+        if isinstance(block, dict):
+            out.update({k: v for k, v in block.items() if k not in STAMP_KEYS})
+        if parent in DATE_KEYS and not (isinstance(block, dict) and "text" in block):
+            w = written_date(obj.get("text"), lang)
+            if w:
+                out["text"] = w
+        return out
+    if isinstance(obj, list):
+        return [localized(v, lang, parent) for v in obj]
+    return obj
+
+
+def changed_texts(base, other):
+    """Lo que cambia de base a other, solo en textos: el mismo árbol, una lista con su largo y None donde no cambia
+    nada. None si no cambia ningún texto."""
+    if isinstance(base, dict) and isinstance(other, dict):
+        out = {k: d for k in other if (d := changed_texts(base.get(k), other[k])) is not None}
+        return out or None
+    if isinstance(base, list) and isinstance(other, list) and len(base) == len(other):
+        out = [changed_texts(a, b) for a, b in zip(base, other)]
+        return out if any(x is not None for x in out) else None
+    return other if isinstance(other, str) and other != base else None
+
+
 def book_slug(books, lang):
     """{slug en español: slug en `lang`} de los libros que ya lo tienen."""
     return {b["slug"]: b[lang]["slug"] for b in books if isinstance(b.get(lang), dict) and b[lang].get("slug")}
