@@ -6,6 +6,7 @@
 //    strings of site/i18n/en.js, Acts with its English abbreviation and its link to the English study Bible at the same
 //    verses, and the sources with their English pages. The view in the hash is kept.
 //  - A record with no English yet keeps its Spanish text and says so.
+//  - apply() can run again after a chunk of the data is merged: only what the data has gets its English.
 //  - The switch (bar button, and the Estudio menu on a phone) stores the choice and opens the same view in Spanish;
 //    the stored choice holds on the next visit; «?lang=» in a shared link wins over it.
 //  - Once launched, the browser's language decides: en-GB is English, es-MX is Spanish, fr-FR gets English.
@@ -154,6 +155,26 @@ test('?lang=en shows the English cards of Filipos, Lidia and her baptism', async
   // Searching in English finds the English title.
   await p.fill('#q', 'Lydia and her household');
   await p.waitForFunction(() => document.querySelector('#resultados')?.textContent.includes('Lydia and her household'));
+  assert.deepEqual(errors, []);
+  await p.context().close();
+});
+
+test('apply() runs again after a chunk: a text that arrives later gets its English, one still missing is not added', async () => {
+  const p = await open('?lang=en', 'sel=lugar:tiatira&t=50.5');
+  const r = await p.evaluate(async () => {
+    const { BE } = window.__be;
+    const f = BE.D.lugares.filipos;
+    // As a core chunk without the detail: no summary, no names. apply() must not invent them.
+    const english = f.resumen;
+    delete f.resumen;
+    await BE.idioma.apply(BE.D);
+    const absent = !('resumen' in f);
+    // The detail chunk arrives with the Spanish summary (the loader merges it), then calls apply() again.
+    f.resumen = 'Colonia romana y ciudad principal de su distrito de Macedonia.';
+    await BE.idioma.apply(BE.D);
+    return { absent, again: f.resumen === english, name: f.nombre };
+  });
+  assert.deepEqual(r, { absent: true, again: true, name: 'Philippi' });
   assert.deepEqual(errors, []);
   await p.context().close();
 });

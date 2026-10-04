@@ -9,7 +9,8 @@
    Two layers of text, kept apart:
    - Data: build.py writes site/data.<lang>.json, the texts of each translated record with the keys of data.json. apply()
      merges it over BE.D before anything reads the data (base.js awaits it). A record without its translation keeps its
-     Spanish text and its card says so.
+     Spanish text and its card says so. apply() only overwrites texts the data already has and can run again: with the
+     data in chunks, the loader calls it after each chunk it merges, so a text that arrives later gets its English too.
    - Interface: site/i18n/<lang>.js holds the strings of the site, keyed by their Spanish text. BE.t('Suceso') gives
      «Event» in English and the same Spanish text when there is no translation, so wrapping a string never breaks a page.
 
@@ -81,19 +82,21 @@ async function loadLayer(lang) {
   if (!r.ok) throw new Error(`data.${lang}.json answered ${r.status}`);
   return r.json();
 }
-/** Merges `over` into `base` in place: objects key by key, lists element by element (null keeps the element). */
+/** Merges `over` into `base` in place: objects key by key, lists element by element (null keeps the element). Only what
+    `base` already has is overwritten: a text whose chunk has not arrived yet waits for the next apply(). */
 function merge(base, over) {
   if (Array.isArray(over) && Array.isArray(base)) {
     over.forEach((x, i) => {
-      if (x == null || i >= base.length) return;
-      if (x && typeof x === 'object' && base[i] && typeof base[i] === 'object') merge(base[i], x);
+      if (x == null || base[i] == null) return;
+      if (x && typeof x === 'object' && typeof base[i] === 'object') merge(base[i], x);
       else base[i] = x;
     });
     return base;
   }
   for (const [k, x] of Object.entries(over)) {
-    if (x && typeof x === 'object' && base[k] && typeof base[k] === 'object') merge(base[k], x);
-    else if (x != null) base[k] = x;
+    if (x == null || base[k] == null) continue;
+    if (x && typeof x === 'object' && typeof base[k] === 'object') merge(base[k], x);
+    else base[k] = x;
   }
   return base;
 }
@@ -101,12 +104,17 @@ function merge(base, over) {
 const BY_ID = ['lugares', 'personas'];
 const LISTS = ['eventos', 'viajes', 'cartas', 'periodos', 'hallazgos', 'recorridos'];
 let books = {};   // slug -> { nombre, abr, slug } in the reader's language
+let layerP = null;   // the layer and the catalog, downloaded once
+let painted = false;
 
-/** Puts the reader's language over the data. Called by base.js once data.json is loaded, before anything reads it. */
+/** Puts the reader's language over the data. Called by base.js once data.json is loaded, before anything reads it, and
+    again by a loader of chunks after each chunk it merges into BE.D: a second call downloads nothing and changes only
+    what the new chunk brought. */
 async function apply(D) {
   if (current === BASE) return;
   try {
-    const [layer] = await Promise.all([loadLayer(current), loadScript(`i18n/${current}.js`)]);
+    layerP ||= Promise.all([loadLayer(current), loadScript(`i18n/${current}.js`)]).then(([layer]) => layer);
+    const layer = await layerP;
     strings = window.BE_I18N?.[current] || {};
     for (const k of BY_ID) {
       for (const [id, over] of Object.entries(layer[k] || {})) if (D[k]?.[id]) { merge(D[k][id], over); D[k][id]._lang = current; }
@@ -117,10 +125,13 @@ async function apply(D) {
     }
     for (const [id, over] of Object.entries(layer.fuentes || {})) if (D.fuentes?.[id]) merge(D.fuentes[id], over);
     books = layer.libros || {};
+    if (painted) return;
+    painted = true;
     translateDisplay();
     markUntranslated();
   } catch (err) {
-    // Without the layer the site stays usable in Spanish and says why.
+    // Without the layer the site stays usable in Spanish and says why, once.
+    if (BE.idioma.failure) return;
     BE.idioma.failure = err;
     setTimeout(() => BE.avisar?.(`English texts could not be loaded (${err.message}); showing Spanish.`, 6000), 0);
   }
