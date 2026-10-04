@@ -154,7 +154,7 @@ La captura grande enseña lo que queda: la línea de tiempo, la leyenda, el busc
 
 ### La publicación
 
-[`pages.yml`](../../.github/workflows/pages.yml) compila una vez con el plugin y comprueba también `site/docs/en/index.html`. [`docs.yml`](../../.github/workflows/docs.yml) compila en modo estricto igual, así que un enlace roto en cualquiera de los dos idiomas tira la compilación.
+[`pages.yml`](../../.github/workflows/pages.yml) compila una vez con el plugin y comprueba también `site/docs/en/index.html`. Ya exige hoy `site/data.en.json` y `site/data.en.js`: una compilación que dejara de escribir la capa no se publica. [`docs.yml`](../../.github/workflows/docs.yml) compila en modo estricto igual, así que un enlace roto en cualquiera de los dos idiomas tira la compilación.
 
 ## Pregunta 4. Las tandas y su revisión
 
