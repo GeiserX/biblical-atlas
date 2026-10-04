@@ -137,7 +137,7 @@ Cada objeto con textos lleva su propio bloque: la ficha, cada nombre, cada enlac
 
 <img src="img/ingles/movil-menu-en.png" alt="Teléfono: el menú Estudio con «Language» y «Español»" width="300">
 
-La captura grande enseña lo que queda: la línea de tiempo, la leyenda, el buscador, los verbos de las relaciones («vivió aquí»), las eras («50 e.c.») y las páginas `acerca.html` y `calendario.html`. Los verbos salen del vocabulario, que necesita su `en`; las eras, del formateador de fechas de `base.js`.
+La captura grande enseña lo que queda: la línea de tiempo, la leyenda, el buscador, los verbos de las relaciones («vivió aquí»), las eras («50 e.c.», también en el título «Philippi in 50 e.c.»), las acciones bajo la ficha («Ver en el grafo», «Relacionar con…», «Citar») y las páginas `acerca.html` y `calendario.html`. Las acciones de la ficha de un lugar las pinta `buscar.js` sin `BE.t`; se envuelven cuando entre el carril que hoy toca ese fichero. Los verbos salen del vocabulario, que necesita su `en`; las eras, del formateador de fechas de `base.js`.
 
 ## Pregunta 3. Documentos, README e imágenes
 
