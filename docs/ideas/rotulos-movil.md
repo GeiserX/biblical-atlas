@@ -15,6 +15,8 @@ En el móvil (430 × 932) las paradas que quedan cerca de los márgenes laterale
 
 En un recorrido la misma parada cuenta una vez por cada paso en que se encuadra, así que «todas las paradas» suma más que el número de lugares.
 
+Las capturas del móvil son la franja de arriba de la pantalla de 430 × 932, recortada a 430 × 440 px: la cabecera, el mapa y el borde de arriba de la hoja. El resto de la hoja no cambia con este diseño, así que no sale.
+
 ## Lo que había
 
 En `main` (3343b752), con nombre sobre el total:
