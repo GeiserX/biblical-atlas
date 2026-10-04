@@ -190,7 +190,7 @@ Un lugar, una persona y un suceso llevan su inglés de punta a punta: Filipos, L
 | `site/i18n/en.js` | 65 cadenas: las de las tres fichas. |
 | [`scripts/translation_size.py`](../../scripts/translation_size.py) | Las cifras de arriba. |
 
-Las pruebas son [`scripts/test_validate.py`](../../scripts/test_validate.py) (10 casos de `Idiomas`), [`scripts/test_build.py`](../../scripts/test_build.py) (4 casos de `CapaIngles`) y [`tests/site/language.test.mjs`](../../tests/site/language.test.mjs) (7 casos en un navegador de verdad).
+Las pruebas son [`scripts/test_validate.py`](../../scripts/test_validate.py) (12 casos de `Idiomas`), [`scripts/test_build.py`](../../scripts/test_build.py) (4 casos de `CapaIngles`) y [`tests/site/language.test.mjs`](../../tests/site/language.test.mjs) (7 casos en un navegador de verdad).
 
 ## Trampas
 

@@ -1075,6 +1075,25 @@ class Idiomas(unittest.TestCase):
         o["links"][0]["en"]["url"] = "https://www.jw.org/es/biblioteca/libros/P/X/"
         self.assertIn("no es una página de jw.org en ese idioma", self.errores(o)[0][0])
 
+    def test_una_url_de_wol_solo_vale_si_la_espanola_tambien_es_de_wol(self):
+        o = self.lugar()
+        o["links"][0]["en"]["url"] = "https://wol.jw.org/en/wol/d/r1/lp-e/1200003467"
+        e, _ = self.errores(o)
+        self.assertEqual(len(e), 1)
+        self.assertIn("es de wol.jw.org y la española es de www.jw.org", e[0])
+        # Una nota de estudio vive en wol.jw.org en los dos idiomas: vale.
+        o["links"][0]["url"] = "https://wol.jw.org/es/wol/d/r4/lp-s/1200003467"
+        self.assertEqual(self.errores(o)[0], [])
+
+    def test_una_abreviatura_inglesa_repetida_entre_libros(self):
+        self.LIBROS = [self.LIBROS[0], dict(self.LIBROS[1], en={"name": "Romans", "abbr": "Ro", "slug": "romans",
+                                                                 "checked_on": "2026-10-03", "status": "verified"})]
+        self.assertEqual(self.errores(self.lugar())[0], [])
+        self.LIBROS[1]["en"]["abbr"] = "Ac"
+        e, _ = self.errores(self.lugar())
+        self.assertEqual(len(e), 1)
+        self.assertIn("la abreviatura 'Ac' en 'en' ya es de hechos", e[0])
+
     def test_una_lista_con_otro_largo(self):
         o = self.lugar(not_claimed=["Uno.", "Dos."])
         o["en"]["not_claimed"] = ["One."]
