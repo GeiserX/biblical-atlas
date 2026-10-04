@@ -28,6 +28,17 @@ python3 scripts/videos/test_videos.py
 python3 scripts/bible_coverage.py
 ```
 
+Las pruebas del sitio (`tests/site/`) abren el sitio en un Chromium de verdad. En cada PR y en cada push a `main` las corre `sitio.yml` en los runners de GitHub, repartidas en seis trabajos; si una falla, sus trazas de Playwright quedan en el artefacto `trazas-<n>` del trabajo que falló (n, su número en la matriz), y se abren con `npx playwright-core show-trace <fichero>.zip`. Llevan capturas de pantalla, porque el mapa se pinta en un canvas que las instantáneas del DOM no guardan: las de `timeline-marks` pueden pasar de 1 GB. Para correrlas en local, tras `build.py`:
+
+```bash
+npm install --prefix /tmp/pw playwright-core@1.63.0
+node /tmp/pw/node_modules/playwright-core/cli.js install --only-shell chromium
+export PLAYWRIGHT_CORE=/tmp/pw/node_modules/playwright-core PLAYWRIGHT_MODULE_DIR=/tmp/pw/node_modules
+node --test --test-concurrency=1 tests/site/notes.test.mjs   # un fichero; tests/site/*.test.mjs, todos
+```
+
+Un fichero detrás de otro: cada uno abre su navegador. Todas juntas tardan unos 50 minutos en una sola máquina. `BE_TIME_SCALE=<n>` multiplica los presupuestos de tiempo de `timeline-marks` en una máquina más lenta que un Mac mini.
+
 `build.py --out DIR` escribe en otra carpeta sin tocar `site/`, `dist/` ni `docs/`; `build.py --data DIR` y `validate.py --data DIR` leen otra copia de `data/`. El sitio carga esa copia con `index.html?datos=_local/<nombre>/data.json`. Cada script está explicado en [`scripts/README.md`](https://github.com/GeiserX/biblical-atlas/blob/main/scripts/README.md).
 
 ## Los trozos de los datos
@@ -69,10 +80,10 @@ Lo que más ayuda es corregir o ampliar datos con su fuente. Lo segundo, mejorar
 3. Resúmenes cortos, con tus palabras: la validación rechaza más de 40 palabras y la revisión comprueba que no hay ocho palabras seguidas de la fuente.
 4. Un lugar sin ubicación segura lleva `candidates`, no un punto. Una fecha calculada lleva `type: derived`, la cuenta en `note` y `status: pending`.
 5. Si añades un lugar o una persona, añade también cómo se nombra en los vídeos (`scripts/videos/place_names/`, `scripts/videos/people_names/`).
-6. Antes del PR: `build.py`, `validate.py --links` y las pruebas de arriba. En cada PR el CI compila, valida el esquema y construye esta documentación en modo estricto; los enlaces se comprueban en `main` y cada semana.
+6. Antes del PR: `build.py`, `validate.py --links` y las pruebas de arriba. En cada PR el CI compila, valida el esquema, corre las pruebas del sitio en un navegador y construye esta documentación en modo estricto; los enlaces se comprueban en `main` y cada semana.
 
 Lo que no entra: texto, mapas o imágenes copiados de jw.org; subtítulos de vídeos; datos de otras confesiones; fechas sin fuente; nombres de personas reales, direcciones o rutas de máquinas. Los commits siguen Conventional Commits y explican el porqué. Antes de proponer algo que contradiga lo decidido, lee [Decisiones](decisiones.md); lo que queda por hacer está en la [Hoja de ruta](hoja-de-ruta.md).
 
 ## Publicar
 
-`pages.yml` corre en cada push a `main`: instala las dependencias, compila los datos, construye la documentación con `mkdocs build --strict`, comprueba que cada fichero de `site/` sigue en su sitio y que `site/docs/index.html` existe, y sube `site/` a GitHub Pages. `validar.yml` corre en cada PR, en `main` y cada lunes (con `--links` y `review.py --fail`). `docs.yml` corre en cada PR y construye la documentación en modo estricto.
+`pages.yml` corre en cada push a `main`: instala las dependencias, compila los datos, construye la documentación con `mkdocs build --strict`, comprueba que cada fichero de `site/` sigue en su sitio y que `site/docs/index.html` existe, y sube `site/` a GitHub Pages. `validar.yml` corre en cada PR, en `main` y cada lunes (con `--links` y `review.py --fail`). `docs.yml` corre en cada PR y construye la documentación en modo estricto. `sitio.yml` corre en cada PR y en `main` las pruebas de `tests/site/` en Chromium.

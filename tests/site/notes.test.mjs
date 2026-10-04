@@ -78,22 +78,38 @@ const url = (hash = '') => `${base}index.html${DATA ? `?datos=${DATA}` : ''}${ha
 async function newContext(opts = DESKTOP) {
   const context = await browser.newContext({ deviceScaleFactor: 1, acceptDownloads: true, ...opts });
   context.setDefaultTimeout(WAIT);
+  // A navigation is a page starting, not a control appearing: it gets the same 60 s as ready() below. On a loaded box a
+  // reload took more than 5 s just to commit, while the old page ran its pagehide save and its last frames.
+  context.setDefaultNavigationTimeout(60000);
   return context;
 }
+/** Waits until the page has finished starting: the data is in, the map has loaded and stands still, and nothing waits
+    to be painted (BE.sucio). Until then the main thread spends seconds on the map and the first paints on a loaded
+    machine (SwiftShader draws on the CPU), and a click or a tap sent in that time waits behind them until its own 5 s
+    timeout runs out. The map's load handler paints and may frame Paul a couple of frames later, so the state has to
+    hold for three frames in a row. The 60 s is only how long starting may take before the test gives up: on a box
+    running other work, the 1440 page took 17 s to reach this state at a load of 70. Every navigation before it waits
+    only for the new page to be committed: the «load» event, which waits for every script, font and map file, is not
+    what these tests need, and under load it came after the context's 5 s. When the data comes in chunks (BE.chunks),
+    the cards and their pencils need the detail too, so at least one chunk must have arrived. */
 async function ready(page) {
-  // The cards and their pencils come with the detail of the data (site/js/data-chunks.js).
-  await page.waitForFunction(() => window.BE?.D && window.__be && (!window.BE.chunks || window.BE.chunks.loaded.length), null, { timeout: 30000 });
-  await page.waitForTimeout(600);
+  await page.waitForFunction(() => {
+    const m = window.__be?.map, BE = window.BE;
+    const quiet = !!(BE?.D && BE.sucio && m?.loaded() && !m.isMoving() && !Object.values(BE.sucio).some(Boolean))
+      && (!BE.chunks || BE.chunks.loaded.length > 0);
+    window.__quietFrames = quiet ? (window.__quietFrames || 0) + 1 : 0;
+    return window.__quietFrames >= 3;
+  }, null, { timeout: 60000, polling: 'raf' });
 }
 async function openSite(context, hash = '') {
   const page = await context.newPage();
   page.pageErrors = [];
   page.on('pageerror', (e) => page.pageErrors.push(e.message));
-  await page.goto(url(hash));
+  await page.goto(url(hash), { waitUntil: 'commit' });
   await ready(page);
   return page;
 }
-async function reload(page) { await page.reload(); await ready(page); }
+async function reload(page) { await page.reload({ waitUntil: 'commit' }); await ready(page); }
 /** Opens the editor with the pencil, writes the text as a person types it and closes with «Listo». */
 async function writeNote(page, pencil, text) {
   await page.locator(pencil).first().click();
@@ -310,7 +326,7 @@ test('the shared link, the address bar, the console and every request carry no t
     const page = await openSite(context, 'sel=persona:pablo');
     page.on('console', (m) => logs.push(m.text()));
     await writeNote(page, '#panel-cuerpo .note-pencil', `Privado ${secret} sobre Pablo`);
-    await page.goto(url('leer=hch-16'));
+    await page.goto(url('leer=hch-16'), { waitUntil: 'commit' });
     await ready(page);
     await writeNote(page, '#vista-lectura .note-pencil', `Privado ${secret} sobre Hechos 16`);
     await page.waitForTimeout(700);   // the address is written 250 ms after a change
@@ -333,7 +349,7 @@ test('export, clear the storage and import restores every note', { timeout: 1200
     await writeNote(page, '#panel-cuerpo .note-pencil', notes[0]);
     await page.evaluate((id) => window.BE.seleccionar({ tipo: 'lugar', id }), place);
     await writeNote(page, '#panel-cuerpo .note-pencil', notes[1]);
-    await page.goto(url('leer=hch-16'));
+    await page.goto(url('leer=hch-16'), { waitUntil: 'commit' });
     await ready(page);
     await writeNote(page, '#vista-lectura .note-pencil', notes[2]);
 
@@ -586,7 +602,7 @@ test('every one of the 11 kinds of card keys its pencil by its own sel, and ever
       return ['hch-16', 'hch-17', BE.idPasaje(other, 1)].map((id) => { const p = BE.pasajeDeId(id); return [id, `chapter:${p.libro.num}:${p.cap}`]; });
     });
     for (const [id, expected] of chapters) {
-      await page.goto(url(`leer=${id}`));
+      await page.goto(url(`leer=${id}`), { waitUntil: 'commit' });
       await ready(page);
       assert.equal(await page.locator('#vista-lectura .note-pencil').getAttribute('data-note-key').catch(() => null), expected, `no pencil, or another key, in the reading of ${id}`);
       await page.evaluate((x) => window.BE.seleccionar({ tipo: 'pasaje', id: x }), id);
@@ -697,7 +713,7 @@ test('layout: with «Letra grande» the crumbs never run under the pencil, and t
       }
       if (opts === DESKTOP) {
         await page.evaluate(() => document.documentElement.classList.remove('be-letra-grande'));
-        await page.goto(url('leer=hch-16'));
+        await page.goto(url('leer=hch-16'), { waitUntil: 'commit' });
         await ready(page);
         const h = await page.locator('#vista-lectura .lectura-controles').evaluate((e) => e.getBoundingClientRect().height);
         assert.ok(h < 24, `the pencil makes the row of the reading ${h} px tall`);

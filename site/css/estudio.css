@@ -120,6 +120,9 @@ span.etiqueta-deducido, span.etiqueta-incierto, span.etiqueta-texto { border-rad
 .sector-punto--cartas { border-radius: var(--node-shape-texto); }
 .sector-punto--hechos { border-radius: 1px; transform: rotate(45deg) scale(.8); }
 .grafo-oculto { font-size: var(--fs-xs); }
+/* Vacía no ocupa sitio: si el interruptor llena la fila, una nota vacía bajaba sola a otra fila y la separación de
+   filas (16 px en táctil) se comía el alto del grafo en el móvil. aria-describedby la sigue leyendo oculta. */
+.grafo-oculto:empty { display: none; }
 .grafo-lienzo { flex: none; margin: 0 8px; }
 .grafo-lienzo svg { pointer-events: none; }
 .arista line { stroke: var(--ink-4); stroke-width: 1.6; }
@@ -862,3 +865,10 @@ details.grafo-leyenda[open] { padding-bottom: 8px; }
   .gnodo.gnodo--suceso .gnodo-verbo { display: none; }
   .gnodo:not(.gnodo--suceso):not(.gnodo--grupo) .be-gnode__meta:has(.gnodo-verbo) { display: none; }
 }
+
+/* ---------- Enlace a un pasaje (#p=Hch16:1, js/passage-link.js) ---------- */
+/* Lo que cita el pasaje, bajo la ficha que abrió: la fila abierta no es un botón y se distingue por su borde. */
+.pasaje-enlace .fila-actual { box-shadow: inset 3px 0 0 var(--ink); padding-left: 10px; }
+.pasaje-enlace .fila-actual > span:first-child { display: flex; flex-direction: column; min-width: 0; }
+.pasaje-enlace__mas summary { cursor: pointer; font-size: var(--fs-sm); color: var(--ink-2); padding: 8px 0; min-height: 44px; display: flex; align-items: center; }
+.pasaje-enlace code { font-size: var(--fs-xs); }

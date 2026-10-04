@@ -72,7 +72,21 @@ https://biblical-atlas.geiser.cloud/#t=50.3000&v=40&sel=carta:1-tesalonicenses&m
 | `sel` | Lo seleccionado: `lugar:<id>`, `persona:<id>`, `carta:<id>`, `viaje:<id>`, `evento:<id>`, `periodo:<id>`, `hallazgo:<id>`, `recorrido:<id>`, `libro:<slug>` o `pasaje:<libro>-<capítulo>` (`pasaje:hch-16`). |
 | `mapa` | `antiguo`, `actual` o `cortina`. |
 
-Los demás parámetros (capas apagadas, carriles fijados, el grafo, la lectura, la parada de un recorrido, la velocidad) solo aparecen cuando no valen lo de siempre. La lista entera está en [`site/README.md`](https://github.com/GeiserX/biblical-atlas/blob/main/site/README.md#dirección-de-la-página).
+Un enlace a un pasaje (`p`) tiene su apartado, más abajo. Los demás parámetros (capas apagadas, carriles fijados, el grafo, la lectura, la parada de un recorrido, la velocidad) solo aparecen cuando no valen lo de siempre. La lista entera está en [`site/README.md`](https://github.com/GeiserX/biblical-atlas/blob/main/site/README.md#dirección-de-la-página).
+
+## Enlace a un pasaje
+
+Un versículo de una nota de estudio abre el atlas en su año y su lugar: `#p=` y el pasaje.
+
+```text
+https://biblical-atlas.geiser.cloud/#p=Hch16:1
+https://biblical-atlas.geiser.cloud/#p=2Re17:6
+https://biblical-atlas.geiser.cloud/#p=Génesis12:1-3
+```
+
+El libro va con su abreviatura de la Traducción del Nuevo Mundo o con su nombre, con tilde o sin ella; después, el capítulo y, si hace falta, el versículo o un tramo (`Hch16:1-5`). El atlas busca lo que cita ese pasaje, primero los sucesos y después las paradas de los viajes, las cartas y los viajes, y abre lo primero por fecha: la línea de tiempo va a su fecha, el mapa encuadra su lugar y se abre su ficha. Si lo citan varios, la ficha los lista para pasar de uno a otro. Si no lo cita nada, lo dice y ofrece la ficha del capítulo cuando tiene datos.
+
+En la ficha de un suceso, una parada, una carta, un viaje o un capítulo, «Enlace al pasaje» copia esa dirección.
 
 ## Teclado
 

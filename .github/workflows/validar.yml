@@ -30,11 +30,12 @@ jobs:
       - run: python3 scripts/bible_coverage.py
       # La portada: sus reglas y sus destinos escritos a mano contra los datos recién compilados. Los enlaces a jw.org:
       # el capítulo de cada fuente, el ancla de cada cita y cada cita de los datos dentro de su libro. Los relatos atados
-      # con un plazo, juntos en la línea de tiempo. Sin navegador.
+      # con un plazo, juntos en la línea de tiempo. Los enlaces a un pasaje: sus reglas y cada referencia de los datos.
+      # Sin navegador.
       - run: >-
           BE_DATA_FILE=site/data.json node --test tests/site/portada-reglas.test.mjs tests/site/portada-destinos.test.mjs
           tests/site/capitulo-fuente.test.mjs tests/site/enlaces-versiculos.test.mjs tests/site/citas-datos.test.mjs
-          tests/site/relato-cadenas.test.mjs
+          tests/site/relato-cadenas.test.mjs tests/site/enlaces-pasaje-reglas.test.mjs
       # Las reglas de «Atrás» y «Adelante»: el número y el nombre de cada entrada. Sin navegador.
       - run: node --test tests/site/visit-history.test.mjs
       # Los textos para quien lee dicen que cada dato enlaza a su fuente, y nada más sobre su origen.

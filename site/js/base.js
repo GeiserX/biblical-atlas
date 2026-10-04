@@ -330,7 +330,8 @@ function aplicarHash(inicial) {
   if (wv && !(wv[0] <= E.t && E.t < wv[1])) E.t = BE.momentoEvento(ev);
   if (h.mapa) BE.ponerMapa(h.mapa, false);
   for (const x of parametros) x.leer(h.p.get(x.nombre), inicial);
-  const s = h.sel ?? null;
+  // Un enlace a un pasaje sin selección (#p=Hch16:1, passage-link.js) abre lo primero que lo cita.
+  const s = h.sel ?? BE.selDePasaje?.() ?? null;
   const otraSel = inicial || selTexto(s) !== selTexto(E.sel);
   // Al arrancar, la selección la encuadra encuadreDeInicio, con el mapa ya a su tamaño: si no, un enlace compartido la
   // dejaba en el borde de abajo del mapa en vez de donde la pone un clic en la línea.
