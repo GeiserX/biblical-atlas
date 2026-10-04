@@ -44,9 +44,10 @@ relations:
   inferred: true
   sources:
   - it-herodes
-  reason: Perspicacia «Herodes», núm. 4, lo presenta como hijo de Herodes Agripa I y de Cipros. La Biblia no dice de quién
-    era hijo.
-  checked_on: '2026-09-29'
+  - hch-25
+  reason: Perspicacia «Herodes», núm. 4, y la nota de Hch 25:13 lo hacen hijo de Herodes Agripa I y de Cipros. El texto bíblico
+    no dice de quién era hijo.
+  checked_on: '2026-10-03'
   status: verified
 - type: kin
   person: herodes-el-grande
@@ -54,8 +55,9 @@ relations:
   inferred: false
   sources:
   - it-herodes
-  reason: Perspicacia lo llama bisnieto de Herodes el Grande.
-  checked_on: '2026-09-29'
+  - hch-25
+  reason: Perspicacia y la nota de Hch 25:13 lo llaman bisnieto de Herodes el Grande.
+  checked_on: '2026-10-03'
   status: verified
 - type: kin
   person: berenice

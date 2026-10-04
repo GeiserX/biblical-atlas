@@ -113,8 +113,10 @@ relations:
   inferred: true
   sources:
   - it-nadab
-  reason: 'Perspicacia «Nadab», núm. 1: nació en Egipto y salió con Israel en el éxodo.'
-  checked_on: '2026-09-29'
+  - exodo-6
+  reason: 'Perspicacia «Nadab», núm. 1: hijo mayor de Aarón y de Eliseba (Éx 6:23), nació en Egipto y salió con Israel en el
+    éxodo.'
+  checked_on: '2026-10-03'
   status: verified
 - type: died_in
   place: desierto-de-sinai

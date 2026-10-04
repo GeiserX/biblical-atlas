@@ -1,6 +1,7 @@
 # biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
 id: nacimiento-de-jezreel-hijo-de-oseas
 title: Nace Jezreel, hijo de Oseas
+type: birth
 date:
   from: -828
   to: -790
@@ -18,6 +19,8 @@ people:
 - gomer-hija-de-diblaim
 - oseas
 present: []
+roles:
+  jezreel-hijo-de-oseas: born
 passages:
 - Os 1:3-5
 summary: 'Gómer da a Oseas un hijo. Jehová lo llama Jezreel: pronto pedirá cuentas a la casa de Jehú por la sangre de Jezreel,
@@ -33,5 +36,5 @@ links:
 - title: Oseas 1 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/oseas/1/
   type: bible
-checked_on: '2026-09-29'
+checked_on: '2026-10-03'
 status: verified

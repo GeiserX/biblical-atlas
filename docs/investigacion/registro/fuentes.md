@@ -38,6 +38,7 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | 1-cronicas-2 | [1 Crónicas 2](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/1-Cr%C3%B3nicas/2/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | 1-cronicas-20 | [1 Crónicas 20](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/1-Cr%C3%B3nicas/20/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | 1-cronicas-21 | [1 Crónicas 21](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/1-Cr%C3%B3nicas/21/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
+| 1-cronicas-24 | [1 Crónicas 24](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/1-Cr%C3%B3nicas/24/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | 1-cronicas-4 | [1 Crónicas 4](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/1-Cr%C3%B3nicas/4/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | 1-cronicas-5 | [1 Crónicas 5](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/1-Cr%C3%B3nicas/5/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | 1-cronicas-6 | [1 Crónicas 6](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/1-Cr%C3%B3nicas/6/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
@@ -302,6 +303,7 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | esdras-6 | [Esdras 6](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/esdras/6/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | esdras-7 | [Esdras 7](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/esdras/7/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | esdras-8 | [Esdras 8](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/esdras/8/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
+| ester-1 | [Ester 1](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/ester/1/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | ester-2 | [Ester 2](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/ester/2/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | ester-3 | [Ester 3](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/ester/3/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | ester-7 | [Ester 7](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/ester/7/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
@@ -1755,6 +1757,7 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-judea | [Judea](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Judea/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-27 |
 | it-judit | [Judit](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Judit/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-jueces | [Jueces, Libro de](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jueces-Libro-de/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
+| it-jueces-cargo | [Jueces](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jueces/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-03 |
 | it-julia | [Julia](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Julia/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-julio | [Julio](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Julio/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
 | it-junias | [Junias](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Junias/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |

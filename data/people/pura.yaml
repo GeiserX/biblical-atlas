@@ -18,15 +18,15 @@ links:
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/jueces/7/
   type: bible
 relations:
-- type: accompanies
+- type: tie
   person: gedeon
-  caption: ayudante de
+  word: master
   inferred: false
   sources:
   - jueces-7
   - it-pura
   reason: 'Jue 7:10, 11: Jehová lo llama ayudante de Gedeón. Perspicacia «Purá» cree que era su escudero.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-03'
   status: verified
 checked_on: '2026-09-29'
 status: verified

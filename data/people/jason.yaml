@@ -50,11 +50,12 @@ relations:
   status: verified
 - type: kin
   person: pablo
+  word: relative
   inferred: true
   sources:
   - it-jason
   - romanos-16
   reason: Ro 16:21 llama pariente de Pablo a un Jasón. Perspicacia no afirma que sea el de Tesalónica; la palabra puede ser
     paisano, pero su sentido principal es familiar de sangre.
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-03'
   status: pending

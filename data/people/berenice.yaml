@@ -37,8 +37,10 @@ relations:
   inferred: false
   sources:
   - it-berenice
-  reason: Perspicacia la presenta como hija de Herodes Agripa I y Cipros.
-  checked_on: '2026-09-29'
+  - hch-24
+  reason: Perspicacia la presenta como hija de Herodes Agripa I y Cipros; la nota de Hch 24:24 la nombra hermana de Drusila,
+    la hija menor de aquel rey.
+  checked_on: '2026-10-03'
   status: verified
 - type: accompanies
   person: herodes-agripa-ii

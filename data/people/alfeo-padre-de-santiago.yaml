@@ -23,6 +23,19 @@ links:
 - title: Mateo 10 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/mateo/10/
   type: bible
+relations:
+- type: same_as
+  person: clopas
+  certainty: probable
+  inferred: true
+  sources:
+  - it-clopas
+  - it-alfeo
+  - juan-19
+  reason: 'Perspicacia «Clopas» lo da como bastante probable, y la nota de Jn 19:25 recuerda que muchos expertos lo creen:
+    un hombre con dos nombres o dos formas de un nombre arameo.'
+  checked_on: '2026-10-03'
+  status: verified
 checked_on: '2026-09-29'
 status: verified
 distinct_from:

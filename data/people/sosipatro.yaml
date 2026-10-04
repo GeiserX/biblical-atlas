@@ -30,12 +30,13 @@ links:
 relations:
 - type: kin
   person: pablo
+  word: relative
   inferred: false
   sources:
   - it-sosipatro
   - romanos-16
   reason: Ro 16:21 lo cuenta entre los parientes de Pablo que mandan saludos.
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-03'
   status: verified
 - type: accompanies
   person: pablo
@@ -57,16 +58,5 @@ relations:
     según la Tabla de los libros.
   checked_on: '2026-09-29'
   status: verified
-- type: same_as
-  person: sopater
-  inferred: true
-  sources:
-  - it-sosipatro
-  - it-sopater
-  - romanos-16
-  reason: Perspicacia «Sosípatro» cree probable que sea el Sópater que estaba con Pablo en Grecia; «Sópater» dice lo mismo.
-    No lo da por seguro.
-  checked_on: '2026-09-29'
-  status: pending
 checked_on: '2026-09-29'
 status: verified

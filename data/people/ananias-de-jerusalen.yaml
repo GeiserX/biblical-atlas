@@ -29,8 +29,10 @@ relations:
   inferred: false
   sources:
   - it-ananias
-  reason: Perspicacia lo sitúa en la congregación de Jerusalén.
-  checked_on: '2026-09-29'
+  - hechos-5
+  reason: 'Perspicacia «Ananías», núm. 1: era de la congregación de Jerusalén, donde Hch 5:1-11 cuenta lo que hizo con el
+    dinero del campo.'
+  checked_on: '2026-10-03'
   status: verified
 - type: died_in
   place: jerusalen

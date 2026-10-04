@@ -68,12 +68,22 @@ relations:
   status: verified
 - type: accompanies
   person: balac
+  date:
+    from: -1472
+    to: -1472
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 1473 a.e.c.
   inferred: false
   sources:
   - numeros-22
   - it-balac
-  reason: 'Nú 22:5, 6, 39: Balac lo mandó llamar para maldecir a Israel, y Balaam acabó yendo con él.'
-  checked_on: '2026-09-29'
+  - it-agag
+  reason: 'Nú 22:5, 6, 39: Balac lo mandó llamar para maldecir a Israel, y Balaam acabó yendo con él. Hacia 1473 a.e.c., según
+    Perspicacia «Agag», núm. 1.'
+  checked_on: '2026-10-03'
   status: verified
 - type: lived_in
   place: mesopotamia
