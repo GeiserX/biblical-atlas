@@ -81,7 +81,8 @@ async function newContext(opts = DESKTOP) {
   return context;
 }
 async function ready(page) {
-  await page.waitForFunction(() => window.BE?.D && window.__be, null, { timeout: 30000 });
+  // The cards and their pencils come with the detail of the data (site/js/data-chunks.js).
+  await page.waitForFunction(() => window.BE?.D && window.__be && (!window.BE.chunks || window.BE.chunks.loaded.length), null, { timeout: 30000 });
   await page.waitForTimeout(600);
 }
 async function openSite(context, hash = '') {
