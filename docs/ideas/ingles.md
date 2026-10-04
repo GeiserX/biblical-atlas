@@ -118,6 +118,7 @@ Cada objeto con textos lleva su propio bloque: la ficha, cada nombre, cada enlac
 - **La dirección lleva el idioma.** Desde el lanzamiento siempre. Antes, solo cuando la página no está en español, para que el sitio de hoy no cambie de dirección.
 - **El botón.** En la barra de arriba, un botón con el código del otro idioma («EN» o «ES»). En el teléfono no cabe: va en el menú Estudio, bajo «Idioma». Antes del lanzamiento solo lo ve quien ya lee en inglés, para poder volver. Al pulsarlo se guarda la elección y se abre la misma vista en el otro idioma.
 - **Dos capas de texto, separadas.** Los textos de los datos vienen de `data.<lang>.json` y se funden con `data.json` antes de que nada los lea. Las cadenas de la interfaz pasan por `BE.t('Suceso')`, con un catálogo por idioma ([`site/i18n/en.js`](../../site/i18n/en.js)) cuya clave es el texto español: una cadena sin traducir sale en español y envolver una cadena nunca rompe una página. Una prueba falla si una clave del catálogo ya no aparece en el código.
+- **Los nombres españoles se siguen buscando.** Al fundir la capa, cada nombre o título que cambia queda como alias de búsqueda de su ficha: en inglés, «Lidia» encuentra a Lydia y «Filipos», a Philippi. Quien llega con un nombre aprendido en español no se queda sin resultado.
 - **Una ficha sin traducir lo dice.** Sale en español con una línea arriba: «This card is not translated yet: you are reading it in Spanish.»
 - **Las citas** se leen con la abreviatura inglesa («Ac 16:13-15») y abren la Biblia de estudio en inglés en los mismos versículos: jw.org usa las mismas anclas en todos los idiomas.
 
@@ -136,7 +137,7 @@ Cada objeto con textos lleva su propio bloque: la ficha, cada nombre, cada enlac
 
 <img src="img/ingles/movil-menu-en.png" alt="Teléfono: el menú Estudio con «Language» y «Español»" width="300">
 
-La captura grande enseña lo que queda: la línea de tiempo, la leyenda, el buscador, los verbos de las relaciones («vivió aquí»), las eras («50 e.c.») y las páginas `acerca.html` y `calendario.html`. Los verbos salen del vocabulario, que necesita su `en`; las eras, del formateador de fechas de `base.js`. Mientras se lee en inglés, el buscador encuentra los títulos ingleses; los nombres españoles deberían seguir encontrándose también.
+La captura grande enseña lo que queda: la línea de tiempo, la leyenda, el buscador, los verbos de las relaciones («vivió aquí»), las eras («50 e.c.») y las páginas `acerca.html` y `calendario.html`. Los verbos salen del vocabulario, que necesita su `en`; las eras, del formateador de fechas de `base.js`.
 
 ## Pregunta 3. Documentos, README e imágenes
 

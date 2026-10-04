@@ -4,7 +4,7 @@
 //    <html lang="es">, no «lang» in the address.
 //  - «?lang=en» opens the English card of Filipos, Lidia and her baptism: the texts of site/data.en.json, the interface
 //    strings of site/i18n/en.js, Acts with its English abbreviation and its link to the English study Bible at the same
-//    verses, and the sources with their English pages. The view in the hash is kept.
+//    verses, and the sources with their English pages. The view in the hash is kept. The Spanish names still search.
 //  - A record with no English yet keeps its Spanish text and says so.
 //  - apply() can run again after a chunk of the data is merged: only what the data has gets its English.
 //  - The switch (bar button, and the Estudio menu on a phone) stores the choice and opens the same view in Spanish;
@@ -155,6 +155,11 @@ test('?lang=en shows the English cards of Filipos, Lidia and her baptism', async
   // Searching in English finds the English title.
   await p.fill('#q', 'Lydia and her household');
   await p.waitForFunction(() => document.querySelector('#resultados')?.textContent.includes('Lydia and her household'));
+  // The Spanish names still find the records: «Lidia» gives Lydia, «Filipos» gives the place Philippi.
+  for (const [q, want] of [['Lidia', 'Lydia'], ['Filipos', 'Philippi']]) {
+    await p.fill('#q', q);
+    await p.waitForFunction((w) => [...document.querySelectorAll('#resultados .be-result__title')].some((r) => r.textContent.trim() === w), want);
+  }
   assert.deepEqual(errors, []);
   await p.context().close();
 });

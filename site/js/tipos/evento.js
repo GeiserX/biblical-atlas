@@ -109,7 +109,7 @@ BE.tipo('evento', {
   buscar(q, nq, puntuar) {
     const out = [];
     for (const e of BE.D.eventos || []) {
-      const pp = puntuar([e.titulo, e.buscar].filter(Boolean));
+      const pp = puntuar([e.titulo, e.buscar, ...(e._es || [])].filter(Boolean));
       if (pp) out.push({ grupo: 'Sucesos', sel: { tipo: 'evento', id: e.id }, titulo: e.titulo, meta: e.fecha?.texto || '', puntos: pp });
     }
     return out;

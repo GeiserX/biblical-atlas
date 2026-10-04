@@ -380,7 +380,7 @@ BE.tipo('lugar', {
   buscar(q, nq, puntuar) {
     const out = [];
     for (const l of Object.values(BE.L)) {
-      const p = puntuar([l.nombre, ...(l.nombres || []).map((n) => n.nombre), ...(BE.candidatosDe(l) || []).map((c) => c.nombre)]);
+      const p = puntuar([l.nombre, ...(l.nombres || []).map((n) => n.nombre), ...(BE.candidatosDe(l) || []).map((c) => c.nombre), ...(l._es || [])]);
       if (!p) continue;
       const hoy = BE.nombreHoy(l);
       // Cuántos hechos fechados tiene; sin ninguno no se dice «0» (be-u66.3), y uno es «1 hecho», no «1 paradas».

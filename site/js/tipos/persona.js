@@ -319,7 +319,7 @@ BE.tipo('persona', {
     const mismos = {};
     for (const p of Object.values(BE.PERS)) mismos[BE.norm(p.nombre)] = (mismos[BE.norm(p.nombre)] || 0) + 1;
     for (const p of Object.values(BE.PERS)) {
-      const pp = puntuar([p.nombre, ...(p.nombres || []).map((n) => n.nombre)]);
+      const pp = puntuar([p.nombre, ...(p.nombres || []).map((n) => n.nombre), ...(p._es || [])]);
       if (!pp) continue;
       const n = mismos[BE.norm(p.nombre)];
       out.push({ grupo: 'Personas', sel: { tipo: 'persona', id: p.id }, titulo: p.nombre, meta: p.desambiguacion || p.resumen || '', puntos: pp, etiqueta: n > 1 ? `${n} con este nombre` : '' });

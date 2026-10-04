@@ -100,6 +100,22 @@ function merge(base, over) {
   }
   return base;
 }
+/** The Spanish names and titles that `over` is about to replace in `o`. The search keeps finding a record by them
+    (o._es): «Lidia» still finds Lydia. A second apply() finds the English already there and adds nothing. */
+function spanishNames(o, over) {
+  const out = [];
+  const add = (es, en) => { if (typeof es === 'string' && typeof en === 'string' && es !== en) out.push(es); };
+  add(o.nombre, over.nombre);
+  add(o.titulo, over.titulo);
+  (Array.isArray(over.nombres) ? over.nombres : []).forEach((n, i) => add(o.nombres?.[i]?.nombre, n?.nombre));
+  return out;
+}
+function mergeRecord(o, over) {
+  const es = spanishNames(o, over);
+  if (es.length) o._es = [...new Set([...(o._es || []), ...es])];
+  merge(o, over);
+  o._lang = current;
+}
 // The collections of data.json: the ones keyed by id and the ones that are lists of records with an id.
 const BY_ID = ['lugares', 'personas'];
 const LISTS = ['eventos', 'viajes', 'cartas', 'periodos', 'hallazgos', 'recorridos'];
@@ -117,11 +133,11 @@ async function apply(D) {
     const layer = await layerP;
     strings = window.BE_I18N?.[current] || {};
     for (const k of BY_ID) {
-      for (const [id, over] of Object.entries(layer[k] || {})) if (D[k]?.[id]) { merge(D[k][id], over); D[k][id]._lang = current; }
+      for (const [id, over] of Object.entries(layer[k] || {})) if (D[k]?.[id]) mergeRecord(D[k][id], over);
     }
     for (const k of LISTS) {
       const byId = new Map((D[k] || []).map((o) => [o.id, o]));
-      for (const [id, over] of Object.entries(layer[k] || {})) if (byId.has(id)) { merge(byId.get(id), over); byId.get(id)._lang = current; }
+      for (const [id, over] of Object.entries(layer[k] || {})) if (byId.has(id)) mergeRecord(byId.get(id), over);
     }
     for (const [id, over] of Object.entries(layer.fuentes || {})) if (D.fuentes?.[id]) merge(D.fuentes[id], over);
     books = layer.libros || {};
