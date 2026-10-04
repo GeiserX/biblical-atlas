@@ -621,6 +621,7 @@ async function iniciar() {
   iniciarMarcos();
   try {
     [BE.D, BE.VIDEOS] = await Promise.all([BE.chunks.loadCore(), cargarVideos()]);
+    await BE.idioma?.apply(BE.D);   // language.js: los textos del idioma de quien lee, encima de los datos
   } catch (err) {
     $('#panel-cuerpo').innerHTML = `<section class="be-card"><div class="be-card__pad"><h2 class="be-card__title">No se pudieron cargar los datos</h2><p class="be-card__body">${esc(err.message)} Mira site/README.md para abrir el sitio en local.</p></div></section>`;
     // La portada, si está puesta, lo dice en su sitio y ofrece volver a intentarlo (portada.js).

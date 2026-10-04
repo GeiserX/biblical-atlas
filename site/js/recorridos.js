@@ -245,7 +245,8 @@ function pintarMenu() {
     <button type="button" role="menuitem" data-menu="notas">Mis notas</button>
     <div class="be-caps menu-titulo">Ver</div>
     <button type="button" role="menuitemcheckbox" aria-checked="${on('letra-grande')}" data-menu="letra-grande">Letra grande</button>
-    <button type="button" role="menuitemcheckbox" aria-checked="${on('presentando')}" data-menu="presentar">Presentación a pantalla completa</button>`;
+    <button type="button" role="menuitemcheckbox" aria-checked="${on('presentando')}" data-menu="presentar">Presentación a pantalla completa</button>
+    ${BE.idioma?.menuItem() ?? ''}`;
 }
 function menu(abrir) {
   const b = document.getElementById('estudio-boton'), m = document.getElementById('estudio-menu');
