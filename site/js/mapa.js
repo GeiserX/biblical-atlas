@@ -1699,8 +1699,8 @@ function pintarEtiquetas() {
     // Lo que ya se dibuja: los nombres, números y puntos que se ven, con el aire del reparto (3 px a los lados, 1 arriba
     // y abajo), los puntos de los lugares y las burbujas. Un punto de candidato o de hallazgo se dibuja siempre, aunque
     // quede a medias bajo una tarjeta o fuera de su tramo de zoom: cuenta igual, salvo si está escondido (cand--junto).
-    const dibujado = (x) => !x.el.classList.contains('cand--junto') && x.medir.getBoundingClientRect();
-    const ocupado = items.map((x, i) => (x.obstaculo ? dibujado(x) : ver[i] && !probar.includes(i) ? rects[i] : null)).filter((r) => r && r.width > 0);
+    const dibujado = (x) => { const r = x.el.classList.contains('cand--junto') ? null : x.medir.getBoundingClientRect(); return r?.width ? r : null; };
+    const ocupado = items.map((x, i) => (x.obstaculo ? dibujado(x) : ver[i] && !probar.includes(i) ? rects[i] : null)).filter(Boolean);
     for (const { m } of marcas) {
       if (m.region || m.clase === 'agua' || m.el.classList.contains('agrupado')) continue;
       const p = map.project([m.l.lon, m.l.lat]), r = m.el.classList.contains('es-actual') ? 7 : 5;
