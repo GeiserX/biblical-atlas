@@ -90,11 +90,13 @@ async function newContext(opts = DESKTOP) {
     hold for three frames in a row. The 60 s is only how long starting may take before the test gives up: on a box
     running other work, the 1440 page took 17 s to reach this state at a load of 70. Every navigation before it waits
     only for the new page to be committed: the «load» event, which waits for every script, font and map file, is not
-    what these tests need, and under load it came after the context's 5 s. */
+    what these tests need, and under load it came after the context's 5 s. When the data comes in chunks (BE.chunks),
+    the cards and their pencils need the detail too, so at least one chunk must have arrived. */
 async function ready(page) {
   await page.waitForFunction(() => {
     const m = window.__be?.map, BE = window.BE;
-    const quiet = !!(BE?.D && BE.sucio && m?.loaded() && !m.isMoving() && !Object.values(BE.sucio).some(Boolean));
+    const quiet = !!(BE?.D && BE.sucio && m?.loaded() && !m.isMoving() && !Object.values(BE.sucio).some(Boolean))
+      && (!BE.chunks || BE.chunks.loaded.length > 0);
     window.__quietFrames = quiet ? (window.__quietFrames || 0) + 1 : 0;
     return window.__quietFrames >= 3;
   }, null, { timeout: 60000, polling: 'raf' });
