@@ -117,8 +117,8 @@ function waitingHtml(what = 'la ficha') {
     : `<div class="be-card__pad"><p class="be-muted" role="status" aria-busy="true">Cargando ${what}…</p></div>`;
 }
 
-// El detalle se pide antes de que haga falta. Si la dirección ya abre una ficha, el grafo o la conexión, a la vez que
-// el núcleo: si esperara al mapa, en el teléfono llegaría detrás de su relieve. Si no, al entrar en una caja de
+// El detalle se pide antes de que haga falta. Si la dirección ya abre una ficha (también un enlace a un pasaje, #p=),
+// el grafo o la conexión, a la vez que el núcleo: si esperara al mapa, en el teléfono llegaría detrás de su relieve. Si no, al entrar en una caja de
 // búsqueda y cuando el mapa queda quieto por primera vez (después del primer pintado, sin quitarle red a sus teselas).
 // La primera regla va al final del fichero, cuando BE.chunks ya existe.
 document.addEventListener('focusin', (e) => { if (e.target.matches?.('#q, #portada-q')) load().catch(() => {}); });
@@ -134,5 +134,5 @@ BE.chunks = {
   get loaded() { return whole ? ['whole'] : [...merged]; },
   get failed() { return !!failure; },
 };
-try { if (/(^#|&)(sel|grafo|conexion)=/.test(location.hash)) load().catch(() => {}); } catch { /* ?datos= no vale: lo dice el arranque */ }
+try { if (/(^#|&)(sel|grafo|conexion|p)=/.test(location.hash)) load().catch(() => {}); } catch { /* ?datos= no vale: lo dice el arranque */ }
 })();

@@ -133,7 +133,11 @@ test('an address that opens a card asks for the detail at the same time as the c
   const map = await openPage({ hash: 't=50.3000' });
   await map.waitForFunction(() => window.BE.chunks.loaded.length, null, { timeout: 30000 });
   assert.ok(at(map, 'ask /data.detail.json') > at(map, 'got /data.core.json'), map.events.join(', '));
-  assert.deepEqual([...page.pageErrors, ...page.consoleErrors, ...map.pageErrors], []);
+  // A passage link (#p=, passage-link.js) opens the first card that cites it: the same rule.
+  const passage = await openPage({ hash: 'p=Hch16:1' });
+  await passage.waitForFunction(() => window.BE.chunks.loaded.length, null, { timeout: 30000 });
+  assert.ok(at(passage, 'ask /data.detail.json') >= 0 && at(passage, 'ask /data.detail.json') < at(passage, 'got /data.core.json'), passage.events.join(', '));
+  assert.deepEqual([...page.pageErrors, ...page.consoleErrors, ...map.pageErrors, ...passage.pageErrors, ...passage.consoleErrors], []);
 });
 
 test('a card waits for the detail, says so, and paints when it arrives; the search does not wait', async () => {
