@@ -40,5 +40,15 @@ relations:
   reason: 'Gé 46:8, 26, 27: figura en la lista de la casa de Jacob que se instaló en Egipto.'
   checked_on: '2026-09-29'
   status: verified
+- type: same_as
+  person: pelez-padre-de-on
+  certainty: possible
+  inferred: true
+  sources:
+  - it-palu
+  - numeros-16
+  reason: Perspicacia «Palú» ve posible que el hijo de Rubén al que Nú 16:1 llama Pélez sea Palú, sin afirmarlo.
+  checked_on: '2026-10-03'
+  status: verified
 checked_on: '2026-09-29'
 status: verified

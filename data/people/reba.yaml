@@ -40,13 +40,12 @@ relations:
   reason: 'Jos 13:21: Reba y los otros jefes madianitas vivían en la tierra del reino de Sehón que Moisés dio a Rubén.'
   checked_on: '2026-09-29'
   status: verified
-- type: accompanies
+- type: tie
   person: sehon
-  caption: vasallo
-  inverse_caption: señor
+  word: master
   inferred: false
   sources:
   - josue-13
   reason: 'Jos 13:21 y su nota: Reba era uno de los reyes madianitas subordinados a Sehón.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-03'
   status: verified

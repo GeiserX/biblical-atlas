@@ -506,6 +506,14 @@ outside:
     caption: escribió 1 Pedro por medio de él
     inverse_caption: amanuense de 1 Pedro
     why: Es un papel en la escritura de una carta; pasará a la carta cuando las cartas lleven papeles.
+  - type: accompanies
+    caption: compañero de prisión
+    inverse_caption: compañero de prisión
+    why: Dice una circunstancia que compartieron, no un trato; ni el texto ni Perspicacia dicen dónde ni cuándo fue.
+  - type: accompanies
+    caption: compañero de crianza
+    inverse_caption: compañero de crianza
+    why: Dice con quién se crio, no un trato entre ellos; solo sale en este par.
   - type: tie
     caption: custodio
     inverse_caption: custodiado por

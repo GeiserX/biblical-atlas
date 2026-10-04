@@ -78,8 +78,11 @@ relations:
   sources:
   - it-abrahan
   - si-3
-  reason: 'Perspicacia «Abrahán», párr. 3 y 4: nació en 2018 a.e.c. y su ciudad de origen era Ur, en Caldea.'
-  checked_on: '2026-09-29'
+  - genesis-11
+  - genesis-15
+  reason: 'Perspicacia «Abrahán», párr. 3 y 4: nació en 2018 a.e.c. y era natural de Ur, en Caldea, de donde lo sacan Gé 11:31
+    y 15:7.'
+  checked_on: '2026-10-03'
   status: verified
 - type: lived_in
   place: haran

@@ -36,8 +36,9 @@ relations:
   inferred: false
   sources:
   - it-drusila
-  reason: Perspicacia dice que era la hija menor de Herodes Agripa I.
-  checked_on: '2026-09-29'
+  - hch-24
+  reason: 'Perspicacia y la nota de Hch 24:24: hija menor de Herodes Agripa I, que tuvo tres.'
+  checked_on: '2026-10-03'
   status: verified
 - type: kin
   person: berenice
@@ -46,6 +47,7 @@ relations:
   sources:
   - it-drusila
   - it-berenice
-  reason: Hermana mayor suya (Perspicacia «Drusila»).
-  checked_on: '2026-09-29'
+  - hch-24
+  reason: Hermana mayor suya, según Perspicacia «Drusila» y la nota de Hch 24:24.
+  checked_on: '2026-10-03'
   status: verified

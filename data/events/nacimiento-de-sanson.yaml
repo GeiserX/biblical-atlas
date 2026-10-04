@@ -1,6 +1,7 @@
 # biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
 id: nacimiento-de-sanson
 title: Nace Sansón
+type: birth
 date:
   from: -1172
   to: -1116
@@ -17,6 +18,8 @@ places:
 people:
 - sanson
 - manoah
+roles:
+  sanson: born
 passages:
 - Jue 13:24
 summary: La esposa de Manóah da a luz un hijo y lo llama Sansón. El niño crece con la bendición de Jehová.
@@ -36,5 +39,5 @@ links:
 - title: 'Perspicacia: «Sansón»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sans%C3%B3n/
   type: perspicacia
-checked_on: '2026-09-29'
+checked_on: '2026-10-03'
 status: verified
