@@ -865,3 +865,10 @@ details.grafo-leyenda[open] { padding-bottom: 8px; }
   .gnodo.gnodo--suceso .gnodo-verbo { display: none; }
   .gnodo:not(.gnodo--suceso):not(.gnodo--grupo) .be-gnode__meta:has(.gnodo-verbo) { display: none; }
 }
+
+/* ---------- Enlace a un pasaje (#p=Hch16:1, js/passage-link.js) ---------- */
+/* Lo que cita el pasaje, bajo la ficha que abrió: la fila abierta no es un botón y se distingue por su borde. */
+.pasaje-enlace .fila-actual { box-shadow: inset 3px 0 0 var(--ink); padding-left: 10px; }
+.pasaje-enlace .fila-actual > span:first-child { display: flex; flex-direction: column; min-width: 0; }
+.pasaje-enlace__mas summary { cursor: pointer; font-size: var(--fs-sm); color: var(--ink-2); padding: 8px 0; min-height: 44px; display: flex; align-items: center; }
+.pasaje-enlace code { font-size: var(--fs-xs); }

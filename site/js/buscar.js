@@ -522,6 +522,8 @@ const historia = (() => {
     if (p.has('sinc')) v.sync = BE.L[p.get('sinc').split('~')[0]]?.nombre || '';
     if (p.get('ahora') === '1') v.now = true;
     if (E.sel) v.selection = BE.nombreSel(E.sel);
+    // Un enlace a un pasaje sin selección (su aviso, passage-link.js) se nombra por el pasaje.
+    else if (p.has('p')) v.passage = BE.pasajeEnlace?.active?.readable || p.get('p');
     return v;
   }
   /** Lo que hay detrás y delante, como lo enseñan los botones. Navigation API, donde la hay, confirma lo que dicen los
@@ -730,7 +732,9 @@ function textoCita(sel) {
   let wol = '';
   const c = BE.citas(refs)[0] || (sel.tipo === 'pasaje' ? { libro: BE.pasajeDeId(sel.id).libro, cap: BE.pasajeDeId(sel.id).cap } : null);
   if (c) wol = c.texto ? BE.urlCita(c) : BE.urlCapitulo(c.libro, c.cap);
-  return [`${nombre}${o.resumen ? `: ${o.resumen}` : ''}`, refs && `Referencias: ${refs}.`, wol && `Leer en jw.org: ${wol}`, fuentes.length && `Fuentes: ${fuentes.join('; ')}.`, `Vista en biblical-atlas: ${location.href}`].filter(Boolean).join('\n');
+  const pasaje = BE.pasajeEnlace?.linkFor(sel);   // #p=Hch16:1, el enlace que abre el pasaje (passage-link.js)
+  return [`${nombre}${o.resumen ? `: ${o.resumen}` : ''}`, refs && `Referencias: ${refs}.`, wol && `Leer en jw.org: ${wol}`, fuentes.length && `Fuentes: ${fuentes.join('; ')}.`, `Vista en biblical-atlas: ${location.href}`,
+    pasaje && `Pasaje en biblical-atlas: ${pasaje.url}`].filter(Boolean).join('\n');
 }
 function accionesFicha() {
   const cuerpo = $('#panel-cuerpo');
