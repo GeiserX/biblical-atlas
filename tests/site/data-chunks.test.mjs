@@ -1,7 +1,8 @@
 // The data in two chunks (site/js/data-chunks.js, docs/development.md «Los trozos de los datos»), tested in a real
 // headless browser: the site opens with data.core.json and asks for data.detail.json once, whoever needs it first; a
 // card waits for the detail and says so, while the map, the timeline and the search do not; a failed detail is said in
-// the card, not thrown; file:// and a folder with no core still load the whole data.json; and the map, the timeline,
+// the card, not thrown; in English the detail gets its English too; file:// and a folder with no core still load the
+// whole data.json; and the map, the timeline,
 // «Mientras tanto», «Ahora» and the landing painted from the core alone are the same as painted from the whole
 // data.json. The last test opens every view with the chunks and counts the console errors.
 // MapLibre comes from unpkg.com, so the map tests need the network for it; every other host is blocked.
@@ -165,6 +166,18 @@ test('a detail that fails is said in the card, with no page error, and the map k
   await frames(page);
   assert.ok(await page.locator('#linea-filas .m').count() > 0);
   assert.deepEqual(page.pageErrors, []);
+});
+
+test('in English, the detail that arrives after the core gets its English too', async () => {
+  // language.js puts data.en.json over the core; the summary and the reason of Filipos come later, in Spanish, with
+  // the detail, and the loader has to apply the layer again after merging it.
+  const EN = JSON.parse(fs.readFileSync(path.join(SITE_DIR, 'data.en.json'), 'utf8')).lugares.filipos;
+  const page = await openPage({ url: 'index.html?lang=en', hash: 'sel=lugar:filipos&t=50.3000' });
+  await page.locator('#panel-cuerpo .be-card__body', { hasText: EN.resumen.slice(0, 40) }).first().waitFor();
+  const f = await page.evaluate(() => { const l = window.BE.D.lugares.filipos; return { resumen: l.resumen, razon: l.razon }; });
+  assert.deepEqual(f, { resumen: EN.resumen, razon: EN.razon });
+  assert.equal(count(page, 'data.detail.json'), 1);
+  assert.deepEqual([...page.pageErrors, ...page.consoleErrors], []);
 });
 
 test('from file:// the site loads data.js whole and a card opens with its texts', async () => {

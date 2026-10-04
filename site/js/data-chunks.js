@@ -86,7 +86,10 @@ function load(name = 'detail') {
     const pending = FILE ? null : fetchJson(chunkPath(name));
     pending?.catch(() => {});   // si el núcleo resulta ser data.json entero, el detalle sobra
     const p = loadCore().then(async (D) => {
-      if (!whole) mergeInto(D, await pending);
+      if (!whole) {
+        mergeInto(D, await pending);
+        await BE.idioma?.apply(D);   // language.js: lo recién llegado pasa al idioma de quien lee
+      }
       merged.add(name);
     });
     loads.set(name, p);
