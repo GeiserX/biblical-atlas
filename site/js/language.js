@@ -14,7 +14,8 @@
    - Interface: site/i18n/<lang>.js holds the strings of the site, keyed by their Spanish text. BE.t('Suceso') gives
      «Event» in English and the same Spanish text when there is no translation, so wrapping a string never breaks a page.
 
-   The switch is a button in the top bar and an entry in the Estudio menu (the phone hides the bar button). Until the
+   The switch is a button in the top bar, another among the controls of the landing page, and an entry in the Estudio
+   menu (the phone hides the bar button). Until the
    English site is launched (LAUNCHED), it only shows to someone already reading in English, so they can go back. */
 'use strict';
 (() => {
@@ -191,12 +192,13 @@ function markUntranslated() {
 // ---------------------------------------------------------------------------
 const other = () => (current === 'es' ? 'en' : 'es');
 const visible = () => LAUNCHED || current !== BASE;
-/** Stores the choice and opens the same view in the other language, as a new entry: Back returns to the language before. */
-function switchTo(lang) {
+/** Stores the choice and opens the same view in the other language, as a new entry: Back returns to the language before.
+    From the landing page the address keeps its hash (#portada=1), so the landing page opens again. */
+function switchTo(lang, keepHash = false) {
   try { localStorage.setItem(PREF, lang); } catch { /* no storage: the address still carries it */ }
   const u = new URL(location.href);
   u.searchParams.set('lang', lang);
-  if (BE.D) u.hash = BE.textoHash();
+  if (BE.D && !keepHash) u.hash = BE.textoHash();
   location.assign(u);
 }
 const label = (lang) => (lang === 'en' ? 'Read in English' : 'Leer en español');
@@ -214,6 +216,18 @@ function addButton() {
   b.addEventListener('click', () => switchTo(to));
   const acerca = document.getElementById('acerca');
   acerca?.parentNode.insertBefore(b, acerca);
+  // The landing page has no top bar: its own round button, before «Letra grande».
+  const letra = document.getElementById('portada-letra');
+  if (!letra) return;
+  const pb = document.createElement('button');
+  pb.type = 'button';
+  pb.id = 'idioma-portada';
+  pb.className = 'portada-icono portada-icono--letra';
+  pb.lang = to;
+  pb.title = label(to);
+  pb.innerHTML = `<span aria-hidden="true">${to.toUpperCase()}</span><span class="sr-only">${label(to)}</span>`;
+  pb.addEventListener('click', () => switchTo(to, true));
+  letra.parentNode.insertBefore(pb, letra);
 }
 /** The Estudio menu entry (recorridos.js paints the menu and asks for it). Empty while the switch is hidden. */
 const menuItem = () => (visible()

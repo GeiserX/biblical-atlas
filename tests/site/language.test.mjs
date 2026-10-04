@@ -218,6 +218,23 @@ test('the switch keeps the view, stores the choice, and a shared link wins over 
   await ctx.close();
 });
 
+test('the landing page has its own switch and opens again in the other language', async () => {
+  const p = await browser.newPage({ locale: 'en-US', viewport: { width: 390, height: 844 } });
+  p.setDefaultTimeout(8000);
+  p.on('pageerror', (e) => errors.push(`pageerror: ${e.message}`));
+  await p.route((url) => !url.href.startsWith(origin) && !url.hostname.endsWith('unpkg.com'), (route) => route.abort());
+  await p.goto(`${origin}/index.html?lang=en`);
+  const b = p.locator('#idioma-portada');
+  await b.waitFor({ state: 'visible' });
+  assert.equal((await b.textContent()).trim().slice(0, 2), 'ES');
+  await Promise.all([p.waitForURL(/lang=es/), b.click()]);
+  await p.waitForFunction(() => document.documentElement.lang === 'es' && document.documentElement.classList.contains('be-con-portada')
+    && /portada=1/.test(location.hash));
+  assert.equal(await p.locator('#idioma-portada').count(), 0, 'before launch the Spanish landing page has no switch');
+  assert.deepEqual(errors, []);
+  await p.context().close();
+});
+
 test('on a phone the switch is in the Estudio menu', async () => {
   const p = await open('?lang=en', 'sel=lugar:filipos&t=50.5', { width: 390, height: 844 });
   assert.equal((await card(p)).button, null, 'the bar has no room for it');
