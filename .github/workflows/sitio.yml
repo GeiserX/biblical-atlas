@@ -71,7 +71,10 @@ jobs:
           key: chromium-${{ runner.os }}-${{ env.PLAYWRIGHT_VERSION }}
 
       # Un fichero detrás de otro (--test-concurrency=1): las pruebas abren un navegador cada una.
+      # shell: bash hace que GitHub lo lance con -eo pipefail: sin pipefail, `node --test | tee` da el código de tee y
+      # una prueba roja dejaría el paso en verde.
       - name: Pruebas
+        shell: bash
         env:
           PLAYWRIGHT_CORE: ${{ runner.temp }}/pw/node_modules/playwright-core
           PLAYWRIGHT_MODULE_DIR: ${{ runner.temp }}/pw/node_modules
@@ -83,9 +86,12 @@ jobs:
           run() { node --test --test-concurrency=1 --import ./tests/site/failure-traces.mjs "$@"; }
           clics='clicking a mark keeps the scale'
           case "$PARTE" in
-            # Si alguien renombra esas dos pruebas, el filtro no encontraría ninguna y el trabajo saldría verde.
+            # Exactamente 2 pruebas, las 2 en verde: si alguien las renombra, el filtro no encontraría ninguna y el
+            # trabajo saldría verde; si una tercera casa con el filtro, el recuento ya no cuadra.
             'marcas, clics') run --test-name-pattern="$clics" tests/site/timeline-marks.test.mjs | tee "$RUNNER_TEMP/clics.txt"
-                             grep -q '^ℹ pass 2$' "$RUNNER_TEMP/clics.txt" || { echo '::error::no se corrieron las 2 pruebas de clics'; exit 1; } ;;
+                             for linea in 'tests 2' 'pass 2' 'fail 0'; do
+                               grep -q "^ℹ $linea\$" "$RUNNER_TEMP/clics.txt" || { echo "::error::el filtro de clics no dio «$linea»"; exit 1; }
+                             done ;;
             'marcas, resto') run --test-skip-pattern="$clics" tests/site/timeline-marks.test.mjs ;;
             *) files=(); for f in tests/site/*.test.mjs; do [[ $f == */timeline-marks.test.mjs ]] || files+=("$f"); done
                run --test-shard="$PARTE" "${files[@]}" ;;
