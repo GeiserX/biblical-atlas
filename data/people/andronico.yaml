@@ -52,11 +52,12 @@ relations:
   status: verified
 - type: kin
   person: pablo
+  word: relative
   inferred: false
   sources:
   - romanos-16
   - it-andronico
   reason: 'Ro 16:7: Pablo lo llama pariente suyo. Perspicacia «Andrónico» cree que el contexto apunta a un familiar de sangre
     y no solo a un paisano.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-03'
   status: verified

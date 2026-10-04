@@ -30,8 +30,11 @@ relations:
   inferred: true
   sources:
   - it-jabin
-  reason: 'Perspicacia «Jabín», núm. 2: reinó en la Hazor reconstruida y quizá descendía del rey vencido por Josué.'
-  checked_on: '2026-09-29'
+  - jueces-4
+  - josue-11
+  reason: 'Perspicacia «Jabín», núm. 2: reinó en la Hazor reconstruida (Jue 4:2) y quizá descendía del rey de Hazor que mató
+    Josué (Jos 11:1, 10).'
+  checked_on: '2026-10-03'
   status: pending
 - type: lived_in
   place: hazor

@@ -27,16 +27,16 @@ relations:
   reason: Jue 9:30 lo llama príncipe de la ciudad, y en Jue 9:36-41 está en Siquem junto a Gaal.
   checked_on: '2026-09-29'
   status: verified
-- type: accompanies
+- type: tie
   person: abimelec-hijo-de-gedeon
-  caption: representante de
+  word: master
   inferred: false
   sources:
   - jueces-9
   - it-zebul
   - it-gaal
   reason: 'Jue 9:28: Gaal lo llama representante de Abimélec. Perspicacia «Gaal» cree que Abimélec lo puso al frente de Siquem.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-03'
   status: verified
 checked_on: '2026-09-29'
 status: verified

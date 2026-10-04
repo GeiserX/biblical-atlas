@@ -34,13 +34,14 @@ distinct_from:
 relations:
 - type: kin
   person: anas
+  word: relative
   inferred: true
   sources:
   - it-juan
   - hechos-4
   reason: Hch 4:6 lo nombra junto a los parientes del sacerdote principal; Perspicacia «Juan», núm. 5, dice que posiblemente
     era pariente de Anás.
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-03'
   status: pending
 checked_on: '2026-10-02'
 status: verified

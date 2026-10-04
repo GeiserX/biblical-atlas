@@ -33,16 +33,5 @@ relations:
   reason: Jn 19:25 la llama María la esposa de Clopas.
   checked_on: '2026-09-29'
   status: verified
-- type: same_as
-  person: alfeo-padre-de-santiago
-  inferred: true
-  sources:
-  - it-clopas
-  - it-alfeo
-  - juan-19
-  reason: 'Perspicacia «Clopas» y la nota de Jn 19:25 lo dan como muy probable: dos nombres del mismo hombre o dos formas del
-    mismo nombre arameo.'
-  checked_on: '2026-09-29'
-  status: pending
 checked_on: '2026-09-29'
 status: verified

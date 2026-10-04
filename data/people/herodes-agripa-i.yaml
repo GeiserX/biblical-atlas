@@ -37,8 +37,9 @@ relations:
   inferred: true
   sources:
   - it-herodes
-  reason: 'Perspicacia, párr. 41: nieto de Herodes el Grande. Lo dice la historia, no el texto bíblico.'
-  checked_on: '2026-09-29'
+  - hechos-12
+  reason: 'Perspicacia, párr. 41, y la nota de Hch 12:1: nieto de Herodes el Grande. Lo dice la historia, no el texto bíblico.'
+  checked_on: '2026-10-03'
   status: verified
 - type: died_in
   place: cesarea

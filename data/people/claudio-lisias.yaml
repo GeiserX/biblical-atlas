@@ -54,25 +54,3 @@ relations:
   reason: Mandaba la guarnición romana de Jerusalén (Hch 21:31).
   checked_on: '2026-09-29'
   status: verified
-- type: tie
-  person: pablo
-  caption: custodio
-  inverse_caption: custodiado por
-  date:
-    from: 56
-    to: 56
-    precision: year
-    approx: true
-    type: anchored
-    chronology: tnm
-    text: c. 56 e.c.
-  inferred: false
-  sources:
-  - hch-23
-  - it-claudio-lisias
-  - hch-21
-  - hch-22
-  reason: Lo detiene en el templo, lo interroga en el cuartel, lo saca del Sanedrín y lo envía escoltado a Félix con una carta
-    (Hch 21:31-40; 22:24-30; 23:10, 23-30).
-  checked_on: '2026-09-29'
-  status: verified

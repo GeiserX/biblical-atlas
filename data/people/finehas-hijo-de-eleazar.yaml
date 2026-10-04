@@ -67,6 +67,7 @@ relations:
   status: verified
 - type: succeeds
   person: eleazar-hijo-de-aaron
+  office: high_priest
   inferred: true
   sources:
   - josue-24
@@ -75,7 +76,7 @@ relations:
   - jueces-20
   reason: 'Perspicacia «Eleazar», núm. 1, y «Finehás», núm. 1: tras enterrar a su padre (Jos 24:33) fue sumo sacerdote; Jue
     20:27, 28 lo muestra en el cargo.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-03'
   status: verified
 checked_on: '2026-09-29'
 status: verified

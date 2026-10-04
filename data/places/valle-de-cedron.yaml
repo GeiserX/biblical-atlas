@@ -11,7 +11,8 @@ lon: 35.24
 precision: zone
 coord_source: openbible:a553110
 coord_url: https://www.openbible.info/geo/ancient/a553110/kidron
-coord_note: Punto representativo del valle.
+coord_note: Punto representativo del valle. Queda a 0,4 km del estanque de Betzata porque, según Perspicacia, el valle
+  bordea Jerusalén por el este y el estanque estaba al norte del recinto del templo.
 summary: Valle profundo y casi siempre seco que separa Jerusalén del monte de los Olivos. Jesús lo cruzó con sus
   apóstoles la noche del 14 de nisán para ir a Getsemaní.
 reason: 'Perspicacia «Cedrón, Valle torrencial de» (párr. 2 y 4) y la nota de Jn 18:1. La coordenada es de OpenBible:
@@ -31,5 +32,5 @@ links:
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/juan/18/
   type: bible
 search: Valle de Cedrón
-checked_on: '2026-09-30'
+checked_on: '2026-10-03'
 status: verified

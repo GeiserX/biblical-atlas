@@ -43,6 +43,8 @@ relations:
   sources:
   - it-acaya
   - it-galion
-  reason: 'Perspicacia «Acaya»: el procónsul gobernaba la provincia desde Corinto.'
-  checked_on: '2026-09-29'
+  - hch-18
+  reason: 'Perspicacia «Acaya»: el procónsul gobernaba la provincia desde Corinto, donde Hch 18:12-17 pone a Pablo ante el
+    tribunal de Galión.'
+  checked_on: '2026-10-03'
   status: verified

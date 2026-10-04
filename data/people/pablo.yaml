@@ -398,6 +398,66 @@ relations:
   checked_on: '2026-09-29'
   status: verified
 - type: tie
+  person: claudio-lisias
+  word: custodian
+  date:
+    from: 56
+    to: 56
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 56 e.c.
+  inferred: false
+  sources:
+  - hch-23
+  - it-claudio-lisias
+  - hch-21
+  - hch-22
+  reason: Claudio Lisias lo detiene en el templo, lo interroga en el cuartel, lo saca del Sanedrín y lo manda escoltado a
+    Félix con una carta (Hch 21:31-40; 22:24-30; 23:10, 23-30).
+  checked_on: '2026-10-03'
+  status: verified
+- type: tie
+  person: felix
+  word: custodian
+  date:
+    from: 56
+    to: 58
+    precision: range
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 56-58 e.c.
+  inferred: false
+  sources:
+  - hch-23
+  - hch-24
+  - it-felix
+  - si-3
+  reason: Félix lo recibe en Cesarea y lo tiene vigilado dos años, con algo de libertad, hasta que llega Festo (Hch 23:33-35;
+    24:23, 27).
+  checked_on: '2026-10-03'
+  status: verified
+- type: tie
+  person: festo
+  word: custodian
+  date:
+    from: 58
+    to: 58
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 58 e.c.
+  inferred: false
+  sources:
+  - hch-25
+  - it-festo
+  reason: 'Hch 25:4, 21: Festo, al llegar, manda que siga preso en Cesarea y lo tiene arrestado hasta enviarlo a César.'
+  checked_on: '2026-10-03'
+  status: verified
+- type: tie
   person: julio
   word: custodian
   date:
