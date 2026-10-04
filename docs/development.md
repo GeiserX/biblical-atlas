@@ -26,7 +26,7 @@ python3 scripts/videos/test_videos.py
 python3 scripts/bible_coverage.py
 ```
 
-Las pruebas del sitio (`tests/site/`) abren el sitio en un Chromium de verdad. En cada PR y en cada push a `main` las corre `sitio.yml` en los runners de GitHub, repartidas en seis trabajos; si una falla, sus trazas de Playwright quedan en el artefacto `trazas-<n>` del trabajo que falló (n, su número en la matriz), y se abren con `npx playwright-core show-trace <fichero>.zip`. Para correrlas en local, tras `build.py`:
+Las pruebas del sitio (`tests/site/`) abren el sitio en un Chromium de verdad. En cada PR y en cada push a `main` las corre `sitio.yml` en los runners de GitHub, repartidas en seis trabajos; si una falla, sus trazas de Playwright quedan en el artefacto `trazas-<n>` del trabajo que falló (n, su número en la matriz), y se abren con `npx playwright-core show-trace <fichero>.zip`. Llevan capturas de pantalla, porque el mapa se pinta en un canvas que las instantáneas del DOM no guardan: las de `timeline-marks` pueden pasar de 1 GB. Para correrlas en local, tras `build.py`:
 
 ```bash
 npm install --prefix /tmp/pw playwright-core@1.63.0
