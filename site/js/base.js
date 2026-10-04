@@ -353,12 +353,13 @@ function aplicarHash(inicial) {
 let clavePanel = '';
 const repintarPanel = () => { sucio.panel = true; programar(); };
 function pintarPanel(forzar) {
-  // Una ficha lee los textos del detalle (js/data-chunks.js): mientras llega, un aviso; al llegar, la ficha.
-  const listo = !E.sel || BE.chunks.ready(repintarPanel);
-  const clave = E.sel ? `${listo ? '' : BE.chunks.failed ? 'fallo|' : 'cargando|'}${selTexto(E.sel)}` : BE.claveAhora();
+  // Una ficha lee los textos del detalle (js/data-chunks.js): mientras llega, un aviso; al llegar, la ficha. «Ahora
+  // mismo» no espera: se pinta con el núcleo y otra vez al llegar el detalle, con los textos de la parada en curso.
+  const listo = E.sel ? BE.chunks.ready(repintarPanel) : BE.chunks.whenReady(repintarPanel);
+  const clave = `${listo ? '' : BE.chunks.failed ? 'fallo|' : 'cargando|'}${E.sel ? selTexto(E.sel) : BE.claveAhora()}`;
   if (!forzar && clave === clavePanel) return;
   clavePanel = clave;
-  const html = !listo ? BE.chunks.waitingHtml() : E.sel ? TIPOS.get(E.sel.tipo).ficha(E.sel.id) : BE.fichaAhora();
+  const html = E.sel ? (listo ? TIPOS.get(E.sel.tipo).ficha(E.sel.id) : BE.chunks.waitingHtml()) : BE.fichaAhora();
   const cuerpo = $('#panel-cuerpo');
   cuerpo.innerHTML = html;
   if (forzar) cuerpo.scrollTop = 0;

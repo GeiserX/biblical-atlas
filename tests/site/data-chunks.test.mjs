@@ -163,6 +163,25 @@ test('a card waits for the detail, says so, and paints when it arrives; the sear
   assert.deepEqual([...page.pageErrors, ...page.consoleErrors], []);
 });
 
+test('with nothing chosen, «Ahora mismo» paints with the core and again when the detail arrives', async () => {
+  // #t=50.3000 is where «Explorar» on the landing leads: the stop at Samotracia, whose card reads the summary of the
+  // place, of each companion and the reason of the stop, all in the detail. Painted with the core alone, it has to be
+  // painted again when the detail arrives, with no other change to its key.
+  let release;
+  const held = new Promise((ok) => { release = ok; });
+  const page = await openPage({ hash: 't=50.3000', detail: held });
+  const whole = await openPage({ url: `index.html?datos=${WHOLE}`, hash: 't=50.3000' });
+  await frames(page); await frames(whole);
+  const before = await panelText(page), full = await panelText(whole);
+  assert.ok(full.includes(D.lugares.samotracia.resumen.slice(0, 40)), 'the whole data does not show the stop at Samotracia');
+  assert.ok(!before.includes(D.lugares.samotracia.resumen.slice(0, 40)), 'the summary showed before the detail arrived');
+  release();
+  await page.waitForFunction(() => window.BE.chunks.loaded.length);
+  await frames(page);
+  assert.equal((await panelText(page)).replace(/\s+/g, ' '), full.replace(/\s+/g, ' '));
+  assert.deepEqual([...page.pageErrors, ...page.consoleErrors], []);
+});
+
 test('a detail that fails is said in the card, with no page error, and the map keeps working', async () => {
   const page = await openPage({ hash: 'sel=lugar:corinto&t=50.3000', detail: 'abort' });
   await page.locator('#panel-cuerpo [role="status"]', { hasText: 'No se pudo cargar la ficha' }).waitFor();

@@ -110,6 +110,13 @@ function ready(repaint, name = 'detail') {
   if (!failure || Date.now() - failedAt > RETRY_MS) load(name).catch(() => {});   // el fallo lo dice waitingHtml
   return false;
 }
+/** ¿Está el detalle? Si no, llama a `repaint` cuando llegue, sin pedirlo antes de tiempo: «Ahora mismo» se pinta con
+    el núcleo y otra vez con los textos de la parada en curso cuando el detalle llega por su cuenta. */
+function whenReady(repaint, name = 'detail') {
+  if (whole || merged.has(name)) return true;
+  waiting.add(repaint);
+  return false;
+}
 /** El aviso mientras llega el detalle, o el error si no llegó. */
 function waitingHtml(what = 'la ficha') {
   return failure
@@ -130,7 +137,7 @@ BE.inicios.push(() => {
 });
 
 BE.chunks = {
-  loadCore, load, ready, waitingHtml, mergeInto,
+  loadCore, load, ready, whenReady, waitingHtml, mergeInto,
   get loaded() { return whole ? ['whole'] : [...merged]; },
   get failed() { return !!failure; },
 };
