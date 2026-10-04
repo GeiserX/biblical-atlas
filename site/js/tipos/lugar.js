@@ -74,13 +74,13 @@ function ahoraHtml(id, t) {
   const despues = fechados.filter((h) => h.tr[0] > t).sort((a, b) => a.tr[0] - b.tr[0]);
   const nombre = BE.nombreEn(l, t);
   const fila = (h, extra = '') => `<li class="hecho"><button type="button" class="enlace-titulo" data-sel="${esc(h.sel)}">${esc(h.titulo)}</button> ${BE.insigniaHtml(h.fuentes)}${h.estado === 'pendiente' ? ' <span class="sin-verificar">sin verificar</span>' : ''}${h.deducido ? ' <span class="be-muted">(deducido)</span>' : ''}<span class="be-row__meta">${esc(fechaTexto(h))}${extra}</span></li>`;
-  const bloque = (nivel, lista) => lista.length ? `<div class="bloque-nivel bloque-nivel--${nivel}"><span class="be-tier be-tier--${nivel}" data-n="${nivel}">${nivel === 1 ? 'Fuentes principales' : 'Historia y arqueología'}</span>${nivel === 2 ? '<span class="be-muted acompana">acompaña, nunca corrige</span>' : ''}<ul class="hechos">${lista.map((h) => fila(h)).join('')}</ul></div>` : '';
+  const bloque = (nivel, lista) => lista.length ? `<div class="bloque-nivel bloque-nivel--${nivel}"><span class="be-tier be-tier--${nivel}" data-n="${nivel}">${BE.t(nivel === 1 ? 'Fuentes principales' : 'Historia y arqueología')}</span>${nivel === 2 ? `<span class="be-muted acompana">${BE.t('acompaña, nunca corrige')}</span>` : ''}<ul class="hechos">${lista.map((h) => fila(h)).join('')}</ul></div>` : '';
   let cuerpo;
   if (ahora.length) {
     const n2 = ahora.filter((h) => h.nivel === 2);
     // Sin nivel 2 el bloque sale igual, vacío y diciéndolo: que no haya historia o arqueología es un dato (pantalla 08).
     cuerpo = bloque(1, ahora.filter((h) => h.nivel !== 2)) + (n2.length ? bloque(2, n2)
-      : '<div class="bloque-nivel bloque-nivel--2 bloque-vacio"><span class="be-tier be-tier--2" data-n="2">Historia y arqueología</span><span class="be-muted acompana">acompaña, nunca corrige</span><p class="be-muted">Sin otra fuente que acompañe para esta fecha.</p></div>');
+      : `<div class="bloque-nivel bloque-nivel--2 bloque-vacio"><span class="be-tier be-tier--2" data-n="2">${BE.t('Historia y arqueología')}</span><span class="be-muted acompana">${BE.t('acompaña, nunca corrige')}</span><p class="be-muted">${BE.t('Sin otra fuente que acompañe para esta fecha.')}</p></div>`);
   } else {
     const a = antes[0], d = despues[0];
     cuerpo = `<p class="be-muted">No tenemos hechos de ${esc(nombre)} en esta fecha.</p>`;
@@ -90,8 +90,8 @@ function ahoraHtml(id, t) {
   const conectado = (titulo, lista, antesDe) => lista.length ? `<h4 class="be-caps sub-bloque">${titulo}</h4><ul class="hechos">${lista.slice(0, 3).map((h) => fila(h, ` · <b class="distancia">${esc(distancia(antesDe ? t - h.tr[1] : h.tr[0] - t, antesDe))}</b>`)).join('')}</ul>` : '';
   const otroNombre = nombre !== l.nombre ? `<p class="nombre-epoca">En esta fecha se llamaba <b>${esc(nombre)}</b>.</p>` : '';
   return `<section class="be-card ficha-sec"><div class="be-card__pad">
-      <h3 class="be-card__eyebrow">Qué pasaba aquí ahora</h3>
-      <p class="titulo-ahora">${esc(nombre)} en ${esc(fmtCursor(t))}</p>${otroNombre}
+      <h3 class="be-card__eyebrow">${BE.t('Qué pasaba aquí ahora')}</h3>
+      <p class="titulo-ahora">${esc(BE.t('{lugar} en {fecha}', { lugar: nombre, fecha: fmtCursor(t) }))}</p>${otroNombre}
       ${cuerpo}
     </div></section>
     ${ahora.length && (antes.length || despues.length) ? `<section class="be-card ficha-sec"><div class="be-card__pad"><h3 class="be-card__eyebrow">Conectado con ${esc(nombre)}, visto desde ${esc(fmtAnio(Math.floor(t)))}</h3>${conectado('Antes', antes, true)}${conectado('Después', despues, false)}</div></section>` : ''}`;
@@ -292,28 +292,28 @@ function fichaLugar(id) {
   const cartasDe = BE.D.cartas.filter((c) => BE.origenesCarta(c).includes(id));
   const cartasA = BE.D.cartas.filter((c) => BE.destinosCarta(c).includes(id));
   const hallazgos = (BE.D.hallazgos || []).filter((h) => h.lugar_hallazgo === id);
-  const tipo = TIPOS[l.tipo] || l.tipo;
+  const tipo = BE.t(TIPOS[l.tipo] || l.tipo);
   // Si el tipo ya dice que es una región, la nota no lo repite («Región · el punto solo la representa»).
-  const prec = { punto: '', zona: REGIONES.has(l.tipo) ? ' · el punto solo la representa' : ' · región: el punto solo la representa', incierto: ' · ubicación incierta' }[l.precision] || '';
+  const prec = BE.t({ punto: '', zona: REGIONES.has(l.tipo) ? ' · el punto solo la representa' : ' · región: el punto solo la representa', incierto: ' · ubicación incierta' }[l.precision] || '');
   const incierta = cands || l.precision === 'incierto';
   const deCarta = (c) => ((c.escritor || 'pablo') === 'pablo' ? '' : `de ${persona(c.escritor)} · `);
   const noSabemos = [...(l.no_afirmamos || [])];
   if (cands) noSabemos.unshift(`No sabemos con seguridad dónde estaba ${l.nombre}.`);
   else if (l.precision === 'incierto') noSabemos.unshift(`No se conoce el sitio exacto de ${l.nombre}: el punto es aproximado.`);
   const tira = historiaHtml(id);
-  return `${BE.migas('Lugares', l.nombre)}${BE.cerrarHtml()}
+  return `${BE.migas(BE.t('Lugares'), l.nombre)}${BE.cerrarHtml()}
     <section class="be-card"><div class="be-card__pad">
-      <div class="be-card__eyebrow"><span class="icono-lugar" aria-hidden="true"></span>${esc(tipo + prec)}</div>${incierta ? '<span class="insignia-incierta">identificación incierta</span>' : ''}
+      <div class="be-card__eyebrow"><span class="icono-lugar" aria-hidden="true"></span>${esc(tipo + prec)}</div>${incierta ? `<span class="insignia-incierta">${BE.t('identificación incierta')}</span>` : ''}
       <h2 class="be-card__title">${esc(l.nombre)}</h2>
       ${BE.nombresHtml(l)}
       ${l.resumen ? `<p class="be-card__body">${esc(l.resumen)}</p>` : ''}
       ${BE.enlacesHtml(l.enlaces)}
-    </div><div class="be-card__foot">${BE.estadoHtml(l.estado)}<span class="be-spacer"></span>${l.coord_url ? `<a class="be-wol" href="${esc(l.coord_url)}" ${EXTERNO} title="Solo tomamos el punto, nunca su identificación">Coordenada: ${/^openbible/.test(l.coord_fuente || '') ? 'OpenBible.info (CC BY 4.0)' : esc(String(l.coord_fuente || 'fuente').split(':')[0])}</a>` : ''}</div></section>
+    </div><div class="be-card__foot">${BE.estadoHtml(l.estado)}<span class="be-spacer"></span>${l.coord_url ? `<a class="be-wol" href="${esc(l.coord_url)}" ${EXTERNO} title="${esc(BE.t('Solo tomamos el punto, nunca su identificación'))}">${BE.t('Coordenada:')} ${/^openbible/.test(l.coord_fuente || '') ? 'OpenBible.info (CC BY 4.0)' : esc(String(l.coord_fuente || 'fuente').split(':')[0])}</a>` : ''}</div></section>
     ${formaHtml(l)}
     ${candidatosHtml(l)}
     <div id="lugar-ahora" data-clave="${esc(claveAhora(id, E.t))}">${ahoraHtml(id, E.t)}</div>
     ${tira}
-    ${paradas.length ? `<section class="be-card ficha-sec"><div class="be-card__pad"><h3 class="be-card__eyebrow">Pablo estuvo aquí <b class="cuenta">${paradas.length}</b></h3>
+    ${paradas.length ? `<section class="be-card ficha-sec"><div class="be-card__pad"><h3 class="be-card__eyebrow">${BE.t('Pablo estuvo aquí')} <b class="cuenta">${paradas.length}</b></h3>
       <div class="be-list">${paradas.map((s) => BE.botonSel(`parada:${s.key}`, s.viaje.nombre, `${esc(s.p.referencia)} · ${esc(s.narrativa ? `${fechaCorta(s.p.fecha)}, fecha aproximada` : (s.p.fecha?.texto || ''))}`)).join('')}</div></div></section>` : ''}
     ${otras.length ? `<section class="be-card ficha-sec"><div class="be-card__pad"><h3 class="be-card__eyebrow">Otros viajes que pasan por aquí <b class="cuenta">${otras.length}</b></h3>
       <div class="be-list">${otras.map((h) => BE.botonSel(h.sel, h.titulo, esc(`${(h.pasajes || []).join('; ')} · ${fechaTexto(h)}`))).join('')}</div></div></section>` : ''}
@@ -380,7 +380,7 @@ BE.tipo('lugar', {
   buscar(q, nq, puntuar) {
     const out = [];
     for (const l of Object.values(BE.L)) {
-      const p = puntuar([l.nombre, ...(l.nombres || []).map((n) => n.nombre), ...(BE.candidatosDe(l) || []).map((c) => c.nombre)]);
+      const p = puntuar([l.nombre, ...(l.nombres || []).map((n) => n.nombre), ...(BE.candidatosDe(l) || []).map((c) => c.nombre), ...(l._es || [])]);
       if (!p) continue;
       const hoy = BE.nombreHoy(l);
       // Cuántos hechos fechados tiene; sin ninguno no se dice «0» (be-u66.3), y uno es «1 hecho», no «1 paradas».

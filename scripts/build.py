@@ -28,6 +28,7 @@ import yaml
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import bible_coverage as cov  # noqa: E402
 import formas  # noqa: E402
+import languages  # noqa: E402
 
 RAIZ = Path(__file__).resolve().parent.parent
 MAP_PATH = RAIZ / "scripts" / "migration" / "map.yaml"
@@ -862,7 +863,8 @@ def tramos_aparte(v):
 def componer(datos, hoy, leg=None):
     """data.json a partir de los datos en inglés. Devuelve (salida, legado, errores del adaptador)."""
     leg = leg or Legacy(load_map())
-    L = legacy_data(datos, leg)
+    # Los textos en otro idioma van en su propio fichero (capas_idioma); data.json sigue siendo el español de siempre.
+    L = legacy_data(languages.strip(datos), leg)
     cartas = sorted(L["cartas"], key=lambda c: clave_fecha(c) + (
         ORDEN_LIBROS.index(c["id"]) if c["id"] in ORDEN_LIBROS else 99, c["id"]))
     salida = {
@@ -887,6 +889,65 @@ def componer(datos, hoy, leg=None):
         "cobertura": cov.para_el_sitio(datos),
     }
     return salida, L, list(leg.errors)
+
+
+def capas_idioma(datos, leg=None):
+    """{idioma: capa} con los textos de cada idioma de languages.LANGUAGES, para site/data.<idioma>.json.
+
+    La capa tiene las claves y la forma de data.json: `lugares`, `personas` y `eventos` (y los demás tipos) por id, cada
+    ficha con solo sus textos en ese idioma; `fuentes` por id con `titulo`, `obra` y `url`; `libros` por slug. Una lista
+    de la ficha (nombres, enlaces, relaciones, historial) conserva su largo y su orden de data.json, con null donde no hay
+    texto: el sitio funde la capa sobre data.json elemento a elemento. Los cargos de una persona van en `offices`, como
+    en data.json, con los textos de sus relaciones holds_office y de sus periodos. Solo entran las fichas cuyo primer nivel lleva el
+    idioma; validate.py ya ha comprobado que están enteras."""
+    leg = leg or Legacy(load_map())
+    voc = Vocabulary(datos.get("vocabulary"))
+    cargos = compile_offices(datos, voc, leg)
+    out = {}
+    for lang in languages.LANGUAGES:
+        capa = {"formato": FORMATO, "idioma": lang}
+        # Los cargos (`offices` de data.json) salen de las relaciones holds_office y de los periodos con persona: se
+        # compilan otra vez con los textos de este idioma en su sitio, en el mismo orden, y la capa lleva lo que cambia.
+        cargos_lang = compile_offices({"people": languages.localized(datos["people"], lang),
+                                       "periods": languages.localized(datos["periods"], lang)}, voc, leg)
+        for t in TYPES:
+            raiz = leg.roots[t]
+            fichas = {}
+            for o in datos[t]:
+                if not isinstance(o.get(lang), dict):
+                    continue
+                o = limpio(o)
+                if t == "people":
+                    # data.json no lleva en `relaciones` las de holds_office (van en `offices`): mismo largo y orden.
+                    o["relations"] = [r for r in o.get("relations") or [] if isinstance(r, dict) and r.get("type") != "holds_office"]
+                fichas[o["id"]] = leg.translate(languages.layer(o, lang), raiz, t)
+                if t == "people":
+                    of = languages.changed_texts(cargos.get(o["id"]), cargos_lang.get(o["id"]))
+                    if of:
+                        fichas[o["id"]]["offices"] = of
+            capa[raiz] = fichas
+        capa["fuentes"] = {}
+        for fid in sorted(datos["sources"]):
+            f = datos["sources"][fid]
+            x = languages.source_in(f, datos["books"], lang)
+            if x and x.get("url") != f.get("url"):
+                capa["fuentes"][fid] = {"titulo": x["title"], "obra": x["work"], "url": x["url"]}
+        capa["libros"] = {b["slug"]: leg.translate(languages.layer(b, lang), "libros.libros[]", "books.books[]")
+                          for b in datos["books"] if isinstance(b.get(lang), dict)}
+        out[lang] = capa
+    return out
+
+
+def escribir_capa(capa, rutas, ruta_js):
+    """data.<idioma>.json y su copia data.<idioma>.js para file://, como escribir_json."""
+    texto = json.dumps(capa, ensure_ascii=False, indent=1) + "\n"
+    for r in rutas:
+        r.parent.mkdir(parents=True, exist_ok=True)
+        r.write_text(texto, encoding="utf-8")
+    js = (f"// Copia de data.{capa['idioma']}.json para abrir el sitio desde file://. La genera scripts/build.py.\n"
+          f"window.BIBLICAL_ATLAS_DATA_{capa['idioma'].upper()} = " + json.dumps(capa, ensure_ascii=False) + ";\n")
+    ruta_js.parent.mkdir(parents=True, exist_ok=True)
+    ruta_js.write_text(js, encoding="utf-8")
 
 
 def escribir_json(salida, rutas, ruta_js):
@@ -1400,9 +1461,14 @@ def main(argv=None):
     args = ap.parse_args(argv)
     datos, _ = cargar(args.data)
     errores = integridad(datos)
-    salida = legado = None
+    salida = legado = capas = None
     if not errores:
         salida, legado, errores = componer(datos, datetime.date.today().isoformat())
+    if not errores:
+        leg = Legacy(load_map())
+        capas = capas_idioma(datos, leg)
+        errores = list(leg.errors)
+        datos = languages.strip(datos)
     if errores:
         for e in errores:
             print("ERROR", e, file=sys.stderr)
@@ -1411,12 +1477,17 @@ def main(argv=None):
     if args.out:
         destino = Path(args.out).resolve()
         escribir_json(salida, [destino / "data.json"], destino / "data.js")
+        for lang, capa in capas.items():
+            escribir_capa(capa, [destino / f"data.{lang}.json"], destino / f"data.{lang}.js")
         escribir_resumen(salida, destino / "stats.json")
         n_hf = escribir_sqlite(salida, destino / "biblical-atlas.sqlite")
         escribir_registro(salida, legado, datos, destino / "registro")
         donde = f" en {destino}"
     else:
         escribir_json(salida, [RAIZ / "dist" / "data.json", RAIZ / "site" / "data.json"], RAIZ / "site" / "data.js")
+        for lang, capa in capas.items():
+            escribir_capa(capa, [RAIZ / "dist" / f"data.{lang}.json", RAIZ / "site" / f"data.{lang}.json"],
+                          RAIZ / "site" / f"data.{lang}.js")
         escribir_resumen(salida, RAIZ / "site" / "stats.json")
         n_hf = escribir_sqlite(salida, RAIZ / "dist" / "biblical-atlas.sqlite")
         escribir_registro(salida, legado, datos, RAIZ / "docs" / "investigacion" / "registro")
@@ -1430,6 +1501,10 @@ def main(argv=None):
     print(f"build: {len(rels)} relaciones, {sum(1 for r in rels if not r.get('reference'))} sin referencia, "
           f"{sum(1 for r in rels if r.get('duplicate_of'))} copias de un par que no mandan, "
           f"{sum(len(p.get('offices') or []) for p in salida['personas'].values())} cargos.")
+    for lang, capa in capas.items():
+        hay = [f"{len(capa[k])} {k}" for k in ("lugares", "personas", "eventos", "viajes", "cartas", "periodos", "hallazgos",
+                                                "recorridos", "libros", "fuentes") if capa.get(k)]
+        print(f"build: data.{lang}.json con {', '.join(hay) if hay else 'nada todavía'}.")
     return 0
 
 
