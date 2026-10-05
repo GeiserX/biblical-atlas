@@ -26,6 +26,10 @@ jobs:
           # Este trabajo no hace push y deploy-pages usa el token OIDC; un token persistido lo leerían pip
           # y cualquier plugin de MkDocs.
           persist-credentials: false
+          # build.py fecha los datos con el último commit que tocó data/: con la historia entera (sin los ficheros
+          # viejos), un despliegue que solo toca la documentación no cambia la versión del service worker.
+          fetch-depth: 0
+          filter: blob:none
       - uses: actions/setup-python@v7
         with:
           python-version: "3.12"
@@ -36,7 +40,7 @@ jobs:
       - run: mkdocs build --strict
       - name: La aplicación sigue entera y la documentación está dentro
         run: |
-          for f in $(git ls-files site) site/data.json site/data.js site/data.core.json site/data.detail.json site/data.en.json site/data.en.js site/stats.json; do
+          for f in $(git ls-files site) site/data.json site/data.js site/data.core.json site/data.detail.json site/data.en.json site/data.en.js site/stats.json site/sw-manifest.js; do
             test -f "$f" || { echo "falta $f"; exit 1; }
           done
           test -f site/docs/index.html

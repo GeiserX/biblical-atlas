@@ -2,9 +2,12 @@
 """Pruebas de lo que scripts/build.py compila de un par escrito en las dos fichas. Uso: python3 scripts/test_build.py
 
 Trabajan sobre un data/ pequeño en una carpeta temporal, con el vocabulario de verdad (data/vocabulary.yaml)."""
+import hashlib
 import json
+import os
 import shutil
 import sqlite3
+import subprocess
 import sys
 import tempfile
 import unittest
@@ -174,6 +177,82 @@ class Chunks(unittest.TestCase):
         self.assertEqual(core["viajes"], [{"id": "a", "paradas": [{"orden": 1}, {"orden": 2}]}, {"id": "b"}])
         self.assertEqual(detail["viajes"], [{"paradas": [{"razon": "r1"}, None]}, None])
         self.assertEqual(build.merge_chunks(core, detail), salida)
+
+
+class SwManifest(unittest.TestCase):
+    """site/sw-manifest.js: la huella de cada fichero que el service worker puede servir y una versión que cambia con
+    cualquiera de ellos o con el propio sw.js, y no con la documentación ni los datos de prueba."""
+
+    def setUp(self):
+        self.tmp = tempfile.TemporaryDirectory()
+        self.site = Path(self.tmp.name)
+        for rel in ("index.html", "js/a.js", "maps/m.webp", "docs/index.html", "_local/x/data.json", "README.md",
+                    ".DS_Store", "sw.js"):
+            (self.site / rel).parent.mkdir(parents=True, exist_ok=True)
+            (self.site / rel).write_text(rel, encoding="utf-8")
+
+    def tearDown(self):
+        self.tmp.cleanup()
+
+    def manifest(self):
+        version = build.write_sw_manifest(self.site)
+        text = (self.site / "sw-manifest.js").read_text(encoding="utf-8")
+        data = json.loads(text.split("self.SW_MANIFEST = ", 1)[1].rstrip().rstrip(";"))
+        self.assertEqual(data["version"], version)
+        return data
+
+    def test_lists_what_the_worker_serves_with_its_hash(self):
+        files = self.manifest()["files"]
+        self.assertEqual(sorted(files), ["index.html", "js/a.js", "maps/m.webp"])
+        self.assertEqual(files["js/a.js"], hashlib.sha256(b"js/a.js").hexdigest())
+
+    def test_the_version_follows_the_published_files_and_the_worker(self):
+        first = self.manifest()["version"]
+        self.assertEqual(self.manifest()["version"], first)                 # nada cambió: la misma versión
+        (self.site / "docs/index.html").write_text("otra", encoding="utf-8")
+        (self.site / "_local/x/data.json").write_text("otra", encoding="utf-8")
+        self.assertEqual(self.manifest()["version"], first)                 # ni la documentación ni _local/
+        (self.site / "js/a.js").write_text("otra", encoding="utf-8")
+        second = self.manifest()["version"]
+        self.assertNotEqual(second, first)
+        (self.site / "sw.js").write_text("otra", encoding="utf-8")
+        self.assertNotEqual(self.manifest()["version"], second)
+
+
+class FechaDatos(unittest.TestCase):
+    """"generado" es la fecha del último commit que tocó los datos, no la de compilación: un despliegue de otro día que
+    solo toca la documentación deja iguales los data*.json, y con ellos la versión del service worker."""
+
+    def setUp(self):
+        self.tmp = tempfile.TemporaryDirectory()
+        self.repo = Path(self.tmp.name)
+        for d in ("data", "docs"):
+            (self.repo / d).mkdir()
+
+    def tearDown(self):
+        self.tmp.cleanup()
+
+    def commit(self, rel, fecha):
+        (self.repo / rel).write_text(fecha, encoding="utf-8")
+        env = dict(os.environ, GIT_AUTHOR_DATE=f"{fecha}T12:00:00", GIT_COMMITTER_DATE=f"{fecha}T12:00:00",
+                   GIT_CONFIG_GLOBAL=os.devnull, GIT_CONFIG_SYSTEM=os.devnull)
+        git = ["git", "-C", str(self.repo), "-c", "user.name=t", "-c", "user.email=t@t", "-c", "commit.gpgsign=false"]
+        if not (self.repo / ".git").exists():
+            subprocess.run(git + ["init", "-q"], check=True, env=env)
+        subprocess.run(git + ["add", rel], check=True, env=env)
+        subprocess.run(git + ["commit", "-q", "--no-verify", "-m", rel], check=True, env=env)
+
+    def test_follows_the_last_commit_to_data_not_the_day_of_the_build(self):
+        self.commit("data/a.yaml", "2026-01-02")
+        self.commit("docs/b.md", "2026-03-04")          # solo documentación, otro día
+        self.assertEqual(build.fecha_datos(self.repo / "data"), "2026-01-02")
+
+    def test_today_with_uncommitted_data_or_outside_git(self):
+        hoy = build.datetime.date.today().isoformat()
+        self.assertEqual(build.fecha_datos(self.repo / "data"), hoy)       # sin git
+        self.commit("data/a.yaml", "2026-01-02")
+        (self.repo / "data/a.yaml").write_text("cambiado", encoding="utf-8")
+        self.assertEqual(build.fecha_datos(self.repo / "data"), hoy)       # cambios sin commit
 
 
 class SqliteRepite(unittest.TestCase):

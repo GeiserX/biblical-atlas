@@ -50,6 +50,7 @@ __pycache__/
 /site/data.*.js
 /site/_local/
 /site/docs/
+/site/sw-manifest.js
 
 # Beads / Dolt files (added by bd init)
 .dolt/
