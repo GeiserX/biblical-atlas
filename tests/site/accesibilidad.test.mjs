@@ -373,6 +373,45 @@ for (const screen of ['1440', '430']) {
   });
 }
 
+test('430: ← → from «Salir y explorar» on the open tour card leave the focus on the card\'s title button', async () => {
+  const page = await keyboardPage('430', TOUR);
+  await page.locator('#vista-recorrido [data-recorrido-abrir]').click();
+  await settle(page);
+  await page.locator('#vista-recorrido [data-recorrido-salir]').focus();
+  await page.keyboard.press('ArrowRight');
+  await settle(page);
+  assert.ok(await page.evaluate(() => document.activeElement.matches('#vista-recorrido [data-recorrido-abrir]')), 'the focus fell out of the card');
+  assert.deepEqual(page.errors, []);
+  await page.context().close();
+});
+
+test('the map speaks Spanish to a screen reader: «Mapa: …», «Acercar», «Alejar»', async () => {
+  const page = await keyboardPage('1440', 't=50.3000');
+  const names = await page.evaluate(() => ({
+    canvas: document.querySelector('#mapa-gl canvas')?.getAttribute('aria-label') || '',
+    zoomIn: document.querySelector('.maplibregl-ctrl-zoom-in')?.getAttribute('aria-label') || '',
+    zoomOut: document.querySelector('.maplibregl-ctrl-zoom-out')?.getAttribute('aria-label') || '',
+  }));
+  assert.match(names.canvas, /^Mapa: /);
+  assert.equal(names.zoomIn, 'Acercar');
+  assert.equal(names.zoomOut, 'Alejar');
+  await page.context().close();
+});
+
+for (const [screen, want] of [['1440', 'panel-cuerpo'], ['430', 'estudio-boton']]) {
+  test(`${screen}: Escape closes the connection and leaves the focus on ${want}, never on the page`, async () => {
+    const page = await keyboardPage(screen, 'sel=persona:pablo&t=50.3000');
+    await page.evaluate(() => window.BE.conexion.abrir('persona:pablo', 'persona:pedro'));
+    await settle(page);
+    await page.locator('#vista-conexion button:not(.casilla)').first().focus();
+    await page.keyboard.press('Escape');
+    assert.equal(await page.evaluate(() => document.querySelector('#vista-conexion').checkVisibility()), false, 'Escape did not close the connection');
+    assert.equal((await focused(page)).id, want, 'the focus fell to the start of the page');
+    assert.deepEqual(page.errors, []);
+    await page.context().close();
+  });
+}
+
 for (const [screen, want] of [['1440', 'panel-cuerpo'], ['430', 'estudio-boton']]) {
   test(`${screen}: Escape closes the graph and leaves the focus on ${want}, never on the page`, async () => {
     const page = await keyboardPage(screen, 'grafo=pablo&t=50.3000');
