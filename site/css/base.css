@@ -101,6 +101,8 @@ a { color: var(--link); }
 .panel::after { display: none; }
 .hoja-asa { display: none; }
 .panel-cuerpo { flex: 1; overflow: auto; padding: 14px 16px 28px; display: flex; flex-direction: column; gap: 12px; background: var(--surface-2); outline: none; }
+/* El foco que llevan a la ficha los saltos, la búsqueda y Escape se ve: hacia dentro, porque la ficha se desplaza. */
+.panel-cuerpo:focus-visible { outline: 2px solid var(--focus); outline-offset: -2px; }
 .panel-cuerpo > * { flex-shrink: 0; }
 .panel-cuerpo .be-card__title { font-size: var(--fs-3xl); }
 

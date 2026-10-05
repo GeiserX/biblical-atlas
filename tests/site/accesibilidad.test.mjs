@@ -277,6 +277,7 @@ const focused = (page) => page.evaluate(() => {
   const a = document.activeElement;
   return { id: a?.id || '', foco: a?.dataset?.foco || '', salto: a?.dataset?.salto || '', text: (a?.getAttribute('aria-label') || a?.textContent || '').trim().slice(0, 60) };
 });
+const outline = (page) => page.evaluate(() => getComputedStyle(document.activeElement).outlineStyle);
 const where = (page) => page.evaluate(() => ({ t: window.BE.E.t, sel: window.BE.E.sel ? `${window.BE.E.sel.tipo}:${window.BE.E.sel.id}` : null, step: window.BE.recorridos.pasoDe('cartas-y-ciudades') }));
 
 test('the first two Tab stops skip the map: «Ir a la ficha» and «Ir a la línea de tiempo»', async () => {
@@ -288,6 +289,7 @@ test('the first two Tab stops skip the map: «Ir a la ficha» and «Ir a la lín
   await page.keyboard.press('Shift+Tab');
   await page.keyboard.press('Enter');
   assert.equal((await focused(page)).id, 'panel-cuerpo', '«Ir a la ficha» did not move the focus to the card');
+  assert.notEqual(await outline(page), 'none', 'the focus on the card is not drawn');
   assert.deepEqual(page.errors, []);
   await page.context().close();
 });
@@ -300,6 +302,7 @@ test('430: with the sheet folded, «Ir a la ficha» unfolds it and moves the foc
   await page.keyboard.press('Enter');
   assert.equal(await page.locator('#hoja-asa').getAttribute('aria-expanded'), 'true', '«Ir a la ficha» left the sheet folded');
   assert.equal((await focused(page)).id, 'panel-cuerpo', '«Ir a la ficha» did not move the focus to the card');
+  assert.notEqual(await outline(page), 'none', 'the focus on the card is not drawn');
   assert.deepEqual(page.errors, []);
   await page.context().close();
 });
