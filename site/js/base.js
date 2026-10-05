@@ -449,7 +449,12 @@ function iniciarEventos() {
     }
   });
   document.querySelectorAll('[data-mapa]').forEach((b) => b.addEventListener('click', () => BE.ponerMapa(b.dataset.mapa)));
-  document.querySelectorAll('[data-salto]').forEach((b) => b.addEventListener('click', () => $(b.dataset.salto)?.focus()));
+  document.querySelectorAll('[data-salto]').forEach((b) => b.addEventListener('click', () => {
+    const destino = $(b.dataset.salto);
+    // En el teléfono, con la hoja plegada, la ficha no se ve y no toma el foco: primero se despliega, como con el asa.
+    if (destino && !destino.checkVisibility() && E.hojaPlegada) $('#hoja-asa').click();
+    destino?.focus();
+  }));
   $('#compartir').addEventListener('click', async () => {
     guardarHash();
     await new Promise((r) => setTimeout(r, 300));

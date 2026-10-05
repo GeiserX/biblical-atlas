@@ -292,6 +292,18 @@ test('the first two Tab stops skip the map: «Ir a la ficha» and «Ir a la lín
   await page.context().close();
 });
 
+test('430: with the sheet folded, «Ir a la ficha» unfolds it and moves the focus to the card', async () => {
+  const page = await keyboardPage('430', 'sel=persona:pablo&t=50.3000');
+  await page.locator('#hoja-asa').click();
+  assert.equal(await page.locator('#hoja-asa').getAttribute('aria-expanded'), 'false', 'the sheet did not fold');
+  await page.locator('.salto[data-salto="#panel-cuerpo"]').focus();
+  await page.keyboard.press('Enter');
+  assert.equal(await page.locator('#hoja-asa').getAttribute('aria-expanded'), 'true', '«Ir a la ficha» left the sheet folded');
+  assert.equal((await focused(page)).id, 'panel-cuerpo', '«Ir a la ficha» did not move the focus to the card');
+  assert.deepEqual(page.errors, []);
+  await page.context().close();
+});
+
 test('choosing in the card or in the search keeps the focus in the card', async () => {
   const page = await keyboardPage('1440', 'sel=persona:pablo&t=50.3000');
   await page.locator('#panel-cuerpo [data-sel="lugar:tarso"]').first().focus();
