@@ -243,11 +243,13 @@ test('a new deploy shows the notice and waits for the click to reload', async ()
   // What the visit fetched after the install: the new version has to take it from this cache, not from the network.
   for (const rel of ['data.detail.json', 'maps/mundo-antiguo.webp', 'videos-personas.json']) await waitCached(page, rel);
   const before = await page.evaluate(() => caches.keys());
-  // A new deploy: the same files under another version.
+  // A new deploy while the reader is offline: the same files under another version. When the network comes back the
+  // page looks for it by itself, with no update() from the test.
+  for (const p of [page, second]) await p.evaluate(() => { window.__same = true; });
+  await offline(context);
   const manifest = fs.readFileSync(path.join(SITE_DIR, 'sw-manifest.js'), 'utf8');
   server.overrides.set('/sw-manifest.js', manifest.replace(/"version": "([0-9a-f]+)"/, '"version": "$1-2"'));
-  for (const p of [page, second]) await p.evaluate(() => { window.__same = true; });
-  await page.evaluate(async () => (await navigator.serviceWorker.getRegistration()).update());
+  await offline(context, false);
   const notice = page.locator('#nueva-version[role="status"]');
   await notice.waitFor();
   assert.match(await notice.textContent(), /Hay una versión nueva/);
@@ -276,6 +278,17 @@ test('a new deploy shows the notice and waits for the click to reload', async ()
   assert.equal(await page.evaluate(() => window.__same), true, 'the page reloaded by itself');
   assert.equal(await second.evaluate(() => window.__same), true, 'the other page reloaded by itself');
   assert.equal((await page.evaluate(() => caches.keys())).filter((k) => k.startsWith('biblical-atlas-v-')).length, 2);
+  // A page opened while the new version waits shows the notice too, and «Más tarde» closes it without reloading.
+  const third = await newPage(context);
+  await third.goto(`${base}acerca.html`);
+  const later = third.locator('#nueva-version');
+  await later.waitFor();
+  await third.evaluate(() => { window.__same = true; });
+  await later.getByRole('button', { name: 'Más tarde' }).click();
+  assert.equal(await later.count(), 0, '«Más tarde» left the notice open');
+  await third.waitForTimeout(1000);
+  assert.equal(await third.evaluate(() => window.__same), true, '«Más tarde» reloaded the page');
+  assert.equal(await page.evaluate(() => window.__same), true, '«Más tarde» reloaded another page');
   // The click takes it: this page and the other one reload, and only the new version's cache is left. Offline, so
   // that the card can only open if the install copied the detail, the maps and the videos from the old version.
   await offline(context);
