@@ -92,10 +92,12 @@ En la ficha de un suceso, una parada, una carta, un viaje o un capítulo, «Enla
 
 | Tecla | Qué hace |
 |---|---|
+| Tabulador, al entrar | «Ir a la ficha» e «Ir a la línea de tiempo», que saltan los puntos del mapa. Se ven al recibir el foco |
 | `/` | Ir a la búsqueda |
 | Espacio | Reproducir o pausar |
 | ← → | Mover el cursor un paso (depende de la escala de la línea) |
 | Mayúsculas + ← → | Saltar a la parada o carta anterior o siguiente |
+| ← → en la tarjeta del recorrido | Con el foco en uno de sus botones: la parada anterior o la siguiente, sin mover la fecha a mano |
 | Esc | Borrar la búsqueda y la selección |
 | `T` | Ampliar o reducir la línea de tiempo |
 | Alt + arrastrar sobre la línea | Regla entre dos fechas |
