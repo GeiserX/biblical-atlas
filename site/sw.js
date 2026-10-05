@@ -20,6 +20,7 @@ const PREFIX = 'biblical-atlas-v-';
 const CACHE = PREFIX + VERSION;
 const TILES = 'biblical-atlas-teselas';
 const TILE_LIMIT = 600;          // teselas guardadas como mucho; al pasar, se borran las más antiguas
+const IS_TILE = /\/\d+\/\d+\/\d+\.pbf$/;  // z/x/y.pbf: solo esto cuenta para el tope; estilo, TileJSON, sprites y glifos se quedan
 const TILE_HOST = /(^|\.)openfreemap\.org$/;
 const SHA = 'x-sha256';          // cabecera con la huella de lo que se guarda: copiarlo a la versión siguiente no lo relee
 const BASE = new URL('./', self.location).href;
@@ -121,15 +122,17 @@ async function remember(urls) {
 }
 
 // El tope se mira en la caché, no en un contador: el navegador para y arranca el worker a menudo, y un contador en
-// memoria vuelve a cero cada vez. Se deja pasar 50 de margen para no recortar en cada tesela.
+// memoria vuelve a cero cada vez. Se deja pasar 50 de margen para no recortar en cada tesela. Solo cuentan y se borran
+// las teselas: el estilo, el TileJSON, los sprites y los glifos se guardan los primeros de cada visita, y si salieran
+// por antiguos, sin red el mapa actual caería a nuestro relieve aunque se hubiera visto. Son pocos y no crecen.
 async function keepTile(tiles, url, res) {
   await tiles.put(url, res);
-  const keys = await tiles.keys();
+  const keys = (await tiles.keys()).filter((k) => IS_TILE.test(new URL(k.url ?? k).pathname));
   if (keys.length <= TILE_LIMIT + 50) return;
   for (const k of keys.slice(0, keys.length - TILE_LIMIT)) await tiles.delete(k);
 }
 /** OpenFreeMap: de la red, y sin red de lo ya visto. Cada respuesta buena se guarda mientras la página ya la lee, y al
-    pasar de TILE_LIMIT se borran las más antiguas. */
+    pasar de TILE_LIMIT teselas se borran las más antiguas. */
 async function tile(e) {
   const tiles = await caches.open(TILES);
   try {

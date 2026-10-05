@@ -66,7 +66,7 @@ Publicado por https, el sitio abre sin conexión después de una visita con red.
 |---|---|
 | Las tres páginas, el CSS, el JS, las fuentes, los iconos, `data.core.json` (`PRECACHE`) y MapLibre 6.11.2 de unpkg (`LIBS`) | Al instalarse, en la primera visita: 6,1 MB sin comprimir, 1,8 MB comprimidos. Casi todo ya está en la caché del navegador por la propia visita. |
 | `data.detail.json`, `data.en.json`, `data.json` (lo lee el calendario), las listas de vídeos, `i18n/` y los mapas de fondo | La primera vez que el sitio los pide. Lo que la primera visita pidió antes de que el worker tomara la página se guarda al tomarla, desde la caché del navegador. |
-| El estilo, las teselas y los iconos del mapa actual (OpenFreeMap) | Cuando se ven, en otra caché de 600 respuestas como mucho. Con red van siempre a la red; sin red, salen de lo ya visto. |
+| El estilo, las teselas y los iconos del mapa actual (OpenFreeMap) | Cuando se ven, en otra caché. Las teselas tienen un tope de 600 y salen primero las más antiguas; el estilo, el TileJSON, los sprites y los glifos no cuentan para el tope y no salen. Con red van siempre a la red; sin red, salen de lo ya visto. |
 
 Nada más se descarga por adelantado. `stats.json` no se guarda: el sitio no lo pide, lo leen las insignias del README.
 
