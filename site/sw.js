@@ -120,12 +120,13 @@ async function remember(urls) {
   }
 }
 
-let puts = 0;
+// El tope se mira en la caché, no en un contador: el navegador para y arranca el worker a menudo, y un contador en
+// memoria vuelve a cero cada vez. Se deja pasar 50 de margen para no recortar en cada tesela.
 async function keepTile(tiles, url, res) {
   await tiles.put(url, res);
-  if (++puts % 50) return;
   const keys = await tiles.keys();
-  for (const k of keys.slice(0, Math.max(0, keys.length - TILE_LIMIT))) await tiles.delete(k);
+  if (keys.length <= TILE_LIMIT + 50) return;
+  for (const k of keys.slice(0, keys.length - TILE_LIMIT)) await tiles.delete(k);
 }
 /** OpenFreeMap: de la red, y sin red de lo ya visto. Cada respuesta buena se guarda mientras la página ya la lee, y al
     pasar de TILE_LIMIT se borran las más antiguas. */
