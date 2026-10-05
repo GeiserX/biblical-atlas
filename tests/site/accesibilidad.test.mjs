@@ -324,6 +324,19 @@ test('choosing in the card or in the search keeps the focus in the card', async 
   await page.context().close();
 });
 
+test('a search result that opens no card («Pablo y Pedro», the connection) does not send the focus to the old card', async () => {
+  const page = await keyboardPage('1440', 'sel=persona:pablo&t=50.3000');
+  await page.keyboard.press('/');
+  await page.keyboard.type('Pablo y Pedro', { delay: 10 });
+  await page.waitForFunction(() => document.querySelectorAll('#resultados [role="option"]').length > 0);
+  await page.keyboard.press('Enter');
+  await settle(page);
+  assert.ok(await page.evaluate(() => document.querySelector('#vista-conexion').checkVisibility()), 'the connection did not open');
+  assert.notEqual((await focused(page)).id, 'panel-cuerpo', 'the focus went to the card of the previous selection');
+  assert.deepEqual(page.errors, []);
+  await page.context().close();
+});
+
 test('Enter twice on «Parada siguiente» in the card goes two stops on, with the focus kept on that button', async () => {
   const page = await keyboardPage('1440', TOUR);
   await page.locator('#panel-cuerpo .recorrido-sig').focus();
