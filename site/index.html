@@ -95,6 +95,7 @@
 <body>
 <div class="be-app app" id="app">
   <header class="be-topbar topbar">
+    <h1 class="sr-only">biblical-atlas: la Biblia en el mapa y en el tiempo</h1>
     <!-- Saltos para el teclado: el mapa tiene un botón por lugar, más de cien paradas del tabulador antes de la ficha. Se
          ven al recibir el foco. Botones y no enlaces: un #ancla cambiaría la dirección, que guarda la vista (base.js). -->
     <div class="saltos" role="group" aria-label="Saltar a"><button type="button" class="salto" data-salto="#panel-cuerpo">Ir a la ficha</button><button type="button" class="salto" data-salto="#pista">Ir a la línea de tiempo</button></div>
@@ -258,7 +259,8 @@
         <p class="portada-credito">Relieve: Natural Earth, USGS, NOAA, Copernicus, Mapzen · <a href="acerca.html#gracias">Créditos</a></p>
       </header>
 
-      <main class="portada-cuerpo">
+      <!-- Un div y no un main: el main de la página es el mapa, y este queda dentro de la sección de la portada. -->
+      <div class="portada-cuerpo">
         <section class="portada-preguntas" aria-labelledby="portada-preguntas-tit">
           <div class="portada-wrap">
             <div class="portada-preguntas__cab">
@@ -330,7 +332,7 @@
             <p><a class="portada-enlace" href="acerca.html#datos">Cómo tratamos las fuentes</a></p>
           </div>
         </section>
-      </main>
+      </div>
 
       <footer class="portada-pie">
         <div class="portada-wrap">
