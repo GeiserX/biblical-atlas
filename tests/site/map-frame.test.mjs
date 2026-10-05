@@ -44,8 +44,10 @@ const TYPES = { '.html': 'text/html', '.js': 'text/javascript', '.css': 'text/cs
 function serve(siteDir, dataFile) {
   const server = http.createServer((req, res) => {
     const rel = decodeURIComponent(new URL(req.url, 'http://x').pathname).slice(1) || 'index.html';
-    const file = rel === 'data.json' ? dataFile : path.join(siteDir, rel);
-    if (file !== dataFile && !file.startsWith(siteDir)) { res.writeHead(403).end(); return; }
+    // The chunks of the data (data.core.json, data.detail.json) live beside data.json.
+    const chunk = /^data\.[a-z]+\.json$/.test(rel) ? path.join(path.dirname(dataFile), rel) : null;
+    const file = rel === 'data.json' ? dataFile : chunk || path.join(siteDir, rel);
+    if (file !== dataFile && file !== chunk && !file.startsWith(siteDir)) { res.writeHead(403).end(); return; }
     fs.readFile(file, (err, body) => {
       if (err) { res.writeHead(404).end(); return; }
       res.writeHead(200, { 'content-type': TYPES[path.extname(file)] || 'application/octet-stream' }).end(body);

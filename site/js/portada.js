@@ -182,8 +182,12 @@ hoja.addEventListener('click', (e) => {
 // ---------------------------------------------------------------------------
 let filas = [], activa = 0, todas = 0;
 const maxFilas = () => (estrecha() ? 4 : 6);
+/** La búsqueda contesta con el núcleo; el detalle (js/data-chunks.js) añade la línea que distingue a dos personas del
+    mismo nombre. Si aún no ha llegado, se pide y la lista se rehace al llegar. */
+function reactualizar() { if (document.activeElement === input && input.value.trim()) actualizar(); }
 function filasDe(q) {
   todas = 0;
+  if (BE.D) BE.chunks.ready(reactualizar);
   if (!BE.D) {
     const y = BE.anioPregunta(q);   // la misma regla que la búsqueda del sitio: «607» es a.e.c.
     return y == null ? [] : [{ anio: y, titulo: `Ir a ${BE.fmtAnio(y)}`, forma: 'anio', tipo: 'fecha', meta: 'mueve el cursor de tiempo y enseña quién había' }];

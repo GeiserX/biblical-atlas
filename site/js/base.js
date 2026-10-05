@@ -121,33 +121,7 @@ const E = {
 // ---------------------------------------------------------------------------
 // Datos
 // ---------------------------------------------------------------------------
-/** ?datos=_local/<carril>/data.json carga otro data.json para probar. Solo vale una ruta dentro de _local/
-    (ignorada en git) que acabe en .json. Cualquier otra cosa es un error, para no enseñar en silencio los datos de siempre. */
-function rutaDatos() {
-  const r = new URLSearchParams(location.search).get('datos');
-  if (r == null) return 'data.json';
-  if (/^_local\/[\w./-]+\.json$/.test(r) && !r.split('/').includes('..')) return r;
-  throw new Error(`?datos=${r} no vale: solo se aceptan rutas dentro de _local/ que acaben en .json.`);
-}
-async function cargarDatos() {
-  const ruta = rutaDatos();
-  if (ES_FILE) {
-    const js = ruta.replace(/\.json$/, '.js');
-    if (!window.BIBLICAL_ATLAS_DATA) await cargarScript(js);
-    if (!window.BIBLICAL_ATLAS_DATA) throw new Error(`No encuentro ${js} junto a index.html.`);
-    return window.BIBLICAL_ATLAS_DATA;
-  }
-  const r = await fetch(ruta, { cache: 'no-cache' });
-  if (!r.ok) throw new Error(`${ruta} respondió ${r.status}`);
-  return r.json();
-}
-function cargarScript(src) {
-  return new Promise((ok) => {
-    const s = document.createElement('script');
-    s.src = src; s.onload = ok; s.onerror = ok;
-    document.head.appendChild(s);
-  });
-}
+// El núcleo, el detalle, ?datos= y file:// los lleva js/data-chunks.js (BE.chunks).
 async function cargarVideos() {
   if (ES_FILE) return null;           // fetch no funciona desde file://; la ficha lo explica
   try { const r = await fetch('videos.json', { cache: 'no-cache' }); return r.ok ? await r.json() : {}; } catch { return {}; }
@@ -377,11 +351,15 @@ function aplicarHash(inicial) {
 // Ficha: sin selección la pinta ahora.js; con selección, el tipo registrado
 // ---------------------------------------------------------------------------
 let clavePanel = '';
+const repintarPanel = () => { sucio.panel = true; programar(); };
 function pintarPanel(forzar) {
-  const clave = E.sel ? selTexto(E.sel) : BE.claveAhora();
+  // Una ficha lee los textos del detalle (js/data-chunks.js): mientras llega, un aviso; al llegar, la ficha. «Ahora
+  // mismo» no espera: se pinta con el núcleo y otra vez al llegar el detalle, con los textos de la parada en curso.
+  const listo = E.sel ? BE.chunks.ready(repintarPanel) : BE.chunks.whenReady(repintarPanel);
+  const clave = `${listo ? '' : BE.chunks.failed ? 'fallo|' : 'cargando|'}${E.sel ? selTexto(E.sel) : BE.claveAhora()}`;
   if (!forzar && clave === clavePanel) return;
   clavePanel = clave;
-  const html = E.sel ? TIPOS.get(E.sel.tipo).ficha(E.sel.id) : BE.fichaAhora();
+  const html = E.sel ? (listo ? TIPOS.get(E.sel.tipo).ficha(E.sel.id) : BE.chunks.waitingHtml()) : BE.fichaAhora();
   const cuerpo = $('#panel-cuerpo');
   cuerpo.innerHTML = html;
   if (forzar) cuerpo.scrollTop = 0;
@@ -644,7 +622,7 @@ const inicios = [];
 async function iniciar() {
   iniciarMarcos();
   try {
-    [BE.D, BE.VIDEOS] = await Promise.all([cargarDatos(), cargarVideos()]);
+    [BE.D, BE.VIDEOS] = await Promise.all([BE.chunks.start(), cargarVideos()]);
     await BE.idioma?.apply(BE.D);   // language.js: los textos del idioma de quien lee, encima de los datos
   } catch (err) {
     $('#panel-cuerpo').innerHTML = `<section class="be-card"><div class="be-card__pad"><h2 class="be-card__title">No se pudieron cargar los datos</h2><p class="be-card__body">${esc(err.message)} Mira site/README.md para abrir el sitio en local.</p></div></section>`;

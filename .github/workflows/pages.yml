@@ -36,7 +36,7 @@ jobs:
       - run: mkdocs build --strict
       - name: La aplicación sigue entera y la documentación está dentro
         run: |
-          for f in $(git ls-files site) site/data.json site/data.js site/data.en.json site/data.en.js site/stats.json; do
+          for f in $(git ls-files site) site/data.json site/data.js site/data.core.json site/data.detail.json site/data.en.json site/data.en.js site/stats.json; do
             test -f "$f" || { echo "falta $f"; exit 1; }
           done
           test -f site/docs/index.html

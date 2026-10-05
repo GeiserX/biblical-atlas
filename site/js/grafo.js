@@ -492,11 +492,14 @@ function leyendaHtml(visibles) {
       <div class="grafo-leyenda__fila"><span class="be-caps">Líneas</span><span><i class="lin lin--texto"></i>lo dice el texto</span><span><i class="lin lin--deducida"></i>deducido</span><span><i class="lin lin--incierta"></i>fecha o lugar inciertos</span><span><i class="lin lin--pasado"></i>ya pasó</span><span><i class="lin lin--futuro"></i>aún no ocurre</span></div></div></details>`;
 }
 
+const repintarGrafo = () => pintarGrafo(true);
 function pintarGrafo(forzar) {
   const v = $('#vista-grafo');
   if (!abierto()) { if (!v.hidden) { v.hidden = true; v.innerHTML = ''; } return; }
   const id = centro();
   if (!BE.parseSel(id)) { cerrarGrafo(); return; }
+  // Las aristas leen las relaciones y los textos del detalle (js/data-chunks.js): mientras llega, un aviso.
+  if (!BE.chunks.ready(repintarGrafo)) { v.hidden = false; v.innerHTML = BE.chunks.waitingHtml('el grafo'); G.clave = ''; return; }
   const nodos = nodosDe(id, E.t);
   const visibles = filtrar(nodos);
   const oculta = v.hidden;
@@ -1290,6 +1293,7 @@ function pintarConexion() {
   const v = $('#vista-conexion');
   if (!conAbierta()) { if (!v.hidden) { v.hidden = true; v.innerHTML = ''; } return; }
   v.hidden = false;
+  if (!BE.chunks.ready(pintarConexion)) { v.innerHTML = BE.chunks.waitingHtml('la conexión'); return; }
   ponerListaOpciones();
   const listos = C.a && C.b && BE.parseSel(C.a) && BE.parseSel(C.b);
   const hallado = listos ? caminos(C.a, C.b) : { caminos: [], total: 0, cortado: false };

@@ -17,6 +17,7 @@ Tres nombres propios no se traducen: `perspicacia`, `tnm` y `openbible`, porque 
 - `data/places/`, `data/people/`, `data/journeys/`, `data/letters/`, `data/events/`, `data/periods/`, `data/finds/`, `data/tours/`: un YAML por entidad. El nombre del fichero es su identificador.
 - `data/_proposals/`: cambios propuestos a ficheros de otro carril. `build.py` y `validate.py` no la leen.
 - [`registro/`](registro/index.md): el registro. Lo genera [`scripts/build.py`](../../scripts/build.py) y nadie lo edita a mano.
+- `site/data.json`: los datos compilados, enteros, con los nombres de siempre. El sitio los lee en dos trozos, `data.core.json` (lo que pintan el mapa, la línea y la portada) y `data.detail.json` (los textos de las fichas, las relaciones y las fuentes). Qué clave va en cada uno y la regla para un campo nuevo están en [Desarrollo](../development.md#los-trozos-de-los-datos).
 
 ## Qué lleva cada afirmación
 

@@ -106,6 +106,76 @@ class Summary(unittest.TestCase):
         self.assertEqual(build._cuenta_fuentes(salida), "7: 4 enlazadas por algún dato, 2 capítulos de la Biblia y 1 sin citar")
 
 
+class Chunks(unittest.TestCase):
+    """data.core.json y data.detail.json: unidos dan data.json, y build.py se niega a escribir si no."""
+
+    @classmethod
+    def setUpClass(cls):
+        datos, _ = build.cargar(HERE.parent / "data")
+        cls.salida, _, errores = build.componer(datos, "2026-10-03")
+        assert errores == [], errores
+        cls.core, cls.detail = build.split_chunks(cls.salida)
+
+    def copies(self):
+        return json.loads(json.dumps(self.core)), json.loads(json.dumps(self.detail))
+
+    def test_core_plus_detail_is_data_json(self):
+        self.assertEqual(build.check_chunks(self.salida, self.core, self.detail), [])
+        self.assertEqual(build.merge_chunks(*self.copies()), self.salida)
+
+    def test_the_core_keeps_what_the_map_reads_and_drops_the_texts(self):
+        pablo = self.core["personas"]["pablo"]
+        self.assertNotIn("razon", pablo)
+        self.assertNotIn("resumen", pablo)
+        self.assertIn("fuentes", pablo)
+        for r in pablo["relaciones"]:
+            self.assertLessEqual(set(r), build.RELATION_CORE_KEYS)
+        del_mapa = build.fuentes_del_mapa(self.salida)
+        self.assertTrue(all(set(f) <= build.SOURCE_CORE_KEYS for i, f in self.core["fuentes"].items() if i not in del_mapa))
+        self.assertIn("resumen", self.core["eventos"][0])           # «Mientras tanto» lo enseña al abrir
+        self.assertNotIn("razon", self.core["eventos"][0])
+        self.assertEqual(self.core["periodos"], self.salida["periodos"])
+
+    def test_the_core_keeps_the_title_of_the_sources_the_map_names(self):
+        # La leyenda y las etiquetas de una zona dicen «según Perspicacia «Estrella»» (fuenteCorta, site/js/mapa.js).
+        del_mapa = build.fuentes_del_mapa(self.salida)
+        self.assertIn("it-estrella", del_mapa)
+        for i in del_mapa:
+            f = self.core["fuentes"][i]
+            self.assertTrue(f.get("titulo") or f.get("obra"), i)
+            self.assertEqual({k: f[k] for k in build.SOURCE_MAP_KEYS if k in f},
+                             {k: self.salida["fuentes"][i][k] for k in build.SOURCE_MAP_KEYS if k in self.salida["fuentes"][i]})
+        self.assertNotIn("titulo", self.core["fuentes"]["it-pablo"])   # las demás, solo en el detalle
+
+    def test_a_key_lost_on_the_way_fails(self):
+        core, detail = self.copies()
+        del detail["personas"]["pablo"]["razon"]
+        errores = build.check_chunks(self.salida, core, detail)
+        self.assertEqual(len(errores), 1)
+        self.assertIn("$.personas.pablo.razon", errores[0])
+
+    def test_a_key_left_in_both_halves_with_another_value_fails(self):
+        core, detail = self.copies()
+        core["eventos"][0]["titulo"] += "!"
+        self.assertIn("$.eventos[0].titulo", build.check_chunks(self.salida, core, detail)[0])
+
+    def test_a_source_cited_only_by_a_detail_key_fails(self):
+        # «h» solo la cita una entrada del historial, que va al detalle: la portada contaría una fuente menos.
+        salida = {"fuentes": {"s": {"nivel": 1}, "h": {"nivel": 1}},
+                  "personas": {"p": {"fuentes": ["s"], "historial": [{"cambio": "x", "fuente": "h"}]}}}
+        core, detail = build.split_chunks(salida)
+        errores = build.check_chunks(salida, core, detail)
+        self.assertEqual(len(errores), 1)
+        self.assertIn("cifras de las fuentes", errores[0])
+
+    def test_lists_merge_by_position(self):
+        salida = {"viajes": [{"id": "a", "paradas": [{"orden": 1, "razon": "r1"}, {"orden": 2}]}, {"id": "b"}]}
+        core, detail = build.split_chunks(salida)
+        self.assertEqual(core["viajes"], [{"id": "a", "paradas": [{"orden": 1}, {"orden": 2}]}, {"id": "b"}])
+        self.assertEqual(detail["viajes"], [{"paradas": [{"razon": "r1"}, None]}, None])
+        self.assertEqual(build.merge_chunks(core, detail), salida)
+
+
 class SqliteRepite(unittest.TestCase):
     def test_la_tabla_viajes_guarda_repeats(self):
         # Con los datos de verdad: los tres viajes de cada año llevan 'yearly' en la base, y ningún otro lleva nada.

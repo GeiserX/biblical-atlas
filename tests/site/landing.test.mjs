@@ -39,8 +39,10 @@ const TYPES = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript; ch
 function serve(dir, dataFile) {
   const server = http.createServer((req, res) => {
     const rel = decodeURIComponent(new URL(req.url, 'http://x').pathname);
-    const file = rel === '/data.json' ? dataFile : path.join(dir, rel.endsWith('/') ? `${rel}index.html` : rel);
-    if (!file.startsWith(dir) && file !== dataFile) { res.writeHead(404); res.end(); return; }
+    // The chunks of the data (data.core.json, data.detail.json) live beside data.json.
+    const chunk = /^\/data\.[a-z]+\.json$/.test(rel) ? path.join(path.dirname(dataFile), rel) : null;
+    const file = rel === '/data.json' ? dataFile : chunk || path.join(dir, rel.endsWith('/') ? `${rel}index.html` : rel);
+    if (!file.startsWith(dir) && file !== dataFile && file !== chunk) { res.writeHead(404); res.end(); return; }
     if (!fs.existsSync(file) || !fs.statSync(file).isFile()) { res.writeHead(404); res.end(); return; }
     res.writeHead(200, { 'content-type': TYPES[path.extname(file)] || 'application/octet-stream' });
     res.end(fs.readFileSync(file));
@@ -81,7 +83,7 @@ async function openPage(screen = DESKTOP, { hash = '', storage = null, route = n
   page.pageErrors = [];
   page.on('pageerror', (e) => page.pageErrors.push(e.message));
   await page.route((url) => !url.href.startsWith(base), (r) => r.abort());
-  if (route) await page.route('**/data.json*', route);
+  if (route) await page.route(/\/data(\.core)?\.json/, route);   // the core, or data.json when there is no core
   await page.goto(`${base}index.html${hash ? `#${hash}` : ''}`);
   if (wait) { await page.waitForFunction(() => window.BE?.D && window.__be, null, { timeout: 30000 }); await page.waitForTimeout(400); }
   return page;

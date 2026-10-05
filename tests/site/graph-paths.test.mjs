@@ -40,7 +40,7 @@ function serve(siteDir, dataDir) {
   const server = http.createServer((req, res) => {
     const url = decodeURIComponent(new URL(req.url, 'http://x').pathname);
     const rel = url === '/' ? 'index.html' : url.slice(1);
-    const file = ['data.json', 'data.js'].includes(rel) ? path.join(dataDir, rel) : path.join(siteDir, rel);
+    const file = /^data(\.[a-z]+)?\.json$|^data\.js$/.test(rel) ? path.join(dataDir, rel) : path.join(siteDir, rel);
     if (!file.startsWith(siteDir) && !file.startsWith(dataDir)) { res.writeHead(403).end(); return; }
     fs.readFile(file, (err, body) => {
       if (err) { res.writeHead(404).end(); return; }
@@ -75,7 +75,7 @@ async function openSite(screen = DESKTOP) {
   // Only the local site: map tiles and fonts from other hosts are not needed.
   await page.route((url) => !url.href.startsWith(base.slice(0, base.lastIndexOf('/'))), (route) => route.abort());
   await page.goto(base);
-  await page.waitForFunction(() => window.BE?.D && window.BE?.conexion, null, { timeout: 30000 });
+  await page.waitForFunction(() => window.BE?.D && window.BE?.conexion && (!window.BE.chunks || window.BE.chunks.loaded.length), null, { timeout: 30000 });
   return page;
 }
 

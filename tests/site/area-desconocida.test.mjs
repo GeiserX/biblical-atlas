@@ -62,7 +62,7 @@ function serve(siteDir, dataDir) {
     if (v) url = url.slice(name.length + 1);
     const rel = url === '/' ? 'index.html' : url.slice(1);
     const data = v?.data || dataDir;
-    const file = ['data.json', 'data.js'].includes(rel) ? path.join(data, rel) : path.join(siteDir, rel);
+    const file = /^data(\.[a-z]+)?\.json$|^data\.js$/.test(rel) ? path.join(data, rel) : path.join(siteDir, rel);
     if (!file.startsWith(siteDir) && !file.startsWith(dataDir)) { res.writeHead(403).end(); return; }
     fs.readFile(file, (err, body) => {
       if (err) { res.writeHead(404).end(); return; }
@@ -79,6 +79,9 @@ function variant(name, change) {
   fs.mkdirSync(dir);
   fs.writeFileSync(path.join(dir, 'data.json'), JSON.stringify(D));
   fs.writeFileSync(path.join(dir, 'data.js'), `window.BIBLICAL_ATLAS_DATA = ${JSON.stringify(D)};\n`);
+  // The site opens with data.core.json (site/js/data-chunks.js): the changed data whole as the core, and nothing to add.
+  fs.writeFileSync(path.join(dir, 'data.core.json'), JSON.stringify(D));
+  fs.writeFileSync(path.join(dir, 'data.detail.json'), '{}');
   variants[name] = { data: dir };
 }
 
