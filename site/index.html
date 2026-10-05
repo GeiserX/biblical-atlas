@@ -95,6 +95,9 @@
 <body>
 <div class="be-app app" id="app">
   <header class="be-topbar topbar">
+    <!-- Saltos para el teclado: el mapa tiene un botón por lugar, más de cien paradas del tabulador antes de la ficha. Se
+         ven al recibir el foco. Botones y no enlaces: un #ancla cambiaría la dirección, que guarda la vista (base.js). -->
+    <div class="saltos" role="group" aria-label="Saltar a"><button type="button" class="salto" data-salto="#panel-cuerpo">Ir a la ficha</button><button type="button" class="salto" data-salto="#pista">Ir a la línea de tiempo</button></div>
     <a class="be-logo" href="#" id="inicio" aria-label="biblical-atlas, volver al inicio"><span class="be-logo__mark" aria-hidden="true"></span><span class="logo-text">biblical-atlas</span></a>
     <!-- Atrás y adelante de la visita (BE.historia, buscar.js). En el teléfono van en la fila de la hoja, más abajo. -->
     <div class="atras-adelante" role="group" aria-label="Historial de la visita"><button class="be-btn be-btn--icon be-btn--ghost" id="atras" type="button" data-historia="atras" aria-label="No hay nada atrás" title="No hay nada atrás" disabled><svg class="be-i" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button><button class="be-btn be-btn--icon be-btn--ghost" id="adelante" type="button" data-historia="adelante" aria-label="No hay nada adelante" title="No hay nada adelante" disabled><svg class="be-i" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button></div>

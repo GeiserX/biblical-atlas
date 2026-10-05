@@ -361,7 +361,15 @@ function pintarPanel(forzar) {
   clavePanel = clave;
   const html = E.sel ? (listo ? TIPOS.get(E.sel.tipo).ficha(E.sel.id) : BE.chunks.waitingHtml()) : BE.fichaAhora();
   const cuerpo = $('#panel-cuerpo');
+  // Si el foco estaba en la ficha (se pulsó una relación, un lugar, una parada), se queda en la ficha nueva: en el mismo
+  // control si sigue ahí (el lápiz de una nota), si no en la ficha. Sin esto caía al principio de la página, y el
+  // tabulador volvía a recorrer la barra y los puntos del mapa.
+  const antes = document.activeElement;
+  const conFoco = cuerpo.contains(antes);
+  const datos = conFoco && antes !== cuerpo ? [...antes.attributes].filter((a) => a.name.startsWith('data-')) : [];
+  const mismo = datos.length ? antes.localName + datos.map((a) => `[${a.name}="${CSS.escape(a.value)}"]`).join('') : '';
   cuerpo.innerHTML = html;
+  if (conFoco && !cuerpo.contains(document.activeElement)) ((mismo && cuerpo.querySelector(mismo)) || cuerpo).focus({ preventScroll: true });
   if (forzar) cuerpo.scrollTop = 0;
 }
 
@@ -441,6 +449,7 @@ function iniciarEventos() {
     }
   });
   document.querySelectorAll('[data-mapa]').forEach((b) => b.addEventListener('click', () => BE.ponerMapa(b.dataset.mapa)));
+  document.querySelectorAll('[data-salto]').forEach((b) => b.addEventListener('click', () => $(b.dataset.salto)?.focus()));
   $('#compartir').addEventListener('click', async () => {
     guardarHash();
     await new Promise((r) => setTimeout(r, 300));

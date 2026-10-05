@@ -151,6 +151,7 @@ Los demás parámetros solo aparecen cuando no valen lo de siempre:
 
 | Tecla | Qué hace |
 |---|---|
+| Tabulador, al entrar | «Ir a la ficha» e «Ir a la línea de tiempo», que saltan los puntos del mapa. Se ven al recibir el foco |
 | `/` | Ir a la búsqueda |
 | Espacio | Reproducir o pausar |
 | ← → | Mover el cursor un paso (depende del zoom de la línea). Con el foco en una marca de la línea, ir a la marca de al lado sin mover el cursor |
