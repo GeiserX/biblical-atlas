@@ -240,6 +240,8 @@ test('a new deploy shows the notice and waits for the click to reload', async ()
   const second = await newPage(context);
   await second.goto(`${base}acerca.html`);
   await controlled(second);
+  // What the visit fetched after the install: the new version has to take it from this cache, not from the network.
+  for (const rel of ['data.detail.json', 'maps/mundo-antiguo.webp', 'videos-personas.json']) await waitCached(page, rel);
   const before = await page.evaluate(() => caches.keys());
   // A new deploy: the same files under another version.
   const manifest = fs.readFileSync(path.join(SITE_DIR, 'sw-manifest.js'), 'utf8');
@@ -274,9 +276,12 @@ test('a new deploy shows the notice and waits for the click to reload', async ()
   assert.equal(await page.evaluate(() => window.__same), true, 'the page reloaded by itself');
   assert.equal(await second.evaluate(() => window.__same), true, 'the other page reloaded by itself');
   assert.equal((await page.evaluate(() => caches.keys())).filter((k) => k.startsWith('biblical-atlas-v-')).length, 2);
-  // The click takes it: this page and the other one reload, and only the new version's cache is left.
+  // The click takes it: this page and the other one reload, and only the new version's cache is left. Offline, so
+  // that the card can only open if the install copied the detail, the maps and the videos from the old version.
+  await offline(context);
   await Promise.all([page.waitForEvent('load'), second.waitForEvent('load'), notice.getByRole('button', { name: 'Recargar' }).click()]);
-  await started(page);
+  await seesTheSite(page);
+  for (const rel of ['data.detail.json', 'maps/mundo-antiguo.webp']) assert.ok(await cached(page, rel), `${rel} was not copied to the new version`);
   assert.equal(await page.evaluate(() => window.__same), undefined);
   assert.equal(await second.evaluate(() => window.__same), undefined);
   const after = (await page.evaluate(() => caches.keys())).filter((k) => k.startsWith('biblical-atlas-v-'));
