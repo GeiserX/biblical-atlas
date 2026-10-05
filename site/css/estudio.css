@@ -755,7 +755,8 @@ span.etiqueta-deducido, span.etiqueta-incierto, span.etiqueta-texto { border-rad
 .marca-nivel { display: inline-block; flex: none; width: 10px; height: 10px; border-radius: 50%; vertical-align: 0; background: var(--tier1); }
 .marca-nivel--2 { background: transparent; box-shadow: inset 0 0 0 2px var(--tier2); }
 .fuentes li > .marca-nivel { margin-top: 5px; }
-.insignia summary { min-width: 0; width: 20px; height: 20px; padding: 0; border-radius: 50%; background: transparent; }
+/* 24 px de diana (WCAG 2.5.8) en el sitio de 20: el margen negativo deja la línea como estaba. */
+.insignia summary { min-width: 0; width: 24px; height: 24px; margin: -2px; padding: 0; border-radius: 50%; background: transparent; }
 .insignia--2 summary { background: transparent; }
 .insignia summary:hover { background: var(--paper-2); }
 .insignia-pop .marca-nivel { margin-right: 4px; }
