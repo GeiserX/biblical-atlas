@@ -158,6 +158,7 @@ Los demás parámetros solo aparecen cuando no valen lo de siempre:
 | ↑ ↓, Inicio, Fin | Con el foco en una marca de la línea: a la fila de arriba o de abajo, a la primera o a la última de su fila |
 | Intro, Espacio | Con el foco en una marca de la línea: elegirla; el cursor entra en ella por el punto más cercano. Si es la misma marca que se eligió la última vez, soltarla, igual que un segundo clic |
 | Mayúsculas + ← → | Saltar a la parada o carta anterior o siguiente |
+| ← → en la tarjeta del recorrido | Con el foco en uno de sus botones: la parada anterior o la siguiente, sin mover la fecha a mano |
 | Esc | Borrar la búsqueda y la selección |
 | Alt + ← →; ⌘ + ← →, ⌘ + [ ] en el Mac | Atrás y adelante del navegador. El sitio no toma las flechas con Alt, ⌘ o Ctrl: tampoco en la presentación, el separador de la ficha, la cortina, «Meses» ni el panel de la fecha |
 | `T` | Ampliar o reducir la línea de tiempo |
