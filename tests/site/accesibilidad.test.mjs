@@ -324,6 +324,20 @@ test('choosing in the card or in the search keeps the focus in the card', async 
   await page.context().close();
 });
 
+test('Enter twice on «Parada siguiente» in the card goes two stops on, with the focus kept on that button', async () => {
+  const page = await keyboardPage('1440', TOUR);
+  await page.locator('#panel-cuerpo .recorrido-sig').focus();
+  const a = await where(page);
+  for (let k = 1; k <= 2; k += 1) {
+    await page.keyboard.press('Enter');
+    await page.waitForFunction((n) => window.BE.recorridos.pasoDe('cartas-y-ciudades') === n, a.step + k);
+    await settle(page);
+    assert.ok(await page.evaluate(() => document.activeElement.matches('#panel-cuerpo .recorrido-sig')), `after Enter ${k} the focus is not on «Parada siguiente»`);
+  }
+  assert.deepEqual(page.errors, []);
+  await page.context().close();
+});
+
 for (const screen of ['1440', '430']) {
   test(`${screen}: on the tour card ← and → change the stop, not the date`, async () => {
     const page = await keyboardPage(screen, TOUR);

@@ -77,8 +77,8 @@ function fichaRecorrido(id) {
       ${(BE.D.recorridos || []).filter((x) => x.id !== id).length ? `<h4 class="subgrupo">Otros recorridos</h4><div class="be-list">${BE.D.recorridos.filter((x) => x.id !== id).map((x) => BE.botonSel(`recorrido:${x.id}`, x.titulo, `${x.paradas.length} paradas`)).join('')}</div>` : ''}
     </div></section>` : ''}
     <nav class="recorrido-nav" aria-label="Paradas">
-      ${ant ? `<button type="button" class="be-btn recorrido-ant" data-recorrido-ir="${i - 1}"><span aria-hidden="true">‹</span> ${i} · ${esc(nombreDe(ant))}</button>` : '<span></span>'}
-      ${sig ? `<button type="button" class="be-btn be-btn--primary recorrido-sig" data-recorrido-ir="${i + 1}"><span class="be-caps">Parada ${i + 2} · ${esc(fmtAnio(Math.floor(sig.t)))}</span><span>${esc(nombreDe(sig))}</span></button>` : ''}
+      ${ant ? `<button type="button" class="be-btn recorrido-ant" data-foco="ant" data-recorrido-ir="${i - 1}"><span aria-hidden="true">‹</span> ${i} · ${esc(nombreDe(ant))}</button>` : '<span></span>'}
+      ${sig ? `<button type="button" class="be-btn be-btn--primary recorrido-sig" data-foco="sig" data-recorrido-ir="${i + 1}"><span class="be-caps">Parada ${i + 2} · ${esc(fmtAnio(Math.floor(sig.t)))}</span><span>${esc(nombreDe(sig))}</span></button>` : ''}
     </nav>
     <div class="fila-chips recorrido-herramientas">
       <button type="button" class="be-btn be-btn--sm be-btn--ghost" data-recorrido-play>${R.play ? 'Pausar' : 'Avance automático ▶'}</button>
