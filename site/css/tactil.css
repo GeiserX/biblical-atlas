@@ -72,6 +72,8 @@
   /* Enlaces uno debajo de otro: cada uno en su línea de 44 px. */
   .be-wol { min-height: 44px; }
   .grafo-lista ul { gap: 14px; }
+  /* El nombre de una fila mide 19 px y la píldora de su cita, justo debajo, le quitaba media zona: crece hasta 24. */
+  .grafo-lista .lista-nombre { min-height: 24px; }
   .ahora-kv { row-gap: 14px; }
   /* Las casillas de un formulario: el rótulo entero es la diana. */
   label:has(input[type="checkbox"], input[type="radio"]) { min-height: 44px; display: inline-flex; align-items: center; }
