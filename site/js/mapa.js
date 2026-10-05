@@ -169,6 +169,12 @@ function crearMapa() {
     dragRotate: false, pitchWithRotate: false, touchPitch: false,
     renderWorldCopies: false, fadeDuration: 0,
     attributionControl: false,   // se añade abajo, con su sitio según el ancho
+    // Lo que MapLibre dice a un lector de pantalla, en español: sin esto el lienzo era «Map» y los botones, «Zoom in».
+    locale: {
+      'Map.Title': 'Mapa: las flechas lo mueven; + y −, acercar y alejar',
+      'NavigationControl.ZoomIn': 'Acercar', 'NavigationControl.ZoomOut': 'Alejar',
+      'AttributionControl.ToggleAttribution': 'Créditos del mapa', 'Marker.Title': 'Marcador', 'Popup.Close': 'Cerrar',
+    },
   });
   map.touchZoomRotate.disableRotation();
   map.once('load', () => {
@@ -1309,6 +1315,8 @@ function pintarViajeros(ver) {
     if (!m) {
       const el = document.createElement('button');
       el.type = 'button'; el.className = 'viajero'; el.dataset.sel = `persona:${p}`;
+      // Su nombre se esconde cuando choca con otro (sin-etiqueta): el botón lo lleva siempre, como los lugares.
+      el.setAttribute('aria-label', `${nombrePersona(p)}: abrir ficha`);
       el.innerHTML = `<span class="viajero-punto"></span><span class="viajero-rotulo">${esc(nombrePersona(p))}</span>`;
       el.style.setProperty('--accent', colorPersona(p));
       m = { el, marker: new maplibregl.Marker({ element: el, anchor: 'center' }), puesta: false };
