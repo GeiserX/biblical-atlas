@@ -1104,6 +1104,12 @@ function seguirSeleccion() {
   G.visto = k;
   if (k !== centro()) centrarEn(k, { seleccionar: false });
 }
+/** Al cerrar la vista con el teclado, el foco pasa a la ficha si se ve; si no (en el teléfono, con la hoja plegada), a
+    «Estudio», que abre las vistas. Sin esto caía al principio de la página. */
+function focoTrasCerrar() {
+  const ficha = document.getElementById('panel-cuerpo');
+  (ficha.checkVisibility() ? ficha : document.getElementById('estudio-boton'))?.focus({ preventScroll: true });
+}
 function cerrarGrafo(silencioso) {
   if (!abierto()) return;
   G.ruta = []; G.clave = ''; G.leyenda = null; G.openFolds.clear();
@@ -1542,8 +1548,8 @@ function iniciar() {
       const volver = tarjeta.contains(document.activeElement) ? G.ancla : null;
       ocultarTarjeta();
       volver?.focus();
-    } else if (abierto() && vg.contains(document.activeElement)) { e.stopImmediatePropagation(); cerrarGrafo(); }
-    else if (conAbierta() && vc.contains(document.activeElement) && !document.activeElement.matches('.casilla')) { e.stopImmediatePropagation(); cerrarConexion(); }
+    } else if (abierto() && vg.contains(document.activeElement)) { e.stopImmediatePropagation(); cerrarGrafo(); focoTrasCerrar(); }
+    else if (conAbierta() && vc.contains(document.activeElement) && !document.activeElement.matches('.casilla')) { e.stopImmediatePropagation(); cerrarConexion(); focoTrasCerrar(); }
   }, true);
   new ResizeObserver(() => { if (abierto() && G.modo === 'grafo') pintarGrafo(true); }).observe(document.getElementById('mapa'));
   // Las cajas se miden con la letra que haya: cuando llega la definitiva, se vuelven a medir.

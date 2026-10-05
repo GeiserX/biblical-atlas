@@ -361,7 +361,17 @@ function pintarPanel(forzar) {
   clavePanel = clave;
   const html = E.sel ? (listo ? TIPOS.get(E.sel.tipo).ficha(E.sel.id) : BE.chunks.waitingHtml()) : BE.fichaAhora();
   const cuerpo = $('#panel-cuerpo');
+  // Si el foco estaba en la ficha (se pulsó una relación, un lugar, una parada), se queda en la ficha nueva: en el mismo
+  // control si sigue ahí (el lápiz de una nota), si no en la ficha. Sin esto caía al principio de la página, y el
+  // tabulador volvía a recorrer la barra y los puntos del mapa. Un control cuyos datos cambian al pulsarlo («Parada
+  // siguiente» pasa de data-recorrido-ir="1" a "2") lleva data-foco: con sus datos daría con otro botón.
+  const antes = document.activeElement;
+  const conFoco = cuerpo.contains(antes);
+  const datos = conFoco && antes !== cuerpo ? [...antes.attributes].filter((a) => a.name.startsWith('data-')) : [];
+  const mismo = antes?.dataset?.foco && conFoco ? `[data-foco="${CSS.escape(antes.dataset.foco)}"]:not([disabled])`
+    : datos.length ? antes.localName + datos.map((a) => `[${a.name}="${CSS.escape(a.value)}"]`).join('') : '';
   cuerpo.innerHTML = html;
+  if (conFoco && !cuerpo.contains(document.activeElement)) ((mismo && cuerpo.querySelector(mismo)) || cuerpo).focus({ preventScroll: true });
   if (forzar) cuerpo.scrollTop = 0;
 }
 
@@ -441,6 +451,12 @@ function iniciarEventos() {
     }
   });
   document.querySelectorAll('[data-mapa]').forEach((b) => b.addEventListener('click', () => BE.ponerMapa(b.dataset.mapa)));
+  document.querySelectorAll('[data-salto]').forEach((b) => b.addEventListener('click', () => {
+    const destino = $(b.dataset.salto);
+    // En el teléfono, con la hoja plegada, la ficha no se ve y no toma el foco: primero se despliega, como con el asa.
+    if (destino && !destino.checkVisibility() && E.hojaPlegada) $('#hoja-asa').click();
+    destino?.focus();
+  }));
   $('#compartir').addEventListener('click', async () => {
     guardarHash();
     await new Promise((r) => setTimeout(r, 300));

@@ -1747,8 +1747,9 @@ function montarBarra() {
   const crono = $('.linea-barra .cronologia');
   const mm = document.createElement('div');
   mm.id = 'minimapa'; mm.className = 'be-minimap minimapa';
-  mm.setAttribute('role', 'slider'); mm.setAttribute('tabindex', '-1');
-  mm.setAttribute('aria-label', 'Toda la historia bíblica: pulsa para ir a esa época');
+  // Un atajo para el puntero: se pulsa o se arrastra, sin teclado. Un lector de pantalla no lo nombra; la regla de la
+  // línea (#pista), la escala y el panel de la fecha llevan a la misma época desde el teclado.
+  mm.setAttribute('aria-hidden', 'true');
   mm.title = 'Toda la historia, de Adán al año 100. El marco es lo que ves en la línea.';
   mm.innerHTML = '<span class="be-minimap__win"></span><span class="minimapa-cursor"></span>';
   crono.before(mm);

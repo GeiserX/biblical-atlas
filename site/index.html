@@ -97,6 +97,10 @@
 <body>
 <div class="be-app app" id="app">
   <header class="be-topbar topbar">
+    <h1 class="sr-only">biblical-atlas: la Biblia en el mapa y en el tiempo</h1>
+    <!-- Saltos para el teclado: el mapa tiene un botón por lugar, más de cien paradas del tabulador antes de la ficha. Se
+         ven al recibir el foco. Botones y no enlaces: un #ancla cambiaría la dirección, que guarda la vista (base.js). -->
+    <div class="saltos" role="group" aria-label="Saltar a"><button type="button" class="salto" data-salto="#panel-cuerpo">Ir a la ficha</button><button type="button" class="salto" data-salto="#pista">Ir a la línea de tiempo</button></div>
     <a class="be-logo" href="#" id="inicio" aria-label="biblical-atlas, volver al inicio"><span class="be-logo__mark" aria-hidden="true"></span><span class="logo-text">biblical-atlas</span></a>
     <!-- Atrás y adelante de la visita (BE.historia, buscar.js). En el teléfono van en la fila de la hoja, más abajo. -->
     <div class="atras-adelante" role="group" aria-label="Historial de la visita"><button class="be-btn be-btn--icon be-btn--ghost" id="atras" type="button" data-historia="atras" aria-label="No hay nada atrás" title="No hay nada atrás" disabled><svg class="be-i" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button><button class="be-btn be-btn--icon be-btn--ghost" id="adelante" type="button" data-historia="adelante" aria-label="No hay nada adelante" title="No hay nada adelante" disabled><svg class="be-i" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button></div>
@@ -125,7 +129,7 @@
   <main class="be-map mapa" id="mapa" aria-label="Mapa">
     <div id="mapa-gl" class="mapa-gl"></div>
     <div class="mientras be-float" id="mientras" hidden></div>
-    <div class="be-float be-legend leyenda" id="leyenda" aria-label="Leyenda"></div>
+    <div class="be-float be-legend leyenda" id="leyenda" role="region" aria-label="Leyenda" tabindex="0"></div>
     <div class="cortina" id="cortina" hidden>
       <span class="be-curtain__tag cortina-tag cortina-tag--izq">Mapa antiguo</span>
       <span class="be-curtain__tag cortina-tag cortina-tag--der">Mapa actual</span>
@@ -257,7 +261,8 @@
         <p class="portada-credito">Relieve: Natural Earth, USGS, NOAA, Copernicus, Mapzen · <a href="acerca.html#gracias">Créditos</a></p>
       </header>
 
-      <main class="portada-cuerpo">
+      <!-- Un div y no un main: el main de la página es el mapa, y este queda dentro de la sección de la portada. -->
+      <div class="portada-cuerpo">
         <section class="portada-preguntas" aria-labelledby="portada-preguntas-tit">
           <div class="portada-wrap">
             <div class="portada-preguntas__cab">
@@ -329,7 +334,7 @@
             <p><a class="portada-enlace" href="acerca.html#datos">Cómo tratamos las fuentes</a></p>
           </div>
         </section>
-      </main>
+      </div>
 
       <footer class="portada-pie">
         <div class="portada-wrap">

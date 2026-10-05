@@ -421,7 +421,11 @@ function elegir(i) {
   $('#q').value = r.titulo;
   cerrarResultados();
   elegirResultado(r);
-  $('#q').blur();
+  // El foco pasa a la ficha que se abre, si se ve; si no, sale de la caja (en el móvil, así se cierra el teclado). Un
+  // resultado que hace otra cosa («¿Cómo se relaciona…?» abre la conexión) no abre ficha: el foco no va a la anterior.
+  const ficha = $('#panel-cuerpo');
+  if (!r.accion && E.sel && ficha.checkVisibility()) ficha.focus({ preventScroll: true });
+  else $('#q').blur();
 }
 /** Lo que hace un resultado elegido, en cualquiera de las dos cajas. */
 function elegirResultado(r) {

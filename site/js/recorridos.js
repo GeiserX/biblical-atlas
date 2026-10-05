@@ -77,8 +77,8 @@ function fichaRecorrido(id) {
       ${(BE.D.recorridos || []).filter((x) => x.id !== id).length ? `<h4 class="subgrupo">Otros recorridos</h4><div class="be-list">${BE.D.recorridos.filter((x) => x.id !== id).map((x) => BE.botonSel(`recorrido:${x.id}`, x.titulo, `${x.paradas.length} paradas`)).join('')}</div>` : ''}
     </div></section>` : ''}
     <nav class="recorrido-nav" aria-label="Paradas">
-      ${ant ? `<button type="button" class="be-btn recorrido-ant" data-recorrido-ir="${i - 1}"><span aria-hidden="true">‹</span> ${i} · ${esc(nombreDe(ant))}</button>` : '<span></span>'}
-      ${sig ? `<button type="button" class="be-btn be-btn--primary recorrido-sig" data-recorrido-ir="${i + 1}"><span class="be-caps">Parada ${i + 2} · ${esc(fmtAnio(Math.floor(sig.t)))}</span><span>${esc(nombreDe(sig))}</span></button>` : ''}
+      ${ant ? `<button type="button" class="be-btn recorrido-ant" data-foco="ant" data-recorrido-ir="${i - 1}"><span aria-hidden="true">‹</span> ${i} · ${esc(nombreDe(ant))}</button>` : '<span></span>'}
+      ${sig ? `<button type="button" class="be-btn be-btn--primary recorrido-sig" data-foco="sig" data-recorrido-ir="${i + 1}"><span class="be-caps">Parada ${i + 2} · ${esc(fmtAnio(Math.floor(sig.t)))}</span><span>${esc(nombreDe(sig))}</span></button>` : ''}
     </nav>
     <div class="fila-chips recorrido-herramientas">
       <button type="button" class="be-btn be-btn--sm be-btn--ghost" data-recorrido-play>${R.play ? 'Pausar' : 'Avance automático ▶'}</button>
@@ -107,9 +107,12 @@ function vistaSobreMapa() {
       <button type="button" class="recorrido-flecha" data-foco="sig" ${sig ? `data-recorrido-ir="${R.paso + 1}" aria-label="Parada siguiente, ${R.paso + 2}: ${esc(nombreDe(sig))}"` : 'disabled aria-label="Es la última parada"'}><span aria-hidden="true">›</span></button>
     </div>
     <div class="be-float recorrido-flota" id="recorrido-flota"><span class="be-caps">Recorrido guiado</span><b>${esc(rc.titulo)}</b><span class="be-muted">parada ${R.paso + 1} de ${n}</span>
-    <button type="button" class="be-btn be-btn--sm be-btn--ghost" data-recorrido-salir>Salir y explorar</button></div>
+    <button type="button" class="be-btn be-btn--sm be-btn--ghost" data-foco="salir" data-recorrido-salir>Salir y explorar</button></div>
     ${p?.no_sabemos ? `<div class="be-float recorrido-nosabemos"><span class="be-caps">Qué no sabemos</span><p>${esc(p.no_sabemos)}</p></div>` : ''}`;
-  if (foco) (v.querySelector(`[data-foco="${foco}"]:not([disabled])`) || v.querySelector('[data-foco="abrir"]')).focus();
+  if (foco) {
+    const el = v.querySelector(`[data-foco="${foco}"]:not([disabled])`);
+    (el?.checkVisibility() ? el : v.querySelector('[data-foco="abrir"]')).focus();
+  }
 }
 /** Abre o pliega la tarjeta de una línea del móvil. No mueve el mapa: la tarjeta abierta flota encima, y los nombres
     que quedan debajo se esconden mientras tanto (loQueTapa en mapa.js). */
@@ -334,6 +337,11 @@ function iniciar() {
   });
   vista.addEventListener('keydown', (e) => {
     if (e.key === 'Escape' && R.abierta) { e.stopPropagation(); plegar(false); vista.querySelector('[data-recorrido-abrir]')?.focus(); }
+    // Con el foco en la tarjeta, ← y → pasan de parada, no mueven la fecha. Con Alt, ⌘ o Ctrl son del navegador.
+    if ((e.key === 'ArrowLeft' || e.key === 'ArrowRight') && R.id && !e.altKey && !e.metaKey && !e.ctrlKey && !e.shiftKey) {
+      e.preventDefault(); e.stopPropagation();
+      parar(); irA(R.paso + (e.key === 'ArrowRight' ? 1 : -1));
+    }
   });
   document.addEventListener('click', (e) => { if (e.target.closest('[data-presentar]')) presentar(!raiz.classList.contains('be-presentando')); });
   // Deslizar el dedo sobre la ficha en el móvil pasa de parada.
