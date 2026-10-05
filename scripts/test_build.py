@@ -4,8 +4,10 @@
 Trabajan sobre un data/ pequeño en una carpeta temporal, con el vocabulario de verdad (data/vocabulary.yaml)."""
 import hashlib
 import json
+import os
 import shutil
 import sqlite3
+import subprocess
 import sys
 import tempfile
 import unittest
@@ -215,6 +217,42 @@ class SwManifest(unittest.TestCase):
         self.assertNotEqual(second, first)
         (self.site / "sw.js").write_text("otra", encoding="utf-8")
         self.assertNotEqual(self.manifest()["version"], second)
+
+
+class FechaDatos(unittest.TestCase):
+    """"generado" es la fecha del último commit que tocó los datos, no la de compilación: un despliegue de otro día que
+    solo toca la documentación deja iguales los data*.json, y con ellos la versión del service worker."""
+
+    def setUp(self):
+        self.tmp = tempfile.TemporaryDirectory()
+        self.repo = Path(self.tmp.name)
+        for d in ("data", "docs"):
+            (self.repo / d).mkdir()
+
+    def tearDown(self):
+        self.tmp.cleanup()
+
+    def commit(self, rel, fecha):
+        (self.repo / rel).write_text(fecha, encoding="utf-8")
+        env = dict(os.environ, GIT_AUTHOR_DATE=f"{fecha}T12:00:00", GIT_COMMITTER_DATE=f"{fecha}T12:00:00",
+                   GIT_CONFIG_GLOBAL=os.devnull, GIT_CONFIG_SYSTEM=os.devnull)
+        git = ["git", "-C", str(self.repo), "-c", "user.name=t", "-c", "user.email=t@t", "-c", "commit.gpgsign=false"]
+        if not (self.repo / ".git").exists():
+            subprocess.run(git + ["init", "-q"], check=True, env=env)
+        subprocess.run(git + ["add", rel], check=True, env=env)
+        subprocess.run(git + ["commit", "-q", "--no-verify", "-m", rel], check=True, env=env)
+
+    def test_follows_the_last_commit_to_data_not_the_day_of_the_build(self):
+        self.commit("data/a.yaml", "2026-01-02")
+        self.commit("docs/b.md", "2026-03-04")          # solo documentación, otro día
+        self.assertEqual(build.fecha_datos(self.repo / "data"), "2026-01-02")
+
+    def test_today_with_uncommitted_data_or_outside_git(self):
+        hoy = build.datetime.date.today().isoformat()
+        self.assertEqual(build.fecha_datos(self.repo / "data"), hoy)       # sin git
+        self.commit("data/a.yaml", "2026-01-02")
+        (self.repo / "data/a.yaml").write_text("cambiado", encoding="utf-8")
+        self.assertEqual(build.fecha_datos(self.repo / "data"), hoy)       # cambios sin commit
 
 
 class SqliteRepite(unittest.TestCase):

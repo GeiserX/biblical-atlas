@@ -20,6 +20,7 @@ import hashlib
 import json
 import re
 import sqlite3
+import subprocess
 import sys
 import unicodedata
 import urllib.parse
@@ -1159,6 +1160,23 @@ SW_SKIP = ("docs/", "_local/")
 SW_SELF = ("sw.js", "sw-manifest.js")
 
 
+def fecha_datos(carpeta):
+    """La fecha de los datos de `carpeta`: la del último commit que la tocó, o la de hoy si tiene cambios sin commit o
+    no está en git. Va en "generado" (la portada dice «Datos del …») y por tanto en cada data*.json y stats.json. Con
+    la fecha de compilación, un despliegue de otro día que solo toca la documentación cambiaría esos ficheros, y con
+    ellos la versión del service worker: todos verían el aviso y volverían a bajar el núcleo."""
+    hoy = datetime.date.today().isoformat()
+    git = ["git", "-C", str(carpeta)]
+    try:
+        sucio = subprocess.run(git + ["status", "--porcelain", "--", "."], capture_output=True, text=True, check=True,
+                               timeout=60).stdout.strip()
+        fecha = subprocess.run(git + ["log", "-1", "--format=%cs", "--", "."], capture_output=True, text=True,
+                               check=True, timeout=60).stdout.strip()
+    except (OSError, subprocess.SubprocessError):
+        return hoy
+    return hoy if sucio or not fecha else fecha
+
+
 def write_sw_manifest(sitio):
     """Escribe sitio/sw-manifest.js: la huella SHA-256 de cada fichero que el worker puede servir y la versión, que
     resume esas huellas y el propio sw.js. Un fichero cambiado da otra versión y el worker lo nota al buscar
@@ -1641,7 +1659,7 @@ def main(argv=None):
     errores = integridad(datos)
     salida = legado = capas = None
     if not errores:
-        salida, legado, errores = componer(datos, datetime.date.today().isoformat())
+        salida, legado, errores = componer(datos, fecha_datos(args.data))
     if not errores:
         leg = Legacy(load_map())
         capas = capas_idioma(datos, leg)

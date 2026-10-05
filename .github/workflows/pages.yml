@@ -26,6 +26,10 @@ jobs:
           # Este trabajo no hace push y deploy-pages usa el token OIDC; un token persistido lo leerían pip
           # y cualquier plugin de MkDocs.
           persist-credentials: false
+          # build.py fecha los datos con el último commit que tocó data/: con la historia entera (sin los ficheros
+          # viejos), un despliegue que solo toca la documentación no cambia la versión del service worker.
+          fetch-depth: 0
+          filter: blob:none
       - uses: actions/setup-python@v7
         with:
           python-version: "3.12"
