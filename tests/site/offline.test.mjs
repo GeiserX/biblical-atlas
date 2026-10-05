@@ -249,6 +249,26 @@ test('a new deploy shows the notice and waits for the click to reload', async ()
   const notice = page.locator('#nueva-version[role="status"]');
   await notice.waitFor();
   assert.match(await notice.textContent(), /Hay una versión nueva/);
+  // It covers no control of the map, on a phone or on a desktop: only what scrolls (the rows of the timeline).
+  for (const width of [430, 1440]) {
+    await page.setViewportSize({ width, height: 900 });
+    const covered = await page.evaluate(() => {
+      const box = document.getElementById('nueva-version');
+      const r = box.getBoundingClientRect();
+      const hit = new Set();
+      for (let x = r.left + 2; x < r.right; x += 6) {
+        for (let y = r.top + 2; y < r.bottom; y += 6) {
+          for (const el of document.elementsFromPoint(x, y)) {
+            const c = el.closest('button:not(#linea-filas *), a, input, select, h1');
+            if (c && !box.contains(c)) hit.add(c.id || c.className || c.textContent.trim().slice(0, 30));
+          }
+        }
+      }
+      return [...hit];
+    });
+    assert.deepEqual(covered, [], `at ${width} px the notice covers: ${covered.join(', ')}`);
+  }
+  await page.setViewportSize(DESKTOP.viewport);
   // Nothing reloads by itself: five seconds later, both pages are still the same documents, under the old worker.
   await page.waitForTimeout(5000);
   assert.equal(await page.evaluate(() => window.__same), true, 'the page reloaded by itself');
