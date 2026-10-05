@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Compila data/ en dist/data.json, site/data.json, site/data.js, site/data.core.json, site/data.detail.json,
-dist/biblical-atlas.sqlite y el registro de investigación de docs/investigacion/registro/.
+dist/biblical-atlas.sqlite y el registro de investigación de docs/investigacion/registro/. Al final escribe
+site/sw-manifest.js, la versión del sitio para el service worker.
 
 Uso:  python3 scripts/build.py [--data DIR] [--out DIR]
 
@@ -15,6 +16,7 @@ Todo lo que escribe es derivado: se edita el YAML y se vuelve a generar.
 """
 import argparse
 import datetime
+import hashlib
 import json
 import re
 import sqlite3
@@ -1151,6 +1153,32 @@ def escribir_resumen(salida, ruta):
     ruta.write_text(json.dumps(resumen(salida), ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
 
 
+# Lo que el service worker (site/sw.js) puede guardar: cada fichero publicado de site/ salvo la documentación, los
+# datos de prueba, los textos para quien lee el repositorio y el propio worker. docs/development.md, «Sin conexión».
+SW_SKIP = ("docs/", "_local/")
+SW_SELF = ("sw.js", "sw-manifest.js")
+
+
+def write_sw_manifest(sitio):
+    """Escribe sitio/sw-manifest.js: la huella SHA-256 de cada fichero que el worker puede servir y la versión, que
+    resume esas huellas y el propio sw.js. Un fichero cambiado da otra versión y el worker lo nota al buscar
+    actualizaciones. Devuelve la versión."""
+    files = {}
+    for f in sorted(sitio.rglob("*")):
+        rel = f.relative_to(sitio).as_posix()
+        if (not f.is_file() or rel.startswith(SW_SKIP) or rel in SW_SELF or rel.endswith(".md")
+                or any(p.startswith(".") for p in rel.split("/"))):
+            continue
+        files[rel] = hashlib.sha256(f.read_bytes()).hexdigest()
+    worker = sitio / "sw.js"
+    digest = json.dumps(files, sort_keys=True).encode() + (worker.read_bytes() if worker.exists() else b"")
+    version = hashlib.sha256(digest).hexdigest()[:16]
+    (sitio / "sw-manifest.js").write_text(
+        "// Lo escribe scripts/build.py: la versión del sitio y la huella de cada fichero que site/sw.js puede servir.\n"
+        f"self.SW_MANIFEST = {json.dumps({'version': version, 'files': files}, indent=1)};\n", encoding="utf-8")
+    return version
+
+
 def _fecha_cols(f):
     f = f or {}
     return (f.get("desde"), f.get("hasta"), f.get("precision"), int(bool(f.get("aprox"))), f.get("tipo"), f.get("texto"))
@@ -1647,6 +1675,7 @@ def main(argv=None):
         escribir_resumen(salida, RAIZ / "site" / "stats.json")
         n_hf = escribir_sqlite(salida, RAIZ / "dist" / "biblical-atlas.sqlite")
         escribir_registro(salida, legado, datos, RAIZ / "docs" / "investigacion" / "registro")
+        write_sw_manifest(RAIZ / "site")   # al final: resume lo que se acaba de escribir en site/
         donde = ""
     n_impl = sum(1 for f in salida["fuentes"].values() if f.get("implicita"))
     rels = [r for p in salida["personas"].values() for r in p.get("relaciones") or []]

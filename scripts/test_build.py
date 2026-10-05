@@ -2,6 +2,7 @@
 """Pruebas de lo que scripts/build.py compila de un par escrito en las dos fichas. Uso: python3 scripts/test_build.py
 
 Trabajan sobre un data/ pequeño en una carpeta temporal, con el vocabulario de verdad (data/vocabulary.yaml)."""
+import hashlib
 import json
 import shutil
 import sqlite3
@@ -174,6 +175,46 @@ class Chunks(unittest.TestCase):
         self.assertEqual(core["viajes"], [{"id": "a", "paradas": [{"orden": 1}, {"orden": 2}]}, {"id": "b"}])
         self.assertEqual(detail["viajes"], [{"paradas": [{"razon": "r1"}, None]}, None])
         self.assertEqual(build.merge_chunks(core, detail), salida)
+
+
+class SwManifest(unittest.TestCase):
+    """site/sw-manifest.js: la huella de cada fichero que el service worker puede servir y una versión que cambia con
+    cualquiera de ellos o con el propio sw.js, y no con la documentación ni los datos de prueba."""
+
+    def setUp(self):
+        self.tmp = tempfile.TemporaryDirectory()
+        self.site = Path(self.tmp.name)
+        for rel in ("index.html", "js/a.js", "maps/m.webp", "docs/index.html", "_local/x/data.json", "README.md",
+                    ".DS_Store", "sw.js"):
+            (self.site / rel).parent.mkdir(parents=True, exist_ok=True)
+            (self.site / rel).write_text(rel, encoding="utf-8")
+
+    def tearDown(self):
+        self.tmp.cleanup()
+
+    def manifest(self):
+        version = build.write_sw_manifest(self.site)
+        text = (self.site / "sw-manifest.js").read_text(encoding="utf-8")
+        data = json.loads(text.split("self.SW_MANIFEST = ", 1)[1].rstrip().rstrip(";"))
+        self.assertEqual(data["version"], version)
+        return data
+
+    def test_lists_what_the_worker_serves_with_its_hash(self):
+        files = self.manifest()["files"]
+        self.assertEqual(sorted(files), ["index.html", "js/a.js", "maps/m.webp"])
+        self.assertEqual(files["js/a.js"], hashlib.sha256(b"js/a.js").hexdigest())
+
+    def test_the_version_follows_the_published_files_and_the_worker(self):
+        first = self.manifest()["version"]
+        self.assertEqual(self.manifest()["version"], first)                 # nada cambió: la misma versión
+        (self.site / "docs/index.html").write_text("otra", encoding="utf-8")
+        (self.site / "_local/x/data.json").write_text("otra", encoding="utf-8")
+        self.assertEqual(self.manifest()["version"], first)                 # ni la documentación ni _local/
+        (self.site / "js/a.js").write_text("otra", encoding="utf-8")
+        second = self.manifest()["version"]
+        self.assertNotEqual(second, first)
+        (self.site / "sw.js").write_text("otra", encoding="utf-8")
+        self.assertNotEqual(self.manifest()["version"], second)
 
 
 class SqliteRepite(unittest.TestCase):
