@@ -19,6 +19,9 @@ concurrency:
 
 env:
   PLAYWRIGHT_VERSION: 1.63.0
+  # accesibilidad.test.mjs: axe-core con sus reglas de WCAG 2.2 A y AA. Las dos versiones fijas: una regla nueva de axe
+  # entra en un cambio revisado, no en un PR cualquiera.
+  AXE_VERSION: 4.13.0
 
 jobs:
   # En un solo runner la batería pasa de 45 minutos: se reparte en seis a la vez. timeline-marks.test.mjs tarda 26 minutos
@@ -51,8 +54,8 @@ jobs:
       - uses: actions/setup-node@v7
         with:
           node-version: "24"
-      - name: Instalar playwright-core
-        run: npm install --no-save --no-package-lock --prefix "$RUNNER_TEMP/pw" "playwright-core@$PLAYWRIGHT_VERSION"
+      - name: Instalar playwright-core y axe-core
+        run: npm install --no-save --no-package-lock --prefix "$RUNNER_TEMP/pw" "playwright-core@$PLAYWRIGHT_VERSION" "@axe-core/playwright@$AXE_VERSION" "axe-core@$AXE_VERSION"
       - name: Caché de Chromium
         id: chromium
         uses: actions/cache/restore@v6

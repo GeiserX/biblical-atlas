@@ -31,11 +31,13 @@ python3 scripts/bible_coverage.py
 Las pruebas del sitio (`tests/site/`) abren el sitio en un Chromium de verdad. En cada PR y en cada push a `main` las corre `sitio.yml` en los runners de GitHub, repartidas en seis trabajos; si una falla, sus trazas de Playwright quedan en el artefacto `trazas-<n>` del trabajo que falló (n, su número en la matriz), y se abren con `npx playwright-core show-trace <fichero>.zip`. Llevan capturas de pantalla, porque el mapa se pinta en un canvas que las instantáneas del DOM no guardan: las de `timeline-marks` pueden pasar de 1 GB. Para correrlas en local, tras `build.py`:
 
 ```bash
-npm install --prefix /tmp/pw playwright-core@1.63.0
+npm install --prefix /tmp/pw playwright-core@1.63.0 @axe-core/playwright@4.13.0 axe-core@4.13.0
 node /tmp/pw/node_modules/playwright-core/cli.js install --only-shell chromium
 export PLAYWRIGHT_CORE=/tmp/pw/node_modules/playwright-core PLAYWRIGHT_MODULE_DIR=/tmp/pw/node_modules
 node --test --test-concurrency=1 tests/site/notes.test.mjs   # un fichero; tests/site/*.test.mjs, todos
 ```
+
+[`accesibilidad.test.mjs`](https://github.com/GeiserX/biblical-atlas/blob/main/tests/site/accesibilidad.test.mjs) pasa axe-core, con las reglas de WCAG 2.2 A y AA, por cada vista del sitio: la portada, las fichas, la línea, el grafo, el modo lectura, un recorrido, la búsqueda, un pasaje sin coincidencias, el calendario y «Acerca de», a 1440 × 900 y a 430 × 932, en claro, con el navegador pidiendo un tema oscuro y en el modo reunión. Falla con cualquier hallazgo que no esté en su lista `ALLOW`, y cada entrada de esa lista dice por qué está y qué comprueba la página antes de dejarlo pasar. Mide también el contraste que axe no decide, el de las tarjetas que flotan sobre el mapa. `BE_AXE_REPORT=<fichero>` escribe cada hallazgo, permitido o no, para revisarlos.
 
 Un fichero detrás de otro: cada uno abre su navegador. Todas juntas tardan unos 50 minutos en una sola máquina. `BE_TIME_SCALE=<n>` multiplica los presupuestos de tiempo de `timeline-marks` en una máquina más lenta que un Mac mini.
 
