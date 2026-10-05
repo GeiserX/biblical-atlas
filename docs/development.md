@@ -8,7 +8,7 @@ Python 3.12 o más nuevo y PyYAML:
 
 ```bash
 pip install -r requirements.txt
-python3 scripts/build.py          # data/ -> site/data.json, site/data.js, los dos trozos, site/stats.json, dist/ y docs/investigacion/registro/
+python3 scripts/build.py          # data/ -> site/data.json, site/data.js, los dos trozos, site/stats.json, site/sw-manifest.js, dist/ y docs/investigacion/registro/
 python3 scripts/validate.py       # esquema, fuentes, fechas, calendario; 0 errores y avisos dentro del presupuesto
 python3 scripts/validate.py --links   # y además cada URL (lento: medio segundo por petición)
 python3 scripts/review.py --fail  # lo que lleva más de un año sin releer
@@ -58,6 +58,30 @@ Tres comprobaciones lo vigilan. `build.py` no escribe nada si el núcleo y el de
 
 **Desde `file://` y con `?datos=`.** Desde `file://` el sitio carga `data.js`, que sigue siendo `data.json` entero, así que no pide nada después. Con `?datos=_local/<nombre>/data.json` busca `data.core.json` y `data.detail.json` en esa carpeta y, si no hay núcleo, carga su `data.json` entero.
 
+## Sin conexión
+
+Publicado por https, el sitio abre sin conexión después de una visita con red. Lo hace un service worker, [`site/sw.js`](https://github.com/GeiserX/biblical-atlas/blob/main/site/sw.js), que registra [`site/js/offline.js`](https://github.com/GeiserX/biblical-atlas/blob/main/site/js/offline.js) desde las tres páginas.
+
+| Qué guarda | Cuándo |
+|---|---|
+| Las tres páginas, el CSS, el JS, las fuentes, los iconos, `data.core.json` (`PRECACHE`) y MapLibre 6.11.2 de unpkg (`LIBS`) | Al instalarse, en la primera visita: 6,1 MB sin comprimir, 1,8 MB comprimidos. Casi todo ya está en la caché del navegador por la propia visita. |
+| `data.detail.json`, `data.en.json`, `data.json` (lo lee el calendario), las listas de vídeos, `i18n/` y los mapas de fondo | La primera vez que el sitio los pide. Lo que la primera visita pidió antes de que el worker tomara la página se guarda al tomarla, desde la caché del navegador. |
+| El estilo, las teselas y los iconos del mapa actual (OpenFreeMap) | Cuando se ven, en otra caché de 600 respuestas como mucho. Con red van siempre a la red; sin red, salen de lo ya visto. |
+
+Nada más se descarga por adelantado. `stats.json` no se guarda: el sitio no lo pide, lo leen las insignias del README.
+
+**Versiones.** `build.py` escribe `site/sw-manifest.js`, que no va a git: la huella SHA-256 de cada fichero publicado de `site/` (salvo `docs/`, `_local/`, los `.md` y el propio worker) y una versión que resume esas huellas y `sw.js`. La caché lleva el nombre de la versión. Un despliegue que cambia un fichero del sitio cambia la versión; uno que solo cambia la documentación, no.
+
+- El navegador compara `sw.js` y `sw-manifest.js` con los publicados al abrir una página, al volver la red y al volver a la pestaña (como mucho una vez cada diez minutos). Si cambiaron, instala la versión nueva sin molestar: copia de la anterior lo que conserva su huella, descarga lo demás y espera.
+- Mientras espera, la página sigue entera con su versión y un aviso dice «Hay una versión nueva del atlas», con «Recargar». Solo al pulsarlo se activa la nueva, se borra la caché anterior y la página recarga. Las otras pestañas abiertas recargan también, porque su worker ya es el nuevo. Si se cierran todas sin pulsar, la visita siguiente abre con la nueva.
+- Todo se sirve de la caché de la versión, con red o sin ella, así que el código, el núcleo y el detalle de una pestaña son siempre de la misma versión. Lo que aún no está se pide a la red y solo se guarda si su huella es la del manifiesto. Si no lo es, el servidor ya tiene otra versión: el worker responde 503 (la ficha dice que no pudo cargarse) y busca la nueva, que avisa. Un detalle nuevo nunca se une a un núcleo viejo.
+
+**Lo que no funciona sin conexión.** Las teselas del mapa actual que no se vieron; si ni siquiera se guardó su estilo, el mapa pasa a nuestro relieve, como cuando OpenFreeMap no responde. Los vídeos y los enlaces a jw.org y wol.jw.org. Y lo que nunca se pidió con red: una ficha cuya lista de vídeos no se guardó sale sin esa sección, y el calendario necesita `data.json`, que solo se guarda al abrirlo con red.
+
+**En local y desde `file://`.** El worker solo se registra por https. Con `python3 -m http.server` no hay worker: un cambio se ve al recargar y las pruebas del sitio no tienen nada entre ellas y la red. Para probarlo en local, `localStorage.setItem('biblical-atlas:sin-conexion', '1')` en la consola, `build.py` y recargar; para quitarlo, «Unregister» en las herramientas del navegador (Aplicación, Service workers). Desde `file://` no puede haber worker y el sitio abre como siempre.
+
+**Un fichero nuevo.** Si una de las tres páginas lo pide al abrir, se añade a `PRECACHE` en `site/sw.js`; una versión nueva de MapLibre se cambia en `LIBS`, la misma que en `index.html`. Si el sitio lo pide después, no hay que hacer nada: entra en el manifiesto y se guarda la primera vez. La versión no se toca a mano. [`tests/site/offline.test.mjs`](https://github.com/GeiserX/biblical-atlas/blob/main/tests/site/offline.test.mjs) abre las tres páginas y falla si piden algo que no está en `PRECACHE` ni entre lo que se guarda al pedirlo; también prueba la carga sin red, el detalle sin red, el detalle de otra versión, el aviso y `file://`.
+
 ## Esta documentación
 
 Es un sitio [mkdocs-material](https://squidfunk.github.io/mkdocs-material/) que se publica en `/docs/` del mismo artefacto que la aplicación. `mkdocs.yml` fija `site_dir` en `site/docs`, así que una compilación suelta nunca borra la aplicación.
@@ -86,4 +110,4 @@ Lo que no entra: texto, mapas o imágenes copiados de jw.org; subtítulos de ví
 
 ## Publicar
 
-`pages.yml` corre en cada push a `main`: instala las dependencias, compila los datos, construye la documentación con `mkdocs build --strict`, comprueba que cada fichero de `site/` sigue en su sitio y que `site/docs/index.html` existe, y sube `site/` a GitHub Pages. `validar.yml` corre en cada PR, en `main` y cada lunes (con `--links` y `review.py --fail`). `docs.yml` corre en cada PR y construye la documentación en modo estricto. `sitio.yml` corre en cada PR y en `main` las pruebas de `tests/site/` en Chromium.
+`pages.yml` corre en cada push a `main`: instala las dependencias, compila los datos, construye la documentación con `mkdocs build --strict`, comprueba que cada fichero de `site/` sigue en su sitio, también `sw-manifest.js`, y que `site/docs/index.html` existe, y sube `site/` a GitHub Pages. `validar.yml` corre en cada PR, en `main` y cada lunes (con `--links` y `review.py --fail`). `docs.yml` corre en cada PR y construye la documentación en modo estricto. `sitio.yml` corre en cada PR y en `main` las pruebas de `tests/site/` en Chromium.

@@ -19,7 +19,7 @@ y abre <http://localhost:8000>.
 
 También funciona abriendo `site/index.html` con doble clic, desde `file://`, con tres límites. El navegador no deja a MapLibre leer ficheros locales, así que el relieve antiguo va como imagen bajo el mapa. La cortina no está disponible. Las fichas no muestran vídeos, ni de lugares, ni de personas, ni de capítulos.
 
-En los dos casos hace falta conexión. MapLibre GL JS 6.11.2 llega desde unpkg.com con su huella SRI, y el mapa actual usa las teselas de [OpenFreeMap](https://openfreemap.org/) con el estilo Positron, que no pide clave. Si ese estilo no responde, el mapa actual pasa a `maps/mediterraneo-actual.webp`.
+La primera vez hace falta conexión. Publicado por https, después abre también sin ella: [`sw.js`](sw.js) guarda el sitio y avisa cuando hay una versión nueva ([Desarrollo](../docs/development.md#sin-conexión)). En local y desde `file://` no hay worker. MapLibre GL JS 6.11.2 llega desde unpkg.com con su huella SRI, y el mapa actual usa las teselas de [OpenFreeMap](https://openfreemap.org/) con el estilo Positron, que no pide clave. Si ese estilo no responde, el mapa actual pasa a `maps/mediterraneo-actual.webp`.
 
 El mapa lleva solo la atribución que piden las licencias (OpenBible.info, el relieve y, en el mapa actual, OpenFreeMap, OpenMapTiles y OpenStreetMap, que añade MapLibre) y un enlace «Créditos» a `acerca.html#gracias`, donde está la lista entera con cada licencia. En el móvil se pliega en un botón (i) bajo los botones del mapa, porque abajo la taparía la hoja de la ficha. Lo que se añada de fuera va también a esa lista.
 
@@ -178,6 +178,8 @@ El carril «Viajes de Pablo» enseña solo los viajes de Pablo: un tramo por via
 | `kit/` | Tokens, componentes y fuentes copiados del kit de maquetas. Las fuentes tienen licencia SIL OFL 1.1 |
 | `maps/` | Relieve antiguo y actual en Web Mercator |
 | `_local/` | Datos de prueba. No va a git |
+| `sw.js` | El service worker: guarda cada versión del sitio y la sirve con red o sin ella ([Desarrollo](../docs/development.md#sin-conexión)) |
+| `sw-manifest.js` | La versión y la huella de cada fichero que `sw.js` puede servir. Lo escribe `scripts/build.py`. No va a git |
 
 ## Módulos
 
@@ -200,6 +202,7 @@ El carril «Viajes de Pablo» enseña solo los viajes de Pablo: un tramo por via
 | `js/grafo.js` | Grafo de personas y conexión entre dos |
 | `js/lectura.js` | Modo lectura de cualquier capítulo con datos |
 | `js/recorridos.js` | Recorridos guiados, preguntas de repaso, hoja de impresión, modo presentación, modo reunión y letra grande |
+| `js/offline.js` | Registra `sw.js` (solo por https) y pone el aviso «Hay una versión nueva del atlas» con «Recargar», que es lo único que la activa. Lo cargan las tres páginas, con `css/offline.css` |
 | `js/volver.js` | «Volver al mapa» de `acerca.html` y `calendario.html`: Atrás cuando el mapa está justo detrás, el enlace a la vista en los demás casos |
 | `js/portada.js` | Portada «Entra por una pregunta»: la caja que contesta, entrar en cada destino, «Seguir donde lo dejaste», épocas y recorridos |
 | `js/passage-link.js` | Enlaces a un pasaje (`#p=Hch16:1`): lee el pasaje, busca lo que lo cita con las reglas del servidor MCP del atlas, abre lo primero, lista lo demás en la ficha, avisa cuando nada lo cita y pone «Enlace al pasaje» junto a «Citar» (`BE.pasajeEnlace`) |
