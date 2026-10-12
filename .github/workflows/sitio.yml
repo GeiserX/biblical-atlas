@@ -84,8 +84,9 @@ jobs:
           PLAYWRIGHT_MODULE_DIR: ${{ runner.temp }}/pw/node_modules
           BE_TRACES: ${{ runner.temp }}/trazas
           # Los presupuestos de tiempo de timeline-marks se midieron en un Mac mini: 50 ms para pintar los carriles y 16 ms
-          # por fotograma de arrastre. En diez ejecuciones de octubre de 2026, los runners tardaron hasta 64 ms en pintar y
-          # hasta 41 ms por fotograma. Cada uno lleva su multiplicador, con la misma holgura: pintar 100 ms, arrastrar 64 ms.
+          # por fotograma de arrastre. En catorce ejecuciones de octubre de 2026, los runners tardaron hasta 70 ms en pintar y
+          # hasta 41 ms por fotograma. Cada uno lleva su multiplicador: pintar 100 ms y arrastrar 64 ms dejan a los dos con un
+          # margen de entre el 40 % y el 60 %.
           BE_TIME_SCALE_PINTADO: "2"
           BE_TIME_SCALE_ARRASTRE: "4"
           PARTE: ${{ matrix.parte }}

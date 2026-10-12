@@ -31,7 +31,7 @@ const SCALES = [4125, 400, 40, 8, 1.5, 0.12];
 // The time budgets of the speed test were set on a Mac mini. On a slower machine BE_TIME_SCALE_PINTADO=<n> multiplies the
 // budget of drawing the lanes and BE_TIME_SCALE_ARRASTRE=<n> the one of a drag frame; BE_TIME_SCALE=<n> is the default
 // of both. They are apart because a slower machine is not slower by the same factor in both: GitHub runners (4 shared
-// cores, no GPU) took up to 64 ms to draw the lanes at milenios, about 1.3 times the budget, and up to 41 ms per drag
+// cores, no GPU) took up to 70 ms to draw the lanes at milenios, about 1.4 times the budget, and up to 41 ms per drag
 // frame at 430, about 2.6 times.
 const TIME_SCALE = Number(process.env.BE_TIME_SCALE) || 1;
 const SCALE_PAINT = Number(process.env.BE_TIME_SCALE_PINTADO) || TIME_SCALE;
