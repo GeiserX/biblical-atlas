@@ -1,10 +1,10 @@
 // Deep links by passage (#p=Hch16:1, site/js/passage-link.js), tested in a real headless browser: a passage cited by
-// one record opens that record's card at its date; cited by several, it opens the first by date and the card lists the
-// others to switch to; cited by none, the panel says so and the selection stays empty; a range and a book written with
-// an accent read like their abbreviation; Back after a passage link goes back to the view before it and Forward returns
-// to the passage with its list, and with nothing selected the notice has its own entry named by the passage; «Enlace al
-// pasaje» copies the link. The rules without a browser are in
-// enlaces-pasaje-reglas.test.mjs.
+// one record opens that record's card at its date; cited by several, it opens the first (events first, those whose
+// principal passage cites it before the rest, then by date) and the card lists the others to switch to; cited by none,
+// the panel says so and the selection stays empty; a range and a book written with an accent read like their
+// abbreviation; Back after a passage link goes back to the view before it and Forward returns to the passage with its
+// list, and with nothing selected the notice has its own entry named by the passage; «Enlace al pasaje» copies the link.
+// The rules without a browser are in enlaces-pasaje-reglas.test.mjs.
 //
 // Run from the root of the repository, one browser at a time:
 //   node --test --test-concurrency=1 tests/site/enlaces-pasaje.test.mjs
@@ -124,6 +124,19 @@ const view = (page) => page.evaluate(() => {
     places: BE.E.resaltado ? [...BE.E.resaltado.lugares] : [],
   };
 });
+/** Does the principal passage of a record (the first of an event's `pasajes`, the first part of a `referencia`) cite
+    the passage? Read from the data here, not from passage-link.js, so a broken rule there shows. */
+const principal = (page, p, sels) => page.evaluate(([p, sels]) => {
+  const BE = window.BE, D = BE.D, P = BE.pasajeEnlace, r = P.parsePassage(p).stretch;
+  return sels.map((sel) => {
+    const [k, id] = [sel.slice(0, sel.indexOf(':')), sel.slice(sel.indexOf(':') + 1)];
+    let first = null;
+    if (k === 'evento') first = D.eventos.find((e) => e.id === id).pasajes[0];
+    else if (k === 'parada') { const [v, o] = id.split('/'); first = D.viajes.find((x) => x.id === v).paradas.find((x) => String(x.orden) === o).referencia; }
+    else first = (k === 'carta' ? D.cartas : D.viajes).find((x) => x.id === id).referencia;
+    return P.parseRefs(String(first).split(';')[0]).some((s) => P.overlaps(s, r));
+  });
+}, [p, sels]);
 /** The records that cite a passage, as the page finds them, and the date the timeline gives the first one. */
 const found = (page, p) => page.evaluate((p) => {
   const r = window.BE.pasajeEnlace.resolve(p);
@@ -156,11 +169,6 @@ test('a passage cited by several opens the first by date and lists the others to
   const events = when.filter(([k]) => k === 'evento').map(([, t]) => t);
   assert.ok(when.findIndex(([k]) => k !== 'evento') >= events.length, 'an event comes after another kind');
   assert.deepEqual(events, [...events].sort((a, b) => a - b), 'the events are not by date');
-  // A long range is cited by events far apart in time: the earliest opens.
-  const long = await page.evaluate(() => window.BE.pasajeEnlace.resolve('Hch13:1-14:28').found.filter((s) => s.startsWith('evento:'))
-    .map((s) => window.BE.momentoDe(window.BE.parseSel(s))));
-  assert.ok(long.length > 2 && long[0] < long.at(-1), 'Hch 13:1-14:28 is no test of the order');
-  assert.deepEqual(long, [...long].sort((a, b) => a - b), 'the events of Hch 13:1-14:28 are not by date');
   assert.equal(v.box.rows.length, f.list.length - 1, 'the list does not offer every other record');
   assert.ok(v.box.current, 'the open record is not marked in the list');
   // Switching to another keeps the list, with the new one marked and the passage in the address.
@@ -214,9 +222,34 @@ test('a passage cited by none says so, keeps the selection empty and offers the 
   assert.deepEqual([...page.pageErrors, ...bad.pageErrors, ...late.pageErrors, ...apart.pageErrors, ...joined.pageErrors], []);
 });
 
-test('the order by date does not lean on the order of the data', async () => {
+test('the records whose principal passage cites it come first; a sermon that recalls the past does not open', async () => {
+  // Hch 13:17-22 recalls the exodus, the conquest and the kings: «Nace Isaac» (1918 a.e.c.) cites Hch 13:17-20 in its
+  // third passage, and by date alone it would open the first journey's range.
+  const page = await openPage(DESKTOP, { hash: 'p=Hch13:1-14:28' });
+  const v = await view(page);
+  assert.equal(v.sel, 'evento:apartados-para-la-mision');
+  const { list } = await found(page, 'Hch13:1-14:28');
+  const events = list.filter((s) => s.startsWith('evento:'));
+  assert.ok(events.includes('evento:nacimiento-de-isaac'), '«Nace Isaac» no longer cites Hch 13, so this is no test');
+  const side = await principal(page, 'Hch13:1-14:28', events);
+  const cut = side.indexOf(false);
+  assert.ok(cut > 0 && side.slice(cut).every((x) => !x), `the events that cite it further down are mixed in: ${side.map(Number).join('')}`);
+  // Inside each side, by date: the earliest of the sermon's recollections comes first among them.
+  const when = await page.evaluate((l) => l.map((s) => window.BE.momentoDe(window.BE.parseSel(s))), events);
+  for (const part of [when.slice(0, cut), when.slice(cut)]) assert.deepEqual(part, [...part].sort((a, b) => a - b), 'a side is not by date');
+  assert.ok(when[cut] < when[0], 'the events further down are not earlier, so this is no test of the principal passage');
+  // Stops come after events, as on the server, even when the event cites it further down and the stop first.
+  const p2 = await openPage(DESKTOP, { hash: 'p=2Ti4:10' });
+  const w = await view(p2);
+  assert.equal(w.sel, 'evento:segundo-encierro-en-roma');
+  assert.deepEqual(await principal(p2, '2Ti4:10', [w.sel]), [false], '2 Ti 4:10 is now the principal passage of the event, so this is no test');
+  assert.ok(w.box.rows.some((s) => s.startsWith('parada:')), 'no stop cites 2 Ti 4:10');
+  assert.deepEqual([...page.pageErrors, ...p2.pageErrors], []);
+});
+
+test('the order does not lean on the order of the data', async () => {
   // The events, letters and journeys of data.json come out of build.py already by date, which would hide a missing sort:
-  // here they arrive reversed, and every group must still come out by date.
+  // here they arrive reversed, and every group must still come out principal first, then by date.
   const D = JSON.parse(fs.readFileSync(dataFile, 'utf8'));
   for (const k of ['eventos', 'cartas', 'viajes']) D[k].reverse();
   const body = JSON.stringify(D);
@@ -224,16 +257,21 @@ test('the order by date does not lean on the order of the data', async () => {
   const route = (r) => r.fulfill({ contentType: 'application/json', body: r.request().url().includes('/data.detail.json') ? '{}' : body });
   const page = await openPage(DESKTOP, { hash: 'p=2Ti4:10', route });
   for (const p of ['2Ti4:10', 'Hch13:1-14:28', '2Re17:6']) {
-    const groups = await page.evaluate((p) => {
+    const list = await page.evaluate((p) => window.BE.pasajeEnlace.resolve(p).found, p);
+    const side = await principal(page, p, list);
+    const groups = await page.evaluate(([list, side]) => {
       const BE = window.BE, out = {};
-      for (const s of BE.pasajeEnlace.resolve(p).found) (out[s.split(':')[0]] ||= []).push(BE.momentoDe(BE.parseSel(s)) ?? Infinity);
+      // Principal first: its moments as they are; the others after every principal one.
+      list.forEach((s, i) => (out[s.split(':')[0]] ||= []).push([side[i] ? 0 : 1, BE.momentoDe(BE.parseSel(s)) ?? 1e9]));
       return out;
-    }, p);
+    }, [list, side]);
     const order = Object.keys(groups);
     assert.deepEqual(order, ['evento', 'parada', 'carta', 'viaje'].filter((k) => order.includes(k)), `${p}: the groups are out of order`);
     assert.ok(Object.values(groups).some((ts) => ts.length > 1), `${p} is no test of the order`);
-    for (const [k, ts] of Object.entries(groups)) assert.deepEqual(ts, [...ts].sort((a, b) => a - b), `${p}: the ${k} group is not by date`);
+    const cmp = (a, b) => a[0] - b[0] || a[1] - b[1];
+    for (const [k, ts] of Object.entries(groups)) assert.deepEqual(ts, [...ts].sort(cmp), `${p}: the ${k} group is not principal first, then by date`);
   }
+  assert.equal((await view(page)).sel, 'evento:segundo-encierro-en-roma');
   assert.deepEqual(page.pageErrors, []);
 });
 

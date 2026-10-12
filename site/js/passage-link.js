@@ -13,7 +13,8 @@
    - A record matches when one of its stretches shares at least one verse with the passage.
 
    Lookup order (docs/usage.md and docs/how-it-works.md say it for readers): events by their `pasajes`, the same rule as
-   lookup_passage; then journey stops, letters and journeys by their `referencia`. Inside each group, by the date the
+   lookup_passage; then journey stops, letters and journeys by their `referencia`. Inside each group, the records whose
+   principal passage (the first of `pasajes`, the first part of `referencia`) cites it come first, then by the date the
    timeline gives them. The first match opens; the card lists every match so the reader can switch. With no match the
    panel says so and offers the chapter's card when the chapter has data.
 
@@ -180,26 +181,31 @@ const GROUPS = [
   ['evento', 'Suceso'], ['parada', 'Parada'], ['carta', 'Carta'], ['viaje', 'Viaje'],
 ];
 let index = null;
-/** Every record that carries a passage, with its stretches, in lookup order: [{ sel, stretches }]. Built once per data. */
+/** Every record that carries a passage, with its stretches, in lookup order: [{ sel, stretches, first }]. `first` are the
+    stretches of its principal passage: the first of an event's `pasajes`, the first part («;») of a `referencia`.
+    Built once per data. */
 function records() {
   if (index && index.D === BE.D && index.books === BE.LIBROS) return index.list;
   const D = BE.D, list = [];
-  for (const e of D.eventos || []) list.push({ sel: `evento:${e.id}`, stretches: (e.pasajes || []).flatMap(parseRefs) });
+  const ref = (sel, s) => list.push({ sel, stretches: parseRefs(s), first: parseRefs(String(s || '').split(';')[0]) });
+  for (const e of D.eventos || []) list.push({ sel: `evento:${e.id}`, stretches: (e.pasajes || []).flatMap(parseRefs), first: parseRefs(e.pasajes?.[0]) });
   for (const v of D.viajes || []) {
-    for (const p of v.paradas || []) list.push({ sel: `parada:${v.id}/${p.orden}`, stretches: parseRefs(p.referencia) });
+    for (const p of v.paradas || []) ref(`parada:${v.id}/${p.orden}`, p.referencia);
   }
-  for (const c of D.cartas || []) list.push({ sel: `carta:${c.id}`, stretches: parseRefs(c.referencia) });
-  for (const v of D.viajes || []) list.push({ sel: `viaje:${v.id}`, stretches: parseRefs(v.referencia) });
+  for (const c of D.cartas || []) ref(`carta:${c.id}`, c.referencia);
+  for (const v of D.viajes || []) ref(`viaje:${v.id}`, v.referencia);
   index = { D, books: BE.LIBROS, list: list.filter((x) => x.stretches.length) };
   return index.list;
 }
 const kind = (sel) => sel.slice(0, sel.indexOf(':'));
-/** The records that cite a stretch, in lookup order: by group, then by the date the timeline gives them. */
+/** The records that cite a stretch, in lookup order: by group (events first, as on the server); inside a group, those
+    whose principal passage cites it before those that cite it further down their list (a sermon in Hch 13 that recalls
+    the birth of Isaac), then by the date the timeline gives them. */
 function matches(r) {
   const rank = new Map(GROUPS.map(([k], i) => [k, i]));
-  const found = records().filter((x) => x.stretches.some((s) => overlaps(s, r))).map((x) => x.sel).filter((s) => BE.parseSel(s));
-  const when = new Map(found.map((s) => [s, BE.momentoDe(BE.parseSel(s)) ?? Infinity]));
-  return found.map((s, i) => ({ s, i })).sort((a, b) => rank.get(kind(a.s)) - rank.get(kind(b.s)) || when.get(a.s) - when.get(b.s) || a.i - b.i).map((x) => x.s);
+  const found = records().filter((x) => x.stretches.some((s) => overlaps(s, r)) && BE.parseSel(x.sel))
+    .map((x, i) => ({ s: x.sel, i, side: x.first.some((s) => overlaps(s, r)) ? 0 : 1, t: BE.momentoDe(BE.parseSel(x.sel)) ?? Infinity }));
+  return found.sort((a, b) => rank.get(kind(a.s)) - rank.get(kind(b.s)) || a.side - b.side || a.t - b.t || a.i - b.i).map((x) => x.s);
 }
 /** A passage of a link → { text, readable, stretch, found } or { text, error }. */
 function resolve(text) {
@@ -249,7 +255,7 @@ function listHtml() {
   const read = `<a class="be-wol" href="${BE.urlCita(cita(a.stretch))}" ${BE.EXTERNO}>Leer ${esc(a.readable)} en jw.org</a>`;
   return `<section class="be-card pasaje-enlace" aria-label="${esc(`Lo que cita ${a.readable}`)}"><div class="be-card__pad">
     <div class="be-card__eyebrow">Enlace al pasaje · ${esc(a.readable)}</div>
-    <p class="be-card__body">${n === 1 ? 'Lo cita esta ficha del atlas.' : `Lo citan ${n} fichas del atlas, por fecha. Se abre la primera.`}</p>
+    <p class="be-card__body">${n === 1 ? 'Lo cita esta ficha del atlas.' : `Lo citan ${n} fichas del atlas. Se abre la primera.`}</p>
     ${n > 1 ? `<div class="be-list">${rows.slice(0, SHOWN).join('')}</div>` : ''}
     ${n > SHOWN ? `<details class="pasaje-enlace__mas"${a.found.indexOf(cur) >= SHOWN ? " open" : ""}><summary>Ver las otras ${n - SHOWN}</summary><div class="be-list">${rows.slice(SHOWN).join('')}</div></details>` : ''}
   </div><div class="be-card__foot"><span class="be-spacer"></span>${read}</div></section>`;

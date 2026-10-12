@@ -84,7 +84,7 @@ https://biblical-atlas.geiser.cloud/#p=2Re17:6
 https://biblical-atlas.geiser.cloud/#p=Génesis12:1-3
 ```
 
-El libro va con su abreviatura de la Traducción del Nuevo Mundo o con su nombre, con tilde o sin ella; después, el capítulo y, si hace falta, el versículo o un tramo (`Hch16:1-5`). El atlas busca lo que cita ese pasaje, primero los sucesos y después las paradas de los viajes, las cartas y los viajes, y abre lo primero por fecha: la línea de tiempo va a su fecha, el mapa encuadra su lugar y se abre su ficha. Si lo citan varios, la ficha los lista para pasar de uno a otro. Si no lo cita nada, lo dice y ofrece la ficha del capítulo cuando tiene datos.
+El libro va con su abreviatura de la Traducción del Nuevo Mundo o con su nombre, con tilde o sin ella; después, el capítulo y, si hace falta, el versículo o un tramo (`Hch16:1-5`). El atlas busca lo que cita ese pasaje: primero los sucesos y después las paradas de los viajes, las cartas y los viajes. En cada grupo van delante los que tienen ese pasaje como principal, el primero de sus pasajes, y después los que solo lo citan más abajo, cada parte por fecha. Así `#p=Hch13:1-14:28` abre «El espíritu aparta a Bernabé y Saulo en Antioquía», el principio del primer viaje, y no «Nace Isaac», que cita el discurso de Hechos 13. Se abre el primero: la línea de tiempo va a su fecha, el mapa encuadra su lugar y se abre su ficha. Si lo citan varios, la ficha los lista para pasar de uno a otro. Si no lo cita nada, lo dice y ofrece la ficha del capítulo cuando tiene datos.
 
 En la ficha de un suceso, una parada, una carta, un viaje o un capítulo, «Enlace al pasaje» copia esa dirección.
 
