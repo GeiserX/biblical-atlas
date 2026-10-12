@@ -288,7 +288,7 @@ Las inversas sirven para saber si dos relaciones son el mismo par. `father` tien
 
 **`family`** dice en qué grupo de la tarjeta de familia sale el destino: `parents`, `spouses`, `children` o `siblings`. Son los mismos grupos y las mismas palabras que el sitio reconoce hoy.
 
-**Lo que se queda fuera.** Una relación cuyo texto no es una palabra del vocabulario lo lleva en `caption` y, visto desde el destino, en `inverse_caption`. Cada texto admitido está en `outside` del vocabulario con su porqué. Hoy son 20, que se reparten en 6 de compañeros, 4 apariciones y 10 que esperan una decisión y llevan `fix`.
+**Lo que se queda fuera.** Una relación cuyo texto no es una palabra del vocabulario lo lleva en `caption` y, visto desde el destino, en `inverse_caption`. Cada texto admitido está en `outside` del vocabulario con su porqué, y lo lleva al menos una relación: uno que no lleva ninguna es un error y se quita. Hoy son 12, 8 de compañeros y 4 apariciones. Los 10 que llevaban `fix` se quitaron al cerrarse K1, K2 y T1.
 
 Hoy hay 56 valores distintos de `relacion`, y 13 de `relacion_inversa` en 17 relaciones. De los 56, 33 pasan a una palabra, 2 a un tipo sin palabra («maestro» y «discípulo de»), 1 a `certainty` y 20 se quedan como texto. Las 608 relaciones sin `relacion` siguen sin palabra.
 
@@ -477,6 +477,7 @@ Ninguna dirección nombra una relación. Si una ola posterior lleva los tipos de
 Sale con código 1, siempre:
 
 - Una clave del esquema antiguo en cualquier fichero de `data/`. Es lo que delata una migración a medias, que de otro modo pasaría en verde.
+- Un texto de `outside` que no lleva ninguna relación.
 - Un `type` que no está en el vocabulario; un destino que falta, que no existe, que es la propia ficha o que es persona donde toca lugar.
 - Una `word` que no está en el vocabulario o que es de otro tipo; `word` y `caption` a la vez; `inverse_caption` sin `caption`.
 - Un hecho anidado sin `sources`, `reason` o `checked_on`; una relación, una parada o un candidato sin `status`; una relación sin `inferred`.

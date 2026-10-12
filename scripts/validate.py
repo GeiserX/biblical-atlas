@@ -224,7 +224,7 @@ def load(data_dir):
     if not vocabulary:
         errores.append("data/vocabulary.yaml: no existe o está vacío; sin él no se pueden validar las relaciones")
     datos = {"sources": fuentes, "books": books, "calendar": calendar, "vocabulary": vocabulary,
-             "_errores": errores, "_origen_fuentes": origen}
+             "_errores": errores, "_origen_fuentes": origen, "_vocabulario_propio": voc_path.parent == data_dir}
     for tipo in TYPES:
         datos[tipo] = []
         for ruta in sorted((data_dir / tipo).glob("*.yaml")):
@@ -1370,6 +1370,7 @@ def check_relations(datos, err, warn):
     types, words = voc.get("types") or {}, voc.get("words") or {}
     offices, certainty = voc.get("offices") or {}, voc.get("certainty") or {}
     outside = {(o.get("type"), o.get("caption")): o for o in voc.get("outside") or [] if isinstance(o, dict)}
+    usados = set()                               # (tipo, caption) que lleva alguna relación
     meses = {m.get("id") for m in datos["calendar"].get("months") or []}
     citadas = cited_relations(datos)
     buscador = bible_coverage.Citas(datos["books"])
@@ -1420,6 +1421,7 @@ def check_relations(datos, err, warn):
                 err(f"{rd}: una relación {t} lleva word (o caption mientras se decide su palabra)")
             if cap:
                 fuera = outside.get((t, cap))
+                usados.add((t, cap))
                 if fuera is None:
                     warn("unlisted_caption", f"{rd}: el texto «{cap}» no es una palabra ni está en outside del "
                                              f"vocabulario; elige una palabra o añade el texto con su porqué")
@@ -1468,6 +1470,12 @@ def check_relations(datos, err, warn):
                                      f"tiene un capítulo entre sus sources y ningún tramo de la cobertura la cita; "
                                      f"su arista no se dibuja")
         keys_of_one_file(pid, donde, rels, voc, err)
+    # Un texto de outside que no lleva ninguna relación sobra: se quita, y vuelve con su porqué si una lo pide. Solo
+    # cuando el vocabulario es de la misma carpeta que las fichas: con --data y sin vocabulary.yaml faltan fichas.
+    if datos.get("_vocabulario_propio"):
+        for tipo, cap in outside:
+            if cap and (tipo, cap) not in usados:
+                err(f"data/vocabulary.yaml: outside «{cap}» ({tipo}) no lo lleva ninguna relación; quítalo")
     pairs(hacia, words, warn)
     parents_children(hacia, words, err)
 

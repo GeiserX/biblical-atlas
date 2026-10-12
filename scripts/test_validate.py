@@ -936,6 +936,34 @@ class DeAvisoAError(unittest.TestCase):
                 self.assertNotIn(f"AVISO [{codigo}]", texto)
 
 
+class OutsideSinUso(unittest.TestCase):
+    """Cada texto de outside lo lleva al menos una relación; uno que no lleva ninguna es un error y se quita. Solo
+    cuando el vocabulario es de la misma carpeta que las fichas."""
+    VOC = ("types:\n  tie:\n    target: person\n    verb: su trato\n    inverse_verb: '{target} tiene trato'\n"
+           "outside:\n  - type: tie\n    caption: usado\n    why: Prueba.\n  - type: tie\n    caption: suelto\n"
+           "    why: Prueba.\n")
+    FICHA = ("id: a\nname: A\nrelations:\n  - type: tie\n    person: b\n    caption: usado\n    inferred: false\n"
+             "    sources: [x]\n    reason: Prueba.\n    checked_on: 2026-10-12\n    status: verified\n")
+
+    def correr(self, con_vocabulario=True):
+        with tempfile.TemporaryDirectory() as d:
+            if con_vocabulario:
+                (Path(d) / "vocabulary.yaml").write_text(self.VOC, encoding="utf-8")
+            (Path(d) / "people").mkdir()
+            (Path(d) / "people" / "a.yaml").write_text(self.FICHA, encoding="utf-8")
+            out = io.StringIO()
+            with contextlib.redirect_stdout(out):
+                validate.main(["--data", d])
+            return [l for l in out.getvalue().splitlines() if "outside «" in l]
+
+    def test_el_texto_sin_relacion_es_error_y_el_usado_no(self):
+        self.assertEqual(self.correr(), ["ERROR data/vocabulary.yaml: outside «suelto» (tie) no lo lleva ninguna "
+                                         "relación; quítalo"])
+
+    def test_sin_vocabulario_en_la_carpeta_no_mira(self):
+        self.assertEqual(self.correr(con_vocabulario=False), [])
+
+
 class Transcurrido(unittest.TestCase):
     """narrative_order.elapsed: lo que validate.py deja escribir es lo que el sitio sabe dibujar (be-64b.15)."""
     def suceso(self, sid, orden, elapsed=None, desde=-1449, hasta=-1399, detalle=None):
