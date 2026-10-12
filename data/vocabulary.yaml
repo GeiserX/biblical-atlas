@@ -477,8 +477,9 @@ words:
 
 # Lo que se queda fuera del vocabulario. La relación lo lleva en `caption` y, si lo tiene, en `inverse_caption`:
 # son sus dos textos y no salen de ninguna palabra. `why` dice por qué no es una palabra. Cada entrada la lleva al
-# menos una relación; validate da error con una que no lleva ninguna. Con `fix`, la entrada nombra la decisión de
-# docs/investigacion/modelo.md que la quita, y una relación que la lleva es un error (outside_pending).
+# menos una relación; validate da error con una que no lleva ninguna. `fix` nombra la decisión de
+# docs/investigacion/modelo.md que quita el texto, y una relación que lo lleva es un error (outside_pending): una
+# entrada con `fix` nunca valida, así que solo vive en una rama mientras se aplica esa decisión, y no llega a main.
 # El verbo de una relación con `caption` es ese texto. Visto desde el destino es su `inverse_caption` o, si no lo
 # lleva, el `inverse_verb` de su tipo. Un `caption` que no está en esta lista avisa como unlisted_caption: así
 # llegan los textos de una rama de libro que todavía no tienen palabra.
