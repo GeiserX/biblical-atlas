@@ -41,6 +41,7 @@ let map = null, mapaListo = false, capasBase = [], estiloReserva = false;
 
 const ENCUADRE_INICIAL = [[19.2, 34.0], [37.2, 42.2]];
 let resaltadoMapa = null;           // Set de ids que pide BE.mapa.resaltar; null: manda la selección
+let vecinosMapa = null;             // Set: los lugares de la parada de antes y la de después de un recorrido (resaltar)
 
 const OCULTAR_EN_ACTUAL = /^(highway|road_|airport|label_other|label_village|label_town|label_city|label_state|poi|housenumber|aeroway|building)/;
 const marcasLugar = new Map();       // id → { marker, el, l, clase, hoy }
@@ -1523,6 +1524,7 @@ function pintarEtiquetas() {
   const selL = E.sel?.tipo === 'lugar' ? E.sel.id : null;
   const zoom = map.getZoom();
   const ventana = ventanaRelevante();
+  const vecinos = vecinosEnFoco(w);
   // Sin selección, los lugares que enseñan la época (los que encuadra encuadrarEpoca) se nombran como una ciudad mayor:
   // en 2001 a.e.c. el mapa se va a Ur, y Ur tiene que llevar su nombre a ese zoom.
   const deEpoca = E.sel ? null : lugaresEpocaEn(E.t);
@@ -1531,8 +1533,9 @@ function pintarEtiquetas() {
     const cls = m.el.classList;
     const enRes = res ? res.has(id) : false;
     const esSel = selL === id;
-    const oculto = !F.capas.pendientes && m.l.estado === 'pendiente' && !enRes && !esSel;
-    const fijo = esSel || enRes || id === actual || visitados.has(id) || futuros.has(id) || deCartas.has(id) || !!deEpoca?.has(id);
+    const vecino = !!vecinos?.has(id);
+    const oculto = !F.capas.pendientes && m.l.estado === 'pendiente' && !enRes && !esSel && !vecino;
+    const fijo = esSel || enRes || vecino || id === actual || visitados.has(id) || futuros.has(id) || deCartas.has(id) || !!deEpoca?.has(id);
     const otraEpoca = !oculto && !fijo && m.clase !== 'agua' && !enTiempo(id, ventana);
     cls.toggle('oculto', oculto);
     cls.toggle('otra-epoca', otraEpoca);
@@ -1560,6 +1563,7 @@ function pintarEtiquetas() {
     if (id === actual) prio = 100;
     else if (esSel) prio = 95;
     else if (resaltadoMapa?.has(id)) prio = 92;             // la parada del recorrido o la fila elegida en «Nombres»
+    else if (vecino) prio = 90;                              // la parada de antes y la de después (vecinosEnFoco)
     else if (enRes) prio = 80;
     else if (visitados.has(id) || futuros.has(id)) prio = 60;
     else if (deCartas.has(id)) prio = 50;
@@ -1621,7 +1625,9 @@ function pintarEtiquetas() {
     const l = BE.L[el.dataset.lugar];
     const pos = l?.lon != null ? [l.lon, l.lat] : map.unproject([r.left + r.width / 2 - c.left, r.bottom + 14 - c.top]).toArray();
     const activa = el.classList.contains('marca-num--activa');   // la parada de ahora se ve aunque roce una tarjeta
-    if (r.width) { extra(el, null, activa ? 100 : 99, pos, -Infinity, activa); Object.assign(items.at(-1), { ajeno: true, num: true }); }
+    // El número de otra parada cede ante el nombre de la parada de antes o de después; el de estas, no.
+    const lejano = !!vecinos && !vecinos.has(el.dataset.lugar) && !resaltadoMapa?.has(el.dataset.lugar);
+    if (r.width) { extra(el, null, activa ? 100 : lejano ? 89 : 99, pos, -Infinity, activa); Object.assign(items.at(-1), { ajeno: true, num: true }); }
   }
   // Cajas: se miden una vez por aspecto (clases y texto), relativas al ancla, para que no bailen entre zooms.
   const marco = map.getContainer().getBoundingClientRect();
@@ -1732,6 +1738,24 @@ function pintarEtiquetas() {
   items.forEach((x, i) => { if (!x.ajeno || x.num) x.el.classList.toggle('sin-etiqueta', !ver[i]); if (x.deLugar) x.el.classList.toggle('rotulo-izq', izq.has(x)); });
   for (const { m, it } of marcas) m.el.classList.toggle('agrupado', agrupables.has(it) && zoom < grupos.libre.get(it.id));
   pintarBurbujas(burbujas.filter((b) => b.d <= zoom && zoom < b.h));
+}
+/** Siguiendo una ruta, los lugares de la parada de antes y la de después: en un recorrido guiado, los que da
+    recorridos.js; con un viaje de Pablo elegido (o una de sus paradas), los de la parada en la que está en la fecha del
+    cursor, o los dos extremos del tramo que recorre. Se nombran detrás de la parada actual y por delante de todo lo
+    demás, también de los números de las otras paradas: a zoom bajo, en el móvil, los nombres de una ruta entera se
+    pisan y antes ganaba el que tenía más tramos (docs/ideas/rotulos-movil.md). null fuera de una ruta: nada cambia. */
+function vecinosEnFoco(w) {
+  if (vecinosMapa) return vecinosMapa;
+  const s = E.sel;
+  const vid = s?.tipo === 'viaje' ? s.id : s?.tipo === 'parada' ? s.id.split('/')[0] : null;
+  if (!vid || !w || !F.capas.viajes || w.en.viaje?.id !== vid) return null;
+  const ps = BE.P.filter((x) => x.viaje === w.en.viaje), k = ps.indexOf(w.en);
+  if (k < 0) return null;
+  if (!w.parada) return new Set([w.en.lugar.id, w.sig?.viaje === w.en.viaje ? w.sig.lugar.id : null].filter(Boolean));
+  // La parada de antes y la de después son las más cercanas en otro lugar: dos estancias seguidas en Corinto son una.
+  const aqui = w.en.lugar.id, out = new Set();
+  for (const paso of [-1, 1]) for (let j = k + paso; j >= 0 && j < ps.length; j += paso) if (ps[j].lugar.id !== aqui) { out.add(ps[j].lugar.id); break; }
+  return out;
 }
 function pintarBurbujas(lista) {
   while (marcasGrupo.length > lista.length) marcasGrupo.pop().marker.remove();
@@ -2265,9 +2289,11 @@ function encuadrarLugares(ids, { duracion = 700 } = {}) {
   }
   map.fitBounds(caja, { padding, maxZoom: tope, duration: duracion });
 }
-/** Resalta en el mapa estos lugares por encima de lo que implique la selección. resaltar(null) vuelve a la selección. */
-function resaltar(ids) {
+/** Resalta en el mapa estos lugares por encima de lo que implique la selección. resaltar(null) vuelve a la selección.
+    vecinos: en un recorrido, los lugares de la parada de antes y la de después, que se nombran detrás de estos. */
+function resaltar(ids, vecinos = null) {
   resaltadoMapa = ids ? new Set(ids) : null;
+  vecinosMapa = vecinos ? new Set(vecinos.filter((id) => !resaltadoMapa?.has(id))) : null;
   sucio.etiquetas = sucio.mapa = true; programar();
 }
 function volverAlInicio() { map?.fitBounds(ENCUADRE_INICIAL, { duration: 600 }); }

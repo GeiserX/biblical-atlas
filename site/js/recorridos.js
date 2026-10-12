@@ -161,7 +161,9 @@ function irA(i, { historia = true, encuadrar = true } = {}) {
   const ls = lugaresParada(p);
   R.abierta = false;  // la tarjeta del móvil se pliega al cambiar de parada: el encuadre cuenta solo su línea
   vistaSobreMapa();   // antes de encuadrar: el encuadre deja libre el sitio de esta tarjeta
-  BE.mapa.resaltar(ls.length ? ls : null);
+  // La parada de antes y la de después se nombran siempre, detrás de esta (mapa.js, vecinosEnFoco).
+  const vecinos = [i - 1, i + 1].flatMap((k) => (rc.paradas[k] ? lugaresParada(rc.paradas[k]) : []));
+  BE.mapa.resaltar(ls.length ? ls : null, vecinos);
   if (encuadrar) { const caja = encuadreParada(rc, i); if (caja.length) BE.mapa.encuadrar(caja); }
   BE.pintarPanel(true);
   marcas();
