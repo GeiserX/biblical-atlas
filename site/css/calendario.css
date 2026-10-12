@@ -47,7 +47,9 @@ a { color: var(--link); }
 .cal-fiestas { margin: 0; padding: 0; list-style: none; }
 .cal-fiestas b { font-weight: 700; color: var(--ink); margin-right: 2px; }
 .cal-campo { color: var(--ink-3); }
-.cal-nada { color: var(--ink-4); }
+/* El punto de una celda vacía: con --ink-4 daba 2,38:1 sobre las filas alternas; este, 3,22:1 (3,38:1 en las otras), lo
+   que pide una marca que no es texto (WCAG 1.4.11). --ink-4 sigue igual en lo demás. */
+.cal-nada { color: #7f8d83; }
 .cal-tabla .cal-fuentes { font-size: var(--fs-xs); min-width: 130px; }
 .cal-anadido td { border-top: 1.5px dashed var(--ink-4); }
 

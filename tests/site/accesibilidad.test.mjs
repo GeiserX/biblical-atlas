@@ -129,6 +129,7 @@ const VIEWS = [
 // The scan
 // ---------------------------------------------------------------------------
 const used = new Set();
+const marksSeen = new Set();   // the MARKS selectors measured at least once: a renamed class would measure nothing
 let scans = 0;
 const allowedBy = (v, view, f) => ALLOW.find((a) => a.rule === v.id && (!a.views || a.views.includes(view)) && a.when(f));
 
@@ -137,8 +138,10 @@ const allowedBy = (v, view, f) => ALLOW.find((a) => a.rule === v.id && (!a.views
     its ancestors, composited, and where they stay translucent down to the map, over white and over black, keeping the
     worse. Not measured: names on the map itself (MapLibre markers carry a halo, not a background), SVG text, whose
     background is another shape, text painted over a ::before or ::after (the shapes of the graph's nodes) or a
-    gradient, and marks that are not letters or digits (a «·» in an empty cell). Returns every measure. */
-const measure = (page, targets) => page.evaluate((targets) => {
+    gradient, and marks that are not letters or digits (a «·» in an empty cell): those that carry meaning are in MARKS
+    and measured apart, every element of each selector, against 3:1 (WCAG 1.4.11). Returns every measure. */
+const MARKS = ['.cal-nada'];
+const measure = (page, targets, marks = []) => page.evaluate(([targets, marks]) => {
   const parse = (c) => {
     let m = /^rgba?\(([^)]+)\)$/.exec(c);
     if (m) { const p = m[1].split(/[\s,/]+/).filter(Boolean).map(parseFloat); return [p[0], p[1], p[2], p[3] ?? 1]; }
@@ -151,10 +154,11 @@ const measure = (page, targets) => page.evaluate((targets) => {
   const ratio = (a, b) => { const x = lum(a), y = lum(b); return (Math.max(x, y) + 0.05) / (Math.min(x, y) + 0.05); };
   const canvas = document.querySelector('#mapa-gl canvas');
   const out = [];
-  for (const t of targets) {
-    const el = document.querySelector(t);
+  const items = targets.map((t) => ({ t, el: document.querySelector(t), mark: '' }))
+    .concat(marks.flatMap((m) => [...document.querySelectorAll(m)].map((el, k) => ({ t: `${m} #${k + 1}`, el, mark: m }))));
+  for (const { t, el, mark } of items) {
     if (!el || el instanceof SVGElement || el.closest('.maplibregl-marker') || !el.checkVisibility({ opacityProperty: true, visibilityProperty: true })) continue;
-    if (!/[\p{L}\p{N}]/u.test(el.textContent)) continue;
+    if (!mark && !/[\p{L}\p{N}]/u.test(el.textContent)) continue;
     const cs = getComputedStyle(el);
     let fg = parse(cs.color);
     if (!fg) continue;
@@ -182,11 +186,11 @@ const measure = (page, targets) => page.evaluate((targets) => {
       if (r < worst) { worst = r; at = bg; }
     }
     const size = parseFloat(cs.fontSize), bold = parseInt(cs.fontWeight, 10) >= 700;
-    const need = size >= 24 || (bold && size >= 18.66) ? 3 : 4.5;
-    out.push({ target: t, ratio: Math.round(worst * 100) / 100, need, ok: worst >= need - 0.005, fg: fg.map(Math.round).join(','), bg: at.map(Math.round).join(','), translucent: !base });
+    const need = mark || size >= 24 || (bold && size >= 18.66) ? 3 : 4.5;
+    out.push({ target: t, mark, ratio: Math.round(worst * 100) / 100, need, ok: worst >= need - 0.005, fg: fg.map(Math.round).join(','), bg: at.map(Math.round).join(','), translucent: !base });
   }
   return out;
-}, targets);
+}, [targets, marks]);
 
 async function scan(view, screen, theme) {
   const context = await browser.newContext({ deviceScaleFactor: 1, ...SCREENS[screen], colorScheme: theme === 'oscuro' ? 'dark' : 'light', reducedMotion: 'reduce' });
@@ -203,7 +207,8 @@ async function scan(view, screen, theme) {
     // What axe could not decide (a contrast over the map or a gradient) is not a failure; the report keeps it for review.
     if (REPORT) for (const v of incomplete) for (const n of v.nodes) fs.appendFileSync(REPORT, `${JSON.stringify({ rule: v.id, view: view.name, screen, theme, target: n.target.flat().join(' '), incomplete: true, why: (n.any[0]?.message || '').slice(0, 160) })}\n`);
     const undecided = incomplete.filter((v) => v.id === 'color-contrast').flatMap((v) => v.nodes.map((n) => n.target.flat().join(' ')));
-    for (const m of await measure(page, undecided)) {
+    for (const m of await measure(page, undecided, MARKS)) {
+      if (m.mark) marksSeen.add(m.mark);
       if (REPORT) fs.appendFileSync(REPORT, `${JSON.stringify({ rule: 'contrast-measured', view: view.name, screen, theme, ...m })}\n`);
       if (m.ok) continue;
       violations.push({ id: 'color-contrast', impact: 'serious', nodes: [{ target: [m.target],
@@ -257,6 +262,7 @@ test('every allowlist entry is still needed and says why', () => {
   if (scans < TOTAL) return;
   const stale = ALLOW.filter((a) => !used.has(a)).map((a) => `${a.rule}: ${a.reason}`);
   assert.deepEqual(stale, [], 'allowlist entries that no longer match anything: remove them');
+  assert.deepEqual(MARKS.filter((m) => !marksSeen.has(m)), [], 'marks in MARKS that no view drew: their contrast went unmeasured');
 });
 
 // ---------------------------------------------------------------------------
