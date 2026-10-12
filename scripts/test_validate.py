@@ -892,9 +892,48 @@ class Presupuesto(unittest.TestCase):
                 self.assertIn("ERROR presupuesto de avisos", salida)
         self.assertRaises(OSError, validate.leer_presupuesto, "/no/existe/presupuesto.txt")
 
+    def test_un_codigo_que_ya_es_error_no_lleva_presupuesto(self):
+        codigo, salida = self.correr("title_type 0\nshared_point 1\nno_reference 1\n")
+        self.assertEqual(codigo, 1, salida)
+        self.assertIn("«title_type» ya es un error (PROMOTED en validate.py)", salida)
+
     def test_el_presupuesto_del_repositorio_se_lee(self):
         tope = validate.leer_presupuesto(validate.PRESUPUESTO)
-        self.assertTrue(set(tope) <= set(validate.WARNING_CODES))
+        self.assertTrue(set(tope) <= set(validate.WARNING_CODES) - validate.PROMOTED)
+
+
+class DeAvisoAError(unittest.TestCase):
+    """Un código de PROMOTED sale como error por validate.main, con datos de verdad escritos en una carpeta: una
+    ficha rota por cada código, y ninguno sale como aviso (modelo.md, sección 13, «De aviso a error»)."""
+    HECHO = "inferred: false\n    sources: [hechos-1]\n    reason: Prueba.\n    checked_on: 2026-10-12\n    status: verified\n"
+    ROTOS = {
+        "no_office": ("people", "b-rey", "relations:\n  - type: succeeds\n    person: a-rey\n    " + HECHO),
+        "no_certainty": ("people", "a-uno", "relations:\n  - type: same_as\n    person: b-otro\n    "
+                         + HECHO.replace("inferred: false", "inferred: true")),
+        "same_as_owner": ("people", "d-dos", "relations:\n  - type: same_as\n    person: c-dos\n    certainty: probable\n    "
+                          + HECHO.replace("inferred: false", "inferred: true")),
+        "outside_pending": ("people", "e-uno", "relations:\n  - type: tie\n    person: f-otro\n    caption: texto de prueba\n    "
+                            + HECHO),
+        "title_type": ("events", "nace-x", "title: Nace X\nsummary: Prueba.\n"),
+    }
+
+    def test_cada_codigo_ascendido_sale_como_error(self):
+        voc = yaml.safe_load((HERE.parent / "data" / "vocabulary.yaml").read_text(encoding="utf-8"))
+        voc["outside"].append({"type": "tie", "caption": "texto de prueba", "inverse_caption": "prueba",
+                               "why": "Solo para esta prueba.", "fix": "T1"})
+        self.assertEqual(set(self.ROTOS), set(validate.PROMOTED))
+        for codigo, (carpeta, fid, cuerpo) in self.ROTOS.items():
+            with self.subTest(codigo=codigo), tempfile.TemporaryDirectory() as d:
+                (Path(d) / "vocabulary.yaml").write_text(yaml.safe_dump(voc, allow_unicode=True), encoding="utf-8")
+                (Path(d) / carpeta).mkdir()
+                (Path(d) / carpeta / f"{fid}.yaml").write_text(f"id: {fid}\nname: {fid}\n{cuerpo}", encoding="utf-8")
+                out = io.StringIO()
+                with contextlib.redirect_stdout(out):
+                    salida = validate.main(["--data", d])
+                texto = out.getvalue()
+                self.assertEqual(salida, 1, texto)
+                self.assertIn(f"ERROR [{codigo}] data/{carpeta}/{fid}.yaml", texto)
+                self.assertNotIn(f"AVISO [{codigo}]", texto)
 
 
 class Transcurrido(unittest.TestCase):

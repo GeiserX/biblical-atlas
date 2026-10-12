@@ -111,9 +111,11 @@ WARNING_CODES = ("wrong_owner", "pair_twice", "outside_pending", "unlisted_capti
                  "bare_company", "no_office", "no_certainty", "same_as_owner", "no_reference", "title_type",
                  "type_without_role", "shared_point")
 # «De aviso a error»: cuando main llega a 0 avisos de un código, el código se añade aquí, en un cambio revisado, y ya
-# no vuelve atrás. Un código de esta lista sale como error.
-PROMOTED = set()
-# Un campo que su tipo pide y que falta: estos dos avisan hasta sus decisiones (O1 y O2); cualquier otro es un error.
+# no vuelve atrás. Un código de esta lista sale como error y no puede estar en el presupuesto: cada código lo manda
+# una sola lista.
+PROMOTED = frozenset({"outside_pending", "no_office", "no_certainty", "same_as_owner", "title_type"})
+# Un campo que su tipo pide y que falta: estos dos pasan por warn() con su código, que ya está en PROMOTED (decisiones
+# O1 y O2 hechas); cualquier otro es un error.
 MISSING_WARNS = {("succeeds", "office"): "no_office", ("same_as", "certainty"): "no_certainty"}
 RE_TITULO_PAPEL = re.compile(r"^(Nace|Nacimiento|Muere|Muerte)\b")
 # Cuántos avisos de cada código admite main. Un código que no sale en el fichero admite 0. Se baja editando el número.
@@ -2413,13 +2415,15 @@ def comprobar_enlaces(lista):
 def leer_presupuesto(ruta):
     """Devuelve {código: avisos que se admiten}. Cada línea es un código y un número; # empieza un comentario.
 
-    Un código que no existe, un número que no lo es o un código repetido dan ValueError: un presupuesto mal escrito
-    no puede dejar pasar avisos en silencio."""
+    Un código que no existe, un número que no lo es, un código repetido o uno que ya es error dan ValueError: un
+    presupuesto mal escrito no puede dejar pasar avisos en silencio."""
     tope = {}
     for n, linea in enumerate(Path(ruta).read_text(encoding="utf-8").splitlines(), 1):
         partes = linea.split("#", 1)[0].split()
         if not partes:
             continue
+        if partes[0] in PROMOTED:
+            raise ValueError(f"{ruta}:{n}: «{partes[0]}» ya es un error (PROMOTED en validate.py) y no lleva presupuesto")
         if len(partes) != 2 or partes[0] not in WARNING_CODES or not partes[1].isdigit() or partes[0] in tope:
             raise ValueError(f"{ruta}:{n}: «{linea.strip()}» no es «código número» con un código de aviso, una vez")
         tope[partes[0]] = int(partes[1])
