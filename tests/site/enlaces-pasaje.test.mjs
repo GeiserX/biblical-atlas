@@ -292,7 +292,7 @@ test('the links of the examples open their cards', async () => {
 
 test('the records whose principal passage cites it come first; a sermon that recalls the past does not open', async () => {
   // Hch 13:17-22 recalls the exodus, the conquest and the kings: «Nace Isaac» (1918 a.e.c.) cites Hch 13:17-20 in its
-  // third passage, and by date alone it would open the first journey's range.
+  // second passage, and by date alone it would open the first journey's range.
   const page = await openPage(DESKTOP, { hash: 'p=Hch13:1-14:28' });
   const v = await view(page);
   assert.equal(v.sel, 'evento:apartados-para-la-mision');
