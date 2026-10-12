@@ -142,10 +142,16 @@ function marcas() {
 }
 
 /** Lo que encuadra la parada i: en la primera, todas las paradas del recorrido; en las demás, la parada con la de antes
-    y la de después, para que se vea de dónde viene y adónde va aunque el mapa sea bajo. */
+    y la de después, para que se vea de dónde viene y adónde va aunque el mapa sea bajo. En la primera no cuenta un lugar
+    de ubicación desconocida (sus candidatos) de otra parada: los tres de Emaús, al oeste, alejaban de Jerusalén «La
+    última semana». Se encuadran al llegar a su parada o a la de al lado. */
 function encuadreParada(rc, i) {
   const ks = i === 0 ? rc.paradas.map((_, k) => k) : [i - 1, i, i + 1];
-  return [...new Set(ks.flatMap((k) => (rc.paradas[k] ? lugaresParada(rc.paradas[k]) : [])))];
+  const ids = [...new Set(ks.flatMap((k) => (rc.paradas[k] ? lugaresParada(rc.paradas[k]) : [])))];
+  if (i !== 0) return ids;
+  const propios = new Set(lugaresParada(rc.paradas[0]));
+  const conocidos = ids.filter((id) => propios.has(id) || !BE.candidatosDe?.(BE.L[id]));
+  return conocidos.length ? conocidos : ids;
 }
 /** Va a la parada i: cursor, mapa (su lugar resaltado y, si encuadrar, encuadrado con sus vecinas), ficha y dirección. */
 function irA(i, { historia = true, encuadrar = true } = {}) {
