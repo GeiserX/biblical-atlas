@@ -19,6 +19,12 @@ function marcarLeido(lib, cap, si = true) {
 
 const L = { id: null, pas: -1, sigue: true, play: 0, marcas: [] };
 const abierta = () => !!L.id;
+// Solo reduce los paneles de contexto; no filtra los datos geográficos del mapa.
+let foco = false;
+function aplicarFoco() {
+  document.documentElement.classList.toggle('be-lectura-foco', abierta() && foco);
+  requestAnimationFrame(() => BE.mapa?.gl?.resize());
+}
 
 /** Versículo en que empieza una cita dentro del capítulo (0 si viene del capítulo anterior). */
 function versoInicial(ref, lib, cap) {
@@ -89,6 +95,7 @@ function marcasMapa(ps) {
 }
 
 function pintar() {
+  aplicarFoco();
   const v = $('#vista-lectura');
   if (!abierta()) { if (!v.hidden) { v.hidden = true; v.innerHTML = ''; } marcasMapa([]); return; }
   const p = BE.pasajeDeId(L.id);
@@ -116,9 +123,11 @@ function pintar() {
     <p class="be-muted lectura-nota">El texto y las notas de estudio se leen en jw.org. Aquí van el mapa, la fecha y el orden.</p>
     <div class="lectura-controles">
       <label class="interruptor"><input type="checkbox" data-lectura-sigue ${L.sigue ? 'checked' : ''}> El mapa sigue la lectura</label>
+      <label class="interruptor"><input type="checkbox" data-lectura-foco ${foco ? 'checked' : ''}> Solo lectura y mapa</label>
       <label class="interruptor"><input type="checkbox" data-lectura-leido ${leido ? 'checked' : ''}> Leído</label>
       ${BE.notes?.pencilForChapter(lib, cap) || ''}
     </div>
+    ${foco ? '<p class="be-muted lectura-nota">Los paneles de contexto están ocultos. El mapa conserva los demás lugares y rutas.</p>' : ''}
     ${ps.length ? `<div class="lectura-fecha be-note${anclada ? '' : ' be-note--uncertain'}">${anclada && ps.some((x) => x.narrativa) ? 'Orden cierto; fechas aproximadas salvo donde la fuente las da.' : anclada ? 'Cada pasaje con su fecha según la fuente.' : 'Orden cierto; sin fecha exacta: tiempo narrativo.'}</div>
     <div class="lectura-acciones"><button type="button" class="be-btn be-btn--sm" data-lectura-play>${L.play ? 'Pausar' : 'Seguir en el mapa ▶'}</button>
       <button type="button" class="be-btn be-btn--sm be-btn--ghost" data-lectura-paso="-1" ${L.pas <= 0 ? 'disabled' : ''}>‹ Pasaje anterior</button>
@@ -223,6 +232,7 @@ function iniciar() {
   });
   v.addEventListener('change', (e) => {
     const t = e.target;
+    if (t.matches('[data-lectura-foco]')) { foco = t.checked; pintar(); BE.guardarHash(); BE.escribirHash(); return; }
     if (t.matches('[data-lectura-sigue]')) { L.sigue = t.checked; return; }
     if (t.matches('[data-lectura-leido]')) { const p = BE.pasajeDeId(L.id); marcarLeido(p.libro, p.cap, t.checked); pintar(); if (BE.E.sel?.tipo === 'libro') BE.pintarPanel(true); return; }
     if (t.matches('[data-lectura-libro]')) { const l = BE.libroPorSlug(t.value); if (l) abrir(BE.idPasaje(l, 1)); }
@@ -246,6 +256,8 @@ BE.estudio.vistas.lectura = { abierta, cerrar };
 BE.parametros.push(
   { nombre: 'leer', historia: true, escribir: () => L.id,
     leer(v) { if (v && BE.pasajeDeId(v)) { if (v !== L.id) abrir(v, { desdeHash: true }); } else if (abierta()) cerrar(true); } },
+  { nombre: 'foco', escribir: () => (abierta() && foco ? '1' : null),
+    leer(v) { foco = v === '1'; if (abierta()) pintar(); else aplicarFoco(); } },
   { nombre: 'pas', escribir: () => (abierta() && L.pas >= 0 ? String(L.pas + 1) : null),
     leer(v) { if (abierta()) { const n = (+v || 0) - 1; if (n !== L.pas) { L.pas = n; pintar(); } } } },
 );
