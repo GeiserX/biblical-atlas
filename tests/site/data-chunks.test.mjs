@@ -153,6 +153,54 @@ test('an address that opens a card asks for the detail at the same time as the c
   assert.deepEqual([...page.pageErrors, ...page.consoleErrors, ...map.pageErrors, ...passage.pageErrors, ...passage.consoleErrors], []);
 });
 
+test('a map that never stops moving still gets the detail, once', async () => {
+  // From the moment the map exists it never stands still: a slow zoom, started again in a microtask whenever the site
+  // stops it, so no frame is drawn with the map at rest. «idle» never fires; the detail has to come by another way.
+  const page = await openPage({ hash: 't=50.3000', routes: (p) => p.addInitScript(() => {
+    window.__idle = 0;
+    window.__still = 0;   // times the endless move found the map at rest
+    const keep = (m) => {
+      if (m.isMoving()) return;
+      window.__still++;
+      m.easeTo({ zoom: m.getZoom() + (window.__still % 2 ? 0.4 : -0.4), duration: 60000, easing: (x) => x });
+    };
+    const wait = () => {
+      const m = window.BE?.mapa?.gl;
+      if (!m) { requestAnimationFrame(wait); return; }
+      m.on('idle', () => { window.__idle++; });
+      m.on('moveend', () => queueMicrotask(() => keep(m)));
+      keep(m);
+    };
+    wait();
+  }) });
+  await page.waitForFunction(() => window.BE.chunks.loaded.length, null, { timeout: 15000 });
+  assert.deepEqual(await page.evaluate(() => window.BE.chunks.loaded), ['detail']);
+  assert.equal(await page.evaluate(() => window.__idle), 0, 'the map stood still: this test proves nothing');
+  assert.equal(await page.evaluate(() => window.BE.mapa.gl.isMoving()), true);
+  // Past the cap, nobody asked again.
+  await page.waitForTimeout(3500);
+  assert.equal(count(page, 'data.detail.json'), 1, page.requests.filter((r) => r.includes('data')).join(', '));
+  assert.deepEqual([...page.pageErrors, ...page.consoleErrors], []);
+});
+
+test('a map whose style never arrives gets the detail after the cap of about 3 s, once', async () => {
+  // The style of the map of today is held: the map never loads, so neither «load» nor «idle» fires.
+  let release;
+  const held = new Promise((ok) => { release = ok; });
+  const page = await openPage({ hash: 't=50.3000', routes: (p) =>
+    p.route('https://tiles.openfreemap.org/**', async (r) => { await held; return r.abort(); }) });
+  const t0 = await page.evaluate(() => performance.now());
+  await page.waitForFunction(() => window.BE.chunks.loaded.length, null, { timeout: 15000 });
+  const waited = (await page.evaluate(() => performance.now())) - t0;
+  assert.deepEqual(await page.evaluate(() => window.BE.chunks.loaded), ['detail']);
+  assert.equal(await page.evaluate(() => window.BE.mapa.gl.loaded()), false, 'the map loaded: this test proves nothing');
+  assert.ok(waited > 2000 && waited < 6000, `the detail came ${Math.round(waited)} ms after the start`);
+  await page.waitForTimeout(1000);
+  assert.equal(count(page, 'data.detail.json'), 1);
+  release();
+  assert.deepEqual([...page.pageErrors, ...page.consoleErrors], []);
+});
+
 test('a card waits for the detail, says so, and paints when it arrives; the search does not wait', async () => {
   let release;
   const held = new Promise((ok) => { release = ok; });

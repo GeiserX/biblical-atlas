@@ -1,9 +1,9 @@
 /* biblical-atlas · los datos en dos trozos (docs/development.md, «Los trozos de los datos»). El sitio abre con
    data.core.json, lo que pintan el mapa, la línea de tiempo y la portada, y pide data.detail.json (los textos de las
    fichas, las relaciones y las fuentes) la primera vez que una ficha, el grafo, la conexión o la búsqueda lo necesitan,
-   al entrar en una caja de búsqueda o cuando el mapa queda quieto por primera vez. Cada trozo se pide una sola vez: se
-   guarda su promesa. Desde file:// carga data.js, que trae los datos enteros, como siempre. Si no hay data.core.json
-   (una carpeta de ?datos= compilada antes de los trozos), carga data.json entero. */
+   al entrar en una caja de búsqueda, cuando el mapa termina de cargar o a los tres segundos de arrancar. Cada trozo se
+   pide una sola vez: se guarda su promesa. Desde file:// carga data.js, que trae los datos enteros, como siempre. Si no
+   hay data.core.json (una carpeta de ?datos= compilada antes de los trozos), carga data.json entero. */
 'use strict';
 (() => {
 const BE = window.BE;
@@ -138,14 +138,23 @@ function waitingHtml(what = 'la ficha') {
 
 // El detalle se pide antes de que haga falta. Si la dirección ya abre una ficha (también un enlace a un pasaje, #p=),
 // el grafo o la conexión, a la vez que el núcleo, y el arranque lo espera (start): si esperara al mapa, en el teléfono
-// llegaría detrás de su relieve. Si no, al entrar en una caja de
-// búsqueda y cuando el mapa queda quieto por primera vez (después del primer pintado, sin quitarle red a sus teselas).
+// llegaría detrás de su relieve. Si no, al entrar en una caja de búsqueda y, tras el arranque, con lo primero que pase
+// de tres cosas: el mapa termina de cargar su estilo («load»), queda quieto («idle») o pasan DETAIL_CAP_MS. Un mapa que
+// no para de moverse nunca queda quieto, pero carga; uno cuyo estilo no llega no hace ninguna de las dos: lo cubre el tope.
 // La primera regla va al final del fichero, cuando BE.chunks ya existe.
+const DETAIL_CAP_MS = 3000;
 document.addEventListener('focusin', (e) => { if (e.target.matches?.('#q, #portada-q')) load().catch(() => {}); });
 BE.inicios.push(() => {
   const gl = BE.mapa?.gl;
-  const pedir = () => load().catch(() => {});
-  if (gl?.once) gl.once('idle', pedir);
+  let asked = false;
+  const pedir = () => {
+    if (asked) return;   // una sola vez; ready() no lo repite antes de RETRY_MS si acaba de fallar
+    asked = true;
+    clearTimeout(cap);
+    ready();
+  };
+  const cap = setTimeout(pedir, DETAIL_CAP_MS);
+  if (gl?.once) { gl.once('load', pedir); gl.once('idle', pedir); }
   else pedir();
 });
 
