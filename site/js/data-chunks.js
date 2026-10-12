@@ -3,10 +3,11 @@
    fichas, las relaciones y las fuentes) la primera vez que una ficha, el grafo, la conexión o la búsqueda lo necesitan,
    al entrar en una caja de búsqueda, cuando el mapa termina de cargar o a los tres segundos de arrancar. Cada trozo se
    pide una sola vez: se guarda su promesa. Desde file:// carga data.js, que trae los datos enteros, como siempre. Si no
-   hay data.core.json (una carpeta de ?datos= compilada antes de los trozos), carga data.json entero. */
+   hay data.core.json (una carpeta de ?datos= compilada antes de los trozos), carga data.json entero.
+   calendario.html lo carga también, sin base.js: pide los dos trozos a la vez y pinta con ellos unidos. */
 'use strict';
 (() => {
-const BE = window.BE;
+const BE = window.BE ??= {};   // en calendario.html no hay base.js
 const FILE = location.protocol === 'file:';
 
 /** ?datos=_local/<carril>/data.json carga otro data.json para probar. Solo vale una ruta dentro de _local/
@@ -50,7 +51,7 @@ function loadCore() {
       if (FILE) {
         const js = path.replace(/\.json$/, '.js');
         if (!window.BIBLICAL_ATLAS_DATA) await loadScript(js);
-        if (!window.BIBLICAL_ATLAS_DATA) throw new Error(`No encuentro ${js} junto a index.html.`);
+        if (!window.BIBLICAL_ATLAS_DATA) throw new Error(`No encuentro ${js} junto a ${location.pathname.split('/').pop() || 'index.html'}.`);
         whole = true;
         return window.BIBLICAL_ATLAS_DATA;
       }
@@ -144,7 +145,7 @@ function waitingHtml(what = 'la ficha') {
 // La primera regla va al final del fichero, cuando BE.chunks ya existe.
 const DETAIL_CAP_MS = 3000;
 document.addEventListener('focusin', (e) => { if (e.target.matches?.('#q, #portada-q')) load().catch(() => {}); });
-BE.inicios.push(() => {
+BE.inicios?.push(() => {
   const gl = BE.mapa?.gl;
   let asked = false;
   const pedir = () => {

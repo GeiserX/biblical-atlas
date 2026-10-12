@@ -443,3 +443,40 @@ test('every view opens with the chunks, with no console error', async () => {
   await cal.locator('.cal-fuentes a').first().waitFor();
   assert.deepEqual([...cal.pageErrors, ...cal.consoleErrors], []);
 });
+
+test('the calendar loads the two chunks, not data.json, and paints what data.json paints', async (t) => {
+  // The same page painted three ways: from the chunks, from a folder with data.json only, and from file:// (data.js).
+  // The bytes of data each one downloads go to the log.
+  const bytes = (p) => { p.dataBytes = 0; p.on('response', async (r) => { if (/\/data[^/]*\.json$/.test(r.url())) p.dataBytes += (await r.body().catch(() => Buffer.alloc(0))).length; }); };
+  const chunks = await openPage({ url: 'calendario.html', wait: false, routes: bytes });
+  const whole = await openPage({ url: `calendario.html?datos=${WHOLE}`, wait: false, routes: bytes });
+  const context = await browser.newContext({ deviceScaleFactor: 1, ...DESKTOP });
+  const file = await context.newPage();
+  await file.route(/^https?:/, (r) => r.abort());
+  await file.goto(pathToFileURL(path.join(SITE_DIR, 'calendario.html')).href);
+  const painted = async (p) => {
+    await p.locator('.cal-lista-fuentes a').first().waitFor({ timeout: 30000 });
+    return p.evaluate(() => `${document.getElementById('indice').innerHTML}\n${document.getElementById('contenido').innerHTML}`);
+  };
+  const a = await painted(chunks);
+  assert.equal(a, await painted(whole), 'the chunks paint another calendar than data.json');
+  assert.equal(a, await painted(file), 'the chunks paint another calendar than data.js');
+  // Every month is in the table, and every source the page cites is listed with the title, work and URL of data.json.
+  const cal = D.calendario;
+  assert.equal(await chunks.locator('.cal-tabla tbody tr').count(), cal.meses.length);
+  const ids = new Set([...cal.meses.flatMap((m) => [...(m.fuentes || []), ...(m.nombres || []).flatMap((n) => n.fuentes || []),
+    ...(m.fiestas || []).flatMap((f) => f.fuentes || [])]), ...(cal.explicacion || []).flatMap((h) => h.fuentes || [])]);
+  const want = [...ids].filter((id) => D.fuentes[id]).map((id) => [D.fuentes[id].url, D.fuentes[id].titulo, D.fuentes[id].obra].join(' | ')).sort();
+  const got = (await chunks.locator('.cal-lista-fuentes li').evaluateAll((lis) =>
+    lis.map((li) => [li.querySelector('a').getAttribute('href'), li.querySelector('a').textContent, li.querySelector('span').textContent].join(' | ')))).sort();
+  assert.ok(want.length > 10, `only ${want.length} sources: the comparison would prove little`);
+  assert.deepEqual(got, want);
+  assert.equal(count(chunks, 'data.core.json'), 1);
+  assert.equal(count(chunks, 'data.detail.json'), 1);
+  assert.equal(count(chunks, 'data.json'), 0);
+  t.diagnostic(`calendar data: ${(chunks.dataBytes / 1e6).toFixed(2)} MB with the chunks, ${(whole.dataBytes / 1e6).toFixed(2)} MB with data.json`);
+  // Both chunks are asked for at once, not one after the other.
+  const at = (e) => chunks.events.indexOf(e);
+  assert.ok(at('ask /data.detail.json') >= 0 && at('ask /data.detail.json') < at('got /data.core.json'), chunks.events.join(', '));
+  assert.deepEqual([...chunks.pageErrors, ...chunks.consoleErrors, ...whole.pageErrors, ...whole.consoleErrors], []);
+});

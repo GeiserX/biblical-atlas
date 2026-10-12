@@ -36,9 +36,12 @@
 </footer>
 
 <script src="js/volver.js"></script>
+<script src="js/data-chunks.js"></script>
 <script>
-/* biblical-atlas · página «El calendario»: la explicación y la tabla de los meses salen de data.json (calendario.explicacion
-   y calendario.meses). Script clásico, sin módulos: la página también abre desde file://, donde carga data.js. */
+/* biblical-atlas · página «El calendario»: la explicación y la tabla de los meses salen de los datos (calendario.explicacion
+   y calendario.meses), y los títulos y enlaces de sus fuentes, del detalle. Los carga js/data-chunks.js, como en
+   index.html: el núcleo y el detalle a la vez, unidos, que el service worker ya guardó si se abrió el mapa. Script
+   clásico, sin módulos: la página también abre desde file://, donde carga data.js. */
 'use strict';
 (() => {
 const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
@@ -57,24 +60,11 @@ document.querySelectorAll('[data-acerca]').forEach((a) => {
   a.href = `acerca.html${String(q) ? `?${q}` : ''}`;
 });
 
-/** ?datos=_local/<carril>/data.json, como en index.html: solo rutas dentro de _local/ que acaben en .json. */
-function rutaDatos() {
-  const r = new URLSearchParams(location.search).get('datos');
-  if (r == null) return 'data.json';
-  if (/^_local\/[\w./-]+\.json$/.test(r) && !r.split('/').includes('..')) return r;
-  throw new Error(`?datos=${r} no vale: solo se aceptan rutas dentro de _local/ que acaben en .json.`);
-}
+/** Los datos, como en index.html (?datos=_local/…, file:// y una carpeta sin núcleo incluidos): load() pide el núcleo y
+    el detalle a la vez y une el detalle al núcleo. */
 async function cargar() {
-  const ruta = rutaDatos();
-  if (location.protocol === 'file:') {
-    const js = ruta.replace(/\.json$/, '.js');
-    await new Promise((ok) => { const s = document.createElement('script'); s.src = js; s.onload = ok; s.onerror = ok; document.head.appendChild(s); });
-    if (!window.BIBLICAL_ATLAS_DATA) throw new Error(`No encuentro ${js} junto a calendario.html.`);
-    return window.BIBLICAL_ATLAS_DATA;
-  }
-  const r = await fetch(ruta, { cache: 'no-cache' });
-  if (!r.ok) throw new Error(`${ruta} respondió ${r.status}`);
-  return r.json();
+  await window.BE.chunks.load();
+  return window.BE.chunks.loadCore();
 }
 
 // Los hechos de calendario.explicacion, por temas. Un id que no esté aquí va al primer tema.
