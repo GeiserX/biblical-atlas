@@ -192,8 +192,18 @@ test('a passage cited by several opens the first by date and lists the others to
 });
 
 test('a passage cited by none opens its chapter card, with a line inside that nothing cites it', async () => {
-  const page = await openPage(DESKTOP, { hash: 'p=Snt1:5' });
+  // The chapter card paints itself again when its list of videos arrives (tipos/pasaje.js): held back here until the card
+  // is up, so the test sees the line survive that repaint.
+  const page = await openPage(DESKTOP, { hash: 'p=Snt1:5', init: () => {
+    const f = window.fetch.bind(window);
+    window.__videos = new Promise((ok) => { window.__soltarVideos = ok; });
+    window.fetch = (u, o) => (String(u).includes('videos-pasajes.json') ? window.__videos.then(() => f(u, o)) : f(u, o));
+  } });
   assert.deepEqual((await found(page, 'Snt1:5')).list, []);
+  await page.evaluate(() => { document.querySelector('#panel-cuerpo > .be-card').dataset.antes = '1'; window.__soltarVideos(); });
+  await page.waitForFunction(() => !document.querySelector('#panel-cuerpo [data-antes]'), null, { timeout: 15000 });
+  await settle(page);
+  assert.ok(await page.evaluate(() => !!document.querySelector('#panel-cuerpo .acciones-estudio')), 'the card lost its «Citar» row when it painted again');
   const v = await view(page);
   assert.equal(v.sel, 'pasaje:snt-1');
   assert.equal(v.title, 'Santiago 1');

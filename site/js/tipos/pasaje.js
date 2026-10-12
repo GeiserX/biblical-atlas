@@ -117,7 +117,8 @@ function cargarVideosPasajes() {
   const ruta = d && /^_local\/[\w./-]+\.json$/.test(d) && !d.split('/').includes('..') ? d.replace(/[^/]+$/, 'videos-pasajes.json') : 'videos-pasajes.json';
   fetch(ruta, { cache: 'no-cache' }).then((r) => (r.ok ? r.json() : null)).then((j) => {
     VIDEOS_PASAJES = j && typeof j === 'object' ? j : null;
-    if (VIDEOS_PASAJES && BE.E.sel?.tipo === 'pasaje') BE.pintarPanel(true);
+    // Después, un fotograma: los pintores devuelven lo que añaden a la ficha («Citar», la línea de un enlace a un pasaje).
+    if (VIDEOS_PASAJES && BE.E.sel?.tipo === 'pasaje') { BE.pintarPanel(true); BE.programar(); }
     BE.lectura?.repintar?.();
   }).catch(() => { VIDEOS_PASAJES = null; });
 }
