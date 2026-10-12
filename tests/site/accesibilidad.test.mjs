@@ -31,11 +31,7 @@ const THEMES = ['claro', 'oscuro', 'reunión'];
 
 /** What axe may report and the guard lets pass, each with its reason. `rule` is the axe rule id; `when` reads what
     the page says of the element (`facts`, below); `views` (optional) limits it to some views. Nothing else passes. */
-const ALLOW = [
-  { rule: 'target-size', when: (f) => f.marker,
-    reason: 'A point, name or number on the map sits where the place is: its position is the information (the «essential» '
-      + 'exception of WCAG 2.5.8). Every place, person and stop also opens from the search, its card and the timeline.' },
-];
+const ALLOW = [];
 
 /** What an allowlist entry can ask of a reported element, measured in the page: `marker`, it is a MapLibre marker
     (a point, a name or a number drawn on the map). */
@@ -452,6 +448,85 @@ for (const screen of ['1440', '430']) {
     const d = await where(page);
     assert.equal(d.step, c.step, 'with the focus outside the card, ArrowRight changed the stop');
     assert.ok(d.t > c.t, 'with the focus outside the card, ArrowRight did not move the date');
+    assert.deepEqual(page.errors, []);
+    await page.context().close();
+  });
+}
+
+// ---------------------------------------------------------------------------
+// The map points: a zone of 24 x 24 px around each (44 with a finger), the nearest point when two zones overlap
+// ---------------------------------------------------------------------------
+/** Where to click in the zone of a point and nowhere else: off its dot and its name, inside no other point's zone. */
+const zoneOnly = (page) => page.evaluate(() => {
+  const mc = window.__be.map.getContainer();
+  const drawn = '.marca-lugar .punto, .marca-lugar .etiqueta, .marca-lugar .etiqueta *';
+  for (const el of [...mc.querySelectorAll('.marca-lugar')].filter((m) => m.checkVisibility())) {
+    const p = el.querySelector('.punto').getBoundingClientRect(), b = el.getBoundingClientRect();
+    const x0 = (p.left + p.right) / 2, y0 = (p.top + p.bottom) / 2;
+    for (const [dx, dy] of [[-10, -10], [10, -10], [-10, 10], [10, 10]]) {
+      const x = x0 + dx, y = y0 + dy;
+      const pila = document.elementsFromPoint(x, y);
+      if (pila[0]?.closest('.marca-lugar') !== el || pila.some((n) => n.matches(drawn))) continue;
+      if (new Set(pila.map((n) => n.closest('.marca-lugar')).filter(Boolean)).size !== 1) continue;
+      return { id: el.dataset.sel.slice(6), x, y, button: [b.width, b.height], dot: [p.width, p.height] };
+    }
+  }
+  return null;
+});
+/** Two points whose zones overlap, and a spot in the overlap that is nearer the point drawn underneath. */
+const overlapSpot = (page) => page.evaluate(() => {
+  const mc = window.__be.map.getContainer();
+  const drawn = '.marca-lugar .punto, .marca-lugar .etiqueta, .marca-lugar .etiqueta *';
+  const ms = [...mc.querySelectorAll('.marca-lugar')].filter((m) => m.checkVisibility()).map((el) => {
+    const r = el.querySelector('.punto').getBoundingClientRect();
+    return { el, id: el.dataset.sel.slice(6), x: (r.left + r.right) / 2, y: (r.top + r.bottom) / 2 };
+  });
+  for (const a of ms) {
+    for (const b of ms) {
+      const d = Math.hypot(a.x - b.x, a.y - b.y);
+      if (a === b || d > 40) continue;
+      for (const k of [6, 7, 8, 9, 10]) {
+        if (d - k <= k + 1) continue;   // the spot must be clearly nearer b
+        const x = b.x + ((a.x - b.x) * k) / d, y = b.y + ((a.y - b.y) * k) / d;
+        const pila = document.elementsFromPoint(x, y);
+        if (pila[0]?.closest('.marca-lugar') !== a.el || pila.some((n) => n.matches(drawn))) continue;
+        if (!pila.some((n) => n === b.el)) continue;
+        return { top: a.id, near: b.id, x, y, d: Math.round(d * 10) / 10, k };
+      }
+    }
+  }
+  return null;
+});
+const press = (page, screen, x, y) => (screen === '430' ? page.touchscreen.tap(x, y) : page.mouse.click(x, y));
+const selected = (page) => page.evaluate(() => (window.BE.E.sel ? `${window.BE.E.sel.tipo}:${window.BE.E.sel.id}` : null));
+
+for (const screen of ['1440', '430']) {
+  test(`${screen}: a point takes a click in its zone, off the dot, and keeps its drawn size`, async () => {
+    const page = await keyboardPage(screen, 't=50.3000');
+    const z = await zoneOnly(page);
+    assert.ok(z, 'no point has a zone of its own around its dot');
+    assert.ok(z.button[0] >= 24 && z.button[1] >= 24, `the button of ${z.id} is ${z.button.join(' x ')} px, under 24`);
+    assert.ok(z.dot[0] <= 14 && z.dot[1] <= 14, `the dot of ${z.id} is drawn at ${z.dot.join(' x ')} px`);
+    await press(page, screen, z.x, z.y);
+    await page.waitForFunction((id) => window.BE.E.sel?.id === id, z.id, { timeout: 5000 }).catch(() => {});
+    assert.equal(await selected(page), `lugar:${z.id}`, `a click 10 px off the dot of ${z.id} did not select it`);
+    assert.deepEqual(page.errors, []);
+    await page.context().close();
+  });
+
+  test(`${screen}: where two zones overlap, a click goes to the nearer point, not to the one drawn on top`, async () => {
+    const page = await keyboardPage(screen, 't=50.3000');
+    let s = null;
+    // Zoomed out, the points come together; the first zoom where two zones overlap with a free spot between them.
+    for (const zoom of [null, 6, 5.5, 5, 4.5, 4]) {
+      if (zoom) { await page.evaluate((z) => window.__be.map.jumpTo({ zoom: z }), zoom); await settle(page); }
+      s = await overlapSpot(page);
+      if (s) break;
+    }
+    assert.ok(s, 'no two points with overlapping zones at any zoom tried');
+    await press(page, screen, s.x, s.y);
+    await page.waitForFunction(() => window.BE.E.sel, null, { timeout: 5000 }).catch(() => {});
+    assert.equal(await selected(page), `lugar:${s.near}`, `${s.k} px from ${s.near} and ${Math.round((s.d - s.k) * 10) / 10} from ${s.top}, the click chose ${await selected(page)}`);
     assert.deepEqual(page.errors, []);
     await page.context().close();
   });

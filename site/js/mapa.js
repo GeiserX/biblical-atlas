@@ -209,6 +209,14 @@ function crearMapa() {
   map.on('resize', () => { if (imgsDom.length) colocarImgsDom(); });
   // Un clic en una marca HTML también llega a MapLibre: esa marca ya lo gestiona su propio manejador.
   const enMarca = (e) => !!e.originalEvent?.target?.closest?.('.maplibregl-marker');
+  // La zona de un punto (24 px, 44 con el dedo) pisa la de sus vecinos cuando el zoom los junta: el clic va al punto más
+  // cercano, no al que quedó encima. El teclado (detail 0) pulsa el botón que tiene el foco, sin más.
+  map.getContainer().addEventListener('click', (e) => {
+    const el = e.target.closest?.('.marca-lugar');
+    if (!el || e.detail === 0) return;
+    const mejor = marcaCercana(e.clientX, e.clientY);
+    if (mejor && mejor !== el) { e.stopPropagation(); e.preventDefault(); mejor.click(); }
+  }, true);
   const puntero = (capa) => { map.on('mouseenter', capa, () => { map.getCanvas().style.cursor = 'pointer'; }); map.on('mouseleave', capa, () => { map.getCanvas().style.cursor = ''; }); };
   map.on('click', 'be-cartas-toque', (e) => { if (enMarca(e)) return; const id = e.features?.[0]?.properties?.id; if (id) alternar({ tipo: 'carta', id }); });
   puntero('be-cartas-toque');
@@ -1209,6 +1217,20 @@ function crearMarcas() {
   q.type = 'button'; q.className = 'proxima';
   marcaProxima = new maplibregl.Marker({ element: q, anchor: 'bottom', offset: [0, -14] }).setLngLat([0, 0]);
   q.addEventListener('click', (e) => { e.stopPropagation(); const s = BE.P.find((x) => x.key === q.dataset.key); if (s) { setT((s.a + s.b) / 2); asegurarVisible(E.t, false); } });
+}
+/** El lugar que recibe un clic en (x, y): el punto o el nombre que se ve ahí; si solo hay zonas de toque, la del punto
+    más cercano. */
+function marcaCercana(x, y) {
+  const pila = document.elementsFromPoint(x, y);
+  const dibujado = pila.find((n) => n.matches('.marca-lugar .punto, .marca-lugar .etiqueta, .marca-lugar .etiqueta *'));
+  if (dibujado) return dibujado.closest('.marca-lugar');
+  let mejor = null, d0 = Infinity;
+  for (const el of new Set(pila.map((n) => n.closest('.marca-lugar')).filter(Boolean))) {
+    const r = el.querySelector('.punto').getBoundingClientRect();
+    const d = Math.hypot((r.left + r.right) / 2 - x, (r.top + r.bottom) / 2 - y);
+    if (d < d0) { d0 = d; mejor = el; }
+  }
+  return mejor;
 }
 function nombreHoy(l) {
   // Los datos marcan el nombre moderno solo en la nota («Nombre actual…», «Ciudad moderna…», «…identifica hoy»).
