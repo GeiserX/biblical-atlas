@@ -577,7 +577,7 @@ Desde ese commit la base común de la rama y `main` es M, y las fusiones siguien
 | Puerta | Pasa si | Control negativo |
 |---|---|---|
 | El mapa cubre los datos | Cada clave y cada valor cerrado de `data/` tiene su entrada, cada ruta que lleva un valor cerrado casa con un solo `at`, y en `main` cada palabra de relación tiene su regla. Se pasa en `main` y en cada rama antes de migrarla. | Quitar una clave, un valor, una regla o una ruta del mapa. La puerta nombra lo que falta. |
-| El vocabulario es coherente | Cada inversa existe y vuelve, cada tipo y cada palabra tienen sus dos verbos, cada `caption` del mapa está en `outside`, dos cargos no comparten texto y dos cargos de una persona no chocan. | Quitar una inversa o un verbo; sacar el cargo de la clave. |
+| El vocabulario es coherente | Cada inversa existe y vuelve, cada tipo y cada palabra tienen sus dos verbos, cada `caption` del mapa estaba en `outside` al migrar `main` (los de K1, K2 y T1 salieron después, al cerrarse esas decisiones, y en una rama que se migre ahora avisan como `unlisted_caption`), dos cargos no comparten texto y dos cargos de una persona no chocan. | Quitar una inversa o un verbo; sacar el cargo de la clave. |
 | Los hechos anidados tienen de dónde copiar | Cada uno tiene un hecho que lo contiene con `checked_on`. | Quitar la fecha de un mes. |
 | La migración es la misma en todos lados | `migrate.py` sobre los datos de P da los datos de M, byte a byte. | Cambiar una regla del mapa. La puerta nombra el fichero. |
 | Una relación, una fecha | Cada relación que está en `main` y en la rama lleva el mismo `checked_on` después de migrar las dos. | Migrar la rama sin P como referencia. |
