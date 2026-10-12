@@ -16,7 +16,8 @@
    lookup_passage; then journey stops, letters and journeys by their `referencia`. Inside each group, the records whose
    principal passage (the first of `pasajes`, the first part of `referencia`) cites it come first, then by the date the
    timeline gives them. The first match opens; the card lists every match so the reader can switch. With no match the
-   panel says so and offers the chapter's card when the chapter has data.
+   chapter card opens, with a line that nothing cites the passage. A book alone («#p=Rut») opens the book card. What does
+   not read as one passage (an unknown book, a verse its book lacks, «Hch16:1, 5») gets a notice and selects nothing.
 
    The pure part (parsePassage, parseRefs, overlaps, compact) runs in node:vm in tests/site/enlaces-pasaje-reglas.test.mjs; the
    wiring below it needs the page. */
@@ -158,8 +159,9 @@ function parsePassage(text) {
   return { ok: true, stretch: rs[0] };
 }
 /** A stretch as a link writes it: the abbreviation without accents and no spaces, «Hch16:1-5», «Ge12», «Flm10». */
+const abbr = (b) => b.abr.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
 function compact(r) {
-  const a = r.book.abr.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+  const a = abbr(r.book);
   if (!r.verses) return r.c1 === r.c2 ? `${a}${r.c1}` : `${a}${r.c1}-${r.c2}`;
   if (chaptersOf(r.book) === 1) return r.v1 === r.v2 ? `${a}${r.v1}` : `${a}${r.v1}-${r.v2}`;
   if (r.c1 === r.c2) return r.v1 === r.v2 ? `${a}${r.c1}:${r.v1}` : `${a}${r.c1}:${r.v1}-${r.v2}`;
@@ -207,19 +209,31 @@ function matches(r) {
     .map((x, i) => ({ s: x.sel, i, side: x.first.some((s) => overlaps(s, r)) ? 0 : 1, t: BE.momentoDe(BE.parseSel(x.sel)) ?? Infinity }));
   return found.sort((a, b) => rank.get(kind(a.s)) - rank.get(kind(b.s)) || a.side - b.side || a.t - b.t || a.i - b.i).map((x) => x.s);
 }
-/** A passage of a link → { text, readable, stretch, found } or { text, error }. */
+/** The chapter card of a stretch: its first chapter. */
+function chapterSel(r) {
+  const id = BE.idPasaje?.(r.book, r.c1);
+  return id && BE.existe('pasaje', id) ? `pasaje:${id}` : null;
+}
+/** A passage of a link → { text, readable, stretch, found, opens } or { text, error }. `opens` is what the link selects,
+    first the one it opens: the records that cite it; with none, the card of its chapter; for a book alone, the card of
+    the book. */
 function resolve(text) {
   const p = parsePassage(text);
+  if (!p.ok && p.why === 'chapter' && BE.existe('libro', p.book.slug)) {
+    return { text: abbr(p.book), readable: p.book.nombre, book: p.book, found: [], opens: [`libro:${p.book.slug}`] };
+  }
   if (!p.ok) return { text, error: p.why, book: p.book || null };
-  return { text: compact(p.stretch), readable: readable(p.stretch), stretch: p.stretch, found: matches(p.stretch) };
+  const found = matches(p.stretch), chapter = found.length ? null : chapterSel(p.stretch);
+  return { text: compact(p.stretch), readable: readable(p.stretch), stretch: p.stretch, found, opens: found.length ? found : chapter ? [chapter] : [] };
 }
 
 // ---------------------------------------------------------------------------
 // The page: the «p» parameter, the list of matches on the card, the notice with no match and «Enlace al pasaje»
 // ---------------------------------------------------------------------------
-/** The passage of the link that opened this view, while the view still shows it: { text, readable, stretch, found }. */
+/** The passage of the link that opened this view, while the view still shows it: what resolve gives. */
 let active = null;
-const showing = () => !!active && (active.found?.length ? !!E.sel && active.found.includes(BE.selTexto(E.sel)) : !E.sel);
+const opens = () => active?.opens || [];
+const showing = () => !!active && (opens().length ? !!E.sel && opens().includes(BE.selTexto(E.sel)) : !E.sel);
 
 // historia: a passage link is a view of its own, also with nothing selected (its notice), and the history names it.
 BE.parametros.push({
@@ -228,8 +242,9 @@ BE.parametros.push({
   escribir: () => (showing() ? active.text : null),
   leer(v) { active = v ? resolve(v) : null; },
 });
-/** base.js, reading the address: with a passage and no selection, the first record that cites it. */
-BE.selDePasaje = () => (active?.found?.length ? BE.parseSel(active.found[0]) : null);
+/** base.js, reading the address: with a passage and no selection, the first record that cites it, or the card of its
+    chapter or its book. */
+BE.selDePasaje = () => (opens().length ? BE.parseSel(opens()[0]) : null);
 
 const label = (sel) => GROUPS.find(([k]) => k === kind(sel))?.[1] || '';
 function dateOf(sel) {
@@ -238,11 +253,6 @@ function dateOf(sel) {
   if (t) return t;
   const m = BE.momentoDe(s);
   return m != null ? BE.fmtAnio(Math.floor(m)) : '';
-}
-/** The chapter card a passage can fall back on, when that chapter has something in the atlas. */
-function chapterSel(r) {
-  const id = BE.idPasaje?.(r.book, r.c1);
-  return id && BE.existe('pasaje', id) && BE.implicados({ tipo: 'pasaje', id }).claves.size ? `pasaje:${id}` : null;
 }
 const SHOWN = 8;   // rows before «Ver las otras N»: a long range (Hch 13:1-14:28) is cited by 42 records
 function listHtml() {
@@ -260,24 +270,19 @@ function listHtml() {
     ${n > SHOWN ? `<details class="pasaje-enlace__mas"${a.found.indexOf(cur) >= SHOWN ? " open" : ""}><summary>Ver las otras ${n - SHOWN}</summary><div class="be-list">${rows.slice(SHOWN).join('')}</div></details>` : ''}
   </div><div class="be-card__foot"><span class="be-spacer"></span>${read}</div></section>`;
 }
+/** The notice of a link that opens nothing: a book it does not know, a chapter or a verse its book lacks, two stretches. */
 function noticeHtml() {
   const a = active;
-  if (a.error) {
-    const what = a.error === 'book' ? `No reconozco «${esc(a.text)}» como pasaje de la Biblia.`
-      : a.error === 'stretches' ? `«${esc(a.text)}» junta tramos separados, y un enlace lleva uno solo.`
-        : a.error === 'chapter' ? `«${esc(a.text)}» nombra ${esc(a.book.nombre)}, pero le falta el capítulo.`
-        : `${esc(a.book?.nombre || 'Ese libro')} no tiene ese capítulo o ese versículo: «${esc(a.text)}».`;
-    return `<section class="be-card pasaje-enlace" role="status"><div class="be-card__pad">
-      <div class="be-card__eyebrow">Enlace al pasaje</div><p class="be-card__body">${what} Se escribe el libro y el capítulo, con el versículo si hace falta: <code>#p=Hch16:1</code> o <code>#p=Génesis12</code>.</p>
-    </div><div class="be-card__foot"><span class="be-spacer"></span><button type="button" class="be-btn be-btn--sm" data-pasaje-cerrar>Cerrar</button></div></section>`;
-  }
-  const cap = chapterSel(a.stretch);
+  const what = a.error === 'book' ? `No reconozco «${esc(a.text)}» como pasaje de la Biblia.`
+    : a.error === 'stretches' ? `«${esc(a.text)}» junta tramos separados, y un enlace lleva uno solo.`
+      : a.error === 'chapter' ? `«${esc(a.text)}» nombra ${esc(a.book.nombre)}, pero le falta el capítulo.`
+      : `${esc(a.book?.nombre || 'Ese libro')} no tiene ese capítulo o ese versículo: «${esc(a.text)}».`;
   return `<section class="be-card pasaje-enlace" role="status"><div class="be-card__pad">
-    <div class="be-card__eyebrow">Enlace al pasaje · ${esc(a.readable)}</div>
-    <p class="be-card__body">Ningún suceso, parada, carta ni viaje del atlas cita todavía ${esc(a.readable)}.${cap ? ` Del capítulo sí hay datos.` : ''}</p>
-    ${cap ? `<div class="be-list">${BE.botonSel(cap, `Ver ${BE.nombreSel(BE.parseSel(cap))}`, 'lo que el atlas tiene de ese capítulo')}</div>` : ''}
-  </div><div class="be-card__foot"><button type="button" class="be-btn be-btn--sm" data-pasaje-cerrar>Cerrar</button><span class="be-spacer"></span><a class="be-wol" href="${BE.urlCita(cita(a.stretch))}" ${BE.EXTERNO}>Leer ${esc(a.readable)} en jw.org</a></div></section>`;
+    <div class="be-card__eyebrow">Enlace al pasaje</div><p class="be-card__body">${what} Se escribe el libro y el capítulo, con el versículo si hace falta: <code>#p=Hch16:1</code> o <code>#p=Génesis12</code>.</p>
+  </div><div class="be-card__foot"><span class="be-spacer"></span><button type="button" class="be-btn be-btn--sm" data-pasaje-cerrar>Cerrar</button></div></section>`;
 }
+/** The line a chapter card opened by a passage that nothing cites carries: says so and links the passage on jw.org. */
+const noneHtml = (a) => `<p class="be-card__body pasaje-enlace" role="status">Ningún suceso, parada, carta ni viaje del atlas cita todavía <a href="${BE.urlCita(cita(a.stretch))}" ${BE.EXTERNO}>${esc(a.readable)}</a>.</p>`;
 /** A stretch in the shape BE.urlCita reads. */
 const cita = (r) => ({ libro: r.book, cap: r.c1, capFin: r.c2, verso: r.verses ? r.v1 : null, versoFin: r.verses ? r.v2 : null });
 
@@ -292,10 +297,13 @@ function paint() {
   if (old && key === painted) return;
   old?.remove();
   painted = key;
-  // The list goes under the card it opened (and its «Citar» row); the notice, with nothing selected, above «Ahora mismo».
-  const after = active.found?.length && (body.querySelector(':scope > .acciones-estudio') || body.querySelector(':scope > .be-card'));
-  if (after) after.insertAdjacentHTML('afterend', listHtml());
-  else body.insertAdjacentHTML('afterbegin', active.found?.length ? listHtml() : noticeHtml());
+  // The list goes under the card it opened (and its «Citar» row); the line that nothing cites the passage, inside the
+  // chapter card it opened; a book card goes as it is; the notice, with nothing selected, above «Ahora mismo».
+  if (active.found?.length) {
+    const after = body.querySelector(':scope > .acciones-estudio') || body.querySelector(':scope > .be-card');
+    if (after) after.insertAdjacentHTML('afterend', listHtml()); else body.insertAdjacentHTML('afterbegin', listHtml());
+  } else if (E.sel?.tipo === 'pasaje') body.querySelector(':scope > .be-card .be-card__pad')?.insertAdjacentHTML('beforeend', noneHtml(active));
+  else if (!E.sel) body.insertAdjacentHTML('afterbegin', noticeHtml());
 }
 BE.pintores.push(paint);
 
@@ -304,7 +312,7 @@ BE.pintores.push(paint);
 function linkFor(sel) {
   if (!sel || !BE.D) return null;
   const s = BE.selTexto(sel);
-  let text = showing() && active.found?.includes(s) ? active.text : null;
+  let text = showing() && opens().includes(s) ? active.text : null;
   if (!text) {
     const own = records().find((x) => x.sel === s)?.stretches[0];
     const chapter = sel.tipo === 'pasaje' && BE.pasajeDeId(sel.id);
@@ -312,7 +320,7 @@ function linkFor(sel) {
     if (!r) return null;
     text = compact(r);
   }
-  const first = resolve(text).found?.[0];
+  const first = resolve(text).opens?.[0];
   const hash = `p=${encodeURIComponent(text).replace(/%3A/g, ':')}${first && first !== s && sel.tipo !== 'pasaje' ? `&sel=${s}` : ''}`;
   return { text, url: `${location.origin}${location.pathname}#${hash}` };
 }
