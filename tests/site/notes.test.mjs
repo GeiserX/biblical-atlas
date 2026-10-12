@@ -134,7 +134,10 @@ async function importFile(page, name, content) {
   await page.locator('#notes-list [data-notes-file]').setInputFiles({ name, mimeType: 'application/json', buffer: Buffer.from(content) });
   await page.waitForTimeout(300);
 }
-const storage = (page) => page.evaluate(() => JSON.stringify(Object.fromEntries(Object.entries(localStorage).sort())));
+/** Every key of the storage but the last view (portada.js writes it 400 ms after any paint, notes never touch it):
+    without the map the page is ready sooner, and that key landing between two reads made an import look like a change. */
+const storage = (page) => page.evaluate(() => JSON.stringify(Object.fromEntries(Object.entries(localStorage)
+  .filter(([k]) => k !== 'biblical-atlas:ultima').sort())));
 const token = () => `nota${Math.random().toString(36).slice(2, 10)}`;
 
 const KEY = 'biblical-atlas:notes';
