@@ -28,9 +28,14 @@ const ROOT = process.env.BE_ROOT ? path.resolve(process.env.BE_ROOT) : path.reso
 const DESKTOP = { name: '1440', viewport: { width: 1440, height: 900 } };
 const PHONE = { name: '430', viewport: { width: 430, height: 900 }, isMobile: true, hasTouch: true };
 const SCALES = [4125, 400, 40, 8, 1.5, 0.12];
-// The time budgets of the speed test were set on a Mac mini. BE_TIME_SCALE=<n> multiplies them on a slower machine: a
-// GitHub runner (4 shared cores, no GPU) took 54 ms to draw the lanes at milenios and 41 ms per drag frame at 430.
+// The time budgets of the speed test were set on a Mac mini. On a slower machine BE_TIME_SCALE_PINTADO=<n> multiplies the
+// budget of drawing the lanes and BE_TIME_SCALE_ARRASTRE=<n> the one of a drag frame; BE_TIME_SCALE=<n> is the default
+// of both. They are apart because a slower machine is not slower by the same factor in both: GitHub runners (4 shared
+// cores, no GPU) took up to 64 ms to draw the lanes at milenios, about 1.3 times the budget, and up to 41 ms per drag
+// frame at 430, about 2.6 times.
 const TIME_SCALE = Number(process.env.BE_TIME_SCALE) || 1;
+const SCALE_PAINT = Number(process.env.BE_TIME_SCALE_PINTADO) || TIME_SCALE;
+const SCALE_DRAG = Number(process.env.BE_TIME_SCALE_ARRASTRE) || TIME_SCALE;
 const DAY = 1 / 365.2425;
 
 async function loadChromium() {
@@ -632,8 +637,8 @@ for (const screen of [DESKTOP, PHONE]) {
     });
     note(`${screen.name} speed: milenios render median ${m.render.toFixed(1)} ms, décadas drag frame median ${m.drag.toFixed(1)} ms; at milenios ${m.attached} buttons in the page for ${m.total} marks in view (${m.budget} within three panel heights), lanes ${m.height} px tall`);
     assert.ok(m.attached <= m.budget + 5, `${m.attached} buttons in the page, ${m.budget} expected at most`);
-    assert.ok(m.render <= 50 * TIME_SCALE, `render ${m.render} ms, budget ${50 * TIME_SCALE}`);
-    assert.ok(m.drag <= 16 * TIME_SCALE, `drag frame ${m.drag} ms, budget ${16 * TIME_SCALE}`);
+    assert.ok(m.render <= 50 * SCALE_PAINT, `render ${m.render} ms, budget ${50 * SCALE_PAINT}`);
+    assert.ok(m.drag <= 16 * SCALE_DRAG, `drag frame ${m.drag} ms, budget ${16 * SCALE_DRAG}`);
     await p.context().close();
   });
 }
