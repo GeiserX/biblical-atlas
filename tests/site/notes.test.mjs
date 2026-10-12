@@ -92,16 +92,20 @@ async function newContext(opts = DESKTOP) {
     running other work, the 1440 page took 17 s to reach this state at a load of 70. Every navigation before it waits
     only for the new page to be committed: the «load» event, which waits for every script, font and map file, is not
     what these tests need, and under load it came after the context's 5 s. When the data comes in chunks (BE.chunks),
-    the cards and their pencils need the detail too, so at least one chunk must have arrived. */
+    the cards and their pencils need the detail too, so at least one chunk must have arrived.
+    The same wait follows a selection or a click that repaints the card, instead of a fixed pause that a loaded machine
+    outruns, and a navigation that only changes the hash, which keeps the page. Each call counts its own quiet frames
+    from zero: a count left by the call before would let it return at once, before the repaint. */
 async function ready(page) {
-  await page.waitForFunction(() => {
+  await page.waitForFunction((call) => {
     const m = window.__be?.map, BE = window.BE;
     const still = m ? m.loaded() && !m.isMoving() : !!document.querySelector('#mapa .sin-mapa');
     const quiet = !!(BE?.D && BE.sucio && still && !Object.values(BE.sucio).some(Boolean))
       && (!BE.chunks || BE.chunks.loaded.length > 0);
-    window.__quietFrames = quiet ? (window.__quietFrames || 0) + 1 : 0;
-    return window.__quietFrames >= 3;
-  }, null, { timeout: 60000, polling: 'raf' });
+    const q = window.__quietFrames?.call === call ? window.__quietFrames : (window.__quietFrames = { call, n: 0 });
+    q.n = quiet ? q.n + 1 : 0;
+    return q.n >= 3;
+  }, Math.random(), { timeout: 60000, polling: 'raf' });
 }
 async function openSite(context, hash = '') {
   const page = await context.newPage();
@@ -145,7 +149,6 @@ const active = (page) => page.evaluate(() => {
   return { id: a?.id || '', tag: a?.tagName || '', key: a?.dataset?.noteKey || '', text: (a?.textContent || '').trim().slice(0, 40),
     inPanel: !!a?.closest?.('#panel-cuerpo'), inReading: !!a?.closest?.('#vista-lectura'), visible: !!a?.checkVisibility?.() };
 });
-const settle = (page) => page.waitForTimeout(400);   // the card and the reading repaint on the next frames
 /** Waits (up to 3 s: frames are slow while the map draws in a headless browser) until the focus rests on something. */
 const focusSettles = (page, key = '') => page.waitForFunction((k) => {
   const a = document.activeElement;
@@ -254,7 +257,7 @@ test('back and forward close the editor and keep the note under its own card', {
     // As a click on Timoteo: a press, then the choice, so it is a new entry of the history. Without the press the site
     // takes it for part of the view the address brought, which makes no entry.
     await page.evaluate(() => { window.dispatchEvent(new PointerEvent('pointerdown')); window.BE.seleccionar({ tipo: 'persona', id: 'timoteo' }); });
-    await settle(page);
+    await ready(page);
     await page.locator('#panel-cuerpo .note-pencil').first().click();
     const text = `Sobre Timoteo ${token()}`;
     await page.locator('#note-text').pressSequentially(text, { delay: 5 });
@@ -365,6 +368,7 @@ test('export, clear the storage and import restores every note', { timeout: 1200
     const notes = [`Pablo ${t}`, `Lugar ${t}`, `Capítulo ${t}\ncon dos líneas`];
     await writeNote(page, '#panel-cuerpo .note-pencil', notes[0]);
     await page.evaluate((id) => window.BE.seleccionar({ tipo: 'lugar', id }), place);
+    await ready(page);   // or the pencil clicked is still Pablo's
     await writeNote(page, '#panel-cuerpo .note-pencil', notes[1]);
     await page.goto(url('leer=hch-16'), { waitUntil: 'commit' });
     await ready(page);
@@ -385,6 +389,7 @@ test('export, clear the storage and import restores every note', { timeout: 1200
     assert.deepEqual([...listed].sort(), [...notes].sort());
     await page.locator('#notes-list [data-notes-close]').click();
     await page.evaluate(() => window.BE.seleccionar({ tipo: 'persona', id: 'pablo' }));
+    await ready(page);
     await page.locator('#panel-cuerpo .note-pencil').first().click();
     assert.equal(await page.locator('#note-text').inputValue(), notes[0]);
     assert.deepEqual(page.pageErrors, []);
@@ -497,7 +502,7 @@ test('«Mis notas»: «Abrir» shows the card and focuses its pencil, «Editar»
 
     await open.click();
     await focusSettles(page, 'persona:pablo');
-    await settle(page);   // and it stays there after the card repaints
+    await ready(page);   // and it stays there after the card repaints
     assert.equal(await sel(page), 'persona:pablo', '«Abrir» did not open the card');
     let a = await active(page);
     assert.ok(a.key === 'persona:pablo' && a.inPanel && a.visible, `after «Abrir» the focus is on ${JSON.stringify(a)}`);
@@ -505,7 +510,7 @@ test('«Mis notas»: «Abrir» shows the card and focuses its pencil, «Editar»
     await openMyNotes(page);
     await page.locator('#notes-list [data-notes-open="chapter:44:16"]').click();
     await focusSettles(page, 'chapter:44:16');
-    await settle(page);
+    await ready(page);
     a = await active(page);
     assert.ok(a.key === 'chapter:44:16' && a.inReading && a.visible, `after «Abrir capítulo» the focus is on ${JSON.stringify(a)}`);
     assert.deepEqual(page.pageErrors, []);
@@ -521,7 +526,7 @@ test('430 wide: «Abrir» from «Mis notas» with the reading open shows the car
     await page.locator('[data-menu="notas"]').tap();
     await page.locator('#notes-list [data-notes-open="persona:pablo"]').tap();
     await focusSettles(page, 'persona:pablo');
-    await settle(page);
+    await ready(page);
     assert.equal(await sel(page), 'persona:pablo');
     assert.equal(await page.evaluate(() => window.BE.estudio.vistas.lectura.abierta()), false, 'the reading still covers the card');
     const seen = await page.evaluate(() => {
@@ -610,6 +615,7 @@ test('every one of the 11 kinds of card keys its pencil by its own sel, and ever
     assert.equal(new Set(sels.map((s) => s.split(':')[0])).size, 11);
     for (const s of sels) {
       await page.evaluate((x) => window.BE.seleccionar(window.BE.parseSel(x)), s);
+      await ready(page);   // or the pencil read is the one of the card before
       const key = await page.locator('#panel-cuerpo .note-pencil').first().getAttribute('data-note-key', { timeout: WAIT }).catch(() => null);
       assert.ok(key, `no pencil on the card of ${s}`);
       if (!s.startsWith('pasaje:')) assert.equal(key, s, `the pencil of ${s} keeps its note under ${key}`);
@@ -623,6 +629,7 @@ test('every one of the 11 kinds of card keys its pencil by its own sel, and ever
       await ready(page);
       assert.equal(await page.locator('#vista-lectura .note-pencil').getAttribute('data-note-key').catch(() => null), expected, `no pencil, or another key, in the reading of ${id}`);
       await page.evaluate((x) => window.BE.seleccionar({ tipo: 'pasaje', id: x }), id);
+      await ready(page);
       assert.equal(await page.locator('#panel-cuerpo .note-pencil').first().getAttribute('data-note-key'), expected, `the chapter card of ${id} keeps another note`);
     }
   } finally { await context.close(); }
