@@ -198,6 +198,26 @@ test('one visit of the map installs enough for the calendar to open offline', as
   assert.deepEqual([...page.errors, ...cal.errors], []);
 });
 
+test('the video lists come with the install: a card opened offline has its videos', async () => {
+  // The landing opens no card, so the page itself never asks for the videos of people or of passages.
+  const context = await newContext();
+  const page = await newPage(context);
+  const asked = [];
+  page.on('request', (r) => asked.push(new URL(r.url()).pathname));
+  await page.goto(`${base}index.html`);
+  await started(page);
+  await controlled(page);
+  for (const rel of ['videos.json', 'videos-personas.json', 'videos-pasajes.json']) assert.ok(await cached(page, rel), `${rel} was not installed`);
+  assert.ok(!asked.includes('/videos-personas.json'), 'the page asked for the videos of people: the test proves nothing');
+  await waitCached(page, 'data.detail.json');
+  await offline(context);
+  const back = await newPage(context);
+  await back.goto(`${base}index.html#${CARD}`);
+  await seesTheSite(back);
+  await back.locator('#panel-cuerpo ul.videos li a[href^="https://"]').first().waitFor();
+  assert.deepEqual([...page.errors, ...back.errors], []);
+});
+
 test('the detail works offline once it was fetched online, and not before', async () => {
   const context = await newContext();
   const page = await newPage(context);
