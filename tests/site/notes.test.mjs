@@ -83,7 +83,8 @@ async function newContext(opts = DESKTOP) {
   context.setDefaultNavigationTimeout(60000);
   return context;
 }
-/** Waits until the page has finished starting: the data is in, the map has loaded and stands still, and nothing waits
+/** Waits until the page has finished starting: the data is in, the map has loaded and stands still (or the site said
+    it has no map: with unpkg.com down, mapa.js writes .sin-mapa and the cards work without it), and nothing waits
     to be painted (BE.sucio). Until then the main thread spends seconds on the map and the first paints on a loaded
     machine (SwiftShader draws on the CPU), and a click or a tap sent in that time waits behind them until its own 5 s
     timeout runs out. The map's load handler paints and may frame Paul a couple of frames later, so the state has to
@@ -95,7 +96,8 @@ async function newContext(opts = DESKTOP) {
 async function ready(page) {
   await page.waitForFunction(() => {
     const m = window.__be?.map, BE = window.BE;
-    const quiet = !!(BE?.D && BE.sucio && m?.loaded() && !m.isMoving() && !Object.values(BE.sucio).some(Boolean))
+    const still = m ? m.loaded() && !m.isMoving() : !!document.querySelector('#mapa .sin-mapa');
+    const quiet = !!(BE?.D && BE.sucio && still && !Object.values(BE.sucio).some(Boolean))
       && (!BE.chunks || BE.chunks.loaded.length > 0);
     window.__quietFrames = quiet ? (window.__quietFrames || 0) + 1 : 0;
     return window.__quietFrames >= 3;
@@ -167,6 +169,21 @@ test('a note survives a reload (1440 x 900)', { timeout: 90000 }, async () => {
     const pencil = page.locator('#panel-cuerpo .note-pencil').first();
     assert.match(await pencil.textContent(), /Tu nota/);
     await pencil.click();
+    assert.equal(await page.locator('#note-text').inputValue(), text);
+    assert.deepEqual(page.pageErrors, []);
+  } finally { await context.close(); }
+});
+
+test('with unpkg.com down the site opens without the map, and a note still survives a reload', { timeout: 90000 }, async () => {
+  const context = await newContext(DESKTOP);
+  try {
+    await context.route(/^https:\/\/unpkg\.com\//, (r) => r.abort());
+    const page = await openSite(context, 'sel=persona:pablo');   // ready() would wait its 60 s for a map that never comes
+    assert.equal(await page.locator('#mapa .sin-mapa').count(), 1, 'MapLibre loaded with unpkg.com blocked: this test proves nothing');
+    const text = `Sin mapa ${token()}`;
+    await writeNote(page, '#panel-cuerpo .note-pencil', text);
+    await reload(page);
+    await page.locator('#panel-cuerpo .note-pencil').first().click();
     assert.equal(await page.locator('#note-text').inputValue(), text);
     assert.deepEqual(page.pageErrors, []);
   } finally { await context.close(); }
