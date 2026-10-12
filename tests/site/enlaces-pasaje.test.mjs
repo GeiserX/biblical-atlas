@@ -228,6 +228,17 @@ test('a passage cited by none opens its chapter card, with a line inside that no
   const across = await view(await openPage(DESKTOP, { hash: 'p=Snt1:5-2:3' }));
   assert.equal(across.sel, 'pasaje:snt-1', 'a range across chapters did not open its first chapter');
   assert.match(across.box?.text || '', /^Ningún suceso, parada, carta ni viaje del atlas cita todavía Santiago 1:5-2:3\.$/);
+  // A chapter with no data at all says it once: the line, not also «Todavía no hay datos de este capítulo».
+  const empty = await openPage(DESKTOP, { hash: 'p=Pr3:5' });
+  const e = await view(empty);
+  assert.equal(e.sel, 'pasaje:pr-3');
+  assert.match(e.box?.text || '', /cita todavía Proverbios 3:5/);
+  const muted = (pg) => pg.evaluate(() => [...document.querySelectorAll('#panel-cuerpo .be-muted')].some((m) => /Todavía no hay datos de este capítulo/.test(m.textContent)));
+  assert.equal(await muted(empty), false, 'the chapter card says twice that nothing cites it');
+  // The same chapter reached without the link still says it has no data.
+  const bare = await openPage(DESKTOP, { hash: 'sel=pasaje:pr-3' });
+  assert.equal(await muted(bare), true, 'Proverbios 3 has data now, or lost its line, so this is no test');
+  assert.deepEqual([...empty.pageErrors, ...bare.pageErrors], []);
   // Choosing something else from the chapter card (its book) ends the passage.
   await page.locator('#panel-cuerpo .be-card__eyebrow [data-sel="libro:santiago"]').click();
   await settle(page);

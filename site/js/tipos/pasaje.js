@@ -141,6 +141,9 @@ function videosPasajeHtml(lib, cap) {
     ${vs.length > max ? `<p class="be-muted">Y ${vs.length - max} más en jw.org.</p>` : ''}</div></section>`;
 }
 
+/** ¿Abrió este capítulo un enlace a un pasaje que nada cita? Entonces passage-link.js pone en la ficha su propia línea,
+    que ya dice que nada del atlas lo cita, y la de «Todavía no hay datos» sobra. */
+const lineaDeEnlace = (id) => { const a = BE.pasajeEnlace?.active; return !!a?.stretch && !a.found.length && a.opens[0] === `pasaje:${id}`; };
 function fichaPasaje(id) {
   cargarVideosPasajes();
   const { libro: lib, cap } = pasajeDeId(id);
@@ -159,7 +162,7 @@ function fichaPasaje(id) {
       <div class="be-list">${paradas.map((s) => BE.botonSel(`parada:${s.key}`, s.lugar.nombre, `${esc(s.p.referencia)} · ${esc(s.viaje.nombre)}`)).join('')}</div></div></section>` : ''}
     ${cartas.length ? `<section class="be-card ficha-sec"><div class="be-card__pad"><h3 class="be-card__eyebrow">Carta</h3><div class="be-list">${cartas.map((c) => BE.botonSel(`carta:${c.id}`, c.libro, esc(fechaCorta(c.fecha)))).join('')}</div></div></section>` : ''}
     ${eventos.length ? `<section class="be-card ficha-sec"><div class="be-card__pad"><h3 class="be-card__eyebrow">Sucesos <b class="cuenta">${eventos.length}</b></h3><div class="be-list">${eventos.map((e) => BE.botonSel(`evento:${e.id}`, e.titulo, esc([(e.pasajes || []).join('; '), e.fecha?.texto || ''].filter(Boolean).join(' · ')))).join('')}</div></div></section>` : ''}
-    ${!paradas.length && !cartas.length && !eventos.length ? '<p class="be-muted">Todavía no hay datos de este capítulo en el mapa ni en la línea de tiempo.</p>' : ''}
+    ${!paradas.length && !cartas.length && !eventos.length && !lineaDeEnlace(id) ? '<p class="be-muted">Todavía no hay datos de este capítulo en el mapa ni en la línea de tiempo.</p>' : ''}
     ${apareceEnHtml(lib, cap, ya)}
     ${videosPasajeHtml(lib, cap)}`;
 }
