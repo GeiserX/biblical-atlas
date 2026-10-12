@@ -447,7 +447,8 @@ test('every view opens with the chunks, with no console error', async () => {
 test('the calendar loads the two chunks, not data.json, and paints what data.json paints', async (t) => {
   // The same page painted three ways: from the chunks, from a folder with data.json only, and from file:// (data.js).
   // The bytes of data each one downloads go to the log.
-  const bytes = (p) => { p.dataBytes = 0; p.on('response', async (r) => { if (/\/data[^/]*\.json$/.test(r.url())) p.dataBytes += (await r.body().catch(() => Buffer.alloc(0))).length; }); };
+  const bytes = (p) => { p.bodies = []; p.on('response', (r) => { if (/\/data[^/]*\.json$/.test(r.url())) p.bodies.push(r.body().then((b) => b.length, () => 0)); }); };
+  const mb = async (p) => `${((await Promise.all(p.bodies)).reduce((a, n) => a + n, 0) / 1e6).toFixed(2)} MB`;
   const chunks = await openPage({ url: 'calendario.html', wait: false, routes: bytes });
   const whole = await openPage({ url: `calendario.html?datos=${WHOLE}`, wait: false, routes: bytes });
   const context = await browser.newContext({ deviceScaleFactor: 1, ...DESKTOP });
@@ -474,9 +475,10 @@ test('the calendar loads the two chunks, not data.json, and paints what data.jso
   assert.equal(count(chunks, 'data.core.json'), 1);
   assert.equal(count(chunks, 'data.detail.json'), 1);
   assert.equal(count(chunks, 'data.json'), 0);
-  t.diagnostic(`calendar data: ${(chunks.dataBytes / 1e6).toFixed(2)} MB with the chunks, ${(whole.dataBytes / 1e6).toFixed(2)} MB with data.json`);
+  t.diagnostic(`calendar data: ${await mb(chunks)} with the chunks, ${await mb(whole)} with data.json`);
   // Both chunks are asked for at once, not one after the other.
   const at = (e) => chunks.events.indexOf(e);
   assert.ok(at('ask /data.detail.json') >= 0 && at('ask /data.detail.json') < at('got /data.core.json'), chunks.events.join(', '));
-  assert.deepEqual([...chunks.pageErrors, ...chunks.consoleErrors, ...whole.pageErrors, ...whole.consoleErrors], []);
+  // The folder with data.json only answers 404 to both chunks, as it should: there, only page errors count.
+  assert.deepEqual([...chunks.pageErrors, ...chunks.consoleErrors, ...whole.pageErrors], []);
 });
