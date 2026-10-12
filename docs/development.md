@@ -15,7 +15,7 @@ python3 scripts/review.py --fail  # lo que lleva más de un año sin releer
 python3 -m http.server -d site    # y abrir http://localhost:8000
 ```
 
-Los avisos (`AVISO [código]`) señalan lo que pide leer el texto y no bloquean, pero tienen un presupuesto: [`scripts/avisos-presupuesto.txt`](https://github.com/GeiserX/biblical-atlas/blob/main/scripts/avisos-presupuesto.txt) dice cuántos admite cada código. `validate.py` lo aplica siempre, en local y en el CI: si un código pasa de su número sale con 1 y escribe los avisos de ese código para encontrar el nuevo; si se queda por debajo, pide bajar el número. Quien arregla un aviso baja su número en el mismo cambio; el número nunca se sube para dejar pasar uno nuevo. Un código que no está en el fichero admite 0. `--budget FICHERO` lee otro presupuesto.
+Los avisos (`AVISO [código]`) señalan lo que pide leer el texto y no bloquean, pero tienen un presupuesto: [`scripts/avisos-presupuesto.txt`](https://github.com/GeiserX/biblical-atlas/blob/main/scripts/avisos-presupuesto.txt) dice cuántos admite cada código. `validate.py` lo aplica siempre, en local y en el CI: si un código pasa de su número sale con 1 y escribe los avisos de ese código para encontrar el nuevo; si se queda por debajo, pide bajar el número. Quien arregla un aviso baja su número en el mismo cambio; el número nunca se sube para dejar pasar uno nuevo. Un código que no está en el fichero admite 0. Un código que ya es error (`PROMOTED` en `validate.py`) no va en el fichero: `validate.py` lo rechaza. `--budget FICHERO` lee otro presupuesto.
 
 Las pruebas de los scripts:
 
