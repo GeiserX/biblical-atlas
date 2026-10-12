@@ -485,25 +485,26 @@ Sale con código 1, siempre:
 - Dos relaciones de una ficha con la misma clave; varias con el mismo tipo, destino y palabra cuando a alguna le falta `date.from`; dos con `caption`, el mismo tipo y el mismo destino cuando a alguna le falta `date.from`.
 - Una referencia `relation:` de la cobertura que no casa con ninguna relación, que casa con más de una o que no está en su forma canónica.
 - Un suceso con un `type` o un papel que no existen, o con un papel para alguien que no está en `people`.
+- Un aviso de un código de `PROMOTED` (ver «De aviso a error»): hoy `outside_pending`, `no_office`, `no_certainty`, `same_as_owner` y `title_type`. Escribe `ERROR [código]`.
 - Todo lo que ya rechazaba: fechas, fuentes, textos de más de 40 palabras, cobertura.
 
 ### Avisa
 
-Escribe el aviso y sale con 0. Cada aviso tiene un código:
+Escribe el aviso y sale con 0. Cada aviso tiene un código. Los cinco marcados «ya es error» pasaron a `PROMOTED` y ya no avisan: salen como error (ver «Rechaza»). La última columna es la cuenta tras la migración, no la de hoy.
 
 | Código | Cuándo | Hoy, tras la migración mecánica |
 |---|---|---:|
 | `wrong_owner` | Una relación con una palabra `owns: target` y sin copia en la otra ficha. | 6 |
 | `pair_twice` | El mismo par en las dos fichas: palabras inversas entre sí, o el mismo tipo sin palabra, salvo con fechas distintas. | 36 |
-| `outside_pending` | Un `caption` que está en `outside` con `fix`. | 10 |
+| `outside_pending` (ya es error) | Un `caption` que está en `outside` con `fix`. | 10 |
 | `unlisted_caption` | Un `caption` que no está en `outside`. | 0 |
 | `kin_without_word` | Una `kin` sin `word` ni `caption`. | 7 |
 | `bare_company` | Una `accompanies` sin `word`, sin `caption` y sin `date`. | 30 |
-| `no_office` | Una `succeeds` sin `office`. | 57 |
-| `no_certainty` | Una `same_as` sin `certainty`. | 7 |
-| `same_as_owner` | Una `same_as` en la ficha cuyo id va después. | 2 |
+| `no_office` (ya es error) | Una `succeeds` sin `office`. | 57 |
+| `no_certainty` (ya es error) | Una `same_as` sin `certainty`. | 7 |
+| `same_as_owner` (ya es error) | Una `same_as` en la ficha cuyo id va después. | 2 |
 | `no_reference` | Una relación sin referencia (sección 10). | 68 |
-| `title_type` | Un suceso sin `type` cuyo título empieza por «Nace», «Nacimiento», «Muere» o «Muerte»: el sitio lo lee del título. | 2 |
+| `title_type` (ya es error) | Un suceso sin `type` cuyo título empieza por «Nace», «Nacimiento», «Muere» o «Muerte»: el sitio lo lee del título. | 2 |
 | `type_without_role` | Un suceso con `type` y sin el papel de ese tipo, salvo con `roles: {}`. | 0 |
 | `shared_point` | Un río, un mar o un valle a menos de 0,5 km de otro lugar que no es una región, provincia, país, reino, desierto, llanura o valle (los que el mapa rotula aparte), y su `coord_note` no nombra a ese lugar. | 4 |
 
