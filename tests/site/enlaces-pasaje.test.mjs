@@ -223,6 +223,11 @@ test('a passage cited by none opens its chapter card, with a line inside that no
   const again = await view(await openPage(DESKTOP, { hash: v.hash.slice(1) }));
   assert.equal(again.sel, 'pasaje:snt-1');
   assert.match(again.box?.text || '', /cita todavía Santiago 1:5/);
+  // A range across chapters that nothing cites opens its first chapter, not its last.
+  assert.deepEqual((await found(page, 'Snt1:5-2:3')).list, [], 'something cites Santiago 1:5-2:3 now, so this is no test');
+  const across = await view(await openPage(DESKTOP, { hash: 'p=Snt1:5-2:3' }));
+  assert.equal(across.sel, 'pasaje:snt-1', 'a range across chapters did not open its first chapter');
+  assert.match(across.box?.text || '', /^Ningún suceso, parada, carta ni viaje del atlas cita todavía Santiago 1:5-2:3\.$/);
   // Choosing something else from the chapter card (its book) ends the passage.
   await page.locator('#panel-cuerpo .be-card__eyebrow [data-sel="libro:santiago"]').click();
   await settle(page);
