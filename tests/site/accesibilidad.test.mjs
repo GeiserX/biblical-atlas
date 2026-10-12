@@ -429,3 +429,30 @@ for (const [screen, want] of [['1440', 'panel-cuerpo'], ['430', 'estudio-boton']
     await page.context().close();
   });
 }
+
+for (const screen of ['1440', '430']) {
+  test(`${screen}: on the tour card in the side panel ← and → change the stop; with the focus elsewhere they move the date`, async () => {
+    const page = await keyboardPage(screen, TOUR);
+    await page.locator('#panel-cuerpo .recorrido-sig').focus();
+    const a = await where(page);
+    await page.keyboard.press('ArrowRight');
+    await settle(page);
+    const b = await where(page);
+    assert.equal(b.step, a.step + 1, 'ArrowRight in the panel card did not go to the next stop');
+    assert.ok(await page.evaluate(() => document.querySelector('#panel-cuerpo').contains(document.activeElement)), 'the focus left the panel card');
+    await page.keyboard.press('ArrowLeft');
+    await settle(page);
+    const c = await where(page);
+    assert.equal(c.step, a.step, 'ArrowLeft in the panel card did not go back');
+    assert.equal(c.t, a.t, 'the date is not the stop\'s own');
+    // Outside the card the arrows keep moving the date, tour or not.
+    await page.evaluate(() => document.activeElement.blur());
+    await page.keyboard.press('ArrowRight');
+    await settle(page);
+    const d = await where(page);
+    assert.equal(d.step, c.step, 'with the focus outside the card, ArrowRight changed the stop');
+    assert.ok(d.t > c.t, 'with the focus outside the card, ArrowRight did not move the date');
+    assert.deepEqual(page.errors, []);
+    await page.context().close();
+  });
+}

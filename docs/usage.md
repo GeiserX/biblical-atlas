@@ -97,7 +97,7 @@ En la ficha de un suceso, una parada, una carta, un viaje o un capítulo, «Enla
 | Espacio | Reproducir o pausar |
 | ← → | Mover el cursor un paso (depende de la escala de la línea) |
 | Mayúsculas + ← → | Saltar a la parada o carta anterior o siguiente |
-| ← → en la tarjeta del recorrido | Con el foco en uno de sus botones: la parada anterior o la siguiente, sin mover la fecha a mano |
+| ← → en la tarjeta del recorrido | Con el foco en la tarjeta, la que flota sobre el mapa o la de la ficha: la parada anterior o la siguiente, sin mover la fecha a mano. Con el foco fuera de ella, mueven la fecha |
 | Esc | Borrar la búsqueda y la selección |
 | `T` | Ampliar o reducir la línea de tiempo |
 | Alt + arrastrar sobre la línea | Regla entre dos fechas |
