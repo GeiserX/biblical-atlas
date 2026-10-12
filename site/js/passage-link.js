@@ -308,9 +308,10 @@ function paint() {
 BE.pintores.push(paint);
 
 /** The passage link of a selection: the passage that opened it, or its own first reference. «&sel=» goes with it when
-    the passage would open something else first. null when the selection has no reference. */
+    the passage would open something else first. null when the selection has no reference, and for a book: «#p=Rut»
+    opens its card, but a book is not a passage, so its card has no «Enlace al pasaje» however it was reached. */
 function linkFor(sel) {
-  if (!sel || !BE.D) return null;
+  if (!sel || !BE.D || sel.tipo === 'libro') return null;
   const s = BE.selTexto(sel);
   let text = showing() && opens().includes(s) ? active.text : null;
   if (!text) {

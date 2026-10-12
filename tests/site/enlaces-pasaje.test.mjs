@@ -267,8 +267,14 @@ test('a book alone opens the book card, and the address writes it by its abbrevi
     assert.equal(v.title, title, h);
     assert.equal(v.box, null, `${h} still shows a notice`);
     assert.match(v.hash, new RegExp(`[#&]p=${back}(&|$)`), `${h} is not written back as p=${back}`);
+    // A book is not a passage: its card has no «Enlace al pasaje», reached by the link or not.
+    assert.equal(await page.locator('#panel-cuerpo [data-enlace-pasaje]').count(), 0, `${h}: the book card offers a passage link`);
     assert.deepEqual(page.pageErrors, []);
   }
+  const plain = await openPage(DESKTOP, { hash: 'sel=libro:rut' });
+  assert.equal((await view(plain)).sel, 'libro:rut');
+  assert.ok(await plain.locator('#panel-cuerpo .acciones-estudio').count(), 'the book card has no «Citar» row, so this is no test');
+  assert.equal(await plain.locator('#panel-cuerpo [data-enlace-pasaje]').count(), 0, 'the book card offers a passage link');
 });
 
 test('the links of the examples open their cards', async () => {
