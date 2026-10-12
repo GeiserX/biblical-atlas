@@ -1,7 +1,8 @@
 /* biblical-atlas · deep links by passage: «#p=Hch16:1» opens the atlas at what the passage tells.
 
    The parsing and the matching follow lookup_passage of the atlas MCP server (internal/atlas/reference.go), so both
-   answer the same for the same passage:
+   find the same events for the same passage. The order is the site's own: the server keeps the order of the data (by
+   date), the site puts the principal passage first (below):
    - A book is found by any of its written forms (name, TNM abbreviation, slug, search forms, spoken forms), compared
      without accents, case, spaces, dots or hyphens: «Hch», «Hechos», «2Re», «2 Reyes», «2-reyes» and «Génesis» all work.
    - A passage is one book and one stretch: a chapter («Hch16»), chapters («Hch16-17»), a verse («Hch16:1»), verses in a
