@@ -342,11 +342,34 @@ function esFecha(x) {
   const t = String(x || '').trim();
   return /\d/.test(t) && /e\.c\.$/.test(t) && /^(?:(?:c\.|entre|hacia|y|[-–]|\d+(?:[-–]\d+)?|a\.e\.c\.|e\.c\.)\s*)+$/.test(t);
 }
+// ---------------------------------------------------------------------------
+// Homónimos en la lista: la línea que los distingue
+// ---------------------------------------------------------------------------
+/** El primer trozo de un texto de la ficha que puede distinguirla: su primera frase sin paréntesis, sin el nombre
+    delante, hasta la primera coma, saltando los trozos que solo citan la fuente («entrada núm. 2 de Perspicacia»). Una
+    frase que solo dice quién no es («No es el Jabín…») no distingue nada. */
+function distinguishingClause(text, names) {
+  let t = String(text || '').replace(/\s*\([^)]*\)/g, '').split(/;|\.\s+(?=[A-ZÁÉÍÓÚÑ¿«])/)[0].replace(/\.$/, '').trim();
+  for (const n of names) {
+    if (n && norm(t).startsWith(norm(n)) && /^[\s,]/.test(t.slice(n.length))) { t = t.slice(n.length).replace(/^[\s,]+/, ''); break; }
+  }
+  if (/^no\b/i.test(t)) return '';
+  return t.split(/,\s+/).find((part) => part && !/Perspicacia|\bnúm\./.test(part)) || '';
+}
+/** La línea que distingue una ficha de otra que se llama igual (docs/ideas/homonimos.md): la sacamos de la propia ficha,
+    de `desambiguacion` y si no de `resumen`, que dicen el parentesco, la época o el lugar: «hijo de Jonatán» y «hijo de
+    Saúl y Rizpá». Los dos textos llegan con el detalle; antes no hay línea. Que ningún grupo de homónimos de data/ repita
+    la línea lo comprueba tests/site/search-namesakes.test.mjs con scripts/homonyms.py. */
+function distinguishingLine(sel) {
+  const o = objetoSel(sel), names = [o?.nombre || o?.titulo, ...(o?.nombres || []).map((n) => n.nombre)];
+  return distinguishingClause(o?.desambiguacion, names) || distinguishingClause(o?.resumen, names);
+}
 /** Lo que enseña una fila de resultados, para la lista de arriba y la de la portada: la forma, la palabra del tipo, el
-    título, la etiqueta, el resto de la línea y la fecha. La fecha va una sola vez, en su píldora: se quita de la línea
-    lo que es la fecha del resultado, dicha como sea, y si la línea la decía tal cual la dan los datos («36 e.c.»,
-    «entre 1514 y 1513 a.e.c.»), esa es la de la píldora, más exacta que la corta. */
-function filaResultado(r) {
+    título, la etiqueta, la línea que lo distingue de otra fila de `list` que se llama igual, el resto de la línea y la
+    fecha. La fecha va una sola vez, en su píldora: se quita de la línea lo que es la fecha del resultado, dicha como
+    sea, y si la línea la decía tal cual la dan los datos («36 e.c.», «entre 1514 y 1513 a.e.c.»), esa es la de la
+    píldora, más exacta que la corta. */
+function filaResultado(r, list = []) {
   const deTipo = !!(r.sel && !r.accion);
   let forma;
   if (r.accion && !r.sel) forma = r.grupo === 'Preguntas' ? 'conexion' : 'anio';
@@ -362,7 +385,11 @@ function filaResultado(r) {
     meta = trozos.filter((x) => !esFecha(x) && !suya.includes(norm(x.trim()))).join(' · ');
     if (propia) fecha = propia.trim();
   }
-  return { forma, tipo, deTipo, titulo: r.titulo, etiqueta: r.etiqueta || '', meta, fecha };
+  // Si otra fila de la lista se llama igual, la línea que la distingue va primero; el texto de la ficha del que sale no
+  // se repite detrás.
+  const distinguisher = r.sel && list.some((x) => x !== r && x.titulo === r.titulo) ? distinguishingLine(r.sel) : '';
+  if (distinguisher && r.meta) { const o = objetoSel(r.sel); if (r.meta === o?.desambiguacion || r.meta === o?.resumen) meta = ''; }
+  return { forma, tipo, deTipo, titulo: r.titulo, etiqueta: r.etiqueta || '', distinguisher, meta, fecha };
 }
 let resultados = [], activo = 0, previa = false;
 function pintarResultados() {
@@ -379,10 +406,11 @@ function pintarResultados() {
       grupo = r.grupo;
       const tipoNodo = r.sel ? (BE.tipo(r.sel.tipo)?.nodo || 'evento') : 'evento';
       const inicial = r.accion && !r.sel ? (r.grupo === 'Fechas' || r.grupo === 'Meses hebreos' ? '◷' : '?') : r.titulo[0];
-      const f = filaResultado(r);
+      const f = filaResultado(r, resultados);
+      const linea = [f.deTipo && f.tipo ? esc(f.tipo) : '', f.distinguisher ? `<span class="be-distinguisher">${esc(f.distinguisher)}</span>` : '', esc(f.meta)].filter(Boolean).join(' · ');
       return `${cab}<div class="be-result${i === activo ? ' be-result--active' : ''}" role="option" id="res-${i}" aria-selected="${i === activo}" data-i="${i}">
         <span class="be-node be-node--${tipoNodo} be-node--sm" aria-hidden="true">${esc(inicial)}</span>
-        <span class="res-texto"><span class="be-result__title">${marcar(f.titulo, q.value)}${f.etiqueta ? ` <span class="res-etiqueta">${esc(f.etiqueta)}</span>` : ''}</span><span class="be-row__meta">${f.deTipo && f.tipo ? `${f.tipo}${f.meta ? ' · ' : ''}` : ''}${esc(f.meta)}</span></span>
+        <span class="res-texto"><span class="be-result__title">${marcar(f.titulo, q.value)}${f.etiqueta ? ` <span class="res-etiqueta">${esc(f.etiqueta)}</span>` : ''}</span><span class="be-row__meta">${linea}</span></span>
         ${f.fecha ? `<span class="res-fecha">${esc(f.fecha)}</span>` : ''}</div>`;
     }).join('');
   }
@@ -438,7 +466,7 @@ function elegirResultado(r) {
   }
 }
 /** Busca y abre la lista. La búsqueda contesta con el núcleo; el detalle (js/data-chunks.js) solo añade la línea que
-    distingue a dos personas del mismo nombre. Si aún no ha llegado, lo pide y busca otra vez al llegar, si la caja
+    distingue a dos fichas del mismo nombre. Si aún no ha llegado, lo pide y busca otra vez al llegar, si la caja
     sigue con algo escrito y con el foco. */
 function buscarYPintar(texto) {
   BE.chunks.ready(rebuscar);
@@ -797,5 +825,5 @@ function anunciar() {
 BE.pintores.push((c) => { if (c.cursor || c.panel) anunciar(); });
 
 Object.assign(BE, { buscar, cerrarResultados, iniciarBusqueda, buscarTexto, leerAnio, anioPregunta, objetoSel, fechaSel, historia, textoCita,
-  filaResultado, marcar, elegirResultado, sugerencias, esExacta, pesador });
+  filaResultado, distinguishingLine, marcar, elegirResultado, sugerencias, esExacta, pesador });
 })();

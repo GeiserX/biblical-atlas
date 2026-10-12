@@ -14,6 +14,8 @@
 .be-result--active:hover { background: var(--gold-soft); }
 .res-texto { display: flex; flex-direction: column; min-width: 0; flex: 1; }
 .res-texto .be-row__meta { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Lo que distingue a una fila de otra que se llama igual: un tono más oscuro que el resto de la línea. */
+.be-distinguisher { color: var(--ink-2); }
 .res-fecha { margin-left: auto; flex: none; font-size: var(--fs-xs); font-weight: 600; color: var(--gold-ink); background: var(--gold-soft); border-radius: var(--r-pill); padding: 2px 8px; font-variant-numeric: tabular-nums; }
 .res-etiqueta { font-size: var(--fs-2xs); font-weight: 700; color: var(--secular); background: var(--secular-soft); border-radius: var(--r-pill); padding: 1px 7px; margin-left: 4px; vertical-align: 1px; }
 .be-result mark { background: #f3e2b3; color: inherit; border-radius: 2px; padding: 0 1px; }
