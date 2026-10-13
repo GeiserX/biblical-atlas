@@ -94,12 +94,23 @@ Los otros dos recorridos con menos nombres en el móvil, al abrirlos:
 | Pedro | ![Antes: Pedro en el móvil](img/rotulos-movil/antes-pedro-430.webp) | ![Después: Pedro en el móvil](img/rotulos-movil/despues-pedro-430.webp) |
 | La última semana | ![Antes: la última semana en el móvil](img/rotulos-movil/antes-la-ultima-semana-430.webp) | ![Después: la última semana en el móvil](img/rotulos-movil/despues-la-ultima-semana-430.webp) |
 
+## Siguiendo una ruta
+
+A zoom 3 o 4 los nombres de un viaje entero se pisan. Siguiendo una ruta, la parada actual, la de antes y la de después se nombran antes que lo demás, y lo que no es de la ruta les deja sitio (`vecinosEnFoco` en `site/js/mapa.js`). A 430, parada a parada, los viajes de Pablo pasan de 90 a 125 de 186 paradas en foco con nombre; lo que sigue sin nombre choca con otra parada de la ruta, con sus números o con el borde.
+
+El primer encuadre de un recorrido ya no cuenta los candidatos de un lugar de ubicación desconocida que no es de la primera parada: «La última semana» abre en Jerusalén (zoom 13 a 430, antes 9,3) con 3 de 4 nombres, y los tres candidatos de Emaús se encuadran al llegar a su parada. Los otros tres recorridos abren igual que antes.
+
+| Al abrir, a 430 | Antes | Después |
+|---|---|---|
+| Primer viaje: Seleucia, la parada siguiente, lleva nombre | ![Antes: el primer viaje en el móvil](img/rotulos-movil/foco-antes-primer-viaje-430.webp) | ![Después: el primer viaje en el móvil](img/rotulos-movil/foco-despues-primer-viaje-430.webp) |
+| La última semana: abre en Jerusalén | ![Antes: la última semana abre lejos de Jerusalén](img/rotulos-movil/foco-antes-la-ultima-semana-430.webp) | ![Después: la última semana abre en Jerusalén](img/rotulos-movil/foco-despues-la-ultima-semana-430.webp) |
+
 ## Lo que queda
 
-- **Los choques en el móvil.** Casi todo lo que sigue sin nombre en el móvil es por choque: a zoom 3 o 4, los nombres de un viaje entero se pisan (33 de las 72 paradas de los viajes de Pablo). Ni el lado interior ni el margen lo resuelven; haría falta otra regla, como nombrar solo la parada actual y sus vecinas.
-- **La última semana abre lejos de Jerusalén.** Al abrir, el encuadre cuenta los tres candidatos de Emaús, al oeste, y Jerusalén queda en el borde con 0 de 4 nombres. Ya pasaba antes y no es de los nombres.
 - **Antioquía de Siria a 1440.** En «Las cartas de Pablo» sigue sin nombre en el borde: a la izquierda taparía el punto de Seleucia, y esa regla manda.
 
 ## Las pruebas
 
 [`tests/site/map-labels.test.mjs`](../../tests/site/map-labels.test.mjs): Babilonia, Jerusalén elegida y cuatro ciudades del segundo viaje llevadas al borde derecho, en el tema claro y en modo reunión, con las reglas de siempre comprobadas en cada caso; Zaír junto al borde con un candidato del valle de la Sal medio tapado por los botones del mapa, que su nombre no pisa; las mismas reglas a 1440; la tarjeta de una línea con sus flechas, el toque, Escape y el teclado; y las 11 paradas de «Las cartas de Pablo» libres en el móvil.
+
+[`tests/site/tour-focus.test.mjs`](../../tests/site/tour-focus.test.mjs): en cada parada de los cuatro recorridos y de los cuatro viajes de Pablo, a 430, una parada en foco sin nombre solo choca con la ruta o con el borde; al salir de un recorrido vuelven los nombres de antes; cada recorrido abre con todos sus lugares conocidos a la vista, y «La última semana» abre sin los candidatos de Emaús y los encuadra en su parada.
