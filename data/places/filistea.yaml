@@ -53,6 +53,9 @@ sources:
 - isaias-11
 - ip1-13
 - isaias-14
+- jeremias-47
+- 1-cronicas-10
+- 1-cronicas-18
 links:
 - title: 'Perspicacia: «Filistea, filisteos»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Filistea-filisteos/
@@ -60,5 +63,5 @@ links:
 - title: Génesis 21 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/G%C3%A9nesis/21/
   type: bible
-checked_on: '2026-09-30'
+checked_on: '2026-10-12'
 status: verified

@@ -1,0 +1,28 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: talmon
+name: Talmón
+names:
+- name: Talmón
+perspicacia: '1200004312'
+summary: Cabeza de una familia de porteros levitas. Volvió de Babilonia con Zorobabel y, con sus hermanos, fue escogido para
+  vivir en Jerusalén.
+reason: Perspicacia «Talmón»; 1Cr 9:17.
+sources:
+- it-talmon
+- 1-cronicas-9
+links:
+- title: 'Perspicacia: «Talmón»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Talm%C3%B3n/
+  type: perspicacia
+relations:
+- type: lived_in
+  place: jerusalen
+  inferred: true
+  sources:
+  - 1-cronicas-9
+  - it-talmon
+  reason: 'Perspicacia «Talmón»: él y sus hermanos fueron escogidos para vivir en Jerusalén (1Cr 9:3, 17).'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

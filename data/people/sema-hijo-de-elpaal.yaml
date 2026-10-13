@@ -1,0 +1,52 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: sema-hijo-de-elpaal
+name: Sema
+names:
+- name: Sema
+perspicacia: 1200003998#3
+disambiguation: Sema hijo de Elpaal, benjamita de Ayalón; no los otros Sema que numera Perspicacia, de Judá, de Rubén y de
+  días de Nehemías.
+summary: Benjamita, hijo de Elpaal, jefe de una casa que vivía en Ayalón y ayudó a echar a los de Gat. Perspicacia lo cree
+  probablemente el Simeí del versículo 21.
+reason: Perspicacia «Sema», núm. 3; 1Cr 8:12, 13.
+sources:
+- it-sema
+- 1-cronicas-8
+links:
+- title: 'Perspicacia: «Sema»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sema/
+  type: perspicacia
+relations:
+- type: kin
+  person: elpaal
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  reason: 1Cr 8:13 lo cuenta entre los hijos de Elpaal.
+  checked_on: '2026-10-12'
+  status: verified
+- type: lived_in
+  place: ayalon
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  reason: '1Cr 8:13: encabezaba casas paternas de los que vivían en Ayalón.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: same_as
+  person: simei-padre-de-jaquim
+  certainty: probable
+  inferred: true
+  sources:
+  - 1-cronicas-8
+  - it-sema
+  - it-simei
+  reason: 'Perspicacia «Sema», núm. 3, y «Simeí», núm. 5: al parecer, el Sema de 1Cr 8:13 es el Simeí de 8:21.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- sema-hijo-de-hebron
+- sema-hijo-de-joel

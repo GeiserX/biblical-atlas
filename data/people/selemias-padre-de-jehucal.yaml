@@ -1,0 +1,29 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: selemias-padre-de-jehucal
+name: Selemías
+names:
+- name: Selemías
+perspicacia: 1200003990#3
+disambiguation: El padre de Jehucal; no es el padre de Iriya, ni el abuelo de Jehudí, ni el hijo de Abdeel.
+distinct_from:
+- selemias-hijo-de-hananias
+- selemias-hijo-de-cusi
+- selemias-hijo-de-abdeel
+- selemias-portero
+summary: Padre de Jehucal, el príncipe que Sedequías mandó a Jeremías y que luego pidió que mataran al profeta. El texto solo
+  lo nombra como su padre.
+reason: Perspicacia «Selemías», núm. 3; Jer 37:3 y 38:1.
+sources:
+- it-selemias
+- jeremias-37
+- jeremias-38
+links:
+- title: 'Perspicacia: «Selemías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Selem%C3%ADas/
+  type: perspicacia
+- title: Jeremías 37 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/37/
+  type: bible
+relations: []
+checked_on: '2026-10-12'
+status: verified

@@ -23,5 +23,7 @@ links:
 - title: Números 16 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/N%C3%BAmeros/16/
   type: bible
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified
+distinct_from:
+- pelez-hijo-de-jonatan

@@ -1,0 +1,32 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: nadab-hijo-de-samai
+name: Nadab
+names:
+- name: Nadab
+perspicacia: 1200003159#2
+summary: Hijo de Samái, de la rama de Jerahmeel en Judá, y padre de Séled y Apaim.
+reason: Perspicacia «Nadab», núm. 2; 1Cr 2:28, 30.
+sources:
+- it-nadab
+- 1-cronicas-2
+links:
+- title: 'Perspicacia: «Nadab»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Nadab/
+  type: perspicacia
+relations:
+- type: kin
+  person: samai-hijo-de-onam
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-2
+  reason: '1Cr 2:28: hijo de Samái.'
+  checked_on: '2026-10-12'
+  status: verified
+disambiguation: Nadab hijo de Samái, de Judá; no Nadab hijo de Aarón ni Nadab, rey de Israel.
+distinct_from:
+- nadab-hijo-de-aaron
+- nadab-de-israel
+- nadab-hijo-de-jeiel
+checked_on: '2026-10-12'
+status: verified

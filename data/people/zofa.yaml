@@ -1,0 +1,29 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: zofa
+name: Zofá
+names:
+- name: Zofá
+- name: Zofah
+  note: Grafía de Perspicacia.
+perspicacia: '1200004762'
+summary: Aserita destacado, hijo de Hélem. La genealogía le da once hijos.
+reason: Perspicacia «Zofah»; 1Cr 7:35-37, 40.
+sources:
+- it-zofah
+- 1-cronicas-7
+links:
+- title: 'Perspicacia: «Zofah»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zofah/
+  type: perspicacia
+relations:
+- type: kin
+  person: helem-de-aser
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-7
+  reason: 1Cr 7:35 lo cuenta entre los hijos de Hélem.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

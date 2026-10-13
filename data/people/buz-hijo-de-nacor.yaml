@@ -19,7 +19,7 @@ links:
 - title: Génesis 22 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/G%C3%A9nesis/22/
   type: bible
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified
 relations:
 - type: kin
@@ -42,3 +42,5 @@ relations:
   reason: 'Gé 22:20-23: uno de los ocho hijos que Milcá dio a Nacor.'
   checked_on: '2026-09-29'
   status: verified
+distinct_from:
+- buz-el-gadita

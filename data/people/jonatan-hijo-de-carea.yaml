@@ -1,0 +1,53 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jonatan-hijo-de-carea
+name: Jonatán
+names:
+- name: Jonatán
+perspicacia: 1200002506#8
+disambiguation: Jonatán hijo de Caréah y hermano de Johanán, jefe militar en Judá tras 607 a.e.c.; no es el hijo de Saúl ni
+  ninguno de los demás Jonatán que numera Perspicacia.
+distinct_from:
+- jonatan-hijo-de-saul
+- jonatan-levita
+- jonatan-hijo-de-abiatar
+- jonatan-hijo-de-sama
+- jonatan-hijo-de-sague
+- jonatan-hijo-de-jada
+- jonatan-hijo-de-uzias
+- jonatan-sobrino-de-david
+date:
+  from: -606
+  to: -606
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 607 a.e.c.
+summary: Jefe militar, hijo de Caréah y hermano de Johanán. Caída Jerusalén, fue con sus hombres a Mizpá, donde Guedalías
+  les juró que les iría bien si servían a Babilonia.
+reason: Perspicacia «Jonatán», núm. 8; Jer 40:8, 9. Según Perspicacia, parece que también avisó a Guedalías del peligro que
+  corría (Jer 40:13-16).
+sources:
+- it-jonatan
+- jeremias-40
+- si-3
+links:
+- title: 'Perspicacia: «Jonatán»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jonat%C3%A1n/
+  type: perspicacia
+- title: Jeremías 40 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/40/
+  type: bible
+relations:
+- type: kin
+  person: carea
+  word: father
+  inferred: false
+  sources:
+  - jeremias-40
+  - it-jonatan
+  reason: 'Jer 40:8: Johanán y Jonatán, los hijos de Caréah.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

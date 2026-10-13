@@ -23,6 +23,9 @@ sources:
 - isaias-23
 - isaias-47
 - isaias-48
+- jeremias-24
+- jeremias-50
+- jeremias-51
 links:
 - title: 'Perspicacia: «Caldea, caldeo»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Caldea-caldeo/
@@ -30,5 +33,5 @@ links:
 - title: Job 1 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/job/1/
   type: bible
-checked_on: '2026-09-30'
+checked_on: '2026-10-12'
 status: verified

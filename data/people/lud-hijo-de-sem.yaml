@@ -10,6 +10,7 @@ reason: Perspicacia «Lud, ludim», núm. 1; Gé 10:22.
 sources:
 - it-lud
 - genesis-10
+- 1-cronicas-1
 links:
 - title: 'Perspicacia: «Lud, ludim»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Lud-ludim/
@@ -24,8 +25,9 @@ relations:
   inferred: false
   sources:
   - genesis-10
+  - 1-cronicas-1
   reason: Gé 10:22 lo nombra entre los hijos de Sem.
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

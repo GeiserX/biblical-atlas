@@ -1,0 +1,41 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: rafa-hijo-de-binea
+name: Rafá
+names:
+- name: Rafá
+- name: Rafah
+  note: Otra grafía, según la nota de 1Cr 8:37; es el título de su artículo en Perspicacia.
+- name: Refayá
+  note: Así lo llama 1Cr 9:43; Perspicacia «Refayá», núm. 2, lo identifica con Rafá.
+perspicacia: '1200003649'
+disambiguation: Rafá hijo de Bineá, de la casa de Saúl; no Rafá, el quinto hijo de Benjamín.
+distinct_from:
+- rafa-hijo-de-benjamin
+- refaya-hijo-de-jesaya
+- refaya-hijo-de-tola
+- refaya-hijo-de-isi
+summary: Benjamita del linaje de Saúl, hijo de Bineá. En 1Cr 9:43 se le llama Refayá.
+reason: Perspicacia «Rafah»; 1Cr 8:33-37.
+sources:
+- it-rafah
+- 1-cronicas-8
+- it-refaya
+- 1-cronicas-9
+links:
+- title: 'Perspicacia: «Rafah»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Rafah/
+  type: perspicacia
+relations:
+- type: kin
+  person: binea
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  - 1-cronicas-9
+  - it-refaya
+  reason: '1Cr 8:37: Rafá era hijo de Bineá.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

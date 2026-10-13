@@ -1,0 +1,33 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: bani-descendiente-de-perez
+name: Baní
+names:
+- name: Baní
+perspicacia: 1200000553#3
+summary: Judaíta de la línea de Pérez; sus descendientes residieron en Jerusalén tras el destierro. Perspicacia ve posible
+  que sea el Baní de las listas de Esdras.
+reason: Perspicacia «Baní», núm. 3; 1Cr 9:3, 4.
+sources:
+- it-bani
+- 1-cronicas-9
+links:
+- title: 'Perspicacia: «Baní»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ban%C3%AD/
+  type: perspicacia
+relations:
+- type: kin
+  person: perez
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-9
+  - it-bani
+  reason: 1Cr 9:4 pone a la familia de Baní entre los descendientes de Pérez; Perspicacia «Baní», núm. 3, lo repite.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- bani-el-gadita
+- bani-hijo-de-semer
+disambiguation: 'Baní núm. 3 de Perspicacia: judaíta de la línea de Pérez, antepasado de Utái. No el gadita, guerrero de David.'

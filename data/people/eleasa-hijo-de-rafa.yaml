@@ -1,0 +1,32 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: eleasa-hijo-de-rafa
+name: Eleasá
+names:
+- name: Eleasá
+perspicacia: 1200001286#2
+disambiguation: Eleasá hijo de Rafá, de la casa de Saúl; no los otros Eleasá que numera Perspicacia.
+summary: Benjamita de la línea de Saúl por Jonatán; hijo de Rafá y padre de Azel.
+reason: Perspicacia «Eleasá», núm. 2; 1Cr 8:33-37.
+sources:
+- it-eleasa
+- 1-cronicas-8
+- 1-cronicas-9
+links:
+- title: 'Perspicacia: «Eleasá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Eleas%C3%A1/
+  type: perspicacia
+relations:
+- type: kin
+  person: rafa-hijo-de-binea
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  - 1-cronicas-9
+  reason: '1Cr 8:37: Eleasá era hijo de Rafá.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- eleasa-hijo-de-helez

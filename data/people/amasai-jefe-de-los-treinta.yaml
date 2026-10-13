@@ -1,0 +1,34 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: amasai-jefe-de-los-treinta
+name: Amasái
+names:
+- name: Amasái
+- name: Amasai
+perspicacia: 1200000221#2
+disambiguation: Amasái, jefe de los treinta que se unió a David (1Cr 12:18); no el levita antepasado de Samuel ni el sacerdote
+  trompetista.
+distinct_from:
+- amasai-trompetista
+- amasai-hijo-de-elcana
+summary: Jefe de los treinta. Cuando hombres de Benjamín y Judá llegan a David, el espíritu viene sobre él y le promete apoyo,
+  porque Dios lo ayudaba.
+reason: Perspicacia «Amasai», núm. 2; 1Cr 12:16-18.
+sources:
+- it-amasai
+- 1-cronicas-12
+links:
+- title: 'Perspicacia: «Amasai»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Amasai/
+  type: perspicacia
+relations:
+- type: tie
+  person: david
+  word: master
+  inferred: false
+  sources:
+  - 1-cronicas-12
+  reason: '1Cr 12:18: David lo recibe con los suyos y los nombra jefes de las tropas.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

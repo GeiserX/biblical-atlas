@@ -1,0 +1,35 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: berekias-hijo-de-zorobabel
+name: Berekías
+names:
+- name: Berekías
+perspicacia: 1200000650#4
+disambiguation: Berekías hijo de Zorobabel (núm. 4 de Perspicacia); no el padre del profeta Zacarías.
+summary: Hijo de Zorobabel, de la línea de David por Salomón.
+reason: Perspicacia «Berekías»; 1Cr 3:19, 20.
+sources:
+- it-berekias
+- 1-cronicas-3
+links:
+- title: 'Perspicacia: «Berekías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Berek%C3%ADas/
+  type: perspicacia
+relations:
+- type: kin
+  person: zorobabel
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-3
+  - it-berekias
+  - it-zorobabel
+  reason: '1Cr 3:19, 20: uno de los hijos de Zorobabel.'
+  checked_on: '2026-10-12'
+  status: verified
+distinct_from:
+- berekias-hijo-de-ido
+- berekias-hijo-de-asa
+- berekias-hijo-de-simea
+- berekias-portero
+checked_on: '2026-10-12'
+status: verified

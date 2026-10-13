@@ -1,0 +1,39 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jeroham-de-guedor
+name: Jeroham
+names:
+- name: Jeroham
+perspicacia: 1200002432#2
+disambiguation: Jeroham de Guedor, padre de Joelá y Zebadías (1Cr 12:7); no el abuelo de Samuel ni el padre del príncipe de
+  Dan.
+distinct_from:
+- jeroham-hijo-de-elihu
+- jeroham-hijo-de-pasjur
+- jeroham-padre-de-azarel
+- jeroham-padre-de-ibneya
+- jeroham-padre-de-samserai
+summary: Benjaminita de Guedor cuyos hijos Joelá y Zebadías ayudaron a David en Ziclag cuando Saúl lo tenía restringido.
+reason: Perspicacia «Jeroham», núm. 2, y «Guedor», núm. 6; 1Cr 12:7.
+sources:
+- it-jeroham
+- it-guedor
+- 1-cronicas-12
+links:
+- title: 'Perspicacia: «Jeroham»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jeroham/
+  type: perspicacia
+- title: 'Perspicacia: «Guedor»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Guedor/
+  type: perspicacia
+relations:
+- type: lived_in
+  place: guedor-de-benjamin
+  inferred: false
+  sources:
+  - 1-cronicas-12
+  - it-guedor
+  reason: '1Cr 12:7: Jeroham de Guedor; Perspicacia «Guedor», núm. 6, lo sitúa en Benjamín.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

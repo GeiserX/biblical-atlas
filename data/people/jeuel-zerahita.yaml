@@ -1,0 +1,37 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jeuel-zerahita
+name: Jeuel
+names:
+- name: Jeuel
+perspicacia: 1200002456#2
+summary: Cabeza de la casa de Zérah, de Judá, que vivió en Jerusalén después del destierro con 690 de sus hermanos.
+reason: Perspicacia «Jeuel», núm. 2; 1Cr 9:3, 6.
+sources:
+- it-jeuel
+- 1-cronicas-9
+links:
+- title: 'Perspicacia: «Jeuel»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jeuel/
+  type: perspicacia
+relations:
+- type: kin
+  person: zerah-hijo-de-juda
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-9
+  - it-jeuel
+  reason: 1Cr 9:6 lo cuenta entre los hijos de Zérah, sus descendientes.
+  checked_on: '2026-10-12'
+  status: verified
+- type: lived_in
+  place: jerusalen
+  inferred: false
+  sources:
+  - 1-cronicas-9
+  - it-jeuel
+  reason: '1Cr 9:3, 6: vivía en Jerusalén con 690 de sus hermanos.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

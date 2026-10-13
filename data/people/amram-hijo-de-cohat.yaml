@@ -14,6 +14,8 @@ sources:
 - exodo-6
 - numeros-3
 - numeros-26
+- 1-cronicas-6
+- 1-cronicas-23
 links:
 - title: 'Perspicacia: «Amram»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Amram/
@@ -47,8 +49,10 @@ relations:
   - exodo-6
   - numeros-3
   - numeros-26
+  - 1-cronicas-6
+  - 1-cronicas-23
   reason: 'Perspicacia «Amram», núm. 1: nieto de Leví por medio de Cohat.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: kin
   person: levi-hijo-de-jacob
@@ -77,8 +81,10 @@ relations:
   sources:
   - exodo-6
   - numeros-3
+  - 1-cronicas-6
+  - 1-cronicas-23
   reason: 'Éx 6:18: Izhar es otro de los hijos de Cohat.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: kin
   person: hebron-hijo-de-cohat
@@ -87,8 +93,10 @@ relations:
   sources:
   - exodo-6
   - numeros-3
+  - 1-cronicas-6
+  - 1-cronicas-23
   reason: 'Éx 6:18: Hebrón es otro de los hijos de Cohat.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: kin
   person: uziel-hijo-de-cohat
@@ -97,8 +105,10 @@ relations:
   sources:
   - exodo-6
   - numeros-3
+  - 1-cronicas-6
+  - 1-cronicas-23
   reason: 'Éx 6:18: Uziel es otro de los hijos de Cohat.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

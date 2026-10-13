@@ -1,0 +1,17 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: elifelehu
+name: Elifelehu
+names:
+- name: Elifelehu
+perspicacia: '1200001314'
+summary: Levita de la segunda división, uno de los arpistas que dirigían la música mientras el Arca subía a Jerusalén.
+reason: Perspicacia «Elifelehu»; 1Cr 15:18, 21.
+sources:
+- it-elifelehu
+- 1-cronicas-15
+links:
+- title: 'Perspicacia: «Elifelehu»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Elifelehu/
+  type: perspicacia
+checked_on: '2026-10-12'
+status: verified

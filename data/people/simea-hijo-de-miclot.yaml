@@ -1,0 +1,51 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: simea-hijo-de-miclot
+name: Simeá
+names:
+- name: Simeá
+- name: Simeah
+  note: Otra grafía, según la nota de 1Cr 8:32; es el título de su artículo en Perspicacia.
+- name: Simeam
+  note: Así lo llama 1Cr 9:38; Perspicacia «Simeam» lo identifica con el Simeah de la lista paralela.
+perspicacia: 1200004043#1
+disambiguation: Simeá hijo de Miclot, benjamita; no Simeá (Samá), hermano de David, ni Simeá (Samúa), hijo de David, ni los
+  levitas de ese nombre.
+distinct_from:
+- sama-hijo-de-jese
+- samua-hijo-de-david
+- simea-hijo-de-miguel
+- simea-hijo-de-uza
+summary: Benjamita, hijo de Miclot, de la familia de Jeiel de Gabaón. En 1Cr 9:38 se le llama Simeam.
+reason: Perspicacia «Simeah», núm. 1; 1Cr 8:32.
+sources:
+- it-simeah
+- 1-cronicas-8
+- it-simeam
+- 1-cronicas-9
+links:
+- title: 'Perspicacia: «Simeah»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Simeah/
+  type: perspicacia
+relations:
+- type: kin
+  person: miclot-padre-de-simea
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  - 1-cronicas-9
+  reason: '1Cr 8:32: Miclot fue padre de Simeá.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: lived_in
+  place: jerusalen
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  - 1-cronicas-9
+  - it-simeam
+  reason: '1Cr 8:32: vivía en Jerusalén con sus parientes.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

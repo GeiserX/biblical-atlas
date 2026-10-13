@@ -1,0 +1,30 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ahi-hijo-de-somer
+name: Ahí
+names:
+- name: Ahí
+perspicacia: 1200000148#2
+disambiguation: Ahí hijo de Sémer, aserita; no Ahí el gadita hijo de Abdiel.
+summary: Aserita de la familia de Berías, hijo de Sémer y jefe de su tribu.
+reason: Perspicacia «Ahí», núm. 2; 1Cr 7:30, 31, 34, 40.
+sources:
+- it-ahi
+- 1-cronicas-7
+links:
+- title: 'Perspicacia: «Ahí»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ah%C3%AD/
+  type: perspicacia
+relations:
+- type: kin
+  person: somer-hijo-de-heber
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-7
+  reason: 1Cr 7:34 lo nombra entre los hijos de Sémer, el Somer del versículo 32.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- ahi-hijo-de-abdiel

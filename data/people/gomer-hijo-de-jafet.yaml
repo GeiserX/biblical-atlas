@@ -11,6 +11,7 @@ reason: Perspicacia «Gómer», núm. 1, párr. 1 y 2; Gé 10:2, 3.
 sources:
 - it-gomer
 - genesis-10
+- 1-cronicas-1
 links:
 - title: 'Perspicacia: «Gómer»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/G%C3%B3mer/
@@ -25,10 +26,11 @@ relations:
   inferred: false
   sources:
   - genesis-10
+  - 1-cronicas-1
   reason: Gé 10:2 lo pone el primero de los hijos de Jafet.
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified
 distinct_from:
 - gomer-hija-de-diblaim

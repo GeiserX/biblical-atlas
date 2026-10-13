@@ -12,6 +12,9 @@ sources:
 - it-mahli
 - exodo-6
 - numeros-3
+- 1-cronicas-6
+- 1-cronicas-23
+- 1-cronicas-24
 links:
 - title: 'Perspicacia: «Mahlí»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Mahl%C3%AD/
@@ -28,8 +31,11 @@ relations:
   - exodo-6
   - it-mahli
   - numeros-3
+  - 1-cronicas-6
+  - 1-cronicas-23
+  - 1-cronicas-24
   reason: 'Éx 6:19: hijo de Merarí.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: kin
   person: musi
@@ -39,8 +45,13 @@ relations:
   - exodo-6
   - it-mahli
   - numeros-3
+  - 1-cronicas-6
+  - 1-cronicas-23
+  - 1-cronicas-24
   reason: 'Éx 6:19: Musí es el otro hijo de Merarí.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified
+distinct_from:
+- mahli-hijo-de-musi

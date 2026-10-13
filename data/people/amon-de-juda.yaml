@@ -22,6 +22,7 @@ sources:
 - tnm-a6-b
 - mateo-1
 - 2-reyes-22
+- 1-cronicas-3
 links:
 - title: 'Perspicacia: «Amón»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Am%C3%B3n/
@@ -38,8 +39,9 @@ relations:
   - it-amon
   - 2-reyes-21
   - mateo-1
+  - 1-cronicas-3
   reason: Hijo de Manasés (2Re 21:18-19).
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: succeeds
   person: manases-de-juda
@@ -84,7 +86,7 @@ history:
   change: Perspicacia «Amón» daba 661-660 a.e.c.; A6-B, más reciente, empieza el reinado de Josías en 659.
   source: tnm-a6-b
 perspicacia: 1200000244#2
-checked_on: '2026-09-30'
+checked_on: '2026-10-12'
 status: verified
 distinct_from:
 - amon-jefe-de-samaria

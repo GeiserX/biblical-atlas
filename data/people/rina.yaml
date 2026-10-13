@@ -1,0 +1,28 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: rina
+name: Riná
+names:
+- name: Riná
+perspicacia: '1200003740'
+summary: Uno de los hijos de Shimón, descendiente de Judá.
+reason: Perspicacia «Riná»; 1Cr 4:20.
+sources:
+- it-rina
+- 1-cronicas-4
+links:
+- title: 'Perspicacia: «Riná»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Rin%C3%A1/
+  type: perspicacia
+relations:
+- type: kin
+  person: shimon
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-4
+  - it-rina
+  reason: '1Cr 4:20: uno de los hijos de Shimón.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

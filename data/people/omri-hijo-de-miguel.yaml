@@ -1,0 +1,40 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: omri-hijo-de-miguel
+name: Omrí
+names:
+- name: Omrí
+perspicacia: 1200003324#2
+disambiguation: Omrí hijo de Miguel, príncipe de Isacar con David; no el rey de Israel que fundó Samaria.
+distinct_from:
+- omri
+- omri-de-benjamin
+- omri-hijo-de-imri
+summary: Hijo de Miguel. En días del rey David encabezaba a los de Isacar como su príncipe.
+reason: Perspicacia «Omrí», núm. 2; 1Cr 27:18.
+sources:
+- it-omri
+- 1-cronicas-27
+links:
+- title: 'Perspicacia: «Omrí»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Omr%C3%AD/
+  type: perspicacia
+relations:
+- type: kin
+  person: miguel-padre-de-omri
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-27
+  reason: '1Cr 27:18: Omrí hijo de Miguel.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: holds_office
+  office: leader
+  inferred: false
+  sources:
+  - 1-cronicas-27
+  reason: '1Cr 27:18, 22: era el líder de Isacar, uno de los príncipes de las tribus de Israel.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

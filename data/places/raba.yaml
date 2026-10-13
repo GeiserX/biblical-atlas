@@ -32,6 +32,8 @@ sources:
 - 2-samuel-11
 - 2-samuel-12
 - 2-samuel-17
+- jeremias-49
+- 1-cronicas-20
 links:
 - title: 'Perspicacia: «Rabá»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Rab%C3%A1/
@@ -49,5 +51,5 @@ history:
 - date: '2026-09-29'
   change: La razón cita los pasajes del asedio y la conquista de Rabá (2Sa 11:1; 12:26-31).
   source: 2-samuel-12
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

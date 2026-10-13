@@ -1,0 +1,22 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: uzias-padre-de-jonatan
+name: Uzías
+names:
+- name: Uzías
+perspicacia: 1200004535#2
+disambiguation: Uzías, padre del Jonatán que guardaba almacenes de David; no el rey de Judá.
+distinct_from:
+- uzias
+- uzias-hijo-de-uriel
+summary: Padre de Jonatán, uno de los funcionarios del rey David.
+reason: Perspicacia «Uzías», núm. 2; 1Cr 27:25.
+sources:
+- it-uzias
+- 1-cronicas-27
+links:
+- title: 'Perspicacia: «Uzías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Uz%C3%ADas/
+  type: perspicacia
+relations: []
+checked_on: '2026-10-12'
+status: verified

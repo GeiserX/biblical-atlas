@@ -1,0 +1,32 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: zur-hijo-de-jeiel
+name: Zur
+names:
+- name: Zur
+perspicacia: 1200004771#2
+disambiguation: Zur hijo de Jeiel; no Zur, el rey madianita padre de Cozbí.
+distinct_from:
+- zur-rey-de-madian
+summary: Benjamita de Gabaón, hijo de Jeiel. Perspicacia cree que Ner, abuelo de Saúl, era su hermano.
+reason: Perspicacia «Zur», núm. 2; 1Cr 8:29-31.
+sources:
+- it-zur
+- 1-cronicas-8
+- 1-cronicas-9
+links:
+- title: 'Perspicacia: «Zur»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zur/
+  type: perspicacia
+relations:
+- type: kin
+  person: jeiel-de-gabaon
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  - 1-cronicas-9
+  reason: 1Cr 8:30, 31 lo cuenta entre los hijos de Jeiel.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

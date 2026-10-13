@@ -1,0 +1,42 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: selomot-descendiente-de-eliezer
+name: Selomot
+names:
+- name: Selomot
+- name: Selomit
+  note: Así se le llama en 1Cr 26:28; Perspicacia «Selomot», núm. 3, y «Selomit», núm. 3, lo dan por el mismo.
+perspicacia: 1200003995#3
+disambiguation: El tesorero de la línea de Eliezer (1Cr 26:25-28); no Selomit la danita, ni el izharita Selomit, ni Selomot
+  hijo de Simeí (Perspicacia «Selomot» y «Selomit»).
+summary: 'Levita de la línea de Eliezer, hijo de Moisés. Con sus hermanos guardó los tesoros de lo santificado: botín de guerra
+  y dones de David, Samuel, Saúl, Abner, Joab y los jefes.'
+reason: Perspicacia «Selomot», núm. 3, y «Selomit», núm. 3; 1Cr 26:25-28.
+sources:
+- it-selomot
+- it-selomit
+- 1-cronicas-26
+links:
+- title: 'Perspicacia: «Selomot»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Selomot/
+  type: perspicacia
+- title: 'Perspicacia: «Selomit»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Selomit/
+  type: perspicacia
+relations:
+- type: kin
+  person: zicri-descendiente-de-eliezer
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-26
+  - it-zicri
+  reason: '1Cr 26:25 lo da como hijo de Zicrí; Perspicacia «Zicrí», núm. 6: su padre o antepasado.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- selomit-descendiente-de-izhar
+- selomit-hija-de-dibri
+- selomit-hija-de-zorobabel
+- selomot-hijo-de-simei

@@ -1,0 +1,30 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: beera-de-aser
+name: Beerá
+names:
+- name: Beerá
+perspicacia: '1200000607'
+disambiguation: Beerá de Aser, de la casa de Zofá; no Beerá hijo de Baal, el jefe rubenita desterrado por Tiglat-Piléser III.
+distinct_from:
+- beera-hijo-de-baal
+summary: Aserita, hijo de Zofá y cabeza de familia de su tribu.
+reason: Perspicacia «Beerá»; 1Cr 7:30, 37, 40.
+sources:
+- it-beera
+- 1-cronicas-7
+links:
+- title: 'Perspicacia: «Beerá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Beer%C3%A1/
+  type: perspicacia
+relations:
+- type: kin
+  person: zofa
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-7
+  reason: 1Cr 7:36, 37 lo cuenta entre los hijos de Zofá.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

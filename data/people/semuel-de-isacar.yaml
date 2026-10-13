@@ -1,0 +1,32 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: semuel-de-isacar
+name: Semuel
+names:
+- name: Semuel
+perspicacia: 1200004009#1
+disambiguation: Semuel de Isacar, de la familia de Tolá; no Semuel hijo de Amihud, el jefe simeonita que ayudó a repartir
+  la tierra.
+distinct_from:
+- semuel-hijo-de-amihud
+summary: Isacarita de la familia de Tolá que encabezaba una casa de antepasados.
+reason: Perspicacia «Semuel», núm. 1; 1Cr 7:1, 2.
+sources:
+- it-semuel
+- 1-cronicas-7
+links:
+- title: 'Perspicacia: «Semuel»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Semuel/
+  type: perspicacia
+relations:
+- type: kin
+  person: tola-hijo-de-isacar
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-7
+  - it-semuel
+  reason: 1Cr 7:2 lo pone entre los hijos de Tolá; Perspicacia «Semuel» no precisa si era hijo o descendiente.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

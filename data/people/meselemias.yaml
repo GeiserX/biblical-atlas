@@ -1,0 +1,41 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: meselemias
+name: Meselemías
+names:
+- name: Meselemías
+perspicacia: '1200003009'
+summary: Levita coreíta, cabeza de una división de porteros cuando David organizó el servicio del santuario. Su hijo Zacarías
+  guardaba la entrada de la tienda de reunión.
+reason: Perspicacia «Meselemías»; 1Cr 9:21.
+sources:
+- it-meselemias
+- 1-cronicas-9
+- 1-cronicas-26
+links:
+- title: 'Perspicacia: «Meselemías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Meselem%C3%ADas/
+  type: perspicacia
+relations:
+- type: kin
+  person: core-padre-de-meselemias
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-26
+  - it-qore
+  reason: 1Cr 26:1 lo llama hijo de Coré (o Qoré, según la nota).
+  checked_on: '2026-10-12'
+  status: verified
+- type: same_as
+  person: selemias-portero
+  certainty: probable
+  inferred: true
+  sources:
+  - it-meselemias
+  - it-selemias
+  - 1-cronicas-26
+  reason: 'Perspicacia «Meselemías» y «Selemías», núm. 1: el Selemías de 1Cr 26:14 es probablemente él.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

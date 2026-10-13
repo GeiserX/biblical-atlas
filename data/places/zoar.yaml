@@ -64,6 +64,7 @@ sources:
 - genesis-14
 - genesis-19
 - isaias-15
+- jeremias-48
 links:
 - title: 'Perspicacia: «Zóar»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Z%C3%B3ar/
@@ -71,5 +72,5 @@ links:
 - title: Génesis 19 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/G%C3%A9nesis/19/
   type: bible
-checked_on: '2026-09-30'
+checked_on: '2026-10-12'
 status: verified

@@ -18,6 +18,7 @@ sources:
 - w06-salmos-libros-3-4
 - salmos-89
 - 1-reyes-4
+- 1-cronicas-2
 links:
 - title: 'Perspicacia: «Etán»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Et%C3%A1n/
@@ -38,13 +39,17 @@ relations:
   - it-ezrahita
   - it-etan
   - 1-reyes-4
+  - 1-cronicas-2
   reason: 1Cr 2:6 da a un Etán por hijo de Zérah; Perspicacia «Etán», núm. 1, cree probable que sea el ezrahíta de 1Re 4:31,
     y «Ezrahíta» iguala ezrahíta a zerahíta.
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-12'
   status: verified
 history:
 - date: '2026-09-30'
   change: 'La descendencia de Zérah es deducción de Perspicacia, que solo la da por probable: inferred pasa a true.'
   source: 1-reyes-4
-checked_on: '2026-09-30'
+checked_on: '2026-10-12'
 status: verified
+distinct_from:
+- etan-hijo-de-quisi
+- etan-hijo-de-zima

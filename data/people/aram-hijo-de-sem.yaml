@@ -11,6 +11,7 @@ reason: Perspicacia «Aram», núm. 1 y 5; Gé 10:22, 23.
 sources:
 - it-aram
 - genesis-10
+- 1-cronicas-1
 links:
 - title: 'Perspicacia: «Aram»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Aram/
@@ -25,10 +26,12 @@ relations:
   inferred: false
   sources:
   - genesis-10
+  - 1-cronicas-1
   reason: Gé 10:22 lo nombra el último de los hijos de Sem.
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-02'
+checked_on: '2026-10-12'
 status: verified
 distinct_from:
 - aram-hijo-de-quemuel
+- aram-hijo-de-somer

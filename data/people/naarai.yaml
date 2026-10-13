@@ -1,0 +1,49 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: naarai
+name: Naarái
+names:
+- name: Naarái
+- name: Naarai
+perspicacia: '1200003153'
+summary: Hijo de Ezbái y guerrero poderoso de David. Perspicacia ve posible que sea Paarái el arbita, de la lista paralela
+  de Samuel.
+reason: Perspicacia «Naarai»; 1Cr 11:37.
+sources:
+- it-naarai
+- 1-cronicas-11
+links:
+- title: 'Perspicacia: «Naarai»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Naarai/
+  type: perspicacia
+relations:
+- type: kin
+  person: ezbai
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-11
+  reason: '1Cr 11:37: Naarái hijo de Ezbái.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: same_as
+  person: paarai
+  certainty: possible
+  inferred: true
+  sources:
+  - 1-cronicas-11
+  - it-naarai
+  - it-paarai
+  reason: 'Perspicacia «Naarai» y «Paarai»: podría ser Paarái el arbita, de lo que parece la lista paralela de Samuel.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: tie
+  person: david
+  word: master
+  inferred: false
+  sources:
+  - 1-cronicas-11
+  reason: '1Cr 11:37: figura entre los valientes de David.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

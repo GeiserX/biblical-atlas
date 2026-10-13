@@ -39,6 +39,10 @@ sources:
 - 1-samuel-19
 - 1-samuel-25
 - 1-samuel-28
+- 1-cronicas-6
+- 1-cronicas-9
+- 1-cronicas-26
+- 1-cronicas-29
 links:
 - title: 'Perspicacia: «Samuel»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Samuel/
@@ -62,7 +66,7 @@ history:
   change: 'Acababa en 1078, con la muerte de Saúl. Ahora acaba c. 1080: muere antes de que David se refugie en Gat, donde
     pasa dieciséis meses hasta esa muerte.'
   source: 1-samuel-25
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified
 relations:
 - type: kin
@@ -71,8 +75,9 @@ relations:
   inferred: false
   sources:
   - 1-samuel-1
+  - 1-cronicas-6
   reason: '1Sa 1:19, 20: Ana concibió de Elcaná y dio a luz a Samuel.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: kin
   person: ana-madre-de-samuel
@@ -139,8 +144,9 @@ relations:
   sources:
   - 1-samuel-3
   - it-samuel
+  - 1-cronicas-9
   reason: Todo Israel, de Dan a Beer-Seba, supo que Jehová lo había acreditado como profeta (1Sa 3:20).
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: holds_office
   office: judge

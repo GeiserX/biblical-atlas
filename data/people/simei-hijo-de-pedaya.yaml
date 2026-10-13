@@ -1,0 +1,44 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: simei-hijo-de-pedaya
+name: Simeí
+names:
+- name: Simeí
+perspicacia: 1200004047#16
+disambiguation: Simeí hermano de Zorobabel (núm. 16 de Perspicacia); no el benjaminita que maldijo a David, ni el levita hijo
+  de Guersón, ni el simeonita hijo de Zacur.
+summary: Hijo de Pedaya y hermano del gobernador Zorobabel, de la línea de David en la tribu de Judá.
+reason: Perspicacia «Simeí», núm. 16; 1Cr 3:19.
+sources:
+- it-simei
+- 1-cronicas-3
+links:
+- title: 'Perspicacia: «Simeí»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sime%C3%AD/
+  type: perspicacia
+relations:
+- type: kin
+  person: pedaya-hijo-de-joaquin
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-3
+  - it-simei
+  reason: '1Cr 3:19: hijo de Pedaya.'
+  checked_on: '2026-10-12'
+  status: verified
+distinct_from:
+- simei-partidario-de-david
+- simei-hijo-de-guera
+- simei-hijo-de-ela
+- simei-hijo-de-guerson
+- sama-hijo-de-jese
+- simei-hijo-de-zacur
+- simei-hijo-de-jedutun
+- simei-descendiente-de-ladan
+- simei-el-ramatita
+- simei-hijo-de-gog
+- simei-hijo-de-jahat
+- simei-hijo-de-libni
+- simei-padre-de-jaquim
+checked_on: '2026-10-12'
+status: verified

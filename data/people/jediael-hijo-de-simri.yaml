@@ -1,0 +1,50 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jediael-hijo-de-simri
+name: Jediael
+names:
+- name: Jediael
+perspicacia: 1200002357#3
+disambiguation: Jediael hijo de Simrí, guerrero de David (1Cr 11:45); no el hijo de Benjamín ni el portero coreíta.
+distinct_from:
+- jediael-hijo-de-benjamin
+- jediael-hijo-de-meselemias
+summary: Hijo de Simrí y guerrero poderoso de David. Perspicacia ve posible que sea el jefe de Manasés que se unió a David
+  en Ziclag.
+reason: Perspicacia «Jediael», núm. 3; 1Cr 11:45.
+sources:
+- it-jediael
+- 1-cronicas-11
+links:
+- title: 'Perspicacia: «Jediael»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jediael/
+  type: perspicacia
+relations:
+- type: kin
+  person: simri-padre-de-jediael
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-11
+  reason: '1Cr 11:45: Jediael hijo de Simrí.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: joha-el-tizita
+  word: brother
+  inferred: false
+  sources:
+  - 1-cronicas-11
+  reason: 1Cr 11:45 llama a Johá el tizita hermano de Jediael.
+  checked_on: '2026-10-12'
+  status: verified
+- type: tie
+  person: david
+  word: master
+  inferred: false
+  sources:
+  - 1-cronicas-11
+  reason: '1Cr 11:45: figura entre los valientes de David.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

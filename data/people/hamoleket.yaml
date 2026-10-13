@@ -1,0 +1,17 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hamoleket
+name: Hamoléket
+names:
+- name: Hamoléket
+perspicacia: '1200001839'
+summary: Manasita, hermana de Galaad, que era nieto de Manasés. Sus hijos fueron Isod, Abí-Ézer y Mahlá.
+reason: Perspicacia «Hamoléket»; 1Cr 7:14, 17, 18.
+sources:
+- it-hamoleket
+- 1-cronicas-7
+links:
+- title: 'Perspicacia: «Hamoléket»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hamol%C3%A9ket/
+  type: perspicacia
+checked_on: '2026-10-12'
+status: verified

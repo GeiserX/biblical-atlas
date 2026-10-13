@@ -1,0 +1,41 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jaquim-de-tiempos-de-david
+name: Jaquim
+names:
+- name: Jaquim
+perspicacia: 1200002309#2
+disambiguation: El sacerdote de la duodécima división (1Cr 24:12); no Jaquim el benjaminita que numera Perspicacia «Jaquim»,
+  núm. 1.
+summary: Sacerdote cuya casa paterna sacó por sorteo el duodécimo de los 24 turnos del servicio en el reinado de David.
+reason: Perspicacia «Jaquim», núm. 2; 1Cr 24:12.
+sources:
+- it-jaquim
+- 1-cronicas-24
+links:
+- title: 'Perspicacia: «Jaquim»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jaquim/
+  type: perspicacia
+relations:
+- type: kin
+  person: aaron
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-24
+  - it-jaquim
+  reason: 1Cr 24:1 abre la lista de los descendientes de Aarón repartidos en turnos, y 24:12 da a esta casa el duodécimo.
+  checked_on: '2026-10-12'
+  status: verified
+- type: holds_office
+  office: priest
+  inferred: false
+  sources:
+  - 1-cronicas-24
+  - it-jaquim
+  reason: '1Cr 24:12: encabeza una de las casas sacerdotales de 24:4-6; Perspicacia «Jaquim» lo trata como sacerdote.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- jaquim-descendiente-de-simei

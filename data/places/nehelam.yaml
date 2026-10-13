@@ -1,0 +1,27 @@
+# biblical-atlas: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: nehelam
+name: Nehelam
+names:
+- name: Nehelam
+type: city
+lat: null
+lon: null
+precision: uncertain
+coord_source: null
+coord_url: null
+candidates: []
+summary: 'Quizá el lugar de origen del falso profeta Semaya. No se conoce ningún sitio con este nombre: puede ser el de una
+  familia, o un juego de palabras con el verbo hebreo soñar.'
+reason: 'Perspicacia «Nehelam»; Jer 29:24, 31, 32. Sin punto: jw.org no lo sitúa y OpenBible lo da por ubicación desconocida.'
+sources:
+- it-nehelam
+- jeremias-29
+links:
+- title: 'Perspicacia: «Nehelam»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Nehelam/
+  type: perspicacia
+- title: Jeremías 29 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/29/
+  type: bible
+checked_on: '2026-10-12'
+status: pending

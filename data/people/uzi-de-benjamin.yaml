@@ -1,0 +1,33 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: uzi-de-benjamin
+name: Uzí
+names:
+- name: Uzí
+perspicacia: 1200004533#2
+disambiguation: Uzí de Benjamín, de la línea de Bela; no el isacarita de la familia de Tolá ni los Uzí sacerdotes y levitas.
+distinct_from:
+- uzi-de-isacar
+- uzi-hijo-de-micri
+- uzi-hijo-de-buqui
+summary: Benjamita de la línea de Bela que encabezó una familia de su tribu.
+reason: Perspicacia «Uzí», núm. 2; 1Cr 7:6, 7.
+sources:
+- it-uzi
+- 1-cronicas-7
+links:
+- title: 'Perspicacia: «Uzí»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Uz%C3%AD/
+  type: perspicacia
+relations:
+- type: kin
+  person: bela-hijo-de-benjamin
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-7
+  - it-uzi
+  reason: 1Cr 7:7 lo pone entre los hijos de Bela; Perspicacia «Uzí», núm. 2, lo llama descendiente por esa línea.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

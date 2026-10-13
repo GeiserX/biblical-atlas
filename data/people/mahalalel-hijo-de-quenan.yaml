@@ -14,6 +14,7 @@ sources:
 - it-mahalalel
 - genesis-5
 - lucas-3
+- 1-cronicas-1
 links:
 - title: 'Perspicacia: «Mahalalel»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Mahalalel/
@@ -30,8 +31,9 @@ relations:
   - genesis-5
   - it-mahalalel
   - lucas-3
+  - 1-cronicas-1
   reason: 'Gé 5:12: Quenán tuvo a Mahalalel con 70 años.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

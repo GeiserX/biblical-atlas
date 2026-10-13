@@ -1,0 +1,33 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: eder-hijo-de-musi
+name: Éder
+names:
+- name: Éder
+perspicacia: 1200001257#2
+disambiguation: El merarita de la línea de Musí (1Cr 23:23; 24:30); no el benjaminita Éder que numera Perspicacia.
+summary: Levita merarita de la línea de Musí; su casa recibió tareas en el servicio cuando David organizó a los levitas.
+reason: Perspicacia «Éder», núm. 2; 1Cr 23:23; 24:30.
+sources:
+- it-eder
+- 1-cronicas-23
+- 1-cronicas-24
+links:
+- title: 'Perspicacia: «Éder»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/%C3%89der/
+  type: perspicacia
+relations:
+- type: kin
+  person: musi
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-23
+  - 1-cronicas-24
+  - it-eder
+  reason: 1Cr 23:23 y 24:30 lo nombran segundo de los hijos de Musí; Perspicacia «Éder», núm. 2, lo hace descendiente de Musí.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- eder-descendiente-de-berias

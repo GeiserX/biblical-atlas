@@ -1,0 +1,38 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: senazar
+name: Senazar
+names:
+- name: Senazar
+perspicacia: '1200004010'
+summary: Cuarto hijo de Jeconías que se nombra, nacido en el destierro. Perspicacia ve poco fundada la idea de que fuera Sesbazar.
+reason: Perspicacia «Senazar»; 1Cr 3:17, 18.
+sources:
+- it-senazar
+- it-sesbazar
+- 1-cronicas-3
+links:
+- title: 'Perspicacia: «Senazar»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Senazar/
+  type: perspicacia
+relations:
+- type: kin
+  person: joaquin
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-3
+  - it-senazar
+  reason: '1Cr 3:17, 18: uno de los hijos de Jeconías el prisionero.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: born_in
+  place: babilonia
+  inferred: true
+  sources:
+  - 1-cronicas-3
+  - it-senazar
+  reason: 1Cr 3:17, 18 lo cuenta entre los hijos de Jeconías el prisionero; Perspicacia «Senazar» dice que nació en el destierro.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

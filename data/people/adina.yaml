@@ -1,0 +1,36 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: adina
+name: Adiná
+names:
+- name: Adiná
+perspicacia: '1200000099'
+summary: Rubenita, hijo de Sizá. Guerrero de David y jefe de los rubenitas, al frente de treinta hombres.
+reason: Perspicacia «Adiná»; 1Cr 11:42.
+sources:
+- it-adina
+- 1-cronicas-11
+links:
+- title: 'Perspicacia: «Adiná»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Adin%C3%A1/
+  type: perspicacia
+relations:
+- type: kin
+  person: siza
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-11
+  reason: '1Cr 11:42: Adiná hijo de Sizá el rubenita.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: tie
+  person: david
+  word: master
+  inferred: false
+  sources:
+  - 1-cronicas-11
+  reason: '1Cr 11:42: figura entre los valientes de David; jefe de treinta rubenitas.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

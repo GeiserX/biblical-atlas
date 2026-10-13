@@ -23,6 +23,8 @@ sources:
 - josue-15
 - it-bet-marcabot
 - josue-19
+- 1-cronicas-2
+- 1-cronicas-4
 links:
 - title: 'Perspicacia: «Madmaná»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Madman%C3%A1/
@@ -36,5 +38,5 @@ links:
 - title: Josué 19 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Josu%C3%A9/19/
   type: bible
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

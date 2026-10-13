@@ -1,0 +1,38 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: zemira
+name: Zemirá
+names:
+- name: Zemirá
+perspicacia: '1200004693'
+summary: Benjamita de la casa de Béker y cabeza de familia. Con sus hermanos sumaba 20.200 guerreros.
+reason: Perspicacia «Zemirá»; 1Cr 7:6, 8.
+sources:
+- it-zemira
+- 1-cronicas-7
+links:
+- title: 'Perspicacia: «Zemirá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zemir%C3%A1/
+  type: perspicacia
+relations:
+- type: kin
+  person: beker-hijo-de-benjamin
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-7
+  - it-zemira
+  reason: 1Cr 7:8 lo pone entre los hijos de Béker; Perspicacia «Zemirá» no precisa si era hijo o descendiente.
+  checked_on: '2026-10-12'
+  status: verified
+- type: born_in
+  place: egipto
+  inferred: true
+  sources:
+  - 1-cronicas-7
+  - it-alemet
+  reason: 'Perspicacia «Alémet», núm. 1: los nueve hijos de Béker de 1Cr 7:8 nacieron en Egipto, después de la llegada de
+    Jacob en 1728 a.e.c.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

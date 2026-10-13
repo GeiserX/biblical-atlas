@@ -1,0 +1,37 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: joas-descendiente-de-sela
+name: Joás
+names:
+- name: Joás
+perspicacia: 1200002474#2
+disambiguation: Joás de la línea de Selá (núm. 2 de Perspicacia); no los reyes Jehoás ni el padre de Gedeón.
+summary: Descendiente de Judá por Selá que, según el texto, se casó con una mujer moabita.
+reason: Perspicacia «Joás»; 1Cr 4:22.
+sources:
+- it-joas
+- 1-cronicas-4
+links:
+- title: 'Perspicacia: «Joás»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jo%C3%A1s/
+  type: perspicacia
+relations:
+- type: kin
+  person: sela-hijo-de-juda
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-4
+  - it-joas
+  reason: '1Cr 4:21, 22: entre los «hijos» de Selá; Perspicacia lo da como descendiente suyo.'
+  checked_on: '2026-10-12'
+  status: verified
+distinct_from:
+- jehoas-de-israel
+- joas-padre-de-gedeon
+- joas-hijo-del-rey
+- jehoas-de-juda
+- joas-de-benjamin
+- joas-encargado-del-aceite
+- joas-hijo-de-semaa
+checked_on: '2026-10-12'
+status: verified

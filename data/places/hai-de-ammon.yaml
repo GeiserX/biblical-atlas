@@ -1,0 +1,26 @@
+# biblical-atlas: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: hai-de-ammon
+name: Hai
+names:
+- name: Hai
+type: city
+lat: null
+lon: null
+precision: uncertain
+coord_source: null
+coord_url: null
+candidates: []
+summary: Ciudad que Jeremías nombra junto a Hesbón en su mensaje contra los ammonitas, anunciando que ha sido destruida. No
+  se sabe dónde estaba. No es la Hai cananea cercana a Betel.
+reason: Perspicacia «Hai», núm. 2; Jer 49:3. Ni jw.org ni el texto permiten situarla, así que no damos punto ni zona.
+not_claimed:
+- 'Que sea la Hai cananea al este de Betel (hai): Perspicacia las trata como dos ciudades.'
+sources:
+- it-hai
+- jeremias-49
+links:
+- title: 'Perspicacia: «Hai»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hai/
+  type: perspicacia
+checked_on: '2026-10-12'
+status: pending

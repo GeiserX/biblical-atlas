@@ -1,0 +1,46 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: acab-hijo-de-colaya
+name: Acab
+names:
+- name: Acab
+perspicacia: 1200000138#2
+disambiguation: Falso profeta desterrado en Babilonia, hijo de Colaya; no es Acab, el rey de Israel hijo de Omrí.
+distinct_from:
+- acab
+summary: Falso profeta entre los desterrados de Babilonia, hijo de Colaya. Mentía en nombre de Jehová y cometía adulterio;
+  Jeremías anunció que Nabucodonosor lo asaría al fuego junto con Sedequías hijo de Maaseya.
+reason: Perspicacia «Acab», núm. 2, y «Qolaya», núm. 1; Jer 29:20-23.
+sources:
+- it-acab
+- it-qolaya
+- jeremias-29
+links:
+- title: 'Perspicacia: «Acab»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Acab/
+  type: perspicacia
+- title: Jeremías 29 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/29/
+  type: bible
+relations:
+- type: kin
+  person: colaya-padre-de-acab
+  word: father
+  sources:
+  - jeremias-29
+  - it-qolaya
+  reason: Jer 29:21 lo llama Acab hijo de Colaya.
+  inferred: false
+  checked_on: '2026-10-12'
+  status: verified
+- type: lived_in
+  place: babilonia
+  sources:
+  - jeremias-29
+  - it-acab
+  reason: 'Jer 29:20-22: profetizaba entre los desterrados de Judá en Babilonia; Perspicacia «Acab», núm. 2, lo llama exiliado
+    allí.'
+  inferred: false
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

@@ -13,6 +13,7 @@ sources:
 - it-imnah
 - genesis-46
 - numeros-26
+- 1-cronicas-7
 links:
 - title: 'Perspicacia: «Imnah»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Imnah/
@@ -29,8 +30,9 @@ relations:
   - genesis-46
   - it-imnah
   - numeros-26
+  - 1-cronicas-7
   reason: 'Gé 46:17: aparece entre los hijos de Aser.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: lived_in
   place: egipto
@@ -40,5 +42,16 @@ relations:
   reason: 'Gé 46:8, 26, 27: figura en la lista de la casa de Jacob que se instaló en Egipto.'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+- type: kin
+  person: serah
+  word: sister
+  inferred: false
+  sources:
+  - 1-cronicas-7
+  reason: '1Cr 7:30: Sérah era hermana de los cuatro hijos de Aser.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
 status: verified
+distinct_from:
+- imna-hijo-de-helem

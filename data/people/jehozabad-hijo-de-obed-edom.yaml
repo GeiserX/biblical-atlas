@@ -1,0 +1,32 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jehozabad-hijo-de-obed-edom
+name: Jehozabad
+names:
+- name: Jehozabad
+perspicacia: 1200002399#1
+disambiguation: El hijo de Obed-Edom, portero (1Cr 26:4); no Jehozabad, uno de los que mataron a Jehoás (Perspicacia «Jehozabad»,
+  núm. 1 y 3).
+summary: Levita, hijo segundo de Obed-Edom, que estaba entre los porteros del santuario en días de David.
+reason: Perspicacia «Jehozabad», núm. 1; 1Cr 26:4.
+sources:
+- it-jehozabad
+- 1-cronicas-26
+links:
+- title: 'Perspicacia: «Jehozabad»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jehozabad/
+  type: perspicacia
+relations:
+- type: kin
+  person: obed-edom-coreita
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-26
+  - it-jehozabad
+  reason: '1Cr 26:4: el segundo de los hijos de Obed-Edom.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- jehozabad-hijo-de-somer

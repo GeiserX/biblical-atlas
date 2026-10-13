@@ -16,6 +16,7 @@ sources:
 - it-salmos-libro
 - salmos-88
 - 1-reyes-4
+- 1-cronicas-2
 links:
 - title: 'Perspicacia: «Hemán»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hem%C3%A1n/
@@ -37,9 +38,10 @@ relations:
   - it-heman
   - 1-reyes-4
   - it-etan
+  - 1-cronicas-2
   reason: 1Cr 2:6 da a un Hemán por hijo de Zérah; Perspicacia «Etán», núm. 1, cree probable que sean los de 1Re 4:31, y «Ezrahíta»
     iguala ezrahíta a zerahíta.
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-12'
   status: verified
 - type: kin
   person: mahol
@@ -56,5 +58,7 @@ history:
 - date: '2026-09-30'
   change: 'La descendencia de Zérah es deducción de Perspicacia, que solo la da por probable: inferred pasa a true.'
   source: 1-reyes-4
-checked_on: '2026-09-30'
+checked_on: '2026-10-12'
 status: verified
+distinct_from:
+- heman-hijo-de-joel

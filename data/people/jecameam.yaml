@@ -1,0 +1,30 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jecameam
+name: Jecameam
+names:
+- name: Jecameam
+perspicacia: '1200002408'
+summary: Levita cohatita, cuarto hijo de Hebrón. Fundó una casa paterna que aún existía cuando David organizó a los levitas.
+reason: Perspicacia «Jeqameam»; 1Cr 23:19; 24:23.
+sources:
+- it-jeqameam
+- 1-cronicas-23
+- 1-cronicas-24
+links:
+- title: 'Perspicacia: «Jeqameam»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jeqameam/
+  type: perspicacia
+relations:
+- type: kin
+  person: hebron-hijo-de-cohat
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-23
+  - 1-cronicas-24
+  - it-jeqameam
+  reason: 1Cr 23:19 y 24:23 lo nombran cuarto de los hijos de Hebrón; Perspicacia «Jeqameam» lo llama cuarto hijo de Hebrón.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

@@ -18,8 +18,16 @@ people:
 - david
 - ahinoam-esposa-de-david
 - abigail-esposa-de-david
+- adna-de-manases
+- jozabad-de-manases-1
+- jediael-de-manases
+- miguel-de-manases
+- jozabad-de-manases-2
+- elihu-de-manases
+- ziletai-de-manases
 passages:
 - 1Sa 30:16-20
+- 1Cr 12:21
 summary: David cae sobre los amalequitas mientras celebran el botín y lucha con ellos hasta el anochecer siguiente; solo huyen
   400 en camellos. Recupera a sus dos esposas, a todos los cautivos y los bienes, y se queda con el ganado.
 reason: 1Sa 30:16-20; Perspicacia «Amaleq, amalequitas» y «Abigail», núm. 1. El sitio no tiene nombre; según «Besor», iban
@@ -30,6 +38,8 @@ sources:
 - it-abigail
 - it-besor
 - it-jonatan
+- 1-cronicas-12
+- it-adnah
 links:
 - title: 1 Samuel 30 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/1-samuel/30/
@@ -37,5 +47,5 @@ links:
 - title: 'Perspicacia: «Amaleq, amalequitas»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Amaleq-amalequitas/
   type: perspicacia
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

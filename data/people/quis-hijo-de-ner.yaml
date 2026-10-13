@@ -16,6 +16,9 @@ sources:
 - 1-samuel-10
 - 1-samuel-14
 - 2-samuel-21
+- 1-cronicas-8
+- 1-cronicas-9
+- 1-cronicas-12
 links:
 - title: 'Perspicacia: «Quis»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Quis/
@@ -27,7 +30,7 @@ history:
 - date: '2026-09-29'
   change: Se añade su tumba en Zelá, donde David enterró los huesos de Saúl y de Jonatán (2Sa 21:14).
   source: 2-samuel-21
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified
 relations:
 - type: kin
@@ -59,6 +62,11 @@ relations:
   - it-ner
   - it-abner
   - 1-samuel-14
+  - 1-cronicas-8
+  - 1-cronicas-9
   reason: 'Perspicacia «Ner» y «Abner»: 1 Crónicas hace a Quis hijo de Ner; 1Sa 14:51 solo da a Ner como padre de Abner.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
+distinct_from:
+- quis-hijo-de-jeiel
+- quis-hijo-de-mahli

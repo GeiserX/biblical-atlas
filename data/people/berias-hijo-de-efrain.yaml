@@ -1,0 +1,33 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: berias-hijo-de-efrain
+name: Berías
+names:
+- name: Berías
+perspicacia: 1200000653#2
+disambiguation: Berías hijo de Efraín; no Berías hijo de Aser, el benjamita hijo de Elpaal ni el levita.
+distinct_from:
+- berias-hijo-de-aser
+- berias-hijo-de-elpaal
+- berias-hijo-de-simei
+summary: Hijo de Efraín nacido después de que los hombres de Gat mataran a sus hermanos mayores. Su nombre recuerda la calamidad
+  de la casa.
+reason: Perspicacia «Berías», núm. 2; 1Cr 7:20-23.
+sources:
+- it-berias
+- 1-cronicas-7
+links:
+- title: 'Perspicacia: «Berías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ber%C3%ADas/
+  type: perspicacia
+relations:
+- type: kin
+  person: efrain
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-7
+  reason: '1Cr 7:23: Efraín tuvo este hijo con su esposa y lo llamó Berías.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

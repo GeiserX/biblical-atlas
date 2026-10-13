@@ -1,0 +1,43 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jediael-de-manases
+name: Jediael
+names:
+- name: Jediael
+perspicacia: 1200002357#2
+disambiguation: Jediael de Manasés (1Cr 12:20); quizá el valiente hijo de Simrí, no el hijo de Benjamín ni el portero.
+distinct_from:
+- jediael-hijo-de-benjamin
+- jediael-hijo-de-meselemias
+summary: Jefe de mil de Manasés que se pasó a David camino de Ziclag. Perspicacia ve posible que sea Jediael hijo de Simrí,
+  uno de los guerreros de David.
+reason: Perspicacia «Jediael», núm. 2; 1Cr 12:19-21.
+sources:
+- it-jediael
+- 1-cronicas-12
+links:
+- title: 'Perspicacia: «Jediael»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jediael/
+  type: perspicacia
+relations:
+- type: tie
+  person: david
+  word: master
+  inferred: false
+  sources:
+  - 1-cronicas-12
+  reason: '1Cr 12:20, 21: se pasó a David, lo ayudó contra los saqueadores y llegó a ser jefe en su ejército.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: same_as
+  person: jediael-hijo-de-simri
+  certainty: possible
+  inferred: true
+  sources:
+  - 1-cronicas-12
+  - it-jediael
+  reason: 'Perspicacia «Jediael», núms. 2 y 3: tal vez el jefe de Manasés de 1Cr 12:20 sea el valiente hijo de Simrí, de la
+    lista de David.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

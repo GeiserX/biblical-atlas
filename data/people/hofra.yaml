@@ -1,0 +1,34 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hofra
+name: Hofrá
+names:
+- name: Hofrá
+- name: Apries
+  note: Así lo llama Heródoto, según Perspicacia «Hofrá».
+perspicacia: '1200002070'
+summary: Faraón de Egipto cuando los judíos huidos de Judá vivían allí. Jehová anunció por Jeremías que lo entregaría a sus
+  enemigos, como señal de la calamidad que vendría sobre ellos.
+reason: Perspicacia «Hofrá», párr. 1 y 2; Jer 44:29, 30.
+sources:
+- it-hofra
+- jeremias-44
+links:
+- title: 'Perspicacia: «Hofrá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hofr%C3%A1/
+  type: perspicacia
+- title: Jeremías 44 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/44/
+  type: bible
+relations:
+- type: holds_office
+  place: egipto
+  office: king
+  sources:
+  - jeremias-44
+  - it-hofra
+  reason: Jer 44:30 lo llama el faraón Hofrá, rey de Egipto.
+  inferred: false
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

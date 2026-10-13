@@ -16,6 +16,7 @@ sources:
 - numeros-2
 - numeros-7
 - numeros-10
+- 1-cronicas-2
 links:
 - title: 'Perspicacia: «Nahsón»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Nahs%C3%B3n/
@@ -34,8 +35,9 @@ relations:
   - numeros-7
   - it-nahson
   - numeros-10
+  - 1-cronicas-2
   reason: Rut 4:20.
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: accompanies
   person: moises
@@ -55,5 +57,5 @@ relations:
   reason: 'Nú 1:4, 7, 44: fue uno de los doce jefes que estuvieron con Moisés y Aarón para registrar a Israel.'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

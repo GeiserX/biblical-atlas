@@ -1,0 +1,43 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jeremias-esconde-piedras-en-tahpanhes
+title: Jeremías esconde piedras en Tahpanhés
+date:
+  from: -606
+  to: -606
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 607 a.e.c.
+narrative_order:
+  series: jeremias
+  order: 43008
+places:
+- tahpanhes
+people:
+- jeremias-profeta
+present:
+- jeremias-profeta
+type: speech
+roles:
+  jeremias-profeta: spoke
+passages:
+- Jer 43:8-13
+summary: Ante los judíos, Jeremías tapa con argamasa unas piedras grandes junto a la casa del faraón y anuncia que Nabucodonosor
+  pondrá encima su trono, atacará Egipto y quemará los templos de sus dioses.
+reason: Jer 43:8-13. Perspicacia «Tahpanés, Tahpanhés, Tehafnehés» lo pone al llegar a la ciudad, en la huida de 607 (estudio
+  3, párr. 6); «Jeremías», núm. 6, lo cuenta entre sus representaciones proféticas.
+sources:
+- jeremias-43
+- it-tahpanhes
+- it-jeremias
+- si-3
+links:
+- title: Jeremías 43 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/43/
+  type: bible
+- title: 'Perspicacia: «Tahpanés, Tahpanhés, Tehafnehés»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Tahpan%C3%A9s-Tahpanh%C3%A9s-Tehafneh%C3%A9s/
+  type: perspicacia
+checked_on: '2026-10-12'
+status: verified

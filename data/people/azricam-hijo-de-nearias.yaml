@@ -1,0 +1,33 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: azricam-hijo-de-nearias
+name: Azricam
+names:
+- name: Azricam
+perspicacia: 1200000501#4
+summary: El tercero de los hijos de Nearías que se nombran, de la línea de David.
+reason: Perspicacia «Azriqam»; 1Cr 3:23.
+sources:
+- it-azriqam
+- 1-cronicas-3
+links:
+- title: 'Perspicacia: «Azriqam»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Azriqam/
+  type: perspicacia
+relations:
+- type: kin
+  person: nearias-hijo-de-semaya
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-3
+  - it-azriqam
+  reason: '1Cr 3:23: uno de los tres hijos de Nearías.'
+  checked_on: '2026-10-12'
+  status: verified
+disambiguation: 'Azricam núm. 4 de Perspicacia: descendiente de David, hijo de Nearías. No el benjamita hijo de Azel ni el
+  levita merarita.'
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- azricam-hijo-de-azel
+- azricam-hijo-de-hasabias

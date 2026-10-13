@@ -1,0 +1,41 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jehiel-hijo-de-hacmoni
+name: Jehiel
+names:
+- name: Jehiel
+perspicacia: 1200002366#3
+disambiguation: Jehiel hijo de Hacmoní, tutor de los hijos de David; no los levitas, sacerdotes y príncipes de ese nombre.
+summary: Hijo o descendiente de Hacmoní. Estaba con los hijos del rey David, quizá como su maestro.
+reason: Perspicacia «Jehiel», núm. 3; 1Cr 27:32.
+sources:
+- it-jehiel
+- 1-cronicas-27
+links:
+- title: 'Perspicacia: «Jehiel»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jehiel/
+  type: perspicacia
+relations:
+- type: kin
+  person: hacmoni-padre-de-jehiel
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-27
+  - it-jehiel
+  reason: '1Cr 27:32: Jehiel hijo de Hacmoní; Perspicacia «Jehiel», núm. 3, deja abierto si era hijo o descendiente.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: tie
+  person: david
+  word: master
+  inferred: false
+  sources:
+  - 1-cronicas-27
+  reason: '1Cr 27:32: era tutor de los hijos del rey.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- jehiel-musico
+- jehiel-descendiente-de-ladan

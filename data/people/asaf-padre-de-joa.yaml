@@ -8,6 +8,7 @@ disambiguation: Asaf padre de Joá, de tiempos de Ezequías. Perspicacia lo regi
   y del guarda del parque de Artajerjes.
 distinct_from:
 - asaf-hijo-de-berekias
+- asaf-descendiente-de-cohat
 summary: Padre de Joá, uno de los tres funcionarios que el rey Ezequías mandó a escuchar al rabsaqué en 732 a.e.c. La Biblia
   no cuenta nada más de él.
 reason: Perspicacia «Asaf», núm. 3; Is 36:3, 22; 2Re 18:18, 37.
@@ -27,5 +28,5 @@ links:
 - title: Isaías 36 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Isa%C3%ADas/36/
   type: bible
-checked_on: '2026-09-30'
+checked_on: '2026-10-12'
 status: verified

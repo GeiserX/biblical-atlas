@@ -40,6 +40,8 @@ sources:
 - josue-21
 - jueces-11
 - isaias-15
+- jeremias-48
+- 1-cronicas-6
 links:
 - title: 'Perspicacia: «Jáhaz»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/J%C3%A1haz/
@@ -51,5 +53,5 @@ history:
 - date: '2026-09-30'
   change: 'Añade que volvió a dominio moabita: Mesá dice haberla tomado e Isaías la nombra contra Moab (Perspicacia «Jáhaz»).'
   source: isaias-15
-checked_on: '2026-09-30'
+checked_on: '2026-10-12'
 status: verified

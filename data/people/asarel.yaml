@@ -1,0 +1,28 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: asarel
+name: Asarel
+names:
+- name: Asarel
+perspicacia: '1200000401'
+summary: El último de los cuatro hijos de Jehalelel, de Judá.
+reason: Perspicacia «Asarel»; 1Cr 4:16.
+sources:
+- it-asarel
+- 1-cronicas-4
+links:
+- title: 'Perspicacia: «Asarel»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Asarel/
+  type: perspicacia
+relations:
+- type: kin
+  person: jehalelel-de-juda
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-4
+  - it-asarel
+  reason: '1Cr 4:16: uno de los hijos de Jehalelel.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

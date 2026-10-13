@@ -1,0 +1,28 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: telah
+name: Télah
+names:
+- name: Télah
+perspicacia: '1200004347'
+summary: Efraimita, antepasado de Josué hijo de Nun.
+reason: Perspicacia «Télah»; 1Cr 7:20, 25-27.
+sources:
+- it-telah
+- 1-cronicas-7
+links:
+- title: 'Perspicacia: «Télah»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/T%C3%A9lah/
+  type: perspicacia
+relations:
+- type: kin
+  person: efrain
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-7
+  - it-telah
+  reason: 1Cr 7:20, 25 lo cuenta entre los descendientes de Efraín, en la línea que acaba en Josué.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

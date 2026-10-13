@@ -1,0 +1,37 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: selemias-hijo-de-cusi
+name: Selemías
+names:
+- name: Selemías
+perspicacia: 1200003990#2
+disambiguation: El abuelo de Jehudí; no Selemías hijo de Abdeel, ni el padre de Jehucal, ni el padre de Iriya.
+distinct_from:
+- selemias-hijo-de-abdeel
+- selemias-padre-de-jehucal
+- selemias-hijo-de-hananias
+- selemias-portero
+summary: Hijo de Cusí, padre de Netanías y abuelo de Jehudí, el oficial de la corte de Jehoiaquim.
+reason: Perspicacia «Selemías», núm. 2; Jer 36:14.
+sources:
+- it-selemias
+- jeremias-36
+links:
+- title: 'Perspicacia: «Selemías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Selem%C3%ADas/
+  type: perspicacia
+- title: Jeremías 36 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/36/
+  type: bible
+relations:
+- type: kin
+  person: cusi-antepasado-de-jehudi
+  word: father
+  inferred: false
+  sources:
+  - jeremias-36
+  - it-selemias
+  reason: Jer 36:14 lo llama Selemías hijo de Cusí; Perspicacia «Selemías», núm. 2, lo repite.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

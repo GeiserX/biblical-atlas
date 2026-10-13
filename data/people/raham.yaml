@@ -1,0 +1,29 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: raham
+name: Raham
+names:
+- name: Raham
+perspicacia: '1200003624'
+summary: Hijo de Sema, de la rama de Caleb en Judá. Fue padre de Jorqueam, que según Perspicacia era un lugar del que sería
+  fundador.
+reason: Perspicacia «Raham» y «Jorqueam»; 1Cr 2:44.
+sources:
+- it-raham
+- 1-cronicas-2
+- it-jorqueam
+links:
+- title: 'Perspicacia: «Raham»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Raham/
+  type: perspicacia
+relations:
+- type: kin
+  person: sema-hijo-de-hebron
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-2
+  reason: '1Cr 2:44: Sema fue padre de Raham.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

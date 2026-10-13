@@ -10,6 +10,7 @@ reason: Perspicacia «Éfer», núm. 1; Gé 25:4.
 sources:
 - it-efer
 - genesis-25
+- 1-cronicas-1
 links:
 - title: 'Perspicacia: «Éfer»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/%C3%89fer/
@@ -25,8 +26,12 @@ relations:
   sources:
   - it-efer
   - genesis-25
+  - 1-cronicas-1
   reason: Gé 25:4.
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified
+distinct_from:
+- efer-hijo-de-ezra
+- efer-de-manases

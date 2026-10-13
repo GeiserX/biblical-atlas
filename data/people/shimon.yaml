@@ -1,0 +1,18 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: shimon
+name: Shimón
+names:
+- name: Shimón
+perspicacia: '1200004050'
+summary: 'Judaíta, padre de cuatro hijos: Amnón, Riná, Ben-Hanán y Tilón.'
+reason: Perspicacia «Shimón»; 1Cr 4:20.
+sources:
+- it-shimon
+- 1-cronicas-4
+links:
+- title: 'Perspicacia: «Shimón»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Shim%C3%B3n/
+  type: perspicacia
+relations: []
+checked_on: '2026-10-12'
+status: verified

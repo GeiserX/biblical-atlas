@@ -1,0 +1,41 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: merayot-hijo-de-ahitub
+name: Merayot
+names:
+- name: Merayot
+perspicacia: 1200002989#2
+summary: Sacerdote, hijo de Ahitub, al parecer el padre de Sadoc en la línea de los sumos sacerdotes posterior a David.
+reason: Perspicacia «Merayot», núm. 2, y «Ahitub», núm. 3; 1Cr 9:11.
+sources:
+- it-merayot
+- it-ahitub
+- 1-cronicas-9
+links:
+- title: 'Perspicacia: «Merayot»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Merayot/
+  type: perspicacia
+relations:
+- type: kin
+  person: ahitub-padre-de-merayot
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-9
+  reason: '1Cr 9:11: Merayot, hijo de Ahitub.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: holds_office
+  office: priest
+  inferred: true
+  sources:
+  - 1-cronicas-9
+  - it-merayot
+  reason: Perspicacia «Merayot», núm. 2, lo llama sacerdote; 1Cr 9:11.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- merayot-hijo-de-zerahias
+disambiguation: 'Merayot núm. 2 de Perspicacia: sacerdote, hijo de Ahitub, al parecer el padre de Sadoc en la línea de los
+  sumos sacerdotes posterior a David. No los demás Merayot que numera Perspicacia.'

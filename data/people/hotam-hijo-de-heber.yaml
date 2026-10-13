@@ -1,0 +1,30 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hotam-hijo-de-heber
+name: Hotam
+names:
+- name: Hotam
+perspicacia: 1200002092#1
+disambiguation: Hotam hijo de Héber, aserita; no el Hotam aroerita cuyos hijos estuvieron entre los guerreros de David.
+summary: Aserita, hijo de Héber. Perspicacia cree que probablemente es el Hélem del versículo 35.
+reason: Perspicacia «Hotam», núm. 1; 1Cr 7:30-32.
+sources:
+- it-hotam
+- 1-cronicas-7
+links:
+- title: 'Perspicacia: «Hotam»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hotam/
+  type: perspicacia
+relations:
+- type: kin
+  person: heber-hijo-de-berias
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-7
+  reason: 1Cr 7:32 lo cuenta entre los hijos de Héber.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- hotam-el-aroerita

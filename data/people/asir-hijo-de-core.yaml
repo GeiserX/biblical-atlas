@@ -11,6 +11,7 @@ sources:
 - it-asir
 - it-elqana
 - exodo-6
+- 1-cronicas-6
 links:
 - title: 'Perspicacia: «Asir»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Asir/
@@ -26,8 +27,9 @@ relations:
   sources:
   - exodo-6
   - it-asir
+  - 1-cronicas-6
   reason: 'Éx 6:24: primer hijo de Coré.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: kin
   person: elcana-hijo-de-core
@@ -56,5 +58,7 @@ relations:
   reason: 'Perspicacia «Asir», núm. 1: levita nacido en Egipto; Éx 6:24 lo nombra primero entre los hijos de Coré.'
   checked_on: '2026-10-03'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified
+distinct_from:
+- asir-hijo-de-ebiasaf

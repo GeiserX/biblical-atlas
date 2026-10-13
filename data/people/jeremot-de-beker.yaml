@@ -1,0 +1,43 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jeremot-de-beker
+name: Jeremot
+names:
+- name: Jeremot
+perspicacia: 1200002423#1
+disambiguation: Jeremot de la casa de Béker; no Jeremot hijo de Berías, de la casa de Elpaal, ni los levitas Jeremot.
+distinct_from:
+- jeremot-hijo-de-berias
+- jerimot-hijo-de-heman
+- jeremot-hijo-de-musi
+summary: Benjamita de la línea de Béker, el hijo de Benjamín.
+reason: Perspicacia «Jeremot», núm. 1; 1Cr 7:6, 8.
+sources:
+- it-jeremot
+- 1-cronicas-7
+links:
+- title: 'Perspicacia: «Jeremot»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jeremot/
+  type: perspicacia
+relations:
+- type: kin
+  person: beker-hijo-de-benjamin
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-7
+  - it-jeremot
+  reason: 1Cr 7:8 lo pone entre los hijos de Béker; Perspicacia «Jeremot» no precisa si era hijo o descendiente.
+  checked_on: '2026-10-12'
+  status: verified
+- type: born_in
+  place: egipto
+  inferred: true
+  sources:
+  - 1-cronicas-7
+  - it-alemet
+  reason: 'Perspicacia «Alémet», núm. 1: los nueve hijos de Béker de 1Cr 7:8 nacieron en Egipto, después de la llegada de
+    Jacob en 1728 a.e.c.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

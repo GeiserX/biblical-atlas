@@ -1,0 +1,32 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: reaya-hijo-de-sobal
+name: Reayá
+names:
+- name: Reayá
+perspicacia: 1200003654#1
+disambiguation: Reayá hijo de Sobal (núm. 1 de Perspicacia); no el rubenita ni el antepasado de netineos.
+summary: Judaíta, padre de Jáhat y nacido de Sobal. Perspicacia ve posible que sea el Haroé de las genealogías de Judá, por
+  el parecido de los dos nombres en hebreo.
+reason: Perspicacia «Reayá»; 1Cr 4:2.
+sources:
+- it-reaya
+- 1-cronicas-4
+links:
+- title: 'Perspicacia: «Reayá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Reay%C3%A1/
+  type: perspicacia
+relations:
+- type: kin
+  person: sobal-hijo-de-hur
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-4
+  - it-reaya
+  reason: '1Cr 4:2: Reayá hijo de Sobal.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- reaya-hijo-de-miqueas

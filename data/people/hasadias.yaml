@@ -1,0 +1,29 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hasadias
+name: Hasadías
+names:
+- name: Hasadías
+perspicacia: '1200001899'
+summary: Hijo de Zorobabel. Perspicacia piensa que la lista parte en dos grupos a sus hijos quizá porque tenían madres distintas.
+reason: Perspicacia «Hasadías»; 1Cr 3:19, 20.
+sources:
+- it-hasadias
+- 1-cronicas-3
+links:
+- title: 'Perspicacia: «Hasadías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hasad%C3%ADas/
+  type: perspicacia
+relations:
+- type: kin
+  person: zorobabel
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-3
+  - it-hasadias
+  - it-zorobabel
+  reason: '1Cr 3:19, 20: uno de los hijos de Zorobabel.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

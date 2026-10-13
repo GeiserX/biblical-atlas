@@ -1,0 +1,22 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: azriel-padre-de-jerimot
+name: Azriel
+names:
+- name: Azriel
+perspicacia: 1200000500#1
+disambiguation: Azriel, padre de Jerimot el de Neftalí; no el cabeza de familia de Manasés.
+summary: Padre de Jerimot, que en tiempos de David era el príncipe de Neftalí.
+reason: Perspicacia «Azriel», núm. 1; 1Cr 27:19.
+sources:
+- it-azriel
+- 1-cronicas-27
+links:
+- title: 'Perspicacia: «Azriel»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Azriel/
+  type: perspicacia
+relations: []
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- azriel-de-manases
+- azriel-padre-de-seraya

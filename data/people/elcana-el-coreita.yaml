@@ -1,0 +1,59 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: elcana-el-coreita
+name: Elcaná
+names:
+- name: Elcaná
+perspicacia: 1200001326#6
+disambiguation: Elcaná el coreíta, guerrero con David en Ziclag (1Cr 12:6); no el padre de Samuel, el hijo de Coré ni el portero
+  del Arca.
+distinct_from:
+- elcana-hijo-de-core
+- elcana-hijo-de-jeroham
+- elcana-padre-de-asa
+- elcana-descendiente-de-core
+- elcana-hijo-de-mahat
+- elcana-padre-de-amasai
+summary: Coreíta que al parecer vivía en Benjamín y fue a ayudar a David a Ziclag cuando Saúl lo tenía restringido.
+reason: Perspicacia «Elqaná», núm. 6; 1Cr 12:6.
+sources:
+- it-elqana
+- 1-cronicas-12
+links:
+- title: 'Perspicacia: «Elqaná»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Elqan%C3%A1/
+  type: perspicacia
+relations:
+- type: kin
+  person: core-hijo-de-izhar
+  word: ancestor
+  inferred: true
+  sources:
+  - 1-cronicas-12
+  - it-coreita
+  reason: 1Cr 12:6 lo cuenta entre los coreítas; Perspicacia «Coreíta» da a los coreítas por descendientes de Coré y cita
+    este pasaje.
+  checked_on: '2026-10-12'
+  status: verified
+- type: tie
+  person: david
+  word: master
+  inferred: false
+  sources:
+  - 1-cronicas-12
+  reason: '1Cr 12:6: se unió a David y lo apoyó en la guerra.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: same_as
+  person: elcana-portero
+  certainty: possible
+  inferred: true
+  sources:
+  - 1-cronicas-12
+  - 1-cronicas-15
+  - it-elqana
+  reason: Perspicacia «Elqaná», núm. 7, ve posible que el portero del Arca (1Cr 15:23) sea el coreíta que se unió a David
+    en Ziclag (1Cr 12:6).
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

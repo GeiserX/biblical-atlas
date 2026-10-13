@@ -1,0 +1,25 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: azmavet-padre-de-jeziel
+name: Azmávet
+names:
+- name: Azmávet
+perspicacia: 1200000496#2
+disambiguation: Azmávet, padre de Jeziel y Pélet (1Cr 12:3); quizá el guerrero baharumita, no el hijo de Adiel ni el descendiente
+  de Jonatán.
+distinct_from:
+- azmavet-hijo-de-adiel
+- azmavet-hijo-de-jehoada
+- azmavet-hijo-de-jehoada
+summary: Padre de Jeziel y Pélet, benjaminitas que se unieron a David en Ziclag. Perspicacia ve posible que sea Azmávet el
+  baharumita.
+reason: Perspicacia «Azmávet», núm. 2; 1Cr 12:3.
+sources:
+- it-azmavet
+- 1-cronicas-12
+links:
+- title: 'Perspicacia: «Azmávet»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Azm%C3%A1vet/
+  type: perspicacia
+relations: []
+checked_on: '2026-10-12'
+status: verified

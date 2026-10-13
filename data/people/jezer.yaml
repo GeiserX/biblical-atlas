@@ -10,6 +10,7 @@ sources:
 - it-jezer
 - genesis-46
 - numeros-26
+- 1-cronicas-7
 links:
 - title: 'Perspicacia: «Jézer»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/J%C3%A9zer/
@@ -26,8 +27,9 @@ relations:
   - genesis-46
   - it-jezer
   - numeros-26
+  - 1-cronicas-7
   reason: 'Gé 46:24: aparece entre los hijos de Neftalí.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: lived_in
   place: egipto
@@ -37,5 +39,14 @@ relations:
   reason: 'Gé 46:8, 26, 27: figura en la lista de la casa de Jacob que se instaló en Egipto.'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+- type: kin
+  person: bilha
+  word: grandmother
+  inferred: false
+  sources:
+  - 1-cronicas-7
+  reason: 1Cr 7:13 llama a los hijos de Neftalí descendientes de Bilhá, madre de Neftalí.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
 status: verified

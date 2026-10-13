@@ -20,6 +20,7 @@ sources:
 - 2-cronicas-25
 - tnm-a6-a
 - 2-reyes-12
+- 1-cronicas-3
 links:
 - title: 'Perspicacia: «Amasías»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Amas%C3%ADas/
@@ -36,8 +37,9 @@ relations:
   - it-amasias
   - 2-reyes-14
   - 2-reyes-12
+  - 1-cronicas-3
   reason: Hijo de Jehoás (2Re 14:1).
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-12'
   status: verified
 - type: succeeds
   person: jehoas-de-juda
@@ -121,7 +123,9 @@ history:
 - date: '2026-09-30'
   change: Bet-Semes con la grafía de la TNM (2Re 14:11, 13), la misma del nombre de su ficha.
   source: 2-reyes-14
-checked_on: '2026-09-30'
+checked_on: '2026-10-12'
 status: verified
 distinct_from:
 - amasias-sacerdote-de-betel
+- amasias-padre-de-josa
+- amasias-hijo-de-hilquias

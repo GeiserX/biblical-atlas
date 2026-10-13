@@ -1,0 +1,26 @@
+# biblical-atlas: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: bet-gader
+name: Bet-Gader
+names:
+- name: Bet-Gader
+type: city
+lat: 31.632629
+lon: 35.092145
+precision: uncertain
+coord_source: openbible:a571072
+coord_url: https://www.openbible.info/geo/ancient/a571072/beth-gader
+coord_note: Khirbet Jedur, primera identificación de OpenBible, que la toma por otro nombre de Guéder; es el punto de Guedor.
+  Perspicacia solo dice que puede estar relacionada con Guéder.
+summary: Al parecer una ciudad de Judá, de la que Haref fue «padre». Perspicacia ve posible que tenga que ver con Guéder,
+  cuyo rey venció Josué.
+reason: 'Perspicacia «Bet-gader»; 1Cr 2:51. OpenBible: solo el punto.'
+sources:
+- it-bet-gader
+- openbible-geo
+- 1-cronicas-2
+links:
+- title: 'Perspicacia: «Bet-gader»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Bet-gader/
+  type: perspicacia
+checked_on: '2026-10-12'
+status: verified

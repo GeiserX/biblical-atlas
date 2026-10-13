@@ -1,0 +1,27 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: etni
+name: Etní
+names:
+- name: Etní
+perspicacia: '1200001441'
+summary: Levita guersonita, hijo de Zérah y padre de Malkiya; antepasado del músico Asaf.
+reason: Perspicacia «Etní»; 1Cr 6:41.
+sources:
+- it-etni
+- 1-cronicas-6
+links:
+- title: 'Perspicacia: «Etní»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Etn%C3%AD/
+  type: perspicacia
+relations:
+- type: kin
+  person: zerah-hijo-de-adaya
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-6
+  reason: '1Cr 6:41: Etní, «hijo de Zérah».'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

@@ -24,6 +24,8 @@ sources:
 - 2-samuel-5
 - 2-samuel-23
 - isaias-17
+- 1-cronicas-11
+- 1-cronicas-14
 links:
 - title: 'Perspicacia: «Refaím, Llanura baja de»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Refa%C3%ADm-Llanura-baja-de/
@@ -31,5 +33,5 @@ links:
 - title: Josué 18 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Josu%C3%A9/18/
   type: bible
-checked_on: '2026-09-30'
+checked_on: '2026-10-12'
 status: verified

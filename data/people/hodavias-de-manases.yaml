@@ -1,0 +1,40 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hodavias-de-manases
+name: Hodavías
+names:
+- name: Hodavías
+perspicacia: 1200002048#2
+disambiguation: Hodavías el manasita del este del Jordán (1Cr 5:23, 24); no es ninguno de los otros Hodavías que numera Perspicacia
+  «Hodavías».
+distinct_from:
+- hodavias-hijo-de-elioenai
+- hodavias-hijo-de-hasenua
+summary: Uno de los siete jefes de familia manasitas del este del Jordán.
+reason: Perspicacia «Hodavías», núm. 2; 1Cr 5:23, 24.
+sources:
+- it-hodavias
+- 1-cronicas-5
+links:
+- title: 'Perspicacia: «Hodavías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hodav%C3%ADas/
+  type: perspicacia
+relations:
+- type: lived_in
+  place: basan
+  inferred: false
+  sources:
+  - 1-cronicas-5
+  reason: '1Cr 5:23: los manasitas del este ocupaban la tierra de Basán a Baal-Hermón y el Hermón.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: manases-hijo-de-jose
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-5
+  reason: '1Cr 5:23, 24: jefe de una familia manasita del este del Jordán.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

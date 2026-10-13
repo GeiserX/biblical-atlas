@@ -1,0 +1,51 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: miqueas-uzielita
+name: Miqueas
+names:
+- name: Miqueas
+perspicacia: 1200003032#2
+disambiguation: El uzielita de 1Cr 23:20 y 24:24, 25; no el profeta de Moréset, ni Miqueas de Efraín, ni los demás que numera
+  Perspicacia.
+distinct_from:
+- miqueas-profeta
+- miqueas-de-efrain
+- micaya-padre-de-acbor
+- mica-hijo-de-mefiboset
+- miqueas-hijo-de-simei
+summary: Levita cohatita, jefe de la familia de Uziel cuando David repartió las tareas de los levitas; su hermano Isías era
+  el segundo. Tuvo por hijo a Samir.
+reason: Perspicacia «Miqueas», núm. 2; 1Cr 23:20; 24:24, 25.
+sources:
+- it-miqueas
+- 1-cronicas-23
+- 1-cronicas-24
+links:
+- title: 'Perspicacia: «Miqueas»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Miqueas/
+  type: perspicacia
+relations:
+- type: kin
+  person: uziel-hijo-de-cohat
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-23
+  - 1-cronicas-24
+  - it-miqueas
+  reason: 1Cr 23:20 y 24:24 lo ponen el primero de los hijos de Uziel; Perspicacia «Miqueas», núm. 2, lo hace de la familia
+    de Uziel.
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: isias-uzielita
+  word: brother
+  inferred: false
+  sources:
+  - 1-cronicas-23
+  - 1-cronicas-24
+  - it-miqueas
+  reason: 1Cr 23:20 los nombra juntos y 24:25 dice que Isías era hermano de Miqueas.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

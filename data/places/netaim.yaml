@@ -1,0 +1,24 @@
+# biblical-atlas: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: netaim
+name: Netaim
+names:
+- name: Netaim
+type: city
+lat: 31.678795
+lon: 34.933932
+precision: uncertain
+coord_source: openbible:aaa0f54
+coord_url: https://www.openbible.info/geo/ancient/aaa0f54/netaim
+coord_note: Khirbet en-Nuweiti, primera identificación de OpenBible; Perspicacia dice que no se conoce su ubicación.
+summary: Lugar de Judá donde vivían alfareros que trabajaban para el rey, descendientes de Selá. Hoy no se sabe dónde estaba.
+reason: 'Perspicacia «Netaim»; 1Cr 4:23. Coordenada de OpenBible: solo tomamos el punto.'
+sources:
+- it-netaim
+- openbible-geo
+- 1-cronicas-4
+links:
+- title: 'Perspicacia: «Netaim»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Netaim/
+  type: perspicacia
+checked_on: '2026-10-12'
+status: verified

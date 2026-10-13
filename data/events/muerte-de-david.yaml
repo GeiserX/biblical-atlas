@@ -24,6 +24,7 @@ roles:
   david: died
 passages:
 - 1Re 2:10, 11
+- 1Cr 29:26-28
 summary: David muere tras reinar cuarenta años sobre Israel, siete en Hebrón y treinta y tres en Jerusalén, y lo entierran
   en la Ciudad de David. Salomón ocupa su trono.
 reason: '1Re 2:10-12; Perspicacia «David», apartado «Fin del reinado». Estudio 3, párr. 4: Salomón empezó a reinar antes de
@@ -32,9 +33,10 @@ sources:
 - 1-reyes-2
 - it-david
 - si-3
+- 1-cronicas-29
 links:
 - title: 1 Reyes 2 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/1-reyes/2/
   type: bible
-checked_on: '2026-09-30'
+checked_on: '2026-10-12'
 status: verified

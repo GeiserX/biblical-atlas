@@ -1,0 +1,20 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: abdeel
+name: Abdeel
+names:
+- name: Abdeel
+perspicacia: '1200000013'
+summary: Padre de Selemías, al que Jehoiaquim encargó, junto con Jerahmeel y Seraya, la detención de Jeremías y de Baruc.
+reason: Perspicacia «Abdeel»; Jer 36:26.
+sources:
+- it-abdeel
+- jeremias-36
+links:
+- title: 'Perspicacia: «Abdeel»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Abdeel/
+  type: perspicacia
+- title: Jeremías 36 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/36/
+  type: bible
+checked_on: '2026-10-12'
+status: verified

@@ -1,0 +1,43 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: eliezer-hijo-de-zicri
+name: Eliezer
+names:
+- name: Eliezer
+perspicacia: 1200001304#5
+disambiguation: Eliezer hijo de Zicrí, caudillo de Rubén con David; no el de Damasco, ni el hijo de Moisés, ni el antepasado
+  de Jesús.
+distinct_from:
+- eliezer-hijo-de-moises
+- eliezer-de-damasco
+- eliezer-hijo-de-jorim
+- eliezer-trompetista
+- eliezer-hijo-de-beker
+summary: Rubenita, hijo de Zicrí. En días del rey David encabezaba a los de Rubén como su príncipe.
+reason: Perspicacia «Eliezer», núm. 5; 1Cr 27:16.
+sources:
+- it-eliezer
+- 1-cronicas-27
+links:
+- title: 'Perspicacia: «Eliezer»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Eliezer/
+  type: perspicacia
+relations:
+- type: kin
+  person: zicri-padre-de-eliezer
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-27
+  reason: '1Cr 27:16: Eliezer hijo de Zicrí.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: holds_office
+  office: leader
+  inferred: false
+  sources:
+  - 1-cronicas-27
+  reason: '1Cr 27:16, 22: era el líder de los rubenitas, uno de los príncipes de las tribus de Israel.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

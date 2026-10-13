@@ -10,6 +10,7 @@ reason: Perspicacia «Zibeón» y «Horeo», párr. 2; Gé 36:2, 20, 24, 29.
 sources:
 - it-zibeon
 - genesis-36
+- 1-cronicas-1
 links:
 - title: 'Perspicacia: «Zibeón»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zibe%C3%B3n/
@@ -25,8 +26,9 @@ relations:
   sources:
   - it-seir
   - genesis-36
+  - 1-cronicas-1
   reason: 'Gé 36:20: hijo de Seír el horeo.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: lived_in
   place: seir
@@ -37,5 +39,5 @@ relations:
   reason: 'Gé 36:29, 30: jeque de los horeos en la tierra de Seír.'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

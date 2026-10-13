@@ -19,6 +19,8 @@ reason: Perspicacia «Ismael», núm. 5; 2Re 25:23-25; Jer 40:13-41:15.
 sources:
 - it-ismael
 - 2-reyes-25
+- jeremias-40
+- jeremias-41
 links:
 - title: 'Perspicacia: «Ismael»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ismael/
@@ -34,10 +36,51 @@ relations:
   sources:
   - 2-reyes-25
   - it-ismael
+  - jeremias-40
+  - jeremias-41
   reason: '2Re 25:23, 25: Ismael hijo de Netanías.'
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-12'
+  status: verified
+- type: tie
+  person: guedalias
+  word: enemy
+  date:
+    from: -606
+    to: -606
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 607 a.e.c.
+  inferred: false
+  sources:
+  - jeremias-40
+  - it-ismael
+  - jeremias-41
+  reason: 'Jer 40:14: lo enviaron para matar a Guedalías; Jer 41:2 cuenta que lo mató. Perspicacia «Ismael», núm. 5.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: tie
+  person: guedalias
+  word: host
+  date:
+    from: -606
+    to: -606
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 607 a.e.c.
+  inferred: true
+  sources:
+  - jeremias-41
+  - it-ismael
+  reason: 'Jer 41:1, 2: lo mató mientras comían juntos en Mizpá; Perspicacia «Ismael», núm. 5, dice que Guedalías los agasajaba
+    con una comida.'
+  checked_on: '2026-10-12'
   status: verified
 distinct_from:
 - ismael-hijo-de-abrahan
-checked_on: '2026-09-30'
+- ismael-hijo-de-azel
+checked_on: '2026-10-12'
 status: verified

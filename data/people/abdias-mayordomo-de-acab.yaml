@@ -7,6 +7,12 @@ perspicacia: 1200003287#4
 disambiguation: El mayordomo de la casa de Acab; no el profeta Abdías, escritor del libro, ni los otros once de Perspicacia.
 distinct_from:
 - abdias-profeta
+- abdias-hijo-de-arnan
+- abdias-hijo-de-azel
+- abdias-hijo-de-izrahias
+- abdias-hijo-de-semaya
+- abdias-el-gadita
+- abdias-padre-de-ismaya
 summary: Encargado de la casa del rey Acab, que temía mucho a Jehová. Cuando Jezabel mataba a los profetas, escondió a cien
   en cuevas y los sustentó. En la sequía se encontró con Elías y avisó al rey.
 reason: Perspicacia «Abdías», núm. 4; 1Re 18:3-16.
@@ -31,5 +37,5 @@ relations:
   reason: '1Re 18:3, 8-10: llevaba la casa de Acab y lo llama su señor; Perspicacia «Abdías», núm. 4, llama a Acab su amo.'
   checked_on: '2026-09-30'
   status: verified
-checked_on: '2026-09-30'
+checked_on: '2026-10-12'
 status: verified

@@ -1,0 +1,45 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jehoiaquim-mata-al-profeta-uriya
+title: Jehoiaquim manda traer de Egipto al profeta Uriya y lo mata
+type: death
+date:
+  from: -627
+  to: -627
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 628 a.e.c. (al principio del reinado de Jehoiaquim)
+narrative_order:
+  series: jeremias
+  order: 26000
+places:
+- jerusalen
+- egipto
+people:
+- uriya-hijo-de-semaya
+- jehoiaquim
+- elnatan-hijo-de-acbor
+present: []
+roles:
+  uriya-hijo-de-semaya: died
+passages:
+- Jer 26:20-23
+summary: Uriya, de Quiryat-Jearim, anuncia contra Jerusalén lo mismo que Jeremías. Cuando el rey decide matarlo huye a Egipto,
+  pero Elnatán hijo de Acbor y otros lo traen, y Jehoiaquim lo mata a espada.
+reason: 'Perspicacia «Jehoiaquim», párr. 3: pasó antes de que amenazaran a Jeremías al principio del reinado (628, tabla A6-B);
+  por eso va antes del juicio en la serie. El texto no nombra el sitio de la muerte: nadie queda situado.'
+sources:
+- jeremias-26
+- it-jehoiaquim
+- it-uriya
+- tnm-a6-b
+links:
+- title: Jeremías 26 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/26/
+  type: bible
+- title: 'Perspicacia: «Uriya»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Uriya/
+  type: perspicacia
+checked_on: '2026-10-12'
+status: verified

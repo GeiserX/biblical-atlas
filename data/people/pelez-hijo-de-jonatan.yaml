@@ -1,0 +1,30 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: pelez-hijo-de-jonatan
+name: Pélez
+names:
+- name: Pélez
+perspicacia: 1200003423#2
+summary: Judaíta de la rama de Jerahmeel; su padre fue Jonatán, hijo de Jadá.
+reason: Perspicacia «Pélez», núm. 2; 1Cr 2:33.
+sources:
+- it-pelez
+- 1-cronicas-2
+links:
+- title: 'Perspicacia: «Pélez»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/P%C3%A9lez/
+  type: perspicacia
+relations:
+- type: kin
+  person: jonatan-hijo-de-jada
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-2
+  reason: '1Cr 2:33: hijo de Jonatán.'
+  checked_on: '2026-10-12'
+  status: verified
+disambiguation: Pélez hijo de Jonatán, de Judá; no Pélez el rubenita, padre de On.
+distinct_from:
+- pelez-padre-de-on
+checked_on: '2026-10-12'
+status: verified

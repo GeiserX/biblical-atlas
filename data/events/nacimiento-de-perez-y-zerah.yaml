@@ -23,6 +23,7 @@ roles:
 present: []
 passages:
 - Gé 38:27-30
+- 1Cr 2:4
 summary: En el parto, Zérah saca la mano y la partera le ata un hilo escarlata, pero Pérez sale antes. Por ese desgarro lo
   llaman Pérez.
 reason: 'Tras la venta de José (1750 a.e.c., estudio 3) y antes de que Pérez baje a Egipto en 1728 (Perspicacia «Pérez»). Sin
@@ -38,5 +39,5 @@ links:
 - title: Génesis 38 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/G%C3%A9nesis/38/
   type: bible
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

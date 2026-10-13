@@ -3,14 +3,17 @@ id: saf
 name: Saf
 names:
 - name: Saf
+- name: Sipái
+  note: Así lo escribe la TNM en 1Cr 20:4.
 - name: Sipai
-  note: Así lo llama 1Cr 20:4; Perspicacia da los dos nombres.
+  note: Grafía de Perspicacia «Saf», «Sibecai» y «Guézer».
 perspicacia: '1200003834'
 summary: Gigante de los refaím que peleó con los filisteos contra Israel. Sibecái el husatita lo mató en Gob.
 reason: Perspicacia «Saf»; 2Sa 21:18, 22.
 sources:
 - it-saf
 - 2-samuel-21
+- 1-cronicas-20
 links:
 - title: 'Perspicacia: «Saf»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Saf/
@@ -25,5 +28,18 @@ relations:
   reason: '2Sa 21:18: Sibecái lo mató en la guerra de Gob.'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+- type: born_in
+  place: gat
+  inferred: false
+  sources:
+  - 1-cronicas-20
+  - it-refaim
+  reason: 1Cr 20:8 lo cuenta entre los descendientes de los refaím en Gat; Perspicacia «Refaím» entiende que nacieron allí.
+  checked_on: '2026-10-12'
+  status: verified
+history:
+- date: '2026-10-12'
+  change: La TNM escribe Sipái, con tilde, en 1Cr 20:4; Sipai queda como la grafía de Perspicacia.
+  source: 1-cronicas-20
+checked_on: '2026-10-12'
 status: verified

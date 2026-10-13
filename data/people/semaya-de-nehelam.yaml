@@ -1,0 +1,65 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: semaya-de-nehelam
+name: Semaya
+names:
+- name: Semaya
+perspicacia: 1200004000#13
+disambiguation: El falso profeta de Nehelam desterrado en Babilonia que escribió contra Jeremías; no es el profeta de Rehoboam
+  ni el padre del profeta Uriya.
+distinct_from:
+- semaya-profeta
+- semaya-padre-de-uriya
+- semaya-padre-de-delaya
+- semaya-hijo-de-galal
+- semaya-hijo-de-hasub
+- semaya-hijo-de-joel
+- semaya-hijo-de-netanel
+- semaya-hijo-de-obed-edom
+- semaya-hijo-de-secanias
+- semaya-jefe-de-la-casa-de-elizafan
+- semaya-simeonita
+summary: Falso profeta de Nehelam llevado a Babilonia con Joaquín. Escribió a Sofonías y a los sacerdotes de Jerusalén para
+  que pusieran a Jeremías en el cepo; Jehová anunció que ni él ni los suyos verían la vuelta.
+reason: Perspicacia «Semaya», núm. 13; Jer 29:24-32.
+sources:
+- it-semaya
+- jeremias-29
+links:
+- title: 'Perspicacia: «Semaya»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Semaya/
+  type: perspicacia
+- title: Jeremías 29 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/29/
+  type: bible
+relations:
+- type: lived_in
+  place: babilonia
+  sources:
+  - jeremias-29
+  - it-semaya
+  reason: 'Jer 29:28, 31: escribía desde Babilonia a Jerusalén y profetizaba a los desterrados. Perspicacia «Semaya», núm.
+    13: fue al destierro con Joaquín en 617.'
+  inferred: false
+  checked_on: '2026-10-12'
+  status: verified
+- type: tie
+  person: jeremias-profeta
+  word: enemy
+  date:
+    from: -616
+    to: -606
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 617 y 607 a.e.c. (tiempo narrativo: tras la carta de Jeremías a los desterrados y antes de caer Jerusalén)'
+  inferred: true
+  sources:
+  - jeremias-29
+  - it-semaya
+  reason: 'Jer 29:24-28: pidió que reprendieran a Jeremías y lo pusieran en el cepo. Perspicacia «Semaya», núm. 13, lo llama
+    opositor de Jeremías.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

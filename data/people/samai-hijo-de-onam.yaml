@@ -1,0 +1,40 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: samai-hijo-de-onam
+name: Samái
+names:
+- name: Samái
+perspicacia: 1200003943#1
+summary: Hijo de Onam, de la rama de Jerahmeel en Judá, y padre de Nadab y Abisur.
+reason: Perspicacia «Samai», núm. 1; 1Cr 2:28.
+sources:
+- it-samai
+- 1-cronicas-2
+links:
+- title: 'Perspicacia: «Samai»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Samai/
+  type: perspicacia
+relations:
+- type: kin
+  person: onam-hijo-de-jerahmeel
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-2
+  reason: '1Cr 2:28: hijo de Onam.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: jada
+  word: brother
+  inferred: false
+  sources:
+  - 1-cronicas-2
+  reason: '1Cr 2:28, 32: Jadá, el hermano de Samái.'
+  checked_on: '2026-10-12'
+  status: verified
+disambiguation: Samái hijo de Onam, de la rama de Jerahmeel; no Samái hijo de Réquem, de la rama de Caleb.
+distinct_from:
+- samai-hijo-de-requem
+- samai-hijo-de-mered
+checked_on: '2026-10-12'
+status: verified

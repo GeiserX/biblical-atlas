@@ -25,15 +25,17 @@ people:
 passages:
 - 1Sa 31:8-10
 - 1Cr 10:8-10
-summary: Al día siguiente, los filisteos encuentran los cuerpos en Guilboa. Cortan la cabeza a Saúl, anuncian la victoria
-  por su tierra, dejan su armadura en el templo de Astoret y cuelgan los cadáveres en la muralla de Bet-San.
-reason: '1Sa 31:8-10; Perspicacia «Bet-seán, Bet-san», párr. 6: la ciudad era filistea. Solo hay cadáveres, así que el suceso
-  no sitúa a nadie. Día siguiente a la batalla de 1078 (Perspicacia «Jonatán», núm. 2).'
+summary: Al día siguiente, los filisteos hallan los cuerpos en Guilboa, decapitan a Saúl y difunden la noticia. Dejan su armadura
+  en el templo de Astoret, su cabeza en el de Dagón y los cadáveres en la muralla de Bet-San.
+reason: '1Sa 31:8-10; 1Cr 10:10 y Perspicacia «Dagón»: la cabeza quedó en su templo. Perspicacia «Bet-seán, Bet-san», párr.
+  6: ciudad filistea. Solo hay cadáveres: no sitúa a nadie. Día siguiente a la batalla de 1078 («Jonatán», núm. 2).'
 sources:
 - 1-samuel-31
 - it-bet-sean
 - it-astoret
 - it-jonatan
+- 1-cronicas-10
+- it-dagon
 links:
 - title: 1 Samuel 31 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/1-samuel/31/
@@ -44,5 +46,12 @@ links:
 - title: 'Perspicacia: «Astoret»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Astoret/
   type: perspicacia
-checked_on: '2026-09-29'
+history:
+- date: '2026-10-12'
+  change: Se añade la cabeza de Saúl en el templo de Dagón, que cuenta 1Cr 10:10 y recoge Perspicacia «Dagón».
+  source: 1-cronicas-10
+- date: '2026-10-12'
+  change: La razón cita 1Cr 10:10 y Perspicacia «Dagón» por la cabeza de Saúl.
+  source: 1-cronicas-10
+checked_on: '2026-10-12'
 status: verified

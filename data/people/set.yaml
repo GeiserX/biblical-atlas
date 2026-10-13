@@ -20,6 +20,7 @@ sources:
 - genesis-5
 - genesis-4
 - lucas-3
+- 1-cronicas-1
 links:
 - title: 'Perspicacia: «Set»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Set/
@@ -36,8 +37,9 @@ relations:
   - it-set
   - genesis-4
   - lucas-3
+  - 1-cronicas-1
   reason: 'Perspicacia «Set», párr. 2: Adán y Eva lo tuvieron cuando Adán tenía 130 años (Gé 4:25; 5:3).'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: kin
   person: eva
@@ -50,5 +52,5 @@ relations:
   checked_on: '2026-09-29'
   status: verified
 perspicacia: '1200003911'
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

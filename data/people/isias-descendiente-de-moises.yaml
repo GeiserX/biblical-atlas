@@ -1,0 +1,33 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: isias-descendiente-de-moises
+name: Isías
+names:
+- name: Isías
+perspicacia: 1200002231#4
+disambiguation: El descendiente de Rehabías (1Cr 24:21); no Isías el uzielita, hermano de Miqueas.
+distinct_from:
+- isias-uzielita
+- isias-hijo-de-izrahias
+- isias-el-coreita
+summary: Levita de los días de David, descendiente de Moisés por medio de Rehabías; era el jefe de esa línea.
+reason: Perspicacia «Isías», núm. 4; 1Cr 24:21.
+sources:
+- it-isias
+- 1-cronicas-24
+links:
+- title: 'Perspicacia: «Isías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Is%C3%ADas/
+  type: perspicacia
+relations:
+- type: kin
+  person: rehabias
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-24
+  - it-isias
+  reason: 1Cr 24:21 lo hace jefe de los hijos de Rehabías; Perspicacia «Isías», núm. 4, lo llama descendiente de Moisés.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

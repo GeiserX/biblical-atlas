@@ -1,0 +1,18 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: bitias
+name: Bitías
+names:
+- name: Bitías
+perspicacia: '1200000753'
+summary: Hija del faraón que se casó con Méred, de la tribu de Judá. Su nombre, egipcio, significaría reina.
+reason: Perspicacia «Bitías»; 1Cr 4:18.
+sources:
+- it-bitias
+- 1-cronicas-4
+links:
+- title: 'Perspicacia: «Bitías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Bit%C3%ADas/
+  type: perspicacia
+relations: []
+checked_on: '2026-10-12'
+status: verified

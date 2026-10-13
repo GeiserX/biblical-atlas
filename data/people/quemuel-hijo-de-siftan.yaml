@@ -7,6 +7,7 @@ perspicacia: 1200002587#2
 disambiguation: Quemuel hijo de Siftán, el jefe de Efraín; no Quemuel hijo de Nacor ni el levita padre de Hasabías.
 distinct_from:
 - quemuel-hijo-de-nacor
+- quemuel-padre-de-hasabias
 summary: Jefe de la tribu de Efraín, hijo de Siftán. Jehová lo eligió, con otros jefes, para ayudar a Eleazar y a Josué a
   dividir Canaán en herencias.
 reason: Perspicacia «Quemuel», núm. 2; Nú 34:24.
@@ -49,5 +50,5 @@ relations:
   reason: 'Nú 34:23, 24: su tribu era de los hijos de José.'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

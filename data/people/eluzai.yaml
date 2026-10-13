@@ -1,0 +1,28 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: eluzai
+name: Eluzái
+names:
+- name: Eluzái
+- name: Eluzai
+perspicacia: '1200001344'
+summary: Guerrero ambidextro de Benjamín que se unió a David en Ziclag cuando Saúl lo tenía restringido.
+reason: Perspicacia «Eluzai»; 1Cr 12:5.
+sources:
+- it-eluzai
+- 1-cronicas-12
+links:
+- title: 'Perspicacia: «Eluzai»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Eluzai/
+  type: perspicacia
+relations:
+- type: tie
+  person: david
+  word: master
+  inferred: false
+  sources:
+  - 1-cronicas-12
+  reason: '1Cr 12:5: se unió a David y lo apoyó en la guerra.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

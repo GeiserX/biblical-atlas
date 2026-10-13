@@ -1,0 +1,40 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: eber-hijo-de-sasac
+name: Éber
+names:
+- name: Éber
+perspicacia: 1200001249#4
+disambiguation: Éber hijo de Sasac, benjamita; no Éber hijo de Elpaal ni Éber hijo de Selá, antepasado de Abrahán.
+distinct_from:
+- eber-hijo-de-elpaal
+- eber-hijo-de-sela
+- eber-hijo-de-abihail
+summary: Benjamita, uno de los hijos de Sasac y jefe de familia en Jerusalén.
+reason: Perspicacia «Éber», núm. 4; 1Cr 8:22, 25, 28.
+sources:
+- it-eber
+- 1-cronicas-8
+links:
+- title: 'Perspicacia: «Éber»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/%C3%89ber/
+  type: perspicacia
+relations:
+- type: kin
+  person: sasac
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  reason: 1Cr 8:25 lo cuenta entre los hijos de Sasac.
+  checked_on: '2026-10-12'
+  status: verified
+- type: lived_in
+  place: jerusalen
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  reason: '1Cr 8:28: los jefes de casas paternas de esta lista vivían en Jerusalén.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

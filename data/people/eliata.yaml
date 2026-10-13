@@ -1,0 +1,28 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: eliata
+name: Eliatá
+names:
+- name: Eliatá
+perspicacia: '1200001299'
+summary: Hijo de Hemán. En días de David le tocó dirigir el grupo número 20 de los músicos del santuario.
+reason: Perspicacia «Eliatá»; 1Cr 25:4, 27.
+sources:
+- it-eliata
+- 1-cronicas-25
+links:
+- title: 'Perspicacia: «Eliatá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Eliat%C3%A1/
+  type: perspicacia
+relations:
+- type: kin
+  person: heman-hijo-de-joel
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-25
+  - it-eliata
+  reason: 1Cr 25:4, 27 lo cuenta entre los hijos de Hemán.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
