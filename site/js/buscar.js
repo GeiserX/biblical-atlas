@@ -397,9 +397,9 @@ function filaResultado(r, list = []) {
     meta = trozos.filter((x) => !esFecha(x) && !suya.includes(norm(x.trim()))).join(' · ');
     if (propia) fecha = propia.trim();
   }
-  // Si otra fila de la lista se llama igual, la línea que la distingue va primero; el texto de la ficha del que sale no
-  // se repite detrás.
-  const distinguisher = r.sel && list.some((x) => x !== r && x.titulo === r.titulo) ? distinguishingLine(r.sel) : '';
+  // Si otra fila de la lista es del mismo tipo y se llama igual, la línea que la distingue va primero; el texto de la
+  // ficha del que sale no se repite detrás. «Juan · persona» y «Juan · libro» ya se distinguen por el tipo.
+  const distinguisher = r.sel && list.some((x) => x !== r && x.sel?.tipo === r.sel.tipo && x.titulo === r.titulo) ? distinguishingLine(r.sel) : '';
   if (distinguisher && r.meta) { const o = objetoSel(r.sel); if (r.meta === o?.desambiguacion || r.meta === o?.resumen) meta = ''; }
   return { forma, tipo, deTipo, titulo: r.titulo, etiqueta: r.etiqueta || '', distinguisher, meta, fecha };
 }

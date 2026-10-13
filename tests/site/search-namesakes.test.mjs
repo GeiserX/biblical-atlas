@@ -176,6 +176,19 @@ test('Mizpá: each of the two places says where it was, from its own summary', a
   await checkNamesakes('Mizpá', ['Benjamín', 'Galaad']);
 });
 
+test('Labán: a person named like a place is not a namesake, and keeps its whole line in both lists', async () => {
+  // data/people/laban.yaml and data/places/laban.yaml: «persona» and «lugar» already tell the two rows apart, so the
+  // person keeps its `disambiguation` («…suegro de Jacob…») and gets no distinguishing line.
+  for (const list of LISTS) {
+    const page = await openPage(DESKTOP, list.hash);
+    await page.locator(list.box).fill('Labán');
+    await page.waitForFunction((sel) => [...document.querySelectorAll(sel)].some((r) => /suegro de Jacob/.test(r.textContent)), list.row);
+    assert.equal(await page.locator(`${list.row} .be-distinguisher`).count(), 0, `${list.name}: a distinguishing line for Labán`);
+    assert.deepEqual(page.pageErrors, [], list.name);
+    await page.context().close();
+  }
+});
+
 test('every group of namesakes in data/ (scripts/homonyms.py) is told apart in the built site', async () => {
   const groups = JSON.parse(execFileSync('python3', [path.join(ROOT, 'scripts/homonyms.py'), '--json'], { cwd: ROOT, encoding: 'utf8' }));
   const total = Object.values(groups).reduce((n, gs) => n + gs.length, 0);
