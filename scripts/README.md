@@ -90,6 +90,15 @@ python3 scripts/review.py --fail    # sale con código 1 si hay algo que revisar
 
 Lista cada hecho y cada fuente consultados hace N días o más (`--days 0` lista todo lo consultado hasta hoy), con una búsqueda en wol.jw.org para ver si hay algo más reciente. Entran también los meses y los hechos de «El calendario» de `data/calendar.yaml`. Los capítulos que `build.py` crea solos no salen: se releen con el hecho que los cita. Si no hay nada, imprime «nada que revisar». Sin `--fail` siempre sale con código 0; con `--fail`, la revisión semanal de la CI se pone en rojo cuando hay datos por releer. El procedimiento completo está en [`docs/investigacion/README.md`](../docs/investigacion/README.md).
 
+## Contar los homónimos
+
+```bash
+python3 scripts/homonyms.py          # cuántos grupos hay y cuáles
+python3 scripts/homonyms.py --json   # lo mismo, para las pruebas
+```
+
+Lista las personas, los lugares y los sucesos que comparten nombre visible (`name`, o `title` en un suceso): cada grupo da en la búsqueda filas con el mismo título. [`tests/site/search-namesakes.test.mjs`](../tests/site/search-namesakes.test.mjs) lee la salida con `--json` y comprueba en el sitio compilado que cada fila de un grupo lleva una línea distinta, sacada de su propia ficha.
+
 ## Vídeos de jw.org
 
 ```bash
