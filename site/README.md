@@ -174,7 +174,7 @@ El carril «Viajes de Pablo» enseña solo los viajes de Pablo: un tramo por via
 |---|---|
 | `index.html` | Estructura de la página, puntos de montaje de las vistas y carga de MapLibre, con versión fija y SRI |
 | `acerca.html` | Qué es el proyecto, cómo se lee, cómo tratamos las fuentes, gracias con cada licencia y cómo proponer una corrección. Su único script apunta «Volver al mapa» a la vista de `?desde=…` |
-| `calendario.html` | «El calendario de la Biblia»: los hechos de `explicacion` y la tabla de los trece meses, leídos de `data.core.json` y `data.detail.json` unidos, con [`js/data-chunks.js`](js/data-chunks.js) (o de `data.js` desde `file://`). Acepta `?datos=_local/…` como `index.html` |
+| `calendario.html` | «El calendario de la Biblia»: los hechos de `explicacion` y la tabla de los trece meses, leídos de `data.core.json` con [`js/data-chunks.js`](js/data-chunks.js) (o de `data.js` desde `file://`), y los enlaces a sus fuentes, de `data.detail.json` cuando llega. Acepta `?datos=_local/…` como `index.html` |
 | [`js/`](js/) | La aplicación, partida en módulos (ver abajo) |
 | [`css/`](css/) | Estilos propios: `base.css`, `mapa.css`, `linea.css`, `estudio.css` y `tactil.css` (el último: pantallas táctiles), y `acerca.css` y `calendario.css` para las dos páginas sueltas |
 | `kit/` | Tokens, componentes y fuentes copiados del kit de maquetas. Las fuentes tienen licencia SIL OFL 1.1 |

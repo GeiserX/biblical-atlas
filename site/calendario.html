@@ -39,9 +39,11 @@
 <script src="js/data-chunks.js"></script>
 <script>
 /* biblical-atlas · página «El calendario»: la explicación y la tabla de los meses salen de los datos (calendario.explicacion
-   y calendario.meses), y los títulos y enlaces de sus fuentes, del detalle. Los carga js/data-chunks.js, como en
-   index.html: el núcleo y el detalle a la vez, unidos, que el service worker ya guardó si se abrió el mapa. Script
-   clásico, sin módulos: la página también abre desde file://, donde carga data.js. */
+   y calendario.meses), que van en el núcleo, y los títulos y enlaces de sus fuentes, del detalle. Los carga
+   js/data-chunks.js, como en index.html: pide los dos a la vez, pinta con el núcleo en cuanto llega y otra vez con las
+   fuentes cuando llega el detalle. Sin conexión basta el núcleo, que el service worker guarda al instalarse; si el
+   detalle no llega, la lista de fuentes lo dice. Script clásico, sin módulos: la página también abre desde file://,
+   donde carga data.js. */
 'use strict';
 (() => {
 const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
@@ -60,13 +62,6 @@ document.querySelectorAll('[data-acerca]').forEach((a) => {
   a.href = `acerca.html${String(q) ? `?${q}` : ''}`;
 });
 
-/** Los datos, como en index.html (?datos=_local/…, file:// y una carpeta sin núcleo incluidos): load() pide el núcleo y
-    el detalle a la vez y une el detalle al núcleo. */
-async function cargar() {
-  await window.BE.chunks.load();
-  return window.BE.chunks.loadCore();
-}
-
 // Los hechos de calendario.explicacion, por temas. Un id que no esté aquí va al primer tema.
 const TEMAS = [
   ['el-mes-y-el-ano', 'El mes y el año', ['mes-lunar', 'mes-anadido', 'ciclo-de-19-anos', 'anio-sagrado', 'anio-civil', 'antes-del-exodo', 'nombres-por-epoca', 'dia-hebreo', 'en-tiempos-de-jesus']],
@@ -74,12 +69,14 @@ const TEMAS = [
   ['otras-naciones', 'Otras naciones de la Biblia', ['egipto', 'babilonia']],
 ];
 
-function pintar(D) {
+/** Pinta la página con `D`. `fuentes` dice cómo están las fuentes: 'listas' (llegó el detalle), null (aún no) o el
+    error con que falló. Sin el detalle, el núcleo trae cada fuente sin su enlace: no se enlaza ninguna. */
+function pintar(D, fuentes) {
   const cal = D.calendario || {};
   const F = D.fuentes || {};
   const usadas = new Set();
   const nombreFuente = (f) => (/^Perspicacia/.test(f.obra || '') ? `Perspicacia «${f.titulo}»` : f.titulo);
-  const enlaces = (ids) => (ids || []).filter((id) => F[id]).map((id) => { usadas.add(id); return `<a href="${esc(F[id].url)}" ${EXTERNO}>${esc(nombreFuente(F[id]))}</a>`; }).join(' · ');
+  const enlaces = (ids) => (ids || []).filter((id) => F[id]?.url).map((id) => { usadas.add(id); return `<a href="${esc(F[id].url)}" ${EXTERNO}>${esc(nombreFuente(F[id]))}</a>`; }).join(' · ');
 
   const hechos = cal.explicacion || [];
   const temas = TEMAS.map(([id, titulo, ids]) => ({ id, titulo, hechos: ids.map((x) => hechos.find((h) => h.id === x)).filter(Boolean) }));
@@ -132,19 +129,36 @@ function pintar(D) {
       <p>El selector «Meses» de la línea elige qué se ve: los dos calendarios, solo el nuestro o solo el hebreo.</p>` },
   ];
   const lista = [...usadas].map((id) => F[id]).sort((a, b) => nombreFuente(a).localeCompare(nombreFuente(b), 'es'));
-  secciones.push({ id: 'fuentes', titulo: 'Fuentes', html: `<p>Cada dato de esta página enlaza a una de estas publicaciones. Pulsa una para leerla entera.</p>
+  const aviso = fuentes === 'listas' ? ''
+    : fuentes ? `<p class="be-muted" role="status">No se pudieron cargar los enlaces a las fuentes: ${esc(fuentes.message)}. Con conexión, vuelve a abrir la página.</p>`
+      : '<p class="be-muted" role="status" aria-busy="true">Cargando las fuentes…</p>';
+  secciones.push({ id: 'fuentes', titulo: 'Fuentes', html: `<p>Cada dato de esta página enlaza a una de estas publicaciones. Pulsa una para leerla entera.</p>${aviso}
     <ul class="cal-lista-fuentes">${lista.map((f) => `<li><a href="${esc(f.url)}" ${EXTERNO}>${esc(f.titulo)}</a><span>${esc(f.obra)}</span></li>`).join('')}</ul>` });
 
   document.getElementById('indice').innerHTML = secciones.map((s) => `<li><a href="#${s.id}">${esc(s.titulo)}</a></li>`).join('');
   document.getElementById('contenido').innerHTML = secciones.map((s) => `<section id="${s.id}"><h2>${esc(s.titulo)}</h2>${s.html}</section>`).join('');
-  // Con la página ya pintada, un ancla de la dirección (#mes-nisan, #dia-hebreo) lleva a su sitio.
-  const ancla = location.hash.slice(1);
-  const mes = new URLSearchParams(ancla).get('mes');
-  if (mes) document.getElementById(`mes-${mes}`)?.scrollIntoView();
-  else if (ancla && !ancla.includes('=')) document.getElementById(ancla)?.scrollIntoView();
+  // Con la página ya pintada, un ancla de la dirección (#mes-nisan, #dia-hebreo) lleva a su sitio. Al repintar con las
+  // fuentes, el texto de encima crece: vuelve a llevar, salvo que quien lee ya se haya movido.
+  if (scrollY === llevado) {
+    const ancla = location.hash.slice(1);
+    const mes = new URLSearchParams(ancla).get('mes');
+    if (mes) document.getElementById(`mes-${mes}`)?.scrollIntoView();
+    else if (ancla && !ancla.includes('=')) document.getElementById(ancla)?.scrollIntoView();
+    llevado = scrollY;
+  }
 }
+let llevado = scrollY;
 
-cargar().then(pintar).catch((err) => {
+// Los datos, como en index.html (?datos=_local/…, file:// y una carpeta sin núcleo incluidos). load() pide el detalle a
+// la vez que el núcleo; desde file:// o sin núcleo, los datos ya vienen enteros y load() no espera a nada.
+const { chunks } = window.BE;
+const detalle = chunks.load();
+chunks.loadCore().then((D) => {
+  let llego = false;
+  detalle.then(() => pintar(D, 'listas'), (err) => pintar(D, err)).finally(() => { llego = true; });
+  // Si el detalle ya está (file://, sin núcleo), una tarea después ya se ha pintado con él: nada que pintar dos veces.
+  setTimeout(() => { if (!llego) pintar(D, null); });
+}, (err) => {
   document.getElementById('contenido').innerHTML = `<section><h2>No se pudieron cargar los datos</h2><p>${esc(err.message)} Mira site/README.md para abrir el sitio en local.</p></section>`;
 });
 })();

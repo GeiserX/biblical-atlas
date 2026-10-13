@@ -180,22 +180,43 @@ test('after one online visit the site opens offline: map, timeline and a card, w
   assert.deepEqual([...page.errors, ...back.errors], []);
 });
 
-test('one visit of the map installs enough for the calendar to open offline', async () => {
-  // A cold install: a new browser opens the map once, with nothing chosen, and never the calendar. The calendar loads
-  // the same chunks as the map, and the map asks for the detail by itself within about three seconds of its start.
+test('a cold install is enough for the calendar to open offline; its sources come with the detail', async () => {
+  // A cold install: a new browser opens the map once, with nothing chosen, and never the calendar. The core comes with
+  // the install; the detail only if the visit lasts until the map asks for it. Forget it, as if the visit had ended
+  // first: offline, the calendar paints its texts and its table from the core and says its sources could not load.
   const context = await newContext();
   const page = await newPage(context);
   await page.goto(`${base}index.html`);
   await started(page);
   await controlled(page);
   await waitCached(page, 'data.detail.json');
+  await page.evaluate(async () => {
+    for (const k of await caches.keys()) if (k.startsWith('biblical-atlas-v-')) await (await caches.open(k)).delete(new URL('data.detail.json', location.href).href);
+  });
   await offline(context);
-  const cal = await newPage(context);
-  await cal.goto(`${base}calendario.html`);
-  await cal.locator('.cal-lista-fuentes a').first().waitFor();
-  assert.equal(await cal.locator('.cal-tabla tbody tr').count(), D.calendario.meses.length);
-  assert.ok(await cal.locator('.cal-tabla .cal-fuentes a[href^="https://"]').count() > 0, 'the table links no source');
-  assert.deepEqual([...page.errors, ...cal.errors], []);
+  const cut = await newPage(context);
+  await cut.goto(`${base}calendario.html`);
+  await cut.locator('#fuentes [role="status"]', { hasText: 'No se pudieron cargar los enlaces a las fuentes' }).waitFor();
+  assert.equal(await cut.locator('.cal-tabla tbody tr').count(), D.calendario.meses.length);
+  assert.equal(await cut.locator('.cal-hecho').count(), D.calendario.explicacion.length);
+  assert.equal(await cut.locator('#contenido a').count(), 0, 'a source linked with no detail');
+  // The one error is the detail that could not be fetched.
+  const detailFailed = (e) => /^Failed to load resource: .*\/data\.detail\.json\)$/.test(e);
+  assert.ok(cut.errors.some(detailFailed), cut.errors.join('\n'));
+  // Online it comes once and is kept; offline again, the calendar opens with every source linked.
+  await offline(context, false);
+  const online = await newPage(context);
+  await online.goto(`${base}calendario.html`);
+  await online.locator('.cal-lista-fuentes a').first().waitFor();
+  assert.ok(await cached(online, 'data.detail.json'));
+  await offline(context);
+  const again = await newPage(context);
+  await again.goto(`${base}calendario.html`);
+  await again.locator('.cal-lista-fuentes a').first().waitFor();
+  assert.equal(await again.locator('.cal-tabla tbody tr').count(), D.calendario.meses.length);
+  assert.ok(await again.locator('.cal-tabla .cal-fuentes a[href^="https://"]').count() > 0, 'the table links no source');
+  assert.equal(await again.locator('#fuentes [role="status"]').count(), 0);
+  assert.deepEqual([...page.errors, ...cut.errors.filter((e) => !detailFailed(e)), ...online.errors, ...again.errors], []);
 });
 
 test('the video lists come with the install: a card opened offline has its videos', async () => {

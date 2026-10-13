@@ -4,7 +4,8 @@
    al entrar en una caja de búsqueda, cuando el mapa termina de cargar o a los tres segundos de arrancar. Cada trozo se
    pide una sola vez: se guarda su promesa. Desde file:// carga data.js, que trae los datos enteros, como siempre. Si no
    hay data.core.json (una carpeta de ?datos= compilada antes de los trozos), carga data.json entero.
-   calendario.html lo carga también, sin base.js: pide los dos trozos a la vez y pinta con ellos unidos. */
+   calendario.html lo carga también, sin base.js: pide los dos trozos a la vez, pinta con el núcleo y repinta con el
+   detalle. */
 'use strict';
 (() => {
 const BE = window.BE ??= {};   // en calendario.html no hay base.js
