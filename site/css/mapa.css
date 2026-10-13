@@ -67,7 +67,7 @@
 .proxima-ref { color: var(--ink-3); font-size: var(--fs-xs); }
 
 .pildora-carta { --carta: var(--gold); padding: 2px 9px; border-radius: var(--r-pill); background: color-mix(in srgb, var(--glass) 95%, transparent); border: 1px solid color-mix(in srgb, var(--carta) 45%, var(--halo)); color: color-mix(in srgb, color-mix(in srgb, var(--carta) 70%, #000), #fff var(--aclarar)); font-size: var(--fs-xs); font-weight: 700; white-space: nowrap; cursor: pointer; box-shadow: var(--shadow-1); }
-.pildora-carta--sel { background: var(--carta); border-color: var(--carta); color: #fff; font-size: var(--fs-sm); padding: 3px 12px; z-index: 3; }
+.pildora-carta--sel { background: var(--carta); border-color: var(--carta); color: var(--carta-letra, #fff); font-size: var(--fs-sm); padding: 3px 12px; z-index: 3; }
 .pildora-carta--pendiente { border-style: dashed; color: var(--ink-3); font-weight: 600; }
 
 /* Tarjeta «Mientras tanto» y leyenda */
