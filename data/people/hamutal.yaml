@@ -11,6 +11,7 @@ sources:
 - it-hamutal
 - 2-reyes-23
 - 2-reyes-24
+- jeremias-52
 links:
 - title: 'Perspicacia: «Hamutal»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hamutal/
@@ -27,8 +28,9 @@ relations:
   - 2-reyes-23
   - 2-reyes-24
   - it-hamutal
+  - jeremias-52
   reason: 2Re 23:31 y 24:18 la llaman hija de Jeremías de Libná.
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-09-30'
+checked_on: '2026-10-12'
 status: verified

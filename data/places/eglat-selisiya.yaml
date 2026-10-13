@@ -38,6 +38,7 @@ sources:
 - ip1-15
 - openbible-geo
 - isaias-15
+- jeremias-48
 links:
 - title: 'Perspicacia: «Eglat-selisiyá»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Eglat-selisiy%C3%A1/
@@ -45,5 +46,5 @@ links:
 - title: Isaías 15 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Isa%C3%ADas/15/
   type: bible
-checked_on: '2026-09-30'
+checked_on: '2026-10-12'
 status: verified

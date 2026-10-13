@@ -1,0 +1,44 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: los-principes-absuelven-a-jeremias-en-la-puerta-nueva
+title: Los príncipes absuelven a Jeremías en la puerta nueva del templo
+date:
+  from: -627
+  to: -627
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 628 a.e.c. (al principio del reinado de Jehoiaquim)
+narrative_order:
+  series: jeremias
+  order: 26001
+places:
+- monte-moria
+- jerusalen
+people:
+- jeremias-profeta
+- ahicam
+present:
+- jeremias-profeta
+passages:
+- Jer 26:1-24
+summary: En el patio del templo, Jeremías avisa que la casa acabará como Siló. Sacerdotes, profetas y pueblo quieren matarlo;
+  los príncipes lo juzgan en la puerta nueva y, oídos los ancianos, lo absuelven. Ahicam lo protege.
+reason: Jer 26:1 lo pone al principio del reinado de Jehoiaquim, que empezó en 628 (tabla A6-B); Perspicacia «Jehoiaquim»,
+  párr. 3. Ahicam actúa en Jer 26:24, pero el texto no dice si estaba en el templo.
+sources:
+- jeremias-26
+- it-jehoiaquim
+- tnm-a6-b
+- jr-2
+- si-jeremias
+- it-puerta
+links:
+- title: Jeremías 26 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/26/
+  type: bible
+- title: 'Perspicacia: «Jehoiaquim»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jehoiaquim/
+  type: perspicacia
+checked_on: '2026-10-12'
+status: verified

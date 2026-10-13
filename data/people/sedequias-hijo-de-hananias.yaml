@@ -1,0 +1,49 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: sedequias-hijo-de-hananias
+name: Sedequías
+names:
+- name: Sedequías
+perspicacia: 1200004685#2
+disambiguation: El príncipe hijo de Hananías; no el rey Sedequías, ni Sedequías hijo de Quenaaná, ni el profeta falso hijo
+  de Maaseya.
+distinct_from:
+- sedequias
+- sedequias-hijo-de-kenaana
+- sedequias-hijo-de-maaseya
+summary: Príncipe de Judá en tiempos de Jehoiaquim, hijo de Hananías. Estaba con los demás príncipes en la sala del secretario
+  cuando Micaya les contó lo que había leído Baruc.
+reason: Perspicacia «Sedequías», núm. 2; Jer 36:12.
+sources:
+- it-sedequias
+- jeremias-36
+links:
+- title: 'Perspicacia: «Sedequías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sedequ%C3%ADas/
+  type: perspicacia
+- title: Jeremías 36 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/36/
+  type: bible
+relations:
+- type: kin
+  person: hananias-padre-de-sedequias
+  word: father
+  inferred: false
+  sources:
+  - jeremias-36
+  - it-hananias
+  reason: Jer 36:12 lo llama Sedequías hijo de Hananías.
+  checked_on: '2026-10-12'
+  status: verified
+- type: tie
+  person: jehoiaquim
+  word: master
+  inferred: false
+  sources:
+  - jeremias-36
+  - it-sedequias
+  reason: 'Jer 36:12: es uno de los príncipes reunidos en la casa del rey Jehoiaquim; la nota de 36:12 los llama funcionarios
+    de la corte.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

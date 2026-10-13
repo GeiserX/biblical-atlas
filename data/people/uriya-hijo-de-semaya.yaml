@@ -9,12 +9,12 @@ distinct_from:
 - uriya-sacerdote-de-acaz
 date:
   from: -627
-  to: -617
-  precision: range
+  to: -627
+  precision: year
   approx: true
-  type: narrative
+  type: anchored
   chronology: tnm
-  text: 'entre 628 y 618 a.e.c. (tiempo narrativo: reinado de Jehoiaquim)'
+  text: c. 628 a.e.c. (al principio del reinado de Jehoiaquim)
 summary: Profeta de Quiryat-Jearim que anunció contra Judá lo mismo que Jeremías. Huyó a Egipto cuando Jehoiaquim quiso matarlo,
   pero lo trajeron de vuelta y el rey lo ejecutó.
 reason: Perspicacia «Uriya», núm. 2; Jer 26:20-23. Años del reinado de Jehoiaquim según la tabla A6-B.
@@ -22,6 +22,7 @@ sources:
 - it-uriya
 - jeremias-26
 - tnm-a6-b
+- it-jehoiaquim
 links:
 - title: 'Perspicacia: «Uriya»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Uriya/
@@ -34,18 +35,20 @@ relations:
   office: prophet
   date:
     from: -627
-    to: -617
-    precision: range
+    to: -627
+    precision: year
     approx: true
-    type: narrative
+    type: anchored
     chronology: tnm
-    text: 'entre 628 y 618 a.e.c. (tiempo narrativo: reinado de Jehoiaquim)'
+    text: c. 628 a.e.c. (al principio del reinado de Jehoiaquim)
   inferred: false
   sources:
   - jeremias-26
   - it-uriya
-  reason: 'Jer 26:20: profetizaba en nombre de Jehová en los días de Jehoiaquim.'
-  checked_on: '2026-09-30'
+  - it-jehoiaquim
+  reason: 'Jer 26:20: profetizaba en nombre de Jehová contra Jerusalén. Perspicacia «Jehoiaquim», párr. 3, pone su muerte
+    antes del juicio de Jeremías, al principio del reinado.'
+  checked_on: '2026-10-12'
   status: verified
 - type: lived_in
   place: quiryat-jearim
@@ -56,5 +59,44 @@ relations:
   reason: Jer 26:20 dice que era de Quiryat-Jearim.
   checked_on: '2026-09-30'
   status: verified
-checked_on: '2026-09-30'
+- type: kin
+  person: semaya-padre-de-uriya
+  word: father
+  sources:
+  - jeremias-26
+  - it-semaya
+  reason: 'Jer 26:20: Uriya hijo de Semaya. Perspicacia «Semaya», núm. 11.'
+  inferred: false
+  checked_on: '2026-10-12'
+  status: verified
+- type: tie
+  person: jehoiaquim
+  word: enemy
+  sources:
+  - jeremias-26
+  - it-jehoiaquim
+  reason: 'Jer 26:21-23: el rey decide matarlo, lo hace traer de Egipto y lo mata a espada.'
+  inferred: false
+  checked_on: '2026-10-12'
+  status: verified
+- type: died_in
+  place: jerusalen
+  inferred: true
+  status: pending
+  sources:
+  - jeremias-26
+  - tnm-a6-b
+  reason: 'Jer 26:23: lo llevan ante Jehoiaquim, que lo mata. El texto no nombra la ciudad; el rey reinaba en Jerusalén (tabla
+    A6-B, periodo jehoiaquim).'
+  checked_on: '2026-10-12'
+history:
+- date: '2026-10-12'
+  change: La fecha abarcaba todo el reinado de Jehoiaquim; Perspicacia «Jehoiaquim», párr. 3, y Jer 26:20-24 ponen su muerte
+    antes del juicio de Jeremías, al principio del reinado.
+  source: jeremias-26
+- date: '2026-10-12'
+  change: La fecha de su cargo de profeta abarcaba todo el reinado de Jehoiaquim; murió antes del juicio de Jeremías (Perspicacia
+    «Jehoiaquim», párr. 3).
+  source: jeremias-26
+checked_on: '2026-10-12'
 status: verified

@@ -1,0 +1,51 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jeremias-envia-yugos-a-los-reyes-vecinos
+title: Jeremías envía yugos a Edom, Moab, Ammón, Tiro y Sidón
+date:
+  from: -613
+  to: -613
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 614 a.e.c.
+narrative_order:
+  series: jeremias
+  order: 27001
+places:
+- jerusalen
+- edom
+- moab
+- ammon
+- tiro
+- sidon
+people:
+- jeremias-profeta
+- sedequias
+- nabucodonosor-ii
+present:
+- jeremias-profeta
+- sedequias
+passages:
+- Jer 27:1-11
+summary: 'Por orden de Jehová, Jeremías se pone al cuello correas y yugos y los envía por los mensajeros que visitaban a Sedequías:
+  Edom, Moab, Ammón, Tiro y Sidón tendrán que someterse a Nabucodonosor o sufrir espada, hambre y peste.'
+reason: 'Jer 28:1 lo pone en el año cuarto de Sedequías, 614 según Perspicacia «Seraya», núm. 5. El «Jehoiaquim» de 27:1 quizá
+  es error de copista (Perspicacia «Sedequías», núm. 4). Los cinco reinos solo reciben yugos: no sitúan a nadie.'
+sources:
+- jeremias-27
+- jeremias-28
+- it-sedequias
+- it-seraya
+- jr-2
+- si-jeremias
+- it-jeremias-libro
+links:
+- title: Jeremías 27 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/27/
+  type: bible
+- title: 'Perspicacia: «Sedequías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sedequ%C3%ADas/
+  type: perspicacia
+checked_on: '2026-10-12'
+status: verified

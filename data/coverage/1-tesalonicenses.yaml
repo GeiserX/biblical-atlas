@@ -1,0 +1,49 @@
+# biblical-atlas: cobertura de un libro. Formato en data/coverage/README.md.
+book: 1-tesalonicenses
+chapters:
+  1:
+    status: complete
+    reviewed_on: 2026-10-12
+    note: "Saludo de Pablo, Silvano y Timoteo desde Corinto y elogio de una congregación joven que recibió el mensaje en plena persecución, dejó los ídolos y ya es conocida en Macedonia y Acaya."
+    spans:
+    - {v: "1", type: letter, entities: [letter:1-tesalonicenses, event:primera-carta-de-pablo, person:pablo, person:silas, person:timoteo, relation:silas/accompanies/pablo, relation:timoteo/accompanies/pablo, relation:pablo/lived_in/corinto, place:tesalonica], mentions: [person:jesus, place:corinto, event:alboroto-en-tesalonica], note: "Pablo, Silvano y Timoteo escriben a la congregación de Tesalónica. La nota da Silvano por la forma latina de Silas y recuerda que la congregación nació hacia 50; Perspicacia deduce de las firmas que escriben desde Corinto."}
+    - {v: 2-4, type: letter, mentions: [person:jesus], note: "Dan gracias a Dios por ellos en sus oraciones y recuerdan su obra de fe, su amor y su aguante, fruto de la esperanza en Jesucristo. Saben que Dios los ha escogido."}
+    - {v: 5-7, type: letter, entities: [event:alboroto-en-tesalonica, relation:pablo/tie/jason, place:macedonia, place:acaya], mentions: [person:silas, person:jason, place:berea], note: "El mensaje llegó con poder y espíritu santo, y lo aceptaron con gozo pese al sufrimiento: la nota lo une a la turba que asaltó la casa de Jasón, donde se alojaba Pablo. Son ejemplo para Macedonia y Acaya."}
+    - {v: 8-10, type: letter, entities: [event:alboroto-en-tesalonica, place:macedonia, place:acaya, place:tesalonica], mentions: [person:jesus, event:resurreccion-de-jesus, event:ascension-de-jesus, place:roma], note: "La palabra de Jehová resuena desde ellos por Macedonia, Acaya y más allá. Dejaron los ídolos, que según la nota eran Dioniso, Zeus, Ártemis, Apolo, Cabiro y el emperador, dioses sin ficha, y esperan del cielo a Jesús resucitado."}
+  2:
+    status: complete
+    reviewed_on: 2026-10-12
+    note: "Pablo recuerda su visita a Tesalónica tras los golpes de Filipos, su trato de madre y de padre, la persecución que sufren como las congregaciones de Judea y sus dos intentos frustrados de volver."
+    spans:
+    - {v: 1-2, type: letter, entities: [letter:1-tesalonicenses, event:alboroto-en-tesalonica, event:pablo-y-silas-azotados-y-encarcelados, person:pablo, person:silas, relation:silas/accompanies/pablo, place:tesalonica], mentions: [journey:segundo-viaje, place:filipos, person:david], note: "La visita dio fruto. Maltratados en Filipos, según la nota con varas, cárcel y cepo, Pablo y Silas cobraron valor para predicar en Tesalónica pese a una oposición dura, la turba que cuenta Hechos."}
+    - {v: 3-8, type: letter, entities: [person:pablo, relation:pablo/holds_office/-], mentions: [person:jesus, place:corinto, event:septuaginta], note: "No hablaron por error, impureza ni engaño, ni con halagos o codicia, ni buscaron gloria humana, aunque como apóstoles de Cristo podían pedir sustento. Los trataron con la ternura de una madre que amamanta y les dieron su vida."}
+    - {v: 9-12, type: letter, entities: [event:alboroto-en-tesalonica, place:tesalonica], mentions: [event:los-filipenses-envian-ayuda-a-pablo-en-tesalonica, place:filipos, place:corinto], note: "Mientras predicaban trabajaron día y noche para no ser una carga; la nota ve posible que Pablo hiciera tiendas, como en Corinto, y Perspicacia añade que allí recibió dos veces ayuda de Filipos. Los exhortaban como un padre."}
+    - {v: 13-16, type: letter, entities: [event:alboroto-en-tesalonica, event:primera-carta-de-pablo, place:judea], mentions: [person:jesus, event:muerte-de-jesus, event:expulsados-de-antioquia-de-pisidia, event:destruccion-de-jerusalen-70, place:jerusalen, person:pedro], note: "Aceptaron el mensaje como palabra de Dios y sufren de sus paisanos lo que las congregaciones de Judea de los judíos, que mataron a Jesús y a los profetas. La nota ve culminar la ira en Jerusalén, el año 70."}
+    - {v: 17-20, type: letter, entities: [event:pablo-intenta-volver-a-tesalonica, event:alboroto-en-tesalonica, person:pablo, person:satanas, place:tesalonica], mentions: [person:jesus, person:timoteo, journey:timoteo-de-berea-a-corinto, event:primera-carta-de-pablo, place:berea], note: "Separados de ellos a la fuerza, quizá pocos meses antes según la nota, quisieron volver: Pablo lo intentó dos veces y Satanás se lo impidió. Luego mandó a Timoteo. Ellos serán su corona durante la presencia de Jesús."}
+  3:
+    status: complete
+    reviewed_on: 2026-10-12
+    note: "Pablo cuenta que, solo en Atenas, mandó a Timoteo a fortalecer a los tesalonicenses, y que su vuelta con buenas noticias lo consoló. Termina orando por poder visitarlos."
+    spans:
+    - {v: 1-5, type: letter, entities: [letter:1-tesalonicenses, event:pablo-envia-a-timoteo-a-tesalonica, journey:timoteo-de-berea-a-corinto, person:pablo, person:timoteo, relation:timoteo/accompanies/pablo, person:satanas, place:atenas, place:tesalonica], mentions: [person:silas, place:berea, event:alboroto-en-tesalonica, place:corinto, event:dispersion-de-los-discipulos, place:jerusalen], note: "Pablo habla en plural, pero la nota del v. 1 cree que estaba solo en Atenas. Timoteo, hermano y ministro de Dios, va a consolarlos. El Tentador es Satanás según la nota del v. 5."}
+    - {v: 6-10, type: letter, entities: [event:crispo-cree, event:primera-carta-de-pablo, person:timoteo], mentions: [person:pablo, person:silas, place:corinto], note: "Timoteo acaba de volver con buenas noticias de su fe y su cariño, y eso reanima a Pablo en sus apuros. La referencia lleva a la llegada a Corinto; escribe la carta justo después."}
+    - {v: 11-13, type: letter, mentions: [person:jesus], note: "Oración: que Dios y el Señor Jesús les abran camino para ir a verlos, y que crezca su amor para estar firmes e intachables durante la presencia de Jesús con sus santos."}
+  4:
+    status: complete
+    reviewed_on: 2026-10-12
+    note: "Consejos sin sucesos ni nombres nuevos: santidad y freno a la inmoralidad sexual, amor fraternal, vida tranquila con trabajo propio, y consuelo con la esperanza de la resurrección."
+    spans:
+    - {v: 1-8, type: letter, entities: [letter:1-tesalonicenses], mentions: [person:jesus], note: "Que sigan viviendo para agradar a Dios: ser santos, dominar su cuerpo y no aprovecharse del hermano con la inmoralidad. La nota ve en el v. 6 un eco de Sl 94:1; Jehová castiga esas cosas."}
+    - {v: 9-12, type: letter, mentions: [place:macedonia, person:isaias, person:santiago-hermano-de-jesus], note: "Dios mismo les enseña a amarse, y ya aman a los hermanos de toda Macedonia. Que vivan en paz, atiendan sus asuntos y trabajen con sus manos, para no depender de nadie."}
+    - {v: 13-18, type: letter, mentions: [person:jesus, event:muerte-de-jesus, event:resurreccion-de-jesus, person:moises, place:babilonia], note: "Los que duermen en la muerte resucitarán primero, durante la presencia del Señor; después los vivos se unirán a ellos. La voz de arcángel, dice la nota, recuerda a Miguel y muestra la autoridad de Jesús."}
+  5:
+    status: complete
+    reviewed_on: 2026-10-12
+    note: "Final de la carta: el día de Jehová llega como un ladrón, consejos para la vida de la congregación y despedida. No sale ningún nombre nuevo; Pablo escribe desde Corinto hacia el año 50."
+    spans:
+    - {v: 1-5, type: letter, mentions: [event:senal-de-su-presencia, person:joel-profeta, person:pedro, event:pentecostes-33, event:destruccion-de-jerusalen-70, place:jerusalen], note: "El día de Jehová llegará de improviso, como un ladrón de noche, y tras el grito de «¡Paz y seguridad!» vendrá la destrucción. La nota lo iguala a la gran tribulación que Jesús predijo (Mt 24:21)."}
+    - {v: 6-11, type: letter, mentions: [person:jesus, event:muerte-de-jesus, person:moises], note: "No dormirse como los demás: seguir despiertos y con buen juicio, con la fe y el amor por coraza y la esperanza por casco. Dios los eligió para salvarse por Jesucristo, que murió por ellos. Que sigan animándose."}
+    - {v: 12-15, type: letter, mentions: [event:alboroto-en-tesalonica, event:resurreccion-de-lazaro, person:lazaro, person:marta, person:maria-de-betania], note: "Estimen con amor a quienes trabajan duro, los dirigen y los aconsejan. Hay que advertir al indisciplinado, consolar al deprimido, que la nota ve quizá abatido por la persecución o por muertes, y no pagar mal con mal."}
+    - {v: 16-22, type: letter, entities: [event:primera-carta-de-pablo], mentions: [person:jesus, place:tesalonica], note: "Alegría, oración constante y gratitud; no apagar el espíritu ni despreciar las profecías, sino comprobarlo todo. La nota del v. 21 fecha la carta hacia 50 y dice que los de Tesalónica examinaban las profecías con las Escrituras Hebreas."}
+    - {v: 23-24, type: letter, mentions: [person:jesus, place:tesalonica], note: "Pablo ora para que Dios santifique del todo a los hermanos y los guarde sin falta hasta la presencia de Jesucristo. Según la nota, espíritu, alma y cuerpo hablan al parecer de la congregación entera."}
+    - {v: 25-28, type: letter, entities: [letter:1-tesalonicenses, event:primera-carta-de-pablo, person:pablo], mentions: [person:jesus], note: "Pablo pide que oren por ellos y que se saluden con un beso santo, y ordena solemnemente que la carta se lea a todos los hermanos; la nota deja abierto si el Señor es Jehová o Jesús. Despedida sin nombres."}

@@ -19,6 +19,11 @@ reason: Perspicacia «Sofonías», núm. 3; 2Re 25:18-21; Jer 21:1; 29:25, 29; 3
 sources:
 - it-sofonias
 - 2-reyes-25
+- jeremias-21
+- jeremias-29
+- it-jehoiada
+- jeremias-37
+- jeremias-52
 links:
 - title: 'Perspicacia: «Sofonías»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sofon%C3%ADas/
@@ -34,8 +39,12 @@ relations:
   sources:
   - 2-reyes-25
   - it-sofonias
+  - jeremias-21
+  - jeremias-29
+  - jeremias-37
+  - jeremias-52
   reason: '2Re 25:18: el segundo sacerdote, por debajo del sacerdote principal Seraya.'
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-12'
   status: verified
 - type: died_in
   place: ribla
@@ -43,11 +52,34 @@ relations:
   sources:
   - 2-reyes-25
   - it-sofonias
+  - jeremias-52
   reason: '2Re 25:18, 20, 21: Nebuzaradán lo llevó a Riblá y allí lo mató el rey de Babilonia.'
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: maaseya-padre-de-sofonias
+  word: father
+  inferred: false
+  sources:
+  - jeremias-21
+  - it-maaseya
+  - jeremias-29
+  - jeremias-37
+  reason: Jer 21:1 lo llama hijo de Maaseya.
+  checked_on: '2026-10-12'
+  status: verified
+- type: succeeds
+  person: jehoiada-de-tiempos-de-jeremias
+  office: priest
+  sources:
+  - jeremias-29
+  - it-jehoiada
+  reason: 'Jer 29:26: fue hecho sacerdote en lugar del sacerdote Jehoiadá. Perspicacia «Jehoiadá», núm. 4, lo da por sucesor.'
+  inferred: false
+  checked_on: '2026-10-12'
   status: verified
 distinct_from:
 - sofonias-profeta
 - sofonias-padre-de-josias
-checked_on: '2026-09-30'
+checked_on: '2026-10-12'
 status: verified

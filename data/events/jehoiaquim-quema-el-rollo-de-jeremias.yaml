@@ -1,0 +1,60 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jehoiaquim-quema-el-rollo-de-jeremias
+title: Jehoiaquim quema el rollo de Jeremías
+date:
+  from: -623
+  to: -623
+  precision: month
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: kislev de 624 a.e.c. (noviembre-diciembre)
+  detail:
+    month: kislev
+narrative_order:
+  series: jeremias
+  order: 36020
+places:
+- jerusalen
+people:
+- jehoiaquim
+- jehudi
+- elnatan-hijo-de-acbor
+- delaya-hijo-de-semaya
+- guemarias-hijo-de-safan
+- elisama-secretario
+- sedequias-hijo-de-hananias
+- jerahmeel-hijo-del-rey
+- seraya-hijo-de-azriel
+- selemias-hijo-de-abdeel
+- jeremias-profeta
+- baruc-hijo-de-nerias
+present:
+- jehoiaquim
+- jehudi
+- elnatan-hijo-de-acbor
+- delaya-hijo-de-semaya
+- guemarias-hijo-de-safan
+- elisama-secretario
+- sedequias-hijo-de-hananias
+passages:
+- Jer 36:20-26
+summary: En su casa de invierno, Jehoiaquim oye leer a Jehudí y va cortando el rollo y echándolo al brasero, aunque tres príncipes
+  le ruegan que no. Manda prender a Jeremías y a Baruc, pero Jehová los oculta.
+reason: Noveno mes, kislev (Jer 36:22 y su nota), de 624 según Perspicacia «Baruc», núm. 1, y «Seraya», núm. 4. Los príncipes
+  de 36:12 van ante el rey (36:20, 21); los tres enviados y los dos escondidos no se sitúan.
+sources:
+- jeremias-36
+- it-baruc
+- it-seraya
+- it-jehoiaquim
+- it-jehudi
+links:
+- title: Jeremías 36 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/36/
+  type: bible
+- title: 'Perspicacia: «Jehoiaquim»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jehoiaquim/
+  type: perspicacia
+checked_on: '2026-10-12'
+status: verified

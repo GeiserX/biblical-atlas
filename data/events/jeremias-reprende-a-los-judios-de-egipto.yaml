@@ -1,0 +1,50 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jeremias-reprende-a-los-judios-de-egipto
+title: Jeremías reprende a los judíos que viven en Egipto
+date:
+  from: -606
+  to: -579
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 607 y 580 a.e.c. (tiempo narrativo: después de la huida a Egipto y antes de que Jeremías acabara su libro)'
+narrative_order:
+  series: jeremias
+  order: 44001
+places:
+- egipto
+- patros
+- migdol-de-los-profetas
+- tahpanhes
+- menfis
+people:
+- jeremias-profeta
+present:
+- jeremias-profeta
+type: speech
+roles:
+  jeremias-profeta: spoke
+passages:
+- Jer 44:1-30
+summary: Jeremías recuerda a los judíos de Egipto que Judá cayó por su idolatría. Ellos se niegan a dejar de ofrecer a la
+  Reina del Cielo, y él les anuncia la calamidad y, como señal, la caída del faraón Hofrá.
+reason: 'Jer 44:1-30. Perspicacia «Hofrá» lo pone después de la huida de 607 (estudio 3, párr. 6); «Toda Escritura», libro
+  24, da 580 como fin del libro. El texto no dice en qué ciudad habla: Egipto va primero.'
+sources:
+- jeremias-44
+- it-hofra
+- si-jeremias
+- si-3
+- it-patros
+- it-reina-de-los-cielos
+- it-migdol
+links:
+- title: Jeremías 44 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/44/
+  type: bible
+- title: 'Perspicacia: «Hofrá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hofr%C3%A1/
+  type: perspicacia
+checked_on: '2026-10-12'
+status: verified

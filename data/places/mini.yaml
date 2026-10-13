@@ -1,0 +1,60 @@
+# biblical-atlas: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: mini
+name: Miní
+names:
+- name: Miní
+type: kingdom
+lat: null
+lon: null
+precision: zone
+coord_source: null
+coord_url: null
+candidates:
+- name: Al sudeste del lago Van
+  geometry:
+    type: zone
+    lat: 36.570278
+    lon: 46.275278
+    radius_km: 150
+  status: favored_level_1
+  sources:
+  - it-mini
+  - it-askenaz
+  - openbible-geo
+  reason: Perspicacia «Miní» dice que casi todos los comentaristas lo ponen al sudeste del lago Van; «Askenaz», núm. 2, también
+    lo sitúa allí.
+  note: 'Centro: punto de OpenBible para Miní, en Qalaichi. El radio de 150 km es nuestro.'
+  coord_source: openbible:ae1054e
+  coord_url: https://www.openbible.info/geo/ancient/ae1054e/minni
+  checked_on: '2026-10-12'
+- name: Del lago Van al río Araxes
+  geometry:
+    type: zone
+    lat: 39.3
+    lon: 43.8
+    radius_km: 90
+  status: alternative
+  sources:
+  - it-mini
+  reason: Perspicacia «Miní» recoge que algunos cartógrafos lo sitúan más al norte, en la franja que va del lago Van al Araxes.
+  note: 'Cálculo propio: punto medio entre la orilla norte del lago Van (39,0; 43,0) y el Araxes junto a Iğdır (39,6; 44,6),
+    con 90 km de radio.'
+  coord_source: calculation
+  checked_on: '2026-10-12'
+summary: Reino antiguo llamado a luchar contra Babilonia junto con Ararat y Askenaz. Se cree que sus habitantes eran los manneos;
+  cuando cayó Babilonia, en 539 a.e.c., estaba bajo el Imperio medopersa.
+reason: Perspicacia «Miní», párr. 1-3; Jer 51:27. Su sitio exacto no se conoce, así que lleva dos zonas candidatas.
+sources:
+- it-mini
+- it-askenaz
+- jeremias-51
+- openbible-geo
+links:
+- title: 'Perspicacia: «Miní»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Min%C3%AD/
+  type: perspicacia
+- title: Jeremías 51 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/51/
+  type: bible
+checked_on: '2026-10-12'
+status: verified

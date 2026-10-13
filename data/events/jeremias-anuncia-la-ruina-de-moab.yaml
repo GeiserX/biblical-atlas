@@ -1,0 +1,41 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jeremias-anuncia-la-ruina-de-moab
+title: Jeremías anuncia la ruina de Moab
+date:
+  from: -646
+  to: -600
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 647 y 601 a.e.c. (tiempo narrativo: profecía del siglo VII a.e.c., tras la comisión de Jeremías)'
+narrative_order:
+  series: jeremias
+  order: 48001
+places:
+- moab
+people:
+- jeremias-profeta
+present: []
+passages:
+- Jer 48:1-47
+summary: Jehová anuncia por Jeremías que un destructor arrasará Moab, ciudad tras ciudad, por su orgullo y su burla de Israel;
+  Kemós y su pueblo irán al destierro, pero al final reunirá a sus cautivos.
+reason: 'El texto no da año ni lugar: nadie queda situado. Perspicacia «Nebo» y «Baal-meón» la sitúan en el siglo VII a.e.c.,
+  y el estudio 3 fecha en 647 la comisión de Jeremías.'
+sources:
+- jeremias-48
+- it-moab
+- it-nebo
+- it-baal-meon
+- it-jeremias-libro
+- si-3
+links:
+- title: Jeremías 48 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/48/
+  type: bible
+- title: 'Perspicacia: «Moab, moabitas»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Moab-moabitas/
+  type: perspicacia
+checked_on: '2026-10-12'
+status: verified

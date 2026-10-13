@@ -10,6 +10,7 @@ reason: Perspicacia «Elisamá», núm. 7; 2Re 25:25; Jer 41:1.
 sources:
 - it-elisama
 - 2-reyes-25
+- jeremias-41
 links:
 - title: 'Perspicacia: «Elisamá»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Elisam%C3%A1/
@@ -22,5 +23,6 @@ distinct_from:
 - elisama-hijo-de-amihud
 - elisama-hijo-de-david
 - elisua
-checked_on: '2026-09-30'
+- elisama-secretario
+checked_on: '2026-10-12'
 status: verified

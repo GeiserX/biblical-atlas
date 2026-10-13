@@ -1,0 +1,43 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jeremias-condena-a-quienes-vuelven-a-esclavizar
+title: Jeremías condena a quienes rompieron el pacto de liberar a los esclavos
+type: speech
+date:
+  from: -608
+  to: -606
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 609 y 607 a.e.c. (tiempo narrativo: mientras los babilonios se retiran de Jerusalén)'
+narrative_order:
+  series: jeremias
+  order: 34012
+  after: los-caldeos-se-retiran-de-jerusalen-ante-el-ejercito-del-faraon
+places:
+- jerusalen
+people:
+- jeremias-profeta
+present:
+- jeremias-profeta
+roles:
+  jeremias-profeta: spoke
+passages:
+- Jer 34:12-22
+summary: Jehová dice por Jeremías que, por volver a esclavizar a sus hermanos, príncipes, sacerdotes y pueblo caerán ante
+  sus enemigos, y que el ejército babilonio, que ahora se retira, volverá a quemar la ciudad.
+reason: Jer 34:12-22; 34:21 dice que los babilonios se están retirando, lo que Perspicacia «Sedequías», núm. 4, une a la llegada
+  del ejército egipcio. «Esta ciudad» (34:22) lo sitúa en Jerusalén. Sitio de 609-607 (estudio 3).
+sources:
+- jeremias-34
+- it-sedequias
+- si-3
+links:
+- title: Jeremías 34 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/34/
+  type: bible
+- title: 'Perspicacia: «Sedequías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sedequ%C3%ADas/
+  type: perspicacia
+checked_on: '2026-10-12'
+status: verified

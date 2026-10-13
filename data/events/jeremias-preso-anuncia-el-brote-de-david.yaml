@@ -1,0 +1,44 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jeremias-preso-anuncia-el-brote-de-david
+title: Jeremías, aún preso, recibe la promesa del brote justo de David
+type: speech
+date:
+  from: -607
+  to: -606
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 608 y 607 a.e.c. (tiempo narrativo: tras la compra del campo de Hanamel, antes de caer Jerusalén)'
+narrative_order:
+  series: jeremias
+  order: 33001
+places:
+- jerusalen
+people:
+- jeremias-profeta
+present:
+- jeremias-profeta
+roles:
+  jeremias-profeta: spoke
+passages:
+- Jer 33:1-26
+summary: 'Preso aún en el Patio de la Guardia, Jeremías recibe otra vez palabra de Jehová: la ciudad arrasada volverá a poblarse,
+  los cautivos regresarán y nacerá para David un brote justo; su pacto con David no se romperá.'
+reason: 'Jer 33:1 lo da como segundo mensaje con Jeremías aún preso: tras la compra del campo de Hanamel, del año décimo de
+  Sedequías (608), y antes de la caída de 607 (estudio 3). «Toda Escritura», párr. 25 y 39.'
+sources:
+- jeremias-33
+- si-3
+- si-jeremias
+- it-rama-brote
+- it-jehova-es-nuestra-justicia
+links:
+- title: Jeremías 33 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/33/
+  type: bible
+- title: 'Perspicacia: «Rama, brote»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Rama-brote/
+  type: perspicacia
+checked_on: '2026-10-12'
+status: verified

@@ -10,6 +10,7 @@ reason: Perspicacia «Elnatán», núm. 1; 2Re 24:8.
 sources:
 - it-elnatan
 - 2-reyes-24
+- it-acbor
 links:
 - title: 'Perspicacia: «Elnatán»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Elnat%C3%A1n/
@@ -18,7 +19,8 @@ links:
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-reyes/24/
   type: bible
 not_claimed:
-- 'Que sea con seguridad Elnatán hijo de Acbor (Jer 26:22; 36:12): Perspicacia solo dice que quizás es el mismo.'
+- 'Que sea con seguridad Elnatán hijo de Acbor (Jer 26:22; 36:12): Perspicacia «Elnatán» dice quizás, y «Acbor», núm. 2, lo
+  da por muy probable.'
 relations:
 - type: lived_in
   place: jerusalen
@@ -28,5 +30,10 @@ relations:
   reason: 2Re 24:8 lo llama Elnatán de Jerusalén.
   checked_on: '2026-09-30'
   status: verified
-checked_on: '2026-09-30'
+history:
+- date: '2026-10-12'
+  change: 'La identificación con Elnatán hijo de Acbor pasa de posible a probable: Perspicacia «Acbor», núm. 2, la da con
+    mucha probabilidad.'
+  source: it-acbor
+checked_on: '2026-10-12'
 status: verified

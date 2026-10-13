@@ -7,6 +7,8 @@ disambiguation: Rey de Israel; no es Salum, otro nombre de Jehoacaz de Judá.
 distinct_from:
 - jehoacaz-de-juda
 - salum-hijo-de-ticva
+- salum-tio-de-jeremias
+- salum-padre-de-maaseya
 date:
   from: -790
   to: -790
@@ -66,5 +68,5 @@ relations:
   checked_on: '2026-09-30'
   status: verified
 perspicacia: 1200003933#5
-checked_on: '2026-09-30'
+checked_on: '2026-10-12'
 status: verified

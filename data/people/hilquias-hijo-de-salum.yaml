@@ -34,7 +34,9 @@ relations:
   reason: 2Re 22:4, 8 lo llama sumo sacerdote.
   checked_on: '2026-09-30'
   status: verified
-checked_on: '2026-09-30'
+checked_on: '2026-10-12'
 status: verified
 distinct_from:
 - hilquias-padre-de-eliaquim
+- hilquias-padre-de-jeremias
+- hilquias-padre-de-guemarias

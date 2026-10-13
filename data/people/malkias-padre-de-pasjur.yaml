@@ -4,13 +4,18 @@ name: Malkías
 names:
 - name: Malkías
 - name: Malkiya
-  note: Grafía de 1Cr 9:12.
+  note: Grafía de Jer 38:1, 1Cr 9:12 y Ne 11:12, y título del artículo de Perspicacia; la entrada «Malkías» remite a su núm.
+    3.
 perspicacia: 1200002866#3
-summary: Sacerdote, padre de Pasjur. Perspicacia junta en una entrada al padre de Pasjur de Jeremías y al antepasado del sacerdote
-  Adaya, que vivió en Jerusalén tras el destierro.
-reason: Perspicacia «Malkiya», núm. 3; 1Cr 9:12.
+disambiguation: El sacerdote padre de Pasjur (Jer 21:1; 1Cr 9:12), Malkiya núm. 3 de Perspicacia. No el «hijo del rey» de
+  la cisterna de Jer 38:6 ni los demás Malkiya que numera Perspicacia.
+summary: Sacerdote, padre de Pasjur. Perspicacia une en una sola entrada al de Jeremías y al de las listas de sacerdotes de
+  Crónicas y Nehemías.
+reason: Perspicacia «Malkiya», núm. 3, y «Malkías»; Jer 21:1; 1Cr 9:12.
 sources:
 - it-malkiya
+- jeremias-21
+- jeremias-38
 - 1-cronicas-9
 links:
 - title: 'Perspicacia: «Malkiya»'
@@ -21,9 +26,11 @@ relations:
   office: priest
   inferred: true
   sources:
-  - 1-cronicas-9
   - it-malkiya
-  reason: Perspicacia «Malkiya», núm. 3, lo llama sacerdote; 1Cr 9:12 lo pone en el linaje del sacerdote Adaya.
+  - jeremias-21
+  - 1-cronicas-9
+  reason: Perspicacia «Malkiya», núm. 3, lo llama sacerdote; Jer 21:1 solo lo nombra como padre de Pasjur, y 1Cr 9:12 lo pone
+    en el linaje del sacerdote Adaya.
   checked_on: '2026-10-12'
   status: verified
 checked_on: '2026-10-12'
@@ -31,4 +38,4 @@ status: verified
 distinct_from:
 - malkiya-de-tiempos-de-david
 - malkiya-hijo-de-etni
-disambiguation: 'Malkías núm. 3 de Perspicacia: sacerdote, padre de Pasjur. No los demás Malkías que numera Perspicacia.'
+- malkiya-hijo-del-rey
