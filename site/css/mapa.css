@@ -50,6 +50,11 @@
   .marca-lugar:hover { z-index: 3; }
 }
 .marca-lugar.resaltado, .marca-lugar.es-actual { z-index: 2; }   /* lo seleccionado queda encima de burbujas y candidatos */
+/* El anillo del foco rodea lo dibujado, a 2 px como en el resto del sitio: se mete hacia dentro el borde transparente. */
+.marca-lugar:focus-visible { outline-offset: calc(2px - var(--borde)); }
+.cand:focus-visible { outline-offset: -3px; }
+.viajero:focus-visible { outline-offset: -4px; }
+.marca-hallazgo:focus-visible { outline-offset: -5px; }
 .region-texto { display: block; font-family: var(--font-serif); font-size: 14px; font-weight: 500; letter-spacing: .22em; text-transform: uppercase; color: var(--map-region); white-space: nowrap;
   text-shadow: 0 0 3px var(--map-label-halo), 0 0 8px var(--map-label-halo); opacity: .9; }
 .marca-region.atenuado { opacity: .4; }
