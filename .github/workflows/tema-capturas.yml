@@ -38,6 +38,8 @@ jobs:
           a = "--on-ink: #1b1813; --glass: #211d17;"; assert a in s; open(p, "w").write(s.replace(a, "--on-ink: #1b1813;"))
           PY
           printf '\n#panel-cuerpo { background: #fbfcfa; }\n' >> "$R/mut2-site/css/base.css"
+          cp -R site "$R/mut3-site"
+          printf '\n.panel-cuerpo .be-crumbs { border-bottom: 2px solid #1f1b15; }\n' >> "$R/mut3-site/css/base.css"
       - name: Guarda
         shell: bash
         run: |
@@ -47,11 +49,10 @@ jobs:
             BE_TEMA_REPORT="$O/$tag.jsonl" BE_TEMA_SHOTS="$O/shots-$tag" BE_SITE_DIR="$site" \
               node --test --test-concurrency=1 "$@" tests/site/tema-oscuro.test.mjs > "$O/$tag.log" 2>&1 && rc=0 || rc=$?
             echo "$tag exit $rc"; grep -E '^ℹ (tests|pass|fail)' "$O/$tag.log" || true; }
-          run despues site
-          run antes "$R/antes-site"
-          run mut "$R/mut-site" --test-name-pattern="ficha de lugar at|recorrido at|búsqueda at"
-          run mut2 "$R/mut2-site" --test-name-pattern="ficha de lugar at"
+          # Las pasadas despues, antes, mut y mut2 quedaron en la ejecución anterior; esta solo prueba la regla desaparece.
+          run mut3 "$R/mut3-site" --test-name-pattern="ficha de lugar at"
       - name: Capturas lado a lado
+        if: false
         run: PW_DIR="$RUNNER_TEMP/pw/node_modules/playwright-core" node .github/componer.mjs "$RUNNER_TEMP/out/shots-antes" "$RUNNER_TEMP/out/shots-despues" "$RUNNER_TEMP/out/lado" > "$RUNNER_TEMP/out/lado.txt"
       - uses: actions/upload-artifact@v7
         if: always()
