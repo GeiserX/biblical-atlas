@@ -350,10 +350,11 @@ const PARIENTE = '(?:hij[oa]|padre|madre|espos[oa]|herman[oa]|niet[oa]|bisniet[o
 const PARENTESCO = new RegExp(`^(?:(?:el|la|su|medi[oa]|segund[oa]|primer[oa]?|tercer[oa]?|cuart[oa]|últim[oa])\\s+)?${PARIENTE}\\b`, 'i');
 /** El primer trozo de un texto de la ficha que puede distinguirla: su primera frase sin paréntesis y sin el nombre
     delante (dicho también de dos formas, «Paltí o Paltiel hijo de Lais», o con artículo, «El Matat padre de Helí»),
-    hasta la primera coma (el punto de «c. 6 e.c.» no acaba la frase), saltando los trozos que solo citan la fuente
-    («entrada núm. 2 de Perspicacia») y sin la conjunción que la coma deja colgando («El padre de Zabud y, según
-    Perspicacia…»). En una persona, si ese trozo es corto (tres palabras como mucho) y no dice el parentesco, y el
-    siguiente empieza por él, va el siguiente: «Acán de Judá, hijo de Carmí» da «hijo de Carmí», y «Apóstol, hijo de
+    hasta la primera coma (el punto de «c. 6 e.c.» o de «núm. 4» no acaba la frase), saltando la cita de la fuente
+    que la abre («núm. 4 de Perspicacia: descendiente de David») y los trozos que solo la citan («entrada núm. 2 de
+    Perspicacia») y sin la conjunción que la coma deja colgando («El padre de Zabud y, según Perspicacia…»). En una
+    persona, si ese trozo es corto (tres palabras como mucho) y no dice el parentesco, y el siguiente empieza por él, va
+    el siguiente: «Acán de Judá, hijo de Carmí» da «hijo de Carmí», y «Apóstol, hijo de
     Alfeo», «hijo de Alfeo». Solo el siguiente, y no tras un trozo largo ni con «su»: entonces suele hablar de otra
     persona de la frase («Sumo sacerdote casado con Jehoseba, hija del rey Jehoram», «Guerrero valiente y leal a David,
     su tío»), como en un lugar («Pueblo de Harúz, abuelo materno del rey Amón»). Una frase que solo dice quién no es
@@ -364,10 +365,11 @@ function distinguishingClause(text, names, persona) {
     for (const n of names) if (n && norm(r).startsWith(norm(n)) && /^[\s,]/.test(r.slice(n.length))) return r.slice(n.length).replace(/^[\s,]+/, '');
     return null;
   };
-  let t = String(text || '').replace(/\s*\([^)]*\)/g, '').split(/;|(?<!(?:^|\s)c)\.\s+(?=[A-ZÁÉÍÓÚÑ¿«\d])/)[0].replace(/\.$/, '').trim()
+  let t = String(text || '').replace(/\s*\([^)]*\)/g, '').split(/;|(?<!(?:^|\s)(?:c|núm))\.\s+(?=[A-ZÁÉÍÓÚÑ¿«\d])/)[0].replace(/\.$/, '').trim()
     .replace(/\be\.c$/, 'e.c.');
   const resto = sinNombre(t);
   if (resto != null) t = (/^[ou]\s/.test(resto) ? sinNombre(resto.slice(2)) : null) ?? resto;
+  t = t.replace(/^[^:]*(?:Perspicacia|\bnúm\.)[^:]*:\s*/, '');
   if (/^no\b/i.test(t)) return '';
   const parts = t.split(/,\s+/).filter((x) => x && !/Perspicacia|\bnúm\./.test(x));
   const i = persona && parts.length > 1 && parts[0].split(' ').length <= 3 && !PARENTESCO.test(parts[0]) && PARENTESCO.test(parts[1]) && !/^su\s/i.test(parts[1]) ? 1 : 0;

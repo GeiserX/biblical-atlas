@@ -198,13 +198,16 @@ test('Labán: a person named like a place is not a namesake, and keeps its whole
   }
 });
 
-test('the line does not end a sentence at the «c.» of a date, and keeps the dot of «e.c.»', async () => {
+test('the line does not end a sentence at the «c.» of a date or the «núm.» of an entry, and keeps the dot of «e.c.»', async () => {
   // data/people/caifas.yaml opens «Sumo sacerdote de c. 18 a c. 36 e.c.»: cut at the first «c.», the line was
   // «Sumo sacerdote de c». data/people/esdras.yaml: «… de 468 a.e.c.», whose last dot closes the sentence too.
   const page = await openPage(DESKTOP, 't=50.3000');
   const line = (id) => page.evaluate((id) => window.BE.distinguishingLine({ tipo: 'persona', id }), id);
   assert.match(await line('caifas'), /^Sumo sacerdote de c\. 18 a c\. 36 e\.c\./);
   assert.match(await line('esdras'), /468 a\.e\.c\.$/);
+  // data/people/acub-hijo-de-elioenai.yaml opens with the entry it comes from, «Acub núm. 4 de Perspicacia: descendiente
+  // de David, …»: the line was «núm», and the two Acub said the same.
+  assert.equal(await line('acub-hijo-de-elioenai'), 'descendiente de David');
   assert.deepEqual(page.pageErrors, []);
 });
 
