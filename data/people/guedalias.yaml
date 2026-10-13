@@ -21,6 +21,8 @@ sources:
 - 2-reyes-25
 - jeremias-40
 - si-3
+- jeremias-39
+- jeremias-41
 links:
 - title: 'Perspicacia: «Guedalías»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Guedal%C3%ADas/
@@ -36,8 +38,9 @@ relations:
   - it-guedalias
   - jeremias-40
   - 2-reyes-25
+  - jeremias-41
   reason: Estableció su residencia en Mizpá (Jer 40:6-8).
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-12'
   status: verified
 - type: died_in
   place: mizpa-de-benjamin
@@ -56,8 +59,12 @@ relations:
   sources:
   - 2-reyes-25
   - it-guedalias
+  - jeremias-39
+  - jeremias-40
+  - jeremias-41
+  - jeremias-43
   reason: '2Re 25:22: Guedalías, hijo de Ahicam, hijo de Safán.'
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-12'
   status: verified
 - type: holds_office
   place: juda
@@ -75,16 +82,58 @@ relations:
   - 2-reyes-25
   - it-guedalias
   - si-3
+  - jeremias-40
+  - jeremias-41
   reason: '2Re 25:22: Nabucodonosor lo puso al mando de los que quedaron en Judá; Perspicacia «Guedalías», núm. 4, lo llama
     gobernador.'
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-12'
+  status: verified
+- type: tie
+  person: nabucodonosor-ii
+  word: master
+  date:
+    from: -606
+    to: -606
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 607 a.e.c.
+  inferred: true
+  sources:
+  - jeremias-40
+  - it-guedalias
+  reason: 'Jer 40:5, 7, 9: el rey de Babilonia lo puso al mando; Perspicacia «Guedalías», núm. 4, dice que Nabucodonosor lo
+    nombró gobernador.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: tie
+  person: baalis
+  word: enemy
+  date:
+    from: -606
+    to: -606
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 607 a.e.c.
+  inferred: true
+  sources:
+  - jeremias-40
+  - it-guedalias
+  reason: 'Jer 40:14: Baalís envió a Ismael para matarlo; Perspicacia «Guedalías», núm. 4, dice que su gobierno no agradaba
+    al rey ammonita.'
+  checked_on: '2026-10-12'
   status: verified
 perspicacia: 1200001632#4
 history:
 - date: '2026-09-30'
   change: El nombre del padre va con la grafía de la TNM, Ahicam (2Re 25:22); Ahiqam es la de Perspicacia.
   source: 2-reyes-25
-checked_on: '2026-09-30'
+checked_on: '2026-10-12'
 status: verified
 distinct_from:
 - guedalias-hijo-de-amarias
+- guedalias-hijo-de-pasjur
+- guedalias-hijo-de-jedutun

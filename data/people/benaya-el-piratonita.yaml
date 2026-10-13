@@ -7,12 +7,17 @@ perspicacia: 1200000632#2
 disambiguation: Benaya el piratonita, de Efraín; no Benaya hijo de Jehoiadá, jefe de la guardia de David.
 distinct_from:
 - benaya-hijo-de-jehoiada
+- benaya-simeonita
+- benaya-musico
+- benaya-trompetista
 summary: Efraimita de Piratón, uno de los treinta guerreros de David. Estuvo al frente de la división del undécimo mes.
 reason: Perspicacia «Benaya», núm. 2; 2Sa 23:30.
 sources:
 - it-benaya
 - it-piraton
 - 2-samuel-23
+- 1-cronicas-11
+- 1-cronicas-27
 links:
 - title: 'Perspicacia: «Benaya»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Benaya/
@@ -24,8 +29,10 @@ relations:
   sources:
   - 2-samuel-23
   - it-piraton
+  - 1-cronicas-11
+  - 1-cronicas-27
   reason: '2Sa 23:30: un piratonita; Perspicacia «Piratón, piratonita».'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: tie
   person: david
@@ -33,8 +40,10 @@ relations:
   inferred: false
   sources:
   - 2-samuel-23
+  - 1-cronicas-11
+  - 1-cronicas-27
   reason: '2Sa 23:30: uno de los treinta guerreros de David.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

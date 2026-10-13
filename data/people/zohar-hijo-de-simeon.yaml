@@ -16,6 +16,7 @@ sources:
 - exodo-6
 - numeros-26
 - it-zerah
+- 1-cronicas-4
 links:
 - title: 'Perspicacia: «Zóhar»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Z%C3%B3har/
@@ -33,8 +34,9 @@ relations:
   - it-zohar
   - exodo-6
   - numeros-26
+  - 1-cronicas-4
   reason: 'Gé 46:10: aparece entre los hijos de Simeón.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: lived_in
   place: egipto
@@ -44,10 +46,12 @@ relations:
   reason: 'Gé 46:8, 26, 27: figura en la lista de la casa de Jacob que se instaló en Egipto.'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-10-02'
+checked_on: '2026-10-12'
 status: verified
 distinct_from:
 - zerah-de-bozra
 - zerah-hijo-de-juda
 - zerah-hijo-de-reuel
 - zohar-padre-de-efron
+- zerah-hijo-de-adaya
+- zerah-hijo-de-ido

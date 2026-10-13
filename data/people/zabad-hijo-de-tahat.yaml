@@ -1,0 +1,33 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: zabad-hijo-de-tahat
+name: Zabad
+names:
+- name: Zabad
+perspicacia: 1200004643#1
+disambiguation: Zabad de Efraín, de la familia de Sutélah; no Zabad, llamado también Jozacar, el que mató al rey Jehoás, ni
+  los demás Zabad.
+distinct_from:
+- jozacar
+- zabad-hijo-de-ahlai
+- zabad-hijo-de-natan
+summary: Efraimita de la familia de Sutélah, hijo de Táhat.
+reason: Perspicacia «Zabad», núm. 1; 1Cr 7:20, 21.
+sources:
+- it-zabad
+- 1-cronicas-7
+links:
+- title: 'Perspicacia: «Zabad»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zabad/
+  type: perspicacia
+relations:
+- type: kin
+  person: tahat-hijo-de-eleada
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-7
+  reason: '1Cr 7:21: Zabad era hijo de Táhat.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

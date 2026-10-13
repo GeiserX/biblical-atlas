@@ -1,0 +1,21 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: azazias-musico
+name: Azazías
+names:
+- name: Azazías
+perspicacia: 1200000489#1
+disambiguation: El arpista de David; no el padre de Hosea, príncipe de Efraín (núm. 2), ni el levita de Ezequías (núm. 3),
+  según Perspicacia «Azazías».
+summary: Uno de los seis arpistas que dirigieron la música cuando el Arca fue trasladada a Jerusalén.
+reason: Perspicacia «Azazías», núm. 1; 1Cr 15:21.
+sources:
+- it-azazias
+- 1-cronicas-15
+links:
+- title: 'Perspicacia: «Azazías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Azaz%C3%ADas/
+  type: perspicacia
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- azazias-padre-de-hosea

@@ -1,0 +1,32 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: quenaz-hijo-de-ela
+name: Quenaz
+names:
+- name: Quenaz
+perspicacia: 1200002590#3
+disambiguation: Quenaz nieto de Caleb (núm. 3 de Perspicacia); no Quenaz padre de Otniel ni el jeque edomita.
+summary: Descendiente de Caleb, el hijo de Jefuné, por su hijo Elá.
+reason: Perspicacia «Quenaz»; 1Cr 4:15.
+sources:
+- it-quenaz
+- 1-cronicas-4
+links:
+- title: 'Perspicacia: «Quenaz»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Quenaz/
+  type: perspicacia
+relations:
+- type: kin
+  person: ela-hijo-de-caleb
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-4
+  - it-quenaz
+  reason: '1Cr 4:15: el hijo de Elá fue Quenaz (la nota dice «los hijos»).'
+  checked_on: '2026-10-12'
+  status: verified
+distinct_from:
+- quenaz-padre-de-otniel
+- quenaz-hijo-de-elifaz
+checked_on: '2026-10-12'
+status: verified

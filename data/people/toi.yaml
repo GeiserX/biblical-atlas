@@ -13,6 +13,7 @@ sources:
 - it-toi
 - it-hamat
 - 2-samuel-8
+- 1-cronicas-18
 links:
 - title: 'Perspicacia: «Toi, Tou»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Toi-Tou/
@@ -27,9 +28,10 @@ relations:
   sources:
   - 2-samuel-8
   - it-toi
+  - 1-cronicas-18
   reason: '2Sa 8:9: el rey Toi de Hamat.'
   inferred: false
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: tie
   person: hadadezer
@@ -37,10 +39,11 @@ relations:
   sources:
   - 2-samuel-8
   - it-hamat
+  - 1-cronicas-18
   reason: '2Sa 8:10: Toi y Hadadézer estaban en guerra a menudo. Perspicacia «Hamat» ve en Hadadézer al enemigo que Toi y
     David compartían.'
   inferred: false
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

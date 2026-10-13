@@ -1,0 +1,26 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hotam-el-aroerita
+name: Hotam
+names:
+- name: Hotam
+perspicacia: 1200002092#2
+disambiguation: Hotam el aroerita, padre de Sama y Jeiel (1Cr 11:44); no el aserita hijo de Héber.
+distinct_from:
+- hotam-hijo-de-heber
+summary: Aroerita, padre de Sama y Jeiel, dos guerreros poderosos de David. Perspicacia cree que su Aroer quizá era la de
+  Judá.
+reason: Perspicacia «Hotam», núm. 2, y «Aroerita»; 1Cr 11:44.
+sources:
+- it-hotam
+- it-aroerita
+- 1-cronicas-11
+links:
+- title: 'Perspicacia: «Hotam»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hotam/
+  type: perspicacia
+- title: 'Perspicacia: «Aroerita»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Aroerita/
+  type: perspicacia
+relations: []
+checked_on: '2026-10-12'
+status: verified

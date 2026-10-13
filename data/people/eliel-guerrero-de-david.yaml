@@ -1,0 +1,36 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: eliel-guerrero-de-david
+name: Eliel
+names:
+- name: Eliel
+perspicacia: 1200001302#6
+disambiguation: Eliel de 1Cr 11:47, guerrero de David; no Eliel el mahavita del versículo anterior, el gadita ni los levitas.
+distinct_from:
+- eliel-descendiente-de-sasac
+- eliel-descendiente-de-simei
+- eliel-el-gadita
+- eliel-el-mahavita
+- eliel-jefe-de-los-hebronitas
+- elihu-hijo-de-tohu
+- eliel-de-manases
+summary: Otro de los guerreros poderosos de David, nombrado al final de la lista junto a Obed y Jaasiel.
+reason: Perspicacia «Eliel», núm. 6; 1Cr 11:47.
+sources:
+- it-eliel
+- 1-cronicas-11
+links:
+- title: 'Perspicacia: «Eliel»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Eliel/
+  type: perspicacia
+relations:
+- type: tie
+  person: david
+  word: master
+  inferred: false
+  sources:
+  - 1-cronicas-11
+  reason: '1Cr 11:47: figura entre los valientes de David.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

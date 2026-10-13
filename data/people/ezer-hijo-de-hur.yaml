@@ -1,0 +1,33 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ezer-hijo-de-hur
+name: Ézer
+names:
+- name: Ézer
+perspicacia: 1200001472#3
+disambiguation: Ézer hijo de Hur, de Judá (núm. 3 de Perspicacia); no el jeque horeo ni los demás Ézer.
+summary: Judaíta, hijo de Hur y padre de Husá; no se sabe si Husá fue un hombre o una población.
+reason: Perspicacia «Ézer»; 1Cr 4:4.
+sources:
+- it-ezer
+- 1-cronicas-4
+links:
+- title: 'Perspicacia: «Ézer»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/%C3%89zer/
+  type: perspicacia
+relations:
+- type: kin
+  person: hur-hijo-de-caleb
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-4
+  - it-ezer
+  reason: '1Cr 4:4: entre los hijos de Hur; Perspicacia «Ézer», núm. 3, lo llama hijo de Hur.'
+  checked_on: '2026-10-12'
+  status: verified
+distinct_from:
+- ezer-hijo-de-seir
+- ezer-el-gadita
+- ezer-hijo-de-efrain
+checked_on: '2026-10-12'
+status: verified

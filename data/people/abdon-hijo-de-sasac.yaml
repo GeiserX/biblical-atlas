@@ -1,0 +1,40 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: abdon-hijo-de-sasac
+name: Abdón
+names:
+- name: Abdón
+perspicacia: 1200000016#4
+disambiguation: Abdón hijo de Sasac; no Abdón el juez, hijo de Hilel, ni Abdón hijo de Jeiel, ni el oficial de Josías.
+distinct_from:
+- abdon-hijo-de-hilel
+- abdon-hijo-de-jeiel
+- acbor-hijo-de-micaya
+summary: Benjamita, hijo de Sasac; cabeza de una familia que vivía en Jerusalén.
+reason: Perspicacia «Abdón», núm. 4; 1Cr 8:23, 25, 28.
+sources:
+- it-abdon
+- 1-cronicas-8
+links:
+- title: 'Perspicacia: «Abdón»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Abd%C3%B3n/
+  type: perspicacia
+relations:
+- type: kin
+  person: sasac
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  reason: 1Cr 8:25 lo cuenta entre los hijos de Sasac.
+  checked_on: '2026-10-12'
+  status: verified
+- type: lived_in
+  place: jerusalen
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  reason: '1Cr 8:28: los jefes de casas paternas de esta lista vivían en Jerusalén.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

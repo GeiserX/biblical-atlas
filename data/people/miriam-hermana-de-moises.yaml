@@ -29,6 +29,7 @@ sources:
 - deuteronomio-24
 - miqueas-6
 - w03-que-espera-jehova
+- 1-cronicas-6
 links:
 - title: 'Perspicacia: «Míriam»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/M%C3%ADriam/
@@ -46,8 +47,9 @@ relations:
   - it-moises
   - exodo-2
   - numeros-26
+  - 1-cronicas-6
   reason: 'Perspicacia «Míriam», párr. 2 (Nú 26:59); «Moisés», párr. 2: era unos años mayor que él.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: kin
   person: aaron
@@ -57,8 +59,9 @@ relations:
   - it-miriam
   - exodo-15
   - numeros-26
+  - 1-cronicas-6
   reason: 'Perspicacia «Míriam», párr. 2: hija de Amram y Jokébed, hermana de Aarón (Nú 26:59).'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: died_in
   place: cades
@@ -77,8 +80,9 @@ relations:
   - exodo-2
   - it-miriam
   - numeros-26
+  - 1-cronicas-6
   reason: 'Éx 2:1-4: es la hermana del niño nacido de aquel levita; Perspicacia «Míriam», núm. 1, la da como hija de Amram.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: kin
   person: jokebed
@@ -100,5 +104,7 @@ history:
 - date: '2026-09-29'
   change: Se añade lo que cuenta Éx 2:4-8, que Perspicacia «Míriam», núm. 1, atribuye a ella.
   source: exodo-2
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified
+distinct_from:
+- miriam-hija-de-mered

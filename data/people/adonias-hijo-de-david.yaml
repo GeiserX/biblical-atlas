@@ -14,6 +14,7 @@ sources:
 - 1-reyes-1
 - it-salomon
 - 1-reyes-2
+- 1-cronicas-3
 links:
 - title: 'Perspicacia: «Adonías»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Adon%C3%ADas/
@@ -30,8 +31,9 @@ relations:
   - 2-samuel-3
   - it-adonias
   - 1-reyes-1
+  - 1-cronicas-3
   reason: '2Sa 3:4: el cuarto hijo de David.'
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-12'
   status: verified
 - type: kin
   person: haguit
@@ -42,8 +44,9 @@ relations:
   - it-adonias
   - 1-reyes-1
   - 1-reyes-2
+  - 1-cronicas-3
   reason: '2Sa 3:4: hijo de Haguit.'
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-12'
   status: verified
 - type: born_in
   place: hebron
@@ -51,8 +54,9 @@ relations:
   sources:
   - 2-samuel-3
   - it-adonias
+  - 1-cronicas-3
   reason: '2Sa 3:4, 5: nacido en Hebrón.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: kin
   person: absalon
@@ -99,5 +103,5 @@ relations:
   reason: '1Re 1:7: el sacerdote Abiatar le ofrece su ayuda y su apoyo.'
   checked_on: '2026-09-30'
   status: verified
-checked_on: '2026-09-30'
+checked_on: '2026-10-12'
 status: verified

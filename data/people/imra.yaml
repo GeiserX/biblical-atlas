@@ -1,0 +1,27 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: imra
+name: Imrá
+names:
+- name: Imrá
+perspicacia: '1200002161'
+summary: Aserita, hijo de Zofá; guerrero valiente, cabeza de una casa paterna y uno de los principales.
+reason: Perspicacia «Imrá»; 1Cr 7:36, 40.
+sources:
+- it-imra
+- 1-cronicas-7
+links:
+- title: 'Perspicacia: «Imrá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Imr%C3%A1/
+  type: perspicacia
+relations:
+- type: kin
+  person: zofa
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-7
+  reason: 1Cr 7:36 lo cuenta entre los hijos de Zofá.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

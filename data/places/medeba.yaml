@@ -18,6 +18,7 @@ sources:
 - numeros-21
 - josue-13
 - isaias-15
+- 1-cronicas-19
 links:
 - title: 'Perspicacia: «Medebá»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Medeb%C3%A1/
@@ -29,5 +30,5 @@ history:
 - date: '2026-09-30'
   change: Añade que la declaración de Isaías contra Moab la muestra en manos moabitas (Perspicacia «Medebá», párr. 3).
   source: isaias-15
-checked_on: '2026-09-30'
+checked_on: '2026-10-12'
 status: verified

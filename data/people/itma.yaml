@@ -1,0 +1,27 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: itma
+name: Itmá
+names:
+- name: Itmá
+perspicacia: '1200002239'
+summary: Moabita, uno de los muchos guerreros poderosos de David que nombra Crónicas.
+reason: Perspicacia «Itmá»; 1Cr 11:46.
+sources:
+- it-itma
+- 1-cronicas-11
+links:
+- title: 'Perspicacia: «Itmá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Itm%C3%A1/
+  type: perspicacia
+relations:
+- type: tie
+  person: david
+  word: master
+  inferred: false
+  sources:
+  - 1-cronicas-11
+  reason: '1Cr 11:46: figura entre los valientes de David; era moabita.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

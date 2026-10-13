@@ -1,0 +1,64 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hananias-hijo-de-azur
+name: Hananías
+names:
+- name: Hananías
+perspicacia: 1200001853#5
+disambiguation: El profeta falso de Gabaón, hijo de Azur, que rompió el yugo de Jeremías; no es Sadrac, cuyo nombre hebreo
+  también era Hananías, ni el padre del príncipe Sedequías ni el abuelo de Iriya.
+summary: Profeta falso de Gabaón. En el cuarto año de Sedequías anunció en el templo que en dos años Jehová quebraría el poder
+  de Babilonia, y rompió el yugo de Jeremías. Murió ese mismo año, como Jeremías le dijo.
+reason: Perspicacia «Hananías», núm. 5; Jer 28:1-17. «Toda Escritura», libro 24, cuenta su muerte entre las profecías que
+  Jeremías vio cumplidas.
+sources:
+- it-hananias
+- jeremias-28
+- si-jeremias
+links:
+- title: 'Perspicacia: «Hananías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hanan%C3%ADas/
+  type: perspicacia
+- title: Jeremías 28 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/28/
+  type: bible
+relations:
+- type: kin
+  person: azur-padre-de-hananias
+  word: father
+  sources:
+  - jeremias-28
+  - it-hananias
+  reason: 'Jer 28:1: Hananías hijo de Azur.'
+  inferred: false
+  checked_on: '2026-10-12'
+  status: verified
+- type: lived_in
+  place: gabaon
+  sources:
+  - jeremias-28
+  - it-hananias
+  reason: Jer 28:1 lo llama Hananías de Gabaón; Perspicacia lo hace profeta de esa ciudad benjamita.
+  inferred: false
+  checked_on: '2026-10-12'
+  status: verified
+- type: tie
+  person: jeremias-profeta
+  word: enemy
+  inferred: true
+  sources:
+  - jeremias-28
+  - it-hananias
+  - jr-5
+  reason: 'Jer 28:1-17: contradice a Jeremías en público y le rompe el yugo. Perspicacia dice que se le opuso, y «Dios nos
+    habla mediante Jeremías», cap. 5, párr. 6, lo cuenta entre sus enemigos.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- sadrac
+- hananias-padre-de-sedequias
+- hananias-abuelo-de-iriya
+- hananias-hijo-de-heman
+- hananias-hijo-de-sasac
+- hananias-hijo-de-zorobabel

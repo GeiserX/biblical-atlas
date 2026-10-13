@@ -10,6 +10,7 @@ reason: Perspicacia «Jobab», núm. 2; Gé 36:33, 34.
 sources:
 - it-jobab
 - genesis-36
+- 1-cronicas-1
 links:
 - title: 'Perspicacia: «Jobab»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jobab/
@@ -25,8 +26,9 @@ relations:
   sources:
   - it-jobab
   - genesis-36
+  - 1-cronicas-1
   reason: 'Gé 36:33: Jobab hijo de Zérah de Bozrá.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: succeeds
   person: bela-hijo-de-beor
@@ -34,8 +36,9 @@ relations:
   sources:
   - it-jobab
   - genesis-36
+  - 1-cronicas-1
   reason: 'Gé 36:33: reinó en lugar de Bela cuando este murió.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   office: king
   status: verified
 - type: holds_office
@@ -44,11 +47,14 @@ relations:
   inferred: false
   sources:
   - genesis-36
+  - 1-cronicas-1
   reason: Reinó en Edom tras Bela (Gé 36:31, 33).
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-02'
+checked_on: '2026-10-12'
 status: verified
 distinct_from:
 - jobab-rey-de-madon
 - jobab-hijo-de-joctan
+- jobab-descendiente-de-elpaal
+- jobab-hijo-de-saharaim

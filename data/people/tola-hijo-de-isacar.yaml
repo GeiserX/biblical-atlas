@@ -12,6 +12,7 @@ sources:
 - it-tola
 - genesis-46
 - numeros-26
+- 1-cronicas-7
 links:
 - title: 'Perspicacia: «Tolá»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Tol%C3%A1/
@@ -28,8 +29,9 @@ relations:
   - genesis-46
   - it-tola
   - numeros-26
+  - 1-cronicas-7
   reason: 'Gé 46:13: aparece entre los hijos de Isacar.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: lived_in
   place: egipto
@@ -43,7 +45,7 @@ history:
 - date: '2026-09-29'
   change: El padre del juez Tolá se escribe Pua en la TNM (Jue 10:1); Puá es la grafía de Perspicacia.
   source: jueces-10
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified
 distinct_from:
 - tola-hijo-de-pua

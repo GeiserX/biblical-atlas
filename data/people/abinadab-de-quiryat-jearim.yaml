@@ -13,6 +13,7 @@ sources:
 - it-abinadab
 - 1-samuel-7
 - 2-samuel-6
+- 1-cronicas-13
 links:
 - title: 'Perspicacia: «Abinadab»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Abinadab/
@@ -28,10 +29,11 @@ relations:
   - 1-samuel-7
   - it-abinadab
   - 2-samuel-6
+  - 1-cronicas-13
   reason: '1Sa 7:1: el Arca llegó a su casa, en Quiryat-Jearim.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-09-30'
+checked_on: '2026-10-12'
 status: verified
 distinct_from:
 - abinadab-hijo-de-jese

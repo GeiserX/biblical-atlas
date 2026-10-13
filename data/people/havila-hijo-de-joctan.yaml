@@ -13,6 +13,7 @@ reason: Perspicacia «Havilá», núm. 4; Gé 10:29.
 sources:
 - it-havila
 - genesis-10
+- 1-cronicas-1
 links:
 - title: 'Perspicacia: «Havilá»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Havil%C3%A1/
@@ -27,8 +28,9 @@ relations:
   inferred: false
   sources:
   - genesis-10
+  - 1-cronicas-1
   reason: Gé 10:29 lo cuenta entre los trece hijos de Joctán.
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

@@ -1,0 +1,32 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: abi-ezer-hijo-de-hamoleket
+name: Abí-Ézer
+names:
+- name: Abí-Ézer
+perspicacia: 1200000035#2
+disambiguation: Abí-Ézer hijo de Hamoléket; no Abí-Ézer hijo de Galaad, cabeza de los yezeritas, ni el guerrero de Anatot
+  del ejército de David.
+distinct_from:
+- abi-ezer-el-anatotita
+- abi-ezer-hijo-de-galaad
+summary: Manasita, hijo de Hamoléket, hermana de Galaad el nieto de Manasés.
+reason: Perspicacia «Abí-ézer», núm. 2; 1Cr 7:18.
+sources:
+- it-abi-ezer
+- 1-cronicas-7
+links:
+- title: 'Perspicacia: «Abí-ézer»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ab%C3%AD-%C3%A9zer/
+  type: perspicacia
+relations:
+- type: kin
+  person: hamoleket
+  word: mother
+  inferred: false
+  sources:
+  - 1-cronicas-7
+  reason: '1Cr 7:18: su madre fue Hamoléket.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

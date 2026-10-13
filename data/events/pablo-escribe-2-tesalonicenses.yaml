@@ -1,0 +1,58 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: pablo-escribe-2-tesalonicenses
+title: Pablo escribe 2 Tesalonicenses en Corinto
+date:
+  from: 51
+  to: 51
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 51 e.c.
+narrative_order:
+  series: hechos
+  order: 1807
+places:
+- corinto
+- tesalonica
+people:
+- pablo
+- silas
+- timoteo
+type: writing
+roles:
+  pablo: wrote
+passages:
+- 2Te 1:1
+- 2Te 2:1, 2
+- 2Te 2:5
+- 2Te 3:11
+- 2Te 3:17
+summary: Todavía en Corinto, poco después de la primera carta, Pablo escribe a Tesalónica con Silvano y Timoteo. Corrige a
+  quienes daban por llegado el día de Jehová, reprende a los que no trabajan y escribe el saludo de su mano.
+reason: 'Estudio 3 y Tabla de los libros: Corinto, c. 51. Perspicacia «Tesalonicenses» y «Testimonio completo», cap. 19,
+  la ponen poco después de la primera carta; la nota de 2Te 2:5, tras fundar la congregación. 2Te 3:11: llegaron
+  más noticias.'
+sources:
+- 2-tesalonicenses-1
+- 2-tesalonicenses-2
+- 2-tesalonicenses-3
+- si-3
+- tnm-tabla
+- it-tesalonicenses
+- bt-19
+links:
+- title: 2 Tesalonicenses 1 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-tesalonicenses/1/
+  type: bible
+- title: 2 Tesalonicenses 3 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-tesalonicenses/3/
+  type: bible
+- title: 'Perspicacia: «Tesalonicenses, Cartas a los»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Tesalonicenses-Cartas-a-los/
+  type: perspicacia
+search: segunda carta a los Tesalonicenses
+note: 'Orden 1807 de la serie hechos, justo tras la primera carta (1806): las fuentes solo dicen que vino poco después.
+  Ninguna la sitúa antes o después de la visión de Hch 18:9, 10 (1809).'
+checked_on: '2026-10-13'
+status: verified

@@ -15,6 +15,7 @@ sources:
 - 1-samuel-30
 - 2-samuel-2
 - 2-samuel-3
+- 1-cronicas-3
 links:
 - title: 'Perspicacia: «Abigail»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Abigail/
@@ -33,8 +34,9 @@ relations:
   - 1-samuel-25
   - it-david
   - 1-samuel-27
+  - 1-cronicas-3
   reason: '1Sa 25:40: los siervos de David van a buscarla a Carmelo; Perspicacia «David» la llama Abigaíl de Carmelo.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: lived_in
   place: gat
@@ -63,7 +65,7 @@ relations:
   reason: '2Sa 2:2, 3: sube con David a Hebrón y se quedan a vivir allí.'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified
 distinct_from:
 - abigail-hija-de-nahas

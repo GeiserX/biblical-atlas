@@ -9,6 +9,7 @@ disambiguation: Rey de Israel, hijo de Acab; su cuñado Jehoram reinaba a la vez
 distinct_from:
 - jehoram-de-juda
 - joram-hijo-de-toi
+- joram-descendiente-de-eliezer
 date:
   from: -916
   to: -904
@@ -137,5 +138,5 @@ relations:
   checked_on: '2026-09-30'
   status: verified
 perspicacia: 1200002381#2
-checked_on: '2026-09-30'
+checked_on: '2026-10-12'
 status: verified

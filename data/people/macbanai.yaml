@@ -1,0 +1,29 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: macbanai
+name: Macbanái
+names:
+- name: Macbanái
+- name: Macbanai
+perspicacia: '1200002816'
+summary: Gadita, el undécimo de los once guerreros de Gad que cruzaron el Jordán crecido para unirse a David en el desierto,
+  cuando Saúl lo perseguía.
+reason: Perspicacia «Macbanai»; 1Cr 12:8-15.
+sources:
+- it-macbanai
+- 1-cronicas-12
+links:
+- title: 'Perspicacia: «Macbanai»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Macbanai/
+  type: perspicacia
+relations:
+- type: tie
+  person: david
+  word: master
+  inferred: false
+  sources:
+  - 1-cronicas-12
+  reason: '1Cr 12:8, 13, 14: gadita que se pasó a David y llegó a ser jefe de su ejército.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

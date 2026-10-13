@@ -14,16 +14,18 @@ narrative_order:
   order: 25026
 places:
 - egipto
+- tahpanhes
 people:
 - johanan-hijo-de-carea
 - seraya-hijo-de-tanhumet
 - jaazanias-jefe-militar
 - jeremias-profeta
+- baruc-hijo-de-nerias
 passages:
 - 2Re 25:26
 - Jer 43:4-7
-summary: Por miedo a los caldeos después de la muerte de Guedalías, Johanán y los otros jefes del ejército se llevan a Egipto
-  a todo el pueblo que quedaba, pequeños y grandes, y también a Jeremías.
+summary: Por miedo a los caldeos tras la muerte de Guedalías, Johanán y los demás jefes desoyen a Jeremías y se llevan a Egipto,
+  hasta Tahpanhés, a todo el pueblo que quedaba, con Jeremías y Baruc.
 reason: 'Estudio 3, párr. 6: tras el asesinato del mes séptimo huyeron, y hacia el 1 de octubre de 607 la tierra ya estaba
   desolada. Perspicacia «Johanán», núm. 5.'
 sources:
@@ -33,6 +35,8 @@ sources:
 - it-seraya
 - it-jaazanias
 - jeremias-43
+- it-baruc
+- it-tahpanhes
 links:
 - title: 'Perspicacia: «Johanán»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Johan%C3%A1n/
@@ -40,5 +44,9 @@ links:
 - title: 2 Reyes 25 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-reyes/25/
   type: bible
-checked_on: '2026-09-30'
+history:
+- date: '2026-10-12'
+  change: El resumen añade a Baruc, que también va a Egipto, y la llegada a Tahpanhés, que cuenta Jer 43:6, 7.
+  source: jeremias-43
+checked_on: '2026-10-12'
 status: verified

@@ -84,5 +84,7 @@ history:
   change: 'La desambiguación ya no cita el versículo de Hechos del puerto: esa cita ponía a la reina en la página de ese capítulo.'
   source: it-atalia
 perspicacia: 1200000457#1
-checked_on: '2026-09-30'
+checked_on: '2026-10-12'
 status: verified
+distinct_from:
+- atalia-de-benjamin

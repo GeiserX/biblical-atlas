@@ -1,0 +1,33 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: tarea
+name: Tarea
+names:
+- name: Tarea
+- name: Tahrea
+  note: Así lo llama 1Cr 9:41; Perspicacia «Tahrea» lo identifica con Tarea.
+perspicacia: '1200004324'
+summary: Descendiente de Saúl por la línea de Jonatán, hijo de Miqueas. También se le llama Tahrea.
+reason: Perspicacia «Tarea»; 1Cr 8:33-35.
+sources:
+- it-tarea
+- 1-cronicas-8
+- it-tahrea
+- 1-cronicas-9
+links:
+- title: 'Perspicacia: «Tarea»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Tarea/
+  type: perspicacia
+relations:
+- type: kin
+  person: mica-hijo-de-mefiboset
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  - 1-cronicas-9
+  - it-tahrea
+  reason: 1Cr 8:35 lo cuenta entre los hijos de Micá.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

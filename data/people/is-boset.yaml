@@ -6,6 +6,9 @@ names:
   note: Perspicacia escribe Is-bóset y le da el sentido de «hombre de vergüenza».
 - name: Is-bóset
   note: Grafía de Perspicacia.
+- name: Esbaal
+  note: Nombre de 1Cr 8:33 y 9:39; la nota de 8:33 dice que es Is-Bóset. Perspicacia «Is-bóset» explica el cambio de «baal»
+    por «bóset».
 perspicacia: '1200002211'
 summary: Hijo de Saúl. Muerto su padre, Abner lo llevó a Mahanaim y lo hizo rey de todas las tribus salvo Judá. Tenía 40 años
   y reinó dos; al final lo asesinaron dos de sus capitanes.
@@ -17,6 +20,8 @@ sources:
 - it-david
 - 2-samuel-3
 - 2-samuel-4
+- 1-cronicas-8
+- 1-cronicas-9
 links:
 - title: 'Perspicacia: «Is-bóset»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Is-b%C3%B3set/
@@ -40,8 +45,10 @@ relations:
   - it-is-boset
   - 2-samuel-3
   - 2-samuel-4
+  - 1-cronicas-8
+  - 1-cronicas-9
   reason: 2Sa 2:8, 10, 12 lo llaman hijo de Saúl.
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: lived_in
   place: mahanaim
@@ -107,5 +114,5 @@ relations:
   reason: 2Sa 4:5-7 lo matan en su casa; Perspicacia «Mahanaim» cree que fue en esa ciudad, su capital.
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

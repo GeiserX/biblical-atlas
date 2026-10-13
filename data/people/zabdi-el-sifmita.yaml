@@ -1,0 +1,36 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: zabdi-el-sifmita
+name: Zabdí
+names:
+- name: Zabdí
+perspicacia: 1200004646#3
+disambiguation: Zabdí el sifmita, encargado del vino de David; no el judaíta abuelo de Acán.
+distinct_from:
+- zabdi-abuelo-de-acan
+- zabdi-descendiente-de-simei
+summary: Sifmita que guardaba el vino de las bodegas del rey David. Perspicacia cree que el gentilicio lo hace de Sifmot o
+  de Sefam.
+reason: Perspicacia «Zabdí», núm. 3, y «Sifmita»; 1Cr 27:27.
+sources:
+- it-zabdi
+- it-sifmita
+- 1-cronicas-27
+links:
+- title: 'Perspicacia: «Zabdí»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zabd%C3%AD/
+  type: perspicacia
+- title: 'Perspicacia: «Sifmita»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sifmita/
+  type: perspicacia
+relations:
+- type: tie
+  person: david
+  word: master
+  inferred: false
+  sources:
+  - 1-cronicas-27
+  reason: '1Cr 27:27, 31: guardaba el vino de las bodegas; era uno de los que administraban la hacienda del rey.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

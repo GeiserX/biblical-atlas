@@ -1,0 +1,28 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ula
+name: Ulá
+names:
+- name: Ulá
+perspicacia: '1200004505'
+summary: Aserita cuyos tres hijos fueron cabezas de familia y guerreros valientes.
+reason: Perspicacia «Ulá»; 1Cr 7:39, 40.
+sources:
+- it-ula
+- 1-cronicas-7
+links:
+- title: 'Perspicacia: «Ulá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ul%C3%A1/
+  type: perspicacia
+relations:
+- type: kin
+  person: aser-hijo-de-jacob
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-7
+  - it-ula
+  reason: 1Cr 7:39, 40 lo cuenta entre los descendientes de Aser.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

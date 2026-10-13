@@ -1,0 +1,30 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: bedan-hijo-de-ulam
+name: Bedán
+names:
+- name: Bedán
+perspicacia: 1200000600#2
+disambiguation: Bedán hijo de Ulam, manasita; no Bedán, el libertador de Israel que nombra Samuel.
+distinct_from:
+- bedan-libertador
+summary: Manasita, hijo de Ulam, de la descendencia de Galaad hijo de Makir.
+reason: Perspicacia «Bedán», núm. 2; 1Cr 7:17.
+sources:
+- it-bedan
+- 1-cronicas-7
+links:
+- title: 'Perspicacia: «Bedán»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Bed%C3%A1n/
+  type: perspicacia
+relations:
+- type: kin
+  person: ulam-de-manases
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-7
+  reason: '1Cr 7:17: el hijo de Ulam fue Bedán (lit. «los hijos»).'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

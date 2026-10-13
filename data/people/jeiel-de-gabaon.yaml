@@ -1,0 +1,49 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jeiel-de-gabaon
+name: Jeiel
+names:
+- name: Jeiel
+perspicacia: 1200002406#2
+disambiguation: Jeiel de Gabaón, antepasado de Saúl; no los otros Jeiel que numera Perspicacia, rubenitas, levitas y guerreros
+  de David.
+summary: Benjamita que se estableció en Gabaón con su esposa Maacá y sus hijos. Fue antepasado del rey Saúl; Perspicacia cree
+  que, al parecer, se le llamaba también Abiel.
+reason: Perspicacia «Jeiel», núm. 2; 1Cr 8:29.
+sources:
+- it-jeiel
+- 1-cronicas-8
+- it-gabaon
+- 1-cronicas-9
+links:
+- title: 'Perspicacia: «Jeiel»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jeiel/
+  type: perspicacia
+relations:
+- type: lived_in
+  place: gabaon
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  - it-jeiel
+  - 1-cronicas-9
+  - it-gabaon
+  reason: '1Cr 8:29: Jeiel, el padre de Gabaón, vivía en Gabaón.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: maaca-esposa-de-jeiel
+  word: wife
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  - 1-cronicas-9
+  reason: '1Cr 8:29: la esposa de Jeiel se llamaba Maacá.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- jaaziel
+- jeiel-el-rubenita
+- jeiel-hijo-de-hotam
+- jeiel-portero

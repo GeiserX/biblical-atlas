@@ -7,6 +7,8 @@ perspicacia: 1200000224#3
 disambiguation: Sacerdote del becerro de Betel en días de Jeroboán II; no es Amasías, rey de Judá e hijo de Jehoás.
 distinct_from:
 - amasias
+- amasias-padre-de-josa
+- amasias-hijo-de-hilquias
 date:
   from: -828
   to: -803
@@ -38,5 +40,5 @@ relations:
   reason: Am 7:10 lo presenta como sacerdote de Betel, y allí le prohíbe a Amós seguir profetizando (7:13).
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

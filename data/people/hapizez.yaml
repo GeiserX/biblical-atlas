@@ -1,0 +1,37 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hapizez
+name: Hapizez
+names:
+- name: Hapizez
+perspicacia: '1200001869'
+summary: Sacerdote de la línea de Aarón al que la suerte dio el decimoctavo turno en tiempos de David.
+reason: Perspicacia «Hapizez»; 1Cr 24:15.
+sources:
+- it-hapizez
+- 1-cronicas-24
+links:
+- title: 'Perspicacia: «Hapizez»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hapizez/
+  type: perspicacia
+relations:
+- type: kin
+  person: aaron
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-24
+  - it-hapizez
+  reason: 1Cr 24:1 abre la lista de los descendientes de Aarón repartidos en turnos, y 24:15 da a esta casa el decimoctavo.
+  checked_on: '2026-10-12'
+  status: verified
+- type: holds_office
+  office: priest
+  inferred: false
+  sources:
+  - 1-cronicas-24
+  - it-hapizez
+  reason: '1Cr 24:15: encabeza una de las casas sacerdotales de 24:4-6; Perspicacia «Hapizez» lo trata como sacerdote.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

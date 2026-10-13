@@ -1,0 +1,31 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: nearias-hijo-de-semaya
+name: Nearías
+names:
+- name: Nearías
+perspicacia: 1200003194#2
+disambiguation: Nearías de la línea de David (núm. 2 de Perspicacia); no el simeonita hijo de Isí.
+summary: Descendiente de David; 1Cr 3:22, 23 lo hace hijo de Semaya y padre de tres hijos.
+reason: Perspicacia «Nearías»; 1Cr 3:22.
+sources:
+- it-nearias
+- 1-cronicas-3
+links:
+- title: 'Perspicacia: «Nearías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Near%C3%ADas/
+  type: perspicacia
+relations:
+- type: kin
+  person: semaya-hijo-de-secanias
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-3
+  - it-nearias
+  reason: '1Cr 3:22: uno de los hijos de Semaya.'
+  checked_on: '2026-10-12'
+  status: verified
+distinct_from:
+- nearias-hijo-de-isi
+checked_on: '2026-10-12'
+status: verified

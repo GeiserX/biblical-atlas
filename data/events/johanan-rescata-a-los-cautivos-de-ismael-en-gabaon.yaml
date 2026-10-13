@@ -1,0 +1,45 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: johanan-rescata-a-los-cautivos-de-ismael-en-gabaon
+title: Johanán alcanza a Ismael en Gabaón, libera a los cautivos e Ismael huye a Ammón
+date:
+  from: -606
+  to: -606
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 607 a.e.c.
+narrative_order:
+  series: jeremias
+  order: 41011
+places:
+- gabaon
+- ammon
+people:
+- johanan-hijo-de-carea
+- ismael-hijo-de-netanias
+present:
+- johanan-hijo-de-carea
+- ismael-hijo-de-netanias
+passages:
+- Jer 41:11-15
+summary: Al saber lo ocurrido, Johanán y los demás jefes del ejército salen a pelear contra Ismael y lo alcanzan en las grandes
+  aguas de Gabaón. Los cautivos se pasan a Johanán, e Ismael escapa con ocho hombres a Ammón.
+reason: Jer 41:11-15; Perspicacia «Johanán», núm. 5, y «Gabaón». Poco después de los asesinatos del mes séptimo de 607 (estudio
+  3, párr. 6). «Jaazanías», núm. 4, lo pone en la persecución, pero el texto no lo nombra.
+sources:
+- jeremias-41
+- si-3
+- it-johanan
+- it-jaazanias
+- it-gabaon
+- it-ismael
+links:
+- title: Jeremías 41 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/41/
+  type: bible
+- title: 'Perspicacia: «Johanán»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Johan%C3%A1n/
+  type: perspicacia
+checked_on: '2026-10-12'
+status: verified

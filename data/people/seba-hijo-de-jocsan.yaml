@@ -11,6 +11,7 @@ sources:
 - it-seba
 - genesis-25
 - it-seba-cus
+- 1-cronicas-1
 links:
 - title: 'Perspicacia: «Seba»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Seba/
@@ -26,13 +27,15 @@ relations:
   sources:
   - it-seba
   - genesis-25
+  - 1-cronicas-1
   reason: Gé 25:3.
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-02'
+checked_on: '2026-10-12'
 status: verified
 distinct_from:
 - seba-hijo-de-bicri
 - seba-hijo-de-cus
 - seba-hijo-de-joctan
 - seba-hijo-de-raama
+- seba-hijo-de-abihail

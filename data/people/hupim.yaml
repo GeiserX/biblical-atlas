@@ -12,6 +12,8 @@ sources:
 - it-hupim
 - genesis-46
 - numeros-26
+- 1-cronicas-7
+- 1-cronicas-8
 links:
 - title: 'Perspicacia: «Hupim»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hupim/
@@ -40,5 +42,26 @@ relations:
     allí antes de morir Jacob.'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+- type: kin
+  person: ir
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-7
+  - it-hupim
+  reason: 1Cr 7:12 da a los hupim como hijos de Ir; Perspicacia «Hupim» lo hace nieto o bisnieto de Benjamín por Bela e Irí.
+  checked_on: '2026-10-12'
+  status: verified
+- type: same_as
+  person: huram-de-benjamin
+  certainty: probable
+  inferred: true
+  sources:
+  - 1-cronicas-8
+  - it-hupim
+  - it-huram
+  reason: 'Perspicacia «Hupim» y «Huram»: al parecer, Hupim se llama Huram en 1Cr 8:5.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
 status: verified

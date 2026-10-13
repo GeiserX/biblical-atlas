@@ -1,0 +1,32 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: uzi-hijo-de-micri
+name: Uzí
+names:
+- name: Uzí
+perspicacia: 1200004533#4
+summary: Benjamita, hijo de Micrí. Su hijo Elá, o un descendiente suyo según Perspicacia, vivió en Jerusalén tras el destierro.
+reason: Perspicacia «Uzí», núm. 4; 1Cr 9:8.
+sources:
+- it-uzi
+- 1-cronicas-9
+links:
+- title: 'Perspicacia: «Uzí»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Uz%C3%AD/
+  type: perspicacia
+relations:
+- type: kin
+  person: micri
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-9
+  reason: '1Cr 9:8: Uzí, hijo de Micrí.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- uzi-de-benjamin
+- uzi-de-isacar
+- uzi-hijo-de-buqui
+disambiguation: 'Uzí núm. 4 de Perspicacia: benjamita, hijo de Micrí. No los demás Uzí que numera Perspicacia.'

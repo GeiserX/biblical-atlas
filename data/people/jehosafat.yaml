@@ -22,6 +22,7 @@ sources:
 - mateo-1
 - 1-reyes-15
 - 2-reyes-3
+- 1-cronicas-3
 links:
 - title: 'Perspicacia: «Jehosafat»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jehosafat/
@@ -39,8 +40,9 @@ relations:
   - 1-reyes-22
   - mateo-1
   - 1-reyes-15
+  - 1-cronicas-3
   reason: '1Re 22:41: Jehosafat hijo de Asá; 22:42 nombra a su madre, Azubá.'
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-12'
   status: verified
 - type: succeeds
   person: asa
@@ -121,7 +123,7 @@ history:
 perspicacia: 1200002383#3
 disambiguation: Rey de Judá, hijo de Asá; no es el padre de Jehú, ni el registrador hijo de Ahilud, ni el comisario hijo de
   Parúah.
-checked_on: '2026-09-30'
+checked_on: '2026-10-12'
 status: verified
 distinct_from:
 - jehosafat-hijo-de-ahilud

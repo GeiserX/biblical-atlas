@@ -3,8 +3,10 @@ id: zuf
 name: Zuf
 names:
 - name: Zuf
+- name: Zofái
+  note: Así lo llama 1Cr 6:26; Perspicacia «Zuf», núm. 1, lo da como otra grafía del mismo nombre.
 - name: Zofai
-  note: Otra grafía del mismo nombre en 1Cr 6:26, según Perspicacia «Zuf», núm. 1.
+  note: Grafía de Perspicacia.
 perspicacia: 1200004770#1
 disambiguation: Zuf, el levita antepasado de Samuel; no la tierra de Zuf por la que pasó Saúl buscando las asnas.
 summary: Levita de la familia de Cohat, antepasado del profeta Samuel por medio de Tohu, Elihú, Jeroham y Elcaná.
@@ -12,9 +14,35 @@ reason: Perspicacia «Zuf», núm. 1; 1Sa 1:1.
 sources:
 - it-zuf
 - 1-samuel-1
+- 1-cronicas-6
 links:
 - title: 'Perspicacia: «Zuf»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zuf/
   type: perspicacia
-checked_on: '2026-09-29'
+history:
+- date: '2026-10-12'
+  change: 1Cr 6:26 escribe «Zofái»; se añade esa grafía y «Zofai» queda como la de Perspicacia.
+  source: 1-cronicas-6
+checked_on: '2026-10-12'
 status: verified
+relations:
+- type: kin
+  person: elcana-hijo-de-mahat
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-6
+  - it-zofai
+  reason: '1Cr 6:26 (Zofái) y 6:35: hijo de Elcaná. Perspicacia «Zofai»: es otra grafía de Zuf.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: cohat
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-6
+  - it-zuf
+  reason: '1Cr 6:35-38: la línea de Zuf sube por Elcaná, Máhat y Amasái hasta Coré, Izhar y Cohat.'
+  checked_on: '2026-10-12'
+  status: verified

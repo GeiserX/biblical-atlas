@@ -11,6 +11,7 @@ sources:
 - it-goliat
 - 1-samuel-17
 - 1-samuel-21
+- 1-cronicas-20
 links:
 - title: 'Perspicacia: «Goliat»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Goliat/
@@ -40,5 +41,5 @@ relations:
   reason: '1Sa 17:2, 49-51: David lo mata en el combate del valle de Elá; Perspicacia «Elah», núm. 6.'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

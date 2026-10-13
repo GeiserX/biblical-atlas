@@ -25,6 +25,7 @@ roles:
 present: []
 passages:
 - Gé 38:6-11
+- 1Cr 2:3
 summary: Jehová quita la vida a Er por su maldad. Onán se niega a darle descendencia a su hermano y muere también. Judá manda
   a Tamar a casa de su padre a esperar a Selá.
 reason: 'Tras la venta de José (1750 a.e.c., estudio 3) y antes de que Pérez baje a Egipto en 1728 (Perspicacia «Pérez»). Sin
@@ -40,5 +41,5 @@ links:
 - title: Génesis 38 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/G%C3%A9nesis/38/
   type: bible
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

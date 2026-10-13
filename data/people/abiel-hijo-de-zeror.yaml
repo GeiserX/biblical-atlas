@@ -16,6 +16,9 @@ sources:
 - it-quis
 - 1-samuel-9
 - 1-samuel-14
+- 1-cronicas-8
+- it-jeiel
+- 1-cronicas-9
 links:
 - title: 'Perspicacia: «Abiel»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Abiel/
@@ -37,7 +40,20 @@ relations:
   reason: 1Sa 9:1 lo da como hijo de Zeror; Perspicacia «Zeror» lo repite.
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+- type: same_as
+  person: jeiel-de-gabaon
+  certainty: probable
+  inferred: true
+  sources:
+  - 1-cronicas-8
+  - it-abiel
+  - it-jeiel
+  - 1-cronicas-9
+  reason: 'Perspicacia «Abiel», núm. 1, y «Jeiel», núm. 2: al comparar las listas de Crónicas con las de Samuel, parece que
+    Abiel se llamaba también Jeiel (1Cr 8:29).'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
 status: verified
 distinct_from:
 - abi-albon

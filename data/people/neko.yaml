@@ -20,7 +20,7 @@ links:
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-reyes/23/
   type: bible
 perspicacia: '1200003203'
-checked_on: '2026-09-30'
+checked_on: '2026-10-12'
 status: verified
 relations:
 - type: holds_office
@@ -30,6 +30,27 @@ relations:
   sources:
   - 2-reyes-23
   - it-neko
+  - jeremias-46
   reason: 2Re 23:29 lo llama el faraón Nekó, rey de Egipto.
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-12'
+  status: verified
+- type: tie
+  person: nabucodonosor-ii
+  word: enemy
+  date:
+    from: -624
+    to: -624
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 625 a.e.c.
+  inferred: false
+  sources:
+  - jeremias-46
+  - it-carquemis
+  - it-nabucodonosor
+  reason: 'Jer 46:2: Nabucodonosor derrota en Carquemis al ejército de Nekó. Perspicacia «Carquemis», párr. 4, fecha la batalla
+    en 625.'
+  checked_on: '2026-10-12'
   status: verified

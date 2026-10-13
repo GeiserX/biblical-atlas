@@ -1,0 +1,38 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: micaya-hijo-de-guemarias
+name: Micaya
+names:
+- name: Micaya
+perspicacia: 1200003034#5
+disambiguation: El nieto de Safán que oyó leer el rollo de Baruc; no Micaya hijo de Imlá, el profeta de los días de Acab,
+  ni el padre de Acbor, ni la reina madre Maacá.
+distinct_from:
+- micaya-hijo-de-imla
+- micaya-padre-de-acbor
+- maaca-hija-de-uriel
+summary: Hijo de Guemarías y nieto de Safán. Oyó en la sala de su padre la lectura del rollo de Jeremías y bajó a contarla
+  a los príncipes reunidos en el palacio de Jehoiaquim.
+reason: Perspicacia «Micaya», núm. 5; Jer 36:11-13.
+sources:
+- it-micaya
+- jeremias-36
+links:
+- title: 'Perspicacia: «Micaya»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Micaya/
+  type: perspicacia
+- title: Jeremías 36 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/36/
+  type: bible
+relations:
+- type: kin
+  person: guemarias-hijo-de-safan
+  word: father
+  inferred: false
+  sources:
+  - jeremias-36
+  - it-micaya
+  reason: Jer 36:11 lo llama Micaya, hijo de Guemarías, hijo de Safán.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

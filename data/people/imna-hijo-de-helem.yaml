@@ -1,0 +1,30 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: imna-hijo-de-helem
+name: Imná
+names:
+- name: Imná
+perspicacia: '1200002156'
+disambiguation: Imná hijo de Hélem; no Imná, el primer hijo de Aser.
+distinct_from:
+- imna-hijo-de-aser
+summary: Aserita, hijo de Hélem; guerrero valiente y cabeza de una casa paterna.
+reason: Perspicacia «Imná»; 1Cr 7:35, 40.
+sources:
+- it-imna
+- 1-cronicas-7
+links:
+- title: 'Perspicacia: «Imná»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Imn%C3%A1/
+  type: perspicacia
+relations:
+- type: kin
+  person: helem-de-aser
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-7
+  reason: 1Cr 7:35 lo cuenta entre los hijos de Hélem.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

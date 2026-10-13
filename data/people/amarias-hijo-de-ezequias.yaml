@@ -29,5 +29,9 @@ relations:
   reason: Sof 1:1 lo presenta como hijo de Ezequías.
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified
+distinct_from:
+- amarias-hijo-de-azarias
+- amarias-hijo-de-merayot
+- amarias-hebronita

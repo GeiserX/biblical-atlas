@@ -1,0 +1,26 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: zicri-padre-de-eliezer
+name: Zicrí
+names:
+- name: Zicrí
+perspicacia: 1200004728#7
+disambiguation: Zicrí el rubenita, padre de Eliezer; no el levita hijo de Izhar.
+distinct_from:
+- zicri-hijo-de-izhar
+- zicri-descendiente-de-eliezer
+- zicri-descendiente-de-jeroham
+- zicri-descendiente-de-sasac
+- zicri-descendiente-de-simei
+- zicri-hijo-de-asaf
+summary: Rubenita cuyo hijo Eliezer encabezaba la tribu de Rubén en días de David.
+reason: Perspicacia «Zicrí», núm. 7; 1Cr 27:16.
+sources:
+- it-zicri
+- 1-cronicas-27
+links:
+- title: 'Perspicacia: «Zicrí»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zicr%C3%AD/
+  type: perspicacia
+relations: []
+checked_on: '2026-10-12'
+status: verified

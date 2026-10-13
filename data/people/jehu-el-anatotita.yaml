@@ -1,0 +1,46 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jehu-el-anatotita
+name: Jehú
+names:
+- name: Jehú
+perspicacia: 1200002401#1
+disambiguation: Jehú el anatotita, benjaminita con David en Ziclag (1Cr 12:3); no el rey de Israel ni el profeta hijo de Hananí.
+distinct_from:
+- jehu-de-israel
+- jehu-hijo-de-hanani
+- jehu-hijo-de-josibias
+- jehu-hijo-de-obed
+summary: Benjaminita de Anatot que se ofreció a ayudar a David en Ziclag; arquero que tiraba con las dos manos.
+reason: Perspicacia «Jehú», núm. 1, y «Anatotita»; 1Cr 12:3.
+sources:
+- it-jehu
+- it-anatotita
+- 1-cronicas-12
+links:
+- title: 'Perspicacia: «Jehú»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jeh%C3%BA/
+  type: perspicacia
+- title: 'Perspicacia: «Anatotita»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Anatotita/
+  type: perspicacia
+relations:
+- type: lived_in
+  place: anatot
+  inferred: false
+  sources:
+  - 1-cronicas-12
+  - it-jehu
+  reason: '1Cr 12:3: Jehú el anatotita; Perspicacia «Jehú», núm. 1.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: tie
+  person: david
+  word: master
+  inferred: false
+  sources:
+  - 1-cronicas-12
+  reason: '1Cr 12:3: se unió a David y lo apoyó en la guerra.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

@@ -1,0 +1,62 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jahat-hijo-de-simei
+name: Jáhat
+names:
+- name: Jáhat
+perspicacia: 1200002289#3
+disambiguation: El hijo de Simeí, nieto de Guersón (1Cr 23:10, 11); no el Jáhat izharita, descendiente de Selomot.
+distinct_from:
+- jahat-izharita
+- jahat-hijo-de-libni
+- jahat-hijo-de-reaya
+summary: Levita guersonita, hijo de Simeí hijo de Guersón. Era el principal de los cuatro hermanos, y su descendencia formó
+  una casa paterna.
+reason: Perspicacia «Jáhat», núm. 3; 1Cr 23:10, 11.
+sources:
+- it-jahat
+- 1-cronicas-23
+links:
+- title: 'Perspicacia: «Jáhat»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/J%C3%A1hat/
+  type: perspicacia
+relations:
+- type: kin
+  person: simei-hijo-de-guerson
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-23
+  - it-jahat
+  reason: 1Cr 23:10 lo pone el primero de los cuatro hijos de Simeí; Perspicacia «Jáhat», núm. 3, lo hace hijo de Simeí hijo
+    de Guersón.
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: zina
+  word: brother
+  inferred: false
+  sources:
+  - 1-cronicas-23
+  reason: 1Cr 23:10 da a Jáhat, Ziná, Jeús y Berías como los cuatro hijos de Simeí.
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: jeus-hijo-de-simei
+  word: brother
+  inferred: false
+  sources:
+  - 1-cronicas-23
+  reason: 1Cr 23:10 da a Jáhat, Ziná, Jeús y Berías como los cuatro hijos de Simeí.
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: berias-hijo-de-simei
+  word: brother
+  inferred: false
+  sources:
+  - 1-cronicas-23
+  reason: 1Cr 23:10 da a Jáhat, Ziná, Jeús y Berías como los cuatro hijos de Simeí.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

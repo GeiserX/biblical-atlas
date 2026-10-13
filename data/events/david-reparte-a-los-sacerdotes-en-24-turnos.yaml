@@ -1,0 +1,64 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: david-reparte-a-los-sacerdotes-en-24-turnos
+title: David reparte a los sacerdotes en 24 turnos por sorteo
+date:
+  from: -1036
+  to: -1036
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 1037 a.e.c.
+narrative_order:
+  series: 1-cronicas
+  order: 24003
+places:
+- jerusalen
+people:
+- david
+- sadoc-hijo-de-ahitub
+- ahimelec-hijo-de-abiatar
+- semaya-hijo-de-netanel
+- jehoiarib
+- jedaya-de-tiempos-de-david
+- harim-de-tiempos-de-david
+- seorim
+- malkiya-de-tiempos-de-david
+- mijamin-de-tiempos-de-david
+- hacoz
+- abias-de-tiempos-de-david
+- jesua-de-tiempos-de-david
+- secanias-de-tiempos-de-david
+- eliasib-de-tiempos-de-david
+- jaquim-de-tiempos-de-david
+- hupa
+- jesebeab
+- bilga-de-tiempos-de-david
+- imer-de-tiempos-de-david
+- hezir-de-tiempos-de-david
+- hapizez
+- petahias-de-tiempos-de-david
+- jehezquel
+- jakin-sacerdote
+- gamul
+- delaya-de-tiempos-de-david
+- maazias-de-tiempos-de-david
+present: []
+passages:
+- 1Cr 24:1-19
+summary: 'Con Sadoc, de la línea de Eleazar, y Ahimélec, de la de Itamar, David reparte a los sacerdotes en 24 turnos echando
+  suertes: 16 casas de Eleazar y 8 de Itamar. El levita Semaya anota los nombres.'
+reason: 1Cr 24:1-19. Perspicacia «Sadoc» y «Hezir» lo ponen al final del reinado de David; va con la organización de los levitas,
+  en 1037 a.e.c. según el estudio 3, párr. 4. El texto no dice dónde.
+sources:
+- 1-cronicas-24
+- it-sadoc
+- it-hezir
+- it-sacerdote
+- si-3
+links:
+- title: 'Perspicacia: «Sacerdote»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sacerdote/
+  type: perspicacia
+checked_on: '2026-10-12'
+status: verified

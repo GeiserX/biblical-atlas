@@ -5,6 +5,9 @@ names:
 - name: 'On'
 - name: Heliópolis
   note: Nombre griego que da la nota de Gé 41:45, 50.
+- name: Bet-Semes
+  note: Nombre de Jer 43:13, que la nota traduce «Casa del Sol» y explica como Heliópolis. Perspicacia «Bet-semes», núm. 4,
+    cree que es esta ciudad.
 type: city
 lat: 30.129444
 lon: 31.3075
@@ -21,6 +24,8 @@ sources:
 - genesis-41
 - it-potifera
 - genesis-46
+- jeremias-43
+- it-bet-semes
 links:
 - title: 'Perspicacia: «On»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/On/
@@ -28,5 +33,5 @@ links:
 - title: Génesis 46 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/G%C3%A9nesis/46/
   type: bible
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

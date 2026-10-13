@@ -1,0 +1,46 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: simei-descendiente-de-ladan
+name: Simeí
+names:
+- name: Simeí
+perspicacia: 1200004047#8
+disambiguation: El Simeí de la línea de Ladán (1Cr 23:9); no Simeí hijo de Guersón, el del versículo siguiente, ni los demás
+  Simeí que numera Perspicacia.
+distinct_from:
+- simei-hijo-de-guerson
+- simei-partidario-de-david
+- simei-hijo-de-guera
+- simei-hijo-de-ela
+- sama-hijo-de-jese
+- simei-hijo-de-pedaya
+- simei-padre-de-jaquim
+- simei-hijo-de-jedutun
+- simei-el-ramatita
+- simei-hijo-de-gog
+- simei-hijo-de-jahat
+- simei-hijo-de-libni
+- simei-hijo-de-zacur
+summary: Levita guersonita de la línea de Ladán. Sus tres hijos, Selomot, Haziel y Harán, encabezaban familias de la casa
+  de Ladán cuando David organizó a los levitas.
+reason: Perspicacia «Simeí», núm. 8; 1Cr 23:9.
+sources:
+- it-simei
+- 1-cronicas-23
+links:
+- title: 'Perspicacia: «Simeí»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sime%C3%AD/
+  type: perspicacia
+relations:
+- type: kin
+  person: ladan-hijo-de-guerson
+  word: ancestor
+  inferred: true
+  sources:
+  - it-simei
+  - 1-cronicas-23
+  reason: 'Perspicacia «Simeí», núm. 8: descendía de Guersón por medio de Ladán; 1Cr 23:9 dice que sus hijos encabezaban casas
+    paternas de Ladán.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

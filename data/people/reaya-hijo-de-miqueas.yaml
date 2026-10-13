@@ -1,0 +1,31 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: reaya-hijo-de-miqueas
+name: Reayá
+names:
+- name: Reayá
+perspicacia: 1200003654#2
+disambiguation: Reayá hijo de Miqueas (1Cr 5:5, 6); no es ninguno de los otros Reayá que numera Perspicacia «Reayá».
+distinct_from:
+- reaya-hijo-de-sobal
+summary: Rubenita, hijo de Miqueas y abuelo de Beerá. Perspicacia cree posible que de él vinieran algunos de los que Tiglat-Piléser
+  III desterró.
+reason: Perspicacia «Reayá», núm. 2; 1Cr 5:5, 6.
+sources:
+- it-reaya
+- 1-cronicas-5
+links:
+- title: 'Perspicacia: «Reayá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Reay%C3%A1/
+  type: perspicacia
+relations:
+- type: kin
+  person: miqueas-hijo-de-simei
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-5
+  reason: '1Cr 5:5: «su hijo Reayá», tras Miqueas.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

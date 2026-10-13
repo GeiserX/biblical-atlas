@@ -1,0 +1,32 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: joab-hijo-de-seraya
+name: Joab
+names:
+- name: Joab
+perspicacia: 1200002469#1
+disambiguation: Joab hijo de Seraya (núm. 1 de Perspicacia); no Joab hijo de Zeruyá, el jefe del ejército de David.
+summary: Judaíta, hijo de Seraya y nieto de Quenaz. Fue padre, es decir fundador, de Gue-Harasim, el valle donde vivían los
+  artesanos.
+reason: Perspicacia «Joab»; 1Cr 4:14.
+sources:
+- it-joab
+- 1-cronicas-4
+links:
+- title: 'Perspicacia: «Joab»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Joab/
+  type: perspicacia
+relations:
+- type: kin
+  person: seraya-hijo-de-quenaz
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-4
+  - it-joab
+  reason: '1Cr 4:14: Seraya fue padre de Joab.'
+  checked_on: '2026-10-12'
+  status: verified
+distinct_from:
+- joab-hijo-de-zeruya
+checked_on: '2026-10-12'
+status: verified

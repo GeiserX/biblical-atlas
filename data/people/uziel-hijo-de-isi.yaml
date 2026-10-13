@@ -1,0 +1,42 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: uziel-hijo-de-isi
+name: Uziel
+names:
+- name: Uziel
+perspicacia: 1200004536#5
+disambiguation: Uziel hijo de Isí, simeonita (núm. 5 de Perspicacia); no el levita hijo de Cohat ni el orfebre de Nehemías.
+summary: Simeonita, hijo de Isí y contemporáneo de Ezequías. Con sus hermanos guió a 500 hombres al monte Seír para acabar
+  con un resto de amalequitas y asentarse allí.
+reason: Perspicacia «Uziel»; 1Cr 4:42, 43.
+sources:
+- it-uziel
+- 1-cronicas-4
+links:
+- title: 'Perspicacia: «Uziel»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Uziel/
+  type: perspicacia
+relations:
+- type: kin
+  person: isi-simeonita
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-4
+  - it-isi
+  reason: '1Cr 4:42: uno de los hijos de Isí.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: lived_in
+  place: seir
+  inferred: false
+  sources:
+  - 1-cronicas-4
+  reason: '1Cr 4:42, 43: los simeonitas que guiaba se quedaron a vivir en el monte Seír.'
+  checked_on: '2026-10-12'
+  status: verified
+distinct_from:
+- uziel-hijo-de-cohat
+- uziel-de-benjamin
+- uziel-hijo-de-heman
+checked_on: '2026-10-12'
+status: verified

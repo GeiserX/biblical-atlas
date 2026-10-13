@@ -1,0 +1,53 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: los-principes-escuchan-el-rollo-de-baruc
+title: Los príncipes de Jehoiaquim escuchan el rollo de Baruc
+date:
+  from: -623
+  to: -623
+  precision: month
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: kislev de 624 a.e.c. (noviembre-diciembre)
+  detail:
+    month: kislev
+narrative_order:
+  series: jeremias
+  order: 36011
+places:
+- jerusalen
+people:
+- micaya-hijo-de-guemarias
+- elisama-secretario
+- delaya-hijo-de-semaya
+- elnatan-hijo-de-acbor
+- guemarias-hijo-de-safan
+- sedequias-hijo-de-hananias
+- jehudi
+- baruc-hijo-de-nerias
+present:
+- micaya-hijo-de-guemarias
+- elisama-secretario
+- delaya-hijo-de-semaya
+- elnatan-hijo-de-acbor
+- guemarias-hijo-de-safan
+- sedequias-hijo-de-hananias
+- jehudi
+- baruc-hijo-de-nerias
+passages:
+- Jer 36:11-19
+summary: Micaya cuenta a los príncipes, reunidos en la sala del secretario del palacio, lo que leyó Baruc. Mandan a Jehudí
+  por él, oyen el rollo, se asustan y piden a Baruc que se esconda con Jeremías.
+reason: Sigue en el mismo día de la lectura del templo (Jer 36:11-14); Perspicacia «Guemarías», núm. 1, y «Delayá», núm. 2,
+  cuentan esta reunión de los príncipes.
+sources:
+- jeremias-36
+- it-guemarias
+- it-delaya
+- it-micaya
+links:
+- title: Jeremías 36 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/36/
+  type: bible
+checked_on: '2026-10-12'
+status: verified

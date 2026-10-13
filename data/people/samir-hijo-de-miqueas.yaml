@@ -1,0 +1,28 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: samir-hijo-de-miqueas
+name: Samir
+names:
+- name: Samir
+perspicacia: 1200003940#1
+summary: Levita uzielita, hijo de Miqueas, nombrado en la reorganización de los levitas que hizo David.
+reason: Perspicacia «Samir», núm. 1; 1Cr 24:24.
+sources:
+- it-samir
+- 1-cronicas-24
+links:
+- title: 'Perspicacia: «Samir»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Samir/
+  type: perspicacia
+relations:
+- type: kin
+  person: miqueas-uzielita
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-24
+  - it-samir
+  reason: 1Cr 24:24 lo pone de los hijos de Miqueas; Perspicacia «Samir», núm. 1, lo llama hijo de Miqueas.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

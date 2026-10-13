@@ -1,0 +1,64 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: bela-hijo-de-azaz
+name: Bela
+names:
+- name: Bela
+perspicacia: 1200000622#3
+disambiguation: Bela hijo de Azaz (1Cr 5:8, 9); no es ninguno de los otros Bela que numera Perspicacia «Bela».
+distinct_from:
+- bela-hijo-de-benjamin
+- bela-hijo-de-beor
+summary: Rubenita, hijo de Azaz. Vivía en la tierra que va de Aroer a Nebo y Baal-Meón; como su ganado creció en Galaad, se
+  extendió al este hasta el desierto del Éufrates.
+reason: Perspicacia «Bela», núm. 3; 1Cr 5:8, 9.
+sources:
+- it-bela
+- 1-cronicas-5
+links:
+- title: 'Perspicacia: «Bela»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Bela/
+  type: perspicacia
+relations:
+- type: kin
+  person: azaz
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-5
+  reason: '1Cr 5:8: Bela, «hijo de Azaz».'
+  checked_on: '2026-10-12'
+  status: verified
+- type: lived_in
+  place: aroer
+  inferred: false
+  sources:
+  - 1-cronicas-5
+  reason: '1Cr 5:8: vivía en la región que va de Aroer a Nebo y Baal-Meón.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: lived_in
+  place: nebo
+  inferred: false
+  sources:
+  - 1-cronicas-5
+  reason: '1Cr 5:8: vivía en la región que va de Aroer a Nebo y Baal-Meón.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: lived_in
+  place: baal-meon
+  inferred: false
+  sources:
+  - 1-cronicas-5
+  reason: '1Cr 5:8: vivía en la región que va de Aroer a Nebo y Baal-Meón.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: lived_in
+  place: galaad
+  inferred: false
+  sources:
+  - 1-cronicas-5
+  reason: '1Cr 5:9: sus rebaños crecieron en Galaad.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

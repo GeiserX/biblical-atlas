@@ -12,6 +12,7 @@ reason: Perspicacia «Samah», núm. 1; Gé 36:13, 17.
 sources:
 - it-samah
 - genesis-36
+- 1-cronicas-1
 links:
 - title: 'Perspicacia: «Samah»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Samah/
@@ -27,8 +28,9 @@ relations:
   sources:
   - it-samah
   - genesis-36
+  - 1-cronicas-1
   reason: 'Gé 36:13: hijo de Reuel.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: kin
   person: basemat-hija-de-ismael
@@ -48,9 +50,10 @@ relations:
   reason: 'Gé 36:17: fue jeque en la tierra de Edom.'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified
 distinct_from:
 - sama-hijo-de-jese
 - sama-hijo-de-ague
 - sama-el-harodita
+- sama-de-aser

@@ -1,0 +1,43 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: ezequias-hace-caso-al-aviso-de-miqueas
+title: Ezequías hace caso al aviso de Miqueas y suplica a Jehová
+date:
+  from: -745
+  to: -716
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 746 y 717 a.e.c. (tiempo narrativo: reinando Ezequías, en vida de Miqueas)'
+narrative_order:
+  series: miqueas
+  order: 3012
+  after: miqueas-profetiza-contra-samaria-y-jerusalen
+places:
+- jerusalen
+- juda
+people:
+- ezequias
+- miqueas-profeta
+present: []
+passages:
+- Jer 26:18, 19
+summary: 'Cuando Miqueas de Moréset anunció que Sion sería arada, ni el rey Ezequías ni Judá lo mataron: Ezequías temió a
+  Jehová y le suplicó, y Jehová retiró el castigo que les había anunciado.'
+reason: Jer 26:17-19 lo recuerda; Perspicacia «Ezequías», núm. 1, párr. 20, alaba su humildad. Ezequías reinó de 746 a 716
+  (tabla A6-B) y Miqueas profetizó hasta c. 717 (Tabla de los libros). Sin lugar. Sigue a la profecía de Miqueas.
+sources:
+- jeremias-26
+- it-ezequias
+- tnm-a6-b
+- tnm-tabla
+- it-miqueas
+links:
+- title: Jeremías 26 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/26/
+  type: bible
+- title: 'Perspicacia: «Ezequías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ezequ%C3%ADas/
+  type: perspicacia
+checked_on: '2026-10-12'
+status: verified

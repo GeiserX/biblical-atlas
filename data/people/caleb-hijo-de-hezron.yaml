@@ -1,0 +1,89 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: caleb-hijo-de-hezron
+name: Caleb
+names:
+- name: Caleb
+- name: Kelubái
+  note: Así lo llama 1Cr 2:9; su nota lo da por el Caleb de los versículos 18, 19 y 42.
+perspicacia: 1200000863#1
+summary: Hijo de Hezrón, de Judá, llamado también Kelubái. Tuvo hijos con sus esposas Azubá y Efrata, con Jeriot y con sus
+  concubinas Efá y Maacá. Bezalel descendía de él.
+reason: Perspicacia «Caleb», núm. 1, y «Efrata», núm. 1; 1Cr 2:9, 18-20, 42-50.
+sources:
+- it-caleb
+- 1-cronicas-2
+links:
+- title: 'Perspicacia: «Caleb»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Caleb/
+  type: perspicacia
+relations:
+- type: kin
+  person: hezron-hijo-de-perez
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-2
+  reason: '1Cr 2:9, 18: Kelubái, o Caleb, hijo de Hezrón.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: azuba-esposa-de-caleb
+  word: wife
+  inferred: false
+  sources:
+  - 1-cronicas-2
+  reason: '1Cr 2:18: tuvo hijos con su esposa Azubá.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: jeriot
+  word: concubine
+  inferred: true
+  sources:
+  - 1-cronicas-2
+  - it-jeriot
+  reason: '1Cr 2:18: también tuvo hijos con Jeriot; Perspicacia «Jeriot» cree que era concubina o sierva suya.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: efrata
+  word: wife
+  inferred: false
+  sources:
+  - 1-cronicas-2
+  reason: '1Cr 2:19: muerta Azubá, Caleb se casa con Efrat.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: lived_in
+  place: egipto
+  inferred: true
+  sources:
+  - 1-cronicas-2
+  - it-efrata
+  reason: '1Cr 2:19; Perspicacia «Efrata», núm. 1: la boda con Efrata fue mientras aún estaban en Egipto.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: efa-concubina-de-caleb
+  word: concubine
+  inferred: false
+  sources:
+  - 1-cronicas-2
+  reason: '1Cr 2:46: Efá, concubina de Caleb.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: maaca-concubina-de-caleb
+  word: concubine
+  inferred: false
+  sources:
+  - 1-cronicas-2
+  reason: '1Cr 2:48: Maacá, concubina de Caleb.'
+  checked_on: '2026-10-12'
+  status: verified
+disambiguation: Caleb hijo de Hezrón, hermano de Jerahmeel, de los días de Egipto; no Caleb hijo de Jefuné, el espía, que
+  vivió como siglo y medio después.
+distinct_from:
+- caleb-hijo-de-jefune
+checked_on: '2026-10-12'
+status: verified

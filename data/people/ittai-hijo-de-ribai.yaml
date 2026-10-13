@@ -3,8 +3,8 @@ id: ittai-hijo-de-ribai
 name: Ittái
 names:
 - name: Ittái
-- name: Itai
-  note: Así lo llama 1Cr 11:31 (Perspicacia «Itai»).
+- name: Itái
+  note: Así lo llama 1Cr 11:31.
 perspicacia: 1200002245#2
 disambiguation: Ittái hijo de Ribái, benjaminita de Guibeá; no Ittái el guitita que acompañó a David al huir de Absalón.
 summary: Benjaminita, hijo de Ribái de Guibeá, y uno de los treinta guerreros de David.
@@ -13,6 +13,7 @@ sources:
 - it-ittai
 - it-itai
 - 2-samuel-23
+- 1-cronicas-11
 links:
 - title: 'Perspicacia: «Ittai»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ittai/
@@ -27,8 +28,9 @@ relations:
   inferred: false
   sources:
   - 2-samuel-23
+  - 1-cronicas-11
   reason: '2Sa 23:29: Ittái, hijo de Ribái.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: tie
   person: david
@@ -36,10 +38,15 @@ relations:
   inferred: false
   sources:
   - 2-samuel-23
+  - 1-cronicas-11
   reason: '2Sa 23:29: uno de los treinta guerreros de David.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-09-29'
+history:
+- date: '2026-10-12'
+  change: «Itai» pasa a «Itái», la grafía de la TNM en 1Cr 11.
+  source: 1-cronicas-11
+checked_on: '2026-10-12'
 status: verified
 distinct_from:
 - ittai-el-guitita

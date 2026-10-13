@@ -1,0 +1,40 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: david-alaba-a-jehova-ante-la-congregacion
+title: David alaba a Jehová ante la congregación
+date:
+  from: -1036
+  to: -1036
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 1037 a.e.c.
+narrative_order:
+  series: 1-cronicas
+  order: 29010
+places:
+- jerusalen
+people:
+- david
+present:
+- david
+type: speech
+roles:
+  david: spoke
+passages:
+- 1Cr 29:10-20
+summary: David bendice a Jehová, reconoce que todo lo donado salió de su mano y le pide que conserve esa disposición en el
+  pueblo y dé a Salomón un corazón entero. Luego la congregación alaba a Jehová y se postra.
+reason: 1Cr 29:10-20, el mismo día de las ofrendas; Perspicacia «David» cita 29:10-13 como muestra de que veía su trono como
+  dado por Jehová. Fecha y lugar, los de la asamblea (estudio 3, párr. 4).
+sources:
+- 1-cronicas-29
+- it-david
+- it-salomon
+- si-3
+links:
+- title: 1 Crónicas 29 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/1-Cr%C3%B3nicas/29/
+  type: bible
+checked_on: '2026-10-12'
+status: verified

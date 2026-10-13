@@ -1,0 +1,25 @@
+# biblical-atlas: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: ono
+name: Onó
+names:
+- name: Onó
+type: city
+lat: 32.027222
+lon: 34.868056
+precision: point
+coord_source: openbible:ae6bfe2
+coord_url: https://www.openbible.info/geo/ancient/ae6bfe2/ono
+coord_note: Punto de Kafr Ana, el sitio con el que Perspicacia la identifica, unos 11 km al ESE de Jope.
+summary: Ciudad de Benjamín, cerca de Lod, que construyó el benjamita Sémed. Los benjamitas volvieron a vivir en ella tras
+  el destierro en Babilonia.
+reason: 'Perspicacia «Onó»; 1Cr 8:12. OpenBible: solo tomamos el punto.'
+sources:
+- it-ono
+- openbible-geo
+- 1-cronicas-8
+links:
+- title: 'Perspicacia: «Onó»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/On%C3%B3/
+  type: perspicacia
+checked_on: '2026-10-12'
+status: verified

@@ -1,0 +1,42 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: zacarias-trompetista
+name: Zacarías
+names:
+- name: Zacarías
+perspicacia: 1200004681#5
+disambiguation: El sacerdote trompetista del traslado del Arca; no el músico levita de la misma procesión (núm. 4) ni los
+  demás Zacarías de Perspicacia «Zacarías».
+distinct_from:
+- zacarias-hijo-de-jehoiada
+- zacarias-padre-de-juan
+- zacarias-profeta
+- zacarias-abuelo-de-ezequias
+- zacarias-hijo-de-jeberekias
+- zacarias-de-israel
+- zacarias-musico
+- zacarias-hijo-de-hosa
+- zacarias-hijo-de-meselemias
+- zacarias-padre-de-ido
+- zacarias-descendiente-de-isias
+- zacarias-el-rubenita
+- zeker
+summary: Sacerdote que tocó la trompeta delante del Arca en la procesión que la subió a Jerusalén.
+reason: Perspicacia «Zacarías», núm. 5; 1Cr 15:24.
+sources:
+- it-zacarias
+- 1-cronicas-15
+links:
+- title: 'Perspicacia: «Zacarías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zacar%C3%ADas/
+  type: perspicacia
+relations:
+- type: holds_office
+  office: priest
+  inferred: false
+  sources:
+  - 1-cronicas-15
+  reason: 1Cr 15:24 lo cuenta entre los sacerdotes que tocaban las trompetas delante del Arca.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

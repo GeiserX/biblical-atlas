@@ -1,0 +1,21 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: kelub-padre-de-ezri
+name: Kelub
+names:
+- name: Kelub
+perspicacia: 1200000933#2
+disambiguation: Kelub, padre de Ezrí; no el judaíta hermano de Suha.
+summary: Padre de Ezrí, el encargado de los labradores del rey David.
+reason: Perspicacia «Kelub», núm. 2; 1Cr 27:26.
+sources:
+- it-kelub
+- 1-cronicas-27
+links:
+- title: 'Perspicacia: «Kelub»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Kelub/
+  type: perspicacia
+relations: []
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- kelub-hermano-de-suha

@@ -1,0 +1,35 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: antotiya
+name: Antotiya
+names:
+- name: Antotiya
+perspicacia: '1200000289'
+summary: Benjamita, uno de los hijos de Sasac.
+reason: Perspicacia «Antotiya»; 1Cr 8:24, 25, 28.
+sources:
+- it-antotiya
+- 1-cronicas-8
+links:
+- title: 'Perspicacia: «Antotiya»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Antotiya/
+  type: perspicacia
+relations:
+- type: kin
+  person: sasac
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  reason: 1Cr 8:25 lo cuenta entre los hijos de Sasac.
+  checked_on: '2026-10-12'
+  status: verified
+- type: lived_in
+  place: jerusalen
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  reason: '1Cr 8:28: los jefes de casas paternas de esta lista vivían en Jerusalén.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

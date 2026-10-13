@@ -1,0 +1,29 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: bocru
+name: Bocrú
+names:
+- name: Bocrú
+perspicacia: '1200000781'
+summary: Benjamita, hijo de Azel, descendiente del rey Saúl y de Jonatán.
+reason: Perspicacia «Bocrú»; 1Cr 8:33-38.
+sources:
+- it-bocru
+- 1-cronicas-8
+- 1-cronicas-9
+links:
+- title: 'Perspicacia: «Bocrú»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Bocr%C3%BA/
+  type: perspicacia
+relations:
+- type: kin
+  person: azel
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  - 1-cronicas-9
+  reason: 1Cr 8:38 lo cuenta entre los hijos de Azel.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

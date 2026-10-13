@@ -1,0 +1,31 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: shaul-hijo-de-uzias
+name: Shaúl
+names:
+- name: Shaúl
+perspicacia: 1200003960#3
+disambiguation: Shaúl hijo de Uzías (1Cr 6:24); no es ninguno de los otros Shaúl que numera Perspicacia «Shaúl».
+distinct_from:
+- shaul-de-edom
+- shaul-hijo-de-simeon
+summary: Levita cohatita, hijo de Uzías, el último de la línea de 1 Crónicas 6:22-24.
+reason: Perspicacia «Shaúl», núm. 3; 1Cr 6:24.
+sources:
+- it-shaul
+- 1-cronicas-6
+links:
+- title: 'Perspicacia: «Shaúl»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sha%C3%BAl/
+  type: perspicacia
+relations:
+- type: kin
+  person: uzias-hijo-de-uriel
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-6
+  reason: 1Cr 6:24 lo da como hijo de Uzías.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

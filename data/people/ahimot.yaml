@@ -1,0 +1,27 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ahimot
+name: Ahimot
+names:
+- name: Ahimot
+perspicacia: '1200000159'
+summary: Levita cohatita, hijo de Elcaná y hermano de Amasái.
+reason: Perspicacia «Ahimot»; 1Cr 6:25.
+sources:
+- it-ahimot
+- 1-cronicas-6
+links:
+- title: 'Perspicacia: «Ahimot»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ahimot/
+  type: perspicacia
+relations:
+- type: kin
+  person: elcana-padre-de-amasai
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-6
+  reason: 1Cr 6:25.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

@@ -1,0 +1,21 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ahiman-portero
+name: Ahimán
+names:
+- name: Ahimán
+perspicacia: 1200000157#2
+summary: Levita portero de Jerusalén, de confianza, tras la vuelta del destierro.
+reason: Perspicacia «Ahimán», núm. 2; 1Cr 9:17, 18.
+sources:
+- it-ahiman
+- 1-cronicas-9
+links:
+- title: 'Perspicacia: «Ahimán»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ahim%C3%A1n/
+  type: perspicacia
+relations: []
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- ahiman-hijo-de-anac
+disambiguation: 'Ahimán núm. 2 de Perspicacia: portero levita de después del destierro. No el anaquita de Hebrón.'

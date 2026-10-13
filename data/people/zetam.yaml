@@ -1,0 +1,55 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: zetam
+name: Zetam
+names:
+- name: Zetam
+perspicacia: '1200004718'
+summary: Levita guersonita de la casa de Ladán y cabeza de una casa paterna. En días de David se le encargaron los tesoros
+  del templo, junto con Joel.
+reason: Perspicacia «Zetam»; 1Cr 23:8, 9.
+sources:
+- it-zetam
+- 1-cronicas-23
+- it-joel
+- 1-cronicas-26
+links:
+- title: 'Perspicacia: «Zetam»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zetam/
+  type: perspicacia
+relations:
+- type: kin
+  person: ladan-hijo-de-guerson
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-23
+  - it-zetam
+  - 1-cronicas-26
+  reason: 1Cr 23:8 lo cuenta entre los hijos de Ladán; Perspicacia «Zetam» lo llama descendiente de Ladán.
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: joel-hijo-de-jehiel
+  word: brother
+  inferred: false
+  sources:
+  - 1-cronicas-23
+  - it-joel
+  - 1-cronicas-26
+  reason: 1Cr 23:8 los nombra juntos entre los de Ladán; Perspicacia «Joel», núm. 7, llama a Zetam hermano de Joel.
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: jehiel-descendiente-de-ladan
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-26
+  - it-joel
+  - it-jehiel
+  reason: '1Cr 26:22: los hijos de Jehielí eran Zetam y su hermano Joel. Perspicacia «Jehiel», núm. 2, admite que hijos sea aquí
+    la casa que llevó su nombre.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

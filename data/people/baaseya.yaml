@@ -1,0 +1,27 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: baaseya
+name: Baaseyá
+names:
+- name: Baaseyá
+perspicacia: '1200000527'
+summary: Levita guersonita, hijo de Malkiya y antepasado de Asaf, el músico del templo.
+reason: Perspicacia «Baaseyá»; 1Cr 6:40.
+sources:
+- it-baaseya
+- 1-cronicas-6
+links:
+- title: 'Perspicacia: «Baaseyá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Baasey%C3%A1/
+  type: perspicacia
+relations:
+- type: kin
+  person: malkiya-hijo-de-etni
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-6
+  reason: '1Cr 6:40: Baaseyá, «hijo de Malkiya».'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

@@ -10,6 +10,7 @@ reason: Perspicacia «Mas»; Gé 10:23. El texto masorético de 1 Crónicas 1:17
 sources:
 - it-mas
 - genesis-10
+- 1-cronicas-1
 links:
 - title: 'Perspicacia: «Mas»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Mas/
@@ -24,8 +25,9 @@ relations:
   inferred: false
   sources:
   - genesis-10
+  - 1-cronicas-1
   reason: Gé 10:23 lo nombra el último de los hijos de Aram.
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

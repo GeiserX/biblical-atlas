@@ -50,6 +50,7 @@ sources:
 - it-queriyot
 - openbible-geo
 - amos-2
+- jeremias-48
 links:
 - title: 'Perspicacia: «Queriyot»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Queriyot/
@@ -57,5 +58,5 @@ links:
 - title: Amós 2 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Am%C3%B3s/2/
   type: bible
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

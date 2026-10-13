@@ -1,0 +1,28 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: alon
+name: Alón
+names:
+- name: Alón
+perspicacia: '1200000199'
+summary: Simeonita, descendiente de Semaya y abuelo de Zizá.
+reason: Perspicacia «Alón»; 1Cr 4:34-37.
+sources:
+- it-alon
+- 1-cronicas-4
+links:
+- title: 'Perspicacia: «Alón»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Al%C3%B3n/
+  type: perspicacia
+relations:
+- type: kin
+  person: jedaya-hijo-de-simri
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-4
+  - it-alon
+  reason: '1Cr 4:37: Alón hijo de Jedayá.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

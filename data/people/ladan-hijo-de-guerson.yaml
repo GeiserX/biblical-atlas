@@ -1,0 +1,64 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ladan-hijo-de-guerson
+name: Ladán
+names:
+- name: Ladán
+perspicacia: 1200002660#2
+disambiguation: El guersonita de 1Cr 23:7; no el efraimita antepasado de Josué que Perspicacia «Ladán» trata como núm. 1.
+summary: Levita de la rama de Guersón del que salieron varias casas paternas, contadas cuando David repartió el servicio.
+  Perspicacia cree que es el Libní hijo de Guersón.
+reason: Perspicacia «Ladán», núm. 2; 1Cr 23:7-9.
+sources:
+- it-ladan
+- 1-cronicas-23
+- it-guerson
+- it-libni
+- 1-cronicas-26
+links:
+- title: 'Perspicacia: «Ladán»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Lad%C3%A1n/
+  type: perspicacia
+relations:
+- type: kin
+  person: guerson
+  word: father
+  inferred: true
+  sources:
+  - it-ladan
+  - it-jahat
+  - 1-cronicas-23
+  - 1-cronicas-26
+  - it-guerson
+  reason: 1Cr 23:7 lo pone con Simeí entre los guersonitas; Perspicacia «Jáhat», núm. 3, llama a Simeí el otro hijo de Guersón,
+    y «Ladán», núm. 2, lo identifica con Libní.
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: simei-hijo-de-guerson
+  word: brother
+  inferred: true
+  sources:
+  - it-ladan
+  - it-jahat
+  - 1-cronicas-23
+  reason: 1Cr 23:7 nombra juntos a Ladán y Simeí como las dos ramas guersonitas; Perspicacia «Jáhat», núm. 3, hace a Simeí
+    el otro hijo de Guersón.
+  checked_on: '2026-10-12'
+  status: verified
+- type: same_as
+  person: libni-hijo-de-guerson
+  certainty: probable
+  inferred: true
+  sources:
+  - it-ladan
+  - it-libni
+  - 1-cronicas-23
+  - 1-cronicas-26
+  reason: Perspicacia «Ladán», núm. 2, dice que parece que también lo llamaban Libní. 1Cr 23:7 lo nombra junto a Simeí, el
+    hermano de Libní.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- ladan-hijo-de-tahan

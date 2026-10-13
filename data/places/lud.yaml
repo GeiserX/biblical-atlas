@@ -38,6 +38,7 @@ sources:
 - it-lud
 - openbible-geo
 - isaias-66
+- jeremias-46
 links:
 - title: 'Perspicacia: «Lud, ludim»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Lud-ludim/
@@ -45,5 +46,5 @@ links:
 - title: Isaías 66 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Isa%C3%ADas/66/
   type: bible
-checked_on: '2026-09-30'
+checked_on: '2026-10-12'
 status: verified

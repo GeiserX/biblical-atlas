@@ -15,6 +15,7 @@ sources:
 - 2-samuel-16
 - it-arkita
 - 2-samuel-17
+- 1-cronicas-27
 links:
 - title: 'Perspicacia: «Husai»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Husai/
@@ -33,9 +34,10 @@ relations:
   - 2-samuel-15
   - 2-samuel-16
   - it-husai
+  - 1-cronicas-27
   reason: 2Sa 15:37 y 16:16, 17 lo llaman amigo de David; la nota al pie da también «confidente».
   inferred: false
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

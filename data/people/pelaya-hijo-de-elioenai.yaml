@@ -1,0 +1,28 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: pelaya-hijo-de-elioenai
+name: Pelayá
+names:
+- name: Pelayá
+perspicacia: 1200003418#2
+summary: Hijo de Elioenái, de la última generación de la casa de David que nombran las Escrituras Hebreas.
+reason: Perspicacia «Pelayá»; 1Cr 3:24.
+sources:
+- it-pelaya
+- 1-cronicas-3
+links:
+- title: 'Perspicacia: «Pelayá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Pelay%C3%A1/
+  type: perspicacia
+relations:
+- type: kin
+  person: elioenai-hijo-de-nearias
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-3
+  - it-pelaya
+  reason: '1Cr 3:24: uno de los siete hijos de Elioenái.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

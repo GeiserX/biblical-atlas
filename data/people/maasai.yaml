@@ -1,0 +1,54 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: maasai
+name: Maasái
+names:
+- name: Maasái
+perspicacia: '1200002810'
+summary: Sacerdote descendiente de Imer que volvió del destierro en Babilonia y vivió en Jerusalén.
+reason: Perspicacia «Maasai»; 1Cr 9:12.
+sources:
+- it-maasai
+- 1-cronicas-9
+links:
+- title: 'Perspicacia: «Maasai»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Maasai/
+  type: perspicacia
+relations:
+- type: kin
+  person: adiel-hijo-de-jahzera
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-9
+  reason: '1Cr 9:12: Maasái, hijo de Adiel.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: imer-padre-de-mesilemit
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-9
+  - it-maasai
+  reason: 1Cr 9:12 sube su linaje hasta Imer; Perspicacia «Maasai» lo llama descendiente de Imer.
+  checked_on: '2026-10-12'
+  status: verified
+- type: holds_office
+  office: priest
+  inferred: false
+  sources:
+  - 1-cronicas-9
+  reason: 1Cr 9:10, 12 lo pone entre los sacerdotes.
+  checked_on: '2026-10-12'
+  status: verified
+- type: lived_in
+  place: jerusalen
+  inferred: false
+  sources:
+  - 1-cronicas-9
+  - it-maasai
+  reason: '1Cr 9:2, 3, 12: de los sacerdotes que vivían en Jerusalén.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

@@ -1,0 +1,37 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jehoiada-de-tiempos-de-jeremias
+name: Jehoiadá
+names:
+- name: Jehoiadá
+perspicacia: 1200002376#4
+disambiguation: El sacerdote al que sustituyó Sofonías hijo de Maaseya en días de Jeremías; no es el sumo sacerdote que derrocó
+  a Atalía ni el padre de Benaya.
+distinct_from:
+- jehoiada-sumo-sacerdote
+- jehoiada-padre-de-benaya
+- jehoiada-hijo-de-benaya
+summary: Sacerdote de los días de Jeremías. Sofonías hijo de Maaseya ocupó su lugar como supervisor de la casa de Jehová.
+reason: Perspicacia «Jehoiadá», núm. 4; Jer 29:26.
+sources:
+- it-jehoiada
+- jeremias-29
+links:
+- title: 'Perspicacia: «Jehoiadá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jehoiad%C3%A1/
+  type: perspicacia
+- title: Jeremías 29 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/29/
+  type: bible
+relations:
+- type: holds_office
+  place: jerusalen
+  office: priest
+  sources:
+  - jeremias-29
+  - it-jehoiada
+  reason: Jer 29:26 lo llama el sacerdote Jehoiadá, a quien Sofonías sucedió en la casa de Jehová.
+  inferred: false
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

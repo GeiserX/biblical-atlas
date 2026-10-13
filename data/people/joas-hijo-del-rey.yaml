@@ -9,6 +9,10 @@ distinct_from:
 - joas-padre-de-gedeon
 - jehoas-de-juda
 - jehoas-de-israel
+- joas-descendiente-de-sela
+- joas-de-benjamin
+- joas-hijo-de-semaa
+- joas-encargado-del-aceite
 summary: Hombre de la corte de Acab, llamado el hijo del rey, que recibió con Amón la orden de encarcelar a Micaya.
 reason: Perspicacia «Joás», núm. 6; 1Re 22:26, 27 y 2Cr 18:25, 26.
 sources:
@@ -21,5 +25,5 @@ links:
 not_claimed:
 - 'No decimos que fuera hijo de Acab: Perspicacia deja abierto si era su hijo, un oficial de sangre real o alguien muy unido
   a la familia del rey.'
-checked_on: '2026-09-30'
+checked_on: '2026-10-12'
 status: verified

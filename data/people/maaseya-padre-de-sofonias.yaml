@@ -1,0 +1,35 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: maaseya-padre-de-sofonias
+name: Maaseya
+names:
+- name: Maaseya
+perspicacia: 1200002811#6
+disambiguation: El sacerdote padre de Sofonías (Jer 21:1; 29:25; 37:3). Perspicacia distingue a otros diecinueve Maaseya;
+  en Jeremías, el padre del falso profeta Sedequías y el hijo de Salum.
+summary: Sacerdote cuyo hijo, el sacerdote Sofonías, vivió en días de Jeremías y fue enviado a él por el rey Sedequías.
+reason: Perspicacia «Maaseya», núm. 6; Jer 21:1.
+sources:
+- it-maaseya
+- jeremias-21
+- jeremias-29
+- jeremias-37
+links:
+- title: 'Perspicacia: «Maaseya»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Maaseya/
+  type: perspicacia
+relations:
+- type: holds_office
+  office: priest
+  inferred: true
+  sources:
+  - it-maaseya
+  - jeremias-21
+  reason: Perspicacia «Maaseya», núm. 6, lo llama sacerdote; Jer 21:1 lo nombra como padre de Sofonías.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- maaseya-padre-de-sedequias
+- maaseya-hijo-de-salum
+- maaseya-musico

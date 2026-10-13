@@ -1,0 +1,27 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: reguem
+name: Réguem
+names:
+- name: Réguem
+perspicacia: '1200003674'
+summary: Primer hijo de Jahdái, de la rama de Caleb en la tribu de Judá.
+reason: Perspicacia «Réguem»; 1Cr 2:47.
+sources:
+- it-reguem
+- 1-cronicas-2
+links:
+- title: 'Perspicacia: «Réguem»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/R%C3%A9guem/
+  type: perspicacia
+relations:
+- type: kin
+  person: jahdai
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-2
+  reason: '1Cr 2:47: uno de los hijos de Jahdái.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

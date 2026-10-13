@@ -10,6 +10,7 @@ reason: Perspicacia «Matred»; Gé 36:39.
 sources:
 - it-matred
 - genesis-36
+- 1-cronicas-1
 links:
 - title: 'Perspicacia: «Matred»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Matred/
@@ -24,9 +25,10 @@ relations:
   sources:
   - it-mezahab
   - genesis-36
+  - 1-cronicas-1
   reason: 'Gé 36:39: hija de Mezahab; Perspicacia «Mezahab» no sabe si era su padre o su madre.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   word: parent
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

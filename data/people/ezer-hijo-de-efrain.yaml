@@ -1,0 +1,43 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ezer-hijo-de-efrain
+name: Ézer
+names:
+- name: Ézer
+perspicacia: 1200001472#2
+disambiguation: Ézer de Efraín, muerto por los hombres de Gat; no Ézer hijo de Seír, jeque horeo, ni los demás Ézer.
+distinct_from:
+- ezer-hijo-de-seir
+- ezer-el-gadita
+- ezer-hijo-de-hur
+summary: Efraimita, probablemente hijo de Efraín. Los hombres de Gat lo mataron con Elead cuando bajaron a quitarles el ganado.
+reason: Perspicacia «Ézer», núm. 2; 1Cr 7:20-22.
+sources:
+- it-ezer
+- 1-cronicas-7
+links:
+- title: 'Perspicacia: «Ézer»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/%C3%89zer/
+  type: perspicacia
+relations:
+- type: kin
+  person: efrain
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-7
+  - it-ezer
+  - it-efrain
+  reason: 1Cr 7:21, 22 llama a Efraín su padre; Perspicacia «Efraín», núm. 1, y «Ézer», núm. 2, lo dan por probable o posible.
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: elead
+  word: brother
+  inferred: false
+  sources:
+  - 1-cronicas-7
+  reason: '1Cr 7:21: Ézer y Elead murieron juntos a manos de los hombres de Gat.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

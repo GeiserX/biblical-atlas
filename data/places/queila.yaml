@@ -17,9 +17,10 @@ sources:
 - openbible-geo
 - josue-15
 - 1-samuel-23
+- 1-cronicas-4
 links:
 - title: 'Perspicacia: «Queilá»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Queil%C3%A1/
   type: perspicacia
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

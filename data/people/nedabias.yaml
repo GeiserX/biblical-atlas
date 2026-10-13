@@ -1,0 +1,37 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: nedabias
+name: Nedabías
+names:
+- name: Nedabías
+perspicacia: '1200003206'
+summary: Último hijo de Jeconías que se nombra, nacido en el destierro. Era tío del gobernador Zorobabel.
+reason: Perspicacia «Nedabías»; 1Cr 3:17, 18.
+sources:
+- it-nedabias
+- 1-cronicas-3
+links:
+- title: 'Perspicacia: «Nedabías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Nedab%C3%ADas/
+  type: perspicacia
+relations:
+- type: kin
+  person: joaquin
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-3
+  - it-nedabias
+  reason: '1Cr 3:17, 18: uno de los hijos de Jeconías el prisionero.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: born_in
+  place: babilonia
+  inferred: true
+  sources:
+  - 1-cronicas-3
+  - it-nedabias
+  reason: 1Cr 3:17, 18 lo cuenta entre los hijos de Jeconías el prisionero; Perspicacia «Nedabías» dice que nació en el destierro.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

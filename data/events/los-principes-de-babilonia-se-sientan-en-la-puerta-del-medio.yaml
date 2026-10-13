@@ -1,0 +1,50 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: los-principes-de-babilonia-se-sientan-en-la-puerta-del-medio
+title: Los príncipes de Babilonia se sientan en la Puerta del Medio
+date:
+  from: -606
+  to: -606
+  precision: day
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 9 de tamuz de 607 a.e.c.
+  detail:
+    month: tamuz
+    day: 9
+narrative_order:
+  series: jeremias
+  order: 39003
+  after: sitio-de-jerusalen-609
+places:
+- jerusalen
+people:
+- nergal-sarezer-samgar
+- nebo-sarsekim
+- nergal-sarezer-rabmag
+present:
+- nergal-sarezer-samgar
+- nebo-sarsekim
+- nergal-sarezer-rabmag
+passages:
+- Jer 39:3
+summary: Abierta la brecha en la muralla, los príncipes del rey de Babilonia entran en Jerusalén y toman asiento en la Puerta
+  del Medio. Al verlos, Sedequías y sus soldados huyen de noche.
+reason: 'Jer 39:2-4: la muralla cae el día 9 del cuarto mes del año 11 de Sedequías, 607 a.e.c. (estudio 3). Perspicacia «Rabmag»
+  dice que formaban un tribunal; «Sarsekim», que entraron de los primeros.'
+sources:
+- jeremias-39
+- si-3
+- it-rabmag
+- it-sarsekim
+- it-nergal-sarezer
+- it-puerta
+links:
+- title: Jeremías 39 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/39/
+  type: bible
+- title: 'Perspicacia: «Rabmag»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Rabmag/
+  type: perspicacia
+checked_on: '2026-10-12'
+status: verified

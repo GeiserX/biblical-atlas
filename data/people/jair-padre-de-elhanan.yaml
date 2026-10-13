@@ -1,0 +1,27 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jair-padre-de-elhanan
+name: Jaír
+names:
+- name: Jaír
+perspicacia: 1200002305#4
+disambiguation: Jaír, padre de Elhanán (Perspicacia, núm. 4); no el que tomó Havot-Jaír, ni el juez galaadita, ni el padre
+  de Mardoqueo.
+distinct_from:
+- jair-hijo-de-segub
+- jair-juez
+summary: Padre de Elhanán, el israelita que derribó a Lahmí, hermano de Goliat. El relato paralelo de 2 Samuel lo llama Jaaré-Oreguim,
+  nombre que Perspicacia toma por una mala copia de Jaír.
+reason: Perspicacia «Jaír», núm. 4, y «Jaaré-oreguim»; 1Cr 20:5.
+sources:
+- it-jair
+- it-jaare-oreguim
+- 1-cronicas-20
+links:
+- title: 'Perspicacia: «Jaír»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ja%C3%ADr/
+  type: perspicacia
+- title: 1 Crónicas 20 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/1-Cr%C3%B3nicas/20/
+  type: bible
+checked_on: '2026-10-12'
+status: verified

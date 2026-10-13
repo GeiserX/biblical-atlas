@@ -1,0 +1,39 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: sobab-hijo-de-caleb
+name: Sobab
+names:
+- name: Sobab
+perspicacia: 1200004074#1
+summary: Judaíta, segundo de los hijos de Caleb que nombra 1 Crónicas 2:18. Su padre era hermano de Jerahmeel.
+reason: Perspicacia «Sobab», núm. 1; 1Cr 2:18.
+sources:
+- it-sobab
+- 1-cronicas-2
+links:
+- title: 'Perspicacia: «Sobab»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sobab/
+  type: perspicacia
+relations:
+- type: kin
+  person: caleb-hijo-de-hezron
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-2
+  reason: 1Cr 2:18 lo cuenta entre los hijos que tuvo Caleb.
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: ardon
+  word: brother
+  inferred: false
+  sources:
+  - 1-cronicas-2
+  reason: '1Cr 2:18: Jéser, Sobab y Ardón, hijos de Caleb.'
+  checked_on: '2026-10-12'
+  status: verified
+disambiguation: Sobab hijo de Caleb, de Judá; no Sobab hijo de David, nacido en Jerusalén.
+distinct_from:
+- sobab-hijo-de-david
+checked_on: '2026-10-12'
+status: verified

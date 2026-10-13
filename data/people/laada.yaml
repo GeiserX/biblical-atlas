@@ -1,0 +1,28 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: laada
+name: Laadá
+names:
+- name: Laadá
+perspicacia: '1200002654'
+summary: Judaíta, el segundo de los hijos de Selá que se nombran; padre de Maresá.
+reason: Perspicacia «Laadá»; 1Cr 4:21.
+sources:
+- it-laada
+- 1-cronicas-4
+links:
+- title: 'Perspicacia: «Laadá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Laad%C3%A1/
+  type: perspicacia
+relations:
+- type: kin
+  person: sela-hijo-de-juda
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-4
+  - it-laada
+  reason: '1Cr 4:21: uno de los hijos de Selá hijo de Judá.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

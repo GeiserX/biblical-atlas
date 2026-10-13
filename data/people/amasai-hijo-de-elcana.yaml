@@ -1,0 +1,42 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: amasai-hijo-de-elcana
+name: Amasái
+names:
+- name: Amasái
+- name: Amasai
+  note: Grafía de Perspicacia.
+perspicacia: 1200000221#1
+disambiguation: Amasái hijo de Elcaná (1Cr 6:25, 35); no es ninguno de los otros Amasái que numera Perspicacia «Amasai».
+distinct_from:
+- amasai-jefe-de-los-treinta
+- amasai-trompetista
+summary: Levita cohatita, hijo de Elcaná y padre de Máhat; antepasado del profeta Samuel y de Hemán, el cantor de David.
+reason: Perspicacia «Amasai», núm. 1; 1Cr 6:25, 35.
+sources:
+- it-amasai
+- 1-cronicas-6
+links:
+- title: 'Perspicacia: «Amasai»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Amasai/
+  type: perspicacia
+relations:
+- type: kin
+  person: elcana-padre-de-amasai
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-6
+  reason: 1Cr 6:25.
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: ahimot
+  word: brother
+  inferred: false
+  sources:
+  - 1-cronicas-6
+  reason: 1Cr 6:25 los da como hermanos, hijos de Elcaná.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

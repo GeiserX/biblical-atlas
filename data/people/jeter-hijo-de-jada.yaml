@@ -1,0 +1,44 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jeter-hijo-de-jada
+name: Jéter
+names:
+- name: Jéter
+perspicacia: 1200002452#2
+summary: Hijo de Jadá, de la rama de Jerahmeel en Judá. Murió sin hijos.
+reason: Perspicacia «Jéter», núm. 2; 1Cr 2:32.
+sources:
+- it-jeter
+- 1-cronicas-2
+links:
+- title: 'Perspicacia: «Jéter»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/J%C3%A9ter/
+  type: perspicacia
+relations:
+- type: kin
+  person: jada
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-2
+  reason: '1Cr 2:32: hijo de Jadá.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: jonatan-hijo-de-jada
+  word: brother
+  inferred: false
+  sources:
+  - 1-cronicas-2
+  reason: '1Cr 2:32: Jéter y Jonatán, los hijos de Jadá.'
+  checked_on: '2026-10-12'
+  status: verified
+disambiguation: Jéter hijo de Jadá, de Judá; no Itrá, padre de Amasá, al que 1Cr 2:17 llama Jéter, ni el hijo de Gedeón ni
+  Jetró.
+distinct_from:
+- jetro
+- jeter-hijo-de-gedeon
+- itra
+- jeter-de-aser
+- jeter-hijo-de-ezra
+checked_on: '2026-10-12'
+status: verified

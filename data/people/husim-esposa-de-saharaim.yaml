@@ -1,0 +1,20 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: husim-esposa-de-saharaim
+name: Husim
+names:
+- name: Husim
+perspicacia: 1200002117#3
+disambiguation: Husim, esposa de Saharaim; no Husim hijo de Dan, también llamado Suham.
+distinct_from:
+- husim-hijo-de-dan
+summary: Benjamita, esposa de Saharaim y madre de Abitub y Elpaal.
+reason: Perspicacia «Husim», núm. 3; 1Cr 8:1, 8, 11.
+sources:
+- it-husim
+- 1-cronicas-8
+links:
+- title: 'Perspicacia: «Husim»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Husim/
+  type: perspicacia
+checked_on: '2026-10-12'
+status: verified

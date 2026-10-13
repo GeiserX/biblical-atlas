@@ -1,0 +1,27 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: suaj
+name: Súaj
+names:
+- name: Súaj
+perspicacia: '1200004253'
+summary: Aserita, el primero de los hijos de Zofá; cabeza paterna entre los 26.000 guerreros escogidos.
+reason: Perspicacia «Súaj»; 1Cr 7:30, 36, 40.
+sources:
+- it-suaj
+- 1-cronicas-7
+links:
+- title: 'Perspicacia: «Súaj»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/S%C3%BAaj/
+  type: perspicacia
+relations:
+- type: kin
+  person: zofa
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-7
+  reason: 1Cr 7:36 lo cuenta entre los hijos de Zofá.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

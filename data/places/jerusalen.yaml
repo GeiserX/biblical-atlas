@@ -88,6 +88,33 @@ names:
 - name: Ofel
   note: Colina amurallada de Jerusalén que salía hacia el este desde el ángulo sudeste del monte del templo, sobre el Cedrón
     (2Cr 27:3; Ne 3:26). Is 32:14 anuncia que quedaría desierta. Perspicacia «Ofel».
+- name: Puerta de los hijos del pueblo
+  note: Puerta por la que entraban y salían los reyes de Judá; allí debía empezar Jeremías su aviso sobre el sábado (Jer 17:19).
+    jw.org no dice cuál era.
+- name: Puerta de los Tiestos
+  note: Puerta del ángulo sudeste de la muralla, abierta al valle de Hinón cerca de Tófet; Perspicacia «Puerta» la iguala
+    con la Puerta de los Montones de Ceniza de Nehemías (Jer 19:2; Ne 2:13).
+- name: Puerta de los Caballos
+  note: Puerta del muro, probablemente al sudeste del recinto del templo, junto a la que repararon los sacerdotes (Ne 3:28;
+    Jer 31:40). Perspicacia «Puerta» no la iguala con la entrada de los caballos del palacio.
+- name: Patio de la Guardia
+  note: Patio de la casa del rey donde Jeremías estuvo preso al final del sitio; allí podía recibir visitas y cerrar tratos
+    (Jer 32:2, 8, 12; 37:21; Perspicacia «Prisión»). Ne 3:25 lo pone junto a la Casa del Rey.
+- name: Calle de los panaderos
+  note: De ella le daban a Jeremías un pan redondo cada día mientras quedó pan (Jer 37:21). Perspicacia «Panadero» deduce
+    que los del oficio ocupaban una calle propia.
+- name: Puerta del Medio
+  note: Donde se sentaron los príncipes de Babilonia tras la brecha de 607 (Jer 39:3). Perspicacia «Puerta» la iguala, lo
+    más probable, con la de la Ciudad Vieja; otros, con la de Efraín o la del Pescado.
+- name: Jehová Es Nuestra Justicia
+  note: Nombre que Jer 33:16 da a la Jerusalén restaurada; Perspicacia «Jehová Es Nuestra Justicia» dice que el nombre de
+    Dios puesto sobre ella asegura su justicia.
+- name: Puerta del Rey
+  note: Puerta del templo hacia el este que guardaba Salum (1Cr 9:18). Perspicacia «Puerta» cree que era la Puerta Oriental,
+    por donde el rey entraba y salía del templo.
+- name: Puerta de Saléket
+  note: Puerta al oeste del santuario, junto al camino principal que subía; allí hacían guardia Supim y Hosá (1Cr 26:16).
+    Perspicacia «Saléket».
 type: city
 lat: 31.776667
 lon: 35.234167
@@ -264,6 +291,54 @@ sources:
 - isaias-64
 - isaias-65
 - isaias-66
+- jeremias-2
+- jeremias-3
+- jeremias-4
+- jeremias-7
+- jeremias-8
+- jeremias-9
+- jeremias-11
+- jeremias-13
+- jeremias-14
+- jeremias-15
+- jeremias-17
+- jeremias-18
+- jeremias-19
+- jeremias-21
+- jeremias-22
+- jeremias-23
+- jeremias-24
+- jeremias-26
+- jeremias-27
+- jeremias-29
+- jeremias-30
+- jeremias-31
+- it-gareb
+- it-goa
+- jeremias-32
+- it-prision
+- jeremias-33
+- jeremias-34
+- jeremias-35
+- jeremias-36
+- jeremias-37
+- jeremias-38
+- it-panadero
+- jeremias-39
+- jeremias-40
+- jeremias-52
+- it-jehova-es-nuestra-justicia
+- 1-cronicas-3
+- 1-cronicas-9
+- 1-cronicas-11
+- 1-cronicas-14
+- 1-cronicas-15
+- 1-cronicas-16
+- 1-cronicas-20
+- 1-cronicas-21
+- it-saleket
+- 1-cronicas-26
+- 1-cronicas-29
 links:
 - title: 'Perspicacia: «Jerusalén»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jerusal%C3%A9n/
@@ -290,5 +365,5 @@ history:
 - date: '2026-09-29'
   change: «Sión» pasa a «Sion», como escribe la TNM (Sl 137:1; 2Sa 5:7). Perspicacia conserva la tilde.
   source: salmos-137
-checked_on: '2026-09-30'
+checked_on: '2026-10-12'
 status: verified

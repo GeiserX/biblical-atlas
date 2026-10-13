@@ -18,6 +18,8 @@ sources:
 - genesis-50
 - numeros-26
 - josue-17
+- 1-cronicas-5
+- 1-cronicas-7
 links:
 - title: 'Perspicacia: «Manasés»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Manas%C3%A9s/
@@ -88,5 +90,5 @@ relations:
   reason: 'Gé 48:5: Jacob, padre de José, lo declara hijo suyo, como a Rubén y Simeón.'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

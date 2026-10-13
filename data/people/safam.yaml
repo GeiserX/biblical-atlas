@@ -1,0 +1,36 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: safam
+name: Safam
+names:
+- name: Safam
+perspicacia: '1200003948'
+summary: Gadita de Basán, segundo al mando después de Joel. Perspicacia lo sitúa en el siglo IX a.e.c., algo antes del reinado
+  de Jeroboán II.
+reason: Perspicacia «Safam»; 1Cr 5:11, 12, 17.
+sources:
+- it-safam
+- 1-cronicas-5
+links:
+- title: 'Perspicacia: «Safam»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Safam/
+  type: perspicacia
+relations:
+- type: lived_in
+  place: basan
+  inferred: false
+  sources:
+  - 1-cronicas-5
+  reason: '1Cr 5:11, 12: los gaditas vivían en Basán, hasta Salecá.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: gad-hijo-de-jacob
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-5
+  reason: '1Cr 5:11, 12: está entre los descendientes de Gad.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

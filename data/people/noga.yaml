@@ -1,0 +1,40 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: noga
+name: Noga
+names:
+- name: Noga
+perspicacia: '1200003271'
+summary: Hijo de David nacido en Jerusalén. Solo lo nombran las listas de Crónicas; la de 2 Samuel 5 no lo incluye.
+reason: Perspicacia «Noga»; 1Cr 3:7; 14:3-6.
+sources:
+- it-noga
+- 1-cronicas-3
+- 1-cronicas-14
+links:
+- title: 'Perspicacia: «Noga»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Noga/
+  type: perspicacia
+relations:
+- type: kin
+  person: david
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-3
+  - it-noga
+  - 1-cronicas-14
+  reason: '1Cr 3:5-8: uno de los hijos que David tuvo en Jerusalén.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: born_in
+  place: jerusalen
+  inferred: false
+  sources:
+  - 1-cronicas-3
+  - it-noga
+  - 1-cronicas-14
+  reason: '1Cr 3:5-8: nació en Jerusalén, entre los hijos que David tuvo allí.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

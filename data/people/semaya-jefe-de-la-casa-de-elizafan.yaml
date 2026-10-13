@@ -1,0 +1,43 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: semaya-jefe-de-la-casa-de-elizafan
+name: Semaya
+names:
+- name: Semaya
+perspicacia: 1200004000#3
+disambiguation: El jefe de la casa de Elizafán en tiempos de David; no Semaya el profeta de los días de Rehoboam (Perspicacia
+  «Semaya», núm. 6).
+distinct_from:
+- semaya-profeta
+- semaya-hijo-de-obed-edom
+- semaya-hijo-de-galal
+- semaya-hijo-de-hasub
+- semaya-hijo-de-joel
+- semaya-hijo-de-netanel
+- semaya-hijo-de-secanias
+- semaya-simeonita
+- semaya-de-nehelam
+- semaya-padre-de-delaya
+- semaya-padre-de-uriya
+summary: Levita al frente de la casa de Elizafán en tiempos de David. Se santificó y, con 200 de sus hermanos, formó parte
+  de los que subieron el Arca a Jerusalén.
+reason: Perspicacia «Semaya», núm. 3; 1Cr 15:8, 11-14.
+sources:
+- it-semaya
+- 1-cronicas-15
+links:
+- title: 'Perspicacia: «Semaya»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Semaya/
+  type: perspicacia
+relations:
+- type: kin
+  person: elizafan-hijo-de-uziel
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-15
+  - it-elizafan
+  reason: 1Cr 15:8 lo pone al frente de los descendientes de Elizafán; Perspicacia «Elizafán», núm. 1, cita este versículo.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

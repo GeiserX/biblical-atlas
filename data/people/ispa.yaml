@@ -1,0 +1,36 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ispa
+name: Ispá
+names:
+- name: Ispá
+perspicacia: '1200002219'
+summary: Benjamita, hijo o descendiente de Berías, uno de los jefes que vivían en Jerusalén.
+reason: Perspicacia «Ispá»; 1Cr 8:16, 28.
+sources:
+- it-ispa
+- 1-cronicas-8
+links:
+- title: 'Perspicacia: «Ispá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Isp%C3%A1/
+  type: perspicacia
+relations:
+- type: kin
+  person: berias-hijo-de-elpaal
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  - it-ispa
+  reason: 1Cr 8:16 lo pone entre los hijos de Berías; Perspicacia «Ispá» no precisa si era hijo o descendiente.
+  checked_on: '2026-10-12'
+  status: verified
+- type: lived_in
+  place: jerusalen
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  reason: '1Cr 8:28: los jefes de casas paternas de esta lista vivían en Jerusalén.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

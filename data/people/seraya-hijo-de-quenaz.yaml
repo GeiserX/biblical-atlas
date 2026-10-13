@@ -1,0 +1,37 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: seraya-hijo-de-quenaz
+name: Seraya
+names:
+- name: Seraya
+perspicacia: 1200003904#1
+disambiguation: Seraya hijo de Quenaz (núm. 1 de Perspicacia); no el secretario de David ni el sumo sacerdote ni el simeonita.
+summary: Judaíta, hijo de Quenaz, hermano del juez Otniel y sobrino de Caleb el espía. Por su hijo Joab descendió una familia
+  de artesanos.
+reason: Perspicacia «Seraya»; 1Cr 4:13, 14.
+sources:
+- it-seraya
+- 1-cronicas-4
+links:
+- title: 'Perspicacia: «Seraya»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Seraya/
+  type: perspicacia
+relations:
+- type: kin
+  person: quenaz-padre-de-otniel
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-4
+  - it-seraya
+  reason: '1Cr 4:13: Seraya y su hermano Otniel eran hijos de Quenaz.'
+  checked_on: '2026-10-12'
+  status: verified
+distinct_from:
+- seraya-secretario-de-david
+- seraya-hijo-de-nerias
+- seraya-hijo-de-azarias
+- seraya-hijo-de-tanhumet
+- seraya-hijo-de-asiel
+- seraya-hijo-de-azriel
+checked_on: '2026-10-12'
+status: verified
