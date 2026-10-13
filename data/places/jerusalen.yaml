@@ -339,6 +339,20 @@ sources:
 - it-saleket
 - 1-cronicas-26
 - 1-cronicas-29
+- ezequiel-5
+- ezequiel-8
+- ezequiel-9
+- ezequiel-13
+- ezequiel-14
+- ezequiel-15
+- ezequiel-16
+- ezequiel-17
+- ezequiel-21
+- ezequiel-22
+- ezequiel-23
+- it-oholiba
+- ezequiel-26
+- ezequiel-33
 links:
 - title: 'Perspicacia: «Jerusalén»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jerusal%C3%A9n/
@@ -365,5 +379,5 @@ history:
 - date: '2026-09-29'
   change: «Sión» pasa a «Sion», como escribe la TNM (Sl 137:1; 2Sa 5:7). Perspicacia conserva la tilde.
   source: salmos-137
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified

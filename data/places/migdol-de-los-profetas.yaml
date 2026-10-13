@@ -21,6 +21,8 @@ sources:
 - openbible-geo
 - jeremias-44
 - jeremias-46
+- ezequiel-29
+- ezequiel-30
 links:
 - title: 'Perspicacia: «Migdol»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Migdol/
@@ -28,7 +30,7 @@ links:
 - title: Jeremías 44 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/44/
   type: bible
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified
 not_claimed:
 - 'Que sea el Migdol del éxodo (Éx 14:2): Perspicacia lo deja como posible, pero recoge que la mayoría lo cree otro lugar.'

@@ -64,6 +64,8 @@ sources:
 - jeremias-17
 - jeremias-18
 - jeremias-31
+- ezequiel-27
+- ezequiel-37
 links:
 - title: 'Perspicacia: «Judá»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jud%C3%A1/
@@ -100,5 +102,5 @@ candidates:
   note: 'Centro: media de los puntos de OpenBible de Jerusalén, Hebrón y Belén. El radio de 50 km es nuestro, una referencia
     y no la frontera.'
   coord_source: calculation
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified

@@ -36,6 +36,9 @@ sources:
 - jeremias-39
 - jeremias-51
 - 1-cronicas-3
+- ezequiel-17
+- ezequiel-21
+- w07-ezequiel-1
 links:
 - title: 'Perspicacia: «Sedequías»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sedequ%C3%ADas/
@@ -64,8 +67,10 @@ relations:
   - it-sedequias
   - 2-reyes-24
   - jeremias-37
+  - ezequiel-17
+  - rr-pondre-un-solo-pastor
   reason: Nabucodonosor lo puso en lugar de su sobrino Joaquín (2Re 24:17).
-  checked_on: '2026-10-12'
+  checked_on: '2026-10-13'
   office: king
   status: verified
 - type: died_in
@@ -74,8 +79,9 @@ relations:
   sources:
   - it-sedequias
   - jeremias-52
+  - ezequiel-17
   reason: Lo tuvieron preso en Babilonia hasta su muerte (Jer 52:11).
-  checked_on: '2026-09-28'
+  checked_on: '2026-10-13'
   status: verified
 - type: kin
   person: hamutal
@@ -116,9 +122,10 @@ relations:
   - it-sedequias
   - jeremias-37
   - jeremias-52
+  - ezequiel-17
   reason: Nabucodonosor lo puso en el trono (2Re 24:17) y, según Perspicacia «Sedequías», núm. 4, lo hizo rey vasallo con
     juramento; se rebeló hacia 609 (2Re 24:20).
-  checked_on: '2026-10-12'
+  checked_on: '2026-10-13'
   status: verified
 - type: lived_in
   place: babilonia
@@ -128,8 +135,9 @@ relations:
   - it-sedequias
   - jeremias-39
   - jeremias-52
+  - ezequiel-17
   reason: '2Re 25:7: ciego y encadenado, se lo llevaron a Babilonia; Jer 52:11 dice que allí siguió preso hasta su muerte.'
-  checked_on: '2026-10-12'
+  checked_on: '2026-10-13'
   status: verified
 - type: tie
   person: jeremias-profeta
@@ -157,7 +165,7 @@ history:
 - date: '2026-10-12'
   change: 'Jer 29:21 nombra a otro Sedequías, falso profeta hijo de Maaseya: la desambiguación lo excluye también.'
   source: jeremias-29
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified
 distinct_from:
 - sedequias-hijo-de-kenaana
