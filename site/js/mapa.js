@@ -207,6 +207,7 @@ function crearMapa() {
     map[m] = (...a) => { if (!a[n]?.originalEvent) a[n] = { ...a[n], vuelo: true }; return f(...a); };
   }
   map.on('movestart', (e) => { enVuelo = !!e.vuelo; });
+  map.once('idle', () => { precarga = true; cargarFondos(); });
   map.on('moveend', () => {
     enVuelo = false; cargarFondos();
     sucio.etiquetas = true; programar(); if (E.mapa === 'cortina') pintarCortina(); pintarNombresEncuadre(); if (pintarLeyenda.args) pintarLeyenda(...pintarLeyenda.args);
@@ -384,6 +385,9 @@ const MARGEN_BORDE = 0.06;     // fracción de la extensión que ocupa, de sobra
 // Si el mapa vuela a otro encuadre porque lo pide el sitio (un enlace, una selección), no por un gesto: entonces no se
 // pide nada, porque lo de en medio solo se ve un instante, y lo del destino se pide al pararse.
 let enVuelo = false;
+// Desde que el mapa queda quieto por primera vez, también se piden las imágenes más gruesas que la más fina a la vista:
+// al alejarse o al salir de su extensión hacen falta opacas y de golpe, y sin ellas el mapa queda en papel liso.
+let precarga = false;
 /** Si la extensión `e` contiene la caja `v` ([oeste, sur, este, norte]) con un margen de `f` de su tamaño. */
 function contiene(e, v, f = 0) {
   const dx = (e.este - e.oeste) * f, dy = (e.norte - e.sur) * f;
@@ -398,20 +402,21 @@ function fondoALaVista(b) {
   if (v[0] > e.este || v[2] < e.oeste || v[1] > e.norte || v[3] < e.sur) return false;
   return !BASES.slice(BASES.indexOf(b) + 1).some((o) => z >= o.zoom[1] && contiene(o.ext, v, MARGEN_BORDE));
 }
-/** Pone las imágenes que el modo y el encuadre de ahora enseñan y aún no están: las antiguas en el mapa antiguo con la
-    capa «Relieve», las actuales solo con el estilo de reserva (sin OpenFreeMap) en el actual y en la cortina. Cada
-    capa va en su sitio: las actuales debajo de las antiguas, cada extensión encima de la anterior y todas debajo de la
-    cortina y de los datos. Desde file:// las pone colocarImgsDom. */
+/** Pone las imágenes que el modo y el encuadre de ahora enseñan y aún no están, y tras el primer reposo las más gruesas
+    que ellas: las antiguas en el mapa antiguo con la capa «Relieve», las actuales solo con el estilo de reserva (sin
+    OpenFreeMap) en el actual y en la cortina. Cada capa va en su sitio: las actuales debajo de las antiguas, cada
+    extensión encima de la anterior y todas debajo de la cortina y de los datos. Desde file:// las pone colocarImgsDom. */
 function cargarFondos() {
   if (!mapaListo || ES_FILE || enVuelo) return;
   const estilos = [];
   if (estiloReserva && E.mapa !== 'antiguo') estilos.push('actual');
   if (E.mapa === 'antiguo' && F.capas.relieve) estilos.push('antiguo');
   const orden = [...['actual', 'antiguo'].flatMap((s) => BASES.map((b) => `be-${s}-${b.id}`)), ...BASES.map((b) => `be-cortina-${b.id}`), 'be-formas-relleno'];
+  const vistas = BASES.map(fondoALaVista), fina = precarga ? vistas.lastIndexOf(true) : -1;
   for (const estilo of estilos) {
-    for (const b of BASES) {
+    for (const [i, b] of BASES.entries()) {
       const id = `be-${estilo}-${b.id}`;
-      if (map.getSource(id) || !fondoALaVista(b)) continue;
+      if (map.getSource(id) || !(vistas[i] || i < fina)) continue;
       map.addSource(id, { type: 'image', url: urlBase(b, estilo), coordinates: esquinas(b.ext) });
       const antes = orden.slice(orden.indexOf(id) + 1).find((l) => map.getLayer(l));
       map.addLayer({ id, type: 'raster', source: id, paint: { 'raster-fade-duration': 0, 'raster-opacity': opacidadGL(b) } }, antes);
