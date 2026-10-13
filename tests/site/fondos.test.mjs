@@ -5,7 +5,8 @@
 // each one arrives when its zoom and its place are reached: Jerusalén close to the city, the land of Israel in Galilee,
 // the world at Babilonia, east of the Mediterranean image. The map of today with the fallback style (no OpenFreeMap)
 // asks for the «actual» images only when it is shown, and with the «Relieve» layer off nothing is asked for. Every
-// image layer sits in its place: each extent above the coarser one, all below the data.
+// image layer sits in its place: each extent above the coarser one, all below the data. A gesture (the wheel, the keys)
+// asks for what it shows while it moves; a move asked by the site (flyTo) waits until it stops.
 //
 // Run from the repository root, one browser at a time:
 //   node --test --test-concurrency=1 tests/site/fondos.test.mjs
@@ -169,6 +170,47 @@ test('a shared link to Getsemaní asks for Jerusalén and not for the land of Is
   console.log(`430, Getsemaní: zoom ${await page.evaluate(() => +window.__be.map.getZoom().toFixed(2))}, asked for ${fondos.join(', ')}`);
   assert.ok(fondos.includes('jerusalen-antiguo.webp'), `no Jerusalén: ${fondos.join(', ')}`);
   assert.ok(!fondos.includes('israel-antiguo.webp') && !fondos.includes('mundo-antiguo.webp'), `a covered image was asked for: ${fondos.join(', ')}`);
+  await page.context().close();
+});
+
+/** From now on, notes for each of `ids` the first event after which its source was on the map: `move` if it was asked
+    for while the map was still moving, `moveend` if only once it stopped. The site's listeners run before these. */
+const watch = (page, ids) => page.evaluate((ids) => {
+  const m = window.__be.map;
+  window.__aparece = {};
+  const mira = (ev) => () => { for (const id of ids) if (!(id in window.__aparece) && m.getSource(id)) window.__aparece[id] = ev; };
+  mira('antes')();
+  m.on('move', mira('move'));
+  m.on('moveend', mira('moveend'));
+}, ids);
+const appeared = (page) => page.evaluate(() => window.__aparece);
+// Close to Jerusalén at zoom 6.5, the land of Israel is not drawn yet: it fades in from 6.7.
+const BEFORE_ISRAEL = [35.2, 31.8, 6.5];
+
+test('a gesture asks for what it shows while it moves; a move asked by the site waits until it stops', async () => {
+  // The wheel: MapLibre starts it with no originalEvent, like a move of the site, and it still is a gesture.
+  let page = await open(DESKTOP);
+  await go(page, ...BEFORE_ISRAEL);
+  await watch(page, ['be-antiguo-israel', 'be-antiguo-jerusalen']);
+  await page.mouse.move(720, 400);
+  await page.mouse.wheel(0, -600);
+  await still(page);
+  assert.ok((await page.evaluate(() => window.__be.map.getZoom())) > 6.8, 'the wheel did not zoom in');
+  assert.equal((await appeared(page))['be-antiguo-israel'], 'move', 'the wheel asked for Israel only once it stopped');
+  // A flight of the site (flyTo, with no event): nothing on the way, Jerusalén once it stops.
+  await page.evaluate(() => window.__be.map.flyTo({ center: [35.23, 31.78], zoom: 13, duration: 2000 }));
+  await still(page);
+  assert.equal((await appeared(page))['be-antiguo-jerusalen'], 'moveend', 'the flight asked for Jerusalén on the way');
+  assert.deepEqual(page.pageErrors, []);
+  await page.context().close();
+  // The keys (and the double click, the inertia and the buttons): MapLibre eases them with their own event.
+  page = await open(DESKTOP);
+  await go(page, ...BEFORE_ISRAEL);
+  await watch(page, ['be-antiguo-israel']);
+  await page.focus('canvas.maplibregl-canvas');
+  await page.keyboard.press('Equal');
+  await still(page);
+  assert.equal((await appeared(page))['be-antiguo-israel'], 'move', 'the + key asked for Israel only once it stopped');
   await page.context().close();
 });
 

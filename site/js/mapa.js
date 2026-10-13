@@ -199,7 +199,14 @@ function crearMapa() {
     if (e?.error?.message) console.warn('Mapa:', e.error.message, url);
   });
   map.on('style.load', () => { cargado = true; montarCapas(); });
-  map.on('movestart', (e) => { enVuelo = !e.originalEvent; });
+  // Un movimiento que pide el sitio (easeTo, flyTo, fitBounds) va marcado como vuelo. Los gestos que MapLibre anima con
+  // easeTo (teclado, doble clic, inercia) llevan su evento y no se marcan; la rueda, el arrastre y los botones + y −
+  // no pasan por aquí. No vale mirar originalEvent en movestart: la rueda lo empieza sin él.
+  for (const [m, n] of [['easeTo', 1], ['flyTo', 1], ['fitBounds', 2]]) {
+    const f = map[m].bind(map);
+    map[m] = (...a) => { if (!a[n]?.originalEvent) a[n] = { ...a[n], vuelo: true }; return f(...a); };
+  }
+  map.on('movestart', (e) => { enVuelo = !!e.vuelo; });
   map.on('moveend', () => {
     enVuelo = false; cargarFondos();
     sucio.etiquetas = true; programar(); if (E.mapa === 'cortina') pintarCortina(); pintarNombresEncuadre(); if (pintarLeyenda.args) pintarLeyenda(...pintarLeyenda.args);
