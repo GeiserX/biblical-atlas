@@ -1,0 +1,55 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: ezequiel-profetiza-contra-el-faraon-y-egipto
+title: Ezequiel profetiza contra el faraón y todo Egipto
+type: speech
+date:
+  from: -607
+  to: -607
+  precision: day
+  approx: false
+  type: derived
+  chronology: tnm
+  text: 12 de tebet de 608 a.e.c.
+  detail:
+    month: tebet
+    day: 12
+  note: 'Eze 29:1: año 10, mes 10, día 12. El año 5 es 613 (estudio 3) y el 9, 609: da 608. No casa con Eze 33:21, año 12, que «Toda Escritura» pone en 607 (nota c: manuscritos con «undécimo»).'
+narrative_order:
+  series: ezequiel
+  order: 29001
+places:
+- tel-abib
+- caldea
+- egipto
+- rio-nilo
+- migdol-de-los-profetas
+- siene
+- etiopia
+- patros
+people:
+- ezequiel
+present:
+- ezequiel
+roles:
+  ezequiel: spoke
+passages:
+- Eze 29:1-16
+summary: Jehová manda a Ezequiel profetizar contra el faraón, el gran monstruo del Nilo, que fue una caña rota para Israel.
+  Egipto quedará desierto cuarenta años, de Migdol a Siene, y luego será un reino humilde.
+reason: Eze 29:1 da el día; el año es cuenta nuestra. Ezequiel profetizaba en Babilonia, entre los desterrados (Perspicacia
+  «Ezequiel»). «Ezequiel, Libro de» dice que el libro sigue las fechas salvo Eze 29:17-20.
+sources:
+- ezequiel-29
+- si-3
+- it-ezequiel
+- it-ezequiel-libro
+- it-egipto
+links:
+- title: Ezequiel 29 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/ezequiel/29/
+  type: bible
+- title: 'Perspicacia: «Ezequiel, Libro de»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ezequiel-Libro-de/
+  type: perspicacia
+checked_on: '2026-10-13'
+status: pending

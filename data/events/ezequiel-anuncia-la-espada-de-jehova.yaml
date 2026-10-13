@@ -1,0 +1,49 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: ezequiel-anuncia-la-espada-de-jehova
+title: Ezequiel anuncia la espada de Jehová contra Jerusalén y Ammón
+date:
+  from: -610
+  to: -610
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 611 a.e.c.
+narrative_order:
+  series: ezequiel
+  order: 21001
+places:
+- jerusalen
+- israel
+- raba
+- ammon
+people:
+- ezequiel
+present: []
+passages:
+- Eze 21:1-32
+summary: Jehová desenvaina su espada contra Jerusalén. En un cruce de caminos, el rey de Babilonia consulta sus agüeros y
+  marcha contra la ciudad; al jefe malvado le quitan la corona hasta que llegue quien tiene el derecho. Ammón tampoco escapará.
+reason: 'La Atalaya de 2007 y La adoración pura, cap. 8, párr. 12, ponen el mensaje en el séptimo año del destierro, hacia
+  611; «Toda Escritura», libro 26, párr. 19, igual. El texto no dice dónde habló: nadie queda situado.'
+sources:
+- ezequiel-21
+- w07-ezequiel-1
+- rr-pondre-un-solo-pastor
+- si-ezequiel
+- it-ezequiel-libro
+- it-adivinacion
+- it-nabucodonosor
+- it-ammonitas
+- it-raba
+- it-cetro
+- it-sedequias
+links:
+- title: Ezequiel 21 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/ezequiel/21/
+  type: bible
+- title: 'Perspicacia: «Ezequiel, Libro de»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ezequiel-Libro-de/
+  type: perspicacia
+checked_on: '2026-10-13'
+status: verified

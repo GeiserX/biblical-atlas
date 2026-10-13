@@ -1,0 +1,43 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: ezequiel-anuncia-cuatro-castigos-contra-jerusalen
+title: Ezequiel anuncia cuatro castigos contra Jerusalén
+date:
+  from: -611
+  to: -611
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 612 a.e.c.
+narrative_order:
+  series: ezequiel
+  order: 14012
+places:
+- caldea
+- jerusalen
+people:
+- ezequiel
+present: []
+passages:
+- Eze 14:12-23
+summary: En un país infiel, Noé, Daniel y Job solo salvarían su vida. Jehová mandará contra Jerusalén espada, hambre, fieras
+  y peste; algunos saldrán con vida, llegarán a los desterrados y los consolarán.
+reason: Mensaje nuevo (Eze 14:12). La Atalaya de febrero de 2018 (nota del párr. 2) pone los capítulos 8 a 19 en el sexto
+  año del destierro, 612. No dice dónde habló.
+sources:
+- ezequiel-14
+- w18-noe-daniel-job
+- si-ezequiel
+- it-ezequiel-libro
+- it-noe
+- it-daniel
+- it-job
+links:
+- title: Ezequiel 14 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/ezequiel/14/
+  type: bible
+- title: 'Perspicacia: «Ezequiel, Libro de»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ezequiel-Libro-de/
+  type: perspicacia
+checked_on: '2026-10-13'
+status: verified

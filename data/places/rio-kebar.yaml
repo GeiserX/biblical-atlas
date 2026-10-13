@@ -1,0 +1,32 @@
+# biblical-atlas: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: rio-kebar
+name: Río Kebar
+names:
+- name: Kebar
+- name: Río Kebar
+type: river
+lat: 32.126944
+lon: 45.230833
+precision: uncertain
+coord_source: openbible:a3d2f0a
+coord_url: https://www.openbible.info/geo/ancient/a3d2f0a/chebar
+coord_note: Punto representativo de OpenBible para el Shatt en-Nil, su primera identificación. Perspicacia dice que la mayoría
+  de los geógrafos lo identifica con ese canal, junto a Nippur, pero que no es seguro.
+summary: Río o gran canal de la tierra de los caldeos, cerca de Tel-Abib, donde vivían judíos desterrados. Allí empezó Ezequiel
+  a tener visiones en 613 a.e.c.
+reason: 'Perspicacia «Kebar»: su nombre babilonio significa «Gran Canal», y «río» abarcaría los canales entre el Éufrates
+  y el Tigris; su sitio exacto se desconoce. Eze 1:1-3; 3:15. OpenBible: solo el punto.'
+sources:
+- it-kebar
+- it-ezequiel
+- it-tel-abib
+- openbible-geo
+- ezequiel-1
+- ezequiel-3
+- ezequiel-10
+links:
+- title: 'Perspicacia: «Kebar»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Kebar/
+  type: perspicacia
+checked_on: '2026-10-13'
+status: verified

@@ -1,0 +1,30 @@
+# biblical-atlas: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: helbon
+name: Helbón
+names:
+- name: Helbón
+- name: Halbun
+  note: Aldea actual con la que se la suele identificar.
+type: city
+lat: 33.6667
+lon: 36.25
+precision: point
+coord_source: openbible:a8a8e54
+coord_url: https://www.openbible.info/geo/ancient/a8a8e54/helbon
+coord_note: Punto de OpenBible en Halbun, unos 20 km al norte-noroeste de Damasco, donde la sitúa Perspicacia.
+summary: Lugar famoso por su vino, que Damasco cambiaba en Tiro. Estaba en un valle estrecho con viñas en terrazas, y también
+  Asiria, Babilonia y Persia compraban su vino.
+reason: 'Perspicacia «Helbón»; Eze 27:18. Coordenada de OpenBible: solo tomamos el punto.'
+sources:
+- it-helbon
+- openbible-geo
+- ezequiel-27
+links:
+- title: 'Perspicacia: «Helbón»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Helb%C3%B3n/
+  type: perspicacia
+- title: Ezequiel 27 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/ezequiel/27/
+  type: bible
+checked_on: '2026-10-13'
+status: verified

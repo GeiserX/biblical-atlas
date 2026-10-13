@@ -1,0 +1,62 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: ezequiel-ve-en-vision-un-templo-nuevo
+title: Ezequiel ve en visión un templo nuevo
+date:
+  from: -592
+  to: -592
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 593 a.e.c.
+narrative_order:
+  series: ezequiel
+  order: 240001
+places:
+- tel-abib
+- caldea
+- israel
+people:
+- ezequiel
+present:
+- ezequiel
+passages:
+- Eze 40:1-48:35
+summary: En el año 25 del destierro, Jehová lleva en visión a Ezequiel, que rondaba los cincuenta años, a una montaña muy
+  alta de Israel. Un ángel mide ante él un gran templo, que debe describir a los desterrados.
+reason: 'Eze 40:1: año 25 del destierro, 14 tras caer la ciudad. «Toda Escritura», libro 26, párr. 27, y Perspicacia «Templo»
+  dan 593. Lugar deducido: Perspicacia «Ezequiel» lo pone entre los desterrados de Tel-abib, junto al Kebar.'
+sources:
+- ezequiel-40
+- si-ezequiel
+- it-ezequiel-libro
+- it-templo
+- rr-describele-el-templo
+- it-ezequiel
+- ezequiel-41
+- ezequiel-42
+- ezequiel-43
+- rr-esta-es-la-ley-del-templo
+- ezequiel-44
+- ezequiel-45
+- it-contribucion-santa
+- it-principal
+- ezequiel-46
+- rr-por-donde-pase-el-rio
+- rr-repartan-la-tierra
+- rr-rios-de-bendiciones
+- w07-ezequiel-2
+- rr-jehova-esta-alli
+- it-jehova-mismo-esta-alli
+links:
+- title: Ezequiel 40 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/ezequiel/40/
+  type: bible
+- title: 'Perspicacia: «Templo»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Templo/
+  type: perspicacia
+not_claimed:
+- 'Que el templo de la visión llegara a construirse o fuera el gran templo espiritual: Perspicacia «Templo» y La adoración
+  pura, cap. 13, dicen que solo existió en visión.'
+checked_on: '2026-10-13'
+status: verified

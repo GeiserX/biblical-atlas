@@ -1,0 +1,59 @@
+# biblical-atlas: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: sibraim
+name: Sibraim
+names:
+- name: Sibraim
+type: city
+lat: null
+lon: null
+precision: uncertain
+coord_source: null
+coord_url: null
+candidates:
+- name: Zona de Homs, al sur de Hamat
+  geometry:
+    type: zone
+    lat: 34.7238
+    lon: 36.7144
+    radius_km: 25
+  checked_on: '2026-10-13'
+  status: alternative
+  sources:
+  - it-sibraim
+  - openbible-geo
+  reason: Perspicacia recoge que algunos intentan ponerlo hacia Homs, al sur de Hamat, aunque no se sabe dónde estaba.
+  coord_source: calculation
+  note: 'Centro: punto de Homs que da OpenBible en su ficha de Hadrac (a3e8d63), 34,7238 N; 36,7144 E. El radio de 25 km es
+    nuestro.'
+- name: Entre los territorios de Damasco y Hamat
+  geometry:
+    type: point
+    lat: 34.401068
+    lon: 36.636361
+  checked_on: '2026-10-13'
+  status: alternative
+  sources:
+  - ezequiel-47
+  - openbible-geo
+  reason: Eze 47:16 lo pone entre el territorio de Damasco y el de Hamat; es la primera identificación de OpenBible.
+  coord_source: openbible:ab5d319
+  coord_url: https://www.openbible.info/geo/ancient/ab5d319/sibraim
+  note: Solo tomamos el punto.
+summary: Lugar de la frontera norte que Ezequiel ve en su visión del reparto de Israel, entre el territorio de Damasco y el
+  de Hamat. No se sabe dónde estaba.
+reason: 'Perspicacia «Sibraim»; Eze 47:16. OpenBible: solo los puntos.'
+not_claimed:
+- 'Que Sibraim sea Sefarvaim: Perspicacia solo lo ve posible.'
+sources:
+- it-sibraim
+- openbible-geo
+- ezequiel-47
+links:
+- title: 'Perspicacia: «Sibraim»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sibraim/
+  type: perspicacia
+- title: Ezequiel 47 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/ezequiel/47/
+  type: bible
+checked_on: '2026-10-13'
+status: verified

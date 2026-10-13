@@ -1,0 +1,47 @@
+# biblical-atlas: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: dibla
+name: Diblá
+names:
+- name: Diblá
+type: city
+lat: null
+lon: null
+precision: uncertain
+coord_source: null
+coord_url: null
+candidates:
+- name: Riblá, junto al Orontes
+  geometry:
+    type: point
+    lat: 34.459547
+    lon: 36.572623
+  status: alternative
+  sources:
+  - it-dibla
+  - it-ribla
+  - openbible-geo
+  reason: Perspicacia «Diblá» recoge que muchos eruditos ven un error de copista por Riblá, porque la r y la d hebreas se
+    parecen; si fuera así, el desierto sería el sirio, al sur de Riblá.
+  note: Punto de OpenBible para Riblá (Rableh); solo tomamos el punto.
+  coord_source: openbible:ab2bde8
+  coord_url: https://www.openbible.info/geo/ancient/ab2bde8/riblah-1
+  checked_on: '2026-10-13'
+summary: 'Lugar que Ezequiel usa como medida de la ruina: la tierra de Israel quedaría más desolada que el desierto próximo
+  a Diblá. No se conoce ningún sitio antiguo con este nombre.'
+reason: 'Perspicacia «Diblá»; Eze 6:14. El candidato solo es posible: el Índice de las publicaciones lo da como «Riblá, posiblemente».'
+not_claimed:
+- 'Que Diblá sea con seguridad Riblá: jw.org solo recoge esa lectura como posible.'
+sources:
+- it-dibla
+- it-ribla
+- openbible-geo
+- ezequiel-6
+links:
+- title: 'Perspicacia: «Diblá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Dibl%C3%A1/
+  type: perspicacia
+- title: Ezequiel 6 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/ezequiel/6/
+  type: bible
+checked_on: '2026-10-13'
+status: verified

@@ -1,0 +1,41 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: ezequiel-cuenta-el-enigma-de-las-dos-aguilas
+title: Ezequiel cuenta el enigma de las dos águilas y la vid
+date:
+  from: -611
+  to: -611
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 612 a.e.c.
+narrative_order:
+  series: ezequiel
+  order: 17001
+places:
+- babilonia
+- jerusalen
+- egipto
+people:
+- ezequiel
+present: []
+passages:
+- Eze 17:1-24
+summary: 'Jehová manda a Ezequiel proponer a los desterrados un enigma: un águila lleva a Babilonia la punta de un cedro y
+  planta una vid que luego busca a otra águila. Lo explica y anuncia un brote que él mismo plantará.'
+reason: La Atalaya de febrero de 2018 (nota del párr. 2) pone los capítulos 8 a 19 en el sexto año del destierro, 612. La
+  adoración pura, cap. 8, párr. 4-6, explica las figuras. El texto no sitúa a nadie.
+sources:
+- ezequiel-17
+- w18-noe-daniel-job
+- rr-pondre-un-solo-pastor
+- si-ezequiel
+- w07-ezequiel-1
+- it-enigma
+- it-cedro
+links:
+- title: Ezequiel 17 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/ezequiel/17/
+  type: bible
+checked_on: '2026-10-13'
+status: verified
