@@ -79,7 +79,7 @@ body {
 
 /* ---------- Botones, chips, insignias ---------- */
 .be-btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; height: 36px; padding: 0 14px; border-radius: var(--r-md); border: 1px solid var(--line-2); background: var(--surface); color: var(--ink); font: 600 var(--fs-sm)/1 var(--font-sans); white-space: nowrap; }
-.be-btn--primary { background: var(--ink); border-color: var(--ink); color: #fbf7ef; }
+.be-btn--primary { background: var(--ink); border-color: var(--ink); color: var(--on-ink); }
 .be-btn--accent { background: var(--accent); border-color: var(--accent); color: #fff; }
 .be-btn--ghost { background: transparent; border-color: transparent; color: var(--ink-2); }
 .be-btn--icon { width: 36px; padding: 0; }
@@ -87,7 +87,7 @@ body {
 .be-btn--round { border-radius: 50%; }
 
 .be-chip { display: inline-flex; align-items: center; gap: 6px; height: 26px; padding: 0 10px; border-radius: var(--r-pill); background: var(--surface-2); border: 1px solid var(--line); color: var(--ink-2); font-size: var(--fs-xs); font-weight: 600; white-space: nowrap; }
-.be-chip--active { background: var(--ink); border-color: var(--ink); color: #fbf7ef; }
+.be-chip--active { background: var(--ink); border-color: var(--ink); color: var(--on-ink); }
 .be-chip__dot { width: 8px; height: 8px; border-radius: 50%; background: currentColor; }
 
 /* Referencia bíblica: se pulsa para leer en jw.org */
@@ -256,7 +256,7 @@ body {
 .be-zone { fill: url(#be-hatch); stroke: var(--zone); stroke-width: 1.6; stroke-dasharray: 5 4; }
 .be-zone--soft { fill: rgba(122, 92, 142, .10); }
 .be-zone-candidate { fill: var(--surface); stroke: var(--zone); stroke-width: 2; }
-.be-zone-label { position: absolute; transform: translate(-50%, -50%); font-size: var(--fs-2xs); font-weight: 700; color: #5d4674; background: rgba(255, 253, 248, .92); border: 1px solid #d5c8e1; border-radius: var(--r-pill); padding: 3px 9px; white-space: nowrap; letter-spacing: .02em; text-align: center; line-height: 1.3; box-shadow: var(--shadow-1); }
+.be-zone-label { position: absolute; transform: translate(-50%, -50%); font-size: var(--fs-2xs); font-weight: 700; color: var(--zone-ink); background: color-mix(in srgb, var(--glass) 92%, transparent); border: 1px solid color-mix(in srgb, var(--zone-line) 55%, var(--halo)); border-radius: var(--r-pill); padding: 3px 9px; white-space: nowrap; letter-spacing: .02em; text-align: center; line-height: 1.3; box-shadow: var(--shadow-1); }
 
 /* Globo de información anclado a un punto del mapa */
 .be-pop { position: absolute; width: 300px; background: var(--surface); border-radius: var(--r-lg); box-shadow: var(--shadow-3); border: 1px solid var(--line); pointer-events: auto; }
@@ -270,7 +270,7 @@ body {
 .be-mapctl--bl { bottom: 14px; left: 14px; }
 .be-mapctl--br { bottom: 22px; right: 14px; }
 .be-attrib { position: absolute; right: 0; bottom: 0; z-index: 2; padding: 2px 8px; font-size: 9.5px; line-height: 1.4; color: var(--ink-3); background: rgba(255, 252, 245, .72); border-top-left-radius: 6px; pointer-events: none; }
-.be-float { background: rgba(255, 253, 248, .94); backdrop-filter: var(--blur-glass); border: 1px solid var(--line); border-radius: var(--r-md); box-shadow: var(--shadow-2); }
+.be-float { background: color-mix(in srgb, var(--glass) 94%, transparent); backdrop-filter: var(--blur-glass); border: 1px solid var(--line); border-radius: var(--r-md); box-shadow: var(--shadow-2); }
 .be-zoombtns { display: flex; flex-direction: column; overflow: hidden; }
 .be-zoombtns > * { width: 36px; height: 36px; display: grid; place-items: center; color: var(--ink-2); }
 .be-zoombtns > * + * { border-top: 1px solid var(--line); }
@@ -324,15 +324,15 @@ body {
 
 /* Controles de reproducción y zoom temporal */
 .be-play { display: flex; align-items: center; gap: 4px; }
-.be-play__main { width: 34px; height: 34px; border-radius: 50%; display: grid; place-items: center; background: var(--ink); color: #fff; }
+.be-play__main { width: 34px; height: 34px; border-radius: 50%; display: grid; place-items: center; background: var(--ink); color: var(--on-ink); }
 .be-play__btn { width: 30px; height: 30px; border-radius: 8px; display: grid; place-items: center; color: var(--ink-2); }
 .be-speed { font-size: var(--fs-xs); font-weight: 600; color: var(--ink-2); padding: 4px 10px; border-radius: var(--r-pill); background: var(--paper-2); border: 1px solid var(--line); white-space: nowrap; }
 .be-zoomscale { display: inline-flex; border: 1px solid var(--line); border-radius: var(--r-pill); overflow: hidden; background: var(--paper-2); }
 .be-zoomscale > span { padding: 4px 10px; font-size: var(--fs-2xs); font-weight: 600; color: var(--ink-3); white-space: nowrap; }
 .be-zoomscale > span + span { border-left: 1px solid var(--line); }
-.be-zoomscale > .on { background: var(--ink); color: #fff; }
+.be-zoomscale > .on { background: var(--ink); color: var(--on-ink); }
 .be-minimap { position: relative; height: 18px; flex: 1; max-width: 420px; border-radius: 5px; background: linear-gradient(90deg, var(--emp-egipto) 0 18%, var(--emp-asiria) 18% 34%, var(--emp-babilonia) 34% 44%, var(--emp-persia) 44% 60%, var(--emp-grecia) 60% 72%, var(--emp-roma) 72% 100%); opacity: .55; }
-.be-minimap__win { position: absolute; top: -3px; bottom: -3px; border: 2px solid var(--ink); border-radius: 5px; background: rgba(255,255,255,.35); }
+.be-minimap__win { position: absolute; top: -3px; bottom: -3px; border: 2px solid var(--ink); border-radius: 5px; background: color-mix(in srgb, var(--halo) 35%, transparent); }
 
 /* ---------- Hoja inferior (móvil) ---------- */
 .be-phone { width: 100vw; height: 100vh; position: relative; overflow: hidden; background: var(--paper); }
@@ -352,7 +352,7 @@ body {
 .be-edge--strong { stroke: var(--ink-3); stroke-width: 2; }
 .be-edge--new { stroke: var(--gold); stroke-dasharray: 4 4; }
 .be-gnode { position: absolute; transform: translate(-50%, -50%); display: flex; flex-direction: column; align-items: center; gap: 6px; text-align: center; }
-.be-gnode__label { font-size: var(--fs-sm); font-weight: 600; background: rgba(255, 253, 248, .92); padding: 1px 8px; border-radius: var(--r-pill); white-space: nowrap; }
+.be-gnode__label { font-size: var(--fs-sm); font-weight: 600; background: color-mix(in srgb, var(--glass) 92%, transparent); padding: 1px 8px; border-radius: var(--r-pill); white-space: nowrap; }
 .be-gnode__meta { font-size: var(--fs-2xs); color: var(--ink-3); margin-top: -4px; white-space: nowrap; }
 .be-gnode--dim { opacity: .35; }
-.be-gnode--center .be-node { box-shadow: 0 0 0 4px #fff, 0 0 0 6px var(--gold), var(--shadow-2); }
+.be-gnode--center .be-node { box-shadow: 0 0 0 4px var(--halo), 0 0 0 6px var(--gold), var(--shadow-2); }

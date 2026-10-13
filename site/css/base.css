@@ -95,7 +95,7 @@ a { color: var(--link); }
 
 /* ---------- Hoja inferior y avisos ---------- */
 .sobre-hoja { display: none; }
-.aviso { position: absolute; left: 50%; bottom: 40px; transform: translateX(-50%); z-index: 6; padding: 8px 14px; border-radius: var(--r-md); background: var(--ink); color: #fbf7ef; font-size: var(--fs-sm); box-shadow: var(--shadow-3); max-width: 90%; }
+.aviso { position: absolute; left: 50%; bottom: 40px; transform: translateX(-50%); z-index: 6; padding: 8px 14px; border-radius: var(--r-md); background: var(--ink); color: var(--on-ink); font-size: var(--fs-sm); box-shadow: var(--shadow-3); max-width: 90%; }
 
 /* ---------- Ficha: contenedor ---------- */
 .panel::after { display: none; }
