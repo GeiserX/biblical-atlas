@@ -37,6 +37,8 @@ sources:
 - 1-reyes-5
 - 1-reyes-9
 - isaias-33
+- 2-cronicas-2
+- 2-cronicas-8
 links:
 - title: 'Perspicacia: «Líbano»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/L%C3%ADbano/
@@ -50,5 +52,5 @@ links:
 - title: Salmo 92 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/salmos/92/
   type: bible
-checked_on: '2026-09-30'
+checked_on: '2026-10-13'
 status: verified

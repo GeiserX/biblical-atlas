@@ -53,6 +53,7 @@ sources:
 - jeremias-39
 - it-nabucodonosor
 - 1-cronicas-6
+- 2-cronicas-36
 alternatives:
 - date:
     from: -586
@@ -106,5 +107,5 @@ history:
 narrative_order:
   series: 2-reyes
   order: 25008
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified

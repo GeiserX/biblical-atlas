@@ -46,6 +46,7 @@ sources:
 - 1-cronicas-11
 - 1-cronicas-12
 - 1-cronicas-29
+- 2-cronicas-11
 links:
 - title: 'Perspicacia: «Hebrón»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hebr%C3%B3n/
@@ -53,5 +54,5 @@ links:
 - title: 2 Samuel 2 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-samuel/2/
   type: bible
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified

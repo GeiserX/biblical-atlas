@@ -21,7 +21,7 @@ present:
 - salomon
 passages:
 - 1Re 3:4-15
-- 2Cr 1:3-13
+- 2Cr 1:2-13
 summary: Salomón ofrece mil sacrificios en Gabaón, el lugar alto principal. En sueños Jehová le dice que pida; él pide un
   corazón obediente para juzgar, y recibe sabiduría, riquezas y gloria. Vuelve a Jerusalén y sacrifica ante el arca.
 reason: '1Re 3:4-15; Perspicacia «Salomón», apartado «La sabia solicitud de Salomón», y «Gabaón»: al principio de su reinado.
@@ -31,6 +31,7 @@ sources:
 - it-salomon
 - it-gabaon
 - si-3
+- 2-cronicas-1
 links:
 - title: 1 Reyes 3 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/1-reyes/3/
@@ -41,5 +42,10 @@ links:
 - title: 'Perspicacia: «Gabaón»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Gaba%C3%B3n/
   type: perspicacia
-checked_on: '2026-09-30'
+history:
+- date: '2026-10-13'
+  change: El pasaje de Crónicas empieza en 2Cr 1:2, donde Salomón convoca a Israel antes de ir a Gabaón, como ya dice el viaje
+    salomon-va-a-gabaon.
+  source: 2-cronicas-1
+checked_on: '2026-10-13'
 status: verified

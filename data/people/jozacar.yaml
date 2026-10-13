@@ -21,6 +21,7 @@ sources:
 - it-jozacar
 - 2-reyes-12
 - tnm-a6-a
+- 2-cronicas-24
 links:
 - title: 'Perspicacia: «Jozacar»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jozacar/
@@ -36,8 +37,9 @@ relations:
   sources:
   - 2-reyes-12
   - it-simeat
+  - 2-cronicas-24
   reason: 2Re 12:21 lo llama hijo de Simeat; Perspicacia «Simeat» dice que era una mujer ammonita.
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-13'
   status: verified
 - type: tie
   person: jehoas-de-juda
@@ -45,12 +47,13 @@ relations:
   inferred: false
   sources:
   - 2-reyes-12
+  - 2-cronicas-24
   reason: '2Re 12:20, 21: era uno de los siervos de Jehoás.'
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-13'
   status: verified
 disambiguation: Jozacar, el siervo que mató al rey Jehoás y que también se llamó Zabad; no Zabad hijo de Natán, de Judá, ni
   Zabad de Efraín, ni Zabad hijo de Ahlái, guerrero de David.
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified
 distinct_from:
 - zabad-hijo-de-natan

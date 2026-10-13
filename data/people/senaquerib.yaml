@@ -15,6 +15,7 @@ sources:
 - isaias-36
 - ip1-29
 - isaias-37
+- 2-cronicas-32
 links:
 - title: 'Perspicacia: «Senaquerib»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Senaquerib/
@@ -43,9 +44,10 @@ relations:
   - 2-reyes-19
   - isaias-36
   - isaias-37
+  - 2-cronicas-32
   reason: Is 36:1 lo llama rey de Asiria, y el rabsaqué, «el gran rey» (Is 36:4, 13). Perspicacia «Senaquerib» lo da como
     hijo y heredero de Sargón II.
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-13'
   status: verified
 - type: lived_in
   place: ninive
@@ -89,7 +91,7 @@ relations:
   checked_on: '2026-09-30'
   status: verified
 perspicacia: '1200003897'
-checked_on: '2026-09-30'
+checked_on: '2026-10-13'
 status: verified
 history:
 - date: '2026-09-30'

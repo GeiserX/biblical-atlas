@@ -34,6 +34,7 @@ sources:
 - 1-samuel-29
 - zacarias-12
 - it-meguido
+- 2-cronicas-35
 links:
 - title: 'Perspicacia: «Jezreel»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jezreel/
@@ -53,5 +54,5 @@ history:
   change: La razón repetía la cita de Perspicacia y la nota de OpenBible, restos de juntar dos lecturas. Queda una sola, con
     Jue 6:33 y 7:12-22.
   source: jueces-6
-checked_on: '2026-09-29'
+checked_on: '2026-10-13'
 status: verified

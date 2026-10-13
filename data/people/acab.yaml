@@ -27,6 +27,7 @@ sources:
 - 1-reyes-20
 - 1-reyes-22
 - 2-reyes-10
+- 2-cronicas-18
 links:
 - title: 'Perspicacia: «Acab»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Acab/
@@ -76,8 +77,9 @@ relations:
   - 1-reyes-20
   - 1-reyes-21
   - 1-reyes-22
+  - 2-cronicas-18
   reason: '1Re 16:29: reinó 22 años sobre Israel desde Samaria.'
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-13'
   status: verified
 - type: lived_in
   place: jezreel
@@ -103,8 +105,9 @@ relations:
   sources:
   - 1-reyes-22
   - it-acab
+  - 2-cronicas-18
   reason: '1Re 22:34-37: una flecha lo hiere en la batalla de Ramot-Galaad y muere en su carro al atardecer.'
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-13'
   status: verified
 - type: tie
   person: micaya-hijo-de-imla
@@ -113,8 +116,9 @@ relations:
   sources:
   - 1-reyes-22
   - it-micaya
+  - 2-cronicas-18
   reason: '1Re 22:8: Acab dice que odia a Micaya porque solo le profetiza cosas malas.'
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-13'
   status: verified
 perspicacia: 1200000138#1
 history:
@@ -123,7 +127,7 @@ history:
   source: 1-reyes-22
 disambiguation: El rey de Israel hijo de Omrí, esposo de Jezabel; no es Acab hijo de Colaya, el falso profeta desterrado en
   Babilonia.
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified
 distinct_from:
 - acab-hijo-de-colaya

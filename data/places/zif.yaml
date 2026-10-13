@@ -23,6 +23,7 @@ sources:
 - 1-samuel-23
 - 1-samuel-26
 - 1-cronicas-2
+- 2-cronicas-11
 links:
 - title: 'Perspicacia: «Zif»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zif/
@@ -30,5 +31,5 @@ links:
 - title: Salmo 54 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/salmos/54/
   type: bible
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified

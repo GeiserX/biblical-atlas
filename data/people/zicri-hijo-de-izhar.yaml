@@ -28,7 +28,7 @@ relations:
   reason: 'Éx 6:21: hijo de Izhar.'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified
 distinct_from:
 - zicri-descendiente-de-jeroham
@@ -37,3 +37,6 @@ distinct_from:
 - zicri-hijo-de-asaf
 - zicri-descendiente-de-eliezer
 - zicri-padre-de-eliezer
+- zicri-padre-de-amasiah
+- zicri-padre-de-elisafat
+- zicri-guerrero-efraimita

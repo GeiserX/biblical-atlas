@@ -17,6 +17,7 @@ places:
 - jerusalen
 people:
 - ezequias
+- isaias
 present:
 - ezequias
 passages:
@@ -34,6 +35,7 @@ sources:
 - 2-reyes-19
 - it-ezequias
 - it-rabsaque
+- 2-cronicas-32
 links:
 - title: Isaías 37 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Isa%C3%ADas/37/
@@ -49,5 +51,5 @@ history:
   change: 'Se funde con el suceso de 2 Reyes, dueño del relato, que separa dos escenas: queda la oración en el templo (2Re
     19:14-19; Is 37:14-20), y las cartas desde Libná son senaquerib-envia-cartas-a-ezequias.'
   source: 2-reyes-19
-checked_on: '2026-09-30'
+checked_on: '2026-10-13'
 status: verified

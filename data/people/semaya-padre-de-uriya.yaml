@@ -17,6 +17,10 @@ distinct_from:
 - semaya-hijo-de-secanias
 - semaya-jefe-de-la-casa-de-elizafan
 - semaya-simeonita
+- semaya-levita-de-jehosafat
+- semaya-levita-de-ezequias
+- semaya-ayudante-de-core
+- semaya-levita-de-josias
 summary: Padre de Uriya, el profeta de Quiryat-Jearim contemporáneo de Jeremías al que mató el rey Jehoiaquim.
 reason: Perspicacia «Semaya», núm. 11; Jer 26:20.
 sources:
@@ -26,5 +30,5 @@ links:
 - title: 'Perspicacia: «Semaya»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Semaya/
   type: perspicacia
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified

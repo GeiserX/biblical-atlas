@@ -71,6 +71,8 @@ sources:
 - jeremias-49
 - jeremias-50
 - jeremias-51
+- 2-cronicas-35
+- 2-cronicas-36
 links:
 - title: 'Perspicacia: «Jeremías»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jerem%C3%ADas/
@@ -136,10 +138,11 @@ relations:
   - jeremias-49
   - jeremias-50
   - jeremias-51
+  - 2-cronicas-36
   reason: 'Jer 1:5: Jehová lo hizo profeta para las naciones; 1:2, 3 sitúan su obra desde el año 13 de Josías. El estudio
     3 fecha la comisión en 647 y la Tabla cierra su libro en 580.'
   inferred: false
-  checked_on: '2026-10-12'
+  checked_on: '2026-10-13'
   status: verified
 - type: holds_office
   office: priest
@@ -274,7 +277,7 @@ relations:
   checked_on: '2026-10-12'
   status: verified
 perspicacia: 1200002421#6
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified
 distinct_from:
 - jeremias-de-libna

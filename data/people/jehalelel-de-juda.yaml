@@ -15,5 +15,7 @@ links:
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jehalelel/
   type: perspicacia
 relations: []
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified
+distinct_from:
+- jehalelel-padre-de-azarias

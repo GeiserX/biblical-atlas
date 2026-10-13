@@ -12,6 +12,7 @@ date:
 narrative_order:
   series: 1-reyes
   order: 14001
+  after: abias-vence-a-jeroboan
 places:
 - silo
 people:
@@ -40,5 +41,10 @@ links:
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ah%C3%ADya/
   type: perspicacia
 search: esposa de Jeroboán Ahíya Siló
-checked_on: '2026-09-30'
+history:
+- date: '2026-10-13'
+  change: Va después de la batalla de 2Cr 13, como dice su fecha; sin el enganche, la serie 1-reyes la ponía antes en el mismo
+    año.
+  source: 2-cronicas-13
+checked_on: '2026-10-13'
 status: verified

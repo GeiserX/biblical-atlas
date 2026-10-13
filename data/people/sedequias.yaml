@@ -36,6 +36,7 @@ sources:
 - jeremias-39
 - jeremias-51
 - 1-cronicas-3
+- 2-cronicas-36
 links:
 - title: 'Perspicacia: «Sedequías»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sedequ%C3%ADas/
@@ -64,8 +65,9 @@ relations:
   - it-sedequias
   - 2-reyes-24
   - jeremias-37
+  - 2-cronicas-36
   reason: Nabucodonosor lo puso en lugar de su sobrino Joaquín (2Re 24:17).
-  checked_on: '2026-10-12'
+  checked_on: '2026-10-13'
   office: king
   status: verified
 - type: died_in
@@ -96,8 +98,9 @@ relations:
   - jeremias-27
   - jeremias-34
   - jeremias-52
+  - 2-cronicas-36
   reason: '2Re 24:18: reinó once años en Jerusalén.'
-  checked_on: '2026-10-12'
+  checked_on: '2026-10-13'
   status: verified
 - type: tie
   person: nabucodonosor-ii
@@ -116,9 +119,10 @@ relations:
   - it-sedequias
   - jeremias-37
   - jeremias-52
+  - 2-cronicas-36
   reason: Nabucodonosor lo puso en el trono (2Re 24:17) y, según Perspicacia «Sedequías», núm. 4, lo hizo rey vasallo con
     juramento; se rebeló hacia 609 (2Re 24:20).
-  checked_on: '2026-10-12'
+  checked_on: '2026-10-13'
   status: verified
 - type: lived_in
   place: babilonia
@@ -139,25 +143,27 @@ relations:
   - jeremias-27
   - it-sedequias
   - jeremias-38
+  - 2-cronicas-36
   reason: 'Jer 27:12-15: Jeremías le aconseja ponerse bajo el yugo de Babilonia para vivir. Perspicacia «Sedequías», núm.
     4, habla del consejo inspirado de Jeremías que el rey no siguió.'
-  checked_on: '2026-10-12'
+  checked_on: '2026-10-13'
   status: verified
 - type: tie
   person: nabucodonosor-ii
   word: enemy
   sources:
   - jeremias-44
+  - 2-cronicas-36
   reason: 'Jer 44:30: Jehová entregó a Sedequías en manos de Nabucodonosor, su enemigo, que quería quitarle la vida.'
   inferred: false
-  checked_on: '2026-10-12'
+  checked_on: '2026-10-13'
   status: verified
 perspicacia: 1200004685#4
 history:
 - date: '2026-10-12'
   change: 'Jer 29:21 nombra a otro Sedequías, falso profeta hijo de Maaseya: la desambiguación lo excluye también.'
   source: jeremias-29
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified
 distinct_from:
 - sedequias-hijo-de-kenaana
@@ -166,3 +172,5 @@ distinct_from:
 - sedequias-hijo-de-joaquin
 - matanias-hijo-de-mica
 - matanias-hijo-de-heman
+- matanias-antepasado-de-jahaziel
+- matanias-levita-de-ezequias

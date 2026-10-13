@@ -25,8 +25,9 @@ relations:
   reason: '1Cr 26:10: Hosá lo nombró jefe aunque no era el primogénito.'
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified
 distinct_from:
 - simri-padre-de-jediael
 - simri-hijo-de-semaya
+- simri-levita-de-ezequias

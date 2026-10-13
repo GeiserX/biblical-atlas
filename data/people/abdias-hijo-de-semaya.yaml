@@ -33,7 +33,7 @@ relations:
   reason: '1Cr 9:16, 34: de los jefes de los levitas que vivían en Jerusalén.'
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified
 distinct_from:
 - abdias-el-gadita
@@ -43,5 +43,7 @@ distinct_from:
 - abdias-mayordomo-de-acab
 - abdias-padre-de-ismaya
 - abdias-profeta
+- abdias-levita-de-josias
+- abdias-principe-de-jehosafat
 disambiguation: 'Abdías núm. 9 de Perspicacia: levita, hijo de Semaya. No el mayordomo de Acab, el profeta ni el descendiente
   de Saúl.'

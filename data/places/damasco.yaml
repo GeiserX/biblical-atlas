@@ -37,6 +37,8 @@ sources:
 - ip1-15
 - jeremias-49
 - 1-cronicas-18
+- 2-cronicas-16
+- 2-cronicas-28
 links:
 - title: 'Perspicacia: «Damasco»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Damasco/
@@ -56,5 +58,5 @@ history:
 - date: '2026-09-30'
   change: La razón cita la caída ante Asiria (2Re 16:9; Is 10:9).
   source: isaias-10
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified

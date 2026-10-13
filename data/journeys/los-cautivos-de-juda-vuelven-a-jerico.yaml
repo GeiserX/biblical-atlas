@@ -4,59 +4,75 @@ name: Los cautivos de Judá vuelven a Jericó
 person: azarias-hijo-de-jehohanan
 reference: 2Cr 28:5-15
 date:
-  from: -761
-  to: -757
-  precision: range
+  from: -759
+  to: -759
+  precision: year
   approx: true
-  type: narrative
+  type: anchored
   chronology: tnm
-  text: 'entre 762 y c. 758 a.e.c. (tiempo narrativo: ya reina Acaz y vive aún Pécah)'
+  text: c. 760 a.e.c.
 companions: []
 summary: Israel trae a Samaria 200.000 cautivos de Judá. Tras oír al profeta Oded, Azarías y otros tres jefes de Efraín rechazan
   quedárselos; los visten, les dan de comer, suben a los débiles en burros y los llevan a Jericó.
-reason: '2Cr 28:5-15; Perspicacia «Azarías», núm. 15, lo pone entre los que liberaron a los cautivos. Fecha del suceso rezin-y-pecah-sitian-jerusalen:
-  reinan Acaz y Pécah.'
+reason: '2Cr 28:5-15; Perspicacia «Azarías», núm. 15, lo pone entre los que liberaron a los cautivos. Fecha: c. 760 a.e.c.,
+  de Perspicacia «Zicrí», núm. 10, y «Jehohanán», núm. 4.'
 sources:
 - 2-cronicas-28
 - it-azarias
 - it-peqah
 - tnm-a6-b
-checked_on: '2026-09-30'
+- it-zicri
+- it-jehohanan
+- it-oded
+history:
+- date: '2026-10-13'
+  change: La fecha pasa de 762-c. 758 a.e.c., tiempo narrativo, a c. 760 a.e.c., el año que dan Perspicacia «Zicrí», núm.
+    10, y «Jehohanán», núm. 4.
+  source: it-zicri
+- date: '2026-10-13'
+  change: La razón ya no remite a la fecha de rezin-y-pecah-sitian-jerusalen.
+  source: it-jehohanan
+- date: '2026-10-13'
+  change: Las paradas toman la fecha c. 760 a.e.c. y la nota de la primera deja de decir que Berekías, Jehizquías y Amasá
+    no tienen ficha.
+  source: 2-cronicas-28
+checked_on: '2026-10-13'
 status: verified
 stops:
 - order: 1
   place: samaria
   reference: 2Cr 28:8-14
   date:
-    from: -761
-    to: -757
-    precision: range
+    from: -759
+    to: -759
+    precision: year
     approx: true
-    type: narrative
+    type: anchored
     chronology: tnm
-    text: 'entre 762 y c. 758 a.e.c. (tiempo narrativo: ya reina Acaz y vive aún Pécah)'
-  note: Oded sale al encuentro del ejército. Con Azarías están Berekías, Jehizquías y Amasá, que no tienen ficha.
-  reason: '2Cr 28:9-12: Azarías y los otros jefes se enfrentan en Samaria a los que traen a los cautivos. Fecha del suceso
-    rezin-y-pecah-sitian-jerusalen.'
+    text: c. 760 a.e.c.
+  note: 'Oded sale al encuentro del ejército. Con Azarías están los otros tres jefes de Efraín: Berekías, Jehizquías y Amasá.'
+  reason: '2Cr 28:9-12: Azarías y los otros jefes se enfrentan en Samaria a los que traen a los cautivos. Fecha c. 760 a.e.c.,
+    de Perspicacia «Zicrí», núm. 10.'
   sources:
   - 2-cronicas-28
   - it-azarias
+  - it-zicri
   checked_on: '2026-09-30'
   status: verified
 - order: 2
   place: jerico
   reference: 2Cr 28:15
   date:
-    from: -761
-    to: -757
-    precision: range
+    from: -759
+    to: -759
+    precision: year
     approx: true
-    type: narrative
+    type: anchored
     chronology: tnm
-    text: 'entre 762 y c. 758 a.e.c. (tiempo narrativo: ya reina Acaz y vive aún Pécah)'
+    text: c. 760 a.e.c.
   note: La ciudad de las palmeras.
   reason: '2Cr 28:15: los hombres escogidos por nombre llevan a los cautivos a Jericó. Que Azarías fuera con ellos es probable,
-    no seguro. Mismo suceso ancla.'
+    no seguro. Misma fecha que la parada 1.'
   sources:
   - 2-cronicas-28
   - it-azarias
@@ -66,16 +82,16 @@ stops:
   place: samaria
   reference: 2Cr 28:15
   date:
-    from: -761
-    to: -757
-    precision: range
+    from: -759
+    to: -759
+    precision: year
     approx: true
-    type: narrative
+    type: anchored
     chronology: tnm
-    text: 'entre 762 y c. 758 a.e.c. (tiempo narrativo: ya reina Acaz y vive aún Pécah)'
+    text: c. 760 a.e.c.
   note: null
-  reason: '2Cr 28:15: después vuelven a Samaria. Como en la parada anterior, que Azarías fuera con ellos no es seguro. Mismo
-    suceso ancla.'
+  reason: '2Cr 28:15: después vuelven a Samaria. Como en la parada anterior, que Azarías fuera con ellos no es seguro. Misma
+    fecha que la parada 1.'
   sources:
   - 2-cronicas-28
   checked_on: '2026-09-30'

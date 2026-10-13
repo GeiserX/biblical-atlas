@@ -22,8 +22,8 @@ present:
 passages:
 - 2Re 16:7, 8
 - 2Cr 28:16, 20, 21
-summary: Acaz se declara siervo del rey de Asiria y le pide que lo libre de Siria y de Israel. Le manda de soborno la plata
-  y el oro del templo y del palacio.
+summary: Acaz se declara siervo del rey de Asiria y le pide que lo libre de Siria y de Israel. Le paga con la plata y el oro
+  del templo, del palacio y de los príncipes, pero el asirio acaba angustiándolo.
 reason: 2Re 16:7, 8; Perspicacia «Acaz», núm. 1, y «Tiglat-piléser III». Después del sitio de Jerusalén, que siguió a 762
   a.e.c., y antes de la toma de Damasco, anterior a la muerte de Pécah, hacia 758 (A6-B).
 sources:
@@ -31,6 +31,7 @@ sources:
 - it-acaz
 - it-tiglat-pileser
 - tnm-a6-b
+- 2-cronicas-28
 links:
 - title: 2 Reyes 16 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-reyes/16/
@@ -38,5 +39,10 @@ links:
 - title: 'Perspicacia: «Tiglat-piléser III»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Tiglat-pil%C3%A9ser-III/
   type: perspicacia
-checked_on: '2026-09-30'
+history:
+- date: '2026-10-13'
+  change: 2Cr 28:20, 21 añade que vació también las casas de los príncipes y que el rey de Asiria, en vez de ayudarlo, lo
+    atacó.
+  source: 2-cronicas-28
+checked_on: '2026-10-13'
 status: verified

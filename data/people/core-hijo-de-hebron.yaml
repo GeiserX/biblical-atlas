@@ -28,5 +28,6 @@ distinct_from:
 - core-hijo-de-esau
 - core-hijo-de-izhar
 - core-padre-de-meselemias
-checked_on: '2026-10-12'
+- core-hijo-de-imna
+checked_on: '2026-10-13'
 status: verified

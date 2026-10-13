@@ -27,6 +27,7 @@ sources:
 - 2-samuel-5
 - 2-samuel-23
 - 1-cronicas-11
+- 2-cronicas-11
 links:
 - title: 'Perspicacia: «Adulam»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Adulam/
@@ -35,5 +36,5 @@ history:
 - date: '2026-09-29'
   change: Perspicacia «Adulam», párr. 3, identifica con este lugar el refugio al que baja David en 2Sa 5:17.
   source: 2-samuel-5
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified

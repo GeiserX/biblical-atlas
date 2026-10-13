@@ -82,10 +82,13 @@ sources:
 - jeremias-44
 - jeremias-46
 - 1-cronicas-2
+- 2-cronicas-10
+- 2-cronicas-35
+- 2-cronicas-36
 links:
 - title: 'Perspicacia: «Egipto, egipcio»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Egipto-egipcio/
   type: perspicacia
 search: Egipto
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified

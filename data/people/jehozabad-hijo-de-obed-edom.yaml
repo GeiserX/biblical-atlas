@@ -26,7 +26,8 @@ relations:
   reason: '1Cr 26:4: el segundo de los hijos de Obed-Edom.'
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified
 distinct_from:
 - jehozabad-hijo-de-somer
+- jehozabad-oficial-de-jehosafat

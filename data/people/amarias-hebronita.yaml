@@ -9,6 +9,8 @@ distinct_from:
 - amarias-hijo-de-ezequias
 - amarias-hijo-de-azarias
 - amarias-hijo-de-merayot
+- amarias-sacerdote-principal
+- amarias-ayudante-de-core
 summary: Levita descendiente de Hebrón, hijo de Cohat, segundo en la lista de los hebronitas cuando David reorganizó el servicio
   del templo.
 reason: Perspicacia «Amarías», núm. 2; 1Cr 23:19; 24:23.
@@ -33,5 +35,5 @@ relations:
     de Hebrón.
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified
