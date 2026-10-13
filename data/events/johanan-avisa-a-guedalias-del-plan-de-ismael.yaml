@@ -11,7 +11,7 @@ date:
   text: 607 a.e.c.
 narrative_order:
   series: jeremias
-  order: 40013
+  order: 940013
   after: nabucodonosor-pone-a-guedalias-al-mando
 places:
 - mizpa-de-benjamin
@@ -26,7 +26,7 @@ passages:
 summary: En Mizpá, los jefes del ejército avisan a Guedalías de que Baalís, rey de Ammón, ha enviado a Ismael a matarlo. Johanán
   se ofrece en secreto a matar a Ismael, pero Guedalías lo toma por mentira.
 reason: Jer 40:13-16, antes del asesinato del mes séptimo de 607 (estudio 3). Según Perspicacia, Seraya hijo de Tanhúmet,
-  Jonatán y Jaazanías estaban entre los jefes que avisaron; el texto solo nombra a Johanán, así que no los situamos.
+  Jonatán y Jaazanías estaban entre los jefes que avisaron; el texto solo nombra a Johanán, y no los situamos. Orden por fecha.
 sources:
 - jeremias-40
 - si-3
@@ -44,5 +44,10 @@ links:
 - title: 'Perspicacia: «Guedalías»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Guedal%C3%ADas/
   type: perspicacia
-checked_on: '2026-10-12'
+history:
+- date: '2026-10-13'
+  change: 'El orden del relato pasa de 40013 a 940013: la serie sigue las fechas de los sucesos, porque el libro va por temas
+    y no en el orden en que pasaron.'
+  source: it-jeremias-libro
+checked_on: '2026-10-13'
 status: verified

@@ -11,7 +11,7 @@ date:
   text: 607 a.e.c.
 narrative_order:
   series: jeremias
-  order: 42007
+  order: 942007
   elapsed:
     days: 10
     reason: 'Jer 42:7: la palabra de Jehová llega diez días después de la consulta.'
@@ -33,7 +33,7 @@ passages:
 summary: 'Diez días después, Jeremías da la respuesta: si se quedan en Judá, Jehová los edificará y no tienen que temer al
   rey de Babilonia; si se van a Egipto, la espada, el hambre y la peste los alcanzarán allí.'
 reason: Jer 42:7-22; «Toda Escritura», libro 24, párr. 30. Perspicacia «Jaazanías», núm. 4, lo pone entre los jefes (Jer 42:8).
-  Mismo año que la muerte de Guedalías, 607 (estudio 3, párr. 6), y mismo sitio que la consulta.
+  Mismo año que la muerte de Guedalías, 607 (estudio 3, párr. 6), y mismo sitio que la consulta. Orden por fecha.
 sources:
 - jeremias-42
 - si-3
@@ -44,5 +44,10 @@ links:
 - title: Jeremías 42 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/42/
   type: bible
-checked_on: '2026-10-12'
+history:
+- date: '2026-10-13'
+  change: 'El orden del relato pasa de 42007 a 942007: la serie sigue las fechas de los sucesos, porque el libro va por temas
+    y no en el orden en que pasaron.'
+  source: it-jeremias-libro
+checked_on: '2026-10-13'
 status: verified

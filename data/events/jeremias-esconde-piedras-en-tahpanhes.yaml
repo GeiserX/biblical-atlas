@@ -11,7 +11,7 @@ date:
   text: 607 a.e.c.
 narrative_order:
   series: jeremias
-  order: 43008
+  order: 943008
 places:
 - tahpanhes
 people:
@@ -26,7 +26,7 @@ passages:
 summary: Ante los judíos, Jeremías tapa con argamasa unas piedras grandes junto a la casa del faraón y anuncia que Nabucodonosor
   pondrá encima su trono, atacará Egipto y quemará los templos de sus dioses.
 reason: Jer 43:8-13. Perspicacia «Tahpanés, Tahpanhés, Tehafnehés» lo pone al llegar a la ciudad, en la huida de 607 (estudio
-  3, párr. 6); «Jeremías», núm. 6, lo cuenta entre sus representaciones proféticas.
+  3, párr. 6); «Jeremías», núm. 6, lo cuenta entre sus representaciones proféticas. Orden por fecha.
 sources:
 - jeremias-43
 - it-tahpanhes
@@ -39,5 +39,10 @@ links:
 - title: 'Perspicacia: «Tahpanés, Tahpanhés, Tehafnehés»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Tahpan%C3%A9s-Tahpanh%C3%A9s-Tehafneh%C3%A9s/
   type: perspicacia
-checked_on: '2026-10-12'
+history:
+- date: '2026-10-13'
+  change: 'El orden del relato pasa de 43008 a 943008: la serie sigue las fechas de los sucesos, porque el libro va por temas
+    y no en el orden en que pasaron.'
+  source: it-jeremias-libro
+checked_on: '2026-10-13'
 status: verified

@@ -644,9 +644,7 @@ function repartoRelato() {
       const t = x.e.orden_relato.tras ? porId.get(x.e.orden_relato.tras) : null;
       if (t && t !== x.e && (t.orden_relato?.serie !== s || enParadas(t))) {
         const { v, puesto } = colocado(t);
-        // An anchor that lies entirely before the last one (the book tells the earlier event later, as Jer 49:34 after
-        // Jer 43) does not close the batch: it only bounds this event.
-        if (v && (puesto || v[1] - v[0] <= ANCLA_MAX) && v[1] > ini) anclar(v);
+        if (v && (puesto || v[1] - v[0] <= ANCLA_MAX)) anclar(v);
         else if (v) x.lo = Math.max(x.lo, v[1]);
       }
       // Límites de los sucesos de las paradas: lo que el relato cuenta después de uno de ellos no empieza antes que él
@@ -746,9 +744,7 @@ function colocar(tanda, lo, hi, m, cads = []) {
   }
   const n = grupos.length;
   for (let j = 0; j < n; j++) grupos[j].L = Math.max(lo, grupos[j].v[0], grupos[j].lo, j ? grupos[j - 1].L : -Infinity);
-  // A later group whose bound falls before this group's start is told out of time order (Jer 45 to 51, dated years
-  // before Jer 40 to 44): it keeps its own date below and caps nothing before it.
-  for (let j = n - 1; j >= 0; j--) grupos[j].U = Math.min(hi, grupos[j].v[1], j < n - 1 && grupos[j + 1].U > grupos[j].L ? grupos[j + 1].U : Infinity);
+  for (let j = n - 1; j >= 0; j--) grupos[j].U = Math.min(hi, grupos[j].v[1], j < n - 1 ? grupos[j + 1].U : Infinity);
   let inicio = grupos[0].L;
   grupos.forEach((g, j) => {
     const U = Math.min(g.U, g.hi);

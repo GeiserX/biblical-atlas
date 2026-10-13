@@ -11,8 +11,7 @@ date:
   text: entre 617 y 614 a.e.c. (al principio del reinado de Sedequías)
 narrative_order:
   series: jeremias
-  order: 49034
-  after: nabucodonosor-hace-rey-a-sedequias
+  order: 449034
 places:
 - elam
 people:
@@ -23,7 +22,7 @@ passages:
 summary: Al empezar Sedequías su reinado, Jehová anuncia que quebrará el arco de Elam, dispersará a los elamitas por los cuatro
   vientos y acabará con su rey y sus príncipes; al final reunirá a sus cautivos.
 reason: 'Jer 49:34 lo pone al principio del reinado de Sedequías, que empezó en 617 (estudio 3); el libro llama así también
-  a su año cuarto, 614 según Perspicacia «Seraya», núm. 5. No dice dónde: nadie queda situado.'
+  a su año cuarto, 614 según Perspicacia «Seraya», núm. 5. No dice dónde: nadie queda situado. Orden por fecha.'
 sources:
 - jeremias-49
 - it-sedequias
@@ -35,5 +34,14 @@ links:
 - title: Jeremías 49 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/49/
   type: bible
-checked_on: '2026-10-12'
+history:
+- date: '2026-10-13'
+  change: 'El orden del relato pasa de 49034 a 449034: la serie sigue las fechas de los sucesos, porque el libro va por temas
+    y no en el orden en que pasaron.'
+  source: it-jeremias-libro
+- date: '2026-10-13'
+  change: 'Sin after a nabucodonosor-hace-rey-a-sedequias: su fecha ya empieza con Sedequías y Jer 24:1, antes en la serie,
+    lleva ese after. Repetido, dejaba sin sitio a lo que la serie cuenta entre los dos.'
+  source: it-sedequias
+checked_on: '2026-10-13'
 status: verified

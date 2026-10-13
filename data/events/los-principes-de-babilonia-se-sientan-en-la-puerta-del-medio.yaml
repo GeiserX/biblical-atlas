@@ -14,8 +14,7 @@ date:
     day: 9
 narrative_order:
   series: jeremias
-  order: 39003
-  after: sitio-de-jerusalen-609
+  order: 939003
 places:
 - jerusalen
 people:
@@ -31,7 +30,7 @@ passages:
 summary: Abierta la brecha en la muralla, los príncipes del rey de Babilonia entran en Jerusalén y toman asiento en la Puerta
   del Medio. Al verlos, Sedequías y sus soldados huyen de noche.
 reason: 'Jer 39:2-4: la muralla cae el día 9 del cuarto mes del año 11 de Sedequías, 607 a.e.c. (estudio 3). Perspicacia «Rabmag»
-  dice que formaban un tribunal; «Sarsekim», que entraron de los primeros.'
+  dice que formaban un tribunal; «Sarsekim», que entraron de los primeros. Orden por fecha.'
 sources:
 - jeremias-39
 - si-3
@@ -46,5 +45,14 @@ links:
 - title: 'Perspicacia: «Rabmag»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Rabmag/
   type: perspicacia
-checked_on: '2026-10-12'
+history:
+- date: '2026-10-13'
+  change: 'El orden del relato pasa de 39003 a 939003: la serie sigue las fechas de los sucesos, porque el libro va por temas
+    y no en el orden en que pasaron.'
+  source: it-jeremias-libro
+- date: '2026-10-13'
+  change: 'Sin after a sitio-de-jerusalen-609: su día, 9 de tamuz de 607, ya lo pone después. Con él, la serie volvía al comienzo
+    del sitio tras Jer 38 y dejaba sin hueco lo contado antes.'
+  source: si-3
+checked_on: '2026-10-13'
 status: verified
