@@ -11,7 +11,7 @@ date:
   text: 'entre 620 y 618 a.e.c. (tiempo narrativo: al final del reinado de Jehoiaquim, tras el primer ataque babilonio)'
 narrative_order:
   series: jeremias
-  order: 35001
+  order: 335001
   after: jehoiaquim-vasallo-de-babilonia
 places:
 - monte-moria
@@ -40,5 +40,10 @@ links:
 - title: 'Perspicacia: «Recabitas»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Recabitas/
   type: perspicacia
-checked_on: '2026-10-12'
+history:
+- date: '2026-10-13'
+  change: 'El orden del relato pasa de 35001 a 335001: la serie sigue las fechas de los sucesos, porque el libro va por temas
+    y no en el orden en que pasaron.'
+  source: it-jeremias-libro
+checked_on: '2026-10-13'
 status: verified

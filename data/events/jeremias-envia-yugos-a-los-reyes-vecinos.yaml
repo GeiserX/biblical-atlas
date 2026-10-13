@@ -11,7 +11,7 @@ date:
   text: 614 a.e.c.
 narrative_order:
   series: jeremias
-  order: 27001
+  order: 527001
 places:
 - jerusalen
 - edom
@@ -30,8 +30,8 @@ passages:
 - Jer 27:1-11
 summary: 'Por orden de Jehová, Jeremías se pone al cuello correas y yugos y los envía por los mensajeros que visitaban a Sedequías:
   Edom, Moab, Ammón, Tiro y Sidón tendrán que someterse a Nabucodonosor o sufrir espada, hambre y peste.'
-reason: 'Jer 28:1 lo pone en el año cuarto de Sedequías, 614 según Perspicacia «Seraya», núm. 5. El «Jehoiaquim» de 27:1 quizá
-  es error de copista (Perspicacia «Sedequías», núm. 4). Los cinco reinos solo reciben yugos: no sitúan a nadie.'
+reason: Jer 28:1 lo pone en el año cuarto de Sedequías, 614 según Perspicacia «Seraya», núm. 5. El «Jehoiaquim» de 27:1 quizá
+  es error de copista (Perspicacia «Sedequías», núm. 4). Los cinco reinos no quedan situados. Orden por fecha.
 sources:
 - jeremias-27
 - jeremias-28
@@ -47,5 +47,10 @@ links:
 - title: 'Perspicacia: «Sedequías»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sedequ%C3%ADas/
   type: perspicacia
-checked_on: '2026-10-12'
+history:
+- date: '2026-10-13'
+  change: 'El orden del relato pasa de 27001 a 527001: la serie sigue las fechas de los sucesos, porque el libro va por temas
+    y no en el orden en que pasaron.'
+  source: it-jeremias-libro
+checked_on: '2026-10-13'
 status: verified
