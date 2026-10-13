@@ -1,0 +1,1803 @@
+{
+ "formato": "biblical-atlas/propuesta-cobertura/1",
+ "libro": "1-tesalonicenses",
+ "agente": "escritor-1-tesalonicenses",
+ "leido": "2026-10-12",
+ "cobertura": {},
+ "fuentes": {},
+ "cambios": [
+  {
+   "op": "anadir",
+   "tipo": "events",
+   "id": "alboroto-en-tesalonica",
+   "campo": "passages",
+   "valores": [
+    "1Te 1:5, 6, 9"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "events",
+   "id": "alboroto-en-tesalonica",
+   "campo": "sources",
+   "valores": [
+    "1-tesalonicenses-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "pablo",
+   "campo": "sources",
+   "valores": [
+    "1-tesalonicenses-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "pablo",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "lived_in",
+     "place": "corinto",
+     "date": {
+      "from": 50,
+      "to": 52,
+      "precision": "range",
+      "approx": true,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "otoño de 50 a primavera de 52 e.c."
+     },
+     "inferred": false,
+     "sources": [
+      "1-tesalonicenses-1",
+      "it-tesalonicenses"
+     ],
+     "reason": "Hch 18:3, 11: se aloja con Áquila y Priscila y se queda un año y seis meses. El estudio 3, párr. 24 y 25, lo fecha.",
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    },
+    {
+     "type": "tie",
+     "person": "jason",
+     "word": "host",
+     "date": {
+      "from": 50,
+      "to": 50,
+      "precision": "year",
+      "approx": true,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "c. 50 e.c."
+     },
+     "inferred": false,
+     "sources": [
+      "1-tesalonicenses-1",
+      "it-jason",
+      "it-tesalonica",
+      "si-3"
+     ],
+     "reason": "Hechos cuenta que Jasón los hospedaba en su casa; la nota de 1Te 1:6 y Perspicacia «Tesalónica» lo recuerdan, y «Jasón» incluye a Silas. Hacia 50, según el estudio 3.",
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "silas",
+   "campo": "sources",
+   "valores": [
+    "1-tesalonicenses-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "silas",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "accompanies",
+     "person": "pablo",
+     "date": {
+      "from": 49,
+      "to": 52,
+      "precision": "range",
+      "approx": true,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "c. 49-52 e.c. (segundo viaje)"
+     },
+     "inferred": false,
+     "sources": [
+      "1-tesalonicenses-1",
+      "it-tesalonicenses"
+     ],
+     "reason": "1Te 1:1: Silvano firma la carta con Pablo y Timoteo; Perspicacia «Tesalonicenses» deduce que estaban juntos en Corinto.",
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "timoteo",
+   "campo": "sources",
+   "valores": [
+    "1-tesalonicenses-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "timoteo",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "accompanies",
+     "person": "pablo",
+     "date": {
+      "from": 49,
+      "to": 65,
+      "precision": "range",
+      "approx": true,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "c. 49-65 e.c."
+     },
+     "inferred": false,
+     "sources": [
+      "1-tesalonicenses-1",
+      "it-tesalonicenses"
+     ],
+     "reason": "1Te 1:1: Timoteo firma la carta con Pablo y Silvano; Perspicacia «Tesalonicenses» deduce que estaban juntos en Corinto.",
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "tesalonica",
+   "campo": "sources",
+   "valores": [
+    "1-tesalonicenses-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "macedonia",
+   "campo": "sources",
+   "valores": [
+    "1-tesalonicenses-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "acaya",
+   "campo": "sources",
+   "valores": [
+    "1-tesalonicenses-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "events",
+   "id": "alboroto-en-tesalonica",
+   "campo": "passages",
+   "valores": [
+    "1Te 2:1, 2, 9-14, 17"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "events",
+   "id": "alboroto-en-tesalonica",
+   "campo": "sources",
+   "valores": [
+    "1-tesalonicenses-2"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "events",
+   "id": "pablo-y-silas-azotados-y-encarcelados",
+   "campo": "passages",
+   "valores": [
+    "1Te 2:2"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "events",
+   "id": "primera-carta-de-pablo",
+   "campo": "title",
+   "antes": "Pablo escribe su primera carta: 1 Tesalonicenses",
+   "despues": "Pablo escribe 1 Tesalonicenses, probablemente su primera carta",
+   "historial": {
+    "date": "2026-10-12",
+    "change": "El título ya no da por seguro que sea su primera carta: la nota de estudio de 1Te 2:13, la publicación más reciente, lo da como probable.",
+    "source": "1-tesalonicenses-2"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "events",
+   "id": "primera-carta-de-pablo",
+   "campo": "summary",
+   "antes": "Desde Corinto, Pablo escribe a la congregación de Tesalónica con Silas y Timoteo. Es la primera de sus cartas en la Biblia.",
+   "despues": "Desde Corinto, Pablo escribe a la congregación de Tesalónica con Silas y Timoteo. Probablemente es la primera de sus cartas en la Biblia.",
+   "historial": {
+    "date": "2026-10-12",
+    "change": "Se matiza que sea la primera carta: la nota de estudio de 1Te 2:13 lo da como probable y Perspicacia «Tesalonicenses», como posible.",
+    "source": "1-tesalonicenses-2"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "pablo",
+   "campo": "sources",
+   "valores": [
+    "1-tesalonicenses-2"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "pablo",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "holds_office",
+     "office": "apostle",
+     "inferred": false,
+     "sources": [
+      "1-tesalonicenses-2",
+      "it-pablo"
+     ],
+     "reason": "1Te 2:6: Pablo dice que, por ser apóstoles de Cristo, podían haber pedido sustento. Perspicacia «Pablo» lo presenta como apóstol de Jesucristo y cita este versículo al hablar de su trabajo.",
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "silas",
+   "campo": "sources",
+   "valores": [
+    "1-tesalonicenses-2"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "silas",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "accompanies",
+     "person": "pablo",
+     "date": {
+      "from": 49,
+      "to": 52,
+      "precision": "range",
+      "approx": true,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "c. 49-52 e.c. (segundo viaje)"
+     },
+     "inferred": false,
+     "sources": [
+      "1-tesalonicenses-2"
+     ],
+     "reason": "1Te 2:2: las notas de estudio dicen que Pablo y Silas sufrieron juntos en Filipos y predicaron juntos en Tesalónica.",
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "satanas",
+   "campo": "sources",
+   "valores": [
+    "1-tesalonicenses-2"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "tesalonica",
+   "campo": "sources",
+   "valores": [
+    "1-tesalonicenses-2"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "judea",
+   "campo": "sources",
+   "valores": [
+    "1-tesalonicenses-2"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "tours",
+   "id": "cartas-y-ciudades",
+   "campo": "stops",
+   "antes": [
+    {
+     "sel": "letter:1-tesalonicenses",
+     "t": 50.8,
+     "text": "Otoño de 50. Desde Corinto, Pablo escribe con Silas y Timoteo a la congregación de Tesalónica, de la que había tenido que salir de noche. Es su primera carta de la Biblia.",
+     "passages": [
+      "1Te 1:1",
+      "Hch 17:1-10"
+     ],
+     "question": {
+      "text": "¿Desde qué ciudad escribió Pablo su primera carta a los tesalonicenses?",
+      "options": [
+       "Atenas",
+       "Corinto",
+       "Éfeso"
+      ],
+      "answer": "Corinto",
+      "explanation": "La Tabla de los libros y el estudio 3 la sitúan en Corinto, hacia el año 50."
+     }
+    },
+    {
+     "sel": "letter:2-tesalonicenses",
+     "t": 51.3,
+     "text": "Hacia 51, todavía en Corinto, les escribe otra vez: algunos creían que el día de Jehová ya estaba encima.",
+     "passages": [
+      "2Te 1:1",
+      "2Te 2:1, 2"
+     ]
+    },
+    {
+     "sel": "letter:galatas",
+     "t": 51.5,
+     "text": "Entre 50 y 52 escribe a las congregaciones de Galacia, las que fundó con Bernabé, contra quienes exigían la circuncisión.",
+     "passages": [
+      "Gál 1:1, 2",
+      "Gál 2:1-10"
+     ],
+     "unknown": "Si la escribió desde Corinto o desde Antioquía de Siria: Perspicacia admite las dos."
+    },
+    {
+     "sel": "letter:1-corintios",
+     "t": 55.3,
+     "text": "En 55, en Éfeso, Pablo recibe noticias de divisiones en Corinto y escribe su primera carta. Estéfanas y otros dos hermanos habían venido a verlo.",
+     "passages": [
+      "1Co 1:10-12",
+      "1Co 16:8, 17"
+     ]
+    },
+    {
+     "sel": "letter:2-corintios",
+     "t": 55.7,
+     "text": "Final del verano de 55, en Macedonia. Tito le trae buenas noticias de Corinto y Pablo escribe su segunda carta.",
+     "passages": [
+      "2Co 2:12, 13",
+      "2Co 7:5-7"
+     ]
+    },
+    {
+     "sel": "letter:romanos",
+     "t": 56.1,
+     "text": "Hacia 56, en Corinto, dicta a Tercio la carta a Roma, una ciudad que todavía no conocía. Recomienda a Febe, de Cencreas.",
+     "passages": [
+      "Ro 16:1, 2",
+      "Ro 16:22"
+     ],
+     "question": {
+      "text": "¿Quién escribió materialmente la carta a los Romanos?",
+      "options": [
+       "Tercio",
+       "Timoteo",
+       "Lucas"
+      ],
+      "answer": "Tercio",
+      "explanation": "Ro 16:22: Tercio, que escribió la carta, añade su propio saludo."
+     }
+    },
+    {
+     "sel": "place:roma",
+     "t": 59.2,
+     "text": "Hacia 59 Pablo llega preso a Roma. Durante dos años, en una casa alquilada, recibe visitas y escribe varias cartas.",
+     "passages": [
+      "Hch 28:16, 30, 31"
+     ]
+    },
+    {
+     "sel": "letter:efesios",
+     "t": 60.5,
+     "text": "Desde Roma escribe a Éfeso, donde había trabajado tres años. Tíquico lleva la carta.",
+     "passages": [
+      "Ef 6:21, 22"
+     ]
+    },
+    {
+     "sel": "letter:colosenses",
+     "t": 60.6,
+     "text": "A Colosas, una ciudad que no había visitado, le escribe por las noticias de Epafras. Tíquico y Onésimo la llevan.",
+     "passages": [
+      "Col 1:7, 8",
+      "Col 4:7-9"
+     ]
+    },
+    {
+     "sel": "letter:filemon",
+     "t": 60.7,
+     "text": "Con Onésimo va también una carta para su amo Filemón, en Colosas: Pablo le pide que lo reciba como a un hermano.",
+     "passages": [
+      "Flm 10-17"
+     ],
+     "question": {
+      "text": "¿Quién llevó la carta a Filemón?",
+      "options": [
+       "Onésimo",
+       "Epafras",
+       "Tito"
+      ],
+      "answer": "Onésimo",
+      "explanation": "Perspicacia «Onésimo»: Pablo le dio la carta para Filemón al enviarlo de vuelta."
+     }
+    },
+    {
+     "sel": "letter:filipenses",
+     "t": 60.8,
+     "text": "Los filipenses le mandan un regalo con Epafrodito, que enferma en Roma. Ya curado, vuelve a Filipos con la carta.",
+     "passages": [
+      "Flp 2:25-30",
+      "Flp 4:18"
+     ]
+    },
+    {
+     "sel": "letter:hebreos",
+     "t": 61.0,
+     "text": "Hacia 61, desde Italia, al parecer Roma, escribe a los cristianos hebreos de Judea.",
+     "passages": [
+      "Heb 13:23, 24"
+     ],
+     "unknown": "La carta no lleva el nombre del escritor; Perspicacia la atribuye a Pablo por su contenido."
+    },
+    {
+     "sel": "letter:1-timoteo",
+     "t": 62.5,
+     "text": "Ya libre, Pablo deja a Tito en Creta y a Timoteo en Éfeso. Entre 61 y 64, al parecer desde Macedonia, escribe a los dos.",
+     "passages": [
+      "1Ti 1:3",
+      "Tit 1:5"
+     ],
+     "unknown": "El orden de sus viajes en estos años: Hechos ya no los cuenta."
+    },
+    {
+     "sel": "letter:2-timoteo",
+     "t": 65.0,
+     "text": "Hacia 65, preso otra vez en Roma, escribe su última carta. Solo Lucas está con él y siente cerca su muerte.",
+     "passages": [
+      "2Ti 4:6-11"
+     ]
+    }
+   ],
+   "despues": [
+    {
+     "sel": "letter:1-tesalonicenses",
+     "t": 50.8,
+     "text": "Otoño de 50. Desde Corinto, Pablo escribe con Silas y Timoteo a la congregación de Tesalónica, de la que había tenido que salir de noche. Probablemente es su primera carta de la Biblia.",
+     "passages": [
+      "1Te 1:1",
+      "Hch 17:1-10"
+     ],
+     "question": {
+      "text": "¿Desde qué ciudad escribió Pablo su primera carta a los tesalonicenses?",
+      "options": [
+       "Atenas",
+       "Corinto",
+       "Éfeso"
+      ],
+      "answer": "Corinto",
+      "explanation": "La Tabla de los libros y el estudio 3 la sitúan en Corinto, hacia el año 50."
+     }
+    },
+    {
+     "sel": "letter:2-tesalonicenses",
+     "t": 51.3,
+     "text": "Hacia 51, todavía en Corinto, les escribe otra vez: algunos creían que el día de Jehová ya estaba encima.",
+     "passages": [
+      "2Te 1:1",
+      "2Te 2:1, 2"
+     ]
+    },
+    {
+     "sel": "letter:galatas",
+     "t": 51.5,
+     "text": "Entre 50 y 52 escribe a las congregaciones de Galacia, las que fundó con Bernabé, contra quienes exigían la circuncisión.",
+     "passages": [
+      "Gál 1:1, 2",
+      "Gál 2:1-10"
+     ],
+     "unknown": "Si la escribió desde Corinto o desde Antioquía de Siria: Perspicacia admite las dos."
+    },
+    {
+     "sel": "letter:1-corintios",
+     "t": 55.3,
+     "text": "En 55, en Éfeso, Pablo recibe noticias de divisiones en Corinto y escribe su primera carta. Estéfanas y otros dos hermanos habían venido a verlo.",
+     "passages": [
+      "1Co 1:10-12",
+      "1Co 16:8, 17"
+     ]
+    },
+    {
+     "sel": "letter:2-corintios",
+     "t": 55.7,
+     "text": "Final del verano de 55, en Macedonia. Tito le trae buenas noticias de Corinto y Pablo escribe su segunda carta.",
+     "passages": [
+      "2Co 2:12, 13",
+      "2Co 7:5-7"
+     ]
+    },
+    {
+     "sel": "letter:romanos",
+     "t": 56.1,
+     "text": "Hacia 56, en Corinto, dicta a Tercio la carta a Roma, una ciudad que todavía no conocía. Recomienda a Febe, de Cencreas.",
+     "passages": [
+      "Ro 16:1, 2",
+      "Ro 16:22"
+     ],
+     "question": {
+      "text": "¿Quién escribió materialmente la carta a los Romanos?",
+      "options": [
+       "Tercio",
+       "Timoteo",
+       "Lucas"
+      ],
+      "answer": "Tercio",
+      "explanation": "Ro 16:22: Tercio, que escribió la carta, añade su propio saludo."
+     }
+    },
+    {
+     "sel": "place:roma",
+     "t": 59.2,
+     "text": "Hacia 59 Pablo llega preso a Roma. Durante dos años, en una casa alquilada, recibe visitas y escribe varias cartas.",
+     "passages": [
+      "Hch 28:16, 30, 31"
+     ]
+    },
+    {
+     "sel": "letter:efesios",
+     "t": 60.5,
+     "text": "Desde Roma escribe a Éfeso, donde había trabajado tres años. Tíquico lleva la carta.",
+     "passages": [
+      "Ef 6:21, 22"
+     ]
+    },
+    {
+     "sel": "letter:colosenses",
+     "t": 60.6,
+     "text": "A Colosas, una ciudad que no había visitado, le escribe por las noticias de Epafras. Tíquico y Onésimo la llevan.",
+     "passages": [
+      "Col 1:7, 8",
+      "Col 4:7-9"
+     ]
+    },
+    {
+     "sel": "letter:filemon",
+     "t": 60.7,
+     "text": "Con Onésimo va también una carta para su amo Filemón, en Colosas: Pablo le pide que lo reciba como a un hermano.",
+     "passages": [
+      "Flm 10-17"
+     ],
+     "question": {
+      "text": "¿Quién llevó la carta a Filemón?",
+      "options": [
+       "Onésimo",
+       "Epafras",
+       "Tito"
+      ],
+      "answer": "Onésimo",
+      "explanation": "Perspicacia «Onésimo»: Pablo le dio la carta para Filemón al enviarlo de vuelta."
+     }
+    },
+    {
+     "sel": "letter:filipenses",
+     "t": 60.8,
+     "text": "Los filipenses le mandan un regalo con Epafrodito, que enferma en Roma. Ya curado, vuelve a Filipos con la carta.",
+     "passages": [
+      "Flp 2:25-30",
+      "Flp 4:18"
+     ]
+    },
+    {
+     "sel": "letter:hebreos",
+     "t": 61.0,
+     "text": "Hacia 61, desde Italia, al parecer Roma, escribe a los cristianos hebreos de Judea.",
+     "passages": [
+      "Heb 13:23, 24"
+     ],
+     "unknown": "La carta no lleva el nombre del escritor; Perspicacia la atribuye a Pablo por su contenido."
+    },
+    {
+     "sel": "letter:1-timoteo",
+     "t": 62.5,
+     "text": "Ya libre, Pablo deja a Tito en Creta y a Timoteo en Éfeso. Entre 61 y 64, al parecer desde Macedonia, escribe a los dos.",
+     "passages": [
+      "1Ti 1:3",
+      "Tit 1:5"
+     ],
+     "unknown": "El orden de sus viajes en estos años: Hechos ya no los cuenta."
+    },
+    {
+     "sel": "letter:2-timoteo",
+     "t": 65.0,
+     "text": "Hacia 65, preso otra vez en Roma, escribe su última carta. Solo Lucas está con él y siente cerca su muerte.",
+     "passages": [
+      "2Ti 4:6-11"
+     ]
+    }
+   ],
+   "historial": {
+    "date": "2026-10-12",
+    "change": "La parada de 1 Tesalonicenses ya no da por seguro que sea su primera carta: la nota de estudio de 1Te 2:13, la publicación más reciente, lo da como probable.",
+    "source": "1-tesalonicenses-2"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "events",
+   "id": "crispo-cree",
+   "campo": "passages",
+   "valores": [
+    "1Te 3:6"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "events",
+   "id": "crispo-cree",
+   "campo": "sources",
+   "valores": [
+    "1-tesalonicenses-3"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "events",
+   "id": "primera-carta-de-pablo",
+   "campo": "passages",
+   "valores": [
+    "1Te 3:6"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "events",
+   "id": "primera-carta-de-pablo",
+   "campo": "sources",
+   "valores": [
+    "1-tesalonicenses-3",
+    "it-timoteo"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "events",
+   "id": "primera-carta-de-pablo",
+   "campo": "narrative_order",
+   "antes": null,
+   "despues": {
+    "series": "hechos",
+    "order": 1806
+   },
+   "historial": {
+    "date": "2026-10-12",
+    "change": "Sin orden del relato quedaba suelta en la serie de Hechos. 1Te 3:6 y Perspicacia «Timoteo» la ponen justo tras la vuelta de Timoteo a Corinto, que está en crispo-cree (1805).",
+    "source": "1-tesalonicenses-3"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "pablo",
+   "campo": "sources",
+   "valores": [
+    "1-tesalonicenses-3"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "timoteo",
+   "campo": "sources",
+   "valores": [
+    "1-tesalonicenses-3"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "timoteo",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "accompanies",
+     "person": "pablo",
+     "date": {
+      "from": 49,
+      "to": 65,
+      "precision": "range",
+      "approx": true,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "c. 49-65 e.c."
+     },
+     "inferred": false,
+     "sources": [
+      "1-tesalonicenses-3"
+     ],
+     "reason": "1Te 3:2 lo llama hermano y ministro de Dios; la nota dice que algunos manuscritos ponen colaborador.",
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "atenas",
+   "campo": "sources",
+   "valores": [
+    "1-tesalonicenses-3"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "tesalonica",
+   "campo": "sources",
+   "valores": [
+    "1-tesalonicenses-3"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "events",
+   "id": "primera-carta-de-pablo",
+   "campo": "sources",
+   "valores": [
+    "1-tesalonicenses-5"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "pablo",
+   "campo": "sources",
+   "valores": [
+    "1-tesalonicenses-5"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "events",
+   "id": "pablo-y-silas-azotados-y-encarcelados",
+   "campo": "sources",
+   "valores": [
+    "1-tesalonicenses-2"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "events",
+   "id": "primera-carta-de-pablo",
+   "campo": "passages",
+   "valores": [
+    "1Te 5:27"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "people",
+   "id": "satanas",
+   "campo": "names",
+   "antes": [
+    {
+     "name": "Satanás",
+     "note": "Significa «resistidor»: el nombre le vino de oponerse a Dios."
+    },
+    {
+     "name": "Diablo",
+     "note": "Título que significa «calumniador»."
+    },
+    {
+     "name": "el Tentador",
+     "note": "Así lo llama Mt 4:3."
+    },
+    {
+     "name": "Belcebú",
+     "note": "Así lo llaman los escribas en Mr 3:22. Perspicacia «Beelzebub» lo toma por un apelativo de Satanás, quizá sacado de Baal-zebub, el dios de Eqrón."
+    },
+    {
+     "name": "el gobernante de este mundo",
+     "note": "Así lo llama Jesús en Jn 12:31, 14:30 y 16:11; la nota de estudio de Jn 16:8 y Perspicacia «Satanás» dicen que es él."
+    },
+    {
+     "name": "el dios de este sistema",
+     "note": "Así lo llama 2Co 4:4. La nota de estudio lo identifica por lo que hace allí: ciega la mente de los no creyentes."
+    },
+    {
+     "name": "Belial",
+     "note": "Así lo llama Pablo en 2Co 6:15. La palabra hebrea quiere decir «inútil»; Perspicacia «Belial» y la nota de estudio dicen que en el siglo I ya era un apelativo de Satanás."
+    },
+    {
+     "name": "el gobernante que tiene autoridad sobre el aire",
+     "note": "Así lo llama Pablo en Ef 2:2. La nota de estudio y Perspicacia «Satanás» dicen que es él: su influencia no se ve y llega a todas partes, igual que el aire."
+    },
+    {
+     "name": "el Maligno",
+     "note": "Así lo llama Ef 6:16. La nota de estudio dice que sus flechas encendidas son los ataques de Satanás."
+    }
+   ],
+   "despues": [
+    {
+     "name": "Satanás",
+     "note": "Significa «resistidor»: el nombre le vino de oponerse a Dios."
+    },
+    {
+     "name": "Diablo",
+     "note": "Título que significa «calumniador»."
+    },
+    {
+     "name": "el Tentador",
+     "note": "Así lo llaman Mt 4:3 y 1Te 3:5. Según la nota de 1Te 3:5, en las Escrituras Griegas solo esos dos pasajes lo usan."
+    },
+    {
+     "name": "Belcebú",
+     "note": "Así lo llaman los escribas en Mr 3:22. Perspicacia «Beelzebub» lo toma por un apelativo de Satanás, quizá sacado de Baal-zebub, el dios de Eqrón."
+    },
+    {
+     "name": "el gobernante de este mundo",
+     "note": "Así lo llama Jesús en Jn 12:31, 14:30 y 16:11; la nota de estudio de Jn 16:8 y Perspicacia «Satanás» dicen que es él."
+    },
+    {
+     "name": "el dios de este sistema",
+     "note": "Así lo llama 2Co 4:4. La nota de estudio lo identifica por lo que hace allí: ciega la mente de los no creyentes."
+    },
+    {
+     "name": "Belial",
+     "note": "Así lo llama Pablo en 2Co 6:15. La palabra hebrea quiere decir «inútil»; Perspicacia «Belial» y la nota de estudio dicen que en el siglo I ya era un apelativo de Satanás."
+    },
+    {
+     "name": "el gobernante que tiene autoridad sobre el aire",
+     "note": "Así lo llama Pablo en Ef 2:2. La nota de estudio y Perspicacia «Satanás» dicen que es él: su influencia no se ve y llega a todas partes, igual que el aire."
+    },
+    {
+     "name": "el Maligno",
+     "note": "Así lo llama Ef 6:16. La nota de estudio dice que sus flechas encendidas son los ataques de Satanás."
+    }
+   ],
+   "historial": {
+    "date": "2026-10-12",
+    "change": "«el Tentador» sale también en 1Te 3:5; la nota de estudio de ese versículo dice que solo lo usan allí y en Mt 4:3.",
+    "source": "1-tesalonicenses-3"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "satanas",
+   "campo": "sources",
+   "valores": [
+    "1-tesalonicenses-3"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "people",
+   "id": "pablo",
+   "campo": "relations",
+   "antes": [
+    {
+     "type": "born_in",
+     "place": "tarso",
+     "inferred": false,
+     "sources": [
+      "it-pablo",
+      "it-tarso",
+      "hch-22"
+     ],
+     "reason": "Él mismo dice que nació en Tarso de Cilicia (Hch 21:39; 22:3); Perspicacia «Pablo», párr. 2.",
+     "status": "verified"
+    },
+    {
+     "type": "lived_in",
+     "place": "tarso",
+     "date": {
+      "from": 36,
+      "to": 46,
+      "precision": "range",
+      "approx": true,
+      "type": "narrative",
+      "chronology": "tnm",
+      "text": "entre c. 36 y c. 46 e.c."
+     },
+     "inferred": false,
+     "sources": [
+      "it-pablo",
+      "it-tarso",
+      "hch-9",
+      "hechos-11",
+      "galatas-1"
+     ],
+     "reason": "Lo envían a Tarso desde Cesarea y Bernabé va allí a buscarlo años después (Hch 9:30; 11:25).",
+     "status": "verified"
+    },
+    {
+     "type": "lived_in",
+     "place": "antioquia-de-siria",
+     "date": {
+      "from": 46,
+      "to": 52,
+      "precision": "range",
+      "approx": true,
+      "type": "narrative",
+      "chronology": "tnm",
+      "text": "c. 46-52 e.c."
+     },
+     "inferred": false,
+     "sources": [
+      "it-pablo",
+      "it-siria",
+      "hechos-11",
+      "galatas-2"
+     ],
+     "reason": "Trabaja un año en Antioquía con Bernabé y la usa después como base de sus viajes (Hch 11:26; 14:26; 18:22).",
+     "status": "verified"
+    },
+    {
+     "type": "lived_in",
+     "place": "efeso",
+     "date": {
+      "from": 52,
+      "to": 55,
+      "precision": "range",
+      "approx": true,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "invierno de 52-53 a 55 e.c."
+     },
+     "inferred": false,
+     "sources": [
+      "it-pablo",
+      "si-3",
+      "hch-19",
+      "1-corintios-15",
+      "1-corintios-16"
+     ],
+     "reason": "Unos tres años en Éfeso durante el tercer viaje (Hch 19:10; 20:31).",
+     "status": "verified"
+    },
+    {
+     "type": "lived_in",
+     "place": "roma",
+     "date": {
+      "from": 59,
+      "to": 61,
+      "precision": "range",
+      "approx": true,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "c. 59-61 e.c. (primer encierro en Roma)"
+     },
+     "inferred": false,
+     "sources": [
+      "it-pablo",
+      "hch-28",
+      "si-3",
+      "efesios-3",
+      "efesios-6",
+      "filipenses-1",
+      "filipenses-4",
+      "colosenses-1",
+      "colosenses-4"
+     ],
+     "reason": "Dos años en una casa alquilada, vigilado por un soldado (Hch 28:16, 30).",
+     "status": "verified"
+    },
+    {
+     "type": "disciple_of",
+     "person": "gamaliel-fariseo",
+     "inferred": false,
+     "sources": [
+      "hch-22",
+      "it-gamaliel",
+      "it-pablo",
+      "w96-gamaliel"
+     ],
+     "reason": "Hch 22:3 dice que se educó en Jerusalén a los pies de Gamaliel. Perspicacia «Pablo» (párr. 2) y «Gamaliel» (apartado 2) lo repiten; La Atalaya de 1996, apartado «Cómo enseñaba», describe esa enseñanza.",
+     "status": "verified"
+    },
+    {
+     "type": "lived_in",
+     "place": "damasco",
+     "date": {
+      "from": 34,
+      "to": 36,
+      "precision": "range",
+      "approx": true,
+      "type": "narrative",
+      "chronology": "tnm",
+      "text": "entre c. 34 y 36 e.c. (tiempo narrativo: de la conversión a la huida de Damasco)"
+     },
+     "inferred": false,
+     "sources": [
+      "hch-9",
+      "it-damasco",
+      "bt-8",
+      "hch-26",
+      "2-corintios-11",
+      "galatas-1"
+     ],
+     "reason": "Se queda con los discípulos de Damasco y predica allí hasta que huye (Hch 9:19-25); Gál 1:17 añade que volvió a la ciudad desde Arabia.",
+     "status": "verified"
+    },
+    {
+     "type": "tie",
+     "person": "judas-de-damasco",
+     "word": "host",
+     "date": {
+      "from": 34,
+      "to": 34,
+      "precision": "year",
+      "approx": true,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "c. 34 e.c."
+     },
+     "inferred": false,
+     "sources": [
+      "hch-9",
+      "it-recta",
+      "it-judas"
+     ],
+     "reason": "Hch 9:11: Ananías lo encuentra en casa de Judas; Perspicacia «Recta» dice que se alojó allí un tiempo.",
+     "status": "verified"
+    },
+    {
+     "type": "lived_in",
+     "place": "corinto",
+     "date": {
+      "from": 50,
+      "to": 52,
+      "precision": "range",
+      "approx": true,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "otoño de 50 a primavera de 52 e.c."
+     },
+     "inferred": false,
+     "sources": [
+      "hch-18",
+      "si-3",
+      "it-pablo",
+      "1-corintios-2",
+      "1-corintios-3",
+      "1-corintios-4",
+      "1-corintios-9",
+      "2-corintios-10",
+      "2-corintios-11",
+      "2-corintios-12",
+      "1-tesalonicenses-1",
+      "it-tesalonicenses"
+     ],
+     "reason": "Hch 18:3, 11: se aloja con Áquila y Priscila y se queda un año y seis meses. El estudio 3, párr. 24 y 25, lo fecha.",
+     "status": "verified"
+    },
+    {
+     "type": "lived_in",
+     "place": "jerusalen",
+     "inferred": false,
+     "sources": [
+      "hch-22",
+      "it-pablo",
+      "hch-26"
+     ],
+     "reason": "Hch 22:3: se crió y se formó en Jerusalén con Gamaliel; Perspicacia «Pablo» (párr. 2) lo repite.",
+     "status": "verified"
+    },
+    {
+     "type": "lived_in",
+     "place": "cesarea",
+     "date": {
+      "from": 56,
+      "to": 58,
+      "precision": "range",
+      "approx": true,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "c. 56-58 e.c."
+     },
+     "inferred": false,
+     "sources": [
+      "hch-23",
+      "hch-24",
+      "si-3",
+      "hch-25"
+     ],
+     "reason": "Preso en Cesarea, en el palacio de Herodes, desde su llegada hasta que Festo releva a Félix dos años más tarde (Hch 23:33-35; 24:27). El estudio 3 (párr. 27) da 56-58.",
+     "status": "verified"
+    },
+    {
+     "type": "kin",
+     "person": "abrahan",
+     "word": "ancestor",
+     "inferred": false,
+     "sources": [
+      "romanos-4",
+      "romanos-11",
+      "it-pablo",
+      "2-corintios-11",
+      "filipenses-3"
+     ],
+     "reason": "Ro 4:1: Pablo llama a Abrahán nuestro antepasado, y la nota al pie precisa que lo es según la carne; habla como judío.",
+     "status": "verified"
+    },
+    {
+     "type": "kin",
+     "person": "isaac",
+     "word": "ancestor",
+     "inferred": false,
+     "sources": [
+      "romanos-9",
+      "filipenses-3"
+     ],
+     "reason": "Ro 9:3, 4, 10: Pablo llama a los israelitas sus parientes carnales e incluye a Isaac como antepasado de ellos y suyo.",
+     "status": "verified"
+    },
+    {
+     "type": "kin",
+     "person": "benjamin-hijo-de-jacob",
+     "word": "ancestor",
+     "inferred": false,
+     "sources": [
+      "romanos-11",
+      "it-pablo",
+      "filipenses-3"
+     ],
+     "reason": "Ro 11:1 lo sitúa en la tribu de Benjamín, que desciende del hijo de Jacob; Perspicacia «Pablo», párr. 1, lo repite con Flp 3:5.",
+     "status": "verified"
+    },
+    {
+     "type": "tie",
+     "person": "gayo-de-corinto",
+     "word": "host",
+     "date": {
+      "from": 56,
+      "to": 56,
+      "precision": "year",
+      "approx": true,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "c. 56 e.c."
+     },
+     "inferred": false,
+     "sources": [
+      "romanos-16",
+      "it-gayo",
+      "tnm-tabla"
+     ],
+     "reason": "Ro 16:23: Gayo lo hospeda a él y a toda la congregación de Corinto cuando escribe Romanos, hacia 56 según la Tabla de los libros.",
+     "status": "verified"
+    },
+    {
+     "type": "tie",
+     "person": "pedro",
+     "word": "host",
+     "date": {
+      "from": 36,
+      "to": 36,
+      "precision": "year",
+      "approx": true,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "c. 36 e.c."
+     },
+     "inferred": false,
+     "sources": [
+      "galatas-1",
+      "it-pedro",
+      "si-3"
+     ],
+     "reason": "Gál 1:18: tres años después de convertirse sube a Jerusalén a ver a Cefas y se queda con él 15 días. Perspicacia «Pedro», párr. 20, lo pone quizás en 36; el estudio 3, párr. 22, cuenta 34-36.",
+     "status": "verified"
+    },
+    {
+     "type": "tie",
+     "person": "claudio-lisias",
+     "word": "custodian",
+     "date": {
+      "from": 56,
+      "to": 56,
+      "precision": "year",
+      "approx": true,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "c. 56 e.c."
+     },
+     "inferred": false,
+     "sources": [
+      "hch-23",
+      "it-claudio-lisias",
+      "hch-21",
+      "hch-22"
+     ],
+     "reason": "Claudio Lisias lo detiene en el templo, lo interroga en el cuartel, lo saca del Sanedrín y lo manda escoltado a Félix con una carta (Hch 21:31-40; 22:24-30; 23:10, 23-30).",
+     "status": "verified"
+    },
+    {
+     "type": "tie",
+     "person": "felix",
+     "word": "custodian",
+     "date": {
+      "from": 56,
+      "to": 58,
+      "precision": "range",
+      "approx": true,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "c. 56-58 e.c."
+     },
+     "inferred": false,
+     "sources": [
+      "hch-23",
+      "hch-24",
+      "it-felix",
+      "si-3"
+     ],
+     "reason": "Félix lo recibe en Cesarea y lo tiene vigilado dos años, con algo de libertad, hasta que llega Festo (Hch 23:33-35; 24:23, 27).",
+     "status": "verified"
+    },
+    {
+     "type": "tie",
+     "person": "festo",
+     "word": "custodian",
+     "date": {
+      "from": 58,
+      "to": 58,
+      "precision": "year",
+      "approx": true,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "c. 58 e.c."
+     },
+     "inferred": false,
+     "sources": [
+      "hch-25",
+      "it-festo"
+     ],
+     "reason": "Hch 25:4, 21: Festo, al llegar, manda que siga preso en Cesarea y lo tiene arrestado hasta enviarlo a César.",
+     "status": "verified"
+    },
+    {
+     "type": "tie",
+     "person": "julio",
+     "word": "custodian",
+     "date": {
+      "from": 58,
+      "to": 59,
+      "precision": "range",
+      "approx": true,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "c. 58-59 e.c."
+     },
+     "inferred": false,
+     "sources": [
+      "it-julio",
+      "hch-27",
+      "si-3"
+     ],
+     "reason": "Hch 27:1, 3: lo entregan con otros presos a Julio, que lo lleva desde Cesarea y en Sidón le deja ver a sus amigos. El viaje va de c. 58 a 59 (estudio 3, párr. 27).",
+     "status": "verified"
+    },
+    {
+     "type": "tie",
+     "person": "jason",
+     "word": "host",
+     "date": {
+      "from": 50,
+      "to": 50,
+      "precision": "year",
+      "approx": true,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "c. 50 e.c."
+     },
+     "inferred": false,
+     "sources": [
+      "1-tesalonicenses-1",
+      "it-jason",
+      "it-tesalonica",
+      "si-3"
+     ],
+     "reason": "Hechos cuenta que Jasón los hospedaba en su casa; la nota de 1Te 1:6 y Perspicacia «Tesalónica» lo recuerdan, y «Jasón» incluye a Silas. Hacia 50, según el estudio 3.",
+     "status": "verified"
+    },
+    {
+     "type": "holds_office",
+     "office": "apostle",
+     "inferred": false,
+     "sources": [
+      "1-tesalonicenses-2",
+      "it-pablo"
+     ],
+     "reason": "1Te 2:6: Pablo dice que, por ser apóstoles de Cristo, podían haber pedido sustento. Perspicacia «Pablo» lo presenta como apóstol de Jesucristo y cita este versículo al hablar de su trabajo.",
+     "status": "verified"
+    }
+   ],
+   "despues": [
+    {
+     "type": "born_in",
+     "place": "tarso",
+     "inferred": false,
+     "sources": [
+      "it-pablo",
+      "it-tarso",
+      "hch-22"
+     ],
+     "reason": "Él mismo dice que nació en Tarso de Cilicia (Hch 21:39; 22:3); Perspicacia «Pablo», párr. 2.",
+     "status": "verified"
+    },
+    {
+     "type": "lived_in",
+     "place": "tarso",
+     "date": {
+      "from": 36,
+      "to": 46,
+      "precision": "range",
+      "approx": true,
+      "type": "narrative",
+      "chronology": "tnm",
+      "text": "entre c. 36 y c. 46 e.c."
+     },
+     "inferred": false,
+     "sources": [
+      "it-pablo",
+      "it-tarso",
+      "hch-9",
+      "hechos-11",
+      "galatas-1"
+     ],
+     "reason": "Lo envían a Tarso desde Cesarea y Bernabé va allí a buscarlo años después (Hch 9:30; 11:25).",
+     "status": "verified"
+    },
+    {
+     "type": "lived_in",
+     "place": "antioquia-de-siria",
+     "date": {
+      "from": 46,
+      "to": 52,
+      "precision": "range",
+      "approx": true,
+      "type": "narrative",
+      "chronology": "tnm",
+      "text": "c. 46-52 e.c."
+     },
+     "inferred": false,
+     "sources": [
+      "it-pablo",
+      "it-siria",
+      "hechos-11",
+      "galatas-2"
+     ],
+     "reason": "Trabaja un año en Antioquía con Bernabé y la usa después como base de sus viajes (Hch 11:26; 14:26; 18:22).",
+     "status": "verified"
+    },
+    {
+     "type": "lived_in",
+     "place": "efeso",
+     "date": {
+      "from": 52,
+      "to": 55,
+      "precision": "range",
+      "approx": true,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "invierno de 52-53 a 55 e.c."
+     },
+     "inferred": false,
+     "sources": [
+      "it-pablo",
+      "si-3",
+      "hch-19",
+      "1-corintios-15",
+      "1-corintios-16"
+     ],
+     "reason": "Unos tres años en Éfeso durante el tercer viaje (Hch 19:10; 20:31).",
+     "status": "verified"
+    },
+    {
+     "type": "lived_in",
+     "place": "roma",
+     "date": {
+      "from": 59,
+      "to": 61,
+      "precision": "range",
+      "approx": true,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "c. 59-61 e.c. (primer encierro en Roma)"
+     },
+     "inferred": false,
+     "sources": [
+      "it-pablo",
+      "hch-28",
+      "si-3",
+      "efesios-3",
+      "efesios-6",
+      "filipenses-1",
+      "filipenses-4",
+      "colosenses-1",
+      "colosenses-4"
+     ],
+     "reason": "Dos años en una casa alquilada, vigilado por un soldado (Hch 28:16, 30).",
+     "status": "verified"
+    },
+    {
+     "type": "disciple_of",
+     "person": "gamaliel-fariseo",
+     "inferred": false,
+     "sources": [
+      "hch-22",
+      "it-gamaliel",
+      "it-pablo",
+      "w96-gamaliel"
+     ],
+     "reason": "Hch 22:3 dice que se educó en Jerusalén a los pies de Gamaliel. Perspicacia «Pablo» (párr. 2) y «Gamaliel» (apartado 2) lo repiten; La Atalaya de 1996, apartado «Cómo enseñaba», describe esa enseñanza.",
+     "status": "verified"
+    },
+    {
+     "type": "lived_in",
+     "place": "damasco",
+     "date": {
+      "from": 34,
+      "to": 36,
+      "precision": "range",
+      "approx": true,
+      "type": "narrative",
+      "chronology": "tnm",
+      "text": "entre c. 34 y 36 e.c. (tiempo narrativo: de la conversión a la huida de Damasco)"
+     },
+     "inferred": false,
+     "sources": [
+      "hch-9",
+      "it-damasco",
+      "bt-8",
+      "hch-26",
+      "2-corintios-11",
+      "galatas-1"
+     ],
+     "reason": "Se queda con los discípulos de Damasco y predica allí hasta que huye (Hch 9:19-25); Gál 1:17 añade que volvió a la ciudad desde Arabia.",
+     "status": "verified"
+    },
+    {
+     "type": "tie",
+     "person": "judas-de-damasco",
+     "word": "host",
+     "date": {
+      "from": 34,
+      "to": 34,
+      "precision": "year",
+      "approx": true,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "c. 34 e.c."
+     },
+     "inferred": false,
+     "sources": [
+      "hch-9",
+      "it-recta",
+      "it-judas"
+     ],
+     "reason": "Hch 9:11: Ananías lo encuentra en casa de Judas; Perspicacia «Recta» dice que se alojó allí un tiempo.",
+     "status": "verified"
+    },
+    {
+     "type": "lived_in",
+     "place": "corinto",
+     "date": {
+      "from": 50,
+      "to": 52,
+      "precision": "range",
+      "approx": true,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "otoño de 50 a primavera de 52 e.c."
+     },
+     "inferred": false,
+     "sources": [
+      "hch-18",
+      "si-3",
+      "it-pablo",
+      "1-corintios-2",
+      "1-corintios-3",
+      "1-corintios-4",
+      "1-corintios-9",
+      "2-corintios-10",
+      "2-corintios-11",
+      "2-corintios-12",
+      "1-tesalonicenses-1",
+      "it-tesalonicenses"
+     ],
+     "reason": "Hch 18:3, 11: se aloja con Áquila y Priscila y se queda un año y seis meses (estudio 3, párr. 24 y 25). Perspicacia «Tesalonicenses» deduce de las firmas de 1Te 1:1 que desde allí escribe la carta.",
+     "status": "verified"
+    },
+    {
+     "type": "lived_in",
+     "place": "jerusalen",
+     "inferred": false,
+     "sources": [
+      "hch-22",
+      "it-pablo",
+      "hch-26"
+     ],
+     "reason": "Hch 22:3: se crió y se formó en Jerusalén con Gamaliel; Perspicacia «Pablo» (párr. 2) lo repite.",
+     "status": "verified"
+    },
+    {
+     "type": "lived_in",
+     "place": "cesarea",
+     "date": {
+      "from": 56,
+      "to": 58,
+      "precision": "range",
+      "approx": true,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "c. 56-58 e.c."
+     },
+     "inferred": false,
+     "sources": [
+      "hch-23",
+      "hch-24",
+      "si-3",
+      "hch-25"
+     ],
+     "reason": "Preso en Cesarea, en el palacio de Herodes, desde su llegada hasta que Festo releva a Félix dos años más tarde (Hch 23:33-35; 24:27). El estudio 3 (párr. 27) da 56-58.",
+     "status": "verified"
+    },
+    {
+     "type": "kin",
+     "person": "abrahan",
+     "word": "ancestor",
+     "inferred": false,
+     "sources": [
+      "romanos-4",
+      "romanos-11",
+      "it-pablo",
+      "2-corintios-11",
+      "filipenses-3"
+     ],
+     "reason": "Ro 4:1: Pablo llama a Abrahán nuestro antepasado, y la nota al pie precisa que lo es según la carne; habla como judío.",
+     "status": "verified"
+    },
+    {
+     "type": "kin",
+     "person": "isaac",
+     "word": "ancestor",
+     "inferred": false,
+     "sources": [
+      "romanos-9",
+      "filipenses-3"
+     ],
+     "reason": "Ro 9:3, 4, 10: Pablo llama a los israelitas sus parientes carnales e incluye a Isaac como antepasado de ellos y suyo.",
+     "status": "verified"
+    },
+    {
+     "type": "kin",
+     "person": "benjamin-hijo-de-jacob",
+     "word": "ancestor",
+     "inferred": false,
+     "sources": [
+      "romanos-11",
+      "it-pablo",
+      "filipenses-3"
+     ],
+     "reason": "Ro 11:1 lo sitúa en la tribu de Benjamín, que desciende del hijo de Jacob; Perspicacia «Pablo», párr. 1, lo repite con Flp 3:5.",
+     "status": "verified"
+    },
+    {
+     "type": "tie",
+     "person": "gayo-de-corinto",
+     "word": "host",
+     "date": {
+      "from": 56,
+      "to": 56,
+      "precision": "year",
+      "approx": true,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "c. 56 e.c."
+     },
+     "inferred": false,
+     "sources": [
+      "romanos-16",
+      "it-gayo",
+      "tnm-tabla"
+     ],
+     "reason": "Ro 16:23: Gayo lo hospeda a él y a toda la congregación de Corinto cuando escribe Romanos, hacia 56 según la Tabla de los libros.",
+     "status": "verified"
+    },
+    {
+     "type": "tie",
+     "person": "pedro",
+     "word": "host",
+     "date": {
+      "from": 36,
+      "to": 36,
+      "precision": "year",
+      "approx": true,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "c. 36 e.c."
+     },
+     "inferred": false,
+     "sources": [
+      "galatas-1",
+      "it-pedro",
+      "si-3"
+     ],
+     "reason": "Gál 1:18: tres años después de convertirse sube a Jerusalén a ver a Cefas y se queda con él 15 días. Perspicacia «Pedro», párr. 20, lo pone quizás en 36; el estudio 3, párr. 22, cuenta 34-36.",
+     "status": "verified"
+    },
+    {
+     "type": "tie",
+     "person": "claudio-lisias",
+     "word": "custodian",
+     "date": {
+      "from": 56,
+      "to": 56,
+      "precision": "year",
+      "approx": true,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "c. 56 e.c."
+     },
+     "inferred": false,
+     "sources": [
+      "hch-23",
+      "it-claudio-lisias",
+      "hch-21",
+      "hch-22"
+     ],
+     "reason": "Claudio Lisias lo detiene en el templo, lo interroga en el cuartel, lo saca del Sanedrín y lo manda escoltado a Félix con una carta (Hch 21:31-40; 22:24-30; 23:10, 23-30).",
+     "status": "verified"
+    },
+    {
+     "type": "tie",
+     "person": "felix",
+     "word": "custodian",
+     "date": {
+      "from": 56,
+      "to": 58,
+      "precision": "range",
+      "approx": true,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "c. 56-58 e.c."
+     },
+     "inferred": false,
+     "sources": [
+      "hch-23",
+      "hch-24",
+      "it-felix",
+      "si-3"
+     ],
+     "reason": "Félix lo recibe en Cesarea y lo tiene vigilado dos años, con algo de libertad, hasta que llega Festo (Hch 23:33-35; 24:23, 27).",
+     "status": "verified"
+    },
+    {
+     "type": "tie",
+     "person": "festo",
+     "word": "custodian",
+     "date": {
+      "from": 58,
+      "to": 58,
+      "precision": "year",
+      "approx": true,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "c. 58 e.c."
+     },
+     "inferred": false,
+     "sources": [
+      "hch-25",
+      "it-festo"
+     ],
+     "reason": "Hch 25:4, 21: Festo, al llegar, manda que siga preso en Cesarea y lo tiene arrestado hasta enviarlo a César.",
+     "status": "verified"
+    },
+    {
+     "type": "tie",
+     "person": "julio",
+     "word": "custodian",
+     "date": {
+      "from": 58,
+      "to": 59,
+      "precision": "range",
+      "approx": true,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "c. 58-59 e.c."
+     },
+     "inferred": false,
+     "sources": [
+      "it-julio",
+      "hch-27",
+      "si-3"
+     ],
+     "reason": "Hch 27:1, 3: lo entregan con otros presos a Julio, que lo lleva desde Cesarea y en Sidón le deja ver a sus amigos. El viaje va de c. 58 a 59 (estudio 3, párr. 27).",
+     "status": "verified"
+    },
+    {
+     "type": "tie",
+     "person": "jason",
+     "word": "host",
+     "date": {
+      "from": 50,
+      "to": 50,
+      "precision": "year",
+      "approx": true,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "c. 50 e.c."
+     },
+     "inferred": false,
+     "sources": [
+      "1-tesalonicenses-1",
+      "it-jason",
+      "it-tesalonica",
+      "si-3"
+     ],
+     "reason": "Hechos cuenta que Jasón los hospedaba en su casa; la nota de 1Te 1:6 y Perspicacia «Tesalónica» lo recuerdan, y «Jasón» incluye a Silas. Hacia 50, según el estudio 3.",
+     "status": "verified"
+    },
+    {
+     "type": "holds_office",
+     "office": "apostle",
+     "inferred": false,
+     "sources": [
+      "1-tesalonicenses-2",
+      "it-pablo"
+     ],
+     "reason": "1Te 2:6: Pablo dice que, por ser apóstoles de Cristo, podían haber pedido sustento. Perspicacia «Pablo» lo presenta como apóstol de Jesucristo y cita este versículo al hablar de su trabajo.",
+     "status": "verified"
+    }
+   ],
+   "historial": {
+    "date": "2026-10-12",
+    "change": "La reason de pablo/lived_in/corinto nombra ahora 1Te 1:1 y Perspicacia «Tesalonicenses», que ya estaban en sus sources: la carta sale de Corinto.",
+    "source": "1-tesalonicenses-1"
+   }
+  }
+ ],
+ "preguntas": [
+  "Dos operaciones son un cambiar de la lista entera: pablo.relations (reason de pablo/lived_in/corinto, 1Te 1:1) y satanas.names (nota de «el Tentador», 1Te 3:5). Si al integrar chocan porque otro libro tocó antes esas listas, basta con hacer a mano ese único cambio de texto."
+ ]
+}
