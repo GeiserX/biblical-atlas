@@ -15,8 +15,10 @@ function mini(v) {
   const x0 = Math.min(...xs), y1 = Math.max(...ys), e = Math.min(46 / (Math.max(...xs) - x0 || 1), 30 / (y1 - Math.min(...ys) || 1));
   return `<svg viewBox="0 0 54 38" aria-hidden="true"><path d="${ps.map((p, i) => `${i ? 'L' : 'M'}${(4 + (p[0] - x0) * e).toFixed(1)},${(4 + (y1 - p[1]) * e).toFixed(1)}`).join('')}"/></svg>`;
 }
+/** El viaje que se dibuja: el de la dirección o, si no existe, el de por defecto. La lista marca este mismo. */
+const actual = () => window.VJ.viaje(estado().viaje) || window.VJ.viaje(POR_DEFECTO);
 function lista() {
-  const id = estado().viaje || POR_DEFECTO;
+  const id = actual().id;
   $('lista').innerHTML = grupos($('filtro').value).map((g) => `<h2 class="ma-era">${esc(g.n)}</h2>${g.viajes.map((v) => `<a class="ma-item" href="#viaje=${v.id}"${v.id === id ? ' aria-current="true"' : ''}>${mini(v)}<span><b>${esc(v.n)}</b><span>${esc(v.q)} · ${v.s.length} paradas · ${km(v.km)}</span><span>${esc(v.s.map((s) => s.n).slice(0, 5).join(' · '))}${v.s.length > 5 ? '…' : ''}</span></span></a>`).join('')}`).join('');
 }
 $('filtro').addEventListener('input', lista);
@@ -24,8 +26,8 @@ $('abrir-lista').onclick = () => { $('ma').classList.toggle('ma--lista'); $('abr
 document.addEventListener('click', (e) => { if (e.target.closest('.ma-item')) $('ma').classList.remove('ma--lista'); });
 
 function todo() {
-  const { viaje: id, tramo: k } = estado();
-  const v = window.VJ.viaje(id) || window.VJ.viaje(POR_DEFECTO);
+  const { tramo: k } = estado();
+  const v = actual();
   lista();
   const t = k != null ? v.t[k] : null;
   const [a, b] = t ? nombreTramo(v, t) : [];
