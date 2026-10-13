@@ -11,6 +11,7 @@ sources:
 - it-ard
 - genesis-46
 - numeros-26
+- 1-cronicas-8
 links:
 - title: 'Perspicacia: «Ard»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ard/
@@ -53,5 +54,5 @@ history:
   change: 'Nú 26:40 dice que Ard era hijo de Bela: esa relación deja de ser una deducción de Perspicacia, cita el capítulo
     y queda verificada.'
   source: numeros-26
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

@@ -1,0 +1,28 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: eston
+name: Estón
+names:
+- name: Estón
+perspicacia: '1200001428'
+summary: Judaíta, hijo de Mehir, de la línea de Kelub, y padre de Paséah y de Tehiná.
+reason: Perspicacia «Estón»; 1Cr 4:11, 12.
+sources:
+- it-eston
+- 1-cronicas-4
+links:
+- title: 'Perspicacia: «Estón»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Est%C3%B3n/
+  type: perspicacia
+relations:
+- type: kin
+  person: mehir
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-4
+  - it-eston
+  reason: '1Cr 4:11: Mehir fue el padre de Estón.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

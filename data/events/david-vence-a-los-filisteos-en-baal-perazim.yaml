@@ -33,6 +33,7 @@ sources:
 - it-baal-perazim
 - it-david
 - it-adulam
+- 1-cronicas-14
 links:
 - title: 'Perspicacia: «Baal-perazim»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Baal-perazim/
@@ -40,5 +41,5 @@ links:
 - title: 2 Samuel 5 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-samuel/5/
   type: bible
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

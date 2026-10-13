@@ -1,0 +1,27 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hasub-hijo-de-azricam
+name: Hasub
+names:
+- name: Hasub
+perspicacia: 1200001910#4
+summary: Levita de la familia de Merarí, hijo de Azricam y padre de Semaya, que vivió en Jerusalén tras el destierro.
+reason: Perspicacia «Hasub», núm. 4; 1Cr 9:14.
+sources:
+- it-hasub
+- 1-cronicas-9
+links:
+- title: 'Perspicacia: «Hasub»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hasub/
+  type: perspicacia
+relations:
+- type: kin
+  person: azricam-hijo-de-hasabias
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-9
+  reason: '1Cr 9:14: Hasub, hijo de Azricam.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

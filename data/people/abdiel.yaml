@@ -1,0 +1,45 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: abdiel
+name: Abdiel
+names:
+- name: Abdiel
+perspicacia: '1200000015'
+summary: Gadita, hijo de Guní y padre de Ahí. Vivió en Galaad y Basán, tierras de ganado al este del Jordán.
+reason: Perspicacia «Abdiel»; 1Cr 5:15, 16.
+sources:
+- it-abdiel
+- 1-cronicas-5
+links:
+- title: 'Perspicacia: «Abdiel»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Abdiel/
+  type: perspicacia
+relations:
+- type: kin
+  person: guni-el-gadita
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-5
+  reason: '1Cr 5:15: Abdiel, «hijo de Guní».'
+  checked_on: '2026-10-12'
+  status: verified
+- type: lived_in
+  place: galaad
+  inferred: true
+  sources:
+  - 1-cronicas-5
+  - it-abdiel
+  reason: Perspicacia «Abdiel» lo sitúa en Galaad y Basán (1Cr 5:16).
+  checked_on: '2026-10-12'
+  status: verified
+- type: lived_in
+  place: basan
+  inferred: true
+  sources:
+  - 1-cronicas-5
+  - it-abdiel
+  reason: Perspicacia «Abdiel» lo sitúa en Galaad y Basán (1Cr 5:16).
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

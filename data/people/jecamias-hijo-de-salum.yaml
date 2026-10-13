@@ -1,0 +1,32 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jecamias-hijo-de-salum
+name: Jecamías
+names:
+- name: Jecamías
+- name: Jeqamías
+  note: Grafía de Perspicacia.
+perspicacia: 1200002409#1
+summary: Descendiente de Judá, hijo de Salum y padre de Elisamá, de la rama de Jerahmeel.
+reason: Perspicacia «Jeqamías», núm. 1; 1Cr 2:41.
+sources:
+- it-jeqamias
+- 1-cronicas-2
+links:
+- title: 'Perspicacia: «Jeqamías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jeqam%C3%ADas/
+  type: perspicacia
+relations:
+- type: kin
+  person: salum-hijo-de-sismai
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-2
+  reason: '1Cr 2:41: Salum fue su padre.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+disambiguation: Jecamías, hijo de Salum, de la rama de Jerahmeel; no el hijo del rey Jeconías.
+distinct_from:
+- jecamias-hijo-de-joaquin

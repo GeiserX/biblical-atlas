@@ -11,6 +11,8 @@ distinct_from:
 - ela-de-israel
 - ela-padre-de-simei
 - ela-jeque-de-edom
+- ela-hijo-de-caleb
+- ela-hijo-de-uzi
 summary: Padre de Hosea, el último rey del reino de Israel.
 reason: Perspicacia «Elah», núm. 4; 2Re 15:30.
 sources:
@@ -25,5 +27,5 @@ links:
 - title: 2 Reyes 15 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-reyes/15/
   type: bible
-checked_on: '2026-09-30'
+checked_on: '2026-10-12'
 status: verified

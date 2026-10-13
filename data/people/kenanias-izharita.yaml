@@ -1,0 +1,49 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: kenanias-izharita
+name: Kenanías
+names:
+- name: Kenanías
+perspicacia: 1200000939#2
+summary: Levita izharita. Con sus hijos recibió las tareas de fuera del santuario, como funcionarios y jueces de Israel. Perspicacia
+  ve posible que sea el jefe del transporte del Arca.
+reason: Perspicacia «Kenanías», núm. 2; 1Cr 26:29.
+sources:
+- it-kenanias
+- 1-cronicas-26
+links:
+- title: 'Perspicacia: «Kenanías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Kenan%C3%ADas/
+  type: perspicacia
+relations:
+- type: kin
+  person: izhar-hijo-de-cohat
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-26
+  - it-kenanias
+  reason: '1Cr 26:29: era de los izharitas.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: holds_office
+  office: judge
+  inferred: false
+  sources:
+  - 1-cronicas-26
+  - it-kenanias
+  reason: '1Cr 26:29: él y sus hijos hacían de funcionarios y jueces de Israel.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: same_as
+  person: kenanias-jefe-del-transporte
+  certainty: possible
+  inferred: true
+  sources:
+  - it-kenanias
+  - 1-cronicas-26
+  reason: 'Perspicacia «Kenanías», núm. 2: el izharita de 1Cr 26:29 posiblemente es el núm. 1, el jefe del transporte del
+    Arca.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

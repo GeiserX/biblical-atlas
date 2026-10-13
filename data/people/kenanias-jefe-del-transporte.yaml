@@ -1,0 +1,20 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: kenanias-jefe-del-transporte
+name: Kenanías
+names:
+- name: Kenanías
+perspicacia: 1200000939#1
+disambiguation: El jefe del transporte del Arca; Perspicacia «Kenanías» ve posible que sea el izharita al que David encargó
+  el servicio exterior (núm. 2), sin darlo por hecho.
+summary: Jefe levita entendido en el transporte del Arca. Lo dirigió cuando David la subió a Jerusalén, al frente también
+  de los cantores, y vestía como los levitas que la llevaban.
+reason: Perspicacia «Kenanías», núm. 1; 1Cr 15:22, 27.
+sources:
+- it-kenanias
+- 1-cronicas-15
+links:
+- title: 'Perspicacia: «Kenanías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Kenan%C3%ADas/
+  type: perspicacia
+checked_on: '2026-10-12'
+status: verified

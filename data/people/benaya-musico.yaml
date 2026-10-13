@@ -1,0 +1,26 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: benaya-musico
+name: Benaya
+names:
+- name: Benaya
+perspicacia: 1200000632#3
+disambiguation: El músico levita; no el sacerdote trompetista del mismo traslado (núm. 4), ni Benaya hijo de Jehoiadá, ni
+  el piratonita (Perspicacia «Benaya»).
+distinct_from:
+- benaya-hijo-de-jehoiada
+- benaya-el-piratonita
+- benaya-trompetista
+- benaya-simeonita
+summary: Músico levita que tocó instrumento de cuerda cuando el Arca llegó a Jerusalén y quedó en la tienda que David le había
+  preparado.
+reason: Perspicacia «Benaya», núm. 3; 1Cr 15:18, 20; 16:5.
+sources:
+- it-benaya
+- 1-cronicas-15
+- 1-cronicas-16
+links:
+- title: 'Perspicacia: «Benaya»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Benaya/
+  type: perspicacia
+checked_on: '2026-10-12'
+status: verified

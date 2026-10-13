@@ -1,0 +1,37 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hananias-hijo-de-heman
+name: Hananías
+names:
+- name: Hananías
+perspicacia: 1200001853#2
+disambiguation: El hijo de Hemán del grupo 16 de músicos (1Cr 25:4, 23); no Hananías, el compañero de Daniel llamado Sadrac,
+  ni los demás Hananías de Perspicacia.
+summary: Uno de los 14 hijos de Hemán. Encabezó el grupo 16 de los músicos levitas que David repartió por suertes.
+reason: Perspicacia «Hananías», núm. 2; 1Cr 25:4, 23.
+sources:
+- it-hananias
+- 1-cronicas-25
+links:
+- title: 'Perspicacia: «Hananías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hanan%C3%ADas/
+  type: perspicacia
+relations:
+- type: kin
+  person: heman-hijo-de-joel
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-25
+  - it-hananias
+  reason: 1Cr 25:4, 23 lo cuenta entre los hijos de Hemán.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- hananias-hijo-de-sasac
+- hananias-hijo-de-zorobabel
+- sadrac
+- hananias-abuelo-de-iriya
+- hananias-hijo-de-azur
+- hananias-padre-de-sedequias

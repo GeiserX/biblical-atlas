@@ -1,0 +1,32 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: adaya-hijo-de-etan
+name: Adaya
+names:
+- name: Adaya
+perspicacia: 1200000087#1
+disambiguation: Adaya hijo de Etán (1Cr 6:41, 42); no es ninguno de los otros Adaya que numera Perspicacia «Adaya».
+distinct_from:
+- adaya-hijo-de-jeroham
+- adaya-hijo-de-simei
+- adaya-padre-de-jedida
+summary: Levita guersonita, hijo de Etán, antepasado del músico Asaf.
+reason: Perspicacia «Adaya», núm. 1; 1Cr 6:41, 42.
+sources:
+- it-adaya
+- 1-cronicas-6
+links:
+- title: 'Perspicacia: «Adaya»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Adaya/
+  type: perspicacia
+relations:
+- type: kin
+  person: etan-hijo-de-zima
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-6
+  reason: '1Cr 6:41, 42: Adaya, «hijo de Etán».'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

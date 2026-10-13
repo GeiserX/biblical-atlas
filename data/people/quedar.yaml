@@ -11,6 +11,7 @@ reason: Perspicacia «Quedar», núm. 1 y 2; Gé 25:13.
 sources:
 - it-quedar
 - genesis-25
+- 1-cronicas-1
 links:
 - title: 'Perspicacia: «Quedar»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Quedar/
@@ -26,12 +27,13 @@ relations:
   sources:
   - it-quedar
   - genesis-25
+  - 1-cronicas-1
   reason: 'Gé 25:13-16: uno de los doce hijos de Ismael.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 history:
 - date: '2026-09-29'
   change: La clave apunta a la entrada 1 del artículo, que trata dos entradas.
   source: it-quedar
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

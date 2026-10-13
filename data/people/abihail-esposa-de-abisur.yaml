@@ -1,0 +1,24 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: abihail-esposa-de-abisur
+name: Abihail
+names:
+- name: Abihail
+- name: Abiháil
+  note: Grafía de Perspicacia.
+perspicacia: 1200000038#2
+summary: Mujer de Abisur, judaíta de la rama de Jerahmeel. Fue madre de Ahbán y de Molid.
+reason: Perspicacia «Abiháil», núm. 2; 1Cr 2:29.
+sources:
+- it-abihail
+- 1-cronicas-2
+links:
+- title: 'Perspicacia: «Abiháil»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Abih%C3%A1il/
+  type: perspicacia
+relations: []
+disambiguation: Abihail, esposa de Abisur, de Judá; no Abihail, el levita merarita padre de Zuriel.
+distinct_from:
+- abihail-padre-de-zuriel
+- abihail-hijo-de-huri
+checked_on: '2026-10-12'
+status: verified

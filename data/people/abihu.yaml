@@ -28,6 +28,8 @@ sources:
 - levitico-10
 - numeros-3
 - numeros-26
+- 1-cronicas-6
+- 1-cronicas-24
 links:
 - title: 'Perspicacia: «Abihú»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Abih%C3%BA/
@@ -50,8 +52,10 @@ relations:
   - levitico-10
   - numeros-3
   - numeros-26
+  - 1-cronicas-6
+  - 1-cronicas-24
   reason: 'Éx 6:23: hijo de Aarón y Eliseba.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: kin
   person: eliseba
@@ -95,5 +99,5 @@ history:
 - date: '2026-09-29'
   change: 'Su muerte en el desierto de Sinaí pasa a deducido: false, porque Nú 3:4 nombra ese desierto.'
   source: numeros-3
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

@@ -1,0 +1,40 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: saaf-hijo-de-caleb
+name: Sáaf
+names:
+- name: Sáaf
+perspicacia: 1200003921#1
+summary: Hijo de Caleb hijo de Hezrón y de su concubina Maacá. Fue el «padre» de Madmaná, es decir, el fundador de sus pobladores.
+reason: Perspicacia «Sáaf», núm. 1, y «Madmaná», núm. 1; 1Cr 2:49.
+sources:
+- it-saaf
+- 1-cronicas-2
+- it-madmana
+links:
+- title: 'Perspicacia: «Sáaf»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/S%C3%A1af/
+  type: perspicacia
+relations:
+- type: kin
+  person: caleb-hijo-de-hezron
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-2
+  reason: '1Cr 2:48, 49: Maacá, la concubina de Caleb, lo dio a luz.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: maaca-concubina-de-caleb
+  word: mother
+  inferred: false
+  sources:
+  - 1-cronicas-2
+  reason: '1Cr 2:48, 49: Maacá lo dio a luz.'
+  checked_on: '2026-10-12'
+  status: verified
+disambiguation: Sáaf hijo de Caleb y de Maacá; no Sáaf hijo de Jahdái.
+distinct_from:
+- saaf-hijo-de-jahdai
+checked_on: '2026-10-12'
+status: verified

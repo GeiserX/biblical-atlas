@@ -5,6 +5,9 @@ names:
 - name: Sihor
 - name: Brazo del Nilo
   note: Así lo traduce Jos 13:3; la nota da Sihor.
+- name: Río de Egipto
+  note: Así lo traduce 1Cr 13:5, con Sihor en la nota; Perspicacia «Sihor» lo entiende como este brazo del Nilo, el límite
+    de la región que gobernaba David.
 type: river
 lat: 31.042512
 lon: 32.546139
@@ -21,6 +24,7 @@ sources:
 - josue-13
 - isaias-23
 - jeremias-2
+- 1-cronicas-13
 links:
 - title: 'Perspicacia: «Sihor»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sihor/

@@ -1,0 +1,42 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: berekias-hijo-de-asa
+name: Berekías
+names:
+- name: Berekías
+perspicacia: 1200000650#5
+summary: Levita, hijo de Asá y nieto de Elcaná, de los que vivieron en Jerusalén después del destierro.
+reason: Perspicacia «Berekías», núm. 5; 1Cr 9:16.
+sources:
+- it-berekias
+- 1-cronicas-9
+links:
+- title: 'Perspicacia: «Berekías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Berek%C3%ADas/
+  type: perspicacia
+relations:
+- type: kin
+  person: asa-hijo-de-elcana
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-9
+  reason: '1Cr 9:16: Berekías, hijo de Asá.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: lived_in
+  place: jerusalen
+  inferred: false
+  sources:
+  - 1-cronicas-9
+  - it-berekias
+  reason: '1Cr 9:16, 34: de los jefes de los levitas que vivían en Jerusalén.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- berekias-hijo-de-ido
+- berekias-hijo-de-simea
+- berekias-hijo-de-zorobabel
+- berekias-portero
+disambiguation: 'Berekías núm. 5 de Perspicacia: levita, hijo de Asá. No el padre del profeta Zacarías.'

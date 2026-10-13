@@ -1,0 +1,48 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: savsa
+name: Savsá
+names:
+- name: Savsá
+perspicacia: '1200003965'
+summary: Secretario del rey David en la lista de 1Cr 18:16. Perspicacia cree que es el mismo Seraya, llamado también Sevá
+  y Sisá, de las otras listas de la corte, si el puesto no cambió mucho de manos.
+reason: Perspicacia «Savsá» y «Seraya», núm. 2; 1Cr 18:16.
+sources:
+- it-savsa
+- it-seraya
+- 1-cronicas-18
+links:
+- title: 'Perspicacia: «Savsá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Savs%C3%A1/
+  type: perspicacia
+- title: 'Perspicacia: «Seraya»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Seraya/
+  type: perspicacia
+- title: 1 Crónicas 18 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/1-Cr%C3%B3nicas/18/
+  type: bible
+relations:
+- type: tie
+  person: david
+  word: master
+  sources:
+  - 1-cronicas-18
+  - it-savsa
+  reason: '1Cr 18:16: Savsá era el secretario de David.'
+  inferred: false
+  checked_on: '2026-10-12'
+  status: verified
+- type: same_as
+  person: seraya-secretario-de-david
+  certainty: probable
+  inferred: true
+  sources:
+  - 1-cronicas-18
+  - it-savsa
+  - it-seraya
+  reason: 1Cr 18:16 llama Savsá al secretario de David. Perspicacia «Seraya», núm. 2, lo da por el mismo Seraya salvo muchos
+    cambios en el cargo; «Savsá» remite allí.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

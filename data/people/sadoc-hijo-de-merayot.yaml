@@ -1,0 +1,57 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: sadoc-hijo-de-merayot
+name: Sadoc
+names:
+- name: Sadoc
+perspicacia: 1200004652#3
+disambiguation: Sadoc nieto de Ahitub y padre de Salum (1Cr 6:12); no es el Sadoc de David ni los otros Sadoc que numera Perspicacia
+  «Sadoc».
+distinct_from:
+- sadoc-abuelo-de-jotan
+- sadoc-hijo-de-ahitub
+- sadoc-hijo-de-azor
+summary: Sacerdote de la línea de los sumos sacerdotes, descendiente del Sadoc de David y padre de Salum; antepasado del copista
+  Esdras. 1Cr 6:12 lo da como hijo de Ahitub, su abuelo según Perspicacia.
+reason: Perspicacia «Sadoc», núm. 3, y «Ahitub», núm. 3; 1Cr 6:12.
+sources:
+- it-sadoc
+- it-ahitub
+- 1-cronicas-6
+- 1-cronicas-9
+links:
+- title: 'Perspicacia: «Sadoc»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sadoc/
+  type: perspicacia
+relations:
+- type: kin
+  person: ahitub-padre-de-merayot
+  word: grandfather
+  inferred: true
+  sources:
+  - 1-cronicas-6
+  - it-ahitub
+  reason: 1Cr 6:12 lo da como hijo de Ahitub; Perspicacia «Ahitub», núm. 3, deduce de 1Cr 9:11 que entre ellos estaba Merayot.
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: merayot-hijo-de-ahitub
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-9
+  - it-ahitub
+  reason: '1Cr 9:11: Sadoc, hijo de Merayot. Perspicacia «Ahitub», núm. 3, deduce de ahí que Merayot era su padre.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: holds_office
+  office: priest
+  inferred: true
+  sources:
+  - 1-cronicas-9
+  - it-sadoc
+  reason: Perspicacia «Sadoc», núm. 3, lo pone en la línea de los sumos sacerdotes; 1Cr 9:11 lo nombra entre los antepasados
+    del sacerdote Azarías.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

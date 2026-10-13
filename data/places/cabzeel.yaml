@@ -20,6 +20,7 @@ sources:
 - openbible-geo
 - josue-15
 - 2-samuel-23
+- 1-cronicas-11
 links:
 - title: 'Perspicacia: «Qabzeel»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Qabzeel/
@@ -29,5 +30,5 @@ history:
   change: 2Sa 23:20 en la TNM dice que Benaya hizo sus hazañas en Cabzeel; Perspicacia «Qabzeel» recoge esa lectura entre
     las posibles. El resumen decía solo que pudo ser su tierra.
   source: 2-samuel-23
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

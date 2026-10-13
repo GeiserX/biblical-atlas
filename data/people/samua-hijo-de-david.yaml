@@ -11,11 +11,16 @@ disambiguation: Samúa hijo de David y Bat-Seba (núm. 2 de Perspicacia); no el 
 distinct_from:
 - samua-hijo-de-zacur
 - sama-hijo-de-jese
+- simea-hijo-de-miguel
+- simea-hijo-de-uza
+- simea-hijo-de-miclot
 summary: Hijo de David y de Bat-Seba nacido en Jerusalén, hermano de Salomón. Abre la lista de los hijos que David tuvo allí.
 reason: 'Perspicacia «Samúa», núm. 2; 2Sa 5:13, 14. En Crónicas: 1Cr 3:5 y 14:4.'
 sources:
 - it-samua
 - 2-samuel-5
+- 1-cronicas-3
+- 1-cronicas-14
 links:
 - title: 'Perspicacia: «Samúa»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sam%C3%BAa/
@@ -27,26 +32,35 @@ relations:
   inferred: false
   sources:
   - 2-samuel-5
+  - 1-cronicas-3
+  - 1-cronicas-14
   reason: '2Sa 5:13, 14: uno de los hijos que David tuvo en Jerusalén.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: born_in
   place: jerusalen
   inferred: false
   sources:
   - 2-samuel-5
+  - 1-cronicas-3
+  - 1-cronicas-14
   reason: '2Sa 5:13-16: nació en Jerusalén, después de que David dejara Hebrón.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: kin
   person: bat-seba
   word: mother
-  inferred: true
+  inferred: false
   sources:
   - it-samua
+  - 1-cronicas-3
   reason: 1Cr 3:5 da a Bat-Seba como madre de Simeá, Sobab, Natán y Salomón. Perspicacia «Samúa», núm. 2, dice que Simeá es
     él.
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-09-29'
+history:
+- date: '2026-10-12'
+  change: La madre Bat-Seba estaba como deducida y sin el capítulo; 1Cr 3:5 lo dice. Se añade 1 Crónicas 3 a sus tres relaciones.
+  source: 1-cronicas-3
+checked_on: '2026-10-12'
 status: verified

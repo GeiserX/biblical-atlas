@@ -1,0 +1,45 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: zerah-hijo-de-adaya
+name: Zérah
+names:
+- name: Zérah
+perspicacia: null
+disambiguation: Zérah hijo de Adaya (1Cr 6:41), quizá el hijo de Idó; no es ninguno de los otros Zérah que numera Perspicacia
+  «Zérah».
+distinct_from:
+- zerah-de-bozra
+- zerah-hijo-de-juda
+- zerah-hijo-de-reuel
+- zohar-hijo-de-simeon
+summary: Levita guersonita de la línea de Asaf, hijo de Adaya y padre de Etní. Perspicacia ve posible que sea Zérah, el hijo
+  de Idó.
+reason: Perspicacia «Zérah», núm. 5; 1Cr 6:41.
+sources:
+- it-zerah
+- 1-cronicas-6
+links:
+- title: 'Perspicacia: «Zérah»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Z%C3%A9rah/
+  type: perspicacia
+relations:
+- type: same_as
+  person: zerah-hijo-de-ido
+  certainty: possible
+  inferred: true
+  sources:
+  - 1-cronicas-6
+  - it-zerah
+  reason: 'Perspicacia «Zérah», núm. 5: es posible que el Zérah de 1Cr 6:41 sea el de 6:21.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: adaya-hijo-de-etan
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-6
+  reason: '1Cr 6:41: Zérah, «hijo de Adaya».'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

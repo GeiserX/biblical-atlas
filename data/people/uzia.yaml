@@ -1,0 +1,41 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: uzia
+name: Uzía
+names:
+- name: Uzía
+perspicacia: '1200004534'
+summary: Asteratita, uno de los guerreros poderosos de David; probablemente era de Astarot, al este del Jordán.
+reason: Perspicacia «Uzía» y «Asteratita»; 1Cr 11:44.
+sources:
+- it-uzia
+- it-asteratita
+- 1-cronicas-11
+links:
+- title: 'Perspicacia: «Uzía»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Uz%C3%ADa/
+  type: perspicacia
+- title: 'Perspicacia: «Asteratita»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Asteratita/
+  type: perspicacia
+relations:
+- type: lived_in
+  place: astarot
+  inferred: true
+  sources:
+  - 1-cronicas-11
+  - it-uzia
+  - it-asteratita
+  reason: '1Cr 11:44 lo llama asteratita; Perspicacia «Uzía» y «Asteratita»: probablemente de Astarot.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: tie
+  person: david
+  word: master
+  inferred: false
+  sources:
+  - 1-cronicas-11
+  reason: '1Cr 11:44: figura entre los valientes de David.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

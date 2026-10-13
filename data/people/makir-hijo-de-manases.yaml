@@ -16,6 +16,8 @@ sources:
 - deuteronomio-3
 - josue-13
 - josue-17
+- 1-cronicas-2
+- 1-cronicas-7
 links:
 - title: 'Perspicacia: «Makir»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Makir/
@@ -35,10 +37,21 @@ relations:
   - numeros-32
   - josue-13
   - josue-17
+  - 1-cronicas-7
   reason: Gé 50:23 lo llama hijo de Manasés.
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-09-29'
+- type: kin
+  person: maaca-esposa-de-makir
+  word: wife
+  inferred: false
+  sources:
+  - 1-cronicas-7
+  - it-maaca
+  reason: '1Cr 7:16: Maacá era la esposa de Makir; Perspicacia «Maacá», núm. 2.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
 status: verified
 distinct_from:
 - makir-hijo-de-amiel

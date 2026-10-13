@@ -1,0 +1,33 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: efrata
+name: Efrata
+names:
+- name: Efrata
+- name: Efrat
+  note: Así la llama 1Cr 2:19; Perspicacia «Efrat» lo da por forma breve de Efrata.
+perspicacia: 1200001406#1
+summary: Esposa de Caleb hijo de Hezrón, con quien se casó en Egipto cuando murió Azubá. Por su hijo Hur, Bezalel era bisnieto
+  suyo.
+reason: Perspicacia «Efrata», núm. 1, y «Efrat»; 1Cr 2:19, 50.
+sources:
+- it-efrata
+- 1-cronicas-2
+- it-efrat
+- 1-cronicas-4
+links:
+- title: 'Perspicacia: «Efrata»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Efrata/
+  type: perspicacia
+relations:
+- type: lived_in
+  place: egipto
+  inferred: true
+  sources:
+  - 1-cronicas-2
+  - it-efrata
+  reason: '1Cr 2:19; Perspicacia «Efrata», núm. 1: se casó con Caleb cuando aún estaban en Egipto.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+disambiguation: Efrata, la esposa de Caleb; no la ciudad de Belén, que también se llamó Efrata.

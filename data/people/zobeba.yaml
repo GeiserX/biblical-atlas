@@ -1,0 +1,28 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: zobeba
+name: Zobebá
+names:
+- name: Zobebá
+perspicacia: '1200004757'
+summary: Judaíta, descendiente de Coz.
+reason: Perspicacia «Zobebá»; 1Cr 4:8.
+sources:
+- it-zobeba
+- 1-cronicas-4
+links:
+- title: 'Perspicacia: «Zobebá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zobeb%C3%A1/
+  type: perspicacia
+relations:
+- type: kin
+  person: coz
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-4
+  - it-qoz
+  reason: '1Cr 4:8: Coz fue padre de Zobebá.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

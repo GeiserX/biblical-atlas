@@ -1,0 +1,32 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: er-hijo-de-sela
+name: Er
+names:
+- name: Er
+perspicacia: 1200001411#2
+disambiguation: Er hijo de Selá (núm. 2 de Perspicacia); no su tío Er, primogénito de Judá, ni el Er de la genealogía de Lucas.
+summary: Hijo de Selá, el tercer hijo de Judá, y padre de Lecá.
+reason: Perspicacia «Er»; 1Cr 4:21.
+sources:
+- it-er
+- 1-cronicas-4
+links:
+- title: 'Perspicacia: «Er»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Er/
+  type: perspicacia
+relations:
+- type: kin
+  person: sela-hijo-de-juda
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-4
+  - it-er
+  reason: '1Cr 4:21: uno de los hijos de Selá hijo de Judá.'
+  checked_on: '2026-10-12'
+  status: verified
+distinct_from:
+- er-hijo-de-juda
+- er-hijo-de-jesus
+checked_on: '2026-10-12'
+status: verified

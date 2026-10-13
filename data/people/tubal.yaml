@@ -11,6 +11,7 @@ reason: Perspicacia «Tubal», núm. 1 y 2; Gé 10:2.
 sources:
 - it-tubal
 - genesis-10
+- 1-cronicas-1
 links:
 - title: 'Perspicacia: «Tubal»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Tubal/
@@ -25,8 +26,9 @@ relations:
   inferred: false
   sources:
   - genesis-10
+  - 1-cronicas-1
   reason: Gé 10:2 lo nombra entre los hijos de Jafet.
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

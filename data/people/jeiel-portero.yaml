@@ -1,0 +1,26 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jeiel-portero
+name: Jeiel
+names:
+- name: Jeiel
+perspicacia: 1200002406#4
+disambiguation: El portero y músico de 1Cr 15:18, 21; no Jaaziel, al que 1Cr 16:5 también llama Jeiel (Perspicacia «Jeiel»,
+  núm. 5).
+distinct_from:
+- jaaziel
+- jeiel-de-gabaon
+- jeiel-el-rubenita
+- jeiel-hijo-de-hotam
+summary: Levita portero y músico. Tocó el arpa en el traslado del Arca a Jerusalén y después siguió tocando delante de la
+  tienda donde la pusieron.
+reason: Perspicacia «Jeiel», núm. 4; 1Cr 15:18, 21; 16:5, donde es el segundo Jeiel.
+sources:
+- it-jeiel
+- 1-cronicas-15
+- 1-cronicas-16
+links:
+- title: 'Perspicacia: «Jeiel»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jeiel/
+  type: perspicacia
+checked_on: '2026-10-12'
+status: verified

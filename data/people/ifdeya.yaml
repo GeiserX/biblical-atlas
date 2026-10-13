@@ -1,0 +1,35 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ifdeya
+name: Ifdeyá
+names:
+- name: Ifdeyá
+perspicacia: '1200002189'
+summary: Benjamita, hijo de Sasac y jefe de su tribu.
+reason: Perspicacia «Ifdeyá»; 1Cr 8:25, 28.
+sources:
+- it-ifdeya
+- 1-cronicas-8
+links:
+- title: 'Perspicacia: «Ifdeyá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ifdey%C3%A1/
+  type: perspicacia
+relations:
+- type: kin
+  person: sasac
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  reason: 1Cr 8:25 lo cuenta entre los hijos de Sasac.
+  checked_on: '2026-10-12'
+  status: verified
+- type: lived_in
+  place: jerusalen
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  reason: '1Cr 8:28: los jefes de casas paternas de esta lista vivían en Jerusalén.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

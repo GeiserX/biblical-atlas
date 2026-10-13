@@ -1,0 +1,42 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: simei-hijo-de-libni
+name: Simeí
+names:
+- name: Simeí
+perspicacia: 1200004047#3
+disambiguation: Simeí hijo de Libní (1Cr 6:29); no es ninguno de los otros Simeí que numera Perspicacia «Simeí».
+distinct_from:
+- sama-hijo-de-jese
+- simei-descendiente-de-ladan
+- simei-el-ramatita
+- simei-hijo-de-ela
+- simei-hijo-de-gog
+- simei-hijo-de-guera
+- simei-hijo-de-guerson
+- simei-hijo-de-jahat
+- simei-hijo-de-jedutun
+- simei-hijo-de-pedaya
+- simei-hijo-de-zacur
+- simei-padre-de-jaquim
+- simei-partidario-de-david
+summary: Levita merarita, hijo de Libní y padre de Uzá.
+reason: Perspicacia «Simeí», núm. 3; 1Cr 6:29.
+sources:
+- it-simei
+- 1-cronicas-6
+links:
+- title: 'Perspicacia: «Simeí»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sime%C3%AD/
+  type: perspicacia
+relations:
+- type: kin
+  person: libni-hijo-de-mahli
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-6
+  reason: '1Cr 6:29, 30: «su hijo Simeí», tras Libní.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

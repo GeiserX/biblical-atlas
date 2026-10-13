@@ -1,0 +1,31 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: tahat-hijo-de-asir
+name: Táhat
+names:
+- name: Táhat
+perspicacia: 1200004303#3
+disambiguation: Táhat hijo de Asir (1Cr 6:24, 37); no es ninguno de los otros Táhat que numera Perspicacia «Táhat».
+distinct_from:
+- tahat-hijo-de-bered
+- tahat-hijo-de-eleada
+summary: Levita cohatita, hijo de Asir y antepasado de Samuel y de Hemán. Fue padre de Uriel y de Sofonías.
+reason: Perspicacia «Táhat», núm. 3; 1Cr 6:24, 37.
+sources:
+- it-tahat
+- 1-cronicas-6
+links:
+- title: 'Perspicacia: «Táhat»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/T%C3%A1hat/
+  type: perspicacia
+relations:
+- type: kin
+  person: asir-hijo-de-ebiasaf
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-6
+  reason: 1Cr 6:24, 37 lo da como hijo de Asir.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

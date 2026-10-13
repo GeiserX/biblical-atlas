@@ -17,9 +17,10 @@ sources:
 - it-bet-zur
 - openbible-geo
 - josue-15
+- 1-cronicas-2
 links:
 - title: 'Perspicacia: «Bet-zur»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Bet-zur/
   type: perspicacia
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

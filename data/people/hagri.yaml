@@ -1,0 +1,18 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hagri
+name: Hagrí
+names:
+- name: Hagrí
+perspicacia: '1200001818'
+summary: Padre de Mibhar, uno de los guerreros poderosos de David.
+reason: Perspicacia «Hagrí»; 1Cr 11:38.
+sources:
+- it-hagri
+- 1-cronicas-11
+links:
+- title: 'Perspicacia: «Hagrí»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hagr%C3%AD/
+  type: perspicacia
+relations: []
+checked_on: '2026-10-12'
+status: verified

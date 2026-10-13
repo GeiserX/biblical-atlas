@@ -12,6 +12,7 @@ sources:
 - exodo-31
 - exodo-35
 - exodo-38
+- 1-cronicas-2
 links:
 - title: 'Perspicacia: «Urí»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ur%C3%AD/
@@ -29,10 +30,11 @@ relations:
   - it-uri
   - exodo-35
   - exodo-38
+  - 1-cronicas-2
   reason: Éx 31:2 da a Urí como hijo de Hur.
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-09-30'
+checked_on: '2026-10-12'
 status: verified
 distinct_from:
 - uri-padre-de-gueber

@@ -1,0 +1,37 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hupa
+name: Hupá
+names:
+- name: Hupá
+perspicacia: '1200002106'
+summary: Sacerdote al frente del decimotercer turno de los 24 que organizó David.
+reason: Perspicacia «Hupá»; 1Cr 24:13.
+sources:
+- it-hupa
+- 1-cronicas-24
+links:
+- title: 'Perspicacia: «Hupá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hup%C3%A1/
+  type: perspicacia
+relations:
+- type: kin
+  person: aaron
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-24
+  - it-hupa
+  reason: 1Cr 24:1 abre la lista de los descendientes de Aarón repartidos en turnos, y 24:13 da a esta casa el decimotercero.
+  checked_on: '2026-10-12'
+  status: verified
+- type: holds_office
+  office: priest
+  inferred: false
+  sources:
+  - 1-cronicas-24
+  - it-hupa
+  reason: '1Cr 24:13: encabeza una de las casas sacerdotales de 24:4-6; Perspicacia «Hupá» lo trata como sacerdote.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

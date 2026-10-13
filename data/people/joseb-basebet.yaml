@@ -14,6 +14,8 @@ sources:
 - it-jasobeam
 - it-tahkemonita
 - 2-samuel-23
+- 1-cronicas-11
+- 1-cronicas-27
 links:
 - title: 'Perspicacia: «Joseb-basébet»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Joseb-bas%C3%A9bet/
@@ -28,8 +30,21 @@ relations:
   inferred: false
   sources:
   - 2-samuel-23
+  - 1-cronicas-11
+  - 1-cronicas-27
   reason: '2Sa 23:8: encabeza la lista de los guerreros poderosos de David.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-09-29'
+- type: kin
+  person: zabdiel-padre-de-jasobeam
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-27
+  - it-jasobeam
+  - it-zabdiel
+  reason: '1Cr 27:2: Jasobeam hijo de Zabdiel; Perspicacia «Jasobeam», núm. 2, y «Zabdiel», núm. 1.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
 status: verified

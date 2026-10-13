@@ -12,6 +12,8 @@ distinct_from:
 - jonatan-hijo-de-abiatar
 - jonatan-hijo-de-sague
 - jonatan-hijo-de-carea
+- jonatan-hijo-de-jada
+- jonatan-hijo-de-uzias
 summary: Sobrino de David, hijo de su hermano Simeí, llamado también Samá y Simeá. En una guerra en Gat mató a un gigante
   de los refaím con veinticuatro dedos que no dejaba de retar a Israel.
 reason: Perspicacia «Jonatán», núm. 4; 2Sa 21:20-22.
@@ -19,6 +21,7 @@ sources:
 - it-jonatan
 - it-samah
 - 2-samuel-21
+- 1-cronicas-20
 links:
 - title: 'Perspicacia: «Jonatán»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jonat%C3%A1n/
@@ -31,8 +34,9 @@ relations:
   sources:
   - 2-samuel-21
   - it-jonatan
+  - 1-cronicas-20
   reason: '2Sa 21:21: Jonatán hijo de Simeí, el hermano de David.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: kin
   person: david
@@ -41,8 +45,9 @@ relations:
   sources:
   - 2-samuel-21
   - it-jonatan
+  - 1-cronicas-20
   reason: 2Sa 21:21 hace a su padre hermano de David; Perspicacia «Jonatán», núm. 4, lo llama sobrino del rey.
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: tie
   person: david
@@ -51,8 +56,20 @@ relations:
   sources:
   - 2-samuel-21
   - it-jonatan
+  - 1-cronicas-20
   reason: '2Sa 21:22: los gigantes cayeron a manos de David y de sus siervos, entre ellos Jonatán.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
+  status: verified
+- type: same_as
+  person: jonatan-sobrino-de-david
+  certainty: probable
+  inferred: true
+  sources:
+  - it-jonatan
+  - 1-cronicas-27
+  reason: 'Perspicacia «Jonatán», núm. 7: si el consejero de 1Cr 27:32 era sobrino de David, como parece probable, sería este
+    mismo Jonatán.'
+  checked_on: '2026-10-12'
   status: verified
 checked_on: '2026-10-12'
 status: verified

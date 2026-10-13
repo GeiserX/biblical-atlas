@@ -1,0 +1,38 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: petahias-de-tiempos-de-david
+name: Petahías
+names:
+- name: Petahías
+perspicacia: 1200003453#1
+summary: Sacerdote cuya casa paterna, que Perspicacia trata como tal, recibió el decimonoveno de los 24 turnos que organizó
+  David.
+reason: Perspicacia «Petahías», núm. 1; 1Cr 24:16.
+sources:
+- it-petahias
+- 1-cronicas-24
+links:
+- title: 'Perspicacia: «Petahías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Petah%C3%ADas/
+  type: perspicacia
+relations:
+- type: kin
+  person: aaron
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-24
+  - it-petahias
+  reason: 1Cr 24:1 abre la lista de los descendientes de Aarón repartidos en turnos, y 24:16 da a esta casa el decimonoveno.
+  checked_on: '2026-10-12'
+  status: verified
+- type: holds_office
+  office: priest
+  inferred: false
+  sources:
+  - 1-cronicas-24
+  - it-petahias
+  reason: '1Cr 24:16: encabeza una de las casas sacerdotales de 24:4-6; Perspicacia «Petahías» lo trata como sacerdote.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

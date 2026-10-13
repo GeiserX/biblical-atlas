@@ -1,0 +1,32 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: atai-el-gadita
+name: Atái
+names:
+- name: Atái
+- name: Atai
+perspicacia: 1200000465#2
+summary: Gadita, el sexto de los once guerreros de Gad que cruzaron el Jordán crecido para unirse a David en el desierto,
+  cuando Saúl lo perseguía.
+reason: Perspicacia «Atai», núm. 2; 1Cr 12:8-15.
+sources:
+- it-atai
+- 1-cronicas-12
+links:
+- title: 'Perspicacia: «Atai»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Atai/
+  type: perspicacia
+disambiguation: Atái el gadita, sexto de los once (1Cr 12:11); no el nieto de Sesán ni el hijo de Rehoboam.
+relations:
+- type: tie
+  person: david
+  word: master
+  inferred: false
+  sources:
+  - 1-cronicas-12
+  reason: '1Cr 12:8, 11, 14: gadita que se pasó a David y llegó a ser jefe de su ejército.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- atai-hijo-de-jarha

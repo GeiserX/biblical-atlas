@@ -1,0 +1,114 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: david-prepara-a-sacerdotes-y-levitas-para-subir-el-arca
+title: David prepara a sacerdotes y levitas para subir el Arca
+date:
+  from: -1069
+  to: -1069
+  precision: year
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'c. 1070 a.e.c. (tiempo narrativo: poco antes de que el Arca llegara a Jerusalén)'
+narrative_order:
+  series: 1-cronicas
+  order: 15001
+  after: muerte-de-uza
+places:
+- jerusalen
+people:
+- david
+- sadoc-hijo-de-ahitub
+- abiatar
+- uriel-jefe-de-los-cohatitas
+- asaya-hijo-de-haguias
+- joel-hijo-de-jehiel
+- semaya-jefe-de-la-casa-de-elizafan
+- eliel-jefe-de-los-hebronitas
+- aminadab-jefe-de-los-uzielitas
+- heman-hijo-de-joel
+- asaf-hijo-de-berekias
+- etan-hijo-de-quisi
+- zacarias-musico
+- ben
+- jaaziel
+- semiramot-musico
+- jehiel-musico
+- uni-musico
+- eliab-musico
+- benaya-musico
+- maaseya-musico
+- matitias-musico
+- elifelehu
+- micneya
+- obed-edom-musico
+- jeiel-portero
+- azazias-musico
+- kenanias-jefe-del-transporte
+- berekias-portero
+- elcana-portero
+- sebanias-trompetista
+- josafat-trompetista
+- netanel-trompetista
+- amasai-trompetista
+- zacarias-trompetista
+- benaya-trompetista
+- eliezer-trompetista
+- obed-edom-portero
+- jehias
+present:
+- david
+- sadoc-hijo-de-ahitub
+- abiatar
+- uriel-jefe-de-los-cohatitas
+- asaya-hijo-de-haguias
+- joel-hijo-de-jehiel
+- semaya-jefe-de-la-casa-de-elizafan
+- eliel-jefe-de-los-hebronitas
+- aminadab-jefe-de-los-uzielitas
+- heman-hijo-de-joel
+- asaf-hijo-de-berekias
+- etan-hijo-de-quisi
+- zacarias-musico
+- ben
+- jaaziel
+- semiramot-musico
+- jehiel-musico
+- uni-musico
+- eliab-musico
+- benaya-musico
+- maaseya-musico
+- matitias-musico
+- elifelehu
+- micneya
+- obed-edom-musico
+- jeiel-portero
+- azazias-musico
+- kenanias-jefe-del-transporte
+- berekias-portero
+- elcana-portero
+- sebanias-trompetista
+- josafat-trompetista
+- netanel-trompetista
+- amasai-trompetista
+- zacarias-trompetista
+- benaya-trompetista
+- eliezer-trompetista
+- obed-edom-portero
+- jehias
+passages:
+- 1Cr 15:1-24
+summary: David monta una tienda para el Arca, reúne a Israel en Jerusalén y decide que solo la lleven los levitas. Sacerdotes
+  y jefes se santifican, y se asignan cantores, músicos, porteros y trompetistas.
+reason: 1Cr 15:1-24, entre la muerte de Uzá y la llegada del Arca unos tres meses después, tras preparativos cuidadosos (Perspicacia
+  «David»); el estudio 3 pone la llegada después de 1070.
+sources:
+- 1-cronicas-15
+- it-david
+- it-arca-del-pacto
+- si-3
+links:
+- title: 1 Crónicas 15 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/1-Cr%C3%B3nicas/15/
+  type: bible
+checked_on: '2026-10-12'
+status: verified

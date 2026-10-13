@@ -10,6 +10,7 @@ reason: Perspicacia «Javán», párr. 1, 2 y 6; Gé 10:2, 4, 5.
 sources:
 - it-javan
 - genesis-10
+- 1-cronicas-1
 links:
 - title: 'Perspicacia: «Javán»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jav%C3%A1n/
@@ -24,8 +25,9 @@ relations:
   inferred: false
   sources:
   - genesis-10
+  - 1-cronicas-1
   reason: Gé 10:2 lo nombra entre los hijos de Jafet.
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

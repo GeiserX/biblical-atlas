@@ -1,0 +1,30 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hebron-hijo-de-maresa
+name: Hebrón
+names:
+- name: Hebrón
+perspicacia: 1200001956#2
+summary: Judaíta de la rama de Caleb. Su padre fue Maresá y sus hijos, Coré, Tapúah, Réquem y Sema.
+reason: Perspicacia «Hebrón», núm. 2; 1Cr 2:42, 43.
+sources:
+- it-hebron
+- 1-cronicas-2
+links:
+- title: 'Perspicacia: «Hebrón»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hebr%C3%B3n/
+  type: perspicacia
+relations:
+- type: kin
+  person: maresa-padre-de-hebron
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-2
+  reason: '1Cr 2:42: Maresá, el padre de Hebrón.'
+  checked_on: '2026-10-12'
+  status: verified
+disambiguation: Hebrón hijo de Maresá, de Judá; no Hebrón hijo de Cohat, el levita, ni la ciudad de Hebrón.
+distinct_from:
+- hebron-hijo-de-cohat
+checked_on: '2026-10-12'
+status: verified

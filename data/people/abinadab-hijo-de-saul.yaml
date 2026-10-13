@@ -16,6 +16,9 @@ reason: Perspicacia «Abinadab», núm. 3; 1Sa 31:2, 8-13.
 sources:
 - it-abinadab
 - 1-samuel-31
+- 1-cronicas-8
+- 1-cronicas-9
+- 1-cronicas-10
 links:
 - title: 'Perspicacia: «Abinadab»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Abinadab/
@@ -31,8 +34,11 @@ relations:
   sources:
   - 1-samuel-31
   - it-abinadab
+  - 1-cronicas-8
+  - 1-cronicas-9
+  - 1-cronicas-10
   reason: 1Sa 31:2 lo nombra entre los hijos de Saúl que mataron los filisteos.
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: died_in
   place: monte-guilboa
@@ -41,9 +47,10 @@ relations:
   - 1-samuel-31
   - it-guilboa
   - it-jonatan
+  - 1-cronicas-10
   reason: '1Sa 31:1, 2, 8: los filisteos lo mataron en el monte Guilboa, en la batalla de 1078 (Perspicacia «Jonatán», núm.
     2).'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-09-30'
+checked_on: '2026-10-12'
 status: verified

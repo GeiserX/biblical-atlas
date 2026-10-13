@@ -15,6 +15,7 @@ sources:
 - genesis-49
 - exodo-1
 - jueces-18
+- 1-cronicas-2
 links:
 - title: 'Perspicacia: «Dan»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Dan/
@@ -34,8 +35,9 @@ relations:
   - genesis-46
   - genesis-49
   - jueces-18
+  - 1-cronicas-2
   reason: 'Perspicacia «Dan», párr. 2: quinto hijo de Jacob, que tuvo con Bilhá (Gé 30:5, 6).'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: born_in
   place: haran
@@ -90,5 +92,5 @@ history:
 - date: '2026-09-29'
   change: La razón de dónde nació cita Gé 30:6, donde nace, en lugar de Gé 29:4 y 31:41, que no lo nombran.
   source: genesis-30
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

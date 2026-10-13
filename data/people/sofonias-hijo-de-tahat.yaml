@@ -1,0 +1,32 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: sofonias-hijo-de-tahat
+name: Sofonías
+names:
+- name: Sofonías
+perspicacia: 1200004696#1
+disambiguation: Sofonías hijo de Táhat (1Cr 6:36, 37); no es ninguno de los otros Sofonías que numera Perspicacia «Sofonías».
+distinct_from:
+- sofonias-hijo-de-maaseya
+- sofonias-padre-de-josias
+- sofonias-profeta
+summary: Levita cohatita, hijo de Táhat, en la línea que va de Cohat a Samuel y a Hemán.
+reason: Perspicacia «Sofonías», núm. 1; 1Cr 6:36, 37.
+sources:
+- it-sofonias
+- 1-cronicas-6
+links:
+- title: 'Perspicacia: «Sofonías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sofon%C3%ADas/
+  type: perspicacia
+relations:
+- type: kin
+  person: tahat-hijo-de-asir
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-6
+  reason: '1Cr 6:36, 37: Sofonías, «hijo de Táhat».'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

@@ -1,0 +1,28 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: peuletai
+name: Peuletái
+names:
+- name: Peuletái
+perspicacia: '1200003456'
+summary: Octavo hijo de Obed-Edom, contado entre los porteros. Perspicacia escribe su nombre Peuletai.
+reason: Perspicacia «Peuletai»; 1Cr 26:5.
+sources:
+- it-peuletai
+- 1-cronicas-26
+links:
+- title: 'Perspicacia: «Peuletai»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Peuletai/
+  type: perspicacia
+relations:
+- type: kin
+  person: obed-edom-coreita
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-26
+  - it-peuletai
+  reason: '1Cr 26:5: el octavo de los hijos de Obed-Edom.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

@@ -1,0 +1,26 @@
+# biblical-atlas: un fichero por lugar. Esquema en docs/investigacion/README.md.
+name: Aner
+names:
+- name: Aner
+type: city
+lat: 32.521526
+lon: 35.219122
+precision: uncertain
+coord_source: openbible:a2a145b
+coord_url: https://www.openbible.info/geo/ancient/a2a145b/aner
+coord_note: Tell Taanakh, punto de la única identificación de OpenBible, que la hace otro nombre de Taanac; Perspicacia solo
+  dice que algunos opinan eso. Comparte punto con taanac.
+summary: Ciudad de la media tribu de Manasés al oeste del Jordán que se dio a familias cohatitas. Algunos creen que es la
+  Taanac de Josué 21:25.
+reason: 'Perspicacia «Aner», núm. 2; 1Cr 6:70. Coordenada de OpenBible: solo tomamos el punto.'
+sources:
+- it-aner
+- openbible-geo
+- 1-cronicas-6
+links:
+- title: 'Perspicacia: «Aner»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Aner/
+  type: perspicacia
+id: aner
+checked_on: '2026-10-12'
+status: verified

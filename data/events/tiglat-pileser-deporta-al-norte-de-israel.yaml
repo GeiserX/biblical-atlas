@@ -25,6 +25,7 @@ places:
 people:
 - tiglat-pileser-iii
 - pecah
+- beera-hijo-de-baal
 present: []
 passages:
 - 2Re 15:29
@@ -42,6 +43,8 @@ sources:
 - it-galaad
 - it-neftali
 - tnm-a6-b
+- 1-cronicas-5
+- it-beerah
 links:
 - title: 2 Reyes 15 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-reyes/15/
@@ -49,5 +52,5 @@ links:
 - title: 'Perspicacia: «Tiglat-piléser III»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Tiglat-pil%C3%A9ser-III/
   type: perspicacia
-checked_on: '2026-09-30'
+checked_on: '2026-10-12'
 status: verified

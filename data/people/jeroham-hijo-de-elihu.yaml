@@ -10,6 +10,7 @@ reason: Perspicacia «Jeroham», núm. 1; 1Sa 1:1.
 sources:
 - it-jeroham
 - 1-samuel-1
+- 1-cronicas-6
 links:
 - title: 'Perspicacia: «Jeroham»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jeroham/
@@ -21,8 +22,15 @@ relations:
   inferred: false
   sources:
   - 1-samuel-1
+  - 1-cronicas-6
   reason: '1Sa 1:1: Jeroham era hijo de Elihú.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified
+distinct_from:
+- jeroham-padre-de-samserai
+- jeroham-hijo-de-pasjur
+- jeroham-padre-de-ibneya
+- jeroham-de-guedor
+- jeroham-padre-de-azarel

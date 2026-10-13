@@ -1,0 +1,44 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: berekias-hijo-de-simea
+name: Berekías
+names:
+- name: Berekías
+perspicacia: 1200000650#1
+disambiguation: Berekías hijo de Simeá (1Cr 6:39); no es ninguno de los otros Berekías que numera Perspicacia «Berekías».
+distinct_from:
+- berekias-hijo-de-asa
+- berekias-hijo-de-ido
+- berekias-hijo-de-zorobabel
+summary: Levita guersonita, hijo de Simeá y padre de Asaf, uno de los directores de los cantores de David. De él salieron
+  muchas generaciones de cantores del templo.
+reason: Perspicacia «Berekías», núm. 1; 1Cr 6:39; 15:17.
+sources:
+- it-berekias
+- 1-cronicas-6
+- 1-cronicas-15
+links:
+- title: 'Perspicacia: «Berekías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Berek%C3%ADas/
+  type: perspicacia
+relations:
+- type: kin
+  person: simea-hijo-de-miguel
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-6
+  reason: '1Cr 6:39: Berekías, «hijo de Simeá».'
+  checked_on: '2026-10-12'
+  status: verified
+- type: same_as
+  person: berekias-portero
+  certainty: possible
+  inferred: true
+  sources:
+  - it-berekias
+  - 1-cronicas-15
+  reason: Perspicacia «Berekías», núm. 1 y 2, ve posible que el padre de Asaf (1Cr 15:17) sea el portero del Arca de 1Cr 15:23.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

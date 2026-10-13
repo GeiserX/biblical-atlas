@@ -12,6 +12,14 @@ distinct_from:
 - zacarias-hijo-de-jehoiada
 - zacarias-padre-de-juan
 - zacarias-abuelo-de-ezequias
+- zacarias-el-rubenita
+- zacarias-hijo-de-meselemias
+- zeker
+- zacarias-musico
+- zacarias-trompetista
+- zacarias-descendiente-de-isias
+- zacarias-hijo-de-hosa
+- zacarias-padre-de-ido
 summary: Hijo de Jeberekías. Isaías lo tomó, con el sacerdote Urías, como testigo fiel de que escribía en una tablilla grande
   el nombre de Maher-Salal-Has-Baz.
 reason: Perspicacia «Zacarías», núm. 15, y «Jeberekías»; Is 8:1, 2.
@@ -37,5 +45,5 @@ relations:
   reason: Is 8:2 lo llama Zacarías hijo de Jeberekías.
   checked_on: '2026-09-30'
   status: verified
-checked_on: '2026-09-30'
+checked_on: '2026-10-12'
 status: verified

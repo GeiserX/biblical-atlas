@@ -1,0 +1,30 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jefune-hijo-de-jeter
+name: Jefuné
+names:
+- name: Jefuné
+perspicacia: 1200002414#2
+disambiguation: Jefuné hijo de Jéter, aserita; no Jefuné el quenizita, padre del espía Caleb.
+distinct_from:
+- jefune-padre-de-caleb
+summary: Aserita prominente, hijo de Jéter.
+reason: Perspicacia «Jefuné», núm. 2; 1Cr 7:38, 40.
+sources:
+- it-jefune
+- 1-cronicas-7
+links:
+- title: 'Perspicacia: «Jefuné»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jefun%C3%A9/
+  type: perspicacia
+relations:
+- type: kin
+  person: jeter-de-aser
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-7
+  reason: 1Cr 7:38 lo cuenta entre los hijos de Jéter.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

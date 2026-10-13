@@ -1,0 +1,31 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: eliasib-hijo-de-elioenai
+name: Eliasib
+names:
+- name: Eliasib
+perspicacia: 1200001298#7
+summary: Hijo de Elioenái y descendiente del rey David.
+reason: Perspicacia «Eliasib»; 1Cr 3:24.
+sources:
+- it-eliasib
+- 1-cronicas-3
+links:
+- title: 'Perspicacia: «Eliasib»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Eliasib/
+  type: perspicacia
+relations:
+- type: kin
+  person: elioenai-hijo-de-nearias
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-3
+  - it-eliasib
+  reason: '1Cr 3:24: uno de los siete hijos de Elioenái.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+disambiguation: Eliasib, hijo de Elioenái y descendiente de David; no el sacerdote que dio nombre a un turno en días de David.
+distinct_from:
+- eliasib-de-tiempos-de-david

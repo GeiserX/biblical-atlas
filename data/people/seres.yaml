@@ -1,0 +1,38 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: seres
+name: Seres
+names:
+- name: Seres
+perspicacia: '1200004021'
+summary: Manasita, hermano de Peres; sus padres fueron Makir y Maacá.
+reason: Perspicacia «Seres»; 1Cr 7:14, 16.
+sources:
+- it-seres
+- 1-cronicas-7
+links:
+- title: 'Perspicacia: «Seres»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Seres/
+  type: perspicacia
+relations:
+- type: kin
+  person: makir-hijo-de-manases
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-7
+  - it-seres
+  reason: 1Cr 7:16 lo da como hermano de Peres; Perspicacia «Seres» lo hace hijo de Makir y Maacá.
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: maaca-esposa-de-makir
+  word: mother
+  inferred: false
+  sources:
+  - 1-cronicas-7
+  - it-seres
+  reason: 'Perspicacia «Seres»: su madre fue Maacá, la esposa de Makir (1Cr 7:16).'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

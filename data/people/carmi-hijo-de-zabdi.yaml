@@ -14,6 +14,8 @@ reason: Perspicacia «Carmí», núm. 2; Jos 7:1, 18. Perspicacia lo ve también
 sources:
 - it-carmi
 - josue-7
+- 1-cronicas-2
+- 1-cronicas-4
 links:
 - title: 'Perspicacia: «Carmí»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Carm%C3%AD/
@@ -32,5 +34,27 @@ relations:
   reason: 'Jos 7:1, 18: Carmí, hijo de Zabdí.'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+- type: kin
+  person: zerah-hijo-de-juda
+  word: ancestor
+  inferred: true
+  sources:
+  - 1-cronicas-2
+  - it-carmi
+  reason: 1Cr 2:4-7 lo pone en la rama de Zérah; Perspicacia «Carmí», núm. 2, lo hace descendiente de Judá y Tamar por Zérah
+    y Zabdí.
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: juda-hijo-de-jacob
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-4
+  - it-carmi
+  reason: 1Cr 4:1 lo pone entre los «hijos de Judá»; Perspicacia «Carmí», núm. 2, explica que la lista incluye descendientes
+    lejanos.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
 status: verified

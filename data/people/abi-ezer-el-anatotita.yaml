@@ -7,12 +7,15 @@ perspicacia: 1200000035#3
 disambiguation: Abí-Ézer de Anatot, guerrero de David; no Abí-Ézer hijo de Galaad, antepasado de Gedeón.
 distinct_from:
 - abi-ezer-hijo-de-galaad
+- abi-ezer-hijo-de-hamoleket
 summary: Benjaminita de Anatot, uno de los treinta y siete guerreros más valientes de David. Tenía a su cargo la división
   que servía al rey el noveno mes.
 reason: Perspicacia «Abí-ézer», núm. 3; 2Sa 23:27.
 sources:
 - it-abi-ezer
 - 2-samuel-23
+- 1-cronicas-11
+- 1-cronicas-27
 links:
 - title: 'Perspicacia: «Abí-ézer»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ab%C3%AD-%C3%A9zer/
@@ -24,8 +27,10 @@ relations:
   sources:
   - 2-samuel-23
   - it-abi-ezer
+  - 1-cronicas-11
+  - 1-cronicas-27
   reason: '2Sa 23:27: Abí-Ézer el anatotita; Perspicacia «Abí-ézer», núm. 3, da Anatot como su ciudad.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: tie
   person: david
@@ -33,8 +38,10 @@ relations:
   inferred: false
   sources:
   - 2-samuel-23
+  - 1-cronicas-11
+  - 1-cronicas-27
   reason: '2Sa 23:27: uno de los treinta guerreros de David.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

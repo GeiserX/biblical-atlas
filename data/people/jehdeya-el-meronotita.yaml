@@ -1,0 +1,35 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jehdeya-el-meronotita
+name: Jehdeyá
+names:
+- name: Jehdeyá
+perspicacia: 1200002363#2
+disambiguation: Jehdeyá el meronotita, encargado de los burros de David; no el levita descendiente de Amram.
+summary: Meronotita a cargo de las burras del rey David. Perspicacia cree que el gentilicio lo hace de Meronot, un lugar que
+  no se ha localizado con seguridad.
+reason: Perspicacia «Jehdeyá», núm. 2, y «Meronotita»; 1Cr 27:30.
+sources:
+- it-jehdeya
+- it-meronotita
+- 1-cronicas-27
+links:
+- title: 'Perspicacia: «Jehdeyá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jehdey%C3%A1/
+  type: perspicacia
+- title: 'Perspicacia: «Meronotita»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Meronotita/
+  type: perspicacia
+relations:
+- type: tie
+  person: david
+  word: master
+  inferred: false
+  sources:
+  - 1-cronicas-27
+  reason: '1Cr 27:30, 31: tenía a su cargo los burros; era uno de los que administraban la hacienda del rey.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- jehdeya-levita

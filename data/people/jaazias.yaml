@@ -1,0 +1,29 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jaazias
+name: Jaazías
+names:
+- name: Jaazías
+perspicacia: '1200002265'
+summary: Levita de la familia de Merarí. Cuatro hijos o descendientes suyos, Beno, Soham, Zacur e Ibrí, sirvieron en el reinado
+  de David.
+reason: Perspicacia «Jaazías»; 1Cr 24:26, 27.
+sources:
+- it-jaazias
+- 1-cronicas-24
+links:
+- title: 'Perspicacia: «Jaazías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jaaz%C3%ADas/
+  type: perspicacia
+relations:
+- type: kin
+  person: merari
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-24
+  - it-jaazias
+  reason: 1Cr 24:26, 27 lo cuenta entre los hijos de Merarí; Perspicacia «Jaazías» lo hace de la familia de Merarí.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

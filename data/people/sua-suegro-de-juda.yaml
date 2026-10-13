@@ -10,9 +10,12 @@ reason: Perspicacia «Súa», núm. 1; Gé 38:2, 12.
 sources:
 - it-sua
 - genesis-38
+- 1-cronicas-2
 links:
 - title: 'Perspicacia: «Súa»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/S%C3%BAa/
   type: perspicacia
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified
+distinct_from:
+- sua-hija-de-heber

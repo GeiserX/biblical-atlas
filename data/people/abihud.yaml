@@ -1,0 +1,28 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: abihud
+name: Abihud
+names:
+- name: Abihud
+perspicacia: '1200000040'
+summary: Benjamita de la línea de Bela, el primogénito de Benjamín.
+reason: Perspicacia «Abihud»; 1Cr 8:1-3.
+sources:
+- it-abihud
+- 1-cronicas-8
+links:
+- title: 'Perspicacia: «Abihud»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Abihud/
+  type: perspicacia
+relations:
+- type: kin
+  person: bela-hijo-de-benjamin
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  - it-abihud
+  reason: 1Cr 8:3 lo pone entre los hijos de Bela; Perspicacia «Abihud» lo llama descendiente de Benjamín por Bela.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

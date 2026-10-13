@@ -1,0 +1,55 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: beno
+name: Beno
+names:
+- name: Beno
+perspicacia: '1200000642'
+summary: Levita merarita de la línea de Jaazías que vivió en tiempos de David.
+reason: Perspicacia «Beno»; 1Cr 24:26, 27.
+sources:
+- it-beno
+- 1-cronicas-24
+links:
+- title: 'Perspicacia: «Beno»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Beno/
+  type: perspicacia
+relations:
+- type: kin
+  person: jaazias
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-24
+  - it-beno
+  reason: 1Cr 24:26, 27 lo nombra el primero de los hijos de Jaazías.
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: soham
+  word: brother
+  inferred: false
+  sources:
+  - 1-cronicas-24
+  reason: 1Cr 24:27 da a Beno, Soham, Zacur e Ibrí como hijos de Jaazías.
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: zacur-hijo-de-jaazias
+  word: brother
+  inferred: false
+  sources:
+  - 1-cronicas-24
+  reason: 1Cr 24:27 da a Beno, Soham, Zacur e Ibrí como hijos de Jaazías.
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: ibri
+  word: brother
+  inferred: false
+  sources:
+  - 1-cronicas-24
+  reason: 1Cr 24:27 da a Beno, Soham, Zacur e Ibrí como hijos de Jaazías.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

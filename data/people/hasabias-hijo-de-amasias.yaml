@@ -1,0 +1,43 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hasabias-hijo-de-amasias
+name: Hasabías
+names:
+- name: Hasabías
+perspicacia: 1200001900#1
+disambiguation: Hasabías hijo de Amasías (1Cr 6:45); no es ninguno de los otros Hasabías que numera Perspicacia «Hasabías».
+distinct_from:
+- hasabias-hebronita
+- hasabias-hijo-de-jedutun
+- hasabias-hijo-de-quemuel
+summary: Levita merarita, hijo de Amasías y antepasado del cantor Etán.
+reason: Perspicacia «Hasabías», núm. 1; 1Cr 6:45.
+sources:
+- it-hasabias
+- 1-cronicas-6
+- 1-cronicas-9
+links:
+- title: 'Perspicacia: «Hasabías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hasab%C3%ADas/
+  type: perspicacia
+relations:
+- type: kin
+  person: amasias-hijo-de-hilquias
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-6
+  reason: '1Cr 6:45: Hasabías, «hijo de Amasías».'
+  checked_on: '2026-10-12'
+  status: verified
+- type: same_as
+  person: hasabias-padre-de-azricam
+  certainty: possible
+  inferred: true
+  sources:
+  - 1-cronicas-9
+  - it-hasabias
+  reason: 'Perspicacia «Hasabías», núm. 1 y 6: quizás el antepasado de Semaya de 1Cr 9:14 es este mismo levita merarita.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

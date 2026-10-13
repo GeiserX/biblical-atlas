@@ -1,0 +1,45 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: zacarias-descendiente-de-isias
+name: Zacarías
+names:
+- name: Zacarías
+perspicacia: 1200004681#6
+disambiguation: El uzielita de la línea de Isías (1Cr 24:25); no el profeta, ni el padre de Juan el Bautista, ni los demás
+  Zacarías que numera Perspicacia.
+distinct_from:
+- zacarias-hijo-de-jehoiada
+- zacarias-padre-de-juan
+- zacarias-profeta
+- zacarias-abuelo-de-ezequias
+- zacarias-hijo-de-jeberekias
+- zacarias-de-israel
+- zacarias-hijo-de-meselemias
+- zeker
+- zacarias-musico
+- zacarias-trompetista
+- zacarias-hijo-de-hosa
+- zacarias-padre-de-ido
+- zacarias-el-rubenita
+summary: Levita de la familia de Uziel, de la línea de Isías, nombrado cuando David reorganizó el servicio en la casa de Jehová.
+reason: Perspicacia «Zacarías», núm. 6; 1Cr 24:25.
+sources:
+- it-zacarias
+- 1-cronicas-24
+links:
+- title: 'Perspicacia: «Zacarías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zacar%C3%ADas/
+  type: perspicacia
+relations:
+- type: kin
+  person: isias-uzielita
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-24
+  - it-zacarias
+  reason: 1Cr 24:25 lo pone de los hijos de Isías, el hermano de Miqueas; Perspicacia «Zacarías», núm. 6, solo dice que era
+    de la familia de Uziel.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

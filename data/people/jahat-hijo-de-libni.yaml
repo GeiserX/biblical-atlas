@@ -1,0 +1,41 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jahat-hijo-de-libni
+name: Jáhat
+names:
+- name: Jáhat
+perspicacia: 1200002289#2
+disambiguation: Jáhat hijo de Libní (1Cr 6:20, 42, 43); no es ninguno de los otros Jáhat que numera Perspicacia «Jáhat».
+distinct_from:
+- jahat-hijo-de-reaya
+- jahat-hijo-de-simei
+- jahat-izharita
+summary: Levita guersonita, hijo de Libní y nieto de Guersom. Fue antepasado del músico Asaf.
+reason: Perspicacia «Jáhat», núm. 2; 1Cr 6:20, 42, 43.
+sources:
+- it-jahat
+- 1-cronicas-6
+links:
+- title: 'Perspicacia: «Jáhat»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/J%C3%A1hat/
+  type: perspicacia
+relations:
+- type: kin
+  person: libni-hijo-de-guerson
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-6
+  reason: '1Cr 6:20: «su hijo Jáhat», tras Libní.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: guerson
+  word: grandfather
+  inferred: false
+  sources:
+  - 1-cronicas-6
+  reason: '1Cr 6:17, 20, 43: hijo de Libní, hijo de Guersom.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

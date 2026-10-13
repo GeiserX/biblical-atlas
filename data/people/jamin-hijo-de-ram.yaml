@@ -1,0 +1,30 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jamin-hijo-de-ram
+name: Jamín
+names:
+- name: Jamín
+perspicacia: 1200002315#2
+summary: Judaíta, segundo hijo de Ram; por su padre era nieto de Jerahmeel.
+reason: Perspicacia «Jamín», núm. 2; 1Cr 2:27.
+sources:
+- it-jamin
+- 1-cronicas-2
+links:
+- title: 'Perspicacia: «Jamín»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jam%C3%ADn/
+  type: perspicacia
+relations:
+- type: kin
+  person: ram-hijo-de-jerahmeel
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-2
+  reason: '1Cr 2:27: hijo de Ram, el primogénito de Jerahmeel.'
+  checked_on: '2026-10-12'
+  status: verified
+disambiguation: Jamín hijo de Ram, de Judá; no Jamín hijo de Simeón, que bajó a Egipto con Jacob.
+distinct_from:
+- jamin-hijo-de-simeon
+checked_on: '2026-10-12'
+status: verified

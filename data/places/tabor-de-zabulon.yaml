@@ -1,0 +1,26 @@
+# biblical-atlas: un fichero por lugar. Esquema en docs/investigacion/README.md.
+name: Tabor
+names:
+- name: Tabor
+  note: Ciudad levita de Zabulón; no el monte Tabor.
+type: city
+lat: 32.683367
+lon: 35.324193
+precision: uncertain
+coord_source: openbible:af614df
+coord_url: https://www.openbible.info/geo/ancient/af614df/tabor-2
+coord_note: Iksal, punto de la primera identificación de OpenBible. Perspicacia dice que hoy no se sabe dónde estaba; no la
+  damos por Quislot-Tabor.
+summary: Ciudad de Zabulón que se dio a los levitas meraritas. Hoy no se sabe dónde estaba.
+reason: 'Perspicacia «Tabor», núm. 2; 1Cr 6:77. Coordenada de OpenBible: solo tomamos el punto.'
+sources:
+- it-tabor
+- openbible-geo
+- 1-cronicas-6
+links:
+- title: 'Perspicacia: «Tabor»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Tabor/
+  type: perspicacia
+id: tabor-de-zabulon
+checked_on: '2026-10-12'
+status: verified

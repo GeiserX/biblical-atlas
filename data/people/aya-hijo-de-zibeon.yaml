@@ -10,6 +10,7 @@ reason: Perspicacia «Ayá», núm. 1; Gé 36:24.
 sources:
 - it-aya
 - genesis-36
+- 1-cronicas-1
 links:
 - title: 'Perspicacia: «Ayá»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ay%C3%A1/
@@ -25,10 +26,11 @@ relations:
   sources:
   - it-aya
   - genesis-36
+  - 1-cronicas-1
   reason: 'Gé 36:24: hijo de Zibeón.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified
 distinct_from:
 - aya-padre-de-rizpa

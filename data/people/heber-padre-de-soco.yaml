@@ -1,0 +1,24 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: heber-padre-de-soco
+name: Héber
+names:
+- name: Héber
+perspicacia: 1200001950#3
+disambiguation: Héber padre de Socó, de Judá (núm. 3 de Perspicacia); no el quenita esposo de Jael ni el nieto de Aser.
+summary: 'Hombre de Judá, padre de Socó: quizá tuvo un descendiente con ese nombre o fundó la ciudad de Socó.'
+reason: Perspicacia «Héber»; 1Cr 4:18.
+sources:
+- it-heber
+- it-soco
+- 1-cronicas-4
+links:
+- title: 'Perspicacia: «Héber»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/H%C3%A9ber/
+  type: perspicacia
+relations: []
+distinct_from:
+- heber-hijo-de-berias
+- heber-el-quenita
+- heber-descendiente-de-elpaal
+checked_on: '2026-10-12'
+status: verified

@@ -22,6 +22,7 @@ sources:
 - jueces-13
 - jueces-16
 - jueces-18
+- 1-cronicas-2
 links:
 - title: 'Perspicacia: «Estaol»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Estaol/
@@ -34,5 +35,5 @@ history:
   change: Jue 13:25 no pone el suceso en Estaol, sino en Mahané-Dan, entre Zorá y Estaol; Perspicacia «Estaol» dice que fue
     en sus cercanías.
   source: jueces-13
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

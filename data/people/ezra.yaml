@@ -1,0 +1,18 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ezra
+name: Ezrá
+names:
+- name: Ezrá
+perspicacia: '1200001477'
+summary: Judaíta, padre de Jéter, Méred, Éfer y Jalón.
+reason: Perspicacia «Ezrá»; 1Cr 4:17.
+sources:
+- it-ezra
+- 1-cronicas-4
+links:
+- title: 'Perspicacia: «Ezrá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ezr%C3%A1/
+  type: perspicacia
+relations: []
+checked_on: '2026-10-12'
+status: verified

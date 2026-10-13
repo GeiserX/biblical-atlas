@@ -26,5 +26,7 @@ relations:
   reason: '1Re 22:42: Azubá hija de Silhí.'
   checked_on: '2026-09-30'
   status: verified
-checked_on: '2026-09-30'
+checked_on: '2026-10-12'
 status: verified
+distinct_from:
+- azuba-esposa-de-caleb

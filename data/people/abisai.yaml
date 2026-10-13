@@ -21,6 +21,10 @@ sources:
 - 2-samuel-20
 - 2-samuel-21
 - 2-samuel-23
+- 1-cronicas-2
+- 1-cronicas-11
+- 1-cronicas-18
+- 1-cronicas-19
 links:
 - title: 'Perspicacia: «Abisai»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Abisai/
@@ -43,8 +47,10 @@ relations:
   - 2-samuel-19
   - 2-samuel-21
   - 2-samuel-23
+  - 1-cronicas-2
+  - 1-cronicas-18
   reason: 1Sa 26:6 lo llama hijo de Zeruyá.
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: kin
   person: joab-hijo-de-zeruya
@@ -59,8 +65,11 @@ relations:
   - 2-samuel-18
   - 2-samuel-20
   - 2-samuel-23
+  - 1-cronicas-2
+  - 1-cronicas-11
+  - 1-cronicas-19
   reason: 1Sa 26:6 lo presenta como hermano de Joab.
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: kin
   person: david
@@ -69,9 +78,10 @@ relations:
   sources:
   - it-abisai
   - it-zeruya
+  - 1-cronicas-2
   reason: 'Perspicacia «Abisai»: su madre, Zeruyá, era hermana o media hermana de David (1Cr 2:15, 16), a quien apoyó con
     lealtad.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: accompanies
   person: david
@@ -92,8 +102,9 @@ relations:
   - 2-samuel-2
   - it-asahel
   - 2-samuel-3
+  - 1-cronicas-2
   reason: 2Sa 2:18 nombra a Abisái y a Asahel entre los tres hijos de Zeruyá.
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: tie
   person: david
@@ -101,8 +112,9 @@ relations:
   inferred: false
   sources:
   - 2-samuel-23
+  - 1-cronicas-11
   reason: '2Sa 23:18, 19: jefe de otros tres guerreros de David; mató a 300 hombres con su lanza.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

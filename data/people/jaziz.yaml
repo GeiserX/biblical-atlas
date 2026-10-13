@@ -1,0 +1,32 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jaziz
+name: Jaziz
+names:
+- name: Jaziz
+perspicacia: '1200002347'
+summary: Hagrita, de un pueblo de pastores que al parecer vivía al este de Galaad, puesto al frente de los rebaños del rey
+  David.
+reason: Perspicacia «Jaziz» y «Hagrita»; 1Cr 27:31.
+sources:
+- it-jaziz
+- it-hagrita
+- 1-cronicas-27
+links:
+- title: 'Perspicacia: «Jaziz»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jaziz/
+  type: perspicacia
+- title: 'Perspicacia: «Hagrita»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hagrita/
+  type: perspicacia
+relations:
+- type: tie
+  person: david
+  word: master
+  inferred: false
+  sources:
+  - 1-cronicas-27
+  reason: '1Cr 27:31: tenía a su cargo los rebaños; era uno de los que administraban la hacienda del rey.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

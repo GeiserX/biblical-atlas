@@ -1,0 +1,23 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: simri-padre-de-jediael
+name: Simrí
+names:
+- name: Simrí
+perspicacia: 1200004052#2
+disambiguation: Simrí, padre del guerrero Jediael (1Cr 11:45); no el simeonita, el portero merarita ni el levita de Ezequías.
+distinct_from:
+- simri-hijo-de-hosa
+- simri-hijo-de-semaya
+summary: Padre de Jediael, uno de los valientes de David. Perspicacia cree que Johá el tizita, hermano de Jediael, también
+  era hijo suyo.
+reason: Perspicacia «Simrí», núm. 2; 1Cr 11:45.
+sources:
+- it-simri
+- 1-cronicas-11
+links:
+- title: 'Perspicacia: «Simrí»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Simr%C3%AD/
+  type: perspicacia
+relations: []
+checked_on: '2026-10-12'
+status: verified

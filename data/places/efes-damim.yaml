@@ -37,6 +37,7 @@ sources:
 - 1-samuel-17
 - 2-samuel-23
 - it-pas-damim
+- 1-cronicas-11
 links:
 - title: 'Perspicacia: «Efes-damim»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Efes-damim/
@@ -44,5 +45,5 @@ links:
 - title: 1 Samuel 17 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/1-samuel/17/
   type: bible
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

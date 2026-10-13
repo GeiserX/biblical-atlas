@@ -1,0 +1,37 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: seorim
+name: Seorim
+names:
+- name: Seorim
+perspicacia: '1200003898'
+summary: Sacerdote al frente del cuarto de los 24 turnos sacerdotales sorteados en el reinado de David.
+reason: Perspicacia «Seorim»; 1Cr 24:8.
+sources:
+- it-seorim
+- 1-cronicas-24
+links:
+- title: 'Perspicacia: «Seorim»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Seorim/
+  type: perspicacia
+relations:
+- type: kin
+  person: aaron
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-24
+  - it-seorim
+  reason: 1Cr 24:1 abre la lista de los descendientes de Aarón repartidos en turnos, y 24:8 da a esta casa el cuarto.
+  checked_on: '2026-10-12'
+  status: verified
+- type: holds_office
+  office: priest
+  inferred: false
+  sources:
+  - 1-cronicas-24
+  - it-seorim
+  reason: '1Cr 24:8: encabeza una de las casas sacerdotales de 24:4-6; Perspicacia «Seorim» lo trata como sacerdote.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

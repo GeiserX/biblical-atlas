@@ -1,0 +1,61 @@
+# biblical-atlas: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: cun
+name: Cun
+names:
+- name: Cun
+type: city
+lat: null
+lon: null
+precision: uncertain
+coord_source: null
+coord_url: null
+candidates:
+- name: El mismo sitio que Berotái, en Brital (Bereitan), en la Becá
+  geometry:
+    type: point
+    lat: 33.935278
+    lon: 36.150833
+  status: favored_level_1
+  sources:
+  - it-cun
+  - openbible-geo
+  - 1-cronicas-18
+  reason: Perspicacia ve posible que Cun sea otro nombre de Berotái, la ciudad que nombra 2Sa 8:8 en el mismo lugar del relato.
+    Punto de OpenBible.
+  coord_source: openbible:a70f9d3
+  coord_url: https://www.openbible.info/geo/ancient/a70f9d3/cun
+  note: 'Primera resolución de la segunda identificación de la ficha «Cun» de OpenBible (otro nombre de Berothai): el mismo
+    punto que berota.'
+  checked_on: '2026-10-12'
+- name: Kuna, en Ras Baalbek, unos 43 km al NE de Bereitan
+  geometry:
+    type: point
+    lat: 34.259722
+    lon: 36.423611
+  status: alternative
+  sources:
+  - it-cun
+  - openbible-geo
+  - 1-cronicas-18
+  reason: Perspicacia recoge que otros la sitúan en Ras Baalbek. Punto de OpenBible.
+  coord_source: openbible:a70f9d3
+  coord_url: https://www.openbible.info/geo/ancient/a70f9d3/cun
+  note: Primera resolución de la primera identificación de la ficha «Cun» de OpenBible, Ras Baalbek.
+  checked_on: '2026-10-12'
+summary: Ciudad del rey Hadadézer de Zobá de la que David se llevó mucho cobre; con él Salomón hizo después el Mar, las columnas
+  y los utensilios de cobre del templo.
+reason: Perspicacia «Cun» y «Hadadézer», párr. 4; 1Cr 18:8. Duda entre dos sitios, así que van los dos como candidatos.
+sources:
+- it-cun
+- it-hadadezer
+- openbible-geo
+- 1-cronicas-18
+links:
+- title: 'Perspicacia: «Cun»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Cun/
+  type: perspicacia
+- title: 1 Crónicas 18 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/1-Cr%C3%B3nicas/18/
+  type: bible
+checked_on: '2026-10-12'
+status: verified

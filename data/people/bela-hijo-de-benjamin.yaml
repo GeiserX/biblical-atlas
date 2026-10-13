@@ -11,6 +11,8 @@ sources:
 - it-bela
 - genesis-46
 - numeros-26
+- 1-cronicas-7
+- 1-cronicas-8
 links:
 - title: 'Perspicacia: «Bela»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Bela/
@@ -27,8 +29,10 @@ relations:
   - genesis-46
   - it-bela
   - numeros-26
+  - 1-cronicas-7
+  - 1-cronicas-8
   reason: 'Gé 46:21: aparece entre los hijos de Benjamín.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: lived_in
   place: egipto
@@ -39,7 +43,8 @@ relations:
     allí antes de morir Jacob.'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-10-02'
+checked_on: '2026-10-12'
 status: verified
 distinct_from:
 - bela-hijo-de-beor
+- bela-hijo-de-azaz

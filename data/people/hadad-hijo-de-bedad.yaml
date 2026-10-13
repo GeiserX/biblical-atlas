@@ -11,6 +11,7 @@ reason: Perspicacia «Hadad», núm. 2; Gé 36:35, 36.
 sources:
 - it-hadad
 - genesis-36
+- 1-cronicas-1
 links:
 - title: 'Perspicacia: «Hadad»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hadad/
@@ -26,8 +27,9 @@ relations:
   sources:
   - it-hadad
   - genesis-36
+  - 1-cronicas-1
   reason: 'Gé 36:35: Hadad hijo de Bedad.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: succeeds
   person: husam
@@ -35,8 +37,9 @@ relations:
   sources:
   - it-hadad
   - genesis-36
+  - 1-cronicas-1
   reason: 'Gé 36:35: reinó en lugar de Husam.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   office: king
   status: verified
 - type: lived_in
@@ -45,8 +48,9 @@ relations:
   sources:
   - it-avit
   - genesis-36
+  - 1-cronicas-1
   reason: 'Gé 36:35: su ciudad se llamaba Avit.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: holds_office
   place: edom
@@ -54,10 +58,11 @@ relations:
   inferred: false
   sources:
   - genesis-36
+  - 1-cronicas-1
   reason: Reinó en Edom tras Husam (Gé 36:31, 35).
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-02'
+checked_on: '2026-10-12'
 status: verified
 distinct_from:
 - hadad-el-edomita

@@ -11,6 +11,7 @@ reason: Perspicacia «Uz», núm. 1 y 4; Gé 10:23.
 sources:
 - it-uz
 - genesis-10
+- 1-cronicas-1
 links:
 - title: 'Perspicacia: «Uz»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Uz/
@@ -25,10 +26,11 @@ relations:
   inferred: false
   sources:
   - genesis-10
+  - 1-cronicas-1
   reason: Gé 10:23 lo nombra el primero de los hijos de Aram.
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-02'
+checked_on: '2026-10-12'
 status: verified
 distinct_from:
 - uz-hijo-de-disan

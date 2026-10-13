@@ -16,6 +16,7 @@ sources:
 - 2-samuel-3
 - 2-samuel-6
 - 2-samuel-21
+- 1-cronicas-15
 links:
 - title: 'Perspicacia: «Mical»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Mical/
@@ -41,8 +42,9 @@ relations:
   - 1-samuel-25
   - 2-samuel-3
   - 2-samuel-6
+  - 1-cronicas-15
   reason: '1Sa 14:49: la menor de las hijas de Saúl.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: kin
   person: is-boset
@@ -59,5 +61,5 @@ history:
   change: 'Se añade que Saúl la dio a Paltiel y David la recuperó (2Sa 3:13-16). 2Sa 21:8 llama hijos de Mical a los cinco
     de Adriel; Perspicacia «Mical» y «Merab»: eran de Merab y ella los crió.'
   source: 2-samuel-21
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

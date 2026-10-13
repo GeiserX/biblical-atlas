@@ -1,0 +1,38 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: joel-hijo-de-izrahias
+name: Joel
+names:
+- name: Joel
+perspicacia: 1200002481#1
+disambiguation: Joel hijo de Izrahías, de Isacar; no el profeta hijo de Petuel, el hijo de Samuel ni los demás Joel.
+distinct_from:
+- joel-hijo-de-samuel
+- joel-profeta
+- joel-hijo-de-jehiel
+- joel-el-gadita
+- joel-el-rubenita
+- joel-hermano-de-natan
+- joel-hijo-de-azarias
+- joel-hijo-de-pedaya
+- joel-simeonita
+summary: Isacarita, hijo de Izrahías y cabeza de familia de su tribu.
+reason: Perspicacia «Joel», núm. 1; 1Cr 7:1, 3, 4.
+sources:
+- it-joel
+- 1-cronicas-7
+links:
+- title: 'Perspicacia: «Joel»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Joel/
+  type: perspicacia
+relations:
+- type: kin
+  person: izrahias-de-isacar
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-7
+  reason: 1Cr 7:3 lo cuenta entre los hijos de Izrahías.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

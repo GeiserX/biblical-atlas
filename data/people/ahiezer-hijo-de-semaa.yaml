@@ -1,0 +1,49 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ahiezer-hijo-de-semaa
+name: Ahiézer
+names:
+- name: Ahiézer
+perspicacia: 1200000151#2
+disambiguation: Ahiézer hijo de Semaá, jefe benjaminita con David en Ziclag (1Cr 12:3); no Ahiézer hijo de Amisadai, principal
+  de Dan.
+distinct_from:
+- ahiezer-hijo-de-amisadai
+summary: Hijo de Semaá el guibeatita y jefe de los guerreros de Benjamín que acudieron a ayudar a David en Ziclag.
+reason: Perspicacia «Ahiézer», núm. 2; 1Cr 12:1-3.
+sources:
+- it-ahiezer
+- 1-cronicas-12
+links:
+- title: 'Perspicacia: «Ahiézer»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ahi%C3%A9zer/
+  type: perspicacia
+relations:
+- type: kin
+  person: semaa
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-12
+  reason: '1Cr 12:3: Ahiézer y Joás eran hijos de Semaá el guibeatita.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: joas-hijo-de-semaa
+  word: brother
+  inferred: false
+  sources:
+  - 1-cronicas-12
+  reason: '1Cr 12:3: los dos eran hijos de Semaá.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: tie
+  person: david
+  word: master
+  inferred: false
+  sources:
+  - 1-cronicas-12
+  reason: '1Cr 12:3: se unió a David y lo apoyó en la guerra; era el jefe de los benjaminitas.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

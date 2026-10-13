@@ -23,6 +23,7 @@ sources:
 - genesis-10
 - genesis-11
 - lucas-3
+- 1-cronicas-1
 links:
 - title: 'Perspicacia: «Selah»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Selah/
@@ -38,8 +39,9 @@ relations:
   sources:
   - genesis-10
   - genesis-11
+  - 1-cronicas-1
   reason: 'Gé 10:24: Arpaksad fue padre de Selá; Gé 11:12, a los 35 años.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: kin
   person: cainan-hijo-de-arpaksad
@@ -52,7 +54,7 @@ relations:
     un añadido de copista.'
   checked_on: '2026-09-29'
   status: pending
-checked_on: '2026-10-02'
+checked_on: '2026-10-12'
 status: verified
 distinct_from:
 - sela-hijo-de-juda

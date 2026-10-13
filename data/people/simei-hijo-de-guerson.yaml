@@ -11,6 +11,8 @@ sources:
 - it-simei
 - exodo-6
 - numeros-3
+- 1-cronicas-6
+- 1-cronicas-23
 links:
 - title: 'Perspicacia: «Simeí»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sime%C3%AD/
@@ -27,13 +29,24 @@ relations:
   - exodo-6
   - it-simei
   - numeros-3
+  - 1-cronicas-6
+  - 1-cronicas-23
   reason: 'Éx 6:17: segundo hijo de Guersón.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-09-30'
+checked_on: '2026-10-12'
 status: verified
 distinct_from:
 - simei-hijo-de-guera
 - sama-hijo-de-jese
 - simei-partidario-de-david
 - simei-hijo-de-ela
+- simei-hijo-de-pedaya
+- simei-hijo-de-zacur
+- simei-hijo-de-gog
+- simei-hijo-de-jahat
+- simei-hijo-de-libni
+- simei-padre-de-jaquim
+- simei-descendiente-de-ladan
+- simei-hijo-de-jedutun
+- simei-el-ramatita

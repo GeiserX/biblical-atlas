@@ -4,12 +4,13 @@ name: Disán
 names:
 - name: Disán
 perspicacia: '1200001194'
-summary: Jeque horeo en Edom, del linaje de Seír, con dos hijos, Uz y Arán. Una lista posterior los atribuye a Disón, al parecer
-  por un error al copiar.
+summary: Jeque horeo en Edom, del linaje de Seír, con dos hijos, Uz y Arán. En 1 Crónicas 1:42 el texto hebreo dice Disón,
+  al parecer por error de copista; la TNM escribe Disán en los dos pasajes.
 reason: Perspicacia «Disán»; Gé 36:21, 28, 30.
 sources:
 - it-disan
 - genesis-36
+- 1-cronicas-1
 links:
 - title: 'Perspicacia: «Disán»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Dis%C3%A1n/
@@ -25,8 +26,9 @@ relations:
   sources:
   - it-disan
   - genesis-36
+  - 1-cronicas-1
   reason: 'Gé 36:21: hijo de Seír el horeo.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: lived_in
   place: seir
@@ -37,5 +39,10 @@ relations:
   reason: 'Gé 36:21, 30: jeque horeo en la tierra de Seír.'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+history:
+- date: '2026-10-12'
+  change: El resumen decía que una lista posterior atribuye sus hijos a Disón; la TNM escribe Disán en 1Cr 1:42, y Perspicacia
+    «Disán» explica que Disón es la lectura del texto hebreo.
+  source: 1-cronicas-1
+checked_on: '2026-10-12'
 status: verified

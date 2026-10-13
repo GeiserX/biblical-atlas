@@ -10,6 +10,7 @@ reason: Perspicacia «Ebal»; Gé 36:23.
 sources:
 - it-ebal
 - genesis-36
+- 1-cronicas-1
 links:
 - title: 'Perspicacia: «Ebal»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ebal/
@@ -25,8 +26,9 @@ relations:
   sources:
   - it-ebal
   - genesis-36
+  - 1-cronicas-1
   reason: 'Gé 36:23: hijo de Sobal.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

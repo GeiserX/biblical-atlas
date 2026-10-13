@@ -1,0 +1,44 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: joha-el-tizita
+name: Johá
+names:
+- name: Johá
+perspicacia: 1200002487#1
+disambiguation: Johá el tizita, guerrero de David (1Cr 11:45); no el benjaminita cabeza de una familia de Jerusalén.
+distinct_from:
+- joha-descendiente-de-berias
+summary: Tizita, hermano de Jediael y uno de los guerreros poderosos de David. Tizita viene quizá de un lugar hoy desconocido.
+reason: Perspicacia «Johá», núm. 1, «Tizita» y «Simrí», núm. 2; 1Cr 11:45.
+sources:
+- it-joha
+- it-tizita
+- 1-cronicas-11
+links:
+- title: 'Perspicacia: «Johá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Joh%C3%A1/
+  type: perspicacia
+- title: 'Perspicacia: «Tizita»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Tizita/
+  type: perspicacia
+relations:
+- type: kin
+  person: simri-padre-de-jediael
+  word: father
+  inferred: true
+  sources:
+  - 1-cronicas-11
+  - it-simri
+  reason: 'Perspicacia «Simrí», núm. 2: probablemente era también padre de Johá, a quien 1Cr 11:45 llama hermano de Jediael.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: tie
+  person: david
+  word: master
+  inferred: false
+  sources:
+  - 1-cronicas-11
+  reason: '1Cr 11:45: figura entre los valientes de David.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

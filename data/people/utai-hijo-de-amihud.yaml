@@ -1,0 +1,47 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: utai-hijo-de-amihud
+name: Utái
+names:
+- name: Utái
+perspicacia: 1200004526#1
+summary: Judaíta de la familia de Pérez. Al volver del destierro en Babilonia fue de los primeros que se establecieron en
+  Jerusalén.
+reason: Perspicacia «Utai», núm. 1; 1Cr 9:3, 4.
+sources:
+- it-utai
+- 1-cronicas-9
+links:
+- title: 'Perspicacia: «Utai»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Utai/
+  type: perspicacia
+relations:
+- type: kin
+  person: amihud-hijo-de-omri
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-9
+  reason: '1Cr 9:4: Utái, hijo de Amihud.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: perez
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-9
+  - it-utai
+  reason: 1Cr 9:4 lo cuenta entre los descendientes de Pérez, hijo de Judá.
+  checked_on: '2026-10-12'
+  status: verified
+- type: lived_in
+  place: jerusalen
+  inferred: false
+  sources:
+  - 1-cronicas-9
+  - it-utai
+  reason: '1Cr 9:3, 4: de los de Judá que se establecieron en Jerusalén tras el destierro.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

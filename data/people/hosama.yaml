@@ -1,0 +1,37 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hosama
+name: Hosamá
+names:
+- name: Hosamá
+perspicacia: '1200002089'
+summary: Hijo de Jeconías nacido en el destierro babilonio. Su nombre quizá es una forma breve de Jehosamá.
+reason: Perspicacia «Hosamá»; 1Cr 3:17, 18.
+sources:
+- it-hosama
+- 1-cronicas-3
+links:
+- title: 'Perspicacia: «Hosamá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hosam%C3%A1/
+  type: perspicacia
+relations:
+- type: kin
+  person: joaquin
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-3
+  - it-hosama
+  reason: '1Cr 3:17, 18: uno de los hijos de Jeconías el prisionero.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: born_in
+  place: babilonia
+  inferred: true
+  sources:
+  - 1-cronicas-3
+  - it-hosama
+  reason: 1Cr 3:17, 18 lo cuenta entre los hijos de Jeconías el prisionero; Perspicacia «Hosamá» dice que nació en el destierro.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

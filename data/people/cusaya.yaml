@@ -1,0 +1,31 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: cusaya
+name: Cusayá
+names:
+- name: Cusayá
+perspicacia: '1200002652'
+summary: Levita de la familia de Merarí, padre o antepasado de Etán, el músico de los días de David. Perspicacia cree que
+  es el mismo que el Quisí de 1Cr 6:44.
+reason: Perspicacia «Qusayá» y «Quisí»; 1Cr 15:17.
+sources:
+- it-qusaya
+- it-quisi
+- 1-cronicas-15
+links:
+- title: 'Perspicacia: «Qusayá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Qusay%C3%A1/
+  type: perspicacia
+relations:
+- type: same_as
+  person: quisi
+  certainty: probable
+  inferred: true
+  sources:
+  - it-quisi
+  - it-qusaya
+  - 1-cronicas-15
+  reason: 'Perspicacia «Quisí»: al parecer es el Cusayá de 1Cr 15:17, padre de Etán; «Qusayá» lo repite con «por lo visto».'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

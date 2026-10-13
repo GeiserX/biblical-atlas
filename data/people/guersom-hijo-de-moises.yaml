@@ -17,6 +17,8 @@ sources:
 - exodo-4
 - exodo-18
 - jueces-18
+- 1-cronicas-23
+- 1-cronicas-26
 links:
 - title: 'Perspicacia: «Guersom»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Guersom/
@@ -36,8 +38,10 @@ relations:
   - exodo-2
   - it-guersom
   - exodo-18
+  - 1-cronicas-23
+  - 1-cronicas-26
   reason: 'Éx 2:22: Moisés le puso el nombre.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: kin
   person: zipora
@@ -68,8 +72,10 @@ relations:
   - exodo-4
   - it-zipora
   - exodo-18
+  - 1-cronicas-23
+  - 1-cronicas-26
   reason: 'Perspicacia «Ziporá»: los dos hijos de Moisés eran Guersom y Eliezer; Éx 4:20 los lleva a Egipto.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

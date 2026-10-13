@@ -25,6 +25,8 @@ sources:
 - josue-21
 - tnm-tabla
 - jueces-1
+- 1-cronicas-4
+- 1-cronicas-6
 links:
 - title: 'Perspicacia: «Caleb»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Caleb/
@@ -73,8 +75,10 @@ relations:
   - josue-14
   - josue-15
   - josue-21
+  - 1-cronicas-4
+  - 1-cronicas-6
   reason: Nú 13:6 y 14:6, 30, 38 lo llaman Caleb hijo de Jefuné.
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 perspicacia: 1200000863#2
 date:
@@ -96,5 +100,7 @@ history:
 - date: '2026-09-29'
   change: La razón explica el nuevo final del rango, con Jos 15:13-19 y la tabla de libros.
   source: josue-15
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified
+distinct_from:
+- caleb-hijo-de-hezron

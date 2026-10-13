@@ -6,14 +6,16 @@ names:
 perspicacia: 1200002108#1
 disambiguation: Abuelo de Bezalel. Perspicacia lo cree probablemente el mismo Hur que acompañaba a Moisés y Aarón; no el rey
   de Madián.
-summary: Por su hijo Urí fue abuelo de Bezalel, que dirigió las obras del tabernáculo. Perspicacia lo da como hijo de Caleb
-  y Efrat, del linaje de Judá.
-reason: Perspicacia «Hur», núm. 1; Éx 31:2.
+summary: Hijo de Caleb hijo de Hezrón y de Efrata, de la tribu de Judá. Fue padre de Urí, Sobal, Salmá y Haref, y abuelo de
+  Bezalel, que dirigió las obras del tabernáculo.
+reason: Perspicacia «Hur», núm. 1; Éx 31:2; 1Cr 2:19, 20, 50, 51.
 sources:
 - it-hur
 - exodo-31
 - exodo-35
 - exodo-38
+- 1-cronicas-2
+- 1-cronicas-4
 links:
 - title: 'Perspicacia: «Hur»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hur/
@@ -21,8 +23,48 @@ links:
 - title: Éxodo 35 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/%C3%89xodo/35/
   type: bible
-checked_on: '2026-09-30'
+history:
+- date: '2026-10-12'
+  change: El resumen daba sus padres solo como dato de Perspicacia; 1Cr 2:19, 20 y 50, 51 lo dicen en el texto y nombran a
+    sus otros hijos.
+  source: 1-cronicas-2
+- date: '2026-10-12'
+  change: La razón añade los versículos de 1 Crónicas 2 que dan sus padres y sus hijos.
+  source: 1-cronicas-2
+checked_on: '2026-10-12'
 status: verified
 distinct_from:
 - hur-rey-de-madian
 - hur-padre-del-comisario-de-efrain
+relations:
+- type: kin
+  person: caleb-hijo-de-hezron
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-2
+  reason: '1Cr 2:19, 50: Caleb y Efrat tuvieron a Hur.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: efrata
+  word: mother
+  inferred: false
+  sources:
+  - 1-cronicas-2
+  - 1-cronicas-4
+  - it-hur
+  reason: '1Cr 2:19, 50: Hur es el primer hijo de Efrata.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: juda-hijo-de-jacob
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-4
+  - it-carmi
+  reason: 1Cr 4:1 lo pone entre los «hijos de Judá»; Perspicacia «Carmí», núm. 2, explica que la lista incluye descendientes
+    lejanos.
+  checked_on: '2026-10-12'
+  status: verified

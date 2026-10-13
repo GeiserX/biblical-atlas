@@ -1,0 +1,42 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: aram-hijo-de-somer
+name: Aram
+names:
+- name: Aram
+perspicacia: 1200000331#3
+disambiguation: Aram hijo de Sémer, aserita; no Aram hijo de Sem, padre de los arameos, ni Aram hijo de Quemuel.
+distinct_from:
+- aram-hijo-de-quemuel
+- aram-hijo-de-sem
+summary: Aserita, hijo de Sémer y jefe de familia entre los guerreros escogidos de su tribu. Perspicacia dice que nació en
+  Egipto, como su padre.
+reason: Perspicacia «Aram», núm. 3; 1Cr 7:31, 32, 34, 40.
+sources:
+- it-aram
+- 1-cronicas-7
+links:
+- title: 'Perspicacia: «Aram»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Aram/
+  type: perspicacia
+relations:
+- type: kin
+  person: somer-hijo-de-heber
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-7
+  reason: 1Cr 7:34 lo nombra entre los hijos de Sémer, el Somer del versículo 32.
+  checked_on: '2026-10-12'
+  status: verified
+- type: born_in
+  place: egipto
+  inferred: true
+  sources:
+  - 1-cronicas-7
+  - it-aram
+  reason: 'Perspicacia «Aram», núm. 3: él y su padre nacieron en Egipto, donde habían entrado su abuelo y su bisabuelo (1Cr
+    7:34).'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

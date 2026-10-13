@@ -1,0 +1,32 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: obed-hijo-de-eflal
+name: Obed
+names:
+- name: Obed
+perspicacia: 1200003290#1
+summary: Descendiente de Judá, de la familia de Jerahmeel, hijo de Eflal y padre de Jehú.
+reason: Perspicacia «Obed», núm. 1; 1Cr 2:37, 38.
+sources:
+- it-obed
+- 1-cronicas-2
+links:
+- title: 'Perspicacia: «Obed»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Obed/
+  type: perspicacia
+relations:
+- type: kin
+  person: eflal
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-2
+  reason: '1Cr 2:37: Eflal fue su padre.'
+  checked_on: '2026-10-12'
+  status: verified
+disambiguation: Obed hijo de Eflal, de la línea de Jarhá; no Obed hijo de Boaz, el abuelo de David.
+distinct_from:
+- obed-hijo-de-boaz
+- obed-guerrero-de-david
+- obed-hijo-de-semaya
+checked_on: '2026-10-12'
+status: verified

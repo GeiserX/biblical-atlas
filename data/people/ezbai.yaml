@@ -1,0 +1,19 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ezbai
+name: Ezbái
+names:
+- name: Ezbái
+- name: Ezbai
+perspicacia: '1200001467'
+summary: Padre de Naarái, uno de los guerreros poderosos de David.
+reason: Perspicacia «Ezbai»; 1Cr 11:37.
+sources:
+- it-ezbai
+- 1-cronicas-11
+links:
+- title: 'Perspicacia: «Ezbai»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ezbai/
+  type: perspicacia
+relations: []
+checked_on: '2026-10-12'
+status: verified

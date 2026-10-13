@@ -1,0 +1,35 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: selomit-hija-de-zorobabel
+name: Selomit
+names:
+- name: Selomit
+perspicacia: 1200003994#5
+disambiguation: Selomit hija de Zorobabel (núm. 5 de Perspicacia); no la danita hija de Dibrí.
+summary: Hija del gobernador Zorobabel, la única hija suya cuyo nombre se conoce.
+reason: Perspicacia «Selomit»; 1Cr 3:19, 20.
+sources:
+- it-selomit
+- 1-cronicas-3
+links:
+- title: 'Perspicacia: «Selomit»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Selomit/
+  type: perspicacia
+relations:
+- type: kin
+  person: zorobabel
+  word: father
+  inferred: true
+  sources:
+  - 1-cronicas-3
+  - it-selomit
+  - it-zorobabel
+  reason: 1Cr 3:19 la llama hermana de Mesulam y Hananías, hijos de Zorobabel; Perspicacia «Selomit», núm. 5, la da como hija
+    de él.
+  checked_on: '2026-10-12'
+  status: verified
+distinct_from:
+- selomit-hija-de-dibri
+- selomot-descendiente-de-eliezer
+- selomit-descendiente-de-izhar
+checked_on: '2026-10-12'
+status: verified

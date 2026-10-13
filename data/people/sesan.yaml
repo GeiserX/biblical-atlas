@@ -1,0 +1,29 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: sesan
+name: Sesán
+names:
+- name: Sesán
+perspicacia: '1200004024'
+summary: Descendiente de Jerahmeel, hijo de Isí. No tuvo hijos varones; casó a una hija, probablemente Ahlái, con su siervo
+  egipcio Jarhá, y así siguió su línea.
+reason: Perspicacia «Sesán» y «Ahlai», núm. 1; 1Cr 2:31, 34, 35.
+sources:
+- it-sesan
+- 1-cronicas-2
+- it-ahlai
+links:
+- title: 'Perspicacia: «Sesán»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ses%C3%A1n/
+  type: perspicacia
+relations:
+- type: kin
+  person: isi-hijo-de-apaim
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-2
+  reason: '1Cr 2:31: el hijo de Isí fue Sesán.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

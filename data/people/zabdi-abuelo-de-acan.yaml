@@ -32,5 +32,8 @@ relations:
     de Judá, así que lo leemos como descendiente, no como hijo.
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified
+distinct_from:
+- zabdi-descendiente-de-simei
+- zabdi-el-sifmita

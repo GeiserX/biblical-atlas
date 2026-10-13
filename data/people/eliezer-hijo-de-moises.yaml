@@ -8,6 +8,9 @@ disambiguation: Eliezer, hijo menor de Moisés; no Eliezer de Damasco, el siervo
 distinct_from:
 - eliezer-de-damasco
 - eliezer-hijo-de-jorim
+- eliezer-hijo-de-beker
+- eliezer-trompetista
+- eliezer-hijo-de-zicri
 summary: Hijo menor de Moisés y Ziporá. Su padre lo llamó así porque Dios lo había librado de la espada del faraón. Salió
   de Madián con su familia y, tras el éxodo, Jetró lo llevó al campamento.
 reason: Perspicacia «Eliezer», núm. 2, y «Ziporá»; Éx 4:20 habla de los hijos sin nombrarlos; Éx 18:4-6.
@@ -16,6 +19,8 @@ sources:
 - it-zipora
 - exodo-4
 - exodo-18
+- 1-cronicas-23
+- 1-cronicas-26
 links:
 - title: 'Perspicacia: «Eliezer»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Eliezer/
@@ -35,8 +40,9 @@ relations:
   - exodo-4
   - it-eliezer
   - exodo-18
+  - 1-cronicas-23
   reason: 'Perspicacia «Eliezer», núm. 2: el menor de los dos hijos de Moisés, que Éx 4:20 lleva a Egipto.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: kin
   person: zipora
@@ -58,5 +64,5 @@ relations:
   reason: 'Éx 4:19, 20: sale de Madián con sus padres; Perspicacia «Ziporá».'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-10-02'
+checked_on: '2026-10-12'
 status: verified

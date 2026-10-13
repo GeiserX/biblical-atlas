@@ -1,0 +1,30 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: pelet-hijo-de-jahdai
+name: Pélet
+names:
+- name: Pélet
+perspicacia: 1200003422#1
+summary: Hijo de Jahdái, en la rama de Caleb de la genealogía de Judá.
+reason: Perspicacia «Pélet», núm. 1; 1Cr 2:47.
+sources:
+- it-pelet
+- 1-cronicas-2
+links:
+- title: 'Perspicacia: «Pélet»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/P%C3%A9let/
+  type: perspicacia
+relations:
+- type: kin
+  person: jahdai
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-2
+  reason: '1Cr 2:47: uno de los hijos de Jahdái.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+disambiguation: Pélet, hijo de Jahdái en la línea de Caleb; no el benjamita hijo de Azmávet.
+distinct_from:
+- pelet-hijo-de-azmavet

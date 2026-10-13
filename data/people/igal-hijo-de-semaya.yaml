@@ -1,0 +1,32 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: igal-hijo-de-semaya
+name: Igal
+names:
+- name: Igal
+perspicacia: 1200002140#3
+disambiguation: Igal hijo de Semaya (núm. 3 de Perspicacia); no el espía de Isacar ni el guerrero hijo de Natán.
+summary: Hombre de Judá de la línea real de David, hijo de Semaya.
+reason: Perspicacia «Igal»; 1Cr 3:22.
+sources:
+- it-igal
+- 1-cronicas-3
+links:
+- title: 'Perspicacia: «Igal»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Igal/
+  type: perspicacia
+relations:
+- type: kin
+  person: semaya-hijo-de-secanias
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-3
+  - it-igal
+  reason: '1Cr 3:22: uno de los hijos de Semaya.'
+  checked_on: '2026-10-12'
+  status: verified
+distinct_from:
+- igal-hijo-de-natan
+- igal-hijo-de-jose
+checked_on: '2026-10-12'
+status: verified

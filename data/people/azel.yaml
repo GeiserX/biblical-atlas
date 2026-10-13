@@ -1,0 +1,38 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: azel
+name: Azel
+names:
+- name: Azel
+perspicacia: '1200000492#1'
+summary: Descendiente de Saúl por la línea de Jonatán, hijo de Eleasá. Tuvo seis hijos.
+reason: Perspicacia «Azel», núm. 1; 1Cr 8:33-38.
+sources:
+- it-azel
+- 1-cronicas-8
+- 1-cronicas-9
+links:
+- title: 'Perspicacia: «Azel»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Azel/
+  type: perspicacia
+relations:
+- type: kin
+  person: eleasa-hijo-de-rafa
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  - 1-cronicas-9
+  reason: '1Cr 8:37: Azel era hijo de Eleasá.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: eshec
+  word: brother
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  reason: '1Cr 8:39: Éshec era hermano de Azel.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

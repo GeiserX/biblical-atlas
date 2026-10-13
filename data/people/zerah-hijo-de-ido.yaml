@@ -1,0 +1,34 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: zerah-hijo-de-ido
+name: Zérah
+names:
+- name: Zérah
+perspicacia: 1200004704#5
+disambiguation: Zérah hijo de Idó (1Cr 6:21); no es ninguno de los otros Zérah que numera Perspicacia «Zérah».
+distinct_from:
+- zerah-de-bozra
+- zerah-hijo-de-juda
+- zerah-hijo-de-reuel
+- zohar-hijo-de-simeon
+summary: Levita descendiente de Guersom, hijo de Idó y padre de Jeatrái. Perspicacia ve posible que sea el Zérah de la línea
+  de Asaf (1Cr 6:41).
+reason: Perspicacia «Zérah», núm. 5; 1Cr 6:21.
+sources:
+- it-zerah
+- 1-cronicas-6
+links:
+- title: 'Perspicacia: «Zérah»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Z%C3%A9rah/
+  type: perspicacia
+relations:
+- type: kin
+  person: ido-hijo-de-joa
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-6
+  reason: '1Cr 6:21: «su hijo Zérah», tras Idó.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
