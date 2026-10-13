@@ -42,12 +42,12 @@ No copiamos ni incrustamos texto de jw.org. La ficha enlaza cada pasaje a su cap
 
 `maps/` tiene el relieve propio del [kit de maquetas](../docs/ideas/mockups/kit/build/README.md), hecho con Natural Earth y datos de elevación abiertos, en cuatro extensiones, cada una en versión antigua y actual. Los créditos están en [`CREDITS.md`](../docs/ideas/mockups/kit/maps/CREDITS.md).
 
-| Extensión | Longitud | Latitud | Tamaño |
-|---|---|---|---|
-| `mundo` | −20 a 100 | −40 a 58 | 4096 × 3935 px |
-| `mediterraneo` | 10 a 44 | 28 a 44 | 4096 × 2399 px |
-| `israel` | 33,9 a 36,9 | 29,4 a 33,7 | 2000 × 3365 px |
-| `jerusalen` | 35,10 a 35,36 | 31,68 a 31,86 | 2400 × 1954 px |
+| Extensión | Longitud | Latitud | Tamaño | Bytes (antiguo / actual) |
+|---|---|---|---|---|
+| `mundo` | −20 a 100 | −40 a 58 | 4096 × 3935 px | 530.802 / 739.158 |
+| `mediterraneo` | 10 a 44 | 28 a 44 | 4096 × 2399 px | 393.250 / 461.794 |
+| `israel` | 33,9 a 36,9 | 29,4 a 33,7 | 2000 × 3365 px | 139.326 / 182.566 |
+| `jerusalen` | 35,10 a 35,36 | 31,68 a 31,86 | 2400 × 1954 px | 86.510 / 92.712 |
 
 El mapa las pone una encima de otra, de menos a más detalle: el mundo siempre, el Mediterráneo a partir del zoom 4,3, la tierra de Israel a partir del 6,7 y Jerusalén con sus alrededores (Betania, Betfagué, el monte de los Olivos, Belén) a partir del 10, cada una fundida con la de debajo. Los bordes del Mediterráneo, de Israel y de Jerusalén se funden a transparente (70, 90 y 120 px) para que no se vea la costura. `maps/mundo-mini.webp` (240 × 159 px) es el mapa de situación de la esquina: cubre −20 a 100 y −8 a 58, porque más al sur solo hay mar y el sur de África.
 
@@ -96,6 +96,14 @@ else:
 Órdenes usadas, para `antiguo` y `actual`: `mundo -20 100 -40 58 4096`, `mediterraneo 10 44 28 44 4096 --borde=70`, `israel 33.9 36.9 29.4 33.7 2000 --borde=90` y `jerusalen 35.10 35.36 31.68 31.86 2400 --borde=120`. El mundo y Jerusalén usan las extensiones propias del sitio que describe el [README del kit](../docs/ideas/mockups/kit/build/README.md#extensiones-del-sitio).
 
 Para comprobar la alineación, Corinto (37,9058 N, 22,8787 E) debe caer en la costa del istmo y no tierra adentro.
+
+Los ocho ficheros publicados son esa salida (calidad 82) recomprimida con cwebp 1.6.0, que da los mismos bytes cada vez:
+
+```sh
+cwebp -quiet -q 70 -m 6 -sharp_yuv -alpha_q 60 entrada.webp -o maps/<extensión>-<estilo>.webp   # las dos del mundo llevan además -noalpha
+```
+
+Pasaron de 3.996.900 a 2.626.118 bytes. A la escala a la que el mapa las dibuja, la calidad 70 no se distingue de la 82: en las capturas de 1440 y 430 px de ancho, en los dos estilos y en el modo reunión, el SSIM contra las de antes no baja de 0,99. No se reducen de tamaño porque ninguna se dibuja nunca por debajo de su resolución: en el zoom más cercano al que el mapa las encuadra (7,5 el mundo, 8 el Mediterráneo, 10 Israel y 14 Jerusalén) cada píxel de imagen ocupa entre 2,2 y 7,5 px de CSS.
 
 ## Cómo situamos a Pablo
 
