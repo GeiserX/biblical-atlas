@@ -289,3 +289,65 @@ test('T13 a traveller lane packs its journeys (group 0), their stops (1) and the
   assert.ok(Math.max(...r0) < Math.min(...r1), `journeys ${r0} not above stops ${r1}`);
   assert.ok(Math.max(...r1) < Math.min(...r2), `stops ${r1} not above the rest ${r2}`);
 });
+
+test('T14 a bar or a window that goes on past an edge of the track says so on that side, at six scales; one that ends inside does not', () => {
+  // A reign of 55 years (716-661 a.e.c.), a bar of 2 years in the middle of it and a moment whose window spans the reign.
+  // For every scale, a view inside the reign (both ends cut), one that starts inside it (only the right end cut), one
+  // that ends inside it, and one that holds it whole.
+  const reign = { id: 'r', name: 'Reinado de Manasés en Judá', cert: 'exact', shape: 'span', start: -715, end: -660, group: 0 };
+  const win = { id: 'w', name: 'Algo de su reinado', cert: 'exact', shape: 'moment', start: -715, end: -660, anchor: -687.5, w0: -715, w1: -660, group: 0 };
+  const seen = new Set();
+  let checked = 0;
+  for (const g of [G, GC]) for (const span of SCALES) {
+    const items = [{ ...reign }, { ...win }];
+    F.measure(items, MEAS, g);
+    const lane = { id: `c${span}`, items };
+    const w = 800, ppy = w / span;
+    // The middle of the reign, a view whose left edge falls 10 years into it, one whose right edge falls 10 years before
+    // its end, and the reign whole in the middle of the view.
+    for (const v0 of [-687.5 - span / 2, -705, -670 - span, -687.5 - span / 2 - 0.0001]) {
+      const out = F.layoutLane(lane, { v0, span }, { w, t0: T0, G: g, key: 'edge' });
+      const bar = out.visible.find((x) => x.id === 'r');
+      assert.ok(bar, `span ${span}, view at ${v0}: the reign is in view`);
+      const x0 = (bar.start - v0) * ppy, x1 = (bar.end - v0) * ppy;
+      const want = [x0 < -0.5, x1 > w + 0.5];
+      seen.add(`${g.coarse}|${want}`);
+      assert.deepEqual([...bar._cut], want, `span ${span}, view at ${v0}: the reign [${x0.toFixed(0)}, ${x1.toFixed(0)}] px says it goes on ${JSON.stringify(bar._cut)}`);
+      // A cut end is not faded as a doubtful date: the edge mark replaces it.
+      if (want[0]) assert.equal(bar._bar[2], 0, 'no doubtful fade on a cut left end');
+      if (want[1]) assert.equal(bar._bar[3], 0, 'no doubtful fade on a cut right end');
+      // A name inside a bar cut on the left starts after the edge mark.
+      if (want[0] && bar._in) assert.ok(bar._lx >= F.EDGE, `span ${span}: the name inside the bar starts at ${bar._lx.toFixed(1)} px, over the edge mark`);
+      const mo = out.visible.find((x) => x.id === 'w');
+      if (mo && mo._win) {
+        const a = (mo.w0 - v0) * ppy, b = (mo.w1 - v0) * ppy;
+        assert.deepEqual([...mo._cut], [a < -0.5, b > w + 0.5], `span ${span}: the window [${a.toFixed(0)}, ${b.toFixed(0)}] px says it goes on`);
+      }
+      checked++;
+    }
+  }
+  // Every case happened on the computer and on the phone: both ends cut, one, the other, and none.
+  for (const coarse of [false, true]) for (const k of ['true,true', 'true,false', 'false,true', 'false,false']) assert.ok(seen.has(`${coarse}|${k}`), `the case ${k} never happened (coarse ${coarse})`);
+  assert.equal(checked, 2 * 6 * 4);
+});
+
+test('T15 a name never covers the edge arrow of its own mark, and still lies inside the track', () => {
+  let cut = 0, checked = 0;
+  for (const g of [G, GC]) for (const seed of [5, 13]) {
+    const lane = syntheticLane(seed);
+    F.measure(lane.items, MEAS, g);
+    for (const span of SCALES) for (const c of [21, 33, 50.5, 79]) {
+      const w = g.coarse ? 338 : 800;
+      for (const it of F.layoutLane(lane, { v0: c - 0.5 * span, span }, { w, t0: T0, G: g, key: `t15${seed}` }).visible) {
+        const a = it._lx, b = it._lx + F.lwOf(it);
+        checked++;
+        assert.ok(a >= -0.01 && b <= w + 0.01, `span ${span}: «${it.name}» label [${a.toFixed(1)}, ${b.toFixed(1)}] is outside [0, ${w}]`);
+        if (!it._cut[0] && !it._cut[1]) continue;
+        cut++;
+        if (it._cut[0]) assert.ok(a >= F.EDGE - 0.01, `span ${span} at ${c}: «${it.name}» label starts at ${a.toFixed(1)} px, over its left arrow`);
+        if (it._cut[1]) assert.ok(b <= w - F.EDGE + 0.01, `span ${span} at ${c}: «${it.name}» label ends at ${b.toFixed(1)} of ${w} px, over its right arrow`);
+      }
+    }
+  }
+  assert.ok(cut > 200 && checked > 2000, `only ${cut} cut marks among ${checked}`);
+});

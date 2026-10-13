@@ -197,6 +197,10 @@
 .m-ventana.topes { border-left: 2px solid currentColor; border-right: 2px solid currentColor; }
 .m-punto { top: calc(50% - 5px); width: 10px; height: 10px; border-radius: 50%; box-sizing: border-box; }
 .m--hueca .m-punto { border: 2px solid; }
+/* Lo que sigue fuera de la vista: una flecha en el borde de la franja que lo corta, sobre la barra aclarada (linea.js,
+   pintarSigue). Sin ella, una barra cortada por el borde parecía empezar o acabar allí. */
+.m-sigue { top: calc(50% - 6px); width: 7px; height: 12px; background: var(--ink-2); clip-path: polygon(100% 0, 45% 50%, 100% 100%, 55% 100%, 0 50%, 55% 0); }
+.m-sigue.der { transform: scaleX(-1); }
 /* Fechas seculares como nota (C-02, C-04): contorno de trazos. */
 .m--secular .m-barra { background: var(--secular-soft) !important; border: 1.2px dashed var(--secular); }
 .m-nombre { top: 0; height: 100%; display: flex; align-items: center; white-space: nowrap; font: 500 var(--fs-sm) var(--font-sans); letter-spacing: 0; color: var(--ink); }
