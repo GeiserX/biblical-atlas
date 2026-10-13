@@ -153,10 +153,17 @@ test('an address that opens a card asks for the detail at the same time as the c
   assert.deepEqual([...page.pageErrors, ...page.consoleErrors, ...map.pageErrors, ...passage.pageErrors, ...passage.consoleErrors], []);
 });
 
-test('a map that never stops moving still gets the detail, once', async () => {
+test('a map that never stops moving still gets the detail when it loads, once', async () => {
   // From the moment the map exists it never stands still: a slow zoom, started again in a microtask whenever the site
-  // stops it, so no frame is drawn with the map at rest. «idle» never fires; the detail has to come by another way.
+  // stops it, so no frame is drawn with the map at rest. «idle» never fires, and the cap of data-chunks.js is dropped
+  // here (the next test has it): the detail has to come with «load».
   const page = await openPage({ hash: 't=50.3000', routes: (p) => p.addInitScript(() => {
+    const later = window.setTimeout;
+    window.__cap = 0;
+    window.setTimeout = function (f, ms, ...rest) {
+      if (ms === 3000 && /data-chunks\.js/.test(new Error().stack)) { window.__cap++; return later(() => {}, 0); }
+      return later.call(this, f, ms, ...rest);
+    };
     window.__idle = 0;
     window.__still = 0;   // times the endless move found the map at rest
     const keep = (m) => {
@@ -176,8 +183,9 @@ test('a map that never stops moving still gets the detail, once', async () => {
   await page.waitForFunction(() => window.BE.chunks.loaded.length, null, { timeout: 15000 });
   assert.deepEqual(await page.evaluate(() => window.BE.chunks.loaded), ['detail']);
   assert.equal(await page.evaluate(() => window.__idle), 0, 'the map stood still: this test proves nothing');
+  assert.equal(await page.evaluate(() => window.__cap), 1, 'the cap was not dropped: this test proves nothing');
   assert.equal(await page.evaluate(() => window.BE.mapa.gl.isMoving()), true);
-  // Past the cap, nobody asked again.
+  // A while later, nobody asked again.
   await page.waitForTimeout(3500);
   assert.equal(count(page, 'data.detail.json'), 1, page.requests.filter((r) => r.includes('data')).join(', '));
   assert.deepEqual([...page.pageErrors, ...page.consoleErrors], []);
