@@ -2,8 +2,8 @@
 // rows of a list have the same name, each one says what tells it apart, taken from its own record, in the search on
 // top and in the landing's box, on the desktop and on a 430-wide phone, where the line is cut: the cut must leave the
 // two rows different, and the row keeps the height of any other row. Typed before the detail arrives, the rows get
-// their line when it does. When the record says the kinship, that is the line. The last test reads every group of
-// namesakes in data/ from scripts/homonyms.py and checks that the built site tells each group apart.
+// their line when it does. When the record says the kinship, that is the line. The last two tests read every group of
+// namesakes in data/ from scripts/homonyms.py and check that the built site tells each group apart, on the phone too.
 //
 // Run from the root of the repository, one browser at a time:
 //   node --test --test-concurrency=1 tests/site/search-namesakes.test.mjs
@@ -241,4 +241,46 @@ test('every group of namesakes in data/ (scripts/homonyms.py) is told apart in t
   console.log(`# ${total} groups: ${Object.entries(groups).map(([k, gs]) => `${gs.length} ${k}`).join(', ')}; ${fails.length} not told apart`);
   assert.deepEqual(fails, []);
   assert.deepEqual(page.pageErrors, []);
+});
+
+test('every group of namesakes on a 430-wide phone, in both lists: the first word that tells a row from its namesakes is on screen', async () => {
+  // The phone cuts each line at about 25 characters. Two namesakes whose lines open alike («rey amalequita de tiempos
+  // de Balaam», «rey amalequita que venció Saúl») lost what told them apart: the shared words go, so the first word that
+  // differs, between the whole lines on screen, must be inside the cut.
+  const groups = JSON.parse(execFileSync('python3', [path.join(ROOT, 'scripts/homonyms.py'), '--json'], { cwd: ROOT, encoding: 'utf8' }));
+  const names = [...new Set(Object.values(groups).flat().map((g) => g.name))];
+  const words = (s) => s.split(/\s+/).filter(Boolean);
+  const fails = [];
+  let rowsChecked = 0;
+  for (const list of LISTS) {
+    const page = await openPage(PHONE, list.hash);
+    for (const name of names) {
+      await page.locator(list.box).fill(name);
+      const rows = await page.locator(list.row).evaluateAll((els, { name, meta, fn }) => {
+        const visible = new Function(`return (${fn})`)();
+        return els.filter((r) => r.querySelector('.be-result__title, .portada-op__tit').textContent.replace(/\d+ con este nombre/, '').trim() === name)
+          .map((r) => ({ full: r.querySelector(meta).textContent, shown: visible(r.querySelector(meta)) }));
+      }, { name, meta: list.meta, fn: visibleText.toString() });
+      for (const r of rows) {
+        const w = words(r.full);
+        let m = -1;
+        for (const o of rows) {
+          if (o === r) continue;
+          const v = words(o.full);
+          let j = 0;
+          while (j < w.length && j < v.length && w[j] === v[j]) j++;
+          m = Math.max(m, j);
+        }
+        if (m < 0) continue;
+        rowsChecked++;
+        const need = w.slice(0, m + 1).join(' ');
+        if (m >= w.length || !r.shown.includes(need)) fails.push(`${list.name} ${name}: «${r.shown}» needs «${need}»`);
+      }
+    }
+    assert.deepEqual(page.pageErrors, [], list.name);
+    await page.context().close();
+  }
+  console.log(`# ${names.length} names, ${rowsChecked} rows with a namesake on screen; ${fails.length} cut before what tells them apart`);
+  assert.ok(rowsChecked > 300, `only ${rowsChecked} rows checked`);
+  assert.deepEqual(fails, []);
 });

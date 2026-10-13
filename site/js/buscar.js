@@ -390,6 +390,23 @@ function distinguishingLine(sel) {
   const trozos = [distinguishingClause(o?.desambiguacion, names, persona), distinguishingClause(o?.resumen, names, persona)];
   return trozos.find((x) => PARENTESCO.test(x)) || trozos.find(Boolean) || '';
 }
+/** La línea de una fila sin las palabras del principio que comparte con la de otra fila homónima de la misma lista, para
+    que el teléfono no corte justo lo que las distingue: «rey amalequita de tiempos de Balaam» y «rey amalequita que
+    venció Saúl…» quedan en «…de tiempos de Balaam» y «…que venció Saúl…». Solo desde dos palabras compartidas, y sin
+    llevarse la preposición o el artículo que abre lo que queda: «el padre de Ehúd» y «el padre de Simeí» quedan en «…de
+    Ehúd» y «…de Simeí», y «hijo de Jonatán» y «hijo de Saúl» no cambian. */
+function sinComienzoComun(line, otras) {
+  const w = line.split(/\s+/);
+  let k = 0;
+  for (const o of otras) {
+    const v = String(o || '').split(/\s+/);
+    let j = 0;
+    while (j < w.length - 1 && j < v.length && norm(w[j]) === norm(v[j])) j++;
+    k = Math.max(k, j);
+  }
+  while (k > 0 && /^(?:de|del|a|al|en|el|la|los|las|y|e|o|u)$/i.test(w[k - 1])) k--;
+  return k >= 2 ? `…${w.slice(k).join(' ')}` : line;
+}
 /** Lo que enseña una fila de resultados, para la lista de arriba y la de la portada: la forma, la palabra del tipo, el
     título, la etiqueta, la línea que lo distingue de otra fila de `list` que se llama igual, el resto de la línea y la
     fecha. La fecha va una sola vez, en su píldora: se quita de la línea lo que es la fecha del resultado, dicha como
@@ -413,7 +430,8 @@ function filaResultado(r, list = []) {
   }
   // Si otra fila de la lista es del mismo tipo y se llama igual, la línea que la distingue va primero; el texto de la
   // ficha del que sale no se repite detrás. «Juan · persona» y «Juan · libro» ya se distinguen por el tipo.
-  const distinguisher = r.sel && list.some((x) => x !== r && x.sel?.tipo === r.sel.tipo && x.titulo === r.titulo) ? distinguishingLine(r.sel) : '';
+  const iguales = r.sel ? list.filter((x) => x !== r && x.sel?.tipo === r.sel.tipo && x.titulo === r.titulo) : [];
+  const distinguisher = iguales.length ? sinComienzoComun(distinguishingLine(r.sel), iguales.map((x) => distinguishingLine(x.sel))) : '';
   if (distinguisher && r.meta) { const o = objetoSel(r.sel); if (r.meta === o?.desambiguacion || r.meta === o?.resumen) meta = ''; }
   return { forma, tipo, deTipo, titulo: r.titulo, etiqueta: r.etiqueta || '', distinguisher, meta, fecha };
 }
