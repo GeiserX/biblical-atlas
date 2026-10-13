@@ -83,6 +83,9 @@ body {
 .be-btn--accent { background: var(--accent); border-color: var(--accent); color: #fff; }
 .be-btn--ghost { background: transparent; border-color: transparent; color: var(--ink-2); }
 .be-btn--icon { width: 36px; padding: 0; }
+/* La luna del modo reunión, en la barra del mapa, del calendario y de «Acerca de» (js/base.js, js/tema.js). */
+#reunion-boton { cursor: pointer; flex: none; }
+#reunion-boton[aria-pressed="true"] { background: var(--gold-soft); color: var(--gold-ink); border-color: var(--gold-line); }
 .be-btn--sm { height: 28px; padding: 0 10px; font-size: var(--fs-xs); border-radius: var(--r-sm); }
 .be-btn--round { border-radius: 50%; }
 
