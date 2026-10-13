@@ -1596,10 +1596,11 @@ function pintarEtiquetas() {
   for (const p of puntos) p.desde = Math.max(p.desde, grupos.libre.get(p.id));
   const extra = (el, sel, prio, pos, desde = -Infinity, esSel = false) => items.push({ id: `~${items.length}`, el, medir: sel ? el.querySelector(sel) : el, prio, desde, hasta: Infinity, pos, esSel });
   // Siguiendo una ruta, el nombre de Pablo cede ante la parada actual, la de antes y la de después, como el de cualquier
-  // otro viajero: en el recorrido de Pedro tapaba Jope, la parada de ese paso.
+  // otro viajero: en el recorrido de Pedro tapaba Jope, la parada de ese paso. Entre ellos y los números de las otras
+  // paradas (89) se guarda el orden de fuera de una ruta: Pablo empata con un número y un viajero va detrás de los dos.
   if (marcaPablo?.puesta) extra(marcaPablo.getElement(), '.pablo-rotulo', vecinos ? 89 : 99, marcaPablo.getLngLat().toArray());
   if (marcaProxima?.puesta) extra(marcaProxima.getElement(), null, 70, marcaProxima.getLngLat().toArray());
-  for (const m of marcasViajero.values()) if (m.puesta) extra(m.el, '.viajero-rotulo', vecinos ? 89 : 90, m.marker.getLngLat().toArray());
+  for (const m of marcasViajero.values()) if (m.puesta) extra(m.el, '.viajero-rotulo', vecinos ? 88 : 90, m.marker.getLngLat().toArray());
   // Solo el lugar incierto elegido, la parada del recorrido o el candidato marcado se libran de esperar a separarse de
   // Jerusalén (ver anclas): los que implica una persona elegida (Getsemaní, Gólgota con Jesús) esperan como los demás.
   const exentoCand = (lid) => selL === lid || !!resaltadoMapa?.has(lid) || candFoco?.lugar === lid;

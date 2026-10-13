@@ -190,6 +190,13 @@ const focus = (page) => page.evaluate(() => {
     if (!r || !inMap(r) || [...drawn, ...culled].some((o) => touch({ left: r.left - 2, right: r.right + 2, top: r.top - 2, bottom: r.bottom + 2 }, o))) continue;
     if (undrawnRoute.some((o) => touch(r, o))) lost.push(`${id} hidden for a stop that is not named`);
   }
+  // A number of another stop goes before a traveller's name, as outside a route: hidden, it touches more than travellers.
+  for (const e of mc.querySelectorAll('.marca-num.sin-etiqueta')) {
+    const r = hiddenBox(e);
+    if (!r || !inMap(r)) continue;
+    const t = drawn.filter((o) => touch({ ...r, bottom: r.bottom - 4 }, o));
+    if (t.length && t.every((o) => o.viajero)) lost.push(`num:${e.dataset.lugar} hidden for ${t.map((o) => o.el.textContent).join(', ')}`);
+  }
   return { inView, named, free, lost, zoom: +m.getZoom().toFixed(2) };
 });
 
@@ -223,7 +230,15 @@ test('430: on every stop of every guided tour, the stop and the ones before and 
   assert.ok(seen > 100, `stops in focus checked: ${seen}`);
   console.log(`named stops in focus: ${nNamed}/${seen}`);
   assert.deepEqual(bad, [], 'stops in focus without a name although only labels outside the route are in the way');
-  assert.deepEqual(lost, [], 'labels outside the route hidden for a stop that is not named');
+  assert.deepEqual(lost, [], 'labels outside the route hidden for a stop that is not named, or numbers hidden for a traveller');
+});
+
+// At 1440 the map is closer and the names of a tour rarely collide: what is checked is that the rule takes nothing
+// from the rest for nothing (Betania's number 1·2 under Jesús's name at the 10th stop of «La última semana»).
+test('1440: on every stop of every guided tour, nothing outside the route is hidden for a stop that is not named, nor a number for a traveller', async () => {
+  const { lost, seen } = await everyTourStop(DESKTOP);
+  assert.ok(seen > 100, `stops in focus checked: ${seen}`);
+  assert.deepEqual(lost, [], 'labels outside the route hidden for a stop that is not named, or numbers hidden for a traveller');
 });
 
 test('430: on every stop of Pablo\'s four journeys, the stop where he is and the ones before and after it are named unless only the route is in the way', async () => {
@@ -246,7 +261,7 @@ test('430: on every stop of Pablo\'s four journeys, the stop where he is and the
   assert.ok(seen > 100, `stops in focus checked: ${seen}`);
   console.log(`named stops in focus: ${nNamed}/${seen}`);
   assert.deepEqual(bad, [], 'stops in focus without a name although only labels outside the route are in the way');
-  assert.deepEqual(lost, [], 'labels outside the route hidden for a stop that is not named');
+  assert.deepEqual(lost, [], 'labels outside the route hidden for a stop that is not named, or numbers hidden for a traveller');
   assert.deepEqual(page.pageErrors, []);
   await page.context().close();
 });
