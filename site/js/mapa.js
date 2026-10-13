@@ -1017,6 +1017,8 @@ function pintarEtiquetasCartas(grupos) {
     m.el.dataset.sel = `carta:${principal.id}`;
     m.el.className = conMarcador(m.el, `pildora-carta${sel ? ' pildora-carta--sel' : ''}${g.cartas.every((x) => x.estado === 'pendiente') ? ' pildora-carta--pendiente' : ''}`);
     m.el.style.setProperty('--carta', colorEscritor(principal.escritor));
+    // El oro de Pablo se aclara en el modo reunión: su letra va con --on-ink; los demás tonos, oscuros en los dos temas, en blanco.
+    m.el.style.setProperty('--carta-letra', colorEscritor(principal.escritor) === oro() ? 'var(--on-ink)' : '#fff');
     m.el.innerHTML = `${esc(sel ? principal.libro : texto)} · ${esc(fecha)}${esc(lleva)}${g.sinDestino ? ' · destino no indicado' : ''}`;
     m.el.setAttribute('aria-label', `Carta: ${g.cartas.map(({ c }) => c.libro).join(', ')}${lleva}`);
   }
