@@ -1,8 +1,9 @@
 // The site offline (site/sw.js, site/js/offline.js, docs/development.md «Sin conexión»), tested in a real headless
 // browser. After one online visit the site opens with no network: the map, the timeline and a card, with no console
-// error; one visit of the map is enough for the calendar too. The detail works offline once it was fetched online, and a detail from another version is refused, not
-// merged. A new deploy shows the notice and waits for the click. file:// opens as before, with no worker. And every
-// file the three pages ask for when they open is in the precache list.
+// error; the calendar too, with its sources once the detail came. The detail works offline once it was fetched online,
+// and a detail from another version is refused, not merged. A new deploy shows the notice and waits for the click.
+// file:// opens as before, with no worker. And every file the three pages ask for when they open is in the precache
+// list.
 //
 // "No network" is three things at once, so that no path can reach the server by mistake: the context is offline, the
 // local server cuts every connection, and every other host is aborted (also for the worker's own requests).
