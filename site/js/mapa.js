@@ -1238,9 +1238,14 @@ const ZONA = '.marca-lugar, .marca-hallazgo, .viajero, .cand';
 const MARCA = `${ZONA}, .marca-region, .marca-agua`;
 const DIBUJO = '.marca-lugar .punto, .marca-lugar .etiqueta, .marca-lugar .etiqueta *, .hallazgo-dibujo, .hallazgo-dibujo *, .viajero-punto, .viajero-rotulo, .cand-punto, .cand-rotulo, .cand-rotulo *, .region-texto, .region-texto *, .marca-agua .etiqueta, .marca-agua .etiqueta *';
 const CENTRO = '.punto, .hallazgo-dibujo > span, .viajero-punto, .cand-punto';
-/** Lo primero que se ve en (x, y) entre las marcas del mapa: un punto, un nombre o un cuadrado, o una marca sin zona
-    (una burbuja, un número). El borde transparente de una zona no cuenta, y un nombre escondido no está en la pila. */
-const dibujadoEn = (x, y) => document.elementsFromPoint(x, y).find((n) => n.matches(DIBUJO) || (n.closest('.maplibregl-marker') && !n.closest(MARCA))) || null;
+/** Lo que se ve en (x, y) entre las marcas del mapa. Primero lo macizo: un punto, un cuadrado de hallazgo o una marca
+    sin zona (una burbuja, un número). Después, un nombre: su caja es casi toda aire entre letras, así que no tapa el punto
+    que queda debajo (el de Atalía bajo «PANFILIA»). El borde transparente de una zona no cuenta, ni un nombre escondido. */
+const MACIZO = '.marca-lugar:not(.marca-lugar--difuso) > .punto, .hallazgo-dibujo > span, .viajero-punto, .cand-punto';
+const dibujadoEn = (x, y) => {
+  const pila = document.elementsFromPoint(x, y);
+  return pila.find((n) => n.matches(MACIZO) || (n.closest('.maplibregl-marker') && !n.closest(MARCA))) || pila.find((n) => n.matches(DIBUJO)) || null;
+};
 /** La marca que recibe un clic en (x, y): la de lo que se ve ahí; si solo hay zonas, la del punto más cercano. */
 function marcaCercana(x, y) {
   const dibujado = dibujadoEn(x, y);

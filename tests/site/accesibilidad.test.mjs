@@ -595,6 +595,7 @@ test('1440: a click on what is drawn wins over the zone of a nearer marker on to
     s = await page.evaluate(() => {
       const ZONA = '.marca-lugar, .marca-hallazgo, .viajero';
       const DRAWN = '.marca-lugar .punto, .marca-lugar .etiqueta, .marca-lugar .etiqueta *, .hallazgo-dibujo, .hallazgo-dibujo *, .viajero-punto, .viajero-rotulo';
+      const SOLID = '.marca-lugar:not(.marca-lugar--difuso) > .punto, .hallazgo-dibujo > span, .viajero-punto, .cand-punto';
       const mid = (e) => { const r = e.querySelector('.punto, .hallazgo-dibujo > span, .viajero-punto').getBoundingClientRect(); return [(r.left + r.right) / 2, (r.top + r.bottom) / 2]; };
       for (const d of window.__be.map.getContainer().querySelectorAll('.marca-lugar .etiqueta, .hallazgo-dibujo > span')) {
         const own = d.closest(ZONA);
@@ -604,7 +605,10 @@ test('1440: a click on what is drawn wins over the zone of a nearer marker on to
           for (let y = Math.ceil(r.top) + 1; y < r.bottom - 1; y += 1) {
             const top = document.elementFromPoint(x, y), other = top?.closest(ZONA);
             if (!other || other === own || top.matches(DRAWN)) continue;
-            if (document.elementsFromPoint(x, y).find((n) => n.matches(DRAWN))?.closest(ZONA) !== own) continue;
+            const pila = document.elementsFromPoint(x, y);
+            if (pila.find((n) => n.matches(DRAWN))?.closest(ZONA) !== own) continue;
+            // Over the dot of another marker, the dot wins (next tests): only pixels clear of other dots.
+            if (pila.some((n) => n.matches(SOLID) && n.closest(ZONA) !== own)) continue;
             const [px, py] = mid(other);
             const dOther = Math.hypot(px - x, py - y), dOwn = Math.hypot(ox - x, oy - y);
             if (dOther < dOwn - 1) return { id: own.dataset.sel, over: other.dataset.sel, x, y, dOther: Math.round(dOther * 10) / 10, dOwn: Math.round(dOwn * 10) / 10 };
@@ -644,6 +648,8 @@ test('1440: a click on a region, sea or river name wins over the zone of a point
             const pila = document.elementsFromPoint(x, y);
             const first = pila.find((n) => n.matches(NAME) || n.matches('.punto, .etiqueta, .etiqueta *, .hallazgo-dibujo, .hallazgo-dibujo *, .viajero-punto, .viajero-rotulo, .cand-punto, .cand-rotulo, .cand-rotulo *'));
             if (first?.closest(MARCA) !== own) continue;
+            // Over a dot, the dot wins (next tests): only pixels of the name clear of every dot.
+            if (pila.some((n) => n.matches('.marca-lugar:not(.marca-lugar--difuso) > .punto, .hallazgo-dibujo > span, .viajero-punto, .cand-punto'))) continue;
             return { id: own.dataset.sel, over: top.dataset.sel, x, y };
           }
         }
@@ -690,6 +696,43 @@ test('1440: a dot under the zone of a neighbour keeps its own hover and click', 
   await page.mouse.click(s.x, s.y);
   await page.waitForFunction(() => window.BE.E.sel, null, { timeout: 5000 }).catch(() => {});
   assert.equal(await selected(page), s.id, `a click on the centre of the dot of ${s.id}, under the zone of ${s.over}, chose ${await selected(page)}`);
+  assert.deepEqual(page.errors, []);
+  await page.context().close();
+});
+
+// A dot under a region, sea or river name: the name's box is mostly air between letters, so the dot under it keeps its
+// click (Atalía under «PANFILIA» went to Panfilia on CI, where the fonts put the name over the dot).
+test('1440: a dot under a region, sea or river name keeps its click', async () => {
+  let page, s = null;
+  for (const hash of ['t=33.3000', 't=50.3000', 't=62.0000', 't=30.3000', 't=-1473.5000']) {
+    page = await keyboardPage('1440', hash);
+    for (const zoom of [null, 6, 5.5, 5]) {
+      if (zoom) { await page.evaluate((z) => window.__be.map.jumpTo({ zoom: z }), zoom); await settle(page); }
+      s = await page.evaluate(() => {
+        const NAME = '.region-texto, .region-texto *, .marca-agua .etiqueta, .marca-agua .etiqueta *';
+        for (const el of window.__be.map.getContainer().querySelectorAll('.marca-lugar:not(.marca-lugar--difuso):not(.agrupado)')) {
+          if (!el.checkVisibility()) continue;
+          const dot = el.querySelector(':scope > .punto'), r = dot.getBoundingClientRect();
+          const x = (r.left + r.right) / 2, y = (r.top + r.bottom) / 2;
+          if (x < 0 || y < 0 || x >= innerWidth || y >= innerHeight) continue;
+          const pila = document.elementsFromPoint(x, y), at = pila.indexOf(dot);
+          // The dot is in the stack, and a visible region, sea or river name is painted above it.
+          if (at < 0) continue;
+          const name = pila.slice(0, at).find((n) => n.matches(NAME));
+          if (!name) continue;
+          return { id: el.dataset.sel, over: name.closest('.marca-region, .marca-agua').dataset.sel, x, y };
+        }
+        return null;
+      });
+      if (s) break;
+    }
+    if (s) break;
+    await page.context().close();
+  }
+  assert.ok(s, 'no dot under a region, sea or river name in any view tried');
+  await page.mouse.click(s.x, s.y);
+  await page.waitForFunction(() => window.BE.E.sel, null, { timeout: 5000 }).catch(() => {});
+  assert.equal(await selected(page), s.id, `a click on the centre of the dot of ${s.id}, under the name of ${s.over}, chose ${await selected(page)}`);
   assert.deepEqual(page.errors, []);
   await page.context().close();
 });
