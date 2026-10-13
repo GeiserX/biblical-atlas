@@ -345,12 +345,20 @@ function esFecha(x) {
 // ---------------------------------------------------------------------------
 // Homónimos en la lista: la línea que los distingue
 // ---------------------------------------------------------------------------
+// Un trozo que empieza por el parentesco: «hijo de Jonatán», «Hijo menor de Moisés», «la nuera de Judá».
+const PARIENTE = '(?:hij[oa]|padre|madre|espos[oa]|herman[oa]|niet[oa]|bisniet[oa]|nuera|suegr[oa]|yerno|tío|tía|sobrin[oa]|prim[oa]|cuñad[oa]|abuel[oa]|descendiente|antepasad[oa]|primogénit[oa]|viuda|marido|concubina)';
+const PARENTESCO = new RegExp(`^(?:(?:el|la|su|medi[oa]|segund[oa]|primer[oa]?|tercer[oa]?|cuart[oa]|últim[oa])\\s+)?${PARIENTE}\\b`, 'i');
 /** El primer trozo de un texto de la ficha que puede distinguirla: su primera frase sin paréntesis y sin el nombre
     delante (dicho también de dos formas, «Paltí o Paltiel hijo de Lais», o con artículo, «El Matat padre de Helí»),
-    hasta la primera coma (el punto de «c. 6 e.c.» no acaba la frase), saltando los trozos que solo citan la fuente («entrada núm. 2 de Perspicacia») y sin la
-    conjunción que la coma deja colgando («El padre de Zabud y, según Perspicacia…»). Una frase que solo dice quién no es
+    hasta la primera coma (el punto de «c. 6 e.c.» no acaba la frase), saltando los trozos que solo citan la fuente
+    («entrada núm. 2 de Perspicacia») y sin la conjunción que la coma deja colgando («El padre de Zabud y, según
+    Perspicacia…»). En una persona, si ese trozo es corto (tres palabras como mucho) y no dice el parentesco, y el
+    siguiente empieza por él, va el siguiente: «Acán de Judá, hijo de Carmí» da «hijo de Carmí», y «Apóstol, hijo de
+    Alfeo», «hijo de Alfeo». Solo el siguiente, y no tras un trozo largo ni con «su»: entonces suele hablar de otra
+    persona de la frase («Sumo sacerdote casado con Jehoseba, hija del rey Jehoram», «Guerrero valiente y leal a David,
+    su tío»), como en un lugar («Pueblo de Harúz, abuelo materno del rey Amón»). Una frase que solo dice quién no es
     («No es el Jabín…») no distingue nada. */
-function distinguishingClause(text, names) {
+function distinguishingClause(text, names, persona) {
   const sinNombre = (s) => {
     const r = s.replace(/^(?:el|la)\s+/i, '');
     for (const n of names) if (n && norm(r).startsWith(norm(n)) && /^[\s,]/.test(r.slice(n.length))) return r.slice(n.length).replace(/^[\s,]+/, '');
@@ -361,11 +369,10 @@ function distinguishingClause(text, names) {
   const resto = sinNombre(t);
   if (resto != null) t = (/^[ou]\s/.test(resto) ? sinNombre(resto.slice(2)) : null) ?? resto;
   if (/^no\b/i.test(t)) return '';
-  const part = t.split(/,\s+/).find((x) => x && !/Perspicacia|\bnúm\./.test(x)) || '';
-  return part.replace(/\s+(?:y|e|o|u|ni)$/, '');
+  const parts = t.split(/,\s+/).filter((x) => x && !/Perspicacia|\bnúm\./.test(x));
+  const i = persona && parts.length > 1 && parts[0].split(' ').length <= 3 && !PARENTESCO.test(parts[0]) && PARENTESCO.test(parts[1]) && !/^su\s/i.test(parts[1]) ? 1 : 0;
+  return (parts[i] || '').replace(/\s+(?:y|e|o|u|ni)$/, '');
 }
-// Un trozo que empieza por el parentesco: «hijo de Jonatán», «Hijo menor de Moisés», «la nuera de Judá».
-const PARENTESCO = /^(?:(?:el|la|su|medi[oa]|segund[oa]|primer[oa]?|tercer[oa]?|cuart[oa]|últim[oa])\s+)?(?:hij[oa]|padre|madre|espos[oa]|herman[oa]|niet[oa]|bisniet[oa]|nuera|suegr[oa]|yerno|tío|tía|sobrin[oa]|prim[oa]|cuñad[oa]|abuel[oa]|descendiente|antepasad[oa]|primogénit[oa]|viuda|marido|concubina)\b/i;
 /** La línea que distingue una ficha de otra que se llama igual (docs/ideas/homonimos.md), sacada de la propia ficha: el
     primer trozo de `desambiguacion` o de `resumen` que dice el parentesco («hijo de Jonatán» y «hijo de Saúl y
     Rizpá»); si ninguno lo dice, el de `desambiguacion`, que dice la época, el lugar o el oficio («El rey de Guerar en
@@ -374,7 +381,8 @@ const PARENTESCO = /^(?:(?:el|la|su|medi[oa]|segund[oa]|primer[oa]?|tercer[oa]?|
     tests/site/search-namesakes.test.mjs con scripts/homonyms.py. */
 function distinguishingLine(sel) {
   const o = objetoSel(sel), names = [o?.nombre || o?.titulo, ...(o?.nombres || []).map((n) => n.nombre)];
-  const trozos = [distinguishingClause(o?.desambiguacion, names), distinguishingClause(o?.resumen, names)];
+  const persona = sel?.tipo === 'persona';
+  const trozos = [distinguishingClause(o?.desambiguacion, names, persona), distinguishingClause(o?.resumen, names, persona)];
   return trozos.find((x) => PARENTESCO.test(x)) || trozos.find(Boolean) || '';
 }
 /** Lo que enseña una fila de resultados, para la lista de arriba y la de la portada: la forma, la palabra del tipo, el

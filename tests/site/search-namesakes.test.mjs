@@ -171,6 +171,12 @@ test('Ocozías and Jehoacaz: the kinship goes first, even when only the summary 
   await checkNamesakes('Jehoacaz', ['Jehú', 'Josías']);
 });
 
+test('Acán: the kinship right after a short first piece is the line', async () => {
+  // data/people/acan-hijo-de-carmi.yaml: «Acán de Judá, hijo de Carmí, …». The first piece, «de Judá», says less than
+  // the kinship that follows it, which tells him from the Acán son of Ézer.
+  await checkNamesakes('Acán', ['Carmí', 'Ézer']);
+});
+
 test('Mizpá: each of the two places says where it was, from its own summary', async () => {
   // Places carry no `disambiguation`: the line is the head of the summary, «Ciudad de Benjamín» and «Ciudad de Galaad».
   await checkNamesakes('Mizpá', ['Benjamín', 'Galaad']);
