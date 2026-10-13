@@ -7,7 +7,8 @@
 // What it flags, in the dark look (each rule is `check` below):
 //   - fondo-claro: a background that stays light and is the very value of the light look (a hardcoded colour).
 //   - contraste: text under 4.5:1 (3:1 when large) over what is painted under it, composited; over the map, the worse of
-//     a light and a black map. A label on the map is measured over its own halo.
+//     a light and a black map. A label on the map is measured over its own halo; a mark's text with no halo, over its
+//     own pill or box, and not at all when it has neither.
 //   - borde-claro: a border that keeps a light value of the light look while what is under it turned dark (a white ring
 //     on a dark page; a white glyph on a coloured node that keeps its colour is not one).
 //   - halo-claro: a text or box shadow that keeps a light value of the light look (a white glow or ring).
@@ -16,7 +17,9 @@
 // every surface in the dark look and in the light one. BE_SITE_DIR=<dir> tests another copy of the site.
 // What is under an element is read from the paint order at its centre (elementsFromPoint, with pointer events forced on),
 // so a sibling painted below it counts: the flag under the date of the timeline cursor, the bar under a name. An element
-// off screen or covered by another falls back to its ancestors.
+// off screen or covered by another falls back to its ancestors. Under a brightness() filter (the map dimmed in the dark
+// look) every colour is read as painted, dimmed by its factor; under any other filter, backgrounds are left to the
+// captures.
 import { test, before, after } from 'node:test';
 import assert from 'node:assert/strict';
 import http from 'node:http';
@@ -291,11 +294,12 @@ function audit({ allow }) {
   /** The background colours the element may sit on: one when something opaque is under it, two over the map. */
   const under = (el, own, snap = dark) => {
     const b = bottoms(el, own, snap);
-    if (b.gradient) return { map: false, colours: [] };
+    if (b.gradient) return { map: false, colours: [], alpha: 1 };
     const page = pageOf(snap);
     const basis = b.layers.length && b.layers[b.layers.length - 1][3] >= 1 ? [b.layers.pop()]
       : b.map ? [[200, 200, 200, 1], [0, 0, 0, 1]] : [page && page[3] >= 1 ? page : snap === dark ? [27, 24, 19, 1] : [255, 255, 255, 1]];
-    return { map: !!b.map, colours: basis.map((x) => b.layers.reduceRight((acc, l) => over(l, acc), x)) };
+    const alpha = b.layers.reduce((m, l) => Math.max(m, l[3]), 0);
+    return { map: !!b.map, colours: basis.map((x) => b.layers.reduceRight((acc, l) => over(l, acc), x)), alpha };
   };
   /** True when an SVG shape's fill paints something: an open path or a line has a fill that covers nothing. */
   const paintsFill = (el) => {
@@ -323,6 +327,24 @@ function audit({ allow }) {
     found.push({ rule, target: name(el) + (part ? `::${part}` : ''), what, allowed, text: (el.textContent || '').trim().slice(0, 40) });
   };
   const opacity = (el) => { let a = 1; for (let n = el; n && n.nodeType === 1; n = n.parentElement) a *= parseFloat(getComputedStyle(n).opacity); return a; };
+  /** The filters over an element in the dark look: the product of their brightness() factors (saturate() leaves a
+      colour as light as it was), or null when one of them is anything else. */
+  const dimOf = (el) => {
+    let f = 1;
+    for (let n = el; n && n.nodeType === 1; n = n.parentElement) {
+      const j = index.get(n);
+      const s = j === undefined ? getComputedStyle(n).filter : dark[j].el.filter;
+      if (!s || s === 'none') continue;
+      const fns = [...s.matchAll(/([a-z-]+)\(([^()]*)\)/g)];
+      if (fns.map((m) => m[0]).join(' ') !== s.trim()) return null;
+      for (const [, fn, arg] of fns) {
+        if (fn === 'brightness') f *= parseFloat(arg) / (arg.trim().endsWith('%') ? 100 : 1);
+        else if (fn !== 'saturate') return null;
+      }
+    }
+    return f;
+  };
+  const dim = (c, f) => [c[0] * f, c[1] * f, c[2] * f, c[3]];
 
   els.forEach((el, i) => {
     for (const part of ['el', 'before', 'after']) {
@@ -330,12 +352,14 @@ function audit({ allow }) {
       if (!d) continue;
       const tag = part === 'el' ? '' : part;
       const svg = isSvg(el);
-      // Backgrounds (HTML only: an SVG element has none). A picture (a url() background) or anything under a filter (the
-      // relief of the landing, dimmed by brightness()) is not a flat colour: it is left to the captures.
+      // Backgrounds (HTML only: an SVG element has none). A picture (a url() background) or anything under a filter other
+      // than brightness() is not a flat colour: it is left to the captures. Under brightness() (the map of the dark look)
+      // the colour is read as painted, dimmed by its factor.
       const bg = parse(d.bg);
-      const filtered = (() => { for (let n = el; n && n.nodeType === 1; n = n.parentElement) { const j = index.get(n); if ((j === undefined ? getComputedStyle(n).filter : dark[j].el.filter) !== 'none') return true; } return false; })();
-      if (!svg && bg && bg[3] >= 0.35 && !d.img.startsWith('url(') && !filtered) {
-        const seen = under(el, false).colours.map((u) => over(bg, u));
+      const f = dimOf(el);
+      if (!svg && bg && bg[3] >= 0.35 && !d.img.startsWith('url(') && f !== null) {
+        const raw = under(el, false).colours.map((u) => over(bg, u));
+        const seen = raw.map((c) => dim(c, f));
         const lightest = seen.reduce((m, c) => Math.max(m, lum(c)), 0);
         if (seen.length && lightest > LIGHT && Math.min(...seen.map(lum)) > LIGHT * 0.5 && l && d.bg === l.bg) {
           flag(el, tag, 'fondo-claro', `fondo ${hex(bg)}, el mismo que en claro`);
@@ -370,7 +394,7 @@ function audit({ allow }) {
         if (!said || !/[\p{L}\p{N}]/u.test(said[1]) || !pfg || el.closest('[disabled], [aria-disabled="true"], .atenuado, .sr-only')) continue;
         const backs = under(el, true).colours.map((u) => (pbg && pbg[3] > 0 ? over(pbg, u) : u));
         if (!backs.length) continue;
-        const worst = Math.min(...backs.map((b) => ratio(over(pfg, b), b)));
+        const worst = Math.min(...backs.map((b) => ratio(dim(over(pfg, b), f ?? 1), dim(b, f ?? 1))));
         if (worst < 4.5 - 0.005) flag(el, tag, 'contraste', `${Math.round(worst * 100) / 100}:1 (pide 4.5:1), texto ${hex(pfg)} sobre ${hex(backs[0])}`);
         continue;
       }
@@ -392,11 +416,16 @@ function audit({ allow }) {
       // A text drawn with a halo (two or more glows with no offset, the names on the map and on the landing's small
       // maps) is read over its halo, the colour it was drawn to sit on.
       const glows = (d.ts.match(/(rgba?\([^)]*\)|color\(srgb [^)]*\)) 0px 0px/g) || []).map((g) => parse(g.replace(/ 0px 0px$/, ''))).filter((c) => c && c[3] >= 0.5);
-      const halo = glows.length >= (el.closest('.maplibregl-marker') ? 1 : 2) && glows[0];
-      if (el.closest('.maplibregl-marker') && !halo) continue;   // a name drawn over the map with no halo: nothing to measure
-      const backs = halo ? [over(halo, [0, 0, 0, 1])] : under(el, true).colours;
+      const marker = !!el.closest('.maplibregl-marker');
+      const halo = glows.length >= (marker ? 1 : 2) && glows[0];
+      const below = halo ? null : under(el, true);
+      // A name drawn over the map with no halo and no box of its own: nothing to measure. A mark's text on a pill or a
+      // box (the selected letter, a group of places, a candidate's label) is measured on it.
+      if (marker && !halo && below.map && below.alpha < 0.35) continue;
+      const k = f ?? 1;
+      const backs = halo ? [over(halo, [0, 0, 0, 1])] : below.colours;
       if (!backs.length) continue;
-      const worst = Math.min(...backs.map((b) => ratio(over(fg, b), b)));
+      const worst = Math.min(...backs.map((b) => ratio(dim(over(fg, b), k), dim(b, k))));
       const need = d.size >= 24 || (d.weight >= 700 && d.size >= 18.66) ? 3 : 4.5;
       if (worst < need - 0.005) flag(el, '', 'contraste', `${Math.round(worst * 100) / 100}:1 (pide ${need}:1), texto ${hex(fg)} sobre ${hex(backs[0])}`);
     }
