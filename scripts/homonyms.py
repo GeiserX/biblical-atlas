@@ -18,6 +18,8 @@ from pathlib import Path
 
 import yaml
 
+from validate import clave_nombre
+
 ROOT = Path(__file__).resolve().parent.parent
 # Tipo del sitio, carpeta de data/ y clave del nombre visible.
 KINDS = [('person', 'people', 'name'), ('place', 'places', 'name'), ('event', 'events', 'title')]
@@ -25,15 +27,18 @@ Loader = getattr(yaml, 'CSafeLoader', yaml.SafeLoader)
 
 
 def groups(data_dir):
-    """{kind: [{'name': ..., 'ids': [...]}, ...]}: los grupos ordenados por nombre y los ids de cada uno también."""
+    """{kind: [{'name': ..., 'ids': [...]}, ...]}: los grupos ordenados por nombre y los ids de cada uno también. Dos
+    nombres son el mismo si tienen la misma clave_nombre de validate.py, la única que cambiará con más idiomas; hoy es
+    el nombre exacto, con sus tildes (Aná y Ana no son homónimos)."""
     out = {}
     for kind, folder, key in KINDS:
-        by_name = defaultdict(list)
+        by_key = defaultdict(list)
         for f in sorted((data_dir / folder).glob('*.yaml')):
             o = yaml.load(f.read_text(encoding='utf-8'), Loader=Loader) or {}
             if o.get(key) and o.get('id'):
-                by_name[o[key]].append(o['id'])
-        out[kind] = [{'name': n, 'ids': sorted(ids)} for n, ids in sorted(by_name.items()) if len(ids) > 1]
+                by_key[clave_nombre(o[key])].append((o[key], o['id']))
+        grupos = [g for g in by_key.values() if len(g) > 1]
+        out[kind] = sorted(({'name': g[0][0], 'ids': sorted(i for _, i in g)} for g in grupos), key=lambda g: g['name'])
     return out
 
 
