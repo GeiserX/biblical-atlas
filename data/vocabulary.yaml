@@ -476,8 +476,10 @@ words:
     rule: la ficha de quien recibe el consejo
 
 # Lo que se queda fuera del vocabulario. La relación lo lleva en `caption` y, si lo tiene, en `inverse_caption`:
-# son sus dos textos y no salen de ninguna palabra. `why` dice por qué no es una palabra. Con `fix`, la entrada
-# es provisional: nombra la decisión de docs/investigacion/modelo.md que la quita, y validate avisa mientras exista.
+# son sus dos textos y no salen de ninguna palabra. `why` dice por qué no es una palabra. Cada entrada la lleva al
+# menos una relación; validate da error con una que no lleva ninguna. `fix` nombra la decisión de
+# docs/investigacion/modelo.md que quita el texto, y una relación que lo lleva es un error (outside_pending): una
+# entrada con `fix` nunca valida, así que solo vive en una rama mientras se aplica esa decisión, y no llega a main.
 # El verbo de una relación con `caption` es ese texto. Visto desde el destino es su `inverse_caption` o, si no lo
 # lleva, el `inverse_verb` de su tipo. Un `caption` que no está en esta lista avisa como unlisted_caption: así
 # llegan los textos de una rama de libro que todavía no tienen palabra.
@@ -514,16 +516,6 @@ outside:
     caption: compañero de crianza
     inverse_caption: compañero de crianza
     why: Dice con quién se crio, no un trato entre ellos; solo sale en este par.
-  - type: tie
-    caption: custodio
-    inverse_caption: custodiado por
-    why: Dice lo que es la ficha y no lo que es el destino; con la palabra custodian va en la otra ficha.
-    fix: T1
-  - type: tie
-    caption: consejero
-    inverse_caption: lo tenía de consejero
-    why: Dice lo que es la ficha y no lo que es el destino; con la palabra adviser va en la otra ficha.
-    fix: T1
   - type: appears_to
     caption: se le aparece camino de Damasco
     inverse_caption: lo ve resucitado camino de Damasco
@@ -540,38 +532,6 @@ outside:
     caption: se le muestra en una visión, de pie a la derecha de Dios
     inverse_caption: lo ve en el cielo, en una visión
     why: Cada aparición dice cómo fue; el verbo del tipo es demasiado corto para eso.
-  - type: kin
-    caption: hijo de Jerjes I
-    why: Está al revés; dice lo que es la ficha y no lo que es el destino.
-    fix: K1
-  - type: kin
-    caption: hijo de Darío I
-    why: Está al revés; dice lo que es la ficha y no lo que es el destino.
-    fix: K1
-  - type: kin
-    caption: hijo de Nabonido
-    why: Está al revés; dice lo que es la ficha y no lo que es el destino.
-    fix: K1
-  - type: kin
-    caption: padre de Cambises II
-    why: Está al revés y en la ficha que no manda.
-    fix: K1
-  - type: kin
-    caption: prima de Mardoqueo
-    why: Está al revés; además hay que decidir si la crianza de Ester es un segundo hecho.
-    fix: K1
-  - type: kin
-    caption: esposa de Asuero
-    why: Está al revés y en la ficha que no manda.
-    fix: K1
-  - type: kin
-    caption: hijastro e hijo adoptivo
-    why: Son dos hechos en una palabra, escritos en la ficha que no manda.
-    fix: K2
-  - type: kin
-    caption: quizás hijo
-    why: La duda va en `inferred` y en `status`, no en la palabra; hay que leer quién es hijo de quién.
-    fix: K2
 
 # Un cargo tiene un solo texto en español. Si lo ejercen hombres y mujeres y el español los distingue, son dos
 # cargos: king y queen, prophet y prophetess. El segundo se añade cuando una fuente llama así a alguien.

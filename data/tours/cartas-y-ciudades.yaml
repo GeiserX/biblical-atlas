@@ -4,8 +4,8 @@ title: Las cartas de Pablo y las ciudades que las recibieron
 stops:
 - sel: letter:1-tesalonicenses
   t: 50.8
-  text: Otoño de 50. Desde Corinto, Pablo escribe con Silas y Timoteo a la congregación de Tesalónica, de la que
-    había tenido que salir de noche. Es su primera carta de la Biblia.
+  text: Otoño de 50. Desde Corinto, Pablo escribe con Silas y Timoteo a la congregación de Tesalónica, de la que había tenido
+    que salir de noche. Probablemente es su primera carta de la Biblia.
   passages:
   - 1Te 1:1
   - Hch 17:1-10
@@ -136,5 +136,10 @@ sources:
 - it-epafrodito
 reason: Lugares y fechas de la Tabla de los libros, del estudio 3 y de los artículos de Perspicacia de cada carta;
   cada parada sigue la ficha de su carta.
-checked_on: '2026-09-28'
+history:
+- date: '2026-10-12'
+  change: 'La parada de 1 Tesalonicenses ya no da por seguro que sea su primera carta: la nota de estudio de 1Te 2:13, la
+    publicación más reciente, lo da como probable.'
+  source: 1-tesalonicenses-2
+checked_on: '2026-10-12'
 status: verified
