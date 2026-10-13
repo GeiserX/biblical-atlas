@@ -375,4 +375,16 @@ test('T15 a name never covers the edge arrow of its own mark, and still lies ins
   }
   console.log(`T15: ${cut} cut marks among ${checked}; ${hidden} ends where the name has no room beside its dot and covers the arrow zone`);
   assert.ok(cut > 200 && checked > 2000, `only ${cut} cut marks among ${checked}`);
+  // A name that fits on both sides of its dot goes on the side clear of the arrow zone, and the arrow is drawn. A moment
+  // whose window starts before the view, its dot 44 px from the left edge, held in an edge row as during a drag: on the
+  // left its name would start at 5 px, over the arrow; on the right it fits whole.
+  const m = { id: 'p', name: 'Roma', cert: 'exact', shape: 'moment', start: 38, end: 41, anchor: 40.44, w0: 38, w1: 41, group: 0 };
+  F.measure([m], MEAS, G);
+  const w = 800, hold = { rows: new Map(), edge: new Map([['p', 100000]]) };
+  const it = F.layoutLane({ id: 'pref', items: [m] }, { v0: 40, span: 8 }, { w, t0: T0, G, key: 'pref' }, hold).visible[0];
+  const d0 = it._dot - G.dotR, d1 = it._dot + G.dotR, lw = F.lwOf(it);
+  assert.deepEqual([...it._cut], [true, false]);
+  assert.ok(d0 - 4 - lw >= 2 && d0 - 4 - lw < F.EDGE, 'the left side is only free over the arrow zone');
+  assert.equal(it._lx, d1 + 4, `«Roma» sits at ${it._lx.toFixed(1)} px, not right of its dot at ${it._dot.toFixed(1)}`);
+  assert.deepEqual([...F.arrows(it, w)], [true, false], 'the left arrow is drawn');
 });
