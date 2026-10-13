@@ -172,13 +172,10 @@ const focus = (page) => page.evaluate(() => {
   // a route (Epafras's name off the map keeps Samos without a name at the 15th stop of the third journey).
   const culled = [...mc.querySelectorAll('.etiqueta, .marca-num, .pablo-rotulo, .viajero-rotulo, .cand-rotulo, .rotulo-zona, .pildora-carta')]
     .filter((e) => e.closest('.sin-etiqueta')).map(hiddenBox).filter((r) => r && !inMap(r));
-  // A name outside the route lost for nothing: hidden, in the map, touching nothing drawn, but touching the name of a
-  // stop in focus that is not drawn either (Listra and Derbe at the 6th stop of the first journey). A stop in focus
-  // takes a place only when its name is drawn there.
-  const lost = [];
-  const undrawnRoute = ids.map((id) => mc.querySelector(`.marca-lugar[data-sel="lugar:${CSS.escape(id)}"]`))
-    .filter((mk) => mk?.classList.contains('sin-etiqueta') && mk.checkVisibility() && !mk.classList.contains('agrupado'))
-    .map((mk) => hiddenBox(mk.querySelector('.etiqueta'))).filter((r) => r && inMap(r));
+  // The names outside the route hidden in the map although they touch nothing drawn: the caller asks whether the map
+  // names them without the rule of the stops in focus (lostForNothing). A stop in focus takes a place only when its
+  // name is drawn there (Listra and Derbe hid for Iconio, not drawn either, at the 6th stop of the first journey).
+  const lost = [], waiting = [];
   for (const mk of mc.querySelectorAll('.marca-lugar.sin-etiqueta')) {
     const id = mk.dataset.sel.slice(6), k = mk.classList;
     if (route.has(id) || !mk.checkVisibility() || k.contains('agrupado') || k.contains('oculto') || k.contains('otra-epoca') || k.contains('region') || k.contains('agua')) continue;
@@ -188,7 +185,7 @@ const focus = (page) => page.evaluate(() => {
     const r = hiddenBox(mk.querySelector('.etiqueta'));
     // The reparto measures each box once and rounds both outwards: up to 2 px more here (Cos under Samos, 2 px apart).
     if (!r || !inMap(r) || [...drawn, ...culled].some((o) => touch({ left: r.left - 2, right: r.right + 2, top: r.top - 2, bottom: r.bottom + 2 }, o))) continue;
-    if (undrawnRoute.some((o) => touch(r, o))) lost.push(`${id} hidden for a stop that is not named`);
+    waiting.push(id);
   }
   // A number of another stop goes before a traveller's name, as outside a route: hidden, it touches more than travellers.
   for (const e of mc.querySelectorAll('.marca-num.sin-etiqueta')) {
@@ -197,8 +194,23 @@ const focus = (page) => page.evaluate(() => {
     const t = drawn.filter((o) => touch({ ...r, bottom: r.bottom - 4 }, o));
     if (t.length && t.every((o) => o.viajero)) lost.push(`num:${e.dataset.lugar} hidden for ${t.map((o) => o.el.textContent).join(', ')}`);
   }
-  return { inView, named, free, lost, zoom: +m.getZoom().toFixed(2) };
+  return { inView, named, free, lost, waiting, zoom: +m.getZoom().toFixed(2) };
 });
+/** Of the names focus() found waiting, those the map names at the same date and frame without the rule of the stops in
+    focus (BE.mapa.conFoco off, the reparto of outside a route): lost to the rule for nothing. A name hidden both ways
+    waits for a label that appears closer, as outside a route (Éfeso for Epafras at the 11th stop of the third journey). */
+async function lostForNothing(page, ids) {
+  if (!ids.length) return [];
+  await page.evaluate(() => { window.BE.mapa.conFoco = false; });
+  await still(page);
+  const named = await page.evaluate((ids) => ids.filter((id) => {
+    const mk = window.__be.map.getContainer().querySelector(`.marca-lugar[data-sel="lugar:${CSS.escape(id)}"]`);
+    return mk && !mk.classList.contains('sin-etiqueta');
+  }), ids);
+  await page.evaluate(() => { window.BE.mapa.conFoco = true; });
+  await still(page);
+  return named.map((id) => `${id} hidden for nothing: named without the rule`);
+}
 
 /** Every stop of every guided tour on this screen: the stops in focus seen and named, those without a name although only
     labels outside the route are in the way (bad), and the labels outside the route lost for nothing (lost). */
@@ -216,6 +228,7 @@ async function everyTourStop(screen) {
       const f = await focus(page);
       seen += f.inView.length; nNamed += f.named.length;
       if (f.free.length) bad.push(`${id} ${i + 1} (zoom ${f.zoom}): ${f.free.join(', ')}`);
+      f.lost.push(...await lostForNothing(page, f.waiting));
       if (f.lost.length) lost.push(`${id} ${i + 1} (zoom ${f.zoom}): ${f.lost.join(', ')}`);
     }
     await choose(page, null);
@@ -230,15 +243,15 @@ test('430: on every stop of every guided tour, the stop and the ones before and 
   assert.ok(seen > 100, `stops in focus checked: ${seen}`);
   console.log(`named stops in focus: ${nNamed}/${seen}`);
   assert.deepEqual(bad, [], 'stops in focus without a name although only labels outside the route are in the way');
-  assert.deepEqual(lost, [], 'labels outside the route hidden for a stop that is not named, or numbers hidden for a traveller');
+  assert.deepEqual(lost, [], 'labels outside the route hidden for nothing, or numbers hidden for a traveller');
 });
 
 // At 1440 the map is closer and the names of a tour rarely collide: what is checked is that the rule takes nothing
 // from the rest for nothing (Betania's number 1·2 under Jesús's name at the 10th stop of «La última semana»).
-test('1440: on every stop of every guided tour, nothing outside the route is hidden for a stop that is not named, nor a number for a traveller', async () => {
+test('1440: on every stop of every guided tour, nothing outside the route is hidden for nothing, nor a number for a traveller', async () => {
   const { lost, seen } = await everyTourStop(DESKTOP);
   assert.ok(seen > 100, `stops in focus checked: ${seen}`);
-  assert.deepEqual(lost, [], 'labels outside the route hidden for a stop that is not named, or numbers hidden for a traveller');
+  assert.deepEqual(lost, [], 'labels outside the route hidden for nothing, or numbers hidden for a traveller');
 });
 
 test('430: on every stop of Pablo\'s four journeys, the stop where he is and the ones before and after it are named unless only the route is in the way', async () => {
@@ -255,13 +268,14 @@ test('430: on every stop of Pablo\'s four journeys, the stop where he is and the
       const f = await focus(page);
       seen += f.inView.length; nNamed += f.named.length;
       if (f.free.length) bad.push(`${id} ${k + 1} (zoom ${f.zoom}): ${f.free.join(', ')}`);
+      f.lost.push(...await lostForNothing(page, f.waiting));
       if (f.lost.length) lost.push(`${id} ${k + 1} (zoom ${f.zoom}): ${f.lost.join(', ')}`);
     }
   }
   assert.ok(seen > 100, `stops in focus checked: ${seen}`);
   console.log(`named stops in focus: ${nNamed}/${seen}`);
   assert.deepEqual(bad, [], 'stops in focus without a name although only labels outside the route are in the way');
-  assert.deepEqual(lost, [], 'labels outside the route hidden for a stop that is not named, or numbers hidden for a traveller');
+  assert.deepEqual(lost, [], 'labels outside the route hidden for nothing, or numbers hidden for a traveller');
   assert.deepEqual(page.pageErrors, []);
   await page.context().close();
 });

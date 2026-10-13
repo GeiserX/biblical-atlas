@@ -42,6 +42,7 @@ let map = null, mapaListo = false, capasBase = [], estiloReserva = false;
 const ENCUADRE_INICIAL = [[19.2, 34.0], [37.2, 42.2]];
 let resaltadoMapa = null;           // Set de ids que pide BE.mapa.resaltar; null: manda la selección
 let vecinosMapa = null;             // Set: los lugares de la parada de antes y la de después de un recorrido (resaltar)
+let conFoco = true;                 // false: el reparto de fuera de una ruta también en ella, para compararlo (BE.mapa.conFoco)
 
 const OCULTAR_EN_ACTUAL = /^(highway|road_|airport|label_other|label_village|label_town|label_city|label_state|poi|housenumber|aeroway|building)/;
 const marcasLugar = new Map();       // id → { marker, el, l, clase, hoy }
@@ -1527,7 +1528,7 @@ function pintarEtiquetas() {
   const selL = E.sel?.tipo === 'lugar' ? E.sel.id : null;
   const zoom = map.getZoom();
   const ventana = ventanaRelevante();
-  const vecinos = vecinosEnFoco(w);
+  const vecinos = conFoco ? vecinosEnFoco(w) : null;
   // Sin selección, los lugares que enseñan la época (los que encuadra encuadrarEpoca) se nombran como una ciudad mayor:
   // en 2001 a.e.c. el mapa se va a Ur, y Ur tiene que llevar su nombre a ese zoom.
   const deEpoca = E.sel ? null : lugaresEpocaEn(E.t);
@@ -1564,7 +1565,7 @@ function pintarEtiquetas() {
     // Importancia y tramo de zoom en que puede verse el rótulo.
     let prio, desde = -Infinity, hasta = Infinity;
     // En un recorrido guiado, el lugar donde está Pablo en esa fecha no pasa por delante de las paradas del recorrido.
-    if (id === actual && !vecinosMapa) prio = 100;
+    if (id === actual && !(vecinos && vecinosMapa)) prio = 100;
     else if (esSel) prio = 95;
     else if (resaltadoMapa?.has(id)) prio = 92;             // la parada del recorrido o la fila elegida en «Nombres»
     else if (vecino) prio = 90;                              // la parada de antes y la de después (vecinosEnFoco)
@@ -2400,7 +2401,8 @@ function ponerMarco({ lon, lat, zoom }) {
   clearTimeout(saltoTimer);
 }
 BE.mapa = { areas: () => [...zonasArea].map(([k, z]) => ({ key: k, estado: z.estado, p: z.p, animando: !!z.anim, borde: !!z.anim?.borde, centro: z.centro, zonas: z.etiquetas.length, chip: !!z.chip && !z.chip.hidden })),
-  escriturasAreas: () => componerZonas.escrituras || 0, resaltar, ventanaViaje, encuadrar: encuadrarLugares, volverAlInicio, iniciar, encuadreDeInicio, ponerMarco, enfocarCandidato, get candidatoFoco() { return candFoco; }, get gl() { return map; } };
+  escriturasAreas: () => componerZonas.escrituras || 0, resaltar, ventanaViaje, encuadrar: encuadrarLugares, volverAlInicio, iniciar, encuadreDeInicio, ponerMarco, enfocarCandidato, get candidatoFoco() { return candFoco; }, get gl() { return map; },
+  get conFoco() { return conFoco; }, set conFoco(v) { conFoco = !!v; sucio.etiquetas = sucio.mapa = true; programar(); } };
 Object.assign(BE, {
   ponerMapa, pintarMapa, pintarEtiquetas, seguirPablo, cartaVisible, cartaEnMapa, estadoCarta, colorViaje, colorEscritor, colorPersona,
   nombreHoy, nombreEn, candidatosDe, candidatosVisibles, CANDIDATO: CAND, ventanaDeCarta,
