@@ -1,0 +1,60 @@
+name: tema-capturas
+
+# Solo en la rama tema-oscuro-capturas, que no se fusiona: la guarda del modo reunión sobre el sitio de main (antes),
+# sobre el de la rama (después) y sobre dos copias rotas a propósito, con las capturas de cada superficie.
+on:
+  push:
+    branches: [tema-oscuro-capturas]
+
+permissions:
+  contents: read
+
+jobs:
+  capturas:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt && python3 scripts/build.py
+      - uses: actions/setup-node@v7
+        with:
+          node-version: "24"
+      - run: npm install --no-save --no-package-lock --prefix "$RUNNER_TEMP/pw" playwright-core@1.63.0
+      - run: node "$RUNNER_TEMP/pw/node_modules/playwright-core/cli.js" install --with-deps --only-shell chromium
+      - name: Copias del sitio
+        run: |
+          R="$RUNNER_TEMP/sitios"; mkdir -p "$R/antes"
+          git archive 6c7e51f0 site | tar -x -C "$R/antes" && mv "$R/antes/site" "$R/antes-site"
+          cp site/data*.json site/data*.js "$R/antes-site/"
+          cp -R site "$R/mut-site"; cp -R site "$R/mut2-site"
+          python3 - "$R/mut-site/kit/tokens.css" <<'PY'
+          import sys; p = sys.argv[1]; s = open(p).read()
+          a = "--on-ink: #1b1813; --glass: #211d17;"; assert a in s; open(p, "w").write(s.replace(a, "--on-ink: #1b1813;"))
+          PY
+          printf '\n#panel-cuerpo { background: #fbfcfa; }\n' >> "$R/mut2-site/css/base.css"
+      - name: Guarda
+        shell: bash
+        run: |
+          R="$RUNNER_TEMP/sitios"; O="$RUNNER_TEMP/out"; mkdir -p "$O"
+          export PLAYWRIGHT_CORE="$RUNNER_TEMP/pw/node_modules/playwright-core" PLAYWRIGHT_MODULE_DIR="$RUNNER_TEMP/pw/node_modules"
+          run() { tag=$1; site=$2; shift 2
+            BE_TEMA_REPORT="$O/$tag.jsonl" BE_TEMA_SHOTS="$O/shots-$tag" BE_SITE_DIR="$site" \
+              node --test --test-concurrency=1 "$@" tests/site/tema-oscuro.test.mjs > "$O/$tag.log" 2>&1
+            echo "$tag exit $?"; grep -E '^ℹ (tests|pass|fail)' "$O/$tag.log"; }
+          run despues site
+          run antes "$R/antes-site"
+          run mut "$R/mut-site" --test-name-pattern="ficha de lugar at|recorrido at|búsqueda at"
+          run mut2 "$R/mut2-site" --test-name-pattern="ficha de lugar at"
+      - name: Capturas lado a lado
+        run: PW_DIR="$RUNNER_TEMP/pw/node_modules/playwright-core" node .github/componer.mjs "$RUNNER_TEMP/out/shots-antes" "$RUNNER_TEMP/out/shots-despues" "$RUNNER_TEMP/out/lado" > "$RUNNER_TEMP/out/lado.txt"
+      - uses: actions/upload-artifact@v7
+        if: always()
+        with:
+          name: tema-capturas
+          path: ${{ runner.temp }}/out
