@@ -1303,13 +1303,14 @@ function pintarMapa() {
   if (E.play && w?.pos) seguir(w.pos);
   vigilarSalto();
 }
-/** Quien va con Pablo en t según los acompañantes de su viaje: en la parada, o en las dos del tramo que recorre. */
+/** Quien va con Pablo en t según los acompañantes de sus viajes: en la parada, o en las dos del tramo que recorre, aunque
+    el tramo una dos viajes (Bernabé acaba el primero en Antioquía y sale de allí con él hacia Jerusalén). */
 function conPablo(t) {
   const w = BE.dondeEsta(t);
   if (!w?.en.viaje) return new Set();
   const en = BE.acompanantes(w.en.viaje, w.en.p.orden);
   if (w.parada) return new Set(en);
-  if (w.sig?.viaje !== w.en.viaje) return new Set();
+  if (!w.sig?.viaje) return new Set();
   const sig = new Set(BE.acompanantes(w.sig.viaje, w.sig.p.orden));
   return new Set(en.filter((x) => sig.has(x)));
 }

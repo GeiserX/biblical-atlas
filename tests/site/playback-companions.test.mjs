@@ -5,9 +5,10 @@
 // no marker of his own while he does: Paul's marks where they are. His own marker shows only when the data put him
 // somewhere else.
 //
-// It walks the first journey frame by frame, as playback does, at two speeds (about three months and one year per
-// second at 60 frames a second), and counts how many times each traveller's marker turns visible apart from Paul's and
-// hides again.
+// It walks the first journey and the visit to Jerusalem that follows it (Bernabé goes on with Paul from Antioch, so
+// the leg that joins the two journeys counts too) frame by frame, as playback does, at two speeds (about three months
+// and one year per second at 60 frames a second), and counts how many times each traveller's marker turns visible
+// apart from Paul's and hides again.
 //
 // Run from the repository root, one browser at a time:
 //   node --test --test-concurrency=1 tests/site/playback-companions.test.mjs
@@ -73,14 +74,14 @@ after(async () => {
   if (tmp) fs.rmSync(tmp, { recursive: true, force: true });
 });
 
-/** Walks the first journey in steps of `paso` years, one frame each, and counts for every traveller how many times his
+/** Walks the first journey and the visit to Jerusalem of 49 in steps of `paso` years, one frame each, and counts for every traveller how many times his
     marker turns visible apart from Paul's (present, and its dot more than 8 px from Paul's or its name showing) and how
     many frames it stays so. */
 function walk(paso) {
   return page.evaluate(async (paso) => {
     const { BE, map, setT } = window.__be;
-    const ps = BE.P.filter((s) => s.viaje.id === 'primer-viaje');
-    const [a, b] = [ps[0].a, ps.at(-1).b];
+    const ps = BE.P.filter((s) => s.viaje.id === 'primer-viaje'), visita = BE.P.filter((s) => s.viaje.id === 'visita-a-jerusalen-49');
+    const [a, b] = [ps[0].a, visita.at(-1).b];
     // The whole journey in view, as the map follows Paul while it plays.
     map.jumpTo({ center: [33.6, 36.6], zoom: 5.4 });
     const frame = () => new Promise((r) => requestAnimationFrame(() => setTimeout(r, 0)));
@@ -92,7 +93,7 @@ function walk(paso) {
       steps.frames++;
       const pablo = document.querySelector('.pablo .pablo-punto');
       const pc = pablo?.isConnected ? centro(pablo) : null;
-      for (const p of BE.acompanantes(ps[0].viaje)) steps.conPablo.add(p);
+      for (const p of [...BE.acompanantes(ps[0].viaje), ...BE.acompanantes(visita[0].viaje)]) steps.conPablo.add(p);
       const shown = new Set();
       for (const el of document.querySelectorAll('.viajero')) {
         if (!el.isConnected || !el.checkVisibility()) continue;
@@ -115,12 +116,12 @@ function walk(paso) {
 }
 
 for (const [speed, paso] of [['three months a second', 0.25 / 60], ['one year a second', 1 / 60]]) {
-  test(`playing the first journey at ${speed}, no one who travels with Paul blinks on the map`, async () => {
+  test(`playing the first journey and the visit to Jerusalem at ${speed}, no one who travels with Paul blinks on the map`, async () => {
     const r = await walk(paso);
     console.log(`${speed}: ${r.frames} frames; companions ${r.companions.join(', ')}; markers apart from Paul's: ${JSON.stringify(r.seen)}`);
     assert.ok(r.frames > 30, `only ${r.frames} frames`);
     assert.ok(r.companions.includes('bernabe'), 'Bernabé travels with Paul on the first journey');
-    // Bernabé goes the whole journey with Paul: his own marker never shows apart from Paul's.
+    // Bernabé goes the whole journey with Paul, and then to Jerusalem and back: his own marker never shows apart from Paul's.
     assert.equal(r.seen.bernabe?.toggles ?? 0, 0, `Bernabé's marker turned visible or hidden ${r.seen.bernabe?.toggles} times`);
     // Juan Marcos leaves at Perga (Hch 13:13) and goes home on a journey of his own: his marker shows once, while the data
     // put him on that road. No traveller's marker comes back after hiding.
