@@ -41,8 +41,9 @@ relations:
   reason: Mr 15:21 da a los dos el mismo padre; Perspicacia «Alejandro», núm. 2, y «Rufo», núm. 1, los llaman hermanos.
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-13'
 status: verified
 distinct_from:
 - alejandro-pariente-de-anas
 - alejandro-de-efeso
+- alejandro-expulsado

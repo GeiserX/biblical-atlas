@@ -21,6 +21,8 @@ recipients:
   - timoteo
 people:
 - timoteo
+- himeneo
+- alejandro-expulsado
 context_origin:
   summary: Entre el primer y el segundo encarcelamiento en Roma; Hechos no narra este periodo.
   sources:
@@ -46,5 +48,5 @@ links:
 - title: 1 Timoteo 1 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/1-timoteo/1/
   type: bible
-checked_on: '2026-09-28'
+checked_on: '2026-10-13'
 status: verified

@@ -1017,6 +1017,8 @@ function pintarEtiquetasCartas(grupos) {
     m.el.dataset.sel = `carta:${principal.id}`;
     m.el.className = conMarcador(m.el, `pildora-carta${sel ? ' pildora-carta--sel' : ''}${g.cartas.every((x) => x.estado === 'pendiente') ? ' pildora-carta--pendiente' : ''}`);
     m.el.style.setProperty('--carta', colorEscritor(principal.escritor));
+    // El oro de Pablo se aclara en el modo reunión: su letra va con --on-ink; los demás tonos, oscuros en los dos temas, en blanco.
+    m.el.style.setProperty('--carta-letra', colorEscritor(principal.escritor) === oro() ? 'var(--on-ink)' : '#fff');
     m.el.innerHTML = `${esc(sel ? principal.libro : texto)} · ${esc(fecha)}${esc(lleva)}${g.sinDestino ? ' · destino no indicado' : ''}`;
     m.el.setAttribute('aria-label', `Carta: ${g.cartas.map(({ c }) => c.libro).join(', ')}${lleva}`);
   }
@@ -1303,13 +1305,31 @@ function pintarMapa() {
   if (E.play && w?.pos) seguir(w.pos);
   vigilarSalto();
 }
+/** Quien va con Pablo en t según los acompañantes de sus viajes: en la parada, o en las dos del tramo que recorre, aunque
+    el tramo una dos viajes (Bernabé acaba el primero en Antioquía y sale de allí con él hacia Jerusalén). */
+function conPablo(t) {
+  const w = BE.dondeEsta(t);
+  if (!w?.en.viaje) return new Set();
+  const en = BE.acompanantes(w.en.viaje, w.en.p.orden);
+  if (w.parada) return new Set(en);
+  if (!w.sig?.viaje) return new Set();
+  const sig = new Set(BE.acompanantes(w.sig.viaje, w.sig.p.orden));
+  return new Set(en.filter((x) => sig.has(x)));
+}
 /** Marcadores de otras personas con viajes (Pedro, Jesús…) cuando BE.donde sabe dónde están. */
 function pintarViajeros(ver) {
   // Un grupo (el Arca) no lleva marcador: solo su ruta.
   const personas = new Set(BE.D.viajes.map(BE.duenoViaje).filter((p) => !BE.esGrupo(p)));
   personas.delete('pablo');
+  // Quien viaja con Pablo no lleva marcador propio mientras va con él: el de Pablo marca dónde están, y la ficha de la
+  // parada lo nombra («Con Pablo en esta parada», tipos/parada.js). Con uno propio, situado por sus sucesos y no por las
+  // paradas de Pablo, se adelantaba a él en cada tramo y se metía debajo en cada parada: al reproducir, aparecía y
+  // desaparecía.
+  // La persona elegida conserva su marcador aunque vaya con Pablo: es a quien se mira.
+  const conEl = marcaPablo.puesta ? conPablo(E.t) : new Set();
+  if (E.sel?.tipo === 'persona') conEl.delete(E.sel.id);
   for (const p of personas) {
-    const w = ver ? BE.donde(p, E.t) : null;
+    const w = ver && !conEl.has(p) ? BE.donde(p, E.t) : null;
     let m = marcasViajero.get(p);
     if (!w?.pos) { if (m?.puesta) { m.marker.remove(); m.puesta = false; } continue; }
     if (!m) {

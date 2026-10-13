@@ -31,7 +31,11 @@ history:
 - date: '2026-10-02'
   change: 'Tito pasa a ir solo en Creta y Timoteo solo en Éfeso. Trófimo sale de companions y queda en la nota de Roma: se había quedado enfermo en Mileto.'
   source: it-trofimo
-checked_on: '2026-10-02'
+- date: '2026-10-13'
+  change: Las paradas 2 (Creta) y 3 (Éfeso) decían «orden cierto», pero la razón del viaje y la de la parada 2 dicen que no
+    se sabe cuál fue antes. Pasan a «orden incierto».
+  source: 1-timoteo-1
+checked_on: '2026-10-13'
 status: verified
 stops:
 - order: 1
@@ -62,14 +66,14 @@ stops:
     approx: true
     type: narrative
     chronology: tnm
-    text: 'dentro de c. 61-64 e.c. (tiempo narrativo: orden cierto, fecha aproximada)'
+    text: 'dentro de c. 61-64 e.c. (tiempo narrativo: orden incierto, fecha aproximada)'
   note: Deja a Tito para nombrar ancianos.
-  reason: 'Perspicacia «Tito, Carta a»: estuvo en Creta con Tito entre su liberación y su último encierro. No se
-    sabe si antes o después de Éfeso.'
+  reason: 'Perspicacia «Tito, Carta a»: estuvo en Creta con Tito entre su liberación y su último encierro. No se sabe si antes
+    o después de Éfeso.'
   sources:
   - it-tito
   - tito-1
-  checked_on: '2026-09-28'
+  checked_on: '2026-10-13'
   status: pending
 - order: 3
   place: efeso
@@ -81,13 +85,14 @@ stops:
     approx: true
     type: narrative
     chronology: tnm
-    text: 'dentro de c. 61-64 e.c. (tiempo narrativo: orden cierto, fecha aproximada)'
+    text: 'dentro de c. 61-64 e.c. (tiempo narrativo: orden incierto, fecha aproximada)'
   note: Deja a Timoteo.
-  reason: '1Ti 1:3: dejó a Timoteo en Éfeso al partir hacia Macedonia (Perspicacia «Timoteo, Cartas a»).'
+  reason: '1Ti 1:3: dejó a Timoteo en Éfeso al partir hacia Macedonia (Perspicacia «Timoteo, Cartas a»). No se sabe si fue
+    antes o después de Creta.'
   sources:
   - it-timoteo-cartas
   - 1-timoteo-1
-  checked_on: '2026-09-28'
+  checked_on: '2026-10-13'
   status: verified
 - order: 4
   place: macedonia

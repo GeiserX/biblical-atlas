@@ -17,6 +17,7 @@ disambiguation: El judío del motín de Éfeso (Hch 19:33, 34). Perspicacia lo s
 distinct_from:
 - alejandro-hijo-de-simon
 - alejandro-pariente-de-anas
+- alejandro-expulsado
 not_claimed:
 - 'Qué quería decir al pueblo: «Testimonio completo» solo supone que querría separar a los judíos de los cristianos.'
 summary: Judío al que otros judíos empujaron al frente en el teatro de Éfeso durante el motín. Pidió silencio con la mano
@@ -36,5 +37,5 @@ links:
 - title: Hechos 19 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/hechos/19/
   type: bible
-checked_on: '2026-09-29'
+checked_on: '2026-10-13'
 status: verified
