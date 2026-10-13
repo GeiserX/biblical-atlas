@@ -28,6 +28,8 @@ sources:
 - bt-20
 - 1-corintios-16
 - efesios-1
+- 1-timoteo-1
+- it-timoteo-cartas
 links:
 - title: 'Perspicacia: «Éfeso»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/%C3%89feso/
@@ -35,5 +37,5 @@ links:
 - title: Hechos 18 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/hechos/18/
   type: bible
-checked_on: '2026-09-29'
+checked_on: '2026-10-13'
 status: verified

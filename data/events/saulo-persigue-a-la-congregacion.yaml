@@ -25,6 +25,7 @@ passages:
 - Hch 26:9-11
 - 1Co 15:9
 - Flp 3:6
+- 1Ti 1:13
 summary: Tras aprobar la muerte de Esteban, Saulo entra en las casas de los discípulos de Jerusalén y los lleva
   a la cárcel. Después pide cartas al sumo sacerdote para seguir en Damasco.
 reason: Perspicacia «Pablo» (apartado «Persecución, conversión») narra la campaña. Empieza al morir Esteban (Hch 8:1), entre
@@ -36,6 +37,7 @@ sources:
 - hch-9
 - bt-25
 - 1-corintios-15
+- 1-timoteo-1
 search: Saulo persigue a los cristianos
 history:
 - date: '2026-09-29'
@@ -48,5 +50,5 @@ history:
 - date: '2026-09-29'
   change: El versículo 2 es el entierro de Esteban, que tiene su propio suceso.
   source: hechos-8
-checked_on: '2026-09-29'
+checked_on: '2026-10-13'
 status: verified

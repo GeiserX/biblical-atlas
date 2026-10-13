@@ -91,6 +91,7 @@ a { color: var(--link); }
 @media (pointer: coarse) {
   .cal-cab .be-logo { min-height: 44px; }
   .cal-cab .be-btn { height: 44px; }
+  #reunion-boton { width: 44px; }
   .cal-indice { row-gap: 10px; }
   .cal-indice a { height: 44px; }
   .cal-por-que summary { min-height: 44px; display: flex; align-items: center; }

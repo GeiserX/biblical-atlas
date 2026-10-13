@@ -22,6 +22,20 @@ const labelText = (it) => [it.name, TAG[it.cert], it.repite && REPEAT].filter(Bo
 // Hueco quiere decir una sola cosa: fecha calculada por nosotros. Lo dudoso se difumina y lleva «¿?».
 const hollow = (it) => it.cert === 'computed';
 const clamp = (v, a, b) => Math.max(a, Math.min(b, v));
+// Una barra o la línea de un momento que sigue más allá de un borde de la franja no acaba en ese borde: ahí lleva una
+// flecha y se aclara en EDGE px (place, _cut). Sin eso, lo que corta el borde parecía empezar o acabar allí.
+const EDGE = 18;
+/** Dónde puede ir el nombre de una marca: la franja menos la zona de la flecha de cada lado que la corta. */
+const limits = (it, w) => [it._cut?.[0] ? EDGE : 0, w - (it._cut?.[1] ? EDGE : 0)];
+/** Qué flechas se pintan: [izquierda, derecha]. La flecha ocupa de 2 a 9 px desde su borde. Solo falta la de un lado
+    cortado cuando el nombre no cabe junto a su punto sin pasar por encima de ella (edgeRows): antes la flecha que el
+    punto. El extremo aclarado y el texto emergente siguen diciendo que continúa. */
+const arrows = (it, w) => {
+  const c = it._cut || [false, false];
+  if (!c[0] && !c[1]) return [false, false];
+  const a = it._lx, b = it._lx + lwOf(it);
+  return [c[0] && a >= 10, c[1] && b <= w - 10];
+};
 
 /** Qué extremos se difuminan: [izquierdo, derecho] en px. */
 function softEnds(it, G) {
@@ -133,12 +147,16 @@ function place(it, view, w, t0, G) {
     const x0 = X(it.start), x1r = X(it.end), x1 = Math.max(x1r, x0 + 3);
     const c0 = clamp(x0, LIM0, LIM1), c1 = clamp(x1, LIM0, LIM1);
     const s = softEnds(it, G);
-    const fl = x0 >= LIM0 ? Math.min(s[0], (x1 - x0) / 3) : 0, fr = x1 <= LIM1 ? Math.min(s[1], (x1 - x0) / 3) : 0;
+    // Por sus fechas, no por su dibujo: una barra corta se dibuja de 3 px y puede pasar del borde aunque acabe dentro.
+    const cut0 = x0 < -0.5, cut1 = x1r > w + 0.5;
+    // Un extremo fuera de la vista no se difumina como fecha dudosa: lo que se ve de ese lado es el borde de la franja.
+    const fl = cut0 ? 0 : Math.min(s[0], (x1 - x0) / 3), fr = cut1 ? 0 : Math.min(s[1], (x1 - x0) / 3);
     g0 = c0; g1 = Math.max(c1, c0 + 3);
     lx = it._lxw - (view.v0 - t0) * ppy;
-    // El nombre dentro de la barra va con la parte que se ve, sin salir de la barra.
-    if (it._in) lx = clamp(Math.max(x0, 4) + it._pad, x0 + it._pad, x1 - it._pad - lw);
+    // El nombre dentro de la barra va con la parte que se ve, sin salir de la barra, y nunca encima de la flecha del borde.
+    if (it._in) lx = clamp(Math.max(x0, cut0 ? EDGE : 4) + it._pad, x0 + it._pad, Math.min(x1, cut1 ? w - EDGE : Infinity) - it._pad - lw);
     it._bar = [g0, g1 - g0, fl, fr];
+    it._cut = [cut0, cut1];
     it._win = null; it._dot = null;
   } else {
     it._bar = null;
@@ -149,7 +167,9 @@ function place(it, view, w, t0, G) {
     g0 = showWin ? c0 : a - G.dotR; g1 = showWin ? c1 : a + G.dotR;
     g0 = Math.min(g0, a - G.dotR); g1 = Math.max(g1, a + G.dotR);
     const s = softEnds(it, G);
-    it._win = showWin ? [c0, c1 - c0, w0 >= LIM0 ? Math.min(s[0], (w1 - w0) / 3) : 0, w1 <= LIM1 ? Math.min(s[1], (w1 - w0) / 3) : 0] : null;
+    const cut0 = showWin && w0 < -0.5, cut1 = showWin && w1 > w + 0.5;
+    it._win = showWin ? [c0, c1 - c0, cut0 ? 0 : Math.min(s[0], (w1 - w0) / 3), cut1 ? 0 : Math.min(s[1], (w1 - w0) / 3)] : null;
+    it._cut = [cut0, cut1];
     it._dot = a;
   }
   it._g = [g0, g1];
@@ -170,24 +190,24 @@ function rescueEdges(vis, w, G) {
   for (const list of byRow.values()) {
     list.sort((a, b) => a._hit[0] - b._hit[0]);
     for (let i = 0; i < list.length; i++) {
-      const it = list[i], lw = lwOf(it);
-      if (it._lx + lw > w - 2) {
+      const it = list[i], lw = lwOf(it), [wl, wr] = limits(it, w);
+      if (it._lx + lw > wr - 2) {
         const prevRight = i > 0 ? list[i - 1]._hit[1] : -Infinity;
         // Primero al otro lado del dibujo, si se ve; si no, pegado al borde, en el sitio libre de la fila.
         const drawL = it.shape === 'moment' ? it._dot - G.dotR - 4 : it._g[0] - 4;
         const drawIn = it.shape === 'moment' ? it._dot + G.dotR >= 0 && it._dot - G.dotR <= w : it._g[1] >= 0 && it._g[0] <= w;
-        if (drawIn && !it._in && drawL - lw >= Math.max(4, prevRight + G.gap)) { it._lx = drawL - lw; hitOf(it, w, G); }
+        if (drawIn && !it._in && drawL <= wr && drawL - lw >= Math.max(wl + 4, prevRight + G.gap)) { it._lx = drawL - lw; hitOf(it, w, G); }
         else {
           // Pegado al borde, pero nunca encima de su propio dibujo: el nombre taparía el punto o la barra. Si no cabe sin
           // taparlo, edgeRows lo lleva a otra fila, al otro lado del dibujo.
-          const nx = Math.max(w - lw - 4, prevRight + G.gap);
+          const nx = Math.max(wr - lw - 4, prevRight + G.gap);
           const drawR = it.shape === 'moment' ? it._dot + G.dotR : it._g[1];
           if (nx < it._lx && (it._in || !drawIn || nx >= drawR + 4)) { it._lx = nx; hitOf(it, w, G); }
         }
       }
-      if (it._lx < 2) {
+      if (it._lx < wl + 2) {
         const nextLeft = i < list.length - 1 ? list[i + 1]._hit[0] : Infinity;
-        const nx = Math.min(4, nextLeft - G.gap - lw);
+        const nx = Math.min(wl + 4, nextLeft - G.gap - lw);
         if (nx > it._lx) { it._lx = nx; hitOf(it, w, G); }
       }
     }
@@ -203,11 +223,12 @@ function edgeRows(vis, w, G, holdEdge) {
   const take = (k, a, b) => { if (!occ.has(k)) occ.set(k, []); occ.get(k).push([a, b]); };
   const unfit = [];
   for (const it of vis) {
-    const lw = lwOf(it);
+    const lw = lwOf(it), [wl, wr] = limits(it, w);
     it._key = it.row;
     it._gone = false;
     const pin = holdEdge && holdEdge.has(it.id);
-    const fits = it._lx >= 0 && it._lx + lw <= w;
+    // Un nombre cabe en su fila si está dentro de la franja y no tapa la flecha de un borde que corta su marca.
+    const fits = it._lx >= wl && it._lx + lw <= wr;
     if (!pin && fits) { take(it.row, it._hit[0], it._hit[1]); continue; }
     // Una marca retenida en una fila del borde que ya cabe en su fila del mundo guarda ese sitio, por si su fila del
     // borde se llena.
@@ -220,9 +241,12 @@ function edgeRows(vis, w, G, holdEdge) {
     if (it.shape === 'span' && (d0 < -3 || d1 > w + 3) && Math.min(d1, w) - Math.max(d0, 0) < 24) { it._gone = true; continue; }
     it._in = false;
     const lw2 = lwOf(it);
-    if (d0 - 4 - lw2 >= 2) it._lx = d0 - 4 - lw2;
+    if (d0 - 4 - lw2 >= wl + 2 && d0 - 4 <= wr) it._lx = d0 - 4 - lw2;
+    else if (d1 + 4 >= wl && d1 + 4 + lw2 <= wr - 2) it._lx = d1 + 4;
+    // Sin sitio a un lado fuera de las flechas, el nombre va sobre la flecha antes que sobre su propio punto (arrows).
+    else if (d0 - 4 - lw2 >= 2) it._lx = d0 - 4 - lw2;
     else if (d1 + 4 + lw2 <= w - 2) it._lx = d1 + 4;
-    else it._lx = Math.max(2, w - lw2 - 2);
+    else it._lx = Math.max(wl + 2, wr - lw2 - 2);
     hitOf(it, w, G);
     unfit.push(it);
   }
@@ -380,5 +404,5 @@ const inView = (hit, y, v) => hit[1] > 0 && hit[0] < v.w && y + v.row > v.top &&
     ver con él (`relatedInView`). Fuera de la vista lo elegido, las demás recuperan su color; la selección se queda. */
 const dimOthers = ({ own, ownInView, relatedInView }) => (own ? ownInView : relatedInView);
 
-BE.filas = { TAG, REPEAT, labelText, hollow, softEnds, measure, extent, packOrder, pack, place, hitOf, lwOf, rescueEdges, edgeRows, layoutLane, clickTarget, certainty, storyOrder, norm, nextSel, inView, dimOthers };
+BE.filas = { TAG, REPEAT, EDGE, arrows, labelText, hollow, softEnds, measure, extent, packOrder, pack, place, hitOf, lwOf, rescueEdges, edgeRows, layoutLane, clickTarget, certainty, storyOrder, norm, nextSel, inView, dimOthers };
 })();
