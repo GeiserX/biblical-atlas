@@ -205,6 +205,17 @@ test('the line does not end a sentence at the «c.» of a date, and keeps the do
   assert.deepEqual(page.pageErrors, []);
 });
 
+test('after «padre de X», the apposition that says who X is stays in the line; after «hijo de X» it does not', async () => {
+  // data/people/jacob-hijo-de-mattan.yaml: «Jacob padre de José, el esposo de María». «padre de José» alone fits the
+  // patriarch Jacob too. data/people/seba-hijo-de-bicri.yaml: «Seba hijo de Bicrí, el benjaminita que se sublevó…»: the
+  // apposition is about Seba, and glued to «hijo de Bicrí» it would read as about his father.
+  const page = await openPage(DESKTOP, 't=50.3000');
+  const line = (id) => page.evaluate((id) => window.BE.distinguishingLine({ tipo: 'persona', id }), id);
+  assert.equal(await line('jacob-hijo-de-mattan'), 'padre de José, el esposo de María');
+  assert.equal(await line('seba-hijo-de-bicri'), 'hijo de Bicrí');
+  assert.deepEqual(page.pageErrors, []);
+});
+
 test('every group of namesakes in data/ (scripts/homonyms.py) is told apart in the built site', async () => {
   const groups = JSON.parse(execFileSync('python3', [path.join(ROOT, 'scripts/homonyms.py'), '--json'], { cwd: ROOT, encoding: 'utf8' }));
   const total = Object.values(groups).reduce((n, gs) => n + gs.length, 0);

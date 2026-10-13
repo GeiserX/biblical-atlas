@@ -371,7 +371,12 @@ function distinguishingClause(text, names, persona) {
   if (/^no\b/i.test(t)) return '';
   const parts = t.split(/,\s+/).filter((x) => x && !/Perspicacia|\bnúm\./.test(x));
   const i = persona && parts.length > 1 && parts[0].split(' ').length <= 3 && !PARENTESCO.test(parts[0]) && PARENTESCO.test(parts[1]) && !/^su\s/i.test(parts[1]) ? 1 : 0;
-  return (parts[i] || '').replace(/\s+(?:y|e|o|u|ni)$/, '');
+  // Tras «padre de X» o «madre de X», una aposición con artículo dice quién es X y completa el trozo: «padre de José, el
+  // esposo de María» no es el patriarca Jacob, también padre de un José. Tras otro trozo («hijo de Bicrí, el benjaminita
+  // que se sublevó…»), la aposición habla de la persona de la ficha, y pegada parecería del padre: no se añade.
+  const conAposicion = /^(?:el\s+|la\s+)?(?:padre|madre)\s+de\b/i.test(parts[i] || '') && /^(?:el|la|los|las)\s/.test(parts[i + 1] || '');
+  const part = conAposicion ? `${parts[i]}, ${parts[i + 1]}` : (parts[i] || '');
+  return part.replace(/\s+(?:y|e|o|u|ni)$/, '');
 }
 /** La línea que distingue una ficha de otra que se llama igual (docs/ideas/homonimos.md), sacada de la propia ficha: el
     primer trozo de `desambiguacion` o de `resumen` que dice el parentesco («hijo de Jonatán» y «hijo de Saúl y
