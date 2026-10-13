@@ -33,8 +33,9 @@ const THEMES = ['claro', 'oscuro', 'reunión'];
     the page says of the element (`facts`, below); `views` (optional) limits it to some views. Nothing else passes. */
 const ALLOW = [
   { rule: 'target-size', when: (f) => f.marker && f.big,
-    reason: 'A map marker whose own button is 24 x 24 px or more, partly covered by a neighbour (close places) or by what '
-      + 'floats over the map (the sheet, a card). Its place fixes where it goes: WCAG 2.5.8 counts map pins as essential. '
+    reason: 'A map marker whose own button is 24 x 24 px or more, partly or wholly covered by neighbours (close places) or '
+      + 'by what floats over the map (the sheet, a card); axe throws on the wholly covered ones (see axe(), below). Its '
+      + 'place fixes where it goes: WCAG 2.5.8 counts map pins as essential. '
       + 'A click where zones overlap goes to the nearest point (marcaCercana). A marker under 24 px still fails, and so '
       + 'does a control that a marker covers: axe reports it on the control.' },
 ];
@@ -199,6 +200,34 @@ const measure = (page, targets, marks = []) => page.evaluate(([targets, marks]) 
   return out;
 }, [targets, marks]);
 
+/** axe over the page. A rule that throws comes back as «incomplete» with an error and checks nothing on the page: axe 4.13
+    throws in target-size on a marker that other markers cover whole. The element it threw on is reported as a violation
+    of that rule, so the allowlist judges it, and the rule runs again without it until it runs through. A rule that throws
+    with no element to set aside, or more than 100 times, is a violation that nothing allows. */
+async function axe(page) {
+  const { violations, incomplete } = await new AxeBuilder({ page }).withTags(TAGS).analyze();
+  const crashed = (list) => list.filter((v) => v.error);
+  const keep = incomplete.filter((v) => !v.error);
+  for (const v of crashed(incomplete)) {
+    const skip = [];
+    let r = v;
+    while (r?.error) {
+      const n = r.nodes[0];
+      const why = `axe threw\n${r.error.message}`.slice(0, 200);
+      if (!n || skip.length >= 100) { violations.push({ id: `${v.id} (axe threw)`, impact: 'serious', nodes: [{ target: [n ? n.target.flat().join(' ') : 'html'], failureSummary: why }] }); break; }
+      skip.push(n.target.flat().join(' '));
+      violations.push({ id: v.id, impact: v.impact || 'serious', nodes: [{ target: n.target, failureSummary: why, any: n.any, all: n.all, none: n.none }] });
+      let b = new AxeBuilder({ page }).withRules([v.id]);
+      for (const t of skip) b = b.exclude(t);
+      const again = await b.analyze();
+      violations.push(...again.violations);
+      keep.push(...again.incomplete.filter((x) => !x.error));
+      r = crashed(again.incomplete)[0];
+    }
+  }
+  return { violations, incomplete: keep };
+}
+
 async function scan(view, screen, theme) {
   const context = await browser.newContext({ deviceScaleFactor: 1, ...SCREENS[screen], colorScheme: theme === 'oscuro' ? 'dark' : 'light', reducedMotion: 'reduce' });
   context.setDefaultTimeout(15000);
@@ -210,7 +239,7 @@ async function scan(view, screen, theme) {
   await page.route((u) => !u.href.startsWith(base) && !u.hostname.endsWith('unpkg.com'), (r) => r.abort());
   try {
     await view.open(page);
-    const { violations, incomplete } = await new AxeBuilder({ page }).withTags(TAGS).analyze();
+    const { violations, incomplete } = await axe(page);
     // What axe could not decide (a contrast over the map or a gradient) is not a failure; the report keeps it for review.
     if (REPORT) for (const v of incomplete) for (const n of v.nodes) fs.appendFileSync(REPORT, `${JSON.stringify({ rule: v.id, view: view.name, screen, theme, target: n.target.flat().join(' '), incomplete: true, why: (n.any[0]?.message || '').slice(0, 160) })}\n`);
     const undecided = incomplete.filter((v) => v.id === 'color-contrast').flatMap((v) => v.nodes.map((n) => n.target.flat().join(' ')));
