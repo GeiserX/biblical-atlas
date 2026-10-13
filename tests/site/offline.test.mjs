@@ -382,9 +382,10 @@ test('from file:// the site opens as before, with no worker', async () => {
 test('every file the three pages ask for when they open is in the precache list', async () => {
   const { PRECACHE, LIBS } = workerLists();
   for (const rel of PRECACHE) assert.ok(fs.existsSync(path.join(SITE_DIR, rel)), `PRECACHE names ${rel}, which does not exist`);
-  // Fetched when first needed, not to open: the detail, the English, the videos, the maps. Not data.json: no page reads
-  // it (the calendar loads the chunks too), so a page asking for it would download 9 MB the site does not need.
-  const RUNTIME = /^(data\.detail\.json|data\.[a-z]{2}\.json|videos[\w-]*\.json|maps\/.+|i18n\/.+|sw\.js|sw-manifest\.js)$/;
+  // Fetched when first needed, not to open: the detail, the English, the maps. Not data.json: no page reads it (the
+  // calendar loads the chunks too), so a page asking for it would download 9 MB the site does not need. Not the video
+  // lists either: they come with the install.
+  const RUNTIME = /^(data\.detail\.json|data\.[a-z]{2}\.json|maps\/.+|i18n\/.+|sw\.js|sw-manifest\.js)$/;
   const context = await newContext({ worker: false });
   const page = await newPage(context);
   for (const url of ['index.html', `index.html#${CARD}`, 'acerca.html', 'calendario.html']) {
