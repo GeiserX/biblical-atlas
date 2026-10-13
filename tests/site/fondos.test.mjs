@@ -30,7 +30,9 @@ const PHONE = { name: '430', viewport: { width: 430, height: 932 }, isMobile: tr
 // What the first view may ask for, per screen: the one image of the old style it draws, and nothing else.
 const FIRST_VIEW = { 1440: 'mediterraneo', 430: 'mundo' };
 // Bytes of backgrounds before the map has loaded. Before the lazy loading it asked for all four, 1,824,877 bytes.
-const FIRST_VIEW_BUDGET = 600_000;
+// At quality 82 the one image alone broke it too: the Mediterranean weighed 575,830 bytes and the world 880,494; at
+// quality 70 they weigh 393,250 and 530,802.
+const FIRST_VIEW_BUDGET = 550_000;
 
 async function loadChromium() {
   for (const name of ['playwright-core', 'playwright']) {
