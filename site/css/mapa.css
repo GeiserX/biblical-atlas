@@ -15,9 +15,10 @@
 .marca-lugar, .marca-region { border: 0; padding: 0; background: none; cursor: pointer; }
 .marca-region { min-height: 24px; }
 /* El punto mide 10 px (7 el menor, 14 el de ahora), pero el botón mide al menos 24 × 24 (WCAG 2.5.8): un borde transparente lo
-   rodea y recibe el clic y el ratón. El punto y su nombre se colocan desde dentro del borde, así que no se mueven. Igual
-   los hallazgos y los viajeros; los nombres de región y de mar o río crecen hasta 24 alrededor de su centro. Dos zonas
-   que se pisan dan el clic al punto más cercano (mapa.js, marcaCercana). */
+   rodea y recibe el clic; el nombre escondido sale solo con el ratón sobre el punto. El punto y su nombre se colocan desde
+   dentro del borde, así que no se mueven. Igual los hallazgos y los viajeros; los nombres de región y de mar o río crecen
+   hasta 24 alrededor de su centro. Donde dos zonas se pisan, el clic va a lo dibujado o al punto más cercano (mapa.js,
+   marcaCercana). */
 .marca-lugar { --punto: 10px; --borde: 7px; box-sizing: content-box; width: var(--punto); height: var(--punto); border: var(--borde) solid transparent; }
 .marca-lugar .punto { position: absolute; inset: 0; border-radius: 50%; background: var(--surface); border: 2px solid var(--ink-2); box-shadow: 0 0 0 1.5px color-mix(in srgb, var(--halo) 70%, transparent); }
 .marca-lugar .etiqueta { position: absolute; left: 14px; top: 50%; transform: translateY(-50%); display: flex; flex-direction: column; text-align: left; line-height: 1; white-space: nowrap;
@@ -41,8 +42,13 @@
 .marca-lugar.menor.rotulo-izq .etiqueta { left: auto; right: 11px; }
 .marca-lugar.es-actual.rotulo-izq .etiqueta { left: auto; right: 22px; }
 .marca-lugar.sin-etiqueta .etiqueta, .marca-region.sin-etiqueta .region-texto { visibility: hidden; }
-.marca-lugar:hover .etiqueta { visibility: visible; color: var(--ink); }
-.marca-lugar:hover { z-index: 3; }
+/* El ratón sobre el punto o el nombre (al-raton, mapa.js), no sobre la zona. Con el dedo, el :hover que deja un toque. */
+.marca-lugar.al-raton .etiqueta { visibility: visible; color: var(--ink); }
+.marca-lugar.al-raton { z-index: 3; }
+@media (hover: none) {
+  .marca-lugar:hover .etiqueta { visibility: visible; color: var(--ink); }
+  .marca-lugar:hover { z-index: 3; }
+}
 .marca-lugar.resaltado, .marca-lugar.es-actual { z-index: 2; }   /* lo seleccionado queda encima de burbujas y candidatos */
 .region-texto { display: block; font-family: var(--font-serif); font-size: 14px; font-weight: 500; letter-spacing: .22em; text-transform: uppercase; color: var(--map-region); white-space: nowrap;
   text-shadow: 0 0 3px var(--map-label-halo), 0 0 8px var(--map-label-halo); opacity: .9; }
@@ -267,7 +273,8 @@ ol.paradas li:first-child .be-row { border-top: 0; }
 .cand-rotulo small { color: var(--ink-3); font-size: var(--fs-2xs); }
 .cand--descartado_nivel_1 .cand-rotulo b { text-decoration: line-through; text-decoration-thickness: 1px; }
 .cand.sin-etiqueta .cand-rotulo { visibility: hidden; }
-.cand:hover .cand-rotulo { visibility: visible; z-index: 3; }
+.cand.al-raton .cand-rotulo { visibility: visible; z-index: 3; }
+@media (hover: none) { .cand:hover .cand-rotulo { visibility: visible; z-index: 3; } }
 .cand--foco { z-index: 4; }
 /* Junto a Jerusalén (u otra ciudad mayor), el candidato de un lugar no elegido espera a que el zoom lo separe de ella. */
 .cand.cand--junto, .cand.cand--junto .cand-rotulo { visibility: hidden; pointer-events: none; }

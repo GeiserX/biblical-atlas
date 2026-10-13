@@ -649,3 +649,36 @@ test('1440: a click on a region, sea or river name wins over the zone of a point
   assert.deepEqual(page.errors, []);
   await page.context().close();
 });
+
+// A dot under the bare zone of a neighbour: the mouse on the dot shows no other place's name, and the click takes the dot.
+test('1440: a dot under the zone of a neighbour keeps its own hover and click', async () => {
+  const page = await keyboardPage('1440', 't=50.3000');
+  let s = null;
+  for (const zoom of [null, 6, 5.5, 5]) {
+    if (zoom) { await page.evaluate((z) => window.__be.map.jumpTo({ zoom: z }), zoom); await settle(page); }
+    s = await page.evaluate(() => {
+      for (const el of window.__be.map.getContainer().querySelectorAll('.marca-lugar')) {
+        if (!el.checkVisibility()) continue;
+        const r = el.querySelector('.punto').getBoundingClientRect();
+        const x = (r.left + r.right) / 2, y = (r.top + r.bottom) / 2;
+        const top = document.elementFromPoint(x, y);
+        // On top of the dot's centre, the button of another place itself: its transparent zone, nothing it draws.
+        if (top === el || !top?.matches('.marca-lugar')) continue;
+        return { id: el.dataset.sel, over: top.dataset.sel, x, y };
+      }
+      return null;
+    });
+    if (s) break;
+  }
+  assert.ok(s, 'no dot under the zone of a neighbour at any zoom tried');
+  await page.mouse.move(s.x, s.y);
+  await page.evaluate(() => new Promise((ok) => requestAnimationFrame(() => requestAnimationFrame(ok))));
+  const shown = await page.evaluate((id) => [...window.__be.map.getContainer().querySelectorAll('.marca-lugar.sin-etiqueta')]
+    .filter((m) => m.dataset.sel !== id && getComputedStyle(m.querySelector('.etiqueta')).visibility === 'visible').map((m) => m.dataset.sel), s.id);
+  assert.deepEqual(shown, [], `with the mouse on the dot of ${s.id}, under the zone of ${s.over}, another hidden name shows`);
+  await page.mouse.click(s.x, s.y);
+  await page.waitForFunction(() => window.BE.E.sel, null, { timeout: 5000 }).catch(() => {});
+  assert.equal(await selected(page), s.id, `a click on the centre of the dot of ${s.id}, under the zone of ${s.over}, chose ${await selected(page)}`);
+  assert.deepEqual(page.errors, []);
+  await page.context().close();
+});

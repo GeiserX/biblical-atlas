@@ -217,6 +217,17 @@ function crearMapa() {
     const mejor = marcaCercana(e.clientX, e.clientY);
     if (mejor && mejor !== el) { e.stopPropagation(); e.preventDefault(); mejor.click(); }
   }, true);
+  // El ratón saca el nombre escondido de un lugar o de un candidato solo sobre lo que se dibuja (su punto, su nombre), no
+  // sobre su zona: un :hover de CSS saltaría en la zona que tapa el punto de una vecina. La clase al-raton hace de :hover.
+  let encima = null, raton = null;
+  const ponerEncima = (el) => { if (el === encima) return; encima?.classList.remove('al-raton'); encima = el; el?.classList.add('al-raton'); };
+  map.getContainer().addEventListener('pointermove', (e) => {
+    if (e.pointerType !== 'mouse') return;
+    const pendiente = raton;
+    raton = [e.clientX, e.clientY];
+    if (!pendiente) requestAnimationFrame(() => { const [x, y] = raton; raton = null; ponerEncima(dibujadoEn(x, y)?.closest('.marca-lugar, .cand') || null); });
+  });
+  map.getContainer().addEventListener('pointerleave', () => ponerEncima(null));
   const puntero = (capa) => { map.on('mouseenter', capa, () => { map.getCanvas().style.cursor = 'pointer'; }); map.on('mouseleave', capa, () => { map.getCanvas().style.cursor = ''; }); };
   map.on('click', 'be-cartas-toque', (e) => { if (enMarca(e)) return; const id = e.features?.[0]?.properties?.id; if (id) alternar({ tipo: 'carta', id }); });
   puntero('be-cartas-toque');
@@ -474,7 +485,7 @@ function iniciarCortina() {
 // Geometría
 // ---------------------------------------------------------------------------
 /** Cambia las clases propias de una marca sin quitar las de MapLibre (maplibregl-marker…), que la posicionan. */
-const conMarcador = (el, clases) => [clases, ...[...el.classList].filter((c) => c.startsWith('maplibregl-'))].join(' ');
+const conMarcador = (el, clases) => [clases, ...[...el.classList].filter((c) => c.startsWith('maplibregl-') || c === 'al-raton')].join(' ');
 const coord = (l) => [l.lon, l.lat];
 const linea = (coordinates, properties) => ({ type: 'Feature', properties, geometry: { type: 'LineString', coordinates } });
 const conPunto = (l) => !!l && l.lat != null && l.lon != null && !candidatosDe(l);
