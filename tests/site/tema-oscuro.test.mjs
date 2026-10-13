@@ -5,7 +5,9 @@
 //   PLAYWRIGHT_CORE=/tmp/pw/node_modules/playwright-core node --test --test-concurrency=1 tests/site/tema-oscuro.test.mjs
 //
 // What it flags, in the dark look (each rule is `check` below):
-//   - fondo-claro: a background that stays light and is the very value of the light look (a hardcoded colour).
+//   - fondo-claro: a background that stays light in the dark look and was light in the light one too: the very value of
+//     the light look (a hardcoded colour) or a variable whose dark value is still light (#fff8e6 for #eef3ef). A light
+//     fill that carries dark text at 4.5:1 (a highlighted word, an ink button) is meant and passes.
 //   - contraste: text under 4.5:1 (3:1 when large) over what is painted under it, composited; over the map, the worse of
 //     a light and a black map. A label on the map is measured over its own halo; a mark's text with no halo, over its
 //     own pill or box, and not at all when it has neither.
@@ -361,8 +363,15 @@ function audit({ allow }) {
         const raw = under(el, false).colours.map((u) => over(bg, u));
         const seen = raw.map((c) => dim(c, f));
         const lightest = seen.reduce((m, c) => Math.max(m, lum(c)), 0);
-        if (seen.length && lightest > LIGHT && Math.min(...seen.map(lum)) > LIGHT * 0.5 && l && d.bg === l.bg) {
-          flag(el, tag, 'fondo-claro', `fondo ${hex(bg)}, el mismo que en claro`);
+        const lb = l && parse(l.bg);
+        const then = lb && lb[3] >= 0.35 ? under(el, false, light).colours.map((u) => over(lb, u)) : [];
+        const same = l && d.bg === l.bg;
+        const wasLight = then.length && Math.min(...then.map(lum)) > LIGHT;
+        // A light fill meant as one: its own text is dark and reads at 4.5:1 on it (a highlighted word, an ink button).
+        const fg = parse(d.color);
+        const inked = ownText(el) && fg && lum(fg) < 0.1 && raw.every((c) => ratio(dim(over(fg, c), f), dim(c, f)) >= 4.5);
+        if (seen.length && lightest > LIGHT && Math.min(...seen.map(lum)) > LIGHT * 0.5 && (same || (wasLight && !inked))) {
+          flag(el, tag, 'fondo-claro', same ? `fondo ${hex(bg)}, el mismo que en claro` : `fondo ${hex(bg)}, claro como en claro (${hex(lb)})`);
         }
       }
       // Borders: a light one kept from the light look; one that melts into the dark background.
