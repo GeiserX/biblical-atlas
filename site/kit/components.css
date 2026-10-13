@@ -193,7 +193,7 @@ body {
 
 /* Aviso de incertidumbre o de cronología alternativa */
 .be-note { display: flex; gap: 10px; padding: 10px 12px; border-radius: var(--r-md); font-size: var(--fs-sm); line-height: 1.4; background: var(--secular-soft); color: #3d4a5c; }
-.be-note--uncertain { background: #efe9f4; color: #4d3f62; }
+.be-note--uncertain { background: var(--zone-soft); color: var(--zone-ink); }
 .be-note--warn { background: var(--unverified-soft); color: var(--unverified); }
 
 /* ---------- Mapa ---------- */

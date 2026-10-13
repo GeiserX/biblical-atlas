@@ -33,7 +33,7 @@
 .subgrupo { margin: 10px 0 4px; font-size: var(--fs-xs); color: var(--ink-3); font-weight: 600; }
 .interruptor { display: inline-flex; align-items: center; gap: 6px; font-size: var(--fs-sm); color: var(--ink-2); cursor: pointer; }
 .interruptor input { accent-color: var(--ink); }
-.etiqueta-deducido { color: #4d3f62; background: #efe9f4; border-color: #d9cfe6; font-size: var(--fs-2xs); height: 20px; padding: 0 7px; }
+.etiqueta-deducido { color: var(--zone-ink); background: var(--zone-soft); border-color: color-mix(in srgb, var(--zone-line) 55%, var(--halo)); font-size: var(--fs-2xs); height: 20px; padding: 0 7px; }
 span.etiqueta-deducido, span.etiqueta-incierto, span.etiqueta-texto { border-radius: var(--r-pill); padding: 1px 7px; font-weight: 700; }
 .etiqueta-incierto { color: var(--zone); background: var(--zone-soft); }
 .etiqueta-texto { color: var(--tier1); background: var(--tier1-soft); }
@@ -297,7 +297,7 @@ span.etiqueta-deducido, span.etiqueta-incierto, span.etiqueta-texto { border-rad
 /* La línea del móvil (vistaSobreMapa en recorridos.js): en el escritorio no se ve. */
 .recorrido-linea { display: none; }
 .recorrido-flota .be-btn { align-self: flex-start; margin: 4px 0 0 -8px; cursor: pointer; }
-.recorrido-nosabemos { padding: 10px 12px; font-size: var(--fs-sm); background: #f4eff8; }
+.recorrido-nosabemos { padding: 10px 12px; font-size: var(--fs-sm); background: var(--zone-soft); }
 .recorrido-nosabemos p { margin: 4px 0 0; }
 
 /* ---------- Menú «Estudio» ---------- */
@@ -654,12 +654,9 @@ span.etiqueta-deducido, span.etiqueta-incierto, span.etiqueta-texto { border-rad
 /* Una cita bajo el ratón o con el foco: en el modo reunión el fondo claro de mapa.css dejaba su letra clara en 1,5:1.
    La tarjeta fijada del grafo las hace alcanzables; aquí va el fondo oscuro de su familia. */
 .be-reunion :is(.vista-grafo, .vista-conexion) .be-ref:is(:hover, :focus-visible) { background: var(--tier1-line); }
-.be-reunion .be-date { background: var(--gold-soft); border-color: var(--gold-line); }
 .be-reunion .be-date__value { color: #efe7d8; }
 /* Fondos pastel fijos de las fichas, las etiquetas y los avisos. */
-.be-reunion .be-note { background: #262d38; color: #cfd8e3; }
-.be-reunion .be-note--uncertain, .be-reunion .recorrido-nosabemos { background: #2e2638; color: #d9cfe6; }
-.be-reunion .etiqueta-deducido { color: #d9cfe6; background: #2e2638; border-color: #4a3d5c; }
+.be-reunion .be-note { color: #cfd8e3; }
 .be-reunion .cap--leido { border-color: var(--tier1-line); }
 .be-reunion .bloque-nivel--1 { background: #1f2a25; }
 .be-reunion .bloque-nivel--2 { background: #2b2518; }
