@@ -91,11 +91,22 @@ function mapa(el, v, k = null, { etiquetas = true, compacto = false, margen = [0
   const estilo = (x) => (x.A.p || x.B.p ? ' vj-ruta--pend' : x.A.i || x.B.i ? ' vj-ruta--inc' : '');
   const rutas = legs.map((x) => `<path class="vj-ruta${leg ? (x.i === k ? ' vj-ruta--foco' : ' vj-ruta--resto') : ''}${estilo(x)}" d="${linea(x)}"${x.i === k ? ' marker-end="url(#vj-flecha)"' : ''}/>`).join('');
   const marcados = leg ? new Set([leg.a, leg.b]) : new Set(v.s.map((x) => x.o));
-  const vistos = new Set();
-  const puntos = v.s.filter((x) => x.c).map((x) => {
-    const [a, b] = P(x.c), on = marcados.has(x.o);
-    const clave = x.l || x.n, rot = etiquetas && on && !vistos.has(clave) && (leg || !compacto);
-    if (rot) vistos.add(clave);
+  const vistos = new Set(), cajas = [];
+  // En el viaje entero, un nombre que pisaría otro ya puesto se calla; el punto se queda. La caja se estima a 7 px por letra.
+  const libre = (a, b, n) => {
+    const c = [a + 8, b - 19, a + 8 + n.length * 7, b - 3];
+    if (!leg && cajas.some((o) => c[0] < o[2] && o[0] < c[2] && c[1] < o[3] && o[1] < c[3])) return false;
+    cajas.push(c);
+    return true;
+  };
+  const conPunto = v.s.filter((x) => x.c), rotulos = new Set();
+  // La salida y la llegada se rotulan antes que las paradas de en medio, para que no las calle un nombre vecino.
+  for (const x of new Set([conPunto[0], conPunto[conPunto.length - 1], ...conPunto])) {
+    const [a, b] = P(x.c), clave = x.l || x.n;
+    if (etiquetas && marcados.has(x.o) && !vistos.has(clave) && (leg || !compacto) && libre(a, b, x.n)) { vistos.add(clave); rotulos.add(x); }
+  }
+  const puntos = conPunto.map((x) => {
+    const [a, b] = P(x.c), on = marcados.has(x.o), rot = rotulos.has(x);
     return `<g class="vj-pt${on ? ' vj-pt--on' : ''}"><circle cx="${a.toFixed(1)}" cy="${b.toFixed(1)}" r="${on ? 5 : 3}"/>${rot ? `<text x="${(a + 8).toFixed(1)}" y="${(b - 7).toFixed(1)}">${esc(x.n)}</text>` : ''}</g>`;
   }).join('');
   el.innerHTML = `${f ? `<img class="vj-mapa__fondo" alt="" src="${fondo(f.id)}" style="transform:translate(${tx.toFixed(1)}px,${ty.toFixed(1)}px) scale(${s.toFixed(4)})">` : '<div class="vj-mapa__papel"></div>'}

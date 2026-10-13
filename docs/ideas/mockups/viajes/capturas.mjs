@@ -4,7 +4,8 @@
 //   PLAYWRIGHT_CORE=<ruta a playwright-core> node docs/ideas/mockups/viajes/capturas.mjs <carpeta-png> 8941
 //
 // Deja un PNG por diseño, estado y ancho, y falla (salida 1) si alguna página tiene un error de consola, se desborda
-// a lo ancho, deja un fondo de relieve sin cargar o no pinta lo que su estado pide (la lista, el tramo o la guía).
+// a lo ancho, deja un fondo de relieve sin cargar, pinta nombres del mapa unos encima de otros o no pinta lo que su
+// estado pide (la lista, el tramo o la guía).
 import { createRequire } from 'module';
 const require = createRequire(import.meta.url);
 const { chromium } = require(process.env.PLAYWRIGHT_CORE || 'playwright-core');
@@ -54,6 +55,13 @@ try {
         const m = await page.evaluate(() => ({
           ancho: document.documentElement.scrollWidth, ventana: innerWidth,
           fondos: [...document.querySelectorAll('img.vj-mapa__fondo')].map((i) => i.complete && i.naturalWidth > 0),
+          // Nombres del mapa que se pisan: pares de rótulos cuyas cajas se cortan.
+          pisados: (() => {
+            const r = [...document.querySelectorAll('.vj-mapa svg text')].map((t) => [t.textContent, t.getBoundingClientRect()]).filter(([, b]) => b.width);
+            const out = [];
+            r.forEach(([n, a], i) => r.slice(i + 1).forEach(([m, b]) => { if (a.left < b.right && b.left < a.right && a.top < b.bottom && b.top < a.bottom) out.push(`${n} / ${m}`); }));
+            return out;
+          })(),
           pequenos: [...document.querySelectorAll('a, button, input, [tabindex="0"]')].filter((e) => {
             const r = e.getBoundingClientRect(); if (!r.width || e.closest('.proto-tools, p, li > span, dd, td.ho-de, .ho-cab > span, .vj-barra__logo')) return false;
             return r.height < 32;
@@ -84,6 +92,7 @@ try {
         }));
         if (m.ancho > m.ventana + 1) errores.push(`se desborda: ${m.ancho} px en una ventana de ${m.ventana}`);
         if (m.fondos.some((x) => !x)) errores.push('un fondo de relieve no ha cargado');
+        if (m.pisados.length) errores.push(`nombres que se pisan en el mapa: ${m.pisados.join(', ')}`);
         const nombre = `${d}-${estado}-${ancho}${tema === 'reunion' ? '-reunion' : ''}`;
         await page.screenshot({ path: `${out}/${nombre}.png` });
         console.log(`${errores.length ? 'FALLA' : 'bien '} ${nombre} · ${m.controles} controles y ${m.palabras} palabras a la vista${m.pequenos.length ? ` · menos de 32 px: ${m.pequenos.slice(0, 4).join(' | ')}` : ''}${errores.length ? `\n    ${errores.join('\n    ')}` : ''}`);

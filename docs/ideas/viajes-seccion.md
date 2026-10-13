@@ -119,11 +119,11 @@ En cifras: 20 controles y 291 palabras en la primera pantalla del ordenador, 15 
 
 **La primera visita.** Una caja ([en el ordenador](img/viajes/mapa-guia-1440.webp), [en el teléfono](img/viajes/mapa-guia-430.webp)) con tres pasos y «Empezar con el viaje a Roma», y dos avisos junto a la tira y al mapa. Dos pulsaciones hasta un tramo.
 
-**A qué renuncia.** No hay totales ni acumulados, y no se imprime. La tira enseña cuatro o cinco tramos y el resto queda a un desplazamiento de lado. En el teléfono la lista está tras un botón. La caja del tramo puede tapar una parada: en la captura del ordenador tapa el nombre de Puteoli, y en el sitio el encuadre tendría que descontarla.
+**A qué renuncia.** No hay totales ni acumulados, y no se imprime. La tira enseña cuatro o cinco tramos y el resto queda a un desplazamiento de lado. En el teléfono la lista está tras un botón. La caja del tramo puede tapar una parada: en la captura del ordenador tapa el nombre de Puteoli, y en el sitio el encuadre tendría que descontarla. El viaje a Roma entero no cabe en ningún fondo de relieve del prototipo, porque Roma queda en el borde del más ancho, así que [esa vista](img/viajes/mapa-lista-1440.webp) se pinta sobre papel liso y calla los nombres que pisarían otro; en el sitio, MapLibre no tiene ese límite.
 
 **Qué cuesta.** Alto. En el sitio, el mapa es MapLibre y no una imagen: hace falta un modo del mapa que dibuje un viaje fuera de su fecha y encuadre un tramo, y una tira nueva.
 
-En cifras: 21 controles y 333 palabras en la primera pantalla del ordenador, 8 y 109 en el teléfono ([la lista](img/viajes/mapa-lista-430.webp)). Con un tramo abierto, 13 y 170 en el ordenador.
+En cifras: 21 controles y 324 palabras en la primera pantalla del ordenador, 8 y 96 en el teléfono ([la lista](img/viajes/mapa-lista-430.webp)). Con un tramo abierto, 13 y 170 en el ordenador.
 
 ### 4. [El viaje en una línea](mockups/viajes/esquema/index.html)
 
