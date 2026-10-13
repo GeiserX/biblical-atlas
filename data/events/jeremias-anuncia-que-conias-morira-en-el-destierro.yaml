@@ -11,7 +11,7 @@ date:
   text: 'entre 618 y 617 a.e.c. (tiempo narrativo: en el breve reinado de Joaquín)'
 narrative_order:
   series: jeremias
-  order: 22024
+  order: 422024
   after: saqueadores-contra-juda-en-dias-de-jehoiaquim
 places: []
 people:
@@ -24,7 +24,7 @@ passages:
 summary: 'Aunque Conías fuera el anillo de sellar de Jehová, sería arrancado: él y su madre caerán en manos de Nabucodonosor
   y morirán en otra tierra. Ningún descendiente suyo volverá a reinar en Judá.'
 reason: 'Jer 22:24 lo llama rey de Judá: reinó tres meses y diez días hasta rendirse en adar de 617 (Perspicacia «Joaquín»,
-  párr. 2; tabla A6-B). El texto no dice dónde habló Jeremías.'
+  párr. 2; tabla A6-B). El texto no dice dónde habló Jeremías. Orden por fecha.'
 sources:
 - jeremias-22
 - it-joaquin
@@ -37,5 +37,10 @@ links:
 - title: 'Perspicacia: «Joaquín»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Joaqu%C3%ADn/
   type: perspicacia
-checked_on: '2026-10-12'
+history:
+- date: '2026-10-13'
+  change: 'El orden del relato pasa de 22024 a 422024: la serie sigue las fechas de los sucesos, porque el libro va por temas
+    y no en el orden en que pasaron.'
+  source: it-jeremias-libro
+checked_on: '2026-10-13'
 status: verified

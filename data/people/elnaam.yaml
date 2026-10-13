@@ -1,0 +1,18 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: elnaam
+name: Elnaam
+names:
+- name: Elnaam
+perspicacia: '1200001330'
+summary: Padre de Jeribái y Josavías, dos guerreros poderosos de David.
+reason: Perspicacia «Elnaam»; 1Cr 11:46.
+sources:
+- it-elnaam
+- 1-cronicas-11
+links:
+- title: 'Perspicacia: «Elnaam»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Elnaam/
+  type: perspicacia
+relations: []
+checked_on: '2026-10-12'
+status: verified

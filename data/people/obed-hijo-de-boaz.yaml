@@ -13,6 +13,7 @@ sources:
 - rut-4
 - mateo-1
 - lucas-3
+- 1-cronicas-2
 links:
 - title: 'Perspicacia: «Obed»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Obed/
@@ -26,8 +27,9 @@ relations:
   - rut-4
   - mateo-1
   - lucas-3
+  - 1-cronicas-2
   reason: Rut 4:13 y 21.
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: kin
   person: rut
@@ -39,5 +41,9 @@ relations:
   reason: Rut 4:13.
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified
+distinct_from:
+- obed-hijo-de-eflal
+- obed-guerrero-de-david
+- obed-hijo-de-semaya

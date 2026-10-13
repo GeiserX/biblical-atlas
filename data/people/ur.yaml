@@ -1,0 +1,19 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ur
+name: Ur
+names:
+- name: Ur
+perspicacia: 1200004518#1
+summary: Padre de Elifal, uno de los guerreros poderosos de David. Perspicacia cree que es Ahasbái, el padre de Elifélet en
+  la lista paralela de Samuel.
+reason: Perspicacia «Ur», núm. 1; 1Cr 11:35.
+sources:
+- it-ur
+- 1-cronicas-11
+links:
+- title: 'Perspicacia: «Ur»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ur/
+  type: perspicacia
+relations: []
+checked_on: '2026-10-12'
+status: verified

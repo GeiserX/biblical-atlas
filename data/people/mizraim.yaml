@@ -10,6 +10,7 @@ reason: Perspicacia «Mizraim», párr. 1 y 2; Gé 10:6, 13, 14.
 sources:
 - it-mizraim
 - genesis-10
+- 1-cronicas-1
 links:
 - title: 'Perspicacia: «Mizraim»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Mizraim/
@@ -24,8 +25,9 @@ relations:
   inferred: false
   sources:
   - genesis-10
+  - 1-cronicas-1
   reason: Gé 10:6 lo nombra entre los hijos de Cam.
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

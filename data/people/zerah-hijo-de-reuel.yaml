@@ -11,6 +11,7 @@ reason: Perspicacia «Zérah», núm. 1 y 2; Gé 36:13, 17.
 sources:
 - it-zerah
 - genesis-36
+- 1-cronicas-1
 links:
 - title: 'Perspicacia: «Zérah»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Z%C3%A9rah/
@@ -26,8 +27,9 @@ relations:
   sources:
   - it-zerah
   - genesis-36
+  - 1-cronicas-1
   reason: 'Gé 36:13: hijo de Reuel.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: kin
   person: basemat-hija-de-ismael
@@ -47,8 +49,10 @@ relations:
   reason: 'Gé 36:17: fue jeque en la tierra de Edom.'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-10-02'
+checked_on: '2026-10-12'
 status: verified
 distinct_from:
 - zerah-hijo-de-juda
 - zohar-hijo-de-simeon
+- zerah-hijo-de-adaya
+- zerah-hijo-de-ido

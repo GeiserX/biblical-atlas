@@ -35,6 +35,7 @@ sources:
 - jeremias-38
 - jeremias-39
 - jeremias-51
+- 1-cronicas-3
 links:
 - title: 'Perspicacia: «Sedequías»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sedequ%C3%ADas/
@@ -52,6 +53,7 @@ relations:
   - 2-reyes-24
   - jeremias-1
   - jeremias-37
+  - 1-cronicas-3
   reason: Hijo de Josías y Hamutal (2Re 24:18).
   checked_on: '2026-10-12'
   status: verified
@@ -161,3 +163,6 @@ distinct_from:
 - sedequias-hijo-de-kenaana
 - sedequias-hijo-de-maaseya
 - sedequias-hijo-de-hananias
+- sedequias-hijo-de-joaquin
+- matanias-hijo-de-mica
+- matanias-hijo-de-heman

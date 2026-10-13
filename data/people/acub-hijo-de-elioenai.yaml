@@ -1,0 +1,32 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: acub-hijo-de-elioenai
+name: Acub
+names:
+- name: Acub
+perspicacia: 1200000186#4
+summary: Cuarto de los siete hijos de Elioenái, entre los últimos descendientes de David que nombra la Biblia hebrea.
+reason: Perspicacia «Aqub»; 1Cr 3:24.
+sources:
+- it-aqub
+- 1-cronicas-3
+links:
+- title: 'Perspicacia: «Aqub»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Aqub/
+  type: perspicacia
+relations:
+- type: kin
+  person: elioenai-hijo-de-nearias
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-3
+  - it-aqub
+  reason: '1Cr 3:24: uno de los siete hijos de Elioenái.'
+  checked_on: '2026-10-12'
+  status: verified
+disambiguation: 'Acub núm. 4 de Perspicacia: descendiente de David, hijo de Elioenái. No el portero levita de después del
+  destierro.'
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- acub-portero

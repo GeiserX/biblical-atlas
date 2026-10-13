@@ -1,0 +1,29 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: maaca-esposa-de-jeiel
+name: Maacá
+names:
+- name: Maacá
+perspicacia: 1200002803#4
+disambiguation: Maacá, esposa de Jeiel de Gabaón; no la esposa de Makir, la de David hija de Talmái, la madre del rey Abiyam
+  ni las demás Maacá.
+distinct_from:
+- maaca-esposa-de-makir
+- maaca-hija-de-talmai
+- maaca-hija-de-uriel
+- maaca-hijo-de-nacor
+- maaca-padre-de-akis
+- maaca-padre-de-hanan
+- maaca-padre-de-sefatias
+- maaca-concubina-de-caleb
+summary: Esposa de Jeiel, el padre de Gabaón.
+reason: Perspicacia «Maacá», núm. 4; 1Cr 8:29.
+sources:
+- it-maaca
+- 1-cronicas-8
+- 1-cronicas-9
+links:
+- title: 'Perspicacia: «Maacá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Maac%C3%A1/
+  type: perspicacia
+checked_on: '2026-10-12'
+status: verified

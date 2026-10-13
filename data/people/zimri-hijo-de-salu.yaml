@@ -7,6 +7,8 @@ perspicacia: 1200004737#2
 disambiguation: Zimrí hijo de Salu, el simeonita que murió en Sitim; no el nieto de Judá ni el quinto rey de Israel.
 distinct_from:
 - zimri-de-israel
+- zimri-hijo-de-zerah
+- zimri-hijo-de-jehoada
 summary: Jefe de una casa paterna de Simeón. Metió a la madianita Cozbí en su tienda, a la vista de Moisés y del pueblo, y
   Finehás los mató a los dos con una lanza.
 reason: Perspicacia «Zimrí», núm. 2; Nú 25:6-8, 14.
@@ -50,5 +52,5 @@ relations:
   reason: 'Nú 25:1, 8: Israel vivía en Sitim cuando Finehás lo mató en su tienda.'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

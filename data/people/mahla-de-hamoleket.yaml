@@ -1,0 +1,30 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: mahla-de-hamoleket
+name: Mahlá
+names:
+- name: Mahlá
+perspicacia: 1200002849#2
+disambiguation: Mahlá de Hamoléket, de Manasés; no Mahlá la hija de Zelofehad que pidió la herencia de su padre.
+distinct_from:
+- mahla-hija-de-zelofehad
+summary: Manasita, hijo o hija de Hamoléket. El texto no dice si era hombre o mujer.
+reason: Perspicacia «Mahlá», núm. 2; 1Cr 7:17, 18.
+sources:
+- it-mahla
+- 1-cronicas-7
+links:
+- title: 'Perspicacia: «Mahlá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Mahl%C3%A1/
+  type: perspicacia
+relations:
+- type: kin
+  person: hamoleket
+  word: mother
+  inferred: false
+  sources:
+  - 1-cronicas-7
+  reason: '1Cr 7:18: su madre fue Hamoléket.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

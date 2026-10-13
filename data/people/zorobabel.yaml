@@ -27,6 +27,7 @@ sources:
 - zacarias-4
 - it-plomada
 - w22-lo-que-zacarias-vio
+- 1-cronicas-3
 links:
 - title: 'Perspicacia: «Zorobabel»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zorobabel/
@@ -75,11 +76,33 @@ relations:
   reason: Mt 1:12. La nota y Perspicacia «Sealtiel» explican que quizá era su padre legal y Pedaya, el natural.
   checked_on: '2026-09-29'
   status: verified
+- type: kin
+  person: nedabias
+  word: uncle
+  inferred: true
+  sources:
+  - 1-cronicas-3
+  - it-nedabias
+  reason: '1Cr 3:17-19: Nedabías es hermano de Pedaya, padre de Zorobabel; Perspicacia «Nedabías» lo llama tío de Zorobabel.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: pedaya-hijo-de-joaquin
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-3
+  - it-zorobabel
+  - it-pedaya
+  reason: 1Cr 3:19 da a Zorobabel y a Simeí como hijos de Pedaya. Perspicacia «Zorobabel» ve probable que Pedaya fuera su
+    padre y Sealtiel, el legal.
+  checked_on: '2026-10-12'
+  status: verified
 perspicacia: '1200004716'
 history:
 - date: '2026-09-29'
   change: La relación con David decía «descendiente de David»; escrita en la ficha de Zorobabel, significa que David es el
     antepasado. Se corrige a «antepasado».
   source: mateo-1
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

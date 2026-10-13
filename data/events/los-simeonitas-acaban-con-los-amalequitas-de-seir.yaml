@@ -1,0 +1,44 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: los-simeonitas-acaban-con-los-amalequitas-de-seir
+title: Los simeonitas acaban con los amalequitas del monte Seír
+date:
+  from: -745
+  to: -715
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 746 y 716 a.e.c. (tiempo narrativo: probablemente en el reinado de Ezequías)'
+narrative_order:
+  series: 1-cronicas-genealogias
+  order: 4042
+places:
+- seir
+people:
+- pelatias-hijo-de-isi
+- nearias-hijo-de-isi
+- refaya-hijo-de-isi
+- uziel-hijo-de-isi
+present:
+- pelatias-hijo-de-isi
+- nearias-hijo-de-isi
+- refaya-hijo-de-isi
+- uziel-hijo-de-isi
+passages:
+- 1Cr 4:42, 43
+summary: Cuatro hijos de Isí, Pelatías, Nearías, Refayá y Uziel, llevan a 500 simeonitas al monte Seír. Acaban con los amalequitas
+  que habían escapado y se quedan a vivir allí.
+reason: Perspicacia «Pelatías», núm. 1, y «Refayá», núm. 3, lo ponen probablemente en el reinado de Ezequías (746-716 a.e.c.,
+  tabla A6-B); «Seír», núm. 2, también. 1Cr 4:42, 43.
+sources:
+- 1-cronicas-4
+- tnm-a6-b
+- it-pelatias
+- it-refaya
+- it-seir
+links:
+- title: 1 Crónicas 4 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/1-Cr%C3%B3nicas/4/
+  type: bible
+checked_on: '2026-10-12'
+status: verified

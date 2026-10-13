@@ -11,7 +11,7 @@ date:
   text: 625 a.e.c.
 narrative_order:
   series: jeremias
-  order: 25001
+  order: 125001
   after: nabucodonosor-rey-de-babilonia
 places:
 - juda
@@ -26,7 +26,7 @@ passages:
 summary: Tras 23 años de avisos desoídos, Jeremías anuncia que Nabucodonosor arrasará Judá y a sus vecinos, que servirán a
   Babilonia 70 años; después caerá Babilonia. Todas las naciones beberán la copa de la ira de Jehová.
 reason: 'Jer 25:1 lo fecha en el año cuarto de Jehoiaquim, primero de Nabucodonosor: 625 según Perspicacia «Jehoiaquim», párr.
-  4, y el estudio 3. El texto no dice dónde habló Jeremías, así que nadie queda situado.'
+  4, y el estudio 3. El texto no dice dónde habló Jeremías, así que nadie queda situado. Orden por fecha.'
 sources:
 - jeremias-25
 - it-jehoiaquim
@@ -40,5 +40,10 @@ links:
 - title: 'Perspicacia: «Jehoiaquim»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jehoiaquim/
   type: perspicacia
-checked_on: '2026-10-12'
+history:
+- date: '2026-10-13'
+  change: 'El orden del relato pasa de 25001 a 125001: la serie sigue las fechas de los sucesos, porque el libro va por temas
+    y no en el orden en que pasaron.'
+  source: it-jeremias-libro
+checked_on: '2026-10-13'
 status: verified

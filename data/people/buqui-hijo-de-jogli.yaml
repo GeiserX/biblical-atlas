@@ -38,5 +38,7 @@ relations:
   reason: 'Nú 34:22: era el jefe de la tribu de Dan.'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified
+distinct_from:
+- buqui-hijo-de-abisua

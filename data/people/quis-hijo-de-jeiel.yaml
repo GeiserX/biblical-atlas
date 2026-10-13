@@ -1,0 +1,56 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: quis-hijo-de-jeiel
+name: Quis
+names:
+- name: Quis
+perspicacia: 1200002631#2
+disambiguation: Quis hijo de Jeiel, tío del padre de Saúl; no Quis hijo de Ner, el padre del rey Saúl, ni los levitas llamados
+  Quis.
+distinct_from:
+- quis-hijo-de-ner
+- quis-hijo-de-mahli
+summary: Benjamita, hijo de Jeiel y de su esposa Maacá. Era hermano de Ner, abuelo de Saúl, y por eso tío del Quis padre del
+  rey.
+reason: Perspicacia «Quis», núm. 2; 1Cr 8:29-31.
+sources:
+- it-quis
+- 1-cronicas-8
+- 1-cronicas-9
+links:
+- title: 'Perspicacia: «Quis»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Quis/
+  type: perspicacia
+relations:
+- type: kin
+  person: jeiel-de-gabaon
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  - 1-cronicas-9
+  reason: 1Cr 8:30, 31 lo cuenta entre los hijos de Jeiel.
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: maaca-esposa-de-jeiel
+  word: mother
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  - it-quis
+  - 1-cronicas-9
+  reason: 'Perspicacia «Quis», núm. 2: hijo de Jeiel y de su esposa Maacá (1Cr 8:29, 30).'
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: ner
+  word: brother
+  inferred: false
+  sources:
+  - 1-cronicas-9
+  - it-quis
+  reason: 1Cr 9:36 pone a Quis y a Ner entre los hijos de Jeiel; Perspicacia «Quis», núm. 2, los llama hermanos.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

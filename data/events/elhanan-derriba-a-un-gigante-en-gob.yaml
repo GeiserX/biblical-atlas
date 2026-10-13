@@ -16,14 +16,16 @@ places:
 - gob
 people:
 - elhanan-hijo-de-jair
-roles: {}
+- lahmi
+roles:
+  lahmi: died
 passages:
 - 2Sa 21:19
 - 1Cr 20:5
 summary: En otra guerra en Gob, Elhanán derriba a un gigante con una lanza de asta enorme. El texto dice Goliat el guitita;
   1Cr 20:5 dice Lahmí, hermano de Goliat.
-reason: '2Sa 21:19; Perspicacia «Lahmí»: probablemente murió Lahmí, sin ficha, así que nadie lleva papel. Fecha: tras la toma
-  de Rabá (1Cr 20:4), en los últimos sucesos del reinado (Perspicacia «Samuel, Libros de»); 2 Samuel acaba c. 1040.'
+reason: '2Sa 21:19 y 1Cr 20:5; según Perspicacia «Lahmí», el que muere es probablemente Lahmí. Fecha: tras la toma de Rabá
+  (1Cr 20:4), en los últimos sucesos del reinado (Perspicacia «Samuel, Libros de»); 2 Samuel acaba c. 1040.'
 sources:
 - 2-samuel-21
 - it-elhanan
@@ -37,5 +39,12 @@ links:
 - title: 2 Samuel 21 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-samuel/21/
   type: bible
-checked_on: '2026-09-29'
+history:
+- date: '2026-10-12'
+  change: 'Lahmí ya tiene ficha (1Cr 20:5): lleva el papel de quien muere.'
+  source: 1-cronicas-20
+- date: '2026-10-12'
+  change: La razón ya no dice que Lahmí no tiene ficha; cita 1Cr 20:5, que lo nombra.
+  source: 1-cronicas-20
+checked_on: '2026-10-12'
 status: verified

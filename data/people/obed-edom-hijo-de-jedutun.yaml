@@ -1,0 +1,49 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: obed-edom-hijo-de-jedutun
+name: Obed-Edom
+names:
+- name: Obed-Edom
+perspicacia: null
+disambiguation: El hijo de Jedutún de 1Cr 16:38, al que el versículo nombra aparte del Obed-Edom de los 68 hermanos (Perspicacia
+  «Obed-edom», núm. 2).
+distinct_from:
+- obed-edom-musico
+- obed-edom-coreita
+summary: Portero, hijo de un levita llamado Jedutún, en el servicio que David organizó ante el Arca en Jerusalén. Perspicacia
+  cree que quizá es el portero de la procesión.
+reason: Perspicacia «Obed-edom», núm. 3, y «Jedutún», núm. 2; 1Cr 16:38. Perspicacia no le da entrada propia.
+sources:
+- it-obed-edom
+- it-jedutun
+- 1-cronicas-16
+links:
+- title: 'Perspicacia: «Obed-edom»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Obed-edom/
+  type: perspicacia
+- title: 'Perspicacia: «Jedutún»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jedut%C3%BAn/
+  type: perspicacia
+relations:
+- type: kin
+  person: jedutun-padre-de-obed-edom
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-16
+  - it-jedutun
+  reason: 1Cr 16:38 lo llama hijo de Jedutún; Perspicacia «Jedutún», núm. 2, admite que fuera hijo o descendiente.
+  checked_on: '2026-10-12'
+  status: verified
+- type: same_as
+  person: obed-edom-portero
+  certainty: possible
+  inferred: true
+  sources:
+  - it-obed-edom
+  - 1-cronicas-16
+  reason: 'Perspicacia «Obed-edom», núm. 3: quizás el portero de la procesión del Arca es también este hijo de Jedutún (1Cr
+    16:38).'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

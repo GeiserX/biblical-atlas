@@ -11,7 +11,7 @@ date:
   text: 607 a.e.c.
 narrative_order:
   series: jeremias
-  order: 40001
+  order: 940001
   after: los-principes-de-babilonia-sacan-a-jeremias-del-patio-de-la-guardia
 places:
 - rama-de-benjamin
@@ -28,7 +28,7 @@ passages:
 summary: Jeremías iba esposado entre los desterrados. En Ramá, Nebuzaradán le quita las esposas y lo deja elegir; con víveres
   y un regalo, él vuelve con Guedalías a Mizpá y se queda a vivir allí.
 reason: 'Jer 40:1-6. Perspicacia «Ramá», núm. 1: parece que allí se reunió a los cautivos de 607 antes de llevarlos a Babilonia;
-  «Nebuzaradán»: lo soltó cumpliendo las órdenes de Nabucodonosor.'
+  «Nebuzaradán»: lo soltó cumpliendo las órdenes de Nabucodonosor. Orden por fecha.'
 sources:
 - jeremias-40
 - si-3
@@ -43,5 +43,10 @@ links:
 - title: 'Perspicacia: «Ramá»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ram%C3%A1/
   type: perspicacia
-checked_on: '2026-10-12'
+history:
+- date: '2026-10-13'
+  change: 'El orden del relato pasa de 40001 a 940001: la serie sigue las fechas de los sucesos, porque el libro va por temas
+    y no en el orden en que pasaron.'
+  source: it-jeremias-libro
+checked_on: '2026-10-13'
 status: verified

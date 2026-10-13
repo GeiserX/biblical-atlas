@@ -1,0 +1,41 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: janai
+name: Janái
+names:
+- name: Janái
+- name: Janai
+  note: Grafía de Perspicacia.
+perspicacia: '1200002318'
+disambiguation: Janái el gadita de Basán (1Cr 5:12); no Janaí, el antepasado de Jesús que nombra Lucas, que Perspicacia trata
+  en otro artículo.
+distinct_from:
+- janai-hijo-de-jose
+summary: Gadita que vivía en Basán, nombrado después de Joel y Safam.
+reason: Perspicacia «Janai»; 1Cr 5:12.
+sources:
+- it-janai
+- 1-cronicas-5
+links:
+- title: 'Perspicacia: «Janai»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Janai/
+  type: perspicacia
+relations:
+- type: lived_in
+  place: basan
+  inferred: false
+  sources:
+  - 1-cronicas-5
+  reason: '1Cr 5:11, 12: los gaditas vivían en Basán, hasta Salecá.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: gad-hijo-de-jacob
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-5
+  reason: '1Cr 5:11, 12: está entre los descendientes de Gad.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

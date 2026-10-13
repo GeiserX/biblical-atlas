@@ -1,0 +1,35 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: obed-edom-coreita
+name: Obed-Edom
+names:
+- name: Obed-Edom
+perspicacia: 1200003291#4
+disambiguation: El portero coreíta de la puerta del sur, padre de ocho hijos (1Cr 26:4-8, 15); no el guitita en cuya casa
+  estuvo el Arca ni el músico del traslado (Perspicacia «Obed-edom»).
+summary: Levita coreíta, cabeza de una casa de porteros. Dios lo bendijo con ocho hijos, y con 62 de su familia guardó la
+  puerta del sur y los almacenes.
+reason: Perspicacia «Obed-edom», núm. 4; 1Cr 26:4-8, 15.
+sources:
+- it-obed-edom
+- 1-cronicas-26
+links:
+- title: 'Perspicacia: «Obed-edom»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Obed-edom/
+  type: perspicacia
+relations:
+- type: same_as
+  person: obed-edom-portero
+  certainty: possible
+  inferred: true
+  sources:
+  - it-obed-edom
+  - 1-cronicas-26
+  reason: 'Perspicacia «Obed-edom», núm. 3 y 4: puede que el portero de la procesión del Arca sea este coreíta de 1Cr 26:4.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- obed-edom-el-guitita
+- obed-edom-hijo-de-jedutun
+- obed-edom-musico

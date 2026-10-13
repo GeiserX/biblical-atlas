@@ -1,0 +1,32 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ahlai-hija-de-sesan
+name: Ahlái
+names:
+- name: Ahlái
+perspicacia: 1200000172#1
+summary: Descendiente de Sesán, de la tribu de Judá. Perspicacia cree probable que fuera la hija que Sesán dio por esposa
+  a su siervo Jarhá, madre de Atái.
+reason: Perspicacia «Ahlai», núm. 1, y «Sesán»; 1Cr 2:31, 34, 35.
+sources:
+- it-ahlai
+- 1-cronicas-2
+- it-sesan
+links:
+- title: 'Perspicacia: «Ahlai»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ahlai/
+  type: perspicacia
+relations:
+- type: kin
+  person: sesan
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-2
+  reason: '1Cr 2:31: Ahlái desciende de Sesán; 2:34 dice que Sesán solo tuvo hijas.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+disambiguation: Ahlái, descendiente de Sesán en Judá; no Ahlái, padre de Zabad, el guerrero de David.
+distinct_from:
+- ahlai-padre-de-zabad

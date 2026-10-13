@@ -29,5 +29,9 @@ relations:
   reason: 2Re 22:12 lo llama el siervo del rey.
   checked_on: '2026-09-30'
   status: verified
-checked_on: '2026-09-30'
+checked_on: '2026-10-12'
 status: verified
+distinct_from:
+- asaya-simeonita
+- asaya-hijo-de-haguias
+- asaya-silonita

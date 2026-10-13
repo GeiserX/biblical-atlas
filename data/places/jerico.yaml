@@ -40,6 +40,7 @@ sources:
 - 2-samuel-10
 - 1-reyes-16
 - 2-reyes-2
+- 1-cronicas-19
 links:
 - title: 'Perspicacia: «Jericó»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jeric%C3%B3/
@@ -60,5 +61,5 @@ history:
 - date: '2026-09-29'
   change: La razón cita ahora de dónde sale la fecha de la toma, que entra en el resumen.
   source: josue-6
-checked_on: '2026-09-30'
+checked_on: '2026-10-12'
 status: verified

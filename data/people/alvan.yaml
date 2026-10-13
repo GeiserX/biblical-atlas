@@ -9,6 +9,7 @@ reason: Perspicacia «Alván»; Gé 36:23.
 sources:
 - it-alvan
 - genesis-36
+- 1-cronicas-1
 links:
 - title: 'Perspicacia: «Alván»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Alv%C3%A1n/
@@ -24,8 +25,9 @@ relations:
   sources:
   - it-alvan
   - genesis-36
+  - 1-cronicas-1
   reason: 'Gé 36:23: hijo de Sobal.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

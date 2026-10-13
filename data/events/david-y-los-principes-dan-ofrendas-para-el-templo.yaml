@@ -1,0 +1,44 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: david-y-los-principes-dan-ofrendas-para-el-templo
+title: David y los príncipes dan ofrendas para el templo
+date:
+  from: -1036
+  to: -1036
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 1037 a.e.c.
+narrative_order:
+  series: 1-cronicas
+  order: 29001
+places:
+- jerusalen
+people:
+- david
+- jehiel-descendiente-de-ladan
+present:
+- david
+passages:
+- 1Cr 29:1-9
+summary: Ante la congregación, David entrega de su tesoro personal oro de Ofir y plata refinada para la casa de Jehová y pide
+  donativos. Príncipes y jefes aportan metales y piedras preciosas, que van al tesoro a cargo de Jehiel.
+reason: '1Cr 29:1-9. Perspicacia «Salomón» la pone tras la primera unción de Salomón; el estudio 3, párr. 4, da 1037 para
+  su subida y la muerte de David. Lugar: Jerusalén, donde David reunió la asamblea al empezar el capítulo 28.'
+sources:
+- 1-cronicas-29
+- it-salomon
+- it-jehiel
+- it-david
+- si-3
+links:
+- title: 1 Crónicas 29 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/1-Cr%C3%B3nicas/29/
+  type: bible
+history:
+- date: '2026-10-13'
+  change: 'Sin after a salomon-rey: ya va tras 1Cr 22:6-19, que lo lleva. Repetido, cada uno volvía a cerrar el tramo en esa
+    fecha y dejaba sin sitio al suceso anterior.'
+  source: 1-cronicas-29
+checked_on: '2026-10-13'
+status: verified

@@ -1,0 +1,33 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: isias-hijo-de-izrahias
+name: Isías
+names:
+- name: Isías
+perspicacia: 1200002231#1
+disambiguation: Isías hijo de Izrahías, de Isacar; no los otros Isías que numera Perspicacia.
+summary: Isacarita, hijo de Izrahías. Fue jefe de su tribu, y sus descendientes la hicieron crecer, porque tuvieron muchas
+  esposas e hijos.
+reason: Perspicacia «Isías», núm. 1; 1Cr 7:1, 3, 4.
+sources:
+- it-isias
+- 1-cronicas-7
+links:
+- title: 'Perspicacia: «Isías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Is%C3%ADas/
+  type: perspicacia
+relations:
+- type: kin
+  person: izrahias-de-isacar
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-7
+  reason: 1Cr 7:3 lo cuenta entre los hijos de Izrahías.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- isias-descendiente-de-moises
+- isias-el-coreita
+- isias-uzielita

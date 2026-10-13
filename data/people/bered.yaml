@@ -1,0 +1,37 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: bered
+name: Bered
+names:
+- name: Bered
+perspicacia: '1200000651#1'
+summary: Efraimita, nieto de Efraín por medio de Sutélah.
+reason: Perspicacia «Bered»; 1Cr 7:20.
+sources:
+- it-bered
+- 1-cronicas-7
+links:
+- title: 'Perspicacia: «Bered»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Bered/
+  type: perspicacia
+relations:
+- type: kin
+  person: sutelah-hijo-de-efrain
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-7
+  reason: '1Cr 7:20: Bered era hijo de Sutélah; Perspicacia «Bered», núm. 1, lo llama nieto de Efraín.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: efrain
+  word: grandfather
+  inferred: false
+  sources:
+  - 1-cronicas-7
+  - it-bered
+  reason: 'Perspicacia «Bered», núm. 1: nieto de Efraín por Sutélah (1Cr 7:20).'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

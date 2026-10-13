@@ -14,6 +14,7 @@ sources:
 - it-lahmi
 - it-jair
 - 2-samuel-21
+- 1-cronicas-20
 links:
 - title: 'Perspicacia: «Elhanán»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Elhan%C3%A1n/
@@ -30,9 +31,10 @@ relations:
   sources:
   - 2-samuel-21
   - it-jaare-oreguim
+  - 1-cronicas-20
   reason: 2Sa 21:19 lo llama hijo de Jaaré-Oreguim; Perspicacia «Jaír», núm. 4, cree que el nombre es un error por Jaír (1Cr
     20:5).
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: tie
   person: david
@@ -41,10 +43,11 @@ relations:
   sources:
   - 2-samuel-21
   - it-elhanan
+  - 1-cronicas-20
   reason: '2Sa 21:22: los gigantes cayeron a manos de David y de sus siervos, entre ellos Elhanán.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified
 distinct_from:
 - elhanan-hijo-de-dodo

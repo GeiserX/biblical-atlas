@@ -1,0 +1,30 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: kenaana-hijo-de-bilhan
+name: Kenaaná
+names:
+- name: Kenaaná
+perspicacia: 1200000937#2
+disambiguation: Kenaaná hijo de Bilhán, benjamita; no el padre del profeta falso Sedequías.
+distinct_from:
+- kenaana-padre-de-sedequias
+summary: Benjamita de la línea de Jediael, hijo de Bilhán.
+reason: Perspicacia «Kenaaná», núm. 2; 1Cr 7:6, 10, 11.
+sources:
+- it-kenaana
+- 1-cronicas-7
+links:
+- title: 'Perspicacia: «Kenaaná»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Kenaan%C3%A1/
+  type: perspicacia
+relations:
+- type: kin
+  person: bilhan-hijo-de-jediael
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-7
+  reason: 1Cr 7:10 lo cuenta entre los hijos de Bilhán.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

@@ -1,0 +1,30 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: libni-hijo-de-mahli
+name: Libní
+names:
+- name: Libní
+perspicacia: 1200002735#2
+disambiguation: Libní hijo de Mahlí (1Cr 6:29); no es ninguno de los otros Libní que numera Perspicacia «Libní».
+distinct_from:
+- libni-hijo-de-guerson
+summary: Levita merarita, hijo de Mahlí y padre de Simeí.
+reason: Perspicacia «Libní», núm. 2; 1Cr 6:29.
+sources:
+- it-libni
+- 1-cronicas-6
+links:
+- title: 'Perspicacia: «Libní»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Libn%C3%AD/
+  type: perspicacia
+relations:
+- type: kin
+  person: mahli-hijo-de-merari
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-6
+  reason: '1Cr 6:29, 30: «su hijo Libní», tras Mahlí.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

@@ -22,6 +22,7 @@ sources:
 - mateo-1
 - 1-reyes-11
 - 1-reyes-15
+- 1-cronicas-3
 links:
 - title: 'Perspicacia: «Rehoboam»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Rehoboam/
@@ -39,8 +40,9 @@ relations:
   - 1-reyes-11
   - mateo-1
   - 1-reyes-14
+  - 1-cronicas-3
   reason: 1Re 11:43 lo presenta como hijo y sucesor de Salomón.
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-12'
   status: verified
 - type: succeeds
   person: salomon
@@ -119,5 +121,5 @@ history:
 - date: '2026-09-30'
   change: La TNM escribe Sisac (1Re 11:40; 14:25); Sisaq es la forma de Perspicacia.
   source: 1-reyes-14
-checked_on: '2026-09-30'
+checked_on: '2026-10-12'
 status: verified

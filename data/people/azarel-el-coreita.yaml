@@ -1,0 +1,43 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: azarel-el-coreita
+name: Azarel
+names:
+- name: Azarel
+perspicacia: 1200000485#1
+disambiguation: Azarel el coreíta, con David en Ziclag (1Cr 12:6); no el cantor, el príncipe de Dan hijo de Jeroham ni los
+  de tiempos de Esdras.
+distinct_from:
+- azarel-hijo-de-jeroham
+- uziel-hijo-de-heman
+summary: Coreíta que fue a Ziclag con otros guerreros para apoyar a David.
+reason: Perspicacia «Azarel», núm. 1; 1Cr 12:6.
+sources:
+- it-azarel
+- 1-cronicas-12
+links:
+- title: 'Perspicacia: «Azarel»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Azarel/
+  type: perspicacia
+relations:
+- type: kin
+  person: core-hijo-de-izhar
+  word: ancestor
+  inferred: true
+  sources:
+  - 1-cronicas-12
+  - it-coreita
+  reason: 1Cr 12:6 lo cuenta entre los coreítas; Perspicacia «Coreíta» da a los coreítas por descendientes de Coré y cita
+    este pasaje.
+  checked_on: '2026-10-12'
+  status: verified
+- type: tie
+  person: david
+  word: master
+  inferred: false
+  sources:
+  - 1-cronicas-12
+  reason: '1Cr 12:6: se unió a David y lo apoyó en la guerra.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

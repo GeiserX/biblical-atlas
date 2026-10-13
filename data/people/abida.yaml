@@ -9,6 +9,7 @@ reason: Perspicacia «Abidá»; Gé 25:4.
 sources:
 - it-abida
 - genesis-25
+- 1-cronicas-1
 links:
 - title: 'Perspicacia: «Abidá»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Abid%C3%A1/
@@ -24,8 +25,9 @@ relations:
   sources:
   - it-abida
   - genesis-25
+  - 1-cronicas-1
   reason: Gé 25:4.
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

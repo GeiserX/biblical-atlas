@@ -1,0 +1,28 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: iri
+name: Irí
+names:
+- name: Irí
+perspicacia: '1200002196'
+summary: Benjamita, hijo de Bela, cabeza paterna y guerrero valiente. Perspicacia cree que probablemente es el Ir del versículo
+  12.
+reason: Perspicacia «Irí»; 1Cr 7:7, 12.
+sources:
+- it-iri
+- 1-cronicas-7
+links:
+- title: 'Perspicacia: «Irí»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ir%C3%AD/
+  type: perspicacia
+relations:
+- type: kin
+  person: bela-hijo-de-benjamin
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-7
+  reason: 1Cr 7:7 lo cuenta entre los hijos de Bela.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

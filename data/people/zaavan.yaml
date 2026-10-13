@@ -9,6 +9,7 @@ reason: Perspicacia «Zaaván»; Gé 36:27.
 sources:
 - it-zaavan
 - genesis-36
+- 1-cronicas-1
 links:
 - title: 'Perspicacia: «Zaaván»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zaav%C3%A1n/
@@ -24,8 +25,9 @@ relations:
   sources:
   - it-zaavan
   - genesis-36
+  - 1-cronicas-1
   reason: 'Gé 36:27: hijo de Ézer.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

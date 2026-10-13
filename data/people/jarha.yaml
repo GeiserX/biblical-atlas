@@ -1,0 +1,47 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jarha
+name: Jarhá
+names:
+- name: Jarhá
+perspicacia: '1200002330'
+summary: Siervo egipcio de Sesán, de la casa de Jerahmeel. Sesán no tenía hijos varones y le dio una hija por esposa; su hijo
+  Atái siguió la línea.
+reason: Perspicacia «Jarhá»; 1Cr 2:34, 35.
+sources:
+- it-jarha
+- 1-cronicas-2
+links:
+- title: 'Perspicacia: «Jarhá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jarh%C3%A1/
+  type: perspicacia
+relations:
+- type: tie
+  person: sesan
+  word: master
+  inferred: false
+  sources:
+  - 1-cronicas-2
+  reason: '1Cr 2:34, 35: era siervo de Sesán.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: sesan
+  word: father_in_law
+  inferred: false
+  sources:
+  - 1-cronicas-2
+  reason: '1Cr 2:35: Sesán le dio a su hija por esposa.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: ahlai-hija-de-sesan
+  word: wife
+  inferred: true
+  sources:
+  - 1-cronicas-2
+  - it-ahlai
+  reason: '1Cr 2:31, 35; Perspicacia «Ahlai», núm. 1, y «Sesán»: la hija que recibió por esposa fue probablemente Ahlái.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

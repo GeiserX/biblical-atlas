@@ -46,5 +46,8 @@ relations:
     los que regresaron de allí.'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified
+distinct_from:
+- helem-de-aser
+- heldai-el-netofatita

@@ -23,6 +23,8 @@ sources:
 - josue-12
 - josue-13
 - josue-21
+- 1-cronicas-6
+- 1-cronicas-11
 links:
 - title: 'Perspicacia: «Astarot»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Astarot/
@@ -30,5 +32,5 @@ links:
 - title: Deuteronomio 1 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/deuteronomio/1/
   type: bible
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

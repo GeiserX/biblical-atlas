@@ -1,0 +1,27 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: amal
+name: Amal
+names:
+- name: Amal
+perspicacia: '1200000215'
+summary: Aserita, el último de los cuatro hijos de Hélem de la lista, contado entre los jefes escogidos de la tribu.
+reason: Perspicacia «Amal»; 1Cr 7:35, 40.
+sources:
+- it-amal
+- 1-cronicas-7
+links:
+- title: 'Perspicacia: «Amal»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Amal/
+  type: perspicacia
+relations:
+- type: kin
+  person: helem-de-aser
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-7
+  reason: 1Cr 7:35 lo cuenta entre los hijos de Hélem.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

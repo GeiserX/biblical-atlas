@@ -1,0 +1,46 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: asaya-silonita
+name: Asaya
+names:
+- name: Asaya
+perspicacia: 1200000399#4
+summary: Primogénito de los silonitas, la familia de Selá hijo de Judá, que volvió del destierro y vivió en Jerusalén con
+  sus hijos.
+reason: Perspicacia «Asaya», núm. 4, y «Silonita», núm. 1; 1Cr 9:3, 5.
+sources:
+- it-asaya
+- it-silonita
+- 1-cronicas-9
+links:
+- title: 'Perspicacia: «Asaya»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Asaya/
+  type: perspicacia
+relations:
+- type: kin
+  person: sela-hijo-de-juda
+  word: ancestor
+  inferred: true
+  sources:
+  - 1-cronicas-9
+  - it-silonita
+  - it-asaya
+  reason: 1Cr 9:5 lo pone entre los silonitas; Perspicacia «Silonita», núm. 1, dice que eran la familia de Selá, hijo de Judá.
+  checked_on: '2026-10-12'
+  status: verified
+- type: lived_in
+  place: jerusalen
+  inferred: false
+  sources:
+  - 1-cronicas-9
+  - it-asaya
+  reason: '1Cr 9:3, 5: de los de Judá que se establecieron en Jerusalén.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- asaya-hijo-de-haguias
+- asaya-siervo-del-rey
+- asaya-simeonita
+disambiguation: 'Asaya núm. 4 de Perspicacia: primogénito de los silonitas que volvió del destierro. No el siervo del rey
+  Josías.'

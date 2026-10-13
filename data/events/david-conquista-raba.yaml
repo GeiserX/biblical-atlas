@@ -24,7 +24,7 @@ present:
 - david
 passages:
 - 2Sa 12:26-31
-- 1Cr 20:2, 3
+- 1Cr 20:1-3
 summary: Joab toma la ciudad de las aguas y llama a David para que la conquista sea suya. David toma Rabá, se pone la corona
   de Malcam y pone a trabajar a los ammonitas.
 reason: 'El estudio 3 pone la llegada del Arca a Jerusalén después de 1070 y el final de 2 Samuel hacia 1040. Perspicacia
@@ -38,5 +38,10 @@ links:
 - title: 2 Samuel 12 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-samuel/12/
   type: bible
-checked_on: '2026-09-29'
+history:
+- date: '2026-10-12'
+  change: '1Cr 20:1 termina con Joab atacando y destruyendo Rabá, lo que corresponde a 2Sa 12:26-29: el pasaje pasa a 1Cr
+    20:1-3.'
+  source: 1-cronicas-20
+checked_on: '2026-10-12'
 status: verified

@@ -39,7 +39,10 @@ relations:
   reason: Nú 13:5 lo llama hijo de Horí.
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-30'
+checked_on: '2026-10-12'
 status: verified
 distinct_from:
 - safat-padre-de-eliseo
+- safat-hijo-de-semaya
+- safat-el-gadita
+- safat-hijo-de-adlai

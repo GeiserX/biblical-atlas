@@ -1,0 +1,29 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: zif-hijo-de-jehalelel
+name: Zif
+names:
+- name: Zif
+perspicacia: 1200004742#1
+disambiguation: Zif hijo de Jehalelel (núm. 1 de Perspicacia); no las ciudades de Judá llamadas Zif.
+summary: Judaíta, el primero de los cuatro hijos de Jehalelel.
+reason: Perspicacia «Zif»; 1Cr 4:16.
+sources:
+- it-zif
+- 1-cronicas-4
+links:
+- title: 'Perspicacia: «Zif»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zif/
+  type: perspicacia
+relations:
+- type: kin
+  person: jehalelel-de-juda
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-4
+  - it-zif
+  reason: '1Cr 4:16: uno de los hijos de Jehalelel.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

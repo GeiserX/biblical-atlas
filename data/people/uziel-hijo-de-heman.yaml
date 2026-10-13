@@ -1,0 +1,42 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: uziel-hijo-de-heman
+name: Uziel
+names:
+- name: Uziel
+- name: Azarel
+  note: Así se le llama en 1Cr 25:18; Perspicacia «Uziel», núm. 3, y «Azarel», núm. 2, lo dan por el mismo.
+perspicacia: 1200004536#3
+disambiguation: El hijo de Hemán llamado también Azarel (1Cr 25:4, 18); no Uziel hijo de Cohat ni Azarel hijo de Jeroham (Perspicacia
+  «Uziel» y «Azarel»).
+summary: Músico levita, hijo de Hemán. Con el nombre de Azarel recibió la suerte número 11 y dirigió ese grupo de doce.
+reason: Perspicacia «Uziel», núm. 3; 1Cr 25:4, 18.
+sources:
+- it-uziel
+- it-azarel
+- 1-cronicas-25
+links:
+- title: 'Perspicacia: «Uziel»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Uziel/
+  type: perspicacia
+- title: 'Perspicacia: «Azarel»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Azarel/
+  type: perspicacia
+relations:
+- type: kin
+  person: heman-hijo-de-joel
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-25
+  - it-uziel
+  reason: 1Cr 25:4, 18 lo cuenta entre los hijos de Hemán.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- azarel-el-coreita
+- azarel-hijo-de-jeroham
+- uziel-de-benjamin
+- uziel-hijo-de-cohat
+- uziel-hijo-de-isi

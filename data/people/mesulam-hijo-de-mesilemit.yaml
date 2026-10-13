@@ -1,0 +1,47 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: mesulam-hijo-de-mesilemit
+name: Mesulam
+names:
+- name: Mesulam
+perspicacia: 1200003014#6
+summary: Sacerdote de la casa de Imer, hijo de Mesilemit. Al menos tres generaciones de sus descendientes vivieron en Jerusalén
+  tras el destierro.
+reason: Perspicacia «Mesulam», núm. 6; 1Cr 9:12.
+sources:
+- it-mesulam
+- 1-cronicas-9
+links:
+- title: 'Perspicacia: «Mesulam»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Mesulam/
+  type: perspicacia
+relations:
+- type: kin
+  person: mesilemit
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-9
+  reason: '1Cr 9:12: Mesulam, hijo de Mesilemit.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: holds_office
+  office: priest
+  inferred: true
+  sources:
+  - 1-cronicas-9
+  - it-mesulam
+  reason: Perspicacia «Mesulam», núm. 6, lo llama sacerdote; 1Cr 9:12.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- mesulam-abuelo-de-safan
+- mesulam-hijo-de-abihail
+- mesulam-hijo-de-elpaal
+- mesulam-hijo-de-hodavias
+- mesulam-hijo-de-sefatias
+- mesulam-hijo-de-zorobabel
+- salum-hijo-de-sadoc
+disambiguation: 'Mesulam núm. 6 de Perspicacia: sacerdote de la casa de Imer, hijo de Mesilemit. No los benjamitas de la misma
+  lista ni el padre de Hilquías.'

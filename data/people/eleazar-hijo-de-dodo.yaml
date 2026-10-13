@@ -10,12 +10,14 @@ distinct_from:
 - eleazar-hijo-de-aaron
 - eleazar-hijo-de-abinadab
 - eleazar-hijo-de-eliud
+- eleazar-hijo-de-mahli
 summary: Ahohíta, uno de los tres guerreros más destacados de David. Cuando los israelitas se retiraron, él siguió abatiendo
   filisteos hasta que ya no podía soltar la espada.
 reason: Perspicacia «Eleazar», núm. 3; 2Sa 23:9, 10, 16.
 sources:
 - it-eleazar
 - 2-samuel-23
+- 1-cronicas-11
 links:
 - title: 'Perspicacia: «Eleazar»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Eleazar/
@@ -27,8 +29,9 @@ relations:
   inferred: false
   sources:
   - 2-samuel-23
+  - 1-cronicas-11
   reason: '2Sa 23:9: Eleazar, hijo de Dodó.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: tie
   person: david
@@ -36,8 +39,9 @@ relations:
   inferred: false
   sources:
   - 2-samuel-23
+  - 1-cronicas-11
   reason: '2Sa 23:9: estaba con David entre sus tres guerreros más fuertes.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

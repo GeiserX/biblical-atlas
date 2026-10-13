@@ -1,0 +1,27 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: imri-hijo-de-bani
+name: Imrí
+names:
+- name: Imrí
+perspicacia: 1200002162#1
+summary: Judaíta descendiente de Pérez, hijo de Baní; antepasado de Utái, que volvió a vivir en Jerusalén.
+reason: Perspicacia «Imrí», núm. 1; 1Cr 9:4.
+sources:
+- it-imri
+- 1-cronicas-9
+links:
+- title: 'Perspicacia: «Imrí»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Imr%C3%AD/
+  type: perspicacia
+relations:
+- type: kin
+  person: bani-descendiente-de-perez
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-9
+  reason: '1Cr 9:4: Imrí, hijo de Baní.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

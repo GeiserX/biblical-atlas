@@ -16,6 +16,7 @@ places:
 - jerusalen
 people:
 - david
+- joab-hijo-de-zeruya
 passages:
 - 2Sa 5:6-10
 - 1Cr 11:4-9
@@ -29,6 +30,8 @@ sources:
 - it-jerusalen
 - it-david
 - it-monticulo
+- 1-cronicas-11
+- it-joab
 links:
 - title: 'Perspicacia: «Jerusalén»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jerusal%C3%A9n/
@@ -40,5 +43,5 @@ links:
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-samuel/5/
   type: bible
 search: David toma Jerusalén jebuseos
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

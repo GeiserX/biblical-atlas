@@ -39,6 +39,8 @@ sources:
 - it-nacon
 - openbible-geo
 - 2-samuel-6
+- 1-cronicas-13
+- it-kidon
 links:
 - title: 'Perspicacia: «Pérez-uzah»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/P%C3%A9rez-uzah/
@@ -49,5 +51,8 @@ links:
 - title: 2 Samuel 6 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-samuel/6/
   type: bible
-checked_on: '2026-09-29'
+- title: 'Perspicacia: «Kidón»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Kid%C3%B3n/
+  type: perspicacia
+checked_on: '2026-10-12'
 status: verified

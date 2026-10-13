@@ -11,6 +11,7 @@ reason: Perspicacia «Madián, madianitas», núm. 1 y 2; Gé 25:2, 4.
 sources:
 - it-madian
 - genesis-25
+- 1-cronicas-1
 links:
 - title: 'Perspicacia: «Madián, madianitas»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Madi%C3%A1n-madianitas/
@@ -26,8 +27,9 @@ relations:
   sources:
   - it-madian
   - genesis-25
+  - 1-cronicas-1
   reason: 'Gé 25:1, 2: hijo de Abrahán y Queturá.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: kin
   person: quetura
@@ -36,8 +38,9 @@ relations:
   sources:
   - it-madian
   - genesis-25
+  - 1-cronicas-1
   reason: 'Gé 25:1, 2: hijo de Abrahán y Queturá.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

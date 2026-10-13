@@ -1,0 +1,42 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: simei-hijo-de-gog
+name: Simeí
+names:
+- name: Simeí
+perspicacia: 1200004047#2
+disambiguation: Simeí hijo de Gog (1Cr 5:4-6); no es ninguno de los otros Simeí que numera Perspicacia «Simeí».
+distinct_from:
+- sama-hijo-de-jese
+- simei-descendiente-de-ladan
+- simei-el-ramatita
+- simei-hijo-de-ela
+- simei-hijo-de-guera
+- simei-hijo-de-guerson
+- simei-hijo-de-jahat
+- simei-hijo-de-jedutun
+- simei-hijo-de-libni
+- simei-hijo-de-pedaya
+- simei-hijo-de-zacur
+- simei-padre-de-jaquim
+- simei-partidario-de-david
+summary: Rubenita, hijo de Gog. Su descendiente Beerá, jefe de la tribu, fue llevado al destierro por Tiglat-Piléser III.
+reason: Perspicacia «Simeí», núm. 2; 1Cr 5:4-6.
+sources:
+- it-simei
+- 1-cronicas-5
+links:
+- title: 'Perspicacia: «Simeí»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sime%C3%AD/
+  type: perspicacia
+relations:
+- type: kin
+  person: gog-hijo-de-semaya
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-5
+  reason: '1Cr 5:4: «su hijo Simeí», tras Gog.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

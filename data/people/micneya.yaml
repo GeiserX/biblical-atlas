@@ -1,0 +1,17 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: micneya
+name: Micneyá
+names:
+- name: Micneyá
+perspicacia: '1200003049'
+summary: Levita que tocó el arpa en la procesión que subió el Arca a Jerusalén.
+reason: Perspicacia «Miqneyá», que la TNM escribe Micneyá; 1Cr 15:18, 21.
+sources:
+- it-miqneya
+- 1-cronicas-15
+links:
+- title: 'Perspicacia: «Miqneyá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Miqney%C3%A1/
+  type: perspicacia
+checked_on: '2026-10-12'
+status: verified

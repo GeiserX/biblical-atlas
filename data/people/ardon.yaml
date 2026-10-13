@@ -1,0 +1,27 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ardon
+name: Ardón
+names:
+- name: Ardón
+perspicacia: '1200000353'
+summary: Judaíta, tercero de los hijos de Caleb que nombra 1 Crónicas 2:18. Su padre era hijo de Hezrón.
+reason: Perspicacia «Ardón»; 1Cr 2:18.
+sources:
+- it-ardon
+- 1-cronicas-2
+links:
+- title: 'Perspicacia: «Ardón»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ard%C3%B3n/
+  type: perspicacia
+relations:
+- type: kin
+  person: caleb-hijo-de-hezron
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-2
+  reason: 1Cr 2:18 lo cuenta entre los hijos que tuvo Caleb.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

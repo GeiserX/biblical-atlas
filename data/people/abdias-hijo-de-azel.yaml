@@ -1,0 +1,38 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: abdias-hijo-de-azel
+name: Abdías
+names:
+- name: Abdías
+perspicacia: 1200003287#6
+disambiguation: Abdías hijo de Azel, de la casa de Saúl; no el profeta, el mayordomo de Acab ni los demás Abdías.
+distinct_from:
+- abdias-hijo-de-izrahias
+- abdias-mayordomo-de-acab
+- abdias-profeta
+- abdias-el-gadita
+- abdias-hijo-de-arnan
+- abdias-hijo-de-semaya
+- abdias-padre-de-ismaya
+summary: Benjamita, descendiente lejano de Saúl y de Jonatán, hijo de Azel.
+reason: Perspicacia «Abdías», núm. 6; 1Cr 8:33-38.
+sources:
+- it-abdias
+- 1-cronicas-8
+- 1-cronicas-9
+links:
+- title: 'Perspicacia: «Abdías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Abd%C3%ADas/
+  type: perspicacia
+relations:
+- type: kin
+  person: azel
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  - 1-cronicas-9
+  reason: 1Cr 8:38 lo cuenta entre los hijos de Azel.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

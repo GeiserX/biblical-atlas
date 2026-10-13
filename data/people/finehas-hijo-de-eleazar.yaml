@@ -17,6 +17,8 @@ sources:
 - josue-22
 - josue-24
 - jueces-20
+- 1-cronicas-6
+- 1-cronicas-9
 links:
 - title: 'Perspicacia: «Finehás»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Fineh%C3%A1s/
@@ -52,8 +54,10 @@ relations:
   - josue-22
   - josue-24
   - jueces-20
+  - 1-cronicas-6
+  - 1-cronicas-9
   reason: 'Éx 6:25: hijo de Eleazar.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: kin
   person: putiel
@@ -78,7 +82,15 @@ relations:
     20:27, 28 lo muestra en el cargo.'
   checked_on: '2026-10-03'
   status: verified
-checked_on: '2026-09-29'
+- type: holds_office
+  office: leader
+  inferred: false
+  sources:
+  - 1-cronicas-9
+  reason: '1Cr 9:20: en el pasado fue el líder de los porteros coreítas, y Jehová estuvo con él.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
 status: verified
 distinct_from:
 - finehas-hijo-de-eli

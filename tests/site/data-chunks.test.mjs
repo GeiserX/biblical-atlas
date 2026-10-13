@@ -153,6 +153,62 @@ test('an address that opens a card asks for the detail at the same time as the c
   assert.deepEqual([...page.pageErrors, ...page.consoleErrors, ...map.pageErrors, ...passage.pageErrors, ...passage.consoleErrors], []);
 });
 
+test('a map that never stops moving still gets the detail when it loads, once', async () => {
+  // From the moment the map exists it never stands still: a slow zoom, started again in a microtask whenever the site
+  // stops it, so no frame is drawn with the map at rest. «idle» never fires, and the cap of data-chunks.js is dropped
+  // here (the next test has it): the detail has to come with «load».
+  const page = await openPage({ hash: 't=50.3000', routes: (p) => p.addInitScript(() => {
+    const later = window.setTimeout;
+    window.__cap = 0;
+    window.setTimeout = function (f, ms, ...rest) {
+      if (ms === 3000 && /data-chunks\.js/.test(new Error().stack)) { window.__cap++; return later(() => {}, 0); }
+      return later.call(this, f, ms, ...rest);
+    };
+    window.__idle = 0;
+    window.__still = 0;   // times the endless move found the map at rest
+    const keep = (m) => {
+      if (m.isMoving()) return;
+      window.__still++;
+      m.easeTo({ zoom: m.getZoom() + (window.__still % 2 ? 0.4 : -0.4), duration: 60000, easing: (x) => x });
+    };
+    const wait = () => {
+      const m = window.BE?.mapa?.gl;
+      if (!m) { requestAnimationFrame(wait); return; }
+      m.on('idle', () => { window.__idle++; });
+      m.on('moveend', () => queueMicrotask(() => keep(m)));
+      keep(m);
+    };
+    wait();
+  }) });
+  await page.waitForFunction(() => window.BE.chunks.loaded.length, null, { timeout: 15000 });
+  assert.deepEqual(await page.evaluate(() => window.BE.chunks.loaded), ['detail']);
+  assert.equal(await page.evaluate(() => window.__idle), 0, 'the map stood still: this test proves nothing');
+  assert.equal(await page.evaluate(() => window.__cap), 1, 'the cap was not dropped: this test proves nothing');
+  assert.equal(await page.evaluate(() => window.BE.mapa.gl.isMoving()), true);
+  // A while later, nobody asked again.
+  await page.waitForTimeout(3500);
+  assert.equal(count(page, 'data.detail.json'), 1, page.requests.filter((r) => r.includes('data')).join(', '));
+  assert.deepEqual([...page.pageErrors, ...page.consoleErrors], []);
+});
+
+test('a map whose style never arrives gets the detail after the cap of about 3 s, once', async () => {
+  // The style of the map of today is held: the map never loads, so neither «load» nor «idle» fires.
+  let release;
+  const held = new Promise((ok) => { release = ok; });
+  const page = await openPage({ hash: 't=50.3000', routes: (p) =>
+    p.route('https://tiles.openfreemap.org/**', async (r) => { await held; return r.abort(); }) });
+  const t0 = await page.evaluate(() => performance.now());
+  await page.waitForFunction(() => window.BE.chunks.loaded.length, null, { timeout: 15000 });
+  const waited = (await page.evaluate(() => performance.now())) - t0;
+  assert.deepEqual(await page.evaluate(() => window.BE.chunks.loaded), ['detail']);
+  assert.equal(await page.evaluate(() => window.BE.mapa.gl.loaded()), false, 'the map loaded: this test proves nothing');
+  assert.ok(waited > 2000 && waited < 6000, `the detail came ${Math.round(waited)} ms after the start`);
+  await page.waitForTimeout(1000);
+  assert.equal(count(page, 'data.detail.json'), 1);
+  release();
+  assert.deepEqual([...page.pageErrors, ...page.consoleErrors], []);
+});
+
 test('a card waits for the detail, says so, and paints when it arrives; the search does not wait', async () => {
   let release;
   const held = new Promise((ok) => { release = ok; });
@@ -394,4 +450,47 @@ test('every view opens with the chunks, with no console error', async () => {
   const cal = await openPage({ url: 'calendario.html', wait: false });
   await cal.locator('.cal-fuentes a').first().waitFor();
   assert.deepEqual([...cal.pageErrors, ...cal.consoleErrors], []);
+});
+
+test('the calendar loads the two chunks, not data.json, and paints what data.json paints', async (t) => {
+  // The same page painted three ways: from the chunks, from a folder with data.json only, and from file:// (data.js).
+  // The bytes of data each one downloads go to the log.
+  const bytes = (p) => { p.bodies = []; p.on('response', (r) => { if (/\/data[^/]*\.json$/.test(r.url())) p.bodies.push(r.body().then((b) => b.length, () => 0)); }); };
+  const mb = async (p) => `${((await Promise.all(p.bodies)).reduce((a, n) => a + n, 0) / 1e6).toFixed(2)} MB`;
+  const chunks = await openPage({ url: 'calendario.html', wait: false, routes: bytes });
+  // The folder with data.json only answers 404 to both chunks, as it should: its console errors keep their URL, so
+  // that those two, and only those two, can be told apart from a real error.
+  const located = (p) => { bytes(p); p.located = []; p.on('console', (m) => { if (m.type() === 'error') p.located.push(`${m.text()} ${m.location().url}`); }); };
+  const whole = await openPage({ url: `calendario.html?datos=${WHOLE}`, wait: false, routes: located });
+  const context = await browser.newContext({ deviceScaleFactor: 1, ...DESKTOP });
+  const file = await context.newPage();
+  await file.route(/^https?:/, (r) => r.abort());
+  await file.goto(pathToFileURL(path.join(SITE_DIR, 'calendario.html')).href);
+  const painted = async (p) => {
+    await p.locator('.cal-lista-fuentes a').first().waitFor({ timeout: 30000 });
+    return p.evaluate(() => `${document.getElementById('indice').innerHTML}\n${document.getElementById('contenido').innerHTML}`);
+  };
+  const a = await painted(chunks);
+  assert.equal(a, await painted(whole), 'the chunks paint another calendar than data.json');
+  assert.equal(a, await painted(file), 'the chunks paint another calendar than data.js');
+  // Every month is in the table, and every source the page cites is listed with the title, work and URL of data.json.
+  const cal = D.calendario;
+  assert.equal(await chunks.locator('.cal-tabla tbody tr').count(), cal.meses.length);
+  const ids = new Set([...cal.meses.flatMap((m) => [...(m.fuentes || []), ...(m.nombres || []).flatMap((n) => n.fuentes || []),
+    ...(m.fiestas || []).flatMap((f) => f.fuentes || [])]), ...(cal.explicacion || []).flatMap((h) => h.fuentes || [])]);
+  const want = [...ids].filter((id) => D.fuentes[id]).map((id) => [D.fuentes[id].url, D.fuentes[id].titulo, D.fuentes[id].obra].join(' | ')).sort();
+  const got = (await chunks.locator('.cal-lista-fuentes li').evaluateAll((lis) =>
+    lis.map((li) => [li.querySelector('a').getAttribute('href'), li.querySelector('a').textContent, li.querySelector('span').textContent].join(' | ')))).sort();
+  assert.ok(want.length > 10, `only ${want.length} sources: the comparison would prove little`);
+  assert.deepEqual(got, want);
+  assert.equal(count(chunks, 'data.core.json'), 1);
+  assert.equal(count(chunks, 'data.detail.json'), 1);
+  assert.equal(count(chunks, 'data.json'), 0);
+  t.diagnostic(`calendar data: ${await mb(chunks)} with the chunks, ${await mb(whole)} with data.json`);
+  // Both chunks are asked for at once, not one after the other.
+  const at = (e) => chunks.events.indexOf(e);
+  assert.ok(at('ask /data.detail.json') >= 0 && at('ask /data.detail.json') < at('got /data.core.json'), chunks.events.join(', '));
+  const chunk404 = (e) => /^Failed to load resource: .*\b404\b.* \S+\/data\.(core|detail)\.json$/.test(e);
+  assert.equal(whole.located.filter(chunk404).length, 2, whole.located.join('\n'));
+  assert.deepEqual([...chunks.pageErrors, ...chunks.consoleErrors, ...whole.pageErrors, ...whole.located.filter((e) => !chunk404(e))], []);
 });

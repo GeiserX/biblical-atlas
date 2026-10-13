@@ -81,5 +81,6 @@ relations:
 distinct_from:
 - sofonias-profeta
 - sofonias-padre-de-josias
+- sofonias-hijo-de-tahat
 checked_on: '2026-10-12'
 status: verified

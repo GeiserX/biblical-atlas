@@ -1,0 +1,37 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hacoz
+name: Hacoz
+names:
+- name: Hacoz
+perspicacia: '1200001823'
+summary: Sacerdote de la línea de Aarón, cabeza de la casa paterna que recibió el séptimo de los 24 turnos de tiempos de David.
+reason: Perspicacia «Haqoz»; 1Cr 24:10.
+sources:
+- it-haqoz
+- 1-cronicas-24
+links:
+- title: 'Perspicacia: «Haqoz»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Haqoz/
+  type: perspicacia
+relations:
+- type: kin
+  person: aaron
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-24
+  - it-haqoz
+  reason: 1Cr 24:1 abre la lista de los descendientes de Aarón repartidos en turnos, y 24:10 da a esta casa el séptimo.
+  checked_on: '2026-10-12'
+  status: verified
+- type: holds_office
+  office: priest
+  inferred: false
+  sources:
+  - 1-cronicas-24
+  - it-haqoz
+  reason: '1Cr 24:10: encabeza una de las casas sacerdotales de 24:4-6; Perspicacia «Haqoz» lo trata como sacerdote.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

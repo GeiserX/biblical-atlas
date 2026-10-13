@@ -11,6 +11,7 @@ reason: Perspicacia «Zéleq»; 2Sa 23:37.
 sources:
 - it-zeleq
 - 2-samuel-23
+- 1-cronicas-11
 links:
 - title: 'Perspicacia: «Zéleq»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Z%C3%A9leq/
@@ -22,8 +23,9 @@ relations:
   inferred: false
   sources:
   - 2-samuel-23
+  - 1-cronicas-11
   reason: '2Sa 23:37: Zélec el ammonita, uno de los treinta de David.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

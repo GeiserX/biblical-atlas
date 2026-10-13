@@ -13,10 +13,22 @@ sources:
 - it-ahasbai
 - it-maacatita
 - 2-samuel-23
+- 1-cronicas-11
 links:
 - title: 'Perspicacia: «Ahasbai»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ahasbai/
   type: perspicacia
-relations: []
-checked_on: '2026-09-29'
+relations:
+- type: same_as
+  person: ur
+  certainty: probable
+  inferred: true
+  sources:
+  - 1-cronicas-11
+  - it-ur
+  - it-ahasbai
+  reason: 'Perspicacia «Ur», núm. 1, y «Ahasbai»: al parecer la lista de 1Cr 11:35 pone a Ur donde la de Samuel pone a Ahasbái.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
 status: verified

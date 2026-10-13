@@ -1,0 +1,44 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jaasiel-hijo-de-abner
+name: Jaasiel
+names:
+- name: Jaasiel
+perspicacia: 1200002262#2
+disambiguation: Jaasiel hijo de Abner, príncipe de Benjamín con David; no el guerrero mezobaíta de la lista de los poderosos.
+summary: Hijo de Abner, el que había mandado el ejército de Saúl. En días del rey David encabezaba a los benjaminitas como
+  su príncipe.
+reason: Perspicacia «Jaasiel», núm. 2, y «Abner»; 1Cr 27:21.
+sources:
+- it-jaasiel
+- 1-cronicas-27
+- it-abner
+links:
+- title: 'Perspicacia: «Jaasiel»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jaasiel/
+  type: perspicacia
+- title: 'Perspicacia: «Abner»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Abner/
+  type: perspicacia
+relations:
+- type: kin
+  person: abner
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-27
+  - it-abner
+  reason: '1Cr 27:21: Jaasiel hijo de Abner; Perspicacia «Abner» lo da como su único hijo registrado.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: holds_office
+  office: leader
+  inferred: false
+  sources:
+  - 1-cronicas-27
+  reason: '1Cr 27:21, 22: era el líder de Benjamín, uno de los príncipes de las tribus de Israel.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- jaasiel-el-mezobaita

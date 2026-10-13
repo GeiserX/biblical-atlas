@@ -1,0 +1,66 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: joel-hijo-de-jehiel
+name: Joel
+names:
+- name: Joel
+perspicacia: 1200002481#7
+disambiguation: El jefe guersonita del traslado del Arca; no Joel hijo de Samuel, padre del cantor Hemán, ni Joel el profeta,
+  hijo de Petuel (Perspicacia «Joel», núm. 5 y 9).
+distinct_from:
+- joel-hijo-de-samuel
+- joel-profeta
+- joel-el-gadita
+- joel-el-rubenita
+- joel-hermano-de-natan
+- joel-hijo-de-azarias
+- joel-hijo-de-izrahias
+- joel-hijo-de-pedaya
+- joel-simeonita
+summary: Levita guersonita de la casa de Ladán. Como jefe, llevó a 130 de sus hermanos a subir el Arca a Jerusalén; más tarde
+  cuidó con su hermano Zetam la tesorería del santuario.
+reason: Perspicacia «Joel», núm. 7, que lo da como hijo de Jehiel o Jehielí (1Cr 23:8; 26:21, 22); 1Cr 15:7, 11-14.
+sources:
+- it-joel
+- 1-cronicas-15
+- 1-cronicas-23
+- 1-cronicas-26
+links:
+- title: 'Perspicacia: «Joel»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Joel/
+  type: perspicacia
+relations:
+- type: kin
+  person: guerson
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-15
+  - it-guerson
+  reason: 1Cr 15:7 lo pone al frente de los descendientes de Guersom, el Guersón hijo de Leví según Perspicacia «Guersón».
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: ladan-hijo-de-guerson
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-23
+  - it-joel
+  reason: 1Cr 23:8 lo cuenta entre los hijos de Ladán; Perspicacia «Joel», núm. 7, lo pone en la casa de Ladán.
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: jehiel-descendiente-de-ladan
+  word: father
+  inferred: false
+  sources:
+  - it-joel
+  - 1-cronicas-23
+  - 1-cronicas-26
+  - it-jehiel
+  reason: '1Cr 26:22: los hijos de Jehielí eran Zetam y su hermano Joel. Perspicacia «Jehiel», núm. 2, admite que hijos sea aquí
+    la casa que llevó su nombre.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

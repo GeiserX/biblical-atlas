@@ -26,7 +26,7 @@ date:
   text: 614 a.e.c.
 narrative_order:
   series: jeremias
-  order: 28012
+  order: 528012
 places: []
 people:
 - jeremias-profeta
@@ -37,7 +37,7 @@ passages:
 summary: Jehová manda a Jeremías decir a Hananías que el yugo de madera roto será de hierro sobre las naciones, y que morirá
   ese año por promover la rebelión. Hananías muere en el séptimo mes.
 reason: 'Jer 28:1: año cuarto de Sedequías, que Perspicacia «Seraya», núm. 5, fecha en 614; el quinto mes es ab. Hananías
-  muere en el séptimo mes, tisri (28:17). El texto no dice dónde se lo dijo: nadie queda situado.'
+  muere en el séptimo mes, tisri (28:17). Sin lugar: nadie queda situado. Orden por fecha.'
 sources:
 - jeremias-28
 - it-hananias
@@ -52,5 +52,10 @@ links:
 - title: 'Perspicacia: «Hananías»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hanan%C3%ADas/
   type: perspicacia
-checked_on: '2026-10-12'
+history:
+- date: '2026-10-13'
+  change: 'El orden del relato pasa de 28012 a 528012: la serie sigue las fechas de los sucesos, porque el libro va por temas
+    y no en el orden en que pasaron.'
+  source: it-jeremias-libro
+checked_on: '2026-10-13'
 status: verified

@@ -13,6 +13,7 @@ sources:
 - genesis-38
 - genesis-46
 - numeros-26
+- 1-cronicas-2
 links:
 - title: 'Perspicacia: «Er»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Er/
@@ -30,8 +31,9 @@ relations:
   - genesis-46
   - it-er
   - numeros-26
+  - 1-cronicas-2
   reason: Gé 38:3, 6, 7.
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: kin
   person: sua-suegro-de-juda
@@ -40,8 +42,9 @@ relations:
   sources:
   - genesis-38
   - it-sua
+  - 1-cronicas-2
   reason: 'Gé 38:2, 3: nace de la hija de Súa.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: kin
   person: tamar-nuera-de-juda
@@ -59,8 +62,9 @@ relations:
   sources:
   - genesis-38
   - numeros-26
+  - 1-cronicas-2
   reason: Gé 38:3, 4, 8.
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: kin
   person: sela-hijo-de-juda
@@ -68,8 +72,9 @@ relations:
   inferred: false
   sources:
   - genesis-38
+  - 1-cronicas-2
   reason: Gé 38:3-5, 11.
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: died_in
   place: canaan
@@ -81,7 +86,8 @@ relations:
   reason: 'Gé 46:12: murió en Canaán, antes del traslado a Egipto.'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified
 distinct_from:
 - er-hijo-de-jesus
+- er-hijo-de-sela

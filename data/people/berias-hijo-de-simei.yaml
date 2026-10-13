@@ -1,0 +1,34 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: berias-hijo-de-simei
+name: Berías
+names:
+- name: Berías
+perspicacia: 1200000653#4
+disambiguation: El levita hijo de Simeí (1Cr 23:10, 11); no Berías hijo de Aser ni los demás Berías que numera Perspicacia.
+distinct_from:
+- berias-hijo-de-aser
+- berias-hijo-de-efrain
+- berias-hijo-de-elpaal
+summary: Levita guersonita, el último hijo de Simeí que nombra la lista. Como tuvo pocos hijos, su casa y la de Jeús se contaron
+  como una sola.
+reason: Perspicacia «Berías», núm. 4; 1Cr 23:10, 11.
+sources:
+- it-berias
+- 1-cronicas-23
+links:
+- title: 'Perspicacia: «Berías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ber%C3%ADas/
+  type: perspicacia
+relations:
+- type: kin
+  person: simei-hijo-de-guerson
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-23
+  - it-berias
+  reason: 1Cr 23:10 lo nombra el cuarto de los hijos de Simeí.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

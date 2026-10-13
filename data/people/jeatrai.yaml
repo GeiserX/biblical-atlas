@@ -1,0 +1,29 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jeatrai
+name: Jeatrái
+names:
+- name: Jeatrái
+- name: Jeatrai
+  note: Grafía de Perspicacia.
+perspicacia: '1200002350'
+summary: Levita guersonita, hijo de Zérah, con quien se cierra la línea de Guersom en 1 Crónicas 6:20, 21.
+reason: Perspicacia «Jeatrai»; 1Cr 6:21.
+sources:
+- it-jeatrai
+- 1-cronicas-6
+links:
+- title: 'Perspicacia: «Jeatrai»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jeatrai/
+  type: perspicacia
+relations:
+- type: kin
+  person: zerah-hijo-de-ido
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-6
+  reason: '1Cr 6:21: «su hijo Jeatrái», tras Zérah.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

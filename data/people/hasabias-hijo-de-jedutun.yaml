@@ -1,0 +1,36 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hasabias-hijo-de-jedutun
+name: Hasabías
+names:
+- name: Hasabías
+perspicacia: 1200001900#2
+disambiguation: El hijo de Jedutún del grupo 12 de músicos (1Cr 25:3, 19); no el hebronita que administraba al oeste del Jordán
+  ni el hijo de Quemuel (Perspicacia «Hasabías», núm. 2, 3 y 4).
+summary: Uno de los seis hijos de Jedutún. Le tocó el grupo 12 de músicos del santuario. Perspicacia cree que quizá descendía
+  de un Hasabías merarita anterior.
+reason: Perspicacia «Hasabías», núm. 2; 1Cr 25:3, 19.
+sources:
+- it-hasabias
+- 1-cronicas-25
+links:
+- title: 'Perspicacia: «Hasabías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hasab%C3%ADas/
+  type: perspicacia
+relations:
+- type: kin
+  person: jedutun-musico
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-25
+  - it-hasabias
+  reason: 1Cr 25:3, 19 lo cuenta entre los hijos de Jedutún.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- hasabias-hebronita
+- hasabias-hijo-de-amasias
+- hasabias-hijo-de-quemuel
+- hasabias-padre-de-azricam

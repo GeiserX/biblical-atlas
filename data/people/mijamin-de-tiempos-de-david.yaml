@@ -1,0 +1,37 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: mijamin-de-tiempos-de-david
+name: Mijamín
+names:
+- name: Mijamín
+perspicacia: 1200003047#1
+summary: Descendiente de Aarón al que la suerte dio el sexto turno sacerdotal en tiempos de David.
+reason: Perspicacia «Mijamín», núm. 1; 1Cr 24:9.
+sources:
+- it-mijamin
+- 1-cronicas-24
+links:
+- title: 'Perspicacia: «Mijamín»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Mijam%C3%ADn/
+  type: perspicacia
+relations:
+- type: kin
+  person: aaron
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-24
+  - it-mijamin
+  reason: 1Cr 24:1 abre la lista de los descendientes de Aarón repartidos en turnos, y 24:9 da a esta casa el sexto.
+  checked_on: '2026-10-12'
+  status: verified
+- type: holds_office
+  office: priest
+  inferred: false
+  sources:
+  - 1-cronicas-24
+  - it-mijamin
+  reason: '1Cr 24:9: encabeza una de las casas sacerdotales de 24:4-6; Perspicacia «Mijamín» lo trata como sacerdote.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

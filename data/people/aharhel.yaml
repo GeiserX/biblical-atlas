@@ -1,0 +1,28 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: aharhel
+name: Aharhel
+names:
+- name: Aharhel
+perspicacia: '1200000140'
+summary: Judaíta, hijo de Harum; sus familias se cuentan en la línea de Coz.
+reason: Perspicacia «Aharhel»; 1Cr 4:8.
+sources:
+- it-aharhel
+- 1-cronicas-4
+links:
+- title: 'Perspicacia: «Aharhel»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Aharhel/
+  type: perspicacia
+relations:
+- type: kin
+  person: harum
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-4
+  - it-aharhel
+  reason: '1Cr 4:8: Aharhel hijo de Harum.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

@@ -1,0 +1,51 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jasobeam-el-coreita
+name: Jasobeam
+names:
+- name: Jasobeam
+perspicacia: 1200002336#1
+summary: Coreíta que acudió a Ziclag a ayudar a David. Perspicacia ve posible que sea Jasobeam, jefe de los tres guerreros
+  principales.
+reason: Perspicacia «Jasobeam», núm. 1; 1Cr 12:6.
+sources:
+- it-jasobeam
+- 1-cronicas-12
+links:
+- title: 'Perspicacia: «Jasobeam»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jasobeam/
+  type: perspicacia
+relations:
+- type: same_as
+  person: joseb-basebet
+  certainty: possible
+  inferred: true
+  sources:
+  - 1-cronicas-12
+  - it-jasobeam
+  - it-hacmoni
+  reason: Perspicacia «Jasobeam», núm. 1, ve posible que el coreíta de 1Cr 12:6 y Joseb-Basébet sean uno; «Hacmoní» lo plantea
+    con un «si».
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: core-hijo-de-izhar
+  word: ancestor
+  inferred: true
+  sources:
+  - 1-cronicas-12
+  - it-coreita
+  reason: 1Cr 12:6 lo cuenta entre los coreítas; Perspicacia «Coreíta» da a los coreítas por descendientes de Coré y cita
+    este pasaje.
+  checked_on: '2026-10-12'
+  status: verified
+- type: tie
+  person: david
+  word: master
+  inferred: false
+  sources:
+  - 1-cronicas-12
+  reason: '1Cr 12:6: se unió a David y lo apoyó en la guerra.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

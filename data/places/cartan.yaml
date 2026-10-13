@@ -3,6 +3,8 @@ id: cartan
 name: Cartán
 names:
 - name: Cartán
+- name: Quiryataim
+  note: Nombre que le da 1Cr 6:76, según Perspicacia «Quiryataim», núm. 2.
 type: city
 lat: 33.111944
 lon: 35.4625
@@ -16,6 +18,8 @@ sources:
 - it-qartan
 - openbible-geo
 - josue-21
+- 1-cronicas-6
+- it-quiryataim
 links:
 - title: 'Perspicacia: «Qartán»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Qart%C3%A1n/
@@ -23,5 +27,5 @@ links:
 - title: Josué 21 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Josu%C3%A9/21/
   type: bible
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

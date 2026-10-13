@@ -10,6 +10,7 @@ reason: Perspicacia «Zimrán»; Gé 25:2, 6.
 sources:
 - it-zimran
 - genesis-25
+- 1-cronicas-1
 links:
 - title: 'Perspicacia: «Zimrán»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zimr%C3%A1n/
@@ -25,8 +26,9 @@ relations:
   sources:
   - it-zimran
   - genesis-25
+  - 1-cronicas-1
   reason: 'Gé 25:1, 2: hijo de Abrahán y Queturá.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: kin
   person: quetura
@@ -35,8 +37,9 @@ relations:
   sources:
   - it-zimran
   - genesis-25
+  - 1-cronicas-1
   reason: 'Gé 25:1, 2: hijo de Abrahán y Queturá.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

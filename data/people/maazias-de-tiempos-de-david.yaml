@@ -1,0 +1,37 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: maazias-de-tiempos-de-david
+name: Maazías
+names:
+- name: Maazías
+perspicacia: 1200002814#1
+summary: Descendiente de Aarón puesto al frente del último de los 24 turnos sacerdotales que organizó David.
+reason: Perspicacia «Maazías», núm. 1; 1Cr 24:18.
+sources:
+- it-maazias
+- 1-cronicas-24
+links:
+- title: 'Perspicacia: «Maazías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Maaz%C3%ADas/
+  type: perspicacia
+relations:
+- type: kin
+  person: aaron
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-24
+  - it-maazias
+  reason: 1Cr 24:1 abre la lista de los descendientes de Aarón repartidos en turnos, y 24:18 da a esta casa el vigésimo cuarto.
+  checked_on: '2026-10-12'
+  status: verified
+- type: holds_office
+  office: priest
+  inferred: false
+  sources:
+  - 1-cronicas-24
+  - it-maazias
+  reason: '1Cr 24:18: encabeza una de las casas sacerdotales de 24:4-6; Perspicacia «Maazías» lo trata como sacerdote.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

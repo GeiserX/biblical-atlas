@@ -16,6 +16,7 @@ sources:
 - it-talmai
 - 2-samuel-3
 - 2-samuel-13
+- 1-cronicas-3
 links:
 - title: 'Perspicacia: «Talmai»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Talmai/
@@ -35,8 +36,9 @@ relations:
   - 2-samuel-3
   - it-talmai
   - 2-samuel-13
+  - 1-cronicas-3
   reason: 2Sa 3:3 lo llama rey de Guesur.
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: kin
   person: amihud-padre-de-talmai
@@ -48,5 +50,5 @@ relations:
   reason: '2Sa 13:37: Talmái hijo de Amihud.'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

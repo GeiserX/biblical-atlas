@@ -1,0 +1,27 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: abdias-padre-de-ismaya
+name: Abdías
+names:
+- name: Abdías
+perspicacia: 1200003287#2
+disambiguation: Abdías el zabulonita, padre de Ismayá; no el mayordomo de Acab ni el profeta.
+distinct_from:
+- abdias-mayordomo-de-acab
+- abdias-profeta
+- abdias-el-gadita
+- abdias-hijo-de-arnan
+- abdias-hijo-de-azel
+- abdias-hijo-de-izrahias
+- abdias-hijo-de-semaya
+summary: Zabulonita cuyo hijo Ismayá fue príncipe de esa tribu en días de David.
+reason: Perspicacia «Abdías», núm. 2; 1Cr 27:19.
+sources:
+- it-abdias
+- 1-cronicas-27
+links:
+- title: 'Perspicacia: «Abdías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Abd%C3%ADas/
+  type: perspicacia
+relations: []
+checked_on: '2026-10-12'
+status: verified

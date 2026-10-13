@@ -9,6 +9,7 @@ reason: Perspicacia «Arán»; Gé 36:28.
 sources:
 - it-aran
 - genesis-36
+- 1-cronicas-1
 links:
 - title: 'Perspicacia: «Arán»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ar%C3%A1n/
@@ -24,8 +25,9 @@ relations:
   sources:
   - it-aran
   - genesis-36
+  - 1-cronicas-1
   reason: 'Gé 36:28: hijo de Disán.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

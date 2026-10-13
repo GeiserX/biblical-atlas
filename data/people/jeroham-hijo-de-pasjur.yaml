@@ -1,0 +1,35 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jeroham-hijo-de-pasjur
+name: Jeroham
+names:
+- name: Jeroham
+perspicacia: 1200002432#7
+summary: Sacerdote, hijo de Pasjur, padre o antepasado de Adaya, que vivió en Jerusalén después del destierro.
+reason: Perspicacia «Jeroham», núm. 7; 1Cr 9:12.
+sources:
+- it-jeroham
+- 1-cronicas-9
+links:
+- title: 'Perspicacia: «Jeroham»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jeroham/
+  type: perspicacia
+relations:
+- type: kin
+  person: pasjur-hijo-de-malkias
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-9
+  reason: '1Cr 9:12: Jeroham, hijo de Pasjur.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- jeroham-de-guedor
+- jeroham-hijo-de-elihu
+- jeroham-padre-de-azarel
+- jeroham-padre-de-ibneya
+- jeroham-padre-de-samserai
+disambiguation: 'Jeroham núm. 7 de Perspicacia: sacerdote, hijo de Pasjur y padre de Adaya. No el benjamita padre de Ibneyá
+  ni el abuelo de Samuel.'

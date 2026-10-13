@@ -1,0 +1,55 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: somer-hijo-de-heber
+name: Somer
+names:
+- name: Somer
+- name: Sémer
+  note: Así lo llama 1Cr 7:34; la nota dice que es el Somer del versículo 32.
+perspicacia: 1200004081#1
+disambiguation: Somer o Sémer hijo de Héber, aserita; no Somer, padre de uno de los asesinos de Jehoás, ni Sémer, el dueño
+  del monte de Samaria.
+distinct_from:
+- semer-de-samaria
+- somer-padre-de-jehozabad
+- semer-hijo-de-mahli
+summary: Aserita, hijo de Héber; sus cuatro hijos fueron jefes de familia. Perspicacia «Aram», núm. 3, dice que nació en Egipto.
+reason: Perspicacia «Somer», núm. 1, y «Sémer», núm. 1; 1Cr 7:32, 34.
+sources:
+- it-somer
+- 1-cronicas-7
+- it-semer
+links:
+- title: 'Perspicacia: «Somer»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Somer/
+  type: perspicacia
+relations:
+- type: kin
+  person: heber-hijo-de-berias
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-7
+  reason: 1Cr 7:32 lo cuenta entre los hijos de Héber.
+  checked_on: '2026-10-12'
+  status: verified
+- type: born_in
+  place: egipto
+  inferred: true
+  sources:
+  - 1-cronicas-7
+  - it-aram
+  reason: 'Perspicacia «Aram», núm. 3: Aram y su padre, Sémer (1Cr 7:34), nacieron en Egipto, porque su abuelo y su bisabuelo
+    entraron allí con Jacob.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: helem-de-aser
+  word: brother
+  inferred: false
+  sources:
+  - 1-cronicas-7
+  reason: 1Cr 7:35 llama a Hélem hermano de Sémer.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

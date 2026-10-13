@@ -1,0 +1,30 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: sua-hija-de-heber
+name: Súa
+names:
+- name: Súa
+perspicacia: 1200004087#2
+disambiguation: Súa hija de Héber, de Aser; no Súa el cananeo, suegro de Judá.
+distinct_from:
+- sua-suegro-de-juda
+summary: Aserita, hija de Héber y hermana de Jaflet, Somer y Hotam.
+reason: Perspicacia «Súa», núm. 2; 1Cr 7:30, 32.
+sources:
+- it-sua
+- 1-cronicas-7
+links:
+- title: 'Perspicacia: «Súa»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/S%C3%BAa/
+  type: perspicacia
+relations:
+- type: kin
+  person: heber-hijo-de-berias
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-7
+  reason: 1Cr 7:32 la cuenta entre los hijos de Héber.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

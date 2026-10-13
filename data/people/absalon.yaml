@@ -19,6 +19,7 @@ sources:
 - 2-samuel-16
 - 2-samuel-17
 - 2-samuel-18
+- 1-cronicas-3
 links:
 - title: 'Perspicacia: «Absalón»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Absal%C3%B3n/
@@ -34,8 +35,9 @@ relations:
   - 2-samuel-3
   - 2-samuel-15
   - 2-samuel-16
+  - 1-cronicas-3
   reason: El encabezamiento de Sal 3 lo llama hijo de David; 2Sa 3:3 lo pone entre los hijos nacidos en Hebrón.
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: born_in
   place: hebron
@@ -43,8 +45,9 @@ relations:
   sources:
   - it-absalon
   - 2-samuel-3
+  - 1-cronicas-3
   reason: 'Perspicacia «Absalón», párr. 1: fue el tercero de los hijos que David tuvo en Hebrón (2Sa 3:2, 3).'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: kin
   person: maaca-hija-de-talmai
@@ -53,8 +56,9 @@ relations:
   sources:
   - 2-samuel-3
   - it-maaca
+  - 1-cronicas-3
   reason: '2Sa 3:3: hijo de Maacá, hija de Talmái.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: kin
   person: talmai-hijo-de-amihud
@@ -65,8 +69,9 @@ relations:
   - it-talmai
   - 2-samuel-13
   - it-guesur
+  - 1-cronicas-3
   reason: '2Sa 3:3: su madre era hija de Talmái; Perspicacia «Talmai», núm. 2, lo llama su abuelo.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: kin
   person: tamar-hija-de-david
@@ -75,8 +80,9 @@ relations:
   sources:
   - 2-samuel-13
   - it-tamar
+  - 1-cronicas-3
   reason: '2Sa 13:1, 4, 20, 22: Tamar era su hermana. Perspicacia «Tamar», núm. 2, la da por hermana de padre y madre.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: kin
   person: amnon-hijo-de-david
@@ -150,5 +156,5 @@ relations:
   reason: '2Sa 18:9-17: Joab y sus escuderos lo matan en el bosque de Efraín, y allí lo echan a un hoyo.'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

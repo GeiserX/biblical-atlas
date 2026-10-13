@@ -9,6 +9,7 @@ disambiguation: Padre de Jerusá y abuelo materno del rey Jotán; no es el sacer
 distinct_from:
 - sadoc-hijo-de-ahitub
 - sadoc-hijo-de-azor
+- sadoc-hijo-de-merayot
 summary: Padre de Jerusá, la esposa del rey Uzías; por ella, abuelo del rey Jotán de Judá.
 reason: Perspicacia «Sadoc», núm. 2; 2Re 15:33.
 sources:
@@ -21,5 +22,5 @@ links:
 - title: 2 Reyes 15 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-reyes/15/
   type: bible
-checked_on: '2026-09-30'
+checked_on: '2026-10-12'
 status: verified

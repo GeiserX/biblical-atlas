@@ -23,6 +23,19 @@ distinct_from:
 - simei-hijo-de-guerson
 - simei-partidario-de-david
 - simei-hijo-de-ela
+- simei-hijo-de-pedaya
+- simei-hijo-de-zacur
+- simei-hijo-de-gog
+- simea-hijo-de-miguel
+- simea-hijo-de-uza
+- simei-hijo-de-jahat
+- simei-hijo-de-libni
+- sama-de-aser
+- simea-hijo-de-miclot
+- simei-padre-de-jaquim
+- simei-descendiente-de-ladan
+- simei-hijo-de-jedutun
+- simei-el-ramatita
 summary: Tercer hijo de Jesé y hermano mayor de David, el tercero que Samuel descartó para rey. Estaba en el ejército de Saúl
   cuando Goliat retaba a Israel. Jonatán, hijo suyo, acabó con uno de los gigantes filisteos.
 reason: Perspicacia «Samah», núm. 2; 1Sa 16:9; 17:13.
@@ -33,6 +46,8 @@ sources:
 - 2-samuel-13
 - 2-samuel-21
 - it-simei
+- 1-cronicas-2
+- 1-cronicas-20
 links:
 - title: 'Perspicacia: «Samah»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Samah/
@@ -49,8 +64,9 @@ relations:
   - 1-samuel-16
   - it-samah
   - 1-samuel-17
+  - 1-cronicas-2
   reason: '1Sa 16:9: Jesé lo presenta a Samuel; Perspicacia lo da como su tercer hijo.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: kin
   person: david
@@ -61,8 +77,10 @@ relations:
   - it-samah
   - 1-samuel-17
   - 2-samuel-13
+  - 1-cronicas-2
+  - 1-cronicas-20
   reason: '1Sa 16:13: Samuel unge a David delante de sus hermanos.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-02'
+checked_on: '2026-10-12'
 status: verified

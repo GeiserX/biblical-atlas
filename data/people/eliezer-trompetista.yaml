@@ -1,0 +1,34 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: eliezer-trompetista
+name: Eliezer
+names:
+- name: Eliezer
+perspicacia: 1200001304#4
+disambiguation: El sacerdote trompetista de David; no Eliezer de Damasco, ni el hijo de Moisés, ni el antepasado de María
+  (Perspicacia «Eliezer», núm. 1, 2 y 11).
+distinct_from:
+- eliezer-hijo-de-moises
+- eliezer-de-damasco
+- eliezer-hijo-de-jorim
+- eliezer-hijo-de-zicri
+- eliezer-hijo-de-beker
+summary: Sacerdote que tocó la trompeta delante del Arca en la procesión que la subió a Jerusalén.
+reason: Perspicacia «Eliezer», núm. 4; 1Cr 15:24.
+sources:
+- it-eliezer
+- 1-cronicas-15
+links:
+- title: 'Perspicacia: «Eliezer»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Eliezer/
+  type: perspicacia
+relations:
+- type: holds_office
+  office: priest
+  inferred: false
+  sources:
+  - 1-cronicas-15
+  reason: 1Cr 15:24 lo cuenta entre los sacerdotes que tocaban las trompetas delante del Arca.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

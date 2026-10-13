@@ -1,0 +1,17 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: baara
+name: Baará
+names:
+- name: Baará
+perspicacia: '1200000526'
+summary: Una de las esposas del benjamita Saharaim.
+reason: Perspicacia «Baará»; 1Cr 8:1, 8.
+sources:
+- it-baara
+- 1-cronicas-8
+links:
+- title: 'Perspicacia: «Baará»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Baar%C3%A1/
+  type: perspicacia
+checked_on: '2026-10-12'
+status: verified

@@ -1,0 +1,27 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: pispa
+name: Pispá
+names:
+- name: Pispá
+perspicacia: '1200003500'
+summary: Aserita, hijo de Jéter y uno de los dirigentes de la tribu.
+reason: Perspicacia «Pispá»; 1Cr 7:38, 40.
+sources:
+- it-pispa
+- 1-cronicas-7
+links:
+- title: 'Perspicacia: «Pispá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Pisp%C3%A1/
+  type: perspicacia
+relations:
+- type: kin
+  person: jeter-de-aser
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-7
+  reason: 1Cr 7:38 lo cuenta entre los hijos de Jéter.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

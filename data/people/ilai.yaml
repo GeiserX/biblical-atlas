@@ -1,0 +1,49 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ilai
+name: Ilái
+names:
+- name: Ilái
+- name: Ilai
+perspicacia: '1200002145'
+summary: Ahohíta, guerrero poderoso de David. Perspicacia cree que es el Zalmón de la lista paralela de Samuel.
+reason: Perspicacia «Ilai»; 1Cr 11:29.
+sources:
+- it-ilai
+- 1-cronicas-11
+links:
+- title: 'Perspicacia: «Ilai»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ilai/
+  type: perspicacia
+relations:
+- type: same_as
+  person: zalmon
+  certainty: probable
+  inferred: true
+  sources:
+  - 1-cronicas-11
+  - it-ilai
+  - it-zalmon
+  reason: 'Perspicacia «Ilai» y «Zalmón», núm. 1: al parecer la lista paralela de Samuel llama Zalmón al Ilái de 1Cr 11:29.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: ahoah
+  word: ancestor
+  inferred: true
+  sources:
+  - 1-cronicas-11
+  - it-ahoah
+  reason: 1Cr 11:29 lo llama ahohíta; Perspicacia «Ahoah» cuenta a los ahohítas entre sus descendientes.
+  checked_on: '2026-10-12'
+  status: verified
+- type: tie
+  person: david
+  word: master
+  inferred: false
+  sources:
+  - 1-cronicas-11
+  reason: '1Cr 11:29: figura entre los valientes de David.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

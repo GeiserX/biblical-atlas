@@ -1,0 +1,31 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: efa-hijo-de-jahdai
+name: Efá
+names:
+- name: Efá
+perspicacia: 1200001382#3
+summary: Judaíta de la rama de Caleb; uno de los seis hijos de Jahdái.
+reason: Perspicacia «Efá, II», núm. 3; 1Cr 2:47.
+sources:
+- it-efa-ii
+- 1-cronicas-2
+links:
+- title: 'Perspicacia: «Efá, II»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ef%C3%A1-II/
+  type: perspicacia
+relations:
+- type: kin
+  person: jahdai
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-2
+  reason: '1Cr 2:47: uno de los hijos de Jahdái.'
+  checked_on: '2026-10-12'
+  status: verified
+disambiguation: Efá hijo de Jahdái; no Efá, la concubina de Caleb, ni Efá hijo de Madián.
+distinct_from:
+- efa-concubina-de-caleb
+- efa-hijo-de-madian
+checked_on: '2026-10-12'
+status: verified

@@ -1,0 +1,43 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jobab-hijo-de-saharaim
+name: Jobab
+names:
+- name: Jobab
+perspicacia: 1200002477#4
+disambiguation: Jobab hijo de Saharaim y Hodes; no el Jobab descendiente de Elpaal, el rey de Edom, el rey de Madón ni el
+  hijo de Joctán.
+distinct_from:
+- jobab-descendiente-de-elpaal
+- jobab-hijo-de-joctan
+- jobab-hijo-de-zerah
+- jobab-rey-de-madon
+summary: Benjamita; sus padres fueron Saharaim y Hodes.
+reason: Perspicacia «Jobab», núm. 4; 1Cr 8:1, 8-10.
+sources:
+- it-jobab
+- 1-cronicas-8
+links:
+- title: 'Perspicacia: «Jobab»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jobab/
+  type: perspicacia
+relations:
+- type: kin
+  person: saharaim
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  reason: 1Cr 8:9, 10 lo cuenta entre los hijos de Saharaim.
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: hodes
+  word: mother
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  reason: '1Cr 8:9: su madre fue Hodes.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

@@ -1,0 +1,34 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: maresa-padre-de-hebron
+name: Maresá
+names:
+- name: Maresá
+- name: Maresah
+  note: Otra grafía que da la nota de 1Cr 2:42.
+perspicacia: 1200002900#1
+summary: Descendiente de Judá por Caleb hijo de Hezrón y padre de Hebrón. Como su hijo Hebrón tuvo hijos, Perspicacia ve en
+  él una persona, no la ciudad.
+reason: Perspicacia «Maresá», núm. 1; 1Cr 2:42.
+sources:
+- it-maresa
+- 1-cronicas-2
+links:
+- title: 'Perspicacia: «Maresá, Maresah»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Mares%C3%A1-Maresah/
+  type: perspicacia
+relations:
+- type: kin
+  person: caleb-hijo-de-hezron
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-2
+  reason: 1Cr 2:42 cuenta a los hijos de Maresá entre los de Caleb; Perspicacia «Maresá», núm. 1, lo hace descendiente de
+    Judá.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+disambiguation: Maresá, padre de Hebrón en la línea de Caleb; no Maresá hijo de Laadá, de la casa de Selá.
+distinct_from:
+- maresa-hijo-de-laada

@@ -1,0 +1,28 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: tiria
+name: Tiría
+names:
+- name: Tiría
+perspicacia: '1200004424'
+summary: Judaíta, tercero de los hijos de Jehalelel.
+reason: Perspicacia «Tiría»; 1Cr 4:16.
+sources:
+- it-tiria
+- 1-cronicas-4
+links:
+- title: 'Perspicacia: «Tiría»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Tir%C3%ADa/
+  type: perspicacia
+relations:
+- type: kin
+  person: jehalelel-de-juda
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-4
+  - it-tiria
+  reason: '1Cr 4:16: uno de los hijos de Jehalelel.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

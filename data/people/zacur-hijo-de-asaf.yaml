@@ -1,0 +1,48 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: zacur-hijo-de-asaf
+name: Zacur
+names:
+- name: Zacur
+perspicacia: 1200004651#4
+disambiguation: El hijo de Asaf del tercer grupo de músicos (1Cr 25:2, 10); no Zacur el rubenita, padre de Samúa (Perspicacia
+  «Zacur», núm. 1 y 4).
+summary: Levita guersonita, hijo de Asaf. Encabezó el tercer grupo de músicos del santuario. Perspicacia ve posible que también
+  se llamara Zabdí y Zicrí.
+reason: Perspicacia «Zacur», núm. 4; 1Cr 25:2, 10.
+sources:
+- it-zacur
+- it-zicri
+- 1-cronicas-25
+links:
+- title: 'Perspicacia: «Zacur»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zacur/
+  type: perspicacia
+relations:
+- type: kin
+  person: asaf-hijo-de-berekias
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-25
+  - it-zacur
+  reason: 1Cr 25:2, 10 lo cuenta entre los hijos de Asaf.
+  checked_on: '2026-10-12'
+  status: verified
+- type: same_as
+  person: zicri-hijo-de-asaf
+  certainty: possible
+  inferred: true
+  sources:
+  - it-zacur
+  - it-zicri
+  - 1-cronicas-25
+  reason: Perspicacia «Zacur», núm. 4, ve posible que el hijo de Asaf de 1Cr 25:2 se llamara también Zicrí; «Zicrí», núm.
+    5, dice que parece.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- zacur-hijo-de-jaazias
+- zacur-padre-de-samua
+- zacur-hijo-de-hamuel

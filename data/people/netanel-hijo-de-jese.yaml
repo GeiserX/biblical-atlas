@@ -1,0 +1,42 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: netanel-hijo-de-jese
+name: Netanel
+names:
+- name: Netanel
+perspicacia: 1200003236#2
+summary: Cuarto de los siete hijos de Jesé que nombra la lista y, por tanto, hermano mayor de David. Era judaíta.
+reason: Perspicacia «Netanel», núm. 2; 1Cr 2:13-15.
+sources:
+- it-netanel
+- 1-cronicas-2
+links:
+- title: 'Perspicacia: «Netanel»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Netanel/
+  type: perspicacia
+relations:
+- type: kin
+  person: jese
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-2
+  reason: 1Cr 2:13-15 lo cuenta entre los siete hijos de Jesé.
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: david
+  word: brother
+  inferred: false
+  sources:
+  - 1-cronicas-2
+  reason: '1Cr 2:13-15: hijo de Jesé nombrado antes que David, el séptimo.'
+  checked_on: '2026-10-12'
+  status: verified
+disambiguation: Netanel hijo de Jesé, hermano de David; no Netanel hijo de Zuar, el jefe de Isacar en el desierto.
+distinct_from:
+- netanel-hijo-de-zuar
+- netanel-hijo-de-obed-edom
+- netanel-padre-de-semaya
+- netanel-trompetista
+checked_on: '2026-10-12'
+status: verified

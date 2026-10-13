@@ -1,0 +1,28 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: zima-hijo-de-simei
+name: Zimá
+names:
+- name: Zimá
+perspicacia: null
+summary: Levita guersonita de la línea de Asaf, hijo de Simeí y padre de Etán. Perspicacia ve posible que sea el Zimá hijo
+  de Jáhat.
+reason: Perspicacia «Zimá»; 1Cr 6:42.
+sources:
+- it-zima
+- 1-cronicas-6
+links:
+- title: 'Perspicacia: «Zimá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zim%C3%A1/
+  type: perspicacia
+relations:
+- type: kin
+  person: simei-hijo-de-jahat
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-6
+  reason: '1Cr 6:42: Zimá, «hijo de Simeí».'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

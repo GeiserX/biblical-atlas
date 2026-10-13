@@ -1,0 +1,40 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: haroe
+name: Haroé
+names:
+- name: Haroé
+perspicacia: '1200001889'
+summary: Hijo de Sobal en la genealogía de Judá. Por lo general se le tiene por el mismo Reayá de 1 Crónicas 4:2.
+reason: Perspicacia «Haroé»; 1Cr 2:52.
+sources:
+- it-haroe
+- 1-cronicas-2
+links:
+- title: 'Perspicacia: «Haroé»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Haro%C3%A9/
+  type: perspicacia
+relations:
+- type: kin
+  person: sobal-hijo-de-hur
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-2
+  reason: '1Cr 2:52: Sobal fue su padre.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: same_as
+  person: reaya-hijo-de-sobal
+  certainty: possible
+  inferred: true
+  sources:
+  - 1-cronicas-2
+  - 1-cronicas-4
+  - it-haroe
+  - it-reaya
+  reason: Hijos de Sobal los dos (1Cr 2:52; 4:2). «Reayá», núm. 1, solo lo ve posible; «Haroé» dice que se suele pensar así.
+    Va la certeza menor.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

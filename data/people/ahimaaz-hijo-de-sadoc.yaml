@@ -16,6 +16,7 @@ sources:
 - 2-samuel-15
 - 2-samuel-17
 - 2-samuel-18
+- 1-cronicas-6
 links:
 - title: 'Perspicacia: «Ahimáaz»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ahim%C3%A1az/
@@ -37,9 +38,10 @@ relations:
   - 2-samuel-15
   - it-ahimaaz
   - 2-samuel-18
+  - 1-cronicas-6
   reason: 2Sa 15:27 le dice a Sadoc «tu hijo Ahimáaz», y 15:36 lo llama hijo de Sadoc.
   inferred: false
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-09-30'
+checked_on: '2026-10-12'
 status: verified

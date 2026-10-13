@@ -1,0 +1,29 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ir
+name: Ir
+names:
+- name: Ir
+perspicacia: '1200002192'
+summary: Benjamita del que descienden las familias de los supim y los hupim. Perspicacia lo cree probablemente el mismo que
+  Irí, hijo de Bela.
+reason: Perspicacia «Ir»; 1Cr 7:12.
+sources:
+- it-ir
+- 1-cronicas-7
+links:
+- title: 'Perspicacia: «Ir»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ir/
+  type: perspicacia
+relations:
+- type: same_as
+  person: iri
+  certainty: probable
+  inferred: true
+  sources:
+  - 1-cronicas-7
+  - it-ir
+  reason: Perspicacia «Ir» ve probable que sea Irí, el hijo de Bela de 1Cr 7:7; el versículo 12 lo llama Ir.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

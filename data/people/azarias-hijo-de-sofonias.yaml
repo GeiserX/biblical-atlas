@@ -1,0 +1,42 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: azarias-hijo-de-sofonias
+name: Azarías
+names:
+- name: Azarías
+perspicacia: 1200000486#2
+disambiguation: Azarías hijo de Sofonías (1Cr 6:36); no es ninguno de los otros Azarías que numera Perspicacia «Azarías».
+distinct_from:
+- abednego
+- azarias-hijo-de-ahimaaz
+- azarias-hijo-de-etan
+- azarias-hijo-de-hilquias
+- azarias-hijo-de-jehohanan
+- azarias-hijo-de-jehu
+- azarias-hijo-de-johanan
+- azarias-hijo-de-natan
+- azarias-hijo-de-sadoc
+- azarias-sacerdote-repatriado
+- jaazanias-jefe-militar
+- ocozias-de-juda
+- uzias
+summary: Levita cohatita, hijo de Sofonías y padre de Joel; antepasado del profeta Samuel.
+reason: Perspicacia «Azarías», núm. 2; 1Cr 6:36.
+sources:
+- it-azarias
+- 1-cronicas-6
+links:
+- title: 'Perspicacia: «Azarías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Azar%C3%ADas/
+  type: perspicacia
+relations:
+- type: kin
+  person: sofonias-hijo-de-tahat
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-6
+  reason: '1Cr 6:36: Azarías, «hijo de Sofonías».'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

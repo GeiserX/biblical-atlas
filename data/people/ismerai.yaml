@@ -1,0 +1,36 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ismerai
+name: Ismerái
+names:
+- name: Ismerái
+perspicacia: '1200002218'
+summary: Benjamita, hijo o descendiente de Elpaal, jefe que vivió en Jerusalén.
+reason: Perspicacia «Ismerai»; 1Cr 8:18, 28.
+sources:
+- it-ismerai
+- 1-cronicas-8
+links:
+- title: 'Perspicacia: «Ismerai»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ismerai/
+  type: perspicacia
+relations:
+- type: kin
+  person: elpaal
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  - it-ismerai
+  reason: 1Cr 8:18 lo pone entre los hijos de Elpaal; Perspicacia «Ismerai» no precisa si era hijo o descendiente.
+  checked_on: '2026-10-12'
+  status: verified
+- type: lived_in
+  place: jerusalen
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  reason: '1Cr 8:28: los jefes de casas paternas de esta lista vivían en Jerusalén.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

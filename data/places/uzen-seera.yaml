@@ -1,0 +1,26 @@
+# biblical-atlas: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: uzen-seera
+name: Uzén-Seerá
+names:
+- name: Uzén-Seerá
+type: city
+lat: 31.887419
+lon: 35.044092
+precision: uncertain
+coord_source: openbible:a57ea5f
+coord_url: https://www.openbible.info/geo/ancient/a57ea5f/uzzen-sheerah
+coord_note: Punto de Beit Sira, el sitio que Perspicacia recoge de algunos geógrafos, unos 4 km al oeste de Bet-Horón Baja.
+  Es la segunda identificación de OpenBible.
+summary: Ciudad de Efraín que levantó, o hizo crecer, la efraimita Seerá, junto con las dos Bet-Horón. No se sabe con certeza
+  dónde estaba.
+reason: 'Perspicacia «Uzén-seerá»; 1Cr 7:24. OpenBible: solo tomamos el punto.'
+sources:
+- it-uzen-seera
+- openbible-geo
+- 1-cronicas-7
+links:
+- title: 'Perspicacia: «Uzén-seerá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Uz%C3%A9n-seer%C3%A1/
+  type: perspicacia
+checked_on: '2026-10-12'
+status: verified

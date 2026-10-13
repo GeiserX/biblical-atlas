@@ -1,0 +1,45 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: zacarias-musico
+name: Zacarías
+names:
+- name: Zacarías
+perspicacia: 1200004681#4
+disambiguation: El músico levita, segundo de Asaf; no el sacerdote trompetista del mismo traslado (núm. 5) ni los demás Zacarías
+  que numera Perspicacia «Zacarías».
+distinct_from:
+- zacarias-hijo-de-jehoiada
+- zacarias-padre-de-juan
+- zacarias-profeta
+- zacarias-abuelo-de-ezequias
+- zacarias-hijo-de-jeberekias
+- zacarias-de-israel
+- zacarias-trompetista
+- zacarias-hijo-de-hosa
+- zacarias-hijo-de-meselemias
+- zacarias-padre-de-ido
+- zacarias-descendiente-de-isias
+- zacarias-el-rubenita
+- zeker
+summary: Músico levita de la segunda división que tocó instrumento de cuerda en el traslado del Arca a Jerusalén. Después,
+  segundo después de Asaf, sirvió delante de la tienda del Arca.
+reason: Perspicacia «Zacarías», núm. 4; 1Cr 15:18, 20; 16:5.
+sources:
+- it-zacarias
+- 1-cronicas-15
+- 1-cronicas-16
+links:
+- title: 'Perspicacia: «Zacarías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zacar%C3%ADas/
+  type: perspicacia
+checked_on: '2026-10-12'
+status: verified
+relations:
+- type: tie
+  person: asaf-hijo-de-berekias
+  word: master
+  inferred: false
+  sources:
+  - 1-cronicas-16
+  reason: '1Cr 16:5: Asaf era el jefe de los músicos ante el Arca y Zacarías iba después de él.'
+  checked_on: '2026-10-12'
+  status: verified

@@ -1,0 +1,47 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: zacarias-hijo-de-meselemias
+name: Zacarías
+names:
+- name: Zacarías
+perspicacia: 1200004681#3
+summary: Portero levita, primogénito de Meselemías, de la familia de Coré. Guardaba la puerta de la tienda de reunión; Perspicacia
+  lo elogia como consejero prudente.
+reason: Perspicacia «Zacarías», núm. 3; 1Cr 9:21.
+sources:
+- it-zacarias
+- 1-cronicas-9
+- 1-cronicas-26
+links:
+- title: 'Perspicacia: «Zacarías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zacar%C3%ADas/
+  type: perspicacia
+relations:
+- type: kin
+  person: meselemias
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-9
+  - 1-cronicas-26
+  - it-zacarias
+  reason: '1Cr 9:21: Zacarías, hijo de Meselemías.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- zacarias-abuelo-de-ezequias
+- zacarias-de-israel
+- zacarias-descendiente-de-isias
+- zacarias-el-rubenita
+- zacarias-hijo-de-hosa
+- zacarias-hijo-de-jeberekias
+- zacarias-hijo-de-jehoiada
+- zacarias-musico
+- zacarias-padre-de-ido
+- zacarias-padre-de-juan
+- zacarias-profeta
+- zacarias-trompetista
+- zeker
+disambiguation: 'Zacarías núm. 3 de Perspicacia: portero coreíta, hijo de Meselemías. No el benjamita hijo de Jeiel, el profeta
+  ni los demás Zacarías.'

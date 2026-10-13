@@ -10,6 +10,7 @@ reason: Perspicacia «Uz», núm. 3; Gé 36:28.
 sources:
 - it-uz
 - genesis-36
+- 1-cronicas-1
 links:
 - title: 'Perspicacia: «Uz»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Uz/
@@ -25,10 +26,11 @@ relations:
   sources:
   - it-uz
   - genesis-36
+  - 1-cronicas-1
   reason: 'Gé 36:28: hijo de Disán.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-02'
+checked_on: '2026-10-12'
 status: verified
 distinct_from:
 - uz-hijo-de-aram

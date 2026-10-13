@@ -1,0 +1,43 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: samai-hijo-de-mered
+name: Samái
+names:
+- name: Samái
+perspicacia: 1200003943#3
+disambiguation: Samái de la línea de Méred (núm. 3 de Perspicacia); no los Samái de las ramas de Jerahmeel y de Caleb.
+summary: Personaje de la tribu de Judá, hermano de Míriam e Isbá.
+reason: Perspicacia «Samai»; 1Cr 4:17, 18.
+sources:
+- it-samai
+- it-mered
+- 1-cronicas-4
+links:
+- title: 'Perspicacia: «Samai»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Samai/
+  type: perspicacia
+relations:
+- type: kin
+  person: bitias
+  word: mother
+  inferred: true
+  sources:
+  - 1-cronicas-4
+  - it-samai
+  reason: '1Cr 4:17, 18: «ella» es la madre de Míriam, Samái e Isbá; la nota dice que quizá es Bitías.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: mered
+  word: father
+  inferred: true
+  sources:
+  - 1-cronicas-4
+  - it-mered
+  reason: '1Cr 4:17, 18: hijo de Bitías, esposa de Méred; Perspicacia «Méred» dice que él tuvo varios hijos con ella.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- samai-hijo-de-onam
+- samai-hijo-de-requem

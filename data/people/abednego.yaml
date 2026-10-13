@@ -53,7 +53,7 @@ relations:
     cuándo vivió.'
   checked_on: '2026-09-28'
   status: verified
-checked_on: '2026-10-01'
+checked_on: '2026-10-12'
 status: verified
 disambiguation: Azarías, compañero de Daniel, al que en Babilonia pusieron el nombre de Abednego; no es ninguno de los otros
   Azarías que numera Perspicacia, como el hijo de Natán o el jefe efraimita hijo de Jehohanán.
@@ -64,3 +64,10 @@ distinct_from:
 - jaazanias-jefe-militar
 - ocozias-de-juda
 - uzias
+- azarias-hijo-de-etan
+- azarias-hijo-de-jehu
+- azarias-hijo-de-ahimaaz
+- azarias-hijo-de-hilquias
+- azarias-hijo-de-johanan
+- azarias-hijo-de-sofonias
+- azarias-sacerdote-repatriado

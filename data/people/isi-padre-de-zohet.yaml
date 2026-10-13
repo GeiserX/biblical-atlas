@@ -1,0 +1,23 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: isi-padre-de-zohet
+name: Isí
+names:
+- name: Isí
+perspicacia: 1200002213#2
+disambiguation: Isí padre de Zóhet, de Judá (núm. 2 de Perspicacia); no el simeonita padre de Pelatías ni el jefe de Manasés.
+summary: Descendiente de Judá, padre de Zóhet y de Ben-Zóhet.
+reason: Perspicacia «Isí»; 1Cr 4:20.
+sources:
+- it-isi
+- 1-cronicas-4
+links:
+- title: 'Perspicacia: «Isí»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Is%C3%AD/
+  type: perspicacia
+relations: []
+distinct_from:
+- isi-simeonita
+- isi-de-manases
+- isi-hijo-de-apaim
+checked_on: '2026-10-12'
+status: verified

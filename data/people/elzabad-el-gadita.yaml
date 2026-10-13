@@ -1,0 +1,31 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: elzabad-el-gadita
+name: Elzabad
+names:
+- name: Elzabad
+perspicacia: 1200001346#1
+disambiguation: Elzabad el gadita, noveno de los once (1Cr 12:12); no el portero coreíta hijo de Semaya.
+distinct_from:
+- elzabad-hijo-de-semaya
+summary: Gadita, el noveno de los once guerreros de Gad que cruzaron el Jordán crecido para unirse a David en el desierto,
+  cuando Saúl lo perseguía.
+reason: Perspicacia «Elzabad», núm. 1; 1Cr 12:8-15.
+sources:
+- it-elzabad
+- 1-cronicas-12
+links:
+- title: 'Perspicacia: «Elzabad»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Elzabad/
+  type: perspicacia
+relations:
+- type: tie
+  person: david
+  word: master
+  inferred: false
+  sources:
+  - 1-cronicas-12
+  reason: '1Cr 12:8, 12, 14: gadita que se pasó a David y llegó a ser jefe de su ejército.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

@@ -1,0 +1,28 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: anub
+name: Anub
+names:
+- name: Anub
+perspicacia: '1200000296'
+summary: Descendiente de Judá, hijo de Coz.
+reason: Perspicacia «Anub»; 1Cr 4:8.
+sources:
+- it-anub
+- 1-cronicas-4
+links:
+- title: 'Perspicacia: «Anub»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Anub/
+  type: perspicacia
+relations:
+- type: kin
+  person: coz
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-4
+  - it-qoz
+  reason: '1Cr 4:8: Coz fue padre de Anub.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

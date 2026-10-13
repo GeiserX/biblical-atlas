@@ -1,0 +1,60 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jezreel-descendiente-de-juda
+name: Jezreel
+names:
+- name: Jezreel
+perspicacia: 1200002467#1
+disambiguation: Jezreel de Judá (núm. 1 de Perspicacia); no el hijo del profeta Oseas.
+summary: Judaíta, hijo del fundador de Etam. Perspicacia ve posible que fuera el antepasado o el principal poblador de la
+  Jezreel de Judá.
+reason: Perspicacia «Jezreel»; 1Cr 4:3.
+sources:
+- it-jezreel
+- 1-cronicas-4
+links:
+- title: 'Perspicacia: «Jezreel»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jezreel/
+  type: perspicacia
+relations:
+- type: kin
+  person: isma
+  word: brother
+  inferred: false
+  sources:
+  - 1-cronicas-4
+  reason: '1Cr 4:3: hijos del padre de Etam.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: idbas
+  word: brother
+  inferred: false
+  sources:
+  - 1-cronicas-4
+  reason: '1Cr 4:3: hijos del padre de Etam.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: hazelelponi
+  word: sister
+  inferred: false
+  sources:
+  - 1-cronicas-4
+  - it-hazelelponi
+  reason: '1Cr 4:3: Hazelelponí era la hermana de ellos.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: hur-hijo-de-caleb
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-4
+  - it-hur
+  reason: '1Cr 4:3, 4: los hijos del padre de Etam van entre «los hijos de Hur»; Perspicacia «Hur», núm. 1, cita 1Cr 4:1-4.'
+  checked_on: '2026-10-12'
+  status: verified
+distinct_from:
+- jezreel-hijo-de-oseas
+checked_on: '2026-10-12'
+status: verified

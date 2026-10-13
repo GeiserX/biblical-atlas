@@ -1,0 +1,31 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: requem-de-manases
+name: Réquem
+names:
+- name: Réquem
+perspicacia: 1200003686#2
+disambiguation: Réquem de Manasés; no el rey de Madián muerto en la guerra contra Israel ni el Réquem de la línea de Caleb.
+distinct_from:
+- requem-rey-de-madian
+- requem-hijo-de-hebron
+summary: Manasita de la descendencia de Makir, hermano de Ulam.
+reason: Perspicacia «Réquem», núm. 2; 1Cr 7:14, 16.
+sources:
+- it-requem
+- 1-cronicas-7
+links:
+- title: 'Perspicacia: «Réquem»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/R%C3%A9quem/
+  type: perspicacia
+relations:
+- type: kin
+  person: makir-hijo-de-manases
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-7
+  reason: '1Cr 7:16: hijo de Peres o de Seres, que eran hijos de Makir.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

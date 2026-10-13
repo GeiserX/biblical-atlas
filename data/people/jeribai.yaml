@@ -1,0 +1,46 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jeribai
+name: Jeribái
+names:
+- name: Jeribái
+- name: Jeribai
+perspicacia: '1200002425'
+summary: Hijo de Elnaam y guerrero poderoso de David, como su hermano Josavías.
+reason: Perspicacia «Jeribai»; 1Cr 11:46.
+sources:
+- it-jeribai
+- 1-cronicas-11
+links:
+- title: 'Perspicacia: «Jeribai»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jeribai/
+  type: perspicacia
+relations:
+- type: kin
+  person: elnaam
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-11
+  reason: '1Cr 11:46: Jeribái y Josavías, hijos de Elnaam.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: josavias
+  word: brother
+  inferred: true
+  sources:
+  - 1-cronicas-11
+  reason: '1Cr 11:46: los dos son hijos de Elnaam.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: tie
+  person: david
+  word: master
+  inferred: false
+  sources:
+  - 1-cronicas-11
+  reason: '1Cr 11:46: figura entre los valientes de David.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

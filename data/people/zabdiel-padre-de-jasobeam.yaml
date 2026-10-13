@@ -1,0 +1,18 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: zabdiel-padre-de-jasobeam
+name: Zabdiel
+names:
+- name: Zabdiel
+perspicacia: 1200004647#1
+summary: Padre de Jasobeam, el guerrero de David que estaba al frente de la división del primer mes.
+reason: Perspicacia «Zabdiel», núm. 1; 1Cr 27:2.
+sources:
+- it-zabdiel
+- 1-cronicas-27
+links:
+- title: 'Perspicacia: «Zabdiel»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zabdiel/
+  type: perspicacia
+relations: []
+checked_on: '2026-10-12'
+status: verified

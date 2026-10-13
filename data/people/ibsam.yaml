@@ -1,0 +1,27 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ibsam
+name: Ibsam
+names:
+- name: Ibsam
+perspicacia: '1200002128'
+summary: Isacarita, uno de los hijos de Tolá y jefe de una casa paterna de la tribu.
+reason: Perspicacia «Ibsam»; 1Cr 7:1, 2.
+sources:
+- it-ibsam
+- 1-cronicas-7
+links:
+- title: 'Perspicacia: «Ibsam»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ibsam/
+  type: perspicacia
+relations:
+- type: kin
+  person: tola-hijo-de-isacar
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-7
+  reason: 1Cr 7:2 lo cuenta entre los hijos de Tolá.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

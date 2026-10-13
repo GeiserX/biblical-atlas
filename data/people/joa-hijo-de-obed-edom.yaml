@@ -1,0 +1,33 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: joa-hijo-de-obed-edom
+name: Joá
+names:
+- name: Joá
+perspicacia: 1200002470#1
+disambiguation: El hijo de Obed-Edom, portero (1Cr 26:4); no Joá hijo de Asaf, el funcionario de Ezequías (Perspicacia «Joah»,
+  núm. 1 y 3).
+summary: Tercer hijo de Obed-Edom. Portero levita encargado de los almacenes en tiempos de David.
+reason: Perspicacia «Joah», núm. 1; 1Cr 26:4.
+sources:
+- it-joah
+- 1-cronicas-26
+links:
+- title: 'Perspicacia: «Joah»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Joah/
+  type: perspicacia
+relations:
+- type: kin
+  person: obed-edom-coreita
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-26
+  - it-joah
+  reason: '1Cr 26:4: el tercero de los hijos de Obed-Edom.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- joa-hijo-de-asaf
+- joa-hijo-de-zima

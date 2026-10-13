@@ -1,0 +1,43 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: asaya-hijo-de-haguias
+name: Asaya
+names:
+- name: Asaya
+perspicacia: 1200000399#1
+disambiguation: Asaya hijo de Haguías (1Cr 6:29, 30); no es ninguno de los otros Asaya que numera Perspicacia «Asaya».
+distinct_from:
+- asaya-siervo-del-rey
+- asaya-silonita
+- asaya-simeonita
+summary: Levita merarita, hijo de Haguías y cabeza de una casa paterna. En tiempos de David encabezó a 220 de sus hermanos
+  cuando el Arca subió por fin a Jerusalén.
+reason: Perspicacia «Asaya», núm. 1; 1Cr 6:29, 30; 15:6, 11-14.
+sources:
+- it-asaya
+- 1-cronicas-6
+- 1-cronicas-15
+links:
+- title: 'Perspicacia: «Asaya»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Asaya/
+  type: perspicacia
+relations:
+- type: kin
+  person: haguias
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-6
+  reason: '1Cr 6:29, 30: «su hijo Asaya», tras Haguías.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: merari
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-15
+  reason: 1Cr 15:6 lo pone al frente de los meraritas, descendientes de Merarí.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

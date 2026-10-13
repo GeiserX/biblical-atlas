@@ -1,0 +1,29 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: izrahias-de-isacar
+name: Izrahías
+names:
+- name: Izrahías
+perspicacia: 1200002254#1
+disambiguation: Izrahías de Isacar, de la línea de Tolá; no el que dirigía a los cantores en días de Nehemías.
+summary: Isacarita de la línea de Tolá, descendiente de Uzí. Con sus cuatro hijos formaban cinco jefes de la tribu.
+reason: Perspicacia «Izrahías», núm. 1; 1Cr 7:1-5.
+sources:
+- it-izrahias
+- 1-cronicas-7
+links:
+- title: 'Perspicacia: «Izrahías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Izrah%C3%ADas/
+  type: perspicacia
+relations:
+- type: kin
+  person: uzi-de-isacar
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-7
+  - it-izrahias
+  reason: 1Cr 7:3 lo da como descendiente de Uzí (la nota dice que el original pone «hijos»).
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

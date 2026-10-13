@@ -1,0 +1,27 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: zetan
+name: Zetán
+names:
+- name: Zetán
+perspicacia: '1200004719'
+summary: Benjamita de la línea de Jediael, hijo de Bilhán.
+reason: Perspicacia «Zetán»; 1Cr 7:6, 10, 11.
+sources:
+- it-zetan
+- 1-cronicas-7
+links:
+- title: 'Perspicacia: «Zetán»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zet%C3%A1n/
+  type: perspicacia
+relations:
+- type: kin
+  person: bilhan-hijo-de-jediael
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-7
+  reason: 1Cr 7:10 lo cuenta entre los hijos de Bilhán.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

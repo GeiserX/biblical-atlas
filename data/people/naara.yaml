@@ -1,0 +1,18 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: naara
+name: Naará
+names:
+- name: Naará
+perspicacia: 1200003152#1
+summary: Esposa del judaíta Asjur, con quien tuvo cuatro hijos.
+reason: Perspicacia «Naará»; 1Cr 4:5, 6.
+sources:
+- it-naara
+- 1-cronicas-4
+links:
+- title: 'Perspicacia: «Naará»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Naar%C3%A1/
+  type: perspicacia
+relations: []
+checked_on: '2026-10-12'
+status: verified

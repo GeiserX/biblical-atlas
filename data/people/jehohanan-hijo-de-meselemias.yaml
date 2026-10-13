@@ -1,0 +1,29 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jehohanan-hijo-de-meselemias
+name: Jehohanán
+names:
+- name: Jehohanán
+perspicacia: 1200002374#1
+disambiguation: El hijo de Meselemías, portero (1Cr 26:3); no los demás Jehohanán de Perspicacia «Jehohanán».
+summary: Sexto hijo del coreíta Meselemías. Sirvió de portero en tiempos de David.
+reason: Perspicacia «Jehohanán», núm. 1; 1Cr 26:3.
+sources:
+- it-jehohanan
+- 1-cronicas-26
+links:
+- title: 'Perspicacia: «Jehohanán»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jehohan%C3%A1n/
+  type: perspicacia
+relations:
+- type: kin
+  person: meselemias
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-26
+  - it-jehohanan
+  reason: 1Cr 26:2, 3 lo nombra el sexto de los hijos de Meselemías.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

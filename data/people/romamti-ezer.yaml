@@ -1,0 +1,28 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: romamti-ezer
+name: Romamti-Ézer
+names:
+- name: Romamti-Ézer
+perspicacia: '1200003760'
+summary: Hijo de Hemán al que salió la última suerte, la 24, y con ella el último grupo de músicos del santuario.
+reason: Perspicacia «Romamti-ézer»; 1Cr 25:4, 31.
+sources:
+- it-romamti-ezer
+- 1-cronicas-25
+links:
+- title: 'Perspicacia: «Romamti-ézer»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Romamti-%C3%A9zer/
+  type: perspicacia
+relations:
+- type: kin
+  person: heman-hijo-de-joel
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-25
+  - it-romamti-ezer
+  reason: 1Cr 25:4, 31 lo cuenta entre los hijos de Hemán.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

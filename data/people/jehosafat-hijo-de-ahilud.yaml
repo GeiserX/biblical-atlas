@@ -17,6 +17,7 @@ sources:
 - 2-samuel-8
 - 2-samuel-20
 - 1-reyes-4
+- 1-cronicas-18
 links:
 - title: 'Perspicacia: «Jehosafat»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jehosafat/
@@ -36,9 +37,10 @@ relations:
   - it-ahilud
   - 2-samuel-20
   - 1-reyes-4
+  - 1-cronicas-18
   reason: '2Sa 8:16: Jehosafat hijo de Ahilud.'
   inferred: false
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-12'
   status: verified
 - type: tie
   person: david
@@ -48,8 +50,9 @@ relations:
   - 2-samuel-8
   - it-jehosafat
   - 2-samuel-20
+  - 1-cronicas-18
   reason: '2Sa 8:16; 20:24: era el registrador de David.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: tie
   person: salomon
@@ -60,5 +63,5 @@ relations:
   reason: '1Re 4:3: era el registrador del rey Salomón.'
   checked_on: '2026-09-30'
   status: verified
-checked_on: '2026-09-30'
+checked_on: '2026-10-12'
 status: verified

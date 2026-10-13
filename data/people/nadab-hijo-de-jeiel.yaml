@@ -1,0 +1,34 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: nadab-hijo-de-jeiel
+name: Nadab
+names:
+- name: Nadab
+perspicacia: 1200003159#3
+disambiguation: Nadab hijo de Jeiel; no Nadab hijo de Aarón, el rey Nadab de Israel ni el de la línea de Jerahmeel.
+distinct_from:
+- nadab-de-israel
+- nadab-hijo-de-aaron
+- nadab-hijo-de-samai
+summary: Benjamita, hijo de Jeiel de Gabaón.
+reason: Perspicacia «Nadab», núm. 3; 1Cr 8:29-31.
+sources:
+- it-nadab
+- 1-cronicas-8
+- 1-cronicas-9
+links:
+- title: 'Perspicacia: «Nadab»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Nadab/
+  type: perspicacia
+relations:
+- type: kin
+  person: jeiel-de-gabaon
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  - 1-cronicas-9
+  reason: 1Cr 8:30, 31 lo cuenta entre los hijos de Jeiel.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

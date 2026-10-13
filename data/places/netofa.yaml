@@ -18,9 +18,12 @@ sources:
 - it-netofa
 - openbible-geo
 - 2-samuel-23
+- 1-cronicas-2
+- 1-cronicas-9
+- 1-cronicas-11
 links:
 - title: 'Perspicacia: «Netofá»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Netof%C3%A1/
   type: perspicacia
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

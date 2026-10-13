@@ -11,12 +11,15 @@ distinct_from:
 - abias-de-tiempos-de-david
 - abias-hijo-de-jeroboan
 - abias-hija-de-zacarias
+- abias-esposa-de-hezron
+- abias-hijo-de-beker
 summary: Segundo hijo de Samuel. Con su hermano Joel fue juez en Beer-Seba, pero los dos se dejaron sobornar, y eso llevó
   a los ancianos a pedir un rey.
 reason: Perspicacia «Abías», núm. 3; 1Sa 8:1-5.
 sources:
 - it-abias
 - 1-samuel-8
+- 1-cronicas-6
 links:
 - title: 'Perspicacia: «Abías»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ab%C3%ADas/
@@ -31,8 +34,9 @@ relations:
   inferred: false
   sources:
   - 1-samuel-8
+  - 1-cronicas-6
   reason: 1Sa 8:2 lo nombra como el segundo hijo de Samuel.
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: holds_office
   place: beer-seba
@@ -43,5 +47,5 @@ relations:
   reason: '1Sa 8:2: era juez en Beer-Seba con su hermano.'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-30'
+checked_on: '2026-10-12'
 status: verified

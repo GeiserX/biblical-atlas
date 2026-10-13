@@ -1,0 +1,38 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ismaya-hijo-de-abdias
+name: Ismayá
+names:
+- name: Ismayá
+perspicacia: 1200002217#2
+disambiguation: Ismayá hijo de Abdías, príncipe de Zabulón; no el guerrero gabaonita que se unió a David en Ziclag.
+summary: Hijo de Abdías. En días del rey David encabezaba a los de Zabulón como su príncipe.
+reason: Perspicacia «Ismayá», núm. 2; 1Cr 27:19.
+sources:
+- it-ismaya
+- 1-cronicas-27
+links:
+- title: 'Perspicacia: «Ismayá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ismay%C3%A1/
+  type: perspicacia
+relations:
+- type: kin
+  person: abdias-padre-de-ismaya
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-27
+  reason: '1Cr 27:19: Ismayá hijo de Abdías.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: holds_office
+  office: leader
+  inferred: false
+  sources:
+  - 1-cronicas-27
+  reason: '1Cr 27:19, 22: era el líder de Zabulón, uno de los príncipes de las tribus de Israel.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- ismaya-el-gabaonita

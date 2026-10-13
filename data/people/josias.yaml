@@ -24,6 +24,7 @@ sources:
 - 1-reyes-13
 - 2-reyes-21
 - jeremias-1
+- 1-cronicas-3
 links:
 - title: 'Perspicacia: «Josías»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jos%C3%ADas/
@@ -43,6 +44,7 @@ relations:
   - sofonias-1
   - jeremias-1
   - jeremias-25
+  - 1-cronicas-3
   reason: Hijo de Amón y de Jedidá (2Re 21:26; 22:1).
   checked_on: '2026-10-12'
   status: verified

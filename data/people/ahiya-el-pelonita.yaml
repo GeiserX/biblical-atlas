@@ -1,0 +1,41 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ahiya-el-pelonita
+name: Ahíya
+names:
+- name: Ahíya
+perspicacia: 1200000153#4
+disambiguation: Ahíya el pelonita, guerrero de David en 1Cr 11:36; no el sacerdote, el profeta de Siló ni otros de ese nombre.
+distinct_from:
+- ahiya-de-benjamin
+- ahiya-hijo-de-ahitub
+- ahiya-hijo-de-sisa
+- ahiya-padre-de-baasa
+- ahiya-profeta
+- ahiya-tesorero
+- ahiya-hijo-de-jerahmeel
+summary: Pelonita, uno de los guerreros poderosos de David. Su nombre no aparece, al menos con esa forma, en la lista de 2
+  Samuel 23.
+reason: Perspicacia «Ahíya», núm. 4, y «Pelonita»; 1Cr 11:36.
+sources:
+- it-ahiya
+- it-pelonita
+- 1-cronicas-11
+links:
+- title: 'Perspicacia: «Ahíya»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ah%C3%ADya/
+  type: perspicacia
+- title: 'Perspicacia: «Pelonita»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Pelonita/
+  type: perspicacia
+relations:
+- type: tie
+  person: david
+  word: master
+  inferred: false
+  sources:
+  - 1-cronicas-11
+  reason: '1Cr 11:36: figura entre los valientes de David.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

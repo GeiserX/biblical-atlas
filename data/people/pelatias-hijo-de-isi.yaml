@@ -39,5 +39,17 @@ relations:
   reason: '1Cr 4:42, 43: los simeonitas que él guiaba se quedaron a vivir en el monte Seír.'
   checked_on: '2026-09-30'
   status: verified
-checked_on: '2026-09-30'
+- type: kin
+  person: isi-simeonita
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-4
+  - it-isi
+  reason: '1Cr 4:42: Pelatías, uno de los hijos de Isí.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
 status: verified
+distinct_from:
+- pelatias-hijo-de-hananias
