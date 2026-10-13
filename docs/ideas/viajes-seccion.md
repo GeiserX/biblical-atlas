@@ -96,7 +96,7 @@ En cifras: 13 controles y 291 palabras en la primera pantalla del ordenador ([la
 </tr>
 </table>
 
-**Cómo se usa.** Es una hoja de trabajo. La entrada hace dos preguntas: de quién vas a hablar (Pablo, Jesús, Abrahán, Moisés, Elías, David) y cuál de sus viajes; el primero que propone es el que tiene más tiempos dichos. Debajo va la tabla de todos los viajes, que se filtra y se ordena por kilómetros. Un viaje es una tabla de tramos con el acumulado, una frase de resumen («De Cesarea a Roma: 14 paradas y unos 2990 km…»), «Imprimir» y «Copiar como texto». «Mapa» abre el tramo dentro de la fila.
+**Cómo se usa.** Es una hoja de trabajo. La entrada hace dos preguntas: de quién vas a hablar (Pablo, Jesús, Abrahán, Moisés, Elías, David) y cuál de sus viajes. Para Pablo propone primero el viaje a Roma, fijado a mano; para los demás, el que tiene más tramos con tiempo dicho. Debajo va la tabla de todos los viajes, que se filtra y se ordena por kilómetros. Un viaje es una tabla de tramos con el acumulado, una frase de resumen («De Cesarea a Roma: 14 paradas y unos 2990 km…»), «Imprimir» y «Copiar como texto». «Mapa» abre el tramo dentro de la fila.
 
 **La primera visita.** [Pablo ya elegido](img/viajes/hoja-lista-1440.webp), con «Para empezar» sobre el viaje a Roma. Tres pulsaciones hasta el primer tramo con su mapa.
 
@@ -214,7 +214,7 @@ Y quitaríamos texto de la primera pantalla: la caja verde y la lista bastan, si
 | ¿El tramo se vuelve una selección del sitio (`#sel=tramo:<viaje>/<n>`)? | Sí. Sin ella, «Abrir en el mapa» abre la parada de llegada y no el tramo. |
 | ¿Enseñamos el tope deducido aunque sea largo («como mucho 3 años»)? | Sí, con su marca. Callarlo dejaría el tramo sin dato, y la marca dice que no lo da el texto. |
 | ¿Distancia en línea recta, o por calzadas y costas? | En línea recta, diciéndolo. Por calzadas haría falta una red de caminos con fuente, que no tenemos. |
-| ¿Qué viaje abre la primera visita? | El viaje a Roma: es el que más tiempos dichos tiene, 3 tramos y 3 estancias, y las tres distancias de control. |
+| ¿Qué viaje abre la primera visita? | El viaje a Roma: en un solo relato (Hch 27:1–28:16) reúne 3 tramos con tiempo dicho, 2 trechos (uno dicho y otro que calcula una nota de estudio, el único de ese tipo), 3 estancias y las tres distancias de control. El que más tramos con tiempo dicho tiene es el tercer viaje, con 5 tramos y 4 estancias, pero sin trechos ni controles. |
 
 ## 9. Cómo abrir los prototipos
 
