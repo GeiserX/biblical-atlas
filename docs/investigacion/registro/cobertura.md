@@ -69,7 +69,7 @@ Qué versículos de la TNM se han leído y apuntado en `data/coverage/<libro>.ya
 | [Efesios](https://github.com/GeiserX/biblical-atlas/blob/main/data/coverage/efesios.yaml) | 6 de 6 | 155 de 155 | 100 % |
 | [Filipenses](https://github.com/GeiserX/biblical-atlas/blob/main/data/coverage/filipenses.yaml) | 4 de 4 | 104 de 104 | 100 % |
 | [Colosenses](https://github.com/GeiserX/biblical-atlas/blob/main/data/coverage/colosenses.yaml) | 4 de 4 | 95 de 95 | 100 % |
-| 1 Tesalonicenses | 0 de 5 | 0 de 89 | 0 % |
+| [1 Tesalonicenses](https://github.com/GeiserX/biblical-atlas/blob/main/data/coverage/1-tesalonicenses.yaml) | 5 de 5 | 89 de 89 | 100 % |
 | 2 Tesalonicenses | 0 de 3 | 0 de 47 | 0 % |
 | 1 Timoteo | 0 de 6 | 0 de 113 | 0 % |
 | 2 Timoteo | 0 de 4 | 0 de 83 | 0 % |
@@ -84,7 +84,7 @@ Qué versículos de la TNM se han leído y apuntado en `data/coverage/<libro>.ya
 | 3 Juan | 0 de 1 | 0 de 14 | 0 % |
 | Judas | 0 de 1 | 0 de 25 | 0 % |
 | Apocalipsis | 0 de 22 | 0 de 404 | 0 % |
-| **Total** | 896 de 1189 | 23756 de 31062 | 76 % |
+| **Total** | 901 de 1189 | 23845 de 31062 | 77 % |
 
 ## Capítulos empezados
 

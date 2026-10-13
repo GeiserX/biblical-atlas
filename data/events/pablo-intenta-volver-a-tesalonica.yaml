@@ -1,0 +1,41 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: pablo-intenta-volver-a-tesalonica
+title: Pablo intenta dos veces volver a Tesalónica
+date:
+  from: 50
+  to: 50
+  precision: year
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'c. 50 e.c. (tiempo narrativo: entre la huida de Tesalónica y la primera carta)'
+narrative_order:
+  series: hechos
+  order: 1713
+places:
+- tesalonica
+people:
+- pablo
+- satanas
+present: []
+passages:
+- 1Te 2:17, 18
+summary: Separado a la fuerza de los tesalonicenses, Pablo quiere volver a verlos y lo intenta dos veces, pero Satanás le
+  cierra el camino. La nota ve posible que el obstáculo viniera de sus opositores de la ciudad.
+reason: 'Perspicacia «Tesalonicenses» pone los intentos antes del envío de Timoteo, y «Timoteo» cree que lo envió desde Berea:
+  va tras llegar allí. Huida y carta son de hacia 50 (estudio 3). El texto no dice desde dónde: nadie queda situado.'
+sources:
+- 1-tesalonicenses-2
+- it-tesalonicenses
+- it-timoteo
+- si-3
+links:
+- title: 1 Tesalonicenses 2 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/1-tesalonicenses/2/
+  type: bible
+- title: 'Perspicacia: «Tesalonicenses, Cartas a los»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Tesalonicenses-Cartas-a-los/
+  type: perspicacia
+search: Satanás impide a Pablo volver a Tesalónica
+checked_on: '2026-10-12'
+status: verified
