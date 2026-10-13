@@ -209,7 +209,7 @@ function crearMapa() {
   map.on('resize', () => { if (imgsDom.length) colocarImgsDom(); });
   // Un clic en una marca HTML también llega a MapLibre: esa marca ya lo gestiona su propio manejador.
   const enMarca = (e) => !!e.originalEvent?.target?.closest?.('.maplibregl-marker');
-  // La zona de un punto, un hallazgo o un viajero (24 px, 44 con el dedo) pisa la de sus vecinos cuando el zoom los junta:
+  // La zona de un punto, un hallazgo, un viajero o un candidato (24 px, 44 con el dedo) pisa la de sus vecinos cuando el zoom los junta:
   // el clic va al más cercano, no al que quedó encima. El teclado (detail 0) pulsa el botón que tiene el foco, sin más.
   map.getContainer().addEventListener('click', (e) => {
     const el = e.target.closest?.(ZONA);
@@ -1219,10 +1219,11 @@ function crearMarcas() {
   marcaProxima = new maplibregl.Marker({ element: q, anchor: 'bottom', offset: [0, -14] }).setLngLat([0, 0]);
   q.addEventListener('click', (e) => { e.stopPropagation(); const s = BE.P.find((x) => x.key === q.dataset.key); if (s) { setT((s.a + s.b) / 2); asegurarVisible(E.t, false); } });
 }
-/** Las marcas con zona de 24 px, lo que se ve de cada una y el punto desde el que se mide la distancia. */
-const ZONA = '.marca-lugar, .marca-hallazgo, .viajero';
-const DIBUJO = '.marca-lugar .punto, .marca-lugar .etiqueta, .marca-lugar .etiqueta *, .hallazgo-dibujo, .hallazgo-dibujo *, .viajero-punto, .viajero-rotulo';
-const CENTRO = '.punto, .hallazgo-dibujo > span, .viajero-punto';
+/** Las marcas con zona de 24 px (lugares, hallazgos, viajeros y candidatos), lo que se ve de cada una y el punto desde el
+    que se mide la distancia. */
+const ZONA = '.marca-lugar, .marca-hallazgo, .viajero, .cand';
+const DIBUJO = '.marca-lugar .punto, .marca-lugar .etiqueta, .marca-lugar .etiqueta *, .hallazgo-dibujo, .hallazgo-dibujo *, .viajero-punto, .viajero-rotulo, .cand-punto, .cand-rotulo, .cand-rotulo *';
+const CENTRO = '.punto, .hallazgo-dibujo > span, .viajero-punto, .cand-punto';
 /** La marca que recibe un clic en (x, y): el punto, el cuadrado o el nombre que se ve ahí; si solo hay zonas de toque,
     la del punto más cercano. */
 function marcaCercana(x, y) {
