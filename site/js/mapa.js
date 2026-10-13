@@ -1319,9 +1319,10 @@ function pintarViajeros(ver) {
   // Un grupo (el Arca) no lleva marcador: solo su ruta.
   const personas = new Set(BE.D.viajes.map(BE.duenoViaje).filter((p) => !BE.esGrupo(p)));
   personas.delete('pablo');
-  // Quien viaja con Pablo no lleva marcador propio mientras va con él: el de Pablo marca dónde están, y «Ahora mismo»
-  // sigue diciendo dónde está cada uno. Con uno propio, situado por sus sucesos y no por las paradas de Pablo, se adelantaba
-  // a él en cada tramo y se metía debajo en cada parada: al reproducir, aparecía y desaparecía.
+  // Quien viaja con Pablo no lleva marcador propio mientras va con él: el de Pablo marca dónde están, y la ficha de la
+  // parada lo nombra («Con Pablo en esta parada», tipos/parada.js). Con uno propio, situado por sus sucesos y no por las
+  // paradas de Pablo, se adelantaba a él en cada tramo y se metía debajo en cada parada: al reproducir, aparecía y
+  // desaparecía.
   const conEl = marcaPablo.puesta ? conPablo(E.t) : new Set();
   for (const p of personas) {
     const w = ver && !conEl.has(p) ? BE.donde(p, E.t) : null;
