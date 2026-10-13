@@ -278,6 +278,11 @@ Los campos, los tipos de relación y sus palabras se nombran como en el esquema 
 
 - **Las cartas escritas en Roma.** El tramo Hch 28:30, 31 ya nombra `letter:efesios` y `letter:colosenses` en `mentions`; puede nombrar también `pablo-escribe-efesios`, `pablo-escribe-colosenses` y `epafras-informa-a-pablo-en-roma` (c. 59-61, durante esos dos años).
 
+## Para Hechos (si se relee, desde 2 Tesalonicenses)
+
+- **Las cartas desde Corinto.** `pablo-escribe-2-tesalonicenses` (c. 51) lleva el orden 1807 de la serie `hechos`, justo tras `primera-carta-de-pablo` (1806): Perspicacia «Tesalonicenses» y «Testimonio completo», cap. 19, la ponen poco después de la primera, y ninguna fuente la sitúa frente a la visión de Hch 18:9, 10 (1809). El tramo Hch 18:5-8 ya nombra `letter:2-tesalonicenses` en `mentions`; si se reabre Hechos 18, ese tramo puede nombrar también los dos sucesos.
+- **El trabajo en Tesalónica.** `alboroto-en-tesalonica` lleva ya 2Te 2:5 y 3:7-10 en `passages`, y su resumen dice que Pablo y Silas trabajaron para mantenerse (Perspicacia «Tesalónica», párr. 3). Si se reabre Hechos 17, se parte de ese resumen.
+
 ## Para 1 Crónicas y 2 Crónicas (desde Amós)
 
 - **Hazael y los Ben-Hadad.** `hazael` (`1200001923`), `ben-hadad-hijo-de-hazael` (`1200000636#3`), `ben-hadad-hijo-de-tabrimon` (núm. 1) y `ben-hadad-ii` (núm. 2) existen, con `distinct_from` en las tres. Crónicas los reutiliza.
@@ -449,8 +454,8 @@ Los campos, los tipos de relación y sus palabras se nombran como en el esquema 
 
 - **Horeb como región.** Perspicacia «Horeb» pone Mal 4:4, Dt 1:6, 19; 4:10, 15; 5:2; 9:8; 18:16; 29:1 y Sl 106:19 entre los pasajes en que el nombre designa la región del Sinaí. Mal 4:4, Dt 18:16 y 29:1 usan `desierto-de-sinai`; los tramos Dt 1:6-8, 1:19-21, 4:9-14, 4:15-24, 5:2-5 y Sl 106:19-23 usan `monte-sinai`, porque sus sucesos pasan en el monte. Quien los reabra decide si añade `desierto-de-sinai` a sus `mentions`.
 
-## Para Hechos y 2 Tesalonicenses (desde 1 Tesalonicenses)
+## Para Hechos (desde 1 Tesalonicenses)
 
 - **Jasón, anfitrión.** `pablo/tie/jason`, con la palabra `host` y c. 50, nace de la nota de 1Te 1:6 y de Perspicacia «Tesalónica» y «Jasón», y cita solo `1-tesalonicenses-1`. Lo dice el texto de Hechos, así que va con `inferred: false`, pero su `reason` nombra Hechos sin capítulo, porque citar Hch 17:7 obliga a ponerla en un tramo de Hechos 17, que está cerrado. Si se reabre Hch 17:5-9, el tramo añade `hch-17` a sus fuentes, «Hch 17:7» a su `reason` y la pone en `entities`; Perspicacia «Jasón» dice que acogió también a Silas, así que puede crear `silas/tie/jason` con la misma palabra.
-- **La primera carta y lo que va antes.** `primera-carta-de-pablo` lleva ahora el orden 1806 de la serie `hechos`, tras `crispo-cree` (Hch 18:5), y dice que probablemente es su primera carta (nota de 1Te 2:13). Antes van `pablo-intenta-volver-a-tesalonica` (1713, 1Te 2:17, 18) y `pablo-envia-a-timoteo-a-tesalonica` (1716, 1Te 3:1-5: al empezar la espera de Atenas, porque ninguna fuente lo ordena frente al Areópago, que es 1722). El suceso de 2 Tesalonicenses va después de 1806.
+- **La primera carta y lo que va antes.** `primera-carta-de-pablo` lleva ahora el orden 1806 de la serie `hechos`, tras `crispo-cree` (Hch 18:5), y dice que probablemente es su primera carta (nota de 1Te 2:13). Antes van `pablo-intenta-volver-a-tesalonica` (1713, 1Te 2:17, 18) y `pablo-envia-a-timoteo-a-tesalonica` (1716, 1Te 3:1-5: al empezar la espera de Atenas, porque ninguna fuente lo ordena frente al Areópago, que es 1722).
 - **Filipos en 1Te 2:2.** Va en `mentions`: `filipos` lleva bloque `en` y `validate.py` no le deja citar `1-tesalonicenses-2` mientras el libro no tenga el suyo en `data/books.yaml`. Cuando lo tenga, el tramo 1-2 puede pasarla a `entities`.
