@@ -1,0 +1,44 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: pablo-deja-a-trofimo-enfermo-en-mileto
+title: Pablo deja a Trófimo enfermo en Mileto
+date:
+  from: 61
+  to: 65
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'dentro de c. 61-65 e.c. (tiempo narrativo: orden incierto, fecha aproximada)'
+narrative_order:
+  series: hechos
+  order: 2853
+places:
+- mileto
+people:
+- pablo
+- trofimo
+present:
+- pablo
+- trofimo
+passages:
+- 2Ti 4:20
+summary: Trófimo vuelve a viajar con Pablo después de su primer encierro, pero en Mileto, cerca de su Éfeso natal, cae enfermo
+  y Pablo tiene que seguir sin él.
+reason: '2Ti 4:20. Perspicacia «Trófimo» y «Mileto»: tras el primer encierro, en un momento que no se dice, Pablo volvió a
+  Mileto y dejó allí a Trófimo. Antes del encierro de c. 65.'
+sources:
+- 2-timoteo-4
+- it-trofimo
+- it-mileto
+- nota-hechos-28
+links:
+- title: 2 Timoteo 4 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-timoteo/4/
+  type: bible
+- title: 'Perspicacia: «Trófimo»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Tr%C3%B3fimo/
+  type: perspicacia
+note: Orden 2853 de la serie hechos, antes del segundo encierro (2855). Ninguna fuente ordena esta parada frente a Troas o
+  Nicópolis.
+checked_on: '2026-10-13'
+status: pending
