@@ -1,0 +1,39 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: toah
+name: Tóah
+names:
+- name: Tóah
+perspicacia: '1200004434'
+summary: Levita cohatita, hijo de Zuf; de su línea salieron Samuel y el cantor Hemán. Perspicacia cree probable que sea Náhat
+  y Tohu.
+reason: Perspicacia «Tóah»; 1Cr 6:34, 35.
+sources:
+- it-toah
+- 1-cronicas-6
+links:
+- title: 'Perspicacia: «Tóah»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/T%C3%B3ah/
+  type: perspicacia
+relations:
+- type: same_as
+  person: tohu
+  certainty: probable
+  inferred: true
+  sources:
+  - 1-cronicas-6
+  - it-toah
+  - it-tohu
+  reason: 'Perspicacia «Tóah»: probablemente es el Tohu de la genealogía de Samuel (1Cr 6:34).'
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: zuf
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-6
+  reason: '1Cr 6:35: Tóah, «hijo de Zuf».'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

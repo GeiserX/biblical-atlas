@@ -1,0 +1,67 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: heldai-el-netofatita
+name: Heldái
+names:
+- name: Heldái
+perspicacia: 1200001967#1
+disambiguation: Heldái el netofatita, descendiente de Otniel y jefe del duodécimo turno de David; no el Heldái que volvió
+  de Babilonia con plata y oro.
+distinct_from:
+- heldai-de-la-corona
+summary: Netofatita de la familia de Otniel, al frente de la división del duodécimo mes del rey David. Perspicacia cree que
+  bien puede ser Héleb, uno de los treinta guerreros.
+reason: Perspicacia «Heldai», núm. 1, y «Otniel»; 1Cr 27:15.
+sources:
+- it-heldai
+- it-otniel
+- 1-cronicas-27
+links:
+- title: 'Perspicacia: «Heldai»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Heldai/
+  type: perspicacia
+- title: 'Perspicacia: «Otniel»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Otniel/
+  type: perspicacia
+relations:
+- type: same_as
+  person: heleb
+  certainty: probable
+  inferred: true
+  sources:
+  - it-heldai
+  - 1-cronicas-27
+  reason: 'Perspicacia «Heldai», núm. 1: por ser netofatita, bien puede ser Héleb, el hijo de Baaná el netofatita (1Cr 27:15).'
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: otniel
+  word: ancestor
+  inferred: true
+  sources:
+  - 1-cronicas-27
+  - it-otniel
+  - it-heldai
+  reason: 1Cr 27:15 lo hace de Otniel; Perspicacia «Otniel» dice que de la familia de su hijo Hatat salió el jefe de este
+    turno.
+  checked_on: '2026-10-12'
+  status: verified
+- type: lived_in
+  place: netofa
+  inferred: false
+  sources:
+  - 1-cronicas-27
+  - it-heldai
+  reason: '1Cr 27:15: Heldái el netofatita.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: tie
+  person: david
+  word: master
+  inferred: false
+  sources:
+  - 1-cronicas-27
+  reason: '1Cr 27:15: mandaba la división del duodécimo mes.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

@@ -1,0 +1,42 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: zebadias-descendiente-de-berias
+name: Zebadías
+names:
+- name: Zebadías
+perspicacia: 1200004670#1
+disambiguation: Zebadías de la casa de Berías; no el de la casa de Elpaal, el sobrino de Joab ni los demás Zebadías.
+distinct_from:
+- zebadias-descendiente-de-elpaal
+- zebadias-hijo-de-meselemias
+- zebadias-hijo-de-asahel
+- zebadias-hijo-de-jeroham
+summary: Benjamita, hijo o descendiente de Berías, jefe de familia en Jerusalén.
+reason: Perspicacia «Zebadías», núm. 1; 1Cr 8:15, 16, 28.
+sources:
+- it-zebadias
+- 1-cronicas-8
+links:
+- title: 'Perspicacia: «Zebadías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zebad%C3%ADas/
+  type: perspicacia
+relations:
+- type: kin
+  person: berias-hijo-de-elpaal
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  - it-zebadias
+  reason: 1Cr 8:16 lo pone entre los hijos de Berías; Perspicacia «Zebadías» no precisa si era hijo o descendiente.
+  checked_on: '2026-10-12'
+  status: verified
+- type: lived_in
+  place: jerusalen
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  reason: '1Cr 8:28: los jefes de casas paternas de esta lista vivían en Jerusalén.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

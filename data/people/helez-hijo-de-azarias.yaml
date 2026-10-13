@@ -1,0 +1,30 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: helez-hijo-de-azarias
+name: Hélez
+names:
+- name: Hélez
+perspicacia: 1200001973#2
+summary: Descendiente de Judá, hijo de Azarías y padre de Eleasá.
+reason: Perspicacia «Hélez», núm. 2; 1Cr 2:39.
+sources:
+- it-helez
+- 1-cronicas-2
+links:
+- title: 'Perspicacia: «Hélez»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/H%C3%A9lez/
+  type: perspicacia
+relations:
+- type: kin
+  person: azarias-hijo-de-jehu
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-2
+  reason: '1Cr 2:39: Azarías fue su padre.'
+  checked_on: '2026-10-12'
+  status: verified
+disambiguation: Hélez hijo de Azarías, de la línea de Jarhá; no Hélez el paltita, uno de los guerreros de David.
+distinct_from:
+- helez-el-paltita
+checked_on: '2026-10-12'
+status: verified

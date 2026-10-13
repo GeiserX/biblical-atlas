@@ -1,0 +1,52 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: hananias-rompe-el-yugo-de-jeremias
+title: Hananías rompe en el templo el yugo de Jeremías
+date:
+  from: -613
+  to: -613
+  precision: month
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: mes de ab de 614 a.e.c.
+  detail:
+    month: ab
+narrative_order:
+  series: jeremias
+  order: 528001
+places:
+- monte-moria
+- jerusalen
+people:
+- hananias-hijo-de-azur
+- jeremias-profeta
+present:
+- hananias-hijo-de-azur
+- jeremias-profeta
+passages:
+- Jer 28:1-11
+summary: Ante sacerdotes y pueblo, Hananías anuncia que en dos años volverán Jeconías, los desterrados y los utensilios. Jeremías
+  le recuerda que al profeta de paz lo prueba el cumplimiento; Hananías le quita el yugo y lo rompe.
+reason: 'Jer 28:1: año cuarto de Sedequías, que Perspicacia «Seraya», núm. 5, fecha en 614; el quinto mes es ab. La escena
+  es en la casa de Jehová (28:1, 5), en el monte Moria. Orden por fecha.'
+sources:
+- jeremias-28
+- it-hananias
+- it-seraya
+- it-sedequias
+- si-jeremias
+- jr-5
+links:
+- title: Jeremías 28 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/28/
+  type: bible
+- title: 'Perspicacia: «Hananías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hanan%C3%ADas/
+  type: perspicacia
+history:
+- date: '2026-10-13'
+  change: 'El orden del relato pasa de 28001 a 528001: la serie sigue las fechas de los sucesos, porque el libro va por temas
+    y no en el orden en que pasaron.'
+  source: it-jeremias-libro
+checked_on: '2026-10-13'
+status: verified

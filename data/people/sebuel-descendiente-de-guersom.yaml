@@ -1,0 +1,43 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: sebuel-descendiente-de-guersom
+name: Sebuel
+names:
+- name: Sebuel
+- name: Subael
+  note: Forma de 1Cr 24:20; Perspicacia «Subael», núm. 1, la da como variante de su nombre.
+perspicacia: 1200003976#1
+disambiguation: El descendiente de Moisés (1Cr 23:16; 24:20); no Sebuel o Subael hijo de Hemán, el músico de Perspicacia «Sebuel»,
+  núm. 2.
+summary: Levita de la línea de Guersom, hijo de Moisés, que estaba al frente de esa rama. David contó su casa paterna al reorganizar
+  a los levitas.
+reason: Perspicacia «Sebuel», núm. 1, y «Subael», núm. 1; 1Cr 23:16; 24:20.
+sources:
+- it-sebuel
+- it-subael
+- 1-cronicas-23
+- 1-cronicas-24
+- 1-cronicas-26
+links:
+- title: 'Perspicacia: «Sebuel»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sebuel/
+  type: perspicacia
+- title: 'Perspicacia: «Subael»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Subael/
+  type: perspicacia
+relations:
+- type: kin
+  person: guersom-hijo-de-moises
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-23
+  - it-sebuel
+  - 1-cronicas-26
+  reason: 1Cr 23:16 lo pone al frente de los hijos de Guersom; Perspicacia «Sebuel», núm. 1, lo llama hijo o descendiente
+    de Guersom.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- sebuel-hijo-de-heman

@@ -13,6 +13,7 @@ sources:
 - lucas-3
 - ageo-1
 - ageo-2
+- 1-cronicas-3
 links:
 - title: 'Perspicacia: «Sealtiel»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sealtiel/
@@ -25,8 +26,9 @@ relations:
   sources:
   - mateo-1
   - it-sealtiel
+  - 1-cronicas-3
   reason: Mt 1:12; Perspicacia «Sealtiel».
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: born_in
   place: babilonia
@@ -48,5 +50,16 @@ relations:
   checked_on: '2026-09-29'
   word: relative
   status: verified
-checked_on: '2026-09-29'
+- type: kin
+  person: pedaya-hijo-de-joaquin
+  word: brother
+  inferred: false
+  sources:
+  - 1-cronicas-3
+  - it-pedaya
+  - it-sealtiel
+  reason: '1Cr 3:17, 18: los dos son hijos de Jeconías; Perspicacia «Pedaya», núm. 3, y «Sealtiel» los llaman hermanos.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
 status: verified

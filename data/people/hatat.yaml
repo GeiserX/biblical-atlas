@@ -1,0 +1,29 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hatat
+name: Hatat
+names:
+- name: Hatat
+perspicacia: '1200001914'
+summary: Hijo de Otniel, el hijo de Quenaz. Perspicacia «Hatat» ve probable que su madre fuera Acsá, la hija de Caleb; «Acsá»
+  solo lo da por posible.
+reason: Perspicacia «Hatat»; 1Cr 4:13.
+sources:
+- it-hatat
+- 1-cronicas-4
+links:
+- title: 'Perspicacia: «Hatat»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hatat/
+  type: perspicacia
+relations:
+- type: kin
+  person: otniel
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-4
+  - it-hatat
+  reason: '1Cr 4:13: el hijo de Otniel fue Hatat (la nota dice «los hijos»).'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

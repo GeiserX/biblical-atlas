@@ -21,6 +21,9 @@ sources:
 - genesis-49
 - exodo-1
 - lucas-3
+- 1-cronicas-2
+- 1-cronicas-4
+- 1-cronicas-5
 links:
 - title: 'Perspicacia: «Judá»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jud%C3%A1/
@@ -41,8 +44,9 @@ relations:
   - genesis-46
   - genesis-49
   - lucas-3
+  - 1-cronicas-2
   reason: 'Perspicacia «Judá», párr. 2: cuarto hijo de Jacob y su esposa Lea (Gé 29:35).'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: kin
   person: lea
@@ -75,8 +79,9 @@ relations:
   sources:
   - genesis-38
   - it-sua
+  - 1-cronicas-2
   reason: 'Gé 38:2: Judá se casa con la hija de Súa, un cananeo.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: lived_in
   place: adulam
@@ -115,5 +120,5 @@ relations:
   checked_on: '2026-09-29'
   status: verified
 perspicacia: 1200002538#1
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

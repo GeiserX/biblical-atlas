@@ -14,6 +14,7 @@ sources:
 - it-acsa
 - josue-15
 - jueces-1
+- 1-cronicas-2
 links:
 - title: 'Perspicacia: «Acsá»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Acs%C3%A1/
@@ -30,5 +31,16 @@ relations:
   reason: 'Jos 15:16, 17: Caleb la llama «mi hija» y se la da a Otniel.'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+- type: kin
+  person: caleb-hijo-de-hezron
+  word: ancestor
+  inferred: true
+  sources:
+  - 1-cronicas-2
+  - it-caleb
+  reason: 1Cr 2:49 la llama hija de Caleb; Perspicacia «Caleb» la da por hija de Caleb hijo de Jefuné y descendiente del hermano
+    de Jerahmeel.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
 status: verified

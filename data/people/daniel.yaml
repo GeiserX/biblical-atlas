@@ -51,7 +51,12 @@ relations:
   reason: 'Perspicacia «Daniel», núm. 2: sirvió en la corte de Babilonia desde su llegada hasta el tercer año de Ciro.'
   checked_on: '2026-09-28'
   status: verified
-checked_on: '2026-09-29'
+perspicacia: 1200001117#2
+history:
+- date: '2026-10-12'
+  change: 'Faltaba la clave: el profeta es Perspicacia «Daniel», núm. 2; el núm. 1 es el hijo de David que 1Cr 3:1 llama Daniel.'
+  source: it-daniel
+checked_on: '2026-10-12'
 status: verified
 distinct_from:
 - kileab

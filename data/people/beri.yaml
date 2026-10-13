@@ -1,0 +1,27 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: beri
+name: Berí
+names:
+- name: Berí
+perspicacia: '1200000652'
+summary: Aserita, hijo de Zofá y cabeza de familia.
+reason: Perspicacia «Berí»; 1Cr 7:36, 40.
+sources:
+- it-beri
+- 1-cronicas-7
+links:
+- title: 'Perspicacia: «Berí»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ber%C3%AD/
+  type: perspicacia
+relations:
+- type: kin
+  person: zofa
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-7
+  reason: 1Cr 7:36 lo cuenta entre los hijos de Zofá.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

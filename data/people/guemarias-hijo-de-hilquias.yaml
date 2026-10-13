@@ -8,19 +8,23 @@ disambiguation: El hijo de Hilquías enviado a Babilonia; no Guemarías hijo de 
   1).
 date:
   from: -616
-  to: -608
+  to: -613
   precision: range
   approx: true
   type: narrative
   chronology: tnm
-  text: 'entre 617 y 609 a.e.c. (tiempo narrativo: reinado de Sedequías, antes del último sitio)'
+  text: 'entre 617 y 614 a.e.c. (tiempo narrativo: al principio del reinado de Sedequías, quizá en su cuarto año)'
 summary: Hijo de Hilquías. Fue con Elasá a Babilonia como enviado de Sedequías ante Nabucodonosor y llevó la carta de Jeremías
   a los desterrados de 617 a.e.c.
-reason: Perspicacia «Guemarías», núm. 2; Jer 29:1-3. El texto no dice qué Hilquías era su padre.
+reason: Perspicacia «Guemarías», núm. 2; Jer 29:1-3. El texto no dice qué Hilquías era su padre. «Sedequías», núm. 4, y «Seraya»,
+  núm. 5, ponen el viaje al principio del reinado, quizá en 614.
 sources:
 - it-guemarias
 - jeremias-29
 - si-3
+- it-hilquias
+- it-sedequias
+- it-seraya
 links:
 - title: 'Perspicacia: «Guemarías»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Guemar%C3%ADas/
@@ -34,18 +38,55 @@ relations:
   word: companion
   date:
     from: -616
-    to: -608
+    to: -613
     precision: range
     approx: true
     type: narrative
     chronology: tnm
-    text: 'entre 617 y 609 a.e.c. (tiempo narrativo: reinado de Sedequías, antes del último sitio)'
+    text: 'entre 617 y 614 a.e.c. (tiempo narrativo: al principio del reinado de Sedequías, quizá en su cuarto año)'
   inferred: false
   sources:
   - jeremias-29
   - it-guemarias
+  - it-sedequias
+  - it-seraya
   reason: 'Jer 29:3: el rey envía a los dos juntos a Babilonia y la carta va en sus manos.'
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-09-30'
+- type: kin
+  person: hilquias-padre-de-guemarias
+  word: father
+  sources:
+  - jeremias-29
+  - it-hilquias
+  - it-guemarias
+  reason: Jer 29:3 lo llama Guemarías hijo de Hilquías; Perspicacia «Hilquías», núm. 6.
+  inferred: false
+  checked_on: '2026-10-12'
+  status: verified
+- type: tie
+  person: sedequias
+  word: master
+  sources:
+  - jeremias-29
+  - it-guemarias
+  reason: 'Jer 29:3: el rey Sedequías lo envía a Babilonia, ante Nabucodonosor.'
+  inferred: false
+  checked_on: '2026-10-12'
+  status: verified
+history:
+- date: '2026-10-12'
+  change: 'Fecha estrechada de 617-609 a 617-614: Perspicacia «Sedequías», núm. 4, pone el envío de Elasá y Guemarías al principio
+    del reinado, quizá en su cuarto año (614, «Seraya», núm. 5).'
+  source: it-sedequias
+- date: '2026-10-12'
+  change: La razón cita ahora Perspicacia «Sedequías», núm. 4, y «Seraya», núm. 5, que acotan el envío a 617-614, en lugar
+    del último sitio.
+  source: it-sedequias
+- date: '2026-10-12'
+  change: La relación accompanies con Elasá toma la fecha 617-614 del viaje.
+  source: it-sedequias
+checked_on: '2026-10-12'
 status: verified
+distinct_from:
+- guemarias-hijo-de-safan

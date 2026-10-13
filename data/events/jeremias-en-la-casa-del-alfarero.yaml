@@ -1,0 +1,47 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jeremias-en-la-casa-del-alfarero
+title: Jeremías ve trabajar al alfarero y avisa a Judá
+date:
+  from: -646
+  to: -606
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 647 y 607 a.e.c. (tiempo narrativo: durante la obra de Jeremías en Judá, antes de caer Jerusalén)'
+places:
+- jerusalen
+- juda
+people:
+- jeremias-profeta
+present: []
+passages:
+- Jer 18:1-23
+summary: En casa de un alfarero, Jeremías aprende que Jehová puede rehacer o destruir a una nación según su conducta. Llama
+  a Judá y Jerusalén a cambiar; ellos se niegan y traman desacreditarlo, y él pide justicia a Jehová.
+reason: 'Perspicacia «Jeremías», núm. 6, cuenta la visita (Jer 18:1-11) entre sus cuadros proféticos ante Jerusalén. Sin rey:
+  entre 647 y 607 (estudio 3). El texto no sitúa la casa, así que present va vacío.'
+sources:
+- jeremias-18
+- it-jeremias
+- it-alfarero
+- si-jeremias
+- it-jeremias-libro
+- si-3
+links:
+- title: Jeremías 18 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/18/
+  type: bible
+- title: 'Perspicacia: «Jeremías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jerem%C3%ADas/
+  type: perspicacia
+- title: 'Perspicacia: «Alfarero»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Alfarero/
+  type: perspicacia
+history:
+- date: '2026-10-13'
+  change: 'Sale de la serie jeremias (orden 18001): el capítulo no nombra rey ni da año, y el libro va por temas, así que
+    nada lo sitúa antes o después de los demás.'
+  source: it-jeremias-libro
+checked_on: '2026-10-13'
+status: verified

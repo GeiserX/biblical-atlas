@@ -1,0 +1,49 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: ebed-melec-saca-a-jeremias-de-la-cisterna
+title: Ébed-Mélec saca a Jeremías de la cisterna
+date:
+  from: -608
+  to: -606
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 609 y 607 a.e.c. (tiempo narrativo: durante el último sitio de Jerusalén)'
+narrative_order:
+  series: jeremias
+  order: 838007
+places:
+- jerusalen
+people:
+- ebed-melec
+- sedequias
+- jeremias-profeta
+present:
+- ebed-melec
+- sedequias
+- jeremias-profeta
+roles: {}
+passages:
+- Jer 38:7-13
+summary: Ébed-Mélec ruega por el profeta al rey, sentado en la Puerta de Benjamín. Con su permiso y 30 hombres, le baja trapos
+  y sogas a la cisterna y lo suben; Jeremías sigue en el Patio de la Guardia.
+reason: Jer 38:7-13; Perspicacia «Ébed-mélec», que cree que los 30 hombres iban para frenar a los príncipes. Dentro del sitio
+  de 609 a 607 (estudio 3). Orden por fecha.
+sources:
+- jeremias-38
+- it-ebed-melec
+- si-3
+links:
+- title: Jeremías 38 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/38/
+  type: bible
+- title: 'Perspicacia: «Ébed-mélec»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/%C3%89bed-m%C3%A9lec/
+  type: perspicacia
+history:
+- date: '2026-10-13'
+  change: 'El orden del relato pasa de 38007 a 838007: la serie sigue las fechas de los sucesos, porque el libro va por temas
+    y no en el orden en que pasaron.'
+  source: it-jeremias-libro
+checked_on: '2026-10-13'
+status: verified

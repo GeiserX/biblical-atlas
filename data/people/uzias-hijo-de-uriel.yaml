@@ -1,0 +1,31 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: uzias-hijo-de-uriel
+name: Uzías
+names:
+- name: Uzías
+perspicacia: 1200004535#1
+disambiguation: Uzías hijo de Uriel (1Cr 6:24); no es ninguno de los otros Uzías que numera Perspicacia «Uzías».
+distinct_from:
+- uzias
+- uzias-padre-de-jonatan
+summary: Levita cohatita, hijo de Uriel y padre de Shaúl.
+reason: Perspicacia «Uzías», núm. 1; 1Cr 6:24.
+sources:
+- it-uzias
+- 1-cronicas-6
+links:
+- title: 'Perspicacia: «Uzías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Uz%C3%ADas/
+  type: perspicacia
+relations:
+- type: kin
+  person: uriel-hijo-de-tahat
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-6
+  reason: 1Cr 6:24 lo da como hijo de Uriel.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

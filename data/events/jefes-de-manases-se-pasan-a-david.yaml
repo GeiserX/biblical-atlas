@@ -1,0 +1,50 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jefes-de-manases-se-pasan-a-david
+title: Jefes de Manasés se pasan a David camino de Ziclag
+date:
+  from: -1077
+  to: -1077
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 1078 a.e.c.
+narrative_order:
+  series: 1-cronicas
+  order: 12019
+  after: los-principes-filisteos-rechazan-a-david
+places:
+- ziclag
+people:
+- david
+- adna-de-manases
+- jozabad-de-manases-1
+- jediael-de-manases
+- miguel-de-manases
+- jozabad-de-manases-2
+- elihu-de-manases
+- ziletai-de-manases
+present:
+- david
+- adna-de-manases
+- jozabad-de-manases-1
+- jediael-de-manases
+- miguel-de-manases
+- jozabad-de-manases-2
+- elihu-de-manases
+- ziletai-de-manases
+passages:
+- 1Cr 12:19-22
+summary: Cuando los príncipes filisteos despiden a David, siete jefes de mil de Manasés dejan a Saúl y se le unen camino de
+  Ziclag. Cada día le llegan más hombres.
+reason: Perspicacia «Adnah», núm. 1, «Jozabad», núms. 2 y 3, y «David», párr. 22, los ponen con David en Ziclag. Tras el rechazo
+  de los príncipes filisteos y días antes de morir Saúl, en 1078 (Perspicacia «Jonatán», núm. 2).
+sources:
+- 1-cronicas-12
+- it-adnah
+- it-jozabad
+- it-david
+- it-jonatan
+- si-3
+checked_on: '2026-10-12'
+status: verified

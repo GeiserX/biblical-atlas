@@ -7,6 +7,7 @@ perspicacia: 1200003629#3
 disambiguation: Fundador de la familia de Elihú. No es Ram hijo de Hezrón, antepasado de David, ni el hijo de Jerahmeel.
 distinct_from:
 - ram-hijo-de-hezron
+- ram-hijo-de-jerahmeel
 summary: Hombre que dio origen a la familia de Elihú, el joven que habló a Job. La Biblia no cuenta nada más de él.
 reason: Perspicacia «Ram», núm. 3; Job 32:2.
 sources:
@@ -16,5 +17,5 @@ links:
 - title: 'Perspicacia: «Ram»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ram/
   type: perspicacia
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

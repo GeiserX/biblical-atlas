@@ -1,0 +1,39 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ozem-hijo-de-jese
+name: Ozem
+names:
+- name: Ozem
+perspicacia: 1200003353#2
+summary: Hijo de Jesé, el sexto de la lista, nacido antes que David. Era de la tribu de Judá.
+reason: Perspicacia «Ozem», núm. 2; 1Cr 2:13, 15.
+sources:
+- it-ozem
+- 1-cronicas-2
+links:
+- title: 'Perspicacia: «Ozem»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ozem/
+  type: perspicacia
+relations:
+- type: kin
+  person: jese
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-2
+  reason: 1Cr 2:13-15 lo cuenta entre los siete hijos de Jesé.
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: david
+  word: brother
+  inferred: false
+  sources:
+  - 1-cronicas-2
+  reason: '1Cr 2:13-15: hijo de Jesé nombrado antes que David, el séptimo.'
+  checked_on: '2026-10-12'
+  status: verified
+disambiguation: Ozem hijo de Jesé, hermano de David; no Ozem hijo de Jerahmeel, de otra rama de Judá.
+distinct_from:
+- ozem-hijo-de-jerahmeel
+checked_on: '2026-10-12'
+status: verified

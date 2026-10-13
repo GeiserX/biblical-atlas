@@ -10,6 +10,7 @@ reason: Perspicacia «Dedán», núm. 1; Gé 10:7.
 sources:
 - it-dedan
 - genesis-10
+- 1-cronicas-1
 links:
 - title: 'Perspicacia: «Dedán»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ded%C3%A1n/
@@ -24,10 +25,11 @@ relations:
   inferred: false
   sources:
   - genesis-10
+  - 1-cronicas-1
   reason: 'Gé 10:7: Raamá tuvo dos hijos, Seba y Dedán.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-02'
+checked_on: '2026-10-12'
 status: verified
 distinct_from:
 - dedan-hijo-de-jocsan

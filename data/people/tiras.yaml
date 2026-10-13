@@ -10,6 +10,7 @@ reason: Perspicacia «Tirás»; Gé 10:2, 5.
 sources:
 - it-tiras
 - genesis-10
+- 1-cronicas-1
 links:
 - title: 'Perspicacia: «Tirás»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Tir%C3%A1s/
@@ -24,8 +25,9 @@ relations:
   inferred: false
   sources:
   - genesis-10
+  - 1-cronicas-1
   reason: Gé 10:2 lo nombra entre los hijos de Jafet.
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

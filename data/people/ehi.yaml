@@ -11,6 +11,8 @@ sources:
 - it-ehi
 - genesis-46
 - it-ahiram
+- 1-cronicas-8
+- it-ahara
 links:
 - title: 'Perspicacia: «Ehí»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Eh%C3%AD/
@@ -41,5 +43,5 @@ relations:
     allí antes de morir Jacob.'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

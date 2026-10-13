@@ -15,6 +15,7 @@ sources:
 - 1-samuel-17
 - 1-samuel-22
 - it-mizpa
+- 1-cronicas-2
 links:
 - title: 'Perspicacia: «Jesé»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jes%C3%A9/
@@ -28,8 +29,9 @@ relations:
   - rut-4
   - mateo-1
   - lucas-3
+  - 1-cronicas-2
   reason: Rut 4:17 y 22.
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: lived_in
   place: belen
@@ -52,5 +54,5 @@ relations:
     «Mizpá, Mizpé», núm. 5.'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

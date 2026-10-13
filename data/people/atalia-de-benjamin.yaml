@@ -1,0 +1,39 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: atalia-de-benjamin
+name: Atalía
+names:
+- name: Atalía
+perspicacia: 1200000457#2
+disambiguation: Atalía el benjamita de la casa de Jeroham; no la reina Atalía, hija de Acab, ni el de días de Esdras.
+distinct_from:
+- atalia
+summary: Benjamita de la casa de Jeroham que vivía en Jerusalén.
+reason: Perspicacia «Atalía», núm. 2; 1Cr 8:26, 27, 28.
+sources:
+- it-atalia-reina
+- 1-cronicas-8
+links:
+- title: 'Perspicacia: «Atalía»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Atal%C3%ADa/
+  type: perspicacia
+relations:
+- type: kin
+  person: jeroham-padre-de-samserai
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  - it-atalia-reina
+  reason: 1Cr 8:27 lo pone entre los hijos de Jeroham; Perspicacia «Atalía» no precisa si era hijo o descendiente.
+  checked_on: '2026-10-12'
+  status: verified
+- type: lived_in
+  place: jerusalen
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  reason: '1Cr 8:28: los jefes de casas paternas de esta lista vivían en Jerusalén.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

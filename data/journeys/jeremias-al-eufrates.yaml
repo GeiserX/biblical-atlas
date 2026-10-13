@@ -24,31 +24,95 @@ sources:
 - it-jeremias
 - jeremias-13
 - si-3
-checked_on: '2026-09-30'
+- jr-4
+- mwb17-03-israel-olvido-a-jehova
+history:
+- date: '2026-10-12'
+  change: 'Jer 13:6, 7 cuenta un segundo viaje: se añaden la vuelta a Jerusalén, que deduce jw.org, y la segunda llegada al
+    Éufrates. La parada 2 ya no dice que Perspicacia sitúe el escondite al sur de Carquemis.'
+  source: jeremias-13
+checked_on: '2026-10-12'
 status: verified
 stops:
 - order: 1
   place: jerusalen
   reference: Jer 13:1-3
-  date: *id001
+  date:
+    from: -646
+    to: -606
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 647 y 607 a.e.c. (tiempo narrativo: dentro del ministerio de Jeremías)'
   note: null
-  reason: 'El texto no nombra la salida. Perspicacia («Éufrates») cuenta el viaje desde Jerusalén: regla 2a, deducción de
-    jw.org.'
+  reason: El texto no nombra la salida. «Dios nos habla mediante Jeremías», cap. 4, párr. 17, y la guía de marzo de 2017 lo
+    hacen volver a Jerusalén tras esconderlo; Perspicacia «Éufrates» mide el viaje desde allí.
   sources:
   - jeremias-13
   - it-eufrates
-  checked_on: '2026-09-30'
+  - jr-4
+  - mwb17-03-israel-olvido-a-jehova
+  checked_on: '2026-10-12'
   status: pending
 - order: 2
   place: rio-eufrates
-  reference: Jer 13:4-7
-  date: *id001
-  note: Fue dos veces, a esconderlo y a sacarlo. Perspicacia descarta la lectura Pará, junto a Anatot, y piensa en el tramo
-    del río al sur de Carquemis, a más de 500 km.
-  reason: 'Jer 13:4-7: lo esconde junto al Éufrates y vuelve allí a buscarlo. Perspicacia («Éufrates») defiende que es el
-    río. Fecha narrativa del ministerio de Jeremías.'
+  reference: Jer 13:4, 5
+  date:
+    from: -646
+    to: -606
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 647 y 607 a.e.c. (tiempo narrativo: dentro del ministerio de Jeremías)'
+  note: 'Primer viaje: lo esconde en la grieta de una roca. Perspicacia descarta que sea el pueblo de Pará, junto a Anatot;
+    solo calcula más de 500 km hasta el punto más próximo del río, al sur de Carquemis.'
+  reason: 'Jer 13:4, 5: va al Éufrates y esconde allí el cinturón. Perspicacia «Éufrates» defiende que es el río. Fecha narrativa
+    de la obra de Jeremías.'
   sources:
   - jeremias-13
   - it-eufrates
-  checked_on: '2026-09-30'
+  - jr-4
+  checked_on: '2026-10-12'
+  status: verified
+- order: 3
+  place: jerusalen
+  reference: Jer 13:6
+  date:
+    from: -646
+    to: -606
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 647 y 607 a.e.c. (tiempo narrativo: dentro del ministerio de Jeremías)'
+  note: Vuelve sin el cinturón y pasan muchos días hasta la segunda orden.
+  reason: 'El texto no cuenta la vuelta, pero 13:6 pide un segundo viaje. «Dios nos habla mediante Jeremías», cap. 4, párr.
+    17 y 18, dice que regresó a Jerusalén entre uno y otro: deducción de jw.org.'
+  sources:
+  - jeremias-13
+  - jr-4
+  - mwb17-03-israel-olvido-a-jehova
+  checked_on: '2026-10-12'
+  status: pending
+- order: 4
+  place: rio-eufrates
+  reference: Jer 13:6, 7
+  date:
+    from: -646
+    to: -606
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 647 y 607 a.e.c. (tiempo narrativo: dentro del ministerio de Jeremías)'
+  note: 'Segundo viaje: desentierra el cinturón y lo encuentra echado a perder.'
+  reason: 'Jer 13:6, 7: Jehová lo manda de nuevo al Éufrates y saca el cinturón del escondite. «Dios nos habla mediante Jeremías»,
+    cap. 4, párr. 18.'
+  sources:
+  - jeremias-13
+  - it-eufrates
+  - jr-4
+  checked_on: '2026-10-12'
   status: verified

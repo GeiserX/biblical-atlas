@@ -11,6 +11,7 @@ reason: Perspicacia «Béker», núm. 1; Gé 46:21.
 sources:
 - it-beker
 - genesis-46
+- 1-cronicas-7
 links:
 - title: 'Perspicacia: «Béker»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/B%C3%A9ker/
@@ -26,8 +27,9 @@ relations:
   sources:
   - genesis-46
   - it-beker
+  - 1-cronicas-7
   reason: 'Gé 46:21: aparece entre los hijos de Benjamín.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: lived_in
   place: egipto
@@ -38,7 +40,7 @@ relations:
     allí antes de morir Jacob.'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified
 distinct_from:
 - beker-hijo-de-efrain

@@ -1,0 +1,33 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: guedor-hijo-de-jeiel
+name: Guedor
+names:
+- name: Guedor
+perspicacia: 1200001639#1
+disambiguation: Guedor hijo de Jeiel; no los Guedor de Judá ni las ciudades de ese nombre.
+summary: Benjamita de Gabaón, hijo de Jeiel y tío abuelo del rey Saúl.
+reason: Perspicacia «Guedor», núm. 1; 1Cr 8:29-31.
+sources:
+- it-guedor
+- 1-cronicas-8
+- 1-cronicas-9
+links:
+- title: 'Perspicacia: «Guedor»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Guedor/
+  type: perspicacia
+relations:
+- type: kin
+  person: jeiel-de-gabaon
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  - 1-cronicas-9
+  reason: 1Cr 8:30, 31 lo cuenta entre los hijos de Jeiel.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- guedor-hijo-de-jered
+- guedor-hijo-de-penuel

@@ -1,0 +1,49 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jeremias-pone-a-prueba-a-los-recabitas
+title: Jeremías ofrece vino a los recabitas en el templo
+date:
+  from: -619
+  to: -617
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 620 y 618 a.e.c. (tiempo narrativo: al final del reinado de Jehoiaquim, tras el primer ataque babilonio)'
+narrative_order:
+  series: jeremias
+  order: 335001
+  after: jehoiaquim-vasallo-de-babilonia
+places:
+- monte-moria
+- jerusalen
+people:
+- jeremias-profeta
+- jaazanias-hijo-de-jeremias
+present:
+- jeremias-profeta
+- jaazanias-hijo-de-jeremias
+passages:
+- Jer 35:1-11
+summary: 'Por orden de Jehová, Jeremías lleva a Jaazanías y a los recabitas a un comedor del templo y les pone vino. Lo rechazan:
+  Jehonadab les mandó no beberlo ni construir casas; solo la invasión los trajo a Jerusalén.'
+reason: 'Jer 35:1: días de Jehoiaquim. Se refugiaron en Jerusalén en el primer ataque babilonio («Toda Escritura», libro 24,
+  párr. 26), el vasallaje de 620 (Perspicacia «Jehoiaquim»), antes del fin del reinado en 618 («Recabitas»); va tras ese suceso.'
+sources:
+- jeremias-35
+- it-recabitas
+- it-jehoiaquim
+- si-jeremias
+links:
+- title: Jeremías 35 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/35/
+  type: bible
+- title: 'Perspicacia: «Recabitas»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Recabitas/
+  type: perspicacia
+history:
+- date: '2026-10-13'
+  change: 'El orden del relato pasa de 35001 a 335001: la serie sigue las fechas de los sucesos, porque el libro va por temas
+    y no en el orden en que pasaron.'
+  source: it-jeremias-libro
+checked_on: '2026-10-13'
+status: verified

@@ -1,0 +1,28 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: zohet
+name: Zóhet
+names:
+- name: Zóhet
+perspicacia: '1200004761'
+summary: Judaíta, descendiente de Isí.
+reason: Perspicacia «Zóhet»; 1Cr 4:20.
+sources:
+- it-zohet
+- 1-cronicas-4
+links:
+- title: 'Perspicacia: «Zóhet»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Z%C3%B3het/
+  type: perspicacia
+relations:
+- type: kin
+  person: isi-padre-de-zohet
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-4
+  - it-zohet
+  reason: '1Cr 4:20: Zóhet es uno de los dos hijos de Isí.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

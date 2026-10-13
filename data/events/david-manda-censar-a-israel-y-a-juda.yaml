@@ -28,25 +28,37 @@ places:
 people:
 - david
 - joab-hijo-de-zeruya
+- satanas
 present:
 - david
 - joab-hijo-de-zeruya
 passages:
 - 2Sa 24:1-9
 - 1Cr 21:1-6
-summary: 'Incitado a contar al pueblo, David manda a Joab, que se opone, a registrar las tribus. Tras nueve meses y veinte
-  días de recorrido, Joab vuelve a Jerusalén: 800.000 guerreros en Israel y 500.000 en Judá.'
-reason: '2Sa 24:1-9. Hacia el final del reinado (Perspicacia «Inscripción» y «Gad», núm. 3): entre 1070, ya en Jerusalén,
-  y c. 1040, fin de 2 Samuel (estudio 3). El recorrido empezó en Aroer (Perspicacia «Aroer», núm. 1).'
+- 1Cr 27:23, 24
+summary: Satanás incita a David a contar al pueblo. Joab se opone, pero recorre las tribus y, tras nueve meses y veinte días,
+  vuelve a Jerusalén con las cifras, que cada relato da distintas. Leví y Benjamín quedan sin contar.
+reason: '2Sa 24:1-9; 1Cr 21:1-6, que nombra a Satanás (Perspicacia «David»). Final del reinado («Inscripción»; «Gad», núm.
+  3): entre 1070 y c. 1040 (estudio 3). Empezó en Aroer («Aroer», núm. 1).'
 sources:
 - 2-samuel-24
 - it-inscripcion
 - it-gad
 - it-aroer
 - si-3
+- 1-cronicas-21
+- it-david
 links:
 - title: 2 Samuel 24 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-samuel/24/
   type: bible
-checked_on: '2026-09-29'
+history:
+- date: '2026-10-12'
+  change: El resumen solo seguía a 2 Samuel. 1Cr 21:1 nombra a Satanás (Perspicacia «David»), 21:5 da otras cifras (1.100.000
+    y 470.000) y 21:6 deja fuera a Leví y Benjamín.
+  source: 1-cronicas-21
+- date: '2026-10-12'
+  change: La razón cita también el relato de 1 Crónicas y la fuente de quién incitó a David.
+  source: 1-cronicas-21
+checked_on: '2026-10-12'
 status: verified

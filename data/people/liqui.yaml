@@ -1,0 +1,29 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: liqui
+name: Liquí
+names:
+- name: Liquí
+- name: Liqhí
+  note: Grafía de Perspicacia.
+perspicacia: '1200002744'
+summary: Manasita, el tercero de los hijos de Semidá que da la lista.
+reason: Perspicacia «Liqhí»; 1Cr 7:14, 19.
+sources:
+- it-liqhi
+- 1-cronicas-7
+links:
+- title: 'Perspicacia: «Liqhí»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Liqh%C3%AD/
+  type: perspicacia
+relations:
+- type: kin
+  person: semida
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-7
+  reason: 1Cr 7:19 lo cuenta entre los hijos de Semidá.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

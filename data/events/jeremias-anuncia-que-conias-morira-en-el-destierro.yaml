@@ -1,0 +1,46 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jeremias-anuncia-que-conias-morira-en-el-destierro
+title: Jeremías anuncia que Conías y su madre morirán en el destierro
+date:
+  from: -617
+  to: -616
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 618 y 617 a.e.c. (tiempo narrativo: en el breve reinado de Joaquín)'
+narrative_order:
+  series: jeremias
+  order: 422024
+  after: saqueadores-contra-juda-en-dias-de-jehoiaquim
+places: []
+people:
+- jeremias-profeta
+- joaquin
+- nehusta
+present: []
+passages:
+- Jer 22:24-30
+summary: 'Aunque Conías fuera el anillo de sellar de Jehová, sería arrancado: él y su madre caerán en manos de Nabucodonosor
+  y morirán en otra tierra. Ningún descendiente suyo volverá a reinar en Judá.'
+reason: 'Jer 22:24 lo llama rey de Judá: reinó tres meses y diez días hasta rendirse en adar de 617 (Perspicacia «Joaquín»,
+  párr. 2; tabla A6-B). El texto no dice dónde habló Jeremías. Orden por fecha.'
+sources:
+- jeremias-22
+- it-joaquin
+- tnm-a6-b
+- si-jeremias
+links:
+- title: Jeremías 22 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/22/
+  type: bible
+- title: 'Perspicacia: «Joaquín»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Joaqu%C3%ADn/
+  type: perspicacia
+history:
+- date: '2026-10-13'
+  change: 'El orden del relato pasa de 22024 a 422024: la serie sigue las fechas de los sucesos, porque el libro va por temas
+    y no en el orden en que pasaron.'
+  source: it-jeremias-libro
+checked_on: '2026-10-13'
+status: verified

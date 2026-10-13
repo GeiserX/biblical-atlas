@@ -1,0 +1,58 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: dodai
+name: Dodái
+names:
+- name: Dodái
+perspicacia: '1200001204'
+summary: Ahohíta que mandaba la división del segundo mes del rey David. Perspicacia lo ve como otra posible grafía de Dodó,
+  el padre de Eleazar.
+reason: Perspicacia «Dodai» y «Dodó», núm. 2; 1Cr 27:4.
+sources:
+- it-dodai
+- it-dodo
+- it-ahoah
+- 1-cronicas-27
+links:
+- title: 'Perspicacia: «Dodai»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Dodai/
+  type: perspicacia
+- title: 'Perspicacia: «Dodó»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Dod%C3%B3/
+  type: perspicacia
+- title: 'Perspicacia: «Ahoah, Ahohí, ahohíta»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ahoah-Ahoh%C3%AD-ahoh%C3%ADta/
+  type: perspicacia
+relations:
+- type: same_as
+  person: dodo-hijo-de-ahohi
+  certainty: possible
+  inferred: true
+  sources:
+  - it-dodo
+  - it-dodai
+  - 1-cronicas-27
+  reason: 'Perspicacia «Dodó», núm. 2: Dodai quizá sea otra grafía de Dodó, que habría estado al frente de esta división representado
+    por su hijo Eleazar (1Cr 27:4).'
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: ahoah
+  word: ancestor
+  inferred: true
+  sources:
+  - 1-cronicas-27
+  - it-ahoah
+  reason: 1Cr 27:4 lo llama el ahohíta; Perspicacia «Ahoah» cuenta a los ahohítas entre sus descendientes.
+  checked_on: '2026-10-12'
+  status: verified
+- type: tie
+  person: david
+  word: master
+  inferred: false
+  sources:
+  - 1-cronicas-27
+  reason: '1Cr 27:1, 4: estaba al mando de la división que servía al rey el segundo mes.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

@@ -1,0 +1,32 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: baal-hijo-de-jeiel
+name: Baal
+names:
+- name: Baal
+perspicacia: 1200000505#1
+disambiguation: Baal hijo de Jeiel; no Baal el rubenita, de la línea de Joel.
+summary: Benjamita, el cuarto de los hijos de Jeiel de Gabaón.
+reason: Perspicacia «Baal», núm. 1; 1Cr 8:29-31.
+sources:
+- it-baal
+- 1-cronicas-8
+- 1-cronicas-9
+links:
+- title: 'Perspicacia: «Baal»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Baal/
+  type: perspicacia
+relations:
+- type: kin
+  person: jeiel-de-gabaon
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  - 1-cronicas-9
+  reason: 1Cr 8:30, 31 lo cuenta entre los hijos de Jeiel.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- baal-hijo-de-reaya

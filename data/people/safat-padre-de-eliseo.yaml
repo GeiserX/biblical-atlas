@@ -8,6 +8,9 @@ disambiguation: Padre del profeta Eliseo; no es Safat hijo de Horí, el espía d
   que registra Perspicacia.
 distinct_from:
 - safat-hijo-de-hori
+- safat-hijo-de-semaya
+- safat-el-gadita
+- safat-hijo-de-adlai
 summary: Padre del profeta Eliseo, de Abel-Meholá. Cuando Elías llamó a su hijo, Eliseo pidió despedirse de él y de su madre
   antes de seguir al profeta.
 reason: Perspicacia «Safat», núm. 3; 1Re 19:16, 19, 20; 2Re 3:11; 6:31.
@@ -34,5 +37,5 @@ relations:
     a Eliseo como sucesor», la llama ciudad natal de Eliseo.'
   checked_on: '2026-09-30'
   status: verified
-checked_on: '2026-09-30'
+checked_on: '2026-10-12'
 status: verified

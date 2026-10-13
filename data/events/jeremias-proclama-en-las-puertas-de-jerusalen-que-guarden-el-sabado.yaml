@@ -1,0 +1,46 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jeremias-proclama-en-las-puertas-de-jerusalen-que-guarden-el-sabado
+title: Jeremías proclama en las puertas de Jerusalén que se guarde el sábado
+date:
+  from: -646
+  to: -606
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 647 y 607 a.e.c. (tiempo narrativo: durante la obra de Jeremías en Judá, antes de caer Jerusalén)'
+type: speech
+places:
+- jerusalen
+people:
+- jeremias-profeta
+roles:
+  jeremias-profeta: spoke
+present:
+- jeremias-profeta
+passages:
+- Jer 17:19-27
+summary: 'Desde la puerta por la que pasaban los reyes y desde las demás puertas, Jeremías avisa a reyes y pueblo: si no santifican
+  el sábado y siguen cargando bultos por ellas, Jehová prenderá fuego a las puertas de Jerusalén.'
+reason: 'Jer 17:19 lo manda a las puertas; Perspicacia «Puerta» cita ese versículo como ejemplo de profeta que proclamaba
+  allí. Sin rey: entre 647 y 607 (estudio 3). «Toda Escritura», libro 24, párr. 15, recoge el aviso.'
+sources:
+- jeremias-17
+- it-puerta
+- si-jeremias
+- si-3
+- it-jeremias-libro
+links:
+- title: Jeremías 17 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/17/
+  type: bible
+- title: 'Perspicacia: «Puerta, paso de entrada»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Puerta-paso-de-entrada/
+  type: perspicacia
+history:
+- date: '2026-10-13'
+  change: 'Sale de la serie jeremias (orden 17019): el capítulo no nombra rey ni da año, y el libro va por temas, así que
+    nada lo sitúa antes o después de los demás.'
+  source: it-jeremias-libro
+checked_on: '2026-10-13'
+status: verified

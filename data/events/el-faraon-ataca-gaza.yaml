@@ -1,0 +1,45 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: el-faraon-ataca-gaza
+title: El faraón ataca Gaza
+date:
+  from: -646
+  to: -579
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 647 y 580 a.e.c. (tiempo narrativo: en días de Jeremías)'
+places:
+- gaza
+- egipto
+people: []
+present: []
+passages:
+- Jer 47:1
+summary: En días de Jeremías, el ejército de un faraón de Egipto ataca Gaza, la ciudad filistea del camino entre Egipto y
+  Palestina. Jeremías ya había recibido su mensaje contra los filisteos.
+reason: 'Jer 47:1 lo nombra para fechar el mensaje. Perspicacia «Gaza» y «Faraón» lo ponen en días de Jeremías, sin año ni
+  nombre: entre 647 (estudio 3) y 580 (Tabla). Nadie con ficha queda situado.'
+sources:
+- jeremias-47
+- it-gaza
+- it-faraon
+- si-3
+- tnm-tabla
+links:
+- title: Jeremías 47 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/47/
+  type: bible
+- title: 'Perspicacia: «Gaza»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Gaza/
+  type: perspicacia
+- title: 'Perspicacia: «Faraón»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Fara%C3%B3n/
+  type: perspicacia
+history:
+- date: '2026-10-13'
+  change: 'Sale de la serie jeremias (orden 47001, tras jeremias-anuncia-el-fin-de-los-filisteos): el capítulo no nombra rey
+    ni da año, y el libro va por temas, así que nada lo sitúa antes o después de los demás.'
+  source: it-jeremias-libro
+checked_on: '2026-10-13'
+status: verified

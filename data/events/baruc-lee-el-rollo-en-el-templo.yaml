@@ -1,0 +1,49 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: baruc-lee-el-rollo-en-el-templo
+title: Baruc lee el rollo de Jeremías en el templo
+date:
+  from: -623
+  to: -623
+  precision: month
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: kislev de 624 a.e.c. (noviembre-diciembre)
+  detail:
+    month: kislev
+narrative_order:
+  series: jeremias
+  order: 236008
+places:
+- monte-moria
+- jerusalen
+people:
+- baruc-hijo-de-nerias
+- micaya-hijo-de-guemarias
+present:
+- baruc-hijo-de-nerias
+- micaya-hijo-de-guemarias
+passages:
+- Jer 36:8-10
+summary: En el ayuno del noveno mes del quinto año de Jehoiaquim, Baruc lee el rollo ante el pueblo desde la sala de Guemarías,
+  en el patio superior, junto a la puerta nueva del templo.
+reason: 'Jer 36:9: noveno mes del quinto año de Jehoiaquim. Perspicacia «Baruc», núm. 1, lo pone a finales de 624, y la nota
+  de 36:22 da kislev. Micaya lo oye en la sala de su padre (36:11). Orden por fecha.'
+sources:
+- jeremias-36
+- it-baruc
+- it-micaya
+links:
+- title: Jeremías 36 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/36/
+  type: bible
+- title: 'Perspicacia: «Baruc»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Baruc/
+  type: perspicacia
+history:
+- date: '2026-10-13'
+  change: 'El orden del relato pasa de 36008 a 236008: la serie sigue las fechas de los sucesos, porque el libro va por temas
+    y no en el orden en que pasaron.'
+  source: it-jeremias-libro
+checked_on: '2026-10-13'
+status: verified

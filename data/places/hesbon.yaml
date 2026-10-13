@@ -33,6 +33,9 @@ sources:
 - jueces-11
 - isaias-15
 - isaias-16
+- jeremias-48
+- jeremias-49
+- 1-cronicas-6
 links:
 - title: 'Perspicacia: «Hesbón»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hesb%C3%B3n/
@@ -54,5 +57,5 @@ history:
   change: 'Añade que más tarde fue de Moab: Isaías y Jeremías la nombran en sus profecías contra Moab (Perspicacia «Hesbón»,
     párr. 4).'
   source: isaias-15
-checked_on: '2026-09-30'
+checked_on: '2026-10-12'
 status: verified

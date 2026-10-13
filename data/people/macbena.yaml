@@ -1,0 +1,28 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: macbena
+name: Macbená
+names:
+- name: Macbená
+perspicacia: '1200002817'
+summary: Descendiente de Caleb y de su concubina Maacá; Sevá fue su padre. Algunos creen que era una población fundada por
+  Sevá.
+reason: Perspicacia «Macbená»; 1Cr 2:49.
+sources:
+- it-macbena
+- 1-cronicas-2
+links:
+- title: 'Perspicacia: «Macbená»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Macben%C3%A1/
+  type: perspicacia
+relations:
+- type: kin
+  person: seva-hijo-de-caleb
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-2
+  reason: '1Cr 2:49: Sevá, el padre de Macbená y Guibeá.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

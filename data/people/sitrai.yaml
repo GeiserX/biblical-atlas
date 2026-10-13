@@ -1,0 +1,41 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: sitrai
+name: Sitrái
+names:
+- name: Sitrái
+perspicacia: '1200004070'
+summary: Saronita que cuidaba las vacas que el rey David tenía pastando en la llanura de Sarón.
+reason: Perspicacia «Sitrai» y «Saronita»; 1Cr 27:29.
+sources:
+- it-sitrai
+- it-saronita
+- 1-cronicas-27
+links:
+- title: 'Perspicacia: «Sitrai»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sitrai/
+  type: perspicacia
+- title: 'Perspicacia: «Saronita»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Saronita/
+  type: perspicacia
+relations:
+- type: tie
+  person: david
+  word: master
+  inferred: false
+  sources:
+  - 1-cronicas-27
+  reason: '1Cr 27:29, 31: cuidaba las vacas de Sarón; era uno de los que administraban la hacienda del rey.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: lived_in
+  place: llanura-de-saron
+  inferred: true
+  sources:
+  - 1-cronicas-27
+  - it-sitrai
+  - it-saronita
+  reason: 1Cr 27:29 lo llama el saronita; Perspicacia «Sitrai» lo hace natural de Sarón.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

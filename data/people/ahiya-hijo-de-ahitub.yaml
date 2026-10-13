@@ -40,9 +40,13 @@ relations:
     en Siló mientras reinaba Saúl.
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-30'
+checked_on: '2026-10-12'
 status: verified
 distinct_from:
 - ahiya-hijo-de-sisa
 - ahiya-profeta
 - ahiya-padre-de-baasa
+- ahiya-hijo-de-jerahmeel
+- ahiya-de-benjamin
+- ahiya-el-pelonita
+- ahiya-tesorero

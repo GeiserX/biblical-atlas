@@ -1,0 +1,28 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: leca
+name: Lecá
+names:
+- name: Lecá
+perspicacia: '1200002709'
+summary: Probablemente un descendiente de Judá por Er, hijo de Selá; hay quien cree que Lecá era una población.
+reason: Perspicacia «Lecá»; 1Cr 4:21.
+sources:
+- it-leca
+- 1-cronicas-4
+links:
+- title: 'Perspicacia: «Lecá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Lec%C3%A1/
+  type: perspicacia
+relations:
+- type: kin
+  person: er-hijo-de-sela
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-4
+  - it-leca
+  reason: '1Cr 4:21: Er, el padre de Lecá.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

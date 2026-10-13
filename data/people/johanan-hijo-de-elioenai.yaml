@@ -1,0 +1,35 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: johanan-hijo-de-elioenai
+name: Johanán
+names:
+- name: Johanán
+perspicacia: 1200002488#8
+disambiguation: Johanán hijo de Elioenái (núm. 8 de Perspicacia); no el primogénito de Josías ni el hijo de Caréah.
+summary: Hijo de Elioenái, en la lista de la casa de David que llega hasta los descendientes de Zorobabel.
+reason: Perspicacia «Johanán»; 1Cr 3:24.
+sources:
+- it-johanan
+- 1-cronicas-3
+links:
+- title: 'Perspicacia: «Johanán»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Johan%C3%A1n/
+  type: perspicacia
+relations:
+- type: kin
+  person: elioenai-hijo-de-nearias
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-3
+  - it-johanan
+  reason: '1Cr 3:24: uno de los siete hijos de Elioenái.'
+  checked_on: '2026-10-12'
+  status: verified
+distinct_from:
+- johanan-hijo-de-carea
+- johanan-hijo-de-josias
+- johanan-el-benjaminita
+- johanan-el-gadita
+- johanan-hijo-de-azarias
+checked_on: '2026-10-12'
+status: verified

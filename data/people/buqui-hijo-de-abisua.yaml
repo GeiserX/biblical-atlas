@@ -1,0 +1,31 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: buqui-hijo-de-abisua
+name: Buquí
+names:
+- name: Buquí
+perspicacia: 1200000834#2
+disambiguation: Buquí hijo de Abisúa (1Cr 6:5, 51); no es ninguno de los otros Buquí que numera Perspicacia «Buquí».
+distinct_from:
+- buqui-hijo-de-jogli
+summary: Sacerdote de la línea de Eleazar y Finehás, hijo de Abisúa y padre de Uzí, antepasado de Esdras. Perspicacia cree
+  posible que fuera sumo sacerdote en tiempos de los jueces.
+reason: Perspicacia «Buquí», núm. 2; 1Cr 6:5, 51.
+sources:
+- it-buqui
+- 1-cronicas-6
+links:
+- title: 'Perspicacia: «Buquí»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Buqu%C3%AD/
+  type: perspicacia
+relations:
+- type: kin
+  person: abisua-hijo-de-finehas
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-6
+  reason: 1Cr 6:5 lo da como hijo de Abisúa.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

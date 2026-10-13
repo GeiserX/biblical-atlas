@@ -1,0 +1,35 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: johanan-el-benjaminita
+name: Johanán
+names:
+- name: Johanán
+perspicacia: 1200002488#1
+disambiguation: Johanán el benjaminita, con David en Ziclag (1Cr 12:4); no el gadita de 1Cr 12:12, el hijo de Caréah ni el
+  sumo sacerdote.
+distinct_from:
+- johanan-el-gadita
+- johanan-hijo-de-carea
+- johanan-hijo-de-elioenai
+- johanan-hijo-de-josias
+- johanan-hijo-de-azarias
+summary: Benjaminita fornido que manejaba las armas con las dos manos; acudió a Ziclag para apoyar a David.
+reason: Perspicacia «Johanán», núm. 1; 1Cr 12:4.
+sources:
+- it-johanan
+- 1-cronicas-12
+links:
+- title: 'Perspicacia: «Johanán»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Johan%C3%A1n/
+  type: perspicacia
+relations:
+- type: tie
+  person: david
+  word: master
+  inferred: false
+  sources:
+  - 1-cronicas-12
+  reason: '1Cr 12:4: se unió a David y lo apoyó en la guerra.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

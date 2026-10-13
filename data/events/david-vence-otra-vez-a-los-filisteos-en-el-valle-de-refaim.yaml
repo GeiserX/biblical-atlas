@@ -18,13 +18,14 @@ places:
 - valle-de-refaim
 - gueba
 - guezer
+- gabaon
 people:
 - david
 passages:
 - 2Sa 5:22-25
 - 1Cr 14:13-17
 summary: Los filisteos vuelven al valle de Refaím. Jehová manda a David rodearlos y atacar por detrás, junto a los arbustos
-  bacá, cuando oiga pasos en las copas. David los derrota desde Gueba hasta Guézer.
+  bacá, cuando oiga pasos en las copas. David los derrota desde Gueba (Gabaón en 1Cr 14:16) hasta Guézer.
 reason: 'Perspicacia «David», párr. 22: un enfrentamiento posterior al de Baal-Perazim, con otra estrategia; «Guézer»: David
   venció a los filisteos de Gueba a Guézer.'
 sources:
@@ -33,6 +34,8 @@ sources:
 - it-david
 - it-guezer
 - it-baal-perazim
+- 1-cronicas-14
+- it-gabaon
 links:
 - title: 'Perspicacia: «David»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/David/
@@ -40,5 +43,10 @@ links:
 - title: 2 Samuel 5 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-samuel/5/
   type: bible
-checked_on: '2026-09-29'
+history:
+- date: '2026-10-12'
+  change: 1Cr 14:16 pone el comienzo de la persecución en Gabaón, donde 2Sa 5:25 dice Gueba; Perspicacia «Baal-perazim» y
+    «Gabaón» leen la huida hacia Gabaón. Se añade Gabaón a los lugares.
+  source: 1-cronicas-14
+checked_on: '2026-10-12'
 status: verified

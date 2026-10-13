@@ -1,0 +1,32 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: semaya-simeonita
+name: Semaya
+names:
+- name: Semaya
+perspicacia: 1200004000#1
+disambiguation: Semaya simeonita (núm. 1 de Perspicacia); no el profeta de los días de Rehoboam ni el descendiente de David
+  hijo de Secanías.
+summary: Simeonita, antepasado lejano de Zizá, que en días de Ezequías participó en la toma de los pastos de Guedor.
+reason: Perspicacia «Semaya»; 1Cr 4:34-37.
+sources:
+- it-semaya
+- 1-cronicas-4
+links:
+- title: 'Perspicacia: «Semaya»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Semaya/
+  type: perspicacia
+relations: []
+distinct_from:
+- semaya-profeta
+- semaya-hijo-de-secanias
+- semaya-hijo-de-galal
+- semaya-hijo-de-hasub
+- semaya-hijo-de-joel
+- semaya-hijo-de-netanel
+- semaya-hijo-de-obed-edom
+- semaya-jefe-de-la-casa-de-elizafan
+- semaya-de-nehelam
+- semaya-padre-de-delaya
+- semaya-padre-de-uriya
+checked_on: '2026-10-12'
+status: verified

@@ -1,0 +1,35 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hizqui
+name: Hizquí
+names:
+- name: Hizquí
+perspicacia: '1200002042'
+summary: Benjamita, uno de los hijos de Elpaal, jefe de familia en Jerusalén.
+reason: Perspicacia «Hizquí»; 1Cr 8:17, 18, 28.
+sources:
+- it-hizqui
+- 1-cronicas-8
+links:
+- title: 'Perspicacia: «Hizquí»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hizqu%C3%AD/
+  type: perspicacia
+relations:
+- type: kin
+  person: elpaal
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  reason: 1Cr 8:18 lo cuenta entre los hijos de Elpaal.
+  checked_on: '2026-10-12'
+  status: verified
+- type: lived_in
+  place: jerusalen
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  reason: '1Cr 8:28: los jefes de casas paternas de esta lista vivían en Jerusalén.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

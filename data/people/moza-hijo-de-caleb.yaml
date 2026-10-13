@@ -1,0 +1,39 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: moza-hijo-de-caleb
+name: Mozá
+names:
+- name: Mozá
+perspicacia: 1200003130#1
+summary: Judaíta, otro de los hijos que Caleb tuvo con Efá, su concubina.
+reason: Perspicacia «Mozá», núm. 1; 1Cr 2:46.
+sources:
+- it-moza
+- 1-cronicas-2
+links:
+- title: 'Perspicacia: «Mozá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Moz%C3%A1/
+  type: perspicacia
+relations:
+- type: kin
+  person: caleb-hijo-de-hezron
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-2
+  reason: '1Cr 2:46: Efá, la concubina de Caleb, lo dio a luz.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: efa-concubina-de-caleb
+  word: mother
+  inferred: false
+  sources:
+  - 1-cronicas-2
+  reason: '1Cr 2:46: Efá lo dio a luz.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+disambiguation: Mozá, hijo de Caleb con Efá; no el benjamita Mozá, hijo de Zimrí.
+distinct_from:
+- moza-hijo-de-zimri

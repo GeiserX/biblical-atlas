@@ -1,0 +1,44 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: simei-hijo-de-jedutun
+name: Simeí
+names:
+- name: Simeí
+perspicacia: 1200004047#9
+disambiguation: El hijo de Jedutún del décimo grupo de músicos (1Cr 25:3, 17); no Simeí hijo de Guerá ni los demás Simeí de
+  Perspicacia «Simeí».
+summary: Hijo de Jedutún y cabeza del décimo grupo de músicos levitas que se sorteó en días de David.
+reason: Perspicacia «Simeí», núm. 9; 1Cr 25:3, 17.
+sources:
+- it-simei
+- 1-cronicas-25
+links:
+- title: 'Perspicacia: «Simeí»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sime%C3%AD/
+  type: perspicacia
+relations:
+- type: kin
+  person: jedutun-musico
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-25
+  - it-simei
+  reason: 1Cr 25:3, 17 lo cuenta entre los hijos de Jedutún.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- sama-hijo-de-jese
+- simei-descendiente-de-ladan
+- simei-el-ramatita
+- simei-hijo-de-ela
+- simei-hijo-de-gog
+- simei-hijo-de-guera
+- simei-hijo-de-guerson
+- simei-hijo-de-jahat
+- simei-hijo-de-libni
+- simei-hijo-de-pedaya
+- simei-padre-de-jaquim
+- simei-partidario-de-david
+- simei-hijo-de-zacur

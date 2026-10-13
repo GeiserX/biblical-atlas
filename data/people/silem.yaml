@@ -3,6 +3,8 @@ id: silem
 name: Silem
 names:
 - name: Silem
+- name: Salum
+  note: Grafía de 1Cr 7:13; Perspicacia «Salum», núm. 1, remite a Silem.
 perspicacia: '1200004037'
 summary: Último de los cuatro hijos de Neftalí de la lista. Fundó la familia de los silemitas.
 reason: Perspicacia «Silem»; Gé 46:24.
@@ -10,6 +12,8 @@ sources:
 - it-silem
 - genesis-46
 - numeros-26
+- 1-cronicas-7
+- it-salum
 links:
 - title: 'Perspicacia: «Silem»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Silem/
@@ -26,8 +30,9 @@ relations:
   - genesis-46
   - it-silem
   - numeros-26
+  - 1-cronicas-7
   reason: 'Gé 46:24: aparece entre los hijos de Neftalí.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: lived_in
   place: egipto
@@ -37,5 +42,26 @@ relations:
   reason: 'Gé 46:8, 26, 27: figura en la lista de la casa de Jacob que se instaló en Egipto.'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+- type: kin
+  person: bilha
+  word: grandmother
+  inferred: false
+  sources:
+  - 1-cronicas-7
+  reason: 1Cr 7:13 llama a los hijos de Neftalí descendientes de Bilhá, madre de Neftalí.
+  checked_on: '2026-10-12'
+  status: verified
+disambiguation: Silem, el último hijo de Neftalí, al que 1Cr 7:13 llama Salum; no Salum, rey de Israel, ni Salum (Jehoacaz),
+  rey de Judá, ni el esposo de la profetisa Huldá.
+checked_on: '2026-10-12'
 status: verified
+distinct_from:
+- jehoacaz-de-juda
+- salum-de-israel
+- salum-hijo-de-ticva
+- salum-hijo-de-sadoc
+- salum-jefe-de-los-porteros
+- salum-hijo-de-shaul
+- salum-hijo-de-sismai
+- salum-padre-de-maaseya
+- salum-tio-de-jeremias

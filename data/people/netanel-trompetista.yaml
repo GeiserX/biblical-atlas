@@ -1,0 +1,33 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: netanel-trompetista
+name: Netanel
+names:
+- name: Netanel
+perspicacia: 1200003236#4
+disambiguation: El sacerdote trompetista; no Netanel hijo de Zuar, de Isacar, ni el hermano de David, ni los demás Netanel
+  de Perspicacia «Netanel».
+distinct_from:
+- netanel-hijo-de-zuar
+- netanel-hijo-de-obed-edom
+- netanel-hijo-de-jese
+- netanel-padre-de-semaya
+summary: Sacerdote que tocó la trompeta delante del Arca en la procesión que la subió a Jerusalén.
+reason: Perspicacia «Netanel», núm. 4; 1Cr 15:24.
+sources:
+- it-netanel
+- 1-cronicas-15
+links:
+- title: 'Perspicacia: «Netanel»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Netanel/
+  type: perspicacia
+relations:
+- type: holds_office
+  office: priest
+  inferred: false
+  sources:
+  - 1-cronicas-15
+  reason: 1Cr 15:24 lo cuenta entre los sacerdotes que tocaban las trompetas delante del Arca.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

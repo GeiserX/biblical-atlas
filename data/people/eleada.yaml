@@ -1,0 +1,27 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: eleada
+name: Eleadá
+names:
+- name: Eleadá
+perspicacia: '1200001284'
+summary: Efraimita, hijo de Táhat, de la línea de Sutélah.
+reason: Perspicacia «Eleadá»; 1Cr 7:20.
+sources:
+- it-eleada
+- 1-cronicas-7
+links:
+- title: 'Perspicacia: «Eleadá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Elead%C3%A1/
+  type: perspicacia
+relations:
+- type: kin
+  person: tahat-hijo-de-bered
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-7
+  reason: '1Cr 7:20: Eleadá era hijo de Táhat.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

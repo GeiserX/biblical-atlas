@@ -8,6 +8,7 @@ disambiguation: Galaad, padre del juez Jefté; no Galaad hijo de Makir, ni el ga
   Galaad.
 distinct_from:
 - galaad-hijo-de-makir
+- galaad-hijo-de-miguel
 summary: Padre de Jefté, que le nació de una mujer que había sido prostituta. Con su esposa principal tuvo otros hijos, que
   echaron a Jefté cuando él, al parecer, ya había muerto.
 reason: Perspicacia «Galaad», núm. 3, y «Jefté», párr. 2 y 3; Jue 11:1, 2.
@@ -22,5 +23,5 @@ links:
 - title: Jueces 11 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/jueces/11/
   type: bible
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

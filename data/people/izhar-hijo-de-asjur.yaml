@@ -1,0 +1,41 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: izhar-hijo-de-asjur
+name: Izhar
+names:
+- name: Izhar
+perspicacia: 1200002251#2
+disambiguation: Izhar hijo de Asjur, de Judá (núm. 2 de Perspicacia); no el levita hijo de Cohat.
+summary: Judaíta, hijo de Asjur y de Helá. Al margen del texto masorético se lee Zóhar.
+reason: Perspicacia «Izhar»; 1Cr 4:7.
+sources:
+- it-izhar
+- 1-cronicas-4
+links:
+- title: 'Perspicacia: «Izhar»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Izhar/
+  type: perspicacia
+relations:
+- type: kin
+  person: asjur
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-4
+  - it-izhar
+  reason: '1Cr 4:7: hijo de Asjur.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: hela
+  word: mother
+  inferred: false
+  sources:
+  - 1-cronicas-4
+  - it-izhar
+  reason: '1Cr 4:7: uno de los hijos de Helá.'
+  checked_on: '2026-10-12'
+  status: verified
+distinct_from:
+- izhar-hijo-de-cohat
+checked_on: '2026-10-12'
+status: verified

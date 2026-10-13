@@ -12,6 +12,7 @@ sources:
 - it-libni
 - exodo-6
 - numeros-3
+- 1-cronicas-6
 links:
 - title: 'Perspicacia: «Libní»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Libn%C3%AD/
@@ -28,8 +29,9 @@ relations:
   - exodo-6
   - it-libni
   - numeros-3
+  - 1-cronicas-6
   reason: 'Éx 6:17: primer hijo de Guersón.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: kin
   person: simei-hijo-de-guerson
@@ -38,8 +40,11 @@ relations:
   sources:
   - exodo-6
   - numeros-3
+  - 1-cronicas-6
   reason: 'Éx 6:17: Simeí es el otro hijo de Guersón.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified
+distinct_from:
+- libni-hijo-de-mahli

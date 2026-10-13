@@ -1,0 +1,33 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: amasias-hijo-de-hilquias
+name: Amasías
+names:
+- name: Amasías
+perspicacia: 1200000224#1
+disambiguation: Amasías hijo de Hilquías (1Cr 6:45); no es ninguno de los otros Amasías que numera Perspicacia «Amasías».
+distinct_from:
+- amasias
+- amasias-padre-de-josa
+- amasias-sacerdote-de-betel
+summary: Levita merarita, hijo de Hilquías y padre de Hasabías. Un descendiente suyo dirigió el canto ante el tabernáculo
+  en días de David.
+reason: Perspicacia «Amasías», núm. 1; 1Cr 6:45.
+sources:
+- it-amasias
+- 1-cronicas-6
+links:
+- title: 'Perspicacia: «Amasías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Amas%C3%ADas/
+  type: perspicacia
+relations:
+- type: kin
+  person: hilquias-hijo-de-amzi
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-6
+  reason: '1Cr 6:45: Amasías, «hijo de Hilquías».'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

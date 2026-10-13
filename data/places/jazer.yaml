@@ -39,6 +39,9 @@ sources:
 - josue-21
 - 2-samuel-24
 - isaias-16
+- jeremias-48
+- 1-cronicas-6
+- 1-cronicas-26
 links:
 - title: 'Perspicacia: «Jazer»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jazer/
@@ -49,7 +52,7 @@ links:
 - title: Números 32 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/N%C3%BAmeros/32/
   type: bible
-checked_on: '2026-10-02'
+checked_on: '2026-10-12'
 status: verified
 history:
 - date: '2026-09-30'

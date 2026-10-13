@@ -1,0 +1,27 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: equer
+name: Équer
+names:
+- name: Équer
+perspicacia: '1200001269'
+summary: Judaíta, tercer hijo de Ram; por su padre era nieto de Jerahmeel.
+reason: Perspicacia «Équer»; 1Cr 2:27.
+sources:
+- it-equer
+- 1-cronicas-2
+links:
+- title: 'Perspicacia: «Équer»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/%C3%89quer/
+  type: perspicacia
+relations:
+- type: kin
+  person: ram-hijo-de-jerahmeel
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-2
+  reason: '1Cr 2:27: hijo de Ram, el primogénito de Jerahmeel.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

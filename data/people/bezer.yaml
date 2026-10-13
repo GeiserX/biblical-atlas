@@ -1,0 +1,27 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: bezer
+name: Bézer
+names:
+- name: Bézer
+perspicacia: '1200000723#1'
+summary: Aserita, uno de los hijos de Zofá.
+reason: Perspicacia «Bézer», núm. 1; 1Cr 7:30, 36, 37.
+sources:
+- it-bezer
+- 1-cronicas-7
+links:
+- title: 'Perspicacia: «Bézer»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/B%C3%A9zer/
+  type: perspicacia
+relations:
+- type: kin
+  person: zofa
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-7
+  reason: 1Cr 7:36, 37 lo cuenta entre los hijos de Zofá.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

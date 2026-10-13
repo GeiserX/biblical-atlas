@@ -10,6 +10,7 @@ reason: Perspicacia «Itrán», núm. 1; Gé 36:26.
 sources:
 - it-itran
 - genesis-36
+- 1-cronicas-1
 links:
 - title: 'Perspicacia: «Itrán»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Itr%C3%A1n/
@@ -25,8 +26,11 @@ relations:
   sources:
   - it-itran
   - genesis-36
+  - 1-cronicas-1
   reason: 'Gé 36:26: hijo de Disón.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified
+distinct_from:
+- itran-de-aser

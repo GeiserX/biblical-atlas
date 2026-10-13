@@ -13,9 +13,23 @@ sources:
 - it-jaare-oreguim
 - it-jair
 - 2-samuel-21
+- 1-cronicas-20
 links:
 - title: 'Perspicacia: «Jaaré-oreguim»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jaar%C3%A9-oreguim/
   type: perspicacia
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified
+relations:
+- type: same_as
+  person: jair-padre-de-elhanan
+  certainty: probable
+  inferred: true
+  sources:
+  - 1-cronicas-20
+  - it-jaare-oreguim
+  - it-jair
+  reason: 1Cr 20:5 llama Jaír al padre de Elhanán, al que el relato paralelo de Samuel llama Jaaré-Oreguim. Perspicacia «Jaaré-oreguim»
+    y «Jaír», núm. 4, creen que este nombre es un error de copia.
+  checked_on: '2026-10-12'
+  status: verified

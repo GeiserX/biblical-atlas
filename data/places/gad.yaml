@@ -36,6 +36,7 @@ sources:
 - openbible-geo
 - josue-13
 - 2-samuel-24
+- jeremias-49
 links:
 - title: 'Perspicacia: «Gad»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Gad/
@@ -43,5 +44,5 @@ links:
 - title: Josué 13 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Josu%C3%A9/13/
   type: bible
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

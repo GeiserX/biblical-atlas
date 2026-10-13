@@ -24,6 +24,15 @@ sources:
 - 2-reyes-25
 - tnm-a6-b
 - mateo-1
+- jeremias-22
+- si-jeremias
+- jeremias-24
+- jeremias-27
+- jeremias-28
+- jeremias-29
+- jeremias-37
+- jeremias-52
+- 1-cronicas-3
 links:
 - title: 'Perspicacia: «Joaquín»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Joaqu%C3%ADn/
@@ -39,8 +48,14 @@ relations:
   sources:
   - it-joaquin
   - 2-reyes-24
+  - jeremias-22
+  - jeremias-24
+  - jeremias-27
+  - jeremias-28
+  - jeremias-37
+  - 1-cronicas-3
   reason: Hijo de Jehoiaquim y Nehustá (2Re 24:6, 8).
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: succeeds
   person: jehoiaquim
@@ -59,8 +74,14 @@ relations:
   - it-joaquin
   - 2-reyes-24
   - 2-reyes-25
+  - jeremias-22
+  - jeremias-24
+  - jeremias-27
+  - jeremias-28
+  - jeremias-29
+  - jeremias-52
   reason: Pasó el resto de su vida desterrado en Babilonia (2Re 24:15; 25:27-30).
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-12'
   status: verified
 - type: kin
   person: josias
@@ -78,16 +99,19 @@ relations:
   sources:
   - 2-reyes-24
   - it-nehusta
+  - jeremias-22
   reason: '2Re 24:8: su madre se llamaba Nehustá.'
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-12'
   status: verified
 - type: lived_in
   place: jerusalen
   inferred: false
   sources:
   - 2-reyes-24
+  - jeremias-24
+  - jeremias-29
   reason: '2Re 24:8: reinó tres meses en Jerusalén.'
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-12'
   status: verified
 - type: tie
   person: nabucodonosor-ii
@@ -96,8 +120,12 @@ relations:
   sources:
   - 2-reyes-24
   - it-joaquin
+  - jeremias-22
+  - jeremias-24
+  - jeremias-27
+  - 1-cronicas-3
   reason: '2Re 24:12, 15: Nabucodonosor lo tomó cautivo y lo desterró a Babilonia.'
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-12'
   status: verified
 - type: kin
   person: sedequias
@@ -116,10 +144,22 @@ relations:
   sources:
   - 2-reyes-25
   - it-evil-merodac
+  - jeremias-52
   reason: '2Re 25:28-30: Evil-Merodac lo sacó de la prisión, le dio un trono de honor y lo sentó a su mesa el resto de su
     vida.'
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-12'
+  status: verified
+- type: died_in
+  place: babilonia
+  sources:
+  - jeremias-52
+  - jeremias-22
+  - si-jeremias
+  reason: 'Jer 52:31-34: seguía en Babilonia, a la mesa del rey, hasta el día de su muerte; Jer 22:26 lo había anunciado («Toda
+    Escritura», libro 24, párr. 18).'
+  inferred: false
+  checked_on: '2026-10-12'
   status: verified
 perspicacia: '1200002375'
-checked_on: '2026-09-30'
+checked_on: '2026-10-12'
 status: verified

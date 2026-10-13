@@ -25,19 +25,29 @@ present:
 passages:
 - 2Sa 24:18-25
 - 1Cr 21:18-30
-summary: Por orden de Gad, David sube a la era de Arauna el jebuseo. Arauna se la ofrece gratis, pero David la paga con 50
-  siclos de plata, levanta un altar, ofrece sacrificios y la epidemia se detiene.
-reason: '2Sa 24:18-25. En esa era se edificó después el templo (Perspicacia «Moria»). Hacia el final del reinado (Perspicacia
-  «Inscripción» y «Gad», núm. 3): entre 1070, ya en Jerusalén, y c. 1040, fin de 2 Samuel (estudio 3).'
+summary: 'Por orden de Gad, David sube a la era de Arauna, u Ornán, el jebuseo. No la acepta regalada: la paga, levanta un
+  altar y ofrece sacrificios; Jehová responde con fuego del cielo y la epidemia cesa.'
+reason: '2Sa 24:18-25; 1Cr 21:18-30. Perspicacia «Arauna» cree que 50 siclos de plata pagaron el sitio del altar y las reses,
+  y 600 de oro el recinto del templo. Final del reinado: entre 1070 y c. 1040 (estudio 3).'
 sources:
 - 2-samuel-24
 - it-arauna
 - it-moria
 - it-david
 - si-3
+- 1-cronicas-21
+- it-inscripcion
 links:
 - title: 2 Samuel 24 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-samuel/24/
   type: bible
-checked_on: '2026-09-29'
+history:
+- date: '2026-10-12'
+  change: 'El resumen solo seguía a 2 Samuel: se añade el fuego del cielo de 1Cr 21:26, y el precio pasa a la razón, porque
+    2Sa 24:24 y 1Cr 21:25 dan cifras distintas.'
+  source: 1-cronicas-21
+- date: '2026-10-12'
+  change: La razón cita 1 Crónicas y explica, con Perspicacia «Arauna», por qué los dos relatos dan otro precio.
+  source: 1-cronicas-21
+checked_on: '2026-10-12'
 status: verified

@@ -11,8 +11,8 @@ lon: 38.2056
 precision: zone
 coord_source: calculation
 coord_url: https://github.com/nvkelso/natural-earth-vector/blob/v5.1.2/geojson/ne_10m_rivers_lake_centerlines.geojson
-coord_note: 'Cálculo propio: mitad, sobre el cauce actual de Natural Earth, de los 122 km entre Carquemis y Tifsá. Dista 47 km
-  de Carquemis y 55 de Tifsá. Perspicacia sitúa a Jeremías al sur de Carquemis; Tifsá como final es nuestro.'
+coord_note: 'Cálculo propio: mitad, sobre el cauce actual de Natural Earth, de los 122 km entre Carquemis (a 47 km) y Tifsá
+  (a 55). Perspicacia mide el viaje de Jeremías hasta el punto del río más próximo, al sur de Carquemis.'
 summary: Cuarto brazo del río de Edén y el río más largo del suroeste de Asia, de unos 2.700 km. Nace en el este de Turquía
   y cruza Siria y Mesopotamia hasta el golfo Pérsico.
 reason: 'Perspicacia «Éufrates», párr. 2 y apartados «Afluentes y curso del río» y «Frontera; Jeremías estuvo allí»; Gé 2:14.
@@ -33,6 +33,8 @@ sources:
 - isaias-11
 - isaias-27
 - jeremias-13
+- jeremias-46
+- jeremias-51
 links:
 - title: 'Perspicacia: «Éufrates»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/%C3%89ufrates/
@@ -49,5 +51,10 @@ links:
 - title: Salmo 72 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/salmos/72/
   type: bible
-checked_on: '2026-10-02'
+history:
+- date: '2026-10-12'
+  change: 'Perspicacia «Éufrates» no pone a Jeremías al sur de Carquemis: solo mide hasta allí la distancia mínima y ve posible
+    que escondiera el cinturón donde cruzaron los babilonios.'
+  source: it-eufrates
+checked_on: '2026-10-12'
 status: verified

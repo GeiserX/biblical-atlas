@@ -1,0 +1,41 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jeremias-hijo-de-habazinias
+name: Jeremías
+names:
+- name: Jeremías
+perspicacia: 1200002421#7
+disambiguation: El recabita padre de Jaazanías; no el profeta de Anatot ni Jeremías de Libná, el abuelo de Sedequías.
+distinct_from:
+- jeremias-profeta
+- jeremias-de-libna
+- jeremias-de-manases
+- jeremias-decimo-gadita
+- jeremias-el-benjaminita
+- jeremias-quinto-gadita
+summary: Recabita, hijo de Habazinías y padre de Jaazanías, el jefe de la familia a la que el profeta Jeremías puso a prueba
+  con vino.
+reason: Perspicacia «Jeremías», núm. 7; Jer 35:3.
+sources:
+- it-jeremias
+- jeremias-35
+links:
+- title: 'Perspicacia: «Jeremías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jerem%C3%ADas/
+  type: perspicacia
+- title: Jeremías 35 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/35/
+  type: bible
+relations:
+- type: kin
+  person: habazinias
+  word: father
+  inferred: false
+  sources:
+  - jeremias-35
+  - it-jeremias
+  - it-habazinias
+  reason: Jer 35:3; Perspicacia «Jeremías», núm. 7, lo da por hijo de Habazinías.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

@@ -1,0 +1,49 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jeremias-anuncia-setenta-anos-de-servidumbre-a-babilonia
+title: Jeremías anuncia setenta años de servidumbre a Babilonia
+date:
+  from: -624
+  to: -624
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 625 a.e.c.
+narrative_order:
+  series: jeremias
+  order: 125001
+  after: nabucodonosor-rey-de-babilonia
+places:
+- juda
+- jerusalen
+- babilonia
+people:
+- jeremias-profeta
+- nabucodonosor-ii
+present: []
+passages:
+- Jer 25:1-38
+summary: Tras 23 años de avisos desoídos, Jeremías anuncia que Nabucodonosor arrasará Judá y a sus vecinos, que servirán a
+  Babilonia 70 años; después caerá Babilonia. Todas las naciones beberán la copa de la ira de Jehová.
+reason: 'Jer 25:1 lo fecha en el año cuarto de Jehoiaquim, primero de Nabucodonosor: 625 según Perspicacia «Jehoiaquim», párr.
+  4, y el estudio 3. El texto no dice dónde habló Jeremías, así que nadie queda situado. Orden por fecha.'
+sources:
+- jeremias-25
+- it-jehoiaquim
+- si-3
+- si-jeremias
+- it-nabucodonosor
+links:
+- title: Jeremías 25 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/25/
+  type: bible
+- title: 'Perspicacia: «Jehoiaquim»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jehoiaquim/
+  type: perspicacia
+history:
+- date: '2026-10-13'
+  change: 'El orden del relato pasa de 25001 a 125001: la serie sigue las fechas de los sucesos, porque el libro va por temas
+    y no en el orden en que pasaron.'
+  source: it-jeremias-libro
+checked_on: '2026-10-13'
+status: verified

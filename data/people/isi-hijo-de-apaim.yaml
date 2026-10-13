@@ -1,0 +1,32 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: isi-hijo-de-apaim
+name: Isí
+names:
+- name: Isí
+perspicacia: 1200002213#1
+summary: Hijo de Apaim y padre de Sesán, de la rama de Jerahmeel en Judá.
+reason: Perspicacia «Isí», núm. 1; 1Cr 2:31.
+sources:
+- it-isi
+- 1-cronicas-2
+links:
+- title: 'Perspicacia: «Isí»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Is%C3%AD/
+  type: perspicacia
+relations:
+- type: kin
+  person: apaim
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-2
+  reason: '1Cr 2:31: el hijo de Apaim fue Isí.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+disambiguation: Isí, hijo de Apaim, de la rama de Jerahmeel; no el padre de Zohet, ni el simeonita, ni el jefe de Manasés.
+distinct_from:
+- isi-de-manases
+- isi-padre-de-zohet
+- isi-simeonita

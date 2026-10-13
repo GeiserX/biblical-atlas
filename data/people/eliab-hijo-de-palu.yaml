@@ -49,9 +49,11 @@ history:
 - date: '2026-09-29'
   change: El otro hijo, Nemuel, lo da el propio texto (Nú 26:9), no Perspicacia.
   source: numeros-26
-checked_on: '2026-10-02'
+checked_on: '2026-10-12'
 status: verified
 distinct_from:
 - eliab-hijo-de-helon
 - eliab-hijo-de-jese
 - elihu-hijo-de-tohu
+- eliab-el-gadita
+- eliab-musico

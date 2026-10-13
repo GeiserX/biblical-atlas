@@ -22,6 +22,7 @@ sources:
 - jeremias-36
 - jeremias-43
 - jeremias-45
+- it-nerias
 links:
 - title: 'Perspicacia: «Baruc»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Baruc/
@@ -59,8 +60,10 @@ relations:
   - jeremias-36
   - jeremias-43
   - it-baruc
+  - jeremias-32
+  - jeremias-45
   reason: 'Jer 36:4 y 43:6: escribe lo que Jeremías le dicta y va con él hasta Egipto. Perspicacia lo presenta como su secretario.'
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-12'
   status: verified
 - type: lived_in
   place: egipto
@@ -71,5 +74,18 @@ relations:
   reason: 'Jer 43:6, 7: los que huyen se lo llevan con Jeremías a Egipto, hasta Tahpanhés.'
   checked_on: '2026-09-30'
   status: verified
-checked_on: '2026-09-30'
+- type: kin
+  person: nerias
+  word: father
+  sources:
+  - jeremias-32
+  - it-nerias
+  - jeremias-36
+  - jeremias-43
+  - jeremias-45
+  reason: Jer 32:12 y 16 lo llaman Baruc hijo de Nerías.
+  inferred: false
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
 status: verified

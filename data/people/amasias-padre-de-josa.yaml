@@ -1,0 +1,23 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: amasias-padre-de-josa
+name: Amasías
+names:
+- name: Amasías
+perspicacia: 1200000224#4
+disambiguation: Amasías padre de Josá, simeonita (núm. 4 de Perspicacia); no el rey de Judá ni el sacerdote de Betel.
+summary: Simeonita, padre de Josá, uno de los jefes que en días de Ezequías echaron de junto a Guedor a meunim y camitas.
+reason: Perspicacia «Amasías»; 1Cr 4:34-37.
+sources:
+- it-amasias
+- 1-cronicas-4
+links:
+- title: 'Perspicacia: «Amasías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Amas%C3%ADas/
+  type: perspicacia
+relations: []
+distinct_from:
+- amasias
+- amasias-sacerdote-de-betel
+- amasias-hijo-de-hilquias
+checked_on: '2026-10-12'
+status: verified

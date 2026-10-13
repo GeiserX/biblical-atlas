@@ -14,6 +14,8 @@ sources:
 - exodo-6
 - numeros-3
 - numeros-26
+- 1-cronicas-6
+- 1-cronicas-23
 links:
 - title: 'Perspicacia: «Guersón»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Guers%C3%B3n/
@@ -31,8 +33,10 @@ relations:
   - it-guerson
   - exodo-6
   - numeros-3
+  - 1-cronicas-6
+  - 1-cronicas-23
   reason: 'Gé 46:11: aparece entre los hijos de Leví.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: lived_in
   place: egipto
@@ -49,8 +53,10 @@ relations:
   sources:
   - exodo-6
   - numeros-3
+  - 1-cronicas-6
+  - 1-cronicas-23
   reason: 'Éx 6:16: Cohat es otro de los tres hijos de Leví.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: kin
   person: merari
@@ -59,11 +65,13 @@ relations:
   sources:
   - exodo-6
   - numeros-3
+  - 1-cronicas-6
+  - 1-cronicas-23
   reason: 'Éx 6:16: Merarí es otro de los tres hijos de Leví.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 disambiguation: Guersón hijo de Leví, llamado también Guersom; no Guersom, el primogénito de Moisés.
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified
 distinct_from:
 - guersom-hijo-de-moises

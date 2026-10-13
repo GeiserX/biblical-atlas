@@ -1,0 +1,31 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: uza-de-benjamin
+name: Uzá
+names:
+- name: Uzá
+perspicacia: 1200004530#1
+disambiguation: Uzá el benjamita de 1Cr 8:7; no Uzá hijo de Abinadab, que murió al tocar el Arca.
+distinct_from:
+- uza-hijo-de-abinadab
+- uza-hijo-de-simei
+summary: Benjamita, hermano de Ahihud, en la lista de los desterrados de Gueba.
+reason: Perspicacia «Uzá», núm. 1; 1Cr 8:1, 7.
+sources:
+- it-uza
+- 1-cronicas-8
+links:
+- title: 'Perspicacia: «Uzá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Uz%C3%A1/
+  type: perspicacia
+relations:
+- type: kin
+  person: ahihud-hermano-de-uza
+  word: brother
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  reason: '1Cr 8:7: Uzá y Ahihud eran hijos del mismo padre.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

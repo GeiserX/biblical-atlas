@@ -1,0 +1,47 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jeremias-proclama-la-maldicion-de-quienes-rompen-el-pacto
+title: Jeremías proclama la maldición sobre quienes rompen el pacto
+date:
+  from: -646
+  to: -606
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 647 y 607 a.e.c. (tiempo narrativo: durante la obra de Jeremías en Judá, antes de caer Jerusalén)'
+places:
+- juda
+- jerusalen
+people:
+- jeremias-profeta
+present: []
+passages:
+- Jer 11:1-12:17
+summary: Jehová manda a Jeremías recordar a Judá y Jerusalén el pacto dado al salir de Egipto. Por servir a Baal les vendrá
+  una calamidad; los vecinos que roban su herencia serán arrancados, y quien aprenda podrá volver.
+reason: 'Sección 11:1-12:17 de «Toda Escritura», libro 24, párr. 13. Libro ordenado por temas (Perspicacia «Jeremías, Libro
+  de»); no nombra rey: entre la comisión de 647 y la caída de 607 (estudio 3). Sin escena situada.'
+sources:
+- jeremias-11
+- jeremias-12
+- si-jeremias
+- it-jeremias-libro
+- si-3
+- w07-jeremias
+links:
+- title: Jeremías 11 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/11/
+  type: bible
+- title: Jeremías 12 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/12/
+  type: bible
+- title: 'Perspicacia: «Jeremías, Libro de»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jerem%C3%ADas-Libro-de/
+  type: perspicacia
+history:
+- date: '2026-10-13'
+  change: 'Sale de la serie jeremias (orden 11001): el capítulo no nombra rey ni da año, y el libro va por temas, así que
+    nada lo sitúa antes o después de los demás.'
+  source: it-jeremias-libro
+checked_on: '2026-10-13'
+status: verified

@@ -1,0 +1,67 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: david-pone-a-asaf-y-a-los-levitas-ante-el-arca
+title: David pone a Asaf y a los levitas a servir ante el Arca
+date:
+  from: -1069
+  to: -1069
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: después de 1070 a.e.c.
+narrative_order:
+  series: 1-cronicas
+  order: 16004
+  after: david-sube-el-arca-a-la-ciudad-de-david
+places:
+- jerusalen
+people:
+- david
+- asaf-hijo-de-berekias
+- zacarias-musico
+- jaaziel
+- semiramot-musico
+- jehiel-musico
+- matitias-musico
+- eliab-musico
+- benaya-musico
+- obed-edom-musico
+- jeiel-portero
+- benaya-trompetista
+- jahaziel-trompetista
+- obed-edom-hijo-de-jedutun
+- hosa
+present:
+- david
+- asaf-hijo-de-berekias
+- zacarias-musico
+- jaaziel
+- semiramot-musico
+- jehiel-musico
+- matitias-musico
+- eliab-musico
+- benaya-musico
+- obed-edom-musico
+- jeiel-portero
+- benaya-trompetista
+- jahaziel-trompetista
+- obed-edom-hijo-de-jedutun
+- hosa
+passages:
+- 1Cr 16:4-38
+- 1Cr 6:31, 32
+summary: Con el Arca ya en su tienda, David elige levitas para alabar a Jehová ante ella, con Asaf de jefe y dos sacerdotes
+  con trompetas. Ese día les da su primera canción de gracias y deja porteros.
+reason: El mismo día en que llegó el Arca (1Cr 16:7), que el estudio 3 pone después de 1070. Perspicacia «David» cuenta que
+  organizó porteros y músicos en la nueva ubicación del Arca (1Cr 16:1-6, 37-43).
+sources:
+- 1-cronicas-16
+- it-david
+- it-asaf
+- si-3
+links:
+- title: 1 Crónicas 16 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/1-Cr%C3%B3nicas/16/
+  type: bible
+checked_on: '2026-10-12'
+status: verified

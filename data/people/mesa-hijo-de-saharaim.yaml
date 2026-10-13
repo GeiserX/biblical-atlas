@@ -1,0 +1,40 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: mesa-hijo-de-saharaim
+name: Mesá
+names:
+- name: Mesá
+perspicacia: 1200003006#3
+disambiguation: Mesá hijo de Saharaim, benjamita; no Mesá, el rey de Moab, ni el Mesá de la línea de Caleb.
+distinct_from:
+- mesa-rey-de-moab
+- mesa-hijo-de-caleb
+summary: Benjamita, hijo de Saharaim y Hodes y cabeza de una familia.
+reason: Perspicacia «Mesá», núm. 3; 1Cr 8:1, 8-10.
+sources:
+- it-mesa
+- 1-cronicas-8
+links:
+- title: 'Perspicacia: «Mesá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Mes%C3%A1/
+  type: perspicacia
+relations:
+- type: kin
+  person: saharaim
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  reason: 1Cr 8:9, 10 lo cuenta entre los hijos de Saharaim.
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: hodes
+  word: mother
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  reason: '1Cr 8:9: su madre fue Hodes.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

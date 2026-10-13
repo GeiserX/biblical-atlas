@@ -1,0 +1,33 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: uzi-de-isacar
+name: Uzí
+names:
+- name: Uzí
+perspicacia: 1200004533#1
+disambiguation: Uzí de Isacar, de la familia de Tolá; no el benjamita de la línea de Bela ni los Uzí sacerdotes y levitas.
+distinct_from:
+- uzi-de-benjamin
+- uzi-hijo-de-micri
+- uzi-hijo-de-buqui
+summary: Isacarita de la familia de Tolá. Él y varios de sus descendientes encabezaron casas paternas de la tribu.
+reason: Perspicacia «Uzí», núm. 1; 1Cr 7:1-3.
+sources:
+- it-uzi
+- 1-cronicas-7
+links:
+- title: 'Perspicacia: «Uzí»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Uz%C3%AD/
+  type: perspicacia
+relations:
+- type: kin
+  person: tola-hijo-de-isacar
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-7
+  - it-uzi
+  reason: 1Cr 7:2 lo pone entre los hijos de Tolá; Perspicacia «Uzí» no precisa si era hijo o descendiente.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

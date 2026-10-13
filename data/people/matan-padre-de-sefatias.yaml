@@ -1,0 +1,24 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: matan-padre-de-sefatias
+name: Matán
+names:
+- name: Matán
+perspicacia: 1200002929#2
+disambiguation: El padre del príncipe Sefatías; no es Matán, el sacerdote de Baal muerto en días de Jehoiadá.
+distinct_from:
+- matan-sacerdote-de-baal
+summary: Padre de Sefatías, uno de los príncipes que se opusieron a Jeremías durante el último sitio de Jerusalén.
+reason: Perspicacia «Matán», núm. 2; Jer 38:1.
+sources:
+- it-matan
+- jeremias-38
+links:
+- title: 'Perspicacia: «Matán»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Mat%C3%A1n/
+  type: perspicacia
+- title: Jeremías 38 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/38/
+  type: bible
+relations: []
+checked_on: '2026-10-12'
+status: verified

@@ -1,0 +1,41 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: david-busca-hebronitas-capaces-en-jazer
+title: David busca hebronitas capaces en Jazer
+date:
+  from: -1036
+  to: -1036
+  precision: year
+  approx: true
+  type: derived
+  chronology: tnm
+  text: c. 1037 a.e.c. (año 40 del reinado de David)
+  note: 1Cr 26:31 lo pone en el año 40 de David, el último de su reinado, y el capítulo 23 sitúa todo el bloque cuando hace
+    rey a Salomón, que el estudio 3 fecha en 1037 a.e.c.
+narrative_order:
+  series: 1-cronicas
+  order: 26031
+places:
+- jazer
+people:
+- david
+- jerias
+present: []
+passages:
+- 1Cr 26:31, 32
+summary: En el año 40 de su reinado, David hace buscar entre los hebronitas y halla hombres capaces en Jazer de Galaad. Pone
+  a Jeriya y a 2.700 hermanos sobre rubenitas, gaditas y la media tribu de Manasés.
+reason: '1Cr 26:31, 32; Perspicacia «Jazer»: a hebronitas que vivían en Jazer se les dio la administración del este del Jordán.
+  Fecha: año 40 de David, cuando hace rey a Salomón (estudio 3, 1037 a.e.c.); por eso va tras salomon-rey.'
+sources:
+- 1-cronicas-26
+- it-jazer
+- it-jerias
+- tnm-b7
+- si-3
+history:
+- date: '2026-10-13'
+  change: 'Sin after a salomon-rey: ya va tras 1Cr 22:6-19, que lo lleva. Repetido, cada uno volvía a cerrar el tramo en esa
+    fecha y dejaba sin sitio al suceso anterior.'
+  source: 1-cronicas-26
+checked_on: '2026-10-13'
+status: pending

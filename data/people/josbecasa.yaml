@@ -1,0 +1,29 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: josbecasa
+name: Josbecasa
+names:
+- name: Josbecasa
+perspicacia: '1200002520'
+summary: Hijo de Hemán al que tocó la suerte 17; dirigió ese grupo de músicos del santuario. Perspicacia escribe su nombre
+  Josbeqasa.
+reason: Perspicacia «Josbeqasa»; 1Cr 25:4, 24.
+sources:
+- it-josbeqasa
+- 1-cronicas-25
+links:
+- title: 'Perspicacia: «Josbeqasa»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Josbeqasa/
+  type: perspicacia
+relations:
+- type: kin
+  person: heman-hijo-de-joel
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-25
+  - it-josbeqasa
+  reason: 1Cr 25:4, 24 lo cuenta entre los hijos de Hemán.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

@@ -32,6 +32,7 @@ sources:
 - deuteronomio-2
 - josue-24
 - malaquias-1
+- 1-cronicas-1
 links:
 - title: 'Perspicacia: «Esaú»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Esa%C3%BA/
@@ -49,8 +50,9 @@ relations:
   - genesis-25
   - romanos-9
   - josue-24
+  - 1-cronicas-1
   reason: 'Perspicacia «Esaú», párr. 2: primogénito de Isaac y Rebeca (Gé 25:25, 26).'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: kin
   person: rebeca
@@ -75,8 +77,9 @@ relations:
   - romanos-9
   - josue-24
   - malaquias-1
+  - 1-cronicas-1
   reason: 'Perspicacia «Esaú», párr. 2: hermano mellizo de Jacob (Gé 25:24-26).'
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-12'
   status: verified
 - type: kin
   person: judit
@@ -173,5 +176,5 @@ relations:
   checked_on: '2026-09-29'
   status: verified
 perspicacia: '1200001417'
-checked_on: '2026-09-30'
+checked_on: '2026-10-12'
 status: verified

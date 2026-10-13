@@ -1,0 +1,18 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jecutiel
+name: Jecutiel
+names:
+- name: Jecutiel
+perspicacia: '1200002410'
+summary: 'Judaíta, padre de Zanóah: antepasado de los que vivían en esa ciudad, o su fundador.'
+reason: Perspicacia «Jequtiel»; 1Cr 4:18.
+sources:
+- it-jequtiel
+- 1-cronicas-4
+links:
+- title: 'Perspicacia: «Jequtiel»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jequtiel/
+  type: perspicacia
+relations: []
+checked_on: '2026-10-12'
+status: verified

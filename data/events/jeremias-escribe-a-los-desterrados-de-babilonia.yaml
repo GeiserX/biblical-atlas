@@ -1,0 +1,60 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jeremias-escribe-a-los-desterrados-de-babilonia
+title: Jeremías escribe a los desterrados de Babilonia
+date:
+  from: -616
+  to: -613
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 617 y 614 a.e.c. (tiempo narrativo: al principio del reinado de Sedequías, quizá en su cuarto año)'
+narrative_order:
+  series: jeremias
+  order: 429001
+places:
+- jerusalen
+- babilonia
+people:
+- jeremias-profeta
+- elasa
+- guemarias-hijo-de-hilquias
+- sedequias
+- nabucodonosor-ii
+present:
+- jeremias-profeta
+- elasa
+- guemarias-hijo-de-hilquias
+- sedequias
+type: writing
+roles:
+  jeremias-profeta: wrote
+passages:
+- Jer 29:1-23
+summary: 'Por medio de Elasá y Guemarías, enviados de Sedequías ante Nabucodonosor, Jeremías manda una carta a los llevados
+  con Jeconías: que se asienten, oren por Babilonia y no crean a sus profetas; volverán al cumplirse 70 años.'
+reason: 'Jer 29:1-3: la carta sale de Jerusalén con los enviados del rey. Perspicacia «Sedequías», núm. 4, pone el envío al
+  principio de su reinado, quizá en su cuarto año, que «Seraya», núm. 5, fecha en 614. Orden por fecha.'
+sources:
+- jeremias-29
+- it-sedequias
+- it-elasa
+- it-guemarias
+- si-jeremias
+- it-jeremias-libro
+- si-3
+- it-seraya
+links:
+- title: Jeremías 29 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/29/
+  type: bible
+- title: 'Perspicacia: «Sedequías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sedequ%C3%ADas/
+  type: perspicacia
+history:
+- date: '2026-10-13'
+  change: 'El orden del relato pasa de 29001 a 429001: la serie sigue las fechas de los sucesos, porque el libro va por temas
+    y no en el orden en que pasaron.'
+  source: it-jeremias-libro
+checked_on: '2026-10-13'
+status: verified

@@ -1,0 +1,44 @@
+# biblical-atlas: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: bozra-de-moab
+name: Bozrá
+names:
+- name: Bozrá
+  note: 'Perspicacia, núm. 2: la ciudad de Moab; no es la Bozrá de Edom (bozra).'
+type: city
+lat: null
+lon: null
+precision: uncertain
+coord_source: null
+coord_url: null
+candidates:
+- name: Bézer (Umm el-ʽAmad)
+  geometry:
+    type: point
+    lat: 31.78603
+    lon: 35.90168
+  checked_on: '2026-10-12'
+  status: alternative
+  sources:
+  - it-bozra
+  - it-bezer
+  - openbible-geo
+  reason: Jer 48:21 la pone en la tierra llana, expresión que Dt 4:43 usa para Bézer; por eso algunos eruditos la creen Bézer.
+    Perspicacia solo recoge esa opinión.
+  coord_source: openbible:a8adc43
+  coord_url: https://www.openbible.info/geo/ancient/a8adc43/bozrah-2
+summary: Ciudad de Moab, en la meseta, nombrada en el juicio de Jer 48:24. No es la Bozrá de Edom. Algunos eruditos la tienen
+  por Bézer, la ciudad de refugio de Rubén.
+reason: 'Perspicacia «Bozrá», núm. 2, y «Bézer», núm. 2; Jer 48:21, 24. OpenBible: solo el punto del candidato.'
+not_claimed:
+- 'Que sea Bézer: Perspicacia solo recoge la opinión de algunos eruditos.'
+sources:
+- it-bozra
+- it-bezer
+- openbible-geo
+- jeremias-48
+links:
+- title: 'Perspicacia: «Bozrá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Bozr%C3%A1/
+  type: perspicacia
+checked_on: '2026-10-12'
+status: verified

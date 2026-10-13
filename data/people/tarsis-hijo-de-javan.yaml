@@ -11,6 +11,7 @@ reason: Perspicacia «Tarsis», núm. 1 y 4; Gé 10:4.
 sources:
 - it-tarsis
 - genesis-10
+- 1-cronicas-1
 links:
 - title: 'Perspicacia: «Tarsis»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Tarsis/
@@ -25,8 +26,11 @@ relations:
   inferred: false
   sources:
   - genesis-10
+  - 1-cronicas-1
   reason: Gé 10:4 lo nombra entre los hijos de Javán.
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified
+distinct_from:
+- tarsis-hijo-de-bilhan

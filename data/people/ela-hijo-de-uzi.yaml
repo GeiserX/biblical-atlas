@@ -1,0 +1,44 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ela-hijo-de-uzi
+name: Elá
+names:
+- name: Elá
+perspicacia: 1200001273#5
+summary: Benjamita, hijo de Uzí y nieto de Micrí, que se estableció en Jerusalén después del destierro.
+reason: Perspicacia «Elah», núm. 5; 1Cr 9:3, 8.
+sources:
+- it-elah
+- 1-cronicas-9
+links:
+- title: 'Perspicacia: «Elah»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Elah/
+  type: perspicacia
+relations:
+- type: kin
+  person: uzi-hijo-de-micri
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-9
+  reason: '1Cr 9:8: Elá, hijo de Uzí.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: lived_in
+  place: jerusalen
+  inferred: false
+  sources:
+  - 1-cronicas-9
+  - it-elah
+  reason: '1Cr 9:3, 8, 9: de los benjamitas que vivían en Jerusalén.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- ela-de-israel
+- ela-jeque-de-edom
+- ela-padre-de-hosea
+- ela-padre-de-simei
+- ela-hijo-de-caleb
+disambiguation: 'Elá, entrada núm. 5 de «Elah» en Perspicacia: benjamita hijo de Uzí. No el rey de Israel, el jeque de Edom,
+  el padre de Hosea ni el de Simeí.'

@@ -1,0 +1,47 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jeremias-encarga-a-seraya-el-libro-contra-babilonia
+title: Jeremías encarga a Seraya leer en Babilonia el libro contra ella
+date:
+  from: -613
+  to: -613
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 614 a.e.c.
+narrative_order:
+  series: jeremias
+  order: 551059
+places:
+- babilonia
+- rio-eufrates
+people:
+- jeremias-profeta
+- seraya-hijo-de-nerias
+- sedequias
+present: []
+passages:
+- Jer 51:59-64
+summary: 'Seraya, funcionario de Sedequías, va con el rey a Babilonia. Jeremías le da escrito el anuncio de la ruina de esa
+  ciudad: al llegar lo leerá en voz alta y lo hundirá en el Éufrates con una piedra atada.'
+reason: 'Jer 51:59-64, cuarto año de Sedequías; Perspicacia «Seraya», núm. 5, da 614. El texto no dice dónde recibió Seraya
+  el encargo: nadie queda situado. Orden por fecha.'
+sources:
+- jeremias-51
+- it-seraya
+- it-jeremias-libro
+- si-jeremias
+links:
+- title: Jeremías 51 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/51/
+  type: bible
+- title: 'Perspicacia: «Seraya»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Seraya/
+  type: perspicacia
+history:
+- date: '2026-10-13'
+  change: 'El orden del relato pasa de 51059 a 551059: la serie sigue las fechas de los sucesos, porque el libro va por temas
+    y no en el orden en que pasaron.'
+  source: it-jeremias-libro
+checked_on: '2026-10-13'
+status: verified

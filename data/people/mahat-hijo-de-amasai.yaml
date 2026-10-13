@@ -1,0 +1,27 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: mahat-hijo-de-amasai
+name: Máhat
+names:
+- name: Máhat
+perspicacia: 1200002845#1
+summary: Levita cohatita, hijo de Amasái y padre de Elcaná; antepasado de Samuel y de Hemán, el cantor de la casa de Jehová.
+reason: Perspicacia «Máhat», núm. 1; 1Cr 6:35.
+sources:
+- it-mahat
+- 1-cronicas-6
+links:
+- title: 'Perspicacia: «Máhat»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/M%C3%A1hat/
+  type: perspicacia
+relations:
+- type: kin
+  person: amasai-hijo-de-elcana
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-6
+  reason: '1Cr 6:35: Máhat, «hijo de Amasái».'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

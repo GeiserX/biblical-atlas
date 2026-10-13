@@ -1,0 +1,29 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: quisi
+name: Quisí
+names:
+- name: Quisí
+perspicacia: '1200002632'
+summary: Levita merarita, hijo de Abdí y padre del cantor Etán según la genealogía de los músicos de David. Perspicacia lo
+  da, al parecer, por el mismo que Cusayá.
+reason: Perspicacia «Quisí»; 1Cr 6:44; 15:17.
+sources:
+- it-quisi
+- it-qusaya
+- 1-cronicas-6
+links:
+- title: 'Perspicacia: «Quisí»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Quis%C3%AD/
+  type: perspicacia
+relations:
+- type: kin
+  person: abdi-hijo-de-maluc
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-6
+  reason: '1Cr 6:44: Quisí, «hijo de Abdí».'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

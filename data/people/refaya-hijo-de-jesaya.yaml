@@ -1,0 +1,33 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: refaya-hijo-de-jesaya
+name: Refayá
+names:
+- name: Refayá
+perspicacia: 1200003694#4
+disambiguation: Refayá de la línea de Zorobabel (núm. 4 de Perspicacia); no el simeonita hijo de Isí ni los otros Refayá.
+summary: Vivió tras el destierro y descendía de David; 1Cr 3:21 lo da como hijo de Jesayá y padre de Arnán.
+reason: Perspicacia «Refayá»; 1Cr 3:21.
+sources:
+- it-refaya
+- 1-cronicas-3
+links:
+- title: 'Perspicacia: «Refayá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Refay%C3%A1/
+  type: perspicacia
+relations:
+- type: kin
+  person: jesaya-hijo-de-hananias
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-3
+  - it-refaya
+  reason: '1Cr 3:21: el hijo de Jesayá fue Refayá (la nota dice que en hebreo es «los hijos»).'
+  checked_on: '2026-10-12'
+  status: verified
+distinct_from:
+- refaya-hijo-de-isi
+- rafa-hijo-de-binea
+- refaya-hijo-de-tola
+checked_on: '2026-10-12'
+status: verified

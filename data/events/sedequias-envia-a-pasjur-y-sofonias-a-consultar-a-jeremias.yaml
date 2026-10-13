@@ -1,0 +1,56 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: sedequias-envia-a-pasjur-y-sofonias-a-consultar-a-jeremias
+title: Sedequías envía a Pasjur y a Sofonías a consultar a Jeremías
+type: speech
+date:
+  from: -608
+  to: -606
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 609 y 607 a.e.c. (tiempo narrativo: durante el último sitio de Jerusalén)'
+narrative_order:
+  series: jeremias
+  order: 621001
+  after: sitio-de-jerusalen-609
+places:
+- jerusalen
+people:
+- jeremias-profeta
+- sedequias
+- pasjur-hijo-de-malkias
+- sofonias-hijo-de-maaseya
+- nabucodonosor-ii
+present:
+- jeremias-profeta
+- pasjur-hijo-de-malkias
+- sofonias-hijo-de-maaseya
+roles:
+  jeremias-profeta: spoke
+passages:
+- Jer 21:1-14
+summary: 'Con los caldeos ante la muralla, Sedequías pide a Jeremías una consulta a Jehová. La respuesta: Jehová luchará contra
+  la ciudad, el rey caerá en manos de Nabucodonosor y solo vivirá quien se rinda.'
+reason: Jer 21:2, 4 la ponen en el sitio que empezó en 609 y acabó en 607 (estudio 3). Perspicacia «Sedequías», núm. 4, cree
+  posible que fuera al principio; jr, cap. 2, la pone en la parte final. Orden por fecha.
+sources:
+- jeremias-21
+- si-3
+- it-sedequias
+- jr-2
+- si-jeremias
+links:
+- title: Jeremías 21 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/21/
+  type: bible
+- title: 'Perspicacia: «Sedequías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sedequ%C3%ADas/
+  type: perspicacia
+history:
+- date: '2026-10-13'
+  change: 'El orden del relato pasa de 21001 a 621001: la serie sigue las fechas de los sucesos, porque el libro va por temas
+    y no en el orden en que pasaron.'
+  source: it-jeremias-libro
+checked_on: '2026-10-13'
+status: verified

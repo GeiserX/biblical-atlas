@@ -1,0 +1,42 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: selomit-descendiente-de-izhar
+name: Selomit
+names:
+- name: Selomit
+- name: Selomot
+  note: Forma de 1Cr 24:22; Perspicacia da los dos nombres a la misma persona.
+perspicacia: 1200003994#2
+disambiguation: El izharita de 1Cr 23:18 y 24:22; no la danita Selomit hija de Dibri ni Selomot hijo de Simeí, el guersonita.
+distinct_from:
+- selomit-hija-de-dibri
+- selomot-hijo-de-simei
+- selomit-hija-de-zorobabel
+- selomot-descendiente-de-eliezer
+summary: Levita cohatita de la familia de Izhar, jefe de los izharitas cuando David organizó a los levitas.
+reason: Perspicacia «Selomit», núm. 2, y «Selomot», núm. 2; 1Cr 23:18; 24:22.
+sources:
+- it-selomit
+- it-selomot
+- 1-cronicas-23
+- 1-cronicas-24
+links:
+- title: 'Perspicacia: «Selomit»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Selomit/
+  type: perspicacia
+- title: 'Perspicacia: «Selomot»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Selomot/
+  type: perspicacia
+relations:
+- type: kin
+  person: izhar-hijo-de-cohat
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-23
+  - 1-cronicas-24
+  - it-selomit
+  reason: 1Cr 23:18 lo hace jefe de los hijos de Izhar y 24:22 lo llama izharita.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

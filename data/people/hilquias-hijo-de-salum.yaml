@@ -12,6 +12,8 @@ sources:
 - it-hilquias
 - 2-reyes-22
 - 2-reyes-23
+- 1-cronicas-6
+- 1-cronicas-9
 links:
 - title: 'Perspicacia: «Hilquías»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hilqu%C3%ADas/
@@ -34,7 +36,23 @@ relations:
   reason: 2Re 22:4, 8 lo llama sumo sacerdote.
   checked_on: '2026-09-30'
   status: verified
-checked_on: '2026-09-30'
+- type: kin
+  person: salum-hijo-de-sadoc
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-6
+  - 1-cronicas-9
+  - it-salum
+  - it-mesulam
+  reason: 1Cr 6:13 lo da como hijo de Salum.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
 status: verified
 distinct_from:
 - hilquias-padre-de-eliaquim
+- hilquias-padre-de-jeremias
+- hilquias-padre-de-guemarias
+- hilquias-hijo-de-amzi
+- hilquias-hijo-de-hosa

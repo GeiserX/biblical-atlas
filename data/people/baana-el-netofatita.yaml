@@ -10,6 +10,7 @@ reason: Perspicacia «Baanah», núm. 2; 2Sa 23:29.
 sources:
 - it-baanah
 - 2-samuel-23
+- 1-cronicas-11
 links:
 - title: 'Perspicacia: «Baanah»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Baanah/
@@ -20,10 +21,11 @@ relations:
   inferred: false
   sources:
   - 2-samuel-23
+  - 1-cronicas-11
   reason: '2Sa 23:29: Baaná el netofatita.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-09-30'
+checked_on: '2026-10-12'
 status: verified
 distinct_from:
 - baana-hijo-de-rimon

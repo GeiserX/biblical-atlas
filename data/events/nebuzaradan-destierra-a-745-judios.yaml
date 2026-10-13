@@ -1,0 +1,43 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: nebuzaradan-destierra-a-745-judios
+title: Nebuzaradán lleva al destierro a 745 judíos
+date:
+  from: -601
+  to: -601
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 602 a.e.c.
+narrative_order:
+  series: jeremias
+  order: 952030
+places:
+- babilonia
+people:
+- nebuzaradan
+present: []
+passages:
+- Jer 52:30
+summary: Unos cinco años después de la caída de Jerusalén, el jefe de la guardia de Nabucodonosor destierra a otros 745 judíos,
+  quizá de los que se habían refugiado en las tierras vecinas.
+reason: 'Jer 52:30, año 23 de Nabucodonosor; Perspicacia «Nebuzaradán» lo fecha en 602. El texto no dice de dónde salieron:
+  Babilonia es su destino y el suceso no sitúa a nadie. Orden por fecha.'
+sources:
+- jeremias-52
+- it-nebuzaradan
+- it-nabucodonosor
+links:
+- title: Jeremías 52 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/52/
+  type: bible
+- title: 'Perspicacia: «Nebuzaradán»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Nebuzarad%C3%A1n/
+  type: perspicacia
+history:
+- date: '2026-10-13'
+  change: 'El orden del relato pasa de 52030 a 952030: la serie sigue las fechas de los sucesos, porque el libro va por temas
+    y no en el orden en que pasaron.'
+  source: it-jeremias-libro
+checked_on: '2026-10-13'
+status: verified

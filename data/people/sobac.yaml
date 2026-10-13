@@ -12,6 +12,7 @@ reason: Perspicacia «Sobac»; 2Sa 10:16-18.
 sources:
 - it-sobac
 - 2-samuel-10
+- 1-cronicas-19
 links:
 - title: 'Perspicacia: «Sobac»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sobac/
@@ -27,8 +28,9 @@ relations:
   sources:
   - 2-samuel-10
   - it-sobac
+  - 1-cronicas-19
   reason: '2Sa 10:16, 18: Sobac era el jefe del ejército de Hadadézer.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: died_in
   place: helam
@@ -37,8 +39,9 @@ relations:
   - 2-samuel-10
   - it-sobac
   - it-helam
+  - 1-cronicas-19
   reason: '2Sa 10:18: David lo hiere y muere allí, en Helam.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

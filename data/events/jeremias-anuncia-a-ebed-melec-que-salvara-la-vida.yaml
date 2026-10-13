@@ -1,0 +1,50 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jeremias-anuncia-a-ebed-melec-que-salvara-la-vida
+title: Jeremías anuncia a Ébed-Mélec que salvará la vida
+date:
+  from: -608
+  to: -606
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 609 y 607 a.e.c. (tiempo narrativo: durante el último sitio de Jerusalén)'
+narrative_order:
+  series: jeremias
+  order: 839015
+  after: ebed-melec-saca-a-jeremias-de-la-cisterna
+places:
+- jerusalen
+people:
+- jeremias-profeta
+- ebed-melec
+present:
+- jeremias-profeta
+- ebed-melec
+type: speech
+roles:
+  jeremias-profeta: spoke
+passages:
+- Jer 39:15-18
+summary: 'Preso aún en el Patio de la Guardia, Jeremías recibe un mensaje para Ébed-Mélec: la calamidad caerá sobre Jerusalén,
+  pero él no morirá a espada, porque confió en Jehová.'
+reason: Jer 39:15 lo sitúa en su prisión del Patio de la Guardia, después de que Ébed-Mélec lo sacara de la cisterna (suceso
+  ebed-melec-saca-a-jeremias-de-la-cisterna) y antes de la caída de 607 (estudio 3). Perspicacia «Ébed-mélec». Orden por fecha.
+sources:
+- jeremias-39
+- it-ebed-melec
+- si-3
+links:
+- title: Jeremías 39 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/39/
+  type: bible
+- title: 'Perspicacia: «Ébed-mélec»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/%C3%89bed-m%C3%A9lec/
+  type: perspicacia
+history:
+- date: '2026-10-13'
+  change: 'El orden del relato pasa de 39015 a 839015: la serie sigue las fechas de los sucesos, porque el libro va por temas
+    y no en el orden en que pasaron.'
+  source: it-jeremias-libro
+checked_on: '2026-10-13'
+status: verified

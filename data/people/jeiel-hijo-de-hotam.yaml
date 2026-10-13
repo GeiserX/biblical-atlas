@@ -1,0 +1,43 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jeiel-hijo-de-hotam
+name: Jeiel
+names:
+- name: Jeiel
+perspicacia: 1200002406#3
+disambiguation: Jeiel hijo de Hotam, guerrero de David (1Cr 11:44); no el antepasado de Saúl en Gabaón ni los levitas de ese
+  nombre.
+distinct_from:
+- jaaziel
+- jeiel-de-gabaon
+- jeiel-portero
+- jeiel-el-rubenita
+summary: Hijo de Hotam el aroerita y hermano de Sama, ambos guerreros poderosos de David.
+reason: Perspicacia «Jeiel», núm. 3; 1Cr 11:44.
+sources:
+- it-jeiel
+- 1-cronicas-11
+links:
+- title: 'Perspicacia: «Jeiel»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jeiel/
+  type: perspicacia
+relations:
+- type: kin
+  person: hotam-el-aroerita
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-11
+  reason: '1Cr 11:44: Sama y Jeiel, hijos de Hotam el aroerita.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: tie
+  person: david
+  word: master
+  inferred: false
+  sources:
+  - 1-cronicas-11
+  reason: '1Cr 11:44: figura entre los valientes de David.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

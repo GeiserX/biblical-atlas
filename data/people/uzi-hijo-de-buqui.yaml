@@ -1,0 +1,32 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: uzi-hijo-de-buqui
+name: Uzí
+names:
+- name: Uzí
+perspicacia: 1200004533#3
+disambiguation: Uzí hijo de Buquí (1Cr 6:5, 6, 51); no es ninguno de los otros Uzí que numera Perspicacia «Uzí».
+distinct_from:
+- uzi-de-benjamin
+- uzi-de-isacar
+- uzi-hijo-de-micri
+summary: Sacerdote de la línea de Eleazar, hijo de Buquí y padre de Zerahías, antepasado de Esdras.
+reason: Perspicacia «Uzí», núm. 3; 1Cr 6:5, 6, 51.
+sources:
+- it-uzi
+- 1-cronicas-6
+links:
+- title: 'Perspicacia: «Uzí»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Uz%C3%AD/
+  type: perspicacia
+relations:
+- type: kin
+  person: buqui-hijo-de-abisua
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-6
+  reason: 1Cr 6:5 lo da como hijo de Buquí.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

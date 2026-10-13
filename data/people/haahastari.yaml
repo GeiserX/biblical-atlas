@@ -1,0 +1,38 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: haahastari
+name: Haahastarí
+names:
+- name: Haahastarí
+perspicacia: '1200001787'
+summary: Judaíta, hijo de Asjur y de Naará; su nombre parece decir «el ahastarita».
+reason: Perspicacia «Haahastarí»; 1Cr 4:6.
+sources:
+- it-haahastari
+- 1-cronicas-4
+links:
+- title: 'Perspicacia: «Haahastarí»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Haahastar%C3%AD/
+  type: perspicacia
+relations:
+- type: kin
+  person: asjur
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-4
+  - it-haahastari
+  reason: '1Cr 4:6: hijo de Asjur.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: naara
+  word: mother
+  inferred: false
+  sources:
+  - 1-cronicas-4
+  - it-haahastari
+  reason: '1Cr 4:6: uno de los hijos de Naará.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

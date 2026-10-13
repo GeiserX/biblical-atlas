@@ -1,0 +1,27 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: abdi-hijo-de-maluc
+name: Abdí
+names:
+- name: Abdí
+perspicacia: 1200000014#1
+summary: Levita merarita, hijo de Maluc y padre de Quisí. Perspicacia cree probable que viviera en días de Saúl.
+reason: Perspicacia «Abdí», núm. 1; 1Cr 6:44.
+sources:
+- it-abdi
+- 1-cronicas-6
+links:
+- title: 'Perspicacia: «Abdí»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Abd%C3%AD/
+  type: perspicacia
+relations:
+- type: kin
+  person: maluc-hijo-de-hasabias
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-6
+  reason: '1Cr 6:44: Abdí, «hijo de Maluc».'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

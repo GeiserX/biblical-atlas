@@ -1,0 +1,28 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hizquias
+name: Hizquías
+names:
+- name: Hizquías
+perspicacia: '1200002043'
+summary: Hijo de Nearías y descendiente de Salomón; su nombre es una forma breve de Ezequías.
+reason: Perspicacia «Hizquías»; 1Cr 3:23.
+sources:
+- it-hizquias
+- 1-cronicas-3
+links:
+- title: 'Perspicacia: «Hizquías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hizqu%C3%ADas/
+  type: perspicacia
+relations:
+- type: kin
+  person: nearias-hijo-de-semaya
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-3
+  - it-hizquias
+  reason: '1Cr 3:23: uno de los tres hijos de Nearías.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

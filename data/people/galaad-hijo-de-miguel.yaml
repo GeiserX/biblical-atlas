@@ -1,0 +1,31 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: galaad-hijo-de-miguel
+name: Galaad
+names:
+- name: Galaad
+perspicacia: 1200001694#2
+disambiguation: Galaad hijo de Miguel (1Cr 5:14); no es ninguno de los otros Galaad que numera Perspicacia «Galaad».
+distinct_from:
+- galaad-hijo-de-makir
+- galaad-padre-de-jefte
+summary: Gadita de la genealogía de Abihail, hijo de Miguel y padre de Jaróah.
+reason: Perspicacia «Galaad», núm. 2; 1Cr 5:14.
+sources:
+- it-galaad
+- 1-cronicas-5
+links:
+- title: 'Perspicacia: «Galaad»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Galaad/
+  type: perspicacia
+relations:
+- type: kin
+  person: miguel-hijo-de-jesisai
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-5
+  reason: 1Cr 5:14 da la línea de padre a hijo, de Buz a Abihail.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

@@ -12,6 +12,14 @@ distinct_from:
 - zacarias-de-israel
 - zacarias-abuelo-de-ezequias
 - zacarias-hijo-de-jeberekias
+- zacarias-el-rubenita
+- zacarias-hijo-de-meselemias
+- zeker
+- zacarias-musico
+- zacarias-trompetista
+- zacarias-descendiente-de-isias
+- zacarias-hijo-de-hosa
+- zacarias-padre-de-ido
 date:
   from: -897
   to: -857
@@ -63,5 +71,5 @@ relations:
     estudio.'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-30'
+checked_on: '2026-10-12'
 status: verified

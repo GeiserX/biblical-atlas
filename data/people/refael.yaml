@@ -1,0 +1,28 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: refael
+name: Refael
+names:
+- name: Refael
+perspicacia: '1200003692'
+summary: Levita, nieto de Obed-Edom por su primogénito Semaya. Con sus hermanos guardaba los almacenes al sur del santuario.
+reason: Perspicacia «Refael»; 1Cr 26:7.
+sources:
+- it-refael
+- 1-cronicas-26
+links:
+- title: 'Perspicacia: «Refael»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Refael/
+  type: perspicacia
+relations:
+- type: kin
+  person: semaya-hijo-de-obed-edom
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-26
+  - it-refael
+  reason: 1Cr 26:7 lo cuenta entre los hijos de Semaya.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

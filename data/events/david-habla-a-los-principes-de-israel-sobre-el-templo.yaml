@@ -1,0 +1,47 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: david-habla-a-los-principes-de-israel-sobre-el-templo
+title: David habla a los príncipes de Israel sobre el templo
+date:
+  from: -1036
+  to: -1036
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 1037 a.e.c.
+narrative_order:
+  series: 1-cronicas
+  order: 28001
+places:
+- jerusalen
+people:
+- david
+- salomon
+present:
+- david
+- salomon
+type: speech
+roles:
+  david: spoke
+passages:
+- 1Cr 28:1-10
+summary: David reúne en Jerusalén a los jefes de las tribus, del ejército y de la hacienda real. Les cuenta que Jehová no
+  le dejó edificar la casa y que eligió a Salomón para levantarla; luego anima a su hijo.
+reason: '1Cr 28:1-10. Perspicacia «Salomón», apartado «La exhortación de David a Salomón», junta esta asamblea con 29:1-22,
+  cuando el pueblo ungió otra vez a Salomón, ya ungido en Guihón; estudio 3, párr. 4: 1037.'
+sources:
+- 1-cronicas-28
+- it-salomon
+- it-david
+- si-3
+links:
+- title: 1 Crónicas 28 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/1-Cr%C3%B3nicas/28/
+  type: bible
+history:
+- date: '2026-10-13'
+  change: 'Sin after a salomon-rey: ya va tras 1Cr 22:6-19, que lo lleva. Repetido, cada uno volvía a cerrar el tramo en esa
+    fecha y dejaba sin sitio al suceso anterior.'
+  source: 1-cronicas-28
+checked_on: '2026-10-13'
+status: verified

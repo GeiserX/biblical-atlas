@@ -1,0 +1,30 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hodias-cunado-de-naham
+name: Hodías
+names:
+- name: Hodías
+perspicacia: 1200002051#1
+disambiguation: Hodías de Judá, cuñado de Náham (núm. 1 de Perspicacia); no los levitas de los días de Esdras y Nehemías.
+summary: Hombre de la genealogía de Judá; su esposa era hermana de Náham. Los hijos que ella tuvo dieron origen a Queilá el
+  garmita y a Estemoa el maacatita.
+reason: Perspicacia «Hodías»; 1Cr 4:19.
+sources:
+- it-hodias
+- 1-cronicas-4
+links:
+- title: 'Perspicacia: «Hodías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hod%C3%ADas/
+  type: perspicacia
+relations:
+- type: kin
+  person: naham
+  word: brother_in_law
+  inferred: false
+  sources:
+  - 1-cronicas-4
+  - it-naham
+  reason: '1Cr 4:19: la esposa de Hodías era la hermana de Náham.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

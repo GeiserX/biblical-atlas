@@ -1,0 +1,54 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: sedequias-pide-a-jeremias-que-ore-por-el-pueblo
+title: Sedequías pide a Jeremías que ore por el pueblo
+type: speech
+date:
+  from: -608
+  to: -607
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 609 y 608 a.e.c. (tiempo narrativo: en el sitio, antes de que Jeremías esté preso en el Patio de la Guardia
+    en el año décimo de Sedequías)'
+narrative_order:
+  series: jeremias
+  order: 737003
+places:
+- jerusalen
+people:
+- jeremias-profeta
+- sedequias
+- jehucal
+- sofonias-hijo-de-maaseya
+present:
+- jeremias-profeta
+- jehucal
+- sofonias-hijo-de-maaseya
+roles:
+  jeremias-profeta: spoke
+passages:
+- Jer 37:3-10
+summary: 'Mientras los caldeos se han retirado, Sedequías envía a Jehucal y al sacerdote Sofonías a pedir a Jeremías que ore.
+  La respuesta: el ejército egipcio regresará a su país y los caldeos volverán a quemar la ciudad.'
+reason: Jer 37:3-10; Perspicacia «Sedequías», núm. 4, apartado «Se rebela contra Nabucodonosor», párr. 4. Entre el inicio
+  del sitio (609, estudio 3) y la compra del campo de Hanamel (608), con Jeremías ya preso en el Patio. Orden por fecha.
+sources:
+- jeremias-37
+- it-sedequias
+- it-jehucal
+- si-3
+links:
+- title: Jeremías 37 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/37/
+  type: bible
+- title: 'Perspicacia: «Sedequías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sedequ%C3%ADas/
+  type: perspicacia
+history:
+- date: '2026-10-13'
+  change: 'El orden del relato pasa de 37003 a 737003: la serie sigue las fechas de los sucesos, porque el libro va por temas
+    y no en el orden en que pasaron.'
+  source: it-jeremias-libro
+checked_on: '2026-10-13'
+status: verified

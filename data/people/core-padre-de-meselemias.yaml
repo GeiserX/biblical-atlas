@@ -1,0 +1,59 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: core-padre-de-meselemias
+name: Coré
+names:
+- name: Coré
+- name: Qoré
+  note: Forma que da la nota de 1Cr 9:19 y título de su entrada en Perspicacia.
+perspicacia: 1200002650#1
+summary: Levita cohatita, descendiente de Coré hijo de Izhar, de cuya línea salieron porteros del santuario. La TNM lo escribe
+  Coré y su nota da Qoré.
+reason: Perspicacia «Qoré», núm. 1; 1Cr 9:19 y su nota.
+sources:
+- it-qore
+- 1-cronicas-9
+- it-core
+- 1-cronicas-26
+links:
+- title: 'Perspicacia: «Qoré»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Qor%C3%A9/
+  type: perspicacia
+relations:
+- type: kin
+  person: ebiasaf
+  word: ancestor
+  inferred: true
+  sources:
+  - 1-cronicas-9
+  - it-qore
+  reason: '1Cr 9:19: Coré (Qoré), hijo de Ebiasaf; Perspicacia «Qoré», núm. 1, dice que la lista se salta generaciones.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: core-hijo-de-izhar
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-26
+  - it-qore
+  reason: 1Cr 26:1 cuenta a su hijo entre los coreítas; Perspicacia «Qoré», núm. 1, lo llama descendiente de Coré.
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: asaf-descendiente-de-cohat
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-26
+  - it-qore
+  reason: 1Cr 26:1 lo pone entre los hijos de Asaf; Perspicacia «Qoré», núm. 1, lo repite.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- core-hijo-de-esau
+- core-hijo-de-izhar
+- core-hijo-de-hebron
+disambiguation: 'Qoré núm. 1 de Perspicacia, que la TNM escribe Coré: levita cohatita de la línea de Coré. No Coré hijo de
+  Izhar ni el hijo de Esaú.'

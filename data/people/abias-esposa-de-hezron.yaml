@@ -1,0 +1,27 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: abias-esposa-de-hezron
+name: Abías
+names:
+- name: Abías
+perspicacia: 1200000041#2
+summary: Esposa de Hezrón, nieto de Judá, según el texto masorético. Muerto Hezrón, dio a luz a Asjur.
+reason: Perspicacia «Abías», núm. 2, y «Hezrón», núm. 2; 1Cr 2:24.
+sources:
+- it-abias
+- 1-cronicas-2
+links:
+- title: 'Perspicacia: «Abías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ab%C3%ADas/
+  type: perspicacia
+relations: []
+disambiguation: Abías, esposa de Hezrón, de los días de Egipto; no Abías la madre de Ezequías ni los varones Abías, como el
+  rey de Judá o el hijo de Samuel.
+distinct_from:
+- abias-de-tiempos-de-david
+- abias-hijo-de-samuel
+- abias-de-juda
+- abias-hijo-de-jeroboan
+- abias-hija-de-zacarias
+- abias-hijo-de-beker
+checked_on: '2026-10-12'
+status: verified

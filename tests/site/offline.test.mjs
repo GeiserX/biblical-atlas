@@ -1,8 +1,9 @@
 // The site offline (site/sw.js, site/js/offline.js, docs/development.md «Sin conexión»), tested in a real headless
 // browser. After one online visit the site opens with no network: the map, the timeline and a card, with no console
-// error. The detail works offline once it was fetched online, and a detail from another version is refused, not
-// merged. A new deploy shows the notice and waits for the click. file:// opens as before, with no worker. And every
-// file the three pages ask for when they open is in the precache list.
+// error; the calendar too, with its sources once the detail came. The detail works offline once it was fetched online,
+// and a detail from another version is refused, not merged. A new deploy shows the notice and waits for the click.
+// file:// opens as before, with no worker. And every file the three pages ask for when they open is in the precache
+// list.
 //
 // "No network" is three things at once, so that no path can reach the server by mistake: the context is offline, the
 // local server cuts every connection, and every other host is aborted (also for the worker's own requests).
@@ -180,6 +181,65 @@ test('after one online visit the site opens offline: map, timeline and a card, w
   assert.deepEqual([...page.errors, ...back.errors], []);
 });
 
+test('a cold install is enough for the calendar to open offline; its sources come with the detail', async () => {
+  // A cold install: a new browser opens the map once, with nothing chosen, and never the calendar. The core comes with
+  // the install; the detail only if the visit lasts until the map asks for it. Forget it, as if the visit had ended
+  // first: offline, the calendar paints its texts and its table from the core and says its sources could not load.
+  const context = await newContext();
+  const page = await newPage(context);
+  await page.goto(`${base}index.html`);
+  await started(page);
+  await controlled(page);
+  await waitCached(page, 'data.detail.json');
+  await page.evaluate(async () => {
+    for (const k of await caches.keys()) if (k.startsWith('biblical-atlas-v-')) await (await caches.open(k)).delete(new URL('data.detail.json', location.href).href);
+  });
+  await offline(context);
+  const cut = await newPage(context);
+  await cut.goto(`${base}calendario.html`);
+  await cut.locator('#fuentes [role="status"]', { hasText: 'No se pudieron cargar los enlaces a las fuentes' }).waitFor();
+  assert.equal(await cut.locator('.cal-tabla tbody tr').count(), D.calendario.meses.length);
+  assert.equal(await cut.locator('.cal-hecho').count(), D.calendario.explicacion.length);
+  assert.equal(await cut.locator('#contenido a').count(), 0, 'a source linked with no detail');
+  // The one error is the detail that could not be fetched.
+  const detailFailed = (e) => /^Failed to load resource: .*\/data\.detail\.json\)$/.test(e);
+  assert.ok(cut.errors.some(detailFailed), cut.errors.join('\n'));
+  // Online it comes once and is kept; offline again, the calendar opens with every source linked.
+  await offline(context, false);
+  const online = await newPage(context);
+  await online.goto(`${base}calendario.html`);
+  await online.locator('.cal-lista-fuentes a').first().waitFor();
+  assert.ok(await cached(online, 'data.detail.json'));
+  await offline(context);
+  const again = await newPage(context);
+  await again.goto(`${base}calendario.html`);
+  await again.locator('.cal-lista-fuentes a').first().waitFor();
+  assert.equal(await again.locator('.cal-tabla tbody tr').count(), D.calendario.meses.length);
+  assert.ok(await again.locator('.cal-tabla .cal-fuentes a[href^="https://"]').count() > 0, 'the table links no source');
+  assert.equal(await again.locator('#fuentes [role="status"]').count(), 0);
+  assert.deepEqual([...page.errors, ...cut.errors.filter((e) => !detailFailed(e)), ...online.errors, ...again.errors], []);
+});
+
+test('the video lists come with the install: a card opened offline has its videos', async () => {
+  // The landing opens no card, so the page itself never asks for the videos of people or of passages.
+  const context = await newContext();
+  const page = await newPage(context);
+  const asked = [];
+  page.on('request', (r) => asked.push(new URL(r.url()).pathname));
+  await page.goto(`${base}index.html`);
+  await started(page);
+  await controlled(page);
+  for (const rel of ['videos.json', 'videos-personas.json', 'videos-pasajes.json']) assert.ok(await cached(page, rel), `${rel} was not installed`);
+  assert.ok(!asked.includes('/videos-personas.json'), 'the page asked for the videos of people: the test proves nothing');
+  await waitCached(page, 'data.detail.json');
+  await offline(context);
+  const back = await newPage(context);
+  await back.goto(`${base}index.html#${CARD}`);
+  await seesTheSite(back);
+  await back.locator('#panel-cuerpo ul.videos li a[href^="https://"]').first().waitFor();
+  assert.deepEqual([...page.errors, ...back.errors], []);
+});
+
 test('the detail works offline once it was fetched online, and not before', async () => {
   const context = await newContext();
   const page = await newPage(context);
@@ -323,8 +383,10 @@ test('from file:// the site opens as before, with no worker', async () => {
 test('every file the three pages ask for when they open is in the precache list', async () => {
   const { PRECACHE, LIBS } = workerLists();
   for (const rel of PRECACHE) assert.ok(fs.existsSync(path.join(SITE_DIR, rel)), `PRECACHE names ${rel}, which does not exist`);
-  // Fetched when first needed, not to open: the detail, the English, the videos, the maps, data.json (the calendar).
-  const RUNTIME = /^(data\.detail\.json|data\.[a-z]{2}\.json|data\.json|videos[\w-]*\.json|maps\/.+|i18n\/.+|sw\.js|sw-manifest\.js)$/;
+  // Fetched when first needed, not to open: the detail, the English, the maps. Not data.json: no page reads it (the
+  // calendar loads the chunks too), so a page asking for it would download 9 MB the site does not need. Not the video
+  // lists either: they come with the install.
+  const RUNTIME = /^(data\.detail\.json|data\.[a-z]{2}\.json|maps\/.+|i18n\/.+|sw\.js|sw-manifest\.js)$/;
   const context = await newContext({ worker: false });
   const page = await newPage(context);
   for (const url of ['index.html', `index.html#${CARD}`, 'acerca.html', 'calendario.html']) {

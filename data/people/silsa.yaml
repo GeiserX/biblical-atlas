@@ -1,0 +1,28 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: silsa
+name: Silsá
+names:
+- name: Silsá
+perspicacia: '1200004041'
+summary: Aserita valiente, uno de los principales de la tribu, hijo o descendiente de Zofá.
+reason: Perspicacia «Silsá»; 1Cr 7:36, 37, 40.
+sources:
+- it-silsa
+- 1-cronicas-7
+links:
+- title: 'Perspicacia: «Silsá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sils%C3%A1/
+  type: perspicacia
+relations:
+- type: kin
+  person: zofa
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-7
+  - it-silsa
+  reason: 1Cr 7:37 lo pone entre los hijos de Zofá; Perspicacia «Silsá» no precisa si era hijo o descendiente.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

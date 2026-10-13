@@ -1,0 +1,44 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: azarias-hijo-de-etan
+name: Azarías
+names:
+- name: Azarías
+perspicacia: 1200000486#1
+summary: Descendiente de Judá por Tamar y Zérah, de la casa de Etán, que fue su padre.
+reason: Perspicacia «Azarías», núm. 1, y «Etán», núm. 1; 1Cr 2:8.
+sources:
+- it-azarias
+- 1-cronicas-2
+- it-etan
+links:
+- title: 'Perspicacia: «Azarías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Azar%C3%ADas/
+  type: perspicacia
+relations:
+- type: kin
+  person: etan-el-ezrahita
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-2
+  reason: '1Cr 2:8: el hijo de Etán fue Azarías; Perspicacia «Etán», núm. 1, lo da por el Etán sabio.'
+  checked_on: '2026-10-12'
+  status: verified
+disambiguation: Azarías hijo de Etán, de la rama de Zérah en Judá; no Azarías hijo de Jehú, de la línea de Jarhá, ni los demás
+  Azarías.
+distinct_from:
+- azarias-hijo-de-sadoc
+- azarias-hijo-de-natan
+- ocozias-de-juda
+- azarias-hijo-de-jehohanan
+- abednego
+- uzias
+- jaazanias-jefe-militar
+- azarias-hijo-de-jehu
+- azarias-hijo-de-ahimaaz
+- azarias-hijo-de-hilquias
+- azarias-hijo-de-johanan
+- azarias-hijo-de-sofonias
+- azarias-sacerdote-repatriado
+checked_on: '2026-10-12'
+status: verified

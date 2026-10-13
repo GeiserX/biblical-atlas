@@ -1,0 +1,46 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: joel-el-gadita
+name: Joel
+names:
+- name: Joel
+perspicacia: 1200002481#4
+disambiguation: Joel el gadita (1Cr 5:11, 12); no es ninguno de los otros Joel que numera Perspicacia «Joel».
+distinct_from:
+- joel-el-rubenita
+- joel-hermano-de-natan
+- joel-hijo-de-azarias
+- joel-hijo-de-izrahias
+- joel-hijo-de-jehiel
+- joel-hijo-de-pedaya
+- joel-hijo-de-samuel
+- joel-profeta
+- joel-simeonita
+summary: Gadita, jefe de los descendientes de Gad que vivían en Basán.
+reason: Perspicacia «Joel», núm. 4; 1Cr 5:11, 12.
+sources:
+- it-joel
+- 1-cronicas-5
+links:
+- title: 'Perspicacia: «Joel»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Joel/
+  type: perspicacia
+relations:
+- type: lived_in
+  place: basan
+  inferred: false
+  sources:
+  - 1-cronicas-5
+  reason: '1Cr 5:11, 12: los gaditas vivían en Basán, hasta Salecá.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: gad-hijo-de-jacob
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-5
+  reason: '1Cr 5:11, 12: está entre los descendientes de Gad.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

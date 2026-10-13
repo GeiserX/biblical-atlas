@@ -1,0 +1,39 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: mered
+name: Méred
+names:
+- name: Méred
+perspicacia: '1200002995'
+summary: Judaíta, hijo de Ezrá. Se casó con Bitías, hija del faraón, y tuvo hijos con ella; la esposa judía del versículo
+  18 quizá fue otra esposa suya.
+reason: Perspicacia «Méred»; 1Cr 4:17, 18.
+sources:
+- it-mered
+- 1-cronicas-4
+links:
+- title: 'Perspicacia: «Méred»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/M%C3%A9red/
+  type: perspicacia
+relations:
+- type: kin
+  person: ezra
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-4
+  - it-mered
+  reason: '1Cr 4:17: uno de los hijos de Ezrá.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: bitias
+  word: wife
+  inferred: false
+  sources:
+  - 1-cronicas-4
+  - it-bitias
+  reason: '1Cr 4:18: Méred tomó por esposa a Bitías, hija del faraón.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

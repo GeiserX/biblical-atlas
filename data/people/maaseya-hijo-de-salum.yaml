@@ -1,0 +1,38 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: maaseya-hijo-de-salum
+name: Maaseya
+names:
+- name: Maaseya
+perspicacia: 1200002811#8
+disambiguation: El hijo de Salum que daba nombre a un comedor del templo; no el sacerdote padre de Sofonías (Perspicacia,
+  núm. 6).
+distinct_from:
+- maaseya-padre-de-sofonias
+- maaseya-padre-de-sedequias
+- maaseya-musico
+summary: Hijo de Salum, el portero del templo, al que Perspicacia tiene casi por seguro levita. Por él se llamaba una sala
+  del templo que quedaba bajo la de los príncipes, cerca de la de los hijos de Hanán.
+reason: Perspicacia «Maaseya», núm. 8; Jer 35:4.
+sources:
+- it-maaseya
+- jeremias-35
+links:
+- title: 'Perspicacia: «Maaseya»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Maaseya/
+  type: perspicacia
+- title: Jeremías 35 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/35/
+  type: bible
+relations:
+- type: kin
+  person: salum-padre-de-maaseya
+  word: father
+  inferred: false
+  sources:
+  - jeremias-35
+  - it-maaseya
+  reason: Jer 35:4 lo llama Maaseya hijo de Salum.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

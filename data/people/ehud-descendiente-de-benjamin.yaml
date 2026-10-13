@@ -1,0 +1,32 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ehud-descendiente-de-benjamin
+name: Ehúd
+names:
+- name: Ehúd
+perspicacia: 1200001268#3
+disambiguation: Ehúd de 1Cr 8:6; no Ehúd hijo de Guerá, el juez que mató a Eglón, ni Ehúd hijo de Bilhán.
+distinct_from:
+- ehud-hijo-de-bilhan
+- ehud-hijo-de-guera
+summary: Benjamita de la lista de 1Cr 8. Sus hijos, jefes de familias de Gueba, fueron desterrados a Manáhat.
+reason: Perspicacia «Ehúd», núm. 3; 1Cr 8:1, 6.
+sources:
+- it-ehud
+- 1-cronicas-8
+links:
+- title: 'Perspicacia: «Ehúd»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Eh%C3%BAd/
+  type: perspicacia
+relations:
+- type: kin
+  person: benjamin-hijo-de-jacob
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  - it-ehud
+  reason: Perspicacia «Ehúd», núm. 3, lo cuenta entre los descendientes de Benjamín de 1Cr 8:1, 6.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

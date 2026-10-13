@@ -11,6 +11,7 @@ reason: Perspicacia «Dedán», núm. 2, y «Asurim»; Gé 25:3.
 sources:
 - it-dedan
 - genesis-25
+- 1-cronicas-1
 links:
 - title: 'Perspicacia: «Dedán»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ded%C3%A1n/
@@ -26,10 +27,11 @@ relations:
   sources:
   - it-dedan
   - genesis-25
+  - 1-cronicas-1
   reason: Gé 25:3.
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-02'
+checked_on: '2026-10-12'
 status: verified
 distinct_from:
 - dedan-hijo-de-raama

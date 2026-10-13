@@ -1,0 +1,38 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: noha
+name: Nohá
+names:
+- name: Nohá
+perspicacia: '1200003272'
+summary: Cuarto hijo de Benjamín en 1Cr 8:2. Falta en la lista de Génesis 46, así que Perspicacia cree que nació después de
+  que la familia entrara en Egipto.
+reason: Perspicacia «Nohá»; 1Cr 8:1, 2.
+sources:
+- it-noha
+- 1-cronicas-8
+links:
+- title: 'Perspicacia: «Nohá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Noh%C3%A1/
+  type: perspicacia
+relations:
+- type: kin
+  person: benjamin-hijo-de-jacob
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  reason: '1Cr 8:2: Nohá fue el cuarto hijo de Benjamín.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: born_in
+  place: egipto
+  inferred: true
+  sources:
+  - 1-cronicas-8
+  - it-noha
+  reason: 'Perspicacia «Nohá»: falta en la lista de Génesis de los que entraron en Egipto, por lo que probablemente nació
+    allí (1Cr 8:2).'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

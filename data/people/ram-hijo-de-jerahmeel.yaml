@@ -1,0 +1,31 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ram-hijo-de-jerahmeel
+name: Ram
+names:
+- name: Ram
+perspicacia: 1200003629#2
+summary: 'El mayor de los hijos de Jerahmeel, en Judá; su tío era Ram hijo de Hezrón. Tuvo tres hijos: Maaz, Jamín y Équer.'
+reason: Perspicacia «Ram», núm. 2; 1Cr 2:25, 27.
+sources:
+- it-ram
+- 1-cronicas-2
+links:
+- title: 'Perspicacia: «Ram»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ram/
+  type: perspicacia
+relations:
+- type: kin
+  person: jerahmeel-hijo-de-hezron
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-2
+  reason: 1Cr 2:25 lo cuenta entre los hijos de Jerahmeel.
+  checked_on: '2026-10-12'
+  status: verified
+disambiguation: Ram hijo de Jerahmeel; no su tío Ram hijo de Hezrón, antepasado de David, ni el Ram de la familia de Elihú.
+distinct_from:
+- ram-hijo-de-hezron
+- ram-antepasado-de-elihu
+checked_on: '2026-10-12'
+status: verified

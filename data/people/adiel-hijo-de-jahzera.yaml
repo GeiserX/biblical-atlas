@@ -1,0 +1,42 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: adiel-hijo-de-jahzera
+name: Adiel
+names:
+- name: Adiel
+perspicacia: 1200000097#3
+summary: Sacerdote de la casa paterna de Imer, hijo de Jahzerá. Su hijo Maasái fue sacerdote en Jerusalén tras volver del
+  destierro.
+reason: Perspicacia «Adiel», núm. 3; 1Cr 9:12.
+sources:
+- it-adiel
+- 1-cronicas-9
+links:
+- title: 'Perspicacia: «Adiel»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Adiel/
+  type: perspicacia
+relations:
+- type: kin
+  person: jahzera
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-9
+  reason: '1Cr 9:12: Adiel, hijo de Jahzerá.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: holds_office
+  office: priest
+  inferred: true
+  sources:
+  - 1-cronicas-9
+  - it-adiel
+  reason: Perspicacia «Adiel», núm. 3, lo llama sacerdote aarónico; 1Cr 9:12.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- adiel-padre-de-azmavet
+- adiel-simeonita
+disambiguation: 'Adiel núm. 3 de Perspicacia: sacerdote de la casa paterna de Imer, hijo de Jahzerá. No los demás Adiel que
+  numera Perspicacia.'

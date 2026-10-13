@@ -1,0 +1,48 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: guemarias-hijo-de-safan
+name: Guemarías
+names:
+- name: Guemarías
+perspicacia: 1200001645#1
+disambiguation: El príncipe hijo de Safán en cuya sala leyó Baruc; no Guemarías hijo de Hilquías, el enviado de Sedequías
+  a Babilonia (Perspicacia, núm. 2).
+distinct_from:
+- guemarias-hijo-de-hilquias
+summary: Príncipe de la corte de Jehoiaquim, hijo del copista Safán. En su sala del patio superior del templo leyó Baruc el
+  rollo al pueblo, y luego pidió en vano al rey que no lo quemara.
+reason: Perspicacia «Guemarías», núm. 1; Jer 36:10-12, 25.
+sources:
+- it-guemarias
+- jeremias-36
+links:
+- title: 'Perspicacia: «Guemarías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Guemar%C3%ADas/
+  type: perspicacia
+- title: Jeremías 36 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/36/
+  type: bible
+relations:
+- type: kin
+  person: safan
+  word: father
+  inferred: false
+  sources:
+  - jeremias-36
+  - it-guemarias
+  - it-safan
+  reason: Jer 36:10-12 lo llama hijo de Safán el copista; Perspicacia «Safán» lo cuenta entre sus hijos.
+  checked_on: '2026-10-12'
+  status: verified
+- type: tie
+  person: jehoiaquim
+  word: master
+  inferred: false
+  sources:
+  - jeremias-36
+  - it-guemarias
+  reason: 'Jer 36:12, 25: es uno de los príncipes reunidos en la casa del rey y suplica a Jehoiaquim; la nota de 36:12 los
+    llama funcionarios de la corte.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

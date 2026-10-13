@@ -1,0 +1,32 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: moza-hijo-de-zimri
+name: Mozá
+names:
+- name: Mozá
+perspicacia: 1200003130#2
+disambiguation: Mozá hijo de Zimrí, de la casa de Saúl; no el Mozá de Judá, hijo de Caleb con Efá.
+summary: Benjamita descendiente del rey Saúl, hijo de Zimrí y padre de Bineá.
+reason: Perspicacia «Mozá», núm. 2; 1Cr 8:33-37.
+sources:
+- it-moza
+- 1-cronicas-8
+- 1-cronicas-9
+links:
+- title: 'Perspicacia: «Mozá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Moz%C3%A1/
+  type: perspicacia
+relations:
+- type: kin
+  person: zimri-hijo-de-jehoada
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  - 1-cronicas-9
+  reason: '1Cr 8:36: Zimrí fue padre de Mozá.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- moza-hijo-de-caleb

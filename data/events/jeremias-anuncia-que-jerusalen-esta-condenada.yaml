@@ -1,0 +1,51 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jeremias-anuncia-que-jerusalen-esta-condenada
+title: Jeremías anuncia que Jerusalén no tiene remedio y será destruida
+date:
+  from: -646
+  to: -606
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 647 y 607 a.e.c. (tiempo narrativo: durante la obra de Jeremías en Judá, antes de caer Jerusalén)'
+places:
+- jerusalen
+- juda
+people:
+- jeremias-profeta
+present: []
+passages:
+- Jer 13:8-27
+- Jer 14:1-22
+- Jer 15:1-21
+summary: Con un cinturón podrido y jarras de vino, Jehová anuncia el fin de la soberbia de Judá y Jerusalén. En la sequía
+  prohíbe a Jeremías interceder, desmiente a los falsos profetas y no cederá ni ante Moisés ni ante Samuel.
+reason: '«Toda Escritura», libro 24, párr. 14, agrupa Jer 13:1-15:21. El libro va por temas (Perspicacia «Jeremías, Libro
+  de») y estos capítulos no nombran rey: entre la comisión de 647 y la caída de 607 (estudio 3). No dice dónde habló.'
+sources:
+- jeremias-13
+- si-jeremias
+- it-jeremias-libro
+- si-3
+- jeremias-14
+- it-jeremias
+- it-hambre
+- jeremias-15
+links:
+- title: Jeremías 13 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/13/
+  type: bible
+- title: 'Perspicacia: «Jeremías, Libro de»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jerem%C3%ADas-Libro-de/
+  type: perspicacia
+- title: Jeremías 15 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/15/
+  type: bible
+history:
+- date: '2026-10-13'
+  change: 'Sale de la serie jeremias (orden 13008): el capítulo no nombra rey ni da año, y el libro va por temas, así que
+    nada lo sitúa antes o después de los demás.'
+  source: it-jeremias-libro
+checked_on: '2026-10-13'
+status: verified

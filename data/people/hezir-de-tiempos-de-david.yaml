@@ -1,0 +1,37 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hezir-de-tiempos-de-david
+name: Hezir
+names:
+- name: Hezir
+perspicacia: 1200002013#1
+summary: Sacerdote cuya casa paterna recibió el decimoséptimo de los 24 turnos, sorteados hacia el final del reinado de David.
+reason: Perspicacia «Hezir», núm. 1; 1Cr 24:15.
+sources:
+- it-hezir
+- 1-cronicas-24
+links:
+- title: 'Perspicacia: «Hezir»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hezir/
+  type: perspicacia
+relations:
+- type: kin
+  person: aaron
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-24
+  - it-hezir
+  reason: 1Cr 24:1 abre la lista de los descendientes de Aarón repartidos en turnos, y 24:15 da a esta casa el decimoséptimo.
+  checked_on: '2026-10-12'
+  status: verified
+- type: holds_office
+  office: priest
+  inferred: false
+  sources:
+  - 1-cronicas-24
+  - it-hezir
+  reason: '1Cr 24:15: encabeza una de las casas sacerdotales de 24:4-6; Perspicacia «Hezir» lo trata como sacerdote.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

@@ -9,6 +9,9 @@ disambiguation: Primogénito de Gedeón; no Jetró, suegro de Moisés, al que el
 distinct_from:
 - jetro
 - itra
+- jeter-hijo-de-jada
+- jeter-hijo-de-ezra
+- jeter-de-aser
 summary: Hijo mayor de Gedeón. Al parecer acompañó a su padre tras los reyes de Madián, pero, muy joven, no se atrevió a matarlos.
   Muerto Gedeón, Abimélec lo mató en Ofrá con sus hermanos.
 reason: Perspicacia «Jéter», núm. 5; Jue 8:20; 9:5, 18.
@@ -57,5 +60,5 @@ relations:
     ellos (Jue 9:5, 18).'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

@@ -13,6 +13,7 @@ sources:
 - it-quenan
 - genesis-5
 - lucas-3
+- 1-cronicas-1
 links:
 - title: 'Perspicacia: «Quenán»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Quen%C3%A1n/
@@ -29,11 +30,12 @@ relations:
   - genesis-5
   - it-quenan
   - lucas-3
+  - 1-cronicas-1
   reason: 'Gé 5:9: Enós fue padre de Quenán a los 90 años.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 disambiguation: Quenán hijo de Enós, al que Lucas llama Cainán; no el otro Cainán que Lucas pone entre Arpaksad y Selá.
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified
 distinct_from:
 - cainan-hijo-de-arpaksad

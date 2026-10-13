@@ -121,5 +121,9 @@ history:
 - date: '2026-09-30'
   change: Ramot-Galaad se escribe como en la TNM (1Re 22:3) y en la ficha del lugar.
   source: 1-reyes-22
-checked_on: '2026-09-30'
+disambiguation: El rey de Israel hijo de Omrí, esposo de Jezabel; no es Acab hijo de Colaya, el falso profeta desterrado en
+  Babilonia.
+checked_on: '2026-10-12'
 status: verified
+distinct_from:
+- acab-hijo-de-colaya

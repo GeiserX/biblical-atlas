@@ -11,6 +11,7 @@ reason: Perspicacia «Diqlá»; Gé 10:27.
 sources:
 - it-dicla
 - genesis-10
+- 1-cronicas-1
 links:
 - title: 'Perspicacia: «Diqlá»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Diql%C3%A1/
@@ -25,8 +26,9 @@ relations:
   inferred: false
   sources:
   - genesis-10
+  - 1-cronicas-1
   reason: Gé 10:27 lo cuenta entre los trece hijos de Joctán.
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

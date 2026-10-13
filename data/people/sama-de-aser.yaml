@@ -1,0 +1,34 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: sama-de-aser
+name: Samá
+names:
+- name: Samá
+perspicacia: '1200003941'
+disambiguation: Samá de Aser, de la casa de Zofá; no el hermano de David ni los guerreros de David llamados Samá.
+distinct_from:
+- sama-el-harodita
+- sama-hijo-de-ague
+- sama-hijo-de-jese
+- sama-hijo-de-reuel
+summary: Aserita importante, hijo o descendiente de Zofá.
+reason: Perspicacia «Samá»; 1Cr 7:36, 37, 40.
+sources:
+- it-sama
+- 1-cronicas-7
+links:
+- title: 'Perspicacia: «Samá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sam%C3%A1/
+  type: perspicacia
+relations:
+- type: kin
+  person: zofa
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-7
+  - it-sama
+  reason: 1Cr 7:37 lo pone entre los hijos de Zofá; Perspicacia «Samá» no precisa si era hijo o descendiente.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

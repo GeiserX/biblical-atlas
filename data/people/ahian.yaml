@@ -1,0 +1,27 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ahian
+name: Ahián
+names:
+- name: Ahián
+perspicacia: '1200000150'
+summary: Manasita, hijo de Semidá.
+reason: Perspicacia «Ahián»; 1Cr 7:14, 19.
+sources:
+- it-ahian
+- 1-cronicas-7
+links:
+- title: 'Perspicacia: «Ahián»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ahi%C3%A1n/
+  type: perspicacia
+relations:
+- type: kin
+  person: semida
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-7
+  reason: 1Cr 7:19 lo cuenta entre los hijos de Semidá.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

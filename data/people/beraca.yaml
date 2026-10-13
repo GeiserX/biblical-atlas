@@ -1,0 +1,27 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: beraca
+name: Beracá
+names:
+- name: Beracá
+perspicacia: 1200000648#1
+summary: Arquero de Benjamín que acudió a Ziclag para apoyar a David cuando Saúl lo tenía restringido.
+reason: Perspicacia «Beracá», núm. 1; 1Cr 12:3.
+sources:
+- it-beraca
+- 1-cronicas-12
+links:
+- title: 'Perspicacia: «Beracá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Berac%C3%A1/
+  type: perspicacia
+relations:
+- type: tie
+  person: david
+  word: master
+  inferred: false
+  sources:
+  - 1-cronicas-12
+  reason: '1Cr 12:3: se unió a David y lo apoyó en la guerra.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
