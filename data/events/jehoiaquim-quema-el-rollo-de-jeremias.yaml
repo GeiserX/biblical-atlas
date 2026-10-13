@@ -13,7 +13,7 @@ date:
     month: kislev
 narrative_order:
   series: jeremias
-  order: 36020
+  order: 236020
 places:
 - jerusalen
 people:
@@ -41,8 +41,8 @@ passages:
 - Jer 36:20-26
 summary: En su casa de invierno, Jehoiaquim oye leer a Jehudí y va cortando el rollo y echándolo al brasero, aunque tres príncipes
   le ruegan que no. Manda prender a Jeremías y a Baruc, pero Jehová los oculta.
-reason: Noveno mes, kislev (Jer 36:22 y su nota), de 624 según Perspicacia «Baruc», núm. 1, y «Seraya», núm. 4. Los príncipes
-  de 36:12 van ante el rey (36:20, 21); los tres enviados y los dos escondidos no se sitúan.
+reason: Kislev (Jer 36:22 y su nota) de 624 según Perspicacia «Baruc», núm. 1, y «Seraya», núm. 4. Los príncipes de 36:12
+  van ante el rey (36:20, 21); los tres enviados y los dos escondidos no se sitúan. Orden por fecha.
 sources:
 - jeremias-36
 - it-baruc
@@ -56,5 +56,10 @@ links:
 - title: 'Perspicacia: «Jehoiaquim»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jehoiaquim/
   type: perspicacia
-checked_on: '2026-10-12'
+history:
+- date: '2026-10-13'
+  change: 'El orden del relato pasa de 36020 a 236020: la serie sigue las fechas de los sucesos, porque el libro va por temas
+    y no en el orden en que pasaron.'
+  source: it-jeremias-libro
+checked_on: '2026-10-13'
 status: verified

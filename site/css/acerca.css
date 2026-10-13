@@ -68,6 +68,7 @@ a { color: var(--link); }
 @media (any-pointer: coarse) {
   .acerca-cab .be-logo { min-height: 44px; }
   .acerca-cab .be-btn { height: 44px; }
+  #reunion-boton { width: 44px; }
   .acerca .acerca-indice { row-gap: 10px; }
   .acerca-indice a { height: 44px; }
   /* Los nombres de «Gracias» y su licencia: la zona de toque crece sin mover el texto. */

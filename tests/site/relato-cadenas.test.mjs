@@ -126,17 +126,6 @@ test('a block too long for its stretch falls back to exactly the even spread, an
   assert.deepEqual([...N.BE.bloquesSinSitio()], ['un-levita-va-a-belen-a-buscar-a-su-concubina'], 'a block that would take a member out of its date is reported');
 });
 
-test('a tras to an event earlier than the last anchor bounds only its own event: the account of Jeremiah is not chronological', () => {
-  // Jer 49:34 (Elam, after Sedequías is made king in 617) comes after the 607 events in the book. That anchor must not
-  // close the 607 batch, or the ten days of Jer 42:7 have no stretch and the chain falls back to the whole year.
-  const S = sitio();
-  const fin = S.w('ismael-mata-a-los-hombres-de-siquem-silo-y-samaria')[1];
-  const consulta = S.w('el-resto-pide-a-jeremias-que-consulte-a-jehova'), aviso = S.w('jeremias-advierte-al-resto-que-no-vaya-a-egipto');
-  assert.ok(consulta[0] >= fin - 1e-9, 'the consultation comes after the killings of the seventh month');
-  cerca(aviso[0] - consulta[0], 10 * DIA, 'the answer comes ten days after the consultation');
-  assert.ok(S.ev('jeremias-anuncia-la-ruina-de-elam').orden_relato.tras === 'nabucodonosor-hace-rey-a-sedequias', 'the control: the later tras is still in the data');
-});
-
 test('a block sits in the middle of its stretch, and nothing outside a block moves', () => {
   const S = sitio(), L = sitio((D) => { for (const e of D.eventos) delete e.orden_relato?.elapsed; });
   // The stretch of the block: what the spread without elapsed gave its events.

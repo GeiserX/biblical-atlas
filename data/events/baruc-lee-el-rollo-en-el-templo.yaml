@@ -13,7 +13,7 @@ date:
     month: kislev
 narrative_order:
   series: jeremias
-  order: 36008
+  order: 236008
 places:
 - monte-moria
 - jerusalen
@@ -28,7 +28,7 @@ passages:
 summary: En el ayuno del noveno mes del quinto año de Jehoiaquim, Baruc lee el rollo ante el pueblo desde la sala de Guemarías,
   en el patio superior, junto a la puerta nueva del templo.
 reason: 'Jer 36:9: noveno mes del quinto año de Jehoiaquim. Perspicacia «Baruc», núm. 1, lo pone a finales de 624, y la nota
-  de 36:22 da kislev. Micaya lo oye en la sala de su padre (36:11).'
+  de 36:22 da kislev. Micaya lo oye en la sala de su padre (36:11). Orden por fecha.'
 sources:
 - jeremias-36
 - it-baruc
@@ -40,5 +40,10 @@ links:
 - title: 'Perspicacia: «Baruc»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Baruc/
   type: perspicacia
-checked_on: '2026-10-12'
+history:
+- date: '2026-10-13'
+  change: 'El orden del relato pasa de 36008 a 236008: la serie sigue las fechas de los sucesos, porque el libro va por temas
+    y no en el orden en que pasaron.'
+  source: it-jeremias-libro
+checked_on: '2026-10-13'
 status: verified

@@ -11,7 +11,7 @@ date:
   text: 'entre 1107 y 1078 a.e.c. (tiempo narrativo: David huye de Saúl, que muere en 1078)'
 narrative_order:
   series: 1-cronicas
-  order: 12008
+  order: 12000
   after: saul-reconoce-que-david-sera-rey
 places:
 - rio-jordan
@@ -34,12 +34,17 @@ passages:
 summary: Once jefes de Gad, rápidos y diestros con escudo y lanza, cruzan el Jordán cuando se desborda y ponen en fuga a los
   de las tierras bajas. Se unen a David en su refugio del desierto.
 reason: 'Perspicacia «Abdías», núm. 3, y «Jeremías», núm. 2: mientras David huía de Saúl. El refugio del desierto no tiene
-  nombre. Cruzan en el primer mes. Entre 1107 (nace David, estudio 3) y 1078.'
+  nombre. Cruzan en el primer mes. Entre 1107 (nace David, estudio 3) y 1078. Va antes de Ziclag en la serie.'
 sources:
 - 1-cronicas-12
 - it-abdias
 - it-jeremias
 - si-3
 - it-jonatan
-checked_on: '2026-10-12'
+history:
+- date: '2026-10-13'
+  change: 'El orden del relato pasa de 12008 a 12000: llegaron mientras David huía de Saúl, antes de Ziclag, donde se le unen
+    los benjaminitas de 1Cr 12:1-7.'
+  source: it-abdias
+checked_on: '2026-10-13'
 status: verified

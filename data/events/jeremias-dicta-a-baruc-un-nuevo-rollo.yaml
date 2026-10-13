@@ -12,7 +12,7 @@ date:
   text: 'entre 624 y 618 a.e.c. (tiempo narrativo: tras la quema del rollo, en el reinado de Jehoiaquim)'
 narrative_order:
   series: jeremias
-  order: 36027
+  order: 236027
 places: []
 people:
 - jeremias-profeta
@@ -26,7 +26,7 @@ passages:
 summary: Jehová manda a Jeremías escribir otro rollo con lo mismo y anunciar que Jehoiaquim no tendrá quien reine en el trono
   de David y que su cadáver quedará a la intemperie. Baruc lo escribe y se añaden más palabras.
 reason: 'Jer 36:27: después de la quema del rollo, que Perspicacia «Baruc», núm. 1, pone en 624; el reinado de Jehoiaquim
-  acaba en 618 (tabla A6). Siguen escondidos: el texto no dice dónde.'
+  acaba en 618 (tabla A6). Siguen escondidos: el texto no dice dónde. Orden por fecha.'
 sources:
 - jeremias-36
 - it-baruc
@@ -39,5 +39,10 @@ links:
 - title: 'Perspicacia: «Baruc»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Baruc/
   type: perspicacia
-checked_on: '2026-10-12'
+history:
+- date: '2026-10-13'
+  change: 'El orden del relato pasa de 36027 a 236027: la serie sigue las fechas de los sucesos, porque el libro va por temas
+    y no en el orden en que pasaron.'
+  source: it-jeremias-libro
+checked_on: '2026-10-13'
 status: verified

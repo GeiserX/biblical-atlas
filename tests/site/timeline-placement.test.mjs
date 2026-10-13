@@ -78,6 +78,9 @@ const EXPECTED_CHANGES = {
   // Jehoiakim differs only by the cut at its end (3).
   'evento:elias-llevado-en-la-tempestad': 1, 'evento:jehu-acaba-con-la-casa-de-acab': 1, 'evento:atalia-usurpa-el-trono': 1,
   'evento:jehoas-coronado': 1, 'evento:jehoiaquim-vasallo-de-babilonia': 3,
+  // Jeremías gave the commission a series (jeremias): the code before put the whole series back on its dates because of
+  // its «tras» (1); without them it too puts the commission in the first half of 647, before Jer 2-6.
+  'evento:jeremias-comisionado': 1,
 };
 // Deaths named by the id of their event, not by the rule of the code: the person dies in that event.
 const DEATHS = {

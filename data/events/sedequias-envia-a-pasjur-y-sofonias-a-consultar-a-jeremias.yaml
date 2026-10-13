@@ -12,7 +12,7 @@ date:
   text: 'entre 609 y 607 a.e.c. (tiempo narrativo: durante el último sitio de Jerusalén)'
 narrative_order:
   series: jeremias
-  order: 21001
+  order: 621001
   after: sitio-de-jerusalen-609
 places:
 - jerusalen
@@ -33,7 +33,7 @@ passages:
 summary: 'Con los caldeos ante la muralla, Sedequías pide a Jeremías una consulta a Jehová. La respuesta: Jehová luchará contra
   la ciudad, el rey caerá en manos de Nabucodonosor y solo vivirá quien se rinda.'
 reason: Jer 21:2, 4 la ponen en el sitio que empezó en 609 y acabó en 607 (estudio 3). Perspicacia «Sedequías», núm. 4, cree
-  posible que fuera al principio; jr, cap. 2, la pone en la parte final.
+  posible que fuera al principio; jr, cap. 2, la pone en la parte final. Orden por fecha.
 sources:
 - jeremias-21
 - si-3
@@ -47,5 +47,10 @@ links:
 - title: 'Perspicacia: «Sedequías»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sedequ%C3%ADas/
   type: perspicacia
-checked_on: '2026-10-12'
+history:
+- date: '2026-10-13'
+  change: 'El orden del relato pasa de 21001 a 621001: la serie sigue las fechas de los sucesos, porque el libro va por temas
+    y no en el orden en que pasaron.'
+  source: it-jeremias-libro
+checked_on: '2026-10-13'
 status: verified

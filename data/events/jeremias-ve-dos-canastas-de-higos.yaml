@@ -11,7 +11,7 @@ date:
   text: 'entre 617 y 607 a.e.c. (tiempo narrativo: reinando Sedequías, tras el destierro de Jeconías)'
 narrative_order:
   series: jeremias
-  order: 24001
+  order: 424001
   after: nabucodonosor-hace-rey-a-sedequias
 places:
 - jerusalen
@@ -24,7 +24,7 @@ passages:
 summary: Jehová enseña a Jeremías dos canastas de higos puestas ante el templo, unos muy buenos y otros incomibles. Los buenos
   son los desterrados con Jeconías, que volverán; los malos, Sedequías y quienes siguen en Judá o en Egipto.
 reason: 'Jer 24:1 lo pone después del destierro de Jeconías (617, estudio 3), y 24:8 con Sedequías en el trono y Jerusalén
-  en pie (cae en 607). Es una visión: las canastas están ante el templo, pero nadie queda situado.'
+  en pie (cae en 607). Visión ante el templo: nadie queda situado. Orden por fecha.'
 sources:
 - jeremias-24
 - si-3
@@ -40,5 +40,10 @@ links:
 - title: 'Perspicacia: «Jeremías, Libro de»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jerem%C3%ADas-Libro-de/
   type: perspicacia
-checked_on: '2026-10-12'
+history:
+- date: '2026-10-13'
+  change: 'El orden del relato pasa de 24001 a 424001: la serie sigue las fechas de los sucesos, porque el libro va por temas
+    y no en el orden en que pasaron.'
+  source: it-jeremias-libro
+checked_on: '2026-10-13'
 status: verified

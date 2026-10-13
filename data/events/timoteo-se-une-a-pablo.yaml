@@ -20,15 +20,25 @@ people:
 - timoteo
 passages:
 - Hch 16:1-3
-summary: Los hermanos de Listra e Iconio hablan bien de Timoteo y Pablo lo invita a acompañarlo. Lo circuncida para
-  no poner obstáculos a los judíos.
-reason: 'Perspicacia «Pablo» (párr. 15) y «Timoteo»; «Testimonio completo», cap. 15, párr. 14: lo conoció hacia 47
-  y dos o tres años después lo invitó.'
+- 1Ti 4:14
+summary: Los hermanos de Listra e Iconio hablan bien de Timoteo y Pablo lo invita a acompañarlo. Lo circuncida para no poner
+  obstáculos a los judíos. Probablemente entonces los ancianos le imponen las manos.
+reason: 'Perspicacia «Pablo» (párr. 15) y «Timoteo»; «Testimonio completo», cap. 15, párr. 14: lo conoció hacia 47 y lo invitó
+  dos o tres años después. La nota de 1Ti 4:14 pone aquí, probablemente, la imposición de manos.'
 sources:
 - it-pablo
 - it-timoteo
 - bt-15
 - hch-16
+- 1-timoteo-4
 search: Timoteo se une a Pablo
-checked_on: '2026-09-28'
+history:
+- date: '2026-10-13'
+  change: Se añade la imposición de manos de los ancianos, que la nota de 1Ti 4:14 pone probablemente en esta visita de Pablo
+    a Listra.
+  source: 1-timoteo-4
+- date: '2026-10-13'
+  change: La reason nombra la nota de 1Ti 4:14, que justifica el pasaje nuevo.
+  source: 1-timoteo-4
+checked_on: '2026-10-13'
 status: verified

@@ -11,7 +11,7 @@ date:
   text: 'entre 609 y 607 a.e.c. (tiempo narrativo: la invasión babilonia, antes de caer Jerusalén)'
 narrative_order:
   series: jeremias
-  order: 34007
+  order: 634007
 places:
 - lakis
 - azeca
@@ -25,7 +25,7 @@ passages:
 summary: Mientras cercan Jerusalén, los ejércitos de Nabucodonosor combaten contra Lakís y Azecá, las únicas ciudades fortificadas
   de Judá que aún resisten. Fueron las dos últimas en caer antes que la capital.
 reason: 'Jer 34:7; Perspicacia «Lakís», apartado «Capturada por los babilonios», y «Azeqá», párr. 5, la fechan en 609-607.
-  present vacío: el texto no sitúa allí al rey; Perspicacia «Riblá» lo pone en Riblá.'
+  present vacío: el texto no sitúa allí al rey; Perspicacia «Riblá» lo pone en Riblá. Orden por fecha.'
 sources:
 - jeremias-34
 - it-lakis
@@ -42,5 +42,10 @@ links:
 - title: 'Perspicacia: «Azeqá»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Azeq%C3%A1/
   type: perspicacia
-checked_on: '2026-10-12'
+history:
+- date: '2026-10-13'
+  change: 'El orden del relato pasa de 34007 a 634007: la serie sigue las fechas de los sucesos, porque el libro va por temas
+    y no en el orden en que pasaron.'
+  source: it-jeremias-libro
+checked_on: '2026-10-13'
 status: verified

@@ -133,13 +133,15 @@ roles:
 - Génesis 10-11: el capítulo 10 da las naciones ya repartidas y 11:1-9 cuenta cómo se dispersaron en Babel, en días de Péleg (Gé 10:25; Perspicacia «Babel»).
 - Jueces 1:1-3:6 mezcla sucesos de antes y de después de la muerte de Josué, y los capítulos 17-21 pasan mucho antes que Sansón (Perspicacia «Jueces, Libro de», «Orden del libro»). Los capítulos 19 a 21 van en su propia serie, `jueces-apendice`: en la serie `jueces`, su fecha, más temprana, dejaba antes de c. 1400 a.e.c. todo lo que el libro cuenta antes que ellos.
 - 1 Reyes 11:14-20 vuelve a los días de David al presentar a Hadad: Joab en Edom tras la victoria del valle de la Sal, la huida de Hadad y su boda en Egipto (Perspicacia «Edom»). Van en su propia serie, `1-reyes-hadad`: en la serie `1-reyes` quedaban tras el templo, donde su fecha no cabe.
-- Jeremías: sus capítulos van por temas; cada uno se fecha por el rey que nombra (Jer 21 es de Sedequías y Jer 25, del año cuarto de Jehoiaquim).
+- Jeremías: sus capítulos van por temas; cada uno se fecha por el rey que nombra (Jer 21 es de Sedequías y Jer 25, del año cuarto de Jehoiaquim). La serie `jeremias` sigue esas fechas: `order` es tramo × 100000 + capítulo × 1000 + versículo, y el tramo sube cada vez que el suceso siguiente en el tiempo está en un capítulo anterior (Jer 25, que pasa después de Jer 26, es 225001). Los capítulos que no nombran rey ni dan año (11-20, 23 y 46-49) van sin `narrative_order`: nada los pone antes o después de los demás.
 - Daniel 7 y 8 son de los años primero y tercero de Belsasar, antes de Daniel 5.
 - Ezequiel 29:17-21 es del año 27 del destierro, posterior a los capítulos que lo siguen (40:1 es del año 25).
 - Salmos: cada salmo con encabezamiento se ordena por el suceso que nombra; los demás no son sucesos.
 - 1473 a.e.c., de la victoria sobre Og al cruce del Jordán: Números, Deuteronomio y Josué 1-5 van en la serie `numeros`, porque `build.py` ordena las series de un mismo año por su nombre y `deuteronomio` o `josue` saldrían antes que Números. Números usa su capítulo y versículo; Deuteronomio les suma 100000 (`primer-discurso-de-moises` es 101001) y Josué, 200000 (`entrada-en-canaan` es 203014).
 
 Las series `a7` y `hechos` ya tienen su propia numeración.
+
+Un `after` a un suceso de otra serie hace de ancla en el sitio del suceso en su serie: lo anterior acaba antes y lo posterior empieza después. Por eso apunta a algo posterior a todo lo que la serie cuenta antes, y no se repite en sucesos seguidos con el mismo destino: basta en el primero. Si no, el tramo de antes se queda sin sitio y sus sucesos vuelven a su fecha entera.
 
 **Todo suceso lleva fecha.** Si un suceso no se puede acotar ni con los sucesos anclados ni con lo que `data/books.yaml` dice que abarca el libro, no es un suceso: va en la `note` del tramo. Tampoco son sucesos las parábolas, los casos hipotéticos de la Ley ni lo que se ve en una visión.
 
