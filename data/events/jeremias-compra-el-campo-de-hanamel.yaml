@@ -11,7 +11,7 @@ date:
   text: 608 a.e.c.
 narrative_order:
   series: jeremias
-  order: 32001
+  order: 832001
   after: sedequias-interroga-a-jeremias-en-secreto
 places:
 - jerusalen
@@ -43,5 +43,10 @@ links:
 - title: 'Perspicacia: «Hanamel»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hanamel/
   type: perspicacia
-checked_on: '2026-10-12'
+history:
+- date: '2026-10-13'
+  change: 'El orden del relato pasa de 32001 a 832001: la serie sigue las fechas de los sucesos, porque el libro va por temas
+    y no en el orden en que pasaron.'
+  source: it-jeremias-libro
+checked_on: '2026-10-13'
 status: verified

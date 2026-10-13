@@ -11,7 +11,7 @@ date:
   text: 607 a.e.c.
 narrative_order:
   series: jeremias
-  order: 39011
+  order: 939011
   after: destruccion-de-jerusalen-607
 places:
 - jerusalen
@@ -29,7 +29,7 @@ passages:
 summary: Por orden de Nabucodonosor, Nebuzaradán, Nebusazbán, Nergal-Sarézer y los demás príncipes mandan que Jeremías salga
   del Patio de la Guardia y lo confían a Guedalías para que lo lleve a su casa.
 reason: 'Jer 39:11-14. Nebuzaradán llegó el día 7 de ab de 607 (Perspicacia «Nebuzaradán»). El texto no dice dónde estaban
-  los príncipes, Guedalías ni el rey: solo Jeremías queda situado en la ciudad.'
+  los príncipes, Guedalías ni el rey: solo Jeremías queda situado en la ciudad. Orden por fecha.'
 sources:
 - jeremias-39
 - si-3
@@ -46,5 +46,10 @@ links:
 - title: 'Perspicacia: «Nebuzaradán»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Nebuzarad%C3%A1n/
   type: perspicacia
-checked_on: '2026-10-12'
+history:
+- date: '2026-10-13'
+  change: 'El orden del relato pasa de 39011 a 939011: la serie sigue las fechas de los sucesos, porque el libro va por temas
+    y no en el orden en que pasaron.'
+  source: it-jeremias-libro
+checked_on: '2026-10-13'
 status: verified

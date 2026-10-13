@@ -11,7 +11,7 @@ date:
   text: 607 a.e.c.
 narrative_order:
   series: jeremias
-  order: 42001
+  order: 942001
 places:
 - lugar-de-hospedaje-de-kimham
 people:
@@ -27,7 +27,7 @@ passages:
 summary: Johanán, Jezanías hijo de Hosaya, los demás jefes y todo el pueblo ruegan a Jeremías que pregunte a Jehová qué deben
   hacer. Él acepta, y ellos juran obedecer la respuesta, sea buena o mala.
 reason: 'Jer 42:1-6. El texto no repite el sitio: seguían donde se habían detenido camino de Egipto, el lugar de hospedaje
-  de Kimham. Perspicacia «Johanán», núm. 5, y «Jaazanías», núm. 4; estudio 3, párr. 6.'
+  de Kimham. Perspicacia «Johanán», núm. 5, y «Jaazanías», núm. 4; estudio 3, párr. 6. Orden por fecha.'
 sources:
 - jeremias-42
 - si-3
@@ -42,5 +42,10 @@ links:
 - title: 'Perspicacia: «Johanán»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Johan%C3%A1n/
   type: perspicacia
-checked_on: '2026-10-12'
+history:
+- date: '2026-10-13'
+  change: 'El orden del relato pasa de 42001 a 942001: la serie sigue las fechas de los sucesos, porque el libro va por temas
+    y no en el orden en que pasaron.'
+  source: it-jeremias-libro
+checked_on: '2026-10-13'
 status: verified

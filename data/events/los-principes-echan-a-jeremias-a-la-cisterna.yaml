@@ -11,7 +11,7 @@ date:
   text: 'entre 609 y 607 a.e.c. (tiempo narrativo: durante el último sitio de Jerusalén)'
 narrative_order:
   series: jeremias
-  order: 38001
+  order: 838001
 places:
 - jerusalen
 people:
@@ -34,7 +34,7 @@ passages:
 summary: Sefatías, Guedalías, Jucal y Pasjur oyen a Jeremías invitar a rendirse y piden su muerte. Sedequías cede; con sogas
   lo bajan a una cisterna seca del Patio de la Guardia, la de Malkiya, y se hunde en el fango.
 reason: Jer 38:1-6; Perspicacia «Sedequías», núm. 4, apartado «Se rebela contra Nabucodonosor», párr. 6, y «Ébed-mélec». Dentro
-  del sitio de 609 a 607 (estudio 3); en 38:9 ya no queda pan en la ciudad.
+  del sitio de 609 a 607 (estudio 3); en 38:9 ya no queda pan en la ciudad. Orden por fecha.
 sources:
 - jeremias-38
 - it-sedequias
@@ -47,5 +47,10 @@ links:
 - title: 'Perspicacia: «Sedequías»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sedequ%C3%ADas/
   type: perspicacia
-checked_on: '2026-10-12'
+history:
+- date: '2026-10-13'
+  change: 'El orden del relato pasa de 38001 a 838001: la serie sigue las fechas de los sucesos, porque el libro va por temas
+    y no en el orden en que pasaron.'
+  source: it-jeremias-libro
+checked_on: '2026-10-13'
 status: verified

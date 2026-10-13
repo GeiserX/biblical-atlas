@@ -1,0 +1,44 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: pablo-expulsa-a-himeneo-y-alejandro
+title: Pablo expulsa a Himeneo y a Alejandro
+date:
+  from: 56
+  to: 64
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre c. 56 y 64 e.c. (tiempo narrativo: tras el aviso a los ancianos de Éfeso y antes de 1 Timoteo)'
+narrative_order:
+  series: hechos
+  order: 2844
+places:
+- efeso
+people:
+- pablo
+- himeneo
+- alejandro-expulsado
+present: []
+passages:
+- 1Ti 1:19, 20
+summary: Himeneo y Alejandro dejaron naufragar su fe y blasfemaban. Pablo los entregó a Satanás, es decir, los sacó de la
+  congregación, para que la disciplina les enseñara.
+reason: 'La nota de 1Ti 1:20 lee la entrega como expulsión, primero con un «parece»; Perspicacia «Himeneo» la ve probable y
+  «Alejandro», núm. 5, segura. «Timoteo, Cartas a»: la enseñanza falsa creció años después del aviso de c. 56.'
+sources:
+- 1-timoteo-1
+- it-himeneo
+- it-alejandro
+- it-timoteo-cartas
+links:
+- title: 1 Timoteo 1 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/1-timoteo/1/
+  type: bible
+- title: 'Perspicacia: «Himeneo»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Himeneo/
+  type: perspicacia
+search: Himeneo Alejandro entregados a Satanás
+note: 'Nadie dice dónde ni cuándo: va en Éfeso, sin situar a nadie, donde la nota de 1Ti 1:3 pone a los falsos maestros. Orden
+  2844, deducción nuestra: tras las cartas del encierro (2840), antes de la despedida (2845).'
+checked_on: '2026-10-13'
+status: pending

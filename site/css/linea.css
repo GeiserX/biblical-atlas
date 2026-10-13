@@ -49,7 +49,7 @@
 .linea-boton { width: 32px; height: 32px; cursor: pointer; }
 .linea-boton[aria-pressed="true"], .linea-boton[aria-expanded="true"] { background: var(--gold-soft); color: var(--gold-ink); }
 .minimapa { flex: 0 1 200px; min-width: 90px; height: 14px; opacity: 1; cursor: pointer; background: var(--paper-2); border: 1px solid var(--line); box-sizing: border-box; }
-.minimapa .be-minimap__win { top: -4px; bottom: -4px; min-width: 4px; border-width: 1.5px; background: rgba(255, 255, 255, .45); pointer-events: none; }
+.minimapa .be-minimap__win { top: -4px; bottom: -4px; min-width: 4px; border-width: 1.5px; background: color-mix(in srgb, var(--halo) 45%, transparent); pointer-events: none; }
 .minimapa-cursor { position: absolute; top: -5px; bottom: -5px; width: 2px; margin-left: -1px; background: var(--gold); pointer-events: none; }
 
 /* Fecha de la barra superior: abre el panel de la fecha (datepicker.css). */
@@ -301,14 +301,14 @@
 .sinc-barra.larga { opacity: .72; }
 .sinc-alt { background: var(--secular-soft); color: var(--secular); border: 1px dashed var(--secular); }
 .sinc-rombo { position: absolute; top: 4px; height: 20px; border: 0; background: none; padding: 0; display: flex; align-items: center; gap: 6px; transform: translateX(-7px); font: 600 var(--fs-2xs) var(--font-sans); color: var(--ink-2); white-space: nowrap; cursor: pointer; }
-.sinc-rombo i { width: 10px; height: 10px; background: var(--gold); transform: rotate(45deg); border: 1.5px solid #fff; flex: none; }
+.sinc-rombo i { width: 10px; height: 10px; background: var(--gold); transform: rotate(45deg); border: 1.5px solid var(--halo); flex: none; }
 .sinc-rombo.calculo i { background: var(--surface); border-color: var(--unverified); }
 .sinc-rombo.calculo { color: var(--unverified); }
 /* Lo que cae fuera del periodo elegido va hueco y gris, no transparente: con opacidad .3 su nombre bajaba a 1,9:1. */
 .sinc-barra.fuera { background: var(--surface); background-image: none; color: var(--ink-3); box-shadow: inset 0 0 0 1.5px var(--line-2); -webkit-mask-image: none; mask-image: none; }
 .sinc-rombo.fuera { color: var(--ink-3); }
 .sinc-rombo.fuera i { background: var(--surface); border-color: var(--ink-3); }
-.sinc-barra.corta { box-shadow: 0 0 0 2px #fff, 0 0 0 3.5px var(--gold); }
+.sinc-barra.corta { box-shadow: 0 0 0 2px var(--halo), 0 0 0 3.5px var(--gold); }
 .sinc-cursor { position: absolute; top: 0; bottom: 0; width: 2px; margin-left: -1px; background: var(--gold); pointer-events: none; z-index: 3; }
 .sinc-cursor::before { content: attr(data-fecha); position: absolute; top: 2px; left: 50%; transform: translateX(-50%); background: var(--gold); color: #fff; font: 700 var(--fs-2xs)/18px var(--font-sans); padding: 0 7px; border-radius: 5px; white-space: nowrap; }
 .sinc-vacio { padding: 16px; color: var(--ink-2); font-size: var(--fs-md); display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
