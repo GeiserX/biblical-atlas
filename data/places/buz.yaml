@@ -1,0 +1,27 @@
+# biblical-atlas: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: buz
+name: Buz
+names:
+- name: Buz
+type: region
+lat: 28.356612
+lon: 38.987969
+precision: zone
+coord_source: openbible:a087a14
+coord_url: https://www.openbible.info/geo/ancient/a087a14/buz
+coord_note: Punto de OpenBible entre Dedán y Quedar, su primera identificación. Perspicacia solo lo sitúa en Arabia.
+summary: Lugar de Arabia que Jeremías nombra junto a Dedán y Temá entre quienes beberían la copa de la ira de Jehová. Quizá
+  lo poblaron descendientes de Buz, hijo de Nacor.
+reason: 'Perspicacia «Buz», núm. 3; Jer 25:17, 23. OpenBible: solo tomamos el punto.'
+not_claimed:
+- 'Que lo poblaran con seguridad los descendientes de Buz hijo de Nacor: Perspicacia «Buz», núm. 3, dice solo que posiblemente.'
+sources:
+- it-buz
+- jeremias-25
+- openbible-geo
+links:
+- title: 'Perspicacia: «Buz»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Buz/
+  type: perspicacia
+checked_on: '2026-10-12'
+status: verified

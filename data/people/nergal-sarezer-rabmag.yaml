@@ -1,0 +1,53 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: nergal-sarezer-rabmag
+name: Nergal-Sarézer
+names:
+- name: Nergal-Sarézer
+perspicacia: 1200003229#2
+disambiguation: El rabmag de Jer 39:3, 13, que ayudó a liberar a Jeremías; Perspicacia «Nergal-sarézer» lo separa por ese
+  título del otro príncipe del mismo nombre.
+distinct_from:
+- nergal-sarezer-samgar
+date:
+  from: -606
+  to: -606
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 607 a.e.c.
+summary: Alto príncipe del ejército de Nabucodonosor con el título de rabmag. Entró en Jerusalén tras la brecha de 607 a.e.c.
+  y fue de los que ordenaron que Jeremías saliera del Patio de la Guardia.
+reason: Perspicacia «Nergal-sarézer», núm. 2, y «Rabmag»; Jer 39:3, 13, 14. La nota al pie traduce rabmag por mago principal
+  o astrólogo principal.
+sources:
+- it-nergal-sarezer
+- it-rabmag
+- jeremias-39
+- si-3
+links:
+- title: 'Perspicacia: «Nergal-sarézer»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Nergal-sar%C3%A9zer/
+  type: perspicacia
+- title: 'Perspicacia: «Rabmag»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Rabmag/
+  type: perspicacia
+- title: Jeremías 39 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/39/
+  type: bible
+not_claimed:
+- 'Que sea Neriglisar, el rey que siguió a Evil-merodac: Perspicacia solo recoge que algunos eruditos lo piensan por el parecido
+  del nombre.'
+relations:
+- type: tie
+  person: nabucodonosor-ii
+  word: master
+  inferred: false
+  sources:
+  - jeremias-39
+  - it-nergal-sarezer
+  reason: Jer 39:3, 13 lo cuenta entre los príncipes y hombres principales del rey de Babilonia, Nabucodonosor (Jer 39:11).
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

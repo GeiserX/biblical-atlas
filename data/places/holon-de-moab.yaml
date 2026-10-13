@@ -1,0 +1,43 @@
+# biblical-atlas: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: holon-de-moab
+name: Holón
+names:
+- name: Holón
+  note: 'Perspicacia, núm. 2: la ciudad moabita; no es la Holón de Judá (holon).'
+type: city
+lat: null
+lon: null
+precision: uncertain
+coord_source: null
+coord_url: null
+candidates:
+- name: En la meseta, entre Hesbón y el Arnón
+  geometry:
+    type: zone
+    lat: 31.635806
+    lon: 35.814226
+    radius_km: 20
+  checked_on: '2026-10-12'
+  status: favored_level_1
+  sources:
+  - it-holon
+  - it-meseta
+  - jeremias-48
+  reason: Perspicacia «Holón», núm. 2, la pone en la meseta al este del Jordán sin sitio conocido; «Meseta» la extiende de
+    Hesbón al Arnón.
+  coord_source: calculation
+  note: 'Centro y radio de la zona de la ficha meseta: punto medio nuestro entre Hesbón y Aroer, puntos de OpenBible, con
+    20 km de radio.'
+summary: Ciudad moabita de la meseta, al este del Jordán, nombrada en el juicio de Jer 48:21. No se sabe dónde estaba. No
+  es la Holón de Judá.
+reason: Perspicacia «Holón», núm. 2, y «Meseta»; Jer 48:21. Zona calculada por nosotros.
+sources:
+- it-holon
+- it-meseta
+- jeremias-48
+links:
+- title: 'Perspicacia: «Holón»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hol%C3%B3n/
+  type: perspicacia
+checked_on: '2026-10-12'
+status: verified

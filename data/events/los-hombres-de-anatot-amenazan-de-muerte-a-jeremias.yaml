@@ -1,0 +1,40 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: los-hombres-de-anatot-amenazan-de-muerte-a-jeremias
+title: Los hombres de Anatot amenazan de muerte a Jeremías
+date:
+  from: -646
+  to: -606
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 647 y 607 a.e.c. (tiempo narrativo: durante la obra de Jeremías en Judá, antes de caer Jerusalén)'
+narrative_order:
+  series: jeremias
+  order: 11018
+places:
+- anatot
+people:
+- jeremias-profeta
+present: []
+passages:
+- Jer 11:18-23
+summary: Jehová le revela a Jeremías que sus paisanos de Anatot traman matarlo si sigue profetizando en Su nombre. Él deja
+  su causa en manos de Jehová, que anuncia espada y hambre contra esa ciudad.
+reason: 'Jer 11:21-23; Perspicacia «Anatot», núm. 3, cuenta la amenaza y ve cumplido el castigo cuando Babilonia invadió el
+  país. Fecha de la sección (si-jeremias, párr. 13). El texto no dice dónde estaba Jeremías: nadie va en present.'
+sources:
+- jeremias-11
+- it-anatot
+- si-jeremias
+- si-3
+- it-jeremias-libro
+links:
+- title: Jeremías 11 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/11/
+  type: bible
+- title: 'Perspicacia: «Anatot»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Anatot/
+  type: perspicacia
+checked_on: '2026-10-12'
+status: verified

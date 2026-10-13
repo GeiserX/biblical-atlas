@@ -1,0 +1,43 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jehudi
+name: Jehudí
+names:
+- name: Jehudí
+perspicacia: '1200002405'
+summary: Oficial de Jehoiaquim. Los príncipes lo mandaron a buscar a Baruc con el rollo, y después él mismo se lo leyó al
+  rey, que lo fue cortando y echando al brasero.
+reason: Perspicacia «Jehudí»; Jer 36:14, 21-23.
+sources:
+- it-jehudi
+- jeremias-36
+links:
+- title: 'Perspicacia: «Jehudí»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jehud%C3%AD/
+  type: perspicacia
+- title: Jeremías 36 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/36/
+  type: bible
+relations:
+- type: kin
+  person: netanias-hijo-de-selemias
+  word: father
+  inferred: false
+  sources:
+  - jeremias-36
+  - it-jehudi
+  - it-netanias
+  reason: Jer 36:14 da por padre de Jehudí a Netanías, y nombra después a Selemías y a Cusí.
+  checked_on: '2026-10-12'
+  status: verified
+- type: tie
+  person: jehoiaquim
+  word: master
+  inferred: false
+  sources:
+  - jeremias-36
+  - it-jehudi
+  reason: 'Jer 36:21: el rey lo envía por el rollo y se lo lee; Perspicacia «Jehudí» lo llama oficial de Jehoiaquim.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

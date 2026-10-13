@@ -1,0 +1,44 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: nebusazban
+name: Nebusazbán
+names:
+- name: Nebusazbán
+perspicacia: '1200003201'
+date:
+  from: -606
+  to: -606
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 607 a.e.c.
+summary: Jefe de los funcionarios de la corte (rabsarís) en las tropas de Nabucodonosor que arrasaron Jerusalén en 607 a.e.c.
+  Con otros príncipes ordenó que Jeremías saliera del Patio de la Guardia.
+reason: Perspicacia «Nebusazbán» y «Rabsarís»; Jer 39:13, 14.
+sources:
+- it-nebusazban
+- it-rabsaris
+- jeremias-39
+- si-3
+links:
+- title: 'Perspicacia: «Nebusazbán»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Nebusazb%C3%A1n/
+  type: perspicacia
+- title: Jeremías 39 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/39/
+  type: bible
+not_claimed:
+- 'Que sea el rabsarís de Jer 39:3: Perspicacia «Nebusazbán» lo dejaba abierto, y la TNM de estudio da allí el nombre de Nebo-Sarsekim.'
+relations:
+- type: tie
+  person: nabucodonosor-ii
+  word: master
+  inferred: false
+  sources:
+  - jeremias-39
+  - it-nebusazban
+  reason: 'Jer 39:11, 13: con los hombres principales del rey de Babilonia cumple la orden de Nabucodonosor sobre Jeremías.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

@@ -1,0 +1,20 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: imer-padre-de-pasjur
+name: Imer
+names:
+- name: Imer
+perspicacia: 1200002153#3
+disambiguation: Padre del sacerdote Pasjur de tiempos de Jeremías; Perspicacia registra a otros Imer y ve posible que sea
+  el cabeza de la decimosexta división sacerdotal.
+summary: Padre del sacerdote Pasjur, que puso a Jeremías en el cepo. Si «hijo de Imer» quiere decir descendiente, Perspicacia
+  ve posible que sea el Imer que encabezó una división sacerdotal en días de David.
+reason: Perspicacia «Imer», núm. 3; Jer 20:1.
+sources:
+- it-imer
+- jeremias-20
+links:
+- title: 'Perspicacia: «Imer»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Imer/
+  type: perspicacia
+checked_on: '2026-10-12'
+status: verified

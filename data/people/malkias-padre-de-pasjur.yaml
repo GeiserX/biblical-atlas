@@ -1,0 +1,36 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: malkias-padre-de-pasjur
+name: Malkías
+names:
+- name: Malkías
+- name: Malkiya
+  note: Grafía de Jer 38:1, 1Cr 9:12 y Ne 11:12, y título del artículo de Perspicacia; la entrada «Malkías» remite a su núm.
+    3.
+perspicacia: 1200002866#3
+disambiguation: El sacerdote padre de Pasjur (Jer 21:1). Perspicacia distingue a otros doce Malkiya, entre ellos el «hijo
+  del rey» de la cisterna de Jer 38:6.
+summary: Sacerdote, padre de Pasjur. Perspicacia une en una sola entrada al de Jeremías y al de las listas de sacerdotes de
+  Crónicas y Nehemías.
+reason: Perspicacia «Malkiya», núm. 3, y «Malkías»; Jer 21:1.
+sources:
+- it-malkiya
+- jeremias-21
+- jeremias-38
+links:
+- title: 'Perspicacia: «Malkiya»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Malkiya/
+  type: perspicacia
+relations:
+- type: holds_office
+  office: priest
+  inferred: true
+  sources:
+  - it-malkiya
+  - jeremias-21
+  reason: Perspicacia «Malkiya», núm. 3, lo llama sacerdote; Jer 21:1 solo lo nombra como padre de Pasjur.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- malkiya-hijo-del-rey

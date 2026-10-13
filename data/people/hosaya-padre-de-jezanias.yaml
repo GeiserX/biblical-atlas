@@ -1,0 +1,22 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hosaya-padre-de-jezanias
+name: Hosaya
+names:
+- name: Hosaya
+perspicacia: 1200002088#1
+summary: Padre de Jezanías, también llamado Azarías, el jefe militar que con Johanán pidió a Jeremías que consultara a Jehová
+  tras la muerte de Guedalías.
+reason: Perspicacia «Hosaya», núm. 1, y «Jezanías»; Jer 42:1.
+sources:
+- it-hosaya
+- it-jezanias
+- jeremias-42
+links:
+- title: 'Perspicacia: «Hosaya»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hosaya/
+  type: perspicacia
+- title: Jeremías 42 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/42/
+  type: bible
+checked_on: '2026-10-12'
+status: verified

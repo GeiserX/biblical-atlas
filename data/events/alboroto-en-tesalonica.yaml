@@ -22,8 +22,10 @@ passages:
 - Hch 17:1-10
 - 1Te 1:5, 6, 9
 - 1Te 2:1, 2, 9-14, 17
-summary: Pablo razona en la sinagoga tres sábados y se forma una congregación. Judíos celosos arman una turba, asaltan
-  la casa de Jasón y lo llevan ante los gobernantes; los hermanos envían de noche a Pablo y Silas a Berea.
+- 2Te 2:5
+- 2Te 3:7-10
+summary: Pablo razona tres sábados en la sinagoga y nace una congregación; él y Silas trabajan para mantenerse. Judíos celosos
+  asaltan la casa de Jasón y lo llevan ante los gobernantes; los hermanos envían de noche a ambos a Berea.
 reason: Perspicacia «Jasón» (párr. 1) y «Pablo» (párr. 16). «Tesalónica», párr. 1, y el estudio 3, párr. 24, ponen la congregación
   hacia 50.
 sources:
@@ -34,6 +36,8 @@ sources:
 - si-3
 - 1-tesalonicenses-1
 - 1-tesalonicenses-2
+- 2-tesalonicenses-2
+- 2-tesalonicenses-3
 search: Jasón Tesalónica alboroto
 history:
 - date: '2026-09-29'
@@ -43,5 +47,9 @@ history:
 - date: '2026-09-29'
   change: La razón nombra las fuentes que dan el año.
   source: hch-17
-checked_on: '2026-10-12'
+- date: '2026-10-13'
+  change: 'El resumen dice ya que Pablo y Silas trabajaron para mantenerse durante la estancia: lo cuentan 2Te 3:7-10 y 1Te
+    2:9, y Perspicacia «Tesalónica» lo pone en esa visita.'
+  source: 2-tesalonicenses-3
+checked_on: '2026-10-13'
 status: verified

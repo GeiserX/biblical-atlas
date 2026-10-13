@@ -55,6 +55,7 @@ sources:
 - openbible-geo
 - 2-reyes-19
 - isaias-37
+- jeremias-51
 links:
 - title: 'Perspicacia: «Ararat»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ararat/
@@ -62,5 +63,5 @@ links:
 - title: Génesis 8 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/G%C3%A9nesis/8/
   type: bible
-checked_on: '2026-09-30'
+checked_on: '2026-10-12'
 status: verified

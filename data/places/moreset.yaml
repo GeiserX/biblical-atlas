@@ -1,5 +1,5 @@
 # biblical-atlas: un fichero por lugar. Esquema en docs/investigacion/README.md.
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified
 id: moreset
 name: Moréset
@@ -26,6 +26,7 @@ sources:
 - openbible-geo
 - miqueas-1
 - si-miqueas
+- jeremias-26
 links:
 - title: 'Perspicacia: «Moréset, Moréset-gat»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Mor%C3%A9set-Mor%C3%A9set-gat/

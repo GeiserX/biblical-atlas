@@ -25,6 +25,7 @@ sources:
 - w03-andaremos-en-el-nombre
 - miqueas-7
 - w03-que-espera-jehova
+- jeremias-26
 links:
 - title: 'Perspicacia: «Miqueas»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Miqueas/
@@ -46,7 +47,26 @@ relations:
   reason: Miq 1:1 lo llama Miqueas de Moréset, igual que Jer 26:18. Perspicacia lo tiene por natural de allí.
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-30'
+- type: holds_office
+  office: prophet
+  date:
+    from: -776
+    to: -716
+    precision: range
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 777-717 a.e.c.
+  sources:
+  - jeremias-26
+  - tnm-tabla
+  - it-miqueas
+  reason: 'Jer 26:18: profetizaba en días del rey Ezequías. La Tabla de los libros y Perspicacia «Miqueas», núm. 7, alargan
+    su obra a Jotán y Acaz, c. 777-717.'
+  inferred: false
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
 status: verified
 distinct_from:
 - miqueas-de-efrain

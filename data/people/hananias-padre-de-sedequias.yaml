@@ -1,0 +1,26 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hananias-padre-de-sedequias
+name: Hananías
+names:
+- name: Hananías
+perspicacia: 1200001853#4
+disambiguation: El padre del príncipe Sedequías; no Hananías hijo de Azur, el profeta falso, ni el abuelo de Iriya, ni el
+  compañero de Daniel.
+distinct_from:
+- hananias-hijo-de-azur
+- hananias-abuelo-de-iriya
+- sadrac
+summary: Padre de Sedequías, príncipe judaíta que servía en la corte del rey Jehoiaquim. La Biblia solo lo nombra en Jer 36:12.
+reason: Perspicacia «Hananías», núm. 4; Jer 36:12.
+sources:
+- it-hananias
+- jeremias-36
+links:
+- title: 'Perspicacia: «Hananías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hanan%C3%ADas/
+  type: perspicacia
+- title: Jeremías 36 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/36/
+  type: bible
+checked_on: '2026-10-12'
+status: verified

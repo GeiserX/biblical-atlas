@@ -5,6 +5,8 @@ names:
 - name: Nabucodonosor
 - name: Nabucodonosor II
   note: Así lo distinguen los historiadores de un rey babilonio anterior.
+- name: Nabucodorosor
+  note: Variante de la grafía que dan las notas de Jer 21:2, 7; 24:1; 25:1, 9 y 35:11, y el título de su artículo en Perspicacia.
 date:
   from: -623
   to: -581
@@ -23,6 +25,21 @@ sources:
 - daniel-4
 - si-3
 - 2-reyes-25
+- jeremias-21
+- jeremias-24
+- jeremias-25
+- jeremias-27
+- jeremias-29
+- jeremias-32
+- jeremias-34
+- jeremias-35
+- jeremias-37
+- jeremias-39
+- jeremias-46
+- jeremias-49
+- jeremias-50
+- jeremias-51
+- jeremias-52
 links:
 - title: 'Perspicacia: «Nabucodonosor, Nabucodorosor»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Nabucodonosor-Nabucodorosor/
@@ -62,5 +79,5 @@ relations:
   office: king
   status: verified
 perspicacia: '1200003200'
-checked_on: '2026-09-30'
+checked_on: '2026-10-12'
 status: verified

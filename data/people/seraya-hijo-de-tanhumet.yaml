@@ -20,6 +20,7 @@ reason: Perspicacia «Seraya», núm. 7; 2Re 25:23, 26; también Jer 40:8, 13-16
 sources:
 - it-seraya
 - 2-reyes-25
+- jeremias-40
 links:
 - title: 'Perspicacia: «Seraya»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Seraya/
@@ -35,8 +36,9 @@ relations:
   sources:
   - 2-reyes-25
   - it-seraya
+  - jeremias-40
   reason: '2Re 25:23: Seraya hijo de Tanhúmet.'
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-12'
   status: verified
 - type: lived_in
   place: egipto
@@ -52,5 +54,6 @@ distinct_from:
 - seraya-hijo-de-azarias
 - seraya-secretario-de-david
 - seraya-hijo-de-nerias
-checked_on: '2026-10-01'
+- seraya-hijo-de-azriel
+checked_on: '2026-10-12'
 status: verified

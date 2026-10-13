@@ -4,9 +4,12 @@ name: Sedequías
 names:
 - name: Sedequías
 perspicacia: 1200004685#1
-disambiguation: Profeta falso de la corte de Acab; no es el último rey de Judá ni el Sedequías hijo de Maaseya de Jer 29.
+disambiguation: Profeta falso de la corte de Acab; no es el último rey de Judá ni Sedequías hijo de Maaseya, el falso profeta
+  del destierro.
 distinct_from:
 - sedequias
+- sedequias-hijo-de-maaseya
+- sedequias-hijo-de-hananias
 summary: Uno de los profetas de Acab. Con unos cuernos de hierro le prometió que vencería a los sirios en Ramot-Galaad, y
   abofeteó a Micaya cuando este anunció la derrota.
 reason: Perspicacia «Sedequías», núm. 1; 1Re 22:11, 24 y 2Cr 18:10, 23.
@@ -28,5 +31,10 @@ relations:
   reason: '1Re 22:11, 24: Sedequías hijo de Kenaaná.'
   checked_on: '2026-09-30'
   status: verified
-checked_on: '2026-09-30'
+history:
+- date: '2026-10-12'
+  change: 'Sin la cita de Jer 29: ese capítulo no habla de este Sedequías, y la cita lo ponía en su página. El homónimo tiene
+    ya ficha propia.'
+  source: jeremias-29
+checked_on: '2026-10-12'
 status: verified

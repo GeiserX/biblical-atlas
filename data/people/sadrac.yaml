@@ -21,6 +21,7 @@ sources:
 - it-daniel
 - it-mesac
 - daniel-1
+- it-hananias
 links:
 - title: 'Perspicacia: «Sadrac»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sadrac/
@@ -52,5 +53,11 @@ relations:
     cuándo vivió.'
   checked_on: '2026-09-28'
   status: verified
-checked_on: '2026-09-28'
+disambiguation: Compañero de Daniel cuyo nombre hebreo era Hananías; no es el profeta falso hijo de Azur, el padre del príncipe
+  Sedequías ni el abuelo de Iriya.
+checked_on: '2026-10-12'
 status: verified
+distinct_from:
+- hananias-hijo-de-azur
+- hananias-padre-de-sedequias
+- hananias-abuelo-de-iriya
