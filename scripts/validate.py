@@ -111,9 +111,11 @@ WARNING_CODES = ("wrong_owner", "pair_twice", "outside_pending", "unlisted_capti
                  "bare_company", "no_office", "no_certainty", "same_as_owner", "no_reference", "title_type",
                  "type_without_role", "shared_point")
 # «De aviso a error»: cuando main llega a 0 avisos de un código, el código se añade aquí, en un cambio revisado, y ya
-# no vuelve atrás. Un código de esta lista sale como error.
-PROMOTED = set()
-# Un campo que su tipo pide y que falta: estos dos avisan hasta sus decisiones (O1 y O2); cualquier otro es un error.
+# no vuelve atrás. Un código de esta lista sale como error y no puede estar en el presupuesto: cada código lo manda
+# una sola lista.
+PROMOTED = frozenset({"outside_pending", "no_office", "no_certainty", "same_as_owner", "title_type"})
+# Un campo que su tipo pide y que falta: estos dos pasan por warn() con su código, que ya está en PROMOTED (decisiones
+# O1 y O2 hechas); cualquier otro es un error.
 MISSING_WARNS = {("succeeds", "office"): "no_office", ("same_as", "certainty"): "no_certainty"}
 RE_TITULO_PAPEL = re.compile(r"^(Nace|Nacimiento|Muere|Muerte)\b")
 # Cuántos avisos de cada código admite main. Un código que no sale en el fichero admite 0. Se baja editando el número.
@@ -222,7 +224,7 @@ def load(data_dir):
     if not vocabulary:
         errores.append("data/vocabulary.yaml: no existe o está vacío; sin él no se pueden validar las relaciones")
     datos = {"sources": fuentes, "books": books, "calendar": calendar, "vocabulary": vocabulary,
-             "_errores": errores, "_origen_fuentes": origen}
+             "_errores": errores, "_origen_fuentes": origen, "_vocabulario_propio": voc_path.parent == data_dir}
     for tipo in TYPES:
         datos[tipo] = []
         for ruta in sorted((data_dir / tipo).glob("*.yaml")):
@@ -1368,6 +1370,7 @@ def check_relations(datos, err, warn):
     types, words = voc.get("types") or {}, voc.get("words") or {}
     offices, certainty = voc.get("offices") or {}, voc.get("certainty") or {}
     outside = {(o.get("type"), o.get("caption")): o for o in voc.get("outside") or [] if isinstance(o, dict)}
+    usados = set()                               # (tipo, caption) que lleva alguna relación
     meses = {m.get("id") for m in datos["calendar"].get("months") or []}
     citadas = cited_relations(datos)
     buscador = bible_coverage.Citas(datos["books"])
@@ -1418,6 +1421,7 @@ def check_relations(datos, err, warn):
                 err(f"{rd}: una relación {t} lleva word (o caption mientras se decide su palabra)")
             if cap:
                 fuera = outside.get((t, cap))
+                usados.add((t, cap))
                 if fuera is None:
                     warn("unlisted_caption", f"{rd}: el texto «{cap}» no es una palabra ni está en outside del "
                                              f"vocabulario; elige una palabra o añade el texto con su porqué")
@@ -1466,6 +1470,12 @@ def check_relations(datos, err, warn):
                                      f"tiene un capítulo entre sus sources y ningún tramo de la cobertura la cita; "
                                      f"su arista no se dibuja")
         keys_of_one_file(pid, donde, rels, voc, err)
+    # Un texto de outside que no lleva ninguna relación sobra: se quita, y vuelve con su porqué si una lo pide. Solo
+    # cuando el vocabulario es de la misma carpeta que las fichas: con --data y sin vocabulary.yaml faltan fichas.
+    if datos.get("_vocabulario_propio"):
+        for tipo, cap in outside:
+            if cap and (tipo, cap) not in usados:
+                err(f"data/vocabulary.yaml: outside «{cap}» ({tipo}) no lo lleva ninguna relación; quítalo")
     pairs(hacia, words, warn)
     parents_children(hacia, words, err)
 
@@ -2413,13 +2423,15 @@ def comprobar_enlaces(lista):
 def leer_presupuesto(ruta):
     """Devuelve {código: avisos que se admiten}. Cada línea es un código y un número; # empieza un comentario.
 
-    Un código que no existe, un número que no lo es o un código repetido dan ValueError: un presupuesto mal escrito
-    no puede dejar pasar avisos en silencio."""
+    Un código que no existe, un número que no lo es, un código repetido o uno que ya es error dan ValueError: un
+    presupuesto mal escrito no puede dejar pasar avisos en silencio."""
     tope = {}
     for n, linea in enumerate(Path(ruta).read_text(encoding="utf-8").splitlines(), 1):
         partes = linea.split("#", 1)[0].split()
         if not partes:
             continue
+        if partes[0] in PROMOTED:
+            raise ValueError(f"{ruta}:{n}: «{partes[0]}» ya es un error (PROMOTED en validate.py) y no lleva presupuesto")
         if len(partes) != 2 or partes[0] not in WARNING_CODES or not partes[1].isdigit() or partes[0] in tope:
             raise ValueError(f"{ruta}:{n}: «{linea.strip()}» no es «código número» con un código de aviso, una vez")
         tope[partes[0]] = int(partes[1])
