@@ -1323,7 +1323,9 @@ function pintarViajeros(ver) {
   // parada lo nombra («Con Pablo en esta parada», tipos/parada.js). Con uno propio, situado por sus sucesos y no por las
   // paradas de Pablo, se adelantaba a él en cada tramo y se metía debajo en cada parada: al reproducir, aparecía y
   // desaparecía.
+  // La persona elegida conserva su marcador aunque vaya con Pablo: es a quien se mira.
   const conEl = marcaPablo.puesta ? conPablo(E.t) : new Set();
+  if (E.sel?.tipo === 'persona') conEl.delete(E.sel.id);
   for (const p of personas) {
     const w = ver && !conEl.has(p) ? BE.donde(p, E.t) : null;
     let m = marcasViajero.get(p);

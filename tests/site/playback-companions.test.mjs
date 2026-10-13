@@ -130,6 +130,25 @@ for (const [speed, paso] of [['three months a second', 0.25 / 60], ['one year a 
   });
 }
 
+test('a companion who is the chosen person keeps his own marker while he travels with Paul', async () => {
+  const r = await page.evaluate(async () => {
+    const { BE, setT, seleccionar } = window.__be;
+    const frame = () => new Promise((res) => requestAnimationFrame(() => setTimeout(res, 0)));
+    // A stop of the first journey where Bernabé is with Paul and the data place him.
+    const s = BE.P.find((x) => x.viaje.id === 'primer-viaje' && BE.acompanantes(x.viaje, x.p.orden).includes('bernabe') && BE.donde('bernabe', (x.a + x.b) / 2)?.pos);
+    const t = (s.a + s.b) / 2;
+    const shown = () => !!document.querySelector('.viajero[data-sel="persona:bernabe"]')?.isConnected;
+    seleccionar(null, { mover: false, encuadrar: false }); setT(t); await frame();
+    const plain = shown();
+    seleccionar({ tipo: 'persona', id: 'bernabe' }, { mover: false, encuadrar: false }); setT(t); await frame();
+    const chosen = shown();
+    seleccionar(null, { mover: false, encuadrar: false }); await frame();
+    return { at: s.lugar.nombre, plain, chosen };
+  });
+  console.log(`Bernabé at ${r.at}: marker ${r.plain ? 'shown' : 'hidden'} with nothing chosen, ${r.chosen ? 'shown' : 'hidden'} when he is chosen`);
+  assert.deepEqual([r.plain, r.chosen], [false, true]);
+});
+
 test('no page error in the whole run', () => {
   assert.deepEqual(errors, []);
 });
