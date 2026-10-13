@@ -1578,8 +1578,11 @@ function pintarEtiquetas() {
     // por encima de los candidatos resaltados (cand--del-foco, z-index 2): en la entrada en Jerusalén, Betfagué y el monte
     // de los Olivos van juntos y el nombre del monte se lee por encima del punto.
     m.el.style.zIndex = !enRes && id !== actual ? '1' : '3';
-    const it = { id, el: m.el, medir: m.el.querySelector(m.region ? '.region-texto' : '.etiqueta'), prio, desde, hasta, pos: [m.l.lon, m.l.lat], esSel, peso: tramosDe(id).length, deLugar: !m.region && m.clase !== 'agua',
-      foco: !!vecinos && (vecino || !!resaltadoMapa?.has(id)) };   // fuera de una ruta, nada es de la ruta
+    const deLugar = !m.region && m.clase !== 'agua';
+    // Fuera de una ruta, nada es de la ruta. Una región o un mar de la ruta tampoco: se nombra con su prioridad de
+    // siempre y no aparta a nadie (Cilicia, la parada que sigue a Antioquía de Siria, escondía el nombre de Pablo).
+    const it = { id, el: m.el, medir: m.el.querySelector(m.region ? '.region-texto' : '.etiqueta'), prio, desde, hasta, pos: [m.l.lon, m.l.lat], esSel, peso: tramosDe(id).length, deLugar,
+      foco: !!vecinos && deLugar && (vecino || !!resaltadoMapa?.has(id)) };
     items.push(it);
     marcas.push({ m, it });
     if (prio === 20 && m.clase !== 'region' && m.clase !== 'agua') puntos.push(it);   // los menores se agrupan

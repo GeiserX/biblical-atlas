@@ -289,3 +289,24 @@ test('430 and 1440: every tour opens with all its known places in view', async (
     await page.context().close();
   }
 });
+
+test('1440: a region next on the route (Cilicia after Antioquía de Siria) does not push Pablo\'s name aside', async () => {
+  const page = await open(DESKTOP);
+  await choose(page, 'viaje:segundo-viaje');
+  await still(page);
+  const next = await page.evaluate(() => {
+    const ps = window.BE.P.filter((s) => s.viaje?.id === 'segundo-viaje'), aqui = ps[0].lugar.id;
+    const sig = ps.find((s) => s.lugar.id !== aqui).lugar;
+    window.BE.setT((ps[0].a + ps[0].b) / 2);
+    return { aqui, sig: sig.id, tipo: sig.tipo };
+  });
+  assert.deepEqual(next, { aqui: 'antioquia-de-siria', sig: 'cilicia', tipo: 'region' }, 'the stop after Antioquía de Siria is the region Cilicia');
+  await still(page);
+  const pablo = await page.evaluate(() => {
+    const el = document.querySelector('.pablo');
+    return { puesto: !!el?.checkVisibility(), nombre: !!el && !el.classList.contains('sin-etiqueta') && el.querySelector('.pablo-rotulo').checkVisibility({ visibilityProperty: true }) };
+  });
+  assert.deepEqual(pablo, { puesto: true, nombre: true }, 'Pablo and his name on the map');
+  assert.deepEqual(page.pageErrors, []);
+  await page.context().close();
+});
