@@ -12,7 +12,7 @@ date:
     en el año décimo de Sedequías)'
 narrative_order:
   series: jeremias
-  order: 37002
+  order: 637002
 places:
 - jerusalen
 - egipto
@@ -26,7 +26,7 @@ passages:
 summary: Durante el sitio, el ejército del faraón sale de Egipto y los caldeos dejan el cerco de Jerusalén por un tiempo.
   Jehová avisa por Jeremías que los egipcios se volverán y los caldeos regresarán.
 reason: Jer 37:5, 7, 11; 34:21. Perspicacia «Sedequías», núm. 4, apartado «Se rebela contra Nabucodonosor», párr. 3. Entre
-  el inicio del sitio (609, estudio 3) y la compra del campo de Hanamel (608), con Jeremías ya preso en el Patio.
+  el inicio del sitio (609, estudio 3) y la compra del campo de Hanamel (608). Va antes de Jer 34:12-22.
 sources:
 - jeremias-37
 - it-sedequias
@@ -38,5 +38,10 @@ links:
 - title: 'Perspicacia: «Sedequías»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sedequ%C3%ADas/
   type: perspicacia
-checked_on: '2026-10-12'
+history:
+- date: '2026-10-13'
+  change: 'El orden del relato pasa de 37002 a 637002: la serie sigue las fechas de los sucesos, porque el libro va por temas
+    y no en el orden en que pasaron.'
+  source: it-jeremias-libro
+checked_on: '2026-10-13'
 status: verified

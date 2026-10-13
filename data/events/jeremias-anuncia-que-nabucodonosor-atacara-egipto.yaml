@@ -9,9 +9,6 @@ date:
   type: narrative
   chronology: tnm
   text: 'entre 647 y 580 a.e.c. (tiempo narrativo: durante la obra de Jeremías)'
-narrative_order:
-  series: jeremias
-  order: 46013
 places:
 - egipto
 people:
@@ -37,5 +34,10 @@ links:
 - title: 'Perspicacia: «Jeremías, Libro de»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jerem%C3%ADas-Libro-de/
   type: perspicacia
-checked_on: '2026-10-12'
+history:
+- date: '2026-10-13'
+  change: 'Sale de la serie jeremias (orden 46013): el capítulo no nombra rey ni da año, y el libro va por temas, así que
+    nada lo sitúa antes o después de los demás.'
+  source: it-jeremias-libro
+checked_on: '2026-10-13'
 status: verified
