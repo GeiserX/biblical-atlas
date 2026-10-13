@@ -6,6 +6,9 @@ a { color: var(--link); }
 
 .cal-cab { position: sticky; top: 0; z-index: 2; display: flex; align-items: center; gap: 12px; height: 60px; padding: 0 20px; background: var(--surface); border-bottom: 1px solid var(--line); }
 .cal-cab .be-logo, .cal-cab .be-btn { text-decoration: none; }
+/* La luna del modo reunión (js/tema.js), como en la barra del mapa. */
+#reunion-boton { cursor: pointer; flex: none; }
+#reunion-boton[aria-pressed="true"] { background: var(--gold-soft); color: var(--gold-ink); border-color: var(--gold-line); }
 
 .cal { max-width: 960px; margin: 0 auto; padding: 36px 24px 48px; }
 .cal-eyebrow { color: var(--tier1); }
@@ -91,6 +94,7 @@ a { color: var(--link); }
 @media (pointer: coarse) {
   .cal-cab .be-logo { min-height: 44px; }
   .cal-cab .be-btn { height: 44px; }
+  #reunion-boton { width: 44px; }
   .cal-indice { row-gap: 10px; }
   .cal-indice a { height: 44px; }
   .cal-por-que summary { min-height: 44px; display: flex; align-items: center; }

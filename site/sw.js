@@ -41,7 +41,7 @@ const PRECACHE = [
   'js/visit-history.js', 'js/buscar.js', 'js/grafo.js', 'js/lectura.js', 'js/recorridos.js', 'js/notes.js',
   'js/portada.js', 'js/tipos/lugar.js', 'js/tipos/carta.js', 'js/tipos/hallazgo.js', 'js/tipos/viaje.js',
   'js/tipos/parada.js', 'js/tipos/evento.js', 'js/tipos/periodo.js', 'js/tipos/persona.js', 'js/tipos/pasaje.js',
-  'js/tipos/libro.js', 'js/tipos/recorrido.js', 'js/passage-link.js', 'js/volver.js', 'js/offline.js',
+  'js/tipos/libro.js', 'js/tipos/recorrido.js', 'js/passage-link.js', 'js/volver.js', 'js/offline.js', 'js/tema.js',
   'data.core.json',
 ];
 const MAPLIBRE = 'https://unpkg.com/maplibre-gl@6.11.2/dist/';

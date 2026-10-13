@@ -7,6 +7,9 @@ a { color: var(--link); }
 .acerca-cab { position: sticky; top: 0; z-index: 2; display: flex; align-items: center; gap: 12px; height: 60px; padding: 0 20px; background: var(--surface); border-bottom: 1px solid var(--line); }
 .acerca-cab .be-logo { text-decoration: none; }
 .acerca-cab .be-btn { text-decoration: none; }
+/* La luna del modo reunión (js/tema.js), como en la barra del mapa. */
+#reunion-boton { cursor: pointer; flex: none; }
+#reunion-boton[aria-pressed="true"] { background: var(--gold-soft); color: var(--gold-ink); border-color: var(--gold-line); }
 
 .acerca { max-width: 760px; margin: 0 auto; padding: 36px 24px 48px; }
 .acerca-eyebrow { color: var(--tier1); }
@@ -68,6 +71,7 @@ a { color: var(--link); }
 @media (any-pointer: coarse) {
   .acerca-cab .be-logo { min-height: 44px; }
   .acerca-cab .be-btn { height: 44px; }
+  #reunion-boton { width: 44px; }
   .acerca .acerca-indice { row-gap: 10px; }
   .acerca-indice a { height: 44px; }
   /* Los nombres de «Gracias» y su licencia: la zona de toque crece sin mover el texto. */
