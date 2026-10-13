@@ -25,7 +25,7 @@ document.addEventListener('click', (e) => { if (e.target.closest('.ma-item')) $(
 
 function todo() {
   const { viaje: id, tramo: k } = estado();
-  const v = window.VJ.viaje(id || POR_DEFECTO);
+  const v = window.VJ.viaje(id) || window.VJ.viaje(POR_DEFECTO);
   lista();
   const t = k != null ? v.t[k] : null;
   const [a, b] = t ? nombreTramo(v, t) : [];

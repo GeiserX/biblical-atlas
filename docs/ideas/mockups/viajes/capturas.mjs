@@ -119,6 +119,20 @@ try {
     }
     await ctx.close();
   }
+  // Un enlace viejo o mal copiado (#viaje=<id que no existe>) no deja la página en blanco: cada diseño enseña algo.
+  const ctx = await browser.newContext(ANCHOS[0][1]);
+  for (const [d, sel] of [['cuaderno', '.cu-item'], ['hoja', '.ho-n'], ['mapa', '.ma-leg'], ['esquema', '.es-fila']]) {
+    if (solo && d !== solo) continue;
+    const page = await ctx.newPage();
+    const errores = [];
+    page.on('pageerror', (e) => errores.push(String(e)));
+    await page.goto(`${base}/${d}/#viaje=no-existe`);
+    if (!(await page.waitForSelector(sel, { timeout: 5000 }).catch(() => null))) errores.push(`no aparece ${sel}`);
+    console.log(`${errores.length ? 'FALLA' : 'bien '} viaje desconocido ${d}${errores.length ? ` · ${errores.join(' · ')}` : ''}`);
+    if (errores.length) fallos.push(`desconocido-${d}`);
+    await page.close();
+  }
+  await ctx.close();
 } finally {
   await browser.close();
 }
