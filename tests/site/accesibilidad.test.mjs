@@ -682,3 +682,28 @@ test('1440: a dot under the zone of a neighbour keeps its own hover and click', 
   assert.deepEqual(page.errors, []);
   await page.context().close();
 });
+
+// A sea, river or region whose name is hidden draws nothing: its 24 px button must take no click, nor turn the cursor.
+test('1440: a hidden sea, river or region name takes no click', async () => {
+  const page = await keyboardPage('1440', 't=-1473.5000');
+  await page.evaluate(() => window.__be.map.jumpTo({ zoom: 6 }));
+  await settle(page);
+  const r = await page.evaluate(() => {
+    const out = { hidden: 0, hit: [] };
+    for (const el of window.__be.map.getContainer().querySelectorAll('.marca-agua.sin-etiqueta, .marca-region.sin-etiqueta')) {
+      if (!el.checkVisibility()) continue;
+      const b = el.getBoundingClientRect();
+      if (b.right < 0 || b.bottom < 0 || b.left > innerWidth || b.top > innerHeight) continue;
+      out.hidden += 1;
+      const x = (b.left + b.right) / 2, y = (b.top + b.bottom) / 2;
+      for (const [dx, dy] of [[0, 0], [5, 0], [-5, 0], [0, 5], [0, -5]]) {
+        if (el.contains(document.elementFromPoint(x + dx, y + dy))) { out.hit.push(el.dataset.sel); break; }
+      }
+    }
+    return out;
+  });
+  assert.ok(r.hidden > 0, 'no hidden sea, river or region name on screen');
+  assert.deepEqual(r.hit, [], `${r.hit.length} of ${r.hidden} hidden names take a click`);
+  assert.deepEqual(page.errors, []);
+  await page.context().close();
+});
