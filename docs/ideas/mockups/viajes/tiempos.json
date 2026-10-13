@@ -74,7 +74,7 @@
      "reason": "Hch 28:14 da siete días en Puteoli.",
      "sources": ["hch-28"], "checked_on": "2026-10-12", "status": "verified"},
     {"journey": "viaje-a-roma", "kind": "leg", "from": 11, "to": 14, "value": "hasta una semana", "days": 7,
-     "text": "La nota de estudio calcula hasta una semana a pie por la Vía Apia.", "reference": "Hch 28:14",
+     "text": "La nota de estudio calcula hasta una semana de Puteoli a Roma, por la Vía Apia.", "reference": "Hch 28:14",
      "reason": "Nota de estudio de Hch 28:14: unos 245 km de Puteoli a Roma; estima hasta una semana. Es una estimación de la fuente.",
      "sources": ["nota-hechos-28"], "checked_on": "2026-10-12", "status": "verified", "estimate": true},
     {"journey": "elias-huye-al-horeb", "kind": "leg", "from": 2, "to": 3, "value": "40 días", "days": 40,
