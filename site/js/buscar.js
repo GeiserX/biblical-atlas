@@ -342,11 +342,79 @@ function esFecha(x) {
   const t = String(x || '').trim();
   return /\d/.test(t) && /e\.c\.$/.test(t) && /^(?:(?:c\.|entre|hacia|y|[-–]|\d+(?:[-–]\d+)?|a\.e\.c\.|e\.c\.)\s*)+$/.test(t);
 }
+// ---------------------------------------------------------------------------
+// Homónimos en la lista: la línea que los distingue
+// ---------------------------------------------------------------------------
+// Un trozo que empieza por el parentesco: «hijo de Jonatán», «Hijo menor de Moisés», «la nuera de Judá».
+const PARIENTE = '(?:hij[oa]|padre|madre|espos[oa]|herman[oa]|niet[oa]|bisniet[oa]|nuera|suegr[oa]|yerno|tío|tía|sobrin[oa]|prim[oa]|cuñad[oa]|abuel[oa]|descendiente|antepasad[oa]|primogénit[oa]|viuda|marido|concubina)';
+const PARENTESCO = new RegExp(`^(?:(?:el|la|su|medi[oa]|segund[oa]|primer[oa]?|tercer[oa]?|cuart[oa]|últim[oa])\\s+)?${PARIENTE}\\b`, 'i');
+/** El primer trozo de un texto de la ficha que puede distinguirla: su primera frase sin paréntesis y sin el nombre
+    delante (dicho también de dos formas, «Paltí o Paltiel hijo de Lais», o con artículo, «El Matat padre de Helí»),
+    hasta la primera coma (el punto de «c. 6 e.c.» o de «núm. 4» no acaba la frase), saltando la cita de la fuente
+    que la abre («núm. 4 de Perspicacia: descendiente de David») y los trozos que solo la citan («entrada núm. 2 de
+    Perspicacia») y sin la conjunción que la coma deja colgando («El padre de Zabud y, según Perspicacia…»). En una
+    persona, si ese trozo es corto (tres palabras como mucho) y no dice el parentesco, y el siguiente empieza por él, va
+    el siguiente: «Acán de Judá, hijo de Carmí» da «hijo de Carmí», y «Apóstol, hijo de
+    Alfeo», «hijo de Alfeo». Solo el siguiente, y no tras un trozo largo ni con «su»: entonces suele hablar de otra
+    persona de la frase («Sumo sacerdote casado con Jehoseba, hija del rey Jehoram», «Guerrero valiente y leal a David,
+    su tío»), como en un lugar («Pueblo de Harúz, abuelo materno del rey Amón»). Una frase que solo dice quién no es
+    («No es el Jabín…») no distingue nada. */
+function distinguishingClause(text, names, persona) {
+  const sinNombre = (s) => {
+    const r = s.replace(/^(?:el|la)\s+/i, '');
+    for (const n of names) if (n && norm(r).startsWith(norm(n)) && /^[\s,]/.test(r.slice(n.length))) return r.slice(n.length).replace(/^[\s,]+/, '');
+    return null;
+  };
+  let t = String(text || '').replace(/\s*\([^)]*\)/g, '').split(/;|(?<!(?:^|\s)(?:c|núm))\.\s+(?=[A-ZÁÉÍÓÚÑ¿«\d])/)[0].replace(/\.$/, '').trim()
+    .replace(/\be\.c$/, 'e.c.');
+  const resto = sinNombre(t);
+  if (resto != null) t = (/^[ou]\s/.test(resto) ? sinNombre(resto.slice(2)) : null) ?? resto;
+  t = t.replace(/^[^:]*(?:Perspicacia|\bnúm\.)[^:]*:\s*/, '');
+  if (/^no\b/i.test(t)) return '';
+  const parts = t.split(/,\s+/).filter((x) => x && !/Perspicacia|\bnúm\./.test(x));
+  const i = persona && parts.length > 1 && parts[0].split(' ').length <= 3 && !PARENTESCO.test(parts[0]) && PARENTESCO.test(parts[1]) && !/^su\s/i.test(parts[1]) ? 1 : 0;
+  // Tras «padre de X» o «madre de X», una aposición con artículo dice quién es X y completa el trozo: «padre de José, el
+  // esposo de María» no es el patriarca Jacob, también padre de un José. Tras otro trozo («hijo de Bicrí, el benjaminita
+  // que se sublevó…»), la aposición habla de la persona de la ficha, y pegada parecería del padre: no se añade.
+  const conAposicion = /^(?:el\s+|la\s+)?(?:padre|madre)\s+de\b/i.test(parts[i] || '') && /^(?:el|la|los|las)\s/.test(parts[i + 1] || '');
+  const part = conAposicion ? `${parts[i]}, ${parts[i + 1]}` : (parts[i] || '');
+  return part.replace(/\s+(?:y|e|o|u|ni)$/, '');
+}
+/** La línea que distingue una ficha de otra que se llama igual (docs/ideas/homonimos.md), sacada de la propia ficha: el
+    primer trozo de `desambiguacion` o de `resumen` que dice el parentesco («hijo de Jonatán» y «hijo de Saúl y
+    Rizpá»); si ninguno lo dice, el de `desambiguacion`, que dice la época, el lugar o el oficio («El rey de Guerar en
+    tiempos de Abrahán»), y si no hay, el de `resumen` («Ciudad de Benjamín»). Los dos textos llegan con el detalle;
+    antes no hay línea. Que ningún grupo de homónimos de data/ repita la línea lo comprueba
+    tests/site/search-namesakes.test.mjs con scripts/homonyms.py. */
+function distinguishingLine(sel) {
+  const o = objetoSel(sel), names = [o?.nombre || o?.titulo, ...(o?.nombres || []).map((n) => n.nombre)];
+  const persona = sel?.tipo === 'persona';
+  const trozos = [distinguishingClause(o?.desambiguacion, names, persona), distinguishingClause(o?.resumen, names, persona)];
+  return trozos.find((x) => PARENTESCO.test(x)) || trozos.find(Boolean) || '';
+}
+/** La línea de una fila sin las palabras del principio que comparte con la de otra fila homónima de la misma lista, para
+    que el teléfono no corte justo lo que las distingue: «rey amalequita de tiempos de Balaam» y «rey amalequita que
+    venció Saúl…» quedan en «…de tiempos de Balaam» y «…que venció Saúl…». Solo desde dos palabras compartidas, y sin
+    llevarse la preposición o el artículo que abre lo que queda: «el padre de Ehúd» y «el padre de Simeí» quedan en «…de
+    Ehúd» y «…de Simeí», y «hijo de Jonatán» y «hijo de Saúl» no cambian. */
+function sinComienzoComun(line, otras) {
+  const w = line.split(/\s+/);
+  let k = 0;
+  for (const o of otras) {
+    const v = String(o || '').split(/\s+/);
+    let j = 0;
+    while (j < w.length - 1 && j < v.length && norm(w[j]) === norm(v[j])) j++;
+    k = Math.max(k, j);
+  }
+  while (k > 0 && /^(?:de|del|a|al|en|el|la|los|las|y|e|o|u)$/i.test(w[k - 1])) k--;
+  return k >= 2 ? `…${w.slice(k).join(' ')}` : line;
+}
 /** Lo que enseña una fila de resultados, para la lista de arriba y la de la portada: la forma, la palabra del tipo, el
-    título, la etiqueta, el resto de la línea y la fecha. La fecha va una sola vez, en su píldora: se quita de la línea
-    lo que es la fecha del resultado, dicha como sea, y si la línea la decía tal cual la dan los datos («36 e.c.»,
-    «entre 1514 y 1513 a.e.c.»), esa es la de la píldora, más exacta que la corta. */
-function filaResultado(r) {
+    título, la etiqueta, la línea que lo distingue de otra fila de `list` que se llama igual, el resto de la línea y la
+    fecha. La fecha va una sola vez, en su píldora: se quita de la línea lo que es la fecha del resultado, dicha como
+    sea, y si la línea la decía tal cual la dan los datos («36 e.c.», «entre 1514 y 1513 a.e.c.»), esa es la de la
+    píldora, más exacta que la corta. */
+function filaResultado(r, list = []) {
   const deTipo = !!(r.sel && !r.accion);
   let forma;
   if (r.accion && !r.sel) forma = r.grupo === 'Preguntas' ? 'conexion' : 'anio';
@@ -362,7 +430,12 @@ function filaResultado(r) {
     meta = trozos.filter((x) => !esFecha(x) && !suya.includes(norm(x.trim()))).join(' · ');
     if (propia) fecha = propia.trim();
   }
-  return { forma, tipo, deTipo, titulo: r.titulo, etiqueta: r.etiqueta || '', meta, fecha };
+  // Si otra fila de la lista es del mismo tipo y se llama igual, la línea que la distingue va primero; el texto de la
+  // ficha del que sale no se repite detrás. «Juan · persona» y «Juan · libro» ya se distinguen por el tipo.
+  const iguales = r.sel ? list.filter((x) => x !== r && x.sel?.tipo === r.sel.tipo && x.titulo === r.titulo) : [];
+  const distinguisher = iguales.length ? sinComienzoComun(distinguishingLine(r.sel), iguales.map((x) => distinguishingLine(x.sel))) : '';
+  if (distinguisher && r.meta) { const o = objetoSel(r.sel); if (r.meta === o?.desambiguacion || r.meta === o?.resumen) meta = ''; }
+  return { forma, tipo, deTipo, titulo: r.titulo, etiqueta: r.etiqueta || '', distinguisher, meta, fecha };
 }
 let resultados = [], activo = 0, previa = false;
 function pintarResultados() {
@@ -379,10 +452,15 @@ function pintarResultados() {
       grupo = r.grupo;
       const tipoNodo = r.sel ? (BE.tipo(r.sel.tipo)?.nodo || 'evento') : 'evento';
       const inicial = r.accion && !r.sel ? (r.grupo === 'Fechas' || r.grupo === 'Meses hebreos' ? '◷' : '?') : r.titulo[0];
-      const f = filaResultado(r);
+      const f = filaResultado(r, resultados);
+      // Una fila homónima lleva su etiqueta («2 con este nombre») en la línea, detrás de lo que la distingue, como en la
+      // portada: en el título, con la fecha larga de un rey, partía el título en dos renglones en el teléfono.
+      const enLinea = f.distinguisher && f.etiqueta;
+      const linea = [f.deTipo && f.tipo ? esc(f.tipo) : '', f.distinguisher ? `<span class="be-distinguisher">${esc(f.distinguisher)}</span>` : '',
+        enLinea ? esc(f.etiqueta) : '', esc(f.meta)].filter(Boolean).join(' · ');
       return `${cab}<div class="be-result${i === activo ? ' be-result--active' : ''}" role="option" id="res-${i}" aria-selected="${i === activo}" data-i="${i}">
         <span class="be-node be-node--${tipoNodo} be-node--sm" aria-hidden="true">${esc(inicial)}</span>
-        <span class="res-texto"><span class="be-result__title">${marcar(f.titulo, q.value)}${f.etiqueta ? ` <span class="res-etiqueta">${esc(f.etiqueta)}</span>` : ''}</span><span class="be-row__meta">${f.deTipo && f.tipo ? `${f.tipo}${f.meta ? ' · ' : ''}` : ''}${esc(f.meta)}</span></span>
+        <span class="res-texto"><span class="be-result__title">${marcar(f.titulo, q.value)}${f.etiqueta && !enLinea ? ` <span class="res-etiqueta">${esc(f.etiqueta)}</span>` : ''}</span><span class="be-row__meta">${linea}</span></span>
         ${f.fecha ? `<span class="res-fecha">${esc(f.fecha)}</span>` : ''}</div>`;
     }).join('');
   }
@@ -438,7 +516,7 @@ function elegirResultado(r) {
   }
 }
 /** Busca y abre la lista. La búsqueda contesta con el núcleo; el detalle (js/data-chunks.js) solo añade la línea que
-    distingue a dos personas del mismo nombre. Si aún no ha llegado, lo pide y busca otra vez al llegar, si la caja
+    distingue a dos fichas del mismo nombre. Si aún no ha llegado, lo pide y busca otra vez al llegar, si la caja
     sigue con algo escrito y con el foco. */
 function buscarYPintar(texto) {
   BE.chunks.ready(rebuscar);
@@ -797,5 +875,5 @@ function anunciar() {
 BE.pintores.push((c) => { if (c.cursor || c.panel) anunciar(); });
 
 Object.assign(BE, { buscar, cerrarResultados, iniciarBusqueda, buscarTexto, leerAnio, anioPregunta, objetoSel, fechaSel, historia, textoCita,
-  filaResultado, marcar, elegirResultado, sugerencias, esExacta, pesador });
+  filaResultado, distinguishingLine, marcar, elegirResultado, sugerencias, esExacta, pesador });
 })();
