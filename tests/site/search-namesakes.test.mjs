@@ -114,14 +114,15 @@ async function rowsFor(page, list, name) {
   const rows = await page.locator(list.row).evaluateAll((els, { name, meta, fn }) => {
     const visible = new Function(`return (${fn})`)();
     return els.filter((r) => r.querySelector('.be-result__title, .portada-op__tit').textContent.replace(/\d+ con este nombre/, '').trim() === name)
-      .map((r) => ({ shown: visible(r.querySelector(meta)), line: r.querySelector('.be-distinguisher')?.textContent || '', height: r.getBoundingClientRect().height }));
+      .map((r) => ({ shown: visible(r.querySelector(meta)), full: r.querySelector(meta).textContent, line: r.querySelector('.be-distinguisher')?.textContent || '', height: r.getBoundingClientRect().height }));
   }, { name, meta: list.meta, fn: visibleText.toString() });
   return { rows, plain };
 }
 
 /** The checks shared by a person and a place: two rows, each line showing on screen the word that tells it apart, the
-    two lines different where the phone cuts them, and rows no taller than a row with no namesake. */
-async function checkNamesakes(name, words) {
+    two lines different where the phone cuts them, rows no taller than a row with no namesake, and no line repeating the
+    text of the record the distinguishing line comes from (`absent`). */
+async function checkNamesakes(name, words, { absent = [] } = {}) {
   for (const screen of [DESKTOP, PHONE]) {
     for (const list of LISTS) {
       const where = `${list.name} at ${screen.viewport.width}`;
@@ -132,6 +133,7 @@ async function checkNamesakes(name, words) {
         assert.ok(rows.some((r) => r.line.includes(w) && r.shown.includes(w)), `${where}: no row shows «${w}» (${rows.map((r) => r.shown).join(' / ')})`);
       }
       assert.notEqual(rows[0].shown, rows[1].shown, `${where}: the two rows look the same on screen: «${rows[0].shown}»`);
+      for (const a of absent) assert.ok(rows.every((r) => !r.full.includes(a)), `${where}: a line repeats «${a}» (${rows.map((r) => r.full).join(' / ')})`);
       for (const r of rows) assert.ok(r.height <= plain + 1, `${where}: a namesake row is ${r.height}px tall, a plain one ${plain}px`);
       assert.deepEqual(page.pageErrors, [], where);
       await page.context().close();
@@ -141,8 +143,9 @@ async function checkNamesakes(name, words) {
 
 test('Mefibóset: each of the two rows says whose son it is, on top and on the landing, on the desktop and the phone', async () => {
   // data/people/mefiboset-hijo-de-jonatan.yaml and mefiboset-hijo-de-saul.yaml: the line comes from the head of each
-  // one's `disambiguation`.
-  await checkNamesakes('Mefibóset', ['Jonatán', 'Saúl']);
+  // one's `disambiguation`, which is the rest of the row's line without a namesake and must not follow it («cojo desde
+  // niño», «entrada núm. 1»).
+  await checkNamesakes('Mefibóset', ['Jonatán', 'Saúl'], { absent: ['cojo desde niño', 'entrada núm. 1'] });
 });
 
 test('Mefibóset typed before the detail arrives: the two rows get their line when it does, on the phone', async () => {
