@@ -202,7 +202,7 @@ Recomendamos **el Cuaderno** como base. Es el más parejo con las tres miradas, 
 
 Y quitaríamos texto de la primera pantalla: la caja verde y la lista bastan, sin la bienvenida del centro.
 
-**Peso.** En el sitio, la sección sería un módulo como los de `site/js/`. Los ficheros del Cuaderno, comprimidos con gzip: unos 5 KB lo común, 3 KB el diseño y 4 KB de estilos, y 2 KB los tiempos dichos. Las distancias se calculan en el navegador con las coordenadas que el sitio ya descarga, así que no añaden datos. Ninguna imagen nueva: el mapa del tramo es el del sitio. En el repositorio, esta propuesta añade 106 KB de prototipos, scripts y tiempos, 277 KB de `datos.js` (40 KB con gzip), que se rehace con un script, y 1,8 MB en 32 capturas WebP.
+**Peso.** En el sitio, la sección sería un módulo como los de `site/js/`. Los ficheros del Cuaderno, comprimidos con gzip: unos 5 KB lo común, 3 KB el diseño y 4 KB de estilos, y 2 KB los tiempos dichos. Las distancias se calculan en el navegador con las coordenadas que el sitio ya descarga, así que no añaden datos. Ninguna imagen nueva: el mapa del tramo es el del sitio. En el repositorio, esta propuesta añade 110 KB de prototipos, scripts y tiempos, 277 KB de `datos.js` (40 KB con gzip), que se rehace con un script, y 1,8 MB en 32 capturas WebP.
 
 ## 8. Lo que decide el dueño
 
