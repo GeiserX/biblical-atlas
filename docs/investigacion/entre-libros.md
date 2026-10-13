@@ -48,7 +48,7 @@ Los campos, los tipos de relación y sus palabras se nombran como en el esquema 
 
 - **El cargo de superintendente.** El vocabulario no tiene `overseer`. Las notas de 1Ti 1:3 y 4:14 llaman superintendente a Timoteo, y Tit 1:5 encarga a Tito nombrar ancianos: ninguno lleva `holds_office`, como Eliaquim y Sebná desde Isaías. El resumen de `timoteo` lo dice. Si se añade el cargo, la relación cita 1Ti 1 y 4.
 - **El orden de las cartas a Timoteo.** En la serie `hechos`, `pablo-expulsa-a-himeneo-y-alejandro` lleva el 2844, `pablo-deja-a-timoteo-en-efeso` el 2845 y `pablo-escribe-1-timoteo` el 2850 (Macedonia, c. 61-64). 2 Timoteo tomó el 2852 (`pablo-deja-su-capa-en-troas`), el 2853 (`pablo-deja-a-trofimo-enfermo-en-mileto`), el 2855 (`segundo-encierro-en-roma`), el 2857 (`primera-defensa-de-pablo`) y el 2860 (`pablo-escribe-2-timoteo`, Roma, c. 65). Ninguna fuente ordena 1 Timoteo frente a Tito: los sucesos de Tito toman otros números y su `note` dice por qué.
-- **Las paradas de `ultimos-anos-de-pablo`.** Son ocho: Roma (1), Creta (2) y Éfeso (3), las dos con «orden incierto», Macedonia (4), Nicópolis (5), Troas (6) y Mileto (7), estas dos pendientes y de orden incierto (2Ti 4:13, 20), y Roma (8). Un cambio de Tito a `stops` parte de esa lista.
+- **Las paradas de `ultimos-anos-de-pablo`.** Son ocho: Roma (1), Creta (2) y Éfeso (3), las dos con «orden incierto», Macedonia (4), Nicópolis (5), de orden incierto y hasta c. 65, Troas (6) y Mileto (7), estas dos pendientes y de orden incierto (2Ti 4:13, 20), y Roma (8). `trofimo/accompanies/pablo@61` va de 61 a 65, como la parada de Mileto. Un cambio de Tito a `stops` parte de esa lista.
 
 ## Para Ezequiel (fronteras)
 

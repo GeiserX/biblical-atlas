@@ -1361,15 +1361,15 @@
      "reference": "Tit 3:12",
      "date": {
       "from": 61,
-      "to": 64,
+      "to": 65,
       "precision": "range",
       "approx": true,
       "type": "narrative",
       "chronology": "tnm",
-      "text": "dentro de c. 61-64 e.c. (tiempo narrativo: orden cierto, fecha aproximada)"
+      "text": "dentro de c. 61-65 e.c. (tiempo narrativo: orden incierto, fecha aproximada)"
      },
      "note": "Solo consta que pensaba invernar allí; algunos creen que allí lo arrestaron.",
-     "reason": "Tit 3:12: había decidido pasar allí el invierno. La nota de Hch 28:30 la cuenta entre los lugares que probablemente visitó.",
+     "reason": "Tit 3:12: había decidido pasar allí el invierno. La nota de Hch 28:30 la cuenta entre sus visitas probables, sin orden; Perspicacia «Nicópolis» ve posible que allí lo arrestaran, hacia 65.",
      "sources": [
       "it-nicopolis",
       "nota-hechos-28",
@@ -1440,15 +1440,14 @@
      "sources": [
       "si-3",
       "it-timoteo-cartas",
-      "2-timoteo-4",
-      "it-trofimo"
+      "2-timoteo-4"
      ],
      "status": "verified"
     }
    ],
    "historial": {
     "date": "2026-10-13",
-    "change": "Nuevas paradas 6 (Troas) y 7 (Mileto), pendientes y de orden incierto: 2Ti 4:13, 20, la nota de Hch 28:30 y Perspicacia «Troas» y «Mileto». Roma pasa a la 8 y su nota ya no habla de Trófimo.",
+    "change": "Nuevas paradas 6 (Troas) y 7 (Mileto), pendientes (2Ti 4:13, 20; Perspicacia «Troas», «Mileto»). La nota de Hch 28:30 no ordena las visitas: Nicópolis (5) pasa a orden incierto y llega a 65. Roma es la 8, sin Trófimo.",
     "source": "2-timoteo-4"
    }
   },
@@ -1823,6 +1822,258 @@
     "change": "La razón suma las notas de 2Ti 4:12, 19 y 22, que también ponen a Timoteo en Éfeso.",
     "source": "2-timoteo-4"
    }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "places",
+   "id": "asia",
+   "campo": "names",
+   "antes": [
+    {
+     "name": "Asia",
+     "note": "La provincia romana, no el continente."
+    },
+    {
+     "name": "distrito de Asia",
+     "note": "Forma que usa la Traducción del Nuevo Mundo (Hch 16:6; 19:10)."
+    }
+   ],
+   "despues": [
+    {
+     "name": "Asia",
+     "note": "La provincia romana, no el continente."
+    },
+    {
+     "name": "provincia de Asia",
+     "note": "Forma de la Biblia de estudio de la Traducción del Nuevo Mundo (Hch 16:6; 19:10; 2Ti 1:15)."
+    },
+    {
+     "name": "distrito de Asia",
+     "note": "Forma que usa Perspicacia «Asia» (Hch 16:6; 19:10; 2Ti 1:15)."
+    }
+   ],
+   "historial": {
+    "date": "2026-10-13",
+    "change": "Se añade «provincia de Asia», la forma de la Biblia de estudio en Hch 16:6, 19:10 y 2Ti 1:15. «Distrito de Asia» no es la de esa edición, sino la de Perspicacia.",
+    "source": "2-timoteo-1"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "people",
+   "id": "timoteo",
+   "campo": "summary",
+   "antes": "Hijo de madre judía y padre griego, al parecer vecino de Listra. Se unió a Pablo en el segundo viaje, entre finales de 49 y principios de 50. Hacia 61-64 sirvió de superintendente en Éfeso.",
+   "despues": "Hijo de madre judía y padre griego, al parecer de Listra. Se unió a Pablo en el segundo viaje, entre finales de 49 y principios de 50. Hacia 61-65 fue superintendente en Éfeso, donde al parecer recibió sus dos cartas.",
+   "historial": {
+    "date": "2026-10-13",
+    "change": "Decía 61-64 y nada de 2 Timoteo. Las notas de 2Ti 2:14, 23 y 4:12, 19, 22 lo dan aún en Éfeso hacia 65, como ya dice timoteo/lived_in/efeso.",
+    "source": "2-timoteo-4"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "people",
+   "id": "onesiforo",
+   "campo": "summary",
+   "antes": "Cristiano de Éfeso que, cuando otros de Asia se apartaron de Pablo, lo buscó en Roma hasta encontrarlo sin avergonzarse de sus cadenas.",
+   "despues": "Cristiano, casi con seguridad vecino de Éfeso, que, cuando otros de Asia se apartaron de Pablo, lo buscó en Roma hasta encontrarlo sin avergonzarse de sus cadenas.",
+   "historial": {
+    "date": "2026-10-13",
+    "change": "Lo daba por cristiano de Éfeso como hecho. 2Ti 1:18 solo habla de sus servicios allí; la residencia la deduce Perspicacia «Asia», como ya dice onesiforo/lived_in/efeso.",
+    "source": "2-timoteo-1"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "people",
+   "id": "trofimo",
+   "campo": "relations",
+   "antes": [
+    {
+     "type": "lived_in",
+     "place": "efeso",
+     "inferred": false,
+     "sources": [
+      "it-trofimo",
+      "hch-21"
+     ],
+     "reason": "Hch 21:29 lo llama efesio.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "accompanies",
+     "person": "pablo",
+     "date": {
+      "from": 56,
+      "to": 56,
+      "precision": "year",
+      "approx": true,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "c. 56 e.c."
+     },
+     "inferred": false,
+     "sources": [
+      "it-trofimo",
+      "hch-21",
+      "si-3"
+     ],
+     "reason": "Va con Pablo de Macedonia a Jerusalén (Hch 20:4; 21:29). Pablo llega a Jerusalén hacia el Pentecostés de 56 (estudio 3, párr. 26).",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "accompanies",
+     "person": "pablo",
+     "date": {
+      "from": 61,
+      "to": 64,
+      "precision": "range",
+      "approx": true,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "c. 61-64 e.c."
+     },
+     "inferred": false,
+     "sources": [
+      "it-trofimo",
+      "2-timoteo-4",
+      "si-3"
+     ],
+     "reason": "Viaja de nuevo con él tras el primer encierro y se queda enfermo en Mileto (2Ti 4:20). Entre la liberación, hacia 61, y 1 Timoteo y Tito, de c. 61-64 (estudio 3, párr. 27 y tabla).",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "born_in",
+     "place": "efeso",
+     "inferred": true,
+     "sources": [
+      "it-trofimo",
+      "hch-21"
+     ],
+     "reason": "Hch 21:29 lo llama efesio y Perspicacia «Trófimo» llama a Éfeso su ciudad natal.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    }
+   ],
+   "despues": [
+    {
+     "type": "lived_in",
+     "place": "efeso",
+     "inferred": false,
+     "sources": [
+      "it-trofimo",
+      "hch-21"
+     ],
+     "reason": "Hch 21:29 lo llama efesio.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "accompanies",
+     "person": "pablo",
+     "date": {
+      "from": 56,
+      "to": 56,
+      "precision": "year",
+      "approx": true,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "c. 56 e.c."
+     },
+     "inferred": false,
+     "sources": [
+      "it-trofimo",
+      "hch-21",
+      "si-3"
+     ],
+     "reason": "Va con Pablo de Macedonia a Jerusalén (Hch 20:4; 21:29). Pablo llega a Jerusalén hacia el Pentecostés de 56 (estudio 3, párr. 26).",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "accompanies",
+     "person": "pablo",
+     "date": {
+      "from": 61,
+      "to": 65,
+      "precision": "range",
+      "approx": true,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "c. 61-65 e.c."
+     },
+     "inferred": false,
+     "sources": [
+      "it-trofimo",
+      "it-mileto",
+      "2-timoteo-4",
+      "si-3"
+     ],
+     "reason": "Viaja de nuevo con él y enferma en Mileto (2Ti 4:20). Perspicacia «Trófimo» y «Mileto»: tras el primer encierro, sin decir cuándo; entre la liberación de 61 y el arresto de 65 (estudio 3, párr. 27, 28).",
+     "checked_on": "2026-10-13",
+     "status": "verified"
+    },
+    {
+     "type": "born_in",
+     "place": "efeso",
+     "inferred": true,
+     "sources": [
+      "it-trofimo",
+      "hch-21"
+     ],
+     "reason": "Hch 21:29 lo llama efesio y Perspicacia «Trófimo» llama a Éfeso su ciudad natal.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    }
+   ],
+   "historial": {
+    "date": "2026-10-13",
+    "change": "trofimo/accompanies/pablo de 61 llega a 65. Ninguna fuente pone Mileto antes de 1 Timoteo y Tito: Perspicacia «Mileto» no da el momento y la nota de Hch 28:30 la cuenta entre las visitas de 61 a 65.",
+    "source": "2-timoteo-4"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "people",
+   "id": "trofimo",
+   "campo": "date",
+   "antes": {
+    "from": 56,
+    "to": 64,
+    "precision": "range",
+    "approx": true,
+    "type": "anchored",
+    "chronology": "tnm",
+    "text": "c. 56-64 e.c."
+   },
+   "despues": {
+    "from": 56,
+    "to": 65,
+    "precision": "range",
+    "approx": true,
+    "type": "anchored",
+    "chronology": "tnm",
+    "text": "c. 56-65 e.c."
+   },
+   "historial": {
+    "date": "2026-10-13",
+    "change": "La fecha llega a 65, como su viaje con Pablo tras el primer encierro, que acaba en Mileto antes del arresto de c. 65 (2Ti 4:20).",
+    "source": "2-timoteo-4"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "trofimo",
+   "campo": "sources",
+   "valores": [
+    "2-timoteo-4",
+    "it-mileto"
+   ]
   }
  ],
  "preguntas": []
