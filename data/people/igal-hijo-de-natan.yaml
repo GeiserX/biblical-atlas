@@ -7,6 +7,7 @@ perspicacia: 1200002140#2
 disambiguation: Igal hijo de Natán de Zobá, guerrero de David; no el espía de Isacar ni el descendiente de David.
 distinct_from:
 - igal-hijo-de-jose
+- igal-hijo-de-semaya
 summary: Hijo de Natán de Zobá y uno de los treinta guerreros de David.
 reason: Perspicacia «Igal», núm. 2; 2Sa 23:36.
 sources:
@@ -35,5 +36,5 @@ relations:
   reason: '2Sa 23:36: uno de los treinta guerreros de David.'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

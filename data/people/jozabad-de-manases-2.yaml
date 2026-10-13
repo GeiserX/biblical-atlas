@@ -1,0 +1,33 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jozabad-de-manases-2
+name: Jozabad
+names:
+- name: Jozabad
+perspicacia: 1200002532#3
+disambiguation: Segundo de los dos Jozabad de Manasés en 1Cr 12:20 (Perspicacia núm. 3); no el otro, el guederatita ni los
+  levitas.
+distinct_from:
+- jozabad-de-manases-1
+- jozabad-el-guederatita
+summary: Jefe de mil de Manasés que dejó a Saúl y se pasó a David cuando iba a Ziclag. Luchó con él contra la banda de saqueadores
+  y fue jefe de su ejército.
+reason: Perspicacia «Jozabad», núm. 3; 1Cr 12:19-21.
+sources:
+- it-jozabad
+- 1-cronicas-12
+links:
+- title: 'Perspicacia: «Jozabad»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jozabad/
+  type: perspicacia
+relations:
+- type: tie
+  person: david
+  word: master
+  inferred: false
+  sources:
+  - 1-cronicas-12
+  reason: '1Cr 12:20, 21: se pasó a David, lo ayudó contra los saqueadores y llegó a ser jefe en su ejército.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

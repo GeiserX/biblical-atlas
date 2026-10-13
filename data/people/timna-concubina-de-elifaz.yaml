@@ -13,6 +13,7 @@ reason: Perspicacia «Timná», núm. 1 y 2; Gé 36:12.
 sources:
 - it-timna
 - genesis-36
+- 1-cronicas-1
 links:
 - title: 'Perspicacia: «Timná»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Timn%C3%A1/
@@ -20,7 +21,7 @@ links:
 - title: Génesis 36 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/G%C3%A9nesis/36/
   type: bible
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified
 relations:
 - type: same_as

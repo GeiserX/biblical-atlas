@@ -1,0 +1,28 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ben-zohet
+name: Ben-Zóhet
+names:
+- name: Ben-Zóhet
+perspicacia: '1200000644'
+summary: Judaíta que el texto da como hijo de Isí; por su nombre, «hijo de Zóhet», quizá era hijo de Zóhet y nieto de Isí.
+reason: Perspicacia «Ben-zóhet»; 1Cr 4:20.
+sources:
+- it-ben-zohet
+- 1-cronicas-4
+links:
+- title: 'Perspicacia: «Ben-zóhet»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ben-z%C3%B3het/
+  type: perspicacia
+relations:
+- type: kin
+  person: isi-padre-de-zohet
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-4
+  - it-ben-zohet
+  reason: 1Cr 4:20 lo da como hijo de Isí; Perspicacia «Ben-zóhet» ve posible que fuera su nieto.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

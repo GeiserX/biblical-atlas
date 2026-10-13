@@ -9,6 +9,7 @@ reason: Perspicacia «Mizá»; Gé 36:13, 17.
 sources:
 - it-miza
 - genesis-36
+- 1-cronicas-1
 links:
 - title: 'Perspicacia: «Mizá»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Miz%C3%A1/
@@ -24,8 +25,9 @@ relations:
   sources:
   - it-miza
   - genesis-36
+  - 1-cronicas-1
   reason: 'Gé 36:13: hijo de Reuel.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: kin
   person: basemat-hija-de-ismael
@@ -45,5 +47,5 @@ relations:
   reason: 'Gé 36:17: fue jeque en la tierra de Edom.'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

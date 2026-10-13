@@ -1,0 +1,36 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: matitias-musico
+name: Matitías
+names:
+- name: Matitías
+perspicacia: 1200002941#1
+disambiguation: El arpista de David; no el coreíta hijo de Salum (núm. 2) ni los Matitías de tiempos de Esdras (Perspicacia
+  «Matitías»).
+summary: Levita arpista en el traslado del Arca a Jerusalén. Probablemente es el músico que David dejó delante del Arca y
+  el que después encabezó la división catorce de músicos.
+reason: Perspicacia «Matitías», núm. 1; 1Cr 15:18, 21; 16:5; 25:21.
+sources:
+- it-matitias
+- 1-cronicas-15
+- 1-cronicas-16
+- 1-cronicas-25
+links:
+- title: 'Perspicacia: «Matitías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Matit%C3%ADas/
+  type: perspicacia
+checked_on: '2026-10-12'
+status: verified
+relations:
+- type: kin
+  person: jedutun-musico
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-25
+  - it-matitias
+  reason: 1Cr 25:3 lo cuenta entre los seis hijos de Jedutún; Perspicacia «Matitías», núm. 1, ve probable que sea el arpista
+    del traslado del Arca.
+  checked_on: '2026-10-12'
+  status: verified
+distinct_from:
+- matitias-hijo-de-salum

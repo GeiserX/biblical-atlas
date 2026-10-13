@@ -1,0 +1,22 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: pedaya-padre-de-joel
+name: Pedaya
+names:
+- name: Pedaya
+perspicacia: 1200003414#1
+disambiguation: Pedaya el manasita, padre de Joel; no el de Rumá, abuelo del rey Jehoiaquim.
+distinct_from:
+- pedaya-padre-de-zebida
+- pedaya-hijo-de-joaquin
+summary: Padre de Joel, el príncipe de la media tribu occidental de Manasés en tiempos de David.
+reason: Perspicacia «Pedaya», núm. 1; 1Cr 27:20.
+sources:
+- it-pedaya
+- 1-cronicas-27
+links:
+- title: 'Perspicacia: «Pedaya»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Pedaya/
+  type: perspicacia
+relations: []
+checked_on: '2026-10-12'
+status: verified

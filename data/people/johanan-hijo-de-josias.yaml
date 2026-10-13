@@ -1,0 +1,36 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: johanan-hijo-de-josias
+name: Johanán
+names:
+- name: Johanán
+perspicacia: 1200002488#4
+disambiguation: Johanán primogénito de Josías (núm. 4 de Perspicacia); no el jefe militar hijo de Caréah ni el hijo de Elioenái.
+summary: Primogénito del rey Josías. No se le nombra cuando se habla de quién sucedería a su padre, y Perspicacia cree probable
+  que muriera antes que él.
+reason: Perspicacia «Johanán», núm. 4; 1Cr 3:15.
+sources:
+- it-johanan
+- 1-cronicas-3
+links:
+- title: 'Perspicacia: «Johanán»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Johan%C3%A1n/
+  type: perspicacia
+relations:
+- type: kin
+  person: josias
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-3
+  - it-johanan
+  reason: '1Cr 3:15: el primogénito de los hijos de Josías.'
+  checked_on: '2026-10-12'
+  status: verified
+distinct_from:
+- johanan-hijo-de-carea
+- johanan-hijo-de-elioenai
+- johanan-el-benjaminita
+- johanan-el-gadita
+- johanan-hijo-de-azarias
+checked_on: '2026-10-12'
+status: verified

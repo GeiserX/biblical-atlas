@@ -1,0 +1,27 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: asvat
+name: Asvat
+names:
+- name: Asvat
+perspicacia: '1200000432'
+summary: Aserita de la casa de Jaflet, el tercero de sus hijos.
+reason: Perspicacia «Asvat»; 1Cr 7:33.
+sources:
+- it-asvat
+- 1-cronicas-7
+links:
+- title: 'Perspicacia: «Asvat»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Asvat/
+  type: perspicacia
+relations:
+- type: kin
+  person: jaflet
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-7
+  reason: 1Cr 7:33 lo cuenta entre los hijos de Jaflet.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

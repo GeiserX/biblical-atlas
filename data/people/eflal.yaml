@@ -1,0 +1,27 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: eflal
+name: Eflal
+names:
+- name: Eflal
+perspicacia: '1200001388'
+summary: Hijo de Zabad y padre de Obed, de la familia de Jerahmeel en Judá. Jarhá, el siervo egipcio de Sesán, era su tatarabuelo.
+reason: Perspicacia «Eflal»; 1Cr 2:37.
+sources:
+- it-eflal
+- 1-cronicas-2
+links:
+- title: 'Perspicacia: «Eflal»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Eflal/
+  type: perspicacia
+relations:
+- type: kin
+  person: zabad-hijo-de-natan
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-2
+  reason: '1Cr 2:37: Zabad fue su padre.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

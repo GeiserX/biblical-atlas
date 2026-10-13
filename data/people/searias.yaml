@@ -1,0 +1,29 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: searias
+name: Searías
+names:
+- name: Searías
+perspicacia: '1200003968'
+summary: Benjamita de la línea de Saúl por Jonatán; hijo de Azel.
+reason: Perspicacia «Searías»; 1Cr 8:33-38.
+sources:
+- it-searias
+- 1-cronicas-8
+- 1-cronicas-9
+links:
+- title: 'Perspicacia: «Searías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sear%C3%ADas/
+  type: perspicacia
+relations:
+- type: kin
+  person: azel
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  - 1-cronicas-9
+  reason: 1Cr 8:38 lo cuenta entre los hijos de Azel.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

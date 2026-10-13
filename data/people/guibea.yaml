@@ -1,0 +1,29 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: guibea
+name: Guibeá
+names:
+- name: Guibeá
+perspicacia: '1200001678'
+summary: Judaíta de la rama de Caleb; su padre fue Sevá. El nombre puede designar también la ciudad de Guibeah de Judá, de
+  la que Sevá sería fundador.
+reason: Perspicacia «Guibeá» y «Guibeah», núm. 1; 1Cr 2:49.
+sources:
+- it-guibea
+- 1-cronicas-2
+- it-guibeah
+links:
+- title: 'Perspicacia: «Guibeá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Guibe%C3%A1/
+  type: perspicacia
+relations:
+- type: kin
+  person: seva-hijo-de-caleb
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-2
+  reason: '1Cr 2:49: Sevá, el padre de Macbená y Guibeá.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

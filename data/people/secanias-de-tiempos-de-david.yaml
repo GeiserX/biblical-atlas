@@ -1,0 +1,41 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: secanias-de-tiempos-de-david
+name: Secanías
+names:
+- name: Secanías
+perspicacia: 1200003977#1
+disambiguation: El sacerdote de la décima división (1Cr 24:11); no el descendiente de David ni los demás Secanías que numera
+  Perspicacia.
+summary: Descendiente de Aarón cuya casa paterna salió elegida por sorteo para el décimo turno sacerdotal en tiempos de David.
+reason: Perspicacia «Secanías», núm. 1; 1Cr 24:11.
+sources:
+- it-secanias
+- 1-cronicas-24
+links:
+- title: 'Perspicacia: «Secanías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Secan%C3%ADas/
+  type: perspicacia
+relations:
+- type: kin
+  person: aaron
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-24
+  - it-secanias
+  reason: 1Cr 24:1 abre la lista de los descendientes de Aarón repartidos en turnos, y 24:11 da a esta casa el décimo.
+  checked_on: '2026-10-12'
+  status: verified
+- type: holds_office
+  office: priest
+  inferred: false
+  sources:
+  - 1-cronicas-24
+  - it-secanias
+  reason: '1Cr 24:11: encabeza una de las casas sacerdotales de 24:4-6; Perspicacia «Secanías» lo trata como sacerdote.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- secanias-hijo-de-abdias

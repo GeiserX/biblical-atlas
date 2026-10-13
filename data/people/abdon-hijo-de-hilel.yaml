@@ -7,6 +7,8 @@ perspicacia: 1200000016#1
 disambiguation: El juez Abdón, hijo de Hilel, de Efraín; no los otros tres Abdón de Perspicacia ni la ciudad levita de Aser.
 distinct_from:
 - acbor-hijo-de-micaya
+- abdon-hijo-de-jeiel
+- abdon-hijo-de-sasac
 date:
   from: -1172
   to: -1116
@@ -73,5 +75,5 @@ relations:
   reason: 'Jue 12:15: murió y lo enterraron en Piratón, en la tierra de Efraín.'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-30'
+checked_on: '2026-10-12'
 status: verified

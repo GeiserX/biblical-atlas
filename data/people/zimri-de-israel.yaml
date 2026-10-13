@@ -57,7 +57,9 @@ relations:
   checked_on: '2026-09-30'
   status: verified
 perspicacia: 1200004737#3
-checked_on: '2026-09-30'
+checked_on: '2026-10-12'
 status: verified
 distinct_from:
 - zimri-hijo-de-salu
+- zimri-hijo-de-zerah
+- zimri-hijo-de-jehoada

@@ -1,0 +1,31 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: azricam-hijo-de-hasabias
+name: Azricam
+names:
+- name: Azricam
+perspicacia: 1200000501#3
+summary: Levita merarita, hijo de Hasabías. Su descendiente Semaya vivió en Jerusalén después de volver del destierro.
+reason: Perspicacia «Azriqam», núm. 3; 1Cr 9:14.
+sources:
+- it-azriqam
+- 1-cronicas-9
+links:
+- title: 'Perspicacia: «Azriqam»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Azriqam/
+  type: perspicacia
+relations:
+- type: kin
+  person: hasabias-padre-de-azricam
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-9
+  reason: '1Cr 9:14: Azricam, hijo de Hasabías.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- azricam-hijo-de-azel
+- azricam-hijo-de-nearias
+disambiguation: 'Azricam núm. 3 de Perspicacia: levita merarita, hijo de Hasabías. No el benjamita hijo de Azel.'

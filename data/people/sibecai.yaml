@@ -13,6 +13,9 @@ sources:
 - it-sibecai
 - it-husatita
 - 2-samuel-21
+- 1-cronicas-11
+- 1-cronicas-20
+- 1-cronicas-27
 links:
 - title: 'Perspicacia: «Sibecai»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sibecai/
@@ -25,8 +28,22 @@ relations:
   sources:
   - 2-samuel-21
   - it-sibecai
+  - 1-cronicas-11
+  - 1-cronicas-20
+  - 1-cronicas-27
   reason: '2Sa 21:15, 22: los gigantes cayeron a manos de David y de sus siervos, entre ellos Sibecái.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-09-29'
+- type: kin
+  person: zerah-hijo-de-juda
+  word: ancestor
+  inferred: true
+  sources:
+  - 1-cronicas-27
+  - it-zerah
+  reason: 1Cr 27:11 lo hace de los zerahítas; Perspicacia «Zérah», núm. 3, cuenta entre los de esa familia de Judá a dos jefes
+    del ejército de David.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
 status: verified

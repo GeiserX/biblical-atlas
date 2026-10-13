@@ -1,0 +1,27 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: pasac
+name: Pasac
+names:
+- name: Pasac
+perspicacia: '1200003393'
+summary: Aserita, hijo de Jaflet y cabeza de familia de su tribu.
+reason: Perspicacia «Pasac»; 1Cr 7:30, 33, 40.
+sources:
+- it-pasac
+- 1-cronicas-7
+links:
+- title: 'Perspicacia: «Pasac»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Pasac/
+  type: perspicacia
+relations:
+- type: kin
+  person: jaflet
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-7
+  reason: 1Cr 7:33 lo cuenta entre los hijos de Jaflet.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

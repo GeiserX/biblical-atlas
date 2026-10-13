@@ -1,0 +1,32 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: delaya-hijo-de-elioenai
+name: Delayá
+names:
+- name: Delayá
+perspicacia: 1200001148#5
+summary: Uno de los siete hijos de Elioenái, de la línea de David por Salomón.
+reason: Perspicacia «Delayá»; 1Cr 3:24.
+sources:
+- it-delaya
+- 1-cronicas-3
+links:
+- title: 'Perspicacia: «Delayá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Delay%C3%A1/
+  type: perspicacia
+relations:
+- type: kin
+  person: elioenai-hijo-de-nearias
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-3
+  - it-delaya
+  reason: '1Cr 3:24: uno de los siete hijos de Elioenái.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+disambiguation: Delayá, hijo de Elioenái y descendiente de David; no el sacerdote que dio nombre a un turno en días de David.
+distinct_from:
+- delaya-de-tiempos-de-david
+- delaya-hijo-de-semaya

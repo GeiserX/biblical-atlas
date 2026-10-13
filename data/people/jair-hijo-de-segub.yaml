@@ -5,7 +5,7 @@ names:
 - name: Jaír
 perspicacia: 1200002305#1
 disambiguation: Jaír, el que tomó Havot-Jaír en tiempos de Moisés; no el juez Jaír, quizá descendiente suyo, ni el padre de
-  Mardoqueo.
+  Mardoqueo, ni el de Elhanán.
 summary: Contemporáneo de Moisés que tomó las aldeas de tiendas de Galaad y les dio su nombre, Havot-Jaír. Se le cuenta en
   Manasés, aunque por línea paterna venía de Judá, por Hezrón.
 reason: Perspicacia «Jaír», núm. 1, y «Havot-jaír»; Nú 32:41. El id lleva el nombre de su padre, Segub (1Cr 2:22).
@@ -14,6 +14,7 @@ sources:
 - it-havot-jair
 - numeros-32
 - deuteronomio-3
+- 1-cronicas-2
 links:
 - title: 'Perspicacia: «Jaír»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ja%C3%ADr/
@@ -33,11 +34,44 @@ relations:
   - numeros-32
   - it-jair
   - deuteronomio-3
+  - 1-cronicas-2
   reason: 'Nú 32:41 lo llama hijo de Manasés, es decir, descendiente. Perspicacia «Jaír», núm. 1: le venía por la mujer manasita
     de Hezrón (1Cr 2:21, 22).'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-09-29'
+- type: kin
+  person: segub-hijo-de-hezron
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-2
+  reason: '1Cr 2:22: Segub fue padre de Jaír.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: hezron-hijo-de-perez
+  word: grandfather
+  inferred: false
+  sources:
+  - 1-cronicas-2
+  reason: '1Cr 2:21, 22: hijo de Segub, el hijo de Hezrón.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: makir-hijo-de-manases
+  word: great_grandfather
+  inferred: false
+  sources:
+  - 1-cronicas-2
+  reason: '1Cr 2:21-23: Segub era nieto de Makir por su madre; el v. 23 cuenta a Jaír entre los descendientes de Makir.'
+  checked_on: '2026-10-12'
+  status: verified
+history:
+- date: '2026-10-12'
+  change: Añade al padre de Elhanán, nuevo homónimo de Perspicacia «Jaír», núm. 4.
+  source: 1-cronicas-20
+checked_on: '2026-10-12'
 status: verified
 distinct_from:
 - jair-juez
+- jair-padre-de-elhanan

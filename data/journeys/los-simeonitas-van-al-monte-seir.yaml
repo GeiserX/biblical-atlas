@@ -11,17 +11,27 @@ date:
   type: narrative
   chronology: tnm
   text: 'entre 746 y 716 a.e.c. (tiempo narrativo: probablemente en el reinado de Ezequías)'
-companions: []
+companions:
+- nearias-hijo-de-isi
+- refaya-hijo-de-isi
+- uziel-hijo-de-isi
 summary: Pelatías y sus hermanos Nearías, Refayá y Uziel, hijos de Isí, guían a 500 simeonitas al monte Seír. Allí acaban
   con los amalequitas que quedaban y se asientan en su lugar.
-reason: '1Cr 4:42, 43; Perspicacia «Pelatías», núm. 1, lo sitúa probablemente en el reinado de Ezequías. Sin suceso en data/events:
-  fecha por ese reinado (tabla A6-B).'
+reason: 1Cr 4:42, 43; Perspicacia «Pelatías», núm. 1, lo sitúa probablemente en el reinado de Ezequías. Fecha por ese reinado
+  (tabla A6-B).
 sources:
 - 1-cronicas-4
 - it-pelatias
 - it-ezequias
 - tnm-a6-b
-checked_on: '2026-09-30'
+history:
+- date: '2026-10-12'
+  change: Los compañeros que nombra el texto ya tienen ficha y van con él.
+  source: 1-cronicas-4
+- date: '2026-10-12'
+  change: Ya hay suceso para este viaje; se quita «sin suceso».
+  source: 1-cronicas-4
+checked_on: '2026-10-12'
 status: pending
 stops:
 - order: 1

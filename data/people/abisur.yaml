@@ -1,0 +1,36 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: abisur
+name: Abisur
+names:
+- name: Abisur
+perspicacia: '1200000053'
+summary: Hijo de Samái, de la casa de Jerahmeel en Judá. Con su esposa Abihail tuvo a Ahbán y Molid.
+reason: Perspicacia «Abisur»; 1Cr 2:28, 29.
+sources:
+- it-abisur
+- 1-cronicas-2
+links:
+- title: 'Perspicacia: «Abisur»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Abisur/
+  type: perspicacia
+relations:
+- type: kin
+  person: samai-hijo-de-onam
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-2
+  reason: '1Cr 2:28: hijo de Samái.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: abihail-esposa-de-abisur
+  word: wife
+  inferred: false
+  sources:
+  - 1-cronicas-2
+  reason: '1Cr 2:29: Abihail era su esposa.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

@@ -9,6 +9,7 @@ distinct_from:
 - amihud-hijo-de-ladan
 - amihud-padre-de-semuel
 - amihud-padre-de-pedahel
+- amihud-hijo-de-omri
 summary: Padre de Talmái, rey de Guesur. Por su nieta Maacá, esposa de David, era bisabuelo de Absalón.
 reason: Perspicacia «Amihud», núm. 4; 2Sa 13:37.
 sources:
@@ -21,5 +22,5 @@ links:
 - title: 2 Samuel 13 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-samuel/13/
   type: bible
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

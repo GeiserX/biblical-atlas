@@ -1,0 +1,27 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: azaz
+name: Azaz
+names:
+- name: Azaz
+perspicacia: '1200000487'
+summary: Rubenita, hijo de Sema y padre de Bela.
+reason: Perspicacia «Azaz»; 1Cr 5:8.
+sources:
+- it-azaz
+- 1-cronicas-5
+links:
+- title: 'Perspicacia: «Azaz»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Azaz/
+  type: perspicacia
+relations:
+- type: kin
+  person: sema-hijo-de-joel
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-5
+  reason: '1Cr 5:8: Azaz, «hijo de Sema».'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

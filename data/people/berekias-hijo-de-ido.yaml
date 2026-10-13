@@ -8,6 +8,10 @@ disambiguation: Padre del profeta Zacarías. No es Baraquías, padre del Zacarí
   Berekías que numera Perspicacia.
 distinct_from:
 - baraquias
+- berekias-hijo-de-zorobabel
+- berekias-hijo-de-simea
+- berekias-hijo-de-asa
+- berekias-portero
 summary: Hijo de Idó y padre del profeta Zacarías, que da este linaje al fechar sus mensajes del segundo año de Darío. Otros
   pasajes nombran a Zacarías solo por su abuelo.
 reason: Perspicacia «Berekías», núm. 7, y «Zacarías», núm. 20; Zac 1:1, 7.
@@ -34,5 +38,5 @@ relations:
   inferred: false
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

@@ -42,6 +42,10 @@ sources:
 - 2-samuel-21
 - 1-reyes-2
 - 2-reyes-12
+- 1-cronicas-7
+- 1-cronicas-8
+- 1-cronicas-18
+- 1-cronicas-20
 links:
 - title: 'Perspicacia: «Gat»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Gat/
@@ -49,5 +53,5 @@ links:
 - title: Salmo 56 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/salmos/56/
   type: bible
-checked_on: '2026-09-30'
+checked_on: '2026-10-12'
 status: verified

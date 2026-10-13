@@ -1,0 +1,50 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: adaya-hijo-de-jeroham
+name: Adaya
+names:
+- name: Adaya
+perspicacia: 1200000087#6
+summary: Sacerdote, hijo de Jeroham, que vivió en Jerusalén después del destierro en Babilonia.
+reason: Perspicacia «Adaya», núm. 6; 1Cr 9:12.
+sources:
+- it-adaya
+- 1-cronicas-9
+links:
+- title: 'Perspicacia: «Adaya»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Adaya/
+  type: perspicacia
+relations:
+- type: kin
+  person: jeroham-hijo-de-pasjur
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-9
+  - it-jeroham
+  reason: '1Cr 9:12: Adaya, hijo de Jeroham. Perspicacia «Jeroham», núm. 7, deja abierto si era su padre o un antepasado.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: holds_office
+  office: priest
+  inferred: false
+  sources:
+  - 1-cronicas-9
+  reason: 1Cr 9:10, 12 lo pone entre los sacerdotes.
+  checked_on: '2026-10-12'
+  status: verified
+- type: lived_in
+  place: jerusalen
+  inferred: false
+  sources:
+  - 1-cronicas-9
+  - it-adaya
+  reason: '1Cr 9:2, 3, 12: de los sacerdotes que vivían en Jerusalén.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- adaya-hijo-de-etan
+- adaya-hijo-de-simei
+- adaya-padre-de-jedida
+disambiguation: 'Adaya núm. 6 de Perspicacia: sacerdote, hijo de Jeroham. No el abuelo materno de Josías.'

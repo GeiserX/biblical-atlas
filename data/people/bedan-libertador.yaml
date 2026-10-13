@@ -21,5 +21,7 @@ links:
 - title: 1 Samuel 12 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/1-samuel/12/
   type: bible
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified
+distinct_from:
+- bedan-hijo-de-ulam

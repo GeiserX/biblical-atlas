@@ -1,0 +1,35 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jeter-de-aser
+name: Jéter
+names:
+- name: Jéter
+perspicacia: 1200002452#4
+disambiguation: Jéter de Aser; no Jéter el ismaelita, padre de Amasá, ni el hijo de Gedeón ni Jetró.
+distinct_from:
+- itra
+- jeter-hijo-de-gedeon
+- jetro
+- jeter-hijo-de-ezra
+- jeter-hijo-de-jada
+summary: Aserita. Perspicacia lo cree probablemente el Itrán del versículo 37, porque en hebreo los nombres se parecen mucho.
+reason: Perspicacia «Jéter», núm. 4; 1Cr 7:30, 38.
+sources:
+- it-jeter
+- 1-cronicas-7
+links:
+- title: 'Perspicacia: «Jéter»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/J%C3%A9ter/
+  type: perspicacia
+relations:
+- type: kin
+  person: aser-hijo-de-jacob
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-7
+  - it-jeter
+  reason: 1Cr 7:38, 40 lo cuenta entre los descendientes de Aser.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

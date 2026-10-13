@@ -8,6 +8,7 @@ disambiguation: Último rey de Israel; no es el profeta Oseas, cuyo nombre hebre
 distinct_from:
 - oseas
 - josue-hijo-de-nun
+- hosea-hijo-de-azazias
 date:
   from: -757
   to: -739
@@ -86,5 +87,5 @@ relations:
   checked_on: '2026-09-30'
   status: verified
 perspicacia: 1200002090#4
-checked_on: '2026-10-02'
+checked_on: '2026-10-12'
 status: verified

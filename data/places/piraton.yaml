@@ -21,6 +21,7 @@ sources:
 - openbible-geo
 - jueces-12
 - 2-samuel-23
+- 1-cronicas-11
 links:
 - title: 'Perspicacia: «Piratón, piratonita»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Pirat%C3%B3n-piratonita/
@@ -28,5 +29,5 @@ links:
 - title: Jueces 12 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/jueces/12/
   type: bible
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

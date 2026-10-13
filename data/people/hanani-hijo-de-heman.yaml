@@ -1,0 +1,32 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hanani-hijo-de-heman
+name: Hananí
+names:
+- name: Hananí
+perspicacia: 1200001852#1
+disambiguation: El hijo de Hemán del grupo 18 de músicos (1Cr 25:4, 25); no Hananí, el vidente que reprendió a Asá (Perspicacia
+  «Hananí», núm. 1 y 2).
+summary: Hijo de Hemán. Por suertes dirigió el grupo 18 de los músicos del santuario en tiempos de David.
+reason: Perspicacia «Hananí», núm. 1; 1Cr 25:4, 25.
+sources:
+- it-hanani
+- 1-cronicas-25
+links:
+- title: 'Perspicacia: «Hananí»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hanan%C3%AD/
+  type: perspicacia
+relations:
+- type: kin
+  person: heman-hijo-de-joel
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-25
+  - it-hanani
+  reason: 1Cr 25:4, 25 lo cuenta entre los hijos de Hemán.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- hanani-vidente

@@ -1,0 +1,35 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: isias-uzielita
+name: Isías
+names:
+- name: Isías
+perspicacia: 1200002231#3
+disambiguation: El uzielita hermano de Miqueas (1Cr 23:20; 24:25); no Isías el descendiente de Moisés de 1Cr 24:21.
+distinct_from:
+- isias-descendiente-de-moises
+- isias-hijo-de-izrahias
+- isias-el-coreita
+summary: Levita cohatita de la familia de Uziel, segundo tras su hermano Miqueas. David organizó a sus hijos, entre ellos
+  Zacarías.
+reason: Perspicacia «Isías», núm. 3; 1Cr 23:20; 24:25.
+sources:
+- it-isias
+- 1-cronicas-23
+- 1-cronicas-24
+links:
+- title: 'Perspicacia: «Isías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Is%C3%ADas/
+  type: perspicacia
+relations:
+- type: kin
+  person: uziel-hijo-de-cohat
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-23
+  - it-isias
+  reason: 1Cr 23:20 lo pone segundo entre los hijos de Uziel; Perspicacia «Isías», núm. 3, lo hace descendiente de Cohat.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

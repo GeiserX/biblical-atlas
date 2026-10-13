@@ -1,0 +1,18 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: meonotai
+name: Meonotái
+names:
+- name: Meonotái
+perspicacia: '1200002984'
+summary: 'Judaíta, padre de Ofrá: o fue antepasado de un hombre llamado Ofrá, o fundó un lugar con ese nombre.'
+reason: Perspicacia «Meonotai»; 1Cr 4:14.
+sources:
+- it-meonotai
+- 1-cronicas-4
+links:
+- title: 'Perspicacia: «Meonotai»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Meonotai/
+  type: perspicacia
+relations: []
+checked_on: '2026-10-12'
+status: verified

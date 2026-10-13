@@ -1,0 +1,37 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: zicri-descendiente-de-eliezer
+name: Zicrí
+names:
+- name: Zicrí
+perspicacia: 1200004728#6
+disambiguation: El levita de la línea de Eliezer (1Cr 26:25); no Zicrí hijo de Izhar ni el padre del rubenita Eliezer (Perspicacia
+  «Zicrí»).
+summary: Levita descendiente de Moisés por Eliezer. Fue padre o antepasado de Selomot, que guardaba los tesoros de lo santificado.
+reason: Perspicacia «Zicrí», núm. 6; 1Cr 26:25.
+sources:
+- it-zicri
+- 1-cronicas-26
+links:
+- title: 'Perspicacia: «Zicrí»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zicr%C3%AD/
+  type: perspicacia
+relations:
+- type: kin
+  person: joram-descendiente-de-eliezer
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-26
+  - it-zicri
+  reason: 1Cr 26:25 lo da como hijo de Joram; Perspicacia «Zicrí», núm. 6, lo pone en la línea de Eliezer.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- zicri-descendiente-de-jeroham
+- zicri-descendiente-de-sasac
+- zicri-descendiente-de-simei
+- zicri-hijo-de-asaf
+- zicri-hijo-de-izhar
+- zicri-padre-de-eliezer

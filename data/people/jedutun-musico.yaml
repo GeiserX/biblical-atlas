@@ -16,6 +16,8 @@ sources:
 - it-jedutun
 - salmos-39
 - salmos-62
+- 1-cronicas-16
+- 1-cronicas-25
 links:
 - title: 'Perspicacia: «Jedutún»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jedut%C3%BAn/
@@ -26,5 +28,18 @@ links:
 - title: Salmo 62 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/salmos/62/
   type: bible
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified
+distinct_from:
+- jedutun-padre-de-obed-edom
+relations:
+- type: tie
+  person: david
+  word: master
+  inferred: false
+  sources:
+  - 1-cronicas-25
+  - it-jedutun
+  reason: '1Cr 25:6: los tres jefes de los cantores, Asaf, Jedutún y Hemán, dependían del rey.'
+  checked_on: '2026-10-12'
+  status: verified

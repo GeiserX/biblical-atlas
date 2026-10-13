@@ -1,0 +1,32 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: elam-hijo-de-meselemias
+name: Elam
+names:
+- name: Elam
+perspicacia: 1200001274#2
+disambiguation: El hijo de Meselemías, portero (1Cr 26:3); no Elam hijo de Sem ni los demás Elam de Perspicacia «Elam».
+summary: Quinto hijo del coreíta Meselemías y portero levita durante el reinado de David.
+reason: Perspicacia «Elam», núm. 2; 1Cr 26:3.
+sources:
+- it-elam
+- 1-cronicas-26
+links:
+- title: 'Perspicacia: «Elam»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Elam/
+  type: perspicacia
+relations:
+- type: kin
+  person: meselemias
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-26
+  - it-elam
+  reason: 1Cr 26:2, 3 lo nombra el quinto de los hijos de Meselemías.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- elam-hijo-de-sasac
+- elam-hijo-de-sem

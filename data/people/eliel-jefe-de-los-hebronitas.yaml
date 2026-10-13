@@ -1,0 +1,38 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: eliel-jefe-de-los-hebronitas
+name: Eliel
+names:
+- name: Eliel
+perspicacia: 1200001302#8
+disambiguation: El jefe hebronita de tiempos de David; no Elihú hijo de Tohu, el antepasado de Samuel al que la genealogía
+  de los cantores llama Eliel (Perspicacia «Eliel», núm. 2).
+distinct_from:
+- elihu-hijo-de-tohu
+- eliel-de-manases
+- eliel-descendiente-de-sasac
+- eliel-descendiente-de-simei
+- eliel-el-gadita
+- eliel-el-mahavita
+- eliel-guerrero-de-david
+summary: Levita descendiente de Hebrón, hijo de Cohat. Fue uno de los cabezas de Leví que David llamó para subir el Arca a
+  Jerusalén, con 80 de sus hermanos.
+reason: Perspicacia «Eliel», núm. 8, que lo llama hijo de Hebrón; 1Cr 15:9, 11-14.
+sources:
+- it-eliel
+- 1-cronicas-15
+links:
+- title: 'Perspicacia: «Eliel»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Eliel/
+  type: perspicacia
+relations:
+- type: kin
+  person: hebron-hijo-de-cohat
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-15
+  reason: 1Cr 15:9 lo pone al frente de los descendientes de Hebrón, que vivió siglos antes, en tiempos de Moisés.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

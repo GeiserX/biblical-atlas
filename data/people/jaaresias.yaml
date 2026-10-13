@@ -1,0 +1,36 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jaaresias
+name: Jaaresías
+names:
+- name: Jaaresías
+perspicacia: '1200002261'
+summary: Benjamita, hijo o descendiente de Jeroham; con su familia vivió en Jerusalén.
+reason: Perspicacia «Jaaresías»; 1Cr 8:27, 28.
+sources:
+- it-jaaresias
+- 1-cronicas-8
+links:
+- title: 'Perspicacia: «Jaaresías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jaares%C3%ADas/
+  type: perspicacia
+relations:
+- type: kin
+  person: jeroham-padre-de-samserai
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  - it-jaaresias
+  reason: 1Cr 8:27 lo pone entre los hijos de Jeroham; Perspicacia «Jaaresías» no precisa si era hijo o descendiente.
+  checked_on: '2026-10-12'
+  status: verified
+- type: lived_in
+  place: jerusalen
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  reason: '1Cr 8:28: los jefes de casas paternas de esta lista vivían en Jerusalén.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

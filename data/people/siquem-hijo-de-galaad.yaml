@@ -7,6 +7,7 @@ perspicacia: 1200003978#2
 disambiguation: Siquem hijo de Galaad, manasita; no el heveo hijo de Hamor, ni el hijo de Semidá, ni la ciudad.
 distinct_from:
 - siquem-hijo-de-hamor
+- siquem-hijo-de-semida
 summary: Manasita, hijo de Galaad y fundador de los siquemitas, una familia que nada tiene que ver con los cananeos de la
   ciudad de Siquem.
 reason: Perspicacia «Siquem», núm. 2; Nú 26:31.
@@ -41,5 +42,5 @@ relations:
   reason: Jos 17:2 cuenta a sus hijos entre los descendientes de Manasés hijo de José.
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

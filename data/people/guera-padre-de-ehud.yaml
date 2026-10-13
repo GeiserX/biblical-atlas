@@ -8,6 +8,8 @@ disambiguation: Guerá, el padre de Ehúd (Perspicacia, núm. 3); no el hijo de 
 distinct_from:
 - guera-hijo-de-bela
 - guera-padre-de-simei
+- guera-de-gueba
+- guera-descendiente-de-bela
 summary: Padre de Ehúd, el benjaminita zurdo que libró a Israel de Eglón, rey de Moab. La Biblia solo lo nombra como padre
   de Ehúd.
 reason: Perspicacia «Guerá, I», núm. 3; Jue 3:15.
@@ -21,5 +23,5 @@ links:
 - title: Jueces 3 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/jueces/3/
   type: bible
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

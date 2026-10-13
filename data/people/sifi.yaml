@@ -1,0 +1,28 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: sifi
+name: Sifí
+names:
+- name: Sifí
+perspicacia: '1200004064'
+summary: Simeonita, hijo de Alón y padre de Zizá, jefe de los días de Ezequías.
+reason: Perspicacia «Sifí»; 1Cr 4:34-37.
+sources:
+- it-sifi
+- 1-cronicas-4
+links:
+- title: 'Perspicacia: «Sifí»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sif%C3%AD/
+  type: perspicacia
+relations:
+- type: kin
+  person: alon
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-4
+  - it-sifi
+  reason: '1Cr 4:37: Sifí hijo de Alón.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

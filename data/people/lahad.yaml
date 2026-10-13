@@ -1,0 +1,28 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: lahad
+name: Lahad
+names:
+- name: Lahad
+perspicacia: '1200002664'
+summary: Judaíta, segundo hijo de Jáhat que se nombra; con su hermano Ahumái dio origen a los zoratitas.
+reason: Perspicacia «Lahad»; 1Cr 4:2.
+sources:
+- it-lahad
+- 1-cronicas-4
+links:
+- title: 'Perspicacia: «Lahad»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Lahad/
+  type: perspicacia
+relations:
+- type: kin
+  person: jahat-hijo-de-reaya
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-4
+  - it-lahad
+  reason: '1Cr 4:2: Jáhat fue padre de Lahad.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

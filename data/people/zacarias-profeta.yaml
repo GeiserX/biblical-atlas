@@ -19,6 +19,14 @@ distinct_from:
 - zacarias-hijo-de-jehoiada
 - zacarias-abuelo-de-ezequias
 - zacarias-hijo-de-jeberekias
+- zacarias-el-rubenita
+- zacarias-hijo-de-meselemias
+- zeker
+- zacarias-musico
+- zacarias-trompetista
+- zacarias-descendiente-de-isias
+- zacarias-hijo-de-hosa
+- zacarias-padre-de-ido
 summary: Profeta posterior al destierro, hijo de Berekías y nieto de Idó. Se unió a Ageo unos dos meses después para animar
   a terminar el templo; sus mensajes abarcan dos años y un mes.
 reason: Perspicacia «Zacarías», núm. 20, y «Ageo»; Zac 1:1 lo fecha en el octavo mes del segundo año de Darío. La Tabla de
@@ -106,5 +114,5 @@ history:
   change: 'La residencia en Jerusalén pasa a deducida (inferred: true): ningún versículo la afirma. La razón cita ahora Esd
     5:1 y Zac 7:1-5.'
   source: zacarias-7
-checked_on: '2026-09-30'
+checked_on: '2026-10-12'
 status: verified

@@ -1,0 +1,33 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jedaya-hijo-de-simri
+name: Jedayá
+names:
+- name: Jedayá
+perspicacia: 1200002356#1
+disambiguation: Jedayá simeonita (núm. 1 de Perspicacia); no el desterrado que dio oro para la corona ni las casas de sacerdotes.
+summary: Simeonita, hijo de Simrí; de él desciende Zizá, jefe en días de Ezequías.
+reason: Perspicacia «Jedayá»; 1Cr 4:34-37.
+sources:
+- it-jedaya
+- 1-cronicas-4
+links:
+- title: 'Perspicacia: «Jedayá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jeday%C3%A1/
+  type: perspicacia
+relations:
+- type: kin
+  person: simri-hijo-de-semaya
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-4
+  - it-jedaya
+  reason: '1Cr 4:37: Jedayá hijo de Simrí.'
+  checked_on: '2026-10-12'
+  status: verified
+distinct_from:
+- jedaya-de-la-corona
+- jedaya-de-tiempos-de-david
+- jedaya-sacerdote-repatriado
+checked_on: '2026-10-12'
+status: verified

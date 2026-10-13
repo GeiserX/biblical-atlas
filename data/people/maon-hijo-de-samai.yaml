@@ -1,0 +1,29 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: maon-hijo-de-samai
+name: Maón
+names:
+- name: Maón
+perspicacia: 1200002895#1
+summary: 'Descendiente de Caleb por Samái. Fue padre de Bet-Zur: quizá el antepasado de sus habitantes, su principal vecino
+  o su fundador.'
+reason: Perspicacia «Maón», núm. 1, y «Bet-zur»; 1Cr 2:45.
+sources:
+- it-maon
+- 1-cronicas-2
+- it-bet-zur
+links:
+- title: 'Perspicacia: «Maón»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ma%C3%B3n/
+  type: perspicacia
+relations:
+- type: kin
+  person: samai-hijo-de-requem
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-2
+  reason: '1Cr 2:45: el hijo de Samái fue Maón.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

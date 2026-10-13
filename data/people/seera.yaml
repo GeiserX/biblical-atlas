@@ -1,0 +1,28 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: seera
+name: Seerá
+names:
+- name: Seerá
+perspicacia: '1200003984'
+summary: Efraimita, hija de Efraín o de Berías. Se le atribuye la construcción de Bet-Horón Baja y Alta y de Uzén-Seerá.
+reason: Perspicacia «Seerá»; 1Cr 7:22-24.
+sources:
+- it-seera
+- 1-cronicas-7
+links:
+- title: 'Perspicacia: «Seerá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Seer%C3%A1/
+  type: perspicacia
+relations:
+- type: kin
+  person: efrain
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-7
+  - it-seera
+  reason: '1Cr 7:24: hija de Efraín o de Berías, según Perspicacia «Seerá»; en los dos casos desciende de Efraín.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

@@ -1,0 +1,30 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: haniel-hijo-de-ula
+name: Haniel
+names:
+- name: Haniel
+perspicacia: 1200001863#2
+disambiguation: Haniel hijo de Ulá, aserita; no Haniel hijo de Efod, el jefe de Manasés que ayudó a repartir la tierra.
+distinct_from:
+- haniel-hijo-de-efod
+summary: Aserita, hijo de Ulá y cabeza de una casa de su tribu.
+reason: Perspicacia «Haniel», núm. 2; 1Cr 7:30, 39, 40.
+sources:
+- it-haniel
+- 1-cronicas-7
+links:
+- title: 'Perspicacia: «Haniel»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Haniel/
+  type: perspicacia
+relations:
+- type: kin
+  person: ula
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-7
+  reason: 1Cr 7:39 lo cuenta entre los hijos de Ulá.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

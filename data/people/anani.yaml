@@ -1,0 +1,28 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: anani
+name: Ananí
+names:
+- name: Ananí
+perspicacia: '1200000265'
+summary: El último de los hijos de Elioenái, descendiente de David después del destierro. Su nombre quizá abrevia Ananías.
+reason: Perspicacia «Ananí»; 1Cr 3:24.
+sources:
+- it-anani
+- 1-cronicas-3
+links:
+- title: 'Perspicacia: «Ananí»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Anan%C3%AD/
+  type: perspicacia
+relations:
+- type: kin
+  person: elioenai-hijo-de-nearias
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-3
+  - it-anani
+  reason: '1Cr 3:24: uno de los siete hijos de Elioenái.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

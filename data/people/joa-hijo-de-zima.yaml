@@ -1,0 +1,34 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: joa-hijo-de-zima
+name: Joá
+names:
+- name: Joá
+- name: Joah
+  note: Grafía de Perspicacia.
+perspicacia: 1200002470#2
+disambiguation: Joá hijo de Zimá (1Cr 6:20, 21); no es ninguno de los otros Joá que numera Perspicacia «Joah».
+distinct_from:
+- joa-hijo-de-asaf
+- joa-hijo-de-obed-edom
+summary: Levita guersonita, hijo de Zimá y padre de Idó. Perspicacia cree posible que sea el Joá que con su hijo ayudó a limpiar
+  el templo en días de Ezequías.
+reason: Perspicacia «Joah», núm. 2; 1Cr 6:20, 21.
+sources:
+- it-joah
+- 1-cronicas-6
+links:
+- title: 'Perspicacia: «Joah»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Joah/
+  type: perspicacia
+relations:
+- type: kin
+  person: zima-hijo-de-jahat
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-6
+  reason: '1Cr 6:20, 21: «su hijo Joá», tras Zimá.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

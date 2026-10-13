@@ -9,6 +9,7 @@ distinct_from:
 - natan-profeta
 - natan-de-zoba
 - natan-padre-de-zabud
+- natan-hijo-de-atai
 summary: Nació en Jerusalén, hijo de David y de Bat-Seba. Lucas sigue por él la línea de María, mientras Mateo va por Salomón.
   En las Escrituras Griegas solo sale aquí.
 reason: Perspicacia «Natán», núm. 4, y la nota de estudio de Lu 3:31.
@@ -16,6 +17,8 @@ sources:
 - it-natan
 - lucas-3
 - 2-samuel-5
+- 1-cronicas-3
+- 1-cronicas-14
 links:
 - title: 'Perspicacia: «Natán»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Nat%C3%A1n/
@@ -31,8 +34,10 @@ relations:
   sources:
   - lucas-3
   - 2-samuel-5
+  - 1-cronicas-3
+  - 1-cronicas-14
   reason: 'Lu 3:31: Natán, hijo de David.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: kin
   person: bat-seba
@@ -41,8 +46,9 @@ relations:
   sources:
   - lucas-3
   - it-natan
+  - 1-cronicas-3
   reason: La nota de Lu 3:31 y Perspicacia «Natán» (núm. 4) lo dan como hijo de Bat-Seba.
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: born_in
   place: jerusalen
@@ -50,8 +56,10 @@ relations:
   sources:
   - it-natan
   - 2-samuel-5
+  - 1-cronicas-3
+  - 1-cronicas-14
   reason: 'Perspicacia «Natán» (núm. 4): nació en Jerusalén.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-09-30'
+checked_on: '2026-10-12'
 status: verified

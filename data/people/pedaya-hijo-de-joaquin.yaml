@@ -1,0 +1,43 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: pedaya-hijo-de-joaquin
+name: Pedaya
+names:
+- name: Pedaya
+perspicacia: 1200003414#3
+disambiguation: Pedaya hijo de Jeconías y padre de Zorobabel (núm. 3 de Perspicacia); no Pedaya de Rumá, abuelo materno de
+  Jehoiaquim.
+summary: 'Hijo de Jeconías nacido en el destierro y padre de Zorobabel. A Zorobabel se le llama casi siempre hijo de Sealtiel,
+  hermano de Pedaya: quizá Sealtiel lo crió, o hubo matrimonio de cuñado.'
+reason: Perspicacia «Pedaya»; 1Cr 3:17, 18.
+sources:
+- it-pedaya
+- 1-cronicas-3
+links:
+- title: 'Perspicacia: «Pedaya»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Pedaya/
+  type: perspicacia
+relations:
+- type: kin
+  person: joaquin
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-3
+  - it-pedaya
+  reason: '1Cr 3:17, 18: uno de los hijos de Jeconías el prisionero.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: born_in
+  place: babilonia
+  inferred: true
+  sources:
+  - 1-cronicas-3
+  - it-pedaya
+  reason: 1Cr 3:17, 18 lo cuenta entre los hijos de Jeconías el prisionero; Perspicacia «Pedaya» dice que nació en el destierro.
+  checked_on: '2026-10-12'
+  status: verified
+distinct_from:
+- pedaya-padre-de-zebida
+- pedaya-padre-de-joel
+checked_on: '2026-10-12'
+status: verified

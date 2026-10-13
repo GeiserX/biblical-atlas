@@ -1,0 +1,27 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: elcana-portero
+name: Elcaná
+names:
+- name: Elcaná
+perspicacia: 1200001326#7
+disambiguation: El portero del Arca; no Elcaná hijo de Jeroham, padre de Samuel, ni Elcaná hijo de Coré (Perspicacia «Elqaná»,
+  núm. 4 y 1).
+distinct_from:
+- elcana-hijo-de-core
+- elcana-hijo-de-jeroham
+- elcana-descendiente-de-core
+- elcana-hijo-de-mahat
+- elcana-padre-de-amasai
+- elcana-padre-de-asa
+summary: Levita que, con Berekías, hizo de portero del Arca en la procesión con que David la subió a Jerusalén.
+reason: Perspicacia «Elqaná», núm. 7; 1Cr 15:23. Perspicacia ve posible que sea el coreíta que se unió a David en Ziclag (núm.
+  6).
+sources:
+- it-elqana
+- 1-cronicas-15
+links:
+- title: 'Perspicacia: «Elqaná»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Elqan%C3%A1/
+  type: perspicacia
+checked_on: '2026-10-12'
+status: verified

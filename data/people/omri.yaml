@@ -65,5 +65,11 @@ relations:
   checked_on: '2026-09-30'
   status: verified
 perspicacia: 1200003324#3
-checked_on: '2026-09-30'
+disambiguation: Omrí, el rey de Israel que fundó Samaria; no Omrí de Benjamín, de la casa de Béker, ni el príncipe de Isacar
+  hijo de Miguel, en días de David.
+checked_on: '2026-10-12'
 status: verified
+distinct_from:
+- omri-de-benjamin
+- omri-hijo-de-imri
+- omri-hijo-de-miguel

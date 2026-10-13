@@ -1,0 +1,43 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hananias-hijo-de-sasac
+name: Hananías
+names:
+- name: Hananías
+perspicacia: 1200001853#1
+disambiguation: Hananías hijo de Sasac; no Hananías, el compañero de Daniel, ni los demás Hananías.
+distinct_from:
+- sadrac
+- hananias-hijo-de-heman
+- hananias-hijo-de-zorobabel
+- hananias-abuelo-de-iriya
+- hananias-hijo-de-azur
+- hananias-padre-de-sedequias
+summary: Benjamita, hijo de Sasac y cabeza de una casa de su tribu.
+reason: Perspicacia «Hananías», núm. 1; 1Cr 8:24, 25, 28.
+sources:
+- it-hananias
+- 1-cronicas-8
+links:
+- title: 'Perspicacia: «Hananías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hanan%C3%ADas/
+  type: perspicacia
+relations:
+- type: kin
+  person: sasac
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  reason: 1Cr 8:25 lo cuenta entre los hijos de Sasac.
+  checked_on: '2026-10-12'
+  status: verified
+- type: lived_in
+  place: jerusalen
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  reason: '1Cr 8:28: los jefes de casas paternas de esta lista vivían en Jerusalén.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

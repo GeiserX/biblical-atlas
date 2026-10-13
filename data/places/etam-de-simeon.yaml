@@ -1,0 +1,26 @@
+# biblical-atlas: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: etam-de-simeon
+name: Etam
+names:
+- name: Etam
+type: city
+lat: 31.491813
+lon: 34.928055
+precision: uncertain
+coord_source: openbible:a47f86c
+coord_url: https://www.openbible.info/geo/ancient/a47f86c/etam-2
+coord_note: Tell Eton, segunda identificación de OpenBible, que es el sitio que nombra Perspicacia. La primera la iguala con
+  la Etam de Belén, que Perspicacia separa.
+summary: Poblado de Simeón dentro del territorio de Judá. No se sabe con seguridad dónde estaba; algunos lo relacionan con
+  Tell ʽEitum, en el centro de Judá.
+reason: 'Perspicacia «Etam», núm. 1; 1Cr 4:32. Coordenada de OpenBible (Etam 2): solo tomamos el punto.'
+sources:
+- it-etam
+- openbible-geo
+- 1-cronicas-4
+links:
+- title: 'Perspicacia: «Etam»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Etam/
+  type: perspicacia
+checked_on: '2026-10-12'
+status: verified

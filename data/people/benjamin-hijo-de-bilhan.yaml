@@ -1,0 +1,30 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: benjamin-hijo-de-bilhan
+name: Benjamín
+names:
+- name: Benjamín
+perspicacia: 1200000640#3
+disambiguation: Benjamín hijo de Bilhán; no Benjamín hijo de Jacob, de quien desciende, ni el de días de Esdras.
+distinct_from:
+- benjamin-hijo-de-jacob
+summary: Benjamita de la línea de Jediael, hijo de Bilhán.
+reason: Perspicacia «Benjamín», núm. 3; 1Cr 7:6, 10, 11.
+sources:
+- it-benjamin
+- 1-cronicas-7
+links:
+- title: 'Perspicacia: «Benjamín»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Benjam%C3%ADn/
+  type: perspicacia
+relations:
+- type: kin
+  person: bilhan-hijo-de-jediael
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-7
+  reason: 1Cr 7:10 lo cuenta entre los hijos de Bilhán.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

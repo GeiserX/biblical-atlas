@@ -1,0 +1,40 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: aher
+name: Aher
+names:
+- name: Aher
+perspicacia: '1200000147'
+summary: Benjamita cuyos hijos se conocían como los husim. Perspicacia cree que probablemente es Ahiram, o Ahará, y que Aher
+  sería una forma abreviada.
+reason: Perspicacia «Aher» y «Husim», núm. 2; 1Cr 7:12.
+sources:
+- it-aher
+- 1-cronicas-7
+- it-husim
+links:
+- title: 'Perspicacia: «Aher»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Aher/
+  type: perspicacia
+relations:
+- type: kin
+  person: benjamin-hijo-de-jacob
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-7
+  - it-aher
+  reason: 1Cr 7:6, 12 lo cuenta entre los descendientes de Benjamín.
+  checked_on: '2026-10-12'
+  status: verified
+- type: same_as
+  person: ahiram
+  certainty: probable
+  inferred: true
+  sources:
+  - 1-cronicas-7
+  - it-aher
+  reason: Perspicacia «Aher» ve probable que sea el Ahiram de la lista de Números, que en 1Cr 7:12 se llamaría Aher.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

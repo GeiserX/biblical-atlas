@@ -19,6 +19,7 @@ sources:
 - it-jared
 - genesis-5
 - lucas-3
+- 1-cronicas-1
 links:
 - title: 'Perspicacia: «Jared»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jared/
@@ -35,8 +36,9 @@ relations:
   - genesis-5
   - it-jared
   - lucas-3
+  - 1-cronicas-1
   reason: 'Gé 5:15: Mahalalel fue padre de Jared con 65 años.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

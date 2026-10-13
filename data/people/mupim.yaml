@@ -17,6 +17,9 @@ sources:
 - it-mupim
 - genesis-46
 - numeros-26
+- 1-cronicas-7
+- it-supim
+- 1-cronicas-8
 links:
 - title: 'Perspicacia: «Mupim»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Mupim/
@@ -45,5 +48,30 @@ relations:
     allí antes de morir Jacob.'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+- type: kin
+  person: ir
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-7
+  - it-supim
+  reason: 1Cr 7:12 da a los supim como hijos de Ir; Perspicacia «Supim», núm. 1, sitúa a Supim, posiblemente, en la línea
+    de Bela e Irí.
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: bela-hijo-de-benjamin
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  - it-sefufam-sefufan
+  reason: 1Cr 8:5 lo pone, como Sefufán, entre los hijos de Bela; Perspicacia «Sefufam, Sefufán» lo iguala con Mupim y Supim.
+  checked_on: '2026-10-12'
+  status: verified
+disambiguation: El benjamita llamado también Supim; no Supim el portero que guardaba el oeste del santuario (Perspicacia «Supim»,
+  núm. 1 y 2).
+checked_on: '2026-10-12'
 status: verified
+distinct_from:
+- supim-portero

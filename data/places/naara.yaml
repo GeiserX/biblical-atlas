@@ -3,6 +3,8 @@ id: naara
 name: Naará
 names:
 - name: Naará
+- name: Naarán
+  note: Nombre de 1Cr 7:28; Perspicacia «Naarán» la da, al parecer, por la misma ciudad que Naará.
 type: city
 lat: 31.893472
 lon: 35.42475
@@ -11,12 +13,14 @@ coord_source: openbible:a179865
 coord_url: https://www.openbible.info/geo/ancient/a179865/naarah
 coord_note: Punto de Tell el-Jisr, unos 3 km al noroeste de Jericó, que Perspicacia propone con reservas. Es también el primero
   de OpenBible, que lo da como Naarán.
-summary: Ciudad del límite este de Efraín, cerca de Jericó. Perspicacia cree que es la Naarán de 1 Crónicas 7.
+summary: Ciudad del límite este de Efraín, cerca de Jericó. 1 Crónicas 7 la llama Naarán; Perspicacia cree que es la misma.
 reason: 'Perspicacia «Naará», núm. 2; Jos 16:7. OpenBible: solo el punto.'
 sources:
 - it-naara
 - openbible-geo
 - josue-16
+- 1-cronicas-7
+- it-naaran
 links:
 - title: 'Perspicacia: «Naará»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Naar%C3%A1/
@@ -24,5 +28,10 @@ links:
 - title: Josué 16 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Josu%C3%A9/16/
   type: bible
-checked_on: '2026-09-29'
+history:
+- date: '2026-10-12'
+  change: El resumen dejaba Naarán como otra ciudad posible; Perspicacia «Naarán» la iguala, al parecer, con Naará, y esta
+    ficha lleva ya los dos nombres.
+  source: 1-cronicas-7
+checked_on: '2026-10-12'
 status: verified

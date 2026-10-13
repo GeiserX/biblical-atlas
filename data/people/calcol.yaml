@@ -10,6 +10,7 @@ reason: Perspicacia «Calcol»; 1Re 4:31.
 sources:
 - it-calcol
 - 1-reyes-4
+- 1-cronicas-2
 links:
 - title: 'Perspicacia: «Calcol»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Calcol/
@@ -25,5 +26,16 @@ relations:
   reason: 1Re 4:31 llama a Hemán, Calcol y Dardá hijos de Mahol.
   checked_on: '2026-09-30'
   status: verified
-checked_on: '2026-09-30'
+- type: kin
+  person: zerah-hijo-de-juda
+  word: ancestor
+  inferred: true
+  sources:
+  - 1-cronicas-2
+  - it-calcol
+  reason: 1Cr 2:6 lo cuenta entre los hijos de Zérah; Perspicacia «Calcol» ve posible que sea el sabio que Salomón superó,
+    así que hijo vale por descendiente.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
 status: verified

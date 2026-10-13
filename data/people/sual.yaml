@@ -1,0 +1,27 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: sual
+name: Sual
+names:
+- name: Sual
+perspicacia: '1200004089#1'
+summary: Aserita, hijo de Zofá y cabeza de su tribu.
+reason: Perspicacia «Sual», núm. 1; 1Cr 7:36, 40.
+sources:
+- it-sual
+- 1-cronicas-7
+links:
+- title: 'Perspicacia: «Sual»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sual/
+  type: perspicacia
+relations:
+- type: kin
+  person: zofa
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-7
+  reason: 1Cr 7:36 lo cuenta entre los hijos de Zofá.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

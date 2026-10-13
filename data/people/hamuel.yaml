@@ -1,0 +1,28 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hamuel
+name: Hamuel
+names:
+- name: Hamuel
+perspicacia: '1200001842'
+summary: Simeonita, hijo de Mismá.
+reason: Perspicacia «Hamuel»; 1Cr 4:26.
+sources:
+- it-hamuel
+- 1-cronicas-4
+links:
+- title: 'Perspicacia: «Hamuel»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hamuel/
+  type: perspicacia
+relations:
+- type: kin
+  person: misma-hijo-de-mibsam
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-4
+  - it-hamuel
+  reason: '1Cr 4:26: su hijo Hamuel.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

@@ -1,0 +1,27 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: huri
+name: Hurí
+names:
+- name: Hurí
+perspicacia: '1200002111'
+summary: Gadita, hijo de Jaróah y padre de Abihail, en la línea que sube hasta Buz.
+reason: Perspicacia «Hurí»; 1Cr 5:14.
+sources:
+- it-huri
+- 1-cronicas-5
+links:
+- title: 'Perspicacia: «Hurí»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hur%C3%AD/
+  type: perspicacia
+relations:
+- type: kin
+  person: jaroah
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-5
+  reason: 1Cr 5:14 da la línea de padre a hijo, de Buz a Abihail.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

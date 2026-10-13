@@ -22,6 +22,7 @@ distinct_from:
 - josue-el-betsemita
 - josue-jefe-de-jerusalen
 - hosea-de-israel
+- hosea-hijo-de-azazias
 summary: Efraimita, servidor de Moisés desde joven. Mandó a Israel contra Amalec, fue uno de los dos espías fieles y sucedió
   a Moisés. Llevó al pueblo a cruzar el Jordán y a conquistar Canaán. Murió a los 110 años.
 reason: 'Perspicacia «Josué», núm. 1, párr. 2, 3, 7, 9 y 19: en 1513 a.e.c. mandaba contra Amaleq; el cuadro del estudio
@@ -73,6 +74,7 @@ sources:
 - josue-23
 - jueces-2
 - it-hosea
+- 1-cronicas-7
 links:
 - title: 'Perspicacia: «Josué»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Josu%C3%A9/
@@ -138,8 +140,9 @@ relations:
   - josue-21
   - josue-24
   - jueces-2
+  - 1-cronicas-7
   reason: Éx 33:11 lo llama Josué hijo de Nun.
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: lived_in
   place: sitim
@@ -186,10 +189,19 @@ relations:
     «Josué» lo describe como caudillo.
   checked_on: '2026-09-29'
   status: verified
+- type: kin
+  person: efrain
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-7
+  reason: '1Cr 7:20-27: la lista de los hijos de Efraín acaba en Josué.'
+  checked_on: '2026-10-12'
+  status: verified
 perspicacia: 1200002523#1
 history:
 - date: '2026-09-29'
   change: Amaleq es la grafía de Perspicacia; la Traducción del Nuevo Mundo escribe Amalec (Éx 17:8-13).
   source: exodo-17
-checked_on: '2026-10-02'
+checked_on: '2026-10-12'
 status: verified

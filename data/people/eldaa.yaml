@@ -9,6 +9,7 @@ reason: Perspicacia «Eldaá»; Gé 25:4.
 sources:
 - it-eldaa
 - genesis-25
+- 1-cronicas-1
 links:
 - title: 'Perspicacia: «Eldaá»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Elda%C3%A1/
@@ -24,8 +25,9 @@ relations:
   sources:
   - it-eldaa
   - genesis-25
+  - 1-cronicas-1
   reason: Gé 25:4.
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

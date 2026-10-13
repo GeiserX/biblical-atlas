@@ -1,0 +1,31 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: tahat-hijo-de-bered
+name: Táhat
+names:
+- name: Táhat
+perspicacia: 1200004303#1
+disambiguation: Táhat hijo de Bered, efraimita; no su descendiente Táhat hijo de Eleadá, el levita ni el campamento del desierto.
+distinct_from:
+- tahat-hijo-de-eleada
+- tahat-hijo-de-asir
+summary: Efraimita de la línea de Sutélah, hijo de Bered.
+reason: Perspicacia «Táhat», núm. 1; 1Cr 7:20.
+sources:
+- it-tahat
+- 1-cronicas-7
+links:
+- title: 'Perspicacia: «Táhat»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/T%C3%A1hat/
+  type: perspicacia
+relations:
+- type: kin
+  person: bered
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-7
+  reason: '1Cr 7:20: Táhat era hijo de Bered.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

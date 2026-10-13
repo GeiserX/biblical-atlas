@@ -1,0 +1,34 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hanan-hijo-de-azel
+name: Hanán
+names:
+- name: Hanán
+perspicacia: 1200001850#3
+disambiguation: Hanán hijo de Azel, de la casa de Saúl; no Hanán hijo de Sasac ni los demás Hanán.
+distinct_from:
+- hanan-hijo-de-sasac
+- hanan-hijo-de-maaca
+- hanan-hijo-de-igdalias
+summary: Benjamita, hijo de Azel, de la línea del rey Saúl.
+reason: Perspicacia «Hanán», núm. 3; 1Cr 8:33-38.
+sources:
+- it-hanan
+- 1-cronicas-8
+- 1-cronicas-9
+links:
+- title: 'Perspicacia: «Hanán»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Han%C3%A1n/
+  type: perspicacia
+relations:
+- type: kin
+  person: azel
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  - 1-cronicas-9
+  reason: 1Cr 8:38 lo cuenta entre los hijos de Azel.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

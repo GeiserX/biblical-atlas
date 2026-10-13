@@ -1,0 +1,32 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: guedor-hijo-de-penuel
+name: Guedor
+names:
+- name: Guedor
+perspicacia: 1200001639#2
+disambiguation: Guedor hijo de Penuel (núm. 2 de Perspicacia); no el hijo de Jéred ni el benjaminita de Gabaón.
+summary: Judaíta, hijo de Penuel. Perspicacia no descarta que el nombre sea el de una población.
+reason: Perspicacia «Guedor»; 1Cr 4:4.
+sources:
+- it-guedor
+- 1-cronicas-4
+links:
+- title: 'Perspicacia: «Guedor»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Guedor/
+  type: perspicacia
+relations:
+- type: kin
+  person: penuel-padre-de-guedor
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-4
+  - it-guedor
+  reason: '1Cr 4:4: Penuel fue el padre de Guedor.'
+  checked_on: '2026-10-12'
+  status: verified
+distinct_from:
+- guedor-hijo-de-jered
+- guedor-hijo-de-jeiel
+checked_on: '2026-10-12'
+status: verified

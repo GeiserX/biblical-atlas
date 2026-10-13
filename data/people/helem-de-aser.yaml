@@ -1,0 +1,35 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: helem-de-aser
+name: Hélem
+names:
+- name: Hélem
+perspicacia: 1200001971#1
+disambiguation: Hélem de Aser, hermano de Sémer; no Hélem, también llamado Heldái, que trajo de Babilonia plata y oro en días
+  de Zacarías.
+distinct_from:
+- heldai-de-la-corona
+summary: Aserita, hermano de Sémer, con su propia rama en la lista de Aser. La nota y Perspicacia lo creen probablemente el
+  Hotam del versículo 32.
+reason: Perspicacia «Hélem», núm. 1; 1Cr 7:35, 40.
+sources:
+- it-helem
+- 1-cronicas-7
+links:
+- title: 'Perspicacia: «Hélem»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/H%C3%A9lem/
+  type: perspicacia
+relations:
+- type: same_as
+  person: hotam-hijo-de-heber
+  certainty: probable
+  inferred: true
+  sources:
+  - 1-cronicas-7
+  - it-helem
+  - it-hotam
+  reason: La nota de 1Cr 7:35 y Perspicacia «Hélem», núm. 1, y «Hotam», núm. 1, ven probable que Hélem sea el Hotam del versículo
+    32.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

@@ -1,0 +1,36 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: zibia
+name: Zibía
+names:
+- name: Zibía
+perspicacia: '1200004726'
+summary: Benjamita, hijo de Saharaim y Hodes, cabeza de una familia de su tribu.
+reason: Perspicacia «Zibía»; 1Cr 8:1, 8-10.
+sources:
+- it-zibia
+- 1-cronicas-8
+links:
+- title: 'Perspicacia: «Zibía»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zib%C3%ADa/
+  type: perspicacia
+relations:
+- type: kin
+  person: saharaim
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  reason: 1Cr 8:9, 10 lo cuenta entre los hijos de Saharaim.
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: hodes
+  word: mother
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  reason: '1Cr 8:9: su madre fue Hodes.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

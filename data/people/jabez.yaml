@@ -1,0 +1,20 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jabez
+name: Jabez
+names:
+- name: Jabez
+perspicacia: 1200002271#1
+disambiguation: Jabez el judaíta (núm. 1 de Perspicacia); no la población de Judá llamada Jabez.
+summary: Judaíta más honorable que sus hermanos. Su madre lo llamó así por el dolor del parto. Pidió a Dios que lo bendijera,
+  ensanchara su tierra y lo protegiera, y Dios se lo concedió.
+reason: Perspicacia «Jabez»; 1Cr 4:9, 10.
+sources:
+- it-jabez
+- 1-cronicas-4
+links:
+- title: 'Perspicacia: «Jabez»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jabez/
+  type: perspicacia
+relations: []
+checked_on: '2026-10-12'
+status: verified

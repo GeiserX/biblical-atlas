@@ -1,0 +1,36 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hefer-el-mekeratita
+name: Héfer
+names:
+- name: Héfer
+perspicacia: 1200001989#3
+disambiguation: Héfer el mekeratita, guerrero de David en 1Cr 11:36; no el hijo de Galaad ni el descendiente de Judá.
+distinct_from:
+- hefer-hijo-de-galaad
+- hefer-hijo-de-asjur
+summary: Mekeratita, uno de los guerreros más destacados de David. El apelativo remite a un antepasado o a un lugar llamado
+  Mekerá.
+reason: Perspicacia «Héfer», núm. 3, y «Mekeratita»; 1Cr 11:36.
+sources:
+- it-hefer
+- it-mekeratita
+- 1-cronicas-11
+links:
+- title: 'Perspicacia: «Héfer»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/H%C3%A9fer/
+  type: perspicacia
+- title: 'Perspicacia: «Mekeratita»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Mekeratita/
+  type: perspicacia
+relations:
+- type: tie
+  person: david
+  word: master
+  inferred: false
+  sources:
+  - 1-cronicas-11
+  reason: '1Cr 11:36: figura entre los valientes de David.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

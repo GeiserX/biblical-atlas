@@ -13,10 +13,12 @@ sources:
 - it-arauna
 - it-moria
 - 2-samuel-24
+- 1-cronicas-21
+- it-ornan
 links:
 - title: 'Perspicacia: «Arauna»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Arauna/
   type: perspicacia
 relations: []
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

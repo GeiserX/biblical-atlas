@@ -1,0 +1,34 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: zimri-hijo-de-zerah
+name: Zimrí
+names:
+- name: Zimrí
+perspicacia: 1200004737#1
+summary: Hijo de Zérah y nieto de Judá y Tamar, de la tribu de Judá. Es el primero de los cinco hijos de Zérah que nombra
+  1 Crónicas.
+reason: Perspicacia «Zimrí», núm. 1; 1Cr 2:6.
+sources:
+- it-zimri
+- 1-cronicas-2
+links:
+- title: 'Perspicacia: «Zimrí»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zimr%C3%AD/
+  type: perspicacia
+relations:
+- type: kin
+  person: zerah-hijo-de-juda
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-2
+  reason: '1Cr 2:6: el primero de los hijos de Zérah.'
+  checked_on: '2026-10-12'
+  status: verified
+disambiguation: Zimrí hijo de Zérah, nieto de Judá; no Zimrí hijo de Salu, el simeonita de Sitim, ni el rey de Israel de siete
+  días.
+distinct_from:
+- zimri-de-israel
+- zimri-hijo-de-salu
+- zimri-hijo-de-jehoada
+checked_on: '2026-10-12'
+status: verified

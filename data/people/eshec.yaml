@@ -1,0 +1,19 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: eshec
+name: Éshec
+names:
+- name: Éshec
+- name: Ésheq
+  note: Grafía de Perspicacia.
+perspicacia: '1200001424'
+summary: Benjamita descendiente del rey Saúl, hermano de Azel. Tuvo tres hijos; los de Ulam, el mayor, fueron arqueros valientes.
+reason: Perspicacia «Ésheq»; 1Cr 8:1, 33, 39, 40.
+sources:
+- it-esheq
+- 1-cronicas-8
+links:
+- title: 'Perspicacia: «Ésheq»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/%C3%89sheq/
+  type: perspicacia
+checked_on: '2026-10-12'
+status: verified

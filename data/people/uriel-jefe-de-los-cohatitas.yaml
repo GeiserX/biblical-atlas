@@ -1,0 +1,32 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: uriel-jefe-de-los-cohatitas
+name: Uriel
+names:
+- name: Uriel
+perspicacia: 1200004522#2
+disambiguation: El jefe cohatita del traslado del Arca; no Uriel hijo de Táhat (núm. 1) ni el padre de la reina Micaya, madre
+  de Abías (núm. 3), según Perspicacia «Uriel».
+summary: Jefe levita de los cohatitas en tiempos de David. Se santificó y, con 120 de sus hermanos, ayudó a subir el Arca
+  hasta Jerusalén.
+reason: Perspicacia «Uriel», núm. 2; 1Cr 15:5, 11-14.
+sources:
+- it-uriel
+- 1-cronicas-15
+links:
+- title: 'Perspicacia: «Uriel»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Uriel/
+  type: perspicacia
+relations:
+- type: kin
+  person: cohat
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-15
+  reason: 1Cr 15:5 lo pone al frente de los cohatitas, descendientes de Cohat.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- uriel-hijo-de-tahat

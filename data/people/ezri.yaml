@@ -1,0 +1,36 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ezri
+name: Ezrí
+names:
+- name: Ezrí
+perspicacia: '1200001479'
+summary: Hijo de Kelub. Dirigía a los que labraban los campos del rey David.
+reason: Perspicacia «Ezrí»; 1Cr 27:26.
+sources:
+- it-ezri
+- 1-cronicas-27
+links:
+- title: 'Perspicacia: «Ezrí»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ezr%C3%AD/
+  type: perspicacia
+relations:
+- type: kin
+  person: kelub-padre-de-ezri
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-27
+  reason: '1Cr 27:26: Ezrí hijo de Kelub.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: tie
+  person: david
+  word: master
+  inferred: false
+  sources:
+  - 1-cronicas-27
+  reason: '1Cr 27:26, 31: mandaba a los que cultivaban el campo; era uno de los que administraban la hacienda del rey.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

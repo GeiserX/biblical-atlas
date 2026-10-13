@@ -32,6 +32,7 @@ sources:
 - jeremias-29
 - jeremias-37
 - jeremias-52
+- 1-cronicas-3
 links:
 - title: 'Perspicacia: «Joaquín»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Joaqu%C3%ADn/
@@ -52,6 +53,7 @@ relations:
   - jeremias-27
   - jeremias-28
   - jeremias-37
+  - 1-cronicas-3
   reason: Hijo de Jehoiaquim y Nehustá (2Re 24:6, 8).
   checked_on: '2026-10-12'
   status: verified
@@ -121,6 +123,7 @@ relations:
   - jeremias-22
   - jeremias-24
   - jeremias-27
+  - 1-cronicas-3
   reason: '2Re 24:12, 15: Nabucodonosor lo tomó cautivo y lo desterró a Babilonia.'
   checked_on: '2026-10-12'
   status: verified

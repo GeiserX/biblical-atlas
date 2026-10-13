@@ -1,0 +1,33 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jehdeya-levita
+name: Jehdeyá
+names:
+- name: Jehdeyá
+perspicacia: 1200002363#1
+disambiguation: El levita de 1Cr 24:20; no Jehdeyá el meronotita, que cuidaba las asnas de David.
+summary: Levita descendiente de Amram por la línea de Subael. Su casa paterna entró en el reparto del servicio levítico de
+  David.
+reason: Perspicacia «Jehdeyá», núm. 1; 1Cr 24:20.
+sources:
+- it-jehdeya
+- 1-cronicas-24
+links:
+- title: 'Perspicacia: «Jehdeyá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jehdey%C3%A1/
+  type: perspicacia
+relations:
+- type: kin
+  person: sebuel-descendiente-de-guersom
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-24
+  - it-jehdeya
+  reason: 1Cr 24:20 lo pone de los hijos de Subael; Perspicacia «Jehdeyá», núm. 1, lo llama descendiente de Amram, como su
+    casa paterna.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- jehdeya-el-meronotita

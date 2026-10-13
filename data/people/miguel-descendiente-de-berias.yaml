@@ -1,0 +1,46 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: miguel-descendiente-de-berias
+name: Miguel
+names:
+- name: Miguel
+perspicacia: 1200003035#10
+disambiguation: Miguel de la casa de Berías, benjamita; no Miguel hijo de Izrahías, el padre del espía Setur ni los demás
+  Miguel.
+distinct_from:
+- miguel-hijo-de-izrahias
+- miguel-padre-de-setur
+- miguel-de-manases
+- miguel-hijo-de-abihail
+- miguel-hijo-de-baaseya
+- miguel-hijo-de-jesisai
+- miguel-padre-de-omri
+summary: Benjamita que descendía de Saharaim y su esposa Husim por Elpaal y Berías; jefe de familia en Jerusalén.
+reason: Perspicacia «Miguel», núm. 10; 1Cr 8:16, 28.
+sources:
+- it-miguel
+- 1-cronicas-8
+links:
+- title: 'Perspicacia: «Miguel»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Miguel/
+  type: perspicacia
+relations:
+- type: kin
+  person: berias-hijo-de-elpaal
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  - it-miguel
+  reason: 1Cr 8:16 lo pone entre los hijos de Berías; Perspicacia «Miguel» no precisa si era hijo o descendiente.
+  checked_on: '2026-10-12'
+  status: verified
+- type: lived_in
+  place: jerusalen
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  reason: '1Cr 8:28: los jefes de casas paternas de esta lista vivían en Jerusalén.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

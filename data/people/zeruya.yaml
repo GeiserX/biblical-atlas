@@ -16,6 +16,9 @@ sources:
 - 2-samuel-18
 - 2-samuel-19
 - 2-samuel-23
+- 1-cronicas-2
+- 1-cronicas-11
+- 1-cronicas-18
 links:
 - title: 'Perspicacia: «Zeruyá»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zeruy%C3%A1/
@@ -23,5 +26,5 @@ links:
 - title: 1 Samuel 26 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/1-samuel/26/
   type: bible
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

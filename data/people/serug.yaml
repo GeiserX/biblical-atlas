@@ -19,6 +19,7 @@ sources:
 - it-serug
 - genesis-11
 - lucas-3
+- 1-cronicas-1
 links:
 - title: 'Perspicacia: «Serug»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Serug/
@@ -34,8 +35,9 @@ relations:
   sources:
   - genesis-11
   - lucas-3
+  - 1-cronicas-1
   reason: 'Gé 11:20: Reú fue padre de Serug a los 32 años.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

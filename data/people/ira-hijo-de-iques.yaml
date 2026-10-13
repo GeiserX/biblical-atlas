@@ -13,6 +13,8 @@ reason: Perspicacia «Irá», núm. 2; 2Sa 23:26.
 sources:
 - it-ira
 - 2-samuel-23
+- 1-cronicas-11
+- 1-cronicas-27
 links:
 - title: 'Perspicacia: «Irá»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ir%C3%A1/
@@ -24,8 +26,10 @@ relations:
   inferred: false
   sources:
   - 2-samuel-23
+  - 1-cronicas-11
+  - 1-cronicas-27
   reason: '2Sa 23:26: Irá, hijo de Iqués el tecoíta.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: tie
   person: david
@@ -33,8 +37,10 @@ relations:
   inferred: false
   sources:
   - 2-samuel-23
+  - 1-cronicas-11
+  - 1-cronicas-27
   reason: '2Sa 23:26: uno de los treinta guerreros de David.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

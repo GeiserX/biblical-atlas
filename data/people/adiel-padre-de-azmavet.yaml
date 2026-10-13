@@ -1,0 +1,22 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: adiel-padre-de-azmavet
+name: Adiel
+names:
+- name: Adiel
+perspicacia: 1200000097#1
+summary: Padre de Azmávet, el encargado de los tesoros de la casa real de David.
+reason: Perspicacia «Adiel», núm. 1; 1Cr 27:25.
+sources:
+- it-adiel
+- 1-cronicas-27
+links:
+- title: 'Perspicacia: «Adiel»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Adiel/
+  type: perspicacia
+relations: []
+checked_on: '2026-10-12'
+status: verified
+disambiguation: Adiel, padre de Azmávet, el tesorero del rey David; no el jefe simeonita ni el sacerdote padre de Maasái.
+distinct_from:
+- adiel-hijo-de-jahzera
+- adiel-simeonita
