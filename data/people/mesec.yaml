@@ -12,6 +12,7 @@ reason: Perspicacia «Mesec», núm. 1, párr. 1 y 2; Gé 10:2.
 sources:
 - it-mesec
 - genesis-10
+- 1-cronicas-1
 links:
 - title: 'Perspicacia: «Mesec»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Mesec/
@@ -26,12 +27,13 @@ relations:
   inferred: false
   sources:
   - genesis-10
+  - 1-cronicas-1
   reason: Gé 10:2 lo nombra entre los hijos de Jafet.
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 history:
 - date: '2026-09-29'
   change: La clave apunta a la entrada 1 del artículo, que trata dos entradas.
   source: it-mesec
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

@@ -19,6 +19,13 @@ distinct_from:
 - uzias
 - jehoacaz-de-israel
 - jehoacaz-de-juda
+- azarias-hijo-de-etan
+- azarias-hijo-de-jehu
+- azarias-hijo-de-ahimaaz
+- azarias-hijo-de-hilquias
+- azarias-hijo-de-johanan
+- azarias-hijo-de-sofonias
+- azarias-sacerdote-repatriado
 date:
   from: -905
   to: -904
@@ -40,6 +47,7 @@ sources:
 - 2-reyes-11
 - it-azarias
 - it-jehoacaz
+- 1-cronicas-3
 links:
 - title: 'Perspicacia: «Ocozías»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ocoz%C3%ADas/
@@ -55,8 +63,9 @@ relations:
   sources:
   - it-ocozias
   - 2-reyes-8
+  - 1-cronicas-3
   reason: Hijo de Jehoram y Atalía (2Re 8:25-26).
-  checked_on: '2026-09-28'
+  checked_on: '2026-10-12'
   status: verified
 - type: kin
   person: atalia
@@ -147,5 +156,5 @@ relations:
   checked_on: '2026-09-30'
   status: verified
 perspicacia: 1200000145#2
-checked_on: '2026-10-02'
+checked_on: '2026-10-12'
 status: verified

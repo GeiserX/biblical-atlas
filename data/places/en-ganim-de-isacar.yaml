@@ -21,6 +21,7 @@ sources:
 - openbible-geo
 - josue-19
 - josue-21
+- 1-cronicas-6
 links:
 - title: 'Perspicacia: «En-ganim»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/En-ganim/
@@ -31,5 +32,5 @@ links:
 - title: Josué 21 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Josu%C3%A9/21/
   type: bible
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

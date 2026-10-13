@@ -30,7 +30,7 @@ Qué versículos de la TNM se han leído y apuntado en `data/coverage/<libro>.ya
 | [2 Samuel](https://github.com/GeiserX/biblical-atlas/blob/main/data/coverage/2-samuel.yaml) | 24 de 24 | 695 de 695 | 100 % |
 | [1 Reyes](https://github.com/GeiserX/biblical-atlas/blob/main/data/coverage/1-reyes.yaml) | 22 de 22 | 816 de 816 | 100 % |
 | [2 Reyes](https://github.com/GeiserX/biblical-atlas/blob/main/data/coverage/2-reyes.yaml) | 25 de 25 | 719 de 719 | 100 % |
-| 1 Crónicas | 0 de 29 | 0 de 942 | 0 % |
+| [1 Crónicas](https://github.com/GeiserX/biblical-atlas/blob/main/data/coverage/1-cronicas.yaml) | 26 de 29 | 942 de 942 | 100 % |
 | 2 Crónicas | 0 de 36 | 0 de 822 | 0 % |
 | Esdras | 0 de 10 | 0 de 280 | 0 % |
 | Nehemías | 0 de 13 | 0 de 406 | 0 % |
@@ -84,8 +84,10 @@ Qué versículos de la TNM se han leído y apuntado en `data/coverage/<libro>.ya
 | 3 Juan | 0 de 1 | 0 de 14 | 0 % |
 | Judas | 0 de 1 | 0 de 25 | 0 % |
 | Apocalipsis | 0 de 22 | 0 de 404 | 0 % |
-| **Total** | 956 de 1189 | 25256 de 31062 | 81 % |
+| **Total** | 982 de 1189 | 26198 de 31062 | 84 % |
 
 ## Capítulos empezados
 
-Ninguno.
+- 1 Crónicas 19: faltan ninguno (falta marcarlo completo)
+- 1 Crónicas 24: faltan ninguno (falta marcarlo completo)
+- 1 Crónicas 25: faltan ninguno (falta marcarlo completo)

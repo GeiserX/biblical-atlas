@@ -12,6 +12,7 @@ sources:
 - it-naaman
 - genesis-46
 - numeros-26
+- 1-cronicas-8
 links:
 - title: 'Perspicacia: «Naamán»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Naam%C3%A1n/
@@ -28,8 +29,9 @@ relations:
   - numeros-26
   - genesis-46
   - it-naaman
+  - 1-cronicas-8
   reason: Nú 26:40 hace a Ard y a Naamán hijos de Bela.
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: kin
   person: benjamin-hijo-de-jacob
@@ -51,11 +53,27 @@ relations:
     allí antes de morir Jacob.'
   checked_on: '2026-09-29'
   status: verified
+- type: lived_in
+  place: gueba
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  reason: 1Cr 8:6, 7 nombra a Naamán entre los jefes de las familias de Gueba que fueron desterrados.
+  checked_on: '2026-10-12'
+  status: verified
+- type: lived_in
+  place: manahat
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  reason: '1Cr 8:6, 7: fue de los que se llevaron al destierro a Manáhat.'
+  checked_on: '2026-10-12'
+  status: verified
 history:
 - date: '2026-09-29'
   change: 'Nú 26:40 dice que Naamán era hijo de Bela: esa relación deja de ser una deducción de Perspicacia y cita el capítulo.'
   source: numeros-26
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified
 distinct_from:
 - naaman-el-sirio

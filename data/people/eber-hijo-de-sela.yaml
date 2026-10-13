@@ -13,6 +13,7 @@ sources:
 - genesis-10
 - genesis-11
 - lucas-3
+- 1-cronicas-1
 links:
 - title: 'Perspicacia: «Éber»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/%C3%89ber/
@@ -29,8 +30,9 @@ relations:
   - genesis-10
   - genesis-11
   - lucas-3
+  - 1-cronicas-1
   reason: 'Gé 10:24: Selá fue padre de Éber; Gé 11:14, a los 30 años.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: kin
   person: sem
@@ -41,5 +43,9 @@ relations:
   reason: 'Gé 10:21: Sem es antepasado de todos los descendientes de Éber.'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified
+distinct_from:
+- eber-hijo-de-abihail
+- eber-hijo-de-elpaal
+- eber-hijo-de-sasac

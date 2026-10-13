@@ -10,6 +10,7 @@ sources:
 - it-eliahba
 - it-saalbonita
 - 2-samuel-23
+- 1-cronicas-11
 links:
 - title: 'Perspicacia: «Eliahbá»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Eliahb%C3%A1/
@@ -21,8 +22,9 @@ relations:
   inferred: false
   sources:
   - 2-samuel-23
+  - 1-cronicas-11
   reason: '2Sa 23:32: uno de los treinta guerreros de David.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

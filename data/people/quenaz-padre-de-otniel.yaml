@@ -8,6 +8,7 @@ disambiguation: Quenaz padre de Otniel y hermano de Caleb; no el jeque edomita h
   de 1Cr 4:15.
 distinct_from:
 - quenaz-hijo-de-elifaz
+- quenaz-hijo-de-ela
 summary: Hermano de Caleb, de la tribu de Judá, y padre de Otniel, el que conquistó Debir, y de Seraya.
 reason: Perspicacia «Quenaz», núm. 2, y «Otniel», párr. 1; Jos 15:17; Jue 1:13; 1Cr 4:13.
 sources:
@@ -16,6 +17,7 @@ sources:
 - josue-15
 - jueces-1
 - jueces-3
+- 1-cronicas-4
 links:
 - title: 'Perspicacia: «Quenaz»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Quenaz/
@@ -38,5 +40,5 @@ relations:
     de Quenaz.
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

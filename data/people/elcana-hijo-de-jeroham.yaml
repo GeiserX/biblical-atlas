@@ -9,6 +9,12 @@ perspicacia: 1200001326#4
 disambiguation: Elcaná hijo de Jeroham, padre del profeta Samuel; no el hijo de Coré ni los otros levitas de ese nombre.
 distinct_from:
 - elcana-hijo-de-core
+- elcana-descendiente-de-core
+- elcana-hijo-de-mahat
+- elcana-padre-de-amasai
+- elcana-padre-de-asa
+- elcana-el-coreita
+- elcana-portero
 summary: Levita de la familia de Cohat con casa en Ramá, ciudad de la serranía de Efraín; por eso se le llama efraimita. Esposo
   de Ana y de Peniná y padre de Samuel, iba cada año a Siló a adorar.
 reason: Perspicacia «Elqaná», núm. 4; 1Sa 1:1-8, 19-23; 2:11, 19-21.
@@ -16,6 +22,7 @@ sources:
 - it-elqana
 - 1-samuel-1
 - 1-samuel-2
+- 1-cronicas-6
 links:
 - title: 'Perspicacia: «Elqaná»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Elqan%C3%A1/
@@ -30,8 +37,9 @@ relations:
   inferred: false
   sources:
   - 1-samuel-1
+  - 1-cronicas-6
   reason: 1Sa 1:1 lo llama hijo de Jeroham.
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: kin
   person: ana-madre-de-samuel
@@ -62,5 +70,5 @@ relations:
     misma ciudad.'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

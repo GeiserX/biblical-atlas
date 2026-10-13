@@ -23,6 +23,7 @@ sources:
 - isaias-7
 - ip1-9
 - isaias-14
+- 1-cronicas-3
 links:
 - title: 'Perspicacia: «Acaz»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Acaz/
@@ -40,8 +41,9 @@ relations:
   - 2-reyes-16
   - mateo-1
   - isaias-7
+  - 1-cronicas-3
   reason: Hijo del rey Jotán (2Re 16:1).
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-12'
   status: verified
 - type: succeeds
   person: jotan
@@ -138,5 +140,8 @@ history:
     2Re 16:5.
   source: 2-reyes-16
 perspicacia: 1200000144#1
-checked_on: '2026-09-30'
+disambiguation: Acaz, rey de Judá, hijo de Jotán; no Acaz hijo de Miqueas, descendiente de Saúl por Jonatán.
+checked_on: '2026-10-12'
 status: verified
+distinct_from:
+- acaz-hijo-de-mica

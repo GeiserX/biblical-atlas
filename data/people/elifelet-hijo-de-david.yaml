@@ -12,6 +12,8 @@ reason: 'Perspicacia «Elifélet», núm. 3; 2Sa 5:16. En Crónicas: 1Cr 3:8 y 1
 sources:
 - it-elifelet
 - 2-samuel-5
+- 1-cronicas-3
+- 1-cronicas-14
 links:
 - title: 'Perspicacia: «Elifélet»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Elif%C3%A9let/
@@ -23,18 +25,24 @@ relations:
   inferred: false
   sources:
   - 2-samuel-5
+  - 1-cronicas-3
+  - 1-cronicas-14
   reason: '2Sa 5:13-16: uno de los hijos que David tuvo en Jerusalén.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: born_in
   place: jerusalen
   inferred: false
   sources:
   - 2-samuel-5
+  - 1-cronicas-3
+  - 1-cronicas-14
   reason: '2Sa 5:13-16: nació en Jerusalén, después de que David dejara Hebrón.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified
 distinct_from:
 - elifelet-hijo-de-ahasbai
+- elpelet
+- elifelet-hijo-de-eshec

@@ -53,11 +53,15 @@ relations:
     cuándo vivió.'
   checked_on: '2026-09-28'
   status: verified
-disambiguation: Compañero de Daniel cuyo nombre hebreo era Hananías; no es el profeta falso hijo de Azur, el padre del príncipe
-  Sedequías ni el abuelo de Iriya.
+disambiguation: Hananías, compañero de Daniel, al que en Babilonia llamaron Sadrac; no el profeta falso hijo de Azur, el padre
+  del príncipe Sedequías, el abuelo de Iriya, el hijo de Zorobabel ni el benjamita hijo de Sasac.
+perspicacia: '1200003927'
 checked_on: '2026-10-12'
 status: verified
 distinct_from:
 - hananias-hijo-de-azur
 - hananias-padre-de-sedequias
 - hananias-abuelo-de-iriya
+- hananias-hijo-de-zorobabel
+- hananias-hijo-de-sasac
+- hananias-hijo-de-heman

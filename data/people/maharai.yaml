@@ -12,6 +12,8 @@ sources:
 - it-maharai
 - it-netofa
 - 2-samuel-23
+- 1-cronicas-11
+- 1-cronicas-27
 links:
 - title: 'Perspicacia: «Maharai»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Maharai/
@@ -23,8 +25,10 @@ relations:
   sources:
   - 2-samuel-23
   - it-netofa
+  - 1-cronicas-11
+  - 1-cronicas-27
   reason: '2Sa 23:28: Maharái el netofatita; Perspicacia «Netofá».'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: tie
   person: david
@@ -32,8 +36,22 @@ relations:
   inferred: false
   sources:
   - 2-samuel-23
+  - 1-cronicas-11
+  - 1-cronicas-27
   reason: '2Sa 23:28: uno de los treinta guerreros de David.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-09-29'
+- type: kin
+  person: zerah-hijo-de-juda
+  word: ancestor
+  inferred: true
+  sources:
+  - 1-cronicas-27
+  - it-maharai
+  - it-zerah
+  reason: 1Cr 27:13 lo hace de los zerahítas; Perspicacia «Maharai» lo llama descendiente de Zérah, y «Zérah», núm. 3, lo
+    pone en la familia del hijo de Judá.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
 status: verified

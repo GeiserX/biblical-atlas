@@ -11,6 +11,7 @@ reason: Perspicacia «Dará, Dardá»; 1Re 4:31; 1Cr 2:6.
 sources:
 - it-darda
 - 1-reyes-4
+- 1-cronicas-2
 links:
 - title: 'Perspicacia: «Dará, Dardá»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Dar%C3%A1-Dard%C3%A1/
@@ -32,8 +33,9 @@ relations:
   inferred: true
   sources:
   - it-darda
+  - 1-cronicas-2
   reason: Perspicacia «Dará, Dardá» lo da por el Dará hijo de Zérah de 1Cr 2:6, de la tribu de Judá.
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-09-30'
+checked_on: '2026-10-12'
 status: verified

@@ -40,6 +40,8 @@ sources:
 - it-uzah
 - it-perez-uzah
 - it-nacon
+- 1-cronicas-13
+- it-kidon
 links:
 - title: 'Perspicacia: «Uzah»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Uzah/
@@ -47,5 +49,5 @@ links:
 - title: 2 Samuel 6 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-samuel/6/
   type: bible
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

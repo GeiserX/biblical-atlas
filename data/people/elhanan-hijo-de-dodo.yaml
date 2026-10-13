@@ -10,6 +10,7 @@ reason: Perspicacia «Elhanán», núm. 2; 2Sa 23:24.
 sources:
 - it-elhanan
 - 2-samuel-23
+- 1-cronicas-11
 links:
 - title: 'Perspicacia: «Elhanán»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Elhan%C3%A1n/
@@ -21,8 +22,9 @@ relations:
   inferred: false
   sources:
   - 2-samuel-23
+  - 1-cronicas-11
   reason: '2Sa 23:24: Elhanán, hijo de Dodó de Belén.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: tie
   person: david
@@ -30,10 +32,11 @@ relations:
   inferred: false
   sources:
   - 2-samuel-23
+  - 1-cronicas-11
   reason: '2Sa 23:24: uno de los treinta guerreros de David.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified
 distinct_from:
 - elhanan-hijo-de-jair

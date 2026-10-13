@@ -17,6 +17,7 @@ sources:
 - it-hadar
 - genesis-36
 - it-hadad
+- 1-cronicas-1
 links:
 - title: 'Perspicacia: «Hadar»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hadar/
@@ -31,8 +32,9 @@ relations:
   sources:
   - it-hadar
   - genesis-36
+  - 1-cronicas-1
   reason: 'Gé 36:39: reinó cuando murió Baal-Hanán.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   office: king
   status: verified
 - type: lived_in
@@ -41,8 +43,9 @@ relations:
   sources:
   - it-pau
   - genesis-36
+  - 1-cronicas-1
   reason: 'Gé 36:39: su ciudad se llamaba Paú.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: kin
   person: mehetabel-esposa-de-hadar
@@ -51,8 +54,9 @@ relations:
   sources:
   - it-mehetabel
   - genesis-36
+  - 1-cronicas-1
   reason: 'Gé 36:39: su esposa se llamaba Mehetabel.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: holds_office
   place: edom
@@ -60,8 +64,9 @@ relations:
   inferred: false
   sources:
   - genesis-36
+  - 1-cronicas-1
   reason: Reinó en Edom tras Baal-Hanán (Gé 36:31, 39).
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-02'
+checked_on: '2026-10-12'
 status: verified

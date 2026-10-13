@@ -20,7 +20,7 @@ links:
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/jueces/3/
   type: bible
 perspicacia: 1200001268#2
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified
 relations:
 - type: kin
@@ -43,3 +43,6 @@ relations:
   reason: Jue 3:15 lo llama benjaminita; Perspicacia «Ehúd», núm. 2, lo pone en la tribu de Benjamín.
   checked_on: '2026-09-29'
   status: verified
+distinct_from:
+- ehud-descendiente-de-benjamin
+- ehud-hijo-de-bilhan

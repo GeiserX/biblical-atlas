@@ -12,6 +12,7 @@ sources:
 - it-core
 - it-jeque
 - genesis-36
+- 1-cronicas-1
 links:
 - title: 'Perspicacia: «Coré»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Cor%C3%A9/
@@ -27,8 +28,9 @@ relations:
   sources:
   - it-core
   - genesis-36
+  - 1-cronicas-1
   reason: 'Gé 36:5, 14: hijo de Esaú.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: kin
   person: oholibama-hija-de-ana
@@ -60,5 +62,7 @@ relations:
   status: verified
 distinct_from:
 - core-hijo-de-izhar
-checked_on: '2026-09-29'
+- core-hijo-de-hebron
+- core-padre-de-meselemias
+checked_on: '2026-10-12'
 status: verified

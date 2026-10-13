@@ -10,6 +10,7 @@ reason: Perspicacia «Shaúl», núm. 1; Gé 36:37, 38.
 sources:
 - it-shaul
 - genesis-36
+- 1-cronicas-1
 links:
 - title: 'Perspicacia: «Shaúl»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sha%C3%BAl/
@@ -24,8 +25,9 @@ relations:
   sources:
   - it-shaul
   - genesis-36
+  - 1-cronicas-1
   reason: 'Gé 36:37: reinó en lugar de Samlá.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   office: king
   status: verified
 - type: lived_in
@@ -34,8 +36,9 @@ relations:
   sources:
   - it-rehobot
   - genesis-36
+  - 1-cronicas-1
   reason: 'Gé 36:37: era de Rehobot del Río.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: holds_office
   place: edom
@@ -43,10 +46,12 @@ relations:
   inferred: false
   sources:
   - genesis-36
+  - 1-cronicas-1
   reason: Reinó en Edom tras Samlá (Gé 36:31, 37).
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-02'
+checked_on: '2026-10-12'
 status: verified
 distinct_from:
 - shaul-hijo-de-simeon
+- shaul-hijo-de-uzias

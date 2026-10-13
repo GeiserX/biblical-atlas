@@ -11,6 +11,7 @@ sources:
 - it-berias
 - genesis-46
 - numeros-26
+- 1-cronicas-7
 links:
 - title: 'Perspicacia: «Berías»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ber%C3%ADas/
@@ -27,8 +28,9 @@ relations:
   - genesis-46
   - it-berias
   - numeros-26
+  - 1-cronicas-7
   reason: 'Gé 46:17: aparece entre los hijos de Aser.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: lived_in
   place: egipto
@@ -38,5 +40,9 @@ relations:
   reason: 'Gé 46:8, 26, 27: figura en la lista de la casa de Jacob que se instaló en Egipto.'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified
+distinct_from:
+- berias-hijo-de-efrain
+- berias-hijo-de-elpaal
+- berias-hijo-de-simei

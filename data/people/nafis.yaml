@@ -9,6 +9,7 @@ reason: Perspicacia «Nafís»; Gé 25:15, 16.
 sources:
 - it-nafis
 - genesis-25
+- 1-cronicas-1
 links:
 - title: 'Perspicacia: «Nafís»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Naf%C3%ADs/
@@ -24,8 +25,9 @@ relations:
   sources:
   - it-nafis
   - genesis-25
+  - 1-cronicas-1
   reason: 'Gé 25:13-16: uno de los doce hijos de Ismael.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

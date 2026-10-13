@@ -7,6 +7,7 @@ perspicacia: 1200001411#3
 disambiguation: Er hijo de Jesús (Lu 3:28); no Er, primogénito de Judá.
 distinct_from:
 - er-hijo-de-juda
+- er-hijo-de-sela
 summary: Antepasado de Jesucristo que solo aparece en Lucas, como hijo de Jesús y padre de Elmadam.
 reason: Perspicacia «Er», núm. 3; Lu 3:28.
 sources:
@@ -29,5 +30,5 @@ relations:
   reason: 'Lu 3:28, 29: Er, hijo de Jesús.'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

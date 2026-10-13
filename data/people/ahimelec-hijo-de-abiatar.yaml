@@ -16,6 +16,8 @@ sources:
 - it-ahimelec
 - it-sadoc
 - 2-samuel-8
+- 1-cronicas-18
+- 1-cronicas-24
 links:
 - title: 'Perspicacia: «Ahimélec»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ahim%C3%A9lec/
@@ -30,9 +32,11 @@ relations:
   sources:
   - 2-samuel-8
   - it-ahimelec
+  - 1-cronicas-18
+  - 1-cronicas-24
   reason: '2Sa 8:17: Ahimélec hijo de Abiatar.'
   inferred: false
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: kin
   person: ahimelec-hijo-de-ahitub
@@ -48,9 +52,21 @@ relations:
   sources:
   - 2-samuel-8
   - it-ahimelec
+  - 1-cronicas-18
+  - 1-cronicas-24
   reason: '2Sa 8:17: Sadoc y Ahimélec eran los sacerdotes de David.'
   inferred: false
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-09-29'
+- type: kin
+  person: itamar
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-24
+  - it-ahimelec
+  reason: 1Cr 24:3 dice que Ahimélec era de los hijos de Itamar.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
 status: verified

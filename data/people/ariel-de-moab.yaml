@@ -10,6 +10,7 @@ reason: Perspicacia «Ariel», núm. 1; 2Sa 23:20.
 sources:
 - it-ariel
 - 2-samuel-23
+- 1-cronicas-11
 links:
 - title: 'Perspicacia: «Ariel»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ariel/
@@ -20,8 +21,9 @@ relations:
   inferred: false
   sources:
   - 2-samuel-23
+  - 1-cronicas-11
   reason: '2Sa 23:20: Ariel de Moab.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

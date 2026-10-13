@@ -20,6 +20,7 @@ sources:
 - 2-cronicas-14
 - tnm-a6-a
 - mateo-1
+- 1-cronicas-3
 links:
 - title: 'Perspicacia: «Asá»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/As%C3%A1/
@@ -36,8 +37,9 @@ relations:
   - it-asa
   - 1-reyes-15
   - mateo-1
+  - 1-cronicas-3
   reason: Perspicacia lo llama hijo de Abiyam (1Re 15:8).
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: succeeds
   person: abias-de-juda
@@ -120,5 +122,8 @@ history:
   change: Perspicacia «Asá» daba 977-937 a.e.c.; la tabla A6-A, más reciente, empieza su reinado en 978.
   source: tnm-a6-a
 perspicacia: 1200000397#1
-checked_on: '2026-09-30'
+disambiguation: Asá núm. 1 de Perspicacia, rey de Judá. No el levita padre de Berekías.
+checked_on: '2026-10-12'
 status: verified
+distinct_from:
+- asa-hijo-de-elcana

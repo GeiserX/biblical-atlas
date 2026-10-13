@@ -12,6 +12,7 @@ reason: Perspicacia «Amaleq, amalequitas», párr. 1 a 3; Gé 36:12, 16.
 sources:
 - it-amaleq
 - genesis-36
+- 1-cronicas-1
 links:
 - title: 'Perspicacia: «Amaleq, amalequitas»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Amaleq-amalequitas/
@@ -27,8 +28,9 @@ relations:
   sources:
   - it-amaleq
   - genesis-36
+  - 1-cronicas-1
   reason: 'Gé 36:11: hijo de Elifaz.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: kin
   person: ada-hija-de-elon
@@ -55,8 +57,9 @@ relations:
   sources:
   - it-amaleq
   - genesis-36
+  - 1-cronicas-1
   reason: 'Gé 36:12: Timná le dio a Elifaz un hijo, Amalec.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

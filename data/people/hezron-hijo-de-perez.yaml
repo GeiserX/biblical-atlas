@@ -5,9 +5,9 @@ names:
 - name: Hezrón
 perspicacia: 1200002015#2
 disambiguation: Hezrón hijo de Pérez, de Judá; no el hijo de Rubén ni la ciudad de la frontera sur de Judá.
-summary: Hijo de Pérez y cabeza de los hezronitas de Judá. Entró en Egipto con la familia de Jacob. Fue padre de Ram y antepasado
-  de David y de Jesús.
-reason: Perspicacia «Hezrón», núm. 2; Rut 4:18, 19.
+summary: Hijo de Pérez y cabeza de los hezronitas de Judá. Entró en Egipto con la familia de Jacob. Fue padre de Jerahmeel,
+  Ram, Caleb, Segub y Asjur, y antepasado de David y de Jesús.
+reason: Perspicacia «Hezrón», núm. 2; Rut 4:18, 19; 1Cr 2:9, 21-24.
 sources:
 - it-hezron
 - rut-4
@@ -15,6 +15,8 @@ sources:
 - genesis-46
 - lucas-3
 - numeros-26
+- 1-cronicas-2
+- 1-cronicas-4
 links:
 - title: 'Perspicacia: «Hezrón»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hezr%C3%B3n/
@@ -30,8 +32,10 @@ relations:
   - genesis-46
   - lucas-3
   - numeros-26
+  - 1-cronicas-2
+  - 1-cronicas-4
   reason: Rut 4:18.
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: lived_in
   place: egipto
@@ -42,7 +46,50 @@ relations:
   reason: 'Gé 46:12, 26, 27; Perspicacia «Hezrón», núm. 2: está entre las setenta almas y debió de morir en Egipto.'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-10-02'
+- type: kin
+  person: hamul
+  word: brother
+  inferred: false
+  sources:
+  - 1-cronicas-2
+  reason: '1Cr 2:5: Hezrón y Hamul son los hijos de Pérez.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: makir-hijo-de-manases
+  word: father_in_law
+  inferred: false
+  sources:
+  - 1-cronicas-2
+  reason: '1Cr 2:21: se casó a los 60 años con una hija de Makir.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: died_in
+  place: caleb-efrata
+  inferred: false
+  sources:
+  - 1-cronicas-2
+  reason: '1Cr 2:24: Hezrón murió en Caleb-Efrata. Perspicacia «Hezrón», núm. 2, recoge que algunos eruditos dudan de esta
+    lectura.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: abias-esposa-de-hezron
+  word: wife
+  inferred: false
+  sources:
+  - 1-cronicas-2
+  reason: '1Cr 2:24: Abías, su esposa, dio a luz tras su muerte.'
+  checked_on: '2026-10-12'
+  status: verified
+history:
+- date: '2026-10-12'
+  change: El resumen solo nombraba a Ram; 1Cr 2:9, 21 y 24 dan también a Jerahmeel, Caleb, Segub y Asjur como hijos suyos.
+  source: 1-cronicas-2
+- date: '2026-10-12'
+  change: La razón añade los versículos de 1 Crónicas 2 que dan sus otros hijos, sus esposas y su muerte.
+  source: 1-cronicas-2
+checked_on: '2026-10-12'
 status: verified
 distinct_from:
 - hezron-hijo-de-ruben

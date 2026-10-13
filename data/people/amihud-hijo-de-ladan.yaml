@@ -14,13 +14,26 @@ sources:
 - numeros-2
 - numeros-7
 - numeros-10
+- 1-cronicas-7
 links:
 - title: 'Perspicacia: «Amihud»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Amihud/
   type: perspicacia
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified
 distinct_from:
 - amihud-padre-de-semuel
 - amihud-padre-de-pedahel
 - amihud-padre-de-talmai
+- amihud-hijo-de-omri
+relations:
+- type: kin
+  person: ladan-hijo-de-tahan
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-7
+  - it-ladan
+  reason: '1Cr 7:26: Amihud era hijo de Ladán.'
+  checked_on: '2026-10-12'
+  status: verified

@@ -30,5 +30,7 @@ relations:
 distinct_from:
 - sedequias
 - sedequias-hijo-de-kenaana
+- sedequias-hijo-de-hananias
+- sedequias-hijo-de-maaseya
 checked_on: '2026-10-12'
 status: verified

@@ -20,6 +20,7 @@ sources:
 - 1-samuel-12
 - it-samuel
 - 2-samuel-10
+- 1-cronicas-19
 links:
 - title: 'Perspicacia: «Nahás»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Nah%C3%A1s/
@@ -35,8 +36,9 @@ relations:
   - 1-samuel-11
   - 1-samuel-12
   - it-nahas
+  - 1-cronicas-19
   reason: 1Sa 11:1 lo llama el ammonita y 1Sa 12:12 lo presenta como rey de los ammonitas.
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 history:
 - date: '2026-09-29'
@@ -52,7 +54,7 @@ history:
 - date: '2026-09-29'
   change: La entrada núm. 1 incluye al padre de Hanún (2Sa 10:1, 2).
   source: 2-samuel-10
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified
 distinct_from:
 - nahas-padre-de-abigail

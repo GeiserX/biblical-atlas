@@ -66,5 +66,8 @@ relations:
     Acab quien lo recibía.'
   checked_on: '2026-09-30'
   status: verified
-checked_on: '2026-09-30'
+checked_on: '2026-10-12'
 status: verified
+distinct_from:
+- mesa-hijo-de-caleb
+- mesa-hijo-de-saharaim

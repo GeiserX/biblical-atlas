@@ -17,6 +17,7 @@ sources:
 - openbible-geo
 - deuteronomio-3
 - josue-13
+- 1-cronicas-5
 links:
 - title: 'Perspicacia: «Salecá»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Salec%C3%A1/
@@ -24,5 +25,5 @@ links:
 - title: Deuteronomio 3 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/deuteronomio/3/
   type: bible
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

@@ -20,6 +20,8 @@ sources:
 - genesis-46
 - genesis-49
 - exodo-1
+- 1-cronicas-2
+- 1-cronicas-4
 links:
 - title: 'Perspicacia: «Simeón»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sime%C3%B3n/
@@ -38,8 +40,9 @@ relations:
   - genesis-35
   - genesis-46
   - genesis-49
+  - 1-cronicas-2
   reason: 'Perspicacia «Simeón», párr. 2: segundo hijo de Jacob, que tuvo con Lea (Gé 29:33).'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: kin
   person: lea
@@ -118,5 +121,5 @@ history:
 - date: '2026-09-29'
   change: La razón de dónde nació cita Gé 29:33, donde nace, en lugar de Gé 29:4 y 31:41, que no lo nombran.
   source: genesis-29
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

@@ -48,5 +48,11 @@ relations:
   reason: '2Re 12:20, 21: era uno de los siervos de Jehoás.'
   checked_on: '2026-09-30'
   status: verified
-checked_on: '2026-09-30'
+disambiguation: Jozacar, el siervo que mató al rey Jehoás y que también se llamó Zabad; no Zabad hijo de Natán, de Judá, ni
+  Zabad de Efraín, ni Zabad hijo de Ahlái, guerrero de David.
+checked_on: '2026-10-12'
 status: verified
+distinct_from:
+- zabad-hijo-de-natan
+- zabad-hijo-de-tahat
+- zabad-hijo-de-ahlai

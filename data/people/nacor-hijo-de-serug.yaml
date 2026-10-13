@@ -21,6 +21,7 @@ sources:
 - it-nacor
 - genesis-11
 - lucas-3
+- 1-cronicas-1
 links:
 - title: 'Perspicacia: «Nacor»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Nacor/
@@ -36,8 +37,9 @@ relations:
   sources:
   - genesis-11
   - lucas-3
+  - 1-cronicas-1
   reason: 'Gé 11:22: Serug fue padre de Nacor a los 30 años.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

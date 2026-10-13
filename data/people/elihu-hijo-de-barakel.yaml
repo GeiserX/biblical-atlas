@@ -55,7 +55,10 @@ relations:
     núm. 1, solo lo dan como probable, así que queda pendiente, igual que en su padre.
   checked_on: '2026-09-29'
   status: pending
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified
 distinct_from:
 - elihu-hijo-de-tohu
+- elihu-de-manases
+- elihu-portero
+- elihu-hermano-de-david

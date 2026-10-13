@@ -21,6 +21,7 @@ sources:
 - si-3
 - genesis-5
 - lucas-3
+- 1-cronicas-1
 links:
 - title: 'Perspicacia: «Enoc»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Enoc/
@@ -32,7 +33,7 @@ not_claimed:
 - 'Que Dios se llevara a Enoc al cielo: Perspicacia lo descarta por Juan 3:13.'
 - 'Que Enoc escribiera el «Libro de Enoc»: es un apócrifo de siglos después.'
 perspicacia: 1200001371#2
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified
 distinct_from:
 - enoc-hijo-de-cain
@@ -45,6 +46,7 @@ relations:
   - genesis-5
   - it-enoc
   - lucas-3
+  - 1-cronicas-1
   reason: 'Gé 5:18: Jared tuvo a Enoc cuando contaba 162 años.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified

@@ -8,12 +8,15 @@ disambiguation: El padre del sacerdote Sadoc, de la línea de Eleazar; no Ahitub
   posterior del mismo nombre.
 distinct_from:
 - ahitub-hijo-de-finehas
+- ahitub-padre-de-merayot
 summary: 'Hijo de Amarías, de la línea de Eleazar, hijo de Aarón, y padre del sacerdote Sadoc. No consta que fuera sumo sacerdote:
   entonces el cargo seguía en la línea de Itamar.'
 reason: Perspicacia «Ahitub», núm. 2; 2Sa 8:17; 1Cr 6:3-8.
 sources:
 - it-ahitub
 - 2-samuel-8
+- 1-cronicas-6
+- 1-cronicas-18
 links:
 - title: 'Perspicacia: «Ahitub»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ahitub/
@@ -21,5 +24,15 @@ links:
 - title: 2 Samuel 8 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-samuel/8/
   type: bible
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified
+relations:
+- type: kin
+  person: amarias-hijo-de-merayot
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-6
+  reason: 1Cr 6:7 lo da como hijo de Amarías.
+  checked_on: '2026-10-12'
+  status: verified

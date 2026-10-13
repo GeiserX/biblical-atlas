@@ -18,6 +18,8 @@ sources:
 - genesis-49
 - exodo-1
 - numeros-26
+- 1-cronicas-2
+- 1-cronicas-5
 links:
 - title: 'Perspicacia: «Rubén»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Rub%C3%A9n/
@@ -37,8 +39,9 @@ relations:
   - genesis-46
   - genesis-49
   - numeros-26
+  - 1-cronicas-2
   reason: 'Perspicacia «Rubén», párr. 2: primogénito de Jacob; su madre fue Lea (Gé 29:32).'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: kin
   person: lea
@@ -95,5 +98,5 @@ history:
 - date: '2026-09-29'
   change: La razón de dónde nació cita Gé 29:32, donde nace, en lugar de Gé 29:4 y 31:41, que no lo nombran.
   source: genesis-29
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified
