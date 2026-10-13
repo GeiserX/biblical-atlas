@@ -10,6 +10,8 @@ reason: Perspicacia «Nehustá»; 2Re 24:8, 12, 15.
 sources:
 - it-nehusta
 - 2-reyes-24
+- jeremias-22
+- jeremias-29
 links:
 - title: 'Perspicacia: «Nehustá»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Nehust%C3%A1/
@@ -34,8 +36,20 @@ relations:
   sources:
   - 2-reyes-24
   - it-nehusta
+  - jeremias-22
+  - jeremias-29
   reason: '2Re 24:12, 15: la madre del rey salió con él y fue llevada al destierro en Babilonia.'
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-09-30'
+- type: died_in
+  place: babilonia
+  inferred: true
+  sources:
+  - jeremias-22
+  - it-nehusta
+  reason: 'Jer 22:26: madre e hijo morirán en la tierra adonde los arrojen. Perspicacia «Nehustá» cree que se quedó en Babilonia
+    el resto de su vida.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
 status: verified

@@ -14,9 +14,8 @@ places:
 people:
 - nabucodonosor-ii
 - neko
-- jehoiaquim
 passages:
-- Jer 46:1-2
+- Jer 46:1-12
 summary: Junto al Éufrates, los babilonios de Nabucodonosor derrotan al ejército del faraón Nekó y se abren paso hacia Siria
   y Palestina. Era el cuarto año de Jehoiaquim.
 reason: Perspicacia «Carquemis», párr. 4, y «Jehoiaquim», párr. 4, fechan la batalla en 625; Jer 46:2.
@@ -24,6 +23,9 @@ sources:
 - it-carquemis
 - it-jehoiaquim
 - jeremias-46
+- it-nabucodonosor
+- it-egipto
+- it-cus
 links:
 - title: 'Perspicacia: «Carquemis»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Carquemis/
@@ -35,5 +37,16 @@ links:
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/46/
   type: bible
 search: batalla de Carquemis 625
-checked_on: '2026-09-28'
+history:
+- date: '2026-10-12'
+  change: 'El pasaje crece a Jer 46:1-12: el poema de 46:3-12 describe la misma derrota junto al Éufrates (Perspicacia «Egipto,
+    egipcio»).'
+  source: jeremias-46
+- date: '2026-10-12'
+  change: 'Jehoiaquim sale de people: Jer 46:2 solo lo nombra para fechar la batalla, y sin present el sitio lo situaba en
+    Carquemis.'
+  source: jeremias-46
+present:
+- nabucodonosor-ii
+checked_on: '2026-10-12'
 status: verified

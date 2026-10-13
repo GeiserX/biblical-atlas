@@ -19,6 +19,10 @@ reason: Perspicacia «Johanán», núm. 5; 2Re 25:23, 26; Jer 40:8-43:7.
 sources:
 - it-johanan
 - 2-reyes-25
+- jeremias-40
+- jeremias-41
+- jeremias-42
+- jeremias-43
 links:
 - title: 'Perspicacia: «Johanán»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Johan%C3%A1n/
@@ -34,8 +38,12 @@ relations:
   sources:
   - 2-reyes-25
   - it-johanan
+  - jeremias-40
+  - jeremias-41
+  - jeremias-42
+  - jeremias-43
   reason: '2Re 25:23: Johanán hijo de Caréah.'
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-12'
   status: verified
 - type: lived_in
   place: egipto
@@ -46,5 +54,34 @@ relations:
   reason: 'Jer 43:5 lo nombra a la cabeza de los jefes que llevaron a Egipto al resto de Judá; 2Re 25:26 cuenta esa marcha sin nombres.'
   checked_on: '2026-09-30'
   status: verified
-checked_on: '2026-09-30'
+- type: kin
+  person: jonatan-hijo-de-carea
+  word: brother
+  inferred: false
+  sources:
+  - jeremias-40
+  - it-jonatan
+  reason: 'Jer 40:8: Johanán y Jonatán, los hijos de Caréah.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: tie
+  person: ismael-hijo-de-netanias
+  word: enemy
+  date:
+    from: -606
+    to: -606
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 607 a.e.c.
+  inferred: false
+  sources:
+  - jeremias-40
+  - it-johanan
+  - jeremias-41
+  reason: 'Jer 40:15: pide a Guedalías permiso para matar a Ismael en secreto; Jer 41:11, 12: sale a pelear contra él.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
 status: verified

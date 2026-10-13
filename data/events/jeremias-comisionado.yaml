@@ -14,13 +14,19 @@ people:
 - jeremias-profeta
 - josias
 passages:
-- Jer 1:1-10
-summary: En el año 13 de Josías, Jehová llama al joven Jeremías y le dice que lo ha hecho profeta a las naciones.
-reason: El estudio 3 y Perspicacia «Jeremías», núm. 6, párr. 7, fechan el llamamiento en 647. El texto no dice dónde ocurrió.
+- Jer 1:1-19
+summary: En el año 13 de Josías, Jehová llama a Jeremías, que se excusa por su juventud, y lo hace profeta a las naciones.
+  Con un almendro y una olla hirviendo le anuncia el castigo del norte y le promete protección.
+reason: El estudio 3 y Perspicacia «Jeremías», núm. 6, párr. 7, fechan el llamamiento en 647; «Toda Escritura», libro 24,
+  párr. 7, trata Jer 1:1-19 como la comisión. El texto no dice dónde fue.
 sources:
 - si-3
 - it-jeremias
 - jeremias-1
+- si-jeremias
+- jr-2
+- w07-jeremias
+- it-norte
 links:
 - title: 'Perspicacia: «Jeremías»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jerem%C3%ADas/
@@ -29,5 +35,19 @@ links:
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/1/
   type: bible
 search: Jeremías comisionado profeta
-checked_on: '2026-09-28'
+history:
+- date: '2026-10-12'
+  change: 'La comisión abarca todo el capítulo 1: las visiones del almendro y de la olla y la promesa de protección son parte
+    de ella, como la divide «Toda Escritura», libro 24, párr. 7.'
+  source: si-jeremias
+- date: '2026-10-12'
+  change: El resumen añade la excusa de Jeremías, las dos visiones y la promesa de Jehová (Jer 1:6, 11-19).
+  source: jeremias-1
+- date: '2026-10-12'
+  change: La razón cita la fuente que une todo el capítulo 1 en la comisión.
+  source: si-jeremias
+narrative_order:
+  series: jeremias
+  order: 1001
+checked_on: '2026-10-12'
 status: verified
