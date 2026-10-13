@@ -23,6 +23,7 @@ sources:
 - 2-corintios-7
 - 2-corintios-8
 - 2-corintios-12
+- 2-timoteo-4
 links:
 - title: 'Perspicacia: «Tito»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Tito/
@@ -36,7 +37,7 @@ history:
   change: La relación con Pablo de c. 55 cita también 2Co 2:13, 8:6-23 y 12:18, y lleva relacion compañero (2Co 8:23). Un
     anadir se habría fundido en la de 49.
   source: 2-corintios-8
-checked_on: '2026-09-29'
+checked_on: '2026-10-13'
 status: verified
 relations:
 - type: accompanies

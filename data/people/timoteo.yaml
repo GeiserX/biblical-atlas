@@ -3,8 +3,8 @@ id: timoteo
 name: Timoteo
 names:
 - name: Timoteo
-summary: Hijo de madre judía y padre griego, al parecer vecino de Listra. Se unió a Pablo en el segundo viaje, entre finales
-  de 49 y principios de 50. Hacia 61-64 sirvió de superintendente en Éfeso.
+summary: Hijo de madre judía y padre griego, al parecer de Listra. Se unió a Pablo en el segundo viaje, entre finales de 49
+  y principios de 50. Hacia 61-65 fue superintendente en Éfeso, donde al parecer recibió sus dos cartas.
 reason: Perspicacia «Timoteo» da su familia y fecha su encuentro con Pablo en Listra (Hch 16:1-3). La nota de estudio de 1Ti
   1:3 lo pone de superintendente en Éfeso.
 sources:
@@ -32,6 +32,10 @@ sources:
 - 1-timoteo-5
 - 1-timoteo-6
 - it-timoteo-cartas
+- 2-timoteo-1
+- 2-timoteo-2
+- 2-timoteo-3
+- 2-timoteo-4
 links:
 - title: 'Perspicacia: «Timoteo»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Timoteo/
@@ -51,6 +55,14 @@ history:
   change: 'timoteo/accompanies/pablo lleva la palabra fellow_worker: Ro 16:21 lo llama colaborador de Pablo, como se hizo
     con Epafrodito y Clemente. Lo pedía entre-libros para 1 Timoteo.'
   source: romanos-16
+- date: '2026-10-13'
+  change: 'timoteo/lived_in/efeso llega a 65 y no a 64: las notas de 2Ti 2:14, 23 le piden aconsejar a los cristianos de Éfeso.
+    Lived_in listra y accompanies pablo citan 2 Timoteo 1.'
+  source: 2-timoteo-2
+- date: '2026-10-13'
+  change: Decía 61-64 y nada de 2 Timoteo. Las notas de 2Ti 2:14, 23 y 4:12, 19, 22 lo dan aún en Éfeso hacia 65, como ya
+    dice timoteo/lived_in/efeso.
+  source: 2-timoteo-4
 checked_on: '2026-10-13'
 status: verified
 relations:
@@ -60,8 +72,9 @@ relations:
   sources:
   - it-loida
   - hch-16
-  reason: Perspicacia «Loida» dice que parece que la familia vivía en Listra (Hch 16:1, 2).
-  checked_on: '2026-09-29'
+  - 2-timoteo-1
+  reason: Perspicacia «Loida» y la nota de 2Ti 1:5 dicen que, al parecer, la familia vivía en Listra (Hch 16:1, 2).
+  checked_on: '2026-10-13'
   status: verified
 - type: accompanies
   person: pablo
@@ -97,6 +110,7 @@ relations:
   - 2-tesalonicenses-1
   - 1-timoteo-1
   - 1-timoteo-4
+  - 2-timoteo-1
   reason: Se une en Listra y viaja con él; Ro 16:21 lo llama colaborador. «Testimonio completo» (cap. 15, párr. 18) dice que
     trabajaron juntos muchos años. La Tabla de los libros fecha 2 Timoteo hacia 65.
   checked_on: '2026-10-13'
@@ -166,12 +180,12 @@ relations:
   place: efeso
   date:
     from: 61
-    to: 64
+    to: 65
     precision: range
     approx: true
     type: anchored
     chronology: tnm
-    text: c. 61-64 e.c. (al cuidado de la congregación por encargo de Pablo)
+    text: c. 61-65 e.c. (al cuidado de la congregación por encargo de Pablo)
   inferred: false
   sources:
   - it-timoteo
@@ -180,7 +194,9 @@ relations:
   - 1-timoteo-5
   - 1-timoteo-6
   - 1-timoteo-3
-  reason: '1Ti 1:3: Pablo le pidió quedarse en Éfeso. Perspicacia «Timoteo», párr. 6, lo pone allí hacia 61-64 con autoridad
-    para nombrar superintendentes (1Ti 5:22); las notas de 1Ti 6:11, 13 hablan de su misión en Éfeso.'
+  - 2-timoteo-2
+  - 2-timoteo-4
+  reason: '1Ti 1:3: Pablo le pidió quedarse en Éfeso. Perspicacia «Timoteo», párr. 6: allí hacia 61-64, nombrando superintendentes
+    (1Ti 5:22). Las notas de 1Ti 6:11, 13 y de 2Ti 2:14, 23 hablan de su labor en Éfeso.'
   checked_on: '2026-10-13'
   status: verified

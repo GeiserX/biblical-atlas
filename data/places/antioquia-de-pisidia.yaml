@@ -18,6 +18,7 @@ sources:
 - hch-13
 - openbible-geo
 - hch-14
+- 2-timoteo-3
 links:
 - title: 'Perspicacia: «Antioquía»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Antioqu%C3%ADa/
@@ -25,5 +26,5 @@ links:
 - title: Hechos 13 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/hechos/13/
   type: bible
-checked_on: '2026-09-29'
+checked_on: '2026-10-13'
 status: verified

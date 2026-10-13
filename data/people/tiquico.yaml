@@ -22,6 +22,7 @@ sources:
 - si-3
 - tnm-tabla
 - efesios-6
+- 2-timoteo-4
 links:
 - title: 'Perspicacia: «Tíquico»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/T%C3%ADquico/
@@ -30,7 +31,7 @@ links:
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/colosenses/4/
   type: bible
 perspicacia: '1200004496'
-checked_on: '2026-09-29'
+checked_on: '2026-10-13'
 status: verified
 relations:
 - type: lived_in
