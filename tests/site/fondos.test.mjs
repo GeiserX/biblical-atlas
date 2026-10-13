@@ -89,9 +89,13 @@ async function open(screen, hash = 't=50.3000') {
   page.on('pageerror', (e) => page.pageErrors.push(e.message));
   page.fondos = new Map();
   page.on('request', (r) => { const m = r.url().match(/\/maps\/([\w-]+\.webp)$/); if (m) page.fondos.set(m[1], null); });
-  // r.sizes() resolves after the event: the budget check waits for all of them, so no image counts as 0 bytes.
+  // r.sizes() resolves after the event: the budget check waits for all of them, so no image counts as 0 bytes. An
+  // answer that is not a 200 (a missing file) counts as never arrived.
   page.pendientes = [];
-  page.on('requestfinished', (r) => { const m = r.url().match(/\/maps\/([\w-]+\.webp)$/); if (m) page.pendientes.push(r.sizes().then((s) => page.fondos.set(m[1], s.responseBodySize))); });
+  page.on('requestfinished', (r) => {
+    const m = r.url().match(/\/maps\/([\w-]+\.webp)$/);
+    if (m) page.pendientes.push(Promise.all([r.sizes(), r.response()]).then(([s, res]) => page.fondos.set(m[1], res?.ok() ? s.responseBodySize : 0)));
+  });
   await page.route((u) => !u.href.startsWith(base) && !u.hostname.endsWith('unpkg.com'), (r) => r.abort());
   await page.goto(`${base}index.html#${hash}`, { waitUntil: 'domcontentloaded' });
   await still(page);
