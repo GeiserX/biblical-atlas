@@ -296,10 +296,12 @@ test('T14 a bar or a window that goes on past an edge of the track says so on th
   // that ends inside it, and one that holds it whole.
   const reign = { id: 'r', name: 'Reinado de Manasés en Judá', cert: 'exact', shape: 'span', start: -715, end: -660, group: 0 };
   const win = { id: 'w', name: 'Algo de su reinado', cert: 'exact', shape: 'moment', start: -715, end: -660, anchor: -687.5, w0: -715, w1: -660, group: 0 };
+  // The same years with an approximate date, whose two ends fade: a cut end loses that fade, a whole end keeps it.
+  const approx = { id: 'a', name: 'Lo mismo en fecha aproximada', cert: 'approx', shape: 'span', start: -715, end: -660, group: 0 };
   const seen = new Set();
   let checked = 0;
   for (const g of [G, GC]) for (const span of SCALES) {
-    const items = [{ ...reign }, { ...win }];
+    const items = [{ ...reign }, { ...win }, { ...approx }];
     F.measure(items, MEAS, g);
     const lane = { id: `c${span}`, items };
     const w = 800, ppy = w / span;
@@ -313,9 +315,11 @@ test('T14 a bar or a window that goes on past an edge of the track says so on th
       const want = [x0 < -0.5, x1 > w + 0.5];
       seen.add(`${g.coarse}|${want}`);
       assert.deepEqual([...bar._cut], want, `span ${span}, view at ${v0}: the reign [${x0.toFixed(0)}, ${x1.toFixed(0)}] px says it goes on ${JSON.stringify(bar._cut)}`);
-      // A cut end is not faded as a doubtful date: the edge mark replaces it.
-      if (want[0]) assert.equal(bar._bar[2], 0, 'no doubtful fade on a cut left end');
-      if (want[1]) assert.equal(bar._bar[3], 0, 'no doubtful fade on a cut right end');
+      // A cut end is not faded as a doubtful date: the edge mark replaces it. A whole end keeps its fade.
+      const ap = out.visible.find((x) => x.id === 'a');
+      assert.ok(ap, `span ${span}, view at ${v0}: the approximate bar is in view`);
+      const fade = Math.min(g.fade, (Math.max(x1, x0 + 3) - x0) / 3);
+      assert.deepEqual([ap._bar[2], ap._bar[3]], [want[0] ? 0 : fade, want[1] ? 0 : fade], `span ${span}, view at ${v0}: the fade of the approximate bar, cut ${JSON.stringify(want)}`);
       // A name inside a bar cut on the left starts after the edge mark.
       if (want[0] && bar._in) assert.ok(bar._lx >= F.EDGE, `span ${span}: the name inside the bar starts at ${bar._lx.toFixed(1)} px, over the edge mark`);
       const mo = out.visible.find((x) => x.id === 'w');
