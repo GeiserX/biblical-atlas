@@ -11,6 +11,7 @@ reason: Perspicacia «Ézer», núm. 1; Gé 36:21, 27, 30.
 sources:
 - it-ezer
 - genesis-36
+- 1-cronicas-1
 links:
 - title: 'Perspicacia: «Ézer»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/%C3%89zer/
@@ -26,8 +27,9 @@ relations:
   sources:
   - it-ezer
   - genesis-36
+  - 1-cronicas-1
   reason: 'Gé 36:21: hijo de Seír el horeo.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: lived_in
   place: seir
@@ -38,5 +40,9 @@ relations:
   reason: 'Gé 36:21, 30: jeque horeo en la tierra de Seír.'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified
+distinct_from:
+- ezer-hijo-de-hur
+- ezer-hijo-de-efrain
+- ezer-el-gadita

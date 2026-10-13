@@ -1,0 +1,38 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: elias-hijo-de-jeroham
+name: Elías
+names:
+- name: Elías
+perspicacia: 1200001307#2
+disambiguation: Elías hijo de Jeroham, benjamita; no Elías el profeta tisbita ni los Elías de días de Esdras.
+distinct_from:
+- elias-profeta
+summary: Benjamita, hijo de Jeroham, cabeza de su casa y habitante de Jerusalén.
+reason: Perspicacia «Elías», núm. 2; 1Cr 8:27, 28.
+sources:
+- it-elias
+- 1-cronicas-8
+links:
+- title: 'Perspicacia: «Elías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/El%C3%ADas/
+  type: perspicacia
+relations:
+- type: kin
+  person: jeroham-padre-de-samserai
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  reason: 1Cr 8:27 lo cuenta entre los hijos de Jeroham.
+  checked_on: '2026-10-12'
+  status: verified
+- type: lived_in
+  place: jerusalen
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  reason: '1Cr 8:28: los jefes de casas paternas de esta lista vivían en Jerusalén.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

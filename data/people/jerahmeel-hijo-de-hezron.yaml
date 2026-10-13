@@ -1,0 +1,59 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jerahmeel-hijo-de-hezron
+name: Jerahmeel
+names:
+- name: Jerahmeel
+perspicacia: 1200002416#1
+summary: Primogénito de Hezrón, de la tribu de Judá, y hermano de Ram y de Caleb. Tuvo hijos con dos esposas, una de ellas
+  Atará. Parte de su familia vivió en el sur de Judá.
+reason: Perspicacia «Jerahmeel», núm. 1; 1Cr 2:9, 25-33, 42.
+sources:
+- it-jerahmeel
+- 1-cronicas-2
+links:
+- title: 'Perspicacia: «Jerahmeel»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jerahmeel/
+  type: perspicacia
+relations:
+- type: kin
+  person: hezron-hijo-de-perez
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-2
+  reason: '1Cr 2:9, 25: primer hijo de Hezrón.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: ram-hijo-de-hezron
+  word: brother
+  inferred: false
+  sources:
+  - 1-cronicas-2
+  reason: '1Cr 2:9 nombra a los tres hijos de Hezrón: Jerahmeel, Ram y Kelubái.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: caleb-hijo-de-hezron
+  word: brother
+  inferred: false
+  sources:
+  - 1-cronicas-2
+  reason: '1Cr 2:9 y 2:42: Caleb, el hermano de Jerahmeel.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: atara
+  word: wife
+  inferred: false
+  sources:
+  - 1-cronicas-2
+  reason: '1Cr 2:26: Jerahmeel tuvo otra esposa, Atará.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+disambiguation: Jerahmeel, primogénito de Hezrón, de Judá; no el levita hijo de Quis.
+distinct_from:
+- jerahmeel-hijo-de-quis
+- jerahmeel-hijo-del-rey

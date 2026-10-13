@@ -1,0 +1,29 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: paseah-hijo-de-eston
+name: Paséah
+names:
+- name: Paséah
+perspicacia: 1200003395#1
+disambiguation: Paséah hijo de Estón (núm. 1 de Perspicacia); no el antepasado de netineos ni el padre de Joiadá.
+summary: Judaíta de la línea de Kelub, hermano de Suha; hijo de Estón.
+reason: Perspicacia «Paséah»; 1Cr 4:12.
+sources:
+- it-paseah
+- 1-cronicas-4
+links:
+- title: 'Perspicacia: «Paséah»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Pas%C3%A9ah/
+  type: perspicacia
+relations:
+- type: kin
+  person: eston
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-4
+  - it-paseah
+  reason: '1Cr 4:12: Estón fue padre de Paséah.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

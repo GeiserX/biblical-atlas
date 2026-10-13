@@ -1,0 +1,31 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: semaa
+name: Semaá
+names:
+- name: Semaá
+perspicacia: '1200003999'
+summary: Benjaminita de Guibeá cuyos hijos Ahiézer y Joás dejaron a Saúl y se unieron a David en Ziclag.
+reason: Perspicacia «Semaá» y «Guibeatita»; 1Cr 12:3.
+sources:
+- it-semaa
+- it-guibeatita
+- 1-cronicas-12
+links:
+- title: 'Perspicacia: «Semaá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sema%C3%A1/
+  type: perspicacia
+- title: 'Perspicacia: «Guibeatita»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Guibeatita/
+  type: perspicacia
+relations:
+- type: lived_in
+  place: guibea-de-benjamin
+  inferred: false
+  sources:
+  - 1-cronicas-12
+  - it-guibeatita
+  reason: '1Cr 12:3: Semaá el guibeatita; Perspicacia «Guibeatita» lo hace vecino de Guibeá de Benjamín.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

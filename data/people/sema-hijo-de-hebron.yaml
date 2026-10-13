@@ -1,0 +1,31 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: sema-hijo-de-hebron
+name: Sema
+names:
+- name: Sema
+perspicacia: 1200003998#1
+summary: Judaíta de la rama de Caleb. Su padre fue Hebrón y su hijo, Raham.
+reason: Perspicacia «Sema», núm. 1; 1Cr 2:43, 44.
+sources:
+- it-sema
+- 1-cronicas-2
+links:
+- title: 'Perspicacia: «Sema»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sema/
+  type: perspicacia
+relations:
+- type: kin
+  person: hebron-hijo-de-maresa
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-2
+  reason: '1Cr 2:43: hijo de Hebrón.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+disambiguation: Sema, hijo de Hebrón en la línea de Caleb; no el rubenita hijo de Joel ni el benjamita hijo de Elpaal.
+distinct_from:
+- sema-hijo-de-elpaal
+- sema-hijo-de-joel

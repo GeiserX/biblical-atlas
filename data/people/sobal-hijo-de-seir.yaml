@@ -10,6 +10,7 @@ reason: Perspicacia «Sobal», núm. 1; Gé 36:20, 23, 29.
 sources:
 - it-sobal
 - genesis-36
+- 1-cronicas-1
 links:
 - title: 'Perspicacia: «Sobal»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sobal/
@@ -25,8 +26,9 @@ relations:
   sources:
   - it-sobal
   - genesis-36
+  - 1-cronicas-1
   reason: 'Gé 36:20: hijo de Seír el horeo.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: lived_in
   place: seir
@@ -37,5 +39,7 @@ relations:
   reason: 'Gé 36:21, 29, 30: jeque horeo en la tierra de Seír.'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified
+distinct_from:
+- sobal-hijo-de-hur

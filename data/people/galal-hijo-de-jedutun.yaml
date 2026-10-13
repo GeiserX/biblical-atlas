@@ -1,0 +1,31 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: galal-hijo-de-jedutun
+name: Galal
+names:
+- name: Galal
+perspicacia: 1200001593#2
+summary: Levita, hijo de Jedutún, el músico de David, y antepasado de Abdías, que vivió en Jerusalén tras el destierro.
+reason: Perspicacia «Galal», núm. 2; 1Cr 9:16.
+sources:
+- it-galal
+- 1-cronicas-9
+links:
+- title: 'Perspicacia: «Galal»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Galal/
+  type: perspicacia
+relations:
+- type: kin
+  person: jedutun-musico
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-9
+  - it-galal
+  reason: '1Cr 9:16: Galal, hijo de Jedutún. Perspicacia «Jedutún», núm. 1, cita este versículo entre sus descendientes.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- galal-levita-repatriado
+disambiguation: 'Galal núm. 2 de Perspicacia: levita, hijo de Jedutún. No el otro levita Galal de la misma lista.'

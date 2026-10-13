@@ -14,6 +14,7 @@ sources:
 - numeros-2
 - numeros-7
 - numeros-10
+- 1-cronicas-7
 links:
 - title: 'Perspicacia: «Elisamá»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Elisam%C3%A1/
@@ -29,8 +30,9 @@ relations:
   - numeros-2
   - numeros-7
   - numeros-10
+  - 1-cronicas-7
   reason: Nú 1:10 y 2:18 lo llaman hijo de Amihud.
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: accompanies
   person: moises
@@ -57,3 +59,4 @@ distinct_from:
 - elisua
 - elisama-abuelo-de-ismael
 - elisama-secretario
+- elisama-hijo-de-jecamias

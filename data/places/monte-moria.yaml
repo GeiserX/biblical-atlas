@@ -38,6 +38,9 @@ names:
     Perspicacia «Puerta» ve posible que sea la puerta superior de Jotán.
 - name: Tercera entrada
   note: Entrada de la casa de Jehová adonde Sedequías mandó llevar a Jeremías para hablarle a solas (Jer 38:14).
+- name: Era de Ornán
+  note: Así llama 1 Crónicas a la era de Arauna (1Cr 21:15-28; 22:1); Perspicacia «Ornán» dice que allí se levantó después
+    el templo.
 type: mountain
 lat: 31.777778
 lon: 35.235556
@@ -102,6 +105,9 @@ sources:
 - jeremias-35
 - jeremias-36
 - jeremias-38
+- 1-cronicas-21
+- it-ornan
+- 1-cronicas-22
 links:
 - title: 'Perspicacia: «Moria»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Moria/

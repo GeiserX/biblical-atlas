@@ -1,0 +1,42 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: azarias-hijo-de-jehu
+name: Azarías
+names:
+- name: Azarías
+perspicacia: 1200000486#9
+summary: Hijo de Jehú y padre de Hélez, de la tribu de Judá; séptima generación desde su antepasado egipcio Jarhá.
+reason: Perspicacia «Azarías», núm. 9; 1Cr 2:38, 39.
+sources:
+- it-azarias
+- 1-cronicas-2
+links:
+- title: 'Perspicacia: «Azarías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Azar%C3%ADas/
+  type: perspicacia
+relations:
+- type: kin
+  person: jehu-hijo-de-obed
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-2
+  reason: '1Cr 2:38: Jehú fue su padre.'
+  checked_on: '2026-10-12'
+  status: verified
+disambiguation: Azarías hijo de Jehú, de la línea de Jarhá en Judá; no Azarías hijo de Etán ni los demás Azarías.
+distinct_from:
+- azarias-hijo-de-etan
+- azarias-hijo-de-sadoc
+- azarias-hijo-de-natan
+- ocozias-de-juda
+- azarias-hijo-de-jehohanan
+- abednego
+- uzias
+- jaazanias-jefe-militar
+- azarias-hijo-de-ahimaaz
+- azarias-hijo-de-hilquias
+- azarias-hijo-de-johanan
+- azarias-hijo-de-sofonias
+- azarias-sacerdote-repatriado
+checked_on: '2026-10-12'
+status: verified

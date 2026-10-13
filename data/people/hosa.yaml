@@ -1,0 +1,30 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hosa
+name: Hosá
+names:
+- name: Hosá
+perspicacia: '1200002085#1'
+summary: Portero levita merarita de la tienda donde David puso el Arca. Él y sus hijos guardaron después la puerta Saléket,
+  al oeste del santuario.
+reason: Perspicacia «Hosá», núm. 1, la única persona del artículo; 1Cr 16:37, 38; 26:10-19.
+sources:
+- it-hosa
+- 1-cronicas-16
+- 1-cronicas-26
+links:
+- title: 'Perspicacia: «Hosá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hos%C3%A1/
+  type: perspicacia
+checked_on: '2026-10-12'
+status: verified
+relations:
+- type: kin
+  person: merari
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-26
+  - it-hosa
+  reason: '1Cr 26:10: Hosá era de los hijos de Merarí.'
+  checked_on: '2026-10-12'
+  status: verified

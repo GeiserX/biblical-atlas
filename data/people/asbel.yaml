@@ -11,6 +11,8 @@ sources:
 - it-asbel
 - genesis-46
 - numeros-26
+- 1-cronicas-7
+- 1-cronicas-8
 links:
 - title: 'Perspicacia: «Asbel, asbelitas»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Asbel-asbelitas/
@@ -27,8 +29,9 @@ relations:
   - genesis-46
   - it-asbel
   - numeros-26
+  - 1-cronicas-8
   reason: 'Gé 46:21: aparece entre los hijos de Benjamín.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: lived_in
   place: egipto
@@ -39,5 +42,17 @@ relations:
     allí antes de morir Jacob.'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+- type: same_as
+  person: jediael-hijo-de-benjamin
+  certainty: probable
+  inferred: true
+  sources:
+  - 1-cronicas-7
+  - it-jediael
+  - it-asbel
+  reason: Perspicacia «Jediael», núm. 1, y «Asbel» ven probable que Jediael, el hijo de Benjamín de 1Cr 7:6, sea Asbel, el
+    de la lista de Génesis.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
 status: verified

@@ -1,0 +1,42 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jerimot-hijo-de-azriel
+name: Jerimot
+names:
+- name: Jerimot
+perspicacia: 1200002429#5
+disambiguation: Jerimot hijo de Azriel, príncipe de Neftalí; no los benjaminitas ni los levitas de ese nombre.
+summary: Encabezaba a los de Neftalí como su príncipe en días del rey David. Perspicacia lo da por hijo o descendiente de
+  Azriel.
+reason: Perspicacia «Jerimot», núm. 5; 1Cr 27:19.
+sources:
+- it-jerimot
+- 1-cronicas-27
+links:
+- title: 'Perspicacia: «Jerimot»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jerimot/
+  type: perspicacia
+relations:
+- type: kin
+  person: azriel-padre-de-jerimot
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-27
+  reason: '1Cr 27:19: Jerimot hijo de Azriel.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: holds_office
+  office: leader
+  inferred: false
+  sources:
+  - 1-cronicas-27
+  reason: '1Cr 27:19, 22: era el líder de Neftalí, uno de los príncipes de las tribus de Israel.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- jeremot-hijo-de-musi
+- jerimot-de-benjamin
+- jerimot-el-benjaminita
+- jerimot-hijo-de-heman

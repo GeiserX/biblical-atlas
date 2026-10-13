@@ -1,0 +1,46 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: mesulam-hijo-de-sefatias
+name: Mesulam
+names:
+- name: Mesulam
+perspicacia: 1200003014#8
+summary: Benjamita, cabeza de familia en Jerusalén después del destierro. Su linaje sube por Sefatías y Reuel hasta Ibniya.
+reason: Perspicacia «Mesulam», núm. 8; 1Cr 9:3, 8, 9.
+sources:
+- it-mesulam
+- 1-cronicas-9
+links:
+- title: 'Perspicacia: «Mesulam»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Mesulam/
+  type: perspicacia
+relations:
+- type: kin
+  person: sefatias-hijo-de-reuel
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-9
+  reason: '1Cr 9:8: Mesulam, hijo de Sefatías.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: lived_in
+  place: jerusalen
+  inferred: false
+  sources:
+  - 1-cronicas-9
+  - it-mesulam
+  reason: '1Cr 9:3, 8, 9: jefe de casa paterna de los benjamitas que vivían en Jerusalén.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- mesulam-abuelo-de-safan
+- mesulam-hijo-de-abihail
+- mesulam-hijo-de-elpaal
+- mesulam-hijo-de-hodavias
+- mesulam-hijo-de-mesilemit
+- mesulam-hijo-de-zorobabel
+- salum-hijo-de-sadoc
+disambiguation: 'Mesulam núm. 8 de Perspicacia: benjamita hijo de Sefatías que vivió en Jerusalén tras el destierro. No el
+  padre de Salú ni los Mesulam sacerdotes.'

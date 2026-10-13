@@ -1,0 +1,36 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: baal-hanan-el-guederita
+name: Baal-Hanán
+names:
+- name: Baal-Hanán
+perspicacia: 1200000513#2
+disambiguation: Baal-Hanán el guederita, funcionario de David; no el rey de Edom hijo de Acbor.
+distinct_from:
+- baal-hanan-hijo-de-acbor
+summary: Guederita al frente de los olivares y los sicómoros que el rey David tenía en la Sefelá. Su gentilicio apunta a Guéder
+  o a Guederá.
+reason: Perspicacia «Baal-hanán», núm. 2, y «Guederita»; 1Cr 27:28.
+sources:
+- it-baal-hanan
+- it-guederita
+- 1-cronicas-27
+links:
+- title: 'Perspicacia: «Baal-hanán»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Baal-han%C3%A1n/
+  type: perspicacia
+- title: 'Perspicacia: «Guederita»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Guederita/
+  type: perspicacia
+relations:
+- type: tie
+  person: david
+  word: master
+  inferred: false
+  sources:
+  - 1-cronicas-27
+  reason: '1Cr 27:28, 31: cuidaba los olivares y sicómoros de la Sefelá; era uno de los que administraban la hacienda del
+    rey.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

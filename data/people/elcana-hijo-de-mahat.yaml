@@ -1,0 +1,36 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: elcana-hijo-de-mahat
+name: Elcaná
+names:
+- name: Elcaná
+perspicacia: 1200001326#3
+disambiguation: Elcaná hijo de Máhat (1Cr 6:26, 35); no es ninguno de los otros Elcaná que numera Perspicacia «Elqaná».
+distinct_from:
+- elcana-descendiente-de-core
+- elcana-el-coreita
+- elcana-hijo-de-core
+- elcana-hijo-de-jeroham
+- elcana-padre-de-amasai
+- elcana-padre-de-asa
+- elcana-portero
+summary: Levita cohatita, al parecer hijo de Máhat, padre de Zofái o Zuf, en la línea de Samuel.
+reason: Perspicacia «Elqaná», núm. 3; 1Cr 6:26, 35.
+sources:
+- it-elqana
+- 1-cronicas-6
+links:
+- title: 'Perspicacia: «Elqaná»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Elqan%C3%A1/
+  type: perspicacia
+relations:
+- type: kin
+  person: mahat-hijo-de-amasai
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-6
+  reason: '1Cr 6:35: Elcaná, «hijo de Máhat».'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

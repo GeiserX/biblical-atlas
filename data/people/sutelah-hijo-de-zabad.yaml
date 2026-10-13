@@ -1,0 +1,40 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: sutelah-hijo-de-zabad
+name: Sutélah
+names:
+- name: Sutélah
+perspicacia: 1200004103#2
+disambiguation: Sutélah hijo de Zabad; no Sutélah hijo de Efraín, cabeza de los sutelahítas, de quien desciende.
+distinct_from:
+- sutelah-hijo-de-efrain
+summary: Efraimita, hijo de Zabad y descendiente de Sutélah hijo de Efraín.
+reason: Perspicacia «Sutélah», núm. 2; 1Cr 7:20, 21.
+sources:
+- it-sutelah
+- 1-cronicas-7
+links:
+- title: 'Perspicacia: «Sutélah»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sut%C3%A9lah/
+  type: perspicacia
+relations:
+- type: kin
+  person: zabad-hijo-de-tahat
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-7
+  reason: '1Cr 7:21: este Sutélah era hijo de Zabad.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: sutelah-hijo-de-efrain
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-7
+  - it-sutelah
+  reason: 'Perspicacia «Sutélah», núm. 2: descendía de Sutélah hijo de Efraín (1Cr 7:20, 21).'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

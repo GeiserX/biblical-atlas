@@ -1,0 +1,40 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ahio-hijo-de-berias
+name: Ahió
+names:
+- name: Ahió
+perspicacia: 1200000162#1
+disambiguation: Ahió hijo de Berías; no Ahió hijo de Jeiel, de la familia de Saúl, ni Ahió hijo de Abinadab, que iba delante
+  del Arca.
+distinct_from:
+- ahio-hijo-de-abinadab
+- ahio-hijo-de-jeiel
+summary: Benjamita; Perspicacia cree que su padre era Berías y su abuelo Elpaal. Fue jefe de familia en Jerusalén.
+reason: Perspicacia «Ahió», núm. 1; 1Cr 8:14, 16, 28.
+sources:
+- it-ahio
+- 1-cronicas-8
+links:
+- title: 'Perspicacia: «Ahió»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ahi%C3%B3/
+  type: perspicacia
+relations:
+- type: kin
+  person: berias-hijo-de-elpaal
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  reason: 1Cr 8:16 lo cuenta entre los hijos de Berías.
+  checked_on: '2026-10-12'
+  status: verified
+- type: lived_in
+  place: jerusalen
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  reason: '1Cr 8:28: los jefes de casas paternas de esta lista vivían en Jerusalén.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

@@ -1,0 +1,25 @@
+# biblical-atlas: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: ir-nahas
+name: Ir-Nahás
+names:
+- name: Ir-Nahás
+type: city
+lat: 31.615681
+lon: 34.921722
+precision: uncertain
+coord_source: openbible:a31913c
+coord_url: https://www.openbible.info/geo/ancient/a31913c/ir-nahash
+coord_note: Deir Nahhas, la propuesta que recoge Perspicacia, sin seguridad.
+summary: Población de Judá cuyo fundador o padre fue, al parecer, Tehiná. No se sabe con certeza dónde estaba; hay quien la
+  pone en Deir Nahhas, unos 20 km al ONO de Hebrón.
+reason: 'Perspicacia «Ir-nahás»; 1Cr 4:12. Coordenada de OpenBible: solo tomamos el punto.'
+sources:
+- it-ir-nahas
+- openbible-geo
+- 1-cronicas-4
+links:
+- title: 'Perspicacia: «Ir-nahás»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ir-nah%C3%A1s/
+  type: perspicacia
+checked_on: '2026-10-12'
+status: verified

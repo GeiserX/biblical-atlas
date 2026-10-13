@@ -14,6 +14,10 @@ sources:
 - 2-samuel-8
 - 2-samuel-20
 - 2-samuel-23
+- 1-cronicas-11
+- 1-cronicas-12
+- 1-cronicas-18
+- 1-cronicas-27
 links:
 - title: 'Perspicacia: «Jehoiadá»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jehoiad%C3%A1/
@@ -26,7 +30,27 @@ links:
   type: bible
 checked_on: '2026-10-12'
 status: verified
-relations: []
+relations:
+- type: holds_office
+  office: leader
+  inferred: false
+  sources:
+  - 1-cronicas-12
+  - it-jehoiada
+  reason: '1Cr 12:27: encabezaba a los descendientes de Aarón y llegó a Hebrón con 3.700; Perspicacia «Jehoiadá», núm. 1,
+    lo llama caudillo.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: holds_office
+  office: priest
+  inferred: false
+  sources:
+  - 1-cronicas-27
+  - it-jehoiada
+  reason: 1Cr 27:5 lo llama sacerdote principal; por eso Perspicacia «Jehoiadá», núm. 1, lo liga al sacerdocio.
+  checked_on: '2026-10-12'
+  status: verified
 distinct_from:
 - jehoiada-sumo-sacerdote
 - jehoiada-de-tiempos-de-jeremias
+- jehoiada-hijo-de-benaya

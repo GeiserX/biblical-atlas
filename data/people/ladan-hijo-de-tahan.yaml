@@ -1,0 +1,30 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ladan-hijo-de-tahan
+name: Ladán
+names:
+- name: Ladán
+perspicacia: 1200002660#1
+disambiguation: Ladán de Efraín, antepasado de Josué; no Ladán, el levita guersonita.
+summary: Efraimita, hijo de Tahán y padre de Amihud; antepasado de Josué hijo de Nun.
+reason: Perspicacia «Ladán», núm. 1; 1Cr 7:22, 26, 27.
+sources:
+- it-ladan
+- 1-cronicas-7
+links:
+- title: 'Perspicacia: «Ladán»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Lad%C3%A1n/
+  type: perspicacia
+relations:
+- type: kin
+  person: tahan-hijo-de-telah
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-7
+  reason: '1Cr 7:25, 26: Ladán era hijo de Tahán.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- ladan-hijo-de-guerson

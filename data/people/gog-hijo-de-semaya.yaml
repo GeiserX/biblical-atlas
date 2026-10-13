@@ -1,0 +1,27 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: gog-hijo-de-semaya
+name: Gog
+names:
+- name: Gog
+perspicacia: 1200001734#1
+summary: Rubenita, hijo de Semaya y padre de Simeí, en la línea de Joel que termina en Beerá.
+reason: Perspicacia «Gog», núm. 1; 1Cr 5:4.
+sources:
+- it-gog
+- 1-cronicas-5
+links:
+- title: 'Perspicacia: «Gog»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Gog/
+  type: perspicacia
+relations:
+- type: kin
+  person: semaya-hijo-de-joel
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-5
+  reason: '1Cr 5:4: «su hijo Gog», tras Semaya.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

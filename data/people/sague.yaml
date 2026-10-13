@@ -1,0 +1,30 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: sague
+name: Sagué
+names:
+- name: Sagué
+perspicacia: '1200003928'
+summary: Hararita, padre de Jonatán, uno de los guerreros de David. Se cree que es otro nombre de Samá hijo de Agué.
+reason: Perspicacia «Sagué» y «Samah», núm. 3; 1Cr 11:34.
+sources:
+- it-sague
+- 1-cronicas-11
+links:
+- title: 'Perspicacia: «Sagué»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sagu%C3%A9/
+  type: perspicacia
+relations:
+- type: same_as
+  person: sama-hijo-de-ague
+  certainty: probable
+  inferred: true
+  sources:
+  - 1-cronicas-11
+  - it-sague
+  - it-samah
+  reason: 'Perspicacia «Sagué» y «Samah», núm. 3: comparando 1Cr 11:34 con la lista paralela de Samuel, se cree que Sagué
+    era otro nombre de Samá.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

@@ -1,0 +1,28 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: tehina
+name: Tehiná
+names:
+- name: Tehiná
+perspicacia: '1200004341'
+summary: Judaíta de la línea de Kelub, padre de Ir-Nahás, lo que probablemente quiere decir que fundó esa población.
+reason: Perspicacia «Tehiná»; 1Cr 4:12.
+sources:
+- it-tehina
+- 1-cronicas-4
+links:
+- title: 'Perspicacia: «Tehiná»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Tehin%C3%A1/
+  type: perspicacia
+relations:
+- type: kin
+  person: eston
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-4
+  - it-tehina
+  reason: '1Cr 4:12: Estón fue padre de Tehiná.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

@@ -12,6 +12,7 @@ sources:
 - genesis-10
 - genesis-6
 - genesis-9
+- 1-cronicas-1
 links:
 - title: 'Perspicacia: «Cam»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Cam/
@@ -31,8 +32,9 @@ relations:
   - genesis-6
   - genesis-9
   - genesis-10
+  - 1-cronicas-1
   reason: 'Perspicacia «Cam», párr. 1 y 3: hijo de Noé que entró con él en el arca (Gé 7:13).'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: kin
   person: jafet
@@ -40,9 +42,10 @@ relations:
   inferred: false
   sources:
   - genesis-9
+  - 1-cronicas-1
   reason: 'Gé 9:22: Cam se lo cuenta a sus dos hermanos, uno de ellos Jafet.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 perspicacia: '1200001832'
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

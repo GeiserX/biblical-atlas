@@ -1,0 +1,42 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: salomon-es-ungido-rey-por-segunda-vez
+title: Salomón es ungido rey por segunda vez
+date:
+  from: -1036
+  to: -1036
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 1037 a.e.c.
+narrative_order:
+  series: 1-cronicas
+  order: 29021
+places:
+- jerusalen
+people:
+- salomon
+- sadoc-hijo-de-ahitub
+- david
+present:
+- salomon
+- sadoc-hijo-de-ahitub
+- david
+passages:
+- 1Cr 29:21, 22
+summary: Al día siguiente se ofrecen mil toros, mil carneros y mil corderos, y el pueblo come y bebe con gran alegría ante
+  Jehová. Entonces vuelve a ungir a Salomón como líder y a Sadoc como sacerdote.
+reason: 1Cr 29:21, 22; Perspicacia «Salomón», «La exhortación de David a Salomón», y «David», «Fin del reinado». La primera
+  unción fue la de Guihón, cuando Adonías quiso reinar. Lugar y fecha, los de la asamblea (estudio 3, párr. 4).
+sources:
+- 1-cronicas-29
+- it-salomon
+- it-david
+- it-sadoc
+- si-3
+links:
+- title: 1 Crónicas 29 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/1-Cr%C3%B3nicas/29/
+  type: bible
+checked_on: '2026-10-12'
+status: verified

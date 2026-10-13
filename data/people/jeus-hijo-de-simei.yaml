@@ -1,0 +1,44 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jeus-hijo-de-simei
+name: Jeús
+names:
+- name: Jeús
+perspicacia: 1200002457#3
+disambiguation: El levita hijo de Simeí (1Cr 23:10, 11); no Jeús hijo de Esaú ni los demás Jeús que numera Perspicacia.
+distinct_from:
+- jeus-hijo-de-esau
+- jeus-hijo-de-bilhan
+- jeus-hijo-de-eshec
+summary: Levita guersonita, hijo de Simeí. Él y su hermano Berías tuvieron pocos hijos, así que sus descendientes contaron
+  como una sola casa paterna.
+reason: Perspicacia «Jeús», núm. 3; 1Cr 23:10, 11.
+sources:
+- it-jeus
+- 1-cronicas-23
+links:
+- title: 'Perspicacia: «Jeús»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Je%C3%BAs/
+  type: perspicacia
+relations:
+- type: kin
+  person: simei-hijo-de-guerson
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-23
+  - it-jeus
+  reason: 1Cr 23:10 lo cuenta entre los cuatro hijos de Simeí.
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: berias-hijo-de-simei
+  word: brother
+  inferred: false
+  sources:
+  - 1-cronicas-23
+  - it-jeus
+  reason: 1Cr 23:11 junta a Jeús y Berías en una sola casa paterna; Perspicacia «Jeús», núm. 3, llama a Berías su hermano.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

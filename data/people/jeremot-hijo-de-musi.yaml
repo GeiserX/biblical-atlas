@@ -1,0 +1,45 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jeremot-hijo-de-musi
+name: Jeremot
+names:
+- name: Jeremot
+- name: Jerimot
+  note: Forma de 1Cr 24:30; Perspicacia «Jerimot», núm. 3, remite a «Jeremot», núm. 3.
+perspicacia: 1200002423#3
+disambiguation: El hijo de Musí (1Cr 23:23; 24:30); no Jerimot hijo de Azriel ni los demás Jeremot y Jerimot que numera Perspicacia.
+summary: Levita merarita, hijo de Musí y nieto de Merarí. La casa paterna que fundó entró en la reorganización del servicio
+  de los levitas que hizo David.
+reason: Perspicacia «Jeremot», núm. 3, y «Jerimot», núm. 3; 1Cr 23:23; 24:30.
+sources:
+- it-jeremot
+- it-jerimot
+- 1-cronicas-23
+- 1-cronicas-24
+links:
+- title: 'Perspicacia: «Jeremot»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jeremot/
+  type: perspicacia
+- title: 'Perspicacia: «Jerimot»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jerimot/
+  type: perspicacia
+relations:
+- type: kin
+  person: musi
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-23
+  - 1-cronicas-24
+  - it-jeremot
+  reason: 1Cr 23:23 y 24:30 lo nombran tercero de los hijos de Musí; Perspicacia «Jeremot», núm. 3, lo llama hijo de Musí.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- jerimot-de-benjamin
+- jeremot-de-beker
+- jeremot-hijo-de-berias
+- jerimot-el-benjaminita
+- jerimot-hijo-de-heman
+- jerimot-hijo-de-azriel

@@ -14,6 +14,7 @@ distinct_from:
 - jose-padre-de-igal
 - bernabe
 - jesus-hijo-de-eliezer
+- jose-hijo-de-asaf
 summary: 'Carpintero de Nazaret descendiente de David, esposo de María y padre adoptivo de Jesús. Siguió los avisos que recibió
   en sueños: se casó con María, huyó a Egipto y se estableció en Nazaret. Parece que murió antes que Jesús.'
 reason: Perspicacia «José» (núm. 8) da su oficio, su familia, los sueños y el indicio de Jn 19:26, 27 sobre su muerte.
@@ -104,5 +105,5 @@ links:
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/mateo/1/
   type: bible
 perspicacia: 1200002515#8
-checked_on: '2026-10-02'
+checked_on: '2026-10-12'
 status: verified

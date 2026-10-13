@@ -1,0 +1,27 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hod
+name: Hod
+names:
+- name: Hod
+perspicacia: '1200002047'
+summary: Aserita, hijo de Zofá. Perspicacia cree que quizá mandaba una de las divisiones más numerosas del ejército.
+reason: Perspicacia «Hod»; 1Cr 7:36, 37, 40.
+sources:
+- it-hod
+- 1-cronicas-7
+links:
+- title: 'Perspicacia: «Hod»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hod/
+  type: perspicacia
+relations:
+- type: kin
+  person: zofa
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-7
+  reason: 1Cr 7:36, 37 lo cuenta entre los hijos de Zofá.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

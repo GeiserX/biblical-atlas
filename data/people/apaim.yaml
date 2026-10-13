@@ -1,0 +1,27 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: apaim
+name: Apaim
+names:
+- name: Apaim
+perspicacia: '1200000311'
+summary: Hijo de Nadab, descendiente de Jerahmeel, y padre de Isí.
+reason: Perspicacia «Apaim»; 1Cr 2:30, 31.
+sources:
+- it-apaim
+- 1-cronicas-2
+links:
+- title: 'Perspicacia: «Apaim»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Apaim/
+  type: perspicacia
+relations:
+- type: kin
+  person: nadab-hijo-de-samai
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-2
+  reason: '1Cr 2:30: hijo de Nadab.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

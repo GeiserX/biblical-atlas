@@ -1,0 +1,45 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: seber
+name: Séber
+names:
+- name: Séber
+perspicacia: '1200003974'
+summary: Judaíta, hijo que Caleb tuvo con Maacá, su concubina.
+reason: Perspicacia «Séber»; 1Cr 2:48.
+sources:
+- it-seber
+- 1-cronicas-2
+links:
+- title: 'Perspicacia: «Séber»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/S%C3%A9ber/
+  type: perspicacia
+relations:
+- type: kin
+  person: caleb-hijo-de-hezron
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-2
+  reason: '1Cr 2:48, 49: Maacá, la concubina de Caleb, lo dio a luz.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: maaca-concubina-de-caleb
+  word: mother
+  inferred: false
+  sources:
+  - 1-cronicas-2
+  reason: '1Cr 2:48, 49: Maacá lo dio a luz.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: tirhana
+  word: brother
+  inferred: false
+  sources:
+  - 1-cronicas-2
+  reason: '1Cr 2:48: Séber y Tirhaná, hijos de Maacá.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

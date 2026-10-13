@@ -1,0 +1,45 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: abias-hijo-de-beker
+name: Abías
+names:
+- name: Abías
+perspicacia: 1200000041#1
+disambiguation: Abías hijo de Béker; no el hijo de Samuel, el sacerdote, el rey de Judá ni los demás Abías.
+distinct_from:
+- abias-de-juda
+- abias-de-tiempos-de-david
+- abias-hija-de-zacarias
+- abias-hijo-de-jeroboan
+- abias-hijo-de-samuel
+- abias-esposa-de-hezron
+summary: Nieto de Benjamín, el séptimo de los nueve hijos de Béker.
+reason: Perspicacia «Abías», núm. 1; 1Cr 7:6, 8.
+sources:
+- it-abias
+- 1-cronicas-7
+links:
+- title: 'Perspicacia: «Abías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ab%C3%ADas/
+  type: perspicacia
+relations:
+- type: kin
+  person: beker-hijo-de-benjamin
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-7
+  reason: 1Cr 7:8 lo cuenta entre los hijos de Béker.
+  checked_on: '2026-10-12'
+  status: verified
+- type: born_in
+  place: egipto
+  inferred: true
+  sources:
+  - 1-cronicas-7
+  - it-alemet
+  reason: 'Perspicacia «Alémet», núm. 1: los nueve hijos de Béker de 1Cr 7:8 nacieron en Egipto, después de la llegada de
+    Jacob en 1728 a.e.c.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

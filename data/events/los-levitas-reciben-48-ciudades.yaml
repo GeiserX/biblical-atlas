@@ -63,6 +63,9 @@ places:
 - mahanaim
 - hesbon
 - jazer
+- ibleam
+- aner
+- tabor-de-zabulon
 people:
 - eleazar-hijo-de-aaron
 - josue-hijo-de-nun
@@ -83,6 +86,10 @@ sources:
 - it-ciudades-de-los-sacerdotes
 - it-silo
 - tnm-tabla
+- 1-cronicas-6
+- it-aner
+- it-bileam
+- it-tabor
 links:
 - title: Josué 21 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Josu%C3%A9/21/
@@ -93,5 +100,5 @@ links:
 - title: 'Perspicacia: «Ciudades de los sacerdotes»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ciudades-de-los-sacerdotes/
   type: perspicacia
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

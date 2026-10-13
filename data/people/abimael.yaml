@@ -10,6 +10,7 @@ reason: Perspicacia «Abimael»; Gé 10:28.
 sources:
 - it-abimael
 - genesis-10
+- 1-cronicas-1
 links:
 - title: 'Perspicacia: «Abimael»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Abimael/
@@ -24,8 +25,9 @@ relations:
   inferred: false
   sources:
   - genesis-10
+  - 1-cronicas-1
   reason: Gé 10:28 lo cuenta entre los trece hijos de Joctán.
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

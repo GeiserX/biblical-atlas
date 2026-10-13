@@ -1,0 +1,28 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: tebalias
+name: Tebalías
+names:
+- name: Tebalías
+perspicacia: '1200004337'
+summary: Tercer hijo del merarita Hosá. Sirvió de portero levita en días de David.
+reason: Perspicacia «Tebalías»; 1Cr 26:11.
+sources:
+- it-tebalias
+- 1-cronicas-26
+links:
+- title: 'Perspicacia: «Tebalías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Tebal%C3%ADas/
+  type: perspicacia
+relations:
+- type: kin
+  person: hosa
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-26
+  - it-tebalias
+  reason: '1Cr 26:11: el tercero de los hijos de Hosá.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

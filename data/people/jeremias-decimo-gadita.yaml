@@ -1,0 +1,36 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jeremias-decimo-gadita
+name: Jeremías
+names:
+- name: Jeremías
+perspicacia: 1200002421#3
+disambiguation: Jeremías, décimo de los once gaditas (1Cr 12:13); no el quinto gadita, el benjaminita de 1Cr 12:4 ni el profeta.
+distinct_from:
+- jeremias-de-libna
+- jeremias-el-benjaminita
+- jeremias-profeta
+- jeremias-quinto-gadita
+- jeremias-de-manases
+- jeremias-hijo-de-habazinias
+summary: Gadita, el décimo de los once guerreros de Gad que cruzaron el Jordán crecido para unirse a David en el desierto,
+  cuando Saúl lo perseguía.
+reason: Perspicacia «Jeremías», núm. 3; 1Cr 12:8-15.
+sources:
+- it-jeremias
+- 1-cronicas-12
+links:
+- title: 'Perspicacia: «Jeremías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jerem%C3%ADas/
+  type: perspicacia
+relations:
+- type: tie
+  person: david
+  word: master
+  inferred: false
+  sources:
+  - 1-cronicas-12
+  reason: '1Cr 12:8, 13, 14: gadita que se pasó a David y llegó a ser jefe de su ejército.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

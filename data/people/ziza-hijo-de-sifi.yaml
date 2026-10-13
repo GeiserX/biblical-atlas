@@ -1,0 +1,39 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ziza-hijo-de-sifi
+name: Zizá
+names:
+- name: Zizá
+perspicacia: 1200004752#2
+disambiguation: Zizá simeonita hijo de Sifí (núm. 2 de Perspicacia); no el hijo de Rehoboam.
+summary: Jefe de una familia de Simeón, hijo de Sifí. En días de Ezequías su tribu ensanchó sus pastos con tierra de los camitas.
+reason: Perspicacia «Zizá»; 1Cr 4:34-41.
+sources:
+- it-ziza
+- 1-cronicas-4
+links:
+- title: 'Perspicacia: «Zizá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ziz%C3%A1/
+  type: perspicacia
+relations:
+- type: kin
+  person: sifi
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-4
+  - it-ziza
+  reason: '1Cr 4:37: Zizá hijo de Sifí.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: lived_in
+  place: guedor-de-simeon
+  inferred: false
+  sources:
+  - 1-cronicas-4
+  reason: '1Cr 4:41: los jefes de la lista se establecieron en los pastos de Guedor.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- zina

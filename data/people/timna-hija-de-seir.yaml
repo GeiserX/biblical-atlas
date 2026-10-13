@@ -12,6 +12,7 @@ reason: Perspicacia «Timná», núm. 2; Gé 36:22.
 sources:
 - it-timna
 - genesis-36
+- 1-cronicas-1
 links:
 - title: 'Perspicacia: «Timná»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Timn%C3%A1/
@@ -27,8 +28,9 @@ relations:
   sources:
   - it-timna
   - genesis-36
+  - 1-cronicas-1
   reason: 'Gé 36:22: Timná era hermana de Lotán.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: kin
   person: seir
@@ -40,5 +42,5 @@ relations:
   reason: 'Perspicacia «Timná», núm. 2: hija de Seír, por ser hermana de Lotán (Gé 36:22).'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-10-01'
+checked_on: '2026-10-12'
 status: verified

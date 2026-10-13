@@ -1,0 +1,38 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: addar
+name: Addar
+names:
+- name: Addar
+perspicacia: 1200000094#1
+summary: Benjamita, hijo de Bela. Perspicacia «Ard» cree probable que sea el mismo que Ard.
+reason: Perspicacia «Addar», núm. 1; 1Cr 8:1, 3.
+sources:
+- it-addar
+- 1-cronicas-8
+links:
+- title: 'Perspicacia: «Addar»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Addar/
+  type: perspicacia
+relations:
+- type: kin
+  person: bela-hijo-de-benjamin
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  reason: 1Cr 8:3 lo cuenta entre los hijos de Bela.
+  checked_on: '2026-10-12'
+  status: verified
+- type: same_as
+  person: ard
+  certainty: probable
+  inferred: true
+  sources:
+  - 1-cronicas-8
+  - it-ard
+  reason: 'Perspicacia «Ard»: si Ard era nieto de Benjamín, como sugiere la lista de Números, probablemente es el Addar de
+    1Cr 8:3.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

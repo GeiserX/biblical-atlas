@@ -29,7 +29,7 @@ history:
 - date: '2026-09-29'
   change: 'La relación con Sehón estaba al revés: es su vasallo, no su señor (Jos 13:21 y su nota).'
   source: josue-13
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified
 relations:
 - type: lived_in
@@ -50,3 +50,6 @@ relations:
   reason: 'Jos 13:21 y su nota: Réquem era uno de los reyes madianitas subordinados a Sehón.'
   checked_on: '2026-10-03'
   status: verified
+distinct_from:
+- requem-hijo-de-hebron
+- requem-de-manases

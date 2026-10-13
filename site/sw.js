@@ -3,11 +3,13 @@
 
    - La versión y la huella SHA-256 de cada fichero publicado vienen de sw-manifest.js, que escribe scripts/build.py.
      Un fichero cambiado cambia la versión, y la versión da el nombre de la caché.
-   - Al instalarse guarda PRECACHE (lo que hace falta para abrir las tres páginas) y LIBS (MapLibre, en la versión
-     exacta que carga index.html). Lo que ya estaba en la caché anterior con la misma huella se copia, no se descarga.
-   - El resto de lo nuestro (el detalle, el inglés, las listas de vídeos, los mapas de fondo, data.json) se guarda la
-     primera vez que el sitio lo pide. Las teselas de OpenFreeMap también, en otra caché con tope: se sirven de la red
-     y, sin red, de lo ya visto. Nunca se descarga nada que el sitio no haya pedido.
+   - Al instalarse guarda PRECACHE (lo que hace falta para abrir las tres páginas y las listas de vídeos) y LIBS
+     (MapLibre, en la versión exacta que carga index.html). Lo que ya estaba en la caché anterior con la misma huella
+     se copia, no se descarga.
+   - El resto de lo nuestro (el detalle, el inglés, los mapas de fondo) se guarda la primera vez que el sitio lo pide.
+     Ninguna página pide data.json: lo leen el servidor MCP y quien lo baje de fuera. Las teselas de OpenFreeMap
+     también se guardan, en otra caché con tope: se sirven de la red y, sin red, de lo ya visto. Nunca se descarga
+     nada que el sitio no haya pedido.
    - Un fichero cuya huella no es la de esta versión no se sirve ni se guarda: el servidor ya tiene otra versión, y
      mezclar un detalle nuevo con un núcleo viejo uniría datos que no casan. Responde 503 y busca la versión nueva.
    - Una versión nueva espera: js/offline.js avisa y la activa solo cuando quien lee pulsa «Recargar».
@@ -25,8 +27,8 @@ const TILE_HOST = /(^|\.)openfreemap\.org$/;
 const SHA = 'x-sha256';          // cabecera con la huella de lo que se guarda: copiarlo a la versión siguiente no lo relee
 const BASE = new URL('./', self.location).href;
 
-// Lo que hace falta para abrir index.html, acerca.html y calendario.html. Un fichero nuevo que una de las tres pide
-// al abrir entra aquí (docs/development.md); tests/site/offline.test.mjs falla si falta alguno.
+// Lo que hace falta para abrir index.html, acerca.html y calendario.html, y las listas de vídeos. Un fichero nuevo que
+// una de las tres pide al abrir entra aquí (docs/development.md); tests/site/offline.test.mjs falla si falta alguno.
 const PRECACHE = [
   'index.html', 'acerca.html', 'calendario.html',
   'favicon.svg', 'apple-touch-icon.png', 'logo.svg',
@@ -43,6 +45,9 @@ const PRECACHE = [
   'js/tipos/parada.js', 'js/tipos/evento.js', 'js/tipos/periodo.js', 'js/tipos/persona.js', 'js/tipos/pasaje.js',
   'js/tipos/libro.js', 'js/tipos/recorrido.js', 'js/passage-link.js', 'js/volver.js', 'js/offline.js', 'js/tema.js',
   'data.core.json',
+  // Las listas de vídeos (1,4 MB): una ficha abierta sin conexión sale con su sección de vídeos aunque con red nunca se
+  // hubiera abierto una ficha de persona o de pasaje.
+  'videos.json', 'videos-personas.json', 'videos-pasajes.json',
 ];
 const MAPLIBRE = 'https://unpkg.com/maplibre-gl@6.11.2/dist/';
 const LIBS = ['maplibre-gl.css', 'maplibre-gl.mjs', 'maplibre-gl-shared.mjs', 'maplibre-gl-worker.mjs'].map((f) => MAPLIBRE + f);

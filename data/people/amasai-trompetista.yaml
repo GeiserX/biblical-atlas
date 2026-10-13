@@ -1,0 +1,31 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: amasai-trompetista
+name: Amasái
+names:
+- name: Amasái
+perspicacia: 1200000221#3
+disambiguation: El sacerdote trompetista; no el antepasado de Samuel (núm. 1) ni el jefe que se unió a David en Ziclag (núm.
+  2), según Perspicacia «Amasai».
+summary: Sacerdote que tocó la trompeta delante del Arca en la procesión que la subió a Jerusalén.
+reason: Perspicacia «Amasai», núm. 3; 1Cr 15:24.
+sources:
+- it-amasai
+- 1-cronicas-15
+links:
+- title: 'Perspicacia: «Amasai»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Amasai/
+  type: perspicacia
+relations:
+- type: holds_office
+  office: priest
+  inferred: false
+  sources:
+  - 1-cronicas-15
+  reason: 1Cr 15:24 lo cuenta entre los sacerdotes que tocaban las trompetas delante del Arca.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- amasai-hijo-de-elcana
+- amasai-jefe-de-los-treinta

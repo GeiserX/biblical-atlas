@@ -109,6 +109,12 @@ names:
 - name: Jehová Es Nuestra Justicia
   note: Nombre que Jer 33:16 da a la Jerusalén restaurada; Perspicacia «Jehová Es Nuestra Justicia» dice que el nombre de
     Dios puesto sobre ella asegura su justicia.
+- name: Puerta del Rey
+  note: Puerta del templo hacia el este que guardaba Salum (1Cr 9:18). Perspicacia «Puerta» cree que era la Puerta Oriental,
+    por donde el rey entraba y salía del templo.
+- name: Puerta de Saléket
+  note: Puerta al oeste del santuario, junto al camino principal que subía; allí hacían guardia Supim y Hosá (1Cr 26:16).
+    Perspicacia «Saléket».
 type: city
 lat: 31.776667
 lon: 35.234167
@@ -322,6 +328,17 @@ sources:
 - jeremias-40
 - jeremias-52
 - it-jehova-es-nuestra-justicia
+- 1-cronicas-3
+- 1-cronicas-9
+- 1-cronicas-11
+- 1-cronicas-14
+- 1-cronicas-15
+- 1-cronicas-16
+- 1-cronicas-20
+- 1-cronicas-21
+- it-saleket
+- 1-cronicas-26
+- 1-cronicas-29
 links:
 - title: 'Perspicacia: «Jerusalén»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jerusal%C3%A9n/

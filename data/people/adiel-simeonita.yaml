@@ -1,0 +1,31 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: adiel-simeonita
+name: Adiel
+names:
+- name: Adiel
+perspicacia: 1200000097#2
+disambiguation: Adiel simeonita (núm. 2 de Perspicacia); no el padre de Azmávet ni el sacerdote.
+summary: Uno de los jefes de Simeón que, en el siglo VIII a.e.c., en días de Ezequías, echaron a los camitas de la zona de
+  Guedor.
+reason: Perspicacia «Adiel»; 1Cr 4:34-41.
+sources:
+- it-adiel
+- 1-cronicas-4
+links:
+- title: 'Perspicacia: «Adiel»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Adiel/
+  type: perspicacia
+relations:
+- type: lived_in
+  place: guedor-de-simeon
+  inferred: false
+  sources:
+  - 1-cronicas-4
+  reason: '1Cr 4:41: los jefes de la lista se establecieron en los pastos de Guedor.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- adiel-hijo-de-jahzera
+- adiel-padre-de-azmavet

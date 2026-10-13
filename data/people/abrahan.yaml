@@ -44,6 +44,7 @@ sources:
 - josue-24
 - isaias-41
 - isaias-51
+- 1-cronicas-1
 links:
 - title: 'Perspicacia: «Abrahán»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Abrah%C3%A1n/
@@ -61,8 +62,9 @@ relations:
   - genesis-11
   - lucas-3
   - josue-24
+  - 1-cronicas-1
   reason: 'Perspicacia «Abrahán», párr. 3: hijo de Taré, que tenía 130 años cuando nació (Gé 11:26, 32; 12:4).'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: born_in
   place: ur
@@ -239,13 +241,14 @@ relations:
   status: verified
 - type: kin
   person: quetura
-  word: wife
+  word: secondary_wife
   inferred: false
   sources:
   - it-quetura
   - genesis-25
-  reason: 'Gé 25:1: Abrahán volvió a casarse con Queturá.'
-  checked_on: '2026-09-29'
+  - 1-cronicas-1
+  reason: 'Gé 25:1: Abrahán volvió a casarse con Queturá; 1Cr 1:32 la llama su concubina y Perspicacia «Queturá», esposa secundaria.'
+  checked_on: '2026-10-12'
   status: verified
 perspicacia: '1200000060'
 history:
@@ -253,5 +256,9 @@ history:
   change: El resumen añade que Jehová lo llama su amigo (Is 41:8), dato que la ficha no tenía; para caber en 40 palabras se
     acorta el origen en Ur.
   source: isaias-41
-checked_on: '2026-09-30'
+- date: '2026-10-12'
+  change: 'La relación con Queturá pasa de esposa a esposa secundaria: 1Cr 1:32 la llama concubina y Perspicacia «Queturá»
+    dice que fue esposa secundaria. Se añade 1-cronicas-1 a las relaciones que el capítulo repite.'
+  source: 1-cronicas-1
+checked_on: '2026-10-12'
 status: verified

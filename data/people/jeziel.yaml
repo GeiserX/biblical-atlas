@@ -1,0 +1,45 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jeziel
+name: Jeziel
+names:
+- name: Jeziel
+perspicacia: '1200002466'
+summary: Benjaminita, hijo de Azmávet. Apoyó a David cuando Saúl lo tenía proscrito.
+reason: Perspicacia «Jeziel»; 1Cr 12:3.
+sources:
+- it-jeziel
+- 1-cronicas-12
+links:
+- title: 'Perspicacia: «Jeziel»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jeziel/
+  type: perspicacia
+relations:
+- type: kin
+  person: azmavet-padre-de-jeziel
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-12
+  reason: '1Cr 12:3: Jeziel y Pélet, hijos de Azmávet.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: pelet-hijo-de-azmavet
+  word: brother
+  inferred: false
+  sources:
+  - 1-cronicas-12
+  reason: '1Cr 12:3: los dos eran hijos de Azmávet.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: tie
+  person: david
+  word: master
+  inferred: false
+  sources:
+  - 1-cronicas-12
+  reason: '1Cr 12:3: se unió a David y lo apoyó en la guerra.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

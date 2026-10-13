@@ -25,6 +25,8 @@ sources:
 - 2-samuel-10
 - 2-samuel-23
 - 1-reyes-11
+- 1-cronicas-18
+- 1-cronicas-19
 links:
 - title: 'Perspicacia: «Zobá»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zob%C3%A1/
@@ -32,5 +34,5 @@ links:
 - title: Salmo 60 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/salmos/60/
   type: bible
-checked_on: '2026-09-30'
+checked_on: '2026-10-12'
 status: verified

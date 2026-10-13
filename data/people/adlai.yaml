@@ -1,0 +1,18 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: adlai
+name: Adlái
+names:
+- name: Adlái
+perspicacia: '1200000103'
+summary: Padre de Safat, el que cuidaba las vacas de David en las llanuras.
+reason: Perspicacia «Adlai»; 1Cr 27:29.
+sources:
+- it-adlai
+- 1-cronicas-27
+links:
+- title: 'Perspicacia: «Adlai»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Adlai/
+  type: perspicacia
+relations: []
+checked_on: '2026-10-12'
+status: verified

@@ -1,0 +1,29 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jasubi-lehem
+name: Jasubí-Léhem
+names:
+- name: Jasubí-Léhem
+perspicacia: '1200002338'
+summary: Nombre de la genealogía de Judá, quizá un descendiente de Selá. Muchos traductores lo leen «volvieron a Léhem», es
+  decir, a Belén.
+reason: Perspicacia «Jasubí-léhem»; 1Cr 4:22.
+sources:
+- it-jasubi-lehem
+- 1-cronicas-4
+links:
+- title: 'Perspicacia: «Jasubí-léhem»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jasub%C3%AD-l%C3%A9hem/
+  type: perspicacia
+relations:
+- type: kin
+  person: sela-hijo-de-juda
+  word: ancestor
+  inferred: true
+  sources:
+  - 1-cronicas-4
+  - it-jasubi-lehem
+  reason: '1Cr 4:21, 22: entre los «hijos» de Selá; Perspicacia «Jasubí-léhem» lo ve posible.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

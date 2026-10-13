@@ -1,0 +1,29 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: otni
+name: Otní
+names:
+- name: Otní
+perspicacia: '1200003348'
+summary: Levita, nieto de Obed-Edom por su hijo Semaya. Con sus hermanos, hombres capaces, gobernaba la casa de su padre y
+  fue portero.
+reason: Perspicacia «Otní»; 1Cr 26:7.
+sources:
+- it-otni
+- 1-cronicas-26
+links:
+- title: 'Perspicacia: «Otní»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Otn%C3%AD/
+  type: perspicacia
+relations:
+- type: kin
+  person: semaya-hijo-de-obed-edom
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-26
+  - it-otni
+  reason: 1Cr 26:7 lo cuenta entre los hijos de Semaya.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

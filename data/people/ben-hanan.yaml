@@ -1,0 +1,28 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ben-hanan
+name: Ben-Hanán
+names:
+- name: Ben-Hanán
+perspicacia: '1200000638'
+summary: Descendiente de Judá, uno de los cuatro hijos de Shimón.
+reason: Perspicacia «Ben-hanán»; 1Cr 4:20.
+sources:
+- it-ben-hanan
+- 1-cronicas-4
+links:
+- title: 'Perspicacia: «Ben-hanán»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ben-han%C3%A1n/
+  type: perspicacia
+relations:
+- type: kin
+  person: shimon
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-4
+  - it-ben-hanan
+  reason: '1Cr 4:20: uno de los hijos de Shimón.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

@@ -24,6 +24,7 @@ sources:
 - jueces-1
 - 1-samuel-31
 - 1-reyes-4
+- 1-cronicas-7
 links:
 - title: 'Perspicacia: «Bet-seán, Bet-san»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Bet-se%C3%A1n-Bet-san/
@@ -36,5 +37,5 @@ history:
   change: 'Se añade lo que cuenta 1Sa 31:10-12 y Perspicacia «Bet-seán, Bet-san», párr. 6: en tiempos de Saúl la dominaban
     los filisteos, que colgaron allí su cuerpo y el de sus hijos. La primera frase se acorta.'
   source: 1-samuel-31
-checked_on: '2026-09-30'
+checked_on: '2026-10-12'
 status: verified

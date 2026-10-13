@@ -1,0 +1,44 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: eliezer-hijo-de-beker
+name: Eliezer
+names:
+- name: Eliezer
+perspicacia: 1200001304#3
+disambiguation: Eliezer hijo de Béker; no Eliezer de Damasco, el hijo de Moisés ni los otros Eliezer de Perspicacia.
+distinct_from:
+- eliezer-de-damasco
+- eliezer-hijo-de-jorim
+- eliezer-hijo-de-moises
+- eliezer-hijo-de-zicri
+- eliezer-trompetista
+summary: Benjamita, hijo de Béker.
+reason: Perspicacia «Eliezer», núm. 3; 1Cr 7:6, 8.
+sources:
+- it-eliezer
+- 1-cronicas-7
+links:
+- title: 'Perspicacia: «Eliezer»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Eliezer/
+  type: perspicacia
+relations:
+- type: kin
+  person: beker-hijo-de-benjamin
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-7
+  reason: 1Cr 7:8 lo cuenta entre los hijos de Béker.
+  checked_on: '2026-10-12'
+  status: verified
+- type: born_in
+  place: egipto
+  inferred: true
+  sources:
+  - 1-cronicas-7
+  - it-alemet
+  reason: 'Perspicacia «Alémet», núm. 1: los nueve hijos de Béker de 1Cr 7:8 nacieron en Egipto, después de la llegada de
+    Jacob en 1728 a.e.c.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

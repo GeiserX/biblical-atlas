@@ -10,6 +10,7 @@ reason: Perspicacia «Sutélah», núm. 1; Nú 26:35, 36.
 sources:
 - it-sutelah
 - numeros-26
+- 1-cronicas-7
 links:
 - title: 'Perspicacia: «Sutélah»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sut%C3%A9lah/
@@ -25,8 +26,9 @@ relations:
   sources:
   - numeros-26
   - it-sutelah
+  - 1-cronicas-7
   reason: Nú 26:35 lo cuenta entre los hijos de Efraín.
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: kin
   person: beker-hijo-de-efrain
@@ -46,5 +48,7 @@ relations:
   reason: 'Nú 26:35: Tahán es otro de los hijos de Efraín.'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified
+distinct_from:
+- sutelah-hijo-de-zabad

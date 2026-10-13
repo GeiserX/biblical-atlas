@@ -13,6 +13,7 @@ reason: Perspicacia «Anah» lo trata como una sola persona; Gé 36:2, 24, 25, 2
 sources:
 - it-anah
 - genesis-36
+- 1-cronicas-1
 links:
 - title: 'Perspicacia: «Anah»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Anah/
@@ -28,8 +29,9 @@ relations:
   sources:
   - it-anah
   - genesis-36
+  - 1-cronicas-1
   reason: 'Gé 36:24: Aná era hijo de Zibeón.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: kin
   person: seir
@@ -37,8 +39,9 @@ relations:
   sources:
   - it-anah
   - genesis-36
+  - 1-cronicas-1
   reason: Gé 36:20 lo pone entre los hijos de Seír; Perspicacia «Anah» entiende ahí «hijos» como descendientes.
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   word: ancestor
   status: verified
 - type: lived_in
@@ -50,7 +53,7 @@ relations:
   reason: 'Gé 36:20, 29, 30: jeque horeo en la tierra de Seír.'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified
 distinct_from:
 - ana-madre-de-samuel

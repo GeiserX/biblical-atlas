@@ -21,6 +21,7 @@ sources:
 - openbible-geo
 - josue-10
 - josue-16
+- 1-cronicas-7
 links:
 - title: 'Perspicacia: «Bet-horón»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Bet-hor%C3%B3n/
@@ -31,5 +32,5 @@ links:
 - title: Josué 16 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Josu%C3%A9/16/
   type: bible
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

@@ -1,0 +1,37 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: josa
+name: Josá
+names:
+- name: Josá
+perspicacia: '1200002517'
+summary: Jefe simeonita, hijo de Amasías. Con otros jefes conquistó en días de Ezequías tierras de camitas y meunim para tener
+  más pastos.
+reason: Perspicacia «Josá»; 1Cr 4:34-41.
+sources:
+- it-josa
+- 1-cronicas-4
+links:
+- title: 'Perspicacia: «Josá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jos%C3%A1/
+  type: perspicacia
+relations:
+- type: kin
+  person: amasias-padre-de-josa
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-4
+  - it-josa
+  reason: '1Cr 4:34: Josá hijo de Amasías.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: lived_in
+  place: guedor-de-simeon
+  inferred: false
+  sources:
+  - 1-cronicas-4
+  reason: '1Cr 4:41: los jefes de la lista se establecieron en los pastos de Guedor.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

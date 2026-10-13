@@ -1,0 +1,28 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: barias
+name: Barías
+names:
+- name: Barías
+perspicacia: '1200000562'
+summary: Descendiente lejano de David por Salomón, hijo de Semaya.
+reason: Perspicacia «Barías»; 1Cr 3:22.
+sources:
+- it-barias
+- 1-cronicas-3
+links:
+- title: 'Perspicacia: «Barías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Bar%C3%ADas/
+  type: perspicacia
+relations:
+- type: kin
+  person: semaya-hijo-de-secanias
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-3
+  - it-barias
+  reason: '1Cr 3:22: uno de los hijos de Semaya.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

@@ -1,0 +1,35 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: simrat
+name: Simrat
+names:
+- name: Simrat
+perspicacia: '1200004051'
+summary: Benjamita, uno de los nueve hijos de Simeí, cabeza de familia en Jerusalén.
+reason: Perspicacia «Simrat»; 1Cr 8:19-21, 28.
+sources:
+- it-simrat
+- 1-cronicas-8
+links:
+- title: 'Perspicacia: «Simrat»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Simrat/
+  type: perspicacia
+relations:
+- type: kin
+  person: simei-padre-de-jaquim
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  reason: 1Cr 8:19-21 lo cuenta entre los hijos de Simeí.
+  checked_on: '2026-10-12'
+  status: verified
+- type: lived_in
+  place: jerusalen
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  reason: '1Cr 8:28: los jefes de casas paternas de esta lista vivían en Jerusalén.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

@@ -20,6 +20,7 @@ sources:
 - it-seraya
 - 2-reyes-25
 - jeremias-52
+- 1-cronicas-6
 links:
 - title: 'Perspicacia: «Seraya»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Seraya/
@@ -49,10 +50,21 @@ relations:
   reason: '2Re 25:20, 21: el rey de Babilonia lo mató en Riblá.'
   checked_on: '2026-10-12'
   status: verified
+- type: kin
+  person: azarias-hijo-de-hilquias
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-6
+  reason: 1Cr 6:14 lo da como hijo de Azarías.
+  checked_on: '2026-10-12'
+  status: verified
 distinct_from:
 - seraya-secretario-de-david
 - seraya-hijo-de-tanhumet
 - seraya-hijo-de-nerias
 - seraya-hijo-de-azriel
+- seraya-hijo-de-quenaz
+- seraya-hijo-de-asiel
 checked_on: '2026-10-12'
 status: verified

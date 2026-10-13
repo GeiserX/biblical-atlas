@@ -1,0 +1,25 @@
+# biblical-atlas: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: manahat
+name: Manáhat
+names:
+- name: Manáhat
+type: city
+lat: 31.75367
+lon: 35.18901
+precision: uncertain
+coord_source: openbible:a6e2c95
+coord_url: https://www.openbible.info/geo/ancient/a6e2c95/manahath
+coord_note: Punto de el-Malha, al suroeste de Jerusalén, con el que Perspicacia la identifica de forma provisional.
+summary: Lugar adonde fueron desterrados algunos jefes de familia de Gueba, de la tribu de Benjamín, en un tiempo que el texto
+  no dice.
+reason: 'Perspicacia «Manáhat», núm. 2; 1Cr 8:6. OpenBible: solo tomamos el punto.'
+sources:
+- it-manahat
+- openbible-geo
+- 1-cronicas-8
+links:
+- title: 'Perspicacia: «Manáhat»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Man%C3%A1hat/
+  type: perspicacia
+checked_on: '2026-10-12'
+status: verified

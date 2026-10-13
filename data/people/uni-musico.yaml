@@ -1,0 +1,18 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: uni-musico
+name: Uní
+names:
+- name: Uní
+perspicacia: 1200004514#1
+disambiguation: El músico de David; no el levita de guardia de los días de Jesúa (Perspicacia «Uní», núm. 2).
+summary: Músico levita que tocó instrumento de cuerda en la procesión que subió el Arca a Jerusalén.
+reason: Perspicacia «Uní», núm. 1; 1Cr 15:18, 20.
+sources:
+- it-uni
+- 1-cronicas-15
+links:
+- title: 'Perspicacia: «Uní»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Un%C3%AD/
+  type: perspicacia
+checked_on: '2026-10-12'
+status: verified

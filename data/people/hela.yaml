@@ -1,0 +1,18 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hela
+name: Helá
+names:
+- name: Helá
+perspicacia: '1200001963'
+summary: Una de las dos esposas de Asjur; las genealogías de Judá nombran a tres de sus hijos.
+reason: Perspicacia «Helá»; 1Cr 4:5, 7.
+sources:
+- it-hela
+- 1-cronicas-4
+links:
+- title: 'Perspicacia: «Helá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hel%C3%A1/
+  type: perspicacia
+relations: []
+checked_on: '2026-10-12'
+status: verified

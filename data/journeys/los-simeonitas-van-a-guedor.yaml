@@ -11,18 +11,40 @@ date:
   type: narrative
   chronology: tnm
   text: 'entre 746 y 716 a.e.c. (tiempo narrativo: en los días de Ezequías)'
-companions: []
+companions:
+- jamlec
+- josa
+- joel-simeonita
+- jehu-hijo-de-josibias
+- elioenai-simeonita
+- jaacoba
+- jesohaya
+- asaya-simeonita
+- adiel-simeonita
+- jesimiel
+- benaya-simeonita
+- ziza-hijo-de-sifi
 summary: En días de Ezequías, Mesobab y otros doce jefes de Simeón con familias numerosas buscan pastos. Junto a Guedor, al
   este del valle, hallan tierra buena y tranquila, acaban con camitas y meunim y se quedan allí.
 reason: '1Cr 4:34-41; Perspicacia «Mesobab». Fecha: el reinado de Ezequías, que nombra el texto (1Cr 4:41), según la tabla
-  A6-B; aún sin suceso en data/events.'
+  A6-B.'
 sources:
 - 1-cronicas-4
 - it-mesobab
 - it-guedor
 - it-ezequias
 - tnm-a6-b
-checked_on: '2026-10-02'
+history:
+- date: '2026-10-12'
+  change: Los compañeros que nombra el texto ya tienen ficha y van con él.
+  source: 1-cronicas-4
+- date: '2026-10-12'
+  change: Ya hay suceso para este viaje; se quita «sin suceso».
+  source: 1-cronicas-4
+- date: '2026-10-12'
+  change: Los otros jefes ya tienen ficha y van en companions.
+  source: 1-cronicas-4
+checked_on: '2026-10-12'
 status: verified
 stops:
 - order: 1
@@ -53,7 +75,7 @@ stops:
     type: narrative
     chronology: tnm
     text: 'entre 746 y 716 a.e.c. (tiempo narrativo: en los días de Ezequías)'
-  note: La Septuaginta lee Guerar. No es la Guedor de la montaña de Judá. Los otros jefes van sin ficha.
+  note: La Septuaginta lee Guerar. No es la Guedor de la montaña de Judá.
   reason: '1Cr 4:39-41: llegan a la entrada de Guedor y se establecen allí; Perspicacia «Guedor», núm. 5. Sin suceso: fecha
     por el reinado de Ezequías.'
   sources:
@@ -61,5 +83,5 @@ stops:
   - it-guedor
   - it-mesobab
   - it-ezequias
-  checked_on: '2026-10-02'
+  checked_on: '2026-10-12'
   status: verified

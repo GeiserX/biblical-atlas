@@ -1,0 +1,37 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: salu-hijo-de-mesulam
+name: Salú
+names:
+- name: Salú
+perspicacia: 1200003803#1
+summary: Benjamita que, después del destierro, era cabeza de familia en Jerusalén. Su linaje sube por Mesulam y Hodavías hasta
+  Hasenuá.
+reason: Perspicacia «Salú», núm. 1; 1Cr 9:3, 7.
+sources:
+- it-salu-hijo-de-mesulam
+- 1-cronicas-9
+links:
+- title: 'Perspicacia: «Salú»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sal%C3%BA/
+  type: perspicacia
+relations:
+- type: kin
+  person: mesulam-hijo-de-hodavias
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-9
+  reason: '1Cr 9:7: Salú, hijo de Mesulam.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: lived_in
+  place: jerusalen
+  inferred: false
+  sources:
+  - 1-cronicas-9
+  - it-salu-hijo-de-mesulam
+  reason: '1Cr 9:3, 7, 9: de los benjamitas, jefes de casas paternas, que se establecieron en Jerusalén.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

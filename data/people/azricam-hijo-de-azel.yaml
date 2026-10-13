@@ -1,0 +1,35 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: azricam-hijo-de-azel
+name: Azricam
+names:
+- name: Azricam
+- name: Azriqam
+  note: Grafía de Perspicacia.
+perspicacia: 1200000501#1
+disambiguation: Azricam hijo de Azel; no los otros Azricam que numera Perspicacia.
+summary: Benjamita, uno de los seis hijos de Azel, de la línea del rey Saúl por Jonatán.
+reason: Perspicacia «Azriqam», núm. 1; 1Cr 8:33-38.
+sources:
+- it-azriqam
+- 1-cronicas-8
+- 1-cronicas-9
+links:
+- title: 'Perspicacia: «Azriqam»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Azriqam/
+  type: perspicacia
+relations:
+- type: kin
+  person: azel
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  - 1-cronicas-9
+  reason: 1Cr 8:38 lo cuenta entre los hijos de Azel.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- azricam-hijo-de-hasabias
+- azricam-hijo-de-nearias

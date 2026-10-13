@@ -12,6 +12,7 @@ sources:
 - genesis-46
 - exodo-6
 - numeros-26
+- 1-cronicas-5
 links:
 - title: 'Perspicacia: «Palú»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Pal%C3%BA/
@@ -29,8 +30,9 @@ relations:
   - it-palu
   - exodo-6
   - numeros-26
+  - 1-cronicas-5
   reason: 'Gé 46:9: aparece entre los hijos de Rubén.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: lived_in
   place: egipto
@@ -50,5 +52,5 @@ relations:
   reason: Perspicacia «Palú» ve posible que el hijo de Rubén al que Nú 16:1 llama Pélez sea Palú, sin afirmarlo.
   checked_on: '2026-10-03'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

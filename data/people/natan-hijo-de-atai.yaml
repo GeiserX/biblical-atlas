@@ -1,0 +1,34 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: natan-hijo-de-atai
+name: Natán
+names:
+- name: Natán
+perspicacia: 1200003184#1
+summary: Judaíta de la línea de Jerahmeel. Su padre fue Atái y su hijo, Zabad; el siervo egipcio Jarhá era su abuelo.
+reason: Perspicacia «Natán», núm. 1; 1Cr 2:36.
+sources:
+- it-natan
+- 1-cronicas-2
+links:
+- title: 'Perspicacia: «Natán»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Nat%C3%A1n/
+  type: perspicacia
+relations:
+- type: kin
+  person: atai-hijo-de-jarha
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-2
+  reason: '1Cr 2:36: Atái fue su padre.'
+  checked_on: '2026-10-12'
+  status: verified
+disambiguation: Natán hijo de Atái, de la línea de Jarhá en Judá; no el profeta Natán, ni Natán hijo de David, ni el de Zobá,
+  ni el padre de Zabud.
+distinct_from:
+- natan-de-zoba
+- natan-padre-de-zabud
+- natan-profeta
+- natan-hijo-de-david
+checked_on: '2026-10-12'
+status: verified

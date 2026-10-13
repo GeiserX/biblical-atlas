@@ -1,0 +1,32 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: sacar-hijo-de-obed-edom
+name: Sacar
+names:
+- name: Sacar
+perspicacia: 1200003784#2
+disambiguation: El hijo de Obed-Edom, portero (1Cr 26:4); no Sacar el hararita, llamado también Sarar (Perspicacia «Sacar»,
+  núm. 1 y 2).
+summary: Levita, hijo cuarto de Obed-Edom, que sirvió de portero en tiempos de David.
+reason: Perspicacia «Sacar», núm. 2; 1Cr 26:4.
+sources:
+- it-sacar
+- 1-cronicas-26
+links:
+- title: 'Perspicacia: «Sacar»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sacar/
+  type: perspicacia
+relations:
+- type: kin
+  person: obed-edom-coreita
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-26
+  - it-sacar
+  reason: '1Cr 26:4: el cuarto de los hijos de Obed-Edom.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- sarar

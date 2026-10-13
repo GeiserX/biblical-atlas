@@ -1,0 +1,32 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: elioenai-hijo-de-nearias
+name: Elioenái
+names:
+- name: Elioenái
+perspicacia: 1200001311#1
+disambiguation: Elioenái hijo de Nearías (núm. 1 de Perspicacia); no el jefe simeonita de los días de Ezequías.
+summary: Descendiente de Salomón, hijo de Nearías y padre de siete hijos que cierran la línea de David en las Escrituras Hebreas.
+reason: Perspicacia «Elioenai»; 1Cr 3:23.
+sources:
+- it-elioenai
+- 1-cronicas-3
+links:
+- title: 'Perspicacia: «Elioenai»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Elioenai/
+  type: perspicacia
+relations:
+- type: kin
+  person: nearias-hijo-de-semaya
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-3
+  - it-elioenai
+  reason: '1Cr 3:23: uno de los tres hijos de Nearías.'
+  checked_on: '2026-10-12'
+  status: verified
+distinct_from:
+- elioenai-simeonita
+- elioenai-hijo-de-beker
+checked_on: '2026-10-12'
+status: verified

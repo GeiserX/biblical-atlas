@@ -1,0 +1,27 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: amzi-hijo-de-bani
+name: Amzí
+names:
+- name: Amzí
+perspicacia: 1200000255#1
+summary: Levita merarita, hijo de Baní y antepasado de Etán, cantor de la casa de Jehová.
+reason: Perspicacia «Amzí», núm. 1; 1Cr 6:46.
+sources:
+- it-amzi
+- 1-cronicas-6
+links:
+- title: 'Perspicacia: «Amzí»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Amz%C3%AD/
+  type: perspicacia
+relations:
+- type: kin
+  person: bani-hijo-de-semer
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-6
+  reason: '1Cr 6:46: Amzí, «hijo de Baní».'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

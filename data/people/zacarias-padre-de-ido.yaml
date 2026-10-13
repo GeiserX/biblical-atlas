@@ -1,0 +1,33 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: zacarias-padre-de-ido
+name: Zacarías
+names:
+- name: Zacarías
+perspicacia: 1200004681#8
+disambiguation: Zacarías el manasita, padre de Idó, en días de David; no los profetas, reyes y sacerdotes de ese nombre.
+distinct_from:
+- zacarias-hijo-de-jehoiada
+- zacarias-padre-de-juan
+- zacarias-profeta
+- zacarias-abuelo-de-ezequias
+- zacarias-hijo-de-jeberekias
+- zacarias-de-israel
+- zacarias-musico
+- zacarias-trompetista
+- zacarias-descendiente-de-isias
+- zacarias-el-rubenita
+- zacarias-hijo-de-hosa
+- zacarias-hijo-de-meselemias
+- zeker
+summary: Hombre de Manasés, padre de Idó, el príncipe de los manasitas de Galaad en tiempos de David.
+reason: Perspicacia «Zacarías», núm. 8; 1Cr 27:21.
+sources:
+- it-zacarias
+- 1-cronicas-27
+links:
+- title: 'Perspicacia: «Zacarías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zacar%C3%ADas/
+  type: perspicacia
+relations: []
+checked_on: '2026-10-12'
+status: verified

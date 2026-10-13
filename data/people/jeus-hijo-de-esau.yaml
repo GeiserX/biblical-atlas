@@ -10,6 +10,7 @@ reason: Perspicacia «Jeús», núm. 1; Gé 36:5-8, 14, 18.
 sources:
 - it-jeus
 - genesis-36
+- 1-cronicas-1
 links:
 - title: 'Perspicacia: «Jeús»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Je%C3%BAs/
@@ -25,8 +26,9 @@ relations:
   sources:
   - it-jeus
   - genesis-36
+  - 1-cronicas-1
   reason: 'Gé 36:5, 14: hijo de Esaú.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: kin
   person: oholibama-hija-de-ana
@@ -56,5 +58,9 @@ relations:
   reason: 'Gé 36:6-8: la familia de Esaú se fue a la región montañosa de Seír.'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified
+distinct_from:
+- jeus-hijo-de-bilhan
+- jeus-hijo-de-eshec
+- jeus-hijo-de-simei

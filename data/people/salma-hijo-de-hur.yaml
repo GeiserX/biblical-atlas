@@ -1,0 +1,40 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: salma-hijo-de-hur
+name: Salmá
+names:
+- name: Salmá
+perspicacia: 1200003804#2
+summary: 'Hijo de Hur, de la rama de Caleb en Judá. Fue «padre» de Belén: de él venían los que se asentaron allí, en Netofá
+  y en Atrot-Bet-Joab.'
+reason: Perspicacia «Salmá», núm. 2; 1Cr 2:51, 54.
+sources:
+- it-salma
+- 1-cronicas-2
+links:
+- title: 'Perspicacia: «Salmá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Salm%C3%A1/
+  type: perspicacia
+relations:
+- type: kin
+  person: hur-hijo-de-caleb
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-2
+  reason: '1Cr 2:50, 51: hijo de Hur, el primer hijo de Efrata.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: haref
+  word: brother
+  inferred: false
+  sources:
+  - 1-cronicas-2
+  reason: '1Cr 2:51: Salmá y Haref, hijos de Hur.'
+  checked_on: '2026-10-12'
+  status: verified
+disambiguation: Salmá hijo de Hur, padre de Belén; no Salmón, al que 1Cr 2:11 llama Salmá, el padre de Boaz.
+distinct_from:
+- salmon
+checked_on: '2026-10-12'
+status: verified

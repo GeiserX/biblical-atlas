@@ -5,6 +5,8 @@ names:
 - name: Maacá
 - name: Maacat
   note: Otro nombre del reino según Perspicacia.
+- name: Aram-Maacá
+  note: Así la llama 1Cr 19:6; Perspicacia «Maacá», núm. 10, la da por reino arameo.
 type: kingdom
 lat: 33.258051
 lon: 35.581007
@@ -23,6 +25,7 @@ sources:
 - deuteronomio-3
 - josue-13
 - 2-samuel-10
+- 1-cronicas-19
 links:
 - title: 'Perspicacia: «Maacá»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Maac%C3%A1/
@@ -30,5 +33,5 @@ links:
 - title: Deuteronomio 3 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/deuteronomio/3/
   type: bible
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

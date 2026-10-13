@@ -11,6 +11,7 @@ reason: Perspicacia «Guerá, I», núm. 1; Gé 46:21.
 sources:
 - it-guera-i
 - genesis-46
+- 1-cronicas-8
 links:
 - title: 'Perspicacia: «Guerá, I»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Guer%C3%A1-I/
@@ -26,8 +27,9 @@ relations:
   sources:
   - genesis-46
   - it-guera-i
+  - 1-cronicas-8
   reason: 'Perspicacia «Guerá, I», núm. 1: era hijo de Bela; Gé 46:21 lo cuenta entre los hijos de Benjamín.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: kin
   person: benjamin-hijo-de-jacob
@@ -48,8 +50,10 @@ relations:
     allí antes de morir Jacob.'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified
 distinct_from:
 - guera-padre-de-ehud
 - guera-padre-de-simei
+- guera-de-gueba
+- guera-descendiente-de-bela

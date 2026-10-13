@@ -15,6 +15,8 @@ date:
 disambiguation: Hijo mayor de Aarón y sacerdote; no Nadab el hijo de Jeroboán, rey de Israel.
 distinct_from:
 - nadab-de-israel
+- nadab-hijo-de-samai
+- nadab-hijo-de-jeiel
 summary: Primogénito de Aarón y Eliseba, nacido en Egipto. Con su padre, Abihú y 70 ancianos subió al Sinaí y vio a Dios en
   visión. Fue sacerdote, pero murió sin hijos por ofrecer un fuego ilegítimo.
 reason: 'Perspicacia «Nadab», núm. 1, y «Abihú»; Éx 6:23; 24:1, 9-11; 28:1. Fecha: de la subida al Sinaí (1513 a.e.c., estudio
@@ -32,6 +34,8 @@ sources:
 - levitico-10
 - numeros-3
 - numeros-26
+- 1-cronicas-6
+- 1-cronicas-24
 links:
 - title: 'Perspicacia: «Nadab»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Nadab/
@@ -54,8 +58,10 @@ relations:
   - levitico-10
   - numeros-3
   - numeros-26
+  - 1-cronicas-6
+  - 1-cronicas-24
   reason: 'Éx 6:23: hijo de Aarón y Eliseba.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: kin
   person: eliseba
@@ -79,8 +85,10 @@ relations:
   - levitico-10
   - numeros-3
   - numeros-26
+  - 1-cronicas-6
+  - 1-cronicas-24
   reason: 'Éx 6:23: Abihú, el siguiente hijo de Aarón.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: kin
   person: eleazar-hijo-de-aaron
@@ -92,8 +100,10 @@ relations:
   - levitico-10
   - numeros-3
   - numeros-26
+  - 1-cronicas-6
+  - 1-cronicas-24
   reason: 'Éx 6:23: Eleazar es otro hijo de Aarón.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: kin
   person: itamar
@@ -105,8 +115,10 @@ relations:
   - levitico-10
   - numeros-3
   - numeros-26
+  - 1-cronicas-6
+  - 1-cronicas-24
   reason: 'Éx 6:23: Itamar es otro hijo de Aarón.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: born_in
   place: egipto
@@ -141,5 +153,5 @@ history:
 - date: '2026-09-29'
   change: 'Su muerte en el desierto de Sinaí pasa a deducido: false, porque Nú 3:4 nombra ese desierto.'
   source: numeros-3
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

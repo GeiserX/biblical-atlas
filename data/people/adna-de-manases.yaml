@@ -1,0 +1,32 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: adna-de-manases
+name: Adná
+names:
+- name: Adná
+- name: Adnah
+  note: Otra grafía, en la nota de 1Cr 12:20 y en Perspicacia.
+perspicacia: 1200000108#1
+summary: Jefe de mil de Manasés que dejó a Saúl y se pasó a David cuando iba a Ziclag. Luchó con él contra la banda de saqueadores
+  y fue jefe de su ejército.
+reason: Perspicacia «Adnah», núm. 1; 1Cr 12:19-21.
+sources:
+- it-adnah
+- 1-cronicas-12
+links:
+- title: 'Perspicacia: «Adnah»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Adnah/
+  type: perspicacia
+disambiguation: Adná de Manasés, jefe de mil que se pasó a David (1Cr 12:20); no el general Adnah de Jehosafat ni los Adná
+  de tiempos de Esdras.
+relations:
+- type: tie
+  person: david
+  word: master
+  inferred: false
+  sources:
+  - 1-cronicas-12
+  reason: '1Cr 12:20, 21: se pasó a David, lo ayudó contra los saqueadores y llegó a ser jefe en su ejército.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

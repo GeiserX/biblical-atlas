@@ -1,0 +1,42 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: safat-hijo-de-adlai
+name: Safat
+names:
+- name: Safat
+perspicacia: 1200003950#2
+disambiguation: Safat hijo de Adlái, vaquero mayor de David; no el espía simeonita hijo de Horí ni el padre de Eliseo.
+distinct_from:
+- safat-hijo-de-hori
+- safat-padre-de-eliseo
+- safat-el-gadita
+- safat-hijo-de-semaya
+summary: Hijo de Adlái. Cuidaba las vacas del rey David en las llanuras bajas.
+reason: Perspicacia «Safat», núm. 2; 1Cr 27:29.
+sources:
+- it-safat
+- 1-cronicas-27
+links:
+- title: 'Perspicacia: «Safat»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Safat/
+  type: perspicacia
+relations:
+- type: kin
+  person: adlai
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-27
+  reason: '1Cr 27:29: Safat hijo de Adlái.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: tie
+  person: david
+  word: master
+  inferred: false
+  sources:
+  - 1-cronicas-27
+  reason: '1Cr 27:29, 31: cuidaba las vacas de las llanuras; era uno de los que administraban la hacienda del rey.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

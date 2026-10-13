@@ -1,0 +1,46 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: elcana-descendiente-de-core
+name: Elcaná
+names:
+- name: Elcaná
+perspicacia: null
+disambiguation: Elcaná de la línea de Coré (1Cr 6:23), quizá el hijo de Coré; no es ninguno de los otros Elcaná que numera
+  Perspicacia «Elqaná».
+distinct_from:
+- elcana-el-coreita
+- elcana-hijo-de-jeroham
+- elcana-hijo-de-mahat
+- elcana-padre-de-amasai
+- elcana-padre-de-asa
+- elcana-portero
+summary: Levita de la línea de Coré que nombra 1 Crónicas 6:23. Perspicacia ve posible que sea Elcaná, el hijo de Coré.
+reason: Perspicacia «Elqaná», núm. 1; 1Cr 6:22, 23.
+sources:
+- it-elqana
+- 1-cronicas-6
+links:
+- title: 'Perspicacia: «Elqaná»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Elqan%C3%A1/
+  type: perspicacia
+relations:
+- type: same_as
+  person: elcana-hijo-de-core
+  certainty: possible
+  inferred: true
+  sources:
+  - 1-cronicas-6
+  - it-elqana
+  reason: 'Perspicacia «Elqaná», núm. 1: es posible que el Elcaná de 1Cr 6:23 sea el hijo de Coré.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: core-hijo-de-izhar
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-6
+  reason: 1Cr 6:22, 23 lo pone en la línea de Coré; la nota dice que «hijos» puede ser «descendientes».
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

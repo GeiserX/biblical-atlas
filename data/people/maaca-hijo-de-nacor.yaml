@@ -38,9 +38,14 @@ relations:
   reason: 'Gé 22:24: uno de los cuatro hijos que Reumá, la concubina de Nacor, le dio.'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-30'
+checked_on: '2026-10-12'
 status: verified
 distinct_from:
 - maaca-hija-de-talmai
 - maaca-padre-de-akis
 - maaca-hija-de-uriel
+- maaca-concubina-de-caleb
+- maaca-esposa-de-jeiel
+- maaca-esposa-de-makir
+- maaca-padre-de-hanan
+- maaca-padre-de-sefatias

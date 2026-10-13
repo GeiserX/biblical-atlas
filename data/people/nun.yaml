@@ -9,6 +9,7 @@ reason: Perspicacia «Nun, I»; Éx 33:11 llama a Josué hijo de Nun.
 sources:
 - it-nun
 - exodo-33
+- 1-cronicas-7
 links:
 - title: 'Perspicacia: «Nun, I»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Nun-I/
@@ -16,5 +17,25 @@ links:
 - title: Éxodo 33 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/%C3%89xodo/33/
   type: bible
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified
+relations:
+- type: kin
+  person: elisama-hijo-de-amihud
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-7
+  - it-nun
+  reason: '1Cr 7:26, 27: Nun era hijo de Elisamá; Perspicacia «Nun, I» lo confirma.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: efrain
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-7
+  reason: 1Cr 7:20-27 pone a Nun en la línea de los hijos de Efraín.
+  checked_on: '2026-10-12'
+  status: verified

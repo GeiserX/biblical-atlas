@@ -9,6 +9,7 @@ reason: Perspicacia «Jérah»; Gé 10:26.
 sources:
 - it-jerah
 - genesis-10
+- 1-cronicas-1
 links:
 - title: 'Perspicacia: «Jérah»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/J%C3%A9rah/
@@ -23,8 +24,9 @@ relations:
   inferred: false
   sources:
   - genesis-10
+  - 1-cronicas-1
   reason: Gé 10:26 lo cuenta entre los trece hijos de Joctán.
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

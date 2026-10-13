@@ -1,0 +1,47 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: elifal
+name: Elifal
+names:
+- name: Elifal
+perspicacia: '1200001312'
+summary: Hijo de Ur y uno de los guerreros poderosos de David. Perspicacia ve posible que sea Elifélet hijo de Ahasbái, de
+  la lista paralela de Samuel.
+reason: Perspicacia «Elifal»; 1Cr 11:35.
+sources:
+- it-elifal
+- 1-cronicas-11
+links:
+- title: 'Perspicacia: «Elifal»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Elifal/
+  type: perspicacia
+relations:
+- type: kin
+  person: ur
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-11
+  reason: '1Cr 11:35: Elifal hijo de Ur; Perspicacia «Ur», núm. 1, pone «padre» entre comillas.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: same_as
+  person: elifelet-hijo-de-ahasbai
+  certainty: possible
+  inferred: true
+  sources:
+  - 1-cronicas-11
+  - it-elifal
+  reason: 'Perspicacia «Elifal»: podría ser el Elifélet de la lista paralela de Samuel.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: tie
+  person: david
+  word: master
+  inferred: false
+  sources:
+  - 1-cronicas-11
+  reason: '1Cr 11:35: figura entre los valientes de David.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

@@ -1,0 +1,18 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hazelelponi
+name: Hazelelponí
+names:
+- name: Hazelelponí
+perspicacia: '1200001939'
+summary: Mujer de Judá, hermana de Jezreel, Ismá e Idbás; probablemente hija del fundador de Etam.
+reason: Perspicacia «Hazelelponí»; 1Cr 4:3.
+sources:
+- it-hazelelponi
+- 1-cronicas-4
+links:
+- title: 'Perspicacia: «Hazelelponí»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hazelelpon%C3%AD/
+  type: perspicacia
+relations: []
+checked_on: '2026-10-12'
+status: verified

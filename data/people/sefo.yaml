@@ -9,6 +9,7 @@ reason: Perspicacia «Sefó»; Gé 36:23.
 sources:
 - it-sefo
 - genesis-36
+- 1-cronicas-1
 links:
 - title: 'Perspicacia: «Sefó»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sef%C3%B3/
@@ -24,8 +25,9 @@ relations:
   sources:
   - it-sefo
   - genesis-36
+  - 1-cronicas-1
   reason: 'Gé 36:23: hijo de Sobal.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

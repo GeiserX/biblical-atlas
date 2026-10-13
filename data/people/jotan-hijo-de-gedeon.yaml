@@ -8,6 +8,7 @@ disambiguation: Hijo menor del juez Gedeón; no el rey Jotán de Judá, hijo de 
   de Jahdai.
 distinct_from:
 - jotan
+- jotan-hijo-de-jahdai
 summary: Hijo menor de Gedeón y único que escapó de la matanza de Abimélec. Desde el monte Guerizim advirtió a los de Siquem
   con un relato de árboles que buscan rey, y luego se fue a vivir a Beer.
 reason: Perspicacia «Jotán», núm. 2; Jue 9:5-21, 57.
@@ -51,5 +52,5 @@ relations:
     la matanza.
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

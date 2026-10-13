@@ -1,0 +1,41 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: eliasib-de-tiempos-de-david
+name: Eliasib
+names:
+- name: Eliasib
+perspicacia: 1200001298#1
+disambiguation: El sacerdote de la undécima división (1Cr 24:12); no el descendiente de David ni los demás Eliasib que numera
+  Perspicacia.
+summary: Sacerdote de los hijos de Aarón al que correspondió el undécimo turno cuando David organizó el sacerdocio.
+reason: Perspicacia «Eliasib», núm. 1; 1Cr 24:12.
+sources:
+- it-eliasib
+- 1-cronicas-24
+links:
+- title: 'Perspicacia: «Eliasib»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Eliasib/
+  type: perspicacia
+relations:
+- type: kin
+  person: aaron
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-24
+  - it-eliasib
+  reason: 1Cr 24:1 abre la lista de los descendientes de Aarón repartidos en turnos, y 24:12 da a esta casa el undécimo.
+  checked_on: '2026-10-12'
+  status: verified
+- type: holds_office
+  office: priest
+  inferred: false
+  sources:
+  - 1-cronicas-24
+  - it-eliasib
+  reason: '1Cr 24:12: encabeza una de las casas sacerdotales de 24:4-6; Perspicacia «Eliasib» lo trata como sacerdote.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- eliasib-hijo-de-elioenai

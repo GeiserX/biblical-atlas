@@ -1,0 +1,19 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jehalelel-de-juda
+name: Jehalelel
+names:
+- name: Jehalelel
+perspicacia: 1200002362#1
+disambiguation: Jehalelel de Judá (núm. 1 de Perspicacia); no el levita merarita de los días de Ezequías.
+summary: Judaíta, padre de cuatro hijos que nombra la genealogía de la tribu.
+reason: Perspicacia «Jehalelel»; 1Cr 4:16.
+sources:
+- it-jehalelel
+- 1-cronicas-4
+links:
+- title: 'Perspicacia: «Jehalelel»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jehalelel/
+  type: perspicacia
+relations: []
+checked_on: '2026-10-12'
+status: verified

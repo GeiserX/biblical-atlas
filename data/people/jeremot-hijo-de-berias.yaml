@@ -1,0 +1,40 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jeremot-hijo-de-berias
+name: Jeremot
+names:
+- name: Jeremot
+perspicacia: 1200002423#2
+disambiguation: Jeremot hijo de Berías; no Jeremot de la casa de Béker ni los levitas Jeremot.
+distinct_from:
+- jeremot-de-beker
+- jerimot-hijo-de-heman
+- jeremot-hijo-de-musi
+summary: Benjamita, hijo de Berías y cabeza de una familia que vivió en Jerusalén.
+reason: Perspicacia «Jeremot», núm. 2; 1Cr 8:14, 16, 28.
+sources:
+- it-jeremot
+- 1-cronicas-8
+links:
+- title: 'Perspicacia: «Jeremot»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jeremot/
+  type: perspicacia
+relations:
+- type: kin
+  person: berias-hijo-de-elpaal
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  reason: 1Cr 8:16 lo cuenta entre los hijos de Berías.
+  checked_on: '2026-10-12'
+  status: verified
+- type: lived_in
+  place: jerusalen
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  reason: '1Cr 8:28: los jefes de casas paternas de esta lista vivían en Jerusalén.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
