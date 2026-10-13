@@ -1,0 +1,20 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: igdalias
+name: Igdalías
+names:
+- name: Igdalías
+perspicacia: '1200002141'
+summary: Padre de Hanán. En días de Jehoiaquim un comedor del templo de Jerusalén tomaba nombre de los hijos de su hijo.
+reason: Perspicacia «Igdalías»; Jer 35:4.
+sources:
+- it-igdalias
+- jeremias-35
+links:
+- title: 'Perspicacia: «Igdalías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Igdal%C3%ADas/
+  type: perspicacia
+- title: Jeremías 35 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/35/
+  type: bible
+checked_on: '2026-10-12'
+status: verified

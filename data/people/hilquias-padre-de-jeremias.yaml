@@ -1,0 +1,50 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hilquias-padre-de-jeremias
+name: Hilquías
+names:
+- name: Hilquías
+perspicacia: 1200002026#5
+disambiguation: Sacerdote de Anatot y padre del profeta Jeremías (Perspicacia «Hilquías», núm. 5); no es el sumo sacerdote
+  de Josías ni el padre de Eliaquim.
+summary: 'Sacerdote de Anatot, en Benjamín, y padre del profeta Jeremías. No fue el sumo sacerdote de entonces: Perspicacia
+  lo hace muy probablemente de la línea de Itamar y quizá descendiente de Abiatar.'
+reason: Perspicacia «Hilquías», núm. 5, y «Jeremías», núm. 6, párr. 1; Jer 1:1.
+sources:
+- it-hilquias
+- it-jeremias
+- jeremias-1
+links:
+- title: 'Perspicacia: «Hilquías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hilqu%C3%ADas/
+  type: perspicacia
+- title: Jeremías 1 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/1/
+  type: bible
+relations:
+- type: lived_in
+  place: anatot
+  sources:
+  - jeremias-1
+  - it-hilquias
+  reason: Jer 1:1 lo pone entre los sacerdotes de Anatot, ciudad de Benjamín.
+  inferred: false
+  checked_on: '2026-10-12'
+  status: verified
+- type: holds_office
+  office: priest
+  place: anatot
+  sources:
+  - jeremias-1
+  - it-hilquias
+  - it-jeremias
+  reason: Jer 1:1. Perspicacia «Hilquías», núm. 5, lo llama sacerdote en Anatot, y «Jeremías», núm. 6, aclara que no era el
+    sumo sacerdote.
+  inferred: false
+  checked_on: '2026-10-12'
+  status: verified
+distinct_from:
+- hilquias-hijo-de-salum
+- hilquias-padre-de-eliaquim
+- hilquias-padre-de-guemarias
+checked_on: '2026-10-12'
+status: verified

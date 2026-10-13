@@ -1,0 +1,44 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jeremias-ve-dos-canastas-de-higos
+title: Jehová muestra a Jeremías dos canastas de higos
+date:
+  from: -616
+  to: -606
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 617 y 607 a.e.c. (tiempo narrativo: reinando Sedequías, tras el destierro de Jeconías)'
+narrative_order:
+  series: jeremias
+  order: 24001
+  after: nabucodonosor-hace-rey-a-sedequias
+places:
+- jerusalen
+- babilonia
+people:
+- jeremias-profeta
+present: []
+passages:
+- Jer 24:1-10
+summary: Jehová enseña a Jeremías dos canastas de higos puestas ante el templo, unos muy buenos y otros incomibles. Los buenos
+  son los desterrados con Jeconías, que volverán; los malos, Sedequías y quienes siguen en Judá o en Egipto.
+reason: 'Jer 24:1 lo pone después del destierro de Jeconías (617, estudio 3), y 24:8 con Sedequías en el trono y Jerusalén
+  en pie (cae en 607). Es una visión: las canastas están ante el templo, pero nadie queda situado.'
+sources:
+- jeremias-24
+- si-3
+- it-joaquin
+- it-sedequias
+- si-jeremias
+- it-jeremias-libro
+- it-higuera
+links:
+- title: Jeremías 24 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/24/
+  type: bible
+- title: 'Perspicacia: «Jeremías, Libro de»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jerem%C3%ADas-Libro-de/
+  type: perspicacia
+checked_on: '2026-10-12'
+status: verified

@@ -1,0 +1,42 @@
+# biblical-atlas: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: askenaz
+name: Askenaz
+names:
+- name: Askenaz
+type: kingdom
+lat: null
+lon: null
+precision: zone
+coord_source: null
+coord_url: null
+candidates:
+- name: Entre el mar Negro y el Caspio, al norte del lago Van
+  geometry:
+    type: zone
+    lat: 41.5
+    lon: 44.5
+    radius_km: 250
+  status: favored_level_1
+  sources:
+  - it-askenaz
+  reason: 'Perspicacia «Askenaz», núm. 2: probablemente estaba cerca de Ararat y Miní, quizá al norte, entre el mar Negro
+    y el Caspio.'
+  note: 'Cálculo propio: centro en el Cáucaso del sur, a medio camino entre los dos mares y al norte del lago Van, con 250
+    km de radio.'
+  coord_source: calculation
+  checked_on: '2026-10-12'
+summary: Reino que Jeremías llama, con Ararat y Miní, contra Babilonia. Algunos arqueólogos lo igualan con los escitas del
+  mar Negro y el Caspio. No es la persona Askenaz, hijo de Gómer.
+reason: 'Perspicacia «Askenaz», núm. 2; Jer 51:27. Su sitio no se conoce: una zona candidata según esa entrada.'
+sources:
+- it-askenaz
+- jeremias-51
+links:
+- title: 'Perspicacia: «Askenaz»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Askenaz/
+  type: perspicacia
+- title: Jeremías 51 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/51/
+  type: bible
+checked_on: '2026-10-12'
+status: verified

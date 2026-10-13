@@ -1,0 +1,8330 @@
+{
+ "formato": "biblical-atlas/propuesta-cobertura/1",
+ "libro": "jeremias",
+ "agente": "escritor-jeremias",
+ "leido": "2026-10-12",
+ "cobertura": {},
+ "fuentes": {},
+ "cambios": [
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "hilquias-hijo-de-salum",
+   "campo": "distinct_from",
+   "valores": [
+    "hilquias-padre-de-jeremias"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "hilquias-padre-de-eliaquim",
+   "campo": "distinct_from",
+   "valores": [
+    "hilquias-padre-de-jeremias"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "people",
+   "id": "jeremias-profeta",
+   "campo": "perspicacia",
+   "antes": null,
+   "despues": "1200002421#6"
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jeremias-profeta",
+   "campo": "sources",
+   "valores": [
+    "si-jeremias"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jeremias-profeta",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "hilquias-padre-de-jeremias",
+     "word": "father",
+     "sources": [
+      "jeremias-1",
+      "it-jeremias"
+     ],
+     "reason": "Jer 1:1 lo llama hijo de Hilquías; Perspicacia «Jeremías», núm. 6, lo repite.",
+     "inferred": false,
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    },
+    {
+     "type": "holds_office",
+     "office": "prophet",
+     "date": {
+      "from": -646,
+      "to": -579,
+      "precision": "range",
+      "approx": false,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "647-580 a.e.c."
+     },
+     "sources": [
+      "jeremias-1",
+      "it-jeremias",
+      "si-3",
+      "tnm-tabla"
+     ],
+     "reason": "Jer 1:5: Jehová lo hizo profeta para las naciones; 1:2, 3 sitúan su obra desde el año 13 de Josías. El estudio 3 fecha la comisión en 647 y la Tabla cierra su libro en 580.",
+     "inferred": false,
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    },
+    {
+     "type": "holds_office",
+     "office": "priest",
+     "place": "anatot",
+     "inferred": true,
+     "sources": [
+      "si-jeremias",
+      "jeremias-1"
+     ],
+     "reason": "«Toda Escritura», libro 24, párr. 5: además de profeta fue sacerdote, por nacer hijo del sacerdote Hilquías de Anatot (Jer 1:1).",
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "josias",
+   "campo": "sources",
+   "valores": [
+    "jeremias-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jehoiaquim",
+   "campo": "sources",
+   "valores": [
+    "jeremias-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "sedequias",
+   "campo": "sources",
+   "valores": [
+    "jeremias-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "josias",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "amon-de-juda",
+     "word": "father",
+     "sources": [
+      "jeremias-1"
+     ],
+     "reason": "Jer 1:2 lo llama Josías hijo de Amón, rey de Judá.",
+     "inferred": false,
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jehoiaquim",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "josias",
+     "word": "father",
+     "sources": [
+      "jeremias-1"
+     ],
+     "reason": "Jer 1:3 lo llama Jehoiaquim hijo de Josías, rey de Judá.",
+     "inferred": false,
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "sedequias",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "josias",
+     "word": "father",
+     "sources": [
+      "jeremias-1"
+     ],
+     "reason": "Jer 1:3 lo llama Sedequías hijo de Josías, rey de Judá.",
+     "inferred": false,
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "events",
+   "id": "jeremias-comisionado",
+   "campo": "passages",
+   "antes": [
+    "Jer 1:1-10"
+   ],
+   "despues": [
+    "Jer 1:1-19"
+   ],
+   "historial": {
+    "date": "2026-10-12",
+    "change": "La comisión abarca todo el capítulo 1: las visiones del almendro y de la olla y la promesa de protección son parte de ella, como la divide «Toda Escritura», libro 24, párr. 7.",
+    "source": "si-jeremias"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "events",
+   "id": "jeremias-comisionado",
+   "campo": "summary",
+   "antes": "En el año 13 de Josías, Jehová llama al joven Jeremías y le dice que lo ha hecho profeta a las naciones.",
+   "despues": "En el año 13 de Josías, Jehová llama a Jeremías, que se excusa por su juventud, y lo hace profeta a las naciones. Con un almendro y una olla hirviendo le anuncia el castigo del norte y le promete protección.",
+   "historial": {
+    "date": "2026-10-12",
+    "change": "El resumen añade la excusa de Jeremías, las dos visiones y la promesa de Jehová (Jer 1:6, 11-19).",
+    "source": "jeremias-1"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "events",
+   "id": "jeremias-comisionado",
+   "campo": "reason",
+   "antes": "El estudio 3 y Perspicacia «Jeremías», núm. 6, párr. 7, fechan el llamamiento en 647. El texto no dice dónde ocurrió.",
+   "despues": "El estudio 3 y Perspicacia «Jeremías», núm. 6, párr. 7, fechan el llamamiento en 647; «Toda Escritura», libro 24, párr. 7, trata Jer 1:1-19 como la comisión. El texto no dice dónde fue.",
+   "historial": {
+    "date": "2026-10-12",
+    "change": "La razón cita la fuente que une todo el capítulo 1 en la comisión.",
+    "source": "si-jeremias"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "events",
+   "id": "jeremias-comisionado",
+   "campo": "narrative_order",
+   "antes": null,
+   "despues": {
+    "series": "jeremias",
+    "order": 1001
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "events",
+   "id": "jeremias-comisionado",
+   "campo": "sources",
+   "valores": [
+    "si-jeremias",
+    "jr-2",
+    "w07-jeremias",
+    "it-norte"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "events",
+   "id": "destruccion-de-jerusalen-607",
+   "campo": "passages",
+   "valores": [
+    "Jer 1:3"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jeremias-profeta",
+   "campo": "sources",
+   "valores": [
+    "jeremias-2"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jeremias-profeta",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "lived_in",
+     "place": "jerusalen",
+     "inferred": true,
+     "sources": [
+      "si-jeremias",
+      "jeremias-2"
+     ],
+     "reason": "«Toda Escritura», libro 24, párr. 2: profetizó en Jerusalén unos 40 años. Jer 2:1, 2 lo manda a hablar a oídos de Jerusalén.",
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "events",
+   "id": "exodo",
+   "campo": "passages",
+   "valores": [
+    "Jer 2:6"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "events",
+   "id": "entrada-en-canaan",
+   "campo": "passages",
+   "valores": [
+    "Jer 2:7"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "jerusalen",
+   "campo": "sources",
+   "valores": [
+    "jeremias-2"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "chipre",
+   "campo": "sources",
+   "valores": [
+    "jeremias-2"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "quedar",
+   "campo": "sources",
+   "valores": [
+    "jeremias-2"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "menfis",
+   "campo": "sources",
+   "valores": [
+    "jeremias-2"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "tahpanhes",
+   "campo": "sources",
+   "valores": [
+    "jeremias-2"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "sihor",
+   "campo": "sources",
+   "valores": [
+    "jeremias-2"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jeremias-profeta",
+   "campo": "sources",
+   "valores": [
+    "jeremias-3"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "israel",
+   "campo": "sources",
+   "valores": [
+    "jeremias-3"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "juda",
+   "campo": "sources",
+   "valores": [
+    "jeremias-3"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "jerusalen",
+   "campo": "sources",
+   "valores": [
+    "jeremias-3"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jeremias-profeta",
+   "campo": "sources",
+   "valores": [
+    "jeremias-4"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "juda",
+   "campo": "sources",
+   "valores": [
+    "jeremias-4"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "jerusalen",
+   "campo": "sources",
+   "valores": [
+    "jeremias-4"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "dan",
+   "campo": "sources",
+   "valores": [
+    "jeremias-4"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "region-montanosa-de-efrain",
+   "campo": "sources",
+   "valores": [
+    "jeremias-4"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "region-montanosa-de-efrain",
+   "campo": "names",
+   "valores": [
+    {
+     "name": "Montañas de Efraín",
+     "note": "Forma de Jer 4:15: desde allí, tras Dan, llega la noticia de la invasión que viene del norte."
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jeremias-profeta",
+   "campo": "sources",
+   "valores": [
+    "jeremias-5"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "tecoa",
+   "campo": "sources",
+   "valores": [
+    "jeremias-6"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "reino-de-saba",
+   "campo": "sources",
+   "valores": [
+    "jeremias-6"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jeremias-profeta",
+   "campo": "sources",
+   "valores": [
+    "jeremias-6"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "events",
+   "id": "higuera-maldita-y-limpieza-del-templo",
+   "campo": "passages",
+   "valores": [
+    "Jer 7:11"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "events",
+   "id": "exodo",
+   "campo": "passages",
+   "valores": [
+    "Jer 7:22, 25"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jeremias-profeta",
+   "campo": "sources",
+   "valores": [
+    "jeremias-7"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "monte-moria",
+   "campo": "sources",
+   "valores": [
+    "jeremias-7"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "jerusalen",
+   "campo": "sources",
+   "valores": [
+    "jeremias-7"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "juda",
+   "campo": "sources",
+   "valores": [
+    "jeremias-7"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "silo",
+   "campo": "sources",
+   "valores": [
+    "jeremias-7"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "places",
+   "id": "silo",
+   "campo": "summary",
+   "antes": "Ciudad de Efraín al norte de Betel. Desde los días de Josué guardó el tabernáculo, y desde allí se terminó de repartir la tierra. En tiempos de Elí seguía allí el Arca.",
+   "despues": "Ciudad de Efraín al norte de Betel. Desde Josué guardó el tabernáculo, y allí se acabó de repartir la tierra. Jehová la dejó cuando el Arca cayó en manos filisteas y no volvió; Jeremías la puso como aviso al templo.",
+   "historial": {
+    "date": "2026-10-12",
+    "change": "El resumen añade que Jehová dejó Siló cuando el Arca no volvió, y que Jeremías usó ese abandono como aviso para el templo de Jerusalén (Jer 7:12, 14; Perspicacia «Siló», núm. 2, párr. 8).",
+    "source": "jeremias-7"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "places",
+   "id": "silo",
+   "campo": "reason",
+   "antes": "Perspicacia «Siló», núm. 2, párr. 5, 6 y 8; Jos 18:1 y 1Sa 4:3, 4. OpenBible: solo el punto.",
+   "despues": "Perspicacia «Siló», núm. 2, párr. 5, 6 y 8; Jos 18:1, 1Sa 4:3, 4 y Jer 7:12, 14. OpenBible: solo el punto.",
+   "historial": {
+    "date": "2026-10-12",
+    "change": "La razón cita Jer 7:12, 14, de donde sale el aviso del resumen.",
+    "source": "jeremias-7"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "valle-de-hinon",
+   "campo": "sources",
+   "valores": [
+    "jeremias-7"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "places",
+   "id": "valle-de-hinon",
+   "campo": "names",
+   "antes": [
+    {
+     "name": "Valle de Hinón"
+    },
+    {
+     "name": "Valle del Hijo de Hinón",
+     "note": "Otra forma del nombre (Jos 15:8)."
+    },
+    {
+     "name": "Valle de los Hijos de Hinón",
+     "note": "Forma que da la TNM en 2Re 23:10."
+    },
+    {
+     "name": "Gehena",
+     "note": "Forma griega del nombre hebreo. Jesús la usa como imagen de la destrucción total (Mt 5:22, 29, 30)."
+    },
+    {
+     "name": "Tófet",
+     "note": "Lugar del valle, quizá cerca de la Puerta de los Tiestos, donde se sacrificaba a niños en el fuego; Josías lo inutilizó (2Re 23:10; Perspicacia «Tófet»)."
+    }
+   ],
+   "despues": [
+    {
+     "name": "Valle de Hinón"
+    },
+    {
+     "name": "Valle del Hijo de Hinón",
+     "note": "Otra forma del nombre (Jos 15:8)."
+    },
+    {
+     "name": "Valle de los Hijos de Hinón",
+     "note": "Forma que da la TNM en 2Re 23:10."
+    },
+    {
+     "name": "Gehena",
+     "note": "Forma griega del nombre hebreo. Jesús la usa como imagen de la destrucción total (Mt 5:22, 29, 30)."
+    },
+    {
+     "name": "Tófet",
+     "note": "Lugar del valle, probablemente cerca de la Puerta de los Tiestos, donde se sacrificaba a niños en el fuego; Josías lo inutilizó (2Re 23:10; Jer 19:2, 6; Perspicacia «Tófet»)."
+    },
+    {
+     "name": "Valle de la Matanza",
+     "note": "Nombre que Jehová anuncia para el valle por la cantidad de muertos que dejará su juicio (Jer 7:32; 19:6; Perspicacia «Hinón, Valle de»)."
+    }
+   ],
+   "historial": {
+    "date": "2026-10-12",
+    "change": "Perspicacia «Tófet» pone Tófet «probablemente» cerca de la Puerta de los Tiestos, no «quizá»; se añade el nombre «Valle de la Matanza» (Jer 7:32).",
+    "source": "jeremias-7"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jeremias-profeta",
+   "campo": "sources",
+   "valores": [
+    "jeremias-8"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "jerusalen",
+   "campo": "sources",
+   "valores": [
+    "jeremias-8"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "dan",
+   "campo": "sources",
+   "valores": [
+    "jeremias-8"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "places",
+   "id": "dan",
+   "campo": "summary",
+   "antes": "Ciudad del extremo norte de Israel, al pie del Antilíbano. Los danitas le pusieron el nombre de su antepasado; Jeroboán colocó allí el segundo becerro de oro.",
+   "despues": "Ciudad del extremo norte de Israel, al pie del Antilíbano, de las primeras en sufrir las invasiones del norte. Los danitas le pusieron el nombre de su antepasado; Jeroboán colocó allí el segundo becerro de oro.",
+   "historial": {
+    "date": "2026-10-12",
+    "change": "El resumen añade que, por estar en el extremo norte, Dan era de las primeras ciudades atacadas desde el norte, como reflejan Jer 4:15 y 8:16 (Perspicacia «Dan», núm. 3).",
+    "source": "jeremias-8"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "places",
+   "id": "dan",
+   "campo": "reason",
+   "antes": "Perspicacia «Dan», núm. 3, párr. 5, 7 y 8: Tell el-Qadi (Tel Dan), donde nacen dos manantiales del Jordán; 1Re 12:29. OpenBible: solo el punto.",
+   "despues": "Perspicacia «Dan», núm. 3, párr. 5, 7 y 8: Tell el-Qadi (Tel Dan), donde nacen dos manantiales del Jordán; 1Re 12:29. Su último párrafo la pone expuesta a los ataques del norte (Jer 4:15; 8:16). OpenBible: solo el punto.",
+   "historial": {
+    "date": "2026-10-12",
+    "change": "La razón cita el párrafo de Perspicacia y los versículos de donde sale lo nuevo del resumen.",
+    "source": "jeremias-8"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "galaad",
+   "campo": "sources",
+   "valores": [
+    "jeremias-8"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "places",
+   "id": "galaad",
+   "campo": "summary",
+   "antes": "Región montañosa al este del Jordán, a ambos lados del valle del Jaboq. Allí alcanzó Labán a Jacob, y los dos pactaron la paz junto a un montón de piedras que llamaron Galeed.",
+   "despues": "Región montañosa al este del Jordán, a ambos lados del valle del Jaboq, famosa por su bálsamo. Allí alcanzó Labán a Jacob, y los dos pactaron la paz junto a un montón de piedras que llamaron Galeed.",
+   "historial": {
+    "date": "2026-10-12",
+    "change": "El resumen añade el bálsamo curativo por el que se conocía la región (Jer 8:22; Perspicacia «Galaad», núm. 4, párr. 7).",
+    "source": "jeremias-8"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "places",
+   "id": "galaad",
+   "campo": "reason",
+   "antes": "Perspicacia «Galaad», núm. 4, párr. 5, y «Galeed», párr. 2 a 4; Gé 31:21-25, 47-49. Coordenada de OpenBible: solo tomamos el punto.",
+   "despues": "Perspicacia «Galaad», núm. 4, párr. 5 y 7, y «Galeed», párr. 2 a 4; Gé 31:21-25, 47-49; Jer 8:22. Coordenada de OpenBible: solo tomamos el punto.",
+   "historial": {
+    "date": "2026-10-12",
+    "change": "La razón cita el párrafo 7 de «Galaad» y Jer 8:22, de donde sale el bálsamo del resumen.",
+    "source": "jeremias-8"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jeremias-profeta",
+   "campo": "sources",
+   "valores": [
+    "jeremias-9"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "jerusalen",
+   "campo": "sources",
+   "valores": [
+    "jeremias-9"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "juda",
+   "campo": "sources",
+   "valores": [
+    "jeremias-9"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "egipto",
+   "campo": "sources",
+   "valores": [
+    "jeremias-9"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "edom",
+   "campo": "sources",
+   "valores": [
+    "jeremias-9"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "ammon",
+   "campo": "sources",
+   "valores": [
+    "jeremias-9"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "moab",
+   "campo": "sources",
+   "valores": [
+    "jeremias-9"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jeremias-profeta",
+   "campo": "sources",
+   "valores": [
+    "jeremias-10",
+    "si-jeremias"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "tarsis",
+   "campo": "sources",
+   "valores": [
+    "jeremias-10"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "juda",
+   "campo": "sources",
+   "valores": [
+    "jeremias-10"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "events",
+   "id": "exodo",
+   "campo": "passages",
+   "valores": [
+    "Jer 11:4, 7"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jeremias-profeta",
+   "campo": "sources",
+   "valores": [
+    "jeremias-11"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jeremias-profeta",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "lived_in",
+     "place": "anatot",
+     "inferred": false,
+     "sources": [
+      "jeremias-11",
+      "it-anatot"
+     ],
+     "reason": "Jer 11:21-23: quienes quieren matarlo son los hombres de Anatot; Perspicacia «Anatot», núm. 3, dice que Jeremías era de allí.",
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    },
+    {
+     "type": "holds_office",
+     "office": "prophet",
+     "date": {
+      "from": -646,
+      "to": -579,
+      "precision": "range",
+      "approx": false,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "647-580 a.e.c."
+     },
+     "inferred": false,
+     "sources": [
+      "jeremias-11",
+      "it-jeremias",
+      "si-3",
+      "tnm-tabla"
+     ],
+     "reason": "Jer 11:21: los de Anatot le exigen que deje de profetizar en nombre de Jehová. Perspicacia «Jeremías», núm. 6, lo hace profeta desde 647; la Tabla cierra su libro en 580.",
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "anatot",
+   "campo": "sources",
+   "valores": [
+    "jeremias-11"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "juda",
+   "campo": "sources",
+   "valores": [
+    "jeremias-11"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "jerusalen",
+   "campo": "sources",
+   "valores": [
+    "jeremias-11"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jeremias-profeta",
+   "campo": "sources",
+   "valores": [
+    "jeremias-12"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jeremias-profeta",
+   "campo": "sources",
+   "valores": [
+    "jeremias-13"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "jerusalen",
+   "campo": "sources",
+   "valores": [
+    "jeremias-13"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "juda",
+   "campo": "sources",
+   "valores": [
+    "jeremias-13"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "journeys",
+   "id": "jeremias-al-eufrates",
+   "campo": "sources",
+   "valores": [
+    "jr-4",
+    "mwb17-03-israel-olvido-a-jehova"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "journeys",
+   "id": "jeremias-al-eufrates",
+   "campo": "stops",
+   "antes": [
+    {
+     "order": 1,
+     "place": "jerusalen",
+     "reference": "Jer 13:1-3",
+     "date": {
+      "from": -646,
+      "to": -606,
+      "precision": "range",
+      "approx": true,
+      "type": "narrative",
+      "chronology": "tnm",
+      "text": "entre 647 y 607 a.e.c. (tiempo narrativo: dentro del ministerio de Jeremías)"
+     },
+     "note": null,
+     "reason": "El texto no nombra la salida. Perspicacia («Éufrates») cuenta el viaje desde Jerusalén: regla 2a, deducción de jw.org.",
+     "sources": [
+      "jeremias-13",
+      "it-eufrates"
+     ],
+     "checked_on": "2026-09-30",
+     "status": "pending"
+    },
+    {
+     "order": 2,
+     "place": "rio-eufrates",
+     "reference": "Jer 13:4-7",
+     "date": {
+      "from": -646,
+      "to": -606,
+      "precision": "range",
+      "approx": true,
+      "type": "narrative",
+      "chronology": "tnm",
+      "text": "entre 647 y 607 a.e.c. (tiempo narrativo: dentro del ministerio de Jeremías)"
+     },
+     "note": "Fue dos veces, a esconderlo y a sacarlo. Perspicacia descarta la lectura Pará, junto a Anatot, y piensa en el tramo del río al sur de Carquemis, a más de 500 km.",
+     "reason": "Jer 13:4-7: lo esconde junto al Éufrates y vuelve allí a buscarlo. Perspicacia («Éufrates») defiende que es el río. Fecha narrativa del ministerio de Jeremías.",
+     "sources": [
+      "jeremias-13",
+      "it-eufrates"
+     ],
+     "checked_on": "2026-09-30",
+     "status": "verified"
+    }
+   ],
+   "despues": [
+    {
+     "order": 1,
+     "place": "jerusalen",
+     "reference": "Jer 13:1-3",
+     "date": {
+      "from": -646,
+      "to": -606,
+      "precision": "range",
+      "approx": true,
+      "type": "narrative",
+      "chronology": "tnm",
+      "text": "entre 647 y 607 a.e.c. (tiempo narrativo: dentro del ministerio de Jeremías)"
+     },
+     "note": null,
+     "reason": "El texto no nombra la salida. «Dios nos habla mediante Jeremías», cap. 4, párr. 17, y la guía de marzo de 2017 lo hacen volver a Jerusalén tras esconderlo; Perspicacia «Éufrates» mide el viaje desde allí.",
+     "sources": [
+      "jeremias-13",
+      "it-eufrates",
+      "jr-4",
+      "mwb17-03-israel-olvido-a-jehova"
+     ],
+     "checked_on": "2026-10-12",
+     "status": "pending"
+    },
+    {
+     "order": 2,
+     "place": "rio-eufrates",
+     "reference": "Jer 13:4, 5",
+     "date": {
+      "from": -646,
+      "to": -606,
+      "precision": "range",
+      "approx": true,
+      "type": "narrative",
+      "chronology": "tnm",
+      "text": "entre 647 y 607 a.e.c. (tiempo narrativo: dentro del ministerio de Jeremías)"
+     },
+     "note": "Primer viaje: lo esconde en la grieta de una roca. Perspicacia descarta que sea el pueblo de Pará, junto a Anatot; solo calcula más de 500 km hasta el punto más próximo del río, al sur de Carquemis.",
+     "reason": "Jer 13:4, 5: va al Éufrates y esconde allí el cinturón. Perspicacia «Éufrates» defiende que es el río. Fecha narrativa de la obra de Jeremías.",
+     "sources": [
+      "jeremias-13",
+      "it-eufrates",
+      "jr-4"
+     ],
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    },
+    {
+     "order": 3,
+     "place": "jerusalen",
+     "reference": "Jer 13:6",
+     "date": {
+      "from": -646,
+      "to": -606,
+      "precision": "range",
+      "approx": true,
+      "type": "narrative",
+      "chronology": "tnm",
+      "text": "entre 647 y 607 a.e.c. (tiempo narrativo: dentro del ministerio de Jeremías)"
+     },
+     "note": "Vuelve sin el cinturón y pasan muchos días hasta la segunda orden.",
+     "reason": "El texto no cuenta la vuelta, pero 13:6 pide un segundo viaje. «Dios nos habla mediante Jeremías», cap. 4, párr. 17 y 18, dice que regresó a Jerusalén entre uno y otro: deducción de jw.org.",
+     "sources": [
+      "jeremias-13",
+      "jr-4",
+      "mwb17-03-israel-olvido-a-jehova"
+     ],
+     "checked_on": "2026-10-12",
+     "status": "pending"
+    },
+    {
+     "order": 4,
+     "place": "rio-eufrates",
+     "reference": "Jer 13:6, 7",
+     "date": {
+      "from": -646,
+      "to": -606,
+      "precision": "range",
+      "approx": true,
+      "type": "narrative",
+      "chronology": "tnm",
+      "text": "entre 647 y 607 a.e.c. (tiempo narrativo: dentro del ministerio de Jeremías)"
+     },
+     "note": "Segundo viaje: desentierra el cinturón y lo encuentra echado a perder.",
+     "reason": "Jer 13:6, 7: Jehová lo manda de nuevo al Éufrates y saca el cinturón del escondite. «Dios nos habla mediante Jeremías», cap. 4, párr. 18.",
+     "sources": [
+      "jeremias-13",
+      "it-eufrates",
+      "jr-4"
+     ],
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    }
+   ],
+   "historial": {
+    "date": "2026-10-12",
+    "change": "Jer 13:6, 7 cuenta un segundo viaje: se añaden la vuelta a Jerusalén, que deduce jw.org, y la segunda llegada al Éufrates. La parada 2 ya no dice que Perspicacia sitúe el escondite al sur de Carquemis.",
+    "source": "jeremias-13"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "places",
+   "id": "rio-eufrates",
+   "campo": "coord_note",
+   "antes": "Cálculo propio: mitad, sobre el cauce actual de Natural Earth, de los 122 km entre Carquemis y Tifsá. Dista 47 km de Carquemis y 55 de Tifsá. Perspicacia sitúa a Jeremías al sur de Carquemis; Tifsá como final es nuestro.",
+   "despues": "Cálculo propio: mitad, sobre el cauce actual de Natural Earth, de los 122 km entre Carquemis (a 47 km) y Tifsá (a 55). Perspicacia mide el viaje de Jeremías hasta el punto del río más próximo, al sur de Carquemis.",
+   "historial": {
+    "date": "2026-10-12",
+    "change": "Perspicacia «Éufrates» no pone a Jeremías al sur de Carquemis: solo mide hasta allí la distancia mínima y ve posible que escondiera el cinturón donde cruzaron los babilonios.",
+    "source": "it-eufrates"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jeremias-profeta",
+   "campo": "sources",
+   "valores": [
+    "jeremias-14"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "jerusalen",
+   "campo": "sources",
+   "valores": [
+    "jeremias-14"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "juda",
+   "campo": "sources",
+   "valores": [
+    "jeremias-14"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jeremias-profeta",
+   "campo": "sources",
+   "valores": [
+    "jeremias-15"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jeremias-profeta",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "holds_office",
+     "office": "prophet",
+     "date": {
+      "from": -646,
+      "to": -579,
+      "precision": "range",
+      "approx": false,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "647-580 a.e.c."
+     },
+     "inferred": false,
+     "sources": [
+      "jeremias-15",
+      "it-jeremias",
+      "si-3",
+      "tnm-tabla"
+     ],
+     "reason": "Jer 15:19: Jehová le promete que será como su boca, su portavoz según la nota. Perspicacia «Jeremías», núm. 6, lo llama profeta desde 647; la Tabla cierra su libro en 580.",
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "manases-de-juda",
+   "campo": "sources",
+   "valores": [
+    "jeremias-15"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "manases-de-juda",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "ezequias",
+     "word": "father",
+     "inferred": false,
+     "sources": [
+      "jeremias-15"
+     ],
+     "reason": "Jer 15:4 lo llama Manasés hijo de Ezequías, rey de Judá.",
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "jerusalen",
+   "campo": "sources",
+   "valores": [
+    "jeremias-15"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jeremias-profeta",
+   "campo": "sources",
+   "valores": [
+    "jeremias-16"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "events",
+   "id": "exodo",
+   "campo": "passages",
+   "valores": [
+    "Jer 16:14"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jeremias-profeta",
+   "campo": "sources",
+   "valores": [
+    "jeremias-17"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "juda",
+   "campo": "sources",
+   "valores": [
+    "jeremias-17"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "jerusalen",
+   "campo": "sources",
+   "valores": [
+    "jeremias-17"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "jerusalen",
+   "campo": "names",
+   "valores": [
+    {
+     "name": "Puerta de los hijos del pueblo",
+     "note": "Puerta por la que entraban y salían los reyes de Judá; allí debía empezar Jeremías su aviso sobre el sábado (Jer 17:19). jw.org no dice cuál era."
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jeremias-profeta",
+   "campo": "sources",
+   "valores": [
+    "jeremias-18"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "juda",
+   "campo": "sources",
+   "valores": [
+    "jeremias-18"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "jerusalen",
+   "campo": "sources",
+   "valores": [
+    "jeremias-18"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jeremias-profeta",
+   "campo": "sources",
+   "valores": [
+    "jeremias-19"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "valle-de-hinon",
+   "campo": "sources",
+   "valores": [
+    "jeremias-19"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "jerusalen",
+   "campo": "sources",
+   "valores": [
+    "jeremias-19",
+    "it-puerta"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "jerusalen",
+   "campo": "names",
+   "valores": [
+    {
+     "name": "Puerta de los Tiestos",
+     "note": "Puerta del ángulo sudeste de la muralla, abierta al valle de Hinón cerca de Tófet; Perspicacia «Puerta» la iguala con la Puerta de los Montones de Ceniza de Nehemías (Jer 19:2; Ne 2:13)."
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "monte-moria",
+   "campo": "sources",
+   "valores": [
+    "jeremias-19"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jeremias-profeta",
+   "campo": "sources",
+   "valores": [
+    "jeremias-20"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jeremias-profeta",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "holds_office",
+     "office": "prophet",
+     "date": {
+      "from": -646,
+      "to": -579,
+      "precision": "range",
+      "approx": false,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "647-580 a.e.c."
+     },
+     "inferred": false,
+     "sources": [
+      "jeremias-20",
+      "it-jeremias",
+      "si-3",
+      "tnm-tabla"
+     ],
+     "reason": "Jer 20:2 lo llama «el profeta Jeremías». Perspicacia «Jeremías», núm. 6, lo hace profeta desde 647; la Tabla cierra su libro en 580.",
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "monte-moria",
+   "campo": "sources",
+   "valores": [
+    "jeremias-20",
+    "it-puerta"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "monte-moria",
+   "campo": "names",
+   "valores": [
+    {
+     "name": "Puerta Superior de Benjamín",
+     "note": "Puerta del templo, probablemente hacia el patio interior por el norte, donde estaba el cepo en que Pasjur puso a Jeremías (Jer 20:2; Perspicacia «Puerta»). No es la Puerta de Benjamín de la muralla."
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "sofonias-hijo-de-maaseya",
+   "campo": "sources",
+   "valores": [
+    "jeremias-21"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "sofonias-hijo-de-maaseya",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "maaseya-padre-de-sofonias",
+     "word": "father",
+     "inferred": false,
+     "sources": [
+      "jeremias-21",
+      "it-maaseya"
+     ],
+     "reason": "Jer 21:1 lo llama hijo de Maaseya.",
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    },
+    {
+     "type": "holds_office",
+     "place": "jerusalen",
+     "office": "priest",
+     "inferred": false,
+     "sources": [
+      "jeremias-21"
+     ],
+     "reason": "Jer 21:1 lo llama el sacerdote; Sedequías lo envía a Jeremías durante el sitio.",
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "sedequias",
+   "campo": "sources",
+   "valores": [
+    "jeremias-21"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "nabucodonosor-ii",
+   "campo": "sources",
+   "valores": [
+    "jeremias-21"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "nabucodonosor-ii",
+   "campo": "names",
+   "valores": [
+    {
+     "name": "Nabucodorosor",
+     "note": "Variante de la grafía que dan las notas de Jer 21:2, 7; 24:1; 25:1, 9 y 35:11, y el título de su artículo en Perspicacia."
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jeremias-profeta",
+   "campo": "sources",
+   "valores": [
+    "jeremias-21",
+    "si-jeremias"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jeremias-profeta",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "lived_in",
+     "place": "jerusalen",
+     "inferred": true,
+     "sources": [
+      "si-jeremias",
+      "jeremias-21",
+      "jeremias-22"
+     ],
+     "reason": "«Toda Escritura», libro 24, párr. 2: tenía que profetizar en Jerusalén durante 40 años. Jer 21:1-3 y 22:1 lo muestran allí con Sedequías y con Jehoiaquim.",
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "jerusalen",
+   "campo": "sources",
+   "valores": [
+    "jeremias-21"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jeremias-profeta",
+   "campo": "sources",
+   "valores": [
+    "jeremias-22"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "jerusalen",
+   "campo": "sources",
+   "valores": [
+    "jeremias-22"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jehoacaz-de-juda",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "josias",
+     "word": "father",
+     "inferred": false,
+     "sources": [
+      "jeremias-22"
+     ],
+     "reason": "Jer 22:11: Salum hijo de Josías.",
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    },
+    {
+     "type": "succeeds",
+     "person": "josias",
+     "office": "king",
+     "inferred": false,
+     "sources": [
+      "jeremias-22"
+     ],
+     "reason": "Jer 22:11: reinaba en lugar de su padre Josías.",
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    },
+    {
+     "type": "died_in",
+     "place": "egipto",
+     "inferred": false,
+     "sources": [
+      "jeremias-22"
+     ],
+     "reason": "Jer 22:11, 12: morirá en el lugar adonde lo desterraron, sin volver a ver su tierra.",
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jehoiaquim",
+   "campo": "sources",
+   "valores": [
+    "jeremias-22",
+    "jr-2"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jehoiaquim",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "josias",
+     "word": "father",
+     "inferred": false,
+     "sources": [
+      "jeremias-22"
+     ],
+     "reason": "Jer 22:18: Jehoiaquim hijo de Josías.",
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    },
+    {
+     "type": "died_in",
+     "place": "jerusalen",
+     "inferred": true,
+     "sources": [
+      "it-jehoiaquim",
+      "jr-2",
+      "jeremias-22"
+     ],
+     "reason": "Perspicacia «Jehoiaquim», párr. 6, y jr, cap. 2: al parecer murió durante el sitio de la ciudad. Jer 22:19 anuncia que tirarían su cadáver fuera de las puertas de Jerusalén.",
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "joaquin",
+   "campo": "sources",
+   "valores": [
+    "jeremias-22",
+    "si-jeremias"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "joaquin",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "jehoiaquim",
+     "word": "father",
+     "inferred": false,
+     "sources": [
+      "jeremias-22"
+     ],
+     "reason": "Jer 22:24: Conías hijo de Jehoiaquim.",
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    },
+    {
+     "type": "kin",
+     "person": "nehusta",
+     "word": "mother",
+     "inferred": false,
+     "sources": [
+      "jeremias-22"
+     ],
+     "reason": "Jer 22:26 nombra a su madre, la que lo dio a luz; 2Re 24:8 la llama Nehustá.",
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    },
+    {
+     "type": "lived_in",
+     "place": "babilonia",
+     "inferred": false,
+     "sources": [
+      "jeremias-22"
+     ],
+     "reason": "Jer 22:25, 26: será entregado al rey de Babilonia y arrojado a otra tierra.",
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    },
+    {
+     "type": "tie",
+     "person": "nabucodonosor-ii",
+     "word": "custodian",
+     "inferred": false,
+     "sources": [
+      "jeremias-22"
+     ],
+     "reason": "Jer 22:25: Jehová lo entregará en manos de Nabucodonosor y de los caldeos.",
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "nehusta",
+   "campo": "sources",
+   "valores": [
+    "jeremias-22"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "nehusta",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "lived_in",
+     "place": "babilonia",
+     "inferred": false,
+     "sources": [
+      "jeremias-22"
+     ],
+     "reason": "Jer 22:26: la arrojarán a otra tierra junto con su hijo.",
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    },
+    {
+     "type": "died_in",
+     "place": "babilonia",
+     "inferred": true,
+     "sources": [
+      "jeremias-22",
+      "it-nehusta"
+     ],
+     "reason": "Jer 22:26: madre e hijo morirán en la tierra adonde los arrojen. Perspicacia «Nehustá» cree que se quedó en Babilonia el resto de su vida.",
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "abarim",
+   "campo": "sources",
+   "valores": [
+    "jeremias-22"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "places",
+   "id": "abarim",
+   "campo": "summary",
+   "antes": "Cordillera al este del mar Muerto. Su parte norte, frente a Jericó, estaba junto al último campamento de Israel; desde ella, en el monte Nebo, Moisés debía mirar la tierra prometida.",
+   "despues": "Cordillera al este del mar Muerto; en Jer 22:20, probablemente la región de esa orilla. Su parte norte, frente a Jericó, lindaba con el último campamento de Israel; desde el monte Nebo, Moisés debía mirar la tierra prometida.",
+   "historial": {
+    "date": "2026-10-12",
+    "change": "El resumen solo daba la cordillera; Perspicacia «Abarim», párr. 1, dice que en Jer 22:20 el nombre designa probablemente una región al este del mar Muerto.",
+    "source": "jeremias-22"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "places",
+   "id": "abarim",
+   "campo": "reason",
+   "antes": "Perspicacia «Abarim», párr. 2 a 5; Nú 27:12. Coordenada de OpenBible: solo tomamos el punto.",
+   "despues": "Perspicacia «Abarim», párr. 1 a 5; Nú 27:12 y Jer 22:20. Coordenada de OpenBible: solo tomamos el punto.",
+   "historial": {
+    "date": "2026-10-12",
+    "change": "La razón cita ahora el párrafo 1 de Perspicacia «Abarim» y Jer 22:20.",
+    "source": "jeremias-22"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jeremias-profeta",
+   "campo": "sources",
+   "valores": [
+    "jeremias-23"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "jerusalen",
+   "campo": "sources",
+   "valores": [
+    "jeremias-23"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "events",
+   "id": "exodo",
+   "campo": "passages",
+   "valores": [
+    "Jer 23:7"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "events",
+   "id": "nabucodonosor-se-lleva-a-joaquin-a-babilonia",
+   "campo": "passages",
+   "valores": [
+    "Jer 24:1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "events",
+   "id": "nabucodonosor-se-lleva-a-joaquin-a-babilonia",
+   "campo": "sources",
+   "valores": [
+    "jeremias-24"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jeremias-profeta",
+   "campo": "sources",
+   "valores": [
+    "jeremias-24"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "joaquin",
+   "campo": "sources",
+   "valores": [
+    "jeremias-24"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "joaquin",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "jehoiaquim",
+     "word": "father",
+     "sources": [
+      "jeremias-24"
+     ],
+     "reason": "Jer 24:1 lo llama Jeconías hijo de Jehoiaquim.",
+     "inferred": false,
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    },
+    {
+     "type": "lived_in",
+     "place": "babilonia",
+     "sources": [
+      "jeremias-24"
+     ],
+     "reason": "Jer 24:1: Nabucodonosor lo llevó desterrado de Jerusalén a Babilonia.",
+     "inferred": false,
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    },
+    {
+     "type": "lived_in",
+     "place": "jerusalen",
+     "sources": [
+      "jeremias-24"
+     ],
+     "reason": "Jer 24:1: se lo llevaron desde Jerusalén, donde reinaba.",
+     "inferred": false,
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    },
+    {
+     "type": "tie",
+     "person": "nabucodonosor-ii",
+     "word": "custodian",
+     "sources": [
+      "jeremias-24"
+     ],
+     "reason": "Jer 24:1: Nabucodonosor se lo llevó al destierro.",
+     "inferred": false,
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "nabucodonosor-ii",
+   "campo": "sources",
+   "valores": [
+    "jeremias-24"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "sedequias",
+   "campo": "sources",
+   "valores": [
+    "jeremias-24"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "jerusalen",
+   "campo": "sources",
+   "valores": [
+    "jeremias-24"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "babilonia",
+   "campo": "sources",
+   "valores": [
+    "jeremias-24"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "caldea",
+   "campo": "sources",
+   "valores": [
+    "jeremias-24"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jeremias-profeta",
+   "campo": "sources",
+   "valores": [
+    "jeremias-25"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jeremias-profeta",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "holds_office",
+     "office": "prophet",
+     "date": {
+      "from": -646,
+      "to": -579,
+      "precision": "range",
+      "approx": false,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "647-580 a.e.c."
+     },
+     "sources": [
+      "jeremias-25"
+     ],
+     "reason": "Jer 25:2 lo llama el profeta Jeremías, y 25:3 cuenta 23 años de mensajes desde el año 13 de Josías.",
+     "inferred": false,
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jehoiaquim",
+   "campo": "sources",
+   "valores": [
+    "jeremias-25"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jehoiaquim",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "josias",
+     "word": "father",
+     "sources": [
+      "jeremias-25"
+     ],
+     "reason": "Jer 25:1: Jehoiaquim hijo de Josías, rey de Judá.",
+     "inferred": false,
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "josias",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "amon-de-juda",
+     "word": "father",
+     "sources": [
+      "jeremias-25"
+     ],
+     "reason": "Jer 25:3: Josías hijo de Amón, rey de Judá.",
+     "inferred": false,
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "nabucodonosor-ii",
+   "campo": "sources",
+   "valores": [
+    "jeremias-25"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "dedan",
+   "campo": "sources",
+   "valores": [
+    "jeremias-25"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "semaya-profeta",
+   "campo": "distinct_from",
+   "valores": [
+    "semaya-padre-de-uriya"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "events",
+   "id": "miqueas-profetiza-contra-samaria-y-jerusalen",
+   "campo": "passages",
+   "valores": [
+    "Jer 26:18"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "events",
+   "id": "miqueas-profetiza-contra-samaria-y-jerusalen",
+   "campo": "sources",
+   "valores": [
+    "jeremias-26"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "people",
+   "id": "uriya-hijo-de-semaya",
+   "campo": "date",
+   "antes": {
+    "from": -627,
+    "to": -617,
+    "precision": "range",
+    "approx": true,
+    "type": "narrative",
+    "chronology": "tnm",
+    "text": "entre 628 y 618 a.e.c. (tiempo narrativo: reinado de Jehoiaquim)"
+   },
+   "despues": {
+    "from": -627,
+    "to": -627,
+    "precision": "year",
+    "approx": true,
+    "type": "anchored",
+    "chronology": "tnm",
+    "text": "c. 628 a.e.c. (al principio del reinado de Jehoiaquim)"
+   },
+   "historial": {
+    "date": "2026-10-12",
+    "change": "La fecha abarcaba todo el reinado de Jehoiaquim; Perspicacia «Jehoiaquim», párr. 3, y Jer 26:20-24 ponen su muerte antes del juicio de Jeremías, al principio del reinado.",
+    "source": "jeremias-26"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "people",
+   "id": "uriya-hijo-de-semaya",
+   "campo": "relations",
+   "antes": [
+    {
+     "type": "holds_office",
+     "office": "prophet",
+     "date": {
+      "from": -627,
+      "to": -617,
+      "precision": "range",
+      "approx": true,
+      "type": "narrative",
+      "chronology": "tnm",
+      "text": "entre 628 y 618 a.e.c. (tiempo narrativo: reinado de Jehoiaquim)"
+     },
+     "inferred": false,
+     "sources": [
+      "jeremias-26",
+      "it-uriya"
+     ],
+     "reason": "Jer 26:20: profetizaba en nombre de Jehová en los días de Jehoiaquim.",
+     "checked_on": "2026-09-30",
+     "status": "verified"
+    },
+    {
+     "type": "lived_in",
+     "place": "quiryat-jearim",
+     "inferred": false,
+     "sources": [
+      "jeremias-26",
+      "it-uriya"
+     ],
+     "reason": "Jer 26:20 dice que era de Quiryat-Jearim.",
+     "checked_on": "2026-09-30",
+     "status": "verified"
+    }
+   ],
+   "despues": [
+    {
+     "type": "holds_office",
+     "office": "prophet",
+     "date": {
+      "from": -627,
+      "to": -627,
+      "precision": "year",
+      "approx": true,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "c. 628 a.e.c. (al principio del reinado de Jehoiaquim)"
+     },
+     "inferred": false,
+     "sources": [
+      "jeremias-26",
+      "it-uriya",
+      "it-jehoiaquim"
+     ],
+     "reason": "Jer 26:20: profetizaba en nombre de Jehová contra Jerusalén. Perspicacia «Jehoiaquim», párr. 3, pone su muerte antes del juicio de Jeremías, al principio del reinado.",
+     "status": "verified"
+    },
+    {
+     "type": "lived_in",
+     "place": "quiryat-jearim",
+     "inferred": false,
+     "sources": [
+      "jeremias-26",
+      "it-uriya"
+     ],
+     "reason": "Jer 26:20 dice que era de Quiryat-Jearim.",
+     "status": "verified"
+    }
+   ],
+   "historial": {
+    "date": "2026-10-12",
+    "change": "La fecha de su cargo de profeta abarcaba todo el reinado de Jehoiaquim; murió antes del juicio de Jeremías (Perspicacia «Jehoiaquim», párr. 3).",
+    "source": "jeremias-26"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "uriya-hijo-de-semaya",
+   "campo": "sources",
+   "valores": [
+    "it-jehoiaquim"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "uriya-hijo-de-semaya",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "semaya-padre-de-uriya",
+     "word": "father",
+     "sources": [
+      "jeremias-26",
+      "it-semaya"
+     ],
+     "reason": "Jer 26:20: Uriya hijo de Semaya. Perspicacia «Semaya», núm. 11.",
+     "inferred": false,
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    },
+    {
+     "type": "tie",
+     "person": "jehoiaquim",
+     "word": "enemy",
+     "sources": [
+      "jeremias-26",
+      "it-jehoiaquim"
+     ],
+     "reason": "Jer 26:21-23: el rey decide matarlo, lo hace traer de Egipto y lo mata a espada.",
+     "inferred": false,
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    },
+    {
+     "type": "died_in",
+     "place": "jerusalen",
+     "inferred": true,
+     "status": "pending",
+     "sources": [
+      "jeremias-26",
+      "tnm-a6-b"
+     ],
+     "reason": "Jer 26:23: lo llevan ante Jehoiaquim, que lo mata. El texto no nombra la ciudad; el rey reinaba en Jerusalén (tabla A6-B, periodo jehoiaquim).",
+     "checked_on": "2026-10-12"
+    }
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "journeys",
+   "id": "huida-de-uriya-a-egipto",
+   "campo": "date",
+   "antes": {
+    "from": -627,
+    "to": -617,
+    "precision": "range",
+    "approx": true,
+    "type": "narrative",
+    "chronology": "tnm",
+    "text": "entre 628 y 618 a.e.c. (tiempo narrativo: reinado de Jehoiaquim)"
+   },
+   "despues": {
+    "from": -627,
+    "to": -627,
+    "precision": "year",
+    "approx": true,
+    "type": "anchored",
+    "chronology": "tnm",
+    "text": "c. 628 a.e.c. (al principio del reinado de Jehoiaquim)"
+   },
+   "historial": {
+    "date": "2026-10-12",
+    "change": "La fecha abarcaba todo el reinado de Jehoiaquim; la huida y la muerte de Uriya son anteriores al juicio de Jeremías, al principio del reinado (Perspicacia «Jehoiaquim», párr. 3).",
+    "source": "jeremias-26"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "journeys",
+   "id": "huida-de-uriya-a-egipto",
+   "campo": "stops",
+   "antes": [
+    {
+     "order": 1,
+     "place": "egipto",
+     "reference": "Jer 26:21, 22",
+     "date": {
+      "from": -627,
+      "to": -617,
+      "precision": "range",
+      "approx": true,
+      "type": "narrative",
+      "chronology": "tnm",
+      "text": "entre 628 y 618 a.e.c. (tiempo narrativo: reinado de Jehoiaquim)"
+     },
+     "note": "El texto no dice de qué lugar salió; Quiryat-Jearim era su ciudad.",
+     "reason": "Jer 26:21: al saber que el rey quería matarlo, huye a Egipto. Fecha: los años en que reina Jehoiaquim (tabla A6-B), sin suceso que la ancle.",
+     "sources": [
+      "jeremias-26",
+      "it-uriya",
+      "tnm-a6-b"
+     ],
+     "checked_on": "2026-10-02",
+     "status": "verified"
+    },
+    {
+     "order": 2,
+     "place": "jerusalen",
+     "reference": "Jer 26:22, 23",
+     "date": {
+      "from": -627,
+      "to": -617,
+      "precision": "range",
+      "approx": true,
+      "type": "narrative",
+      "chronology": "tnm",
+      "text": "entre 628 y 618 a.e.c. (tiempo narrativo: reinado de Jehoiaquim)"
+     },
+     "note": "Lo traen Elnatán hijo de Acbor y otros hombres; su cuerpo acaba en la fosa de la gente común.",
+     "reason": "Jer 26:22, 23: lo sacan de Egipto y lo llevan ante Jehoiaquim, que lo mata. El texto no nombra la ciudad; el rey reinaba en Jerusalén (periodo jehoiaquim).",
+     "sources": [
+      "jeremias-26",
+      "it-uriya",
+      "tnm-a6-b"
+     ],
+     "checked_on": "2026-10-01",
+     "status": "pending"
+    }
+   ],
+   "despues": [
+    {
+     "order": 1,
+     "place": "egipto",
+     "reference": "Jer 26:21, 22",
+     "date": {
+      "from": -627,
+      "to": -627,
+      "precision": "year",
+      "approx": true,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "c. 628 a.e.c. (al principio del reinado de Jehoiaquim)"
+     },
+     "note": "El texto no dice de qué lugar salió; Quiryat-Jearim era su ciudad.",
+     "reason": "Jer 26:21: al saber que el rey quería matarlo, huye a Egipto. Fecha: antes del juicio de Jeremías, al principio del reinado de Jehoiaquim (Perspicacia «Jehoiaquim», párr. 3; tabla A6-B).",
+     "sources": [
+      "jeremias-26",
+      "it-uriya",
+      "tnm-a6-b",
+      "it-jehoiaquim"
+     ],
+     "status": "verified"
+    },
+    {
+     "order": 2,
+     "place": "jerusalen",
+     "reference": "Jer 26:22, 23",
+     "date": {
+      "from": -627,
+      "to": -627,
+      "precision": "year",
+      "approx": true,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "c. 628 a.e.c. (al principio del reinado de Jehoiaquim)"
+     },
+     "note": "Lo traen Elnatán hijo de Acbor y otros hombres; su cuerpo acaba en la fosa de la gente común.",
+     "reason": "Jer 26:22, 23: lo sacan de Egipto y lo llevan ante Jehoiaquim, que lo mata. El texto no nombra la ciudad; el rey reinaba en Jerusalén (periodo jehoiaquim). Fecha como la parada 1.",
+     "sources": [
+      "jeremias-26",
+      "it-uriya",
+      "tnm-a6-b",
+      "it-jehoiaquim"
+     ],
+     "status": "pending"
+    }
+   ],
+   "historial": {
+    "date": "2026-10-12",
+    "change": "Las dos paradas toman la fecha nueva del viaje, c. 628 a.e.c., y su razón ya no dice que falte suceso.",
+    "source": "jeremias-26"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "journeys",
+   "id": "huida-de-uriya-a-egipto",
+   "campo": "reason",
+   "antes": "Fecha: los años en que reina Jehoiaquim, de 628 a 618 a.e.c. (tabla A6-B, periodo jehoiaquim), el rey que nombra el texto (Jer 26:21-23). Aún sin suceso en data/events.",
+   "despues": "Fecha: antes del juicio de Jeremías, al principio del reinado de Jehoiaquim, que empezó en 628 (Perspicacia «Jehoiaquim», párr. 3; tabla A6-B). Su suceso es jehoiaquim-mata-al-profeta-uriya (Jer 26:20-23).",
+   "historial": {
+    "date": "2026-10-12",
+    "change": "La razón decía que no había suceso y fechaba con todo el reinado; ahora remite al suceso nuevo y a la fecha c. 628.",
+    "source": "jeremias-26"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "journeys",
+   "id": "huida-de-uriya-a-egipto",
+   "campo": "sources",
+   "valores": [
+    "jeremias-26"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jehoiaquim",
+   "campo": "sources",
+   "valores": [
+    "jeremias-26"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jehoiaquim",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "josias",
+     "word": "father",
+     "sources": [
+      "jeremias-26"
+     ],
+     "reason": "Jer 26:1: Jehoiaquim hijo de Josías, rey de Judá.",
+     "inferred": false,
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jeremias-profeta",
+   "campo": "sources",
+   "valores": [
+    "jeremias-26"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jeremias-profeta",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "holds_office",
+     "office": "prophet",
+     "date": {
+      "from": -646,
+      "to": -579,
+      "precision": "range",
+      "approx": false,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "647-580 a.e.c."
+     },
+     "sources": [
+      "jeremias-26"
+     ],
+     "reason": "Jer 26:12, 15: Jehová lo envió a profetizar contra la casa y la ciudad; los príncipes reconocen que habló en su nombre (26:16).",
+     "inferred": false,
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "ahicam",
+   "campo": "sources",
+   "valores": [
+    "jeremias-26",
+    "jr-5"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "ahicam",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "safan",
+     "word": "father",
+     "sources": [
+      "jeremias-26"
+     ],
+     "reason": "Jer 26:24: Ahicam hijo de Safán.",
+     "inferred": false,
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    },
+    {
+     "type": "tie",
+     "person": "jeremias-profeta",
+     "word": "friend",
+     "inferred": true,
+     "sources": [
+      "jeremias-26",
+      "jr-5",
+      "it-ahiqam"
+     ],
+     "reason": "Jer 26:24: Ahicam está de parte de Jeremías y evita que lo maten. jr, cap. 5, párr. 14, lo cuenta entre los amigos del profeta.",
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "miqueas-profeta",
+   "campo": "sources",
+   "valores": [
+    "jeremias-26"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "miqueas-profeta",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "holds_office",
+     "office": "prophet",
+     "date": {
+      "from": -776,
+      "to": -716,
+      "precision": "range",
+      "approx": true,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "c. 777-717 a.e.c."
+     },
+     "sources": [
+      "jeremias-26",
+      "tnm-tabla",
+      "it-miqueas"
+     ],
+     "reason": "Jer 26:18: profetizaba en días del rey Ezequías. La Tabla de los libros y Perspicacia «Miqueas», núm. 7, alargan su obra a Jotán y Acaz, c. 777-717.",
+     "inferred": false,
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "ezequias",
+   "campo": "sources",
+   "valores": [
+    "jeremias-26"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "monte-moria",
+   "campo": "sources",
+   "valores": [
+    "jeremias-26"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "monte-moria",
+   "campo": "names",
+   "valores": [
+    {
+     "name": "Puerta nueva de Jehová",
+     "note": "Puerta del templo donde se sentaron los príncipes para juzgar a Jeremías y donde Baruc leyó el rollo (Jer 26:10; 36:10). Perspicacia «Puerta» ve posible que sea la puerta superior de Jotán."
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "jerusalen",
+   "campo": "sources",
+   "valores": [
+    "jeremias-26"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "quiryat-jearim",
+   "campo": "sources",
+   "valores": [
+    "jeremias-26"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "egipto",
+   "campo": "sources",
+   "valores": [
+    "jeremias-26"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "moreset",
+   "campo": "sources",
+   "valores": [
+    "jeremias-26"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "events",
+   "id": "nabucodonosor-se-lleva-a-joaquin-a-babilonia",
+   "campo": "passages",
+   "valores": [
+    "Jer 27:20"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "events",
+   "id": "nabucodonosor-se-lleva-a-joaquin-a-babilonia",
+   "campo": "sources",
+   "valores": [
+    "jeremias-27"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jeremias-profeta",
+   "campo": "sources",
+   "valores": [
+    "jeremias-27"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "sedequias",
+   "campo": "sources",
+   "valores": [
+    "jeremias-27"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "sedequias",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "lived_in",
+     "place": "jerusalen",
+     "sources": [
+      "jeremias-27"
+     ],
+     "reason": "Jer 27:3: los mensajeros de los cinco reyes vienen a Jerusalén a ver al rey Sedequías.",
+     "inferred": false,
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    },
+    {
+     "type": "tie",
+     "person": "jeremias-profeta",
+     "word": "adviser",
+     "inferred": true,
+     "sources": [
+      "jeremias-27",
+      "it-sedequias"
+     ],
+     "reason": "Jer 27:12-15: Jeremías le aconseja ponerse bajo el yugo de Babilonia para vivir. Perspicacia «Sedequías», núm. 4, habla del consejo inspirado de Jeremías que el rey no siguió.",
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jehoiaquim",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "josias",
+     "word": "father",
+     "sources": [
+      "jeremias-27"
+     ],
+     "reason": "Jer 27:1: Jehoiaquim hijo de Josías.",
+     "inferred": false,
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "nabucodonosor-ii",
+   "campo": "sources",
+   "valores": [
+    "jeremias-27"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "joaquin",
+   "campo": "sources",
+   "valores": [
+    "jeremias-27"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "joaquin",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "jehoiaquim",
+     "word": "father",
+     "sources": [
+      "jeremias-27"
+     ],
+     "reason": "Jer 27:20: Jeconías hijo de Jehoiaquim.",
+     "inferred": false,
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    },
+    {
+     "type": "lived_in",
+     "place": "babilonia",
+     "sources": [
+      "jeremias-27"
+     ],
+     "reason": "Jer 27:20: Nabucodonosor lo desterró de Jerusalén a Babilonia.",
+     "inferred": false,
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    },
+    {
+     "type": "tie",
+     "person": "nabucodonosor-ii",
+     "word": "custodian",
+     "sources": [
+      "jeremias-27"
+     ],
+     "reason": "Jer 27:20: Nabucodonosor se lo llevó desterrado a Babilonia.",
+     "inferred": false,
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "jerusalen",
+   "campo": "sources",
+   "valores": [
+    "jeremias-27"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "edom",
+   "campo": "sources",
+   "valores": [
+    "jeremias-27"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "moab",
+   "campo": "sources",
+   "valores": [
+    "jeremias-27"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "ammon",
+   "campo": "sources",
+   "valores": [
+    "jeremias-27"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "tiro",
+   "campo": "sources",
+   "valores": [
+    "jeremias-27"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "sidon",
+   "campo": "sources",
+   "valores": [
+    "jeremias-27"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jeremias-profeta",
+   "campo": "sources",
+   "valores": [
+    "jeremias-28"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jeremias-profeta",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "holds_office",
+     "office": "prophet",
+     "date": {
+      "from": -646,
+      "to": -579,
+      "precision": "range",
+      "approx": false,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "647-580 a.e.c."
+     },
+     "sources": [
+      "jeremias-28"
+     ],
+     "reason": "Jer 28:5, 6, 10-12, 15: el texto lo llama una y otra vez «el profeta Jeremías». El estudio 3 fecha su comisión en 647 y la Tabla cierra su libro en 580.",
+     "inferred": false,
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "joaquin",
+   "campo": "sources",
+   "valores": [
+    "jeremias-28"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "joaquin",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "jehoiaquim",
+     "word": "father",
+     "sources": [
+      "jeremias-28"
+     ],
+     "reason": "Jer 28:4: Jeconías hijo de Jehoiaquim.",
+     "inferred": false,
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    },
+    {
+     "type": "lived_in",
+     "place": "babilonia",
+     "sources": [
+      "jeremias-28"
+     ],
+     "reason": "Jer 28:4: Jeconías y los desterrados de Judá habían ido a Babilonia.",
+     "inferred": false,
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "gabaon",
+   "campo": "sources",
+   "valores": [
+    "jeremias-28"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "monte-moria",
+   "campo": "sources",
+   "valores": [
+    "jeremias-28"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "people",
+   "id": "sadrac",
+   "campo": "disambiguation",
+   "antes": null,
+   "despues": "Compañero de Daniel cuyo nombre hebreo era Hananías; no es el profeta falso hijo de Azur, el padre del príncipe Sedequías ni el abuelo de Iriya."
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "sadrac",
+   "campo": "sources",
+   "valores": [
+    "it-hananias"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "sadrac",
+   "campo": "distinct_from",
+   "valores": [
+    "hananias-hijo-de-azur"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "guemarias-hijo-de-hilquias",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "hilquias-padre-de-guemarias",
+     "word": "father",
+     "sources": [
+      "jeremias-29",
+      "it-hilquias",
+      "it-guemarias"
+     ],
+     "reason": "Jer 29:3 lo llama Guemarías hijo de Hilquías; Perspicacia «Hilquías», núm. 6.",
+     "inferred": false,
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    },
+    {
+     "type": "tie",
+     "person": "sedequias",
+     "word": "master",
+     "sources": [
+      "jeremias-29",
+      "it-guemarias"
+     ],
+     "reason": "Jer 29:3: el rey Sedequías lo envía a Babilonia, ante Nabucodonosor.",
+     "inferred": false,
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "guemarias-hijo-de-hilquias",
+   "campo": "sources",
+   "valores": [
+    "it-hilquias"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "elasa",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "tie",
+     "person": "sedequias",
+     "word": "master",
+     "sources": [
+      "jeremias-29",
+      "it-elasa"
+     ],
+     "reason": "Jer 29:3: el rey Sedequías lo envía a Babilonia, ante Nabucodonosor.",
+     "inferred": false,
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "elasa",
+   "campo": "sources",
+   "valores": [
+    "it-sedequias"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "safan",
+   "campo": "sources",
+   "valores": [
+    "jeremias-29"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "sedequias",
+   "campo": "sources",
+   "valores": [
+    "jeremias-29"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "nabucodonosor-ii",
+   "campo": "sources",
+   "valores": [
+    "jeremias-29"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "joaquin",
+   "campo": "sources",
+   "valores": [
+    "jeremias-29"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "joaquin",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "lived_in",
+     "place": "babilonia",
+     "sources": [
+      "jeremias-29"
+     ],
+     "reason": "Jer 29:1, 2: el rey Jeconías salió de Jerusalén con los desterrados que Nabucodonosor llevó a Babilonia.",
+     "inferred": false,
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    },
+    {
+     "type": "lived_in",
+     "place": "jerusalen",
+     "sources": [
+      "jeremias-29"
+     ],
+     "reason": "Jer 29:2: Jeconías salió de Jerusalén al destierro.",
+     "inferred": false,
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "nehusta",
+   "campo": "sources",
+   "valores": [
+    "jeremias-29"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "nehusta",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "lived_in",
+     "place": "babilonia",
+     "sources": [
+      "jeremias-29",
+      "it-nehusta"
+     ],
+     "reason": "Jer 29:2: la reina madre salió de Jerusalén con Jeconías; Perspicacia «Nehustá» cita este versículo para ella.",
+     "inferred": false,
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jeremias-profeta",
+   "campo": "sources",
+   "valores": [
+    "jeremias-29"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jeremias-profeta",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "holds_office",
+     "office": "prophet",
+     "date": {
+      "from": -646,
+      "to": -579,
+      "precision": "range",
+      "approx": false,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "647-580 a.e.c."
+     },
+     "sources": [
+      "jeremias-29"
+     ],
+     "reason": "Jer 29:1, 29 lo llaman el profeta Jeremías.",
+     "inferred": false,
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    },
+    {
+     "type": "lived_in",
+     "place": "anatot",
+     "sources": [
+      "jeremias-29"
+     ],
+     "reason": "Jer 29:27: Semaya lo llama Jeremías de Anatot.",
+     "inferred": false,
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "sofonias-hijo-de-maaseya",
+   "campo": "sources",
+   "valores": [
+    "jeremias-29"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "sofonias-hijo-de-maaseya",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "maaseya-padre-de-sofonias",
+     "word": "father",
+     "sources": [
+      "jeremias-29",
+      "it-maaseya"
+     ],
+     "reason": "Jer 29:25 lo llama Sofonías hijo de Maaseya.",
+     "inferred": false,
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    },
+    {
+     "type": "holds_office",
+     "place": "jerusalen",
+     "office": "priest",
+     "sources": [
+      "jeremias-29"
+     ],
+     "reason": "Jer 29:25, 26, 29: el sacerdote Sofonías, puesto como supervisor de la casa de Jehová.",
+     "inferred": false,
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    },
+    {
+     "type": "succeeds",
+     "person": "jehoiada-de-tiempos-de-jeremias",
+     "office": "priest",
+     "sources": [
+      "jeremias-29",
+      "it-jehoiada"
+     ],
+     "reason": "Jer 29:26: fue hecho sacerdote en lugar del sacerdote Jehoiadá. Perspicacia «Jehoiadá», núm. 4, lo da por sucesor.",
+     "inferred": false,
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "sofonias-hijo-de-maaseya",
+   "campo": "sources",
+   "valores": [
+    "it-jehoiada"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "hilquias-hijo-de-salum",
+   "campo": "distinct_from",
+   "valores": [
+    "hilquias-padre-de-guemarias"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "hilquias-padre-de-eliaquim",
+   "campo": "distinct_from",
+   "valores": [
+    "hilquias-padre-de-guemarias"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jehoiada-sumo-sacerdote",
+   "campo": "distinct_from",
+   "valores": [
+    "jehoiada-de-tiempos-de-jeremias"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jehoiada-padre-de-benaya",
+   "campo": "distinct_from",
+   "valores": [
+    "jehoiada-de-tiempos-de-jeremias"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "semaya-profeta",
+   "campo": "distinct_from",
+   "valores": [
+    "semaya-de-nehelam"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "acab",
+   "campo": "distinct_from",
+   "valores": [
+    "acab-hijo-de-colaya"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "people",
+   "id": "acab",
+   "campo": "disambiguation",
+   "antes": null,
+   "despues": "El rey de Israel hijo de Omrí, esposo de Jezabel; no es Acab hijo de Colaya, el falso profeta desterrado en Babilonia."
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "sedequias",
+   "campo": "distinct_from",
+   "valores": [
+    "sedequias-hijo-de-maaseya"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "people",
+   "id": "sedequias",
+   "campo": "disambiguation",
+   "antes": "El último rey de Judá; no es el falso profeta Sedequías hijo de Kenaaná.",
+   "despues": "El último rey de Judá; no es ninguno de los falsos profetas llamados Sedequías, el hijo de Kenaaná ni el hijo de Maaseya.",
+   "historial": {
+    "date": "2026-10-12",
+    "change": "Jer 29:21 nombra a otro Sedequías, falso profeta hijo de Maaseya: la desambiguación lo excluye también.",
+    "source": "jeremias-29"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "sedequias-hijo-de-kenaana",
+   "campo": "distinct_from",
+   "valores": [
+    "sedequias-hijo-de-maaseya"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "people",
+   "id": "sedequias-hijo-de-kenaana",
+   "campo": "disambiguation",
+   "antes": "Profeta falso de la corte de Acab; no es el último rey de Judá ni el Sedequías hijo de Maaseya de Jer 29.",
+   "despues": "Profeta falso de la corte de Acab; no es el último rey de Judá ni Sedequías hijo de Maaseya, el falso profeta del destierro.",
+   "historial": {
+    "date": "2026-10-12",
+    "change": "Sin la cita de Jer 29: ese capítulo no habla de este Sedequías, y la cita lo ponía en su página. El homónimo tiene ya ficha propia.",
+    "source": "jeremias-29"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "events",
+   "id": "nabucodonosor-se-lleva-a-joaquin-a-babilonia",
+   "campo": "passages",
+   "valores": [
+    "Jer 29:1, 2"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "events",
+   "id": "nabucodonosor-se-lleva-a-joaquin-a-babilonia",
+   "campo": "sources",
+   "valores": [
+    "jeremias-29"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "jerusalen",
+   "campo": "sources",
+   "valores": [
+    "jeremias-29"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "babilonia",
+   "campo": "sources",
+   "valores": [
+    "jeremias-29"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "anatot",
+   "campo": "sources",
+   "valores": [
+    "jeremias-29"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jeremias-profeta",
+   "campo": "sources",
+   "valores": [
+    "jeremias-30"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "jerusalen",
+   "campo": "sources",
+   "valores": [
+    "jeremias-30"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "events",
+   "id": "exodo",
+   "campo": "passages",
+   "valores": [
+    "Jer 31:32"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "events",
+   "id": "matanza-de-los-ninos-de-belen",
+   "campo": "passages",
+   "valores": [
+    "Jer 31:15"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jeremias-profeta",
+   "campo": "sources",
+   "valores": [
+    "jeremias-31"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "israel",
+   "campo": "sources",
+   "valores": [
+    "jeremias-31",
+    "it-efrain"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "region-montanosa-de-efrain",
+   "campo": "sources",
+   "valores": [
+    "jeremias-31"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "rama-de-benjamin",
+   "campo": "sources",
+   "valores": [
+    "jeremias-31",
+    "it-raquel"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "juda",
+   "campo": "sources",
+   "valores": [
+    "jeremias-31"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "valle-de-cedron",
+   "campo": "sources",
+   "valores": [
+    "jeremias-31"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "jerusalen",
+   "campo": "sources",
+   "valores": [
+    "jeremias-31",
+    "it-gareb",
+    "it-goa"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "jerusalen",
+   "campo": "names",
+   "valores": [
+    {
+     "name": "Puerta de los Caballos",
+     "note": "Puerta del muro, probablemente al sudeste del recinto del templo, junto a la que repararon los sacerdotes (Ne 3:28; Jer 31:40). Perspicacia «Puerta» no la iguala con la entrada de los caballos del palacio."
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "events",
+   "id": "pacto-de-la-ley",
+   "campo": "passages",
+   "valores": [
+    "Jer 31:32"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "events",
+   "id": "pacto-de-la-ley",
+   "campo": "sources",
+   "valores": [
+    "jeremias-31"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jeremias-profeta",
+   "campo": "sources",
+   "valores": [
+    "jeremias-32"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jeremias-profeta",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "salum-tio-de-jeremias",
+     "word": "uncle",
+     "sources": [
+      "jeremias-32",
+      "it-salum"
+     ],
+     "reason": "Jer 32:7: Salum es su tío; la nota precisa que era tío por parte de padre, como Perspicacia «Salum», núm. 10.",
+     "inferred": false,
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    },
+    {
+     "type": "tie",
+     "person": "sedequias",
+     "word": "custodian",
+     "date": {
+      "from": -608,
+      "to": -606,
+      "precision": "range",
+      "approx": true,
+      "type": "narrative",
+      "chronology": "tnm",
+      "text": "entre 609 y 607 a.e.c. (tiempo narrativo: desde que Sedequías lo pone en el Patio de la Guardia hasta la toma de Jerusalén)"
+     },
+     "sources": [
+      "jeremias-32",
+      "it-salum",
+      "it-prision",
+      "si-3"
+     ],
+     "reason": "Jer 32:2, 3: Sedequías lo tenía preso en el Patio de la Guardia. Lo puso allí tras la retirada de los caldeos (Jer 37:21) y allí siguió hasta la toma de 607 (Jer 38:28).",
+     "inferred": false,
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    },
+    {
+     "type": "holds_office",
+     "office": "prophet",
+     "date": {
+      "from": -646,
+      "to": -579,
+      "precision": "range",
+      "approx": false,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "647-580 a.e.c."
+     },
+     "sources": [
+      "jeremias-32"
+     ],
+     "reason": "Jer 32:2 lo llama el profeta Jeremías.",
+     "inferred": false,
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    },
+    {
+     "type": "lived_in",
+     "place": "jerusalen",
+     "inferred": true,
+     "sources": [
+      "jeremias-32",
+      "it-prision"
+     ],
+     "reason": "Jer 32:2, 8 y 12: vive preso en el Patio de la Guardia, en la casa del rey de Judá, durante el sitio de Jerusalén.",
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "baruc-hijo-de-nerias",
+   "campo": "sources",
+   "valores": [
+    "it-nerias"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "baruc-hijo-de-nerias",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "nerias",
+     "word": "father",
+     "sources": [
+      "jeremias-32",
+      "it-nerias"
+     ],
+     "reason": "Jer 32:12 y 16 lo llaman Baruc hijo de Nerías.",
+     "inferred": false,
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    },
+    {
+     "type": "accompanies",
+     "person": "jeremias-profeta",
+     "word": "fellow_worker",
+     "date": {
+      "from": -624,
+      "to": -606,
+      "precision": "range",
+      "approx": false,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "625-607 a.e.c."
+     },
+     "sources": [
+      "jeremias-32"
+     ],
+     "reason": "Jer 32:12-14: Jeremías le entrega las escrituras del campo y le encarga guardarlas en una vasija de barro.",
+     "inferred": false,
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "salum-hijo-de-ticva",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "same_as",
+     "person": "salum-tio-de-jeremias",
+     "certainty": "possible",
+     "inferred": true,
+     "sources": [
+      "it-salum",
+      "jeremias-32"
+     ],
+     "reason": "Perspicacia «Salum», núm. 10: por la época en que vivió, el tío de Jeremías (Jer 32:7) podría ser el esposo de Huldá, el núm. 8.",
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "salum-de-israel",
+   "campo": "distinct_from",
+   "valores": [
+    "salum-tio-de-jeremias"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jehoacaz-de-juda",
+   "campo": "distinct_from",
+   "valores": [
+    "salum-tio-de-jeremias"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "sedequias",
+   "campo": "sources",
+   "valores": [
+    "jeremias-32"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "nabucodonosor-ii",
+   "campo": "sources",
+   "valores": [
+    "jeremias-32"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "events",
+   "id": "exodo",
+   "campo": "passages",
+   "valores": [
+    "Jer 32:21"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "events",
+   "id": "entrada-en-canaan",
+   "campo": "passages",
+   "valores": [
+    "Jer 32:22, 23"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "events",
+   "id": "conquista-de-canaan",
+   "campo": "passages",
+   "valores": [
+    "Jer 32:23"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "jerusalen",
+   "campo": "sources",
+   "valores": [
+    "jeremias-32",
+    "it-prision"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "jerusalen",
+   "campo": "names",
+   "valores": [
+    {
+     "name": "Patio de la Guardia",
+     "note": "Patio de la casa del rey donde Jeremías estuvo preso al final del sitio; allí podía recibir visitas y cerrar tratos (Jer 32:2, 8, 12; 37:21; Perspicacia «Prisión»). Ne 3:25 lo pone junto a la Casa del Rey."
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "anatot",
+   "campo": "sources",
+   "valores": [
+    "jeremias-32"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "benjamin",
+   "campo": "sources",
+   "valores": [
+    "jeremias-32"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "valle-de-hinon",
+   "campo": "sources",
+   "valores": [
+    "jeremias-32"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "seraya-hijo-de-nerias",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "nerias",
+     "word": "father",
+     "inferred": false,
+     "sources": [
+      "jeremias-51",
+      "it-nerias"
+     ],
+     "reason": "Jer 51:59 lo llama hijo de Nerías y da a Mahseya como abuelo; Perspicacia «Nerías» lo cuenta entre sus hijos, junto a Baruc.",
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "events",
+   "id": "pacto-con-david",
+   "campo": "passages",
+   "valores": [
+    "Jer 33:17, 20-22, 25, 26"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "events",
+   "id": "pacto-con-david",
+   "campo": "sources",
+   "valores": [
+    "jeremias-33",
+    "it-jeremias-libro"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jeremias-profeta",
+   "campo": "sources",
+   "valores": [
+    "jeremias-33"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jeremias-profeta",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "tie",
+     "person": "sedequias",
+     "word": "custodian",
+     "date": {
+      "from": -608,
+      "to": -606,
+      "precision": "range",
+      "approx": true,
+      "type": "narrative",
+      "chronology": "tnm",
+      "text": "entre 609 y 607 a.e.c. (tiempo narrativo: desde que Sedequías lo pone en el Patio de la Guardia hasta la toma de Jerusalén)"
+     },
+     "sources": [
+      "jeremias-33"
+     ],
+     "reason": "Jer 33:1: sigue preso en el Patio de la Guardia, donde lo tenía encerrado el rey Sedequías.",
+     "inferred": false,
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    },
+    {
+     "type": "lived_in",
+     "place": "jerusalen",
+     "inferred": true,
+     "sources": [
+      "jeremias-33",
+      "it-prision"
+     ],
+     "reason": "Jer 33:1: vive preso en el Patio de la Guardia, en Jerusalén, durante el sitio.",
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "jerusalen",
+   "campo": "sources",
+   "valores": [
+    "jeremias-33"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "events",
+   "id": "exodo",
+   "campo": "passages",
+   "valores": [
+    "Jer 34:13"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "events",
+   "id": "pacto-de-la-ley",
+   "campo": "passages",
+   "valores": [
+    "Jer 34:13, 14"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jeremias-profeta",
+   "campo": "sources",
+   "valores": [
+    "jeremias-34"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jeremias-profeta",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "holds_office",
+     "office": "prophet",
+     "date": {
+      "from": -646,
+      "to": -579,
+      "precision": "range",
+      "approx": false,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "647-580 a.e.c."
+     },
+     "sources": [
+      "jeremias-34"
+     ],
+     "reason": "Jer 34:6 lo llama el profeta Jeremías.",
+     "inferred": false,
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    },
+    {
+     "type": "lived_in",
+     "place": "jerusalen",
+     "inferred": true,
+     "sources": [
+      "jeremias-34"
+     ],
+     "reason": "Jer 34:6, 7: durante el sitio sigue en Jerusalén, donde da el mensaje al rey Sedequías.",
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "sedequias",
+   "campo": "sources",
+   "valores": [
+    "jeremias-34"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "sedequias",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "lived_in",
+     "place": "jerusalen",
+     "sources": [
+      "jeremias-34"
+     ],
+     "reason": "Jer 34:6: Jeremías le habla en Jerusalén, al rey de Judá.",
+     "inferred": false,
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "nabucodonosor-ii",
+   "campo": "sources",
+   "valores": [
+    "jeremias-34"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "jerusalen",
+   "campo": "sources",
+   "valores": [
+    "jeremias-34"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "lakis",
+   "campo": "sources",
+   "valores": [
+    "jeremias-34"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "azeca",
+   "campo": "sources",
+   "valores": [
+    "jeremias-34"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "places",
+   "id": "azeca",
+   "campo": "summary",
+   "antes": "Ciudad de la Sefelá que guardaba la parte alta del valle de Elá, unos 26 km al NO de Hebrón. Hasta allí persiguió Israel a los cinco reyes; después fue de Judá.",
+   "despues": "Ciudad de la Sefelá que guardaba la parte alta del valle de Elá, unos 26 km al NO de Hebrón. Hasta allí persiguió Israel a los cinco reyes; luego fue de Judá y cayó ante Babilonia justo antes que Jerusalén.",
+   "historial": {
+    "date": "2026-10-12",
+    "change": "El resumen no decía que Azecá y Lakís resistían aún a Babilonia cuando solo quedaban ellas (Jer 34:7; Perspicacia «Azeqá», párr. 5).",
+    "source": "jeremias-34"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "places",
+   "id": "azeca",
+   "campo": "reason",
+   "antes": "Perspicacia «Azeqá», párr. 1 y 2; Jos 10:10, 11; 15:35. OpenBible: solo el punto.",
+   "despues": "Perspicacia «Azeqá», párr. 1, 2 y 5; Jos 10:10, 11; 15:35; Jer 34:7. OpenBible: solo el punto.",
+   "historial": {
+    "date": "2026-10-12",
+    "change": "La razón cita ahora Jer 34:7 y el párrafo de Perspicacia sobre la invasión babilonia.",
+    "source": "jeremias-34"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jeremias-profeta",
+   "campo": "sources",
+   "valores": [
+    "jeremias-35"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jeremias-profeta",
+   "campo": "distinct_from",
+   "valores": [
+    "jeremias-hijo-de-habazinias"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jeremias-de-libna",
+   "campo": "distinct_from",
+   "valores": [
+    "jeremias-hijo-de-habazinias"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jaazanias-jefe-militar",
+   "campo": "distinct_from",
+   "valores": [
+    "jaazanias-hijo-de-jeremias"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "salum-hijo-de-ticva",
+   "campo": "distinct_from",
+   "valores": [
+    "salum-padre-de-maaseya"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "salum-de-israel",
+   "campo": "distinct_from",
+   "valores": [
+    "salum-padre-de-maaseya"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jehoacaz-de-juda",
+   "campo": "distinct_from",
+   "valores": [
+    "salum-padre-de-maaseya"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jehoiaquim",
+   "campo": "sources",
+   "valores": [
+    "jeremias-35"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jehoiaquim",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "josias",
+     "word": "father",
+     "inferred": false,
+     "sources": [
+      "jeremias-35"
+     ],
+     "reason": "Jer 35:1 lo llama Jehoiaquim hijo de Josías.",
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jehonadab-hijo-de-recab",
+   "campo": "sources",
+   "valores": [
+    "jeremias-35"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jehonadab-hijo-de-recab",
+   "campo": "names",
+   "valores": [
+    {
+     "name": "Jonadab",
+     "note": "Forma abreviada que, según las notas de la TNM, usa el hebreo para este hombre en Jer 35:6, 10 y 19."
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jehonadab-hijo-de-recab",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "recab-padre-de-jehonadab",
+     "word": "father",
+     "inferred": false,
+     "sources": [
+      "jeremias-35"
+     ],
+     "reason": "Jer 35:6, 8, 14, 16 y 19 lo llaman Jehonadab hijo de Recab.",
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "recab-padre-de-jehonadab",
+   "campo": "sources",
+   "valores": [
+    "jeremias-35"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "nabucodonosor-ii",
+   "campo": "sources",
+   "valores": [
+    "jeremias-35"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "monte-moria",
+   "campo": "sources",
+   "valores": [
+    "jeremias-35"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "jerusalen",
+   "campo": "sources",
+   "valores": [
+    "jeremias-35"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jeremias-profeta",
+   "campo": "sources",
+   "valores": [
+    "jeremias-36"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jeremias-profeta",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "holds_office",
+     "office": "prophet",
+     "inferred": false,
+     "sources": [
+      "jeremias-36"
+     ],
+     "reason": "Jer 36:8, 26 lo llaman el profeta Jeremías.",
+     "checked_on": "2026-10-12",
+     "status": "verified",
+     "date": {
+      "from": -646,
+      "to": -579,
+      "precision": "range",
+      "approx": false,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "647-580 a.e.c."
+     }
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "baruc-hijo-de-nerias",
+   "campo": "sources",
+   "valores": [
+    "jeremias-36",
+    "it-nerias"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "baruc-hijo-de-nerias",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "nerias",
+     "word": "father",
+     "inferred": false,
+     "sources": [
+      "jeremias-36",
+      "it-nerias"
+     ],
+     "reason": "Jer 36:4, 8, 14 y 32 lo llaman Baruc hijo de Nerías.",
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jehoiaquim",
+   "campo": "sources",
+   "valores": [
+    "jeremias-36"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jehoiaquim",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "josias",
+     "word": "father",
+     "inferred": false,
+     "sources": [
+      "jeremias-36"
+     ],
+     "reason": "Jer 36:1, 9 lo llaman Jehoiaquim hijo de Josías.",
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "people",
+   "id": "jehoiaquim",
+   "campo": "summary",
+   "antes": "Hijo de Josías, puesto en el trono por Nekó. Gobernó con injusticia y mató al profeta Uriya. Fue vasallo de Babilonia, se rebeló y al parecer murió durante el sitio.",
+   "despues": "Hijo de Josías, puesto en el trono por Nekó. Gobernó con injusticia, mató al profeta Uriya y quemó el rollo de Jeremías. Fue vasallo de Babilonia, se rebeló y al parecer murió durante el sitio.",
+   "historial": {
+    "date": "2026-10-12",
+    "change": "El resumen no decía que quemó el rollo que le leyó Jehudí (Jer 36:21-26; Perspicacia «Jehoiaquim», párr. 4).",
+    "source": "jeremias-36"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "people",
+   "id": "jehoiaquim",
+   "campo": "reason",
+   "antes": "Perspicacia «Jehoiaquim», párr. 1-6; 2Re 23:34-24:6 y Jer 26:20-23.",
+   "despues": "Perspicacia «Jehoiaquim», párr. 1-6; 2Re 23:34-24:6, Jer 26:20-23 y 36:21-26.",
+   "historial": {
+    "date": "2026-10-12",
+    "change": "La razón cita ya el pasaje de la quema del rollo, que el resumen recoge ahora.",
+    "source": "jeremias-36"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "safan",
+   "campo": "sources",
+   "valores": [
+    "jeremias-36"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "acbor-hijo-de-micaya",
+   "campo": "sources",
+   "valores": [
+    "jeremias-36"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "guemarias-hijo-de-hilquias",
+   "campo": "distinct_from",
+   "valores": [
+    "guemarias-hijo-de-safan"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "micaya-hijo-de-imla",
+   "campo": "distinct_from",
+   "valores": [
+    "micaya-hijo-de-guemarias"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "micaya-padre-de-acbor",
+   "campo": "distinct_from",
+   "valores": [
+    "micaya-hijo-de-guemarias"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "maaca-hija-de-uriel",
+   "campo": "distinct_from",
+   "valores": [
+    "micaya-hijo-de-guemarias"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "elisama-abuelo-de-ismael",
+   "campo": "distinct_from",
+   "valores": [
+    "elisama-secretario"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "elisama-hijo-de-amihud",
+   "campo": "distinct_from",
+   "valores": [
+    "elisama-secretario"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "elisama-hijo-de-david",
+   "campo": "distinct_from",
+   "valores": [
+    "elisama-secretario"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "elisua",
+   "campo": "distinct_from",
+   "valores": [
+    "elisama-secretario"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "semaya-profeta",
+   "campo": "distinct_from",
+   "valores": [
+    "semaya-padre-de-delaya"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "sedequias",
+   "campo": "distinct_from",
+   "valores": [
+    "sedequias-hijo-de-hananias"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "sedequias-hijo-de-kenaana",
+   "campo": "distinct_from",
+   "valores": [
+    "sedequias-hijo-de-hananias"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "sadrac",
+   "campo": "distinct_from",
+   "valores": [
+    "hananias-padre-de-sedequias"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "netanias-hijo-de-elisama",
+   "campo": "distinct_from",
+   "valores": [
+    "netanias-hijo-de-selemias"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "cusi-hijo-de-guedalias",
+   "campo": "distinct_from",
+   "valores": [
+    "cusi-antepasado-de-jehudi"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "seraya-hijo-de-nerias",
+   "campo": "distinct_from",
+   "valores": [
+    "seraya-hijo-de-azriel"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "seraya-hijo-de-azarias",
+   "campo": "distinct_from",
+   "valores": [
+    "seraya-hijo-de-azriel"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "seraya-hijo-de-tanhumet",
+   "campo": "distinct_from",
+   "valores": [
+    "seraya-hijo-de-azriel"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "seraya-secretario-de-david",
+   "campo": "distinct_from",
+   "valores": [
+    "seraya-hijo-de-azriel"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "monte-moria",
+   "campo": "sources",
+   "valores": [
+    "jeremias-36"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "jerusalen",
+   "campo": "sources",
+   "valores": [
+    "jeremias-36"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "sedequias",
+   "campo": "sources",
+   "valores": [
+    "jeremias-37",
+    "jeremias-38"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "sedequias",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "josias",
+     "word": "father",
+     "inferred": false,
+     "sources": [
+      "jeremias-37"
+     ],
+     "reason": "Jer 37:1 lo llama Sedequías hijo de Josías.",
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    },
+    {
+     "type": "succeeds",
+     "person": "joaquin",
+     "office": "king",
+     "inferred": false,
+     "sources": [
+      "jeremias-37"
+     ],
+     "reason": "Jer 37:1: empezó a reinar en lugar de Conías, es decir, Joaquín.",
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    },
+    {
+     "type": "tie",
+     "person": "nabucodonosor-ii",
+     "word": "master",
+     "date": {
+      "from": -616,
+      "to": -608,
+      "precision": "range",
+      "approx": true,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "617-609 a.e.c."
+     },
+     "inferred": true,
+     "sources": [
+      "jeremias-37"
+     ],
+     "reason": "Jer 37:1: el rey de Babilonia le dio el trono de Judá.",
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "joaquin",
+   "campo": "sources",
+   "valores": [
+    "jeremias-37"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "joaquin",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "jehoiaquim",
+     "word": "father",
+     "inferred": false,
+     "sources": [
+      "jeremias-37"
+     ],
+     "reason": "Jer 37:1 lo llama Conías hijo de Jehoiaquim.",
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "nabucodonosor-ii",
+   "campo": "sources",
+   "valores": [
+    "jeremias-37"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "sofonias-hijo-de-maaseya",
+   "campo": "sources",
+   "valores": [
+    "jeremias-37"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "sofonias-hijo-de-maaseya",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "maaseya-padre-de-sofonias",
+     "word": "father",
+     "inferred": false,
+     "sources": [
+      "jeremias-37"
+     ],
+     "reason": "Jer 37:3 lo llama Sofonías hijo de Maaseya.",
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    },
+    {
+     "type": "holds_office",
+     "place": "jerusalen",
+     "office": "priest",
+     "inferred": false,
+     "sources": [
+      "jeremias-37"
+     ],
+     "reason": "Jer 37:3 lo llama el sacerdote.",
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jeremias-profeta",
+   "campo": "sources",
+   "valores": [
+    "jeremias-37",
+    "jeremias-38",
+    "si-jeremias"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jeremias-profeta",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "holds_office",
+     "office": "prophet",
+     "date": {
+      "from": -646,
+      "to": -579,
+      "precision": "range",
+      "approx": false,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "647-580 a.e.c."
+     },
+     "inferred": false,
+     "sources": [
+      "jeremias-37",
+      "jeremias-38"
+     ],
+     "reason": "Jer 37:2, 3, 6, 13 y 38:9, 10, 14 lo llaman el profeta Jeremías.",
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    },
+    {
+     "type": "lived_in",
+     "place": "jerusalen",
+     "inferred": true,
+     "sources": [
+      "jeremias-37",
+      "jeremias-38"
+     ],
+     "reason": "Jer 37:4, 12-21 y 38:1-28: anda entre el pueblo de Jerusalén, intenta salir de la ciudad y queda preso en ella.",
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    },
+    {
+     "type": "tie",
+     "person": "sedequias",
+     "word": "custodian",
+     "date": {
+      "from": -608,
+      "to": -606,
+      "precision": "range",
+      "approx": true,
+      "type": "narrative",
+      "chronology": "tnm",
+      "text": "entre 609 y 607 a.e.c. (tiempo narrativo: desde que Sedequías lo pone en el Patio de la Guardia hasta la toma de Jerusalén)"
+     },
+     "inferred": false,
+     "sources": [
+      "jeremias-37",
+      "jeremias-38"
+     ],
+     "reason": "Jer 37:21: el rey manda custodiarlo en el Patio de la Guardia, donde sigue hasta que toman la ciudad (Jer 38:28).",
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "jerusalen",
+   "campo": "sources",
+   "valores": [
+    "jeremias-37",
+    "jeremias-38",
+    "it-panadero"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "jerusalen",
+   "campo": "names",
+   "valores": [
+    {
+     "name": "Calle de los panaderos",
+     "note": "De ella le daban a Jeremías un pan redondo cada día mientras quedó pan (Jer 37:21). Perspicacia «Panadero» deduce que los del oficio ocupaban una calle propia."
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "egipto",
+   "campo": "sources",
+   "valores": [
+    "jeremias-37"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "sadrac",
+   "campo": "distinct_from",
+   "valores": [
+    "hananias-abuelo-de-iriya"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "benjamin",
+   "campo": "sources",
+   "valores": [
+    "jeremias-37"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "sefatias-hijo-de-david",
+   "campo": "distinct_from",
+   "valores": [
+    "sefatias-hijo-de-matan"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "matan-sacerdote-de-baal",
+   "campo": "distinct_from",
+   "valores": [
+    "matan-padre-de-sefatias"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "guedalias",
+   "campo": "distinct_from",
+   "valores": [
+    "guedalias-hijo-de-pasjur"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "guedalias-hijo-de-amarias",
+   "campo": "distinct_from",
+   "valores": [
+    "guedalias-hijo-de-pasjur"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "sedequias",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "tie",
+     "person": "jeremias-profeta",
+     "word": "adviser",
+     "inferred": true,
+     "sources": [
+      "jeremias-38",
+      "it-sedequias"
+     ],
+     "reason": "Jer 38:14-23: le pide que no le oculte nada y Jeremías le da su consejo, que el rey no sigue; Perspicacia «Sedequías», núm. 4, habla de su consejo inspirado.",
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "monte-moria",
+   "campo": "sources",
+   "valores": [
+    "jeremias-38"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "monte-moria",
+   "campo": "names",
+   "valores": [
+    {
+     "name": "Tercera entrada",
+     "note": "Entrada de la casa de Jehová adonde Sedequías mandó llevar a Jeremías para hablarle a solas (Jer 38:14)."
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "events",
+   "id": "sitio-de-jerusalen-609",
+   "campo": "sources",
+   "valores": [
+    "jeremias-39"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "events",
+   "id": "sedequias-huye-y-lo-capturan-cerca-de-jerico",
+   "campo": "sources",
+   "valores": [
+    "jeremias-39"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "events",
+   "id": "nabucodonosor-juzga-a-sedequias-en-ribla",
+   "campo": "sources",
+   "valores": [
+    "jeremias-39"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "events",
+   "id": "destruccion-de-jerusalen-607",
+   "campo": "sources",
+   "valores": [
+    "jeremias-39"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "sedequias",
+   "campo": "sources",
+   "valores": [
+    "jeremias-39"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "sedequias",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "lived_in",
+     "place": "babilonia",
+     "inferred": false,
+     "sources": [
+      "jeremias-39"
+     ],
+     "reason": "Jer 39:7: ciego y sujeto con grilletes de cobre, se lo llevan a Babilonia.",
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "nabucodonosor-ii",
+   "campo": "sources",
+   "valores": [
+    "jeremias-39"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "nebuzaradan",
+   "campo": "sources",
+   "valores": [
+    "jeremias-39"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "nebuzaradan",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "tie",
+     "person": "nabucodonosor-ii",
+     "word": "master",
+     "inferred": false,
+     "sources": [
+      "jeremias-39"
+     ],
+     "reason": "Jer 39:9-13: jefe de la guardia, recibe órdenes del rey Nabucodonosor sobre Jeremías.",
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jeremias-profeta",
+   "campo": "sources",
+   "valores": [
+    "jeremias-39"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jeremias-profeta",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "tie",
+     "person": "guedalias",
+     "word": "host",
+     "date": {
+      "from": -606,
+      "to": -606,
+      "precision": "year",
+      "approx": false,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "607 a.e.c."
+     },
+     "inferred": false,
+     "sources": [
+      "jeremias-39",
+      "jeremias-40",
+      "it-guedalias"
+     ],
+     "reason": "Jer 39:14: lo entregan a Guedalías para que lo lleve a su casa; Jer 40:6: se queda a vivir con él en Mizpá.",
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    },
+    {
+     "type": "tie",
+     "person": "sedequias",
+     "word": "custodian",
+     "date": {
+      "from": -608,
+      "to": -606,
+      "precision": "range",
+      "approx": true,
+      "type": "narrative",
+      "chronology": "tnm",
+      "text": "entre 609 y 607 a.e.c. (tiempo narrativo: desde que Sedequías lo pone en el Patio de la Guardia hasta la toma de Jerusalén)"
+     },
+     "inferred": false,
+     "sources": [
+      "jeremias-39"
+     ],
+     "reason": "Jer 39:15: hasta la toma de la ciudad, el Patio de la Guardia seguía siendo su prisión, por orden de Sedequías (Jer 37:21).",
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    },
+    {
+     "type": "lived_in",
+     "place": "jerusalen",
+     "inferred": true,
+     "sources": [
+      "jeremias-39"
+     ],
+     "reason": "Jer 39:14, 15: su prisión, el Patio de la Guardia, estaba en Jerusalén; de allí lo sacan los príncipes.",
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    },
+    {
+     "type": "tie",
+     "person": "nebuzaradan",
+     "word": "custodian",
+     "date": {
+      "from": -606,
+      "to": -606,
+      "precision": "year",
+      "approx": false,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "607 a.e.c."
+     },
+     "inferred": false,
+     "sources": [
+      "jeremias-40",
+      "jeremias-39",
+      "it-nebuzaradan"
+     ],
+     "reason": "Jer 39:11, 12 y 40:1-4: el rey le manda cuidar de él; lo había llevado esposado hasta Ramá y allí lo suelta.",
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "guedalias",
+   "campo": "sources",
+   "valores": [
+    "jeremias-39"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "guedalias",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "ahicam",
+     "word": "father",
+     "inferred": false,
+     "sources": [
+      "jeremias-39"
+     ],
+     "reason": "Jer 39:14: Guedalías, hijo de Ahicam, hijo de Safán.",
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "ahicam",
+   "campo": "sources",
+   "valores": [
+    "jeremias-39"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "ahicam",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "safan",
+     "word": "father",
+     "inferred": false,
+     "sources": [
+      "jeremias-39"
+     ],
+     "reason": "Jer 39:14: Guedalías, hijo de Ahicam, hijo de Safán.",
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "jerusalen",
+   "campo": "sources",
+   "valores": [
+    "jeremias-39"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "jerusalen",
+   "campo": "names",
+   "valores": [
+    {
+     "name": "Puerta del Medio",
+     "note": "Donde se sentaron los príncipes de Babilonia tras la brecha de 607 (Jer 39:3). Perspicacia «Puerta» la iguala, lo más probable, con la de la Ciudad Vieja; otros, con la de Efraín o la del Pescado."
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "llanuras-deserticas-de-jerico",
+   "campo": "sources",
+   "valores": [
+    "jeremias-39"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "araba",
+   "campo": "sources",
+   "valores": [
+    "jeremias-39"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "ribla",
+   "campo": "sources",
+   "valores": [
+    "jeremias-39"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "events",
+   "id": "nabucodonosor-pone-a-guedalias-al-mando",
+   "campo": "sources",
+   "valores": [
+    "jeremias-40",
+    "it-jonatan",
+    "it-efai",
+    "it-nebuzaradan"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "events",
+   "id": "nabucodonosor-pone-a-guedalias-al-mando",
+   "campo": "people",
+   "valores": [
+    "jonatan-hijo-de-carea",
+    "nebuzaradan"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "events",
+   "id": "nabucodonosor-pone-a-guedalias-al-mando",
+   "campo": "present",
+   "valores": [
+    "jonatan-hijo-de-carea"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jeremias-profeta",
+   "campo": "sources",
+   "valores": [
+    "jeremias-40"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jeremias-profeta",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "lived_in",
+     "place": "mizpa-de-benjamin",
+     "date": {
+      "from": -606,
+      "to": -606,
+      "precision": "year",
+      "approx": false,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "607 a.e.c."
+     },
+     "inferred": false,
+     "sources": [
+      "jeremias-40",
+      "it-guedalias"
+     ],
+     "reason": "Jer 40:6: se va con Guedalías a Mizpá y se queda a vivir allí entre la gente que quedaba.",
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    },
+    {
+     "type": "tie",
+     "person": "nebuzaradan",
+     "word": "custodian",
+     "date": {
+      "from": -606,
+      "to": -606,
+      "precision": "year",
+      "approx": false,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "607 a.e.c."
+     },
+     "inferred": false,
+     "sources": [
+      "jeremias-40",
+      "jeremias-39",
+      "it-nebuzaradan"
+     ],
+     "reason": "Jer 39:11, 12 y 40:1-4: el rey le manda cuidar de él; lo había llevado esposado hasta Ramá y allí lo suelta.",
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "nebuzaradan",
+   "campo": "sources",
+   "valores": [
+    "jeremias-40"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "guedalias",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "ahicam",
+     "word": "father",
+     "inferred": false,
+     "sources": [
+      "jeremias-40"
+     ],
+     "reason": "Jer 40:5, 9, 11: Guedalías, hijo de Ahicam, hijo de Safán.",
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    },
+    {
+     "type": "holds_office",
+     "place": "juda",
+     "office": "governor",
+     "date": {
+      "from": -606,
+      "to": -606,
+      "precision": "year",
+      "approx": false,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "607 a.e.c."
+     },
+     "inferred": false,
+     "sources": [
+      "jeremias-40"
+     ],
+     "reason": "Jer 40:5, 7, 11: el rey de Babilonia le confió el gobierno de las ciudades de Judá y del resto que quedó.",
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    },
+    {
+     "type": "tie",
+     "person": "nabucodonosor-ii",
+     "word": "master",
+     "date": {
+      "from": -606,
+      "to": -606,
+      "precision": "year",
+      "approx": false,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "607 a.e.c."
+     },
+     "inferred": true,
+     "sources": [
+      "jeremias-40",
+      "it-guedalias"
+     ],
+     "reason": "Jer 40:5, 7, 9: el rey de Babilonia lo puso al mando; Perspicacia «Guedalías», núm. 4, dice que Nabucodonosor lo nombró gobernador.",
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    },
+    {
+     "type": "tie",
+     "person": "baalis",
+     "word": "enemy",
+     "date": {
+      "from": -606,
+      "to": -606,
+      "precision": "year",
+      "approx": false,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "607 a.e.c."
+     },
+     "inferred": true,
+     "sources": [
+      "jeremias-40",
+      "it-guedalias"
+     ],
+     "reason": "Jer 40:14: Baalís envió a Ismael para matarlo; Perspicacia «Guedalías», núm. 4, dice que su gobierno no agradaba al rey ammonita.",
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "ahicam",
+   "campo": "sources",
+   "valores": [
+    "jeremias-40"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "ahicam",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "safan",
+     "word": "father",
+     "inferred": false,
+     "sources": [
+      "jeremias-40"
+     ],
+     "reason": "Jer 40:5, 9, 11: Guedalías, hijo de Ahicam, hijo de Safán.",
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "ismael-hijo-de-netanias",
+   "campo": "sources",
+   "valores": [
+    "jeremias-40"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "ismael-hijo-de-netanias",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "netanias-hijo-de-elisama",
+     "word": "father",
+     "inferred": false,
+     "sources": [
+      "jeremias-40"
+     ],
+     "reason": "Jer 40:8, 14, 15: Ismael hijo de Netanías.",
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    },
+    {
+     "type": "tie",
+     "person": "guedalias",
+     "word": "enemy",
+     "date": {
+      "from": -606,
+      "to": -606,
+      "precision": "year",
+      "approx": false,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "607 a.e.c."
+     },
+     "inferred": false,
+     "sources": [
+      "jeremias-40",
+      "it-ismael"
+     ],
+     "reason": "Jer 40:14: lo enviaron para matar a Guedalías; Jer 41:2 cuenta que lo mató. Perspicacia «Ismael», núm. 5.",
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "johanan-hijo-de-carea",
+   "campo": "sources",
+   "valores": [
+    "jeremias-40"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "johanan-hijo-de-carea",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "carea",
+     "word": "father",
+     "inferred": false,
+     "sources": [
+      "jeremias-40"
+     ],
+     "reason": "Jer 40:8, 13, 15, 16: Johanán hijo de Caréah.",
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    },
+    {
+     "type": "kin",
+     "person": "jonatan-hijo-de-carea",
+     "word": "brother",
+     "inferred": false,
+     "sources": [
+      "jeremias-40",
+      "it-jonatan"
+     ],
+     "reason": "Jer 40:8: Johanán y Jonatán, los hijos de Caréah.",
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    },
+    {
+     "type": "tie",
+     "person": "ismael-hijo-de-netanias",
+     "word": "enemy",
+     "date": {
+      "from": -606,
+      "to": -606,
+      "precision": "year",
+      "approx": false,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "607 a.e.c."
+     },
+     "inferred": false,
+     "sources": [
+      "jeremias-40",
+      "it-johanan"
+     ],
+     "reason": "Jer 40:15: pide a Guedalías permiso para matar a Ismael en secreto; Jer 41:11, 12: sale a pelear contra él.",
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "seraya-hijo-de-tanhumet",
+   "campo": "sources",
+   "valores": [
+    "jeremias-40"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "seraya-hijo-de-tanhumet",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "tanhumet",
+     "word": "father",
+     "inferred": false,
+     "sources": [
+      "jeremias-40"
+     ],
+     "reason": "Jer 40:8: Seraya hijo de Tanhúmet.",
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jaazanias-jefe-militar",
+   "campo": "sources",
+   "valores": [
+    "jeremias-40"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jonatan-hijo-de-saul",
+   "campo": "distinct_from",
+   "valores": [
+    "jonatan-hijo-de-carea"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jonatan-levita",
+   "campo": "distinct_from",
+   "valores": [
+    "jonatan-hijo-de-carea"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jonatan-hijo-de-abiatar",
+   "campo": "distinct_from",
+   "valores": [
+    "jonatan-hijo-de-carea"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jonatan-hijo-de-sama",
+   "campo": "distinct_from",
+   "valores": [
+    "jonatan-hijo-de-carea"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jonatan-hijo-de-sague",
+   "campo": "distinct_from",
+   "valores": [
+    "jonatan-hijo-de-carea"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "jerusalen",
+   "campo": "sources",
+   "valores": [
+    "jeremias-40"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "rama-de-benjamin",
+   "campo": "sources",
+   "valores": [
+    "jeremias-40"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "moab",
+   "campo": "sources",
+   "valores": [
+    "jeremias-40"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "ammon",
+   "campo": "sources",
+   "valores": [
+    "jeremias-40"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "edom",
+   "campo": "sources",
+   "valores": [
+    "jeremias-40"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "ismael-hijo-de-netanias",
+   "campo": "sources",
+   "valores": [
+    "jeremias-41"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "ismael-hijo-de-netanias",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "netanias-hijo-de-elisama",
+     "word": "father",
+     "sources": [
+      "jeremias-41"
+     ],
+     "reason": "Jer 41:1: Ismael hijo de Netanías, hijo de Elisamá.",
+     "inferred": false,
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    },
+    {
+     "type": "tie",
+     "person": "guedalias",
+     "word": "host",
+     "date": {
+      "from": -606,
+      "to": -606,
+      "precision": "year",
+      "approx": false,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "607 a.e.c."
+     },
+     "inferred": true,
+     "sources": [
+      "jeremias-41",
+      "it-ismael"
+     ],
+     "reason": "Jer 41:1, 2: lo mató mientras comían juntos en Mizpá; Perspicacia «Ismael», núm. 5, dice que Guedalías los agasajaba con una comida.",
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    },
+    {
+     "type": "tie",
+     "person": "guedalias",
+     "word": "enemy",
+     "date": {
+      "from": -606,
+      "to": -606,
+      "precision": "year",
+      "approx": false,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "607 a.e.c."
+     },
+     "sources": [
+      "jeremias-41",
+      "it-ismael"
+     ],
+     "reason": "Jer 41:2, 18: Ismael mató a Guedalías, gobernador nombrado por Babilonia; Perspicacia «Ismael», núm. 5, dice que conspiró con Baalís para hacerlo.",
+     "inferred": false,
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "netanias-hijo-de-elisama",
+   "campo": "sources",
+   "valores": [
+    "jeremias-41"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "netanias-hijo-de-elisama",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "elisama-abuelo-de-ismael",
+     "word": "father",
+     "sources": [
+      "jeremias-41"
+     ],
+     "reason": "Jer 41:1: Ismael hijo de Netanías, hijo de Elisamá.",
+     "inferred": false,
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "elisama-abuelo-de-ismael",
+   "campo": "sources",
+   "valores": [
+    "jeremias-41"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "guedalias",
+   "campo": "sources",
+   "valores": [
+    "jeremias-41"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "guedalias",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "ahicam",
+     "word": "father",
+     "sources": [
+      "jeremias-41"
+     ],
+     "reason": "Jer 41:2: Guedalías, hijo de Ahicam, hijo de Safán.",
+     "inferred": false,
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    },
+    {
+     "type": "lived_in",
+     "place": "mizpa-de-benjamin",
+     "sources": [
+      "jeremias-41"
+     ],
+     "reason": "Jer 41:1, 3: Ismael fue a verlo a Mizpá, donde estaba con judíos y soldados caldeos.",
+     "inferred": false,
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    },
+    {
+     "type": "holds_office",
+     "place": "juda",
+     "office": "governor",
+     "date": {
+      "from": -606,
+      "to": -606,
+      "precision": "year",
+      "approx": false,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "607 a.e.c."
+     },
+     "sources": [
+      "jeremias-41"
+     ],
+     "reason": "Jer 41:2, 18: el rey de Babilonia lo había puesto al mando del país.",
+     "inferred": false,
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "ahicam",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "safan",
+     "word": "father",
+     "sources": [
+      "jeremias-41"
+     ],
+     "reason": "Jer 41:2: Guedalías, hijo de Ahicam, hijo de Safán.",
+     "inferred": false,
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "mizpa-de-benjamin",
+   "campo": "sources",
+   "valores": [
+    "jeremias-41"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "events",
+   "id": "asa-fortifica-gueba-y-mizpa",
+   "campo": "passages",
+   "valores": [
+    "Jer 41:9"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "siquem",
+   "campo": "sources",
+   "valores": [
+    "jeremias-41"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "silo",
+   "campo": "sources",
+   "valores": [
+    "jeremias-41"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "samaria",
+   "campo": "sources",
+   "valores": [
+    "jeremias-41"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "nebuzaradan",
+   "campo": "sources",
+   "valores": [
+    "jeremias-41"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "ammon",
+   "campo": "sources",
+   "valores": [
+    "jeremias-41"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "johanan-hijo-de-carea",
+   "campo": "sources",
+   "valores": [
+    "jeremias-41"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "johanan-hijo-de-carea",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "carea",
+     "word": "father",
+     "sources": [
+      "jeremias-41"
+     ],
+     "reason": "Jer 41:11, 13, 16: Johanán hijo de Caréah.",
+     "inferred": false,
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    },
+    {
+     "type": "tie",
+     "person": "ismael-hijo-de-netanias",
+     "word": "enemy",
+     "date": {
+      "from": -606,
+      "to": -606,
+      "precision": "year",
+      "approx": false,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "607 a.e.c."
+     },
+     "sources": [
+      "jeremias-41",
+      "it-johanan"
+     ],
+     "reason": "Jer 41:11, 12: salió con sus hombres a pelear contra Ismael; Perspicacia «Johanán», núm. 5, dice que quería vengar al gobernador.",
+     "inferred": false,
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jaazanias-jefe-militar",
+   "campo": "sources",
+   "valores": [
+    "jeremias-41"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "gabaon",
+   "campo": "sources",
+   "valores": [
+    "jeremias-41"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "gabaon",
+   "campo": "names",
+   "valores": [
+    {
+     "name": "Grandes aguas de Gabaón",
+     "note": "Jer 41:12: allí alcanzó Johanán a Ismael. La nota al pie da también «el gran estanque»; Perspicacia «Gabaón» no dice qué eran."
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "belen",
+   "campo": "sources",
+   "valores": [
+    "jeremias-41"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jaazanias-jefe-militar",
+   "campo": "sources",
+   "valores": [
+    "jeremias-42",
+    "it-jezanias",
+    "it-hosaya"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jaazanias-jefe-militar",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "hosaya-padre-de-jezanias",
+     "word": "father",
+     "sources": [
+      "jeremias-42",
+      "it-hosaya",
+      "it-jezanias"
+     ],
+     "reason": "Jer 42:1 lo llama Jezanías hijo de Hosaya; Perspicacia «Hosaya», núm. 1, y «Jezanías» lo hacen el mismo jefe que Jaazanías.",
+     "inferred": false,
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "johanan-hijo-de-carea",
+   "campo": "sources",
+   "valores": [
+    "jeremias-42"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "johanan-hijo-de-carea",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "carea",
+     "word": "father",
+     "sources": [
+      "jeremias-42"
+     ],
+     "reason": "Jer 42:1, 8: Johanán hijo de Caréah.",
+     "inferred": false,
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jeremias-profeta",
+   "campo": "sources",
+   "valores": [
+    "jeremias-42",
+    "si-jeremias"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jeremias-profeta",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "holds_office",
+     "office": "prophet",
+     "date": {
+      "from": -646,
+      "to": -579,
+      "precision": "range",
+      "approx": false,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "647-580 a.e.c."
+     },
+     "sources": [
+      "jeremias-42"
+     ],
+     "reason": "Jer 42:2, 4 lo llaman el profeta Jeremías.",
+     "inferred": false,
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jaazanias-jefe-militar",
+   "campo": "sources",
+   "valores": [
+    "jeremias-43",
+    "it-jezanias",
+    "it-hosaya"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jaazanias-jefe-militar",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "hosaya-padre-de-jezanias",
+     "word": "father",
+     "sources": [
+      "jeremias-43",
+      "it-hosaya",
+      "it-jezanias"
+     ],
+     "reason": "Jer 43:2 lo llama Azarías hijo de Hosaya; Perspicacia «Hosaya», núm. 1, y «Jezanías» lo dan por el mismo jefe.",
+     "inferred": false,
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    },
+    {
+     "type": "lived_in",
+     "place": "egipto",
+     "inferred": true,
+     "sources": [
+      "jeremias-43",
+      "it-jaazanias"
+     ],
+     "reason": "Jer 43:2-5: como Azarías se opone a Jeremías, y los jefes del ejército llevan al resto a Egipto; Perspicacia «Jaazanías», núm. 4, lo pone entre ellos.",
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "johanan-hijo-de-carea",
+   "campo": "sources",
+   "valores": [
+    "jeremias-43"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "johanan-hijo-de-carea",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "carea",
+     "word": "father",
+     "sources": [
+      "jeremias-43"
+     ],
+     "reason": "Jer 43:2, 4, 5: Johanán hijo de Caréah.",
+     "inferred": false,
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "baruc-hijo-de-nerias",
+   "campo": "sources",
+   "valores": [
+    "it-nerias"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "baruc-hijo-de-nerias",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "nerias",
+     "word": "father",
+     "sources": [
+      "jeremias-43",
+      "it-nerias"
+     ],
+     "reason": "Jer 43:3, 6 lo llaman Baruc hijo de Nerías.",
+     "inferred": false,
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "events",
+   "id": "el-resto-de-juda-huye-a-egipto",
+   "campo": "people",
+   "valores": [
+    "baruc-hijo-de-nerias"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "events",
+   "id": "el-resto-de-juda-huye-a-egipto",
+   "campo": "places",
+   "valores": [
+    "tahpanhes"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "events",
+   "id": "el-resto-de-juda-huye-a-egipto",
+   "campo": "sources",
+   "valores": [
+    "it-baruc",
+    "it-tahpanhes"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "events",
+   "id": "el-resto-de-juda-huye-a-egipto",
+   "campo": "summary",
+   "antes": "Por miedo a los caldeos después de la muerte de Guedalías, Johanán y los otros jefes del ejército se llevan a Egipto a todo el pueblo que quedaba, pequeños y grandes, y también a Jeremías.",
+   "despues": "Por miedo a los caldeos tras la muerte de Guedalías, Johanán y los demás jefes desoyen a Jeremías y se llevan a Egipto, hasta Tahpanhés, a todo el pueblo que quedaba, con Jeremías y Baruc.",
+   "historial": {
+    "date": "2026-10-12",
+    "change": "El resumen añade a Baruc, que también va a Egipto, y la llegada a Tahpanhés, que cuenta Jer 43:6, 7.",
+    "source": "jeremias-43"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jeremias-profeta",
+   "campo": "sources",
+   "valores": [
+    "jeremias-43"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jeremias-profeta",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "holds_office",
+     "office": "prophet",
+     "date": {
+      "from": -646,
+      "to": -579,
+      "precision": "range",
+      "approx": false,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "647-580 a.e.c."
+     },
+     "sources": [
+      "jeremias-43"
+     ],
+     "reason": "Jer 43:6 lo llama el profeta Jeremías.",
+     "inferred": false,
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    },
+    {
+     "type": "lived_in",
+     "place": "egipto",
+     "sources": [
+      "jeremias-43",
+      "it-tahpanhes"
+     ],
+     "reason": "Jer 43:6-8: el resto se lo lleva a Egipto, y en Tahpanhés recibe la palabra de Jehová.",
+     "inferred": false,
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "guedalias",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "ahicam",
+     "word": "father",
+     "sources": [
+      "jeremias-43"
+     ],
+     "reason": "Jer 43:6: Guedalías hijo de Ahicam.",
+     "inferred": false,
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "ahicam",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "safan",
+     "word": "father",
+     "sources": [
+      "jeremias-43"
+     ],
+     "reason": "Jer 43:6: Ahicam hijo de Safán.",
+     "inferred": false,
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "on",
+   "campo": "names",
+   "valores": [
+    {
+     "name": "Bet-Semes",
+     "note": "Nombre de Jer 43:13, que la nota traduce «Casa del Sol» y explica como Heliópolis. Perspicacia «Bet-semes», núm. 4, cree que es esta ciudad."
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "on",
+   "campo": "sources",
+   "valores": [
+    "jeremias-43",
+    "it-bet-semes"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "egipto",
+   "campo": "sources",
+   "valores": [
+    "jeremias-43"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jeremias-profeta",
+   "campo": "sources",
+   "valores": [
+    "jeremias-44"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jeremias-profeta",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "lived_in",
+     "place": "egipto",
+     "sources": [
+      "jeremias-44",
+      "si-jeremias"
+     ],
+     "reason": "Jer 44:1: en Egipto recibe el mensaje para los judíos que viven allí; «Toda Escritura» dice que profetizó en Egipto.",
+     "inferred": false,
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "sedequias",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "tie",
+     "person": "nabucodonosor-ii",
+     "word": "enemy",
+     "sources": [
+      "jeremias-44"
+     ],
+     "reason": "Jer 44:30: Jehová entregó a Sedequías en manos de Nabucodonosor, su enemigo, que quería quitarle la vida.",
+     "inferred": false,
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "menfis",
+   "campo": "sources",
+   "valores": [
+    "jeremias-44"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "patros",
+   "campo": "sources",
+   "valores": [
+    "jeremias-44"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "egipto",
+   "campo": "sources",
+   "valores": [
+    "jeremias-44"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "baruc-hijo-de-nerias",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "nerias",
+     "word": "father",
+     "inferred": false,
+     "sources": [
+      "jeremias-45"
+     ],
+     "reason": "Jer 45:1 lo llama Baruc hijo de Nerías.",
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    },
+    {
+     "type": "accompanies",
+     "person": "jeremias-profeta",
+     "word": "fellow_worker",
+     "date": {
+      "from": -624,
+      "to": -606,
+      "precision": "range",
+      "approx": false,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "625-607 a.e.c."
+     },
+     "inferred": false,
+     "sources": [
+      "jeremias-45"
+     ],
+     "reason": "Jer 45:1: Baruc escribe en un libro las palabras que Jeremías le dicta en el cuarto año de Jehoiaquim.",
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jehoiaquim",
+   "campo": "sources",
+   "valores": [
+    "jeremias-45"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jehoiaquim",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "josias",
+     "word": "father",
+     "inferred": false,
+     "sources": [
+      "jeremias-45"
+     ],
+     "reason": "Jer 45:1 lo llama Jehoiaquim hijo de Josías, rey de Judá.",
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jeremias-profeta",
+   "campo": "sources",
+   "valores": [
+    "jeremias-45"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jeremias-profeta",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "holds_office",
+     "office": "prophet",
+     "date": {
+      "from": -646,
+      "to": -579,
+      "precision": "range",
+      "approx": false,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "647-580 a.e.c."
+     },
+     "inferred": false,
+     "sources": [
+      "jeremias-45"
+     ],
+     "reason": "Jer 45:1 lo llama el profeta Jeremías.",
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "events",
+   "id": "batalla-de-carquemis",
+   "campo": "passages",
+   "antes": [
+    "Jer 46:1-2"
+   ],
+   "despues": [
+    "Jer 46:1-12"
+   ],
+   "historial": {
+    "date": "2026-10-12",
+    "change": "El pasaje crece a Jer 46:1-12: el poema de 46:3-12 describe la misma derrota junto al Éufrates (Perspicacia «Egipto, egipcio»).",
+    "source": "jeremias-46"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "events",
+   "id": "batalla-de-carquemis",
+   "campo": "sources",
+   "valores": [
+    "it-nabucodonosor",
+    "it-egipto",
+    "it-cus"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "events",
+   "id": "batalla-de-carquemis",
+   "campo": "people",
+   "antes": [
+    "nabucodonosor-ii",
+    "neko",
+    "jehoiaquim"
+   ],
+   "despues": [
+    "nabucodonosor-ii",
+    "neko"
+   ],
+   "historial": {
+    "date": "2026-10-12",
+    "change": "Jehoiaquim sale de people: Jer 46:2 solo lo nombra para fechar la batalla, y sin present el sitio lo situaba en Carquemis.",
+    "source": "jeremias-46"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "events",
+   "id": "batalla-de-carquemis",
+   "campo": "present",
+   "antes": null,
+   "despues": [
+    "nabucodonosor-ii"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jeremias-profeta",
+   "campo": "sources",
+   "valores": [
+    "jeremias-46"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jeremias-profeta",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "holds_office",
+     "office": "prophet",
+     "date": {
+      "from": -646,
+      "to": -579,
+      "precision": "range",
+      "approx": false,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "647-580 a.e.c."
+     },
+     "inferred": false,
+     "sources": [
+      "jeremias-46"
+     ],
+     "reason": "Jer 46:1 y 13 lo llaman el profeta Jeremías.",
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "neko",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "holds_office",
+     "place": "egipto",
+     "office": "king",
+     "inferred": false,
+     "sources": [
+      "jeremias-46"
+     ],
+     "reason": "Jer 46:2 lo llama el faraón Nekó, rey de Egipto.",
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    },
+    {
+     "type": "tie",
+     "person": "nabucodonosor-ii",
+     "word": "enemy",
+     "date": {
+      "from": -624,
+      "to": -624,
+      "precision": "year",
+      "approx": false,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "625 a.e.c."
+     },
+     "inferred": false,
+     "sources": [
+      "jeremias-46",
+      "it-carquemis",
+      "it-nabucodonosor"
+     ],
+     "reason": "Jer 46:2: Nabucodonosor derrota en Carquemis al ejército de Nekó. Perspicacia «Carquemis», párr. 4, fecha la batalla en 625.",
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "nabucodonosor-ii",
+   "campo": "sources",
+   "valores": [
+    "jeremias-46"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jehoiaquim",
+   "campo": "sources",
+   "valores": [
+    "jeremias-46"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jehoiaquim",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "josias",
+     "word": "father",
+     "inferred": false,
+     "sources": [
+      "jeremias-46"
+     ],
+     "reason": "Jer 46:2 lo llama Jehoiaquim hijo de Josías, rey de Judá.",
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "egipto",
+   "campo": "sources",
+   "valores": [
+    "jeremias-46"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "rio-eufrates",
+   "campo": "sources",
+   "valores": [
+    "jeremias-46"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "put",
+   "campo": "sources",
+   "valores": [
+    "jeremias-46"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "lud",
+   "campo": "sources",
+   "valores": [
+    "jeremias-46"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "menfis",
+   "campo": "sources",
+   "valores": [
+    "jeremias-46"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "tahpanhes",
+   "campo": "sources",
+   "valores": [
+    "jeremias-46"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "no-amon",
+   "campo": "sources",
+   "valores": [
+    "jeremias-46"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "etiopia",
+   "campo": "sources",
+   "valores": [
+    "jeremias-46"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jeremias-profeta",
+   "campo": "sources",
+   "valores": [
+    "jeremias-47"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jeremias-profeta",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "holds_office",
+     "office": "prophet",
+     "date": {
+      "from": -646,
+      "to": -579,
+      "precision": "range",
+      "approx": false,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "647-580 a.e.c."
+     },
+     "inferred": false,
+     "sources": [
+      "jeremias-47"
+     ],
+     "reason": "Jer 47:1 lo llama el profeta Jeremías.",
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "filistea",
+   "campo": "sources",
+   "valores": [
+    "jeremias-47"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "gaza",
+   "campo": "sources",
+   "valores": [
+    "jeremias-47"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "asquelon",
+   "campo": "sources",
+   "valores": [
+    "jeremias-47"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "tiro",
+   "campo": "sources",
+   "valores": [
+    "jeremias-47"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "sidon",
+   "campo": "sources",
+   "valores": [
+    "jeremias-47"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "places",
+   "id": "creta",
+   "campo": "sources",
+   "antes": [
+    "it-creta",
+    "tito-1",
+    "openbible-geo",
+    "amos-9",
+    "it-caftor",
+    "it-filistea",
+    "hch-27",
+    "deuteronomio-2",
+    "it-caftor"
+   ],
+   "despues": [
+    "it-creta",
+    "tito-1",
+    "openbible-geo",
+    "amos-9",
+    "it-caftor",
+    "it-filistea",
+    "hch-27",
+    "deuteronomio-2",
+    "jeremias-47"
+   ],
+   "historial": {
+    "date": "2026-10-12",
+    "change": "La lista de fuentes repetía it-caftor; queda una vez y se añade Jer 47, que llama a los filisteos restos de la isla de Caftor (Creta, según la nota).",
+    "source": "jeremias-47"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "baal-meon",
+   "campo": "names",
+   "valores": [
+    {
+     "name": "Bet-Meón",
+     "note": "Forma breve de Bet-Baal-Meón en Jer 48:23; Perspicacia la cree probablemente la misma ciudad."
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "baal-meon",
+   "campo": "sources",
+   "valores": [
+    "it-bet-meon",
+    "jeremias-48"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "moab",
+   "campo": "sources",
+   "valores": [
+    "jeremias-48"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "nebo",
+   "campo": "sources",
+   "valores": [
+    "jeremias-48"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "quiryataim",
+   "campo": "sources",
+   "valores": [
+    "jeremias-48"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "hesbon",
+   "campo": "sources",
+   "valores": [
+    "jeremias-48"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "horonaim",
+   "campo": "sources",
+   "valores": [
+    "jeremias-48"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "luhit",
+   "campo": "sources",
+   "valores": [
+    "jeremias-48"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "meseta",
+   "campo": "sources",
+   "valores": [
+    "jeremias-48"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "dibon",
+   "campo": "sources",
+   "valores": [
+    "jeremias-48"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "aroer",
+   "campo": "sources",
+   "valores": [
+    "jeremias-48"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "arnon",
+   "campo": "sources",
+   "valores": [
+    "jeremias-48"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "jahaz",
+   "campo": "sources",
+   "valores": [
+    "jeremias-48"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "mefaat",
+   "campo": "sources",
+   "valores": [
+    "jeremias-48"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "queriyot",
+   "campo": "sources",
+   "valores": [
+    "jeremias-48"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "quir-de-moab",
+   "campo": "sources",
+   "valores": [
+    "jeremias-48"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "jazer",
+   "campo": "sources",
+   "valores": [
+    "jeremias-48"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "sibma",
+   "campo": "sources",
+   "valores": [
+    "jeremias-48"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "eleale",
+   "campo": "sources",
+   "valores": [
+    "jeremias-48"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "zoar",
+   "campo": "sources",
+   "valores": [
+    "jeremias-48"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "eglat-selisiya",
+   "campo": "sources",
+   "valores": [
+    "jeremias-48"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "nimrim",
+   "campo": "sources",
+   "valores": [
+    "jeremias-48"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "ammon",
+   "campo": "sources",
+   "valores": [
+    "jeremias-49"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "raba",
+   "campo": "sources",
+   "valores": [
+    "jeremias-49"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "hesbon",
+   "campo": "sources",
+   "valores": [
+    "jeremias-49"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "gad",
+   "campo": "sources",
+   "valores": [
+    "jeremias-49"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "edom",
+   "campo": "sources",
+   "valores": [
+    "jeremias-49"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "teman",
+   "campo": "sources",
+   "valores": [
+    "jeremias-49"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "dedan",
+   "campo": "sources",
+   "valores": [
+    "jeremias-49"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "bozra",
+   "campo": "sources",
+   "valores": [
+    "jeremias-49"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "damasco",
+   "campo": "sources",
+   "valores": [
+    "jeremias-49"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "hamat",
+   "campo": "sources",
+   "valores": [
+    "jeremias-49"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "arpad",
+   "campo": "sources",
+   "valores": [
+    "jeremias-49"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "quedar",
+   "campo": "sources",
+   "valores": [
+    "jeremias-49"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "elam",
+   "campo": "sources",
+   "valores": [
+    "jeremias-49"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "nabucodonosor-ii",
+   "campo": "sources",
+   "valores": [
+    "jeremias-49"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jeremias-profeta",
+   "campo": "sources",
+   "valores": [
+    "jeremias-49"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jeremias-profeta",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "holds_office",
+     "office": "prophet",
+     "date": {
+      "from": -646,
+      "to": -579,
+      "precision": "range",
+      "approx": false,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "647-580 a.e.c."
+     },
+     "inferred": false,
+     "sources": [
+      "jeremias-49"
+     ],
+     "reason": "Jer 49:34 lo llama el profeta Jeremías.",
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "babilonia",
+   "campo": "sources",
+   "valores": [
+    "jeremias-50"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "caldea",
+   "campo": "sources",
+   "valores": [
+    "jeremias-50"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "nabucodonosor-ii",
+   "campo": "sources",
+   "valores": [
+    "jeremias-50"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jeremias-profeta",
+   "campo": "sources",
+   "valores": [
+    "jeremias-50"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jeremias-profeta",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "holds_office",
+     "office": "prophet",
+     "date": {
+      "from": -646,
+      "to": -579,
+      "precision": "range",
+      "approx": false,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "647-580 a.e.c."
+     },
+     "inferred": false,
+     "sources": [
+      "jeremias-50"
+     ],
+     "reason": "Jer 50:1 lo llama el profeta Jeremías.",
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "babilonia",
+   "campo": "sources",
+   "valores": [
+    "jeremias-51"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "caldea",
+   "campo": "sources",
+   "valores": [
+    "jeremias-51"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "media",
+   "campo": "sources",
+   "valores": [
+    "jeremias-51"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "ararat",
+   "campo": "sources",
+   "valores": [
+    "jeremias-51"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "rio-eufrates",
+   "campo": "sources",
+   "valores": [
+    "jeremias-51"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "nabucodonosor-ii",
+   "campo": "sources",
+   "valores": [
+    "jeremias-51"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jeremias-profeta",
+   "campo": "sources",
+   "valores": [
+    "jeremias-51"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "sedequias",
+   "campo": "sources",
+   "valores": [
+    "jeremias-51"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jeremias-profeta",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "holds_office",
+     "office": "prophet",
+     "date": {
+      "from": -646,
+      "to": -579,
+      "precision": "range",
+      "approx": false,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "647-580 a.e.c."
+     },
+     "sources": [
+      "jeremias-51"
+     ],
+     "reason": "Jer 51:59 lo llama el profeta Jeremías.",
+     "inferred": false,
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "seraya-hijo-de-nerias",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "nerias",
+     "word": "father",
+     "sources": [
+      "jeremias-51"
+     ],
+     "reason": "Jer 51:59 lo llama Seraya hijo de Nerías.",
+     "inferred": false,
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "journeys",
+   "id": "seraya-a-babilonia",
+   "campo": "reason",
+   "antes": "Perspicacia «Seraya», núm. 5, fecha el viaje en 614 a.e.c., cuarto año de Sedequías (Jer 51:59). Ningún suceso lo ancla aún; lo creará la lectura de Jeremías.",
+   "despues": "Perspicacia «Seraya», núm. 5, fecha el viaje en 614 a.e.c., cuarto año de Sedequías (Jer 51:59). Lo ancla el suceso jeremias-encarga-a-seraya-el-libro-contra-babilonia.",
+   "historial": {
+    "date": "2026-10-12",
+    "change": "La razón ya no dice que falte el suceso: la lectura de Jeremías 51 creó el que ancla el viaje.",
+    "source": "jeremias-51"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "events",
+   "id": "sitio-de-jerusalen-609",
+   "campo": "passages",
+   "valores": [
+    "Jer 52:3"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "events",
+   "id": "destruccion-de-jerusalen-607",
+   "campo": "passages",
+   "valores": [
+    "Jer 52:29"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "events",
+   "id": "destruccion-de-jerusalen-607",
+   "campo": "sources",
+   "valores": [
+    "it-nabucodonosor"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "events",
+   "id": "nabucodonosor-juzga-a-sedequias-en-ribla",
+   "campo": "summary",
+   "antes": "Llevan a Sedequías preso ante Nabucodonosor en Riblá. Allí matan a sus hijos en su presencia, luego lo dejan ciego y lo mandan encadenado a Babilonia.",
+   "despues": "Llevan a Sedequías preso ante Nabucodonosor en Riblá. Allí matan a sus hijos en su presencia y a los príncipes de Judá; luego lo dejan ciego y lo mandan encadenado a Babilonia.",
+   "historial": {
+    "date": "2026-10-12",
+    "change": "El resumen añade a los príncipes de Judá que el rey mató en Riblá con los hijos de Sedequías (Jer 52:10).",
+    "source": "jeremias-52"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "journeys",
+   "id": "nebuzaradan-lleva-a-juda-al-destierro",
+   "campo": "reference",
+   "antes": "2Re 25:8-21; Jer 39:8-10; 40:1; 52:12-30; 2Cr 36:17-20",
+   "despues": "2Re 25:8-21; Jer 39:8-10; 40:1; 52:12-27, 29; 2Cr 36:17-20",
+   "historial": {
+    "date": "2026-10-12",
+    "change": "La referencia deja Jer 52:28 y 52:30: son el destierro de 617 y el de 602, no el de 607 (Perspicacia «Nabucodonosor» y «Nebuzaradán»).",
+    "source": "jeremias-52"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "hamutal",
+   "campo": "sources",
+   "valores": [
+    "jeremias-52"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jeremias-de-libna",
+   "campo": "sources",
+   "valores": [
+    "jeremias-52"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "nabucodonosor-ii",
+   "campo": "sources",
+   "valores": [
+    "jeremias-52"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "nebuzaradan",
+   "campo": "sources",
+   "valores": [
+    "jeremias-52"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "seraya-hijo-de-azarias",
+   "campo": "sources",
+   "valores": [
+    "jeremias-52"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "sofonias-hijo-de-maaseya",
+   "campo": "sources",
+   "valores": [
+    "jeremias-52"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "joaquin",
+   "campo": "sources",
+   "valores": [
+    "jeremias-52"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "evil-merodac",
+   "campo": "sources",
+   "valores": [
+    "jeremias-52"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "sedequias",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "hamutal",
+     "word": "mother",
+     "sources": [
+      "jeremias-52"
+     ],
+     "reason": "Jer 52:1: su madre era Hamutal.",
+     "inferred": false,
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    },
+    {
+     "type": "lived_in",
+     "place": "jerusalen",
+     "sources": [
+      "jeremias-52"
+     ],
+     "reason": "Jer 52:1: reinó once años en Jerusalén.",
+     "inferred": false,
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    },
+    {
+     "type": "tie",
+     "person": "nabucodonosor-ii",
+     "word": "master",
+     "date": {
+      "from": -616,
+      "to": -608,
+      "precision": "range",
+      "approx": true,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "617-609 a.e.c."
+     },
+     "sources": [
+      "jeremias-52"
+     ],
+     "reason": "Jer 52:3, 4: se rebeló contra el rey de Babilonia, que en el año noveno vino a sitiar Jerusalén.",
+     "inferred": false,
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    },
+    {
+     "type": "lived_in",
+     "place": "babilonia",
+     "sources": [
+      "jeremias-52"
+     ],
+     "reason": "Jer 52:11: lo llevaron a Babilonia y lo tuvieron preso hasta su muerte.",
+     "inferred": false,
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    },
+    {
+     "type": "died_in",
+     "place": "babilonia",
+     "sources": [
+      "jeremias-52"
+     ],
+     "reason": "Jer 52:11: preso en Babilonia hasta el día de su muerte.",
+     "inferred": false,
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "hamutal",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "jeremias-de-libna",
+     "word": "father",
+     "sources": [
+      "jeremias-52"
+     ],
+     "reason": "Jer 52:1: hija de Jeremías de Libná.",
+     "inferred": false,
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jeremias-de-libna",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "lived_in",
+     "place": "libna",
+     "sources": [
+      "jeremias-52"
+     ],
+     "reason": "Jer 52:1 lo llama Jeremías de Libná.",
+     "inferred": false,
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "nebuzaradan",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "tie",
+     "person": "nabucodonosor-ii",
+     "word": "master",
+     "sources": [
+      "jeremias-52"
+     ],
+     "reason": "Jer 52:12: jefe de la guardia al servicio del rey de Babilonia.",
+     "inferred": false,
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "seraya-hijo-de-azarias",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "holds_office",
+     "place": "jerusalen",
+     "office": "high_priest",
+     "sources": [
+      "jeremias-52"
+     ],
+     "reason": "Jer 52:24 lo llama sacerdote principal.",
+     "inferred": false,
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    },
+    {
+     "type": "died_in",
+     "place": "ribla",
+     "sources": [
+      "jeremias-52"
+     ],
+     "reason": "Jer 52:24-27: el rey de Babilonia lo mató en Riblá.",
+     "inferred": false,
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "sofonias-hijo-de-maaseya",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "holds_office",
+     "place": "jerusalen",
+     "office": "priest",
+     "sources": [
+      "jeremias-52"
+     ],
+     "reason": "Jer 52:24 lo llama el segundo sacerdote.",
+     "inferred": false,
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    },
+    {
+     "type": "died_in",
+     "place": "ribla",
+     "sources": [
+      "jeremias-52"
+     ],
+     "reason": "Jer 52:24-27: lo llevaron a Riblá y allí lo mató el rey de Babilonia.",
+     "inferred": false,
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "joaquin",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "lived_in",
+     "place": "babilonia",
+     "sources": [
+      "jeremias-52"
+     ],
+     "reason": "Jer 52:31-34: en el año 37 de su destierro seguía preso en Babilonia.",
+     "inferred": false,
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    },
+    {
+     "type": "tie",
+     "person": "evil-merodac",
+     "word": "host",
+     "sources": [
+      "jeremias-52"
+     ],
+     "reason": "Jer 52:31-34: Evil-Merodac lo sacó de la cárcel y lo sentó a su mesa el resto de su vida.",
+     "inferred": false,
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    },
+    {
+     "type": "died_in",
+     "place": "babilonia",
+     "sources": [
+      "jeremias-52",
+      "jeremias-22",
+      "si-jeremias"
+     ],
+     "reason": "Jer 52:31-34: seguía en Babilonia, a la mesa del rey, hasta el día de su muerte; Jer 22:26 lo había anunciado («Toda Escritura», libro 24, párr. 18).",
+     "inferred": false,
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "evil-merodac",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "lived_in",
+     "place": "babilonia",
+     "sources": [
+      "jeremias-52"
+     ],
+     "reason": "Jer 52:31, 32: rey de Babilonia, donde tenía presos a Joaquín y a otros reyes.",
+     "inferred": false,
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "jerusalen",
+   "campo": "sources",
+   "valores": [
+    "jeremias-52"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "babilonia",
+   "campo": "sources",
+   "valores": [
+    "jeremias-52"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "libna",
+   "campo": "sources",
+   "valores": [
+    "jeremias-52"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "ribla",
+   "campo": "sources",
+   "valores": [
+    "jeremias-52"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "araba",
+   "campo": "sources",
+   "valores": [
+    "jeremias-52"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "llanuras-deserticas-de-jerico",
+   "campo": "sources",
+   "valores": [
+    "jeremias-52"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "periods",
+   "id": "sedequias",
+   "campo": "sources",
+   "valores": [
+    "jeremias-52"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "elnatan-padre-de-nehusta",
+   "campo": "sources",
+   "valores": [
+    "it-acbor"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "people",
+   "id": "elnatan-padre-de-nehusta",
+   "campo": "not_claimed",
+   "antes": [
+    "Que sea con seguridad Elnatán hijo de Acbor (Jer 26:22; 36:12): Perspicacia solo dice que quizás es el mismo."
+   ],
+   "despues": [
+    "Que sea con seguridad Elnatán hijo de Acbor (Jer 26:22; 36:12): Perspicacia «Elnatán» dice quizás, y «Acbor», núm. 2, lo da por muy probable."
+   ],
+   "historial": {
+    "date": "2026-10-12",
+    "change": "La identificación con Elnatán hijo de Acbor pasa de posible a probable: Perspicacia «Acbor», núm. 2, la da con mucha probabilidad.",
+    "source": "it-acbor"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "journeys",
+   "id": "elasa-y-guemarias-a-babilonia",
+   "campo": "sources",
+   "valores": [
+    "it-sedequias",
+    "it-seraya"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "journeys",
+   "id": "elasa-y-guemarias-a-babilonia",
+   "campo": "date",
+   "antes": {
+    "from": -616,
+    "to": -608,
+    "precision": "range",
+    "approx": true,
+    "type": "narrative",
+    "chronology": "tnm",
+    "text": "entre 617 y 609 a.e.c. (tiempo narrativo: reinado de Sedequías, antes del último sitio)"
+   },
+   "despues": {
+    "from": -616,
+    "to": -613,
+    "precision": "range",
+    "approx": true,
+    "type": "narrative",
+    "chronology": "tnm",
+    "text": "entre 617 y 614 a.e.c. (tiempo narrativo: al principio del reinado de Sedequías, quizá en su cuarto año)"
+   },
+   "historial": {
+    "date": "2026-10-12",
+    "change": "Fecha estrechada de 617-609 a 617-614: Perspicacia «Sedequías», núm. 4, pone el envío de Elasá y Guemarías al principio del reinado, quizá en su cuarto año (614, «Seraya», núm. 5).",
+    "source": "it-sedequias"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "journeys",
+   "id": "elasa-y-guemarias-a-babilonia",
+   "campo": "stops",
+   "antes": [
+    {
+     "order": 1,
+     "place": "jerusalen",
+     "reference": "Jer 29:1-3",
+     "date": {
+      "from": -616,
+      "to": -608,
+      "precision": "range",
+      "approx": true,
+      "type": "narrative",
+      "chronology": "tnm",
+      "text": "entre 617 y 609 a.e.c. (tiempo narrativo: reinado de Sedequías, antes del último sitio)"
+     },
+     "note": null,
+     "reason": "Jer 29:1: Jeremías envía la carta desde Jerusalén, y 29:3 dice que la llevan los dos enviados del rey. Tiempo narrativo entre 617 y 609 a.e.c.",
+     "sources": [
+      "jeremias-29",
+      "it-elasa"
+     ],
+     "checked_on": "2026-09-30",
+     "status": "verified"
+    },
+    {
+     "order": 2,
+     "place": "babilonia",
+     "reference": "Jer 29:3",
+     "date": {
+      "from": -616,
+      "to": -608,
+      "precision": "range",
+      "approx": true,
+      "type": "narrative",
+      "chronology": "tnm",
+      "text": "entre 617 y 609 a.e.c. (tiempo narrativo: reinado de Sedequías, antes del último sitio)"
+     },
+     "note": null,
+     "reason": "Jer 29:3: Sedequías los envía a Babilonia ante Nabucodonosor. Perspicacia «Elasá» y «Guemarías», núm. 2, cuentan el mismo viaje.",
+     "sources": [
+      "jeremias-29",
+      "it-elasa",
+      "it-guemarias"
+     ],
+     "checked_on": "2026-09-30",
+     "status": "verified"
+    }
+   ],
+   "despues": [
+    {
+     "order": 1,
+     "place": "jerusalen",
+     "reference": "Jer 29:1-3",
+     "date": {
+      "from": -616,
+      "to": -613,
+      "precision": "range",
+      "approx": true,
+      "type": "narrative",
+      "chronology": "tnm",
+      "text": "entre 617 y 614 a.e.c. (tiempo narrativo: al principio del reinado de Sedequías, quizá en su cuarto año)"
+     },
+     "note": null,
+     "reason": "Jer 29:1: Jeremías envía la carta desde Jerusalén, y 29:3 dice que la llevan los dos enviados del rey. Tiempo narrativo entre 617 y 614 a.e.c.",
+     "sources": [
+      "jeremias-29",
+      "it-elasa",
+      "it-sedequias"
+     ],
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    },
+    {
+     "order": 2,
+     "place": "babilonia",
+     "reference": "Jer 29:3",
+     "date": {
+      "from": -616,
+      "to": -613,
+      "precision": "range",
+      "approx": true,
+      "type": "narrative",
+      "chronology": "tnm",
+      "text": "entre 617 y 614 a.e.c. (tiempo narrativo: al principio del reinado de Sedequías, quizá en su cuarto año)"
+     },
+     "note": null,
+     "reason": "Jer 29:3: Sedequías los envía a Babilonia ante Nabucodonosor. Perspicacia «Elasá» y «Guemarías», núm. 2, cuentan el mismo viaje.",
+     "sources": [
+      "jeremias-29",
+      "it-elasa",
+      "it-guemarias",
+      "it-sedequias"
+     ],
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    }
+   ],
+   "historial": {
+    "date": "2026-10-12",
+    "change": "Las dos paradas toman la fecha 617-614 del viaje.",
+    "source": "it-sedequias"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "journeys",
+   "id": "elasa-y-guemarias-a-babilonia",
+   "campo": "reason",
+   "antes": "La carta va a los llevados con Jeconías en 617 a.e.c. (suceso nabucodonosor-se-lleva-a-joaquin-a-babilonia) y la manda Sedequías antes del sitio de 609 (suceso sitio-de-jerusalen-609). Perspicacia «Guemarías», núm. 2.",
+   "despues": "La carta va a los llevados con Jeconías en 617 a.e.c. (suceso nabucodonosor-se-lleva-a-joaquin-a-babilonia). Perspicacia «Sedequías», núm. 4, pone el envío al principio del reinado, quizá en su cuarto año (614, «Seraya», núm. 5).",
+   "historial": {
+    "date": "2026-10-12",
+    "change": "La razón cita ahora Perspicacia «Sedequías», núm. 4, y «Seraya», núm. 5, que acotan el envío a 617-614, en lugar del último sitio.",
+    "source": "it-sedequias"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "elasa",
+   "campo": "sources",
+   "valores": [
+    "it-seraya"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "people",
+   "id": "elasa",
+   "campo": "date",
+   "antes": {
+    "from": -616,
+    "to": -608,
+    "precision": "range",
+    "approx": true,
+    "type": "narrative",
+    "chronology": "tnm",
+    "text": "entre 617 y 609 a.e.c. (tiempo narrativo: reinado de Sedequías, antes del último sitio)"
+   },
+   "despues": {
+    "from": -616,
+    "to": -613,
+    "precision": "range",
+    "approx": true,
+    "type": "narrative",
+    "chronology": "tnm",
+    "text": "entre 617 y 614 a.e.c. (tiempo narrativo: al principio del reinado de Sedequías, quizá en su cuarto año)"
+   },
+   "historial": {
+    "date": "2026-10-12",
+    "change": "Fecha estrechada de 617-609 a 617-614: Perspicacia «Sedequías», núm. 4, pone el envío de Elasá y Guemarías al principio del reinado, quizá en su cuarto año (614, «Seraya», núm. 5).",
+    "source": "it-sedequias"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "people",
+   "id": "elasa",
+   "campo": "reason",
+   "antes": "Perspicacia «Elasá»; Jer 29:1-3. El reinado de Sedequías y el último sitio, en el estudio 3, acotan la fecha.",
+   "despues": "Perspicacia «Elasá»; Jer 29:1-3. Perspicacia «Sedequías», núm. 4, y «Seraya», núm. 5, ponen el viaje al principio del reinado de Sedequías, quizá en su cuarto año (614).",
+   "historial": {
+    "date": "2026-10-12",
+    "change": "La razón cita ahora Perspicacia «Sedequías», núm. 4, y «Seraya», núm. 5, que acotan el envío a 617-614, en lugar del último sitio.",
+    "source": "it-sedequias"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "guemarias-hijo-de-hilquias",
+   "campo": "sources",
+   "valores": [
+    "it-sedequias",
+    "it-seraya"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "people",
+   "id": "guemarias-hijo-de-hilquias",
+   "campo": "date",
+   "antes": {
+    "from": -616,
+    "to": -608,
+    "precision": "range",
+    "approx": true,
+    "type": "narrative",
+    "chronology": "tnm",
+    "text": "entre 617 y 609 a.e.c. (tiempo narrativo: reinado de Sedequías, antes del último sitio)"
+   },
+   "despues": {
+    "from": -616,
+    "to": -613,
+    "precision": "range",
+    "approx": true,
+    "type": "narrative",
+    "chronology": "tnm",
+    "text": "entre 617 y 614 a.e.c. (tiempo narrativo: al principio del reinado de Sedequías, quizá en su cuarto año)"
+   },
+   "historial": {
+    "date": "2026-10-12",
+    "change": "Fecha estrechada de 617-609 a 617-614: Perspicacia «Sedequías», núm. 4, pone el envío de Elasá y Guemarías al principio del reinado, quizá en su cuarto año (614, «Seraya», núm. 5).",
+    "source": "it-sedequias"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "people",
+   "id": "guemarias-hijo-de-hilquias",
+   "campo": "reason",
+   "antes": "Perspicacia «Guemarías», núm. 2; Jer 29:1-3. El texto no dice qué Hilquías era su padre.",
+   "despues": "Perspicacia «Guemarías», núm. 2; Jer 29:1-3. El texto no dice qué Hilquías era su padre. «Sedequías», núm. 4, y «Seraya», núm. 5, ponen el viaje al principio del reinado, quizá en 614.",
+   "historial": {
+    "date": "2026-10-12",
+    "change": "La razón cita ahora Perspicacia «Sedequías», núm. 4, y «Seraya», núm. 5, que acotan el envío a 617-614, en lugar del último sitio.",
+    "source": "it-sedequias"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "people",
+   "id": "guemarias-hijo-de-hilquias",
+   "campo": "relations",
+   "antes": [
+    {
+     "type": "accompanies",
+     "person": "elasa",
+     "word": "companion",
+     "date": {
+      "from": -616,
+      "to": -608,
+      "precision": "range",
+      "approx": true,
+      "type": "narrative",
+      "chronology": "tnm",
+      "text": "entre 617 y 609 a.e.c. (tiempo narrativo: reinado de Sedequías, antes del último sitio)"
+     },
+     "inferred": false,
+     "sources": [
+      "jeremias-29",
+      "it-guemarias"
+     ],
+     "reason": "Jer 29:3: el rey envía a los dos juntos a Babilonia y la carta va en sus manos.",
+     "status": "verified"
+    },
+    {
+     "type": "kin",
+     "person": "hilquias-padre-de-guemarias",
+     "word": "father",
+     "sources": [
+      "jeremias-29",
+      "it-hilquias",
+      "it-guemarias"
+     ],
+     "reason": "Jer 29:3 lo llama Guemarías hijo de Hilquías; Perspicacia «Hilquías», núm. 6.",
+     "inferred": false,
+     "status": "verified"
+    },
+    {
+     "type": "tie",
+     "person": "sedequias",
+     "word": "master",
+     "sources": [
+      "jeremias-29",
+      "it-guemarias"
+     ],
+     "reason": "Jer 29:3: el rey Sedequías lo envía a Babilonia, ante Nabucodonosor.",
+     "inferred": false,
+     "status": "verified"
+    }
+   ],
+   "despues": [
+    {
+     "type": "accompanies",
+     "person": "elasa",
+     "word": "companion",
+     "date": {
+      "from": -616,
+      "to": -613,
+      "precision": "range",
+      "approx": true,
+      "type": "narrative",
+      "chronology": "tnm",
+      "text": "entre 617 y 614 a.e.c. (tiempo narrativo: al principio del reinado de Sedequías, quizá en su cuarto año)"
+     },
+     "inferred": false,
+     "sources": [
+      "jeremias-29",
+      "it-guemarias",
+      "it-sedequias",
+      "it-seraya"
+     ],
+     "reason": "Jer 29:3: el rey envía a los dos juntos a Babilonia y la carta va en sus manos.",
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    },
+    {
+     "type": "kin",
+     "person": "hilquias-padre-de-guemarias",
+     "word": "father",
+     "sources": [
+      "jeremias-29",
+      "it-hilquias",
+      "it-guemarias"
+     ],
+     "reason": "Jer 29:3 lo llama Guemarías hijo de Hilquías; Perspicacia «Hilquías», núm. 6.",
+     "inferred": false,
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    },
+    {
+     "type": "tie",
+     "person": "sedequias",
+     "word": "master",
+     "sources": [
+      "jeremias-29",
+      "it-guemarias"
+     ],
+     "reason": "Jer 29:3: el rey Sedequías lo envía a Babilonia, ante Nabucodonosor.",
+     "inferred": false,
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    }
+   ],
+   "historial": {
+    "date": "2026-10-12",
+    "change": "La relación accompanies con Elasá toma la fecha 617-614 del viaje.",
+    "source": "it-sedequias"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "seraya-hijo-de-nerias",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "tie",
+     "person": "sedequias",
+     "word": "master",
+     "inferred": false,
+     "sources": [
+      "jeremias-51",
+      "it-seraya"
+     ],
+     "reason": "Jer 51:59: Seraya era funcionario del rey Sedequías; Perspicacia «Seraya», núm. 5, lo llama su comisario ordenador.",
+     "checked_on": "2026-10-12",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "jerusalen",
+   "campo": "names",
+   "valores": [
+    {
+     "name": "Jehová Es Nuestra Justicia",
+     "note": "Nombre que Jer 33:16 da a la Jerusalén restaurada; Perspicacia «Jehová Es Nuestra Justicia» dice que el nombre de Dios puesto sobre ella asegura su justicia."
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "jerusalen",
+   "campo": "sources",
+   "valores": [
+    "it-jehova-es-nuestra-justicia",
+    "jeremias-33"
+   ]
+  }
+ ],
+ "preguntas": []
+}

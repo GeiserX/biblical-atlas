@@ -1,0 +1,47 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: nebuzaradan-libera-a-jeremias-en-rama
+title: Nebuzaradán libera a Jeremías en Ramá
+date:
+  from: -606
+  to: -606
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 607 a.e.c.
+narrative_order:
+  series: jeremias
+  order: 40001
+  after: los-principes-de-babilonia-sacan-a-jeremias-del-patio-de-la-guardia
+places:
+- rama-de-benjamin
+- mizpa-de-benjamin
+people:
+- jeremias-profeta
+- nebuzaradan
+- guedalias
+present:
+- jeremias-profeta
+- nebuzaradan
+passages:
+- Jer 40:1-6
+summary: Jeremías iba esposado entre los desterrados. En Ramá, Nebuzaradán le quita las esposas y lo deja elegir; con víveres
+  y un regalo, él vuelve con Guedalías a Mizpá y se queda a vivir allí.
+reason: 'Jer 40:1-6. Perspicacia «Ramá», núm. 1: parece que allí se reunió a los cautivos de 607 antes de llevarlos a Babilonia;
+  «Nebuzaradán»: lo soltó cumpliendo las órdenes de Nabucodonosor.'
+sources:
+- jeremias-40
+- si-3
+- it-rama
+- it-nebuzaradan
+- it-jeremias
+- it-guedalias
+links:
+- title: Jeremías 40 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/40/
+  type: bible
+- title: 'Perspicacia: «Ramá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ram%C3%A1/
+  type: perspicacia
+checked_on: '2026-10-12'
+status: verified

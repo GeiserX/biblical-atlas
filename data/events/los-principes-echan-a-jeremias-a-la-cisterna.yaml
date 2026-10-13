@@ -1,0 +1,51 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: los-principes-echan-a-jeremias-a-la-cisterna
+title: Los príncipes echan a Jeremías a la cisterna de Malkiya
+date:
+  from: -608
+  to: -606
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 609 y 607 a.e.c. (tiempo narrativo: durante el último sitio de Jerusalén)'
+narrative_order:
+  series: jeremias
+  order: 38001
+places:
+- jerusalen
+people:
+- jeremias-profeta
+- sefatias-hijo-de-matan
+- guedalias-hijo-de-pasjur
+- jehucal
+- pasjur-hijo-de-malkias
+- sedequias
+present:
+- jeremias-profeta
+- sefatias-hijo-de-matan
+- guedalias-hijo-de-pasjur
+- jehucal
+- pasjur-hijo-de-malkias
+- sedequias
+roles: {}
+passages:
+- Jer 38:1-6
+summary: Sefatías, Guedalías, Jucal y Pasjur oyen a Jeremías invitar a rendirse y piden su muerte. Sedequías cede; con sogas
+  lo bajan a una cisterna seca del Patio de la Guardia, la de Malkiya, y se hunde en el fango.
+reason: Jer 38:1-6; Perspicacia «Sedequías», núm. 4, apartado «Se rebela contra Nabucodonosor», párr. 6, y «Ébed-mélec». Dentro
+  del sitio de 609 a 607 (estudio 3); en 38:9 ya no queda pan en la ciudad.
+sources:
+- jeremias-38
+- it-sedequias
+- it-ebed-melec
+- si-3
+links:
+- title: Jeremías 38 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/38/
+  type: bible
+- title: 'Perspicacia: «Sedequías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sedequ%C3%ADas/
+  type: perspicacia
+checked_on: '2026-10-12'
+status: verified

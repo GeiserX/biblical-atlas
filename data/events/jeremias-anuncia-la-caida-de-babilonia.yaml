@@ -1,0 +1,45 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jeremias-anuncia-la-caida-de-babilonia
+title: Jeremías anuncia la caída de Babilonia
+date:
+  from: -624
+  to: -613
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 625 y 614 a.e.c. (tiempo narrativo: con Nabucodonosor ya rey y antes de que Seraya llevara la profecía a Babilonia)'
+narrative_order:
+  series: jeremias
+  order: 50001
+places:
+- babilonia
+- caldea
+- pecod
+people:
+- jeremias-profeta
+present: []
+passages:
+- Jer 50:1-46
+- Jer 51:1-58
+summary: Jehová anuncia por Jeremías que los medos y otras naciones del norte tomarán Babilonia y avergonzarán a Bel y a Merodac.
+  Israel y Judá saldrán hacia Sion, y Babilonia quedará despoblada para siempre.
+reason: 'Jer 50:17 llama rey a Nabucodonosor, que tomó el mando en 625 (Perspicacia «Babilonia»). Según «Seraya», núm. 5,
+  Jeremías le dio el rollo contra Babilonia en 614. Sin lugar: nadie queda situado.'
+sources:
+- jeremias-50
+- it-babilonia
+- it-seraya
+- it-jeremias-libro
+- si-jeremias
+- it-bel
+- it-merodac
+- it-merataim
+- it-caldea
+- jeremias-51
+links:
+- title: Jeremías 50 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/50/
+  type: bible
+checked_on: '2026-10-12'
+status: verified

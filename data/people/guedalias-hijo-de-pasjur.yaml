@@ -1,0 +1,47 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: guedalias-hijo-de-pasjur
+name: Guedalías
+names:
+- name: Guedalías
+perspicacia: 1200001632#3
+disambiguation: El príncipe hijo de Pasjur de Jer 38:1; no es el gobernador Guedalías, hijo de Ahicam, ni el abuelo del profeta
+  Sofonías.
+distinct_from:
+- guedalias
+- guedalias-hijo-de-amarias
+summary: Príncipe de Jerusalén, hijo de Pasjur. Acusó a Jeremías de quitar el ánimo a los soldados y al pueblo, y con otros
+  príncipes lo dejó en una cisterna llena de fango.
+reason: Perspicacia «Guedalías», núm. 3; Jer 38:1-6.
+sources:
+- it-guedalias
+- jeremias-38
+links:
+- title: 'Perspicacia: «Guedalías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Guedal%C3%ADas/
+  type: perspicacia
+- title: Jeremías 38 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/38/
+  type: bible
+relations:
+- type: kin
+  person: pasjur-padre-de-guedalias
+  word: father
+  inferred: false
+  sources:
+  - jeremias-38
+  - it-pasjur
+  reason: Jer 38:1 lo llama Guedalías hijo de Pasjur.
+  checked_on: '2026-10-12'
+  status: verified
+- type: tie
+  person: jeremias-profeta
+  word: enemy
+  inferred: false
+  sources:
+  - jeremias-38
+  - it-guedalias
+  reason: 'Jer 38:1-6: está entre los príncipes que piden su muerte y lo echan a la cisterna.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

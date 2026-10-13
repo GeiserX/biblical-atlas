@@ -1,0 +1,43 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jeremias-escribe-que-el-pueblo-volvera-del-destierro
+title: Jehová manda a Jeremías escribir que su pueblo volverá del destierro
+date:
+  from: -616
+  to: -579
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 617 y 580 a.e.c. (tiempo narrativo: tras el destierro de Jeconías, durante la obra de Jeremías)'
+narrative_order:
+  series: jeremias
+  order: 30001
+places:
+- jerusalen
+- juda
+people:
+- jeremias-profeta
+present: []
+passages:
+- Jer 30:1-24
+- Jer 31:1-40
+summary: 'Jehová pide a Jeremías que ponga por escrito sus palabras: tras un tiempo de angustia romperá el yugo de su pueblo,
+  lo traerá de vuelta, castigará a sus opresores y reconstruirá la ciudad; servirán a David su rey.'
+reason: 'Jer 30 no da fecha ni lugar: nadie queda situado. «Toda Escritura», libro 24, párr. 24, lo une a la carta a los desterrados
+  con Jeconías (617, estudio 3); el libro se terminó en 580 (Tabla de los libros).'
+sources:
+- jeremias-30
+- si-jeremias
+- it-jeremias-libro
+- si-3
+- tnm-tabla
+- jeremias-31
+links:
+- title: Jeremías 30 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/30/
+  type: bible
+- title: 'Perspicacia: «Jeremías, Libro de»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jerem%C3%ADas-Libro-de/
+  type: perspicacia
+checked_on: '2026-10-12'
+status: verified

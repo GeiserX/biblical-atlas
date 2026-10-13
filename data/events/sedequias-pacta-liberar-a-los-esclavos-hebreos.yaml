@@ -1,0 +1,47 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: sedequias-pacta-liberar-a-los-esclavos-hebreos
+title: Sedequías y Jerusalén liberan a sus esclavos hebreos y vuelven a esclavizarlos
+date:
+  from: -608
+  to: -606
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 609 y 607 a.e.c. (tiempo narrativo: durante el último sitio de Jerusalén)'
+narrative_order:
+  series: jeremias
+  order: 34008
+places:
+- jerusalen
+- monte-moria
+people:
+- sedequias
+present:
+- sedequias
+roles: {}
+passages:
+- Jer 34:8-11
+- Jer 34:15, 16
+- Jer 34:18, 19
+summary: En la ciudad sitiada, Sedequías hace con el pueblo un pacto ante Jehová, en el templo, para liberar a los esclavos
+  hebreos. Todos cumplen, pero luego los obligan a volver a servir.
+reason: 'Jer 34:8-11, 15, 16, 18, 19. Perspicacia «Sedequías», núm. 4: no era año de Jubileo; al parecer los volvieron a esclavizar
+  cuando los babilonios levantaron el sitio ante Egipto. Sitio de 609-607 (estudio 3).'
+sources:
+- jeremias-34
+- it-sedequias
+- it-pacto
+- si-3
+links:
+- title: Jeremías 34 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/34/
+  type: bible
+- title: 'Perspicacia: «Sedequías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sedequ%C3%ADas/
+  type: perspicacia
+- title: 'Perspicacia: «Pacto»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Pacto/
+  type: perspicacia
+checked_on: '2026-10-12'
+status: verified

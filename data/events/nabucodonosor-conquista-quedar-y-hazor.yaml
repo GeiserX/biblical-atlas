@@ -1,0 +1,37 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: nabucodonosor-conquista-quedar-y-hazor
+title: Nabucodonosor conquista Quedar y los reinos de Hazor
+date:
+  from: -624
+  to: -581
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 625 y 582 a.e.c. (tiempo narrativo: durante el reinado de Nabucodonosor)'
+narrative_order:
+  series: jeremias
+  order: 49028
+places:
+- quedar
+- hazor-de-arabia
+people:
+- nabucodonosor-ii
+present: []
+passages:
+- Jer 49:28
+summary: El rey de Babilonia somete a Quedar y a los reinos de Hazor, pueblos del norte de Arabia.
+reason: 'Jer 49:28 lo da por hecho y Perspicacia «Quedar» lo confirma sin año: cae dentro de su reinado, de 625 a 582 (estudio
+  3; Perspicacia «Nabucodonosor»). El texto no dice si fue él en persona: nadie queda situado.'
+sources:
+- jeremias-49
+- it-quedar
+- it-hazor
+- it-nabucodonosor
+- si-3
+links:
+- title: Jeremías 49 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/49/
+  type: bible
+checked_on: '2026-10-12'
+status: verified

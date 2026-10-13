@@ -1,0 +1,50 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: selemias-hijo-de-abdeel
+name: Selemías
+names:
+- name: Selemías
+perspicacia: 1200003990#5
+disambiguation: Uno de los enviados de Jehoiaquim contra Jeremías; no Selemías el abuelo de Jehudí, ni el padre de Jehucal,
+  ni el padre de Iriya.
+distinct_from:
+- selemias-hijo-de-cusi
+- selemias-padre-de-jehucal
+- selemias-hijo-de-hananias
+summary: Hijo de Abdeel. Jehoiaquim lo mandó, con Jerahmeel y Seraya, a detener a Jeremías y a su secretario Baruc, pero Jehová
+  los tenía escondidos.
+reason: Perspicacia «Selemías», núm. 5; Jer 36:26.
+sources:
+- it-selemias
+- jeremias-36
+links:
+- title: 'Perspicacia: «Selemías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Selem%C3%ADas/
+  type: perspicacia
+- title: Jeremías 36 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/36/
+  type: bible
+relations:
+- type: kin
+  person: abdeel
+  word: father
+  inferred: false
+  sources:
+  - jeremias-36
+  - it-selemias
+  - it-abdeel
+  reason: Jer 36:26 lo llama Selemías hijo de Abdeel.
+  checked_on: '2026-10-12'
+  status: verified
+- type: tie
+  person: jehoiaquim
+  word: master
+  inferred: false
+  sources:
+  - jeremias-36
+  - it-selemias
+  reason: 'Jer 36:26: el rey le manda prender a Baruc y a Jeremías; Perspicacia «Selemías», núm. 5, lo llama mensajero de
+    Jehoiaquim.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

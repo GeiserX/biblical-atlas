@@ -1,0 +1,40 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jeremias-anuncia-que-nabucodonosor-atacara-quedar-y-hazor
+title: Jeremías anuncia que Nabucodonosor atacará Quedar y Hazor
+date:
+  from: -624
+  to: -579
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 625 y 580 a.e.c. (tiempo narrativo: con Nabucodonosor ya rey de Babilonia, durante la obra de Jeremías)'
+narrative_order:
+  series: jeremias
+  order: 49028
+places:
+- quedar
+- hazor-de-arabia
+people:
+- jeremias-profeta
+present: []
+passages:
+- Jer 49:28-33
+summary: Jehová manda subir contra Quedar y los reinos de Hazor, pueblos de Oriente que viven tranquilos y sin murallas. Nabucodonosor
+  les quitará tiendas, camellos y ganado, y Hazor quedará desierta para siempre.
+reason: 'Jer 49:28, 30 llama rey a Nabucodonosor, que tomó el mando en 625 (Perspicacia «Babilonia»); el libro se cierra en
+  580 (Tabla de los libros). Sin lugar: nadie queda situado. Perspicacia «Quedar» dice que él la abatió.'
+sources:
+- jeremias-49
+- it-babilonia
+- tnm-tabla
+- it-quedar
+- it-hazor
+- it-orientales
+- si-jeremias
+links:
+- title: Jeremías 49 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/49/
+  type: bible
+checked_on: '2026-10-12'
+status: verified

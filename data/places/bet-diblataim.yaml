@@ -1,0 +1,44 @@
+# biblical-atlas: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: bet-diblataim
+name: Bet-Diblataim
+names:
+- name: Bet-Diblataim
+  note: Casa de Diblataim. La Piedra Moabita dice que el rey Mesá construyó una ciudad llamada Bet Diblatem.
+type: city
+lat: null
+lon: null
+precision: uncertain
+coord_source: null
+coord_url: null
+candidates:
+- name: Almón-Diblataim (Khirbet Deleilat esh-Sherqiyeh)
+  geometry:
+    type: point
+    lat: 31.638727
+    lon: 35.826578
+  checked_on: '2026-10-12'
+  status: alternative
+  sources:
+  - it-bet-diblataim
+  - it-almon-diblataim
+  - openbible-geo
+  reason: Perspicacia ve posible que sea Almón-Diblataim, que algunos ponen en Khirbet Deleilat esh-Sherqiyeh, unos 16 km
+    al nornordeste de Dibón.
+  coord_source: openbible:ac99af3
+  coord_url: https://www.openbible.info/geo/ancient/ac99af3/beth-diblathaim
+summary: Ciudad de Moab nombrada en el juicio de Jer 48:22. No se sabe dónde estaba; quizá es Almón-Diblataim, uno de los
+  últimos campamentos de Israel.
+reason: 'Perspicacia «Bet-diblataim» y «Almón-diblataim»; Jer 48:22. OpenBible: solo el punto del candidato.'
+not_claimed:
+- 'Que sea Almón-Diblataim: Perspicacia solo lo da como posible.'
+sources:
+- it-bet-diblataim
+- it-almon-diblataim
+- openbible-geo
+- jeremias-48
+links:
+- title: 'Perspicacia: «Bet-diblataim»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Bet-diblataim/
+  type: perspicacia
+checked_on: '2026-10-12'
+status: verified

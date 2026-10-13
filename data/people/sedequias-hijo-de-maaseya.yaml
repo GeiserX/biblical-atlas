@@ -1,0 +1,49 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: sedequias-hijo-de-maaseya
+name: Sedequías
+names:
+- name: Sedequías
+perspicacia: 1200004685#3
+disambiguation: Falso profeta desterrado en Babilonia, hijo de Maaseya; no es el último rey de Judá ni el profeta de Acab
+  hijo de Kenaaná.
+distinct_from:
+- sedequias
+- sedequias-hijo-de-kenaana
+- sedequias-hijo-de-hananias
+summary: Falso profeta entre los desterrados de Babilonia, hijo de Maaseya. Adúltero y mentiroso según Jeremías, que anunció
+  que Nabucodonosor lo asaría al fuego con Acab hijo de Colaya.
+reason: Perspicacia «Sedequías», núm. 3; Jer 29:20-23.
+sources:
+- it-sedequias
+- it-maaseya
+- jeremias-29
+links:
+- title: 'Perspicacia: «Sedequías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sedequ%C3%ADas/
+  type: perspicacia
+- title: Jeremías 29 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/29/
+  type: bible
+relations:
+- type: kin
+  person: maaseya-padre-de-sedequias
+  word: father
+  sources:
+  - jeremias-29
+  - it-maaseya
+  reason: Jer 29:21 lo llama Sedequías hijo de Maaseya.
+  inferred: false
+  checked_on: '2026-10-12'
+  status: verified
+- type: lived_in
+  place: babilonia
+  sources:
+  - jeremias-29
+  - it-sedequias
+  reason: 'Jer 29:20-22: profetizaba entre los desterrados en Babilonia; Perspicacia «Sedequías», núm. 3, lo sitúa entre los
+    exiliados.'
+  inferred: false
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
