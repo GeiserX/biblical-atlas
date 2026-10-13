@@ -95,6 +95,10 @@ sources:
 - colosenses-1
 - colosenses-2
 - colosenses-4
+- 1-tesalonicenses-1
+- 1-tesalonicenses-2
+- 1-tesalonicenses-3
+- 1-tesalonicenses-5
 links:
 - title: 'Perspicacia: «Pablo»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Pablo/
@@ -116,7 +120,11 @@ history:
   change: 'Los 15 días con Cefas (Gál 1:18) pasan de una compañía con el texto «visitante de» a la palabra `host`: Pedro fue
     su anfitrión.'
   source: galatas-1
-checked_on: '2026-09-29'
+- date: '2026-10-12'
+  change: 'La reason de pablo/lived_in/corinto nombra ahora 1Te 1:1 y Perspicacia «Tesalonicenses», que ya estaban en sus
+    sources: la carta sale de Corinto.'
+  source: 1-tesalonicenses-1
+checked_on: '2026-10-12'
 status: verified
 relations:
 - type: born_in
@@ -287,8 +295,11 @@ relations:
   - 2-corintios-10
   - 2-corintios-11
   - 2-corintios-12
-  reason: 'Hch 18:3, 11: se aloja con Áquila y Priscila y se queda un año y seis meses. El estudio 3, párr. 24 y 25, lo fecha.'
-  checked_on: '2026-09-29'
+  - 1-tesalonicenses-1
+  - it-tesalonicenses
+  reason: 'Hch 18:3, 11: se aloja con Áquila y Priscila y se queda un año y seis meses (estudio 3, párr. 24 y 25). Perspicacia
+    «Tesalonicenses» deduce de las firmas de 1Te 1:1 que desde allí escribe la carta.'
+  checked_on: '2026-10-12'
   status: verified
 - type: lived_in
   place: jerusalen
@@ -476,4 +487,35 @@ relations:
   reason: 'Hch 27:1, 3: lo entregan con otros presos a Julio, que lo lleva desde Cesarea y en Sidón le deja ver a sus amigos.
     El viaje va de c. 58 a 59 (estudio 3, párr. 27).'
   checked_on: '2026-09-29'
+  status: verified
+- type: tie
+  person: jason
+  word: host
+  date:
+    from: 50
+    to: 50
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 50 e.c.
+  inferred: false
+  sources:
+  - 1-tesalonicenses-1
+  - it-jason
+  - it-tesalonica
+  - si-3
+  reason: Hechos cuenta que Jasón los hospedaba en su casa; la nota de 1Te 1:6 y Perspicacia «Tesalónica» lo recuerdan, y
+    «Jasón» incluye a Silas. Hacia 50, según el estudio 3.
+  checked_on: '2026-10-12'
+  status: verified
+- type: holds_office
+  office: apostle
+  inferred: false
+  sources:
+  - 1-tesalonicenses-2
+  - it-pablo
+  reason: '1Te 2:6: Pablo dice que, por ser apóstoles de Cristo, podían haber pedido sustento. Perspicacia «Pablo» lo presenta
+    como apóstol de Jesucristo y cita este versículo al hablar de su trabajo.'
+  checked_on: '2026-10-12'
   status: verified

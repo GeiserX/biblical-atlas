@@ -85,7 +85,21 @@ https://biblical-atlas.geiser.cloud/#p=2Re17:6
 https://biblical-atlas.geiser.cloud/#p=Génesis12:1-3
 ```
 
-El libro va con su abreviatura de la Traducción del Nuevo Mundo o con su nombre, con tilde o sin ella; después, el capítulo y, si hace falta, el versículo o un tramo (`Hch16:1-5`). El atlas busca lo que cita ese pasaje, primero los sucesos y después las paradas de los viajes, las cartas y los viajes, y abre lo primero por fecha: la línea de tiempo va a su fecha, el mapa encuadra su lugar y se abre su ficha. Si lo citan varios, la ficha los lista para pasar de uno a otro. Si no lo cita nada, lo dice y ofrece la ficha del capítulo cuando tiene datos.
+El libro va con su abreviatura de la Traducción del Nuevo Mundo o con su nombre, con tilde o sin ella. Estas son las formas que entiende:
+
+| Enlace | Qué es | Qué abre |
+|---|---|---|
+| `#p=Hch16:1` | un versículo | lo que lo cita |
+| `#p=Hch16:1-5` | versículos de un capítulo | lo que cita alguno de ellos |
+| `#p=Hch13:1-14:28` | versículos de dos capítulos | lo mismo |
+| `#p=Hch16`, `#p=Hch16-17` | un capítulo, o varios | lo mismo |
+| `#p=Ge2:7,8` | versículos con coma que se tocan | lo mismo que `#p=Ge2:7-8` |
+| `#p=Flm10` | un versículo de un libro de un solo capítulo | lo que lo cita |
+| `#p=Rut` | un libro solo | la ficha del libro |
+
+El atlas busca lo que cita ese pasaje: primero los sucesos y después las paradas de los viajes, las cartas y los viajes. En cada grupo van delante los que tienen ese pasaje como principal, el primero de sus pasajes, y después los que solo lo citan más abajo, cada parte por fecha. Así `#p=Hch13:1-14:28` abre «El espíritu aparta a Bernabé y Saulo en Antioquía», el principio del primer viaje, y no «Nace Isaac», que cita el discurso de Hechos 13. Se abre el primero: la línea de tiempo va a su fecha, el mapa encuadra su lugar y se abre su ficha. Si lo citan varios, la ficha los lista para pasar de uno a otro.
+
+Si nada lo cita, se abre la ficha del capítulo, con sus lugares, y dentro una línea dice que nada del atlas cita todavía ese pasaje. Dos tramos separados (`#p=Hch16:1,5`), un libro que no existe o un versículo que su libro no tiene no abren nada: un aviso dice por qué.
 
 En la ficha de un suceso, una parada, una carta, un viaje o un capítulo, «Enlace al pasaje» copia esa dirección.
 
