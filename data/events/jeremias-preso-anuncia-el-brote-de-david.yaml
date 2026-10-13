@@ -12,7 +12,7 @@ date:
   text: 'entre 608 y 607 a.e.c. (tiempo narrativo: tras la compra del campo de Hanamel, antes de caer Jerusalén)'
 narrative_order:
   series: jeremias
-  order: 33001
+  order: 833001
 places:
 - jerusalen
 people:
@@ -40,5 +40,10 @@ links:
 - title: 'Perspicacia: «Rama, brote»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Rama-brote/
   type: perspicacia
-checked_on: '2026-10-12'
+history:
+- date: '2026-10-13'
+  change: 'El orden del relato pasa de 33001 a 833001: la serie sigue las fechas de los sucesos, porque el libro va por temas
+    y no en el orden en que pasaron.'
+  source: it-jeremias-libro
+checked_on: '2026-10-13'
 status: verified

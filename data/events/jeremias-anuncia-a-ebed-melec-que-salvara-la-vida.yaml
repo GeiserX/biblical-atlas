@@ -11,7 +11,7 @@ date:
   text: 'entre 609 y 607 a.e.c. (tiempo narrativo: durante el último sitio de Jerusalén)'
 narrative_order:
   series: jeremias
-  order: 39015
+  order: 839015
   after: ebed-melec-saca-a-jeremias-de-la-cisterna
 places:
 - jerusalen
@@ -29,7 +29,7 @@ passages:
 summary: 'Preso aún en el Patio de la Guardia, Jeremías recibe un mensaje para Ébed-Mélec: la calamidad caerá sobre Jerusalén,
   pero él no morirá a espada, porque confió en Jehová.'
 reason: Jer 39:15 lo sitúa en su prisión del Patio de la Guardia, después de que Ébed-Mélec lo sacara de la cisterna (suceso
-  ebed-melec-saca-a-jeremias-de-la-cisterna) y antes de la caída de 607 (estudio 3). Perspicacia «Ébed-mélec».
+  ebed-melec-saca-a-jeremias-de-la-cisterna) y antes de la caída de 607 (estudio 3). Perspicacia «Ébed-mélec». Orden por fecha.
 sources:
 - jeremias-39
 - it-ebed-melec
@@ -41,5 +41,10 @@ links:
 - title: 'Perspicacia: «Ébed-mélec»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/%C3%89bed-m%C3%A9lec/
   type: perspicacia
-checked_on: '2026-10-12'
+history:
+- date: '2026-10-13'
+  change: 'El orden del relato pasa de 39015 a 839015: la serie sigue las fechas de los sucesos, porque el libro va por temas
+    y no en el orden en que pasaron.'
+  source: it-jeremias-libro
+checked_on: '2026-10-13'
 status: verified

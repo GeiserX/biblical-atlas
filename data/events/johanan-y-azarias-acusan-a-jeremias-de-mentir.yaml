@@ -11,7 +11,7 @@ date:
   text: 607 a.e.c.
 narrative_order:
   series: jeremias
-  order: 43001
+  order: 943001
 places:
 - lugar-de-hospedaje-de-kimham
 people:
@@ -28,7 +28,7 @@ passages:
 summary: Nada más oír la respuesta de Jehová, Azarías, Johanán y otros hombres soberbios dicen a Jeremías que miente y acusan
   a Baruc de querer dejarlos en manos de los caldeos.
 reason: 'Jer 43:1-3. Ocurre en el mismo sitio y momento que la respuesta del capítulo anterior, en el hospedaje de Kimham,
-  en 607 (estudio 3, párr. 6). Perspicacia «Jezanías»: Azarías es ese jefe.'
+  en 607 (estudio 3, párr. 6). Perspicacia «Jezanías»: Azarías es ese jefe. Orden por fecha.'
 sources:
 - jeremias-43
 - si-3
@@ -39,5 +39,10 @@ links:
 - title: Jeremías 43 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/43/
   type: bible
-checked_on: '2026-10-12'
+history:
+- date: '2026-10-13'
+  change: 'El orden del relato pasa de 43001 a 943001: la serie sigue las fechas de los sucesos, porque el libro va por temas
+    y no en el orden en que pasaron.'
+  source: it-jeremias-libro
+checked_on: '2026-10-13'
 status: verified
