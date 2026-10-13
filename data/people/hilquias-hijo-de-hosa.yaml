@@ -1,0 +1,34 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hilquias-hijo-de-hosa
+name: Hilquías
+names:
+- name: Hilquías
+perspicacia: 1200002026#2
+disambiguation: El hijo de Hosá, portero (1Cr 26:11); no Hilquías el sumo sacerdote de Josías ni los demás Hilquías de Perspicacia
+  «Hilquías».
+summary: Segundo hijo del merarita Hosá. Fue portero en tiempos de David.
+reason: Perspicacia «Hilquías», núm. 2; 1Cr 26:11.
+sources:
+- it-hilquias
+- 1-cronicas-26
+links:
+- title: 'Perspicacia: «Hilquías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hilqu%C3%ADas/
+  type: perspicacia
+relations:
+- type: kin
+  person: hosa
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-26
+  - it-hilquias
+  reason: '1Cr 26:11: el segundo de los hijos de Hosá.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- hilquias-hijo-de-amzi
+- hilquias-hijo-de-salum
+- hilquias-padre-de-eliaquim

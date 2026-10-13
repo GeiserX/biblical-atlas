@@ -1,0 +1,34 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jerimot-el-benjaminita
+name: Jerimot
+names:
+- name: Jerimot
+perspicacia: 1200002429#2
+disambiguation: Jerimot el benjaminita, con David en Ziclag (1Cr 12:5); no el hijo de David, el príncipe de Neftalí ni los
+  levitas.
+distinct_from:
+- jeremot-hijo-de-musi
+- jerimot-de-benjamin
+- jerimot-hijo-de-azriel
+- jerimot-hijo-de-heman
+summary: Guerrero benjaminita que apoyó a David en Ziclag mientras Saúl lo perseguía.
+reason: Perspicacia «Jerimot», núm. 2; 1Cr 12:5.
+sources:
+- it-jerimot
+- 1-cronicas-12
+links:
+- title: 'Perspicacia: «Jerimot»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jerimot/
+  type: perspicacia
+relations:
+- type: tie
+  person: david
+  word: master
+  inferred: false
+  sources:
+  - 1-cronicas-12
+  reason: '1Cr 12:5: se unió a David y lo apoyó en la guerra.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

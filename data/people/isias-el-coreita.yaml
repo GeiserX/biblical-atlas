@@ -1,0 +1,43 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: isias-el-coreita
+name: Isías
+names:
+- name: Isías
+perspicacia: 1200002231#2
+disambiguation: Isías de 1Cr 12:6, guerrero con David; no el jefe de Isacar ni los levitas de ese nombre.
+distinct_from:
+- isias-descendiente-de-moises
+- isias-hijo-de-izrahias
+- isias-uzielita
+summary: Probablemente coreíta; acudió a Ziclag a apoyar a David en la guerra.
+reason: Perspicacia «Isías», núm. 2; 1Cr 12:6.
+sources:
+- it-isias
+- 1-cronicas-12
+links:
+- title: 'Perspicacia: «Isías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Is%C3%ADas/
+  type: perspicacia
+relations:
+- type: kin
+  person: core-hijo-de-izhar
+  word: ancestor
+  inferred: true
+  sources:
+  - 1-cronicas-12
+  - it-coreita
+  reason: 1Cr 12:6 lo cuenta entre los coreítas; Perspicacia «Coreíta» da a los coreítas por descendientes de Coré y cita
+    este pasaje.
+  checked_on: '2026-10-12'
+  status: verified
+- type: tie
+  person: david
+  word: master
+  inferred: false
+  sources:
+  - 1-cronicas-12
+  reason: '1Cr 12:6: se unió a David y lo apoyó en la guerra.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

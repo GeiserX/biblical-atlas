@@ -1,0 +1,42 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: zebadias-hijo-de-jeroham
+name: Zebadías
+names:
+- name: Zebadías
+perspicacia: 1200004670#3
+disambiguation: Zebadías hijo de Jeroham de Guedor (1Cr 12:7); no el hijo de Asahel ni los demás de ese nombre.
+distinct_from:
+- zebadias-descendiente-de-berias
+- zebadias-descendiente-de-elpaal
+- zebadias-hijo-de-asahel
+- zebadias-hijo-de-meselemias
+summary: Benjaminita, hijo de Jeroham de Guedor. Fue a Ziclag con su hermano Joelá para apoyar a David.
+reason: Perspicacia «Zebadías», núm. 3; 1Cr 12:7.
+sources:
+- it-zebadias
+- 1-cronicas-12
+links:
+- title: 'Perspicacia: «Zebadías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zebad%C3%ADas/
+  type: perspicacia
+relations:
+- type: kin
+  person: jeroham-de-guedor
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-12
+  reason: '1Cr 12:7: Joelá y Zebadías, hijos de Jeroham de Guedor.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: tie
+  person: david
+  word: master
+  inferred: false
+  sources:
+  - 1-cronicas-12
+  reason: '1Cr 12:7: se unió a David y lo apoyó en la guerra.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

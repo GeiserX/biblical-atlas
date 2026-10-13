@@ -1,0 +1,28 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: resef
+name: Résef
+names:
+- name: Résef
+perspicacia: '1200003704'
+summary: Efraimita, antepasado de Josué hijo de Nun.
+reason: Perspicacia «Résef»; 1Cr 7:22-27.
+sources:
+- it-resef
+- 1-cronicas-7
+links:
+- title: 'Perspicacia: «Résef»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/R%C3%A9sef/
+  type: perspicacia
+relations:
+- type: kin
+  person: efrain
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-7
+  - it-resef
+  reason: 1Cr 7:22-25 lo cuenta entre los descendientes de Efraín, en la línea que acaba en Josué.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

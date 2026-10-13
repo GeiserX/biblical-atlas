@@ -1,0 +1,52 @@
+# biblical-atlas: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: gue-harasim
+name: Gue-Harasim
+names:
+- name: Gue-Harasim
+  note: La nota de 1Cr 4:14 lo traduce «valle de los artesanos».
+type: valley
+lat: null
+lon: null
+precision: uncertain
+coord_source: null
+coord_url: null
+candidates:
+- name: Wadi esh-Shellal, al sureste de Tel Aviv
+  geometry:
+    type: point
+    lat: 32.006675
+    lon: 34.861718
+  status: alternative
+  sources:
+  - it-gue-harasim
+  - openbible-geo
+  reason: 'Perspicacia «Gue-harasim»: algunos geógrafos lo proponen. Punto de OpenBible.'
+  checked_on: '2026-10-12'
+  coord_source: openbible:abf0690
+  coord_url: https://www.openbible.info/geo/ancient/abf0690/ge-harashim
+- name: Sarafand el-Kharab, al suroeste de Tel Aviv
+  geometry:
+    type: point
+    lat: 31.936319
+    lon: 34.805639
+  status: alternative
+  sources:
+  - it-gue-harasim
+  - openbible-geo
+  reason: 'Perspicacia «Gue-harasim»: otros lo prefieren. Punto de OpenBible.'
+  checked_on: '2026-10-12'
+  coord_source: openbible:abf0690
+  coord_url: https://www.openbible.info/geo/ancient/abf0690/ge-harashim
+summary: Valle llamado así por los artesanos que vivían en él; Joab hijo de Seraya fundó su comunidad. Tras el destierro se
+  asentaron allí benjaminitas. No se sabe dónde estaba.
+reason: Perspicacia «Gue-harasim»; 1Cr 4:14. Dos propuestas de ubicación, sin elegir ninguna.
+sources:
+- it-gue-harasim
+- openbible-geo
+- 1-cronicas-4
+links:
+- title: 'Perspicacia: «Gue-harasim»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Gue-harasim/
+  type: perspicacia
+checked_on: '2026-10-12'
+status: verified

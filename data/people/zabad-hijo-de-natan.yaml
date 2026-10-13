@@ -1,0 +1,32 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: zabad-hijo-de-natan
+name: Zabad
+names:
+- name: Zabad
+perspicacia: 1200004643#2
+summary: Judaíta de la casa de Jerahmeel. Su padre fue Natán y su hijo, Eflal; el egipcio Jarhá era su bisabuelo.
+reason: Perspicacia «Zabad», núm. 2; 1Cr 2:36, 37.
+sources:
+- it-zabad
+- 1-cronicas-2
+links:
+- title: 'Perspicacia: «Zabad»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zabad/
+  type: perspicacia
+relations:
+- type: kin
+  person: natan-hijo-de-atai
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-2
+  reason: '1Cr 2:36: Natán fue su padre.'
+  checked_on: '2026-10-12'
+  status: verified
+disambiguation: Zabad hijo de Natán, de Judá; no Jozacar, al que 2Cr 24:26 llama Zabad, uno de los que mataron al rey Jehoás.
+distinct_from:
+- jozacar
+- zabad-hijo-de-ahlai
+- zabad-hijo-de-tahat
+checked_on: '2026-10-12'
+status: verified

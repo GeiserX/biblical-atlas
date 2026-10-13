@@ -1,0 +1,34 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: abdon-hijo-de-jeiel
+name: Abdón
+names:
+- name: Abdón
+perspicacia: 1200000016#2
+disambiguation: Abdón hijo de Jeiel; no Abdón el juez, hijo de Hilel, ni Abdón hijo de Sasac ni el oficial de Josías.
+distinct_from:
+- abdon-hijo-de-hilel
+- abdon-hijo-de-sasac
+- acbor-hijo-de-micaya
+summary: Benjamita, primer hijo de Jeiel de Gabaón. Perspicacia cree que era hermano de Ner, abuelo de Saúl.
+reason: Perspicacia «Abdón», núm. 2; 1Cr 8:29-31.
+sources:
+- it-abdon
+- 1-cronicas-8
+- 1-cronicas-9
+links:
+- title: 'Perspicacia: «Abdón»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Abd%C3%B3n/
+  type: perspicacia
+relations:
+- type: kin
+  person: jeiel-de-gabaon
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  - 1-cronicas-9
+  reason: 1Cr 8:30, 31 lo cuenta entre los hijos de Jeiel.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

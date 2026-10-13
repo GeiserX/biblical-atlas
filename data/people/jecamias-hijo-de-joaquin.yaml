@@ -1,0 +1,40 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jecamias-hijo-de-joaquin
+name: Jecamías
+names:
+- name: Jecamías
+perspicacia: 1200002409#2
+disambiguation: Jecamías hijo de Jeconías (núm. 2 de Perspicacia); no el judaíta hijo de Salum.
+summary: Hijo de Jeconías nacido en Babilonia durante el cautiverio de su padre.
+reason: Perspicacia «Jeqamías»; 1Cr 3:17, 18.
+sources:
+- it-jeqamias
+- 1-cronicas-3
+links:
+- title: 'Perspicacia: «Jeqamías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jeqam%C3%ADas/
+  type: perspicacia
+relations:
+- type: kin
+  person: joaquin
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-3
+  - it-jeqamias
+  reason: '1Cr 3:17, 18: uno de los hijos de Jeconías el prisionero.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: born_in
+  place: babilonia
+  inferred: true
+  sources:
+  - 1-cronicas-3
+  - it-jeqamias
+  reason: 1Cr 3:17, 18 lo cuenta entre los hijos de Jeconías el prisionero; Perspicacia «Jeqamías» dice que nació en el destierro.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- jecamias-hijo-de-salum

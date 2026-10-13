@@ -1,0 +1,33 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: guedalias-hijo-de-jedutun
+name: Guedalías
+names:
+- name: Guedalías
+perspicacia: 1200001632#1
+disambiguation: El hijo de Jedutún del segundo grupo de músicos (1Cr 25:3, 9); no Guedalías el gobernador ni el abuelo de
+  Sofonías (Perspicacia «Guedalías», núm. 1, 2 y 4).
+summary: Levita cantor, hijo de Jedutún. Le tocó la segunda suerte y dirigió el segundo grupo, de doce con sus hijos y hermanos.
+reason: Perspicacia «Guedalías», núm. 1; 1Cr 25:3, 9.
+sources:
+- it-guedalias
+- 1-cronicas-25
+links:
+- title: 'Perspicacia: «Guedalías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Guedal%C3%ADas/
+  type: perspicacia
+relations:
+- type: kin
+  person: jedutun-musico
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-25
+  - it-guedalias
+  reason: 1Cr 25:3, 9 lo cuenta entre los hijos de Jedutún.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- guedalias
+- guedalias-hijo-de-amarias

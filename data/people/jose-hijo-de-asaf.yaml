@@ -1,0 +1,41 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jose-hijo-de-asaf
+name: José
+names:
+- name: José
+perspicacia: 1200002515#3
+disambiguation: El hijo de Asaf que recibió la primera suerte de los músicos (1Cr 25:2, 9); no José hijo de Jacob ni los demás
+  José de Perspicacia «José».
+summary: Levita músico de la casa de Asaf. Al echar suertes en días de David le salió la primera, y dirigió el primer grupo
+  de cantores.
+reason: Perspicacia «José», núm. 3; 1Cr 25:2, 9.
+sources:
+- it-jose
+- 1-cronicas-25
+links:
+- title: 'Perspicacia: «José»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jos%C3%A9/
+  type: perspicacia
+relations:
+- type: kin
+  person: asaf-hijo-de-berekias
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-25
+  - it-jose
+  reason: 1Cr 25:2, 9 lo cuenta entre los hijos de Asaf.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- bernabe
+- jesus-hijo-de-eliezer
+- jose-de-arimatea
+- jose-esposo-de-maria
+- jose-hijo-de-jacob
+- jose-hijo-de-jonam
+- jose-hijo-de-jose
+- jose-hijo-de-matatias
+- jose-padre-de-igal

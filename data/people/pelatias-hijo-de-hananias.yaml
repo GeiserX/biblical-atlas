@@ -1,0 +1,32 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: pelatias-hijo-de-hananias
+name: Pelatías
+names:
+- name: Pelatías
+perspicacia: 1200003420#3
+disambiguation: Pelatías nieto de Zorobabel (núm. 3 de Perspicacia); no el simeonita hijo de Isí ni el príncipe hijo de Benaya.
+summary: Nieto de Zorobabel por su hijo Hananías. Perspicacia ve posible que sea el cabeza de familia que firmó el pacto en
+  días de Nehemías.
+reason: Perspicacia «Pelatías»; 1Cr 3:21.
+sources:
+- it-pelatias
+- 1-cronicas-3
+links:
+- title: 'Perspicacia: «Pelatías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Pelat%C3%ADas/
+  type: perspicacia
+relations:
+- type: kin
+  person: hananias-hijo-de-zorobabel
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-3
+  - it-pelatias
+  reason: '1Cr 3:21: hijo de Hananías.'
+  checked_on: '2026-10-12'
+  status: verified
+distinct_from:
+- pelatias-hijo-de-isi
+checked_on: '2026-10-12'
+status: verified

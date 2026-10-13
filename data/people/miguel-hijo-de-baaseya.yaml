@@ -1,0 +1,36 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: miguel-hijo-de-baaseya
+name: Miguel
+names:
+- name: Miguel
+perspicacia: 1200003035#3
+disambiguation: Miguel hijo de Baaseyá (1Cr 6:40); no es ninguno de los otros Miguel que numera Perspicacia «Miguel».
+distinct_from:
+- miguel-de-manases
+- miguel-descendiente-de-berias
+- miguel-hijo-de-abihail
+- miguel-hijo-de-izrahias
+- miguel-hijo-de-jesisai
+- miguel-padre-de-omri
+- miguel-padre-de-setur
+summary: Levita guersonita, hijo de Baaseyá, antepasado del músico Asaf.
+reason: Perspicacia «Miguel», núm. 3; 1Cr 6:40.
+sources:
+- it-miguel
+- 1-cronicas-6
+links:
+- title: 'Perspicacia: «Miguel»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Miguel/
+  type: perspicacia
+relations:
+- type: kin
+  person: baaseya
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-6
+  reason: '1Cr 6:40: Miguel, «hijo de Baaseyá».'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

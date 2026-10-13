@@ -1,0 +1,40 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: azriel-de-manases
+name: Azriel
+names:
+- name: Azriel
+perspicacia: 1200000500#2
+disambiguation: Azriel el manasita del este del Jordán (1Cr 5:23-26); no es ninguno de los otros Azriel que numera Perspicacia
+  «Azriel».
+distinct_from:
+- azriel-padre-de-jerimot
+summary: Jefe de familia manasita al este del Jordán. Por la idolatría de su gente, sus descendientes acabaron cautivos de
+  Tiglat-Piléser III.
+reason: Perspicacia «Azriel», núm. 2; 1Cr 5:23-26.
+sources:
+- it-azriel
+- 1-cronicas-5
+links:
+- title: 'Perspicacia: «Azriel»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Azriel/
+  type: perspicacia
+relations:
+- type: lived_in
+  place: basan
+  inferred: false
+  sources:
+  - 1-cronicas-5
+  reason: '1Cr 5:23: los manasitas del este ocupaban la tierra de Basán a Baal-Hermón y el Hermón.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: manases-hijo-de-jose
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-5
+  reason: '1Cr 5:23, 24: jefe de una familia manasita del este del Jordán.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

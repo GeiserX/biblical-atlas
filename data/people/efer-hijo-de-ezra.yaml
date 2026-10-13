@@ -1,0 +1,32 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: efer-hijo-de-ezra
+name: Éfer
+names:
+- name: Éfer
+perspicacia: 1200001384#2
+disambiguation: Éfer hijo de Ezrá (núm. 2 de Perspicacia); no el nieto de Abrahán por Madián ni el jefe de Manasés.
+summary: Judaíta, el tercero de los hijos de Ezrá que se nombran.
+reason: Perspicacia «Éfer»; 1Cr 4:17.
+sources:
+- it-efer
+- 1-cronicas-4
+links:
+- title: 'Perspicacia: «Éfer»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/%C3%89fer/
+  type: perspicacia
+relations:
+- type: kin
+  person: ezra
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-4
+  - it-efer
+  reason: '1Cr 4:17: uno de los hijos de Ezrá.'
+  checked_on: '2026-10-12'
+  status: verified
+distinct_from:
+- efer-hijo-de-madian
+- efer-de-manases
+checked_on: '2026-10-12'
+status: verified

@@ -1,0 +1,17 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hodes
+name: Hodes
+names:
+- name: Hodes
+perspicacia: '1200002049'
+summary: Esposa del benjamita Saharaim, madre de siete de sus hijos.
+reason: Perspicacia «Hodes»; 1Cr 8:1, 8, 9.
+sources:
+- it-hodes
+- 1-cronicas-8
+links:
+- title: 'Perspicacia: «Hodes»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hodes/
+  type: perspicacia
+checked_on: '2026-10-12'
+status: verified

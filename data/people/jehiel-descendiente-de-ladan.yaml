@@ -1,0 +1,51 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jehiel-descendiente-de-ladan
+name: Jehiel
+names:
+- name: Jehiel
+- name: Jehielí
+  note: Forma de 1Cr 26:21, 22. Perspicacia «Jehiel», núm. 2, la refiere a él o a la casa paterna que tomó su nombre.
+perspicacia: 1200002366#2
+summary: Levita guersonita, cabeza de los hijos de Ladán. En los últimos años de David, él y los suyos guardaban el tesoro
+  de la casa de Jehová, donde se depositaron las piedras preciosas donadas para el templo.
+disambiguation: El guersonita de la casa de Ladán que custodiaba el tesoro del santuario (1Cr 23:8; 29:8). No es el músico
+  levita que acompañó el arca ni el tutor de los hijos del rey.
+reason: Perspicacia «Jehiel», núm. 2; 1Cr 23:6-8; 26:21, 22; 29:8.
+sources:
+- 1-cronicas-23
+- it-jehiel
+- 1-cronicas-29
+- it-jehieli
+- 1-cronicas-26
+links:
+- title: 'Perspicacia: «Jehiel»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jehiel/
+  type: perspicacia
+relations:
+- type: kin
+  person: guerson
+  word: ancestor
+  sources:
+  - 1-cronicas-29
+  - it-jehiel
+  reason: 1Cr 29:8 lo llama el guersonita; Perspicacia «Jehiel», núm. 2, lo hace descendiente de Guersón por medio de Ladán.
+  inferred: false
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: ladan-hijo-de-guerson
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-23
+  - it-jehiel
+  - 1-cronicas-26
+  reason: 1Cr 23:8 lo pone el primero de los hijos de Ladán, como jefe; Perspicacia «Jehiel», núm. 2, dice que descendía de
+    Guersón por medio de Ladán.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- jehiel-musico
+- jehiel-hijo-de-hacmoni

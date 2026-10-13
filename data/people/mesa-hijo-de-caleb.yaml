@@ -1,0 +1,32 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: mesa-hijo-de-caleb
+name: Mesá
+names:
+- name: Mesá
+perspicacia: 1200003006#1
+summary: Hijo mayor de Caleb, el nieto de Pérez, en Judá. Fue padre de Zif; Perspicacia lo entiende como fundador de esa ciudad.
+reason: Perspicacia «Mesá», núm. 1, y «Zif», núm. 3; 1Cr 2:42.
+sources:
+- it-mesa
+- 1-cronicas-2
+- it-zif
+links:
+- title: 'Perspicacia: «Mesá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Mes%C3%A1/
+  type: perspicacia
+relations:
+- type: kin
+  person: caleb-hijo-de-hezron
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-2
+  reason: '1Cr 2:42: Mesá, el primer hijo de Caleb, el hermano de Jerahmeel.'
+  checked_on: '2026-10-12'
+  status: verified
+disambiguation: Mesá hijo de Caleb, de Judá; no Mesá, el rey de Moab que se rebeló contra Israel.
+distinct_from:
+- mesa-rey-de-moab
+- mesa-hijo-de-saharaim
+checked_on: '2026-10-12'
+status: verified

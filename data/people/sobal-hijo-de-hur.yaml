@@ -1,0 +1,62 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: sobal-hijo-de-hur
+name: Sobal
+names:
+- name: Sobal
+perspicacia: 1200004077#2
+summary: 'Hijo de Hur, de la línea de Caleb en Judá. Fue «padre» de Quiryat-Jearim: de él venían sus habitantes y otras familias,
+  como Haroé.'
+reason: Perspicacia «Sobal», núm. 2, y «Quiryat-jearim»; 1Cr 2:50, 52, 53.
+sources:
+- it-sobal
+- 1-cronicas-2
+- it-quiryat-jearim
+- 1-cronicas-4
+links:
+- title: 'Perspicacia: «Sobal»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sobal/
+  type: perspicacia
+relations:
+- type: kin
+  person: hur-hijo-de-caleb
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-2
+  reason: '1Cr 2:50, 51: hijo de Hur, el primer hijo de Efrata.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: salma-hijo-de-hur
+  word: brother
+  inferred: false
+  sources:
+  - 1-cronicas-2
+  reason: '1Cr 2:50, 51: Sobal, Salmá y Haref, hijos de Hur.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: haref
+  word: brother
+  inferred: false
+  sources:
+  - 1-cronicas-2
+  reason: '1Cr 2:50, 51: Sobal, Salmá y Haref, hijos de Hur.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: juda-hijo-de-jacob
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-4
+  - it-carmi
+  reason: 1Cr 4:1 lo pone entre los «hijos de Judá»; Perspicacia «Carmí», núm. 2, explica que la lista incluye descendientes
+    lejanos.
+  checked_on: '2026-10-12'
+  status: verified
+disambiguation: Sobal hijo de Hur, de Judá; no Sobal hijo de Seír, el jeque horeo.
+distinct_from:
+- sobal-hijo-de-seir
+checked_on: '2026-10-12'
+status: verified

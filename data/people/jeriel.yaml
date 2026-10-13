@@ -1,0 +1,27 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jeriel
+name: Jeriel
+names:
+- name: Jeriel
+perspicacia: '1200002427'
+summary: Isacarita de la casa de Tolá, su padre; encabezó una casa paterna.
+reason: Perspicacia «Jeriel»; 1Cr 7:1, 2.
+sources:
+- it-jeriel
+- 1-cronicas-7
+links:
+- title: 'Perspicacia: «Jeriel»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jeriel/
+  type: perspicacia
+relations:
+- type: kin
+  person: tola-hijo-de-isacar
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-7
+  reason: 1Cr 7:2 lo cuenta entre los hijos de Tolá.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

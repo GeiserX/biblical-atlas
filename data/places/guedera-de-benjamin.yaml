@@ -1,0 +1,27 @@
+# biblical-atlas: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: guedera-de-benjamin
+name: Guederá
+names:
+- name: Guederá
+type: city
+lat: 31.85794
+lon: 35.19727
+precision: uncertain
+coord_source: openbible:a52e310
+coord_url: https://www.openbible.info/geo/ancient/a52e310/gederah-2
+coord_note: 'Jedireh, primera identificación de OpenBible, a menos de 2 km al nordeste de Gabaón: es la Judeira que Perspicacia
+  propone con reservas.'
+summary: Al parecer, lugar de Benjamín de donde venía Jozabad el guederatita, uno de los que se unieron a David en Ziclag.
+reason: 'Perspicacia «Guederá», núm. 2, y «Guederatita»; 1Cr 12:4. No es la Guederá de la Sefelá de Judá. OpenBible: solo
+  el punto.'
+sources:
+- it-guedera
+- it-guederatita
+- openbible-geo
+- 1-cronicas-12
+links:
+- title: 'Perspicacia: «Guederá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Gueder%C3%A1/
+  type: perspicacia
+checked_on: '2026-10-12'
+status: verified

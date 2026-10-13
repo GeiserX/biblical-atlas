@@ -1,0 +1,33 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: zacur-hijo-de-jaazias
+name: Zacur
+names:
+- name: Zacur
+perspicacia: 1200004651#3
+disambiguation: El hijo de Jaazías (1Cr 24:27); no Zacur de Rubén, padre del espía Samúa, ni los demás Zacur que numera Perspicacia.
+distinct_from:
+- zacur-padre-de-samua
+- zacur-hijo-de-asaf
+- zacur-hijo-de-hamuel
+summary: Levita merarita, hijo de Jaazías, del tiempo de David.
+reason: Perspicacia «Zacur», núm. 3; 1Cr 24:27.
+sources:
+- it-zacur
+- 1-cronicas-24
+links:
+- title: 'Perspicacia: «Zacur»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zacur/
+  type: perspicacia
+relations:
+- type: kin
+  person: jaazias
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-24
+  - it-zacur
+  reason: 1Cr 24:27 lo cuenta entre los hijos de Jaazías; Perspicacia «Zacur», núm. 3, lo llama hijo de Jaazías.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

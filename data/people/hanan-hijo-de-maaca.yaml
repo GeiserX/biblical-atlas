@@ -1,0 +1,42 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hanan-hijo-de-maaca
+name: Hanán
+names:
+- name: Hanán
+perspicacia: 1200001850#2
+disambiguation: Hanán hijo de Maacá, guerrero de David (1Cr 11:43); no el benjaminita, el descendiente de Saúl ni los de tiempos
+  de Esdras.
+distinct_from:
+- hanan-hijo-de-azel
+- hanan-hijo-de-sasac
+summary: Hijo de Maacá y uno de los guerreros poderosos de David.
+reason: Perspicacia «Hanán», núm. 2; 1Cr 11:43.
+sources:
+- it-hanan
+- 1-cronicas-11
+links:
+- title: 'Perspicacia: «Hanán»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Han%C3%A1n/
+  type: perspicacia
+relations:
+- type: kin
+  person: maaca-padre-de-hanan
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-11
+  - it-maaca
+  reason: '1Cr 11:43: Hanán hijo de Maacá; Perspicacia «Maacá», núm. 6, deja abierto si era su padre o un antepasado.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: tie
+  person: david
+  word: master
+  inferred: false
+  sources:
+  - 1-cronicas-11
+  reason: '1Cr 11:43: figura entre los valientes de David.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

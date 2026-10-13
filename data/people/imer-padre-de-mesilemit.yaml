@@ -1,0 +1,19 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: imer-padre-de-mesilemit
+name: Imer
+names:
+- name: Imer
+perspicacia: 1200002153#2
+summary: Sacerdote, padre de Mesilemit, de cuya casa salieron sacerdotes que vivieron en Jerusalén tras el destierro. Perspicacia
+  ve posible que sea el jefe del turno 16 de David.
+reason: Perspicacia «Imer», núm. 2; 1Cr 9:12.
+sources:
+- it-imer
+- 1-cronicas-9
+links:
+- title: 'Perspicacia: «Imer»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Imer/
+  type: perspicacia
+relations: []
+checked_on: '2026-10-12'
+status: verified

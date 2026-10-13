@@ -1,0 +1,56 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: salum-jefe-de-los-porteros
+name: Salum
+names:
+- name: Salum
+perspicacia: 1200003933#4
+summary: Levita coreíta, jefe de los porteros del santuario, que había guardado la puerta del rey, al este. Perspicacia cree
+  que el nombre de las listas tras el destierro puede designar a su casa paterna.
+reason: Perspicacia «Salum», núm. 4; 1Cr 9:17-19, 31.
+sources:
+- it-salum
+- 1-cronicas-9
+links:
+- title: 'Perspicacia: «Salum»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Salum/
+  type: perspicacia
+relations:
+- type: kin
+  person: core-padre-de-meselemias
+  word: ancestor
+  inferred: true
+  sources:
+  - 1-cronicas-9
+  - it-qore
+  reason: 1Cr 9:19 lo llama hijo de Coré (Qoré); Perspicacia «Qoré», núm. 1, dice que la lista no da todas las generaciones.
+  checked_on: '2026-10-12'
+  status: verified
+- type: holds_office
+  office: leader
+  inferred: false
+  sources:
+  - 1-cronicas-9
+  reason: '1Cr 9:17: Salum, el jefe de los porteros.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: lived_in
+  place: jerusalen
+  inferred: true
+  sources:
+  - 1-cronicas-9
+  - it-salum
+  reason: 'Perspicacia «Salum», núm. 4: figura en las listas de quienes regresaron y residían en Jerusalén (1Cr 9:17).'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- jehoacaz-de-juda
+- salum-de-israel
+- salum-hijo-de-sadoc
+- salum-hijo-de-ticva
+- silem
+- salum-hijo-de-shaul
+- salum-hijo-de-sismai
+disambiguation: 'Salum núm. 4 de Perspicacia: jefe coreíta de los porteros. No el antepasado sacerdotal de Hilquías, el rey
+  de Israel ni el esposo de Huldá.'

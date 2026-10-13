@@ -1,0 +1,25 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: tahan-hijo-de-telah
+name: Tahán
+names:
+- name: Tahán
+perspicacia: null
+summary: Efraimita, hijo de Télah y padre de Ladán, en la línea que lleva a Josué. Perspicacia no sabe si es el Tahán de los
+  tahanitas.
+reason: '1Cr 7:25, 26. Perspicacia no le dedica entrada: «Tahán, tahanitas» duda que sea el fundador de los tahanitas.'
+sources:
+- 1-cronicas-7
+- it-tahan
+links: []
+relations:
+- type: kin
+  person: telah
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-7
+  reason: '1Cr 7:25: Tahán era hijo de Télah.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

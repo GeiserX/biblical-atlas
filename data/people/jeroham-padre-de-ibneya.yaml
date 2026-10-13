@@ -1,0 +1,37 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jeroham-padre-de-ibneya
+name: Jeroham
+names:
+- name: Jeroham
+perspicacia: 1200002432#6
+summary: Benjamita, padre de Ibneyá, que vivió en Jerusalén después del destierro. Perspicacia ve posible que sea el Jeroham
+  benjamita de la lista anterior de Crónicas.
+reason: Perspicacia «Jeroham», núm. 6; 1Cr 9:8.
+sources:
+- it-jeroham
+- 1-cronicas-9
+links:
+- title: 'Perspicacia: «Jeroham»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jeroham/
+  type: perspicacia
+relations:
+- type: same_as
+  person: jeroham-padre-de-samserai
+  certainty: possible
+  inferred: true
+  sources:
+  - 1-cronicas-9
+  - it-jeroham
+  reason: Perspicacia «Jeroham», núm. 5 y 6, ve posible que el padre de Ibneyá (1Cr 9:8) sea el benjamita de la lista anterior
+    de Crónicas.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- jeroham-de-guedor
+- jeroham-hijo-de-elihu
+- jeroham-hijo-de-pasjur
+- jeroham-padre-de-azarel
+disambiguation: 'Jeroham núm. 6 de Perspicacia: benjamita, padre de Ibneyá. No el sacerdote padre de Adaya ni el abuelo de
+  Samuel.'

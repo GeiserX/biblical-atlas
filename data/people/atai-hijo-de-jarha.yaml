@@ -1,0 +1,49 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: atai-hijo-de-jarha
+name: Atái
+names:
+- name: Atái
+perspicacia: 1200000465#1
+summary: Nieto de Sesán, de la tribu de Judá, hijo del egipcio Jarhá y de la hija de Sesán. Fue padre de Natán.
+reason: Perspicacia «Atai», núm. 1; 1Cr 2:35, 36.
+sources:
+- it-atai
+- 1-cronicas-2
+links:
+- title: 'Perspicacia: «Atai»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Atai/
+  type: perspicacia
+relations:
+- type: kin
+  person: jarha
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-2
+  reason: '1Cr 2:35: la hija de Sesán tuvo a Atái con Jarhá.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: ahlai-hija-de-sesan
+  word: mother
+  inferred: true
+  sources:
+  - 1-cronicas-2
+  - it-ahlai
+  reason: '1Cr 2:35; Perspicacia «Ahlai», núm. 1: su madre fue probablemente Ahlái.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: sesan
+  word: grandfather
+  inferred: false
+  sources:
+  - 1-cronicas-2
+  reason: '1Cr 2:34, 35: hijo de la hija de Sesán.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+disambiguation: Atái, hijo de Jarhá y nieto de Sesán; no el gadita que se pasó a David.
+distinct_from:
+- atai-el-gadita

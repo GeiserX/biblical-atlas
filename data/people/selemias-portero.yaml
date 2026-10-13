@@ -1,0 +1,25 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: selemias-portero
+name: Selemías
+names:
+- name: Selemías
+perspicacia: 1200003990#1
+disambiguation: El portero de la puerta del este (1Cr 26:14); no los Selemías de tiempos de Jeremías y Nehemías (Perspicacia
+  «Selemías»).
+summary: Portero levita al que la suerte dio la puerta del este en días de David; la del norte fue para su hijo Zacarías.
+  Perspicacia lo da probablemente por Meselemías.
+reason: Perspicacia «Selemías», núm. 1, y «Meselemías»; 1Cr 26:14.
+sources:
+- it-selemias
+- it-meselemias
+- 1-cronicas-26
+links:
+- title: 'Perspicacia: «Selemías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Selem%C3%ADas/
+  type: perspicacia
+- title: 'Perspicacia: «Meselemías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Meselem%C3%ADas/
+  type: perspicacia
+relations: []
+checked_on: '2026-10-12'
+status: verified

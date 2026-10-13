@@ -1,0 +1,41 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: alemet-hijo-de-beker
+name: Alémet
+names:
+- name: Alémet
+perspicacia: 1200000190#1
+disambiguation: Alémet hijo de Béker; no el descendiente de Saúl hijo de Jehoadá.
+distinct_from:
+- alemet-hijo-de-jehoada
+summary: Último de los nueve hijos de Béker, que según Perspicacia nacieron en Egipto después de que Jacob llegara allí en
+  1728 a.e.c.
+reason: Perspicacia «Alémet», núm. 1; 1Cr 7:6, 8.
+sources:
+- it-alemet
+- 1-cronicas-7
+links:
+- title: 'Perspicacia: «Alémet»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Al%C3%A9met/
+  type: perspicacia
+relations:
+- type: kin
+  person: beker-hijo-de-benjamin
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-7
+  reason: 1Cr 7:8 lo cuenta entre los hijos de Béker.
+  checked_on: '2026-10-12'
+  status: verified
+- type: born_in
+  place: egipto
+  inferred: true
+  sources:
+  - 1-cronicas-7
+  - it-alemet
+  reason: 'Perspicacia «Alémet», núm. 1: los nueve hijos de Béker de 1Cr 7:8 nacieron en Egipto, después de la llegada de
+    Jacob en 1728 a.e.c.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

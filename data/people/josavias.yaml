@@ -1,0 +1,36 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: josavias
+name: Josavías
+names:
+- name: Josavías
+perspicacia: '1200002519'
+summary: Hijo de Elnaam y guerrero destacado del ejército de David.
+reason: Perspicacia «Josavías»; 1Cr 11:46.
+sources:
+- it-josavias
+- 1-cronicas-11
+links:
+- title: 'Perspicacia: «Josavías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Josav%C3%ADas/
+  type: perspicacia
+relations:
+- type: kin
+  person: elnaam
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-11
+  reason: '1Cr 11:46: Jeribái y Josavías, hijos de Elnaam.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: tie
+  person: david
+  word: master
+  inferred: false
+  sources:
+  - 1-cronicas-11
+  reason: '1Cr 11:46: figura entre los valientes de David.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

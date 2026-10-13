@@ -1,0 +1,34 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jerahmeel-hijo-de-quis
+name: Jerahmeel
+names:
+- name: Jerahmeel
+perspicacia: 1200002416#2
+disambiguation: El levita hijo de Quis (1Cr 24:29); no Jerahmeel de Judá ni el hijo del rey de tiempos de Jeremías.
+summary: Levita merarita, hijo de Quis hijo de Mahlí, citado entre las casas paternas de levitas que echaron suertes en presencia
+  de David.
+reason: Perspicacia «Jerahmeel», núm. 2, y «Quis», núm. 1; 1Cr 24:29.
+sources:
+- it-jerahmeel
+- it-quis
+- 1-cronicas-24
+links:
+- title: 'Perspicacia: «Jerahmeel»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jerahmeel/
+  type: perspicacia
+relations:
+- type: kin
+  person: quis-hijo-de-mahli
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-24
+  - it-quis
+  - it-jerahmeel
+  reason: 1Cr 24:29 lo nombra de los hijos de Quis; Perspicacia «Quis», núm. 1, dice que Jerahmeel era uno de sus hijos.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- jerahmeel-hijo-de-hezron

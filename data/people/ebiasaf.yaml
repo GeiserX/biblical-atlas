@@ -1,0 +1,30 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ebiasaf
+name: Ebiasaf
+names:
+- name: Ebiasaf
+perspicacia: null
+summary: Levita de la familia de Coré, antepasado de Samuel y del cantor Hemán. Perspicacia cree que es Abiasaf, el hijo de
+  Coré, con otra grafía.
+reason: Perspicacia no le da artículo propio («Ebiasaf» solo remite a «Abiasaf»), y «Abiasaf» ve probable que sea él; 1Cr 6:23, 37; 9:19.
+sources:
+- it-abiasaf
+- 1-cronicas-6
+- 1-cronicas-9
+links:
+- title: 'Perspicacia: «Abiasaf»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Abiasaf/
+  type: perspicacia
+relations:
+- type: kin
+  person: core-hijo-de-izhar
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-6
+  - 1-cronicas-9
+  reason: '1Cr 6:37: Ebiasaf, «hijo de Coré».'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

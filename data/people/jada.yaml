@@ -1,0 +1,27 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jada
+name: Jadá
+names:
+- name: Jadá
+perspicacia: '1200002281'
+summary: Hijo de Onam y hermano de Samái, de la rama de Jerahmeel en Judá. Fue padre de Jéter y Jonatán.
+reason: Perspicacia «Jadá»; 1Cr 2:28, 32.
+sources:
+- it-jada
+- 1-cronicas-2
+links:
+- title: 'Perspicacia: «Jadá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jad%C3%A1/
+  type: perspicacia
+relations:
+- type: kin
+  person: onam-hijo-de-jerahmeel
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-2
+  reason: '1Cr 2:28: hijo de Onam.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

@@ -1,0 +1,26 @@
+# biblical-atlas: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: caleb-efrata
+name: Caleb-Efrata
+names:
+- name: Caleb-Efrata
+type: city
+lat: null
+lon: null
+precision: uncertain
+coord_source: null
+coord_url: null
+candidates: []
+summary: Lugar donde murió Hezrón, nieto de Judá, según el texto masorético de 1 Crónicas 2:24. No sale en ningún otro pasaje
+  y no se ha identificado.
+reason: Perspicacia «Caleb-efrata» y «Hezrón», núm. 2; 1Cr 2:24. Ni jw.org ni el texto lo sitúan, así que no damos punto ni
+  zona.
+sources:
+- it-caleb-efrata
+- 1-cronicas-2
+- it-hezron
+links:
+- title: 'Perspicacia: «Caleb-efrata»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Caleb-efrata/
+  type: perspicacia
+checked_on: '2026-10-12'
+status: pending

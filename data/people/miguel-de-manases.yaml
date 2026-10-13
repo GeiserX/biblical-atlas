@@ -1,0 +1,37 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: miguel-de-manases
+name: Miguel
+names:
+- name: Miguel
+perspicacia: 1200003035#5
+disambiguation: Miguel de Manasés, jefe de mil con David (1Cr 12:20); no el arcángel ni los demás Miguel.
+distinct_from:
+- miguel-descendiente-de-berias
+- miguel-hijo-de-izrahias
+- miguel-padre-de-omri
+- miguel-padre-de-setur
+- miguel-hijo-de-abihail
+- miguel-hijo-de-baaseya
+- miguel-hijo-de-jesisai
+summary: Jefe de mil de Manasés que dejó a Saúl y se pasó a David cuando iba a Ziclag. Luchó con él contra la banda de saqueadores
+  y fue jefe de su ejército.
+reason: Perspicacia «Miguel», núm. 5; 1Cr 12:19-21.
+sources:
+- it-miguel
+- 1-cronicas-12
+links:
+- title: 'Perspicacia: «Miguel»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Miguel/
+  type: perspicacia
+relations:
+- type: tie
+  person: david
+  word: master
+  inferred: false
+  sources:
+  - 1-cronicas-12
+  reason: '1Cr 12:20, 21: se pasó a David, lo ayudó contra los saqueadores y llegó a ser jefe en su ejército.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

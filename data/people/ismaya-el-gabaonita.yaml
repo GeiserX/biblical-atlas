@@ -1,0 +1,39 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ismaya-el-gabaonita
+name: Ismayá
+names:
+- name: Ismayá
+perspicacia: 1200002217#1
+disambiguation: Ismayá el gabaonita, jefe de los treinta en Ziclag (1Cr 12:4); no Ismayá hijo de Abdías, príncipe de Zabulón.
+distinct_from:
+- ismaya-hijo-de-abdias
+summary: Guerrero gabaonita que se unió a David en Ziclag antes de la muerte de Saúl. Era jefe de los treinta; su nombre falta
+  en listas posteriores.
+reason: Perspicacia «Ismayá», núm. 1; 1Cr 12:4.
+sources:
+- it-ismaya
+- 1-cronicas-12
+links:
+- title: 'Perspicacia: «Ismayá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ismay%C3%A1/
+  type: perspicacia
+relations:
+- type: lived_in
+  place: gabaon
+  inferred: false
+  sources:
+  - 1-cronicas-12
+  reason: '1Cr 12:4: Ismayá el gabaonita.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: tie
+  person: david
+  word: master
+  inferred: false
+  sources:
+  - 1-cronicas-12
+  reason: '1Cr 12:4: se unió a David y lo apoyó en la guerra; era jefe de los treinta.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

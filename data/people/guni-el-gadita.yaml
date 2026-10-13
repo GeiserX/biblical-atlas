@@ -1,0 +1,21 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: guni-el-gadita
+name: Guní
+names:
+- name: Guní
+perspicacia: 1200001783#2
+disambiguation: Guní el gadita (1Cr 5:15); no es ninguno de los otros Guní que numera Perspicacia «Guní».
+distinct_from:
+- guni-hijo-de-neftali
+summary: Gadita, padre de Abdiel y antepasado de Ahí, jefe de una casa paterna.
+reason: Perspicacia «Guní», núm. 2; 1Cr 5:15.
+sources:
+- it-guni
+- 1-cronicas-5
+links:
+- title: 'Perspicacia: «Guní»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Gun%C3%AD/
+  type: perspicacia
+relations: []
+checked_on: '2026-10-12'
+status: verified

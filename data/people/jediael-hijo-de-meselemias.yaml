@@ -1,0 +1,33 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jediael-hijo-de-meselemias
+name: Jediael
+names:
+- name: Jediael
+perspicacia: 1200002357#4
+disambiguation: El hijo de Meselemías, portero (1Cr 26:2); no los demás Jediael de Perspicacia «Jediael».
+summary: Segundo hijo del coreíta Meselemías. Fue portero de la casa de Jehová en el reinado de David.
+reason: Perspicacia «Jediael», núm. 4; 1Cr 26:2.
+sources:
+- it-jediael
+- 1-cronicas-26
+links:
+- title: 'Perspicacia: «Jediael»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jediael/
+  type: perspicacia
+relations:
+- type: kin
+  person: meselemias
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-26
+  - it-jediael
+  reason: 1Cr 26:2, 3 lo nombra el segundo de los hijos de Meselemías.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- jediael-de-manases
+- jediael-hijo-de-benjamin
+- jediael-hijo-de-simri

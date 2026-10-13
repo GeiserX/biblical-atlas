@@ -1,0 +1,42 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: segub-hijo-de-hezron
+name: Segub
+names:
+- name: Segub
+perspicacia: 1200003883#1
+summary: Hijo de Hezrón, de Judá, y de la hija de Makir, con quien Hezrón se casó a los 60 años. Fue padre de Jaír, el de
+  las aldeas de Galaad.
+reason: Perspicacia «Segub», núm. 1, y «Hezrón», núm. 2; 1Cr 2:21, 22.
+sources:
+- it-segub
+- 1-cronicas-2
+- it-hezron
+links:
+- title: 'Perspicacia: «Segub»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Segub/
+  type: perspicacia
+relations:
+- type: kin
+  person: hezron-hijo-de-perez
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-2
+  reason: '1Cr 2:21: Hezrón y la hija de Makir tuvieron a Segub.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: makir-hijo-de-manases
+  word: grandfather
+  inferred: false
+  sources:
+  - 1-cronicas-2
+  reason: '1Cr 2:21: su madre era hija de Makir.'
+  checked_on: '2026-10-12'
+  status: verified
+disambiguation: Segub hijo de Hezrón, padre de Jaír; no Segub hijo de Hiel de Betel, que murió cuando su padre reconstruyó
+  Jericó.
+distinct_from:
+- segub-hijo-de-hiel
+checked_on: '2026-10-12'
+status: verified

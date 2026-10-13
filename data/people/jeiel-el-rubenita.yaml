@@ -1,0 +1,34 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jeiel-el-rubenita
+name: Jeiel
+names:
+- name: Jeiel
+perspicacia: 1200002406#1
+disambiguation: Jeiel el rubenita (1Cr 5:7); no es ninguno de los otros Jeiel que numera Perspicacia «Jeiel».
+distinct_from:
+- jaaziel
+- jeiel-de-gabaon
+- jeiel-hijo-de-hotam
+- jeiel-portero
+summary: Rubenita, jefe entre los parientes de Beerá según el registro genealógico de sus familias.
+reason: Perspicacia «Jeiel», núm. 1; 1Cr 5:7.
+sources:
+- it-jeiel
+- 1-cronicas-5
+links:
+- title: 'Perspicacia: «Jeiel»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jeiel/
+  type: perspicacia
+relations:
+- type: kin
+  person: ruben-hijo-de-jacob
+  word: ancestor
+  inferred: true
+  sources:
+  - 1-cronicas-5
+  - it-jeiel
+  reason: Perspicacia «Jeiel», núm. 1, lo hace descendiente de Rubén; 1Cr 5:7 lo cuenta entre los parientes de Beerá.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

@@ -1,0 +1,35 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: guera-descendiente-de-bela
+name: Guerá
+names:
+- name: Guerá
+perspicacia: 1200001656#2
+disambiguation: El segundo Guerá de la lista de Bela (1Cr 8:5); no Guerá hijo de Bela del versículo 3, ni el padre de Ehúd
+  ni el de Simeí.
+distinct_from:
+- guera-hijo-de-bela
+- guera-padre-de-ehud
+- guera-padre-de-simei
+summary: Benjamita, al parecer otro descendiente de Bela, distinto del Guerá del versículo 3. Quizá sea el Guerá del versículo
+  7.
+reason: Perspicacia «Guerá, I», núm. 2; 1Cr 8:5.
+sources:
+- it-guera-i
+- 1-cronicas-8
+links:
+- title: 'Perspicacia: «Guerá, I»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Guer%C3%A1-I/
+  type: perspicacia
+relations:
+- type: kin
+  person: bela-hijo-de-benjamin
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  - it-guera-i
+  reason: 1Cr 8:5 lo pone entre los hijos de Bela; Perspicacia «Guerá, I», núm. 2, lo llama otro descendiente de Bela.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

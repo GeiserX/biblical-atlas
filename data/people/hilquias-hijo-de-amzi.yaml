@@ -1,0 +1,32 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hilquias-hijo-de-amzi
+name: Hilquías
+names:
+- name: Hilquías
+perspicacia: 1200002026#1
+disambiguation: Hilquías hijo de Amzí (1Cr 6:45, 46); no es ninguno de los otros Hilquías que numera Perspicacia «Hilquías».
+distinct_from:
+- hilquias-hijo-de-hosa
+- hilquias-hijo-de-salum
+- hilquias-padre-de-eliaquim
+summary: Levita merarita, hijo de Amzí y antepasado de Etán, el cantor que nombró David.
+reason: Perspicacia «Hilquías», núm. 1; 1Cr 6:45, 46.
+sources:
+- it-hilquias
+- 1-cronicas-6
+links:
+- title: 'Perspicacia: «Hilquías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hilqu%C3%ADas/
+  type: perspicacia
+relations:
+- type: kin
+  person: amzi-hijo-de-bani
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-6
+  reason: '1Cr 6:45, 46: Hilquías, «hijo de Amzí».'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

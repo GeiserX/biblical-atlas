@@ -1,0 +1,26 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jesohaya
+name: Jesohaya
+names:
+- name: Jesohaya
+perspicacia: '1200002445'
+summary: Jefe simeonita; con otros, en días de Ezequías, ensanchó el territorio de Simeón quitándoselo a los camitas.
+reason: Perspicacia «Jesohaya»; 1Cr 4:34-41.
+sources:
+- it-jesohaya
+- 1-cronicas-4
+links:
+- title: 'Perspicacia: «Jesohaya»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jesohaya/
+  type: perspicacia
+relations:
+- type: lived_in
+  place: guedor-de-simeon
+  inferred: false
+  sources:
+  - 1-cronicas-4
+  reason: '1Cr 4:41: los jefes de la lista se establecieron en los pastos de Guedor.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

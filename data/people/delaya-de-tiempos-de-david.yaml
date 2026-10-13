@@ -1,0 +1,41 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: delaya-de-tiempos-de-david
+name: Delayá
+names:
+- name: Delayá
+perspicacia: 1200001148#1
+disambiguation: El sacerdote de la división vigésimo tercera (1Cr 24:18); no los demás Delayá que numera Perspicacia, como
+  el descendiente de David o el príncipe de días de Jeremías.
+summary: Sacerdote de los días de David designado por sorteo cabeza del turno vigésimo tercero.
+reason: Perspicacia «Delayá», núm. 1; 1Cr 24:18.
+sources:
+- it-delaya
+- 1-cronicas-24
+links:
+- title: 'Perspicacia: «Delayá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Delay%C3%A1/
+  type: perspicacia
+relations:
+- type: kin
+  person: aaron
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-24
+  - it-delaya
+  reason: 1Cr 24:1 abre la lista de los descendientes de Aarón repartidos en turnos, y 24:18 da a esta casa el vigésimo tercero.
+  checked_on: '2026-10-12'
+  status: verified
+- type: holds_office
+  office: priest
+  inferred: false
+  sources:
+  - 1-cronicas-24
+  - it-delaya
+  reason: '1Cr 24:18: encabeza una de las casas sacerdotales de 24:4-6; Perspicacia «Delayá» lo trata como sacerdote.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- delaya-hijo-de-elioenai

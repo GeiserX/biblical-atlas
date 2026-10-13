@@ -1,0 +1,41 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: heber-descendiente-de-elpaal
+name: Héber
+names:
+- name: Héber
+perspicacia: 1200001950#4
+disambiguation: Héber de la casa de Elpaal, benjamita; no Héber hijo de Berías, nieto de Aser, ni Héber el quenita.
+distinct_from:
+- heber-el-quenita
+- heber-hijo-de-berias
+- heber-padre-de-soco
+summary: Benjamita de la casa de Elpaal y cabeza de una casa paterna en Jerusalén.
+reason: Perspicacia «Héber», núm. 4; 1Cr 8:17, 18, 28.
+sources:
+- it-heber
+- 1-cronicas-8
+links:
+- title: 'Perspicacia: «Héber»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/H%C3%A9ber/
+  type: perspicacia
+relations:
+- type: kin
+  person: elpaal
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  - it-heber
+  reason: 1Cr 8:18 lo pone entre los hijos de Elpaal; Perspicacia «Héber» no precisa si era hijo o descendiente.
+  checked_on: '2026-10-12'
+  status: verified
+- type: lived_in
+  place: jerusalen
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  reason: '1Cr 8:28: los jefes de casas paternas de esta lista vivían en Jerusalén.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

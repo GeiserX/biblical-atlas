@@ -1,0 +1,43 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: sadoc-y-los-sacerdotes-sirven-en-el-tabernaculo-de-gabaon
+title: Sadoc y los sacerdotes sirven ante el tabernáculo de Gabaón
+date:
+  from: -1069
+  to: -1069
+  precision: year
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'c. 1070 a.e.c. (tiempo narrativo: cuando el Arca llegó a Jerusalén)'
+narrative_order:
+  series: 1-cronicas
+  order: 16039
+  after: david-pone-a-asaf-y-a-los-levitas-ante-el-arca
+places:
+- gabaon
+people:
+- sadoc-hijo-de-ahitub
+- heman-hijo-de-joel
+- jedutun-musico
+present:
+- sadoc-hijo-de-ahitub
+- heman-hijo-de-joel
+- jedutun-musico
+passages:
+- 1Cr 16:39-42
+summary: Mientras el Arca queda en Jerusalén, Sadoc y los demás sacerdotes presentan las ofrendas quemadas de cada mañana
+  y cada tarde en el tabernáculo de Gabaón, con Hemán y Jedutún como músicos.
+reason: '1Cr 16:39-42, a la vez que el servicio ante el Arca. Perspicacia «Sadoc», núm. 1, y «Gabaón»: en vida de David el
+  tabernáculo pasó a Gabaón y Sadoc ofició allí un tiempo. Estudio 3: después de 1070.'
+sources:
+- 1-cronicas-16
+- it-sadoc
+- it-gabaon
+- it-david
+- si-3
+links:
+- title: 1 Crónicas 16 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/1-Cr%C3%B3nicas/16/
+  type: bible
+checked_on: '2026-10-12'
+status: verified

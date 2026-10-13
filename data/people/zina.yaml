@@ -1,0 +1,37 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: zina
+name: Ziná
+names:
+- name: Ziná
+- name: Zizá
+  note: Así lo llama 1Cr 23:11, con la variante Zizah en nota; Perspicacia «Ziná» y «Zizah» lo tratan como la misma persona.
+perspicacia: '1200004739'
+summary: Levita guersonita, segundo de los hijos de Simeí. Encabezaba una casa paterna cuando David asignó tareas a los levitas.
+reason: Perspicacia «Ziná» y «Zizah»; 1Cr 23:10, 11.
+sources:
+- it-zina
+- it-zizah
+- 1-cronicas-23
+links:
+- title: 'Perspicacia: «Ziná»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zin%C3%A1/
+  type: perspicacia
+- title: 'Perspicacia: «Zizah»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zizah/
+  type: perspicacia
+relations:
+- type: kin
+  person: simei-hijo-de-guerson
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-23
+  - it-zina
+  reason: 1Cr 23:10 lo nombra segundo de los hijos de Simeí; 23:11 lo llama Zizá.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+disambiguation: Ziná o Zizá, levita hijo de Simeí; no Zizá, el simeonita hijo de Sifí.
+distinct_from:
+- ziza-hijo-de-sifi

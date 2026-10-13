@@ -1,0 +1,38 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jehoiada-hijo-de-benaya
+name: Jehoiadá
+names:
+- name: Jehoiadá
+perspicacia: 1200002376#2
+disambiguation: Jehoiadá hijo de Benaya, consejero de David; no su abuelo, el padre de Benaya, ni el sumo sacerdote que derrocó
+  a Atalía.
+distinct_from:
+- jehoiada-padre-de-benaya
+- jehoiada-sumo-sacerdote
+summary: Hijo de Benaya y, al parecer, nieto del sacerdote Jehoiadá. Fue consejero del rey David después de Ahitofel, junto
+  con Abiatar.
+reason: Perspicacia «Jehoiadá», núm. 2, y «Benaya», núm. 1; 1Cr 27:34.
+sources:
+- it-jehoiada
+- it-benaya
+- 1-cronicas-27
+links:
+- title: 'Perspicacia: «Jehoiadá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jehoiad%C3%A1/
+  type: perspicacia
+- title: 'Perspicacia: «Benaya»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Benaya/
+  type: perspicacia
+relations:
+- type: kin
+  person: benaya-hijo-de-jehoiada
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-27
+  - it-benaya
+  reason: '1Cr 27:34: Jehoiadá hijo de Benaya; Perspicacia «Benaya», núm. 1, lo cuenta entre los hijos del jefe de la guardia.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

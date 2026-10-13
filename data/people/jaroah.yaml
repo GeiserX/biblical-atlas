@@ -1,0 +1,27 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jaroah
+name: Jaróah
+names:
+- name: Jaróah
+perspicacia: '1200002333'
+summary: Gadita de la tierra de Basán, hijo de Galaad y padre de Hurí.
+reason: Perspicacia «Jaróah»; 1Cr 5:14.
+sources:
+- it-jaroah
+- 1-cronicas-5
+links:
+- title: 'Perspicacia: «Jaróah»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jar%C3%B3ah/
+  type: perspicacia
+relations:
+- type: kin
+  person: galaad-hijo-de-miguel
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-5
+  reason: 1Cr 5:14 da la línea de padre a hijo, de Buz a Abihail.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

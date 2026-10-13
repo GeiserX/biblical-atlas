@@ -1,0 +1,35 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jaasiel-el-mezobaita
+name: Jaasiel
+names:
+- name: Jaasiel
+perspicacia: 1200002262#1
+disambiguation: Jaasiel el mezobaíta, guerrero de David (1Cr 11:47); no el hijo de Abner, príncipe de Benjamín.
+distinct_from:
+- jaasiel-hijo-de-abner
+summary: Mezobaíta, uno de los guerreros poderosos de David que solo nombra Crónicas. El término alude a Zobá y designa a
+  su casa.
+reason: Perspicacia «Jaasiel», núm. 1, y «Mezobaíta»; 1Cr 11:47.
+sources:
+- it-jaasiel
+- it-mezobaita
+- 1-cronicas-11
+links:
+- title: 'Perspicacia: «Jaasiel»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jaasiel/
+  type: perspicacia
+- title: 'Perspicacia: «Mezobaíta»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Mezoba%C3%ADta/
+  type: perspicacia
+relations:
+- type: tie
+  person: david
+  word: master
+  inferred: false
+  sources:
+  - 1-cronicas-11
+  reason: '1Cr 11:47: figura entre los valientes de David.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

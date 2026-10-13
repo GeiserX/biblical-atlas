@@ -1,0 +1,37 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: semaya-hijo-de-joel
+name: Semaya
+names:
+- name: Semaya
+perspicacia: 1200004000#2
+disambiguation: Semaya hijo de Joel (1Cr 5:4); no es ninguno de los otros Semaya que numera Perspicacia «Semaya».
+distinct_from:
+- semaya-hijo-de-galal
+- semaya-hijo-de-hasub
+- semaya-hijo-de-netanel
+- semaya-hijo-de-obed-edom
+- semaya-hijo-de-secanias
+- semaya-jefe-de-la-casa-de-elizafan
+- semaya-profeta
+- semaya-simeonita
+summary: Rubenita, hijo de Joel, en la línea que llega a Beerá, el jefe desterrado por los asirios.
+reason: Perspicacia «Semaya», núm. 2; 1Cr 5:4.
+sources:
+- it-semaya
+- 1-cronicas-5
+links:
+- title: 'Perspicacia: «Semaya»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Semaya/
+  type: perspicacia
+relations:
+- type: kin
+  person: joel-el-rubenita
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-5
+  reason: 1Cr 5:4 lo da como hijo de Joel.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

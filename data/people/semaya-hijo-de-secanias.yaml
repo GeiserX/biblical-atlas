@@ -1,0 +1,38 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: semaya-hijo-de-secanias
+name: Semaya
+names:
+- name: Semaya
+perspicacia: 1200004000#26
+disambiguation: Semaya de la línea de David (núm. 26 de Perspicacia); no el profeta de los días de Rehoboam ni el simeonita.
+summary: Descendiente de David. Con sus cinco hijos suma los seis que 1Cr 3:22 da a Secanías, como explica Perspicacia.
+reason: Perspicacia «Semaya»; 1Cr 3:22.
+sources:
+- it-semaya
+- 1-cronicas-3
+links:
+- title: 'Perspicacia: «Semaya»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Semaya/
+  type: perspicacia
+relations:
+- type: kin
+  person: secanias-hijo-de-abdias
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-3
+  - it-semaya
+  reason: '1Cr 3:22: Semaya va entre los hijos de Secanías.'
+  checked_on: '2026-10-12'
+  status: verified
+distinct_from:
+- semaya-profeta
+- semaya-simeonita
+- semaya-hijo-de-galal
+- semaya-hijo-de-hasub
+- semaya-hijo-de-obed-edom
+- semaya-hijo-de-joel
+- semaya-hijo-de-netanel
+- semaya-jefe-de-la-casa-de-elizafan
+checked_on: '2026-10-12'
+status: verified

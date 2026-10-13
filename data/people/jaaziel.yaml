@@ -1,0 +1,34 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jaaziel
+name: Jaaziel
+names:
+- name: Jaaziel
+- name: Aziel
+  note: Así lo llama 1Cr 15:20, según Perspicacia «Jaaziel».
+- name: Jeiel
+  note: El primer Jeiel de 1Cr 16:5, según Perspicacia «Jaaziel» y «Jeiel», núm. 5.
+perspicacia: '1200002266'
+disambiguation: El músico al que 1Cr 16:5 llama Jeiel la primera vez; no Jeiel el portero y músico de la misma lista (Perspicacia
+  «Jeiel», núm. 4).
+distinct_from:
+- jeiel-portero
+- jeiel-de-gabaon
+- jeiel-el-rubenita
+- jeiel-hijo-de-hotam
+summary: Músico levita de la segunda división, con instrumento de cuerda, en el traslado del Arca a Jerusalén. Luego quedó
+  como músico delante del Arca.
+reason: Perspicacia «Jaaziel» y «Jeiel», núm. 5; 1Cr 15:18, 20; 16:5.
+sources:
+- it-jaaziel
+- it-jeiel
+- 1-cronicas-15
+- 1-cronicas-16
+links:
+- title: 'Perspicacia: «Jaaziel»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jaaziel/
+  type: perspicacia
+- title: 'Perspicacia: «Jeiel»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jeiel/
+  type: perspicacia
+checked_on: '2026-10-12'
+status: verified

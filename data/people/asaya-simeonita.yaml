@@ -1,0 +1,32 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: asaya-simeonita
+name: Asaya
+names:
+- name: Asaya
+perspicacia: 1200000399#2
+disambiguation: Asaya simeonita (núm. 2 de Perspicacia); no el siervo del rey Josías que fue a consultar a Huldá.
+summary: Jefe de Simeón en días de Ezequías. Con otros jefes ocupó el valle fértil cerca de Guedor, donde vivían camitas y
+  meunim.
+reason: Perspicacia «Asaya»; 1Cr 4:34-41.
+sources:
+- it-asaya
+- 1-cronicas-4
+links:
+- title: 'Perspicacia: «Asaya»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Asaya/
+  type: perspicacia
+relations:
+- type: lived_in
+  place: guedor-de-simeon
+  inferred: false
+  sources:
+  - 1-cronicas-4
+  reason: '1Cr 4:41: los jefes de la lista se establecieron en los pastos de Guedor.'
+  checked_on: '2026-10-12'
+  status: verified
+distinct_from:
+- asaya-siervo-del-rey
+- asaya-hijo-de-haguias
+- asaya-silonita
+checked_on: '2026-10-12'
+status: verified

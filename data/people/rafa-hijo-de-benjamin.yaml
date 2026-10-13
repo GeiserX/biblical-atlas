@@ -1,0 +1,31 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: rafa-hijo-de-benjamin
+name: Rafá
+names:
+- name: Rafá
+perspicacia: '1200003648'
+disambiguation: Rafá hijo de Benjamín; no Rafá hijo de Bineá, el descendiente de Saúl.
+distinct_from:
+- rafa-hijo-de-binea
+summary: Quinto hijo de Benjamín en 1Cr 8:2. No está en las listas de Génesis 46 ni de Números 26; Perspicacia cree que murió
+  joven o que su familia quedó absorbida por otra.
+reason: Perspicacia «Rafá»; 1Cr 8:1, 2.
+sources:
+- it-rafa
+- 1-cronicas-8
+links:
+- title: 'Perspicacia: «Rafá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Raf%C3%A1/
+  type: perspicacia
+relations:
+- type: kin
+  person: benjamin-hijo-de-jacob
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  reason: '1Cr 8:2: Rafá fue el quinto hijo de Benjamín.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

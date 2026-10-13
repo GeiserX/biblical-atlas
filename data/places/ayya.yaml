@@ -1,0 +1,43 @@
+# biblical-atlas: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: ayya
+name: Ayyá
+names:
+- name: Ayyá
+- name: Gaza
+  note: Lectura de otros manuscritos hebreos y de los targumes, según la nota de 1Cr 7:28; no es la Gaza de Filistea.
+type: city
+lat: null
+lon: null
+precision: zone
+coord_source: null
+coord_url: null
+candidates:
+- name: En Hai o cerca de ella, al este de Betel
+  geometry:
+    type: zone
+    lat: 31.916944
+    lon: 35.261111
+    radius_km: 6
+  status: favored_level_1
+  sources:
+  - it-gaza
+  - 1-cronicas-7
+  reason: 'Perspicacia «Gaza», núm. 2: ciudad de Efraín de sitio desconocido, que podría ser la antigua Hai o un lugar próximo
+    a ella.'
+  note: 'Centro: punto de OpenBible para Ayyah, el mismo que da para Hai (et-Tell). Radio nuestro, para abarcar los alrededores.'
+  coord_source: openbible:aba3717
+  coord_url: https://www.openbible.info/geo/ancient/aba3717/ayyah
+  checked_on: '2026-10-12'
+summary: Ciudad de Efraín con sus pueblos, el último lugar de la lista de 1Cr 7:28. No se sabe dónde estaba; quizá fuera Hai
+  o un sitio cercano.
+reason: Perspicacia «Gaza», núm. 2; 1Cr 7:28 y su nota.
+sources:
+- it-gaza
+- openbible-geo
+- 1-cronicas-7
+links:
+- title: 'Perspicacia: «Gaza»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Gaza/
+  type: perspicacia
+checked_on: '2026-10-12'
+status: verified

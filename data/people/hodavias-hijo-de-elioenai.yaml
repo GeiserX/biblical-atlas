@@ -1,0 +1,33 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hodavias-hijo-de-elioenai
+name: Hodavías
+names:
+- name: Hodavías
+perspicacia: 1200002048#1
+summary: Primer hijo de Elioenái que nombra la lista, de la línea de Salomón.
+reason: Perspicacia «Hodavías»; 1Cr 3:24.
+sources:
+- it-hodavias
+- 1-cronicas-3
+links:
+- title: 'Perspicacia: «Hodavías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hodav%C3%ADas/
+  type: perspicacia
+relations:
+- type: kin
+  person: elioenai-hijo-de-nearias
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-3
+  - it-hodavias
+  reason: '1Cr 3:24: uno de los siete hijos de Elioenái.'
+  checked_on: '2026-10-12'
+  status: verified
+disambiguation: 'Hodavías núm. 1 de Perspicacia: descendiente de David, hijo de Elioenái. No el benjamita hijo de Hasenuá
+  ni el jefe de Manasés.'
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- hodavias-hijo-de-hasenua
+- hodavias-de-manases

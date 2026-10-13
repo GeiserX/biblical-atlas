@@ -1,0 +1,28 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: guidalti
+name: Guidaltí
+names:
+- name: Guidaltí
+perspicacia: '1200001683'
+summary: Levita cantor, hijo de Hemán, al frente del grupo 22 de los 24 en que se repartieron los músicos.
+reason: Perspicacia «Guidaltí»; 1Cr 25:4, 29.
+sources:
+- it-guidalti
+- 1-cronicas-25
+links:
+- title: 'Perspicacia: «Guidaltí»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Guidalt%C3%AD/
+  type: perspicacia
+relations:
+- type: kin
+  person: heman-hijo-de-joel
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-25
+  - it-guidalti
+  reason: 1Cr 25:4, 29 lo cuenta entre los hijos de Hemán.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

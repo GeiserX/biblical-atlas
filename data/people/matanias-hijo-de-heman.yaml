@@ -1,0 +1,33 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: matanias-hijo-de-heman
+name: Matanías
+names:
+- name: Matanías
+perspicacia: 1200002931#1
+disambiguation: El hijo de Hemán del noveno grupo de músicos (1Cr 25:4, 16); no el rey Sedequías, que antes se llamaba Matanías,
+  ni los otros Matanías de Perspicacia.
+summary: Hijo de Hemán, cabeza del noveno de los 24 grupos de músicos levitas formados en días de David.
+reason: Perspicacia «Matanías», núm. 1; 1Cr 25:4, 16.
+sources:
+- it-matanias
+- 1-cronicas-25
+links:
+- title: 'Perspicacia: «Matanías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Matan%C3%ADas/
+  type: perspicacia
+relations:
+- type: kin
+  person: heman-hijo-de-joel
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-25
+  - it-matanias
+  reason: 1Cr 25:4, 16 lo cuenta entre los hijos de Hemán.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- matanias-hijo-de-mica
+- sedequias

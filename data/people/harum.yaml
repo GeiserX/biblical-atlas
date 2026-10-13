@@ -1,0 +1,18 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: harum
+name: Harum
+names:
+- name: Harum
+perspicacia: '1200001895'
+summary: Hombre de Judá, padre de Aharhel.
+reason: Perspicacia «Harum»; 1Cr 4:8.
+sources:
+- it-harum
+- 1-cronicas-4
+links:
+- title: 'Perspicacia: «Harum»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Harum/
+  type: perspicacia
+relations: []
+checked_on: '2026-10-12'
+status: verified

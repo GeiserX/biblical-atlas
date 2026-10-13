@@ -1,0 +1,28 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: saraf
+name: Saraf
+names:
+- name: Saraf
+perspicacia: '1200003838'
+summary: Descendiente de Selá, de Judá, que se casó con mujer moabita. Otras lecturas dicen que gobernó en Moab o para Moab.
+reason: Perspicacia «Saraf»; 1Cr 4:22.
+sources:
+- it-saraf
+- 1-cronicas-4
+links:
+- title: 'Perspicacia: «Saraf»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Saraf/
+  type: perspicacia
+relations:
+- type: kin
+  person: sela-hijo-de-juda
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-4
+  - it-saraf
+  reason: '1Cr 4:21, 22: entre los «hijos» de Selá; Perspicacia lo da como descendiente suyo.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

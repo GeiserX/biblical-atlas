@@ -1,0 +1,36 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: miguel-hijo-de-jesisai
+name: Miguel
+names:
+- name: Miguel
+perspicacia: 1200003035#8
+disambiguation: Miguel hijo de Jesisái (1Cr 5:14); no es ninguno de los otros Miguel que numera Perspicacia «Miguel».
+distinct_from:
+- miguel-de-manases
+- miguel-descendiente-de-berias
+- miguel-hijo-de-abihail
+- miguel-hijo-de-baaseya
+- miguel-hijo-de-izrahias
+- miguel-padre-de-omri
+- miguel-padre-de-setur
+summary: Gadita, descendiente de Buz, hijo de Jesisái. Vivió al menos cinco generaciones antes que Miguel, hijo de Abihail.
+reason: Perspicacia «Miguel», núm. 8; 1Cr 5:14.
+sources:
+- it-miguel
+- 1-cronicas-5
+links:
+- title: 'Perspicacia: «Miguel»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Miguel/
+  type: perspicacia
+relations:
+- type: kin
+  person: jesisai
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-5
+  reason: 1Cr 5:14 da la línea de padre a hijo, de Buz a Abihail.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

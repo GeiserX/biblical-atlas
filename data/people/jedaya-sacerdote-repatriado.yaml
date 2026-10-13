@@ -1,0 +1,42 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jedaya-sacerdote-repatriado
+name: Jedayá
+names:
+- name: Jedayá
+perspicacia: 1200002356#4
+summary: Sacerdote que vivió en Jerusalén al volver de Babilonia. Perspicacia no descarta que el nombre aluda a toda la casa
+  paterna de Jedayá de tiempos de David.
+reason: Perspicacia «Jedayá», núm. 4; 1Cr 9:10.
+sources:
+- it-jedaya
+- 1-cronicas-9
+links:
+- title: 'Perspicacia: «Jedayá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jeday%C3%A1/
+  type: perspicacia
+relations:
+- type: holds_office
+  office: priest
+  inferred: false
+  sources:
+  - 1-cronicas-9
+  reason: 1Cr 9:10 lo pone entre los sacerdotes.
+  checked_on: '2026-10-12'
+  status: verified
+- type: lived_in
+  place: jerusalen
+  inferred: false
+  sources:
+  - 1-cronicas-9
+  - it-jedaya
+  reason: '1Cr 9:2, 3, 10: de los sacerdotes que volvieron y vivían en Jerusalén.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- jedaya-de-la-corona
+- jedaya-de-tiempos-de-david
+- jedaya-hijo-de-simri
+disambiguation: 'Jedayá núm. 4 de Perspicacia: sacerdote que vivió en Jerusalén al volver. Perspicacia no lo identifica con
+  el Jedayá de la corona.'

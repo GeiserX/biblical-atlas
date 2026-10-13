@@ -1,0 +1,28 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ahumai
+name: Ahumái
+names:
+- name: Ahumái
+perspicacia: '1200000174'
+summary: Judaíta, el primero de los dos hijos de Jáhat que se nombran; de ellos salieron las familias de los zoratitas.
+reason: Perspicacia «Ahumai»; 1Cr 4:2.
+sources:
+- it-ahumai
+- 1-cronicas-4
+links:
+- title: 'Perspicacia: «Ahumai»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ahumai/
+  type: perspicacia
+relations:
+- type: kin
+  person: jahat-hijo-de-reaya
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-4
+  - it-ahumai
+  reason: '1Cr 4:2: Jáhat fue padre de Ahumái.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

@@ -1,0 +1,36 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: mesilemit
+name: Mesilemit
+names:
+- name: Mesilemit
+perspicacia: '1200003011'
+summary: Sacerdote descendiente de Imer. Perspicacia cree probable que sea el Mesilemot de la lista de Nehemías.
+reason: Perspicacia «Mesilemit»; 1Cr 9:12.
+sources:
+- it-mesilemit
+- 1-cronicas-9
+links:
+- title: 'Perspicacia: «Mesilemit»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Mesilemit/
+  type: perspicacia
+relations:
+- type: kin
+  person: imer-padre-de-mesilemit
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-9
+  reason: '1Cr 9:12: Mesilemit, hijo de Imer.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: holds_office
+  office: priest
+  inferred: true
+  sources:
+  - 1-cronicas-9
+  - it-mesilemit
+  reason: Perspicacia «Mesilemit» lo llama sacerdote; 1Cr 9:12.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

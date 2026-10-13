@@ -1,0 +1,34 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: sedequias-hijo-de-joaquin
+name: Sedequías
+names:
+- name: Sedequías
+perspicacia: 1200004685#5
+disambiguation: Sedequías hijo de Jeconías (núm. 5 de Perspicacia); no el último rey de Judá, tío de Jeconías, ni el falso
+  profeta hijo de Kenaaná.
+summary: Hijo de Jeconías, o Joaquín, según Perspicacia, que no lo cuenta entre los siete que este tuvo preso en Babilonia.
+  Solo sale en 1Cr 3:16.
+reason: Perspicacia «Sedequías», núm. 5; 1Cr 3:16.
+sources:
+- it-sedequias
+- 1-cronicas-3
+links:
+- title: 'Perspicacia: «Sedequías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sedequ%C3%ADas/
+  type: perspicacia
+relations:
+- type: kin
+  person: joaquin
+  word: father
+  inferred: true
+  sources:
+  - 1-cronicas-3
+  - it-sedequias
+  reason: 1Cr 3:16 lo nombra después de Jeconías como «su hijo»; Perspicacia «Sedequías», núm. 5, lo da por hijo de Jeconías.
+  checked_on: '2026-10-12'
+  status: verified
+distinct_from:
+- sedequias
+- sedequias-hijo-de-kenaana
+checked_on: '2026-10-12'
+status: verified

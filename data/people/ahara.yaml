@@ -1,0 +1,58 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ahara
+name: Ahará
+names:
+- name: Ahará
+perspicacia: '1200000139'
+summary: Tercer hijo de Benjamín en 1Cr 8:1. Perspicacia cree que probablemente es el Ehí de Génesis 46 y el Ahiram de Números
+  26.
+reason: Perspicacia «Ahará»; 1Cr 8:1.
+sources:
+- it-ahara
+- 1-cronicas-8
+links:
+- title: 'Perspicacia: «Ahará»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ahar%C3%A1/
+  type: perspicacia
+relations:
+- type: kin
+  person: benjamin-hijo-de-jacob
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  reason: '1Cr 8:1: Ahará fue el tercer hijo de Benjamín.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: same_as
+  person: ahiram
+  certainty: probable
+  inferred: true
+  sources:
+  - 1-cronicas-8
+  - it-ahara
+  reason: Perspicacia «Ahará» lo cree probablemente el Ahiram de la lista de Números (1Cr 8:1).
+  checked_on: '2026-10-12'
+  status: verified
+- type: same_as
+  person: ehi
+  certainty: probable
+  inferred: true
+  sources:
+  - 1-cronicas-8
+  - it-ahara
+  reason: Perspicacia «Ahará» lo cree probablemente el Ehí de la lista de Génesis (1Cr 8:1).
+  checked_on: '2026-10-12'
+  status: verified
+- type: same_as
+  person: aher
+  certainty: probable
+  inferred: true
+  sources:
+  - 1-cronicas-8
+  - it-aher
+  reason: Perspicacia «Aher» cree probable que Aher sea Ahiram o Ahará (1Cr 8:1).
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

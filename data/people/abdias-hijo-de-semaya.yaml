@@ -1,0 +1,47 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: abdias-hijo-de-semaya
+name: Abdías
+names:
+- name: Abdías
+perspicacia: 1200003287#9
+summary: Levita descendiente de Jedutún que regresó de Babilonia y residió en Jerusalén. Nehemías lo llama Abdá; Perspicacia
+  ve posible que sea el portero de días de Nehemías.
+reason: Perspicacia «Abdías», núm. 9; 1Cr 9:16.
+sources:
+- it-abdias
+- 1-cronicas-9
+links:
+- title: 'Perspicacia: «Abdías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Abd%C3%ADas/
+  type: perspicacia
+relations:
+- type: kin
+  person: semaya-hijo-de-galal
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-9
+  reason: '1Cr 9:16: Abdías, hijo de Semaya.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: lived_in
+  place: jerusalen
+  inferred: false
+  sources:
+  - 1-cronicas-9
+  - it-abdias
+  reason: '1Cr 9:16, 34: de los jefes de los levitas que vivían en Jerusalén.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- abdias-el-gadita
+- abdias-hijo-de-arnan
+- abdias-hijo-de-azel
+- abdias-hijo-de-izrahias
+- abdias-mayordomo-de-acab
+- abdias-padre-de-ismaya
+- abdias-profeta
+disambiguation: 'Abdías núm. 9 de Perspicacia: levita, hijo de Semaya. No el mayordomo de Acab, el profeta ni el descendiente
+  de Saúl.'

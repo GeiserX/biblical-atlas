@@ -1,0 +1,34 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hananias-hijo-de-zorobabel
+name: Hananías
+names:
+- name: Hananías
+perspicacia: 1200001853#8
+disambiguation: Hananías hijo de Zorobabel (núm. 8 de Perspicacia); no el compañero de Daniel al que llamaron Sadrac.
+summary: 'Hijo de Zorobabel por el que sigue la línea de David: fue padre de Pelatías y de Jesayá.'
+reason: Perspicacia «Hananías»; 1Cr 3:19, 20.
+sources:
+- it-hananias
+- 1-cronicas-3
+links:
+- title: 'Perspicacia: «Hananías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hanan%C3%ADas/
+  type: perspicacia
+relations:
+- type: kin
+  person: zorobabel
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-3
+  - it-hananias
+  - it-zorobabel
+  reason: '1Cr 3:19, 20: uno de los hijos de Zorobabel.'
+  checked_on: '2026-10-12'
+  status: verified
+distinct_from:
+- sadrac
+- hananias-hijo-de-heman
+- hananias-hijo-de-sasac
+checked_on: '2026-10-12'
+status: verified

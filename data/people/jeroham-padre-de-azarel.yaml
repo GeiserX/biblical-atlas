@@ -1,0 +1,25 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jeroham-padre-de-azarel
+name: Jeroham
+names:
+- name: Jeroham
+perspicacia: 1200002432#3
+disambiguation: Jeroham, padre de Azarel el danita; no el levita antepasado de Samuel.
+distinct_from:
+- jeroham-hijo-de-elihu
+- jeroham-de-guedor
+- jeroham-hijo-de-pasjur
+- jeroham-padre-de-ibneya
+- jeroham-padre-de-samserai
+summary: Padre de Azarel, el príncipe de los danitas bajo el rey David.
+reason: Perspicacia «Jeroham», núm. 3; 1Cr 27:22.
+sources:
+- it-jeroham
+- 1-cronicas-27
+links:
+- title: 'Perspicacia: «Jeroham»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jeroham/
+  type: perspicacia
+relations: []
+checked_on: '2026-10-12'
+status: verified

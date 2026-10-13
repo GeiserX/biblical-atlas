@@ -1,0 +1,36 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jonatan-hijo-de-jada
+name: Jonatán
+names:
+- name: Jonatán
+perspicacia: 1200002506#9
+summary: Hijo de Jadá y hermano de Jéter, de la rama de Jerahmeel en Judá. Su hermano murió sin hijos; él tuvo a Pélez y Zazá.
+reason: Perspicacia «Jonatán», núm. 9; 1Cr 2:32, 33.
+sources:
+- it-jonatan
+- 1-cronicas-2
+links:
+- title: 'Perspicacia: «Jonatán»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jonat%C3%A1n/
+  type: perspicacia
+relations:
+- type: kin
+  person: jada
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-2
+  reason: '1Cr 2:32: hijo de Jadá.'
+  checked_on: '2026-10-12'
+  status: verified
+disambiguation: Jonatán hijo de Jadá, de Judá; no Jonatán hijo de Saúl ni los demás Jonatán de otras épocas.
+distinct_from:
+- jonatan-hijo-de-sague
+- jonatan-levita
+- jonatan-hijo-de-sama
+- jonatan-hijo-de-abiatar
+- jonatan-hijo-de-saul
+- jonatan-hijo-de-uzias
+- jonatan-sobrino-de-david
+checked_on: '2026-10-12'
+status: verified

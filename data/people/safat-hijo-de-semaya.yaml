@@ -1,0 +1,34 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: safat-hijo-de-semaya
+name: Safat
+names:
+- name: Safat
+perspicacia: 1200003950#5
+disambiguation: Safat hijo de Semaya (núm. 5 de Perspicacia); no el espía de Simeón ni el padre de Eliseo.
+summary: De la casa de David, hijo de Semaya; vivió cuando el destierro ya había terminado.
+reason: Perspicacia «Safat»; 1Cr 3:22.
+sources:
+- it-safat
+- 1-cronicas-3
+links:
+- title: 'Perspicacia: «Safat»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Safat/
+  type: perspicacia
+relations:
+- type: kin
+  person: semaya-hijo-de-secanias
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-3
+  - it-safat
+  reason: '1Cr 3:22: uno de los hijos de Semaya.'
+  checked_on: '2026-10-12'
+  status: verified
+distinct_from:
+- safat-hijo-de-hori
+- safat-padre-de-eliseo
+- safat-el-gadita
+- safat-hijo-de-adlai
+checked_on: '2026-10-12'
+status: verified

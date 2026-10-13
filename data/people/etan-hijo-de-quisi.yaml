@@ -1,0 +1,78 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: etan-hijo-de-quisi
+name: Etán
+names:
+- name: Etán
+perspicacia: 1200001434#3
+disambiguation: Etán hijo de Quisí (1Cr 6:44); no es ninguno de los otros Etán que numera Perspicacia «Etán».
+distinct_from:
+- etan-el-ezrahita
+- etan-hijo-de-zima
+summary: Cantor levita merarita, hijo de Quisí o Cusayá. Con Hemán y Asaf tocó los címbalos de cobre cuando el Arca subió
+  a Jerusalén. Perspicacia cree que más tarde se le llamó Jedutún.
+reason: Perspicacia «Etán», núm. 3, y «Jedutún», núm. 1; 1Cr 6:44; 15:17, 19.
+sources:
+- it-etan
+- it-jedutun
+- 1-cronicas-6
+- 1-cronicas-15
+links:
+- title: 'Perspicacia: «Etán»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Et%C3%A1n/
+  type: perspicacia
+- title: 'Perspicacia: «Jedutún»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jedut%C3%BAn/
+  type: perspicacia
+relations:
+- type: kin
+  person: quisi
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-6
+  reason: '1Cr 6:44: Etán, «hijo de Quisí».'
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: merari
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-6
+  - 1-cronicas-15
+  reason: '1Cr 6:44, 47: de los descendientes de Merarí.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: accompanies
+  person: heman-hijo-de-joel
+  word: fellow_worker
+  inferred: false
+  sources:
+  - 1-cronicas-6
+  reason: '1Cr 6:44: Etán, de sus hermanos los meraritas, estaba a la izquierda de Hemán.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: cusaya
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-15
+  - it-qusaya
+  reason: 1Cr 15:17 lo llama hijo de Cusayá; Perspicacia «Qusayá» admite que fuera su padre o un antepasado.
+  checked_on: '2026-10-12'
+  status: verified
+- type: same_as
+  person: jedutun-musico
+  certainty: probable
+  inferred: true
+  sources:
+  - it-jedutun
+  - it-etan
+  - 1-cronicas-15
+  reason: 'Perspicacia «Jedutún», núm. 1: al parecer Etán, compañero de Hemán y Asaf en 1Cr 15:17, 19, se llamó después Jedutún;
+    «Etán», núm. 3, lo da como posibilidad.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

@@ -1,0 +1,61 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: mesulam-hijo-de-abihail
+name: Mesulam
+names:
+- name: Mesulam
+perspicacia: 1200003014#2
+disambiguation: Mesulam hijo de Abihail (1Cr 5:13, 14, 17); no es ninguno de los otros Mesulam que numera Perspicacia «Mesulam».
+distinct_from:
+- mesulam-abuelo-de-safan
+- mesulam-hijo-de-elpaal
+- mesulam-hijo-de-hodavias
+- mesulam-hijo-de-mesilemit
+- mesulam-hijo-de-sefatias
+- mesulam-hijo-de-zorobabel
+- salum-hijo-de-sadoc
+summary: Gadita de Basán, hijo de Abihail. Perspicacia cree que el texto junta dos registros, el de Jeroboán II y el de Jotán,
+  que no reinaron a la vez.
+reason: Perspicacia «Mesulam», núm. 2; 1Cr 5:13, 14, 17.
+sources:
+- it-mesulam
+- 1-cronicas-5
+links:
+- title: 'Perspicacia: «Mesulam»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Mesulam/
+  type: perspicacia
+relations:
+- type: kin
+  person: abihail-hijo-de-huri
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-5
+  reason: '1Cr 5:13, 14: los siete eran hijos de Abihail.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: lived_in
+  place: galaad
+  inferred: false
+  sources:
+  - 1-cronicas-5
+  reason: 1Cr 5:16 los sitúa en Galaad, en Basán con sus pueblos y en los pastos de Sarón.
+  checked_on: '2026-10-12'
+  status: verified
+- type: lived_in
+  place: basan
+  inferred: false
+  sources:
+  - 1-cronicas-5
+  reason: 1Cr 5:16 los sitúa en Galaad, en Basán con sus pueblos y en los pastos de Sarón.
+  checked_on: '2026-10-12'
+  status: verified
+- type: lived_in
+  place: saron-de-gad
+  inferred: false
+  sources:
+  - 1-cronicas-5
+  reason: 1Cr 5:16 los sitúa en Galaad, en Basán con sus pueblos y en los pastos de Sarón.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

@@ -1,0 +1,27 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: maluc-hijo-de-hasabias
+name: Maluc
+names:
+- name: Maluc
+perspicacia: 1200002873#1
+summary: Levita merarita, hijo de Hasabías, antepasado del cantor Etán.
+reason: Perspicacia «Maluc», núm. 1; 1Cr 6:44, 45.
+sources:
+- it-maluc
+- 1-cronicas-6
+links:
+- title: 'Perspicacia: «Maluc»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Maluc/
+  type: perspicacia
+relations:
+- type: kin
+  person: hasabias-hijo-de-amasias
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-6
+  reason: '1Cr 6:44, 45: Maluc, «hijo de Hasabías».'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

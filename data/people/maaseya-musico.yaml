@@ -1,0 +1,18 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: maaseya-musico
+name: Maaseya
+names:
+- name: Maaseya
+perspicacia: 1200002811#1
+disambiguation: El músico de David; no los otros Maaseya que numera Perspicacia «Maaseya», todos de épocas posteriores.
+summary: Músico levita de la segunda división; tocó instrumento de cuerda en la procesión que subió el Arca a Jerusalén.
+reason: Perspicacia «Maaseya», núm. 1; 1Cr 15:18, 20.
+sources:
+- it-maaseya
+- 1-cronicas-15
+links:
+- title: 'Perspicacia: «Maaseya»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Maaseya/
+  type: perspicacia
+checked_on: '2026-10-12'
+status: verified

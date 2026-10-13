@@ -1,0 +1,47 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: joas-de-benjamin
+name: Joás
+names:
+- name: Joás
+perspicacia: 1200002474#1
+disambiguation: Joás de Benjamín, de la casa de Béker; no el padre de Gedeón, el hijo del rey Acab ni los reyes Jehoás.
+distinct_from:
+- jehoas-de-israel
+- jehoas-de-juda
+- joas-hijo-del-rey
+- joas-padre-de-gedeon
+- joas-descendiente-de-sela
+- joas-encargado-del-aceite
+- joas-hijo-de-semaa
+summary: Benjamita de la casa de Béker, uno de los nueve de su lista.
+reason: Perspicacia «Joás», núm. 1; 1Cr 7:6, 8.
+sources:
+- it-joas
+- 1-cronicas-7
+links:
+- title: 'Perspicacia: «Joás»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jo%C3%A1s/
+  type: perspicacia
+relations:
+- type: kin
+  person: beker-hijo-de-benjamin
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-7
+  - it-joas
+  reason: 1Cr 7:8 lo pone entre los hijos de Béker; Perspicacia «Joás» no precisa si era hijo o descendiente.
+  checked_on: '2026-10-12'
+  status: verified
+- type: born_in
+  place: egipto
+  inferred: true
+  sources:
+  - 1-cronicas-7
+  - it-alemet
+  reason: 'Perspicacia «Alémet», núm. 1: los nueve hijos de Béker de 1Cr 7:8 nacieron en Egipto, después de la llegada de
+    Jacob en 1728 a.e.c.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

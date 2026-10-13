@@ -1,0 +1,42 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: malkiya-de-tiempos-de-david
+name: Malkiya
+names:
+- name: Malkiya
+perspicacia: 1200002866#2
+disambiguation: El sacerdote de la quinta división (1Cr 24:9); no los demás Malkiya que numera Perspicacia, como el hijo del
+  rey de días de Jeremías.
+summary: Descendiente de Aarón que encabezó el quinto de los 24 turnos en que David repartió a los sacerdotes.
+reason: Perspicacia «Malkiya», núm. 2; 1Cr 24:9.
+sources:
+- it-malkiya
+- 1-cronicas-24
+links:
+- title: 'Perspicacia: «Malkiya»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Malkiya/
+  type: perspicacia
+relations:
+- type: kin
+  person: aaron
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-24
+  - it-malkiya
+  reason: 1Cr 24:1 abre la lista de los descendientes de Aarón repartidos en turnos, y 24:9 da a esta casa el quinto.
+  checked_on: '2026-10-12'
+  status: verified
+- type: holds_office
+  office: priest
+  inferred: false
+  sources:
+  - 1-cronicas-24
+  - it-malkiya
+  reason: '1Cr 24:9: encabeza una de las casas sacerdotales de 24:4-6; Perspicacia «Malkiya» lo trata como sacerdote.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- malkias-padre-de-pasjur
+- malkiya-hijo-de-etni

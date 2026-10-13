@@ -1,0 +1,39 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jonatan-sobrino-de-david
+name: Jonatán
+names:
+- name: Jonatán
+perspicacia: 1200002506#7
+disambiguation: Jonatán, sobrino, consejero y secretario de David; no el hijo de Saúl, ni el de Abiatar, ni el de Uzías, ni
+  el levita de Miqueas.
+distinct_from:
+- jonatan-hijo-de-sague
+- jonatan-levita
+- jonatan-hijo-de-abiatar
+- jonatan-hijo-de-saul
+- jonatan-hijo-de-uzias
+- jonatan-hijo-de-jada
+summary: Sobrino de David, hombre sabio que le servía de consejero y secretario. Perspicacia cree probable que sea el hijo
+  de Samá que mató a un gigante en Gat.
+reason: Perspicacia «Jonatán», núm. 7; 1Cr 27:32.
+sources:
+- it-jonatan
+- 1-cronicas-27
+links:
+- title: 'Perspicacia: «Jonatán»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jonat%C3%A1n/
+  type: perspicacia
+relations:
+- type: kin
+  person: david
+  word: uncle
+  inferred: false
+  sources:
+  - 1-cronicas-27
+  - it-jonatan
+  reason: '1Cr 27:32: Jonatán, sobrino de David. Perspicacia «Jonatán», núm. 7, explica que la palabra hebrea suele ser «tío»,
+    pero aquí parece valer por pariente.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

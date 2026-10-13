@@ -1,0 +1,41 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: azmavet-hijo-de-adiel
+name: Azmávet
+names:
+- name: Azmávet
+perspicacia: 1200000496#3
+disambiguation: Azmávet hijo de Adiel, tesorero de David; no el barhumita de los treinta guerreros.
+distinct_from:
+- azmavet-el-bar-humita
+- azmavet-hijo-de-jehoada
+- azmavet-padre-de-jeziel
+summary: Hijo de Adiel. Tenía a su cargo las cámaras del tesoro del rey David.
+reason: Perspicacia «Azmávet», núm. 3; 1Cr 27:25.
+sources:
+- it-azmavet
+- 1-cronicas-27
+links:
+- title: 'Perspicacia: «Azmávet»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Azm%C3%A1vet/
+  type: perspicacia
+relations:
+- type: kin
+  person: adiel-padre-de-azmavet
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-27
+  reason: '1Cr 27:25: Azmávet hijo de Adiel.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: tie
+  person: david
+  word: master
+  inferred: false
+  sources:
+  - 1-cronicas-27
+  reason: '1Cr 27:25, 31: estaba a cargo del tesoro del rey; era uno de los que administraban la hacienda del rey.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

@@ -1,0 +1,28 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: isma
+name: Ismá
+names:
+- name: Ismá
+perspicacia: '1200002214'
+summary: Uno de los primeros descendientes de Judá, hijo del fundador de Etam. Su nombre abrevia Ismael.
+reason: Perspicacia «Ismá»; 1Cr 4:3.
+sources:
+- it-isma
+- 1-cronicas-4
+links:
+- title: 'Perspicacia: «Ismá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ism%C3%A1/
+  type: perspicacia
+relations:
+- type: kin
+  person: hur-hijo-de-caleb
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-4
+  - it-hur
+  reason: '1Cr 4:3, 4: los hijos del padre de Etam van entre «los hijos de Hur»; Perspicacia «Hur», núm. 1, cita 1Cr 4:1-4.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

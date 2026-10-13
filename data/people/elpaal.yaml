@@ -1,0 +1,36 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: elpaal
+name: Elpaal
+names:
+- name: Elpaal
+perspicacia: '1200001337'
+summary: Benjamita; sus padres fueron Saharaim y Husim. De él salieron varias casas de jefes de su tribu.
+reason: Perspicacia «Elpaal»; 1Cr 8:1, 8, 11, 12.
+sources:
+- it-elpaal
+- 1-cronicas-8
+links:
+- title: 'Perspicacia: «Elpaal»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Elpaal/
+  type: perspicacia
+relations:
+- type: kin
+  person: saharaim
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  reason: 1Cr 8:11 lo cuenta entre los hijos de Saharaim.
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: husim-esposa-de-saharaim
+  word: mother
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  reason: '1Cr 8:11: su madre fue Husim.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

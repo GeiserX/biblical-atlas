@@ -1,0 +1,30 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: miclot-de-la-division-de-dodai
+name: Miclot
+names:
+- name: Miclot
+perspicacia: 1200003048#2
+summary: Jefe puesto en la división de Dodái el ahohíta, la que servía al rey David el segundo mes.
+reason: Perspicacia «Miqlot», núm. 2; 1Cr 27:4.
+sources:
+- it-miqlot
+- 1-cronicas-27
+links:
+- title: 'Perspicacia: «Miqlot»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Miqlot/
+  type: perspicacia
+relations:
+- type: tie
+  person: david
+  word: master
+  inferred: false
+  sources:
+  - 1-cronicas-27
+  reason: '1Cr 27:4: Miclot era el líder en la división del segundo mes, al servicio del rey.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+disambiguation: Miclot, jefe en la división de Dodái; no el benjamita Miclot, padre de Simeá.
+distinct_from:
+- miclot-padre-de-simea

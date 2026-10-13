@@ -1,0 +1,37 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: elcana-padre-de-amasai
+name: Elcaná
+names:
+- name: Elcaná
+perspicacia: 1200001326#2
+disambiguation: Elcaná padre de Amasái (1Cr 6:25, 36); no es ninguno de los otros Elcaná que numera Perspicacia «Elqaná».
+distinct_from:
+- elcana-descendiente-de-core
+- elcana-el-coreita
+- elcana-hijo-de-core
+- elcana-hijo-de-jeroham
+- elcana-hijo-de-mahat
+- elcana-padre-de-asa
+- elcana-portero
+summary: Levita cohatita, padre de Amasái y de Ahimot, en la línea de Samuel. Perspicacia cree que quizá era hijo de Joel.
+reason: Perspicacia «Elqaná», núm. 2; 1Cr 6:25, 36.
+sources:
+- it-elqana
+- 1-cronicas-6
+links:
+- title: 'Perspicacia: «Elqaná»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Elqan%C3%A1/
+  type: perspicacia
+relations:
+- type: kin
+  person: joel-hijo-de-azarias
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-6
+  - it-elqana
+  reason: '1Cr 6:36: Elcaná, «hijo de Joel»; Perspicacia «Elqaná», núm. 2, dice que quizá era hijo suyo.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

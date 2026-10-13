@@ -1,0 +1,42 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hefer-hijo-de-asjur
+name: Héfer
+names:
+- name: Héfer
+perspicacia: 1200001989#2
+disambiguation: Héfer hijo de Asjur (núm. 2 de Perspicacia); no el manasita padre de Zelofehad ni el guerrero de David.
+summary: Judaíta; Naará se lo dio a su marido Asjur.
+reason: Perspicacia «Héfer»; 1Cr 4:6.
+sources:
+- it-hefer
+- 1-cronicas-4
+links:
+- title: 'Perspicacia: «Héfer»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/H%C3%A9fer/
+  type: perspicacia
+relations:
+- type: kin
+  person: asjur
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-4
+  - it-hefer
+  reason: '1Cr 4:6: hijo de Asjur.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: naara
+  word: mother
+  inferred: false
+  sources:
+  - 1-cronicas-4
+  - it-hefer
+  reason: '1Cr 4:6: uno de los hijos de Naará.'
+  checked_on: '2026-10-12'
+  status: verified
+distinct_from:
+- hefer-hijo-de-galaad
+- hefer-el-mekeratita
+checked_on: '2026-10-12'
+status: verified

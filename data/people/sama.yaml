@@ -1,0 +1,46 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: sama
+name: Sama
+names:
+- name: Sama
+perspicacia: '1200003937'
+summary: Hijo de Hotam el aroerita y hermano de Jeiel; los dos fueron guerreros poderosos de David.
+reason: Perspicacia «Sama»; 1Cr 11:44.
+sources:
+- it-sama-hijo-de-hotam
+- 1-cronicas-11
+links:
+- title: 'Perspicacia: «Sama»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sama/
+  type: perspicacia
+relations:
+- type: kin
+  person: hotam-el-aroerita
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-11
+  reason: '1Cr 11:44: Sama y Jeiel, hijos de Hotam el aroerita.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: jeiel-hijo-de-hotam
+  word: brother
+  inferred: false
+  sources:
+  - 1-cronicas-11
+  - it-sama-hijo-de-hotam
+  reason: 1Cr 11:44; Perspicacia «Sama» lo llama hermano de Jeiel.
+  checked_on: '2026-10-12'
+  status: verified
+- type: tie
+  person: david
+  word: master
+  inferred: false
+  sources:
+  - 1-cronicas-11
+  reason: '1Cr 11:44: figura entre los valientes de David.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

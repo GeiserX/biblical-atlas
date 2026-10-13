@@ -1,0 +1,38 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: semaya-hijo-de-galal
+name: Semaya
+names:
+- name: Semaya
+perspicacia: 1200004000#15
+summary: Levita descendiente de Jedutún, hijo de Galal. Abdías, hijo suyo o descendiente, residió en Jerusalén tras el destierro.
+reason: Perspicacia «Semaya», núm. 15; 1Cr 9:16.
+sources:
+- it-semaya
+- 1-cronicas-9
+links:
+- title: 'Perspicacia: «Semaya»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Semaya/
+  type: perspicacia
+relations:
+- type: kin
+  person: galal-hijo-de-jedutun
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-9
+  reason: '1Cr 9:16: Semaya, hijo de Galal.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- semaya-hijo-de-hasub
+- semaya-hijo-de-joel
+- semaya-hijo-de-netanel
+- semaya-hijo-de-obed-edom
+- semaya-hijo-de-secanias
+- semaya-jefe-de-la-casa-de-elizafan
+- semaya-profeta
+- semaya-simeonita
+disambiguation: 'Semaya núm. 15 de Perspicacia: levita de la línea de Jedutún, hijo de Galal. No el merarita hijo de Hasub
+  ni el profeta.'

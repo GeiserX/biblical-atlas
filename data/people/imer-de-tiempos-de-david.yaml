@@ -1,0 +1,48 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: imer-de-tiempos-de-david
+name: Imer
+names:
+- name: Imer
+perspicacia: 1200002153#1
+summary: Descendiente de Aarón que encabezó el decimosexto turno sacerdotal en tiempos de David.
+reason: Perspicacia «Imer», núm. 1; 1Cr 24:14.
+sources:
+- it-imer
+- 1-cronicas-24
+links:
+- title: 'Perspicacia: «Imer»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Imer/
+  type: perspicacia
+relations:
+- type: kin
+  person: aaron
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-24
+  - it-imer
+  reason: 1Cr 24:1 abre la lista de los descendientes de Aarón repartidos en turnos, y 24:14 da a esta casa el decimosexto.
+  checked_on: '2026-10-12'
+  status: verified
+- type: holds_office
+  office: priest
+  inferred: false
+  sources:
+  - 1-cronicas-24
+  - it-imer
+  reason: '1Cr 24:14: encabeza una de las casas sacerdotales de 24:4-6; Perspicacia «Imer» lo trata como sacerdote.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: same_as
+  person: imer-padre-de-mesilemit
+  certainty: possible
+  inferred: true
+  sources:
+  - it-imer
+  - 1-cronicas-24
+  reason: Perspicacia «Imer», núm. 2, ve posible que el padre de Mesilemit sea el mismo Imer jefe del turno decimosexto de
+    1Cr 24:14.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

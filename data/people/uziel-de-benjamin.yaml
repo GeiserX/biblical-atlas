@@ -1,0 +1,34 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: uziel-de-benjamin
+name: Uziel
+names:
+- name: Uziel
+perspicacia: 1200004536#2
+disambiguation: Uziel de Benjamín, de la línea de Bela; no Uziel hijo de Cohat, tío de Moisés, ni los levitas y el simeonita
+  de ese nombre.
+distinct_from:
+- uziel-hijo-de-cohat
+- uziel-hijo-de-heman
+- uziel-hijo-de-isi
+summary: Benjamita de la línea de Bela que encabezaba una familia.
+reason: Perspicacia «Uziel», núm. 2; 1Cr 7:6, 7.
+sources:
+- it-uziel
+- 1-cronicas-7
+links:
+- title: 'Perspicacia: «Uziel»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Uziel/
+  type: perspicacia
+relations:
+- type: kin
+  person: bela-hijo-de-benjamin
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-7
+  - it-uziel
+  reason: 1Cr 7:7 lo pone entre los hijos de Bela; Perspicacia «Uziel» no precisa si era hijo o descendiente.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

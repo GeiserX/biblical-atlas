@@ -1,0 +1,51 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: abihail-hijo-de-huri
+name: Abihail
+names:
+- name: Abihail
+- name: Abiháil
+  note: Grafía de Perspicacia.
+perspicacia: 1200000038#3
+disambiguation: Abihail hijo de Hurí (1Cr 5:13-17); no es ninguno de los otros Abihail que numera Perspicacia «Abiháil».
+distinct_from:
+- abihail-esposa-de-abisur
+- abihail-padre-de-zuriel
+summary: Gadita, hijo de Hurí y cabeza de familia, que se asentó en Basán y Galaad. Fue padre de siete hijos.
+reason: Perspicacia «Abiháil», núm. 3; 1Cr 5:13-17.
+sources:
+- it-abihail
+- 1-cronicas-5
+links:
+- title: 'Perspicacia: «Abiháil»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Abih%C3%A1il/
+  type: perspicacia
+relations:
+- type: kin
+  person: huri
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-5
+  reason: 1Cr 5:14 da la línea de padre a hijo, de Buz a Abihail.
+  checked_on: '2026-10-12'
+  status: verified
+- type: lived_in
+  place: galaad
+  inferred: true
+  sources:
+  - 1-cronicas-5
+  - it-abihail
+  reason: Perspicacia «Abiháil» lo sitúa en Galaad y Basán (1Cr 5:16).
+  checked_on: '2026-10-12'
+  status: verified
+- type: lived_in
+  place: basan
+  inferred: true
+  sources:
+  - 1-cronicas-5
+  - it-abihail
+  reason: Perspicacia «Abiháil» lo sitúa en Galaad y Basán (1Cr 5:16).
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

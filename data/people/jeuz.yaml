@@ -1,0 +1,36 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jeuz
+name: Jeúz
+names:
+- name: Jeúz
+perspicacia: '1200002458'
+summary: Benjamita, hijo de Saharaim y Hodes, cabeza de familia de su tribu.
+reason: Perspicacia «Jeúz»; 1Cr 8:1, 8-10.
+sources:
+- it-jeuz
+- 1-cronicas-8
+links:
+- title: 'Perspicacia: «Jeúz»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Je%C3%BAz/
+  type: perspicacia
+relations:
+- type: kin
+  person: saharaim
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  reason: 1Cr 8:9, 10 lo cuenta entre los hijos de Saharaim.
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: hodes
+  word: mother
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  reason: '1Cr 8:9: su madre fue Hodes.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

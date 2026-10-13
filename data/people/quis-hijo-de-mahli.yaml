@@ -1,0 +1,34 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: quis-hijo-de-mahli
+name: Quis
+names:
+- name: Quis
+perspicacia: 1200002631#1
+disambiguation: El levita hijo de Mahlí (1Cr 23:21); no Quis hijo de Ner, el padre del rey Saúl.
+distinct_from:
+- quis-hijo-de-ner
+- quis-hijo-de-jeiel
+summary: Levita de la rama de Merarí, hijo de Mahlí. Al morir su hermano Eleazar dejando solo hijas, los hijos de Quis se
+  casaron con ellas. Jerahmeel era hijo suyo.
+reason: Perspicacia «Quis», núm. 1; 1Cr 23:21, 22; 24:29.
+sources:
+- it-quis
+- 1-cronicas-23
+- 1-cronicas-24
+links:
+- title: 'Perspicacia: «Quis»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Quis/
+  type: perspicacia
+relations:
+- type: kin
+  person: mahli-hijo-de-merari
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-23
+  - it-quis
+  reason: 1Cr 23:21 lo da como hijo de Mahlí, junto a Eleazar.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

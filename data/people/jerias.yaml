@@ -1,0 +1,36 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jerias
+name: Jerías
+names:
+- name: Jerías
+- name: Jeriya
+  note: Forma que según Perspicacia «Jerías» toma su nombre en 1Cr 26:31, cuando lo llaman cabeza de los hebronitas.
+perspicacia: '1200002424'
+summary: Levita cohatita, hijo o descendiente de Hebrón y jefe de los hebronitas. Su casa paterna entró en el reparto del
+  servicio levítico de David.
+reason: Perspicacia «Jerías»; 1Cr 23:19; 24:23.
+sources:
+- it-jerias
+- 1-cronicas-23
+- 1-cronicas-24
+- 1-cronicas-26
+links:
+- title: 'Perspicacia: «Jerías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jer%C3%ADas/
+  type: perspicacia
+relations:
+- type: kin
+  person: hebron-hijo-de-cohat
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-23
+  - 1-cronicas-24
+  - it-jerias
+  - 1-cronicas-26
+  reason: 1Cr 23:19 y 24:23 lo ponen el primero, como jefe, de los hijos de Hebrón; Perspicacia «Jerías» lo llama hijo o descendiente
+    de Hebrón.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

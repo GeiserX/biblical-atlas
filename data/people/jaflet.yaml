@@ -1,0 +1,54 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jaflet
+name: Jaflet
+names:
+- name: Jaflet
+perspicacia: '1200002325'
+summary: Aserita, hijo de Héber y nieto de Berías. La genealogía nombra a tres hijos suyos.
+reason: Perspicacia «Jaflet»; 1Cr 7:30-33.
+sources:
+- it-jaflet
+- 1-cronicas-7
+links:
+- title: 'Perspicacia: «Jaflet»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jaflet/
+  type: perspicacia
+relations:
+- type: kin
+  person: heber-hijo-de-berias
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-7
+  reason: 1Cr 7:32 lo cuenta entre los hijos de Héber.
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: somer-hijo-de-heber
+  word: brother
+  inferred: false
+  sources:
+  - 1-cronicas-7
+  reason: '1Cr 7:32: Jaflet, Somer y Hotam eran hijos de Héber.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: hotam-hijo-de-heber
+  word: brother
+  inferred: false
+  sources:
+  - 1-cronicas-7
+  reason: '1Cr 7:32: Jaflet, Somer y Hotam eran hijos de Héber.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: sua-hija-de-heber
+  word: sister
+  inferred: false
+  sources:
+  - 1-cronicas-7
+  reason: '1Cr 7:32: Súa era la hermana de los hijos de Héber.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

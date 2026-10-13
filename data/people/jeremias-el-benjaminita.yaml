@@ -1,0 +1,34 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jeremias-el-benjaminita
+name: Jeremías
+names:
+- name: Jeremías
+perspicacia: 1200002421#1
+disambiguation: Jeremías el benjaminita, con David en Ziclag (1Cr 12:4); no los dos gaditas de 1Cr 12:10, 13 ni el profeta.
+distinct_from:
+- jeremias-de-libna
+- jeremias-decimo-gadita
+- jeremias-profeta
+- jeremias-quinto-gadita
+- jeremias-de-manases
+summary: Benjaminita que se unió a David en Ziclag y llegó a contarse entre sus guerreros poderosos.
+reason: Perspicacia «Jeremías», núm. 1; 1Cr 12:4.
+sources:
+- it-jeremias
+- 1-cronicas-12
+links:
+- title: 'Perspicacia: «Jeremías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jerem%C3%ADas/
+  type: perspicacia
+relations:
+- type: tie
+  person: david
+  word: master
+  inferred: false
+  sources:
+  - 1-cronicas-12
+  reason: '1Cr 12:4: se unió a David y lo apoyó en la guerra.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

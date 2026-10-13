@@ -1,0 +1,28 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: sismai
+name: Sismái
+names:
+- name: Sismái
+perspicacia: '1200004148'
+summary: Judaíta de la casa de Jerahmeel, en la línea de Sesán. Su padre fue Eleasá y su hijo, Salum. Quizá vivió en la época
+  de los jueces.
+reason: Perspicacia «Sismai»; 1Cr 2:40.
+sources:
+- it-sismai
+- 1-cronicas-2
+links:
+- title: 'Perspicacia: «Sismai»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sismai/
+  type: perspicacia
+relations:
+- type: kin
+  person: eleasa-hijo-de-helez
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-2
+  reason: '1Cr 2:40: Eleasá fue su padre.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

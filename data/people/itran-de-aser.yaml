@@ -1,0 +1,43 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: itran-de-aser
+name: Itrán
+names:
+- name: Itrán
+perspicacia: 1200002242#2
+disambiguation: Itrán de Aser; no Itrán hijo de Disón, descendiente de Seír el horeo.
+distinct_from:
+- itran-hijo-de-dison
+summary: Aserita de la casa de Zofá. Perspicacia lo cree probablemente el Jéter del versículo 38.
+reason: Perspicacia «Itrán», núm. 2; 1Cr 7:30, 36, 37.
+sources:
+- it-itran
+- 1-cronicas-7
+links:
+- title: 'Perspicacia: «Itrán»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Itr%C3%A1n/
+  type: perspicacia
+relations:
+- type: kin
+  person: zofa
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-7
+  - it-itran
+  reason: 1Cr 7:37 lo pone entre los hijos de Zofá; Perspicacia «Itrán», núm. 2, lo llama descendiente de Aser por medio de
+    Zofah.
+  checked_on: '2026-10-12'
+  status: verified
+- type: same_as
+  person: jeter-de-aser
+  certainty: probable
+  inferred: true
+  sources:
+  - 1-cronicas-7
+  - it-itran
+  - it-jeter
+  reason: Perspicacia «Itrán», núm. 2, y «Jéter», núm. 4, ven probable que Itrán (1Cr 7:37) y Jéter (7:38) sean la misma persona.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

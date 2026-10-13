@@ -1,0 +1,31 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: malkiya-hijo-de-etni
+name: Malkiya
+names:
+- name: Malkiya
+perspicacia: 1200002866#1
+disambiguation: Malkiya hijo de Etní (1Cr 6:40, 41); no es ninguno de los otros Malkiya que numera Perspicacia «Malkiya».
+distinct_from:
+- malkias-padre-de-pasjur
+- malkiya-de-tiempos-de-david
+summary: Levita guersonita, hijo de Etní, antepasado del músico Asaf.
+reason: Perspicacia «Malkiya», núm. 1; 1Cr 6:40, 41.
+sources:
+- it-malkiya
+- 1-cronicas-6
+links:
+- title: 'Perspicacia: «Malkiya»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Malkiya/
+  type: perspicacia
+relations:
+- type: kin
+  person: etni
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-6
+  reason: '1Cr 6:40, 41: Malkiya, «hijo de Etní».'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

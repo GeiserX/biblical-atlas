@@ -1,0 +1,31 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ulam-hijo-de-eshec
+name: Ulam
+names:
+- name: Ulam
+perspicacia: 1200004503#2
+disambiguation: Ulam hijo de Éshec, de la casa de Saúl; no Ulam de Manasés, padre de Bedán.
+distinct_from:
+- ulam-de-manases
+summary: Benjamita, primer hijo de Éshec, de la descendencia de Saúl. Sus hijos fueron arqueros valientes, y al escribirse
+  Crónicas tenía 150 hijos y nietos.
+reason: Perspicacia «Ulam», núm. 2; 1Cr 8:33, 39, 40.
+sources:
+- it-ulam
+- 1-cronicas-8
+links:
+- title: 'Perspicacia: «Ulam»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ulam/
+  type: perspicacia
+relations:
+- type: kin
+  person: eshec
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  reason: 1Cr 8:39 lo cuenta entre los hijos de Éshec.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

@@ -1,0 +1,44 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: asarela
+name: Asarelá
+names:
+- name: Asarelá
+perspicacia: '1200000408'
+summary: Levita de los hijos de Asaf apartado para cantar en el santuario en días de David. Perspicacia lo ve probablemente
+  el mismo que Jesarela.
+reason: Perspicacia «Asarelá»; 1Cr 25:2.
+sources:
+- it-asarela
+- it-jesarela
+- 1-cronicas-25
+links:
+- title: 'Perspicacia: «Asarelá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Asarel%C3%A1/
+  type: perspicacia
+- title: 'Perspicacia: «Jesarela»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jesarela/
+  type: perspicacia
+relations:
+- type: kin
+  person: asaf-hijo-de-berekias
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-25
+  - it-asarela
+  reason: 1Cr 25:2 lo cuenta entre los hijos de Asaf.
+  checked_on: '2026-10-12'
+  status: verified
+- type: same_as
+  person: jesarela
+  certainty: probable
+  inferred: true
+  sources:
+  - it-asarela
+  - it-jesarela
+  - 1-cronicas-25
+  reason: 'Perspicacia «Asarelá» y «Jesarela»: el Jesarela de 1Cr 25:14 es probablemente otra forma de Asarelá (25:2).'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

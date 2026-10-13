@@ -1,0 +1,37 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: abdias-hijo-de-arnan
+name: Abdías
+names:
+- name: Abdías
+perspicacia: 1200003287#10
+disambiguation: Abdías de la línea de Zorobabel (núm. 10 de Perspicacia); no el mayordomo de Acab ni el profeta.
+summary: De la línea de David y de Zorobabel; vivió cuando los judíos ya habían vuelto del destierro.
+reason: Perspicacia «Abdías»; 1Cr 3:21.
+sources:
+- it-abdias
+- 1-cronicas-3
+links:
+- title: 'Perspicacia: «Abdías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Abd%C3%ADas/
+  type: perspicacia
+relations:
+- type: kin
+  person: arnan
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-3
+  - it-abdias
+  reason: '1Cr 3:21: el hijo de Arnán fue Abdías (la nota dice que en hebreo es «los hijos»).'
+  checked_on: '2026-10-12'
+  status: verified
+distinct_from:
+- abdias-mayordomo-de-acab
+- abdias-profeta
+- abdias-hijo-de-azel
+- abdias-hijo-de-semaya
+- abdias-el-gadita
+- abdias-hijo-de-izrahias
+- abdias-padre-de-ismaya
+checked_on: '2026-10-12'
+status: verified

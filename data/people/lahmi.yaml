@@ -1,0 +1,57 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: lahmi
+name: Lahmí
+names:
+- name: Lahmí
+perspicacia: '1200002666'
+summary: Gigante de los refaím de Gat, hermano de Goliat el guitita. Elhanán hijo de Jaír lo derribó en una guerra contra
+  los filisteos. Según Perspicacia, el relato paralelo de Samuel lo nombraba antes de un error de copia.
+reason: Perspicacia «Lahmí», «Goliat» y «Refaím»; 1Cr 20:5, 8.
+sources:
+- it-lahmi
+- it-goliat
+- it-refaim
+- 1-cronicas-20
+links:
+- title: 'Perspicacia: «Lahmí»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Lahm%C3%AD/
+  type: perspicacia
+- title: 1 Crónicas 20 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/1-Cr%C3%B3nicas/20/
+  type: bible
+not_claimed:
+- 'Que fuera sin duda hermano del Goliat al que mató David: Perspicacia «Refaím» y «Goliat» ven posible que hubiera dos hombres
+  con ese nombre.'
+relations:
+- type: kin
+  person: goliat
+  word: brother
+  inferred: false
+  sources:
+  - 1-cronicas-20
+  - it-lahmi
+  reason: 1Cr 20:5 lo llama hermano de Goliat el guitita; Perspicacia «Lahmí» lo entiende del Goliat que venció David.
+  checked_on: '2026-10-12'
+  status: verified
+- type: born_in
+  place: gat
+  inferred: false
+  sources:
+  - 1-cronicas-20
+  - it-refaim
+  reason: 1Cr 20:8 lo cuenta entre los descendientes de los refaím en Gat; Perspicacia «Refaím» entiende que nacieron allí.
+  checked_on: '2026-10-12'
+  status: verified
+- type: died_in
+  place: gob
+  inferred: true
+  sources:
+  - 1-cronicas-20
+  - it-lahmi
+  - it-gob
+  reason: 1Cr 20:5 no dice dónde cayó. El relato paralelo de Samuel pone esa muerte en Gob, si allí leía Lahmí, como cree
+    Perspicacia «Lahmí» (Perspicacia «Gob»).
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

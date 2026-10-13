@@ -1,0 +1,30 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ara-hijo-de-jeter
+name: Ará
+names:
+- name: Ará
+perspicacia: '1200000322'
+disambiguation: Ará hijo de Jéter; no Ará hijo de Ulá, también aserita, ni el cabeza de familia que volvió de Babilonia.
+distinct_from:
+- ara-hijo-de-ula
+summary: Aserita, hijo de Jéter.
+reason: Perspicacia «Ará»; 1Cr 7:30, 38.
+sources:
+- it-ara
+- 1-cronicas-7
+links:
+- title: 'Perspicacia: «Ará»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ar%C3%A1/
+  type: perspicacia
+relations:
+- type: kin
+  person: jeter-de-aser
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-7
+  reason: 1Cr 7:38 lo cuenta entre los hijos de Jéter.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

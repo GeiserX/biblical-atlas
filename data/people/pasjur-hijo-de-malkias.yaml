@@ -1,0 +1,31 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: pasjur-hijo-de-malkias
+name: Pasjur
+names:
+- name: Pasjur
+perspicacia: 1200003396#2
+summary: Príncipe de Judá en días de Sedequías, hijo de Malkías. Pidió la muerte de Jeremías. El linaje de los sacerdotes
+  que volvieron del destierro tiene el mismo eslabón, Pasjur hijo de Malkiya.
+reason: Perspicacia «Pasjur», núm. 2, y «Malkiya», núm. 3, que une en una entrada al padre de Pasjur de Jeremías y al de 1Cr
+  9:12.
+sources:
+- it-pasjur
+- it-malkiya
+- 1-cronicas-9
+links:
+- title: 'Perspicacia: «Pasjur»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Pasjur/
+  type: perspicacia
+relations:
+- type: kin
+  person: malkias-padre-de-pasjur
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-9
+  - it-malkiya
+  reason: '1Cr 9:12: Pasjur, hijo de Malkiya; Perspicacia «Malkiya», núm. 3, es el mismo padre que da Jeremías.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
