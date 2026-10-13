@@ -1,6 +1,6 @@
 # biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
 id: primera-carta-de-pablo
-title: 'Pablo escribe su primera carta: 1 Tesalonicenses'
+title: Pablo escribe 1 Tesalonicenses, probablemente su primera carta
 date:
   from: 50
   to: 50
@@ -21,8 +21,10 @@ roles:
   pablo: wrote
 passages:
 - 1Te 1:1
-summary: Desde Corinto, Pablo escribe a la congregación de Tesalónica con Silas y Timoteo. Es la primera de sus
-  cartas en la Biblia.
+- 1Te 3:6
+- 1Te 5:27
+summary: Desde Corinto, Pablo escribe a la congregación de Tesalónica con Silas y Timoteo. Probablemente es la primera de
+  sus cartas en la Biblia.
 reason: El cuadro del estudio 3 y la Tabla de los libros dan Corinto y c. 50; Perspicacia «Tesalonicenses» la sitúa
   hacia el otoño de 50 y Perspicacia «Pablo» la llama su primera carta canónica.
 sources:
@@ -32,6 +34,25 @@ sources:
 - it-tesalonicenses
 - 1-tesalonicenses-1
 - 1-tesalonicenses-2
+- 1-tesalonicenses-3
+- it-timoteo
+- 1-tesalonicenses-5
 search: primera carta a los Tesalonicenses
-checked_on: '2026-09-29'
+history:
+- date: '2026-10-12'
+  change: 'El título ya no da por seguro que sea su primera carta: la nota de estudio de 1Te 2:13, la publicación más reciente,
+    lo da como probable.'
+  source: 1-tesalonicenses-2
+- date: '2026-10-12'
+  change: 'Se matiza que sea la primera carta: la nota de estudio de 1Te 2:13 lo da como probable y Perspicacia «Tesalonicenses»,
+    como posible.'
+  source: 1-tesalonicenses-2
+- date: '2026-10-12'
+  change: Sin orden del relato quedaba suelta en la serie de Hechos. 1Te 3:6 y Perspicacia «Timoteo» la ponen justo tras la
+    vuelta de Timoteo a Corinto, que está en crispo-cree (1805).
+  source: 1-tesalonicenses-3
+narrative_order:
+  series: hechos
+  order: 1806
+checked_on: '2026-10-12'
 status: verified

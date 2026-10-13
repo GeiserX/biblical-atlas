@@ -25,6 +25,7 @@ passages:
 - 1Co 1:14
 - 2Co 1:19
 - 2Co 11:9
+- 1Te 3:6
 summary: Silas y Timoteo llegan de Macedonia con ayuda. Ante la oposición judía, Pablo enseña en casa de Ticio Justo, junto
   a la sinagoga. Crispo, que la presidía, cree con toda su casa, y muchos corintios se bautizan.
 reason: 'Perspicacia «Crispo»; «Testimonio completo», cap. 19, párr. 8 a 10: la ayuda llegada de Macedonia (2Co 11:9), la casa
@@ -35,6 +36,7 @@ sources:
 - hch-18
 - it-justo
 - nota-hechos-18
+- 1-tesalonicenses-3
 search: Crispo presidente de la sinagoga
 history:
 - date: '2026-09-29'
@@ -58,5 +60,5 @@ history:
   change: La razón cita ahora el párr. 8 de «Testimonio completo», cap. 19, que une la llegada de Silas y Timoteo con 2Co
     11:9.
   source: bt-19
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified
