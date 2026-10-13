@@ -11,11 +11,14 @@ distinct_from:
 - ela-de-israel
 - ela-padre-de-simei
 - ela-padre-de-hosea
+- ela-hijo-de-caleb
+- ela-hijo-de-uzi
 summary: Jeque de Edom del linaje de Esaú; parece que se asentó en Elat.
 reason: Perspicacia «Elah», núm. 1; Gé 36:41.
 sources:
 - it-elah
 - genesis-36
+- 1-cronicas-1
 links:
 - title: 'Perspicacia: «Elah»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Elah/
@@ -40,8 +43,18 @@ relations:
   sources:
   - it-elah
   - genesis-36
+  - 1-cronicas-1
   reason: 'Gé 36:43: jeques de Edom, según las regiones que ocuparon.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-09-30'
+- type: holds_office
+  place: edom
+  office: sheikh
+  inferred: false
+  sources:
+  - 1-cronicas-1
+  reason: 1Cr 1:51-54 lo cuenta entre los jeques de Edom.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
 status: verified

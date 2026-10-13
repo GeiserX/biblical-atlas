@@ -1,0 +1,30 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: bilhan-hijo-de-jediael
+name: Bilhán
+names:
+- name: Bilhán
+perspicacia: 1200000738#2
+disambiguation: Bilhán hijo de Jediael, benjamita; no Bilhán hijo del jeque horeo Ézer.
+distinct_from:
+- bilhan-hijo-de-ezer
+summary: Benjamita, hijo de Jediael. Sus siete hijos encabezaron familias que llegaron a contar 17.200 guerreros.
+reason: Perspicacia «Bilhán», núm. 2; 1Cr 7:6, 10, 11.
+sources:
+- it-bilhan
+- 1-cronicas-7
+links:
+- title: 'Perspicacia: «Bilhán»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Bilh%C3%A1n/
+  type: perspicacia
+relations:
+- type: kin
+  person: jediael-hijo-de-benjamin
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-7
+  reason: 1Cr 7:10 lo cuenta entre los hijos de Jediael.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

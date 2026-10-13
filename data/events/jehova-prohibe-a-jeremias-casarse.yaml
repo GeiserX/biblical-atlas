@@ -9,9 +9,6 @@ date:
   type: narrative
   chronology: tnm
   text: 'entre 647 y 607 a.e.c. (tiempo narrativo: durante la obra de Jeremías en Judá, antes de caer Jerusalén)'
-narrative_order:
-  series: jeremias
-  order: 16001
 places: []
 people:
 - jeremias-profeta
@@ -35,5 +32,10 @@ links:
 - title: 'Perspicacia: «Jeremías»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jerem%C3%ADas/
   type: perspicacia
-checked_on: '2026-10-12'
+history:
+- date: '2026-10-13'
+  change: 'Sale de la serie jeremias (orden 16001): el capítulo no nombra rey ni da año, y el libro va por temas, así que
+    nada lo sitúa antes o después de los demás.'
+  source: it-jeremias-libro
+checked_on: '2026-10-13'
 status: verified

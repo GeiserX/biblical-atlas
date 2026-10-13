@@ -1,0 +1,37 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: se-sortean-las-puertas-entre-los-porteros
+title: Se sortean las puertas entre los porteros
+date:
+  from: -1036
+  to: -1036
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 1037 a.e.c.
+narrative_order:
+  series: 1-cronicas
+  order: 26001
+places:
+- jerusalen
+people:
+- meselemias
+- selemias-portero
+- zacarias-hijo-de-meselemias
+- obed-edom-coreita
+- supim-portero
+- hosa
+present: []
+passages:
+- 1Cr 26:1-19
+summary: 'Las casas de porteros coreítas y meraritas echan suertes por las puertas: a Selemías le sale el este, a Zacarías
+  el norte, a Obed-Edom el sur con los almacenes y a Supim y Hosá el oeste.'
+reason: '1Cr 26:1-19. El texto no nombra la ciudad; las puertas eran las de la casa de Jehová (26:12), en Jerusalén,
+  así que nadie queda situado. Fecha: cuando David hace rey a Salomón (estudio 3, párr. 4: 1037).'
+sources:
+- 1-cronicas-26
+- si-3
+- it-meselemias
+- it-obed-edom
+checked_on: '2026-10-12'
+status: verified

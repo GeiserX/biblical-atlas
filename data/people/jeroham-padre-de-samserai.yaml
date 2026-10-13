@@ -1,0 +1,25 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jeroham-padre-de-samserai
+name: Jeroham
+names:
+- name: Jeroham
+perspicacia: 1200002432#5
+disambiguation: Jeroham el benjamita de 1Cr 8:27; no Jeroham hijo de Elihú, abuelo de Samuel, ni el de Guedor ni los demás
+  Jeroham.
+distinct_from:
+- jeroham-hijo-de-elihu
+- jeroham-hijo-de-pasjur
+- jeroham-de-guedor
+- jeroham-padre-de-azarel
+summary: Benjamita cuyos seis hijos de la lista fueron cabezas de familias que vivían en Jerusalén. Perspicacia ve posible
+  que sea el Jeroham de 1Cr 9:8.
+reason: Perspicacia «Jeroham», núm. 5; 1Cr 8:1, 26-28.
+sources:
+- it-jeroham
+- 1-cronicas-8
+links:
+- title: 'Perspicacia: «Jeroham»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jeroham/
+  type: perspicacia
+checked_on: '2026-10-12'
+status: verified

@@ -1,0 +1,31 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: asir-hijo-de-ebiasaf
+name: Asir
+names:
+- name: Asir
+perspicacia: 1200000444#2
+disambiguation: Asir hijo de Ebiasaf (1Cr 6:23, 37); no es ninguno de los otros Asir que numera Perspicacia «Asir».
+distinct_from:
+- asir-hijo-de-core
+summary: Levita cohatita, hijo o descendiente de Ebiasaf y padre de Táhat, en la línea de Samuel y de Hemán.
+reason: Perspicacia «Asir», núm. 2; 1Cr 6:23, 37.
+sources:
+- it-asir
+- 1-cronicas-6
+links:
+- title: 'Perspicacia: «Asir»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Asir/
+  type: perspicacia
+relations:
+- type: kin
+  person: ebiasaf
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-6
+  - it-asir
+  reason: '1Cr 6:23, 37; Perspicacia «Asir», núm. 2: hijo o descendiente de Ebiasaf.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

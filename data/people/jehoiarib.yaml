@@ -1,0 +1,40 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jehoiarib
+name: Jehoiarib
+names:
+- name: Jehoiarib
+perspicacia: '1200002378'
+summary: Sacerdote cuya casa paterna recibió por suertes el primero de los 24 turnos de David. Descendientes suyos, o un sacerdote
+  del mismo nombre, vivieron en Jerusalén tras el destierro.
+reason: Perspicacia «Jehoiarib»; 1Cr 9:10.
+sources:
+- it-jehoiarib
+- 1-cronicas-9
+- 1-cronicas-24
+links:
+- title: 'Perspicacia: «Jehoiarib»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jehoiarib/
+  type: perspicacia
+relations:
+- type: holds_office
+  office: priest
+  inferred: false
+  sources:
+  - 1-cronicas-9
+  - it-jehoiarib
+  - 1-cronicas-24
+  reason: 1Cr 9:10 lo nombra entre los sacerdotes; Perspicacia «Jehoiarib» lo llama sacerdote.
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: aaron
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-24
+  - it-jehoiarib
+  reason: 1Cr 24:1 abre la lista de los descendientes de Aarón repartidos en turnos, y 24:7 da a esta casa el primero.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

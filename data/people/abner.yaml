@@ -17,6 +17,7 @@ sources:
 - 2-samuel-3
 - 2-samuel-4
 - 1-reyes-2
+- 1-cronicas-26
 links:
 - title: 'Perspicacia: «Abner»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Abner/
@@ -39,8 +40,9 @@ relations:
   - 2-samuel-2
   - 2-samuel-3
   - 1-reyes-2
+  - 1-cronicas-26
   reason: '1Sa 14:50, 51: Abner hijo de Ner.'
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-12'
   status: verified
 - type: tie
   person: saul
@@ -103,5 +105,5 @@ history:
 - date: '2026-09-29'
   change: 'Se dice dónde lo mató Joab: en Hebrón (2Sa 3:27).'
   source: 2-samuel-3
-checked_on: '2026-09-30'
+checked_on: '2026-10-12'
 status: verified

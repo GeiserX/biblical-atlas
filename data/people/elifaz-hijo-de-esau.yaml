@@ -11,6 +11,7 @@ reason: Perspicacia «Elifaz», núm. 1; Gé 36:4, 10-12, 15, 16.
 sources:
 - it-elifaz
 - genesis-36
+- 1-cronicas-1
 links:
 - title: 'Perspicacia: «Elifaz»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Elifaz/
@@ -26,8 +27,9 @@ relations:
   sources:
   - it-elifaz
   - genesis-36
+  - 1-cronicas-1
   reason: 'Gé 36:4, 10: hijo de Esaú.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: kin
   person: ada-hija-de-elon
@@ -46,8 +48,9 @@ relations:
   sources:
   - it-timna
   - genesis-36
+  - 1-cronicas-1
   reason: 'Gé 36:12: Timná era concubina de Elifaz.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: born_in
   place: canaan
@@ -59,5 +62,5 @@ relations:
   status: verified
 distinct_from:
 - elifaz-el-temanita
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

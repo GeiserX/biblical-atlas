@@ -10,6 +10,7 @@ reason: Perspicacia «Nemrod», párr. 2 a 5; Gé 10:8-12. Perspicacia ve probab
 sources:
 - it-nemrod
 - genesis-10
+- 1-cronicas-1
 links:
 - title: 'Perspicacia: «Nemrod»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Nemrod/
@@ -25,8 +26,9 @@ relations:
   sources:
   - it-nemrod
   - genesis-10
+  - 1-cronicas-1
   reason: 'Perspicacia «Nemrod», párr. 2 y 5: hijo de Cus, que era hijo de Cam (Gé 10:6, 8).'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: kin
   person: cus-hijo-de-cam
@@ -35,9 +37,10 @@ relations:
   sources:
   - genesis-10
   - it-nemrod
+  - 1-cronicas-1
   reason: 'Gé 10:8: Cus fue padre de Nemrod.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 perspicacia: '1200003259'
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

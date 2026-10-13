@@ -1,0 +1,28 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: semakias
+name: Semakías
+names:
+- name: Semakías
+perspicacia: '1200003892'
+summary: Levita, nieto de Obed-Edom y hermano de Elzabad. Hombre capaz, fue portero al sur del santuario en tiempos de David.
+reason: Perspicacia «Semakías»; 1Cr 26:7, 8.
+sources:
+- it-semakias
+- 1-cronicas-26
+links:
+- title: 'Perspicacia: «Semakías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Semak%C3%ADas/
+  type: perspicacia
+relations:
+- type: kin
+  person: obed-edom-coreita
+  word: grandfather
+  inferred: true
+  sources:
+  - it-semakias
+  - 1-cronicas-26
+  reason: Perspicacia «Semakías» lo llama nieto de Obed-Edom; 1Cr 26:7, 8 lo pone entre los hijos de Semaya.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

@@ -10,6 +10,7 @@ reason: Perspicacia «Raamá»; Gé 10:7.
 sources:
 - it-raama
 - genesis-10
+- 1-cronicas-1
 links:
 - title: 'Perspicacia: «Raamá»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Raam%C3%A1/
@@ -24,8 +25,9 @@ relations:
   inferred: false
   sources:
   - genesis-10
+  - 1-cronicas-1
   reason: Gé 10:7 lo nombra entre los hijos de Cus.
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

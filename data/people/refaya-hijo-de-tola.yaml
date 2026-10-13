@@ -1,0 +1,32 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: refaya-hijo-de-tola
+name: Refayá
+names:
+- name: Refayá
+perspicacia: 1200003694#1
+disambiguation: Refayá hijo de Tolá, de Isacar; no los otros Refayá que numera Perspicacia, de Simeón, de Judá y de Benjamín.
+summary: Isacarita, hijo de Tolá, nombrado en segundo lugar entre sus hermanos. Encabezaba una casa paterna de su tribu.
+reason: Perspicacia «Refayá», núm. 1; 1Cr 7:1, 2.
+sources:
+- it-refaya
+- 1-cronicas-7
+links:
+- title: 'Perspicacia: «Refayá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Refay%C3%A1/
+  type: perspicacia
+relations:
+- type: kin
+  person: tola-hijo-de-isacar
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-7
+  reason: 1Cr 7:2 lo cuenta entre los hijos de Tolá.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- rafa-hijo-de-binea
+- refaya-hijo-de-isi
+- refaya-hijo-de-jesaya

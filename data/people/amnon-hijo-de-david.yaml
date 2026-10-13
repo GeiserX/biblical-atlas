@@ -12,6 +12,7 @@ sources:
 - it-amnon
 - 2-samuel-3
 - 2-samuel-13
+- 1-cronicas-3
 links:
 - title: 'Perspicacia: «Amnón»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Amn%C3%B3n/
@@ -31,8 +32,9 @@ relations:
   - 2-samuel-3
   - it-amnon
   - 2-samuel-13
+  - 1-cronicas-3
   reason: '2Sa 3:2: el primero de los hijos que David tuvo en Hebrón.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: kin
   person: ahinoam-esposa-de-david
@@ -41,8 +43,9 @@ relations:
   sources:
   - 2-samuel-3
   - it-amnon
+  - 1-cronicas-3
   reason: '2Sa 3:2: hijo de Ahinoam de Jezreel.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: born_in
   place: hebron
@@ -50,8 +53,9 @@ relations:
   sources:
   - 2-samuel-3
   - it-amnon
+  - 1-cronicas-3
   reason: '2Sa 3:2: nació en Hebrón, primogénito de David.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: tie
   person: jehonadab-hijo-de-simea
@@ -82,5 +86,7 @@ relations:
   reason: '2Sa 13:23, 28, 29: los siervos de Absalón lo matan en el banquete del esquileo en Baal-Hazor.'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified
+distinct_from:
+- amnon-hijo-de-shimon

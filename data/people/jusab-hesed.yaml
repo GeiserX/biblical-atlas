@@ -1,0 +1,29 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jusab-hesed
+name: Jusab-Hésed
+names:
+- name: Jusab-Hésed
+perspicacia: '1200002557'
+summary: Hijo de Zorobabel, el último de los cinco del segundo grupo de la lista.
+reason: Perspicacia «Jusab-hésed»; 1Cr 3:19, 20.
+sources:
+- it-jusab-hesed
+- 1-cronicas-3
+links:
+- title: 'Perspicacia: «Jusab-hésed»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jusab-h%C3%A9sed/
+  type: perspicacia
+relations:
+- type: kin
+  person: zorobabel
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-3
+  - it-jusab-hesed
+  - it-zorobabel
+  reason: '1Cr 3:19, 20: uno de los hijos de Zorobabel.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

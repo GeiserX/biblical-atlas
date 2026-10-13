@@ -1,0 +1,25 @@
+# biblical-atlas: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: jorqueam
+name: Jorqueam
+names:
+- name: Jorqueam
+type: city
+lat: 31.461967
+lon: 35.118489
+precision: uncertain
+coord_source: openbible:a2b389a
+coord_url: https://www.openbible.info/geo/ancient/a2b389a/jorkeam
+coord_note: Khirbet er-Raqqa, primera identificación de OpenBible, que la toma por otro nombre de Jocdeam y le da su punto.
+  Perspicacia no la sitúa ni la iguala con Jocdeam.
+summary: Población de Judá cuyo «padre», quizá en el sentido de fundador, fue Raham.
+reason: 'Perspicacia «Jorqueam»; 1Cr 2:44. OpenBible: solo el punto.'
+sources:
+- it-jorqueam
+- openbible-geo
+- 1-cronicas-2
+links:
+- title: 'Perspicacia: «Jorqueam»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jorqueam/
+  type: perspicacia
+checked_on: '2026-10-12'
+status: verified

@@ -1,0 +1,31 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: buz-el-gadita
+name: Buz
+names:
+- name: Buz
+perspicacia: 1200000846#2
+disambiguation: Buz el gadita (1Cr 5:14); no es ninguno de los otros Buz que numera Perspicacia «Buz».
+distinct_from:
+- buz-hijo-de-nacor
+summary: Gadita, cabeza de familia, el antepasado más lejano de la línea de Abihail.
+reason: Perspicacia «Buz», núm. 2; 1Cr 5:14.
+sources:
+- it-buz
+- 1-cronicas-5
+links:
+- title: 'Perspicacia: «Buz»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Buz/
+  type: perspicacia
+relations:
+- type: kin
+  person: gad-hijo-de-jacob
+  word: ancestor
+  inferred: true
+  sources:
+  - 1-cronicas-5
+  - it-buz
+  reason: Perspicacia «Buz», núm. 2, lo hace descendiente de Gad; 1Cr 5:11 abre la lista de los descendientes de Gad.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

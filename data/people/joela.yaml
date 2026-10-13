@@ -1,0 +1,45 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: joela
+name: Joelá
+names:
+- name: Joelá
+perspicacia: '1200002483'
+summary: Hijo de Jeroham de Guedor; fue al encuentro de David en Ziclag.
+reason: Perspicacia «Joelá»; 1Cr 12:7.
+sources:
+- it-joela
+- 1-cronicas-12
+links:
+- title: 'Perspicacia: «Joelá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Joel%C3%A1/
+  type: perspicacia
+relations:
+- type: kin
+  person: jeroham-de-guedor
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-12
+  reason: '1Cr 12:7: Joelá y Zebadías, hijos de Jeroham de Guedor.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: zebadias-hijo-de-jeroham
+  word: brother
+  inferred: false
+  sources:
+  - 1-cronicas-12
+  reason: '1Cr 12:7: los dos eran hijos de Jeroham.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: tie
+  person: david
+  word: master
+  inferred: false
+  sources:
+  - 1-cronicas-12
+  reason: '1Cr 12:7: se unió a David y lo apoyó en la guerra.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

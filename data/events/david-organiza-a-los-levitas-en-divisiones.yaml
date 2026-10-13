@@ -1,0 +1,68 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: david-organiza-a-los-levitas-en-divisiones
+title: David cuenta a los levitas y los organiza en divisiones
+date:
+  from: -1036
+  to: -1036
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 1037 a.e.c.
+narrative_order:
+  series: 1-cronicas
+  order: 23002
+places:
+- jerusalen
+people:
+- david
+- sadoc-hijo-de-ahitub
+- ahimelec-hijo-de-abiatar
+- jehiel-descendiente-de-ladan
+- zetam
+- joel-hijo-de-jehiel
+- selomot-hijo-de-simei
+- haziel
+- haran-hijo-de-simei
+- sebuel-descendiente-de-guersom
+- isias-descendiente-de-moises
+- selomit-descendiente-de-izhar
+- jahat-izharita
+- jerias
+- amarias-hebronita
+- miqueas-uzielita
+- isias-uzielita
+- samir-hijo-de-miqueas
+- zacarias-descendiente-de-isias
+- jehdeya-levita
+- eder-hijo-de-musi
+- beno
+- soham
+- zacur-hijo-de-jaazias
+- ibri
+- jerahmeel-hijo-de-quis
+present: []
+passages:
+- 1Cr 23:2-32
+- 1Cr 24:20-31
+summary: David reúne a príncipes, sacerdotes y levitas. Cuenta 38.000 levitas de 30 años arriba, los reparte entre las obras
+  del templo, la justicia, las puertas y la música, y los divide según Guersón, Cohat y Merarí.
+reason: '1Cr 23:1, 2: ya viejo, tras hacer rey a Salomón. El estudio 3, párr. 4, pone en 1037 a.e.c. el reinado de Salomón
+  y la muerte de David. El texto no dice dónde se reunieron.'
+sources:
+- 1-cronicas-23
+- 1-cronicas-24
+- si-3
+- it-levitas
+- it-david
+links:
+- title: 'Perspicacia: «Levitas»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Levitas/
+  type: perspicacia
+history:
+- date: '2026-10-13'
+  change: 'Sin after a salomon-rey: ya va tras 1Cr 22:6-19, que lo lleva. Repetido, cada uno volvía a cerrar el tramo en esa
+    fecha y dejaba sin sitio al suceso anterior.'
+  source: 1-cronicas-23
+checked_on: '2026-10-13'
+status: verified

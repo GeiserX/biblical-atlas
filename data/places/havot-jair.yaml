@@ -22,6 +22,7 @@ sources:
 - josue-13
 - jueces-10
 - 1-reyes-4
+- 1-cronicas-2
 links:
 - title: 'Perspicacia: «Havot-jaír»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Havot-ja%C3%ADr/
@@ -29,5 +30,5 @@ links:
 - title: Números 32 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/N%C3%BAmeros/32/
   type: bible
-checked_on: '2026-09-30'
+checked_on: '2026-10-12'
 status: verified

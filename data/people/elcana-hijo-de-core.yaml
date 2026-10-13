@@ -12,6 +12,7 @@ reason: Perspicacia «Elqaná», núm. 1; Éx 6:24.
 sources:
 - it-elqana
 - exodo-6
+- 1-cronicas-6
 links:
 - title: 'Perspicacia: «Elqaná»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Elqan%C3%A1/
@@ -30,7 +31,12 @@ relations:
   reason: 'Éx 6:24: hijo de Coré.'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified
 distinct_from:
 - elcana-hijo-de-jeroham
+- elcana-hijo-de-mahat
+- elcana-padre-de-amasai
+- elcana-padre-de-asa
+- elcana-el-coreita
+- elcana-portero

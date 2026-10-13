@@ -1,0 +1,30 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ozem-hijo-de-jerahmeel
+name: Ozem
+names:
+- name: Ozem
+perspicacia: 1200003353#1
+summary: Hijo de Jerahmeel, el cuarto que nombra 1 Crónicas 2:25, de la tribu de Judá.
+reason: Perspicacia «Ozem», núm. 1; 1Cr 2:25.
+sources:
+- it-ozem
+- 1-cronicas-2
+links:
+- title: 'Perspicacia: «Ozem»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ozem/
+  type: perspicacia
+relations:
+- type: kin
+  person: jerahmeel-hijo-de-hezron
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-2
+  reason: 1Cr 2:25 lo cuenta entre los hijos de Jerahmeel.
+  checked_on: '2026-10-12'
+  status: verified
+disambiguation: Ozem hijo de Jerahmeel; no Ozem hijo de Jesé, hermano de David.
+distinct_from:
+- ozem-hijo-de-jese
+checked_on: '2026-10-12'
+status: verified

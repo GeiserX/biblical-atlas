@@ -1,0 +1,21 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: azuba-esposa-de-caleb
+name: Azubá
+names:
+- name: Azubá
+perspicacia: 1200000502#1
+summary: Primera esposa conocida de Caleb, el hijo de Hezrón, en Judá. Cuando murió, Caleb tomó por esposa a Efrata.
+reason: Perspicacia «Azubá», núm. 1; 1Cr 2:18, 19.
+sources:
+- it-azuba
+- 1-cronicas-2
+links:
+- title: 'Perspicacia: «Azubá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Azub%C3%A1/
+  type: perspicacia
+relations: []
+disambiguation: Azubá, esposa de Caleb hijo de Hezrón; no Azubá hija de Silhí, la madre del rey Jehosafat.
+distinct_from:
+- azuba-hija-de-silhi
+checked_on: '2026-10-12'
+status: verified

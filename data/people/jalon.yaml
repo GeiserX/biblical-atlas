@@ -1,0 +1,28 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jalon
+name: Jalón
+names:
+- name: Jalón
+perspicacia: '1200002311'
+summary: Judaíta, uno de los hijos de Ezrá.
+reason: Perspicacia «Jalón»; 1Cr 4:17.
+sources:
+- it-jalon
+- 1-cronicas-4
+links:
+- title: 'Perspicacia: «Jalón»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jal%C3%B3n/
+  type: perspicacia
+relations:
+- type: kin
+  person: ezra
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-4
+  - it-jalon
+  reason: '1Cr 4:17: uno de los hijos de Ezrá.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

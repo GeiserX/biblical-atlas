@@ -11,7 +11,7 @@ date:
   text: 'entre 620 y 618 a.e.c. (tiempo narrativo: al final del reinado de Jehoiaquim, tras el primer ataque babilonio)'
 narrative_order:
   series: jeremias
-  order: 35012
+  order: 335012
 type: speech
 places:
 - jerusalen
@@ -35,5 +35,10 @@ links:
 - title: Jeremías 35 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/35/
   type: bible
-checked_on: '2026-10-12'
+history:
+- date: '2026-10-13'
+  change: 'El orden del relato pasa de 35012 a 335012: la serie sigue las fechas de los sucesos, porque el libro va por temas
+    y no en el orden en que pasaron.'
+  source: it-jeremias-libro
+checked_on: '2026-10-13'
 status: verified

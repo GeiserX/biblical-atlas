@@ -1,0 +1,31 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: amnon-hijo-de-shimon
+name: Amnón
+names:
+- name: Amnón
+perspicacia: 1200000242#2
+disambiguation: Amnón hijo de Shimón (núm. 2 de Perspicacia); no el primogénito de David.
+summary: Hijo mayor de Shimón, un judaíta; abre la lista de sus cuatro hijos.
+reason: Perspicacia «Amnón»; 1Cr 4:20.
+sources:
+- it-amnon
+- 1-cronicas-4
+links:
+- title: 'Perspicacia: «Amnón»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Amn%C3%B3n/
+  type: perspicacia
+relations:
+- type: kin
+  person: shimon
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-4
+  - it-amnon
+  reason: '1Cr 4:20: uno de los hijos de Shimón.'
+  checked_on: '2026-10-12'
+  status: verified
+distinct_from:
+- amnon-hijo-de-david
+checked_on: '2026-10-12'
+status: verified

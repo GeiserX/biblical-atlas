@@ -1,0 +1,28 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: josibias
+name: Josibías
+names:
+- name: Josibías
+perspicacia: '1200002522'
+summary: Simeonita, padre de Jehú, uno de los jefes que en días de Ezequías ensancharon el territorio de la tribu.
+reason: Perspicacia «Josibías»; 1Cr 4:34-37.
+sources:
+- it-josibias
+- 1-cronicas-4
+links:
+- title: 'Perspicacia: «Josibías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Josib%C3%ADas/
+  type: perspicacia
+relations:
+- type: kin
+  person: seraya-hijo-de-asiel
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-4
+  - it-josibias
+  reason: '1Cr 4:35: Josibías hijo de Seraya.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

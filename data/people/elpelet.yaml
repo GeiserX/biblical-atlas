@@ -1,0 +1,50 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: elpelet
+name: Elpélet
+names:
+- name: Elpélet
+  note: Así lo llama 1Cr 14:5.
+- name: Elifélet
+  note: Nombre que le da 1Cr 3:6, según Perspicacia «Elifélet», núm. 2.
+perspicacia: 1200001315#2
+disambiguation: Elifélet núm. 2 de Perspicacia, llamado Elpélet en 1Cr 14:5; no su hermano Elifélet, el último de la lista,
+  ni el guerrero hijo de Ahasbái.
+summary: Hijo de David nacido en Jerusalén. Crónicas lo pone entre Elisúa y Noga; más abajo nombra a otro hermano Elifélet,
+  al parecer nacido después.
+reason: Perspicacia «Elifélet», núm. 2 y 3; 1Cr 3:6; 14:3-5.
+sources:
+- it-elifelet
+- 1-cronicas-3
+- 1-cronicas-14
+links:
+- title: 'Perspicacia: «Elifélet»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Elif%C3%A9let/
+  type: perspicacia
+relations:
+- type: kin
+  person: david
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-3
+  - it-elifelet
+  - 1-cronicas-14
+  reason: '1Cr 3:5-8: uno de los hijos que David tuvo en Jerusalén.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: born_in
+  place: jerusalen
+  inferred: false
+  sources:
+  - 1-cronicas-3
+  - it-elifelet
+  - 1-cronicas-14
+  reason: '1Cr 3:5-8: nació en Jerusalén, entre los hijos que David tuvo allí.'
+  checked_on: '2026-10-12'
+  status: verified
+distinct_from:
+- elifelet-hijo-de-david
+- elifelet-hijo-de-ahasbai
+- elifelet-hijo-de-eshec
+checked_on: '2026-10-12'
+status: verified

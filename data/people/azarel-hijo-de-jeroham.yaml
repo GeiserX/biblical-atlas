@@ -1,0 +1,39 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: azarel-hijo-de-jeroham
+name: Azarel
+names:
+- name: Azarel
+perspicacia: 1200000485#3
+disambiguation: Azarel hijo de Jeroham, príncipe de Dan; no el guerrero coreíta ni el músico levita de ese nombre.
+summary: Hijo de Jeroham. En días del rey David encabezaba a los danitas como su príncipe.
+reason: Perspicacia «Azarel», núm. 3; 1Cr 27:22.
+sources:
+- it-azarel
+- 1-cronicas-27
+links:
+- title: 'Perspicacia: «Azarel»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Azarel/
+  type: perspicacia
+relations:
+- type: kin
+  person: jeroham-padre-de-azarel
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-27
+  reason: '1Cr 27:22: Azarel hijo de Jeroham.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: holds_office
+  office: leader
+  inferred: false
+  sources:
+  - 1-cronicas-27
+  reason: '1Cr 27:22: era el líder de Dan, uno de los príncipes de las tribus de Israel.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- azarel-el-coreita
+- uziel-hijo-de-heman

@@ -1,0 +1,44 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: johanan-hijo-de-azarias
+name: Johanán
+names:
+- name: Johanán
+perspicacia: 1200002488#3
+disambiguation: Johanán hijo de Azarías (1Cr 6:9, 10); no es ninguno de los otros Johanán que numera Perspicacia «Johanán».
+distinct_from:
+- johanan-el-benjaminita
+- johanan-el-gadita
+- johanan-hijo-de-carea
+- johanan-hijo-de-elioenai
+- johanan-hijo-de-josias
+summary: Sumo sacerdote, hijo de Azarías y padre de otro Azarías, el que Perspicacia cree probable que tuviera el cargo cuando
+  Uzías actuó con presunción.
+reason: Perspicacia «Johanán», núm. 3; 1Cr 6:9, 10.
+sources:
+- it-johanan
+- 1-cronicas-6
+links:
+- title: 'Perspicacia: «Johanán»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Johan%C3%A1n/
+  type: perspicacia
+relations:
+- type: kin
+  person: azarias-hijo-de-ahimaaz
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-6
+  reason: 1Cr 6:9 lo da como hijo de Azarías.
+  checked_on: '2026-10-12'
+  status: verified
+- type: holds_office
+  office: high_priest
+  inferred: true
+  sources:
+  - 1-cronicas-6
+  - it-johanan
+  reason: Perspicacia «Johanán», núm. 3, lo llama sumo sacerdote (1Cr 6:9, 10).
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

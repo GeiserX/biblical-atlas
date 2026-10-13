@@ -1,0 +1,37 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jahzera
+name: Jahzerá
+names:
+- name: Jahzerá
+perspicacia: '1200002301'
+summary: Sacerdote; un descendiente suyo residió en Jerusalén tras el destierro. Perspicacia ve posible que sea el Ahzai de
+  la lista de Nehemías.
+reason: Perspicacia «Jahzerá»; 1Cr 9:12.
+sources:
+- it-jahzera
+- 1-cronicas-9
+links:
+- title: 'Perspicacia: «Jahzerá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jahzer%C3%A1/
+  type: perspicacia
+relations:
+- type: kin
+  person: mesulam-hijo-de-mesilemit
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-9
+  reason: '1Cr 9:12: Jahzerá, hijo de Mesulam.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: holds_office
+  office: priest
+  inferred: true
+  sources:
+  - 1-cronicas-9
+  - it-jahzera
+  reason: Perspicacia «Jahzerá» lo llama sacerdote; 1Cr 9:12.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

@@ -11,11 +11,14 @@ distinct_from:
 - pasjur-padre-de-guedalias
 summary: Príncipe de Judá en días de Sedequías. Durante el sitio fue con el sacerdote Sofonías a pedir a Jeremías una consulta
   a Jehová; más tarde pidió al rey que lo mataran.
-reason: Perspicacia «Pasjur», núm. 2; Jer 21:1, 2 y 38:1, 4.
+reason: Perspicacia «Pasjur», núm. 2; Jer 21:1, 2 y 38:1, 4; 1Cr 9:12, cuyo Pasjur hijo de Malkiya es el mismo eslabón según
+  Perspicacia «Malkiya», núm. 3.
 sources:
 - it-pasjur
 - jeremias-21
 - jeremias-38
+- it-malkiya
+- 1-cronicas-9
 links:
 - title: 'Perspicacia: «Pasjur»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Pasjur/
@@ -29,7 +32,10 @@ relations:
   - jeremias-21
   - it-pasjur
   - jeremias-38
-  reason: Jer 21:1 lo llama hijo de Malkías; Perspicacia «Pasjur», núm. 2, lo repite.
+  - 1-cronicas-9
+  - it-malkiya
+  reason: Jer 21:1 lo llama hijo de Malkías y 1Cr 9:12 repite el eslabón; Perspicacia «Pasjur», núm. 2, y «Malkiya», núm.
+    3, lo recogen.
   checked_on: '2026-10-12'
   status: verified
 - type: tie

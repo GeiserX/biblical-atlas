@@ -24,6 +24,7 @@ sources:
 - 1-reyes-4
 - 1-reyes-9
 - 2-reyes-9
+- 1-cronicas-7
 links:
 - title: 'Perspicacia: «Meguidó»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Meguid%C3%B3-2/
@@ -31,5 +32,5 @@ links:
 - title: 2 Reyes 23 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-reyes/23/
   type: bible
-checked_on: '2026-09-30'
+checked_on: '2026-10-12'
 status: verified

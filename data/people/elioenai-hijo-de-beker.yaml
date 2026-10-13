@@ -1,0 +1,42 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: elioenai-hijo-de-beker
+name: Elioenái
+names:
+- name: Elioenái
+perspicacia: 1200001311#3
+disambiguation: Elioenái hijo de Béker; no los otros Elioenái que numera Perspicacia, de la línea de David, de Simeón y de
+  días de Esdras.
+summary: Benjamita, hijo de Béker y nieto de Benjamín.
+reason: Perspicacia «Elioenai», núm. 3; 1Cr 7:6, 8.
+sources:
+- it-elioenai
+- 1-cronicas-7
+links:
+- title: 'Perspicacia: «Elioenai»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Elioenai/
+  type: perspicacia
+relations:
+- type: kin
+  person: beker-hijo-de-benjamin
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-7
+  reason: 1Cr 7:8 lo cuenta entre los hijos de Béker.
+  checked_on: '2026-10-12'
+  status: verified
+- type: born_in
+  place: egipto
+  inferred: true
+  sources:
+  - 1-cronicas-7
+  - it-alemet
+  reason: 'Perspicacia «Alémet», núm. 1: los nueve hijos de Béker de 1Cr 7:8 nacieron en Egipto, después de la llegada de
+    Jacob en 1728 a.e.c.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- elioenai-hijo-de-nearias
+- elioenai-simeonita

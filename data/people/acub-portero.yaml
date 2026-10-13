@@ -1,0 +1,22 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: acub-portero
+name: Acub
+names:
+- name: Acub
+perspicacia: 1200000186#2
+summary: Portero levita de después del destierro y cabeza de una familia de porteros.
+reason: Perspicacia «Aqub», núm. 2; 1Cr 9:17.
+sources:
+- it-aqub
+- 1-cronicas-9
+links:
+- title: 'Perspicacia: «Aqub»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Aqub/
+  type: perspicacia
+relations: []
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- acub-hijo-de-elioenai
+disambiguation: 'Acub núm. 2 de Perspicacia: portero levita de después del destierro y cabeza de una familia de porteros.
+  No los demás Acub que numera Perspicacia.'

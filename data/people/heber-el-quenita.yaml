@@ -8,6 +8,8 @@ disambiguation: Héber el quenita, esposo de Jael (Perspicacia, núm. 2); no el 
   de Judá y Benjamín.
 distinct_from:
 - heber-hijo-de-berias
+- heber-padre-de-soco
+- heber-descendiente-de-elpaal
 summary: Quenita de la descendencia de Hobab que se apartó de los demás quenitas y acampó con su tienda al lado del árbol
   grande de Zaananim. Su casa estaba en paz con Jabín; allí su esposa Jael mató a Sísara.
 reason: Perspicacia «Héber», núm. 2, y «Quenita»; Jue 4:11, 17.
@@ -58,5 +60,5 @@ relations:
   reason: 'Jue 4:11: había plantado la tienda al lado del árbol grande de Zaananim, cerca de Quedes.'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

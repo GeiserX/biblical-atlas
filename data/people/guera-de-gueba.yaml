@@ -1,0 +1,47 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: guera-de-gueba
+name: Guerá
+names:
+- name: Guerá
+perspicacia: null
+disambiguation: Guerá de 1Cr 8:7, jefe de Gueba; no Guerá hijo de Bela, el padre de Ehúd ni el padre de Simeí.
+distinct_from:
+- guera-hijo-de-bela
+- guera-padre-de-ehud
+- guera-padre-de-simei
+summary: Benjamita, uno de los jefes de Gueba desterrados a Manáhat. Perspicacia ve posible que sea el Guerá del versículo
+  5.
+reason: 1Cr 8:6, 7. Perspicacia no le dedica entrada; «Guerá, I», núm. 2, lo nombra al tratar del Guerá del versículo 5.
+sources:
+- 1-cronicas-8
+- it-guera-i
+links: []
+relations:
+- type: lived_in
+  place: gueba
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  reason: '1Cr 8:6, 7: era uno de los jefes de las familias de Gueba.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: lived_in
+  place: manahat
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  reason: '1Cr 8:6, 7: fue de los que se llevaron al destierro a Manáhat.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: same_as
+  person: guera-descendiente-de-bela
+  certainty: possible
+  inferred: true
+  sources:
+  - 1-cronicas-8
+  - it-guera-i
+  reason: 'Perspicacia «Guerá, I», núm. 2: puede que el Guerá de 1Cr 8:5 sea el del versículo 7.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

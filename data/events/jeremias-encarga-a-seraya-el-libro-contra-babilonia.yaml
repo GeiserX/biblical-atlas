@@ -11,7 +11,7 @@ date:
   text: 614 a.e.c.
 narrative_order:
   series: jeremias
-  order: 51059
+  order: 551059
 places:
 - babilonia
 - rio-eufrates
@@ -25,7 +25,7 @@ passages:
 summary: 'Seraya, funcionario de Sedequías, va con el rey a Babilonia. Jeremías le da escrito el anuncio de la ruina de esa
   ciudad: al llegar lo leerá en voz alta y lo hundirá en el Éufrates con una piedra atada.'
 reason: 'Jer 51:59-64, cuarto año de Sedequías; Perspicacia «Seraya», núm. 5, da 614. El texto no dice dónde recibió Seraya
-  el encargo: nadie queda situado.'
+  el encargo: nadie queda situado. Orden por fecha.'
 sources:
 - jeremias-51
 - it-seraya
@@ -38,5 +38,10 @@ links:
 - title: 'Perspicacia: «Seraya»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Seraya/
   type: perspicacia
-checked_on: '2026-10-12'
+history:
+- date: '2026-10-13'
+  change: 'El orden del relato pasa de 51059 a 551059: la serie sigue las fechas de los sucesos, porque el libro va por temas
+    y no en el orden en que pasaron.'
+  source: it-jeremias-libro
+checked_on: '2026-10-13'
 status: verified

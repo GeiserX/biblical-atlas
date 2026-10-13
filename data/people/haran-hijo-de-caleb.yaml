@@ -1,0 +1,49 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: haran-hijo-de-caleb
+name: Harán
+names:
+- name: Harán
+perspicacia: 1200001872#3
+summary: Judaíta, hijo que Caleb tuvo con Efá, su concubina. Fue padre de Gazez.
+reason: Perspicacia «Harán», núm. 3; 1Cr 2:46.
+sources:
+- it-haran
+- 1-cronicas-2
+links:
+- title: 'Perspicacia: «Harán»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Har%C3%A1n/
+  type: perspicacia
+relations:
+- type: kin
+  person: caleb-hijo-de-hezron
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-2
+  reason: '1Cr 2:46: Efá, la concubina de Caleb, lo dio a luz.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: efa-concubina-de-caleb
+  word: mother
+  inferred: false
+  sources:
+  - 1-cronicas-2
+  reason: '1Cr 2:46: Efá lo dio a luz.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: moza-hijo-de-caleb
+  word: brother
+  inferred: false
+  sources:
+  - 1-cronicas-2
+  reason: '1Cr 2:46: Harán y Mozá, hijos de Efá.'
+  checked_on: '2026-10-12'
+  status: verified
+disambiguation: Harán hijo de Caleb, de Judá; no Harán hijo de Taré, hermano de Abrahán y padre de Lot.
+distinct_from:
+- haran-hijo-de-tare
+- haran-hijo-de-simei
+checked_on: '2026-10-12'
+status: verified

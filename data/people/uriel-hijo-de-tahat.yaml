@@ -1,0 +1,30 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: uriel-hijo-de-tahat
+name: Uriel
+names:
+- name: Uriel
+perspicacia: 1200004522#1
+disambiguation: Uriel hijo de Táhat (1Cr 6:24); no es ninguno de los otros Uriel que numera Perspicacia «Uriel».
+distinct_from:
+- uriel-jefe-de-los-cohatitas
+summary: Levita cohatita, hijo de Táhat y padre de Uzías.
+reason: Perspicacia «Uriel», núm. 1; 1Cr 6:24.
+sources:
+- it-uriel
+- 1-cronicas-6
+links:
+- title: 'Perspicacia: «Uriel»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Uriel/
+  type: perspicacia
+relations:
+- type: kin
+  person: tahat-hijo-de-asir
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-6
+  reason: 1Cr 6:24 lo da como hijo de Táhat.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

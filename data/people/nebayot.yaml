@@ -12,6 +12,7 @@ sources:
 - genesis-25
 - genesis-28
 - genesis-36
+- 1-cronicas-1
 links:
 - title: 'Perspicacia: «Nebayot»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Nebayot/
@@ -34,8 +35,9 @@ relations:
   - it-nebayot
   - genesis-25
   - genesis-36
+  - 1-cronicas-1
   reason: 'Gé 25:13-16: uno de los doce hijos de Ismael.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

@@ -3,8 +3,8 @@ id: hidai
 name: Hidái
 names:
 - name: Hidái
-- name: Hurai
-  note: Así se transcribe en 1Cr 11:32, según Perspicacia.
+- name: Hurái
+  note: Así lo llama 1Cr 11:32.
 perspicacia: '1200002017'
 summary: Uno de los treinta de David, de los torrentes de Gaas, en la región montañosa de Efraín. 1 Crónicas escribe su nombre
   Hurai.
@@ -13,6 +13,7 @@ sources:
 - it-hidai
 - it-gaas
 - 2-samuel-23
+- 1-cronicas-11
 links:
 - title: 'Perspicacia: «Hidai»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hidai/
@@ -24,8 +25,9 @@ relations:
   sources:
   - 2-samuel-23
   - it-gaas
+  - 1-cronicas-11
   reason: 2Sa 23:30 dice «de los torrentes de Gaas»; Perspicacia «Gaas» los pone junto al monte de ese nombre.
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: tie
   person: david
@@ -33,8 +35,13 @@ relations:
   inferred: false
   sources:
   - 2-samuel-23
+  - 1-cronicas-11
   reason: '2Sa 23:30: uno de los treinta guerreros de David.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-09-29'
+history:
+- date: '2026-10-12'
+  change: «Hurai» pasa a «Hurái», la grafía de la TNM en 1Cr 11.
+  source: 1-cronicas-11
+checked_on: '2026-10-12'
 status: verified

@@ -23,6 +23,7 @@ sources:
 - lucas-3
 - hechos-7
 - josue-24
+- 1-cronicas-1
 links:
 - title: 'Perspicacia: «Taré»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Tar%C3%A9/
@@ -65,8 +66,9 @@ relations:
   sources:
   - genesis-11
   - lucas-3
+  - 1-cronicas-1
   reason: 'Gé 11:24: Nacor fue padre de Taré a los 29 años.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: lived_in
   place: haran
@@ -77,5 +79,5 @@ relations:
   checked_on: '2026-09-29'
   status: verified
 perspicacia: '1200004368'
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

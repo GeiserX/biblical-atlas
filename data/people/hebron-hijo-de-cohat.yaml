@@ -11,6 +11,8 @@ sources:
 - it-hebron
 - exodo-6
 - numeros-3
+- 1-cronicas-6
+- 1-cronicas-23
 links:
 - title: 'Perspicacia: «Hebrón»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hebr%C3%B3n/
@@ -27,8 +29,12 @@ relations:
   - exodo-6
   - it-hebron
   - numeros-3
+  - 1-cronicas-6
+  - 1-cronicas-23
   reason: 'Éx 6:18: tercero de los hijos de Cohat.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified
+distinct_from:
+- hebron-hijo-de-maresa

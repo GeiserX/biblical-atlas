@@ -1,0 +1,59 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: asjur
+name: Asjur
+names:
+- name: Asjur
+perspicacia: '1200000419'
+summary: Hijo de Hezrón nacido después de morir su padre, de la tribu de Judá. Tuvo siete hijos con dos esposas. Fue padre
+  de Tecoa, quizá en el sentido de fundador.
+reason: Perspicacia «Asjur» y «Teqoa»; 1Cr 2:24.
+sources:
+- it-asjur
+- 1-cronicas-2
+- it-teqoa
+- 1-cronicas-4
+links:
+- title: 'Perspicacia: «Asjur»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Asjur/
+  type: perspicacia
+relations:
+- type: kin
+  person: hezron-hijo-de-perez
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-2
+  reason: '1Cr 2:24: hijo de Hezrón nacido tras su muerte.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: abias-esposa-de-hezron
+  word: mother
+  inferred: false
+  sources:
+  - 1-cronicas-2
+  reason: '1Cr 2:24: Abías dio a luz a Asjur.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: hela
+  word: wife
+  inferred: false
+  sources:
+  - 1-cronicas-4
+  - it-hela
+  reason: '1Cr 4:5: Asjur tuvo dos esposas, Helá y Naará.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: naara
+  word: wife
+  inferred: false
+  sources:
+  - 1-cronicas-4
+  - it-naara
+  reason: '1Cr 4:5: Asjur tuvo dos esposas, Helá y Naará.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

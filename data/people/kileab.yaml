@@ -14,6 +14,7 @@ reason: Perspicacia «Kileab»; 2Sa 3:3.
 sources:
 - it-kileab
 - 2-samuel-3
+- 1-cronicas-3
 links:
 - title: 'Perspicacia: «Kileab»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Kileab/
@@ -29,8 +30,9 @@ relations:
   sources:
   - 2-samuel-3
   - it-kileab
+  - 1-cronicas-3
   reason: '2Sa 3:2, 3: el segundo hijo de David en Hebrón.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: kin
   person: abigail-esposa-de-david
@@ -39,8 +41,9 @@ relations:
   sources:
   - 2-samuel-3
   - it-kileab
+  - 1-cronicas-3
   reason: '2Sa 3:3: hijo de Abigaíl, la viuda de Nabal.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: born_in
   place: hebron
@@ -48,8 +51,9 @@ relations:
   sources:
   - 2-samuel-3
   - it-kileab
+  - 1-cronicas-3
   reason: '2Sa 3:2, 3, 5: uno de los hijos que David tuvo en Hebrón.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

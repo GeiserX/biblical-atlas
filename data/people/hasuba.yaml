@@ -1,0 +1,29 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hasuba
+name: Hasubá
+names:
+- name: Hasubá
+perspicacia: '1200001906'
+summary: Hijo de Zorobabel, el primero del grupo de cinco que la lista separa de los otros dos.
+reason: Perspicacia «Hasubá»; 1Cr 3:19, 20.
+sources:
+- it-hasuba
+- 1-cronicas-3
+links:
+- title: 'Perspicacia: «Hasubá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hasub%C3%A1/
+  type: perspicacia
+relations:
+- type: kin
+  person: zorobabel
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-3
+  - it-hasuba
+  - it-zorobabel
+  reason: '1Cr 3:19, 20: uno de los hijos de Zorobabel.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

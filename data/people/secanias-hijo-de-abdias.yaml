@@ -1,0 +1,32 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: secanias-hijo-de-abdias
+name: Secanías
+names:
+- name: Secanías
+perspicacia: 1200003977#9
+summary: Descendiente de David después del destierro; por él sigue la lista hasta Semaya y sus hijos.
+reason: Perspicacia «Secanías»; 1Cr 3:21.
+sources:
+- it-secanias
+- 1-cronicas-3
+links:
+- title: 'Perspicacia: «Secanías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Secan%C3%ADas/
+  type: perspicacia
+relations:
+- type: kin
+  person: abdias-hijo-de-arnan
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-3
+  - it-secanias
+  reason: '1Cr 3:21: el hijo de Abdías fue Secanías (la nota dice que en hebreo es «los hijos»).'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+disambiguation: Secanías, descendiente de David después del destierro; no el sacerdote que dio nombre a un turno en días de
+  David.
+distinct_from:
+- secanias-de-tiempos-de-david

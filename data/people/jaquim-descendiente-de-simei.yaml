@@ -1,0 +1,39 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jaquim-descendiente-de-simei
+name: Jaquim
+names:
+- name: Jaquim
+perspicacia: 1200002309#1
+disambiguation: Jaquim de Benjamín, de la casa de Simeí; no el sacerdote cabeza de la duodécima división.
+summary: Benjamita de la casa de Simeí, cabeza de una casa paterna en Jerusalén.
+reason: Perspicacia «Jaquim», núm. 1; 1Cr 8:19, 21, 28.
+sources:
+- it-jaquim
+- 1-cronicas-8
+links:
+- title: 'Perspicacia: «Jaquim»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jaquim/
+  type: perspicacia
+relations:
+- type: kin
+  person: simei-padre-de-jaquim
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  - it-jaquim
+  reason: 1Cr 8:21 lo pone entre los hijos de Simeí; Perspicacia «Jaquim» no precisa si era hijo o descendiente.
+  checked_on: '2026-10-12'
+  status: verified
+- type: lived_in
+  place: jerusalen
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  reason: '1Cr 8:28: los jefes de casas paternas de esta lista vivían en Jerusalén.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- jaquim-de-tiempos-de-david

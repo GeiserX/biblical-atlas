@@ -11,6 +11,7 @@ sources:
 - it-kitim
 - it-javan
 - genesis-10
+- 1-cronicas-1
 links:
 - title: 'Perspicacia: «Kitim»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Kitim/
@@ -25,8 +26,9 @@ relations:
   inferred: false
   sources:
   - genesis-10
+  - 1-cronicas-1
   reason: Gé 10:4 lo nombra entre los hijos de Javán.
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

@@ -1,0 +1,27 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: haguias
+name: Haguías
+names:
+- name: Haguías
+perspicacia: '1200001815'
+summary: Levita merarita, hijo de Simeá y padre de Asaya.
+reason: Perspicacia «Haguías»; 1Cr 6:30.
+sources:
+- it-haguias
+- 1-cronicas-6
+links:
+- title: 'Perspicacia: «Haguías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hagu%C3%ADas/
+  type: perspicacia
+relations:
+- type: kin
+  person: simea-hijo-de-uza
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-6
+  reason: '1Cr 6:29, 30: «su hijo Haguías», tras Simeá.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

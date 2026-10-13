@@ -25,6 +25,7 @@ sources:
 - josue-21
 - jueces-4
 - 2-reyes-15
+- 1-cronicas-6
 links:
 - title: 'Perspicacia: «Quedes»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Quedes/
@@ -42,5 +43,5 @@ history:
 - date: '2026-09-29'
   change: El nombre decía Quedes-Neftalí, pero la TNM de Jue 4:6 escribe «Quedes de Neftalí».
   source: jueces-4
-checked_on: '2026-09-30'
+checked_on: '2026-10-12'
 status: verified

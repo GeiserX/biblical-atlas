@@ -1,0 +1,31 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: kelub-hermano-de-suha
+name: Kelub
+names:
+- name: Kelub
+perspicacia: 1200000933#1
+disambiguation: Kelub hermano de Suha (núm. 1 de Perspicacia); no el padre de Ezrí, que cuidaba los campos en días de David.
+summary: Judaíta, hermano de Suha y padre de Mehir. Varias versiones antiguas leen Caleb en vez de Kelub.
+reason: Perspicacia «Kelub»; 1Cr 4:11.
+sources:
+- it-kelub
+- 1-cronicas-4
+links:
+- title: 'Perspicacia: «Kelub»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Kelub/
+  type: perspicacia
+relations:
+- type: kin
+  person: suha
+  word: brother
+  inferred: false
+  sources:
+  - 1-cronicas-4
+  - it-kelub
+  reason: '1Cr 4:11: Kelub, el hermano de Suha.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- kelub-padre-de-ezri

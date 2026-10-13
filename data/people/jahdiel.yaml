@@ -1,0 +1,36 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jahdiel
+name: Jahdiel
+names:
+- name: Jahdiel
+perspicacia: '1200002293'
+summary: Jefe de familia manasita al este del Jordán, guerrero valiente. Sus descendientes, infieles a Jehová, acabaron desterrados
+  por los asirios.
+reason: Perspicacia «Jahdiel»; 1Cr 5:23-26.
+sources:
+- it-jahdiel
+- 1-cronicas-5
+links:
+- title: 'Perspicacia: «Jahdiel»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jahdiel/
+  type: perspicacia
+relations:
+- type: lived_in
+  place: basan
+  inferred: false
+  sources:
+  - 1-cronicas-5
+  reason: '1Cr 5:23: los manasitas del este ocupaban la tierra de Basán a Baal-Hermón y el Hermón.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: manases-hijo-de-jose
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-5
+  reason: '1Cr 5:23, 24: jefe de una familia manasita del este del Jordán.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

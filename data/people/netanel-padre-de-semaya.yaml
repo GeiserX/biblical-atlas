@@ -1,0 +1,24 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: netanel-padre-de-semaya
+name: Netanel
+names:
+- name: Netanel
+perspicacia: 1200003236#3
+disambiguation: El padre del secretario Semaya (1Cr 24:6); no Netanel hijo de Zuar, jefe de Isacar, ni los demás Netanel que
+  numera Perspicacia.
+distinct_from:
+- netanel-hijo-de-zuar
+- netanel-trompetista
+- netanel-hijo-de-obed-edom
+- netanel-hijo-de-jese
+summary: Levita, padre de Semaya, el secretario que registró las divisiones sacerdotales en el reinado de David.
+reason: Perspicacia «Netanel», núm. 3; 1Cr 24:6.
+sources:
+- it-netanel
+- 1-cronicas-24
+links:
+- title: 'Perspicacia: «Netanel»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Netanel/
+  type: perspicacia
+checked_on: '2026-10-12'
+status: verified

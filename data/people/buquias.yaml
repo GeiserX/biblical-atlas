@@ -1,0 +1,28 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: buquias
+name: Buquías
+names:
+- name: Buquías
+perspicacia: '1200000835'
+summary: Levita, hijo de Hemán. La sexta suerte lo puso al frente de un grupo de doce músicos con sus hijos y hermanos.
+reason: Perspicacia «Buquías»; 1Cr 25:4, 13.
+sources:
+- it-buquias
+- 1-cronicas-25
+links:
+- title: 'Perspicacia: «Buquías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Buqu%C3%ADas/
+  type: perspicacia
+relations:
+- type: kin
+  person: heman-hijo-de-joel
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-25
+  - it-buquias
+  reason: 1Cr 25:4, 13 lo cuenta entre los hijos de Hemán.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

@@ -1,0 +1,27 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: bimhal
+name: Bimhal
+names:
+- name: Bimhal
+perspicacia: '1200000741'
+summary: Aserita, hijo de Jaflet, uno de los jefes principales de la tribu.
+reason: Perspicacia «Bimhal»; 1Cr 7:30, 33, 40.
+sources:
+- it-bimhal
+- 1-cronicas-7
+links:
+- title: 'Perspicacia: «Bimhal»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Bimhal/
+  type: perspicacia
+relations:
+- type: kin
+  person: jaflet
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-7
+  reason: 1Cr 7:33 lo cuenta entre los hijos de Jaflet.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

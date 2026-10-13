@@ -1,0 +1,59 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: semaya-hijo-de-hasub
+name: Semaya
+names:
+- name: Semaya
+perspicacia: 1200004000#16
+summary: Levita merarita, hijo de Hasub, que vivió en Jerusalén después del destierro en Babilonia.
+reason: Perspicacia «Semaya», núm. 16; 1Cr 9:14.
+sources:
+- it-semaya
+- 1-cronicas-9
+links:
+- title: 'Perspicacia: «Semaya»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Semaya/
+  type: perspicacia
+relations:
+- type: kin
+  person: hasub-hijo-de-azricam
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-9
+  reason: '1Cr 9:14: Semaya, hijo de Hasub.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: merari
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-9
+  reason: '1Cr 9:14: de los descendientes de Merarí.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: lived_in
+  place: jerusalen
+  inferred: false
+  sources:
+  - 1-cronicas-9
+  - it-semaya
+  reason: '1Cr 9:14, 34: jefe de los levitas que vivían en Jerusalén.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- semaya-hijo-de-galal
+- semaya-hijo-de-joel
+- semaya-hijo-de-netanel
+- semaya-hijo-de-obed-edom
+- semaya-hijo-de-secanias
+- semaya-jefe-de-la-casa-de-elizafan
+- semaya-profeta
+- semaya-simeonita
+- semaya-de-nehelam
+- semaya-padre-de-delaya
+- semaya-padre-de-uriya
+disambiguation: 'Semaya núm. 16 de Perspicacia: levita merarita, hijo de Hasub. No el descendiente de Jedutún ni el profeta
+  de Rehoboam.'

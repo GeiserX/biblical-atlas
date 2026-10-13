@@ -50,5 +50,7 @@ relations:
   reason: 'Nú 1:4, 12, 44: fue uno de los doce jefes que estuvieron con Moisés y Aarón para registrar a Israel.'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified
+distinct_from:
+- ahiezer-hijo-de-semaa

@@ -1,0 +1,30 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: abisua-hijo-de-finehas
+name: Abisúa
+names:
+- name: Abisúa
+perspicacia: 1200000052#2
+disambiguation: Abisúa hijo de Finehás (1Cr 6:4, 5, 50, 51); no es ninguno de los otros Abisúa que numera Perspicacia «Abisúa».
+distinct_from:
+- abisua-de-benjamin
+summary: Sacerdote, hijo de Finehás y bisnieto de Aarón, padre de Buquí. Fue antepasado del copista Esdras.
+reason: Perspicacia «Abisúa», núm. 2; 1Cr 6:4, 5, 50, 51.
+sources:
+- it-abisua
+- 1-cronicas-6
+links:
+- title: 'Perspicacia: «Abisúa»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Abis%C3%BAa/
+  type: perspicacia
+relations:
+- type: kin
+  person: finehas-hijo-de-eleazar
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-6
+  reason: 1Cr 6:4 lo da como hijo de Finehás.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

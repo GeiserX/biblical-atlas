@@ -1,0 +1,22 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: quemuel-padre-de-hasabias
+name: Quemuel
+names:
+- name: Quemuel
+perspicacia: 1200002587#3
+disambiguation: Quemuel el levita, padre de Hasabías; no el hijo de Nacor ni el efraimita hijo de Siftán.
+distinct_from:
+- quemuel-hijo-de-nacor
+- quemuel-hijo-de-siftan
+summary: Levita, padre de Hasabías, el príncipe de los levitas en el reinado de David.
+reason: Perspicacia «Quemuel», núm. 3; 1Cr 27:17.
+sources:
+- it-quemuel
+- 1-cronicas-27
+links:
+- title: 'Perspicacia: «Quemuel»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Quemuel/
+  type: perspicacia
+relations: []
+checked_on: '2026-10-12'
+status: verified

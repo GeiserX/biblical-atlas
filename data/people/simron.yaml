@@ -12,6 +12,7 @@ sources:
 - it-simron
 - genesis-46
 - numeros-26
+- 1-cronicas-7
 links:
 - title: 'Perspicacia: «Simrón»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Simr%C3%B3n/
@@ -28,8 +29,9 @@ relations:
   - genesis-46
   - it-simron
   - numeros-26
+  - 1-cronicas-7
   reason: 'Gé 46:13: aparece entre los hijos de Isacar.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: lived_in
   place: egipto
@@ -39,5 +41,5 @@ relations:
   reason: 'Gé 46:8, 26, 27: figura en la lista de la casa de Jacob que se instaló en Egipto.'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

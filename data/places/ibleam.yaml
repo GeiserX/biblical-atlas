@@ -3,6 +3,8 @@ id: ibleam
 name: Ibleam
 names:
 - name: Ibleam
+- name: Bileam
+  note: Al parecer, otra grafía de la ciudad (1Cr 6:70), según Perspicacia «Bileam».
 type: city
 lat: 32.4462
 lon: 35.292
@@ -20,6 +22,8 @@ sources:
 - jueces-1
 - 2-reyes-9
 - 2-reyes-15
+- 1-cronicas-6
+- it-bileam
 links:
 - title: 'Perspicacia: «Ibleam»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ibleam/
@@ -31,5 +35,5 @@ history:
 - date: '2026-09-30'
   change: El resumen añade el asesinato del rey Zacarías, que 2Re 15:10 y Perspicacia «Ibleam» sitúan en esta ciudad.
   source: 2-reyes-15
-checked_on: '2026-09-30'
+checked_on: '2026-10-12'
 status: verified

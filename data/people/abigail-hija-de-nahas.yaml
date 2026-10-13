@@ -14,6 +14,7 @@ sources:
 - it-abigail
 - it-nahas
 - 2-samuel-17
+- 1-cronicas-2
 links:
 - title: 'Perspicacia: «Abigail»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Abigail/
@@ -39,8 +40,9 @@ relations:
   sources:
   - 2-samuel-17
   - it-abigail
+  - 1-cronicas-2
   reason: 2Sa 17:25 la presenta como hermana de Zeruyá, la madre de Joab.
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

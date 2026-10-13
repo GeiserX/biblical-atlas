@@ -1,0 +1,37 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: abdias-el-gadita
+name: Abdías
+names:
+- name: Abdías
+perspicacia: 1200003287#3
+disambiguation: Abdías el gadita, segundo de los once (1Cr 12:9); no el profeta, el mayordomo de Acab ni el padre de Ismayá.
+distinct_from:
+- abdias-hijo-de-arnan
+- abdias-hijo-de-azel
+- abdias-hijo-de-izrahias
+- abdias-hijo-de-semaya
+- abdias-mayordomo-de-acab
+- abdias-padre-de-ismaya
+- abdias-profeta
+summary: Gadita, el segundo de los once guerreros de Gad que cruzaron el Jordán crecido para unirse a David en el desierto,
+  cuando Saúl lo perseguía.
+reason: Perspicacia «Abdías», núm. 3; 1Cr 12:8-15.
+sources:
+- it-abdias
+- 1-cronicas-12
+links:
+- title: 'Perspicacia: «Abdías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Abd%C3%ADas/
+  type: perspicacia
+relations:
+- type: tie
+  person: david
+  word: master
+  inferred: false
+  sources:
+  - 1-cronicas-12
+  reason: '1Cr 12:8, 9, 14: gadita que se pasó a David y llegó a ser jefe de su ejército.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

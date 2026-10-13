@@ -14,6 +14,8 @@ sources:
 - exodo-6
 - levitico-10
 - numeros-3
+- 1-cronicas-6
+- 1-cronicas-23
 links:
 - title: 'Perspicacia: «Uziel»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Uziel/
@@ -30,12 +32,18 @@ relations:
   - exodo-6
   - it-uziel
   - numeros-3
+  - 1-cronicas-6
+  - 1-cronicas-23
   reason: 'Éx 6:18: cuarto de los hijos de Cohat.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 history:
 - date: '2026-09-29'
   change: El resumen lo llama tío de Aarón; Le 10:4 lo dice así y la ficha no lo citaba.
   source: levitico-10
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified
+distinct_from:
+- uziel-hijo-de-isi
+- uziel-de-benjamin
+- uziel-hijo-de-heman

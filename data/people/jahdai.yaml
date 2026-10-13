@@ -1,0 +1,28 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jahdai
+name: Jahdái
+names:
+- name: Jahdái
+perspicacia: '1200002292'
+summary: Padre de seis hijos contados entre los descendientes de Caleb, nieto de Judá. El texto no dice qué parentesco lo
+  unía a Caleb.
+reason: Perspicacia «Jahdai»; 1Cr 2:47.
+sources:
+- it-jahdai
+- 1-cronicas-2
+links:
+- title: 'Perspicacia: «Jahdai»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jahdai/
+  type: perspicacia
+relations:
+- type: kin
+  person: caleb-hijo-de-hezron
+  word: relative
+  inferred: false
+  sources:
+  - 1-cronicas-2
+  reason: 1Cr 2:47 lo pone entre los descendientes de Caleb sin decir el parentesco, como nota Perspicacia «Jahdai».
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

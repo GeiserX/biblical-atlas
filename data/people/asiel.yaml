@@ -1,0 +1,18 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: asiel
+name: Asiel
+names:
+- name: Asiel
+perspicacia: '1200000434'
+summary: Simeonita, antepasado de Jehú, uno de los jefes de su tribu en el reinado de Ezequías.
+reason: Perspicacia «Asiel»; 1Cr 4:34-37.
+sources:
+- it-asiel
+- 1-cronicas-4
+links:
+- title: 'Perspicacia: «Asiel»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Asiel/
+  type: perspicacia
+relations: []
+checked_on: '2026-10-12'
+status: verified

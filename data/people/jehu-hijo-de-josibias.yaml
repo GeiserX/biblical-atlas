@@ -1,0 +1,43 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jehu-hijo-de-josibias
+name: Jehú
+names:
+- name: Jehú
+perspicacia: 1200002401#5
+disambiguation: Jehú hijo de Josibías, simeonita (núm. 5 de Perspicacia); no el rey de Israel ni el profeta hijo de Hananí.
+summary: Simeonita, hijo de Josibías. Fue uno de los jefes de familia que en días de Ezequías se asentaron con sus rebaños
+  junto a Guedor.
+reason: Perspicacia «Jehú»; 1Cr 4:34-41.
+sources:
+- it-jehu
+- 1-cronicas-4
+links:
+- title: 'Perspicacia: «Jehú»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jeh%C3%BA/
+  type: perspicacia
+relations:
+- type: kin
+  person: josibias
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-4
+  - it-jehu
+  reason: '1Cr 4:35: Jehú hijo de Josibías.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: lived_in
+  place: guedor-de-simeon
+  inferred: false
+  sources:
+  - 1-cronicas-4
+  reason: '1Cr 4:41: los jefes de la lista se establecieron en los pastos de Guedor.'
+  checked_on: '2026-10-12'
+  status: verified
+distinct_from:
+- jehu-hijo-de-hanani
+- jehu-de-israel
+- jehu-el-anatotita
+- jehu-hijo-de-obed
+checked_on: '2026-10-12'
+status: verified

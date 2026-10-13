@@ -1,0 +1,41 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: david-encarga-a-salomon-construir-el-templo
+title: David encarga a Salomón construir el templo
+date:
+  from: -1036
+  to: -1036
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 1037 a.e.c.
+narrative_order:
+  series: 1-cronicas
+  order: 22006
+  after: salomon-rey
+places:
+- jerusalen
+people:
+- david
+- salomon
+present: []
+type: speech
+roles:
+  david: spoke
+passages:
+- 1Cr 22:6-19
+summary: David cuenta a Salomón que Jehová no le dejó edificar por la sangre derramada y reservó la obra a un hijo de paz.
+  Le entrega lo reunido y manda a los príncipes de Israel que le ayuden.
+reason: '1Cr 22:6-19. Perspicacia «Salomón», «La exhortación de David a Salomón», lo pone en la misma ocasión que la asamblea
+  de los príncipes, ya ungido Salomón en Guihón; estudio 3, párr. 4: 1037. El texto no dice dónde.'
+sources:
+- 1-cronicas-22
+- it-salomon
+- it-david
+- si-3
+links:
+- title: 1 Crónicas 22 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/1-Cr%C3%B3nicas/22/
+  type: bible
+checked_on: '2026-10-12'
+status: verified

@@ -40,6 +40,7 @@ sources:
 - 1-samuel-31
 - 2-samuel-2
 - 2-samuel-21
+- 1-cronicas-10
 links:
 - title: 'Perspicacia: «Jabés-galaad»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jab%C3%A9s-galaad/
@@ -59,5 +60,5 @@ history:
   change: 'Pierde el punto de OpenBible (32.40237, 35.6823): jw.org dice que no se sabe dónde estaba y no nombra ese sitio.
     Queda como candidato lo que sí dice jw.org.'
   source: it-jabes-galaad
-checked_on: '2026-10-02'
+checked_on: '2026-10-12'
 status: verified

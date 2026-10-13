@@ -1,0 +1,27 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: rizia
+name: Rizía
+names:
+- name: Rizía
+perspicacia: '1200003747'
+summary: Aserita, hijo de Ulá; guerrero y cabeza de familia.
+reason: Perspicacia «Rizía»; 1Cr 7:39, 40.
+sources:
+- it-rizia
+- 1-cronicas-7
+links:
+- title: 'Perspicacia: «Rizía»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Riz%C3%ADa/
+  type: perspicacia
+relations:
+- type: kin
+  person: ula
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-7
+  reason: 1Cr 7:39 lo cuenta entre los hijos de Ulá.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

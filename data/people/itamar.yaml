@@ -20,6 +20,8 @@ sources:
 - numeros-4
 - numeros-7
 - numeros-26
+- 1-cronicas-6
+- 1-cronicas-24
 links:
 - title: 'Perspicacia: «Itamar»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Itamar/
@@ -45,8 +47,10 @@ relations:
   - numeros-4
   - numeros-7
   - numeros-26
+  - 1-cronicas-6
+  - 1-cronicas-24
   reason: 'Éx 6:23: hijo de Aarón y Eliseba.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: kin
   person: eliseba
@@ -77,5 +81,14 @@ relations:
     a.e.c. (Perspicacia «Sinaí»).'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+- type: holds_office
+  office: priest
+  inferred: false
+  sources:
+  - 1-cronicas-24
+  - it-itamar
+  reason: '1Cr 24:2: muertos Nadab y Abihú, Eleazar e Itamar siguieron sirviendo como sacerdotes.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
 status: verified

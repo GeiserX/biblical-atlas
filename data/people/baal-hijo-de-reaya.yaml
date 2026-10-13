@@ -1,0 +1,30 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: baal-hijo-de-reaya
+name: Baal
+names:
+- name: Baal
+perspicacia: 1200000505#2
+disambiguation: Baal hijo de Reayá (1Cr 5:5, 6); no es ninguno de los otros Baal que numera Perspicacia «Baal».
+distinct_from:
+- baal-hijo-de-jeiel
+summary: Rubenita, hijo de Reayá y padre de Beerá, el jefe rubenita al que desterró Tiglat-Piléser III de Asiria.
+reason: Perspicacia «Baal», núm. 2; 1Cr 5:5, 6.
+sources:
+- it-baal
+- 1-cronicas-5
+links:
+- title: 'Perspicacia: «Baal»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Baal/
+  type: perspicacia
+relations:
+- type: kin
+  person: reaya-hijo-de-miqueas
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-5
+  reason: '1Cr 5:5: «su hijo Baal», tras Reayá.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

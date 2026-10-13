@@ -25,6 +25,7 @@ sources:
 - josue-7
 - it-hai
 - josue-22
+- 1-cronicas-2
 links:
 - title: 'Perspicacia: «Acán»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ac%C3%A1n/
@@ -43,8 +44,9 @@ relations:
   sources:
   - josue-7
   - it-acan
+  - 1-cronicas-2
   reason: 'Jos 7:1, 18: Acán, hijo de Carmí.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: kin
   person: zabdi-abuelo-de-acan
@@ -78,5 +80,5 @@ relations:
   reason: 'Jos 7:24-26: allí lo mataron a pedradas y quemaron lo suyo.'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

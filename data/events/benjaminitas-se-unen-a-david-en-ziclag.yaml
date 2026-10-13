@@ -1,0 +1,81 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: benjaminitas-se-unen-a-david-en-ziclag
+title: Guerreros de Benjamín se unen a David en Ziclag
+date:
+  from: -1079
+  to: -1077
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'c. 1080-1078 a.e.c. (tiempo narrativo: mientras David vivía en Ziclag, antes de morir Saúl)'
+narrative_order:
+  series: 1-cronicas
+  order: 12001
+  after: akis-da-ziclag-a-david
+places:
+- ziclag
+people:
+- david
+- ahiezer-hijo-de-semaa
+- joas-hijo-de-semaa
+- jeziel
+- pelet-hijo-de-azmavet
+- beraca
+- jehu-el-anatotita
+- ismaya-el-gabaonita
+- jeremias-el-benjaminita
+- jahaziel-guerrero-de-david
+- johanan-el-benjaminita
+- jozabad-el-guederatita
+- eluzai
+- jerimot-el-benjaminita
+- bealias
+- semarias-el-benjaminita
+- sefatias-el-harifita
+- elcana-el-coreita
+- isias-el-coreita
+- azarel-el-coreita
+- joezer
+- jasobeam-el-coreita
+- joela
+- zebadias-hijo-de-jeroham
+present:
+- david
+- ahiezer-hijo-de-semaa
+- joas-hijo-de-semaa
+- jeziel
+- pelet-hijo-de-azmavet
+- beraca
+- jehu-el-anatotita
+- ismaya-el-gabaonita
+- jeremias-el-benjaminita
+- jahaziel-guerrero-de-david
+- johanan-el-benjaminita
+- jozabad-el-guederatita
+- eluzai
+- jerimot-el-benjaminita
+- bealias
+- semarias-el-benjaminita
+- sefatias-el-harifita
+- elcana-el-coreita
+- isias-el-coreita
+- azarel-el-coreita
+- joezer
+- jasobeam-el-coreita
+- joela
+- zebadias-hijo-de-jeroham
+passages:
+- 1Cr 12:1-7
+summary: Arqueros y honderos de Benjamín, parientes de Saúl, dejan al rey y van a Ziclag a apoyar a David. Con ellos van Ismayá
+  de Gabaón, jefe de los treinta, y varios coreítas.
+reason: 'Perspicacia «David», párr. 22: mientras vivió dieciséis meses en Ziclag se le unieron hombres poderosos (1Cr 12:1-7).
+  Ziclag desde c. 1080 (akis-da-ziclag-a-david) hasta la muerte de Saúl en 1078 (Perspicacia «Jonatán», núm. 2).'
+sources:
+- 1-cronicas-12
+- it-david
+- it-ziqlag
+- it-jonatan
+- si-3
+checked_on: '2026-10-12'
+status: verified

@@ -1,0 +1,43 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: azarias-hijo-de-hilquias
+name: Azarías
+names:
+- name: Azarías
+perspicacia: 1200000486#19
+disambiguation: Azarías hijo de Hilquías (1Cr 6:13, 14); no es ninguno de los otros Azarías que numera Perspicacia «Azarías».
+distinct_from:
+- abednego
+- azarias-hijo-de-ahimaaz
+- azarias-hijo-de-etan
+- azarias-hijo-de-jehohanan
+- azarias-hijo-de-jehu
+- azarias-hijo-de-johanan
+- azarias-hijo-de-natan
+- azarias-hijo-de-sadoc
+- azarias-hijo-de-sofonias
+- azarias-sacerdote-repatriado
+- jaazanias-jefe-militar
+- ocozias-de-juda
+- uzias
+summary: Sacerdote, hijo del sumo sacerdote Hilquías, el de Josías, y padre de Seraya, el sacerdote principal cuando cayó
+  Jerusalén. Antepasado del copista Esdras.
+reason: Perspicacia «Azarías», núm. 19; 1Cr 6:13, 14.
+sources:
+- it-azarias
+- 1-cronicas-6
+links:
+- title: 'Perspicacia: «Azarías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Azar%C3%ADas/
+  type: perspicacia
+relations:
+- type: kin
+  person: hilquias-hijo-de-salum
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-6
+  reason: 1Cr 6:13 lo da como hijo de Hilquías.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

@@ -1,0 +1,35 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jerimot-de-benjamin
+name: Jerimot
+names:
+- name: Jerimot
+perspicacia: 1200002429#1
+disambiguation: Jerimot de la línea de Bela; no el benjamita que apoyó a David en Ziclag, los levitas, el jefe de Neftalí
+  ni el hijo de David.
+summary: Benjamita valiente de la línea de Bela, el primogénito de Benjamín.
+reason: Perspicacia «Jerimot», núm. 1; 1Cr 7:6, 7.
+sources:
+- it-jerimot
+- 1-cronicas-7
+links:
+- title: 'Perspicacia: «Jerimot»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jerimot/
+  type: perspicacia
+relations:
+- type: kin
+  person: bela-hijo-de-benjamin
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-7
+  - it-jerimot
+  reason: 1Cr 7:7 lo pone entre los hijos de Bela; Perspicacia «Jerimot» no precisa si era hijo o descendiente.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- jerimot-hijo-de-heman
+- jeremot-hijo-de-musi
+- jerimot-el-benjaminita
+- jerimot-hijo-de-azriel

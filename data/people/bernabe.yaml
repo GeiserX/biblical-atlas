@@ -49,7 +49,7 @@ history:
   change: 'La relación con Pablo hasta c. 49 cita ahora Gál 2:1, 9, 13: suben juntos a Jerusalén, las columnas les dan la
     mano y Bernabé sigue a su lado en Antioquía.'
   source: galatas-2
-checked_on: '2026-10-02'
+checked_on: '2026-10-12'
 status: verified
 relations:
 - type: born_in
@@ -155,3 +155,4 @@ distinct_from:
 - jose-hijo-de-jose
 - jose-hijo-de-matatias
 - jose-padre-de-igal
+- jose-hijo-de-asaf

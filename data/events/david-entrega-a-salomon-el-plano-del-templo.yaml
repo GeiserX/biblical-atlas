@@ -1,0 +1,39 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: david-entrega-a-salomon-el-plano-del-templo
+title: David entrega a Salomón el plano del templo
+date:
+  from: -1036
+  to: -1036
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 1037 a.e.c.
+narrative_order:
+  series: 1-cronicas
+  order: 28011
+places:
+- jerusalen
+people:
+- david
+- salomon
+present:
+- david
+- salomon
+passages:
+- 1Cr 28:11-21
+summary: 'David da a Salomón el plano que Jehová le hizo conocer: pórtico, cámaras, patios, tesoros y turnos de sacerdotes
+  y levitas, con el peso del oro y la plata de cada utensilio. Lo anima a terminar la obra.'
+reason: 1Cr 28:11-21. Perspicacia «David», apartado «Compra del lugar para el templo», dice que David trazó los planos por
+  inspiración, y «Salomón» la pone antes de los últimos consejos de David a su hijo. Misma asamblea y año que el discurso.
+sources:
+- 1-cronicas-28
+- it-david
+- it-salomon
+- si-3
+links:
+- title: 1 Crónicas 28 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/1-Cr%C3%B3nicas/28/
+  type: bible
+checked_on: '2026-10-12'
+status: verified

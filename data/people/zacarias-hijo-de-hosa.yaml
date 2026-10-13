@@ -1,0 +1,44 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: zacarias-hijo-de-hosa
+name: Zacarías
+names:
+- name: Zacarías
+perspicacia: 1200004681#7
+disambiguation: El hijo de Hosá, portero (1Cr 26:11); no Zacarías hijo de Meselemías ni los demás Zacarías de Perspicacia
+  «Zacarías».
+summary: Cuarto hijo del merarita Hosá, de la división de los porteros en el reinado de David.
+reason: Perspicacia «Zacarías», núm. 7; 1Cr 26:11.
+sources:
+- it-zacarias
+- 1-cronicas-26
+links:
+- title: 'Perspicacia: «Zacarías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zacar%C3%ADas/
+  type: perspicacia
+relations:
+- type: kin
+  person: hosa
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-26
+  - it-zacarias
+  reason: '1Cr 26:11: el cuarto de los hijos de Hosá.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- zacarias-abuelo-de-ezequias
+- zacarias-de-israel
+- zacarias-descendiente-de-isias
+- zacarias-el-rubenita
+- zacarias-hijo-de-jeberekias
+- zacarias-hijo-de-jehoiada
+- zacarias-hijo-de-meselemias
+- zacarias-musico
+- zacarias-padre-de-ido
+- zacarias-padre-de-juan
+- zacarias-profeta
+- zacarias-trompetista
+- zeker

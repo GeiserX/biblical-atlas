@@ -11,7 +11,7 @@ date:
   text: 'entre 617 y 607 a.e.c. (tiempo narrativo: tras la carta de Jeremías a los desterrados y antes de caer Jerusalén)'
 narrative_order:
   series: jeremias
-  order: 29024
+  order: 429024
 places:
 - jerusalen
 - babilonia
@@ -27,7 +27,7 @@ passages:
 summary: Desde Babilonia, Semaya escribe al sacerdote Sofonías que reprenda a Jeremías por aconsejar a los desterrados que
   se instalen. Sofonías le lee la carta a Jeremías, y Jehová anuncia que Semaya y su descendencia no verán la vuelta.
 reason: Jer 29:28 cita la carta anterior de Jeremías, así que esto pasa después; Sofonías muere en Riblá en 607 (estudio 3).
-  Perspicacia «Semaya», núm. 13, y «Sofonías», núm. 3.
+  Perspicacia «Semaya», núm. 13, y «Sofonías», núm. 3. Orden por fecha.
 sources:
 - jeremias-29
 - it-semaya
@@ -40,5 +40,10 @@ links:
 - title: 'Perspicacia: «Semaya»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Semaya/
   type: perspicacia
-checked_on: '2026-10-12'
+history:
+- date: '2026-10-13'
+  change: 'El orden del relato pasa de 29024 a 429024: la serie sigue las fechas de los sucesos, porque el libro va por temas
+    y no en el orden en que pasaron.'
+  source: it-jeremias-libro
+checked_on: '2026-10-13'
 status: verified

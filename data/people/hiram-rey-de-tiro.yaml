@@ -14,6 +14,7 @@ sources:
 - 1-reyes-5
 - 1-reyes-9
 - 1-reyes-10
+- 1-cronicas-14
 links:
 - title: 'Perspicacia: «Hiram»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hiram/
@@ -27,8 +28,9 @@ relations:
   - it-hiram
   - 1-reyes-5
   - 1-reyes-9
+  - 1-cronicas-14
   reason: 2Sa 5:11 lo llama rey de Tiro.
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-12'
   status: verified
 - type: holds_office
   place: tiro
@@ -39,8 +41,9 @@ relations:
   - it-hiram
   - 1-reyes-5
   - 1-reyes-9
+  - 1-cronicas-14
   reason: '2Sa 5:11: el rey Hiram de Tiro.'
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-12'
   status: verified
 - type: tie
   person: david
@@ -50,8 +53,9 @@ relations:
   - 2-samuel-5
   - it-hiram
   - 1-reyes-5
+  - 1-cronicas-14
   reason: '2Sa 5:11: envía a David mensajeros, cedro y artesanos; 1Re 5:1 dice que siempre fue amigo de David.'
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-12'
   status: verified
 - type: tie
   person: salomon
@@ -66,7 +70,7 @@ relations:
   inferred: false
   checked_on: '2026-09-30'
   status: verified
-checked_on: '2026-09-30'
+checked_on: '2026-10-12'
 status: verified
 distinct_from:
 - hiram-artesano

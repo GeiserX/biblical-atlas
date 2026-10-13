@@ -1,0 +1,50 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: alemet-hijo-de-jehoada
+name: Alémet
+names:
+- name: Alémet
+perspicacia: 1200000190#2
+disambiguation: Alémet hijo de Jehoadá, de la casa de Saúl; no Alémet hijo de Béker ni la ciudad de ese nombre.
+distinct_from:
+- alemet-hijo-de-beker
+summary: Hijo de Jehoadá y descendiente directo del rey Saúl; sus hermanos fueron Azmávet y Zimrí.
+reason: Perspicacia «Alémet», núm. 2; 1Cr 8:33-36.
+sources:
+- it-alemet
+- 1-cronicas-8
+- 1-cronicas-9
+links:
+- title: 'Perspicacia: «Alémet»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Al%C3%A9met/
+  type: perspicacia
+relations:
+- type: kin
+  person: jehoada
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  - 1-cronicas-9
+  reason: 1Cr 8:36 lo da como hijo de Jehoadá.
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: azmavet-hijo-de-jehoada
+  word: brother
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  reason: '1Cr 8:36: los dos eran hijos de Jehoadá.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: zimri-hijo-de-jehoada
+  word: brother
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  reason: '1Cr 8:36: los dos eran hijos de Jehoadá.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

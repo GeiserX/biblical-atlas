@@ -16,6 +16,7 @@ sources:
 - exodo-6
 - numeros-26
 - it-nemuel
+- 1-cronicas-4
 links:
 - title: 'Perspicacia: «Jemuel»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jemuel/
@@ -33,8 +34,9 @@ relations:
   - it-jemuel
   - exodo-6
   - numeros-26
+  - 1-cronicas-4
   reason: 'Gé 46:10: aparece entre los hijos de Simeón.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: lived_in
   place: egipto
@@ -89,7 +91,7 @@ relations:
   reason: 'Éx 6:15: Saúl es otro de los hijos de Simeón, este de una mujer cananea.'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-10-02'
+checked_on: '2026-10-12'
 status: verified
 distinct_from:
 - nemuel-hijo-de-eliab

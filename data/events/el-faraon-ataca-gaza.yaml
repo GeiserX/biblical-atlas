@@ -9,10 +9,6 @@ date:
   type: narrative
   chronology: tnm
   text: 'entre 647 y 580 a.e.c. (tiempo narrativo: en días de Jeremías)'
-narrative_order:
-  series: jeremias
-  order: 47001
-  after: jeremias-anuncia-el-fin-de-los-filisteos
 places:
 - gaza
 - egipto
@@ -40,5 +36,10 @@ links:
 - title: 'Perspicacia: «Faraón»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Fara%C3%B3n/
   type: perspicacia
-checked_on: '2026-10-12'
+history:
+- date: '2026-10-13'
+  change: 'Sale de la serie jeremias (orden 47001, tras jeremias-anuncia-el-fin-de-los-filisteos): el capítulo no nombra rey
+    ni da año, y el libro va por temas, así que nada lo sitúa antes o después de los demás.'
+  source: it-jeremias-libro
+checked_on: '2026-10-13'
 status: verified

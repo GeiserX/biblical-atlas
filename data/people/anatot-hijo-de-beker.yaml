@@ -1,0 +1,38 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: anatot-hijo-de-beker
+name: Anatot
+names:
+- name: Anatot
+perspicacia: 1200000269#1
+disambiguation: Anatot hijo de Béker; no el cabeza del pueblo de días de Nehemías.
+summary: Benjamita, hijo de Béker.
+reason: Perspicacia «Anatot», núm. 1; 1Cr 7:6, 8.
+sources:
+- it-anatot
+- 1-cronicas-7
+links:
+- title: 'Perspicacia: «Anatot»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Anatot/
+  type: perspicacia
+relations:
+- type: kin
+  person: beker-hijo-de-benjamin
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-7
+  reason: 1Cr 7:8 lo cuenta entre los hijos de Béker.
+  checked_on: '2026-10-12'
+  status: verified
+- type: born_in
+  place: egipto
+  inferred: true
+  sources:
+  - 1-cronicas-7
+  - it-alemet
+  reason: 'Perspicacia «Alémet», núm. 1: los nueve hijos de Béker de 1Cr 7:8 nacieron en Egipto, después de la llegada de
+    Jacob en 1728 a.e.c.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

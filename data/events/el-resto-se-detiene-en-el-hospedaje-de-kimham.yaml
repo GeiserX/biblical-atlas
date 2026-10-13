@@ -11,7 +11,7 @@ date:
   text: 607 a.e.c.
 narrative_order:
   series: jeremias
-  order: 41016
+  order: 941016
 places:
 - lugar-de-hospedaje-de-kimham
 - gabaon
@@ -25,7 +25,8 @@ passages:
 summary: 'Johanán y los jefes salen de Gabaón con los rescatados, entre ellos mujeres, niños y funcionarios de la corte, y
   paran junto a Belén con idea de seguir a Egipto: temen a los caldeos por la muerte de Guedalías.'
 reason: 'Jer 41:16-18; Perspicacia «Belén» y «Kimham». Estudio 3, párr. 6: tras los asesinatos del mes séptimo de 607, los
-  que quedaban huyeron a Egipto por miedo. Jaazanías, que Perspicacia pone entre esos jefes, no se nombra aquí.'
+  que quedaban huyeron a Egipto por miedo. Jaazanías, que Perspicacia pone entre esos jefes, no se nombra aquí. Orden por
+  fecha.'
 sources:
 - jeremias-41
 - si-3
@@ -40,5 +41,10 @@ links:
 - title: 'Perspicacia: «Kimham»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Kimham/
   type: perspicacia
-checked_on: '2026-10-12'
+history:
+- date: '2026-10-13'
+  change: 'El orden del relato pasa de 41016 a 941016: la serie sigue las fechas de los sucesos, porque el libro va por temas
+    y no en el orden en que pasaron.'
+  source: it-jeremias-libro
+checked_on: '2026-10-13'
 status: verified

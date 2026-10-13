@@ -23,6 +23,7 @@ sources:
 - it-tiglat-pileser
 - 2-reyes-15
 - 2-reyes-16
+- 1-cronicas-5
 links:
 - title: 'Perspicacia: «Tiglat-piléser III»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Tiglat-pil%C3%A9ser-III/
@@ -31,7 +32,7 @@ links:
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-reyes/15/
   type: bible
 perspicacia: '1200004402'
-checked_on: '2026-09-30'
+checked_on: '2026-10-12'
 status: verified
 relations:
 - type: holds_office
@@ -41,6 +42,7 @@ relations:
   sources:
   - 2-reyes-15
   - it-tiglat-pileser
+  - 1-cronicas-5
   reason: 2Re 15:19, 29 lo llaman rey de Asiria, primero con el nombre de Pul.
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-12'
   status: verified

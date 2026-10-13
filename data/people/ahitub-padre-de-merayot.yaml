@@ -1,0 +1,61 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ahitub-padre-de-merayot
+name: Ahitub
+names:
+- name: Ahitub
+perspicacia: 1200000170#3
+disambiguation: Ahitub padre de Merayot (1Cr 6:11, 12); no es ninguno de los otros Ahitub que numera Perspicacia «Ahitub».
+distinct_from:
+- ahitub-hijo-de-amarias
+- ahitub-hijo-de-finehas
+summary: Sacerdote descendiente del Ahitub padre de Sadoc. Hijo de Amarías y padre de Merayot; Perspicacia deduce que fue
+  abuelo de otro Sadoc y que dirigía la casa de Dios.
+reason: Perspicacia «Ahitub», núm. 3; 1Cr 6:11, 12.
+sources:
+- it-ahitub
+- 1-cronicas-6
+- 1-cronicas-9
+links:
+- title: 'Perspicacia: «Ahitub»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ahitub/
+  type: perspicacia
+relations:
+- type: kin
+  person: amarias-hijo-de-azarias
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-6
+  reason: 1Cr 6:11 lo da como hijo de Amarías.
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: ahitub-hijo-de-amarias
+  word: ancestor
+  inferred: true
+  sources:
+  - 1-cronicas-9
+  - it-ahitub
+  reason: Perspicacia «Ahitub», núm. 3, lo hace descendiente de Ahitub núm. 2; 1Cr 9:11 da su linaje.
+  checked_on: '2026-10-12'
+  status: verified
+- type: holds_office
+  office: leader
+  inferred: true
+  sources:
+  - 1-cronicas-9
+  - it-ahitub
+  reason: '1Cr 9:11: líder de la casa del Dios verdadero; Perspicacia «Ahitub», núm. 3, refiere la frase a él.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: holds_office
+  office: priest
+  inferred: true
+  sources:
+  - 1-cronicas-9
+  - it-ahitub
+  reason: Perspicacia «Ahitub», núm. 3, lo llama sacerdote; 1Cr 9:11.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

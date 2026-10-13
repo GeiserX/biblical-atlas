@@ -1,0 +1,34 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: simei-padre-de-jaquim
+name: Simeí
+names:
+- name: Simeí
+perspicacia: 1200004047#5
+disambiguation: Simeí de 1Cr 8:21, padre de nueve jefes de Jerusalén; no Simeí hijo de Guerá, que maldijo a David, ni los
+  levitas y los demás Simeí.
+distinct_from:
+- sama-hijo-de-jese
+- simei-hijo-de-ela
+- simei-hijo-de-guera
+- simei-hijo-de-guerson
+- simei-partidario-de-david
+- simei-hijo-de-jedutun
+- simei-descendiente-de-ladan
+- simei-el-ramatita
+- simei-hijo-de-gog
+- simei-hijo-de-jahat
+- simei-hijo-de-libni
+- simei-hijo-de-pedaya
+- simei-hijo-de-zacur
+summary: Benjamita cuyos nueve hijos o descendientes fueron jefes de casas que vivían en Jerusalén. Al parecer es el Sema
+  del versículo 13.
+reason: Perspicacia «Simeí», núm. 5; 1Cr 8:1, 19-21, 28.
+sources:
+- it-simei
+- 1-cronicas-8
+links:
+- title: 'Perspicacia: «Simeí»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sime%C3%AD/
+  type: perspicacia
+checked_on: '2026-10-12'
+status: verified

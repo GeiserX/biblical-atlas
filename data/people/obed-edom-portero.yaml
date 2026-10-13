@@ -1,0 +1,22 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: obed-edom-portero
+name: Obed-Edom
+names:
+- name: Obed-Edom
+perspicacia: 1200003291#3
+disambiguation: El portero de 1Cr 15:24; no el músico y portero de 1Cr 15:18, 21 (Perspicacia «Obed-edom», núm. 2), que según
+  el artículo es otra persona.
+distinct_from:
+- obed-edom-musico
+summary: Levita que, con Jehías, hizo de portero del Arca en su traslado a Jerusalén. Perspicacia ve posible que sea el hijo
+  de Jedutún, el guitita o el coreíta de 1Cr 26.
+reason: Perspicacia «Obed-edom», núm. 3; 1Cr 15:24.
+sources:
+- it-obed-edom
+- 1-cronicas-15
+links:
+- title: 'Perspicacia: «Obed-edom»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Obed-edom/
+  type: perspicacia
+checked_on: '2026-10-12'
+status: verified

@@ -31,7 +31,7 @@ links:
 - title: 1 Crónicas 5 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/1-Cr%C3%B3nicas/5/
   type: bible
-checked_on: '2026-09-30'
+checked_on: '2026-10-12'
 status: verified
 not_claimed:
 - 'Desde dónde salió al destierro ni a cuál de sus destinos llegó: 1Cr 5:6 no lo dice.'
@@ -57,3 +57,42 @@ relations:
     y Nebo. Perspicacia «Rubén» da a la tribu ese territorio, y tierras hagritas, al parecer hasta el destierro.'
   checked_on: '2026-10-02'
   status: pending
+- type: kin
+  person: baal-hijo-de-reaya
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-5
+  - it-baal
+  reason: '1Cr 5:5, 6: «su hijo Beerá», tras Baal; Perspicacia «Baal», núm. 2.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: jeiel-el-rubenita
+  word: relative
+  inferred: false
+  sources:
+  - 1-cronicas-5
+  reason: '1Cr 5:7: sus «hermanos», según el registro de sus familias, son parientes sin grado dicho.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: zacarias-el-rubenita
+  word: relative
+  inferred: false
+  sources:
+  - 1-cronicas-5
+  reason: '1Cr 5:7: sus «hermanos», según el registro de sus familias, son parientes sin grado dicho.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: bela-hijo-de-azaz
+  word: relative
+  inferred: false
+  sources:
+  - 1-cronicas-5
+  reason: '1Cr 5:7: sus «hermanos», según el registro de sus familias, son parientes sin grado dicho.'
+  checked_on: '2026-10-12'
+  status: verified
+distinct_from:
+- beera-de-aser
