@@ -101,9 +101,10 @@ function walkLanes(p) {
     const raf = () => new Promise((r) => requestAnimationFrame(() => requestAnimationFrame(r)));
     const seen = new Map(), problems = [], overLong = new Set();
     const row = parseFloat(getComputedStyle(document.querySelector('#linea-filas')).getPropertyValue('--fila')) || 22;
-    const step = Math.max(120, cuerpo.clientHeight), steps = Math.ceil(cuerpo.scrollHeight / step) + 2;
+    // The height is read again at every step: a late repaint (the fonts arriving) can make the lanes taller mid-walk.
+    const step = Math.max(120, cuerpo.clientHeight);
     let bottom = false;
-    for (let y = 0, guard = 0; guard < steps; guard++, y += step) {
+    for (let y = 0, guard = 0; guard < Math.ceil(cuerpo.scrollHeight / step) + 2; guard++, y += step) {
       cuerpo.scrollTop = y;
       await raf();
       for (const lane of document.querySelectorAll('#linea-filas .carril:not([hidden])')) {
