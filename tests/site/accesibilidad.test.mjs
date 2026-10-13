@@ -544,25 +544,32 @@ for (const screen of ['1440', '430']) {
   });
 }
 
-// A find drawn next to its place: the corner of its square under the zone of the place point is still the find.
+// A find drawn next to its place: the corner of its square under the zone of the place point, nearer the place point
+// than the centre of the square, is still the find. Nearness alone would give it to the place.
 test('1440: a click on what is drawn wins over the zone of another marker on top of it', async () => {
   const page = await keyboardPage('1440', 'sel=lugar:corinto&t=50.3000');
   const s = await page.evaluate(() => {
+    const mid = (r) => [(r.left + r.right) / 2, (r.top + r.bottom) / 2];
     for (const el of window.__be.map.getContainer().querySelectorAll('.marca-hallazgo')) {
       const r = el.querySelector('.hallazgo-dibujo > span').getBoundingClientRect();
+      const [fx, fy] = mid(r);
       for (let x = r.left + 1; x < r.right; x += 1) {
         for (let y = r.top + 1; y < r.bottom; y += 1) {
           const top = document.elementFromPoint(x, y);
-          if (top?.closest('.marca-lugar') && !top.closest('.marca-lugar .punto, .marca-lugar .etiqueta')) return { id: el.dataset.sel, x, y, over: top.closest('.marca-lugar').dataset.sel };
+          const lugar = top?.closest('.marca-lugar');
+          if (!lugar || top.closest('.marca-lugar .punto, .marca-lugar .etiqueta')) continue;
+          const [px, py] = mid(lugar.querySelector('.punto').getBoundingClientRect());
+          const dPlace = Math.hypot(px - x, py - y), dFind = Math.hypot(fx - x, fy - y);
+          if (dPlace < dFind - 1) return { id: el.dataset.sel, x, y, over: lugar.dataset.sel, dPlace: Math.round(dPlace * 10) / 10, dFind: Math.round(dFind * 10) / 10 };
         }
       }
     }
     return null;
   });
-  assert.ok(s, 'no find whose square lies partly under the zone of a place point');
+  assert.ok(s, 'no find whose square lies partly under the zone of a place point, nearer that point than its own centre');
   await page.mouse.click(s.x, s.y);
   await page.waitForFunction((id) => `${window.BE.E.sel?.tipo}:${window.BE.E.sel?.id}` === id, s.id, { timeout: 5000 }).catch(() => {});
-  assert.equal(await selected(page), s.id, `a click on the square of ${s.id}, under the zone of ${s.over}, chose ${await selected(page)}`);
+  assert.equal(await selected(page), s.id, `a click on the square of ${s.id}, under the zone of ${s.over} and ${s.dPlace} px from its point (${s.dFind} from the square's centre), chose ${await selected(page)}`);
   assert.deepEqual(page.errors, []);
   await page.context().close();
 });
