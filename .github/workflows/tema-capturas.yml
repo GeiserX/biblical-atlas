@@ -45,8 +45,8 @@ jobs:
           export PLAYWRIGHT_CORE="$RUNNER_TEMP/pw/node_modules/playwright-core" PLAYWRIGHT_MODULE_DIR="$RUNNER_TEMP/pw/node_modules"
           run() { tag=$1; site=$2; shift 2
             BE_TEMA_REPORT="$O/$tag.jsonl" BE_TEMA_SHOTS="$O/shots-$tag" BE_SITE_DIR="$site" \
-              node --test --test-concurrency=1 "$@" tests/site/tema-oscuro.test.mjs > "$O/$tag.log" 2>&1
-            echo "$tag exit $?"; grep -E '^ℹ (tests|pass|fail)' "$O/$tag.log"; }
+              node --test --test-concurrency=1 "$@" tests/site/tema-oscuro.test.mjs > "$O/$tag.log" 2>&1 && rc=0 || rc=$?
+            echo "$tag exit $rc"; grep -E '^ℹ (tests|pass|fail)' "$O/$tag.log" || true; }
           run despues site
           run antes "$R/antes-site"
           run mut "$R/mut-site" --test-name-pattern="ficha de lugar at|recorrido at|búsqueda at"
