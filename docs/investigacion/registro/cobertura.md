@@ -42,7 +42,7 @@ Qué versículos de la TNM se han leído y apuntado en `data/coverage/<libro>.ya
 | [El Cantar de los Cantares](https://github.com/GeiserX/biblical-atlas/blob/main/data/coverage/cantar-de-los-cantares.yaml) | 8 de 8 | 117 de 117 | 100 % |
 | [Isaías](https://github.com/GeiserX/biblical-atlas/blob/main/data/coverage/isaias.yaml) | 66 de 66 | 1292 de 1292 | 100 % |
 | [Jeremías](https://github.com/GeiserX/biblical-atlas/blob/main/data/coverage/jeremias.yaml) | 52 de 52 | 1364 de 1364 | 100 % |
-| Lamentaciones | 0 de 5 | 0 de 154 | 0 % |
+| [Lamentaciones](https://github.com/GeiserX/biblical-atlas/blob/main/data/coverage/lamentaciones.yaml) | 5 de 5 | 154 de 154 | 100 % |
 | Ezequiel | 0 de 48 | 0 de 1273 | 0 % |
 | Daniel | 0 de 12 | 0 de 357 | 0 % |
 | [Oseas](https://github.com/GeiserX/biblical-atlas/blob/main/data/coverage/oseas.yaml) | 14 de 14 | 197 de 197 | 100 % |
@@ -84,7 +84,7 @@ Qué versículos de la TNM se han leído y apuntado en `data/coverage/<libro>.ya
 | 3 Juan | 0 de 1 | 0 de 14 | 0 % |
 | Judas | 0 de 1 | 0 de 25 | 0 % |
 | Apocalipsis | 0 de 22 | 0 de 404 | 0 % |
-| **Total** | 982 de 1189 | 26198 de 31062 | 84 % |
+| **Total** | 987 de 1189 | 26352 de 31062 | 85 % |
 
 ## Capítulos empezados
 

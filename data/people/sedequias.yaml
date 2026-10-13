@@ -36,6 +36,8 @@ sources:
 - jeremias-39
 - jeremias-51
 - 1-cronicas-3
+- lamentaciones-4
+- w88-lamentaciones
 links:
 - title: 'Perspicacia: «Sedequías»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sedequ%C3%ADas/
@@ -157,7 +159,7 @@ history:
 - date: '2026-10-12'
   change: 'Jer 29:21 nombra a otro Sedequías, falso profeta hijo de Maaseya: la desambiguación lo excluye también.'
   source: jeremias-29
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified
 distinct_from:
 - sedequias-hijo-de-kenaana
