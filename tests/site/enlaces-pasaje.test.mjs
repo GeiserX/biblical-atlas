@@ -1,10 +1,11 @@
 // Deep links by passage (#p=Hch16:1, site/js/passage-link.js), tested in a real headless browser: a passage cited by
-// one record opens that record's card at its date; cited by several, it opens the first by date and the card lists the
-// others to switch to; cited by none, the panel says so and the selection stays empty; a range and a book written with
-// an accent read like their abbreviation; Back after a passage link goes back to the view before it and Forward returns
-// to the passage with its list, and with nothing selected the notice has its own entry named by the passage; «Enlace al
-// pasaje» copies the link. The rules without a browser are in
-// enlaces-pasaje-reglas.test.mjs.
+// one record opens that record's card at its date; cited by several, it opens the first (events first, those whose
+// principal passage cites it before the rest, then by date) and the card lists the others to switch to; cited by none,
+// its chapter card opens with a line that says so; a book alone opens the book card; what does not read as one passage
+// gets a notice and selects nothing; a range and a book written with an accent read like their abbreviation; Back after
+// a passage link goes back to the view before it and Forward returns to the passage with its list, and with nothing
+// selected the notice has its own entry named by the passage; «Enlace al pasaje» copies the link. The rules without a
+// browser are in enlaces-pasaje-reglas.test.mjs.
 //
 // Run from the root of the repository, one browser at a time:
 //   node --test --test-concurrency=1 tests/site/enlaces-pasaje.test.mjs
@@ -124,6 +125,19 @@ const view = (page) => page.evaluate(() => {
     places: BE.E.resaltado ? [...BE.E.resaltado.lugares] : [],
   };
 });
+/** Does the principal passage of a record (the first of an event's `pasajes`, the first part of a `referencia`) cite
+    the passage? Read from the data here, not from passage-link.js, so a broken rule there shows. */
+const principal = (page, p, sels) => page.evaluate(([p, sels]) => {
+  const BE = window.BE, D = BE.D, P = BE.pasajeEnlace, r = P.parsePassage(p).stretch;
+  return sels.map((sel) => {
+    const [k, id] = [sel.slice(0, sel.indexOf(':')), sel.slice(sel.indexOf(':') + 1)];
+    let first = null;
+    if (k === 'evento') first = D.eventos.find((e) => e.id === id).pasajes[0];
+    else if (k === 'parada') { const [v, o] = id.split('/'); first = D.viajes.find((x) => x.id === v).paradas.find((x) => String(x.orden) === o).referencia; }
+    else first = (k === 'carta' ? D.cartas : D.viajes).find((x) => x.id === id).referencia;
+    return P.parseRefs(String(first).split(';')[0]).some((s) => P.overlaps(s, r));
+  });
+}, [p, sels]);
 /** The records that cite a passage, as the page finds them, and the date the timeline gives the first one. */
 const found = (page, p) => page.evaluate((p) => {
   const r = window.BE.pasajeEnlace.resolve(p);
@@ -156,11 +170,6 @@ test('a passage cited by several opens the first by date and lists the others to
   const events = when.filter(([k]) => k === 'evento').map(([, t]) => t);
   assert.ok(when.findIndex(([k]) => k !== 'evento') >= events.length, 'an event comes after another kind');
   assert.deepEqual(events, [...events].sort((a, b) => a - b), 'the events are not by date');
-  // A long range is cited by events far apart in time: the earliest opens.
-  const long = await page.evaluate(() => window.BE.pasajeEnlace.resolve('Hch13:1-14:28').found.filter((s) => s.startsWith('evento:'))
-    .map((s) => window.BE.momentoDe(window.BE.parseSel(s))));
-  assert.ok(long.length > 2 && long[0] < long.at(-1), 'Hch 13:1-14:28 is no test of the order');
-  assert.deepEqual(long, [...long].sort((a, b) => a - b), 'the events of Hch 13:1-14:28 are not by date');
   assert.equal(v.box.rows.length, f.list.length - 1, 'the list does not offer every other record');
   assert.ok(v.box.current, 'the open record is not marked in the list');
   // Switching to another keeps the list, with the new one marked and the passage in the address.
@@ -182,41 +191,155 @@ test('a passage cited by several opens the first by date and lists the others to
   assert.deepEqual(page.pageErrors, []);
 });
 
-test('a passage cited by none says so, keeps the selection empty and offers the chapter when it has data', async () => {
-  const page = await openPage(DESKTOP, { hash: 'p=Snt1:5' });
+test('a passage cited by none opens its chapter card, with a line inside that nothing cites it', async () => {
+  // The chapter card paints itself again when its list of videos arrives (tipos/pasaje.js): held back here until the card
+  // is up, so the test sees the line survive that repaint.
+  const page = await openPage(DESKTOP, { hash: 'p=Snt1:5', init: () => {
+    const f = window.fetch.bind(window);
+    window.__videos = new Promise((ok) => { window.__soltarVideos = ok; });
+    window.fetch = (u, o) => (String(u).includes('videos-pasajes.json') ? window.__videos.then(() => f(u, o)) : f(u, o));
+  } });
   assert.deepEqual((await found(page, 'Snt1:5')).list, []);
-  const v = await view(page);
-  assert.equal(v.sel, null);
-  assert.equal(v.box?.status, 'status');
-  assert.match(v.box.text, /Ningún suceso, parada, carta ni viaje del atlas cita todavía Santiago 1:5/);
-  assert.deepEqual(v.box.rows, ['pasaje:snt-1']);
-  assert.match(v.hash, /[#&]p=Snt1:5(&|$)/);
-  // The rest of the panel stays: what it shows with nothing selected (where Pablo is, or «Ahora mismo») is under the notice.
-  const below = await page.evaluate(() => { const b = document.querySelector('#panel-cuerpo'); return { first: b.firstElementChild?.classList.contains('pasaje-enlace'), more: b.querySelectorAll(':scope > .be-card:not(.pasaje-enlace)').length }; });
-  assert.ok(below.first, 'the notice is not at the top of the panel');
-  assert.ok(below.more > 0, 'the panel lost what it shows with nothing selected');
-  // Escape closes the notice.
-  await page.keyboard.press('Escape');
+  await page.evaluate(() => { document.querySelector('#panel-cuerpo > .be-card').dataset.antes = '1'; window.__soltarVideos(); });
+  await page.waitForFunction(() => !document.querySelector('#panel-cuerpo [data-antes]'), null, { timeout: 15000 });
   await settle(page);
-  assert.equal((await view(page)).box, null);
-  // A book that does not exist says so too.
+  assert.ok(await page.evaluate(() => !!document.querySelector('#panel-cuerpo .acciones-estudio')), 'the card lost its «Citar» row when it painted again');
+  const v = await view(page);
+  assert.equal(v.sel, 'pasaje:snt-1');
+  assert.equal(v.title, 'Santiago 1');
+  assert.equal(v.box?.status, 'status');
+  assert.match(v.box.text, /^Ningún suceso, parada, carta ni viaje del atlas cita todavía Santiago 1:5\.$/);
+  const where = await page.evaluate(() => {
+    const line = document.querySelector('#panel-cuerpo .pasaje-enlace');
+    return { inCard: line.closest('#panel-cuerpo > .be-card')?.querySelector('.be-card__title')?.textContent.trim() || null,
+      cards: document.querySelectorAll('#panel-cuerpo .pasaje-enlace').length, href: line.querySelector('a')?.href || '' };
+  });
+  assert.equal(where.inCard, 'Santiago 1', 'the line is not inside the chapter card');
+  assert.equal(where.cards, 1);
+  assert.match(where.href, /jw\.org\/.*santiago\/1\/#v59001005$/i, 'the line does not link the verse on jw.org');
+  assert.match(v.hash, /[#&]p=Snt1:5(&|$)/);
+  assert.match(v.hash, /sel=pasaje:snt-1/);
+  // The address it writes opens the same, line included.
+  const again = await view(await openPage(DESKTOP, { hash: v.hash.slice(1) }));
+  assert.equal(again.sel, 'pasaje:snt-1');
+  assert.match(again.box?.text || '', /cita todavía Santiago 1:5/);
+  // A range across chapters that nothing cites opens its first chapter, not its last.
+  assert.deepEqual((await found(page, 'Snt1:5-2:3')).list, [], 'something cites Santiago 1:5-2:3 now, so this is no test');
+  const across = await view(await openPage(DESKTOP, { hash: 'p=Snt1:5-2:3' }));
+  assert.equal(across.sel, 'pasaje:snt-1', 'a range across chapters did not open its first chapter');
+  assert.match(across.box?.text || '', /^Ningún suceso, parada, carta ni viaje del atlas cita todavía Santiago 1:5-2:3\.$/);
+  // A chapter with no data at all says it once: the line, not also «Todavía no hay datos de este capítulo».
+  const empty = await openPage(DESKTOP, { hash: 'p=Pr3:5' });
+  const e = await view(empty);
+  assert.equal(e.sel, 'pasaje:pr-3');
+  assert.match(e.box?.text || '', /cita todavía Proverbios 3:5/);
+  const muted = (pg) => pg.evaluate(() => [...document.querySelectorAll('#panel-cuerpo .be-muted')].some((m) => /Todavía no hay datos de este capítulo/.test(m.textContent)));
+  assert.equal(await muted(empty), false, 'the chapter card says twice that nothing cites it');
+  // The same chapter reached without the link still says it has no data.
+  const bare = await openPage(DESKTOP, { hash: 'sel=pasaje:pr-3' });
+  assert.equal(await muted(bare), true, 'Proverbios 3 has data now, or lost its line, so this is no test');
+  assert.deepEqual([...empty.pageErrors, ...bare.pageErrors], []);
+  // Choosing something else from the chapter card (its book) ends the passage.
+  await page.locator('#panel-cuerpo .be-card__eyebrow [data-sel="libro:santiago"]').click();
+  await settle(page);
+  const x = await view(page);
+  assert.equal(x.sel, 'libro:santiago');
+  assert.equal(x.box, null);
+  assert.doesNotMatch(x.hash, /[#&]p=/);
+  assert.deepEqual(page.pageErrors, []);
+});
+
+test('what does not read as one passage keeps its notice, selects nothing and closes with Escape', async () => {
+  // A book that does not exist.
   const bad = await openPage(DESKTOP, { hash: 'p=Xyz3:4' });
   const b = await view(bad);
   assert.equal(b.sel, null);
+  assert.equal(b.box?.status, 'status');
   assert.match(b.box.text, /No reconozco «Xyz3:4»/);
+  // The rest of the panel stays: what it shows with nothing selected (where Pablo is, or «Ahora mismo») is under the notice.
+  const below = await bad.evaluate(() => { const b = document.querySelector('#panel-cuerpo'); return { first: b.firstElementChild?.classList.contains('pasaje-enlace'), more: b.querySelectorAll(':scope > .be-card:not(.pasaje-enlace)').length }; });
+  assert.ok(below.first, 'the notice is not at the top of the panel');
+  assert.ok(below.more > 0, 'the panel lost what it shows with nothing selected');
+  await bad.keyboard.press('Escape');
+  await settle(bad);
+  assert.equal((await view(bad)).box, null);
   const late = await openPage(DESKTOP, { hash: 'p=Hch29:1' });
   assert.match((await view(late)).box.text, /Hechos no tiene ese capítulo o ese versículo/);
   // Two stretches apart say so, not that the verse is missing; two that touch are one, written back as a range.
   const apart = await openPage(DESKTOP, { hash: 'p=Hch16:1,5' });
-  assert.match((await view(apart)).box.text, /junta tramos separados/);
+  const ap = await view(apart);
+  assert.equal(ap.sel, null);
+  assert.match(ap.box.text, /junta tramos separados/);
   const joined = await openPage(DESKTOP, { hash: 'p=Hch16:1,2' });
   assert.match((await view(joined)).hash, /[#&]p=Hch16:1-2(&|$)/);
-  assert.deepEqual([...page.pageErrors, ...bad.pageErrors, ...late.pageErrors, ...apart.pageErrors, ...joined.pageErrors], []);
+  assert.deepEqual([...bad.pageErrors, ...late.pageErrors, ...apart.pageErrors, ...joined.pageErrors], []);
 });
 
-test('the order by date does not lean on the order of the data', async () => {
+test('a book alone opens the book card, and the address writes it by its abbreviation', async () => {
+  for (const [h, sel, title, back] of [['p=Rut', 'libro:rut', 'Rut', 'Rut'], ['p=G%C3%A9nesis', 'libro:genesis', 'Génesis', 'Ge']]) {
+    const page = await openPage(DESKTOP, { hash: h });
+    const v = await view(page);
+    assert.equal(v.sel, sel, h);
+    assert.equal(v.title, title, h);
+    assert.equal(v.box, null, `${h} still shows a notice`);
+    assert.match(v.hash, new RegExp(`[#&]p=${back}(&|$)`), `${h} is not written back as p=${back}`);
+    // A book is not a passage: its card has no «Enlace al pasaje», reached by the link or not.
+    assert.equal(await page.locator('#panel-cuerpo [data-enlace-pasaje]').count(), 0, `${h}: the book card offers a passage link`);
+    assert.deepEqual(page.pageErrors, []);
+  }
+  const plain = await openPage(DESKTOP, { hash: 'sel=libro:rut' });
+  assert.equal((await view(plain)).sel, 'libro:rut');
+  assert.ok(await plain.locator('#panel-cuerpo .acciones-estudio').count(), 'the book card has no «Citar» row, so this is no test');
+  assert.equal(await plain.locator('#panel-cuerpo [data-enlace-pasaje]').count(), 0, 'the book card offers a passage link');
+});
+
+test('the links of the examples open their cards', async () => {
+  const cases = [
+    ['p=Hch13:1-14:28', 'evento:apartados-para-la-mision', 'Hch13:1-14:28'],
+    ['p=2Ti4:10', 'evento:segundo-encierro-en-roma', '2Ti4:10'],
+    ['p=Ge2:7,8', 'evento:creacion-de-adan', 'Ge2:7-8'],
+    ['p=Rut', 'libro:rut', 'Rut'],
+  ];
+  for (const [h, sel, back] of cases) {
+    for (const screen of [DESKTOP, PHONE]) {
+      const page = await openPage(screen, { hash: h });
+      const v = await view(page);
+      assert.equal(v.sel, sel, `${h} at ${screen.viewport.width}`);
+      assert.ok(v.title, `${h}: no card title`);
+      assert.match(v.hash, new RegExp(`[#&]p=${back.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}(&|$)`), h);
+      assert.deepEqual(page.pageErrors, []);
+    }
+  }
+});
+
+test('the records whose principal passage cites it come first; a sermon that recalls the past does not open', async () => {
+  // Hch 13:17-22 recalls the exodus, the conquest and the kings: «Nace Isaac» (1918 a.e.c.) cites Hch 13:17-20 in its
+  // second passage, and by date alone it would open the first journey's range.
+  const page = await openPage(DESKTOP, { hash: 'p=Hch13:1-14:28' });
+  const v = await view(page);
+  assert.equal(v.sel, 'evento:apartados-para-la-mision');
+  const { list } = await found(page, 'Hch13:1-14:28');
+  const events = list.filter((s) => s.startsWith('evento:'));
+  assert.ok(events.includes('evento:nacimiento-de-isaac'), '«Nace Isaac» no longer cites Hch 13, so this is no test');
+  const side = await principal(page, 'Hch13:1-14:28', events);
+  const cut = side.indexOf(false);
+  assert.ok(cut > 0 && side.slice(cut).every((x) => !x), `the events that cite it further down are mixed in: ${side.map(Number).join('')}`);
+  // Inside each side, by date: the earliest of the sermon's recollections comes first among them.
+  const when = await page.evaluate((l) => l.map((s) => window.BE.momentoDe(window.BE.parseSel(s))), events);
+  for (const part of [when.slice(0, cut), when.slice(cut)]) assert.deepEqual(part, [...part].sort((a, b) => a - b), 'a side is not by date');
+  assert.ok(when[cut] < when[0], 'the events further down are not earlier, so this is no test of the principal passage');
+  // Stops come after events, as on the server, even when the event cites it further down and the stop first.
+  const p2 = await openPage(DESKTOP, { hash: 'p=2Ti4:10' });
+  const w = await view(p2);
+  assert.equal(w.sel, 'evento:segundo-encierro-en-roma');
+  assert.deepEqual(await principal(p2, '2Ti4:10', [w.sel]), [false], '2 Ti 4:10 is now the principal passage of the event, so this is no test');
+  assert.ok(w.box.rows.some((s) => s.startsWith('parada:')), 'no stop cites 2 Ti 4:10');
+  assert.deepEqual([...page.pageErrors, ...p2.pageErrors], []);
+});
+
+test('the order does not lean on the order of the data', async () => {
   // The events, letters and journeys of data.json come out of build.py already by date, which would hide a missing sort:
-  // here they arrive reversed, and every group must still come out by date.
+  // here they arrive reversed, and every group must still come out principal first, then by date.
   const D = JSON.parse(fs.readFileSync(dataFile, 'utf8'));
   for (const k of ['eventos', 'cartas', 'viajes']) D[k].reverse();
   const body = JSON.stringify(D);
@@ -224,16 +347,21 @@ test('the order by date does not lean on the order of the data', async () => {
   const route = (r) => r.fulfill({ contentType: 'application/json', body: r.request().url().includes('/data.detail.json') ? '{}' : body });
   const page = await openPage(DESKTOP, { hash: 'p=2Ti4:10', route });
   for (const p of ['2Ti4:10', 'Hch13:1-14:28', '2Re17:6']) {
-    const groups = await page.evaluate((p) => {
+    const list = await page.evaluate((p) => window.BE.pasajeEnlace.resolve(p).found, p);
+    const side = await principal(page, p, list);
+    const groups = await page.evaluate(([list, side]) => {
       const BE = window.BE, out = {};
-      for (const s of BE.pasajeEnlace.resolve(p).found) (out[s.split(':')[0]] ||= []).push(BE.momentoDe(BE.parseSel(s)) ?? Infinity);
+      // Principal first: its moments as they are; the others after every principal one.
+      list.forEach((s, i) => (out[s.split(':')[0]] ||= []).push([side[i] ? 0 : 1, BE.momentoDe(BE.parseSel(s)) ?? 1e9]));
       return out;
-    }, p);
+    }, [list, side]);
     const order = Object.keys(groups);
     assert.deepEqual(order, ['evento', 'parada', 'carta', 'viaje'].filter((k) => order.includes(k)), `${p}: the groups are out of order`);
     assert.ok(Object.values(groups).some((ts) => ts.length > 1), `${p} is no test of the order`);
-    for (const [k, ts] of Object.entries(groups)) assert.deepEqual(ts, [...ts].sort((a, b) => a - b), `${p}: the ${k} group is not by date`);
+    const cmp = (a, b) => a[0] - b[0] || a[1] - b[1];
+    for (const [k, ts] of Object.entries(groups)) assert.deepEqual(ts, [...ts].sort(cmp), `${p}: the ${k} group is not principal first, then by date`);
   }
+  assert.equal((await view(page)).sel, 'evento:segundo-encierro-en-roma');
   assert.deepEqual(page.pageErrors, []);
 });
 
@@ -291,10 +419,10 @@ test('Back after a passage link returns to the view before it; Forward brings th
 test('a passage link with nothing selected is its own entry, named by the passage, and Back closes its notice', async () => {
   const page = await openPage(DESKTOP, { hash: 't=50.3000' });
   const before = await page.evaluate(() => document.title);
-  await page.evaluate(() => { location.hash = 'p=Snt1:5'; });
+  await page.evaluate(() => { location.hash = 'p=Hch16:1,5'; });
   await settle(page);
   assert.ok((await view(page)).box, 'no notice');
-  assert.equal(await page.evaluate(() => document.title), 'Enlace a Santiago 1:5 · biblical-atlas');
+  assert.equal(await page.evaluate(() => document.title), 'Enlace a Hch16:1,5 · biblical-atlas');
   assert.equal(await page.evaluate(() => document.getElementById('atras').getAttribute('aria-label')), `Atrás: ${before.replace(' · biblical-atlas', '')}`);
   await page.locator('#atras').click();
   await settle(page);
@@ -304,12 +432,12 @@ test('a passage link with nothing selected is its own entry, named by the passag
   await page.goForward();
   await settle(page);
   assert.ok((await view(page)).box, 'Forward lost the notice');
-  assert.equal(await page.evaluate(() => document.title), 'Enlace a Santiago 1:5 · biblical-atlas');
+  assert.equal(await page.evaluate(() => document.title), 'Enlace a Hch16:1,5 · biblical-atlas');
   // Closing the notice is another view, as closing «Ahora mismo» is: Back brings the notice back.
   await page.locator('#panel-cuerpo [data-pasaje-cerrar]').click();
   await settle(page);
   assert.equal((await view(page)).box, null);
-  assert.equal(await page.evaluate(() => document.getElementById('atras').getAttribute('aria-label')), 'Atrás: Enlace a Santiago 1:5');
+  assert.equal(await page.evaluate(() => document.getElementById('atras').getAttribute('aria-label')), 'Atrás: Enlace a Hch16:1,5');
   await page.locator('#atras').click();
   await settle(page);
   assert.ok((await view(page)).box, 'Back after closing did not bring the notice back');

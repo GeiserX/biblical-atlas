@@ -1,0 +1,44 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: pablo-envia-a-timoteo-a-tesalonica
+title: Pablo, solo en Atenas, envía a Timoteo a Tesalónica
+date:
+  from: 50
+  to: 50
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 50 e.c.
+narrative_order:
+  series: hechos
+  order: 1716
+places:
+- atenas
+- tesalonica
+- berea
+people:
+- pablo
+- timoteo
+present:
+- pablo
+passages:
+- 1Te 3:1-5
+summary: Sin noticias de la congregación perseguida, Pablo decide quedarse solo en Atenas y manda a Timoteo a Tesalónica para
+  darles ánimo y saber si siguen fieles.
+reason: 'Perspicacia «Atenas» lo fecha hacia 50 y ve probable un aviso a Timoteo en Berea; «Timoteo» coincide y la nota
+  de 1Te 3:1 lo deja solo. Va al empezar la espera en Atenas: ninguna fuente lo ordena frente al Areópago.'
+sources:
+- 1-tesalonicenses-3
+- it-atenas
+- it-timoteo
+- it-tesalonicenses
+links:
+- title: 1 Tesalonicenses 3 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/1-tesalonicenses/3/
+  type: bible
+- title: 'Perspicacia: «Atenas»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Atenas/
+  type: perspicacia
+search: Pablo envía a Timoteo a Tesalónica desde Atenas
+checked_on: '2026-10-12'
+status: verified
