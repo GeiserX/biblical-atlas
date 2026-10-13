@@ -262,6 +262,8 @@ ol.paradas li:first-child .be-row { border-top: 0; }
    de 44, con el dedo). Sigue en el orden del teclado. */
 .marca-agua.sin-etiqueta, .marca-region.sin-etiqueta { pointer-events: none; }
 .marca-agua.resaltado .etiqueta { color: #2c4f5a; font-weight: 700; }
+/* En el modo reunión, el mismo realce pero claro: #2c4f5a sobre el halo oscuro se quedaba en 2,05:1. */
+.be-reunion .marca-agua.resaltado .etiqueta { color: #d0e6ec; }
 .grupo-lugares { min-width: 24px; height: 24px; padding: 0 6px; border-radius: var(--r-pill); border: 2px solid var(--halo); background: var(--ink-2); color: var(--on-ink); font: 700 11.5px var(--font-sans); cursor: zoom-in; box-shadow: var(--shadow-2); }
 .grupo-lugares:hover { background: var(--ink); }
 
