@@ -41,9 +41,11 @@ const ALLOW = [
 
 /** What an allowlist entry can ask of a reported element, measured in the page: `marker`, it is a MapLibre marker
     (a point, a name or a number drawn on the map); `big`, its own box is 24 x 24 px or more. `covers` (for the report)
-    is what axe names as covering it or near it. */
+    is what axe names as covering it or near it. A target that is not a selector (a measured mark, «.cal-nada #3») has
+    no facts. */
 const facts = (page, nodes) => page.evaluate((nodes) => nodes.map(({ target, related }) => {
-  const el = document.querySelector(target);
+  const q = (t) => { try { return document.querySelector(t); } catch { return null; } };
+  const el = q(target);
   if (!el) return {};
   const r = el.getBoundingClientRect();
   return { marker: !!el.closest('.maplibregl-marker'), big: r.width >= 23.95 && r.height >= 23.95, covers: related };
