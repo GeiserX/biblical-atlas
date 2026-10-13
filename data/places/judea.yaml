@@ -36,6 +36,7 @@ sources:
 - hechos-11
 - hechos-12
 - galatas-1
+- 1-tesalonicenses-2
 links:
 - title: 'Perspicacia: «Judea»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Judea/
@@ -54,5 +55,5 @@ history:
 - date: '2026-09-29'
   change: Sale el enlace a Hebreos 13, que no nombra Judea; entra Mateo 24.
   source: mateo-24
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

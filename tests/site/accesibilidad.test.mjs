@@ -128,7 +128,9 @@ const VIEWS = [
     await p.keyboard.type('Pablo', { delay: 10 });
     await p.waitForFunction(() => document.querySelectorAll('#resultados [role="option"]').length > 2, null, { timeout: 10000 });
   }) },
+  // A passage nothing cites opens its chapter card with a line that says so; one that does not read gets a notice.
   { name: 'pasaje sin coincidencias', open: app('p=Snt1:5') },
+  { name: 'aviso de un enlace a un pasaje', open: app('p=Hch16:1,5') },
   { name: 'calendario', open: plain('calendario.html') },
   { name: 'acerca de', open: plain('acerca.html') },
 ];
