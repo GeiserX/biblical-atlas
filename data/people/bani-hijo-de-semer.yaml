@@ -1,0 +1,31 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: bani-hijo-de-semer
+name: Baní
+names:
+- name: Baní
+perspicacia: 1200000553#1
+disambiguation: Baní hijo de Sémer (1Cr 6:46); no es ninguno de los otros Baní que numera Perspicacia «Baní».
+distinct_from:
+- bani-descendiente-de-perez
+- bani-el-gadita
+summary: Levita merarita, hijo de Sémer y antepasado del Etán que David puso al servicio del santuario.
+reason: Perspicacia «Baní», núm. 1; 1Cr 6:46.
+sources:
+- it-bani
+- 1-cronicas-6
+links:
+- title: 'Perspicacia: «Baní»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ban%C3%AD/
+  type: perspicacia
+relations:
+- type: kin
+  person: semer-hijo-de-mahli
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-6
+  reason: '1Cr 6:46: Baní, «hijo de Sémer».'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

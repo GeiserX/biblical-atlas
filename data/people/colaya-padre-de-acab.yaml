@@ -1,0 +1,23 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: colaya-padre-de-acab
+name: Colaya
+names:
+- name: Colaya
+- name: Qolaya
+  note: Grafía del artículo de Perspicacia; la TNM escribe Colaya en Jer 29:21.
+perspicacia: 1200002647#1
+summary: Padre de Acab, uno de los falsos profetas que había entre los judíos desterrados en Babilonia antes de la caída de
+  Jerusalén.
+reason: Perspicacia «Qolaya», núm. 1; Jer 29:21.
+sources:
+- it-qolaya
+- jeremias-29
+links:
+- title: 'Perspicacia: «Qolaya»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Qolaya/
+  type: perspicacia
+- title: Jeremías 29 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/29/
+  type: bible
+checked_on: '2026-10-12'
+status: verified

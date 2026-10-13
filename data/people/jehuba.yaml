@@ -1,0 +1,27 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jehuba
+name: Jehubá
+names:
+- name: Jehubá
+perspicacia: '1200002402'
+summary: Aserita destacado, hijo de Sémer.
+reason: Perspicacia «Jehubá»; 1Cr 7:34, 40.
+sources:
+- it-jehuba
+- 1-cronicas-7
+links:
+- title: 'Perspicacia: «Jehubá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jehub%C3%A1/
+  type: perspicacia
+relations:
+- type: kin
+  person: somer-hijo-de-heber
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-7
+  reason: 1Cr 7:34 lo nombra entre los hijos de Sémer, el Somer del versículo 32.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

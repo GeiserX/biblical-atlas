@@ -9,6 +9,8 @@ disambiguation: El rey de Madón (Perspicacia, núm. 3); no Jobab hijo de Joctá
 distinct_from:
 - jobab-hijo-de-joctan
 - jobab-hijo-de-zerah
+- jobab-descendiente-de-elpaal
+- jobab-hijo-de-saharaim
 summary: Rey de Madón, ciudad cananea del norte. Cuando Jabín, rey de Hazor, lo convocó, se unió a la alianza y cayó vencido
   con los demás reyes junto a las aguas de Merom.
 reason: Perspicacia «Jobab», núm. 3; Jos 11:1-8 y 12:19.
@@ -33,5 +35,5 @@ relations:
   reason: 'Jos 11:1: Jabín envió mensajeros a Jobab, rey de Madón.'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

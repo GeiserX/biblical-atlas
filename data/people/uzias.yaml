@@ -26,6 +26,7 @@ sources:
 - 2-reyes-14
 - isaias-6
 - it-azarias
+- 1-cronicas-3
 links:
 - title: 'Perspicacia: «Uzías»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Uz%C3%ADas/
@@ -43,8 +44,9 @@ relations:
   - 2-cronicas-26
   - 2-reyes-14
   - 2-reyes-15
+  - 1-cronicas-3
   reason: Hijo de Amasías y Jecolías (2Cr 26:1-3).
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-12'
   status: verified
 - type: succeeds
   person: amasias
@@ -107,7 +109,7 @@ history:
   change: Perspicacia «Uzías» cerraba su reinado en 778 a.e.c.; A6-B, más reciente, empieza el de Jotán en 777.
   source: tnm-a6-a
 perspicacia: 1200004535#3
-checked_on: '2026-10-01'
+checked_on: '2026-10-12'
 status: verified
 disambiguation: El rey de Judá al que también se llama Azarías; no es ninguno de los otros Azarías que numera Perspicacia,
   como el hijo de Natán, el hijo de Sadoc o el jefe efraimita hijo de Jehohanán.
@@ -118,3 +120,12 @@ distinct_from:
 - jaazanias-jefe-militar
 - abednego
 - ocozias-de-juda
+- azarias-hijo-de-etan
+- azarias-hijo-de-jehu
+- azarias-hijo-de-ahimaaz
+- azarias-hijo-de-hilquias
+- azarias-hijo-de-johanan
+- azarias-hijo-de-sofonias
+- uzias-hijo-de-uriel
+- azarias-sacerdote-repatriado
+- uzias-padre-de-jonatan

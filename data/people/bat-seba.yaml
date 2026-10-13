@@ -15,6 +15,7 @@ sources:
 - 2-samuel-12
 - 1-reyes-1
 - 1-reyes-2
+- 1-cronicas-3
 links:
 - title: 'Perspicacia: «Bat-seba»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Bat-seba/
@@ -26,7 +27,7 @@ history:
 - date: '2026-09-30'
   change: El resumen se escribe con palabras propias; repetía ocho palabras seguidas de 2Sa 11:3.
   source: 2-samuel-11
-checked_on: '2026-09-30'
+checked_on: '2026-10-12'
 status: verified
 relations:
 - type: kin
@@ -47,8 +48,9 @@ relations:
   sources:
   - 2-samuel-11
   - it-eliam
+  - 1-cronicas-3
   reason: 2Sa 11:3 la presenta como hija de Eliam.
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: lived_in
   place: jerusalen

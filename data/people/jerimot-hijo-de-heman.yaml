@@ -1,0 +1,43 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jerimot-hijo-de-heman
+name: Jerimot
+names:
+- name: Jerimot
+- name: Jeremot
+  note: Así se le llama en 1Cr 25:22; Perspicacia «Jeremot», núm. 4, y «Jerimot», núm. 4, lo dan por el mismo.
+perspicacia: 1200002423#4
+disambiguation: El hijo de Hemán (1Cr 25:4, 22); no Jerimot, príncipe de Neftalí, ni Jeremot, hijo de Musí (Perspicacia «Jeremot»
+  y «Jerimot»).
+summary: Levita cohatita, hijo de Hemán. Con el nombre de Jeremot recibió la suerte 15 y dirigió ese grupo de músicos.
+reason: Perspicacia «Jeremot», núm. 4; 1Cr 25:4, 22.
+sources:
+- it-jeremot
+- it-jerimot
+- 1-cronicas-25
+links:
+- title: 'Perspicacia: «Jeremot»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jeremot/
+  type: perspicacia
+- title: 'Perspicacia: «Jerimot»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jerimot/
+  type: perspicacia
+relations:
+- type: kin
+  person: heman-hijo-de-joel
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-25
+  - it-jeremot
+  reason: 1Cr 25:4, 22 lo cuenta entre los hijos de Hemán.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- jeremot-de-beker
+- jeremot-hijo-de-berias
+- jeremot-hijo-de-musi
+- jerimot-de-benjamin
+- jerimot-el-benjaminita
+- jerimot-hijo-de-azriel

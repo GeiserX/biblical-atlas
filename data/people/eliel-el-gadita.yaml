@@ -1,0 +1,37 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: eliel-el-gadita
+name: Eliel
+names:
+- name: Eliel
+perspicacia: 1200001302#7
+disambiguation: Eliel el gadita, séptimo de los once (1Cr 12:11); no los dos Eliel de la lista de los valientes ni los levitas.
+distinct_from:
+- eliel-descendiente-de-sasac
+- eliel-descendiente-de-simei
+- eliel-el-mahavita
+- eliel-guerrero-de-david
+- eliel-jefe-de-los-hebronitas
+- elihu-hijo-de-tohu
+- eliel-de-manases
+summary: Gadita, el séptimo de los once guerreros de Gad que cruzaron el Jordán crecido para unirse a David en el desierto,
+  cuando Saúl lo perseguía.
+reason: Perspicacia «Eliel», núm. 7; 1Cr 12:8-15.
+sources:
+- it-eliel
+- 1-cronicas-12
+links:
+- title: 'Perspicacia: «Eliel»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Eliel/
+  type: perspicacia
+relations:
+- type: tie
+  person: david
+  word: master
+  inferred: false
+  sources:
+  - 1-cronicas-12
+  reason: '1Cr 12:8, 11, 14: gadita que se pasó a David y llegó a ser jefe de su ejército.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

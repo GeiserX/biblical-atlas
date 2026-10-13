@@ -2,7 +2,7 @@
 id: nebuzaradan-lleva-a-juda-al-destierro
 name: Nebuzaradán lleva a Judá al destierro
 person: nebuzaradan
-reference: 2Re 25:8-21; Jer 39:8-10; 40:1; 52:12-30; 2Cr 36:17-20
+reference: 2Re 25:8-21; Jer 39:8-10; 40:1; 52:12-27, 29; 2Cr 36:17-20
 date:
   from: -606
   to: -606
@@ -26,7 +26,12 @@ sources:
 - it-rama
 - it-ribla
 - si-3
-checked_on: '2026-09-30'
+history:
+- date: '2026-10-12'
+  change: 'La referencia deja Jer 52:28 y 52:30: son el destierro de 617 y el de 602, no el de 607 (Perspicacia «Nabucodonosor»
+    y «Nebuzaradán»).'
+  source: jeremias-52
+checked_on: '2026-10-12'
 status: verified
 stops:
 - order: 1

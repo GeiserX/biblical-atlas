@@ -1,0 +1,32 @@
+# biblical-atlas: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: madmen
+name: Madmén
+names:
+- name: Madmén
+  note: Quizá significa estiércol. Muchos eruditos ven en la m inicial una letra repetida por error; sin ella, el nombre coincide
+    con Dimón.
+type: city
+lat: 31.291821
+lon: 35.704811
+precision: uncertain
+coord_source: openbible:a73a74f
+coord_url: https://www.openbible.info/geo/ancient/a73a74f/madmen
+coord_note: Dimná, primera identificación de la ficha Madmen de OpenBible. Perspicacia la da solo como posible, unos 10 km
+  al norte de Karak.
+summary: Al parecer, un lugar de Moab al que Jeremías anuncia la espada (Jer 48:2). Se suele tener por el mismo lugar que
+  Dimón, aunque el hebreo quizá no nombre ningún lugar.
+reason: 'Perspicacia «Madmén» y «Dimón», párr. 3; Jer 48:2. OpenBible: solo el punto.'
+not_claimed:
+- 'Que sea un nombre de lugar: Perspicacia recoge que la Septuaginta, la Peshitta y la Vulgata leen una frase sin nombre propio.'
+- 'Que esté con seguridad en Dimná: Perspicacia solo lo da como posible.'
+sources:
+- it-madmen
+- it-dimon
+- openbible-geo
+- jeremias-48
+links:
+- title: 'Perspicacia: «Madmén»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Madm%C3%A9n/
+  type: perspicacia
+checked_on: '2026-10-12'
+status: verified

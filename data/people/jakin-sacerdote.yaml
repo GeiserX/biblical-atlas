@@ -1,0 +1,43 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jakin-sacerdote
+name: Jakín
+names:
+- name: Jakín
+perspicacia: 1200002276#2
+summary: Sacerdote cuya casa paterna tuvo el turno 21 de los que organizó David. Al menos un descendiente suyo, o un sacerdote
+  del mismo nombre, vivió en Jerusalén tras el destierro.
+reason: Perspicacia «Jakín», núm. 2; 1Cr 9:10.
+sources:
+- it-jakin
+- 1-cronicas-9
+- 1-cronicas-24
+links:
+- title: 'Perspicacia: «Jakín»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jak%C3%ADn/
+  type: perspicacia
+relations:
+- type: holds_office
+  office: priest
+  inferred: false
+  sources:
+  - 1-cronicas-9
+  - it-jakin
+  - 1-cronicas-24
+  reason: 1Cr 9:10 lo nombra entre los sacerdotes; Perspicacia «Jakín», núm. 2, lo llama sacerdote.
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: aaron
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-24
+  - it-jakin
+  reason: 1Cr 24:1 abre la lista de los descendientes de Aarón repartidos en turnos, y 24:17 da a esta casa el vigésimo primero.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- jakin-hijo-de-simeon
+disambiguation: 'Jakín núm. 2 de Perspicacia: el sacerdote del turno 21. No el hijo de Simeón.'

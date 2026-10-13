@@ -1,0 +1,48 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jeremias-insta-a-sedequias-y-al-pueblo-a-servir-a-babilonia
+title: Jeremías insta a Sedequías, a los sacerdotes y al pueblo a servir a Babilonia
+type: speech
+roles:
+  jeremias-profeta: spoke
+date:
+  from: -613
+  to: -613
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 614 a.e.c.
+narrative_order:
+  series: jeremias
+  order: 27012
+places:
+- jerusalen
+people:
+- jeremias-profeta
+- sedequias
+- nabucodonosor-ii
+present:
+- jeremias-profeta
+- sedequias
+passages:
+- Jer 27:12-22
+summary: 'Jeremías repite al rey el mensaje del yugo y avisa a sacerdotes y pueblo de que sus profetas mienten: lo que queda
+  en el templo, el palacio y la ciudad irá también a Babilonia hasta que Jehová lo devuelva.'
+reason: 'Jer 28:1 lo pone en el año cuarto de Sedequías, 614 según Perspicacia «Seraya», núm. 5. El «Jehoiaquim» de 27:1 quizá
+  es error de copista (Perspicacia «Sedequías», núm. 4). Jer 27:17, 19: «esta ciudad», Jerusalén.'
+sources:
+- jeremias-27
+- jeremias-28
+- it-sedequias
+- it-seraya
+- si-jeremias
+- it-jeremias-libro
+links:
+- title: Jeremías 27 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/27/
+  type: bible
+- title: 'Perspicacia: «Sedequías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sedequ%C3%ADas/
+  type: perspicacia
+checked_on: '2026-10-12'
+status: verified

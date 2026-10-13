@@ -139,6 +139,8 @@ sources:
 - josue-12
 - josue-13
 - josue-24
+- 1-cronicas-6
+- 1-cronicas-23
 links:
 - title: 'Perspicacia: «Moisés»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Mois%C3%A9s/
@@ -162,8 +164,10 @@ relations:
   - numeros-26
   - numeros-27
   - deuteronomio-32
+  - 1-cronicas-6
+  - 1-cronicas-23
   reason: 'Perspicacia «Moisés», párr. 2: Aarón era tres años mayor que él (Éx 6:20).'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: kin
   person: levi-hijo-de-jacob
@@ -245,8 +249,10 @@ relations:
   - it-amram
   - exodo-6
   - numeros-26
+  - 1-cronicas-6
+  - 1-cronicas-23
   reason: 'Éx 2:1, 2: hijo de un levita; Perspicacia «Moisés» y «Amram», núm. 1, lo nombran.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: kin
   person: jokebed
@@ -358,5 +364,5 @@ history:
 - date: '2026-09-29'
   change: 'Grafía: la razón de su parentesco con Leví escribe Cohat, como Éx 6:16 en la TNM; Qohat es la grafía de Perspicacia.'
   source: exodo-6
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

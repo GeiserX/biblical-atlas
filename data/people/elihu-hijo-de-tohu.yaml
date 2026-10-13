@@ -15,12 +15,25 @@ distinct_from:
 - eliab-hijo-de-helon
 - eliab-hijo-de-jese
 - eliab-hijo-de-palu
+- eliel-de-manases
+- eliel-descendiente-de-sasac
+- eliel-descendiente-de-simei
+- eliel-el-mahavita
+- eliel-guerrero-de-david
+- eliab-el-gadita
+- eliel-el-gadita
+- elihu-de-manases
+- eliel-jefe-de-los-hebronitas
+- eliab-musico
+- elihu-portero
+- elihu-hermano-de-david
 summary: Antepasado levita del profeta Samuel, hijo de Tohu y padre de Jeroham. Las Crónicas lo llaman también Eliab y Eliel.
 reason: Perspicacia «Elihú», núm. 2; 1Sa 1:1.
 sources:
 - it-elihu
 - 1-samuel-1
 - it-eliab
+- 1-cronicas-6
 links:
 - title: 'Perspicacia: «Elihú»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Elih%C3%BA/
@@ -35,5 +48,23 @@ relations:
   reason: '1Sa 1:1: Elihú era hijo de Tohu.'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-10-02'
+- type: kin
+  person: nahat-hijo-de-zuf
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-6
+  reason: '1Cr 6:26, 27: «su hijo Eliab», tras Náhat. Perspicacia cree que Náhat es Tohu.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: toah
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-6
+  reason: '1Cr 6:34: Eliel, «hijo de Tóah». Perspicacia cree que Tóah es Tohu.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
 status: verified

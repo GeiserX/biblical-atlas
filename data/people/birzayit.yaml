@@ -1,0 +1,28 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: birzayit
+name: Birzayit
+names:
+- name: Birzayit
+perspicacia: '1200000751'
+summary: Aserita de la familia de Malkiel, de quien 1 Crónicas dice que fue padre. Algunos creen que es un lugar, pero Perspicacia
+  no ve base para el sitio que proponen.
+reason: Perspicacia «Birzayit»; 1Cr 7:30, 31.
+sources:
+- it-birzayit
+- 1-cronicas-7
+links:
+- title: 'Perspicacia: «Birzayit»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Birzayit/
+  type: perspicacia
+relations:
+- type: kin
+  person: malkiel
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-7
+  reason: '1Cr 7:31: Malkiel fue el padre de Birzayit.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

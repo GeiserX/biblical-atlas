@@ -1,0 +1,28 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: sebanias-trompetista
+name: Sebanías
+names:
+- name: Sebanías
+perspicacia: 1200003971#1
+disambiguation: El sacerdote trompetista de David; no los Sebanías de tiempos de Nehemías (Perspicacia «Sebanías», núm. 2
+  a 4).
+summary: Sacerdote que tocó la trompeta delante del Arca en la procesión que la subió a Jerusalén.
+reason: Perspicacia «Sebanías», núm. 1; 1Cr 15:24.
+sources:
+- it-sebanias
+- 1-cronicas-15
+links:
+- title: 'Perspicacia: «Sebanías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Seban%C3%ADas/
+  type: perspicacia
+relations:
+- type: holds_office
+  office: priest
+  inferred: false
+  sources:
+  - 1-cronicas-15
+  reason: 1Cr 15:24 lo cuenta entre los sacerdotes que tocaban las trompetas delante del Arca.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

@@ -1,0 +1,27 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: bealias
+name: Bealías
+names:
+- name: Bealías
+perspicacia: '1200000587'
+summary: Guerrero benjaminita que se unió a David en Ziclag.
+reason: Perspicacia «Bealías»; 1Cr 12:5.
+sources:
+- it-bealias
+- 1-cronicas-12
+links:
+- title: 'Perspicacia: «Bealías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Beal%C3%ADas/
+  type: perspicacia
+relations:
+- type: tie
+  person: david
+  word: master
+  inferred: false
+  sources:
+  - 1-cronicas-12
+  reason: '1Cr 12:5: se unió a David y lo apoyó en la guerra.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

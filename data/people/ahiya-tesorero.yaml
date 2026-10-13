@@ -1,0 +1,28 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ahiya-tesorero
+name: Ahíya
+names:
+- name: Ahíya
+perspicacia: 1200000153#5
+disambiguation: El levita tesorero de David (1Cr 26:20); no Ahíya el profeta de Siló, ni el sacerdote hijo de Ahitub, ni los
+  otros Ahíya de Perspicacia «Ahíya».
+summary: Levita al que, en el reinado de David, se confiaron los tesoros del santuario y los de las cosas santificadas.
+reason: Perspicacia «Ahíya», núm. 5; 1Cr 26:20.
+sources:
+- it-ahiya
+- 1-cronicas-26
+links:
+- title: 'Perspicacia: «Ahíya»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ah%C3%ADya/
+  type: perspicacia
+relations: []
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- ahiya-de-benjamin
+- ahiya-el-pelonita
+- ahiya-hijo-de-ahitub
+- ahiya-hijo-de-sisa
+- ahiya-padre-de-baasa
+- ahiya-profeta
+- ahiya-hijo-de-jerahmeel

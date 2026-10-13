@@ -1,0 +1,18 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: atara
+name: Atará
+names:
+- name: Atará
+perspicacia: '1200000451'
+summary: Esposa de Jerahmeel, nieto de Pérez, distinta de la madre de sus otros hijos. Con ella tuvo a Onam.
+reason: Perspicacia «Atará»; 1Cr 2:26.
+sources:
+- it-atara
+- 1-cronicas-2
+links:
+- title: 'Perspicacia: «Atará»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Atar%C3%A1/
+  type: perspicacia
+relations: []
+checked_on: '2026-10-12'
+status: verified

@@ -1,0 +1,28 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: arnan
+name: Arnán
+names:
+- name: Arnán
+perspicacia: '1200000378'
+summary: Descendiente del rey David que vivió tras el regreso del destierro.
+reason: Perspicacia «Arnán»; 1Cr 3:21.
+sources:
+- it-arnan
+- 1-cronicas-3
+links:
+- title: 'Perspicacia: «Arnán»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Arn%C3%A1n/
+  type: perspicacia
+relations:
+- type: kin
+  person: refaya-hijo-de-jesaya
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-3
+  - it-arnan
+  reason: '1Cr 3:21: el hijo de Refayá fue Arnán (la nota dice que en hebreo es «los hijos»).'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

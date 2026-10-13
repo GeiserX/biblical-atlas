@@ -3,6 +3,8 @@ id: aczib-de-juda
 name: Aczib
 names:
 - name: Aczib
+- name: Cozebá
+  note: Nombre que le da 1Cr 4:22; Perspicacia «Aczib», núm. 1, y «Cozebá» dicen que por lo general se cree que es Aczib.
 type: city
 lat: 31.642074
 lon: 34.953019
@@ -19,9 +21,11 @@ sources:
 - genesis-38
 - miqueas-1
 - josue-15
+- it-cozeba
+- 1-cronicas-4
 links:
 - title: 'Perspicacia: «Aczib»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Aczib/
   type: perspicacia
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

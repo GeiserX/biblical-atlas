@@ -1,0 +1,45 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jeremias-anuncia-la-ruina-de-ammon
+title: Jeremías anuncia la ruina de Ammón
+date:
+  from: -646
+  to: -579
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 647 y 580 a.e.c. (tiempo narrativo: durante la obra de Jeremías)'
+narrative_order:
+  series: jeremias
+  order: 49001
+places:
+- ammon
+- raba
+- hesbon
+- hai-de-ammon
+- gad
+people:
+- jeremias-profeta
+present: []
+passages:
+- Jer 49:1-6
+summary: Jehová reprocha a los ammonitas que su dios Malcam se haya adueñado de Gad. Rabá quedará en ruinas, Hesbón llorará
+  por Hai e Israel recobrará lo suyo; más tarde volverán los cautivos de Ammón.
+reason: 'Jer 49:1 no da fecha ni lugar: nadie queda situado. Límites: comisión de Jeremías en 647 (estudio 3) y cierre del
+  libro en 580 (Tabla). Perspicacia «Rabá» lo da por cumplido en tiempos de Nabucodonosor.'
+sources:
+- jeremias-49
+- si-3
+- tnm-tabla
+- it-ammonitas
+- it-raba
+- it-malcam
+- it-hai
+- it-jeremias-libro
+- si-jeremias
+links:
+- title: Jeremías 49 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/49/
+  type: bible
+checked_on: '2026-10-12'
+status: verified

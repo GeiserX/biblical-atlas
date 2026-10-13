@@ -1,0 +1,31 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: semer-hijo-de-mahli
+name: Sémer
+names:
+- name: Sémer
+perspicacia: 1200004004#2
+disambiguation: Sémer hijo de Mahlí (1Cr 6:46, 47); no es ninguno de los otros Sémer que numera Perspicacia «Sémer».
+distinct_from:
+- semer-de-samaria
+- somer-hijo-de-heber
+summary: Levita merarita, hijo de Mahlí y antepasado de Etán.
+reason: Perspicacia «Sémer», núm. 2; 1Cr 6:46, 47.
+sources:
+- it-semer
+- 1-cronicas-6
+links:
+- title: 'Perspicacia: «Sémer»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/S%C3%A9mer/
+  type: perspicacia
+relations:
+- type: kin
+  person: mahli-hijo-de-musi
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-6
+  reason: '1Cr 6:46, 47: Sémer, «hijo de Mahlí».'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

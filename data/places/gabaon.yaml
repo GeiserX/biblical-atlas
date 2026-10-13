@@ -6,6 +6,9 @@ names:
 - name: Estanque de Gabaón
   note: Allí se enfrentaron los hombres de Abner y los de Joab (2Sa 2:13). Perspicacia no asegura que sea el gran pozo excavado
     en el-Jib.
+- name: Grandes aguas de Gabaón
+  note: 'Jer 41:12: allí alcanzó Johanán a Ismael. La nota al pie da también «el gran estanque»; Perspicacia «Gabaón» no dice
+    qué eran.'
 type: city
 lat: 31.847451
 lon: 35.183351
@@ -27,6 +30,13 @@ sources:
 - josue-21
 - 2-samuel-2
 - 2-samuel-20
+- jeremias-28
+- jeremias-41
+- 1-cronicas-9
+- 1-cronicas-12
+- 1-cronicas-14
+- 1-cronicas-16
+- 1-cronicas-21
 links:
 - title: 'Perspicacia: «Gabaón»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Gaba%C3%B3n/
@@ -44,5 +54,5 @@ history:
 - date: '2026-09-29'
   change: La razón cita ahora el apartado de Perspicacia sobre Josué y los capítulos 9 y 10.
   source: josue-9
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

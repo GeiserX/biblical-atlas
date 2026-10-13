@@ -1,0 +1,75 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: baalis
+name: Baalís
+names:
+- name: Baalís
+perspicacia: '1200000516'
+date:
+  from: -606
+  to: -606
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 607 a.e.c.
+summary: Rey de los ammonitas en 607 a.e.c. Según avisaron a Guedalías los jefes militares, había enviado a Ismael para que
+  lo matara.
+reason: Perspicacia «Baalís»; Jer 40:14. Perspicacia «Guedalías», núm. 4, e «Ismael», núm. 5, dicen que conspiró con Ismael
+  contra el gobernador.
+sources:
+- it-baalis
+- jeremias-40
+- it-guedalias
+- it-ismael
+- si-3
+links:
+- title: 'Perspicacia: «Baalís»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Baal%C3%ADs/
+  type: perspicacia
+- title: Jeremías 40 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/40/
+  type: bible
+not_claimed:
+- 'Que sea el Baalyishá que nombra una impresión de sello hallada en 1984 en Tell el-Umeiri, en Jordania: Perspicacia solo
+  lo da por posible.'
+relations:
+- type: holds_office
+  place: ammon
+  office: king
+  date:
+    from: -606
+    to: -606
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 607 a.e.c.
+  inferred: false
+  sources:
+  - jeremias-40
+  - it-baalis
+  reason: Jer 40:14 lo llama rey de los ammonitas.
+  checked_on: '2026-10-12'
+  status: verified
+- type: tie
+  person: ismael-hijo-de-netanias
+  word: ally
+  date:
+    from: -606
+    to: -606
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 607 a.e.c.
+  inferred: true
+  sources:
+  - jeremias-40
+  - it-ismael
+  - it-guedalias
+  reason: 'Jer 40:14: Baalís envió a Ismael; Perspicacia «Ismael», núm. 5, dice que los dos tramaron en secreto la muerte
+    de Guedalías.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

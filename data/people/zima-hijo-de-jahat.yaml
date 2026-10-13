@@ -1,0 +1,38 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: zima-hijo-de-jahat
+name: Zimá
+names:
+- name: Zimá
+perspicacia: '1200004735'
+summary: Levita guersonita, hijo de Jáhat y padre de Joá. Perspicacia ve posible que sea el Zimá de la línea de Asaf (1Cr
+  6:42).
+reason: Perspicacia «Zimá»; 1Cr 6:20.
+sources:
+- it-zima
+- 1-cronicas-6
+links:
+- title: 'Perspicacia: «Zimá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zim%C3%A1/
+  type: perspicacia
+relations:
+- type: kin
+  person: jahat-hijo-de-libni
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-6
+  reason: '1Cr 6:20: «su hijo Zimá», tras Jáhat.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: same_as
+  person: zima-hijo-de-simei
+  certainty: possible
+  inferred: true
+  sources:
+  - 1-cronicas-6
+  - it-zima
+  reason: 'Perspicacia «Zimá»: posiblemente es el mismo Zimá de 1Cr 6:42.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

@@ -1,0 +1,38 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: mesulam-hijo-de-zorobabel
+name: Mesulam
+names:
+- name: Mesulam
+perspicacia: 1200003014#9
+disambiguation: Mesulam hijo de Zorobabel (núm. 9 de Perspicacia); no el antepasado de Safán ni los otros Mesulam de Perspicacia.
+summary: El primero de los hijos de Zorobabel que nombra la lista; descendiente del rey David.
+reason: Perspicacia «Mesulam»; 1Cr 3:19, 20.
+sources:
+- it-mesulam
+- 1-cronicas-3
+links:
+- title: 'Perspicacia: «Mesulam»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Mesulam/
+  type: perspicacia
+relations:
+- type: kin
+  person: zorobabel
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-3
+  - it-mesulam
+  - it-zorobabel
+  reason: '1Cr 3:19, 20: uno de los hijos de Zorobabel.'
+  checked_on: '2026-10-12'
+  status: verified
+distinct_from:
+- mesulam-abuelo-de-safan
+- mesulam-hijo-de-hodavias
+- mesulam-hijo-de-mesilemit
+- mesulam-hijo-de-sefatias
+- salum-hijo-de-sadoc
+- mesulam-hijo-de-abihail
+- mesulam-hijo-de-elpaal
+checked_on: '2026-10-12'
+status: verified

@@ -30,6 +30,17 @@ names:
 - name: Puerta del Fundamento
   note: Puerta del templo, de sitio incierto, donde Jehoiadá puso a un tercio de la guardia el día de la coronación de Jehoás
     (2Re 11:6; Perspicacia «Puerta»).
+- name: Puerta Superior de Benjamín
+  note: Puerta del templo, probablemente hacia el patio interior por el norte, donde estaba el cepo en que Pasjur puso a Jeremías
+    (Jer 20:2; Perspicacia «Puerta»). No es la Puerta de Benjamín de la muralla.
+- name: Puerta nueva de Jehová
+  note: Puerta del templo donde se sentaron los príncipes para juzgar a Jeremías y donde Baruc leyó el rollo (Jer 26:10; 36:10).
+    Perspicacia «Puerta» ve posible que sea la puerta superior de Jotán.
+- name: Tercera entrada
+  note: Entrada de la casa de Jehová adonde Sedequías mandó llevar a Jeremías para hablarle a solas (Jer 38:14).
+- name: Era de Ornán
+  note: Así llama 1 Crónicas a la era de Arauna (1Cr 21:15-28; 22:1); Perspicacia «Ornán» dice que allí se levantó después
+    el templo.
 type: mountain
 lat: 31.777778
 lon: 35.235556
@@ -86,6 +97,17 @@ sources:
 - 2-reyes-12
 - 2-reyes-19
 - isaias-22
+- jeremias-7
+- jeremias-19
+- jeremias-20
+- jeremias-26
+- jeremias-28
+- jeremias-35
+- jeremias-36
+- jeremias-38
+- 1-cronicas-21
+- it-ornan
+- 1-cronicas-22
 links:
 - title: 'Perspicacia: «Moria»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Moria/
@@ -98,5 +120,5 @@ history:
 - date: '2026-09-29'
   change: Se añade el sacrificio de Isaac de Génesis 22, que Perspicacia «Abrahán» (párr. 17) y «Moria» ponen en este monte.
   source: genesis-22
-checked_on: '2026-09-30'
+checked_on: '2026-10-12'
 status: verified

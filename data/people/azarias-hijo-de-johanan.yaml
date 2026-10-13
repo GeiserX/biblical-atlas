@@ -1,0 +1,61 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: azarias-hijo-de-johanan
+name: Azarías
+names:
+- name: Azarías
+perspicacia: 1200000486#14
+disambiguation: Azarías hijo de Johanán (1Cr 6:9, 10); no es ninguno de los otros Azarías que numera Perspicacia «Azarías».
+distinct_from:
+- abednego
+- azarias-hijo-de-ahimaaz
+- azarias-hijo-de-etan
+- azarias-hijo-de-hilquias
+- azarias-hijo-de-jehohanan
+- azarias-hijo-de-jehu
+- azarias-hijo-de-natan
+- azarias-hijo-de-sadoc
+- azarias-hijo-de-sofonias
+- azarias-sacerdote-repatriado
+- jaazanias-jefe-militar
+- ocozias-de-juda
+- uzias
+summary: Sacerdote hijo de Johanán, que ejerció en el templo que levantó Salomón en Jerusalén. Perspicacia lo llama sumo sacerdote
+  y ve posible que echara del templo al rey Uzías.
+reason: Perspicacia «Azarías», núm. 14; 1Cr 6:9, 10.
+sources:
+- it-azarias
+- 1-cronicas-6
+links:
+- title: 'Perspicacia: «Azarías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Azar%C3%ADas/
+  type: perspicacia
+relations:
+- type: kin
+  person: johanan-hijo-de-azarias
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-6
+  reason: 1Cr 6:10 lo da como hijo de Johanán.
+  checked_on: '2026-10-12'
+  status: verified
+- type: holds_office
+  place: jerusalen
+  office: priest
+  inferred: false
+  sources:
+  - 1-cronicas-6
+  reason: '1Cr 6:10: ejerció de sacerdote en el templo que levantó Salomón en Jerusalén.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: holds_office
+  office: high_priest
+  inferred: true
+  sources:
+  - 1-cronicas-6
+  - it-azarias
+  reason: Perspicacia «Azarías», núm. 14, lo llama sumo sacerdote (1Cr 6:10).
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

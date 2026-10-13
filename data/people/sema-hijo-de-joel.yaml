@@ -1,0 +1,32 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: sema-hijo-de-joel
+name: Sema
+names:
+- name: Sema
+perspicacia: 1200003998#2
+disambiguation: Sema hijo de Joel (1Cr 5:8); no es ninguno de los otros Sema que numera Perspicacia «Sema».
+distinct_from:
+- sema-hijo-de-elpaal
+- sema-hijo-de-hebron
+summary: Rubenita, hijo de Joel y abuelo de Bela, el que vivía entre Aroer y Nebo.
+reason: Perspicacia «Sema», núm. 2; 1Cr 5:8.
+sources:
+- it-sema
+- 1-cronicas-5
+links:
+- title: 'Perspicacia: «Sema»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sema/
+  type: perspicacia
+relations:
+- type: kin
+  person: joel-el-rubenita
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-5
+  - it-joel
+  reason: '1Cr 5:8: «hijo de Joel»; Perspicacia «Joel», núm. 3, es el mismo Joel de 5:4.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

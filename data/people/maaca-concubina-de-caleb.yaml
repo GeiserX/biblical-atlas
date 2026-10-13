@@ -1,0 +1,29 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: maaca-concubina-de-caleb
+name: Maacá
+names:
+- name: Maacá
+perspicacia: 1200002803#3
+summary: Concubina de Caleb, el nieto de Pérez, en Judá. Le dio a Séber, Tirhaná, Sáaf y Sevá.
+reason: Perspicacia «Maacá», núm. 3; 1Cr 2:48, 49.
+sources:
+- it-maaca
+- 1-cronicas-2
+links:
+- title: 'Perspicacia: «Maacá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Maac%C3%A1/
+  type: perspicacia
+relations: []
+disambiguation: Maacá, concubina de Caleb hijo de Hezrón; no la madre de Absalón, ni la de Abiyam, ni el hijo de Nacor ni
+  el padre de Akís.
+distinct_from:
+- maaca-hijo-de-nacor
+- maaca-hija-de-talmai
+- maaca-padre-de-akis
+- maaca-hija-de-uriel
+- maaca-esposa-de-jeiel
+- maaca-esposa-de-makir
+- maaca-padre-de-hanan
+- maaca-padre-de-sefatias
+checked_on: '2026-10-12'
+status: verified

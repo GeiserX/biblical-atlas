@@ -11,6 +11,7 @@ distinct_from:
 - seba-hijo-de-joctan
 - seba-hijo-de-jocsan
 - seba-hijo-de-cus
+- seba-hijo-de-abihail
 summary: Benjaminita alborotador que, tras la rebelión de Absalón, arrastró a las tribus del norte contra David. Perseguido
   por Joab, se encerró en Abel de Bet-Maacá, cuyos vecinos le cortaron la cabeza.
 reason: Perspicacia «Seba», núm. 4; 2Sa 20:1-22.
@@ -53,5 +54,5 @@ relations:
   inferred: false
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

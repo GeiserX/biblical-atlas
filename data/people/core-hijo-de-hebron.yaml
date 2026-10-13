@@ -1,0 +1,32 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: core-hijo-de-hebron
+name: Coré
+names:
+- name: Coré
+perspicacia: 1200002648#2
+summary: Judaíta de la rama de Caleb; el primero de los cuatro hijos de Hebrón que da 1 Crónicas 2:43.
+reason: Perspicacia «Coré», núm. 2; 1Cr 2:43.
+sources:
+- it-core
+- 1-cronicas-2
+links:
+- title: 'Perspicacia: «Coré»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Cor%C3%A9/
+  type: perspicacia
+relations:
+- type: kin
+  person: hebron-hijo-de-maresa
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-2
+  reason: '1Cr 2:43: hijo de Hebrón.'
+  checked_on: '2026-10-12'
+  status: verified
+disambiguation: Coré hijo de Hebrón, de Judá; no Coré el levita rebelde, hijo de Izhar, ni Coré hijo de Esaú.
+distinct_from:
+- core-hijo-de-esau
+- core-hijo-de-izhar
+- core-padre-de-meselemias
+checked_on: '2026-10-12'
+status: verified

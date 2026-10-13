@@ -1,0 +1,31 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: samai-hijo-de-requem
+name: Samái
+names:
+- name: Samái
+perspicacia: 1200003943#2
+summary: Hijo de Réquem y padre de Maón, de la rama de Caleb en la tribu de Judá.
+reason: Perspicacia «Samai», núm. 2; 1Cr 2:44, 45.
+sources:
+- it-samai
+- 1-cronicas-2
+links:
+- title: 'Perspicacia: «Samai»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Samai/
+  type: perspicacia
+relations:
+- type: kin
+  person: requem-hijo-de-hebron
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-2
+  reason: '1Cr 2:44: Réquem fue padre de Samái.'
+  checked_on: '2026-10-12'
+  status: verified
+disambiguation: Samái hijo de Réquem, de la rama de Caleb; no Samái hijo de Onam, de la rama de Jerahmeel.
+distinct_from:
+- samai-hijo-de-onam
+- samai-hijo-de-mered
+checked_on: '2026-10-12'
+status: verified

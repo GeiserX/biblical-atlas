@@ -1,0 +1,20 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: semiramot-musico
+name: Semiramot
+names:
+- name: Semiramot
+perspicacia: 1200004008#1
+disambiguation: El músico de David; no el levita que Jehosafat envió a enseñar la Ley (Perspicacia «Semiramot», núm. 2).
+summary: Músico levita que tocó instrumento de cuerda cuando el Arca subió a Jerusalén y después quedó tocando delante de
+  la tienda donde la pusieron.
+reason: Perspicacia «Semiramot», núm. 1; 1Cr 15:18, 20; 16:5.
+sources:
+- it-semiramot
+- 1-cronicas-15
+- 1-cronicas-16
+links:
+- title: 'Perspicacia: «Semiramot»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Semiramot/
+  type: perspicacia
+checked_on: '2026-10-12'
+status: verified

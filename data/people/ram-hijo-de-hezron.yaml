@@ -15,6 +15,7 @@ sources:
 - rut-4
 - mateo-1
 - lucas-3
+- 1-cronicas-2
 links:
 - title: 'Perspicacia: «Ram»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ram/
@@ -28,10 +29,21 @@ relations:
   - rut-4
   - mateo-1
   - lucas-3
+  - 1-cronicas-2
   reason: Rut 4:19.
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: caleb-hijo-de-hezron
+  word: brother
+  inferred: false
+  sources:
+  - 1-cronicas-2
+  reason: '1Cr 2:9: Ram y Kelubái son hijos de Hezrón.'
+  checked_on: '2026-10-12'
   status: verified
 distinct_from:
 - ram-antepasado-de-elihu
-checked_on: '2026-09-29'
+- ram-hijo-de-jerahmeel
+checked_on: '2026-10-12'
 status: verified

@@ -1,0 +1,39 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: joha-descendiente-de-berias
+name: Johá
+names:
+- name: Johá
+perspicacia: 1200002487#2
+summary: Benjamita, hijo o descendiente de Berías, cabeza de una familia de Jerusalén.
+reason: Perspicacia «Johá», núm. 2; 1Cr 8:16, 28.
+sources:
+- it-joha
+- 1-cronicas-8
+links:
+- title: 'Perspicacia: «Johá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Joh%C3%A1/
+  type: perspicacia
+relations:
+- type: kin
+  person: berias-hijo-de-elpaal
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  - it-joha
+  reason: 1Cr 8:16 lo pone entre los hijos de Berías; Perspicacia «Johá» no precisa si era hijo o descendiente.
+  checked_on: '2026-10-12'
+  status: verified
+- type: lived_in
+  place: jerusalen
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  reason: '1Cr 8:28: los jefes de casas paternas de esta lista vivían en Jerusalén.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+disambiguation: Johá, benjamita de la casa de Berías; no el tizita, guerrero de David.
+distinct_from:
+- joha-el-tizita

@@ -1,0 +1,49 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: zebadias-hijo-de-asahel
+name: Zebadías
+names:
+- name: Zebadías
+perspicacia: 1200004670#4
+disambiguation: Zebadías hijo de Asahel, jefe de la cuarta división de David; no los benjaminitas, el portero coreíta ni los
+  levitas y sacerdotes de ese nombre.
+summary: Hijo de Asahel y sobrino de Joab. Mandó después de su padre la división que servía a David el cuarto mes.
+reason: Perspicacia «Zebadías», núm. 4; 1Cr 27:7.
+sources:
+- it-zebadias
+- it-asahel
+- 1-cronicas-27
+links:
+- title: 'Perspicacia: «Zebadías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zebad%C3%ADas/
+  type: perspicacia
+- title: 'Perspicacia: «Asahel»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Asahel/
+  type: perspicacia
+relations:
+- type: kin
+  person: asahel-hijo-de-zeruya
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-27
+  reason: '1Cr 27:7: Asahel, el hermano de Joab, y su hijo Zebadías.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: tie
+  person: david
+  word: master
+  inferred: false
+  sources:
+  - 1-cronicas-27
+  - it-zebadias
+  reason: '1Cr 27:7: mandó la cuarta división después de su padre. Perspicacia «Zebadías», núm. 4, ve dos lecturas: que le
+    sucedió al morir Asahel o que la división llevaba el nombre de este.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- zebadias-descendiente-de-berias
+- zebadias-descendiente-de-elpaal
+- zebadias-hijo-de-jeroham
+- zebadias-hijo-de-meselemias

@@ -1,0 +1,55 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: saharaim
+name: Saharaim
+names:
+- name: Saharaim
+perspicacia: '1200003929'
+summary: Benjamita que vivió un tiempo en Moab. Sus tres esposas conocidas le dieron muchos hijos, y algunos fueron cabezas
+  de familia.
+reason: Perspicacia «Saharaim»; 1Cr 8:8-11.
+sources:
+- it-saharaim
+- 1-cronicas-8
+links:
+- title: 'Perspicacia: «Saharaim»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Saharaim/
+  type: perspicacia
+relations:
+- type: lived_in
+  place: moab
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  - it-saharaim
+  reason: '1Cr 8:8: tuvo hijos en el territorio de Moab; Perspicacia «Saharaim» dice que residió allí un tiempo.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: husim-esposa-de-saharaim
+  word: wife
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  reason: '1Cr 8:8: Husim era una de sus esposas.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: baara
+  word: wife
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  reason: '1Cr 8:8: Baará era una de sus esposas.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: hodes
+  word: wife
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  reason: '1Cr 8:9: con su esposa Hodes tuvo siete hijos.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

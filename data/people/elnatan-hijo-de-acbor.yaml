@@ -1,0 +1,61 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: elnatan-hijo-de-acbor
+name: Elnatán
+names:
+- name: Elnatán
+perspicacia: null
+disambiguation: El hijo de Acbor que Jehoiaquim envió a Egipto; probablemente el mismo que el padre de Nehustá (elnatan-padre-de-nehusta).
+summary: Hijo de Acbor y príncipe de la corte de Jehoiaquim. Fue a Egipto a traer al profeta Uriya; años después oyó el rollo
+  de Baruc y rogó al rey que no lo quemara.
+reason: 'Jer 26:22, 23; 36:12, 25. Perspicacia «Elnatán» no le da número propio: lo nombra dentro del núm. 1 como posible
+  padre de Nehustá, y «Acbor», núm. 2, lo da por muy probable.'
+sources:
+- jeremias-26
+- it-elnatan
+- it-acbor
+- jeremias-36
+links:
+- title: 'Perspicacia: «Elnatán»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Elnat%C3%A1n/
+  type: perspicacia
+- title: Jeremías 36 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/36/
+  type: bible
+relations:
+- type: kin
+  person: acbor-hijo-de-micaya
+  word: father
+  sources:
+  - jeremias-26
+  - it-acbor
+  - jeremias-36
+  reason: 'Jer 26:22: Elnatán hijo de Acbor. Perspicacia «Acbor», núm. 2, hace a este Acbor hijo de Micaya y oficial de Josías.'
+  inferred: false
+  checked_on: '2026-10-12'
+  status: verified
+- type: tie
+  person: jehoiaquim
+  word: master
+  inferred: true
+  sources:
+  - jeremias-26
+  - jeremias-36
+  - it-acbor
+  reason: 'Jer 26:22: el rey Jehoiaquim lo envía a Egipto con otros hombres para traer a Uriya, y se lo entregan.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: same_as
+  person: elnatan-padre-de-nehusta
+  certainty: probable
+  inferred: true
+  sources:
+  - it-elnatan
+  - jeremias-26
+  - it-acbor
+  - jeremias-36
+  reason: Perspicacia «Elnatán», núm. 1, dice que quizás el padre de Nehustá sea este hijo de Acbor (Jer 26:22, 23); «Acbor»,
+    núm. 2, hace a Acbor con mucha probabilidad bisabuelo del rey Joaquín.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

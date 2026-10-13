@@ -1,0 +1,43 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+title: Los gaditas de Basán se inscriben en el registro genealógico
+date:
+  from: -843
+  to: -761
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre c. 844 y 762 a.e.c. (tiempo narrativo: en los días de Jeroboán II de Israel y de Jotán de Judá)'
+narrative_order:
+  series: 1-cronicas
+  order: 5017
+places:
+- basan
+- galaad
+people:
+- miguel-hijo-de-abihail
+- mesulam-hijo-de-abihail
+- seba-hijo-de-abihail
+- jorai
+- jacan
+- zia
+- eber-hijo-de-abihail
+- abihail-hijo-de-huri
+- ahi-hijo-de-abdiel
+present: []
+roles: {}
+passages:
+- 1Cr 5:17
+summary: Las familias de Gad que vivían en Galaad y Basán quedan registradas por su linaje en los días de Jeroboán II y de
+  Jotán. Perspicacia ve ahí dos registros distintos.
+reason: '1Cr 5:17. Jeroboán II reinó c. 844-803 y Jotán 777-762 (periodos jeroboan-ii y jotan, tabla A6); Perspicacia «Mesulam»,
+  núm. 2, dice que no coincidieron. El texto no dice dónde: nadie queda situado.'
+sources:
+- 1-cronicas-5
+- tnm-a6-b
+- tnm-a6-a
+- it-mesulam
+- it-miguel
+checked_on: '2026-10-12'
+status: verified
+id: los-gaditas-se-inscriben-en-el-registro-genealogico

@@ -22,6 +22,55 @@ sources:
 - jeremias-52
 - tnm-tabla
 - si-3
+- si-jeremias
+- jeremias-2
+- jeremias-3
+- jeremias-4
+- jeremias-5
+- jeremias-6
+- jeremias-7
+- jeremias-8
+- jeremias-9
+- jeremias-10
+- jeremias-11
+- jeremias-12
+- jeremias-13
+- jeremias-14
+- jeremias-15
+- jeremias-16
+- jeremias-17
+- jeremias-18
+- jeremias-19
+- jeremias-20
+- jeremias-21
+- jeremias-22
+- jeremias-23
+- jeremias-24
+- jeremias-25
+- jeremias-26
+- jeremias-27
+- jeremias-28
+- jeremias-29
+- jeremias-30
+- jeremias-31
+- jeremias-32
+- jeremias-33
+- jeremias-34
+- jeremias-35
+- jeremias-36
+- jeremias-37
+- jeremias-38
+- jeremias-39
+- jeremias-40
+- jeremias-42
+- jeremias-43
+- jeremias-44
+- jeremias-45
+- jeremias-46
+- jeremias-47
+- jeremias-49
+- jeremias-50
+- jeremias-51
 links:
 - title: 'Perspicacia: «Jeremías»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jerem%C3%ADas/
@@ -36,10 +85,201 @@ relations:
   sources:
   - it-jeremias
   - jeremias-1
+  - jeremias-11
+  - it-anatot
+  - jeremias-29
   reason: Jer 1:1 lo presenta entre los sacerdotes de Anatot.
-  checked_on: '2026-09-28'
+  checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-09-30'
+- type: kin
+  person: hilquias-padre-de-jeremias
+  word: father
+  sources:
+  - jeremias-1
+  - it-jeremias
+  reason: Jer 1:1 lo llama hijo de Hilquías; Perspicacia «Jeremías», núm. 6, lo repite.
+  inferred: false
+  checked_on: '2026-10-12'
+  status: verified
+- type: holds_office
+  office: prophet
+  date:
+    from: -646
+    to: -579
+    precision: range
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 647-580 a.e.c.
+  sources:
+  - jeremias-1
+  - it-jeremias
+  - si-3
+  - tnm-tabla
+  - jeremias-11
+  - jeremias-15
+  - jeremias-20
+  - jeremias-25
+  - jeremias-26
+  - jeremias-28
+  - jeremias-29
+  - jeremias-32
+  - jeremias-34
+  - jeremias-36
+  - jeremias-37
+  - jeremias-38
+  - jeremias-42
+  - jeremias-43
+  - jeremias-45
+  - jeremias-46
+  - jeremias-47
+  - jeremias-49
+  - jeremias-50
+  - jeremias-51
+  reason: 'Jer 1:5: Jehová lo hizo profeta para las naciones; 1:2, 3 sitúan su obra desde el año 13 de Josías. El estudio
+    3 fecha la comisión en 647 y la Tabla cierra su libro en 580.'
+  inferred: false
+  checked_on: '2026-10-12'
+  status: verified
+- type: holds_office
+  office: priest
+  place: anatot
+  inferred: true
+  sources:
+  - si-jeremias
+  - jeremias-1
+  reason: '«Toda Escritura», libro 24, párr. 5: además de profeta fue sacerdote, por nacer hijo del sacerdote Hilquías de
+    Anatot (Jer 1:1).'
+  checked_on: '2026-10-12'
+  status: verified
+- type: lived_in
+  place: jerusalen
+  inferred: true
+  sources:
+  - si-jeremias
+  - jeremias-2
+  - jeremias-21
+  - jeremias-22
+  - jeremias-32
+  - it-prision
+  - jeremias-33
+  - jeremias-34
+  - jeremias-37
+  - jeremias-38
+  - jeremias-39
+  reason: '«Toda Escritura», libro 24, párr. 2: profetizó en Jerusalén unos 40 años. Jer 2:1, 2 lo manda a hablar a oídos
+    de Jerusalén.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: salum-tio-de-jeremias
+  word: uncle
+  sources:
+  - jeremias-32
+  - it-salum
+  reason: 'Jer 32:7: Salum es su tío; la nota precisa que era tío por parte de padre, como Perspicacia «Salum», núm. 10.'
+  inferred: false
+  checked_on: '2026-10-12'
+  status: verified
+- type: tie
+  person: sedequias
+  word: custodian
+  date:
+    from: -608
+    to: -606
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 609 y 607 a.e.c. (tiempo narrativo: desde que Sedequías lo pone en el Patio de la Guardia hasta la toma de
+      Jerusalén)'
+  sources:
+  - jeremias-32
+  - it-salum
+  - it-prision
+  - si-3
+  - jeremias-33
+  - jeremias-37
+  - jeremias-38
+  - jeremias-39
+  reason: 'Jer 32:2, 3: Sedequías lo tenía preso en el Patio de la Guardia. Lo puso allí tras la retirada de los caldeos (Jer
+    37:21) y allí siguió hasta la toma de 607 (Jer 38:28).'
+  inferred: false
+  checked_on: '2026-10-12'
+  status: verified
+- type: tie
+  person: guedalias
+  word: host
+  date:
+    from: -606
+    to: -606
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 607 a.e.c.
+  inferred: false
+  sources:
+  - jeremias-39
+  - jeremias-40
+  - it-guedalias
+  reason: 'Jer 39:14: lo entregan a Guedalías para que lo lleve a su casa; Jer 40:6: se queda a vivir con él en Mizpá.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: tie
+  person: nebuzaradan
+  word: custodian
+  date:
+    from: -606
+    to: -606
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 607 a.e.c.
+  inferred: false
+  sources:
+  - jeremias-40
+  - jeremias-39
+  - it-nebuzaradan
+  reason: 'Jer 39:11, 12 y 40:1-4: el rey le manda cuidar de él; lo había llevado esposado hasta Ramá y allí lo suelta.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: lived_in
+  place: mizpa-de-benjamin
+  date:
+    from: -606
+    to: -606
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 607 a.e.c.
+  inferred: false
+  sources:
+  - jeremias-40
+  - it-guedalias
+  reason: 'Jer 40:6: se va con Guedalías a Mizpá y se queda a vivir allí entre la gente que quedaba.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: lived_in
+  place: egipto
+  sources:
+  - jeremias-43
+  - it-tahpanhes
+  - jeremias-44
+  - si-jeremias
+  reason: 'Jer 43:6-8: el resto se lo lleva a Egipto, y en Tahpanhés recibe la palabra de Jehová.'
+  inferred: false
+  checked_on: '2026-10-12'
+  status: verified
+perspicacia: 1200002421#6
+checked_on: '2026-10-12'
 status: verified
 distinct_from:
 - jeremias-de-libna
+- jeremias-hijo-de-habazinias
+- jeremias-de-manases
+- jeremias-el-benjaminita
+- jeremias-quinto-gadita
+- jeremias-decimo-gadita

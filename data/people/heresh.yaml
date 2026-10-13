@@ -1,0 +1,27 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: heresh
+name: Héresh
+names:
+- name: Héresh
+perspicacia: '1200001994'
+summary: Levita nombrado entre los que regresaron de Babilonia; residió en Jerusalén.
+reason: Perspicacia «Héresh»; 1Cr 9:15.
+sources:
+- it-heresh
+- 1-cronicas-9
+links:
+- title: 'Perspicacia: «Héresh»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/H%C3%A9resh/
+  type: perspicacia
+relations:
+- type: lived_in
+  place: jerusalen
+  inferred: false
+  sources:
+  - 1-cronicas-9
+  - it-heresh
+  reason: '1Cr 9:15, 34: de los jefes de los levitas que vivían en Jerusalén.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

@@ -1,0 +1,39 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: pelet-hijo-de-azmavet
+name: Pélet
+names:
+- name: Pélet
+perspicacia: 1200003422#2
+summary: Benjaminita ambidextro, hijo de Azmávet, que se unió a David en Ziclag.
+reason: Perspicacia «Pélet», núm. 2; 1Cr 12:3.
+sources:
+- it-pelet
+- 1-cronicas-12
+links:
+- title: 'Perspicacia: «Pélet»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/P%C3%A9let/
+  type: perspicacia
+disambiguation: Pélet hijo de Azmávet, benjaminita con David (1Cr 12:3); no el hijo de Jahdái de la línea de Caleb.
+relations:
+- type: kin
+  person: azmavet-padre-de-jeziel
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-12
+  reason: '1Cr 12:3: Jeziel y Pélet, hijos de Azmávet.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: tie
+  person: david
+  word: master
+  inferred: false
+  sources:
+  - 1-cronicas-12
+  reason: '1Cr 12:3: se unió a David y lo apoyó en la guerra.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- pelet-hijo-de-jahdai

@@ -30,7 +30,7 @@ Qué versículos de la TNM se han leído y apuntado en `data/coverage/<libro>.ya
 | [2 Samuel](https://github.com/GeiserX/biblical-atlas/blob/main/data/coverage/2-samuel.yaml) | 24 de 24 | 695 de 695 | 100 % |
 | [1 Reyes](https://github.com/GeiserX/biblical-atlas/blob/main/data/coverage/1-reyes.yaml) | 22 de 22 | 816 de 816 | 100 % |
 | [2 Reyes](https://github.com/GeiserX/biblical-atlas/blob/main/data/coverage/2-reyes.yaml) | 25 de 25 | 719 de 719 | 100 % |
-| 1 Crónicas | 0 de 29 | 0 de 942 | 0 % |
+| [1 Crónicas](https://github.com/GeiserX/biblical-atlas/blob/main/data/coverage/1-cronicas.yaml) | 26 de 29 | 942 de 942 | 100 % |
 | 2 Crónicas | 0 de 36 | 0 de 822 | 0 % |
 | Esdras | 0 de 10 | 0 de 280 | 0 % |
 | Nehemías | 0 de 13 | 0 de 406 | 0 % |
@@ -41,7 +41,7 @@ Qué versículos de la TNM se han leído y apuntado en `data/coverage/<libro>.ya
 | [Eclesiastés](https://github.com/GeiserX/biblical-atlas/blob/main/data/coverage/eclesiastes.yaml) | 12 de 12 | 222 de 222 | 100 % |
 | [El Cantar de los Cantares](https://github.com/GeiserX/biblical-atlas/blob/main/data/coverage/cantar-de-los-cantares.yaml) | 8 de 8 | 117 de 117 | 100 % |
 | [Isaías](https://github.com/GeiserX/biblical-atlas/blob/main/data/coverage/isaias.yaml) | 66 de 66 | 1292 de 1292 | 100 % |
-| Jeremías | 0 de 52 | 0 de 1364 | 0 % |
+| [Jeremías](https://github.com/GeiserX/biblical-atlas/blob/main/data/coverage/jeremias.yaml) | 52 de 52 | 1364 de 1364 | 100 % |
 | Lamentaciones | 0 de 5 | 0 de 154 | 0 % |
 | Ezequiel | 0 de 48 | 0 de 1273 | 0 % |
 | Daniel | 0 de 12 | 0 de 357 | 0 % |
@@ -69,8 +69,8 @@ Qué versículos de la TNM se han leído y apuntado en `data/coverage/<libro>.ya
 | [Efesios](https://github.com/GeiserX/biblical-atlas/blob/main/data/coverage/efesios.yaml) | 6 de 6 | 155 de 155 | 100 % |
 | [Filipenses](https://github.com/GeiserX/biblical-atlas/blob/main/data/coverage/filipenses.yaml) | 4 de 4 | 104 de 104 | 100 % |
 | [Colosenses](https://github.com/GeiserX/biblical-atlas/blob/main/data/coverage/colosenses.yaml) | 4 de 4 | 95 de 95 | 100 % |
-| 1 Tesalonicenses | 0 de 5 | 0 de 89 | 0 % |
-| 2 Tesalonicenses | 0 de 3 | 0 de 47 | 0 % |
+| [1 Tesalonicenses](https://github.com/GeiserX/biblical-atlas/blob/main/data/coverage/1-tesalonicenses.yaml) | 5 de 5 | 89 de 89 | 100 % |
+| [2 Tesalonicenses](https://github.com/GeiserX/biblical-atlas/blob/main/data/coverage/2-tesalonicenses.yaml) | 3 de 3 | 47 de 47 | 100 % |
 | 1 Timoteo | 0 de 6 | 0 de 113 | 0 % |
 | 2 Timoteo | 0 de 4 | 0 de 83 | 0 % |
 | Tito | 0 de 3 | 0 de 46 | 0 % |
@@ -84,8 +84,10 @@ Qué versículos de la TNM se han leído y apuntado en `data/coverage/<libro>.ya
 | 3 Juan | 0 de 1 | 0 de 14 | 0 % |
 | Judas | 0 de 1 | 0 de 25 | 0 % |
 | Apocalipsis | 0 de 22 | 0 de 404 | 0 % |
-| **Total** | 896 de 1189 | 23756 de 31062 | 76 % |
+| **Total** | 982 de 1189 | 26198 de 31062 | 84 % |
 
 ## Capítulos empezados
 
-Ninguno.
+- 1 Crónicas 19: faltan ninguno (falta marcarlo completo)
+- 1 Crónicas 24: faltan ninguno (falta marcarlo completo)
+- 1 Crónicas 25: faltan ninguno (falta marcarlo completo)

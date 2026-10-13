@@ -11,6 +11,7 @@ reason: Perspicacia «Ahió», núm. 3; 2Sa 6:3, 4, con su paralelo 1Cr 13:7-10.
 sources:
 - it-ahio
 - 2-samuel-6
+- 1-cronicas-13
 links:
 - title: 'Perspicacia: «Ahió»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ahi%C3%B3/
@@ -32,9 +33,13 @@ relations:
   sources:
   - 2-samuel-6
   - it-ahio
+  - 1-cronicas-13
   reason: '2Sa 6:2-4: el Arca sale de la casa de su padre en Baale-Judá; Perspicacia «Ahió», núm. 3, lo da como natural de
     Quiryat-jearim.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified
+distinct_from:
+- ahio-hijo-de-berias
+- ahio-hijo-de-jeiel

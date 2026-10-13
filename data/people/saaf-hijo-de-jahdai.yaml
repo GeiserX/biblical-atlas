@@ -1,0 +1,30 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: saaf-hijo-de-jahdai
+name: Sáaf
+names:
+- name: Sáaf
+perspicacia: 1200003921#2
+summary: Último de los seis hijos de Jahdái, contados entre los descendientes de Caleb hijo de Hezrón.
+reason: Perspicacia «Sáaf», núm. 2; 1Cr 2:47.
+sources:
+- it-saaf
+- 1-cronicas-2
+links:
+- title: 'Perspicacia: «Sáaf»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/S%C3%A1af/
+  type: perspicacia
+relations:
+- type: kin
+  person: jahdai
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-2
+  reason: '1Cr 2:47: uno de los hijos de Jahdái.'
+  checked_on: '2026-10-12'
+  status: verified
+disambiguation: Sáaf hijo de Jahdái; no Sáaf hijo de Caleb y de Maacá, el padre de Madmaná.
+distinct_from:
+- saaf-hijo-de-caleb
+checked_on: '2026-10-12'
+status: verified

@@ -10,11 +10,15 @@ distinct_from:
 - elisama-hijo-de-amihud
 - elisua
 - elisama-abuelo-de-ismael
+- elisama-secretario
+- elisama-hijo-de-jecamias
 summary: Hijo de David nacido en Jerusalén, casi al final de la lista de 2Sa 5:14-16.
 reason: 'Perspicacia «Elisamá», núm. 4; 2Sa 5:16. En Crónicas: 1Cr 3:8 y 14:7.'
 sources:
 - it-elisama
 - 2-samuel-5
+- 1-cronicas-3
+- 1-cronicas-14
 links:
 - title: 'Perspicacia: «Elisamá»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Elisam%C3%A1/
@@ -26,16 +30,20 @@ relations:
   inferred: false
   sources:
   - 2-samuel-5
+  - 1-cronicas-3
+  - 1-cronicas-14
   reason: '2Sa 5:13-16: uno de los hijos que David tuvo en Jerusalén.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: born_in
   place: jerusalen
   inferred: false
   sources:
   - 2-samuel-5
+  - 1-cronicas-3
+  - 1-cronicas-14
   reason: '2Sa 5:13-16: nació en Jerusalén, después de que David dejara Hebrón.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-09-30'
+checked_on: '2026-10-12'
 status: verified

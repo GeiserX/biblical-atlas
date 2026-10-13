@@ -7,6 +7,9 @@ perspicacia: 1200002401#2
 disambiguation: El profeta hijo de Hananí; no Jehú, el rey de Israel hijo de Jehosafat, ni los demás Jehú de Perspicacia.
 distinct_from:
 - jehu-de-israel
+- jehu-hijo-de-obed
+- jehu-hijo-de-josibias
+- jehu-el-anatotita
 summary: Profeta, hijo de Hananí. Anunció a Baasá que su casa acabaría como la de Jeroboán. Un profeta de su nombre, quizá
   él mismo, reprendió después a Jehosafat por ayudar a Acab.
 reason: Perspicacia «Jehú», núm. 2; 1Re 16:1-7, 12.
@@ -41,5 +44,5 @@ relations:
   reason: 1Re 16:7 lo llama el profeta Jehú.
   checked_on: '2026-09-30'
   status: verified
-checked_on: '2026-09-30'
+checked_on: '2026-10-12'
 status: verified

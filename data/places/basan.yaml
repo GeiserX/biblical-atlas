@@ -39,6 +39,7 @@ sources:
 - 1-reyes-4
 - 2-reyes-10
 - isaias-33
+- 1-cronicas-5
 links:
 - title: 'Perspicacia: «Basán»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Bas%C3%A1n/
@@ -55,5 +56,5 @@ links:
 - title: Salmo 136 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/salmos/136/
   type: bible
-checked_on: '2026-09-30'
+checked_on: '2026-10-12'
 status: verified

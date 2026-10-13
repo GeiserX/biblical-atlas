@@ -1,0 +1,36 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: mirma
+name: Mirmá
+names:
+- name: Mirmá
+perspicacia: '1200003075'
+summary: Benjamita, hijo de Saharaim y Hodes, cabeza de una casa paterna.
+reason: Perspicacia «Mirmá»; 1Cr 8:1, 8-10.
+sources:
+- it-mirma
+- 1-cronicas-8
+links:
+- title: 'Perspicacia: «Mirmá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Mirm%C3%A1/
+  type: perspicacia
+relations:
+- type: kin
+  person: saharaim
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  reason: 1Cr 8:9, 10 lo cuenta entre los hijos de Saharaim.
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: hodes
+  word: mother
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  reason: '1Cr 8:9: su madre fue Hodes.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

@@ -1,0 +1,27 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: isod
+name: Isod
+names:
+- name: Isod
+perspicacia: '1200002212'
+summary: Manasita, hijo de Hamoléket, la hermana de Galaad.
+reason: Perspicacia «Isod»; 1Cr 7:14, 18.
+sources:
+- it-isod
+- 1-cronicas-7
+links:
+- title: 'Perspicacia: «Isod»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Isod/
+  type: perspicacia
+relations:
+- type: kin
+  person: hamoleket
+  word: mother
+  inferred: false
+  sources:
+  - 1-cronicas-7
+  reason: '1Cr 7:18: su madre fue Hamoléket.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

@@ -1,0 +1,42 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: zabad-hijo-de-ahlai
+name: Zabad
+names:
+- name: Zabad
+perspicacia: 1200004643#3
+disambiguation: Zabad hijo de Ahlái, guerrero de David (1Cr 11:41); no el efraimita, el de la línea de Jerahmeel ni el que
+  mató a Jehoás.
+distinct_from:
+- jozacar
+- zabad-hijo-de-tahat
+- zabad-hijo-de-natan
+summary: Hijo de Ahlái y uno de los guerreros poderosos de David.
+reason: Perspicacia «Zabad», núm. 3; 1Cr 11:41.
+sources:
+- it-zabad
+- 1-cronicas-11
+links:
+- title: 'Perspicacia: «Zabad»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zabad/
+  type: perspicacia
+relations:
+- type: kin
+  person: ahlai-padre-de-zabad
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-11
+  reason: '1Cr 11:41: Zabad hijo de Ahlái.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: tie
+  person: david
+  word: master
+  inferred: false
+  sources:
+  - 1-cronicas-11
+  reason: '1Cr 11:41: figura entre los valientes de David.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

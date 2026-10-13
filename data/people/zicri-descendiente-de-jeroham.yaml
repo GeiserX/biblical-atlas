@@ -1,0 +1,45 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: zicri-descendiente-de-jeroham
+name: Zicrí
+names:
+- name: Zicrí
+perspicacia: 1200004728#4
+disambiguation: Zicrí de la casa de Jeroham; no los Zicrí de las casas de Simeí y de Sasac, el levita hijo de Izhar ni los
+  demás Zicrí.
+distinct_from:
+- zicri-descendiente-de-sasac
+- zicri-descendiente-de-simei
+- zicri-hijo-de-izhar
+- zicri-hijo-de-asaf
+- zicri-descendiente-de-eliezer
+- zicri-padre-de-eliezer
+summary: Benjamita, hijo o descendiente de Jeroham, cabeza de familia en Jerusalén.
+reason: Perspicacia «Zicrí», núm. 4; 1Cr 8:27, 28.
+sources:
+- it-zicri
+- 1-cronicas-8
+links:
+- title: 'Perspicacia: «Zicrí»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zicr%C3%AD/
+  type: perspicacia
+relations:
+- type: kin
+  person: jeroham-padre-de-samserai
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  - it-zicri
+  reason: 1Cr 8:27 lo pone entre los hijos de Jeroham; Perspicacia «Zicrí» no precisa si era hijo o descendiente.
+  checked_on: '2026-10-12'
+  status: verified
+- type: lived_in
+  place: jerusalen
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  reason: '1Cr 8:28: los jefes de casas paternas de esta lista vivían en Jerusalén.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

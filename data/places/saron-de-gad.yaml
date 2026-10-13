@@ -1,0 +1,55 @@
+# biblical-atlas: un fichero por lugar. Esquema en docs/investigacion/README.md.
+name: Sarón
+names:
+- name: Sarón
+type: region
+lat: null
+lon: null
+precision: zone
+coord_source: null
+coord_url: null
+candidates:
+- name: Tierras de Gad, al este del Jordán
+  geometry:
+    type: zone
+    lat: 32.047428
+    lon: 35.662695
+    radius_km: 35
+  status: favored_level_1
+  sources:
+  - it-saron
+  - openbible-geo
+  reason: 'Perspicacia «Sarón», núm. 2: Gad vivía al este del Jordán, con Galaad y Basán, y muchos creen que allí había otra
+    región llamada Sarón.'
+  note: Centro y radio de la zona de la ficha gad.
+  coord_source: calculation
+  checked_on: '2026-10-12'
+- name: La llanura costera de Sarón
+  geometry:
+    type: point
+    lat: 32.4
+    lon: 34.883
+  status: alternative
+  sources:
+  - it-saron
+  - openbible-geo
+  reason: 'Perspicacia «Sarón», núm. 2: algunos creen que los gaditas llevaban sus rebaños a la llanura de la costa.'
+  note: Punto de la ficha llanura-de-saron.
+  coord_source: openbible:a83fd43
+  coord_url: https://www.openbible.info/geo/ancient/a83fd43/sharon-1
+  checked_on: '2026-10-12'
+coord_note: 'Sin punto: jw.org no la sitúa; solo dice que estaba, al parecer, en tierras de Gad.'
+summary: Campos de pasto donde vivían los gaditas, junto con Galaad y Basán. Como Gad estaba al este del Jordán, muchos creen
+  que era una región de ese lado, no la llanura de la costa.
+reason: Perspicacia «Sarón», núm. 2; 1Cr 5:16.
+sources:
+- it-saron
+- openbible-geo
+- 1-cronicas-5
+links:
+- title: 'Perspicacia: «Sarón»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sar%C3%B3n/
+  type: perspicacia
+checked_on: '2026-10-12'
+status: verified
+id: saron-de-gad

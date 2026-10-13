@@ -1,0 +1,27 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: maaz
+name: Maaz
+names:
+- name: Maaz
+perspicacia: '1200002813'
+summary: Judaíta, primer hijo de Ram, que a su vez era el mayor de los hijos de Jerahmeel.
+reason: Perspicacia «Maaz»; 1Cr 2:27.
+sources:
+- it-maaz
+- 1-cronicas-2
+links:
+- title: 'Perspicacia: «Maaz»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Maaz/
+  type: perspicacia
+relations:
+- type: kin
+  person: ram-hijo-de-jerahmeel
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-2
+  reason: '1Cr 2:27: hijo de Ram, el primogénito de Jerahmeel.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

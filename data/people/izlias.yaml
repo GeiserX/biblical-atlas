@@ -1,0 +1,36 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: izlias
+name: Izlías
+names:
+- name: Izlías
+perspicacia: '1200002253'
+summary: Benjamita, hijo o descendiente de Elpaal, jefe que vivía en Jerusalén.
+reason: Perspicacia «Izlías»; 1Cr 8:18, 28.
+sources:
+- it-izlias
+- 1-cronicas-8
+links:
+- title: 'Perspicacia: «Izlías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Izl%C3%ADas/
+  type: perspicacia
+relations:
+- type: kin
+  person: elpaal
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  - it-izlias
+  reason: 1Cr 8:18 lo pone entre los hijos de Elpaal; Perspicacia «Izlías» no precisa si era hijo o descendiente.
+  checked_on: '2026-10-12'
+  status: verified
+- type: lived_in
+  place: jerusalen
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  reason: '1Cr 8:28: los jefes de casas paternas de esta lista vivían en Jerusalén.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

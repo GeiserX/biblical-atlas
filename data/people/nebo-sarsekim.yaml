@@ -1,0 +1,47 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: nebo-sarsekim
+name: Nebo-Sarsekim
+names:
+- name: Nebo-Sarsekim
+- name: Sarsekim
+  note: Así lo llama Perspicacia, que sigue la otra división del texto hebreo que recoge la nota al pie de Jer 39:3.
+perspicacia: '1200003844'
+date:
+  from: -606
+  to: -606
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 607 a.e.c.
+summary: Príncipe babilonio con el título de rabsarís, el jefe de los funcionarios de la corte. Entró en Jerusalén entre los
+  primeros cuando el ejército abrió brecha en la muralla, en el verano de 607 a.e.c.
+reason: Jer 39:3 y su nota al pie; Perspicacia «Sarsekim» y «Rabsarís». La nota de Jer 39:13 explica el título.
+sources:
+- it-sarsekim
+- it-rabsaris
+- jeremias-39
+- si-3
+links:
+- title: 'Perspicacia: «Sarsekim»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sarsekim/
+  type: perspicacia
+- title: 'Perspicacia: «Rabsarís»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Rabsar%C3%ADs/
+  type: perspicacia
+- title: Jeremías 39 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/39/
+  type: bible
+relations:
+- type: tie
+  person: nabucodonosor-ii
+  word: master
+  inferred: false
+  sources:
+  - jeremias-39
+  - it-sarsekim
+  reason: Jer 39:3 lo cuenta entre los príncipes del rey de Babilonia, que Jer 39:1 llama Nabucodonosor.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

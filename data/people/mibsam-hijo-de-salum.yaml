@@ -1,0 +1,31 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: mibsam-hijo-de-salum
+name: Mibsam
+names:
+- name: Mibsam
+perspicacia: 1200003029#2
+disambiguation: Mibsam simeonita (núm. 2 de Perspicacia); no el hijo de Ismael.
+summary: Descendiente de Simeón, hijo de Salum y padre de Mismá.
+reason: Perspicacia «Mibsam»; 1Cr 4:25.
+sources:
+- it-mibsam
+- 1-cronicas-4
+links:
+- title: 'Perspicacia: «Mibsam»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Mibsam/
+  type: perspicacia
+relations:
+- type: kin
+  person: salum-hijo-de-shaul
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-4
+  - it-mibsam
+  reason: '1Cr 4:25: Salum fue padre de Mibsam.'
+  checked_on: '2026-10-12'
+  status: verified
+distinct_from:
+- mibsam-hijo-de-ismael
+checked_on: '2026-10-12'
+status: verified

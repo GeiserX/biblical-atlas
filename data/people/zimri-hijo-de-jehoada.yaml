@@ -1,0 +1,36 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: zimri-hijo-de-jehoada
+name: Zimrí
+names:
+- name: Zimrí
+perspicacia: 1200004737#4
+disambiguation: Zimrí hijo de Jehoadá, de la casa de Saúl; no Zimrí hijo de Salu, el simeonita, ni Zimrí, el rey de siete
+  días.
+distinct_from:
+- zimri-de-israel
+- zimri-hijo-de-salu
+- zimri-hijo-de-zerah
+summary: Descendiente de Saúl y de Jonatán, padre de Mozá. Hay quien cree que es el Zimrí que reinó siete días, pero Perspicacia
+  solo recoge esa opinión.
+reason: Perspicacia «Zimrí», núm. 4; 1Cr 8:33-36.
+sources:
+- it-zimri
+- 1-cronicas-8
+- 1-cronicas-9
+links:
+- title: 'Perspicacia: «Zimrí»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zimr%C3%AD/
+  type: perspicacia
+relations:
+- type: kin
+  person: jehoada
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  - 1-cronicas-9
+  reason: 1Cr 8:36 lo da como hijo de Jehoadá.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

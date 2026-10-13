@@ -1,0 +1,29 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ohel
+name: Ohel
+names:
+- name: Ohel
+perspicacia: '1200003308'
+summary: Hijo del gobernador Zorobabel y, por tanto, descendiente de David.
+reason: Perspicacia «Ohel»; 1Cr 3:19, 20.
+sources:
+- it-ohel
+- 1-cronicas-3
+links:
+- title: 'Perspicacia: «Ohel»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ohel/
+  type: perspicacia
+relations:
+- type: kin
+  person: zorobabel
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-3
+  - it-ohel
+  - it-zorobabel
+  reason: '1Cr 3:19, 20: uno de los hijos de Zorobabel.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

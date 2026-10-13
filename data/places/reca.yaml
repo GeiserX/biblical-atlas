@@ -1,0 +1,25 @@
+# biblical-atlas: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: reca
+name: Recá
+names:
+- name: Recá
+type: city
+lat: 31.704306
+lon: 35.207639
+precision: zone
+coord_source: openbible:a53c3ce
+coord_url: https://www.openbible.info/geo/ancient/a53c3ce/recah
+coord_note: Punto de OpenBible para un círculo de 5 km alrededor de Belén, el mismo punto de Belén. Perspicacia no la sitúa.
+summary: Al parecer, un lugar del territorio de Judá; sale en la genealogía de la tribu, con los hombres de la línea de Kelub.
+  No se sabe dónde estaba.
+reason: 'Perspicacia «Recá»; 1Cr 4:12. Coordenada de OpenBible: solo tomamos el punto.'
+sources:
+- it-reca
+- openbible-geo
+- 1-cronicas-4
+links:
+- title: 'Perspicacia: «Recá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Rec%C3%A1/
+  type: perspicacia
+checked_on: '2026-10-12'
+status: verified

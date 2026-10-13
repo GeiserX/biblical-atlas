@@ -1,0 +1,61 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: salum-hijo-de-sadoc
+name: Salum
+names:
+- name: Salum
+- name: Mesulam
+  note: Otro nombre suyo en otros pasajes, según Perspicacia «Salum», núm. 7, y «Mesulam», núm. 4.
+perspicacia: 1200003933#7
+disambiguation: Salum hijo de Sadoc (1Cr 6:12, 13); no es ninguno de los otros Salum que numera Perspicacia «Salum».
+distinct_from:
+- jehoacaz-de-juda
+- mesulam-abuelo-de-safan
+- mesulam-hijo-de-abihail
+- mesulam-hijo-de-elpaal
+- mesulam-hijo-de-hodavias
+- mesulam-hijo-de-mesilemit
+- mesulam-hijo-de-sefatias
+- mesulam-hijo-de-zorobabel
+- salum-de-israel
+- salum-hijo-de-shaul
+- salum-hijo-de-sismai
+- salum-hijo-de-ticva
+- salum-jefe-de-los-porteros
+- silem
+- salum-padre-de-maaseya
+- salum-tio-de-jeremias
+summary: Sacerdote de la línea de los sumos sacerdotes, hijo de Sadoc y padre de Hilquías, el sumo sacerdote de Josías. Esdras
+  descendía de él.
+reason: Perspicacia «Salum», núm. 7; 1Cr 6:12, 13.
+sources:
+- it-salum
+- it-mesulam
+- 1-cronicas-6
+- 1-cronicas-9
+links:
+- title: 'Perspicacia: «Salum»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Salum/
+  type: perspicacia
+relations:
+- type: kin
+  person: sadoc-hijo-de-merayot
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-6
+  - 1-cronicas-9
+  reason: 1Cr 6:12 lo da como hijo de Sadoc.
+  checked_on: '2026-10-12'
+  status: verified
+- type: holds_office
+  office: priest
+  inferred: true
+  sources:
+  - 1-cronicas-9
+  - it-salum
+  reason: Perspicacia «Salum», núm. 7, lo pone en la línea de los sumos sacerdotes; 1Cr 9:11 lo cuenta entre los antepasados
+    del sacerdote Azarías.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

@@ -1,0 +1,32 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ehud-hijo-de-bilhan
+name: Ehúd
+names:
+- name: Ehúd
+perspicacia: 1200001268#1
+disambiguation: Ehúd hijo de Bilhán; no Ehúd hijo de Guerá, el juez que mató a Eglón, ni el Ehúd cuyos hijos fueron desterrados
+  de Gueba.
+distinct_from:
+- ehud-descendiente-de-benjamin
+- ehud-hijo-de-guera
+summary: Benjamita de la línea de Jediael por Bilhán, hombre valiente y poderoso.
+reason: Perspicacia «Ehúd», núm. 1; 1Cr 7:6, 10, 11.
+sources:
+- it-ehud
+- 1-cronicas-7
+links:
+- title: 'Perspicacia: «Ehúd»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Eh%C3%BAd/
+  type: perspicacia
+relations:
+- type: kin
+  person: bilhan-hijo-de-jediael
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-7
+  reason: 1Cr 7:10 lo cuenta entre los hijos de Bilhán.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

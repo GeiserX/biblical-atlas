@@ -23,6 +23,8 @@ sources:
 - sofonias-1
 - 1-reyes-13
 - 2-reyes-21
+- jeremias-1
+- 1-cronicas-3
 links:
 - title: 'Perspicacia: «Josías»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jos%C3%ADas/
@@ -40,8 +42,11 @@ relations:
   - 2-reyes-22
   - mateo-1
   - sofonias-1
+  - jeremias-1
+  - jeremias-25
+  - 1-cronicas-3
   reason: Hijo de Amón y de Jedidá (2Re 21:26; 22:1).
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: succeeds
   person: amon-de-juda
@@ -125,7 +130,7 @@ history:
   source: 2-reyes-23
 perspicacia: 1200002525#1
 disambiguation: El rey de Judá, hijo de Amón; no Josías hijo de Sofonías, que vivía en Jerusalén después del destierro.
-checked_on: '2026-09-30'
+checked_on: '2026-10-12'
 status: verified
 distinct_from:
 - josias-hijo-de-sofonias

@@ -1,0 +1,32 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: obed-guerrero-de-david
+name: Obed
+names:
+- name: Obed
+perspicacia: 1200003290#3
+disambiguation: Obed de 1Cr 11:47, guerrero de David; no el abuelo de David, hijo de Boaz, ni el portero coreíta.
+distinct_from:
+- obed-hijo-de-boaz
+- obed-hijo-de-semaya
+- obed-hijo-de-eflal
+summary: Uno de los guerreros poderosos del ejército de David.
+reason: Perspicacia «Obed», núm. 3; 1Cr 11:47.
+sources:
+- it-obed
+- 1-cronicas-11
+links:
+- title: 'Perspicacia: «Obed»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Obed/
+  type: perspicacia
+relations:
+- type: tie
+  person: david
+  word: master
+  inferred: false
+  sources:
+  - 1-cronicas-11
+  reason: '1Cr 11:47: figura entre los valientes de David.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

@@ -3,6 +3,8 @@ id: mefiboset-hijo-de-jonatan
 name: Mefibóset
 names:
 - name: Mefibóset
+- name: Merib-Baal
+  note: Nombre de 1Cr 8:34 y 9:40; la nota de 8:34 dice que es Mefibóset.
 perspicacia: 1200002986#2
 disambiguation: Mefibóset hijo de Jonatán, cojo desde niño; no Mefibóset hijo de Saúl y de Rizpá.
 summary: Hijo de Jonatán y nieto de Saúl. Quedó cojo de los dos pies a los cinco años, cuando su nodriza huyó con él. David
@@ -15,6 +17,8 @@ sources:
 - 2-samuel-16
 - 2-samuel-19
 - 2-samuel-21
+- 1-cronicas-8
+- 1-cronicas-9
 links:
 - title: 'Perspicacia: «Mefibóset»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Mefib%C3%B3set/
@@ -41,8 +45,10 @@ relations:
   - it-mefiboset
   - 2-samuel-9
   - 2-samuel-21
+  - 1-cronicas-8
+  - 1-cronicas-9
   reason: '2Sa 4:4: su padre era Jonatán, el hijo de Saúl.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: kin
   person: saul
@@ -97,7 +103,7 @@ relations:
   reason: '2Sa 9:7, 10, 11, 13: David lo sienta a su mesa para siempre, como a uno de sus propios hijos.'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified
 not_claimed:
 - 'Que sea el Merib-baal de 1 Crónicas 8 y 9: Perspicacia lo da solo como probable.'

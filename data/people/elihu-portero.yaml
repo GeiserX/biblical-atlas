@@ -1,0 +1,38 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: elihu-portero
+name: Elihú
+names:
+- name: Elihú
+perspicacia: 1200001306#5
+disambiguation: El portero de la familia de Obed-Edom (1Cr 26:7); no Elihú el buzita amigo de Job, ni el antepasado de Samuel,
+  ni el hermano de David (Perspicacia «Elihú»).
+summary: Levita coreíta de la familia de Obed-Edom, hermano de Elzabad. Hombre capaz, fue portero de la casa de Dios en días
+  de David.
+reason: Perspicacia «Elihú», núm. 5; 1Cr 26:7, 8.
+sources:
+- it-elihu
+- 1-cronicas-26
+links:
+- title: 'Perspicacia: «Elihú»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Elih%C3%BA/
+  type: perspicacia
+relations:
+- type: kin
+  person: obed-edom-coreita
+  word: grandfather
+  inferred: true
+  sources:
+  - 1-cronicas-26
+  - it-elihu
+  - it-semakias
+  reason: '1Cr 26:7, 8: hermano de Elzabad hijo de Semaya, de los hijos de Obed-Edom. Perspicacia «Semakías» llama nieto de Obed-Edom
+    a Semakías, nombrado con él.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- elihu-de-manases
+- elihu-hermano-de-david
+- elihu-hijo-de-barakel
+- elihu-hijo-de-tohu

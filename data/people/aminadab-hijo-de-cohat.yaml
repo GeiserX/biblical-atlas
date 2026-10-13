@@ -1,0 +1,45 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: aminadab-hijo-de-cohat
+name: Aminadab
+names:
+- name: Aminadab
+perspicacia: 1200000235#2
+disambiguation: Aminadab hijo de Cohat (1Cr 6:22), quizá Izhar con otro nombre; no Aminadab hijo de Ram ni los otros Aminadab
+  que numera Perspicacia «Aminadab».
+distinct_from:
+- aminadab-hijo-de-ram
+- aminadab-jefe-de-los-uzielitas
+summary: Levita que 1 Crónicas 6:22 pone como hijo de Cohat y padre de Coré. Perspicacia cree que tal vez era otro nombre
+  de Izhar.
+reason: Perspicacia «Aminadab», núm. 2, y «Coré», núm. 3; 1Cr 6:22.
+sources:
+- it-aminadab
+- it-core
+- 1-cronicas-6
+links:
+- title: 'Perspicacia: «Aminadab»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Aminadab/
+  type: perspicacia
+relations:
+- type: same_as
+  person: izhar-hijo-de-cohat
+  certainty: possible
+  inferred: true
+  sources:
+  - 1-cronicas-6
+  - it-aminadab
+  - it-core
+  reason: 'Perspicacia «Aminadab», núm. 2, y «Coré», núm. 3: tal vez otro nombre de Izhar, padre de Coré (1Cr 6:2, 22, 38).'
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: cohat
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-6
+  reason: 1Cr 6:22 lo pone el primero de la lista de Cohat.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

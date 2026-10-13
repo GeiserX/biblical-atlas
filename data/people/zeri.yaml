@@ -1,0 +1,35 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: zeri
+name: Zerí
+names:
+- name: Zerí
+- name: Izrí
+  note: Así se escribe en 1Cr 25:11; Perspicacia «Zerí» e «Izrí» lo dan por el mismo hijo de Jedutún.
+perspicacia: '1200004713'
+summary: Uno de los seis hijos de Jedutún que tocaban en el santuario. Con el nombre de Izrí recibió la cuarta suerte y dirigió
+  ese grupo.
+reason: Perspicacia «Zerí»; 1Cr 25:3, 11.
+sources:
+- it-zeri
+- it-izri
+- 1-cronicas-25
+links:
+- title: 'Perspicacia: «Zerí»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zer%C3%AD/
+  type: perspicacia
+- title: 'Perspicacia: «Izrí»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Izr%C3%AD/
+  type: perspicacia
+relations:
+- type: kin
+  person: jedutun-musico
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-25
+  - it-zeri
+  reason: 1Cr 25:3, 11 lo cuenta entre los hijos de Jedutún.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

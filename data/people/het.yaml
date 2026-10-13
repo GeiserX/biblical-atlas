@@ -10,6 +10,7 @@ reason: Perspicacia «Het»; Gé 10:15.
 sources:
 - it-het
 - genesis-10
+- 1-cronicas-1
 links:
 - title: 'Perspicacia: «Het»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Het/
@@ -24,8 +25,9 @@ relations:
   inferred: false
   sources:
   - genesis-10
+  - 1-cronicas-1
   reason: 'Gé 10:15: Canaán fue padre de Het, tras Sidón.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

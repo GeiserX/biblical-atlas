@@ -1,0 +1,18 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: naham
+name: Náham
+names:
+- name: Náham
+perspicacia: '1200003164'
+summary: 'Judaíta, cuñado de Hodías: la esposa de Hodías era su hermana.'
+reason: Perspicacia «Náham»; 1Cr 4:19.
+sources:
+- it-naham
+- 1-cronicas-4
+links:
+- title: 'Perspicacia: «Náham»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/N%C3%A1ham/
+  type: perspicacia
+relations: []
+checked_on: '2026-10-12'
+status: verified

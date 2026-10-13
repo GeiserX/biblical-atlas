@@ -1,0 +1,35 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: arad-hijo-de-berias
+name: Arad
+names:
+- name: Arad
+perspicacia: 1200000329#1
+summary: Benjamita, hijo de Berías, uno de los jefes de la tribu que vivieron en Jerusalén.
+reason: Perspicacia «Arad», núm. 1; 1Cr 8:15, 16, 28.
+sources:
+- it-arad
+- 1-cronicas-8
+links:
+- title: 'Perspicacia: «Arad»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Arad/
+  type: perspicacia
+relations:
+- type: kin
+  person: berias-hijo-de-elpaal
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  reason: 1Cr 8:16 lo cuenta entre los hijos de Berías.
+  checked_on: '2026-10-12'
+  status: verified
+- type: lived_in
+  place: jerusalen
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  reason: '1Cr 8:28: los jefes de casas paternas de esta lista vivían en Jerusalén.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

@@ -1,0 +1,21 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jedutun-padre-de-obed-edom
+name: Jedutún
+names:
+- name: Jedutún
+perspicacia: 1200002360#2
+disambiguation: El padre del portero Obed-Edom; no Jedutún el músico de David, que quizá se llamó antes Etán (Perspicacia
+  «Jedutún», núm. 1).
+distinct_from:
+- jedutun-musico
+summary: Levita cuyo hijo o descendiente, Obed-Edom, era portero cuando David instaló el Arca en Jerusalén.
+reason: Perspicacia «Jedutún», núm. 2; 1Cr 16:38.
+sources:
+- it-jedutun
+- 1-cronicas-16
+links:
+- title: 'Perspicacia: «Jedutún»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jedut%C3%BAn/
+  type: perspicacia
+checked_on: '2026-10-12'
+status: verified

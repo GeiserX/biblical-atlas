@@ -1,0 +1,43 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jeremias-anuncia-el-brote-justo-de-david
+title: Jeremías anuncia el brote justo de David y denuncia a los falsos profetas
+date:
+  from: -646
+  to: -606
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 647 y 607 a.e.c. (tiempo narrativo: durante la obra de Jeremías en Judá, antes de caer Jerusalén)'
+narrative_order:
+  series: jeremias
+  order: 23001
+places:
+- jerusalen
+- juda
+people:
+- jeremias-profeta
+present: []
+passages:
+- Jer 23:1-40
+summary: Jehová castigará a los pastores que dispersan su rebaño, reunirá al resto y hará surgir de David un rey justo. Condena
+  a los profetas de Jerusalén, que inventan sueños y hablan sin que él los envíe.
+reason: 'Jer 23 no nombra rey: queda entre la comisión de 647 y la caída de 607 (estudio 3). «Toda Escritura», libro 24, párr.
+  19, lo une al capítulo siguiente, cuya visión va aparte por llevar fecha.'
+sources:
+- jeremias-23
+- si-jeremias
+- it-jeremias-libro
+- si-3
+- it-jeremias
+- it-rama-brote
+- it-jehova-es-nuestra-justicia
+links:
+- title: Jeremías 23 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/23/
+  type: bible
+- title: 'Perspicacia: «Jeremías, Libro de»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jerem%C3%ADas-Libro-de/
+  type: perspicacia
+checked_on: '2026-10-12'
+status: verified

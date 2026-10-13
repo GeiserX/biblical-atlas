@@ -14,6 +14,7 @@ narrative_order:
   order: 21018
 places:
 - gob
+- guezer
 people:
 - saf
 - sibecai
@@ -38,5 +39,5 @@ links:
 - title: 2 Samuel 21 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-samuel/21/
   type: bible
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

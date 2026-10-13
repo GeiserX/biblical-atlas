@@ -11,6 +11,8 @@ reason: Perspicacia «Coré», núm. 3, y «Coreíta», párr. 1 y 3. Varios sal
 disambiguation: No es el hijo de Esaú llamado Coré ni el Coré judaíta que era hijo de Hebrón (Perspicacia, núm. 1 y 2).
 distinct_from:
 - core-hijo-de-esau
+- core-hijo-de-hebron
+- core-padre-de-meselemias
 sources:
 - it-core
 - it-coreita
@@ -22,6 +24,8 @@ sources:
 - it-abiram
 - it-braserillo
 - numeros-26
+- 1-cronicas-6
+- 1-cronicas-12
 links:
 - title: 'Perspicacia: «Coré»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Cor%C3%A9/
@@ -39,7 +43,7 @@ history:
 - date: '2026-09-29'
   change: 'Grafía: el resumen escribe Cohat, como Éx 6:16 en la TNM; Qohat es la grafía de Perspicacia.'
   source: exodo-6
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified
 relations:
 - type: kin
@@ -50,8 +54,9 @@ relations:
   - exodo-6
   - it-core
   - numeros-16
+  - 1-cronicas-6
   reason: 'Éx 6:21: primer hijo de Izhar.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: kin
   person: nefeg-hijo-de-izhar
@@ -70,4 +75,13 @@ relations:
   - exodo-6
   reason: 'Éx 6:21: Zicrí es otro hijo de Izhar.'
   checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: aminadab-hijo-de-cohat
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-6
+  reason: '1Cr 6:22: «su hijo Coré», tras Aminadab. Perspicacia cree que tal vez Aminadab es Izhar.'
+  checked_on: '2026-10-12'
   status: verified

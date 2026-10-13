@@ -1,0 +1,33 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jahat-hijo-de-reaya
+name: Jáhat
+names:
+- name: Jáhat
+perspicacia: 1200002289#1
+disambiguation: Jáhat de Judá (núm. 1 de Perspicacia); no los levitas del mismo nombre.
+summary: Judaíta, hijo de Reayá. Sus dos hijos, Ahumái y Lahad, dieron origen a las familias de los zoratitas.
+reason: Perspicacia «Jáhat»; 1Cr 4:2.
+sources:
+- it-jahat
+- 1-cronicas-4
+links:
+- title: 'Perspicacia: «Jáhat»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/J%C3%A1hat/
+  type: perspicacia
+relations:
+- type: kin
+  person: reaya-hijo-de-sobal
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-4
+  - it-jahat
+  reason: '1Cr 4:2: Reayá fue padre de Jáhat.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- jahat-hijo-de-libni
+- jahat-hijo-de-simei
+- jahat-izharita

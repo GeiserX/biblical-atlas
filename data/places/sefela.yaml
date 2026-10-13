@@ -22,6 +22,7 @@ sources:
 - josue-10
 - josue-15
 - 1-reyes-10
+- 1-cronicas-27
 links:
 - title: 'Perspicacia: «Sefelá»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sefel%C3%A1/
@@ -32,5 +33,5 @@ links:
 - title: Deuteronomio 1 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/deuteronomio/1/
   type: bible
-checked_on: '2026-09-30'
+checked_on: '2026-10-12'
 status: verified

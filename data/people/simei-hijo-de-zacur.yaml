@@ -1,0 +1,44 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: simei-hijo-de-zacur
+name: Simeí
+names:
+- name: Simeí
+perspicacia: 1200004047#6
+disambiguation: Simeí hijo de Zacur, de Simeón (núm. 6 de Perspicacia); no el hermano de Zorobabel ni el benjaminita que maldijo
+  a David.
+summary: Simeonita, hijo de Zacur. Fue padre de dieciséis hijos y seis hijas, muchos más que sus hermanos.
+reason: Perspicacia «Simeí»; 1Cr 4:26, 27.
+sources:
+- it-simei
+- 1-cronicas-4
+links:
+- title: 'Perspicacia: «Simeí»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sime%C3%AD/
+  type: perspicacia
+relations:
+- type: kin
+  person: zacur-hijo-de-hamuel
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-4
+  - it-simei
+  reason: '1Cr 4:26: su hijo Simeí; Perspicacia «Simeí», núm. 6, lo llama hijo de Zacur.'
+  checked_on: '2026-10-12'
+  status: verified
+distinct_from:
+- simei-partidario-de-david
+- simei-hijo-de-guera
+- simei-hijo-de-ela
+- simei-hijo-de-guerson
+- sama-hijo-de-jese
+- simei-hijo-de-pedaya
+- simei-descendiente-de-ladan
+- simei-el-ramatita
+- simei-hijo-de-gog
+- simei-hijo-de-jahat
+- simei-hijo-de-jedutun
+- simei-hijo-de-libni
+- simei-padre-de-jaquim
+checked_on: '2026-10-12'
+status: verified

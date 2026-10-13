@@ -1,0 +1,24 @@
+# biblical-atlas: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: atrot-bet-joab
+name: Atrot-Bet-Joab
+names:
+- name: Atrot-Bet-Joab
+type: city
+lat: 31.704306
+lon: 35.207639
+precision: zone
+coord_source: openbible:a03afe1
+coord_url: https://www.openbible.info/geo/ancient/a03afe1/atroth-beth-joab
+coord_note: Punto de OpenBible para un círculo de 5 km alrededor de Belén, el mismo punto de Belén. Perspicacia no la sitúa.
+summary: Lugar que sale entre los hijos de Salmá. Perspicacia lo cuenta con Belén y Netofá entre los que poblaron sus descendientes.
+reason: 'Perspicacia «Atrot-bet-joab» y «Salmá», núm. 2; 1Cr 2:54. OpenBible: solo el punto.'
+sources:
+- it-atrot-bet-joab
+- openbible-geo
+- 1-cronicas-2
+links:
+- title: 'Perspicacia: «Atrot-bet-joab»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Atrot-bet-joab/
+  type: perspicacia
+checked_on: '2026-10-12'
+status: verified

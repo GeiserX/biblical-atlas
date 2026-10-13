@@ -1,0 +1,23 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: isi-simeonita
+name: Isí
+names:
+- name: Isí
+perspicacia: 1200002213#4
+disambiguation: Isí simeonita, padre de Pelatías (núm. 4 de Perspicacia); no el judaíta padre de Zóhet ni el jefe de Manasés.
+summary: Simeonita cuyos cuatro hijos guiaron a 500 hombres de su tribu contra los amalequitas del monte Seír.
+reason: Perspicacia «Isí»; 1Cr 4:42.
+sources:
+- it-isi
+- 1-cronicas-4
+links:
+- title: 'Perspicacia: «Isí»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Is%C3%AD/
+  type: perspicacia
+relations: []
+distinct_from:
+- isi-padre-de-zohet
+- isi-de-manases
+- isi-hijo-de-apaim
+checked_on: '2026-10-12'
+status: verified

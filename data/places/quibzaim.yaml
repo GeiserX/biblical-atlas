@@ -3,6 +3,9 @@ id: quibzaim
 name: Quibzaim
 names:
 - name: Quibzaim
+- name: Jocmeam
+  note: Por lo visto, 1Cr 6:68 la llama así (Perspicacia «Joqmeam», núm. 1, y «Quibzaim»); no es la región de Jocmeam de los
+    comisarios de Salomón.
 type: city
 lat: 32.13993
 lon: 35.48497
@@ -16,6 +19,8 @@ sources:
 - it-quibzaim
 - openbible-geo
 - josue-21
+- 1-cronicas-6
+- it-joqmeam
 links:
 - title: 'Perspicacia: «Quibzaim»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Quibzaim/
@@ -23,5 +28,5 @@ links:
 - title: Josué 21 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Josu%C3%A9/21/
   type: bible
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

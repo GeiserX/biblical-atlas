@@ -13,14 +13,15 @@ coord_source: openbible:af2ca0c
 coord_url: https://www.openbible.info/geo/ancient/af2ca0c/azekah
 coord_note: Tell Zakariyeh (Tel ʽAzeqa), el sitio que da Perspicacia.
 summary: Ciudad de la Sefelá que guardaba la parte alta del valle de Elá, unos 26 km al NO de Hebrón. Hasta allí persiguió
-  Israel a los cinco reyes; después fue de Judá.
-reason: 'Perspicacia «Azeqá», párr. 1 y 2; Jos 10:10, 11; 15:35. OpenBible: solo el punto.'
+  Israel a los cinco reyes; luego fue de Judá y cayó ante Babilonia justo antes que Jerusalén.
+reason: 'Perspicacia «Azeqá», párr. 1, 2 y 5; Jos 10:10, 11; 15:35; Jer 34:7. OpenBible: solo el punto.'
 sources:
 - it-azeqa
 - openbible-geo
 - josue-10
 - josue-15
 - 1-samuel-17
+- jeremias-34
 links:
 - title: 'Perspicacia: «Azeqá»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Azeq%C3%A1/
@@ -28,5 +29,13 @@ links:
 - title: Josué 10 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Josu%C3%A9/10/
   type: bible
-checked_on: '2026-09-29'
+history:
+- date: '2026-10-12'
+  change: El resumen no decía que Azecá y Lakís resistían aún a Babilonia cuando solo quedaban ellas (Jer 34:7; Perspicacia
+    «Azeqá», párr. 5).
+  source: jeremias-34
+- date: '2026-10-12'
+  change: La razón cita ahora Jer 34:7 y el párrafo de Perspicacia sobre la invasión babilonia.
+  source: jeremias-34
+checked_on: '2026-10-12'
 status: verified

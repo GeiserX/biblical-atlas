@@ -1,0 +1,27 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: zerahias-hijo-de-uzi
+name: Zerahías
+names:
+- name: Zerahías
+perspicacia: 1200004705#1
+summary: Sacerdote de la línea de Eleazar y Finehás, hijo de Uzí y padre de Merayot.
+reason: Perspicacia «Zerahías», núm. 1; 1Cr 6:6, 51.
+sources:
+- it-zerahias
+- 1-cronicas-6
+links:
+- title: 'Perspicacia: «Zerahías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zerah%C3%ADas/
+  type: perspicacia
+relations:
+- type: kin
+  person: uzi-hijo-de-buqui
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-6
+  reason: 1Cr 6:6 lo da como hijo de Uzí.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

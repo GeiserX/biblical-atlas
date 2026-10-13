@@ -21,9 +21,11 @@ sources:
 - it-dedan
 - isaias-21
 - openbible-geo
+- jeremias-25
+- jeremias-49
 links:
 - title: 'Perspicacia: «Dedán»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ded%C3%A1n/
   type: perspicacia
-checked_on: '2026-09-30'
+checked_on: '2026-10-12'
 status: verified

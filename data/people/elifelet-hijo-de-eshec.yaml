@@ -1,0 +1,33 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: elifelet-hijo-de-eshec
+name: Elifélet
+names:
+- name: Elifélet
+perspicacia: 1200001315#4
+disambiguation: Elifélet hijo de Éshec, de la casa de Saúl; no los hijos de David llamados Elifélet ni el guerrero hijo de
+  Ahasbái.
+distinct_from:
+- elifelet-hijo-de-ahasbai
+- elifelet-hijo-de-david
+- elpelet
+summary: Tercer hijo de Éshec, descendiente del rey Saúl.
+reason: Perspicacia «Elifélet», núm. 4; 1Cr 8:33, 39.
+sources:
+- it-elifelet
+- 1-cronicas-8
+links:
+- title: 'Perspicacia: «Elifélet»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Elif%C3%A9let/
+  type: perspicacia
+relations:
+- type: kin
+  person: eshec
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  reason: 1Cr 8:39 lo cuenta entre los hijos de Éshec.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

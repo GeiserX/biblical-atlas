@@ -18,6 +18,9 @@ sources:
 - 2-corintios-1
 - 2-corintios-11
 - bt-19
+- 1-tesalonicenses-1
+- 1-tesalonicenses-2
+- 2-tesalonicenses-1
 links:
 - title: 'Perspicacia: «Silas, Silvano»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Silas-Silvano/
@@ -26,7 +29,7 @@ links:
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/hechos/15/
   type: bible
 perspicacia: '1200004118'
-checked_on: '2026-09-29'
+checked_on: '2026-10-13'
 status: verified
 relations:
 - type: lived_in
@@ -57,9 +60,13 @@ relations:
   - hch-16
   - hch-17
   - 2-corintios-1
+  - 1-tesalonicenses-1
+  - it-tesalonicenses
+  - 1-tesalonicenses-2
+  - 2-tesalonicenses-1
   reason: Pablo lo escoge al separarse de Bernabé; van juntos por Filipos, Tesalónica y Berea, y se reúnen de nuevo en Corinto
     (Hch 15:40; 18:5). Segundo viaje, c. 49-52 (estudio 3, párr. 24).
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-13'
   status: verified
 - type: accompanies
   person: judas-barsabas

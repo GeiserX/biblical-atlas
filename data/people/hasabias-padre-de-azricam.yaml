@@ -1,0 +1,24 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hasabias-padre-de-azricam
+name: Hasabías
+names:
+- name: Hasabías
+perspicacia: 1200001900#6
+summary: Levita merarita, padre de Azricam. Un descendiente suyo vivió en Jerusalén tras el destierro. Perspicacia ve posible
+  que sea el antepasado del cantor Etán.
+reason: Perspicacia «Hasabías», núm. 6; 1Cr 9:14.
+sources:
+- it-hasabias
+- 1-cronicas-9
+links:
+- title: 'Perspicacia: «Hasabías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hasab%C3%ADas/
+  type: perspicacia
+relations: []
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- hasabias-hebronita
+- hasabias-hijo-de-jedutun
+- hasabias-hijo-de-quemuel
+disambiguation: 'Hasabías núm. 6 de Perspicacia: levita merarita, padre de Azricam. No los demás Hasabías que numera Perspicacia.'

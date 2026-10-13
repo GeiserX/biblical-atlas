@@ -1,0 +1,35 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: zebadias-hijo-de-meselemias
+name: Zebadías
+names:
+- name: Zebadías
+perspicacia: 1200004670#5
+disambiguation: El hijo de Meselemías, portero (1Cr 26:2); no Zebadías hijo de Asahel ni los demás Zebadías de Perspicacia
+  «Zebadías».
+summary: Tercer hijo del coreíta Meselemías. Fue portero cuando David repartió los servicios de los levitas.
+reason: Perspicacia «Zebadías», núm. 5; 1Cr 26:2.
+sources:
+- it-zebadias
+- 1-cronicas-26
+links:
+- title: 'Perspicacia: «Zebadías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zebad%C3%ADas/
+  type: perspicacia
+relations:
+- type: kin
+  person: meselemias
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-26
+  - it-zebadias
+  reason: 1Cr 26:2, 3 lo nombra el tercero de los hijos de Meselemías.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- zebadias-descendiente-de-berias
+- zebadias-descendiente-de-elpaal
+- zebadias-hijo-de-asahel
+- zebadias-hijo-de-jeroham

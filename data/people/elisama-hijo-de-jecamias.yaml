@@ -1,0 +1,35 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: elisama-hijo-de-jecamias
+name: Elisamá
+names:
+- name: Elisamá
+perspicacia: 1200001318#2
+summary: Hijo de Jecamías, de la tribu de Judá; con él se cierra la línea de Jarhá en 1 Crónicas 2.
+reason: Perspicacia «Elisamá», núm. 2; 1Cr 2:41.
+sources:
+- it-elisama
+- 1-cronicas-2
+links:
+- title: 'Perspicacia: «Elisamá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Elisam%C3%A1/
+  type: perspicacia
+relations:
+- type: kin
+  person: jecamias-hijo-de-salum
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-2
+  reason: '1Cr 2:41: Jecamías fue su padre.'
+  checked_on: '2026-10-12'
+  status: verified
+disambiguation: Elisamá hijo de Jecamías, de Judá; no el jefe de Efraín hijo de Amihud, ni el hijo de David, ni el abuelo
+  de Ismael.
+distinct_from:
+- elisama-abuelo-de-ismael
+- elisama-hijo-de-amihud
+- elisama-hijo-de-david
+- elisua
+- elisama-secretario
+checked_on: '2026-10-12'
+status: verified

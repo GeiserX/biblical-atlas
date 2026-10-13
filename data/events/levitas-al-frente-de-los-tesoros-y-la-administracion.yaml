@@ -1,0 +1,41 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: levitas-al-frente-de-los-tesoros-y-la-administracion
+title: Levitas al frente de los tesoros y de la administración
+date:
+  from: -1036
+  to: -1036
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 1037 a.e.c.
+narrative_order:
+  series: 1-cronicas
+  order: 26020
+places:
+- jerusalen
+- israel
+people:
+- ahiya-tesorero
+- jehiel-descendiente-de-ladan
+- zetam
+- joel-hijo-de-jehiel
+- sebuel-descendiente-de-guersom
+- selomot-descendiente-de-eliezer
+- kenanias-izharita
+- hasabias-hebronita
+- david
+present: []
+passages:
+- 1Cr 26:20-30
+summary: Ahíya, los hijos de Jehielí y Selomot guardan los tesoros de la casa de Dios y lo santificado, y Sebuel los almacenes.
+  Kenanías y sus hijos son jueces fuera, y Hasabías administra al oeste del Jordán.
+reason: '1Cr 26:20-30. Los tesoros estaban en la casa de Jehová, en Jerusalén; los jueces y administradores servían por
+  todo Israel. El texto no sitúa a nadie. Fecha: cuando David hace rey a Salomón (estudio 3, párr. 4: 1037).'
+sources:
+- 1-cronicas-26
+- si-3
+- it-selomot
+- it-hasabias
+checked_on: '2026-10-12'
+status: verified

@@ -1,0 +1,38 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ahuzam
+name: Ahuzam
+names:
+- name: Ahuzam
+perspicacia: '1200000175'
+summary: Judaíta, el primero de los hijos que Naará le dio a Asjur.
+reason: Perspicacia «Ahuzam»; 1Cr 4:6.
+sources:
+- it-ahuzam
+- 1-cronicas-4
+links:
+- title: 'Perspicacia: «Ahuzam»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ahuzam/
+  type: perspicacia
+relations:
+- type: kin
+  person: asjur
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-4
+  - it-ahuzam
+  reason: '1Cr 4:6: hijo de Asjur.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: naara
+  word: mother
+  inferred: false
+  sources:
+  - 1-cronicas-4
+  - it-ahuzam
+  reason: '1Cr 4:6: uno de los hijos de Naará.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

@@ -1,0 +1,33 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: aminadab-jefe-de-los-uzielitas
+name: Aminadab
+names:
+- name: Aminadab
+perspicacia: 1200000235#3
+disambiguation: El jefe uzielita del traslado del Arca; no Aminadab hijo de Ram, de Judá, antepasado de David (Perspicacia
+  «Aminadab», núm. 1).
+distinct_from:
+- aminadab-hijo-de-ram
+- aminadab-hijo-de-cohat
+summary: Levita de los descendientes de Uziel y cabeza de familia en tiempos de David. Con 112 de sus hermanos ayudó a llevar
+  el Arca a Jerusalén.
+reason: Perspicacia «Aminadab», núm. 3; 1Cr 15:10-14.
+sources:
+- it-aminadab
+- 1-cronicas-15
+links:
+- title: 'Perspicacia: «Aminadab»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Aminadab/
+  type: perspicacia
+relations:
+- type: kin
+  person: uziel-hijo-de-cohat
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-15
+  reason: 1Cr 15:10 lo pone al frente de los descendientes de Uziel, hijo de Cohat.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

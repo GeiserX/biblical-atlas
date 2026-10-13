@@ -1,0 +1,44 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: miclot-padre-de-simea
+name: Miclot
+names:
+- name: Miclot
+- name: Miqlot
+  note: Grafía de Perspicacia.
+perspicacia: 1200003048#1
+disambiguation: Miclot, padre de Simeá, de la familia de Jeiel; no Miclot, el jefe de la división de Dodái en días de David.
+summary: Benjamita, descendiente de Jeiel de Gabaón y padre de Simeá. Vivía con su familia en Jerusalén, cerca de sus parientes.
+reason: Perspicacia «Miqlot», núm. 1; 1Cr 8:29-32.
+sources:
+- it-miqlot
+- 1-cronicas-8
+- 1-cronicas-9
+links:
+- title: 'Perspicacia: «Miqlot»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Miqlot/
+  type: perspicacia
+relations:
+- type: kin
+  person: jeiel-de-gabaon
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  - it-miqlot
+  - 1-cronicas-9
+  reason: Perspicacia «Miqlot», núm. 1, lo pone en la descendencia de Jeiel, el de Gabaón (1Cr 8:29-32).
+  checked_on: '2026-10-12'
+  status: verified
+- type: lived_in
+  place: jerusalen
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  - 1-cronicas-9
+  reason: '1Cr 8:32: la familia de Miclot vivía en Jerusalén, cerca de sus hermanos.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- miclot-de-la-division-de-dodai

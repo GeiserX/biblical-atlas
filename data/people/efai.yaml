@@ -1,0 +1,34 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: efai
+name: Efái
+names:
+- name: Efái
+- name: Efai
+  note: Grafía de Perspicacia.
+perspicacia: '1200001383'
+summary: Netofatita de la tribu de Judá. Sus hijos, jefes militares que no fueron desterrados en 607 a.e.c., acudieron con
+  sus hombres a Guedalías en Mizpá.
+reason: Perspicacia «Efai»; Jer 40:8, 9. Perspicacia añade que, al parecer, esos hijos murieron a manos de Ismael junto con
+  el gobernador.
+sources:
+- it-efai
+- jeremias-40
+links:
+- title: 'Perspicacia: «Efai»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Efai/
+  type: perspicacia
+- title: Jeremías 40 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/40/
+  type: bible
+relations:
+- type: lived_in
+  place: netofa
+  inferred: true
+  sources:
+  - jeremias-40
+  - it-efai
+  reason: Jer 40:8 lo llama Efái el netofatita, gentilicio de Netofá; Perspicacia «Efai» lo cuenta de Judá.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

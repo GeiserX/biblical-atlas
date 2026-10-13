@@ -13,6 +13,7 @@ sources:
 - genesis-35
 - genesis-49
 - exodo-1
+- 1-cronicas-2
 links:
 - title: 'Perspicacia: «Zabulón»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zabul%C3%B3n/
@@ -31,8 +32,9 @@ relations:
   - genesis-35
   - genesis-46
   - genesis-49
+  - 1-cronicas-2
   reason: 'Perspicacia «Zabulón», párr. 2: Lea le dio a Jacob este sexto hijo (Gé 30:19, 20).'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: kin
   person: lea
@@ -93,5 +95,5 @@ history:
 - date: '2026-09-29'
   change: La razón de dónde nació cita Gé 30:20, donde nace, en lugar de Gé 29:4 y 31:41, que no lo nombran.
   source: genesis-30
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

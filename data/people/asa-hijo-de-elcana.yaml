@@ -1,0 +1,41 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: asa-hijo-de-elcana
+name: Asá
+names:
+- name: Asá
+perspicacia: 1200000397#2
+summary: Levita, hijo de Elcaná y padre de Berekías. Al volver del destierro vivió en los poblados de los netofatitas, según
+  Perspicacia.
+reason: Perspicacia «Asá», núm. 2; 1Cr 9:16.
+sources:
+- it-asa
+- 1-cronicas-9
+links:
+- title: 'Perspicacia: «Asá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/As%C3%A1/
+  type: perspicacia
+relations:
+- type: kin
+  person: elcana-padre-de-asa
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-9
+  reason: '1Cr 9:16: Asá, hijo de Elcaná.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: lived_in
+  place: netofa
+  inferred: true
+  sources:
+  - 1-cronicas-9
+  - it-asa
+  - it-netofa
+  reason: 1Cr 9:16 pone en los poblados netofatitas a alguien de esa línea; Perspicacia «Asá», núm. 2, dice que era Asá.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- asa
+disambiguation: 'Asá núm. 2 de Perspicacia: levita, hijo de Elcaná. No el rey de Judá.'

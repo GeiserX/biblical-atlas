@@ -1,0 +1,22 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ahlai-padre-de-zabad
+name: Ahlái
+names:
+- name: Ahlái
+- name: Ahlai
+perspicacia: 1200000172#2
+summary: Padre de Zabad, uno de los guerreros poderosos de David.
+reason: Perspicacia «Ahlai», núm. 2; 1Cr 11:41.
+sources:
+- it-ahlai
+- 1-cronicas-11
+links:
+- title: 'Perspicacia: «Ahlai»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ahlai/
+  type: perspicacia
+disambiguation: Ahlái, padre del guerrero Zabad (1Cr 11:41); no la judaíta hija de Sesán que se casó con su siervo egipcio.
+relations: []
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- ahlai-hija-de-sesan

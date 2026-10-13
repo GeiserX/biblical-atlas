@@ -1,0 +1,29 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: iru
+name: Iru
+names:
+- name: Iru
+perspicacia: '1200002202'
+summary: El primer hijo de Caleb el espía que se nombra. Algunos eruditos creen que el nombre era Ir y que la u es la conjunción
+  hebrea «y».
+reason: Perspicacia «Iru»; 1Cr 4:15.
+sources:
+- it-iru
+- 1-cronicas-4
+links:
+- title: 'Perspicacia: «Iru»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Iru/
+  type: perspicacia
+relations:
+- type: kin
+  person: caleb-hijo-de-jefune
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-4
+  - it-iru
+  reason: '1Cr 4:15: uno de los hijos de Caleb hijo de Jefuné.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

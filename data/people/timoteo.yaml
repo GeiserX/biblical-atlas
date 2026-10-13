@@ -22,6 +22,9 @@ sources:
 - filipenses-1
 - filipenses-2
 - colosenses-1
+- 1-tesalonicenses-1
+- 1-tesalonicenses-3
+- 2-tesalonicenses-1
 links:
 - title: 'Perspicacia: «Timoteo»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Timoteo/
@@ -30,7 +33,7 @@ links:
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/hechos/16/
   type: bible
 perspicacia: '1200004416'
-checked_on: '2026-09-29'
+checked_on: '2026-10-13'
 status: verified
 relations:
 - type: lived_in
@@ -69,9 +72,13 @@ relations:
   - filipenses-1
   - filipenses-2
   - colosenses-1
+  - 1-tesalonicenses-1
+  - it-tesalonicenses
+  - 1-tesalonicenses-3
+  - 2-tesalonicenses-1
   reason: Se une en Listra y viaja con él; «Testimonio completo» (cap. 15, párr. 18) dice que trabajaron juntos muchos años.
     La Tabla de los libros fecha 2 Timoteo hacia 65.
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-13'
   status: verified
 - type: accompanies
   person: erasto-colaborador-de-pablo

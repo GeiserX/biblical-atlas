@@ -1,0 +1,42 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jehova-promete-a-baruc-salvarle-la-vida
+title: Jehová promete a Baruc salvarle la vida
+date:
+  from: -624
+  to: -624
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 625 a.e.c.
+narrative_order:
+  series: jeremias
+  order: 45001
+places: []
+people:
+- jeremias-profeta
+- baruc-hijo-de-nerias
+present: []
+type: speech
+roles:
+  jeremias-profeta: spoke
+passages:
+- Jer 45:1-5
+summary: Mientras escribe al dictado de Jeremías, Baruc se lamenta de su agotamiento. Por boca del profeta, Jehová le pide
+  que no busque grandezas para sí y le asegura que salvará la vida en la calamidad.
+reason: 'Jer 45:1 lo sitúa en el cuarto año de Jehoiaquim, cuando Baruc escribía el rollo; Perspicacia «Baruc», núm. 1, párr.
+  2 y 4, fecha ese año en 625 a.e.c. El texto no dice dónde: nadie queda situado.'
+sources:
+- jeremias-45
+- it-baruc
+- it-jeremias-libro
+- si-jeremias
+links:
+- title: Jeremías 45 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/45/
+  type: bible
+- title: 'Perspicacia: «Baruc»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Baruc/
+  type: perspicacia
+checked_on: '2026-10-12'
+status: verified

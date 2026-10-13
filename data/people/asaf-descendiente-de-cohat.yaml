@@ -1,0 +1,33 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: asaf-descendiente-de-cohat
+name: Asaf
+names:
+- name: Asaf
+perspicacia: 1200000400#2
+disambiguation: El cohatita de cuya casa salieron porteros (1Cr 26:1); no Asaf el músico, hijo de Berekías, ni el padre de
+  Joá (Perspicacia «Asaf», núm. 1, 2 y 3).
+summary: Levita descendiente de Cohat. De su casa salieron porteros del santuario en días de David, como Meselemías.
+reason: Perspicacia «Asaf», núm. 2; 1Cr 26:1.
+sources:
+- it-asaf
+- 1-cronicas-26
+links:
+- title: 'Perspicacia: «Asaf»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Asaf/
+  type: perspicacia
+relations:
+- type: kin
+  person: cohat
+  word: ancestor
+  inferred: true
+  sources:
+  - 1-cronicas-26
+  - it-asaf
+  reason: Perspicacia «Asaf», núm. 2, lo hace descendiente de Cohat (1Cr 26:1).
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- asaf-hijo-de-berekias
+- asaf-padre-de-joa

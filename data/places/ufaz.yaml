@@ -1,0 +1,25 @@
+# biblical-atlas: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: ufaz
+name: Ufaz
+names:
+- name: Ufaz
+type: region
+lat: null
+lon: null
+precision: uncertain
+coord_source: null
+coord_url: null
+candidates: []
+summary: Lugar de donde se traía oro fino en tiempos bíblicos. Hoy no se sabe dónde estaba.
+reason: 'Perspicacia «Ufaz»; Jer 10:9 y Da 10:5. Sin punto: Perspicacia dice que se desconoce su ubicación.'
+not_claimed:
+- 'Que sea Ofir con otro nombre: OpenBible lo propone, pero jw.org no lo dice.'
+sources:
+- it-ufaz
+- jeremias-10
+links:
+- title: 'Perspicacia: «Ufaz»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ufaz/
+  type: perspicacia
+checked_on: '2026-10-12'
+status: pending

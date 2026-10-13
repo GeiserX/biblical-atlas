@@ -1,0 +1,25 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: pasjur-padre-de-guedalias
+name: Pasjur
+names:
+- name: Pasjur
+perspicacia: 1200003396#1
+disambiguation: El padre del príncipe Guedalías; no es Pasjur hijo de Malkías ni el sacerdote Pasjur hijo de Imer.
+distinct_from:
+- pasjur-hijo-de-malkias
+- pasjur-hijo-de-imer
+summary: Padre de Guedalías, uno de los príncipes que lograron que echaran a Jeremías a la cisterna.
+reason: Perspicacia «Pasjur», núm. 1; Jer 38:1.
+sources:
+- it-pasjur
+- jeremias-38
+links:
+- title: 'Perspicacia: «Pasjur»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Pasjur/
+  type: perspicacia
+- title: Jeremías 38 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/38/
+  type: bible
+relations: []
+checked_on: '2026-10-12'
+status: verified

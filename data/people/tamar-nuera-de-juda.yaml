@@ -13,11 +13,12 @@ sources:
 - rut-4
 - mateo-1
 - genesis-38
+- 1-cronicas-2
 links:
 - title: 'Perspicacia: «Tamar»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Tamar/
   type: perspicacia
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified
 relations:
 - type: kin
@@ -26,8 +27,9 @@ relations:
   inferred: false
   sources:
   - genesis-38
+  - 1-cronicas-2
   reason: 'Gé 38:11, 13, 24: Judá es su suegro y ella, su nuera.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 distinct_from:
 - tamar-hija-de-david

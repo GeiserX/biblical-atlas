@@ -19,10 +19,10 @@ precision: zone
 coord_source: openbible:ae73b90
 coord_url: https://www.openbible.info/geo/ancient/ae73b90/gilead-1
 coord_note: Punto representativo de OpenBible para la región montañosa. El sitio exacto de Galeed no se conoce.
-summary: Región montañosa al este del Jordán, a ambos lados del valle del Jaboq. Allí alcanzó Labán a Jacob, y los dos pactaron
-  la paz junto a un montón de piedras que llamaron Galeed.
-reason: 'Perspicacia «Galaad», núm. 4, párr. 5, y «Galeed», párr. 2 a 4; Gé 31:21-25, 47-49. Coordenada de OpenBible: solo
-  tomamos el punto.'
+summary: Región montañosa al este del Jordán, a ambos lados del valle del Jaboq, famosa por su bálsamo. Allí alcanzó Labán
+  a Jacob, y los dos pactaron la paz junto a un montón de piedras que llamaron Galeed.
+reason: 'Perspicacia «Galaad», núm. 4, párr. 5 y 7, y «Galeed», párr. 2 a 4; Gé 31:21-25, 47-49; Jer 8:22. Coordenada de OpenBible:
+  solo tomamos el punto.'
 sources:
 - it-galaad
 - it-galeed
@@ -53,6 +53,9 @@ sources:
 - 1-reyes-17
 - 2-reyes-10
 - 2-reyes-15
+- jeremias-8
+- 1-cronicas-2
+- 1-cronicas-5
 links:
 - title: 'Perspicacia: «Galaad»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Galaad/
@@ -63,5 +66,13 @@ links:
 - title: Génesis 31 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/G%C3%A9nesis/31/
   type: bible
-checked_on: '2026-09-30'
+history:
+- date: '2026-10-12'
+  change: El resumen añade el bálsamo curativo por el que se conocía la región (Jer 8:22; Perspicacia «Galaad», núm. 4, párr.
+    7).
+  source: jeremias-8
+- date: '2026-10-12'
+  change: La razón cita el párrafo 7 de «Galaad» y Jer 8:22, de donde sale el bálsamo del resumen.
+  source: jeremias-8
+checked_on: '2026-10-12'
 status: verified

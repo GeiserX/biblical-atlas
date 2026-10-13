@@ -11,6 +11,7 @@ sources:
 - it-suah
 - job-2
 - genesis-25
+- 1-cronicas-1
 links:
 - title: 'Perspicacia: «Súah»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/S%C3%BAah/
@@ -29,8 +30,9 @@ relations:
   sources:
   - it-suah
   - genesis-25
+  - 1-cronicas-1
   reason: 'Perspicacia «Súah»: hijo de Abrahán y de Queturá, su segunda esposa.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: kin
   person: quetura
@@ -39,8 +41,9 @@ relations:
   sources:
   - it-suah
   - genesis-25
+  - 1-cronicas-1
   reason: 'Gé 25:1, 2: hijo de Abrahán y Queturá.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

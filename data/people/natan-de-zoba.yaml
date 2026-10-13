@@ -9,11 +9,13 @@ distinct_from:
 - natan-profeta
 - natan-hijo-de-david
 - natan-padre-de-zabud
+- natan-hijo-de-atai
 summary: Hombre de Zobá. Su hijo Igal y su hermano Joel estuvieron entre los guerreros de David.
 reason: Perspicacia «Natán», núm. 3; 2Sa 23:36.
 sources:
 - it-natan
 - 2-samuel-23
+- 1-cronicas-11
 links:
 - title: 'Perspicacia: «Natán»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Nat%C3%A1n/
@@ -27,5 +29,5 @@ relations:
   reason: '2Sa 23:36: Natán de Zobá.'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-30'
+checked_on: '2026-10-12'
 status: verified

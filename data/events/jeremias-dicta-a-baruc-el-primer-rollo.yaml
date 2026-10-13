@@ -1,0 +1,45 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jeremias-dicta-a-baruc-el-primer-rollo
+title: Jeremías dicta a Baruc sus profecías en un rollo
+type: writing
+date:
+  from: -624
+  to: -624
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 625 a.e.c.
+narrative_order:
+  series: jeremias
+  order: 36001
+  after: batalla-de-carquemis
+places:
+- jerusalen
+people:
+- jeremias-profeta
+- baruc-hijo-de-nerias
+present: []
+roles:
+  baruc-hijo-de-nerias: wrote
+  jeremias-profeta: spoke
+passages:
+- Jer 36:1-7
+summary: En el cuarto año de Jehoiaquim, Jehová manda a Jeremías poner por escrito todo lo anunciado desde Josías. Él dicta
+  y Baruc escribe; como Jeremías no puede entrar al templo, Baruc tendrá que leerlo allí.
+reason: 'Perspicacia «Baruc», núm. 1, y «Jehoiaquim», párr. 4, fechan el dictado en 625, el año de Carquemis. El texto no
+  dice dónde se escribió: Jerusalén es la ciudad del templo y no sitúa a nadie.'
+sources:
+- jeremias-36
+- it-baruc
+- it-jehoiaquim
+- it-jeremias-libro
+links:
+- title: Jeremías 36 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/36/
+  type: bible
+- title: 'Perspicacia: «Baruc»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Baruc/
+  type: perspicacia
+checked_on: '2026-10-12'
+status: verified

@@ -1,0 +1,42 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: miriam-hija-de-mered
+name: Míriam
+names:
+- name: Míriam
+perspicacia: 1200003074#2
+disambiguation: Míriam de Judá (núm. 2 de Perspicacia); no la hermana de Moisés y Aarón.
+summary: Descendiente de Judá. Nació, al parecer, de Bitías, la esposa egipcia de Méred.
+reason: Perspicacia «Míriam»; 1Cr 4:17, 18.
+sources:
+- it-miriam
+- it-mered
+- 1-cronicas-4
+links:
+- title: 'Perspicacia: «Míriam»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/M%C3%ADriam/
+  type: perspicacia
+relations:
+- type: kin
+  person: bitias
+  word: mother
+  inferred: true
+  sources:
+  - 1-cronicas-4
+  - it-miriam
+  reason: '1Cr 4:17, 18: «ella» es la madre de Míriam, Samái e Isbá; la nota dice que quizá es Bitías.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: mered
+  word: father
+  inferred: true
+  sources:
+  - 1-cronicas-4
+  - it-mered
+  reason: '1Cr 4:17, 18: hijo de Bitías, esposa de Méred; Perspicacia «Méred» dice que él tuvo varios hijos con ella.'
+  checked_on: '2026-10-12'
+  status: verified
+distinct_from:
+- miriam-hermana-de-moises
+checked_on: '2026-10-12'
+status: verified

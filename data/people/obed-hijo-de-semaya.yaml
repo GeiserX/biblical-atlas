@@ -1,0 +1,34 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: obed-hijo-de-semaya
+name: Obed
+names:
+- name: Obed
+perspicacia: 1200003290#4
+disambiguation: El hijo de Semaya, portero (1Cr 26:7); no Obed hijo de Boaz, abuelo de David (Perspicacia «Obed», núm. 2 y
+  4).
+summary: Levita coreíta, nieto de Obed-Edom por su hijo Semaya. Fue uno de los porteros del santuario.
+reason: Perspicacia «Obed», núm. 4; 1Cr 26:7.
+sources:
+- it-obed
+- 1-cronicas-26
+links:
+- title: 'Perspicacia: «Obed»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Obed/
+  type: perspicacia
+relations:
+- type: kin
+  person: semaya-hijo-de-obed-edom
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-26
+  - it-obed
+  reason: 1Cr 26:7 lo cuenta entre los hijos de Semaya.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- obed-guerrero-de-david
+- obed-hijo-de-boaz
+- obed-hijo-de-eflal

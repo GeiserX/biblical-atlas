@@ -10,6 +10,8 @@ distinct_from:
 - abias-de-tiempos-de-david
 - abias-hijo-de-samuel
 - abias-hija-de-zacarias
+- abias-esposa-de-hezron
+- abias-hijo-de-beker
 summary: Hijo de Jeroboán. Enfermó de gravedad y su madre fue disfrazada a consultar a Ahíya. Murió cuando ella volvió a Tirzá,
   y fue el único de su casa sepultado con honra, porque Jehová vio en él algo bueno.
 reason: Perspicacia «Abías», núm. 6; 1Re 14:1-18.
@@ -43,5 +45,5 @@ relations:
   inferred: false
   checked_on: '2026-09-30'
   status: verified
-checked_on: '2026-09-30'
+checked_on: '2026-10-12'
 status: verified

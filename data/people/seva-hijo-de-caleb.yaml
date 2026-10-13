@@ -1,0 +1,40 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: seva-hijo-de-caleb
+name: Sevá
+names:
+- name: Sevá
+perspicacia: 1200004028#1
+summary: Hijo de Caleb y de Maacá, de Judá. Fue padre de Macbená y de Guibeá, quizá de los pobladores de esas ciudades o su
+  fundador.
+reason: Perspicacia «Sevá», núm. 1; 1Cr 2:49.
+sources:
+- it-seva
+- 1-cronicas-2
+links:
+- title: 'Perspicacia: «Sevá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sev%C3%A1/
+  type: perspicacia
+relations:
+- type: kin
+  person: caleb-hijo-de-hezron
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-2
+  reason: '1Cr 2:48, 49: Maacá, la concubina de Caleb, lo dio a luz.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: maaca-concubina-de-caleb
+  word: mother
+  inferred: false
+  sources:
+  - 1-cronicas-2
+  reason: '1Cr 2:48, 49: Maacá lo dio a luz.'
+  checked_on: '2026-10-12'
+  status: verified
+disambiguation: Sevá hijo de Caleb, de Judá; no Sevá, el secretario del rey David.
+distinct_from:
+- seva-secretario-de-david
+checked_on: '2026-10-12'
+status: verified

@@ -1,0 +1,23 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: efa-concubina-de-caleb
+name: Efá
+names:
+- name: Efá
+perspicacia: 1200001382#2
+summary: Concubina de Caleb, el nieto de Pérez, en Judá. Le dio a Harán y a Mozá. Perspicacia ve posible que Gazez fuera nieto
+  suyo y no hijo.
+reason: Perspicacia «Efá, II», núm. 2; 1Cr 2:46.
+sources:
+- it-efa-ii
+- 1-cronicas-2
+links:
+- title: 'Perspicacia: «Efá, II»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ef%C3%A1-II/
+  type: perspicacia
+relations: []
+disambiguation: Efá, concubina de Caleb; no Efá hijo de Madián ni Efá hijo de Jahdái.
+distinct_from:
+- efa-hijo-de-madian
+- efa-hijo-de-jahdai
+checked_on: '2026-10-12'
+status: verified
