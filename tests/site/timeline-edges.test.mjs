@@ -116,6 +116,10 @@ function edges(p) {
         if (cut[i] && !a && nameOver) { out.yielded++; continue; }
         if (cut[i] !== !!a) { out.problems.push(`${who}: ${cut[i] ? 'goes on' : 'ends inside'} at the ${i ? 'right' : 'left'} and ${a ? 'has' : 'has no'} arrow there`); continue; }
         if (!a) continue;
+        // The cut end is lighter, never faded out as a doubtful date: the mask on that side is not transparent.
+        const mask = getComputedStyle(drawn).maskImage || getComputedStyle(drawn).webkitMaskImage || '';
+        const stops = mask.replace(/^linear-gradient\(90deg,\s*|\)$/g, '').split(/,\s*(?![^(]*\))/);
+        if (/transparent|rgba\(0, 0, 0, 0\)/.test(i === 0 ? stops[0] : stops.at(-1))) out.problems.push(`${who}: the ${i ? 'right' : 'left'} end that goes on fades out (${mask})`);
         const dim = focus && b.matches('.atenuado');
         const color = getComputedStyle(b.querySelector(`.m-sigue.${i ? 'der' : 'izq'}`)).backgroundColor;
         if (color !== (dim ? ink3 : ink2)) out.problems.push(`${who}: the ${i ? 'right' : 'left'} arrow is ${color} on a ${dim ? 'dimmed' : 'plain'} mark, want ${dim ? ink3 : ink2}`);
