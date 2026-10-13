@@ -1560,7 +1560,8 @@ function pintarEtiquetas() {
     }
     // Importancia y tramo de zoom en que puede verse el rótulo.
     let prio, desde = -Infinity, hasta = Infinity;
-    if (id === actual) prio = 100;
+    // En un recorrido guiado, el lugar donde está Pablo en esa fecha no pasa por delante de las paradas del recorrido.
+    if (id === actual && !vecinosMapa) prio = 100;
     else if (esSel) prio = 95;
     else if (resaltadoMapa?.has(id)) prio = 92;             // la parada del recorrido o la fila elegida en «Nombres»
     else if (vecino) prio = 90;                              // la parada de antes y la de después (vecinosEnFoco)
@@ -1577,7 +1578,8 @@ function pintarEtiquetas() {
     // por encima de los candidatos resaltados (cand--del-foco, z-index 2): en la entrada en Jerusalén, Betfagué y el monte
     // de los Olivos van juntos y el nombre del monte se lee por encima del punto.
     m.el.style.zIndex = !enRes && id !== actual ? '1' : '3';
-    const it = { id, el: m.el, medir: m.el.querySelector(m.region ? '.region-texto' : '.etiqueta'), prio, desde, hasta, pos: [m.l.lon, m.l.lat], esSel, peso: tramosDe(id).length, deLugar: !m.region && m.clase !== 'agua' };
+    const it = { id, el: m.el, medir: m.el.querySelector(m.region ? '.region-texto' : '.etiqueta'), prio, desde, hasta, pos: [m.l.lon, m.l.lat], esSel, peso: tramosDe(id).length, deLugar: !m.region && m.clase !== 'agua',
+      foco: !!vecinos && (vecino || !!resaltadoMapa?.has(id)) };   // fuera de una ruta, nada es de la ruta
     items.push(it);
     marcas.push({ m, it });
     if (prio === 20 && m.clase !== 'region' && m.clase !== 'agua') puntos.push(it);   // los menores se agrupan
@@ -1587,9 +1589,11 @@ function pintarEtiquetas() {
   const agrupables = new Set(puntos);
   for (const p of puntos) p.desde = Math.max(p.desde, grupos.libre.get(p.id));
   const extra = (el, sel, prio, pos, desde = -Infinity, esSel = false) => items.push({ id: `~${items.length}`, el, medir: sel ? el.querySelector(sel) : el, prio, desde, hasta: Infinity, pos, esSel });
-  if (marcaPablo?.puesta) extra(marcaPablo.getElement(), '.pablo-rotulo', 99, marcaPablo.getLngLat().toArray());
+  // Siguiendo una ruta, el nombre de Pablo cede ante la parada actual, la de antes y la de después, como el de cualquier
+  // otro viajero: en el recorrido de Pedro tapaba Jope, la parada de ese paso.
+  if (marcaPablo?.puesta) extra(marcaPablo.getElement(), '.pablo-rotulo', vecinos ? 89 : 99, marcaPablo.getLngLat().toArray());
   if (marcaProxima?.puesta) extra(marcaProxima.getElement(), null, 70, marcaProxima.getLngLat().toArray());
-  for (const m of marcasViajero.values()) if (m.puesta) extra(m.el, '.viajero-rotulo', 90, m.marker.getLngLat().toArray());
+  for (const m of marcasViajero.values()) if (m.puesta) extra(m.el, '.viajero-rotulo', vecinos ? 89 : 90, m.marker.getLngLat().toArray());
   // Solo el lugar incierto elegido, la parada del recorrido o el candidato marcado se libran de esperar a separarse de
   // Jerusalén (ver anclas): los que implica una persona elegida (Getsemaní, Gólgota con Jesús) esperan como los demás.
   const exentoCand = (lid) => selL === lid || !!resaltadoMapa?.has(lid) || candFoco?.lugar === lid;
@@ -1701,8 +1705,18 @@ function pintarEtiquetas() {
   const centro = (x) => marco.left + map.project(x.pos).x;
   const espejo = (r, cx) => ({ left: 2 * cx - r.right, right: 2 * cx - r.left, top: r.top, bottom: r.bottom });
   const rects = items.map((x) => (x.caja && x.d <= zoom && zoom < x.h ? x.medir.getBoundingClientRect() : null));
-  const izq = new Set(), probar = [];
+  const izq = new Set(), probar = [], aunDerecha = new Set();
   const ver = items.map((x, i) => {
+    // Un nombre de la ruta (la parada actual, la de antes o la de después) que perdió el reparto por zoom contra otro de
+    // ellos, contra un número de esas paradas o contra algo que a este zoom no se dibuja, se prueba contra lo que se
+    // dibuja de verdad: primero a la derecha y luego a la izquierda (Listra, junto a Iconio a zoom 4,8 en el móvil).
+    if (!rects[i] && x.foco && x.caja && x.desde <= zoom && zoom < x.hasta) {
+      rects[i] = x.medir.getBoundingClientRect();
+      if (x.el.classList.contains('rotulo-izq')) rects[i] = espejo(rects[i], centro(x));
+      aunDerecha.add(i);
+      probar.push(i);
+      return false;
+    }
     if (!rects[i]) return false;
     if (x.deLugar && x.el.classList.contains('rotulo-izq')) rects[i] = espejo(rects[i], centro(x));
     if (libre(rects[i])) return true;
@@ -1713,10 +1727,18 @@ function pintarEtiquetas() {
     // Lo que ya se dibuja: los nombres, números y puntos que se ven, con el aire del reparto (3 px a los lados, 1 arriba
     // y abajo), los puntos de los lugares y las burbujas. Un punto de candidato o de hallazgo se dibuja siempre, aunque
     // quede a medias bajo una tarjeta o fuera de su tramo de zoom: cuenta igual, salvo si está escondido (cand--junto).
+    // Siguiendo una ruta, un número de recorrido cuenta sin su borde de abajo, como en el reparto: así no aparta el nombre
+    // de su propio lugar. Fuera de una ruta, como antes.
+    const caja4 = (r, i) => ({ left: r.left, right: r.right, top: r.top, bottom: r.bottom - (vecinos && items[i].num ? 4 : 0), i });
     const dibujado = (x) => { const r = x.el.classList.contains('cand--junto') ? null : x.medir.getBoundingClientRect(); return r?.width ? r : null; };
-    const ocupado = items.map((x, i) => (x.obstaculo ? dibujado(x) : ver[i] && !probar.includes(i) ? rects[i] : null)).filter(Boolean);
-    for (const { m } of marcas) {
-      if (m.region || m.clase === 'agua' || m.el.classList.contains('agrupado')) continue;
+    const ocupado = items.map((x, i) => {
+      const r = x.obstaculo ? dibujado(x) : ver[i] && !probar.includes(i) ? rects[i] : null;
+      return r && caja4(r, i);
+    }).filter(Boolean);
+    // Un punto que va dentro de una burbuja no cuenta: la clase «agrupado» se pone al final, así que se mira aquí.
+    const enBurbuja = (it) => agrupables.has(it) && zoom < grupos.libre.get(it.id);
+    for (const { m, it } of marcas) {
+      if (m.region || m.clase === 'agua' || enBurbuja(it)) continue;
       const p = map.project([m.l.lon, m.l.lat]), r = m.el.classList.contains('es-actual') ? 7 : 5;
       ocupado.push({ left: marco.left + p.x - r, right: marco.left + p.x + r, top: marco.top + p.y - r, bottom: marco.top + p.y + r, punto: m.el });
     }
@@ -1727,12 +1749,26 @@ function pintarEtiquetas() {
     }
     const toca = (r, o) => !(r.right + 3 <= o.left || r.left - 3 >= o.right || r.bottom + 1 <= o.top || r.top - 1 >= o.bottom);
     probar.sort((a, b) => items[b].prio - items[a].prio || (items[b].peso || 0) - (items[a].peso || 0));
+    // Ante un nombre de la ruta cede lo que no es de la ruta: el nombre de otro lugar, el número de otra parada, el nombre
+    // de un viajero. No ceden lo elegido, los puntos, las burbujas ni lo que va por delante de la ruta (prio 95 o más).
+    const cede = (o) => o.i != null && !items[o.i].foco && !items[o.i].obstaculo && !items[o.i].esSel && items[o.i].prio < 95;
+    // A la derecha, como en el reparto, un nombre puede pasar sobre un punto o una burbuja; solo lo apartan los rótulos y
+    // los puntos de candidatos que van antes que los nombres (los de la parada).
+    const estorbaDerecha = (o) => o.i != null && (!items[o.i].obstaculo || items[o.i].exento);
     for (const i of probar) {
-      const x = items[i], r = espejo(rects[i], centro(x));
-      if (!libre(r) || ocupado.some((o) => o.punto !== x.el && toca(r, o))) { if (x.esSel) ocupado.push(rects[i]); continue; }
-      izq.add(x);
-      ver[i] = true;
-      ocupado.push(r);
+      const x = items[i];
+      const lados = aunDerecha.has(i) ? [caja4(rects[i], i), espejo(rects[i], centro(x))] : [espejo(rects[i], centro(x))];
+      const puesto = lados.find((r, k) => {
+        const derecha = aunDerecha.has(i) && k === 0;
+        const toques = libre(r) ? ocupado.filter((o) => o.punto !== x.el && toca(r, o) && (!derecha || estorbaDerecha(o))) : null;
+        if (!toques || toques.some((o) => !x.foco || !cede(o))) return false;
+        for (const o of toques) { ver[o.i] = false; izq.delete(items[o.i]); ocupado.splice(ocupado.indexOf(o), 1); }
+        if (!derecha) izq.add(x);
+        ver[i] = true;
+        ocupado.push({ ...r, i });
+        return true;
+      });
+      if (!puesto && x.esSel) ocupado.push(caja4(rects[i], i));
     }
   }
   items.forEach((x, i) => { if (!x.ajeno || x.num) x.el.classList.toggle('sin-etiqueta', !ver[i]); if (x.deLugar) x.el.classList.toggle('rotulo-izq', izq.has(x)); });
@@ -1740,10 +1776,11 @@ function pintarEtiquetas() {
   pintarBurbujas(burbujas.filter((b) => b.d <= zoom && zoom < b.h));
 }
 /** Siguiendo una ruta, los lugares de la parada de antes y la de después: en un recorrido guiado, los que da
-    recorridos.js; con un viaje de Pablo elegido (o una de sus paradas), los de la parada en la que está en la fecha del
-    cursor, o los dos extremos del tramo que recorre. Se nombran detrás de la parada actual y por delante de todo lo
-    demás, también de los números de las otras paradas: a zoom bajo, en el móvil, los nombres de una ruta entera se
-    pisan y antes ganaba el que tenía más tramos (docs/ideas/rotulos-movil.md). null fuera de una ruta: nada cambia. */
+    recorridos.js; con un viaje de Pablo elegido (o una de sus paradas), el de la parada en la que está en la fecha del
+    cursor y los de la de antes y la de después, o los dos extremos del tramo que recorre. Se nombran detrás de la
+    parada actual y por delante de todo lo demás, también de los números de las otras paradas: a zoom bajo, en el móvil,
+    los nombres de una ruta entera se pisan y antes ganaba el que tenía más tramos (docs/ideas/rotulos-movil.md). null
+    fuera de una ruta: nada cambia. */
 function vecinosEnFoco(w) {
   if (vecinosMapa) return vecinosMapa;
   const s = E.sel;
@@ -1753,7 +1790,7 @@ function vecinosEnFoco(w) {
   if (k < 0) return null;
   if (!w.parada) return new Set([w.en.lugar.id, w.sig?.viaje === w.en.viaje ? w.sig.lugar.id : null].filter(Boolean));
   // La parada de antes y la de después son las más cercanas en otro lugar: dos estancias seguidas en Corinto son una.
-  const aqui = w.en.lugar.id, out = new Set();
+  const aqui = w.en.lugar.id, out = new Set([aqui]);
   for (const paso of [-1, 1]) for (let j = k + paso; j >= 0 && j < ps.length; j += paso) if (ps[j].lugar.id !== aqui) { out.add(ps[j].lugar.id); break; }
   return out;
 }
