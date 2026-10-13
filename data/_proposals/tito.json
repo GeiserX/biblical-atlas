@@ -1,0 +1,353 @@
+{
+ "formato": "biblical-atlas/propuesta-cobertura/1",
+ "libro": "tito",
+ "agente": "escritor-tito",
+ "leido": "2026-10-14",
+ "cobertura": {},
+ "fuentes": {},
+ "cambios": [
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "pablo",
+   "campo": "sources",
+   "valores": [
+    "tito-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "pablo",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "holds_office",
+     "office": "apostle",
+     "inferred": false,
+     "sources": [
+      "tito-1"
+     ],
+     "reason": "Tit 1:1: Pablo se presenta como esclavo de Dios y apóstol de Jesucristo.",
+     "checked_on": "2026-10-14",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "tito",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "lived_in",
+     "place": "creta",
+     "date": {
+      "from": 61,
+      "to": 64,
+      "precision": "range",
+      "approx": true,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "c. 61-64 e.c. (encargado por Pablo de las congregaciones de la isla)"
+     },
+     "inferred": false,
+     "sources": [
+      "it-tito-persona",
+      "it-tito",
+      "tito-1",
+      "tito-2"
+     ],
+     "reason": "Tit 1:5: Pablo lo dejó en Creta para corregir lo que faltaba y nombrar ancianos; Tit 2:15: allí debía aconsejar y censurar con autoridad. Perspicacia «Tito» lo fecha hacia 61-64 y cree que el encargo fue pasajero.",
+     "checked_on": "2026-10-14",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "events",
+   "id": "tito-queda-en-creta",
+   "campo": "narrative_order",
+   "antes": null,
+   "despues": {
+    "series": "hechos",
+    "order": 2842
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "events",
+   "id": "tito-queda-en-creta",
+   "campo": "note",
+   "antes": null,
+   "despues": "Orden 2842 de la serie hechos: tras el primer encierro (hasta 2840) y antes de dejar a Timoteo en Éfeso (2845), como las paradas 2 y 3 de ultimos-anos-de-pablo. Ninguna fuente fija ese orden."
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "tito",
+   "campo": "sources",
+   "valores": [
+    "tito-2"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "tito",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "lived_in",
+     "place": "creta",
+     "date": {
+      "from": 61,
+      "to": 64,
+      "precision": "range",
+      "approx": true,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "c. 61-64 e.c. (encargado por Pablo de las congregaciones de la isla)"
+     },
+     "inferred": false,
+     "sources": [
+      "tito-2"
+     ],
+     "reason": "Tit 2:15: en Creta debía aconsejar y censurar con toda autoridad.",
+     "checked_on": "2026-10-14",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "tiquico",
+   "campo": "sources",
+   "valores": [
+    "tito-3"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "tiquico",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "accompanies",
+     "person": "pablo",
+     "date": {
+      "from": 61,
+      "to": 64,
+      "precision": "range",
+      "approx": true,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "c. 61-64 e.c."
+     },
+     "inferred": true,
+     "sources": [
+      "it-tiquico",
+      "tito-3",
+      "tnm-tabla"
+     ],
+     "reason": "Tit 3:12: ya libre, Pablo piensa enviar a Creta a Tíquico o a Ártemas (Perspicacia «Tíquico»); de ahí deducimos que estaba con él. Carta de c. 61-64 (Tabla de los libros).",
+     "checked_on": "2026-10-14",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "people",
+   "id": "tiquico",
+   "campo": "summary",
+   "antes": "Ayudante de Pablo, del distrito de Asia. Volvió con él de Grecia, llevó sus cartas a Éfeso y Colosas con Onésimo y más tarde fue enviado a Éfeso.",
+   "despues": "Ayudante de Pablo, del distrito de Asia. Volvió con él de Grecia y llevó sus cartas a Éfeso y Colosas con Onésimo. Ya libre, Pablo pensó mandarlo a Creta, y más tarde lo envió a Éfeso.",
+   "historial": {
+    "date": "2026-10-14",
+    "change": "El resumen saltaba de las cartas del primer encierro a 2 Timoteo; añade que, ya libre Pablo, pensó enviarlo a Creta (Tit 3:12).",
+    "source": "tito-3"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "people",
+   "id": "tiquico",
+   "campo": "reason",
+   "antes": "Perspicacia «Tíquico», que sigue Hechos 20, las cartas a Éfeso y Colosas y 2 Timoteo 4. Fechas del estudio 3 (párr. 26) y de la Tabla de los libros.",
+   "despues": "Perspicacia «Tíquico», que sigue Hechos 20, las cartas a Éfeso y Colosas, Tito 3 y 2 Timoteo 4. Fechas del estudio 3 (párr. 26) y de la Tabla de los libros.",
+   "historial": {
+    "date": "2026-10-14",
+    "change": "La razón nombra también Tito 3, que Perspicacia «Tíquico» sigue.",
+    "source": "tito-3"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "apolos",
+   "campo": "sources",
+   "valores": [
+    "tito-3",
+    "tnm-tabla"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "people",
+   "id": "apolos",
+   "campo": "date",
+   "antes": {
+    "from": 52,
+    "to": 55,
+    "precision": "range",
+    "approx": true,
+    "type": "anchored",
+    "chronology": "tnm",
+    "text": "c. 52-55 e.c."
+   },
+   "despues": {
+    "from": 52,
+    "to": 64,
+    "precision": "range",
+    "approx": true,
+    "type": "anchored",
+    "chronology": "tnm",
+    "text": "c. 52-64 e.c."
+   },
+   "historial": {
+    "date": "2026-10-14",
+    "change": "La fecha acababa en 55, pero Tit 3:13, de la carta de c. 61-64, aún lo nombra de viaje (Perspicacia «Apolos», último párrafo).",
+    "source": "tito-3"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "people",
+   "id": "apolos",
+   "campo": "summary",
+   "antes": "Judío de Alejandría, elocuente y buen conocedor de las Escrituras. Áquila y Priscila le explicaron mejor el camino de Dios en Éfeso hacia 52 y después ayudó en Corinto.",
+   "despues": "Judío de Alejandría, elocuente y buen conocedor de las Escrituras. Áquila y Priscila le explicaron mejor el camino de Dios en Éfeso hacia 52; ayudó en Corinto y, hacia 61-64, Pablo pidió a Tito que lo proveyera para un viaje.",
+   "historial": {
+    "date": "2026-10-14",
+    "change": "El resumen acababa en Corinto; añade su última mención, el viaje de Tit 3:13.",
+    "source": "tito-3"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "people",
+   "id": "apolos",
+   "campo": "reason",
+   "antes": "Perspicacia «Apolos» (párr. 1 y 2) y la nota de estudio de Hch 18:24; Hch 18:24-28; 1Co 3:6.",
+   "despues": "Perspicacia «Apolos» (párr. 1 y 2) y la nota de estudio de Hch 18:24; Hch 18:24-28; 1Co 3:6. Su última mención es Tit 3:13, en la carta de c. 61-64.",
+   "historial": {
+    "date": "2026-10-14",
+    "change": "La razón cita Tit 3:13, que sostiene la nueva fecha y el resumen.",
+    "source": "tito-3"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "tito",
+   "campo": "sources",
+   "valores": [
+    "tito-3"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "tito",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "accompanies",
+     "person": "pablo",
+     "date": {
+      "from": 61,
+      "to": 64,
+      "precision": "range",
+      "approx": true,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "c. 61-64 e.c."
+     },
+     "inferred": false,
+     "sources": [
+      "tito-3"
+     ],
+     "reason": "Pablo lo deja en Creta tras su liberación y le pide reunirse con él en Nicópolis (Tit 1:5; 3:12).",
+     "checked_on": "2026-10-14",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "people",
+   "id": "tito",
+   "campo": "summary",
+   "antes": "Cristiano griego, colaborador de Pablo. Fue con él a Jerusalén en 49, ayudó a Corinto hacia 55, quedó en Creta para nombrar ancianos y después fue a Dalmacia.",
+   "despues": "Cristiano griego, colaborador de Pablo. Fue con él a Jerusalén en 49, ayudó a Corinto hacia 55 y quedó en Creta para nombrar ancianos, al parecer una tarea pasajera: Pablo lo llamó a Nicópolis. Después fue a Dalmacia.",
+   "historial": {
+    "date": "2026-10-14",
+    "change": "El resumen pasaba de Creta a Dalmacia sin la llamada a Nicópolis (Tit 3:12), por la que Perspicacia «Tito» ve probable que la tarea de Creta fuera pasajera.",
+    "source": "tito-3"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "people",
+   "id": "tito",
+   "campo": "reason",
+   "antes": "Perspicacia «Tito» (párr. 1 a 4); Gál 2:1-3; 2Co 7:6, 7; Tit 1:5; 2Ti 4:10.",
+   "despues": "Perspicacia «Tito» (párr. 1 a 4; el 3 ve pasajera la tarea de Creta); Gál 2:1-3; 2Co 7:6, 7; Tit 1:5; 3:12; 2Ti 4:10.",
+   "historial": {
+    "date": "2026-10-14",
+    "change": "La razón cita también Tit 3:12, que sostiene la llamada a Nicópolis del resumen, y señala el párr. 3 de Perspicacia «Tito», el que ve pasajera la tarea de Creta.",
+    "source": "tito-3"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "pablo",
+   "campo": "sources",
+   "valores": [
+    "tito-3"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "letters",
+   "id": "tito",
+   "campo": "people",
+   "valores": [
+    "artemas",
+    "zenas"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "nicopolis",
+   "campo": "sources",
+   "valores": [
+    "tito-3"
+   ]
+  }
+ ],
+ "preguntas": [
+  "Cargo de Tito (Tit 1:5; 2:15): las notas de estudio lo llaman superintendente viajante y anciano nombrado; el vocabulario no tiene overseer ni elder. ¿Se añade, con holds_office para Tito y Timoteo (1Ti 1; 4)?",
+  "Apolos hacia 61-64 (Tit 3:13): la nota ve posible que viajara como superintendente viajante. Ninguna fuente lo pone junto a Pablo, así que no lleva accompanies de esos años. ¿Se quiere una relación con caption, o ese cargo?",
+  "Zenas (Tit 3:13): «experto en la Ley», literalmente jurista (nomikós), al parecer de la Ley de Moisés. El vocabulario no tiene ese cargo y queda en su resumen. ¿Se añade una palabra?",
+  "Lugar de pablo-escribe-tito: la Tabla pone «Macedonia (?)» y Perspicacia «Tito, Carta a» solo lo ve posible, así que va con present vacío. ¿Se deja así o se sitúa a Pablo en Macedonia como deducción?",
+  "Paradas 4 y 5 de ultimos-anos-de-pablo: la 4 da por segura Macedonia para Tito y la 5 atribuye a «algunos» el arresto en Nicópolis que ve posible Perspicacia «Nicópolis». Tras integrar el PR 157, un cambiar de las ocho paradas."
+ ]
+}

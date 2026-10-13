@@ -1,0 +1,15 @@
+# biblical-atlas: fuentes de la cobertura de tito. Esquema en docs/investigacion/README.md.
+it-zenas:
+  title: Zenas
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zenas/
+  level: 1
+  published: null
+  checked_on: '2026-10-14'
+it-artemas:
+  title: Ártemas
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/%C3%81rtemas/
+  level: 1
+  published: null
+  checked_on: '2026-10-14'
