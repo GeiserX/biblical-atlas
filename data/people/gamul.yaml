@@ -1,0 +1,37 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: gamul
+name: Gamul
+names:
+- name: Gamul
+perspicacia: '1200001606'
+summary: Sacerdote de la línea de Aarón al que tocó encabezar el turno vigésimo segundo en tiempos de David.
+reason: Perspicacia «Gamul»; 1Cr 24:17.
+sources:
+- it-gamul
+- 1-cronicas-24
+links:
+- title: 'Perspicacia: «Gamul»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Gamul/
+  type: perspicacia
+relations:
+- type: kin
+  person: aaron
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-24
+  - it-gamul
+  reason: 1Cr 24:1 abre la lista de los descendientes de Aarón repartidos en turnos, y 24:17 da a esta casa el vigésimo segundo.
+  checked_on: '2026-10-12'
+  status: verified
+- type: holds_office
+  office: priest
+  inferred: false
+  sources:
+  - 1-cronicas-24
+  - it-gamul
+  reason: '1Cr 24:17: encabeza una de las casas sacerdotales de 24:4-6; Perspicacia «Gamul» lo trata como sacerdote.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

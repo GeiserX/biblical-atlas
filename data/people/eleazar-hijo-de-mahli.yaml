@@ -1,0 +1,48 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: eleazar-hijo-de-mahli
+name: Eleazar
+names:
+- name: Eleazar
+perspicacia: 1200001287#4
+disambiguation: El merarita hijo de Mahlí (1Cr 23:21, 22); no Eleazar hijo de Aarón ni los demás Eleazar que numera Perspicacia.
+distinct_from:
+- eleazar-hijo-de-aaron
+- eleazar-hijo-de-eliud
+- eleazar-hijo-de-dodo
+- eleazar-hijo-de-abinadab
+summary: Levita merarita, hijo de Mahlí. Murió sin hijos varones, y sus hijas se unieron en matrimonio con los hijos de Quis,
+  su hermano.
+reason: Perspicacia «Eleazar», núm. 4; 1Cr 23:21, 22; 24:28.
+sources:
+- it-eleazar
+- 1-cronicas-23
+- 1-cronicas-24
+links:
+- title: 'Perspicacia: «Eleazar»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Eleazar/
+  type: perspicacia
+relations:
+- type: kin
+  person: mahli-hijo-de-merari
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-23
+  - 1-cronicas-24
+  - it-eleazar
+  - it-mahli
+  reason: 1Cr 23:21 y 24:28 lo dan como hijo de Mahlí; Perspicacia «Mahlí», núm. 1, lo confirma.
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: quis-hijo-de-mahli
+  word: brother
+  inferred: false
+  sources:
+  - 1-cronicas-23
+  - it-quis
+  reason: 1Cr 23:21 nombra a Eleazar y Quis como hijos de Mahlí; Perspicacia «Quis», núm. 1, llama a Quis hermano de Eleazar.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

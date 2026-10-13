@@ -1,0 +1,47 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: heman-hijo-de-joel
+name: Hemán
+names:
+- name: Hemán
+perspicacia: 1200001982#2
+disambiguation: Hemán hijo de Joel (1Cr 6:33); no es ninguno de los otros Hemán que numera Perspicacia «Hemán».
+distinct_from:
+- heman-el-ezrahita
+summary: Cantor levita cohatita, nieto del profeta Samuel. Tocó los címbalos de cobre cuando subió el Arca y después sirvió
+  con Jedutún en el tabernáculo de Gabaón. Tuvo catorce hijos y tres hijas.
+reason: Perspicacia «Hemán», núm. 2; 1Cr 6:33; 15:17, 19; 16:41, 42; 25:4, 5.
+sources:
+- it-heman
+- 1-cronicas-6
+- 1-cronicas-15
+- 1-cronicas-16
+- 1-cronicas-25
+links:
+- title: 'Perspicacia: «Hemán»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hem%C3%A1n/
+  type: perspicacia
+relations:
+- type: kin
+  person: joel-hijo-de-samuel
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-6
+  - it-joel
+  - 1-cronicas-15
+  reason: '1Cr 6:33: Hemán, «hijo de Joel, hijo de Samuel».'
+  checked_on: '2026-10-12'
+  status: verified
+- type: tie
+  person: david
+  word: master
+  inferred: false
+  sources:
+  - 1-cronicas-25
+  - it-heman
+  reason: '1Cr 25:6: los tres jefes de los cantores, Hemán entre ellos, dependían del rey; 25:5 llama a Hemán hombre de visiones
+    del rey.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

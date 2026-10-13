@@ -1,0 +1,43 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: rehabias
+name: Rehabías
+names:
+- name: Rehabías
+perspicacia: '1200003678'
+summary: Levita, hijo único de Eliezer y nieto de Moisés. Tuvo muchísimos hijos, y la familia que fundó seguía existiendo
+  en el reinado de David.
+reason: Perspicacia «Rehabías»; 1Cr 23:17; 24:21.
+sources:
+- it-rehabias
+- 1-cronicas-23
+- 1-cronicas-24
+- it-eliezer
+- 1-cronicas-26
+links:
+- title: 'Perspicacia: «Rehabías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Rehab%C3%ADas/
+  type: perspicacia
+relations:
+- type: kin
+  person: eliezer-hijo-de-moises
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-23
+  - it-rehabias
+  - 1-cronicas-26
+  reason: 1Cr 23:17 dice que Eliezer no tuvo más hijos que él; Perspicacia «Rehabías» lo llama hijo único de Eliezer.
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: moises
+  word: grandfather
+  inferred: false
+  sources:
+  - 1-cronicas-26
+  - it-rehabias
+  reason: 1Cr 26:24, 25 lo pone en la línea de Moisés por Eliezer; Perspicacia «Rehabías» lo llama nieto de Moisés.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

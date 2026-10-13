@@ -1,0 +1,32 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: penuel-padre-de-guedor
+name: Penuel
+names:
+- name: Penuel
+perspicacia: 1200003432#1
+summary: Judaíta, padre de Guedor. Como Guedor es también una población de Judá, Perspicacia ve posible que la fundara o que
+  fuera antepasado de sus vecinos.
+reason: Perspicacia «Penuel»; 1Cr 4:4.
+sources:
+- it-penuel
+- 1-cronicas-4
+links:
+- title: 'Perspicacia: «Penuel»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Penuel/
+  type: perspicacia
+relations:
+- type: kin
+  person: hur-hijo-de-caleb
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-4
+  - it-hur
+  reason: '1Cr 4:4: «Esos fueron los hijos de Hur» cierra la lista de 4:3, 4.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+disambiguation: Penuel, judaíta padre de Guedor; no el benjamita hijo de Sasac.
+distinct_from:
+- penuel-hijo-de-sasac

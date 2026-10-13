@@ -1,0 +1,30 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: huram-de-benjamin
+name: Huram
+names:
+- name: Huram
+perspicacia: '1200002110'
+disambiguation: Huram el benjamita de la lista de Bela; no Hiram, rey de Tiro, ni el artesano Hiram, a quienes Crónicas llama
+  también Huram.
+summary: Benjamita, probablemente nieto o bisnieto de Benjamín por Bela e Irí. Perspicacia cree que, al parecer, es Hupim.
+reason: Perspicacia «Huram»; 1Cr 8:3-5.
+sources:
+- it-huram
+- 1-cronicas-8
+links:
+- title: 'Perspicacia: «Huram»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Huram/
+  type: perspicacia
+relations:
+- type: kin
+  person: bela-hijo-de-benjamin
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  - it-huram
+  reason: 1Cr 8:5 lo pone entre los hijos de Bela; Perspicacia «Huram» lo hace nieto o bisnieto de Benjamín por Bela e Irí.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

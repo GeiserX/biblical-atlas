@@ -19,6 +19,9 @@ sources:
 - genesis-46
 - genesis-49
 - exodo-1
+- 1-cronicas-2
+- 1-cronicas-7
+- 1-cronicas-8
 links:
 - title: 'Perspicacia: «Benjamín»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Benjam%C3%ADn/
@@ -37,8 +40,9 @@ relations:
   - genesis-44
   - genesis-46
   - genesis-49
+  - 1-cronicas-2
   reason: 'Perspicacia «Benjamín», párr. 2: Raquel lo dio a luz camino de Belén y murió en el parto (Gé 35:16-19).'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: kin
   person: raquel
@@ -100,5 +104,7 @@ relations:
   checked_on: '2026-09-29'
   status: verified
 perspicacia: 1200000640#1
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified
+distinct_from:
+- benjamin-hijo-de-bilhan

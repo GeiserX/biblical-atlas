@@ -1,0 +1,43 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: semaya-hijo-de-obed-edom
+name: Semaya
+names:
+- name: Semaya
+perspicacia: 1200004000#5
+disambiguation: El primogénito de Obed-Edom, portero (1Cr 26:4, 6); no Semaya el profeta de Rehoboam ni los demás Semaya de
+  Perspicacia «Semaya».
+summary: Primogénito del coreíta Obed-Edom. Sus hijos, hombres fuertes y capaces, gobernaban la casa de su padre y guardaban
+  los almacenes del santuario.
+reason: Perspicacia «Semaya», núm. 5; 1Cr 26:4, 6, 7.
+sources:
+- it-semaya
+- 1-cronicas-26
+links:
+- title: 'Perspicacia: «Semaya»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Semaya/
+  type: perspicacia
+relations:
+- type: kin
+  person: obed-edom-coreita
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-26
+  - it-semaya
+  reason: '1Cr 26:4: el primero de los hijos de Obed-Edom.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- semaya-hijo-de-galal
+- semaya-hijo-de-hasub
+- semaya-hijo-de-joel
+- semaya-hijo-de-netanel
+- semaya-hijo-de-secanias
+- semaya-jefe-de-la-casa-de-elizafan
+- semaya-profeta
+- semaya-simeonita
+- semaya-de-nehelam
+- semaya-padre-de-delaya
+- semaya-padre-de-uriya

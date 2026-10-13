@@ -1,0 +1,50 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: elzabad-hijo-de-semaya
+name: Elzabad
+names:
+- name: Elzabad
+perspicacia: 1200001346#2
+disambiguation: El hijo de Semaya, portero (1Cr 26:7); no Elzabad el gadita que se unió a David (Perspicacia «Elzabad», núm.
+  1 y 2).
+summary: Levita coreíta, nieto de Obed-Edom por su hijo Semaya. Hombre capaz, hizo de portero en el reinado de David.
+reason: Perspicacia «Elzabad», núm. 2; 1Cr 26:7.
+sources:
+- it-elzabad
+- 1-cronicas-26
+links:
+- title: 'Perspicacia: «Elzabad»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Elzabad/
+  type: perspicacia
+relations:
+- type: kin
+  person: semaya-hijo-de-obed-edom
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-26
+  - it-elzabad
+  reason: 1Cr 26:7 lo cuenta entre los hijos de Semaya.
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: elihu-portero
+  word: brother
+  inferred: false
+  sources:
+  - 1-cronicas-26
+  reason: '1Cr 26:7: Elihú y Semakías eran hermanos de Elzabad.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: semakias
+  word: brother
+  inferred: false
+  sources:
+  - 1-cronicas-26
+  reason: '1Cr 26:7: Elihú y Semakías eran hermanos de Elzabad.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- elzabad-el-gadita

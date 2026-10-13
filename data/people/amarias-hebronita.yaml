@@ -1,0 +1,37 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: amarias-hebronita
+name: Amarías
+names:
+- name: Amarías
+perspicacia: 1200000219#2
+disambiguation: El hebronita de 1Cr 23:19 y 24:23; no Amarías el antepasado de Sofonías ni los demás Amarías que numera Perspicacia.
+distinct_from:
+- amarias-hijo-de-ezequias
+- amarias-hijo-de-azarias
+- amarias-hijo-de-merayot
+summary: Levita descendiente de Hebrón, hijo de Cohat, segundo en la lista de los hebronitas cuando David reorganizó el servicio
+  del templo.
+reason: Perspicacia «Amarías», núm. 2; 1Cr 23:19; 24:23.
+sources:
+- it-amarias
+- 1-cronicas-23
+- 1-cronicas-24
+links:
+- title: 'Perspicacia: «Amarías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Amar%C3%ADas/
+  type: perspicacia
+relations:
+- type: kin
+  person: hebron-hijo-de-cohat
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-23
+  - 1-cronicas-24
+  - it-amarias
+  reason: 1Cr 23:19 y 24:23 lo ponen segundo entre los hijos de Hebrón; Perspicacia «Amarías», núm. 2, lo llama descendiente
+    de Hebrón.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

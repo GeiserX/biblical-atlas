@@ -1,0 +1,31 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jahaziel-trompetista
+name: Jahaziel
+names:
+- name: Jahaziel
+perspicacia: 1200002291#3
+disambiguation: El sacerdote trompetista de David; no el hebronita (núm. 1), ni el de Ziclag (núm. 2), ni el levita que animó
+  a Jehosafat (núm. 4), según Perspicacia «Jahaziel».
+summary: Sacerdote que, con Benaya, tocaba de continuo la trompeta delante del Arca después de que David la llevara a Jerusalén.
+reason: Perspicacia «Jahaziel», núm. 3; 1Cr 16:6.
+sources:
+- it-jahaziel
+- 1-cronicas-16
+links:
+- title: 'Perspicacia: «Jahaziel»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jahaziel/
+  type: perspicacia
+relations:
+- type: holds_office
+  office: priest
+  inferred: false
+  sources:
+  - 1-cronicas-16
+  reason: 1Cr 16:6 lo cuenta entre los sacerdotes que tocaban las trompetas delante del Arca.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- jahaziel-guerrero-de-david
+- jahaziel-hijo-de-hebron

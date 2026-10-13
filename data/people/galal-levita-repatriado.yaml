@@ -1,0 +1,30 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: galal-levita-repatriado
+name: Galal
+names:
+- name: Galal
+perspicacia: 1200001593#1
+summary: Levita que volvió del destierro en Babilonia y vivió en Jerusalén. Perspicacia lo separa del Galal hijo de Jedutún.
+reason: Perspicacia «Galal», núm. 1; 1Cr 9:15.
+sources:
+- it-galal
+- 1-cronicas-9
+links:
+- title: 'Perspicacia: «Galal»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Galal/
+  type: perspicacia
+relations:
+- type: lived_in
+  place: jerusalen
+  inferred: false
+  sources:
+  - 1-cronicas-9
+  - it-galal
+  reason: '1Cr 9:15, 34: de los jefes de los levitas que vivían en Jerusalén.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- galal-hijo-de-jedutun
+disambiguation: 'Galal núm. 1 de Perspicacia: levita que volvió del destierro. No el hijo de Jedutún.'

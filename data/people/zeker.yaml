@@ -1,0 +1,50 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: zeker
+name: Zéker
+names:
+- name: Zéker
+- name: Zacarías
+  note: 'Así lo llama 1Cr 9:37. Perspicacia «Zéker» y «Zacarías», núm. 1: Zéker es la forma abreviada de Zacarías.'
+perspicacia: '1200004683'
+summary: Benjamita, descendiente de Jeiel, el padre de Gabaón. En 1Cr 9:37 se le llama Zacarías.
+reason: Perspicacia «Zéker»; 1Cr 8:29-31.
+sources:
+- it-zeker
+- 1-cronicas-8
+- it-zacarias
+- 1-cronicas-9
+links:
+- title: 'Perspicacia: «Zéker»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Z%C3%A9ker/
+  type: perspicacia
+relations:
+- type: kin
+  person: jeiel-de-gabaon
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  - it-zeker
+  - 1-cronicas-9
+  - it-zacarias
+  reason: 1Cr 8:31 lo pone entre los hijos de Jeiel; Perspicacia «Zéker» lo llama descendiente de Jeiel.
+  checked_on: '2026-10-12'
+  status: verified
+disambiguation: 'Zéker, llamado Zacarías en 1Cr 9:37: benjamita de la familia de Jeiel de Gabaón (Perspicacia «Zacarías»,
+  núm. 1). No el portero hijo de Meselemías, el profeta ni los demás Zacarías.'
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- zacarias-abuelo-de-ezequias
+- zacarias-de-israel
+- zacarias-descendiente-de-isias
+- zacarias-el-rubenita
+- zacarias-hijo-de-hosa
+- zacarias-hijo-de-jeberekias
+- zacarias-hijo-de-jehoiada
+- zacarias-hijo-de-meselemias
+- zacarias-musico
+- zacarias-padre-de-ido
+- zacarias-padre-de-juan
+- zacarias-profeta
+- zacarias-trompetista

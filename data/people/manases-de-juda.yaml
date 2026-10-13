@@ -23,6 +23,7 @@ sources:
 - mateo-1
 - 2-reyes-20
 - jeremias-15
+- 1-cronicas-3
 links:
 - title: 'Perspicacia: «Manasés»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Manas%C3%A9s/
@@ -41,6 +42,7 @@ relations:
   - mateo-1
   - 2-reyes-21
   - jeremias-15
+  - 1-cronicas-3
   reason: Hijo y sucesor de Ezequías (2Re 20:21).
   checked_on: '2026-10-12'
   status: verified

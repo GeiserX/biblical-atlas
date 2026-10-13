@@ -34,6 +34,7 @@ sources:
 - si-3
 - tnm-b7
 - it-hiram
+- 1-cronicas-14
 links:
 - title: 'Perspicacia: «Hiram»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hiram/
@@ -41,5 +42,5 @@ links:
 - title: 2 Samuel 5 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-samuel/5/
   type: bible
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

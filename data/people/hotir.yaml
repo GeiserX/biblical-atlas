@@ -1,0 +1,28 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hotir
+name: Hotir
+names:
+- name: Hotir
+perspicacia: '1200002093'
+summary: Hijo de Hemán que, con sus hijos y hermanos, formó el grupo 21 de músicos del santuario.
+reason: Perspicacia «Hotir»; 1Cr 25:4, 28.
+sources:
+- it-hotir
+- 1-cronicas-25
+links:
+- title: 'Perspicacia: «Hotir»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hotir/
+  type: perspicacia
+relations:
+- type: kin
+  person: heman-hijo-de-joel
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-25
+  - it-hotir
+  reason: 1Cr 25:4, 28 lo cuenta entre los hijos de Hemán.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

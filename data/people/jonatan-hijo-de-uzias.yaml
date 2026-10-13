@@ -1,0 +1,49 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jonatan-hijo-de-uzias
+name: Jonatán
+names:
+- name: Jonatán
+perspicacia: 1200002506#6
+disambiguation: Jonatán hijo de Uzías, guarda de los almacenes de David; no el sobrino de David, ni el hijo de Saúl, ni el
+  de Abiatar.
+distinct_from:
+- jonatan-hijo-de-sague
+- jonatan-levita
+- jonatan-hijo-de-sama
+- jonatan-hijo-de-abiatar
+- jonatan-hijo-de-saul
+- jonatan-sobrino-de-david
+- jonatan-hijo-de-jada
+- jonatan-hijo-de-carea
+summary: Hijo de Uzías. Guardaba los almacenes del rey David repartidos por el campo, ciudades, aldeas y torres, aparte del
+  tesoro que el rey tenía en Jerusalén.
+reason: Perspicacia «Jonatán», núm. 6; 1Cr 27:25.
+sources:
+- it-jonatan
+- 1-cronicas-27
+links:
+- title: 'Perspicacia: «Jonatán»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jonat%C3%A1n/
+  type: perspicacia
+relations:
+- type: kin
+  person: uzias-padre-de-jonatan
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-27
+  reason: '1Cr 27:25: Jonatán hijo de Uzías.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: tie
+  person: david
+  word: master
+  inferred: false
+  sources:
+  - 1-cronicas-27
+  reason: '1Cr 27:25, 31: guardaba los almacenes de fuera de la capital; era uno de los que administraban la hacienda del
+    rey.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

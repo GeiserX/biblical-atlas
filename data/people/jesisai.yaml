@@ -1,0 +1,29 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jesisai
+name: Jesisái
+names:
+- name: Jesisái
+- name: Jesisai
+  note: Grafía de Perspicacia.
+perspicacia: '1200002444'
+summary: Gadita, hijo de Jahdó y padre de Miguel, en la línea de Abihail.
+reason: Perspicacia «Jesisai»; 1Cr 5:14.
+sources:
+- it-jesisai
+- 1-cronicas-5
+links:
+- title: 'Perspicacia: «Jesisai»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jesisai/
+  type: perspicacia
+relations:
+- type: kin
+  person: jahdo
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-5
+  reason: 1Cr 5:14 da la línea de padre a hijo, de Buz a Abihail.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

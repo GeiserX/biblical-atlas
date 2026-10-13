@@ -1,0 +1,29 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: estemoa-el-maacatita
+name: Estemoa
+names:
+- name: Estemoa
+perspicacia: 1200001427#2
+disambiguation: Estemoa el maacatita (núm. 2 de Perspicacia); no la ciudad de Estemoa.
+summary: Maacatita descendiente de Hodías, en la genealogía de Judá.
+reason: Perspicacia «Estemoa, Estemó»; 1Cr 4:19.
+sources:
+- it-estemoa
+- 1-cronicas-4
+links:
+- title: 'Perspicacia: «Estemoa, Estemó»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Estemoa-Estem%C3%B3/
+  type: perspicacia
+relations:
+- type: kin
+  person: hodias-cunado-de-naham
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-4
+  - it-estemoa
+  reason: '1Cr 4:19: desciende de la esposa de Hodías, cuyos hijos fueron padres de Estemoa el maacatita.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

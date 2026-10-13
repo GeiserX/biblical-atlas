@@ -1,0 +1,31 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: siquem-hijo-de-semida
+name: Siquem
+names:
+- name: Siquem
+perspicacia: 1200003978#3
+disambiguation: Siquem hijo de Semidá; no Siquem hijo de Galaad, su tío, ni el hijo de Hamor ni la ciudad.
+distinct_from:
+- siquem-hijo-de-galaad
+- siquem-hijo-de-hamor
+summary: Manasita, hijo de Semidá.
+reason: Perspicacia «Siquem», núm. 3; 1Cr 7:14, 19.
+sources:
+- it-siquem
+- 1-cronicas-7
+links:
+- title: 'Perspicacia: «Siquem»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Siquem/
+  type: perspicacia
+relations:
+- type: kin
+  person: semida
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-7
+  reason: 1Cr 7:19 lo cuenta entre los hijos de Semidá.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

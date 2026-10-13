@@ -1,0 +1,31 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: abisua-de-benjamin
+name: Abisúa
+names:
+- name: Abisúa
+perspicacia: 1200000052#1
+disambiguation: Abisúa de Benjamín, de la familia de Bela; no Abisúa hijo de Finehás, antepasado de Esdras.
+summary: Benjamita de la familia de Bela. Al parecer era hijo suyo, aunque las listas no coinciden y algunos entienden descendiente.
+reason: Perspicacia «Abisúa», núm. 1; 1Cr 8:1-4.
+sources:
+- it-abisua
+- 1-cronicas-8
+links:
+- title: 'Perspicacia: «Abisúa»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Abis%C3%BAa/
+  type: perspicacia
+relations:
+- type: kin
+  person: bela-hijo-de-benjamin
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  - it-abisua
+  reason: 1Cr 8:4 lo pone entre los hijos de Bela; Perspicacia «Abisúa», núm. 1, ve posible que «hijos» signifique aquí descendientes.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- abisua-hijo-de-finehas

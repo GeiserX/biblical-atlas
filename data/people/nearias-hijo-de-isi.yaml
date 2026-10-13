@@ -1,0 +1,40 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: nearias-hijo-de-isi
+name: Nearías
+names:
+- name: Nearías
+perspicacia: 1200003194#1
+disambiguation: Nearías hijo de Isí, simeonita (núm. 1 de Perspicacia); no el descendiente de David hijo de Semaya.
+summary: Simeonita, hijo de Isí. Con sus tres hermanos guió a 500 hombres que vencieron a los amalequitas del monte Seír y
+  se quedaron a vivir allí.
+reason: Perspicacia «Nearías»; 1Cr 4:42, 43.
+sources:
+- it-nearias
+- 1-cronicas-4
+links:
+- title: 'Perspicacia: «Nearías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Near%C3%ADas/
+  type: perspicacia
+relations:
+- type: kin
+  person: isi-simeonita
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-4
+  - it-isi
+  reason: '1Cr 4:42: uno de los hijos de Isí.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: lived_in
+  place: seir
+  inferred: false
+  sources:
+  - 1-cronicas-4
+  reason: '1Cr 4:42, 43: los simeonitas que guiaba se quedaron a vivir en el monte Seír.'
+  checked_on: '2026-10-12'
+  status: verified
+distinct_from:
+- nearias-hijo-de-semaya
+checked_on: '2026-10-12'
+status: verified

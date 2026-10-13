@@ -1,0 +1,32 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ziletai-de-manases
+name: Ziletái
+names:
+- name: Ziletái
+- name: Ziletai
+perspicacia: 1200004733#2
+disambiguation: Ziletái de Manasés, jefe de mil con David (1Cr 12:20); no el benjaminita hijo de Simeí.
+distinct_from:
+- ziletai-hijo-de-simei
+summary: Jefe de mil de Manasés que dejó a Saúl y se pasó a David cuando iba a Ziclag. Luchó con él contra la banda de saqueadores
+  y fue jefe de su ejército.
+reason: Perspicacia «Ziletai», núm. 2; 1Cr 12:19-21.
+sources:
+- it-ziletai
+- 1-cronicas-12
+links:
+- title: 'Perspicacia: «Ziletai»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ziletai/
+  type: perspicacia
+relations:
+- type: tie
+  person: david
+  word: master
+  inferred: false
+  sources:
+  - 1-cronicas-12
+  reason: '1Cr 12:20, 21: se pasó a David, lo ayudó contra los saqueadores y llegó a ser jefe en su ejército.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

@@ -25,6 +25,7 @@ sources:
 - tnm-a6-a
 - mateo-1
 - 1-reyes-14
+- 1-cronicas-3
 links:
 - title: 'Perspicacia: «Abías»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ab%C3%ADas/
@@ -43,8 +44,9 @@ relations:
   - mateo-1
   - 1-reyes-14
   - 1-reyes-15
+  - 1-cronicas-3
   reason: Rehoboam lo prefirió entre sus hijos para sucederle (2Cr 11:20-22).
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-12'
   status: verified
 - type: succeeds
   person: rehoboam
@@ -119,10 +121,12 @@ history:
 - date: '2026-09-30'
   change: 1Re 14:31 ya lo llama Abiyam; la nota solo citaba el capítulo 15.
   source: 1-reyes-14
-checked_on: '2026-09-30'
+checked_on: '2026-10-12'
 status: verified
 distinct_from:
 - abias-de-tiempos-de-david
 - abias-hijo-de-samuel
 - abias-hijo-de-jeroboan
 - abias-hija-de-zacarias
+- abias-esposa-de-hezron
+- abias-hijo-de-beker

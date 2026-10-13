@@ -1,0 +1,33 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jehu-hijo-de-obed
+name: Jehú
+names:
+- name: Jehú
+perspicacia: 1200002401#4
+summary: Hijo de Obed y padre de Azarías, de la familia de Jerahmeel en Judá. Su línea venía de Atái, hijo del egipcio Jarhá.
+reason: Perspicacia «Jehú», núm. 4; 1Cr 2:38.
+sources:
+- it-jehu
+- 1-cronicas-2
+links:
+- title: 'Perspicacia: «Jehú»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jeh%C3%BA/
+  type: perspicacia
+relations:
+- type: kin
+  person: obed-hijo-de-eflal
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-2
+  reason: '1Cr 2:38: Obed fue su padre.'
+  checked_on: '2026-10-12'
+  status: verified
+disambiguation: Jehú hijo de Obed, de Judá; no Jehú, el rey de Israel, ni el profeta Jehú hijo de Hananí.
+distinct_from:
+- jehu-hijo-de-hanani
+- jehu-de-israel
+- jehu-el-anatotita
+- jehu-hijo-de-josibias
+checked_on: '2026-10-12'
+status: verified

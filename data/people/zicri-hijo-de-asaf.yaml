@@ -1,0 +1,37 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: zicri-hijo-de-asaf
+name: Zicrí
+names:
+- name: Zicrí
+perspicacia: 1200004728#5
+summary: Levita, hijo de Asaf y antepasado del músico Matanías, que vivió después del destierro. Perspicacia cree que en otras
+  listas se le llama Zabdí y Zacur.
+reason: Perspicacia «Zicrí», núm. 5; 1Cr 9:15.
+sources:
+- it-zicri
+- 1-cronicas-9
+links:
+- title: 'Perspicacia: «Zicrí»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zicr%C3%AD/
+  type: perspicacia
+relations:
+- type: kin
+  person: asaf-hijo-de-berekias
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-9
+  - it-zicri
+  reason: '1Cr 9:15: Zicrí, hijo de Asaf; Perspicacia «Zicrí», núm. 5, lo llama hijo de Asaf.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- zicri-descendiente-de-eliezer
+- zicri-descendiente-de-jeroham
+- zicri-descendiente-de-sasac
+- zicri-descendiente-de-simei
+- zicri-hijo-de-izhar
+- zicri-padre-de-eliezer
+disambiguation: 'Zicrí núm. 5 de Perspicacia: levita, hijo de Asaf. No el hijo de Izhar.'

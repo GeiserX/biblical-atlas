@@ -174,7 +174,7 @@ El carril «Viajes de Pablo» enseña solo los viajes de Pablo: un tramo por via
 |---|---|
 | `index.html` | Estructura de la página, puntos de montaje de las vistas y carga de MapLibre, con versión fija y SRI |
 | `acerca.html` | Qué es el proyecto, cómo se lee, cómo tratamos las fuentes, gracias con cada licencia y cómo proponer una corrección. Su único script apunta «Volver al mapa» a la vista de `?desde=…` |
-| `calendario.html` | «El calendario de la Biblia»: los hechos de `explicacion` y la tabla de los trece meses, leídos de `data.json` (o de `data.js` desde `file://`). Acepta `?datos=_local/…` como `index.html` |
+| `calendario.html` | «El calendario de la Biblia»: los hechos de `explicacion` y la tabla de los trece meses, leídos de `data.core.json` con [`js/data-chunks.js`](js/data-chunks.js) (o de `data.js` desde `file://`), y los enlaces a sus fuentes, de `data.detail.json` cuando llega. Acepta `?datos=_local/…` como `index.html` |
 | [`js/`](js/) | La aplicación, partida en módulos (ver abajo) |
 | [`css/`](css/) | Estilos propios: `base.css`, `mapa.css`, `linea.css`, `estudio.css` y `tactil.css` (el último: pantallas táctiles), y `acerca.css` y `calendario.css` para las dos páginas sueltas |
 | `kit/` | Tokens, componentes y fuentes copiados del kit de maquetas. Las fuentes tienen licencia SIL OFL 1.1 |
@@ -190,7 +190,7 @@ El carril «Viajes de Pablo» enseña solo los viajes de Pablo: un tramo por via
 | `js/fundir-claves.js` | Script clásico sin `defer` y sin efectos: define `fundirClaves`, la regla para juntar dos juegos de claves guardadas. Lo de aquí manda, las notas se juntan por ficha y marcadores y capítulos leídos se unen. La usa `migrar-claves.js` |
 | `js/migrar-claves.js` | Script clásico sin `defer`, antes que ningún otro que lea el almacenamiento: junta las claves guardadas con el prefijo anterior con las del nuevo, `biblical-atlas:`, con `fundirClaves`. Nunca borra ni pisa. La marca `biblical-atlas:migrado` guarda una huella de cada clave antigua ya juntada: solo vuelve a juntar una que haya cambiado desde entonces |
 | `js/base.js` | Utilidades, estado, registro de tipos, selección, cursor, reproducción, dirección, bucle de pintado, teclado y arranque |
-| `js/data-chunks.js` | La carga de los datos (`BE.chunks`): el núcleo al arrancar, el detalle una sola vez cuando una ficha, el grafo, la conexión o la búsqueda lo piden, `?datos=` y `file://` |
+| `js/data-chunks.js` | La carga de los datos (`BE.chunks`): el núcleo al arrancar, el detalle una sola vez cuando una ficha, el grafo, la conexión o la búsqueda lo piden, o al cargar el mapa y como mucho a los tres segundos, `?datos=` y `file://`. También lo carga `calendario.html` |
 | `js/language.js` | El idioma de quien lee (prototipo de [`docs/ideas/ingles.md`](../docs/ideas/ingles.md)): `?lang=`, lo guardado y, tras el lanzamiento, el navegador; el botón de la barra y la entrada del menú Estudio; la capa `data.<idioma>.json` sobre los datos y `BE.t`, las cadenas de la interfaz con el catálogo de `i18n/<idioma>.js` |
 | `js/mapa.js` | MapLibre, relieve en cuatro extensiones, cortina, rutas, arcos de cartas, lugares inciertos, hallazgos, etiquetas, capas, leyenda y «Mientras tanto» |
 | `js/ficha.js` | Piezas comunes de las fichas: citas, fuentes y su marca (punto o aro), estado, «Por qué lo decimos», historial, «Proponer una corrección», nombres y vídeos |

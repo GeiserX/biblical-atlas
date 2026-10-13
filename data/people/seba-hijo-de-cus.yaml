@@ -16,6 +16,7 @@ reason: Perspicacia «Sebá», núm. 1 y 2; Gé 10:7.
 sources:
 - it-seba-cus
 - genesis-10
+- 1-cronicas-1
 links:
 - title: 'Perspicacia: «Sebá»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Seb%C3%A1/
@@ -30,8 +31,9 @@ relations:
   inferred: false
   sources:
   - genesis-10
+  - 1-cronicas-1
   reason: Gé 10:7 lo nombra el primero de los hijos de Cus.
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

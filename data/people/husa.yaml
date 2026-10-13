@@ -1,0 +1,29 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: husa
+name: Husá
+names:
+- name: Husá
+perspicacia: '1200002113'
+summary: Descendiente de Ézer, de Judá, o una población que él fundó. Si fue un lugar, quizá era el de Sibecai, uno de los
+  guerreros de David.
+reason: Perspicacia «Husá»; 1Cr 4:4.
+sources:
+- it-husa
+- 1-cronicas-4
+links:
+- title: 'Perspicacia: «Husá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hus%C3%A1/
+  type: perspicacia
+relations:
+- type: kin
+  person: ezer-hijo-de-hur
+  word: father
+  inferred: true
+  sources:
+  - 1-cronicas-4
+  - it-husa
+  reason: '1Cr 4:4: Ézer fue el padre de Husá; Perspicacia «Husá» duda entre un hijo y una ciudad que él fundó.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

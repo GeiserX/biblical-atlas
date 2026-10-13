@@ -59,6 +59,7 @@ sources:
 - 2-reyes-2
 - 2-reyes-17
 - 2-reyes-23
+- 1-cronicas-7
 links:
 - title: 'Perspicacia: «Betel»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Betel/
@@ -77,5 +78,5 @@ history:
   change: 'Se decide Luz: su límite se queda en 1473 a.e.c., cuando el relato vuelve a llamar Betel a la ciudad. La toma
     por la casa de José (Jue 1:22-26), que según Perspicacia pone fin al nombre Luz, no tiene año.'
   source: it-betel
-checked_on: '2026-09-30'
+checked_on: '2026-10-12'
 status: verified

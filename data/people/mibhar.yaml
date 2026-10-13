@@ -1,0 +1,37 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: mibhar
+name: Mibhar
+names:
+- name: Mibhar
+perspicacia: '1200003028'
+summary: Hijo de Hagrí y guerrero poderoso de David. Hay quien cree que el nombre nace de una mala lectura de «Baní el gadita»;
+  Perspicacia lo trata como hipótesis.
+reason: Perspicacia «Mibhar»; 1Cr 11:38.
+sources:
+- it-mibhar
+- 1-cronicas-11
+links:
+- title: 'Perspicacia: «Mibhar»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Mibhar/
+  type: perspicacia
+relations:
+- type: kin
+  person: hagri
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-11
+  reason: '1Cr 11:38: Mibhar hijo de Hagrí.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: tie
+  person: david
+  word: master
+  inferred: false
+  sources:
+  - 1-cronicas-11
+  reason: '1Cr 11:38: figura entre los valientes de David.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

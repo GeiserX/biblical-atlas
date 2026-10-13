@@ -1,0 +1,31 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: etan-hijo-de-zima
+name: Etán
+names:
+- name: Etán
+perspicacia: 1200001434#2
+disambiguation: Etán hijo de Zimá (1Cr 6:42); no es ninguno de los otros Etán que numera Perspicacia «Etán».
+distinct_from:
+- etan-el-ezrahita
+- etan-hijo-de-quisi
+summary: Levita guersonita, hijo de Zimá y padre de Adaya, en la línea de Asaf.
+reason: Perspicacia «Etán», núm. 2; 1Cr 6:42.
+sources:
+- it-etan
+- 1-cronicas-6
+links:
+- title: 'Perspicacia: «Etán»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Et%C3%A1n/
+  type: perspicacia
+relations:
+- type: kin
+  person: zima-hijo-de-simei
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-6
+  reason: '1Cr 6:42: Etán, «hijo de Zimá».'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

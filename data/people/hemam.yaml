@@ -11,6 +11,7 @@ reason: Perspicacia «Hemam»; Gé 36:22.
 sources:
 - it-hemam
 - genesis-36
+- 1-cronicas-1
 links:
 - title: 'Perspicacia: «Hemam»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hemam/
@@ -26,8 +27,9 @@ relations:
   sources:
   - it-hemam
   - genesis-36
+  - 1-cronicas-1
   reason: 'Gé 36:22: hijo de Lotán.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

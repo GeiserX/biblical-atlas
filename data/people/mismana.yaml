@@ -1,0 +1,28 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: mismana
+name: Mismaná
+names:
+- name: Mismaná
+perspicacia: '1200003082'
+summary: Gadita, el cuarto de los once guerreros de Gad que cruzaron el Jordán crecido para unirse a David en el desierto,
+  cuando Saúl lo perseguía.
+reason: Perspicacia «Mismaná»; 1Cr 12:8-15.
+sources:
+- it-mismana
+- 1-cronicas-12
+links:
+- title: 'Perspicacia: «Mismaná»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Misman%C3%A1/
+  type: perspicacia
+relations:
+- type: tie
+  person: david
+  word: master
+  inferred: false
+  sources:
+  - 1-cronicas-12
+  reason: '1Cr 12:8, 10, 14: gadita que se pasó a David y llegó a ser jefe de su ejército.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

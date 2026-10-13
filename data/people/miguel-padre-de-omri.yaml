@@ -1,0 +1,27 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: miguel-padre-de-omri
+name: Miguel
+names:
+- name: Miguel
+perspicacia: 1200003035#6
+disambiguation: Miguel de Isacar, padre de Omrí; no el aserita padre de Setur.
+distinct_from:
+- miguel-padre-de-setur
+- miguel-de-manases
+- miguel-descendiente-de-berias
+- miguel-hijo-de-abihail
+- miguel-hijo-de-baaseya
+- miguel-hijo-de-izrahias
+- miguel-hijo-de-jesisai
+summary: Hombre de Isacar, padre de Omrí, el príncipe de esa tribu en días de David.
+reason: Perspicacia «Miguel», núm. 6; 1Cr 27:18.
+sources:
+- it-miguel
+- 1-cronicas-27
+links:
+- title: 'Perspicacia: «Miguel»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Miguel/
+  type: perspicacia
+relations: []
+checked_on: '2026-10-12'
+status: verified

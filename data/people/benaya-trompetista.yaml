@@ -1,0 +1,37 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: benaya-trompetista
+name: Benaya
+names:
+- name: Benaya
+perspicacia: 1200000632#4
+disambiguation: El sacerdote trompetista; no el músico levita del mismo traslado (núm. 3), ni Benaya hijo de Jehoiadá, ni
+  el piratonita (Perspicacia «Benaya»).
+distinct_from:
+- benaya-hijo-de-jehoiada
+- benaya-el-piratonita
+- benaya-musico
+- benaya-simeonita
+summary: Sacerdote que tocó la trompeta delante del Arca cuando la subieron a Jerusalén y que, con Jahaziel, siguió tocándola
+  de continuo delante de ella.
+reason: Perspicacia «Benaya», núm. 4; 1Cr 15:24; 16:6.
+sources:
+- it-benaya
+- 1-cronicas-15
+- 1-cronicas-16
+links:
+- title: 'Perspicacia: «Benaya»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Benaya/
+  type: perspicacia
+relations:
+- type: holds_office
+  office: priest
+  inferred: false
+  sources:
+  - 1-cronicas-15
+  - 1-cronicas-16
+  reason: 1Cr 15:24 lo cuenta entre los sacerdotes que tocaban las trompetas delante del Arca; 16:6 lo nombra otra vez entre
+    los sacerdotes.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

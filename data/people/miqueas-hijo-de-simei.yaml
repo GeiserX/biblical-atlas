@@ -1,0 +1,34 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: miqueas-hijo-de-simei
+name: Miqueas
+names:
+- name: Miqueas
+perspicacia: 1200003032#4
+disambiguation: Miqueas hijo de Simeí (1Cr 5:5, 6); no es ninguno de los otros Miqueas que numera Perspicacia «Miqueas».
+distinct_from:
+- mica-hijo-de-mefiboset
+- micaya-padre-de-acbor
+- miqueas-de-efrain
+- miqueas-profeta
+- miqueas-uzielita
+summary: Rubenita, hijo de Simeí y padre de Reayá. De él descendía Beerá, el jefe que los asirios desterraron.
+reason: Perspicacia «Miqueas», núm. 4; 1Cr 5:5, 6.
+sources:
+- it-miqueas
+- 1-cronicas-5
+links:
+- title: 'Perspicacia: «Miqueas»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Miqueas/
+  type: perspicacia
+relations:
+- type: kin
+  person: simei-hijo-de-gog
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-5
+  reason: '1Cr 5:4, 5: «su hijo Miqueas», tras Simeí.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

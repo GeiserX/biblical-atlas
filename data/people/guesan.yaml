@@ -1,0 +1,27 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: guesan
+name: Guesán
+names:
+- name: Guesán
+perspicacia: '1200001665'
+summary: Judaíta, tercer hijo de Jahdái, contado entre los descendientes de Caleb.
+reason: Perspicacia «Guesán»; 1Cr 2:47.
+sources:
+- it-guesan
+- 1-cronicas-2
+links:
+- title: 'Perspicacia: «Guesán»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Gues%C3%A1n/
+  type: perspicacia
+relations:
+- type: kin
+  person: jahdai
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-2
+  reason: '1Cr 2:47: uno de los hijos de Jahdái.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

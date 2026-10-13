@@ -36,6 +36,8 @@ sources:
 - 2-samuel-21
 - 2-samuel-23
 - isaias-10
+- 1-cronicas-11
+- 1-cronicas-12
 links:
 - title: 'Perspicacia: «Guibeah»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Guibeah/
@@ -54,5 +56,5 @@ history:
 - date: '2026-09-29'
   change: La nota de Guibeá de Saúl añade 1Sa 11:4, donde sale ese nombre por primera vez.
   source: 1-samuel-11
-checked_on: '2026-09-30'
+checked_on: '2026-10-12'
 status: verified

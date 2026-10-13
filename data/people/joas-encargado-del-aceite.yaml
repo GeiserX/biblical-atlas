@@ -1,0 +1,37 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: joas-encargado-del-aceite
+name: Joás
+names:
+- name: Joás
+perspicacia: 1200002474#5
+disambiguation: Joás, encargado del aceite de David; no el padre de Gedeón, ni el de la corte de Acab, ni los reyes llamados
+  también Jehoás.
+distinct_from:
+- jehoas-de-israel
+- joas-padre-de-gedeon
+- joas-hijo-del-rey
+- jehoas-de-juda
+- joas-de-benjamin
+- joas-descendiente-de-sela
+- joas-hijo-de-semaa
+summary: Funcionario del rey David puesto al frente de los almacenes de aceite.
+reason: Perspicacia «Joás», núm. 5; 1Cr 27:28.
+sources:
+- it-joas
+- 1-cronicas-27
+links:
+- title: 'Perspicacia: «Joás»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jo%C3%A1s/
+  type: perspicacia
+relations:
+- type: tie
+  person: david
+  word: master
+  inferred: false
+  sources:
+  - 1-cronicas-27
+  reason: '1Cr 27:28, 31: tenía a su cargo los almacenes de aceite; era uno de los que administraban la hacienda del rey.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

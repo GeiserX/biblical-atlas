@@ -10,6 +10,10 @@ distinct_from:
 - jehoas-de-juda
 - joas-padre-de-gedeon
 - joas-hijo-del-rey
+- joas-descendiente-de-sela
+- joas-de-benjamin
+- joas-hijo-de-semaa
+- joas-encargado-del-aceite
 date:
   from: -861
   to: -843
@@ -94,5 +98,5 @@ relations:
   checked_on: '2026-09-30'
   status: verified
 perspicacia: 1200002373#2
-checked_on: '2026-09-30'
+checked_on: '2026-10-12'
 status: verified

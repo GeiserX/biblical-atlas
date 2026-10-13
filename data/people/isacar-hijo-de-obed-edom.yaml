@@ -1,0 +1,31 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: isacar-hijo-de-obed-edom
+name: Isacar
+names:
+- name: Isacar
+perspicacia: 1200002230#3
+disambiguation: El hijo de Obed-Edom, portero (1Cr 26:5); no Isacar el hijo de Jacob (Perspicacia «Isacar», núm. 1 y 3).
+summary: Séptimo hijo de Obed-Edom. Con su familia hacía guardia al sur del santuario.
+reason: Perspicacia «Isacar», núm. 3; 1Cr 26:5.
+sources:
+- it-isacar
+- 1-cronicas-26
+links:
+- title: 'Perspicacia: «Isacar»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Isacar/
+  type: perspicacia
+relations:
+- type: kin
+  person: obed-edom-coreita
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-26
+  - it-isacar
+  reason: '1Cr 26:5: el séptimo de los hijos de Obed-Edom.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- isacar-hijo-de-jacob

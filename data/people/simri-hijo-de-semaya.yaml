@@ -1,0 +1,32 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: simri-hijo-de-semaya
+name: Simrí
+names:
+- name: Simrí
+perspicacia: 1200004052#1
+summary: Simeonita, hijo de Semaya y antepasado de Zizá.
+reason: Perspicacia «Simrí»; 1Cr 4:34-37.
+sources:
+- it-simri
+- 1-cronicas-4
+links:
+- title: 'Perspicacia: «Simrí»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Simr%C3%AD/
+  type: perspicacia
+relations:
+- type: kin
+  person: semaya-simeonita
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-4
+  - it-simri
+  reason: '1Cr 4:37: Simrí hijo de Semaya.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+disambiguation: Simrí, simeonita hijo de Semaya; no el levita hijo de Hosá ni el padre de Jediael, guerrero de David.
+distinct_from:
+- simri-hijo-de-hosa
+- simri-padre-de-jediael

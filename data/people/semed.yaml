@@ -1,0 +1,29 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: semed
+name: Sémed
+names:
+- name: Sémed
+perspicacia: '1200004003'
+summary: Benjamita de la casa de Elpaal y cabeza de una casa de antepasados. Se le atribuye la construcción de Onó y de Lod
+  con sus pueblos.
+reason: Perspicacia «Sémed»; 1Cr 8:1, 12, 13.
+sources:
+- it-semed
+- 1-cronicas-8
+links:
+- title: 'Perspicacia: «Sémed»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/S%C3%A9med/
+  type: perspicacia
+relations:
+- type: kin
+  person: elpaal
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  - it-semed
+  reason: 1Cr 8:12 lo pone entre los hijos de Elpaal; Perspicacia «Sémed» no precisa si era hijo o descendiente.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

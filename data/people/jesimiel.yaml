@@ -1,0 +1,26 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jesimiel
+name: Jesimiel
+names:
+- name: Jesimiel
+perspicacia: '1200002448'
+summary: Jefe de Simeón que, reinando Ezequías, extendió las tierras de su tribu hacia el este del valle de Guedor.
+reason: Perspicacia «Jesimiel»; 1Cr 4:34-41.
+sources:
+- it-jesimiel
+- 1-cronicas-4
+links:
+- title: 'Perspicacia: «Jesimiel»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jesimiel/
+  type: perspicacia
+relations:
+- type: lived_in
+  place: guedor-de-simeon
+  inferred: false
+  sources:
+  - 1-cronicas-4
+  reason: '1Cr 4:41: los jefes de la lista se establecieron en los pastos de Guedor.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

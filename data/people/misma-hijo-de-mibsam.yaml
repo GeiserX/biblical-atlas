@@ -1,0 +1,31 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: misma-hijo-de-mibsam
+name: Mismá
+names:
+- name: Mismá
+perspicacia: 1200003081#2
+disambiguation: Mismá simeonita (núm. 2 de Perspicacia); no el hijo de Ismael.
+summary: Simeonita, hijo de Mibsam y padre de Hamuel.
+reason: Perspicacia «Mismá»; 1Cr 4:25, 26.
+sources:
+- it-misma
+- 1-cronicas-4
+links:
+- title: 'Perspicacia: «Mismá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Mism%C3%A1/
+  type: perspicacia
+relations:
+- type: kin
+  person: mibsam-hijo-de-salum
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-4
+  - it-misma
+  reason: '1Cr 4:25: Mibsam fue padre de Mismá.'
+  checked_on: '2026-10-12'
+  status: verified
+distinct_from:
+- misma-hijo-de-ismael
+checked_on: '2026-10-12'
+status: verified

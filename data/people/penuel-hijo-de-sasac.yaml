@@ -1,0 +1,38 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: penuel-hijo-de-sasac
+name: Penuel
+names:
+- name: Penuel
+perspicacia: 1200003432#2
+summary: Benjamita, hijo de Sasac y cabeza de una familia que vivió en Jerusalén.
+reason: Perspicacia «Penuel», núm. 2; 1Cr 8:25, 28.
+sources:
+- it-penuel
+- 1-cronicas-8
+links:
+- title: 'Perspicacia: «Penuel»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Penuel/
+  type: perspicacia
+relations:
+- type: kin
+  person: sasac
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  reason: 1Cr 8:25 lo cuenta entre los hijos de Sasac.
+  checked_on: '2026-10-12'
+  status: verified
+- type: lived_in
+  place: jerusalen
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  reason: '1Cr 8:28: los jefes de casas paternas de esta lista vivían en Jerusalén.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+disambiguation: Penuel, benjamita hijo de Sasac; no el judaíta padre de Guedor.
+distinct_from:
+- penuel-padre-de-guedor

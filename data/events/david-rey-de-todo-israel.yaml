@@ -13,6 +13,8 @@ places:
 - hebron
 people:
 - david
+- jehoiada-padre-de-benaya
+- sadoc-hijo-de-ahitub
 passages:
 - 2Sa 5:1-3
 - 1Cr 11:1-3
@@ -26,6 +28,8 @@ sources:
 - it-jerusalen
 - it-david
 - 2-samuel-5
+- 1-cronicas-11
+- 1-cronicas-12
 links:
 - title: 'Perspicacia: «Jerusalén»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jerusal%C3%A9n/
@@ -64,5 +68,5 @@ history:
 narrative_order:
   series: 2-samuel
   order: 5001
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

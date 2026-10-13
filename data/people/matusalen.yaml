@@ -19,6 +19,7 @@ sources:
 - si-3
 - genesis-5
 - lucas-3
+- 1-cronicas-1
 links:
 - title: 'Perspicacia: «Matusalén»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Matusal%C3%A9n/
@@ -35,9 +36,10 @@ relations:
   - it-matusalen
   - genesis-5
   - lucas-3
+  - 1-cronicas-1
   reason: 'Perspicacia «Matusalén», párr. 2: hijo del profeta Enoc (Gé 5:21).'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 perspicacia: '1200003022'
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

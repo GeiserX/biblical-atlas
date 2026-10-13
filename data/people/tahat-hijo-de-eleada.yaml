@@ -1,0 +1,31 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: tahat-hijo-de-eleada
+name: Táhat
+names:
+- name: Táhat
+perspicacia: 1200004303#2
+disambiguation: Táhat hijo de Eleadá; no Táhat hijo de Bered, su antepasado, el levita ni el campamento del desierto.
+distinct_from:
+- tahat-hijo-de-bered
+- tahat-hijo-de-asir
+summary: Efraimita, hijo de Eleadá y pariente del otro Táhat de la misma línea.
+reason: Perspicacia «Táhat», núm. 2; 1Cr 7:20.
+sources:
+- it-tahat
+- 1-cronicas-7
+links:
+- title: 'Perspicacia: «Táhat»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/T%C3%A1hat/
+  type: perspicacia
+relations:
+- type: kin
+  person: eleada
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-7
+  reason: '1Cr 7:20: este Táhat era hijo de Eleadá.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

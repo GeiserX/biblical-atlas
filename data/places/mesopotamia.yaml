@@ -23,6 +23,7 @@ sources:
 - hechos-7
 - deuteronomio-23
 - jueces-3
+- 1-cronicas-19
 links:
 - title: 'Perspicacia: «Mesopotamia»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Mesopotamia/
@@ -48,5 +49,5 @@ history:
 - date: '2026-09-29'
   change: La razón cita también Dt 23:4, en que se apoya la mención de Petor.
   source: deuteronomio-23
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

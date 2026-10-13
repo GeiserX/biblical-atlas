@@ -11,6 +11,7 @@ sources:
 - jueces-3
 - josue-15
 - jueces-1
+- 1-cronicas-4
 links:
 - title: 'Perspicacia: «Otniel»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Otniel/
@@ -40,8 +41,9 @@ relations:
   - it-quenaz
   - jueces-1
   - jueces-3
+  - 1-cronicas-4
   reason: 'Jos 15:17: Otniel hijo de Quenaz.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: kin
   person: acsa
@@ -54,6 +56,15 @@ relations:
   reason: 'Jos 15:17: Caleb le da a su hija Acsá por esposa.'
   checked_on: '2026-09-29'
   status: verified
+- type: kin
+  person: seraya-hijo-de-quenaz
+  word: brother
+  inferred: false
+  sources:
+  - 1-cronicas-4
+  reason: '1Cr 4:13: Otniel y Seraya, hijos de Quenaz.'
+  checked_on: '2026-10-12'
+  status: verified
 perspicacia: '1200003349'
 history:
 - date: '2026-09-29'
@@ -63,5 +74,5 @@ history:
 - date: '2026-09-29'
   change: Cusán-risataim pasa a Cusán-Risataim, la grafía de la TNM en Jue 3:8, 10.
   source: jueces-3
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

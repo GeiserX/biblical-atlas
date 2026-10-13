@@ -1,0 +1,33 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: haran-hijo-de-simei
+name: Harán
+names:
+- name: Harán
+perspicacia: 1200001872#2
+disambiguation: El levita hijo de Simeí (1Cr 23:9); no Harán hijo de Taré, el hermano de Abrahán.
+distinct_from:
+- haran-hijo-de-tare
+- haran-hijo-de-caleb
+summary: Levita de la familia de Guersón, hijo de Simeí. Cuando David repartió el servicio, era uno de los que encabezaban
+  las familias de Ladán.
+reason: Perspicacia «Harán», núm. 2; 1Cr 23:9.
+sources:
+- it-haran
+- 1-cronicas-23
+links:
+- title: 'Perspicacia: «Harán»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Har%C3%A1n/
+  type: perspicacia
+relations:
+- type: kin
+  person: simei-descendiente-de-ladan
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-23
+  - it-haran
+  reason: 1Cr 23:9 lo nombra el tercero de los hijos de Simeí.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

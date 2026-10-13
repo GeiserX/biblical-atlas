@@ -14,6 +14,7 @@ reason: Perspicacia «Dodó», núm. 2; 2Sa 23:9.
 sources:
 - it-dodo
 - 2-samuel-23
+- 1-cronicas-11
 links:
 - title: 'Perspicacia: «Dodó»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Dod%C3%B3/
@@ -26,8 +27,9 @@ relations:
   sources:
   - 2-samuel-23
   - it-dodo
+  - 1-cronicas-11
   reason: 2Sa 23:9 lo llama hijo de Ahohí; Perspicacia «Dodó», núm. 2, entiende que descendía de él.
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

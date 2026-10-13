@@ -1,0 +1,29 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: elieho-enai-hijo-de-meselemias
+name: Elieho-Enái
+names:
+- name: Elieho-Enái
+perspicacia: 1200001301#1
+disambiguation: El hijo de Meselemías, portero (1Cr 26:3); no los otros Elieho-enai de Perspicacia «Elieho-enai».
+summary: Séptimo hijo del coreíta Meselemías, nombrado portero en días de David.
+reason: Perspicacia «Elieho-enai», núm. 1; 1Cr 26:3.
+sources:
+- it-elieho-enai
+- 1-cronicas-26
+links:
+- title: 'Perspicacia: «Elieho-enai»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Elieho-enai/
+  type: perspicacia
+relations:
+- type: kin
+  person: meselemias
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-26
+  - it-elieho-enai
+  reason: 1Cr 26:2, 3 lo nombra el séptimo de los hijos de Meselemías.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

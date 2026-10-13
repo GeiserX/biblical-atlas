@@ -1,0 +1,27 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: obil
+name: Obil
+names:
+- name: Obil
+perspicacia: '1200003294'
+summary: Ismaelita a cargo de los camellos del rey David.
+reason: Perspicacia «Obil»; 1Cr 27:30.
+sources:
+- it-obil
+- 1-cronicas-27
+links:
+- title: 'Perspicacia: «Obil»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Obil/
+  type: perspicacia
+relations:
+- type: tie
+  person: david
+  word: master
+  inferred: false
+  sources:
+  - 1-cronicas-27
+  reason: '1Cr 27:30, 31: tenía a su cargo los camellos; era uno de los que administraban la hacienda del rey.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

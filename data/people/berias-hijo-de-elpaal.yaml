@@ -1,0 +1,40 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: berias-hijo-de-elpaal
+name: Berías
+names:
+- name: Berías
+perspicacia: 1200000653#3
+disambiguation: Berías hijo de Elpaal, benjamita; no Berías hijo de Aser, Berías hijo de Efraín ni el levita.
+distinct_from:
+- berias-hijo-de-aser
+- berias-hijo-de-efrain
+- berias-hijo-de-simei
+summary: Benjamita, uno de los cinco hijos de Elpaal. Con Sema encabezó a los de Ayalón, que echaron a los habitantes de Gat.
+reason: Perspicacia «Berías», núm. 3; 1Cr 8:12, 13.
+sources:
+- it-berias
+- 1-cronicas-8
+links:
+- title: 'Perspicacia: «Berías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ber%C3%ADas/
+  type: perspicacia
+relations:
+- type: kin
+  person: elpaal
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  reason: 1Cr 8:13 lo cuenta entre los hijos de Elpaal.
+  checked_on: '2026-10-12'
+  status: verified
+- type: lived_in
+  place: ayalon
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  reason: '1Cr 8:13: encabezaba casas paternas de los que vivían en Ayalón.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

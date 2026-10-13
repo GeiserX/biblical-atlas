@@ -1,0 +1,34 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: netanel-hijo-de-obed-edom
+name: Netanel
+names:
+- name: Netanel
+perspicacia: 1200003236#5
+disambiguation: El hijo de Obed-Edom, portero (1Cr 26:4); no Netanel hijo de Zuar ni los demás Netanel de Perspicacia «Netanel».
+summary: Quinto hijo de Obed-Edom. Portero al sur del santuario, donde estaban los almacenes.
+reason: Perspicacia «Netanel», núm. 5; 1Cr 26:4.
+sources:
+- it-netanel
+- 1-cronicas-26
+links:
+- title: 'Perspicacia: «Netanel»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Netanel/
+  type: perspicacia
+relations:
+- type: kin
+  person: obed-edom-coreita
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-26
+  - it-netanel
+  reason: '1Cr 26:4: el quinto de los hijos de Obed-Edom.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- netanel-hijo-de-zuar
+- netanel-padre-de-semaya
+- netanel-trompetista
+- netanel-hijo-de-jese

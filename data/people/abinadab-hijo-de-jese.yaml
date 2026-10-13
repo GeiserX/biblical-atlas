@@ -13,6 +13,7 @@ sources:
 - it-abinadab
 - 1-samuel-16
 - 1-samuel-17
+- 1-cronicas-2
 links:
 - title: 'Perspicacia: «Abinadab»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Abinadab/
@@ -29,8 +30,9 @@ relations:
   - 1-samuel-16
   - it-abinadab
   - 1-samuel-17
+  - 1-cronicas-2
   reason: '1Sa 16:8: Jesé lo llama y lo presenta a Samuel.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: kin
   person: sama-hijo-de-jese
@@ -39,8 +41,9 @@ relations:
   sources:
   - 1-samuel-16
   - 1-samuel-17
+  - 1-cronicas-2
   reason: '1Sa 16:8, 9: pasan ante Samuel uno tras otro, como hijos de Jesé.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: kin
   person: david
@@ -49,10 +52,11 @@ relations:
   sources:
   - 1-samuel-16
   - 1-samuel-17
+  - 1-cronicas-2
   reason: '1Sa 16:13: Samuel unge a David delante de sus hermanos.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-09-30'
+checked_on: '2026-10-12'
 status: verified
 distinct_from:
 - abinadab-de-quiryat-jearim

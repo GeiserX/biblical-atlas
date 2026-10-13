@@ -1,0 +1,28 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ibri
+name: Ibrí
+names:
+- name: Ibrí
+perspicacia: '1200002127'
+summary: Levita merarita, hijo de Jaazías, que vivió en tiempos del rey David.
+reason: Perspicacia «Ibrí»; 1Cr 24:27.
+sources:
+- it-ibri
+- 1-cronicas-24
+links:
+- title: 'Perspicacia: «Ibrí»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ibr%C3%AD/
+  type: perspicacia
+relations:
+- type: kin
+  person: jaazias
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-24
+  - it-ibri
+  reason: 1Cr 24:27 lo nombra el último de los hijos de Jaazías; Perspicacia «Ibrí» lo llama hijo de Jaazías.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

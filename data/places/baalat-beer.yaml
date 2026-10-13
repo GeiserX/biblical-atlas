@@ -28,6 +28,7 @@ sources:
 - josue-19
 - 1-samuel-30
 - it-ramot
+- 1-cronicas-4
 links:
 - title: 'Perspicacia: «Baalat-beer»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Baalat-beer/
@@ -43,5 +44,5 @@ history:
 - date: '2026-09-29'
   change: El resumen usa el nombre de la TNM de estudio en 1Sa 30:27 y la identificación de Perspicacia «Ramot», núm. 2.
   source: it-ramot
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

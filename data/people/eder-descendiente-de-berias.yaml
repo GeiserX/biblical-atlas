@@ -1,0 +1,39 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: eder-descendiente-de-berias
+name: Éder
+names:
+- name: Éder
+perspicacia: 1200001257#1
+summary: Benjamita de la casa de Berías que vivió en Jerusalén.
+reason: Perspicacia «Éder», núm. 1; 1Cr 8:15, 16, 28.
+sources:
+- it-eder
+- 1-cronicas-8
+links:
+- title: 'Perspicacia: «Éder»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/%C3%89der/
+  type: perspicacia
+relations:
+- type: kin
+  person: berias-hijo-de-elpaal
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  - it-eder
+  reason: 1Cr 8:16 lo pone entre los hijos de Berías; Perspicacia «Éder» no precisa si era hijo o descendiente.
+  checked_on: '2026-10-12'
+  status: verified
+- type: lived_in
+  place: jerusalen
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  reason: '1Cr 8:28: los jefes de casas paternas de esta lista vivían en Jerusalén.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+disambiguation: Éder, benjamita de la casa de Berías; no el levita hijo de Musí.
+distinct_from:
+- eder-hijo-de-musi

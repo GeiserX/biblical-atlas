@@ -1,0 +1,47 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: los-hombres-de-gat-matan-a-ezer-y-elead
+title: Los hombres de Gat matan a Ézer y Elead, hijos de Efraín
+type: death
+date:
+  from: -1727
+  to: -1512
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1728 y 1513 a.e.c. (tiempo narrativo: en vida de Efraín, después de que Jacob entrara en Egipto)'
+narrative_order:
+  series: 1-cronicas-genealogias
+  order: 7021
+  after: jacob-entra-en-egipto
+places:
+- gat
+present: []
+people:
+- ezer-hijo-de-efrain
+- elead
+- efrain
+- berias-hijo-de-efrain
+roles:
+  ezer-hijo-de-efrain: died
+  elead: died
+  berias-hijo-de-efrain: born
+passages:
+- 1Cr 7:20-23
+summary: Ézer y Elead bajan a quitar el ganado a los hombres de Gat, y estos los matan. Efraín los llora mucho tiempo; después
+  su esposa le da otro hijo, al que llama Berías.
+reason: Perspicacia «Efraín», núm. 1, la pone en vida de Efraín, que era niño cuando Jacob entró en Egipto (1728, estudio
+  3); Josué, su descendiente, ya servía a Moisés tras el éxodo. El texto no dice dónde murieron.
+sources:
+- 1-cronicas-7
+- it-efrain
+- si-3
+- it-ezer
+- it-elead
+- it-berias
+links:
+- title: 'Perspicacia: «Efraín»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Efra%C3%ADn/
+  type: perspicacia
+checked_on: '2026-10-12'
+status: verified

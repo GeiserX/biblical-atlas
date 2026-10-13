@@ -1,0 +1,28 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: maloti
+name: Malotí
+names:
+- name: Malotí
+perspicacia: '1200002871'
+summary: Uno de los 14 hijos de Hemán. La suerte 19 lo puso al frente de un grupo de doce músicos.
+reason: Perspicacia «Malotí»; 1Cr 25:4, 26.
+sources:
+- it-maloti
+- 1-cronicas-25
+links:
+- title: 'Perspicacia: «Malotí»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Malot%C3%AD/
+  type: perspicacia
+relations:
+- type: kin
+  person: heman-hijo-de-joel
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-25
+  - it-maloti
+  reason: 1Cr 25:4, 26 lo cuenta entre los hijos de Hemán.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

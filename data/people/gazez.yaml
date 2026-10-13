@@ -1,0 +1,28 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: gazez
+name: Gazez
+names:
+- name: Gazez
+perspicacia: '1200001624'
+summary: Descendiente de Caleb e hijo de Harán. Perspicacia deja abierto si hubo dos Gazez, un hijo y un nieto de Caleb, o
+  solo el nieto.
+reason: Perspicacia «Gazez»; 1Cr 2:46.
+sources:
+- it-gazez
+- 1-cronicas-2
+links:
+- title: 'Perspicacia: «Gazez»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Gazez/
+  type: perspicacia
+relations:
+- type: kin
+  person: haran-hijo-de-caleb
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-2
+  reason: '1Cr 2:46: Harán fue padre de Gazez.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

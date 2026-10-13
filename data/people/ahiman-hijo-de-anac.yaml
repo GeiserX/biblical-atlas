@@ -86,5 +86,7 @@ history:
 - date: '2026-09-29'
   change: 'La razón explica el nuevo rango de fechas: de los espías, en 1512 a.e.c., a la toma de Hebrón por Caleb.'
   source: josue-15
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified
+distinct_from:
+- ahiman-portero

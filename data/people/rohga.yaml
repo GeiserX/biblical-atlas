@@ -1,0 +1,27 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: rohga
+name: Rohgá
+names:
+- name: Rohgá
+perspicacia: '1200003758'
+summary: Aserita, el segundo de los hijos de Sémer que nombra la lista.
+reason: Perspicacia «Rohgá»; 1Cr 7:30, 34.
+sources:
+- it-rohga
+- 1-cronicas-7
+links:
+- title: 'Perspicacia: «Rohgá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Rohg%C3%A1/
+  type: perspicacia
+relations:
+- type: kin
+  person: somer-hijo-de-heber
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-7
+  reason: 1Cr 7:34 lo nombra entre los hijos de Sémer, el Somer del versículo 32.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

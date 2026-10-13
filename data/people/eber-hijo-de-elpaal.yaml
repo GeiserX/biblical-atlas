@@ -1,0 +1,33 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: eber-hijo-de-elpaal
+name: Éber
+names:
+- name: Éber
+perspicacia: 1200001249#3
+disambiguation: Éber hijo de Elpaal, benjamita; no Éber hijo de Selá, antepasado de Abrahán, ni Éber hijo de Sasac ni los
+  demás Éber.
+distinct_from:
+- eber-hijo-de-sasac
+- eber-hijo-de-sela
+- eber-hijo-de-abihail
+summary: Benjamita, hijo de Elpaal.
+reason: Perspicacia «Éber», núm. 3; 1Cr 8:12.
+sources:
+- it-eber
+- 1-cronicas-8
+links:
+- title: 'Perspicacia: «Éber»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/%C3%89ber/
+  type: perspicacia
+relations:
+- type: kin
+  person: elpaal
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  reason: 1Cr 8:12 lo cuenta entre los hijos de Elpaal.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

@@ -1,0 +1,36 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: johanan-el-gadita
+name: Johanán
+names:
+- name: Johanán
+perspicacia: 1200002488#2
+disambiguation: Johanán el gadita, octavo de los once (1Cr 12:12); no el benjaminita de 1Cr 12:4, el hijo de Caréah ni el
+  sumo sacerdote.
+distinct_from:
+- johanan-el-benjaminita
+- johanan-hijo-de-carea
+- johanan-hijo-de-elioenai
+- johanan-hijo-de-josias
+- johanan-hijo-de-azarias
+summary: Gadita, el octavo de los once guerreros de Gad que cruzaron el Jordán crecido para unirse a David en el desierto,
+  cuando Saúl lo perseguía.
+reason: Perspicacia «Johanán», núm. 2; 1Cr 12:8-15.
+sources:
+- it-johanan
+- 1-cronicas-12
+links:
+- title: 'Perspicacia: «Johanán»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Johan%C3%A1n/
+  type: perspicacia
+relations:
+- type: tie
+  person: david
+  word: master
+  inferred: false
+  sources:
+  - 1-cronicas-12
+  reason: '1Cr 12:8, 12, 14: gadita que se pasó a David y llegó a ser jefe de su ejército.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

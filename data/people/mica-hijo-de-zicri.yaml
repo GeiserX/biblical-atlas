@@ -1,0 +1,31 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: mica-hijo-de-zicri
+name: Micá
+names:
+- name: Micá
+perspicacia: 1200003031#3
+summary: Levita descendiente de Asaf, hijo de Zicrí y padre de Matanías, que vivió después del destierro. Otras listas lo
+  llaman Miqueas y Micaya.
+reason: Perspicacia «Micá», núm. 3; 1Cr 9:15.
+sources:
+- it-mica
+- 1-cronicas-9
+links:
+- title: 'Perspicacia: «Micá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Mic%C3%A1/
+  type: perspicacia
+relations:
+- type: kin
+  person: zicri-hijo-de-asaf
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-9
+  reason: '1Cr 9:15: Micá, hijo de Zicrí.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- mica-hijo-de-mefiboset
+disambiguation: 'Micá núm. 3 de Perspicacia: levita de la línea de Asaf, hijo de Zicrí. No el hijo de Mefibóset.'

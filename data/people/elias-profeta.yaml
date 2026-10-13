@@ -75,5 +75,7 @@ relations:
   checked_on: '2026-09-30'
   status: verified
 perspicacia: 1200001307#1
-checked_on: '2026-09-30'
+checked_on: '2026-10-12'
 status: verified
+distinct_from:
+- elias-hijo-de-jeroham

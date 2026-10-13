@@ -11,10 +11,16 @@ reason: Perspicacia «Sarar»; 2Sa 23:33.
 sources:
 - it-sarar
 - 2-samuel-23
+- 1-cronicas-11
+- it-sacar
 links:
 - title: 'Perspicacia: «Sarar»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sarar/
   type: perspicacia
 relations: []
-checked_on: '2026-09-29'
+disambiguation: El hararita padre de Ahiam, al que Crónicas llama Sacar; no Sacar el portero, hijo de Obed-Edom (Perspicacia
+  «Sacar», núm. 1 y 2).
+checked_on: '2026-10-12'
 status: verified
+distinct_from:
+- sacar-hijo-de-obed-edom

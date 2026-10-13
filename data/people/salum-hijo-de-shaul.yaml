@@ -1,0 +1,40 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: salum-hijo-de-shaul
+name: Salum
+names:
+- name: Salum
+perspicacia: 1200003933#2
+disambiguation: Salum hijo de Shaúl, de Simeón (núm. 2 de Perspicacia); no el rey de Israel, ni el esposo de Huldá, ni el
+  rey de Judá también llamado Jehoacaz.
+summary: Simeonita, nieto de Simeón por su hijo Shaúl; fue padre de Mibsam.
+reason: Perspicacia «Salum»; 1Cr 4:25.
+sources:
+- it-salum
+- 1-cronicas-4
+links:
+- title: 'Perspicacia: «Salum»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Salum/
+  type: perspicacia
+relations:
+- type: kin
+  person: shaul-hijo-de-simeon
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-4
+  - it-salum
+  reason: '1Cr 4:25: Shaúl fue padre de Salum.'
+  checked_on: '2026-10-12'
+  status: verified
+distinct_from:
+- jehoacaz-de-juda
+- salum-hijo-de-ticva
+- salum-de-israel
+- salum-hijo-de-sadoc
+- salum-hijo-de-sismai
+- salum-jefe-de-los-porteros
+- silem
+- salum-padre-de-maaseya
+- salum-tio-de-jeremias
+checked_on: '2026-10-12'
+status: verified

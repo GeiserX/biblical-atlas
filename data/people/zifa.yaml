@@ -1,0 +1,28 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: zifa
+name: Zifá
+names:
+- name: Zifá
+perspicacia: '1200004743'
+summary: Judaíta, segundo de los hijos de Jehalelel que se nombran.
+reason: Perspicacia «Zifá»; 1Cr 4:16.
+sources:
+- it-zifa
+- 1-cronicas-4
+links:
+- title: 'Perspicacia: «Zifá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zif%C3%A1/
+  type: perspicacia
+relations:
+- type: kin
+  person: jehalelel-de-juda
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-4
+  - it-zifa
+  reason: '1Cr 4:16: uno de los hijos de Jehalelel.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

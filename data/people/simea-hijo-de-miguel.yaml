@@ -1,0 +1,33 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: simea-hijo-de-miguel
+name: Simeá
+names:
+- name: Simeá
+perspicacia: 1200004042#2
+disambiguation: Simeá hijo de Miguel (1Cr 6:39, 40); no es ninguno de los otros Simeá que numera Perspicacia «Simeá».
+distinct_from:
+- sama-hijo-de-jese
+- samua-hijo-de-david
+- simea-hijo-de-miclot
+- simea-hijo-de-uza
+summary: Levita guersonita, hijo de Miguel y padre de Berekías; abuelo del músico Asaf.
+reason: Perspicacia «Simeá», núm. 2; 1Cr 6:39, 40.
+sources:
+- it-simea
+- 1-cronicas-6
+links:
+- title: 'Perspicacia: «Simeá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sime%C3%A1/
+  type: perspicacia
+relations:
+- type: kin
+  person: miguel-hijo-de-baaseya
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-6
+  reason: '1Cr 6:39, 40: Simeá, «hijo de Miguel».'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

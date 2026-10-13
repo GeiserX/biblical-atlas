@@ -17,5 +17,13 @@ links:
 - title: 2 Reyes 22 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-reyes/22/
   type: bible
-checked_on: '2026-09-30'
+checked_on: '2026-10-12'
 status: verified
+distinct_from:
+- mesulam-hijo-de-zorobabel
+- mesulam-hijo-de-abihail
+- salum-hijo-de-sadoc
+- mesulam-hijo-de-elpaal
+- mesulam-hijo-de-hodavias
+- mesulam-hijo-de-mesilemit
+- mesulam-hijo-de-sefatias

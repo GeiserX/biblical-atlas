@@ -1,0 +1,41 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: sefatias-hijo-de-maaca
+name: Sefatías
+names:
+- name: Sefatías
+perspicacia: 1200004013#3
+disambiguation: Sefatías hijo de Maacá, príncipe de Simeón con David; no el hijo de David y Abital.
+distinct_from:
+- sefatias-hijo-de-david
+- sefatias-el-harifita
+- sefatias-hijo-de-reuel
+- sefatias-hijo-de-matan
+summary: Hijo de Maacá. En días del rey David encabezaba a los simeonitas como su príncipe.
+reason: Perspicacia «Sefatías», núm. 3; 1Cr 27:16.
+sources:
+- it-sefatias
+- 1-cronicas-27
+links:
+- title: 'Perspicacia: «Sefatías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sefat%C3%ADas/
+  type: perspicacia
+relations:
+- type: kin
+  person: maaca-padre-de-sefatias
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-27
+  reason: '1Cr 27:16: Sefatías hijo de Maacá.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: holds_office
+  office: leader
+  inferred: false
+  sources:
+  - 1-cronicas-27
+  reason: '1Cr 27:16, 22: era el líder de los simeonitas, uno de los príncipes de las tribus de Israel.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

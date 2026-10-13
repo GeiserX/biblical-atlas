@@ -1,0 +1,36 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ibneya
+name: Ibneyá
+names:
+- name: Ibneyá
+perspicacia: '1200002125'
+summary: Benjamita, hijo de Jeroham, cabeza de una casa paterna que volvió del destierro en Babilonia y se estableció en Jerusalén.
+reason: Perspicacia «Ibneyá»; 1Cr 9:3, 8, 9.
+sources:
+- it-ibneya
+- 1-cronicas-9
+links:
+- title: 'Perspicacia: «Ibneyá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ibney%C3%A1/
+  type: perspicacia
+relations:
+- type: kin
+  person: jeroham-padre-de-ibneya
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-9
+  reason: '1Cr 9:8: Ibneyá, hijo de Jeroham.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: lived_in
+  place: jerusalen
+  inferred: false
+  sources:
+  - 1-cronicas-9
+  - it-ibneya
+  reason: '1Cr 9:3, 8, 9: jefe de casa paterna de los benjamitas que vivían en Jerusalén.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

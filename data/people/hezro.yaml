@@ -10,6 +10,7 @@ sources:
 - it-hezro
 - it-carmelita
 - 2-samuel-23
+- 1-cronicas-11
 links:
 - title: 'Perspicacia: «Hezró»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hezr%C3%B3/
@@ -22,8 +23,9 @@ relations:
   - 2-samuel-23
   - it-carmelita
   - it-carmelo
+  - 1-cronicas-11
   reason: '2Sa 23:35: Hezró el carmelita; Perspicacia «Carmelita» remite a Carmelo, la ciudad de Judá.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: tie
   person: david
@@ -31,8 +33,9 @@ relations:
   inferred: false
   sources:
   - 2-samuel-23
+  - 1-cronicas-11
   reason: '2Sa 23:35: uno de los treinta guerreros de David.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

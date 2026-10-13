@@ -1,0 +1,41 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: safat-el-gadita
+name: Safat
+names:
+- name: Safat
+perspicacia: 1200003950#4
+disambiguation: Safat el gadita (1Cr 5:12); no es ninguno de los otros Safat que numera Perspicacia «Safat».
+distinct_from:
+- safat-hijo-de-adlai
+- safat-hijo-de-hori
+- safat-hijo-de-semaya
+- safat-padre-de-eliseo
+summary: Gadita que vivía en Basán, nombrado con Joel, Safam y Janái.
+reason: Perspicacia «Safat», núm. 4; 1Cr 5:12.
+sources:
+- it-safat
+- 1-cronicas-5
+links:
+- title: 'Perspicacia: «Safat»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Safat/
+  type: perspicacia
+relations:
+- type: lived_in
+  place: basan
+  inferred: false
+  sources:
+  - 1-cronicas-5
+  reason: '1Cr 5:11, 12: los gaditas vivían en Basán, hasta Salecá.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: gad-hijo-de-jacob
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-5
+  reason: '1Cr 5:11, 12: está entre los descendientes de Gad.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

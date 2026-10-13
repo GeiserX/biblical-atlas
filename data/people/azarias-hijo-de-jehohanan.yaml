@@ -13,6 +13,13 @@ distinct_from:
 - abednego
 - ocozias-de-juda
 - jaazanias-jefe-militar
+- azarias-hijo-de-etan
+- azarias-hijo-de-jehu
+- azarias-hijo-de-ahimaaz
+- azarias-hijo-de-hilquias
+- azarias-hijo-de-johanan
+- azarias-hijo-de-sofonias
+- azarias-sacerdote-repatriado
 date:
   from: -761
   to: -757
@@ -36,5 +43,5 @@ links:
 - title: 2 Crónicas 28 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-Cr%C3%B3nicas/28/
   type: bible
-checked_on: '2026-10-01'
+checked_on: '2026-10-12'
 status: verified

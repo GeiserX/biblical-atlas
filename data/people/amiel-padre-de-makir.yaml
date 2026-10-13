@@ -8,6 +8,7 @@ disambiguation: El padre de Makir de Lo-Debar (Perspicacia, núm. 2); no el esp�
 distinct_from:
 - amiel-hijo-de-guemali
 - eliam-padre-de-bat-seba
+- amiel-hijo-de-obed-edom
 summary: Padre de Makir, el de Lo-Debar que tuvo en su casa a Mefibóset hasta que David lo mandó traer.
 reason: Perspicacia «Amiel», núm. 2; 2Sa 9:4, 5.
 sources:
@@ -24,6 +25,6 @@ links:
 - title: 2 Samuel 17 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-samuel/17/
   type: bible
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified
 relations: []

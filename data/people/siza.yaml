@@ -1,0 +1,18 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: siza
+name: Sizá
+names:
+- name: Sizá
+perspicacia: '1200004072'
+summary: Rubenita, padre de Adiná, uno de los guerreros de David.
+reason: Perspicacia «Sizá»; 1Cr 11:42.
+sources:
+- it-siza
+- 1-cronicas-11
+links:
+- title: 'Perspicacia: «Sizá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Siz%C3%A1/
+  type: perspicacia
+relations: []
+checked_on: '2026-10-12'
+status: verified

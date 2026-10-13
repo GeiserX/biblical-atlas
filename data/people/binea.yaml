@@ -1,0 +1,29 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: binea
+name: Bineá
+names:
+- name: Bineá
+perspicacia: '1200000743'
+summary: Benjamita descendiente de Jonatán, el hijo de Saúl; hijo de Mozá.
+reason: Perspicacia «Bineá»; 1Cr 8:33-37, 40.
+sources:
+- it-binea
+- 1-cronicas-8
+- 1-cronicas-9
+links:
+- title: 'Perspicacia: «Bineá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Bine%C3%A1/
+  type: perspicacia
+relations:
+- type: kin
+  person: moza-hijo-de-zimri
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  - 1-cronicas-9
+  reason: '1Cr 8:37: Mozá fue padre de Bineá.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

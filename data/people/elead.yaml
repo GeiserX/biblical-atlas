@@ -1,0 +1,29 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: elead
+name: Elead
+names:
+- name: Elead
+perspicacia: '1200001283'
+summary: Efraimita, posiblemente hijo de Efraín, al que los hombres de Gat mataron con Ézer por bajar a quitarles el ganado.
+reason: Perspicacia «Elead»; 1Cr 7:20-22.
+sources:
+- it-elead
+- 1-cronicas-7
+links:
+- title: 'Perspicacia: «Elead»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Elead/
+  type: perspicacia
+relations:
+- type: kin
+  person: efrain
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-7
+  - it-elead
+  - it-efrain
+  reason: 1Cr 7:21, 22 llama a Efraín su padre; Perspicacia «Elead» y «Efraín», núm. 1, lo dan por posible o probable.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

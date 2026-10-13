@@ -1,0 +1,18 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hasenua-padre-de-hodavias
+name: Hasenuá
+names:
+- name: Hasenuá
+perspicacia: 1200001909#1
+summary: Benjamita, padre de Hodavías y antepasado de Salú, uno de los cabezas de familia de la Jerusalén posterior al destierro.
+reason: Perspicacia «Hasenuá», núm. 1; 1Cr 9:7.
+sources:
+- it-hasenua
+- 1-cronicas-9
+links:
+- title: 'Perspicacia: «Hasenuá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hasenu%C3%A1/
+  type: perspicacia
+relations: []
+checked_on: '2026-10-12'
+status: verified

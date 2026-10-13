@@ -1,0 +1,53 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: nahat-hijo-de-zuf
+name: Náhat
+names:
+- name: Náhat
+perspicacia: 1200003168#2
+disambiguation: Náhat hijo de Zofái (1Cr 6:26), probablemente Tohu; no Náhat el edomita, nieto de Esaú (Perspicacia «Náhat»,
+  núm. 1).
+distinct_from:
+- nahat-hijo-de-reuel
+summary: Levita cohatita, hijo de Zofái y antepasado de Samuel. Perspicacia cree que es el mismo que Tohu y Tóah.
+reason: Perspicacia «Náhat», núm. 2; 1Cr 6:26.
+sources:
+- it-nahat
+- 1-cronicas-6
+links:
+- title: 'Perspicacia: «Náhat»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/N%C3%A1hat/
+  type: perspicacia
+relations:
+- type: same_as
+  person: tohu
+  certainty: probable
+  inferred: true
+  sources:
+  - 1-cronicas-6
+  - it-nahat
+  - it-tohu
+  reason: 'Perspicacia «Náhat», núm. 2: parece que Tohu y Tóah son otros nombres suyos (1Cr 6:26, 34).'
+  checked_on: '2026-10-12'
+  status: verified
+- type: same_as
+  person: toah
+  certainty: probable
+  inferred: true
+  sources:
+  - 1-cronicas-6
+  - it-nahat
+  - it-toah
+  reason: 'Perspicacia «Tóah»: probablemente es el que 1Cr 6:26 llama Náhat.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: zuf
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-6
+  reason: '1Cr 6:26: «su hijo Náhat», tras Zofái.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

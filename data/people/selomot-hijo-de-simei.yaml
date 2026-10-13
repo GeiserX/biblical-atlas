@@ -1,0 +1,52 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: selomot-hijo-de-simei
+name: Selomot
+names:
+- name: Selomot
+perspicacia: 1200003995#1
+disambiguation: El guersonita hijo de Simeí (1Cr 23:9); no el Selomot izharita, también llamado Selomit (Perspicacia «Selomot»,
+  núm. 2).
+distinct_from:
+- selomit-descendiente-de-izhar
+- selomot-descendiente-de-eliezer
+summary: Levita guersonita, el primero de los tres hijos de Simeí que estaban al frente de casas paternas de Ladán en tiempos
+  de David.
+reason: Perspicacia «Selomot», núm. 1; 1Cr 23:9.
+sources:
+- it-selomot
+- 1-cronicas-23
+links:
+- title: 'Perspicacia: «Selomot»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Selomot/
+  type: perspicacia
+relations:
+- type: kin
+  person: simei-descendiente-de-ladan
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-23
+  - it-selomot
+  reason: 1Cr 23:9 lo nombra el primero de los tres hijos de Simeí.
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: haziel
+  word: brother
+  inferred: false
+  sources:
+  - 1-cronicas-23
+  reason: 1Cr 23:9 da a Selomot, Haziel y Harán como los tres hijos de Simeí.
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: haran-hijo-de-simei
+  word: brother
+  inferred: false
+  sources:
+  - 1-cronicas-23
+  reason: 1Cr 23:9 da a Selomot, Haziel y Harán como los tres hijos de Simeí.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

@@ -1,0 +1,56 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: eber-hijo-de-abihail
+name: Éber
+names:
+- name: Éber
+perspicacia: 1200001249#2
+disambiguation: Éber hijo de Abihail (1Cr 5:13, 14); no es ninguno de los otros Éber que numera Perspicacia «Éber».
+distinct_from:
+- eber-hijo-de-elpaal
+- eber-hijo-de-sasac
+- eber-hijo-de-sela
+summary: Gadita de Basán, el último de los siete hijos de Abihail.
+reason: Perspicacia «Éber», núm. 2; 1Cr 5:13, 14.
+sources:
+- it-eber
+- 1-cronicas-5
+links:
+- title: 'Perspicacia: «Éber»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/%C3%89ber/
+  type: perspicacia
+relations:
+- type: kin
+  person: abihail-hijo-de-huri
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-5
+  reason: '1Cr 5:13, 14: los siete eran hijos de Abihail.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: lived_in
+  place: galaad
+  inferred: false
+  sources:
+  - 1-cronicas-5
+  reason: 1Cr 5:16 los sitúa en Galaad, en Basán con sus pueblos y en los pastos de Sarón.
+  checked_on: '2026-10-12'
+  status: verified
+- type: lived_in
+  place: basan
+  inferred: false
+  sources:
+  - 1-cronicas-5
+  reason: 1Cr 5:16 los sitúa en Galaad, en Basán con sus pueblos y en los pastos de Sarón.
+  checked_on: '2026-10-12'
+  status: verified
+- type: lived_in
+  place: saron-de-gad
+  inferred: false
+  sources:
+  - 1-cronicas-5
+  reason: 1Cr 5:16 los sitúa en Galaad, en Basán con sus pueblos y en los pastos de Sarón.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

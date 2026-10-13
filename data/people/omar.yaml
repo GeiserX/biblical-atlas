@@ -9,6 +9,7 @@ reason: Perspicacia «Omar»; Gé 36:11, 15.
 sources:
 - it-omar
 - genesis-36
+- 1-cronicas-1
 links:
 - title: 'Perspicacia: «Omar»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Omar/
@@ -24,8 +25,9 @@ relations:
   sources:
   - it-omar
   - genesis-36
+  - 1-cronicas-1
   reason: 'Gé 36:11: hijo de Elifaz.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: kin
   person: ada-hija-de-elon
@@ -45,5 +47,5 @@ relations:
   reason: 'Gé 36:16: fue jeque en la tierra de Edom.'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

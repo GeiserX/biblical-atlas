@@ -1,0 +1,32 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jesaya-hijo-de-hananias
+name: Jesayá
+names:
+- name: Jesayá
+perspicacia: 1200002438#6
+summary: Nieto del gobernador Zorobabel y descendiente de David; según 1Cr 3:21, padre de Refayá.
+reason: Perspicacia «Jesayá»; 1Cr 3:21.
+sources:
+- it-jesaya
+- 1-cronicas-3
+links:
+- title: 'Perspicacia: «Jesayá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jesay%C3%A1/
+  type: perspicacia
+relations:
+- type: kin
+  person: hananias-hijo-de-zorobabel
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-3
+  - it-jesaya
+  reason: '1Cr 3:21: hijo de Hananías.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+disambiguation: Jesayá, hijo de Hananías y nieto de Zorobabel; no el músico hijo de Jedutún ni el levita descendiente de Eliezer.
+distinct_from:
+- jesaya-descendiente-de-eliezer
+- jesaya-hijo-de-jedutun

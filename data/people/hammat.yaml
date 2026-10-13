@@ -1,0 +1,19 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hammat
+name: Hammat
+names:
+- name: Hammat
+perspicacia: 1200001836#1
+summary: Antepasado de ciertos quenitas, llamado «padre» de la casa de Recab. De él venían las familias de escribas que vivían
+  en Jabez.
+reason: Perspicacia «Hammat», núm. 1, y «Recabitas»; 1Cr 2:55.
+sources:
+- it-hammat
+- 1-cronicas-2
+links:
+- title: 'Perspicacia: «Hammat»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hammat/
+  type: perspicacia
+relations: []
+checked_on: '2026-10-12'
+status: verified

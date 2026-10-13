@@ -8,6 +8,8 @@ disambiguation: Guerá, el padre de Simeí (Perspicacia, núm. 4); no el hijo de
 distinct_from:
 - guera-hijo-de-bela
 - guera-padre-de-ehud
+- guera-de-gueba
+- guera-descendiente-de-bela
 summary: Benjaminita, padre de Simeí, el que maldijo a David en Bahurim. La Biblia solo lo nombra como padre de Simeí.
 reason: Perspicacia «Guerá, I», núm. 4; 2Sa 16:5.
 sources:
@@ -25,5 +27,5 @@ links:
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-samuel/19/
   type: bible
 relations: []
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified
