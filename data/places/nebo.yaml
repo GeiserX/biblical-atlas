@@ -18,6 +18,7 @@ sources:
 - openbible-geo
 - numeros-32
 - isaias-15
+- jeremias-48
 links:
 - title: 'Perspicacia: «Nebo»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Nebo/
@@ -25,5 +26,5 @@ links:
 - title: Números 32 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/N%C3%BAmeros/32/
   type: bible
-checked_on: '2026-09-30'
+checked_on: '2026-10-12'
 status: verified

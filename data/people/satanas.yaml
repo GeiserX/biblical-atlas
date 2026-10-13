@@ -7,7 +7,7 @@ names:
 - name: Diablo
   note: Título que significa «calumniador».
 - name: el Tentador
-  note: Así lo llama Mt 4:3.
+  note: Así lo llaman Mt 4:3 y 1Te 3:5. Según la nota de 1Te 3:5, en las Escrituras Griegas solo esos dos pasajes lo usan.
 - name: Belcebú
   note: Así lo llaman los escribas en Mr 3:22. Perspicacia «Beelzebub» lo toma por un apelativo de Satanás, quizá sacado de
     Baal-zebub, el dios de Eqrón.
@@ -53,6 +53,8 @@ sources:
 - zacarias-3
 - efesios-2
 - efesios-6
+- 1-tesalonicenses-2
+- 1-tesalonicenses-3
 links:
 - title: 'Perspicacia: «Satanás»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Satan%C3%A1s/
@@ -73,7 +75,10 @@ history:
 - date: '2026-09-29'
   change: La razón cita también Génesis 3.
   source: genesis-3
-checked_on: '2026-09-29'
+- date: '2026-10-12'
+  change: «el Tentador» sale también en 1Te 3:5; la nota de estudio de ese versículo dice que solo lo usan allí y en Mt 4:3.
+  source: 1-tesalonicenses-3
+checked_on: '2026-10-12'
 status: verified
 not_claimed:
 - 'Que la serpiente de Edén fuera Satanás con otra forma: era un animal real que él usó como portavoz.'

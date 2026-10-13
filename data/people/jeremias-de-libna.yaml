@@ -7,12 +7,14 @@ perspicacia: 1200002421#5
 disambiguation: Jeremías de Libná, abuelo materno de Jehoacaz y Sedequías; no el profeta Jeremías de Anatot.
 distinct_from:
 - jeremias-profeta
+- jeremias-hijo-de-habazinias
 summary: Hombre de Libná, ciudad de sacerdotes, padre de Hamutal. Por ella fue abuelo de dos reyes de Judá, Jehoacaz y Sedequías.
 reason: Perspicacia «Jeremías», núm. 5; 2Re 23:31; 24:18.
 sources:
 - it-jeremias
 - 2-reyes-23
 - 2-reyes-24
+- jeremias-52
 links:
 - title: 'Perspicacia: «Jeremías»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jerem%C3%ADas/
@@ -28,8 +30,9 @@ relations:
   - 2-reyes-23
   - 2-reyes-24
   - it-jeremias
+  - jeremias-52
   reason: 2Re 23:31 y 24:18 lo llaman Jeremías de Libná; Perspicacia lo da como natural de esa ciudad sacerdotal.
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-09-30'
+checked_on: '2026-10-12'
 status: verified

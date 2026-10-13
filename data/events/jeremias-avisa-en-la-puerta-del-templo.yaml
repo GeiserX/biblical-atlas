@@ -1,0 +1,48 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jeremias-avisa-en-la-puerta-del-templo
+title: Jeremías avisa en la puerta del templo que el templo no los salvará
+type: speech
+date:
+  from: -627
+  to: -627
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 628 a.e.c. (al comienzo del reinado de Jehoiaquim)
+narrative_order:
+  series: jeremias
+  order: 7001
+places:
+- monte-moria
+- jerusalen
+people:
+- jeremias-profeta
+present:
+- jeremias-profeta
+roles:
+  jeremias-profeta: spoke
+passages:
+- Jer 7:1-10:25
+summary: 'Ante una puerta del templo, Jeremías anuncia a Judá que el templo no la protegerá: si sigue con el robo, la sangre
+  inocente y los ídolos, la casa acabará como Siló y el país quedará en ruinas.'
+reason: Jer 7:2 sitúa el mensaje en la puerta del templo. «Dios nos habla mediante Jeremías», cap. 2, párr. 12, lo pone al
+  empezar el reinado de Jehoiaquim (628, tabla A6-B). «Toda Escritura», libro 24, párr. 10-12, une Jer 7:1-10:25.
+sources:
+- jeremias-7
+- jeremias-8
+- jr-2
+- si-jeremias
+- tnm-a6-b
+- it-jeremias-libro
+- jeremias-9
+- jeremias-10
+links:
+- title: Jeremías 7 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/7/
+  type: bible
+- title: Jeremías 8 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/8/
+  type: bible
+checked_on: '2026-10-12'
+status: verified

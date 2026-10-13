@@ -1,0 +1,55 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jeremias-acusa-a-jerusalen-de-ser-una-esposa-infiel
+title: Jeremías acusa a Jerusalén de ser una esposa infiel
+date:
+  from: -646
+  to: -627
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 647 y 628 a.e.c. (tiempo narrativo: en los días de Josías, desde la comisión de Jeremías)'
+narrative_order:
+  series: jeremias
+  order: 2001
+places:
+- jerusalen
+- juda
+people:
+- jeremias-profeta
+present: []
+passages:
+- Jer 2:1-6:30
+summary: Jehová manda a Jeremías decir a Jerusalén que lo ha dejado por dioses ajenos, como una esposa que traiciona a su
+  marido. La llama a volver y le anuncia un desastre que vendrá del norte.
+reason: '«Toda Escritura», libro 24, párr. 8, agrupa Jer 2:1-6:30. Jer 3:6 lo sitúa con Josías, y La Atalaya de 2007 pone
+  estos mensajes en sus 18 últimos años: de 647 (estudio 3) a 628 (A6-B). Sin lugar.'
+sources:
+- jeremias-2
+- si-jeremias
+- jr-2
+- si-3
+- tnm-a6-b
+- w07-jeremias
+- jeremias-3
+- jeremias-4
+- jeremias-5
+- jeremias-6
+links:
+- title: Jeremías 2 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/2/
+  type: bible
+- title: Jeremías 3 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/3/
+  type: bible
+- title: Jeremías 4 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/4/
+  type: bible
+- title: Jeremías 5 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/5/
+  type: bible
+- title: Jeremías 6 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/6/
+  type: bible
+checked_on: '2026-10-12'
+status: verified

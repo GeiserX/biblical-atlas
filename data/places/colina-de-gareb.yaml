@@ -1,0 +1,41 @@
+# biblical-atlas: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: colina-de-gareb
+name: Colina de Gareb
+names:
+- name: Colina de Gareb
+type: mountain
+lat: null
+lon: null
+precision: uncertain
+coord_source: null
+coord_url: null
+candidates:
+- name: Al oeste de Jerusalén
+  geometry:
+    type: zone
+    lat: 31.7767
+    lon: 35.2183
+    radius_km: 2
+  checked_on: '2026-10-12'
+  status: favored_level_1
+  sources:
+  - it-gareb
+  - openbible-geo
+  reason: 'Perspicacia «Gareb», núm. 2: seguramente marcaba el límite occidental de la Jerusalén reconstruida, pero no da
+    el sitio.'
+  coord_source: calculation
+  note: 'Centro: 1,5 km al oeste del punto de OpenBible de Jerusalén. Radio nuestro.'
+summary: Colina que Jer 31:39 pone en el trazado de la Jerusalén que se reconstruiría. Seguramente marcaba su límite occidental;
+  no se sabe dónde estaba.
+reason: 'Perspicacia «Gareb», núm. 2; Jer 31:39. Sin punto: Perspicacia no conoce su ubicación exacta, así que solo hay una
+  zona al oeste de la ciudad.'
+sources:
+- it-gareb
+- openbible-geo
+- jeremias-31
+links:
+- title: 'Perspicacia: «Gareb»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Gareb/
+  type: perspicacia
+checked_on: '2026-10-12'
+status: verified

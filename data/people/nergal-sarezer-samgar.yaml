@@ -1,0 +1,47 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: nergal-sarezer-samgar
+name: Nergal-Sarézer
+names:
+- name: Nergal-Sarézer
+perspicacia: 1200003229#1
+disambiguation: El príncipe al que la TNM da el título de samgar en Jer 39:3; no es el rabmag del mismo nombre que sale en
+  ese versículo.
+distinct_from:
+- nergal-sarezer-rabmag
+date:
+  from: -606
+  to: -606
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 607 a.e.c.
+summary: Príncipe babilonio de Nabucodonosor. Cuando cayó la muralla de Jerusalén en 607 a.e.c., entró en la ciudad con los
+  demás príncipes y tomó asiento en la Puerta del Medio.
+reason: Perspicacia «Nergal-sarézer», núm. 1; Jer 39:2, 3. La TNM lo llama el samgar; con la división del hebreo que da la
+  nota al pie, Perspicacia «Samgar-nebo» trata ese título como otro nombre.
+sources:
+- it-nergal-sarezer
+- it-samgar-nebo
+- jeremias-39
+- si-3
+links:
+- title: 'Perspicacia: «Nergal-sarézer»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Nergal-sar%C3%A9zer/
+  type: perspicacia
+- title: Jeremías 39 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/39/
+  type: bible
+relations:
+- type: tie
+  person: nabucodonosor-ii
+  word: master
+  inferred: false
+  sources:
+  - jeremias-39
+  - it-nergal-sarezer
+  reason: Jer 39:3 lo cuenta entre los príncipes del rey de Babilonia, que Jer 39:1 llama Nabucodonosor.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

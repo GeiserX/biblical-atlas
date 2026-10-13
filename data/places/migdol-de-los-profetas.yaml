@@ -1,0 +1,34 @@
+# biblical-atlas: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: migdol-de-los-profetas
+name: Migdol
+names:
+- name: Migdol
+  note: 'Significa «torre». Perspicacia «Migdol», núm. 2: el de Jeremías y Ezequiel, que la mayoría tiene por otro sitio que
+    el Migdol del éxodo, núm. 1.'
+type: city
+lat: 30.96478
+lon: 32.49286
+precision: uncertain
+coord_source: openbible:aa6d1bd
+coord_url: https://www.openbible.info/geo/ancient/aa6d1bd/migdol-2
+coord_note: 'Tell el-Heir, al sudsudoeste de Pelusio: primera identificación de OpenBible y la que Perspicacia recoge de algunos
+  investigadores, sin darla por segura.'
+summary: Fortaleza de la frontera nordeste de Egipto, quizá junto a Pelusio, que guardaba la entrada desde Filistea. Tras
+  607 a.e.c. vivieron allí judíos huidos de Judá.
+reason: 'Perspicacia «Migdol», núm. 2, párr. 2 y 3; Jer 44:1. Coordenada de OpenBible: solo tomamos el punto.'
+sources:
+- it-migdol
+- openbible-geo
+- jeremias-44
+- jeremias-46
+links:
+- title: 'Perspicacia: «Migdol»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Migdol/
+  type: perspicacia
+- title: Jeremías 44 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/44/
+  type: bible
+checked_on: '2026-10-12'
+status: verified
+not_claimed:
+- 'Que sea el Migdol del éxodo (Éx 14:2): Perspicacia lo deja como posible, pero recoge que la mayoría lo cree otro lugar.'

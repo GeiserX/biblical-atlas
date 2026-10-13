@@ -1,0 +1,61 @@
+# biblical-atlas: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: bet-hakerem
+name: Bet-Hakerem
+names:
+- name: Bet-Hakerem
+  note: Grafía de la TNM; Perspicacia escribe Bet-hakerem y da al nombre el sentido de «Casa de la Viña».
+type: city
+lat: null
+lon: null
+precision: uncertain
+coord_source: null
+coord_url: null
+candidates:
+- name: Ramat Rahel (Khirbet Salih), unos 4,5 km al SSO del monte del templo
+  geometry:
+    type: point
+    lat: 31.739901
+    lon: 35.216896
+  checked_on: '2026-10-12'
+  status: alternative
+  sources:
+  - it-bet-hakerem
+  - openbible-geo
+  reason: Perspicacia cuenta que quienes la ponen entre Jerusalén y Tecoa, como Jerónimo, proponen este sitio. Punto de OpenBible.
+  coord_source: openbible:a30f9a0
+  coord_url: https://www.openbible.info/geo/ancient/a30f9a0/beth-haccherem
+  note: Primera identificación de la ficha «Beth-haccherem» de OpenBible.
+- name: ʽAin Karim (ʽEn Kerem), unos 7,5 km al OSO del monte del templo
+  geometry:
+    type: point
+    lat: 31.764483
+    lon: 35.159454
+  checked_on: '2026-10-12'
+  status: alternative
+  sources:
+  - it-bet-hakerem
+  - openbible-geo
+  reason: Otros, según Perspicacia, no ven en la mención de Tecoa una prueba de cercanía y prefieren este lugar de viñas y
+    olivos. Punto de OpenBible.
+  coord_source: openbible:a30f9a0
+  coord_url: https://www.openbible.info/geo/ancient/a30f9a0/beth-haccherem
+  note: Segunda identificación de la misma ficha de OpenBible; es también el punto de bet-car.
+summary: Lugar próximo a Jerusalén cuyo nombre quiere decir «Casa de la Viña». Jer 6:1 manda encender allí una señal de fuego
+  ante el enemigo que llega del norte. Tras el destierro dio nombre a un distrito de Judá.
+reason: 'Perspicacia «Bet-hakerem»; Jer 6:1; Ne 3:14. Perspicacia duda entre dos sitios, así que van los dos como candidatos.
+  OpenBible: solo los puntos.'
+not_claimed:
+- 'Que sea la Bet-Car de 1Sa 7:11: Perspicacia dice que muchos las relacionan, sin darlo por seguro.'
+sources:
+- it-bet-hakerem
+- openbible-geo
+- jeremias-6
+links:
+- title: 'Perspicacia: «Bet-hakerem»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Bet-hakerem/
+  type: perspicacia
+- title: Jeremías 6 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/6/
+  type: bible
+checked_on: '2026-10-12'
+status: verified

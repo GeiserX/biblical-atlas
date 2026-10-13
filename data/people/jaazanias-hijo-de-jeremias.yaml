@@ -1,0 +1,78 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jaazanias-hijo-de-jeremias
+name: Jaazanías
+names:
+- name: Jaazanías
+perspicacia: 1200002264#1
+disambiguation: El jefe de los recabitas, hijo de otro Jeremías; no Jaazanías el jefe militar de después de la caída de Jerusalén
+  (Perspicacia, núm. 4).
+distinct_from:
+- jaazanias-jefe-militar
+summary: Jefe de los recabitas en días de Jehoiaquim, hijo de Jeremías y nieto de Habazinías. Jeremías lo llevó con su familia
+  a un comedor del templo, le ofreció vino y se negaron por el mandato de Jehonadab.
+reason: Perspicacia «Jaazanías», núm. 1, y «Recabitas», párr. 3; Jer 35:3-11.
+sources:
+- it-jaazanias
+- it-recabitas
+- jeremias-35
+links:
+- title: 'Perspicacia: «Jaazanías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jaazan%C3%ADas/
+  type: perspicacia
+- title: Jeremías 35 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/35/
+  type: bible
+relations:
+- type: kin
+  person: jeremias-hijo-de-habazinias
+  word: father
+  inferred: false
+  sources:
+  - jeremias-35
+  - it-jeremias
+  reason: Jer 35:3 da a Jeremías, hijo de Habazinías, por su padre.
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: jehonadab-hijo-de-recab
+  word: ancestor
+  inferred: false
+  sources:
+  - jeremias-35
+  - it-jaazanias
+  reason: 'Jer 35:6, 8, 10: los recabitas llaman a Jehonadab su antepasado; Perspicacia «Jaazanías», núm. 1, lo dice de este
+    jefe.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: recab-padre-de-jehonadab
+  word: ancestor
+  inferred: false
+  sources:
+  - jeremias-35
+  - it-recabitas
+  reason: 'Jer 35:8: los recabitas llaman a Recab su antepasado; Perspicacia «Recabitas» explica que de él toman el nombre.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: holds_office
+  office: leader
+  inferred: true
+  sources:
+  - it-recabitas
+  - it-jaazanias
+  - jeremias-35
+  reason: Perspicacia «Recabitas», párr. 3, lo llama caudillo de los recabitas, y «Jaazanías», núm. 1, su jefe; Jer 35:3 lo
+    nombra delante de su familia.
+  checked_on: '2026-10-12'
+  status: verified
+- type: lived_in
+  place: jerusalen
+  inferred: false
+  sources:
+  - jeremias-35
+  - it-recabitas
+  reason: 'Jer 35:11: los recabitas entraron en Jerusalén huyendo del ejército de Nabucodonosor y ya vivían allí.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

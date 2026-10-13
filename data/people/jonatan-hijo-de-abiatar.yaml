@@ -11,6 +11,7 @@ distinct_from:
 - jonatan-levita
 - jonatan-hijo-de-sague
 - jonatan-hijo-de-sama
+- jonatan-hijo-de-carea
 summary: Hijo del sacerdote Abiatar. En la sublevación de Absalón llevaba a David, junto con Ahimáaz, los mensajes de Jerusalén.
   Años después, al parecer, se unió a Adonías.
 reason: Perspicacia «Jonatán», núm. 3; 2Sa 15:27, 36.
@@ -51,5 +52,5 @@ relations:
   reason: '2Sa 17:17-21: los dos esperan en En-Roguel, se esconden en el mismo pozo y juntos avisan a David.'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-30'
+checked_on: '2026-10-12'
 status: verified

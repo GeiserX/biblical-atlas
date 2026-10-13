@@ -1,0 +1,54 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ebed-melec
+name: Ébed-Mélec
+names:
+- name: Ébed-Mélec
+perspicacia: '1200001247'
+summary: Eunuco etíope al servicio del palacio de Sedequías. Cuando los príncipes dejaron a Jeremías en una cisterna para
+  que muriera, habló en favor suyo ante el rey y lo sacó con 30 hombres.
+reason: Perspicacia «Ébed-mélec»; Jer 38:7-13.
+sources:
+- it-ebed-melec
+- jeremias-38
+- si-jeremias
+- jeremias-39
+links:
+- title: 'Perspicacia: «Ébed-mélec»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/%C3%89bed-m%C3%A9lec/
+  type: perspicacia
+- title: Jeremías 38 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/38/
+  type: bible
+relations:
+- type: tie
+  person: sedequias
+  word: master
+  inferred: false
+  sources:
+  - jeremias-38
+  - it-ebed-melec
+  reason: 'Jer 38:7-9: eunuco de la casa del rey, que se dirige a él como «mi señor el rey»; Perspicacia «Ébed-mélec» lo pone
+    en la casa de Sedequías.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: lived_in
+  place: jerusalen
+  inferred: true
+  sources:
+  - jeremias-38
+  - it-ebed-melec
+  reason: 'Jer 38:7, 8: servía en la casa del rey, en Jerusalén, de donde sale para hablar con él.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: born_in
+  place: etiopia
+  inferred: true
+  sources:
+  - jeremias-38
+  - it-ebed-melec
+  reason: Jer 38:7 lo llama Ébed-Mélec el etíope, y Perspicacia «Ébed-mélec», eunuco etíope; que naciera en Etiopía se deduce
+    del gentilicio, como en Naamá la ammonita.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

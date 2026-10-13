@@ -22,6 +22,7 @@ sources:
 - isaias-13
 - isaias-21
 - ip1-17
+- jeremias-51
 links:
 - title: 'Perspicacia: «Medos, Media»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Medos-Media/
@@ -29,5 +30,5 @@ links:
 - title: Daniel 5 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/daniel/5/
   type: bible
-checked_on: '2026-09-30'
+checked_on: '2026-10-12'
 status: verified

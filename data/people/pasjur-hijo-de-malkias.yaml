@@ -1,0 +1,46 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: pasjur-hijo-de-malkias
+name: Pasjur
+names:
+- name: Pasjur
+perspicacia: 1200003396#2
+disambiguation: El príncipe hijo de Malkías que Sedequías envió a Jeremías (Jer 21:1). No es el sacerdote hijo de Imer que
+  lo puso en el cepo, ni el padre de Guedalías.
+distinct_from:
+- pasjur-hijo-de-imer
+- pasjur-padre-de-guedalias
+summary: Príncipe de Judá en días de Sedequías. Durante el sitio fue con el sacerdote Sofonías a pedir a Jeremías una consulta
+  a Jehová; más tarde pidió al rey que lo mataran.
+reason: Perspicacia «Pasjur», núm. 2; Jer 21:1, 2 y 38:1, 4.
+sources:
+- it-pasjur
+- jeremias-21
+- jeremias-38
+links:
+- title: 'Perspicacia: «Pasjur»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Pasjur/
+  type: perspicacia
+relations:
+- type: kin
+  person: malkias-padre-de-pasjur
+  word: father
+  inferred: false
+  sources:
+  - jeremias-21
+  - it-pasjur
+  - jeremias-38
+  reason: Jer 21:1 lo llama hijo de Malkías; Perspicacia «Pasjur», núm. 2, lo repite.
+  checked_on: '2026-10-12'
+  status: verified
+- type: tie
+  person: jeremias-profeta
+  word: enemy
+  inferred: false
+  sources:
+  - jeremias-38
+  - it-pasjur
+  reason: 'Jer 38:1-6: con otros tres príncipes pide al rey que mate a Jeremías; Perspicacia «Pasjur», núm. 2, lo recoge.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

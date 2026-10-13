@@ -1,0 +1,24 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: maaseya-padre-de-sedequias
+name: Maaseya
+names:
+- name: Maaseya
+perspicacia: 1200002811#7
+disambiguation: El padre del falso profeta Sedequías de Jer 29:21; no es el sacerdote Maaseya, padre de Sofonías.
+distinct_from:
+- maaseya-padre-de-sofonias
+- maaseya-hijo-de-salum
+summary: Padre de Sedequías, un falso profeta de los días de Jeremías que estaba entre los desterrados en Babilonia.
+reason: Perspicacia «Maaseya», núm. 7; Jer 29:21.
+sources:
+- it-maaseya
+- jeremias-29
+links:
+- title: 'Perspicacia: «Maaseya»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Maaseya/
+  type: perspicacia
+- title: Jeremías 29 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/29/
+  type: bible
+checked_on: '2026-10-12'
+status: verified

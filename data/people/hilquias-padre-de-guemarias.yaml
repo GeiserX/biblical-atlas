@@ -1,0 +1,26 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hilquias-padre-de-guemarias
+name: Hilquías
+names:
+- name: Hilquías
+perspicacia: 1200002026#6
+disambiguation: El padre de Guemarías, uno de los enviados de Sedequías a Babilonia; no es el sumo sacerdote de Josías, ni
+  el padre de Jeremías, ni el de Eliaquim.
+distinct_from:
+- hilquias-hijo-de-salum
+- hilquias-padre-de-eliaquim
+- hilquias-padre-de-jeremias
+summary: Padre de Guemarías, al que el rey Sedequías mandó con Elasá a ver a Nabucodonosor. Solo se le conoce por ese dato.
+reason: Perspicacia «Hilquías», núm. 6; Jer 29:3. El texto no dice si era alguno de los otros Hilquías de la época.
+sources:
+- it-hilquias
+- jeremias-29
+links:
+- title: 'Perspicacia: «Hilquías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hilqu%C3%ADas/
+  type: perspicacia
+- title: Jeremías 29 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/29/
+  type: bible
+checked_on: '2026-10-12'
+status: verified

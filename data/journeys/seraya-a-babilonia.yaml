@@ -15,13 +15,17 @@ companions:
 - sedequias
 summary: En el cuarto año de Sedequías, Seraya, hermano de Baruc, va con el rey a Babilonia. Lleva un libro de Jeremías contra
   la ciudad, que debe leer allí en voz alta y hundir en el Éufrates atado a una piedra.
-reason: Perspicacia «Seraya», núm. 5, fecha el viaje en 614 a.e.c., cuarto año de Sedequías (Jer 51:59). Ningún suceso lo
-  ancla aún; lo creará la lectura de Jeremías.
+reason: Perspicacia «Seraya», núm. 5, fecha el viaje en 614 a.e.c., cuarto año de Sedequías (Jer 51:59). Lo ancla el suceso
+  jeremias-encarga-a-seraya-el-libro-contra-babilonia.
 sources:
 - it-seraya
 - it-baruc
 - jeremias-51
-checked_on: '2026-09-30'
+history:
+- date: '2026-10-12'
+  change: 'La razón ya no dice que falte el suceso: la lectura de Jeremías 51 creó el que ancla el viaje.'
+  source: jeremias-51
+checked_on: '2026-10-12'
 status: verified
 stops:
 - order: 1

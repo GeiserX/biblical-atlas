@@ -12,6 +12,8 @@ distinct_from:
 - salum-de-israel
 - salum-hijo-de-ticva
 - ocozias-de-juda
+- salum-tio-de-jeremias
+- salum-padre-de-maaseya
 date:
   from: -627
   to: -627
@@ -43,8 +45,9 @@ relations:
   sources:
   - it-jehoacaz
   - 2-reyes-23
+  - jeremias-22
   reason: El pueblo eligió a este hijo de Josías (2Re 23:30).
-  checked_on: '2026-09-28'
+  checked_on: '2026-10-12'
   status: verified
 - type: succeeds
   person: josias
@@ -52,8 +55,9 @@ relations:
   sources:
   - it-jehoacaz
   - 2-reyes-23
+  - jeremias-22
   reason: Lo ungieron al morir su padre (2Re 23:30).
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   office: king
   status: verified
 - type: died_in
@@ -62,8 +66,9 @@ relations:
   sources:
   - it-jehoacaz
   - 2-reyes-23
+  - jeremias-22
   reason: Nekó lo llevó a Egipto y allí murió (2Re 23:34).
-  checked_on: '2026-09-28'
+  checked_on: '2026-10-12'
   status: verified
 - type: kin
   person: hamutal
@@ -116,5 +121,5 @@ relations:
   checked_on: '2026-09-30'
   status: verified
 perspicacia: 1200002372#3
-checked_on: '2026-10-02'
+checked_on: '2026-10-12'
 status: verified

@@ -1,0 +1,40 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jeremias-anuncia-que-jehova-enviara-pescadores-y-cazadores
+title: Jeremías anuncia que Jehová enviará pescadores y cazadores
+date:
+  from: -646
+  to: -606
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 647 y 607 a.e.c. (tiempo narrativo: durante la obra de Jeremías en Judá, antes de caer Jerusalén)'
+narrative_order:
+  series: jeremias
+  order: 16001
+places: []
+people:
+- jeremias-profeta
+present: []
+passages:
+- Jer 16:1-21
+- Jer 17:1-27
+summary: Jehová echará de su tierra al pueblo idólatra, lo hará buscar como a peces y presas y luego lo traerá del norte.
+  El pecado de Judá está grabado en su corazón; feliz quien confía en Jehová y guarda el sábado.
+reason: 'Libro ordenado por temas (Perspicacia «Jeremías, Libro de»); Jer 16 no nombra rey: entre la comisión de 647 y la
+  caída de 607 (estudio 3). «Toda Escritura», libro 24, párr. 15, abarca Jer 16-17. Sin lugar.'
+sources:
+- jeremias-16
+- si-jeremias
+- it-jeremias-libro
+- si-3
+- jeremias-17
+links:
+- title: Jeremías 16 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/16/
+  type: bible
+- title: 'Perspicacia: «Jeremías, Libro de»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jerem%C3%ADas-Libro-de/
+  type: perspicacia
+checked_on: '2026-10-12'
+status: verified

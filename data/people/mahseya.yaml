@@ -1,0 +1,20 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: mahseya
+name: Mahseya
+names:
+- name: Mahseya
+perspicacia: '1200002854'
+summary: 'Padre de Nerías según Jer 32:12, y así antepasado de dos hermanos: Baruc, secretario de Jeremías, y Seraya, que
+  fue con Sedequías a Babilonia.'
+reason: Perspicacia «Mahseya» y «Nerías»; Jer 32:12.
+sources:
+- it-mahseya
+- it-nerias
+- jeremias-32
+- jeremias-51
+links:
+- title: 'Perspicacia: «Mahseya»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Mahseya/
+  type: perspicacia
+checked_on: '2026-10-12'
+status: verified
