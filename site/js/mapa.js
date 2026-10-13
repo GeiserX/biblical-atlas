@@ -209,10 +209,10 @@ function crearMapa() {
   map.on('resize', () => { if (imgsDom.length) colocarImgsDom(); });
   // Un clic en una marca HTML también llega a MapLibre: esa marca ya lo gestiona su propio manejador.
   const enMarca = (e) => !!e.originalEvent?.target?.closest?.('.maplibregl-marker');
-  // La zona de un punto (24 px, 44 con el dedo) pisa la de sus vecinos cuando el zoom los junta: el clic va al punto más
-  // cercano, no al que quedó encima. El teclado (detail 0) pulsa el botón que tiene el foco, sin más.
+  // La zona de un punto, un hallazgo o un viajero (24 px, 44 con el dedo) pisa la de sus vecinos cuando el zoom los junta:
+  // el clic va al más cercano, no al que quedó encima. El teclado (detail 0) pulsa el botón que tiene el foco, sin más.
   map.getContainer().addEventListener('click', (e) => {
-    const el = e.target.closest?.('.marca-lugar');
+    const el = e.target.closest?.(ZONA);
     if (!el || e.detail === 0) return;
     const mejor = marcaCercana(e.clientX, e.clientY);
     if (mejor && mejor !== el) { e.stopPropagation(); e.preventDefault(); mejor.click(); }
@@ -1175,12 +1175,13 @@ function pintarHallazgos() {
     if (!m) {
       const el = document.createElement('button');
       el.type = 'button';
-      m = { el, marker: new maplibregl.Marker({ element: el, anchor: 'bottom-left', offset: [5, -5] }).setLngLat(coord(BE.L[lid])).addTo(map) };
+      // El cuadrado queda 5 px a la derecha y 5 arriba del lugar; el borde transparente de 7 px (mapa.css) se descuenta.
+      m = { el, marker: new maplibregl.Marker({ element: el, anchor: 'bottom-left', offset: [-2, 2] }).setLngLat(coord(BE.L[lid])).addTo(map) };
       marcasHallazgo.set(lid, m);
     }
     m.el.className = conMarcador(m.el, `marca-hallazgo${lista.some((h) => h.id === selH) ? ' marca-hallazgo--sel' : ''}`);
     m.el.dataset.sel = lista.length === 1 ? `hallazgo:${lista[0].id}` : `lugar:${lid}`;
-    m.el.innerHTML = `<span aria-hidden="true"></span>${lista.length > 1 ? `<b>${lista.length}</b>` : ''}`;
+    m.el.innerHTML = `<span class="hallazgo-dibujo" aria-hidden="true"><span></span>${lista.length > 1 ? `<b>${lista.length}</b>` : ''}</span>`;
     m.el.setAttribute('aria-label', lista.length === 1 ? `Hallazgo: ${lista[0].nombre}` : `${lista.length} hallazgos en ${BE.L[lid].nombre}`);
     m.el.title = lista.map((h) => h.nombre).join(' · ');
   }
@@ -1218,15 +1219,19 @@ function crearMarcas() {
   marcaProxima = new maplibregl.Marker({ element: q, anchor: 'bottom', offset: [0, -14] }).setLngLat([0, 0]);
   q.addEventListener('click', (e) => { e.stopPropagation(); const s = BE.P.find((x) => x.key === q.dataset.key); if (s) { setT((s.a + s.b) / 2); asegurarVisible(E.t, false); } });
 }
-/** El lugar que recibe un clic en (x, y): el punto o el nombre que se ve ahí; si solo hay zonas de toque, la del punto
-    más cercano. */
+/** Las marcas con zona de 24 px, lo que se ve de cada una y el punto desde el que se mide la distancia. */
+const ZONA = '.marca-lugar, .marca-hallazgo, .viajero';
+const DIBUJO = '.marca-lugar .punto, .marca-lugar .etiqueta, .marca-lugar .etiqueta *, .hallazgo-dibujo, .hallazgo-dibujo *, .viajero-punto, .viajero-rotulo';
+const CENTRO = '.punto, .hallazgo-dibujo > span, .viajero-punto';
+/** La marca que recibe un clic en (x, y): el punto, el cuadrado o el nombre que se ve ahí; si solo hay zonas de toque,
+    la del punto más cercano. */
 function marcaCercana(x, y) {
   const pila = document.elementsFromPoint(x, y);
-  const dibujado = pila.find((n) => n.matches('.marca-lugar .punto, .marca-lugar .etiqueta, .marca-lugar .etiqueta *'));
-  if (dibujado) return dibujado.closest('.marca-lugar');
+  const dibujado = pila.find((n) => n.matches(DIBUJO));
+  if (dibujado) return dibujado.closest(ZONA);
   let mejor = null, d0 = Infinity;
-  for (const el of new Set(pila.map((n) => n.closest('.marca-lugar')).filter(Boolean))) {
-    const r = el.querySelector('.punto').getBoundingClientRect();
+  for (const el of new Set(pila.map((n) => n.closest(ZONA)).filter(Boolean))) {
+    const r = el.querySelector(CENTRO).getBoundingClientRect();
     const d = Math.hypot((r.left + r.right) / 2 - x, (r.top + r.bottom) / 2 - y);
     if (d < d0) { d0 = d; mejor = el; }
   }
@@ -1633,7 +1638,7 @@ function pintarEtiquetas() {
     const exento = exentoCand(lid);
     if (punto && m.marker._map) { extra(m.el, '.cand-punto', exento ? 91 : 19, m.marker.getLngLat().toArray(), 6.31); Object.assign(items.at(-1), { ajeno: true, obstaculo: true, candDe: lid, exento }); }
   }
-  for (const m of marcasHallazgo.values()) if (m.marker._map) { extra(m.el, null, 19, m.marker.getLngLat().toArray(), 6.31); Object.assign(items.at(-1), { ajeno: true, obstaculo: true }); }
+  for (const m of marcasHallazgo.values()) if (m.marker._map) { extra(m.el, '.hallazgo-dibujo', 19, m.marker.getLngLat().toArray(), 6.31); Object.assign(items.at(-1), { ajeno: true, obstaculo: true }); }
   // Los números de un recorrido guiado (recorridos.js) van anclados abajo, 14 px sobre su lugar: se reparten como uno más.
   for (const el of map.getContainer().querySelectorAll('.marca-num')) {
     const r = el.getBoundingClientRect(), c = map.getContainer().getBoundingClientRect();

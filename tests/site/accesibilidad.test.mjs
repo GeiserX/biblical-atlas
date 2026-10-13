@@ -31,14 +31,23 @@ const THEMES = ['claro', 'oscuro', 'reunión'];
 
 /** What axe may report and the guard lets pass, each with its reason. `rule` is the axe rule id; `when` reads what
     the page says of the element (`facts`, below); `views` (optional) limits it to some views. Nothing else passes. */
-const ALLOW = [];
+const ALLOW = [
+  { rule: 'target-size', when: (f) => f.marker && f.big,
+    reason: 'A map marker whose own button is 24 x 24 px or more, partly covered by a neighbour (close places) or by what '
+      + 'floats over the map (the sheet, a card). Its place fixes where it goes: WCAG 2.5.8 counts map pins as essential. '
+      + 'A click where zones overlap goes to the nearest point (marcaCercana). A marker under 24 px still fails, and so '
+      + 'does a control that a marker covers: axe reports it on the control.' },
+];
 
 /** What an allowlist entry can ask of a reported element, measured in the page: `marker`, it is a MapLibre marker
-    (a point, a name or a number drawn on the map). */
-const facts = (page, targets) => page.evaluate((targets) => targets.map((t) => {
-  const el = document.querySelector(t);
-  return el ? { marker: !!el.closest('.maplibregl-marker') } : {};
-}), targets);
+    (a point, a name or a number drawn on the map); `big`, its own box is 24 x 24 px or more. `covers` (for the report)
+    is what axe names as covering it or near it. */
+const facts = (page, nodes) => page.evaluate((nodes) => nodes.map(({ target, related }) => {
+  const el = document.querySelector(target);
+  if (!el) return {};
+  const r = el.getBoundingClientRect();
+  return { marker: !!el.closest('.maplibregl-marker'), big: r.width >= 23.95 && r.height >= 23.95, covers: related };
+}), nodes);
 
 // ---------------------------------------------------------------------------
 // Browser, axe and server
@@ -211,7 +220,8 @@ async function scan(view, screen, theme) {
         failureSummary: `measured\n${m.ratio}:1 for ${m.need}:1, text rgba(${m.fg}) on rgb(${m.bg})${m.translucent ? ', the worse over white or black under a translucent card' : ''}` }] });
     }
     const out = [];
-    const known = await facts(page, violations.flatMap((v) => v.nodes.map((n) => n.target.flat().join(' '))));
+    const known = await facts(page, violations.flatMap((v) => v.nodes.map((n) => ({ target: n.target.flat().join(' '),
+      related: (n.any || []).concat(n.all || [], n.none || []).flatMap((c) => c.relatedNodes || []).map((x) => x.target.flat().join(' ')) }))));
     let k = 0;
     for (const v of violations) {
       for (const n of v.nodes) {
@@ -531,3 +541,26 @@ for (const screen of ['1440', '430']) {
     await page.context().close();
   });
 }
+
+// A find drawn next to its place: the corner of its square under the zone of the place point is still the find.
+test('1440: a click on what is drawn wins over the zone of another marker on top of it', async () => {
+  const page = await keyboardPage('1440', 'sel=lugar:corinto&t=50.3000');
+  const s = await page.evaluate(() => {
+    for (const el of window.__be.map.getContainer().querySelectorAll('.marca-hallazgo')) {
+      const r = el.querySelector('.hallazgo-dibujo > span').getBoundingClientRect();
+      for (let x = r.left + 1; x < r.right; x += 1) {
+        for (let y = r.top + 1; y < r.bottom; y += 1) {
+          const top = document.elementFromPoint(x, y);
+          if (top?.closest('.marca-lugar') && !top.closest('.marca-lugar .punto, .marca-lugar .etiqueta')) return { id: el.dataset.sel, x, y, over: top.closest('.marca-lugar').dataset.sel };
+        }
+      }
+    }
+    return null;
+  });
+  assert.ok(s, 'no find whose square lies partly under the zone of a place point');
+  await page.mouse.click(s.x, s.y);
+  await page.waitForFunction((id) => `${window.BE.E.sel?.tipo}:${window.BE.E.sel?.id}` === id, s.id, { timeout: 5000 }).catch(() => {});
+  assert.equal(await selected(page), s.id, `a click on the square of ${s.id}, under the zone of ${s.over}, chose ${await selected(page)}`);
+  assert.deepEqual(page.errors, []);
+  await page.context().close();
+});

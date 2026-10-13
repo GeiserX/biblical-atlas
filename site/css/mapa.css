@@ -13,9 +13,11 @@
 
 /* Lugares */
 .marca-lugar, .marca-region { border: 0; padding: 0; background: none; cursor: pointer; }
+.marca-region { min-height: 24px; }
 /* El punto mide 10 px (7 el menor, 14 el de ahora), pero el botón mide al menos 24 × 24 (WCAG 2.5.8): un borde transparente lo
-   rodea y recibe el clic y el ratón. El punto y su nombre se colocan desde dentro del borde, así que no se mueven. Dos
-   zonas que se pisan dan el clic al punto más cercano (mapa.js, marcaCercana). */
+   rodea y recibe el clic y el ratón. El punto y su nombre se colocan desde dentro del borde, así que no se mueven. Igual
+   los hallazgos y los viajeros; los nombres de región y de mar o río crecen hasta 24 alrededor de su centro. Dos zonas
+   que se pisan dan el clic al punto más cercano (mapa.js, marcaCercana). */
 .marca-lugar { --punto: 10px; --borde: 7px; box-sizing: content-box; width: var(--punto); height: var(--punto); border: var(--borde) solid transparent; }
 .marca-lugar .punto { position: absolute; inset: 0; border-radius: 50%; background: var(--surface); border: 2px solid var(--ink-2); box-shadow: 0 0 0 1.5px rgba(255, 255, 255, .7); }
 .marca-lugar .etiqueta { position: absolute; left: 14px; top: 50%; transform: translateY(-50%); display: flex; flex-direction: column; text-align: left; line-height: 1; white-space: nowrap;
@@ -240,7 +242,7 @@ ol.paradas li:first-child .be-row { border-top: 0; }
 .marca-lugar--monte .punto { border-radius: 0; border: 0; box-shadow: none; background: var(--ink-2); clip-path: polygon(50% 0, 100% 100%, 0 100%); }
 .marca-lugar--difuso .punto { inset: -9px; border: 0; background: radial-gradient(circle, rgba(122, 92, 142, .45), rgba(122, 92, 142, 0) 70%); box-shadow: none; }
 .marca-lugar--difuso .nombre-b { color: #5d4674; font-style: italic; }
-.marca-agua { border: 0; padding: 0; background: none; cursor: pointer; width: 1px; height: 1px; }
+.marca-agua { border: 0; padding: 0; background: none; cursor: pointer; width: 24px; height: 24px; }
 .marca-agua .etiqueta { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); display: flex; flex-direction: column; align-items: center; white-space: nowrap; line-height: 1.05;
   font: italic 500 15px var(--font-serif); color: var(--map-sea-label); letter-spacing: .06em; text-shadow: 0 0 3px rgba(233, 240, 242, .9), 0 0 8px rgba(233, 240, 242, .9); }
 .marca-agua .nombre-b { font-size: 11.5px; letter-spacing: 0; opacity: .85; }
@@ -275,11 +277,12 @@ ol.paradas li:first-child .be-row { border-top: 0; }
 .cand--del-foco { z-index: 2; }
 
 /* Hallazgos y otros viajeros */
-.marca-hallazgo { display: inline-flex; align-items: center; gap: 2px; padding: 0; border: 0; background: none; cursor: pointer; }
-.marca-hallazgo span { width: 11px; height: 11px; background: var(--node-hallazgo); border: 2px solid #fff; border-radius: 2px; box-shadow: 0 0 0 1px var(--node-hallazgo); }
-.marca-hallazgo b { font: 700 10px var(--font-sans); color: var(--node-hallazgo); text-shadow: 0 0 3px #fff, 0 0 3px #fff; }
-.marca-hallazgo--sel span { box-shadow: 0 0 0 1px var(--node-hallazgo), 0 0 0 4px color-mix(in srgb, var(--node-hallazgo) 30%, transparent); }
-.viajero { width: 12px; height: 12px; border: 0; padding: 0; background: none; cursor: pointer; }
+.marca-hallazgo { display: flex; box-sizing: content-box; padding: 0; border: 7px solid transparent; background: none; cursor: pointer; }
+.hallazgo-dibujo { display: inline-flex; align-items: center; gap: 2px; }
+.hallazgo-dibujo > span { width: 11px; height: 11px; background: var(--node-hallazgo); border: 2px solid #fff; border-radius: 2px; box-shadow: 0 0 0 1px var(--node-hallazgo); }
+.hallazgo-dibujo > b { font: 700 10px var(--font-sans); color: var(--node-hallazgo); text-shadow: 0 0 3px #fff, 0 0 3px #fff; }
+.marca-hallazgo--sel .hallazgo-dibujo > span { box-shadow: 0 0 0 1px var(--node-hallazgo), 0 0 0 4px color-mix(in srgb, var(--node-hallazgo) 30%, transparent); }
+.viajero { box-sizing: content-box; width: 12px; height: 12px; border: 6px solid transparent; padding: 0; background: none; cursor: pointer; }
 .viajero-punto { position: absolute; inset: 0; border-radius: 50%; background: var(--accent); border: 2.5px solid #fff; box-shadow: 0 0 0 1.5px var(--accent); }
 .viajero.estimada .viajero-punto { outline: 2px dashed var(--accent); outline-offset: 4px; }
 .viajero-rotulo { position: absolute; left: 16px; top: -14px; font: 700 11px/1 var(--font-sans); letter-spacing: .04em; text-transform: uppercase; color: var(--accent); white-space: nowrap; text-shadow: 0 0 2px #fff, 0 0 4px #fff; }
