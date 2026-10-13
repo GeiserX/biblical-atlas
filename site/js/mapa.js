@@ -1478,8 +1478,10 @@ function choqueZoom(A, B) {
 /** Reparto fijo: recorre los rótulos en orden (primero los que se ven siempre, luego por el zoom en que aparecen, por
     importancia y, a igual importancia, el lugar con más hechos) y recorta el tramo [desde, hasta) de cada uno para que
     no pise a los anteriores. Uno que aparece al acercarse empieza después de su último choque; uno con fin (regiones,
-    agua) acaba antes de su primer choque. */
-function repartir(items, burbujas) {
+    agua) acaba antes de su primer choque. Siguiendo una ruta, una parada en foco solo aparta a lo que no es de la ruta
+    si choca con ello a este zoom y se dibuja en él: una que perdió contra la parada actual no deja sin nombre a otros
+    (Listra y Derbe junto a Iconio, en el primer viaje a zoom 4,8). Si luego se dibuja, el reintento les quita el sitio. */
+function repartir(items, burbujas, zoom) {
   const orden = [...items].sort((a, b) => (b.prio >= 90) - (a.prio >= 90) || (a.prio >= 90 ? b.prio - a.prio : 0)
     || (a.hasta < Infinity) - (b.hasta < Infinity) || a.desde - b.desde || b.prio - a.prio || (b.peso || 0) - (a.peso || 0) || (a.id < b.id ? -1 : a.id > b.id ? 1 : 0));
   const puestos = [];
@@ -1490,6 +1492,7 @@ function repartir(items, burbujas) {
     if (!c || c[0] >= ZOOM_MAX) return;
     const bs = Math.max(otro.d, c[0]), be = Math.min(otro.h, c[1]);
     if (!(be > bs) || be <= x.d || bs >= x.h) return;
+    if (otro.foco && !x.foco && !(bs <= zoom && zoom < be)) return;
     if (x.hasta === Infinity || bs <= x.d) x.d = Math.max(x.d, be); else x.h = Math.min(x.h, bs);
   };
   for (const x of items) { x.d = x.desde; x.h = x.hasta; }
@@ -1694,7 +1697,7 @@ function pintarEtiquetas() {
     const z = x.el.classList.contains('cand') ? libreCand.get(x.el) : libreCand.get(x.rotuloDe);
     if (z != null) x.desde = Math.max(x.desde, z);
   }
-  repartir(conCaja, burbujas);
+  repartir(conCaja, burbujas, zoom);
   // En pantalla: el tramo de zoom manda; además, lo que no es el lugar seleccionado no puede salirse del mapa ni quedar
   // bajo las tarjetas y los controles. Esconderlo no deja el sitio a otro, así que el reparto no cambia al moverse.
   const caja = (el) => el.getBoundingClientRect();
