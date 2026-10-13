@@ -335,8 +335,9 @@ function iniciar() {
     if (ir) { parar(); irA(+ir.dataset.recorridoIr); return; }
     if (e.target.closest('[data-recorrido-abrir]')) plegar(!R.abierta);
   });
-  // Con el foco en la tarjeta, sobre el mapa o en la ficha, ← y → pasan de parada, no mueven la fecha. Con Alt, ⌘ o
-  // Ctrl son del navegador; con Mayúsculas, el salto de siempre. Fuera de la tarjeta, las flechas mueven la fecha.
+  // Con el foco en la tarjeta que flota sobre el mapa, o en la del recorrido en la ficha (la parada, su pregunta, sus
+  // botones), ← y → pasan de parada, no mueven la fecha. Con Alt, ⌘ o Ctrl son del navegador; con Mayúsculas, el salto de
+  // siempre. Fuera de ellas (las migas, «Salir y explorar», «Por qué lo decimos»), las flechas mueven la fecha.
   const flechaParada = (e) => {
     if ((e.key !== 'ArrowLeft' && e.key !== 'ArrowRight') || !R.id || E.sel?.tipo !== 'recorrido' || E.sel.id !== R.id || e.altKey || e.metaKey || e.ctrlKey || e.shiftKey) return;
     if (e.target.matches?.('input, textarea, select, [contenteditable="true"]')) return;
@@ -347,7 +348,7 @@ function iniciar() {
     if (e.key === 'Escape' && R.abierta) { e.stopPropagation(); plegar(false); vista.querySelector('[data-recorrido-abrir]')?.focus(); }
     flechaParada(e);
   });
-  document.getElementById('panel-cuerpo').addEventListener('keydown', flechaParada);
+  document.getElementById('panel-cuerpo').addEventListener('keydown', (e) => { if (e.target.closest?.('.recorrido, .pregunta, .recorrido-nav, .recorrido-herramientas')) flechaParada(e); });
   document.addEventListener('click', (e) => { if (e.target.closest('[data-presentar]')) presentar(!raiz.classList.contains('be-presentando')); });
   // Deslizar el dedo sobre la ficha en el móvil pasa de parada.
   let x0 = null;

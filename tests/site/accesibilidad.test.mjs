@@ -486,6 +486,15 @@ for (const screen of ['1440', '430']) {
     const c = await where(page);
     assert.equal(c.step, a.step, 'ArrowLeft in the panel card did not go back');
     assert.equal(c.t, a.t, 'the date is not the stop\'s own');
+    // On «Salir y explorar», above the card in the panel, the arrows move the date: it is not one of the tour's controls.
+    await page.locator('#panel-cuerpo [data-recorrido-salir]').focus();
+    await page.keyboard.press('ArrowRight');
+    await settle(page);
+    const e = await where(page);
+    assert.equal(e.step, c.step, 'with the focus on «Salir y explorar», ArrowRight changed the stop');
+    assert.ok(e.t > c.t, 'with the focus on «Salir y explorar», ArrowRight did not move the date');
+    await page.keyboard.press('ArrowLeft');
+    await settle(page);
     // Outside the card the arrows keep moving the date, tour or not.
     await page.evaluate(() => document.activeElement.blur());
     await page.keyboard.press('ArrowRight');
