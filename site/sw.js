@@ -6,9 +6,10 @@
    - Al instalarse guarda PRECACHE (lo que hace falta para abrir las tres páginas y las listas de vídeos) y LIBS
      (MapLibre, en la versión exacta que carga index.html). Lo que ya estaba en la caché anterior con la misma huella
      se copia, no se descarga.
-   - El resto de lo nuestro (el detalle, el inglés, los mapas de fondo, data.json) se guarda la
-     primera vez que el sitio lo pide. Las teselas de OpenFreeMap también, en otra caché con tope: se sirven de la red
-     y, sin red, de lo ya visto. Nunca se descarga nada que el sitio no haya pedido.
+   - El resto de lo nuestro (el detalle, el inglés, los mapas de fondo) se guarda la primera vez que el sitio lo pide.
+     Ninguna página pide data.json: lo leen el servidor MCP y quien lo baje de fuera. Las teselas de OpenFreeMap
+     también se guardan, en otra caché con tope: se sirven de la red y, sin red, de lo ya visto. Nunca se descarga
+     nada que el sitio no haya pedido.
    - Un fichero cuya huella no es la de esta versión no se sirve ni se guarda: el servidor ya tiene otra versión, y
      mezclar un detalle nuevo con un núcleo viejo uniría datos que no casan. Responde 503 y busca la versión nueva.
    - Una versión nueva espera: js/offline.js avisa y la activa solo cuando quien lee pulsa «Recargar».
