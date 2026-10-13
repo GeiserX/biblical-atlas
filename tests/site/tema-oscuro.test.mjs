@@ -126,6 +126,9 @@ const SURFACES = [
   { name: 'ficha de carta', open: app('sel=carta:1-tesalonicenses&cartas=todas') },
   { name: 'ficha de periodo', open: app('sel=periodo:los-patriarcas') },
   { name: 'ficha de hallazgo', open: app('sel=hallazgo:cilindro-de-ciro') },
+  { name: 'ficha de viaje', open: app('sel=viaje:segundo-viaje') },
+  { name: 'ficha de parada', open: app('sel=parada:segundo-viaje/3') },
+  { name: 'ficha de libro', open: app('sel=libro:hechos') },
   { name: 'recorrido', open: app(TOUR) },
   { name: 'recorrido abierto', screens: ['430'], open: app(TOUR, (p) => p.locator('[data-recorrido-abrir]').click()) },
   { name: 'búsqueda', open: app(T, async (p) => {
