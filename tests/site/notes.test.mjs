@@ -275,7 +275,8 @@ test('back and forward close the editor and keep the note under its own card', {
   } finally { await context.close(); }
 });
 
-test('the note saves itself while typing and when the page goes away, and says so once', { timeout: 90000 }, async () => {
+// Three page loads: see the unreadable store below.
+test('the note saves itself while typing and when the page goes away, and says so once', { timeout: 180000 }, async () => {
   const context = await newContext(DESKTOP);
   try {
     const page = await openSite(context, 'sel=persona:pablo');
@@ -638,7 +639,8 @@ test('every one of the 11 kinds of card keys its pencil by its own sel, and ever
   } finally { await context.close(); }
 });
 
-test('notes survive a change of the data, and entries of a type this version does not know are kept', { timeout: 90000 }, async () => {
+// Three page loads: see the unreadable store below.
+test('notes survive a change of the data, and entries of a type this version does not know are kept', { timeout: 180000 }, async () => {
   const context = await newContext();
   try {
     const page = await openSite(context, 'sel=persona:pablo');   // with a hash the front page does not cover the site
@@ -667,7 +669,8 @@ test('notes survive a change of the data, and entries of a type this version doe
   } finally { await context.close(); }
 });
 
-test('an unreadable store goes aside under its own date, a second one never replaces the first, and «Mis notas» offers both', { timeout: 90000 }, async () => {
+// Three page loads, and ready() gives each up to 60 s: at a load of 20 they took 26, 43 and 49 s, and 90 s cut the test.
+test('an unreadable store goes aside under its own date, a second one never replaces the first, and «Mis notas» offers both', { timeout: 180000 }, async () => {
   const context = await newContext();
   try {
     const page = await openSite(context, 'sel=persona:pablo');
