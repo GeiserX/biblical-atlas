@@ -479,7 +479,8 @@ relation_rewrites:
   - {from: {tipo: pariente, relacion: cuñado}, to: {type: kin, word: brother_in_law}}
   # sin palabra se quedan sin palabra: darles una es la decisión K5
   - {from: {tipo: pariente, relacion: null}, to: {type: kin, word: null}}
-  # kin fuera del vocabulario: el texto se queda en caption hasta su decisión (K1, K2)
+  # kin fuera del vocabulario: el texto se queda en caption. K1 y K2 ya están decididas y estos textos salieron de
+  # outside: en una rama que se migre ahora avisan como unlisted_caption y se deciden al leerla (T3)
   - {from: {tipo: pariente, relacion: hijo de Jerjes I}, to: {type: kin, caption: hijo de Jerjes I}}
   - {from: {tipo: pariente, relacion: hijo de Darío I}, to: {type: kin, caption: hijo de Darío I}}
   - {from: {tipo: pariente, relacion: hijo de Nabonido}, to: {type: kin, caption: hijo de Nabonido}}
@@ -499,7 +500,8 @@ relation_rewrites:
   - {from: {tipo: acompana, relacion: señor}, inverse_was: [null], to: {type: tie, word: master}}
   - {from: {tipo: acompana, relacion: señora}, inverse_was: [null], to: {type: tie, word: mistress}}
   - {from: {tipo: acompana, relacion: huésped de}, inverse_was: [null], reversed: true, to: {type: tie, word: host}}
-  # tratos escritos desde el otro lado: se quedan en su ficha con sus dos textos hasta la decisión T1
+  # tratos escritos desde el otro lado: se quedan en su ficha con sus dos textos. T1 ya está decidida y estos
+  # textos salieron de outside: en una rama que se migre ahora avisan como unlisted_caption (T3)
   - from: {tipo: acompana, relacion: custodio}
     inverse_was: [custodiado por]
     to: {type: tie, caption: custodio, inverse_caption: custodiado por}
