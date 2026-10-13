@@ -11,7 +11,7 @@ date:
   text: 625 a.e.c.
 narrative_order:
   series: jeremias
-  order: 45001
+  order: 145001
 places: []
 people:
 - jeremias-profeta
@@ -25,7 +25,7 @@ passages:
 summary: Mientras escribe al dictado de Jeremías, Baruc se lamenta de su agotamiento. Por boca del profeta, Jehová le pide
   que no busque grandezas para sí y le asegura que salvará la vida en la calamidad.
 reason: 'Jer 45:1 lo sitúa en el cuarto año de Jehoiaquim, cuando Baruc escribía el rollo; Perspicacia «Baruc», núm. 1, párr.
-  2 y 4, fecha ese año en 625 a.e.c. El texto no dice dónde: nadie queda situado.'
+  2 y 4, fecha ese año en 625 a.e.c. El texto no dice dónde: nadie queda situado. Orden por fecha.'
 sources:
 - jeremias-45
 - it-baruc
@@ -38,5 +38,10 @@ links:
 - title: 'Perspicacia: «Baruc»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Baruc/
   type: perspicacia
-checked_on: '2026-10-12'
+history:
+- date: '2026-10-13'
+  change: 'El orden del relato pasa de 45001 a 145001: la serie sigue las fechas de los sucesos, porque el libro va por temas
+    y no en el orden en que pasaron.'
+  source: it-jeremias-libro
+checked_on: '2026-10-13'
 status: verified

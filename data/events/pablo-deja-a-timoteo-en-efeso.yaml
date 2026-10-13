@@ -1,0 +1,44 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: pablo-deja-a-timoteo-en-efeso
+title: Pablo deja a Timoteo en Éfeso
+date:
+  from: 61
+  to: 64
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'c. 61-64 e.c. (tiempo narrativo: tras salir libre de Roma y antes de escribir 1 Timoteo)'
+narrative_order:
+  series: hechos
+  order: 2845
+places:
+- efeso
+people:
+- pablo
+- timoteo
+present:
+- pablo
+- timoteo
+passages:
+- 1Ti 1:3
+summary: Ya libre, Pablo está en Éfeso con Timoteo. Al marcharse hacia Macedonia le pide que se quede allí y mande a algunos
+  dejar de enseñar una doctrina distinta.
+reason: 'Perspicacia «Timoteo, Cartas a»: Hechos no lo cuenta, así que fue tras la liberación de hacia 61 y antes de la carta,
+  de c. 61-64. Perspicacia «Timoteo» lo pone en Éfeso bajo la dirección de Pablo.'
+sources:
+- 1-timoteo-1
+- it-timoteo-cartas
+- it-timoteo
+links:
+- title: 1 Timoteo 1 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/1-timoteo/1/
+  type: bible
+- title: 'Perspicacia: «Timoteo, Cartas a»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Timoteo-Cartas-a/
+  type: perspicacia
+search: Pablo Timoteo Éfeso Macedonia
+note: 'Orden 2845 de la serie hechos: antes de pablo-escribe-1-timoteo (2850), porque la carta recuerda la despedida, y después
+  de las cartas del primer encierro (hasta 2840).'
+checked_on: '2026-10-13'
+status: verified

@@ -13,7 +13,7 @@ date:
     en el año décimo de Sedequías)'
 narrative_order:
   series: jeremias
-  order: 37003
+  order: 737003
 places:
 - jerusalen
 people:
@@ -32,7 +32,7 @@ passages:
 summary: 'Mientras los caldeos se han retirado, Sedequías envía a Jehucal y al sacerdote Sofonías a pedir a Jeremías que ore.
   La respuesta: el ejército egipcio regresará a su país y los caldeos volverán a quemar la ciudad.'
 reason: Jer 37:3-10; Perspicacia «Sedequías», núm. 4, apartado «Se rebela contra Nabucodonosor», párr. 4. Entre el inicio
-  del sitio (609, estudio 3) y la compra del campo de Hanamel (608), con Jeremías ya preso en el Patio.
+  del sitio (609, estudio 3) y la compra del campo de Hanamel (608), con Jeremías ya preso en el Patio. Orden por fecha.
 sources:
 - jeremias-37
 - it-sedequias
@@ -45,5 +45,10 @@ links:
 - title: 'Perspicacia: «Sedequías»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sedequ%C3%ADas/
   type: perspicacia
-checked_on: '2026-10-12'
+history:
+- date: '2026-10-13'
+  change: 'El orden del relato pasa de 37003 a 737003: la serie sigue las fechas de los sucesos, porque el libro va por temas
+    y no en el orden en que pasaron.'
+  source: it-jeremias-libro
+checked_on: '2026-10-13'
 status: verified

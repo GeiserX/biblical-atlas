@@ -14,7 +14,6 @@ date:
 narrative_order:
   series: 1-cronicas
   order: 26031
-  after: salomon-rey
 places:
 - jazer
 people:
@@ -33,5 +32,10 @@ sources:
 - it-jerias
 - tnm-b7
 - si-3
-checked_on: '2026-10-12'
+history:
+- date: '2026-10-13'
+  change: 'Sin after a salomon-rey: ya va tras 1Cr 22:6-19, que lo lleva. Repetido, cada uno volvía a cerrar el tramo en esa
+    fecha y dejaba sin sitio al suceso anterior.'
+  source: 1-cronicas-26
+checked_on: '2026-10-13'
 status: pending

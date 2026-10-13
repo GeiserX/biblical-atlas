@@ -11,7 +11,7 @@ date:
   text: 'entre 625 y 614 a.e.c. (tiempo narrativo: con Nabucodonosor ya rey y antes de que Seraya llevara la profecía a Babilonia)'
 narrative_order:
   series: jeremias
-  order: 50001
+  order: 550001
 places:
 - babilonia
 - caldea
@@ -25,7 +25,7 @@ passages:
 summary: Jehová anuncia por Jeremías que los medos y otras naciones del norte tomarán Babilonia y avergonzarán a Bel y a Merodac.
   Israel y Judá saldrán hacia Sion, y Babilonia quedará despoblada para siempre.
 reason: 'Jer 50:17 llama rey a Nabucodonosor, que tomó el mando en 625 (Perspicacia «Babilonia»). Según «Seraya», núm. 5,
-  Jeremías le dio el rollo contra Babilonia en 614. Sin lugar: nadie queda situado.'
+  Jeremías le dio el rollo contra Babilonia en 614. Sin lugar: nadie queda situado. Orden por fecha.'
 sources:
 - jeremias-50
 - it-babilonia
@@ -41,5 +41,10 @@ links:
 - title: Jeremías 50 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/50/
   type: bible
-checked_on: '2026-10-12'
+history:
+- date: '2026-10-13'
+  change: 'El orden del relato pasa de 50001 a 550001: la serie sigue las fechas de los sucesos, porque el libro va por temas
+    y no en el orden en que pasaron.'
+  source: it-jeremias-libro
+checked_on: '2026-10-13'
 status: verified
