@@ -17,9 +17,10 @@
 //                   zoom   a minor name (menor) below zoom 6.3: it waits for a closer zoom;
 //                   choque the name would touch a name, a number, a bubble or a candidate point already drawn;
 //                   reparto none of the above: the fixed reparto by zoom gave its place to a name that goes first.
-// It also counts the tour's numbered pills that are drawn, and the stops in focus that are named: on a tour, the stop
-// and the one before and after it; on a journey of Pablo, the stop where he is on the cursor's date and the nearest
-// stops before and after it in another place (or, travelling, the two ends of the leg). With --pasos, each journey of
+// It also lists each tour's first framing (the map's bounds and zoom on opening), counts the tour's numbered pills
+// that are drawn, and the stops in focus that are named: on a tour, the stop and the one before and after it; on a
+// journey of Pablo, the stop where he is on the cursor's date and the nearest stops before and after it in another
+// place (or, travelling, the two ends of the leg). With --pasos, each journey of
 // Pablo is measured on every one of its stops (the cursor in the middle of the stay), not only on opening.
 //
 // --fotos writes a screenshot of each opening (png). Uses <root>/site/data.json, or builds it into a temporary
@@ -135,7 +136,8 @@ function contar() {
     s.por = motivos[0];
     s.motivos = motivos;
   }
-  return { sel: BE.selTexto(sel), zoom: +m.getZoom().toFixed(2), stops };
+  const b = m.getBounds();
+  return { sel: BE.selTexto(sel), zoom: +m.getZoom().toFixed(2), stops, marco: [b.getWest(), b.getSouth(), b.getEast(), b.getNorth()].map((v) => +v.toFixed(2)) };
 }
 
 let browser, server, base, tmp;
@@ -196,7 +198,7 @@ async function main() {
         if (i) { await page.evaluate((k) => window.BE.recorridos.irA(k), i); await quieto(page); }
         if (!i && FOTOS) await page.screenshot({ path: path.join(FOTOS, `recorrido-${id}-${screen.name}.png`) });
         const r = await page.evaluate(contar);
-        filas.push({ pantalla: screen.name, tipo: 'recorrido', id, paso: i + 1, zoom: r.zoom, stops: r.stops, ...resumen(r.stops) });
+        filas.push({ pantalla: screen.name, tipo: 'recorrido', id, paso: i + 1, zoom: r.zoom, marco: r.marco, stops: r.stops, ...resumen(r.stops) });
       }
       if (page.pageErrors.length) console.error(`${id}: ${page.pageErrors.join('; ')}`);
       await page.context().close();
@@ -239,6 +241,9 @@ async function main() {
       console.log(`${screen.name}\t${v.id}\tal abrir ${fmt(filas.find((f) => f.pantalla === screen.name && f.id === v.id && f.tipo === 'viaje'))}\tparada a parada ${fmt(suma(fs_))}`);
     }
   }
+  // The first framing of each tour: the map's bounds (west, south, east, north) and zoom when it opens.
+  console.log('\nEncuadre al abrir');
+  for (const f of filas.filter((x) => x.tipo === 'recorrido' && x.paso === 1)) console.log(`${f.pantalla}\t${f.id}\tzoom ${f.zoom}\toeste ${f.marco[0]} sur ${f.marco[1]} este ${f.marco[2]} norte ${f.marco[3]}`);
   if (JSON_OUT) fs.writeFileSync(JSON_OUT, JSON.stringify(filas, null, 1));
 }
 main().catch((e) => { console.error(e); process.exitCode = 1; }).finally(async () => {
