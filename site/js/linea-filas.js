@@ -27,6 +27,15 @@ const clamp = (v, a, b) => Math.max(a, Math.min(b, v));
 const EDGE = 18;
 /** Dónde puede ir el nombre de una marca: la franja menos la zona de la flecha de cada lado que la corta. */
 const limits = (it, w) => [it._cut?.[0] ? EDGE : 0, w - (it._cut?.[1] ? EDGE : 0)];
+/** Qué flechas se pintan: [izquierda, derecha]. La flecha ocupa de 2 a 9 px desde su borde. Solo falta la de un lado
+    cortado cuando el nombre no cabe junto a su punto sin pasar por encima de ella (edgeRows): antes la flecha que el
+    punto. El extremo aclarado y el texto emergente siguen diciendo que continúa. */
+const arrows = (it, w) => {
+  const c = it._cut || [false, false];
+  if (!c[0] && !c[1]) return [false, false];
+  const a = it._lx, b = it._lx + lwOf(it);
+  return [c[0] && a >= 10, c[1] && b <= w - 10];
+};
 
 /** Qué extremos se difuminan: [izquierdo, derecho] en px. */
 function softEnds(it, G) {
@@ -234,6 +243,9 @@ function edgeRows(vis, w, G, holdEdge) {
     const lw2 = lwOf(it);
     if (d0 - 4 - lw2 >= wl + 2 && d0 - 4 <= wr) it._lx = d0 - 4 - lw2;
     else if (d1 + 4 >= wl && d1 + 4 + lw2 <= wr - 2) it._lx = d1 + 4;
+    // Sin sitio a un lado fuera de las flechas, el nombre va sobre la flecha antes que sobre su propio punto (arrows).
+    else if (d0 - 4 - lw2 >= 2) it._lx = d0 - 4 - lw2;
+    else if (d1 + 4 + lw2 <= w - 2) it._lx = d1 + 4;
     else it._lx = Math.max(wl + 2, wr - lw2 - 2);
     hitOf(it, w, G);
     unfit.push(it);
@@ -392,5 +404,5 @@ const inView = (hit, y, v) => hit[1] > 0 && hit[0] < v.w && y + v.row > v.top &&
     ver con él (`relatedInView`). Fuera de la vista lo elegido, las demás recuperan su color; la selección se queda. */
 const dimOthers = ({ own, ownInView, relatedInView }) => (own ? ownInView : relatedInView);
 
-BE.filas = { TAG, REPEAT, EDGE, labelText, hollow, softEnds, measure, extent, packOrder, pack, place, hitOf, lwOf, rescueEdges, edgeRows, layoutLane, clickTarget, certainty, storyOrder, norm, nextSel, inView, dimOthers };
+BE.filas = { TAG, REPEAT, EDGE, arrows, labelText, hollow, softEnds, measure, extent, packOrder, pack, place, hitOf, lwOf, rescueEdges, edgeRows, layoutLane, clickTarget, certainty, storyOrder, norm, nextSel, inView, dimOthers };
 })();

@@ -654,9 +654,10 @@ function pintarSigue(it, h0) {
     it.sigueEl = ['izq', 'der'].map((lado) => { const e = document.createElement('span'); e.className = `m-sigue ${lado}`; e.hidden = true; it.el.insertBefore(e, it.labEl); return e; });
   }
   if (it.sigueEl) {
-    it.sigueEl[0].hidden = !cut[0]; it.sigueEl[1].hidden = !cut[1];
-    if (cut[0]) it.sigueEl[0].style.left = `${2 - h0}px`;
-    if (cut[1]) it.sigueEl[1].style.left = `${anchoLinea - 2 - 7 - h0}px`;
+    const [fl, fr] = FIL.arrows(it, anchoLinea);
+    it.sigueEl[0].hidden = !fl; it.sigueEl[1].hidden = !fr;
+    if (fl) it.sigueEl[0].style.left = `${2 - h0}px`;
+    if (fr) it.sigueEl[1].style.left = `${anchoLinea - 2 - 7 - h0}px`;
   }
   const texto = textoSigue(it, cut);
   if (it._sigue === texto) return;

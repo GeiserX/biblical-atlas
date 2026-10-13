@@ -331,8 +331,8 @@ test('T14 a bar or a window that goes on past an edge of the track says so on th
   assert.equal(checked, 2 * 6 * 4);
 });
 
-test('T15 a name never covers the edge arrow of its own mark, and still lies inside the track', () => {
-  let cut = 0, checked = 0;
+test('T15 a name never covers the edge arrow of its own mark, and still lies inside the track; only a name with no room beside its dot hides the arrow, never the dot', () => {
+  let cut = 0, checked = 0, hidden = 0;
   for (const g of [G, GC]) for (const seed of [5, 13]) {
     const lane = syntheticLane(seed);
     F.measure(lane.items, MEAS, g);
@@ -344,10 +344,31 @@ test('T15 a name never covers the edge arrow of its own mark, and still lies ins
         assert.ok(a >= -0.01 && b <= w + 0.01, `span ${span}: «${it.name}» label [${a.toFixed(1)}, ${b.toFixed(1)}] is outside [0, ${w}]`);
         if (!it._cut[0] && !it._cut[1]) continue;
         cut++;
-        if (it._cut[0]) assert.ok(a >= F.EDGE - 0.01, `span ${span} at ${c}: «${it.name}» label starts at ${a.toFixed(1)} px, over its left arrow`);
-        if (it._cut[1]) assert.ok(b <= w - F.EDGE + 0.01, `span ${span} at ${c}: «${it.name}» label ends at ${b.toFixed(1)} of ${w} px, over its right arrow`);
+        // Keeping off the arrows never puts a name over its own dot, save one too long for half the track (as on the page).
+        if (it.shape === 'moment' && !(F.lwOf(it) - 4 > (w - 24) / 2)) {
+          assert.ok(b <= it._dot - g.dotR + 0.01 || a >= it._dot + g.dotR - 0.01, `span ${span} at ${c}: «${it.name}» label [${a.toFixed(1)}, ${b.toFixed(1)}] covers its own dot at ${it._dot.toFixed(1)} of ${w} px`);
+        }
+        const shown = F.arrows(it, w);
+        // An arrow that is drawn is never under the name (it spans 2 to 9 px from its edge).
+        if (shown[0]) assert.ok(a >= 10, `span ${span} at ${c}: «${it.name}» label starts at ${a.toFixed(1)} px, over its left arrow`);
+        if (shown[1]) assert.ok(b <= w - 10, `span ${span} at ${c}: «${it.name}» label ends at ${b.toFixed(1)} of ${w} px, over its right arrow`);
+        for (const i of [0, 1]) {
+          if (!it._cut[i]) continue;
+          // Without the name over the arrow zone, the arrow is drawn; a name there is one with no room beside its dot or
+          // bar inside the limits that keep it off the arrows.
+          if (i === 0 ? a >= F.EDGE - 0.01 : b <= w - F.EDGE + 0.01) { assert.ok(shown[i], `span ${span}: «${it.name}» hides an arrow it does not cover`); continue; }
+          hidden++;
+          const lw = F.lwOf(it), d0 = it.shape === 'moment' ? it._dot - g.dotR : it._g[0], d1 = it.shape === 'moment' ? it._dot + g.dotR : it._g[1];
+          const lim = [it._cut[0] ? F.EDGE : 0, w - (it._cut[1] ? F.EDGE : 0)];
+          // Beside it means wholly inside the limits: on the left with the dot itself left of the right arrow zone, on the
+          // right with the dot right of the left one.
+          assert.ok(!(d0 - 4 - lw >= lim[0] + 2 && d0 - 4 <= lim[1]) && !(d1 + 4 >= lim[0] && d1 + 4 + lw <= lim[1] - 2), `span ${span} at ${c}: «${it.name}» label [${a.toFixed(1)}, ${b.toFixed(1)}] sits in the ${i ? 'right' : 'left'} arrow zone although it fits beside its drawing [${d0.toFixed(1)}, ${d1.toFixed(1)}]`);
+          // And it does not cover its own dot.
+          if (it.shape === 'moment') assert.ok(b <= d0 + 0.01 || a >= d1 - 0.01, `span ${span} at ${c}: «${it.name}» covers its own dot`);
+        }
       }
     }
   }
+  console.log(`T15: ${cut} cut marks among ${checked}; ${hidden} ends where the name has no room beside its dot and covers the arrow zone`);
   assert.ok(cut > 200 && checked > 2000, `only ${cut} cut marks among ${checked}`);
 });

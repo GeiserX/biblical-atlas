@@ -91,7 +91,7 @@ function edges(p) {
   return p.evaluate(() => {
     const BE = window.BE, [v0, v1] = BE.E.vista;
     const marks = new Map(BE.lineaMarcas().filter((m) => m.visible).map((m) => [m.id, m]));
-    const out = { problems: [], cut: 0, whole: 0, both: 0, samples: [] };
+    const out = { problems: [], cut: 0, whole: 0, both: 0, yielded: 0, samples: [] };
     for (const b of document.querySelectorAll('#linea-filas .carril:not([hidden]) .carril-pista > .m')) {
       const m = marks.get(b.dataset.id);
       if (!m) continue;
@@ -106,6 +106,10 @@ function edges(p) {
       const who = `${lane}: «${m.name}» [${x0.toFixed(0)}, ${x1.toFixed(0)}] of ${w} px`;
       for (const i of [0, 1]) {
         const a = arrows[i];
+        // The one cut side without an arrow: a name with no room beside its dot sits over the arrow's place (2 to 9 px
+        // from the edge), and the name wins over the arrow, never over the dot. The lighter end and the text stay.
+        const nameOver = i === 0 ? name.left < pr.left + 10 : name.right > pr.right - 10;
+        if (cut[i] && !a && nameOver) { out.yielded++; continue; }
         if (cut[i] !== !!a) { out.problems.push(`${who}: ${cut[i] ? 'goes on' : 'ends inside'} at the ${i ? 'right' : 'left'} and ${a ? 'has' : 'has no'} arrow there`); continue; }
         if (!a) continue;
         if (i === 0 ? a.left < pr.left - 0.5 || a.left > pr.left + 4 : a.right > pr.right + 0.5 || a.right < pr.right - 4) out.problems.push(`${who}: the ${i ? 'right' : 'left'} arrow is not at the edge (${(a.left - pr.left).toFixed(1)} px)`);
@@ -174,15 +178,15 @@ for (const screen of Object.keys(SCREENS)) {
   for (const theme of THEMES) {
     test(`${screen}, ${theme}: at the six scales every mark has an arrow on exactly the sides where it goes on`, async () => {
       const p = await open(screen, theme);
-      let cut = 0, whole = 0;
+      let cut = 0, whole = 0, yielded = 0;
       const problems = [];
       for (const t of CENTERS) for (const s of SCALES) {
         await goTo(p, t, s);
         const r = await edges(p);
-        cut += r.cut; whole += r.whole;
+        cut += r.cut; whole += r.whole; yielded += r.yielded;
         problems.push(...r.problems.map((x) => `${s} years around ${t}: ${x}`));
       }
-      console.log(`${screen} ${theme}: ${cut} marks cut by an edge and ${whole} whole, over ${CENTERS.length * SCALES.length} views`);
+      console.log(`${screen} ${theme}: ${cut} marks cut by an edge and ${whole} whole, over ${CENTERS.length * SCALES.length} views; ${yielded} arrows under a name with no other room`);
       assert.deepEqual(problems.slice(0, 20), []);
       assert.ok(cut > 20 && whole > 20, `${cut} cut and ${whole} whole: the walk did not see both kinds`);
       await p.context().close();
