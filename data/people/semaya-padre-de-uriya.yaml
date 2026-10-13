@@ -1,0 +1,22 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: semaya-padre-de-uriya
+name: Semaya
+names:
+- name: Semaya
+perspicacia: 1200004000#11
+disambiguation: El padre del profeta Uriya de Quiryat-Jearim; no el profeta de Rehoboam ni el falso profeta de Nehelam.
+distinct_from:
+- semaya-profeta
+- semaya-de-nehelam
+- semaya-padre-de-delaya
+summary: Padre de Uriya, el profeta de Quiryat-Jearim contemporáneo de Jeremías al que mató el rey Jehoiaquim.
+reason: Perspicacia «Semaya», núm. 11; Jer 26:20.
+sources:
+- it-semaya
+- jeremias-26
+links:
+- title: 'Perspicacia: «Semaya»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Semaya/
+  type: perspicacia
+checked_on: '2026-10-12'
+status: verified

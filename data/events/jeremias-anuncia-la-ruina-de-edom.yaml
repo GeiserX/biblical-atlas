@@ -1,0 +1,44 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jeremias-anuncia-la-ruina-de-edom
+title: Jeremías anuncia la ruina de Edom
+date:
+  from: -646
+  to: -579
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 647 y 580 a.e.c. (tiempo narrativo: durante la obra de Jeremías)'
+narrative_order:
+  series: jeremias
+  order: 49007
+places:
+- edom
+- teman
+- dedan
+- bozra
+people:
+- jeremias-profeta
+present: []
+passages:
+- Jer 49:7-22
+summary: 'Edom, segura en sus peñascos, será despojada del todo: Temán pierde su sabiduría, Dedán debe esconderse y Bozrá
+  acabará en ruinas. Como Sodoma y Gomorra, nadie volverá a habitarla.'
+reason: 'Jer 49:7 no da fecha ni lugar: nadie queda situado. Límites: comisión de Jeremías en 647 (estudio 3) y cierre del
+  libro en 580 (Tabla). Perspicacia «Edom» lo ve cumplido cuando Nabonido de Babilonia la conquistó.'
+sources:
+- jeremias-49
+- si-3
+- tnm-tabla
+- it-edom
+- it-teman
+- it-dedan
+- it-bozra
+- it-jeremias-libro
+- si-jeremias
+links:
+- title: Jeremías 49 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/49/
+  type: bible
+checked_on: '2026-10-12'
+status: verified

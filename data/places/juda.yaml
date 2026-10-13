@@ -53,6 +53,17 @@ sources:
 - isaias-26
 - isaias-36
 - isaias-44
+- jeremias-3
+- jeremias-4
+- jeremias-7
+- jeremias-9
+- jeremias-10
+- jeremias-11
+- jeremias-13
+- jeremias-14
+- jeremias-17
+- jeremias-18
+- jeremias-31
 links:
 - title: 'Perspicacia: «Judá»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jud%C3%A1/
@@ -89,5 +100,5 @@ candidates:
   note: 'Centro: media de los puntos de OpenBible de Jerusalén, Hebrón y Belén. El radio de 50 km es nuestro, una referencia
     y no la frontera.'
   coord_source: calculation
-checked_on: '2026-09-30'
+checked_on: '2026-10-12'
 status: verified

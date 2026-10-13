@@ -1,0 +1,25 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: cusi-antepasado-de-jehudi
+name: Cusí
+names:
+- name: Cusí
+perspicacia: 1200001092#2
+disambiguation: El bisabuelo de Jehudí; no Cusí hijo de Guedalías, el padre del profeta Sofonías.
+distinct_from:
+- cusi-hijo-de-guedalias
+summary: Bisabuelo de Jehudí, el oficial de Jehoiaquim. Perspicacia advierte que su nombre, aunque recuerda a Cus, también
+  lo llevaban judíos.
+reason: Perspicacia «Cusí», núm. 2, y «Jehudí»; Jer 36:14.
+sources:
+- it-cusi
+- it-jehudi
+- jeremias-36
+links:
+- title: 'Perspicacia: «Cusí»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Cus%C3%AD/
+  type: perspicacia
+- title: Jeremías 36 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/36/
+  type: bible
+checked_on: '2026-10-12'
+status: verified

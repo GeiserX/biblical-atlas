@@ -1,0 +1,33 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: nerias
+name: Nerías
+names:
+- name: Nerías
+perspicacia: '1200003231'
+summary: 'Hijo de Mahseya y padre de dos hermanos: Baruc, el secretario de Jeremías, y Seraya, que llevó a Babilonia el rollo
+  con la sentencia contra esa ciudad.'
+reason: Perspicacia «Nerías»; Jer 32:12.
+sources:
+- it-nerias
+- jeremias-32
+- jeremias-36
+- jeremias-43
+- jeremias-51
+links:
+- title: 'Perspicacia: «Nerías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ner%C3%ADas/
+  type: perspicacia
+relations:
+- type: kin
+  person: mahseya
+  word: father
+  sources:
+  - jeremias-32
+  - it-nerias
+  - jeremias-51
+  reason: 'Jer 32:12 da la ascendencia de Baruc: su padre Nerías era hijo de Mahseya.'
+  inferred: false
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

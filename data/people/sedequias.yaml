@@ -5,7 +5,8 @@ names:
 - name: Sedequías
 - name: Matanías
   note: Su nombre antes de que Nabucodonosor lo cambiara (2Re 24:17).
-disambiguation: El último rey de Judá; no es el falso profeta Sedequías hijo de Kenaaná.
+disambiguation: El último rey de Judá; no es ninguno de los falsos profetas llamados Sedequías, el hijo de Kenaaná ni el hijo
+  de Maaseya.
 date:
   from: -616
   to: -606
@@ -23,6 +24,17 @@ sources:
 - jeremias-52
 - tnm-a6-b
 - 2-reyes-25
+- jeremias-1
+- jeremias-21
+- jeremias-24
+- jeremias-27
+- jeremias-29
+- jeremias-32
+- jeremias-34
+- jeremias-37
+- jeremias-38
+- jeremias-39
+- jeremias-51
 links:
 - title: 'Perspicacia: «Sedequías»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sedequ%C3%ADas/
@@ -38,8 +50,10 @@ relations:
   sources:
   - it-sedequias
   - 2-reyes-24
+  - jeremias-1
+  - jeremias-37
   reason: Hijo de Josías y Hamutal (2Re 24:18).
-  checked_on: '2026-09-28'
+  checked_on: '2026-10-12'
   status: verified
 - type: succeeds
   person: joaquin
@@ -47,8 +61,9 @@ relations:
   sources:
   - it-sedequias
   - 2-reyes-24
+  - jeremias-37
   reason: Nabucodonosor lo puso en lugar de su sobrino Joaquín (2Re 24:17).
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   office: king
   status: verified
 - type: died_in
@@ -67,16 +82,20 @@ relations:
   sources:
   - 2-reyes-24
   - it-hamutal
+  - jeremias-52
   reason: '2Re 24:18: su madre se llamaba Hamutal.'
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-12'
   status: verified
 - type: lived_in
   place: jerusalen
   inferred: false
   sources:
   - 2-reyes-24
+  - jeremias-27
+  - jeremias-34
+  - jeremias-52
   reason: '2Re 24:18: reinó once años en Jerusalén.'
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-12'
   status: verified
 - type: tie
   person: nabucodonosor-ii
@@ -93,9 +112,11 @@ relations:
   sources:
   - 2-reyes-24
   - it-sedequias
+  - jeremias-37
+  - jeremias-52
   reason: Nabucodonosor lo puso en el trono (2Re 24:17) y, según Perspicacia «Sedequías», núm. 4, lo hizo rey vasallo con
     juramento; se rebeló hacia 609 (2Re 24:20).
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-12'
   status: verified
 - type: lived_in
   place: babilonia
@@ -103,11 +124,40 @@ relations:
   sources:
   - 2-reyes-25
   - it-sedequias
+  - jeremias-39
+  - jeremias-52
   reason: '2Re 25:7: ciego y encadenado, se lo llevaron a Babilonia; Jer 52:11 dice que allí siguió preso hasta su muerte.'
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-12'
+  status: verified
+- type: tie
+  person: jeremias-profeta
+  word: adviser
+  inferred: true
+  sources:
+  - jeremias-27
+  - it-sedequias
+  - jeremias-38
+  reason: 'Jer 27:12-15: Jeremías le aconseja ponerse bajo el yugo de Babilonia para vivir. Perspicacia «Sedequías», núm.
+    4, habla del consejo inspirado de Jeremías que el rey no siguió.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: tie
+  person: nabucodonosor-ii
+  word: enemy
+  sources:
+  - jeremias-44
+  reason: 'Jer 44:30: Jehová entregó a Sedequías en manos de Nabucodonosor, su enemigo, que quería quitarle la vida.'
+  inferred: false
+  checked_on: '2026-10-12'
   status: verified
 perspicacia: 1200004685#4
-checked_on: '2026-09-30'
+history:
+- date: '2026-10-12'
+  change: 'Jer 29:21 nombra a otro Sedequías, falso profeta hijo de Maaseya: la desambiguación lo excluye también.'
+  source: jeremias-29
+checked_on: '2026-10-12'
 status: verified
 distinct_from:
 - sedequias-hijo-de-kenaana
+- sedequias-hijo-de-maaseya
+- sedequias-hijo-de-hananias

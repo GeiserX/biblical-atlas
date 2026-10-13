@@ -1,0 +1,48 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: johanan-avisa-a-guedalias-del-plan-de-ismael
+title: Johanán avisa a Guedalías del plan de Ismael
+date:
+  from: -606
+  to: -606
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 607 a.e.c.
+narrative_order:
+  series: jeremias
+  order: 40013
+  after: nabucodonosor-pone-a-guedalias-al-mando
+places:
+- mizpa-de-benjamin
+people:
+- johanan-hijo-de-carea
+- guedalias
+present:
+- johanan-hijo-de-carea
+- guedalias
+passages:
+- Jer 40:13-16
+summary: En Mizpá, los jefes del ejército avisan a Guedalías de que Baalís, rey de Ammón, ha enviado a Ismael a matarlo. Johanán
+  se ofrece en secreto a matar a Ismael, pero Guedalías lo toma por mentira.
+reason: Jer 40:13-16, antes del asesinato del mes séptimo de 607 (estudio 3). Según Perspicacia, Seraya hijo de Tanhúmet,
+  Jonatán y Jaazanías estaban entre los jefes que avisaron; el texto solo nombra a Johanán, así que no los situamos.
+sources:
+- jeremias-40
+- si-3
+- it-johanan
+- it-guedalias
+- it-ismael
+- it-seraya
+- it-jonatan
+- it-jaazanias
+- it-baalis
+links:
+- title: Jeremías 40 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/40/
+  type: bible
+- title: 'Perspicacia: «Guedalías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Guedal%C3%ADas/
+  type: perspicacia
+checked_on: '2026-10-12'
+status: verified

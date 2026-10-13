@@ -1,0 +1,26 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: semaya-padre-de-delaya
+name: Semaya
+names:
+- name: Semaya
+perspicacia: 1200004000#12
+disambiguation: El padre del príncipe Delayá; no el profeta de los días de Rehoboam, ni el nehelamita que escribió desde Babilonia,
+  ni el padre del profeta Uriya.
+distinct_from:
+- semaya-profeta
+- semaya-de-nehelam
+- semaya-padre-de-uriya
+summary: Padre de Delayá, uno de los príncipes de Judá en el reinado de Jehoiaquim. La Biblia solo lo nombra en Jer 36:12.
+reason: Perspicacia «Semaya», núm. 12; Jer 36:12.
+sources:
+- it-semaya
+- jeremias-36
+links:
+- title: 'Perspicacia: «Semaya»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Semaya/
+  type: perspicacia
+- title: Jeremías 36 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/36/
+  type: bible
+checked_on: '2026-10-12'
+status: verified

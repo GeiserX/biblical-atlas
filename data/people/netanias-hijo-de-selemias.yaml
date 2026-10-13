@@ -1,0 +1,35 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: netanias-hijo-de-selemias
+name: Netanías
+names:
+- name: Netanías
+perspicacia: 1200003237#3
+disambiguation: El padre de Jehudí; no Netanías hijo de Elisamá, el padre de Ismael.
+distinct_from:
+- netanias-hijo-de-elisama
+summary: Hijo de Selemías y padre de Jehudí, el oficial que leyó a Jehoiaquim el rollo de Jeremías.
+reason: Perspicacia «Netanías», núm. 3; Jer 36:14.
+sources:
+- it-netanias
+- jeremias-36
+links:
+- title: 'Perspicacia: «Netanías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Netan%C3%ADas/
+  type: perspicacia
+- title: Jeremías 36 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/36/
+  type: bible
+relations:
+- type: kin
+  person: selemias-hijo-de-cusi
+  word: father
+  inferred: false
+  sources:
+  - jeremias-36
+  - it-netanias
+  - it-selemias
+  reason: Jer 36:14 da la línea Jehudí, Netanías, Selemías y Cusí.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

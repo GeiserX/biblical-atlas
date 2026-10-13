@@ -20,6 +20,7 @@ sources:
 - isaias-34
 - it-edom
 - isaias-63
+- jeremias-49
 links:
 - title: 'Perspicacia: «Bozrá»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Bozr%C3%A1/
@@ -34,5 +35,5 @@ history:
 - date: '2026-09-30'
   change: La razón cita la nota de Is 34:9, que llama a Bozrá capital de Edom.
   source: isaias-34
-checked_on: '2026-09-30'
+checked_on: '2026-10-12'
 status: verified

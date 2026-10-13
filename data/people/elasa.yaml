@@ -6,20 +6,23 @@ names:
 perspicacia: '1200001276'
 date:
   from: -616
-  to: -608
+  to: -613
   precision: range
   approx: true
   type: narrative
   chronology: tnm
-  text: 'entre 617 y 609 a.e.c. (tiempo narrativo: reinado de Sedequías, antes del último sitio)'
+  text: 'entre 617 y 614 a.e.c. (tiempo narrativo: al principio del reinado de Sedequías, quizá en su cuarto año)'
 summary: Hijo de Safán. Sedequías lo mandó a Babilonia, ante Nabucodonosor, con Guemarías, y Jeremías les confió su carta
   para los desterrados.
-reason: Perspicacia «Elasá»; Jer 29:1-3. El reinado de Sedequías y el último sitio, en el estudio 3, acotan la fecha.
+reason: Perspicacia «Elasá»; Jer 29:1-3. Perspicacia «Sedequías», núm. 4, y «Seraya», núm. 5, ponen el viaje al principio
+  del reinado de Sedequías, quizá en su cuarto año (614).
 sources:
 - it-elasa
 - jeremias-29
 - it-safan
 - si-3
+- it-sedequias
+- it-seraya
 links:
 - title: 'Perspicacia: «Elasá»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Elas%C3%A1/
@@ -38,5 +41,24 @@ relations:
   reason: Jer 29:3 lo llama hijo de Safán; Perspicacia «Safán» lo cuenta entre los hijos del secretario de Josías.
   checked_on: '2026-09-30'
   status: verified
-checked_on: '2026-09-30'
+- type: tie
+  person: sedequias
+  word: master
+  sources:
+  - jeremias-29
+  - it-elasa
+  reason: 'Jer 29:3: el rey Sedequías lo envía a Babilonia, ante Nabucodonosor.'
+  inferred: false
+  checked_on: '2026-10-12'
+  status: verified
+history:
+- date: '2026-10-12'
+  change: 'Fecha estrechada de 617-609 a 617-614: Perspicacia «Sedequías», núm. 4, pone el envío de Elasá y Guemarías al principio
+    del reinado, quizá en su cuarto año (614, «Seraya», núm. 5).'
+  source: it-sedequias
+- date: '2026-10-12'
+  change: La razón cita ahora Perspicacia «Sedequías», núm. 4, y «Seraya», núm. 5, que acotan el envío a 617-614, en lugar
+    del último sitio.
+  source: it-sedequias
+checked_on: '2026-10-12'
 status: verified

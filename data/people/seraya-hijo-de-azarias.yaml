@@ -19,6 +19,7 @@ reason: 'Perspicacia «Seraya», núm. 6; 2Re 25:18-21 (paralelo: Jer 52:24-27);
 sources:
 - it-seraya
 - 2-reyes-25
+- jeremias-52
 links:
 - title: 'Perspicacia: «Seraya»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Seraya/
@@ -34,8 +35,9 @@ relations:
   sources:
   - 2-reyes-25
   - it-seraya
+  - jeremias-52
   reason: 2Re 25:18 lo llama sacerdote principal; Perspicacia «Seraya», núm. 6, dice que lo era cuando cayó Jerusalén.
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-12'
   status: verified
 - type: died_in
   place: ribla
@@ -43,12 +45,14 @@ relations:
   sources:
   - 2-reyes-25
   - it-seraya
+  - jeremias-52
   reason: '2Re 25:20, 21: el rey de Babilonia lo mató en Riblá.'
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-12'
   status: verified
 distinct_from:
 - seraya-secretario-de-david
 - seraya-hijo-de-tanhumet
 - seraya-hijo-de-nerias
-checked_on: '2026-10-01'
+- seraya-hijo-de-azriel
+checked_on: '2026-10-12'
 status: verified

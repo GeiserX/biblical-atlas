@@ -1,0 +1,32 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: habazinias
+name: Habazinías
+names:
+- name: Habazinías
+perspicacia: '1200001791'
+summary: Recabita, descendiente de Jehonadab hijo de Recab y abuelo de Jaazanías, el jefe de los recabitas en tiempos del
+  rey Jehoiaquim.
+reason: Perspicacia «Habazinías»; Jer 35:3.
+sources:
+- it-habazinias
+- jeremias-35
+links:
+- title: 'Perspicacia: «Habazinías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Habazin%C3%ADas/
+  type: perspicacia
+- title: Jeremías 35 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/35/
+  type: bible
+relations:
+- type: kin
+  person: jehonadab-hijo-de-recab
+  word: ancestor
+  inferred: true
+  sources:
+  - it-habazinias
+  - jeremias-35
+  reason: Perspicacia «Habazinías» lo hace descendiente de Jehonadab; Jer 35:3, 6 lo pone en la familia de los recabitas.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

@@ -21,6 +21,7 @@ people:
 present: []
 passages:
 - Miq 1:1-7:20
+- Jer 26:18
 summary: Miqueas, de Moréset, anuncia que Samaria quedará en ruinas y que el castigo llegará hasta Jerusalén por la idolatría
   y la opresión. Promete que Jehová reunirá a un resto y que de Belén saldrá un gobernante.
 reason: 'Tabla de los libros y «Toda Escritura», libro 33, párr. 2: habló en días de Jotán, Acaz y Ezequías, entre 777 y 717;
@@ -50,6 +51,7 @@ sources:
 - miqueas-6
 - w03-que-espera-jehova
 - miqueas-7
+- jeremias-26
 links:
 - title: Miqueas 1 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/miqueas/1/
@@ -75,5 +77,5 @@ links:
 - title: Miqueas 7 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/miqueas/7/
   type: bible
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

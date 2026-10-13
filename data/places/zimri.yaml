@@ -1,0 +1,27 @@
+# biblical-atlas: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: zimri
+name: Zimrí
+names:
+- name: Zimrí
+type: region
+lat: null
+lon: null
+precision: uncertain
+coord_source: null
+coord_url: null
+candidates: []
+summary: Posiblemente un lugar, de sitio desconocido. Sus reyes van con los de Elam y los medos en la lista de quienes beberían
+  la copa de la ira de Jehová.
+reason: Perspicacia «Zimrí», núm. 5; Jer 25:25. Ni jw.org ni el texto lo sitúan, así que no damos punto ni zona.
+not_claimed:
+- 'Que tenga relación con Zimrán, hijo de Abrahán: Perspicacia «Zimrí», núm. 5, dice que no hay base suficiente.'
+- 'Que sea con seguridad un lugar: Perspicacia «Zimrí», núm. 5, dice «posiblemente».'
+sources:
+- it-zimri
+- jeremias-25
+links:
+- title: 'Perspicacia: «Zimrí»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zimr%C3%AD/
+  type: perspicacia
+checked_on: '2026-10-12'
+status: pending

@@ -1,0 +1,27 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: salum-tio-de-jeremias
+name: Salum
+names:
+- name: Salum
+perspicacia: 1200003933#10
+disambiguation: El tío paterno de Jeremías y padre de Hanamel (Perspicacia «Salum», núm. 10); no es Salum, rey de Israel,
+  ni Jehoacaz de Judá, también llamado Salum, ni el portero padre de Maaseya.
+distinct_from:
+- salum-de-israel
+- jehoacaz-de-juda
+- salum-padre-de-maaseya
+summary: Tío paterno del profeta Jeremías y padre de Hanamel, que en 608 a.e.c. vendió a Jeremías un campo en Anatot. Perspicacia
+  ve posible que sea el esposo de la profetisa Huldá.
+reason: Perspicacia «Salum», núm. 10; Jer 32:7.
+sources:
+- it-salum
+- jeremias-32
+links:
+- title: 'Perspicacia: «Salum»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Salum/
+  type: perspicacia
+- title: Jeremías 32 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/32/
+  type: bible
+checked_on: '2026-10-12'
+status: verified

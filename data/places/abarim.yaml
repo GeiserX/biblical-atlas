@@ -14,15 +14,16 @@ precision: zone
 coord_source: openbible:aa8275b
 coord_url: https://www.openbible.info/geo/ancient/aa8275b/abarim
 coord_note: Punto representativo de OpenBible para la cordillera. El monte Nebo, una de sus cumbres, tiene ficha propia.
-summary: Cordillera al este del mar Muerto. Su parte norte, frente a Jericó, estaba junto al último campamento de Israel;
-  desde ella, en el monte Nebo, Moisés debía mirar la tierra prometida.
-reason: 'Perspicacia «Abarim», párr. 2 a 5; Nú 27:12. Coordenada de OpenBible: solo tomamos el punto.'
+summary: Cordillera al este del mar Muerto; en Jer 22:20, probablemente la región de esa orilla. Su parte norte, frente a
+  Jericó, lindaba con el último campamento de Israel; desde el monte Nebo, Moisés debía mirar la tierra prometida.
+reason: 'Perspicacia «Abarim», párr. 1 a 5; Nú 27:12 y Jer 22:20. Coordenada de OpenBible: solo tomamos el punto.'
 sources:
 - it-abarim
 - openbible-geo
 - numeros-27
 - numeros-33
 - deuteronomio-32
+- jeremias-22
 links:
 - title: 'Perspicacia: «Abarim»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Abarim/
@@ -33,5 +34,13 @@ links:
 - title: Números 33 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/N%C3%BAmeros/33/
   type: bible
-checked_on: '2026-09-29'
+history:
+- date: '2026-10-12'
+  change: El resumen solo daba la cordillera; Perspicacia «Abarim», párr. 1, dice que en Jer 22:20 el nombre designa probablemente
+    una región al este del mar Muerto.
+  source: jeremias-22
+- date: '2026-10-12'
+  change: La razón cita ahora el párrafo 1 de Perspicacia «Abarim» y Jer 22:20.
+  source: jeremias-22
+checked_on: '2026-10-12'
 status: verified

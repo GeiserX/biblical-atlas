@@ -75,10 +75,16 @@ sources:
 - isaias-43
 - ip2-4
 - isaias-52
+- jeremias-9
+- jeremias-26
+- jeremias-37
+- jeremias-43
+- jeremias-44
+- jeremias-46
 links:
 - title: 'Perspicacia: «Egipto, egipcio»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Egipto-egipcio/
   type: perspicacia
 search: Egipto
-checked_on: '2026-09-30'
+checked_on: '2026-10-12'
 status: verified

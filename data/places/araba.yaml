@@ -54,6 +54,8 @@ sources:
 - 2-samuel-2
 - 2-samuel-4
 - 2-reyes-25
+- jeremias-39
+- jeremias-52
 links:
 - title: 'Perspicacia: «Arabá»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Arab%C3%A1/
@@ -73,5 +75,5 @@ links:
 - title: Deuteronomio 11 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/deuteronomio/11/
   type: bible
-checked_on: '2026-09-30'
+checked_on: '2026-10-12'
 status: verified

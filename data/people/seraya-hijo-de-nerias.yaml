@@ -10,6 +10,7 @@ distinct_from:
 - seraya-hijo-de-azarias
 - seraya-hijo-de-tanhumet
 - seraya-secretario-de-david
+- seraya-hijo-de-azriel
 date:
   from: -613
   to: -613
@@ -51,5 +52,26 @@ relations:
     a.e.c.'
   checked_on: '2026-09-30'
   status: verified
-checked_on: '2026-09-30'
+- type: kin
+  person: nerias
+  word: father
+  inferred: false
+  sources:
+  - jeremias-51
+  - it-nerias
+  reason: Jer 51:59 lo llama hijo de Nerías y da a Mahseya como abuelo; Perspicacia «Nerías» lo cuenta entre sus hijos, junto
+    a Baruc.
+  checked_on: '2026-10-12'
+  status: verified
+- type: tie
+  person: sedequias
+  word: master
+  inferred: false
+  sources:
+  - jeremias-51
+  - it-seraya
+  reason: 'Jer 51:59: Seraya era funcionario del rey Sedequías; Perspicacia «Seraya», núm. 5, lo llama su comisario ordenador.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
 status: verified
