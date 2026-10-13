@@ -1735,8 +1735,9 @@ function pintarEtiquetas() {
       const r = x.obstaculo ? dibujado(x) : ver[i] && !probar.includes(i) ? rects[i] : null;
       return r && caja4(r, i);
     }).filter(Boolean);
-    // Un punto que va dentro de una burbuja no cuenta: la clase «agrupado» se pone al final, así que se mira aquí.
-    const enBurbuja = (it) => agrupables.has(it) && zoom < grupos.libre.get(it.id);
+    // Siguiendo una ruta, un punto que va dentro de una burbuja no cuenta (la clase «agrupado» se pone al final, así que
+    // se mira aquí). Fuera de una ruta cuenta, como antes: la clase ya se ha quitado y el punto estorba a la izquierda.
+    const enBurbuja = (it) => !!vecinos && agrupables.has(it) && zoom < grupos.libre.get(it.id);
     for (const { m, it } of marcas) {
       if (m.region || m.clase === 'agua' || enBurbuja(it)) continue;
       const p = map.project([m.l.lon, m.l.lat]), r = m.el.classList.contains('es-actual') ? 7 : 5;
