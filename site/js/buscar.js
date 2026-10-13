@@ -419,10 +419,14 @@ function pintarResultados() {
       const tipoNodo = r.sel ? (BE.tipo(r.sel.tipo)?.nodo || 'evento') : 'evento';
       const inicial = r.accion && !r.sel ? (r.grupo === 'Fechas' || r.grupo === 'Meses hebreos' ? '◷' : '?') : r.titulo[0];
       const f = filaResultado(r, resultados);
-      const linea = [f.deTipo && f.tipo ? esc(f.tipo) : '', f.distinguisher ? `<span class="be-distinguisher">${esc(f.distinguisher)}</span>` : '', esc(f.meta)].filter(Boolean).join(' · ');
+      // Una fila homónima lleva su etiqueta («2 con este nombre») en la línea, detrás de lo que la distingue, como en la
+      // portada: en el título, con la fecha larga de un rey, partía el título en dos renglones en el teléfono.
+      const enLinea = f.distinguisher && f.etiqueta;
+      const linea = [f.deTipo && f.tipo ? esc(f.tipo) : '', f.distinguisher ? `<span class="be-distinguisher">${esc(f.distinguisher)}</span>` : '',
+        enLinea ? esc(f.etiqueta) : '', esc(f.meta)].filter(Boolean).join(' · ');
       return `${cab}<div class="be-result${i === activo ? ' be-result--active' : ''}" role="option" id="res-${i}" aria-selected="${i === activo}" data-i="${i}">
         <span class="be-node be-node--${tipoNodo} be-node--sm" aria-hidden="true">${esc(inicial)}</span>
-        <span class="res-texto"><span class="be-result__title">${marcar(f.titulo, q.value)}${f.etiqueta ? ` <span class="res-etiqueta">${esc(f.etiqueta)}</span>` : ''}</span><span class="be-row__meta">${linea}</span></span>
+        <span class="res-texto"><span class="be-result__title">${marcar(f.titulo, q.value)}${f.etiqueta && !enLinea ? ` <span class="res-etiqueta">${esc(f.etiqueta)}</span>` : ''}</span><span class="be-row__meta">${linea}</span></span>
         ${f.fecha ? `<span class="res-fecha">${esc(f.fecha)}</span>` : ''}</div>`;
     }).join('');
   }

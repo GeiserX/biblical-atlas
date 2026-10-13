@@ -161,10 +161,13 @@ test('Mefibóset typed before the detail arrives: the two rows get their line wh
   }
 });
 
-test('Ocozías: the kinship goes first, even when only the summary starts with it', async () => {
+test('Ocozías and Jehoacaz: the kinship goes first, even when only the summary starts with it', async () => {
   // data/people/ocozias-de-israel.yaml and ocozias-de-juda.yaml: both `disambiguation` texts open with the reign
   // («Rey de Israel», «Rey de Judá»); the summaries open with the parents, and docs/ideas/homonimos.md puts them first.
   await checkNamesakes('Ocozías', ['Acab', 'Jehoram']);
+  // Jehoacaz de Israel carries a long date («c. 876 a.e.c. - 859 a.e.c.»): with «2 con este nombre» in the title, the
+  // title took two lines on the phone.
+  await checkNamesakes('Jehoacaz', ['Jehú', 'Josías']);
 });
 
 test('Mizpá: each of the two places says where it was, from its own summary', async () => {
