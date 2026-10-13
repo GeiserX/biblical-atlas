@@ -2,8 +2,8 @@
 // rows of a list have the same name, each one says what tells it apart, taken from its own record, in the search on
 // top and in the landing's box, on the desktop and on a 430-wide phone, where the line is cut: the cut must leave the
 // two rows different, and the row keeps the height of any other row. Typed before the detail arrives, the rows get
-// their line when it does. The last test reads every group of namesakes in
-// data/ from scripts/homonyms.py and checks that the built site tells each group apart.
+// their line when it does. When the record says the kinship, that is the line. The last test reads every group of
+// namesakes in data/ from scripts/homonyms.py and checks that the built site tells each group apart.
 //
 // Run from the root of the repository, one browser at a time:
 //   node --test --test-concurrency=1 tests/site/search-namesakes.test.mjs
@@ -159,6 +159,12 @@ test('Mefibóset typed before the detail arrives: the two rows get their line wh
     assert.deepEqual(page.pageErrors, [], list.name);
     await page.context().close();
   }
+});
+
+test('Ocozías: the kinship goes first, even when only the summary starts with it', async () => {
+  // data/people/ocozias-de-israel.yaml and ocozias-de-juda.yaml: both `disambiguation` texts open with the reign
+  // («Rey de Israel», «Rey de Judá»); the summaries open with the parents, and docs/ideas/homonimos.md puts them first.
+  await checkNamesakes('Ocozías', ['Acab', 'Jehoram']);
 });
 
 test('Mizpá: each of the two places says where it was, from its own summary', async () => {
