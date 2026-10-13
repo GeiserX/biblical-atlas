@@ -175,12 +175,18 @@ def main(control=False):
     print('Control de distancias (línea recta frente a la que da la fuente):')
     for c in T['control']:
         d = tramos.get((c['journey'], c['from'], c['to']))
-        ok = d is not None and abs(d - c['km']) <= c['tolerance'] * c['km']
+        if d is None:
+            print(f"  FALLA {c['journey']} {c['from']}→{c['to']}: ese tramo no existe o no se puede medir")
+            errores.append(f"control {c['journey']} {c['from']}→{c['to']}: tramo sin medir")
+            continue
+        ok = abs(d - c['km']) <= c['tolerance'] * c['km']
         print(f"  {'bien ' if ok else 'FALLA'} {c['journey']} {c['from']}→{c['to']}: {d:.1f} km calculados, unos {c['km']} km en {c['reference']} ({(d / c['km'] - 1) * 100:+.1f} %)")
         if not ok:
             errores.append(f"control {c['journey']} {c['from']}→{c['to']}: {d:.1f} km frente a {c['km']}")
     for c in T.get('observed', []):
         d = tramos.get((c['journey'], c['from'], c['to']))
+        if d is None:
+            continue
         print(f"  aviso {c['journey']} {c['from']}→{c['to']}: {d:.1f} km calculados, unos {c['km']} km en {c['reference']} ({(d / c['km'] - 1) * 100:+.1f} %), no es control")
 
     todos = [x for v in viajes for x in v['t']]
