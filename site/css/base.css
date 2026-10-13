@@ -69,10 +69,6 @@ a { color: var(--link); }
 #fecha:hover .be-date__value { text-decoration: underline dotted 1.5px; text-underline-offset: 4px; }
 @media (max-width: 1439px) { .fecha-ir__texto { display: none; } .fecha-ir { padding: 3px; } }   /* el texto, solo con sitio de sobra */
 
-/* ---------- Modo reunión: botón propio en la barra ---------- */
-#reunion-boton { cursor: pointer; flex: none; }
-#reunion-boton[aria-pressed="true"] { background: var(--gold-soft); color: var(--gold-ink); border-color: var(--gold-line); }
-
 /* ---------- Separadores: la ficha y la línea de tiempo cambian de tamaño (base.js, marcos) ---------- */
 .separador { position: absolute; z-index: 6; touch-action: none; outline: none; }
 .separador--panel { top: var(--topbar-h); bottom: var(--timeline-h); right: calc(var(--panel-w) - 5px); width: 10px; cursor: col-resize; }
@@ -95,7 +91,7 @@ a { color: var(--link); }
 
 /* ---------- Hoja inferior y avisos ---------- */
 .sobre-hoja { display: none; }
-.aviso { position: absolute; left: 50%; bottom: 40px; transform: translateX(-50%); z-index: 6; padding: 8px 14px; border-radius: var(--r-md); background: var(--ink); color: #fbf7ef; font-size: var(--fs-sm); box-shadow: var(--shadow-3); max-width: 90%; }
+.aviso { position: absolute; left: 50%; bottom: 40px; transform: translateX(-50%); z-index: 6; padding: 8px 14px; border-radius: var(--r-md); background: var(--ink); color: var(--on-ink); font-size: var(--fs-sm); box-shadow: var(--shadow-3); max-width: 90%; }
 
 /* ---------- Ficha: contenedor ---------- */
 .panel::after { display: none; }

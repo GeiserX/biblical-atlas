@@ -119,6 +119,11 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | 1-tesalonicenses-3 | [1 Tesalonicenses 3](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/1-tesalonicenses/3/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | 1-tesalonicenses-5 | [1 Tesalonicenses 5](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/1-tesalonicenses/5/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | 1-timoteo-1 | [1 Timoteo 1](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/1-timoteo/1/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | 2026-09-27 |
+| 1-timoteo-2 | [1 Timoteo 2](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/1-timoteo/2/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
+| 1-timoteo-3 | [1 Timoteo 3](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/1-timoteo/3/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
+| 1-timoteo-4 | [1 Timoteo 4](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/1-timoteo/4/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
+| 1-timoteo-5 | [1 Timoteo 5](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/1-timoteo/5/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
+| 1-timoteo-6 | [1 Timoteo 6](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/1-timoteo/6/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | 2-corintios-1 | [2 Corintios 1](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-corintios/1/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | 2-corintios-10 | [2 Corintios 10](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-corintios/10/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | 2-corintios-11 | [2 Corintios 11](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-corintios/11/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
@@ -1710,6 +1715,7 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-hilel | [Hilel](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hilel/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-hilen | [Hilén](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hil%C3%A9n/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
 | it-hilquias | [Hilquías](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hilqu%C3%ADas/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-30 |
+| it-himeneo | [Himeneo](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Himeneo/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
 | it-hinon | [Hinón, Valle de](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hin%C3%B3n-Valle-de/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-hira | [Hirá](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hir%C3%A1/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-hiram | [Hiram](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hiram/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |

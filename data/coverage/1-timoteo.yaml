@@ -1,0 +1,64 @@
+# biblical-atlas: cobertura de un libro. Formato en data/coverage/README.md.
+book: 1-timoteo
+chapters:
+  1:
+    status: complete
+    reviewed_on: 2026-10-13
+    note: "Pablo escribe a Timoteo, que se ha quedado en Éfeso, para que frene a quienes enseñan otra doctrina. Recuerda su pasado de perseguidor y la misericordia recibida, y nombra a Himeneo y Alejandro, expulsados."
+    spans:
+    - {v: 1-2, type: letter, entities: [letter:1-timoteo, event:pablo-escribe-1-timoteo, person:pablo, person:timoteo, relation:pablo/holds_office/-], mentions: [person:jesus], note: "Pablo, apóstol por mandato divino, saluda a Timoteo, su verdadero hijo en la fe. La nota lo lee como cariño de padre espiritual tras más de diez años juntos, no como parentesco."}
+    - {v: 3-7, type: letter, entities: [event:pablo-deja-a-timoteo-en-efeso, event:pablo-escribe-1-timoteo, person:timoteo, person:pablo, place:efeso, place:macedonia, relation:timoteo/lived_in/efeso, relation:timoteo/accompanies/pablo, journey:ultimos-anos-de-pablo], mentions: [person:aquila, person:priscila, relation:aquila/lived_in/efeso@65, relation:priscila/lived_in/efeso@65, event:despedida-en-mileto, place:roma], note: "Al irse a Macedonia, Pablo pidió a Timoteo quedarse en Éfeso para frenar otras doctrinas. La nota recuerda el aviso de Mileto y fecha la carta tras el arresto en Roma. Áquila y Priscila: su relación cita 1Ti 1:3."}
+    - {v: 8-11, type: letter, note: "La Ley es buena si se usa como es debido: no se dio para el justo, sino para los que la violan, y Pablo enumera esos pecados. Choca con la enseñanza sana de las buenas noticias que se le confiaron."}
+    - {v: 12-17, type: letter, entities: [event:saulo-persigue-a-la-congregacion, person:pablo], mentions: [person:jesus, event:conversion-de-pablo, person:esteban, event:muerte-de-esteban], note: "Pablo agradece a Cristo el ministerio pese a haber sido blasfemo y perseguidor; la nota recuerda que aprobó la muerte de Esteban. Se le mostró misericordia como ejemplo para los que creerán. Alabanza al Rey de la eternidad."}
+    - {v: 18-20, type: letter, entities: [person:himeneo, person:alejandro-expulsado, event:pablo-expulsa-a-himeneo-y-alejandro, person:timoteo], mentions: [person:satanas, event:timoteo-se-une-a-pablo, place:efeso], note: "Timoteo debe pelear la buena batalla según las profecías hechas sobre él, que Perspicacia solo ve posibles en Listra. Himeneo y Alejandro perdieron la fe; Pablo los entregó a Satanás, que la nota lee como expulsión."}
+  2:
+    status: complete
+    reviewed_on: 2026-10-13
+    note: "Orar por toda clase de personas, también por reyes y autoridades. Un solo Dios y un solo mediador, Cristo Jesús, que dio el rescate. Consejos sobre la oración de los hombres y el arreglo y el papel de las mujeres."
+    spans:
+    - {v: 1-4, type: letter, entities: [letter:1-timoteo], mentions: [person:neron], note: "Que se ore por toda clase de personas, por los reyes y por quienes mandan, para vivir en paz con devoción a Dios. Según la nota, el emperador era Nerón. Dios quiere salvar a personas de toda clase."}
+    - {v: 5-7, type: letter, entities: [person:pablo, relation:pablo/holds_office/-], mentions: [person:jesus, event:muerte-de-jesus], note: "Un solo Dios y un solo mediador, el hombre Cristo Jesús, que se dio como rescate correspondiente por todos. Para dar ese testimonio Pablo fue nombrado predicador, apóstol y maestro de las naciones."}
+    - {v: 8-12, type: letter, note: "Los hombres oren en todas partes alzando manos leales, sin ira ni debates. Las mujeres vistan con modestia y se adornen con buenas obras; aprendan en silencio y no enseñen ni manden sobre el hombre en la congregación."}
+    - {v: 13-15, type: letter, entities: [person:adan, event:creacion-de-eva, event:pecado-de-adan-y-eva], mentions: [person:eva, event:creacion-de-adan], note: "Adán fue formado antes que Eva. Él no fue engañado, detalle que según la nota Génesis no dice; ella sí, y pecó. Tener hijos y cuidar de ellos protegerá a la mujer si sigue en la fe."}
+  3:
+    status: complete
+    reviewed_on: 2026-10-13
+    note: "Requisitos de los superintendentes y de los siervos ministeriales, el porqué de la carta mientras Pablo tarda en llegar y un canto que resume la vida de Jesús, de la carne a la gloria."
+    spans:
+    - {v: 1-7, type: letter, entities: [letter:1-timoteo], mentions: [person:satanas], note: "Aspirar a superintendente es desear una buena labor. Se pide ser irreprochable, de una sola esposa, hospitalario, apto para enseñar y buen cabeza de familia; no un recién convertido, que podría enorgullecerse y caer como el Diablo."}
+    - {v: 8-13, type: letter, mentions: [person:jesus], note: "Los siervos ministeriales, serios y sinceros, sin afición al vino ni a la codicia, se prueban antes de servir. Las mujeres, serias y fieles. Quien sirve bien gana buen nombre y confianza para hablar de la fe."}
+    - {v: 14-15, type: letter, entities: [event:pablo-escribe-1-timoteo, person:pablo, person:timoteo, relation:timoteo/lived_in/efeso], mentions: [place:efeso], note: "Pablo cuenta con ir pronto, pero escribe por si se retrasa: Timoteo ha de saber portarse en la casa de Dios, columna de la verdad. La nota lo sitúa en Éfeso, entre paganos con ídolos sin vida."}
+    - {v: "16", type: letter, entities: [event:bautismo-de-jesus, event:resurreccion-de-jesus, event:ascension-de-jesus], mentions: [person:jesus, event:angeles-toman-esposas, event:pentecostes-33, event:pedro-predica-a-cornelio], note: "Un canto, quizá conocido entonces. Según las notas, Jesús se manifestó en carne al bautizarse, fue declarado justo al resucitar, condenó a los ángeles rebeldes de Noé, fue predicado desde Pentecostés y subió al cielo."}
+  4:
+    status: complete
+    reviewed_on: 2026-10-13
+    note: "Aviso de una apostasía futura que prohibirá casarse y ciertos alimentos, y consejos personales a Timoteo: entrenarse en la devoción a Dios, ser ejemplo pese a su juventud y no descuidar su don."
+    spans:
+    - {v: 1-5, type: letter, entities: [letter:1-timoteo], note: "Algunos dejarán la fe por mensajes engañosos y doctrinas de demonios: vetarán el matrimonio y alimentos que Dios creó. Todo lo creado es bueno si se toma con gratitud y oración. La nota fecha la carta hacia 61-64."}
+    - {v: 6-10, type: letter, mentions: [person:jesus, person:timoteo], note: "Enseñando esto, Timoteo será buen ministro de Cristo Jesús. Que rechace los cuentos irreverentes y se entrene como un atleta en la devoción a Dios, que promete vida ahora y en el futuro."}
+    - {v: 11-16, type: letter, entities: [person:timoteo, event:timoteo-se-une-a-pablo, event:pablo-escribe-1-timoteo, person:pablo, relation:timoteo/accompanies/pablo], mentions: [place:listra], note: "Que nadie desprecie su juventud; la nota le da quizá unos treinta años. Hasta que Pablo llegue, lectura pública, consejo y enseñanza. Su don vino con una profecía cuando los ancianos le impusieron las manos, probablemente en Listra."}
+  5:
+    status: complete
+    reviewed_on: 2026-10-13
+    note: "Consejos a Timoteo para la congregación de Éfeso: trato a mayores y jóvenes, ayuda a las viudas, honra y acusaciones de los ancianos, prudencia al nombrar y un consejo sobre su salud."
+    spans:
+    - {v: 1-2, type: letter, entities: [letter:1-timoteo], mentions: [person:timoteo], note: "Timoteo no debe reprender con dureza a un hombre mayor, sino aconsejarlo como a un padre; a los jóvenes, como a hermanos, y a las mujeres, como a madres o hermanas, con castidad. La nota recuerda que era joven."}
+    - {v: 3-8, type: letter, note: "Honrar a las viudas sin sustento; a las demás las mantienen hijos y nietos, y quien no cuida de los suyos niega la fe. Las notas citan a Noemí, Rut, la viuda de Sarepta, Ana y la del donativo."}
+    - {v: 9-10, type: letter, note: "Para entrar en la lista de ayuda de la congregación, la viuda ha de tener 60 años o más, haber tenido un solo marido y ser conocida por buenas obras: criar hijos, hospedar, lavar pies a los santos."}
+    - {v: 11-16, type: letter, mentions: [person:satanas, place:efeso], note: "Las viudas jóvenes no entran en la lista: quieren volver a casarse, rompen su promesa y van de casa en casa con chismes; mejor que se casen. Algunas ya siguen a Satanás. La nota sitúa el problema en Éfeso."}
+    - {v: 17-18, type: letter, mentions: [place:efeso, event:despedida-en-mileto, event:pacto-de-la-ley, event:envio-de-los-setenta, event:tercera-gira-y-envio-de-los-doce, person:jesus], note: "Los ancianos que presiden bien merecen doble honra, que puede incluir ayuda material. Cita Dt 25:4 y unas palabras de Jesús (Lu 10:7; Mt 10:10). La nota recuerda su reunión con los ancianos de Éfeso hacia 56."}
+    - {v: 19-21, type: letter, mentions: [event:pacto-de-la-ley, person:jesus], note: "Ninguna acusación contra un anciano sin dos o tres testigos, norma de la Ley (Dt 19:15). A quien persiste en pecar, censura ante los presentes. Pablo lo encarga ante Dios, Cristo y los ángeles, sin favoritismo."}
+    - {v: 22-23, type: letter, entities: [person:timoteo, relation:timoteo/lived_in/efeso, event:pablo-escribe-1-timoteo], mentions: [person:pablo, place:efeso], note: "Que no imponga las manos con prisa: Perspicacia deduce que Timoteo podía nombrar superintendentes en Éfeso. Que tome algo de vino, porque enferma a menudo del estómago; la nota ve ahí el cariño de padre de Pablo."}
+    - {v: 24-25, type: letter, note: "Los pecados de unos se ven enseguida y los de otros salen después; lo mismo pasa con las buenas obras, que tarde o temprano se conocen."}
+  6:
+    status: complete
+    reviewed_on: 2026-10-13
+    note: "Últimos consejos: esclavos y dueños, maestros falsos movidos por la ganancia, el amor al dinero y los ricos. Pablo encarga a Timoteo, hombre de Dios, pelear por la fe y guardar lo que se le confió."
+    spans:
+    - {v: 1-2, type: letter, entities: [letter:1-timoteo], note: "Los esclavos cristianos, que honren a sus dueños para que no se hable mal de Dios; y si el dueño es creyente, que lo sirvan aún mejor. La nota aclara que los cristianos no hicieron campaña contra la esclavitud."}
+    - {v: 3-5, type: letter, mentions: [person:jesus], note: "Quien enseña otra doctrina, contraria a la instrucción sana de Jesucristo, es orgulloso y vive de disputas sobre palabras que traen envidias y peleas. Según la nota, esos maestros querían sacar provecho de la devoción."}
+    - {v: 6-10, type: letter, note: "La devoción con contentamiento es gran ganancia: nada trajimos y nada llevaremos, idea que la nota halla ya en Salomón (Ec 5:15). El amor al dinero es raíz de males; la nota pone el caso de Judas Iscariote."}
+    - {v: 11-12, type: letter, entities: [person:timoteo, relation:timoteo/lived_in/efeso], mentions: [place:efeso], note: "Pablo llama a Timoteo hombre de Dios, título que las Escrituras Hebreas dan a Moisés, Samuel, David, Elías o Eliseo. Que huya de la codicia, luche por la fe y se aferre a la vida eterna que declaró ante testigos."}
+    - {v: 13-16, type: letter, entities: [event:ante-pilato-y-herodes, relation:timoteo/lived_in/efeso], mentions: [person:jesus, person:poncio-pilato, event:sentencia-y-barrabas, event:muerte-de-jesus, event:resurreccion-de-jesus, event:ascension-de-jesus], note: "Ante Dios y ante Cristo, que dio testimonio ante Poncio Pilato (Jn 18:33-38; Mt 27:11), Pablo encarga a Timoteo cumplir el mandato hasta la manifestación de Jesús. Las notas ven en el único Poderoso inmortal a Jesús resucitado."}
+    - {v: 17-19, type: letter, mentions: [person:satanas], note: "Los ricos de este sistema, que la nota dice dominado por Satanás, no deben creerse más ni fiarse de riquezas inseguras, sino de Dios; que sean ricos en buenas obras y generosos, y se aseguren la vida verdadera."}
+    - {v: 20-21, type: letter, entities: [letter:1-timoteo, event:pablo-escribe-1-timoteo, person:timoteo], mentions: [person:pablo], note: "Pablo cierra nombrando a Timoteo: que guarde lo que se le confió y evite la palabrería vacía y el falso conocimiento, que ya apartó a algunos de la fe. La nota liga ese término a los gnósticos posteriores."}
