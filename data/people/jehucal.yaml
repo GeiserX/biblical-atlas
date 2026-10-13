@@ -1,0 +1,46 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jehucal
+name: Jehucal
+names:
+- name: Jehucal
+- name: Jucal
+  note: Forma corta del nombre que usa Jer 38:1; Perspicacia la da en el mismo artículo.
+perspicacia: '1200002403'
+summary: Príncipe de Judá en días de Sedequías, hijo de Selemías. El rey lo mandó a pedir a Jeremías que orara; más tarde,
+  con otros tres príncipes, consiguió que echaran al profeta a una cisterna.
+reason: Perspicacia «Jehucal»; Jer 37:3 y 38:1-6.
+sources:
+- it-jehucal
+- jeremias-37
+- jeremias-38
+links:
+- title: 'Perspicacia: «Jehucal»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jehucal/
+  type: perspicacia
+- title: Jeremías 37 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/37/
+  type: bible
+relations:
+- type: kin
+  person: selemias-padre-de-jehucal
+  word: father
+  inferred: false
+  sources:
+  - jeremias-37
+  - jeremias-38
+  - it-selemias
+  reason: Jer 37:3 y 38:1 lo llaman hijo de Selemías.
+  checked_on: '2026-10-12'
+  status: verified
+- type: tie
+  person: jeremias-profeta
+  word: enemy
+  inferred: false
+  sources:
+  - jeremias-38
+  - it-jehucal
+  reason: 'Jer 38:1-6: con Sefatías, Guedalías y Pasjur pide al rey la muerte de Jeremías y lo echa a la cisterna.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

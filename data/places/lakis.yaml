@@ -24,6 +24,7 @@ sources:
 - 2-reyes-14
 - 2-reyes-19
 - isaias-36
+- jeremias-34
 links:
 - title: 'Perspicacia: «Lakís»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Lak%C3%ADs/
@@ -38,5 +39,5 @@ history:
 - date: '2026-09-29'
   change: La razón cita ahora la conquista de Josué y el párrafo de Perspicacia que la cuenta.
   source: josue-10
-checked_on: '2026-09-30'
+checked_on: '2026-10-12'
 status: verified

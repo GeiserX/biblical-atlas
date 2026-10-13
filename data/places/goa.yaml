@@ -1,0 +1,40 @@
+# biblical-atlas: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: goa
+name: Goá
+names:
+- name: Goá
+type: region
+lat: null
+lon: null
+precision: uncertain
+coord_source: null
+coord_url: null
+candidates:
+- name: Contorno de Jerusalén
+  geometry:
+    type: zone
+    lat: 31.776667
+    lon: 35.234167
+    radius_km: 3
+  checked_on: '2026-10-12'
+  status: favored_level_1
+  sources:
+  - it-goa
+  - openbible-geo
+  reason: 'Perspicacia «Goá»: Jeremías la nombra con Gareb al describir cómo crecería Jerusalén; hoy no se sabe dónde estaba.'
+  coord_source: calculation
+  note: 'Centro: el punto de OpenBible de Jerusalén. Radio nuestro, que abarca la ciudad ampliada.'
+summary: Lugar que Jer 31:39 nombra junto a la colina de Gareb al trazar la Jerusalén reconstruida y ampliada. No se sabe
+  dónde estaba.
+reason: 'Perspicacia «Goá»; Jer 31:38, 39. Sin punto: Perspicacia desconoce su ubicación; la zona solo dice que estaba en
+  el contorno de la ciudad.'
+sources:
+- it-goa
+- openbible-geo
+- jeremias-31
+links:
+- title: 'Perspicacia: «Goá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Go%C3%A1/
+  type: perspicacia
+checked_on: '2026-10-12'
+status: verified

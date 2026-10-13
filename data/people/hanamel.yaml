@@ -1,0 +1,51 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hanamel
+name: Hanamel
+names:
+- name: Hanamel
+perspicacia: '1200001849'
+date:
+  from: -607
+  to: -607
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 608 a.e.c.
+summary: Primo del profeta Jeremías, hijo de su tío paterno Salum. En 608 a.e.c., mientras Babilonia sitiaba Jerusalén, fue
+  al Patio de la Guardia y le vendió su campo de Anatot.
+reason: Perspicacia «Hanamel» y «Salum», núm. 10, que fecha la compra en 608 a.e.c.; Jer 32:7-12.
+sources:
+- it-hanamel
+- it-salum
+- jeremias-32
+links:
+- title: 'Perspicacia: «Hanamel»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hanamel/
+  type: perspicacia
+- title: Jeremías 32 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/32/
+  type: bible
+relations:
+- type: kin
+  person: salum-tio-de-jeremias
+  word: father
+  sources:
+  - jeremias-32
+  - it-hanamel
+  reason: Jer 32:7 lo presenta como hijo de Salum, el tío de Jeremías.
+  inferred: false
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: jeremias-profeta
+  word: cousin
+  sources:
+  - jeremias-32
+  - it-anatot
+  reason: 'Jer 32:7, 8, 9 y 12: Jeremías lo llama el hijo de su tío. Perspicacia «Anatot» lo llama su primo.'
+  inferred: false
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

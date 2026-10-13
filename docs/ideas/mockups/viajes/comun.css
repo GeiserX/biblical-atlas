@@ -1,0 +1,76 @@
+/* Prototipos de «Viajes»: lo que comparten los cuatro diseños. Los colores y la letra salen del tema copiado para la
+   portada (../portada/assets/kit), así que se ven igual que el sitio. */
+@import url("../portada/assets/kit/tokens.css");
+@import url("../portada/assets/kit/reunion.css");
+
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--paper); color: var(--ink); font: var(--fs-md)/var(--lh-body) var(--font-sans); }
+h1, h2, h3 { font-family: var(--font-serif); font-weight: 600; line-height: var(--lh-tight); margin: 0; }
+a { color: var(--link); }
+button { font: inherit; color: inherit; }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
+
+/* La barra del sitio, con «Viajes» como entrada. */
+.vj-barra { display: flex; align-items: center; gap: var(--sp-4); height: 52px; padding: 0 var(--sp-4); background: var(--surface); border-bottom: 1px solid var(--line); }
+.vj-barra__logo { font: 600 var(--fs-xl)/1 var(--font-serif); color: var(--ink); text-decoration: none; }
+.vj-barra__nav { display: flex; gap: 2px; margin-left: auto; }
+.vj-barra__nav a { display: inline-flex; align-items: center; min-height: 44px; padding: 0 var(--sp-3); border-radius: var(--r-pill); color: var(--ink-2); text-decoration: none; font-weight: 500; }
+.vj-barra__nav a[aria-current] { background: var(--accent-soft); color: var(--accent); font-weight: 650; }
+@media (max-width: 600px) {
+  .vj-barra { gap: var(--sp-2); padding: 0 var(--sp-2) 0 var(--sp-3); }
+  .vj-barra__logo { font-size: var(--fs-lg); }
+  .vj-barra__nav a { padding: 0 9px; font-size: var(--fs-sm); }
+}
+
+/* Las tres marcas de un tiempo: forma y color, para que no dependa solo del color. */
+.vj-t { display: inline-flex; align-items: center; gap: 6px; font-weight: 600; white-space: nowrap; }
+.vj-t__marca { width: 10px; height: 10px; flex: none; }
+.vj-t--dicho { color: var(--tier1); }
+.vj-t--dicho .vj-t__marca { background: var(--tier1); border-radius: 50%; }
+.vj-t--fuente { color: var(--tier1); }
+.vj-t--fuente .vj-t__marca { border: 2px solid var(--tier1); border-radius: 50%; }
+.vj-t--deducido { color: var(--ink-3); font-weight: 500; }
+.vj-t--deducido .vj-t__marca { border: 1.5px dashed var(--ink-3); transform: rotate(45deg) scale(.85); }
+.vj-t--nada { color: var(--ink-4); font-weight: 400; }
+.vj-t__ref { font-weight: 400; color: var(--ink-3); }
+.vj-leyenda { display: flex; flex-wrap: wrap; gap: 6px 18px; margin: 0; font-size: var(--fs-sm); color: var(--ink-3); }
+.vj-leyenda .vj-t { font-weight: 500; }
+.vj-leyenda__km { flex-basis: 100%; }
+
+/* El mapa de un tramo: el relieve, la ruta y los puntos. */
+.vj-mapa { position: relative; overflow: hidden; background: #dfe6dc; border-radius: var(--r-md); }
+.vj-mapa__fondo { position: absolute; left: 0; top: 0; width: 2560px; height: 1440px; transform-origin: 0 0; max-width: none; }
+.vj-mapa__papel { position: absolute; inset: 0; background: var(--paper-2); }
+.vj-mapa__svg { position: absolute; inset: 0; }
+.vj-ruta { fill: none; stroke: var(--accent); stroke-width: 3; stroke-linecap: round; }
+.vj-ruta--resto { stroke: var(--ink-3); stroke-width: 2; opacity: .55; }
+.vj-ruta--foco { stroke: #b34962; stroke-width: 4.5; }
+.vj-ruta--inc { stroke-dasharray: 9 6; }
+.vj-ruta--pend { stroke-dasharray: 1 7; }
+.vj-flecha { fill: #b34962; }
+.vj-pt circle { fill: var(--surface); stroke: var(--ink-2); stroke-width: 1.5; }
+.vj-pt--on circle { fill: #b34962; stroke: #fff; stroke-width: 2; }
+.vj-pt text { font: 600 13px var(--font-sans); fill: var(--map-label); paint-order: stroke; stroke: var(--map-label-halo); stroke-width: 4px; stroke-linejoin: round; }
+.vj-mapa__credito { position: absolute; right: 6px; bottom: 6px; margin: 0; padding: 2px 6px; border-radius: var(--r-xs); background: rgba(251, 252, 250, .86); color: #3c4a41; font-size: 11.5px; }
+.vj-mapa__vacio { position: absolute; inset: 0; display: grid; place-items: center; margin: 0; padding: var(--sp-4); text-align: center; color: var(--ink-3); }
+
+.vj-btn { display: inline-flex; align-items: center; justify-content: center; gap: 6px; min-height: 44px; padding: 0 var(--sp-4); border: 1px solid var(--line-2); border-radius: var(--r-pill); background: var(--surface); color: var(--ink); font-weight: 600; text-decoration: none; cursor: pointer; }
+.vj-btn--primario { background: var(--accent); border-color: var(--accent); color: #fff; }
+.vj-btn--peq { min-height: 36px; padding: 0 var(--sp-3); font-size: var(--fs-sm); }
+.vj-btn--peq::after { content: ""; position: absolute; inset: -4px; }
+.vj-btn--peq { position: relative; }
+
+/* Mandos del prototipo (no son del diseño): cambiar de diseño y el modo reunión. */
+.proto-tools { position: fixed; z-index: 50; right: 10px; bottom: 10px; display: flex; gap: 6px; align-items: flex-end; }
+.proto-switch { position: relative; }
+.proto-switch summary { list-style: none; cursor: pointer; padding: 8px 12px; border-radius: var(--r-pill); background: var(--ink); color: var(--paper); font-size: var(--fs-xs); font-weight: 600; box-shadow: var(--shadow-2); }
+.proto-switch nav { position: absolute; right: 0; bottom: 44px; display: grid; min-width: 220px; padding: 6px; border-radius: var(--r-md); background: var(--surface); box-shadow: var(--shadow-3); }
+.proto-switch nav a { padding: 10px; border-radius: var(--r-sm); text-decoration: none; color: var(--ink); }
+.proto-switch nav a[aria-current] { background: var(--accent-soft); font-weight: 650; }
+.proto-moon { width: 36px; height: 36px; border: 0; border-radius: 50%; background: var(--ink); color: var(--paper); display: grid; place-items: center; box-shadow: var(--shadow-2); cursor: pointer; }
+.proto-moon svg { width: 18px; height: 18px; }
+.vj-captura .proto-tools { display: none; }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
+[hidden] { display: none !important; }

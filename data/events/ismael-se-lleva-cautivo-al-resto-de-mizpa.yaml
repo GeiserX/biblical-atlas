@@ -1,0 +1,42 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: ismael-se-lleva-cautivo-al-resto-de-mizpa
+title: Ismael se lleva cautiva a la gente que quedaba en Mizpá
+date:
+  from: -606
+  to: -606
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 607 a.e.c.
+narrative_order:
+  series: jeremias
+  order: 41010
+places:
+- mizpa-de-benjamin
+- ammon
+people:
+- ismael-hijo-de-netanias
+present:
+- ismael-hijo-de-netanias
+passages:
+- Jer 41:10
+summary: Ismael toma presos a los que seguían en Mizpá, con las hijas del rey, a quienes Nebuzaradán había confiado a Guedalías,
+  y sale con ellos hacia la tierra de los ammonitas.
+reason: Jer 41:10; Perspicacia «Ismael», núm. 5, y «Mizpá, Mizpé», núm. 3. Sigue a los asesinatos del mes séptimo de 607 (estudio
+  3, párr. 6).
+sources:
+- jeremias-41
+- si-3
+- it-ismael
+- it-mizpa
+- it-nebuzaradan
+links:
+- title: Jeremías 41 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/41/
+  type: bible
+- title: 'Perspicacia: «Ismael»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ismael/
+  type: perspicacia
+checked_on: '2026-10-12'
+status: verified

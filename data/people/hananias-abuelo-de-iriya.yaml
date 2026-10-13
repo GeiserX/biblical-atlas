@@ -1,0 +1,28 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hananias-abuelo-de-iriya
+name: Hananías
+names:
+- name: Hananías
+perspicacia: 1200001853#6
+disambiguation: El abuelo de Iriya (Jer 37:13); no es el profeta falso hijo de Azur, ni Sadrac, cuyo nombre hebreo era Hananías,
+  ni el padre del príncipe Sedequías.
+distinct_from:
+- hananias-hijo-de-azur
+- sadrac
+- hananias-padre-de-sedequias
+summary: Padre de Selemías y, por él, abuelo de Iriya, el jefe de la guardia que arrestó a Jeremías. Perspicacia lo identifica
+  así con cautela.
+reason: Perspicacia «Hananías», núm. 6, que dice «tal vez»; Jer 37:13.
+sources:
+- it-hananias
+- jeremias-37
+links:
+- title: 'Perspicacia: «Hananías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hanan%C3%ADas/
+  type: perspicacia
+- title: Jeremías 37 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/37/
+  type: bible
+relations: []
+checked_on: '2026-10-12'
+status: verified

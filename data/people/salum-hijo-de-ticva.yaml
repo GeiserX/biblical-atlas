@@ -8,6 +8,7 @@ disambiguation: El marido de Huldá; no es Salum, rey de Israel, ni Salum hijo d
 distinct_from:
 - salum-de-israel
 - jehoacaz-de-juda
+- salum-padre-de-maaseya
 summary: Esposo de la profetisa Huldá, hijo de Ticvá y nieto de Harhás. Estaba encargado del guardarropa, quizá de los sacerdotes
   o del rey.
 reason: Perspicacia «Salum», núm. 8; 2Re 22:14.
@@ -42,5 +43,16 @@ relations:
   reason: 2Re 22:14 lo llama Salum hijo de Ticvá.
   checked_on: '2026-09-30'
   status: verified
-checked_on: '2026-09-30'
+- type: same_as
+  person: salum-tio-de-jeremias
+  certainty: possible
+  inferred: true
+  sources:
+  - it-salum
+  - jeremias-32
+  reason: 'Perspicacia «Salum», núm. 10: por la época en que vivió, el tío de Jeremías (Jer 32:7) podría ser el esposo de
+    Huldá, el núm. 8.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
 status: verified

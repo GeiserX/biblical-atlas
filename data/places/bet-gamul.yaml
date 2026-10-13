@@ -1,0 +1,25 @@
+# biblical-atlas: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: bet-gamul
+name: Bet-Gamul
+names:
+- name: Bet-Gamul
+type: city
+lat: 31.483496
+lon: 35.899907
+precision: point
+coord_source: openbible:a367677
+coord_url: https://www.openbible.info/geo/ancient/a367677/beth-gamul
+summary: Ciudad de la meseta de Moab, al norte del Arnón, nombrada en el juicio de Jer 48:23. Se suele identificar con Jumaiyil,
+  unos 13 km al este de Dibón; hoy solo quedan ruinas.
+reason: 'Perspicacia «Bet-gamul» y «Moab, moabitas», último párrafo; Jer 48:21, 23. OpenBible: solo el punto.'
+sources:
+- it-bet-gamul
+- it-moab
+- openbible-geo
+- jeremias-48
+links:
+- title: 'Perspicacia: «Bet-gamul»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Bet-gamul/
+  type: perspicacia
+checked_on: '2026-10-12'
+status: verified

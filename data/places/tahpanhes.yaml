@@ -39,11 +39,13 @@ sources:
 - openbible-geo
 - jeremias-43
 - jeremias-44
+- jeremias-2
+- jeremias-46
 links:
 - title: 'Perspicacia: «Tahpanés, Tahpanhés, Tehafnehés»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Tahpan%C3%A9s-Tahpanh%C3%A9s-Tehafneh%C3%A9s/
   type: perspicacia
-checked_on: '2026-10-02'
+checked_on: '2026-10-12'
 status: verified
 history:
 - date: '2026-10-02'

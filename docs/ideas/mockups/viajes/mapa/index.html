@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Viajes · El mapa y su tira · biblical-atlas</title>
+<link rel="stylesheet" href="../comun.css">
+<link rel="stylesheet" href="mapa.css">
+</head>
+<body>
+<div id="barra"></div>
+<main class="ma" id="ma">
+  <div class="vj-mapa ma-mapa" id="mapa"></div>
+  <aside class="ma-cajon" id="cajon" aria-label="Todos los viajes">
+    <div class="ma-cajon__cab"><h1>Viajes</h1>
+      <label class="sr-only" for="filtro">Filtrar viajes</label><input id="filtro" type="search" placeholder="Pablo, Elías, Corinto…"></div>
+    <div id="lista"></div>
+  </aside>
+  <section class="ma-cab" id="cab" aria-live="polite"></section>
+  <section class="ma-tira" id="tira" aria-label="Tramos del viaje"></section>
+  <button class="vj-btn ma-abrir" id="abrir-lista" type="button" aria-controls="cajon" aria-expanded="false">Viajes</button>
+  <div class="ma-inicio" id="inicio" hidden></div>
+</main>
+<script src="../datos.js"></script>
+<script src="../comun.js"></script>
+<script src="mapa.js"></script>
+</body>
+</html>

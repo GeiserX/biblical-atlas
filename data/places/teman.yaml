@@ -29,6 +29,7 @@ sources:
 - amos-1
 - abdias-1
 - habacuc-3
+- jeremias-49
 links:
 - title: 'Perspicacia: «Temán»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Tem%C3%A1n/
@@ -49,5 +50,5 @@ history:
 - date: '2026-09-29'
   change: 'Errata: la ciudad edomita se escribe Bozrá en la TNM (Am 1:12) y en su propia ficha.'
   source: amos-1
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified
