@@ -221,8 +221,9 @@ test('after a failed detail, nobody asks again for RETRY_MS (5 s); the next card
 });
 
 test('the search, on top and on the landing, is redone with the line that tells namesakes apart when the detail arrives', async () => {
-  // «Rey de Israel» is the `desambiguacion` of one Zacarías, in the detail: the lists answer without it, then with it.
-  const line = D.personas['zacarias-de-israel'].desambiguacion.split(';')[0];
+  // «Hijo de Jeroboán II» opens the `resumen` of one Zacarías, in the detail, and the kinship is the line that tells him
+  // from his namesakes (BE.distinguishingLine): the lists answer without it, then with it.
+  const line = D.personas['zacarias-de-israel'].resumen.split(' y ')[0];
   for (const [hash, box, list] of [['t=50.3000', '#q', '#resultados'], ['', '#portada-q', '#portada-lista']]) {
     let release;
     const held = new Promise((ok) => { release = ok; });
