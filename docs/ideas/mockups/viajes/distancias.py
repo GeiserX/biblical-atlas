@@ -17,6 +17,7 @@ fechas de sus dos paradas («deducido»): como mucho, el hueco entre el principi
 Comprobaciones (salida 1 si alguna falla):
   1. Cada tramo de control de tiempos.json queda dentro de su tolerancia frente a la distancia que da la fuente.
   2. Cada tiempo de tiempos.json nombra un viaje, unas paradas y unas fuentes que existen en site/data.json.
+  3. Ningún tope deducido («como mucho …») es de 0 días o menos.
 """
 import json, math, os, sys
 
@@ -91,18 +92,28 @@ def humano(anios):
     return f'{round(anios)} años'
 
 
+def anual(f):
+    """[principio, final] de los años de una fecha, sin mes ni estación."""
+    a = f['desde'] if f.get('desde') is not None else f['hasta']
+    b = f['hasta'] if f.get('hasta') is not None else f['desde']
+    return [a, b + 1]
+
+
 def deducido(pa, pb):
+    """El tiempo deducido de un tramo y su tope en años (None si no es un tope «como mucho»)."""
     wa, wb = ventana(pa.get('fecha')), ventana(pb.get('fecha'))
     if not wa or not wb:
-        return None
+        return None, None
     exacto = all((p.get('fecha') or {}).get('precision') == 'día' for p in (pa, pb))
     if exacto:
-        valor = humano(max(0, wb[0] - wa[0]))
-    elif wb[1] - wa[0] >= 1 and wa == wb:
-        valor = 'en el mismo año, sin más detalle'
-    else:
-        valor = 'como mucho ' + humano(wb[1] - wa[0])
-    return {'k': 'deducido', 'v': valor}
+        return {'k': 'deducido', 'v': humano(max(0, wb[0] - wa[0]))}, None
+    if wb[1] <= wa[0]:
+        # Ventanas al revés: un mes del final del año (adar cae pasado enero) junto a una parada con solo el año.
+        # Sin más detalle, cada parada vuelve a su año entero.
+        wa, wb = anual(pa['fecha']), anual(pb['fecha'])
+    if wb[1] - wa[0] >= 1 and wa == wb:
+        return {'k': 'deducido', 'v': 'en el mismo año, sin más detalle'}, None
+    return {'k': 'deducido', 'v': 'como mucho ' + humano(wb[1] - wa[0])}, wb[1] - wa[0]
 
 
 def main(control=False):
@@ -149,7 +160,9 @@ def main(control=False):
             d = km(ca, cb) if ca and cb else None
             leg = {'a': a['orden'], 'b': b['orden'], 'km': round(d, 1) if d is not None else None}
             dicho = next((t for t in dichos.get(v['id'], []) if t['kind'] == 'leg' and t['from'] == a['orden'] and t['to'] == b['orden']), None)
-            tiempo = deducido(a, b)
+            tiempo, tope = deducido(a, b)
+            if tope is not None and tope <= 0:
+                errores.append(f"{v['id']} {a['orden']}→{b['orden']}: tope deducido de {tope / DIA:.1f} días")
             if dicho:
                 tiempo = {'k': 'fuente' if dicho.get('estimate') else 'dicho', 'v': dicho['value'], 'x': dicho['text'], 'r': dicho['reference']}
             tramo = next((t for t in dichos.get(v['id'], []) if t['kind'] == 'leg' and t['from'] <= a['orden'] and t['to'] >= b['orden'] and t['to'] - t['from'] > 1), None)
