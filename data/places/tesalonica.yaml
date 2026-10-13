@@ -22,6 +22,9 @@ sources:
 - 1-tesalonicenses-1
 - 1-tesalonicenses-2
 - 1-tesalonicenses-3
+- 2-tesalonicenses-1
+- 2-tesalonicenses-2
+- 2-tesalonicenses-3
 links:
 - title: 'Perspicacia: «Tesalónica»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Tesal%C3%B3nica/
@@ -29,5 +32,5 @@ links:
 - title: Hechos 17 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/hechos/17/
   type: bible
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified

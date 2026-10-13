@@ -198,6 +198,8 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | 2-samuel-8 | [2 Samuel 8](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-samuel/8/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | 2-samuel-9 | [2 Samuel 9](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-samuel/9/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | 2-tesalonicenses-1 | [2 Tesalonicenses 1](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-tesalonicenses/1/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | 2026-09-27 |
+| 2-tesalonicenses-2 | [2 Tesalonicenses 2](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-tesalonicenses/2/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
+| 2-tesalonicenses-3 | [2 Tesalonicenses 3](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-tesalonicenses/3/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | 2-timoteo-1 | [2 Timoteo 1](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-timoteo/1/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | 2026-09-27 |
 | 2-timoteo-4 | [2 Timoteo 4](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-timoteo/4/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | 3-juan-1 | [3 Juan 1](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/3-juan/1/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |

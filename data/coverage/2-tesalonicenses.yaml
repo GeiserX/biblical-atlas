@@ -1,0 +1,34 @@
+# biblical-atlas: cobertura de un libro. Formato en data/coverage/README.md.
+book: 2-tesalonicenses
+chapters:
+  1:
+    status: complete
+    reviewed_on: 2026-10-13
+    note: "Saludo de Pablo, Silvano y Timoteo, todavía en Corinto, a una congregación que crece en fe y amor bajo persecución. Jesús traerá alivio a los fieles y castigo a quienes no obedecen las buenas noticias."
+    spans:
+    - {v: 1-2, type: letter, entities: [letter:2-tesalonicenses, event:pablo-escribe-2-tesalonicenses, person:pablo, person:silas, person:timoteo, relation:silas/accompanies/pablo, relation:timoteo/accompanies/pablo, relation:pablo/lived_in/corinto, place:tesalonica], mentions: [person:jesus, place:corinto, letter:1-tesalonicenses], note: "Los tres remitentes de la primera carta vuelven a saludar a la congregación de Tesalónica. La nota remite a 2Co 1:19 para Silvano, que es Silas, y compara el destinatario con el de la primera carta."}
+    - {v: 3-5, type: letter, mentions: [place:tesalonica, event:alboroto-en-tesalonica, letter:1-tesalonicenses], note: "Su fe crece sin medida y su amor aumenta; Pablo presume de ellos ante otras congregaciones por su aguante en la persecución, que las referencias unen a la de la primera carta. Así los cuentan dignos del Reino."}
+    - {v: 6-10, type: letter, mentions: [person:jesus], note: "Dios dará tribulación a los perseguidores y alivio a los perseguidos cuando Jesús se revele desde el cielo con sus ángeles. Quienes no conocen a Dios ni obedecen las buenas noticias sufrirán destrucción eterna, dice la nota."}
+    - {v: 11-12, type: letter, mentions: [person:jesus], note: "Pablo pide en oración que Dios los halle a la altura de su llamada y lleve a término sus obras de fe, para que así den gloria al nombre de Jesús, y él a ellos."}
+  2:
+    status: complete
+    reviewed_on: 2026-10-13
+    note: "Pablo corrige a quienes creían que el día de Jehová ya estaba aquí: antes vendrán la apostasía y el hombre que desafía la ley. Les recuerda lo que les enseñó en Tesalónica y los anima a seguir firmes."
+    spans:
+    - {v: 1-2, type: letter, entities: [letter:2-tesalonicenses, event:pablo-escribe-2-tesalonicenses], mentions: [person:jesus, event:senal-de-su-presencia, place:tesalonica], note: "Sobre la presencia de Jesús, que no se alarmen por un mensaje, una palabra o una carta que pase por suya. La nota cree que algunos daban por inminente esa presencia; por eso la carta prueba su autenticidad (2Te 3:17)."}
+    - {v: 3-4, type: letter, note: "Primero vendrá la apostasía y se revelará el que desafía la ley, llamado también hijo de la destrucción, que se alza sobre todo dios. La nota lo ve como un grupo de falsos cristianos, no un individuo: sin ficha."}
+    - {v: "5", type: letter, entities: [event:pablo-escribe-2-tesalonicenses, event:alboroto-en-tesalonica, person:pablo, relation:pablo/lived_in/corinto, place:tesalonica], mentions: [place:corinto], note: "Pablo les recuerda que ya les hablaba de esto cuando estaba con ellos. La nota sitúa esa visita hacia 50 y escribe la carta desde Corinto, quizás hacia 51 (Hch 18:11)."}
+    - {v: 6-8, type: letter, mentions: [person:jesus, person:pedro, person:juan-apostol, event:muerte-del-apostol-juan, event:senal-de-su-presencia], note: "Algo frena aún a ese hombre. Según las notas, eran los apóstoles, con Pedro y Juan, y el último freno cayó al morir Juan hacia 100. Jesús lo destruirá al manifestarse su presencia, durante la gran tribulación."}
+    - {v: 9-12, type: letter, mentions: [person:satanas], note: "Satanás actúa detrás de ese hombre y le da milagros falsos y engaño para los que rechazan la verdad. Dios deja que los confunda una influencia engañosa."}
+    - {v: 13-15, type: letter, mentions: [person:jesus], note: "Gracias a Dios por los hermanos amados por Jehová, elegidos para salvarse y llamados por las buenas noticias. Que se mantengan firmes en lo que se les enseñó de palabra o por carta."}
+    - {v: 16-17, type: letter, mentions: [person:jesus], note: "Oración: que Jesucristo y Dios el Padre, que los amó y les dio consuelo y esperanza, consuelen su corazón y los afiancen en toda buena obra y palabra."}
+  3:
+    status: complete
+    reviewed_on: 2026-10-13
+    note: "Pablo pide oraciones, manda apartarse de quien no trabaja recordando su propio ejemplo en Tesalónica y firma el saludo de su mano. No hay nombres nuevos; escribe desde Corinto hacia 51."
+    spans:
+    - {v: 1-5, type: letter, mentions: [person:jesus, person:satanas], note: "Pablo pide oraciones para que la palabra de Jehová corra, como un corredor según la nota, y para librarse de hombres malvados sin fe. El Maligno es Satanás, como explica la nota de estudio de Ef 6:16."}
+    - {v: 6-10, type: letter, entities: [event:alboroto-en-tesalonica, place:tesalonica], mentions: [person:jesus], note: "Apartarse del hermano indisciplinado que no sigue lo enseñado. En Tesalónica, Pablo y los suyos trabajaron día y noche, quizá haciendo tiendas según la nota, para no ser una carga, y ordenaron que no coma quien no quiera trabajar."}
+    - {v: 11-12, type: letter, entities: [event:pablo-escribe-2-tesalonicenses], mentions: [person:jesus], note: "Les han llegado noticias de algunos que no trabajan y se meten en asuntos ajenos; la nota ve posible que creyeran inminente la presencia de Jesús. Pablo les manda ganarse su propio pan con calma."}
+    - {v: 13-15, type: letter, note: "No cansarse de hacer el bien. Al que desobedezca la carta hay que tenerlo señalado y dejar de tratarlo como amigo, para que se avergüence, pero sin verlo como enemigo: se le sigue aconsejando como a un hermano."}
+    - {v: 16-18, type: letter, entities: [letter:2-tesalonicenses, event:pablo-escribe-2-tesalonicenses, person:pablo], mentions: [person:jesus], note: "Deseo de paz y despedida. Pablo escribe el saludo de su puño, señal de que la carta es suya; la nota cree posible que antes les llegara una carta falsa a su nombre (2Te 2:2)."}
