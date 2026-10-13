@@ -12,7 +12,6 @@ date:
 narrative_order:
   series: 1-cronicas
   order: 29001
-  after: salomon-rey
 places:
 - jerusalen
 people:
@@ -36,5 +35,10 @@ links:
 - title: 1 Crónicas 29 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/1-Cr%C3%B3nicas/29/
   type: bible
-checked_on: '2026-10-12'
+history:
+- date: '2026-10-13'
+  change: 'Sin after a salomon-rey: ya va tras 1Cr 22:6-19, que lo lleva. Repetido, cada uno volvía a cerrar el tramo en esa
+    fecha y dejaba sin sitio al suceso anterior.'
+  source: 1-cronicas-29
+checked_on: '2026-10-13'
 status: verified
