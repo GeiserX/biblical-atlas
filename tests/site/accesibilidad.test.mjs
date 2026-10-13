@@ -612,3 +612,40 @@ test('1440: a click on what is drawn wins over the zone of a nearer marker on to
   assert.deepEqual(page.errors, []);
   await page.context().close();
 });
+
+// A region, sea or river name drawn under the zone of a point: the name wins, as it did when the point had no zone.
+test('1440: a click on a region, sea or river name wins over the zone of a point on top of it', async () => {
+  let page, s = null;
+  for (const hash of ['t=33.3000', 't=62.0000', 't=30.3000', 't=50.3000']) {
+    page = await keyboardPage('1440', hash);
+    s = await page.evaluate(() => {
+      const MARCA = '.marca-lugar, .marca-hallazgo, .viajero, .cand, .marca-region, .marca-agua';
+      const NAME = '.region-texto, .region-texto *, .marca-agua .etiqueta, .marca-agua .etiqueta *';
+      for (const d of window.__be.map.getContainer().querySelectorAll('.region-texto, .marca-agua .etiqueta')) {
+        const own = d.closest(MARCA);
+        if (!own.checkVisibility() || !d.checkVisibility({ visibilityProperty: true })) continue;
+        const r = d.getBoundingClientRect();
+        for (let x = Math.ceil(r.left) + 1; x < r.right - 1; x += 1) {
+          for (let y = Math.ceil(r.top) + 1; y < r.bottom - 1; y += 1) {
+            const top = document.elementFromPoint(x, y);
+            // On top, the bare zone of another marker (its button itself, not what it draws).
+            if (!top?.matches('.marca-lugar, .marca-hallazgo, .viajero, .cand') || top === own) continue;
+            const pila = document.elementsFromPoint(x, y);
+            const first = pila.find((n) => n.matches(NAME) || n.matches('.punto, .etiqueta, .etiqueta *, .hallazgo-dibujo, .hallazgo-dibujo *, .viajero-punto, .viajero-rotulo, .cand-punto, .cand-rotulo, .cand-rotulo *'));
+            if (first?.closest(MARCA) !== own) continue;
+            return { id: own.dataset.sel, over: top.dataset.sel, x, y };
+          }
+        }
+      }
+      return null;
+    });
+    if (s) break;
+    await page.context().close();
+  }
+  assert.ok(s, 'no region, sea or river name drawn under the zone of a point');
+  await page.mouse.click(s.x, s.y);
+  await page.waitForFunction((id) => `${window.BE.E.sel?.tipo}:${window.BE.E.sel?.id}` === id, s.id, { timeout: 5000 }).catch(() => {});
+  assert.equal(await selected(page), s.id, `a click on the name of ${s.id}, under the zone of ${s.over}, chose ${await selected(page)}`);
+  assert.deepEqual(page.errors, []);
+  await page.context().close();
+});

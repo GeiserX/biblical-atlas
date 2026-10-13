@@ -209,10 +209,10 @@ function crearMapa() {
   map.on('resize', () => { if (imgsDom.length) colocarImgsDom(); });
   // Un clic en una marca HTML también llega a MapLibre: esa marca ya lo gestiona su propio manejador.
   const enMarca = (e) => !!e.originalEvent?.target?.closest?.('.maplibregl-marker');
-  // La zona de un punto, un hallazgo, un viajero o un candidato (24 px, 44 con el dedo) pisa la de sus vecinos cuando el zoom los junta:
-  // el clic va al más cercano, no al que quedó encima. El teclado (detail 0) pulsa el botón que tiene el foco, sin más.
+  // La zona de una marca (24 px, 44 con el dedo) pisa la de sus vecinas cuando el zoom las junta: el clic va a lo que se
+  // dibuja ahí o al punto más cercano, no a la zona que quedó encima. El teclado (detail 0) pulsa el botón que tiene el foco.
   map.getContainer().addEventListener('click', (e) => {
-    const el = e.target.closest?.(ZONA);
+    const el = e.target.closest?.(MARCA);
     if (!el || e.detail === 0) return;
     const mejor = marcaCercana(e.clientX, e.clientY);
     if (mejor && mejor !== el) { e.stopPropagation(); e.preventDefault(); mejor.click(); }
@@ -1221,17 +1221,20 @@ function crearMarcas() {
   marcaProxima = new maplibregl.Marker({ element: q, anchor: 'bottom', offset: [0, -14] }).setLngLat([0, 0]);
   q.addEventListener('click', (e) => { e.stopPropagation(); const s = BE.P.find((x) => x.key === q.dataset.key); if (s) { setT((s.a + s.b) / 2); asegurarVisible(E.t, false); } });
 }
-/** Las marcas con zona de 24 px (lugares, hallazgos, viajeros y candidatos), lo que se ve de cada una y el punto desde el
-    que se mide la distancia. */
+/** Las marcas con zona de 24 px alrededor de un punto (lugares, hallazgos, viajeros y candidatos); las que la tienen
+    alrededor de un nombre (regiones, mares y ríos); lo que se ve de cada una, y el punto desde el que se mide la distancia. */
 const ZONA = '.marca-lugar, .marca-hallazgo, .viajero, .cand';
-const DIBUJO = '.marca-lugar .punto, .marca-lugar .etiqueta, .marca-lugar .etiqueta *, .hallazgo-dibujo, .hallazgo-dibujo *, .viajero-punto, .viajero-rotulo, .cand-punto, .cand-rotulo, .cand-rotulo *';
+const MARCA = `${ZONA}, .marca-region, .marca-agua`;
+const DIBUJO = '.marca-lugar .punto, .marca-lugar .etiqueta, .marca-lugar .etiqueta *, .hallazgo-dibujo, .hallazgo-dibujo *, .viajero-punto, .viajero-rotulo, .cand-punto, .cand-rotulo, .cand-rotulo *, .region-texto, .region-texto *, .marca-agua .etiqueta, .marca-agua .etiqueta *';
 const CENTRO = '.punto, .hallazgo-dibujo > span, .viajero-punto, .cand-punto';
-/** La marca que recibe un clic en (x, y): el punto, el cuadrado o el nombre que se ve ahí; si solo hay zonas de toque,
-    la del punto más cercano. */
+/** Lo primero que se ve en (x, y) entre las marcas del mapa: un punto, un nombre o un cuadrado, o una marca sin zona
+    (una burbuja, un número). El borde transparente de una zona no cuenta, y un nombre escondido no está en la pila. */
+const dibujadoEn = (x, y) => document.elementsFromPoint(x, y).find((n) => n.matches(DIBUJO) || (n.closest('.maplibregl-marker') && !n.closest(MARCA))) || null;
+/** La marca que recibe un clic en (x, y): la de lo que se ve ahí; si solo hay zonas, la del punto más cercano. */
 function marcaCercana(x, y) {
+  const dibujado = dibujadoEn(x, y);
+  if (dibujado) return dibujado.closest('.maplibregl-marker');
   const pila = document.elementsFromPoint(x, y);
-  const dibujado = pila.find((n) => n.matches(DIBUJO));
-  if (dibujado) return dibujado.closest(ZONA);
   let mejor = null, d0 = Infinity;
   for (const el of new Set(pila.map((n) => n.closest(ZONA)).filter(Boolean))) {
     const r = el.querySelector(CENTRO).getBoundingClientRect();
