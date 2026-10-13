@@ -1,0 +1,31 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jotan-hijo-de-jahdai
+name: Jotán
+names:
+- name: Jotán
+perspicacia: 1200002529#1
+summary: Descendiente de Judá, hijo de Jahdái, de la rama de Caleb.
+reason: Perspicacia «Jotán», núm. 1; 1Cr 2:47.
+sources:
+- it-jotan
+- 1-cronicas-2
+links:
+- title: 'Perspicacia: «Jotán»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jot%C3%A1n/
+  type: perspicacia
+relations:
+- type: kin
+  person: jahdai
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-2
+  reason: '1Cr 2:47: uno de los hijos de Jahdái.'
+  checked_on: '2026-10-12'
+  status: verified
+disambiguation: Jotán hijo de Jahdái, de Judá; no Jotán hijo de Gedeón ni Jotán, el rey de Judá.
+distinct_from:
+- jotan-hijo-de-gedeon
+- jotan
+checked_on: '2026-10-12'
+status: verified

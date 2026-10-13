@@ -1,0 +1,20 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ahihud-hermano-de-uza
+name: Ahihud
+names:
+- name: Ahihud
+perspicacia: 1200000152#2
+disambiguation: Ahihud el benjamita, hermano de Uzá; no Ahihud hijo de Selomí, el jefe de Aser que ayudó a repartir la tierra.
+distinct_from:
+- ahihud-hijo-de-selomi
+summary: Benjamita, hermano de Uzá.
+reason: Perspicacia «Ahihud», núm. 2; 1Cr 8:7.
+sources:
+- it-ahihud
+- 1-cronicas-8
+links:
+- title: 'Perspicacia: «Ahihud»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ahihud/
+  type: perspicacia
+checked_on: '2026-10-12'
+status: verified

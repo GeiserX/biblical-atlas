@@ -1,0 +1,29 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jesarela
+name: Jesarela
+names:
+- name: Jesarela
+perspicacia: '1200002440'
+summary: Músico levita de días de David, cabeza del séptimo de los 24 grupos de cantores. Perspicacia lo cuenta entre los
+  hijos de Asaf.
+reason: Perspicacia «Jesarela»; 1Cr 25:14.
+sources:
+- it-jesarela
+- 1-cronicas-25
+links:
+- title: 'Perspicacia: «Jesarela»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jesarela/
+  type: perspicacia
+relations:
+- type: kin
+  person: asaf-hijo-de-berekias
+  word: father
+  inferred: true
+  sources:
+  - 1-cronicas-25
+  - it-jesarela
+  reason: Perspicacia «Jesarela» lo llama hijo de Asaf; 1Cr 25:14 solo da su suerte.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

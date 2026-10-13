@@ -11,6 +11,10 @@ distinct_from:
 - jonatan-hijo-de-abiatar
 - jonatan-hijo-de-sama
 - jonatan-hijo-de-sague
+- jonatan-hijo-de-carea
+- jonatan-hijo-de-jada
+- jonatan-hijo-de-uzias
+- jonatan-sobrino-de-david
 summary: Hijo mayor del rey Saúl, guerrero valiente y amigo leal de David. Venció a los filisteos en Gueba y en Micmash, pactó
   con David y lo defendió ante su padre. Murió con Saúl en el monte Guilboa en 1078 a.e.c.
 reason: Perspicacia «Jonatán», núm. 2; 1Sa 13:3; 14:13-15; 18:1-4; 20:30-34; 31:2.
@@ -26,6 +30,9 @@ sources:
 - 2-samuel-1
 - 2-samuel-4
 - 2-samuel-21
+- 1-cronicas-8
+- 1-cronicas-9
+- 1-cronicas-10
 links:
 - title: 'Perspicacia: «Jonatán»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jonat%C3%A1n/
@@ -67,8 +74,11 @@ relations:
   - 2-samuel-1
   - 2-samuel-4
   - 2-samuel-21
+  - 1-cronicas-8
+  - 1-cronicas-9
+  - 1-cronicas-10
   reason: 1Sa 13:16, 22 lo llama hijo de Saúl.
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: kin
   person: ahinoam-hija-de-ahimaaz
@@ -105,9 +115,10 @@ relations:
   - it-guilboa
   - it-jonatan
   - 2-samuel-1
+  - 1-cronicas-10
   reason: '1Sa 31:1, 2, 8: los filisteos lo mataron en el monte Guilboa, en la batalla de 1078 (Perspicacia «Jonatán», núm.
     2).'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

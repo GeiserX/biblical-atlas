@@ -1,0 +1,26 @@
+# biblical-atlas: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: jabez
+name: Jabez
+names:
+- name: Jabez
+type: city
+lat: 31.704306
+lon: 35.207639
+precision: zone
+coord_source: openbible:aedf531
+coord_url: https://www.openbible.info/geo/ancient/aedf531/jabez
+coord_note: Punto de OpenBible para un círculo de 5 km alrededor de Belén, el mismo punto de Belén. Perspicacia dice que no
+  se conoce su emplazamiento.
+summary: Localidad de Judá donde vivían tres familias de escribas, quenitas. Perspicacia cree que quizá la fundó Jabez, el
+  de 1 Crónicas 4:9.
+reason: 'Perspicacia «Jabez», núm. 2; 1Cr 2:55. OpenBible: solo el punto.'
+sources:
+- it-jabez
+- openbible-geo
+- 1-cronicas-2
+links:
+- title: 'Perspicacia: «Jabez»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jabez/
+  type: perspicacia
+checked_on: '2026-10-12'
+status: verified

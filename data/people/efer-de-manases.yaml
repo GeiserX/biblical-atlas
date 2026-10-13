@@ -1,0 +1,41 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: efer-de-manases
+name: Éfer
+names:
+- name: Éfer
+perspicacia: 1200001384#3
+disambiguation: Éfer el manasita del este del Jordán (1Cr 5:23-26); no es ninguno de los otros Éfer que numera Perspicacia
+  «Éfer».
+distinct_from:
+- efer-hijo-de-ezra
+- efer-hijo-de-madian
+summary: Uno de los siete jefes de familia manasitas del este del Jordán, guerrero famoso. Sus descendientes acabaron desterrados
+  por Asiria.
+reason: Perspicacia «Éfer», núm. 3; 1Cr 5:23-26.
+sources:
+- it-efer
+- 1-cronicas-5
+links:
+- title: 'Perspicacia: «Éfer»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/%C3%89fer/
+  type: perspicacia
+relations:
+- type: lived_in
+  place: basan
+  inferred: false
+  sources:
+  - 1-cronicas-5
+  reason: '1Cr 5:23: los manasitas del este ocupaban la tierra de Basán a Baal-Hermón y el Hermón.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: manases-hijo-de-jose
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-5
+  reason: '1Cr 5:23, 24: jefe de una familia manasita del este del Jordán.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

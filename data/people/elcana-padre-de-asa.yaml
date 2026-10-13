@@ -1,0 +1,27 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: elcana-padre-de-asa
+name: Elcaná
+names:
+- name: Elcaná
+perspicacia: 1200001326#5
+summary: Levita, padre de Asá y antepasado de Berekías, que vivió en Jerusalén después del destierro.
+reason: Perspicacia «Elqaná», núm. 5; 1Cr 9:16.
+sources:
+- it-elqana
+- 1-cronicas-9
+links:
+- title: 'Perspicacia: «Elqaná»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Elqan%C3%A1/
+  type: perspicacia
+relations: []
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- elcana-descendiente-de-core
+- elcana-el-coreita
+- elcana-hijo-de-core
+- elcana-hijo-de-jeroham
+- elcana-hijo-de-mahat
+- elcana-padre-de-amasai
+- elcana-portero
+disambiguation: 'Elcaná núm. 5 de Perspicacia: levita, antepasado de Berekías. No el hijo de Coré ni el padre de Samuel.'

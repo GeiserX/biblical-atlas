@@ -1,0 +1,36 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: radai
+name: Radái
+names:
+- name: Radái
+perspicacia: '1200003622'
+summary: Quinto hijo de Jesé en la lista de 1 Crónicas 2, uno de los hermanos que nacieron antes que David.
+reason: Perspicacia «Radai»; 1Cr 2:13-15.
+sources:
+- it-radai
+- 1-cronicas-2
+links:
+- title: 'Perspicacia: «Radai»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Radai/
+  type: perspicacia
+relations:
+- type: kin
+  person: jese
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-2
+  reason: 1Cr 2:13-15 lo cuenta entre los siete hijos de Jesé.
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: david
+  word: brother
+  inferred: false
+  sources:
+  - 1-cronicas-2
+  reason: '1Cr 2:13-15: hijo de Jesé nombrado antes que David, el séptimo.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

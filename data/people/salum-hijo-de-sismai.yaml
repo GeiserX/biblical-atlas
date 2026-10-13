@@ -1,0 +1,39 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: salum-hijo-de-sismai
+name: Salum
+names:
+- name: Salum
+perspicacia: 1200003933#3
+summary: Hijo de Sismái y padre de Jecamías, de la rama de Jerahmeel en la tribu de Judá.
+reason: Perspicacia «Salum», núm. 3; 1Cr 2:40, 41.
+sources:
+- it-salum
+- 1-cronicas-2
+links:
+- title: 'Perspicacia: «Salum»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Salum/
+  type: perspicacia
+relations:
+- type: kin
+  person: sismai
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-2
+  reason: '1Cr 2:40: Sismái fue su padre.'
+  checked_on: '2026-10-12'
+  status: verified
+disambiguation: Salum hijo de Sismái, de Judá; no Salum, el rey de Israel de un mes, ni el esposo de Huldá, ni el rey Jehoacaz
+  de Judá.
+distinct_from:
+- jehoacaz-de-juda
+- salum-hijo-de-ticva
+- salum-de-israel
+- salum-hijo-de-sadoc
+- salum-hijo-de-shaul
+- salum-jefe-de-los-porteros
+- silem
+- salum-padre-de-maaseya
+- salum-tio-de-jeremias
+checked_on: '2026-10-12'
+status: verified

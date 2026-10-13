@@ -1,0 +1,27 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: bacbacar
+name: Bacbacar
+names:
+- name: Bacbacar
+perspicacia: '1200000539'
+summary: Levita que volvió del destierro en Babilonia y vivió en Jerusalén.
+reason: Perspicacia «Baqbaqar»; 1Cr 9:15.
+sources:
+- it-baqbaqar
+- 1-cronicas-9
+links:
+- title: 'Perspicacia: «Baqbaqar»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Baqbaqar/
+  type: perspicacia
+relations:
+- type: lived_in
+  place: jerusalen
+  inferred: false
+  sources:
+  - 1-cronicas-9
+  - it-baqbaqar
+  reason: '1Cr 9:15, 34: de los jefes de los levitas que vivían en Jerusalén.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

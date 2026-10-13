@@ -1,0 +1,30 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ezbon-hijo-de-bela
+name: Ezbón
+names:
+- name: Ezbón
+perspicacia: 1200001468#2
+disambiguation: Ezbón hijo de Bela, benjamita; no Ezbón hijo de Gad, llamado también Ozní.
+distinct_from:
+- ezbon-hijo-de-gad
+summary: Benjamita, hijo de Bela; cabeza de una casa paterna y guerrero valiente.
+reason: Perspicacia «Ezbón», núm. 2; 1Cr 7:6, 7.
+sources:
+- it-ezbon
+- 1-cronicas-7
+links:
+- title: 'Perspicacia: «Ezbón»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ezb%C3%B3n/
+  type: perspicacia
+relations:
+- type: kin
+  person: bela-hijo-de-benjamin
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-7
+  reason: 1Cr 7:7 lo cuenta entre los hijos de Bela.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

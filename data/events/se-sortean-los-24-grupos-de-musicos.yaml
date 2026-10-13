@@ -1,0 +1,59 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: se-sortean-los-24-grupos-de-musicos
+title: Se sortean los 24 grupos de músicos del santuario
+date:
+  from: -1036
+  to: -1036
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 1037 a.e.c.
+narrative_order:
+  series: 1-cronicas
+  order: 25001
+places:
+- jerusalen
+people:
+- david
+- asaf-hijo-de-berekias
+- jedutun-musico
+- heman-hijo-de-joel
+- jose-hijo-de-asaf
+- guedalias-hijo-de-jedutun
+- zacur-hijo-de-asaf
+- zeri
+- netanias-hijo-de-asaf
+- buquias
+- jesarela
+- jesaya-hijo-de-jedutun
+- matanias-hijo-de-heman
+- simei-hijo-de-jedutun
+- uziel-hijo-de-heman
+- hasabias-hijo-de-jedutun
+- sebuel-hijo-de-heman
+- matitias-musico
+- jerimot-hijo-de-heman
+- hananias-hijo-de-heman
+- josbecasa
+- hanani-hijo-de-heman
+- maloti
+- eliata
+- hotir
+- guidalti
+- mahaziot
+- romamti-ezer
+present: []
+passages:
+- 1Cr 25:1-31
+summary: David y los jefes apartan a hijos de Asaf, Hemán y Jedutún para tocar en la casa de Jehová. Son 288 cantores preparados,
+  y las suertes los reparten en 24 grupos de doce.
+reason: '1Cr 25:1, 7-31. El texto no nombra el lugar; cantaban en la casa de Jehová (25:6), así que va Jerusalén, sin
+  situar a nadie. Fecha: cuando David hace rey a Salomón (estudio 3, párr. 4: 1037).'
+sources:
+- 1-cronicas-25
+- si-3
+- it-heman
+- it-asaf
+checked_on: '2026-10-12'
+status: verified

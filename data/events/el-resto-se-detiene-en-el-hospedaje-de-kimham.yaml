@@ -1,0 +1,50 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: el-resto-se-detiene-en-el-hospedaje-de-kimham
+title: El resto acampa junto a Belén, en el hospedaje de Kimham
+date:
+  from: -606
+  to: -606
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 607 a.e.c.
+narrative_order:
+  series: jeremias
+  order: 941016
+places:
+- lugar-de-hospedaje-de-kimham
+- gabaon
+- belen
+people:
+- johanan-hijo-de-carea
+present:
+- johanan-hijo-de-carea
+passages:
+- Jer 41:16-18
+summary: 'Johanán y los jefes salen de Gabaón con los rescatados, entre ellos mujeres, niños y funcionarios de la corte, y
+  paran junto a Belén con idea de seguir a Egipto: temen a los caldeos por la muerte de Guedalías.'
+reason: 'Jer 41:16-18; Perspicacia «Belén» y «Kimham». Estudio 3, párr. 6: tras los asesinatos del mes séptimo de 607, los
+  que quedaban huyeron a Egipto por miedo. Jaazanías, que Perspicacia pone entre esos jefes, no se nombra aquí. Orden por
+  fecha.'
+sources:
+- jeremias-41
+- si-3
+- it-belen
+- it-kimham
+- it-johanan
+- it-jaazanias
+links:
+- title: Jeremías 41 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/41/
+  type: bible
+- title: 'Perspicacia: «Kimham»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Kimham/
+  type: perspicacia
+history:
+- date: '2026-10-13'
+  change: 'El orden del relato pasa de 41016 a 941016: la serie sigue las fechas de los sucesos, porque el libro va por temas
+    y no en el orden en que pasaron.'
+  source: it-jeremias-libro
+checked_on: '2026-10-13'
+status: verified

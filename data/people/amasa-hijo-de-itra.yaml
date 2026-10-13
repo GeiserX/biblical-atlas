@@ -15,6 +15,7 @@ sources:
 - 2-samuel-19
 - 2-samuel-20
 - 1-reyes-2
+- 1-cronicas-2
 links:
 - title: 'Perspicacia: «Amasá»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Amas%C3%A1/
@@ -34,8 +35,9 @@ relations:
   - 2-samuel-17
   - it-itra
   - 1-reyes-2
+  - 1-cronicas-2
   reason: 2Sa 17:25 lo hace hijo de Itrá el israelita.
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-12'
   status: verified
 - type: kin
   person: abigail-hija-de-nahas
@@ -44,8 +46,9 @@ relations:
   sources:
   - 2-samuel-17
   - it-abigail
+  - 1-cronicas-2
   reason: '2Sa 17:25: su padre tuvo relaciones con Abigaíl hija de Nahás; Perspicacia «Abigail», núm. 2, la da por su madre.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: kin
   person: joab-hijo-de-zeruya
@@ -67,8 +70,9 @@ relations:
   - it-abigail
   - it-amasa
   - 2-samuel-19
+  - 1-cronicas-2
   reason: 2Sa 17:25 da a Abigaíl por su madre y 1Cr 2:16, 17 la hace hermana de David; Perspicacia duda si era media hermana.
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: died_in
   place: gabaon
@@ -101,5 +105,5 @@ relations:
   reason: '2Sa 19:13: David le promete el mando del ejército en lugar de Joab; 20:4, 5: le manda convocar a Judá.'
   checked_on: '2026-09-30'
   status: verified
-checked_on: '2026-09-30'
+checked_on: '2026-10-12'
 status: verified

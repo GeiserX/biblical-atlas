@@ -1,0 +1,46 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: elihu-hermano-de-david
+name: Elihú
+names:
+- name: Elihú
+perspicacia: 1200001306#3
+disambiguation: Elihú, hermano de David y príncipe de Judá; no el buzita que habló a Job ni el antepasado de Samuel.
+distinct_from:
+- elihu-hijo-de-tohu
+- elihu-hijo-de-barakel
+- elihu-de-manases
+- elihu-portero
+summary: Uno de los hermanos de David, príncipe de la tribu de Judá durante su reinado. Perspicacia ve posible que sea Eliab,
+  el hermano mayor.
+reason: Perspicacia «Elihú», núm. 3; 1Cr 27:18.
+sources:
+- it-elihu
+- it-eliab
+- 1-cronicas-27
+links:
+- title: 'Perspicacia: «Elihú»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Elih%C3%BA/
+  type: perspicacia
+- title: 'Perspicacia: «Eliab»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Eliab/
+  type: perspicacia
+relations:
+- type: kin
+  person: david
+  word: brother
+  inferred: false
+  sources:
+  - 1-cronicas-27
+  reason: '1Cr 27:18: Elihú, uno de los hermanos de David.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: holds_office
+  office: leader
+  inferred: false
+  sources:
+  - 1-cronicas-27
+  reason: '1Cr 27:18, 22: era el líder de Judá, uno de los príncipes de las tribus de Israel.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

@@ -1,0 +1,18 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ibniya
+name: Ibniya
+names:
+- name: Ibniya
+perspicacia: '1200002126'
+summary: Benjamita, antepasado de Mesulam, uno de los cabezas de familia de la Jerusalén posterior al destierro.
+reason: Perspicacia «Ibniya»; 1Cr 9:8.
+sources:
+- it-ibniya
+- 1-cronicas-9
+links:
+- title: 'Perspicacia: «Ibniya»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ibniya/
+  type: perspicacia
+relations: []
+checked_on: '2026-10-12'
+status: verified

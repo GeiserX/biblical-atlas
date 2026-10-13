@@ -1,0 +1,41 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: isba
+name: Isbá
+names:
+- name: Isbá
+perspicacia: '1200002208'
+summary: 'Judaíta, padre de Estemoa: Perspicacia cree más probable que se trate de una población habitada por descendientes
+  suyos.'
+reason: Perspicacia «Isbah»; 1Cr 4:17.
+sources:
+- it-isbah
+- it-mered
+- it-estemoa
+- 1-cronicas-4
+links:
+- title: 'Perspicacia: «Isbah»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Isbah/
+  type: perspicacia
+relations:
+- type: kin
+  person: bitias
+  word: mother
+  inferred: true
+  sources:
+  - 1-cronicas-4
+  - it-isbah
+  reason: '1Cr 4:17, 18: «ella» es la madre de Míriam, Samái e Isbá; la nota dice que quizá es Bitías.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: mered
+  word: father
+  inferred: true
+  sources:
+  - 1-cronicas-4
+  - it-mered
+  reason: '1Cr 4:17, 18: hijo de Bitías, esposa de Méred; Perspicacia «Méred» dice que él tuvo varios hijos con ella.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

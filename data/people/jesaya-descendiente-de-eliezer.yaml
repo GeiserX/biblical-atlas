@@ -1,0 +1,33 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jesaya-descendiente-de-eliezer
+name: Jesayá
+names:
+- name: Jesayá
+perspicacia: 1200002438#1
+disambiguation: El descendiente de Moisés por Eliezer (1Cr 26:25); no Jesayá hijo de Jedutún, el músico (Perspicacia «Jesayá»,
+  núm. 1 y 2).
+summary: Levita descendiente de Moisés por Eliezer y Rehabías, y antepasado de Selomot, el tesorero de David.
+reason: Perspicacia «Jesayá», núm. 1; 1Cr 26:25.
+sources:
+- it-jesaya
+- 1-cronicas-26
+links:
+- title: 'Perspicacia: «Jesayá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jesay%C3%A1/
+  type: perspicacia
+relations:
+- type: kin
+  person: rehabias
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-26
+  - it-jesaya
+  reason: 1Cr 26:25 lo da como hijo de Rehabías; Perspicacia «Jesayá», núm. 1, lo llama descendiente de Moisés por Eliezer.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- jesaya-hijo-de-hananias
+- jesaya-hijo-de-jedutun

@@ -11,6 +11,7 @@ reason: Perspicacia «Reuel», núm. 1; Gé 36:4, 10, 13, 17.
 sources:
 - it-reuel
 - genesis-36
+- 1-cronicas-1
 links:
 - title: 'Perspicacia: «Reuel»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Reuel/
@@ -26,8 +27,9 @@ relations:
   sources:
   - it-reuel
   - genesis-36
+  - 1-cronicas-1
   reason: 'Gé 36:4, 10: hijo de Esaú.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: kin
   person: basemat-hija-de-ismael
@@ -47,8 +49,9 @@ relations:
   reason: 'Gé 36:5, 6: Esaú tuvo a sus hijos en Canaán antes de irse a Seír.'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified
 distinct_from:
 - jetro
 - deuel
+- reuel-hijo-de-ibniya

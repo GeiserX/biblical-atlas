@@ -20,6 +20,7 @@ sources:
 - genesis-10
 - genesis-11
 - lucas-3
+- 1-cronicas-1
 links:
 - title: 'Perspicacia: «Péleg»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/P%C3%A9leg/
@@ -36,8 +37,9 @@ relations:
   - genesis-10
   - genesis-11
   - lucas-3
+  - 1-cronicas-1
   reason: 'Gé 10:25: Péleg fue el primero de los dos hijos de Éber; Gé 11:16, a los 34 años.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: kin
   person: joctan
@@ -45,8 +47,9 @@ relations:
   inferred: false
   sources:
   - genesis-10
+  - 1-cronicas-1
   reason: 'Gé 10:25: su hermano se llamaba Joctán.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

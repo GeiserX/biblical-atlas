@@ -21,6 +21,12 @@ sources:
 - 2-samuel-23
 - 1-reyes-2
 - isaias-10
+- jeremias-11
+- jeremias-29
+- jeremias-32
+- 1-cronicas-6
+- 1-cronicas-11
+- 1-cronicas-12
 links:
 - title: 'Perspicacia: «Anatot»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Anatot/
@@ -28,5 +34,5 @@ links:
 - title: Jeremías 1 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/1/
   type: bible
-checked_on: '2026-09-30'
+checked_on: '2026-10-12'
 status: verified

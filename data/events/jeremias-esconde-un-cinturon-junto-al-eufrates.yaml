@@ -1,0 +1,45 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jeremias-esconde-un-cinturon-junto-al-eufrates
+title: Jeremías esconde un cinturón de lino junto al Éufrates, como señal
+date:
+  from: -646
+  to: -606
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 647 y 607 a.e.c. (tiempo narrativo: durante la obra de Jeremías en Judá, antes de caer Jerusalén)'
+places:
+- rio-eufrates
+- jerusalen
+people:
+- jeremias-profeta
+present:
+- jeremias-profeta
+passages:
+- Jer 13:1-11
+summary: 'Jeremías se ciñe un cinturón de lino, lo oculta en la grieta de una roca a orillas del Éufrates y, pasado mucho
+  tiempo, regresa a sacarlo: está podrido. Así hundirá Jehová la soberbia de Judá y Jerusalén.'
+reason: 'Jer 13:4-7 lo sitúa en el Éufrates. Perspicacia «Jeremías», núm. 6, lo cuenta entre sus representaciones proféticas;
+  «Dios nos habla mediante Jeremías», cap. 4, párr. 17 y 18, habla de dos viajes. Sin fecha: entre 647 y 607 (estudio 3).'
+sources:
+- jeremias-13
+- it-jeremias
+- it-eufrates
+- jr-4
+- mwb17-03-israel-olvido-a-jehova
+- si-3
+links:
+- title: Jeremías 13 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/13/
+  type: bible
+- title: 'Perspicacia: «Jeremías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jerem%C3%ADas/
+  type: perspicacia
+history:
+- date: '2026-10-13'
+  change: 'Sale de la serie jeremias (orden 13001): el capítulo no nombra rey ni da año, y el libro va por temas, así que
+    nada lo sitúa antes o después de los demás.'
+  source: it-jeremias-libro
+checked_on: '2026-10-13'
+status: verified

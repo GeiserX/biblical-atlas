@@ -1,0 +1,19 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jeriot
+name: Jeriot
+names:
+- name: Jeriot
+perspicacia: '1200002430'
+summary: Mujer con la que Caleb hijo de Hezrón tuvo hijos. Perspicacia cree que era concubina o sierva suya y que dio a luz
+  a parte de los hijos contados como de Azubá.
+reason: Perspicacia «Jeriot»; 1Cr 2:18.
+sources:
+- it-jeriot
+- 1-cronicas-2
+links:
+- title: 'Perspicacia: «Jeriot»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jeriot/
+  type: perspicacia
+relations: []
+checked_on: '2026-10-12'
+status: verified

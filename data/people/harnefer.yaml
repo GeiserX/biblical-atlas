@@ -1,0 +1,27 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: harnefer
+name: Harnéfer
+names:
+- name: Harnéfer
+perspicacia: '1200001886'
+summary: Aserita, hijo de Zofá.
+reason: Perspicacia «Harnéfer»; 1Cr 7:30, 36.
+sources:
+- it-harnefer
+- 1-cronicas-7
+links:
+- title: 'Perspicacia: «Harnéfer»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Harn%C3%A9fer/
+  type: perspicacia
+relations:
+- type: kin
+  person: zofa
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-7
+  reason: 1Cr 7:36 lo cuenta entre los hijos de Zofá.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

@@ -1,0 +1,35 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ela-hijo-de-caleb
+name: Elá
+names:
+- name: Elá
+perspicacia: 1200001273#2
+disambiguation: Elá hijo de Caleb (núm. 2 de Perspicacia «Elah»); no el rey de Israel hijo de Baasá ni el jeque de Edom.
+summary: Judaíta, padre de Quenaz y nacido de Caleb el espía.
+reason: Perspicacia «Elah»; 1Cr 4:15.
+sources:
+- it-elah
+- 1-cronicas-4
+links:
+- title: 'Perspicacia: «Elah»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Elah/
+  type: perspicacia
+relations:
+- type: kin
+  person: caleb-hijo-de-jefune
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-4
+  - it-elah
+  reason: '1Cr 4:15: uno de los hijos de Caleb hijo de Jefuné.'
+  checked_on: '2026-10-12'
+  status: verified
+distinct_from:
+- ela-padre-de-hosea
+- ela-de-israel
+- ela-jeque-de-edom
+- ela-padre-de-simei
+- ela-hijo-de-uzi
+checked_on: '2026-10-12'
+status: verified

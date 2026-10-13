@@ -1,0 +1,36 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ahban
+name: Ahbán
+names:
+- name: Ahbán
+perspicacia: '1200000146'
+summary: Judaíta de la rama de Jerahmeel; sus padres fueron Abisur y su esposa Abihail.
+reason: Perspicacia «Ahbán»; 1Cr 2:29.
+sources:
+- it-ahban
+- 1-cronicas-2
+links:
+- title: 'Perspicacia: «Ahbán»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ahb%C3%A1n/
+  type: perspicacia
+relations:
+- type: kin
+  person: abisur
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-2
+  reason: '1Cr 2:29: hijo de Abisur y Abihail.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: abihail-esposa-de-abisur
+  word: mother
+  inferred: false
+  sources:
+  - 1-cronicas-2
+  reason: '1Cr 2:29: hijo de Abisur y Abihail.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

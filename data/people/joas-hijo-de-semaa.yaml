@@ -1,0 +1,46 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: joas-hijo-de-semaa
+name: Joás
+names:
+- name: Joás
+perspicacia: 1200002474#4
+disambiguation: Joás hijo de Semaá, benjaminita con David en Ziclag (1Cr 12:3); no el padre de Gedeón, el hijo de Acab ni
+  los reyes Jehoás.
+distinct_from:
+- jehoas-de-israel
+- jehoas-de-juda
+- joas-de-benjamin
+- joas-encargado-del-aceite
+- joas-hijo-del-rey
+- joas-padre-de-gedeon
+- joas-descendiente-de-sela
+summary: Benjaminita, hijo de Semaá el guibeatita, que se unió a David en Ziclag cuando huía de Saúl.
+reason: Perspicacia «Joás», núm. 4; 1Cr 12:1-3.
+sources:
+- it-joas
+- 1-cronicas-12
+links:
+- title: 'Perspicacia: «Joás»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jo%C3%A1s/
+  type: perspicacia
+relations:
+- type: kin
+  person: semaa
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-12
+  reason: '1Cr 12:3: Ahiézer y Joás eran hijos de Semaá el guibeatita.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: tie
+  person: david
+  word: master
+  inferred: false
+  sources:
+  - 1-cronicas-12
+  reason: '1Cr 12:3: se unió a David y lo apoyó en la guerra.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

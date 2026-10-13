@@ -98,7 +98,8 @@ history:
 - date: '2026-09-29'
   change: Se añade Abí-Ézer, la grafía de la TNM en Jos 17:2, como nombre principal.
   source: josue-17
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified
 distinct_from:
 - abi-ezer-el-anatotita
+- abi-ezer-hijo-de-hamoleket

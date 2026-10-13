@@ -1,0 +1,39 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hanan-hijo-de-igdalias
+name: Hanán
+names:
+- name: Hanán
+perspicacia: 1200001850#4
+summary: Hijo de Igdalías, al que el texto llama hombre del Dios verdadero. Jeremías probó a los recabitas en el comedor del
+  templo que llevaba el nombre de sus hijos.
+reason: Perspicacia «Hanán», núm. 4; Jer 35:4.
+sources:
+- it-hanan
+- jeremias-35
+links:
+- title: 'Perspicacia: «Hanán»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Han%C3%A1n/
+  type: perspicacia
+- title: Jeremías 35 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/35/
+  type: bible
+relations:
+- type: kin
+  person: igdalias
+  word: father
+  inferred: false
+  sources:
+  - jeremias-35
+  - it-hanan
+  - it-igdalias
+  reason: Jer 35:4 lo llama Hanán hijo de Igdalías.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- hanan-hijo-de-azel
+- hanan-hijo-de-maaca
+- hanan-hijo-de-sasac
+disambiguation: El hombre del Dios verdadero cuyos hijos tenían un comedor en el templo (Jer 35:4); no los Hanán benjamitas
+  de 1 Crónicas, hijos de Azel, de Maacá o de Sasac.

@@ -1,0 +1,33 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jehoada
+name: Jehoadá
+names:
+- name: Jehoadá
+- name: Jará
+  note: Así lo llama 1Cr 9:42; Perspicacia «Jará» lo identifica con Jehoadá.
+perspicacia: '1200002369'
+summary: Benjamita, descendiente de Saúl por Jonatán y Merib-Baal. 1Cr 9:42 lo llama Jará.
+reason: Perspicacia «Jehoadá»; 1Cr 8:33-36.
+sources:
+- it-jehoada
+- 1-cronicas-8
+- it-jara
+- 1-cronicas-9
+links:
+- title: 'Perspicacia: «Jehoadá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jehoad%C3%A1/
+  type: perspicacia
+relations:
+- type: kin
+  person: acaz-hijo-de-mica
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  - 1-cronicas-9
+  - it-jara
+  reason: '1Cr 8:36: Acaz fue padre de Jehoadá.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

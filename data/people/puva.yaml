@@ -5,6 +5,8 @@ names:
 - name: Puvá
 - name: Puá
   note: Nombre que le da 1 Crónicas 7, según Perspicacia.
+- name: Pua
+  note: Grafía de la TNM en 1Cr 7:1; Perspicacia «Puá», núm. 1, remite a Puvá.
 perspicacia: '1200003595'
 summary: Hijo de Isacar. Sus descendientes se llamaron punitas.
 reason: Perspicacia «Puvá»; Gé 46:13.
@@ -12,6 +14,7 @@ sources:
 - it-puva
 - genesis-46
 - numeros-26
+- 1-cronicas-7
 links:
 - title: 'Perspicacia: «Puvá»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Puv%C3%A1/
@@ -28,8 +31,9 @@ relations:
   - genesis-46
   - it-puva
   - numeros-26
+  - 1-cronicas-7
   reason: 'Gé 46:13: aparece entre los hijos de Isacar.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: lived_in
   place: egipto
@@ -41,7 +45,7 @@ relations:
   status: verified
 disambiguation: Puvá hijo de Isacar, al que la TNM llama Pua en 1 Crónicas 7; no Pua, la partera hebrea de Egipto, ni el padre
   del juez Tolá.
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified
 distinct_from:
 - pua-partera

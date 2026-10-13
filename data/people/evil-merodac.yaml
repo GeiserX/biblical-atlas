@@ -22,6 +22,7 @@ reason: 'Perspicacia «Evil-merodac»; 2Re 25:27-30 (paralelo: Jer 52:31-34).'
 sources:
 - it-evil-merodac
 - 2-reyes-25
+- jeremias-52
 links:
 - title: 'Perspicacia: «Evil-merodac»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Evil-merodac/
@@ -58,8 +59,9 @@ relations:
   sources:
   - 2-reyes-25
   - it-evil-merodac
+  - jeremias-52
   reason: '2Re 25:27, 28: rey de Babilonia, donde tenía presos a Joaquín y a otros reyes.'
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-09-30'
+checked_on: '2026-10-12'
 status: verified

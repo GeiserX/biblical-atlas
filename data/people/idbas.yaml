@@ -1,0 +1,28 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: idbas
+name: Idbás
+names:
+- name: Idbás
+perspicacia: '1200002134'
+summary: Hombre de Judá que debió de ser hijo del fundador de Etam.
+reason: Perspicacia «Idbás»; 1Cr 4:3.
+sources:
+- it-idbas
+- 1-cronicas-4
+links:
+- title: 'Perspicacia: «Idbás»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Idb%C3%A1s/
+  type: perspicacia
+relations:
+- type: kin
+  person: hur-hijo-de-caleb
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-4
+  - it-hur
+  reason: '1Cr 4:3, 4: los hijos del padre de Etam van entre «los hijos de Hur»; Perspicacia «Hur», núm. 1, cita 1Cr 4:1-4.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

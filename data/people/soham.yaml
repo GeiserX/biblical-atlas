@@ -1,0 +1,28 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: soham
+name: Soham
+names:
+- name: Soham
+perspicacia: '1200004080'
+summary: Levita merarita, hijo de Jaazías, nombrado en la reorganización del servicio de los levitas que hizo David.
+reason: Perspicacia «Soham»; 1Cr 24:27.
+sources:
+- it-soham
+- 1-cronicas-24
+links:
+- title: 'Perspicacia: «Soham»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Soham/
+  type: perspicacia
+relations:
+- type: kin
+  person: jaazias
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-24
+  - it-soham
+  reason: 1Cr 24:27 lo cuenta entre los hijos de Jaazías; Perspicacia «Soham» lo llama hijo de Jaazías.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

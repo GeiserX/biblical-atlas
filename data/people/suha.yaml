@@ -1,0 +1,20 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: suha
+name: Suha
+names:
+- name: Suha
+- name: Suhá
+  note: Grafía de Perspicacia.
+perspicacia: '1200004091'
+summary: Judaíta, hermano de Kelub.
+reason: Perspicacia «Suhá»; 1Cr 4:11.
+sources:
+- it-suha
+- 1-cronicas-4
+links:
+- title: 'Perspicacia: «Suhá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Suh%C3%A1/
+  type: perspicacia
+relations: []
+checked_on: '2026-10-12'
+status: verified

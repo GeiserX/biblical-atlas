@@ -15,6 +15,7 @@ sources:
 - genesis-35
 - genesis-37
 - genesis-46
+- 1-cronicas-7
 links:
 - title: 'Perspicacia: «Bilhá»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Bilh%C3%A1/
@@ -49,5 +50,5 @@ relations:
   reason: 'Gé 35:25: Bilhá era la sierva de Raquel.'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

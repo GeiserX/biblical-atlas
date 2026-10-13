@@ -1,0 +1,51 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jacan
+name: Jacán
+names:
+- name: Jacán
+perspicacia: '1200002275'
+summary: Gadita, quinto de los siete hijos de Abihail que nombra el texto.
+reason: Perspicacia «Jacán»; 1Cr 5:13, 14.
+sources:
+- it-jacan
+- 1-cronicas-5
+links:
+- title: 'Perspicacia: «Jacán»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jac%C3%A1n/
+  type: perspicacia
+relations:
+- type: kin
+  person: abihail-hijo-de-huri
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-5
+  reason: '1Cr 5:13, 14: los siete eran hijos de Abihail.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: lived_in
+  place: galaad
+  inferred: false
+  sources:
+  - 1-cronicas-5
+  reason: 1Cr 5:16 los sitúa en Galaad, en Basán con sus pueblos y en los pastos de Sarón.
+  checked_on: '2026-10-12'
+  status: verified
+- type: lived_in
+  place: basan
+  inferred: false
+  sources:
+  - 1-cronicas-5
+  reason: 1Cr 5:16 los sitúa en Galaad, en Basán con sus pueblos y en los pastos de Sarón.
+  checked_on: '2026-10-12'
+  status: verified
+- type: lived_in
+  place: saron-de-gad
+  inferred: false
+  sources:
+  - 1-cronicas-5
+  reason: 1Cr 5:16 los sitúa en Galaad, en Basán con sus pueblos y en los pastos de Sarón.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

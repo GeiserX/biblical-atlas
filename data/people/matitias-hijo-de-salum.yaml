@@ -1,0 +1,30 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: matitias-hijo-de-salum
+name: Matitías
+names:
+- name: Matitías
+perspicacia: 1200002941#2
+summary: Levita coreíta, primogénito de Salum. Tras el destierro tenía a su cargo lo que se cocinaba en sartenes para el santuario.
+reason: Perspicacia «Matitías», núm. 2; 1Cr 9:31.
+sources:
+- it-matitias
+- 1-cronicas-9
+links:
+- title: 'Perspicacia: «Matitías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Matit%C3%ADas/
+  type: perspicacia
+relations:
+- type: kin
+  person: salum-jefe-de-los-porteros
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-9
+  reason: '1Cr 9:31: primogénito de Salum el coreíta.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- matitias-musico
+disambiguation: 'Matitías núm. 2 de Perspicacia: levita coreíta, primogénito de Salum. No los demás Matitías que numera Perspicacia.'

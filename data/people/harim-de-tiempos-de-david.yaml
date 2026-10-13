@@ -1,0 +1,37 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: harim-de-tiempos-de-david
+name: Harim
+names:
+- name: Harim
+perspicacia: 1200001880#1
+summary: Sacerdote descendiente de Aarón al que tocó por sorteo encabezar el tercero de los 24 turnos que organizó David.
+reason: Perspicacia «Harim», núm. 1; 1Cr 24:8.
+sources:
+- it-harim
+- 1-cronicas-24
+links:
+- title: 'Perspicacia: «Harim»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Harim/
+  type: perspicacia
+relations:
+- type: kin
+  person: aaron
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-24
+  - it-harim
+  reason: 1Cr 24:1 abre la lista de los descendientes de Aarón repartidos en turnos, y 24:8 da a esta casa el tercero.
+  checked_on: '2026-10-12'
+  status: verified
+- type: holds_office
+  office: priest
+  inferred: false
+  sources:
+  - 1-cronicas-24
+  - it-harim
+  reason: '1Cr 24:8: encabeza una de las casas sacerdotales de 24:4-6; Perspicacia «Harim» lo trata como sacerdote.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

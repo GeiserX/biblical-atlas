@@ -11,6 +11,7 @@ reason: Perspicacia «Elam», núm. 1, párr. 1 y 2; Gé 10:22, 31.
 sources:
 - it-elam
 - genesis-10
+- 1-cronicas-1
 links:
 - title: 'Perspicacia: «Elam»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Elam/
@@ -25,8 +26,12 @@ relations:
   inferred: false
   sources:
   - genesis-10
+  - 1-cronicas-1
   reason: Gé 10:22 lo nombra el primero de los hijos de Sem.
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified
+distinct_from:
+- elam-hijo-de-sasac
+- elam-hijo-de-meselemias

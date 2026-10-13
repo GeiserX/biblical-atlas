@@ -26,6 +26,10 @@ sources:
 - 2-samuel-14
 - 2-samuel-23
 - 2-cronicas-20
+- jeremias-6
+- 1-cronicas-2
+- 1-cronicas-4
+- 1-cronicas-11
 links:
 - title: 'Perspicacia: «Teqoa»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Teqoa/
@@ -40,5 +44,5 @@ history:
 - date: '2026-09-29'
   change: El resumen añade a la mujer de Tecoa que Joab mandó ante David (2Sa 14:2-20).
   source: 2-samuel-14
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

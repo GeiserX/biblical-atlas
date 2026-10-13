@@ -18,6 +18,8 @@ sources:
 - 2-reyes-25
 - 2-reyes-23
 - it-jehoacaz
+- jeremias-39
+- jeremias-52
 links:
 - title: 'Perspicacia: «Riblá»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ribl%C3%A1/
@@ -25,5 +27,5 @@ links:
 - title: 2 Reyes 25 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-reyes/25/
   type: bible
-checked_on: '2026-09-30'
+checked_on: '2026-10-12'
 status: verified

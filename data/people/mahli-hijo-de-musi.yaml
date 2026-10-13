@@ -1,0 +1,66 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: mahli-hijo-de-musi
+name: Mahlí
+names:
+- name: Mahlí
+perspicacia: 1200002850#2
+disambiguation: El hijo de Musí (1Cr 6:47); no su tío Mahlí, el hijo de Merarí.
+distinct_from:
+- mahli-hijo-de-merari
+summary: Levita, hijo de Musí y por eso sobrino de Mahlí, el hijo de Merarí.
+reason: Perspicacia «Mahlí», núm. 2; 1Cr 6:47.
+sources:
+- it-mahli
+- 1-cronicas-6
+- 1-cronicas-23
+- 1-cronicas-24
+links:
+- title: 'Perspicacia: «Mahlí»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Mahl%C3%AD/
+  type: perspicacia
+relations:
+- type: kin
+  person: musi
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-6
+  - 1-cronicas-23
+  - 1-cronicas-24
+  - it-mahli
+  reason: '1Cr 6:47: Mahlí, «hijo de Musí».'
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: mahli-hijo-de-merari
+  word: uncle
+  inferred: true
+  sources:
+  - 1-cronicas-6
+  - it-mahli
+  - 1-cronicas-23
+  reason: 'Perspicacia «Mahlí», núm. 2: como hijo de Musí, era sobrino de Mahlí hijo de Merarí (1Cr 6:19, 47).'
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: eder-hijo-de-musi
+  word: brother
+  inferred: false
+  sources:
+  - 1-cronicas-23
+  - 1-cronicas-24
+  reason: 1Cr 23:23 y 24:30 dan a Mahlí, Éder y Jeremot como los tres hijos de Musí.
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: jeremot-hijo-de-musi
+  word: brother
+  inferred: false
+  sources:
+  - 1-cronicas-23
+  - 1-cronicas-24
+  reason: 1Cr 23:23 y 24:30 dan a Mahlí, Éder y Jeremot, o Jerimot, como los tres hijos de Musí.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

@@ -21,6 +21,7 @@ sources:
 - si-3
 - genesis-5
 - lucas-3
+- 1-cronicas-1
 links:
 - title: 'Perspicacia: «Lamec»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Lamec/
@@ -37,11 +38,12 @@ relations:
   - it-lamec
   - genesis-5
   - lucas-3
+  - 1-cronicas-1
   reason: 'Perspicacia «Lamec», párr. 5: hijo de Matusalén (Gé 5:25).'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 perspicacia: 1200002673#2
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified
 distinct_from:
 - lamec-hijo-de-metusael

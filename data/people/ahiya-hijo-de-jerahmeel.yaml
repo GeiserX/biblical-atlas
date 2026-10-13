@@ -1,0 +1,37 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ahiya-hijo-de-jerahmeel
+name: Ahíya
+names:
+- name: Ahíya
+perspicacia: 1200000153#1
+summary: Hijo de Jerahmeel, el quinto de la lista de 1 Crónicas 2:25, de la tribu de Judá.
+reason: Perspicacia «Ahíya», núm. 1; 1Cr 2:25.
+sources:
+- it-ahiya
+- 1-cronicas-2
+links:
+- title: 'Perspicacia: «Ahíya»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ah%C3%ADya/
+  type: perspicacia
+relations:
+- type: kin
+  person: jerahmeel-hijo-de-hezron
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-2
+  reason: 1Cr 2:25 lo cuenta entre los hijos de Jerahmeel.
+  checked_on: '2026-10-12'
+  status: verified
+disambiguation: Ahíya hijo de Jerahmeel, de Judá; no el profeta de Siló, el sacerdote hijo de Ahitub, el secretario de Salomón
+  ni el padre de Baasá.
+distinct_from:
+- ahiya-hijo-de-sisa
+- ahiya-hijo-de-ahitub
+- ahiya-profeta
+- ahiya-padre-de-baasa
+- ahiya-de-benjamin
+- ahiya-el-pelonita
+- ahiya-tesorero
+checked_on: '2026-10-12'
+status: verified

@@ -1,0 +1,44 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jeremias-anuncia-la-ruina-de-damasco
+title: Jeremías anuncia la ruina de Damasco
+date:
+  from: -646
+  to: -579
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 647 y 580 a.e.c. (tiempo narrativo: durante la obra de Jeremías)'
+places:
+- damasco
+- hamat
+- arpad
+people:
+- jeremias-profeta
+present: []
+passages:
+- Jer 49:23-27
+summary: Hamat y Arpad se acobardan por una mala noticia, y Damasco, la ciudad alegre, huye llena de angustia. Sus jóvenes
+  y sus soldados caerán, y el fuego consumirá su muralla y sus palacios.
+reason: 'Jer 49:23 no da fecha ni lugar: nadie queda situado. Límites: comisión de Jeremías en 647 (estudio 3) y cierre del
+  libro en 580 (Tabla). Perspicacia «Damasco» une la noticia al avance de Nabucodonosor.'
+sources:
+- jeremias-49
+- si-3
+- tnm-tabla
+- it-damasco
+- it-hamat
+- it-arpad
+- it-ben-hadad
+- si-jeremias
+links:
+- title: Jeremías 49 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/49/
+  type: bible
+history:
+- date: '2026-10-13'
+  change: 'Sale de la serie jeremias (orden 49023): el capítulo no nombra rey ni da año, y el libro va por temas, así que
+    nada lo sitúa antes o después de los demás.'
+  source: it-jeremias-libro
+checked_on: '2026-10-13'
+status: verified

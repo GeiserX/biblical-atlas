@@ -14,5 +14,9 @@ links:
 - title: 'Perspicacia: «Zacur»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zacur/
   type: perspicacia
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified
+distinct_from:
+- zacur-hijo-de-hamuel
+- zacur-hijo-de-jaazias
+- zacur-hijo-de-asaf

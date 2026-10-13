@@ -1,0 +1,32 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: acaz-hijo-de-mica
+name: Acaz
+names:
+- name: Acaz
+perspicacia: 1200000144#2
+disambiguation: Acaz hijo de Miqueas, descendiente de Saúl; no Acaz, el rey de Judá hijo de Jotán.
+distinct_from:
+- acaz
+summary: Benjamita, hijo de Miqueas y padre de Jehoadá; Jonatán, hijo de Saúl, era su bisabuelo.
+reason: Perspicacia «Acaz», núm. 2; 1Cr 8:33-35.
+sources:
+- it-acaz
+- 1-cronicas-8
+- 1-cronicas-9
+links:
+- title: 'Perspicacia: «Acaz»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Acaz/
+  type: perspicacia
+relations:
+- type: kin
+  person: mica-hijo-de-mefiboset
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  - 1-cronicas-9
+  reason: 1Cr 8:35 lo cuenta entre los hijos de Micá.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

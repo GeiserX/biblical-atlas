@@ -1,0 +1,45 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hasabias-hebronita
+name: Hasabías
+names:
+- name: Hasabías
+perspicacia: 1200001900#3
+disambiguation: El hebronita que administraba al oeste del Jordán (1Cr 26:30); no Hasabías hijo de Jedutún, el músico (Perspicacia
+  «Hasabías», núm. 2 y 3).
+summary: Levita hebronita. David lo puso, con 1.700 hermanos capaces, a administrar la tierra al oeste del Jordán en el servicio
+  de Jehová y del rey.
+reason: Perspicacia «Hasabías», núm. 3; 1Cr 26:30.
+sources:
+- it-hasabias
+- 1-cronicas-26
+links:
+- title: 'Perspicacia: «Hasabías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hasab%C3%ADas/
+  type: perspicacia
+relations:
+- type: kin
+  person: hebron-hijo-de-cohat
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-26
+  - it-hasabias
+  reason: '1Cr 26:30: era de los hebronitas; Perspicacia «Hasabías», núm. 3, dice que descendía de Hebrón.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: same_as
+  person: hasabias-hijo-de-quemuel
+  certainty: possible
+  inferred: true
+  sources:
+  - it-hasabias
+  - 1-cronicas-26
+  reason: 'Perspicacia «Hasabías», núm. 3: es posible que el hebronita de 1Cr 26:30 sea el hijo de Quemuel, el núm. 4.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- hasabias-hijo-de-amasias
+- hasabias-hijo-de-jedutun
+- hasabias-padre-de-azricam

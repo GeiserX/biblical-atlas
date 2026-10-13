@@ -1,0 +1,36 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ispan
+name: Ispán
+names:
+- name: Ispán
+perspicacia: '1200002220'
+summary: Benjamita, hijo o descendiente de Sasac, uno de los jefes del pueblo que vivían en Jerusalén.
+reason: Perspicacia «Ispán»; 1Cr 8:22, 25, 28.
+sources:
+- it-ispan
+- 1-cronicas-8
+links:
+- title: 'Perspicacia: «Ispán»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Isp%C3%A1n/
+  type: perspicacia
+relations:
+- type: kin
+  person: sasac
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  - it-ispan
+  reason: 1Cr 8:25 lo pone entre los hijos de Sasac; Perspicacia «Ispán» no precisa si era hijo o descendiente.
+  checked_on: '2026-10-12'
+  status: verified
+- type: lived_in
+  place: jerusalen
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  reason: '1Cr 8:28: los jefes de casas paternas de esta lista vivían en Jerusalén.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

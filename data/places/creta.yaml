@@ -25,7 +25,7 @@ sources:
 - it-filistea
 - hch-27
 - deuteronomio-2
-- it-caftor
+- jeremias-47
 links:
 - title: 'Perspicacia: «Creta, cretenses»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Creta-cretenses/
@@ -47,5 +47,9 @@ history:
 - date: '2026-09-29'
   change: La razón cita ahora Hechos 27, que añade el resumen.
   source: hch-27
-checked_on: '2026-09-29'
+- date: '2026-10-12'
+  change: La lista de fuentes repetía it-caftor; queda una vez y se añade Jer 47, que llama a los filisteos restos de la isla
+    de Caftor (Creta, según la nota).
+  source: jeremias-47
+checked_on: '2026-10-12'
 status: verified

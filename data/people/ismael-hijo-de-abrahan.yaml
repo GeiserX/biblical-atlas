@@ -24,6 +24,7 @@ sources:
 - genesis-17
 - genesis-21
 - genesis-36
+- 1-cronicas-1
 links:
 - title: 'Perspicacia: «Ismael»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ismael/
@@ -41,8 +42,9 @@ relations:
   - genesis-16
   - genesis-17
   - genesis-25
+  - 1-cronicas-1
   reason: 'Perspicacia «Ismael», párr. 2: hijo de Abrahán y Agar (Gé 16:15).'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: kin
   person: agar
@@ -65,7 +67,8 @@ relations:
   checked_on: '2026-09-29'
   status: verified
 perspicacia: 1200002215#1
-checked_on: '2026-09-30'
+checked_on: '2026-10-12'
 status: verified
 distinct_from:
 - ismael-hijo-de-netanias
+- ismael-hijo-de-azel

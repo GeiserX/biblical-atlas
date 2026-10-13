@@ -1,0 +1,25 @@
+# biblical-atlas: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: etam-de-juda
+name: Etam
+names:
+- name: Etam
+type: city
+lat: 31.68478
+lon: 35.17884
+precision: uncertain
+coord_source: openbible:aa21f26
+coord_url: https://www.openbible.info/geo/ancient/aa21f26/etam-3
+coord_note: Khirbet el-Khokh, que Perspicacia da como ubicación probable. No es el peñasco de Etam ni la Etam de Simeón.
+summary: Población de Judá, probablemente en Khirbet el-Khokh, unos 2,5 km al suroeste de Belén. La fundó, al parecer, un
+  pariente cercano de los de Belén; Rehoboam la fortificó.
+reason: 'Perspicacia «Etam», núm. 3; 1Cr 4:3. Coordenada de OpenBible (Etam 3): solo tomamos el punto.'
+sources:
+- it-etam
+- openbible-geo
+- 1-cronicas-4
+links:
+- title: 'Perspicacia: «Etam»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Etam/
+  type: perspicacia
+checked_on: '2026-10-12'
+status: verified

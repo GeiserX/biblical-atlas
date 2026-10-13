@@ -23,6 +23,7 @@ sources:
 - 2-samuel-13
 - 2-samuel-14
 - 2-samuel-15
+- 1-cronicas-2
 links:
 - title: 'Perspicacia: «Guesur»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Guesur/
@@ -34,5 +35,5 @@ history:
 - date: '2026-09-29'
   change: El nombre del rey va con la grafía de la TNM, Talmái (2Sa 13:37), y se añaden los tres años de 13:38.
   source: 2-samuel-13
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

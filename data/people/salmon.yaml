@@ -15,6 +15,7 @@ sources:
 - rut-4
 - mateo-1
 - lucas-3
+- 1-cronicas-2
 links:
 - title: 'Perspicacia: «Salmón»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Salm%C3%B3n/
@@ -28,8 +29,9 @@ relations:
   - rut-4
   - mateo-1
   - lucas-3
+  - 1-cronicas-2
   reason: Rut 4:20.
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: kin
   person: rahab
@@ -41,5 +43,7 @@ relations:
   reason: Mt 1:5 la nombra madre del hijo de Salmón; Perspicacia «Rahab» (núm. 1) dice que se casó con él.
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified
+distinct_from:
+- salma-hijo-de-hur

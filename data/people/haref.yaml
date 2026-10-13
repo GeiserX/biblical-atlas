@@ -1,0 +1,28 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: haref
+name: Haref
+names:
+- name: Haref
+perspicacia: '1200001876'
+summary: Descendiente de Judá, hijo de Hur, al que el texto llama padre de Bet-Gader.
+reason: Perspicacia «Haref» y «Bet-gader»; 1Cr 2:51.
+sources:
+- it-haref
+- 1-cronicas-2
+- it-bet-gader
+links:
+- title: 'Perspicacia: «Haref»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Haref/
+  type: perspicacia
+relations:
+- type: kin
+  person: hur-hijo-de-caleb
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-2
+  reason: '1Cr 2:50, 51: hijo de Hur, el primer hijo de Efrata.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

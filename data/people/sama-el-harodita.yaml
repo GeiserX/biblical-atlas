@@ -14,12 +14,16 @@ distinct_from:
 - sama-hijo-de-ague
 - sama-hijo-de-jese
 - sama-hijo-de-reuel
+- sama-de-aser
 summary: Harodita, uno de los treinta guerreros de David. Más tarde estuvo al frente de la división que servía el quinto mes.
 reason: Perspicacia «Samah», núm. 4, y «Harodita»; 2Sa 23:25.
 sources:
 - it-samah
 - it-harodita
 - 2-samuel-23
+- 1-cronicas-11
+- 1-cronicas-27
+- it-samhut
 links:
 - title: 'Perspicacia: «Samah»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Samah/
@@ -31,8 +35,11 @@ relations:
   inferred: false
   sources:
   - 2-samuel-23
+  - 1-cronicas-11
+  - 1-cronicas-27
+  - it-samhut
   reason: '2Sa 23:25: Samá el harodita, uno de los treinta de David.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

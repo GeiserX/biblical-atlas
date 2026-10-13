@@ -14,5 +14,7 @@ links:
 - title: 'Perspicacia: «Kenaaná»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Kenaan%C3%A1/
   type: perspicacia
-checked_on: '2026-09-30'
+checked_on: '2026-10-12'
 status: verified
+distinct_from:
+- kenaana-hijo-de-bilhan

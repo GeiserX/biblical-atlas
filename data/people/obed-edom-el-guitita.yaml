@@ -11,6 +11,8 @@ reason: 'Perspicacia «Obed-edom», núm. 1; 2Sa 6:10-12. Paralelos: 1Cr 13:13, 
 sources:
 - it-obed-edom
 - 2-samuel-6
+- 1-cronicas-13
+- 1-cronicas-15
 links:
 - title: 'Perspicacia: «Obed-edom»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Obed-edom/
@@ -18,5 +20,38 @@ links:
 not_claimed:
 - 'No damos por hecho que sea el músico o el portero Obed-Edom de la procesión del Arca en Crónicas: Perspicacia solo lo ve
   posible.'
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified
+relations:
+- type: same_as
+  person: obed-edom-musico
+  certainty: possible
+  inferred: true
+  sources:
+  - it-obed-edom
+  - 1-cronicas-15
+  reason: 'Perspicacia «Obed-edom», núm. 1 y 2: el guitita posiblemente es el músico y portero de 1Cr 15:18, 21.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: same_as
+  person: obed-edom-portero
+  certainty: possible
+  inferred: true
+  sources:
+  - it-obed-edom
+  - 1-cronicas-15
+  reason: 'Perspicacia «Obed-edom», núm. 1 y 3: el guitita posiblemente es el portero del Arca de 1Cr 15:24.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: same_as
+  person: obed-edom-hijo-de-jedutun
+  certainty: possible
+  inferred: true
+  sources:
+  - it-obed-edom
+  - 1-cronicas-16
+  reason: 'Perspicacia «Obed-edom»: el guitita posiblemente es el núm. 3, y este quizás es el hijo de Jedutún de 1Cr 16:38.'
+  checked_on: '2026-10-12'
+  status: verified
+distinct_from:
+- obed-edom-coreita

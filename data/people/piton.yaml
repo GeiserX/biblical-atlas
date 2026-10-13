@@ -1,0 +1,29 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: piton
+name: Pitón
+names:
+- name: Pitón
+perspicacia: '1200003505'
+summary: Benjamita, hijo de Miqueas y descendiente de Saúl por Jonatán y Merib-Baal.
+reason: Perspicacia «Pitón»; 1Cr 8:33-35.
+sources:
+- it-piton
+- 1-cronicas-8
+- 1-cronicas-9
+links:
+- title: 'Perspicacia: «Pitón»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Pit%C3%B3n/
+  type: perspicacia
+relations:
+- type: kin
+  person: mica-hijo-de-mefiboset
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  - 1-cronicas-9
+  reason: 1Cr 8:35 lo cuenta entre los hijos de Micá.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

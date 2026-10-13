@@ -11,6 +11,7 @@ reason: Perspicacia «Bela», núm. 2; Gé 36:31, 32.
 sources:
 - it-bela
 - genesis-36
+- 1-cronicas-1
 links:
 - title: 'Perspicacia: «Bela»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Bela/
@@ -26,8 +27,9 @@ relations:
   sources:
   - it-bela
   - genesis-36
+  - 1-cronicas-1
   reason: 'Gé 36:32: Bela hijo de Beor.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: lived_in
   place: dinhaba
@@ -35,8 +37,9 @@ relations:
   sources:
   - it-dinhaba
   - genesis-36
+  - 1-cronicas-1
   reason: 'Gé 36:32: su ciudad se llamaba Dinhabá.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: holds_office
   place: edom
@@ -44,10 +47,12 @@ relations:
   inferred: false
   sources:
   - genesis-36
+  - 1-cronicas-1
   reason: Gé 36:31, 32 lo pone el primero de los reyes que reinaron en Edom.
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-02'
+checked_on: '2026-10-12'
 status: verified
 distinct_from:
 - bela-hijo-de-benjamin
+- bela-hijo-de-azaz

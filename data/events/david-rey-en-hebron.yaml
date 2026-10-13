@@ -19,6 +19,7 @@ passages:
 - 2Sa 2:1-4
 - 2Sa 5:5
 - 2Sa 2:11
+- 1Cr 3:4
 summary: Muerto Saúl, los hombres de Judá ungen a David en Hebrón. Tiene treinta años y reina allí siete años y medio; Is-Bóset
   reina dos años sobre las demás tribus (2Sa 2:10).
 reason: El estudio 3 fecha la unción en 1077; Perspicacia «David», párr. 20, y «Hebrón», párr. 7.
@@ -27,6 +28,7 @@ sources:
 - it-david
 - it-hebron
 - 2-samuel-2
+- 1-cronicas-3
 links:
 - title: 'Perspicacia: «David»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/David/
@@ -46,5 +48,5 @@ history:
   change: Is-bóset pasa a Is-Bóset, la grafía de la TNM en 2Sa 2:8-12, y su reinado es de dos años (2Sa 2:10), no todo el
     tiempo de David en Hebrón.
   source: 2-samuel-2
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

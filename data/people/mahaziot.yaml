@@ -1,0 +1,28 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: mahaziot
+name: Mahaziot
+names:
+- name: Mahaziot
+perspicacia: '1200002847'
+summary: El último de los 14 hijos de Hemán en la lista. La suerte 23 le dio la dirección de un grupo de músicos.
+reason: Perspicacia «Mahaziot»; 1Cr 25:4, 30.
+sources:
+- it-mahaziot
+- 1-cronicas-25
+links:
+- title: 'Perspicacia: «Mahaziot»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Mahaziot/
+  type: perspicacia
+relations:
+- type: kin
+  person: heman-hijo-de-joel
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-25
+  - it-mahaziot
+  reason: 1Cr 25:4, 30 lo cuenta entre los hijos de Hemán.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

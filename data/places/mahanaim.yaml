@@ -54,6 +54,7 @@ sources:
 - 2-samuel-18
 - 2-samuel-19
 - 1-reyes-4
+- 1-cronicas-6
 links:
 - title: 'Perspicacia: «Mahanaim»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Mahanaim/
@@ -68,7 +69,7 @@ history:
 - date: '2026-10-02'
   change: 'Pierde el punto: Perspicacia dice que su ubicación es incierta y recoge dos sitios, que pasan a candidatos.'
   source: it-mahanaim
-checked_on: '2026-10-02'
+checked_on: '2026-10-12'
 status: verified
 coord_note: 'Sin punto: Perspicacia dice que su ubicación exacta es incierta, al este del Jordán y al parecer al norte del
   Jaboq, y recoge dos propuestas.'

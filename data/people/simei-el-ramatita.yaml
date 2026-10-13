@@ -1,0 +1,48 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: simei-el-ramatita
+name: Simeí
+names:
+- name: Simeí
+perspicacia: 1200004047#10
+disambiguation: Simeí el ramatita, encargado de las viñas de David; no el benjaminita hijo de Guerá, ni el hijo de Elá, ni
+  el levita hijo de Guersón, ni el hermano de David.
+distinct_from:
+- simei-partidario-de-david
+- simei-hijo-de-guera
+- simei-hijo-de-ela
+- simei-hijo-de-guerson
+- sama-hijo-de-jese
+- simei-descendiente-de-ladan
+- simei-hijo-de-gog
+- simei-hijo-de-jahat
+- simei-hijo-de-jedutun
+- simei-hijo-de-libni
+- simei-hijo-de-pedaya
+- simei-hijo-de-zacur
+- simei-padre-de-jaquim
+summary: Ramatita encargado de las viñas del rey David. Perspicacia dice que venía de alguna de las ciudades llamadas Ramá,
+  sin poder decir cuál.
+reason: Perspicacia «Simeí», núm. 10, y «Ramatita»; 1Cr 27:27.
+sources:
+- it-simei
+- it-ramatita
+- 1-cronicas-27
+links:
+- title: 'Perspicacia: «Simeí»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sime%C3%AD/
+  type: perspicacia
+- title: 'Perspicacia: «Ramatita»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ramatita/
+  type: perspicacia
+relations:
+- type: tie
+  person: david
+  word: master
+  inferred: false
+  sources:
+  - 1-cronicas-27
+  reason: '1Cr 27:27, 31: tenía a su cargo las viñas; era uno de los que administraban la hacienda del rey.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

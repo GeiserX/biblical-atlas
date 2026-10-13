@@ -1,0 +1,56 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ahiya-de-benjamin
+name: Ahíya
+names:
+- name: Ahíya
+perspicacia: 1200000153#2
+disambiguation: Ahíya de Benjamín, de los desterrados de Gueba; no el profeta de Siló, el sacerdote del tiempo de Saúl ni
+  los demás Ahíya.
+distinct_from:
+- ahiya-hijo-de-ahitub
+- ahiya-hijo-de-sisa
+- ahiya-padre-de-baasa
+- ahiya-profeta
+- ahiya-tesorero
+- ahiya-el-pelonita
+- ahiya-hijo-de-jerahmeel
+summary: Benjamita, cabeza de familia de los de Gueba que fueron desterrados a Manáhat. Hay quienes creen que es el Ahoá (Ahoah)
+  del versículo 4.
+reason: Perspicacia «Ahíya», núm. 2; 1Cr 8:6, 7.
+sources:
+- it-ahiya
+- 1-cronicas-8
+links:
+- title: 'Perspicacia: «Ahíya»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ah%C3%ADya/
+  type: perspicacia
+relations:
+- type: lived_in
+  place: gueba
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  reason: '1Cr 8:6, 7: era uno de los jefes de las familias de Gueba.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: lived_in
+  place: manahat
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  reason: '1Cr 8:6, 7: fue de los que se llevaron al destierro a Manáhat.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: same_as
+  person: ahoah
+  certainty: possible
+  inferred: true
+  sources:
+  - 1-cronicas-8
+  - it-ahoah
+  - it-ahiya
+  reason: Perspicacia «Ahoah» dice que tal vez sea el Ahíya de 1Cr 8:7, y «Ahíya», núm. 2, recoge que hay quien lo cree.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

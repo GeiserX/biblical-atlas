@@ -50,5 +50,7 @@ relations:
   reason: '2Re 12:20, 21: era uno de los siervos de Jehoás.'
   checked_on: '2026-09-30'
   status: verified
-checked_on: '2026-09-30'
+checked_on: '2026-10-12'
 status: verified
+distinct_from:
+- jehozabad-hijo-de-obed-edom

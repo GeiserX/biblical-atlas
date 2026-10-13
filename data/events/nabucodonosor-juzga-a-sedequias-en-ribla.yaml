@@ -25,8 +25,8 @@ passages:
 - 2Re 25:6-7
 - Jer 39:5-7
 - Jer 52:9-11
-summary: Llevan a Sedequías preso ante Nabucodonosor en Riblá. Allí matan a sus hijos en su presencia, luego lo dejan ciego
-  y lo mandan encadenado a Babilonia.
+summary: Llevan a Sedequías preso ante Nabucodonosor en Riblá. Allí matan a sus hijos en su presencia y a los príncipes de
+  Judá; luego lo dejan ciego y lo mandan encadenado a Babilonia.
 reason: 'Perspicacia «Riblá», núm. 2: Nabucodonosor dirigía la campaña desde allí; «Nebuzaradán» pone el juicio antes de su
   llegada a Jerusalén el 7 de ab de 607.'
 sources:
@@ -35,6 +35,7 @@ sources:
 - it-nebuzaradan
 - it-sedequias
 - si-3
+- jeremias-39
 links:
 - title: 'Perspicacia: «Riblá»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ribl%C3%A1/
@@ -42,5 +43,9 @@ links:
 - title: 2 Reyes 25 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-reyes/25/
   type: bible
-checked_on: '2026-09-30'
+history:
+- date: '2026-10-12'
+  change: El resumen añade a los príncipes de Judá que el rey mató en Riblá con los hijos de Sedequías (Jer 52:10).
+  source: jeremias-52
+checked_on: '2026-10-12'
 status: verified

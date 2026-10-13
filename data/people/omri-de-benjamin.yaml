@@ -1,0 +1,43 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: omri-de-benjamin
+name: Omrí
+names:
+- name: Omrí
+perspicacia: 1200003324#1
+disambiguation: Omrí de Benjamín, de la casa de Béker; no el rey de Israel que fundó Samaria ni los otros Omrí.
+distinct_from:
+- omri
+- omri-hijo-de-imri
+- omri-hijo-de-miguel
+summary: Benjamita de la casa de Béker; es el quinto nombre de la lista de sus nueve hijos.
+reason: Perspicacia «Omrí», núm. 1; 1Cr 7:6, 8.
+sources:
+- it-omri
+- 1-cronicas-7
+links:
+- title: 'Perspicacia: «Omrí»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Omr%C3%AD/
+  type: perspicacia
+relations:
+- type: kin
+  person: beker-hijo-de-benjamin
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-7
+  - it-omri
+  reason: 1Cr 7:8 lo pone entre los hijos de Béker; Perspicacia «Omrí» no precisa si era hijo o descendiente.
+  checked_on: '2026-10-12'
+  status: verified
+- type: born_in
+  place: egipto
+  inferred: true
+  sources:
+  - 1-cronicas-7
+  - it-alemet
+  reason: 'Perspicacia «Alémet», núm. 1: los nueve hijos de Béker de 1Cr 7:8 nacieron en Egipto, después de la llegada de
+    Jacob en 1728 a.e.c.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

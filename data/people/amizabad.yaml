@@ -1,0 +1,38 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: amizabad
+name: Amizabad
+names:
+- name: Amizabad
+perspicacia: '1200000237'
+summary: Hijo de Benaya, el jefe de los treinta guerreros de David. Estaba al frente de la división de su padre, la que servía
+  al rey el tercer mes.
+reason: Perspicacia «Amizabad»; 1Cr 27:5, 6.
+sources:
+- it-amizabad
+- 1-cronicas-27
+links:
+- title: 'Perspicacia: «Amizabad»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Amizabad/
+  type: perspicacia
+relations:
+- type: kin
+  person: benaya-hijo-de-jehoiada
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-27
+  - it-benaya
+  reason: '1Cr 27:6: su hijo Amizabad, el de Benaya hijo de Jehoiadá.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: tie
+  person: david
+  word: master
+  inferred: false
+  sources:
+  - 1-cronicas-27
+  reason: '1Cr 27:6: era el comandante de la división del tercer mes, al servicio del rey.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

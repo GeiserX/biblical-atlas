@@ -39,6 +39,10 @@ sources:
 - salmos-81
 - salmos-82
 - salmos-83
+- 1-cronicas-6
+- 1-cronicas-15
+- 1-cronicas-16
+- 1-cronicas-25
 links:
 - title: 'Perspicacia: «Asaf»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Asaf/
@@ -58,7 +62,39 @@ links:
 - title: Salmo 75 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/salmos/75/
   type: bible
-checked_on: '2026-09-30'
+checked_on: '2026-10-12'
 status: verified
 distinct_from:
 - asaf-padre-de-joa
+- asaf-descendiente-de-cohat
+relations:
+- type: kin
+  person: berekias-hijo-de-simea
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-6
+  - 1-cronicas-15
+  - it-berekias
+  reason: '1Cr 6:39: Asaf, «hijo de Berekías».'
+  checked_on: '2026-10-12'
+  status: verified
+- type: accompanies
+  person: heman-hijo-de-joel
+  word: fellow_worker
+  inferred: false
+  sources:
+  - 1-cronicas-6
+  reason: '1Cr 6:39: su «hermano» Asaf, compañero levita según la nota, se ponía a su derecha.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: tie
+  person: david
+  word: master
+  inferred: false
+  sources:
+  - 1-cronicas-25
+  - it-asaf
+  reason: '1Cr 25:6: los tres jefes de los cantores, Asaf, Jedutún y Hemán, dependían del rey.'
+  checked_on: '2026-10-12'
+  status: verified

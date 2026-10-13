@@ -1,0 +1,37 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jehezquel
+name: Jehezquel
+names:
+- name: Jehezquel
+perspicacia: '1200002364'
+summary: Sacerdote al frente de la casa paterna a la que tocó por sorteo el vigésimo turno del sacerdocio en tiempos de David.
+reason: Perspicacia «Jehezquel»; 1Cr 24:16.
+sources:
+- it-jehezquel
+- 1-cronicas-24
+links:
+- title: 'Perspicacia: «Jehezquel»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jehezquel/
+  type: perspicacia
+relations:
+- type: kin
+  person: aaron
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-24
+  - it-jehezquel
+  reason: 1Cr 24:1 abre la lista de los descendientes de Aarón repartidos en turnos, y 24:16 da a esta casa el vigésimo.
+  checked_on: '2026-10-12'
+  status: verified
+- type: holds_office
+  office: priest
+  inferred: false
+  sources:
+  - 1-cronicas-24
+  - it-jehezquel
+  reason: '1Cr 24:16: encabeza una de las casas sacerdotales de 24:4-6; Perspicacia «Jehezquel» lo trata como sacerdote.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

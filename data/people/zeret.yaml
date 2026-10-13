@@ -1,0 +1,38 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: zeret
+name: Zéret
+names:
+- name: Zéret
+perspicacia: '1200004711'
+summary: Judaíta, el primero de los hijos que Helá le dio a Asjur.
+reason: Perspicacia «Zéret»; 1Cr 4:7.
+sources:
+- it-zeret
+- 1-cronicas-4
+links:
+- title: 'Perspicacia: «Zéret»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Z%C3%A9ret/
+  type: perspicacia
+relations:
+- type: kin
+  person: asjur
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-4
+  - it-zeret
+  reason: '1Cr 4:7: hijo de Asjur.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: hela
+  word: mother
+  inferred: false
+  sources:
+  - 1-cronicas-4
+  - it-zeret
+  reason: '1Cr 4:7: uno de los hijos de Helá.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

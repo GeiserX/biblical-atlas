@@ -14,6 +14,9 @@ sources:
 - it-mica
 - it-mefiboset
 - 2-samuel-9
+- 1-cronicas-8
+- it-miqueas
+- 1-cronicas-9
 links:
 - title: 'Perspicacia: «Micá»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Mic%C3%A1/
@@ -29,12 +32,17 @@ relations:
   sources:
   - 2-samuel-9
   - it-mica
+  - 1-cronicas-8
+  - 1-cronicas-9
   reason: '2Sa 9:12: Mefibóset tenía un hijo pequeño llamado Micá.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-09-30'
+checked_on: '2026-10-12'
 status: verified
 distinct_from:
 - miqueas-de-efrain
 - miqueas-profeta
 - micaya-padre-de-acbor
+- miqueas-hijo-de-simei
+- mica-hijo-de-zicri
+- miqueas-uzielita

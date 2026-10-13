@@ -29,6 +29,8 @@ sources:
 - ip1-29
 - isaias-38
 - isaias-39
+- jeremias-26
+- 1-cronicas-3
 links:
 - title: 'Perspicacia: «Ezequías»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ezequ%C3%ADas/
@@ -46,8 +48,9 @@ relations:
   - 2-reyes-16
   - mateo-1
   - 2-reyes-18
+  - 1-cronicas-3
   reason: Hijo y sucesor de Acaz (2Re 16:20).
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-12'
   status: verified
 - type: succeeds
   person: acaz
@@ -143,5 +146,5 @@ history:
 perspicacia: 1200002011#1
 disambiguation: El rey de Judá, hijo de Acaz. Perspicacia registra aparte al antepasado de Sofonías (ezequias-antepasado-de-sofonias),
   que quizá sea él, y a otro cuyos descendientes volvieron del destierro.
-checked_on: '2026-09-30'
+checked_on: '2026-10-12'
 status: verified

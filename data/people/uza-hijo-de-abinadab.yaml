@@ -13,6 +13,7 @@ reason: Perspicacia «Uzah», núm. 2; 2Sa 6:3-8, con su paralelo 1Cr 13:7-11.
 sources:
 - it-uzah
 - 2-samuel-6
+- 1-cronicas-13
 links:
 - title: 'Perspicacia: «Uzah»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Uzah/
@@ -44,8 +45,9 @@ relations:
   sources:
   - 2-samuel-6
   - it-abinadab
+  - 1-cronicas-13
   reason: '2Sa 6:2, 3: el Arca sale de la casa de su padre, en la colina de Baale-Judá, que es Quiryat-Jearim.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: died_in
   place: perez-uza
@@ -54,8 +56,12 @@ relations:
   - 2-samuel-6
   - it-uzah
   - it-perez-uzah
+  - 1-cronicas-13
   reason: '2Sa 6:6-8: murió junto al Arca en la era de Nacón, que desde entonces se llamó Pérez-Uzá.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified
+distinct_from:
+- uza-hijo-de-simei
+- uza-de-benjamin

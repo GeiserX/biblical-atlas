@@ -1,0 +1,52 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jeremias-compra-el-campo-de-hanamel
+title: Jeremías compra a Hanamel su campo de Anatot
+date:
+  from: -607
+  to: -607
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 608 a.e.c.
+narrative_order:
+  series: jeremias
+  order: 832001
+  after: sedequias-interroga-a-jeremias-en-secreto
+places:
+- jerusalen
+- anatot
+people:
+- jeremias-profeta
+- hanamel
+- baruc-hijo-de-nerias
+present:
+- jeremias-profeta
+- hanamel
+- baruc-hijo-de-nerias
+passages:
+- Jer 32:1-44
+summary: 'Preso en el Patio de la Guardia durante el sitio, Jeremías compra a su primo Hanamel el campo de Anatot con escritura
+  y testigos, y Baruc la guarda: Jehová promete que Judá volverá a comprar tierras.'
+reason: 'Jer 32:1, 2: año 10 de Sedequías, con Jerusalén cercada; Perspicacia «Salum», núm. 10, lo fecha en 608 a.e.c. Sigue
+  a Jer 37:21, que lleva a Jeremías al Patio de la Guardia, donde según «Prisión» recibía visitas y negociaba.'
+sources:
+- jeremias-32
+- it-salum
+- it-prision
+- it-hanamel
+- it-anatot
+links:
+- title: Jeremías 32 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/32/
+  type: bible
+- title: 'Perspicacia: «Hanamel»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hanamel/
+  type: perspicacia
+history:
+- date: '2026-10-13'
+  change: 'El orden del relato pasa de 32001 a 832001: la serie sigue las fechas de los sucesos, porque el libro va por temas
+    y no en el orden en que pasaron.'
+  source: it-jeremias-libro
+checked_on: '2026-10-13'
+status: verified

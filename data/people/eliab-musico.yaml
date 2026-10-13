@@ -1,0 +1,27 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: eliab-musico
+name: Eliab
+names:
+- name: Eliab
+perspicacia: 1200001292#6
+disambiguation: El músico levita de David; no Eliab hijo de Jesé, ni el hijo de Helón, ni el de Palú, ni el antepasado de
+  Samuel (Perspicacia «Eliab», núm. 1 a 4).
+distinct_from:
+- eliab-hijo-de-palu
+- eliab-hijo-de-helon
+- eliab-hijo-de-jese
+- elihu-hijo-de-tohu
+- eliab-el-gadita
+summary: Músico levita de la segunda división que tocó en la subida del Arca a la Ciudad de David y, una vez allí, delante
+  de ella.
+reason: Perspicacia «Eliab», núm. 6; 1Cr 15:18, 20; 16:5.
+sources:
+- it-eliab
+- 1-cronicas-15
+- 1-cronicas-16
+links:
+- title: 'Perspicacia: «Eliab»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Eliab/
+  type: perspicacia
+checked_on: '2026-10-12'
+status: verified

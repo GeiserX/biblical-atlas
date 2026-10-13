@@ -1,0 +1,19 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hacmoni-padre-de-jehiel
+name: Hacmoní
+names:
+- name: Hacmoní
+perspicacia: 1200001795#2
+summary: Padre o antepasado de Jehiel, el que estaba con los hijos de David. Perspicacia ve posible que sea el Hacmoní antepasado
+  de Jasobeam.
+reason: Perspicacia «Hacmoní», núm. 2; 1Cr 27:32.
+sources:
+- it-hacmoni
+- 1-cronicas-27
+links:
+- title: 'Perspicacia: «Hacmoní»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hacmon%C3%AD/
+  type: perspicacia
+relations: []
+checked_on: '2026-10-12'
+status: verified

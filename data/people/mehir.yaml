@@ -1,0 +1,28 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: mehir
+name: Mehir
+names:
+- name: Mehir
+perspicacia: '1200002963'
+summary: Hombre de Judá, hijo de Kelub y padre de Estón.
+reason: Perspicacia «Mehir»; 1Cr 4:11.
+sources:
+- it-mehir
+- 1-cronicas-4
+links:
+- title: 'Perspicacia: «Mehir»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Mehir/
+  type: perspicacia
+relations:
+- type: kin
+  person: kelub-hermano-de-suha
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-4
+  - it-mehir
+  reason: '1Cr 4:11: Kelub fue padre de Mehir.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

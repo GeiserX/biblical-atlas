@@ -1,0 +1,38 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: temeni
+name: Temení
+names:
+- name: Temení
+perspicacia: '1200004358'
+summary: Hijo de Asjur y de Naará, de la tribu de Judá.
+reason: Perspicacia «Temení»; 1Cr 4:6.
+sources:
+- it-temeni
+- 1-cronicas-4
+links:
+- title: 'Perspicacia: «Temení»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Temen%C3%AD/
+  type: perspicacia
+relations:
+- type: kin
+  person: asjur
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-4
+  - it-temeni
+  reason: '1Cr 4:6: hijo de Asjur.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: naara
+  word: mother
+  inferred: false
+  sources:
+  - 1-cronicas-4
+  - it-temeni
+  reason: '1Cr 4:6: uno de los hijos de Naará.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

@@ -1,0 +1,40 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: eliel-el-mahavita
+name: Eliel
+names:
+- name: Eliel
+perspicacia: 1200001302#5
+disambiguation: Eliel el mahavita (1Cr 11:46); no el Eliel del versículo siguiente, el gadita ni los levitas de ese nombre.
+distinct_from:
+- eliel-descendiente-de-sasac
+- eliel-descendiente-de-simei
+- eliel-el-gadita
+- eliel-guerrero-de-david
+- eliel-jefe-de-los-hebronitas
+- elihu-hijo-de-tohu
+- eliel-de-manases
+summary: Mahavita, uno de los guerreros poderosos de David. El sobrenombre quizá lo distingue del otro Eliel de la misma lista.
+reason: Perspicacia «Eliel», núm. 5, y «Mahavita»; 1Cr 11:46.
+sources:
+- it-eliel
+- it-mahavita
+- 1-cronicas-11
+links:
+- title: 'Perspicacia: «Eliel»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Eliel/
+  type: perspicacia
+- title: 'Perspicacia: «Mahavita»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Mahavita/
+  type: perspicacia
+relations:
+- type: tie
+  person: david
+  word: master
+  inferred: false
+  sources:
+  - 1-cronicas-11
+  reason: '1Cr 11:46: figura entre los valientes de David.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

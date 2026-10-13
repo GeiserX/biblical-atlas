@@ -1,0 +1,31 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: requem-hijo-de-hebron
+name: Réquem
+names:
+- name: Réquem
+perspicacia: 1200003686#3
+summary: Descendiente de Judá por Caleb hijo de Hezrón; hijo de Hebrón y padre de Samái.
+reason: Perspicacia «Réquem», núm. 3, y «Samai», núm. 2; 1Cr 2:43, 44.
+sources:
+- it-requem
+- 1-cronicas-2
+links:
+- title: 'Perspicacia: «Réquem»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/R%C3%A9quem/
+  type: perspicacia
+relations:
+- type: kin
+  person: hebron-hijo-de-maresa
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-2
+  reason: '1Cr 2:43: hijo de Hebrón.'
+  checked_on: '2026-10-12'
+  status: verified
+disambiguation: Réquem hijo de Hebrón, de Judá; no Réquem, el rey de Madián muerto en la guerra contra Madián.
+distinct_from:
+- requem-rey-de-madian
+- requem-de-manases
+checked_on: '2026-10-12'
+status: verified

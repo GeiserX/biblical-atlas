@@ -1,0 +1,30 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: merayot-hijo-de-zerahias
+name: Merayot
+names:
+- name: Merayot
+perspicacia: 1200002989#1
+disambiguation: Merayot hijo de Zerahías (1Cr 6:6, 7, 52); no es ninguno de los otros Merayot que numera Perspicacia «Merayot».
+distinct_from:
+- merayot-hijo-de-ahitub
+summary: Sacerdote de la línea de Eleazar, hijo de Zerahías y padre de Amarías.
+reason: Perspicacia «Merayot», núm. 1; 1Cr 6:6, 7, 52.
+sources:
+- it-merayot
+- 1-cronicas-6
+links:
+- title: 'Perspicacia: «Merayot»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Merayot/
+  type: perspicacia
+relations:
+- type: kin
+  person: zerahias-hijo-de-uzi
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-6
+  reason: 1Cr 6:6 lo da como hijo de Zerahías.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

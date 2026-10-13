@@ -10,6 +10,7 @@ reason: Perspicacia «Husam» y «Temanita»; Gé 36:34, 35.
 sources:
 - it-husam
 - genesis-36
+- 1-cronicas-1
 links:
 - title: 'Perspicacia: «Husam»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Husam/
@@ -24,8 +25,9 @@ relations:
   sources:
   - it-husam
   - genesis-36
+  - 1-cronicas-1
   reason: 'Gé 36:34: reinó en lugar de Jobab.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   office: king
   status: verified
 - type: lived_in
@@ -34,8 +36,9 @@ relations:
   sources:
   - it-temanita
   - genesis-36
+  - 1-cronicas-1
   reason: 'Gé 36:34: era de la tierra de los temanitas.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: holds_office
   place: edom
@@ -43,8 +46,9 @@ relations:
   inferred: false
   sources:
   - genesis-36
+  - 1-cronicas-1
   reason: Reinó en Edom tras Jobab (Gé 36:31, 34).
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

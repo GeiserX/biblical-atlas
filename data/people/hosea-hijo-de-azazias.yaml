@@ -1,0 +1,40 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hosea-hijo-de-azazias
+name: Hosea
+names:
+- name: Hosea
+perspicacia: 1200002090#2
+disambiguation: Hosea hijo de Azazías, príncipe de Efraín con David; no el último rey de Israel ni Josué, que antes se llamaba
+  Hosea.
+distinct_from:
+- hosea-de-israel
+- josue-hijo-de-nun
+summary: Hijo de Azazías. En días del rey David encabezaba a los efraimitas como su príncipe.
+reason: Perspicacia «Hosea», núm. 2; 1Cr 27:20.
+sources:
+- it-hosea
+- 1-cronicas-27
+links:
+- title: 'Perspicacia: «Hosea»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hosea/
+  type: perspicacia
+relations:
+- type: kin
+  person: azazias-padre-de-hosea
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-27
+  reason: '1Cr 27:20: Hosea hijo de Azazías.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: holds_office
+  office: leader
+  inferred: false
+  sources:
+  - 1-cronicas-27
+  reason: '1Cr 27:20, 22: era el líder de los efraimitas, uno de los príncipes de las tribus de Israel.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

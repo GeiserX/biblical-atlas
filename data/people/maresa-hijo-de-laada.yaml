@@ -1,0 +1,31 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: maresa-hijo-de-laada
+name: Maresá
+names:
+- name: Maresá
+perspicacia: 1200002900#2
+disambiguation: Maresá hijo de Laadá (núm. 2 de Perspicacia); no el padre de Hebrón de la línea de Caleb ni la ciudad.
+summary: Descendiente de Judá por Selá, hijo de Laadá. No se puede saber si él o su padre fundó la población de Maresá.
+reason: Perspicacia «Maresá, Maresah»; 1Cr 4:21.
+sources:
+- it-maresa
+- 1-cronicas-4
+links:
+- title: 'Perspicacia: «Maresá, Maresah»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Mares%C3%A1-Maresah/
+  type: perspicacia
+relations:
+- type: kin
+  person: laada
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-4
+  - it-maresa
+  reason: '1Cr 4:21: Laadá, el padre de Maresá.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- maresa-padre-de-hebron

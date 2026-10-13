@@ -10,6 +10,7 @@ reason: Perspicacia «Disón», párr. 1 a 3; Gé 36:21, 25, 26, 30.
 sources:
 - it-dison
 - genesis-36
+- 1-cronicas-1
 links:
 - title: 'Perspicacia: «Disón»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Dis%C3%B3n/
@@ -24,8 +25,9 @@ relations:
   sources:
   - it-dison
   - genesis-36
+  - 1-cronicas-1
   reason: Gé 36:21 lo cuenta entre los hijos de Seír; Perspicacia «Disón» deja abierto si era hijo o descendiente.
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   word: ancestor
   status: verified
 - type: kin
@@ -35,8 +37,9 @@ relations:
   sources:
   - it-dison
   - genesis-36
+  - 1-cronicas-1
   reason: Gé 36:25 da un Disón hijo de Aná; Perspicacia no decide si es este jeque o un sobrino suyo.
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: pending
 - type: lived_in
   place: seir
@@ -47,5 +50,5 @@ relations:
   reason: 'Gé 36:21, 30: jeque horeo en la tierra de Seír.'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

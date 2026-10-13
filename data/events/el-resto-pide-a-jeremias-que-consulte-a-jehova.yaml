@@ -1,0 +1,51 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: el-resto-pide-a-jeremias-que-consulte-a-jehova
+title: El resto pide a Jeremías que consulte a Jehová
+date:
+  from: -606
+  to: -606
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 607 a.e.c.
+narrative_order:
+  series: jeremias
+  order: 942001
+places:
+- lugar-de-hospedaje-de-kimham
+people:
+- johanan-hijo-de-carea
+- jaazanias-jefe-militar
+- jeremias-profeta
+present:
+- johanan-hijo-de-carea
+- jaazanias-jefe-militar
+- jeremias-profeta
+passages:
+- Jer 42:1-6
+summary: Johanán, Jezanías hijo de Hosaya, los demás jefes y todo el pueblo ruegan a Jeremías que pregunte a Jehová qué deben
+  hacer. Él acepta, y ellos juran obedecer la respuesta, sea buena o mala.
+reason: 'Jer 42:1-6. El texto no repite el sitio: seguían donde se habían detenido camino de Egipto, el lugar de hospedaje
+  de Kimham. Perspicacia «Johanán», núm. 5, y «Jaazanías», núm. 4; estudio 3, párr. 6. Orden por fecha.'
+sources:
+- jeremias-42
+- si-3
+- it-johanan
+- it-jaazanias
+- it-jezanias
+- si-jeremias
+links:
+- title: Jeremías 42 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/42/
+  type: bible
+- title: 'Perspicacia: «Johanán»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Johan%C3%A1n/
+  type: perspicacia
+history:
+- date: '2026-10-13'
+  change: 'El orden del relato pasa de 42001 a 942001: la serie sigue las fechas de los sucesos, porque el libro va por temas
+    y no en el orden en que pasaron.'
+  source: it-jeremias-libro
+checked_on: '2026-10-13'
+status: verified

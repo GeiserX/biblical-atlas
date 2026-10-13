@@ -1,0 +1,34 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+title: Rubén, Gad y media Manasés vencen a los hagritas
+date:
+  from: -1116
+  to: -1077
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1117 y c. 1078 a.e.c. (tiempo narrativo: en los días de Saúl)'
+narrative_order:
+  series: 1-cronicas
+  order: 5010
+places:
+- galaad
+people: []
+present: []
+roles: {}
+passages:
+- 1Cr 5:10
+- 1Cr 5:18-22
+summary: Las tribus del este del Jordán, con 44.760 guerreros, piden ayuda a Dios y vencen a los hagritas y a sus aliados
+  de Jetur, Nafís y Nodab. Se llevan su ganado y viven en su tierra.
+reason: '1Cr 5:10 lo pone en los días de Saúl (1117-c. 1078, periodo saul); Perspicacia «Nafís» une esta guerra a la de 5:18-22.
+  La batalla fue al este de Galaad, sin sitio con nombre: nadie queda situado.'
+sources:
+- 1-cronicas-5
+- si-3
+- it-nafis
+- it-nodab
+- it-saul
+checked_on: '2026-10-12'
+status: verified
+id: rubenitas-gaditas-y-manasitas-vencen-a-los-hagritas

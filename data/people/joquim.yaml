@@ -1,0 +1,28 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: joquim
+name: Joquim
+names:
+- name: Joquim
+perspicacia: '1200002496'
+summary: Descendiente de Judá por su tercer hijo, Selá. Su nombre abrevia Jehoiaquim.
+reason: Perspicacia «Joquim»; 1Cr 4:22.
+sources:
+- it-joquim
+- 1-cronicas-4
+links:
+- title: 'Perspicacia: «Joquim»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Joquim/
+  type: perspicacia
+relations:
+- type: kin
+  person: sela-hijo-de-juda
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-4
+  - it-joquim
+  reason: '1Cr 4:21, 22: entre los «hijos» de Selá; Perspicacia lo da como descendiente suyo.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

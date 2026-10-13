@@ -10,6 +10,7 @@ reason: Perspicacia «Jalam»; Gé 36:5-8, 14, 18.
 sources:
 - it-jalam
 - genesis-36
+- 1-cronicas-1
 links:
 - title: 'Perspicacia: «Jalam»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jalam/
@@ -25,8 +26,9 @@ relations:
   sources:
   - it-jalam
   - genesis-36
+  - 1-cronicas-1
   reason: 'Gé 36:5, 14: hijo de Esaú.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: kin
   person: oholibama-hija-de-ana
@@ -56,5 +58,5 @@ relations:
   reason: 'Gé 36:6-8: la familia de Esaú se fue a la región montañosa de Seír.'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

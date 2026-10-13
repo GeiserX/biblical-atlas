@@ -1,0 +1,32 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: simri-hijo-de-hosa
+name: Simrí
+names:
+- name: Simrí
+perspicacia: 1200004052#3
+disambiguation: El hijo de Hosá, portero (1Cr 26:10); no los demás Simrí de Perspicacia «Simrí».
+summary: Hijo de Hosá, merarita. Sin ser el primogénito, su padre lo hizo jefe; sirvió de portero al oeste del santuario.
+reason: Perspicacia «Simrí», núm. 3; 1Cr 26:10.
+sources:
+- it-simri
+- 1-cronicas-26
+links:
+- title: 'Perspicacia: «Simrí»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Simr%C3%AD/
+  type: perspicacia
+relations:
+- type: kin
+  person: hosa
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-26
+  - it-simri
+  reason: '1Cr 26:10: Hosá lo nombró jefe aunque no era el primogénito.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- simri-padre-de-jediael
+- simri-hijo-de-semaya

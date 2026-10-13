@@ -1,0 +1,36 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: amasai-y-los-suyos-se-unen-a-david
+title: Amasái y hombres de Benjamín y Judá se unen a David
+date:
+  from: -1079
+  to: -1077
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'c. 1080-1078 a.e.c. (tiempo narrativo: mientras David vivía en Ziclag, antes de morir Saúl)'
+narrative_order:
+  series: 1-cronicas
+  order: 12016
+  after: benjaminitas-se-unen-a-david-en-ziclag
+places:
+- ziclag
+people:
+- david
+- amasai-jefe-de-los-treinta
+present:
+- david
+- amasai-jefe-de-los-treinta
+passages:
+- 1Cr 12:16-18
+summary: David sale al encuentro de unos hombres de Benjamín y Judá y les pregunta si vienen en paz. Amasái, movido por el
+  espíritu, le jura lealtad; David los recibe y los hace jefes.
+reason: 1Cr 12:16 solo dice su refugio; Perspicacia «Amasai», núm. 2, pone el encuentro en Ziclag. Allí vivió David desde
+  c. 1080 (akis-da-ziclag-a-david) hasta morir Saúl en 1078 (Perspicacia «Jonatán», núm. 2).
+sources:
+- 1-cronicas-12
+- it-amasai
+- si-3
+- it-jonatan
+checked_on: '2026-10-12'
+status: verified

@@ -13,15 +13,25 @@ date:
   type: anchored
   chronology: tnm
   text: 628-618 a.e.c.
-summary: Hijo de Josías, puesto en el trono por Nekó. Gobernó con injusticia y mató al profeta Uriya. Fue vasallo de Babilonia,
-  se rebeló y al parecer murió durante el sitio.
-reason: Perspicacia «Jehoiaquim», párr. 1-6; 2Re 23:34-24:6 y Jer 26:20-23.
+summary: Hijo de Josías, puesto en el trono por Nekó. Gobernó con injusticia, mató al profeta Uriya y quemó el rollo de Jeremías.
+  Fue vasallo de Babilonia, se rebeló y al parecer murió durante el sitio.
+reason: Perspicacia «Jehoiaquim», párr. 1-6; 2Re 23:34-24:6, Jer 26:20-23 y 36:21-26.
 sources:
 - it-jehoiaquim
 - 2-reyes-23
 - 2-reyes-24
 - tnm-a6-b
 - it-eliaquim
+- jeremias-1
+- jeremias-22
+- jr-2
+- jeremias-25
+- jeremias-26
+- jeremias-35
+- jeremias-36
+- jeremias-45
+- jeremias-46
+- 1-cronicas-3
 links:
 - title: 'Perspicacia: «Jehoiaquim»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jehoiaquim/
@@ -37,8 +47,18 @@ relations:
   sources:
   - it-jehoiaquim
   - 2-reyes-23
+  - jeremias-1
+  - jeremias-22
+  - jeremias-25
+  - jeremias-26
+  - jeremias-27
+  - jeremias-35
+  - jeremias-36
+  - jeremias-45
+  - jeremias-46
+  - 1-cronicas-3
   reason: Hijo de Josías y Zebidá (2Re 23:34, 36).
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: succeeds
   person: jehoacaz-de-juda
@@ -130,10 +150,28 @@ relations:
     medio hermanos.
   checked_on: '2026-09-30'
   status: verified
+- type: died_in
+  place: jerusalen
+  inferred: true
+  sources:
+  - it-jehoiaquim
+  - jr-2
+  - jeremias-22
+  reason: 'Perspicacia «Jehoiaquim», párr. 6, y jr, cap. 2: al parecer murió durante el sitio de la ciudad. Jer 22:19 anuncia
+    que tirarían su cadáver fuera de las puertas de Jerusalén.'
+  checked_on: '2026-10-12'
+  status: verified
 disambiguation: Rey de Judá, hijo de Josías, que antes se llamaba Eliaquim. No es Eliaquim hijo de Abiud ni Eliaquim hijo
   de Meleá, antepasados de Jesús.
 perspicacia: '1200002377'
-checked_on: '2026-10-01'
+history:
+- date: '2026-10-12'
+  change: El resumen no decía que quemó el rollo que le leyó Jehudí (Jer 36:21-26; Perspicacia «Jehoiaquim», párr. 4).
+  source: jeremias-36
+- date: '2026-10-12'
+  change: La razón cita ya el pasaje de la quema del rollo, que el resumen recoge ahora.
+  source: jeremias-36
+checked_on: '2026-10-12'
 status: verified
 distinct_from:
 - eliaquim-hijo-de-abiud

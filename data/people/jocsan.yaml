@@ -9,6 +9,7 @@ reason: Perspicacia «Joqsán»; Gé 25:2, 3.
 sources:
 - it-jocsan
 - genesis-25
+- 1-cronicas-1
 links:
 - title: 'Perspicacia: «Joqsán»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Joqs%C3%A1n/
@@ -24,8 +25,9 @@ relations:
   sources:
   - it-jocsan
   - genesis-25
+  - 1-cronicas-1
   reason: 'Gé 25:1, 2: hijo de Abrahán y Queturá.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: kin
   person: quetura
@@ -34,8 +36,9 @@ relations:
   sources:
   - it-jocsan
   - genesis-25
+  - 1-cronicas-1
   reason: 'Gé 25:1, 2: hijo de Abrahán y Queturá.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

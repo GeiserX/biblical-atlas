@@ -1,0 +1,61 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jeremias-anuncia-la-muerte-de-hananias
+title: Jeremías anuncia a Hananías que morirá ese año
+type: speech
+roles:
+  jeremias-profeta: spoke
+  hananias-hijo-de-azur:
+    role: died
+    date:
+      from: -613
+      to: -613
+      precision: month
+      approx: false
+      type: anchored
+      chronology: tnm
+      text: mes de tisri de 614 a.e.c.
+      detail:
+        month: tisri
+date:
+  from: -613
+  to: -613
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 614 a.e.c.
+narrative_order:
+  series: jeremias
+  order: 528012
+places: []
+people:
+- jeremias-profeta
+- hananias-hijo-de-azur
+present: []
+passages:
+- Jer 28:12-17
+summary: Jehová manda a Jeremías decir a Hananías que el yugo de madera roto será de hierro sobre las naciones, y que morirá
+  ese año por promover la rebelión. Hananías muere en el séptimo mes.
+reason: 'Jer 28:1: año cuarto de Sedequías, que Perspicacia «Seraya», núm. 5, fecha en 614; el quinto mes es ab. Hananías
+  muere en el séptimo mes, tisri (28:17). Sin lugar: nadie queda situado. Orden por fecha.'
+sources:
+- jeremias-28
+- it-hananias
+- it-seraya
+- si-jeremias
+- jr-2
+- it-jeremias-libro
+links:
+- title: Jeremías 28 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/28/
+  type: bible
+- title: 'Perspicacia: «Hananías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hanan%C3%ADas/
+  type: perspicacia
+history:
+- date: '2026-10-13'
+  change: 'El orden del relato pasa de 28012 a 528012: la serie sigue las fechas de los sucesos, porque el libro va por temas
+    y no en el orden en que pasaron.'
+  source: it-jeremias-libro
+checked_on: '2026-10-13'
+status: verified

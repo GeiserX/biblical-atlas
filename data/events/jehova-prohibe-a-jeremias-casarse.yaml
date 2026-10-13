@@ -1,0 +1,41 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jehova-prohibe-a-jeremias-casarse
+title: Jehová le prohíbe a Jeremías casarse, como señal
+date:
+  from: -646
+  to: -606
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 647 y 607 a.e.c. (tiempo narrativo: durante la obra de Jeremías en Judá, antes de caer Jerusalén)'
+places: []
+people:
+- jeremias-profeta
+present: []
+passages:
+- Jer 16:1-9
+summary: Jeremías no debe tomar esposa ni tener hijos, ni entrar en casas de luto o de banquete. Así anuncia que los niños
+  morirán sin entierro, que nadie consolará a nadie y que cesarán las bodas.
+reason: Perspicacia «Jeremías», núm. 6, pone esta orden entre sus representaciones proféticas, como aviso para los hijos nacidos
+  en los últimos días de la ciudad. Misma fecha que Jer 16; el texto no dice dónde.
+sources:
+- jeremias-16
+- it-jeremias
+- si-jeremias
+- si-3
+- it-jeremias-libro
+links:
+- title: Jeremías 16 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/16/
+  type: bible
+- title: 'Perspicacia: «Jeremías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jerem%C3%ADas/
+  type: perspicacia
+history:
+- date: '2026-10-13'
+  change: 'Sale de la serie jeremias (orden 16001): el capítulo no nombra rey ni da año, y el libro va por temas, así que
+    nada lo sitúa antes o después de los demás.'
+  source: it-jeremias-libro
+checked_on: '2026-10-13'
+status: verified

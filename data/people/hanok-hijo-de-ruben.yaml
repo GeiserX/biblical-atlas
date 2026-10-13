@@ -12,6 +12,7 @@ sources:
 - genesis-46
 - exodo-6
 - numeros-26
+- 1-cronicas-5
 links:
 - title: 'Perspicacia: «Hanok»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hanok/
@@ -29,8 +30,9 @@ relations:
   - it-hanok
   - exodo-6
   - numeros-26
+  - 1-cronicas-5
   reason: 'Gé 46:9: aparece entre los hijos de Rubén.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: lived_in
   place: egipto
@@ -46,8 +48,9 @@ relations:
   inferred: false
   sources:
   - exodo-6
+  - 1-cronicas-5
   reason: 'Éx 6:14: Palú es otro de los hijos de Rubén.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: kin
   person: hezron-hijo-de-ruben
@@ -55,8 +58,9 @@ relations:
   inferred: false
   sources:
   - exodo-6
+  - 1-cronicas-5
   reason: 'Éx 6:14: Hezrón es otro de los hijos de Rubén.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 - type: kin
   person: carmi-hijo-de-ruben
@@ -64,10 +68,11 @@ relations:
   inferred: false
   sources:
   - exodo-6
+  - 1-cronicas-5
   reason: 'Éx 6:14: Carmí es otro de los hijos de Rubén.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-02'
+checked_on: '2026-10-12'
 status: verified
 distinct_from:
 - hanok-hijo-de-madian

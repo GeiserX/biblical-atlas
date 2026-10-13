@@ -1,0 +1,37 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jesebeab
+name: Jesebeab
+names:
+- name: Jesebeab
+perspicacia: '1200002441'
+summary: Sacerdote cuya casa paterna recibió por sorteo el decimocuarto turno sacerdotal en el reinado de David.
+reason: Perspicacia «Jesebeab»; 1Cr 24:13.
+sources:
+- it-jesebeab
+- 1-cronicas-24
+links:
+- title: 'Perspicacia: «Jesebeab»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jesebeab/
+  type: perspicacia
+relations:
+- type: kin
+  person: aaron
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-24
+  - it-jesebeab
+  reason: 1Cr 24:1 abre la lista de los descendientes de Aarón repartidos en turnos, y 24:13 da a esta casa el decimocuarto.
+  checked_on: '2026-10-12'
+  status: verified
+- type: holds_office
+  office: priest
+  inferred: false
+  sources:
+  - 1-cronicas-24
+  - it-jesebeab
+  reason: '1Cr 24:13: encabeza una de las casas sacerdotales de 24:4-6; Perspicacia «Jesebeab» lo trata como sacerdote.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

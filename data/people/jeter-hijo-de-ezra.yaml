@@ -1,0 +1,35 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jeter-hijo-de-ezra
+name: Jéter
+names:
+- name: Jéter
+perspicacia: 1200002452#3
+disambiguation: Jéter hijo de Ezrá (núm. 3 de Perspicacia); no Jetró, ni el hijo de Gedeón, ni el padre de Amasá.
+summary: Judaíta, el primero de los hijos de Ezrá que se nombran.
+reason: Perspicacia «Jéter»; 1Cr 4:17.
+sources:
+- it-jeter
+- 1-cronicas-4
+links:
+- title: 'Perspicacia: «Jéter»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/J%C3%A9ter/
+  type: perspicacia
+relations:
+- type: kin
+  person: ezra
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-4
+  - it-jeter
+  reason: '1Cr 4:17: uno de los hijos de Ezrá.'
+  checked_on: '2026-10-12'
+  status: verified
+distinct_from:
+- jetro
+- jeter-hijo-de-gedeon
+- itra
+- jeter-de-aser
+- jeter-hijo-de-jada
+checked_on: '2026-10-12'
+status: verified

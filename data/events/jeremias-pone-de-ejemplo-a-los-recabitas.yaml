@@ -1,0 +1,44 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jeremias-pone-de-ejemplo-a-los-recabitas
+title: Jeremías pone a los recabitas de ejemplo ante Judá
+date:
+  from: -619
+  to: -617
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 620 y 618 a.e.c. (tiempo narrativo: al final del reinado de Jehoiaquim, tras el primer ataque babilonio)'
+narrative_order:
+  series: jeremias
+  order: 335012
+type: speech
+places:
+- jerusalen
+people:
+- jeremias-profeta
+present:
+- jeremias-profeta
+roles:
+  jeremias-profeta: spoke
+passages:
+- Jer 35:12-19
+summary: Jehová contrasta la obediencia de los recabitas a su antepasado con la sordera de Judá y Jerusalén, a las que anuncia
+  la calamidad. A los recabitas les promete que nunca faltará un descendiente de Jehonadab ante él.
+reason: Jer 35:12-19 sigue a la prueba del vino. Los recabitas vivían en Jerusalén (35:11) y Jeremías les habla allí (35:18);
+  la fecha es la del suceso anterior.
+sources:
+- jeremias-35
+- it-recabitas
+- si-jeremias
+links:
+- title: Jeremías 35 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/35/
+  type: bible
+history:
+- date: '2026-10-13'
+  change: 'El orden del relato pasa de 35012 a 335012: la serie sigue las fechas de los sucesos, porque el libro va por temas
+    y no en el orden en que pasaron.'
+  source: it-jeremias-libro
+checked_on: '2026-10-13'
+status: verified

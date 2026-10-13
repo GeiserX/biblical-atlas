@@ -1,0 +1,36 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: malcam
+name: Malcam
+names:
+- name: Malcam
+perspicacia: '1200002862#1'
+summary: Benjamita; sus padres fueron Saharaim y Hodes.
+reason: Perspicacia «Malcam», núm. 1; 1Cr 8:1, 8-10.
+sources:
+- it-malcam
+- 1-cronicas-8
+links:
+- title: 'Perspicacia: «Malcam»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Malcam/
+  type: perspicacia
+relations:
+- type: kin
+  person: saharaim
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  reason: 1Cr 8:9, 10 lo cuenta entre los hijos de Saharaim.
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: hodes
+  word: mother
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  reason: '1Cr 8:9: su madre fue Hodes.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

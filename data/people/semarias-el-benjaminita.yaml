@@ -1,0 +1,28 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: semarias-el-benjaminita
+name: Semarías
+names:
+- name: Semarías
+perspicacia: 1200004001#1
+summary: Guerrero benjaminita ambidextro que se unió a David en Ziclag cuando huía de Saúl.
+reason: Perspicacia «Semarías», núm. 1; 1Cr 12:5.
+sources:
+- it-semarias
+- 1-cronicas-12
+links:
+- title: 'Perspicacia: «Semarías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Semar%C3%ADas/
+  type: perspicacia
+disambiguation: Semarías el benjaminita, con David en Ziclag (1Cr 12:5); no el hijo de Rehoboam ni los de tiempos de Esdras.
+relations:
+- type: tie
+  person: david
+  word: master
+  inferred: false
+  sources:
+  - 1-cronicas-12
+  reason: '1Cr 12:5: se unió a David y lo apoyó en la guerra.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

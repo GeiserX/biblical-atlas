@@ -1,0 +1,27 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: oren
+name: Orén
+names:
+- name: Orén
+perspicacia: '1200003340'
+summary: Judaíta, tercero de los cinco hijos de Jerahmeel que da 1 Crónicas 2:25.
+reason: Perspicacia «Orén»; 1Cr 2:25.
+sources:
+- it-oren
+- 1-cronicas-2
+links:
+- title: 'Perspicacia: «Orén»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Or%C3%A9n/
+  type: perspicacia
+relations:
+- type: kin
+  person: jerahmeel-hijo-de-hezron
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-2
+  reason: 1Cr 2:25 lo cuenta entre los hijos de Jerahmeel.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

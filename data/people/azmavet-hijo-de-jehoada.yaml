@@ -1,0 +1,34 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: azmavet-hijo-de-jehoada
+name: Azmávet
+names:
+- name: Azmávet
+perspicacia: 1200000496#4
+disambiguation: Azmávet hijo de Jehoadá; no Azmávet el bar-humita, guerrero de David, ni los demás Azmávet.
+distinct_from:
+- azmavet-el-bar-humita
+- azmavet-hijo-de-adiel
+- azmavet-padre-de-jeziel
+summary: Benjamita, hijo de Jehoadá; seis generaciones lo separan de Saúl, por Jonatán.
+reason: Perspicacia «Azmávet», núm. 4; 1Cr 8:33-36.
+sources:
+- it-azmavet
+- 1-cronicas-8
+- 1-cronicas-9
+links:
+- title: 'Perspicacia: «Azmávet»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Azm%C3%A1vet/
+  type: perspicacia
+relations:
+- type: kin
+  person: jehoada
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  - 1-cronicas-9
+  reason: 1Cr 8:36 lo da como hijo de Jehoadá.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

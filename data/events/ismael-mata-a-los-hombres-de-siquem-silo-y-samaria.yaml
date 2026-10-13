@@ -1,0 +1,56 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: ismael-mata-a-los-hombres-de-siquem-silo-y-samaria
+title: Ismael mata en Mizpá a los hombres que venían de Siquem, Siló y Samaria
+date:
+  from: -606
+  to: -606
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 607 a.e.c.
+  detail:
+    month: tisri
+narrative_order:
+  series: jeremias
+  order: 941004
+  after: asesinato-de-guedalias
+places:
+- mizpa-de-benjamin
+- siquem
+- silo
+- samaria
+people:
+- ismael-hijo-de-netanias
+present:
+- ismael-hijo-de-netanias
+type: death
+roles: {}
+passages:
+- Jer 41:4-9
+summary: Al día siguiente llegan ochenta hombres con señales de duelo y ofrendas para la casa de Jehová. Ismael los hace entrar
+  en Mizpá, los mata y echa los cuerpos a la cisterna de Asá; perdona a diez.
+reason: 'Jer 41:4-9: al día siguiente del asesinato, que el estudio 3, párr. 6, pone en el mes séptimo de 607. Perspicacia
+  «Ismael», núm. 5, «Siquem», «Siló» y «Samaria». Los muertos no tienen nombre ni ficha. Orden por fecha.'
+sources:
+- jeremias-41
+- si-3
+- it-ismael
+- it-siquem
+- it-silo
+- it-samaria
+- it-mizpa
+links:
+- title: Jeremías 41 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/41/
+  type: bible
+- title: 'Perspicacia: «Ismael»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ismael/
+  type: perspicacia
+history:
+- date: '2026-10-13'
+  change: 'El orden del relato pasa de 41004 a 941004: la serie sigue las fechas de los sucesos, porque el libro va por temas
+    y no en el orden en que pasaron.'
+  source: it-jeremias-libro
+checked_on: '2026-10-13'
+status: verified

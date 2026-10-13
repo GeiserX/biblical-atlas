@@ -1,0 +1,28 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: maaca-padre-de-hanan
+name: Maacá
+names:
+- name: Maacá
+perspicacia: 1200002803#6
+disambiguation: Maacá, padre o antepasado del guerrero Hanán (1Cr 11:43); no las mujeres ni los otros hombres de ese nombre.
+distinct_from:
+- maaca-esposa-de-jeiel
+- maaca-esposa-de-makir
+- maaca-hija-de-talmai
+- maaca-hija-de-uriel
+- maaca-hijo-de-nacor
+- maaca-padre-de-akis
+- maaca-padre-de-sefatias
+- maaca-concubina-de-caleb
+summary: Padre o antepasado de Hanán, uno de los guerreros poderosos de David.
+reason: Perspicacia «Maacá», núm. 6; 1Cr 11:43.
+sources:
+- it-maaca
+- 1-cronicas-11
+links:
+- title: 'Perspicacia: «Maacá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Maac%C3%A1/
+  type: perspicacia
+relations: []
+checked_on: '2026-10-12'
+status: verified

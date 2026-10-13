@@ -23,6 +23,7 @@ sources:
 - genesis-8
 - genesis-9
 - lucas-3
+- 1-cronicas-1
 links:
 - title: 'Perspicacia: «Noé»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/No%C3%A9/
@@ -39,9 +40,10 @@ relations:
   - it-noe
   - genesis-5
   - lucas-3
+  - 1-cronicas-1
   reason: 'Perspicacia «Noé», párr. 2: hijo de Lamec (Gé 5:28, 29).'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-12'
   status: verified
 perspicacia: '1200003266'
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

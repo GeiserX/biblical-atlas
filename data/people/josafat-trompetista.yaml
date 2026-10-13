@@ -1,0 +1,29 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: josafat-trompetista
+name: Josafat
+names:
+- name: Josafat
+perspicacia: 1200002518#2
+disambiguation: El sacerdote trompetista; no Josafat el mitnita, de los poderosos de David (Perspicacia «Josafat», núm. 1).
+summary: Sacerdote que tocó la trompeta delante del Arca en la procesión que la subió a Jerusalén.
+reason: Perspicacia «Josafat», núm. 2; 1Cr 15:24.
+sources:
+- it-josafat
+- 1-cronicas-15
+links:
+- title: 'Perspicacia: «Josafat»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Josafat/
+  type: perspicacia
+relations:
+- type: holds_office
+  office: priest
+  inferred: false
+  sources:
+  - 1-cronicas-15
+  reason: 1Cr 15:24 lo cuenta entre los sacerdotes que tocaban las trompetas delante del Arca.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- josafat-el-mitnita

@@ -1,0 +1,31 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: eleasa-hijo-de-helez
+name: Eleasá
+names:
+- name: Eleasá
+perspicacia: 1200001286#1
+summary: Judaíta de la casa de Jerahmeel. Su padre fue Hélez y su hijo, Sismái. Su línea venía de Jarhá, el siervo egipcio
+  casado con una hija de Sesán.
+reason: Perspicacia «Eleasá», núm. 1; 1Cr 2:39, 40.
+sources:
+- it-eleasa
+- 1-cronicas-2
+links:
+- title: 'Perspicacia: «Eleasá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Eleas%C3%A1/
+  type: perspicacia
+relations:
+- type: kin
+  person: helez-hijo-de-azarias
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-2
+  reason: '1Cr 2:39: Hélez fue su padre.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+disambiguation: Eleasá, judaíta hijo de Hélez; no Eleasá hijo de Rafá, descendiente de Saúl.
+distinct_from:
+- eleasa-hijo-de-rafa

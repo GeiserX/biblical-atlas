@@ -33,6 +33,7 @@ sources:
 - it-jezreel
 - it-jonatan
 - si-3
+- 1-cronicas-12
 links:
 - title: 1 Samuel 29 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/1-samuel/29/
@@ -43,5 +44,5 @@ links:
 - title: 'Perspicacia: «Akís»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ak%C3%ADs/
   type: perspicacia
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

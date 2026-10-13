@@ -22,6 +22,8 @@ sources:
 - isaias-21
 - isaias-42
 - isaias-60
+- jeremias-2
+- jeremias-49
 links:
 - title: 'Perspicacia: «Quedar»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Quedar/
@@ -33,5 +35,5 @@ history:
 - date: '2026-09-29'
   change: La razón cita Can 1:5, el versículo del que Perspicacia saca las tiendas de pelo negro de cabra.
   source: cantar-de-los-cantares-1
-checked_on: '2026-09-30'
+checked_on: '2026-10-12'
 status: verified

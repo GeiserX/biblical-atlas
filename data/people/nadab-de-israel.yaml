@@ -59,7 +59,9 @@ relations:
   checked_on: '2026-09-30'
   status: verified
 perspicacia: 1200003159#4
-checked_on: '2026-09-30'
+checked_on: '2026-10-12'
 status: verified
 distinct_from:
 - nadab-hijo-de-aaron
+- nadab-hijo-de-samai
+- nadab-hijo-de-jeiel

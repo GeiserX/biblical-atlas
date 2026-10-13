@@ -1,0 +1,33 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: omri-hijo-de-imri
+name: Omrí
+names:
+- name: Omrí
+perspicacia: 1200003324#4
+summary: Hombre de Judá, hijo de Imrí, del que salió Utái, residente de Jerusalén tras el destierro.
+reason: Perspicacia «Omrí», núm. 4; 1Cr 9:4.
+sources:
+- it-omri
+- 1-cronicas-9
+links:
+- title: 'Perspicacia: «Omrí»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Omr%C3%AD/
+  type: perspicacia
+relations:
+- type: kin
+  person: imri-hijo-de-bani
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-9
+  reason: '1Cr 9:4: Omrí, hijo de Imrí.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- omri
+- omri-de-benjamin
+- omri-hijo-de-miguel
+disambiguation: 'Omrí núm. 4 de Perspicacia: judaíta antepasado de Utái, residente de Jerusalén tras el destierro. No el rey
+  de Israel.'

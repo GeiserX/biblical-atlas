@@ -1,0 +1,41 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: isi-de-manases
+name: Isí
+names:
+- name: Isí
+perspicacia: 1200002213#3
+disambiguation: Isí el manasita del este del Jordán (1Cr 5:23, 24); no es ninguno de los otros Isí que numera Perspicacia
+  «Isí».
+distinct_from:
+- isi-hijo-de-apaim
+- isi-padre-de-zohet
+- isi-simeonita
+summary: Jefe de familia manasita que vivía al este del Jordán.
+reason: Perspicacia «Isí», núm. 3; 1Cr 5:23, 24.
+sources:
+- it-isi
+- 1-cronicas-5
+links:
+- title: 'Perspicacia: «Isí»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Is%C3%AD/
+  type: perspicacia
+relations:
+- type: lived_in
+  place: basan
+  inferred: false
+  sources:
+  - 1-cronicas-5
+  reason: '1Cr 5:23: los manasitas del este ocupaban la tierra de Basán a Baal-Hermón y el Hermón.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: kin
+  person: manases-hijo-de-jose
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-cronicas-5
+  reason: '1Cr 5:23, 24: jefe de una familia manasita del este del Jordán.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

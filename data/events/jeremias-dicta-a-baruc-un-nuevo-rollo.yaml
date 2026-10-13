@@ -1,0 +1,48 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jeremias-dicta-a-baruc-un-nuevo-rollo
+title: Jeremías dicta a Baruc un nuevo rollo
+type: writing
+date:
+  from: -623
+  to: -617
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 624 y 618 a.e.c. (tiempo narrativo: tras la quema del rollo, en el reinado de Jehoiaquim)'
+narrative_order:
+  series: jeremias
+  order: 236027
+places: []
+people:
+- jeremias-profeta
+- baruc-hijo-de-nerias
+present: []
+roles:
+  baruc-hijo-de-nerias: wrote
+  jeremias-profeta: spoke
+passages:
+- Jer 36:27-32
+summary: Jehová manda a Jeremías escribir otro rollo con lo mismo y anunciar que Jehoiaquim no tendrá quien reine en el trono
+  de David y que su cadáver quedará a la intemperie. Baruc lo escribe y se añaden más palabras.
+reason: 'Jer 36:27: después de la quema del rollo, que Perspicacia «Baruc», núm. 1, pone en 624; el reinado de Jehoiaquim
+  acaba en 618 (tabla A6). Siguen escondidos: el texto no dice dónde. Orden por fecha.'
+sources:
+- jeremias-36
+- it-baruc
+- it-jeremias-libro
+- tnm-a6-b
+links:
+- title: Jeremías 36 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/36/
+  type: bible
+- title: 'Perspicacia: «Baruc»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Baruc/
+  type: perspicacia
+history:
+- date: '2026-10-13'
+  change: 'El orden del relato pasa de 36027 a 236027: la serie sigue las fechas de los sucesos, porque el libro va por temas
+    y no en el orden en que pasaron.'
+  source: it-jeremias-libro
+checked_on: '2026-10-13'
+status: verified

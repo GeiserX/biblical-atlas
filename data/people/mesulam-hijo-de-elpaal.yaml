@@ -1,0 +1,44 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: mesulam-hijo-de-elpaal
+name: Mesulam
+names:
+- name: Mesulam
+perspicacia: 1200003014#1
+disambiguation: Mesulam hijo de Elpaal, benjamita; no el abuelo de Safán ni los muchos otros Mesulam.
+distinct_from:
+- mesulam-abuelo-de-safan
+- mesulam-hijo-de-hodavias
+- mesulam-hijo-de-mesilemit
+- mesulam-hijo-de-sefatias
+- salum-hijo-de-sadoc
+- mesulam-hijo-de-abihail
+- mesulam-hijo-de-zorobabel
+summary: Benjamita, hijo de Elpaal, cabeza de familia que vivió en Jerusalén.
+reason: Perspicacia «Mesulam», núm. 1; 1Cr 8:17, 18, 28.
+sources:
+- it-mesulam
+- 1-cronicas-8
+links:
+- title: 'Perspicacia: «Mesulam»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Mesulam/
+  type: perspicacia
+relations:
+- type: kin
+  person: elpaal
+  word: father
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  reason: 1Cr 8:18 lo cuenta entre los hijos de Elpaal.
+  checked_on: '2026-10-12'
+  status: verified
+- type: lived_in
+  place: jerusalen
+  inferred: false
+  sources:
+  - 1-cronicas-8
+  reason: '1Cr 8:28: los jefes de casas paternas de esta lista vivían en Jerusalén.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
