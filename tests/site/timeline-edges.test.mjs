@@ -165,8 +165,14 @@ for (const screen of Object.keys(SCREENS)) {
     });
     console.log(`${screen} Manasseh at 8 years: ${JSON.stringify(m)}`);
     assert.deepEqual(m, { title: 'Empieza antes y sigue después de lo que se ve: 716-661 a.e.c.', izq: true, der: true });
-    // The same reign held whole at a scale of centuries: no arrow, no tooltip.
+    // The same reign held whole at a scale of centuries: no arrow, no tooltip. On the phone its row falls below the strip
+    // at that scale, and a row out of sight is not drawn: scroll to it first.
     await goTo(p, -687.5, 400);
+    await p.evaluate(() => {
+      const m = window.BE.lineaMarcas().find((x) => x.id === 'periodo:manases-de-juda');
+      if (m?.visible) document.querySelector('#linea-cuerpo').scrollTop = Math.max(0, m.top - 40);
+    });
+    await frames(p);
     const whole = await p.evaluate(() => {
       const b = document.querySelector('#linea-filas .m[data-id="periodo:manases-de-juda"]');
       return b && { title: b.title, arrows: [...b.querySelectorAll('.m-sigue')].filter((e) => e.checkVisibility()).length };
