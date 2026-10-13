@@ -199,13 +199,15 @@ function crearMapa() {
     if (e?.error?.message) console.warn('Mapa:', e.error.message, url);
   });
   map.on('style.load', () => { cargado = true; montarCapas(); });
+  map.on('movestart', (e) => { enVuelo = !e.originalEvent; });
   map.on('moveend', () => {
+    enVuelo = false; cargarFondos();
     sucio.etiquetas = true; programar(); if (E.mapa === 'cortina') pintarCortina(); pintarNombresEncuadre(); if (pintarLeyenda.args) pintarLeyenda(...pintarLeyenda.args);
     // La entrada del historial guarda dónde se paró el mapa: Atrás, Adelante y una recarga lo devuelven así.
     const c = map.getCenter();
     BE.historia?.encuadre({ lon: c.lng, lat: c.lat, zoom: map.getZoom() });
   });
-  map.on('move', () => { if (imgsDom.length) colocarImgsDom(); if (E.mapa === 'cortina') pintarCortina(); pintarSituacion(); if (zonasArea.size) pintarChipsZona(); });
+  map.on('move', () => { cargarFondos(); if (imgsDom.length) colocarImgsDom(); if (E.mapa === 'cortina') pintarCortina(); pintarSituacion(); if (zonasArea.size) pintarChipsZona(); });
   map.on('resize', () => { if (imgsDom.length) colocarImgsDom(); });
   // Un clic en una marca HTML también llega a MapLibre: esa marca ya lo gestiona su propio manejador.
   const enMarca = (e) => !!e.originalEvent?.target?.closest?.('.maplibregl-marker');
@@ -250,19 +252,8 @@ function montarCapas() {
     // Los países de hoy chocan con nuestras regiones antiguas: solo aparecen a partir del zoom 8.
     if (/^label_country/.test(l.id)) map.setLayerZoomRange(l.id, Math.max(8, l.minzoom ?? 0), l.maxzoom ?? 24);
   }
-  if (estiloReserva && !ES_FILE) {
-    for (const b of BASES) {
-      map.addSource(`be-actual-${b.id}`, { type: 'image', url: urlBase(b, 'actual'), coordinates: esquinas(b.ext) });
-      map.addLayer({ id: `be-actual-${b.id}`, type: 'raster', source: `be-actual-${b.id}`, paint: { 'raster-fade-duration': 0, 'raster-opacity': opacidadGL(b) } });
-      capasBase.push(`be-actual-${b.id}`);
-    }
-  }
-  if (!ES_FILE) {
-    for (const b of BASES) {
-      map.addSource(`be-antiguo-${b.id}`, { type: 'image', url: urlBase(b, 'antiguo'), coordinates: esquinas(b.ext) });
-      map.addLayer({ id: `be-antiguo-${b.id}`, type: 'raster', source: `be-antiguo-${b.id}`, paint: { 'raster-fade-duration': 0, 'raster-opacity': opacidadGL(b) } });
-    }
-  } else if (!imgsDom.length) {
+  // Los fondos (be-antiguo-*, y be-actual-* con el estilo de reserva) los pone cargarFondos cuando se ven.
+  if (ES_FILE && !imgsDom.length) {
     // Desde file:// MapLibre no puede leer las imágenes (CORS). Van como <img> bajo el lienzo, alineadas a mano.
     for (const b of [...BASES].reverse()) {
       const img = document.createElement('img');
@@ -371,10 +362,55 @@ function aplicarModoMapa() {
 /** Capa «Relieve»: sin ella, el mapa antiguo queda en papel liso. */
 function aplicarRelieve() {
   if (!mapaListo) return;
+  cargarFondos();
   const ver = E.mapa === 'antiguo' && F.capas.relieve;
   for (const b of BASES) if (map.getLayer(`be-antiguo-${b.id}`)) map.setLayoutProperty(`be-antiguo-${b.id}`, 'visibility', ver ? 'visible' : 'none');
   for (const { img } of imgsDom) img.hidden = !ver;
   $('#app').classList.toggle('sin-relieve', !F.capas.relieve);
+}
+
+// ---------------------------------------------------------------------------
+// Fondos a demanda: cada imagen de BASES se pide la primera vez que se dibuja, y no antes. Pesan más que los datos, y
+// al abrir solo hace falta una: el Mediterráneo en el escritorio, el mundo en el móvil. Una imagen pedida se queda.
+// ---------------------------------------------------------------------------
+const MARGEN_BORDE = 0.06;     // fracción de la extensión que ocupa, de sobra, su borde fundido a transparente
+// Si el mapa vuela a otro encuadre porque lo pide el sitio (un enlace, una selección), no por un gesto: entonces no se
+// pide nada, porque lo de en medio solo se ve un instante, y lo del destino se pide al pararse.
+let enVuelo = false;
+/** Si la extensión `e` contiene la caja `v` ([oeste, sur, este, norte]) con un margen de `f` de su tamaño. */
+function contiene(e, v, f = 0) {
+  const dx = (e.este - e.oeste) * f, dy = (e.norte - e.sur) * f;
+  return v[0] >= e.oeste + dx && v[2] <= e.este - dx && v[1] >= e.sur + dy && v[3] <= e.norte - dy;
+}
+/** Si la imagen de `b` se dibuja en el encuadre de ahora: su zoom ya llega (con opacidad mayor que cero), su extensión
+    toca lo que se ve y ninguna imagen más fina, ya opaca a este zoom, lo tapa entero. Al acercarse, la imagen nueva
+    empieza transparente, así que llega mientras se funde. */
+function fondoALaVista(b) {
+  const z = map.getZoom(), c = map.getBounds(), v = [c.getWest(), c.getSouth(), c.getEast(), c.getNorth()], e = b.ext;
+  if (b.zoom && z <= b.zoom[0]) return false;
+  if (v[0] > e.este || v[2] < e.oeste || v[1] > e.norte || v[3] < e.sur) return false;
+  return !BASES.slice(BASES.indexOf(b) + 1).some((o) => z >= o.zoom[1] && contiene(o.ext, v, MARGEN_BORDE));
+}
+/** Pone las imágenes que el modo y el encuadre de ahora enseñan y aún no están: las antiguas en el mapa antiguo con la
+    capa «Relieve», las actuales solo con el estilo de reserva (sin OpenFreeMap) en el actual y en la cortina. Cada
+    capa va en su sitio: las actuales debajo de las antiguas, cada extensión encima de la anterior y todas debajo de la
+    cortina y de los datos. Desde file:// las pone colocarImgsDom. */
+function cargarFondos() {
+  if (!mapaListo || ES_FILE || enVuelo) return;
+  const estilos = [];
+  if (estiloReserva && E.mapa !== 'antiguo') estilos.push('actual');
+  if (E.mapa === 'antiguo' && F.capas.relieve) estilos.push('antiguo');
+  const orden = [...['actual', 'antiguo'].flatMap((s) => BASES.map((b) => `be-${s}-${b.id}`)), ...BASES.map((b) => `be-cortina-${b.id}`), 'be-formas-relleno'];
+  for (const estilo of estilos) {
+    for (const b of BASES) {
+      const id = `be-${estilo}-${b.id}`;
+      if (map.getSource(id) || !fondoALaVista(b)) continue;
+      map.addSource(id, { type: 'image', url: urlBase(b, estilo), coordinates: esquinas(b.ext) });
+      const antes = orden.slice(orden.indexOf(id) + 1).find((l) => map.getLayer(l));
+      map.addLayer({ id, type: 'raster', source: id, paint: { 'raster-fade-duration': 0, 'raster-opacity': opacidadGL(b) } }, antes);
+      if (estilo === 'actual') capasBase.push(id);
+    }
+  }
 }
 
 // ---------------------------------------------------------------------------
