@@ -246,13 +246,13 @@ test('every group of namesakes in data/ (scripts/homonyms.py) is told apart in t
   assert.deepEqual(page.pageErrors, []);
 });
 
-test('every group of namesakes on a 430-wide phone, in both lists: the first word that tells a row from its namesakes is on screen', async () => {
+test('every group of namesakes on a 430-wide phone, in both lists: what tells a row from its namesakes is on screen', async () => {
   // The phone cuts each line at about 25 characters. Two namesakes whose lines open alike («rey amalequita de tiempos
-  // de Balaam», «rey amalequita que venció Saúl») lost what told them apart: the shared words go, so the first word that
-  // differs, between the whole lines on screen, must be inside the cut.
+  // de Balaam», «rey amalequita que venció Saúl») lost what told them apart: the shared words go. So past the longest
+  // start a row's whole line shares with another row of the same name, at least three more characters, enough to read
+  // where the two part («hijo de Matus…» and «hijo de Metus…»), must be inside the cut, or the whole line.
   const groups = JSON.parse(execFileSync('python3', [path.join(ROOT, 'scripts/homonyms.py'), '--json'], { cwd: ROOT, encoding: 'utf8' }));
   const names = [...new Set(Object.values(groups).flat().map((g) => g.name))];
-  const words = (s) => s.split(/\s+/).filter(Boolean);
   const fails = [];
   let rowsChecked = 0;
   for (const list of LISTS) {
@@ -265,19 +265,17 @@ test('every group of namesakes on a 430-wide phone, in both lists: the first wor
           .map((r) => ({ full: r.querySelector(meta).textContent, shown: visible(r.querySelector(meta)) }));
       }, { name, meta: list.meta, fn: visibleText.toString() });
       for (const r of rows) {
-        const w = words(r.full);
-        let m = -1;
+        let shared = -1;
         for (const o of rows) {
           if (o === r) continue;
-          const v = words(o.full);
           let j = 0;
-          while (j < w.length && j < v.length && w[j] === v[j]) j++;
-          m = Math.max(m, j);
+          while (j < r.full.length && j < o.full.length && r.full[j] === o.full[j]) j++;
+          shared = Math.max(shared, j);
         }
-        if (m < 0) continue;
+        if (shared < 0) continue;
         rowsChecked++;
-        const need = w.slice(0, m + 1).join(' ');
-        if (m >= w.length || !r.shown.includes(need)) fails.push(`${list.name} ${name}: «${r.shown}» needs «${need}»`);
+        const need = r.full.slice(0, Math.min(r.full.length, shared + 3));
+        if (shared >= r.full.length || !r.shown.startsWith(need)) fails.push(`${list.name} ${name}: «${r.shown}» needs «${need}»`);
       }
     }
     assert.deepEqual(page.pageErrors, [], list.name);
