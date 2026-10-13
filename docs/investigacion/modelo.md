@@ -288,7 +288,7 @@ Las inversas sirven para saber si dos relaciones son el mismo par. `father` tien
 
 **`family`** dice en qué grupo de la tarjeta de familia sale el destino: `parents`, `spouses`, `children` o `siblings`. Son los mismos grupos y las mismas palabras que el sitio reconoce hoy.
 
-**Lo que se queda fuera.** Una relación cuyo texto no es una palabra del vocabulario lo lleva en `caption` y, visto desde el destino, en `inverse_caption`. Cada texto admitido está en `outside` del vocabulario con su porqué. Hoy son 20, que se reparten en 6 de compañeros, 4 apariciones y 10 que esperan una decisión y llevan `fix`.
+**Lo que se queda fuera.** Una relación cuyo texto no es una palabra del vocabulario lo lleva en `caption` y, visto desde el destino, en `inverse_caption`. Cada texto admitido está en `outside` del vocabulario con su porqué, y lo lleva al menos una relación: uno que no lleva ninguna es un error y se quita. Hoy son 12, 8 de compañeros y 4 apariciones. Los 10 que llevaban `fix` se quitaron al cerrarse K1, K2 y T1.
 
 Hoy hay 56 valores distintos de `relacion`, y 13 de `relacion_inversa` en 17 relaciones. De los 56, 33 pasan a una palabra, 2 a un tipo sin palabra («maestro» y «discípulo de»), 1 a `certainty` y 20 se quedan como texto. Las 608 relaciones sin `relacion` siguen sin palabra.
 
@@ -477,6 +477,7 @@ Ninguna dirección nombra una relación. Si una ola posterior lleva los tipos de
 Sale con código 1, siempre:
 
 - Una clave del esquema antiguo en cualquier fichero de `data/`. Es lo que delata una migración a medias, que de otro modo pasaría en verde.
+- Un texto de `outside` que no lleva ninguna relación.
 - Un `type` que no está en el vocabulario; un destino que falta, que no existe, que es la propia ficha o que es persona donde toca lugar.
 - Una `word` que no está en el vocabulario o que es de otro tipo; `word` y `caption` a la vez; `inverse_caption` sin `caption`.
 - Un hecho anidado sin `sources`, `reason` o `checked_on`; una relación, una parada o un candidato sin `status`; una relación sin `inferred`.
@@ -484,25 +485,26 @@ Sale con código 1, siempre:
 - Dos relaciones de una ficha con la misma clave; varias con el mismo tipo, destino y palabra cuando a alguna le falta `date.from`; dos con `caption`, el mismo tipo y el mismo destino cuando a alguna le falta `date.from`.
 - Una referencia `relation:` de la cobertura que no casa con ninguna relación, que casa con más de una o que no está en su forma canónica.
 - Un suceso con un `type` o un papel que no existen, o con un papel para alguien que no está en `people`.
+- Un aviso de un código de `PROMOTED` (ver «De aviso a error»): hoy `outside_pending`, `no_office`, `no_certainty`, `same_as_owner` y `title_type`. Escribe `ERROR [código]`.
 - Todo lo que ya rechazaba: fechas, fuentes, textos de más de 40 palabras, cobertura.
 
 ### Avisa
 
-Escribe el aviso y sale con 0. Cada aviso tiene un código:
+Escribe el aviso y sale con 0. Cada aviso tiene un código. Los cinco marcados «ya es error» pasaron a `PROMOTED` y ya no avisan: salen como error (ver «Rechaza»). La última columna es la cuenta tras la migración, no la de hoy.
 
 | Código | Cuándo | Hoy, tras la migración mecánica |
 |---|---|---:|
 | `wrong_owner` | Una relación con una palabra `owns: target` y sin copia en la otra ficha. | 6 |
 | `pair_twice` | El mismo par en las dos fichas: palabras inversas entre sí, o el mismo tipo sin palabra, salvo con fechas distintas. | 36 |
-| `outside_pending` | Un `caption` que está en `outside` con `fix`. | 10 |
+| `outside_pending` (ya es error) | Un `caption` que está en `outside` con `fix`. | 10 |
 | `unlisted_caption` | Un `caption` que no está en `outside`. | 0 |
 | `kin_without_word` | Una `kin` sin `word` ni `caption`. | 7 |
 | `bare_company` | Una `accompanies` sin `word`, sin `caption` y sin `date`. | 30 |
-| `no_office` | Una `succeeds` sin `office`. | 57 |
-| `no_certainty` | Una `same_as` sin `certainty`. | 7 |
-| `same_as_owner` | Una `same_as` en la ficha cuyo id va después. | 2 |
+| `no_office` (ya es error) | Una `succeeds` sin `office`. | 57 |
+| `no_certainty` (ya es error) | Una `same_as` sin `certainty`. | 7 |
+| `same_as_owner` (ya es error) | Una `same_as` en la ficha cuyo id va después. | 2 |
 | `no_reference` | Una relación sin referencia (sección 10). | 68 |
-| `title_type` | Un suceso sin `type` cuyo título empieza por «Nace», «Nacimiento», «Muere» o «Muerte»: el sitio lo lee del título. | 2 |
+| `title_type` (ya es error) | Un suceso sin `type` cuyo título empieza por «Nace», «Nacimiento», «Muere» o «Muerte»: el sitio lo lee del título. | 2 |
 | `type_without_role` | Un suceso con `type` y sin el papel de ese tipo, salvo con `roles: {}`. | 0 |
 | `shared_point` | Un río, un mar o un valle a menos de 0,5 km de otro lugar que no es una región, provincia, país, reino, desierto, llanura o valle (los que el mapa rotula aparte), y su `coord_note` no nombra a ese lugar. | 4 |
 
@@ -512,7 +514,7 @@ Las ocho relaciones de parentesco que hoy están al revés salen todas. Seis sal
 
 ### De aviso a error
 
-Cuando `main` llega a 0 avisos de un código, ese código pasa a ser un error en `validate.py`, en un cambio revisado, y ya no vuelve atrás. Hasta entonces, [`scripts/avisos-presupuesto.txt`](../../scripts/avisos-presupuesto.txt) dice cuántos avisos admite cada código y `validate.py` falla cuando uno pasa de su número. El número solo baja: quien arregla un aviso lo baja en el mismo cambio. No hay un modo aparte: cada código sube por separado, y `unlisted_caption`, que hoy tiene 3 (Eldad, Medad y María con Juan), sube cuando llegue a 0 y se haya fusionado la última rama de libro migrada.
+Cuando `main` llega a 0 avisos de un código, ese código pasa a ser un error en `validate.py`, en un cambio revisado, y ya no vuelve atrás: entra en `PROMOTED` y sale del presupuesto, porque cada código lo manda una sola lista y `validate.py` rechaza un presupuesto que nombra un código de `PROMOTED`. Ya son errores `outside_pending`, `no_office`, `no_certainty`, `same_as_owner` y `title_type`. Hasta entonces, [`scripts/avisos-presupuesto.txt`](../../scripts/avisos-presupuesto.txt) dice cuántos avisos admite cada código y `validate.py` falla cuando uno pasa de su número. El número solo baja: quien arregla un aviso lo baja en el mismo cambio. No hay un modo aparte: cada código sube por separado, y `unlisted_caption`, que hoy tiene 3 (Eldad, Medad y María con Juan), sube cuando llegue a 0 y se haya fusionado la última rama de libro migrada.
 
 ### Lo que `validate.py` no puede comprobar
 
@@ -575,7 +577,7 @@ Desde ese commit la base común de la rama y `main` es M, y las fusiones siguien
 | Puerta | Pasa si | Control negativo |
 |---|---|---|
 | El mapa cubre los datos | Cada clave y cada valor cerrado de `data/` tiene su entrada, cada ruta que lleva un valor cerrado casa con un solo `at`, y en `main` cada palabra de relación tiene su regla. Se pasa en `main` y en cada rama antes de migrarla. | Quitar una clave, un valor, una regla o una ruta del mapa. La puerta nombra lo que falta. |
-| El vocabulario es coherente | Cada inversa existe y vuelve, cada tipo y cada palabra tienen sus dos verbos, cada `caption` del mapa está en `outside`, dos cargos no comparten texto y dos cargos de una persona no chocan. | Quitar una inversa o un verbo; sacar el cargo de la clave. |
+| El vocabulario es coherente | Cada inversa existe y vuelve, cada tipo y cada palabra tienen sus dos verbos, cada `caption` del mapa estaba en `outside` al migrar `main` (los de K1, K2 y T1 salieron después, al cerrarse esas decisiones, y en una rama que se migre ahora avisan como `unlisted_caption`), dos cargos no comparten texto y dos cargos de una persona no chocan. | Quitar una inversa o un verbo; sacar el cargo de la clave. |
 | Los hechos anidados tienen de dónde copiar | Cada uno tiene un hecho que lo contiene con `checked_on`. | Quitar la fecha de un mes. |
 | La migración es la misma en todos lados | `migrate.py` sobre los datos de P da los datos de M, byte a byte. | Cambiar una regla del mapa. La puerta nombra el fichero. |
 | Una relación, una fecha | Cada relación que está en `main` y en la rama lleva el mismo `checked_on` después de migrar las dos. | Migrar la rama sin P como referencia. |
