@@ -345,24 +345,36 @@ function esFecha(x) {
 // ---------------------------------------------------------------------------
 // Homónimos en la lista: la línea que los distingue
 // ---------------------------------------------------------------------------
-/** El primer trozo de un texto de la ficha que puede distinguirla: su primera frase sin paréntesis, sin el nombre
-    delante, hasta la primera coma, saltando los trozos que solo citan la fuente («entrada núm. 2 de Perspicacia»). Una
-    frase que solo dice quién no es («No es el Jabín…») no distingue nada. */
+/** El primer trozo de un texto de la ficha que puede distinguirla: su primera frase sin paréntesis y sin el nombre
+    delante (dicho también de dos formas, «Paltí o Paltiel hijo de Lais», o con artículo, «El Matat padre de Helí»),
+    hasta la primera coma, saltando los trozos que solo citan la fuente («entrada núm. 2 de Perspicacia») y sin la
+    conjunción que la coma deja colgando («El padre de Zabud y, según Perspicacia…»). Una frase que solo dice quién no es
+    («No es el Jabín…») no distingue nada. */
 function distinguishingClause(text, names) {
-  let t = String(text || '').replace(/\s*\([^)]*\)/g, '').split(/;|\.\s+(?=[A-ZÁÉÍÓÚÑ¿«])/)[0].replace(/\.$/, '').trim();
-  for (const n of names) {
-    if (n && norm(t).startsWith(norm(n)) && /^[\s,]/.test(t.slice(n.length))) { t = t.slice(n.length).replace(/^[\s,]+/, ''); break; }
-  }
+  const sinNombre = (s) => {
+    const r = s.replace(/^(?:el|la)\s+/i, '');
+    for (const n of names) if (n && norm(r).startsWith(norm(n)) && /^[\s,]/.test(r.slice(n.length))) return r.slice(n.length).replace(/^[\s,]+/, '');
+    return null;
+  };
+  let t = String(text || '').replace(/\s*\([^)]*\)/g, '').split(/;|\.\s+(?=[A-ZÁÉÍÓÚÑ¿«\d])/)[0].replace(/\.$/, '').trim();
+  const resto = sinNombre(t);
+  if (resto != null) t = (/^[ou]\s/.test(resto) ? sinNombre(resto.slice(2)) : null) ?? resto;
   if (/^no\b/i.test(t)) return '';
-  return t.split(/,\s+/).find((part) => part && !/Perspicacia|\bnúm\./.test(part)) || '';
+  const part = t.split(/,\s+/).find((x) => x && !/Perspicacia|\bnúm\./.test(x)) || '';
+  return part.replace(/\s+(?:y|e|o|u|ni)$/, '');
 }
-/** La línea que distingue una ficha de otra que se llama igual (docs/ideas/homonimos.md): la sacamos de la propia ficha,
-    de `desambiguacion` y si no de `resumen`, que dicen el parentesco, la época o el lugar: «hijo de Jonatán» y «hijo de
-    Saúl y Rizpá». Los dos textos llegan con el detalle; antes no hay línea. Que ningún grupo de homónimos de data/ repita
-    la línea lo comprueba tests/site/search-namesakes.test.mjs con scripts/homonyms.py. */
+// Un trozo que empieza por el parentesco: «hijo de Jonatán», «Hijo menor de Moisés», «la nuera de Judá».
+const PARENTESCO = /^(?:(?:el|la|su|medi[oa]|segund[oa]|primer[oa]?|tercer[oa]?|cuart[oa]|últim[oa])\s+)?(?:hij[oa]|padre|madre|espos[oa]|herman[oa]|niet[oa]|bisniet[oa]|nuera|suegr[oa]|yerno|tío|tía|sobrin[oa]|prim[oa]|cuñad[oa]|abuel[oa]|descendiente|antepasad[oa]|primogénit[oa]|viuda|marido|concubina)\b/i;
+/** La línea que distingue una ficha de otra que se llama igual (docs/ideas/homonimos.md), sacada de la propia ficha: el
+    primer trozo de `desambiguacion` o de `resumen` que dice el parentesco («hijo de Jonatán» y «hijo de Saúl y
+    Rizpá»); si ninguno lo dice, el de `desambiguacion`, que dice la época, el lugar o el oficio («El rey de Guerar en
+    tiempos de Abrahán»), y si no hay, el de `resumen` («Ciudad de Benjamín»). Los dos textos llegan con el detalle;
+    antes no hay línea. Que ningún grupo de homónimos de data/ repita la línea lo comprueba
+    tests/site/search-namesakes.test.mjs con scripts/homonyms.py. */
 function distinguishingLine(sel) {
   const o = objetoSel(sel), names = [o?.nombre || o?.titulo, ...(o?.nombres || []).map((n) => n.nombre)];
-  return distinguishingClause(o?.desambiguacion, names) || distinguishingClause(o?.resumen, names);
+  const trozos = [distinguishingClause(o?.desambiguacion, names), distinguishingClause(o?.resumen, names)];
+  return trozos.find((x) => PARENTESCO.test(x)) || trozos.find(Boolean) || '';
 }
 /** Lo que enseña una fila de resultados, para la lista de arriba y la de la portada: la forma, la palabra del tipo, el
     título, la etiqueta, la línea que lo distingue de otra fila de `list` que se llama igual, el resto de la línea y la
