@@ -89,7 +89,9 @@ async function open(screen, hash = 't=50.3000') {
   page.on('pageerror', (e) => page.pageErrors.push(e.message));
   page.fondos = new Map();
   page.on('request', (r) => { const m = r.url().match(/\/maps\/([\w-]+\.webp)$/); if (m) page.fondos.set(m[1], null); });
-  page.on('requestfinished', async (r) => { const m = r.url().match(/\/maps\/([\w-]+\.webp)$/); if (m) page.fondos.set(m[1], (await r.sizes()).responseBodySize); });
+  // r.sizes() resolves after the event: the budget check waits for all of them, so no image counts as 0 bytes.
+  page.pendientes = [];
+  page.on('requestfinished', (r) => { const m = r.url().match(/\/maps\/([\w-]+\.webp)$/); if (m) page.pendientes.push(r.sizes().then((s) => page.fondos.set(m[1], s.responseBodySize))); });
   await page.route((u) => !u.href.startsWith(base) && !u.hostname.endsWith('unpkg.com'), (r) => r.abort());
   await page.goto(`${base}index.html#${hash}`, { waitUntil: 'domcontentloaded' });
   await still(page);
@@ -123,7 +125,9 @@ function assertOrder(order) {
 test('the first view asks only for the image it draws, under the budget, at 1440 by 900 and at 430', async () => {
   for (const screen of [DESKTOP, PHONE]) {
     const page = await open(screen);
-    const fondos = asked(page), bytes = fondos.reduce((s, f) => s + (page.fondos.get(f) || 0), 0);
+    await Promise.all(page.pendientes);
+    const fondos = asked(page), bytes = fondos.reduce((s, f) => s + page.fondos.get(f), 0);
+    for (const f of fondos) assert.ok(page.fondos.get(f) > 0, `${screen.name}: ${f} was asked for and never arrived`);
     const zoom = await page.evaluate(() => +window.__be.map.getZoom().toFixed(2));
     console.log(`${screen.name}: zoom ${zoom}, asked for ${fondos.join(', ') || 'nothing'}, ${bytes} bytes`);
     assert.deepEqual(fondos, [`${FIRST_VIEW[screen.name]}-antiguo.webp`], `${screen.name}: the first view asked for other backgrounds`);
