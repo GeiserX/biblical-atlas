@@ -1,0 +1,34 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: micaya-principe-de-jehosafat
+name: Micaya
+names:
+- name: Micaya
+perspicacia: 1200003034#3
+summary: Uno de los cinco príncipes que Jehosafat envió en su año tercero, con levitas y sacerdotes, a instruir a la gente
+  de Judá, ciudad por ciudad, en la Ley de Jehová.
+reason: Perspicacia «Micaya», núm. 3; 2Cr 17:7-9.
+sources:
+- it-micaya
+- 2-cronicas-17
+links:
+- title: 'Perspicacia: «Micaya»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Micaya/
+  type: perspicacia
+relations:
+- type: tie
+  person: jehosafat
+  word: master
+  sources:
+  - 2-cronicas-17
+  reason: '2Cr 17:7: Jehosafat manda llamar a sus príncipes, y Micaya es uno de ellos.'
+  inferred: false
+  checked_on: '2026-10-13'
+  status: verified
+disambiguation: Príncipe de Jehosafat que enseñó la Ley en Judá (Perspicacia «Micaya», núm. 3); no el profeta hijo de Imlá.
+checked_on: '2026-10-13'
+status: verified
+distinct_from:
+- maaca-hija-de-uriel
+- micaya-hijo-de-guemarias
+- micaya-hijo-de-imla
+- micaya-padre-de-acbor

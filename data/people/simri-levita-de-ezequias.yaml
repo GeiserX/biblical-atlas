@@ -1,0 +1,34 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: simri-levita-de-ezequias
+name: Simrí
+names:
+- name: Simrí
+perspicacia: 1200004052#4
+summary: Levita descendiente de Elizafán que ayudó a sacar lo impuro del templo en tiempos de Ezequías.
+reason: Perspicacia «Simrí», núm. 4; 2Cr 29:13-16.
+sources:
+- it-simri
+- 2-cronicas-29
+links:
+- title: 'Perspicacia: «Simrí»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Simr%C3%AD/
+  type: perspicacia
+disambiguation: El descendiente de Elizafán de los días de Ezequías (Perspicacia «Simrí», núm. 4); no el portero hijo de Hosá
+  ni los otros Simrí.
+distinct_from:
+- simri-hijo-de-hosa
+- simri-hijo-de-semaya
+- simri-padre-de-jediael
+relations:
+- type: kin
+  person: elizafan-hijo-de-uziel
+  word: ancestor
+  inferred: false
+  sources:
+  - 2-cronicas-29
+  - it-simri
+  reason: 2Cr 29:13 lo cuenta entre los hijos de Elizafán; Perspicacia «Simrí», núm. 4, lo llama su descendiente.
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified

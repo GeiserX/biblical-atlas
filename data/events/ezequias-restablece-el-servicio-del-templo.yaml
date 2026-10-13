@@ -1,0 +1,36 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: ezequias-restablece-el-servicio-del-templo
+title: Ezequías ofrece expiación por todo Israel y restablece el servicio del templo
+date:
+  from: -744
+  to: -744
+  precision: month
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: nisán de 745 a.e.c.
+  detail:
+    month: nisan
+narrative_order:
+  series: 2-cronicas
+  order: 29020
+places:
+- monte-moria
+- jerusalen
+people:
+- ezequias
+present:
+- ezequias
+passages:
+- 2Cr 29:20-36
+summary: Ezequías sube con los príncipes al templo. Se ofrecen toros, carneros, corderos y machos cabríos por el pecado del
+  reino y de todo Israel; los levitas tocan los instrumentos de David y la congregación trae miles de sacrificios.
+reason: '2Cr 29:17, 20: acabada la purificación el 16 del primer mes, el rey madruga y sube al templo; Perspicacia «Ezequías»
+  pone entonces la expiación, en el primer año de su reinado, contado desde nisán de 745.'
+sources:
+- 2-cronicas-29
+- it-ezequias
+- tnm-a6-b
+- it-semaya
+checked_on: '2026-10-13'
+status: verified

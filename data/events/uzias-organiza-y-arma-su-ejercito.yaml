@@ -1,0 +1,45 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: uzias-organiza-y-arma-su-ejercito
+title: Uzías organiza su ejército y hace máquinas de guerra
+date:
+  from: -828
+  to: -776
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 829 y 777 a.e.c. (tiempo narrativo: reinando Uzías, antes de que lo hiriera la lepra)'
+narrative_order:
+  series: 2-cronicas
+  order: 26011
+  after: uzias-construye-torres-y-cisternas
+places:
+- jerusalen
+people:
+- uzias
+- hananias-principe-de-uzias
+- jeiel-secretario
+- maaseya-funcionario
+present:
+- uzias
+passages:
+- 2Cr 26:11-15
+summary: 'Jeiel y Maaseya registran el ejército de Uzías bajo el mando de Hananías: 307.500 hombres a las órdenes de 2.600
+  jefes. Uzías los arma y pone en las torres de Jerusalén máquinas que lanzan flechas y piedras.'
+reason: 2Cr 26:11-15; Perspicacia «Uzías», núm. 3, párr. 4, y «Jerusalén». Las máquinas están en Jerusalén; el texto no dice
+  dónde se hizo el registro. Su reinado va de 829 (A6-A) a 777, cuando lo sucede Jotán (A6-B).
+sources:
+- 2-cronicas-26
+- it-uzias
+- it-jerusalen
+- tnm-a6-a
+- tnm-a6-b
+links:
+- title: 2 Crónicas 26 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-Cr%C3%B3nicas/26/
+  type: bible
+- title: 'Perspicacia: «Uzías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Uz%C3%ADas/
+  type: perspicacia
+checked_on: '2026-10-13'
+status: verified

@@ -1,0 +1,35 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hasabias-levita-de-josias
+name: Hasabías
+names:
+- name: Hasabías
+perspicacia: 1200001900#5
+summary: Uno de los jefes de los levitas en el reinado de Josías. Junto a Conanías y los demás jefes, dio animales a los levitas
+  para sacrificarlos en la gran Pascua.
+reason: Perspicacia «Hasabías», núm. 5; 2Cr 35:9.
+sources:
+- it-hasabias
+- 2-cronicas-35
+links:
+- title: 'Perspicacia: «Hasabías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hasab%C3%ADas/
+  type: perspicacia
+disambiguation: Jefe levita de la Pascua de Josías (2Cr 35:9; Perspicacia «Hasabías», núm. 5); no los Hasabías de tiempos
+  de David.
+relations:
+- type: holds_office
+  office: leader
+  inferred: false
+  sources:
+  - 2-cronicas-35
+  reason: 2Cr 35:9 lo cuenta entre los jefes de los levitas.
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified
+distinct_from:
+- hasabias-hebronita
+- hasabias-hijo-de-amasias
+- hasabias-hijo-de-jedutun
+- hasabias-hijo-de-quemuel
+- hasabias-padre-de-azricam

@@ -1,0 +1,58 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: berekias-hijo-de-mesilemot
+name: Berekías
+names:
+- name: Berekías
+perspicacia: 1200000650#3
+disambiguation: Berekías hijo de Mesilemot, jefe de Efraín en días de Acaz; no el padre del profeta Zacarías ni los demás
+  Berekías.
+distinct_from:
+- berekias-hijo-de-ido
+- berekias-hijo-de-asa
+- berekias-hijo-de-simea
+- berekias-hijo-de-zorobabel
+- berekias-portero
+date:
+  from: -759
+  to: -759
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 760 a.e.c.
+summary: Uno de los jefes de Efraín que, tras oír al profeta Oded, no dejaron entrar en Samaria a los cautivos de Judá. Los
+  vistieron, les dieron de comer y los devolvieron.
+reason: Perspicacia «Berekías», núm. 3; 2Cr 28:12-15. Fecha según Perspicacia «Jehohanán», núm. 4.
+sources:
+- it-berekias
+- 2-cronicas-28
+- it-jehohanan
+links:
+- title: 'Perspicacia: «Berekías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Berek%C3%ADas/
+  type: perspicacia
+- title: 2 Crónicas 28 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-Cr%C3%B3nicas/28/
+  type: bible
+relations:
+- type: kin
+  person: mesilemot-padre-de-berekias
+  word: father
+  inferred: false
+  sources:
+  - 2-cronicas-28
+  - it-berekias
+  reason: '2Cr 28:12: Berekías hijo de Mesilemot.'
+  checked_on: '2026-10-13'
+  status: verified
+- type: holds_office
+  office: leader
+  inferred: false
+  sources:
+  - 2-cronicas-28
+  - it-berekias
+  reason: 2Cr 28:12 lo cuenta entre los jefes de los efraimitas que se enfrentaron al ejército.
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified

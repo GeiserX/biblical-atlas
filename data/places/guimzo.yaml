@@ -1,0 +1,28 @@
+# biblical-atlas: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: guimzo
+name: Guimzó
+names:
+- name: Guimzó
+type: city
+lat: 31.929705
+lon: 34.946809
+precision: point
+coord_source: openbible:a5dd9e3
+coord_url: https://www.openbible.info/geo/ancient/a5dd9e3/gimzo
+coord_note: 'Primera identificación de OpenBible, Jimzu: es la Gimzu con la que Perspicacia la suele identificar.'
+summary: Ciudad de Judá que los filisteos tomaron con sus pueblos dependientes en tiempos de Acaz. Suele identificarse con
+  Gimzu, a unos 23 km al sureste de Tel Aviv-Yafo.
+reason: 'Perspicacia «Guimzó»; 2Cr 28:18. OpenBible: solo el punto.'
+sources:
+- it-guimzo
+- openbible-geo
+- 2-cronicas-28
+links:
+- title: 'Perspicacia: «Guimzó»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Guimz%C3%B3/
+  type: perspicacia
+- title: 2 Crónicas 28 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-Cr%C3%B3nicas/28/
+  type: bible
+checked_on: '2026-10-13'
+status: verified

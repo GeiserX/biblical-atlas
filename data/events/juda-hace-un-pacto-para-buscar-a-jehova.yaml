@@ -1,0 +1,37 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: juda-hace-un-pacto-para-buscar-a-jehova
+title: Judá jura en Jerusalén buscar a Jehová
+date:
+  from: -962
+  to: -962
+  precision: month
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: sivan de 963 a.e.c.
+  detail:
+    month: sivan
+narrative_order:
+  series: 2-cronicas
+  order: 15008
+places:
+- jerusalen
+- juda
+- benjamin
+- region-montanosa-de-efrain
+people:
+- asa
+present:
+- asa
+passages:
+- 2Cr 15:8-15
+summary: Tras la profecía, Asá retira los ídolos de Judá, de Benjamín y de las ciudades tomadas en Efraín y repara el altar.
+  Judá y muchos venidos de Israel ofrecen sacrificios y juran, con gran alegría, buscar a Jehová.
+reason: 2Cr 15:10 da el tercer mes del año 15 de Asá; Perspicacia «Asá», núm. 1, y «Azarías», núm. 6, ponen el pacto en 963
+  a.e.c. El tercer mes es sivan.
+sources:
+- 2-cronicas-15
+- it-asa
+- it-azarias
+checked_on: '2026-10-13'
+status: verified

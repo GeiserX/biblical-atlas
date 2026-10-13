@@ -1,0 +1,35 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: semaya-levita-de-jehosafat
+name: Semaya
+names:
+- name: Semaya
+perspicacia: 1200004000#7
+summary: Levita del grupo que Jehosafat mandó en su año tercero a recorrer las ciudades de Judá para instruir al pueblo con
+  el libro de la Ley.
+reason: Perspicacia «Semaya», núm. 7; 2Cr 17:7-9.
+sources:
+- it-semaya
+- 2-cronicas-17
+links:
+- title: 'Perspicacia: «Semaya»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Semaya/
+  type: perspicacia
+disambiguation: Levita que Jehosafat mandó a instruir en la Ley (Perspicacia «Semaya», núm. 7); no el profeta de los días de Rehoboam.
+checked_on: '2026-10-13'
+status: verified
+distinct_from:
+- semaya-de-nehelam
+- semaya-padre-de-delaya
+- semaya-padre-de-uriya
+- semaya-profeta
+- semaya-levita-de-ezequias
+- semaya-ayudante-de-core
+- semaya-hijo-de-galal
+- semaya-hijo-de-hasub
+- semaya-hijo-de-joel
+- semaya-hijo-de-netanel
+- semaya-hijo-de-obed-edom
+- semaya-hijo-de-secanias
+- semaya-jefe-de-la-casa-de-elizafan
+- semaya-levita-de-josias
+- semaya-simeonita

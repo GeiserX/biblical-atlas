@@ -1,0 +1,24 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: netanias-levita-de-jehosafat
+name: Netanías
+names:
+- name: Netanías
+perspicacia: 1200003237#2
+summary: Levita del grupo que Jehosafat mandó en su año tercero a recorrer las ciudades de Judá para instruir al pueblo con
+  el libro de la Ley.
+reason: Perspicacia «Netanías», núm. 2; 2Cr 17:7-9.
+sources:
+- it-netanias
+- 2-cronicas-17
+links:
+- title: 'Perspicacia: «Netanías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Netan%C3%ADas/
+  type: perspicacia
+disambiguation: Levita que Jehosafat mandó a instruir en la Ley (Perspicacia «Netanías», núm. 2); no el padre de Ismael ni el
+  padre de Jehudí.
+checked_on: '2026-10-13'
+status: verified
+distinct_from:
+- netanias-hijo-de-elisama
+- netanias-hijo-de-selemias
+- netanias-hijo-de-asaf

@@ -1,0 +1,33 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: secanias-ayudante-de-core
+name: Secanías
+names:
+- name: Secanías
+perspicacia: 1200003977#2
+disambiguation: Ayudante de Coré en tiempos de Ezequías (2Cr 31:15). Perspicacia «Secanías», núm. 2; no es el cabeza del décimo
+  turno sacerdotal ni el descendiente de David.
+distinct_from:
+- secanias-de-tiempos-de-david
+- secanias-hijo-de-abdias
+summary: Levita que, en el reinado de Ezequías, repartía con fidelidad las porciones de sus hermanos en las ciudades de los
+  sacerdotes, bajo la dirección del portero Coré.
+reason: Perspicacia «Secanías», núm. 2; 2Cr 31:14, 15.
+sources:
+- it-secanias
+- 2-cronicas-31
+links:
+- title: 'Perspicacia: «Secanías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Secan%C3%ADas/
+  type: perspicacia
+relations:
+- inferred: false
+  type: accompanies
+  person: core-hijo-de-imna
+  word: fellow_worker
+  sources:
+  - 2-cronicas-31
+  reason: '2Cr 31:15: repartía las porciones en las ciudades de los sacerdotes bajo la dirección de Coré.'
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified

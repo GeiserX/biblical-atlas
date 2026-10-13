@@ -1,0 +1,33 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: salum-padre-de-jehizquias
+name: Salum
+names:
+- name: Salum
+perspicacia: 1200003933#6
+disambiguation: Efraimita, padre de Jehizquías (2Cr 28:12); no el rey de Israel, ni Jehoacaz de Judá, ni el marido de Huldá,
+  ni el tío de Jeremías, ni el padre de Maaseya.
+distinct_from:
+- jehoacaz-de-juda
+- salum-hijo-de-ticva
+- salum-padre-de-maaseya
+- salum-de-israel
+- salum-tio-de-jeremias
+- salum-hijo-de-sadoc
+- salum-hijo-de-shaul
+- salum-hijo-de-sismai
+- salum-jefe-de-los-porteros
+- silem
+summary: Efraimita, padre de Jehizquías, uno de los jefes de la tribu que se opusieron a esclavizar a los cautivos de Judá.
+reason: Perspicacia «Salum», núm. 6; 2Cr 28:12.
+sources:
+- it-salum
+- 2-cronicas-28
+links:
+- title: 'Perspicacia: «Salum»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Salum/
+  type: perspicacia
+- title: 2 Crónicas 28 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-Cr%C3%B3nicas/28/
+  type: bible
+checked_on: '2026-10-13'
+status: verified

@@ -1,0 +1,40 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: abdias-principe-de-jehosafat
+name: Abdías
+names:
+- name: Abdías
+perspicacia: 1200003287#5
+summary: Uno de los cinco príncipes que Jehosafat envió en su año tercero, con levitas y sacerdotes, a instruir a la gente
+  de Judá, ciudad por ciudad, en la Ley de Jehová.
+reason: Perspicacia «Abdías», núm. 5; 2Cr 17:7-9.
+sources:
+- it-abdias
+- 2-cronicas-17
+links:
+- title: 'Perspicacia: «Abdías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Abd%C3%ADas/
+  type: perspicacia
+relations:
+- type: tie
+  person: jehosafat
+  word: master
+  sources:
+  - 2-cronicas-17
+  reason: '2Cr 17:7: Jehosafat manda llamar a sus príncipes, y Abdías es uno de ellos.'
+  inferred: false
+  checked_on: '2026-10-13'
+  status: verified
+disambiguation: Príncipe de Jehosafat que enseñó la Ley en Judá (Perspicacia «Abdías», núm. 5); no el mayordomo de Acab ni
+  el profeta.
+checked_on: '2026-10-13'
+status: verified
+distinct_from:
+- abdias-mayordomo-de-acab
+- abdias-profeta
+- abdias-levita-de-josias
+- abdias-el-gadita
+- abdias-hijo-de-arnan
+- abdias-hijo-de-azel
+- abdias-hijo-de-izrahias
+- abdias-hijo-de-semaya
+- abdias-padre-de-ismaya

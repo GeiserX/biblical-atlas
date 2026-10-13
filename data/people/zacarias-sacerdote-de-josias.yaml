@@ -1,0 +1,60 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: zacarias-sacerdote-de-josias
+name: Zacarías
+names:
+- name: Zacarías
+perspicacia: 1200004681#19
+summary: Sacerdote principal del reinado de Josías. Con Hilquías y Jehiel, al frente de la casa de Dios, dio a los sacerdotes
+  2.600 animales y 300 reses para la Pascua del año 18 del rey.
+reason: Perspicacia «Zacarías», núm. 19; 2Cr 35:8.
+sources:
+- it-zacarias
+- 2-cronicas-35
+links:
+- title: 'Perspicacia: «Zacarías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zacar%C3%ADas/
+  type: perspicacia
+disambiguation: Uno de los tres jefes del templo que dieron animales para la Pascua de Josías (2Cr 35:8; Perspicacia «Zacarías»,
+  núm. 19); no el profeta ni ningún otro Zacarías.
+relations:
+- type: holds_office
+  office: leader
+  inferred: false
+  sources:
+  - 2-cronicas-35
+  reason: 2Cr 35:8 lo pone entre quienes dirigían la casa de Dios.
+  checked_on: '2026-10-13'
+  status: verified
+- type: holds_office
+  office: priest
+  inferred: true
+  sources:
+  - it-zacarias
+  - 2-cronicas-35
+  reason: Perspicacia «Zacarías», núm. 19, lo cuenta entre los tres sacerdotes principales que dieron animales para la Pascua
+    (2Cr 35:8).
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified
+distinct_from:
+- zacarias-abuelo-de-ezequias
+- zacarias-de-israel
+- zacarias-descendiente-de-isias
+- zacarias-el-rubenita
+- zacarias-hijo-de-hosa
+- zacarias-hijo-de-jeberekias
+- zacarias-hijo-de-jehoiada
+- zacarias-hijo-de-meselemias
+- zacarias-musico
+- zacarias-padre-de-ido
+- zacarias-padre-de-juan
+- zacarias-profeta
+- zacarias-trompetista
+- zeker
+- zacarias-hijo-de-benaya
+- zacarias-hijo-de-jehosafat
+- zacarias-levita-de-ezequias
+- zacarias-principe-de-jehosafat
+- zacarias-consejero-de-uzias
+- zacarias-levita-de-josias

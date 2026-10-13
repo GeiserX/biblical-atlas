@@ -1,0 +1,38 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: los-principes-de-juda-apartan-a-jehoas-de-jehova
+title: Los príncipes de Judá apartan a Jehoás de Jehová
+date:
+  from: -875
+  to: -857
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 876 y 858 a.e.c. (tiempo narrativo: después de morir Jehoiadá y antes de la muerte del rey)'
+narrative_order:
+  series: 2-cronicas
+  order: 24017
+  after: jehoiada-pone-un-cofre-para-reparar-el-templo
+places:
+- jerusalen
+people:
+- jehoas-de-juda
+present:
+- jehoas-de-juda
+passages:
+- 2Cr 24:17-19
+summary: Muerto Jehoiadá, los príncipes de Judá se inclinan ante Jehoás y el rey los escucha. Dejan la casa de Jehová por
+  los postes sagrados y los ídolos, y desoyen a los profetas que Dios les manda.
+reason: 2Cr 24:17-19; Perspicacia «Jehoás», núm. 1. Tras morir Jehoiadá, que vivía en el año 23 del rey (876 a.e.c., Perspicacia
+  «Gat»), y antes de 858 (tabla A6-A). Los príncipes acuden al rey, que reinaba en Jerusalén (2Cr 24:1).
+sources:
+- 2-cronicas-24
+- it-jehoas
+- it-gat
+- tnm-a6-a
+links:
+- title: 2 Crónicas 24 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-cronicas/24/
+  type: bible
+checked_on: '2026-10-13'
+status: verified

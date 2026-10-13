@@ -1,0 +1,51 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: mahat-levita-de-ezequias
+name: Máhat
+names:
+- name: Máhat
+perspicacia: 1200002845#2
+summary: Levita cohatita, hijo de Amasái, que limpió el templo en el primer año de Ezequías. Perspicacia lo identifica con
+  el Máhat que luego cuidó las contribuciones bajo Conanías.
+reason: Perspicacia «Máhat», núm. 2; 2Cr 29:12, 15, 16; 31:13.
+sources:
+- it-mahat
+- 2-cronicas-29
+- 2-cronicas-31
+links:
+- title: 'Perspicacia: «Máhat»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/M%C3%A1hat/
+  type: perspicacia
+disambiguation: El cohatita de los días de Ezequías (Perspicacia «Máhat», núm. 2); no el antepasado de Samuel y de Hemán (núm.
+  1), aunque los dos son hijos de un Amasái.
+distinct_from:
+- mahat-hijo-de-amasai
+relations:
+- type: kin
+  person: amasai-padre-de-mahat
+  word: father
+  inferred: false
+  sources:
+  - 2-cronicas-29
+  reason: '2Cr 29:12: «Máhat hijo de Amasái», entre los cohatitas.'
+  checked_on: '2026-10-13'
+  status: verified
+- inferred: false
+  type: accompanies
+  person: conanias-de-tiempos-de-ezequias
+  word: fellow_worker
+  sources:
+  - 2-cronicas-31
+  reason: '2Cr 31:13: uno de los diez levitas que ayudaban a Conanías con las contribuciones, por orden del rey.'
+  checked_on: '2026-10-13'
+  status: verified
+- inferred: false
+  type: accompanies
+  person: simei-hermano-de-conanias
+  word: fellow_worker
+  sources:
+  - 2-cronicas-31
+  reason: '2Cr 31:12, 13: ayudante de Simeí, el segundo encargado de las contribuciones, por orden del rey.'
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified

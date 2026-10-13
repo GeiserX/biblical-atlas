@@ -1,0 +1,38 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jeiel-hijo-de-matanias
+name: Jeiel
+names:
+- name: Jeiel
+perspicacia: 1200002406#6
+disambiguation: El levita asafita antepasado de Jahaziel (2Cr 20:14); no el benjamita de Gabaón, el rubenita, el hijo de Hotam
+  ni los músicos de David.
+distinct_from:
+- jaaziel
+- jeiel-de-gabaon
+- jeiel-el-rubenita
+- jeiel-hijo-de-hotam
+- jeiel-portero
+- jeiel-secretario
+- jeiel-levita-de-josias
+summary: Levita descendiente de Asaf, hijo de Matanías y bisabuelo de Jahaziel, el que animó a Jehosafat y a Judá a no tener
+  miedo.
+reason: Perspicacia «Jeiel», núm. 6; 2Cr 20:14.
+sources:
+- it-jeiel
+- 2-cronicas-20
+links:
+- title: 'Perspicacia: «Jeiel»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jeiel/
+  type: perspicacia
+relations:
+- type: kin
+  person: matanias-antepasado-de-jahaziel
+  word: father
+  sources:
+  - 2-cronicas-20
+  reason: '2Cr 20:14: Jeiel, hijo de Matanías.'
+  inferred: false
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified

@@ -1,0 +1,38 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: manases-se-humilla-en-babilonia
+title: Manasés, cautivo en Babilonia, se humilla y Jehová le devuelve el trono
+date:
+  from: -715
+  to: -660
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 716 y 661 a.e.c. (tiempo narrativo: durante el reinado de Manasés, después de los avisos de los profetas)'
+narrative_order:
+  series: 2-cronicas
+  order: 33011
+  after: jehova-anuncia-por-sus-profetas-la-ruina-de-jerusalen
+places:
+- babilonia
+- jerusalen
+people:
+- manases-de-juda
+present:
+- manases-de-juda
+passages:
+- 2Cr 33:11-13
+summary: Los jefes del ejército asirio apresan a Manasés y lo llevan encadenado a Babilonia. Allí se humilla y ruega a Jehová,
+  que lo escucha y lo repone en Jerusalén; desde entonces reconoce que Jehová es el Dios verdadero.
+reason: '2Cr 33:11-13; Perspicacia «Manasés», núm. 4, párr. 2 y 3, que cuenta Babilonia entre las ciudades reales de Asiria.
+  El texto no da el año: cae en su reinado (tabla A6-B) y después de los avisos de 33:10.'
+sources:
+- 2-cronicas-33
+- it-manases
+- tnm-a6-b
+links:
+- title: 'Perspicacia: «Manasés»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Manas%C3%A9s/
+  type: perspicacia
+checked_on: '2026-10-13'
+status: verified

@@ -1,0 +1,36 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: ezequias-invita-a-todo-israel-a-la-pascua
+title: Ezequías invita a Israel y a Judá a la Pascua de Jerusalén
+date:
+  from: -744
+  to: -744
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 745 a.e.c.
+narrative_order:
+  series: 2-cronicas
+  order: 30001
+places:
+- jerusalen
+- territorio-de-efrain
+- manases
+- zabulon
+people:
+- ezequias
+present:
+- ezequias
+passages:
+- 2Cr 30:1-12
+summary: Faltan sacerdotes santificados, así que el rey y la congregación pasan la Pascua al segundo mes. Los correos llevan
+  sus cartas de Beer-Seba a Dan; en Efraín, Manasés y Zabulón se burlan, pero algunos se humillan y van.
+reason: 2Cr 30:2, 3; Perspicacia «Ezequías» dice que aplicó la ley de la Pascua tardía, y «Efraín» pone esta Pascua en su
+  primer año, que «Ezequías» cuenta desde nisán de 745. Las cartas salen antes del segundo mes.
+sources:
+- 2-cronicas-30
+- it-ezequias
+- it-efrain
+- tnm-a6-b
+checked_on: '2026-10-13'
+status: verified

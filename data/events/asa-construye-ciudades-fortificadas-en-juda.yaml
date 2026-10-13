@@ -1,0 +1,32 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: asa-construye-ciudades-fortificadas-en-juda
+title: Asá fortifica ciudades de Judá en los años de paz
+date:
+  from: -977
+  to: -967
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 978 y 968 a.e.c. (tiempo narrativo: los diez primeros años de Asá, en paz)'
+narrative_order:
+  series: 2-cronicas
+  order: 14006
+places:
+- juda
+present: []
+people:
+- asa
+passages:
+- 2Cr 14:6-8
+summary: Mientras hay paz, Asá anima a Judá a levantar ciudades con murallas, torres, puertas y barras. Cuenta con 300.000
+  soldados de Judá y 280.000 arqueros de Benjamín.
+reason: '2Cr 14:1, 6-8; Perspicacia «Asá», núm. 1: paz en sus diez primeros años, desde 978 (A6-A), antes del ataque de Zérah
+  en 967. El texto no nombra las ciudades: no sitúa a nadie.'
+sources:
+- 2-cronicas-14
+- it-asa
+- tnm-a6-a
+- it-zerah
+checked_on: '2026-10-13'
+status: verified
