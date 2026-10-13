@@ -188,6 +188,7 @@ Lo que comprobamos en los cuatro, con [`capturas.mjs`](mockups/viajes/capturas.m
 - Ningún error de consola, ningún fichero sin cargar y nada que se salga a lo ancho, en 32 capturas.
 - Nada que se toca mide menos de 32 px, salvo los enlaces dentro de una frase.
 - La primera visita llega a un tramo con el mapa encuadrado en él, en el ordenador y en el teléfono: una pulsación en la línea, dos en el mapa, tres en la hoja y cuatro en el cuaderno.
+- Un enlace con un viaje que no existe (`#viaje=no-existe`) no deja la página en blanco: el cuaderno, la hoja y la línea vuelven a la lista, y el mapa abre el viaje a Roma.
 
 ## 7. Qué recomendamos
 
