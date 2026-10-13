@@ -19,6 +19,7 @@ sources:
 - openbible-geo
 - 2-corintios-1
 - 2-corintios-9
+- 1-tesalonicenses-1
 links:
 - title: 'Perspicacia: «Acaya»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Acaya/
@@ -26,5 +27,5 @@ links:
 - title: Hechos 18 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/hechos/18/
   type: bible
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified
