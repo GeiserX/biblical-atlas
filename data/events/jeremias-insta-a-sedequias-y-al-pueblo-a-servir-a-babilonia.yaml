@@ -14,7 +14,7 @@ date:
   text: 614 a.e.c.
 narrative_order:
   series: jeremias
-  order: 27012
+  order: 527012
 places:
 - jerusalen
 people:
@@ -29,7 +29,7 @@ passages:
 summary: 'Jeremías repite al rey el mensaje del yugo y avisa a sacerdotes y pueblo de que sus profetas mienten: lo que queda
   en el templo, el palacio y la ciudad irá también a Babilonia hasta que Jehová lo devuelva.'
 reason: 'Jer 28:1 lo pone en el año cuarto de Sedequías, 614 según Perspicacia «Seraya», núm. 5. El «Jehoiaquim» de 27:1 quizá
-  es error de copista (Perspicacia «Sedequías», núm. 4). Jer 27:17, 19: «esta ciudad», Jerusalén.'
+  es error de copista (Perspicacia «Sedequías», núm. 4). Jer 27:17, 19: «esta ciudad», Jerusalén. Orden por fecha.'
 sources:
 - jeremias-27
 - jeremias-28
@@ -44,5 +44,10 @@ links:
 - title: 'Perspicacia: «Sedequías»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sedequ%C3%ADas/
   type: perspicacia
-checked_on: '2026-10-12'
+history:
+- date: '2026-10-13'
+  change: 'El orden del relato pasa de 27012 a 527012: la serie sigue las fechas de los sucesos, porque el libro va por temas
+    y no en el orden en que pasaron.'
+  source: it-jeremias-libro
+checked_on: '2026-10-13'
 status: verified

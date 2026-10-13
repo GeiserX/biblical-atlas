@@ -11,7 +11,7 @@ date:
   text: 'entre 609 y 607 a.e.c. (tiempo narrativo: durante el último sitio de Jerusalén)'
 narrative_order:
   series: jeremias
-  order: 34008
+  order: 634008
 places:
 - jerusalen
 - monte-moria
@@ -27,7 +27,7 @@ passages:
 summary: En la ciudad sitiada, Sedequías hace con el pueblo un pacto ante Jehová, en el templo, para liberar a los esclavos
   hebreos. Todos cumplen, pero luego los obligan a volver a servir.
 reason: 'Jer 34:8-11, 15, 16, 18, 19. Perspicacia «Sedequías», núm. 4: no era año de Jubileo; al parecer los volvieron a esclavizar
-  cuando los babilonios levantaron el sitio ante Egipto. Sitio de 609-607 (estudio 3).'
+  cuando los babilonios levantaron el sitio ante Egipto. Sitio de 609-607 (estudio 3). Orden por fecha.'
 sources:
 - jeremias-34
 - it-sedequias
@@ -43,5 +43,10 @@ links:
 - title: 'Perspicacia: «Pacto»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Pacto/
   type: perspicacia
-checked_on: '2026-10-12'
+history:
+- date: '2026-10-13'
+  change: 'El orden del relato pasa de 34008 a 634008: la serie sigue las fechas de los sucesos, porque el libro va por temas
+    y no en el orden en que pasaron.'
+  source: it-jeremias-libro
+checked_on: '2026-10-13'
 status: verified

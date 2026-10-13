@@ -12,7 +12,7 @@ date:
   text: 'entre 609 y 607 a.e.c. (tiempo narrativo: durante el último sitio de Jerusalén, con Lakís y Azecá aún en pie)'
 narrative_order:
   series: jeremias
-  order: 34001
+  order: 634001
   after: sedequias-envia-a-pasjur-y-sofonias-a-consultar-a-jeremias
 places:
 - jerusalen
@@ -29,7 +29,7 @@ passages:
 summary: Con Nabucodonosor atacando Jerusalén y sus ciudades, Jeremías va a decir a Sedequías que la ciudad será quemada y
   que él verá al rey de Babilonia e irá allí, aunque morirá en paz.
 reason: Jer 34:1-7. Perspicacia «Sedequías», núm. 4, apartado «Se rebela contra Nabucodonosor», lo pone al parecer tras la
-  consulta de Pasjur y Sofonías, al empezar el sitio, que va de 609 a 607 (estudio 3).
+  consulta de Pasjur y Sofonías, al empezar el sitio, que va de 609 a 607 (estudio 3). Orden por fecha.
 sources:
 - jeremias-34
 - it-sedequias
@@ -42,5 +42,10 @@ links:
 - title: 'Perspicacia: «Sedequías»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sedequ%C3%ADas/
   type: perspicacia
-checked_on: '2026-10-12'
+history:
+- date: '2026-10-13'
+  change: 'El orden del relato pasa de 34001 a 634001: la serie sigue las fechas de los sucesos, porque el libro va por temas
+    y no en el orden en que pasaron.'
+  source: it-jeremias-libro
+checked_on: '2026-10-13'
 status: verified
