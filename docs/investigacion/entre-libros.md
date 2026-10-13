@@ -280,6 +280,11 @@ Los campos, los tipos de relación y sus palabras se nombran como en el esquema 
 
 - **Las cartas escritas en Roma.** El tramo Hch 28:30, 31 ya nombra `letter:efesios` y `letter:colosenses` en `mentions`; puede nombrar también `pablo-escribe-efesios`, `pablo-escribe-colosenses` y `epafras-informa-a-pablo-en-roma` (c. 59-61, durante esos dos años).
 
+## Para Hechos (si se relee, desde 2 Tesalonicenses)
+
+- **Las cartas desde Corinto.** `pablo-escribe-2-tesalonicenses` (c. 51) lleva el orden 1807 de la serie `hechos`, justo tras `primera-carta-de-pablo` (1806): Perspicacia «Tesalonicenses» y «Testimonio completo», cap. 19, la ponen poco después de la primera, y ninguna fuente la sitúa frente a la visión de Hch 18:9, 10 (1809). El tramo Hch 18:5-8 ya nombra `letter:2-tesalonicenses` en `mentions`; si se reabre Hechos 18, ese tramo puede nombrar también los dos sucesos.
+- **El trabajo en Tesalónica.** `alboroto-en-tesalonica` lleva ya 2Te 2:5 y 3:7-10 en `passages`, y su resumen dice que Pablo y Silas trabajaron para mantenerse (Perspicacia «Tesalónica», párr. 3). Si se reabre Hechos 17, se parte de ese resumen.
+
 ## Para 1 Crónicas y 2 Crónicas (desde Amós)
 
 - **Hazael y los Ben-Hadad.** `hazael` (`1200001923`), `ben-hadad-hijo-de-hazael` (`1200000636#3`), `ben-hadad-hijo-de-tabrimon` (núm. 1) y `ben-hadad-ii` (núm. 2) existen, con `distinct_from` en las tres. Crónicas los reutiliza.
