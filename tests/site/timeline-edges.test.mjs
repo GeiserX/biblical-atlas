@@ -91,7 +91,11 @@ function edges(p) {
   return p.evaluate(() => {
     const BE = window.BE, [v0, v1] = BE.E.vista;
     const marks = new Map(BE.lineaMarcas().filter((m) => m.visible).map((m) => [m.id, m]));
-    const out = { problems: [], cut: 0, whole: 0, both: 0, yielded: 0, samples: [] };
+    const out = { problems: [], cut: 0, whole: 0, both: 0, yielded: 0, dimmed: 0, samples: [] };
+    // The colours an arrow may take: --ink-2, and --ink-3 on a mark dimmed by the selection, as its name.
+    const tinta = (v) => { const e = document.createElement('i'); e.style.color = `var(${v})`; document.body.append(e); const c = getComputedStyle(e).color; e.remove(); return c; };
+    const ink2 = tinta('--ink-2'), ink3 = tinta('--ink-3');
+    const focus = !document.querySelector('#linea-filas').classList.contains('sin-foco');
     for (const b of document.querySelectorAll('#linea-filas .carril:not([hidden]) .carril-pista > .m')) {
       const m = marks.get(b.dataset.id);
       if (!m) continue;
@@ -112,6 +116,10 @@ function edges(p) {
         if (cut[i] && !a && nameOver) { out.yielded++; continue; }
         if (cut[i] !== !!a) { out.problems.push(`${who}: ${cut[i] ? 'goes on' : 'ends inside'} at the ${i ? 'right' : 'left'} and ${a ? 'has' : 'has no'} arrow there`); continue; }
         if (!a) continue;
+        const dim = focus && b.matches('.atenuado');
+        const color = getComputedStyle(b.querySelector(`.m-sigue.${i ? 'der' : 'izq'}`)).backgroundColor;
+        if (color !== (dim ? ink3 : ink2)) out.problems.push(`${who}: the ${i ? 'right' : 'left'} arrow is ${color} on a ${dim ? 'dimmed' : 'plain'} mark, want ${dim ? ink3 : ink2}`);
+        if (dim) out.dimmed++;
         if (i === 0 ? a.left < pr.left - 0.5 || a.left > pr.left + 4 : a.right > pr.right + 0.5 || a.right < pr.right - 4) out.problems.push(`${who}: the ${i ? 'right' : 'left'} arrow is not at the edge (${(a.left - pr.left).toFixed(1)} px)`);
         const ar = b.getBoundingClientRect();
         if (Math.abs(a.top + a.height / 2 - (ar.top + ar.height / 2)) > 1.5) out.problems.push(`${who}: the arrow is not in the middle of its row`);
@@ -178,6 +186,15 @@ for (const screen of Object.keys(SCREENS)) {
       return b && { title: b.title, arrows: [...b.querySelectorAll('.m-sigue')].filter((e) => e.checkVisibility()).length };
     });
     assert.deepEqual(whole, { title: '', arrows: 0 });
+    await p.context().close();
+  });
+
+  test(`${screen}: with Paul chosen, the arrow of a dimmed mark is as light as its name`, async () => {
+    const p = await open(screen, 'claro', 'sel=persona:pablo&t=50.3000&v=8');
+    const r = await edges(p);
+    console.log(`${screen} Paul chosen at 8 years: ${r.cut} marks cut by an edge, ${r.dimmed} arrows on dimmed marks`);
+    assert.deepEqual(r.problems, []);
+    assert.ok(r.dimmed >= 1, 'no dimmed mark with an arrow in view');
     await p.context().close();
   });
 

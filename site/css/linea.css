@@ -233,6 +233,7 @@
 .linea-filas:not(.sin-foco) .m.atenuado.m--secular .m-barra { border-color: color-mix(in srgb, var(--secular) 50%, var(--surface)); }
 .linea-filas:not(.sin-foco) .m.atenuado .m-ventana { color: color-mix(in srgb, var(--c) 60%, var(--surface)) !important; }
 .linea-filas:not(.sin-foco) .m.atenuado .m-nombre { color: var(--ink-3) !important; }
+.linea-filas:not(.sin-foco) .m.atenuado .m-sigue { background: var(--ink-3); }
 .linea-filas:not(.sin-foco) .m.atenuado .m-nombre.en-barra { color: var(--ink) !important; }
 .m.resaltado :is(.m-barra, .m-punto) { box-shadow: 0 0 0 1.5px var(--surface), 0 0 0 3px var(--gold); }
 @media (pointer: coarse) {
