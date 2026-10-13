@@ -68,7 +68,7 @@ Un nombre de lugar va a la derecha de su punto. Si ahí se saldría del mapa o c
 El kit dibuja en proyección equirrectangular. Aquí las imágenes están reproyectadas a Web Mercator (EPSG:3857) para que MapLibre las ponga como `image source` con las esquinas exactas. La reproyección es un remuestreo por filas, porque en las dos proyecciones la longitud es lineal en x:
 
 ```python
-# python3 reproyectar.py <kit.webp> <salida.webp> <oeste> <este> <sur> <norte> <ancho> [--borde=N]
+# python3 reproyectar.py <kit.png> <salida.png> <oeste> <este> <sur> <norte> <ancho> [--borde=N]
 import sys, numpy as np
 from PIL import Image
 args = [a for a in sys.argv[1:] if not a.startswith('--borde=')]
@@ -88,20 +88,22 @@ if borde:
     x = np.minimum(np.arange(W), W - 1 - np.arange(W))[None, :]
     a = np.clip(np.minimum(y, x) / borde, 0, 1)
     a = (a * a * (3 - 2 * a) * 255).astype(np.uint8)
-    Image.fromarray(np.dstack([out, a]), 'RGBA').save(dst, quality=82, method=6, alpha_quality=60)
+    Image.fromarray(np.dstack([out, a]), 'RGBA').save(dst)
 else:
-    Image.fromarray(out).save(dst, quality=82, method=6)
+    Image.fromarray(out).save(dst)
 ```
 
 Órdenes usadas, para `antiguo` y `actual`: `mundo -20 100 -40 58 4096`, `mediterraneo 10 44 28 44 4096 --borde=70`, `israel 33.9 36.9 29.4 33.7 2000 --borde=90` y `jerusalen 35.10 35.36 31.68 31.86 2400 --borde=120`. El mundo y Jerusalén usan las extensiones propias del sitio que describe el [README del kit](../docs/ideas/mockups/kit/build/README.md#extensiones-del-sitio).
 
-Para comprobar la alineación, Corinto (37,9058 N, 22,8787 E) debe caer en la costa del istmo y no tierra adentro.
-
-Los ocho ficheros publicados son esa salida (calidad 82) recomprimida con cwebp 1.6.0, que da los mismos bytes cada vez:
+La entrada es el PNG sin comprimir del kit (`map_<extensión>_<estilo>.png` del paso 6, o `relief_jerusalen_<estilo>.png`), nunca su WebP de calidad 82, y la salida es otro PNG. La única pérdida es el último paso, que no se salta: cwebp 1.6.0, que da los mismos bytes cada vez.
 
 ```sh
-cwebp -quiet -q 70 -m 6 -sharp_yuv -alpha_q 60 entrada.webp -o maps/<extensión>-<estilo>.webp   # las dos del mundo llevan además -noalpha
+cwebp -quiet -q 70 -m 6 -sharp_yuv -alpha_q 60 salida.png -o maps/<extensión>-<estilo>.webp   # las dos del mundo llevan además -noalpha
 ```
+
+Para comprobar la alineación, Corinto (37,9058 N, 22,8787 E) debe caer en la costa del istmo y no tierra adentro.
+
+Los ocho ficheros de hoy no salieron así, sino de pasar esa orden de cwebp sobre los de antes, que el script guardaba ya en WebP de calidad 82 (los de `maps/` en el commit 6c7e51f0). Una regeneración con los pasos de arriba comprime una sola vez.
 
 Pasaron de 3.996.900 a 2.626.118 bytes. A la escala a la que el mapa las dibuja, la calidad 70 no se distingue de la 82: en las capturas de 1440 y 430 px de ancho, en los dos estilos y en el modo reunión, el SSIM contra las de antes no baja de 0,99. No se reducen de tamaño porque ninguna se dibuja nunca por debajo de su resolución: en el zoom más cercano al que el mapa las encuadra (7,5 el mundo, 8 el Mediterráneo, 10 Israel y 14 Jerusalén) cada píxel de imagen ocupa entre 2,2 y 7,5 px de CSS.
 
