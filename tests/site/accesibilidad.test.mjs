@@ -130,6 +130,8 @@ const VIEWS = [
   }) },
   // A passage nothing cites opens its chapter card with a line that says so; one that does not read gets a notice.
   { name: 'pasaje sin coincidencias', open: app('p=Snt1:5') },
+  // A place whose site is not known: its zone label and its candidates.
+  { name: 'lugar incierto', open: app('sel=lugar:tarsis&t=-1000.5000') },
   { name: 'aviso de un enlace a un pasaje', open: app('p=Hch16:1,5') },
   { name: 'calendario', open: plain('calendario.html') },
   { name: 'acerca de', open: plain('acerca.html') },
@@ -706,4 +708,35 @@ test('1440: a hidden sea, river or region name takes no click', async () => {
   assert.deepEqual(r.hit, [], `${r.hit.length} of ${r.hidden} hidden names take a click`);
   assert.deepEqual(page.errors, []);
   await page.context().close();
+});
+
+// Every marker that takes a click measures 24 x 24 px or more (WCAG 2.5.8). axe lets a small target pass when it has 24 px
+// of free space around it, so a find or a traveller that lost its zone would still pass the scan: this measures them.
+test('1440: every map marker that takes a click measures at least 24 x 24 px', async () => {
+  const KINDS = { lugar: '.marca-lugar', hallazgo: '.marca-hallazgo', viajero: '.viajero', candidato: '.cand', zona: '.rotulo-zona',
+    'región': '.marca-region:not(.sin-etiqueta)', agua: '.marca-agua:not(.sin-etiqueta)' };
+  const seen = Object.fromEntries(Object.keys(KINDS).map((k) => [k, 0]));
+  const small = [];
+  for (const hash of ['sel=persona:pablo&t=50.3000', 'sel=lugar:tarsis&t=-1000.5000', 'p=Snt1:5']) {
+    const page = await keyboardPage('1440', hash);
+    const got = await page.evaluate((KINDS) => {
+      const out = [];
+      for (const [kind, sel] of Object.entries(KINDS)) {
+        for (const el of window.__be.map.getContainer().querySelectorAll(sel)) {
+          if (!el.checkVisibility({ visibilityProperty: true }) || getComputedStyle(el).pointerEvents === 'none') continue;
+          const r = el.getBoundingClientRect();
+          out.push({ kind, id: el.dataset.sel || el.getAttribute('aria-label') || '', w: Math.round(r.width * 10) / 10, h: Math.round(r.height * 10) / 10 });
+        }
+      }
+      return out;
+    }, KINDS);
+    for (const m of got) {
+      seen[m.kind] += 1;
+      if (m.w < 23.95 || m.h < 23.95) small.push(`${m.kind} ${m.id}: ${m.w} x ${m.h}`);
+    }
+    assert.deepEqual(page.errors, []);
+    await page.context().close();
+  }
+  assert.deepEqual(Object.keys(seen).filter((k) => !seen[k]), [], 'kinds of marker that no view drew: their size went unmeasured');
+  assert.deepEqual(small, [], `${small.length} markers under 24 x 24 px`);
 });

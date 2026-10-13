@@ -287,7 +287,8 @@ ol.paradas li:first-child .be-row { border-top: 0; }
 /* Junto a Jerusalén (u otra ciudad mayor), el candidato de un lugar no elegido espera a que el zoom lo separe de ella. */
 .cand.cand--junto, .cand.cand--junto .cand-rotulo { visibility: hidden; pointer-events: none; }
 .cand--foco .cand-punto { box-shadow: 0 0 0 3px var(--halo), 0 0 0 5px var(--cand); }
-.rotulo-zona { cursor: pointer; }
+/* 24 px de alto como mínimo (WCAG 2.5.8): el texto sigue en el centro, y mapa.js baja el ancla 1 px para que no se mueva. */
+.rotulo-zona { cursor: pointer; min-height: 24px; }
 .rotulo-zona.sin-etiqueta { visibility: hidden; }
 .rotulo-zona--foco { background: #5d4674; color: #fff; border-color: #5d4674; z-index: 2; }   /* encima de las burbujas, como .marca-lugar.resaltado */
 .cand--del-foco { z-index: 2; }

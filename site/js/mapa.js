@@ -1133,7 +1133,7 @@ function rotuloZona(k, l, cs, op, foco) {
     const el = document.createElement('button');
     el.type = 'button';
     el.addEventListener('click', (e) => { e.stopPropagation(); if (!(E.sel?.tipo === 'lugar' && E.sel.id === l.id)) seleccionar({ tipo: 'lugar', id: l.id }); });
-    m = { el, marker: new maplibregl.Marker({ element: el, anchor: 'top', offset: [0, 10] }).setLngLat(pos).addTo(map) };
+    m = { el, marker: new maplibregl.Marker({ element: el, anchor: 'top', offset: [0, 9] }).setLngLat(pos).addTo(map) };   // 9 + 12: el centro de antes
     marcasCand.set(k, m);
   }
   m.marker.setLngLat(pos);
