@@ -1,0 +1,48 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jeremias-anuncia-en-el-palacio-el-juicio-contra-jehoiaquim
+title: Jeremías anuncia en el palacio el juicio contra Jehoiaquim
+type: speech
+date:
+  from: -627
+  to: -617
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 628 y 618 a.e.c. (tiempo narrativo: en el reinado de Jehoiaquim)'
+narrative_order:
+  series: jeremias
+  order: 22001
+  after: neko-destrona-a-jehoacaz
+places:
+- jerusalen
+people:
+- jeremias-profeta
+- jehoiaquim
+- jehoacaz-de-juda
+present:
+- jeremias-profeta
+- jehoiaquim
+roles:
+  jeremias-profeta: spoke
+passages:
+- Jer 22:1-23
+summary: 'Jeremías baja al palacio: si el rey no hace justicia, la casa quedará en ruinas. Salum morirá en el destierro, y
+  Jehoiaquim, que no paga a sus obreros, acabará arrojado fuera de Jerusalén sin duelo.'
+reason: Perspicacia «Líbano» dice que Jehoiaquim oyó Jer 22:6, y «Jehoiaquim», párr. 2, le aplica 22:13-19. Salum ya se había
+  ido (22:11). Jehoiaquim reinó de 628 a 618 (tabla A6-B).
+sources:
+- jeremias-22
+- it-libano
+- it-jehoiaquim
+- tnm-a6-b
+- si-jeremias
+links:
+- title: Jeremías 22 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/22/
+  type: bible
+- title: 'Perspicacia: «Jehoiaquim»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jehoiaquim/
+  type: perspicacia
+checked_on: '2026-10-12'
+status: verified

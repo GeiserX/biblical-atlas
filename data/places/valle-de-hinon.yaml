@@ -10,8 +10,11 @@ names:
 - name: Gehena
   note: Forma griega del nombre hebreo. Jesús la usa como imagen de la destrucción total (Mt 5:22, 29, 30).
 - name: Tófet
-  note: Lugar del valle, quizá cerca de la Puerta de los Tiestos, donde se sacrificaba a niños en el fuego; Josías lo inutilizó
-    (2Re 23:10; Perspicacia «Tófet»).
+  note: Lugar del valle, probablemente cerca de la Puerta de los Tiestos, donde se sacrificaba a niños en el fuego; Josías
+    lo inutilizó (2Re 23:10; Jer 19:2, 6; Perspicacia «Tófet»).
+- name: Valle de la Matanza
+  note: Nombre que Jehová anuncia para el valle por la cantidad de muertos que dejará su juicio (Jer 7:32; 19:6; Perspicacia
+    «Hinón, Valle de»).
 type: valley
 lat: 31.769167
 lon: 35.228056
@@ -32,6 +35,9 @@ sources:
 - josue-18
 - 2-reyes-23
 - it-tofet
+- jeremias-7
+- jeremias-19
+- jeremias-32
 links:
 - title: 'Perspicacia: «Hinón, Valle de»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hin%C3%B3n-Valle-de/
@@ -50,5 +56,9 @@ history:
   change: '2Re 23:10 dice «valle de los Hijos de Hinón», no «del Hijo»: la nota se corrige y se añaden esa forma y Tófet,
     el lugar del valle que Josías inutilizó.'
   source: 2-reyes-23
-checked_on: '2026-09-30'
+- date: '2026-10-12'
+  change: Perspicacia «Tófet» pone Tófet «probablemente» cerca de la Puerta de los Tiestos, no «quizá»; se añade el nombre
+    «Valle de la Matanza» (Jer 7:32).
+  source: jeremias-7
+checked_on: '2026-10-12'
 status: verified

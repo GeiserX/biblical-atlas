@@ -21,6 +21,7 @@ sources:
 - it-amon
 - openbible-geo
 - nahum-3
+- jeremias-46
 links:
 - title: 'Perspicacia: «No, No-amón»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/No-No-am%C3%B3n/
@@ -28,5 +29,5 @@ links:
 - title: Nahúm 3 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Nah%C3%BAm/3/
   type: bible
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

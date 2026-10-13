@@ -1,0 +1,28 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: salum-padre-de-maaseya
+name: Salum
+names:
+- name: Salum
+perspicacia: null
+disambiguation: El portero padre de Maaseya (Jer 35:4); no el marido de Huldá, ni el tío de Jeremías, ni Salum rey de Israel,
+  ni Jehoacaz de Judá, también llamado Salum.
+distinct_from:
+- salum-hijo-de-ticva
+- salum-de-israel
+- jehoacaz-de-juda
+- salum-tio-de-jeremias
+summary: 'Portero del templo en días de Jeremías y padre de Maaseya. Perspicacia lo cita sin darle número propio: de un Salum
+  anterior quizá descendía la familia de porteros de las listas del regreso.'
+reason: Jer 35:4; Perspicacia «Salum», núm. 4, comenta este versículo sin dedicarle entrada.
+sources:
+- jeremias-35
+- it-salum
+links:
+- title: 'Perspicacia: «Salum»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Salum/
+  type: perspicacia
+- title: Jeremías 35 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/35/
+  type: bible
+checked_on: '2026-10-12'
+status: verified

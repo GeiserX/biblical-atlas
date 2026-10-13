@@ -1,0 +1,26 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: malkiya-hijo-del-rey
+name: Malkiya
+names:
+- name: Malkiya
+perspicacia: 1200002866#4
+disambiguation: El dueño de la cisterna de Jer 38:6; no es Malkías, el sacerdote padre de Pasjur. Perspicacia cree que «hijo
+  del rey» puede indicar solo un vínculo con la casa real.
+distinct_from:
+- malkias-padre-de-pasjur
+summary: Hombre llamado «hijo del rey» que tenía una cisterna en el Patio de la Guardia. En ella, sin agua y con fango en
+  el fondo, dejaron a Jeremías.
+reason: Perspicacia «Malkiya», núm. 4; Jer 38:6.
+sources:
+- it-malkiya
+- jeremias-38
+links:
+- title: 'Perspicacia: «Malkiya»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Malkiya/
+  type: perspicacia
+- title: Jeremías 38 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/38/
+  type: bible
+relations: []
+checked_on: '2026-10-12'
+status: verified

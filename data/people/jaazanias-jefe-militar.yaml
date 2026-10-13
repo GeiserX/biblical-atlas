@@ -16,6 +16,7 @@ distinct_from:
 - azarias-hijo-de-sadoc
 - ocozias-de-juda
 - uzias
+- jaazanias-hijo-de-jeremias
 date:
   from: -606
   to: -606
@@ -32,6 +33,12 @@ sources:
 - it-jaazanias
 - 2-reyes-25
 - it-azarias
+- jeremias-40
+- jeremias-41
+- jeremias-42
+- it-jezanias
+- it-hosaya
+- jeremias-43
 links:
 - title: 'Perspicacia: «Jaazanías»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jaazan%C3%ADas/
@@ -46,8 +53,22 @@ relations:
   sources:
   - 2-reyes-25
   - it-jaazanias
+  - jeremias-43
   reason: '2Re 25:26: los jefes del ejército se fueron a Egipto; Perspicacia «Jaazanías», núm. 4, dice que él fue uno de ellos.'
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-01'
+- type: kin
+  person: hosaya-padre-de-jezanias
+  word: father
+  sources:
+  - jeremias-42
+  - it-hosaya
+  - it-jezanias
+  - jeremias-43
+  reason: Jer 42:1 lo llama Jezanías hijo de Hosaya; Perspicacia «Hosaya», núm. 1, y «Jezanías» lo hacen el mismo jefe que
+    Jaazanías.
+  inferred: false
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
 status: verified

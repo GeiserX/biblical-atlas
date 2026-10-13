@@ -23,6 +23,7 @@ passages:
 - 2Sa 7:17
 - 1Cr 17:3-15
 - Is 55:3
+- Jer 33:17, 20-22, 25, 26
 summary: Por medio de Natán, Jehová promete a David que su descendencia tendrá un reino estable para siempre.
 reason: El estudio 3 pone estos sucesos después de 1070 y la lámina B7 fecha el pacto hacia 1070; Perspicacia «Natán», núm.
   2.
@@ -33,6 +34,8 @@ sources:
 - 2-samuel-7
 - isaias-55
 - ip2-16
+- jeremias-33
+- it-jeremias-libro
 links:
 - title: 'Perspicacia: «Natán»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Nat%C3%A1n/
@@ -55,5 +58,5 @@ history:
 narrative_order:
   series: 2-samuel
   order: 7004
-checked_on: '2026-09-30'
+checked_on: '2026-10-12'
 status: verified

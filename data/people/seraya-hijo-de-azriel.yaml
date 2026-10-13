@@ -1,0 +1,50 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: seraya-hijo-de-azriel
+name: Seraya
+names:
+- name: Seraya
+perspicacia: 1200003904#4
+disambiguation: Uno de los enviados de Jehoiaquim contra Jeremías; no Seraya hijo de Nerías, ni el sacerdote principal, ni
+  el hijo de Tanhúmet, ni el secretario de David.
+distinct_from:
+- seraya-hijo-de-nerias
+- seraya-hijo-de-azarias
+- seraya-hijo-de-tanhumet
+- seraya-secretario-de-david
+summary: Hijo de Azriel. A finales de 624 a.e.c. Jehoiaquim lo envió, con Jerahmeel y Selemías, a detener a Jeremías y a Baruc,
+  pero no los hallaron.
+reason: Perspicacia «Seraya», núm. 4; Jer 36:26.
+sources:
+- it-seraya
+- jeremias-36
+links:
+- title: 'Perspicacia: «Seraya»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Seraya/
+  type: perspicacia
+- title: Jeremías 36 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/36/
+  type: bible
+relations:
+- type: kin
+  person: azriel-padre-de-seraya
+  word: father
+  inferred: false
+  sources:
+  - jeremias-36
+  - it-seraya
+  - it-azriel
+  reason: Jer 36:26 lo llama Seraya hijo de Azriel.
+  checked_on: '2026-10-12'
+  status: verified
+- type: tie
+  person: jehoiaquim
+  word: master
+  inferred: false
+  sources:
+  - jeremias-36
+  - it-seraya
+  reason: 'Jer 36:26: el rey le manda prender a Baruc y a Jeremías; Perspicacia «Seraya», núm. 4, lo da por enviado de Jehoiaquim.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

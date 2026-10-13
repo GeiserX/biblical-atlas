@@ -1,0 +1,81 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: pasjur-hijo-de-imer
+name: Pasjur
+names:
+- name: Pasjur
+- name: Terror por Todas Partes
+  note: 'Nombre que Jehová le pone por boca de Jeremías al salir este del cepo: sería un terror para sí mismo y para sus amigos
+    (Jer 20:3, 4).'
+perspicacia: 1200003396#3
+disambiguation: El sacerdote hijo de Imer que puso a Jeremías en el cepo; Perspicacia distingue a otros Pasjur, como el príncipe
+  hijo de Malkías de tiempos de Sedequías.
+date:
+  from: -646
+  to: -606
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 647 y 607 a.e.c. (tiempo narrativo: cuando puso a Jeremías en el cepo)'
+summary: Sacerdote, hijo de Imer, a cargo del templo como su supervisor principal. Golpeó a Jeremías y lo tuvo una noche en
+  el cepo; Jehová le cambió el nombre y le anunció que moriría desterrado en Babilonia.
+reason: Perspicacia «Pasjur», núm. 3; Jer 20:1-6. La fecha es la de su choque con Jeremías, que el texto no sitúa en ningún
+  reinado.
+sources:
+- it-pasjur
+- jeremias-20
+- jr-7
+links:
+- title: 'Perspicacia: «Pasjur»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Pasjur/
+  type: perspicacia
+- title: Jeremías 20 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/20/
+  type: bible
+relations:
+- type: kin
+  person: imer-padre-de-pasjur
+  word: father
+  inferred: false
+  sources:
+  - jeremias-20
+  - it-imer
+  reason: Jer 20:1 lo llama hijo de Imer; Perspicacia «Imer», núm. 3, da a Imer como su padre, aunque admite que «hijo» signifique
+    descendiente.
+  checked_on: '2026-10-12'
+  status: verified
+- type: holds_office
+  office: priest
+  inferred: false
+  sources:
+  - jeremias-20
+  - it-pasjur
+  reason: 'Jer 20:1: era sacerdote y además supervisor principal de la casa de Jehová, cargo que el vocabulario no tiene.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: tie
+  person: jeremias-profeta
+  word: enemy
+  inferred: false
+  sources:
+  - jeremias-20
+  - it-pasjur
+  reason: 'Jer 20:1, 2: al oírlo profetizar, golpea a Jeremías y lo pone en el cepo. Perspicacia «Pasjur», núm. 3, dice que
+    se opuso a sus profecías.'
+  checked_on: '2026-10-12'
+  status: verified
+- type: lived_in
+  place: jerusalen
+  inferred: true
+  sources:
+  - jr-7
+  - jeremias-20
+  reason: «Dios nos habla mediante Jeremías», cap. 7, párr. 7, lo presenta como sacerdote destacado de Jerusalén; Jer 20:1,
+    2 lo pone a cargo del templo.
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified
+distinct_from:
+- pasjur-hijo-de-malkias
+- pasjur-padre-de-guedalias

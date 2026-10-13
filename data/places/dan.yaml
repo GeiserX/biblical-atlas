@@ -13,10 +13,10 @@ lon: 35.652
 precision: point
 coord_source: openbible:a513646
 coord_url: https://www.openbible.info/geo/ancient/a513646/dan
-summary: Ciudad del extremo norte de Israel, al pie del Antilíbano. Los danitas le pusieron el nombre de su antepasado; Jeroboán
-  colocó allí el segundo becerro de oro.
+summary: Ciudad del extremo norte de Israel, al pie del Antilíbano, de las primeras en sufrir las invasiones del norte. Los
+  danitas le pusieron el nombre de su antepasado; Jeroboán colocó allí el segundo becerro de oro.
 reason: 'Perspicacia «Dan», núm. 3, párr. 5, 7 y 8: Tell el-Qadi (Tel Dan), donde nacen dos manantiales del Jordán; 1Re 12:29.
-  OpenBible: solo el punto.'
+  Su último párrafo la pone expuesta a los ataques del norte (Jer 4:15; 8:16). OpenBible: solo el punto.'
 sources:
 - it-dan
 - openbible-geo
@@ -27,6 +27,8 @@ sources:
 - 2-samuel-24
 - 1-reyes-12
 - 1-reyes-15
+- jeremias-4
+- jeremias-8
 links:
 - title: 'Perspicacia: «Dan»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Dan/
@@ -34,5 +36,13 @@ links:
 - title: Jueces 18 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/jueces/18/
   type: bible
-checked_on: '2026-09-30'
+history:
+- date: '2026-10-12'
+  change: El resumen añade que, por estar en el extremo norte, Dan era de las primeras ciudades atacadas desde el norte, como
+    reflejan Jer 4:15 y 8:16 (Perspicacia «Dan», núm. 3).
+  source: jeremias-8
+- date: '2026-10-12'
+  change: La razón cita el párrafo de Perspicacia y los versículos de donde sale lo nuevo del resumen.
+  source: jeremias-8
+checked_on: '2026-10-12'
 status: verified

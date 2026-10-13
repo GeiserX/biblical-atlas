@@ -18,9 +18,10 @@ sources:
 - it-patros
 - isaias-11
 - openbible-geo
+- jeremias-44
 links:
 - title: 'Perspicacia: «Patrós»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Patr%C3%B3s/
   type: perspicacia
-checked_on: '2026-09-30'
+checked_on: '2026-10-12'
 status: verified

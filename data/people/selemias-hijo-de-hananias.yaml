@@ -1,0 +1,36 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: selemias-hijo-de-hananias
+name: Selemías
+names:
+- name: Selemías
+perspicacia: 1200003990#4
+disambiguation: El padre de Iriya, hijo de Hananías; no es el padre de Jehucal, ni el abuelo de Jehudí, ni el hijo de Abdeel.
+distinct_from:
+- selemias-padre-de-jehucal
+- selemias-hijo-de-cusi
+- selemias-hijo-de-abdeel
+summary: Hijo de Hananías y padre de Iriya, el oficial que detuvo a Jeremías en la Puerta de Benjamín.
+reason: Perspicacia «Selemías», núm. 4; Jer 37:13.
+sources:
+- it-selemias
+- jeremias-37
+links:
+- title: 'Perspicacia: «Selemías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Selem%C3%ADas/
+  type: perspicacia
+- title: Jeremías 37 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/37/
+  type: bible
+relations:
+- type: kin
+  person: hananias-abuelo-de-iriya
+  word: father
+  inferred: false
+  sources:
+  - jeremias-37
+  - it-selemias
+  reason: 'Jer 37:13: Iriya era hijo de Selemías, hijo de Hananías.'
+  checked_on: '2026-10-12'
+  status: verified
+checked_on: '2026-10-12'
+status: verified

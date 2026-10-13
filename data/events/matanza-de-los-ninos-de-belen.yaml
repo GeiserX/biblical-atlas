@@ -19,6 +19,7 @@ people:
 present: []
 passages:
 - Mt 2:16-18
+- Jer 31:15
 summary: Engañado por los astrólogos, Herodes ordena matar a los niños de hasta dos años de Belén y su comarca, según la fecha
   de la estrella. Mateo ve cumplido el llanto de Raquel que anunció Jeremías.
 reason: 'A7-A, fila 7. Perspicacia «Herodes» (núm. 1, «Matanza de niños») la sitúa poco antes de su muerte. El texto no pone
@@ -32,5 +33,5 @@ links:
 - title: Mateo 2 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/mateo/2/
   type: bible
-checked_on: '2026-09-29'
+checked_on: '2026-10-12'
 status: verified

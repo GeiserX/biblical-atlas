@@ -30,6 +30,11 @@ sources:
 - 2-samuel-12
 - isaias-11
 - ip1-13
+- jeremias-9
+- jeremias-27
+- jeremias-40
+- jeremias-41
+- jeremias-49
 links:
 - title: 'Perspicacia: «Ammonitas»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ammonitas/
@@ -40,5 +45,5 @@ links:
 - title: Salmo 83 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/salmos/83/
   type: bible
-checked_on: '2026-09-30'
+checked_on: '2026-10-12'
 status: verified

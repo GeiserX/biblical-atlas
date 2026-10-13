@@ -1,0 +1,41 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jeremias-anuncia-que-nabucodonosor-atacara-egipto
+title: Jeremías anuncia que Nabucodonosor atacará Egipto
+date:
+  from: -646
+  to: -579
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 647 y 580 a.e.c. (tiempo narrativo: durante la obra de Jeremías)'
+narrative_order:
+  series: jeremias
+  order: 46013
+places:
+- egipto
+people:
+- jeremias-profeta
+present: []
+passages:
+- Jer 46:13-28
+summary: 'Jehová comunica a Jeremías que el rey de Babilonia invadirá Egipto: Migdol, Nof y Tahpanhés oirán la alarma, Nof
+  arderá y Amón de No y el faraón serán entregados. A Jacob le promete volver del cautiverio.'
+reason: 'Jer 46:13 no da fecha ni lugar, así que nadie queda situado. Límites: la comisión de Jeremías en 647 (estudio 3)
+  y el final del libro en 580 (Tabla de los libros). Perspicacia «Jeremías, Libro de» lo da por cumplido.'
+sources:
+- jeremias-46
+- si-3
+- tnm-tabla
+- it-jeremias-libro
+- it-egipto
+- si-jeremias
+links:
+- title: Jeremías 46 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/46/
+  type: bible
+- title: 'Perspicacia: «Jeremías, Libro de»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jerem%C3%ADas-Libro-de/
+  type: perspicacia
+checked_on: '2026-10-12'
+status: verified
