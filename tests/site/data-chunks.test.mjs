@@ -450,7 +450,10 @@ test('the calendar loads the two chunks, not data.json, and paints what data.jso
   const bytes = (p) => { p.bodies = []; p.on('response', (r) => { if (/\/data[^/]*\.json$/.test(r.url())) p.bodies.push(r.body().then((b) => b.length, () => 0)); }); };
   const mb = async (p) => `${((await Promise.all(p.bodies)).reduce((a, n) => a + n, 0) / 1e6).toFixed(2)} MB`;
   const chunks = await openPage({ url: 'calendario.html', wait: false, routes: bytes });
-  const whole = await openPage({ url: `calendario.html?datos=${WHOLE}`, wait: false, routes: bytes });
+  // The folder with data.json only answers 404 to both chunks, as it should: its console errors keep their URL, so
+  // that those two, and only those two, can be told apart from a real error.
+  const located = (p) => { bytes(p); p.located = []; p.on('console', (m) => { if (m.type() === 'error') p.located.push(`${m.text()} ${m.location().url}`); }); };
+  const whole = await openPage({ url: `calendario.html?datos=${WHOLE}`, wait: false, routes: located });
   const context = await browser.newContext({ deviceScaleFactor: 1, ...DESKTOP });
   const file = await context.newPage();
   await file.route(/^https?:/, (r) => r.abort());
@@ -479,6 +482,7 @@ test('the calendar loads the two chunks, not data.json, and paints what data.jso
   // Both chunks are asked for at once, not one after the other.
   const at = (e) => chunks.events.indexOf(e);
   assert.ok(at('ask /data.detail.json') >= 0 && at('ask /data.detail.json') < at('got /data.core.json'), chunks.events.join(', '));
-  // The folder with data.json only answers 404 to both chunks, as it should: there, only page errors count.
-  assert.deepEqual([...chunks.pageErrors, ...chunks.consoleErrors, ...whole.pageErrors], []);
+  const chunk404 = (e) => /^Failed to load resource: .*\b404\b.* \S+\/data\.(core|detail)\.json$/.test(e);
+  assert.equal(whole.located.filter(chunk404).length, 2, whole.located.join('\n'));
+  assert.deepEqual([...chunks.pageErrors, ...chunks.consoleErrors, ...whole.pageErrors, ...whole.located.filter((e) => !chunk404(e))], []);
 });
