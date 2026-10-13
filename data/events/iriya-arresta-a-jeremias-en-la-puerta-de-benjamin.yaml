@@ -12,7 +12,7 @@ date:
     en el año décimo de Sedequías)'
 narrative_order:
   series: jeremias
-  order: 37011
+  order: 737011
 places:
 - jerusalen
 - benjamin
@@ -28,7 +28,7 @@ passages:
 summary: Con el cerco levantado, Jeremías sale hacia Benjamín a recibir su parte. En la Puerta de Benjamín, Iriya lo acusa
   de desertar; los príncipes lo golpean y lo encierran en la casa del secretario Jehonatán.
 reason: 'Jer 37:11-16; Perspicacia «Iriya» y «Sedequías», núm. 4; «Toda Escritura», libro 24, párr. 28: iba a Anatot. Entre
-  el inicio del sitio (609, estudio 3) y la compra del campo de Hanamel (608), con Jeremías ya preso en el Patio.'
+  el inicio del sitio (609, estudio 3) y la compra del campo de Hanamel (608), ya en el Patio. Orden por fecha.'
 sources:
 - jeremias-37
 - it-iriya
@@ -42,5 +42,10 @@ links:
 - title: 'Perspicacia: «Iriya»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Iriya/
   type: perspicacia
-checked_on: '2026-10-12'
+history:
+- date: '2026-10-13'
+  change: 'El orden del relato pasa de 37011 a 737011: la serie sigue las fechas de los sucesos, porque el libro va por temas
+    y no en el orden en que pasaron.'
+  source: it-jeremias-libro
+checked_on: '2026-10-13'
 status: verified

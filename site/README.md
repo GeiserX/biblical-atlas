@@ -206,6 +206,7 @@ El carril «Viajes de Pablo» enseña solo los viajes de Pablo: un tramo por via
 | `js/recorridos.js` | Recorridos guiados, preguntas de repaso, hoja de impresión, modo presentación, modo reunión y letra grande |
 | `js/offline.js` | Registra `sw.js` (solo por https) y pone el aviso «Hay una versión nueva del atlas» con «Recargar», que es lo único que la activa. Lo cargan las tres páginas, con `css/offline.css` |
 | `js/volver.js` | «Volver al mapa» de `acerca.html` y `calendario.html`: Atrás cuando el mapa está justo detrás, el enlace a la vista en los demás casos |
+| `js/tema.js` | El modo reunión en `acerca.html` y `calendario.html`: pone `be-reunion` antes del primer pintado si está guardado y mueve la luna de su barra, con la misma clave que el mapa |
 | `js/portada.js` | Portada «Entra por una pregunta»: la caja que contesta, entrar en cada destino, «Seguir donde lo dejaste», épocas y recorridos |
 | `js/passage-link.js` | Enlaces a un pasaje (`#p=Hch16:1`): lee el pasaje, busca lo que lo cita con las reglas del servidor MCP del atlas, abre lo primero, lista lo demás en la ficha, abre la ficha del capítulo cuando nada lo cita y la del libro con un libro solo, avisa de lo que no se lee y pone «Enlace al pasaje» junto a «Citar» (`BE.pasajeEnlace`) |
 | `js/tipos/*.js` | Un fichero por tipo de entidad: `lugar`, `persona`, `viaje`, `parada`, `carta`, `evento`, `periodo`, `hallazgo`, `recorrido`, `libro` y `pasaje` |

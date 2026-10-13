@@ -11,7 +11,7 @@ date:
   text: 'entre 607 y 580 a.e.c. (tiempo narrativo: después de la huida a Egipto y antes de que Jeremías acabara su libro)'
 narrative_order:
   series: jeremias
-  order: 44001
+  order: 944001
 places:
 - egipto
 - patros
@@ -30,7 +30,7 @@ passages:
 summary: Jeremías recuerda a los judíos de Egipto que Judá cayó por su idolatría. Ellos se niegan a dejar de ofrecer a la
   Reina del Cielo, y él les anuncia la calamidad y, como señal, la caída del faraón Hofrá.
 reason: 'Jer 44:1-30. Perspicacia «Hofrá» lo pone después de la huida de 607 (estudio 3, párr. 6); «Toda Escritura», libro
-  24, da 580 como fin del libro. El texto no dice en qué ciudad habla: Egipto va primero.'
+  24, da 580 como fin del libro. El texto no dice en qué ciudad habla: Egipto va primero. Orden por fecha.'
 sources:
 - jeremias-44
 - it-hofra
@@ -46,5 +46,10 @@ links:
 - title: 'Perspicacia: «Hofrá»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hofr%C3%A1/
   type: perspicacia
-checked_on: '2026-10-12'
+history:
+- date: '2026-10-13'
+  change: 'El orden del relato pasa de 44001 a 944001: la serie sigue las fechas de los sucesos, porque el libro va por temas
+    y no en el orden en que pasaron.'
+  source: it-jeremias-libro
+checked_on: '2026-10-13'
 status: verified

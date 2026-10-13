@@ -11,7 +11,7 @@ date:
   text: 'entre 617 y 580 a.e.c. (tiempo narrativo: tras el destierro de Jeconías, durante la obra de Jeremías)'
 narrative_order:
   series: jeremias
-  order: 30001
+  order: 430001
 places:
 - jerusalen
 - juda
@@ -24,7 +24,7 @@ passages:
 summary: 'Jehová pide a Jeremías que ponga por escrito sus palabras: tras un tiempo de angustia romperá el yugo de su pueblo,
   lo traerá de vuelta, castigará a sus opresores y reconstruirá la ciudad; servirán a David su rey.'
 reason: 'Jer 30 no da fecha ni lugar: nadie queda situado. «Toda Escritura», libro 24, párr. 24, lo une a la carta a los desterrados
-  con Jeconías (617, estudio 3); el libro se terminó en 580 (Tabla de los libros).'
+  con Jeconías (617, estudio 3); el libro se terminó en 580 (Tabla). Va tras esa carta.'
 sources:
 - jeremias-30
 - si-jeremias
@@ -39,5 +39,10 @@ links:
 - title: 'Perspicacia: «Jeremías, Libro de»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jerem%C3%ADas-Libro-de/
   type: perspicacia
-checked_on: '2026-10-12'
+history:
+- date: '2026-10-13'
+  change: 'El orden del relato pasa de 30001 a 430001: la serie sigue las fechas de los sucesos, porque el libro va por temas
+    y no en el orden en que pasaron.'
+  source: it-jeremias-libro
+checked_on: '2026-10-13'
 status: verified
