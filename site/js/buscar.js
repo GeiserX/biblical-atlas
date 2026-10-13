@@ -347,7 +347,7 @@ function esFecha(x) {
 // ---------------------------------------------------------------------------
 /** El primer trozo de un texto de la ficha que puede distinguirla: su primera frase sin paréntesis y sin el nombre
     delante (dicho también de dos formas, «Paltí o Paltiel hijo de Lais», o con artículo, «El Matat padre de Helí»),
-    hasta la primera coma, saltando los trozos que solo citan la fuente («entrada núm. 2 de Perspicacia») y sin la
+    hasta la primera coma (el punto de «c. 6 e.c.» no acaba la frase), saltando los trozos que solo citan la fuente («entrada núm. 2 de Perspicacia») y sin la
     conjunción que la coma deja colgando («El padre de Zabud y, según Perspicacia…»). Una frase que solo dice quién no es
     («No es el Jabín…») no distingue nada. */
 function distinguishingClause(text, names) {
@@ -356,7 +356,8 @@ function distinguishingClause(text, names) {
     for (const n of names) if (n && norm(r).startsWith(norm(n)) && /^[\s,]/.test(r.slice(n.length))) return r.slice(n.length).replace(/^[\s,]+/, '');
     return null;
   };
-  let t = String(text || '').replace(/\s*\([^)]*\)/g, '').split(/;|\.\s+(?=[A-ZÁÉÍÓÚÑ¿«\d])/)[0].replace(/\.$/, '').trim();
+  let t = String(text || '').replace(/\s*\([^)]*\)/g, '').split(/;|(?<!(?:^|\s)c)\.\s+(?=[A-ZÁÉÍÓÚÑ¿«\d])/)[0].replace(/\.$/, '').trim()
+    .replace(/\be\.c$/, 'e.c.');
   const resto = sinNombre(t);
   if (resto != null) t = (/^[ou]\s/.test(resto) ? sinNombre(resto.slice(2)) : null) ?? resto;
   if (/^no\b/i.test(t)) return '';

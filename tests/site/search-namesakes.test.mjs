@@ -189,6 +189,16 @@ test('Labán: a person named like a place is not a namesake, and keeps its whole
   }
 });
 
+test('the line does not end a sentence at the «c.» of a date, and keeps the dot of «e.c.»', async () => {
+  // data/people/caifas.yaml opens «Sumo sacerdote de c. 18 a c. 36 e.c.»: cut at the first «c.», the line was
+  // «Sumo sacerdote de c». data/people/esdras.yaml: «… de 468 a.e.c.», whose last dot closes the sentence too.
+  const page = await openPage(DESKTOP, 't=50.3000');
+  const line = (id) => page.evaluate((id) => window.BE.distinguishingLine({ tipo: 'persona', id }), id);
+  assert.match(await line('caifas'), /^Sumo sacerdote de c\. 18 a c\. 36 e\.c\./);
+  assert.match(await line('esdras'), /468 a\.e\.c\.$/);
+  assert.deepEqual(page.pageErrors, []);
+});
+
 test('every group of namesakes in data/ (scripts/homonyms.py) is told apart in the built site', async () => {
   const groups = JSON.parse(execFileSync('python3', [path.join(ROOT, 'scripts/homonyms.py'), '--json'], { cwd: ROOT, encoding: 'utf8' }));
   const total = Object.values(groups).reduce((n, gs) => n + gs.length, 0);
