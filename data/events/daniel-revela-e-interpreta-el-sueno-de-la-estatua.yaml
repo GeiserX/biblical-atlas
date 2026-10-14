@@ -1,0 +1,47 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: daniel-revela-e-interpreta-el-sueno-de-la-estatua
+title: Daniel revela e interpreta el sueño de la estatua
+date:
+  from: -605
+  to: -604
+  precision: range
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 606-605 a.e.c.
+narrative_order:
+  series: daniel
+  order: 2024
+  elapsed:
+    days: 1
+    reason: 'Da 2:24, 25; dp, cap. 4, párr. 5: al día siguiente va a ver a Arioc, que lo lleva enseguida ante el rey.'
+type: speech
+roles:
+  daniel: spoke
+places:
+- babilonia
+people:
+- daniel
+- arioc-jefe-de-la-guardia
+- nabucodonosor-ii
+passages:
+- Da 2:24-45
+summary: Arioc lleva a Daniel ante el rey. Daniel atribuye el secreto a Dios, describe la estatua de oro, plata, cobre, hierro
+  y barro que una piedra destroza y explica que son reinos sucesivos, hasta el Reino de Dios.
+reason: 'Da 2:24-45; Perspicacia «Arioc», núm. 2, y dp, cap. 4, párr. 5-8. Fecha del sueño de Da 2:1 (dp, cap. 4, párr. 2).
+  Los reinos de la estatua no son sucesos del atlas: van en la nota del tramo.'
+sources:
+- daniel-2
+- dp-4
+- it-arioc
+- it-daniel
+- tnm-b9
+links:
+- title: Daniel 2 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/daniel/2/
+  type: bible
+- title: 'Perspicacia: «Nabucodonosor, Nabucodorosor»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Nabucodonosor-Nabucodorosor/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified

@@ -11,14 +11,15 @@ date:
   type: anchored
   chronology: tnm
   text: c. 47-65 e.c. (de la primera visita de Pablo a Listra a 2 Timoteo)
-summary: Abuela de Timoteo, probablemente por parte de madre. Pablo elogia su fe sin hipocresía. Con Eunice le enseñó
-  a Timoteo las Escrituras.
-reason: 'Perspicacia «Loida»; 2Ti 1:5 y 3:15. Que fuera madre de Eunice sale de versiones siriacas. Años: el estudio 3
-  pone la primera gira de Pablo, por Listra, en 47-48 e.c. y 2 Timoteo hacia 65.'
+summary: Abuela de Timoteo, probablemente por parte de madre. Pablo elogia su fe sin hipocresía. Es probable que se hiciera
+  cristiana en la primera visita de Pablo a Listra y que ayudara a Eunice a instruir a Timoteo.
+reason: 'Perspicacia «Loida» y «Timoteo»; 2Ti 1:5 con su nota y 3:15. Que fuera madre de Eunice sale de versiones siriacas.
+  Años: el estudio 3 pone la primera gira de Pablo, por Listra, en 47-48 e.c. y 2 Timoteo hacia 65.'
 sources:
 - si-3
 - it-loida
 - 2-timoteo-1
+- it-timoteo
 links:
 - title: 'Perspicacia: «Loida»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Loida/
@@ -27,7 +28,15 @@ links:
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-timoteo/1/
   type: bible
 perspicacia: '1200002768'
-checked_on: '2026-09-29'
+history:
+- date: '2026-10-13'
+  change: Decía que enseñó a Timoteo con Eunice como hecho; la nota de 2Ti 1:5 solo lo ve posible y Perspicacia «Timoteo»
+    probable. Se añade su probable conversión en la primera visita de Pablo, que da esa nota.
+  source: 2-timoteo-1
+- date: '2026-10-13'
+  change: La razón nombra la nota de 2Ti 1:5 y Perspicacia «Timoteo», de donde sale lo nuevo del resumen.
+  source: 2-timoteo-1
+checked_on: '2026-10-13'
 status: verified
 relations:
 - type: lived_in
@@ -35,6 +44,7 @@ relations:
   inferred: true
   sources:
   - it-loida
+  - 2-timoteo-1
   reason: 'Perspicacia: parece que la familia vivía en Listra (Hch 16:1, 2).'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-13'
   status: verified

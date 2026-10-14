@@ -1,0 +1,28 @@
+# biblical-atlas: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: provincia-de-babilonia
+name: Provincia de Babilonia
+names:
+- name: Provincia de Babilonia
+type: province
+lat: 32.543333
+lon: 44.422222
+precision: zone
+coord_source: openbible:a217d18
+coord_url: https://www.openbible.info/geo/ancient/a217d18/babylon-1
+coord_note: Punto de la ciudad de Babilonia, que quedaba dentro del distrito; sus límites no se conocen y OpenBible no lo
+  sitúa aparte.
+summary: Distrito administrativo del reino babilonio, quizá el principal, con la capital dentro. Nabucodonosor puso a Daniel
+  a gobernarlo y a sus tres compañeros a administrarlo; allí estaba la llanura de Dura.
+reason: Perspicacia «Distrito jurisdiccional»; Da 2:48, 49; 3:1, 12, 30. Comparte el punto de la ciudad de Babilonia, como
+  una región con su capital.
+sources:
+- it-distrito-jurisdiccional
+- daniel-2
+- daniel-3
+- openbible-geo
+links:
+- title: 'Perspicacia: «Distrito jurisdiccional»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Distrito-jurisdiccional/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified

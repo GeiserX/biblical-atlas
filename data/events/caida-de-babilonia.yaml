@@ -17,22 +17,27 @@ places:
 people:
 - belsasar
 - daniel
+- dario-el-medo
+- ciro
 roles:
   belsasar: died
 passages:
-- Da 5:1-31
+- Da 5:30, 31
 - Is 45:1, 2
 - Jer 51:30
 summary: Mientras Belsasar celebraba un banquete, las tropas de Ciro tomaron Babilonia sin lucha. Esa noche Daniel leyó
   la escritura en la pared, Belsasar murió y Darío el medo recibió el reino.
-reason: Perspicacia «Belsasar» y «Babilonia» fechan la caída un 5 de octubre en el calendario gregoriano; «Nabonido» explica
-  que la Crónica fija el 16 de tisri. El estudio 3 la usa como fecha eje (párr. 5).
+reason: 'Perspicacia «Belsasar» y «Babilonia» la fechan el 5 de octubre gregoriano; «Nabonido» y «Ciro», el 16 de tisri. Estudio
+  3, párr. 5. Ciro entró 17 días después y el texto no sitúa a Darío: ninguno va en present.'
 sources:
 - si-3
 - it-babilonia
 - it-belsasar
 - it-nabonido
 - daniel-5
+- it-ciro
+- it-dario
+- dp-7
 links:
 - title: 'Perspicacia: «Belsasar»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Belsasar/
@@ -40,5 +45,20 @@ links:
 - title: Daniel 5 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/daniel/5/
   type: bible
-checked_on: '2026-09-29'
+history:
+- date: '2026-10-14'
+  change: El banquete y la escritura en la pared (Da 5:1-29) pasan a su propio suceso, daniel-lee-la-escritura-en-la-pared;
+    la caída se queda con Da 5:30, 31.
+  source: daniel-5
+- date: '2026-10-14'
+  change: 'Entran Ciro y Darío el medo en people, sin estar en present: Ciro llegó a la ciudad 17 días después (Perspicacia
+    «Ciro») y Da 5:31 solo dice que Darío recibió el reino.'
+  source: it-ciro
+present:
+- belsasar
+- daniel
+narrative_order:
+  series: daniel
+  order: 105030
+checked_on: '2026-10-14'
 status: verified

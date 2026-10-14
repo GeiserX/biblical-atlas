@@ -1,0 +1,37 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: dario-firma-la-prohibicion-de-los-treinta-dias
+title: Darío firma una prohibición de 30 días tramada contra Daniel
+date:
+  from: -538
+  to: -537
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'c. 539-538 a.e.c. (tiempo narrativo: en el reinado de Darío el medo, tras la caída de Babilonia)'
+narrative_order:
+  series: daniel
+  order: 106004
+places:
+- babilonia
+people:
+- dario-el-medo
+- daniel
+present:
+- dario-el-medo
+passages:
+- Da 6:4-9
+summary: 'Sin hallar falta en Daniel, los otros altos funcionarios y los sátrapas logran que Darío firme una ley irrevocable:
+  30 días sin pedir nada a dios ni a hombre salvo al rey, so pena de ir a los leones.'
+reason: 'Da 6:4-10 y Perspicacia «Darío», núm. 1: Daniel no estaba y se enteró después. El decreto debía afianzar a un rey extranjero recién llegado; cerrarlo en nisán de 538, primer año de Ciro (Perspicacia «Ciro»), es inferencia nuestra.'
+sources:
+- daniel-6
+- it-dario
+- it-ciro
+- dp-8
+links:
+- title: 'Perspicacia: «Darío»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Dar%C3%ADo/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified

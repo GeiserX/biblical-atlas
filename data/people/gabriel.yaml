@@ -3,12 +3,14 @@ id: gabriel
 name: Gabriel
 names:
 - name: Gabriel
-summary: Ángel de alto rango, el único con nombre en la Biblia además de Miguel. Explicó dos visiones a Daniel y anunció a
-  Zacarías y a María los nacimientos de Juan y de Jesús.
+summary: Ángel de alto rango; con Miguel, el único con nombre en la Biblia. Explicó a Daniel la visión del carnero y el macho
+  cabrío, le reveló las setenta semanas y anunció los nacimientos de Juan y de Jesús.
 reason: Perspicacia «Gabriel» (párr. 2 y 3); Lu 1:19, 26.
 sources:
 - it-gabriel
 - lucas-1
+- daniel-8
+- daniel-9
 links:
 - title: 'Perspicacia: «Gabriel»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Gabriel/
@@ -17,5 +19,48 @@ links:
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/lucas/1/
   type: bible
 perspicacia: '1200001582'
-checked_on: '2026-09-29'
+history:
+- date: '2026-10-14'
+  change: 'En su segunda visita a Daniel no explicó una visión anterior: le reveló las setenta semanas (Da 9:21-27; Perspicacia
+    «Gabriel»).'
+  source: daniel-9
+checked_on: '2026-10-14'
 status: verified
+relations:
+- type: appears_to
+  person: daniel
+  date:
+    from: -550
+    to: -549
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: '551-550 a.e.c. (tiempo narrativo: tercer año de Belsasar)'
+  inferred: false
+  sources:
+  - daniel-8
+  - it-gabriel
+  reason: 'Da 8:15-19: Gabriel se acerca a Daniel junto al Ulái, lo levanta y le explica la visión. Perspicacia «Gabriel»:
+    es la primera de sus dos apariciones a Daniel.'
+  checked_on: '2026-10-14'
+  status: verified
+- type: appears_to
+  person: daniel
+  date:
+    from: -538
+    to: -537
+    precision: range
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: primer año de Darío el medo (c. 539-538 a.e.c.)
+  inferred: false
+  sources:
+  - daniel-9
+  - it-gabriel
+  - dp-11
+  reason: 'Da 9:21-23: mientras Daniel oraba, Gabriel llegó con aspecto de hombre a darle entendimiento. Perspicacia «Gabriel»
+    la cuenta como su segunda aparición a Daniel.'
+  checked_on: '2026-10-14'
+  status: verified
