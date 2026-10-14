@@ -13,10 +13,10 @@ Cada fila es una afirmación con su fichero, su fuente, el día en que se leyó,
 | [Personas](personas.md) | 2433 |
 | [Viajes y paradas](viajes.md) | 239 (1005 paradas) |
 | [Cartas](cartas.md) | 22 |
-| [Eventos](eventos.md) | 1686 |
+| [Eventos](eventos.md) | 1687 |
 | [Periodos](periodos.md) | 89 |
 | [Hallazgos](hallazgos.md) | 7 |
 | [Recorridos](recorridos.md) | 4 |
 | [Libros y calendario](libros.md) | 66 libros, 13 meses |
-| [Cobertura de la Biblia](cobertura.md) | 1101 de 1189 capítulos completos |
-| [Fuentes](fuentes.md) | 4107: 3112 enlazadas por algún dato, 963 capítulos de la Biblia y 32 sin citar |
+| [Cobertura de la Biblia](cobertura.md) | 1106 de 1189 capítulos completos |
+| [Fuentes](fuentes.md) | 4115: 3116 enlazadas por algún dato, 967 capítulos de la Biblia y 32 sin citar |
