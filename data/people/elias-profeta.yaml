@@ -27,6 +27,7 @@ sources:
 - 1-reyes-21
 - 2-reyes-1
 - 2-reyes-2
+- santiago-5
 links:
 - title: 'Perspicacia: «Elías»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/El%C3%ADas/
@@ -75,7 +76,7 @@ relations:
   checked_on: '2026-09-30'
   status: verified
 perspicacia: 1200001307#1
-checked_on: '2026-10-12'
+checked_on: '2026-10-14'
 status: verified
 distinct_from:
 - elias-hijo-de-jeroham

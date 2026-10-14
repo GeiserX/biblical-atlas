@@ -76,7 +76,7 @@ Qué versículos de la TNM se han leído y apuntado en `data/coverage/<libro>.ya
 | [Tito](https://github.com/GeiserX/biblical-atlas/blob/main/data/coverage/tito.yaml) | 3 de 3 | 46 de 46 | 100 % |
 | Filemón | 0 de 1 | 0 de 25 | 0 % |
 | Hebreos | 0 de 13 | 0 de 303 | 0 % |
-| Santiago | 0 de 5 | 0 de 108 | 0 % |
+| [Santiago](https://github.com/GeiserX/biblical-atlas/blob/main/data/coverage/santiago.yaml) | 5 de 5 | 108 de 108 | 100 % |
 | 1 Pedro | 0 de 5 | 0 de 105 | 0 % |
 | 2 Pedro | 0 de 3 | 0 de 61 | 0 % |
 | 1 Juan | 0 de 5 | 0 de 105 | 0 % |
@@ -84,7 +84,7 @@ Qué versículos de la TNM se han leído y apuntado en `data/coverage/<libro>.ya
 | 3 Juan | 0 de 1 | 0 de 14 | 0 % |
 | Judas | 0 de 1 | 0 de 25 | 0 % |
 | Apocalipsis | 0 de 22 | 0 de 404 | 0 % |
-| **Total** | 996 de 1189 | 26511 de 31062 | 85 % |
+| **Total** | 1001 de 1189 | 26619 de 31062 | 86 % |
 
 ## Capítulos empezados
 

@@ -51,6 +51,7 @@ sources:
 - job-38
 - job-40
 - job-42
+- santiago-5
 links:
 - title: 'Perspicacia: «Job»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Job/
@@ -91,7 +92,7 @@ relations:
   reason: 'Perspicacia «Job» (párr. 3): igual que Abrahán, descendía de Sem.'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-14'
 status: verified
 date:
   from: -1612
