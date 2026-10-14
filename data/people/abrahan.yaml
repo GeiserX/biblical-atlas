@@ -45,6 +45,9 @@ sources:
 - isaias-41
 - isaias-51
 - 1-cronicas-1
+- hebreos-6
+- hebreos-7
+- hebreos-11
 - santiago-2
 links:
 - title: 'Perspicacia: «Abrahán»'
@@ -188,8 +191,10 @@ relations:
   - salmos-105
   - hechos-7
   - josue-24
+  - hebreos-11
+  - it-abrahan
   reason: 'Gé 12:5; 13:12; 16:3; 17:8: vivió en la tierra de Canaán como extranjero.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-14'
   status: verified
 - type: lived_in
   place: mamre

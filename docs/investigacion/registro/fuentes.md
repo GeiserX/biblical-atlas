@@ -540,9 +540,19 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | hch-27 | [Hechos 27](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/hechos/27/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | 2026-09-27 |
 | hch-28 | [Hechos 28](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/hechos/28/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | 2026-09-27 |
 | hch-9 | [Hechos 9](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/hechos/9/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | 2026-09-27 |
+| hebreos-1 | [Hebreos 1](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/hebreos/1/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
+| hebreos-10 | [Hebreos 10](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/hebreos/10/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | hebreos-11 | [Hebreos 11](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/hebreos/11/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
+| hebreos-12 | [Hebreos 12](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/hebreos/12/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | hebreos-13 | [Hebreos 13](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/hebreos/13/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | 2026-09-27 |
+| hebreos-2 | [Hebreos 2](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/hebreos/2/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
+| hebreos-3 | [Hebreos 3](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/hebreos/3/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
+| hebreos-4 | [Hebreos 4](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/hebreos/4/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
+| hebreos-5 | [Hebreos 5](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/hebreos/5/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
+| hebreos-6 | [Hebreos 6](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/hebreos/6/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | hebreos-7 | [Hebreos 7](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/hebreos/7/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
+| hebreos-8 | [Hebreos 8](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/hebreos/8/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
+| hebreos-9 | [Hebreos 9](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/hebreos/9/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | hechos-1 | [Hechos 1](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/hechos/1/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | hechos-10 | [Hechos 10](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/hechos/10/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | hechos-11 | [Hechos 11](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/hechos/11/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
@@ -1873,6 +1883,7 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-hosama | [Hosamá](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hosam%C3%A1/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
 | it-hosaya | [Hosaya](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hosaya/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
 | it-hosea | [Hosea](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hosea/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
+| it-hospitalidad | [Hospitalidad](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hospitalidad/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-14 |
 | it-hotam | [Hotam](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hotam/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
 | it-hotir | [Hotir](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hotir/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
 | it-hul | [Hul](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hul/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
@@ -2397,6 +2408,7 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-medad | [Medad](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Medad/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-medan | [Medán](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Med%C3%A1n/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-medeba | [Medebá](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Medeb%C3%A1/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
+| it-mediador | [Mediador](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Mediador/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-14 |
 | it-medos | [Medos, Media](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Medos-Media/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
 | it-mefaat | [Mefaat](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Mefaat/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-mefiboset | [Mefibóset](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Mefib%C3%B3set/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
@@ -3058,6 +3070,7 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-sidim | [Sidim, Llanura baja de](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sidim-Llanura-baja-de/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-sidon | [Sidón, sidonios](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sid%C3%B3n-sidonios/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-27 |
 | it-siene | [Siene](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Siene/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
+| it-sierra | [Sierra](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sierra/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-14 |
 | it-sifi | [Sifí](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sif%C3%AD/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
 | it-sifmita | [Sifmita](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sifmita/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
 | it-sifmot | [Sifmot](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sifmot/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
@@ -4069,6 +4082,7 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | w05-corazon-altivo | [Evitemos desarrollar un corazón altivo](https://www.jw.org/es/biblioteca/revistas/w20051015/Evitemos-desarrollar-un-coraz%C3%B3n-altivo/) | La Atalaya (15 de octubre de 2005) | 1 | 2005 | 2026-10-13 |
 | w05-pensamientos-nocivos | [Resistamos los pensamientos nocivos](https://www.jw.org/es/biblioteca/revistas/w20050915/Resistamos-los-pensamientos-nocivos/) | La Atalaya (15 de septiembre de 2005) | 1 | 2005 | 2026-09-29 |
 | w05-profecias-de-oseas | [Las profecías de Oseas nos ayudan a andar con Dios](https://www.jw.org/es/biblioteca/revistas/w20051115/Las-profec%C3%ADas-de-Oseas-nos-ayudan-a-andar-con-Dios/) | La Atalaya (15 de noviembre de 2005) | 1 | 2005 | 2026-09-29 |
+| w06-contenido-del-arca | [Preguntas de los lectores](https://www.jw.org/es/biblioteca/revistas/w20060115/Preguntas-de-los-lectores/) | La Atalaya (15 de enero de 2006) | 1 | 2006 | 2026-10-14 |
 | w06-isaias-1 | [Puntos sobresalientes del libro de Isaías (parte 1)](https://www.jw.org/es/biblioteca/revistas/w20061201/Puntos-sobresalientes-del-libro-de-Isa%C3%ADas-parte-1/) | La Atalaya (1 de diciembre de 2006) | 1 | 2006 | 2026-09-30 |
 | w06-proverbios | [Puntos sobresalientes del libro de Proverbios](https://www.jw.org/es/biblioteca/revistas/w20060915/Puntos-sobresalientes-del-libro-de-Proverbios/) | La Atalaya (15 de septiembre de 2006) | 1 | 2006 | 2026-09-29 |
 | w06-salmos-libro-2 | [Puntos sobresalientes del libro segundo de los Salmos](https://www.jw.org/es/biblioteca/revistas/w20060601/Puntos-sobresalientes-del-libro-segundo-de-los-Salmos/) | La Atalaya (1 de junio de 2006) | 1 | 2006 | 2026-09-29 |

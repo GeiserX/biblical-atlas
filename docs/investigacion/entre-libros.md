@@ -32,9 +32,9 @@ Los campos, los tipos de relación y sus palabras se nombran como en el esquema 
 - **Pasajes paralelos ya puestos en sucesos de Éxodo.** Dt 5:4-27 en `diez-mandamientos`; Dt 9:9 en `primeros-cuarenta-dias-de-moises-en-el-sinai`; Dt 9:10, 11 en `dios-da-a-moises-las-tablas-del-testimonio`; Dt 9:12-14, 19, 26-29 en `moises-ruega-por-el-pueblo`; Dt 9:15-17, 21 en `moises-rompe-las-tablas`; Dt 9:16 en `becerro-de-oro`; Dt 9:20 en `moises-pide-perdon-por-el-pueblo`; Dt 9:18, 25 y Dt 10:1-5, 10 en `moises-recibe-las-segundas-tablas`, porque los 40 días postrado de Dt 9:18 y 9:25 son los segundos (Éx 34:28). Cada uno va en el tramo de su capítulo.
 - **Masá.** Dt 6:16, 9:22 y 33:8 hablan del sitio de Refidim: `masa`.
 
-## Para Nehemías, Hechos y Hebreos
+## Para Nehemías y Hechos
 
-- **Pasajes paralelos ya puestos.** Ne 9:18 y Hch 7:40, 41 en `becerro-de-oro`. Hch 7:17-19 en `egipto-esclaviza-a-israel`; Hch 7:19 en `el-faraon-manda-echar-al-nilo-a-los-ninos`; Hch 7:20-22 y Heb 11:23 en `nacimiento-de-moises`; Hch 7:23, 24 y Heb 11:24-26 en `moises-mata-a-un-egipcio`; Hch 7:25-29 en `moises-huye-a-madian`; Hch 7:29 en `nacimiento-de-guersom`; Hch 7:30-35 en `moises-ante-la-zarza-ardiente`.
+- **Pasajes paralelos ya puestos.** Ne 9:18 y Hch 7:40, 41 en `becerro-de-oro`. Hch 7:17-19 en `egipto-esclaviza-a-israel`; Hch 7:19 en `el-faraon-manda-echar-al-nilo-a-los-ninos`; Hch 7:20-22 en `nacimiento-de-moises`; Hch 7:23, 24 en `moises-mata-a-un-egipcio`; Hch 7:25-29 en `moises-huye-a-madian`; Hch 7:29 en `nacimiento-de-guersom`; Hch 7:30-35 en `moises-ante-la-zarza-ardiente`.
 
 ## Para Tito (desde 1 y 2 Timoteo)
 
@@ -117,7 +117,7 @@ Los campos, los tipos de relación y sus palabras se nombran como en el esquema 
 
 - **Pasaje ya puesto.** Jud 11 está en `muerte-de-core`.
 - **Una cita literal de las Escrituras Hebreas.** Si la carta la usa como mandato que sigue en vigor o dice algo del propio texto citado, su pasaje entra en el suceso y el suceso en `entidades`: Ro 7:7, Ro 13:9 y Ef 6:2, 3 en `diez-mandamientos` (Ef 6:2 lo llama el primer mandato con promesa). Si solo toma la frase como apoyo de un consejo, el suceso va en `menciona` sin pasaje: Gé 2:24 en 1Co 6:16 y Ef 5:31, con `creacion-de-eva`.
-- **Pasajes que aún no están en ningún suceso.** Hch 7:36 y 13:18, Heb 3:16-19 y Jud 5 van a `jehova-condena-a-israel-a-40-anos-en-el-desierto`; Ap 2:14 y Os 9:10 a `israel-adora-al-baal-de-peor`; 2Pe 2:15, 16 a `la-burra-de-balaam-habla`; Heb 9:4 nombra la vara de `la-vara-de-aaron-echa-brotes`. Miq 6:5 nombra `balac`, `balaam` y `sitim`.
+- **Pasajes que aún no están en ningún suceso.** Hch 7:36 y 13:18 y Jud 5 van a `jehova-condena-a-israel-a-40-anos-en-el-desierto`; Ap 2:14 y Os 9:10 a `israel-adora-al-baal-de-peor`; 2Pe 2:15, 16 a `la-burra-de-balaam-habla`. Miq 6:5 nombra `balac`, `balaam` y `sitim`.
 
 ## Para Deuteronomio, Josué y Jueces
 
@@ -160,17 +160,17 @@ Los campos, los tipos de relación y sus palabras se nombran como en el esquema 
 
 - **Bet-Aven.** La de Jos 7:2 y 18:12 es `bet-aven` (Perspicacia núm. 1). La de Os 4:15; 5:8; 10:5 (núm. 2) sigue como nombre de `betel`.
 
-## Para Hechos, Hebreos y Santiago (desde Josué)
+## Para Hechos y Santiago (desde Josué)
 
-- **Pasajes sin poner.** Hch 7:44, 45 (el tabernáculo entra con Josué) puede ir en `entrada-en-canaan`; Hch 7:15, 16 y Heb 11:22, en `entierran-los-huesos-de-jose-en-siquem`.
+- **Pasajes sin poner.** Hch 7:44, 45 (el tabernáculo entra con Josué) puede ir en `entrada-en-canaan`; Hch 7:15, 16, en `entierran-los-huesos-de-jose-en-siquem`.
 
 ## Para Nehemías (desde 1 Samuel)
 
 - **Nob (Ne 11:32).** Usa `nob`.
 
-## Para Hebreos (desde Jueces)
+## Para 2 Crónicas (desde Jueces)
 
-- **Los jueces de Heb 11:32-34.** Gedeón, Barac, Sansón y Jefté son `gedeon`, `barac`, `sanson` y `jefte`; van en `mentions` del tramo.
+- **Etam.** `penasco-de-etam` es Perspicacia «Etam», núm. 2 (Jue 15). La Etam de 2Cr 11:6 (núm. 3) es `etam-de-juda`, que creó 1Cr 4:3; la de Simeón (1Cr 4:32, núm. 1) es `etam-de-simeon`.
 
 ## Para Salmos (desde 2 Samuel)
 
@@ -191,11 +191,10 @@ Los campos, los tipos de relación y sus palabras se nombran como en el esquema 
 - **Personas que ya existen.** `jesus-justo` (clave `1200002450#4`) y `ninfa` (`1200003284`) los creó Colosenses. Apfia (Flm 2) no tiene ficha; cuando exista, puede ir en `mentions` del tramo 17 de Colosenses 4, cuya nota la nombra.
 - **La carta a Laodicea (Col 4:16).** No es un suceso: el texto no dice cuándo ni desde dónde la escribió Pablo, y `validate.py` (`pablo_en_su_sitio`) no acepta un suceso de Pablo en un sitio donde no estaba. Queda como mención en la nota del tramo 15-16, sin suceso, hasta que una fuente diga desde dónde la escribió Pablo.
 
-## Para Filemón y Hebreos (desde Filipenses)
+## Para Filemón (desde Filipenses)
 
 - **Timoteo en Roma.** `timoteo/lived_in/roma`, c. 60-61, deducida de la nota de Flp 1:1 y de Perspicacia «Timoteo», párr. 5, que lo pone en el saludo de Filipenses, Colosenses y Filemón, ya está en la ficha, y Col 1:1 le añadió `colosenses-1`. Flm 1 añade `filemon-1` a sus fuentes con un `anadir`, sin crear otra.
 - **Colaboradores de Pablo.** Cuando el texto llama a alguien colaborador de Pablo, su `accompanies` lleva la palabra `fellow_worker`: Epafrodito (Flp 2:25) y Clemente (Flp 4:3). Evodia y Síntique (Flp 4:3) llevan `caption: colaboradora`, porque el vocabulario no tiene palabra femenina. Desde 1 Timoteo, `timoteo/accompanies/pablo` (c. 49-65) también lleva `fellow_worker`, porque Ro 16:21 lo llama colaborador. «Como un hijo con su padre» (Flp 2:22) es una comparación, no parentesco.
-- **Timoteo preso.** Perspicacia «Timoteo», párr. 5, dice que parece que estuvo preso en Roma entre Filipenses y Hebreos (Flp 2:19; Heb 13:23). Flp 2:19-23 solo cuenta que Pablo pensaba enviarlo a Filipos, sin suceso; Hebreos decide si su liberación es un suceso.
 
 ## Para Salmos (si se relee, desde Efesios)
 
@@ -284,21 +283,18 @@ Los campos, los tipos de relación y sus palabras se nombran como en el esquema 
 - **Lahmí y Jaír.** El tramo 2Sa 21:19 puede poner `person:lahmi` y `person:jair-padre-de-elhanan` en `mentions`, como anunciaba su nota; 1 Crónicas no los hace citar 2 Samuel 21.
 - **Esbaal y Merib-Baal.** Son nombres de `is-boset` y `mefiboset-hijo-de-jonatan`, no fichas aparte: las notas de la edición de estudio a 1Cr 8:33, 34 dicen que son la misma persona.
 
-## Para Hebreos (desde 1 Reyes)
-
-- **Elías.** `elias-resucita-al-hijo-de-la-viuda-de-sarepta` lleva «Heb 11:35» en `passages`: va en el tramo de Heb 11 que lo recuerda.
-
 ## Para Hebreos, Romanos y Gálatas (desde Santiago)
 
 - **El orden de las cartas de 61-62.** `santiago-escribe-santiago` lleva el 2843 de la serie `hechos`. El estudio 3 la lista detrás de Hebreos (c. 61) y delante de 1 Timoteo y Tito (c. 61-64), y «Toda Escritura», libro 59, párr. 4, la ve tardía, quizás poco antes de 62: por eso va tras `pablo-escribe-hebreos` (2841) y antes de `pablo-escribe-1-timoteo` (2850) y `pablo-escribe-tito` (2851). Que vaya también tras `tito-queda-en-creta` (2842) es decisión nuestra, porque entre 2841 y 2842 no hay número libre; ninguna fuente la ordena frente a ese suceso. Si se quiere delante, Santiago toma el 2842 y `tito-queda-en-creta` pasa al 2843. Si Hebreos cambia su número, Santiago sigue detrás.
 - **Le 19:18 como ley en vigor.** Snt 2:8 entró en `jehova-da-leyes-para-que-israel-sea-santo`. Ro 13:9 y Gál 5:14 citan el mismo mandato y no lo pusieron: quien reabra Romanos 13 o Gálatas 5 puede añadir su pasaje y poner el suceso en el tramo.
 - **Cargos sin palabra (pregunta abierta).** Snt 3:1 cuenta a Santiago entre los maestros y Snt 5:14 nombra a los ancianos de la congregación; Perspicacia «Santiago», núm. 4, lo hace superintendente en Jerusalén y, al parecer, «apóstol» de esa congregación. `santiago-hermano-de-jesus` no lleva `holds_office` hasta que el dueño responda la pregunta de `data/_proposals/santiago.json`: `apostle` con `inferred: true`, o palabras nuevas para maestro y anciano o superintendente. Con la respuesta, la ficha recibe el cargo con `santiago-3`, `santiago-5` o `hch-15` como fuente, y se releen Santiago 3 y 5 para ponerlo en sus tramos.
 
-## Para Esdras, Nehemías y Hebreos (desde Ageo)
+## Para Esdras y Nehemías (desde Ageo)
 
 - **Un suceso por mensaje.** Ageo lleva cuatro sucesos anclados al día en 520 a.e.c., serie `ageo`: `primer-mensaje-de-ageo` (1 de elul, Ag 1:1-11), `segundo-mensaje-de-ageo` (21 de tisri, Ag 2:1-9), `tercer-mensaje-de-ageo` y `cuarto-mensaje-de-ageo` (24 de kislev, Ag 2:10-19 y 2:20-23).
 - **`se-reanuda-la-obra-del-templo-520` es de Esdras.** Desde Ageo es solo el 24 de elul de 520 (Ag 1:12-15): el título y el resumen hablan de Zorobabel, Josué y el pueblo, y `people` ya no lleva a `zacarias-profeta` ni `passages` a Zac 1:1, porque Zacarías empezó en el mes octavo (Zac 1:1; Perspicacia «Ageo»). Esdras (Esd 5:1, 2) lo pone en `entities` de su tramo; el primer mensaje de Zacarías es otro suceso, `primer-mensaje-de-zacarias`. El tramo Ageo 2:15-19 lo lleva en `mentions`: la referencia de Ag 2:18 remite a Esd 5:2.
 - **Josué y Jehozadac.** `josue-sumo-sacerdote` lleva la clave `1200002446#4` (Perspicacia «Jesúa», núm. 4); «Josué», núm. 4 (`1200002523`), es el mismo hombre con los pasajes de Ageo y Zacarías y no se usa como clave. Nadie vuelve a proponer la clave de Josué: un `cambiar` desde `null` chocaría. Su padre es `jehozadac` (`1200002400`, con Jozadac y Jehozadaq en `names`). Esd 3:2, 8; 5:2; 10:18 y Ne 12:26 añaden su capítulo a la relación `josue-sumo-sacerdote/kin/jehozadac`.
+- **Darío el medo.** `dario-el-medo` sigue sin clave: le corresponde `1200001124#1` (Perspicacia «Darío», núm. 1), porque `dario-i` ya lleva `#2`. La pone Daniel.
 - **Hebreos 12.** Heb 12:26, 27 cita Ag 2:6: su tramo lleva `segundo-mensaje-de-ageo` en `mentions`, sin añadir el pasaje.
 
 ## Para todos los libros (desde 2 Reyes y 2 Crónicas)
@@ -309,10 +305,6 @@ Los campos, los tipos de relación y sus palabras se nombran como en el esquema 
 
 - **Deportaciones asirias.** `asiria-repuebla-las-ciudades-de-samaria` y `un-sacerdote-desterrado-vuelve-a-betel` van de 740 hasta Esar-Hadón y citan Esd 4:2 en su `reason` (Perspicacia «Esar-hadón»: el traslado de gente a Samaria siguió hasta su reinado). El tramo de Esd 4:1-3 los pone en `mentions` y usa `esar-hadon`.
 - **Sacerdotes.** `esdras` lleva `kin` `seraya-hijo-de-azarias` con la palabra `ancestor` y la fuente `esdras-7`: el tramo de Esdras 7 la pone en `entities` al cerrarse.
-
-## Para Hebreos (desde 2 Reyes)
-
-- **Hebreos 11:35.** `eliseo-resucita-al-hijo-de-la-sunamita` lleva «Heb 11:35» en `passages`, como `elias-resucita-al-hijo-de-la-viuda-de-sarepta`: el tramo de Heb 11 lo pone en `entities`.
 
 ## Para el vocabulario (desde 2 Crónicas)
 
@@ -398,6 +390,29 @@ Los campos, los tipos de relación y sus palabras se nombran como en el esquema 
 - **Jasón, anfitrión.** `pablo/tie/jason`, con la palabra `host` y c. 50, nace de la nota de 1Te 1:6 y de Perspicacia «Tesalónica» y «Jasón», y cita solo `1-tesalonicenses-1`. Lo dice el texto de Hechos, así que va con `inferred: false`, pero su `reason` nombra Hechos sin capítulo, porque citar Hch 17:7 obliga a ponerla en un tramo de Hechos 17, que está cerrado. Si se reabre Hch 17:5-9, el tramo añade `hch-17` a sus fuentes, «Hch 17:7» a su `reason` y la pone en `entities`; Perspicacia «Jasón» dice que acogió también a Silas, así que puede crear `silas/tie/jason` con la misma palabra.
 - **La primera carta y lo que va antes.** `primera-carta-de-pablo` lleva ahora el orden 1806 de la serie `hechos`, tras `crispo-cree` (Hch 18:5), y dice que probablemente es su primera carta (nota de 1Te 2:13). Antes van `pablo-intenta-volver-a-tesalonica` (1713, 1Te 2:17, 18) y `pablo-envia-a-timoteo-a-tesalonica` (1716, 1Te 3:1-5: al empezar la espera de Atenas, porque ninguna fuente lo ordena frente al Areópago, que es 1722).
 - **Filipos en 1Te 2:2.** Va en `mentions`: `filipos` lleva bloque `en` y `validate.py` no le deja citar `1-tesalonicenses-2` mientras el libro no tenga el suyo en `data/books.yaml`. Cuando lo tenga, el tramo 1-2 puede pasarla a `entities`.
+
+## Para Daniel (desde Hebreos)
+
+- **Heb 11:33, 34.** El tramo 32-34 de Hebreos 11 lleva a `daniel` en `mentions`, porque Perspicacia «Daniel» liga el v. 33 a él. En la rama de Daniel, `daniel-sale-ileso-del-foso-de-los-leones` lleva «Heb 11:33» en `passages`: el libro que se integre segundo pone ese suceso en `entities` de ese tramo, o `validate.py` da error. Si una publicación liga Heb 11:34 a `sadrac-mesac-y-abednego-en-el-horno-de-fuego`, se hace igual.
+
+## Para las Escrituras Griegas (desde Hebreos)
+
+- **Jesús, sumo sacerdote.** `jesus/holds_office/-` lleva `office: high_priest`, sin fecha ni lugar: las notas de Heb 1:9 y 5:5 lo nombran al bautizarse, en 29, y Perspicacia «Sumo sacerdote» lo pone a servir desde que entró en el cielo. Otro libro que lo llame sumo sacerdote añade su capítulo con un `anadir` de la misma relación, sin `date`, para que se funda.
+- **Apóstol por enviado.** Heb 3:1 llama apóstol a Jesús en el sentido básico de enviado de Dios, no como uno de los doce (Perspicacia «Apóstol»). Por eso `jesus` no lleva `holds_office` `apostle`; la nota del tramo Heb 3:1-6 lo explica.
+- **Pablo y Timoteo en 61.** `pablo-escribe-hebreos` (c. 61, Roma) y `timoteo-queda-libre` (c. 60-61, Roma, Heb 13:23) comparten el orden 2841 de la serie `hechos`, entre Filipenses (2839, 2840) y `tito-queda-en-creta` (2842). Hebreos no cuenta la liberación de Pablo: Perspicacia «Italia» pone la carta al final del primer encierro o poco después, así que `pablo-queda-libre` no suma pasajes de Hebreos y va en `mentions` de Heb 13:17-19 y 13:22-25. `timoteo/lived_in/roma` tampoco cita Hebreos; va en `mentions` de 13:22-25.
+- **Jesús, rey.** Heb 1:8, 9 le da trono y cetro, y la nota de 1:9 pone su unción como rey al acabar los tiempos de los gentiles. `jesus` no lleva `holds_office` `king`: es pregunta para el dueño (si se pone, y con esa fecha o sin ella). Hasta entonces queda en la nota del tramo Heb 1:7-12.
+
+## Para quien reabra Salmos (desde Hebreos)
+
+- **Citas de Hebreos 1.** Las notas de cobertura de Sl 8, 22, 45, 102 y 104 dicen que Hebreos los cita; las de Sl 2:7-12 y Sl 97:1-7 no dicen que los citan Heb 1:5 y 1:6. Al reabrir Salmos se pueden igualar.
+
+## Para el vocabulario (desde Hebreos)
+
+- **Mediador y garantía.** Hebreos llama a Jesús mediador de un pacto mejor (Heb 8:6; 9:15; 12:24) y garantía de ese pacto (7:22); Perspicacia «Mediador» da ese papel a Moisés en el pacto de la Ley (Gál 3:19; Heb 9:19, 20). `offices` no tiene esos cargos, así que quedan en las notas de los tramos, como en Gál 3 y 1Ti 2. Si se añade `mediator`, sus relaciones citan esos pasajes.
+
+## Para Ezequiel y quien toque `exodo` (desde Hebreos)
+
+- **«Nú 33:3-5» repetido.** En `main`, `passages` de `exodo` lleva «Nú 33:3-5» dos veces. Hebreos no lo quita, para no chocar con la rama de Ezequiel, que añade «Eze 20:9, 10» a esa lista. Quien toque `exodo` después (Ezequiel o la integración) quita la segunda copia, con una entrada de `history` cuya fuente sea `numeros-33`.
 
 ## Para 2 Juan, 3 Juan y las demás cartas (desde 1 Juan)
 

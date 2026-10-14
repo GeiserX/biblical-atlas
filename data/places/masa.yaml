@@ -48,6 +48,7 @@ sources:
 - deuteronomio-6
 - deuteronomio-9
 - deuteronomio-33
+- hebreos-3
 links:
 - title: 'Perspicacia: «Masah»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Masah/
@@ -64,6 +65,6 @@ links:
 - title: Éxodo 17 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/%C3%89xodo/17/
   type: bible
-checked_on: '2026-09-29'
+checked_on: '2026-10-14'
 status: verified
 coord_note: OpenBible le da el mismo punto que a Refidim, en Wadi Refayied. Perspicacia solo dice que estaba cerca de Refidim.

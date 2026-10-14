@@ -28,6 +28,7 @@ present:
 passages:
 - Éx 25:1-31:17
 - Hch 7:44
+- Heb 8:5
 summary: En sus cuarenta días en la montaña, Moisés recibe el diseño del tabernáculo, sus muebles y su patio, las prendas
   y la instalación de los sacerdotes, y sabe que Bezalel y Oholiab dirigirán la obra.
 reason: 'Lo recibe en la primera estancia de 40 días tras el pacto del tercer mes: 1513 a.e.c. (Perspicacia «Moisés» y «Diez
@@ -44,6 +45,7 @@ sources:
 - it-tabernaculo
 - it-moises
 - it-diez-palabras
+- hebreos-8
 links:
 - title: Éxodo 25 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/%C3%89xodo/25/
@@ -51,5 +53,5 @@ links:
 - title: 'Perspicacia: «Tabernáculo»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Tabern%C3%A1culo/
   type: perspicacia
-checked_on: '2026-09-29'
+checked_on: '2026-10-14'
 status: verified
