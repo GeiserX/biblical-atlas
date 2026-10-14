@@ -16,6 +16,7 @@ places: []
 people: []
 passages:
 - Gé 6:1, 2, 4
+- Jud 6
 summary: Los hijos del Dios verdadero, que eran ángeles, se casan con las mujeres que eligen. Sus hijos son los nefilim, hombres
   violentos y famosos que hacen crecer la maldad.
 reason: La nota de Gé 6:2 dice que en hebreo esa expresión designa a ángeles. Perspicacia «Nefilim» ve en los nefilim a sus
@@ -24,6 +25,8 @@ sources:
 - genesis-6
 - it-nefilim
 - it-noe
+- judas-1
+- it-tartaro
 links:
 - title: 'Perspicacia: «Nefilim»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Nefilim/
@@ -31,5 +34,5 @@ links:
 - title: Génesis 6 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/G%C3%A9nesis/6/
   type: bible
-checked_on: '2026-09-29'
+checked_on: '2026-10-14'
 status: verified

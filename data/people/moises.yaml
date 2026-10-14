@@ -141,6 +141,7 @@ sources:
 - josue-24
 - 1-cronicas-6
 - 1-cronicas-23
+- judas-1
 links:
 - title: 'Perspicacia: «Moisés»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Mois%C3%A9s/
@@ -364,5 +365,5 @@ history:
 - date: '2026-09-29'
   change: 'Grafía: la razón de su parentesco con Leví escribe Cohat, como Éx 6:16 en la TNM; Qohat es la grafía de Perspicacia.'
   source: exodo-6
-checked_on: '2026-10-12'
+checked_on: '2026-10-14'
 status: verified

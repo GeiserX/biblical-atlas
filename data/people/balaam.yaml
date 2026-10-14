@@ -28,6 +28,7 @@ sources:
 - miqueas-6
 - josue-13
 - josue-24
+- judas-1
 links:
 - title: 'Perspicacia: «Balaam»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Balaam/
@@ -103,5 +104,5 @@ history:
   change: 'La relación con Mesopotamia pasa de deducida a dicha por el texto: Dt 23:4 lo llama de Petor de Mesopotamia. Sus
     relaciones con Beor y Petor citan también Dt 23.'
   source: deuteronomio-23
-checked_on: '2026-09-29'
+checked_on: '2026-10-14'
 status: verified
