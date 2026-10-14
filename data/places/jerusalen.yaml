@@ -343,6 +343,7 @@ sources:
 - lamentaciones-2
 - lamentaciones-4
 - lamentaciones-5
+- daniel-1
 links:
 - title: 'Perspicacia: «Jerusalén»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jerusal%C3%A9n/
@@ -369,5 +370,5 @@ history:
 - date: '2026-09-29'
   change: «Sión» pasa a «Sion», como escribe la TNM (Sl 137:1; 2Sa 5:7). Perspicacia conserva la tilde.
   source: salmos-137
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified

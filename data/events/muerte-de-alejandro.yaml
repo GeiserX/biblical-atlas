@@ -14,8 +14,7 @@ places:
 people: []
 type: death
 roles: {}
-passages:
-- Da 8:8
+passages: []
 summary: Alejandro quería hacer de Babilonia su capital, pero muere allí de repente a los 32 años. Su imperio acaba repartido
   entre cuatro de sus generales.
 reason: 'Perspicacia «Alejandro» y «Babilonia» fechan su muerte en 323 a.e.c.; «Veamos “la buena tierra”» da la misma edad
@@ -25,5 +24,10 @@ sources:
 - it-babilonia
 - lbt-grecia-y-roma
 search: muerte de Alejandro Magno
-checked_on: '2026-09-29'
+history:
+- date: '2026-10-14'
+  change: 'Fuera Daniel 8: el texto solo habla de un macho cabrío y del rey de Grecia, y que sea Alejandro lo dicen las publicaciones.
+    Por la regla «Profecía y cumplimiento», el tramo lo menciona sin pasaje.'
+  source: daniel-8
+checked_on: '2026-10-14'
 status: verified

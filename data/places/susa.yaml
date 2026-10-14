@@ -3,6 +3,11 @@ id: susa
 name: Susa
 names:
 - name: Susa
+- name: Susán
+  note: Otra forma del nombre, en la nota de Da 8:2; Perspicacia «Elam» la escribe Shushan.
+- name: Castillo de Susa
+  note: Susa o su parte fortificada (Da 8:2; Ne 1:1), según Perspicacia «Susa». La nota de Da 8:2 da también «el palacio»
+    o «la fortaleza».
 type: city
 lat: 32.18922
 lon: 48.25778
@@ -17,6 +22,7 @@ sources:
 - it-susa
 - it-persia
 - openbible-geo
+- daniel-8
 links:
 - title: 'Perspicacia: «Susa»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Susa/
@@ -24,5 +30,5 @@ links:
 - title: Nehemías 1 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Nehem%C3%ADas/1/
   type: bible
-checked_on: '2026-09-28'
+checked_on: '2026-10-14'
 status: verified
