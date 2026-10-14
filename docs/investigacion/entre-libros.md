@@ -115,9 +115,8 @@ Los campos, los tipos de relación y sus palabras se nombran como en el esquema 
 
 ## Para las Escrituras Griegas
 
-- **Pasaje ya puesto.** Jud 11 está en `muerte-de-core`.
 - **Una cita literal de las Escrituras Hebreas.** Si la carta la usa como mandato que sigue en vigor o dice algo del propio texto citado, su pasaje entra en el suceso y el suceso en `entidades`: Ro 7:7, Ro 13:9 y Ef 6:2, 3 en `diez-mandamientos` (Ef 6:2 lo llama el primer mandato con promesa). Si solo toma la frase como apoyo de un consejo, el suceso va en `menciona` sin pasaje: Gé 2:24 en 1Co 6:16 y Ef 5:31, con `creacion-de-eva`.
-- **Pasajes que aún no están en ningún suceso.** Hch 7:36 y 13:18, Heb 3:16-19 y Jud 5 van a `jehova-condena-a-israel-a-40-anos-en-el-desierto`; Ap 2:14 y Os 9:10 a `israel-adora-al-baal-de-peor`; 2Pe 2:15, 16 a `la-burra-de-balaam-habla`; Heb 9:4 nombra la vara de `la-vara-de-aaron-echa-brotes`. Miq 6:5 nombra `balac`, `balaam` y `sitim`.
+- **Pasajes que aún no están en ningún suceso.** Hch 7:36 y 13:18 y Heb 3:16-19 van a `jehova-condena-a-israel-a-40-anos-en-el-desierto`; Ap 2:14 y Os 9:10 a `israel-adora-al-baal-de-peor`; 2Pe 2:15, 16 a `la-burra-de-balaam-habla`; Heb 9:4 nombra la vara de `la-vara-de-aaron-echa-brotes`. Miq 6:5 nombra `balac`, `balaam` y `sitim`.
 
 ## Para Deuteronomio, Josué y Jueces
 
@@ -418,3 +417,15 @@ Los campos, los tipos de relación y sus palabras se nombran como en el esquema 
 ## Para quien relea Jerusalén o el monte Moria (desde Ezequiel)
 
 - **Puertas del templo.** `jerusalen` lleva en `names` dos puertas del templo, la Puerta superior de la casa de Jehová (2Re 15:35) y la Puerta del Rey (1Cr 9:18), y `monte-moria` lleva las demás. Ezequiel 9 y 10 no las movieron: hace falta decidir si pasan a `monte-moria`.
+
+## Para quien reabra Génesis 5 o Deuteronomio 34 (desde Judas)
+
+- **Sucesos que solo cuenta Judas.** `enoc-anuncia-el-juicio-de-jehova` (Jud 14, 15; serie `genesis`, orden 5020, antes de `dios-toma-a-enoc`) va en `mentions` del tramo de Gé 5:21-24. `miguel-discute-con-el-diablo-por-el-cuerpo-de-moises` (Jud 9; serie `numeros`, orden 134006, junto al entierro) va en `mentions` del tramo de Dt 34:5-8. Ninguno lleva pasaje de esos libros.
+
+## Para Apocalipsis (desde Judas)
+
+- **Miguel es Jesús.** Jud 9 pone `person:jesus` por Perspicacia «Miguel», núm. 1, y no crea ficha para Miguel. Ap 12:7 usa el mismo id.
+
+## Para el vocabulario (desde Judas)
+
+- **Arcángel.** Jud 9 llama arcángel a Miguel, y `offices` no tiene esa palabra: `jesus` va sin ese `holds_office`. Si se añade, la relación cita `judas-1` e `it-miguel`, y 1Te 4:16 puede sumarse. Es la misma duda que «príncipe» para Miguel, de Daniel, en «Más cargos que el vocabulario no tiene».

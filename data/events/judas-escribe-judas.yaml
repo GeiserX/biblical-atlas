@@ -1,0 +1,48 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: judas-escribe-judas
+title: Judas escribe su carta
+date:
+  from: 65
+  to: 65
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 65 e.c.
+narrative_order:
+  series: hechos
+  order: 2861
+places:
+- israel
+people:
+- judas-hermano-de-jesus
+present: []
+type: writing
+roles:
+  judas-hermano-de-jesus: wrote
+passages:
+- Jud 1, 2
+- Jud 3, 4
+summary: Judas, hermano de Santiago, escribe a todos los llamados para que luchen por la fe frente a hombres impíos que se
+  han colado entre ellos, y les recuerda cómo juzgó Dios a otros antes.
+reason: 'Tabla y estudio 3: c. 65. Lugar dudoso: la Tabla pone «Israel (?)», «Toda Escritura», «Palestina (?)», y Perspicacia,
+  probablemente Palestina. La Atalaya de 2008 dice Palestina sin duda, pero manda la Tabla, más reciente: present queda vacío.'
+sources:
+- judas-1
+- tnm-tabla
+- si-3
+- si-judas
+- it-judas-carta
+- w08-cartas-de-juan-y-judas
+links:
+- title: Judas 1 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/judas/1/
+  type: bible
+- title: 'Perspicacia: «Judas, Carta de»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Judas-Carta-de/
+  type: perspicacia
+search: carta de Judas
+note: 'Orden 2861 en hechos, elegido por nosotros, tras los sucesos de c. 65 (2855 a 2860). Perspicacia ve que Jud 18
+  parece citar 2Pe 3:3: va después de pedro-escribe-2-pedro, que trae 2 Pedro. Nada la ordena frente a 2 Timoteo.'
+checked_on: '2026-10-14'
+status: verified

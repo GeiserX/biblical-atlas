@@ -1,0 +1,283 @@
+{
+ "formato": "biblical-atlas/propuesta-cobertura/1",
+ "libro": "judas",
+ "agente": "escritor-judas",
+ "leido": "2026-10-14",
+ "cobertura": {},
+ "fuentes": {},
+ "cambios": [
+  {
+   "op": "anadir",
+   "tipo": "letters",
+   "id": "judas",
+   "campo": "sources",
+   "valores": [
+    "si-judas",
+    "w08-cartas-de-juan-y-judas"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "letters",
+   "id": "judas",
+   "campo": "people",
+   "valores": [
+    "santiago-hermano-de-jesus"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "letters",
+   "id": "judas",
+   "campo": "written_in",
+   "antes": [],
+   "despues": [
+    "israel"
+   ],
+   "historial": {
+    "date": "2026-10-14",
+    "change": "El lugar pasa de ninguno a israel, con duda: la nota decía que no había ficha para esa región y ya existe. La Tabla da «Israel (?)» y «Toda Escritura», libro 65, «Palestina (?)».",
+    "source": "si-judas"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "letters",
+   "id": "judas",
+   "campo": "note",
+   "antes": "Sin lugar en el mapa: la Tabla dice «Israel (?)» y Perspicacia «Palestina», y no tenemos una ficha para esa región.",
+   "despues": "El lugar no es seguro: la Tabla pone «Israel (?)», «Toda Escritura», «Palestina (?)», y Perspicacia, probablemente Palestina. La Atalaya de 2008 dice Palestina sin duda, pero la Tabla, más reciente, mantiene la duda.",
+   "historial": {
+    "date": "2026-10-14",
+    "change": "La nota ya no dice que falte una ficha para la región: existe israel, y la carta la lleva con la duda de la Tabla, más reciente que La Atalaya de 2008.",
+    "source": "si-judas"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "judas-hermano-de-jesus",
+   "campo": "sources",
+   "valores": [
+    "si-judas"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "judas-hermano-de-jesus",
+   "campo": "not_claimed",
+   "valores": [
+    "Que Judas fuera apóstol: se llama esclavo de Jesucristo y habla de los apóstoles como de otros (Jud 1, 17, 18; Perspicacia «Judas», núm. 5, y «Toda Escritura», libro 65)."
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "santiago-hermano-de-jesus",
+   "campo": "sources",
+   "valores": [
+    "judas-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "events",
+   "id": "exodo",
+   "campo": "passages",
+   "valores": [
+    "Jud 5"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "events",
+   "id": "exodo",
+   "campo": "sources",
+   "valores": [
+    "judas-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "events",
+   "id": "jehova-condena-a-israel-a-40-anos-en-el-desierto",
+   "campo": "passages",
+   "valores": [
+    "Jud 5"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "events",
+   "id": "jehova-condena-a-israel-a-40-anos-en-el-desierto",
+   "campo": "sources",
+   "valores": [
+    "judas-1",
+    "si-judas"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "events",
+   "id": "angeles-toman-esposas",
+   "campo": "passages",
+   "valores": [
+    "Jud 6"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "events",
+   "id": "angeles-toman-esposas",
+   "campo": "sources",
+   "valores": [
+    "judas-1",
+    "it-tartaro"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "events",
+   "id": "destruccion-de-sodoma-y-gomorra",
+   "campo": "passages",
+   "valores": [
+    "Jud 7"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "events",
+   "id": "destruccion-de-sodoma-y-gomorra",
+   "campo": "sources",
+   "valores": [
+    "judas-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jesus",
+   "campo": "sources",
+   "valores": [
+    "judas-1",
+    "it-miguel"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "satanas",
+   "campo": "sources",
+   "valores": [
+    "judas-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "moises",
+   "campo": "sources",
+   "valores": [
+    "judas-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "cain",
+   "campo": "sources",
+   "valores": [
+    "judas-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "balaam",
+   "campo": "sources",
+   "valores": [
+    "judas-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "core-hijo-de-izhar",
+   "campo": "sources",
+   "valores": [
+    "judas-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "events",
+   "id": "muerte-de-core",
+   "campo": "sources",
+   "valores": [
+    "judas-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "events",
+   "id": "rebelion-de-core",
+   "campo": "passages",
+   "valores": [
+    "Jud 11"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "events",
+   "id": "rebelion-de-core",
+   "campo": "sources",
+   "valores": [
+    "judas-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "enoc-hijo-de-jared",
+   "campo": "sources",
+   "valores": [
+    "judas-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "enoc-hijo-de-jared",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "adan",
+     "word": "ancestor",
+     "sources": [
+      "judas-1",
+      "it-enoc"
+     ],
+     "reason": "Jud 14: el séptimo hombre en la línea familiar que parte de Adán, como repite Perspicacia «Enoc», núm. 2.",
+     "inferred": false,
+     "checked_on": "2026-10-14",
+     "status": "verified"
+    },
+    {
+     "type": "holds_office",
+     "office": "prophet",
+     "sources": [
+      "judas-1",
+      "it-enoc"
+     ],
+     "reason": "Jud 14: Enoc profetizó sobre los irreverentes; Perspicacia «Enoc», núm. 2, lo llama profeta de Jehová.",
+     "inferred": false,
+     "checked_on": "2026-10-14",
+     "status": "verified"
+    }
+   ]
+  }
+ ],
+ "preguntas": []
+}
