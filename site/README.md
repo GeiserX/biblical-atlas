@@ -42,16 +42,18 @@ No copiamos ni incrustamos texto de jw.org. La ficha enlaza cada pasaje a su cap
 
 `maps/` tiene el relieve propio del [kit de maquetas](../docs/ideas/mockups/kit/build/README.md), hecho con Natural Earth y datos de elevación abiertos, en cuatro extensiones, cada una en versión antigua y actual. Los créditos están en [`CREDITS.md`](../docs/ideas/mockups/kit/maps/CREDITS.md).
 
-| Extensión | Longitud | Latitud | Tamaño |
-|---|---|---|---|
-| `mundo` | −20 a 100 | −40 a 58 | 4096 × 3935 px |
-| `mediterraneo` | 10 a 44 | 28 a 44 | 4096 × 2399 px |
-| `israel` | 33,9 a 36,9 | 29,4 a 33,7 | 2000 × 3365 px |
-| `jerusalen` | 35,10 a 35,36 | 31,68 a 31,86 | 2400 × 1954 px |
+| Extensión | Longitud | Latitud | Tamaño | Bytes (antiguo / actual) |
+|---|---|---|---|---|
+| `mundo` | −20 a 100 | −40 a 58 | 4096 × 3935 px | 530.802 / 739.158 |
+| `mediterraneo` | 10 a 44 | 28 a 44 | 4096 × 2399 px | 393.250 / 461.794 |
+| `israel` | 33,9 a 36,9 | 29,4 a 33,7 | 2000 × 3365 px | 139.326 / 182.566 |
+| `jerusalen` | 35,10 a 35,36 | 31,68 a 31,86 | 2400 × 1954 px | 86.510 / 92.712 |
 
 El mapa las pone una encima de otra, de menos a más detalle: el mundo siempre, el Mediterráneo a partir del zoom 4,3, la tierra de Israel a partir del 6,7 y Jerusalén con sus alrededores (Betania, Betfagué, el monte de los Olivos, Belén) a partir del 10, cada una fundida con la de debajo. Los bordes del Mediterráneo, de Israel y de Jerusalén se funden a transparente (70, 90 y 120 px) para que no se vea la costura. `maps/mundo-mini.webp` (240 × 159 px) es el mapa de situación de la esquina: cubre −20 a 100 y −8 a 58, porque más al sur solo hay mar y el sur de África.
 
-`maps/portada-relieve.webp` (1280 × 720 px, 27.294 bytes) es el fondo de la portada: una captura de nuestro propio mapa en su estilo antiguo, sin interfaz ni capas de datos, de 22,2 a 50,2 E y de 24,4 a 37,9 N (centro en 36,2 E y 31,4 N, 28° de longitud a lo ancho, zoom 6,0, con el mundo y el Mediterráneo). Se captura a 2560 × 1440 con [`render-backdrops.mjs`](../docs/ideas/mockups/portada/assets/render-backdrops.mjs) (encuadre `bible-lands`, forma `wide`), se reduce a 1280 × 720 con Lanczos y se comprime con `cwebp -q 60 -m 6 -sharp_yuv`: va lavada y desaturada, así que la calidad 60 no se nota. Si cambian las imágenes del mundo o del Mediterráneo, hay que volver a capturarla.
+Cada imagen se pide la primera vez que el mapa la dibuja, nunca antes (`cargarFondos` en `js/mapa.js`): cuando el zoom pasa de donde empieza a fundirse, su extensión toca lo que se ve y ninguna imagen más fina, ya opaca a ese zoom, tapa todo el encuadre (con un 6 % de margen para su borde fundido). Al acercarse, la imagen nueva empieza transparente, así que llega mientras se funde. Un gesto (la rueda, el arrastre, las teclas) pide lo que enseña mientras se mueve; un movimiento que pide el sitio (`easeTo`, `flyTo`, `fitBounds`, que `crearMapa` marca como vuelo) no pide nada hasta pararse, porque lo de en medio solo se ve un instante. Las antiguas se piden en el mapa antiguo con la capa «Relieve»; las actuales, solo con el estilo de reserva, en el mapa actual y en la cortina. Al abrir, el mapa pide una sola imagen: a 1440 × 900 el Mediterráneo, que tapa entero al mundo, y a 430 de ancho el mundo, porque abre en el zoom 4,1, antes de que el Mediterráneo empiece a fundirse. Un enlace a Getsemaní pide solo la de Jerusalén. Cuando el mapa queda quieto por primera vez pide también las más gruesas que la más fina a la vista, y desde entonces, con cada imagen nueva, las de debajo: en el escritorio, el mundo; tras el enlace a Getsemaní, Israel, el Mediterráneo y el mundo. Al alejarse o al salir de una extensión, la imagen gruesa hace falta opaca y de golpe, y sin ella el mapa quedaba en papel liso mientras llegaba. Las más finas siguen esperando a verse. La cortina pide las cuatro antiguas al ponerse, porque las pinta en sus lienzos. Una imagen pedida se queda. La prueba es [`fondos.test.mjs`](../tests/site/fondos.test.mjs).
+
+`maps/portada-relieve.webp` (1280 × 720 px, 27.294 bytes) es el fondo de la portada: una captura de nuestro propio mapa en su estilo antiguo, sin interfaz ni capas de datos, de 22,2 a 50,2 E y de 24,4 a 37,9 N (centro en 36,2 E y 31,4 N, 28° de longitud a lo ancho, zoom 6,0, con el mundo y el Mediterráneo). Se captura a 2560 × 1440 con [`render-backdrops.mjs`](../docs/ideas/mockups/portada/assets/render-backdrops.mjs) (encuadre `bible-lands`, forma `wide`), se reduce a 1280 × 720 con Lanczos y se comprime con `cwebp -q 60 -m 6 -sharp_yuv`: va lavada y desaturada, así que la calidad 60 no se nota. Si cambia el dibujo o la extensión del mundo o del Mediterráneo, hay que volver a capturarla. Recomprimir la misma imagen no cuenta: la captura va lavada y a calidad 60, así que el paso de calidad 82 a 70 no cambia lo que se ve en la portada.
 
 El mundo cubre todos los lugares y zonas candidatas de los datos con al menos 10° de margen (de Tarsis en la península ibérica a la zona de Ofir en la India, y hasta la zona de Ofir en Somalia por el sur). Por el sur llega hasta 40° S: en el móvil, con la hoja de la ficha abierta, lo que cae bajo la hoja también tiene que ser relieve, y así las tres zonas de Ofir caben por encima de ella. Si un lugar nuevo cae cerca del borde, hay que ampliar la extensión y regenerar las dos imágenes del mundo (y la del mapa de situación si el lugar queda fuera de ella). El mapa no deja salir de esa extensión, así que nunca se ve el borde del relieve.
 
@@ -66,7 +68,7 @@ Un nombre de lugar va a la derecha de su punto. Si ahí se saldría del mapa o c
 El kit dibuja en proyección equirrectangular. Aquí las imágenes están reproyectadas a Web Mercator (EPSG:3857) para que MapLibre las ponga como `image source` con las esquinas exactas. La reproyección es un remuestreo por filas, porque en las dos proyecciones la longitud es lineal en x:
 
 ```python
-# python3 reproyectar.py <kit.webp> <salida.webp> <oeste> <este> <sur> <norte> <ancho> [--borde=N]
+# python3 reproyectar.py <kit.png> <salida.png> <oeste> <este> <sur> <norte> <ancho> [--borde=N]
 import sys, numpy as np
 from PIL import Image
 args = [a for a in sys.argv[1:] if not a.startswith('--borde=')]
@@ -86,14 +88,24 @@ if borde:
     x = np.minimum(np.arange(W), W - 1 - np.arange(W))[None, :]
     a = np.clip(np.minimum(y, x) / borde, 0, 1)
     a = (a * a * (3 - 2 * a) * 255).astype(np.uint8)
-    Image.fromarray(np.dstack([out, a]), 'RGBA').save(dst, quality=82, method=6, alpha_quality=60)
+    Image.fromarray(np.dstack([out, a]), 'RGBA').save(dst)
 else:
-    Image.fromarray(out).save(dst, quality=82, method=6)
+    Image.fromarray(out).save(dst)
 ```
 
 Órdenes usadas, para `antiguo` y `actual`: `mundo -20 100 -40 58 4096`, `mediterraneo 10 44 28 44 4096 --borde=70`, `israel 33.9 36.9 29.4 33.7 2000 --borde=90` y `jerusalen 35.10 35.36 31.68 31.86 2400 --borde=120`. El mundo y Jerusalén usan las extensiones propias del sitio que describe el [README del kit](../docs/ideas/mockups/kit/build/README.md#extensiones-del-sitio).
 
+La entrada es el PNG sin comprimir del kit (`map_<extensión>_<estilo>.png` del paso 6, o `relief_jerusalen_<estilo>.png`), nunca su WebP de calidad 82, y la salida es otro PNG. La única pérdida es el último paso, que no se salta: cwebp 1.6.0, que da los mismos bytes cada vez.
+
+```sh
+cwebp -quiet -q 70 -m 6 -sharp_yuv -alpha_q 60 salida.png -o maps/<extensión>-<estilo>.webp   # las dos del mundo llevan además -noalpha
+```
+
 Para comprobar la alineación, Corinto (37,9058 N, 22,8787 E) debe caer en la costa del istmo y no tierra adentro.
+
+Los ocho ficheros de hoy no salieron así, sino de pasar esa orden de cwebp sobre los de antes, que el script guardaba ya en WebP de calidad 82 (los de `maps/` en el commit 6c7e51f0). Una regeneración con los pasos de arriba comprime una sola vez.
+
+Pasaron de 3.996.900 a 2.626.118 bytes. A la escala a la que el mapa las dibuja, la calidad 70 no se distingue de la 82: en las capturas de 1440 y 430 px de ancho, en los dos estilos y en el modo reunión, el SSIM contra las de antes no baja de 0,99. No se reducen de tamaño porque ninguna se dibuja nunca por debajo de su resolución: en el zoom más cercano al que el mapa las encuadra (7,5 el mundo, 8 el Mediterráneo, 10 Israel y 14 Jerusalén) cada píxel de imagen ocupa entre 2,2 y 7,5 px de CSS.
 
 ## Cómo situamos a Pablo
 
