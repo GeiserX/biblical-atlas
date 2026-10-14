@@ -66,7 +66,7 @@ Se generan con los mismos pasos, en una carpeta de trabajo con una copia de los 
 - `raster.py` suaviza la elevación antes de sombrear cuando la extensión trae `suave` (`el = blur1(el, ext['suave'])` justo después de cargar `elev_<nombre>.npy`). Sin eso, la elevación de 30 m remuestreada a 10 m por píxel se ve en facetas.
 - `jerusalen` no pasa por `overlay.py`: no tiene costa ni ríos de Natural Earth, y las fronteras de 1:10 millones se desvían cientos de píxeles a esa escala. Su `relief_jerusalen_<estilo>.png` va directo a la reproyección.
 
-Para `mundo`, el paso 6 es `--size 4096x4084`. Después, [`reproyectar.py`](../../../../../site/README.md#mapas-base) pasa cada imagen a Web Mercator con las órdenes que da `site/README.md`, y `mundo-mini.webp` es el `mundo-antiguo.webp` de −8 a 58 reducido a 240 px de ancho (el mapa de situación no baja al sur).
+Para `mundo`, el paso 6 es `--size 4096x4084`. Después, [`reproyectar.py`](../../../../../site/README.md#mapas-base) pasa a Web Mercator el PNG de cada imagen, no su WebP: la calidad 82 de este paso es para las maquetas, y el sitio comprime una sola vez, a calidad 70, con las órdenes que da `site/README.md`. Y `mundo-mini.webp` es el `mundo-antiguo.webp` de −8 a 58 reducido a 240 px de ancho (el mapa de situación no baja al sur).
 
 ## Qué hace cada script
 
