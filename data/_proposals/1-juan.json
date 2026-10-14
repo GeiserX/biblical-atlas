@@ -1,0 +1,329 @@
+{
+  "formato": "biblical-atlas/propuesta-cobertura/1",
+  "libro": "1-juan",
+  "agente": "escritor-1-juan",
+  "leido": "2026-10-14",
+  "cobertura": {},
+  "fuentes": {},
+  "cambios": [
+    {
+      "op": "anadir",
+      "tipo": "people",
+      "id": "juan-apostol",
+      "campo": "sources",
+      "valores": [
+        "1-juan-1",
+        "si-1-juan"
+      ]
+    },
+    {
+      "op": "anadir",
+      "tipo": "people",
+      "id": "jesus",
+      "campo": "sources",
+      "valores": [
+        "1-juan-1"
+      ]
+    },
+    {
+      "op": "anadir",
+      "tipo": "letters",
+      "id": "1-juan",
+      "campo": "sources",
+      "valores": [
+        "1-juan-1"
+      ]
+    },
+    {
+      "op": "anadir",
+      "tipo": "people",
+      "id": "juan-apostol",
+      "campo": "relations",
+      "valores": [
+        {
+          "type": "lived_in",
+          "place": "efeso",
+          "date": {
+            "from": 98,
+            "to": 98,
+            "precision": "year",
+            "approx": true,
+            "type": "anchored",
+            "chronology": "tnm",
+            "text": "c. 98 e.c."
+          },
+          "inferred": true,
+          "sources": [
+            "1-juan-1"
+          ],
+          "reason": "La Tabla pone 1 Juan en «Éfeso o cerca», c. 98; el texto no lo dice.",
+          "checked_on": "2026-10-14",
+          "status": "verified"
+        }
+      ]
+    },
+    {
+      "op": "anadir",
+      "tipo": "people",
+      "id": "juan-apostol",
+      "campo": "sources",
+      "valores": [
+        "1-juan-2"
+      ]
+    },
+    {
+      "op": "anadir",
+      "tipo": "letters",
+      "id": "1-juan",
+      "campo": "sources",
+      "valores": [
+        "si-1-juan",
+        "w08-cartas-de-juan-y-judas",
+        "it-anticristo",
+        "it-santos"
+      ]
+    },
+    {
+      "op": "anadir",
+      "tipo": "events",
+      "id": "cain-mata-a-abel",
+      "campo": "passages",
+      "valores": [
+        "1Jn 3:12"
+      ]
+    },
+    {
+      "op": "anadir",
+      "tipo": "events",
+      "id": "cain-mata-a-abel",
+      "campo": "sources",
+      "valores": [
+        "1-juan-3"
+      ]
+    },
+    {
+      "op": "anadir",
+      "tipo": "people",
+      "id": "cain",
+      "campo": "sources",
+      "valores": [
+        "1-juan-3"
+      ]
+    },
+    {
+      "op": "cambiar",
+      "tipo": "people",
+      "id": "cain",
+      "campo": "relations",
+      "antes": [
+        {
+          "type": "kin",
+          "person": "adan",
+          "word": "father",
+          "inferred": false,
+          "sources": [
+            "it-cain",
+            "genesis-4"
+          ],
+          "reason": "Perspicacia «Caín», párr. 2: el primer niño que nació de Adán y Eva (Gé 4:1).",
+          "checked_on": "2026-09-29",
+          "status": "verified"
+        },
+        {
+          "type": "kin",
+          "person": "eva",
+          "word": "mother",
+          "inferred": false,
+          "sources": [
+            "it-cain",
+            "genesis-4"
+          ],
+          "reason": "Perspicacia «Caín», párr. 2: el primer niño que nació de Adán y Eva (Gé 4:1).",
+          "checked_on": "2026-09-29",
+          "status": "verified"
+        },
+        {
+          "type": "kin",
+          "person": "abel",
+          "word": "brother",
+          "inferred": false,
+          "sources": [
+            "genesis-4",
+            "it-cain"
+          ],
+          "reason": "Gé 4:2, 8: Abel era su hermano menor.",
+          "checked_on": "2026-09-29",
+          "status": "verified"
+        },
+        {
+          "type": "lived_in",
+          "place": "nod",
+          "inferred": false,
+          "sources": [
+            "genesis-4",
+            "it-condicion-de-fugitivo"
+          ],
+          "reason": "Gé 4:16: se instaló en la región del Destierro, al este de Edén.",
+          "checked_on": "2026-09-29",
+          "status": "verified"
+        }
+      ],
+      "despues": [
+        {
+          "type": "kin",
+          "person": "adan",
+          "word": "father",
+          "inferred": false,
+          "sources": [
+            "it-cain",
+            "genesis-4"
+          ],
+          "reason": "Perspicacia «Caín», párr. 2: el primer niño que nació de Adán y Eva (Gé 4:1).",
+          "checked_on": "2026-09-29",
+          "status": "verified"
+        },
+        {
+          "type": "kin",
+          "person": "eva",
+          "word": "mother",
+          "inferred": false,
+          "sources": [
+            "it-cain",
+            "genesis-4"
+          ],
+          "reason": "Perspicacia «Caín», párr. 2: el primer niño que nació de Adán y Eva (Gé 4:1).",
+          "checked_on": "2026-09-29",
+          "status": "verified"
+        },
+        {
+          "type": "kin",
+          "person": "abel",
+          "word": "brother",
+          "inferred": false,
+          "sources": [
+            "genesis-4",
+            "it-cain",
+            "1-juan-3",
+            "it-abel"
+          ],
+          "reason": "Gé 4:2, 8: Abel era su hermano menor. 1Jn 3:12 recuerda que Caín mató a su hermano, que Perspicacia «Abel», núm. 1, identifica con Abel.",
+          "checked_on": "2026-10-14",
+          "status": "verified"
+        },
+        {
+          "type": "lived_in",
+          "place": "nod",
+          "inferred": false,
+          "sources": [
+            "genesis-4",
+            "it-condicion-de-fugitivo"
+          ],
+          "reason": "Gé 4:16: se instaló en la región del Destierro, al este de Edén.",
+          "checked_on": "2026-09-29",
+          "status": "verified"
+        }
+      ],
+      "historial": {
+        "date": "2026-10-14",
+        "change": "La relación con Abel cita ahora 1Jn 3:12, que no nombra al hermano; Perspicacia «Abel», núm. 1, dice que era Abel.",
+        "source": "1-juan-3"
+      }
+    },
+    {
+      "op": "anadir",
+      "tipo": "people",
+      "id": "satanas",
+      "campo": "sources",
+      "valores": [
+        "1-juan-3"
+      ]
+    },
+    {
+      "op": "anadir",
+      "tipo": "letters",
+      "id": "1-juan",
+      "campo": "sources",
+      "valores": [
+        "1-juan-3"
+      ]
+    },
+    {
+      "op": "anadir",
+      "tipo": "letters",
+      "id": "1-juan",
+      "campo": "sources",
+      "valores": [
+        "1-juan-4"
+      ]
+    },
+    {
+      "op": "anadir",
+      "tipo": "events",
+      "id": "bautismo-de-jesus",
+      "campo": "passages",
+      "valores": [
+        "1Jn 5:6-8"
+      ]
+    },
+    {
+      "op": "anadir",
+      "tipo": "events",
+      "id": "bautismo-de-jesus",
+      "campo": "sources",
+      "valores": [
+        "1-juan-5",
+        "w08-cartas-de-juan-y-judas"
+      ]
+    },
+    {
+      "op": "anadir",
+      "tipo": "people",
+      "id": "jesus",
+      "campo": "sources",
+      "valores": [
+        "1-juan-5"
+      ]
+    },
+    {
+      "op": "anadir",
+      "tipo": "people",
+      "id": "satanas",
+      "campo": "sources",
+      "valores": [
+        "1-juan-5"
+      ]
+    },
+    {
+      "op": "cambiar",
+      "tipo": "letters",
+      "id": "1-juan",
+      "campo": "recipients",
+      "antes": {
+        "text": "Sin saludo ni despedida: al parecer una carta circular para las congregaciones de la zona."
+      },
+      "despues": {
+        "text": "Sin saludo ni despedida, más tratado que carta: va a todo el conjunto de los cristianos, según La Atalaya de 2008 y «Toda Escritura». Perspicacia ve muy probable una o más congregaciones, quizá en circular."
+      },
+      "historial": {
+        "date": "2026-10-14",
+        "change": "Decía «al parecer» una circular. La Atalaya de 2008, la publicación más reciente, y «Toda Escritura», libro 62, párr. 5, la dirigen a todos los cristianos; Perspicacia «Juan, Cartas de» queda como matiz.",
+        "source": "w08-cartas-de-juan-y-judas"
+      }
+    },
+    {
+      "op": "anadir",
+      "tipo": "letters",
+      "id": "1-juan",
+      "campo": "sources",
+      "valores": [
+        "1-juan-5"
+      ]
+    }
+  ],
+  "preguntas": [
+    "Serie de juan-escribe-1-juan: va en hechos (2980) como las cartas de Pablo, Santiago y Hebreos, pero Hechos acaba hacia 61 y los sucesos de 96 a 100 (juan-desterrado-en-patmos, muerte-del-apostol-juan) no llevan serie. ¿Es hechos la serie correcta para 98, o el dueño prefiere otra? No inventamos ninguna. Si Patmos recibe serie, la carta puede llevar after: juan-desterrado-en-patmos.",
+    "Orden frente al Evangelio de Juan: el encargo decía «antes del Evangelio», pero Perspicacia «Juan, Cartas de», párr. 1, dice que estas cartas son la última parte escrita de las Escrituras, y la fila c. 98 del cuadro del estudio 3 nombra el Evangelio y luego las cartas. Las fuentes ponen la carta después. El Evangelio aún no tiene suceso de escritura; cuando lo tenga, debe ir antes de 2980 o la carta llevar after.",
+    "El nombre «el Maligno» de satanas cita solo Ef 6:16 en su nota; 1Jn 2:13, 14; 3:12 y 5:18, 19 lo usan también. No lo cambiamos: la lista de names la tocan varios carriles a la vez.",
+    "cain/kin/abel: el cambio de la lista entera de relaciones de cain parte de lo que hay en main hoy. Si otro libro (Hebreos 11:4, Judas 11) cambia antes esa lista, el cambiar choca y hay que rehacerlo sobre la lista nueva: sumar 1-juan-3 e it-abel a las fuentes de la relación con Abel y la frase de 1Jn 3:12 a su razón."
+  ]
+}
