@@ -1,0 +1,37 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jehosafat-vuelve-a-jerusalen-tras-la-victoria
+title: Jehosafat vuelve a Jerusalén con música tras la victoria
+date:
+  from: -919
+  to: -916
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre c. 920 y c. 917 a.e.c. (tiempo narrativo: tras Ramot-Galaad y antes de la alianza con Ocozías de Israel)'
+narrative_order:
+  series: 2-cronicas
+  order: 20027
+  elapsed:
+    reason: '2Cr 20:27: vuelven después de la reunión en Beracá; el texto no dice cuándo.'
+places:
+- jerusalen
+- monte-moria
+people:
+- jehosafat
+passages:
+- 2Cr 20:27-30
+summary: Con Jehosafat al frente, los de Judá vuelven alegres a Jerusalén y van a la casa de Jehová con arpas, trompetas y
+  otros instrumentos de cuerda. Los reinos vecinos temen a Dios, y el reino tiene paz.
+reason: '2Cr 20 va tras la vuelta de Ramot-Galaad y antes de la alianza con Ocozías (20:35). Misma fecha que el viaje jehosafat-contra-ammon-y-moab:
+  entre muerte-de-acab y las-naves-de-jehosafat-se-destrozan-en-ezion-gueber (A6-A).'
+sources:
+- 2-cronicas-20
+- it-jehosafat
+- tnm-a6-a
+links:
+- title: 2 Crónicas 20 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-Cr%C3%B3nicas/20/
+  type: bible
+checked_on: '2026-10-13'
+status: verified

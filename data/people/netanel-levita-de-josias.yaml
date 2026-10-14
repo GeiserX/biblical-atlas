@@ -1,0 +1,36 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: netanel-levita-de-josias
+name: Netanel
+names:
+- name: Netanel
+perspicacia: 1200003236#7
+summary: Levita, hermano de Conanías y jefe de los levitas en tiempos de Josías. Aportó con los otros jefes los animales que
+  los levitas ofrecieron en la Pascua del año 18.
+reason: Perspicacia «Netanel», núm. 7; 2Cr 35:9, 18, 19.
+sources:
+- it-netanel
+- 2-cronicas-35
+links:
+- title: 'Perspicacia: «Netanel»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Netanel/
+  type: perspicacia
+disambiguation: Jefe levita de la Pascua de Josías (2Cr 35:9; Perspicacia «Netanel», núm. 7); no el hijo de Zuar ni los demás
+  Netanel.
+relations:
+- type: holds_office
+  office: leader
+  inferred: false
+  sources:
+  - 2-cronicas-35
+  reason: 2Cr 35:9 lo cuenta entre los jefes de los levitas.
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified
+distinct_from:
+- netanel-hijo-de-jese
+- netanel-hijo-de-obed-edom
+- netanel-hijo-de-zuar
+- netanel-padre-de-semaya
+- netanel-trompetista
+- netanel-principe-de-jehosafat

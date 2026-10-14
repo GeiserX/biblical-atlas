@@ -1,0 +1,37 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: netanel-principe-de-jehosafat
+name: Netanel
+names:
+- name: Netanel
+perspicacia: 1200003236#6
+summary: Uno de los cinco príncipes que Jehosafat envió en su año tercero, con levitas y sacerdotes, a instruir a la gente
+  de Judá, ciudad por ciudad, en la Ley de Jehová.
+reason: Perspicacia «Netanel», núm. 6; 2Cr 17:7-9.
+sources:
+- it-netanel
+- 2-cronicas-17
+links:
+- title: 'Perspicacia: «Netanel»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Netanel/
+  type: perspicacia
+relations:
+- type: tie
+  person: jehosafat
+  word: master
+  sources:
+  - 2-cronicas-17
+  reason: '2Cr 17:7: Jehosafat manda llamar a sus príncipes, y Netanel es uno de ellos.'
+  inferred: false
+  checked_on: '2026-10-13'
+  status: verified
+disambiguation: Príncipe de Jehosafat que enseñó la Ley en Judá (Perspicacia «Netanel», núm. 6); no Netanel hijo de Zuar,
+  de Isacar.
+checked_on: '2026-10-13'
+status: verified
+distinct_from:
+- netanel-hijo-de-zuar
+- netanel-hijo-de-jese
+- netanel-hijo-de-obed-edom
+- netanel-levita-de-josias
+- netanel-padre-de-semaya
+- netanel-trompetista

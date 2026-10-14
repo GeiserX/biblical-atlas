@@ -1,0 +1,42 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jehozabad-oficial-de-jehosafat
+name: Jehozabad
+names:
+- name: Jehozabad
+perspicacia: 1200002399#2
+summary: Jefe benjamita del ejército de Jehosafat, al mando de 180.000 hombres preparados para la guerra y bajo las órdenes
+  de Eliadá.
+reason: Perspicacia «Jehozabad», núm. 2; 2Cr 17:18, 19.
+sources:
+- it-jehozabad
+- 2-cronicas-17
+links:
+- title: 'Perspicacia: «Jehozabad»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jehozabad/
+  type: perspicacia
+relations:
+- type: tie
+  person: eliada-oficial-de-jehosafat
+  word: master
+  sources:
+  - 2-cronicas-17
+  reason: '2Cr 17:18: Eliadá lo tenía bajo su mando.'
+  inferred: false
+  checked_on: '2026-10-13'
+  status: verified
+- type: tie
+  person: jehosafat
+  word: master
+  sources:
+  - 2-cronicas-17
+  reason: '2Cr 17:18, 19: era uno de los jefes que servían al rey.'
+  inferred: false
+  checked_on: '2026-10-13'
+  status: verified
+disambiguation: Benjamita, jefe del ejército de Jehosafat (Perspicacia «Jehozabad», núm. 2); no el que mató a Jehoás ni el
+  portero hijo de Obed-Edom.
+checked_on: '2026-10-13'
+status: verified
+distinct_from:
+- jehozabad-hijo-de-somer
+- jehozabad-hijo-de-obed-edom

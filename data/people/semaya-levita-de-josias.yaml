@@ -1,0 +1,45 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: semaya-levita-de-josias
+name: Semaya
+names:
+- name: Semaya
+perspicacia: 1200004000#10
+summary: Levita, hermano de Conanías y uno de los jefes de los levitas en el reinado de Josías. Ayudó a dar los animales que
+  se sacrificaron en la gran Pascua.
+reason: Perspicacia «Semaya», núm. 10; 2Cr 35:9.
+sources:
+- it-semaya
+- 2-cronicas-35
+links:
+- title: 'Perspicacia: «Semaya»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Semaya/
+  type: perspicacia
+disambiguation: Jefe levita de la Pascua de Josías (2Cr 35:9; Perspicacia «Semaya», núm. 10); no el profeta de Rehoboam ni
+  los demás Semaya.
+relations:
+- type: holds_office
+  office: leader
+  inferred: false
+  sources:
+  - 2-cronicas-35
+  reason: 2Cr 35:9 lo cuenta entre los jefes de los levitas.
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified
+distinct_from:
+- semaya-de-nehelam
+- semaya-hijo-de-galal
+- semaya-hijo-de-hasub
+- semaya-hijo-de-joel
+- semaya-hijo-de-netanel
+- semaya-hijo-de-obed-edom
+- semaya-hijo-de-secanias
+- semaya-jefe-de-la-casa-de-elizafan
+- semaya-padre-de-delaya
+- semaya-padre-de-uriya
+- semaya-profeta
+- semaya-simeonita
+- semaya-levita-de-ezequias
+- semaya-levita-de-jehosafat
+- semaya-ayudante-de-core

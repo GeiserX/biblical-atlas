@@ -21,6 +21,9 @@ sources:
 - tnm-a6-a
 - mateo-1
 - 1-cronicas-3
+- 2-cronicas-15
+- 2-cronicas-16
+- 2-cronicas-17
 links:
 - title: 'Perspicacia: «Asá»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/As%C3%A1/
@@ -38,8 +41,10 @@ relations:
   - 1-reyes-15
   - mateo-1
   - 1-cronicas-3
+  - 2-cronicas-14
+  - 2-cronicas-15
   reason: Perspicacia lo llama hijo de Abiyam (1Re 15:8).
-  checked_on: '2026-10-12'
+  checked_on: '2026-10-13'
   status: verified
 - type: succeeds
   person: abias-de-juda
@@ -47,8 +52,9 @@ relations:
   sources:
   - it-asa
   - 1-reyes-15
+  - 2-cronicas-14
   reason: Heredó el trono de su padre (1Re 15:8).
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-13'
   office: king
   status: verified
 - type: kin
@@ -58,8 +64,9 @@ relations:
   sources:
   - 1-reyes-15
   - it-maaca
+  - 2-cronicas-15
   reason: 1Re 15:10, 13 llama a Maacá su abuela.
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-13'
   status: verified
 - type: kin
   person: david
@@ -85,17 +92,19 @@ relations:
   sources:
   - 1-reyes-15
   - it-asa
+  - 2-cronicas-16
   reason: '1Re 15:16, 32: siempre hubo guerra entre Asá y Baasá.'
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-13'
   status: verified
 - type: died_in
   place: jerusalen
   inferred: true
   sources:
   - 1-reyes-15
+  - 2-cronicas-16
   reason: 1Re 15:24 da su sepultura en la Ciudad de David, no el sitio de su muerte; tomamos el del entierro, la ciudad donde
     reinaba.
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-13'
   status: verified
 - type: kin
   person: azuba-hija-de-silhi
@@ -104,8 +113,9 @@ relations:
   sources:
   - 1-reyes-22
   - it-silhi
+  - 2-cronicas-20
   reason: 1Re 22:41, 42 da a Azubá como madre de Jehosafat, hijo de Asá; Perspicacia «Silhí» la llama esposa de Asá.
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-13'
   status: verified
 - type: tie
   person: ben-hadad-hijo-de-tabrimon
@@ -114,8 +124,28 @@ relations:
   sources:
   - 1-reyes-15
   - it-ben-hadad
+  - 2-cronicas-16
   reason: '1Re 15:18, 19: Asá le recuerda a Ben-Hadad el pacto que hay entre los dos y le manda plata y oro.'
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-13'
+  status: verified
+- type: tie
+  person: azarias-hijo-de-oded
+  word: adviser
+  date:
+    from: -962
+    to: -962
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 963 a.e.c.
+  sources:
+  - 2-cronicas-15
+  - it-azarias
+  reason: '2Cr 15:2-8: Azarías le habla y Asá, al oírlo, se arma de valor; Perspicacia «Azarías», núm. 6, dice que lo instó
+    a buscar a Jehová.'
+  inferred: false
+  checked_on: '2026-10-13'
   status: verified
 history:
 - date: '2026-09-28'
@@ -123,7 +153,7 @@ history:
   source: tnm-a6-a
 perspicacia: 1200000397#1
 disambiguation: Asá núm. 1 de Perspicacia, rey de Judá. No el levita padre de Berekías.
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified
 distinct_from:
 - asa-hijo-de-elcana

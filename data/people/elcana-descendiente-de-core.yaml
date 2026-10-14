@@ -13,6 +13,7 @@ distinct_from:
 - elcana-padre-de-amasai
 - elcana-padre-de-asa
 - elcana-portero
+- elcana-funcionario-de-acaz
 summary: Levita de la línea de Coré que nombra 1 Crónicas 6:23. Perspicacia ve posible que sea Elcaná, el hijo de Coré.
 reason: Perspicacia «Elqaná», núm. 1; 1Cr 6:22, 23.
 sources:
@@ -42,5 +43,5 @@ relations:
   reason: 1Cr 6:22, 23 lo pone en la línea de Coré; la nota dice que «hijos» puede ser «descendientes».
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified

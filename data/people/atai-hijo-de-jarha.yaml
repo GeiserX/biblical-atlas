@@ -42,8 +42,9 @@ relations:
   reason: '1Cr 2:34, 35: hijo de la hija de Sesán.'
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified
 disambiguation: Atái, hijo de Jarhá y nieto de Sesán; no el gadita que se pasó a David.
 distinct_from:
 - atai-el-gadita
+- atai-hijo-de-rehoboam

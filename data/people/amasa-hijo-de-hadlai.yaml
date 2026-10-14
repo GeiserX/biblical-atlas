@@ -1,0 +1,53 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: amasa-hijo-de-hadlai
+name: Amasá
+names:
+- name: Amasá
+perspicacia: 1200000220#2
+disambiguation: Amasá hijo de Hadlái, jefe de Efraín en días de Acaz; no el sobrino de David que mandó el ejército de Absalón.
+distinct_from:
+- amasa-hijo-de-itra
+date:
+  from: -759
+  to: -759
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 760 a.e.c.
+summary: Uno de los jefes de Efraín que, tras oír al profeta Oded, no dejaron entrar en Samaria a los cautivos de Judá. Los
+  vistieron, les dieron de comer y los devolvieron.
+reason: Perspicacia «Amasá», núm. 2; 2Cr 28:12-15. Fecha según Perspicacia «Jehohanán», núm. 4.
+sources:
+- it-amasa
+- 2-cronicas-28
+- it-jehohanan
+links:
+- title: 'Perspicacia: «Amasá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Amas%C3%A1/
+  type: perspicacia
+- title: 2 Crónicas 28 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-Cr%C3%B3nicas/28/
+  type: bible
+relations:
+- type: kin
+  person: hadlai
+  word: father
+  inferred: false
+  sources:
+  - 2-cronicas-28
+  - it-amasa
+  reason: '2Cr 28:12: Amasá hijo de Hadlái.'
+  checked_on: '2026-10-13'
+  status: verified
+- type: holds_office
+  office: leader
+  inferred: false
+  sources:
+  - 2-cronicas-28
+  - it-amasa
+  reason: 2Cr 28:12 lo cuenta entre los jefes de los efraimitas que se enfrentaron al ejército.
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified

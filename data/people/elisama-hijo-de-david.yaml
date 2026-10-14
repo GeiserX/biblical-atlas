@@ -12,6 +12,7 @@ distinct_from:
 - elisama-abuelo-de-ismael
 - elisama-secretario
 - elisama-hijo-de-jecamias
+- elisama-sacerdote-de-jehosafat
 summary: Hijo de David nacido en Jerusalén, casi al final de la lista de 2Sa 5:14-16.
 reason: 'Perspicacia «Elisamá», núm. 4; 2Sa 5:16. En Crónicas: 1Cr 3:8 y 14:7.'
 sources:
@@ -45,5 +46,5 @@ relations:
   reason: '2Sa 5:13-16: nació en Jerusalén, después de que David dejara Hebrón.'
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified

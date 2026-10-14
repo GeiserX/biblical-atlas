@@ -1,0 +1,41 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: azarias-padre-de-joel
+name: Azarías
+names:
+- name: Azarías
+perspicacia: 1200000486#16
+summary: Levita cohatita. Su hijo Joel trabajó en la purificación del templo que mandó Ezequías al empezar a reinar.
+reason: Perspicacia «Azarías», núm. 16; 2Cr 29:12.
+sources:
+- it-azarias
+- 2-cronicas-29
+links:
+- title: 'Perspicacia: «Azarías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Azar%C3%ADas/
+  type: perspicacia
+disambiguation: El cohatita padre del Joel de los días de Ezequías (Perspicacia «Azarías», núm. 16); no Azarías hijo de Sofonías,
+  padre de otro Joel (núm. 2).
+distinct_from:
+- abednego
+- azarias-hijo-de-ahimaaz
+- azarias-hijo-de-etan
+- azarias-hijo-de-hilquias
+- azarias-hijo-de-jehalelel
+- azarias-hijo-de-jehohanan
+- azarias-hijo-de-jehu
+- azarias-hijo-de-jeroham
+- azarias-hijo-de-johanan
+- azarias-hijo-de-natan
+- azarias-hijo-de-obed
+- azarias-hijo-de-oded
+- azarias-hijo-de-sadoc
+- azarias-hijo-de-sofonias
+- azarias-quinto-hijo-de-jehosafat
+- azarias-sacerdote-de-tiempos-de-uzias
+- azarias-sacerdote-repatriado
+- azarias-segundo-hijo-de-jehosafat
+- jaazanias-jefe-militar
+- ocozias-de-juda
+- uzias
+checked_on: '2026-10-13'
+status: verified

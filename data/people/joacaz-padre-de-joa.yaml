@@ -1,0 +1,20 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: joacaz-padre-de-joa
+name: Joacaz
+names:
+- name: Joacaz
+perspicacia: 1200002471#2
+disambiguation: El padre de Joá; Perspicacia da además Joacaz como otra forma del nombre de Jehoacaz, rey de Israel, y de
+  Jehoacaz, rey de Judá.
+summary: Su hijo Joá fue registrador del rey Josías y uno de los enviados a reparar el templo en 642 a.e.c.
+reason: Perspicacia «Joacaz», núm. 2; 2Cr 34:8.
+sources:
+- it-joacaz
+- 2-cronicas-34
+links:
+- title: 'Perspicacia: «Joacaz»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Joacaz/
+  type: perspicacia
+relations: []
+checked_on: '2026-10-13'
+status: verified

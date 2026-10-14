@@ -13,13 +13,15 @@ narrative_order:
   series: 2-reyes
   order: 15005
 places:
-- jerusalen
 - monte-moria
+- jerusalen
 people:
 - uzias
 - jotan
+- azarias-sacerdote-de-tiempos-de-uzias
 present:
 - uzias
+- azarias-sacerdote-de-tiempos-de-uzias
 passages:
 - 2Re 15:5
 - 2Cr 26:16-21
@@ -40,5 +42,10 @@ links:
 - title: 'Perspicacia: «Uzías»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Uz%C3%ADas/
   type: perspicacia
-checked_on: '2026-09-30'
+history:
+- date: '2026-10-13'
+  change: 'El templo pasa a ser el primer lugar: la lepra le sale junto al altar del incienso, delante de los sacerdotes (2Cr
+    26:19).'
+  source: 2-cronicas-26
+checked_on: '2026-10-13'
 status: verified

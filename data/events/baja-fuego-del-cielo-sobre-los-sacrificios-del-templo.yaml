@@ -1,0 +1,38 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: baja-fuego-del-cielo-sobre-los-sacrificios-del-templo
+title: Baja fuego del cielo sobre los sacrificios del templo
+date:
+  from: -1025
+  to: -1025
+  precision: month
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 1026 a.e.c.
+  detail:
+    month: tisri
+narrative_order:
+  series: 2-cronicas
+  order: 7001
+  after: oracion-de-salomon-en-la-inauguracion-del-templo
+places:
+- monte-moria
+- jerusalen
+people:
+- salomon
+passages:
+- 2Cr 7:1-3
+summary: Nada más terminar Salomón su oración, cae fuego del cielo y consume las ofrendas, y la gloria de Jehová llena la
+  casa. Los sacerdotes no pueden entrar, y el pueblo, postrado en el pavimento, da gracias.
+reason: 2Cr 7:1-3; solo lo cuenta Crónicas. Perspicacia «Salomón», apartado «Inauguración del templo», lo ve como la respuesta
+  inmediata de Jehová a la oración, en el séptimo mes de 1026 a.e.c.
+sources:
+- 2-cronicas-7
+- it-salomon
+- it-etanim
+links:
+- title: 'Perspicacia: «Salomón»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Salom%C3%B3n/
+  type: perspicacia
+checked_on: '2026-10-13'
+status: verified

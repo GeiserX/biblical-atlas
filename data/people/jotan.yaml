@@ -22,6 +22,7 @@ sources:
 - mateo-1
 - 1-cronicas-3
 - 1-cronicas-5
+- 2-cronicas-26
 links:
 - title: 'Perspicacia: «Jotán»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jot%C3%A1n/
@@ -40,8 +41,10 @@ relations:
   - mateo-1
   - isaias-7
   - 1-cronicas-3
+  - 2-cronicas-26
+  - 2-cronicas-27
   reason: Hijo de Uzías y Jerusá (2Re 15:32-33).
-  checked_on: '2026-10-12'
+  checked_on: '2026-10-13'
   status: verified
 - type: succeeds
   person: uzias
@@ -49,8 +52,9 @@ relations:
   sources:
   - it-jotan
   - 2-reyes-15
+  - 2-cronicas-26
   reason: Reinó al morir su padre (2Re 15:7).
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-13'
   office: king
   status: verified
 - type: kin
@@ -60,8 +64,9 @@ relations:
   sources:
   - 2-reyes-15
   - it-jerusa
+  - 2-cronicas-27
   reason: 2Re 15:33 da a Jerusá hija de Sadoc como su madre.
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-13'
   status: verified
 - type: kin
   person: david
@@ -77,20 +82,22 @@ relations:
   inferred: false
   sources:
   - 2-reyes-15
+  - 2-cronicas-27
   reason: '2Re 15:33: reinó 16 años en Jerusalén.'
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-13'
   status: verified
 - type: died_in
   place: jerusalen
   inferred: true
   sources:
   - 2-reyes-15
+  - 2-cronicas-27
   reason: 2Re 15:38 solo habla de su sepultura en la Ciudad de David; el lugar de la muerte se deduce del entierro.
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-13'
   status: verified
 perspicacia: 1200002529#3
 disambiguation: Rey de Judá, hijo de Uzías; no el hijo menor del juez Gedeón ni el descendiente de Judá llamado hijo de Jahdai.
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified
 distinct_from:
 - jotan-hijo-de-gedeon

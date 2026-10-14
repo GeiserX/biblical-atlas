@@ -51,10 +51,12 @@ relations:
   reason: 'Nú 1:4, 8, 44: fue uno de los doce jefes que estuvieron con Moisés y Aarón para registrar a Israel.'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified
 distinct_from:
 - netanel-hijo-de-jese
 - netanel-trompetista
 - netanel-padre-de-semaya
 - netanel-hijo-de-obed-edom
+- netanel-principe-de-jehosafat
+- netanel-levita-de-josias

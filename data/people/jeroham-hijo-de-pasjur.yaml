@@ -23,7 +23,7 @@ relations:
   reason: '1Cr 9:12: Jeroham, hijo de Pasjur.'
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified
 distinct_from:
 - jeroham-de-guedor
@@ -31,5 +31,6 @@ distinct_from:
 - jeroham-padre-de-azarel
 - jeroham-padre-de-ibneya
 - jeroham-padre-de-samserai
+- jeroham-padre-de-azarias
 disambiguation: 'Jeroham núm. 7 de Perspicacia: sacerdote, hijo de Pasjur y padre de Adaya. No el benjamita padre de Ibneyá
   ni el abuelo de Samuel.'

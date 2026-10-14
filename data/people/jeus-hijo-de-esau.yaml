@@ -58,9 +58,10 @@ relations:
   reason: 'Gé 36:6-8: la familia de Esaú se fue a la región montañosa de Seír.'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified
 distinct_from:
 - jeus-hijo-de-bilhan
 - jeus-hijo-de-eshec
 - jeus-hijo-de-simei
+- jeus-hijo-de-rehoboam

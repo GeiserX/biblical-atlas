@@ -1,0 +1,38 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hananias-principe-de-uzias
+name: Hananías
+names:
+- name: Hananías
+perspicacia: 1200001853#3
+summary: Uno de los príncipes del rey Uzías, oficial de alto rango del ejército. Bajo su mando, Jeiel y Maaseya contaron y
+  registraron a las tropas.
+reason: Perspicacia «Hananías», núm. 3; 2Cr 26:11.
+sources:
+- it-hananias
+- 2-cronicas-26
+links:
+- title: 'Perspicacia: «Hananías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hanan%C3%ADas/
+  type: perspicacia
+relations:
+- type: tie
+  person: uzias
+  word: master
+  inferred: false
+  sources:
+  - 2-cronicas-26
+  reason: 2Cr 26:11 lo llama uno de los príncipes del rey Uzías.
+  checked_on: '2026-10-13'
+  status: verified
+disambiguation: El príncipe del ejército de Uzías (2Cr 26:11); no es ninguno de los otros Hananías que numera Perspicacia,
+  ni Sadrac.
+distinct_from:
+- hananias-abuelo-de-iriya
+- hananias-hijo-de-azur
+- hananias-hijo-de-heman
+- hananias-hijo-de-sasac
+- hananias-hijo-de-zorobabel
+- hananias-padre-de-sedequias
+- sadrac
+checked_on: '2026-10-13'
+status: verified

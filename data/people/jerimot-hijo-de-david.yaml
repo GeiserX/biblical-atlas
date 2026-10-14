@@ -1,0 +1,50 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jerimot-hijo-de-david
+name: Jerimot
+names:
+- name: Jerimot
+perspicacia: 1200002429#6
+disambiguation: Jerimot hijo de David, padre de Mahalat (2Cr 11:18); no los benjaminitas, los levitas ni el príncipe de Neftalí
+  que llevan ese nombre.
+distinct_from:
+- jerimot-de-benjamin
+- jerimot-el-benjaminita
+- jerimot-hijo-de-heman
+- jerimot-hijo-de-azriel
+- jeremot-hijo-de-musi
+- jerimot-comisionado-de-ezequias
+summary: Hijo de David que no aparece en las listas de sus hijos; quizá lo tuvo de una concubina. Su hija Mahalat fue esposa
+  de Rehoboam, y su esposa sería Abihail, sobrina de David.
+reason: Perspicacia «Jerimot», núm. 6; 2Cr 11:18.
+sources:
+- it-jerimot
+- 2-cronicas-11
+links:
+- title: 'Perspicacia: «Jerimot»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jerimot/
+  type: perspicacia
+relations:
+- type: kin
+  person: david
+  word: father
+  inferred: false
+  sources:
+  - 2-cronicas-11
+  - it-jerimot
+  reason: 2Cr 11:18 lo llama Jerimot, hijo de David.
+  checked_on: '2026-10-13'
+  status: verified
+- type: kin
+  person: abihail-hija-de-eliab
+  word: wife
+  inferred: true
+  sources:
+  - 2-cronicas-11
+  - it-jerimot
+  - it-abihail
+  reason: 'Perspicacia «Jerimot», núm. 6, y «Abiháil», núm. 4: al parecer era su esposa, porque 2Cr 11:18 da a Abihail como
+    madre de Mahalat.'
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified

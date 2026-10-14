@@ -20,6 +20,7 @@ sources:
 - it-abias
 - it-abi
 - 2-reyes-18
+- 2-cronicas-29
 links:
 - title: 'Perspicacia: «Abías»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ab%C3%ADas/
@@ -35,8 +36,9 @@ relations:
   sources:
   - 2-reyes-18
   - it-abias
+  - 2-cronicas-29
   reason: '2Re 18:2: Abí hija de Zacarías.'
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-13'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified

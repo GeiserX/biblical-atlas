@@ -3,6 +3,8 @@ id: jabneel
 name: Jabneel
 names:
 - name: Jabneel
+- name: Jabné
+  note: Así la llama 2Cr 26:6. Perspicacia «Jabné» la da por probablemente la misma; «Jabneel», núm. 1, solo por posible.
 type: city
 lat: 31.866
 lon: 34.7463
@@ -17,9 +19,11 @@ sources:
 - it-jabneel
 - openbible-geo
 - josue-15
+- 2-cronicas-26
+- it-jabne
 links:
 - title: 'Perspicacia: «Jabneel»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jabneel/
   type: perspicacia
-checked_on: '2026-09-29'
+checked_on: '2026-10-13'
 status: verified

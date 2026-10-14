@@ -41,6 +41,7 @@ sources:
 - jeremias-51
 - jeremias-52
 - 1-cronicas-6
+- 2-cronicas-36
 - ezequiel-17
 - ezequiel-21
 - it-adivinacion
@@ -61,6 +62,7 @@ relations:
   sources:
   - it-nabucodonosor
   - daniel-4
+  - 2-cronicas-36
   - ezequiel-17
   reason: Gobernó desde Babilonia, que él mismo embelleció (Da 4:29-30).
   checked_on: '2026-10-13'

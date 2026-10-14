@@ -1,0 +1,39 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: zaham
+name: Zaham
+names:
+- name: Zaham
+perspicacia: '1200004653'
+summary: 'Hijo de Rehoboam, el tercero de los que le dio su esposa Mahalat. No fue el heredero: su padre prefirió a Abías,
+  el hijo de Maacá.'
+reason: Perspicacia «Zaham»; 2Cr 11:18, 19, 23.
+sources:
+- it-zaham
+- 2-cronicas-11
+links:
+- title: 'Perspicacia: «Zaham»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zaham/
+  type: perspicacia
+relations:
+- type: kin
+  person: rehoboam
+  word: father
+  inferred: false
+  sources:
+  - 2-cronicas-11
+  - it-zaham
+  reason: '2Cr 11:19: hijo de Rehoboam.'
+  checked_on: '2026-10-13'
+  status: verified
+- type: kin
+  person: mahalat-hija-de-jerimot
+  word: mother
+  inferred: false
+  sources:
+  - 2-cronicas-11
+  - it-zaham
+  reason: '2Cr 11:19: Mahalat tuvo con Rehoboam a Jeús, Semarías y Zaham.'
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified

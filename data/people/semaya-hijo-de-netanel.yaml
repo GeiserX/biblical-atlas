@@ -18,6 +18,10 @@ distinct_from:
 - semaya-de-nehelam
 - semaya-padre-de-delaya
 - semaya-padre-de-uriya
+- semaya-levita-de-ezequias
+- semaya-ayudante-de-core
+- semaya-levita-de-josias
+- semaya-levita-de-jehosafat
 summary: Levita, hijo de Netanel y secretario de los levitas. Anotó los nombres de las casas sacerdotales mientras se sorteaban
   los turnos ante David, los príncipes, Sadoc y Ahimélec.
 reason: Perspicacia «Semaya», núm. 4; 1Cr 24:6.
@@ -39,5 +43,5 @@ relations:
   reason: 1Cr 24:6 lo llama Semaya hijo de Netanel.
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified

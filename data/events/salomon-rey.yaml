@@ -23,6 +23,7 @@ passages:
 - 1Re 2:12
 - 1Cr 23:1
 - 1Cr 29:23-25
+- 2Cr 1:1
 summary: Cuando Adonías intenta quedarse con el trono, David manda ungir a Salomón. En el manantial de Guihon, Sadoc lo unge
   con Natán, Benaya y la guardia presentes, y el pueblo sube tras él a Jerusalén aclamándolo.
 reason: 1Re 1:32-40; 2:12. El estudio 3 fecha la sucesión en 1037 y explica el año de ascenso (párr. 4); Perspicacia «Natán»,
@@ -35,6 +36,7 @@ sources:
 - it-salomon
 - 1-cronicas-23
 - 1-cronicas-29
+- 2-cronicas-1
 links:
 - title: 'Perspicacia: «Natán»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Nat%C3%A1n/
@@ -62,5 +64,5 @@ present:
 narrative_order:
   series: 1-reyes
   order: 1032
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified

@@ -17,6 +17,10 @@ distinct_from:
 - semaya-de-nehelam
 - semaya-padre-de-delaya
 - semaya-padre-de-uriya
+- semaya-levita-de-ezequias
+- semaya-ayudante-de-core
+- semaya-levita-de-josias
+- semaya-levita-de-jehosafat
 summary: Rubenita, hijo de Joel, en la línea que llega a Beerá, el jefe desterrado por los asirios.
 reason: Perspicacia «Semaya», núm. 2; 1Cr 5:4.
 sources:
@@ -36,5 +40,5 @@ relations:
   reason: 1Cr 5:4 lo da como hijo de Joel.
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified

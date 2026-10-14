@@ -22,6 +22,8 @@ sources:
 - 1-reyes-9
 - 2-reyes-14
 - 2-reyes-16
+- 2-cronicas-8
+- 2-cronicas-26
 links:
 - title: 'Perspicacia: «Elat»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Elat/
@@ -34,5 +36,5 @@ history:
   change: La precisión pasa de zona a punto. Perspicacia sitúa Elat en ʽAqaba o a su lado, y el punto es el de ʽAqaba, primera
     identificación de OpenBible.
   source: it-elat
-checked_on: '2026-09-30'
+checked_on: '2026-10-13'
 status: verified

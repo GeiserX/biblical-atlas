@@ -1,0 +1,45 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jehosafat-afianza-su-reino
+title: Jehosafat afianza su reino en Judá
+date:
+  from: -936
+  to: -919
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 937 y 920 a.e.c. (tiempo narrativo: desde su subida al trono hasta su visita a Acab)'
+narrative_order:
+  series: 2-cronicas
+  order: 17001
+places:
+- jerusalen
+- juda
+- territorio-de-efrain
+present:
+- jehosafat
+- adna-general-de-jehosafat
+- jehohanan-general-de-jehosafat
+- amasiah
+- eliada-oficial-de-jehosafat
+- jehozabad-oficial-de-jehosafat
+people:
+- jehosafat
+- adna-general-de-jehosafat
+- jehohanan-general-de-jehosafat
+- amasiah
+- eliada-oficial-de-jehosafat
+- jehozabad-oficial-de-jehosafat
+passages:
+- 2Cr 17:1-6
+- 2Cr 17:10-19
+summary: Al suceder a Asá, Jehosafat pone tropas en las ciudades fortificadas de Judá y en las de Efraín, quita los lugares
+  altos y los postes sagrados, recibe tributo de filisteos y árabes y reúne un gran ejército.
+reason: Empieza al subir al trono, en 937 a.e.c. (tabla A6-A), y el relato lo cuenta antes de la visita a Acab, hacia 920
+  (suceso acab-y-jehosafat-consultan-a-los-profetas). Perspicacia «Jehosafat», apartado «Logros».
+sources:
+- 2-cronicas-17
+- tnm-a6-a
+- it-jehosafat
+checked_on: '2026-10-13'
+status: verified

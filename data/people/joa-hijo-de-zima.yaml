@@ -10,6 +10,7 @@ disambiguation: Joá hijo de Zimá (1Cr 6:20, 21); no es ninguno de los otros Jo
 distinct_from:
 - joa-hijo-de-asaf
 - joa-hijo-de-obed-edom
+- joa-hijo-de-joacaz
 summary: Levita guersonita, hijo de Zimá y padre de Idó. Perspicacia cree posible que sea el Joá que con su hijo ayudó a limpiar
   el templo en días de Ezequías.
 reason: Perspicacia «Joah», núm. 2; 1Cr 6:20, 21.
@@ -30,5 +31,15 @@ relations:
   reason: '1Cr 6:20, 21: «su hijo Joá», tras Zimá.'
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+- type: same_as
+  person: joa-levita-de-ezequias
+  certainty: possible
+  inferred: true
+  sources:
+  - 2-cronicas-29
+  - it-joah
+  reason: 'Perspicacia «Joah», núm. 2: quizá es el Joá que con su hijo limpió el templo en días de Ezequías (2Cr 29:12).'
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
 status: verified

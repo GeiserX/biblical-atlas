@@ -1,0 +1,42 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: zacarias-levita-de-josias
+name: Zacarías
+names:
+- name: Zacarías
+perspicacia: 1200004681#18
+disambiguation: El cohatita que supervisó las obras del templo con Josías (núm. 18); no el sacerdote principal de la Pascua
+  de Josías, ni el profeta, ni los demás Zacarías.
+distinct_from:
+- zacarias-abuelo-de-ezequias
+- zacarias-consejero-de-uzias
+- zacarias-de-israel
+- zacarias-descendiente-de-isias
+- zacarias-el-rubenita
+- zacarias-hijo-de-benaya
+- zacarias-hijo-de-hosa
+- zacarias-hijo-de-jeberekias
+- zacarias-hijo-de-jehoiada
+- zacarias-hijo-de-jehosafat
+- zacarias-hijo-de-meselemias
+- zacarias-musico
+- zacarias-padre-de-ido
+- zacarias-padre-de-juan
+- zacarias-principe-de-jehosafat
+- zacarias-profeta
+- zacarias-sacerdote-de-josias
+- zacarias-trompetista
+- zeker
+- zacarias-levita-de-ezequias
+summary: Levita cohatita. En el año 18 de Josías, 642 a.e.c., lo pusieron con Mesulam y otros dos levitas al frente de los
+  obreros que reparaban el templo.
+reason: Perspicacia «Zacarías», núm. 18; 2Cr 34:12.
+sources:
+- it-zacarias
+- 2-cronicas-34
+links:
+- title: 'Perspicacia: «Zacarías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zacar%C3%ADas/
+  type: perspicacia
+relations: []
+checked_on: '2026-10-13'
+status: verified

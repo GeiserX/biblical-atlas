@@ -26,6 +26,7 @@ sources:
 - esdras-1
 - isaias-44
 - ip2-5
+- 2-cronicas-36
 links:
 - title: 'Perspicacia: «Ciro»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ciro/
@@ -33,5 +34,5 @@ links:
 - title: Esdras 1 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/esdras/1/
   type: bible
-checked_on: '2026-09-30'
+checked_on: '2026-10-13'
 status: verified

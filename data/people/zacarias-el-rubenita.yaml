@@ -19,6 +19,13 @@ distinct_from:
 - zacarias-profeta
 - zacarias-trompetista
 - zeker
+- zacarias-hijo-de-benaya
+- zacarias-consejero-de-uzias
+- zacarias-levita-de-ezequias
+- zacarias-levita-de-josias
+- zacarias-sacerdote-de-josias
+- zacarias-hijo-de-jehosafat
+- zacarias-principe-de-jehosafat
 summary: Rubenita, pariente de Beerá. Perspicacia ve posible que peleara contra los hagritas en tiempos de Saúl.
 reason: Perspicacia «Zacarías», núm. 2; 1Cr 5:7, 10.
 sources:
@@ -39,5 +46,5 @@ relations:
   reason: Perspicacia «Zacarías», núm. 2, lo llama rubenita; 1Cr 5:7 lo cuenta entre los parientes de Beerá.
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified

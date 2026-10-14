@@ -10,6 +10,9 @@ distinct_from:
 - jeiel-de-gabaon
 - jeiel-hijo-de-hotam
 - jeiel-portero
+- jeiel-hijo-de-matanias
+- jeiel-secretario
+- jeiel-levita-de-josias
 summary: Rubenita, jefe entre los parientes de Beerá según el registro genealógico de sus familias.
 reason: Perspicacia «Jeiel», núm. 1; 1Cr 5:7.
 sources:
@@ -30,5 +33,5 @@ relations:
   reason: Perspicacia «Jeiel», núm. 1, lo hace descendiente de Rubén; 1Cr 5:7 lo cuenta entre los parientes de Beerá.
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified

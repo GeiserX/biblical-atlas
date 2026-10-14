@@ -26,8 +26,10 @@ relations:
   reason: '1Cr 26:4: el tercero de los hijos de Obed-Edom.'
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified
 distinct_from:
 - joa-hijo-de-asaf
 - joa-hijo-de-zima
+- joa-levita-de-ezequias
+- joa-hijo-de-joacaz

@@ -31,7 +31,7 @@ Qué versículos de la TNM se han leído y apuntado en `data/coverage/<libro>.ya
 | [1 Reyes](https://github.com/GeiserX/biblical-atlas/blob/main/data/coverage/1-reyes.yaml) | 22 de 22 | 816 de 816 | 100 % |
 | [2 Reyes](https://github.com/GeiserX/biblical-atlas/blob/main/data/coverage/2-reyes.yaml) | 25 de 25 | 719 de 719 | 100 % |
 | [1 Crónicas](https://github.com/GeiserX/biblical-atlas/blob/main/data/coverage/1-cronicas.yaml) | 26 de 29 | 942 de 942 | 100 % |
-| 2 Crónicas | 0 de 36 | 0 de 822 | 0 % |
+| [2 Crónicas](https://github.com/GeiserX/biblical-atlas/blob/main/data/coverage/2-cronicas.yaml) | 36 de 36 | 822 de 822 | 100 % |
 | Esdras | 0 de 10 | 0 de 280 | 0 % |
 | Nehemías | 0 de 13 | 0 de 406 | 0 % |
 | Ester | 0 de 10 | 0 de 167 | 0 % |
@@ -84,7 +84,7 @@ Qué versículos de la TNM se han leído y apuntado en `data/coverage/<libro>.ya
 | 3 Juan | 0 de 1 | 0 de 14 | 0 % |
 | Judas | 0 de 1 | 0 de 25 | 0 % |
 | Apocalipsis | 0 de 22 | 0 de 404 | 0 % |
-| **Total** | 1048 de 1189 | 27867 de 31062 | 90 % |
+| **Total** | 1084 de 1189 | 28689 de 31062 | 92 % |
 
 ## Capítulos empezados
 

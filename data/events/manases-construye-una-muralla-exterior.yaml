@@ -1,0 +1,41 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: manases-construye-una-muralla-exterior
+title: Manasés rodea la Ciudad de David con una muralla exterior
+date:
+  from: -715
+  to: -660
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 716 y 661 a.e.c. (tiempo narrativo: después de volver de Babilonia y antes de morir Manasés)'
+narrative_order:
+  series: 2-cronicas
+  order: 33014
+  after: manases-se-humilla-en-babilonia
+places:
+- jerusalen
+- manantial-de-guihon
+- juda
+people:
+- manases-de-juda
+passages:
+- 2Cr 33:14
+summary: Ya repuesto, Manasés levanta una muralla exterior muy alta para la Ciudad de David, del oeste de Guihón a la Puerta
+  del Pescado y alrededor de Ofel, y nombra jefes del ejército para las plazas fuertes de Judá.
+reason: '2Cr 33:14; Perspicacia «Manasés», núm. 4, párr. 3, y «Guihón», que deduce que el manantial quedó fuera de esa muralla.
+  Fecha: entre su vuelta de Babilonia y su muerte, dentro del reinado (tabla A6-B).'
+sources:
+- 2-cronicas-33
+- it-manases
+- it-guihon
+- tnm-a6-b
+links:
+- title: 'Perspicacia: «Manasés»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Manas%C3%A9s/
+  type: perspicacia
+- title: 'Perspicacia: «Guihón»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Guih%C3%B3n/
+  type: perspicacia
+checked_on: '2026-10-13'
+status: verified

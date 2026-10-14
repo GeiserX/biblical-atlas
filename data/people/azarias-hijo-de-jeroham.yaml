@@ -1,0 +1,61 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: azarias-hijo-de-jeroham
+name: Azarías
+names:
+- name: Azarías
+perspicacia: 1200000486#11
+disambiguation: Azarías hijo de Jeroham, jefe de cien en la coronación de Jehoás; no Azarías hijo de Obed, que pactó con él,
+  ni los demás Azarías que numera Perspicacia.
+distinct_from:
+- azarias-hijo-de-obed
+- azarias-hijo-de-sadoc
+- azarias-hijo-de-natan
+- ocozias-de-juda
+- azarias-hijo-de-jehohanan
+- abednego
+- uzias
+- jaazanias-jefe-militar
+- azarias-sacerdote-de-tiempos-de-uzias
+- azarias-padre-de-joel
+- azarias-hijo-de-jehalelel
+- azarias-hijo-de-ahimaaz
+- azarias-hijo-de-etan
+- azarias-hijo-de-hilquias
+- azarias-hijo-de-jehu
+- azarias-hijo-de-johanan
+- azarias-hijo-de-oded
+- azarias-hijo-de-sofonias
+- azarias-quinto-hijo-de-jehosafat
+- azarias-sacerdote-repatriado
+- azarias-segundo-hijo-de-jehosafat
+date:
+  from: -897
+  to: -897
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 898 a.e.c.
+summary: Hijo de Jeroham. Fue uno de los cinco jefes de cien con los que el sacerdote Jehoiadá pactó en 898 a.e.c. para quitar
+  el trono a Atalía y coronar a Jehoás.
+reason: Perspicacia «Azarías», núm. 11, que da el año; 2Cr 23:1-15.
+sources:
+- it-azarias
+- 2-cronicas-23
+links:
+- title: 'Perspicacia: «Azarías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Azar%C3%ADas/
+  type: perspicacia
+relations:
+- type: kin
+  person: jeroham-padre-de-azarias
+  word: father
+  inferred: false
+  sources:
+  - 2-cronicas-23
+  - it-jeroham
+  reason: 2Cr 23:1 lo llama Azarías hijo de Jeroham.
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified

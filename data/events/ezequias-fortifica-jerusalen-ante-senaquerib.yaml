@@ -1,0 +1,38 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: ezequias-fortifica-jerusalen-ante-senaquerib
+title: Ezequías prepara Jerusalén para el ataque de Senaquerib
+date:
+  from: -731
+  to: -731
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 732 a.e.c.
+narrative_order:
+  series: 2-cronicas
+  order: 32002
+  after: ezequias-paga-tributo-a-senaquerib
+places:
+- jerusalen
+people:
+- ezequias
+present:
+- ezequias
+passages:
+- 2Cr 32:2-5
+summary: Aconsejado por sus príncipes, Ezequías ciega los manantiales y el arroyo de fuera para dejar sin agua a los asirios,
+  rehace la muralla con torres, levanta otra por fuera, repara el Montículo y fabrica armas y escudos.
+reason: Perspicacia «Guihón», núm. 2, pone el cierre de las fuentes (2Cr 32:2-4) en 732 a.e.c., con el ataque asirio inminente;
+  «Ezequías» lo cuenta tras el tributo. El Montículo está en los nombres de Jerusalén.
+sources:
+- 2-cronicas-32
+- it-guihon
+- it-ezequias
+- si-3
+links:
+- title: 'Perspicacia: «Guihón»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Guih%C3%B3n/
+  type: perspicacia
+checked_on: '2026-10-13'
+status: verified

@@ -1,0 +1,33 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: juda-saquea-las-ciudades-de-alrededor-de-guerar
+title: Judá persigue a los etíopes hasta Guerar y saquea sus ciudades
+date:
+  from: -966
+  to: -966
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 967 a.e.c.
+narrative_order:
+  series: 2-cronicas
+  order: 14013
+places:
+- guerar
+people:
+- asa
+present:
+- asa
+passages:
+- 2Cr 14:13-15
+summary: Asá y los suyos persiguen a los etíopes hasta Guerar sin dejar a ninguno vivo. Saquean las ciudades de alrededor
+  y los campamentos de pastores, y vuelven a Jerusalén con rebaños y camellos.
+reason: 2Cr 14:13-15; Perspicacia «Guerar», que cree que esas ciudades se habían aliado con los etíopes, y «Zérah», núm. 6,
+  que fecha la campaña en 967 a.e.c.
+sources:
+- 2-cronicas-14
+- it-guerar
+- it-zerah
+- it-asa
+checked_on: '2026-10-13'
+status: verified
