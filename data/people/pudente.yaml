@@ -1,0 +1,50 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: pudente
+name: Pudente
+names:
+- name: Pudente
+perspicacia: '1200003578'
+date:
+  from: 65
+  to: 65
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 65 e.c.
+summary: Cristiano que acompañó a Pablo en sus últimos días y, desde Roma, envía saludos a Timoteo (2Ti 4:21).
+reason: Perspicacia «Pudente»; 2Ti 4:21. Fecha de la carta, c. 65 (Tabla de los libros).
+sources:
+- it-pudente
+- 2-timoteo-4
+- tnm-tabla
+links:
+- title: 'Perspicacia: «Pudente»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Pudente/
+  type: perspicacia
+- title: 2 Timoteo 4 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-timoteo/4/
+  type: bible
+relations:
+- type: accompanies
+  person: pablo
+  word: companion
+  date:
+    from: 65
+    to: 65
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 65 e.c.
+  inferred: true
+  sources:
+  - it-pudente
+  - 2-timoteo-4
+  - tnm-tabla
+  reason: Perspicacia «Pudente» lo cuenta entre quienes acompañaban a Pablo en sus últimos días; el texto solo dice que saluda
+    con él (2Ti 4:21).
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified

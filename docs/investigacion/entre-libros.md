@@ -36,18 +36,11 @@ Los campos, los tipos de relación y sus palabras se nombran como en el esquema 
 
 - **Pasajes paralelos ya puestos.** Ne 9:18 y Hch 7:40, 41 en `becerro-de-oro`. Hch 7:17-19 en `egipto-esclaviza-a-israel`; Hch 7:19 en `el-faraon-manda-echar-al-nilo-a-los-ninos`; Hch 7:20-22 y Heb 11:23 en `nacimiento-de-moises`; Hch 7:23, 24 y Heb 11:24-26 en `moises-mata-a-un-egipcio`; Hch 7:25-29 en `moises-huye-a-madian`; Hch 7:29 en `nacimiento-de-guersom`; Hch 7:30-35 en `moises-ante-la-zarza-ardiente`.
 
-## Para 2 Timoteo
+## Para Tito (desde 1 y 2 Timoteo)
 
-- **Áquila y Priscila con Pablo.** Su relación `accompanies` con `pablo` va de c. 50 a 65 (Ro 16:3, 4; Perspicacia «Prisca»), con la palabra `fellow_worker`, y ya cita 1Co 16. 2Ti 4:19 añade su capítulo a las fuentes de esa relación, sin crear otra.
-- **Janes y Jambres.** Los magos del faraón (Éx 7:11, 22) no tienen ficha. Si 2Ti 3:8 los crea, el tramo 7:8-13 de Éxodo los puede poner en `mentions`.
-
-## Para 2 Timoteo y Tito (desde 1 Timoteo)
-
-- **Alejandro.** Existen `alejandro-hijo-de-simon` (`1200000192#2`, Mr 15:21), `alejandro-pariente-de-anas` (`#3`, Hch 4:6), `alejandro-de-efeso` (`#4`, Hch 19:33) y, desde 1Ti 1:20, `alejandro-expulsado` (`#5`), con `distinct_from` entre los cuatro. El calderero de 2Ti 4:14 es la entrada núm. 6: ficha nueva (`alejandro-calderero`, el rasgo de Perspicacia), con `distinct_from` en las dos fichas hacia los tres primeros y un `same_as` hacia `alejandro-expulsado` con `inferred: true` y `certainty: possible` (Perspicacia «Alejandro», núm. 5, y la nota de 1Ti 1:20), en la ficha de `alejandro-calderero`, cuyo id va primero. Ese par no lleva `distinct_from`; la `disambiguation` de `alejandro-expulsado` ya nombra al calderero.
-- **Himeneo.** `himeneo` (`1200002120`) existe desde 1Ti 1:20; 2Ti 2:17, 18 usa ese id y crea a Fileto. Su expulsión es `pablo-expulsa-a-himeneo-y-alejandro`, c. 56-64, `pending`: ni el texto ni las fuentes dicen dónde, va en Éfeso con `present: []`, y su orden 2844 de la serie `hechos` es deducción nuestra. `himeneo` y `alejandro-expulsado` llevan esa fecha, c. 56-64; si 2Ti 2:17 pone a Himeneo hacia 65, su `date.to` se alarga con un `cambiar`. 2Ti 2:17 no narra la expulsión; si su tramo la nombra, va en `mentions`.
-- **Timoteo en Éfeso.** `timoteo/lived_in/efeso` va de c. 61 a 64 (1Ti 1:3; Perspicacia «Timoteo», párr. 6). Si 2 Timoteo lo sigue poniendo allí hacia 65, alarga `date.to` con un `cambiar` de la lista `relations`; `apply.py` funde un `anadir` con otro `date.from` como un tramo nuevo. `timoteo/accompanies/pablo` ya lleva `fellow_worker` y llega a 65.
 - **El cargo de superintendente.** El vocabulario no tiene `overseer`. Las notas de 1Ti 1:3 y 4:14 llaman superintendente a Timoteo, y Tit 1:5 encarga a Tito nombrar ancianos: ninguno lleva `holds_office`, como Eliaquim y Sebná desde Isaías. El resumen de `timoteo` lo dice. Si se añade el cargo, la relación cita 1Ti 1 y 4.
-- **El orden entre las dos cartas.** En la serie `hechos`, `pablo-expulsa-a-himeneo-y-alejandro` lleva el 2844, `pablo-deja-a-timoteo-en-efeso` el 2845 y `pablo-escribe-1-timoteo` el 2850 (Macedonia, c. 61-64). Ninguna fuente ordena 1 Timoteo frente a Tito: los sucesos de Tito toman otros números y su `note` dice por qué. Las paradas 2 (Creta) y 3 (Éfeso) de `ultimos-anos-de-pablo` dicen ahora «orden incierto». El suceso de 2 Timoteo (Roma, c. 65) va después del 2850.
+- **El orden de las cartas a Timoteo.** En la serie `hechos`, `pablo-expulsa-a-himeneo-y-alejandro` lleva el 2844, `pablo-deja-a-timoteo-en-efeso` el 2845 y `pablo-escribe-1-timoteo` el 2850 (Macedonia, c. 61-64). 2 Timoteo tomó el 2852 (`pablo-deja-su-capa-en-troas`), el 2853 (`pablo-deja-a-trofimo-enfermo-en-mileto`), el 2855 (`segundo-encierro-en-roma`), el 2857 (`primera-defensa-de-pablo`) y el 2860 (`pablo-escribe-2-timoteo`, Roma, c. 65). Ninguna fuente ordena 1 Timoteo frente a Tito: los sucesos de Tito toman otros números y su `note` dice por qué.
+- **Las paradas de `ultimos-anos-de-pablo`.** Son ocho: Roma (1), Creta (2) y Éfeso (3), las dos con «orden incierto», Macedonia (4), Nicópolis (5), de orden incierto y hasta c. 65, Troas (6) y Mileto (7), estas dos pendientes y de orden incierto (2Ti 4:13, 20), y Roma (8). `trofimo/accompanies/pablo@61` va de 61 a 65, como la parada de Mileto. Un cambio de Tito a `stops` parte de esa lista.
 
 ## Para Nehemías
 
@@ -105,6 +98,7 @@ Los campos, los tipos de relación y sus palabras se nombran como en el esquema 
 
 - **El fin del maná.** Éx 16:35 no está en `cesa-el-mana` (Jos 5:12) porque Éxodo 16 ya estaba cerrado: al reabrirlo, se añade el pasaje y el suceso va al tramo.
 - **Anac en Deuteronomio.** Dt 9:2 cita el dicho sobre los hijos de Anac. Desde Josué existe la persona `anac` (Jos 15:13): al reabrir Deuteronomio, va en `mentions` del tramo Dt 9:1-6.
+- **Janes y Jambres (desde 2 Timoteo).** `janes` y `jambres` existen desde 2Ti 3:8. La nota y Perspicacia solo ven posible que encabezaran a los magos de Éx 7:11, 22; 8:7, 18, 19 y 9:11: al reabrir Éxodo 7, el tramo 8-13 los pone en `mentions`, sin añadirlos a `people` de los sucesos.
 
 ## Para quien reabra los Evangelios (desde Josué)
 
@@ -138,11 +132,17 @@ Los campos, los tipos de relación y sus palabras se nombran como en el esquema 
 - **La llegada a Antioquía (desde Gálatas).** `cristianos-en-antioquia` va de 36 a 46. La nota de Gál 1:21 pone la llegada de Pablo y Bernabé hacia 45 y la de Hch 11:26 el nombre de cristianos quizás en 44. Si Hechos lo estrecha, cambian también las paradas 7 y 8 de `primeros-anos-de-pablo` y `pablo/lived_in/tarso` (36-46).
 - **Juan en Jerusalén (desde Gálatas).** `juan-apostol` lleva `lived_in` `jerusalen`, c. 33-49, por Perspicacia «Juan», párr. 30, y Gál 2:9; no cita Hch 8:1. Hechos 8 puede añadir «hechos-8» a sus fuentes y ponerla en su tramo 1-3. Juan está en `concilio-de-jerusalen-49`, pero su ficha no cita Hechos 15.
 - **Pedro corregido en Antioquía (desde Gálatas).** `pablo-corrige-a-pedro-en-antioquia` es de c. 49, anclado en la nota de Gál 2:12, con `narrative_order` 1535 tras `la-carta-de-jerusalen-llega-a-antioquia`. Está entre Hch 15:35 y la separación de Pablo y Bernabé.
+- **Timoteo en Listra (desde 2 Timoteo).** La nota de 2Ti 3:11 ve probable que Timoteo estuviera entre los discípulos que rodearon a Pablo apedreado (Hch 14:20). `apedrean-a-pablo-en-listra` ya lleva «2Ti 3:11»; si se reabre Hechos 14, Timoteo puede entrar en `people` de ese suceso, con esa nota, y en el tramo 19-20.
 
-## Para 1 Corintios (si se relee) y 2 Timoteo
+## Para 1 Corintios (si se relee)
 
 - **El peligro de Asia.** 2 Corintios hizo de la tribulación de 2Co 1:8-11 un suceso propio, `pablo-en-peligro-de-muerte-en-asia`, y sacó «2Co 1:8» de `motin-de-efeso`: la nota de estudio solo ve posible que fuera el motín o las fieras de Éfeso. El tramo de 1Co 15:32 lo puede poner en `mentions`, sin añadirle el pasaje.
-- **Áquila y Priscila con Pablo.** Su relación `accompanies` con `pablo` va de c. 50 a 65 (Ro 16:3, 4; Perspicacia «Prisca»), con la palabra `fellow_worker`. 1Co 16:19 y 2Ti 4:19 añaden su capítulo a las fuentes de esa relación, sin crear otra.
+- **Áquila y Priscila con Pablo.** Su relación `accompanies` con `pablo` va de c. 50 a 65 (Ro 16:3, 4; Perspicacia «Prisca»), con la palabra `fellow_worker`. 1Co 16:19 añade su capítulo a las fuentes de esa relación, sin crear otra; 2Ti 4:19 ya lo hizo.
+
+## Para Filemón, Tito y Hebreos (desde 2 Timoteo)
+
+- **Pablo en Roma, dos tramos.** `pablo/lived_in/roma` tiene dos tramos: c. 59-61 (primer encierro, Hch 28:16, 30) y c. 65 (segundo, 2Ti 1:8, 17). La cobertura los cita como `relation:pablo/lived_in/roma@59` y `relation:pablo/lived_in/roma@65`; al integrar 2 Timoteo, `apply.py` reescribe así las citas de Hechos, Efesios, Filipenses y Colosenses.
+- **El último encierro.** `segundo-encierro-en-roma` (c. 65, orden 2855) es de 2 Timoteo y lleva a Lucas, Onesíforo, Eubulo, Pudente, Lino y Claudia. Un libro que lo recuerde añade su pasaje con `anadir`.
 
 ## Para quien toque `ultimos-anos-de-pablo` o la serie `hechos` tras 61 (desde Tito)
 

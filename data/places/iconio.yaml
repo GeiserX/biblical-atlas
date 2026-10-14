@@ -19,6 +19,7 @@ sources:
 - it-iconio
 - hch-14
 - openbible-geo
+- 2-timoteo-3
 links:
 - title: 'Perspicacia: «Iconio»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Iconio/
@@ -26,5 +27,5 @@ links:
 - title: Hechos 14 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/hechos/14/
   type: bible
-checked_on: '2026-09-27'
+checked_on: '2026-10-13'
 status: verified
