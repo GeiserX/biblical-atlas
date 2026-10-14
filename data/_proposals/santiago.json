@@ -1,0 +1,191 @@
+{
+ "formato": "biblical-atlas/propuesta-cobertura/1",
+ "libro": "santiago",
+ "agente": "escritor-santiago",
+ "leido": "2026-10-14",
+ "cobertura": {},
+ "fuentes": {},
+ "cambios": [
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "santiago-hermano-de-jesus",
+   "campo": "sources",
+   "valores": [
+    "santiago-1",
+    "si-santiago"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "events",
+   "id": "abrahan-ofrece-a-isaac",
+   "campo": "passages",
+   "valores": [
+    "Snt 2:21, 22"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "events",
+   "id": "pacto-de-los-animales-partidos",
+   "campo": "passages",
+   "valores": [
+    "Snt 2:23"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "events",
+   "id": "diez-mandamientos",
+   "campo": "passages",
+   "valores": [
+    "Snt 2:11"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "events",
+   "id": "jehova-da-leyes-para-que-israel-sea-santo",
+   "campo": "passages",
+   "valores": [
+    "Snt 2:8"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "abrahan",
+   "campo": "sources",
+   "valores": [
+    "santiago-2"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "isaac",
+   "campo": "sources",
+   "valores": [
+    "santiago-2"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "rahab",
+   "campo": "sources",
+   "valores": [
+    "santiago-2"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "isaac",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "abrahan",
+     "word": "father",
+     "inferred": false,
+     "sources": [
+      "santiago-2"
+     ],
+     "reason": "Snt 2:21 llama a Isaac hijo de Abrahán.",
+     "checked_on": "2026-10-14",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "job",
+   "campo": "sources",
+   "valores": [
+    "santiago-5"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "events",
+   "id": "job-pierde-sus-bienes-y-sus-hijos",
+   "campo": "passages",
+   "valores": [
+    "Snt 5:11"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "events",
+   "id": "job-pierde-sus-bienes-y-sus-hijos",
+   "campo": "sources",
+   "valores": [
+    "it-santiago-carta"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "events",
+   "id": "satanas-hiere-a-job-con-ulceras",
+   "campo": "passages",
+   "valores": [
+    "Snt 5:11"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "events",
+   "id": "satanas-hiere-a-job-con-ulceras",
+   "campo": "sources",
+   "valores": [
+    "it-santiago-carta"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "events",
+   "id": "jehova-restablece-a-job",
+   "campo": "passages",
+   "valores": [
+    "Snt 5:11"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "events",
+   "id": "jehova-restablece-a-job",
+   "campo": "sources",
+   "valores": [
+    "it-santiago-carta"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "elias-profeta",
+   "campo": "sources",
+   "valores": [
+    "santiago-5"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "events",
+   "id": "elias-anuncia-la-sequia-a-acab",
+   "campo": "summary",
+   "antes": "Elías, un tisbita de Galaad, jura ante Acab por el Dios de Israel que en esos años no habrá rocío ni lluvia sin su palabra. La sequía duró tres años y seis meses.",
+   "despues": "Elías, tisbita de Galaad, jura ante Acab por el Dios de Israel que en esos años no habrá rocío ni lluvia sin su palabra. Snt 5:17 añade que oró para que no lloviera; la sequía duró tres años y medio.",
+   "historial": {
+    "date": "2026-10-14",
+    "change": "El resumen añade, sin ponerla antes ni después del juramento, la oración de Elías para que no lloviera, como dice Snt 5:17; Perspicacia «Elías», núm. 1, cuenta esa sequía entre sus milagros.",
+    "source": "santiago-5"
+   }
+  }
+ ],
+ "preguntas": [
+  "Cargo de Santiago, hermano de Jesús. Snt 3:1 lo cuenta entre los maestros y Snt 5:14 nombra a los ancianos de la congregación. Perspicacia «Santiago», núm. 4, dice que no fue de los doce apóstoles, que debió ser superintendente en Jerusalén (Hch 12:17) y que al parecer fue un «apóstol» de esa congregación (remite a «Apóstol», «Apostolado en las congregaciones»). Dos opciones: (a) holds_office apostle con inferred: true y Perspicacia «Santiago», núm. 4, como fuente, aunque hoy apostle solo lo llevan pablo, matias y judas-iscariote, y bernabe no; (b) añadir a offices de data/vocabulary.yaml maestro y anciano o superintendente, y dar a santiago-hermano-de-jesus el cargo con santiago-3, santiago-5 y hch-15 como fuentes. Hasta que se decida, la ficha no lleva holds_office."
+ ]
+}
