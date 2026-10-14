@@ -1,0 +1,867 @@
+{
+ "formato": "biblical-atlas/propuesta-cobertura/1",
+ "libro": "1-pedro",
+ "agente": "escritor-1-pedro",
+ "leido": "2026-10-14",
+ "cobertura": {},
+ "fuentes": {},
+ "cambios": [
+  {
+   "op": "cambiar",
+   "tipo": "people",
+   "id": "pedro",
+   "campo": "relations",
+   "antes": [
+    {
+     "type": "kin",
+     "person": "suegra-de-pedro",
+     "word": "mother_in_law",
+     "inferred": false,
+     "sources": [
+      "it-pedro",
+      "marcos-1",
+      "mateo-8",
+      "lucas-4",
+      "1-corintios-9"
+     ],
+     "reason": "Mr 1:29-31 nombra a su suegra; Perspicacia «Pedro», párr. 4, da su matrimonio por 1Co 9:5.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "accompanies",
+     "person": "juan-apostol",
+     "word": "companion",
+     "inferred": false,
+     "sources": [
+      "it-pedro",
+      "hechos-3",
+      "hechos-8",
+      "lucas-22",
+      "juan-18",
+      "galatas-2",
+      "it-juan",
+      "lucas-5",
+      "juan-20",
+      "juan-21",
+      "hechos-4"
+     ],
+     "reason": "Lu 22:8: Jesús los envía juntos a preparar la Pascua; después van juntos al templo (Hch 3:1) y a Samaria (Hch 8:14). Perspicacia «Pedro», párr. 7, y «Juan», párr. 30.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "accompanies",
+     "person": "santiago-hijo-de-zebedeo",
+     "caption": "socio en la pesca",
+     "inverse_caption": "socio en la pesca",
+     "inferred": false,
+     "sources": [
+      "it-pedro",
+      "it-santiago",
+      "lucas-5",
+      "juan-21"
+     ],
+     "reason": "Lu 5:10: Santiago y Juan eran socios de Simón en la pesca. Con Juan, fueron los tres que Jesús llevó a la transfiguración y a Getsemaní (Perspicacia «Pedro», párr. 3 y 7).",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "lived_in",
+     "place": "capernaum",
+     "inferred": false,
+     "sources": [
+      "it-pedro",
+      "marcos-1",
+      "lucas-4"
+     ],
+     "reason": "Perspicacia «Pedro», párr. 3: primero vivía en Betsaida (Jn 1:44) y después en Capernaúm (Lu 4:31, 38), donde compartía casa con Andrés.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "lived_in",
+     "place": "babilonia",
+     "date": {
+      "from": 62,
+      "to": 64,
+      "precision": "range",
+      "approx": true,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "c. 62-64 e.c."
+     },
+     "inferred": true,
+     "sources": [
+      "it-pedro-cartas",
+      "bt-4",
+      "1-pedro-5"
+     ],
+     "reason": "1Pe 5:13 manda saludos desde Babilonia. Perspicacia la toma por la ciudad del Éufrates, con muchos judíos; el texto no lo aclara.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "accompanies",
+     "person": "juan-marcos",
+     "caption": "«Marcos mi hijo»",
+     "inverse_caption": "Pedro lo llama «Marcos mi hijo»",
+     "date": {
+      "from": 62,
+      "to": 64,
+      "precision": "range",
+      "approx": true,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "c. 62-64 e.c."
+     },
+     "inferred": false,
+     "sources": [
+      "it-pedro-cartas",
+      "1-pedro-5"
+     ],
+     "reason": "Marcos estaba con él cuando escribió la primera carta (1Pe 5:13); Perspicacia «Pedro, Cartas de», párr. 3.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "accompanies",
+     "person": "silas",
+     "caption": "escribió 1 Pedro por medio de él",
+     "inverse_caption": "amanuense de 1 Pedro",
+     "date": {
+      "from": 62,
+      "to": 64,
+      "precision": "range",
+      "approx": true,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "c. 62-64 e.c."
+     },
+     "inferred": false,
+     "sources": [
+      "it-pedro-cartas",
+      "1-pedro-5"
+     ],
+     "reason": "Perspicacia («Pedro, Cartas de», párr. 1) dice que se valió de Silvano para escribir la primera carta (1Pe 5:12).",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "lived_in",
+     "place": "betsaida",
+     "inferred": false,
+     "sources": [
+      "it-pedro",
+      "juan-1"
+     ],
+     "reason": "Jn 1:44 llama a Betsaida «la ciudad de Andrés y Pedro»; Perspicacia «Pedro», párr. 3, dice que vivió allí antes de mudarse a Capernaúm.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "disciple_of",
+     "person": "jesus",
+     "inferred": false,
+     "sources": [
+      "mateo-4",
+      "mateo-10",
+      "mateo-17",
+      "mateo-19",
+      "mateo-26",
+      "marcos-1",
+      "marcos-3",
+      "marcos-5",
+      "marcos-9",
+      "marcos-10",
+      "marcos-11",
+      "marcos-13",
+      "marcos-14",
+      "lucas-5",
+      "lucas-6",
+      "lucas-8",
+      "lucas-9",
+      "lucas-12",
+      "lucas-18",
+      "lucas-22",
+      "juan-1",
+      "juan-6",
+      "juan-13",
+      "juan-18",
+      "juan-21",
+      "hechos-4"
+     ],
+     "reason": "Mt 4:18-20: deja las redes para seguir a Jesús, que lo hará pescador de hombres.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "kin",
+     "person": "jonas-padre-de-pedro",
+     "word": "father",
+     "inferred": false,
+     "sources": [
+      "mateo-16",
+      "it-jonas",
+      "juan-1",
+      "juan-21",
+      "it-juan"
+     ],
+     "reason": "Mt 16:17: Jesús lo llama «Simón hijo de Jonás». Perspicacia «Jonás», núm. 2.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "lived_in",
+     "place": "galilea",
+     "inferred": false,
+     "sources": [
+      "marcos-14",
+      "lucas-22"
+     ],
+     "reason": "Mr 14:70: los que están en el patio lo reconocen como galileo, y el relato no lo desmiente.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "tie",
+     "person": "simon-el-curtidor",
+     "word": "host",
+     "date": {
+      "from": 36,
+      "to": 36,
+      "precision": "year",
+      "approx": true,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "36 e.c."
+     },
+     "inferred": false,
+     "sources": [
+      "hch-9",
+      "hechos-10",
+      "it-simon"
+     ],
+     "reason": "Hch 9:43 y 10:6, 32: se queda bastantes días en Jope en casa de Simón; Perspicacia «Simón», núm. 9, lo pone en 36.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    }
+   ],
+   "despues": [
+    {
+     "type": "kin",
+     "person": "suegra-de-pedro",
+     "word": "mother_in_law",
+     "inferred": false,
+     "sources": [
+      "it-pedro",
+      "marcos-1",
+      "mateo-8",
+      "lucas-4",
+      "1-corintios-9"
+     ],
+     "reason": "Mr 1:29-31 nombra a su suegra; Perspicacia «Pedro», párr. 4, da su matrimonio por 1Co 9:5.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "accompanies",
+     "person": "juan-apostol",
+     "word": "companion",
+     "inferred": false,
+     "sources": [
+      "it-pedro",
+      "hechos-3",
+      "hechos-8",
+      "lucas-22",
+      "juan-18",
+      "galatas-2",
+      "it-juan",
+      "lucas-5",
+      "juan-20",
+      "juan-21",
+      "hechos-4"
+     ],
+     "reason": "Lu 22:8: Jesús los envía juntos a preparar la Pascua; después van juntos al templo (Hch 3:1) y a Samaria (Hch 8:14). Perspicacia «Pedro», párr. 7, y «Juan», párr. 30.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "accompanies",
+     "person": "santiago-hijo-de-zebedeo",
+     "caption": "socio en la pesca",
+     "inverse_caption": "socio en la pesca",
+     "inferred": false,
+     "sources": [
+      "it-pedro",
+      "it-santiago",
+      "lucas-5",
+      "juan-21"
+     ],
+     "reason": "Lu 5:10: Santiago y Juan eran socios de Simón en la pesca. Con Juan, fueron los tres que Jesús llevó a la transfiguración y a Getsemaní (Perspicacia «Pedro», párr. 3 y 7).",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "lived_in",
+     "place": "capernaum",
+     "inferred": false,
+     "sources": [
+      "it-pedro",
+      "marcos-1",
+      "lucas-4"
+     ],
+     "reason": "Perspicacia «Pedro», párr. 3: primero vivía en Betsaida (Jn 1:44) y después en Capernaúm (Lu 4:31, 38), donde compartía casa con Andrés.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "lived_in",
+     "place": "babilonia",
+     "date": {
+      "from": 62,
+      "to": 64,
+      "precision": "range",
+      "approx": true,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "c. 62-64 e.c."
+     },
+     "inferred": true,
+     "sources": [
+      "it-pedro-cartas",
+      "bt-4",
+      "1-pedro-5",
+      "it-pedro",
+      "it-babilonia"
+     ],
+     "reason": "1Pe 5:13 saluda desde Babilonia, la ciudad del Éufrates según «Pedro, Cartas de». Perspicacia «Pedro» habla de su estancia allí y no da ruta: es residencia, no parada de un viaje. «Babilonia» dice que fue por su colonia judía.",
+     "checked_on": "2026-10-14",
+     "status": "verified"
+    },
+    {
+     "type": "accompanies",
+     "person": "juan-marcos",
+     "caption": "«Marcos mi hijo»",
+     "inverse_caption": "Pedro lo llama «Marcos mi hijo»",
+     "date": {
+      "from": 62,
+      "to": 64,
+      "precision": "range",
+      "approx": true,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "c. 62-64 e.c."
+     },
+     "inferred": false,
+     "sources": [
+      "it-pedro-cartas",
+      "1-pedro-5"
+     ],
+     "reason": "Marcos estaba con él cuando escribió la primera carta (1Pe 5:13); Perspicacia «Pedro, Cartas de», párr. 3.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "accompanies",
+     "person": "silas",
+     "caption": "escribió 1 Pedro por medio de él",
+     "inverse_caption": "amanuense de 1 Pedro",
+     "date": {
+      "from": 62,
+      "to": 64,
+      "precision": "range",
+      "approx": true,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "c. 62-64 e.c."
+     },
+     "inferred": false,
+     "sources": [
+      "it-pedro-cartas",
+      "1-pedro-5"
+     ],
+     "reason": "Perspicacia («Pedro, Cartas de», párr. 1) dice que se valió de Silvano para escribir la primera carta (1Pe 5:12).",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "lived_in",
+     "place": "betsaida",
+     "inferred": false,
+     "sources": [
+      "it-pedro",
+      "juan-1"
+     ],
+     "reason": "Jn 1:44 llama a Betsaida «la ciudad de Andrés y Pedro»; Perspicacia «Pedro», párr. 3, dice que vivió allí antes de mudarse a Capernaúm.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "disciple_of",
+     "person": "jesus",
+     "inferred": false,
+     "sources": [
+      "mateo-4",
+      "mateo-10",
+      "mateo-17",
+      "mateo-19",
+      "mateo-26",
+      "marcos-1",
+      "marcos-3",
+      "marcos-5",
+      "marcos-9",
+      "marcos-10",
+      "marcos-11",
+      "marcos-13",
+      "marcos-14",
+      "lucas-5",
+      "lucas-6",
+      "lucas-8",
+      "lucas-9",
+      "lucas-12",
+      "lucas-18",
+      "lucas-22",
+      "juan-1",
+      "juan-6",
+      "juan-13",
+      "juan-18",
+      "juan-21",
+      "hechos-4"
+     ],
+     "reason": "Mt 4:18-20: deja las redes para seguir a Jesús, que lo hará pescador de hombres.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "kin",
+     "person": "jonas-padre-de-pedro",
+     "word": "father",
+     "inferred": false,
+     "sources": [
+      "mateo-16",
+      "it-jonas",
+      "juan-1",
+      "juan-21",
+      "it-juan"
+     ],
+     "reason": "Mt 16:17: Jesús lo llama «Simón hijo de Jonás». Perspicacia «Jonás», núm. 2.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "lived_in",
+     "place": "galilea",
+     "inferred": false,
+     "sources": [
+      "marcos-14",
+      "lucas-22"
+     ],
+     "reason": "Mr 14:70: los que están en el patio lo reconocen como galileo, y el relato no lo desmiente.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "tie",
+     "person": "simon-el-curtidor",
+     "word": "host",
+     "date": {
+      "from": 36,
+      "to": 36,
+      "precision": "year",
+      "approx": true,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "36 e.c."
+     },
+     "inferred": false,
+     "sources": [
+      "hch-9",
+      "hechos-10",
+      "it-simon"
+     ],
+     "reason": "Hch 9:43 y 10:6, 32: se queda bastantes días en Jope en casa de Simón; Perspicacia «Simón», núm. 9, lo pone en 36.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    }
+   ],
+   "historial": {
+    "date": "2026-10-14",
+    "change": "La relación lived_in con Babilonia (c. 62-64) dice ahora por qué es residencia y no un viaje: Perspicacia «Pedro» habla de su estancia allí sin ruta. Suma «Pedro» y «Babilonia» a sus fuentes; las demás relaciones no cambian.",
+    "source": "1-pedro-5"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "pedro",
+   "campo": "sources",
+   "valores": [
+    "1-pedro-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "pedro",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "holds_office",
+     "office": "apostle",
+     "inferred": false,
+     "sources": [
+      "1-pedro-1",
+      "it-pedro"
+     ],
+     "reason": "1Pe 1:1: abre la carta presentándose como apóstol de Jesucristo. Perspicacia «Pedro» lo trata como apóstol desde su primer párrafo.",
+     "checked_on": "2026-10-14",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "galacia",
+   "campo": "sources",
+   "valores": [
+    "1-pedro-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "asia",
+   "campo": "sources",
+   "valores": [
+    "1-pedro-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "bitinia",
+   "campo": "sources",
+   "valores": [
+    "1-pedro-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "events",
+   "id": "jehova-da-las-leyes-de-lo-puro-y-lo-impuro",
+   "campo": "passages",
+   "valores": [
+    "1Pe 1:16"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "events",
+   "id": "muerte-de-jesus",
+   "campo": "passages",
+   "valores": [
+    "1Pe 2:21-24",
+    "1Pe 3:18"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "events",
+   "id": "angeles-toman-esposas",
+   "campo": "passages",
+   "valores": [
+    "1Pe 3:19, 20"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "events",
+   "id": "angeles-toman-esposas",
+   "campo": "sources",
+   "valores": [
+    "it-tartaro",
+    "1-pedro-3"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "events",
+   "id": "resurreccion-de-jesus",
+   "campo": "passages",
+   "valores": [
+    "1Pe 3:18, 21"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "events",
+   "id": "resurreccion-de-jesus",
+   "campo": "sources",
+   "valores": [
+    "1-pedro-3"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "events",
+   "id": "ascension-de-jesus",
+   "campo": "passages",
+   "valores": [
+    "1Pe 3:22"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "events",
+   "id": "ascension-de-jesus",
+   "campo": "sources",
+   "valores": [
+    "1-pedro-3"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "events",
+   "id": "diluvio",
+   "campo": "sources",
+   "valores": [
+    "1-pedro-3"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "pedro",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "accompanies",
+     "person": "silas",
+     "caption": "escribió 1 Pedro por medio de él",
+     "inverse_caption": "amanuense de 1 Pedro",
+     "date": {
+      "from": 62,
+      "to": 64,
+      "precision": "range",
+      "approx": true,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "c. 62-64 e.c."
+     },
+     "inferred": false,
+     "sources": [
+      "it-silas",
+      "1-pedro-5"
+     ],
+     "reason": "1Pe 5:12: escribe mediante Silvano. Perspicacia «Silas, Silvano» lo cree probablemente el compañero de Pablo y ve posible que fuera su amanuense.",
+     "checked_on": "2026-10-14",
+     "status": "verified"
+    },
+    {
+     "type": "accompanies",
+     "person": "juan-marcos",
+     "caption": "«Marcos mi hijo»",
+     "inverse_caption": "Pedro lo llama «Marcos mi hijo»",
+     "date": {
+      "from": 62,
+      "to": 64,
+      "precision": "range",
+      "approx": true,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "c. 62-64 e.c."
+     },
+     "inferred": false,
+     "sources": [
+      "it-marcos",
+      "1-pedro-5"
+     ],
+     "reason": "1Pe 5:13: Marcos manda saludos con Pedro. Perspicacia «Marcos»: estaba con él en Babilonia y el «hijo» muestra un fuerte cariño cristiano.",
+     "checked_on": "2026-10-14",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "juan-marcos",
+   "campo": "sources",
+   "valores": [
+    "1-pedro-5"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "people",
+   "id": "juan-marcos",
+   "campo": "summary",
+   "antes": "Hijo de María de Jerusalén y primo de Bernabé; escribió el Evangelio de Marcos. Quizá fue el joven que huyó desnudo de Getsemaní. Dejó el primer viaje en Perga y volvió a Jerusalén.",
+   "despues": "Hijo de María de Jerusalén y primo de Bernabé; escribió el Evangelio de Marcos. Dejó el primer viaje en Perga y volvió a Jerusalén; luego estuvo con Pablo en Roma y con Pedro en Babilonia. Quizá huyó desnudo de Getsemaní.",
+   "historial": {
+    "date": "2026-10-14",
+    "change": "El resumen acababa en Perga. Perspicacia «Marcos» lo pone luego con Pablo en Roma y con Pedro en Babilonia. Sigue la vuelta a Jerusalén (Hch 13:13); la frase de Getsemaní se acorta por las 40 palabras.",
+    "source": "1-pedro-5"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "silas",
+   "campo": "sources",
+   "valores": [
+    "1-pedro-5"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "people",
+   "id": "silas",
+   "campo": "summary",
+   "antes": "Profeta de la congregación de Jerusalén, al parecer ciudadano romano. Compañero de Pablo en el segundo viaje.",
+   "despues": "Profeta de la congregación de Jerusalén, al parecer ciudadano romano. Compañero de Pablo en el segundo viaje. Es el Silvano por medio del cual Pedro escribió su primera carta, hacia 62-64.",
+   "historial": {
+    "date": "2026-10-14",
+    "change": "El resumen no decía nada de 1 Pedro. La nota de 1Pe 5:12 llama Silas al Silvano por medio del cual escribió Pedro.",
+    "source": "1-pedro-5"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "people",
+   "id": "silas",
+   "campo": "reason",
+   "antes": "Perspicacia «Silas, Silvano» explica los dos nombres y su papel en el segundo viaje (Hch 15:40).",
+   "despues": "Perspicacia «Silas, Silvano» explica los dos nombres y su papel en el segundo viaje (Hch 15:40). La nota de 1Pe 5:12 lo identifica con el Silvano de Pedro; Perspicacia ve posible que fuera su amanuense.",
+   "historial": {
+    "date": "2026-10-14",
+    "change": "La razón cita ahora 1Pe 5:12: su nota da a Silvano por Silas, y Perspicacia solo ve posible que fuera el amanuense.",
+    "source": "1-pedro-5"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "babilonia",
+   "campo": "sources",
+   "valores": [
+    "1-pedro-5"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "letters",
+   "id": "1-pedro",
+   "campo": "context_origin",
+   "antes": {
+    "summary": "Pedro la escribe en Babilonia, con Silvano como amanuense y con Marcos a su lado, antes de la persecución de Nerón de 64.",
+    "sources": [
+     "it-pedro-cartas"
+    ]
+   },
+   "despues": {
+    "summary": "Pedro la escribe en Babilonia por medio de Silvano, quizá su amanuense, con Marcos a su lado, antes de la persecución de Nerón de 64.",
+    "sources": [
+     "it-pedro-cartas",
+     "it-silas"
+    ]
+   },
+   "historial": {
+    "date": "2026-10-14",
+    "change": "Daba a Silvano por amanuense sin reservas, como el recuadro de «Pedro, Cartas de». 1Pe 5:12 solo dice «mediante Silvano» y «Silas, Silvano» lo ve posible: queda como duda.",
+    "source": "1-pedro-5"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "letters",
+   "id": "1-pedro",
+   "campo": "people",
+   "valores": [
+    "silas",
+    "juan-marcos"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "events",
+   "id": "isaias-anuncia-que-jehova-consolara-a-su-pueblo",
+   "campo": "passages",
+   "valores": [
+    "1Pe 1:24, 25"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "events",
+   "id": "jehova-da-leyes-para-que-israel-sea-santo",
+   "campo": "passages",
+   "valores": [
+    "1Pe 1:16"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "events",
+   "id": "angeles-toman-esposas",
+   "campo": "summary",
+   "antes": "Los hijos del Dios verdadero, que eran ángeles, se casan con las mujeres que eligen. Sus hijos son los nefilim, hombres violentos y famosos que hacen crecer la maldad.",
+   "despues": "Ángeles, los hijos del Dios verdadero, se casan con las mujeres que eligen y tienen a los nefilim, hombres violentos y famosos que hacen crecer la maldad. Dios acaba recluyéndolos en el Tártaro, al parecer en días de Noé.",
+   "historial": {
+    "date": "2026-10-14",
+    "change": "El resumen no decía lo que cuentan 1Pe 3:19, 20: esos espíritus desobedientes están en prisión. Perspicacia «Tártaro» pone su reclusión, al parecer, en días de Noé. Se reescribe para caber en 40 palabras.",
+    "source": "1-pedro-3"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "events",
+   "id": "angeles-toman-esposas",
+   "campo": "reason",
+   "antes": "La nota de Gé 6:2 dice que en hebreo esa expresión designa a ángeles. Perspicacia «Nefilim» ve en los nefilim a sus hijos y pone los hechos en días de Noé, antes del Diluvio.",
+   "despues": "Nota de Gé 6:2: son ángeles. Según Perspicacia, sus hijos ya vivían al darse el plazo de 2490 («Nefilim») y ellos desobedecían aún mientras se construía el arca («Tártaro», 1Pe 3:20). Por eso, todos los días de Noé.",
+   "historial": {
+    "date": "2026-10-14",
+    "change": "La razón explica por qué la fecha sigue siendo todos los días de Noé hasta el Diluvio: 1Pe 3:20 los ve desobedientes durante el arca, pero «Nefilim» ya pone a sus hijos en 2490.",
+    "source": "1-pedro-3"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "abrahan",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "sara",
+     "word": "wife",
+     "inferred": false,
+     "sources": [
+      "1-pedro-3"
+     ],
+     "reason": "1Pe 3:6: Sara obedecía a Abrahán, su esposo, y lo llamaba señor.",
+     "checked_on": "2026-10-14",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "sara",
+   "campo": "sources",
+   "valores": [
+    "1-pedro-3"
+   ]
+  }
+ ],
+ "preguntas": [
+  "Vocabulario (1Pe 5:1-4): no hay cargo de anciano (Pedro se llama anciano en 5:1; Perspicacia «Anciano» lo liga a 1Pe 5:1-5), ni de superintendente (5:2) ni de pastor principal (5:4, dicho de Jesús). Pedro no lleva holds_office de anciano hasta que el vocabulario lo tenga.",
+  "Vocabulario (1Pe 5:12): la entrada de outside de pedro/accompanies/silas tiene inverse_caption «amanuense de 1 Pedro», sin reserva, y se ve en la ficha de Silas. Perspicacia «Silas, Silvano» solo ve posible que fuera el amanuense. Propuesta: «Pedro escribió 1 Pedro por medio de él», cambiando a la vez outside y la relación.",
+  "Sección 7: pedro/accompanies/silas y pedro/accompanies/juan-marcos están en la ficha de Pedro, pero accompanies va en la de quien acompaña. Sus textos están en outside de data/vocabulary.yaml; moverlas exige cambiar el vocabulario y scripts/migration/redirects.yaml. No se tocaron.",
+  "data/tours/pedro.yaml tiene una parada en letter:1-pedro; puede pasar a event:pedro-escribe-1-pedro cuando el suceso esté en main."
+ ]
+}
