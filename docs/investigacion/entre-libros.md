@@ -162,10 +162,13 @@ Los campos, los tipos de relación y sus palabras se nombran como en el esquema 
 - **Pablo en Roma, dos tramos.** `pablo/lived_in/roma` tiene dos tramos: c. 59-61 (primer encierro, Hch 28:16, 30) y c. 65 (segundo, 2Ti 1:8, 17). La cobertura los cita como `relation:pablo/lived_in/roma@59` y `relation:pablo/lived_in/roma@65`; al integrar 2 Timoteo, `apply.py` reescribe así las citas de Hechos, Efesios, Filipenses y Colosenses.
 - **El último encierro.** `segundo-encierro-en-roma` (c. 65, orden 2855) es de 2 Timoteo y lleva a Lucas, Onesíforo, Eubulo, Pudente, Lino y Claudia. Un libro que lo recuerde añade su pasaje con `anadir`.
 
-## Para Tito
+## Para quien toque `ultimos-anos-de-pablo` o la serie `hechos` tras 61 (desde Tito)
 
-- **Apolos y Pablo.** `apolos` lleva `accompanies` `pablo` con la palabra `fellow_worker`, c. 55 (1Co 3, 4 y 16): trabajaron el mismo campo en momentos distintos y solo se les ve cerca al escribirse 1 Corintios. Tit 3:13 añade su capítulo a las fuentes de esa relación con un `anadir` y puede alargar su fecha con un `cambiar` sobre esa relación.
-- **Tito y Pablo.** `tito` lleva tres relaciones `accompanies` con `pablo`: c. 49 (Gál 2), c. 55 (2 Corintios, ya con la palabra `companion` y con 2Co 2, 7, 8 y 12) y c. 61-64 (Tito). `apply.py` funde un `anadir` de relación en la primera con el mismo tipo y persona, la de 49. Para tocar la de 55 o la de 61-64, 2 Corintios usó un `cambiar` de toda la lista `relations`, con su `antes`; si choca, va a `preguntas` para una edición a mano.
+- **Paradas 4 y 5 de `ultimos-anos-de-pablo`.** La razón de la parada 4 dice que Perspicacia cree que Pablo escribió 1 Timoteo y Tito desde Macedonia; para Tito, Perspicacia «Tito, Carta a» solo lo ve posible y la Tabla pone «Macedonia (?)». La nota de la parada 5 atribuye a «algunos» el arresto en Nicópolis, que es Perspicacia «Nicópolis» quien ve posible. Tito no las cambió para no chocar con 2 Timoteo: se corrigen con un `cambiar` de la lista de ocho paradas.
+- **El orden de Tito.** En la serie `hechos`, `tito-queda-en-creta` lleva el 2842 y `pablo-escribe-tito` el 2851, tras 1 Timoteo (2850) y antes de Troas (2852) y Mileto (2853). Ninguna fuente lo fija: es elección nuestra y la `note` de cada suceso lo dice. `pablo-escribe-tito` va con `present: []`, porque la Tabla duda de Macedonia.
+- **Apolos tras 1 Corintios.** `apolos` va de 52 a 64 y cita Tit 3, pero solo tiene un tramo `accompanies` con `pablo`, el de c. 55: ninguna fuente los pone juntos en 61-64. Una relación con `caption` para Tit 3:13 está en las preguntas de Tito.
+- **Ártemas y Zenas.** `artemas` (`1200000390`) y `zenas` (`1200004695`) existen desde Tit 3:12, 13. Zenas es experto en la Ley; el vocabulario no tiene ese cargo y queda en su resumen y en las preguntas de Tito.
+- **Lo que deja 2 Timoteo para Tito.** Al integrar el PR 157, sus puntos «El orden de las cartas a Timoteo» y «Las paradas de `ultimos-anos-de-pablo`» quedan cerrados por Tito y se quitan, salvo las paradas 4 y 5 de arriba. «El cargo de superintendente» pasa a las preguntas de Tito.
 
 ## Para 2 Crónicas (desde Josué)
 

@@ -1,0 +1,51 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: zenas
+name: Zenas
+names:
+- name: Zenas
+perspicacia: '1200004695'
+date:
+  from: 61
+  to: 64
+  precision: range
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 61-64 e.c.
+summary: Cristiano conocido de Pablo, experto en la Ley, al parecer la de Moisés. Hacia 61-64 estaría en Creta, y Pablo pidió
+  a Tito que lo proveyera, a él y a Apolos, para un viaje de destino desconocido.
+reason: 'Perspicacia «Zenas»; Tit 3:13 y su nota de estudio, que lee «jurista» como experto en la Ley mosaica. Sería judío
+  o prosélito; su nombre griego inclina a lo segundo, sin probarlo. Fecha de la carta: Tabla de los libros.'
+sources:
+- it-zenas
+- tito-3
+- tnm-tabla
+links:
+- title: 'Perspicacia: «Zenas»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zenas/
+  type: perspicacia
+- title: Tito 3 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/tito/3/
+  type: bible
+relations:
+- type: accompanies
+  person: apolos
+  word: companion
+  date:
+    from: 61
+    to: 64
+    precision: range
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 61-64 e.c.
+  inferred: false
+  sources:
+  - tito-3
+  - it-zenas
+  reason: 'Tit 3:13: Pablo pide a Tito que no les falte nada a Zenas y a Apolos para el viaje que hacen juntos. Perspicacia
+    «Zenas» no sabe si iban a Nicópolis o a otro sitio.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified

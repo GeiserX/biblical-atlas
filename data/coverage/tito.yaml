@@ -1,0 +1,33 @@
+# biblical-atlas: cobertura de un libro. Formato en data/coverage/README.md.
+book: tito
+chapters:
+  1:
+    status: complete
+    reviewed_on: 2026-10-14
+    note: "Pablo saluda a Tito, al que dejó en Creta para corregir lo que faltaba y nombrar ancianos en cada ciudad. Da los requisitos del anciano y manda censurar con firmeza a los rebeldes que defendían la circuncisión."
+    spans:
+    - {v: 1-4, type: letter, entities: [letter:tito, event:pablo-escribe-tito, person:pablo, person:tito, relation:pablo/holds_office/-], mentions: [person:jesus], note: "Pablo se presenta como esclavo de Dios y apóstol y saluda a Tito, su verdadero hijo en la fe. La nota cree que el saludo largo pensaba en otros lectores; se conocían desde hacía al menos doce años."}
+    - {v: "5", type: letter, entities: [event:tito-queda-en-creta, event:pablo-escribe-tito, person:tito, person:pablo, place:creta, relation:tito/lived_in/creta, relation:tito/accompanies/pablo@61, journey:ultimos-anos-de-pablo, journey:tito-de-creta-a-dalmacia], mentions: [event:pablo-queda-libre], note: "Tito quedó en Creta para corregir lo defectuoso y nombrar ancianos en cada ciudad. Según la nota, Pablo volvió a la isla tras su primer encierro en Roma, y Tito tuvo que recorrerla entera."}
+    - {v: 6-9, type: letter, note: "Requisitos del anciano, al que llama también superintendente y mayordomo de Dios: sin acusación, de una sola esposa, con hijos creyentes, sin terquedad, ira, vino ni codicia; hospitalario, justo, leal y firme en la enseñanza sana."}
+    - {v: 10-14, type: letter, entities: [place:creta, person:tito], mentions: [event:concilio-de-jerusalen-49], note: "Muchos rebeldes, sobre todo cristianos de origen judío que defendían la circuncisión, asunto ya resuelto en Jerusalén hacia 49, engañan por ganancia. Pablo cita a un profeta cretense, que la nota cree Epiménides, y pide censurarlos con severidad."}
+    - {v: 15-16, type: letter, note: "Para los puros todo es puro; para quienes tienen sucias la mente y la conciencia, nada lo es. Dicen conocer a Dios, pero lo niegan con lo que hacen y no sirven para ninguna obra buena."}
+  2:
+    status: complete
+    reviewed_on: 2026-10-14
+    note: "Lo que Tito debe enseñar a cada grupo de la congregación: hombres y mujeres mayores, esposas jóvenes, jóvenes y esclavos. La bondad inmerecida de Dios enseña a vivir con buen juicio mientras se espera la manifestación de Jesucristo."
+    spans:
+    - {v: 1-5, type: letter, entities: [letter:tito], mentions: [person:tito, place:creta], note: "Los hombres mayores, moderados y sanos en la fe; las mujeres mayores, reverentes y maestras del bien, que enseñen a las jóvenes a amar a esposo e hijos y a cuidar la casa. La nota piensa en Creta."}
+    - {v: 6-8, type: letter, entities: [person:tito], note: "Tito debe seguir aconsejando a los jóvenes y ser él mismo ejemplo de buenas obras, con enseñanza pura y palabras que nadie pueda criticar con razón, para que los opositores se queden sin nada que decir."}
+    - {v: 9-10, type: letter, note: "Los esclavos, sujetos a sus dueños, sin replicar ni quedarse con nada, para que su honradez haga atractiva la enseñanza de Dios. La nota aclara que Pablo no defendía la esclavitud: era una realidad que no podían cambiar."}
+    - {v: 11-14, type: letter, mentions: [person:jesus, event:muerte-de-jesus], note: "La bondad inmerecida de Dios ofrece salvación a toda clase de personas y enseña a rechazar la irreverencia mientras se espera la manifestación de Dios y de Jesucristo, que se dio para rescatar y limpiar a un pueblo suyo."}
+    - {v: "15", type: letter, entities: [person:tito, relation:tito/lived_in/creta, event:pablo-escribe-tito], note: "Que Tito siga hablando, aconsejando y censurando con toda autoridad, sin dejar que nadie lo menosprecie. La nota lo ve como anciano nombrado ante opositores que lo trataban con aires de superioridad."}
+  3:
+    status: complete
+    reviewed_on: 2026-10-14
+    note: "Últimos consejos a Tito para los cristianos de Creta: obedecer a las autoridades, ser apacibles, recordar que Dios los salvó por misericordia y evitar las disputas. Planes de viaje y saludos finales."
+    spans:
+    - {v: 1-2, type: letter, entities: [letter:tito], mentions: [person:tito, place:creta], note: "Que Tito siga recordándoles someterse a gobiernos y autoridades y estar listos para toda obra buena, sin hablar mal ni pelear. La nota piensa en los cristianos de Creta y en la obediencia mientras no choque con Dios."}
+    - {v: 3-7, type: letter, mentions: [person:pablo, event:saulo-persigue-a-la-congregacion, event:conversion-de-pablo, person:jesus], note: "También nosotros fuimos necios y esclavos de deseos; la nota ve a Pablo, que persiguió a los discípulos y recibió misericordia. Dios nos salvó por su bondad, limpiando y renovando con espíritu santo derramado por Jesucristo."}
+    - {v: 8-11, type: letter, mentions: [person:tito, place:creta], note: "Que Tito insista en las buenas obras y huya de disputas necias, genealogías y peleas sobre la Ley, que según la nota agitaban también Creta. A quien cree divisiones, tras dos avisos, que lo rechace."}
+    - {v: 12-14, type: letter, entities: [event:pablo-escribe-tito, person:pablo, person:artemas, person:tiquico, person:tito, person:zenas, person:apolos, place:nicopolis, relation:artemas/accompanies/pablo, relation:tiquico/accompanies/pablo@61, relation:tito/accompanies/pablo@61, relation:zenas/accompanies/apolos, journey:ultimos-anos-de-pablo, journey:tito-de-creta-a-dalmacia, letter:tito], mentions: [place:creta], note: "Pablo enviará a Ártemas o a Tíquico, quizá de relevo, y Tito irá a verlo a Nicópolis, donde invernará. Que provea a Zenas, experto en la Ley, y a Apolos para su viaje; los suyos, que aprendan a ayudar."}
+    - {v: "15", type: letter, entities: [event:pablo-escribe-tito, letter:tito], mentions: [person:pablo, person:tito], note: "Saludos de los que están con Pablo para Tito y para los que los quieren en la fe. El plural final hace pensar a la nota que la carta se leería a las congregaciones."}
