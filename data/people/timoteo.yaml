@@ -32,6 +32,8 @@ sources:
 - 1-timoteo-5
 - 1-timoteo-6
 - it-timoteo-cartas
+- hebreos-13
+- it-hebreos
 links:
 - title: 'Perspicacia: «Timoteo»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Timoteo/
@@ -51,7 +53,7 @@ history:
   change: 'timoteo/accompanies/pablo lleva la palabra fellow_worker: Ro 16:21 lo llama colaborador de Pablo, como se hizo
     con Epafrodito y Clemente. Lo pedía entre-libros para 1 Timoteo.'
   source: romanos-16
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified
 relations:
 - type: lived_in
@@ -97,9 +99,10 @@ relations:
   - 2-tesalonicenses-1
   - 1-timoteo-1
   - 1-timoteo-4
+  - hebreos-13
   reason: Se une en Listra y viaja con él; Ro 16:21 lo llama colaborador. «Testimonio completo» (cap. 15, párr. 18) dice que
     trabajaron juntos muchos años. La Tabla de los libros fecha 2 Timoteo hacia 65.
-  checked_on: '2026-10-13'
+  checked_on: '2026-10-14'
   status: verified
 - type: accompanies
   person: erasto-colaborador-de-pablo

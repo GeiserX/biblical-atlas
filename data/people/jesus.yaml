@@ -10,6 +10,9 @@ names:
     cielo, en la tierra y tras volver al cielo.
 - name: Emmanuel
   note: Título profético de Is 7:14 y 8:8, «con nosotros está Dios», que Mt 1:23 aplica a Jesús (Perspicacia «Emmanuel»).
+- name: Agente Principal
+  note: 'Título que le dan Hch 3:15, 5:31 y Heb 2:10: según la nota de estudio, quien inicia la salvación y conduce a otros
+    por ese camino.'
 date:
   from: 29
   to: 33
@@ -123,6 +126,15 @@ sources:
 - filipenses-2
 - colosenses-1
 - it-emmanuel
+- hebreos-2
+- hebreos-3
+- hebreos-4
+- hebreos-5
+- hebreos-6
+- hebreos-7
+- hebreos-8
+- hebreos-9
+- hebreos-10
 not_claimed:
 - 'Que Jesús naciera el 25 de diciembre: Perspicacia lo descarta porque los pastores pasaban la noche al raso.'
 - 'Un día exacto de nacimiento: las fuentes dicen hacia el 1 de octubre.'
@@ -432,6 +444,34 @@ relations:
     lo ven cumplido en Jesús, que mantiene viva esa línea.
   checked_on: '2026-09-30'
   status: verified
+- type: holds_office
+  office: high_priest
+  inferred: false
+  sources:
+  - hebreos-2
+  - it-sumo-sacerdote
+  - hebreos-1
+  - hebreos-3
+  - hebreos-5
+  - hebreos-4
+  - hebreos-6
+  - hebreos-7
+  - hebreos-8
+  - hebreos-9
+  - hebreos-10
+  reason: Heb 2:17; 3:1; 4:14; 5:10; 6:20; 7:26; 8:1; 9:11 y 10:21 lo llaman sumo sacerdote. Las notas de 1:9 y 5:5 lo nombran
+    al bautizarse, en 29; Perspicacia «Sumo sacerdote» lo pone a servir desde que entró en el cielo.
+  checked_on: '2026-10-14'
+  status: verified
+- type: kin
+  person: juda-hijo-de-jacob
+  word: ancestor
+  inferred: false
+  sources:
+  - hebreos-7
+  reason: 'Heb 7:14: nuestro Señor desciende de Judá, una tribu de la que Moisés no habló para el sacerdocio.'
+  checked_on: '2026-10-14'
+  status: verified
 links:
 - title: 'Perspicacia: «Jesucristo»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jesucristo/
@@ -445,7 +485,7 @@ history:
   change: La razón de vivio_en capernaum citaba Mt 9:1 como «su propia ciudad»; la TNM de estudio dice «su ciudad».
   source: mateo-9
 disambiguation: Jesucristo; no Jesús hijo de Eliezer, antepasado suyo en la genealogía de Lucas.
-checked_on: '2026-09-30'
+checked_on: '2026-10-14'
 status: verified
 distinct_from:
 - jesus-hijo-de-eliezer
