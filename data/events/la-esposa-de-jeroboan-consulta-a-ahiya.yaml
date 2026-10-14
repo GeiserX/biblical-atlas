@@ -2,13 +2,13 @@
 id: la-esposa-de-jeroboan-consulta-a-ahiya
 title: La esposa de Jeroboán consulta al profeta Ahíya
 date:
-  from: -979
+  from: -977
   to: -975
   precision: range
   approx: true
   type: narrative
   chronology: tnm
-  text: 'entre 980 y c. 976 a.e.c. (tiempo narrativo: tras la guerra con Abías de Judá y poco antes de morir Jeroboán)'
+  text: 'entre 978 y c. 976 a.e.c. (tiempo narrativo: tras la guerra con Abías de Judá y poco antes de morir Jeroboán, cerca de 977)'
 narrative_order:
   series: 1-reyes
   order: 14001
@@ -25,8 +25,8 @@ passages:
 - 1Re 14:1-16
 summary: 'Con su hijo Abías enfermo, Jeroboán manda a su esposa disfrazada a Siló. Ahíya, anciano y ciego, la reconoce por
   aviso de Jehová: el niño morirá, la casa de Jeroboán será barrida e Israel irá al destierro.'
-reason: Perspicacia «Jeroboán», núm. 1, pone la enfermedad del hijo tras la derrota ante Abías, que reinó de 980 a 978 (A6-A),
-  y la muerte del rey poco después; Nadab empieza a reinar c. 976.
+reason: Perspicacia «Jeroboán», núm. 1, pone la enfermedad del hijo tras la derrota ante Abías (980-978, A6-A) y la muerte
+  del rey «poco después, cerca de 977»; Nadab reina desde c. 976 (A6-A).
 sources:
 - 1-reyes-14
 - it-jeroboan
@@ -46,5 +46,9 @@ history:
   change: Va después de la batalla de 2Cr 13, como dice su fecha; sin el enganche, la serie 1-reyes la ponía antes en el mismo
     año.
   source: 2-cronicas-13
-checked_on: '2026-10-13'
+- date: '2026-10-14'
+  change: Empieza en 978 y no en 980. La batalla puede ser de 980, pero Jeroboán muere «poco después, cerca de 977», y la consulta
+    va justo antes.
+  source: it-jeroboan
+checked_on: '2026-10-14'
 status: verified
