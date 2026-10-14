@@ -20,6 +20,7 @@ sources:
 - colosenses-4
 - 2-timoteo-4
 - tnm-tabla
+- filemon-1
 links:
 - title: 'Perspicacia: «Demas»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Demas/
@@ -28,11 +29,17 @@ links:
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-timoteo/4/
   type: bible
 perspicacia: '1200001151'
-checked_on: '2026-09-29'
+history:
+- date: '2026-10-14'
+  change: La relación con Pablo de 60-61 pasa a decir colaborador, como lo llama Flm 24 (Perspicacia «Demas»); el resto de
+    la lista no cambia.
+  source: filemon-1
+checked_on: '2026-10-14'
 status: verified
 relations:
 - type: accompanies
   person: pablo
+  word: fellow_worker
   date:
     from: 60
     to: 61
@@ -46,8 +53,10 @@ relations:
   - it-demas
   - colosenses-4
   - tnm-tabla
-  reason: Envía saludos con Pablo desde Roma (Col 4:14; Flm 24). La Tabla de los libros fecha las dos cartas hacia 60-61.
-  checked_on: '2026-09-28'
+  - filemon-1
+  reason: Envía saludos con Pablo desde Roma, que lo llama colaborador (Col 4:14; Flm 24). La Tabla de los libros fecha las
+    dos cartas hacia 60-61.
+  checked_on: '2026-10-14'
   status: verified
 - type: lived_in
   place: tesalonica

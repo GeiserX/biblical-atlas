@@ -106,6 +106,7 @@ sources:
 - 1-timoteo-2
 - 1-timoteo-3
 - 1-timoteo-4
+- filemon-1
 links:
 - title: 'Perspicacia: «Pablo»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Pablo/
@@ -131,7 +132,7 @@ history:
   change: 'La reason de pablo/lived_in/corinto nombra ahora 1Te 1:1 y Perspicacia «Tesalonicenses», que ya estaban en sus
     sources: la carta sale de Corinto.'
   source: 1-tesalonicenses-1
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified
 relations:
 - type: born_in
@@ -224,8 +225,9 @@ relations:
   - filipenses-4
   - colosenses-1
   - colosenses-4
+  - filemon-1
   reason: Dos años en una casa alquilada, vigilado por un soldado (Hch 28:16, 30).
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-14'
   status: verified
 - type: disciple_of
   person: gamaliel-fariseo
@@ -530,4 +532,15 @@ relations:
   reason: '1Te 2:6: Pablo dice que, por ser apóstoles de Cristo, podían haber pedido sustento. Perspicacia «Pablo» lo presenta
     como apóstol de Jesucristo y cita este versículo al hablar de su trabajo.'
   checked_on: '2026-10-13'
+  status: verified
+- type: tie
+  person: filemon
+  word: friend
+  inferred: true
+  sources:
+  - filemon-1
+  - it-filemon-carta
+  reason: 'Flm 17: le pide que reciba a Onésimo si lo tiene por amigo. Las notas de Flm 4, 7 y 17 hablan de la amistad entre
+    los dos, y «Filemón, Carta a» de su amistad personal.'
+  checked_on: '2026-10-14'
   status: verified

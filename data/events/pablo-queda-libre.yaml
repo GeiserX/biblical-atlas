@@ -28,11 +28,13 @@ sources:
 - it-filipenses
 - filipenses-1
 - filipenses-2
+- filemon-1
+- it-filemon-carta
 search: Pablo liberado Roma
 history:
 - date: '2026-09-29'
   change: Flp 1:12-14 habla de cómo su encierro difunde las buenas noticias, no de la liberación. Entran Flp 1:19, 25, 26
     y 2:24, donde Pablo confía en salir libre y volver a Filipos.
   source: filipenses-1
-checked_on: '2026-09-29'
+checked_on: '2026-10-14'
 status: verified

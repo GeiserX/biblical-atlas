@@ -74,7 +74,7 @@ Qué versículos de la TNM se han leído y apuntado en `data/coverage/<libro>.ya
 | [1 Timoteo](https://github.com/GeiserX/biblical-atlas/blob/main/data/coverage/1-timoteo.yaml) | 6 de 6 | 113 de 113 | 100 % |
 | 2 Timoteo | 0 de 4 | 0 de 83 | 0 % |
 | Tito | 0 de 3 | 0 de 46 | 0 % |
-| Filemón | 0 de 1 | 0 de 25 | 0 % |
+| [Filemón](https://github.com/GeiserX/biblical-atlas/blob/main/data/coverage/filemon.yaml) | 0 de 1 | 25 de 25 | 100 % |
 | Hebreos | 0 de 13 | 0 de 303 | 0 % |
 | Santiago | 0 de 5 | 0 de 108 | 0 % |
 | 1 Pedro | 0 de 5 | 0 de 105 | 0 % |
@@ -84,10 +84,11 @@ Qué versículos de la TNM se han leído y apuntado en `data/coverage/<libro>.ya
 | 3 Juan | 0 de 1 | 0 de 14 | 0 % |
 | Judas | 0 de 1 | 0 de 25 | 0 % |
 | Apocalipsis | 0 de 22 | 0 de 404 | 0 % |
-| **Total** | 993 de 1189 | 26465 de 31062 | 85 % |
+| **Total** | 993 de 1189 | 26490 de 31062 | 85 % |
 
 ## Capítulos empezados
 
 - 1 Crónicas 19: faltan ninguno (falta marcarlo completo)
 - 1 Crónicas 24: faltan ninguno (falta marcarlo completo)
 - 1 Crónicas 25: faltan ninguno (falta marcarlo completo)
+- Filemón 1: faltan ninguno (falta marcarlo completo)
