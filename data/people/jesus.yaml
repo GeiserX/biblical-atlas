@@ -327,8 +327,9 @@ relations:
   - hch-2
   - hch-13
   - romanos-1
+  - 2-timoteo-2
   reason: Mt 1:1 lo llama hijo de David; la nota explica que aquí hijo puede ser un descendiente.
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-13'
   status: verified
 - type: kin
   person: abrahan
@@ -445,7 +446,7 @@ history:
   change: La razón de vivio_en capernaum citaba Mt 9:1 como «su propia ciudad»; la TNM de estudio dice «su ciudad».
   source: mateo-9
 disambiguation: Jesucristo; no Jesús hijo de Eliezer, antepasado suyo en la genealogía de Lucas.
-checked_on: '2026-09-30'
+checked_on: '2026-10-13'
 status: verified
 distinct_from:
 - jesus-hijo-de-eliezer

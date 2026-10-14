@@ -41,6 +41,10 @@ sources:
 - josue-16
 - josue-17
 - jueces-12
+- 2-cronicas-17
+- 2-cronicas-30
+- 2-cronicas-31
+- 2-cronicas-34
 links:
 - title: 'Perspicacia: «Efraín»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Efra%C3%ADn/
@@ -51,5 +55,5 @@ links:
 - title: Salmo 60 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/salmos/60/
   type: bible
-checked_on: '2026-09-29'
+checked_on: '2026-10-13'
 status: verified

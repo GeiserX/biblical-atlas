@@ -71,6 +71,8 @@ sources:
 - jeremias-49
 - jeremias-50
 - jeremias-51
+- 2-cronicas-35
+- 2-cronicas-36
 - lamentaciones-2
 - it-lamentaciones-libro
 - si-lamentaciones
@@ -141,10 +143,11 @@ relations:
   - jeremias-49
   - jeremias-50
   - jeremias-51
+  - 2-cronicas-36
   reason: 'Jer 1:5: Jehová lo hizo profeta para las naciones; 1:2, 3 sitúan su obra desde el año 13 de Josías. El estudio
     3 fecha la comisión en 647 y la Tabla cierra su libro en 580.'
   inferred: false
-  checked_on: '2026-10-12'
+  checked_on: '2026-10-13'
   status: verified
 - type: holds_office
   office: priest

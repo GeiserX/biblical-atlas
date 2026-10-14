@@ -30,7 +30,7 @@ history:
 - date: '2026-09-29'
   change: Se añade su tumba en Zelá, donde David enterró los huesos de Saúl y de Jonatán (2Sa 21:14).
   source: 2-samuel-21
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified
 relations:
 - type: kin
@@ -70,3 +70,4 @@ relations:
 distinct_from:
 - quis-hijo-de-jeiel
 - quis-hijo-de-mahli
+- quis-hijo-de-abdi

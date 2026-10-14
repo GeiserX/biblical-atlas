@@ -10,6 +10,7 @@ reason: Perspicacia «Huldá»; 2Re 22:14-20.
 sources:
 - it-hulda
 - 2-reyes-22
+- 2-cronicas-34
 links:
 - title: 'Perspicacia: «Huldá»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Huld%C3%A1/
@@ -24,8 +25,9 @@ relations:
   sources:
   - 2-reyes-22
   - it-hulda
+  - 2-cronicas-34
   reason: 2Re 22:14 la llama profetisa.
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-13'
   status: verified
 - type: lived_in
   place: jerusalen
@@ -33,8 +35,9 @@ relations:
   sources:
   - 2-reyes-22
   - it-hulda
+  - 2-cronicas-34
   reason: '2Re 22:14: vivía en el Segundo Barrio de Jerusalén.'
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-13'
   status: verified
-checked_on: '2026-09-30'
+checked_on: '2026-10-13'
 status: verified

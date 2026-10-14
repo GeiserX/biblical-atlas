@@ -7,6 +7,7 @@ perspicacia: 1200002446#1
 disambiguation: El de la novena división sacerdotal (1Cr 24:11); no Jesúa o Josué, el sumo sacerdote que volvió de Babilonia.
 distinct_from:
 - josue-sumo-sacerdote
+- jesua-ayudante-de-core
 summary: Sacerdote de los días de David; a su casa le tocó el noveno de los 24 turnos del sacerdocio.
 reason: Perspicacia «Jesúa», núm. 1; 1Cr 24:11.
 sources:
@@ -36,5 +37,5 @@ relations:
   reason: '1Cr 24:11: encabeza una de las casas sacerdotales de 24:4-6; Perspicacia «Jesúa» lo trata como sacerdote.'
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified

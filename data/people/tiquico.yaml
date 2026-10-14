@@ -11,10 +11,10 @@ date:
   type: anchored
   chronology: tnm
   text: c. 56-65 e.c.
-summary: Ayudante de Pablo, del distrito de Asia. Volvió con él de Grecia, llevó sus cartas a Éfeso y Colosas con
-  Onésimo y más tarde fue enviado a Éfeso.
-reason: Perspicacia «Tíquico», que sigue Hechos 20, las cartas a Éfeso y Colosas y 2 Timoteo 4. Fechas del estudio 3 (párr.
-  26) y de la Tabla de los libros.
+summary: Ayudante de Pablo, del distrito de Asia. Volvió con él de Grecia y llevó sus cartas a Éfeso y Colosas con Onésimo.
+  Ya libre, Pablo pensó mandarlo a Creta, y más tarde lo envió a Éfeso.
+reason: Perspicacia «Tíquico», que sigue Hechos 20, las cartas a Éfeso y Colosas, Tito 3 y 2 Timoteo 4. Fechas del estudio
+  3 (párr. 26) y de la Tabla de los libros.
 sources:
 - it-tiquico
 - hch-20
@@ -22,6 +22,8 @@ sources:
 - si-3
 - tnm-tabla
 - efesios-6
+- 2-timoteo-4
+- tito-3
 links:
 - title: 'Perspicacia: «Tíquico»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/T%C3%ADquico/
@@ -30,7 +32,15 @@ links:
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/colosenses/4/
   type: bible
 perspicacia: '1200004496'
-checked_on: '2026-09-29'
+history:
+- date: '2026-10-14'
+  change: El resumen saltaba de las cartas del primer encierro a 2 Timoteo; añade que, ya libre Pablo, pensó enviarlo a Creta
+    (Tit 3:12).
+  source: tito-3
+- date: '2026-10-14'
+  change: La razón nombra también Tito 3, que Perspicacia «Tíquico» sigue.
+  source: tito-3
+checked_on: '2026-10-14'
 status: verified
 relations:
 - type: lived_in
@@ -97,4 +107,23 @@ relations:
   - tnm-tabla
   reason: En el segundo encierro, Pablo lo manda a Éfeso (2Ti 4:12). La Tabla de los libros fecha 2 Timoteo hacia 65.
   checked_on: '2026-09-29'
+  status: verified
+- type: accompanies
+  person: pablo
+  date:
+    from: 61
+    to: 64
+    precision: range
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 61-64 e.c.
+  inferred: true
+  sources:
+  - it-tiquico
+  - tito-3
+  - tnm-tabla
+  reason: 'Tit 3:12: ya libre, Pablo piensa enviar a Creta a Tíquico o a Ártemas (Perspicacia «Tíquico»); de ahí deducimos
+    que estaba con él. Carta de c. 61-64 (Tabla de los libros).'
+  checked_on: '2026-10-14'
   status: verified

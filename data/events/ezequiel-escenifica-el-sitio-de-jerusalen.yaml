@@ -1,0 +1,39 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: ezequiel-escenifica-el-sitio-de-jerusalen
+title: Ezequiel escenifica el sitio de Jerusalén
+date:
+  from: -612
+  to: -611
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 613 y 612 a.e.c. (tiempo narrativo: los 430 días del asedio representado, tras la comisión de tamuz de 613)'
+narrative_order:
+  series: ezequiel
+  order: 4001
+places:
+- tel-abib
+- caldea
+people:
+- ezequiel
+present:
+- ezequiel
+passages:
+- Eze 4:1-17
+summary: Ezequiel graba Jerusalén en un ladrillo y la cerca con muro, rampa y arietes. Yace 390 días de un lado y 40 del otro,
+  un día por año, con pan y agua racionados.
+reason: 'Eze 4:5, 6, 9: 430 días con pan racionado; desde la comisión de tamuz de 613 (estudio 3) llegan a 612. La adoración pura, cap. 6: empieza hacia 613, ante los desterrados, en su casa de Tel-Abib (Eze 3:15, 24).'
+sources:
+- ezequiel-4
+- ezequiel-3
+- rr-te-ha-llegado-el-fin
+- w07-ezequiel-1
+- it-ezequiel-libro
+- si-3
+links:
+- title: 'Perspicacia: «Ezequiel, Libro de»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ezequiel-Libro-de/
+  type: perspicacia
+checked_on: '2026-10-13'
+status: verified

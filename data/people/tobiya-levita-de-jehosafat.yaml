@@ -1,0 +1,22 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: tobiya-levita-de-jehosafat
+name: Tobiya
+names:
+- name: Tobiya
+perspicacia: 1200004438#1
+summary: Levita del grupo que Jehosafat mandó en su año tercero a recorrer las ciudades de Judá para instruir al pueblo con
+  el libro de la Ley.
+reason: Perspicacia «Tobiya», núm. 1; 2Cr 17:7-9.
+sources:
+- it-tobiya
+- 2-cronicas-17
+links:
+- title: 'Perspicacia: «Tobiya»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Tobiya/
+  type: perspicacia
+disambiguation: Levita que Jehosafat mandó a instruir en la Ley (Perspicacia «Tobiya», núm. 1); no el repatriado que dio oro y
+  plata para la corona.
+checked_on: '2026-10-13'
+status: verified
+distinct_from:
+- tobiya-de-la-corona

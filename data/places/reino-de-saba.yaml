@@ -42,6 +42,8 @@ sources:
 - 1-reyes-10
 - isaias-60
 - jeremias-6
+- 2-cronicas-9
+- ezequiel-27
 links:
 - title: 'Perspicacia: «Seba»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Seba/
@@ -53,5 +55,5 @@ history:
 - date: '2026-09-30'
   change: Se añade la visita de su reina a Salomón, que Perspicacia «Seba», núm. 6, pone en este reino del suroeste de Arabia.
   source: 1-reyes-10
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified

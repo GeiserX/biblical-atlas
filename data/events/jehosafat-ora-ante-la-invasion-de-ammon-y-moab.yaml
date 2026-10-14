@@ -1,0 +1,41 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jehosafat-ora-ante-la-invasion-de-ammon-y-moab
+title: Jehosafat ora en el templo ante la invasión de Ammón, Moab y Seír
+date:
+  from: -919
+  to: -916
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre c. 920 y c. 917 a.e.c. (tiempo narrativo: tras Ramot-Galaad y antes de la alianza con Ocozías de Israel)'
+narrative_order:
+  series: 2-cronicas
+  order: 20001
+places:
+- monte-moria
+- jerusalen
+- en-guedi
+people:
+- jehosafat
+type: speech
+roles:
+  jehosafat: spoke
+passages:
+- 2Cr 20:1-13
+summary: 'Le avisan de que Moab, Ammón y los de Seír acampan en En-Guedí. Jehosafat proclama un ayuno y, con Judá reunida
+  en la casa de Jehová, ora: no pueden contra esa multitud y miran a Dios.'
+reason: '2Cr 20 va tras la vuelta de Ramot-Galaad y antes de la alianza con Ocozías (20:35). Misma fecha que el viaje jehosafat-contra-ammon-y-moab:
+  entre muerte-de-acab y las-naves-de-jehosafat-se-destrozan-en-ezion-gueber (A6-A).'
+sources:
+- 2-cronicas-20
+- it-jehosafat
+- it-en-guedi
+- it-hazazon-tamar
+- tnm-a6-a
+links:
+- title: 2 Crónicas 20 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-Cr%C3%B3nicas/20/
+  type: bible
+checked_on: '2026-10-13'
+status: verified

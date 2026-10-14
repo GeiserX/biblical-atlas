@@ -1,0 +1,46 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: ezequiel-describe-a-jerusalen-como-una-esposa-infiel
+title: Ezequiel describe a Jerusalén como una esposa infiel
+date:
+  from: -611
+  to: -611
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 612 a.e.c.
+narrative_order:
+  series: ezequiel
+  order: 16001
+places:
+- caldea
+- jerusalen
+people:
+- ezequiel
+present: []
+passages:
+- Eze 16:1-63
+summary: Jerusalén, niña cananea abandonada al nacer, llega a ser esposa de Jehová, pero se entrega a ídolos y naciones. Sus
+  amantes la destruirán; pecó más que Samaria y Sodoma, y aun así recibirá un pacto permanente.
+reason: 'La adoración pura, cap. 15, párr. 11-15, lo lee como la historia de Judá. Fecha: La Atalaya de febrero de 2018 (capítulos
+  8 a 19, año sexto, 612). Caldea: «Toda Escritura», libro 26, párr. 15; el texto no dice dónde.'
+sources:
+- ezequiel-16
+- rr-pondre-fin-a-tu-prostitucion
+- w18-noe-daniel-job
+- si-ezequiel
+- w07-ezequiel-1
+- it-hititas
+- it-jerusalen
+- it-ezequiel-libro
+- it-madre
+- it-hermano-hermana
+- it-samaria
+- it-sodoma
+- it-filistea
+links:
+- title: Ezequiel 16 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/ezequiel/16/
+  type: bible
+checked_on: '2026-10-13'
+status: verified

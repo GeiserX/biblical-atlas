@@ -25,6 +25,7 @@ present:
 passages:
 - 2Re 19:8-13
 - Is 37:8-13
+- 2Cr 32:17
 summary: 'El rabsaqué encuentra a su rey atacando Libná, ya lejos de Lakís. Ante el aviso de que Tirhacá de Etiopía viene
   contra él, Senaquerib escribe a Ezequías: ningún dios libró a las naciones que Asiria arrasó.'
 reason: 'Estudio 3: la invasión es de 732 a.e.c. Perspicacia «Rabsaqué», párr. 3, y «Tirhaqá» cuentan la retirada de Lakís
@@ -37,9 +38,10 @@ sources:
 - it-senaquerib
 - isaias-37
 - it-libna
+- 2-cronicas-32
 links:
 - title: 2 Reyes 19 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-reyes/19/
   type: bible
-checked_on: '2026-09-30'
+checked_on: '2026-10-13'
 status: verified

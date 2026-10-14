@@ -1,0 +1,47 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: ezequiel-entona-una-endecha-por-el-faraon
+title: Ezequiel entona una endecha por el faraón de Egipto
+type: speech
+date:
+  from: -605
+  to: -605
+  precision: day
+  approx: false
+  type: derived
+  chronology: tnm
+  text: 1 de adar de 606 a.e.c.
+  detail:
+    month: adar
+    day: 1
+  note: 'Eze 32:1: año 12. Con el noveno en 609 («Toda Escritura», párr. 20) da 606; adar cae ya en 605. No casa con Eze 33:21, del año 12, en 607 según el párr. 24 (nota c: manuscritos con «año undécimo»).'
+places:
+- tel-abib
+- caldea
+- egipto
+people:
+- ezequiel
+present:
+- ezequiel
+roles:
+  ezequiel: spoke
+passages:
+- Eze 32:1-16
+summary: 'Pasada la caída de Jerusalén, Jehová manda a Ezequiel cantar una endecha por el faraón: Egipto caerá ante la espada
+  del rey de Babilonia y su tierra quedará desolada.'
+reason: 'Eze 32:1-16; «Toda Escritura», libro 26, párr. 23, nombra a Nabucodonosor. Sin narrative_order: llega después de
+  la noticia de la caída de Jerusalén, del mes décimo (párr. 24), contada en un capítulo posterior. Lugar deducido de Perspicacia
+  «Ezequiel».'
+sources:
+- ezequiel-32
+- si-ezequiel
+- w07-ezequiel-2
+- it-ezequiel
+links:
+- title: Ezequiel 32 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/ezequiel/32/
+  type: bible
+- title: 'Perspicacia: «Ezequiel»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ezequiel/
+  type: perspicacia
+checked_on: '2026-10-13'
+status: pending

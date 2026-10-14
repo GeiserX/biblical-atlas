@@ -13,6 +13,9 @@ distinct_from:
 - zicri-hijo-de-asaf
 - zicri-descendiente-de-eliezer
 - zicri-padre-de-eliezer
+- zicri-guerrero-efraimita
+- zicri-padre-de-amasiah
+- zicri-padre-de-elisafat
 summary: Benjamita, hijo o descendiente de Jeroham, cabeza de familia en Jerusalén.
 reason: Perspicacia «Zicrí», núm. 4; 1Cr 8:27, 28.
 sources:
@@ -41,5 +44,5 @@ relations:
   reason: '1Cr 8:28: los jefes de casas paternas de esta lista vivían en Jerusalén.'
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified

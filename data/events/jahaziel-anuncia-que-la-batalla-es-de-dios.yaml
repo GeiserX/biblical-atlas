@@ -1,0 +1,43 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jahaziel-anuncia-que-la-batalla-es-de-dios
+title: Jahaziel anuncia que la batalla es de Dios
+date:
+  from: -919
+  to: -916
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre c. 920 y c. 917 a.e.c. (tiempo narrativo: tras Ramot-Galaad y antes de la alianza con Ocozías de Israel)'
+narrative_order:
+  series: 2-cronicas
+  order: 20014
+  elapsed:
+    days: 0
+    reason: '2Cr 20:13, 14: habla ante la asamblea que acaba de oír la oración del rey.'
+places:
+- monte-moria
+- jerusalen
+people:
+- jahaziel-hijo-de-zacarias
+- jehosafat
+type: speech
+roles:
+  jahaziel-hijo-de-zacarias: spoke
+passages:
+- 2Cr 20:14-19
+summary: 'En la misma asamblea, el espíritu de Jehová viene sobre el levita Jahaziel: Judá no tendrá que pelear, y al día
+  siguiente hallará al enemigo subiendo por el paso de Ziz. Todos se postran, y los levitas alaban.'
+reason: '2Cr 20 va tras la vuelta de Ramot-Galaad y antes de la alianza con Ocozías (20:35). Misma fecha que el viaje jehosafat-contra-ammon-y-moab:
+  entre muerte-de-acab y las-naves-de-jehosafat-se-destrozan-en-ezion-gueber (A6-A).'
+sources:
+- 2-cronicas-20
+- it-jahaziel
+- it-jehosafat
+- tnm-a6-a
+links:
+- title: 2 Crónicas 20 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-Cr%C3%B3nicas/20/
+  type: bible
+checked_on: '2026-10-13'
+status: verified

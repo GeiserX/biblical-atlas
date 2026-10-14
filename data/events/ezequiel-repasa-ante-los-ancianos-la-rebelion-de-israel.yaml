@@ -1,0 +1,45 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: ezequiel-repasa-ante-los-ancianos-la-rebelion-de-israel
+title: Ezequiel repasa ante los ancianos la rebelión de Israel
+type: speech
+date:
+  from: -610
+  to: -610
+  precision: day
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 10 de ab del 611 a.e.c.
+  detail:
+    month: ab
+    day: 10
+narrative_order:
+  series: ezequiel
+  order: 20001
+places:
+- tel-abib
+- caldea
+people:
+- ezequiel
+present:
+- ezequiel
+roles:
+  ezequiel: spoke
+passages:
+- Eze 20:1-49
+summary: Unos ancianos de Israel acuden a Ezequiel para consultar a Jehová, que no les responde. El profeta les recuerda la
+  rebeldía de sus padres desde Egipto, anuncia juicio y regreso, y profetiza fuego contra el bosque del sur.
+reason: 'Eze 20:1 da el día 10 del quinto mes del año séptimo; «Toda Escritura», libro 26, párr. 19, y La Atalaya de 2007
+  lo ponen en 611. Sitio deducido: Perspicacia «Ezequiel» lo pone con los desterrados del Kebar.'
+sources:
+- ezequiel-20
+- si-ezequiel
+- w07-ezequiel-1
+- w88-jehova-desenvaina-la-espada
+- it-ezequiel
+links:
+- title: Ezequiel 20 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/ezequiel/20/
+  type: bible
+checked_on: '2026-10-13'
+status: verified

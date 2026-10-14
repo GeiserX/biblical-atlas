@@ -55,6 +55,8 @@ sources:
 - isaias-23
 - isaias-66
 - jeremias-10
+- 2-cronicas-9
+- ezequiel-27
 links:
 - title: 'Perspicacia: «Tarsis»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Tarsis/
@@ -62,5 +64,5 @@ links:
 - title: Jonás 1 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jon%C3%A1s/1/
   type: bible
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified

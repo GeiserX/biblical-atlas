@@ -41,6 +41,12 @@ names:
 - name: Era de Ornán
   note: Así llama 1 Crónicas a la era de Arauna (1Cr 21:15-28; 22:1); Perspicacia «Ornán» dice que allí se levantó después
     el templo.
+- name: Jakín
+  note: Columna de cobre a la derecha, o al sur, ante el pórtico del templo de Salomón (1Re 7:21; 2Cr 3:17; Perspicacia «Jakín»,
+    núm. 3). El nombre pide que Jehová la afiance.
+- name: Boaz
+  note: Columna de cobre a la izquierda, o al norte, ante el pórtico del templo de Salomón (1Re 7:21; 2Cr 3:17; Perspicacia
+    «Boaz, II»). El nombre quizá quiera decir «con fuerza».
 type: mountain
 lat: 31.777778
 lon: 35.235556
@@ -108,6 +114,24 @@ sources:
 - 1-cronicas-21
 - it-ornan
 - 1-cronicas-22
+- 2-cronicas-3
+- it-jakin
+- it-boaz-ii
+- 2-cronicas-5
+- 2-cronicas-6
+- 2-cronicas-7
+- 2-cronicas-8
+- 2-cronicas-20
+- 2-cronicas-22
+- 2-cronicas-23
+- 2-cronicas-24
+- 2-cronicas-26
+- 2-cronicas-28
+- 2-cronicas-29
+- 2-cronicas-30
+- 2-cronicas-31
+- 2-cronicas-33
+- ezequiel-8
 links:
 - title: 'Perspicacia: «Moria»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Moria/
@@ -120,5 +144,5 @@ history:
 - date: '2026-09-29'
   change: Se añade el sacrificio de Isaac de Génesis 22, que Perspicacia «Abrahán» (párr. 17) y «Moria» ponen en este monte.
   source: genesis-22
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified

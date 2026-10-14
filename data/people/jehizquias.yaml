@@ -1,0 +1,50 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jehizquias
+name: Jehizquías
+names:
+- name: Jehizquías
+perspicacia: '1200002368'
+date:
+  from: -759
+  to: -759
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 760 a.e.c.
+summary: Uno de los jefes de Efraín que, tras oír al profeta Oded, no dejaron entrar en Samaria a los cautivos de Judá. Los
+  vistieron, les dieron de comer y los devolvieron.
+reason: Perspicacia «Jehizquías»; 2Cr 28:12-15. Fecha según Perspicacia «Jehohanán», núm. 4.
+sources:
+- it-jehizquias
+- 2-cronicas-28
+- it-jehohanan
+links:
+- title: 'Perspicacia: «Jehizquías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jehizqu%C3%ADas/
+  type: perspicacia
+- title: 2 Crónicas 28 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-Cr%C3%B3nicas/28/
+  type: bible
+relations:
+- type: kin
+  person: salum-padre-de-jehizquias
+  word: father
+  inferred: false
+  sources:
+  - 2-cronicas-28
+  - it-jehizquias
+  reason: '2Cr 28:12: Jehizquías hijo de Salum.'
+  checked_on: '2026-10-13'
+  status: verified
+- type: holds_office
+  office: leader
+  inferred: false
+  sources:
+  - 2-cronicas-28
+  - it-jehizquias
+  reason: 2Cr 28:12 lo cuenta entre los jefes de los efraimitas que se enfrentaron al ejército.
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified

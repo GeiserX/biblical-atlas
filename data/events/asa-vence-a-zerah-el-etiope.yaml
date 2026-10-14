@@ -1,0 +1,35 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: asa-vence-a-zerah-el-etiope
+title: Asá vence a Zérah el etíope en el valle de Zefata
+date:
+  from: -966
+  to: -966
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 967 a.e.c.
+narrative_order:
+  series: 2-cronicas
+  order: 14009
+places:
+- valle-de-zefata
+- maresa
+people:
+- asa
+- zerah-el-etiope
+present:
+- asa
+- zerah-el-etiope
+passages:
+- 2Cr 14:9-12
+summary: Zérah llega a Maresá con 300 carros y un millón de soldados. Asá forma en el valle de Zefata, pide a Jehová ayuda
+  contra esa multitud y Jehová pone en fuga a los etíopes.
+reason: 2Cr 14:9-12; Perspicacia «Zérah», núm. 6, y «Zefata» fechan la victoria en 967 a.e.c.
+sources:
+- 2-cronicas-14
+- it-zerah
+- it-zefata
+- it-maresa
+checked_on: '2026-10-13'
+status: verified

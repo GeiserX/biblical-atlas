@@ -28,6 +28,8 @@ sources:
 - it-hiram
 - 1-reyes-7
 - si-3
+- 2-cronicas-2
+- 2-cronicas-4
 links:
 - title: 'Perspicacia: «Hiram»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hiram/
@@ -43,9 +45,10 @@ relations:
   sources:
   - 1-reyes-7
   - it-hiram
+  - 2-cronicas-2
   reason: '1Re 7:13, 14: Salomón lo hace traer desde Tiro, la ciudad de su padre.'
   inferred: false
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-13'
   status: verified
 - type: tie
   person: salomon
@@ -53,9 +56,11 @@ relations:
   sources:
   - 1-reyes-7
   - it-hiram
+  - 2-cronicas-2
+  - 2-cronicas-4
   reason: '1Re 7:13, 14, 40, 45: Salomón lo hace venir, y él acaba para el rey todos los trabajos de cobre de la casa de Jehová.'
   inferred: false
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-13'
   status: verified
-checked_on: '2026-09-30'
+checked_on: '2026-10-13'
 status: verified

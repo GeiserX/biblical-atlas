@@ -1,0 +1,46 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: selomit-hijo-de-rehoboam
+name: Selomit
+names:
+- name: Selomit
+perspicacia: 1200003994#4
+disambiguation: Selomit hijo de Rehoboam (2Cr 11:20); no la danita hija de Dibrí, la hija de Zorobabel, el hijo de Josifías
+  ni los levitas llamados también Selomot.
+distinct_from:
+- selomit-hija-de-dibri
+- selomit-descendiente-de-izhar
+- selomit-hija-de-zorobabel
+- selomot-descendiente-de-eliezer
+summary: Varón, hijo de Rehoboam y de Maacá y hermano del rey Abías; el último de los cuatro hijos de ella que nombra 2Cr
+  11:20.
+reason: Perspicacia «Selomit», núm. 4; 2Cr 11:20-23.
+sources:
+- it-selomit
+- 2-cronicas-11
+links:
+- title: 'Perspicacia: «Selomit»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Selomit/
+  type: perspicacia
+relations:
+- type: kin
+  person: rehoboam
+  word: father
+  inferred: false
+  sources:
+  - 2-cronicas-11
+  - it-selomit
+  reason: '2Cr 11:20: hijo de Rehoboam.'
+  checked_on: '2026-10-13'
+  status: verified
+- type: kin
+  person: maaca-hija-de-uriel
+  word: mother
+  inferred: false
+  sources:
+  - 2-cronicas-11
+  - it-selomit
+  reason: '2Cr 11:20: Maacá tuvo con Rehoboam a Abías, Atái, Zizá y Selomit.'
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified

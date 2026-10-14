@@ -26,12 +26,13 @@ relations:
     de Crónicas.
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified
 distinct_from:
 - jeroham-de-guedor
 - jeroham-hijo-de-elihu
 - jeroham-hijo-de-pasjur
 - jeroham-padre-de-azarel
+- jeroham-padre-de-azarias
 disambiguation: 'Jeroham núm. 6 de Perspicacia: benjamita, padre de Ibneyá. No el sacerdote padre de Adaya ni el abuelo de
   Samuel.'

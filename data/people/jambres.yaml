@@ -1,0 +1,51 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jambres
+name: Jambres
+names:
+- name: Jambres
+perspicacia: '1200002312'
+date:
+  from: -1513
+  to: -1512
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1514 y 1513 a.e.c. (tiempo narrativo: ante el faraón, antes de la Pascua)'
+summary: Opositor de Moisés nombrado con Janes. Probablemente era uno de los magos egipcios de la corte del faraón.
+reason: 2Ti 3:8 y su nota de estudio; Perspicacia «Jambres», que remite a «Janes». Fecha de los magos ante el faraón, antes
+  de la Pascua de 1513 a.e.c. (estudio 3).
+sources:
+- it-jambres
+- it-janes
+- 2-timoteo-3
+- si-3
+links:
+- title: 'Perspicacia: «Jambres»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jambres/
+  type: perspicacia
+- title: 2 Timoteo 3 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-timoteo/3/
+  type: bible
+relations:
+- type: tie
+  person: moises
+  word: enemy
+  inferred: false
+  sources:
+  - 2-timoteo-3
+  - it-jambres
+  reason: '2Ti 3:8: Jambres, con Janes, se opuso a Moisés.'
+  checked_on: '2026-10-13'
+  status: verified
+- type: lived_in
+  place: egipto
+  inferred: true
+  sources:
+  - it-jambres
+  - 2-timoteo-3
+  reason: 'Perspicacia «Jambres»: probablemente uno de los magos egipcios de la corte del faraón.'
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified

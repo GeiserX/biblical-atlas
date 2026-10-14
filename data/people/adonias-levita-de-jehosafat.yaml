@@ -1,0 +1,22 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: adonias-levita-de-jehosafat
+name: Adonías
+names:
+- name: Adonías
+perspicacia: 1200000110#2
+summary: Levita del grupo que Jehosafat mandó en su año tercero a recorrer las ciudades de Judá para instruir al pueblo con
+  el libro de la Ley.
+reason: Perspicacia «Adonías», núm. 2; 2Cr 17:7-9.
+sources:
+- it-adonias
+- 2-cronicas-17
+links:
+- title: 'Perspicacia: «Adonías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Adon%C3%ADas/
+  type: perspicacia
+disambiguation: Levita que Jehosafat mandó a instruir en la Ley (Perspicacia «Adonías», núm. 2); no el hijo de David que quiso
+  reinar.
+checked_on: '2026-10-13'
+status: verified
+distinct_from:
+- adonias-hijo-de-david

@@ -1,0 +1,37 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: ezequiel-profetiza-contra-las-montanas-de-israel
+title: Ezequiel profetiza contra las montañas de Israel
+date:
+  from: -612
+  to: -611
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 613 y 612 a.e.c. (tiempo narrativo: tras representar el asedio y antes de la visión del año sexto)'
+narrative_order:
+  series: ezequiel
+  order: 6001
+places:
+- israel
+people:
+- ezequiel
+present: []
+passages:
+- Eze 6:1-14
+summary: 'Jehová anuncia por Ezequiel la espada contra la tierra: caerán sus lugares altos, altares e ídolos, y los muertos
+  quedarán junto a ellos. Un resto escapará y, en el destierro, se avergonzará de su infidelidad.'
+reason: 'Sin fecha propia: entre el comienzo de Ezequiel en 613 (estudio 3) y la visión de 612, del sexto año. La Atalaya de 2007 aplica Eze 6:3 a Judá, que el texto no nombra. No dice dónde habló.'
+sources:
+- ezequiel-6
+- w07-ezequiel-1
+- si-3
+- si-ezequiel
+- it-ezequiel-libro
+- rr-te-ha-llegado-el-fin
+links:
+- title: Ezequiel 6 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/ezequiel/6/
+  type: bible
+checked_on: '2026-10-13'
+status: verified

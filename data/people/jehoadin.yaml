@@ -11,6 +11,7 @@ reason: Perspicacia «Jehoadín»; 2Re 14:1, 2.
 sources:
 - it-jehoadin
 - 2-reyes-14
+- 2-cronicas-25
 links:
 - title: 'Perspicacia: «Jehoadín»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jehoad%C3%ADn/
@@ -25,8 +26,9 @@ relations:
   sources:
   - 2-reyes-14
   - it-jehoadin
+  - 2-cronicas-25
   reason: 2Re 14:2 la llama Jehoadín de Jerusalén.
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-13'
   status: verified
-checked_on: '2026-09-30'
+checked_on: '2026-10-13'
 status: verified

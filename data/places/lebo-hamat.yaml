@@ -68,6 +68,8 @@ sources:
 - josue-13
 - 2-reyes-14
 - 1-cronicas-13
+- ezequiel-47
+- ezequiel-48
 links:
 - title: 'Perspicacia: «Hamat, hamateo»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hamat-hamateo/
@@ -81,5 +83,5 @@ links:
 - title: Números 34 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/N%C3%BAmeros/34/
   type: bible
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified

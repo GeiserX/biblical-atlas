@@ -1,0 +1,42 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: ezequiel-compara-jerusalen-con-una-vid-inutil
+title: Ezequiel compara a los de Jerusalén con la madera inútil de la vid
+date:
+  from: -611
+  to: -611
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 612 a.e.c.
+narrative_order:
+  series: ezequiel
+  order: 15001
+places:
+- caldea
+- jerusalen
+people:
+- ezequiel
+present: []
+passages:
+- Eze 15:1-8
+summary: La madera de la vid no vale para trabajar y, medio quemada, vale aún menos. Así entregará Jehová al fuego a los habitantes
+  de Jerusalén, y la tierra quedará desolada por su infidelidad.
+reason: La Atalaya de 2018 (febrero, nota del párr. 2) fecha los capítulos 8 a 19 en el sexto año del destierro, 612. «Toda
+  Escritura», libro 26, párr. 15, y La Atalaya de 2007 los sitúan en Caldea; el texto no.
+sources:
+- ezequiel-15
+- w18-noe-daniel-job
+- si-ezequiel
+- w07-ezequiel-1
+- it-vid
+- it-ezequiel-libro
+links:
+- title: Ezequiel 15 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/ezequiel/15/
+  type: bible
+- title: 'Perspicacia: «Vid»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Vid/
+  type: perspicacia
+checked_on: '2026-10-13'
+status: verified

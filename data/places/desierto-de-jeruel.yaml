@@ -1,0 +1,28 @@
+# biblical-atlas: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: desierto-de-jeruel
+name: Desierto de Jeruel
+names:
+- name: Desierto de Jeruel
+- name: Jeruel
+  note: Título del artículo de Perspicacia.
+type: desert
+lat: 31.579722
+lon: 35.309167
+precision: zone
+coord_source: openbible:a8ccbf2
+coord_url: https://www.openbible.info/geo/ancient/a8ccbf2/jeruel
+coord_note: Punto de OpenBible para la zona. Perspicacia solo dice que, al parecer, quedaba entre Tecoa y En-Guedí, sin extensión
+  ni sitio conocidos.
+summary: Desierto de Judá que parece haber estado entre Tecoa y En-Guedí. Jahaziel anunció que, frente a él, al final del
+  valle, Judá encontraría a los invasores de Ammón y Moab.
+reason: 'Perspicacia «Jeruel»; 2Cr 20:16. Coordenada de OpenBible: solo tomamos el punto.'
+sources:
+- it-jeruel
+- openbible-geo
+- 2-cronicas-20
+links:
+- title: 'Perspicacia: «Jeruel»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jeruel/
+  type: perspicacia
+checked_on: '2026-10-13'
+status: verified

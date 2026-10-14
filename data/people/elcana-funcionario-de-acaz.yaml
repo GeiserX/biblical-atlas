@@ -1,0 +1,63 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: elcana-funcionario-de-acaz
+name: Elcaná
+names:
+- name: Elcaná
+- name: Elqaná
+  note: Grafía del título de Perspicacia.
+perspicacia: 1200001326#8
+disambiguation: El segundo después del rey Acaz, al que mató Zicrí; no el hijo de Coré, ni el padre de Samuel, ni los demás
+  Elcaná levitas.
+distinct_from:
+- elcana-hijo-de-core
+- elcana-hijo-de-jeroham
+- elcana-descendiente-de-core
+- elcana-el-coreita
+- elcana-hijo-de-mahat
+- elcana-padre-de-amasai
+- elcana-padre-de-asa
+- elcana-portero
+date:
+  from: -759
+  to: -759
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 760 a.e.c.
+summary: Funcionario de Judá que era el segundo después del rey Acaz. Lo mató Zicrí, guerrero de Efraín, cuando Pécah invadió
+  Judá.
+reason: Perspicacia «Elqaná», núm. 8; 2Cr 28:6, 7. Fecha de la invasión según Perspicacia «Zicrí», núm. 10.
+sources:
+- it-elqana
+- 2-cronicas-28
+- it-zicri
+links:
+- title: 'Perspicacia: «Elqaná»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Elqan%C3%A1/
+  type: perspicacia
+- title: 2 Crónicas 28 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-Cr%C3%B3nicas/28/
+  type: bible
+relations:
+- type: tie
+  person: acaz
+  word: master
+  inferred: true
+  sources:
+  - 2-cronicas-28
+  - it-elqana
+  reason: 2Cr 28:7 lo llama el segundo después del rey; Perspicacia «Elqaná», núm. 8, lo hace funcionario cercano a Acaz.
+  checked_on: '2026-10-13'
+  status: verified
+- type: died_in
+  place: juda
+  inferred: true
+  sources:
+  - 2-cronicas-28
+  - it-elqana
+  reason: '2Cr 28:6, 7: lo mataron en la invasión de Judá; el texto no dice en qué sitio.'
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified

@@ -28,7 +28,7 @@ python3 scripts/videos/test_videos.py
 python3 scripts/bible_coverage.py
 ```
 
-Las pruebas del sitio (`tests/site/`) abren el sitio en un Chromium de verdad. En cada PR y en cada push a `main` las corre `sitio.yml` en los runners de GitHub, repartidas en seis trabajos; si una falla, sus trazas de Playwright quedan en el artefacto `trazas-<n>` del trabajo que falló (n, su número en la matriz), y se abren con `npx playwright-core show-trace <fichero>.zip`. Llevan capturas de pantalla, porque el mapa se pinta en un canvas que las instantáneas del DOM no guardan: las de `timeline-marks` pueden pasar de 1 GB. Para correrlas en local, tras `build.py`:
+Las pruebas del sitio (`tests/site/`) abren el sitio en un Chromium de verdad. En cada PR y en cada push a `main` las corre `sitio.yml` en los runners de GitHub, repartidas en siete trabajos; si una falla, sus trazas de Playwright quedan en el artefacto `trazas-<n>` del trabajo que falló (n, su número en la matriz), y se abren con `npx playwright-core show-trace <fichero>.zip`. Llevan capturas de pantalla, porque el mapa se pinta en un canvas que las instantáneas del DOM no guardan: las de `timeline-marks` pueden pasar de 1 GB. Para correrlas en local, tras `build.py`:
 
 ```bash
 npm install --prefix /tmp/pw playwright-core@1.63.0 @axe-core/playwright@4.13.0 axe-core@4.13.0
@@ -41,7 +41,7 @@ node --test --test-concurrency=1 tests/site/notes.test.mjs   # un fichero; tests
 
 [`tema-oscuro.test.mjs`](https://github.com/GeiserX/biblical-atlas/blob/main/tests/site/tema-oscuro.test.mjs) recorre en el modo reunión cada superficie del sitio, de la portada al aviso de versión nueva, a 1440 y a 430 de ancho. Lee cada elemento dos veces en la misma página, en oscuro y en claro, y falla si en oscuro queda claro un fondo que ya era claro en claro (el mismo valor o una variable cuyo valor oscuro sigue siendo claro), salvo un relleno claro con letra oscura a 4,5:1; si queda un borde o un halo con el valor claro; si un texto baja de 4,5:1 (3:1 el grande), también el de una píldora o una caja sobre el mapa; o si una forma se funde con el fondo. Bajo un filtro `brightness()` mide los colores tal como se pintan. Los colores que cambian con el tema son variables de `site/kit/tokens.css`, con su valor oscuro en el bloque `.be-reunion` del mismo fichero: un color nuevo va ahí, no en una regla suelta. `BE_TEMA_SHOTS=<carpeta>` guarda una captura de cada superficie en oscuro y en claro; `BE_TEMA_REPORT=<fichero>`, cada hallazgo.
 
-Un fichero detrás de otro: cada uno abre su navegador. Todas juntas tardan unos 50 minutos en una sola máquina. `BE_TIME_SCALE=<n>` multiplica los presupuestos de tiempo de `timeline-marks` en una máquina más lenta que un Mac mini.
+Un fichero detrás de otro: cada uno abre su navegador. Todas juntas tardan unos 50 minutos en una sola máquina. Los presupuestos de tiempo de `timeline-marks` se midieron en un Mac mini; en una máquina más lenta, `BE_TIME_SCALE_PINTADO=<n>` multiplica el de pintar los carriles y `BE_TIME_SCALE_ARRASTRE=<n>` el de un fotograma de arrastre. `BE_TIME_SCALE=<n>` es el valor de los dos cuando no se dan. El CI usa 3 para pintar y 4 para arrastrar.
 
 `build.py --out DIR` escribe en otra carpeta sin tocar `site/`, `dist/` ni `docs/`; `build.py --data DIR` y `validate.py --data DIR` leen otra copia de `data/`. El sitio carga esa copia con `index.html?datos=_local/<nombre>/data.json`. Cada script está explicado en [`scripts/README.md`](https://github.com/GeiserX/biblical-atlas/blob/main/scripts/README.md).
 

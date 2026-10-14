@@ -1,0 +1,80 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: campana-de-uzias-contra-los-filisteos
+name: Uzías contra los filisteos
+person: uzias
+reference: 2Cr 26:6-8
+date:
+  from: -828
+  to: -776
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 829 y 777 a.e.c. (tiempo narrativo: reinando Uzías, antes de que lo hiriera la lepra)'
+companions: []
+summary: Uzías sale contra los filisteos y rompe la muralla de Gat, la de Jabné y la de Asdod; luego levanta ciudades en el
+  territorio de Asdod.
+reason: 2Cr 26:6 nombra las tres ciudades en este orden; el texto no da la ruta. Fecha del suceso uzias-vence-a-los-filisteos-a-los-arabes-y-a-los-meunim.
+sources:
+- 2-cronicas-26
+- it-uzias
+- it-jabne
+- tnm-a6-a
+- tnm-a6-b
+checked_on: '2026-10-13'
+status: verified
+stops:
+- order: 1
+  place: gat
+  reference: 2Cr 26:6
+  date:
+    from: -828
+    to: -776
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 829 y 777 a.e.c. (tiempo narrativo: reinando Uzías, antes de que lo hiriera la lepra)'
+  note: null
+  reason: '2Cr 26:6: abre brecha en la muralla de Gat. Mismo suceso ancla.'
+  sources:
+  - 2-cronicas-26
+  - it-uzias
+  checked_on: '2026-10-13'
+  status: verified
+- order: 2
+  place: jabneel
+  reference: 2Cr 26:6
+  date:
+    from: -828
+    to: -776
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 829 y 777 a.e.c. (tiempo narrativo: reinando Uzías, antes de que lo hiriera la lepra)'
+  note: La Jabné del texto; Perspicacia la da por probablemente la misma.
+  reason: '2Cr 26:6: abre brecha en la muralla de Jabné; Perspicacia «Jabné». Mismo suceso ancla.'
+  sources:
+  - 2-cronicas-26
+  - it-jabne
+  checked_on: '2026-10-13'
+  status: verified
+- order: 3
+  place: asdod
+  reference: 2Cr 26:6
+  date:
+    from: -828
+    to: -776
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 829 y 777 a.e.c. (tiempo narrativo: reinando Uzías, antes de que lo hiriera la lepra)'
+  note: Construye ciudades en su territorio. Los árabes de Gurbaal y los meunim quedan sin parada.
+  reason: '2Cr 26:6: abre brecha en la muralla de Asdod y edifica ciudades en su territorio. Mismo suceso ancla.'
+  sources:
+  - 2-cronicas-26
+  - it-uzias
+  checked_on: '2026-10-13'
+  status: verified

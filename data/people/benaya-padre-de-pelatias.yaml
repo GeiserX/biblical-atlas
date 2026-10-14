@@ -1,0 +1,31 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: benaya-padre-de-pelatias
+name: Benaya
+names:
+- name: Benaya
+perspicacia: 1200000632#8
+disambiguation: Benaya padre de Pelatías, el príncipe de la visión de Eze 11 (núm. 8 de Perspicacia); no el hijo de Jehoiadá,
+  el piratonita, el músico, el trompetista ni el simeonita.
+distinct_from:
+- benaya-hijo-de-jehoiada
+- benaya-el-piratonita
+- benaya-musico
+- benaya-trompetista
+- benaya-simeonita
+- benaya-comisionado-de-ezequias
+- benaya-hijo-de-jeiel
+summary: Su hijo Pelatías, príncipe de Jerusalén, murió en la visión de Ezequiel tras el mensaje contra los malos consejeros.
+  La Biblia no dice nada más de él.
+reason: Perspicacia «Benaya», núm. 8; Eze 11:1, 13.
+sources:
+- it-benaya
+- ezequiel-11
+links:
+- title: 'Perspicacia: «Benaya»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Benaya/
+  type: perspicacia
+- title: Ezequiel 11 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/ezequiel/11/
+  type: bible
+checked_on: '2026-10-13'
+status: verified

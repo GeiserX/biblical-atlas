@@ -33,6 +33,7 @@ sources:
 - 1-reyes-10
 - it-salomon
 - it-casa-del-bosque-del-libano
+- 2-cronicas-1
 links:
 - title: 'Perspicacia: «Salomón»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Salom%C3%B3n/
@@ -40,5 +41,5 @@ links:
 - title: 1 Reyes 10 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/1-reyes/10/
   type: bible
-checked_on: '2026-09-30'
+checked_on: '2026-10-13'
 status: verified

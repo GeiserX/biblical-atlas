@@ -1,0 +1,32 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: ezequiel-ve-la-gloria-de-jehova-en-la-llanura
+title: Ezequiel ve la gloria de Jehová en la llanura
+date:
+  from: -612
+  to: -612
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 613 a.e.c.
+narrative_order:
+  series: ezequiel
+  order: 3022
+places:
+- tel-abib
+- caldea
+people:
+- ezequiel
+present: []
+passages:
+- Eze 3:22-27
+summary: Jehová lleva a Ezequiel a la llanura y le muestra su gloria, igual que junto al Kebar. Le manda encerrarse en casa
+  y le anuncia que quedará mudo, salvo cuando Él le abra la boca.
+reason: Eze 3:22-27. La adoración pura, cap. 6, párr. 1 y 3, lo pone tras la semana de aturdimiento, hacia 613. La llanura
+  no tiene nombre, así que no sitúa a nadie. La Atalaya de 2003 explica la mudez.
+sources:
+- ezequiel-3
+- rr-te-ha-llegado-el-fin
+- w03-ezequiel-mudo
+checked_on: '2026-10-13'
+status: verified

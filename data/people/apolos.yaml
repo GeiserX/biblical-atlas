@@ -5,15 +5,16 @@ names:
 - name: Apolos
 date:
   from: 52
-  to: 55
+  to: 64
   precision: range
   approx: true
   type: anchored
   chronology: tnm
-  text: c. 52-55 e.c.
-summary: Judío de Alejandría, elocuente y buen conocedor de las Escrituras. Áquila y Priscila le explicaron mejor
-  el camino de Dios en Éfeso hacia 52 y después ayudó en Corinto.
-reason: Perspicacia «Apolos» (párr. 1 y 2) y la nota de estudio de Hch 18:24; Hch 18:24-28; 1Co 3:6.
+  text: c. 52-64 e.c.
+summary: Judío de Alejandría, elocuente y buen conocedor de las Escrituras. Áquila y Priscila le explicaron mejor el camino
+  de Dios en Éfeso hacia 52; ayudó en Corinto y, hacia 61-64, Pablo pidió a Tito que lo proveyera para un viaje.
+reason: Perspicacia «Apolos» (párr. 1 y 2) y la nota de estudio de Hch 18:24; Hch 18:24-28; 1Co 3:6. Su última mención es
+  Tit 3:13, en la carta de c. 61-64.
 sources:
 - it-apolos
 - nota-hechos-18
@@ -22,6 +23,8 @@ sources:
 - 1-corintios-3
 - 1-corintios-4
 - 1-corintios-16
+- tito-3
+- tnm-tabla
 links:
 - title: 'Perspicacia: «Apolos»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Apolos/
@@ -30,7 +33,18 @@ links:
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/hechos/18/
   type: bible
 perspicacia: '1200000307'
-checked_on: '2026-09-29'
+history:
+- date: '2026-10-14'
+  change: La fecha acababa en 55, pero Tit 3:13, de la carta de c. 61-64, aún lo nombra de viaje (Perspicacia «Apolos», último
+    párrafo).
+  source: tito-3
+- date: '2026-10-14'
+  change: El resumen acababa en Corinto; añade su última mención, el viaje de Tit 3:13.
+  source: tito-3
+- date: '2026-10-14'
+  change: La razón cita Tit 3:13, que sostiene la nueva fecha y el resumen.
+  source: tito-3
+checked_on: '2026-10-14'
 status: verified
 relations:
 - type: lived_in

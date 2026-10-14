@@ -11,8 +11,8 @@ date:
   type: anchored
   chronology: tnm
   text: c. 65 e.c.
-summary: Cristiano de Éfeso que, cuando otros de Asia se apartaron de Pablo, lo buscó en Roma hasta encontrarlo
-  sin avergonzarse de sus cadenas.
+summary: Cristiano, casi con seguridad vecino de Éfeso, que, cuando otros de Asia se apartaron de Pablo, lo buscó en Roma
+  hasta encontrarlo sin avergonzarse de sus cadenas.
 reason: Perspicacia «Onesíforo» y «Asia» (último párrafo sobre 2 Timoteo); 2Ti 1:15-18; 4:19.
 sources:
 - it-onesiforo
@@ -25,19 +25,29 @@ links:
 - title: 2 Timoteo 1 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-timoteo/1/
   type: bible
-checked_on: '2026-09-28'
+perspicacia: '1200003329'
+history:
+- date: '2026-10-13'
+  change: 'onesiforo/lived_in/efeso pasa a inferred: true. 2Ti 1:18 solo habla de sus servicios en Éfeso; que viviera allí
+    lo deduce Perspicacia «Asia».'
+  source: it-asia
+- date: '2026-10-13'
+  change: Lo daba por cristiano de Éfeso como hecho. 2Ti 1:18 solo habla de sus servicios allí; la residencia la deduce Perspicacia
+    «Asia», como ya dice onesiforo/lived_in/efeso.
+  source: 2-timoteo-1
+checked_on: '2026-10-13'
 status: verified
 relations:
 - type: lived_in
   place: efeso
-  inferred: false
+  inferred: true
   sources:
   - it-asia
   - 2-timoteo-1
   - 2-timoteo-4
-  reason: Perspicacia «Asia» lo da por vecino de Éfeso, donde Pablo recuerda sus servicios (2Ti 1:16-18); 2Ti 4:19 saluda
-    a su casa.
-  checked_on: '2026-10-03'
+  reason: Perspicacia «Asia» lo da casi por seguro vecino de Éfeso, donde Pablo recuerda sus servicios (2Ti 1:16-18), y 2Ti
+    4:19 saluda a su casa. El texto no lo dice.
+  checked_on: '2026-10-13'
   status: verified
 - type: accompanies
   person: pablo

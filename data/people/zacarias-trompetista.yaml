@@ -20,6 +20,13 @@ distinct_from:
 - zacarias-descendiente-de-isias
 - zacarias-el-rubenita
 - zeker
+- zacarias-hijo-de-benaya
+- zacarias-consejero-de-uzias
+- zacarias-levita-de-ezequias
+- zacarias-levita-de-josias
+- zacarias-sacerdote-de-josias
+- zacarias-hijo-de-jehosafat
+- zacarias-principe-de-jehosafat
 summary: Sacerdote que tocó la trompeta delante del Arca en la procesión que la subió a Jerusalén.
 reason: Perspicacia «Zacarías», núm. 5; 1Cr 15:24.
 sources:
@@ -38,5 +45,5 @@ relations:
   reason: 1Cr 15:24 lo cuenta entre los sacerdotes que tocaban las trompetas delante del Arca.
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified

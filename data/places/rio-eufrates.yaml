@@ -35,6 +35,7 @@ sources:
 - jeremias-13
 - jeremias-46
 - jeremias-51
+- 2-cronicas-35
 links:
 - title: 'Perspicacia: «Éufrates»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/%C3%89ufrates/
@@ -56,5 +57,5 @@ history:
   change: 'Perspicacia «Éufrates» no pone a Jeremías al sur de Carquemis: solo mide hasta allí la distancia mínima y ve posible
     que escondiera el cinturón donde cruzaron los babilonios.'
   source: it-eufrates
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified

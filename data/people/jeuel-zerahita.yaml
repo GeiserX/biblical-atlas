@@ -33,5 +33,9 @@ relations:
   reason: '1Cr 9:3, 6: vivía en Jerusalén con 690 de sus hermanos.'
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+disambiguation: El cabeza zerahita de Judá que vivió en Jerusalén tras el destierro (Perspicacia «Jeuel», núm. 2); no el levita
+  de Elizafán de los días de Ezequías.
+checked_on: '2026-10-13'
 status: verified
+distinct_from:
+- jeuel-levita-de-ezequias

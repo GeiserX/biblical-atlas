@@ -11,6 +11,9 @@ distinct_from:
 - benaya-el-piratonita
 - benaya-musico
 - benaya-simeonita
+- benaya-hijo-de-jeiel
+- benaya-comisionado-de-ezequias
+- benaya-padre-de-pelatias
 summary: Sacerdote que tocó la trompeta delante del Arca cuando la subieron a Jerusalén y que, con Jahaziel, siguió tocándola
   de continuo delante de ella.
 reason: Perspicacia «Benaya», núm. 4; 1Cr 15:24; 16:6.
@@ -33,5 +36,5 @@ relations:
     los sacerdotes.
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified

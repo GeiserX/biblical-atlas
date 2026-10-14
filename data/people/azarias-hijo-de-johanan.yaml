@@ -19,12 +19,20 @@ distinct_from:
 - jaazanias-jefe-militar
 - ocozias-de-juda
 - uzias
-summary: Sacerdote hijo de Johanán, que ejerció en el templo que levantó Salomón en Jerusalén. Perspicacia lo llama sumo sacerdote
-  y ve posible que echara del templo al rey Uzías.
+- azarias-hijo-de-oded
+- azarias-padre-de-joel
+- azarias-hijo-de-jehalelel
+- azarias-hijo-de-jeroham
+- azarias-hijo-de-obed
+- azarias-quinto-hijo-de-jehosafat
+- azarias-segundo-hijo-de-jehosafat
+summary: Sacerdote hijo de Johanán, que ejerció en el templo de Salomón. Perspicacia lo llama sumo sacerdote, ve posible que
+  echara del templo a Uzías y le atribuye, con reservas, la respuesta a Ezequías sobre las contribuciones (2Cr 31:10).
 reason: Perspicacia «Azarías», núm. 14; 1Cr 6:9, 10.
 sources:
 - it-azarias
 - 1-cronicas-6
+- 2-cronicas-31
 links:
 - title: 'Perspicacia: «Azarías»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Azar%C3%ADas/
@@ -54,8 +62,35 @@ relations:
   sources:
   - 1-cronicas-6
   - it-azarias
+  - 2-cronicas-31
   reason: Perspicacia «Azarías», núm. 14, lo llama sumo sacerdote (1Cr 6:10).
-  checked_on: '2026-10-12'
+  checked_on: '2026-10-13'
   status: verified
-checked_on: '2026-10-12'
+- type: same_as
+  person: azarias-sacerdote-de-tiempos-de-uzias
+  certainty: possible
+  inferred: true
+  sources:
+  - it-azarias
+  - 2-cronicas-26
+  reason: 'Perspicacia «Azarías», núm. 14: quizás fue este quien mandó salir del templo al rey Uzías (2Cr 26:16-21).'
+  checked_on: '2026-10-13'
+  status: verified
+- inferred: false
+  type: kin
+  person: sadoc-hijo-de-ahitub
+  word: ancestor
+  sources:
+  - 2-cronicas-31
+  - it-sadoc
+  reason: '2Cr 31:10: era el principal de los sacerdotes de la casa de Sadoc. Perspicacia «Sadoc», núm. 1, cita este versículo
+    para la línea de sumos sacerdotes que salió de él.'
+  checked_on: '2026-10-13'
+  status: verified
+history:
+- date: '2026-10-13'
+  change: El resumen añade lo que Perspicacia «Azarías», núm. 14, le atribuye en el primer año de Ezequías, aunque admite
+    que fuera otro con el mismo nombre.
+  source: 2-cronicas-31
+checked_on: '2026-10-13'
 status: verified

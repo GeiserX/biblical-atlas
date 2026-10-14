@@ -1,0 +1,33 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jesua-ayudante-de-core
+name: Jesúa
+names:
+- name: Jesúa
+perspicacia: 1200002446#2
+disambiguation: Ayudante de Coré en tiempos de Ezequías (2Cr 31:15). Perspicacia «Jesúa», núm. 2; no es el sacerdote de David
+  ni el sumo sacerdote que volvió con Zorobabel.
+distinct_from:
+- jesua-de-tiempos-de-david
+- josue-sumo-sacerdote
+summary: Levita que, en el reinado de Ezequías, repartía con fidelidad las porciones de sus hermanos en las ciudades de los
+  sacerdotes, bajo la dirección del portero Coré.
+reason: Perspicacia «Jesúa», núm. 2; 2Cr 31:14, 15.
+sources:
+- it-jesua
+- 2-cronicas-31
+links:
+- title: 'Perspicacia: «Jesúa»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jes%C3%BAa/
+  type: perspicacia
+relations:
+- inferred: false
+  type: accompanies
+  person: core-hijo-de-imna
+  word: fellow_worker
+  sources:
+  - 2-cronicas-31
+  reason: '2Cr 31:15: repartía las porciones en las ciudades de los sacerdotes bajo la dirección de Coré.'
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified

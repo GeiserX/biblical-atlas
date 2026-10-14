@@ -1,0 +1,29 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: simrit
+name: Simrit
+names:
+- name: Simrit
+perspicacia: '1200004053'
+summary: Moabita, madre de Jehozabad, uno de los dos siervos que mataron al rey Jehoás de Judá. Perspicacia recoge que Somer,
+  el nombre que da 2 Reyes, quizá fuera su padre.
+reason: Perspicacia «Simrit» y «Somer», núm. 2; 2Cr 24:26.
+sources:
+- it-simrit
+- it-somer
+- 2-cronicas-24
+links:
+- title: 'Perspicacia: «Simrit»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Simrit/
+  type: perspicacia
+relations:
+- type: born_in
+  place: moab
+  inferred: true
+  sources:
+  - 2-cronicas-24
+  - it-simrit
+  reason: 2Cr 24:26 la llama Simrit la moabita; el gentilicio de un pueblo extranjero da su origen.
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified

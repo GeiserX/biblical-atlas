@@ -1,0 +1,57 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jehohanan-general-de-jehosafat
+name: Jehohanán
+names:
+- name: Jehohanán
+perspicacia: 1200002374#2
+summary: Jefe del ejército de Jehosafat; bajo las órdenes de Adná, mandaba a 280.000 hombres de Judá.
+reason: Perspicacia «Jehohanán», núm. 2; 2Cr 17:15, 19.
+sources:
+- it-jehohanan
+- 2-cronicas-17
+- it-adnah
+links:
+- title: 'Perspicacia: «Jehohanán»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jehohan%C3%A1n/
+  type: perspicacia
+- title: 'Perspicacia: «Adnah»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Adnah/
+  type: perspicacia
+relations:
+- type: tie
+  person: adna-general-de-jehosafat
+  word: master
+  sources:
+  - 2-cronicas-17
+  - it-adnah
+  reason: '2Cr 17:15: Adná lo tenía bajo su mando; Perspicacia «Adnah», núm. 2, pone sus tropas bajo Adná.'
+  inferred: false
+  checked_on: '2026-10-13'
+  status: verified
+- type: tie
+  person: jehosafat
+  word: master
+  sources:
+  - 2-cronicas-17
+  reason: '2Cr 17:15, 19: era uno de los jefes que servían al rey.'
+  inferred: false
+  checked_on: '2026-10-13'
+  status: verified
+- type: same_as
+  person: jehohanan-padre-de-ismael
+  certainty: possible
+  inferred: true
+  sources:
+  - it-jehohanan
+  - 2-cronicas-17
+  - 2-cronicas-23
+  reason: Perspicacia «Jehohanán», núm. 2 y 3, ve posible que el jefe de 2Cr 17:15 sea el padre de Ismael de 2Cr 23:1.
+  checked_on: '2026-10-13'
+  status: verified
+disambiguation: Jefe del ejército de Jehosafat (Perspicacia «Jehohanán», núm. 2); no el portero hijo de Meselemías. Perspicacia
+  ve posible que sea el padre de Ismael.
+checked_on: '2026-10-13'
+status: verified
+distinct_from:
+- jehohanan-padre-de-azarias
+- jehohanan-hijo-de-meselemias

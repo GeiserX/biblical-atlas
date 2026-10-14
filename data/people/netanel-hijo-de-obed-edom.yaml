@@ -25,10 +25,12 @@ relations:
   reason: '1Cr 26:4: el quinto de los hijos de Obed-Edom.'
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified
 distinct_from:
 - netanel-hijo-de-zuar
 - netanel-padre-de-semaya
 - netanel-trompetista
 - netanel-hijo-de-jese
+- netanel-levita-de-josias
+- netanel-principe-de-jehosafat
