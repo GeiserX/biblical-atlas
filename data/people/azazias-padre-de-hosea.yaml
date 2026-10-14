@@ -7,6 +7,7 @@ perspicacia: 1200000489#2
 disambiguation: Azazías el efraimita, padre de Hosea; no el arpista levita de David ni el levita de los días de Ezequías.
 distinct_from:
 - azazias-musico
+- azazias-comisionado-de-ezequias
 summary: Efraimita, padre de Hosea, que en días de David era el príncipe de Efraín.
 reason: Perspicacia «Azazías», núm. 2; 1Cr 27:20.
 sources:
@@ -17,5 +18,5 @@ links:
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Azaz%C3%ADas/
   type: perspicacia
 relations: []
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified

@@ -26,6 +26,13 @@ distinct_from:
 - zacarias-descendiente-de-isias
 - zacarias-hijo-de-hosa
 - zacarias-padre-de-ido
+- zacarias-principe-de-jehosafat
+- zacarias-hijo-de-benaya
+- zacarias-hijo-de-jehosafat
+- zacarias-consejero-de-uzias
+- zacarias-levita-de-ezequias
+- zacarias-levita-de-josias
+- zacarias-sacerdote-de-josias
 summary: Hijo de Jeroboán II y último rey de la dinastía de Jehú. Su reinado solo se confirmó hacia 792; seis meses después
   lo mató Salum.
 reason: Perspicacia «Zacarías», núm. 14; 2Re 15:8-12.
@@ -80,5 +87,5 @@ relations:
   checked_on: '2026-09-30'
   status: verified
 perspicacia: 1200004681#14
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified

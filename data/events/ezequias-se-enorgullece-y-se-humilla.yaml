@@ -1,0 +1,32 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: ezequias-se-enorgullece-y-se-humilla
+title: Ezequías se vuelve orgulloso y después se humilla
+date:
+  from: -731
+  to: -715
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 732 y 716 a.e.c. (tiempo narrativo: después de su curación y antes de su muerte)'
+narrative_order:
+  series: 2-cronicas
+  order: 32025
+places:
+- jerusalen
+- juda
+people:
+- ezequias
+present: []
+passages:
+- 2Cr 32:25, 26
+summary: 'Ezequías no corresponde al bien que recibió: se llena de orgullo, y Dios se indigna con él, con Judá y con Jerusalén.
+  Luego se humilla, junto con los de Jerusalén, y la ira de Jehová no llega mientras él vive.'
+reason: '2Cr 32:24-26: tras curarse, hacia 732 a.e.c. (Perspicacia «Ezequías»), y antes de su muerte en 716 (A6-B). Perspicacia
+  no sabe si el orgullo tuvo que ver con los enviados de Babilonia. No es una escena: no sitúa a nadie.'
+sources:
+- 2-cronicas-32
+- it-ezequias
+- tnm-a6-b
+checked_on: '2026-10-13'
+status: verified

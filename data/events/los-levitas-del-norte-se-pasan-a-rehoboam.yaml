@@ -1,0 +1,34 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: los-levitas-del-norte-se-pasan-a-rehoboam
+title: Los sacerdotes y los levitas de Israel se pasan a Rehoboam
+date:
+  from: -996
+  to: -994
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 997 y 995 a.e.c. (tiempo narrativo: al comienzo del reinado de Rehoboam)'
+narrative_order:
+  series: 2-cronicas
+  order: 11013
+places:
+- jerusalen
+- juda
+people:
+- rehoboam
+- jeroboan-i
+present:
+- rehoboam
+passages:
+- 2Cr 11:13-17
+summary: Jeroboán aparta a los levitas y nombra sacerdotes suyos. Ellos dejan sus pastos y bienes y se van a Judá y Jerusalén;
+  los fieles de las demás tribus los siguen y apoyan a Rehoboam tres años.
+reason: 'Perspicacia «Rehoboam», párr. 3 y 6: el apoyo de sacerdotes y levitas, al comienzo del reinado (997, tabla A6-A),
+  en los tres años de 2Cr 11:17. Rehoboam vivía en Jerusalén (11:5).'
+sources:
+- 2-cronicas-11
+- it-rehoboam
+- tnm-a6-a
+checked_on: '2026-10-13'
+status: verified

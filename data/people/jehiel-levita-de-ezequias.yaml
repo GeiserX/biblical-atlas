@@ -1,0 +1,37 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jehiel-levita-de-ezequias
+name: Jehiel
+names:
+- name: Jehiel
+perspicacia: 1200002366#5
+summary: Levita descendiente de Hemán que ayudó a sacar lo impuro del templo en tiempos de Ezequías. Perspicacia lo da probablemente
+  por el comisionado de las contribuciones de 2Cr 31:13.
+reason: Perspicacia «Jehiel», núm. 5; 2Cr 29:14-19.
+sources:
+- it-jehiel
+- 2-cronicas-29
+links:
+- title: 'Perspicacia: «Jehiel»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jehiel/
+  type: perspicacia
+disambiguation: El descendiente de Hemán de los días de Ezequías (Perspicacia «Jehiel», núm. 5); no el músico de David ni
+  los demás Jehiel.
+distinct_from:
+- jehiel-descendiente-de-ladan
+- jehiel-hijo-de-hacmoni
+- jehiel-hijo-de-jehosafat
+- jehiel-musico
+- jehiel-sacerdote-de-josias
+relations:
+- type: kin
+  person: heman-hijo-de-joel
+  word: ancestor
+  inferred: false
+  sources:
+  - 2-cronicas-29
+  - it-jehiel
+  reason: 2Cr 29:14 lo cuenta entre los hijos de Hemán; Perspicacia «Jehiel», núm. 5, lo llama su descendiente.
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified

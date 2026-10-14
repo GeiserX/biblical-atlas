@@ -9,6 +9,7 @@ reason: Perspicacia «Simeat»; 2Re 12:21 y 2Cr 24:26, que la llama la ammonita.
 sources:
 - it-simeat
 - 2-reyes-12
+- 2-cronicas-24
 links:
 - title: 'Perspicacia: «Simeat»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Simeat/
@@ -16,5 +17,15 @@ links:
 - title: 2 Reyes 12 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-reyes/12/
   type: bible
-checked_on: '2026-09-30'
+checked_on: '2026-10-13'
 status: verified
+relations:
+- type: born_in
+  place: ammon
+  inferred: true
+  sources:
+  - 2-cronicas-24
+  - it-simeat
+  reason: 2Cr 24:26 la llama Simeat la ammonita; el gentilicio de un pueblo extranjero da su origen.
+  checked_on: '2026-10-13'
+  status: verified

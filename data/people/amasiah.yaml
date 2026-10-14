@@ -1,0 +1,52 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: amasiah
+name: Amasíah
+names:
+- name: Amasíah
+perspicacia: '1200000223'
+summary: Hijo de Zicrí, de Judá. Se ofreció de buena gana a servir a Jehová y mandaba 200.000 guerreros del ejército de Jehosafat,
+  bajo las órdenes de Adná.
+reason: Perspicacia «Amasíah»; 2Cr 17:16, 19.
+sources:
+- it-amasiah
+- 2-cronicas-17
+- it-adnah
+links:
+- title: 'Perspicacia: «Amasíah»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Amas%C3%ADah/
+  type: perspicacia
+- title: 'Perspicacia: «Adnah»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Adnah/
+  type: perspicacia
+relations:
+- type: kin
+  person: zicri-padre-de-amasiah
+  word: father
+  sources:
+  - 2-cronicas-17
+  - it-amasiah
+  reason: '2Cr 17:16: Amasíah hijo de Zicrí.'
+  inferred: false
+  checked_on: '2026-10-13'
+  status: verified
+- type: tie
+  person: adna-general-de-jehosafat
+  word: master
+  sources:
+  - 2-cronicas-17
+  - it-adnah
+  reason: '2Cr 17:14, 16: estaba bajo el mando de Adná, como dice también Perspicacia «Adnah», núm. 2.'
+  inferred: false
+  checked_on: '2026-10-13'
+  status: verified
+- type: tie
+  person: jehosafat
+  word: master
+  sources:
+  - 2-cronicas-17
+  reason: '2Cr 17:16, 19: era uno de los jefes que servían al rey.'
+  inferred: false
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified

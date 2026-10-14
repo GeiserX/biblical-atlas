@@ -10,6 +10,8 @@ distinct_from:
 - zebadias-hijo-de-meselemias
 - zebadias-hijo-de-asahel
 - zebadias-hijo-de-jeroham
+- zebadias-hijo-de-ismael
+- zebadias-levita-de-jehosafat
 summary: Benjamita, hijo o descendiente de Berías, jefe de familia en Jerusalén.
 reason: Perspicacia «Zebadías», núm. 1; 1Cr 8:15, 16, 28.
 sources:
@@ -38,5 +40,5 @@ relations:
   reason: '1Cr 8:28: los jefes de casas paternas de esta lista vivían en Jerusalén.'
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified

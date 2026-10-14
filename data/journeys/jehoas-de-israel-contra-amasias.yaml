@@ -11,7 +11,10 @@ date:
   type: narrative
   chronology: tnm
   text: 'entre 858 y c. 844 a.e.c. (tiempo narrativo: tras la victoria sobre Edom y antes de la muerte de Jehoás)'
-companions: []
+companions:
+- person: amasias
+  from: 1
+  to: 2
 summary: Retado por Amasías, Jehoás de Israel sube y lo vence en Bet-Semes. Lo lleva preso a Jerusalén, derriba 400 codos
   de muralla y vuelve a Samaria con rehenes y con los tesoros del templo y del palacio.
 reason: 2Re 14:8-14 y 2Cr 25:17-24 dan las tres paradas en orden. Fechas de los sucesos jehoas-vence-a-amasias-en-bet-semes
@@ -23,7 +26,7 @@ sources:
 - it-bet-semes
 - it-amasias
 - tnm-a6-a
-checked_on: '2026-09-30'
+checked_on: '2026-10-13'
 status: verified
 stops:
 - order: 1

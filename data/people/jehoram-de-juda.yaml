@@ -10,6 +10,7 @@ distinct_from:
 - jehoram-de-israel
 - joram-hijo-de-toi
 - joram-descendiente-de-eliezer
+- jehoram-sacerdote-de-jehosafat
 date:
   from: -912
   to: -905
@@ -61,8 +62,9 @@ relations:
   sources:
   - it-jehoram
   - 2-reyes-8
+  - 2-cronicas-21
   reason: Estaba casado con Atalía, hija de Acab (2Re 8:18).
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-13'
   status: verified
 - type: succeeds
   person: jehosafat
@@ -71,8 +73,9 @@ relations:
   - it-jehoram
   - 2-reyes-8
   - 1-reyes-22
+  - 2-cronicas-21
   reason: Llegó a ser rey aún en vida de Jehosafat (2Re 8:16).
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-13'
   office: king
   status: verified
 - type: lived_in
@@ -80,17 +83,19 @@ relations:
   inferred: false
   sources:
   - 2-reyes-8
+  - 2-cronicas-21
   reason: '2Re 8:17: reinó ocho años en Jerusalén.'
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-13'
   status: verified
 - type: died_in
   place: jerusalen
   inferred: true
   sources:
   - 2-reyes-8
+  - 2-cronicas-21
   reason: 2Re 8:24 da su entierro en la Ciudad de David, junto a sus antepasados, sin decir dónde murió; tomamos ese sitio,
     la ciudad donde reinaba.
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-13'
   status: verified
 - type: kin
   person: jehoram-de-israel
@@ -103,11 +108,74 @@ relations:
     26).'
   checked_on: '2026-09-30'
   status: verified
+- type: kin
+  person: azarias-segundo-hijo-de-jehosafat
+  word: brother
+  inferred: false
+  sources:
+  - 2-cronicas-21
+  reason: '2Cr 21:2-4: hijo de Jehosafat y hermano de Jehoram, que lo mató al hacerse con el reino.'
+  checked_on: '2026-10-13'
+  status: verified
+- type: kin
+  person: jehiel-hijo-de-jehosafat
+  word: brother
+  inferred: false
+  sources:
+  - 2-cronicas-21
+  reason: '2Cr 21:2-4: hijo de Jehosafat y hermano de Jehoram, que lo mató al hacerse con el reino.'
+  checked_on: '2026-10-13'
+  status: verified
+- type: kin
+  person: zacarias-hijo-de-jehosafat
+  word: brother
+  inferred: false
+  sources:
+  - 2-cronicas-21
+  reason: '2Cr 21:2-4: hijo de Jehosafat y hermano de Jehoram, que lo mató al hacerse con el reino.'
+  checked_on: '2026-10-13'
+  status: verified
+- type: kin
+  person: azarias-quinto-hijo-de-jehosafat
+  word: brother
+  inferred: false
+  sources:
+  - 2-cronicas-21
+  reason: '2Cr 21:2-4: hijo de Jehosafat y hermano de Jehoram, que lo mató al hacerse con el reino.'
+  checked_on: '2026-10-13'
+  status: verified
+- type: kin
+  person: miguel-hijo-de-jehosafat
+  word: brother
+  inferred: false
+  sources:
+  - 2-cronicas-21
+  reason: '2Cr 21:2-4: hijo de Jehosafat y hermano de Jehoram, que lo mató al hacerse con el reino.'
+  checked_on: '2026-10-13'
+  status: verified
+- type: kin
+  person: sefatias-hijo-de-jehosafat
+  word: brother
+  inferred: false
+  sources:
+  - 2-cronicas-21
+  reason: '2Cr 21:2-4: hijo de Jehosafat y hermano de Jehoram, que lo mató al hacerse con el reino.'
+  checked_on: '2026-10-13'
+  status: verified
+- type: kin
+  person: david
+  word: ancestor
+  inferred: false
+  sources:
+  - 2-cronicas-21
+  reason: '2Cr 21:12: la carta de Elías habla del Dios de David, su antepasado.'
+  checked_on: '2026-10-13'
+  status: verified
 perspicacia: 1200002381#3
 history:
 - date: '2026-09-30'
   change: 'La razón recoge el reinado compartido con Jehosafat que dejan ver 2Re 1:17 y 8:16: en el segundo año de Jehoram
     de Judá, c. 917, empieza Jehoram de Israel.'
   source: 2-reyes-1
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified

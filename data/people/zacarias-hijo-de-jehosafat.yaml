@@ -1,0 +1,79 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: zacarias-hijo-de-jehosafat
+name: Zacarías
+names:
+- name: Zacarías
+perspicacia: 1200004681#11
+disambiguation: Hijo del rey Jehosafat, muerto a manos de su hermano Jehoram (2Cr 21:2-4); no es el hijo de Jehoiadá, ni el
+  profeta, ni el rey de Israel, ni los demás Zacarías.
+distinct_from:
+- zacarias-abuelo-de-ezequias
+- zacarias-de-israel
+- zacarias-hijo-de-jeberekias
+- zacarias-hijo-de-jehoiada
+- zacarias-padre-de-juan
+- zacarias-profeta
+- zacarias-consejero-de-uzias
+- zacarias-levita-de-ezequias
+- zacarias-levita-de-josias
+- zacarias-descendiente-de-isias
+- zacarias-el-rubenita
+- zacarias-hijo-de-benaya
+- zacarias-hijo-de-hosa
+- zacarias-hijo-de-meselemias
+- zacarias-musico
+- zacarias-padre-de-ido
+- zacarias-principe-de-jehosafat
+- zacarias-sacerdote-de-josias
+- zacarias-trompetista
+- zeker
+summary: Hijo del rey Jehosafat de Judá. Su padre lo colmó de plata, oro y plazas fuertes; al subir al trono, su hermano Jehoram
+  lo mató con los demás hermanos.
+reason: Perspicacia «Zacarías», núm. 11; 2Cr 21:1-4.
+sources:
+- it-zacarias
+- 2-cronicas-21
+links:
+- title: 'Perspicacia: «Zacarías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zacar%C3%ADas/
+  type: perspicacia
+relations:
+- type: kin
+  person: jehosafat
+  word: father
+  inferred: false
+  sources:
+  - 2-cronicas-21
+  - it-zacarias
+  reason: '2Cr 21:2: uno de los hijos del rey Jehosafat.'
+  checked_on: '2026-10-13'
+  status: verified
+- type: kin
+  person: azarias-quinto-hijo-de-jehosafat
+  word: brother
+  inferred: false
+  sources:
+  - 2-cronicas-21
+  reason: '2Cr 21:2: los dos están entre los hijos de Jehosafat, hermanos de Jehoram.'
+  checked_on: '2026-10-13'
+  status: verified
+- type: kin
+  person: miguel-hijo-de-jehosafat
+  word: brother
+  inferred: false
+  sources:
+  - 2-cronicas-21
+  reason: '2Cr 21:2: los dos están entre los hijos de Jehosafat, hermanos de Jehoram.'
+  checked_on: '2026-10-13'
+  status: verified
+- type: kin
+  person: sefatias-hijo-de-jehosafat
+  word: brother
+  inferred: false
+  sources:
+  - 2-cronicas-21
+  reason: '2Cr 21:2: los dos están entre los hijos de Jehosafat, hermanos de Jehoram.'
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified

@@ -1,0 +1,24 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: imna-padre-de-core
+name: Imná
+names:
+- name: Imná
+- name: Imnah
+  note: Otra grafía que da la nota de 2Cr 31:14; es la de Perspicacia.
+perspicacia: 1200002157#2
+disambiguation: El padre del portero Coré (2Cr 31:14), Perspicacia «Imnah», núm. 2. No es el primer hijo de Aser ni el aserita
+  hijo de Hélem.
+distinct_from:
+- imna-hijo-de-aser
+- imna-hijo-de-helem
+summary: Levita, padre de Coré, el portero del lado este que en tiempos de Ezequías se ocupaba de las ofrendas voluntarias.
+reason: Perspicacia «Imnah», núm. 2; 2Cr 31:14.
+sources:
+- it-imnah
+- 2-cronicas-31
+links:
+- title: 'Perspicacia: «Imnah»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Imnah/
+  type: perspicacia
+checked_on: '2026-10-13'
+status: verified

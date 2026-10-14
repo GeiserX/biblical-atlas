@@ -4,8 +4,10 @@ name: Asia
 names:
 - name: Asia
   note: La provincia romana, no el continente.
+- name: provincia de Asia
+  note: Forma de la Biblia de estudio de la Traducción del Nuevo Mundo (Hch 16:6; 19:10; 2Ti 1:15).
 - name: distrito de Asia
-  note: Forma que usa la Traducción del Nuevo Mundo (Hch 16:6; 19:10).
+  note: Forma que usa Perspicacia «Asia» (Hch 16:6; 19:10; 2Ti 1:15).
 type: province
 lat: 38.4
 lon: 28.3
@@ -23,6 +25,7 @@ sources:
 - openbible-geo
 - hch-20
 - 2-corintios-1
+- 2-timoteo-1
 links:
 - title: 'Perspicacia: «Asia»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Asia/
@@ -30,5 +33,10 @@ links:
 - title: Hechos 19 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/hechos/19/
   type: bible
-checked_on: '2026-09-29'
+history:
+- date: '2026-10-13'
+  change: Se añade «provincia de Asia», la forma de la Biblia de estudio en Hch 16:6, 19:10 y 2Ti 1:15. «Distrito de Asia»
+    no es la de esa edición, sino la de Perspicacia.
+  source: 2-timoteo-1
+checked_on: '2026-10-13'
 status: verified

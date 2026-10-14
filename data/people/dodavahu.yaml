@@ -1,0 +1,27 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: dodavahu
+name: Dodavahu
+names:
+- name: Dodavahu
+perspicacia: '1200001206'
+summary: Hombre de Maresá, padre del profeta Eliezer, el que anunció que los barcos de Jehosafat y Ocozías se destrozarían.
+reason: Perspicacia «Dodavahu»; 2Cr 20:37.
+sources:
+- it-dodavahu
+- 2-cronicas-20
+links:
+- title: 'Perspicacia: «Dodavahu»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Dodavahu/
+  type: perspicacia
+relations:
+- type: lived_in
+  place: maresa
+  sources:
+  - 2-cronicas-20
+  - it-dodavahu
+  reason: '2Cr 20:37: Dodavahu de Maresá; Perspicacia «Dodavahu» lo presenta como vecino de esa ciudad.'
+  inferred: false
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified

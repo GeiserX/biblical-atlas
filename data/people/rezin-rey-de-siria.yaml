@@ -24,6 +24,7 @@ sources:
 - tnm-a6-b
 - isaias-7
 - isaias-9
+- 2-cronicas-28
 links:
 - title: 'Perspicacia: «Rezín»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Rez%C3%ADn/
@@ -87,5 +88,5 @@ relations:
   reason: '2Re 16:9: el rey de Asiria tomó Damasco y dio muerte a Rezín. Perspicacia «Rezín» lo cuenta igual.'
   checked_on: '2026-09-30'
   status: verified
-checked_on: '2026-09-30'
+checked_on: '2026-10-13'
 status: verified

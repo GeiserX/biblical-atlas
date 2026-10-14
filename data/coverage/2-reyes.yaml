@@ -234,7 +234,7 @@ chapters:
     status: complete
     reviewed_on: 2026-09-30
     spans:
-    - {v: "1", type: narration, entities: [event:jehoiaquim-vasallo-de-babilonia, person:jehoiaquim, person:nabucodonosor-ii, relation:jehoiaquim/tie/nabucodonosor-ii], mentions: [place:babilonia, period:nabucodonosor-ii]}
+    - {v: "1", type: narration, entities: [event:jehoiaquim-vasallo-de-babilonia, person:jehoiaquim, person:nabucodonosor-ii, relation:jehoiaquim/tie/nabucodonosor-ii@-619], mentions: [place:babilonia, period:nabucodonosor-ii]}
     - {v: 2-4, type: narration, entities: [event:saqueadores-contra-juda-en-dias-de-jehoiaquim, person:jehoiaquim, place:juda], mentions: [person:manases-de-juda, place:jerusalen], note: "Caldeos, sirios, moabitas y ammonitas son pueblos, sin ficha. Los profetas por los que habló Jehová no se nombran."}
     - {v: 5-6, type: narration, entities: [person:jehoiaquim, person:joaquin, relation:joaquin/kin/jehoiaquim, relation:joaquin/succeeds/jehoiaquim], mentions: [period:jehoiaquim, place:juda], note: "Muere Jehoiaquim sin escena ni lugar; Perspicacia cree que fue durante el sitio. La crónica de los reyes de Judá no se conserva."}
     - {v: "7", type: narration, mentions: [place:egipto, place:babilonia, place:torrente-de-egipto, place:rio-eufrates, event:batalla-de-carquemis], note: "El rey de Egipto, sin nombre en el texto, ya no sale de su tierra: Babilonia domina del torrente de Egipto al Éufrates. La referencia remite a Carquemis (Jer 46:2)."}

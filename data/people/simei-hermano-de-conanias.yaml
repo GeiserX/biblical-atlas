@@ -1,0 +1,47 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: simei-hermano-de-conanias
+name: Simeí
+names:
+- name: Simeí
+perspicacia: 1200004047#14
+disambiguation: El hermano de Conanías (2Cr 31:12). Perspicacia «Simeí», núm. 14, lo da probablemente por el levita descendiente
+  de Hemán del núm. 13 y lo separa de los demás Simeí.
+distinct_from:
+- sama-hijo-de-jese
+- simei-descendiente-de-ladan
+- simei-el-ramatita
+- simei-hijo-de-ela
+- simei-hijo-de-gog
+- simei-hijo-de-guera
+- simei-hijo-de-guerson
+- simei-hijo-de-jahat
+- simei-hijo-de-jedutun
+- simei-hijo-de-libni
+- simei-hijo-de-pedaya
+- simei-hijo-de-zacur
+- simei-padre-de-jaquim
+- simei-partidario-de-david
+summary: Levita, hermano de Conanías y el segundo después de él al cuidado de las contribuciones y los diezmos que llegaron
+  al templo en el reinado de Ezequías.
+reason: Perspicacia «Simeí», núm. 14; 2Cr 31:12, 13.
+sources:
+- it-simei
+- 2-cronicas-31
+links:
+- title: 'Perspicacia: «Simeí»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sime%C3%AD/
+  type: perspicacia
+relations:
+- inferred: true
+  type: same_as
+  person: simei-levita-de-ezequias
+  certainty: probable
+  sources:
+  - it-simei
+  - 2-cronicas-31
+  reason: Perspicacia «Simeí» ve probable que el núm. 14, hermano de Conanías (2Cr 31:12), sea el núm. 13, el descendiente
+    de Hemán que limpió el templo.
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified

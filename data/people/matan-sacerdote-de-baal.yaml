@@ -21,6 +21,7 @@ sources:
 - it-matan
 - 2-reyes-11
 - si-3
+- 2-cronicas-23
 links:
 - title: 'Perspicacia: «Matán»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Mat%C3%A1n/
@@ -35,11 +36,12 @@ relations:
   sources:
   - 2-reyes-11
   - it-matan
+  - 2-cronicas-23
   reason: '2Re 11:18-20: lo matan ante los altares del templo de Baal el mismo día en que coronan a Jehoás y la ciudad queda
     tranquila; ese templo estaba en Jerusalén.'
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-13'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified
 distinct_from:
 - matan-padre-de-sefatias

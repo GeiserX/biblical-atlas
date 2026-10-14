@@ -1,0 +1,32 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jehoram-sacerdote-de-jehosafat
+name: Jehoram
+names:
+- name: Jehoram
+perspicacia: 1200002381#1
+summary: Sacerdote que Jehosafat mandó en su año tercero, junto a príncipes y levitas, a instruir al pueblo de Judá con el
+  libro de la Ley de Jehová.
+reason: Perspicacia «Jehoram», núm. 1; 2Cr 17:7-9.
+sources:
+- it-jehoram
+- 2-cronicas-17
+links:
+- title: 'Perspicacia: «Jehoram»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jehoram/
+  type: perspicacia
+relations:
+- type: holds_office
+  office: priest
+  sources:
+  - 2-cronicas-17
+  reason: 2Cr 17:8 lo cuenta entre los dos sacerdotes que iban con los príncipes y los levitas.
+  inferred: false
+  checked_on: '2026-10-13'
+  status: verified
+disambiguation: Sacerdote que Jehosafat mandó a instruir en la Ley (Perspicacia «Jehoram», núm. 1); no el hijo de Jehosafat ni
+  el hijo de Acab.
+checked_on: '2026-10-13'
+status: verified
+distinct_from:
+- jehoram-de-israel
+- jehoram-de-juda

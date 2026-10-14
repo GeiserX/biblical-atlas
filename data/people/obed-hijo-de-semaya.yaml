@@ -26,9 +26,10 @@ relations:
   reason: 1Cr 26:7 lo cuenta entre los hijos de Semaya.
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified
 distinct_from:
 - obed-guerrero-de-david
 - obed-hijo-de-boaz
 - obed-hijo-de-eflal
+- obed-padre-de-azarias

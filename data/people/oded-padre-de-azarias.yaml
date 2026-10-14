@@ -1,0 +1,32 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: oded-padre-de-azarias
+name: Oded
+names:
+- name: Oded
+perspicacia: 1200003297#1
+disambiguation: El padre del profeta Azarías, en días del rey Asá; no el profeta de Samaria que salió al paso del ejército
+  vencedor de Israel en días de Acaz.
+summary: Padre del profeta Azarías. El texto llama profeta también a él, y Perspicacia entiende que Asá escuchó una profecía
+  suya de la que no queda registro, además de las palabras de su hijo.
+reason: Perspicacia «Oded», núm. 1, que acepta el texto masorético tal como está; 2Cr 15:1, 8.
+sources:
+- it-oded
+- 2-cronicas-15
+links:
+- title: 'Perspicacia: «Oded»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Oded/
+  type: perspicacia
+relations:
+- type: holds_office
+  office: prophet
+  sources:
+  - 2-cronicas-15
+  - it-oded
+  reason: 2Cr 15:8 habla de la profecía del profeta Oded; Perspicacia «Oded», núm. 1, lo da por profeta.
+  inferred: false
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified
+distinct_from:
+- oded-profeta-de-samaria

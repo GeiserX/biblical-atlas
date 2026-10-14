@@ -15,8 +15,8 @@ date:
   type: anchored
   chronology: tnm
   text: 980-978 a.e.c.
-summary: Hijo de Rehoboam y Maacá. Venció a Jeroboán, que le doblaba en soldados, y le quitó Betel, pero no quitó la idolatría
-  del país.
+summary: Hijo de Rehoboam y Maacá. Venció a Jeroboán, que le doblaba en soldados, y le quitó Betel, Jesaná y Efrén, pero no
+  quitó la idolatría del país. Tuvo 14 esposas, 22 hijos y 16 hijas.
 reason: Perspicacia «Abías», núm. 5; 2Cr 13:1-20 y 1Re 15:1-8.
 sources:
 - it-abias
@@ -26,6 +26,8 @@ sources:
 - mateo-1
 - 1-reyes-14
 - 1-cronicas-3
+- 2-cronicas-11
+- 2-cronicas-12
 links:
 - title: 'Perspicacia: «Abías»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ab%C3%ADas/
@@ -45,8 +47,9 @@ relations:
   - 1-reyes-14
   - 1-reyes-15
   - 1-cronicas-3
+  - 2-cronicas-12
   reason: Rehoboam lo prefirió entre sus hijos para sucederle (2Cr 11:20-22).
-  checked_on: '2026-10-12'
+  checked_on: '2026-10-13'
   status: verified
 - type: succeeds
   person: rehoboam
@@ -54,8 +57,9 @@ relations:
   sources:
   - it-abias
   - 1-reyes-14
+  - 2-cronicas-12
   reason: Reinó a la muerte de su padre (1Re 14:31).
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-13'
   office: king
   status: verified
 - type: kin
@@ -65,8 +69,10 @@ relations:
   sources:
   - 1-reyes-15
   - it-maaca
+  - 2-cronicas-11
+  - 2-cronicas-13
   reason: 1Re 15:2 da a Maacá, nieta de Abisalom, como su madre.
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-13'
   status: verified
 - type: kin
   person: david
@@ -82,8 +88,9 @@ relations:
   inferred: false
   sources:
   - 1-reyes-15
+  - 2-cronicas-13
   reason: '1Re 15:2: reinó tres años en Jerusalén.'
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-13'
   status: verified
 - type: tie
   person: jeroboan-i
@@ -92,17 +99,19 @@ relations:
   sources:
   - 1-reyes-15
   - it-abias
+  - 2-cronicas-13
   reason: '1Re 15:7: hubo guerra entre Abiyam y Jeroboán; 2Cr 13 cuenta la batalla.'
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-13'
   status: verified
 - type: died_in
   place: jerusalen
   inferred: true
   sources:
   - 1-reyes-15
+  - 2-cronicas-14
   reason: 1Re 15:8 da su sepultura en la Ciudad de David, no el sitio de su muerte; tomamos el del entierro, la ciudad donde
     reinaba.
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-13'
   status: verified
 - type: tie
   person: tabrimon
@@ -110,8 +119,36 @@ relations:
   inferred: false
   sources:
   - 1-reyes-15
+  - 2-cronicas-16
   reason: '1Re 15:19: Asá habla del pacto que hubo entre su padre, Abiyam, y Tabrimón, el padre de Ben-Hadad.'
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-13'
+  status: verified
+- type: kin
+  person: atai-hijo-de-rehoboam
+  word: brother
+  inferred: false
+  sources:
+  - 2-cronicas-11
+  reason: 2Cr 11:20 nombra a los cuatro hijos de Maacá, y 11:22 pone a Abías al frente de sus hermanos.
+  checked_on: '2026-10-13'
+  status: verified
+- type: kin
+  person: ziza-hijo-de-rehoboam
+  word: brother
+  inferred: false
+  sources:
+  - 2-cronicas-11
+  reason: 2Cr 11:20 nombra a los cuatro hijos de Maacá, y 11:22 pone a Abías al frente de sus hermanos.
+  checked_on: '2026-10-13'
+  status: verified
+- type: kin
+  person: selomit-hijo-de-rehoboam
+  word: brother
+  inferred: false
+  sources:
+  - 2-cronicas-11
+  reason: 2Cr 11:20 nombra a los cuatro hijos de Maacá, y 11:22 pone a Abías al frente de sus hermanos.
+  checked_on: '2026-10-13'
   status: verified
 perspicacia: 1200000041#5
 history:
@@ -121,7 +158,10 @@ history:
 - date: '2026-09-30'
   change: 1Re 14:31 ya lo llama Abiyam; la nota solo citaba el capítulo 15.
   source: 1-reyes-14
-checked_on: '2026-10-12'
+- date: '2026-10-13'
+  change: El resumen nombra las tres ciudades que tomó y su familia, que da 2Cr 13:19, 21.
+  source: 2-cronicas-13
+checked_on: '2026-10-13'
 status: verified
 distinct_from:
 - abias-de-tiempos-de-david

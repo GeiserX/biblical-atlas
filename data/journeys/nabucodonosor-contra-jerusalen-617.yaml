@@ -2,7 +2,7 @@
 id: nabucodonosor-contra-jerusalen-617
 name: Nabucodonosor contra Jerusalén en 617
 person: nabucodonosor-ii
-reference: 2Re 24:10-16; 2Cr 36:10; Da 1:1, 2
+reference: 2Re 24:10-16; 2Cr 36:6, 7, 10; Da 1:1, 2
 date:
   from: -616
   to: -616
@@ -23,7 +23,12 @@ sources:
 - it-nabucodonosor
 - it-joaquin
 - si-3
-checked_on: '2026-09-30'
+history:
+- date: '2026-10-13'
+  change: 'La referencia añade 2Cr 36:6, 7: Nabucodonosor subió contra Jehoiaquim y se llevó utensilios del templo; Perspicacia
+    «Nabucodonosor» une 2Cr 36:5-10 a esta conquista.'
+  source: 2-cronicas-36
+checked_on: '2026-10-13'
 status: verified
 stops:
 - order: 1

@@ -26,7 +26,7 @@ relations:
   reason: '1Sa 1:1: Jeroham era hijo de Elihú.'
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified
 distinct_from:
 - jeroham-padre-de-samserai
@@ -34,3 +34,4 @@ distinct_from:
 - jeroham-padre-de-ibneya
 - jeroham-de-guedor
 - jeroham-padre-de-azarel
+- jeroham-padre-de-azarias

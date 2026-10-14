@@ -1,0 +1,48 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: maaseya-hijo-de-adaya
+name: Maaseya
+names:
+- name: Maaseya
+perspicacia: 1200002811#2
+disambiguation: Maaseya hijo de Adaya, jefe de cien en la coronación de Jehoás; no ninguno de los Maaseya de Jeremías ni los
+  demás que distingue Perspicacia.
+distinct_from:
+- maaseya-padre-de-sofonias
+- maaseya-hijo-de-salum
+- maaseya-padre-de-sedequias
+- maaseya-funcionario
+- maaseya-hijo-del-rey
+- maaseya-jefe-de-jerusalen
+- maaseya-musico
+date:
+  from: -897
+  to: -897
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 898 a.e.c.
+summary: Hijo de Adaya. Fue uno de los cinco jefes de cien con los que el sumo sacerdote Jehoiadá pactó para dar el trono
+  de Judá a Jehoás, su heredero legítimo, y no a Atalía.
+reason: Perspicacia «Maaseya», núm. 2; 2Cr 23:1. Año de la coronación de Jehoás, 898 a.e.c., según el estudio 3.
+sources:
+- it-maaseya
+- 2-cronicas-23
+- si-3
+links:
+- title: 'Perspicacia: «Maaseya»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Maaseya/
+  type: perspicacia
+relations:
+- type: kin
+  person: adaya-padre-de-maaseya
+  word: father
+  inferred: false
+  sources:
+  - 2-cronicas-23
+  - it-adaya
+  reason: 2Cr 23:1 lo llama Maaseya hijo de Adaya.
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified

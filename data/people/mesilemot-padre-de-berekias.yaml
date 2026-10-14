@@ -1,0 +1,21 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: mesilemot-padre-de-berekias
+name: Mesilemot
+names:
+- name: Mesilemot
+perspicacia: 1200003012#1
+summary: Efraimita, padre de Berekías, uno de los jefes de Efraín que hicieron devolver a los cautivos de Judá en tiempos
+  de Pécah.
+reason: Perspicacia «Mesilemot», núm. 1; 2Cr 28:12.
+sources:
+- it-mesilemot
+- 2-cronicas-28
+links:
+- title: 'Perspicacia: «Mesilemot»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Mesilemot/
+  type: perspicacia
+- title: 2 Crónicas 28 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-Cr%C3%B3nicas/28/
+  type: bible
+checked_on: '2026-10-13'
+status: verified

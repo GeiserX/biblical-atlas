@@ -19,6 +19,7 @@ sources:
 - 1-reyes-15
 - 1-reyes-16
 - tnm-a6-a
+- 2-cronicas-16
 links:
 - title: 'Perspicacia: «Baasá»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Baas%C3%A1/
@@ -74,13 +75,14 @@ relations:
   sources:
   - 1-reyes-15
   - it-ben-hadad
+  - 2-cronicas-16
   reason: '1Re 15:19, 20: Ben-Hadad tenía un pacto con Baasá y lo rompe a petición de Asá.'
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-13'
   status: verified
 perspicacia: '1200000528'
 history:
 - date: '2026-09-30'
   change: El padre se escribe Ahíya, como en la TNM (1Re 15:27, 33) y en Perspicacia «Ahíya», núm. 8; decía Ahías.
   source: 1-reyes-15
-checked_on: '2026-09-30'
+checked_on: '2026-10-13'
 status: verified

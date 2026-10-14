@@ -1,0 +1,33 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: las-naciones-honran-a-ezequias
+title: Muchos llevan regalos a Jerusalén y las naciones honran a Ezequías
+date:
+  from: -731
+  to: -715
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 732 y 716 a.e.c. (tiempo narrativo: tras la derrota de Senaquerib y en vida de Ezequías)'
+narrative_order:
+  series: 2-cronicas
+  order: 32022
+  after: el-angel-de-jehova-mata-a-185000-asirios
+places:
+- jerusalen
+people:
+- ezequias
+present:
+- ezequias
+passages:
+- 2Cr 32:22, 23
+summary: Librada Jerusalén de Senaquerib, Jehová le da descanso por todas partes. Muchos llevan a la ciudad ofrendas para
+  Jehová y regalos escogidos para Ezequías, y las naciones lo tienen desde entonces en gran estima.
+reason: '2Cr 32:22, 23: después de la derrota asiria de 732 a.e.c. (estudio 3) y antes de la muerte de Ezequías, en 716 (tabla
+  A6-B). El texto no dice quiénes llevaron los regalos.'
+sources:
+- 2-cronicas-32
+- si-3
+- tnm-a6-b
+checked_on: '2026-10-13'
+status: verified

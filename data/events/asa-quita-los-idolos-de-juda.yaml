@@ -21,14 +21,15 @@ passages:
 - 1Re 15:11, 12, 14
 - 2Cr 14:2-5
 - 2Cr 15:17
-summary: Asá expulsa de Judá a los prostitutos de templo, retira los ídolos que habían hecho sus antepasados. Los lugares
-  altos siguen en pie, pero él se mantiene fiel a Jehová toda su vida.
-reason: '1Re 15:11-14; Perspicacia «Asá», núm. 1: su celo trajo paz en sus diez primeros años, antes del pacto del año 15
-  (963 a.e.c.). El reinado empieza en 978 (tabla A6-A).'
+summary: Asá expulsa a los prostitutos de templo y quita los ídolos de sus antepasados, los altares extranjeros y los lugares
+  altos paganos. Quedan los lugares altos donde se adoraba a Jehová, pero él le es fiel toda su vida.
+reason: '1Re 15:11-14 y 2Cr 14:2-5, que Perspicacia «Asá», núm. 1, armoniza: los lugares altos quitados eran paganos. Hubo
+  paz sus diez primeros años, antes del pacto del año 15 (963 a.e.c.). Reina desde 978 (A6-A).'
 sources:
 - 1-reyes-15
 - it-asa
 - tnm-a6-a
+- 2-cronicas-14
 links:
 - title: 1 Reyes 15 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/1-reyes/15/
@@ -36,5 +37,13 @@ links:
 - title: 'Perspicacia: «Asá»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/As%C3%A1/
   type: perspicacia
-checked_on: '2026-09-30'
+history:
+- date: '2026-10-13'
+  change: 2Cr 14:3, 5 dice que quitó los lugares altos; Perspicacia «Asá», núm. 1, explica que eran los paganos y que Reyes
+    habla de los dedicados a Jehová.
+  source: 2-cronicas-14
+- date: '2026-10-13'
+  change: La razón explica por qué Crónicas dice que quitó los lugares altos y Reyes que no.
+  source: 2-cronicas-14
+checked_on: '2026-10-13'
 status: verified

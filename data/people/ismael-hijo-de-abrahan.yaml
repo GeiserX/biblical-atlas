@@ -67,8 +67,10 @@ relations:
   checked_on: '2026-09-29'
   status: verified
 perspicacia: 1200002215#1
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified
 distinct_from:
 - ismael-hijo-de-netanias
 - ismael-hijo-de-azel
+- ismael-padre-de-zebadias
+- ismael-hijo-de-jehohanan

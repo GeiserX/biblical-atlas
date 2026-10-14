@@ -19,16 +19,28 @@ places:
 - jerusalen
 people:
 - josias
+- hilquias-hijo-de-salum
+- zacarias-sacerdote-de-josias
+- jehiel-sacerdote-de-josias
+- conanias-levita-de-josias
+- semaya-levita-de-josias
+- netanel-levita-de-josias
+- hasabias-levita-de-josias
+- jeiel-levita-de-josias
+- jozabad-levita-de-josias
 passages:
 - 2Re 23:21-23
 - 2Cr 35:1-19
-summary: Siguiendo el libro del pacto, Josías manda celebrar en Jerusalén una Pascua como no se había visto desde los tiempos
-  de los jueces ni en todo el periodo de los reyes.
+summary: Siguiendo el libro del pacto, Josías celebra en Jerusalén una Pascua sin igual desde los días del profeta Samuel.
+  El rey, sus príncipes y los jefes de sacerdotes y levitas dan miles de animales para los sacrificios.
 reason: 2Re 23:23 la pone en el año 18 de Josías, que Perspicacia «Betel» fecha en 642; «Josías», núm. 1, da el 14 de nisán.
 sources:
 - 2-reyes-23
 - it-josias
 - it-betel
+- 2-cronicas-35
+- it-conanias
+- it-zacarias
 links:
 - title: 2 Reyes 23 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-reyes/23/
@@ -36,5 +48,10 @@ links:
 - title: 'Perspicacia: «Josías»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jos%C3%ADas/
   type: perspicacia
-checked_on: '2026-09-30'
+history:
+- date: '2026-10-13'
+  change: 'El resumen recoge lo que añade 2Cr 35:7-9, 18: los animales que dieron el rey, Hilquías, Zacarías, Jehiel y los
+    jefes levitas, que ahora están entre sus personas.'
+  source: 2-cronicas-35
+checked_on: '2026-10-13'
 status: verified

@@ -1,0 +1,40 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: abihail-hija-de-eliab
+name: Abihail
+names:
+- name: Abihail
+- name: Abiháil
+perspicacia: 1200000038#4
+disambiguation: Abihail hija de Eliab, madre de Mahalat (2Cr 11:18); no el levita padre de Zuriel, la esposa de Abisur, el
+  gadita hijo de Hurí ni el padre de Ester.
+distinct_from:
+- abihail-padre-de-zuriel
+- abihail-esposa-de-abisur
+- abihail-hijo-de-huri
+summary: Hija de Eliab, primogénito de Jesé, y madre de Mahalat, la esposa de Rehoboam. Perspicacia lo ve como la lectura
+  más probable de 2Cr 11:18.
+reason: Perspicacia «Abiháil», núm. 4; 2Cr 11:18.
+sources:
+- it-abihail
+- 2-cronicas-11
+links:
+- title: 'Perspicacia: «Abiháil»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Abih%C3%A1il/
+  type: perspicacia
+not_claimed:
+- 'Que fuera una segunda esposa de Rehoboam: así leen el versículo algunas versiones, pero Perspicacia lo descarta por los
+  pronombres en singular de 2Cr 11:19, 20.'
+relations:
+- type: kin
+  person: eliab-hijo-de-jese
+  word: father
+  inferred: false
+  sources:
+  - 2-cronicas-11
+  - it-abihail
+  reason: 2Cr 11:18 la llama hija de Eliab, hijo de Jesé. Perspicacia advierte que la palabra hebrea también puede significar
+    nieta.
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified
