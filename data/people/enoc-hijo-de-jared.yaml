@@ -22,6 +22,7 @@ sources:
 - genesis-5
 - lucas-3
 - 1-cronicas-1
+- hebreos-11
 links:
 - title: 'Perspicacia: «Enoc»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Enoc/
@@ -33,7 +34,7 @@ not_claimed:
 - 'Que Dios se llevara a Enoc al cielo: Perspicacia lo descarta por Juan 3:13.'
 - 'Que Enoc escribiera el «Libro de Enoc»: es un apócrifo de siglos después.'
 perspicacia: 1200001371#2
-checked_on: '2026-10-12'
+checked_on: '2026-10-14'
 status: verified
 distinct_from:
 - enoc-hijo-de-cain

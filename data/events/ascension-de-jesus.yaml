@@ -34,6 +34,10 @@ passages:
 - Hch 1:6-8
 - Ef 4:8-12
 - 1Ti 3:16
+- Heb 4:14
+- Heb 6:19, 20
+- Heb 9:11, 12, 24
+- Heb 10:12, 13, 19, 20
 summary: Cuarenta días después de resucitar, Jesús lleva a los apóstoles al monte de los Olivos, cerca de Betania.
   Mientras lo miran, sube y una nube lo oculta.
 reason: 'La tabla A7-H da el día y el lugar; el estudio 3, la misma fecha. Perspicacia «Ascensión» (párr. 1-4) y
@@ -49,6 +53,7 @@ sources:
 - bt-2
 - efesios-4
 - 1-timoteo-3
+- hebreos-4
 narrative_order:
   series: a7
   order: 134
@@ -72,5 +77,5 @@ history:
   change: orden 133 pasa a 134 para dejar sitio a la aparición a Santiago, que 1Co 15:7 pone tras la de los 500 y antes de
     la de todos los apóstoles.
   source: 1-corintios-15
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified
