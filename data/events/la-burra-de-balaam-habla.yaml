@@ -20,6 +20,7 @@ people:
 present: []
 passages:
 - Nú 22:22-35
+- 2Pe 2:15, 16
 summary: De camino, el ángel de Jehová se planta tres veces ante Balaam, espada en mano. La burra lo ve y se aparta, y Balaam
   la golpea. Jehová la hace hablar, Balaam ve al ángel y este le deja seguir.
 reason: 'Nú 22:22-35; Perspicacia «Balaam», párr. 3. El texto no nombra el sitio: van el destino y el origen del viaje, sin
@@ -28,9 +29,10 @@ sources:
 - numeros-22
 - it-balaam
 - it-agag
+- 2-pedro-2
 links:
 - title: Números 22 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/N%C3%BAmeros/22/
   type: bible
-checked_on: '2026-09-29'
+checked_on: '2026-10-14'
 status: verified

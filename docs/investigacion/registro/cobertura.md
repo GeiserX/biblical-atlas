@@ -78,13 +78,13 @@ Qué versículos de la TNM se han leído y apuntado en `data/coverage/<libro>.ya
 | Hebreos | 0 de 13 | 0 de 303 | 0 % |
 | [Santiago](https://github.com/GeiserX/biblical-atlas/blob/main/data/coverage/santiago.yaml) | 5 de 5 | 108 de 108 | 100 % |
 | 1 Pedro | 0 de 5 | 0 de 105 | 0 % |
-| 2 Pedro | 0 de 3 | 0 de 61 | 0 % |
+| [2 Pedro](https://github.com/GeiserX/biblical-atlas/blob/main/data/coverage/2-pedro.yaml) | 3 de 3 | 61 de 61 | 100 % |
 | 1 Juan | 0 de 5 | 0 de 105 | 0 % |
 | 2 Juan | 0 de 1 | 0 de 13 | 0 % |
 | 3 Juan | 0 de 1 | 0 de 14 | 0 % |
 | Judas | 0 de 1 | 0 de 25 | 0 % |
 | Apocalipsis | 0 de 22 | 0 de 404 | 0 % |
-| **Total** | 1089 de 1189 | 28797 de 31062 | 93 % |
+| **Total** | 1092 de 1189 | 28858 de 31062 | 93 % |
 
 ## Capítulos empezados
 

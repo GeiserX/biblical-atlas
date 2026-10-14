@@ -81,6 +81,9 @@ sources:
 - galatas-1
 - galatas-2
 - it-simon
+- 2-pedro-1
+- si-2-pedro
+- 2-pedro-3
 distinct_from:
 - simon-el-mago
 - simon-el-curtidor
@@ -93,8 +96,8 @@ distinct_from:
 not_claimed:
 - 'Que Pedro estuviera en Roma o dirigiera allí la congregación: Perspicacia dice que esa idea solo se apoya en
   tradiciones dudosas.'
-- 'El año y el lugar de su muerte: Jn 21:18, 19 anuncia cómo moriría, pero ninguna fuente que leímos da fecha ni
-  sitio.'
+- 'El año y el lugar de su muerte: Jn 21:18, 19 anuncia cómo moriría y 2Pe 1:14 la ve cercana hacia 64, pero ninguna fuente
+  que leímos da fecha ni sitio.'
 - 'Que tuviera por nombramiento autoridad sobre los demás apóstoles: Perspicacia muestra que lo enviaban y que actuó
   como testigo, no como juez.'
 relations:
@@ -297,6 +300,16 @@ relations:
   reason: 'Hch 9:43 y 10:6, 32: se queda bastantes días en Jope en casa de Simón; Perspicacia «Simón», núm. 9, lo pone en 36.'
   checked_on: '2026-09-29'
   status: verified
+- type: holds_office
+  office: apostle
+  inferred: false
+  sources:
+  - 2-pedro-1
+  - it-pedro
+  reason: '2Pe 1:1: se presenta como Simón Pedro, esclavo y apóstol de Jesucristo. Perspicacia «Pedro» lo trata como apóstol
+    desde su primer párrafo.'
+  checked_on: '2026-10-14'
+  status: verified
 links:
 - title: 'Perspicacia: «Pedro»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Pedro/
@@ -321,5 +334,9 @@ history:
   change: La relación con su suegra decía que Perspicacia deduce de ella el matrimonio. Perspicacia «Pedro», párr. 4, lo da
     por 1Co 9:5 y cuenta aparte lo de la suegra (Mr 1:29-31).
   source: 1-corintios-9
-checked_on: '2026-10-02'
+- date: '2026-10-14'
+  change: 'La frase sobre su muerte suma 2Pe 1:14: hacia 64 Pedro la sabía cercana, como Jesús le había dado a entender. Sigue
+    sin fecha ni lugar en las fuentes leídas.'
+  source: 2-pedro-1
+checked_on: '2026-10-14'
 status: verified
