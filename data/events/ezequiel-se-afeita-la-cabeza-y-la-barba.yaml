@@ -1,0 +1,41 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: ezequiel-se-afeita-la-cabeza-y-la-barba
+title: Ezequiel se afeita la cabeza y la barba y reparte el pelo, como señal contra Jerusalén
+date:
+  from: -612
+  to: -611
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 613 y 612 a.e.c. (tiempo narrativo: al acabar los días del asedio representado y antes de la visión del año
+    sexto)'
+narrative_order:
+  series: ezequiel
+  order: 5001
+places:
+- tel-abib
+- caldea
+people:
+- ezequiel
+present:
+- ezequiel
+passages:
+- Eze 5:1-17
+summary: 'Con una espada usada como navaja, Ezequiel se rapa cabeza y barba, pesa el pelo y lo divide: quema un tercio, corta
+  otro a espada y lanza el resto al viento. Guarda unos cabellos en su ropa.'
+reason: 'Eze 5:2: al acabar los días del asedio representado. Lo hizo, según «Toda Escritura» (libro 26, párr. 11) y La adoración
+  pura (cap. 6). Entre 613 (estudio 3) y 612, año de la visión del sexto año (La Atalaya, 2007).'
+sources:
+- ezequiel-5
+- si-ezequiel
+- rr-te-ha-llegado-el-fin
+- w07-ezequiel-1
+- si-3
+- it-ezequiel
+links:
+- title: Ezequiel 5 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/ezequiel/5/
+  type: bible
+checked_on: '2026-10-13'
+status: verified

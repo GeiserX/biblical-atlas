@@ -1,0 +1,34 @@
+# biblical-atlas: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: sin
+name: Sin
+names:
+- name: Sin
+  note: 'Perspicacia «Sin», núm. 2: la ciudad de Egipto. El núm. 1 es el desierto del éxodo, que tiene su propia ficha (desierto-de-sin).'
+- name: Pelusio
+  note: Nombre que da la Vulgata. Perspicacia cuenta que algunas autoridades identifican Sin con esa ciudad.
+type: city
+lat: 31.042512
+lon: 32.546139
+precision: uncertain
+coord_source: openbible:aa32a17
+coord_url: https://www.openbible.info/geo/ancient/aa32a17/pelusium
+coord_note: 'Tell el-Farama, al sudeste de Port Said: el sitio de Pelusio, única identificación de OpenBible. Perspicacia
+  da ese sitio por el de Pelusio; que Sin sea Pelusio solo lo creen algunos.'
+summary: Ciudad fuerte de Egipto que Ezequiel llama su fortaleza. Sufriría la espada del rey de Babilonia. Quizá sea Pelusio,
+  que cerraba junto a la costa el paso a Egipto desde Asia.
+reason: 'Perspicacia «Sin», núm. 2; Eze 30:15, 16. Coordenada de OpenBible: solo tomamos el punto.'
+not_claimed:
+- 'Que Sin sea Pelusio: Perspicacia solo dice que algunas autoridades lo creen hoy.'
+sources:
+- it-sin
+- openbible-geo
+- ezequiel-30
+links:
+- title: 'Perspicacia: «Sin»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sin/
+  type: perspicacia
+- title: Ezequiel 30 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/ezequiel/30/
+  type: bible
+checked_on: '2026-10-13'
+status: verified

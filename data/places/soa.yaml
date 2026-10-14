@@ -1,0 +1,32 @@
+# biblical-atlas: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: soa
+name: Soa
+names:
+- name: Soa
+type: region
+lat: 31.0043
+lon: 47.4421
+precision: uncertain
+coord_source: openbible:aa3bc1e
+coord_url: https://www.openbible.info/geo/ancient/aa3bc1e/shoa
+coord_note: OpenBible la iguala con los sutu y pone su punto a unos 100 km de la boca del Tigris. Perspicacia «Soa» no la
+  sitúa, y «Qoa» solo ve posible que los sutu sean Soa.
+summary: Pueblo o región cuyos hombres, con los de Pecod y Coa, vendrían contra Jerusalén junto a los babilonios, como castigo
+  por su infidelidad.
+reason: 'Perspicacia «Soa» y «Qoa»; Eze 23:22-24. Coordenada de OpenBible: solo tomamos el punto.'
+not_claimed:
+- 'Dónde estaba Soa: Perspicacia no lo dice y solo ve posible que sean los sutu de las inscripciones asirias.'
+sources:
+- it-soa
+- it-qoa
+- openbible-geo
+- ezequiel-23
+links:
+- title: 'Perspicacia: «Soa»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Soa/
+  type: perspicacia
+- title: Ezequiel 23 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/ezequiel/23/
+  type: bible
+checked_on: '2026-10-13'
+status: verified

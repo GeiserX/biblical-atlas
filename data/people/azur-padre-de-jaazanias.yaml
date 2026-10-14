@@ -1,0 +1,25 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: azur-padre-de-jaazanias
+name: Azur
+names:
+- name: Azur
+perspicacia: 1200000504#2
+disambiguation: Azur padre de Jaazanías, el príncipe de la visión de Eze 11 (núm. 2 de Perspicacia); no Azur padre del profeta
+  falso Hananías de Gabaón.
+distinct_from:
+- azur-padre-de-hananias
+summary: Su hijo Jaazanías estaba entre los príncipes que Ezequiel vio en visión a la puerta oriental del templo de Jerusalén.
+  La Biblia no dice nada más de él.
+reason: Perspicacia «Azur», núm. 2; Eze 11:1.
+sources:
+- it-azur
+- ezequiel-11
+links:
+- title: 'Perspicacia: «Azur»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Azur/
+  type: perspicacia
+- title: Ezequiel 11 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/ezequiel/11/
+  type: bible
+checked_on: '2026-10-13'
+status: verified

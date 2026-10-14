@@ -1,0 +1,498 @@
+# biblical-atlas: fuentes de la cobertura de ezequiel. Esquema en docs/investigacion/README.md.
+it-buzi:
+  title: Buzí
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Buz%C3%AD/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-kebar:
+  title: Kebar
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Kebar/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-tel-abib:
+  title: Tel-abib
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Tel-abib/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-ezequiel-libro:
+  title: Ezequiel, Libro de
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ezequiel-Libro-de/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+w07-ezequiel-1:
+  title: Puntos sobresalientes del libro de Ezequiel (parte 1)
+  work: La Atalaya (1 de julio de 2007)
+  url: https://www.jw.org/es/biblioteca/revistas/w20070701/Puntos-sobresalientes-del-libro-de-Ezequiel-parte-1/
+  level: 1
+  published: 2007
+  checked_on: '2026-10-13'
+w03-ezequiel-mudo:
+  title: Preguntas de los lectores
+  work: La Atalaya (1 de diciembre de 2003)
+  url: https://www.jw.org/es/biblioteca/revistas/w20031201/Preguntas-de-los-lectores/
+  level: 1
+  published: 2003
+  checked_on: '2026-10-13'
+rr-te-ha-llegado-el-fin:
+  title: “Ahora te ha llegado el fin”
+  work: 'La adoración pura de Jehová: ¡por fin restaurada!'
+  url: https://www.jw.org/es/biblioteca/libros/adoracion-pura/contaminacion/te-ha-llegado-el-fin/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+si-ezequiel:
+  title: 'Libro bíblico número 26: Ezequiel'
+  work: “Toda Escritura es inspirada de Dios y provechosa”
+  url: https://www.jw.org/es/biblioteca/libros/Toda-Escritura-es-inspirada-de-Dios-y-provechosa/Libro-b%C3%ADblico-n%C3%BAmero-26-Ezequiel/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-dibla:
+  title: Diblá
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Dibl%C3%A1/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+rr-cosas-detestables-en-el-templo:
+  title: Las cosas malas y detestables en el templo de Dios
+  work: 'La adoración pura de Jehová: ¡por fin restaurada!'
+  url: https://www.jw.org/es/biblioteca/libros/adoracion-pura/contaminacion/cosas-malas-detestables-templo-dios/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-reino-de-dios:
+  title: Reino de Dios
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Reino-de-Dios/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+w02-safan-y-su-familia:
+  title: ¿Conoce a Safán y su familia?
+  work: La Atalaya (15 de diciembre de 2002)
+  url: https://www.jw.org/es/biblioteca/revistas/w20021215/Conoce-a-Saf%C3%A1n-y-su-familia/
+  level: 1
+  published: 2002
+  checked_on: '2026-10-13'
+it-tamuz-i:
+  title: Tamuz, I
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Tamuz-I/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+rr-marca-en-la-frente:
+  title: “Pon una marca en la frente”
+  work: 'La adoración pura de Jehová: ¡por fin restaurada!'
+  url: https://www.jw.org/es/biblioteca/libros/adoracion-pura/sobrevive-ataque/marca-en-frente/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-querubin:
+  title: Querubín
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Querub%C3%ADn/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-tintero-de-secretario:
+  title: Tintero de secretario
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Tintero-de-secretario/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+rr-unificare-su-corazon:
+  title: Unificaré su corazón
+  work: 'La adoración pura de Jehová: ¡por fin restaurada!'
+  url: https://www.jw.org/es/biblioteca/libros/adoracion-pura/restauracion/promesas-de-restauracion/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+w18-noe-daniel-job:
+  title: Imitemos la fe y la obediencia de Noé, Daniel y Job
+  work: La Atalaya (edición de estudio, febrero de 2018)
+  url: https://www.jw.org/es/biblioteca/revistas/atalaya-estudio-febrero-2018/fe-obediencia-noe-daniel-job/
+  level: 1
+  published: 2018
+  checked_on: '2026-10-13'
+it-profetisa:
+  title: Profetisa
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Profetisa/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-vid:
+  title: Vid
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Vid/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+rr-pondre-fin-a-tu-prostitucion:
+  title: “Le pondré fin a tu prostitución”
+  work: 'La adoración pura de Jehová: ¡por fin restaurada!'
+  url: https://www.jw.org/es/biblioteca/libros/adoracion-pura/sobrevive-ataque/pondre-fin-a-tu-prostitucion/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-madre:
+  title: Madre
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Madre/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-hermano-hermana:
+  title: Hermano, hermana
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hermano-hermana/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+rr-pondre-un-solo-pastor:
+  title: “Pondré sobre ellas a un solo pastor”
+  work: 'La adoración pura de Jehová: ¡por fin restaurada!'
+  url: https://www.jw.org/es/biblioteca/libros/adoracion-pura/restauracion/pondre-un-solo-pastor/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-endecha:
+  title: Endecha
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Endecha/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-cetro:
+  title: Cetro
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Cetro/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+w88-jehova-desenvaina-la-espada:
+  title: ¡Jehová desenvaina la espada!
+  work: La Atalaya (15 de septiembre de 1988)
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1988684
+  level: 1
+  published: 1988
+  checked_on: '2026-10-13'
+it-bosque:
+  title: Bosque
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Bosque/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-adivinacion:
+  title: Adivinación
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Adivinaci%C3%B3n/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-ohola:
+  title: Oholá
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ohol%C3%A1/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-oholiba:
+  title: Oholibá
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Oholib%C3%A1/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-soa:
+  title: Soa
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Soa/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-qoa:
+  title: Qoa
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Qoa/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+rr-dos-hermanas-prostitutas:
+  title: Dos hermanas prostitutas
+  work: 'La adoración pura de Jehová: ¡por fin restaurada!'
+  url: https://www.jw.org/es/biblioteca/libros/adoracion-pura/recuadros-informativos/hermanas-prostitutas/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+w07-ezequiel-2:
+  title: Puntos sobresalientes del libro de Ezequiel (parte 2)
+  work: La Atalaya (1 de agosto de 2007)
+  url: https://www.jw.org/es/biblioteca/revistas/w20070801/Puntos-sobresalientes-del-libro-de-Ezequiel-parte-2/
+  level: 1
+  published: 2007
+  checked_on: '2026-10-13'
+rr-naciones-sabran-que-soy-jehova:
+  title: Las naciones “tendrán que saber que yo soy Jehová”
+  work: 'La adoración pura de Jehová: ¡por fin restaurada!'
+  url: https://www.jw.org/es/biblioteca/libros/adoracion-pura/contaminacion/naciones-tendran-que-saber-yo-soy-jehova/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+rr-naciones-vecinas-de-jerusalen:
+  title: Las naciones vecinas de Jerusalén
+  work: 'La adoración pura de Jehová: ¡por fin restaurada!'
+  url: https://www.jw.org/es/biblioteca/libros/adoracion-pura/recuadros-informativos/naciones-vecinas-de-jerusalen/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-arvad:
+  title: Arvad
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Arvad/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-kilmad:
+  title: Kilmad
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Kilmad/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-cane:
+  title: Cané
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Can%C3%A9/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-helbon:
+  title: Helbón
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Helb%C3%B3n/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-vedan:
+  title: Vedán
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ved%C3%A1n/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-perfeccion:
+  title: Perfección
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Perfecci%C3%B3n/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+w05-corazon-altivo:
+  title: Evitemos desarrollar un corazón altivo
+  work: La Atalaya (15 de octubre de 2005)
+  url: https://www.jw.org/es/biblioteca/revistas/w20051015/Evitemos-desarrollar-un-coraz%C3%B3n-altivo/
+  level: 1
+  published: 2005
+  checked_on: '2026-10-13'
+it-siene:
+  title: Siene
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Siene/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-cub:
+  title: Cub
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Cub/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-pibeset:
+  title: Pibéset
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Pib%C3%A9set/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-arbol:
+  title: Árbol
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/%C3%81rbol/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+rr-nombrado-centinela:
+  title: “Te he nombrado centinela”
+  work: 'La adoración pura de Jehová: ¡por fin restaurada!'
+  url: https://www.jw.org/es/biblioteca/libros/adoracion-pura/restauracion/nombrado-centinela/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-atalaya:
+  title: Atalaya
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Atalaya/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+rr-volveran-a-vivir:
+  title: “Volverán a vivir”
+  work: 'La adoración pura de Jehová: ¡por fin restaurada!'
+  url: https://www.jw.org/es/biblioteca/libros/adoracion-pura/restauracion/profecia-huesos-secos-que-reviven/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+rr-hare-de-ellos-una-sola-nacion:
+  title: “Haré de ellos una sola nación”
+  work: 'La adoración pura de Jehová: ¡por fin restaurada!'
+  url: https://www.jw.org/es/biblioteca/libros/adoracion-pura/restauracion/hare-de-ellos-una-sola-nacion/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+rr-estoy-contra-ti-gog:
+  title: “Estoy contra ti, oh, Gog”
+  work: 'La adoración pura de Jehová: ¡por fin restaurada!'
+  url: https://www.jw.org/es/biblioteca/libros/adoracion-pura/sobrevive-ataque/identidad-gog-de-magog/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-hamon-gog:
+  title: Hamon-Gog
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hamon-Gog/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-hamona:
+  title: Hamoná
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hamon%C3%A1/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+rr-describele-el-templo:
+  title: “Descríbele el templo a la casa de Israel”
+  work: 'La adoración pura de Jehová: ¡por fin restaurada!'
+  url: https://www.jw.org/es/biblioteca/libros/adoracion-pura/restauracion/significado-vision-templo/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+rr-esta-es-la-ley-del-templo:
+  title: “Esta es la ley del templo”
+  work: 'La adoración pura de Jehová: ¡por fin restaurada!'
+  url: https://www.jw.org/es/biblioteca/libros/adoracion-pura/restauracion/ley-del-templo/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-sepultura:
+  title: Sepultura
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sepultura/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-idolo-idolatria:
+  title: Ídolo, idolatría
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/%C3%8Ddolo-idolatr%C3%ADa/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-contribucion-santa:
+  title: Contribución santa
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Contribuci%C3%B3n-santa/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-principal:
+  title: Principal
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Principal/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-hetlon:
+  title: Hetlón
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hetl%C3%B3n/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-sibraim:
+  title: Sibraim
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sibraim/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-hazer-haticon:
+  title: Hazer-haticón
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hazer-hatic%C3%B3n/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-hauran:
+  title: Haurán
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Haur%C3%A1n/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-en-eglaim:
+  title: En-eglaim
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/En-eglaim/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-meribat-qades:
+  title: Meribat-qadés
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Meribat-qad%C3%A9s/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+rr-por-donde-pase-el-rio:
+  title: “Por donde pase el río, todo vivirá”
+  work: 'La adoración pura de Jehová: ¡por fin restaurada!'
+  url: https://www.jw.org/es/biblioteca/libros/adoracion-pura/adoracion/donde-pase-rio-todo-vivira/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+rr-repartan-la-tierra:
+  title: “Repartan la tierra como herencia”
+  work: 'La adoración pura de Jehová: ¡por fin restaurada!'
+  url: https://www.jw.org/es/biblioteca/libros/adoracion-pura/adoracion/repartan-tierra-como-herencia/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+rr-jehova-esta-alli:
+  title: '“Este será el nombre de la ciudad: Jehová Está Allí”'
+  work: 'La adoración pura de Jehová: ¡por fin restaurada!'
+  url: https://www.jw.org/es/biblioteca/libros/adoracion-pura/adoracion/nombre-ciudad-jehova-esta-alli/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-jehova-mismo-esta-alli:
+  title: Jehová Mismo Está Allí
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jehov%C3%A1-Mismo-Est%C3%A1-All%C3%AD/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'

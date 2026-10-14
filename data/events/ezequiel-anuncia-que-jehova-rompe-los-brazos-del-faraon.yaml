@@ -1,0 +1,48 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: ezequiel-anuncia-que-jehova-rompe-los-brazos-del-faraon
+title: Ezequiel anuncia que Jehová rompe los brazos del faraón
+type: speech
+date:
+  from: -606
+  to: -606
+  precision: day
+  approx: false
+  type: derived
+  chronology: tnm
+  text: 7 de nisán de 607 a.e.c.
+  detail:
+    month: nisan
+    day: 7
+  note: 'Eze 30:20: año 11 del destierro de Joaquín, mes primero, día 7. Con el año 5 en 613 y el 27 en 591 (estudio 3), el
+    año 11 empieza en nisán de 607.'
+narrative_order:
+  series: ezequiel
+  order: 30020
+places:
+- tel-abib
+- caldea
+- egipto
+people:
+- ezequiel
+- nabucodonosor-ii
+present:
+- ezequiel
+roles:
+  ezequiel: spoke
+passages:
+- Eze 30:20-26
+summary: Jehová dice que ya ha partido un brazo al faraón y que le romperá los dos, mientras da su espada y fuerza al rey
+  de Babilonia. Los egipcios serán esparcidos entre las naciones.
+reason: Eze 30:20 da el día; el año es cuenta nuestra, meses antes de la caída de Jerusalén. Ezequiel profetizaba en Babilonia,
+  entre los desterrados (Perspicacia «Ezequiel»). El rey de Babilonia es el Nabucodonosor de Eze 30:10.
+sources:
+- ezequiel-30
+- si-3
+- it-ezequiel
+- it-ezequiel-libro
+links:
+- title: Ezequiel 30 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/ezequiel/30/
+  type: bible
+checked_on: '2026-10-13'
+status: pending

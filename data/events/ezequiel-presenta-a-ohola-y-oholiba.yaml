@@ -1,0 +1,47 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: ezequiel-presenta-a-ohola-y-oholiba
+title: Ezequiel presenta a Oholá y Oholibá, dos hermanas infieles
+date:
+  from: -610
+  to: -608
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 611 y 609 a.e.c. (tiempo narrativo: tras el mensaje del año séptimo y antes de empezar el sitio de Jerusalén)'
+narrative_order:
+  series: ezequiel
+  order: 23001
+places:
+- caldea
+- samaria
+- jerusalen
+people:
+- ezequiel
+present: []
+passages:
+- Eze 23:1-49
+summary: Jehová compara a Samaria y a Jerusalén con dos hermanas, Oholá y Oholibá, infieles desde Egipto. Asiria acabó con
+  la mayor; la menor, aún peor, caerá ante los babilonios y sus aliados.
+reason: Eze 23 no lleva fecha. Según Perspicacia «Ezequiel, Libro de», el libro sigue el orden cronológico; «Toda Escritura»,
+  libro 26, párr. 19 y 20, lo deja entre 611 y el sitio de 609. No dice dónde habló.
+sources:
+- ezequiel-23
+- it-ohola
+- it-oholiba
+- rr-dos-hermanas-prostitutas
+- si-ezequiel
+- it-ezequiel-libro
+- si-3
+links:
+- title: 'Perspicacia: «Oholá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ohol%C3%A1/
+  type: perspicacia
+- title: 'Perspicacia: «Oholibá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Oholib%C3%A1/
+  type: perspicacia
+- title: Ezequiel 23 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/ezequiel/23/
+  type: bible
+checked_on: '2026-10-13'
+status: verified

@@ -1,0 +1,53 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: ezequiel-anuncia-el-castigo-de-ammon-moab-edom-y-filistea
+title: Ezequiel anuncia el castigo de Ammón, Moab, Edom y Filistea
+date:
+  from: -608
+  to: -606
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 609 y 607 a.e.c. (tiempo narrativo: durante el último sitio de Jerusalén)'
+places:
+- ammon
+- raba
+- moab
+- bet-jesimot
+- baal-meon
+- quiryataim
+- seir
+- edom
+- teman
+- dedan
+- filistea
+people:
+- ezequiel
+present: []
+passages:
+- Eze 25:1-17
+summary: 'Jehová manda a Ezequiel profetizar contra cuatro vecinos de Judá que se alegraron de su ruina: Ammón y Moab pasarán
+  a los orientales, Edom quedará desolado y los filisteos sufrirán su venganza.'
+reason: 'Eze 25 no da fecha ni lugar, así que nadie queda situado. La Atalaya de 2007 pone estos mensajes al empezar el sitio,
+  en diciembre de 609; Jerusalén cae en 607. Sin narrative_order: no tiene fecha propia.'
+sources:
+- ezequiel-25
+- w07-ezequiel-2
+- it-ezequiel-libro
+- si-3
+- rr-naciones-sabran-que-soy-jehova
+- it-ammonitas
+- it-moab
+- it-edom
+- it-filistea
+- it-keretitas
+- it-orientales
+links:
+- title: Ezequiel 25 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/ezequiel/25/
+  type: bible
+- title: 'Perspicacia: «Ezequiel, Libro de»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ezequiel-Libro-de/
+  type: perspicacia
+checked_on: '2026-10-13'
+status: verified

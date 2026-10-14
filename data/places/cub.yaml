@@ -1,0 +1,50 @@
+# biblical-atlas: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: cub
+name: Cub
+names:
+- name: Cub
+  note: Pueblo aliado de Egipto que Perspicacia no logra identificar.
+type: region
+lat: null
+lon: null
+precision: uncertain
+coord_source: null
+coord_url: null
+candidates:
+- name: Libia
+  geometry:
+    type: zone
+    lat: 32.820946
+    lon: 21.851229
+    radius_km: 500
+  sources:
+  - it-cub
+  - it-libia
+  - openbible-geo
+  reason: Perspicacia «Cub» cuenta que algunos ven en Cub a Libia, como varias versiones, sin hacerlo suyo.
+  note: 'Centro: punto de OpenBible para Libia, el mismo de la ficha libia. El radio de 500 km es nuestro y solo marca la
+    región.'
+  coord_source: openbible:ac12af9
+  coord_url: https://www.openbible.info/geo/ancient/ac12af9/libya
+  checked_on: '2026-10-13'
+  status: alternative
+coord_note: 'Sin punto: jw.org no sabe qué pueblo era. Libia es la propuesta que recoge Perspicacia.'
+summary: Pueblo sin identificar, aliado de Egipto, que Ezequiel pone junto a Etiopía, Put y Lud entre los que caerían a espada
+  cuando el juicio llegara a Egipto.
+reason: Perspicacia «Cub»; Eze 30:4, 5. El mapa solo muestra la región que propone ese artículo.
+not_claimed:
+- 'Que Cub sea Libia: Perspicacia solo dice que algunos lo piensan.'
+sources:
+- it-cub
+- it-libia
+- openbible-geo
+- ezequiel-30
+links:
+- title: 'Perspicacia: «Cub»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Cub/
+  type: perspicacia
+- title: Ezequiel 30 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/ezequiel/30/
+  type: bible
+checked_on: '2026-10-13'
+status: verified

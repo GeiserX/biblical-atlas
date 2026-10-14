@@ -18,6 +18,7 @@ sources:
 - it-minit
 - openbible-geo
 - jueces-11
+- ezequiel-27
 links:
 - title: 'Perspicacia: «Minit»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Minit/
@@ -25,5 +26,5 @@ links:
 - title: Jueces 11 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/jueces/11/
   type: bible
-checked_on: '2026-09-29'
+checked_on: '2026-10-13'
 status: verified
