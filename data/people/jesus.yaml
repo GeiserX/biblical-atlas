@@ -123,6 +123,8 @@ sources:
 - filipenses-2
 - colosenses-1
 - it-emmanuel
+- 1-juan-1
+- 1-juan-5
 not_claimed:
 - 'Que Jesús naciera el 25 de diciembre: Perspicacia lo descarta porque los pastores pasaban la noche al raso.'
 - 'Un día exacto de nacimiento: las fuentes dicen hacia el 1 de octubre.'
@@ -445,7 +447,7 @@ history:
   change: La razón de vivio_en capernaum citaba Mt 9:1 como «su propia ciudad»; la TNM de estudio dice «su ciudad».
   source: mateo-9
 disambiguation: Jesucristo; no Jesús hijo de Eliezer, antepasado suyo en la genealogía de Lucas.
-checked_on: '2026-09-30'
+checked_on: '2026-10-14'
 status: verified
 distinct_from:
 - jesus-hijo-de-eliezer
