@@ -12,6 +12,7 @@ distinct_from:
 - eliezer-hijo-de-beker
 - eliezer-trompetista
 - eliezer-hijo-de-zicri
+- eliezer-hijo-de-dodavahu
 summary: Antepasado de María, madre de Jesús. En la lista de Lucas es hijo de Jorim y padre de Jesús.
 reason: Perspicacia «Eliezer», núm. 11; Lu 3:29.
 sources:
@@ -34,5 +35,5 @@ relations:
   reason: 'Lu 3:29: Eliezer, hijo de Jorim.'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified

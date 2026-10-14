@@ -1,0 +1,30 @@
+# biblical-atlas: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: tadmor
+name: Tadmor
+names:
+- name: Tadmor
+- name: Palmira
+  note: Nombre que le daban griegos y romanos, si la identificación que recoge Perspicacia es correcta.
+type: city
+lat: 34.547
+lon: 38.274
+precision: uncertain
+coord_source: openbible:ad797fe
+coord_url: https://www.openbible.info/geo/ancient/ad797fe/tadmor
+coord_note: Palmira, única identificación de OpenBible y la que Perspicacia cree probable sin darla por segura.
+summary: Ciudad del desierto que Salomón fortificó tras sus veinte años de obras. Se cree que era Palmira, un oasis del desierto
+  sirio unos 210 km al nordeste de Damasco, quizá guarnición de la frontera norte y parada de caravanas.
+reason: 'Perspicacia «Tadmor»; 2Cr 8:4. OpenBible: solo el punto.'
+not_claimed:
+- 'Que Tadmor sea la Tamar de 1Re 9:18: Perspicacia «Tamar», núm. 4, cree que son dos ciudades distintas.'
+sources:
+- it-tadmor
+- openbible-geo
+- 2-cronicas-8
+- it-tamar
+links:
+- title: 'Perspicacia: «Tadmor»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Tadmor/
+  type: perspicacia
+checked_on: '2026-10-13'
+status: verified

@@ -12,6 +12,8 @@ sources:
 - it-neko
 - 2-reyes-23
 - jeremias-46
+- 2-cronicas-35
+- 2-cronicas-36
 links:
 - title: 'Perspicacia: «Nekó, Nekoh»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Nek%C3%B3-Nekoh/
@@ -20,7 +22,7 @@ links:
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-reyes/23/
   type: bible
 perspicacia: '1200003203'
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified
 relations:
 - type: holds_office
@@ -31,8 +33,10 @@ relations:
   - 2-reyes-23
   - it-neko
   - jeremias-46
+  - 2-cronicas-35
+  - 2-cronicas-36
   reason: 2Re 23:29 lo llama el faraón Nekó, rey de Egipto.
-  checked_on: '2026-10-12'
+  checked_on: '2026-10-13'
   status: verified
 - type: tie
   person: nabucodonosor-ii

@@ -1,0 +1,40 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: eden-hijo-de-joa
+name: Edén
+names:
+- name: Edén
+perspicacia: 1200001256#3
+summary: Levita guersonita, hijo de Joá, que respondió a la llamada de Ezequías para limpiar el templo. Después repartió contribuciones
+  santas bajo Coré, el portero del este.
+reason: Perspicacia «Edén», núm. 3; 2Cr 29:12; 31:14, 15.
+sources:
+- it-eden
+- 2-cronicas-29
+- 2-cronicas-31
+links:
+- title: 'Perspicacia: «Edén»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ed%C3%A9n/
+  type: perspicacia
+relations:
+- type: kin
+  person: joa-levita-de-ezequias
+  word: father
+  inferred: true
+  sources:
+  - 2-cronicas-29
+  - it-joah
+  reason: '2Cr 29:12: «Edén hijo de Joá», justo tras Joá hijo de Zimá; Perspicacia «Joah», núm. 2, dice que Joá trabajó con
+    su hijo.'
+  checked_on: '2026-10-13'
+  status: verified
+- inferred: false
+  type: accompanies
+  person: core-hijo-de-imna
+  word: fellow_worker
+  sources:
+  - 2-cronicas-31
+  reason: '2Cr 31:15: repartía las porciones en las ciudades de los sacerdotes bajo la dirección de Coré.'
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified

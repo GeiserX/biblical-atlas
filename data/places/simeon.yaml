@@ -33,6 +33,7 @@ sources:
 - openbible-geo
 - josue-19
 - 1-cronicas-4
+- 2-cronicas-34
 links:
 - title: 'Perspicacia: «Simeón»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sime%C3%B3n/
@@ -40,5 +41,5 @@ links:
 - title: Josué 19 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Josu%C3%A9/19/
   type: bible
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified

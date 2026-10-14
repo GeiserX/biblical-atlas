@@ -41,10 +41,11 @@ relations:
   reason: '1Cr 9:2, 3, 12: de los sacerdotes que vivían en Jerusalén.'
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified
 distinct_from:
 - adaya-hijo-de-etan
 - adaya-hijo-de-simei
 - adaya-padre-de-jedida
+- adaya-padre-de-maaseya
 disambiguation: 'Adaya núm. 6 de Perspicacia: sacerdote, hijo de Jeroham. No el abuelo materno de Josías.'

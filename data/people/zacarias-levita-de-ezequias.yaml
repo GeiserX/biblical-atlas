@@ -1,0 +1,51 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: zacarias-levita-de-ezequias
+name: Zacarías
+names:
+- name: Zacarías
+perspicacia: 1200004681#17
+summary: Levita descendiente de Asaf. Cuando Ezequías reabrió la casa de Jehová, se santificó y trabajó en su purificación.
+reason: Perspicacia «Zacarías», núm. 17; 2Cr 29:13, 15-17.
+sources:
+- it-zacarias
+- 2-cronicas-29
+links:
+- title: 'Perspicacia: «Zacarías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zacar%C3%ADas/
+  type: perspicacia
+disambiguation: El levita de los hijos de Asaf en días de Ezequías (Perspicacia «Zacarías», núm. 17); no el abuelo materno
+  del rey ni los demás Zacarías.
+distinct_from:
+- zacarias-abuelo-de-ezequias
+- zacarias-consejero-de-uzias
+- zacarias-de-israel
+- zacarias-descendiente-de-isias
+- zacarias-el-rubenita
+- zacarias-hijo-de-benaya
+- zacarias-hijo-de-hosa
+- zacarias-hijo-de-jeberekias
+- zacarias-hijo-de-jehoiada
+- zacarias-hijo-de-jehosafat
+- zacarias-hijo-de-meselemias
+- zacarias-musico
+- zacarias-padre-de-ido
+- zacarias-padre-de-juan
+- zacarias-principe-de-jehosafat
+- zacarias-profeta
+- zacarias-trompetista
+- zeker
+- zacarias-levita-de-josias
+- zacarias-sacerdote-de-josias
+relations:
+- type: kin
+  person: asaf-hijo-de-berekias
+  word: ancestor
+  inferred: false
+  sources:
+  - 2-cronicas-29
+  - it-zacarias
+  reason: 2Cr 29:13 lo cuenta entre los hijos de Asaf, es decir, sus descendientes.
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified

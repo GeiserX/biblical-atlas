@@ -1,0 +1,35 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: adna-general-de-jehosafat
+name: Adná
+names:
+- name: Adná
+- name: Adnah
+  note: Otra grafía, la de la nota de 2Cr 17:14 y la del título de Perspicacia.
+perspicacia: 1200000108#2
+summary: Jefe de los guerreros de Judá en el ejército de Jehosafat, con 300.000 hombres; Jehohanán y Amasíah estaban bajo
+  su mando. Servían al rey en Jerusalén.
+reason: Perspicacia «Adnah», núm. 2; 2Cr 17:13, 14, 19.
+sources:
+- it-adnah
+- 2-cronicas-17
+links:
+- title: 'Perspicacia: «Adnah»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Adnah/
+  type: perspicacia
+relations:
+- type: tie
+  person: jehosafat
+  word: master
+  sources:
+  - 2-cronicas-17
+  - it-adnah
+  reason: '2Cr 17:14, 19: jefe de mil de Judá; él y los demás jefes servían al rey en Jerusalén.'
+  inferred: false
+  checked_on: '2026-10-13'
+  status: verified
+disambiguation: Jefe de Judá en el ejército de Jehosafat (Perspicacia «Adnah», núm. 2); no Adná de Manasés, que se pasó a
+  David en Ziclag.
+checked_on: '2026-10-13'
+status: verified
+distinct_from:
+- adna-de-manases

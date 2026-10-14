@@ -1,0 +1,22 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: abdi-padre-de-quis
+name: Abdí
+names:
+- name: Abdí
+perspicacia: 1200000014#2
+summary: Levita merarita, padre de Quis. Perspicacia cree probable que viviera en tiempos de Jotán y de Acaz, y no en los
+  de David.
+reason: Perspicacia «Abdí», núm. 2; 2Cr 29:12.
+sources:
+- it-abdi
+- 2-cronicas-29
+links:
+- title: 'Perspicacia: «Abdí»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Abd%C3%AD/
+  type: perspicacia
+disambiguation: El padre del Quis de los días de Ezequías (Perspicacia «Abdí», núm. 2); no Abdí hijo de Maluc, que Perspicacia
+  pone unos 250 años antes.
+distinct_from:
+- abdi-hijo-de-maluc
+checked_on: '2026-10-13'
+status: verified

@@ -22,6 +22,8 @@ sources:
 - it-jehozabad
 - 2-reyes-12
 - tnm-a6-a
+- 2-cronicas-24
+- it-simrit
 links:
 - title: 'Perspicacia: «Jehozabad»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jehozabad/
@@ -47,10 +49,22 @@ relations:
   inferred: false
   sources:
   - 2-reyes-12
+  - 2-cronicas-24
   reason: '2Re 12:20, 21: era uno de los siervos de Jehoás.'
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-13'
   status: verified
-checked_on: '2026-10-12'
+- type: kin
+  person: simrit
+  word: mother
+  inferred: false
+  sources:
+  - 2-cronicas-24
+  - it-jehozabad
+  reason: 2Cr 24:26 lo llama hijo de Simrit la moabita; Perspicacia «Jehozabad», núm. 3, la da como su madre.
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
 status: verified
 distinct_from:
 - jehozabad-hijo-de-obed-edom
+- jehozabad-oficial-de-jehosafat

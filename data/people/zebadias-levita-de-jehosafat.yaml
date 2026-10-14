@@ -1,0 +1,27 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: zebadias-levita-de-jehosafat
+name: Zebadías
+names:
+- name: Zebadías
+perspicacia: 1200004670#6
+summary: Levita del grupo que Jehosafat mandó en su año tercero a recorrer las ciudades de Judá para instruir al pueblo con
+  el libro de la Ley.
+reason: Perspicacia «Zebadías», núm. 6; 2Cr 17:7-9.
+sources:
+- it-zebadias
+- 2-cronicas-17
+links:
+- title: 'Perspicacia: «Zebadías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zebad%C3%ADas/
+  type: perspicacia
+disambiguation: Levita que Jehosafat mandó a instruir en la Ley (Perspicacia «Zebadías», núm. 6); no Zebadías hijo de Asahel ni
+  Zebadías hijo de Ismael.
+checked_on: '2026-10-13'
+status: verified
+distinct_from:
+- zebadias-descendiente-de-berias
+- zebadias-descendiente-de-elpaal
+- zebadias-hijo-de-asahel
+- zebadias-hijo-de-ismael
+- zebadias-hijo-de-jeroham
+- zebadias-hijo-de-meselemias

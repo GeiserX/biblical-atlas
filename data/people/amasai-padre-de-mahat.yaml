@@ -1,0 +1,23 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: amasai-padre-de-mahat
+name: Amasái
+names:
+- name: Amasái
+perspicacia: 1200000221#4
+summary: Levita de la familia de Cohat. Su hijo Máhat ayudó a purificar la casa de Jehová cuando Ezequías la reabrió.
+reason: Perspicacia «Amasai», núm. 4; 2Cr 29:12.
+sources:
+- it-amasai
+- 2-cronicas-29
+links:
+- title: 'Perspicacia: «Amasai»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Amasai/
+  type: perspicacia
+disambiguation: El padre del Máhat de los días de Ezequías (Perspicacia «Amasai», núm. 4); no el hijo de Elcaná (núm. 1),
+  ni el jefe de los treinta, ni el sacerdote trompetista.
+distinct_from:
+- amasai-hijo-de-elcana
+- amasai-jefe-de-los-treinta
+- amasai-trompetista
+checked_on: '2026-10-13'
+status: verified

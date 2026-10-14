@@ -14,6 +14,7 @@ distinct_from:
 - salum-hijo-de-sadoc
 - silem
 - salum-jefe-de-los-porteros
+- salum-padre-de-jehizquias
 date:
   from: -790
   to: -790
@@ -73,5 +74,5 @@ relations:
   checked_on: '2026-09-30'
   status: verified
 perspicacia: 1200003933#5
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified

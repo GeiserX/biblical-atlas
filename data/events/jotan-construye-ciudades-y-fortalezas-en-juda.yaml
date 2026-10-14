@@ -1,0 +1,41 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jotan-construye-ciudades-y-fortalezas-en-juda
+title: Jotán construye ciudades, fortalezas y torres en Judá
+date:
+  from: -776
+  to: -761
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 777 y 762 a.e.c. (tiempo narrativo: durante el reinado de Jotán)'
+narrative_order:
+  series: 2-cronicas
+  order: 27003
+places:
+- jerusalen
+- juda
+people:
+- jotan
+present:
+- jotan
+passages:
+- 2Cr 27:3, 4
+summary: Jotán levanta buena parte de la muralla de Ofel, en Jerusalén. En las montañas de Judá funda ciudades, y en los bosques
+  levanta fortalezas y torres.
+reason: 2Cr 27:3, 4; Perspicacia «Jotán», núm. 3, cuenta estas obras en su reinado (777-762 a.e.c., A6-B). Ofel está en los
+  nombres de Jerusalén.
+sources:
+- 2-cronicas-27
+- it-jotan
+- it-ofel
+- tnm-a6-b
+links:
+- title: 'Perspicacia: «Jotán»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jot%C3%A1n/
+  type: perspicacia
+- title: 2 Crónicas 27 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-Cr%C3%B3nicas/27/
+  type: bible
+checked_on: '2026-10-13'
+status: verified

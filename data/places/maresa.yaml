@@ -23,6 +23,8 @@ sources:
 - openbible-geo
 - josue-15
 - miqueas-1
+- 2-cronicas-11
+- 2-cronicas-20
 links:
 - title: 'Perspicacia: «Maresá, Maresah»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Mares%C3%A1-Maresah/
@@ -34,5 +36,5 @@ history:
 - date: '2026-09-29'
   change: La razón cita también Miq 1:15, que nombra esta Maresá; la ficha se fundió con la de Miqueas.
   source: miqueas-1
-checked_on: '2026-09-29'
+checked_on: '2026-10-13'
 status: verified

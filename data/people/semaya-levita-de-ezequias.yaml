@@ -1,0 +1,46 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: semaya-levita-de-ezequias
+name: Semaya
+names:
+- name: Semaya
+perspicacia: 1200004000#8
+summary: Levita descendiente de Jedutún al que Ezequías encargó en su primer año limpiar el templo; llevó con los demás lo
+  impuro al Cedrón. Quizá sea el Semaya de 2Cr 31:15.
+reason: Perspicacia «Semaya», núm. 8; 2Cr 29:14-16.
+sources:
+- it-semaya
+- 2-cronicas-29
+links:
+- title: 'Perspicacia: «Semaya»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Semaya/
+  type: perspicacia
+disambiguation: El descendiente de Jedutún de los días de Ezequías (Perspicacia «Semaya», núm. 8); no el profeta de Rehoboam,
+  ni el levita de Jehosafat, ni los demás Semaya.
+distinct_from:
+- semaya-de-nehelam
+- semaya-hijo-de-galal
+- semaya-hijo-de-hasub
+- semaya-hijo-de-joel
+- semaya-hijo-de-netanel
+- semaya-hijo-de-obed-edom
+- semaya-hijo-de-secanias
+- semaya-jefe-de-la-casa-de-elizafan
+- semaya-levita-de-jehosafat
+- semaya-padre-de-delaya
+- semaya-padre-de-uriya
+- semaya-profeta
+- semaya-simeonita
+- semaya-levita-de-josias
+relations:
+- type: kin
+  person: jedutun-musico
+  word: ancestor
+  inferred: false
+  sources:
+  - 2-cronicas-29
+  - it-semaya
+  reason: 2Cr 29:14 lo cuenta entre los hijos de Jedutún; Perspicacia «Semaya», núm. 8, lo llama su descendiente.
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified

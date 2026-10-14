@@ -20,17 +20,24 @@ people:
 passages:
 - 1Re 7:48-50
 - 2Cr 4:19-22
-summary: Salomón manda hacer de oro el altar, la mesa del pan de la presencia, los diez candelabros, las lámparas, los demás
-  utensilios y las bisagras de las puertas del Santísimo y del Santo.
+- 2Cr 4:7, 8
+summary: Salomón manda hacer de oro el altar, las mesas del pan de la presencia, los diez candelabros con sus lámparas, cien
+  tazones, los demás utensilios y las bisagras de las puertas del Santísimo y del Santo.
 reason: 1Re 7:48-50. Es parte de la obra del templo, que el estudio 3 pone entre 1034 y 1027 a.e.c.; Perspicacia «Salomón»
   lee 7:13-51 como la vuelta al relato del templo.
 sources:
 - 1-reyes-7
 - si-3
 - it-salomon
+- 2-cronicas-4
+- it-templo
 links:
 - title: 1 Reyes 7 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/1-reyes/7/
   type: bible
-checked_on: '2026-09-30'
+history:
+- date: '2026-10-13'
+  change: 'Mesas en plural y cien tazones: 2Cr 4:8, 19 dan diez mesas, como Perspicacia «Templo»; 1Re 7:48 solo nombra una.'
+  source: 2-cronicas-4
+checked_on: '2026-10-13'
 status: verified

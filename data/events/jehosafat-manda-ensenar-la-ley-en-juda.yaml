@@ -1,0 +1,65 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jehosafat-manda-ensenar-la-ley-en-juda
+title: Jehosafat manda enseñar la Ley por las ciudades de Judá
+date:
+  from: -933
+  to: -933
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 934 a.e.c.
+narrative_order:
+  series: 2-cronicas
+  order: 17007
+places:
+- juda
+present:
+- ben-hail
+- abdias-principe-de-jehosafat
+- zacarias-principe-de-jehosafat
+- netanel-principe-de-jehosafat
+- micaya-principe-de-jehosafat
+- semaya-levita-de-jehosafat
+- netanias-levita-de-jehosafat
+- zebadias-levita-de-jehosafat
+- asahel-levita-de-jehosafat
+- semiramot-levita-de-jehosafat
+- jehonatan-levita-de-jehosafat
+- adonias-levita-de-jehosafat
+- tobiya-levita-de-jehosafat
+- tob-adonias
+- elisama-sacerdote-de-jehosafat
+- jehoram-sacerdote-de-jehosafat
+people:
+- jehosafat
+- ben-hail
+- abdias-principe-de-jehosafat
+- zacarias-principe-de-jehosafat
+- netanel-principe-de-jehosafat
+- micaya-principe-de-jehosafat
+- semaya-levita-de-jehosafat
+- netanias-levita-de-jehosafat
+- zebadias-levita-de-jehosafat
+- asahel-levita-de-jehosafat
+- semiramot-levita-de-jehosafat
+- jehonatan-levita-de-jehosafat
+- adonias-levita-de-jehosafat
+- tobiya-levita-de-jehosafat
+- tob-adonias
+- elisama-sacerdote-de-jehosafat
+- jehoram-sacerdote-de-jehosafat
+passages:
+- 2Cr 17:7-9
+summary: En su año tercero, Jehosafat envía a cinco príncipes, nueve levitas y dos sacerdotes con el libro de la Ley de Jehová,
+  y recorren todas las ciudades de Judá instruyendo al pueblo.
+reason: 2Cr 17:7 lo pone en el año tercero del rey; Perspicacia «Zacarías», núm. 10, «Semaya», núm. 7, y «Jehoram», núm. 1,
+  dan 934 a.e.c. El rey los envía, no va con ellos.
+sources:
+- 2-cronicas-17
+- it-zacarias
+- it-semaya
+- it-jehoram
+- it-jehosafat
+checked_on: '2026-10-13'
+status: verified

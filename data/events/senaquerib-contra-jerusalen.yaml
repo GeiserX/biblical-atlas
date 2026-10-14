@@ -24,6 +24,7 @@ people:
 passages:
 - 2Re 18:13-19:36
 - Is 36:1-37:37
+- 2Cr 32:1-22
 summary: En el año 14 de Ezequías, Senaquerib toma ciudades de Judá y desde Lakís exige la rendición de Jerusalén. Isaías
   anima al rey; un ángel mata a 185.000 asirios.
 reason: El estudio 3 fecha la invasión en 732; Perspicacia «Ezequías», párr. 11, 14 y 16, y «Lakís», párr. 5.
@@ -37,6 +38,7 @@ sources:
 - it-rabsaque
 - isaias-37
 - it-libna
+- 2-cronicas-32
 links:
 - title: 'Perspicacia: «Ezequías»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ezequ%C3%ADas/
@@ -62,5 +64,5 @@ history:
 narrative_order:
   series: 2-reyes
   order: 18013
-checked_on: '2026-09-30'
+checked_on: '2026-10-13'
 status: verified

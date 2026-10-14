@@ -23,6 +23,7 @@ sources:
 - oseas-1
 - 1-reyes-19
 - it-nimsi
+- 2-cronicas-22
 links:
 - title: 'Perspicacia: «Jehú»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jeh%C3%BA/
@@ -49,9 +50,10 @@ relations:
   - it-nimsi
   - it-jehu
   - 2-reyes-9
+  - 2-cronicas-22
   reason: 1Re 19:16 lo llama nieto de Nimsí; también 2Re 9:2, 14.
   inferred: false
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-13'
   status: verified
 - type: kin
   person: jehosafat-hijo-de-nimsi
@@ -109,7 +111,7 @@ history:
   change: Ramot-Galaad, como la escribe la TNM (1Re 22:3).
   source: 1-reyes-19
 perspicacia: 1200002401#3
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified
 distinct_from:
 - jehu-hijo-de-hanani

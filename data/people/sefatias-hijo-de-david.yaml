@@ -52,10 +52,11 @@ relations:
   reason: '2Sa 3:4, 5: nacido en Hebrón.'
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified
 distinct_from:
 - sefatias-hijo-de-matan
 - sefatias-hijo-de-reuel
 - sefatias-el-harifita
 - sefatias-hijo-de-maaca
+- sefatias-hijo-de-jehosafat

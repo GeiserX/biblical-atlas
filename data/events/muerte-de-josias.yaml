@@ -12,13 +12,16 @@ date:
 places:
 - meguido
 - jerusalen
+- valle-de-jezreel
 people:
 - josias
 - neko
 - jehoacaz-de-juda
+- jeremias-profeta
 passages:
 - 2Re 23:29-30
 - 2Cr 35:20-25
+- 2Cr 36:1
 summary: El faraón Nekó marcha hacia el Éufrates para ayudar a Asiria. Josías sale a detenerlo en Meguidó y cae herido de
   muerte; muere camino de Jerusalén o al llegar, y el pueblo corona a su hijo Jehoacaz.
 reason: 'A6-B y el estudio 3 ponen el comienzo de Jehoacaz en 628; Perspicacia «Josías», núm. 1, párr. 9, y «Meguidó», párr.
@@ -36,6 +39,7 @@ sources:
 - it-meguido
 - 2-reyes-23
 - 2-cronicas-35
+- 2-cronicas-36
 history:
 - date: '2026-09-28'
   change: Perspicacia «Josías» y «Carquemis» fechaban la muerte hacia 629 a.e.c.; A6-B, más reciente, pone a su sucesor en
@@ -69,5 +73,5 @@ search: muerte de Josías Meguidó Nekó
 narrative_order:
   series: 2-reyes
   order: 23029
-checked_on: '2026-09-30'
+checked_on: '2026-10-13'
 status: verified

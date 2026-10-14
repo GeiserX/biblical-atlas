@@ -26,6 +26,9 @@ sources:
 - 1-reyes-13
 - 1-reyes-15
 - 1-reyes-16
+- 2-cronicas-10
+- 2-cronicas-11
+- 2-cronicas-13
 links:
 - title: 'Perspicacia: «Jeroboán»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jerobo%C3%A1n/
@@ -67,8 +70,11 @@ relations:
   - 2-reyes-9
   - 2-reyes-10
   - 2-reyes-17
+  - 2-cronicas-9
+  - 2-cronicas-10
+  - 2-cronicas-13
   reason: '1Re 11:26: Jeroboán hijo de Nebat.'
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-13'
   status: verified
 - type: kin
   person: zerua
@@ -96,8 +102,9 @@ relations:
   sources:
   - 1-reyes-11
   - it-jeroboan
+  - 2-cronicas-13
   reason: '1Re 11:26, 28: siervo de Salomón, que lo puso sobre el trabajo obligatorio de la casa de José.'
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-13'
   status: verified
 - type: lived_in
   place: egipto
@@ -106,8 +113,9 @@ relations:
   - 1-reyes-11
   - 1-reyes-12
   - it-jeroboan
+  - 2-cronicas-10
   reason: '1Re 11:40 y 12:2: huyó a Egipto y vivió allí hasta la muerte de Salomón.'
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-13'
   status: verified
 - type: tie
   person: sisaq
@@ -133,5 +141,5 @@ history:
     la nota da también «fortificó».
   source: 1-reyes-11
 perspicacia: 1200002431#1
-checked_on: '2026-09-30'
+checked_on: '2026-10-13'
 status: verified

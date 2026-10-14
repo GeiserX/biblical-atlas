@@ -23,6 +23,10 @@ sources:
 - 1-reyes-11
 - 1-reyes-15
 - 1-cronicas-3
+- 2-cronicas-9
+- 2-cronicas-10
+- 2-cronicas-11
+- 2-cronicas-12
 links:
 - title: 'Perspicacia: «Rehoboam»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Rehoboam/
@@ -41,8 +45,12 @@ relations:
   - mateo-1
   - 1-reyes-14
   - 1-cronicas-3
+  - 2-cronicas-9
+  - 2-cronicas-10
+  - 2-cronicas-11
+  - 2-cronicas-13
   reason: 1Re 11:43 lo presenta como hijo y sucesor de Salomón.
-  checked_on: '2026-10-12'
+  checked_on: '2026-10-13'
   status: verified
 - type: succeeds
   person: salomon
@@ -51,8 +59,9 @@ relations:
   - it-rehoboam
   - 1-reyes-11
   - 1-reyes-12
+  - 2-cronicas-9
   reason: Subió al trono al morir su padre (1Re 11:43).
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-13'
   office: king
   status: verified
 - type: kin
@@ -62,27 +71,31 @@ relations:
   - 1-reyes-14
   - it-naama
   - it-rehoboam
+  - 2-cronicas-12
   reason: '1Re 14:21, 31: su madre se llamaba Naamá la ammonita.'
   inferred: false
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-13'
   status: verified
 - type: lived_in
   place: jerusalen
   sources:
   - 1-reyes-14
   - it-rehoboam
+  - 2-cronicas-11
+  - 2-cronicas-12
   reason: '1Re 14:21: reinó diecisiete años en Jerusalén.'
   inferred: false
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-13'
   status: verified
 - type: died_in
   place: jerusalen
   sources:
   - 1-reyes-14
+  - 2-cronicas-12
   reason: 1Re 14:31 da su sepultura en la Ciudad de David, no el sitio de su muerte; tomamos el del entierro, la ciudad donde
     reinaba.
   inferred: true
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-13'
   status: verified
 - type: tie
   person: jeroboan-i
@@ -100,26 +113,61 @@ relations:
   - it-rehoboam
   - tnm-a6-a
   - 1-reyes-15
+  - 2-cronicas-12
   reason: '1Re 14:30: hubo guerra entre Rehoboam y Jeroboán durante todo su reinado; fechas de A6-A.'
   inferred: false
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-13'
   status: verified
 - type: kin
   person: maaca-hija-de-uriel
   word: wife
-  inferred: true
+  inferred: false
   sources:
   - it-maaca
   - it-abias
   - 1-reyes-15
-  reason: 'Perspicacia «Maacá», núm. 9, y «Abías», núm. 5: su esposa preferida (2Cr 11:20-22). 1Re 15:2 la da como madre de
-    Abiyam.'
-  checked_on: '2026-09-30'
+  - 2-cronicas-11
+  reason: '2Cr 11:20, 21: se casó con Maacá, nieta de Absalón, y la amó por encima de sus demás esposas; Perspicacia «Maacá»,
+    núm. 9. 1Re 15:2 la da como madre de Abiyam.'
+  checked_on: '2026-10-13'
+  status: verified
+- type: kin
+  person: mahalat-hija-de-jerimot
+  word: wife
+  inferred: false
+  sources:
+  - 2-cronicas-11
+  - it-mahalat
+  - it-rehoboam
+  reason: '2Cr 11:18: Rehoboam se casó con Mahalat, nieta de David.'
+  checked_on: '2026-10-13'
+  status: verified
+- type: tie
+  person: sisaq
+  word: enemy
+  date:
+    from: -992
+    to: -992
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 993 a.e.c.
+  inferred: false
+  sources:
+  - 2-cronicas-12
+  - it-sisaq
+  - si-3
+  reason: '2Cr 12:2-9: en el quinto año de Rehoboam, Sisac sube contra Jerusalén y se lleva sus tesoros.'
+  checked_on: '2026-10-13'
   status: verified
 perspicacia: '1200003680'
 history:
 - date: '2026-09-30'
   change: La TNM escribe Sisac (1Re 11:40; 14:25); Sisaq es la forma de Perspicacia.
   source: 1-reyes-14
-checked_on: '2026-10-12'
+- date: '2026-10-13'
+  change: 'La boda con Maacá pasa a inferred: false: 2Cr 11:20, 21 la cuenta, y antes solo se deducía de 1 Reyes y de Perspicacia.'
+  source: 2-cronicas-11
+checked_on: '2026-10-13'
 status: verified

@@ -1,0 +1,20 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jehalelel-padre-de-azarias
+name: Jehalelel
+names:
+- name: Jehalelel
+perspicacia: 1200002362#2
+summary: Levita de la familia de Merarí. Su hijo Azarías ayudó a limpiar el templo en el reinado de Ezequías.
+reason: Perspicacia «Jehalelel», núm. 2; 2Cr 29:12.
+sources:
+- it-jehalelel
+- 2-cronicas-29
+links:
+- title: 'Perspicacia: «Jehalelel»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jehalelel/
+  type: perspicacia
+disambiguation: El levita merarita (Perspicacia «Jehalelel», núm. 2); no el Jehalelel de la tribu de Judá (núm. 1).
+distinct_from:
+- jehalelel-de-juda
+checked_on: '2026-10-13'
+status: verified

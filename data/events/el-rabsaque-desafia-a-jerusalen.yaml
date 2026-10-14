@@ -47,6 +47,7 @@ sources:
 - it-tartan
 - it-rabsaris
 - it-estanque
+- 2-cronicas-32
 links:
 - title: Isaías 36 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Isa%C3%ADas/36/
@@ -62,5 +63,5 @@ history:
   change: 'Se funde con el suceso de 2 Reyes, dueño del relato: toma su título, su resumen con el tartán y el rabsarís, su
     orden y 2Cr 32:9-19. Sitio y presentes siguen: la escena es junto al canal.'
   source: 2-reyes-18
-checked_on: '2026-09-30'
+checked_on: '2026-10-13'
 status: verified

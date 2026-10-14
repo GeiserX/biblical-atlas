@@ -1,0 +1,66 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: los-levitas-purifican-el-templo
+title: Sacerdotes y levitas purifican el templo en dieciséis días
+date:
+  from: -744
+  to: -744
+  precision: month
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: del 1 al 16 de nisán de 745 a.e.c.
+  detail:
+    month: nisan
+narrative_order:
+  series: 2-cronicas
+  order: 29012
+places:
+- monte-moria
+- jerusalen
+- valle-de-cedron
+people:
+- ezequias
+- mahat-levita-de-ezequias
+- joel-levita-de-ezequias
+- quis-hijo-de-abdi
+- azarias-hijo-de-jehalelel
+- joa-levita-de-ezequias
+- eden-hijo-de-joa
+- simri-levita-de-ezequias
+- jeuel-levita-de-ezequias
+- zacarias-levita-de-ezequias
+- matanias-levita-de-ezequias
+- jehiel-levita-de-ezequias
+- simei-levita-de-ezequias
+- semaya-levita-de-ezequias
+- uziel-levita-de-ezequias
+present:
+- mahat-levita-de-ezequias
+- joel-levita-de-ezequias
+- quis-hijo-de-abdi
+- azarias-hijo-de-jehalelel
+- joa-levita-de-ezequias
+- eden-hijo-de-joa
+- simri-levita-de-ezequias
+- jeuel-levita-de-ezequias
+- zacarias-levita-de-ezequias
+- matanias-levita-de-ezequias
+- jehiel-levita-de-ezequias
+- simei-levita-de-ezequias
+- semaya-levita-de-ezequias
+- uziel-levita-de-ezequias
+passages:
+- 2Cr 29:12-19
+summary: Catorce levitas de las casas de Cohat, Merarí, Guersón, Elizafán, Asaf, Hemán y Jedutún reúnen a sus hermanos. Los
+  sacerdotes sacan al patio lo impuro y los levitas lo arrojan al Cedrón. Al final informan a Ezequías.
+reason: '2Cr 29:17: empiezan el día 1 del primer mes y acaban el 16. Perspicacia «Semaya», núm. 8, y «Azarías», núm. 16, fechan
+  la limpieza en 745, primer año de Ezequías. El rey recibe el informe, no está en el templo.'
+sources:
+- 2-cronicas-29
+- it-ezequias
+- tnm-a6-b
+- it-cedron
+- it-semaya
+- it-azarias
+checked_on: '2026-10-13'
+status: verified

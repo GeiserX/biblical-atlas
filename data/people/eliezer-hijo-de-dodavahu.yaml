@@ -1,0 +1,47 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: eliezer-hijo-de-dodavahu
+name: Eliezer
+names:
+- name: Eliezer
+perspicacia: 1200001304#6
+disambiguation: El profeta hijo de Dodavahu (2Cr 20:37); no el siervo de Abrahán, el hijo de Moisés ni los demás Eliezer de
+  Perspicacia.
+distinct_from:
+- eliezer-de-damasco
+- eliezer-hijo-de-beker
+- eliezer-hijo-de-jorim
+- eliezer-hijo-de-moises
+- eliezer-hijo-de-zicri
+- eliezer-trompetista
+summary: Profeta, hijo de Dodavahu de Maresá. Anunció a Jehosafat que, por su alianza con Ocozías, Jehová echaría abajo sus
+  obras, y los barcos se destrozaron.
+reason: Perspicacia «Eliezer», núm. 6; 2Cr 20:35-37.
+sources:
+- it-eliezer
+- 2-cronicas-20
+links:
+- title: 'Perspicacia: «Eliezer»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Eliezer/
+  type: perspicacia
+relations:
+- type: kin
+  person: dodavahu
+  word: father
+  sources:
+  - 2-cronicas-20
+  - it-dodavahu
+  reason: '2Cr 20:37: Eliezer hijo de Dodavahu.'
+  inferred: false
+  checked_on: '2026-10-13'
+  status: verified
+- type: holds_office
+  office: prophet
+  sources:
+  - 2-cronicas-20
+  - it-eliezer
+  reason: '2Cr 20:37: profetizó contra Jehosafat; Perspicacia «Eliezer», núm. 6, lo llama el profeta.'
+  inferred: false
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified

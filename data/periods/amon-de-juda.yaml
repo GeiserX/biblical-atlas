@@ -19,10 +19,11 @@ sources:
 - tnm-a6-b
 - 2-reyes-21
 - it-amon
+- 2-cronicas-33
 history:
 - date: '2026-09-28'
   change: Perspicacia «Amón» daba 661-660 a.e.c.; A6-B, más reciente, empieza el reinado de Josías en 659.
   source: tnm-a6-b
 search: Amón rey
-checked_on: '2026-09-28'
+checked_on: '2026-10-13'
 status: verified

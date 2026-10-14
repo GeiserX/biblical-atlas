@@ -25,7 +25,7 @@ relations:
   reason: '1Cr 9:15: Zicrí, hijo de Asaf; Perspicacia «Zicrí», núm. 5, lo llama hijo de Asaf.'
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified
 distinct_from:
 - zicri-descendiente-de-eliezer
@@ -34,4 +34,7 @@ distinct_from:
 - zicri-descendiente-de-simei
 - zicri-hijo-de-izhar
 - zicri-padre-de-eliezer
+- zicri-guerrero-efraimita
+- zicri-padre-de-amasiah
+- zicri-padre-de-elisafat
 disambiguation: 'Zicrí núm. 5 de Perspicacia: levita, hijo de Asaf. No el hijo de Izhar.'

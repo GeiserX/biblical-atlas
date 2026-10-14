@@ -1,0 +1,25 @@
+# biblical-atlas: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: parvaim
+name: Parvaim
+names:
+- name: Parvaim
+type: region
+lat: null
+lon: null
+precision: uncertain
+coord_source: null
+coord_url: null
+candidates: []
+summary: Lugar de procedencia del oro con que Salomón recubrió la casa de Jehová. Ninguna publicación de jw.org dice dónde
+  estaba.
+reason: '2Cr 3:6. Sin punto ni zona: jw.org no lo sitúa y OpenBible solo junta propuestas dispares, entre ellas que no sea
+  nombre propio.'
+sources:
+- 2-cronicas-3
+- openbible-geo
+links:
+- title: 2 Crónicas 3 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-Cr%C3%B3nicas/3/
+  type: bible
+checked_on: '2026-10-13'
+status: pending

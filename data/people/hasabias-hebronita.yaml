@@ -37,9 +37,10 @@ relations:
   reason: 'Perspicacia «Hasabías», núm. 3: es posible que el hebronita de 1Cr 26:30 sea el hijo de Quemuel, el núm. 4.'
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified
 distinct_from:
 - hasabias-hijo-de-amasias
 - hasabias-hijo-de-jedutun
 - hasabias-padre-de-azricam
+- hasabias-levita-de-josias
