@@ -1,0 +1,62 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: atai-hijo-de-rehoboam
+name: Atái
+names:
+- name: Atái
+- name: Atai
+perspicacia: 1200000465#3
+disambiguation: Atái hijo de Rehoboam y Maacá (2Cr 11:20); no el nieto de Sesán hijo de Jarhá ni el guerrero gadita de David.
+distinct_from:
+- atai-hijo-de-jarha
+- atai-el-gadita
+summary: Segundo de los cuatro hijos que Maacá, la esposa preferida de Rehoboam, le dio al rey. Hermano del rey Abías y, por
+  su padre, nieto de Salomón.
+reason: Perspicacia «Atai», núm. 3; 2Cr 11:20, 21.
+sources:
+- it-atai
+- 2-cronicas-11
+links:
+- title: 'Perspicacia: «Atai»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Atai/
+  type: perspicacia
+relations:
+- type: kin
+  person: rehoboam
+  word: father
+  inferred: false
+  sources:
+  - 2-cronicas-11
+  - it-atai
+  reason: '2Cr 11:20: hijo de Rehoboam.'
+  checked_on: '2026-10-13'
+  status: verified
+- type: kin
+  person: maaca-hija-de-uriel
+  word: mother
+  inferred: false
+  sources:
+  - 2-cronicas-11
+  - it-atai
+  reason: '2Cr 11:20: Maacá tuvo con Rehoboam a Abías, Atái, Zizá y Selomit.'
+  checked_on: '2026-10-13'
+  status: verified
+- type: kin
+  person: ziza-hijo-de-rehoboam
+  word: brother
+  inferred: false
+  sources:
+  - 2-cronicas-11
+  reason: '2Cr 11:20: los dos están entre los hijos que Maacá dio a Rehoboam.'
+  checked_on: '2026-10-13'
+  status: verified
+- type: kin
+  person: selomit-hijo-de-rehoboam
+  word: brother
+  inferred: false
+  sources:
+  - 2-cronicas-11
+  reason: '2Cr 11:20: los dos están entre los hijos que Maacá dio a Rehoboam.'
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified

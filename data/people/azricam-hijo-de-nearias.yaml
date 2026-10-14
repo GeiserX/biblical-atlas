@@ -26,8 +26,9 @@ relations:
   status: verified
 disambiguation: 'Azricam núm. 4 de Perspicacia: descendiente de David, hijo de Nearías. No el benjamita hijo de Azel ni el
   levita merarita.'
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified
 distinct_from:
 - azricam-hijo-de-azel
 - azricam-hijo-de-hasabias
+- azricam-jefe-del-palacio

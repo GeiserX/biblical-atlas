@@ -1,0 +1,46 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jehiel-sacerdote-de-josias
+name: Jehiel
+names:
+- name: Jehiel
+perspicacia: 1200002366#7
+summary: Uno de los tres jefes de la casa de Dios en el reinado de Josías. Junto a Hilquías y Zacarías, entregó a los sacerdotes
+  animales que se sacrificaron en la gran Pascua.
+reason: Perspicacia «Jehiel», núm. 7, y «Zacarías», núm. 19; 2Cr 35:8.
+sources:
+- it-jehiel
+- 2-cronicas-35
+links:
+- title: 'Perspicacia: «Jehiel»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jehiel/
+  type: perspicacia
+disambiguation: El jefe del templo que dio animales para la Pascua de Josías (2Cr 35:8; Perspicacia «Jehiel», núm. 7); no
+  el músico de David ni los demás Jehiel.
+relations:
+- type: holds_office
+  office: leader
+  inferred: false
+  sources:
+  - 2-cronicas-35
+  reason: 2Cr 35:8 lo pone entre quienes dirigían la casa de Dios; Perspicacia «Jehiel», núm. 7, lo llama caudillo.
+  checked_on: '2026-10-13'
+  status: verified
+- type: holds_office
+  office: priest
+  inferred: true
+  sources:
+  - it-zacarias
+  - it-jehiel
+  - 2-cronicas-35
+  reason: Perspicacia «Zacarías», núm. 19, llama sacerdotes principales a los tres jefes de 2Cr 35:8, Jehiel entre ellos.
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified
+distinct_from:
+- jehiel-descendiente-de-ladan
+- jehiel-hijo-de-hacmoni
+- jehiel-musico
+- jehiel-hijo-de-jehosafat
+- jehiel-levita-de-ezequias
+- jehiel-comisionado-de-ezequias

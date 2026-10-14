@@ -30,6 +30,7 @@ sources:
 - it-salomon
 - 1-reyes-6
 - 1-reyes-7
+- 2-cronicas-5
 links:
 - title: 'Perspicacia: «Salomón»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Salom%C3%B3n/
@@ -53,5 +54,5 @@ history:
 - date: '2026-09-30'
   change: La inauguración es ahora su propio suceso (1 Reyes 8); la búsqueda apunta al final de la obra.
   source: 1-reyes-7
-checked_on: '2026-09-30'
+checked_on: '2026-10-13'
 status: verified

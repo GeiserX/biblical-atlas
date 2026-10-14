@@ -27,9 +27,13 @@ relations:
   reason: Perspicacia «Maaseya», núm. 6, lo llama sacerdote; Jer 21:1 lo nombra como padre de Sofonías.
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified
 distinct_from:
 - maaseya-padre-de-sedequias
 - maaseya-hijo-de-salum
 - maaseya-musico
+- maaseya-hijo-de-adaya
+- maaseya-funcionario
+- maaseya-hijo-del-rey
+- maaseya-jefe-de-jerusalen

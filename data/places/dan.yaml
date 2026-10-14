@@ -29,6 +29,7 @@ sources:
 - 1-reyes-15
 - jeremias-4
 - jeremias-8
+- 2-cronicas-16
 links:
 - title: 'Perspicacia: «Dan»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Dan/
@@ -44,5 +45,5 @@ history:
 - date: '2026-10-12'
   change: La razón cita el párrafo de Perspicacia y los versículos de donde sale lo nuevo del resumen.
   source: jeremias-8
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified

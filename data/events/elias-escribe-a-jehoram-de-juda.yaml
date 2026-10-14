@@ -1,0 +1,41 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: elias-escribe-a-jehoram-de-juda
+title: Elías escribe a Jehoram de Judá
+date:
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  from: -912
+  to: -905
+  text: 'entre 913 y 906 a.e.c. (tiempo narrativo: hacia el final del reinado de Jehoram de Judá)'
+narrative_order:
+  series: 2-cronicas
+  order: 21012
+places:
+- jerusalen
+- juda
+people:
+- elias-profeta
+- jehoram-de-juda
+present: []
+type: writing
+roles:
+  elias-profeta: wrote
+passages:
+- 2Cr 21:12-15
+summary: 'Llega a Jehoram un escrito del profeta Elías: por imitar a los reyes de Israel y matar a sus hermanos, Jehová castigará
+  a su pueblo y a su familia, y él caerá enfermo de los intestinos.'
+reason: Perspicacia «Elías», núm. 1, pone la carta hacia el final de los ocho años de Jehoram, que empezaron en 913 (A6-A),
+  años después de ser llevado en la tempestad. El texto no dice dónde estaban.
+sources:
+- 2-cronicas-21
+- it-elias
+- it-jehoram
+- tnm-a6-a
+links:
+- title: 'Perspicacia: «Elías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/El%C3%ADas/
+  type: perspicacia
+checked_on: '2026-10-13'
+status: verified

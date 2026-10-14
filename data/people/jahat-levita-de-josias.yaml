@@ -1,0 +1,25 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jahat-levita-de-josias
+name: Jáhat
+names:
+- name: Jáhat
+perspicacia: 1200002289#5
+disambiguation: El merarita que supervisó las obras del templo con Josías; no es ninguno de los otros cuatro Jáhat de Perspicacia.
+distinct_from:
+- jahat-hijo-de-libni
+- jahat-hijo-de-reaya
+- jahat-hijo-de-simei
+- jahat-izharita
+summary: Levita merarita. En el año 18 de Josías, 642 a.e.c., lo pusieron con Abdías y otros dos levitas al frente de los
+  obreros que reparaban el templo.
+reason: Perspicacia «Jáhat», núm. 5; 2Cr 34:12.
+sources:
+- it-jahat
+- 2-cronicas-34
+links:
+- title: 'Perspicacia: «Jáhat»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/J%C3%A1hat/
+  type: perspicacia
+relations: []
+checked_on: '2026-10-13'
+status: verified

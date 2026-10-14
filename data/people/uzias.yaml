@@ -54,8 +54,9 @@ relations:
   sources:
   - it-uzias
   - 2-reyes-14
+  - 2-cronicas-26
   reason: El pueblo lo hizo rey al morir su padre (2Re 14:21).
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-13'
   office: king
   status: verified
 - type: kin
@@ -74,8 +75,9 @@ relations:
   sources:
   - 2-reyes-15
   - it-jecolias
+  - 2-cronicas-26
   reason: 2Re 15:2 da a Jecolías como su madre.
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-13'
   status: verified
 - type: kin
   person: jerusa
@@ -93,23 +95,35 @@ relations:
   inferred: false
   sources:
   - 2-reyes-15
+  - 2-cronicas-26
   reason: '2Re 15:2: reinó 52 años en Jerusalén.'
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-13'
   status: verified
 - type: died_in
   place: jerusalen
   inferred: true
   sources:
   - 2-reyes-15
+  - 2-cronicas-26
   reason: 2Re 15:7 solo habla de su sepultura en la Ciudad de David; el lugar de la muerte se deduce del entierro.
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-13'
+  status: verified
+- type: tie
+  person: zacarias-consejero-de-uzias
+  word: adviser
+  inferred: false
+  sources:
+  - 2-cronicas-26
+  - it-zacarias
+  reason: '2Cr 26:5: buscó a Dios en los días de Zacarías, que lo instruyó; Perspicacia «Zacarías», núm. 13, lo llama su consejero.'
+  checked_on: '2026-10-13'
   status: verified
 history:
 - date: '2026-09-28'
   change: Perspicacia «Uzías» cerraba su reinado en 778 a.e.c.; A6-B, más reciente, empieza el de Jotán en 777.
   source: tnm-a6-a
 perspicacia: 1200004535#3
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified
 disambiguation: El rey de Judá al que también se llama Azarías; no es ninguno de los otros Azarías que numera Perspicacia,
   como el hijo de Natán, el hijo de Sadoc o el jefe efraimita hijo de Jehohanán.
@@ -129,3 +143,11 @@ distinct_from:
 - uzias-hijo-de-uriel
 - azarias-sacerdote-repatriado
 - uzias-padre-de-jonatan
+- azarias-hijo-de-oded
+- azarias-segundo-hijo-de-jehosafat
+- azarias-quinto-hijo-de-jehosafat
+- azarias-hijo-de-jeroham
+- azarias-hijo-de-obed
+- azarias-sacerdote-de-tiempos-de-uzias
+- azarias-padre-de-joel
+- azarias-hijo-de-jehalelel

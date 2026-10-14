@@ -26,6 +26,7 @@ sources:
 - 2-samuel-20
 - 1-reyes-15
 - 2-reyes-15
+- 2-cronicas-16
 links:
 - title: 'Perspicacia: «Abel-bet-maacá, Abel de Bet-maacá»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Abel-bet-maac%C3%A1-Abel-de-Bet-maac%C3%A1/
@@ -33,5 +34,5 @@ links:
 - title: 2 Samuel 20 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-samuel/20/
   type: bible
-checked_on: '2026-09-30'
+checked_on: '2026-10-13'
 status: verified

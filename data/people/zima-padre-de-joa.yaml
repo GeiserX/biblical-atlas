@@ -1,0 +1,18 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: zima-padre-de-joa
+name: Zimá
+names:
+- name: Zimá
+perspicacia: null
+summary: Levita guersonita cuyo descendiente Joá limpió el templo en tiempos de Ezequías. Perspicacia ve posible que sea Zimá
+  hijo de Jáhat.
+reason: Perspicacia «Zimá», que no le da entrada propia; 2Cr 29:12.
+sources:
+- it-zima
+- 2-cronicas-29
+links:
+- title: 'Perspicacia: «Zimá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zim%C3%A1/
+  type: perspicacia
+checked_on: '2026-10-13'
+status: verified

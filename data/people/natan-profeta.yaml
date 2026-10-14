@@ -13,9 +13,9 @@ date:
   chronology: tnm
   text: c. 1070-1037 a.e.c.
 summary: Profeta en la corte de David. Le transmitió el pacto de un reino duradero, le echó en cara su pecado con Bat-Seba
-  y ayudó a poner en el trono a Salomón.
-reason: Perspicacia «Natán», núm. 2; 2Sa 7:1-17, 12:1-15 y 1Re 1. B7 fecha el pacto hacia 1070 y el estudio 3 la subida de
-  Salomón en 1037.
+  y ayudó a entronizar a Salomón. Sus escritos recogían hechos de David y de Salomón.
+reason: Perspicacia «Natán», núm. 2; 2Sa 7:1-17, 12:1-15, 1Re 1, 1Cr 29:29 y 2Cr 9:29. B7 fecha el pacto hacia 1070 y el estudio
+  3 la subida de Salomón en 1037.
 sources:
 - it-natan
 - 2-samuel-7
@@ -26,6 +26,7 @@ sources:
 - 1-reyes-1
 - 1-cronicas-17
 - 1-cronicas-29
+- 2-cronicas-9
 links:
 - title: 'Perspicacia: «Natán»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Nat%C3%A1n/
@@ -39,7 +40,14 @@ history:
   change: Grafía «Bat-seba» cambiada a «Bat-Seba», la de la TNM revisada en el encabezamiento de Sal 51 y la del nombre de
     su ficha.
   source: salmos-51
-checked_on: '2026-10-12'
+- date: '2026-10-13'
+  change: 'Se añaden sus escritos: 2Cr 9:29 pone la historia de Salomón entre las palabras de Natán, y Perspicacia «Natán»,
+    núm. 2, le atribuye también los de David (1Cr 29:29).'
+  source: 2-cronicas-9
+- date: '2026-10-13'
+  change: La razón cita ahora los pasajes de sus escritos, 1Cr 29:29 y 2Cr 9:29.
+  source: 2-cronicas-9
+checked_on: '2026-10-13'
 status: verified
 distinct_from:
 - natan-hijo-de-david
@@ -55,7 +63,9 @@ relations:
   - 1-reyes-1
   - 1-cronicas-17
   - 1-cronicas-29
+  - 2-cronicas-9
+  - 2-cronicas-29
   reason: 2Sa 7:2 lo llama el profeta Natán; en 7:4-17 transmite a David el mensaje de Jehová.
   inferred: false
-  checked_on: '2026-10-12'
+  checked_on: '2026-10-13'
   status: verified

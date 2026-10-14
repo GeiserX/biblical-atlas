@@ -25,13 +25,14 @@ roles:
 passages:
 - 1Re 8:12-61
 - 2Cr 6:1-42
-summary: De pie ante el altar, Salomón bendice al pueblo, recuerda la promesa hecha a David y pide a Jehová que escuche desde
-  el cielo a quien ore hacia esa casa, sea israelita o extranjero.
+summary: Salomón bendice al pueblo y recuerda la promesa a David; luego, arrodillado en una plataforma de cobre ante el altar,
+  pide a Jehová que oiga desde el cielo a quien ore hacia esa casa, israelita o extranjero.
 reason: 'Perspicacia «Salomón», apartados «Inauguración del templo» y «La oración de Salomón»: fue en Etanim (1Re 8:2) de
   1026 a.e.c., cuando habían pasado once meses desde el final de la obra (bul de 1027).'
 sources:
 - 1-reyes-8
 - it-salomon
+- 2-cronicas-6
 links:
 - title: 'Perspicacia: «Salomón»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Salom%C3%B3n/
@@ -39,5 +40,10 @@ links:
 - title: 1 Reyes 8 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/1-reyes/8/
   type: bible
-checked_on: '2026-09-30'
+history:
+- date: '2026-10-13'
+  change: El resumen decía que oró de pie. 2Cr 6:13 y 1Re 8:54 dicen que lo hizo de rodillas; Crónicas añade la plataforma
+    de cobre del patio.
+  source: 2-cronicas-6
+checked_on: '2026-10-13'
 status: verified

@@ -2,19 +2,22 @@
 id: ezequias-quita-los-lugares-altos
 title: Ezequías quita los lugares altos y tritura la serpiente de cobre
 date:
-  from: -745
+  from: -744
   to: -744
-  precision: range
-  approx: true
-  type: narrative
+  precision: year
+  approx: false
+  type: anchored
   chronology: tnm
-  text: 'entre 746 y 745 a.e.c. (tiempo narrativo: al empezar el reinado de Ezequías, tras su Pascua)'
+  text: 745 a.e.c.
 narrative_order:
   series: 2-reyes
   order: 18004
 places:
 - juda
 - jerusalen
+- benjamin
+- territorio-de-efrain
+- manases
 people:
 - ezequias
 present: []
@@ -30,9 +33,15 @@ sources:
 - it-ezequias
 - it-serpiente-de-cobre
 - tnm-a6-b
+- 2-cronicas-31
 links:
 - title: 2 Reyes 18 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-reyes/18/
   type: bible
-checked_on: '2026-09-30'
+history:
+- date: '2026-10-13'
+  change: 'Fecha anclada en 745: Perspicacia «Ezequías» cuenta su primer año desde nisán de 745 y pone esto tras la Pascua
+    de ese año, como los sucesos de 2Cr 29-31.'
+  source: 2-cronicas-31
+checked_on: '2026-10-13'
 status: verified

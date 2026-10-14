@@ -13,6 +13,7 @@ distinct_from:
 - elcana-padre-de-amasai
 - elcana-padre-de-asa
 - elcana-portero
+- elcana-funcionario-de-acaz
 summary: Levita cohatita, al parecer hijo de Máhat, padre de Zofái o Zuf, en la línea de Samuel.
 reason: Perspicacia «Elqaná», núm. 3; 1Cr 6:26, 35.
 sources:
@@ -32,5 +33,5 @@ relations:
   reason: '1Cr 6:35: Elcaná, «hijo de Máhat».'
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified

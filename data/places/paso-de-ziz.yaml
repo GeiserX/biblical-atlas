@@ -1,0 +1,28 @@
+# biblical-atlas: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: paso-de-ziz
+name: Paso de Ziz
+names:
+- name: Paso de Ziz
+- name: Ziz
+  note: Título del artículo de Perspicacia.
+type: valley
+lat: 31.5607
+lon: 35.38364
+precision: zone
+coord_source: openbible:a4446f1
+coord_url: https://www.openbible.info/geo/ancient/a4446f1/ziz
+coord_note: Punto de OpenBible en Wadi Hasasa (Nahal Hazezon), con el que Perspicacia dice que se suele identificar la subida;
+  un uadi no es un punto.
+summary: Subida por la que Moab, Ammón y los ammonim marcharon contra Judá en días de Jehosafat. Suele identificarse con Wadi
+  Hasasa, a unos 10 km al noroeste de En-Guedí.
+reason: 'Perspicacia «Ziz»; 2Cr 20:16. Coordenada de OpenBible: solo tomamos el punto.'
+sources:
+- it-ziz
+- openbible-geo
+- 2-cronicas-20
+links:
+- title: 'Perspicacia: «Ziz»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ziz/
+  type: perspicacia
+checked_on: '2026-10-13'
+status: verified

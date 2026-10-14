@@ -1,0 +1,40 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: pascua-de-ezequias
+title: Ezequías celebra la Pascua en el segundo mes y la fiesta dura catorce días
+date:
+  from: -744
+  to: -744
+  precision: day
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 14 de iyar de 745 a.e.c.
+  detail:
+    month: iyar
+    day: 14
+narrative_order:
+  series: 2-cronicas
+  order: 30013
+places:
+- jerusalen
+- monte-moria
+- valle-de-cedron
+people:
+- ezequias
+present:
+- ezequias
+passages:
+- 2Cr 30:13-27
+summary: La multitud tira al Cedrón los altares de Jerusalén y mata la Pascua el 14 del segundo mes. Ezequías ora por los
+  impuros que la comieron y Jehová perdona. La fiesta dura catorce días, con alegría inédita desde Salomón.
+reason: '2Cr 30:13, 15, 23: el 14 del segundo mes, y la fiesta dura dos semanas. Perspicacia «Pascua» la cuenta entre las
+  registradas y «Efraín» la sitúa en el primer año de Ezequías, 745 según «Ezequías».'
+sources:
+- 2-cronicas-30
+- it-ezequias
+- it-pascua
+- it-efrain
+- tnm-a6-b
+- it-cedron
+checked_on: '2026-10-13'
+status: verified

@@ -19,10 +19,11 @@ sources:
 - tnm-a6-a
 - 1-reyes-22
 - it-jehosafat
+- 2-cronicas-20
 history:
 - date: '2026-09-28'
   change: Perspicacia «Jehosafat» y el estudio 3 daban 936 a.e.c.; la tabla A6-A, más reciente, da 937.
   source: tnm-a6-a
 search: Jehosafat rey
-checked_on: '2026-09-28'
+checked_on: '2026-10-13'
 status: verified

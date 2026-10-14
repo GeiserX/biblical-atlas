@@ -1,0 +1,37 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: hanani-reprende-a-asa
+title: El vidente Hananí reprende a Asá y acaba en prisión
+type: speech
+date:
+  from: -961
+  to: -961
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 962 a.e.c.
+narrative_order:
+  series: 2-cronicas
+  order: 16007
+  after: asa-fortifica-gueba-y-mizpa
+places:
+- juda
+people:
+- hanani-vidente
+- asa
+present: []
+roles:
+  hanani-vidente: spoke
+passages:
+- 2Cr 16:7-10
+summary: Hananí reprocha a Asá haberse apoyado en el rey de Siria y no en Jehová, que le dio la victoria sobre etíopes y libios,
+  y le anuncia guerras. Asá, ofendido, lo encarcela y oprime a parte del pueblo.
+reason: '2Cr 16:7 lo pone en aquel tiempo, tras la alianza con Ben-Hadad, que Perspicacia «Ben-hadad», núm. 1, fecha hacia
+  962 a.e.c.; «Hananí», núm. 2. El texto no dice dónde: Judá enmarca el suceso y nadie queda situado.'
+sources:
+- 2-cronicas-16
+- it-hanani
+- it-ben-hadad
+- it-asa
+checked_on: '2026-10-13'
+status: verified

@@ -9,6 +9,8 @@ disambiguation: Primero de los dos Jozabad de Manasés en 1Cr 12:20 (Perspicacia
 distinct_from:
 - jozabad-de-manases-2
 - jozabad-el-guederatita
+- jozabad-comisionado-de-ezequias
+- jozabad-levita-de-josias
 summary: Jefe de mil de Manasés que dejó a Saúl y se pasó a David cuando iba a Ziclag. Luchó con él contra la banda de saqueadores
   y fue jefe de su ejército.
 reason: Perspicacia «Jozabad», núm. 2; 1Cr 12:19-21.
@@ -29,5 +31,5 @@ relations:
   reason: '1Cr 12:20, 21: se pasó a David, lo ayudó contra los saqueadores y llegó a ser jefe en su ejército.'
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified

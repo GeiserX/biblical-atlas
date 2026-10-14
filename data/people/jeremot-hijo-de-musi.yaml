@@ -34,7 +34,7 @@ relations:
   reason: 1Cr 23:23 y 24:30 lo nombran tercero de los hijos de Musí; Perspicacia «Jeremot», núm. 3, lo llama hijo de Musí.
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified
 distinct_from:
 - jerimot-de-benjamin
@@ -43,3 +43,5 @@ distinct_from:
 - jerimot-el-benjaminita
 - jerimot-hijo-de-heman
 - jerimot-hijo-de-azriel
+- jerimot-hijo-de-david
+- jerimot-comisionado-de-ezequias

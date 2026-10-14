@@ -1,0 +1,51 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: zacarias-hijo-de-benaya
+name: Zacarías
+names:
+- name: Zacarías
+perspicacia: 1200004681#9
+disambiguation: El padre de Jahaziel (2Cr 20:14), Zacarías núm. 9 de Perspicacia; no el hijo de Jehoiadá, el profeta, el rey
+  de Israel ni los demás Zacarías.
+distinct_from:
+- zacarias-abuelo-de-ezequias
+- zacarias-de-israel
+- zacarias-descendiente-de-isias
+- zacarias-el-rubenita
+- zacarias-hijo-de-hosa
+- zacarias-hijo-de-jeberekias
+- zacarias-hijo-de-jehoiada
+- zacarias-hijo-de-meselemias
+- zacarias-musico
+- zacarias-padre-de-ido
+- zacarias-padre-de-juan
+- zacarias-profeta
+- zacarias-trompetista
+- zeker
+- zacarias-consejero-de-uzias
+- zacarias-levita-de-ezequias
+- zacarias-levita-de-josias
+- zacarias-hijo-de-jehosafat
+- zacarias-principe-de-jehosafat
+- zacarias-sacerdote-de-josias
+summary: Levita descendiente de Asaf, hijo de Benaya. Su hijo Jahaziel aseguró a Jehosafat que Jehová pelearía por Judá.
+reason: Perspicacia «Zacarías», núm. 9, y «Jahaziel», núm. 4; 2Cr 20:14.
+sources:
+- it-zacarias
+- it-jahaziel
+- 2-cronicas-20
+links:
+- title: 'Perspicacia: «Zacarías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zacar%C3%ADas/
+  type: perspicacia
+relations:
+- type: kin
+  person: benaya-hijo-de-jeiel
+  word: father
+  sources:
+  - 2-cronicas-20
+  reason: '2Cr 20:14: Zacarías, hijo de Benaya.'
+  inferred: false
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified

@@ -21,6 +21,7 @@ sources:
 - hechos-10
 - openbible-geo
 - jonas-1
+- 2-cronicas-2
 links:
 - title: 'Perspicacia: «Jope»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jope/
@@ -28,5 +29,5 @@ links:
 - title: Hechos 9 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/hechos/9/
   type: bible
-checked_on: '2026-09-29'
+checked_on: '2026-10-13'
 status: verified

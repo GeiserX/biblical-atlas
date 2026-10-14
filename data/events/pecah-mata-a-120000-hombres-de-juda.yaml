@@ -1,0 +1,51 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: pecah-mata-a-120000-hombres-de-juda
+title: Pécah mata en un día a 120.000 hombres de Judá
+date:
+  from: -759
+  to: -759
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 760 a.e.c.
+narrative_order:
+  series: 2-cronicas
+  order: 28006
+places:
+- juda
+- samaria
+people:
+- pecah
+- zicri-guerrero-efraimita
+- maaseya-hijo-del-rey
+- azricam-jefe-del-palacio
+- elcana-funcionario-de-acaz
+- acaz
+roles:
+  maaseya-hijo-del-rey: died
+  azricam-jefe-del-palacio: died
+  elcana-funcionario-de-acaz: died
+present: []
+passages:
+- 2Cr 28:5-8
+summary: 'Israel derrota a Acaz: Pécah mata en un solo día a 120.000 hombres de Judá, y Zicrí a tres de la casa del rey. Los
+  israelitas llevan a Samaria 200.000 cautivos y mucho botín.'
+reason: 2Cr 28:5-8; Perspicacia «Zicrí», núm. 10, pone la invasión hacia 760 a.e.c., y «Péqah» la distingue del sitio de Jerusalén.
+  El texto no nombra el campo de batalla.
+sources:
+- 2-cronicas-28
+- it-zicri
+- it-peqah
+- it-maaseya
+- it-azriqam
+- it-elqana
+links:
+- title: 'Perspicacia: «Péqah»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/P%C3%A9qah/
+  type: perspicacia
+- title: 2 Crónicas 28 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-Cr%C3%B3nicas/28/
+  type: bible
+checked_on: '2026-10-13'
+status: verified

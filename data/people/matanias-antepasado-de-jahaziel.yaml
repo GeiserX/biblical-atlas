@@ -1,0 +1,46 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: matanias-antepasado-de-jahaziel
+name: Matanías
+names:
+- name: Matanías
+perspicacia: 1200002931#2
+disambiguation: El levita asafita antepasado de Jahaziel (2Cr 20:14); no el rey Sedequías, antes llamado Matanías, ni el hijo
+  de Hemán.
+distinct_from:
+- matanias-hijo-de-heman
+- sedequias
+- matanias-levita-de-ezequias
+summary: Levita de los hijos de Asaf, padre de Jeiel y antepasado de Jahaziel. Perspicacia ve posible que sea el levita Matanías
+  nombrado después del destierro.
+reason: Perspicacia «Matanías», núm. 2; 2Cr 20:14.
+sources:
+- it-matanias
+- 2-cronicas-20
+links:
+- title: 'Perspicacia: «Matanías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Matan%C3%ADas/
+  type: perspicacia
+relations:
+- type: kin
+  person: asaf-hijo-de-berekias
+  word: ancestor
+  sources:
+  - 2-cronicas-20
+  - it-jahaziel
+  reason: '2Cr 20:14: Matanías, levita de los hijos de Asaf. Perspicacia «Jahaziel», núm. 4, liga la familia con Asaf, el
+    músico guersonita hijo de Berekías.'
+  inferred: false
+  checked_on: '2026-10-13'
+  status: verified
+- type: same_as
+  person: matanias-hijo-de-mica
+  inferred: true
+  certainty: possible
+  sources:
+  - it-matanias
+  - 2-cronicas-20
+  reason: 'Perspicacia «Matanías», núm. 2: el antepasado de Jahaziel (2Cr 20:14) puede ser el levita Matanías hijo de Micá.'
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified

@@ -6,9 +6,10 @@ names:
 - name: Jehoacaz
   note: Variante de 2 Crónicas 21:17.
 - name: Azarías
-  note: 2 Crónicas 22:6.
+  note: Lectura de algunos manuscritos hebreos en 2Cr 22:6, según la nota de la TNM, cuyo texto dice Ocozías; Perspicacia
+    «Azarías», núm. 10.
 disambiguation: Rey de Judá, nieto de Jehosafat; su tío Ocozías, hijo de Acab, reinó antes en Israel. Crónicas lo llama también
-  Jehoacaz y Azarías, pero no es ninguno de los reyes Jehoacaz ni de los otros Azarías.
+  Jehoacaz, y algunos manuscritos, Azarías, pero no es ninguno de los reyes Jehoacaz ni de los otros Azarías.
 distinct_from:
 - ocozias-de-israel
 - azarias-hijo-de-natan
@@ -26,6 +27,14 @@ distinct_from:
 - azarias-hijo-de-johanan
 - azarias-hijo-de-sofonias
 - azarias-sacerdote-repatriado
+- azarias-hijo-de-oded
+- azarias-segundo-hijo-de-jehosafat
+- azarias-quinto-hijo-de-jehosafat
+- azarias-hijo-de-jeroham
+- azarias-hijo-de-obed
+- azarias-sacerdote-de-tiempos-de-uzias
+- azarias-padre-de-joel
+- azarias-hijo-de-jehalelel
 date:
   from: -905
   to: -904
@@ -48,6 +57,7 @@ sources:
 - it-azarias
 - it-jehoacaz
 - 1-cronicas-3
+- 2-cronicas-21
 links:
 - title: 'Perspicacia: «Ocozías»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ocoz%C3%ADas/
@@ -64,8 +74,10 @@ relations:
   - it-ocozias
   - 2-reyes-8
   - 1-cronicas-3
+  - 2-cronicas-21
+  - 2-cronicas-22
   reason: Hijo de Jehoram y Atalía (2Re 8:25-26).
-  checked_on: '2026-10-12'
+  checked_on: '2026-10-13'
   status: verified
 - type: kin
   person: atalia
@@ -75,8 +87,9 @@ relations:
   - it-ocozias
   - 2-reyes-8
   - 2-reyes-11
+  - 2-cronicas-22
   reason: Su madre fue Atalía (2Re 8:26).
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-13'
   status: verified
 - type: succeeds
   person: jehoram-de-juda
@@ -84,8 +97,9 @@ relations:
   sources:
   - it-ocozias
   - 2-reyes-8
+  - 2-cronicas-22
   reason: Sucedió a su padre (2Re 8:24).
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-13'
   office: king
   status: verified
 - type: lived_in
@@ -93,8 +107,9 @@ relations:
   inferred: false
   sources:
   - 2-reyes-8
+  - 2-cronicas-22
   reason: '2Re 8:26: reinó un año en Jerusalén.'
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-13'
   status: verified
 - type: kin
   person: jehoram-de-israel
@@ -124,8 +139,9 @@ relations:
   sources:
   - 2-reyes-8
   - it-ocozias
+  - 2-cronicas-22
   reason: '2Re 8:28: acompañó a Jehoram, hijo de Acab, a la guerra contra Hazael en Ramot-Galaad.'
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-13'
   status: verified
 - type: tie
   person: hazael
@@ -133,8 +149,9 @@ relations:
   inferred: false
   sources:
   - 2-reyes-8
+  - 2-cronicas-22
   reason: '2Re 8:28: combatió al rey sirio Hazael en Ramot-Galaad.'
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-13'
   status: verified
 - type: died_in
   place: meguido
@@ -155,6 +172,44 @@ relations:
   reason: Perspicacia «Zibíah» la ve como su esposa, pues era la madre de su hijo Jehoás (2Re 12:1).
   checked_on: '2026-09-30'
   status: verified
+- type: kin
+  person: jehosafat
+  word: grandfather
+  inferred: false
+  sources:
+  - 2-cronicas-22
+  reason: '2Cr 22:9: lo entierran porque era nieto de Jehosafat, que buscó a Jehová de todo corazón.'
+  checked_on: '2026-10-13'
+  status: verified
+- type: tie
+  person: jehu-de-israel
+  word: enemy
+  inferred: false
+  sources:
+  - 2-cronicas-22
+  - it-ocozias
+  reason: '2Cr 22:7-9: sale con Jehoram al encuentro de Jehú, que después lo busca, lo hace traer desde Samaria y lo mata.'
+  checked_on: '2026-10-13'
+  status: verified
+- type: tie
+  person: atalia
+  caption: aconsejado por ella
+  inverse_caption: su consejera
+  inferred: false
+  sources:
+  - 2-cronicas-22
+  reason: '2Cr 22:3, 4: su madre lo aconsejaba para que obrara mal, y él siguió a la casa de Acab.'
+  checked_on: '2026-10-13'
+  status: verified
 perspicacia: 1200000145#2
-checked_on: '2026-10-12'
+history:
+- date: '2026-10-13'
+  change: La nota de Azarías daba ese nombre como el de 2Cr 22:6; la TNM de estudio pone allí Ocozías y deja Azarías para
+    una nota sobre algunos manuscritos hebreos.
+  source: 2-cronicas-22
+- date: '2026-10-13'
+  change: Azarías no es el nombre que da el texto de la TNM en 2Cr 22:6, sino el de algunos manuscritos hebreos que cita su
+    nota.
+  source: 2-cronicas-22
+checked_on: '2026-10-13'
 status: verified

@@ -40,8 +40,9 @@ relations:
   - 2-reyes-21
   - mateo-1
   - 1-cronicas-3
+  - 2-cronicas-33
   reason: Hijo de Manasés (2Re 21:18-19).
-  checked_on: '2026-10-12'
+  checked_on: '2026-10-13'
   status: verified
 - type: succeeds
   person: manases-de-juda
@@ -49,8 +50,9 @@ relations:
   sources:
   - it-amon
   - 2-reyes-21
+  - 2-cronicas-33
   reason: Reinó al morir su padre (2Re 21:18).
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-13'
   office: king
   status: verified
 - type: kin
@@ -68,8 +70,9 @@ relations:
   inferred: false
   sources:
   - 2-reyes-21
+  - 2-cronicas-33
   reason: '2Re 21:19: reinó dos años en Jerusalén.'
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-13'
   status: verified
 - type: kin
   person: jedida
@@ -86,7 +89,7 @@ history:
   change: Perspicacia «Amón» daba 661-660 a.e.c.; A6-B, más reciente, empieza el reinado de Josías en 659.
   source: tnm-a6-b
 perspicacia: 1200000244#2
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified
 distinct_from:
 - amon-jefe-de-samaria

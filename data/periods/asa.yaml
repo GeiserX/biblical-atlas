@@ -19,10 +19,11 @@ sources:
 - tnm-a6-a
 - 1-reyes-15
 - it-asa
+- 2-cronicas-16
 history:
 - date: '2026-09-28'
   change: Perspicacia «Asá» daba 977-937 a.e.c.; la tabla A6-A, más reciente, empieza su reinado en 978.
   source: tnm-a6-a
 search: Asá rey
-checked_on: '2026-09-28'
+checked_on: '2026-10-13'
 status: verified

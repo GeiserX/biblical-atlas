@@ -10,6 +10,7 @@ distinct_from:
 - jehoram-de-juda
 - joram-hijo-de-toi
 - joram-descendiente-de-eliezer
+- jehoram-sacerdote-de-jehosafat
 date:
   from: -916
   to: -904
@@ -32,6 +33,7 @@ sources:
 - it-eliseo
 - 2-reyes-7
 - 2-reyes-8
+- 2-cronicas-22
 links:
 - title: 'Perspicacia: «Jehoram»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jehoram/
@@ -50,8 +52,9 @@ relations:
   - 2-reyes-6
   - 2-reyes-8
   - 2-reyes-9
+  - 2-cronicas-22
   reason: Hijo de Acab (2Re 3:1).
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-13'
   status: verified
 - type: succeeds
   person: ocozias-de-israel
@@ -134,9 +137,10 @@ relations:
   - 2-reyes-8
   - it-hazael
   - 2-reyes-9
+  - 2-cronicas-22
   reason: '2Re 8:28, 29: combate a Hazael, rey sirio, en Ramot-Galaad y sale herido.'
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-13'
   status: verified
 perspicacia: 1200002381#2
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified

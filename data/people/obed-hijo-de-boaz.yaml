@@ -41,9 +41,10 @@ relations:
   reason: Rut 4:13.
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified
 distinct_from:
 - obed-hijo-de-eflal
 - obed-guerrero-de-david
 - obed-hijo-de-semaya
+- obed-padre-de-azarias

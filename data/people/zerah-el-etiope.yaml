@@ -1,0 +1,65 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: zerah-el-etiope
+name: Zérah
+names:
+- name: Zérah
+perspicacia: 1200004704#6
+disambiguation: El etíope que atacó Judá en días de Asá; no el hijo de Judá, el hijo de Simeón, el jeque edomita hijo de Reuel
+  ni el padre de Jobab, de Bozrá.
+distinct_from:
+- zerah-hijo-de-juda
+- zerah-hijo-de-reuel
+- zerah-de-bozra
+- zohar-hijo-de-simeon
+- zerah-hijo-de-adaya
+- zerah-hijo-de-ido
+date:
+  from: -966
+  to: -966
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 967 a.e.c.
+summary: Etíope o cusita que invadió Judá en 967 a.e.c. con 300 carros y un ejército de un millón. Asá lo derrotó junto a
+  Maresá y persiguió a sus tropas hasta Guerar.
+reason: Perspicacia «Zérah», núm. 6; 2Cr 14:9-15.
+not_claimed:
+- 'Que sea un faraón o un rey etíope conocido por la historia: Perspicacia no da por segura ninguna identificación.'
+sources:
+- it-zerah
+- 2-cronicas-14
+links:
+- title: 'Perspicacia: «Zérah»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Z%C3%A9rah/
+  type: perspicacia
+relations:
+- type: born_in
+  place: etiopia
+  inferred: true
+  sources:
+  - 2-cronicas-14
+  - it-zerah
+  reason: '2Cr 14:9 lo llama el etíope, y Perspicacia «Zérah», núm. 6, etíope o cusita: gentilicio de un pueblo extranjero.'
+  checked_on: '2026-10-13'
+  status: verified
+- type: tie
+  person: asa
+  word: enemy
+  date:
+    from: -966
+    to: -966
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 967 a.e.c.
+  inferred: false
+  sources:
+  - 2-cronicas-14
+  - it-zerah
+  reason: '2Cr 14:9-13: Zérah ataca Judá y Asá le sale al encuentro y lo derrota.'
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified

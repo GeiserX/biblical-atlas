@@ -1,0 +1,34 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: salomon-organiza-el-servicio-del-templo
+title: Salomón organiza el servicio del templo
+date:
+  from: -1025
+  to: -997
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1026 y 998 a.e.c. (tiempo narrativo: tras la inauguración del templo y en vida de Salomón)'
+narrative_order:
+  series: 2-cronicas
+  order: 8012
+places:
+- monte-moria
+- jerusalen
+people:
+- salomon
+passages:
+- 2Cr 8:12-16
+summary: Salomón ofrece en el altar los sacrificios que manda la Ley de Moisés para cada día, cada sábado, cada luna nueva
+  y las tres fiestas del año, y pone a sacerdotes, levitas y porteros en los turnos que dispuso David.
+reason: '2Cr 8:12-16. Perspicacia «Salomón»: en la inauguración, en 1026 a.e.c., oficiaron todos los sacerdotes sin atenerse
+  a sus turnos (2Cr 5:11), así que estos rigen después. Salomón reinó hasta 998.'
+sources:
+- 2-cronicas-8
+- it-salomon
+links:
+- title: 'Perspicacia: «Salomón»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Salom%C3%B3n/
+  type: perspicacia
+checked_on: '2026-10-13'
+status: verified

@@ -21,10 +21,11 @@ sources:
 - 2-reyes-9
 - it-ocozias
 - 2-reyes-8
+- 2-cronicas-22
 search: Ocozías rey
 history:
 - date: '2026-09-30'
   change: '2 Reyes 9 no da la duración del reinado: el año de reinado está en 2Re 8:26, y 9:29 da su comienzo.'
   source: 2-reyes-8
-checked_on: '2026-09-30'
+checked_on: '2026-10-13'
 status: verified

@@ -20,6 +20,13 @@ distinct_from:
 - zacarias-descendiente-de-isias
 - zacarias-hijo-de-hosa
 - zacarias-padre-de-ido
+- zacarias-principe-de-jehosafat
+- zacarias-hijo-de-benaya
+- zacarias-hijo-de-jehosafat
+- zacarias-consejero-de-uzias
+- zacarias-levita-de-ezequias
+- zacarias-levita-de-josias
+- zacarias-sacerdote-de-josias
 date:
   from: -897
   to: -857
@@ -38,6 +45,7 @@ sources:
 - it-jehoas
 - mateo-23
 - lucas-11
+- 2-cronicas-24
 links:
 - title: 'Perspicacia: «Zacarías»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zacar%C3%ADas/
@@ -67,9 +75,38 @@ relations:
   - mateo-23
   - it-baraquias
   - lucas-11
+  - 2-cronicas-24
   reason: 'Mt 23:35: lo mataron entre el santuario y el altar, es decir, en el patio interior del templo, según su nota de
     estudio.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-13'
   status: verified
-checked_on: '2026-10-12'
+- type: kin
+  person: jehoiada-sumo-sacerdote
+  word: father
+  inferred: false
+  sources:
+  - 2-cronicas-24
+  reason: 2Cr 24:20 lo llama hijo de Jehoiadá el sacerdote, y 24:22 dice que Jehoiadá era su padre.
+  checked_on: '2026-10-13'
+  status: verified
+- type: holds_office
+  office: prophet
+  inferred: true
+  sources:
+  - 2-cronicas-24
+  - it-zacarias
+  reason: '2Cr 24:20: el espíritu de Dios vino sobre él y habló en nombre de Dios; Perspicacia «Zacarías», núm. 12, lo llama
+    profeta y sacerdote.'
+  checked_on: '2026-10-13'
+  status: verified
+- type: holds_office
+  office: priest
+  inferred: true
+  sources:
+  - 2-cronicas-24
+  - it-zacarias
+  reason: Perspicacia «Zacarías», núm. 12, lo llama profeta y sacerdote; era hijo del sacerdote Jehoiadá (2Cr 24:20).
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
 status: verified

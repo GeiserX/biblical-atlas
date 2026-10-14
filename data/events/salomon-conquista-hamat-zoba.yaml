@@ -1,0 +1,36 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: salomon-conquista-hamat-zoba
+title: Salomón conquista Hamat-Zobá
+date:
+  from: -1013
+  to: -997
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1014 y 998 a.e.c. (tiempo narrativo: acabados los veinte años de obras y antes de morir Salomón)'
+narrative_order:
+  series: 2-cronicas
+  order: 8003
+  after: salomon-da-a-hiram-veinte-ciudades-de-galilea
+places:
+- hamat-zoba
+people:
+- salomon
+passages:
+- 2Cr 8:3
+summary: Acabadas sus obras de veinte años, Salomón va contra Hamat-Zobá y la toma. Es la única campaña militar suya que cuenta
+  la Biblia; después edifica ciudades de almacenamiento en Hamat.
+reason: 2Cr 8:1-4. Perspicacia «Salomón» cierra los veinte años de obras en 1014 a.e.c., y Salomón reinó hasta 998. Perspicacia
+  «Hamat-zobá» y «Hamat, hamateo» ligan la conquista al dominio de Salomón sobre Hamat.
+sources:
+- 2-cronicas-8
+- it-hamat-zoba
+- it-hamat
+- it-salomon
+links:
+- title: 'Perspicacia: «Hamat-zobá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hamat-zob%C3%A1/
+  type: perspicacia
+checked_on: '2026-10-13'
+status: verified

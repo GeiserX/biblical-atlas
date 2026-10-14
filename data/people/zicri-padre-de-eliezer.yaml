@@ -12,6 +12,9 @@ distinct_from:
 - zicri-descendiente-de-sasac
 - zicri-descendiente-de-simei
 - zicri-hijo-de-asaf
+- zicri-guerrero-efraimita
+- zicri-padre-de-amasiah
+- zicri-padre-de-elisafat
 summary: Rubenita cuyo hijo Eliezer encabezaba la tribu de Rubén en días de David.
 reason: Perspicacia «Zicrí», núm. 7; 1Cr 27:16.
 sources:
@@ -22,5 +25,5 @@ links:
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zicr%C3%AD/
   type: perspicacia
 relations: []
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified

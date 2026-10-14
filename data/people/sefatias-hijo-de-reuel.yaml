@@ -23,11 +23,12 @@ relations:
   reason: '1Cr 9:8: Sefatías, hijo de Reuel.'
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified
 distinct_from:
 - sefatias-el-harifita
 - sefatias-hijo-de-david
 - sefatias-hijo-de-maaca
 - sefatias-hijo-de-matan
+- sefatias-hijo-de-jehosafat
 disambiguation: 'Sefatías núm. 8 de Perspicacia: benjamita, hijo de Reuel. No el hijo de David.'
