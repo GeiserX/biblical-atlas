@@ -32,6 +32,7 @@ sources:
 - 1-timoteo-5
 - 1-timoteo-6
 - it-timoteo-cartas
+- filemon-1
 - hebreos-13
 - it-hebreos
 - 2-timoteo-1
@@ -104,6 +105,7 @@ relations:
   - 2-tesalonicenses-1
   - 1-timoteo-1
   - 1-timoteo-4
+  - filemon-1
   - hebreos-13
   - 2-timoteo-1
   reason: Se une en Listra y viaja con él; Ro 16:21 lo llama colaborador. «Testimonio completo» (cap. 15, párr. 18) dice que
@@ -157,9 +159,10 @@ relations:
   - filipenses-1
   - filipenses-2
   - colosenses-1
-  reason: 'Perspicacia «Timoteo», párr. 5, y la nota de estudio de Flp 1:1: estaba con Pablo en Roma, que lo nombra en el saludo
-    de Filipenses, Colosenses y Filemón.'
-  checked_on: '2026-09-29'
+  - filemon-1
+  reason: 'Perspicacia «Timoteo», párr. 5, y la nota de estudio de Flp 1:1: estaba con Pablo en Roma, que lo nombra en el
+    saludo de Filipenses, Colosenses y Filemón.'
+  checked_on: '2026-10-14'
   status: verified
 - type: kin
   person: loida
