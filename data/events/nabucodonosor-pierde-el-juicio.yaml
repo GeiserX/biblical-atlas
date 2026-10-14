@@ -3,13 +3,13 @@ id: nabucodonosor-pierde-el-juicio
 title: Nabucodonosor pierde el juicio
 date:
   from: -603
-  to: -588
+  to: -581
   precision: range
   approx: true
   type: narrative
   chronology: tnm
-  text: 'entre 604 y c. 589 a.e.c. (tiempo narrativo: un año después del sueño y siete antes de recobrar el juicio)'
-  note: 'Cuenta nuestra: doce meses después del sueño (Da 4:29), que es de 605 como pronto, y siete años antes de sanar, que fue antes de su muerte en 582 (Perspicacia «Locura» y «Nabucodonosor»).'
+  text: 'entre 604 y 582 a.e.c. (tiempo narrativo: los siete años de locura, del año después del sueño hasta recobrar el juicio)'
+  note: 'Cuenta nuestra: empieza doce meses después del sueño (Da 4:29), que es de 605 como pronto, y dura siete años (Perspicacia «Locura»), hasta sanar antes de su muerte en 582 («Nabucodonosor»).'
 narrative_order:
   series: daniel
   order: 4028
