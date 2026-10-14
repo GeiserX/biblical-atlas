@@ -1,0 +1,15 @@
+# biblical-atlas: fuentes de la cobertura de 2-pedro. Esquema en docs/investigacion/README.md.
+si-2-pedro:
+  title: 'Libro bíblico número 61: 2 Pedro'
+  work: “Toda Escritura es inspirada de Dios y provechosa”
+  url: https://www.jw.org/es/biblioteca/libros/Toda-Escritura-es-inspirada-de-Dios-y-provechosa/Libro-b%C3%ADblico-n%C3%BAmero-61-2-Pedro/
+  level: 1
+  published: null
+  checked_on: '2026-10-14'
+it-tartaro:
+  title: Tártaro
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/T%C3%A1rtaro/
+  level: 1
+  published: null
+  checked_on: '2026-10-14'

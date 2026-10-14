@@ -1,0 +1,36 @@
+# biblical-atlas: cobertura de un libro. Formato en data/coverage/README.md.
+book: 2-pedro
+chapters:
+  1:
+    status: complete
+    reviewed_on: 2026-10-14
+    note: "Pedro saluda a quienes tienen una fe tan valiosa como la suya y les pide crecer en cualidades cristianas. Sabe que morirá pronto, recuerda que vio la transfiguración y les pide atender la palabra profética."
+    spans:
+    - {v: 1-2, type: letter, entities: [letter:2-pedro, event:pedro-escribe-2-pedro, person:pedro, relation:pedro/holds_office/-], mentions: [person:jesus], note: "Simón Pedro, esclavo y apóstol de Jesucristo, saluda a los que comparten su fe y les desea bondad inmerecida y paz por conocer bien a Dios y a Jesús. La carta no dice desde dónde escribe."}
+    - {v: 3-11, type: letter, mentions: [person:jesus], note: "El poder de Dios da lo necesario para la vida y la devoción. A la fe hay que sumar virtud, conocimiento, autocontrol, aguante, devoción, cariño fraternal y amor, para asegurar la llamada y entrar en el Reino."}
+    - {v: 12-15, type: letter, entities: [person:pedro, event:pedro-escribe-2-pedro], mentions: [person:jesus, event:aparicion-junto-al-mar-de-galilea], note: "Mientras siga en su tabernáculo, su cuerpo según la nota, quiere recordarles todo esto: sabe que morirá pronto, como Jesús le dio a entender junto al mar (Jn 21:18, 19, según Perspicacia). No dice cuándo ni dónde."}
+    - {v: 16-18, type: letter, entities: [event:transfiguracion, place:monte-de-la-transfiguracion, person:pedro], mentions: [person:jesus], note: "No siguió cuentos inventados: con otros vio el esplendor de Jesús y oyó a Dios llamarlo su Hijo amado en la santa montaña. Perspicacia «Transfiguración» y «Pedro, Cartas de» dicen que esos testigos fueron Pedro, Santiago y Juan."}
+    - {v: 19-21, type: letter, note: "Eso confirma la palabra profética, una lámpara hasta que salga el lucero, que Perspicacia «Estrella» relaciona con el poder real de Jesús. Ninguna profecía nace de una idea humana: los hombres hablaron movidos por espíritu santo."}
+  2:
+    status: complete
+    reviewed_on: 2026-10-14
+    note: "Pedro avisa de falsos maestros que se infiltrarán con codicia y conducta descarada. Con los ángeles que pecaron, el Diluvio, Sodoma y Gomorra y Balaam muestra que Dios castiga a los malvados y rescata a los fieles."
+    spans:
+    - {v: 1-3, type: letter, entities: [letter:2-pedro], note: "Como hubo falsos profetas en el pueblo, habrá falsos maestros que meterán sectas destructivas, negarán al dueño que los compró y explotarán a otros con palabras engañosas. Su condena ya está decidida."}
+    - {v: 4-5, type: letter, entities: [event:angeles-toman-esposas, event:diluvio, person:noe], note: "Dios echó en el Tártaro a los ángeles que pecaron; Perspicacia «Tártaro» lo ve como una condición degradada, no un lugar, en días de Noé. Trajo el Diluvio y guardó a Noé, predicador de justicia, con otros siete."}
+    - {v: 6-8, type: letter, entities: [event:destruccion-de-sodoma-y-gomorra, event:lot-huye-a-zoar, person:lot, relation:lot/lived_in/sodoma], mentions: [place:sodoma, place:gomorra], note: "Redujo a cenizas Sodoma y Gomorra como aviso para los irreverentes y rescató al justo Lot, que sufría cada día por lo que veía y oía viviendo entre ellos."}
+    - {v: 9-10, type: letter, note: "Jehová sabe librar de la prueba a quienes le tienen devoción y reservar a los injustos para el juicio, sobre todo a los que buscan contaminar la carne y desprecian la autoridad."}
+    - {v: 11-14, type: letter, note: "Los ángeles, más fuertes, no injurian a los gloriosos por respeto a Jehová; estos hombres, como animales sin razón, injurian lo que no conocen. Viven entre excesos, con ojos de adulterio y codicia, y seducen a los inestables."}
+    - {v: 15-16, type: letter, entities: [person:balaam, event:la-burra-de-balaam-habla, relation:balaam/kin/beor-padre-de-balaam, relation:balaam/holds_office/-], mentions: [person:beor-padre-de-balaam, event:balaam-va-con-los-principes-de-balac], note: "Imitan a Balaam, el hijo de Beor, al que perdió el amor a una paga injusta. Su burra le habló como un hombre y frenó al profeta. Perspicacia «Balaam» liga esa codicia a su viaje con los príncipes de Balac."}
+    - {v: 17-22, type: letter, mentions: [person:jesus], note: "Son fuentes sin agua y nieblas de tormenta. Prometen libertad siendo esclavos de la corrupción; quien vuelve atrás tras conocer a Cristo acaba peor, como el perro a su vómito (Pr 26:11, según Perspicacia «Pedro, Cartas de»)."}
+  3:
+    status: complete
+    reviewed_on: 2026-10-14
+    note: "Pedro escribe su segunda carta para despertar la memoria. Los burlones olvidan que Dios destruyó con agua el mundo de antes; el día de Jehová llegará con nuevos cielos y una nueva tierra. Pablo enseñó lo mismo."
+    spans:
+    - {v: 1-2, type: letter, entities: [letter:2-pedro, event:pedro-escribe-2-pedro, person:pedro], mentions: [letter:1-pedro], note: "Es su segunda carta; como en la primera, les recuerda lo que dijeron los santos profetas y lo que mandó el Señor por medio de los apóstoles."}
+    - {v: 3-7, type: letter, entities: [event:diluvio], note: "En los últimos días, burlones preguntarán por la presencia prometida de Cristo. Olvidan que Dios formó cielos y tierra (Gé 1:6, 9) y que el mundo de entonces pereció inundado; Perspicacia «Noé» lo ve como modelo del juicio venidero."}
+    - {v: 8-10, type: letter, note: "Mil años son para Jehová lo que un día: no tarda, sino que tiene paciencia para que todos se arrepientan. Su día llegará como un ladrón, y los cielos y los elementos se disolverán."}
+    - {v: 11-13, type: letter, mentions: [event:isaias-anuncia-nuevos-cielos-y-una-nueva-tierra], note: "Por eso deben vivir con conducta santa mientras esperan ese día. Esperan nuevos cielos y una nueva tierra con justicia, la promesa de Is 65:17 y 66:22 según «Toda Escritura» y Perspicacia «Pedro, Cartas de»."}
+    - {v: 14-16, type: letter, entities: [person:pablo], note: "Que procuren estar sin mancha y en paz. La paciencia del Señor es salvación, como les escribió Pablo, al que llama amado hermano; Pedro pone sus cartas con las demás Escrituras, que los ignorantes tuercen."}
+    - {v: 17-18, type: letter, mentions: [person:jesus], note: "Ya avisados, que vigilen para que el error de los malvados no los aparte ni les quite firmeza, y sigan avanzando en el favor de Dios y en lo que saben de Jesucristo, a quien da la gloria."}
