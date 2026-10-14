@@ -23,6 +23,7 @@ sources:
 - ip1-17
 - isaias-22
 - jeremias-49
+- esdras-4
 links:
 - title: 'Perspicacia: «Elam»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Elam/
@@ -31,5 +32,5 @@ history:
 - date: '2026-09-30'
   change: Se añade que hubo israelitas desterrados en Elam, como dice Perspicacia «Elam» al comentar Is 11:11.
   source: it-elam
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified

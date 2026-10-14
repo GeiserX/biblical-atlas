@@ -10,6 +10,9 @@ distinct_from:
 - jozacar
 - zabad-hijo-de-tahat
 - zabad-hijo-de-natan
+- zabad-descendiente-de-hasum
+- zabad-descendiente-de-nebo
+- zabad-descendiente-de-zatu
 summary: Hijo de Ahlái y uno de los guerreros poderosos de David.
 reason: Perspicacia «Zabad», núm. 3; 1Cr 11:41.
 sources:
@@ -38,5 +41,5 @@ relations:
   reason: '1Cr 11:41: figura entre los valientes de David.'
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified

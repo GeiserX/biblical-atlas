@@ -15,6 +15,8 @@ distinct_from:
 - jonatan-hijo-de-jada
 - jonatan-hijo-de-uzias
 - jonatan-sobrino-de-david
+- jonatan-padre-de-ebed
+- jonatan-hijo-de-asahel
 summary: Hararita, uno de los treinta guerreros de David. Perspicacia lo hace hijo de Sagué, que sería Samá hijo de Agué.
 reason: Perspicacia «Jonatán», núm. 5, «Samah», núm. 3, y «Sagué»; 2Sa 23:32, 33.
 sources:
@@ -55,5 +57,5 @@ relations:
   reason: '2Sa 23:32: uno de los treinta guerreros de David.'
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified

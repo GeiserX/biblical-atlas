@@ -18,7 +18,7 @@ links:
 - title: 'Perspicacia: «Matitías»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Matit%C3%ADas/
   type: perspicacia
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified
 relations:
 - type: kin
@@ -34,3 +34,4 @@ relations:
   status: verified
 distinct_from:
 - matitias-hijo-de-salum
+- matitias-descendiente-de-nebo

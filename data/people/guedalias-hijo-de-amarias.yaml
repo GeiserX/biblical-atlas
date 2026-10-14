@@ -10,6 +10,7 @@ distinct_from:
 - guedalias
 - guedalias-hijo-de-pasjur
 - guedalias-hijo-de-jedutun
+- guedalias-de-la-casa-de-jesua
 summary: Abuelo del profeta Sofonías e hijo de Amarías. Su nombre significa «Jehová es grande». Perspicacia dice que posiblemente
   descendía del rey Ezequías.
 reason: Perspicacia «Guedalías», núm. 2; Sof 1:1.
@@ -33,5 +34,5 @@ relations:
   reason: Sof 1:1 lo presenta como hijo de Amarías.
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified

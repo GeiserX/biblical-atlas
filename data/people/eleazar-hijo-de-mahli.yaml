@@ -10,6 +10,8 @@ distinct_from:
 - eleazar-hijo-de-eliud
 - eleazar-hijo-de-dodo
 - eleazar-hijo-de-abinadab
+- eleazar-hijo-de-finehas
+- eleazar-descendiente-de-paros
 summary: Levita merarita, hijo de Mahlí. Murió sin hijos varones, y sus hijas se unieron en matrimonio con los hijos de Quis,
   su hermano.
 reason: Perspicacia «Eleazar», núm. 4; 1Cr 23:21, 22; 24:28.
@@ -44,5 +46,5 @@ relations:
   reason: 1Cr 23:21 nombra a Eleazar y Quis como hijos de Mahlí; Perspicacia «Quis», núm. 1, llama a Quis hermano de Eleazar.
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified

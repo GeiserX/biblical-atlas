@@ -11,11 +11,13 @@ distinct_from:
 - amarias-hijo-de-merayot
 - amarias-sacerdote-principal
 - amarias-ayudante-de-core
+- amarias-descendiente-de-binui
 summary: Sacerdote de la línea de Eleazar, posterior al Amarías hijo de Merayot. Su padre fue Azarías y su hijo, otro Ahitub.
 reason: Perspicacia «Amarías», núm. 4; 1Cr 6:11.
 sources:
 - it-amarias
 - 1-cronicas-6
+- esdras-7
 links:
 - title: 'Perspicacia: «Amarías»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Amar%C3%ADas/
@@ -27,8 +29,10 @@ relations:
   inferred: false
   sources:
   - 1-cronicas-6
+  - esdras-7
+  - it-amarias
   reason: 1Cr 6:11 lo da como hijo de Azarías.
-  checked_on: '2026-10-12'
+  checked_on: '2026-10-13'
   status: verified
 checked_on: '2026-10-13'
 status: verified

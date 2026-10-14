@@ -26,5 +26,8 @@ relations:
   reason: 'Lu 3:31: Matatá, hijo de Natán.'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+disambiguation: El hijo de Natán de la genealogía de Lu 3:31; no el Matatá de los hijos de Hasum de los días de Esdras.
+checked_on: '2026-10-13'
 status: verified
+distinct_from:
+- matata-descendiente-de-hasum

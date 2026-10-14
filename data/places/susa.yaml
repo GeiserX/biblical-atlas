@@ -17,6 +17,7 @@ sources:
 - it-susa
 - it-persia
 - openbible-geo
+- esdras-4
 links:
 - title: 'Perspicacia: «Susa»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Susa/
@@ -24,5 +25,5 @@ links:
 - title: Nehemías 1 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Nehem%C3%ADas/1/
   type: bible
-checked_on: '2026-09-28'
+checked_on: '2026-10-13'
 status: verified

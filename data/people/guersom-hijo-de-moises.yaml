@@ -8,6 +8,7 @@ disambiguation: Guersom, primogénito de Moisés; no Guersón, hijo de Leví, ll
   de Babilonia con Esdras.
 distinct_from:
 - guerson
+- guersom-descendiente-de-finehas
 summary: Hijo mayor de Moisés, que Ziporá dio a luz mientras su padre vivía en Madián. Su nombre recuerda que Moisés era
   allí extranjero. Tras el éxodo, Jetró lo llevó con su madre y su hermano al campamento.
 reason: Perspicacia «Guersom», núm. 2; Éx 2:21, 22 y su nota; Éx 18:2-6.
@@ -77,5 +78,5 @@ relations:
   reason: 'Perspicacia «Ziporá»: los dos hijos de Moisés eran Guersom y Eliezer; Éx 4:20 los lleva a Egipto.'
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified

@@ -26,7 +26,8 @@ relations:
   status: verified
 disambiguation: 'Acub núm. 4 de Perspicacia: descendiente de David, hijo de Elioenái. No el portero levita de después del
   destierro.'
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified
 distinct_from:
 - acub-portero
+- acub-netineo
