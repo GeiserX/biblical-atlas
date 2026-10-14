@@ -1,0 +1,244 @@
+{
+ "formato": "biblical-atlas/propuesta-cobertura/1",
+ "libro": "3-juan",
+ "agente": "escritor-3-juan",
+ "leido": "2026-10-14",
+ "cobertura": {},
+ "fuentes": {},
+ "cambios": [
+  {
+   "op": "anadir",
+   "tipo": "letters",
+   "id": "3-juan",
+   "campo": "sources",
+   "valores": [
+    "si-3-juan",
+    "w08-cartas-de-juan-y-judas"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "letters",
+   "id": "3-juan",
+   "campo": "note",
+   "antes": "«Éfeso o cerca»: la ubicamos en Éfeso. No damos a Demetrio como portador porque la fuente solo dice «puede ser».",
+   "despues": "«Éfeso o cerca»: la ubicamos en Éfeso. No damos a Demetrio como portador: Perspicacia dice que puede serlo y «Toda Escritura», libro 64, que lo parece; ninguna lo afirma.",
+   "historial": {
+    "date": "2026-10-14",
+    "change": "La nota decía que una sola fuente duda de que Demetrio llevara la carta; «Toda Escritura», libro 64, párr. 3, también lo da solo como lo que parece.",
+    "source": "si-3-juan"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "juan-apostol",
+   "campo": "names",
+   "valores": [
+    {
+     "name": "el anciano",
+     "note": "Así se presenta en 2Jn 1. «Toda Escritura», libro 63, párr. 2, lo explica por su edad y porque, como columna y último apóstol vivo, era anciano de la congregación."
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "juan-apostol",
+   "campo": "sources",
+   "valores": [
+    "3-juan-1",
+    "si-3-juan"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "juan-apostol",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "lived_in",
+     "place": "efeso",
+     "date": {
+      "from": 98,
+      "to": 98,
+      "precision": "year",
+      "approx": true,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "c. 98 e.c."
+     },
+     "inferred": true,
+     "sources": [
+      "3-juan-1",
+      "si-3-juan"
+     ],
+     "reason": "La Tabla pone sus cartas en «Éfeso o cerca» y el libro «Testimonio completo» dice que, según se cree, se fue allí al salir libre.",
+     "checked_on": "2026-10-14",
+     "status": "verified"
+    },
+    {
+     "type": "tie",
+     "person": "gayo-de-3-juan",
+     "word": "friend",
+     "date": {
+      "from": 98,
+      "to": 98,
+      "precision": "year",
+      "approx": true,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "c. 98 e.c."
+     },
+     "inferred": true,
+     "sources": [
+      "3-juan-1",
+      "w08-cartas-de-juan-y-judas",
+      "si-3-juan"
+     ],
+     "reason": "3Jn 1: Juan llama a Gayo «el amado» y dice quererlo de veras. La Atalaya de 2008 lo llama su amigo íntimo y «Toda Escritura», libro 64, párr. 1, amigo especial de Juan.",
+     "checked_on": "2026-10-14",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "people",
+   "id": "gayo-de-3-juan",
+   "campo": "perspicacia",
+   "antes": null,
+   "despues": "1200001592#4"
+  },
+  {
+   "op": "cambiar",
+   "tipo": "people",
+   "id": "gayo-de-3-juan",
+   "campo": "disambiguation",
+   "antes": "El Gayo de 3 Juan. Probablemente no es ninguno de los Gayo de Hechos y de las cartas de Pablo.",
+   "despues": "El Gayo de 3 Juan, amigo de Juan. No se sabe quién era: nada muestra que sea uno de los Gayo de Hechos o de las cartas de Pablo, escritas al menos treinta años antes.",
+   "historial": {
+    "date": "2026-10-14",
+    "change": "Decía que probablemente no es ninguno de los otros Gayo. Perspicacia «Juan, Cartas de» y «Toda Escritura», libro 64, solo dicen que no se sabe y que nada lo muestra.",
+    "source": "si-3-juan"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "gayo-de-3-juan",
+   "campo": "sources",
+   "valores": [
+    "si-3-juan",
+    "w08-cartas-de-juan-y-judas"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "people",
+   "id": "demetrio-de-3-juan",
+   "campo": "perspicacia",
+   "antes": null,
+   "despues": "1200001152#2"
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "demetrio-de-3-juan",
+   "campo": "sources",
+   "valores": [
+    "si-3-juan",
+    "w08-cartas-de-juan-y-judas"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "people",
+   "id": "diotrefes",
+   "campo": "perspicacia",
+   "antes": null,
+   "despues": "1200001185"
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "diotrefes",
+   "campo": "sources",
+   "valores": [
+    "si-3-juan",
+    "w08-cartas-de-juan-y-judas"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "gayo-de-corinto",
+   "campo": "sources",
+   "valores": [
+    "it-juan-cartas",
+    "si-3-juan"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "people",
+   "id": "gayo-de-corinto",
+   "campo": "disambiguation",
+   "antes": "El de Corinto (1Co 1:14; Ro 16:23). No es el macedonio del motín de Éfeso, ni el de Derbe, ni el de 3 Juan.",
+   "despues": "El de Corinto (1Co 1:14; Ro 16:23). No es el macedonio del motín de Éfeso ni el de Derbe, y nada muestra que sea el de 3 Juan.",
+   "historial": {
+    "date": "2026-10-14",
+    "change": "Decía que no es el Gayo de 3 Juan. Perspicacia «Juan, Cartas de» y «Toda Escritura», libro 64, párr. 1, solo dicen que no se sabe quién era y que nada lo muestra.",
+    "source": "si-3-juan"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "gayo-de-derbe",
+   "campo": "sources",
+   "valores": [
+    "it-juan-cartas",
+    "si-3-juan"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "people",
+   "id": "gayo-de-derbe",
+   "campo": "disambiguation",
+   "antes": "El Gayo de Derbe de Hch 20:4. Perspicacia ve posible que sea el macedonio del motín de Éfeso; no es el de Corinto ni el de 3 Juan.",
+   "despues": "El Gayo de Derbe de Hch 20:4. Perspicacia ve posible que sea el macedonio del motín de Éfeso; no es el de Corinto, y nada muestra que sea el de 3 Juan.",
+   "historial": {
+    "date": "2026-10-14",
+    "change": "Decía que no es el Gayo de 3 Juan. Perspicacia «Juan, Cartas de» y «Toda Escritura», libro 64, párr. 1, solo dicen que no se sabe quién era y que nada lo muestra.",
+    "source": "si-3-juan"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "gayo-de-macedonia",
+   "campo": "sources",
+   "valores": [
+    "it-juan-cartas",
+    "si-3-juan"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "people",
+   "id": "gayo-de-macedonia",
+   "campo": "disambiguation",
+   "antes": "El macedonio de Hch 19:29. Perspicacia ve posible que sea el Gayo de Derbe de Hch 20:4; no es el de Corinto ni el de 3 Juan.",
+   "despues": "El macedonio de Hch 19:29. Perspicacia ve posible que sea el Gayo de Derbe de Hch 20:4; no es el de Corinto, y nada muestra que sea el de 3 Juan.",
+   "historial": {
+    "date": "2026-10-14",
+    "change": "Decía que no es el Gayo de 3 Juan. Perspicacia «Juan, Cartas de» y «Toda Escritura», libro 64, párr. 1, solo dicen que no se sabe quién era y que nada lo muestra.",
+    "source": "si-3-juan"
+   }
+  }
+ ],
+ "preguntas": []
+}
