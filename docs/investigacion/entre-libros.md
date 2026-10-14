@@ -284,9 +284,15 @@ Los campos, los tipos de relación y sus palabras se nombran como en el esquema 
 - **Lahmí y Jaír.** El tramo 2Sa 21:19 puede poner `person:lahmi` y `person:jair-padre-de-elhanan` en `mentions`, como anunciaba su nota; 1 Crónicas no los hace citar 2 Samuel 21.
 - **Esbaal y Merib-Baal.** Son nombres de `is-boset` y `mefiboset-hijo-de-jonatan`, no fichas aparte: las notas de la edición de estudio a 1Cr 8:33, 34 dicen que son la misma persona.
 
-## Para Hebreos y Santiago (desde 1 Reyes)
+## Para Hebreos (desde 1 Reyes)
 
-- **Elías.** `elias-resucita-al-hijo-de-la-viuda-de-sarepta` lleva «Heb 11:35» en `passages`: va en el tramo de Heb 11 que lo recuerda. `elias-anuncia-la-sequia-a-acab` y `elias-ora-y-jehova-envia-la-lluvia` llevan «Snt 5:17» y «Snt 5:18»: van en el tramo de Santiago 5.
+- **Elías.** `elias-resucita-al-hijo-de-la-viuda-de-sarepta` lleva «Heb 11:35» en `passages`: va en el tramo de Heb 11 que lo recuerda.
+
+## Para Hebreos, Romanos y Gálatas (desde Santiago)
+
+- **El orden de las cartas de 61-62.** `santiago-escribe-santiago` lleva el 2843 de la serie `hechos`. El estudio 3 la lista detrás de Hebreos (c. 61) y delante de 1 Timoteo y Tito (c. 61-64), y «Toda Escritura», libro 59, párr. 4, la ve tardía, quizás poco antes de 62: por eso va tras `pablo-escribe-hebreos` (2841) y antes de `pablo-escribe-1-timoteo` (2850) y `pablo-escribe-tito` (2851). Que vaya también tras `tito-queda-en-creta` (2842) es decisión nuestra, porque entre 2841 y 2842 no hay número libre; ninguna fuente la ordena frente a ese suceso. Si se quiere delante, Santiago toma el 2842 y `tito-queda-en-creta` pasa al 2843. Si Hebreos cambia su número, Santiago sigue detrás.
+- **Le 19:18 como ley en vigor.** Snt 2:8 entró en `jehova-da-leyes-para-que-israel-sea-santo`. Ro 13:9 y Gál 5:14 citan el mismo mandato y no lo pusieron: quien reabra Romanos 13 o Gálatas 5 puede añadir su pasaje y poner el suceso en el tramo.
+- **Cargos sin palabra (pregunta abierta).** Snt 3:1 cuenta a Santiago entre los maestros y Snt 5:14 nombra a los ancianos de la congregación; Perspicacia «Santiago», núm. 4, lo hace superintendente en Jerusalén y, al parecer, «apóstol» de esa congregación. `santiago-hermano-de-jesus` no lleva `holds_office` hasta que el dueño responda la pregunta de `data/_proposals/santiago.json`: `apostle` con `inferred: true`, o palabras nuevas para maestro y anciano o superintendente. Con la respuesta, la ficha recibe el cargo con `santiago-3`, `santiago-5` o `hch-15` como fuente, y se releen Santiago 3 y 5 para ponerlo en sus tramos.
 
 ## Para Esdras, Nehemías y Hebreos (desde Ageo)
 
