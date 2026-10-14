@@ -41,6 +41,7 @@ sources:
 - 1-reyes-16
 - 2-reyes-2
 - 1-cronicas-19
+- hebreos-11
 - 2-cronicas-28
 - esdras-2
 links:
@@ -63,5 +64,5 @@ history:
 - date: '2026-09-29'
   change: La razón cita ahora de dónde sale la fecha de la toma, que entra en el resumen.
   source: josue-6
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified

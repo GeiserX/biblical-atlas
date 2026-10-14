@@ -1,0 +1,48 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: fileto
+name: Fileto
+names:
+- name: Fileto
+perspicacia: '1200003465'
+date:
+  from: 65
+  to: 65
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 65 e.c.
+summary: Cristiano del siglo I que se desvió de la verdad. Con Himeneo enseñaba que la resurrección ya había sucedido y arruinaba
+  la fe de algunos; la nota de estudio lo pone entre los falsos maestros de Éfeso.
+reason: Perspicacia «Fileto» e «Himeneo»; 2Ti 2:17, 18 y sus notas. La Tabla de los libros fecha 2 Timoteo hacia 65.
+sources:
+- it-fileto
+- it-himeneo
+- 2-timoteo-2
+- tnm-tabla
+links:
+- title: 'Perspicacia: «Fileto»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Fileto/
+  type: perspicacia
+- title: 2 Timoteo 2 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-timoteo/2/
+  type: bible
+relations:
+- type: lived_in
+  place: efeso
+  date:
+    from: 65
+    to: 65
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 65 e.c.
+  inferred: true
+  sources:
+  - 2-timoteo-2
+  reason: 'La nota de 2Ti 2:18: parece que Himeneo y Fileto estaban entre los falsos maestros de Éfeso.'
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified

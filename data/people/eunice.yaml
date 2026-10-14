@@ -11,10 +11,10 @@ date:
   type: anchored
   chronology: tnm
   text: c. 47-65 e.c. (de la primera visita de Pablo a Listra a 2 Timoteo)
-summary: Judía creyente, casada con un griego, madre de Timoteo. Le enseñó los santos escritos desde niño; quizás
-  se hizo cristiana en la primera visita de Pablo a Listra.
-reason: 'Perspicacia «Eunice»; Hch 16:1; 2Ti 1:5 y 3:15. El estudio 3: la primera gira de Pablo va de 47 a 48 e.c.,
-  cuando Perspicacia «Eunice» cree que la conoció en Listra, y 2 Timoteo es de c. 65.'
+summary: Judía creyente, casada con un griego, madre de Timoteo. Le enseñó los santos escritos desde niño. Probablemente se
+  hizo cristiana, con su madre Loida, en la primera visita de Pablo a Listra.
+reason: Perspicacia «Eunice»; Hch 16:1; 2Ti 1:5 y 3:15. La nota de 2Ti 1:5 ve probable que creyera en la primera visita de
+  Pablo a Listra, de 47-48 e.c. según el estudio 3; 2 Timoteo es de c. 65.
 sources:
 - si-3
 - it-eunice
@@ -28,7 +28,14 @@ links:
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/hechos/16/
   type: bible
 perspicacia: '1200001443'
-checked_on: '2026-09-29'
+history:
+- date: '2026-10-13'
+  change: '«Quizás se hizo cristiana» pasa a «probablemente»: así lo dicen la nota de 2Ti 1:5 y Perspicacia «Eunice».'
+  source: 2-timoteo-1
+- date: '2026-10-13'
+  change: La razón nombra la nota de 2Ti 1:5, que sostiene el cambio del resumen.
+  source: 2-timoteo-1
+checked_on: '2026-10-13'
 status: verified
 relations:
 - type: lived_in
@@ -38,9 +45,10 @@ relations:
   - it-eunice
   - bt-15
   - hch-16
+  - 2-timoteo-1
   reason: Perspicacia cree muy probable que Pablo la conociera en Listra en su primer viaje; Hch 16:1 sitúa allí a Timoteo,
     su hijo.
-  checked_on: '2026-10-03'
+  checked_on: '2026-10-13'
   status: verified
 - type: kin
   person: loida
@@ -49,7 +57,8 @@ relations:
   sources:
   - it-loida
   - it-eunice
+  - 2-timoteo-1
   reason: Perspicacia «Eunice» la llama hija de Loida; «Loida» se apoya en las versiones siriacas de 2Ti 1:5, que la hacen
     abuela por parte de madre.
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-13'
   status: verified

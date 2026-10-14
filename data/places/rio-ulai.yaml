@@ -1,8 +1,10 @@
 # biblical-atlas: un fichero por lugar. Esquema en docs/investigacion/README.md.
 id: rio-ulai
-name: Río Ulai
+name: Río Ulái
 names:
 - name: Ulai
+- name: Ulái
+  note: Grafía de la TNM en Da 8:2, 16; Perspicacia escribe Ulai.
 type: river
 lat: null
 lon: null
@@ -43,9 +45,14 @@ reason: 'Perspicacia «Ulai» (Da 8:1-3, 16): las propuestas son el río Kerja o
 sources:
 - it-ulai
 - openbible-geo
+- daniel-8
 links:
 - title: 'Perspicacia: «Ulai»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ulai/
   type: perspicacia
-checked_on: '2026-09-28'
+history:
+- date: '2026-10-14'
+  change: El nombre sigue la grafía de la TNM (Da 8:2, 16), con tilde; Ulai, la de Perspicacia, queda en names.
+  source: daniel-8
+checked_on: '2026-10-14'
 status: verified

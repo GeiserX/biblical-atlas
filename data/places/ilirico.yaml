@@ -20,6 +20,7 @@ sources:
 - it-dalmacia
 - romanos-15
 - openbible-geo
+- 2-timoteo-4
 links:
 - title: 'Perspicacia: «Ilírico»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Il%C3%ADrico/
@@ -27,5 +28,5 @@ links:
 - title: Romanos 15 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/romanos/15/
   type: bible
-checked_on: '2026-09-28'
+checked_on: '2026-10-13'
 status: verified

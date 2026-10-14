@@ -18,6 +18,7 @@ sources:
 - lucas-1
 - hch-21
 - colosenses-4
+- filemon-1
 links:
 - title: 'Perspicacia: «Lucas»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Lucas/
@@ -31,7 +32,11 @@ history:
   change: La relación con Pablo de 56-61 cita ahora Col 4:14, donde Lucas manda saludos desde Roma (Perspicacia «Lucas», c.
     60-61); el resto de la lista no cambia.
   source: colosenses-4
-checked_on: '2026-10-02'
+- date: '2026-10-14'
+  change: La relación con Pablo de 56-61 pasa a decir colaborador, como lo llama Flm 24 (Perspicacia «Lucas»); el resto de
+    la lista no cambia.
+  source: filemon-1
+checked_on: '2026-10-14'
 status: verified
 relations:
 - type: accompanies
@@ -55,6 +60,7 @@ relations:
   status: verified
 - type: accompanies
   person: pablo
+  word: fellow_worker
   date:
     from: 56
     to: 61
@@ -70,9 +76,10 @@ relations:
   - hch-27
   - hch-28
   - colosenses-4
+  - filemon-1
   reason: El «nosotros» vuelve en Filipos y llega a Jerusalén; luego va con él a Roma (desde Hch 20:5 y 27:1), donde saluda
-    a los colosenses (Col 4:14).
-  checked_on: '2026-09-29'
+    a los colosenses (Col 4:14) y Pablo lo llama colaborador (Flm 24).
+  checked_on: '2026-10-14'
   status: verified
 - type: accompanies
   person: pablo

@@ -1,0 +1,29 @@
+# biblical-atlas: fuentes de la cobertura de 1-juan. Esquema en docs/investigacion/README.md.
+si-1-juan:
+  title: 'Libro bíblico número 62: 1 Juan'
+  work: “Toda Escritura es inspirada de Dios y provechosa”
+  url: https://www.jw.org/es/biblioteca/libros/Toda-Escritura-es-inspirada-de-Dios-y-provechosa/Libro-b%C3%ADblico-n%C3%BAmero-62-1-Juan/
+  level: 1
+  published: null
+  checked_on: '2026-10-14'
+w08-cartas-de-juan-y-judas:
+  title: Puntos sobresalientes de las cartas de Juan y de Judas
+  work: La Atalaya (15 de diciembre de 2008)
+  url: https://www.jw.org/es/biblioteca/revistas/w20081215/Puntos-sobresalientes-de-las-cartas-de-Juan-y-de-Judas/
+  level: 1
+  published: 2008
+  checked_on: '2026-10-14'
+it-anticristo:
+  title: Anticristo
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Anticristo/
+  level: 1
+  published: null
+  checked_on: '2026-10-14'
+it-santos:
+  title: Santos
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Santos/
+  level: 1
+  published: null
+  checked_on: '2026-10-14'

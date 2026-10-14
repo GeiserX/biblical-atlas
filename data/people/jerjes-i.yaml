@@ -81,9 +81,10 @@ relations:
     se cree que era Jerjes I.'
   checked_on: '2026-09-29'
   status: verified
-disambiguation: Jerjes I, el Asuero del libro de Ester (Perspicacia «Asuero», núm. 3); no el Asuero de Esd 4:6, probablemente
-  Cambises.
-checked_on: '2026-10-13'
+disambiguation: Jerjes I, el Asuero del libro de Ester (Perspicacia «Asuero», núm. 3); no el padre de Darío el medo ni el
+  Asuero de Esd 4:6, probablemente Cambises.
+perspicacia: 1200000142#3
+checked_on: '2026-10-14'
 status: verified
 alternatives:
 - date:
@@ -100,3 +101,4 @@ alternatives:
     prefiere 475.
 distinct_from:
 - asuero-de-esdras
+- asuero-padre-de-dario-el-medo

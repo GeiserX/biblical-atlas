@@ -1,0 +1,56 @@
+# biblical-atlas: cobertura de un libro. Formato en data/coverage/README.md.
+book: santiago
+chapters:
+  1:
+    status: complete
+    reviewed_on: 2026-10-14
+    note: "Santiago saluda a los cristianos esparcidos y los anima a ver las pruebas como ocasión de alegría, a pedir sabiduría con fe, a resistir el mal deseo y a poner la palabra en práctica."
+    spans:
+    - {v: "1", type: letter, entities: [letter:santiago, event:santiago-escribe-santiago, person:santiago-hermano-de-jesus], mentions: [person:jesus], note: "Santiago, esclavo de Dios y de Jesucristo, saluda a las doce tribus esparcidas. Perspicacia ve en ellas al Israel espiritual, sobre todo cristianos fuera de Palestina. No se presenta como apóstol."}
+    - {v: 2-8, type: letter, note: "Las pruebas, vistas como motivo de alegría, producen aguante. Quien necesite sabiduría, que la pida a Dios con fe y sin dudar: el indeciso se parece a una ola que el viento zarandea."}
+    - {v: 9-11, type: letter, note: "El hermano humilde puede alegrarse de verse ensalzado, y el rico, de verse humillado, porque la riqueza se marchita como la flor del campo cuando aprieta el sol."}
+    - {v: 12-18, type: letter, note: "Feliz quien aguanta la prueba: tendrá la corona de la vida. Dios no prueba a nadie con lo malo; es el deseo propio el que engendra pecado y muerte. Todo regalo bueno viene del Padre, que no cambia."}
+    - {v: 19-25, type: letter, note: "Rápidos para escuchar y lentos para hablar y enojarse. La palabra hay que cumplirla, no solo oírla: quien solo la oye es como el que se ve en el espejo y enseguida olvida su aspecto."}
+    - {v: 26-27, type: letter, note: "Quien no refrena la lengua se engaña y su adoración no vale. La adoración limpia ante Dios es atender a huérfanos y viudas en sus apuros y no mancharse con el mundo."}
+  2:
+    status: complete
+    reviewed_on: 2026-10-14
+    note: "Contra el favoritismo hacia los ricos, Santiago recuerda la ley real del amor al prójimo y enseña que la fe sin obras está muerta, con los ejemplos de Abrahán y de Rahab."
+    spans:
+    - {v: 1-4, type: letter, entities: [letter:santiago], mentions: [person:jesus], note: "La fe en el glorioso Señor Jesucristo no casa con el favoritismo: dar buen asiento en la reunión al rico de anillos de oro y dejar de pie al pobre es juzgar con malicia."}
+    - {v: 5-9, type: letter, entities: [event:jehova-da-leyes-para-que-israel-sea-santo], note: "Dios eligió a los pobres para hacerlos ricos en fe; ustedes los desprecian, pero los que a ustedes los maltratan y los llevan a juicio son los ricos. La ley real, amar al prójimo (Le 19:18), excluye el favoritismo."}
+    - {v: 10-13, type: letter, entities: [event:diez-mandamientos], note: "Fallar en un solo punto es violar la Ley entera: el mismo que prohibió el adulterio prohibió el asesinato (Éx 20:13, 14; Dt 5:17, 18). Sin misericordia será juzgado quien no la tuvo."}
+    - {v: 14-20, type: letter, note: "Una fe sin obras no salva: despedir con buenos deseos al hermano sin ropa ni comida no sirve de nada. También los demonios creen que hay un solo Dios, y tiemblan."}
+    - {v: 21-24, type: letter, entities: [person:abrahan, person:isaac, event:abrahan-ofrece-a-isaac, event:pacto-de-los-animales-partidos, relation:isaac/kin/abrahan], note: "Abrahán, padre en la fe según Perspicacia, fue declarado justo por obras al ofrecer a Isaac en el altar. Así se cumplió Gé 15:6 y se le llamó amigo de Jehová (2Cr 20:7; Is 41:8)."}
+    - {v: 25-26, type: letter, entities: [person:rahab, event:rahab-esconde-a-los-espias], note: "También Rahab, la prostituta de Jericó, fue declarada justa por obras: acogió a los mensajeros y los hizo salir por otro camino (Jos 2). La fe sin obras está muerta, como el cuerpo sin espíritu."}
+  3:
+    status: complete
+    reviewed_on: 2026-10-14
+    note: "La lengua, pequeña pero capaz de grandes daños, y dos clases de sabiduría. Perspicacia resume el capítulo como la gran responsabilidad de quienes enseñan, que también deben dominar lo que dicen."
+    spans:
+    - {v: 1-2, type: letter, entities: [letter:santiago], note: "Pocos deberían aspirar a enseñar, porque el juicio de los maestros será más estricto; Santiago se cuenta entre ellos. Todos fallamos a menudo, y quien no falla al hablar puede dominar todo su cuerpo."}
+    - {v: 3-8, type: letter, mentions: [place:valle-de-hinon], note: "El freno del caballo, el timón del barco y una chispa que quema un bosque muestran el poder de la lengua. Encendida por la Gehena, el valle de Hinón según el glosario, nadie consigue domarla."}
+    - {v: 9-12, type: letter, mentions: [event:creacion-de-adan], note: "Con la misma boca se alaba a Jehová y se maldice a quienes él hizo a su semejanza, palabras de Gé 1:26 que Perspicacia liga a la creación del hombre. Ni la fuente ni la higuera dan dos frutos."}
+    - {v: 13-18, type: letter, note: "El sabio lo demuestra con buena conducta y apacibilidad. Celos amargos y rivalidades nacen de una sabiduría terrenal y demoniaca; la de arriba es pura, pacífica, razonable, misericordiosa, imparcial y sin hipocresía."}
+  4:
+    status: complete
+    reviewed_on: 2026-10-14
+    note: "Las peleas nacen de los deseos egoístas, y quien busca ser amigo del mundo se vuelve enemigo de Dios. Santiago pide humildad, que nadie juzgue al hermano y que los planes cuenten con la voluntad de Jehová."
+    spans:
+    - {v: 1-3, type: letter, entities: [letter:santiago], note: "Las guerras y peleas entre ellos salen de los deseos de la carne. Codician y no consiguen; no reciben porque no piden, o lo piden con mala intención, para sus caprichos."}
+    - {v: 4-6, type: letter, note: "Los llama adúlteras, o infieles: ser amigo del mundo es ser enemigo de Dios. Cita Pr 3:34 y una escritura de origen incierto; Perspicacia recoge la opinión de que sale de Gé 6:5; 8:21; Pr 21:10 y Gál 5:17."}
+    - {v: 7-10, type: letter, mentions: [person:satanas], note: "Sometidos a Dios y firmes contra el Diablo, que acabará huyendo. Quien se acerca a Dios lo encuentra cerca; los pecadores deben limpiarse, lamentarse y humillarse ante Jehová, que los ensalzará."}
+    - {v: 11-12, type: letter, note: "No hablar mal de un hermano ni juzgarlo: quien lo hace se pone por encima de la ley. Hay un único Legislador y Juez, capaz de salvar y de destruir."}
+    - {v: 13-17, type: letter, note: "Contra quienes planean ir a una ciudad, quedarse un año y hacer negocio sin saber qué traerá el mañana: la vida es una neblina. Hay que decir «si Jehová quiere». Saber hacer el bien y no hacerlo es pecado."}
+  5:
+    status: complete
+    reviewed_on: 2026-10-14
+    note: "Aviso a los ricos que oprimen, llamada a la paciencia hasta la presencia del Señor con los ejemplos de los profetas, Job y Elías, y consejos sobre jurar, orar, los enfermos y quien se aparta de la verdad."
+    spans:
+    - {v: 1-6, type: letter, entities: [letter:santiago], note: "Los ricos que acumulan y retienen la paga de los segadores deben llorar: su oro oxidado testificará contra ellos y los gritos de los trabajadores llegan a Jehová de los ejércitos. Condenaron y mataron al justo, sin nombre."}
+    - {v: 7-9, type: letter, mentions: [person:jesus], note: "Paciencia hasta la presencia del Señor, como el agricultor que aguarda las lluvias tempranas y tardías. Que no se quejen unos de otros: el Juez está a las puertas. Perspicacia lo lee como el juicio de Jesucristo."}
+    - {v: 10-11, type: letter, entities: [person:job, event:job-pierde-sus-bienes-y-sus-hijos, event:satanas-hiere-a-job-con-ulceras, event:jehova-restablece-a-job], note: "Los profetas que hablaron por Jehová enseñan a aguantar con paciencia. Job aguantó, y lo que Jehová hizo al final por él muestra su cariño; Perspicacia liga el versículo a Job 1, 2 y 42."}
+    - {v: "12", type: letter, note: "Ante todo, que no juren por el cielo, por la tierra ni de ningún otro modo: su sí debe ser sí y su no, no. Perspicacia lo pone junto a Mt 5:33-37."}
+    - {v: 13-15, type: letter, note: "Quien sufre, que ore; quien está alegre, que cante. El enfermo, que llame a los ancianos para que oren por él y lo unjan con aceite; Jehová lo levantará y se le perdonarán los pecados. Perspicacia habla de enfermedad espiritual."}
+    - {v: 16-18, type: letter, entities: [person:elias-profeta, event:elias-anuncia-la-sequia-a-acab, event:elias-ora-y-jehova-envia-la-lluvia, journey:elias-vuelve-ante-acab], mentions: [event:elias-se-presenta-ante-abdias-y-acab], note: "Confesarse los pecados y orar unos por otros: la súplica del justo tiene fuerza. Elías, humano como nosotros, oró y no llovió en tres años y medio; oró de nuevo y llovió (1Re 17:1; 18:1, 45)."}
+    - {v: 19-20, type: letter, note: "Quien hace volver al que se desvía de la verdad lo salva de la muerte y cubre muchos pecados; Perspicacia lo entiende como muerte espiritual. La carta termina aquí, sin saludos finales."}

@@ -1,0 +1,61 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: alejandro-calderero
+name: Alejandro
+names:
+- name: Alejandro
+perspicacia: 1200000192#6
+date:
+  from: 65
+  to: 65
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 65 e.c.
+disambiguation: El artesano del cobre de 2Ti 4:14, 15. Perspicacia lo separa del hijo de Simón de Cirene, del pariente de
+  Anás y del judío de Éfeso, y solo ve posible que sea el expulsado junto con Himeneo.
+distinct_from:
+- alejandro-hijo-de-simon
+- alejandro-pariente-de-anas
+- alejandro-de-efeso
+not_claimed:
+- 'Qué daño hizo a Pablo: el texto no lo dice, y la nota solo recoge que algunos lo ligan a su arresto.'
+- 'Que sea el Alejandro expulsado con Himeneo: Perspicacia y la nota de 2Ti 4:14 lo dan solo como posible.'
+summary: Trabajador del metal que causó mucho daño a Pablo y se opuso con fuerza a su mensaje. Pablo previene a Timoteo contra
+  él y deja que Jehová le dé su merecido.
+reason: Perspicacia «Alejandro», núm. 6; 2Ti 4:14, 15 y su nota de estudio, que explica que el término griego valía para cualquier
+  metalero. Fecha de la carta, c. 65 (Tabla de los libros).
+sources:
+- it-alejandro
+- 2-timoteo-4
+- tnm-tabla
+links:
+- title: 'Perspicacia: «Alejandro»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Alejandro/
+  type: perspicacia
+- title: 2 Timoteo 4 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-timoteo/4/
+  type: bible
+relations:
+- type: tie
+  person: pablo
+  word: enemy
+  inferred: false
+  sources:
+  - 2-timoteo-4
+  - it-alejandro
+  reason: '2Ti 4:14, 15: causó a Pablo mucho daño y luchó con empeño contra lo que él predicaba.'
+  checked_on: '2026-10-13'
+  status: verified
+- type: same_as
+  person: alejandro-expulsado
+  certainty: possible
+  inferred: true
+  sources:
+  - it-alejandro
+  - 2-timoteo-4
+  reason: Perspicacia «Alejandro», núm. 5, y la nota de 2Ti 4:14 ven posible que sea el mismo que Pablo expulsó con Himeneo.
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified

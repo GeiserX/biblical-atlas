@@ -27,6 +27,7 @@ present:
 passages:
 - Ef 6:21, 22
 - Col 4:7-9
+- Flm 12
 summary: Preso en Roma, Pablo confía a Tíquico sus cartas a las congregaciones de Éfeso y de Colosas. Tíquico les dará noticias
   de él y los animará; en el viaje lo acompaña Onésimo.
 reason: 'Perspicacia «Tíquico»: lo manda desde la prisión romana con las dos cartas, y Colosenses dice que iba con Onésimo
@@ -39,6 +40,7 @@ sources:
 - tnm-tabla
 - colosenses-4
 - it-colosenses
+- filemon-1
 links:
 - title: Efesios 6 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/efesios/6/
@@ -47,5 +49,5 @@ links:
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/T%C3%ADquico/
   type: perspicacia
 search: Tíquico lleva cartas Éfeso Colosas Onésimo
-checked_on: '2026-09-29'
+checked_on: '2026-10-14'
 status: verified

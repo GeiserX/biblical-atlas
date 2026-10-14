@@ -14,8 +14,9 @@ date:
   chronology: tnm
   text: c. 65 e.c.
 recipients:
-  text: Timoteo
-  places: []
+  text: Timoteo, que seguía al parecer en Éfeso
+  places:
+  - efeso
   people:
   - timoteo
 people:
@@ -32,6 +33,17 @@ people:
 - trofimo
 - aquila
 - priscila
+- figelo
+- hermogenes
+- himeneo
+- fileto
+- crescente
+- alejandro-calderero
+- carpo
+- eubulo
+- pudente
+- lino
+- claudia
 context_origin:
   summary: Segundo encarcelamiento en Roma, después del incendio de julio de 64 y de la persecución de Nerón; Pablo
     espera morir pronto.
@@ -39,10 +51,13 @@ context_origin:
   - it-timoteo-cartas
   - si-3
 context_destination:
-  summary: La fuente no dice dónde estaba Timoteo al recibirla, así que no dibujamos destino.
+  summary: En la congregación de Éfeso había peleas por palabras y debates sin sentido, y apóstatas como Himeneo y Fileto
+    negaban la resurrección futura.
   sources:
+  - 2-timoteo-2
   - it-timoteo-cartas
-reason: La Tabla y el estudio 3 dan Roma y c. 65; en 2Ti 4:6-8 Pablo habla de su muerte cercana.
+reason: La Tabla y el estudio 3 dan Roma y c. 65; en 2Ti 4:6-8 Pablo habla de su muerte cercana. Las notas de 2Ti 2:14, 2:23
+  y 4:12, 19, 22 sitúan a Timoteo en Éfeso.
 sources:
 - tnm-tabla
 - si-3
@@ -51,6 +66,8 @@ sources:
 - it-timoteo
 - it-onesiforo
 - it-loida
+- 2-timoteo-2
+- 2-timoteo-4
 links:
 - title: 'Perspicacia: «Timoteo, Cartas a»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Timoteo-Cartas-a/
@@ -58,6 +75,23 @@ links:
 - title: 2 Timoteo 1 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-timoteo/1/
   type: bible
-checked_on: '2026-09-28'
+history:
+- date: '2026-10-13'
+  change: 'Destino: Éfeso. Las notas de 2Ti 2:14, 23 dicen que Pablo pide a Timoteo aconsejar a los cristianos de Éfeso, y
+    la de 1:18 que conocía de cerca lo que Onesíforo hizo allí.'
+  source: 2-timoteo-2
+- date: '2026-10-13'
+  change: El contexto del destino decía que la fuente no lo da; las notas de 2Ti 2:14, 18, 23 hablan de la situación en Éfeso.
+  source: 2-timoteo-2
+- date: '2026-10-13'
+  change: La nota decía que el destino no se indicaba; ahora lo da Éfeso, por las notas de 2Ti 2:14, 23.
+  source: 2-timoteo-2
+- date: '2026-10-13'
+  change: La razón nombra las notas de 2Ti 2:14, 23, que dan el destino.
+  source: 2-timoteo-2
+- date: '2026-10-13'
+  change: La razón suma las notas de 2Ti 4:12, 19 y 22, que también ponen a Timoteo en Éfeso.
+  source: 2-timoteo-4
+checked_on: '2026-10-13'
 status: verified
-note: 'Destino no indicado: la carta se muestra sin arco.'
+note: Destino según las notas de estudio de 2Ti 2:14 y 2:23, que dirigen el consejo a los cristianos de Éfeso.

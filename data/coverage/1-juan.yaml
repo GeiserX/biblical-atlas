@@ -1,0 +1,51 @@
+# biblical-atlas: cobertura de un libro. Formato en data/coverage/README.md.
+book: 1-juan
+chapters:
+  1:
+    status: complete
+    reviewed_on: 2026-10-14
+    spans:
+    - {v: 1-4, type: letter, entities: [letter:1-juan, event:juan-escribe-1-juan, person:juan-apostol, person:jesus, relation:juan-apostol/lived_in/efeso], note: "Juan anuncia lo que oyó, vio y tocó de la palabra de la vida, que estaba con el Padre y se dio a conocer, para que sus lectores compartan su unión con el Padre y con Jesucristo."}
+    - {v: 5-7, type: letter, mentions: [person:jesus, event:muerte-de-jesus], note: "Dios es luz, sin rastro de oscuridad. Quien dice estar unido a él y vive en tinieblas miente; a quien anda en la luz lo limpia de pecado la sangre de Jesús, su sacrificio según Perspicacia."}
+    - {v: 8-10, type: letter, note: "Decir que no hay pecado en uno es engañarse y hacer pasar a Dios por mentiroso; si se confiesan, él, fiel y justo, perdona. «Toda Escritura» ve aquí a maestros falsos que se creían sin pecado."}
+  2:
+    status: complete
+    reviewed_on: 2026-10-14
+    spans:
+    - {v: 1-2, type: letter, entities: [letter:1-juan, event:juan-escribe-1-juan, person:juan-apostol], mentions: [person:jesus, event:muerte-de-jesus], note: "Juan llama «hijitos míos» a los lectores, trato que Perspicacia liga a su vejez. Quien peca tiene a Jesucristo, el justo, como ayudante junto al Padre y sacrificio de reconciliación por los pecados de todos."}
+    - {v: 3-6, type: letter, mentions: [person:jesus], note: "Conocer a Dios se demuestra obedeciendo sus mandamientos; quien presume de conocerlo sin guardarlos miente. Quien dice seguir unido a él tiene que vivir como vivió aquel, que la nota al pie identifica con Jesús."}
+    - {v: 7-11, type: letter, entities: [event:juan-escribe-1-juan], mentions: [person:jesus, event:predice-las-negaciones-de-pedro], note: "Un mandamiento antiguo y nuevo a la vez: La Atalaya de 2008 lo identifica con el amor abnegado que Jesús mandó en Jn 13:34. Quien odia a su hermano sigue a oscuras y no sabe adónde va."}
+    - {v: 12-14, type: letter, entities: [event:juan-escribe-1-juan], mentions: [person:satanas], note: "Escribe a hijitos, padres, jóvenes y niñitos: están perdonados, conocen al Padre y al que existe desde el principio, y vencieron al Maligno, Satanás. Perspicacia deduce de estos grupos que no es una carta personal."}
+    - {v: 15-17, type: letter, note: "No deben amar al mundo: los deseos de la carne, los de los ojos y la ostentación de lo que se posee no vienen del Padre. El mundo pasa; quien cumple la voluntad de Dios vive para siempre."}
+    - {v: 18-21, type: letter, entities: [letter:1-juan, event:juan-escribe-1-juan], note: "Última hora: surgieron muchos anticristos, salidos del grupo; Perspicacia «Anticristo» los llama apóstatas. La unción viene del santo, que Perspicacia «Santos» no identifica; la referencia lleva a 2Co 1:21, donde unge Dios. Escribe porque conocen la verdad."}
+    - {v: 22-25, type: letter, mentions: [person:jesus], note: "El mentiroso y anticristo es quien niega que Jesús es el Cristo: niega al Padre y al Hijo. Quien reconoce al Hijo tiene también al Padre. Si guardan lo oído desde el principio, tendrán vida eterna."}
+    - {v: 26-29, type: letter, entities: [event:juan-escribe-1-juan], note: "Escribe por quienes intentan engañarlos. La unción recibida les enseña y es verdadera; que sigan unidos a él para tener confianza cuando se manifieste. Quien obra con justicia demuestra que es nacido de él."}
+  3:
+    status: complete
+    reviewed_on: 2026-10-14
+    note: "Quien es hijo de Dios no vive pecando y ama con hechos; Caín, que mató a su hermano, es el ejemplo contrario."
+    spans:
+    - {v: 1-3, type: letter, entities: [letter:1-juan], note: "Por su gran amor, el Padre los llama hijos suyos, y el mundo no los reconoce. Aún no se ve lo que serán, pero quien guarda esa esperanza se mantiene limpio."}
+    - {v: 4-10, type: letter, entities: [person:satanas], mentions: [person:jesus, event:pecado-de-adan-y-eva], note: "El Hijo de Dios vino a quitar pecados y a deshacer las obras del Diablo, que peca desde el principio, desde su rebelión en Edén según Perspicacia «Satanás». Quien nace de Dios no practica el pecado."}
+    - {v: 11-12, type: letter, entities: [person:cain, event:cain-mata-a-abel, relation:cain/kin/abel], mentions: [person:abel, person:satanas], note: "El mensaje de siempre es amarse. Caín, que venía del Maligno, acabó con su hermano porque sus obras eran malas y las de este, justas; Perspicacia «Abel» y «Caín» dicen que era Abel."}
+    - {v: 13-18, type: letter, mentions: [person:jesus, event:muerte-de-jesus], note: "No extrañe el odio del mundo. Amar a los hermanos es pasar de la muerte a la vida; odiarlos es ser homicida. Como Cristo dio su vida, Perspicacia «Juan, Cartas de», se ayuda con hechos al necesitado."}
+    - {v: 19-24, type: letter, mentions: [person:jesus], note: "Obedecer a Dios da confianza al pedirle. Su mandamiento: creer en el nombre de Jesucristo, su Hijo, y amarse; el espíritu que dio muestra que sigue unido a ellos."}
+  4:
+    status: complete
+    reviewed_on: 2026-10-14
+    note: "Probar los mensajes inspirados frente al anticristo, y amarse porque Dios es amor y envió a su Hijo."
+    spans:
+    - {v: 1-6, type: letter, entities: [letter:1-juan], mentions: [person:jesus, event:bautismo-de-jesus], note: "Hay que probar los mensajes inspirados: salieron muchos falsos profetas. Es de Dios el que reconoce que Jesucristo vino en la carne; el que lo niega es del anticristo. La Atalaya de 2008 liga esa venida a su ungimiento."}
+    - {v: 7-12, type: letter, mentions: [person:jesus, event:muerte-de-jesus], note: "Dios es amor y lo mostró al mandar a su Hijo unigénito como sacrificio de reconciliación, su vida entregada según La Atalaya de 2008. Por eso se deben amor; a Dios nadie lo ha visto."}
+    - {v: 13-16, type: letter, mentions: [person:jesus], note: "El espíritu recibido prueba la unión con Dios. Los que escriben vieron que el Padre mandó a su Hijo para salvar al mundo y lo atestiguan; reconocer a Jesús como Hijo de Dios une con él."}
+    - {v: 17-21, type: letter, mentions: [person:jesus], note: "El amor completo echa el miedo y da confianza para el día de juicio; la nota al pie del v. 17 dice que el modelo es Jesucristo. Quien dice amar a Dios y odia a su hermano miente."}
+  5:
+    status: complete
+    reviewed_on: 2026-10-14
+    note: "Creer que Jesús es Hijo de Dios da la victoria sobre el mundo; el agua, la sangre y el espíritu lo atestiguan."
+    spans:
+    - {v: 1-4, type: letter, entities: [letter:1-juan], mentions: [person:jesus], note: "Todo creyente en Jesús como el Cristo es hijo de Dios y quiere a los demás hijos de Dios. Amar a Dios es cumplir sus mandatos, que no pesan; la fe vence al mundo."}
+    - {v: 5-12, type: letter, entities: [person:jesus, event:bautismo-de-jesus], mentions: [event:muerte-de-jesus], note: "Jesucristo vino con agua y sangre, y el espíritu lo confirma. Según La Atalaya de 2008, el agua es su bautismo, cuando Dios lo reconoció como Hijo y bajó el espíritu; la sangre, su vida dada como rescate."}
+    - {v: 13-15, type: letter, entities: [event:juan-escribe-1-juan], mentions: [person:juan-apostol], note: "El escritor, Juan según Perspicacia, dice que escribe para que los creyentes sepan que tienen vida eterna. Dios oye lo que se le pide conforme a su voluntad."}
+    - {v: 16-17, type: letter, note: "Se ora por el hermano cuyo pecado no lleva a la muerte; por el otro, el voluntario y deliberado según Perspicacia «Juan, Cartas de», el escritor no manda pedir."}
+    - {v: 18-21, type: letter, entities: [person:satanas], mentions: [person:jesus], note: "El nacido de Dios, Jesucristo según la nota al pie, protege a los suyos del Maligno, que tiene al mundo entero en su poder. El Hijo da a conocer al Dios verdadero. Cuidado con los ídolos."}

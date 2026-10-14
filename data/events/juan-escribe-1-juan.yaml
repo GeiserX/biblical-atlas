@@ -1,0 +1,59 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: juan-escribe-1-juan
+title: Juan escribe su primera carta
+date:
+  from: 98
+  to: 98
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 98 e.c.
+narrative_order:
+  series: hechos
+  order: 2980
+places:
+- efeso
+people:
+- juan-apostol
+present:
+- juan-apostol
+type: writing
+roles:
+  juan-apostol: wrote
+passages:
+- 1Jn 1:1-4
+- 1Jn 2:1
+- 1Jn 2:7, 8
+- 1Jn 2:12-14
+- 1Jn 2:21
+- 1Jn 2:26
+- 1Jn 5:13
+summary: 'Ya muy anciano y libre del destierro de Patmos, el apóstol Juan escribe, probablemente desde Éfeso, una carta sin
+  saludo para los cristianos: que sigan firmes en la fe en Jesús ante los anticristos y se amen.'
+reason: 'Tabla de los libros: Éfeso o cerca, c. 98. Estudio 3, párr. 29: libre ya de Patmos, escribió después el Evangelio
+  y tres cartas. Perspicacia «Juan, Cartas de» y La Atalaya de 2008: probablemente en Éfeso.'
+note: 'Pasajes: el prólogo y cada versículo donde dice que escribe. Orden 2980 de hechos, nuestro, tras 2 Timoteo (c. 65). Sigue a Apocalipsis (c. 96) por fecha; Perspicacia «Juan, Cartas de», párr. 1, pone las cartas tras el Evangelio.'
+sources:
+- 1-juan-1
+- tnm-tabla
+- si-3
+- si-1-juan
+- it-juan-cartas
+- it-juan
+- w08-cartas-de-juan-y-judas
+- 1-juan-2
+- 1-juan-5
+links:
+- title: 'Perspicacia: «Juan, Cartas de»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Juan-Cartas-de/
+  type: perspicacia
+- title: 1 Juan 1 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/1-juan/1/
+  type: bible
+- title: 1 Juan 5 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/1-juan/5/
+  type: bible
+search: Juan escribe primera carta Éfeso
+checked_on: '2026-10-14'
+status: verified

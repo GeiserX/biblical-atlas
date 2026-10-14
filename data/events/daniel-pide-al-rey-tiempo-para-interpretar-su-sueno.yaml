@@ -1,0 +1,40 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: daniel-pide-al-rey-tiempo-para-interpretar-su-sueno
+title: Daniel pide al rey tiempo para interpretar su sueño
+date:
+  from: -605
+  to: -604
+  precision: range
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 606-605 a.e.c.
+narrative_order:
+  series: daniel
+  order: 2014
+  elapsed:
+    reason: 'Da 2:13-15: al ir a buscarlo para matarlo, Daniel habla con Arioc y luego con el rey. El texto no da el plazo.'
+places:
+- babilonia
+people:
+- daniel
+- arioc-jefe-de-la-guardia
+- nabucodonosor-ii
+passages:
+- Da 2:14-16
+summary: Daniel pregunta con tacto a Arioc, jefe de la guardia del rey, por qué la orden es tan dura. Al saberlo, se presenta
+  ante el rey y le pide un plazo para darle la interpretación.
+reason: Da 2:14-16; Perspicacia «Arioc», núm. 2, y dp, cap. 4, párr. 4. Fecha del sueño de Da 2:1 (dp, cap. 4, párr. 2).
+sources:
+- daniel-2
+- dp-4
+- it-arioc
+links:
+- title: Daniel 2 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/daniel/2/
+  type: bible
+- title: 'Perspicacia: «Nabucodonosor, Nabucodorosor»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Nabucodonosor-Nabucodorosor/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified
