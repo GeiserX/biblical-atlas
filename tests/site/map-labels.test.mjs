@@ -108,7 +108,7 @@ const audit = (page) => page.evaluate(() => {
   const dots = markers.map((el) => ({ el, id: el.dataset.sel.slice(6), r: el.querySelector('.punto').getBoundingClientRect() }));
   // The points of candidates and finds are drawn always, even half under a card: a name on the inner side keeps off them.
   for (const el of mc.querySelectorAll('.cand, .marca-hallazgo')) {
-    const d = el.classList.contains('cand') ? el.querySelector('.cand-punto') : el;
+    const d = el.querySelector(el.classList.contains('cand') ? '.cand-punto' : '.hallazgo-dibujo');
     if (d && el.checkVisibility({ visibilityProperty: true })) dots.push({ el, id: el.getAttribute('aria-label'), r: d.getBoundingClientRect() });
   }
   const sel = window.BE.E.sel?.tipo === 'lugar' ? window.BE.E.sel.id : null;

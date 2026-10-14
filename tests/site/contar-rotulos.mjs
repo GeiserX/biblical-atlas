@@ -2,7 +2,7 @@
 // suite: it measures, prints a table and writes the numbers that go in the doc and the PR.
 //
 //   node tests/site/contar-rotulos.mjs [--root <checkout>] [--json <out.json>] [--fotos <dir>] [--pantalla 430|1440]
-//     [--casos <id>,<id>]   (only these tours and journeys)
+//     [--casos <id>,<id>]   (only these tours and journeys) [--pasos]   (also every stop of each journey of Pablo)
 //
 // For each guided tour (on opening, and on every later stop) and for each journey of Pablo and of Jesús (opened as from
 // the search box), at 430 by 932 (a phone) and at 1440 by 900, it reads every stop the map frames: the places of all the
@@ -17,7 +17,11 @@
 //                   zoom   a minor name (menor) below zoom 6.3: it waits for a closer zoom;
 //                   choque the name would touch a name, a number, a bubble or a candidate point already drawn;
 //                   reparto none of the above: the fixed reparto by zoom gave its place to a name that goes first.
-// It also counts the tour's numbered pills that are drawn.
+// It also lists each tour's first framing (the map's bounds and zoom on opening), counts the tour's numbered pills
+// that are drawn, and the stops in focus that are named: on a tour, the stop and the one before and after it; on a
+// journey of Pablo, the stop where he is on the cursor's date and the nearest stops before and after it in another
+// place (or, travelling, the two ends of the leg). With --pasos, each journey of
+// Pablo is measured on every one of its stops (the cursor in the middle of the stay), not only on opening.
 //
 // --fotos writes a screenshot of each opening (png). Uses <root>/site/data.json, or builds it into a temporary
 // directory. Needs what tests/site/map-frame.test.mjs needs (unpkg.com, playwright-core or PLAYWRIGHT_MODULE_DIR).
@@ -33,6 +37,7 @@ const arg = (k) => { const i = process.argv.indexOf(k); return i > 0 ? process.a
 const ROOT = path.resolve(arg('--root') || path.join(path.dirname(fileURLToPath(import.meta.url)), '../..'));
 const JSON_OUT = arg('--json'), FOTOS = arg('--fotos'), SOLO = arg('--pantalla');
 const CASOS = arg('--casos')?.split(',');
+const PASOS = process.argv.includes('--pasos');
 const PANTALLAS = [
   { name: '430', viewport: { width: 430, height: 932 }, isMobile: true, hasTouch: true },
   { name: '1440', viewport: { width: 1440, height: 900 } },
@@ -74,11 +79,21 @@ function contar() {
   const choca = (r, k, mx = 0, my = 0) => !(r.right + mx <= k.left || r.left - mx >= k.right || r.bottom + my <= k.top || r.top - my >= k.bottom);
   const dentro = (r) => r.left >= c.left && r.right <= c.right && r.top >= c.top && r.bottom <= c.bottom;
   const places = (p) => { const s = BE.parseSel(p?.sel); return !s ? [] : s.tipo === 'lugar' ? [s.id] : [...BE.implicados(s).lugares]; };
-  let ids;
+  let ids, foco = new Set();
   if (sel.tipo === 'recorrido') {
     const rc = BE.D.recorridos.find((r) => r.id === sel.id), i = BE.recorridos.pasoDe(sel.id);
     ids = (i === 0 ? rc.paradas : [rc.paradas[i - 1], rc.paradas[i], rc.paradas[i + 1]]).flatMap(places);
-  } else ids = [...E.resaltado.lugares];
+    foco = new Set([rc.paradas[i - 1], rc.paradas[i], rc.paradas[i + 1]].flatMap(places));
+  } else {
+    ids = [...E.resaltado.lugares];
+    const w = BE.dondeEsta(E.t);
+    if (sel.tipo === 'viaje' && w && w.en.viaje?.id === sel.id) {
+      const ps = BE.P.filter((x) => x.viaje === w.en.viaje), k = ps.indexOf(w.en), aqui = w.en.lugar.id;
+      foco.add(aqui);
+      if (!w.parada) { if (w.sig?.viaje === w.en.viaje) foco.add(w.sig.lugar.id); }
+      else for (const d of [-1, 1]) for (let j = k + d; j >= 0 && j < ps.length; j += d) if (ps[j].lugar.id !== aqui) { foco.add(ps[j].lugar.id); break; }
+    }
+  }
   ids = [...new Set(ids)].filter((id) => BE.L[id]?.lat != null);
   const REGION = ['region', 'provincia', 'pais', 'reino', 'desierto', 'llanura', 'valle'];
   const towns = ids.filter((id) => !REGION.includes(BE.L[id].tipo) && BE.L[id].precision !== 'zona');
@@ -92,7 +107,7 @@ function contar() {
     const l = BE.L[id];
     const mk = mc.querySelector(`.maplibregl-marker[data-sel="lugar:${CSS.escape(id)}"]`);
     const num = mc.querySelector(`.marca-num[data-lugar="${CSS.escape(id)}"]`);
-    const s = { id, nombre: l.nombre, num: num ? !num.classList.contains('sin-etiqueta') : null };
+    const s = { id, nombre: l.nombre, num: num ? !num.classList.contains('sin-etiqueta') : null, foco: foco.has(id) };
     stops.push(s);
     const p = m.project([l.lon, l.lat]), x = c.left + p.x, y = c.top + p.y;
     if (x < c.left || x > c.right || y < c.top || y > c.bottom) { s.estado = 'punto tapado'; s.por = 'fuera del mapa'; continue; }
@@ -121,7 +136,8 @@ function contar() {
     s.por = motivos[0];
     s.motivos = motivos;
   }
-  return { sel: BE.selTexto(sel), zoom: +m.getZoom().toFixed(2), stops };
+  const b = m.getBounds();
+  return { sel: BE.selTexto(sel), zoom: +m.getZoom().toFixed(2), stops, marco: [b.getWest(), b.getSouth(), b.getEast(), b.getNorth()].map((v) => +v.toFixed(2)) };
 }
 
 let browser, server, base, tmp;
@@ -152,7 +168,8 @@ const resumen = (stops) => {
   return { total: stops.length, visibles: n((s) => s.estado === 'visible'), bajoHoja: n((s) => s.estado === 'bajo la hoja'),
     puntoTapado: n((s) => s.estado === 'punto tapado'), agrupados: n((s) => s.estado === 'agrupado'), quitados: n((s) => s.estado === 'quitado'), por,
     izquierda: n((s) => s.estado === 'visible' && s.lado === 'izquierda'),
-    numeros: stops.some((s) => s.num != null) ? `${n((s) => s.num === true)}/${n((s) => s.num != null)}` : null };
+    numeros: stops.some((s) => s.num != null) ? `${n((s) => s.num === true)}/${n((s) => s.num != null)}` : null,
+    foco: stops.some((s) => s.foco) ? `${n((s) => s.foco && s.estado === 'visible')}/${n((s) => s.foco)}` : null };
 };
 
 async function main() {
@@ -181,7 +198,7 @@ async function main() {
         if (i) { await page.evaluate((k) => window.BE.recorridos.irA(k), i); await quieto(page); }
         if (!i && FOTOS) await page.screenshot({ path: path.join(FOTOS, `recorrido-${id}-${screen.name}.png`) });
         const r = await page.evaluate(contar);
-        filas.push({ pantalla: screen.name, tipo: 'recorrido', id, paso: i + 1, zoom: r.zoom, stops: r.stops, ...resumen(r.stops) });
+        filas.push({ pantalla: screen.name, tipo: 'recorrido', id, paso: i + 1, zoom: r.zoom, marco: r.marco, stops: r.stops, ...resumen(r.stops) });
       }
       if (page.pageErrors.length) console.error(`${id}: ${page.pageErrors.join('; ')}`);
       await page.context().close();
@@ -193,11 +210,19 @@ async function main() {
       if (FOTOS) await page.screenshot({ path: path.join(FOTOS, `viaje-${v.id}-${screen.name}.png`) });
       const r = await page.evaluate(contar);
       filas.push({ pantalla: screen.name, tipo: 'viaje', quien: v.quien, id: v.id, paso: 1, zoom: r.zoom, stops: r.stops, ...resumen(r.stops) });
+      // Every stop of a journey of Pablo: the cursor in the middle of each stay, the journey still chosen.
+      const ts = PASOS && v.quien === 'pablo' ? await page.evaluate((x) => window.BE.P.filter((s) => s.viaje?.id === x).map((s) => (s.a + s.b) / 2), v.id) : [];
+      for (const [k, t] of ts.entries()) {
+        await page.evaluate((x) => window.BE.setT(x), t);
+        await quieto(page);
+        const q = await page.evaluate(contar);
+        filas.push({ pantalla: screen.name, tipo: 'viaje-paso', quien: v.quien, id: v.id, paso: k + 1, zoom: q.zoom, stops: q.stops, ...resumen(q.stops) });
+      }
       if (page.pageErrors.length) console.error(`${v.id}: ${page.pageErrors.join('; ')}`);
       await page.context().close();
     }
   }
-  const fmt = (r) => `${r.visibles}/${r.total}${r.izquierda ? ` (${r.izquierda} a la izquierda)` : ''}${r.bajoHoja ? ` +${r.bajoHoja} bajo la hoja` : ''}${r.puntoTapado ? `, ${r.puntoTapado} punto tapado` : ''}${r.agrupados ? `, ${r.agrupados} agrupados` : ''}${r.quitados ? `, quitados ${Object.entries(r.por).map(([k, v]) => `${k} ${v}`).join(' ')}` : ''}${r.numeros ? `, números ${r.numeros}` : ''}`;
+  const fmt = (r) => `${r.visibles}/${r.total}${r.izquierda ? ` (${r.izquierda} a la izquierda)` : ''}${r.bajoHoja ? ` +${r.bajoHoja} bajo la hoja` : ''}${r.puntoTapado ? `, ${r.puntoTapado} punto tapado` : ''}${r.agrupados ? `, ${r.agrupados} agrupados` : ''}${r.quitados ? `, quitados ${Object.entries(r.por).map(([k, v]) => `${k} ${v}`).join(' ')}` : ''}${r.numeros ? `, números ${r.numeros}` : ''}${r.foco ? `, en foco ${r.foco}` : ''}`;
   for (const f of filas) {
     const caidos = f.stops.filter((s) => s.estado !== 'visible').map((s) => `${s.nombre} (${s.estado}${s.por ? `: ${s.por}` : ''})`);
     console.log(`${f.pantalla}\t${f.tipo}\t${f.id}\tparada ${f.paso}\tzoom ${f.zoom}\t${fmt(f)}${caidos.length ? `\t${caidos.join(', ')}` : ''}`);
@@ -210,8 +235,15 @@ async function main() {
       const fs_ = filas.filter((f) => f.pantalla === screen.name && f.id === id);
       console.log(`${screen.name}\t${id}\tal abrir ${fmt(fs_[0])}\ttodas las paradas ${fmt(suma(fs_))}`);
     }
-    for (const q of ['pablo', 'jesus']) console.log(`${screen.name}\tviajes de ${q}\t${fmt(suma(filas.filter((f) => f.pantalla === screen.name && f.quien === q)))}`);
+    for (const q of ['pablo', 'jesus']) console.log(`${screen.name}\tviajes de ${q}\t${fmt(suma(filas.filter((f) => f.pantalla === screen.name && f.quien === q && f.tipo === 'viaje')))}`);
+    for (const v of viajes.filter((x) => PASOS && x.quien === 'pablo')) {
+      const fs_ = filas.filter((f) => f.pantalla === screen.name && f.id === v.id && f.tipo === 'viaje-paso');
+      console.log(`${screen.name}\t${v.id}\tal abrir ${fmt(filas.find((f) => f.pantalla === screen.name && f.id === v.id && f.tipo === 'viaje'))}\tparada a parada ${fmt(suma(fs_))}`);
+    }
   }
+  // The first framing of each tour: the map's bounds (west, south, east, north) and zoom when it opens.
+  console.log('\nEncuadre al abrir');
+  for (const f of filas.filter((x) => x.tipo === 'recorrido' && x.paso === 1)) console.log(`${f.pantalla}\t${f.id}\tzoom ${f.zoom}\toeste ${f.marco[0]} sur ${f.marco[1]} este ${f.marco[2]} norte ${f.marco[3]}`);
   if (JSON_OUT) fs.writeFileSync(JSON_OUT, JSON.stringify(filas, null, 1));
 }
 main().catch((e) => { console.error(e); process.exitCode = 1; }).finally(async () => {

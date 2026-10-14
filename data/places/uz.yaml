@@ -13,14 +13,16 @@ coord_source: openbible:a324c4d
 coord_url: https://www.openbible.info/geo/ancient/a324c4d/uz
 coord_note: 'Punto representativo que usa OpenBible, el mismo que da para Edom y Temán. Perspicacia no fija el sitio: solo
   lo pone cerca de Edom, en el norte de Arabia.'
-summary: Tierra donde vivía Job. No se sabe dónde estaba exactamente; todo apunta al este de la Tierra Prometida, cerca de
-  Edom, en el norte de Arabia.
+summary: 'Tierra donde vivía Job, de sitio desconocido; al parecer estaba cerca de Edom, al este de la Tierra Prometida, en
+  el norte de Arabia. Lam 4:21 pone allí a Edom: quizá su dominio llegó hasta Uz o allí vivían edomitas.'
 reason: 'Perspicacia «Uz», núm. 4: se desconoce el sitio exacto. Job 1:1. Pudo poblarla Uz, hijo de Aram, o Uz, hijo de Nacor;
   no se sabe cuál.'
 sources:
 - it-uz
 - job-1
 - openbible-geo
+- lamentaciones-4
+- it-edom
 links:
 - title: 'Perspicacia: «Uz»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Uz/
@@ -28,5 +30,10 @@ links:
 - title: Job 1 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/job/1/
   type: bible
-checked_on: '2026-09-29'
+history:
+- date: '2026-10-13'
+  change: 'El resumen añade que Lam 4:21 pone a Edom en la tierra de Uz, con la duda de Perspicacia «Uz», núm. 4, y «Edom»:
+    dominio edomita o edomitas allí, sin igualar las dos tierras.'
+  source: lamentaciones-4
+checked_on: '2026-10-13'
 status: verified
