@@ -1,0 +1,39 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: amasias-adora-a-los-dioses-de-seir
+title: Amasías adora a los dioses de Seír y hace callar al profeta
+date:
+  from: -857
+  to: -843
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 858 y c. 844 a.e.c. (tiempo narrativo: tras vencer a Edom y antes de la batalla de Bet-Semes)'
+narrative_order:
+  series: 2-cronicas
+  order: 25014
+  after: amasias-derrota-a-edom-en-el-valle-de-la-sal
+places:
+- jerusalen
+people:
+- amasias
+present: []
+passages:
+- 2Cr 25:14-16
+summary: Al volver de Edom, Amasías trae los dioses de Seír y les quema incienso. Jehová le manda un profeta; el rey lo amenaza
+  para que se calle, y el profeta le anuncia que Dios ha decidido destruirlo.
+reason: '2Cr 25:14-16; Perspicacia «Amasías», núm. 2. El texto no dice dónde: Jerusalén es la parada que deduce el viaje amasias-contra-edom.
+  Antes de la batalla con Jehoás, muerto c. 844 (A6-A).'
+sources:
+- 2-cronicas-25
+- it-amasias
+- tnm-a6-a
+links:
+- title: 2 Crónicas 25 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-Cr%C3%B3nicas/25/
+  type: bible
+- title: 'Perspicacia: «Amasías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Amas%C3%ADas/
+  type: perspicacia
+checked_on: '2026-10-13'
+status: verified

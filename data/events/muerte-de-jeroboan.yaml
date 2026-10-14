@@ -1,0 +1,34 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: muerte-de-jeroboan
+title: Muere Jeroboán, herido por Jehová
+type: death
+date:
+  from: -975
+  to: -975
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 976 a.e.c.
+narrative_order:
+  series: 2-cronicas
+  order: 13020
+  after: muere-abias-hijo-de-jeroboan
+places: []
+present: []
+people:
+- jeroboan-i
+roles:
+  jeroboan-i: died
+passages:
+- 2Cr 13:20
+summary: Tras la derrota ante Abías, Jeroboán no vuelve a levantar cabeza, y Jehová lo hiere hasta que muere, después de unos
+  22 años de reinado sobre Israel. El texto no dice dónde.
+reason: 2Cr 13:20; Perspicacia «Jeroboán», núm. 1, la pone poco después de morir su hijo, cerca de 977. La tabla A6-A, más
+  reciente, empieza el reinado de Nadab c. 976.
+sources:
+- 2-cronicas-13
+- it-jeroboan
+- tnm-a6-a
+checked_on: '2026-10-13'
+status: verified

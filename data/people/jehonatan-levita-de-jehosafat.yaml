@@ -1,0 +1,22 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jehonatan-levita-de-jehosafat
+name: Jehonatán
+names:
+- name: Jehonatán
+perspicacia: 1200002380#1
+summary: Levita del grupo que Jehosafat mandó en su año tercero a recorrer las ciudades de Judá para instruir al pueblo con
+  el libro de la Ley.
+reason: Perspicacia «Jehonatán», núm. 1; 2Cr 17:7-9.
+sources:
+- it-jehonatan
+- 2-cronicas-17
+links:
+- title: 'Perspicacia: «Jehonatán»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jehonat%C3%A1n/
+  type: perspicacia
+disambiguation: Levita que Jehosafat mandó a instruir en la Ley (Perspicacia «Jehonatán», núm. 1); no el secretario en cuya casa
+  encerraron a Jeremías.
+checked_on: '2026-10-13'
+status: verified
+distinct_from:
+- jehonatan-secretario

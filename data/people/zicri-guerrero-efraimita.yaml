@@ -1,0 +1,41 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: zicri-guerrero-efraimita
+name: Zicrí
+names:
+- name: Zicrí
+perspicacia: 1200004728#10
+disambiguation: Guerrero de Efraín del ejército de Pécah que mató a tres hombres de la casa de Acaz; no Zicrí hijo de Izhar
+  ni los demás Zicrí que distingue Perspicacia.
+distinct_from:
+- zicri-hijo-de-izhar
+- zicri-padre-de-amasiah
+- zicri-padre-de-elisafat
+- zicri-descendiente-de-eliezer
+- zicri-descendiente-de-jeroham
+- zicri-descendiente-de-sasac
+- zicri-descendiente-de-simei
+- zicri-hijo-de-asaf
+- zicri-padre-de-eliezer
+date:
+  from: -759
+  to: -759
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 760 a.e.c.
+summary: Guerrero poderoso de Efraín. Cuando Israel invadió Judá en tiempos de Acaz, mató a Maaseya, el hijo del rey, a Azricam,
+  jefe del palacio, y a Elcaná, el segundo después del rey.
+reason: Perspicacia «Zicrí», núm. 10, pone la invasión hacia 760 a.e.c.; 2Cr 28:6, 7.
+sources:
+- it-zicri
+- 2-cronicas-28
+links:
+- title: 'Perspicacia: «Zicrí»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zicr%C3%AD/
+  type: perspicacia
+- title: 2 Crónicas 28 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-Cr%C3%B3nicas/28/
+  type: bible
+checked_on: '2026-10-13'
+status: verified

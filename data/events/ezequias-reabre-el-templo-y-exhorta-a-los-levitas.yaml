@@ -1,0 +1,39 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: ezequias-reabre-el-templo-y-exhorta-a-los-levitas
+title: Ezequías reabre el templo y pide a sacerdotes y levitas que lo santifiquen
+type: speech
+date:
+  from: -744
+  to: -744
+  precision: month
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: nisán de 745 a.e.c.
+  detail:
+    month: nisan
+narrative_order:
+  series: 2-cronicas
+  order: 29003
+places:
+- jerusalen
+- monte-moria
+people:
+- ezequias
+present:
+- ezequias
+roles:
+  ezequias: spoke
+passages:
+- 2Cr 29:3-11
+summary: En el primer mes de su reinado, Ezequías abre y repara las puertas de la casa de Jehová. En la plaza del este pide
+  a sacerdotes y levitas santificarse, limpiar el santuario y apoyar su pacto con Jehová.
+reason: '2Cr 29:3: primer mes del primer año. Perspicacia «Ezequías» cuenta ese año desde nisán de 745 y lo llama su primera
+  acción como rey; «Semaya», núm. 8, fecha en 745 la limpieza.'
+sources:
+- 2-cronicas-29
+- it-ezequias
+- tnm-a6-b
+- it-semaya
+checked_on: '2026-10-13'
+status: verified

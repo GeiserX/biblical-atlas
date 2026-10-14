@@ -1,0 +1,32 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jeuel-levita-de-ezequias
+name: Jeuel
+names:
+- name: Jeuel
+perspicacia: 1200002456#1
+summary: Levita descendiente de Elizafán que trabajó en la limpieza del templo durante el reinado de Ezequías.
+reason: Perspicacia «Jeuel», núm. 1; 2Cr 29:13, 15, 16.
+sources:
+- it-jeuel
+- 2-cronicas-29
+links:
+- title: 'Perspicacia: «Jeuel»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jeuel/
+  type: perspicacia
+disambiguation: El levita descendiente de Elizafán (Perspicacia «Jeuel», núm. 1); no el cabeza de la casa de Zérah que vivió
+  en Jerusalén tras el destierro.
+distinct_from:
+- jeuel-zerahita
+relations:
+- type: kin
+  person: elizafan-hijo-de-uziel
+  word: ancestor
+  inferred: false
+  sources:
+  - 2-cronicas-29
+  - it-jeuel
+  reason: 2Cr 29:13 lo cuenta entre los hijos de Elizafán; Perspicacia «Jeuel», núm. 1, lo llama su descendiente.
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified

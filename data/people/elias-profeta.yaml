@@ -28,6 +28,7 @@ sources:
 - 2-reyes-1
 - 2-reyes-2
 - santiago-5
+- 2-cronicas-21
 links:
 - title: 'Perspicacia: «Elías»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/El%C3%ADas/
@@ -42,8 +43,9 @@ relations:
   sources:
   - 1-reyes-18
   - it-elias
+  - 2-cronicas-21
   reason: En el Carmelo se presenta como el único profeta de Jehová que queda (1Re 18:22).
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-13'
   status: verified
 - type: lived_in
   place: galaad

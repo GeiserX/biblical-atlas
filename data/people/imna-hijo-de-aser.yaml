@@ -51,7 +51,8 @@ relations:
   reason: '1Cr 7:30: Sérah era hermana de los cuatro hijos de Aser.'
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified
 distinct_from:
 - imna-hijo-de-helem
+- imna-padre-de-core

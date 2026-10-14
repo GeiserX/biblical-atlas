@@ -8,6 +8,7 @@ disambiguation: El padre de Jehudí; no Netanías hijo de Elisamá, el padre de 
 distinct_from:
 - netanias-hijo-de-elisama
 - netanias-hijo-de-asaf
+- netanias-levita-de-jehosafat
 summary: Hijo de Selemías y padre de Jehudí, el oficial que leyó a Jehoiaquim el rollo de Jeremías.
 reason: Perspicacia «Netanías», núm. 3; Jer 36:14.
 sources:
@@ -32,5 +33,5 @@ relations:
   reason: Jer 36:14 da la línea Jehudí, Netanías, Selemías y Cusí.
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified

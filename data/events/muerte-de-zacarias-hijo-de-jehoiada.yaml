@@ -1,0 +1,44 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: muerte-de-zacarias-hijo-de-jehoiada
+title: Muerte de Zacarías, hijo de Jehoiadá
+type: death
+date:
+  from: -875
+  to: -857
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 876 y 858 a.e.c. (tiempo narrativo: después de morir Jehoiadá y antes de la invasión siria)'
+narrative_order:
+  series: 2-cronicas
+  order: 24020
+  after: los-principes-de-juda-apartan-a-jehoas-de-jehova
+places:
+- monte-moria
+- jerusalen
+people:
+- zacarias-hijo-de-jehoiada
+- jehoas-de-juda
+present:
+- zacarias-hijo-de-jehoiada
+roles:
+  zacarias-hijo-de-jehoiada: died
+passages:
+- 2Cr 24:20-22
+summary: Movido por el espíritu de Dios, Zacarías avisa al pueblo de que Jehová lo dejará por haberlo dejado. Por orden de
+  Jehoás lo apedrean en el patio del templo; al morir pide que Jehová lo vea y pida cuentas.
+reason: 2Cr 24:20-22; Perspicacia «Zacarías», núm. 12, y «Jehoás», núm. 1. Ocurre tras morir Jehoiadá, que vivía en el año
+  23 del rey (876 a.e.c., Perspicacia «Gat»), y antes de la muerte de Jehoás en 858 (tabla A6-A).
+sources:
+- 2-cronicas-24
+- it-zacarias
+- it-jehoas
+- it-gat
+- tnm-a6-a
+links:
+- title: 2 Crónicas 24 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-cronicas/24/
+  type: bible
+checked_on: '2026-10-13'
+status: verified

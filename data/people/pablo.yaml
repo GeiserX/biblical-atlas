@@ -106,6 +106,10 @@ sources:
 - 1-timoteo-2
 - 1-timoteo-3
 - 1-timoteo-4
+- 2-timoteo-1
+- 2-timoteo-2
+- 2-timoteo-3
+- 2-timoteo-4
 - tito-1
 - tito-3
 links:
@@ -529,8 +533,30 @@ relations:
   - it-pablo
   - 1-timoteo-1
   - 1-timoteo-2
+  - 2-timoteo-1
   - tito-1
   reason: '1Te 2:6: Pablo dice que, por ser apóstoles de Cristo, podían haber pedido sustento. Perspicacia «Pablo» lo presenta
     como apóstol de Jesucristo y cita este versículo al hablar de su trabajo.'
   checked_on: '2026-10-14'
+  status: verified
+- type: lived_in
+  place: roma
+  date:
+    from: 65
+    to: 65
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 65 e.c. (preso por segunda vez)
+  sources:
+  - 2-timoteo-1
+  - it-timoteo-cartas
+  - si-3
+  - 2-timoteo-2
+  - 2-timoteo-4
+  reason: '2Ti 1:8, 16, 17: escribe como prisionero y Onesíforo lo busca en Roma hasta dar con él. Perspicacia «Timoteo, Cartas
+    a» y el estudio 3 fechan este encierro hacia 65.'
+  inferred: false
+  checked_on: '2026-10-13'
   status: verified

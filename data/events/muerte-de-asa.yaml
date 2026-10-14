@@ -1,0 +1,33 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: muerte-de-asa
+title: Muere Asá, enfermo de los pies
+type: death
+date:
+  from: -936
+  to: -936
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 937 a.e.c.
+narrative_order:
+  series: 2-cronicas
+  order: 16012
+places:
+- jerusalen
+people:
+- asa
+roles:
+  asa: died
+passages:
+- 2Cr 16:12-14
+summary: Desde su año 39, Asá enferma de los pies y acude a médicos, no a Jehová. Muere en su año 41; lo sepultan en su sepulcro
+  de la Ciudad de David, con especias y una gran hoguera.
+reason: '2Cr 16:12, 13: años 39 y 41 del reinado, que la tabla A6-A cierra en 937 a.e.c.; Perspicacia «Asá», núm. 1. No dice
+  dónde murió: se toma Jerusalén, donde lo enterraron.'
+sources:
+- 2-cronicas-16
+- tnm-a6-a
+- it-asa
+checked_on: '2026-10-13'
+status: verified

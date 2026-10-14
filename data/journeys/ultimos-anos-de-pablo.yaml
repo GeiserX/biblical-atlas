@@ -14,8 +14,11 @@ date:
 companions:
 - {person: tito, from: 2, to: 2}
 - {person: timoteo, from: 3, to: 3}
-summary: 'Libre hacia 61, Pablo vuelve a viajar: deja a Tito en Creta y a Timoteo en Éfeso, escribe desde Macedonia
-  y piensa invernar en Nicópolis. Hacia 65 está otra vez preso en Roma.'
+- person: trofimo
+  from: 7
+  to: 7
+summary: 'Libre hacia 61, Pablo vuelve a viajar: deja a Tito en Creta y a Timoteo en Éfeso, escribe desde Macedonia, piensa
+  invernar en Nicópolis y pasa por Troas y Mileto. Hacia 65 está otra vez preso en Roma.'
 reason: Perspicacia «Pablo», «Tito, Carta a» y «Timoteo, Cartas a»; nota de estudio de Hch 28:30. Hechos no lo narra y
   el orden de las paradas no es seguro. Tito queda en Creta y Timoteo en Éfeso (Tit 1:5; 1Ti 1:3).
 sources:
@@ -27,6 +30,10 @@ sources:
 - tito-1
 - 1-timoteo-1
 - it-trofimo
+- 2-timoteo-1
+- 2-timoteo-4
+- it-troas
+- it-mileto
 history:
 - date: '2026-10-02'
   change: 'Tito pasa a ir solo en Creta y Timoteo solo en Éfeso. Trófimo sale de companions y queda en la nota de Roma: se había quedado enfermo en Mileto.'
@@ -35,6 +42,16 @@ history:
   change: Las paradas 2 (Creta) y 3 (Éfeso) decían «orden cierto», pero la razón del viaje y la de la parada 2 dicen que no
     se sabe cuál fue antes. Pasan a «orden incierto».
   source: 1-timoteo-1
+- date: '2026-10-13'
+  change: 'Nuevas paradas 6 (Troas) y 7 (Mileto), pendientes (2Ti 4:13, 20; Perspicacia «Troas», «Mileto»). La nota de Hch
+    28:30 no ordena las visitas: Nicópolis (5) pasa a orden incierto y llega a 65. Roma es la 8, sin Trófimo.'
+  source: 2-timoteo-4
+- date: '2026-10-13'
+  change: Trófimo vuelve a companions solo en la parada 7, Mileto, donde enfermó (2Ti 4:20; Perspicacia «Trófimo»).
+  source: 2-timoteo-4
+- date: '2026-10-13'
+  change: El resumen nombra Troas y Mileto, las paradas nuevas de 2Ti 4:13, 20.
+  source: 2-timoteo-4
 checked_on: '2026-10-13'
 status: verified
 stops:
@@ -118,22 +135,63 @@ stops:
   reference: Tit 3:12
   date:
     from: 61
-    to: 64
+    to: 65
     precision: range
     approx: true
     type: narrative
     chronology: tnm
-    text: 'dentro de c. 61-64 e.c. (tiempo narrativo: orden cierto, fecha aproximada)'
+    text: 'dentro de c. 61-65 e.c. (tiempo narrativo: orden incierto, fecha aproximada)'
   note: Solo consta que pensaba invernar allí; algunos creen que allí lo arrestaron.
-  reason: 'Tit 3:12: había decidido pasar allí el invierno. La nota de Hch 28:30 la cuenta entre los lugares que
-    probablemente visitó.'
+  reason: 'Tit 3:12: había decidido pasar allí el invierno. La nota de Hch 28:30 la cuenta entre sus visitas probables, sin
+    orden; Perspicacia «Nicópolis» ve posible que allí lo arrestaran, hacia 65.'
   sources:
   - it-nicopolis
   - nota-hechos-28
   - tito-3
-  checked_on: '2026-09-28'
+  checked_on: '2026-10-13'
   status: pending
 - order: 6
+  place: troas
+  reference: 2Ti 4:13
+  date:
+    from: 61
+    to: 65
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'dentro de c. 61-65 e.c. (tiempo narrativo: orden incierto, fecha aproximada)'
+  note: Deja su capa, unos rollos y los pergaminos en casa de Carpo.
+  reason: 2Ti 4:13. Perspicacia «Troas» ve probable que volviera tras su liberación de 61; la nota de Hch 28:30 cuenta Troas
+    entre sus visitas probables. No se sabe en qué orden.
+  sources:
+  - 2-timoteo-4
+  - it-troas
+  - nota-hechos-28
+  checked_on: '2026-10-13'
+  status: pending
+- order: 7
+  place: mileto
+  reference: 2Ti 4:20
+  date:
+    from: 61
+    to: 65
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'dentro de c. 61-65 e.c. (tiempo narrativo: orden incierto, fecha aproximada)'
+  note: Trófimo enferma y se queda allí.
+  reason: '2Ti 4:20. Perspicacia «Mileto»: parece que volvió tras su primer encierro, en un momento que no se dice; la nota
+    de Hch 28:30 cuenta Mileto entre sus visitas probables.'
+  sources:
+  - 2-timoteo-4
+  - it-mileto
+  - it-trofimo
+  - nota-hechos-28
+  checked_on: '2026-10-13'
+  status: pending
+- order: 8
   place: roma
   reference: 2Ti 1:16, 17; 4:6-8
   date:
@@ -144,12 +202,11 @@ stops:
     type: anchored
     chronology: tnm
     text: c. 65 e.c.
-  note: Escribe 2 Timoteo. Trófimo, que viajaba con él, se había quedado enfermo en Mileto (2Ti 4:20).
+  note: Escribe 2 Timoteo.
   reason: El estudio 3 (párr. 28) y Perspicacia «Timoteo, Cartas a» sitúan el último encierro hacia 65.
   sources:
   - si-3
   - it-timoteo-cartas
   - 2-timoteo-4
-  - it-trofimo
-  checked_on: '2026-10-02'
+  checked_on: '2026-10-13'
   status: verified

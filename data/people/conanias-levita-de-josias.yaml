@@ -1,0 +1,49 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: conanias-levita-de-josias
+name: Conanías
+names:
+- name: Conanías
+perspicacia: 1200001019#2
+summary: Jefe levita en tiempos de Josías. Con sus hermanos Semaya y Netanel y con otros jefes, dio a los levitas 5.000 animales
+  y 500 reses para la Pascua del año 18 del rey.
+reason: Perspicacia «Conanías», núm. 2; 2Cr 35:9, 19.
+sources:
+- it-conanias
+- 2-cronicas-35
+links:
+- title: 'Perspicacia: «Conanías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Conan%C3%ADas/
+  type: perspicacia
+disambiguation: El jefe levita de la Pascua de Josías (Perspicacia «Conanías», núm. 2); no el levita que guardaba las contribuciones
+  en días de Ezequías.
+relations:
+- type: holds_office
+  office: leader
+  inferred: false
+  sources:
+  - 2-cronicas-35
+  reason: 2Cr 35:9 lo nombra el primero de los jefes de los levitas.
+  checked_on: '2026-10-13'
+  status: verified
+- type: kin
+  person: semaya-levita-de-josias
+  word: brother
+  inferred: false
+  sources:
+  - 2-cronicas-35
+  reason: 2Cr 35:9 llama a Semaya hermano de Conanías.
+  checked_on: '2026-10-13'
+  status: verified
+- type: kin
+  person: netanel-levita-de-josias
+  word: brother
+  inferred: false
+  sources:
+  - 2-cronicas-35
+  reason: 2Cr 35:9 llama a Netanel hermano de Conanías.
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified
+distinct_from:
+- conanias-de-tiempos-de-ezequias

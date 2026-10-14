@@ -29,6 +29,7 @@ roles:
   jehoram-de-israel: died
 passages:
 - 2Re 9:14-26
+- 2Cr 22:7
 summary: Jehú corre en su carro a Jezreel. Jehoram y Ocozías salen a su encuentro y lo hallan en el terreno de Nabot; Jehú
   atraviesa a Jehoram con una flecha y Bidcar echa allí su cuerpo.
 reason: El estudio 3 fecha hacia 905 a.e.c. que Jehú sucede a Jehoram (2Re 9:24). Perspicacia «Jehú», núm. 3, párr. 7. El
@@ -39,6 +40,7 @@ sources:
 - tnm-a6-a
 - it-jehu
 - it-jehoram
+- 2-cronicas-22
 links:
 - title: 2 Reyes 9 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-reyes/9/
@@ -46,5 +48,5 @@ links:
 - title: 'Perspicacia: «Jehú»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jeh%C3%BA/
   type: perspicacia
-checked_on: '2026-09-30'
+checked_on: '2026-10-13'
 status: verified

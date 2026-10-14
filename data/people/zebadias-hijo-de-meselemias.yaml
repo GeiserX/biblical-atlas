@@ -26,10 +26,12 @@ relations:
   reason: 1Cr 26:2, 3 lo nombra el tercero de los hijos de Meselemías.
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified
 distinct_from:
 - zebadias-descendiente-de-berias
 - zebadias-descendiente-de-elpaal
 - zebadias-hijo-de-asahel
 - zebadias-hijo-de-jeroham
+- zebadias-hijo-de-ismael
+- zebadias-levita-de-jehosafat

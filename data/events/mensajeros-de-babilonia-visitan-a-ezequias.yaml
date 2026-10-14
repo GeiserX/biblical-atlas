@@ -36,6 +36,7 @@ sources:
 - it-ezequias
 - isaias-39
 - ip1-29
+- 2-cronicas-32
 links:
 - title: 2 Reyes 20 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-reyes/20/
@@ -51,5 +52,5 @@ history:
   change: 'Se funde con el suceso igual de 2 Reyes, dueño del relato: toma su título, su resumen y su orden en la serie de
     2 Reyes, y suma Babilonia, desde donde llegaron los enviados.'
   source: 2-reyes-20
-checked_on: '2026-09-30'
+checked_on: '2026-10-13'
 status: verified

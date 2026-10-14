@@ -1,0 +1,44 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: primera-defensa-de-pablo
+title: Primera defensa de Pablo en su último encierro
+date:
+  from: 65
+  to: 65
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 65 e.c.
+narrative_order:
+  series: hechos
+  order: 2857
+places:
+- roma
+people:
+- pablo
+present:
+- pablo
+type: speech
+roles:
+  pablo: spoke
+passages:
+- 2Ti 4:16-18
+summary: 'En su primera defensa ante el tribunal nadie se pone de su parte, pero el Señor lo fortalece: Pablo predica a fondo
+  el mensaje y se libra de la boca del león.'
+reason: 2Ti 4:16-18. La nota de 2Ti 4:16 la ve probable en el segundo encierro, hacia 65, y no en el primero; Perspicacia
+  «Timoteo, Cartas a» la recoge. La nota de 4:17 no sabe si el león es literal.
+sources:
+- 2-timoteo-4
+- it-timoteo-cartas
+- si-3
+links:
+- title: 2 Timoteo 4 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-timoteo/4/
+  type: bible
+- title: 'Perspicacia: «Timoteo, Cartas a»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Timoteo-Cartas-a/
+  type: perspicacia
+note: 'Orden 2857 de la serie hechos: tras el comienzo del segundo encierro (2855) y antes de la carta (2860), que la cuenta
+  como pasada.'
+checked_on: '2026-10-13'
+status: verified

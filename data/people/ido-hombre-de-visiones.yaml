@@ -1,0 +1,37 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ido-hombre-de-visiones
+name: Idó
+names:
+- name: Idó
+perspicacia: 1200002135#3
+disambiguation: Idó el hombre de visiones de los días de Salomón, Rehoboam y Abías (Perspicacia «Idó», núm. 3); no el padre
+  de Ahinadab, ni el abuelo del profeta Zacarías, ni los Idó de 1 Crónicas.
+distinct_from:
+- ido-padre-de-ahinadab
+- ido-padre-de-berekias
+- ido-hijo-de-joa
+- ido-hijo-de-zacarias
+summary: Hombre de visiones. Crónicas saca de sus escritos datos de los reinados de Salomón, Rehoboam y Abías; unas de sus
+  visiones trataban de Jeroboán hijo de Nebat.
+reason: Perspicacia «Idó», núm. 3; 2Cr 9:29; 12:15; 13:22.
+sources:
+- it-ido
+- 2-cronicas-9
+- 2-cronicas-12
+- 2-cronicas-13
+links:
+- title: 'Perspicacia: «Idó»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Id%C3%B3/
+  type: perspicacia
+checked_on: '2026-10-13'
+status: verified
+relations:
+- type: holds_office
+  office: prophet
+  inferred: false
+  sources:
+  - 2-cronicas-13
+  - it-ido
+  reason: 2Cr 13:22 lo llama el profeta Idó; Perspicacia «Idó», núm. 3, hombre de visiones.
+  checked_on: '2026-10-13'
+  status: verified

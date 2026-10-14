@@ -1,0 +1,31 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: abdias-levita-de-josias
+name: Abdías
+names:
+- name: Abdías
+perspicacia: 1200003287#7
+disambiguation: El merarita que supervisó las obras del templo con Josías; no el mayordomo de Acab, ni el profeta, ni los
+  demás Abdías de Perspicacia.
+distinct_from:
+- abdias-el-gadita
+- abdias-hijo-de-arnan
+- abdias-hijo-de-azel
+- abdias-hijo-de-izrahias
+- abdias-hijo-de-semaya
+- abdias-mayordomo-de-acab
+- abdias-padre-de-ismaya
+- abdias-principe-de-jehosafat
+- abdias-profeta
+summary: Levita merarita. En el año 18 de Josías, 642 a.e.c., lo pusieron con Jáhat y otros dos levitas al frente de los obreros
+  que reparaban el templo.
+reason: Perspicacia «Abdías», núm. 7; 2Cr 34:12.
+sources:
+- it-abdias
+- 2-cronicas-34
+links:
+- title: 'Perspicacia: «Abdías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Abd%C3%ADas/
+  type: perspicacia
+relations: []
+checked_on: '2026-10-13'
+status: verified

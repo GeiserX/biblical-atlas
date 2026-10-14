@@ -1,0 +1,37 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: abias-toma-betel-jesana-y-efren
+title: Abías le quita a Jeroboán Betel, Jesaná y Efrén
+date:
+  from: -979
+  to: -977
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 980 y 978 a.e.c. (tiempo narrativo: reinado de Abías)'
+narrative_order:
+  series: 2-cronicas
+  order: 13019
+places:
+- betel
+- jesana
+- efrain
+people:
+- abias-de-juda
+- jeroboan-i
+present:
+- abias-de-juda
+passages:
+- 2Cr 13:19, 20
+summary: Abías persigue a Jeroboán y le toma Betel, Jesaná y Efrén con sus pueblos. Mientras vive Abías, Jeroboán ya no recupera
+  su poder.
+reason: '2Cr 13:19, 20; Perspicacia «Abías», núm. 5, y «Efrén», que la cree en Efraín. Reinado de Abías, 980-978 a.e.c. (A6-A).
+  Solo Abías se sitúa en Betel: Jeroboán huía.'
+sources:
+- 2-cronicas-13
+- it-abias
+- it-efren
+- it-jesana
+- tnm-a6-a
+checked_on: '2026-10-13'
+status: verified

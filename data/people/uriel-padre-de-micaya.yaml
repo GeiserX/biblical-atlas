@@ -1,0 +1,50 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: uriel-padre-de-micaya
+name: Uriel
+names:
+- name: Uriel
+perspicacia: 1200004522#3
+disambiguation: El padre de Micaya, o Maacá, la madre del rey Abías; no el levita hijo de Táhat ni el jefe de los cohatitas
+  de tiempos de David.
+summary: Hombre de Guibeá, padre de Micaya, a la que Perspicacia identifica con Maacá, esposa preferida de Rehoboam y madre
+  de Abías. Como Maacá era nieta de Absalón, Perspicacia lo tiene por yerno suyo.
+reason: Perspicacia «Uriel», núm. 3; 2Cr 13:2.
+not_claimed:
+- 'De qué Guibeá era: Perspicacia «Guibeah», núm. 1, deja abierto si era la de Judá o la de Benjamín.'
+sources:
+- it-uriel
+- 2-cronicas-13
+- it-guibeah
+links:
+- title: 'Perspicacia: «Uriel»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Uriel/
+  type: perspicacia
+relations:
+- type: kin
+  person: absalon
+  word: father_in_law
+  inferred: true
+  sources:
+  - it-uriel
+  - 2-cronicas-13
+  reason: 'Perspicacia «Uriel», núm. 3, lo llama yerno de Absalón: su hija Maacá (2Cr 13:2) era nieta de Absalón, cuyos hijos
+    varones murieron sin descendencia.'
+  checked_on: '2026-10-13'
+  status: verified
+- type: kin
+  person: tamar-hija-de-absalon
+  word: wife
+  inferred: true
+  sources:
+  - it-uriel
+  - it-tamar
+  - 2-cronicas-13
+  reason: Perspicacia «Uriel», núm. 3, deduce que Maacá (2Cr 13:2) era hija de Uriel y de Tamar, la hija de Absalón; «Tamar»,
+    núm. 3, solo lo ve posible.
+  checked_on: '2026-10-13'
+  status: pending
+checked_on: '2026-10-13'
+status: verified
+distinct_from:
+- uriel-hijo-de-tahat
+- uriel-jefe-de-los-cohatitas

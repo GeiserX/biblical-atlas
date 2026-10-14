@@ -20,14 +20,22 @@ distinct_from:
 - zacarias-descendiente-de-isias
 - zacarias-hijo-de-hosa
 - zacarias-padre-de-ido
+- zacarias-principe-de-jehosafat
+- zacarias-hijo-de-benaya
+- zacarias-hijo-de-jehosafat
+- zacarias-consejero-de-uzias
+- zacarias-levita-de-ezequias
+- zacarias-levita-de-josias
+- zacarias-sacerdote-de-josias
 summary: Padre de Abías, la esposa del rey Acaz. Por ella fue el abuelo materno del rey Ezequías.
 reason: Perspicacia «Zacarías», núm. 16; 2Re 18:2.
 sources:
 - it-zacarias
 - 2-reyes-18
+- 2-cronicas-29
 links:
 - title: 'Perspicacia: «Zacarías»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zacar%C3%ADas/
   type: perspicacia
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified

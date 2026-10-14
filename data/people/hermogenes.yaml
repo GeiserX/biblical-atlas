@@ -1,0 +1,41 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hermogenes
+name: Hermógenes
+names:
+- name: Hermógenes
+perspicacia: '1200001998'
+date:
+  from: 65
+  to: 65
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 65 e.c.
+summary: Cristiano de la provincia de Asia que, junto con Figelo, abandonó a Pablo en su último encierro en Roma. Perspicacia
+  cree que quizás lo hizo por miedo a la persecución de Nerón.
+reason: Perspicacia «Hermógenes» y «Asia»; 2Ti 1:15. La Tabla de los libros fecha 2 Timoteo hacia 65.
+sources:
+- it-hermogenes
+- it-asia
+- 2-timoteo-1
+- tnm-tabla
+links:
+- title: 'Perspicacia: «Hermógenes»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Herm%C3%B3genes/
+  type: perspicacia
+- title: 2 Timoteo 1 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-timoteo/1/
+  type: bible
+relations:
+- type: lived_in
+  place: asia
+  sources:
+  - 2-timoteo-1
+  - it-hermogenes
+  reason: 2Ti 1:15 lo nombra entre los hombres de la provincia de Asia que se apartaron de Pablo.
+  inferred: false
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified

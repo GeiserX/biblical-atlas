@@ -12,6 +12,8 @@ reason: Perspicacia «Semaya», núm. 6; 1Re 12:22-24; 2Cr 11:2-4 y 12:5-15.
 sources:
 - it-semaya
 - 1-reyes-12
+- 2-cronicas-11
+- 2-cronicas-12
 links:
 - title: 'Perspicacia: «Semaya»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Semaya/
@@ -26,10 +28,12 @@ relations:
   sources:
   - 1-reyes-12
   - it-semaya
+  - 2-cronicas-11
+  - 2-cronicas-12
   reason: 1Re 12:22 lo llama hombre del Dios verdadero, y 2Cr 12:5, el profeta Semaya.
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-13'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified
 distinct_from:
 - semaya-padre-de-uriya
@@ -43,3 +47,7 @@ distinct_from:
 - semaya-jefe-de-la-casa-de-elizafan
 - semaya-hijo-de-netanel
 - semaya-hijo-de-obed-edom
+- semaya-levita-de-jehosafat
+- semaya-levita-de-ezequias
+- semaya-ayudante-de-core
+- semaya-levita-de-josias

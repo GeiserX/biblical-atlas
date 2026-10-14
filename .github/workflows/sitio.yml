@@ -85,9 +85,12 @@ jobs:
           PLAYWRIGHT_CORE: ${{ runner.temp }}/pw/node_modules/playwright-core
           PLAYWRIGHT_MODULE_DIR: ${{ runner.temp }}/pw/node_modules
           BE_TRACES: ${{ runner.temp }}/trazas
-          # Los presupuestos de tiempo de timeline-marks se midieron en un Mac mini. Un runner tardó 54 ms en pintar y 41 ms
-          # por fotograma de arrastre: con 3, el arrastre (48 ms) quedaría a un 15 % y fallaría en un runner algo más lento.
-          BE_TIME_SCALE: "4"
+          # Los presupuestos de tiempo de timeline-marks se midieron en un Mac mini: 50 ms para pintar los carriles y 16 ms
+          # por fotograma de arrastre. En 95 ejecuciones del 12 al 14 de octubre de 2026, los runners tardaron hasta 82,5 ms
+          # en pintar y hasta 45,2 ms por fotograma, y pintar crece con las marcas de los datos. Cada uno lleva su
+          # multiplicador: pintar 150 ms deja un margen del 45 % y arrastrar 64 ms, uno del 29 %.
+          BE_TIME_SCALE_PINTADO: "3"
+          BE_TIME_SCALE_ARRASTRE: "4"
           PARTE: ${{ matrix.parte }}
         run: |
           run() { node --test --test-concurrency=1 --import ./tests/site/failure-traces.mjs "$@"; }

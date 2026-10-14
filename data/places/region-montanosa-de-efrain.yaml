@@ -37,6 +37,8 @@ sources:
 - 1-reyes-4
 - jeremias-4
 - jeremias-31
+- 2-cronicas-15
+- 2-cronicas-19
 links:
 - title: 'Perspicacia: «Efraín»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Efra%C3%ADn/
@@ -44,5 +46,5 @@ links:
 - title: Josué 17 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Josu%C3%A9/17/
   type: bible
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified

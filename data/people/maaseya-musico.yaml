@@ -14,9 +14,13 @@ links:
 - title: 'Perspicacia: «Maaseya»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Maaseya/
   type: perspicacia
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified
 distinct_from:
 - maaseya-hijo-de-salum
 - maaseya-padre-de-sedequias
 - maaseya-padre-de-sofonias
+- maaseya-funcionario
+- maaseya-jefe-de-jerusalen
+- maaseya-hijo-de-adaya
+- maaseya-hijo-del-rey
