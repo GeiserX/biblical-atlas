@@ -1,0 +1,37 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: nabucodonosor-invade-ammon-y-moab
+title: Nabucodonosor invade Ammón y Moab
+date:
+  from: -601
+  to: -601
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 602 a.e.c.
+places:
+- ammon
+- moab
+people:
+- nabucodonosor-ii
+present: []
+passages: []
+summary: Unos cinco años después de destruir Jerusalén, Babilonia lleva la guerra a Ammón y Moab. Es el principio del castigo
+  que Ezequiel había anunciado a esos dos pueblos.
+reason: Recuadro 7A de La adoración pura lo fecha en 602; su cap. 7, párr. 9, lo une a Eze 25:10, 11. Perspicacia «Ammonitas»
+  y «Moab» lo toman de Josefo. Las fuentes no dicen dónde estaba el rey.
+sources:
+- rr-naciones-vecinas-de-jerusalen
+- rr-naciones-sabran-que-soy-jehova
+- it-ammonitas
+- it-moab
+- it-nabucodonosor
+links:
+- title: 'Perspicacia: «Ammonitas»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ammonitas/
+  type: perspicacia
+- title: 'Perspicacia: «Moab, moabitas»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Moab-moabitas/
+  type: perspicacia
+checked_on: '2026-10-13'
+status: verified

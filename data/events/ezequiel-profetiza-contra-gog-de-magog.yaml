@@ -1,0 +1,51 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: ezequiel-profetiza-contra-gog-de-magog
+title: Ezequiel profetiza contra Gog de Magog
+date:
+  from: -606
+  to: -592
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 607 y 593 a.e.c. (tiempo narrativo: tras la noticia de la caída de Jerusalén y antes de la visión del templo)'
+narrative_order:
+  series: ezequiel
+  order: 238001
+places:
+- caldea
+- israel
+people:
+- ezequiel
+present: []
+passages:
+- Eze 38:1-23
+- Eze 39:1-29
+summary: Ezequiel anuncia que Gog, al frente de pueblos del norte y del sur, invadirá en los últimos tiempos la tierra del
+  pueblo restaurado. Jehová lo destruirá, Israel quemará sus armas y enterrará a los caídos, y su nombre quedará santificado.
+reason: Tras la noticia de la caída de Jerusalén (607) y antes de la visión del templo (593), según «Toda Escritura», libro
+  26, párr. 24 y 27. «Toda Escritura», párr. 26, lo une al capítulo siguiente.
+sources:
+- ezequiel-38
+- si-ezequiel
+- it-ezequiel-libro
+- it-gog
+- rr-estoy-contra-ti-gog
+- ezequiel-39
+- it-hamon-gog
+- it-hamona
+- it-magog
+links:
+- title: Ezequiel 38 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/ezequiel/38/
+  type: bible
+- title: 'Perspicacia: «Gog»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Gog/
+  type: perspicacia
+history:
+- date: '2026-10-13'
+  change: 'El resumen solo recogía Ezequiel 38; ahora incluye el final de la profecía en Ezequiel 39: las armas quemadas y
+    el entierro en Hamon-Gog.'
+  source: ezequiel-39
+checked_on: '2026-10-13'
+status: verified

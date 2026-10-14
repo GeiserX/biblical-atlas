@@ -1,0 +1,49 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: ezequiel-anuncia-el-sitio-con-la-parabola-de-la-olla
+title: Ezequiel anuncia el sitio de Jerusalén con la parábola de la olla
+type: speech
+date:
+  from: -608
+  to: -608
+  precision: day
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 10 de tebet de 609 a.e.c.
+  detail:
+    month: tebet
+    day: 10
+narrative_order:
+  series: ezequiel
+  order: 24001
+places:
+- tel-abib
+- caldea
+- jerusalen
+people:
+- ezequiel
+present:
+- ezequiel
+roles:
+  ezequiel: spoke
+passages:
+- Eze 24:1-14
+summary: 'El día en que el rey de Babilonia empieza a atacar Jerusalén, Jehová manda a Ezequiel apuntar la fecha y contar
+  una parábola: la ciudad es una olla oxidada puesta al fuego con la carne dentro.'
+reason: 'Eze 24:1, 2: año noveno del destierro de Joaquín, día 10 del mes décimo (tebet), cuando empieza el sitio: 609 según
+  el estudio 3 y «Toda Escritura», libro 26, párr. 20. Ezequiel vivía en Tel-abib (Perspicacia «Ezequiel»).'
+sources:
+- ezequiel-24
+- si-ezequiel
+- si-3
+- it-ezequiel-libro
+- it-ezequiel
+links:
+- title: 'Perspicacia: «Ezequiel, Libro de»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ezequiel-Libro-de/
+  type: perspicacia
+- title: Ezequiel 24 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/ezequiel/24/
+  type: bible
+checked_on: '2026-10-13'
+status: verified

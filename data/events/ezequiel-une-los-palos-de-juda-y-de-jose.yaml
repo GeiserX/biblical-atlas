@@ -1,0 +1,43 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: ezequiel-une-los-palos-de-juda-y-de-jose
+title: Ezequiel une los palos de Judá y de José
+date:
+  from: -606
+  to: -592
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 607 y 593 a.e.c. (tiempo narrativo: tras la noticia de la caída de Jerusalén y antes de la visión del templo)'
+narrative_order:
+  series: ezequiel
+  order: 237015
+places:
+- tel-abib
+- caldea
+- juda
+- israel
+people:
+- ezequiel
+present:
+- ezequiel
+passages:
+- Eze 37:15-28
+summary: 'Ante los desterrados, Ezequiel escribe en un palo «para Judá» y en otro «para José» y los junta en su mano: Jehová
+  hará de los dos reinos una sola nación bajo un solo rey, su siervo David.'
+reason: 'Entre la noticia de la caída (607) y la visión del templo (593): «Toda Escritura», libro 26, párr. 24 y 27. Gesto ante los desterrados (La adoración pura, cap. 12): sitio deducido de Perspicacia «Ezequiel», como en los demás gestos.'
+sources:
+- ezequiel-37
+- si-ezequiel
+- it-ezequiel-libro
+- rr-hare-de-ellos-una-sola-nacion
+- it-ezequiel
+links:
+- title: Ezequiel 37 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/ezequiel/37/
+  type: bible
+- title: 'Perspicacia: «Ezequiel, Libro de»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ezequiel-Libro-de/
+  type: perspicacia
+checked_on: '2026-10-13'
+status: verified

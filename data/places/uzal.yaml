@@ -1,0 +1,33 @@
+# biblical-atlas: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: uzal
+name: Uzal
+names:
+- name: Uzal
+type: region
+lat: 37.333333
+lon: 41.166667
+precision: uncertain
+coord_source: openbible:a217cc5
+coord_url: https://www.openbible.info/geo/ancient/a217cc5/uzal
+coord_note: OpenBible pone primero Saná; tomamos su identificación con Izalla, en el noreste de Siria, que es la ubicación
+  posible que nombra Perspicacia «Uzal», núm. 2.
+summary: Lugar del que llegaban a Tiro hierro forjado, casia y caña aromática. Se ha propuesto que estuviera en la región
+  de Izalla, cerca del curso alto del Tigris.
+reason: 'Perspicacia «Uzal», núm. 2; Eze 27:19. No es la tribu de Uzal, hijo de Joqtán (núm. 1). OpenBible: solo el punto.'
+not_claimed:
+- 'Qué es «Javán de Uzal»: Perspicacia «Javán» recoge que puede ser un error del copista, una colonia griega en Arabia o una
+  tribu o ciudad árabe.'
+sources:
+- it-uzal
+- it-javan
+- openbible-geo
+- ezequiel-27
+links:
+- title: 'Perspicacia: «Uzal»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Uzal/
+  type: perspicacia
+- title: Ezequiel 27 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/ezequiel/27/
+  type: bible
+checked_on: '2026-10-13'
+status: verified

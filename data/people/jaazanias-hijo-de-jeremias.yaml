@@ -4,10 +4,12 @@ name: Jaazanías
 names:
 - name: Jaazanías
 perspicacia: 1200002264#1
-disambiguation: El jefe de los recabitas, hijo de otro Jeremías; no Jaazanías el jefe militar de después de la caída de Jerusalén
-  (Perspicacia, núm. 4).
+disambiguation: El jefe de los recabitas, hijo de otro Jeremías (Perspicacia, núm. 1); no los hijos de Safán y de Azur que
+  Ezequiel vio en el templo, ni el jefe militar de después de la caída de Jerusalén.
 distinct_from:
 - jaazanias-jefe-militar
+- jaazanias-hijo-de-safan
+- jaazanias-hijo-de-azur
 summary: Jefe de los recabitas en días de Jehoiaquim, hijo de Jeremías y nieto de Habazinías. Jeremías lo llevó con su familia
   a un comedor del templo, le ofreció vino y se negaron por el mandato de Jehonadab.
 reason: Perspicacia «Jaazanías», núm. 1, y «Recabitas», párr. 3; Jer 35:3-11.
@@ -74,5 +76,10 @@ relations:
   reason: 'Jer 35:11: los recabitas entraron en Jerusalén huyendo del ejército de Nabucodonosor y ya vivían allí.'
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+history:
+- date: '2026-10-13'
+  change: La desambiguación nombra también a los dos Jaazanías de la visión de Ezequiel (Perspicacia, núm. 2 y 3), que ya
+    tienen ficha o la tendrán.
+  source: it-jaazanias
+checked_on: '2026-10-13'
 status: verified

@@ -11,7 +11,7 @@ names:
   note: Así lo llama Joe 2:20, porque cerraba por el este la tierra de Israel, frente al mar occidental (Perspicacia «Mar
     Salado», apartado «Nombre»).
 - name: Mar del este
-  note: Así lo llama Zac 14:8; la nota al pie aclara que es el mar Muerto.
+  note: Así lo llaman Eze 47:18 y Zac 14:8; en los dos, la nota al pie aclara que es el mar Muerto.
 type: sea
 lat: 31.5
 lon: 35.5
@@ -36,9 +36,15 @@ sources:
 - josue-15
 - josue-18
 - zacarias-14
+- ezequiel-47
 links:
 - title: 'Perspicacia: «Mar Salado»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Mar-Salado/
   type: perspicacia
-checked_on: '2026-09-29'
+history:
+- date: '2026-10-13'
+  change: La nota de «Mar del este» añade Eze 47:18, donde la TNM también lo llama así y su nota lo identifica con el mar
+    Muerto.
+  source: ezequiel-47
+checked_on: '2026-10-13'
 status: verified

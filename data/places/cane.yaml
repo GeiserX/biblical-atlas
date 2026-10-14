@@ -1,0 +1,49 @@
+# biblical-atlas: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: cane
+name: Cané
+names:
+- name: Cané
+type: city
+lat: null
+lon: null
+precision: uncertain
+coord_source: null
+coord_url: null
+candidates:
+- name: Norte de Mesopotamia, hacia el curso medio del Éufrates
+  geometry:
+    type: zone
+    lat: 36.7829
+    lon: 38.5596
+    radius_km: 150
+  status: favored_level_1
+  sources:
+  - it-cane
+  - it-haran
+  - it-eden
+  - openbible-geo
+  reason: 'Perspicacia «Cané»: como se la nombra con Harán y Edén, podría estar en el norte de Mesopotamia, hacia el tramo
+    medio del Éufrates.'
+  note: 'Centro: punto medio entre el punto de Harán y el que OpenBible da a Edén 2 (Bit-Adini). El radio de 150 km es nuestro.'
+  coord_source: calculation
+  checked_on: '2026-10-13'
+summary: Lugar que comerciaba con Tiro junto con Harán y Edén, así que quizá estaba en el norte de Mesopotamia. Algunos eruditos
+  ven en su nombre una forma breve de Calné.
+reason: Perspicacia «Cané»; Eze 27:23. Solo una zona, porque Perspicacia no da ningún sitio.
+not_claimed:
+- 'Que sea Calné: algunos eruditos lo opinan y OpenBible la iguala con la Calné de Siria, pero Perspicacia no lo afirma.'
+sources:
+- it-cane
+- it-haran
+- it-eden
+- openbible-geo
+- ezequiel-27
+links:
+- title: 'Perspicacia: «Cané»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Can%C3%A9/
+  type: perspicacia
+- title: Ezequiel 27 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/ezequiel/27/
+  type: bible
+checked_on: '2026-10-13'
+status: verified

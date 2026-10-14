@@ -41,6 +41,12 @@ sources:
 - jeremias-51
 - jeremias-52
 - 1-cronicas-6
+- ezequiel-17
+- ezequiel-21
+- it-adivinacion
+- ezequiel-26
+- ezequiel-29
+- ezequiel-30
 links:
 - title: 'Perspicacia: «Nabucodonosor, Nabucodorosor»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Nabucodonosor-Nabucodorosor/
@@ -55,8 +61,9 @@ relations:
   sources:
   - it-nabucodonosor
   - daniel-4
+  - ezequiel-17
   reason: Gobernó desde Babilonia, que él mismo embelleció (Da 4:29-30).
-  checked_on: '2026-09-28'
+  checked_on: '2026-10-13'
   status: verified
 - type: kin
   person: nabopolasar
@@ -80,5 +87,5 @@ relations:
   office: king
   status: verified
 perspicacia: '1200003200'
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified

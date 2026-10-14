@@ -49,7 +49,8 @@ relations:
   reason: '1Cr 4:42: Pelatías, uno de los hijos de Isí.'
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified
 distinct_from:
 - pelatias-hijo-de-hananias
+- pelatias-hijo-de-benaya

@@ -108,6 +108,7 @@ sources:
 - 1-cronicas-21
 - it-ornan
 - 1-cronicas-22
+- ezequiel-8
 links:
 - title: 'Perspicacia: «Moria»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Moria/
@@ -120,5 +121,5 @@ history:
 - date: '2026-09-29'
   change: Se añade el sacrificio de Isaac de Génesis 22, que Perspicacia «Abrahán» (párr. 17) y «Moria» ponen en este monte.
   source: genesis-22
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified

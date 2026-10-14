@@ -1,0 +1,33 @@
+# biblical-atlas: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: coa
+name: Coa
+names:
+- name: Coa
+- name: Qoa
+  note: Otra lectura que da la nota de Eze 23:23; es el título del artículo de Perspicacia.
+type: region
+lat: 34.387529
+lon: 47.132096
+precision: uncertain
+coord_source: openbible:afe6972
+coord_url: https://www.openbible.info/geo/ancient/afe6972/koa
+coord_note: OpenBible la iguala con Gutium, al este del Tigris, y toma ese punto. Perspicacia la ve probable al este de Babilonia
+  y recoge que se la suele unir a los qutu de esa zona.
+summary: Pueblo o región, probablemente al este de Babilonia, de donde saldría parte del ejército que invadiría Jerusalén
+  y Judá. Se la relaciona con los qutu, que lucharon contra Asiria al este del Tigris.
+reason: 'Perspicacia «Qoa»; Eze 23:23. Coordenada de OpenBible: solo tomamos el punto.'
+not_claimed:
+- 'Que Coa sea con seguridad el pueblo qutu: Perspicacia dice que por lo general se la relaciona con él, sin afirmarlo.'
+sources:
+- it-qoa
+- openbible-geo
+- ezequiel-23
+links:
+- title: 'Perspicacia: «Qoa»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Qoa/
+  type: perspicacia
+- title: Ezequiel 23 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/ezequiel/23/
+  type: bible
+checked_on: '2026-10-13'
+status: verified

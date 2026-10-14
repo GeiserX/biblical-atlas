@@ -1,0 +1,59 @@
+# biblical-atlas: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: en-eglaim
+name: En-Eglaim
+names:
+- name: En-Eglaim
+  note: Perspicacia le da el sentido de «fuente de dos terneros».
+type: city
+lat: null
+lon: null
+precision: uncertain
+coord_source: null
+coord_url: null
+candidates:
+- name: ʽAin Feshka, al noroeste del mar Muerto
+  geometry:
+    type: point
+    lat: 31.714444
+    lon: 35.453333
+  checked_on: '2026-10-13'
+  status: alternative
+  sources:
+  - it-en-eglaim
+  - openbible-geo
+  reason: Casi todos los eruditos la ponen en este oasis de la orilla oeste, a unos 29 km de En-Guedí (Perspicacia).
+  coord_source: openbible:ad44943
+  coord_url: https://www.openbible.info/geo/ancient/ad44943/eneglaim
+  note: Segunda identificación de OpenBible; solo tomamos el punto.
+- name: Cerca de Zóar, en la orilla sureste
+  geometry:
+    type: zone
+    lat: 31.036904
+    lon: 35.487657
+    radius_km: 15
+  checked_on: '2026-10-13'
+  status: alternative
+  sources:
+  - it-en-eglaim
+  - openbible-geo
+  reason: Otros, como Y. Yadin, la buscan al sureste del mar Muerto, de modo que la pesca abarque el mar de orilla a orilla
+    (Perspicacia).
+  coord_source: calculation
+  note: 'Centro: punto de es-Safi que OpenBible da a Zóar (aacfcda), 31,0369 N; 35,4877 E. El radio de 15 km es nuestro.'
+summary: Lugar junto a un manantial a orillas del mar Muerto. En la visión de Ezequiel, las aguas saneadas tendrán pescadores
+  desde En-Guedí hasta En-Eglaim.
+reason: 'Perspicacia «En-eglaim»; Eze 47:8-10. Perspicacia recoge dos zonas sin elegir y trata en otro artículo la Eglaim
+  de Moab. OpenBible: solo los puntos.'
+sources:
+- it-en-eglaim
+- openbible-geo
+- ezequiel-47
+links:
+- title: 'Perspicacia: «En-eglaim»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/En-eglaim/
+  type: perspicacia
+- title: Ezequiel 47 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/ezequiel/47/
+  type: bible
+checked_on: '2026-10-13'
+status: verified

@@ -10,6 +10,7 @@ distinct_from:
 - benaya-simeonita
 - benaya-musico
 - benaya-trompetista
+- benaya-padre-de-pelatias
 summary: Efraimita de Piratón, uno de los treinta guerreros de David. Estuvo al frente de la división del undécimo mes.
 reason: Perspicacia «Benaya», núm. 2; 2Sa 23:30.
 sources:
@@ -45,5 +46,5 @@ relations:
   reason: '2Sa 23:30: uno de los treinta guerreros de David.'
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified

@@ -1,0 +1,41 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: ancianos-idolatras-consultan-a-ezequiel
+title: Ancianos de Israel apegados a sus ídolos consultan a Ezequiel
+date:
+  from: -611
+  to: -611
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 612 a.e.c.
+narrative_order:
+  series: ezequiel
+  order: 14001
+places:
+- tel-abib
+- caldea
+people:
+- ezequiel
+present:
+- ezequiel
+passages:
+- Eze 14:1-11
+summary: 'Unos ancianos de Israel se sientan ante Ezequiel. Jehová le revela que siguen aferrados a sus ídolos: él mismo responderá
+  a quien consulte así, los llama a volver y castigará igual al profeta que se deje engañar.'
+reason: 'La Atalaya de febrero de 2018 (nota del párr. 2) pone los capítulos 8 a 19 en 612. Sitio deducido: Perspicacia «Ezequiel» cuenta Eze 14:1 entre las visitas de los ancianos que recibió en Tel-abib.'
+sources:
+- ezequiel-14
+- w18-noe-daniel-job
+- it-ezequiel
+- si-ezequiel
+- it-ezequiel-libro
+links:
+- title: Ezequiel 14 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/ezequiel/14/
+  type: bible
+- title: 'Perspicacia: «Ezequiel»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ezequiel/
+  type: perspicacia
+checked_on: '2026-10-13'
+status: verified

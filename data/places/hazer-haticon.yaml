@@ -1,0 +1,47 @@
+# biblical-atlas: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: hazer-haticon
+name: Hazer-Haticón
+names:
+- name: Hazer-Haticón
+type: city
+lat: null
+lon: null
+precision: uncertain
+coord_source: null
+coord_url: null
+candidates:
+- name: Qaryatein, si fuera Hazar-Enán
+  geometry:
+    type: point
+    lat: 34.229444
+    lon: 37.240556
+  checked_on: '2026-10-13'
+  status: alternative
+  sources:
+  - it-hazer-haticon
+  - it-hazar-enan
+  - openbible-geo
+  reason: No se conoce un lugar con este nombre. Algunos lo creen un error de copia por Hazar-Enón, que se pone con reservas
+    en Qaryatein.
+  coord_source: openbible:aae18d7
+  coord_url: https://www.openbible.info/geo/ancient/aae18d7/hazer-hatticon
+  note: Primera identificación de OpenBible, que lo iguala a Hazar-Enán; solo tomamos el punto.
+summary: Lugar de la frontera de Israel en la visión de Ezequiel, junto al límite de Haurán. No se conoce ningún sitio con
+  ese nombre.
+reason: 'Perspicacia «Hazer-haticón»; Eze 47:16. OpenBible: solo el punto.'
+not_claimed:
+- 'Que Hazer-Haticón y Hazar-Enán sean el mismo lugar: solo lo opinan algunos, según Perspicacia.'
+sources:
+- it-hazer-haticon
+- it-hazar-enan
+- openbible-geo
+- ezequiel-47
+links:
+- title: 'Perspicacia: «Hazer-haticón»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hazer-hatic%C3%B3n/
+  type: perspicacia
+- title: Ezequiel 47 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/ezequiel/47/
+  type: bible
+checked_on: '2026-10-13'
+status: verified

@@ -4,8 +4,8 @@ name: Elisá
 names:
 - name: Elisá
 perspicacia: '1200001317'
-summary: Hijo de Javán y cabeza de una familia que pobló islas y costas. Ezequiel nombra las islas de Elisá, que vendían tinte
-  a Tiro; los indicios apuntan a Grecia, sin pruebas firmes.
+summary: Hijo de Javán y cabeza de una familia que pobló islas y costas. Ezequiel nombra las islas de Elisá, que daban a Tiro
+  hilo azul y lana púrpura; los indicios apuntan a Grecia, sin pruebas firmes.
 reason: Perspicacia «Elisá»; Gé 10:4, 5.
 sources:
 - it-elisa
@@ -29,5 +29,10 @@ relations:
   reason: Gé 10:4 lo nombra el primero de los hijos de Javán.
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+history:
+- date: '2026-10-13'
+  change: 'Las islas de Elisá no vendían tinte: según Eze 27:7 y Perspicacia «Elisá», daban hilo azul y lana teñida de púrpura
+    para los toldos.'
+  source: it-elisa
+checked_on: '2026-10-13'
 status: verified
