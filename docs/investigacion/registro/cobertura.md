@@ -81,13 +81,14 @@ Qué versículos de la TNM se han leído y apuntado en `data/coverage/<libro>.ya
 | 2 Pedro | 0 de 3 | 0 de 61 | 0 % |
 | 1 Juan | 0 de 5 | 0 de 105 | 0 % |
 | 2 Juan | 0 de 1 | 0 de 13 | 0 % |
-| 3 Juan | 0 de 1 | 0 de 14 | 0 % |
+| [3 Juan](https://github.com/GeiserX/biblical-atlas/blob/main/data/coverage/3-juan.yaml) | 0 de 1 | 14 de 14 | 100 % |
 | Judas | 0 de 1 | 0 de 25 | 0 % |
 | Apocalipsis | 0 de 22 | 0 de 404 | 0 % |
-| **Total** | 1101 de 1189 | 29154 de 31062 | 94 % |
+| **Total** | 1101 de 1189 | 29168 de 31062 | 94 % |
 
 ## Capítulos empezados
 
 - 1 Crónicas 19: faltan ninguno (falta marcarlo completo)
 - 1 Crónicas 24: faltan ninguno (falta marcarlo completo)
 - 1 Crónicas 25: faltan ninguno (falta marcarlo completo)
+- 3 Juan 1: faltan ninguno (falta marcarlo completo)
