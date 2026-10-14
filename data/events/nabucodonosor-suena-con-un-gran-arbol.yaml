@@ -1,0 +1,40 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: nabucodonosor-suena-con-un-gran-arbol
+title: Nabucodonosor sueña con un gran árbol y Daniel lo interpreta
+date:
+  from: -604
+  to: -589
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 605 y c. 590 a.e.c. (tiempo narrativo: después del horno de Dura y al menos ocho años antes de morir el rey)'
+  note: 'Cuenta nuestra: la locura llega doce meses después (Da 4:29), dura siete años (Perspicacia «Locura») y acaba antes de su muerte en 582; el sueño es, pues, de 590 como muy tarde.'
+narrative_order:
+  series: daniel
+  order: 4004
+places:
+- babilonia
+people:
+- nabucodonosor-ii
+- daniel
+passages:
+- Da 4:4-27
+summary: En su palacio, el rey sueña con un árbol enorme que un vigilante del cielo manda talar. Los sabios fallan; Daniel
+  le explica que el árbol es él, que vivirá siete tiempos entre las bestias, y le aconseja cambiar.
+reason: Perspicacia «Daniel», núm. 2, lo pone tiempo después del horno, y «Nabucodonosor», párr. 1, cuenta los siete tiempos
+  dentro de su reinado (624-582). El libro de Daniel, cap. 6, párr. 18, lo pone tras el ascenso de los tres.
+sources:
+- daniel-4
+- it-daniel
+- it-nabucodonosor
+- dp-6
+links:
+- title: Daniel 4 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/daniel/4/
+  type: bible
+- title: 'Perspicacia: «Daniel»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Daniel/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified

@@ -1,0 +1,45 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: vision-de-las-cuatro-bestias
+title: Daniel sueña con cuatro bestias que salen del mar
+date:
+  from: -552
+  to: -552
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: 553 a.e.c., primer año de Belsasar
+narrative_order:
+  series: daniel
+  order: 7001
+places:
+- babilonia
+people:
+- daniel
+present:
+- daniel
+roles:
+  daniel: wrote
+passages:
+- Da 7:1-28
+summary: Acostado, Daniel ve en sueños cuatro bestias que suben del mar y un tribunal celestial que da un reino eterno a alguien
+  como un hijo del hombre. Un ángel se lo explica y él lo escribe.
+reason: 'Da 7:1: primer año de Belsasar, 553 a.e.c. según «Toda Escritura», libro 27, nota f. Perspicacia «Daniel, Libro de»
+  sitúa el libro en Babilonia salvo la visión de Susa. Orden 7001: antes de la caída de Babilonia.'
+sources:
+- daniel-7
+- si-daniel
+- w07-daniel
+- it-daniel-libro
+- it-daniel
+- it-belsasar
+- dp-9
+links:
+- title: Daniel 7 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/daniel/7/
+  type: bible
+- title: 'Perspicacia: «Daniel, Libro de»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Daniel-Libro-de/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified

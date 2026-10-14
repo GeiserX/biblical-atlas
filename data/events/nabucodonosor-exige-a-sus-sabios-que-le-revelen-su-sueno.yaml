@@ -1,0 +1,42 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: nabucodonosor-exige-a-sus-sabios-que-le-revelen-su-sueno
+title: Nabucodonosor exige a sus sabios que le revelen su sueño
+date:
+  from: -605
+  to: -604
+  precision: range
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 606-605 a.e.c.
+narrative_order:
+  series: daniel
+  order: 2001
+places:
+- babilonia
+people:
+- nabucodonosor-ii
+- daniel
+- sadrac
+- mesac
+- abednego
+passages:
+- Da 2:1-13
+summary: Un sueño quita el sueño a Nabucodonosor. Exige a sus magos, adivinos, hechiceros y caldeos que le digan qué soñó
+  y qué significa y, como no pueden, ordena matar a todos los sabios de Babilonia, con Daniel y sus compañeros.
+reason: 'Da 2:1: segundo año del rey, contado desde la destrucción de Jerusalén en 607, o sea 606-605 (dp, cap. 4, párr. 2).
+  Perspicacia «Nabucodonosor» y «Daniel», núm. 2, lo dan por probable.'
+sources:
+- daniel-2
+- dp-4
+- it-nabucodonosor
+- it-daniel
+links:
+- title: Daniel 2 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/daniel/2/
+  type: bible
+- title: 'Perspicacia: «Nabucodonosor, Nabucodorosor»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Nabucodonosor-Nabucodorosor/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified

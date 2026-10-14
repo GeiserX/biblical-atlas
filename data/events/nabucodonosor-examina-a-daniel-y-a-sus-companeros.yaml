@@ -1,0 +1,45 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: nabucodonosor-examina-a-daniel-y-a-sus-companeros
+title: Nabucodonosor examina a Daniel y a sus compañeros
+date:
+  from: -613
+  to: -613
+  precision: year
+  approx: true
+  type: derived
+  chronology: tnm
+  text: c. 614 a.e.c.
+  note: 617 a.e.c., año en que llegan a Babilonia (estudio 3), más los tres años de formación que fija el rey (Da 1:5, 18).
+narrative_order:
+  series: daniel
+  order: 1017
+places:
+- babilonia
+people:
+- nabucodonosor-ii
+- daniel
+- sadrac
+- mesac
+- abednego
+- aspenaz
+passages:
+- Da 1:17-20
+summary: Dios da a los cuatro jóvenes conocimiento y sabiduría, y a Daniel el don de entender visiones y sueños. Acabada la
+  formación, el rey los examina, los halla diez veces superiores a sus magos y los toma a su servicio.
+reason: 'Da 1:5, 17-20. Perspicacia «Daniel», núm. 2, y «Abednego»: el examen llega al terminar los tres años. Ninguna fuente
+  da el año: sale de nuestra cuenta, en date.note.'
+sources:
+- daniel-1
+- si-3
+- it-daniel
+- it-abednego
+- dp-3
+links:
+- title: Daniel 1 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/daniel/1/
+  type: bible
+- title: 'Perspicacia: «Daniel»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Daniel/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: pending
