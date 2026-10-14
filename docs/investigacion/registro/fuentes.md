@@ -864,6 +864,7 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-arqueologia | [Arqueología](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Arqueolog%C3%ADa/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
 | it-arquipo | [Arquipo](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Arquipo/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
 | it-artajerjes | [Artajerjes](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Artajerjes/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
+| it-artemas | [Ártemas](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/%C3%81rtemas/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-14 |
 | it-arubot | [Arubot](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Arubot/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-30 |
 | it-aruma | [Arumá](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Arum%C3%A1/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-arza | [Arzá](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Arz%C3%A1/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-30 |
@@ -3205,6 +3206,7 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-zemaraim | [Zemaraim](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zemaraim/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-zemira | [Zemirá](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zemir%C3%A1/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
 | it-zenan | [Zenán](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zen%C3%A1n/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
+| it-zenas | [Zenas](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zenas/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-14 |
 | it-zer | [Zer](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zer/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-zerah | [Zérah](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Z%C3%A9rah/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-zerahias | [Zerahías](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zerah%C3%ADas/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
@@ -3870,6 +3872,7 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | sofonias-2 | [Sofonías 2](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Sofon%C3%ADas/2/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | sofonias-3 | [Sofonías 3](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Sofon%C3%ADas/3/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | tito-1 | [Tito 1](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/tito/1/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | 2026-09-27 |
+| tito-2 | [Tito 2](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/tito/2/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | tito-3 | [Tito 3](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/tito/3/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | tnm-a6-a | [A6-A Los profetas y los reyes de Judá e Israel (Parte 1)](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/apendice-a/reyes-de-juda/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | 2026-09-28 |
 | tnm-a6-b | [A6-B Los profetas y los reyes de Judá e Israel (Parte 2)](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/apendice-a/reyes-de-israel/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | 2026-09-28 |
