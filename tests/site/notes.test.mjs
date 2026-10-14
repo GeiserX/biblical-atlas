@@ -379,7 +379,6 @@ test('export, clear the storage and import restores every note', { timeout: 1200
     const notes = [`Pablo ${t}`, `Lugar ${t}`, `Capítulo ${t}\ncon dos líneas`];
     await writeNote(page, '#panel-cuerpo .note-pencil', notes[0]);
     await page.evaluate((id) => window.BE.seleccionar({ tipo: 'lugar', id }), place);
-    await ready(page);   // or the pencil clicked is still Pablo's
     await writeNote(page, '#panel-cuerpo .note-pencil', notes[1]);
     await page.goto(url('leer=hch-16'), { waitUntil: 'commit' });
     await ready(page);
@@ -400,7 +399,6 @@ test('export, clear the storage and import restores every note', { timeout: 1200
     assert.deepEqual([...listed].sort(), [...notes].sort());
     await page.locator('#notes-list [data-notes-close]').click();
     await page.evaluate(() => window.BE.seleccionar({ tipo: 'persona', id: 'pablo' }));
-    await ready(page);
     await page.locator('#panel-cuerpo .note-pencil').first().click();
     assert.equal(await page.locator('#note-text').inputValue(), notes[0]);
     assert.deepEqual(page.pageErrors, []);
@@ -626,7 +624,6 @@ test('every one of the 11 kinds of card keys its pencil by its own sel, and ever
     assert.equal(new Set(sels.map((s) => s.split(':')[0])).size, 11);
     for (const s of sels) {
       await page.evaluate((x) => window.BE.seleccionar(window.BE.parseSel(x)), s);
-      await ready(page);   // or the pencil read is the one of the card before
       const key = await page.locator('#panel-cuerpo .note-pencil').first().getAttribute('data-note-key', { timeout: WAIT }).catch(() => null);
       assert.ok(key, `no pencil on the card of ${s}`);
       if (!s.startsWith('pasaje:')) assert.equal(key, s, `the pencil of ${s} keeps its note under ${key}`);
@@ -640,7 +637,6 @@ test('every one of the 11 kinds of card keys its pencil by its own sel, and ever
       await ready(page);
       assert.equal(await page.locator('#vista-lectura .note-pencil').getAttribute('data-note-key').catch(() => null), expected, `no pencil, or another key, in the reading of ${id}`);
       await page.evaluate((x) => window.BE.seleccionar({ tipo: 'pasaje', id: x }), id);
-      await ready(page);
       assert.equal(await page.locator('#panel-cuerpo .note-pencil').first().getAttribute('data-note-key'), expected, `the chapter card of ${id} keeps another note`);
     }
   } finally { await context.close(); }
