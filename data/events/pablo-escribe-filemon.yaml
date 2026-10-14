@@ -1,0 +1,65 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: pablo-escribe-filemon
+title: Pablo escribe preso en Roma la carta a Filemón
+date:
+  from: 60
+  to: 61
+  precision: range
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 60-61 e.c.
+narrative_order:
+  series: hechos
+  order: 2833
+places:
+- roma
+- colosas
+people:
+- pablo
+- timoteo
+- onesimo
+- epafras
+- juan-marcos
+- aristarco
+- demas
+- lucas
+present:
+- pablo
+- timoteo
+- onesimo
+- epafras
+- juan-marcos
+- aristarco
+- demas
+- lucas
+type: writing
+roles:
+  pablo: wrote
+passages:
+- Flm 1, 2
+- Flm 9, 10
+- Flm 12
+- Flm 19
+- Flm 21-24
+summary: 'Preso en Roma, Pablo escribe de su puño a Filemón, de Colosas: que reciba como a un hermano a Onésimo, su esclavo
+  huido y ya cristiano. Timoteo va en el saludo inicial; saludan Epafras, Marcos, Aristarco, Demas y Lucas.'
+reason: 'Tabla de los libros y estudio 3: Roma, c. 60-61; Perspicacia: ya avanzado el primer encierro (Flm 22). Orden
+  2833: Onésimo la llevó con Tíquico (2834; Flm 12), como Colosenses (2832); ninguna fuente ordena ambas cartas.'
+sources:
+- filemon-1
+- tnm-tabla
+- si-3
+- it-filemon-carta
+- it-filemon
+- it-onesimo
+links:
+- title: Filemón 1 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Filem%C3%B3n/1/
+  type: bible
+- title: 'Perspicacia: «Filemón, Carta a»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Filem%C3%B3n-Carta-a/
+  type: perspicacia
+search: Pablo escribe carta Filemón Roma
+checked_on: '2026-10-14'
+status: verified

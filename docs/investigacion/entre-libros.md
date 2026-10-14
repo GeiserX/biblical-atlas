@@ -213,18 +213,29 @@ Los campos, los tipos de relación y sus palabras se nombran como en el esquema 
 - **El mes del pacto de la Ley.** Gálatas corrigió el resumen de `pacto-de-la-ley`: los 430 años se cumplieron el día del éxodo, y el pacto llegó en el tercer mes (Éx 19:1). Éxodo 19 o 24 puede darle `date.detail` con `month: sivan`.
 - **Sara e Ismael en Gál 4.** El texto no los nombra, solo las notas: van en `mentions` y sus fichas no citan Gálatas 4. Isaac, Agar y Abrahán sí se nombran.
 
-## Para Filemón (desde Efesios y Colosenses)
+## Para Colosenses (si se relee, desde Filemón)
 
-- **El orden en Roma.** En la serie `hechos`, `pablo-escribe-efesios` lleva el 2831, `pablo-escribe-colosenses` el 2832 y el viaje de Tíquico el 2834. El suceso de escribir Filemón, que salió con Tíquico y Onésimo, usa el 2833. Filipenses tomó el 2835, el 2839 y el 2840. `epafras-informa-a-pablo-en-roma` (c. 59-61) comparte el 2831 con Efesios (c. 60-61): `build.py` ordena primero por fecha, así que ese número solo lo pone tras `pablo-predica-dos-anos-en-roma` (2830) y antes de `epafrodito-lleva-a-pablo-el-regalo-de-filipos` (2835), que tienen su misma fecha.
-- **Epafras (Flm 23).** `epafras/accompanies/pablo` ya cita Filemón. Colosenses le dio `epafras/lived_in/roma` y su clave `1200001379`; Flm 23 añade `filemon-1` a esa relación con un `anadir`.
-- **Claves y Arquipo.** Colosenses puso la clave `perspicacia` de `onesimo`, `filemon`, `demas` y `arquipo`, y corrigió la relación de Arquipo con Filemón, que decía «quizás hijo» al revés: pasó a «quizás padre», hoy `kin` con la palabra `father` y deducida (Perspicacia «Filemón», párr. 2). Un cambio posterior a las relaciones de `arquipo` parte de esa lista.
-- **Colaboradores en Roma.** Col 4:11 llama colaboradores a Aristarco y a Marcos, y Flm 24 añade a Demas y a Lucas. Colosenses cambió las listas enteras de relaciones de `aristarco` y `juan-marcos` (su `accompanies` con `pablo` de Roma lleva la palabra `fellow_worker`) y la de `lucas`, cuya relación de 56-61 cita ya `colosenses-4`. Filemón hace lo mismo con `demas` (60-61) y con esa relación de `lucas`, que suma `filemon-1` y `fellow_worker`, partiendo de las listas de hoy. Un `anadir` no sirve: `apply.py` junta la relación con la primera del mismo tipo y la misma persona.
-- **Personas que ya existen.** `jesus-justo` (clave `1200002450#4`) y `ninfa` (`1200003284`) los creó Colosenses. Apfia (Flm 2) no tiene ficha; cuando exista, puede ir en `mentions` del tramo 17 de Colosenses 4, cuya nota la nombra.
-- **La carta a Laodicea (Col 4:16).** No es un suceso: el texto no dice cuándo ni desde dónde la escribió Pablo, y `validate.py` (`pablo_en_su_sitio`) no acepta un suceso de Pablo en un sitio donde no estaba. Queda como mención en la nota del tramo 15-16, sin suceso, hasta que una fuente diga desde dónde la escribió Pablo.
+- **Apfia.** `apfia` (clave `1200000313`) existe desde Flm 2. La nota de Col 4:17 la nombra junto a Filemón y Arquipo, y el tramo 17 ya pone a `filemon` en `mentions`: si se reabre Colosenses 4, ese tramo puede poner también `person:apfia`.
+- **Epafras, compañero de prisión.** `epafras/accompanies/pablo` (c. 60-61) lleva ahora el texto «compañero de prisión» (Flm 23), que ya está en `outside` del vocabulario. Su clave no cambia, así que la cita del tramo 12-13 sigue valiendo.
 
-## Para Filemón y Hebreos (desde Filipenses)
+## Para Efesios, Filipenses y Colosenses (si se releen, desde Filemón)
 
-- **Timoteo en Roma.** `timoteo/lived_in/roma`, c. 60-61, deducida de la nota de Flp 1:1 y de Perspicacia «Timoteo», párr. 5, que lo pone en el saludo de Filipenses, Colosenses y Filemón, ya está en la ficha, y Col 1:1 le añadió `colosenses-1`. Flm 1 añade `filemon-1` a sus fuentes con un `anadir`, sin crear otra.
+- **Los sucesos de escritura.** `pablo-escribe-filemon` lleva `type: writing` y `roles: {pablo: wrote}`, como pide la sección 6 de `versiculos.md` y como 1 Timoteo y 2 Tesalonicenses. `pablo-escribe-efesios`, `pablo-escribe-filipenses` y `pablo-escribe-colosenses` aún no los llevan, igual que los de Romanos, 1 y 2 Corintios y Gálatas: quien reabra esos libros se los pone con un `cambiar` (`antes: null`), o un cambio único para todos.
+- **El orden en Roma.** En la serie `hechos`, `onesimo-se-hace-cristiano-en-roma` (c. 59-61) comparte el 2831 con Efesios y con el informe de Epafras, y `pablo-escribe-filemon` usa el 2833: antes del viaje de Tíquico (2834), en el que Onésimo llevó la carta, y junto a Colosenses (2832). Ninguna fuente dice cuál de las dos cartas se escribió antes.
+
+## Para 2 Timoteo (desde Filemón)
+
+- **Demas y Lucas.** `demas/accompanies/pablo` (c. 60-61) y `lucas/accompanies/pablo` de 56-61 llevan ya la palabra `fellow_worker` y citan `filemon-1` (Flm 24), por un `cambiar` de la lista entera en `data/_proposals/filemon.json`. Las relaciones de c. 65 (2Ti 4:10, 11) no cambian; un cambio posterior a esas listas parte de ellas.
+- **Pablo en Roma.** El tramo 1-3 de Filemón 1 cita `relation:pablo/lived_in/roma`, la única forma válida mientras Pablo tenga una sola relación `lived_in` con Roma. 2 Timoteo (PR 157) crea la de 65 y cambia esa cita a `@59` en Hechos, Efesios, Filipenses y Colosenses, pero no en Filemón. La rama que se integre segunda cambia ese tramo a `relation:pablo/lived_in/roma@59` y vuelve a validar; si se integra antes 2 Timoteo, el cambio va en `biblia-filemon`.
+
+## Para el vocabulario (desde Filemón)
+
+- **«Compañero de armas» (Flm 2).** Pablo llama así a Arquipo, y la nota de estudio ve en ello lo unidos que estaban y lo fiel que le era. Ninguna palabra de `accompanies` lo dice y `outside` no tiene el texto, así que la relación no se escribió y Filemón 1 sigue `pending`. Está lista para entrar cuando `outside` reciba el texto en un cambio revisado: en `data/people/arquipo.yaml`, `type: accompanies`, `person: pablo`, `caption` e `inverse_caption` «compañero de armas», fecha c. 60-61 (`anchored`, como la carta), `inferred: false`, `sources` `filemon-1`, `it-arquipo` y `tnm-tabla`, y `reason` con Flm 2 y su nota. El tramo 1-3 la cita como `relation:arquipo/accompanies/pablo` y el capítulo pasa a `complete`.
+- **Epafrodito (Flp 2:25).** El texto le da los dos títulos, colaborador y compañero de armas. Filipenses escribió `fellow_worker` y dejó el segundo en la `reason`. Si el texto entra en `outside`, Filipenses 2 decide si Epafrodito lleva también esa relación, con la misma respuesta que Arquipo.
+- **Anfitrión de una congregación (Flm 2).** La congregación se reúne en casa de Filemón. `host` es de persona a persona y una congregación no tiene ficha, así que queda en el resumen de `filemon`. Si el vocabulario lo recoge, cita Flm 2 (y Ro 16:5, Col 4:15, 1Co 16:19 para Priscila y Áquila y Ninfa).
+
+## Para Hebreos (desde Filipenses)
+
 - **Colaboradores de Pablo.** Cuando el texto llama a alguien colaborador de Pablo, su `accompanies` lleva la palabra `fellow_worker`: Epafrodito (Flp 2:25) y Clemente (Flp 4:3). Evodia y Síntique (Flp 4:3) llevan `caption: colaboradora`, porque el vocabulario no tiene palabra femenina. Desde 1 Timoteo, `timoteo/accompanies/pablo` (c. 49-65) también lleva `fellow_worker`, porque Ro 16:21 lo llama colaborador. «Como un hijo con su padre» (Flp 2:22) es una comparación, no parentesco.
 - **Timoteo preso.** Perspicacia «Timoteo», párr. 5, dice que parece que estuvo preso en Roma entre Filipenses y Hebreos (Flp 2:19; Heb 13:23). Flp 2:19-23 solo cuenta que Pablo pensaba enviarlo a Filipos, sin suceso; Hebreos decide si su liberación es un suceso.
 
@@ -234,7 +245,7 @@ Los campos, los tipos de relación y sus palabras se nombran como en el esquema 
 
 ## Para Hechos (si se relee, desde Efesios)
 
-- **Las cartas escritas en Roma.** El tramo Hch 28:30, 31 ya nombra `letter:efesios` y `letter:colosenses` en `mentions`; puede nombrar también `pablo-escribe-efesios`, `pablo-escribe-colosenses` y `epafras-informa-a-pablo-en-roma` (c. 59-61, durante esos dos años).
+- **Las cartas escritas en Roma.** El tramo Hch 28:30, 31 ya nombra `letter:efesios` y `letter:colosenses` en `mentions`; puede nombrar también `pablo-escribe-efesios`, `pablo-escribe-colosenses` y `epafras-informa-a-pablo-en-roma` (c. 59-61, durante esos dos años). Desde Filemón, también `letter:filemon`, `pablo-escribe-filemon` y `onesimo-se-hace-cristiano-en-roma`.
 
 ## Para Hechos (si se relee, desde 2 Tesalonicenses)
 
