@@ -15,8 +15,8 @@ distinct_from:
 - juan-apostol
 - juan-gobernante-judio
 - jonas-padre-de-pedro
-summary: Hijo de María de Jerusalén y primo de Bernabé; escribió el Evangelio de Marcos. Quizá fue el joven que huyó desnudo
-  de Getsemaní. Dejó el primer viaje en Perga y volvió a Jerusalén.
+summary: Hijo de María de Jerusalén y primo de Bernabé; escribió el Evangelio de Marcos. Dejó el primer viaje en Perga y volvió
+  a Jerusalén; luego estuvo con Pablo en Roma y con Pedro en Babilonia. Quizá huyó desnudo de Getsemaní.
 reason: Perspicacia «Marcos» lo identifica con el Juan Marcos de Hechos y con el Juan de Hch 13:5, 13, y ve probable que fuera
   el joven de Mr 14:51, 52.
 sources:
@@ -26,6 +26,7 @@ sources:
 - marcos-14
 - hechos-12
 - colosenses-4
+- 1-pedro-5
 links:
 - title: 'Perspicacia: «Marcos»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Marcos/
@@ -46,7 +47,11 @@ history:
   change: La relación con Pablo de 60-61 pasa a decir colaborador en los dos sentidos, como lo llama Col 4:11; el resto de
     la lista no cambia.
   source: colosenses-4
-checked_on: '2026-10-02'
+- date: '2026-10-14'
+  change: El resumen acababa en Perga. Perspicacia «Marcos» lo pone luego con Pablo en Roma y con Pedro en Babilonia. Sigue
+    la vuelta a Jerusalén (Hch 13:13); la frase de Getsemaní se acorta por las 40 palabras.
+  source: 1-pedro-5
+checked_on: '2026-10-14'
 status: verified
 relations:
 - type: accompanies

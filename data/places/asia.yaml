@@ -23,6 +23,7 @@ sources:
 - openbible-geo
 - hch-20
 - 2-corintios-1
+- 1-pedro-1
 links:
 - title: 'Perspicacia: «Asia»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Asia/
@@ -30,5 +31,5 @@ links:
 - title: Hechos 19 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/hechos/19/
   type: bible
-checked_on: '2026-09-29'
+checked_on: '2026-10-14'
 status: verified

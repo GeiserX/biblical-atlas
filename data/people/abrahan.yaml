@@ -141,9 +141,10 @@ relations:
   - genesis-20
   - genesis-23
   - genesis-49
+  - 1-pedro-3
   reason: 'Gé 11:29: la esposa de Abrán se llamaba Sarái. Gé 20:12: era hija de su padre, pero no de su madre. Perspicacia
     «Sara» dice que se casaron en Ur.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-14'
   status: verified
 - type: kin
   person: nacor-hijo-de-tare
@@ -260,5 +261,5 @@ history:
   change: 'La relación con Queturá pasa de esposa a esposa secundaria: 1Cr 1:32 la llama concubina y Perspicacia «Queturá»
     dice que fue esposa secundaria. Se añade 1-cronicas-1 a las relaciones que el capítulo repite.'
   source: 1-cronicas-1
-checked_on: '2026-10-12'
+checked_on: '2026-10-14'
 status: verified
