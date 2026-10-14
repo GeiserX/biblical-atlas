@@ -142,10 +142,16 @@ function marcas() {
 }
 
 /** Lo que encuadra la parada i: en la primera, todas las paradas del recorrido; en las demás, la parada con la de antes
-    y la de después, para que se vea de dónde viene y adónde va aunque el mapa sea bajo. */
+    y la de después, para que se vea de dónde viene y adónde va aunque el mapa sea bajo. En la primera no cuenta un lugar
+    de ubicación desconocida (sus candidatos) de otra parada: los tres de Emaús, al oeste, alejaban de Jerusalén «La
+    última semana». Se encuadran al llegar a su parada o a la de al lado. */
 function encuadreParada(rc, i) {
   const ks = i === 0 ? rc.paradas.map((_, k) => k) : [i - 1, i, i + 1];
-  return [...new Set(ks.flatMap((k) => (rc.paradas[k] ? lugaresParada(rc.paradas[k]) : [])))];
+  const ids = [...new Set(ks.flatMap((k) => (rc.paradas[k] ? lugaresParada(rc.paradas[k]) : [])))];
+  if (i !== 0) return ids;
+  const propios = new Set(lugaresParada(rc.paradas[0]));
+  const conocidos = ids.filter((id) => propios.has(id) || !BE.candidatosDe?.(BE.L[id]));
+  return conocidos.length ? conocidos : ids;
 }
 /** Va a la parada i: cursor, mapa (su lugar resaltado y, si encuadrar, encuadrado con sus vecinas), ficha y dirección. */
 function irA(i, { historia = true, encuadrar = true } = {}) {
@@ -161,7 +167,9 @@ function irA(i, { historia = true, encuadrar = true } = {}) {
   const ls = lugaresParada(p);
   R.abierta = false;  // la tarjeta del móvil se pliega al cambiar de parada: el encuadre cuenta solo su línea
   vistaSobreMapa();   // antes de encuadrar: el encuadre deja libre el sitio de esta tarjeta
-  BE.mapa.resaltar(ls.length ? ls : null);
+  // La parada de antes y la de después se nombran siempre, detrás de esta (mapa.js, vecinosEnFoco).
+  const vecinos = [i - 1, i + 1].flatMap((k) => (rc.paradas[k] ? lugaresParada(rc.paradas[k]) : []));
+  BE.mapa.resaltar(ls.length ? ls : null, vecinos);
   if (encuadrar) { const caja = encuadreParada(rc, i); if (caja.length) BE.mapa.encuadrar(caja); }
   BE.pintarPanel(true);
   marcas();
@@ -335,14 +343,20 @@ function iniciar() {
     if (ir) { parar(); irA(+ir.dataset.recorridoIr); return; }
     if (e.target.closest('[data-recorrido-abrir]')) plegar(!R.abierta);
   });
+  // Con el foco en la tarjeta que flota sobre el mapa, o en la del recorrido en la ficha (la parada, su pregunta, sus
+  // botones), ← y → pasan de parada, no mueven la fecha. Con Alt, ⌘ o Ctrl son del navegador; con Mayúsculas, el salto de
+  // siempre. Fuera de ellas (las migas, «Salir y explorar», «Por qué lo decimos»), las flechas mueven la fecha.
+  const flechaParada = (e) => {
+    if ((e.key !== 'ArrowLeft' && e.key !== 'ArrowRight') || !R.id || E.sel?.tipo !== 'recorrido' || E.sel.id !== R.id || e.altKey || e.metaKey || e.ctrlKey || e.shiftKey) return;
+    if (e.target.matches?.('input, textarea, select, [contenteditable="true"]')) return;
+    e.preventDefault(); e.stopPropagation();
+    parar(); irA(R.paso + (e.key === 'ArrowRight' ? 1 : -1));
+  };
   vista.addEventListener('keydown', (e) => {
     if (e.key === 'Escape' && R.abierta) { e.stopPropagation(); plegar(false); vista.querySelector('[data-recorrido-abrir]')?.focus(); }
-    // Con el foco en la tarjeta, ← y → pasan de parada, no mueven la fecha. Con Alt, ⌘ o Ctrl son del navegador.
-    if ((e.key === 'ArrowLeft' || e.key === 'ArrowRight') && R.id && !e.altKey && !e.metaKey && !e.ctrlKey && !e.shiftKey) {
-      e.preventDefault(); e.stopPropagation();
-      parar(); irA(R.paso + (e.key === 'ArrowRight' ? 1 : -1));
-    }
+    flechaParada(e);
   });
+  document.getElementById('panel-cuerpo').addEventListener('keydown', (e) => { if (e.target.closest?.('.recorrido, .pregunta, .recorrido-nav, .recorrido-herramientas')) flechaParada(e); });
   document.addEventListener('click', (e) => { if (e.target.closest('[data-presentar]')) presentar(!raiz.classList.contains('be-presentando')); });
   // Deslizar el dedo sobre la ficha en el móvil pasa de parada.
   let x0 = null;

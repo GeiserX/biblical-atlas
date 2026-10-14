@@ -34,6 +34,14 @@ passages:
 - Jer 1:3
 - Jer 52:29
 - 1Cr 6:15
+- Lam 1:3-5
+- Lam 1:10
+- Lam 1:13
+- Lam 1:15
+- Lam 2:1-9
+- Lam 2:20-22
+- Lam 4:1
+- Lam 4:11
 summary: Un mes después de la toma llega Nebuzaradán. Queman el templo, el palacio y las casas, derriban las murallas, se
   llevan el cobre y los utensilios del templo y deportan a Babilonia a casi todos los que quedaban.
 reason: 'Estudio 3, párr. 6 y cuadro (607, mes quinto); Perspicacia «Nebuzaradán»: llegó el 7 de ab y el día 10 quemó el templo
@@ -53,6 +61,13 @@ sources:
 - jeremias-39
 - it-nabucodonosor
 - 1-cronicas-6
+- lamentaciones-1
+- w07-lamentaciones
+- w88-lamentaciones
+- lamentaciones-2
+- it-sion
+- it-tienda
+- si-lamentaciones
 alternatives:
 - date:
     from: -586
@@ -106,5 +121,5 @@ history:
 narrative_order:
   series: 2-reyes
   order: 25008
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified

@@ -13,20 +13,26 @@
 
 /* Lugares */
 .marca-lugar, .marca-region { border: 0; padding: 0; background: none; cursor: pointer; }
-.marca-lugar { width: 10px; height: 10px; }
+.marca-region { min-height: 24px; }
+/* El punto mide 10 px (7 el menor, 14 el de ahora), pero el botón mide al menos 24 × 24 (WCAG 2.5.8): un borde transparente lo
+   rodea y recibe el clic; el nombre escondido sale solo con el ratón sobre el punto. El punto y su nombre se colocan desde
+   dentro del borde, así que no se mueven. Igual los hallazgos y los viajeros; los nombres de región y de mar o río crecen
+   hasta 24 alrededor de su centro. Donde dos zonas se pisan, el clic va a lo dibujado o al punto más cercano (mapa.js,
+   marcaCercana). */
+.marca-lugar { --punto: 10px; --borde: 7px; box-sizing: content-box; width: var(--punto); height: var(--punto); border: var(--borde) solid transparent; }
 .marca-lugar .punto { position: absolute; inset: 0; border-radius: 50%; background: var(--surface); border: 2px solid var(--ink-2); box-shadow: 0 0 0 1.5px color-mix(in srgb, var(--halo) 70%, transparent); }
 .marca-lugar .etiqueta { position: absolute; left: 14px; top: 50%; transform: translateY(-50%); display: flex; flex-direction: column; text-align: left; line-height: 1; white-space: nowrap;
   font-family: var(--font-serif); font-size: 15.5px; font-weight: 600; color: var(--map-label);
   text-shadow: 0 0 2px var(--map-label-halo), 0 0 3px var(--map-label-halo), 0 0 6px var(--map-label-halo), 0 0 10px var(--map-label-halo); }
 .marca-lugar .nombre-b { font-family: var(--font-serif); font-style: italic; font-size: 12.5px; font-weight: 500; color: var(--ink-3); margin-top: 2px; }
-.marca-lugar.menor { width: 7px; height: 7px; }
+.marca-lugar.menor { --punto: 7px; --borde: 9px; }   /* 25 px: Chrome redondea un borde de 8,5 px a 8 */
 .marca-lugar.menor .punto { border-width: 1.5px; border-color: var(--ink-3); }
 .marca-lugar.menor .etiqueta { font-size: 13px; font-weight: 500; color: var(--ink-2); left: 11px; }
 .marca-lugar.de-carta .punto { border-color: var(--gold); background: var(--gold-wash); }
 .marca-lugar.futuro .punto { border: 2px dashed var(--accent); background: var(--surface); }
 .marca-lugar.futuro .etiqueta { color: var(--ink-2); font-weight: 500; }
 .marca-lugar.visitado .punto { background: var(--accent); border-color: var(--halo); box-shadow: 0 0 0 1.5px var(--accent); }
-.marca-lugar.es-actual { width: 14px; height: 14px; }
+.marca-lugar.es-actual { --punto: 14px; --borde: 5px; }
 .marca-lugar.es-actual .etiqueta { font-size: 20px; left: 22px; color: var(--ink); }
 .marca-lugar.resaltado .punto { box-shadow: 0 0 0 2px var(--halo), 0 0 0 4px var(--gold); }
 .marca-lugar.atenuado { opacity: .38; }
@@ -36,13 +42,19 @@
 .marca-lugar.menor.rotulo-izq .etiqueta { left: auto; right: 11px; }
 .marca-lugar.es-actual.rotulo-izq .etiqueta { left: auto; right: 22px; }
 .marca-lugar.sin-etiqueta .etiqueta, .marca-region.sin-etiqueta .region-texto { visibility: hidden; }
-.marca-lugar:hover .etiqueta { visibility: visible; color: var(--ink); }
-.marca-lugar:hover { z-index: 3; }
-.marca-lugar.resaltado, .marca-lugar.es-actual { z-index: 2; }   /* lo seleccionado queda encima de burbujas y candidatos */
-/* Con ratón, el punto de lo seleccionado se pulsa en un círculo de 24 px a cualquier zoom; con el dedo, 44 (tactil.css). */
-@media (pointer: fine) {
-  .marca-lugar.resaltado::after { content: ""; position: absolute; left: 50%; top: 50%; width: 24px; height: 24px; margin: -12px 0 0 -12px; border-radius: 50%; }
+/* El ratón sobre el punto o el nombre (al-raton, mapa.js), no sobre la zona. Con el dedo, el :hover que deja un toque. */
+.marca-lugar.al-raton .etiqueta { visibility: visible; color: var(--ink); }
+.marca-lugar.al-raton { z-index: 3; }
+@media (hover: none) {
+  .marca-lugar:hover .etiqueta { visibility: visible; color: var(--ink); }
+  .marca-lugar:hover { z-index: 3; }
 }
+.marca-lugar.resaltado, .marca-lugar.es-actual { z-index: 2; }   /* lo seleccionado queda encima de burbujas y candidatos */
+/* El anillo del foco rodea lo dibujado, a 2 px como en el resto del sitio: se mete hacia dentro el borde transparente. */
+.marca-lugar:focus-visible { outline-offset: calc(2px - var(--borde)); }
+.cand:focus-visible { outline-offset: -3px; }
+.viajero:focus-visible { outline-offset: -4px; }
+.marca-hallazgo:focus-visible { outline-offset: -5px; }
 .region-texto { display: block; font-family: var(--font-serif); font-size: 14px; font-weight: 500; letter-spacing: .22em; text-transform: uppercase; color: var(--map-region); white-space: nowrap;
   text-shadow: 0 0 3px var(--map-label-halo), 0 0 8px var(--map-label-halo); opacity: .9; }
 .marca-region.atenuado { opacity: .4; }
@@ -241,17 +253,23 @@ ol.paradas li:first-child .be-row { border-top: 0; }
 .marca-lugar--monte .punto { border-radius: 0; border: 0; box-shadow: none; background: var(--ink-2); clip-path: polygon(50% 0, 100% 100%, 0 100%); }
 .marca-lugar--difuso .punto { inset: -9px; border: 0; background: radial-gradient(circle, rgba(122, 92, 142, .45), rgba(122, 92, 142, 0) 70%); box-shadow: none; }
 .marca-lugar--difuso .nombre-b { color: var(--zone-ink); font-style: italic; }
-.marca-agua { border: 0; padding: 0; background: none; cursor: pointer; width: 1px; height: 1px; }
+.marca-agua { border: 0; padding: 0; background: none; cursor: pointer; width: 24px; height: 24px; }
 .marca-agua .etiqueta { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); display: flex; flex-direction: column; align-items: center; white-space: nowrap; line-height: 1.05;
   font: italic 500 15px var(--font-serif); color: var(--map-sea-label); letter-spacing: .06em; text-shadow: 0 0 3px var(--map-sea-halo), 0 0 8px var(--map-sea-halo); }
 .marca-agua .nombre-b { font-size: 11.5px; letter-spacing: 0; opacity: .85; }
 .marca-agua.sin-etiqueta .etiqueta { visibility: hidden; }
+/* Un nombre de mar, río o región que no se ve no recibe clics: su botón de 24 px sería una diana invisible (y su ::after
+   de 44, con el dedo). Sigue en el orden del teclado. */
+.marca-agua.sin-etiqueta, .marca-region.sin-etiqueta { pointer-events: none; }
 .marca-agua.resaltado .etiqueta { color: #2c4f5a; font-weight: 700; }
+/* En el modo reunión, el mismo realce pero claro: #2c4f5a sobre el halo oscuro se quedaba en 2,05:1. */
+.be-reunion .marca-agua.resaltado .etiqueta { color: #d0e6ec; }
 .grupo-lugares { min-width: 24px; height: 24px; padding: 0 6px; border-radius: var(--r-pill); border: 2px solid var(--halo); background: var(--ink-2); color: var(--on-ink); font: 700 11.5px var(--font-sans); cursor: zoom-in; box-shadow: var(--shadow-2); }
 .grupo-lugares:hover { background: var(--ink); }
 
 /* Candidatos de ubicación: forma además de color (D-09) */
-.cand { width: 14px; height: 14px; border: 0; padding: 0; background: none; cursor: pointer; }
+/* El punto de un candidato mide 14 px; un borde transparente de 5 lo lleva a 24 × 24 sin mover el punto ni su nombre. */
+.cand { box-sizing: content-box; width: 14px; height: 14px; border: 5px solid transparent; padding: 0; background: none; cursor: pointer; }
 .cand-punto { position: absolute; inset: 0; border-radius: 50%; border: 2.5px solid var(--cand); background: var(--surface); box-shadow: 0 0 0 1.5px color-mix(in srgb, var(--halo) 80%, transparent); }
 .cand--favorecido_nivel_1 .cand-punto, .cand--seguro .cand-punto { background: radial-gradient(circle, var(--cand) 0 35%, var(--surface) 40%); }
 .cand--tradicion .cand-punto { border-style: double; border-width: 4px; }
@@ -265,22 +283,25 @@ ol.paradas li:first-child .be-row { border-top: 0; }
 .cand-rotulo small { color: var(--ink-3); font-size: var(--fs-2xs); }
 .cand--descartado_nivel_1 .cand-rotulo b { text-decoration: line-through; text-decoration-thickness: 1px; }
 .cand.sin-etiqueta .cand-rotulo { visibility: hidden; }
-.cand:hover .cand-rotulo { visibility: visible; z-index: 3; }
+.cand.al-raton .cand-rotulo { visibility: visible; z-index: 3; }
+@media (hover: none) { .cand:hover .cand-rotulo { visibility: visible; z-index: 3; } }
 .cand--foco { z-index: 4; }
 /* Junto a Jerusalén (u otra ciudad mayor), el candidato de un lugar no elegido espera a que el zoom lo separe de ella. */
 .cand.cand--junto, .cand.cand--junto .cand-rotulo { visibility: hidden; pointer-events: none; }
 .cand--foco .cand-punto { box-shadow: 0 0 0 3px var(--halo), 0 0 0 5px var(--cand); }
-.rotulo-zona { cursor: pointer; }
+/* 24 px de alto como mínimo (WCAG 2.5.8): el texto sigue en el centro, y mapa.js baja el ancla 1 px para que no se mueva. */
+.rotulo-zona { cursor: pointer; min-height: 24px; }
 .rotulo-zona.sin-etiqueta { visibility: hidden; }
 .rotulo-zona--foco { background: #5d4674; color: #fff; border-color: #5d4674; z-index: 2; }   /* encima de las burbujas, como .marca-lugar.resaltado */
 .cand--del-foco { z-index: 2; }
 
 /* Hallazgos y otros viajeros */
-.marca-hallazgo { display: inline-flex; align-items: center; gap: 2px; padding: 0; border: 0; background: none; cursor: pointer; }
-.marca-hallazgo span { width: 11px; height: 11px; background: var(--node-hallazgo); border: 2px solid var(--halo); border-radius: 2px; box-shadow: 0 0 0 1px var(--node-hallazgo); }
-.marca-hallazgo b { font: 700 10px var(--font-sans); color: color-mix(in srgb, var(--node-hallazgo), #fff var(--aclarar)); text-shadow: 0 0 3px var(--halo), 0 0 3px var(--halo); }
-.marca-hallazgo--sel span { box-shadow: 0 0 0 1px var(--node-hallazgo), 0 0 0 4px color-mix(in srgb, var(--node-hallazgo) 30%, transparent); }
-.viajero { width: 12px; height: 12px; border: 0; padding: 0; background: none; cursor: pointer; }
+.marca-hallazgo { display: flex; box-sizing: content-box; padding: 0; border: 7px solid transparent; background: none; cursor: pointer; }
+.hallazgo-dibujo { display: inline-flex; align-items: center; gap: 2px; }
+.hallazgo-dibujo > span { width: 11px; height: 11px; background: var(--node-hallazgo); border: 2px solid var(--halo); border-radius: 2px; box-shadow: 0 0 0 1px var(--node-hallazgo); }
+.hallazgo-dibujo > b { font: 700 10px var(--font-sans); color: color-mix(in srgb, var(--node-hallazgo), #fff var(--aclarar)); text-shadow: 0 0 3px var(--halo), 0 0 3px var(--halo); }
+.marca-hallazgo--sel .hallazgo-dibujo > span { box-shadow: 0 0 0 1px var(--node-hallazgo), 0 0 0 4px color-mix(in srgb, var(--node-hallazgo) 30%, transparent); }
+.viajero { box-sizing: content-box; width: 12px; height: 12px; border: 6px solid transparent; padding: 0; background: none; cursor: pointer; }
 .viajero-punto { position: absolute; inset: 0; border-radius: 50%; background: var(--accent); border: 2.5px solid var(--halo); box-shadow: 0 0 0 1.5px var(--accent); }
 .viajero.estimada .viajero-punto { outline: 2px dashed var(--accent); outline-offset: 4px; }
 .viajero-rotulo { position: absolute; left: 16px; top: -14px; font: 700 11px/1 var(--font-sans); letter-spacing: .04em; text-transform: uppercase; color: color-mix(in srgb, var(--accent), #fff var(--aclarar)); white-space: nowrap; text-shadow: 0 0 2px var(--halo), 0 0 4px var(--halo); }

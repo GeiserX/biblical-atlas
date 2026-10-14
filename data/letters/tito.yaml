@@ -23,6 +23,8 @@ people:
 - tito
 - tiquico
 - apolos
+- artemas
+- zenas
 context_origin:
   summary: Tras salir libre de su primera prisión y antes de la última, Pablo estuvo en Creta con Tito.
   sources:
@@ -46,5 +48,5 @@ links:
 - title: Tito 1 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/tito/1/
   type: bible
-checked_on: '2026-09-28'
+checked_on: '2026-10-14'
 status: verified
