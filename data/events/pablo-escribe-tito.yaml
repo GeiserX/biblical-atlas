@@ -1,0 +1,53 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: pablo-escribe-tito
+title: Pablo escribe la carta a Tito
+date:
+  from: 61
+  to: 64
+  precision: range
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 61-64 e.c.
+narrative_order:
+  series: hechos
+  order: 2851
+places:
+- macedonia
+- creta
+people:
+- pablo
+- tito
+present: []
+type: writing
+roles:
+  pablo: wrote
+passages:
+- Tit 1:1-5
+- Tit 3:12-15
+summary: 'Libre ya de su primer encierro, Pablo escribe a Tito, al que dejó en Creta: qué hombres nombrar ancianos, cómo frenar
+  a los rebeldes y qué enseñar a mayores, jóvenes y esclavos.'
+reason: 'Tabla de los libros: c. 61-64, escrita en «Macedonia (?)», así que present queda vacío. Perspicacia «Tito, Carta
+  a»: Pablo estuvo en Creta tras su liberación y quizá envió la carta desde Macedonia.'
+sources:
+- tito-1
+- tito-2
+- tnm-tabla
+- si-3
+- it-tito
+- it-tito-persona
+- tito-3
+- it-nicopolis
+links:
+- title: Tito 1 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/tito/1/
+  type: bible
+- title: 'Perspicacia: «Tito, Carta a»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Tito-Carta-a/
+  type: perspicacia
+search: carta a Tito
+note: 'Orden 2851 de la serie hechos, elegido por nosotros: ninguna fuente ordena esta carta frente a 1 Timoteo (2850), de
+  las mismas fechas según Perspicacia «Tito, Carta a», ni frente a Troas (2852) o Mileto (2853),
+  de 2Ti 4:13, 20.'
+checked_on: '2026-10-14'
+status: verified

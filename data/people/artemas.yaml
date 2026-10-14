@@ -1,0 +1,52 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: artemas
+name: Ártemas
+names:
+- name: Ártemas
+perspicacia: '1200000390'
+date:
+  from: 61
+  to: 64
+  precision: range
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 61-64 e.c.
+summary: Compañero de Pablo, nombrado solo en Tit 3:12. Hacia 61-64 Pablo pensó mandarlo a Creta, o a Tíquico, quizá para
+  relevar a Tito y que este pudiera ir a verlo a Nicópolis.
+reason: 'Perspicacia «Ártemas» y la nota de estudio de Tit 3:12: que Pablo lo pusiera a la par de Tíquico muestra cuánto confiaba
+  en él. No se sabe cuándo ni dónde se conocieron. Fecha de la carta: Tabla de los libros.'
+sources:
+- it-artemas
+- tito-3
+- tnm-tabla
+links:
+- title: 'Perspicacia: «Ártemas»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/%C3%81rtemas/
+  type: perspicacia
+- title: Tito 3 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/tito/3/
+  type: bible
+relations:
+- type: accompanies
+  person: pablo
+  word: companion
+  date:
+    from: 61
+    to: 64
+    precision: range
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 61-64 e.c.
+  inferred: true
+  sources:
+  - it-artemas
+  - tito-3
+  - tnm-tabla
+  reason: 'Tit 3:12: Pablo piensa enviarlo a Creta, señal de que estaba a su lado. Perspicacia «Ártemas» y la nota de estudio
+    lo llaman su compañero; la carta es de c. 61-64 (Tabla de los libros).'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
