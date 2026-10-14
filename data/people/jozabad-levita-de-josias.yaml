@@ -1,0 +1,34 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jozabad-levita-de-josias
+name: Jozabad
+names:
+- name: Jozabad
+perspicacia: 1200002532#5
+summary: Jefe levita del reinado de Josías. Con los otros jefes de los levitas entregó ovejas, cabras y reses para la Pascua
+  que el rey celebró en su año 18.
+reason: Perspicacia «Jozabad», núm. 5; 2Cr 35:9, 18.
+sources:
+- it-jozabad
+- 2-cronicas-35
+links:
+- title: 'Perspicacia: «Jozabad»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jozabad/
+  type: perspicacia
+disambiguation: Jefe levita de la Pascua de Josías (2Cr 35:9; Perspicacia «Jozabad», núm. 5); no los guerreros que se unieron
+  a David ni los demás Jozabad.
+relations:
+- type: holds_office
+  office: leader
+  inferred: false
+  sources:
+  - 2-cronicas-35
+  reason: 2Cr 35:9 lo cuenta entre los jefes de los levitas.
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified
+distinct_from:
+- jozabad-de-manases-1
+- jozabad-de-manases-2
+- jozabad-el-guederatita
+- jozabad-comisionado-de-ezequias

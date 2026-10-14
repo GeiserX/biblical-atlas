@@ -7,6 +7,7 @@ perspicacia: '1200002156'
 disambiguation: Imná hijo de Hélem; no Imná, el primer hijo de Aser.
 distinct_from:
 - imna-hijo-de-aser
+- imna-padre-de-core
 summary: Aserita, hijo de Hélem; guerrero valiente y cabeza de una casa paterna.
 reason: Perspicacia «Imná»; 1Cr 7:35, 40.
 sources:
@@ -26,5 +27,5 @@ relations:
   reason: 1Cr 7:35 lo cuenta entre los hijos de Hélem.
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified

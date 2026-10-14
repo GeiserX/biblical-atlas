@@ -1,0 +1,38 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: los-edomitas-atacan-juda-en-dias-de-acaz
+title: Los edomitas atacan Judá en tiempos de Acaz
+date:
+  from: -761
+  to: -757
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 762 y c. 758 a.e.c. (tiempo narrativo: cuando Acaz pidió ayuda a Asiria)'
+narrative_order:
+  series: 2-cronicas
+  order: 28017
+places:
+- juda
+- edom
+people:
+- acaz
+present: []
+passages:
+- 2Cr 28:17
+summary: Mientras Acaz busca ayuda en Asiria, los edomitas vuelven a invadir Judá y se llevan cautivos.
+reason: '2Cr 28:16, 17; Perspicacia «Acaz», núm. 1: Edom atacó por el sudeste a la vez que Siria e Israel por el norte. En
+  tiempos de la petición a Asiria (acaz-soborna-a-tiglat-pileser).'
+sources:
+- 2-cronicas-28
+- it-acaz
+- tnm-a6-b
+links:
+- title: 'Perspicacia: «Acaz»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Acaz/
+  type: perspicacia
+- title: 2 Crónicas 28 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-Cr%C3%B3nicas/28/
+  type: bible
+checked_on: '2026-10-13'
+status: verified

@@ -115,6 +115,12 @@ names:
 - name: Puerta de Saléket
   note: Puerta al oeste del santuario, junto al camino principal que subía; allí hacían guardia Supim y Hosá (1Cr 26:16).
     Perspicacia «Saléket».
+- name: Puerta del Valle
+  note: En la esquina suroeste de la muralla, hacia el valle de Hinón. Uzías levantó una torre a su lado (2Cr 26:9). Perspicacia
+    «Puerta, paso de entrada».
+- name: Contrafuerte
+  note: Punto de la muralla donde Uzías puso otra torre (2Cr 26:9). Perspicacia «Jerusalén» cree que quizá estaba en el muro
+    oriental, cerca de los edificios reales.
 type: city
 lat: 31.776667
 lon: 35.234167
@@ -339,10 +345,42 @@ sources:
 - it-saleket
 - 1-cronicas-26
 - 1-cronicas-29
+- 2-cronicas-1
+- 2-cronicas-2
+- 2-cronicas-3
+- 2-cronicas-5
+- 2-cronicas-6
+- 2-cronicas-8
+- 2-cronicas-9
+- 2-cronicas-10
+- 2-cronicas-11
+- 2-cronicas-12
+- 2-cronicas-15
+- 2-cronicas-16
+- 2-cronicas-17
+- 2-cronicas-19
+- 2-cronicas-20
+- 2-cronicas-21
+- 2-cronicas-22
+- 2-cronicas-23
+- 2-cronicas-24
+- 2-cronicas-25
+- 2-cronicas-26
+- 2-cronicas-27
+- 2-cronicas-28
+- 2-cronicas-29
+- 2-cronicas-30
+- 2-cronicas-31
+- 2-cronicas-32
+- 2-cronicas-33
+- 2-cronicas-34
+- 2-cronicas-35
+- 2-cronicas-36
 - lamentaciones-1
 - lamentaciones-2
 - lamentaciones-4
 - lamentaciones-5
+- daniel-1
 - ezequiel-5
 - ezequiel-8
 - ezequiel-9
@@ -383,5 +421,5 @@ history:
 - date: '2026-09-29'
   change: «Sión» pasa a «Sion», como escribe la TNM (Sl 137:1; 2Sa 5:7). Perspicacia conserva la tilde.
   source: salmos-137
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified

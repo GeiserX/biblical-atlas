@@ -1,0 +1,35 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: azarias-anima-a-asa-a-buscar-a-jehova
+title: El profeta Azarías anima a Asá a buscar a Jehová
+type: speech
+date:
+  from: -962
+  to: -962
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 963 a.e.c.
+narrative_order:
+  series: 2-cronicas
+  order: 15001
+places:
+- juda
+people:
+- azarias-hijo-de-oded
+- asa
+present: []
+roles:
+  azarias-hijo-de-oded: spoke
+passages:
+- 2Cr 15:1-7
+summary: 'Con el espíritu de Dios, Azarías sale al paso de Asá: Jehová seguirá con Judá y Benjamín si lo buscan y los dejará
+  si lo abandonan. Recuerda tiempos de caos sin Dios y los anima a no aflojar.'
+reason: '2Cr 15:1-7; Perspicacia «Azarías», núm. 6, lo fecha en 963 a.e.c. El texto no dice dónde se encontraron: Judá, el
+  reino al que habla, enmarca el suceso y nadie queda situado.'
+sources:
+- 2-cronicas-15
+- it-azarias
+- it-asa
+checked_on: '2026-10-13'
+status: verified

@@ -1,0 +1,42 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: zacarias-consejero-de-uzias
+name: Zacarías
+names:
+- name: Zacarías
+perspicacia: 1200004681#13
+summary: Consejero del rey Uzías que lo instruyó en el temor de Dios. Mientras Uzías buscó a Jehová en sus días, le fue bien.
+  No es el profeta Zacarías, que vivió mucho después.
+reason: Perspicacia «Zacarías», núm. 13, y «Uzías», núm. 3, párr. 3; 2Cr 26:5.
+sources:
+- it-zacarias
+- it-uzias
+- 2-cronicas-26
+links:
+- title: 'Perspicacia: «Zacarías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zacar%C3%ADas/
+  type: perspicacia
+disambiguation: El que instruyó al rey Uzías (2Cr 26:5); Perspicacia «Uzías» lo separa del profeta, que vivió más tarde, y
+  no lo identifica con ningún otro Zacarías.
+distinct_from:
+- zacarias-abuelo-de-ezequias
+- zacarias-de-israel
+- zacarias-descendiente-de-isias
+- zacarias-el-rubenita
+- zacarias-hijo-de-hosa
+- zacarias-hijo-de-jeberekias
+- zacarias-hijo-de-jehoiada
+- zacarias-hijo-de-meselemias
+- zacarias-musico
+- zacarias-padre-de-ido
+- zacarias-padre-de-juan
+- zacarias-profeta
+- zacarias-trompetista
+- zeker
+- zacarias-principe-de-jehosafat
+- zacarias-hijo-de-benaya
+- zacarias-hijo-de-jehosafat
+- zacarias-levita-de-josias
+- zacarias-sacerdote-de-josias
+- zacarias-levita-de-ezequias
+checked_on: '2026-10-13'
+status: verified

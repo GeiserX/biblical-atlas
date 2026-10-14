@@ -1,0 +1,74 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: ezequias-organiza-las-contribuciones-del-templo
+title: Ezequías organiza el servicio del templo y recoge las contribuciones
+date:
+  from: -744
+  to: -744
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 745 a.e.c.
+narrative_order:
+  series: 2-cronicas
+  order: 31002
+  after: ezequias-quita-los-lugares-altos
+places:
+- monte-moria
+- jerusalen
+- juda
+people:
+- ezequias
+- azarias-hijo-de-johanan
+- conanias-de-tiempos-de-ezequias
+- simei-hermano-de-conanias
+- jehiel-comisionado-de-ezequias
+- azazias-comisionado-de-ezequias
+- nahat-comisionado-de-ezequias
+- asahel-comisionado-de-ezequias
+- jerimot-comisionado-de-ezequias
+- jozabad-comisionado-de-ezequias
+- eliel-comisionado-de-ezequias
+- ismakias
+- mahat-levita-de-ezequias
+- benaya-comisionado-de-ezequias
+- core-hijo-de-imna
+- eden-hijo-de-joa
+- miniamin-ayudante-de-core
+- jesua-ayudante-de-core
+- semaya-ayudante-de-core
+- amarias-ayudante-de-core
+- secanias-ayudante-de-core
+present:
+- ezequias
+- azarias-hijo-de-johanan
+- conanias-de-tiempos-de-ezequias
+- simei-hermano-de-conanias
+- jehiel-comisionado-de-ezequias
+- azazias-comisionado-de-ezequias
+- nahat-comisionado-de-ezequias
+- asahel-comisionado-de-ezequias
+- jerimot-comisionado-de-ezequias
+- jozabad-comisionado-de-ezequias
+- eliel-comisionado-de-ezequias
+- ismakias
+- mahat-levita-de-ezequias
+- benaya-comisionado-de-ezequias
+- core-hijo-de-imna
+passages:
+- 2Cr 31:2-19
+summary: Ezequías reparte a sacerdotes y levitas en sus turnos y pide al pueblo lo suyo. Del mes tercero al séptimo se amontonan
+  primicias y diezmos; como sobra mucho, prepara almacenes en el templo y nombra quién los cuida.
+reason: Perspicacia «Azarías», núm. 14, pone 2Cr 31:9, 10 en el primer año de Ezequías, 745 a.e.c. Las ofrendas se amontonan
+  del tercer mes al séptimo (31:7). Los seis de Coré no se sitúan.
+sources:
+- 2-cronicas-31
+- it-azarias
+- it-ezequias
+- tnm-a6-b
+links:
+- title: 'Perspicacia: «Ezequías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ezequ%C3%ADas/
+  type: perspicacia
+checked_on: '2026-10-13'
+status: verified

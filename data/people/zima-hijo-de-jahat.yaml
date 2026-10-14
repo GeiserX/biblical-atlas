@@ -34,5 +34,15 @@ relations:
   reason: 'Perspicacia «Zimá»: posiblemente es el mismo Zimá de 1Cr 6:42.'
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+- type: same_as
+  person: zima-padre-de-joa
+  certainty: possible
+  inferred: true
+  sources:
+  - 2-cronicas-29
+  - it-zima
+  reason: 'Perspicacia «Zimá»: si la genealogía de Leví omite nombres, el hijo de Jáhat podría ser el Zimá de 2Cr 29:12.'
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
 status: verified

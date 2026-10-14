@@ -1,0 +1,39 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: maaseya-funcionario
+name: Maaseya
+names:
+- name: Maaseya
+perspicacia: 1200002811#3
+summary: Funcionario del rey Uzías que, junto al secretario Jeiel y a las órdenes del príncipe Hananías, intervino en el registro
+  del ejército.
+reason: Perspicacia «Maaseya», núm. 3; 2Cr 26:11.
+sources:
+- it-maaseya
+- 2-cronicas-26
+links:
+- title: 'Perspicacia: «Maaseya»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Maaseya/
+  type: perspicacia
+relations:
+- type: tie
+  person: hananias-principe-de-uzias
+  word: master
+  inferred: false
+  sources:
+  - 2-cronicas-26
+  - it-maaseya
+  reason: '2Cr 26:11: actuaba bajo el mando de Hananías; Perspicacia «Maaseya», núm. 3, lo pone a sus órdenes.'
+  checked_on: '2026-10-13'
+  status: verified
+disambiguation: El funcionario de Uzías que ayudó a registrar el ejército (2Cr 26:11); no es ninguno de los otros Maaseya
+  que numera Perspicacia.
+distinct_from:
+- maaseya-hijo-de-salum
+- maaseya-musico
+- maaseya-padre-de-sedequias
+- maaseya-padre-de-sofonias
+- maaseya-hijo-de-adaya
+- maaseya-hijo-del-rey
+- maaseya-jefe-de-jerusalen
+checked_on: '2026-10-13'
+status: verified

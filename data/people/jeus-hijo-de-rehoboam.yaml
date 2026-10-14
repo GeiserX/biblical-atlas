@@ -1,0 +1,64 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jeus-hijo-de-rehoboam
+name: Jeús
+names:
+- name: Jeús
+perspicacia: 1200002457#4
+disambiguation: Jeús hijo de Rehoboam y Mahalat (2Cr 11:19); no el hijo de Esaú, el benjaminita, el levita hijo de Simeí ni
+  el descendiente de Saúl.
+distinct_from:
+- jeus-hijo-de-esau
+- jeus-hijo-de-bilhan
+- jeus-hijo-de-eshec
+- jeus-hijo-de-simei
+summary: El primero de los hijos de Rehoboam que nombra el texto, nacido de Mahalat. Su padre no lo eligió como heredero,
+  porque prefería a Maacá y a su hijo Abías.
+reason: Perspicacia «Jeús», núm. 4; 2Cr 11:18-23.
+sources:
+- it-jeus
+- 2-cronicas-11
+links:
+- title: 'Perspicacia: «Jeús»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Je%C3%BAs/
+  type: perspicacia
+relations:
+- type: kin
+  person: rehoboam
+  word: father
+  inferred: false
+  sources:
+  - 2-cronicas-11
+  - it-jeus
+  reason: '2Cr 11:19: hijo de Rehoboam.'
+  checked_on: '2026-10-13'
+  status: verified
+- type: kin
+  person: mahalat-hija-de-jerimot
+  word: mother
+  inferred: false
+  sources:
+  - 2-cronicas-11
+  - it-jeus
+  reason: '2Cr 11:19: Mahalat tuvo con Rehoboam a Jeús, Semarías y Zaham.'
+  checked_on: '2026-10-13'
+  status: verified
+- type: kin
+  person: semarias-hijo-de-rehoboam
+  word: brother
+  inferred: false
+  sources:
+  - 2-cronicas-11
+  reason: 2Cr 11:19 nombra a los dos entre los hijos que Mahalat dio a Rehoboam.
+  checked_on: '2026-10-13'
+  status: verified
+- type: kin
+  person: zaham
+  word: brother
+  inferred: false
+  sources:
+  - 2-cronicas-11
+  reason: 2Cr 11:19 nombra a los dos entre los hijos que Mahalat dio a Rehoboam.
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified

@@ -1,0 +1,37 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: maaseya-jefe-de-jerusalen
+name: Maaseya
+names:
+- name: Maaseya
+perspicacia: 1200002811#5
+disambiguation: El jefe de Jerusalén de 2Cr 34:8; no es ninguno de los otros diecinueve Maaseya que numera Perspicacia.
+distinct_from:
+- maaseya-funcionario
+- maaseya-hijo-de-adaya
+- maaseya-hijo-de-salum
+- maaseya-hijo-del-rey
+- maaseya-musico
+- maaseya-padre-de-sedequias
+- maaseya-padre-de-sofonias
+summary: Jefe de la ciudad de Jerusalén en días de Josías. En el año 18 del rey, 642 a.e.c., fue uno de los tres enviados
+  a encargarse de la reparación del templo.
+reason: Perspicacia «Maaseya», núm. 5; 2Cr 34:8.
+sources:
+- it-maaseya
+- 2-cronicas-34
+links:
+- title: 'Perspicacia: «Maaseya»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Maaseya/
+  type: perspicacia
+relations:
+- type: lived_in
+  place: jerusalen
+  inferred: true
+  sources:
+  - 2-cronicas-34
+  - it-maaseya
+  reason: 2Cr 34:8 lo llama jefe de la ciudad; Perspicacia «Maaseya», núm. 5, precisa que era Jerusalén.
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified

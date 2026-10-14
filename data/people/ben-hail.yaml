@@ -1,0 +1,28 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ben-hail
+name: Ben-Hail
+names:
+- name: Ben-Hail
+perspicacia: '1200000637'
+summary: Uno de los cinco príncipes que Jehosafat envió en su año tercero, con levitas y sacerdotes, a instruir a la gente
+  de Judá, ciudad por ciudad, en la Ley de Jehová.
+reason: Perspicacia «Ben-háil»; 2Cr 17:7-9.
+sources:
+- it-ben-hail
+- 2-cronicas-17
+links:
+- title: 'Perspicacia: «Ben-háil»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ben-h%C3%A1il/
+  type: perspicacia
+relations:
+- type: tie
+  person: jehosafat
+  word: master
+  sources:
+  - 2-cronicas-17
+  reason: '2Cr 17:7: Jehosafat manda llamar a sus príncipes, y Ben-Hail es uno de ellos.'
+  inferred: false
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified

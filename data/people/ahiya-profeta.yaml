@@ -14,14 +14,16 @@ distinct_from:
 - ahiya-de-benjamin
 - ahiya-el-pelonita
 - ahiya-tesorero
-summary: Profeta de Siló. Partió un manto nuevo en doce trozos y dio diez a Jeroboán como señal de que reinaría sobre diez
-  tribus. Ya viejo y ciego, anunció la ruina de la casa de Jeroboán.
+summary: Profeta de Siló. Partió un manto nuevo en doce trozos y dio diez a Jeroboán, señal de que reinaría sobre diez tribus;
+  ya ciego, anunció la ruina de su casa. Su profecía escrita fue un registro del reinado de Salomón.
 reason: Perspicacia «Ahíya», núm. 7; 1Re 11:29-39 y 14:2-18; 2Cr 9:29.
 sources:
 - it-ahiya
 - 1-reyes-11
 - 1-reyes-14
 - 1-reyes-15
+- 2-cronicas-9
+- 2-cronicas-10
 links:
 - title: 'Perspicacia: «Ahíya»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ah%C3%ADya/
@@ -43,8 +45,9 @@ relations:
   - 1-reyes-11
   - it-ahiya
   - 1-reyes-14
+  - 2-cronicas-9
   reason: 1Re 11:29 lo llama el profeta Ahíya.
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-13'
   status: verified
 - type: lived_in
   place: silo
@@ -54,8 +57,15 @@ relations:
   - it-ahiya
   - 1-reyes-14
   - 1-reyes-15
+  - 2-cronicas-9
+  - 2-cronicas-10
   reason: 1Re 11:29 lo llama el silonita; Perspicacia «Ahíya», núm. 7, dice que residía en Siló.
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-13'
   status: verified
-checked_on: '2026-10-12'
+history:
+- date: '2026-10-13'
+  change: 'Se añade su escrito: 2Cr 9:29 cita la profecía de Ahíya entre los registros de Salomón, como recoge Perspicacia
+    «Ahíya», núm. 7.'
+  source: 2-cronicas-9
+checked_on: '2026-10-13'
 status: verified

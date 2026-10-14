@@ -27,6 +27,7 @@ distinct_from:
 - eliab-musico
 - elihu-portero
 - elihu-hermano-de-david
+- eliel-comisionado-de-ezequias
 summary: Antepasado levita del profeta Samuel, hijo de Tohu y padre de Jeroham. Las Crónicas lo llaman también Eliab y Eliel.
 reason: Perspicacia «Elihú», núm. 2; 1Sa 1:1.
 sources:
@@ -66,5 +67,5 @@ relations:
   reason: '1Cr 6:34: Eliel, «hijo de Tóah». Perspicacia cree que Tóah es Tohu.'
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified

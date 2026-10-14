@@ -1,0 +1,25 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: obed-padre-de-azarias
+name: Obed
+names:
+- name: Obed
+perspicacia: 1200003290#5
+disambiguation: Obed padre de Azarías, el jefe de cien de tiempos de Jehoiadá; no Obed hijo de Boaz, abuelo de David, ni los
+  demás Obed de Perspicacia.
+distinct_from:
+- obed-hijo-de-boaz
+- obed-guerrero-de-david
+- obed-hijo-de-eflal
+- obed-hijo-de-semaya
+summary: Padre de Azarías, uno de los jefes de cien que apoyaron al sumo sacerdote Jehoiadá para derribar a la reina Atalía
+  y coronar a Jehoás.
+reason: Perspicacia «Obed», núm. 5; 2Cr 23:1.
+sources:
+- it-obed
+- 2-cronicas-23
+links:
+- title: 'Perspicacia: «Obed»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Obed/
+  type: perspicacia
+checked_on: '2026-10-13'
+status: verified

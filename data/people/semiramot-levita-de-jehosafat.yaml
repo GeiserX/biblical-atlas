@@ -1,0 +1,22 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: semiramot-levita-de-jehosafat
+name: Semiramot
+names:
+- name: Semiramot
+perspicacia: 1200004008#2
+summary: Levita del grupo que Jehosafat mandó en su año tercero a recorrer las ciudades de Judá para instruir al pueblo con
+  el libro de la Ley.
+reason: Perspicacia «Semiramot», núm. 2; 2Cr 17:7-9.
+sources:
+- it-semiramot
+- 2-cronicas-17
+links:
+- title: 'Perspicacia: «Semiramot»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Semiramot/
+  type: perspicacia
+disambiguation: Levita que Jehosafat mandó a instruir en la Ley (Perspicacia «Semiramot», núm. 2); no el músico de los días de
+  David.
+checked_on: '2026-10-13'
+status: verified
+distinct_from:
+- semiramot-musico

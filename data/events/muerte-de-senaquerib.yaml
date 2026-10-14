@@ -45,6 +45,7 @@ sources:
 - isaias-37
 - it-adramelec
 - it-cus
+- 2-cronicas-32
 links:
 - title: 2 Reyes 19 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-reyes/19/
@@ -60,5 +61,5 @@ history:
   change: 'Se funde con el suceso igual de 2 Reyes, dueño del relato: toma su título, su resumen y su orden en la serie de
     2 Reyes. La fecha sigue hasta 684, que sostiene Perspicacia «Cus»; 712 no tenía fuente.'
   source: 2-reyes-19
-checked_on: '2026-09-30'
+checked_on: '2026-10-13'
 status: verified

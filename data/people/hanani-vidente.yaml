@@ -12,6 +12,7 @@ reason: Perspicacia «Hananí», núm. 2; 1Re 16:1, 7; 2Cr 16:7-10.
 sources:
 - it-hanani
 - 1-reyes-16
+- 2-cronicas-16
 links:
 - title: 'Perspicacia: «Hananí»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hanan%C3%AD/
@@ -19,7 +20,26 @@ links:
 - title: 1 Reyes 16 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/1-reyes/16/
   type: bible
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified
 distinct_from:
 - hanani-hijo-de-heman
+relations:
+- type: tie
+  person: asa
+  word: custodian
+  date:
+    from: -961
+    to: -961
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 962 a.e.c.
+  sources:
+  - 2-cronicas-16
+  - it-hanani
+  reason: '2Cr 16:10: Asá, furioso por la reprensión, lo mete en la casa de los cepos; Perspicacia «Hananí», núm. 2.'
+  inferred: false
+  checked_on: '2026-10-13'
+  status: verified

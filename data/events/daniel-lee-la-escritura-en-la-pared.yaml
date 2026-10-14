@@ -1,0 +1,43 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: daniel-lee-la-escritura-en-la-pared
+title: Daniel lee la escritura en la pared en el banquete de Belsasar
+date:
+  from: -538
+  to: -538
+  precision: day
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 539 a.e.c., noche del 16 de tisri (5 de octubre en el calendario gregoriano)
+  detail:
+    month: tisri
+    day: 16
+narrative_order:
+  series: daniel
+  order: 105001
+places:
+- babilonia
+people:
+- belsasar
+- daniel
+present:
+- belsasar
+- daniel
+passages:
+- Da 5:1-29
+summary: Belsasar bebe con mil nobles en los recipientes del templo de Jerusalén y alaba a sus dioses. Una mano escribe en
+  la pared; los sabios fracasan y la reina propone a Daniel, que anuncia el fin del reino.
+reason: Perspicacia «Belsasar» pone el banquete la noche en que cayó Babilonia (5 de octubre gregoriano de 539) y «Ciro»,
+  el 16 de tisri. En la serie va detrás de las visiones de los años primero y tercero de Belsasar.
+sources:
+- daniel-5
+- it-belsasar
+- it-ciro
+- it-daniel
+- dp-7
+links:
+- title: 'Perspicacia: «Belsasar»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Belsasar/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified

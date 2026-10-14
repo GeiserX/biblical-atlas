@@ -25,14 +25,19 @@ candidates:
   coord_url: https://www.openbible.info/geo/ancient/a3bcd66/dura
 summary: Llanura del distrito de Babilonia donde Nabucodonosor levantó la imagen de oro ante la que Sadrac, Mesac y Abednego
   no quisieron inclinarse. No se sabe con certeza dónde estaba.
-reason: 'Perspicacia «Dura»: la Biblia la pone en el distrito de Babilonia (Da 3:1); el nombre es común en Mesopotamia y
-  hoy no se puede identificar sin dudas.'
+reason: 'Perspicacia «Dura»: en el distrito de Babilonia (Da 3:1), con un nombre frecuente en Mesopotamia que impide identificarla
+  sin dudas. La Atalaya de julio de 2023 la pone en las afueras de Babilonia.'
 sources:
 - it-dura
 - daniel-3
+- w23-lo-sabia-ladrillos-de-babilonia
 links:
 - title: 'Perspicacia: «Dura»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Dura/
   type: perspicacia
-checked_on: '2026-09-28'
+history:
+- date: '2026-10-14'
+  change: La razón cita también La Atalaya de julio de 2023, que sitúa la llanura en las afueras de la ciudad.
+  source: w23-lo-sabia-ladrillos-de-babilonia
+checked_on: '2026-10-14'
 status: verified

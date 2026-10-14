@@ -42,6 +42,7 @@ roles:
   queren-hapuc: born
 passages:
 - Job 42:10-17
+- Snt 5:11
 summary: Cuando Job ora por sus amigos, Jehová le da el doble de lo que tenía. Parientes y amigos comen con él y le regalan
   dinero y anillos. Tiene siete hijos y tres hijas, ve cuatro generaciones y muere anciano.
 reason: 'Perspicacia «Job»: la prueba acaba hacia 1613 a.e.c. y Job vive después 140 años (Job 42:16), hasta poco antes de
@@ -53,9 +54,10 @@ sources:
 - it-queren-hapuc
 - job-42
 - it-uz
+- it-santiago-carta
 links:
 - title: Job 42 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/job/42/
   type: bible
-checked_on: '2026-09-29'
+checked_on: '2026-10-14'
 status: pending

@@ -1,0 +1,34 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: joa-levita-de-ezequias
+name: Joá
+names:
+- name: Joá
+perspicacia: null
+summary: Levita guersonita, hijo de Zimá, que con su hijo Edén se deshizo de lo impuro sacado del templo al comenzar el reinado
+  de Ezequías.
+reason: Perspicacia «Joah», núm. 2, que no le da entrada propia; 2Cr 29:12, 16.
+sources:
+- it-joah
+- 2-cronicas-29
+links:
+- title: 'Perspicacia: «Joah»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Joah/
+  type: perspicacia
+disambiguation: Joá padre de Edén, guersonita de 2Cr 29:12; Perspicacia «Joah», núm. 2, ve posible que sea el Joá hijo de Zimá
+  de la genealogía de Leví. No es Joá hijo de Asaf ni el hijo de Obed-Edom.
+distinct_from:
+- joa-hijo-de-asaf
+- joa-hijo-de-obed-edom
+- joa-hijo-de-joacaz
+relations:
+- type: kin
+  person: zima-padre-de-joa
+  word: father
+  inferred: false
+  sources:
+  - 2-cronicas-29
+  reason: '2Cr 29:12: «Joá hijo de Zimá», entre los guersonitas.'
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified

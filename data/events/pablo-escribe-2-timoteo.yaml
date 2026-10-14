@@ -1,0 +1,52 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: pablo-escribe-2-timoteo
+title: Pablo escribe 2 Timoteo preso en Roma
+date:
+  from: 65
+  to: 65
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 65 e.c.
+narrative_order:
+  series: hechos
+  order: 2860
+places:
+- roma
+- efeso
+people:
+- pablo
+- timoteo
+present:
+- pablo
+type: writing
+roles:
+  pablo: wrote
+passages:
+- 2Ti 1:1, 2
+- 2Ti 1:8
+- 2Ti 4:6-13
+- 2Ti 4:21, 22
+summary: 'Encadenado de nuevo en Roma y viendo cerca su muerte, Pablo escribe a Timoteo, su hijo amado: que no se avergüence
+  de él, guarde la enseñanza sana y aguante las dificultades.'
+reason: 'Tabla de los libros y estudio 3: Roma, c. 65. Perspicacia «Timoteo, Cartas a» y la nota de 2Ti 1:8: en su último
+  encierro, poco antes de morir.'
+sources:
+- 2-timoteo-1
+- tnm-tabla
+- si-3
+- it-timoteo-cartas
+- 2-timoteo-4
+links:
+- title: 2 Timoteo 1 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-timoteo/1/
+  type: bible
+- title: 'Perspicacia: «Timoteo, Cartas a»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Timoteo-Cartas-a/
+  type: perspicacia
+search: segunda carta a Timoteo
+note: 'Orden 2860 de la serie hechos: tras pablo-escribe-1-timoteo (2850) y el comienzo del segundo encierro (2855). Hechos
+  no narra estos años.'
+checked_on: '2026-10-13'
+status: verified

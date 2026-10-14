@@ -1,0 +1,41 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: los-sirios-se-llevan-cautivos-de-juda-a-damasco
+title: Los sirios vencen a Acaz y se llevan cautivos a Damasco
+date:
+  from: -761
+  to: -757
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 762 y c. 758 a.e.c. (tiempo narrativo: en la guerra de Siria e Israel contra Acaz)'
+narrative_order:
+  series: 2-cronicas
+  order: 28005
+places:
+- juda
+- damasco
+people:
+- rezin-rey-de-siria
+- acaz
+present: []
+passages:
+- 2Cr 28:5
+summary: Jehová entrega a Acaz en manos del rey de Siria. Los sirios lo derrotan y se llevan a Damasco a muchos cautivos de
+  Judá.
+reason: '2Cr 28:5; Perspicacia «Rezín», núm. 1: pasó en la guerra que siguió en el reinado de Acaz, y los sirios iban probablemente
+  con Rezín. Antes de la muerte de Rezín, hacia 758 a.e.c. (A6-B).'
+sources:
+- 2-cronicas-28
+- it-rezin
+- it-acaz
+- tnm-a6-b
+links:
+- title: 'Perspicacia: «Rezín»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Rez%C3%ADn/
+  type: perspicacia
+- title: 2 Crónicas 28 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-Cr%C3%B3nicas/28/
+  type: bible
+checked_on: '2026-10-13'
+status: verified

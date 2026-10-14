@@ -9,6 +9,8 @@ disambiguation: Jozabad el guederatita, benjaminita con David (1Cr 12:4); no los
 distinct_from:
 - jozabad-de-manases-1
 - jozabad-de-manases-2
+- jozabad-comisionado-de-ezequias
+- jozabad-levita-de-josias
 summary: Guederatita, benjaminita ambidextro que se unió a David en Ziclag; al parecer era de Guederá de Benjamín.
 reason: Perspicacia «Jozabad», núm. 1, «Guederatita» y «Guederá», núm. 2; 1Cr 12:4.
 sources:
@@ -42,5 +44,5 @@ relations:
   reason: '1Cr 12:4: se unió a David y lo apoyó en la guerra.'
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified

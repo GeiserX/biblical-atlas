@@ -1,0 +1,47 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: vision-del-carnero-y-el-macho-cabrio
+title: Daniel ve un carnero y un macho cabrío junto al Ulái
+date:
+  from: -550
+  to: -549
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: '551-550 a.e.c. (tiempo narrativo: tercer año de Belsasar)'
+narrative_order:
+  series: daniel
+  order: 8001
+places:
+- susa
+- rio-ulai
+- elam
+people:
+- daniel
+- gabriel
+present: []
+passages:
+- Da 8:1-27
+summary: 'En visión, junto al Ulái, en Susa, Daniel ve cómo un macho cabrío derriba a un carnero de dos cuernos. Gabriel le explica
+  que el carnero son los reyes medos y persas, y el macho cabrío, el rey de Grecia.'
+reason: 'Perspicacia «Bestias simbólicas»: dos años después de la visión anterior (553); libro sobre Daniel, cap. 10: 57 años
+  tras 607. Según «Ulai», no se sabe si Daniel fue a Susa: no sitúa a nadie. Orden 8001: antes de caer Babilonia.'
+sources:
+- daniel-8
+- it-bestias-simbolicas
+- si-daniel
+- w07-daniel
+- dp-10
+- it-ulai
+- it-daniel
+- it-gabriel
+- it-susa
+links:
+- title: Daniel 8 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/daniel/8/
+  type: bible
+- title: 'Perspicacia: «Ulai»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ulai/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified

@@ -21,10 +21,12 @@ sources:
 - 1-reyes-12
 - it-rehoboam
 - 1-reyes-14
+- 2-cronicas-10
+- 2-cronicas-12
 search: Rehoboam rey
 history:
 - date: '2026-09-30'
   change: '1 Reyes 12 cuenta el comienzo del reinado, pero no cuánto duró: los 17 años están en 1Re 14:21.'
   source: 1-reyes-12
-checked_on: '2026-09-30'
+checked_on: '2026-10-13'
 status: verified

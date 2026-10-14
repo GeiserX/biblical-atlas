@@ -12,8 +12,8 @@ date:
   chronology: tnm
   text: 628 a.e.c.
 companions: []
-summary: Nekó le avisa que no viene contra Judá, pero Josías se disfraza y le sale al paso en la llanura de Meguidó. Los arqueros
-  lo hieren; sus siervos lo pasan a otro carro y lo llevan a Jerusalén, donde muere.
+summary: Nekó le avisa que no viene contra Judá, pero Josías se disfraza y le sale al paso en la llanura de Meguidó. Herido
+  por los arqueros, lo llevan en otro carro a Jerusalén; murió en el camino o al llegar.
 reason: 2Re 23:29, 30 y 2Cr 35:20-24 dan la salida, Meguidó y la vuelta. Fecha del suceso muerte-de-josias, 628 a.e.c.
 sources:
 - 2-reyes-23
@@ -23,7 +23,16 @@ sources:
 - it-neko
 - si-3
 - tnm-a6-b
-checked_on: '2026-09-30'
+history:
+- date: '2026-10-13'
+  change: Decía que murió en Jerusalén. 2Cr 35:24 solo dice que lo trajeron y murió, y Perspicacia «Josías», núm. 1, deja
+    abierto si fue en el camino o al llegar, como ya dice muerte-de-josias.
+  source: 2-cronicas-35
+- date: '2026-10-13'
+  change: La nota de la parada 3 decía que 2Cr 35:24 lo hace morir al llegar; el versículo no lo precisa y Perspicacia «Josías»,
+    núm. 1, lo deja abierto.
+  source: 2-cronicas-35
+checked_on: '2026-10-13'
 status: verified
 narrative_order:
   series: josias
@@ -76,7 +85,8 @@ stops:
     type: anchored
     chronology: tnm
     text: 628 a.e.c.
-  note: 2Re 23:30 habla de llevar su cadáver; 2Cr 35:24 dice que murió al llegar.
+  note: 2Re 23:30 habla de llevar su cadáver; 2Cr 35:24 lo trae herido. Perspicacia «Josías» deja abierto si murió en el camino
+    o al llegar.
   reason: '2Re 23:30 y 2Cr 35:24: lo traen en carro a Jerusalén y lo entierran allí. Suceso muerte-de-josias.'
   sources:
   - 2-reyes-23

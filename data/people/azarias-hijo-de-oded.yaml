@@ -1,0 +1,71 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: azarias-hijo-de-oded
+name: Azarías
+names:
+- name: Azarías
+perspicacia: 1200000486#6
+date:
+  from: -962
+  to: -962
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 963 a.e.c.
+disambiguation: El profeta hijo de Oded que habló al rey Asá en 963 a.e.c.; no el rey Azarías (Uzías), ni los sacerdotes,
+  príncipes o levitas que llevan el mismo nombre.
+distinct_from:
+- abednego
+- azarias-hijo-de-ahimaaz
+- azarias-hijo-de-etan
+- azarias-hijo-de-hilquias
+- azarias-hijo-de-jehohanan
+- azarias-hijo-de-jehu
+- azarias-hijo-de-johanan
+- azarias-hijo-de-natan
+- azarias-hijo-de-sadoc
+- azarias-hijo-de-sofonias
+- azarias-sacerdote-repatriado
+- jaazanias-jefe-militar
+- ocozias-de-juda
+- uzias
+- azarias-sacerdote-de-tiempos-de-uzias
+- azarias-padre-de-joel
+- azarias-hijo-de-jehalelel
+- azarias-hijo-de-jeroham
+- azarias-hijo-de-obed
+- azarias-quinto-hijo-de-jehosafat
+- azarias-segundo-hijo-de-jehosafat
+summary: Profeta sobre el que vino el espíritu de Dios. Salió al encuentro de Asá y le prometió que Jehová estaría con Judá
+  mientras lo buscaran; el rey cobró ánimo y limpió el país de ídolos.
+reason: Perspicacia «Azarías», núm. 6, que fecha su intervención en 963 a.e.c.; 2Cr 15:1-8.
+sources:
+- it-azarias
+- 2-cronicas-15
+links:
+- title: 'Perspicacia: «Azarías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Azar%C3%ADas/
+  type: perspicacia
+relations:
+- type: kin
+  person: oded-padre-de-azarias
+  word: father
+  sources:
+  - 2-cronicas-15
+  - it-oded
+  reason: 2Cr 15:1 lo llama Azarías hijo de Oded.
+  inferred: false
+  checked_on: '2026-10-13'
+  status: verified
+- type: holds_office
+  office: prophet
+  inferred: true
+  sources:
+  - it-azarias
+  - 2-cronicas-15
+  reason: '2Cr 15:1-8: el espíritu de Dios viene sobre él y transmite un mensaje; Perspicacia «Azarías», núm. 6, lo llama
+    profeta.'
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified

@@ -1,0 +1,32 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: conanias-de-tiempos-de-ezequias
+name: Conanías
+names:
+- name: Conanías
+perspicacia: 1200001019#1
+disambiguation: El encargado de las contribuciones en días de Ezequías (2Cr 31:12, 13). Perspicacia «Conanías» registra aparte
+  al jefe levita que dio animales para la Pascua de Josías.
+distinct_from:
+- conanias-levita-de-josias
+summary: Levita que el rey Ezequías puso al frente de las contribuciones, los diezmos y las cosas santas que el pueblo llevaba
+  al templo. Su hermano Simeí era el segundo y diez levitas los ayudaban.
+reason: Perspicacia «Conanías», núm. 1; 2Cr 31:11-13.
+sources:
+- it-conanias
+- 2-cronicas-31
+links:
+- title: 'Perspicacia: «Conanías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Conan%C3%ADas/
+  type: perspicacia
+relations:
+- inferred: false
+  type: kin
+  person: simei-hermano-de-conanias
+  word: brother
+  sources:
+  - 2-cronicas-31
+  reason: '2Cr 31:12: Simeí, su hermano, iba en segundo lugar tras él.'
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified

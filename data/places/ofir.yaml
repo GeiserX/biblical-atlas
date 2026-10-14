@@ -71,6 +71,8 @@ sources:
 - job-28
 - 1-reyes-10
 - it-algum
+- 2-cronicas-8
+- 2-cronicas-9
 links:
 - title: 'Perspicacia: «Ofir»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ofir/
@@ -78,7 +80,7 @@ links:
 - title: 1 Reyes 9 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/1-reyes/9/
   type: bible
-checked_on: '2026-09-30'
+checked_on: '2026-10-13'
 status: verified
 history:
 - date: '2026-09-28'

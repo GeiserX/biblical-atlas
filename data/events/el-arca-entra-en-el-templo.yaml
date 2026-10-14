@@ -19,6 +19,7 @@ places:
 - jerusalen
 people:
 - salomon
+- heman-hijo-de-joel
 passages:
 - 1Re 8:1-11
 - 2Cr 5:2-14
@@ -30,6 +31,8 @@ sources:
 - 1-reyes-8
 - it-salomon
 - it-etanim
+- 2-cronicas-5
+- it-heman
 links:
 - title: 'Perspicacia: «Salomón»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Salom%C3%B3n/
@@ -37,5 +40,5 @@ links:
 - title: 1 Reyes 8 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/1-reyes/8/
   type: bible
-checked_on: '2026-09-30'
+checked_on: '2026-10-13'
 status: verified

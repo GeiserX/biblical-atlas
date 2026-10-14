@@ -1,0 +1,33 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: eliada-oficial-de-jehosafat
+name: Eliadá
+names:
+- name: Eliadá
+perspicacia: 1200001293#3
+summary: Guerrero de Benjamín que mandaba 200.000 hombres armados con arco y escudo en el ejército de Jehosafat; Jehozabad
+  estaba bajo su mando.
+reason: Perspicacia «Eliadá», núm. 3; 2Cr 17:17, 19.
+sources:
+- it-eliada
+- 2-cronicas-17
+links:
+- title: 'Perspicacia: «Eliadá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Eliad%C3%A1/
+  type: perspicacia
+relations:
+- type: tie
+  person: jehosafat
+  word: master
+  sources:
+  - 2-cronicas-17
+  reason: '2Cr 17:17, 19: jefe de Benjamín entre los que servían al rey.'
+  inferred: false
+  checked_on: '2026-10-13'
+  status: verified
+disambiguation: Benjamita, jefe de arqueros de Jehosafat (Perspicacia «Eliadá», núm. 3); no el hijo de David ni el padre de
+  Rezón.
+checked_on: '2026-10-13'
+status: verified
+distinct_from:
+- eliada-hijo-de-david
+- eliada-padre-de-rezon

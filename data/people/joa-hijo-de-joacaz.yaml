@@ -1,0 +1,48 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: joa-hijo-de-joacaz
+name: Joá
+names:
+- name: Joá
+- name: Joah
+  note: Grafía de Perspicacia.
+perspicacia: 1200002470#4
+disambiguation: El registrador de Josías, hijo de Joacaz; no Joá hijo de Asaf, el de Ezequías, ni los levitas Joá hijos de
+  Obed-Edom y de Zimá.
+distinct_from:
+- joa-hijo-de-asaf
+- joa-hijo-de-obed-edom
+- joa-hijo-de-zima
+- joa-levita-de-ezequias
+summary: Registrador del rey Josías, hijo de Joacaz. En 642 a.e.c. fue con Safán y Maaseya a encargarse de reparar el templo,
+  y por su medio el rey hizo llegar el dinero a los obreros.
+reason: Perspicacia «Joah», núm. 4; 2Cr 34:8-11.
+sources:
+- it-joah
+- 2-cronicas-34
+links:
+- title: 'Perspicacia: «Joah»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Joah/
+  type: perspicacia
+relations:
+- type: kin
+  person: joacaz-padre-de-joa
+  word: father
+  sources:
+  - 2-cronicas-34
+  - it-joah
+  reason: 2Cr 34:8 lo llama Joá hijo de Joacaz.
+  inferred: false
+  checked_on: '2026-10-13'
+  status: verified
+- type: tie
+  person: josias
+  word: master
+  inferred: true
+  sources:
+  - 2-cronicas-34
+  - it-joacaz
+  reason: '2Cr 34:8: el rey lo envía al templo; Perspicacia «Joacaz», núm. 2, lo llama el registrador del rey Josías.'
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified

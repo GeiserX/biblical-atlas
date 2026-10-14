@@ -1,0 +1,52 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: janes
+name: Janes
+names:
+- name: Janes
+perspicacia: '1200002321'
+date:
+  from: -1513
+  to: -1512
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1514 y 1513 a.e.c. (tiempo narrativo: ante el faraón, antes de la Pascua)'
+summary: Opositor de Moisés al que Pablo pone de ejemplo de quien resiste la verdad. Las Escrituras Hebreas no lo nombran;
+  sería un personaje de la corte del faraón, quizá al frente de sus magos.
+reason: 2Ti 3:8, 9 y su nota de estudio; Perspicacia «Janes». La fecha es la de los magos ante el faraón, antes de la Pascua
+  de 1513 a.e.c. (estudio 3).
+sources:
+- it-janes
+- 2-timoteo-3
+- si-3
+links:
+- title: 'Perspicacia: «Janes»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Janes/
+  type: perspicacia
+- title: 2 Timoteo 3 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-timoteo/3/
+  type: bible
+relations:
+- type: tie
+  person: moises
+  word: enemy
+  inferred: false
+  sources:
+  - 2-timoteo-3
+  - it-janes
+  reason: '2Ti 3:8: Janes y Jambres se opusieron a Moisés.'
+  checked_on: '2026-10-13'
+  status: verified
+- type: lived_in
+  place: egipto
+  inferred: true
+  sources:
+  - it-janes
+  - 2-timoteo-3
+  reason: Perspicacia «Janes» lo cuenta, como suele aceptarse, entre los hombres importantes de la corte del faraón; la nota
+    de 2Ti 3:8 lo ve probable.
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified

@@ -19,11 +19,13 @@ sources:
 - tnm-a6-b
 - 2-reyes-22
 - it-josias
+- 2-cronicas-34
+- 2-cronicas-35
 history:
 - date: '2026-09-28'
   change: Perspicacia «Josías» cerraba su reinado en 629 a.e.c.; A6-B, más reciente, empieza el de Jehoacaz en 628, como el
     estudio 3.
   source: tnm-a6-b
 search: Josías rey
-checked_on: '2026-09-28'
+checked_on: '2026-10-13'
 status: verified

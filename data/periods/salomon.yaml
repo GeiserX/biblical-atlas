@@ -21,6 +21,9 @@ sources:
 - it-salomon
 - 1-reyes-11
 - 1-cronicas-29
+- 2-cronicas-1
+- 2-cronicas-3
+- 2-cronicas-9
 search: Salomón rey
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified

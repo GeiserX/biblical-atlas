@@ -18,15 +18,18 @@ date:
   type: narrative
   chronology: tnm
   text: '913-858 a.e.c. (tiempo narrativo: sumo sacerdote en los reinados de Jehoram, Ocozías, Atalía y Jehoás de Judá)'
-summary: Sumo sacerdote casado con Jehoseba, hija del rey Jehoram. Protegió al niño Jehoás, lo coronó al séptimo año, mandó
-  ejecutar a Atalía y renovó el pacto con Jehová. Instruyó a Jehoás y organizó la reparación del templo.
-reason: Perspicacia «Jehoiadá», núm. 3; 2Re 11:4-20 y 12:2, 7-10. Los límites de la fecha son el reinado de Jehoram de Judá
-  (desde 913) y el de Jehoás (hasta 858), según la tabla A6-A.
+summary: Sumo sacerdote casado con Jehoseba, hija del rey Jehoram. Coronó al niño Jehoás, hizo ejecutar a Atalía, renovó el
+  pacto con Jehová y dirigió la reparación del templo. Murió a los 130 años y lo enterraron con los reyes.
+reason: Perspicacia «Jehoiadá», núm. 3; 2Re 11:4-20 y 12:2, 7-10; 2Cr 23 y 24:2-22. Los límites de la fecha son el reinado
+  de Jehoram de Judá (desde 913) y el de Jehoás (hasta 858), según la tabla A6-A.
 sources:
 - it-jehoiada
 - 2-reyes-11
 - 2-reyes-12
 - tnm-a6-a
+- 2-cronicas-22
+- 2-cronicas-23
+- 2-cronicas-24
 links:
 - title: 'Perspicacia: «Jehoiadá»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jehoiad%C3%A1/
@@ -57,9 +60,73 @@ relations:
   - it-jehoiada
   - 2-reyes-11
   - 2-reyes-12
+  - 2-cronicas-23
+  - 2-cronicas-24
   reason: 2Re 11:9 y 12:7 lo llaman sacerdote y 12:10 habla del sumo sacerdote; Perspicacia «Jehoiadá», núm. 3, lo tiene por
     sumo sacerdote. Servía en la casa de Jehová, en Jerusalén.
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-13'
   status: verified
-checked_on: '2026-10-12'
+- type: tie
+  person: azarias-hijo-de-jeroham
+  word: ally
+  inferred: false
+  sources:
+  - 2-cronicas-23
+  reason: '2Cr 23:1: Jehoiadá pactó con los jefes de cien, entre ellos Azarías hijo de Jeroham, para coronar a Jehoás.'
+  checked_on: '2026-10-13'
+  status: verified
+- type: tie
+  person: ismael-hijo-de-jehohanan
+  word: ally
+  inferred: false
+  sources:
+  - 2-cronicas-23
+  reason: '2Cr 23:1: Jehoiadá pactó con los jefes de cien, entre ellos Ismael hijo de Jehohanán, para coronar a Jehoás.'
+  checked_on: '2026-10-13'
+  status: verified
+- type: tie
+  person: azarias-hijo-de-obed
+  word: ally
+  inferred: false
+  sources:
+  - 2-cronicas-23
+  reason: '2Cr 23:1: Jehoiadá pactó con los jefes de cien, entre ellos Azarías hijo de Obed, para coronar a Jehoás.'
+  checked_on: '2026-10-13'
+  status: verified
+- type: tie
+  person: maaseya-hijo-de-adaya
+  word: ally
+  inferred: false
+  sources:
+  - 2-cronicas-23
+  reason: '2Cr 23:1: Jehoiadá pactó con los jefes de cien, entre ellos Maaseya hijo de Adaya, para coronar a Jehoás.'
+  checked_on: '2026-10-13'
+  status: verified
+- type: tie
+  person: elisafat
+  word: ally
+  inferred: false
+  sources:
+  - 2-cronicas-23
+  reason: '2Cr 23:1: Jehoiadá pactó con los jefes de cien, entre ellos Elisafat hijo de Zicrí, para coronar a Jehoás.'
+  checked_on: '2026-10-13'
+  status: verified
+- type: died_in
+  place: jerusalen
+  inferred: true
+  sources:
+  - 2-cronicas-24
+  - it-jehoiada
+  reason: '2Cr 24:15, 16: murió a los 130 años y le dieron sepultura en la Ciudad de David, que es Jerusalén. El texto no
+    dice dónde murió; se deduce del entierro, como en Reyes.'
+  checked_on: '2026-10-13'
+  status: verified
+history:
+- date: '2026-10-13'
+  change: El resumen no contaba su muerte a los 130 años ni su entierro con los reyes (2Cr 24:15, 16).
+  source: 2-cronicas-24
+- date: '2026-10-13'
+  change: La razón añade los capítulos de 2 Crónicas que cuentan su obra y su muerte.
+  source: 2-cronicas-24
+checked_on: '2026-10-13'
 status: verified
