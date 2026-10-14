@@ -13,6 +13,7 @@ distinct_from:
 - elcana-descendiente-de-core
 - elcana-hijo-de-mahat
 - elcana-padre-de-amasai
+- elcana-funcionario-de-acaz
 summary: Coreíta que al parecer vivía en Benjamín y fue a ayudar a David a Ziclag cuando Saúl lo tenía restringido.
 reason: Perspicacia «Elqaná», núm. 6; 1Cr 12:6.
 sources:
@@ -55,5 +56,5 @@ relations:
     en Ziclag (1Cr 12:6).
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified

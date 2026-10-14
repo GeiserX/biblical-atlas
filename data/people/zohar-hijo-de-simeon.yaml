@@ -46,7 +46,7 @@ relations:
   reason: 'Gé 46:8, 26, 27: figura en la lista de la casa de Jacob que se instaló en Egipto.'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified
 distinct_from:
 - zerah-de-bozra
@@ -55,3 +55,4 @@ distinct_from:
 - zohar-padre-de-efron
 - zerah-hijo-de-adaya
 - zerah-hijo-de-ido
+- zerah-el-etiope

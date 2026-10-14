@@ -9,6 +9,10 @@ distinct_from:
 - maaseya-padre-de-sofonias
 - maaseya-hijo-de-salum
 - maaseya-musico
+- maaseya-hijo-de-adaya
+- maaseya-funcionario
+- maaseya-hijo-del-rey
+- maaseya-jefe-de-jerusalen
 summary: Padre de Sedequías, un falso profeta de los días de Jeremías que estaba entre los desterrados en Babilonia.
 reason: Perspicacia «Maaseya», núm. 7; Jer 29:21.
 sources:
@@ -21,5 +25,5 @@ links:
 - title: Jeremías 29 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/29/
   type: bible
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified

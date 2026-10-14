@@ -1,0 +1,28 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: zicri-padre-de-amasiah
+name: Zicrí
+names:
+- name: Zicrí
+perspicacia: 1200004728#8
+summary: Hombre de Judá cuyo hijo Amasíah mandaba una de las divisiones del ejército de Jehosafat.
+reason: Perspicacia «Zicrí», núm. 8; 2Cr 17:16.
+sources:
+- it-zicri
+- 2-cronicas-17
+links:
+- title: 'Perspicacia: «Zicrí»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zicr%C3%AD/
+  type: perspicacia
+disambiguation: Judaíta, padre de Amasíah (Perspicacia «Zicrí», núm. 8); no Zicrí hijo de Izhar, el levita.
+checked_on: '2026-10-13'
+status: verified
+distinct_from:
+- zicri-hijo-de-izhar
+- zicri-guerrero-efraimita
+- zicri-descendiente-de-eliezer
+- zicri-descendiente-de-jeroham
+- zicri-descendiente-de-sasac
+- zicri-descendiente-de-simei
+- zicri-hijo-de-asaf
+- zicri-padre-de-eliezer
+- zicri-padre-de-elisafat

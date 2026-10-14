@@ -4,7 +4,7 @@ name: Semiramot
 names:
 - name: Semiramot
 perspicacia: 1200004008#1
-disambiguation: El músico de David; no el levita que Jehosafat envió a enseñar la Ley (Perspicacia «Semiramot», núm. 2).
+disambiguation: El músico de David; no el levita que Jehosafat mandó a instruir en la Ley (Perspicacia «Semiramot», núm. 2).
 summary: Músico levita que tocó instrumento de cuerda cuando el Arca subió a Jerusalén y después quedó tocando delante de
   la tienda donde la pusieron.
 reason: Perspicacia «Semiramot», núm. 1; 1Cr 15:18, 20; 16:5.
@@ -16,5 +16,11 @@ links:
 - title: 'Perspicacia: «Semiramot»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Semiramot/
   type: perspicacia
-checked_on: '2026-10-12'
+history:
+- date: '2026-10-13'
+  change: Redacción propia, alejada de la de Perspicacia «Tobiya» y «Semiramot».
+  source: 2-cronicas-17
+checked_on: '2026-10-13'
 status: verified
+distinct_from:
+- semiramot-levita-de-jehosafat

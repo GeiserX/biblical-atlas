@@ -20,6 +20,7 @@ sources:
 - 2-reyes-16
 - tnm-a6-b
 - isaias-7
+- 2-cronicas-28
 links:
 - title: 'Perspicacia: «Péqah»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/P%C3%A9qah/
@@ -46,8 +47,9 @@ relations:
   - 2-reyes-15
   - it-remalias
   - isaias-7
+  - 2-cronicas-28
   reason: Is 7:1 lo llama Pécah hijo de Remalías, igual que 2Re 15:25.
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-13'
   status: verified
 - type: tie
   person: pecahias
@@ -74,5 +76,5 @@ history:
 - date: '2026-09-30'
   change: 'Su residencia en Samaria deja de ser deducida: 2Re 15:27 dice que reinó allí 20 años.'
   source: 2-reyes-15
-checked_on: '2026-09-30'
+checked_on: '2026-10-13'
 status: verified

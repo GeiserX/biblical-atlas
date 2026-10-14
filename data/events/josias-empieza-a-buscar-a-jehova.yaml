@@ -1,0 +1,37 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: josias-empieza-a-buscar-a-jehova
+title: Josías empieza a buscar a Jehová
+date:
+  from: -651
+  to: -651
+  precision: year
+  approx: true
+  type: derived
+  chronology: tnm
+  text: c. 652 a.e.c.
+  note: 'Cuenta nuestra: el año 8 de Josías es cinco antes del 13, que el estudio 3 y Perspicacia «Jeremías» ponen en 647,
+    y diez antes del 18, que Perspicacia «Betel» pone en 642.'
+narrative_order:
+  series: 2-cronicas
+  order: 34003
+places: []
+people:
+- josias
+passages:
+- 2Cr 34:3
+summary: En su octavo año como rey, siendo aún joven, Josías se pone a buscar a Jehová, el Dios de David, con el deseo de
+  conocer su voluntad y cumplirla.
+reason: 2Cr 34:3; Perspicacia «Josías», núm. 1, párr. 2. El año sale de una cuenta nuestra. El texto no dice dónde, así que
+  el suceso no sitúa a nadie.
+sources:
+- 2-cronicas-34
+- it-josias
+- si-3
+- it-jeremias
+- it-betel
+links:
+- title: 'Perspicacia: «Josías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jos%C3%ADas/
+  type: perspicacia
+checked_on: '2026-10-13'
+status: pending

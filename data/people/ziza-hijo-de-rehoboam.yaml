@@ -1,0 +1,53 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ziza-hijo-de-rehoboam
+name: Zizá
+names:
+- name: Zizá
+perspicacia: 1200004752#1
+disambiguation: Zizá hijo de Rehoboam y Maacá (2Cr 11:20); no el simeonita hijo de Sifí ni el levita Ziná, al que también
+  se llama Zizá.
+distinct_from:
+- ziza-hijo-de-sifi
+- zina
+summary: Hijo de Rehoboam y de Maacá. Cuando su hermano Abías quedó como heredero, el rey le dio ciudades, provisiones y esposas,
+  según Perspicacia.
+reason: Perspicacia «Zizá», núm. 1; 2Cr 11:20, 22, 23.
+sources:
+- it-ziza
+- 2-cronicas-11
+links:
+- title: 'Perspicacia: «Zizá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ziz%C3%A1/
+  type: perspicacia
+relations:
+- type: kin
+  person: rehoboam
+  word: father
+  inferred: false
+  sources:
+  - 2-cronicas-11
+  - it-ziza
+  reason: '2Cr 11:20: hijo de Rehoboam.'
+  checked_on: '2026-10-13'
+  status: verified
+- type: kin
+  person: maaca-hija-de-uriel
+  word: mother
+  inferred: false
+  sources:
+  - 2-cronicas-11
+  - it-ziza
+  reason: '2Cr 11:20: Maacá tuvo con Rehoboam a Abías, Atái, Zizá y Selomit.'
+  checked_on: '2026-10-13'
+  status: verified
+- type: kin
+  person: selomit-hijo-de-rehoboam
+  word: brother
+  inferred: false
+  sources:
+  - 2-cronicas-11
+  reason: '2Cr 11:20: los dos están entre los hijos que Maacá dio a Rehoboam.'
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified

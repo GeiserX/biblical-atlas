@@ -1,0 +1,49 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: lino
+name: Lino
+names:
+- name: Lino
+perspicacia: '1200002748'
+date:
+  from: 65
+  to: 65
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 65 e.c.
+not_claimed:
+- 'Que fuera el superintendente de Roma del mismo nombre que cita Ireneo: Perspicacia dice que solo lo apoya la tradición.'
+summary: Cristiano de Roma que manda saludos a Timoteo en la última carta de Pablo.
+reason: Perspicacia «Lino, II»; 2Ti 4:21. Fecha de la carta, c. 65 (Tabla de los libros).
+sources:
+- it-lino
+- 2-timoteo-4
+- tnm-tabla
+links:
+- title: 'Perspicacia: «Lino, II»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Lino-II/
+  type: perspicacia
+- title: 2 Timoteo 4 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-timoteo/4/
+  type: bible
+relations:
+- type: lived_in
+  place: roma
+  date:
+    from: 65
+    to: 65
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 65 e.c.
+  inferred: true
+  sources:
+  - it-lino
+  - 2-timoteo-4
+  reason: Perspicacia «Lino, II» lo llama cristiano de Roma; saluda junto a Pablo, preso allí (2Ti 4:21).
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified

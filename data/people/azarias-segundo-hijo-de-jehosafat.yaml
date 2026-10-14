@@ -1,0 +1,99 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: azarias-segundo-hijo-de-jehosafat
+name: Azarías
+names:
+- name: Azarías
+perspicacia: 1200000486#7
+disambiguation: Hijo de Jehosafat nombrado primero entre los hermanos de Jehoram (2Cr 21:2); Perspicacia lo cuenta segundo
+  de los siete hijos. Tuvo un hermano del mismo nombre y no es ninguno de los otros Azarías.
+distinct_from:
+- azarias-quinto-hijo-de-jehosafat
+- abednego
+- azarias-hijo-de-jehohanan
+- azarias-hijo-de-natan
+- azarias-hijo-de-sadoc
+- jaazanias-jefe-militar
+- ocozias-de-juda
+- uzias
+- azarias-sacerdote-de-tiempos-de-uzias
+- azarias-padre-de-joel
+- azarias-hijo-de-jehalelel
+- azarias-hijo-de-ahimaaz
+- azarias-hijo-de-etan
+- azarias-hijo-de-hilquias
+- azarias-hijo-de-jehu
+- azarias-hijo-de-jeroham
+- azarias-hijo-de-johanan
+- azarias-hijo-de-obed
+- azarias-hijo-de-oded
+- azarias-hijo-de-sofonias
+- azarias-sacerdote-repatriado
+summary: Hijo del rey Jehosafat de Judá. Su padre le dio plata, oro y ciudades fortificadas, pero Jehoram, el primogénito,
+  lo mató al quedarse con el trono.
+reason: 'Perspicacia «Azarías», núm. 7: dos hijos de Jehosafat con el mismo nombre, que en hebreo se escribe de forma algo
+  distinta; 2Cr 21:1-4.'
+sources:
+- it-azarias
+- 2-cronicas-21
+links:
+- title: 'Perspicacia: «Azarías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Azar%C3%ADas/
+  type: perspicacia
+relations:
+- type: kin
+  person: jehosafat
+  word: father
+  inferred: false
+  sources:
+  - 2-cronicas-21
+  - it-azarias
+  reason: '2Cr 21:2: uno de los hijos del rey Jehosafat.'
+  checked_on: '2026-10-13'
+  status: verified
+- type: kin
+  person: jehiel-hijo-de-jehosafat
+  word: brother
+  inferred: false
+  sources:
+  - 2-cronicas-21
+  reason: '2Cr 21:2: los dos están entre los hijos de Jehosafat, hermanos de Jehoram.'
+  checked_on: '2026-10-13'
+  status: verified
+- type: kin
+  person: zacarias-hijo-de-jehosafat
+  word: brother
+  inferred: false
+  sources:
+  - 2-cronicas-21
+  reason: '2Cr 21:2: los dos están entre los hijos de Jehosafat, hermanos de Jehoram.'
+  checked_on: '2026-10-13'
+  status: verified
+- type: kin
+  person: azarias-quinto-hijo-de-jehosafat
+  word: brother
+  inferred: false
+  sources:
+  - 2-cronicas-21
+  reason: '2Cr 21:2: los dos están entre los hijos de Jehosafat, hermanos de Jehoram.'
+  checked_on: '2026-10-13'
+  status: verified
+- type: kin
+  person: miguel-hijo-de-jehosafat
+  word: brother
+  inferred: false
+  sources:
+  - 2-cronicas-21
+  reason: '2Cr 21:2: los dos están entre los hijos de Jehosafat, hermanos de Jehoram.'
+  checked_on: '2026-10-13'
+  status: verified
+- type: kin
+  person: sefatias-hijo-de-jehosafat
+  word: brother
+  inferred: false
+  sources:
+  - 2-cronicas-21
+  reason: '2Cr 21:2: los dos están entre los hijos de Jehosafat, hermanos de Jehoram.'
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified

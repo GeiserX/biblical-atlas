@@ -35,6 +35,7 @@ sources:
 - galatas-4
 - josue-24
 - 1-cronicas-1
+- santiago-2
 links:
 - title: 'Perspicacia: «Isaac»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Isaac/
@@ -62,8 +63,9 @@ relations:
   - galatas-4
   - josue-24
   - 1-cronicas-1
+  - santiago-2
   reason: 'Perspicacia «Isaac», párr. 2: único hijo de Abrahán y su esposa Sara (Gé 21:2, 3).'
-  checked_on: '2026-10-12'
+  checked_on: '2026-10-14'
   status: verified
 - type: kin
   person: sara
@@ -190,5 +192,5 @@ relations:
   checked_on: '2026-09-29'
   status: verified
 perspicacia: '1200002203'
-checked_on: '2026-10-12'
+checked_on: '2026-10-14'
 status: verified

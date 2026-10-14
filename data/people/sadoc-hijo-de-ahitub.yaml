@@ -32,6 +32,7 @@ sources:
 - 1-cronicas-24
 - 1-cronicas-27
 - 1-cronicas-29
+- 2-cronicas-31
 links:
 - title: 'Perspicacia: «Sadoc»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sadoc/
@@ -110,5 +111,5 @@ relations:
   reason: '1Cr 27:16, 17: entre los jefes de las tribus de Israel, Sadoc está al frente de los de Aarón.'
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified

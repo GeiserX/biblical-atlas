@@ -39,7 +39,7 @@ perspicacia: 1200002481#9
 not_claimed:
 - 'Que viviera con seguridad en Jerusalén: Perspicacia «Joel, Libro de» solo dice «quizás», y «Toda Escritura» duda entre
   Jerusalén y Judá.'
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified
 relations:
 - type: kin
@@ -90,3 +90,4 @@ distinct_from:
 - joel-hermano-de-natan
 - joel-hijo-de-jehiel
 - joel-hijo-de-pedaya
+- joel-levita-de-ezequias

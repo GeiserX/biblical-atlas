@@ -17,9 +17,10 @@ sources:
 - it-etam
 - openbible-geo
 - 1-cronicas-4
+- 2-cronicas-11
 links:
 - title: 'Perspicacia: «Etam»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Etam/
   type: perspicacia
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified

@@ -21,6 +21,9 @@ sources:
 - 2-cronicas-22
 - tnm-a6-a
 - 2-reyes-8
+- 2-cronicas-21
+- 2-cronicas-23
+- 2-cronicas-24
 links:
 - title: 'Perspicacia: «Atalía»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Atal%C3%ADa/
@@ -36,8 +39,9 @@ relations:
   sources:
   - it-atalia-reina
   - 2-reyes-8
+  - 2-cronicas-21
   reason: Hija de Acab (2Re 8:18).
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-13'
   status: verified
 - type: kin
   person: jezabel
@@ -55,8 +59,9 @@ relations:
   sources:
   - it-atalia-reina
   - 2-reyes-11
+  - 2-cronicas-22
   reason: Tomó el trono al morir su hijo (2Re 11:1-3).
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-13'
   office: queen
   status: verified
 - type: kin
@@ -66,8 +71,9 @@ relations:
   sources:
   - 2-reyes-8
   - it-atalia-reina
+  - 2-cronicas-22
   reason: '2Re 8:26: Atalía, nieta del rey Omrí de Israel; la nota dice que el hebreo pone «hija».'
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-13'
   status: verified
 - type: died_in
   place: jerusalen
@@ -75,16 +81,17 @@ relations:
   sources:
   - 2-reyes-11
   - it-atalia-reina
+  - 2-cronicas-23
   reason: '2Re 11:15, 16, 20: la sacan del templo y la matan junto a la casa del rey, en la ciudad; Perspicacia «Atalía»,
     núm. 1, en la entrada de los caballos del palacio.'
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-13'
   status: verified
 history:
 - date: '2026-09-29'
   change: 'La desambiguación ya no cita el versículo de Hechos del puerto: esa cita ponía a la reina en la página de ese capítulo.'
   source: it-atalia
 perspicacia: 1200000457#1
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified
 distinct_from:
 - atalia-de-benjamin

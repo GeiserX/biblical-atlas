@@ -1,0 +1,21 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: tob-adonias
+name: Tob-Adonías
+names:
+- name: Tob-Adonías
+perspicacia: '1200004436'
+summary: Levita del grupo que Jehosafat mandó en su año tercero a recorrer las ciudades de Judá para instruir al pueblo con
+  el libro de la Ley.
+reason: Perspicacia «Tob-adonías»; 2Cr 17:7-9.
+sources:
+- it-tob-adonias
+- 2-cronicas-17
+links:
+- title: 'Perspicacia: «Tob-adonías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Tob-adon%C3%ADas/
+  type: perspicacia
+not_claimed:
+- 'No decimos que el nombre sea una repetición de copista: Perspicacia solo cuenta que algunos eruditos lo creen, porque el
+  versículo nombra antes a Adonías y a Tobiya.'
+checked_on: '2026-10-13'
+status: verified

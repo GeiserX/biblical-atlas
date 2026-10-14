@@ -1,0 +1,37 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jeiel-levita-de-josias
+name: Jeiel
+names:
+- name: Jeiel
+perspicacia: 1200002406#8
+summary: Jefe de los levitas en tiempos de Josías. Con Conanías, Hasabías, Jozabad y otros jefes, aportó muchos animales que
+  se ofrecieron en la gran Pascua.
+reason: Perspicacia «Jeiel», núm. 8; 2Cr 35:9.
+sources:
+- it-jeiel
+- 2-cronicas-35
+links:
+- title: 'Perspicacia: «Jeiel»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jeiel/
+  type: perspicacia
+disambiguation: Jefe levita de la Pascua de Josías (2Cr 35:9; Perspicacia «Jeiel», núm. 8); no el portero de David ni los
+  demás Jeiel.
+relations:
+- type: holds_office
+  office: leader
+  inferred: false
+  sources:
+  - 2-cronicas-35
+  reason: 2Cr 35:9 lo cuenta entre los jefes de los levitas.
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified
+distinct_from:
+- jaaziel
+- jeiel-de-gabaon
+- jeiel-el-rubenita
+- jeiel-hijo-de-hotam
+- jeiel-portero
+- jeiel-hijo-de-matanias
+- jeiel-secretario

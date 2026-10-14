@@ -24,5 +24,16 @@ relations:
   reason: '1Cr 6:42: Zimá, «hijo de Simeí».'
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+- type: same_as
+  person: zima-padre-de-joa
+  certainty: possible
+  inferred: true
+  sources:
+  - 2-cronicas-29
+  - it-zima
+  reason: Perspicacia «Zimá» trata en un solo artículo al hijo de Jáhat, al hijo de Simeí y al de 2Cr 29:12, y ve posible
+    que sean uno.
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
 status: verified

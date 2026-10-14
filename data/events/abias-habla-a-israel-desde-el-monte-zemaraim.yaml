@@ -1,0 +1,38 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: abias-habla-a-israel-desde-el-monte-zemaraim
+title: Abías habla a Jeroboán y a Israel desde el monte Zemaraim
+type: speech
+date:
+  from: -979
+  to: -977
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 980 y 978 a.e.c. (tiempo narrativo: reinado de Abías)'
+narrative_order:
+  series: 2-cronicas
+  order: 13003
+places:
+- monte-zemaraim
+people:
+- abias-de-juda
+- jeroboan-i
+present:
+- abias-de-juda
+- jeroboan-i
+roles:
+  abias-de-juda: spoke
+passages:
+- 2Cr 13:3-12
+summary: Frente a un ejército que dobla al suyo, Abías recuerda a Israel que Jehová dio el reino a la casa de David, les echa
+  en cara los becerros de oro y sus sacerdotes y les pide no luchar contra Jehová.
+reason: 2Cr 13:1-4 lo pone en el reinado de Abías, de 980 a 978 a.e.c. según la tabla A6-A; Perspicacia «Abías», núm. 5, y
+  «Zemaraim», núm. 2.
+sources:
+- 2-cronicas-13
+- it-abias
+- it-zemaraim
+- tnm-a6-a
+checked_on: '2026-10-13'
+status: verified

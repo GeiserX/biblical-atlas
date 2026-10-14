@@ -15,14 +15,15 @@ narrative_order:
 places:
 - jerusalen
 - juda
+- valle-de-hinon
 people:
 - manases-de-juda
 passages:
 - 2Re 21:2-9
 - 2Re 21:16
 - 2Cr 33:2-9
-summary: Manasés rehace los lugares altos, alza altares a Baal y a los astros hasta en dos patios del templo, mete en él el
-  poste sagrado, quema a su hijo, recurre a médiums y adivinos y derrama mucha sangre inocente.
+summary: Manasés rehace los lugares altos, alza altares a Baal y a los astros hasta en el templo, mete allí el poste sagrado,
+  quema a sus hijos en el valle de Hinón, consulta a médiums y adivinos y derrama sangre inocente.
 reason: 2Re 21:2-9, 16; Perspicacia «Manasés», núm. 4, párr. 1. Pasa en su reinado, de 716 a 661 a.e.c. (tabla A6-B), antes
   de su cautiverio y su arrepentimiento (2Cr 33:11-13).
 sources:
@@ -37,5 +38,10 @@ links:
 - title: 'Perspicacia: «Manasés»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Manas%C3%A9s/
   type: perspicacia
-checked_on: '2026-09-30'
+history:
+- date: '2026-10-13'
+  change: 2Cr 33:6 habla de sus hijos, en plural, y dice que los quemó en el valle del Hijo de Hinón; Perspicacia «Manasés»,
+    núm. 4, también usa el plural. El valle entra en places.
+  source: 2-cronicas-33
+checked_on: '2026-10-13'
 status: verified

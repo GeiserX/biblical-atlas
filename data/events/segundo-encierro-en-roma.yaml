@@ -15,9 +15,16 @@ people:
 - pablo
 - lucas
 - onesiforo
+- eubulo
+- pudente
+- lino
+- claudia
 passages:
 - 2Ti 1:15-17
 - 2Ti 4:6-18
+- 2Ti 1:8
+- 2Ti 2:9
+- 2Ti 4:21
 summary: Tras el incendio de Roma de 64 y la persecución de Nerón, Pablo está de nuevo en cadenas. Muchos lo han
   dejado; solo Lucas está con él y siente cercana su muerte.
 reason: Perspicacia «Timoteo, Cartas a» (marco de Segunda) y el estudio 3 (párr. 28) fechan el encierro hacia 65.
@@ -25,6 +32,17 @@ sources:
 - it-timoteo-cartas
 - si-3
 - 2-timoteo-4
+- 2-timoteo-1
+- 2-timoteo-2
+- it-eubulo
+- it-pudente
+- it-lino
+- it-claudia
 search: Pablo prisión Roma Nerón
-checked_on: '2026-09-28'
+narrative_order:
+  series: hechos
+  order: 2855
+note: 'Orden 2855 de la serie hechos: tras pablo-escribe-1-timoteo (2850) y antes de pablo-escribe-2-timoteo (2860), que se
+  escribe ya en cadenas (2Ti 1:8).'
+checked_on: '2026-10-13'
 status: verified

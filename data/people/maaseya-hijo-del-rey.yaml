@@ -1,0 +1,50 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: maaseya-hijo-del-rey
+name: Maaseya
+names:
+- name: Maaseya
+perspicacia: 1200002811#4
+disambiguation: El «hijo del rey» que mató Zicrí en la invasión de Pécah; no el sacerdote padre de Sofonías, ni el padre de
+  Sedequías, ni el hijo de Salum, ni los demás Maaseya.
+distinct_from:
+- maaseya-hijo-de-salum
+- maaseya-padre-de-sedequias
+- maaseya-padre-de-sofonias
+- maaseya-hijo-de-adaya
+- maaseya-jefe-de-jerusalen
+- maaseya-musico
+- maaseya-funcionario
+date:
+  from: -759
+  to: -759
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 760 a.e.c.
+summary: Hombre de la casa real de Judá al que mató Zicrí, guerrero de Efraín, cuando Pécah invadió Judá. Perspicacia lo ve
+  como descendiente de Acaz o quizá como un funcionario de sangre real.
+reason: Perspicacia «Maaseya», núm. 4; 2Cr 28:6, 7. Fecha de la invasión según Perspicacia «Zicrí», núm. 10.
+sources:
+- it-maaseya
+- 2-cronicas-28
+- it-zicri
+links:
+- title: 'Perspicacia: «Maaseya»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Maaseya/
+  type: perspicacia
+- title: 2 Crónicas 28 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-Cr%C3%B3nicas/28/
+  type: bible
+relations:
+- type: died_in
+  place: juda
+  inferred: true
+  sources:
+  - 2-cronicas-28
+  - it-maaseya
+  reason: '2Cr 28:6, 7: lo mataron en la invasión de Judá; el texto no dice en qué sitio.'
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified

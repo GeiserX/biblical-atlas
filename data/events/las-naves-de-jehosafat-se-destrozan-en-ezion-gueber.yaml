@@ -18,11 +18,12 @@ present: []
 people:
 - jehosafat
 - ocozias-de-israel
+- eliezer-hijo-de-dodavahu
 passages:
 - 1Re 22:48, 49
 - 2Cr 20:35-37
-summary: Jehosafat hace barcos de Tarsis para traer oro de Ofir, pero se destrozan en Ezión-Guéber. Ocozías de Israel le pide
-  que sus siervos vayan en los barcos, y Jehosafat no acepta.
+summary: Jehosafat se asocia con Ocozías de Israel para hacer en Ezión-Guéber barcos que vayan por oro a Ofir. Eliezer hijo
+  de Dodavahu anuncia que Jehová destruirá la obra, y se destrozan. Jehosafat no acepta marineros de Ocozías.
 reason: 'Perspicacia «Ocozías», núm. 1, y «Jehosafat», núm. 3: la empresa naval con Ocozías, sucesor de Acab (2Cr 20:35-37),
   cae en su reinado, c. 920-917 según A6-A. El texto no pone a ningún rey en el puerto.'
 sources:
@@ -30,9 +31,16 @@ sources:
 - tnm-a6-a
 - it-ocozias
 - it-jehosafat
+- 2-cronicas-20
+- it-eliezer
 links:
 - title: 1 Reyes 22 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/1-reyes/22/
   type: bible
-checked_on: '2026-09-30'
+history:
+- date: '2026-10-13'
+  change: El resumen solo seguía a 1 Reyes 22; Crónicas añade la sociedad con Ocozías y la profecía de Eliezer (2Cr 20:35-37;
+    Perspicacia «Ocozías», núm. 1).
+  source: 2-cronicas-20
+checked_on: '2026-10-13'
 status: verified

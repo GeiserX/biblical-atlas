@@ -1,0 +1,35 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: los-de-jerusalen-hacen-rey-a-ocozias
+title: Los habitantes de Jerusalén hacen rey a Ocozías
+date:
+  from: -905
+  to: -905
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 906 a.e.c.
+narrative_order:
+  series: 2-cronicas
+  order: 22001
+places:
+- jerusalen
+people:
+- ocozias-de-juda
+present:
+- ocozias-de-juda
+passages:
+- 2Cr 22:1, 2
+summary: Muerto Jehoram, los de Jerusalén ponen en el trono a Ocozías, su hijo menor, porque los saqueadores venidos con los
+  árabes habían matado a los mayores. Tiene 22 años y reina uno.
+reason: 2Cr 22:1, 2. Perspicacia «Ocozías», núm. 2, pone su año de reinado hacia 906 a.e.c., como la tabla A6-A.
+sources:
+- 2-cronicas-22
+- it-ocozias
+- tnm-a6-a
+links:
+- title: 'Perspicacia: «Ocozías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ocoz%C3%ADas/
+  type: perspicacia
+checked_on: '2026-10-13'
+status: verified

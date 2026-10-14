@@ -1,0 +1,36 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: amarias-ayudante-de-core
+name: Amarías
+names:
+- name: Amarías
+perspicacia: 1200000219#5
+disambiguation: Ayudante de Coré en tiempos de Ezequías (2Cr 31:15). Perspicacia «Amarías», núm. 5; no es ninguno de los sacerdotes
+  ni de los otros levitas con ese nombre.
+distinct_from:
+- amarias-hebronita
+- amarias-hijo-de-azarias
+- amarias-hijo-de-ezequias
+- amarias-hijo-de-merayot
+- amarias-sacerdote-principal
+summary: Levita que, en el reinado de Ezequías, repartía con fidelidad las porciones de sus hermanos en las ciudades de los
+  sacerdotes, bajo la dirección del portero Coré.
+reason: Perspicacia «Amarías», núm. 5; 2Cr 31:14, 15.
+sources:
+- it-amarias
+- 2-cronicas-31
+links:
+- title: 'Perspicacia: «Amarías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Amar%C3%ADas/
+  type: perspicacia
+relations:
+- inferred: false
+  type: accompanies
+  person: core-hijo-de-imna
+  word: fellow_worker
+  sources:
+  - 2-cronicas-31
+  reason: '2Cr 31:15: repartía las porciones en las ciudades de los sacerdotes bajo la dirección de Coré.'
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified

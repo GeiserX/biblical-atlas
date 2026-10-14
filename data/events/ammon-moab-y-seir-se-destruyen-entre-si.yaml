@@ -1,0 +1,42 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: ammon-moab-y-seir-se-destruyen-entre-si
+title: Ammón, Moab y Seír se destruyen entre sí ante Judá
+date:
+  from: -919
+  to: -916
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre c. 920 y c. 917 a.e.c. (tiempo narrativo: tras Ramot-Galaad y antes de la alianza con Ocozías de Israel)'
+narrative_order:
+  series: 2-cronicas
+  order: 20020
+  elapsed:
+    days: 1
+    reason: '2Cr 20:20: salen temprano a la mañana siguiente.'
+places:
+- tecoa
+- desierto-de-jeruel
+- paso-de-ziz
+people:
+- jehosafat
+passages:
+- 2Cr 20:20-25
+summary: 'Judá sale al desierto de Tecoa con cantores delante del ejército. Mientras alaban, Jehová tiende una emboscada:
+  Ammón y Moab acaban con los de Seír y luego entre ellos. Recoger el botín lleva tres días.'
+reason: 'Al día siguiente de la asamblea (2Cr 20:20). Perspicacia «Teqoa»: el desierto de Tecoa, al este de la ciudad, parece
+  parte del desierto de Judá. Fechas de muerte-de-acab y las-naves-de-jehosafat-se-destrozan-en-ezion-gueber.'
+sources:
+- 2-cronicas-20
+- it-teqoa
+- it-jeruel
+- it-ziz
+- it-jehosafat
+- tnm-a6-a
+links:
+- title: 2 Crónicas 20 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-Cr%C3%B3nicas/20/
+  type: bible
+checked_on: '2026-10-13'
+status: verified

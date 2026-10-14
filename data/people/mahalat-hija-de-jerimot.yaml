@@ -1,0 +1,42 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: mahalat-hija-de-jerimot
+name: Mahalat
+names:
+- name: Mahalat
+perspicacia: 1200002840#2
+disambiguation: Mahalat, esposa de Rehoboam y nieta de David (2Cr 11:18); no la hija de Ismael que se casó con Esaú.
+distinct_from:
+- mahalat-hija-de-ismael
+summary: 'Nieta de David por su hijo Jerimot; su madre fue Abihail. Se casó con Rehoboam y le dio tres hijos: Jeús, Semarías
+  y Zaham.'
+reason: Perspicacia «Mahalat, I», núm. 2; 2Cr 11:18, 19.
+sources:
+- it-mahalat
+- 2-cronicas-11
+links:
+- title: 'Perspicacia: «Mahalat, I»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Mahalat-I/
+  type: perspicacia
+relations:
+- type: kin
+  person: jerimot-hijo-de-david
+  word: father
+  inferred: false
+  sources:
+  - 2-cronicas-11
+  - it-mahalat
+  reason: '2Cr 11:18: era hija de Jerimot, hijo de David.'
+  checked_on: '2026-10-13'
+  status: verified
+- type: kin
+  person: abihail-hija-de-eliab
+  word: mother
+  inferred: false
+  sources:
+  - 2-cronicas-11
+  - it-abihail
+  reason: '2Cr 11:18: era hija también de Abihail, la hija de Eliab.'
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified

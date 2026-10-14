@@ -1,0 +1,25 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: adaya-padre-de-maaseya
+name: Adaya
+names:
+- name: Adaya
+perspicacia: 1200000087#3
+disambiguation: Adaya padre de Maaseya, el jefe de cien de tiempos de Jehoiadá; no Adaya de Bozcat, abuelo de Josías, ni los
+  demás Adaya de Perspicacia.
+distinct_from:
+- adaya-padre-de-jedida
+- adaya-hijo-de-etan
+- adaya-hijo-de-jeroham
+- adaya-hijo-de-simei
+summary: Padre de Maaseya, que fue jefe de cien y ayudó al sacerdote Jehoiadá a acabar con el gobierno de Atalía y a sentar
+  a Jehoás en el trono de Judá.
+reason: Perspicacia «Adaya», núm. 3; 2Cr 23:1.
+sources:
+- it-adaya
+- 2-cronicas-23
+links:
+- title: 'Perspicacia: «Adaya»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Adaya/
+  type: perspicacia
+checked_on: '2026-10-13'
+status: verified
