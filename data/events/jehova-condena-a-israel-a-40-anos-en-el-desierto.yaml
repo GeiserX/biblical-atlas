@@ -37,6 +37,9 @@ passages:
 - Jos 5:4-6
 - 1Co 10:5
 - 1Co 10:10
+- Heb 3:10, 11
+- Heb 3:17, 18
+- Heb 4:3, 5, 6
 - Eze 20:15-17
 summary: Moisés intercede y Jehová perdona, pero los registrados de 20 años o más morirán en el desierto en 40 años, uno por
   cada día de exploración. Se salvan Caleb y Josué; los diez del mal informe morirán.
@@ -49,6 +52,8 @@ sources:
 - salmos-95
 - salmos-106
 - 1-corintios-10
+- hebreos-3
+- hebreos-4
 - ezequiel-20
 links:
 - title: Números 14 (TNM)
@@ -57,5 +62,5 @@ links:
 - title: 'Perspicacia: «Espías»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Esp%C3%ADas/
   type: perspicacia
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified
