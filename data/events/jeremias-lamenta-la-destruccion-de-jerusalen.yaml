@@ -1,0 +1,63 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jeremias-lamenta-la-destruccion-de-jerusalen
+title: Jeremías lamenta la destrucción de Jerusalén
+date:
+  from: -606
+  to: -606
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 607 a.e.c.
+narrative_order:
+  series: lamentaciones
+  order: 1001
+  after: destruccion-de-jerusalen-607
+places:
+- jerusalen
+- juda
+people:
+- jeremias-profeta
+present: []
+passages:
+- Lam 1:1-5:22
+summary: En cinco poemas, Jeremías llora la caída de Jerusalén ante Babilonia. Reconoce que Jehová castigó con justicia el
+  pecado del pueblo y confía en que su misericordia lo hará volver.
+reason: 'Estudio 3: 607 a.e.c., tras dejar los judíos Judá en el mes séptimo. Va tras la destrucción y no tras la huida a Egipto:
+  la tabla dice cerca de Jerusalén y Perspicacia, poco después de la caída.'
+sources:
+- lamentaciones-1
+- si-3
+- tnm-tabla
+- it-lamentaciones-libro
+- si-lamentaciones
+- w07-lamentaciones
+- w88-lamentaciones
+- it-jeremias
+- lamentaciones-2
+- lamentaciones-3
+- it-grava
+- lamentaciones-4
+- lamentaciones-5
+- it-hambre
+links:
+- title: Lamentaciones 1 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/lamentaciones/1/
+  type: bible
+- title: 'Perspicacia: «Lamentaciones, Libro de»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Lamentaciones-Libro-de/
+  type: perspicacia
+- title: Lamentaciones 2 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/lamentaciones/2/
+  type: bible
+- title: Lamentaciones 3 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/lamentaciones/3/
+  type: bible
+- title: Lamentaciones 4 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/lamentaciones/4/
+  type: bible
+- title: Lamentaciones 5 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/lamentaciones/5/
+  type: bible
+checked_on: '2026-10-13'
+status: verified

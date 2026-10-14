@@ -498,6 +498,9 @@ test('1440: dragging moves time, the ruler moves the cursor, the wheel zooms at 
   assert.ok(Math.abs((f.vista[1] - f.vista[0]) - (e.vista[1] - e.vista[0])) > 1e-6);
   // The map follows the cursor: Pablo's marker moves when the ruler takes the cursor from 50 to 57.
   await goTo(p, 50.5, 40);
+  // MapLibre and its worker come from unpkg, so the map can still be loading after the steps above: on 2026-10-13 the
+  // worker took 4 s and both reads below came back null. The marker has to be on the map before it can move.
+  await p.waitForFunction(() => document.querySelector('.maplibregl-marker.pablo'), null, { timeout: 30000 });
   const pablo = () => p.evaluate(() => { const m = document.querySelector('.maplibregl-marker.pablo'); return m ? `${m.style.transform}|${m.isConnected}` : null; });
   const m0 = await pablo();
   const x57 = await p.evaluate(() => { const BE = window.BE, r = document.querySelector('#pista').getBoundingClientRect(); return [r.left + ((57.3 - BE.E.vista[0]) / (BE.E.vista[1] - BE.E.vista[0])) * r.width, r.top + r.height / 2]; });
