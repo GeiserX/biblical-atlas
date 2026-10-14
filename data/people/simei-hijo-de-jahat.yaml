@@ -21,6 +21,7 @@ distinct_from:
 - simei-partidario-de-david
 - simei-levita-de-ezequias
 - simei-hermano-de-conanias
+- simei-antepasado-de-mardoqueo
 summary: Levita guersonita, hijo de Jáhat y antepasado de Asaf.
 reason: Perspicacia «Simeí», núm. 4; 1Cr 6:42, 43.
 sources:
@@ -40,5 +41,5 @@ relations:
   reason: '1Cr 6:42, 43: Simeí, «hijo de Jáhat».'
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified

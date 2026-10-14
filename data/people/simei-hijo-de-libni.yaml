@@ -21,6 +21,7 @@ distinct_from:
 - simei-partidario-de-david
 - simei-levita-de-ezequias
 - simei-hermano-de-conanias
+- simei-antepasado-de-mardoqueo
 summary: Levita merarita, hijo de Libní y padre de Uzá.
 reason: Perspicacia «Simeí», núm. 3; 1Cr 6:29.
 sources:
@@ -40,5 +41,5 @@ relations:
   reason: '1Cr 6:29, 30: «su hijo Simeí», tras Libní.'
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified

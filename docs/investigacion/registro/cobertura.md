@@ -34,7 +34,7 @@ Qué versículos de la TNM se han leído y apuntado en `data/coverage/<libro>.ya
 | [2 Crónicas](https://github.com/GeiserX/biblical-atlas/blob/main/data/coverage/2-cronicas.yaml) | 36 de 36 | 822 de 822 | 100 % |
 | Esdras | 0 de 10 | 0 de 280 | 0 % |
 | Nehemías | 0 de 13 | 0 de 406 | 0 % |
-| Ester | 0 de 10 | 0 de 167 | 0 % |
+| [Ester](https://github.com/GeiserX/biblical-atlas/blob/main/data/coverage/ester.yaml) | 10 de 10 | 167 de 167 | 100 % |
 | [Job](https://github.com/GeiserX/biblical-atlas/blob/main/data/coverage/job.yaml) | 42 de 42 | 1070 de 1070 | 100 % |
 | [Salmos](https://github.com/GeiserX/biblical-atlas/blob/main/data/coverage/salmos.yaml) | 150 de 150 | 2461 de 2461 | 100 % |
 | [Proverbios](https://github.com/GeiserX/biblical-atlas/blob/main/data/coverage/proverbios.yaml) | 31 de 31 | 915 de 915 | 100 % |
@@ -84,7 +84,7 @@ Qué versículos de la TNM se han leído y apuntado en `data/coverage/<libro>.ya
 | 3 Juan | 0 de 1 | 0 de 14 | 0 % |
 | Judas | 0 de 1 | 0 de 25 | 0 % |
 | Apocalipsis | 0 de 22 | 0 de 404 | 0 % |
-| **Total** | 1119 de 1189 | 29587 de 31062 | 95 % |
+| **Total** | 1129 de 1189 | 29754 de 31062 | 96 % |
 
 ## Capítulos empezados
 

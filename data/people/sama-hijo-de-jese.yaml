@@ -38,6 +38,7 @@ distinct_from:
 - simei-el-ramatita
 - simei-levita-de-ezequias
 - simei-hermano-de-conanias
+- simei-antepasado-de-mardoqueo
 summary: Tercer hijo de Jesé y hermano mayor de David, el tercero que Samuel descartó para rey. Estaba en el ejército de Saúl
   cuando Goliat retaba a Israel. Jonatán, hijo suyo, acabó con uno de los gigantes filisteos.
 reason: Perspicacia «Samah», núm. 2; 1Sa 16:9; 17:13.
@@ -84,5 +85,5 @@ relations:
   reason: '1Sa 16:13: Samuel unge a David delante de sus hermanos.'
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified

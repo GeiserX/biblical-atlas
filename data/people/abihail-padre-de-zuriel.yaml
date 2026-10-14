@@ -32,9 +32,10 @@ relations:
   reason: 'Perspicacia «Abiháil», núm. 1: era de la familia de Merarí (Nú 3:35).'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified
 distinct_from:
 - abihail-esposa-de-abisur
 - abihail-hijo-de-huri
 - abihail-hija-de-eliab
+- abihail-padre-de-ester

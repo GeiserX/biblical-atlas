@@ -5,30 +5,32 @@ date:
   from: -488
   to: -488
   precision: month
-  approx: false
+  approx: true
   type: derived
   chronology: tnm
-  text: 489 a.e.c. (cálculo nuestro)
+  text: tebet de 489 a.e.c. (cálculo nuestro)
   detail:
     month: tebet
-  note: Est 2:16 da el mes de tebet del año séptimo de Asuero. Si su primer año es 495, como explica Perspicacia, el séptimo
-    es 489.
+  note: Est 2:16 da el tebet del año séptimo de Asuero. Contando 495 como su primer año («Asuero», núm. 3), es 489; Perspicacia
+    «Vasti» la pone unos cuatro años después de 493.
 places:
 - susa
 people:
 - ester
 - jerjes-i
 - mardoqueo
+- hegai
 passages:
 - Est 2:15-18
 summary: Asuero eligió a Ester entre las jóvenes reunidas para sustituir a Vasti y la hizo reina. Ester, aconsejada por
   Mardoqueo, no reveló que era judía.
-reason: 'Perspicacia «Ester» y «Asuero», núm. 3: elegida en el séptimo año. Ninguna fuente da 489: es nuestra cuenta, por
-  eso queda pendiente.'
+reason: 'Est 2:16, 17: tebet del año séptimo de Asuero. Perspicacia «Vasti»: unos cuatro años después de su caída, en 493.
+  Ninguna fuente da 489: es nuestra cuenta, por eso queda pendiente.'
 sources:
 - it-ester
 - it-asuero
 - ester-2
+- it-vasti
 links:
 - title: 'Perspicacia: «Ester»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ester/
@@ -36,5 +38,16 @@ links:
 - title: Ester 2 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/ester/2/
   type: bible
-checked_on: '2026-09-28'
+narrative_order:
+  series: ester
+  order: 2015
+history:
+- date: '2026-10-14'
+  change: Perspicacia «Vasti» pone la elección unos cuatro años después de 493, y Est 2:16 da el tebet del año séptimo. El
+    año sigue siendo cuenta nuestra, ahora aproximada.
+  source: it-vasti
+- date: '2026-10-14'
+  change: La razón cita Est 2:16, 17 y Perspicacia «Vasti».
+  source: ester-2
+checked_on: '2026-10-14'
 status: pending

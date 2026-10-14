@@ -10,6 +10,7 @@ distinct_from:
 - quis-hijo-de-ner
 - quis-hijo-de-mahli
 - quis-hijo-de-abdi
+- quis-antepasado-de-mardoqueo
 summary: Benjamita, hijo de Jeiel y de su esposa Maacá. Era hermano de Ner, abuelo de Saúl, y por eso tío del Quis padre del
   rey.
 reason: Perspicacia «Quis», núm. 2; 1Cr 8:29-31.
@@ -53,5 +54,5 @@ relations:
   reason: 1Cr 9:36 pone a Quis y a Ner entre los hijos de Jeiel; Perspicacia «Quis», núm. 2, los llama hermanos.
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified

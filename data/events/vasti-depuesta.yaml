@@ -13,18 +13,47 @@ places:
 - susa
 people:
 - jerjes-i
+- vasti
+- mehuman
+- bizta
+- harbona
+- bigta
+- abagta
+- zetar
+- carcas
+- carsena
+- setar
+- admata
+- tarsis-principe-de-asuero
+- meres
+- marsena
+- memucan
 passages:
-- Est 1:1-22
-summary: En el tercer año de su reinado, Asuero mostró su riqueza y dio un banquete en Susa. La reina Vasti se negó a presentarse
-  ante los invitados y el rey la repudió.
+- Est 1:5-22
+summary: El séptimo día de un banquete en Susa, Asuero manda llamar a Vasti para lucir su belleza. Ella se niega; por consejo
+  de Memucán, el rey la aparta como reina y lo comunica por carta a todas las provincias.
 reason: 'Perspicacia «Asuero», núm. 3, y «Ester, Libro de», apartado «Marco histórico»: los primeros sucesos del libro caen
   en el tercer año del rey, 493.'
 sources:
 - it-asuero
 - it-ester-libro
+- ester-1
+- it-vasti
+- it-memucan
 links:
 - title: 'Perspicacia: «Ester, Libro de»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ester-Libro-de/
   type: perspicacia
-checked_on: '2026-09-28'
+history:
+- date: '2026-10-14'
+  change: Est 1:1-4, los 180 días en que el rey mostró su riqueza, pasan a un suceso propio (asuero-muestra-la-riqueza-de-su-reino);
+    este queda en el banquete de siete días y la caída de Vasti.
+  source: ester-1
+- date: '2026-10-14'
+  change: El resumen se ciñe a Est 1:5-22 y nombra a Memucán, cuyo consejo decide la caída de Vasti.
+  source: ester-1
+narrative_order:
+  series: ester
+  order: 1005
+checked_on: '2026-10-14'
 status: verified

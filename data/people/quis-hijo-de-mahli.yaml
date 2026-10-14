@@ -9,6 +9,7 @@ distinct_from:
 - quis-hijo-de-ner
 - quis-hijo-de-jeiel
 - quis-hijo-de-abdi
+- quis-antepasado-de-mardoqueo
 summary: Levita de la rama de Merarí, hijo de Mahlí. Al morir su hermano Eleazar dejando solo hijas, los hijos de Quis se
   casaron con ellas. Jerahmeel era hijo suyo.
 reason: Perspicacia «Quis», núm. 1; 1Cr 23:21, 22; 24:29.
@@ -31,5 +32,5 @@ relations:
   reason: 1Cr 23:21 lo da como hijo de Mahlí, junto a Eleazar.
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified

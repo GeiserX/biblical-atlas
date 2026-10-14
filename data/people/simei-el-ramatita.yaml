@@ -22,6 +22,7 @@ distinct_from:
 - simei-padre-de-jaquim
 - simei-levita-de-ezequias
 - simei-hermano-de-conanias
+- simei-antepasado-de-mardoqueo
 summary: Ramatita encargado de las viñas del rey David. Perspicacia dice que venía de alguna de las ciudades llamadas Ramá,
   sin poder decir cuál.
 reason: Perspicacia «Simeí», núm. 10, y «Ramatita»; 1Cr 27:27.
@@ -46,5 +47,5 @@ relations:
   reason: '1Cr 27:27, 31: tenía a su cargo las viñas; era uno de los que administraban la hacienda del rey.'
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified
