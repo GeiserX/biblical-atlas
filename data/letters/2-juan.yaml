@@ -14,7 +14,8 @@ date:
   chronology: tnm
   text: c. 98 e.c.
 recipients:
-  text: '«La señora escogida y sus hijos»: quizá una congregación, quizá una mujer concreta.'
+  text: '«La señora escogida y sus hijos»: una mujer, quizá llamada Kiria («señora» en griego), o una congregación así nombrada
+    para despistar a los perseguidores. La Atalaya de 2008 y Perspicacia dejan abiertas las dos lecturas.'
 context_origin:
   summary: «El anciano» escribe desde Éfeso o cerca hacia 98; Perspicacia calcula que tendría entre noventa y cien
     años.
@@ -31,6 +32,9 @@ sources:
 - si-3
 - it-juan-cartas
 - 2-juan-1
+- si-2-juan
+- w08-cartas-de-juan-y-judas
+- w24-sacados-de-la-congregacion
 links:
 - title: 'Perspicacia: «Juan, Cartas de»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Juan-Cartas-de/
@@ -38,5 +42,10 @@ links:
 - title: 2 Juan 1 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-juan/1/
   type: bible
-checked_on: '2026-09-28'
+history:
+- date: '2026-10-14'
+  change: 'Añade lo que dicen las fuentes sobre la destinataria: el nombre Kiria como posibilidad y el motivo de los perseguidores
+    (La Atalaya de 2008; «Toda Escritura», libro 63, párr. 1). Ninguna decide entre mujer y congregación.'
+  source: w08-cartas-de-juan-y-judas
+checked_on: '2026-10-14'
 status: verified

@@ -8,6 +8,9 @@ names:
   note: 'Sobrenombre que Jesús dio a él y a Santiago: «hijos del trueno» (Mr 3:17).'
 - name: el discípulo al que Jesús amaba
   note: Así se nombra a sí mismo en su Evangelio.
+- name: el anciano
+  note: Así se presenta en 2Jn 1. «Toda Escritura», libro 63, párr. 2, lo explica por su edad y porque, como columna y último
+    apóstol vivo, era anciano de la congregación.
 disambiguation: El apóstol, hijo de Zebedeo. No es Juan el Bautista, ni Juan Marcos, ni el gobernante Juan de Hch
   4:6, ni Juan el padre de Pedro.
 date:
@@ -58,6 +61,8 @@ sources:
 - hechos-5
 - hechos-8
 - galatas-2
+- 2-juan-1
+- si-2-juan
 distinct_from:
 - juan-el-bautista
 - juan-marcos
@@ -117,9 +122,11 @@ relations:
   - bt-4
   - it-juan-cartas
   - tnm-tabla
+  - 2-juan-1
+  - si-2-juan
   reason: La Tabla pone sus cartas en «Éfeso o cerca» y el libro «Testimonio completo» dice que, según se cree, se fue allí
     al salir libre.
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-14'
   status: verified
 - type: died_in
   place: efeso
@@ -227,5 +234,5 @@ links:
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/apocalipsis/1/
   type: bible
 perspicacia: 1200002489#3
-checked_on: '2026-10-02'
+checked_on: '2026-10-14'
 status: verified
