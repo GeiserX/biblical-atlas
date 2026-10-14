@@ -1,0 +1,46 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: un-escapado-anuncia-a-ezequiel-la-caida-de-jerusalen
+title: Un escapado de Jerusalén anuncia a Ezequiel que la ciudad ha caído
+date:
+  from: -606
+  to: -606
+  precision: day
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 5 de tebet de 607 a.e.c.
+  detail:
+    month: tebet
+    day: 5
+narrative_order:
+  series: ezequiel
+  order: 233021
+places:
+- tel-abib
+- caldea
+- jerusalen
+people:
+- ezequiel
+present:
+- ezequiel
+passages:
+- Eze 33:21, 22
+summary: Medio año después de que Babilonia arrasara Jerusalén, un hombre que huyó de la ciudad llega adonde está Ezequiel
+  con la noticia. La noche antes, Jehová le abre la boca y deja de estar mudo.
+reason: 'Eze 33:21: día 5 del mes décimo, tebet. «Toda Escritura», libro 26, párr. 24 y nota c, da 607; La Atalaya de 2003
+  y 2007, seis meses tras la destrucción. Ezequiel vivía en Tel-abib (Perspicacia «Ezequiel»).'
+sources:
+- ezequiel-33
+- si-ezequiel
+- w03-ezequiel-mudo
+- w07-ezequiel-2
+- it-ezequiel
+links:
+- title: 'Perspicacia: «Ezequiel»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ezequiel/
+  type: perspicacia
+- title: Ezequiel 33 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/ezequiel/33/
+  type: bible
+checked_on: '2026-10-13'
+status: verified

@@ -1,0 +1,43 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: ezequiel-representa-la-salida-al-destierro
+title: Ezequiel representa la salida al destierro
+date:
+  from: -611
+  to: -611
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 612 a.e.c.
+narrative_order:
+  series: ezequiel
+  order: 12001
+places:
+- tel-abib
+- caldea
+- jerusalen
+- babilonia
+people:
+- ezequiel
+present:
+- ezequiel
+passages:
+- Eze 12:1-16
+summary: 'Ante los desterrados, Ezequiel saca de día su equipaje, al anochecer abre un boquete en la pared y sale con la carga
+  al hombro y la cara tapada. A la mañana explica la señal: el jefe de Jerusalén irá cautivo.'
+reason: La Atalaya de febrero de 2018 (nota del párr. 2) pone los capítulos 8 a 19 en el sexto año del destierro, 612. Lo
+  hizo ante los desterrados (Eze 12:7), en Tel-abib (Perspicacia «Ezequiel»).
+sources:
+- ezequiel-12
+- w18-noe-daniel-job
+- si-ezequiel
+- it-ezequiel-libro
+- rr-te-ha-llegado-el-fin
+- it-sedequias
+- it-ezequiel
+links:
+- title: Ezequiel 12 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/ezequiel/12/
+  type: bible
+checked_on: '2026-10-13'
+status: verified

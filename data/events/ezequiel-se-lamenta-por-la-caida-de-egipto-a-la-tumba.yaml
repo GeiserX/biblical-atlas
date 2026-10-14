@@ -1,0 +1,44 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: ezequiel-se-lamenta-por-la-caida-de-egipto-a-la-tumba
+title: Ezequiel se lamenta por la caída de Egipto a la Tumba
+type: speech
+date:
+  from: -605
+  to: -605
+  precision: year
+  approx: false
+  type: derived
+  chronology: tnm
+  text: 606 a.e.c.
+  note: 'Eze 32:17: año 12, día 15, sin mes. Con el noveno en 609 («Toda Escritura», párr. 20) da 606. No casa con Eze 33:21, también del año 12, en 607 según el párr. 24 (nota c: manuscritos con «año undécimo»).'
+places:
+- tel-abib
+- caldea
+- egipto
+people:
+- ezequiel
+present:
+- ezequiel
+roles:
+  ezequiel: spoke
+passages:
+- Eze 32:17-32
+summary: 'En el mismo año 12 del destierro, Ezequiel se lamenta por Egipto: bajará a la Tumba, donde ya yacen Asiria, Elam,
+  Mesec y Tubal, Edom y los sidonios, y allí el faraón se consolará al verlos.'
+reason: Eze 32:17-32. Perspicacia «Egipto, egipcio» lee el capítulo como juicio en lenguaje simbólico, y «Elam» cuenta a Elam
+  entre las naciones que bajan al Seol. Sin narrative_order, como Eze 32:1. Lugar deducido de Perspicacia «Ezequiel».
+sources:
+- ezequiel-32
+- it-egipto
+- it-elam
+- it-ezequiel
+- si-ezequiel
+links:
+- title: Ezequiel 32 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/ezequiel/32/
+  type: bible
+- title: 'Perspicacia: «Ezequiel»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ezequiel/
+  type: perspicacia
+checked_on: '2026-10-13'
+status: pending

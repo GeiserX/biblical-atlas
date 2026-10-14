@@ -1,0 +1,48 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jaazanias-hijo-de-azur
+name: Jaazanías
+names:
+- name: Jaazanías
+perspicacia: 1200002264#3
+disambiguation: Jaazanías hijo de Azur, uno de los 25 hombres de la puerta oriental en la visión de Eze 11 (núm. 3 de Perspicacia);
+  no el recabita, ni el hijo de Safán, ni el jefe militar.
+distinct_from:
+- jaazanias-hijo-de-jeremias
+- jaazanias-jefe-militar
+- jaazanias-hijo-de-safan
+summary: Príncipe del pueblo en Jerusalén, hijo de Azur. En la visión de 612 a.e.c. Ezequiel lo ve con otros 24 hombres que
+  tramaban el mal y aconsejaban mal en la ciudad, y profetiza contra ellos.
+reason: Perspicacia «Jaazanías», núm. 3; Eze 11:1-4. El año de la visión, en «Toda Escritura», libro 26, párr. 12.
+sources:
+- it-jaazanias
+- ezequiel-11
+- si-ezequiel
+links:
+- title: 'Perspicacia: «Jaazanías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jaazan%C3%ADas/
+  type: perspicacia
+- title: Ezequiel 11 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/ezequiel/11/
+  type: bible
+relations:
+- type: kin
+  person: azur-padre-de-jaazanias
+  word: father
+  sources:
+  - ezequiel-11
+  - it-azur
+  reason: Eze 11:1 lo llama Jaazanías hijo de Azur; Perspicacia «Azur», núm. 2.
+  inferred: false
+  checked_on: '2026-10-13'
+  status: verified
+- type: lived_in
+  place: jerusalen
+  sources:
+  - ezequiel-11
+  - it-jaazanias
+  reason: 'Eze 11:1-3: príncipe del pueblo que daba malos consejos en «esta ciudad», Jerusalén según la nota de 11:3.'
+  inferred: false
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified

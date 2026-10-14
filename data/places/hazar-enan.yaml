@@ -3,9 +3,9 @@ id: hazar-enan
 name: Hazar-Enán
 names:
 - name: Hazar-Enán
-  note: Quizá «poblado de la fuente» (Perspicacia).
+  note: Quizá «poblado de la fuente» (Perspicacia). Es la forma de Nú 34:9, 10 y también de Eze 48:1.
 - name: Hazar-Enón
-  note: Forma que usa Ezequiel en su visión (Perspicacia).
+  note: Forma de Eze 47:17 en la visión de Ezequiel; Perspicacia da las dos.
 type: city
 lat: 34.229444
 lon: 37.240556
@@ -21,6 +21,8 @@ sources:
 - it-hazar-enan
 - openbible-geo
 - numeros-34
+- ezequiel-47
+- ezequiel-48
 links:
 - title: 'Perspicacia: «Hazar-enán, Hazar-enón»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hazar-en%C3%A1n-Hazar-en%C3%B3n/
@@ -28,5 +30,9 @@ links:
 - title: Números 34 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/N%C3%BAmeros/34/
   type: bible
-checked_on: '2026-09-29'
+history:
+- date: '2026-10-13'
+  change: La nota de Hazar-Enón decía que es la forma de Ezequiel, pero la TNM solo la usa en Eze 47:17; Eze 48:1 dice Hazar-Enán.
+  source: ezequiel-48
+checked_on: '2026-10-13'
 status: verified

@@ -1,0 +1,30 @@
+# biblical-atlas: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: arvad
+name: Arvad
+names:
+- name: Arvad
+- name: Arwad
+  note: Nombre actual de la isla con la que hoy se la relaciona, según Perspicacia.
+type: island
+lat: 34.856111
+lon: 35.858333
+precision: point
+coord_source: openbible:afbf1b5
+coord_url: https://www.openbible.info/geo/ancient/afbf1b5/arvad
+coord_note: Punto de OpenBible en la isla de Arwad, con la que Perspicacia relaciona Arvad.
+summary: Islote de roca frente a la costa norte de Siria, a unos 186 km de Tiro, poblado por descendientes de Canaán. Sus
+  hombres remaban en la flota tiria y vigilaban las murallas de la ciudad.
+reason: 'Perspicacia «Arvad»; Eze 27:8, 11. Coordenada de OpenBible: solo tomamos el punto.'
+sources:
+- it-arvad
+- openbible-geo
+- ezequiel-27
+links:
+- title: 'Perspicacia: «Arvad»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Arvad/
+  type: perspicacia
+- title: Ezequiel 27 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/ezequiel/27/
+  type: bible
+checked_on: '2026-10-13'
+status: verified

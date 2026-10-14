@@ -20,6 +20,7 @@ sources:
 - it-mesec
 - salmos-120
 - openbible-geo
+- ezequiel-27
 links:
 - title: 'Perspicacia: «Mesec»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Mesec/
@@ -27,5 +28,5 @@ links:
 - title: Salmo 120 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/salmos/120/
   type: bible
-checked_on: '2026-09-29'
+checked_on: '2026-10-13'
 status: verified

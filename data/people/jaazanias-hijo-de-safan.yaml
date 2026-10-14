@@ -1,0 +1,48 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jaazanias-hijo-de-safan
+name: Jaazanías
+names:
+- name: Jaazanías
+perspicacia: 1200002264#2
+disambiguation: 'El hijo de Safán, núm. 2 de Perspicacia «Jaazanías»: el único anciano con nombre de la visión del templo.
+  No es el jefe recabita, ni el hijo de Azur, ni el jefe militar de 607.'
+distinct_from:
+- jaazanias-hijo-de-jeremias
+- jaazanias-jefe-militar
+- jaazanias-hijo-de-azur
+date:
+  from: -611
+  to: -611
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 612 a.e.c.
+summary: Hijo de Safán, el secretario de Josías. En la visión de 612 a.e.c., Ezequiel lo ve en el templo entre 70 ancianos
+  que quemaban incienso ante imágenes grabadas. Al parecer, a diferencia de sus hermanos, no apoyaba la adoración verdadera.
+reason: Perspicacia «Jaazanías», núm. 2, y «Safán», párr. 2; La Atalaya del 15 de diciembre de 2002; Eze 8:1, 10-12.
+sources:
+- it-jaazanias
+- it-safan
+- w02-safan-y-su-familia
+- ezequiel-8
+- rr-cosas-detestables-en-el-templo
+links:
+- title: 'Perspicacia: «Jaazanías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jaazan%C3%ADas/
+  type: perspicacia
+relations:
+- type: kin
+  person: safan
+  word: father
+  inferred: false
+  sources:
+  - ezequiel-8
+  - it-safan
+  - w02-safan-y-su-familia
+  reason: Eze 8:11 lo llama hijo de Safán; Perspicacia «Safán» y La Atalaya de 2002 lo cuentan entre los cuatro hijos del
+    secretario de Josías.
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified

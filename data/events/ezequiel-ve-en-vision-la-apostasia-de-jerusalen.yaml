@@ -1,0 +1,63 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: ezequiel-ve-en-vision-la-apostasia-de-jerusalen
+title: Ezequiel ve en visión la apostasía de Jerusalén
+date:
+  from: -611
+  to: -611
+  precision: day
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 5 de elul de 612 a.e.c.
+  detail:
+    month: elul
+    day: 5
+narrative_order:
+  series: ezequiel
+  order: 8001
+places:
+- tel-abib
+- caldea
+- jerusalen
+- monte-moria
+people:
+- ezequiel
+- jaazanias-hijo-de-safan
+- jaazanias-hijo-de-azur
+- pelatias-hijo-de-benaya
+present:
+- ezequiel
+passages:
+- Eze 8:1-11:25
+summary: 'Desde su casa, ante ancianos desterrados, Ezequiel va en visión al templo de Jerusalén: ídolos, incienso, llanto
+  por Tamuz, culto al sol. Ve después la matanza de los no marcados y la gloria que se va, y lo cuenta.'
+reason: 'Eze 8:1: día 5 del mes sexto (elul) del año sexto del destierro; 612 según «Toda Escritura», libro 26, párr. 12,
+  y Perspicacia «Jaazanías», núm. 2. Acaba en Eze 11:24, 25. Casa en Tel-Abib: La adoración pura, cap. 5.'
+sources:
+- ezequiel-8
+- si-ezequiel
+- rr-cosas-detestables-en-el-templo
+- it-ezequiel-libro
+- it-jaazanias
+- it-tamuz-i
+- ezequiel-11
+- rr-marca-en-la-frente
+- it-querubin
+- it-tintero-de-secretario
+- ezequiel-9
+- ezequiel-10
+- it-pelatias
+links:
+- title: Ezequiel 8 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/ezequiel/8/
+  type: bible
+- title: 'Perspicacia: «Ezequiel, Libro de»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ezequiel-Libro-de/
+  type: perspicacia
+- title: Ezequiel 9 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/ezequiel/9/
+  type: bible
+roles:
+  pelatias-hijo-de-benaya: died
+checked_on: '2026-10-13'
+status: verified

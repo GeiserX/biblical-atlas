@@ -39,6 +39,9 @@ sources:
 - 2-cronicas-36
 - lamentaciones-4
 - w88-lamentaciones
+- ezequiel-17
+- ezequiel-21
+- w07-ezequiel-1
 links:
 - title: 'Perspicacia: «Sedequías»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sedequ%C3%ADas/
@@ -68,6 +71,8 @@ relations:
   - 2-reyes-24
   - jeremias-37
   - 2-cronicas-36
+  - ezequiel-17
+  - rr-pondre-un-solo-pastor
   reason: Nabucodonosor lo puso en lugar de su sobrino Joaquín (2Re 24:17).
   checked_on: '2026-10-13'
   office: king
@@ -78,8 +83,9 @@ relations:
   sources:
   - it-sedequias
   - jeremias-52
+  - ezequiel-17
   reason: Lo tuvieron preso en Babilonia hasta su muerte (Jer 52:11).
-  checked_on: '2026-09-28'
+  checked_on: '2026-10-13'
   status: verified
 - type: kin
   person: hamutal
@@ -122,6 +128,7 @@ relations:
   - jeremias-37
   - jeremias-52
   - 2-cronicas-36
+  - ezequiel-17
   reason: Nabucodonosor lo puso en el trono (2Re 24:17) y, según Perspicacia «Sedequías», núm. 4, lo hizo rey vasallo con
     juramento; se rebeló hacia 609 (2Re 24:20).
   checked_on: '2026-10-13'
@@ -134,8 +141,9 @@ relations:
   - it-sedequias
   - jeremias-39
   - jeremias-52
+  - ezequiel-17
   reason: '2Re 25:7: ciego y encadenado, se lo llevaron a Babilonia; Jer 52:11 dice que allí siguió preso hasta su muerte.'
-  checked_on: '2026-10-12'
+  checked_on: '2026-10-13'
   status: verified
 - type: tie
   person: jeremias-profeta

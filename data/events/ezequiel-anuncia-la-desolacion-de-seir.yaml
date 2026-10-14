@@ -1,0 +1,45 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: ezequiel-anuncia-la-desolacion-de-seir
+title: Ezequiel anuncia la desolación de Seír y el fruto de las montañas de Israel
+date:
+  from: -606
+  to: -592
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 607 y 593 a.e.c. (tiempo narrativo: tras llegar la noticia de la caída de Jerusalén y antes de la visión del
+    templo)'
+narrative_order:
+  series: ezequiel
+  order: 235001
+places:
+- seir
+- edom
+- israel
+people:
+- ezequiel
+present: []
+passages:
+- Eze 35:1-15
+- Eze 36:1-15
+summary: Jehová anuncia por Ezequiel que dejará desierta la región montañosa de Seír, todo Edom, por su odio a Israel y por
+  querer quedarse con su tierra. Las montañas de Israel, en cambio, volverán a dar fruto para su pueblo.
+reason: 'Sin fecha: entre la noticia de la caída, en 607, y la visión del templo, en 593, según «Toda Escritura». La Atalaya
+  de 2007 ve el libro en orden. No dice dónde habló.'
+sources:
+- ezequiel-35
+- ezequiel-36
+- si-ezequiel
+- w07-ezequiel-2
+- it-ezequiel-libro
+- it-edom
+links:
+- title: Ezequiel 35 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/ezequiel/35/
+  type: bible
+- title: Ezequiel 36 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/ezequiel/36/
+  type: bible
+checked_on: '2026-10-13'
+status: verified
