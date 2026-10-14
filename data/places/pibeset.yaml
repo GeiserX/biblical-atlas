@@ -1,0 +1,30 @@
+# biblical-atlas: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: pibeset
+name: Pibéset
+names:
+- name: Pibéset
+- name: Bubastis
+  note: Así la llama la Septuaginta, según Perspicacia «Pibéset».
+type: city
+lat: 30.572778
+lon: 31.51
+precision: point
+coord_source: openbible:a2cd991
+coord_url: https://www.openbible.info/geo/ancient/a2cd991/pi-beseth
+coord_note: Tell Basta, junto a la actual Zagazig, donde Perspicacia sitúa las ruinas de Bubastis.
+summary: Ciudad del delta del Nilo, al norte de El Cairo, centro del culto a la diosa gata Bastet y capital de un distrito
+  del Bajo Egipto. Ezequiel anuncia que sus jóvenes caerán a espada.
+reason: 'Perspicacia «Pibéset», párr. 1 a 3; Eze 30:17. Coordenada de OpenBible: solo tomamos el punto.'
+sources:
+- it-pibeset
+- openbible-geo
+- ezequiel-30
+links:
+- title: 'Perspicacia: «Pibéset»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Pib%C3%A9set/
+  type: perspicacia
+- title: Ezequiel 30 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/ezequiel/30/
+  type: bible
+checked_on: '2026-10-13'
+status: verified

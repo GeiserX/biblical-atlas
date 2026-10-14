@@ -14,7 +14,8 @@ lon: 32.546139
 precision: zone
 coord_source: openbible:a305f43
 coord_url: https://www.openbible.info/geo/ancient/a305f43/shihor-1
-coord_note: Punto de OpenBible en el brazo pelusiaco, el más oriental del Nilo, que es como Perspicacia entiende Sihor.
+coord_note: Punto de OpenBible en el brazo pelusiaco, el más oriental del Nilo, que es como Perspicacia entiende Sihor. OpenBible
+  da ese mismo punto a Pelusio, que es el de Sin.
 summary: Al parecer, el brazo más oriental del Nilo en el delta. Jos 13:3 lo da como el punto, en el límite de Egipto, hasta
   donde llegaba la tierra que se tenía por cananea.
 reason: 'Perspicacia «Sihor», párr. 1 y 2; Jos 13:3 y su nota. OpenBible: solo el punto.'
@@ -32,5 +33,9 @@ links:
 - title: Josué 13 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Josu%C3%A9/13/
   type: bible
-checked_on: '2026-10-12'
+history:
+- date: '2026-10-13'
+  change: La nota dice que el punto es también el de Sin (Pelusio), creada desde Eze 30, para que no parezca un error.
+  source: openbible-geo
+checked_on: '2026-10-13'
 status: verified

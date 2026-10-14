@@ -1,0 +1,67 @@
+# biblical-atlas: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: elisa
+name: Elisá
+names:
+- name: Elisá
+- name: Islas de Elisá
+  note: Así la nombra Eze 27:7. El nombre viene de Elisá, hijo de Javán.
+type: region
+lat: null
+lon: null
+precision: uncertain
+coord_source: null
+coord_url: null
+candidates:
+- name: Grecia, con la Élide y la Eolia
+  geometry:
+    type: zone
+    lat: 37.971851
+    lon: 23.726738
+    radius_km: 350
+  status: favored_level_1
+  sources:
+  - it-elisa
+  - openbible-geo
+  reason: 'Perspicacia «Elisá»: los indicios señalan a Grecia antes que a Chipre o al norte de África; la Élide, en el Peloponeso,
+    o la Eolia, en Asia Menor, encajarían.'
+  note: 'Centro: punto de OpenBible para Grecia, una de las identificaciones de su ficha de Elisá. El radio de 350 km es nuestro
+    y llega a la Élide y a la Eolia.'
+  coord_source: openbible:a71d65f
+  coord_url: https://www.openbible.info/geo/ancient/a71d65f/elishah
+  checked_on: '2026-10-13'
+- name: Sicilia y el sur de Italia
+  geometry:
+    type: zone
+    lat: 37.599958
+    lon: 14.015378
+    radius_km: 250
+  status: alternative
+  sources:
+  - it-elisa
+  - openbible-geo
+  reason: 'Perspicacia «Elisá»: el Targum la llama provincia de Italia, y en Sicilia y el sur de Italia había colonias griegas;
+    también allí se obtenía la púrpura.'
+  note: 'Centro: punto de OpenBible para Sicilia, otra identificación de su ficha de Elisá. Radio nuestro.'
+  coord_source: openbible:a71d65f
+  coord_url: https://www.openbible.info/geo/ancient/a71d65f/elishah
+  checked_on: '2026-10-13'
+summary: Islas o costas del Mediterráneo que daban a Tiro hilo azul y lana púrpura para los toldos de sus naves. No se sabe
+  dónde estaban; los indicios apuntan a Grecia.
+reason: 'Perspicacia «Elisá»: no hay pruebas concluyentes de su ubicación, y el nombre pudo pasar a zonas distintas con los
+  siglos. Eze 27:7.'
+not_claimed:
+- 'Que sea Chipre o Cartago, como proponen otras identificaciones de OpenBible: Perspicacia dice que los indicios señalan
+  más bien a Grecia.'
+sources:
+- it-elisa
+- openbible-geo
+- ezequiel-27
+links:
+- title: 'Perspicacia: «Elisá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Elis%C3%A1/
+  type: perspicacia
+- title: Ezequiel 27 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/ezequiel/27/
+  type: bible
+checked_on: '2026-10-13'
+status: verified

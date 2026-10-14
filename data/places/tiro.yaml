@@ -11,10 +11,10 @@ lon: 35.19611
 precision: point
 coord_source: openbible:a160272
 coord_url: https://www.openbible.info/geo/ancient/a160272/tyre
-summary: Principal puerto fenicio. Jesús visitó su región y allí curó a la hija de una mujer sirofenicia; años más tarde Pablo
-  pasó siete días en la ciudad con los discípulos.
-reason: 'Perspicacia «Tiro», apartado sobre las Escrituras Griegas, describe el lugar y la visita de Jesús (Mr 7:24-31); Pablo,
-  en Hch 21:3-6. Coordenada de OpenBible: solo tomamos el punto.'
+summary: Principal puerto fenicio, en tierra firme y en una isla. Nabucodonosor la sitió trece años; Alejandro tomó la isla
+  en 332 a.e.c. En su región Jesús curó a la hija de una sirofenicia; Pablo pasó allí siete días.
+reason: 'Perspicacia «Tiro»: sitio y partes de la ciudad, el asedio de Nabucodonosor (Eze 26:7-12; 29:17-20), Alejandro en
+  332 (Eze 26:4, 12) y la visita de Jesús (Mr 7:24-31); Pablo, en Hch 21:3-6. OpenBible: solo el punto.'
 sources:
 - it-tiro
 - hch-21
@@ -33,6 +33,10 @@ sources:
 - isaias-23
 - jeremias-27
 - jeremias-47
+- ezequiel-26
+- ezequiel-29
+- ezequiel-27
+- ezequiel-28
 links:
 - title: 'Perspicacia: «Tiro»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Tiro-2/
@@ -48,5 +52,12 @@ history:
 - date: '2026-09-29'
   change: La razón cita ahora el pasaje de Marcos que añade el resumen.
   source: marcos-7
-checked_on: '2026-10-12'
+- date: '2026-10-13'
+  change: El resumen solo hablaba del siglo I; ahora recoge las dos partes de la ciudad, el sitio de Nabucodonosor y la caída
+    ante Alejandro, que Eze 26 anuncia y Perspicacia «Tiro» cuenta.
+  source: ezequiel-26
+- date: '2026-10-13'
+  change: La razón cita los pasajes de Ezequiel que sostienen lo nuevo del resumen.
+  source: ezequiel-26
+checked_on: '2026-10-13'
 status: verified

@@ -1,0 +1,43 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: ezequiel-profetiza-contra-los-falsos-profetas
+title: Ezequiel profetiza contra los falsos profetas y profetisas
+date:
+  from: -611
+  to: -611
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 612 a.e.c.
+narrative_order:
+  series: ezequiel
+  order: 13001
+places:
+- caldea
+- jerusalen
+people:
+- ezequiel
+present: []
+passages:
+- Eze 13:1-23
+summary: Jehová condena a los profetas de Israel que anuncian paz sin que él los mande y blanquean una pared frágil, y a las
+  mujeres que inventan profecías y cazan vidas con bandas y velos.
+reason: La Atalaya de febrero de 2018 (nota del párr. 2) pone los capítulos 8 a 19 en el sexto año del destierro, 612. El
+  capítulo no dice dónde habló; profetizaba en Caldea (Perspicacia «Ezequiel»).
+sources:
+- ezequiel-13
+- w18-noe-daniel-job
+- si-ezequiel
+- it-ezequiel-libro
+- it-ezequiel
+- it-profeta
+- it-profetisa
+links:
+- title: Ezequiel 13 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/ezequiel/13/
+  type: bible
+- title: 'Perspicacia: «Ezequiel, Libro de»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ezequiel-Libro-de/
+  type: perspicacia
+checked_on: '2026-10-13'
+status: verified

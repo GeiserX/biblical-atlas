@@ -1,0 +1,41 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: ezequiel-entona-una-endecha-por-los-jefes-de-israel
+title: Ezequiel entona una endecha por los jefes de Israel
+date:
+  from: -611
+  to: -611
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 612 a.e.c.
+narrative_order:
+  series: ezequiel
+  order: 19001
+places:
+- caldea
+people:
+- ezequiel
+present: []
+passages:
+- Eze 19:1-14
+summary: 'Jehová manda a Ezequiel un canto fúnebre por los príncipes de Judá: dos leones jóvenes acaban cazados, uno en Egipto
+  y otro ante el rey de Babilonia, y la vid que daba cetros queda arrancada y quemada.'
+reason: Sin fecha en el texto. La Atalaya de febrero de 2018 (nota del párr. 2) pone los capítulos 8 a 19 en el sexto año
+  del destierro, 612.
+sources:
+- ezequiel-19
+- w18-noe-daniel-job
+- it-ezequiel-libro
+- si-ezequiel
+- it-endecha
+- w88-jehova-desenvaina-la-espada
+links:
+- title: Ezequiel 19 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/ezequiel/19/
+  type: bible
+- title: 'Perspicacia: «Endecha»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Endecha/
+  type: perspicacia
+checked_on: '2026-10-13'
+status: verified

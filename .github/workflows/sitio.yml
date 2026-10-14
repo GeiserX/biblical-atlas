@@ -24,8 +24,10 @@ env:
   AXE_VERSION: 4.13.0
 
 jobs:
-  # En un solo runner la batería pasa de 45 minutos: se reparte en seis a la vez. timeline-marks.test.mjs tarda 26 minutos
-  # él solo, y sus dos pruebas de clics sobre las marcas, 15: van en dos trabajos aparte. El resto lo reparte node
+  # En un solo runner la batería pasa de 45 minutos: se reparte en siete a la vez. timeline-marks.test.mjs tarda 26 minutos
+  # él solo, y sus dos pruebas de clics sobre las marcas, 15: van en dos trabajos aparte. accesibilidad.test.mjs y
+  # tema-oscuro.test.mjs recorren cada vista (axe y el tema oscuro) y tardan de 7 a 11 minutos cada uno: node los ponía
+  # en la misma parte, que pasó de 40 minutos en un runner lento, y van juntos en «vistas». El resto lo reparte node
   # (--test-shard), así que un fichero nuevo entra solo en una de las cuatro partes.
   navegador:
     name: pruebas (${{ matrix.parte }})
@@ -34,7 +36,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        parte: ['1/4', '2/4', '3/4', '4/4', 'marcas, clics', 'marcas, resto']
+        parte: ['1/4', '2/4', '3/4', '4/4', 'vistas', 'marcas, clics', 'marcas, resto']
     steps:
       - uses: actions/checkout@v7
         with:
@@ -90,6 +92,7 @@ jobs:
         run: |
           run() { node --test --test-concurrency=1 --import ./tests/site/failure-traces.mjs "$@"; }
           clics='clicking a mark keeps the scale'
+          vistas=(tests/site/accesibilidad.test.mjs tests/site/tema-oscuro.test.mjs)
           case "$PARTE" in
             # Exactamente 2 pruebas, las 2 en verde: si alguien las renombra, el filtro no encontraría ninguna y el
             # trabajo saldría verde; si una tercera casa con el filtro, el recuento ya no cuadra.
@@ -98,7 +101,11 @@ jobs:
                                grep -q "^ℹ $linea\$" "$RUNNER_TEMP/clics.txt" || { echo "::error::el filtro de clics no dio «$linea»"; exit 1; }
                              done ;;
             'marcas, resto') run --test-skip-pattern="$clics" tests/site/timeline-marks.test.mjs ;;
-            *) files=(); for f in tests/site/*.test.mjs; do [[ $f == */timeline-marks.test.mjs ]] || files+=("$f"); done
+            'vistas') run "${vistas[@]}" ;;
+            *) files=()
+               for f in tests/site/*.test.mjs; do
+                 [[ $f == */timeline-marks.test.mjs || " ${vistas[*]} " == *" $f "* ]] || files+=("$f")
+               done
                run --test-shard="$PARTE" "${files[@]}" ;;
           esac
 

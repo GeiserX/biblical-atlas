@@ -1,0 +1,51 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: ezequiel-anuncia-la-ruina-de-tiro
+title: Ezequiel anuncia la ruina de Tiro
+type: speech
+date:
+  from: -606
+  to: -606
+  precision: year
+  approx: false
+  type: derived
+  chronology: tnm
+  text: 607 a.e.c.
+  note: Año 11 del destierro de Joaquín (Eze 26:1), contando 613 como el quinto (Eze 1:2; estudio 3). El texto no dice el
+    mes.
+narrative_order:
+  series: ezequiel
+  order: 226001
+places:
+- tel-abib
+- caldea
+- tiro
+- jerusalen
+people:
+- ezequiel
+- nabucodonosor-ii
+present:
+- ezequiel
+roles:
+  ezequiel: spoke
+passages:
+- Eze 26:1-21
+summary: En el año 11 del destierro, Jehová dice a Ezequiel que Tiro se alegró de la caída de Jerusalén. Nabucodonosor la
+  sitiará y otras naciones la dejarán como roca pelada, sin volver a levantarse.
+reason: 'Eze 26:1: año 11 y día primero, sin mes. Va tras los mensajes de nisán y siván de 607, porque Eze 26:2 da ya por
+  caída Jerusalén. Lugar deducido: vivía con los desterrados (Perspicacia «Ezequiel»).'
+sources:
+- ezequiel-26
+- si-3
+- it-ezequiel-libro
+- it-ezequiel
+- it-tiro
+- w07-ezequiel-2
+links:
+- title: Ezequiel 26 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/ezequiel/26/
+  type: bible
+- title: 'Perspicacia: «Tiro»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Tiro-2/
+  type: perspicacia
+checked_on: '2026-10-13'
+status: pending

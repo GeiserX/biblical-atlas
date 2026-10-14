@@ -1,0 +1,43 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: ezequiel-profetiza-contra-los-pastores-de-israel
+title: Ezequiel profetiza contra los pastores de Israel y anuncia un solo pastor
+date:
+  from: -606
+  to: -592
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 607 y 593 a.e.c. (tiempo narrativo: tras la noticia de la caída de Jerusalén y antes de la visión del templo)'
+narrative_order:
+  series: ezequiel
+  order: 234001
+places:
+- tel-abib
+- caldea
+- israel
+people:
+- ezequiel
+present: []
+passages:
+- Eze 34:1-31
+summary: Jehová condena a los jefes de Israel, que se aprovechan del rebaño y lo dejan disperso. Él mismo buscará a sus ovejas,
+  juzgará entre ellas y pondrá sobre ellas a su siervo David como único pastor.
+reason: 'Perspicacia «Ezequiel, Libro de»: tras llegar la noticia de la caída domina la restauración, y la visión del templo
+  es de 593. La Atalaya de 2007 pone Eze 34:23 tras esa noticia. Sin sitio nombrado.'
+sources:
+- ezequiel-34
+- it-ezequiel-libro
+- si-ezequiel
+- w07-ezequiel-2
+- rr-pondre-un-solo-pastor
+- it-pastor
+links:
+- title: 'Perspicacia: «Pastor»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Pastor/
+  type: perspicacia
+- title: Ezequiel 34 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/ezequiel/34/
+  type: bible
+checked_on: '2026-10-13'
+status: verified

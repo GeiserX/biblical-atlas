@@ -4,7 +4,7 @@ name: Pecod
 names:
 - name: Pecod
 - name: Peqod
-  note: Grafía de Perspicacia y de Ez 23:23.
+  note: Grafía de Perspicacia. La TNM dice Pecod en Jer 50:21 y en Eze 23:23.
 type: region
 lat: 31.36112
 lon: 47.44964
@@ -15,7 +15,7 @@ coord_note: Punto representativo de OpenBible junto al Tigris, al este de Uruk. 
   al norte de su unión con el Kerja si es la Puqudu asiria.
 summary: Zona cercana a Babilonia, quizá la Puqudu de las inscripciones, junto a Elam. Sus hombres irían contra Jerusalén
   con Babilonia, y Jeremías anunció su destrucción cuando cayera Babilonia.
-reason: 'Perspicacia «Peqod»; Jer 50:21 y Ez 23:23. Coordenada de OpenBible: solo tomamos el punto.'
+reason: 'Perspicacia «Peqod»; Jer 50:21 y Eze 23:23. Coordenada de OpenBible: solo tomamos el punto.'
 not_claimed:
 - 'Que sea seguro que es Puqudu: Perspicacia lo da como identificación corriente, y recoge que en Jer 50:21 quizá sea un nombre
   poético de Babilonia.'
@@ -23,9 +23,17 @@ sources:
 - it-peqod
 - openbible-geo
 - jeremias-50
+- ezequiel-23
 links:
 - title: 'Perspicacia: «Peqod»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Peqod/
   type: perspicacia
-checked_on: '2026-10-12'
+history:
+- date: '2026-10-13'
+  change: La nota daba Peqod como grafía de Ez 23:23, pero la TNM dice allí Pecod, igual que en Jer 50:21.
+  source: ezequiel-23
+- date: '2026-10-13'
+  change: «Ez» no es una forma de libro que lean el sitio ni validate.py; con «Eze» la cita enlaza Ezequiel 23.
+  source: ezequiel-23
+checked_on: '2026-10-13'
 status: verified

@@ -1,0 +1,44 @@
+# biblical-atlas: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: vedan
+name: Vedán
+names:
+- name: Vedán
+type: region
+lat: null
+lon: null
+precision: uncertain
+coord_source: null
+coord_url: null
+candidates:
+- name: Wadden, cerca de Medina
+  geometry:
+    type: zone
+    lat: 24.4833
+    lon: 39.8333
+    radius_km: 60
+  status: alternative
+  sources:
+  - it-vedan
+  - openbible-geo
+  reason: 'Perspicacia «Vedán»: se la ha identificado de forma tentativa con Wadden, junto a Medina, en el oeste de la península
+    arábiga.'
+  note: 'Centro: Azalla (24,4833 N; 39,8333 E), punto cercano a Medina que OpenBible da en su ficha de Uzal (a217cc5); no
+    lo identificamos con Vedán. OpenBible no recoge Vedán ni Wadden. El radio de 60 km es nuestro.'
+  coord_source: calculation
+  checked_on: '2026-10-13'
+summary: Lugar que, con Javán de Uzal, daba a Tiro hierro forjado, casia y caña aromática. No se sabe con exactitud dónde
+  estaba; quizá en el oeste de Arabia.
+reason: Perspicacia «Vedán»; Eze 27:19. Solo una zona, porque la identificación con Wadden es tentativa.
+sources:
+- it-vedan
+- ezequiel-27
+- openbible-geo
+links:
+- title: 'Perspicacia: «Vedán»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ved%C3%A1n/
+  type: perspicacia
+- title: Ezequiel 27 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/ezequiel/27/
+  type: bible
+checked_on: '2026-10-13'
+status: verified
