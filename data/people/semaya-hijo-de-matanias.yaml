@@ -1,0 +1,68 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: semaya-hijo-de-matanias
+name: Semaya
+names:
+- name: Semaya
+perspicacia: 1200004000#23
+summary: Sacerdote de la familia de Asaf, hijo de Matanías y abuelo del trompetista Zacarías de la procesión sobre el muro.
+reason: Perspicacia «Semaya», núm. 23; Ne 12:31, 35.
+sources:
+- it-semaya
+- nehemias-12
+- it-micaya
+links:
+- title: 'Perspicacia: «Semaya»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Semaya/
+  type: perspicacia
+relations:
+- type: kin
+  person: matanias-hijo-de-mica
+  word: father
+  inferred: true
+  sources:
+  - nehemias-12
+  - it-micaya
+  reason: 'Ne 12:35: Semaya, hijo de Matanías, hijo de Micaya; Perspicacia «Micaya», núm. 6, iguala a ese Micaya con Micá,
+    padre de Matanías.'
+  checked_on: '2026-10-14'
+  status: verified
+- type: holds_office
+  office: priest
+  inferred: true
+  sources:
+  - it-semaya
+  - nehemias-12
+  reason: Perspicacia «Semaya», núm. 23, lo llama sacerdote de la familia de Asaf.
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- semaya-ayudante-de-core
+- semaya-de-la-procesion-del-muro
+- semaya-de-nehelam
+- semaya-descendiente-de-adonicam
+- semaya-descendiente-de-harim
+- semaya-enviado-a-casifia
+- semaya-guarda-de-la-puerta-oriental
+- semaya-hijo-de-delaya
+- semaya-hijo-de-galal
+- semaya-hijo-de-hasub
+- semaya-hijo-de-joel
+- semaya-hijo-de-netanel
+- semaya-hijo-de-obed-edom
+- semaya-hijo-de-secanias
+- semaya-jefe-de-la-casa-de-elizafan
+- semaya-levita-de-ezequias
+- semaya-levita-de-jehosafat
+- semaya-levita-de-josias
+- semaya-musico-de-la-procesion
+- semaya-padre-de-delaya
+- semaya-padre-de-uriya
+- semaya-profeta
+- semaya-sacerdote-de-la-inauguracion
+- semaya-sacerdote-repatriado
+- semaya-sacerdote-descendiente-de-harim
+- semaya-simeonita
+disambiguation: 'Semaya núm. 23 de Perspicacia: el abuelo del trompetista Zacarías (Ne 12:35); no los demás Semaya que registra
+  Perspicacia «Semaya».'

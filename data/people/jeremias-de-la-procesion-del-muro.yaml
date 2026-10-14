@@ -1,0 +1,50 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jeremias-de-la-procesion-del-muro
+name: Jeremías
+names:
+- name: Jeremías
+perspicacia: 1200002421#10
+summary: Hombre al que Nehemías puso en la procesión que, el día de la inauguración, recorrió el muro hacia la Puerta del
+  Agua. Quizá es el sacerdote de Ne 10:2.
+reason: Perspicacia «Jeremías», núm. 10; Ne 12:31-37.
+sources:
+- it-jeremias
+- nehemias-12
+links:
+- title: 'Perspicacia: «Jeremías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jerem%C3%ADas/
+  type: perspicacia
+relations:
+- type: same_as
+  person: jeremias-sacerdote-de-zorobabel
+  certainty: possible
+  inferred: true
+  sources:
+  - it-jeremias
+  - nehemias-12
+  reason: 'Perspicacia «Jeremías», núm. 10: si el nombre designa una casa y no a una persona, quizá se trate del núm. 8, el
+    de Ne 12:1.'
+  checked_on: '2026-10-14'
+  status: verified
+- type: same_as
+  person: jeremias-sacerdote-firmante
+  certainty: possible
+  inferred: true
+  sources:
+  - it-jeremias
+  - nehemias-12
+  reason: 'Perspicacia «Jeremías», núm. 10: podría tratarse del sacerdote que selló el arreglo fidedigno.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- jeremias-de-libna
+- jeremias-de-manases
+- jeremias-decimo-gadita
+- jeremias-el-benjaminita
+- jeremias-hijo-de-habazinias
+- jeremias-profeta
+- jeremias-quinto-gadita
+disambiguation: 'Jeremías núm. 10 de Perspicacia: el de la procesión del muro (Ne 12:34); no los demás Jeremías que registra
+  Perspicacia «Jeremías».'

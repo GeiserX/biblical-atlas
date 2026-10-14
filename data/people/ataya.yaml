@@ -1,0 +1,45 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ataya
+name: Ataya
+names:
+- name: Ataya
+perspicacia: '1200000456'
+summary: Judaíta de la línea de Pérez que vivía en Jerusalén en tiempos de Nehemías, después de volver del destierro. Ne 11:4
+  da su linaje hasta Mahalalel.
+reason: Perspicacia «Ataya»; Ne 11:4.
+sources:
+- it-ataya
+- nehemias-11
+links:
+- title: 'Perspicacia: «Ataya»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ataya/
+  type: perspicacia
+relations:
+- type: kin
+  person: uzias-hijo-de-zacarias
+  word: father
+  inferred: false
+  sources:
+  - nehemias-11
+  reason: 'Ne 11:4: Ataya, hijo de Uzías.'
+  checked_on: '2026-10-14'
+  status: verified
+- type: kin
+  person: perez
+  word: ancestor
+  inferred: false
+  sources:
+  - nehemias-11
+  reason: 'Ne 11:4: Ataya era de los hijos de Pérez.'
+  checked_on: '2026-10-14'
+  status: verified
+- type: lived_in
+  place: jerusalen
+  inferred: false
+  sources:
+  - nehemias-11
+  reason: 'Ne 11:4: de la gente de Judá que vivía en Jerusalén.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified

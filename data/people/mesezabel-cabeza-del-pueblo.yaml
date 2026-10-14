@@ -1,0 +1,21 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: mesezabel-cabeza-del-pueblo
+name: Mesezabel
+names:
+- name: Mesezabel
+perspicacia: 1200003010#3
+summary: Jefe del pueblo, o su descendiente, que selló la promesa de 455 a.e.c.
+reason: Perspicacia «Mesezabel», núm. 3; Ne 10:21.
+sources:
+- it-mesezabel
+- nehemias-10
+links:
+- title: 'Perspicacia: «Mesezabel»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Mesezabel/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- mesezabel-padre-de-berekias
+- mesezabel-padre-de-petahias
+disambiguation: Mesezabel, cabeza del pueblo en la lista de Ne 10:21 (Perspicacia «Mesezabel», núm. 3).

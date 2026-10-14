@@ -1,0 +1,42 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: salai-familia-sacerdotal
+name: Salái
+names:
+- name: Salái
+- name: Salai
+  note: Grafía del título de Perspicacia.
+perspicacia: 1200003802#2
+summary: Casa paterna de sacerdotes de días de Joiaquim, encabezada por Calái. Probablemente es el Salú de Ne 12:7.
+reason: Perspicacia «Salai», núm. 2; Ne 12:12, 20.
+sources:
+- it-salai
+- nehemias-12
+links:
+- title: 'Perspicacia: «Salai»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Salai/
+  type: perspicacia
+relations:
+- type: holds_office
+  office: priest
+  inferred: true
+  sources:
+  - nehemias-12
+  reason: 'Ne 12:12: su casa paterna era de sacerdotes; quien la encabezaba en días de Joiaquim era sacerdote.'
+  checked_on: '2026-10-14'
+  status: verified
+- type: same_as
+  person: salu-sacerdote-de-zorobabel
+  certainty: probable
+  inferred: true
+  sources:
+  - it-salai
+  - nehemias-12
+  reason: 'Perspicacia «Salai», núm. 2: Ne 12:7 probablemente da este mismo nombre como Salú.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- salai-benjaminita
+disambiguation: 'Salái núm. 2 de Perspicacia: la casa sacerdotal de Ne 12:20; no los demás Salái que registra Perspicacia
+  «Salai».'

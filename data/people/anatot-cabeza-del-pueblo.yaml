@@ -1,0 +1,20 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: anatot-cabeza-del-pueblo
+name: Anatot
+names:
+- name: Anatot
+perspicacia: 1200000269#2
+summary: Uno de los jefes del pueblo cuyo descendiente, o él mismo, selló en 455 a.e.c. el compromiso de servir a Jehová.
+reason: Perspicacia «Anatot», núm. 2; Ne 10:19.
+sources:
+- it-anatot
+- nehemias-10
+links:
+- title: 'Perspicacia: «Anatot»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Anatot/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- anatot-hijo-de-beker
+disambiguation: Anatot, cabeza del pueblo en la lista de Ne 10:19 (Perspicacia «Anatot», núm. 2).

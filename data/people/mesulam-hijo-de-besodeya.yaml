@@ -1,0 +1,51 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: mesulam-hijo-de-besodeya
+name: Mesulam
+names:
+- name: Mesulam
+perspicacia: 1200003014#17
+disambiguation: El hijo de Besodeya que reparó la Puerta de la Ciudad Vieja (Ne 3:6), núm. 17 de Perspicacia «Mesulam»; no
+  los otros Mesulam que numera.
+distinct_from:
+- mesulam-abuelo-de-safan
+- mesulam-descendiente-de-bani
+- mesulam-hijo-de-abihail
+- mesulam-hijo-de-berekias
+- mesulam-hijo-de-elpaal
+- mesulam-hijo-de-hodavias
+- mesulam-hijo-de-mesilemit
+- mesulam-hijo-de-sefatias
+- mesulam-hijo-de-zorobabel
+- mesulam-levita-de-josias
+- mesulam-levita-de-tiempos-de-esdras
+- salum-hijo-de-sadoc
+- mesulam-junto-a-esdras
+- mesulam-sacerdote-firmante
+- mesulam-cabeza-del-pueblo
+- mesulam-de-la-casa-de-esdras
+- mesulam-de-la-casa-de-guineton
+- mesulam-de-la-procesion-del-muro
+- mesulam-portero
+summary: Hijo de Besodeya. Junto con Joiadá reparó la Puerta de la Ciudad Vieja cuando se reconstruía la muralla de Jerusalén
+  bajo Nehemías.
+reason: Perspicacia «Mesulam», núm. 17; Ne 3:6.
+sources:
+- it-mesulam
+- nehemias-3
+links:
+- title: 'Perspicacia: «Mesulam»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Mesulam/
+  type: perspicacia
+relations:
+- type: kin
+  person: besodeya
+  word: father
+  inferred: false
+  sources:
+  - nehemias-3
+  - it-mesulam
+  reason: 'Ne 3:6: Mesulam hijo de Besodeya.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified

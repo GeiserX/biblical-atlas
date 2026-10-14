@@ -1,0 +1,30 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: nehemias-hace-respetar-el-sabado
+title: Nehemías hace respetar el sábado en Jerusalén
+date:
+  from: -442
+  to: -442
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: poco después de 443 a.e.c.
+narrative_order:
+  series: nehemias
+  order: 113015
+places:
+- jerusalen
+people:
+- nehemias
+passages:
+- Ne 13:15-22
+summary: Al ver que en sábado se pisaba la uva, se cargaban burros y los tirios vendían pescado en Jerusalén, Nehemías reprende
+  a los nobles, cierra las puertas al anochecer y amenaza a los comerciantes acampados junto a la muralla.
+reason: Ne 13:15-22; Perspicacia «Nehemías», núm. 3, cuenta estas medidas tras su regreso, y «Jerusalén» las fecha poco después
+  de 443 a.e.c. Orden 113015.
+sources:
+- nehemias-13
+- it-nehemias
+- it-jerusalen
+checked_on: '2026-10-14'
+status: verified

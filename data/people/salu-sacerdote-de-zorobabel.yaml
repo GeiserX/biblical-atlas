@@ -1,0 +1,31 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: salu-sacerdote-de-zorobabel
+name: Salú
+names:
+- name: Salú
+perspicacia: 1200003803#2
+summary: Cabeza de una familia de sacerdotes que volvió a Jerusalén con Zorobabel. En la lista de las casas de la generación
+  siguiente su nombre aparece, probablemente, como Salái.
+reason: Perspicacia «Salú», núm. 2; Ne 12:1, 7, 20.
+sources:
+- it-salu-hijo-de-mesulam
+- nehemias-12
+links:
+- title: 'Perspicacia: «Salú»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sal%C3%BA/
+  type: perspicacia
+relations:
+- type: holds_office
+  office: priest
+  inferred: false
+  sources:
+  - nehemias-12
+  reason: 'Ne 12:1, 7: va entre los jefes de los sacerdotes que subieron con Zorobabel y Jesúa.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- salu-hijo-de-mesulam
+disambiguation: 'Salú núm. 2 de Perspicacia: el cabeza de familia sacerdotal del regreso con Zorobabel (Ne 12:7); no los demás
+  Salú que registra Perspicacia «Salú».'

@@ -1,0 +1,25 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: elam-levita-de-la-inauguracion
+name: Elam
+names:
+- name: Elam
+perspicacia: 1200001274#6
+summary: Levita que estuvo en la fiesta de la muralla reconstruida, en días de Nehemías.
+reason: Perspicacia «Elam», núm. 6; Ne 12:27, 42.
+sources:
+- it-elam
+- nehemias-12
+links:
+- title: 'Perspicacia: «Elam»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Elam/
+  type: perspicacia
+relations: []
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- elam-cabeza-de-familia
+- elam-el-otro
+- elam-hijo-de-meselemias
+- elam-hijo-de-sasac
+- elam-hijo-de-sem
+disambiguation: 'Elam núm. 6 de Perspicacia: el levita de Ne 12:42; no los demás Elam que registra Perspicacia «Elam».'

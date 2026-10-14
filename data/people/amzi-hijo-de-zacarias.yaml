@@ -1,0 +1,31 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: amzi-hijo-de-zacarias
+name: Amzí
+names:
+- name: Amzí
+perspicacia: 1200000255#2
+summary: Sacerdote, hijo de Zacarías y antepasado del Adaya que vivía en Jerusalén y servía en el templo en días de Nehemías.
+reason: Perspicacia «Amzí», núm. 2; Ne 11:12.
+sources:
+- it-amzi
+- nehemias-11
+links:
+- title: 'Perspicacia: «Amzí»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Amz%C3%AD/
+  type: perspicacia
+relations:
+- type: kin
+  person: zacarias-hijo-de-pasjur
+  word: father
+  inferred: false
+  sources:
+  - nehemias-11
+  - it-amzi
+  reason: 'Ne 11:12: Amzí, hijo de Zacarías; Perspicacia «Amzí», núm. 2.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- amzi-hijo-de-bani
+disambiguation: Amzí, sacerdote, antepasado de Adaya (Perspicacia «Amzí», núm. 2).

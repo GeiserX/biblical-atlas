@@ -1,0 +1,39 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: joiaquim
+name: Joiaquim
+names:
+- name: Joiaquim
+perspicacia: '1200002493'
+summary: Sumo sacerdote después del destierro, hijo y sucesor de Jesúa y padre de Eliasib. En sus días sirvieron los jefes
+  de casas de sacerdotes y de levitas que da Ne 12.
+reason: Perspicacia «Joiaquim»; Ne 12:10, 12, 26.
+sources:
+- it-joiaquim
+- nehemias-12
+links:
+- title: 'Perspicacia: «Joiaquim»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Joiaquim/
+  type: perspicacia
+relations:
+- type: kin
+  person: josue-sumo-sacerdote
+  word: father
+  inferred: false
+  sources:
+  - nehemias-12
+  - it-joiaquim
+  reason: 'Ne 12:10, 26: Jesúa fue padre de Joiaquim.'
+  checked_on: '2026-10-14'
+  status: verified
+- type: succeeds
+  person: josue-sumo-sacerdote
+  office: high_priest
+  inferred: true
+  sources:
+  - it-joiaquim
+  - nehemias-12
+  reason: 'Perspicacia «Joiaquim»: hijo y sucesor del sumo sacerdote Jesúa; Ne 12:10, 26.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified

@@ -1,0 +1,20 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: anaya-cabeza-del-pueblo
+name: Anaya
+names:
+- name: Anaya
+perspicacia: 1200000259#2
+summary: Uno de los jefes del pueblo cuyo descendiente, o él mismo, selló la promesa hecha con Nehemías en 455 a.e.c.
+reason: Perspicacia «Anaya», núm. 2; Ne 10:22.
+sources:
+- it-anaya
+- nehemias-10
+links:
+- title: 'Perspicacia: «Anaya»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Anaya/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- anaya-junto-a-esdras
+disambiguation: Anaya, cabeza del pueblo en la lista de Ne 10:22 (Perspicacia «Anaya», núm. 2).

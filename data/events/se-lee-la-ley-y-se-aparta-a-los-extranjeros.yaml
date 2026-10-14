@@ -1,0 +1,32 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: se-lee-la-ley-y-se-aparta-a-los-extranjeros
+title: Se lee la Ley y se aparta a los de origen extranjero
+date:
+  from: -454
+  to: -454
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: 455 a.e.c.
+narrative_order:
+  series: nehemias
+  order: 113001
+places:
+- jerusalen
+people: []
+present: []
+passages:
+- Ne 13:1-3
+summary: Al leer al pueblo el libro de Moisés, ven que ni ammonitas ni moabitas podían entrar en la congregación, porque pagaron
+  a Balaam para maldecir a Israel, y empiezan a separar a los de origen extranjero.
+reason: «Toda Escritura», libro 16, párr. 13, junta Ne 12:27-13:3 bajo la dedicación del muro, y Perspicacia «Jerusalén» pone
+  esta limpieza antes del viaje de Nehemías a la corte. No nombra a nadie; el lugar se deduce. Orden 113001.
+sources:
+- nehemias-13
+- si-nehemias
+- it-nehemias-libro
+- it-jerusalen
+- it-guilalai
+checked_on: '2026-10-14'
+status: verified

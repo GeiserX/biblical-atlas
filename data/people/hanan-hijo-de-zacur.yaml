@@ -1,0 +1,95 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hanan-hijo-de-zacur
+name: Hanán
+names:
+- name: Hanán
+perspicacia: 1200001850#10
+summary: Levita de confianza, hijo de Zacur y nieto de Matanías, que ayudaba a Selemías, Sadoc y Pedaya a repartir a los levitas
+  sus porciones.
+reason: Perspicacia «Hanán», núm. 10; Ne 13:13.
+sources:
+- it-hanan
+- nehemias-13
+- it-matanias
+links:
+- title: 'Perspicacia: «Hanán»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Han%C3%A1n/
+  type: perspicacia
+relations:
+- type: kin
+  person: zacur-hijo-de-matanias
+  word: father
+  inferred: false
+  sources:
+  - nehemias-13
+  reason: 'Ne 13:13: Hanán, hijo de Zacur, hijo de Matanías.'
+  checked_on: '2026-10-14'
+  status: verified
+- type: kin
+  person: matanias-abuelo-de-hanan
+  word: grandfather
+  inferred: false
+  sources:
+  - nehemias-13
+  reason: 'Ne 13:13: Hanán, hijo de Zacur, hijo de Matanías.'
+  checked_on: '2026-10-14'
+  status: verified
+- type: accompanies
+  person: selemias-encargado-de-los-almacenes
+  word: fellow_worker
+  inferred: false
+  sources:
+  - nehemias-13
+  reason: 'Ne 13:13: era el ayudante de Selemías, Sadoc y Pedaya en los almacenes.'
+  checked_on: '2026-10-14'
+  status: verified
+- type: accompanies
+  person: sadoc-copista
+  word: fellow_worker
+  inferred: false
+  sources:
+  - nehemias-13
+  reason: 'Ne 13:13: era el ayudante de Selemías, Sadoc y Pedaya en los almacenes.'
+  checked_on: '2026-10-14'
+  status: verified
+- type: accompanies
+  person: pedaya-encargado-de-los-almacenes
+  word: fellow_worker
+  inferred: false
+  sources:
+  - nehemias-13
+  reason: 'Ne 13:13: era el ayudante de Selemías, Sadoc y Pedaya en los almacenes.'
+  checked_on: '2026-10-14'
+  status: verified
+- type: same_as
+  person: hanan-levita-que-explico-la-ley
+  certainty: possible
+  inferred: true
+  sources:
+  - it-hanan
+  - nehemias-13
+  reason: 'Perspicacia «Hanán», núm. 10: quizá es el núm. 6, el levita que explicaba la Ley.'
+  checked_on: '2026-10-14'
+  status: verified
+- type: same_as
+  person: hanan-levita-firmante
+  certainty: possible
+  inferred: true
+  sources:
+  - it-hanan
+  - nehemias-13
+  reason: 'Perspicacia «Hanán», núm. 10: quizá es el núm. 7, el levita firmante.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- hanan-cabeza-del-pueblo
+- hanan-hijo-de-azel
+- hanan-hijo-de-igdalias
+- hanan-hijo-de-maaca
+- hanan-hijo-de-sasac
+- hanan-netineo
+- hanan-segundo-cabeza-del-pueblo
+disambiguation: 'Hanán núm. 10 de Perspicacia: el ayudante de los almacenes (Ne 13:13); no los demás Hanán que registra Perspicacia
+  «Hanán».'

@@ -1,0 +1,30 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: bani-padre-de-rehum
+name: Baní
+names:
+- name: Baní
+perspicacia: 1200000553#7
+disambiguation: El levita padre de Rehúm (Ne 3:17), núm. 7 de Perspicacia «Baní»; no los otros Baní que numera.
+distinct_from:
+- bani-antepasado-de-doce-repatriados
+- bani-antepasado-de-seis-repatriados
+- bani-cabeza-de-familia
+- bani-descendiente-de-perez
+- bani-el-gadita
+- bani-hijo-de-semer
+- bani-levita-que-explico-la-ley
+- bani-segundo-de-la-plataforma
+- bani-levita-firmante
+- bani-cabeza-del-pueblo
+- bani-hijo-de-hasabias
+summary: Levita cuyo hijo Rehúm encabezó a los levitas en la reparación de la muralla de Jerusalén en 455 a.e.c.
+reason: Perspicacia «Baní», núm. 7; Ne 3:17.
+sources:
+- it-bani
+- nehemias-3
+links:
+- title: 'Perspicacia: «Baní»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ban%C3%AD/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified

@@ -1,0 +1,24 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: matitias-junto-a-esdras
+name: Matitías
+names:
+- name: Matitías
+perspicacia: 1200002941#3
+disambiguation: El Matitías que estuvo junto a Esdras cuando se leyó la Ley al pueblo (Ne 8:4); no el arpista de David, el
+  coreíta hijo de Salum ni el de los hijos de Nebo.
+distinct_from:
+- matitias-descendiente-de-nebo
+- matitias-hijo-de-salum
+- matitias-musico
+summary: Uno de los seis hombres que se pusieron a la derecha de Esdras, sobre la plataforma de madera, mientras se leía la
+  Ley en Jerusalén. Perspicacia duda si era levita o sacerdote.
+reason: Perspicacia «Matitías», núm. 3; Ne 8:4.
+sources:
+- it-matitias
+- nehemias-8
+links:
+- title: 'Perspicacia: «Matitías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Matit%C3%ADas/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified

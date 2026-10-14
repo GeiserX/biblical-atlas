@@ -1,0 +1,37 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: abias-sacerdote-firmante
+name: Abías
+names:
+- name: Abías
+perspicacia: 1200000041#9
+summary: Sacerdote, o antepasado de uno, que participó en sellar la promesa de 455 a.e.c. Si fuera el Abías que volvió con
+  Zorobabel, habría pasado de los cien años.
+reason: Perspicacia «Abías», núm. 9; Ne 10:7.
+sources:
+- it-abias
+- nehemias-10
+links:
+- title: 'Perspicacia: «Abías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ab%C3%ADas/
+  type: perspicacia
+relations:
+- type: holds_office
+  office: priest
+  inferred: false
+  sources:
+  - nehemias-10
+  reason: 'Ne 10:8 cierra la lista: «esos son los sacerdotes».'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- abias-de-juda
+- abias-de-tiempos-de-david
+- abias-esposa-de-hezron
+- abias-hija-de-zacarias
+- abias-hijo-de-beker
+- abias-hijo-de-jeroboan
+- abias-hijo-de-samuel
+- abias-sacerdote-de-zorobabel
+disambiguation: Abías, sacerdote que, él o un antepasado, selló la promesa de Ne 10 (Perspicacia «Abías», núm. 9).

@@ -1,0 +1,36 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: meraya
+name: Meraya
+names:
+- name: Meraya
+perspicacia: '1200002988'
+summary: Sacerdote que, en días del sumo sacerdote Joiaquim, encabezaba la casa paterna de Seraya tras el regreso de Babilonia.
+reason: Perspicacia «Meraya»; Ne 12:12.
+sources:
+- it-meraya
+- nehemias-12
+links:
+- title: 'Perspicacia: «Meraya»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Meraya/
+  type: perspicacia
+relations:
+- type: kin
+  person: seraya-sacerdote-repatriado
+  word: ancestor
+  inferred: false
+  sources:
+  - nehemias-12
+  reason: 'Ne 12:12: de la casa de Seraya, Meraya; Perspicacia «Seraya», núm. 9, dice que Meraya representaba la casa del
+    Seraya del regreso.'
+  checked_on: '2026-10-14'
+  status: verified
+- type: holds_office
+  office: priest
+  inferred: false
+  sources:
+  - nehemias-12
+  reason: 'Ne 12:12: los jefes de las casas paternas de días de Joiaquim eran sacerdotes.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified

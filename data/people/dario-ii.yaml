@@ -1,0 +1,25 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: dario-ii
+name: Darío II
+names:
+- name: Darío II
+- name: Darío el persa
+  note: Así lo llama Ne 12:22; Perspicacia «Darío», núm. 3, ve probable que sea Darío II.
+- name: Darío Ocos
+  note: Perspicacia «Darío», núm. 3; también lo llama Notos.
+perspicacia: 1200001124#3
+summary: Rey de Persia de 423 a 405 a.e.c., llamado también Ocos. Perspicacia ve probable que sea el Darío el persa hasta
+  cuyo reinado llegan los registros de sacerdotes y levitas de Ne 12:22.
+reason: Perspicacia «Darío», núm. 3; Ne 12:22.
+sources:
+- it-dario
+- nehemias-12
+links:
+- title: 'Perspicacia: «Darío»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Dar%C3%ADo/
+  type: perspicacia
+not_claimed:
+- 'Que el Darío el persa de Ne 12:22 sea con seguridad Darío II: Perspicacia solo lo ve probable.'
+relations: []
+checked_on: '2026-10-14'
+status: verified

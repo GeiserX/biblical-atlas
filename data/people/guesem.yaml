@@ -1,0 +1,58 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: guesem
+name: Guésem
+names:
+- name: Guésem
+perspicacia: '1200001666'
+date:
+  from: -454
+  to: -454
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 455 a.e.c.
+summary: Árabe influyente que, con Sanbalat y Tobías, se burló de los judíos y se opuso a que Nehemías reconstruyera la muralla
+  de Jerusalén. Más tarde lo acusó de tramar una rebelión.
+reason: Perspicacia «Guésem»; Ne 2:19; 6:1-7. Año de Perspicacia «Nehemías», núm. 3.
+sources:
+- it-guesem
+- it-nehemias
+- nehemias-2
+- nehemias-6
+links:
+- title: 'Perspicacia: «Guésem»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Gu%C3%A9sem/
+  type: perspicacia
+relations:
+- type: born_in
+  place: arabia
+  inferred: true
+  sources:
+  - nehemias-2
+  - it-guesem
+  - nehemias-6
+  reason: 'Ne 2:19 lo llama «Guésem el árabe»: gentilicio de un pueblo extranjero.'
+  checked_on: '2026-10-14'
+  status: verified
+- type: tie
+  person: nehemias
+  word: enemy
+  date:
+    from: -454
+    to: -454
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 455 a.e.c.
+  inferred: false
+  sources:
+  - nehemias-2
+  - it-guesem
+  - nehemias-6
+  reason: 'Ne 2:19: se burla de Nehemías y de los judíos y los acusa de rebelarse contra el rey.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified

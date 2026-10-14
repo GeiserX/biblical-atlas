@@ -1,0 +1,17 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: zalaf
+name: Zalaf
+names:
+- name: Zalaf
+perspicacia: '1200004655'
+summary: Padre de al menos seis hijos; el sexto, Hanún, colaboró con Nehemías en la muralla de Jerusalén.
+reason: Perspicacia «Zalaf»; Ne 3:30.
+sources:
+- it-zalaf
+- nehemias-3
+links:
+- title: 'Perspicacia: «Zalaf»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zalaf/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified

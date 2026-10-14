@@ -1,0 +1,29 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: palal
+name: Palal
+names:
+- name: Palal
+perspicacia: '1200003364'
+summary: Hijo de Uzái. Reparó el tramo de muralla de Jerusalén frente al Contrafuerte y a la torre alta de la Casa del Rey,
+  junto al Patio de la Guardia.
+reason: Perspicacia «Palal»; Ne 3:25.
+sources:
+- it-palal
+- nehemias-3
+links:
+- title: 'Perspicacia: «Palal»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Palal/
+  type: perspicacia
+relations:
+- type: kin
+  person: uzai
+  word: father
+  inferred: false
+  sources:
+  - nehemias-3
+  - it-palal
+  reason: 'Ne 3:25: Palal hijo de Uzái.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified

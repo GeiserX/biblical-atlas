@@ -1,0 +1,37 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: helcai
+name: Helcái
+names:
+- name: Helcái
+- name: Helqai
+  note: Grafía del título de Perspicacia.
+perspicacia: '1200001975'
+summary: Sacerdote que encabezaba la casa paterna de Merayot en días del sumo sacerdote Joiaquim.
+reason: Perspicacia «Helqai»; Ne 12:12, 15.
+sources:
+- it-helqai
+- nehemias-12
+links:
+- title: 'Perspicacia: «Helqai»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Helqai/
+  type: perspicacia
+relations:
+- type: kin
+  person: merayot-familia-sacerdotal
+  word: ancestor
+  inferred: false
+  sources:
+  - nehemias-12
+  reason: 'Ne 12:12-21: Helcái encabezaba la casa paterna que llevaba el nombre de este sacerdote.'
+  checked_on: '2026-10-14'
+  status: verified
+- type: holds_office
+  office: priest
+  inferred: false
+  sources:
+  - nehemias-12
+  reason: 'Ne 12:12: los jefes de las casas paternas de días de Joiaquim eran sacerdotes.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified

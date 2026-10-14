@@ -1,0 +1,17 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: guispa
+name: Guispá
+names:
+- name: Guispá
+perspicacia: '1200001713'
+summary: Uno de los dos que estaban al frente de los siervos del templo en tiempos de Nehemías, cuando estos vivían en Ofel.
+reason: Perspicacia «Guispá»; Ne 11:21.
+sources:
+- it-guispa
+- nehemias-11
+links:
+- title: 'Perspicacia: «Guispá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Guisp%C3%A1/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified

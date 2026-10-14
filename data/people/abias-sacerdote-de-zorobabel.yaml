@@ -1,0 +1,38 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: abias-sacerdote-de-zorobabel
+name: Abías
+names:
+- name: Abías
+perspicacia: 1200000041#8
+summary: Cabeza de familia sacerdotal entre los que volvieron con Zorobabel y Jesúa. Una generación más tarde, en días de
+  Joiaquim y de Nehemías, Zicrí representaba a la casa de Abías.
+reason: Perspicacia «Abías», núm. 8; Ne 12:1-7, 17.
+sources:
+- it-abias
+- nehemias-12
+links:
+- title: 'Perspicacia: «Abías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ab%C3%ADas/
+  type: perspicacia
+relations:
+- type: holds_office
+  office: priest
+  inferred: false
+  sources:
+  - nehemias-12
+  reason: 'Ne 12:1, 7: va entre los jefes de los sacerdotes que subieron con Zorobabel y Jesúa.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- abias-de-juda
+- abias-de-tiempos-de-david
+- abias-esposa-de-hezron
+- abias-hija-de-zacarias
+- abias-hijo-de-beker
+- abias-hijo-de-jeroboan
+- abias-hijo-de-samuel
+- abias-sacerdote-firmante
+disambiguation: 'Abías núm. 8 de Perspicacia: el cabeza de familia sacerdotal del regreso con Zorobabel (Ne 12:4); no los
+  demás Abías que registra Perspicacia «Abías».'

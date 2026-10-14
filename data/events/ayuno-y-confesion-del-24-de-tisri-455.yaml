@@ -1,0 +1,45 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: ayuno-y-confesion-del-24-de-tisri-455
+title: Los israelitas ayunan y confiesan sus pecados
+date:
+  from: -454
+  to: -454
+  precision: day
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 24 de tisri de 455 a.e.c.
+  detail:
+    month: tisri
+    day: 24
+narrative_order:
+  series: nehemias
+  order: 109001
+places:
+- jerusalen
+people:
+- jesua-levita-que-explico-la-ley
+- bani-levita-que-explico-la-ley
+- sebanias-levita-de-la-confesion
+- buni-levita-de-la-confesion
+- serebias-levita-que-explico-la-ley
+- bani-segundo-de-la-plataforma
+- kenani
+passages:
+- Ne 9:1-4
+summary: El día 24, el pueblo ayunó vestido de saco y con polvo, se apartó de los extranjeros, oyó la Ley unas tres horas
+  y pasó otras tres confesando. Ocho levitas clamaron a Jehová desde su plataforma.
+reason: 'Ne 9:1: día 24; Perspicacia «Esdras», núm. 1, dice tisri, y «Baní», núm. 9, da 455 a.e.c. Jerusalén se deduce: sigue
+  la asamblea del mes séptimo. Orden 109001: tras la fiesta.'
+sources:
+- nehemias-9
+- it-esdras
+- it-bani
+- it-qadmiel
+- it-nehemias
+links:
+- title: Nehemías 9 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Nehem%C3%ADas/9/
+  type: bible
+checked_on: '2026-10-14'
+status: verified

@@ -1,0 +1,28 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jesua-padre-de-ezer
+name: Jesúa
+names:
+- name: Jesúa
+perspicacia: null
+disambiguation: El padre de Ézer, príncipe de Mizpá (Ne 3:19), sin número propio en Perspicacia «Jesúa»; no los Jesúa que
+  numera.
+distinct_from:
+- jesua-ayudante-de-core
+- jesua-de-pahat-moab
+- jesua-de-tiempos-de-david
+- jesua-supervisor-del-templo
+- josue-sumo-sacerdote
+- jesua-levita-que-explico-la-ley
+- jesua-hijo-de-azanias
+summary: Padre de Ézer, el príncipe de Mizpá que reparó la muralla de Jerusalén. Perspicacia no le da entrada propia; ve posible
+  que Ézer fuera de la casa levita de Jesúa.
+reason: Ne 3:19; Perspicacia «Jesúa», núm. 5, nombra a Ézer pero no dice quién era su padre.
+sources:
+- it-jesua
+- nehemias-3
+links:
+- title: 'Perspicacia: «Jesúa»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jes%C3%BAa/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified

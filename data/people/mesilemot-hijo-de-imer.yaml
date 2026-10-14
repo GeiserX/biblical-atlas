@@ -1,0 +1,32 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: mesilemot-hijo-de-imer
+name: Mesilemot
+names:
+- name: Mesilemot
+perspicacia: 1200003012#2
+summary: Sacerdote descendiente de Imer y antepasado de sacerdotes que vivieron en Jerusalén tras el destierro. Perspicacia
+  cree probable que sea el Mesilemit de 1Cr 9:12.
+reason: Perspicacia «Mesilemot», núm. 2; Ne 11:13.
+sources:
+- it-mesilemot
+- nehemias-11
+links:
+- title: 'Perspicacia: «Mesilemot»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Mesilemot/
+  type: perspicacia
+relations:
+- type: kin
+  person: imer-padre-de-mesilemit
+  word: father
+  inferred: false
+  sources:
+  - nehemias-11
+  - it-imer
+  reason: 'Ne 11:13: Mesilemot, hijo de Imer; Perspicacia «Imer», núm. 2.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- mesilemot-padre-de-berekias
+disambiguation: Mesilemot, sacerdote de la casa de Imer (Ne 11:13) (Perspicacia «Mesilemot», núm. 2).

@@ -1,0 +1,81 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: zacarias-hijo-de-jonatan
+name: Zacarías
+names:
+- name: Zacarías
+perspicacia: 1200004681#29
+summary: Sacerdote de la familia de Asaf, hijo de Jonatán, que tocó la trompeta en la procesión de la inauguración del muro
+  de Jerusalén.
+reason: Perspicacia «Zacarías», núm. 29; Ne 12:27, 31, 35.
+sources:
+- it-zacarias
+- nehemias-12
+links:
+- title: 'Perspicacia: «Zacarías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zacar%C3%ADas/
+  type: perspicacia
+relations:
+- type: kin
+  person: jonatan-hijo-de-semaya
+  word: father
+  inferred: false
+  sources:
+  - nehemias-12
+  - it-zacarias
+  reason: 'Ne 12:35: Zacarías, hijo de Jonatán.'
+  checked_on: '2026-10-14'
+  status: verified
+- type: kin
+  person: asaf-hijo-de-berekias
+  word: ancestor
+  inferred: false
+  sources:
+  - nehemias-12
+  reason: Ne 12:35 cierra su linaje en Asaf, el músico de David.
+  checked_on: '2026-10-14'
+  status: verified
+- type: holds_office
+  office: priest
+  inferred: false
+  sources:
+  - nehemias-12
+  - it-zacarias
+  reason: Ne 12:35 lo pone entre los hijos de los sacerdotes que llevaban trompetas; Perspicacia «Zacarías», núm. 29, lo llama
+    sacerdote.
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- zacarias-abuelo-de-ezequias
+- zacarias-consejero-de-uzias
+- zacarias-de-israel
+- zacarias-descendiente-de-elam
+- zacarias-descendiente-de-isias
+- zacarias-descendiente-de-paros
+- zacarias-el-rubenita
+- zacarias-enviado-a-casifia
+- zacarias-hijo-de-amarias
+- zacarias-hijo-de-bebai
+- zacarias-hijo-de-benaya
+- zacarias-hijo-de-hosa
+- zacarias-hijo-de-jeberekias
+- zacarias-hijo-de-jehoiada
+- zacarias-hijo-de-jehosafat
+- zacarias-hijo-de-meselemias
+- zacarias-hijo-de-pasjur
+- zacarias-hijo-del-selanita
+- zacarias-junto-a-esdras
+- zacarias-levita-de-ezequias
+- zacarias-levita-de-josias
+- zacarias-musico
+- zacarias-padre-de-ido
+- zacarias-padre-de-juan
+- zacarias-principe-de-jehosafat
+- zacarias-profeta
+- zacarias-sacerdote-de-josias
+- zacarias-trompetista
+- zacarias-trompetista-de-la-inauguracion
+- zeker
+disambiguation: 'Zacarías núm. 29 de Perspicacia: el trompetista hijo de Jonatán (Ne 12:35); no los demás Zacarías que registra
+  Perspicacia «Zacarías».'

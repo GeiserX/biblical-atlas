@@ -1,0 +1,22 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: bezai-cabeza-del-pueblo
+name: Bezái
+names:
+- name: Bezái
+- name: Bezai
+  note: Grafía del título de Perspicacia.
+perspicacia: 1200000720#2
+summary: Alguien de ese nombre, o un representante de la familia de Bezái, que selló la promesa de 455 a.e.c.
+reason: Perspicacia «Bezai», núm. 2; Ne 10:18.
+sources:
+- it-bezai
+- nehemias-10
+links:
+- title: 'Perspicacia: «Bezai»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Bezai/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- bezai-cabeza-de-familia
+disambiguation: Bezái, Bezái, o representante de su familia, en Ne 10:18 (Perspicacia «Bezai», núm. 2).

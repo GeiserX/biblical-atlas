@@ -1,0 +1,43 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: azarel-hijo-de-ahzai
+name: Azarel
+names:
+- name: Azarel
+perspicacia: 1200000485#5
+summary: Sacerdote de la casa de Imer, padre o antepasado de Amashái, que vivía en Jerusalén cuando gobernaba Nehemías.
+reason: Perspicacia «Azarel», núm. 5; Ne 11:13.
+sources:
+- it-azarel
+- nehemias-11
+links:
+- title: 'Perspicacia: «Azarel»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Azarel/
+  type: perspicacia
+relations:
+- type: same_as
+  person: azarel-musico-de-la-procesion
+  certainty: possible
+  inferred: true
+  sources:
+  - nehemias-11
+  - it-azarel
+  reason: 'Perspicacia «Azarel», núm. 6: el músico de la procesión del muro quizá es el núm. 5, el de Ne 11:13.'
+  checked_on: '2026-10-14'
+  status: verified
+- type: kin
+  person: ahzai
+  word: father
+  inferred: false
+  sources:
+  - nehemias-11
+  reason: 'Ne 11:13: Azarel, hijo de Ahzái.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- azarel-descendiente-de-binui
+- azarel-el-coreita
+- azarel-hijo-de-jeroham
+- uziel-hijo-de-heman
+disambiguation: Azarel, sacerdote de la casa de Imer, padre o antepasado de Amashái (Perspicacia «Azarel», núm. 5).

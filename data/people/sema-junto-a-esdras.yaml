@@ -1,0 +1,24 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: sema-junto-a-esdras
+name: Sema
+names:
+- name: Sema
+perspicacia: 1200003998#4
+disambiguation: El Sema de los días de Nehemías que acompañó a Esdras en la lectura de la Ley (Ne 8:4); no los Sema de Judá,
+  de Rubén ni de Benjamín.
+distinct_from:
+- sema-hijo-de-elpaal
+- sema-hijo-de-hebron
+- sema-hijo-de-joel
+summary: Uno de los seis que acompañaron a Esdras, a su derecha, en la lectura de la Ley del mes séptimo de 455 a.e.c. Perspicacia
+  cree probable que fuera sacerdote.
+reason: Perspicacia «Sema», núm. 4; Ne 8:4.
+sources:
+- it-sema
+- nehemias-8
+links:
+- title: 'Perspicacia: «Sema»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sema/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified

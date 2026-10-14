@@ -1,0 +1,35 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hatus-hijo-de-hasabneya
+name: Hatús
+names:
+- name: Hatús
+perspicacia: 1200001918#4
+disambiguation: El hijo de Hasabneya que reparó la muralla (Ne 3:10), núm. 4 de Perspicacia «Hatús»; no los otros Hatús que
+  numera.
+distinct_from:
+- hatus-descendiente-de-david
+- hatus-hijo-de-semaya
+- hatus-sacerdote-firmante
+- hatus-sacerdote-de-zorobabel
+summary: Hijo de Hasabneya. Reparó un tramo de la muralla de Jerusalén en tiempos de Nehemías.
+reason: Perspicacia «Hatús», núm. 4; Ne 3:10.
+sources:
+- it-hatus
+- nehemias-3
+links:
+- title: 'Perspicacia: «Hatús»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hat%C3%BAs/
+  type: perspicacia
+relations:
+- type: kin
+  person: hasabneya-padre-de-hatus
+  word: father
+  inferred: false
+  sources:
+  - nehemias-3
+  - it-hatus
+  reason: 'Ne 3:10: Hatús hijo de Hasabneya.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified

@@ -1,0 +1,33 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: meremot-sacerdote-de-zorobabel
+name: Meremot
+names:
+- name: Meremot
+perspicacia: 1200002996#1
+summary: Uno de los jefes de los sacerdotes que acompañaron a Zorobabel desde Babilonia en 537 a.e.c. Quizá fundó la casa
+  paterna que en la generación siguiente se llamaba Merayot.
+reason: Perspicacia «Meremot», núm. 1; Ne 12:1-7, 15.
+sources:
+- it-meremot
+- nehemias-12
+links:
+- title: 'Perspicacia: «Meremot»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Meremot/
+  type: perspicacia
+relations:
+- type: holds_office
+  office: priest
+  inferred: false
+  sources:
+  - nehemias-12
+  reason: 'Ne 12:1, 7: va entre los jefes de los sacerdotes que subieron con Zorobabel y Jesúa.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- meremot-descendiente-de-bani
+- meremot-hijo-de-uriya
+- meremot-sacerdote-firmante
+disambiguation: 'Meremot núm. 1 de Perspicacia: el jefe sacerdotal del regreso con Zorobabel (Ne 12:3); no los demás Meremot
+  que registra Perspicacia «Meremot».'

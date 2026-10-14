@@ -1,0 +1,39 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: nehemias-regresa-a-jerusalen
+title: Nehemías regresa a Jerusalén y echa a Tobías del templo
+date:
+  from: -442
+  to: -442
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: poco después de 443 a.e.c.
+narrative_order:
+  series: nehemias
+  order: 113007
+places:
+- jerusalen
+- babilonia
+people:
+- nehemias
+- eliasib-sumo-sacerdote
+- tobias-el-ammonita
+- artajerjes-i
+present:
+- nehemias
+passages:
+- Ne 13:4-9
+summary: Con permiso del rey, Nehemías vuelve y halla que el sumo sacerdote Eliasib ha dado a Tobías un almacén del patio
+  del templo. Arroja fuera sus muebles, manda limpiar los cuartos y devuelve allí los utensilios y las ofrendas.
+reason: 'Ne 13:6, 7. «Toda Escritura», libro 16, párr. 14: vuelve tras un tiempo en Babilonia; Perspicacia «Jerusalén» fecha
+  sus medidas poco después de 443. Orden 113007, el del regreso: los vv. 4 y 5 cuentan lo ocurrido en su ausencia.'
+sources:
+- nehemias-13
+- si-nehemias
+- it-jerusalen
+- it-nehemias
+- it-eliasib
+- it-tobias
+checked_on: '2026-10-14'
+status: verified

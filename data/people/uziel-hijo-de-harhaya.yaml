@@ -1,0 +1,53 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: uziel-hijo-de-harhaya
+name: Uziel
+names:
+- name: Uziel
+perspicacia: 1200004536#6
+disambiguation: El orfebre hijo de Harhaya (Ne 3:8), núm. 6 de Perspicacia «Uziel»; no los otros Uziel que numera.
+distinct_from:
+- uziel-de-benjamin
+- uziel-hijo-de-cohat
+- uziel-hijo-de-heman
+- uziel-hijo-de-isi
+- uziel-levita-de-ezequias
+summary: Orfebre, hijo de Harhaya. Reparó un tramo de la muralla de Jerusalén cuando Nehemías dirigía la obra; con Hananías
+  pavimentó hasta el Muro Ancho.
+reason: Perspicacia «Uziel», núm. 6; Ne 3:8.
+sources:
+- it-uziel
+- nehemias-3
+links:
+- title: 'Perspicacia: «Uziel»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Uziel/
+  type: perspicacia
+relations:
+- type: kin
+  person: harhaya
+  word: father
+  inferred: false
+  sources:
+  - nehemias-3
+  - it-uziel
+  reason: 'Ne 3:8: Uziel hijo de Harhaya.'
+  checked_on: '2026-10-14'
+  status: verified
+- type: accompanies
+  person: hananias-fabricante-de-unguentos
+  word: fellow_worker
+  date:
+    from: -454
+    to: -454
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 455 a.e.c.
+  inferred: false
+  sources:
+  - nehemias-3
+  reason: 'Ne 3:8: Uziel y Hananías reparan uno al lado del otro y los dos pavimentan Jerusalén hasta el Muro Ancho.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified

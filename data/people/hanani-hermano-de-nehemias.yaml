@@ -1,0 +1,69 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hanani-hermano-de-nehemias
+name: Hananí
+names:
+- name: Hananí
+perspicacia: 1200001852#4
+disambiguation: El hermano de Nehemías que le llevó noticias a Susa (Ne 1:2); no el vidente de Asá, el hijo de Hemán ni el
+  sacerdote de los hijos de Imer.
+distinct_from:
+- hanani-vidente
+- hanani-hijo-de-heman
+- hanani-descendiente-de-imer
+- hanani-musico-de-la-procesion
+date:
+  from: -455
+  to: -454
+  precision: range
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 456-455 a.e.c.
+summary: Hermano de Nehemías. Llegó a Susa con otros hombres de Judá y le contó que el muro y las puertas de Jerusalén seguían
+  destruidos. Más tarde Nehemías lo puso al mando de la ciudad.
+reason: Perspicacia «Hananí», núm. 4; Ne 1:2, 3; 7:2. Perspicacia «Nehemías, Libro de» fecha en 456 el kislev de Ne 1:1.
+sources:
+- it-hanani
+- it-nehemias-libro
+- nehemias-1
+- nehemias-7
+links:
+- title: 'Perspicacia: «Hananí»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hanan%C3%AD/
+  type: perspicacia
+relations:
+- type: lived_in
+  place: juda
+  date:
+    from: -455
+    to: -455
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 456 a.e.c.
+  inferred: false
+  sources:
+  - nehemias-1
+  - it-hanani
+  reason: 'Ne 1:2: llega a Susa «con otros hombres de Judá», es decir, venía de allí.'
+  checked_on: '2026-10-14'
+  status: verified
+- type: lived_in
+  place: jerusalen
+  date:
+    from: -454
+    to: -454
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 455 a.e.c.
+  inferred: true
+  sources:
+  - nehemias-7
+  reason: 'Ne 7:2: Nehemías lo puso a cargo de Jerusalén; se deduce que vivía allí.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified

@@ -1,0 +1,37 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hazaya
+name: Hazaya
+names:
+- name: Hazaya
+perspicacia: '1200001924'
+summary: Judaíta descendiente de Selá, el hijo de Judá; antepasado de Maaseya, que vivía en Jerusalén tras el destierro.
+reason: Perspicacia «Hazaya»; Ne 11:5.
+sources:
+- it-hazaya
+- nehemias-11
+links:
+- title: 'Perspicacia: «Hazaya»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hazaya/
+  type: perspicacia
+relations:
+- type: kin
+  person: adaya-hijo-de-joiarib
+  word: father
+  inferred: false
+  sources:
+  - nehemias-11
+  reason: 'Ne 11:5: Hazaya, hijo de Adaya.'
+  checked_on: '2026-10-14'
+  status: verified
+- type: kin
+  person: sela-hijo-de-juda
+  word: ancestor
+  inferred: true
+  sources:
+  - nehemias-11
+  - it-hazaya
+  reason: Perspicacia «Hazaya» lo da como descendiente de Selá, hijo de Judá (Ne 11:5).
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified

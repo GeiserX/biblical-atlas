@@ -1,0 +1,50 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: joiada-hijo-de-paseah
+name: Joiadá
+names:
+- name: Joiadá
+perspicacia: 1200002492#1
+disambiguation: El hijo de Paséah que reparó la Puerta de la Ciudad Vieja (Ne 3:6), núm. 1 de Perspicacia «Joiadá»; no el
+  sumo sacerdote hijo de Eliasib.
+summary: 'Hijo de Paséah. Con Mesulam hijo de Besodeya reparó la Puerta de la Ciudad Vieja: le puso vigas, hojas, cerrojos
+  y barras.'
+reason: Perspicacia «Joiadá», núm. 1; Ne 3:6.
+sources:
+- it-joiada
+- nehemias-3
+links:
+- title: 'Perspicacia: «Joiadá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Joiad%C3%A1/
+  type: perspicacia
+relations:
+- type: kin
+  person: paseah-padre-de-joiada
+  word: father
+  inferred: false
+  sources:
+  - nehemias-3
+  - it-joiada
+  reason: 'Ne 3:6: Joiadá hijo de Paséah.'
+  checked_on: '2026-10-14'
+  status: verified
+- type: accompanies
+  person: mesulam-hijo-de-besodeya
+  word: fellow_worker
+  date:
+    from: -454
+    to: -454
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 455 a.e.c.
+  inferred: false
+  sources:
+  - nehemias-3
+  reason: 'Ne 3:6: Joiadá y Mesulam repararon juntos la Puerta de la Ciudad Vieja.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- joiada-hijo-de-eliasib

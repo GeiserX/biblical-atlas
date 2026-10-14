@@ -1,0 +1,40 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: mesulam-portero
+name: Mesulam
+names:
+- name: Mesulam
+perspicacia: 1200003014#12
+summary: Portero que vigilaba los almacenes junto a las puertas del templo, contemporáneo de Joiaquim, de Esdras y de Nehemías.
+reason: Perspicacia «Mesulam», núm. 12; Ne 12:25, 26.
+sources:
+- it-mesulam
+- nehemias-12
+links:
+- title: 'Perspicacia: «Mesulam»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Mesulam/
+  type: perspicacia
+relations: []
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- mesulam-abuelo-de-safan
+- mesulam-cabeza-del-pueblo
+- mesulam-de-la-casa-de-esdras
+- mesulam-de-la-casa-de-guineton
+- mesulam-de-la-procesion-del-muro
+- mesulam-descendiente-de-bani
+- mesulam-enviado-a-casifia
+- mesulam-hijo-de-abihail
+- mesulam-hijo-de-berekias
+- mesulam-hijo-de-besodeya
+- mesulam-hijo-de-elpaal
+- mesulam-hijo-de-hodavias
+- mesulam-hijo-de-mesilemit
+- mesulam-hijo-de-sefatias
+- mesulam-hijo-de-zorobabel
+- mesulam-junto-a-esdras
+- mesulam-levita-de-josias
+- mesulam-levita-de-tiempos-de-esdras
+- mesulam-sacerdote-firmante
+- salum-hijo-de-sadoc
+disambiguation: 'Mesulam núm. 12 de Perspicacia: el portero de Ne 12:25; no los demás Mesulam que registra Perspicacia «Mesulam».'

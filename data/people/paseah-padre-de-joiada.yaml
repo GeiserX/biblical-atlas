@@ -1,0 +1,22 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: paseah-padre-de-joiada
+name: Paséah
+names:
+- name: Paséah
+perspicacia: 1200003395#3
+disambiguation: El padre de Joiadá (Ne 3:6), núm. 3 de Perspicacia «Paséah»; no el judaíta hijo de Estón ni el antepasado
+  de netineos.
+distinct_from:
+- paseah-hijo-de-eston
+- paseah-netineo
+summary: Padre de Joiadá, uno de los que en 455 a.e.c. rehicieron la puerta llamada de la Ciudad Vieja.
+reason: Perspicacia «Paséah», núm. 3; Ne 3:6.
+sources:
+- it-paseah
+- nehemias-3
+links:
+- title: 'Perspicacia: «Paséah»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Pas%C3%A9ah/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified

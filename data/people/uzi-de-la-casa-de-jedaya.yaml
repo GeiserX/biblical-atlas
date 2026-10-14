@@ -1,0 +1,54 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: uzi-de-la-casa-de-jedaya
+name: Uzí
+names:
+- name: Uzí
+perspicacia: 1200004533#6
+summary: Cabeza de la casa sacerdotal de Jedayá en días de Joiaquim. Perspicacia ve posible que sea el sacerdote Uzí de la
+  inauguración del muro.
+reason: Perspicacia «Uzí», núm. 6; Ne 12:1, 12, 19.
+sources:
+- it-uzi
+- nehemias-12
+links:
+- title: 'Perspicacia: «Uzí»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Uz%C3%AD/
+  type: perspicacia
+relations:
+- type: kin
+  person: jedaya-antepasado-de-uzi
+  word: ancestor
+  inferred: false
+  sources:
+  - nehemias-12
+  reason: 'Ne 12:12-21: Uzí encabezaba la casa paterna que llevaba el nombre de este sacerdote.'
+  checked_on: '2026-10-14'
+  status: verified
+- type: holds_office
+  office: priest
+  inferred: false
+  sources:
+  - nehemias-12
+  reason: 'Ne 12:12: los jefes de las casas paternas de días de Joiaquim eran sacerdotes.'
+  checked_on: '2026-10-14'
+  status: verified
+- type: same_as
+  person: uzi-sacerdote-de-la-inauguracion
+  certainty: possible
+  inferred: true
+  sources:
+  - it-uzi
+  - nehemias-12
+  reason: 'Perspicacia «Uzí», núm. 6 y 7: es posible que el cabeza de la casa de Jedayá sea el sacerdote de Ne 12:42.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- uzi-de-benjamin
+- uzi-de-isacar
+- uzi-hijo-de-bani
+- uzi-hijo-de-buqui
+- uzi-hijo-de-micri
+disambiguation: 'Uzí núm. 6 de Perspicacia: el cabeza de la casa de Jedayá (Ne 12:19); no los demás Uzí que registra Perspicacia
+  «Uzí».'

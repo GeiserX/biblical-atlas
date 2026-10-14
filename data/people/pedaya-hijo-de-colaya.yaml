@@ -1,0 +1,35 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: pedaya-hijo-de-colaya
+name: Pedaya
+names:
+- name: Pedaya
+perspicacia: 1200003414#4
+summary: Benjamita, antepasado del Salú que vivía en Jerusalén después del destierro.
+reason: Perspicacia «Pedaya», núm. 4; Ne 11:7.
+sources:
+- it-pedaya
+- nehemias-11
+links:
+- title: 'Perspicacia: «Pedaya»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Pedaya/
+  type: perspicacia
+relations:
+- type: kin
+  person: colaya-hijo-de-maaseya
+  word: father
+  inferred: false
+  sources:
+  - nehemias-11
+  reason: 'Ne 11:7: Pedaya, hijo de Colaya.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- pedaya-descendiente-de-paros
+- pedaya-encargado-de-los-almacenes
+- pedaya-hijo-de-joaquin
+- pedaya-junto-a-esdras
+- pedaya-padre-de-joel
+- pedaya-padre-de-zebida
+disambiguation: Pedaya, benjamita, antepasado de Salú (Perspicacia «Pedaya», núm. 4).

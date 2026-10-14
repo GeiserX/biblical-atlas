@@ -1,0 +1,35 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: maluc-sacerdote-de-zorobabel
+name: Maluc
+names:
+- name: Maluc
+perspicacia: 1200002873#2
+summary: Sacerdote del grupo que acompañó a Zorobabel desde Babilonia en 537 a.e.c. En la lista de las casas de la generación
+  siguiente, en su lugar aparece Malukí.
+reason: Perspicacia «Maluc», núm. 2; Ne 12:1, 2.
+sources:
+- it-maluc
+- nehemias-12
+links:
+- title: 'Perspicacia: «Maluc»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Maluc/
+  type: perspicacia
+relations:
+- type: holds_office
+  office: priest
+  inferred: false
+  sources:
+  - nehemias-12
+  reason: 'Ne 12:1, 7: va entre los jefes de los sacerdotes que subieron con Zorobabel y Jesúa.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- maluc-cabeza-del-pueblo
+- maluc-descendiente-de-bani
+- maluc-descendiente-de-harim
+- maluc-hijo-de-hasabias
+- maluc-sacerdote-firmante
+disambiguation: 'Maluc núm. 2 de Perspicacia: el sacerdote del regreso con Zorobabel (Ne 12:2); no los demás Maluc que registra
+  Perspicacia «Maluc».'

@@ -1,0 +1,27 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: nahamani
+name: Nahamaní
+names:
+- name: Nahamaní
+perspicacia: '1200003165'
+summary: Uno de los doce hombres que encabezan, con Zorobabel, la lista de los que volvieron del destierro en Babilonia. La
+  lista paralela de Esdras no lo nombra.
+reason: Perspicacia «Nahamaní»; Ne 7:6, 7.
+sources:
+- it-nahamani
+- nehemias-7
+links:
+- title: 'Perspicacia: «Nahamaní»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Nahaman%C3%AD/
+  type: perspicacia
+relations:
+- type: lived_in
+  place: juda
+  inferred: false
+  sources:
+  - nehemias-7
+  reason: 'Ne 7:6, 7: volvió con Zorobabel a Jerusalén y Judá, donde cada uno fue a su ciudad.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified

@@ -1,0 +1,34 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: adonias-cabeza-del-pueblo
+name: Adonías
+names:
+- name: Adonías
+perspicacia: 1200000110#3
+summary: Uno de los jefes del pueblo; él o un descendiente selló la promesa de 455 a.e.c. Comparar Ne 10 con Esd 2 hace pensar
+  que es Adonicam.
+reason: Perspicacia «Adonías», núm. 3; Ne 10:16.
+sources:
+- it-adonias
+- nehemias-10
+links:
+- title: 'Perspicacia: «Adonías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Adon%C3%ADas/
+  type: perspicacia
+relations:
+- type: same_as
+  person: adonicam
+  certainty: probable
+  inferred: true
+  sources:
+  - nehemias-10
+  - it-adonias
+  reason: 'Perspicacia «Adonías», núm. 3: comparar los jefes de Ne 10 con los cabezas que volvieron con Zorobabel parece confirmar
+    que el de Ne 10:16 es Adonicam.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- adonias-hijo-de-david
+- adonias-levita-de-jehosafat
+disambiguation: Adonías, cabeza del pueblo en la lista de Ne 10:16 (Perspicacia «Adonías», núm. 3).

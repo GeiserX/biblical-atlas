@@ -1,0 +1,65 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: esdras-lee-la-ley-ante-el-pueblo-455
+title: Esdras lee la Ley al pueblo ante la Puerta del Agua
+date:
+  from: -454
+  to: -454
+  precision: day
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 1 de tisri de 455 a.e.c.
+  detail:
+    month: tisri
+    day: 1
+narrative_order:
+  series: nehemias
+  order: 108001
+places:
+- jerusalen
+people:
+- esdras
+- nehemias
+- matitias-junto-a-esdras
+- sema-junto-a-esdras
+- anaya-junto-a-esdras
+- urias-junto-a-esdras
+- hilquias-junto-a-esdras
+- maaseya-junto-a-esdras
+- pedaya-junto-a-esdras
+- misael-junto-a-esdras
+- malkiya-junto-a-esdras
+- has-badana
+- zacarias-junto-a-esdras
+- mesulam-junto-a-esdras
+- jesua-levita-que-explico-la-ley
+- bani-levita-que-explico-la-ley
+- serebias-levita-que-explico-la-ley
+- jamin-levita-que-explico-la-ley
+- acub-levita-que-explico-la-ley
+- sabetai-levita-de-tiempos-de-nehemias
+- hodias-levita-que-explico-la-ley
+- maaseya-levita-que-explico-la-ley
+- quelita-levita-que-explico-la-ley
+- azarias-levita-que-explico-la-ley
+- jozabad-levita-que-explico-la-ley
+- hanan-levita-que-explico-la-ley
+- pelaya-levita-que-explico-la-ley
+passages:
+- Ne 8:1-12
+summary: Ante la Puerta del Agua, en su plaza, Esdras leyó la Ley desde una plataforma, del alba al mediodía, con trece hombres
+  a sus lados, y trece levitas la explicaban. Después animaron al pueblo, que lloraba, a celebrar.
+reason: 'Ne 8:2: día 1 del mes séptimo; Perspicacia «Mesulam», núm. 18, lo pone en 455 a.e.c. Orden 108001: el libro va en
+  orden de tiempo (tramo 1), y esto sigue al muro, acabado en elul.'
+sources:
+- nehemias-8
+- it-mesulam
+- it-esdras
+- it-nehemias
+- it-puerta
+links:
+- title: Nehemías 8 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Nehem%C3%ADas/8/
+  type: bible
+checked_on: '2026-10-14'
+status: verified

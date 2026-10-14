@@ -1,0 +1,44 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: nehemias-pone-a-hanani-y-hananias-al-frente-de-jerusalen
+title: Nehemías pone a Hananí y a Hananías al frente de Jerusalén
+date:
+  from: -454
+  to: -454
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 455 a.e.c. (tras acabar el muro el 25 de elul)
+narrative_order:
+  series: nehemias
+  order: 107001
+places:
+- jerusalen
+people:
+- nehemias
+- hanani-hermano-de-nehemias
+- hananias-jefe-de-la-fortaleza
+present:
+- nehemias
+- hanani-hermano-de-nehemias
+- hananias-jefe-de-la-fortaleza
+passages:
+- Ne 7:1-3
+summary: Con el muro acabado, Nehemías coloca las puertas, nombra porteros, cantores y levitas y deja la ciudad a cargo de
+  su hermano Hananí y de Hananías. Manda abrir las puertas solo con el sol alto y poner guardias.
+reason: 'Perspicacia «Nehemías», núm. 3: lo hace una vez terminado el muro, el 25 de elul de 455 (Ne 7:1). Orden 107001: el
+  libro sigue aquí el orden de los hechos.'
+sources:
+- nehemias-7
+- it-nehemias
+- it-hanani
+- it-hananias
+links:
+- title: 'Perspicacia: «Nehemías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Nehem%C3%ADas/
+  type: perspicacia
+- title: Nehemías 7 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Nehem%C3%ADas/7/
+  type: bible
+checked_on: '2026-10-14'
+status: verified

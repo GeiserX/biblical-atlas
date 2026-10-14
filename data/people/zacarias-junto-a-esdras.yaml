@@ -1,0 +1,51 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: zacarias-junto-a-esdras
+name: Zacarías
+names:
+- name: Zacarías
+perspicacia: 1200004681#25
+disambiguation: El Zacarías que acompañó a Esdras en la lectura de la Ley (Ne 8:4); no el profeta ni los demás Zacarías que
+  numera Perspicacia.
+distinct_from:
+- zacarias-abuelo-de-ezequias
+- zacarias-consejero-de-uzias
+- zacarias-de-israel
+- zacarias-descendiente-de-elam
+- zacarias-descendiente-de-isias
+- zacarias-descendiente-de-paros
+- zacarias-el-rubenita
+- zacarias-enviado-a-casifia
+- zacarias-hijo-de-bebai
+- zacarias-hijo-de-benaya
+- zacarias-hijo-de-hosa
+- zacarias-hijo-de-jeberekias
+- zacarias-hijo-de-jehoiada
+- zacarias-hijo-de-jehosafat
+- zacarias-hijo-de-meselemias
+- zacarias-levita-de-ezequias
+- zacarias-levita-de-josias
+- zacarias-musico
+- zacarias-padre-de-ido
+- zacarias-padre-de-juan
+- zacarias-principe-de-jehosafat
+- zacarias-profeta
+- zacarias-sacerdote-de-josias
+- zacarias-trompetista
+- zeker
+- zacarias-hijo-de-amarias
+- zacarias-hijo-del-selanita
+- zacarias-hijo-de-pasjur
+- zacarias-hijo-de-jonatan
+- zacarias-trompetista-de-la-inauguracion
+summary: Colaborador de Esdras en la lectura y la explicación de la Ley; estaba a su izquierda en la plataforma. Perspicacia
+  lo cree probablemente sacerdote.
+reason: Perspicacia «Zacarías», núm. 25; Ne 8:4.
+sources:
+- it-zacarias
+- nehemias-8
+links:
+- title: 'Perspicacia: «Zacarías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zacar%C3%ADas/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified

@@ -1,0 +1,29 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: guineton-sacerdote-firmante
+name: Guinetón
+names:
+- name: Guinetón
+perspicacia: 1200001709#2
+summary: Sacerdote, o antepasado de uno, que figura entre quienes sellaron la promesa escrita de 455 a.e.c. en Jerusalén.
+reason: Perspicacia «Guinetón», núm. 2; Ne 10:6.
+sources:
+- it-guineton
+- nehemias-10
+links:
+- title: 'Perspicacia: «Guinetón»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Guinet%C3%B3n/
+  type: perspicacia
+relations:
+- type: holds_office
+  office: priest
+  inferred: false
+  sources:
+  - nehemias-10
+  reason: 'Ne 10:8 cierra la lista: «esos son los sacerdotes».'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- guineton-familia-sacerdotal
+disambiguation: Guinetón, sacerdote que, él o un antepasado, selló la promesa de Ne 10 (Perspicacia «Guinetón», núm. 2).

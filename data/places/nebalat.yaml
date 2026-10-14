@@ -1,0 +1,25 @@
+# biblical-atlas: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: nebalat
+name: Nebalat
+names:
+- name: Nebalat
+type: city
+lat: 31.986436
+lon: 34.9589
+precision: point
+coord_source: openbible:acd682e
+coord_url: https://www.openbible.info/geo/ancient/acd682e/neballat
+coord_note: Beit Nabala, la identificación de OpenBible, que es la que Perspicacia da como habitual.
+summary: Lugar donde se asentaron benjamitas al volver del destierro. Se la identifica con Beit Nebala, sobre una colina pequeña
+  a unos 6 km de Lod hacia el estenoreste.
+reason: 'Perspicacia «Nebalat»; Ne 11:31, 34. OpenBible: solo el punto.'
+sources:
+- it-nebalat
+- openbible-geo
+- nehemias-11
+links:
+- title: 'Perspicacia: «Nebalat»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Nebalat/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified

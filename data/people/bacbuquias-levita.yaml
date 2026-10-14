@@ -1,0 +1,33 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: bacbuquias-levita
+name: Bacbuquías
+names:
+- name: Bacbuquías
+- name: Baqbuquías
+  note: Grafía del título de Perspicacia.
+perspicacia: 1200000541#3
+summary: Levita, quizá cantor, elegido para vivir en Jerusalén en días de Nehemías; Ne 11:17 lo llama el segundo entre sus
+  hermanos.
+reason: Perspicacia «Baqbuquías», núm. 3; Ne 11:17.
+sources:
+- it-baqbuquias
+- nehemias-11
+links:
+- title: 'Perspicacia: «Baqbuquías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Baqbuqu%C3%ADas/
+  type: perspicacia
+relations:
+- type: lived_in
+  place: jerusalen
+  inferred: false
+  sources:
+  - nehemias-11
+  reason: 'Ne 11:15, 17, 18: de los levitas que vivían en la ciudad santa.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- bacbuquias-levita-de-zorobabel
+- bacbuquias-portero
+disambiguation: Bacbuquías, levita, segundo entre sus hermanos (Ne 11:17) (Perspicacia «Baqbuquías», núm. 3).

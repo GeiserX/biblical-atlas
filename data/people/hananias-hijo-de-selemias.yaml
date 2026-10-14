@@ -1,0 +1,62 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hananias-hijo-de-selemias
+name: Hananías
+names:
+- name: Hananías
+perspicacia: 1200001853#12
+disambiguation: El hijo de Selemías que reparó la muralla (Ne 3:30), núm. 12 de Perspicacia «Hananías»; no los otros Hananías
+  que numera.
+distinct_from:
+- hananias-abuelo-de-iriya
+- hananias-descendiente-de-bebai
+- hananias-fabricante-de-unguentos
+- hananias-hijo-de-azur
+- hananias-hijo-de-heman
+- hananias-hijo-de-sasac
+- hananias-hijo-de-zorobabel
+- hananias-padre-de-sedequias
+- hananias-principe-de-uzias
+- sadrac
+- hananias-jefe-de-la-fortaleza
+- hananias-cabeza-del-pueblo
+- hananias-de-la-casa-de-jeremias
+- hananias-trompetista-de-la-inauguracion
+summary: Hijo de Selemías. Con Hanún, el sexto hijo de Zalaf, reparó un tramo de la muralla de Jerusalén en 455 a.e.c.
+reason: Perspicacia «Hananías», núm. 12; Ne 3:30.
+sources:
+- it-hananias
+- nehemias-3
+links:
+- title: 'Perspicacia: «Hananías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hanan%C3%ADas/
+  type: perspicacia
+relations:
+- type: kin
+  person: selemias-padre-de-hananias
+  word: father
+  inferred: false
+  sources:
+  - nehemias-3
+  - it-hananias
+  reason: 'Ne 3:30: Hananías hijo de Selemías.'
+  checked_on: '2026-10-14'
+  status: verified
+- type: accompanies
+  person: hanun-hijo-de-zalaf
+  word: fellow_worker
+  date:
+    from: -454
+    to: -454
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 455 a.e.c.
+  inferred: false
+  sources:
+  - nehemias-3
+  reason: 'Ne 3:30: Hananías y Hanún repararon juntos otro tramo.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified

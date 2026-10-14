@@ -1,0 +1,25 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: baana-padre-de-sadoc
+name: Baaná
+names:
+- name: Baaná
+perspicacia: 1200000524#3
+disambiguation: El padre de Sadoc (Ne 3:4), núm. 3 de Perspicacia «Baaná»; no los dos comisarios de Salomón.
+distinct_from:
+- baana-el-netofatita
+- baana-hijo-de-ahilud
+- baana-hijo-de-husai
+- baana-hijo-de-rimon
+- baana-repatriado
+- baana-cabeza-del-pueblo
+summary: Padre del Sadoc que ayudó a reparar la muralla de Jerusalén con Nehemías en 455 a.e.c.
+reason: Perspicacia «Baaná», núm. 3; Ne 3:4.
+sources:
+- it-baana
+- nehemias-3
+links:
+- title: 'Perspicacia: «Baaná»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Baan%C3%A1/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified

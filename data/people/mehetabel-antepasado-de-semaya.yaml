@@ -1,0 +1,21 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: mehetabel-antepasado-de-semaya
+name: Mehetabel
+names:
+- name: Mehetabel
+perspicacia: 1200002961#2
+summary: Antepasado, probablemente el abuelo, del Semaya pagado por Tobías y Sanbalat para asustar a Nehemías. El texto lo
+  da como padre de Delayá.
+reason: Perspicacia «Mehetabel», núm. 2; Ne 6:10.
+sources:
+- it-mehetabel
+- nehemias-6
+links:
+- title: 'Perspicacia: «Mehetabel»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Mehetabel/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- mehetabel-esposa-de-hadar
+disambiguation: 'Mehetabel núm. 2 de Perspicacia: el antepasado de Semaya (Ne 6:10), no la esposa del rey edomita Hadar.'

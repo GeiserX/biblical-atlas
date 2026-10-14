@@ -1,0 +1,39 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: amarias-hijo-de-sefatias
+name: Amarías
+names:
+- name: Amarías
+perspicacia: 1200000219#10
+summary: Judaíta, antepasado de algunos de los que vivían en Jerusalén en días de Nehemías; Ne 11:4 lo pone en el linaje de
+  Ataya.
+reason: Perspicacia «Amarías», núm. 10; Ne 11:4.
+sources:
+- it-amarias
+- nehemias-11
+links:
+- title: 'Perspicacia: «Amarías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Amar%C3%ADas/
+  type: perspicacia
+relations:
+- type: kin
+  person: sefatias-hijo-de-mahalalel
+  word: father
+  inferred: false
+  sources:
+  - nehemias-11
+  reason: 'Ne 11:4: Amarías, hijo de Sefatías.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- amarias-ayudante-de-core
+- amarias-descendiente-de-binui
+- amarias-hebronita
+- amarias-hijo-de-azarias
+- amarias-hijo-de-ezequias
+- amarias-hijo-de-merayot
+- amarias-sacerdote-de-zorobabel
+- amarias-sacerdote-firmante
+- amarias-sacerdote-principal
+disambiguation: Amarías, judaíta, antepasado de Ataya (Perspicacia «Amarías», núm. 10).

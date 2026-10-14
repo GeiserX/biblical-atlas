@@ -1,0 +1,36 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: juda-musico-de-la-procesion
+name: Judá
+names:
+- name: Judá
+perspicacia: 1200002538#9
+summary: Músico sacerdotal de la procesión de la inauguración del muro de Jerusalén.
+reason: Perspicacia «Judá», núm. 9; Ne 12:31, 35, 36.
+sources:
+- it-juda
+- nehemias-12
+links:
+- title: 'Perspicacia: «Judá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jud%C3%A1/
+  type: perspicacia
+relations:
+- type: holds_office
+  office: priest
+  inferred: true
+  sources:
+  - it-juda
+  - nehemias-12
+  reason: Perspicacia «Judá», núm. 9, lo llama músico sacerdotal (Ne 12:36).
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- hodavias-levita
+- juda-de-la-procesion-del-muro
+- juda-hijo-de-hasenua
+- juda-hijo-de-jacob
+- juda-levita-de-tiempos-de-esdras
+- juda-levita-de-zorobabel
+disambiguation: 'Judá núm. 9 de Perspicacia: el músico de la procesión del muro (Ne 12:36); no los demás Judá que registra
+  Perspicacia «Judá».'

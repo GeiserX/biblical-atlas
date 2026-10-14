@@ -1,0 +1,21 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: recab-padre-de-malkiya
+name: Recab
+names:
+- name: Recab
+perspicacia: 1200003662#3
+disambiguation: El padre de Malkiya (Ne 3:14), núm. 3 de Perspicacia «Recab»; no el benjamita hijo de Rimón.
+distinct_from:
+- recab-hijo-de-rimon
+summary: Padre o antepasado de Malkiya, el príncipe de Bet-Hakerem que rehízo una puerta de Jerusalén. Si era el Recab de
+  los recabitas, Malkiya mostraría cumplida la promesa de Jer 35:19.
+reason: Perspicacia «Recab», núm. 3; Ne 3:14.
+sources:
+- it-recab
+- nehemias-3
+links:
+- title: 'Perspicacia: «Recab»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Recab/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified

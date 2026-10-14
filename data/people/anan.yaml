@@ -1,0 +1,18 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: anan
+name: Anán
+names:
+- name: Anán
+perspicacia: '1200000264'
+summary: Uno de los jefes del pueblo que, en persona o por medio de otro, selló con Nehemías en 455 a.e.c. el compromiso de
+  la nación de servir a Jehová.
+reason: Perspicacia «Anán»; Ne 10:26.
+sources:
+- it-anan
+- nehemias-10
+links:
+- title: 'Perspicacia: «Anán»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/An%C3%A1n/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified

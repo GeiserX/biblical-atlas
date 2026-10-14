@@ -1,0 +1,37 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: pedaya-encargado-de-los-almacenes
+name: Pedaya
+names:
+- name: Pedaya
+perspicacia: 1200003414#7
+summary: Levita fiel al que Nehemías, en su segunda visita, encargó con Selemías y Sadoc de la contribución del diezmo guardada
+  en los almacenes.
+reason: Perspicacia «Pedaya», núm. 7; Ne 13:6, 7, 12, 13.
+sources:
+- it-pedaya
+- nehemias-13
+links:
+- title: 'Perspicacia: «Pedaya»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Pedaya/
+  type: perspicacia
+relations:
+- type: accompanies
+  person: selemias-encargado-de-los-almacenes
+  word: fellow_worker
+  inferred: false
+  sources:
+  - nehemias-13
+  reason: 'Ne 13:13: Nehemías los puso juntos al cargo de los almacenes.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- pedaya-descendiente-de-paros
+- pedaya-hijo-de-colaya
+- pedaya-hijo-de-joaquin
+- pedaya-junto-a-esdras
+- pedaya-padre-de-joel
+- pedaya-padre-de-zebida
+disambiguation: 'Pedaya núm. 7 de Perspicacia: el levita de los almacenes (Ne 13:13); no los demás Pedaya que registra Perspicacia
+  «Pedaya».'

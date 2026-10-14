@@ -1,0 +1,36 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jeremias-sacerdote-firmante
+name: Jeremías
+names:
+- name: Jeremías
+perspicacia: 1200002421#9
+summary: Sacerdote, o la familia sacerdotal de ese nombre, entre los que sellaron en 455 a.e.c. el compromiso de andar en
+  la Ley de Dios.
+reason: Perspicacia «Jeremías», núm. 9; Ne 10:2.
+sources:
+- it-jeremias
+- nehemias-10
+links:
+- title: 'Perspicacia: «Jeremías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jerem%C3%ADas/
+  type: perspicacia
+relations:
+- type: holds_office
+  office: priest
+  inferred: false
+  sources:
+  - nehemias-10
+  reason: 'Ne 10:8 cierra la lista: «esos son los sacerdotes».'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- jeremias-de-libna
+- jeremias-de-manases
+- jeremias-decimo-gadita
+- jeremias-el-benjaminita
+- jeremias-hijo-de-habazinias
+- jeremias-profeta
+- jeremias-quinto-gadita
+disambiguation: Jeremías, sacerdote, o su casa, que selló la promesa de Ne 10 (Perspicacia «Jeremías», núm. 9).

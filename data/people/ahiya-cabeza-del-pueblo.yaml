@@ -1,0 +1,28 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ahiya-cabeza-del-pueblo
+name: Ahíya
+names:
+- name: Ahíya
+perspicacia: 1200000153#9
+summary: Uno de los 44 jefes del pueblo de la lista; él o un descendiente selló la promesa de 455 a.e.c. de andar en las leyes
+  de Jehová.
+reason: Perspicacia «Ahíya», núm. 9; Ne 10:26.
+sources:
+- it-ahiya
+- nehemias-10
+links:
+- title: 'Perspicacia: «Ahíya»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ah%C3%ADya/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- ahiya-de-benjamin
+- ahiya-el-pelonita
+- ahiya-hijo-de-ahitub
+- ahiya-hijo-de-jerahmeel
+- ahiya-hijo-de-sisa
+- ahiya-padre-de-baasa
+- ahiya-profeta
+- ahiya-tesorero
+disambiguation: Ahíya, cabeza del pueblo en la lista de Ne 10:26 (Perspicacia «Ahíya», núm. 9).

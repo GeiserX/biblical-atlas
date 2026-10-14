@@ -1,0 +1,32 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: nehemias-reprende-a-los-casados-con-extranjeras
+title: Nehemías reprende a los casados con extranjeras
+date:
+  from: -442
+  to: -442
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: poco después de 443 a.e.c.
+narrative_order:
+  series: nehemias
+  order: 113023
+places:
+- jerusalen
+people:
+- nehemias
+passages:
+- Ne 13:23-31
+summary: Halla judíos casados con asdoditas, ammonitas y moabitas cuyos hijos no hablan la lengua judía. Los reprende con
+  el ejemplo de Salomón, echa al nieto de Eliasib, yerno de Sanbalat, y ordena el servicio de sacerdotes y levitas.
+reason: 'Ne 13:23-31; Perspicacia «Nehemías», núm. 3, lo cuenta tras su regreso, y «Jerusalén» lo fecha poco después de 443
+  a.e.c. El texto no nombra el lugar: se deduce de su vuelta a Jerusalén. Orden 113023.'
+sources:
+- nehemias-13
+- it-nehemias
+- it-jerusalen
+- it-sanbalat
+- it-joiada
+checked_on: '2026-10-14'
+status: verified

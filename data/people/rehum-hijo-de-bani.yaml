@@ -1,0 +1,34 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: rehum-hijo-de-bani
+name: Rehúm
+names:
+- name: Rehúm
+perspicacia: 1200003684#4
+disambiguation: El levita hijo de Baní (Ne 3:17), núm. 4 de Perspicacia «Rehúm»; no los otros Rehúm que numera.
+distinct_from:
+- rehum-funcionario-persa
+- rehum-repatriado
+- rehum-cabeza-del-pueblo
+- rehum-sacerdote-de-zorobabel
+summary: Levita, hijo de Baní. Dirigió a los levitas que repararon un tramo de la muralla de Jerusalén en 455 a.e.c.
+reason: Perspicacia «Rehúm», núm. 4; Ne 3:17.
+sources:
+- it-rehum
+- nehemias-3
+links:
+- title: 'Perspicacia: «Rehúm»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Reh%C3%BAm/
+  type: perspicacia
+relations:
+- type: kin
+  person: bani-padre-de-rehum
+  word: father
+  inferred: false
+  sources:
+  - nehemias-3
+  - it-rehum
+  reason: 'Ne 3:17: Rehúm hijo de Baní.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified

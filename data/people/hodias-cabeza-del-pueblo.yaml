@@ -1,0 +1,23 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hodias-cabeza-del-pueblo
+name: Hodías
+names:
+- name: Hodías
+perspicacia: 1200002051#5
+summary: Uno de los jefes del pueblo, o su descendiente, entre los que sellaron la promesa de 455 a.e.c.
+reason: Perspicacia «Hodías», núm. 5; Ne 10:18.
+sources:
+- it-hodias
+- nehemias-10
+links:
+- title: 'Perspicacia: «Hodías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hod%C3%ADas/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- hodias-cunado-de-naham
+- hodias-levita-firmante
+- hodias-levita-que-explico-la-ley
+- hodias-segundo-levita-firmante
+disambiguation: Hodías, cabeza del pueblo en la lista de Ne 10:18 (Perspicacia «Hodías», núm. 5).

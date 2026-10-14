@@ -1,0 +1,21 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: mica-levita-firmante
+name: Micá
+names:
+- name: Micá
+perspicacia: 1200003031#2
+summary: Levita, o antepasado de uno, entre los que sellaron la promesa de 455 a.e.c. en Jerusalén.
+reason: Perspicacia «Micá», núm. 2; Ne 10:11.
+sources:
+- it-mica
+- nehemias-10
+links:
+- title: 'Perspicacia: «Micá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Mic%C3%A1/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- mica-hijo-de-mefiboset
+- mica-hijo-de-zicri
+disambiguation: Micá, levita que, él o un antepasado, selló la promesa de Ne 10 (Perspicacia «Micá», núm. 2).

@@ -1,0 +1,32 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: abdias-portero
+name: Abdías
+names:
+- name: Abdías
+perspicacia: 1200003287#13
+summary: Levita, portero en tiempos de Nehemías y Esdras, que vigilaba los almacenes junto a las puertas del templo. Perspicacia
+  ve posible que sea Abdías hijo de Semaya.
+reason: Perspicacia «Abdías», núm. 13; Ne 12:25, 26.
+sources:
+- it-abdias
+- nehemias-12
+links:
+- title: 'Perspicacia: «Abdías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Abd%C3%ADas/
+  type: perspicacia
+relations: []
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- abdias-el-gadita
+- abdias-hijo-de-arnan
+- abdias-hijo-de-azel
+- abdias-hijo-de-izrahias
+- abdias-hijo-de-jehiel
+- abdias-levita-de-josias
+- abdias-mayordomo-de-acab
+- abdias-padre-de-ismaya
+- abdias-principe-de-jehosafat
+- abdias-profeta
+- abdias-sacerdote-firmante
+disambiguation: 'Abdías núm. 13 de Perspicacia: el portero de Ne 12:25; no los demás Abdías que registra Perspicacia «Abdías».'

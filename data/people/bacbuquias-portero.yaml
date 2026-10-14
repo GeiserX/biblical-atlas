@@ -1,0 +1,25 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: bacbuquias-portero
+name: Bacbuquías
+names:
+- name: Bacbuquías
+- name: Baqbuquías
+  note: Grafía del título de Perspicacia.
+perspicacia: 1200000541#2
+summary: Levita de guardia, cabeza de una casa paterna, que vigilaba como portero los almacenes junto a las puertas en días
+  de Joiaquim.
+reason: Perspicacia «Baqbuquías», núm. 2; Ne 12:23, 25.
+sources:
+- it-baqbuquias
+- nehemias-12
+links:
+- title: 'Perspicacia: «Baqbuquías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Baqbuqu%C3%ADas/
+  type: perspicacia
+relations: []
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- bacbuquias-levita
+disambiguation: 'Bacbuquías núm. 2 de Perspicacia: el portero de Ne 12:25; no los demás Bacbuquías que registra Perspicacia
+  «Baqbuquías».'

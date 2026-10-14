@@ -1,0 +1,37 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: adaya-hijo-de-joiarib
+name: Adaya
+names:
+- name: Adaya
+perspicacia: 1200000087#5
+summary: Judaíta, hijo de Joiarib, en el linaje del Maaseya que vivía en Jerusalén después del destierro.
+reason: Perspicacia «Adaya», núm. 5; Ne 11:5.
+sources:
+- it-adaya
+- nehemias-11
+links:
+- title: 'Perspicacia: «Adaya»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Adaya/
+  type: perspicacia
+relations:
+- type: kin
+  person: joiarib-hijo-de-zacarias
+  word: father
+  inferred: false
+  sources:
+  - nehemias-11
+  - it-adaya
+  reason: 'Ne 11:5: Adaya, hijo de Joiarib; Perspicacia «Adaya», núm. 5.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- adaya-descendiente-de-bani
+- adaya-descendiente-de-binui
+- adaya-hijo-de-etan
+- adaya-hijo-de-jeroham
+- adaya-hijo-de-simei
+- adaya-padre-de-jedida
+- adaya-padre-de-maaseya
+disambiguation: Adaya, judaíta, hijo de Joiarib, en el linaje de Maaseya (Perspicacia «Adaya», núm. 5).

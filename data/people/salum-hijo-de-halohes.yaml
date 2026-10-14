@@ -1,0 +1,46 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: salum-hijo-de-halohes
+name: Salum
+names:
+- name: Salum
+perspicacia: 1200003933#13
+disambiguation: El hijo de Halohés que reparó la muralla con sus hijas (Ne 3:12), núm. 13 de Perspicacia «Salum»; no los otros
+  Salum que numera.
+distinct_from:
+- jehoacaz-de-juda
+- salum-de-israel
+- salum-descendiente-de-binui
+- salum-hijo-de-sadoc
+- salum-hijo-de-shaul
+- salum-hijo-de-sismai
+- salum-hijo-de-ticva
+- salum-jefe-de-los-porteros
+- salum-padre-de-jehizquias
+- salum-padre-de-maaseya
+- salum-portero-de-tiempos-de-esdras
+- salum-tio-de-jeremias
+- silem
+summary: Príncipe de medio distrito de Jerusalén, hijo o descendiente de Halohés. Reparó con sus hijas un tramo de la muralla
+  en 455 a.e.c.
+reason: Perspicacia «Salum», núm. 13, y «Halohés», núm. 1; Ne 3:12.
+sources:
+- it-salum
+- nehemias-3
+links:
+- title: 'Perspicacia: «Salum»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Salum/
+  type: perspicacia
+relations:
+- type: kin
+  person: halohes-padre-de-salum
+  word: father
+  inferred: false
+  sources:
+  - nehemias-3
+  - it-salum
+  - it-halohes
+  reason: 'Ne 3:12: Salum hijo de Halohés; Perspicacia «Halohés», núm. 1, lo da como su padre.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified

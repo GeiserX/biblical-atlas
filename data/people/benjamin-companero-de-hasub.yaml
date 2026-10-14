@@ -1,0 +1,61 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: benjamin-companero-de-hasub
+name: Benjamín
+names:
+- name: Benjamín
+perspicacia: null
+disambiguation: El que reparó la muralla con Hasub frente a su casa (Ne 3:23) y marchó en la procesión del muro (Ne 12:34),
+  sin número propio en Perspicacia «Benjamín»; no el hijo de Jacob ni el hijo de Bilhán.
+distinct_from:
+- benjamin-hijo-de-bilhan
+- benjamin-hijo-de-jacob
+summary: Con Hasub reparó el tramo de muralla frente a su casa en 455 a.e.c. y marchó en la procesión de la inauguración.
+  Quizá sea el Benjamín de los hijos de Harim de los días de Esdras.
+reason: Ne 3:23; 12:34; Perspicacia «Benjamín», núm. 4, lo nombra sin darle número propio.
+sources:
+- it-benjamin
+- nehemias-3
+- nehemias-12
+links:
+- title: 'Perspicacia: «Benjamín»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Benjam%C3%ADn/
+  type: perspicacia
+relations:
+- type: accompanies
+  person: hasub-companero-de-benjamin
+  word: fellow_worker
+  date:
+    from: -454
+    to: -454
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 455 a.e.c.
+  inferred: false
+  sources:
+  - nehemias-3
+  reason: 'Ne 3:23: Benjamín y Hasub repararon juntos el tramo frente a su casa.'
+  checked_on: '2026-10-14'
+  status: verified
+- type: lived_in
+  place: jerusalen
+  inferred: false
+  sources:
+  - nehemias-3
+  reason: 'Ne 3:23: su tramo de muralla estaba enfrente de su casa.'
+  checked_on: '2026-10-14'
+  status: verified
+- type: same_as
+  person: benjamin-descendiente-de-harim
+  certainty: possible
+  inferred: true
+  sources:
+  - nehemias-3
+  - it-benjamin
+  - nehemias-12
+  reason: 'Perspicacia «Benjamín», núm. 4: puede que el de los hijos de Harim sea el de Ne 3:23, aunque no lo asegura.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified

@@ -1,0 +1,21 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: noadias-profetisa
+name: Noadías
+names:
+- name: Noadías
+perspicacia: 1200003265#2
+summary: Profetisa que en 455 a.e.c., con otros profetas, intentó una y otra vez asustar a Nehemías para frenar la reconstrucción
+  del muro de Jerusalén.
+reason: Perspicacia «Noadías», núm. 2; Ne 6:14.
+sources:
+- it-noadias
+- nehemias-6
+links:
+- title: 'Perspicacia: «Noadías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Noad%C3%ADas/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- noadias-hijo-de-binui
+disambiguation: 'Noadías núm. 2 de Perspicacia: la profetisa que intimidó a Nehemías (Ne 6:14), no el levita hijo de Binuí.'

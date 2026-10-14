@@ -1,0 +1,46 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: mesulam-sacerdote-firmante
+name: Mesulam
+names:
+- name: Mesulam
+perspicacia: 1200003014#19
+summary: Sacerdote, o su antepasado, que apoyó con su sello la promesa de fidelidad que propusieron los levitas en 455 a.e.c.
+reason: Perspicacia «Mesulam», núm. 19; Ne 10:7.
+sources:
+- it-mesulam
+- nehemias-10
+links:
+- title: 'Perspicacia: «Mesulam»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Mesulam/
+  type: perspicacia
+relations:
+- type: holds_office
+  office: priest
+  inferred: false
+  sources:
+  - nehemias-10
+  reason: 'Ne 10:8 cierra la lista: «esos son los sacerdotes».'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- mesulam-abuelo-de-safan
+- mesulam-cabeza-del-pueblo
+- mesulam-de-la-procesion-del-muro
+- mesulam-descendiente-de-bani
+- mesulam-enviado-a-casifia
+- mesulam-hijo-de-abihail
+- mesulam-hijo-de-berekias
+- mesulam-hijo-de-besodeya
+- mesulam-hijo-de-elpaal
+- mesulam-hijo-de-hodavias
+- mesulam-hijo-de-mesilemit
+- mesulam-hijo-de-sefatias
+- mesulam-hijo-de-zorobabel
+- mesulam-junto-a-esdras
+- mesulam-levita-de-josias
+- mesulam-levita-de-tiempos-de-esdras
+- mesulam-portero
+- salum-hijo-de-sadoc
+disambiguation: Mesulam, sacerdote que, él o un antepasado, apoyó la promesa de Ne 10 (Perspicacia «Mesulam», núm. 19).
