@@ -11,7 +11,7 @@ date:
   type: anchored
   chronology: tnm
   text: c. 60-61 e.c.
-disambiguation: La persona. La carta que lleva su nombre es carta:filemon.
+disambiguation: La persona, no la carta a Filemón.
 summary: Cristiano de Colosas, dueño de esclavos, en cuya casa se reunía la congregación. Pablo lo llama colaborador
   amado; al parecer se hizo cristiano por medio de él.
 reason: Perspicacia «Filemón» (párr. 1 y 3); Flm 1, 2, 19. La fecha es la de la carta, hacia 60-61 según la Tabla de los libros.
@@ -19,6 +19,7 @@ sources:
 - it-filemon
 - filemon-1
 - tnm-tabla
+- it-filemon-carta
 links:
 - title: 'Perspicacia: «Filemón»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Filem%C3%B3n/
@@ -27,7 +28,11 @@ links:
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Filem%C3%B3n/1/
   type: bible
 perspicacia: '1200003463'
-checked_on: '2026-09-29'
+history:
+- date: '2026-10-14'
+  change: La desambiguación usaba el prefijo antiguo carta:filemon; pasa a palabras llanas.
+  source: filemon-1
+checked_on: '2026-10-14'
 status: verified
 relations:
 - type: lived_in
@@ -36,6 +41,31 @@ relations:
   sources:
   - it-filemon
   - colosenses-4
+  - filemon-1
   reason: Perspicacia sitúa su casa en Colosas (compara Col 4:9 con Flm 10-12).
-  checked_on: '2026-09-28'
+  checked_on: '2026-10-14'
   status: verified
+- type: accompanies
+  person: pablo
+  word: fellow_worker
+  inferred: false
+  sources:
+  - filemon-1
+  - it-filemon
+  - it-filemon-carta
+  reason: 'Flm 1: Pablo lo llama su amado colaborador. La nota de estudio aclara que no viajó con él, pero ayudaba a extender
+    las buenas noticias. No dice desde cuándo.'
+  checked_on: '2026-10-14'
+  status: verified
+- type: kin
+  person: apfia
+  word: wife
+  inferred: true
+  sources:
+  - it-apfia
+  - it-filemon
+  - filemon-1
+  reason: Perspicacia «Apfia» y «Filemón», párr. 2, ven posible que fuera su esposa (Flm 2); el texto solo la llama hermana.
+    Queda deducido y pendiente.
+  checked_on: '2026-10-14'
+  status: pending

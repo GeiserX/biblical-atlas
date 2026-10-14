@@ -898,6 +898,7 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-anub | [Anub](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Anub/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
 | it-apaim | [Apaim](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Apaim/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
 | it-apeles | [Apeles](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Apeles/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
+| it-apfia | [Apfia](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Apfia/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-14 |
 | it-apio | [Apio, Plaza del Mercado de](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Apio-Plaza-del-Mercado-de/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-27 |
 | it-apolonia | [Apolonia](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Apolonia/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-27 |
 | it-apolos | [Apolos](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Apolos/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
@@ -1589,6 +1590,7 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-figelo | [Figelo](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Figelo/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
 | it-filadelfia | [Filadelfia](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Filadelfia/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
 | it-filemon | [Filemón](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Filem%C3%B3n/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-27 |
+| it-filemon-carta | [Filemón, Carta a](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Filem%C3%B3n-Carta-a/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-14 |
 | it-fileto | [Fileto](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Fileto/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
 | it-filipenses | [Filipenses, Carta a los](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Filipenses-Carta-a-los/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-27 |
 | it-filipo | [Filipo](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Filipo/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |

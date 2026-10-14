@@ -14,12 +14,13 @@ date:
   chronology: tnm
   text: c. 60-61 e.c.
 recipients:
-  text: Filemón, dueño de Onésimo; en su casa se reunía la congregación
+  text: Filemón, dueño de Onésimo, con Apfia, Arquipo y la congregación reunida en su casa
   places:
   - colosas
   people:
   - filemon
   - arquipo
+  - apfia
 carriers:
 - onesimo
 people:
@@ -51,6 +52,8 @@ sources:
 - colosenses-1
 - it-onesimo
 - it-arquipo
+- it-filemon-carta
+- it-apfia
 links:
 - title: 'Perspicacia: «Filemón»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Filem%C3%B3n/
@@ -58,5 +61,9 @@ links:
 - title: Filemón (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Filem%C3%B3n/1/
   type: bible
-checked_on: '2026-09-28'
+history:
+- date: '2026-10-14'
+  change: Entre los destinatarios falta Apfia, a la que Flm 2 saluda con Filemón y Arquipo; ya tiene ficha.
+  source: filemon-1
+checked_on: '2026-10-14'
 status: verified

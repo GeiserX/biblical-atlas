@@ -27,6 +27,7 @@ sources:
 - hechos-12
 - colosenses-4
 - 1-pedro-5
+- filemon-1
 - 2-timoteo-4
 links:
 - title: 'Perspicacia: «Marcos»'
@@ -105,8 +106,9 @@ relations:
   sources:
   - it-marcos
   - colosenses-4
+  - filemon-1
   reason: Está con Pablo en Roma, es uno de sus colaboradores judíos y saluda a Colosas y a Filemón (Col 4:10, 11; Flm 24).
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-14'
   status: verified
 - type: kin
   person: maria-madre-de-juan-marcos
