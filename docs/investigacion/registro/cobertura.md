@@ -44,7 +44,7 @@ Qué versículos de la TNM se han leído y apuntado en `data/coverage/<libro>.ya
 | [Jeremías](https://github.com/GeiserX/biblical-atlas/blob/main/data/coverage/jeremias.yaml) | 52 de 52 | 1364 de 1364 | 100 % |
 | [Lamentaciones](https://github.com/GeiserX/biblical-atlas/blob/main/data/coverage/lamentaciones.yaml) | 5 de 5 | 154 de 154 | 100 % |
 | [Ezequiel](https://github.com/GeiserX/biblical-atlas/blob/main/data/coverage/ezequiel.yaml) | 48 de 48 | 1273 de 1273 | 100 % |
-| Daniel | 0 de 12 | 0 de 357 | 0 % |
+| [Daniel](https://github.com/GeiserX/biblical-atlas/blob/main/data/coverage/daniel.yaml) | 12 de 12 | 357 de 357 | 100 % |
 | [Oseas](https://github.com/GeiserX/biblical-atlas/blob/main/data/coverage/oseas.yaml) | 14 de 14 | 197 de 197 | 100 % |
 | [Joel](https://github.com/GeiserX/biblical-atlas/blob/main/data/coverage/joel.yaml) | 3 de 3 | 73 de 73 | 100 % |
 | [Amós](https://github.com/GeiserX/biblical-atlas/blob/main/data/coverage/amos.yaml) | 9 de 9 | 146 de 146 | 100 % |
@@ -84,7 +84,7 @@ Qué versículos de la TNM se han leído y apuntado en `data/coverage/<libro>.ya
 | 3 Juan | 0 de 1 | 0 de 14 | 0 % |
 | Judas | 0 de 1 | 0 de 25 | 0 % |
 | Apocalipsis | 0 de 22 | 0 de 404 | 0 % |
-| **Total** | 1089 de 1189 | 28797 de 31062 | 93 % |
+| **Total** | 1101 de 1189 | 29154 de 31062 | 94 % |
 
 ## Capítulos empezados
 
