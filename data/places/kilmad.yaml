@@ -1,0 +1,29 @@
+# biblical-atlas: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: kilmad
+name: Kilmad
+names:
+- name: Kilmad
+type: region
+lat: 34.8065
+lon: 48.516247
+precision: uncertain
+coord_source: openbible:a961693
+coord_url: https://www.openbible.info/geo/ancient/a961693/chilmad
+coord_note: 'Punto de Media, primera identificación de OpenBible. Solo tomamos el punto: jw.org no sitúa Kilmad.'
+summary: Lugar que vendía a Tiro ropa lujosa, tejidos teñidos, alfombras y cuerdas. Se desconoce dónde estaba.
+reason: 'Perspicacia «Kilmad»; Eze 27:23, 24. Ni jw.org ni el texto la sitúan. Coordenada de OpenBible: solo tomamos el punto.'
+not_claimed:
+- 'Que sea Media u otro de los sitios que propone OpenBible: jw.org no lo dice.'
+sources:
+- it-kilmad
+- ezequiel-27
+- openbible-geo
+links:
+- title: 'Perspicacia: «Kilmad»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Kilmad/
+  type: perspicacia
+- title: Ezequiel 27 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/ezequiel/27/
+  type: bible
+checked_on: '2026-10-13'
+status: verified

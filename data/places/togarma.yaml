@@ -1,0 +1,36 @@
+# biblical-atlas: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: togarma
+name: Togarmá
+names:
+- name: Togarmá
+- name: Casa de Togarmá
+  note: Así la nombra Eze 27:14.
+type: region
+lat: 40.383333
+lon: 44.95
+precision: uncertain
+coord_source: openbible:a263e60
+coord_url: https://www.openbible.info/geo/ancient/a263e60/beth-togarmah
+coord_note: OpenBible pone primero Tegarama, en Anatolia; tomamos su otra identificación, Armenia, porque Perspicacia recoge
+  que varios comentaristas ligan Togarmá a los armenios.
+summary: Región de los descendientes de Togarmá, bisnieto de Noé, en el lejano norte. Cambiaba caballos, corceles y mulas
+  por los productos de Tiro; varios comentaristas la relacionan con los armenios.
+reason: 'Perspicacia «Togarmá», núm. 2; Eze 27:14. La tradición armenia dice venir de Haik, hijo de Thorgom. OpenBible: solo
+  el punto.'
+not_claimed:
+- 'Que fuera Armenia: Perspicacia solo cuenta que varios comentaristas la relacionan con los armenios.'
+sources:
+- it-togarma
+- openbible-geo
+- ezequiel-27
+- it-gog
+- ezequiel-38
+links:
+- title: 'Perspicacia: «Togarmá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Togarm%C3%A1/
+  type: perspicacia
+- title: Ezequiel 27 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/ezequiel/27/
+  type: bible
+checked_on: '2026-10-13'
+status: verified

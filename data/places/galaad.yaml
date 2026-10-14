@@ -56,6 +56,7 @@ sources:
 - jeremias-8
 - 1-cronicas-2
 - 1-cronicas-5
+- ezequiel-47
 links:
 - title: 'Perspicacia: «Galaad»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Galaad/
@@ -74,5 +75,5 @@ history:
 - date: '2026-10-12'
   change: La razón cita el párrafo 7 de «Galaad» y Jer 8:22, de donde sale el bálsamo del resumen.
   source: jeremias-8
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified

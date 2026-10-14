@@ -1,0 +1,41 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jehova-nombra-centinela-a-ezequiel
+title: Jehová nombra a Ezequiel centinela de la casa de Israel
+date:
+  from: -612
+  to: -612
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 613 a.e.c.
+narrative_order:
+  series: ezequiel
+  order: 3016
+  elapsed:
+    days: 7
+    reason: 'Eze 3:15, 16: la palabra llega al acabar los siete días que pasó aturdido en Tel-Abib.'
+places:
+- tel-abib
+- caldea
+people:
+- ezequiel
+present:
+- ezequiel
+passages:
+- Eze 3:16-21
+summary: Una semana después, Jehová hace a Ezequiel centinela de Israel. Debe avisar al malvado y al justo que se desvía;
+  si calla, Jehová le pedirá cuentas por su sangre, y si avisa, salva su vida.
+reason: Eze 3:16-21. Perspicacia «Kebar», párr. 3, sitúa en Tel-Abib, en 613, su comisión de atalaya; «Ezequiel», apartado
+  «Un atalaya», explica su responsabilidad.
+sources:
+- ezequiel-3
+- it-kebar
+- it-ezequiel
+- w07-ezequiel-1
+links:
+- title: 'Perspicacia: «Ezequiel»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ezequiel/
+  type: perspicacia
+checked_on: '2026-10-13'
+status: verified

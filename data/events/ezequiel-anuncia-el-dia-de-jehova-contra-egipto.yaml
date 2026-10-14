@@ -1,0 +1,62 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: ezequiel-anuncia-el-dia-de-jehova-contra-egipto
+title: Ezequiel anuncia el día de Jehová contra Egipto
+date:
+  from: -607
+  to: -606
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 608 y 607 a.e.c. (tiempo narrativo: entre el mensaje del año décimo y el del año undécimo, Eze 30:20)'
+narrative_order:
+  series: ezequiel
+  order: 30001
+places:
+- tel-abib
+- caldea
+- egipto
+- etiopia
+- put
+- lud
+- cub
+- migdol-de-los-profetas
+- siene
+- menfis
+- patros
+- zoan
+- no-amon
+- sin
+- 'on'
+- pibeset
+- tahpanhes
+- rio-nilo
+people:
+- ezequiel
+- nabucodonosor-ii
+present: []
+passages:
+- Eze 30:1-19
+summary: 'Ezequiel anuncia que llega el día de Jehová: Nabucodonosor y sus tropas llenarán Egipto de muertos, caerán sus aliados
+  y arderán sus ciudades, de Nof y Zoan a No, Sin, On, Pibéset y Tehafnehés.'
+reason: 'Sin fecha en el texto. La Atalaya de 2007 y «Ezequiel, Libro de» dicen que solo cuatro versículos del capítulo anterior rompen el orden: va entre el mensaje de 608 y el de 607 (Eze 30:20). No sitúa a nadie.'
+sources:
+- ezequiel-30
+- it-tahpanhes
+- it-zoan
+- it-ezequiel
+- it-egipto
+- w07-ezequiel-2
+- it-ezequiel-libro
+links:
+- title: Ezequiel 30 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/ezequiel/30/
+  type: bible
+- title: 'Perspicacia: «Tahpanés, Tahpanhés, Tehafnehés»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Tahpan%C3%A9s-Tahpanh%C3%A9s-Tehafneh%C3%A9s/
+  type: perspicacia
+not_claimed:
+- 'Que el mensaje sea de 591, como dicen Perspicacia «Tahpanés, Tahpanhés, Tehafnehés» y «Zoan»: manda La Atalaya de 2007,
+  más reciente, que solo saca de su orden el mensaje del año 27 del destierro.'
+checked_on: '2026-10-13'
+status: verified

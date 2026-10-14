@@ -17,6 +17,7 @@ sources:
 - it-zedad
 - openbible-geo
 - numeros-34
+- ezequiel-47
 links:
 - title: 'Perspicacia: «Zedad»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zedad/
@@ -24,5 +25,5 @@ links:
 - title: Números 34 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/N%C3%BAmeros/34/
   type: bible
-checked_on: '2026-09-29'
+checked_on: '2026-10-13'
 status: verified

@@ -1,0 +1,39 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: ezequiel-pasa-siete-dias-aturdido-en-tel-abib
+title: Ezequiel pasa siete días aturdido en Tel-Abib
+date:
+  from: -612
+  to: -612
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 613 a.e.c.
+narrative_order:
+  series: ezequiel
+  order: 3012
+places:
+- tel-abib
+- rio-kebar
+- caldea
+people:
+- ezequiel
+present:
+- ezequiel
+passages:
+- Eze 3:12-15
+summary: Al terminar la visión, el espíritu lleva a Ezequiel, amargado e indignado, hasta los desterrados que viven en Tel-Abib,
+  junto al Kebar. Se queda allí con ellos, aturdido durante siete días.
+reason: Eze 3:12-15. Perspicacia «Kebar», párr. 3, fecha en 613 su primera visión y los siete días de aturdimiento en Tel-Abib.
+  La Atalaya de 2007 dice que asimilaba el mensaje recibido.
+sources:
+- ezequiel-3
+- it-kebar
+- w07-ezequiel-1
+- si-3
+links:
+- title: 'Perspicacia: «Kebar»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Kebar/
+  type: perspicacia
+checked_on: '2026-10-13'
+status: verified

@@ -22,6 +22,7 @@ sources:
 - daniel-1
 - daniel-10
 - si-3
+- ezequiel-14
 links:
 - title: 'Perspicacia: «Daniel»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Daniel/
@@ -56,7 +57,7 @@ history:
 - date: '2026-10-12'
   change: 'Faltaba la clave: el profeta es Perspicacia «Daniel», núm. 2; el núm. 1 es el hijo de David que 1Cr 3:1 llama Daniel.'
   source: it-daniel
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified
 distinct_from:
 - kileab

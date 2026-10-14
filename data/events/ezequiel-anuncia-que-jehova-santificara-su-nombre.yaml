@@ -1,0 +1,38 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: ezequiel-anuncia-que-jehova-santificara-su-nombre
+title: Ezequiel anuncia que Jehová santificará su nombre y renovará a Israel
+date:
+  from: -606
+  to: -592
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 607 y 593 a.e.c. (tiempo narrativo: tras llegar la noticia de la caída de Jerusalén y antes de la visión del
+    templo)'
+narrative_order:
+  series: ezequiel
+  order: 236016
+places:
+- israel
+people:
+- ezequiel
+present: []
+passages:
+- Eze 36:16-38
+summary: Jehová dice por Ezequiel que, por su santo nombre, profanado entre las naciones, sacará a Israel del destierro, lo
+  limpiará y le dará un corazón nuevo. Su tierra desolada se parecerá al jardín de Edén.
+reason: 'Sin fecha: entre la noticia de la caída, en 607, y la visión del templo, en 593, según «Toda Escritura». La Atalaya
+  de 2007 ve el libro en orden. No dice dónde habló.'
+sources:
+- ezequiel-36
+- si-ezequiel
+- w07-ezequiel-2
+- it-ezequiel-libro
+- rr-unificare-su-corazon
+links:
+- title: Ezequiel 36 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/ezequiel/36/
+  type: bible
+checked_on: '2026-10-13'
+status: verified

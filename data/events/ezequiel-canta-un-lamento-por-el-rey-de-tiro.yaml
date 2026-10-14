@@ -1,0 +1,40 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: ezequiel-canta-un-lamento-por-el-rey-de-tiro
+title: Ezequiel canta un lamento por el rey de Tiro
+date:
+  from: -608
+  to: -606
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 609 y 607 a.e.c. (tiempo narrativo: profecías contra las naciones, sin fecha propia)'
+places:
+- tiro
+people:
+- ezequiel
+present: []
+passages:
+- Eze 28:11-19
+summary: Canto fúnebre por el rey de Tiro, pintado como un querubín ungido que estuvo en Edén, el jardín de Dios, intachable
+  hasta que el comercio y el orgullo lo corrompieron. Jehová lo reducirá a cenizas ante todos.
+reason: Eze 28:11-19, sin fecha ni lugar; mismos límites que Eze 28:1. Perspicacia «Tiro» y «Perfección» ven en el rey la
+  línea de reyes tirios, y «Perfección» y La Atalaya de 2005, un reflejo de Satanás.
+sources:
+- ezequiel-28
+- it-tiro
+- it-perfeccion
+- it-querubin
+- it-jardin
+- w05-corazon-altivo
+- si-ezequiel
+- it-ezequiel-libro
+links:
+- title: Ezequiel 28 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/ezequiel/28/
+  type: bible
+- title: 'Perspicacia: «Perfección»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Perfecci%C3%B3n/
+  type: perspicacia
+checked_on: '2026-10-13'
+status: verified

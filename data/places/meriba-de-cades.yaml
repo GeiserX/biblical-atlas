@@ -8,6 +8,9 @@ names:
   note: Así lo llama Sl 106:32; otros pasajes añaden «en Cadés».
 - name: Meribá de Cadés
   note: Así la llama Dt 32:51, que la sitúa en el desierto de Zin.
+- name: Meribat-Cadés
+  note: Así la llaman Eze 47:19 y 48:28 como punto de la frontera sur. Perspicacia «Meribat-qadés» dice que el nombre recuerda
+    la riña de Nú 20:1-13.
 type: region
 lat: null
 lon: null
@@ -45,6 +48,9 @@ sources:
 - numeros-20
 - numeros-27
 - deuteronomio-32
+- ezequiel-47
+- it-meribat-qades
+- ezequiel-48
 links:
 - title: 'Perspicacia: «Meribá»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Merib%C3%A1/
@@ -55,5 +61,5 @@ links:
 - title: Números 20 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/N%C3%BAmeros/20/
   type: bible
-checked_on: '2026-09-29'
+checked_on: '2026-10-13'
 status: verified
