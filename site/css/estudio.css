@@ -889,6 +889,8 @@ details.grafo-leyenda[open] { padding-bottom: 8px; }
 .pasaje-enlace code { font-size: var(--fs-xs); }
 
 /* Lectura centrada: opción reversible, sin cambiar los datos ni el cursor. */
+/* En su propia fila: es una opción de la vista, no del capítulo, y en la fila de «Leído» la partía en dos. */
+.lectura-foco { align-self: flex-start; }
 .be-lectura-foco #linea,
 .be-lectura-foco #panel,
 .be-lectura-foco #mientras,

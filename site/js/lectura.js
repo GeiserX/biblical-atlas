@@ -124,10 +124,10 @@ function pintar() {
     <p class="be-muted lectura-nota">El texto y las notas de estudio se leen en jw.org. Aquí van el mapa, la fecha y el orden.</p>
     <div class="lectura-controles">
       <label class="interruptor"><input type="checkbox" data-lectura-sigue ${L.sigue ? 'checked' : ''}> El mapa sigue la lectura</label>
-      <label class="interruptor"><input type="checkbox" data-lectura-foco ${foco ? 'checked' : ''}> Ocultar la línea y la ficha</label>
       <label class="interruptor"><input type="checkbox" data-lectura-leido ${leido ? 'checked' : ''}> Leído</label>
       ${BE.notes?.pencilForChapter(lib, cap) || ''}
     </div>
+    <label class="interruptor lectura-foco"><input type="checkbox" data-lectura-foco ${foco ? 'checked' : ''}> Ocultar la línea y la ficha</label>
     ${ps.length ? `<div class="lectura-fecha be-note${anclada ? '' : ' be-note--uncertain'}">${anclada && ps.some((x) => x.narrativa) ? 'Orden cierto; fechas aproximadas salvo donde la fuente las da.' : anclada ? 'Cada pasaje con su fecha según la fuente.' : 'Orden cierto; sin fecha exacta: tiempo narrativo.'}</div>
     <div class="lectura-acciones"><button type="button" class="be-btn be-btn--sm" data-lectura-play>${L.play ? 'Pausar' : 'Seguir en el mapa ▶'}</button>
       <button type="button" class="be-btn be-btn--sm be-btn--ghost" data-lectura-paso="-1" ${L.pas <= 0 ? 'disabled' : ''}>‹ Pasaje anterior</button>
