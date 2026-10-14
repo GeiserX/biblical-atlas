@@ -1,0 +1,55 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: ezequiel-anuncia-que-egipto-sera-la-paga-de-nabucodonosor
+title: Ezequiel anuncia que Egipto será la paga de Nabucodonosor por Tiro
+type: speech
+date:
+  from: -590
+  to: -590
+  precision: day
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 1 de nisán de 591 a.e.c.
+  detail:
+    month: nisan
+    day: 1
+narrative_order:
+  series: ezequiel
+  order: 329017
+places:
+- tel-abib
+- caldea
+- egipto
+- tiro
+people:
+- ezequiel
+- nabucodonosor-ii
+present:
+- ezequiel
+roles:
+  ezequiel: spoke
+passages:
+- Eze 29:17-21
+summary: En la última fecha del libro, Jehová dice a Ezequiel que Nabucodonosor no sacó paga de su duro sitio de Tiro y que
+  le dará Egipto y sus riquezas. Promete fuerza para Israel y voz al profeta.
+reason: 'Eze 29:17: año 27 del destierro, día 1 del mes primero; 591 según el estudio 3 y Perspicacia «Ezequiel», su última
+  profecía fechada. «Tahpanés...» lo sitúa en Babilonia. Va al final: «Ezequiel, Libro de» dice que está aquí por tema.'
+sources:
+- ezequiel-29
+- si-3
+- si-ezequiel
+- it-ezequiel
+- it-ezequiel-libro
+- it-tahpanhes
+- it-nabucodonosor
+- it-tiro
+- it-egipto
+links:
+- title: Ezequiel 29 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/ezequiel/29/
+  type: bible
+- title: 'Perspicacia: «Ezequiel»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ezequiel/
+  type: perspicacia
+checked_on: '2026-10-13'
+status: verified

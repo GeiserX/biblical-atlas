@@ -28,5 +28,6 @@ relations:
   status: verified
 distinct_from:
 - pelatias-hijo-de-isi
-checked_on: '2026-10-12'
+- pelatias-hijo-de-benaya
+checked_on: '2026-10-13'
 status: verified

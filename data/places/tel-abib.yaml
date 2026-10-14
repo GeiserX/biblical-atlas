@@ -1,0 +1,46 @@
+# biblical-atlas: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: tel-abib
+name: Tel-Abib
+names:
+- name: Tel-Abib
+- name: Tel-abib
+  note: Grafía de Perspicacia.
+type: city
+lat: null
+lon: null
+precision: uncertain
+coord_source: null
+coord_url: null
+candidates:
+- name: Junto al río Kebar, cerca de Nippur
+  geometry:
+    type: zone
+    lat: 32.126111
+    lon: 45.230833
+    radius_km: 50
+  checked_on: '2026-10-13'
+  status: favored_level_1
+  sources:
+  - it-tel-abib
+  - it-kebar
+  - openbible-geo
+  reason: Perspicacia «Tel-abib» la pone a orillas del Kebar sin dar el sitio; «Kebar», párr. 2, recoge que casi todos los
+    geógrafos ven en ese río el Shat en-Nil, que pasa por Nippur.
+  note: 'Centro y radio de la primera identificación de OpenBible para Tel-abib: 50 km alrededor de Nippur.'
+  coord_source: openbible:a10147d
+  coord_url: https://www.openbible.info/geo/ancient/a10147d/tel-abib
+summary: Población de la tierra de los caldeos, a orillas del río Kebar, donde vivían judíos desterrados. Ezequiel se quedó
+  a vivir entre ellos. Su sitio exacto se desconoce.
+reason: 'Perspicacia «Tel-abib» y «Kebar», párr. 1 y 3; Eze 3:15. Sin punto seguro: una zona alrededor de la identificación
+  más común del Kebar.'
+sources:
+- it-tel-abib
+- it-kebar
+- openbible-geo
+- ezequiel-3
+links:
+- title: 'Perspicacia: «Tel-abib»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Tel-abib/
+  type: perspicacia
+checked_on: '2026-10-13'
+status: verified

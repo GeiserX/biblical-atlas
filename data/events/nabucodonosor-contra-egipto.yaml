@@ -13,8 +13,7 @@ places:
 - egipto
 people:
 - nabucodonosor-ii
-passages:
-- Eze 29:17-20
+passages: []
 summary: En el año 37 de Nabucodonosor, una tablilla babilonia menciona una campaña contra Egipto. Pudo ser cuando Egipto
   quedó bajo Babilonia, como predijo Ezequiel.
 reason: Perspicacia «Babilonia» y «Egipto, egipcio» fechan la tablilla en 588 a.e.c. y dicen que no se sabe si fue la conquista
@@ -23,5 +22,10 @@ sources:
 - it-babilonia
 - it-egipto
 search: Nabucodonosor Egipto
-checked_on: '2026-09-28'
+history:
+- date: '2026-10-13'
+  change: 'Sale Eze 29:17-20 de los pasajes: es la promesa de 591, no el relato de esta campaña, y Perspicacia no sabe si
+    la de 588 fue la conquista anunciada. El tramo la nombra en mentions, como Jer 46.'
+  source: it-nabucodonosor
+checked_on: '2026-10-13'
 status: verified

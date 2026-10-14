@@ -1,0 +1,37 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: ezequiel-profetiza-contra-sidon
+title: Ezequiel profetiza contra Sidón y anuncia la vuelta de Israel
+date:
+  from: -608
+  to: -606
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 609 y 607 a.e.c. (tiempo narrativo: profecías contra las naciones, sin fecha propia)'
+places:
+- sidon
+people:
+- ezequiel
+present: []
+passages:
+- Eze 28:20-26
+summary: Jehová manda a Ezequiel profetizar contra Sidón, a la que enviará peste y espada. Después promete reunir a Israel
+  de entre los pueblos para que viva seguro en la tierra que dio a Jacob.
+reason: Eze 28:20-26, sin fecha ni lugar; mismos límites que Eze 28:1. Perspicacia «Sidón, sidonios» lo une a la destrucción
+  que le trajeron los babilonios y otros pueblos.
+sources:
+- ezequiel-28
+- it-sidon
+- it-ezequiel-libro
+- rr-naciones-sabran-que-soy-jehova
+- w07-ezequiel-2
+links:
+- title: Ezequiel 28 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/ezequiel/28/
+  type: bible
+- title: 'Perspicacia: «Sidón, sidonios»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sid%C3%B3n-sidonios/
+  type: perspicacia
+checked_on: '2026-10-13'
+status: verified

@@ -1,0 +1,45 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: nabucodonosor-sitia-tiro
+title: Nabucodonosor sitia Tiro trece años
+date:
+  from: -606
+  to: -590
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 607 y 591 a.e.c. (tiempo narrativo: tras destruir Jerusalén y antes del año 27 del destierro)'
+places:
+- tiro
+people:
+- nabucodonosor-ii
+present: []
+passages:
+- Eze 29:17-20
+- Eze 26:7-12
+summary: Tras destruir Jerusalén, el ejército babilonio cerca Tiro durante trece años y toma la ciudad de tierra firme, pero
+  no la isla, adonde los tirios se llevan sus riquezas. Nabucodonosor saca poco botín.
+reason: 'La adoración pura, recuadro 7A y cap. 7, párr. 22: después de 607 y durante trece años. Eze 29:17, 18 lo da por hecho
+  en el año 27 (591, «Toda Escritura»). No dice dónde estaba el rey.'
+sources:
+- ezequiel-29
+- ezequiel-26
+- rr-naciones-vecinas-de-jerusalen
+- rr-naciones-sabran-que-soy-jehova
+- it-nabucodonosor
+- it-tiro
+- w07-ezequiel-2
+- si-ezequiel
+- si-3
+links:
+- title: 'Perspicacia: «Tiro»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Tiro-2/
+  type: perspicacia
+- title: 'Perspicacia: «Nabucodonosor, Nabucodorosor»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Nabucodonosor-Nabucodorosor/
+  type: perspicacia
+- title: Ezequiel 29 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/ezequiel/29/
+  type: bible
+checked_on: '2026-10-13'
+status: verified
