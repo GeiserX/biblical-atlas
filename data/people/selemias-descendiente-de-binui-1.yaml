@@ -1,0 +1,37 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: selemias-descendiente-de-binui-1
+name: Selemías
+names:
+- name: Selemías
+perspicacia: 1200003990#6
+summary: Israelita de los hijos de Binuí. Estaba casado con extranjeras y, cuando Esdras corrigió esos matrimonios (468-467
+  a.e.c.), las despidió junto con sus hijos.
+reason: Perspicacia «Selemías», núm. 6; Esd 10:39, 44.
+sources:
+- it-selemias
+- esdras-10
+links:
+- title: 'Perspicacia: «Selemías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Selem%C3%ADas/
+  type: perspicacia
+relations:
+- type: kin
+  person: binui-cabeza-de-familia
+  word: ancestor
+  sources:
+  - esdras-10
+  - it-selemias
+  reason: Esd 10:39 lo pone entre los hijos de Binuí; Perspicacia «Selemías», núm. 6.
+  inferred: false
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified
+disambiguation: De los dos Selemías de los hijos de Binuí, el de Esd 10:39; no los demás Selemías.
+distinct_from:
+- selemias-descendiente-de-binui-2
+- selemias-hijo-de-abdeel
+- selemias-hijo-de-cusi
+- selemias-hijo-de-hananias
+- selemias-padre-de-jehucal
+- selemias-portero

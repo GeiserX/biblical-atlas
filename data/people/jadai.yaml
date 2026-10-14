@@ -1,0 +1,21 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jadai
+name: Jadái
+names:
+- name: Jadái
+- name: Jadai
+  note: Grafía de Perspicacia.
+perspicacia: '1200002282'
+summary: Israelita de los hijos de Nebo. Estaba casado con extranjeras y, cuando Esdras corrigió esos matrimonios (468-467
+  a.e.c.), las despidió junto con sus hijos.
+reason: Perspicacia «Jadai»; Esd 10:43, 44.
+sources:
+- it-jadai
+- esdras-10
+links:
+- title: 'Perspicacia: «Jadai»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jadai/
+  type: perspicacia
+relations: []
+checked_on: '2026-10-13'
+status: verified

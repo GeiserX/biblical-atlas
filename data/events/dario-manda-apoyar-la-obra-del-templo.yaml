@@ -1,0 +1,41 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: dario-manda-apoyar-la-obra-del-templo
+title: Darío manda apoyar la obra del templo
+date:
+  from: -519
+  to: -518
+  precision: range
+  approx: true
+  type: derived
+  chronology: tnm
+  text: c. 520-519 a.e.c. (cálculo nuestro)
+  note: 'Sigue al hallazgo del decreto de Ciro, que Perspicacia «Persia, persas» pone unos 18 años después de emitirse (finales
+    de 538 o principios de 537): unos 520-519. Esd 6 no da el año.'
+narrative_order:
+  series: esdras
+  order: 6006
+places:
+- jerusalen
+people:
+- dario-i
+- tatenai
+- setar-bozenai
+present: []
+passages:
+- Esd 6:6-13
+summary: Darío ordenó a Tatenái y a sus colegas que no estorbaran la obra, que la pagaran con los impuestos de la región y
+  que dieran a los sacerdotes lo necesario para los sacrificios. Ellos obedecieron enseguida.
+reason: 'Perspicacia «Darío», núm. 2, y «Setar-bozenai»: la respuesta confirmó el decreto de Ciro y mandó ayudar con fondos
+  reales. Nadie se sitúa: el texto no dice dónde estaban. Año calculado, por eso pendiente.'
+sources:
+- esdras-6
+- it-dario
+- it-setar-bozenai
+- it-tatenai
+- it-persia
+links:
+- title: 'Perspicacia: «Darío»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Dar%C3%ADo/
+  type: perspicacia
+checked_on: '2026-10-13'
+status: pending

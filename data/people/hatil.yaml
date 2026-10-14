@@ -1,0 +1,18 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hatil
+name: Hatil
+names:
+- name: Hatil
+perspicacia: '1200001917'
+summary: Antepasado de una de las familias descendientes de siervos de Salomón; esa familia volvió del destierro con el grupo
+  de Zorobabel.
+reason: Perspicacia «Hatil»; Esd 2:57.
+sources:
+- it-hatil
+- esdras-2
+links:
+- title: 'Perspicacia: «Hatil»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hatil/
+  type: perspicacia
+checked_on: '2026-10-13'
+status: verified

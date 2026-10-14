@@ -1,0 +1,31 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: benaya-descendiente-de-nebo
+name: Benaya
+names:
+- name: Benaya
+perspicacia: 1200000632#12
+summary: Israelita de los hijos de Nebo. Estaba casado con extranjeras y, cuando Esdras corrigió esos matrimonios (468-467
+  a.e.c.), las despidió junto con sus hijos.
+reason: Perspicacia «Benaya», núm. 12; Esd 10:43, 44.
+sources:
+- it-benaya
+- esdras-10
+links:
+- title: 'Perspicacia: «Benaya»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Benaya/
+  type: perspicacia
+relations: []
+checked_on: '2026-10-13'
+status: verified
+disambiguation: El de los hijos de Nebo de Esd 10:43; no los demás Benaya que registra Perspicacia.
+distinct_from:
+- benaya-comisionado-de-ezequias
+- benaya-descendiente-de-bani
+- benaya-descendiente-de-pahat-moab
+- benaya-descendiente-de-paros
+- benaya-el-piratonita
+- benaya-hijo-de-jehoiada
+- benaya-hijo-de-jeiel
+- benaya-musico
+- benaya-simeonita
+- benaya-trompetista

@@ -1,0 +1,39 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: artajerjes-autoriza-a-esdras
+title: Artajerjes autoriza a Esdras a ir a Jerusalén
+date:
+  from: -467
+  to: -467
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 468 a.e.c. (séptimo año de Artajerjes)
+narrative_order:
+  series: esdras
+  order: 7006
+places: []
+people:
+- artajerjes-i
+- esdras
+passages:
+- Esd 7:6
+- Esd 7:11-26
+summary: 'En su séptimo año, Artajerjes dio a Esdras una carta: podía llevar a los israelitas que quisieran, oro y plata para
+  el templo y fondos del tesoro real, y nombrar jueces al oeste del Éufrates.'
+reason: 'Perspicacia «Artajerjes», núm. 2, y «Esdras», núm. 1; estudio 3 (468 a.e.c.). Va antes de la salida de Esd 7:9 aunque
+  el libro copie la carta después. Sin lugar: el texto no dice dónde estaba el rey.'
+sources:
+- esdras-7
+- it-artajerjes
+- it-esdras
+- si-3
+links:
+- title: 'Perspicacia: «Artajerjes»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Artajerjes/
+  type: perspicacia
+- title: Esdras 7 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/esdras/7/
+  type: bible
+checked_on: '2026-10-13'
+status: verified

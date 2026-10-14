@@ -1,0 +1,23 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: elam-el-otro
+name: Elam
+names:
+- name: Elam
+perspicacia: 1200001274#5
+summary: 'El que Esdras llama «el otro Elam»: cabeza de una familia que volvió con Zorobabel, también con 1.254 descendientes.'
+reason: Perspicacia «Elam», núm. 5; Esd 2:31.
+sources:
+- it-elam
+- esdras-2
+links:
+- title: 'Perspicacia: «Elam»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Elam/
+  type: perspicacia
+checked_on: '2026-10-13'
+status: verified
+distinct_from:
+- elam-cabeza-de-familia
+- elam-hijo-de-meselemias
+- elam-hijo-de-sasac
+- elam-hijo-de-sem
+disambiguation: Elam núm. 5 de Perspicacia, «el otro Elam» de Esd 2:31; no el de Esd 2:7 ni el hijo de Sem.

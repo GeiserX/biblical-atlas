@@ -1,0 +1,60 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: semaya-sacerdote-descendiente-de-harim
+name: Semaya
+names:
+- name: Semaya
+perspicacia: 1200004000#18
+summary: Sacerdote de los hijos de Harim. Estaba casado con extranjeras y, cuando Esdras corrigió esos matrimonios (468-467
+  a.e.c.), las despidió junto con sus hijos.
+reason: Perspicacia «Semaya», núm. 18; Esd 10:21, 44.
+sources:
+- it-semaya
+- esdras-10
+links:
+- title: 'Perspicacia: «Semaya»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Semaya/
+  type: perspicacia
+relations:
+- type: kin
+  person: harim-de-tiempos-de-david
+  word: ancestor
+  sources:
+  - esdras-10
+  - it-semaya
+  reason: Esd 10:21 lo pone entre los hijos de Harim; Perspicacia «Semaya», núm. 18. «Hijos» vale aquí por descendientes,
+    como dice Perspicacia «Harim», núm. 1.
+  inferred: false
+  checked_on: '2026-10-13'
+  status: verified
+- type: holds_office
+  office: priest
+  sources:
+  - esdras-10
+  - it-semaya
+  reason: 'Esd 10:18-22: va en la lista de los hijos de los sacerdotes; Perspicacia lo llama sacerdote.'
+  inferred: false
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified
+disambiguation: El sacerdote de los hijos de Harim de Esd 10:21; no los demás Semaya que registra Perspicacia.
+distinct_from:
+- semaya-ayudante-de-core
+- semaya-de-nehelam
+- semaya-descendiente-de-adonicam
+- semaya-descendiente-de-harim
+- semaya-hijo-de-galal
+- semaya-hijo-de-hasub
+- semaya-hijo-de-joel
+- semaya-hijo-de-netanel
+- semaya-hijo-de-obed-edom
+- semaya-hijo-de-secanias
+- semaya-jefe-de-la-casa-de-elizafan
+- semaya-levita-de-ezequias
+- semaya-levita-de-jehosafat
+- semaya-levita-de-josias
+- semaya-padre-de-delaya
+- semaya-padre-de-uriya
+- semaya-profeta
+- semaya-simeonita
+- semaya-enviado-a-casifia

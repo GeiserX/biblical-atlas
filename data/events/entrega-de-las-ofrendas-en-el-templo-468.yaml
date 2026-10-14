@@ -1,0 +1,46 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: entrega-de-las-ofrendas-en-el-templo-468
+title: Esdras entrega las ofrendas en el templo
+date:
+  from: -467
+  to: -467
+  precision: month
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: ab de 468 a.e.c. (al cuarto día de llegar)
+  detail:
+    month: ab
+narrative_order:
+  series: esdras
+  order: 8033
+places:
+- jerusalen
+people:
+- esdras
+- meremot-hijo-de-uriya
+- eleazar-hijo-de-finehas
+- jozabad-hijo-de-jesua
+- noadias-hijo-de-binui
+passages:
+- Esd 8:33-35
+summary: Al cuarto día, en la casa de Dios se pesó todo y se entregó al sacerdote Meremot, con Eleazar y los levitas Jozabad
+  y Noadías. Los repatriados ofrecieron sacrificios quemados por todo Israel.
+reason: Esd 8:32-35; Perspicacia «Meremot», núm. 2, «Eleazar», núm. 5, y «Noadías», núm. 1. Llegaron el 1 de ab, se quedaron
+  tres días y la entrega fue al cuarto (Esd 8:32, 33).
+sources:
+- esdras-8
+- it-meremot
+- it-eleazar
+- it-noadias
+- it-esdras
+- si-3
+links:
+- title: 'Perspicacia: «Esdras»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Esdras/
+  type: perspicacia
+- title: Esdras 8 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/esdras/8/
+  type: bible
+checked_on: '2026-10-13'
+status: verified

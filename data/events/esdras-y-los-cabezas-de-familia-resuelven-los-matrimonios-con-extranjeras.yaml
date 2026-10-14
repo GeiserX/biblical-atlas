@@ -1,0 +1,144 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: esdras-y-los-cabezas-de-familia-resuelven-los-matrimonios-con-extranjeras
+title: Esdras y los cabezas de familia resuelven los matrimonios con extranjeras
+date:
+  from: -467
+  to: -466
+  precision: range
+  approx: false
+  type: derived
+  chronology: tnm
+  text: del 1 de tebet de 468 al 1 de nisán de 467 a.e.c.
+  note: 'Esd 10:16, 17: del día 1 del mes décimo al día 1 del mes primero. Tomamos el tebet del año 468 de la llegada de Esdras;
+    el nisán siguiente ya cae en 467 a.e.c. Perspicacia «Esdras» da unos tres meses.'
+narrative_order:
+  series: esdras
+  order: 10016
+places:
+- jerusalen
+people:
+- esdras
+- maaseya-de-la-casa-de-jesua
+- eliezer-de-la-casa-de-jesua
+- jarib-de-la-casa-de-jesua
+- guedalias-de-la-casa-de-jesua
+- hanani-descendiente-de-imer
+- zebadias-descendiente-de-imer
+- maaseya-descendiente-de-harim
+- elias-descendiente-de-harim
+- semaya-sacerdote-descendiente-de-harim
+- jehiel-descendiente-de-harim
+- uzias-descendiente-de-harim
+- elioenai-descendiente-de-pasjur
+- maaseya-descendiente-de-pasjur
+- ismael-descendiente-de-pasjur
+- netanel-descendiente-de-pasjur
+- jozabad-descendiente-de-pasjur
+- eleasa-descendiente-de-pasjur
+- ramias
+- izias
+- malkiya-descendiente-de-paros-1
+- mijamin-descendiente-de-paros
+- eleazar-descendiente-de-paros
+- malkiya-descendiente-de-paros-2
+- benaya-descendiente-de-paros
+- matanias-descendiente-de-elam
+- zacarias-descendiente-de-elam
+- jehiel-descendiente-de-elam
+- abdi-descendiente-de-elam
+- jeremot-descendiente-de-elam
+- elias-descendiente-de-elam
+- elioenai-descendiente-de-zatu
+- eliasib-descendiente-de-zatu
+- matanias-descendiente-de-zatu
+- jeremot-descendiente-de-zatu
+- zabad-descendiente-de-zatu
+- aziza
+- jehohanan-descendiente-de-bebai
+- hananias-descendiente-de-bebai
+- zabai
+- atlai
+- mesulam-descendiente-de-bani
+- maluc-descendiente-de-bani
+- adaya-descendiente-de-bani
+- jasub-descendiente-de-bani
+- seal
+- jeremot-descendiente-de-bani
+- adna-descendiente-de-pahat-moab
+- kelal
+- benaya-descendiente-de-pahat-moab
+- maaseya-descendiente-de-pahat-moab
+- matanias-descendiente-de-pahat-moab
+- bezalel-descendiente-de-pahat-moab
+- binui-descendiente-de-pahat-moab
+- manases-descendiente-de-pahat-moab
+- eliezer-descendiente-de-harim
+- isiya
+- malkiya-descendiente-de-harim
+- semaya-descendiente-de-harim
+- shimeon
+- benjamin-descendiente-de-harim
+- maluc-descendiente-de-harim
+- semarias-descendiente-de-harim
+- matenai-descendiente-de-hasum
+- matata-descendiente-de-hasum
+- zabad-descendiente-de-hasum
+- elifelet-descendiente-de-hasum
+- jeremai
+- manases-descendiente-de-hasum
+- simei-descendiente-de-hasum
+- maadai
+- amram-descendiente-de-bani
+- uel
+- benaya-descendiente-de-bani
+- bedeya
+- keluhi
+- vanias
+- meremot-descendiente-de-bani
+- eliasib-descendiente-de-bani
+- matanias-descendiente-de-bani
+- matenai-descendiente-de-bani
+- jaasu
+- simei-descendiente-de-binui
+- selemias-descendiente-de-binui-1
+- natan-descendiente-de-binui
+- adaya-descendiente-de-binui
+- macnadebai
+- sasai
+- sharai
+- azarel-descendiente-de-binui
+- selemias-descendiente-de-binui-2
+- semarias-descendiente-de-binui
+- salum-descendiente-de-binui
+- amarias-descendiente-de-binui
+- jose-descendiente-de-binui
+- jeiel-descendiente-de-nebo
+- matitias-descendiente-de-nebo
+- zabad-descendiente-de-nebo
+- zebina
+- jadai
+- joel-descendiente-de-nebo
+- benaya-descendiente-de-nebo
+- jozabad-levita-de-tiempos-de-esdras
+- simei-levita-de-tiempos-de-esdras
+- quelita-levita-de-tiempos-de-esdras
+- petahias-levita-de-tiempos-de-esdras
+- juda-levita-de-tiempos-de-esdras
+- eliezer-levita-de-tiempos-de-esdras
+- eliasib-cantor
+- salum-portero-de-tiempos-de-esdras
+- telem
+- uri-portero
+passages:
+- Esd 10:16-44
+summary: Esdras y los cabezas de las casas paternas examinan caso por caso a los casados con extranjeras durante unos tres
+  meses. La lista nombra a sacerdotes, levitas, cantores, porteros e israelitas; todos despiden a esas esposas y a sus hijos.
+reason: Esd 10:16, 17 da los días de comienzo y fin; Perspicacia «Esdras» habla de unos tres meses. El año sale de la llegada
+  de Esdras en 468 (estudio 3) y de Perspicacia «Abdí», núm. 3.
+sources:
+- esdras-10
+- it-esdras
+- it-abdi
+- si-3
+checked_on: '2026-10-13'
+status: pending

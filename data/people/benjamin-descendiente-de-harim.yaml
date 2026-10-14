@@ -1,0 +1,33 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: benjamin-descendiente-de-harim
+name: Benjamín
+names:
+- name: Benjamín
+perspicacia: 1200000640#4
+summary: Israelita de los hijos de Harim. Estaba casado con extranjeras y, cuando Esdras corrigió esos matrimonios (468-467
+  a.e.c.), las despidió junto con sus hijos. Quizá sea el Benjamín de los días de Nehemías; Perspicacia no lo asegura.
+reason: Perspicacia «Benjamín», núm. 4; Esd 10:32, 44.
+sources:
+- it-benjamin
+- esdras-10
+links:
+- title: 'Perspicacia: «Benjamín»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Benjam%C3%ADn/
+  type: perspicacia
+relations:
+- type: kin
+  person: harim-cabeza-de-familia
+  word: ancestor
+  sources:
+  - esdras-10
+  - it-benjamin
+  reason: Esd 10:32 lo pone entre los hijos de Harim; Perspicacia «Benjamín», núm. 4.
+  inferred: false
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified
+disambiguation: El de los hijos de Harim de Esd 10:32; no los demás Benjamín que registra Perspicacia.
+distinct_from:
+- benjamin-hijo-de-bilhan
+- benjamin-hijo-de-jacob

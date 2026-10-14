@@ -1,0 +1,51 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: maaseya-de-la-casa-de-jesua
+name: Maaseya
+names:
+- name: Maaseya
+perspicacia: 1200002811#9
+summary: Sacerdote de la casa de Jesúa, hijo de Jehozadac. Tenía esposa extranjera; con los demás sacerdotes de su familia
+  se comprometió a despedirla y a ofrecer un carnero por su culpa (468 a.e.c.).
+reason: Perspicacia «Maaseya», núm. 9; Esd 10:18, 19.
+sources:
+- it-maaseya
+- esdras-10
+links:
+- title: 'Perspicacia: «Maaseya»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Maaseya/
+  type: perspicacia
+relations:
+- type: kin
+  person: josue-sumo-sacerdote
+  word: relative
+  sources:
+  - esdras-10
+  - it-maaseya
+  reason: Esd 10:18 lo cuenta entre los hijos de Jesúa o de sus hermanos, sin decir en qué grado.
+  inferred: false
+  checked_on: '2026-10-13'
+  status: verified
+- type: holds_office
+  office: priest
+  sources:
+  - esdras-10
+  - it-maaseya
+  reason: 'Esd 10:18: va entre los hijos de los sacerdotes que tenían esposas extranjeras.'
+  inferred: false
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified
+disambiguation: El sacerdote de la casa de Jesúa de Esd 10:18; no los demás Maaseya que registra Perspicacia.
+distinct_from:
+- maaseya-descendiente-de-harim
+- maaseya-descendiente-de-pahat-moab
+- maaseya-descendiente-de-pasjur
+- maaseya-funcionario
+- maaseya-hijo-de-adaya
+- maaseya-hijo-de-salum
+- maaseya-hijo-del-rey
+- maaseya-jefe-de-jerusalen
+- maaseya-musico
+- maaseya-padre-de-sedequias
+- maaseya-padre-de-sofonias

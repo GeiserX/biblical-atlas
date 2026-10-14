@@ -1,0 +1,8370 @@
+{
+ "formato": "biblical-atlas/propuesta-cobertura/1",
+ "libro": "esdras",
+ "agente": "escritor-esdras",
+ "leido": "2026-10-13",
+ "cobertura": {},
+ "fuentes": {},
+ "cambios": [
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "babilonia",
+   "campo": "sources",
+   "valores": [
+    "esdras-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "events",
+   "id": "regreso-de-537",
+   "campo": "sources",
+   "valores": [
+    "esdras-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "events",
+   "id": "regreso-de-537",
+   "campo": "people",
+   "valores": [
+    "sesbazar"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "events",
+   "id": "regreso-de-537",
+   "campo": "narrative_order",
+   "antes": null,
+   "despues": {
+    "series": "esdras",
+    "order": 2068
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "events",
+   "id": "regreso-de-537",
+   "campo": "reason",
+   "antes": "Estudio 3 (párr. 5, 6) y Perspicacia «Ciro»: vuelta para tisri de 537; cifras de Esd 2:64, 65. Veamos «la buena tierra» dice que la Biblia no da la ruta.",
+   "despues": "Estudio 3 (párr. 5, 6) y Perspicacia «Ciro»: vuelta para tisri de 537; cifras de Esd 2:64, 65. Según «la buena tierra», la Biblia no da la ruta. En la serie de Esdras va tras Esd 2:63, por esa fecha.",
+   "historial": {
+    "date": "2026-10-13",
+    "change": "Entra en la serie de Esdras con el orden 2068: su fecha es la llegada a las ciudades, posterior a la entrega de los utensilios (Esd 1:7-11) y al registro de Esd 2.",
+    "source": "esdras-2"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "people",
+   "id": "sesbazar",
+   "campo": "perspicacia",
+   "antes": null,
+   "despues": "1200004025"
+  },
+  {
+   "op": "cambiar",
+   "tipo": "people",
+   "id": "sesbazar",
+   "campo": "disambiguation",
+   "antes": "Nombre que usan el edicto de Ciro y una carta oficial en Esd 1 y 5.",
+   "despues": "Nombre que Esd 1 y 5 dan a quien llevó los utensilios del templo, junto al edicto de Ciro y a una carta oficial.",
+   "historial": {
+    "date": "2026-10-13",
+    "change": "Decía que el edicto de Ciro usa el nombre; en Esd 1 el nombre sale en el relato que sigue al edicto (Esd 1:8, 11), no en el edicto.",
+    "source": "esdras-1"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "people",
+   "id": "sesbazar",
+   "campo": "relations",
+   "antes": [
+    {
+     "type": "same_as",
+     "person": "zorobabel",
+     "certainty": "probable",
+     "inferred": true,
+     "sources": [
+      "it-sesbazar",
+      "it-zorobabel",
+      "esdras-1",
+      "esdras-5"
+     ],
+     "reason": "Perspicacia «Sesbazar» lo ve lo más probable. Lo que Esd 1:8-11 y 5:14-16 cuentan de Sesbazar se cuenta de Zorobabel en los demás pasajes, y a los dos se les llama gobernador.",
+     "status": "verified"
+    }
+   ],
+   "despues": [
+    {
+     "type": "same_as",
+     "person": "zorobabel",
+     "certainty": "possible",
+     "inferred": true,
+     "sources": [
+      "esdras-1",
+      "it-sesbazar",
+      "it-zorobabel",
+      "esdras-5"
+     ],
+     "reason": "La nota de Esd 1:8, la publicación más reciente, lo da por posible; Perspicacia «Sesbazar» lo veía lo más probable. Lo que Esd 1:8-11 y 5:14-16 dicen de Sesbazar se dice de Zorobabel en otros pasajes.",
+     "status": "verified"
+    }
+   ],
+   "historial": {
+    "date": "2026-10-13",
+    "change": "same_as con zorobabel baja de probable a posible: la nota de Esd 1:8 dice «posiblemente» y manda sobre Perspicacia «Sesbazar», que lo daba por lo más probable.",
+    "source": "esdras-1"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "people",
+   "id": "sesbazar",
+   "campo": "summary",
+   "antes": "Jefe al que Ciro confió los utensilios del templo para llevarlos a Jerusalén, donde puso los cimientos. Perspicacia ve más probable que fuera el nombre oficial babilonio de Zorobabel.",
+   "despues": "Jefe al que Ciro confió los utensilios del templo para llevarlos a Jerusalén, donde puso los cimientos. Quizá sea Zorobabel con su nombre oficial babilonio.",
+   "historial": {
+    "date": "2026-10-13",
+    "change": "El resumen ya no lo da por probable: la nota de Esd 1:8 lo ve solo posible.",
+    "source": "esdras-1"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "people",
+   "id": "sesbazar",
+   "campo": "not_claimed",
+   "antes": [
+    "Que Sesbazar y Zorobabel sean con seguridad la misma persona: Perspicacia lo da como lo más probable."
+   ],
+   "despues": [
+    "Que Sesbazar y Zorobabel sean con seguridad la misma persona: la nota de Esd 1:8 lo ve posible y Perspicacia lo daba por lo más probable."
+   ],
+   "historial": {
+    "date": "2026-10-13",
+    "change": "Recoge la nota de Esd 1:8, más reciente que Perspicacia.",
+    "source": "esdras-1"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "people",
+   "id": "zorobabel",
+   "campo": "disambiguation",
+   "antes": "Gobernador de Judá después del destierro, hijo legal de Sealtiel; probablemente el mismo que Sesbazar.",
+   "despues": "Gobernador de Judá después del destierro, hijo legal de Sealtiel; quizá el mismo que Sesbazar.",
+   "historial": {
+    "date": "2026-10-13",
+    "change": "«Probablemente» pasa a «quizá»: la nota de Esd 1:8 ve solo posible que Sesbazar sea Zorobabel.",
+    "source": "esdras-1"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "sesbazar",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "holds_office",
+     "office": "leader",
+     "inferred": false,
+     "sources": [
+      "esdras-1"
+     ],
+     "reason": "Esd 1:8: el texto lo llama jefe de la tribu de Judá.",
+     "checked_on": "2026-10-13",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "zorobabel",
+   "campo": "sources",
+   "valores": [
+    "esdras-2"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "josue-sumo-sacerdote",
+   "campo": "sources",
+   "valores": [
+    "esdras-2"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jesua-de-tiempos-de-david",
+   "campo": "sources",
+   "valores": [
+    "esdras-2"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "imer-de-tiempos-de-david",
+   "campo": "sources",
+   "valores": [
+    "esdras-2"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "harim-de-tiempos-de-david",
+   "campo": "sources",
+   "valores": [
+    "esdras-2"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "hacoz",
+   "campo": "sources",
+   "valores": [
+    "esdras-2"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "salum-jefe-de-los-porteros",
+   "campo": "sources",
+   "valores": [
+    "esdras-2"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "talmon",
+   "campo": "sources",
+   "valores": [
+    "esdras-2"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "acub-portero",
+   "campo": "sources",
+   "valores": [
+    "esdras-2"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "asaf-hijo-de-berekias",
+   "campo": "sources",
+   "valores": [
+    "esdras-2"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "barzilai-el-galaadita",
+   "campo": "sources",
+   "valores": [
+    "esdras-2"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "belen",
+   "campo": "sources",
+   "valores": [
+    "esdras-2"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "netofa",
+   "campo": "sources",
+   "valores": [
+    "esdras-2"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "anatot",
+   "campo": "sources",
+   "valores": [
+    "esdras-2"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "quiryat-jearim",
+   "campo": "sources",
+   "valores": [
+    "esdras-2"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "kefira",
+   "campo": "sources",
+   "valores": [
+    "esdras-2"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "beerot",
+   "campo": "sources",
+   "valores": [
+    "esdras-2"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "rama-de-benjamin",
+   "campo": "sources",
+   "valores": [
+    "esdras-2"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "gueba",
+   "campo": "sources",
+   "valores": [
+    "esdras-2"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "micmash",
+   "campo": "sources",
+   "valores": [
+    "esdras-2"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "betel",
+   "campo": "sources",
+   "valores": [
+    "esdras-2"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "hai",
+   "campo": "sources",
+   "valores": [
+    "esdras-2"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "lida",
+   "campo": "sources",
+   "valores": [
+    "esdras-2"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "ono",
+   "campo": "sources",
+   "valores": [
+    "esdras-2"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "jerico",
+   "campo": "sources",
+   "valores": [
+    "esdras-2"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "events",
+   "id": "regreso-de-537",
+   "campo": "people",
+   "valores": [
+    "nehemias-repatriado",
+    "seraya-repatriado",
+    "reelaya",
+    "mardoqueo-repatriado",
+    "bilsan",
+    "mispar",
+    "bigvai-repatriado",
+    "rehum-repatriado",
+    "baana-repatriado",
+    "cadmiel"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "journeys",
+   "id": "regreso-con-zorobabel",
+   "campo": "companions",
+   "valores": [
+    "nehemias-repatriado",
+    "seraya-repatriado",
+    "reelaya",
+    "mardoqueo-repatriado",
+    "bilsan",
+    "mispar",
+    "bigvai-repatriado",
+    "rehum-repatriado",
+    "baana-repatriado",
+    "sesbazar"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "journeys",
+   "id": "regreso-con-zorobabel",
+   "campo": "stops",
+   "antes": [
+    {
+     "order": 1,
+     "place": "babilonia",
+     "reference": "Esd 1:11; 2:1",
+     "date": {
+      "from": -536,
+      "to": -536,
+      "precision": "year",
+      "approx": true,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "537 a.e.c."
+     },
+     "note": "Sesbazar lleva los utensilios; Perspicacia ve probable que sea Zorobabel. Esd 2:59 nombra otros puntos de salida que el atlas aún no sitúa: Tel-Mélah, Tel-Harsá, Kerub, Adón, Imer.",
+     "reason": "Esd 1:11 y 2:1: los desterrados salen de Babilonia. El suceso regreso-de-537 lo fecha en 537 a.e.c. (estudio 3).",
+     "sources": [
+      "esdras-1",
+      "esdras-2",
+      "it-sesbazar",
+      "si-3"
+     ],
+     "checked_on": "2026-09-30",
+     "status": "verified"
+    },
+    {
+     "order": 2,
+     "place": "jerusalen",
+     "reference": "Esd 2:68–3:1",
+     "date": {
+      "from": -536,
+      "to": -536,
+      "precision": "month",
+      "approx": true,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "tisri de 537 a.e.c.",
+      "detail": {
+       "month": "tisri"
+      }
+     },
+     "note": "Esd 2:2 nombra a otros nueve jefes que suben con ellos; el atlas aún no tiene sus fichas. Cada familia se instala en su ciudad y en el mes séptimo se juntan en Jerusalén.",
+     "reason": "Esd 2:68 y 3:1: llegan a la casa de Jehová y en el séptimo mes se reúnen allí. Fecha de los sucesos regreso-de-537 y altar-reconstruido-537: tisri de 537 a.e.c.",
+     "sources": [
+      "esdras-2",
+      "esdras-3",
+      "si-3",
+      "lbt-regreso"
+     ],
+     "checked_on": "2026-09-30",
+     "status": "verified"
+    }
+   ],
+   "despues": [
+    {
+     "order": 1,
+     "place": "babilonia",
+     "reference": "Esd 1:11; 2:1",
+     "date": {
+      "from": -536,
+      "to": -536,
+      "precision": "year",
+      "approx": true,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "537 a.e.c."
+     },
+     "note": "Sesbazar lleva los utensilios; la nota de Esd 1:8 ve posible que sea Zorobabel, y Perspicacia «Sesbazar» lo veía más probable. Según Esd 2:59, algunos salen de otros sitios de Babilonia: Imer, Adón, Kerub, Tel-Harsá y Tel-Mélah.",
+     "reason": "Esd 1:11 y 2:1: los desterrados salen de Babilonia. El suceso regreso-de-537 lo fecha en 537 a.e.c. (estudio 3).",
+     "sources": [
+      "esdras-1",
+      "esdras-2",
+      "it-sesbazar",
+      "si-3"
+     ],
+     "checked_on": "2026-10-14",
+     "status": "verified"
+    },
+    {
+     "order": 2,
+     "place": "jerusalen",
+     "reference": "Esd 2:68–3:1",
+     "date": {
+      "from": -536,
+      "to": -536,
+      "precision": "month",
+      "approx": true,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "tisri de 537 a.e.c.",
+      "detail": {
+       "month": "tisri"
+      }
+     },
+     "note": "Con ellos suben los otros nueve jefes de Esd 2:2, de Nehemías a Baaná. Cada familia se instala en su ciudad y en el mes séptimo se juntan en Jerusalén.",
+     "reason": "Esd 2:68 y 3:1: llegan a la casa de Jehová y en el séptimo mes se reúnen allí. Fecha de los sucesos regreso-de-537 y altar-reconstruido-537: tisri de 537 a.e.c.",
+     "sources": [
+      "esdras-2",
+      "esdras-3",
+      "si-3",
+      "lbt-regreso"
+     ],
+     "checked_on": "2026-09-30",
+     "status": "verified"
+    }
+   ],
+   "historial": {
+    "date": "2026-10-13",
+    "change": "Las notas de las paradas ya no dicen que faltan las fichas de los jefes de Esd 2:2 y de los lugares de Esd 2:59, y siguen a la nota de Esd 1:8: Sesbazar es solo posiblemente Zorobabel.",
+    "source": "esdras-2"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "people",
+   "id": "mardoqueo",
+   "campo": "perspicacia",
+   "antes": null,
+   "despues": "1200003111#2"
+  },
+  {
+   "op": "cambiar",
+   "tipo": "people",
+   "id": "nehemias",
+   "campo": "perspicacia",
+   "antes": null,
+   "despues": "1200003212#3"
+  },
+  {
+   "op": "cambiar",
+   "tipo": "people",
+   "id": "harim-de-tiempos-de-david",
+   "campo": "disambiguation",
+   "antes": null,
+   "despues": "Harim núm. 1 de Perspicacia: cabeza de la tercera división sacerdotal de tiempos de David; no el fundador de la familia laica del mismo nombre."
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "azarias-sacerdote-repatriado",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "same_as",
+     "person": "seraya-repatriado",
+     "certainty": "possible",
+     "inferred": true,
+     "sources": [
+      "it-azarias",
+      "esdras-2"
+     ],
+     "reason": "Perspicacia «Azarías», núm. 23, ve posible que sea el núm. 22, el que Esd 2:2 llama Seraya.",
+     "checked_on": "2026-10-13",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "abednego",
+   "campo": "distinct_from",
+   "valores": [
+    "seraya-repatriado"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "acub-hijo-de-elioenai",
+   "campo": "distinct_from",
+   "valores": [
+    "acub-netineo"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "acub-portero",
+   "campo": "distinct_from",
+   "valores": [
+    "acub-netineo"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "amon-de-juda",
+   "campo": "distinct_from",
+   "valores": [
+    "ami"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "amon-jefe-de-samaria",
+   "campo": "distinct_from",
+   "valores": [
+    "ami"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "ara-hijo-de-jeter",
+   "campo": "distinct_from",
+   "valores": [
+    "ara-antepasado-de-secanias"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "ara-hijo-de-ula",
+   "campo": "distinct_from",
+   "valores": [
+    "ara-antepasado-de-secanias"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "azarias-hijo-de-ahimaaz",
+   "campo": "distinct_from",
+   "valores": [
+    "seraya-repatriado"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "azarias-hijo-de-etan",
+   "campo": "distinct_from",
+   "valores": [
+    "seraya-repatriado"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "azarias-hijo-de-hilquias",
+   "campo": "distinct_from",
+   "valores": [
+    "seraya-repatriado"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "azarias-hijo-de-jehohanan",
+   "campo": "distinct_from",
+   "valores": [
+    "seraya-repatriado"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "azarias-hijo-de-jehu",
+   "campo": "distinct_from",
+   "valores": [
+    "seraya-repatriado"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "azarias-hijo-de-johanan",
+   "campo": "distinct_from",
+   "valores": [
+    "seraya-repatriado"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "azarias-hijo-de-natan",
+   "campo": "distinct_from",
+   "valores": [
+    "seraya-repatriado"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "azarias-hijo-de-sadoc",
+   "campo": "distinct_from",
+   "valores": [
+    "seraya-repatriado"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "azarias-hijo-de-sofonias",
+   "campo": "distinct_from",
+   "valores": [
+    "seraya-repatriado"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "baana-el-netofatita",
+   "campo": "distinct_from",
+   "valores": [
+    "baana-repatriado"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "baana-hijo-de-ahilud",
+   "campo": "distinct_from",
+   "valores": [
+    "baana-repatriado"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "baana-hijo-de-husai",
+   "campo": "distinct_from",
+   "valores": [
+    "baana-repatriado"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "baana-hijo-de-rimon",
+   "campo": "distinct_from",
+   "valores": [
+    "baana-repatriado"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "bani-el-gadita",
+   "campo": "distinct_from",
+   "valores": [
+    "bani-cabeza-de-familia"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "bani-hijo-de-semer",
+   "campo": "distinct_from",
+   "valores": [
+    "bani-cabeza-de-familia"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "barzilai-el-galaadita",
+   "campo": "distinct_from",
+   "valores": [
+    "barzilai-sacerdote"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "barzilai-meholatita",
+   "campo": "distinct_from",
+   "valores": [
+    "barzilai-sacerdote"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "delaya-de-tiempos-de-david",
+   "campo": "distinct_from",
+   "valores": [
+    "delaya-sin-registro"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "delaya-hijo-de-elioenai",
+   "campo": "distinct_from",
+   "valores": [
+    "delaya-sin-registro"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "delaya-hijo-de-semaya",
+   "campo": "distinct_from",
+   "valores": [
+    "delaya-sin-registro"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "elam-hijo-de-meselemias",
+   "campo": "distinct_from",
+   "valores": [
+    "elam-cabeza-de-familia",
+    "elam-el-otro"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "elam-hijo-de-sasac",
+   "campo": "distinct_from",
+   "valores": [
+    "elam-cabeza-de-familia",
+    "elam-el-otro"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "elam-hijo-de-sem",
+   "campo": "distinct_from",
+   "valores": [
+    "elam-cabeza-de-familia",
+    "elam-el-otro"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "ezequias",
+   "campo": "distinct_from",
+   "valores": [
+    "ezequias-cabeza-de-familia"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "ezequias-antepasado-de-sofonias",
+   "campo": "distinct_from",
+   "valores": [
+    "ezequias-cabeza-de-familia"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "hanan-hijo-de-azel",
+   "campo": "distinct_from",
+   "valores": [
+    "hanan-netineo"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "hanan-hijo-de-igdalias",
+   "campo": "distinct_from",
+   "valores": [
+    "hanan-netineo"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "hanan-hijo-de-maaca",
+   "campo": "distinct_from",
+   "valores": [
+    "hanan-netineo"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "hanan-hijo-de-sasac",
+   "campo": "distinct_from",
+   "valores": [
+    "hanan-netineo"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "harim-de-tiempos-de-david",
+   "campo": "distinct_from",
+   "valores": [
+    "harim-cabeza-de-familia"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "hodavias-de-manases",
+   "campo": "distinct_from",
+   "valores": [
+    "hodavias-levita"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "hodavias-hijo-de-elioenai",
+   "campo": "distinct_from",
+   "valores": [
+    "hodavias-levita"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "hodavias-hijo-de-hasenua",
+   "campo": "distinct_from",
+   "valores": [
+    "hodavias-levita"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jaazanias-jefe-militar",
+   "campo": "distinct_from",
+   "valores": [
+    "seraya-repatriado"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jedaya-de-la-corona",
+   "campo": "distinct_from",
+   "valores": [
+    "jedaya-antepasado-de-sacerdotes"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jedaya-hijo-de-simri",
+   "campo": "distinct_from",
+   "valores": [
+    "jedaya-antepasado-de-sacerdotes"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jedaya-sacerdote-repatriado",
+   "campo": "distinct_from",
+   "valores": [
+    "jedaya-antepasado-de-sacerdotes"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jesua-de-tiempos-de-david",
+   "campo": "distinct_from",
+   "valores": [
+    "jesua-cabeza-de-casa-levita",
+    "jesua-de-pahat-moab"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "joab-hijo-de-seraya",
+   "campo": "distinct_from",
+   "valores": [
+    "joab-de-pahat-moab"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "joab-hijo-de-zeruya",
+   "campo": "distinct_from",
+   "valores": [
+    "joab-de-pahat-moab"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "josue-sumo-sacerdote",
+   "campo": "distinct_from",
+   "valores": [
+    "jesua-cabeza-de-casa-levita",
+    "jesua-de-pahat-moab"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "juda-hijo-de-jacob",
+   "campo": "distinct_from",
+   "valores": [
+    "hodavias-levita"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "mardoqueo",
+   "campo": "distinct_from",
+   "valores": [
+    "mardoqueo-repatriado"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "nehemias",
+   "campo": "distinct_from",
+   "valores": [
+    "nehemias-repatriado"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "ocozias-de-juda",
+   "campo": "distinct_from",
+   "valores": [
+    "seraya-repatriado"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "paseah-hijo-de-eston",
+   "campo": "distinct_from",
+   "valores": [
+    "paseah-netineo"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "pasjur-hijo-de-imer",
+   "campo": "distinct_from",
+   "valores": [
+    "pasjur-familia-sacerdotal"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "pasjur-padre-de-guedalias",
+   "campo": "distinct_from",
+   "valores": [
+    "pasjur-familia-sacerdotal"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "reaya-hijo-de-miqueas",
+   "campo": "distinct_from",
+   "valores": [
+    "reaya-netineo"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "reaya-hijo-de-sobal",
+   "campo": "distinct_from",
+   "valores": [
+    "reaya-netineo"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "rehum-funcionario-persa",
+   "campo": "distinct_from",
+   "valores": [
+    "rehum-repatriado"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "rezin-rey-de-siria",
+   "campo": "distinct_from",
+   "valores": [
+    "rezin-netineo"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "sefatias-el-harifita",
+   "campo": "distinct_from",
+   "valores": [
+    "sefatias-cabeza-de-familia",
+    "sefatias-siervo-de-salomon"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "sefatias-hijo-de-david",
+   "campo": "distinct_from",
+   "valores": [
+    "sefatias-cabeza-de-familia",
+    "sefatias-siervo-de-salomon"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "sefatias-hijo-de-maaca",
+   "campo": "distinct_from",
+   "valores": [
+    "sefatias-cabeza-de-familia",
+    "sefatias-siervo-de-salomon"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "sefatias-hijo-de-matan",
+   "campo": "distinct_from",
+   "valores": [
+    "sefatias-cabeza-de-familia",
+    "sefatias-siervo-de-salomon"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "sefatias-hijo-de-reuel",
+   "campo": "distinct_from",
+   "valores": [
+    "sefatias-cabeza-de-familia",
+    "sefatias-siervo-de-salomon"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "seraya-hijo-de-asiel",
+   "campo": "distinct_from",
+   "valores": [
+    "seraya-repatriado"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "seraya-hijo-de-azarias",
+   "campo": "distinct_from",
+   "valores": [
+    "seraya-repatriado"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "seraya-hijo-de-azriel",
+   "campo": "distinct_from",
+   "valores": [
+    "seraya-repatriado"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "seraya-hijo-de-nerias",
+   "campo": "distinct_from",
+   "valores": [
+    "seraya-repatriado"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "seraya-hijo-de-quenaz",
+   "campo": "distinct_from",
+   "valores": [
+    "seraya-repatriado"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "seraya-hijo-de-tanhumet",
+   "campo": "distinct_from",
+   "valores": [
+    "seraya-repatriado"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "seraya-secretario-de-david",
+   "campo": "distinct_from",
+   "valores": [
+    "seraya-repatriado"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "sisara-de-haroset",
+   "campo": "distinct_from",
+   "valores": [
+    "sisara-netineo"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "uza-de-benjamin",
+   "campo": "distinct_from",
+   "valores": [
+    "uza-netineo"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "uza-hijo-de-abinadab",
+   "campo": "distinct_from",
+   "valores": [
+    "uza-netineo"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "uza-hijo-de-simei",
+   "campo": "distinct_from",
+   "valores": [
+    "uza-netineo"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "uzias",
+   "campo": "distinct_from",
+   "valores": [
+    "seraya-repatriado"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "josue-sumo-sacerdote",
+   "campo": "distinct_from",
+   "valores": [
+    "jesua-supervisor-del-templo"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jesua-de-tiempos-de-david",
+   "campo": "distinct_from",
+   "valores": [
+    "jesua-supervisor-del-templo"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "hodavias-hijo-de-elioenai",
+   "campo": "distinct_from",
+   "valores": [
+    "hodavias-levita"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "hodavias-de-manases",
+   "campo": "distinct_from",
+   "valores": [
+    "hodavias-levita"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "hodavias-hijo-de-hasenua",
+   "campo": "distinct_from",
+   "valores": [
+    "hodavias-levita"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "juda-hijo-de-jacob",
+   "campo": "distinct_from",
+   "valores": [
+    "hodavias-levita"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "events",
+   "id": "altar-reconstruido-537",
+   "campo": "narrative_order",
+   "antes": null,
+   "despues": {
+    "series": "esdras",
+    "order": 3001
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "events",
+   "id": "fundamento-del-templo-536",
+   "campo": "narrative_order",
+   "antes": null,
+   "despues": {
+    "series": "esdras",
+    "order": 3008
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "events",
+   "id": "fundamento-del-templo-536",
+   "campo": "people",
+   "valores": [
+    "jesua-supervisor-del-templo",
+    "cadmiel",
+    "sesbazar"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "events",
+   "id": "fundamento-del-templo-536",
+   "campo": "sources",
+   "valores": [
+    "it-jesua",
+    "it-qadmiel",
+    "esdras-5",
+    "it-sesbazar"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "events",
+   "id": "fundamento-del-templo-536",
+   "campo": "passages",
+   "valores": [
+    "Esd 5:16"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jehozadac",
+   "campo": "sources",
+   "valores": [
+    "esdras-3"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "sealtiel",
+   "campo": "sources",
+   "valores": [
+    "esdras-3"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "ciro",
+   "campo": "sources",
+   "valores": [
+    "esdras-3"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "libano",
+   "campo": "sources",
+   "valores": [
+    "esdras-3"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "jope",
+   "campo": "sources",
+   "valores": [
+    "esdras-3"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "tiro",
+   "campo": "sources",
+   "valores": [
+    "esdras-3"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "sidon",
+   "campo": "sources",
+   "valores": [
+    "esdras-3"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "jerusalen",
+   "campo": "sources",
+   "valores": [
+    "esdras-3"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "josue-sumo-sacerdote",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "jehozadac",
+     "word": "father",
+     "sources": [
+      "esdras-3"
+     ],
+     "reason": "Esd 3:2, 8 lo llaman Jesúa hijo de Jehozadac.",
+     "inferred": false,
+     "checked_on": "2026-10-13",
+     "status": "verified"
+    },
+    {
+     "type": "lived_in",
+     "place": "jerusalen",
+     "date": {
+      "from": -536,
+      "to": -514,
+      "precision": "range",
+      "approx": true,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "de 537 a 515 a.e.c."
+     },
+     "sources": [
+      "esdras-3"
+     ],
+     "reason": "Esd 3:1-8: con los demás se reúne en Jerusalén, levanta el altar y empieza la obra del templo.",
+     "inferred": false,
+     "checked_on": "2026-10-13",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "zorobabel",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "sealtiel",
+     "word": "father",
+     "sources": [
+      "esdras-3"
+     ],
+     "reason": "Esd 3:2, 8 lo llaman Zorobabel hijo de Sealtiel.",
+     "inferred": false,
+     "checked_on": "2026-10-13",
+     "status": "verified"
+    },
+    {
+     "type": "lived_in",
+     "place": "jerusalen",
+     "date": {
+      "from": -536,
+      "to": -514,
+      "precision": "range",
+      "approx": false,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "de 537 a 515 a.e.c."
+     },
+     "sources": [
+      "esdras-3"
+     ],
+     "reason": "Esd 3:1-8: en Jerusalén levanta el altar y empieza la obra del templo.",
+     "inferred": false,
+     "checked_on": "2026-10-13",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jerjes-i",
+   "campo": "distinct_from",
+   "valores": [
+    "asuero-de-esdras"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "people",
+   "id": "jerjes-i",
+   "campo": "disambiguation",
+   "antes": null,
+   "despues": "Jerjes I, el Asuero del libro de Ester (Perspicacia «Asuero», núm. 3); no el Asuero de Esd 4:6, probablemente Cambises."
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "artajerjes-i",
+   "campo": "distinct_from",
+   "valores": [
+    "artajerjes-bardiya-o-gaumata"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "tabeel-de-tiempos-de-acaz",
+   "campo": "distinct_from",
+   "valores": [
+    "tabeel-opositor-del-templo"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "dario-i",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "succeeds",
+     "person": "artajerjes-bardiya-o-gaumata",
+     "office": "king",
+     "date": {
+      "from": -521,
+      "to": -521,
+      "precision": "year",
+      "approx": false,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "522 a.e.c."
+     },
+     "inferred": true,
+     "sources": [
+      "it-dario",
+      "it-persia",
+      "esdras-4"
+     ],
+     "reason": "Perspicacia «Darío», núm. 2: con otros seis nobles mató al que ocupaba el trono tras Cambises y se quedó con él. Esd 4:24 sigue con su reinado.",
+     "checked_on": "2026-10-13",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "rehum-funcionario-persa",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "tie",
+     "person": "artajerjes-bardiya-o-gaumata",
+     "word": "master",
+     "date": {
+      "from": -521,
+      "to": -521,
+      "precision": "year",
+      "approx": true,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "522 a.e.c."
+     },
+     "sources": [
+      "esdras-4",
+      "si-3"
+     ],
+     "reason": "Esd 4:11, 14: quienes escriben al rey se llaman siervos suyos y dicen que comen la sal del palacio. Año del estudio 3.",
+     "inferred": false,
+     "checked_on": "2026-10-13",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "simsai",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "tie",
+     "person": "artajerjes-bardiya-o-gaumata",
+     "word": "master",
+     "date": {
+      "from": -521,
+      "to": -521,
+      "precision": "year",
+      "approx": true,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "522 a.e.c."
+     },
+     "sources": [
+      "esdras-4",
+      "si-3"
+     ],
+     "reason": "Esd 4:11, 14: quienes escriben al rey se llaman siervos suyos y dicen que comen la sal del palacio. Año del estudio 3.",
+     "inferred": false,
+     "checked_on": "2026-10-13",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "josue-sumo-sacerdote",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "accompanies",
+     "person": "zorobabel",
+     "date": {
+      "from": -536,
+      "to": -514,
+      "precision": "range",
+      "approx": false,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "de 537 a 515 a.e.c."
+     },
+     "sources": [
+      "esdras-4"
+     ],
+     "reason": "Esd 4:3: con Zorobabel rechaza la ayuda de los enemigos.",
+     "inferred": false,
+     "checked_on": "2026-10-13",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "zorobabel",
+   "campo": "sources",
+   "valores": [
+    "esdras-4"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "josue-sumo-sacerdote",
+   "campo": "sources",
+   "valores": [
+    "esdras-4"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "ciro",
+   "campo": "sources",
+   "valores": [
+    "esdras-4"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "esar-hadon",
+   "campo": "sources",
+   "valores": [
+    "esdras-4"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "periods",
+   "id": "bardiya-o-gaumata",
+   "campo": "person",
+   "antes": null,
+   "despues": "artajerjes-bardiya-o-gaumata"
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "jerusalen",
+   "campo": "sources",
+   "valores": [
+    "esdras-4"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "juda",
+   "campo": "sources",
+   "valores": [
+    "esdras-4"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "erec",
+   "campo": "sources",
+   "valores": [
+    "esdras-4"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "babilonia",
+   "campo": "sources",
+   "valores": [
+    "esdras-4"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "susa",
+   "campo": "sources",
+   "valores": [
+    "esdras-4"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "elam",
+   "campo": "sources",
+   "valores": [
+    "esdras-4"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "region-de-samaria",
+   "campo": "sources",
+   "valores": [
+    "esdras-4"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "samaria",
+   "campo": "sources",
+   "valores": [
+    "esdras-4"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "events",
+   "id": "obra-del-templo-prohibida-522",
+   "campo": "passages",
+   "antes": [
+    "Esd 4:4-24"
+   ],
+   "despues": [
+    "Esd 4:7-24"
+   ],
+   "historial": {
+    "date": "2026-10-13",
+    "change": "El pasaje pasa de Esd 4:4-24 a 4:7-24: los versículos 4 y 5 siguen a la negativa de Zorobabel y el 6 es la acusación ante Asuero, dos sucesos aparte.",
+    "source": "esdras-4"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "events",
+   "id": "obra-del-templo-prohibida-522",
+   "campo": "summary",
+   "antes": "Los enemigos de Judá escribieron al rey persa y lo engañaron diciendo que los judíos reconstruían la ciudad y el muro. El rey, el Artajerjes de Esd 4:7, mandó detener la obra.",
+   "despues": "Bislam y sus compañeros, y después Rehúm y Simsái, escriben a Artajerjes que los judíos reconstruyen la ciudad rebelde y sus murallas. El rey manda parar, y ellos detienen la obra por la fuerza.",
+   "historial": {
+    "date": "2026-10-13",
+    "change": "El resumen nombra ahora a los que escribieron y detuvieron la obra (Esd 4:7-23).",
+    "source": "esdras-4"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "events",
+   "id": "obra-del-templo-prohibida-522",
+   "campo": "people",
+   "valores": [
+    "artajerjes-bardiya-o-gaumata",
+    "bislam",
+    "mitridates-opositor-del-templo",
+    "tabeel-opositor-del-templo",
+    "rehum-funcionario-persa",
+    "simsai"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "events",
+   "id": "obra-del-templo-prohibida-522",
+   "campo": "present",
+   "antes": null,
+   "despues": [
+    "rehum-funcionario-persa",
+    "simsai"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "events",
+   "id": "obra-del-templo-prohibida-522",
+   "campo": "places",
+   "valores": [
+    "samaria"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "events",
+   "id": "obra-del-templo-prohibida-522",
+   "campo": "sources",
+   "valores": [
+    "it-persia",
+    "it-rehum",
+    "it-simsai",
+    "it-bislam",
+    "it-tabeel",
+    "it-zorobabel"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "events",
+   "id": "obra-del-templo-prohibida-522",
+   "campo": "narrative_order",
+   "antes": null,
+   "despues": {
+    "series": "esdras",
+    "order": 4007
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "events",
+   "id": "se-reanuda-la-obra-del-templo-520",
+   "campo": "narrative_order",
+   "antes": null,
+   "despues": {
+    "series": "esdras",
+    "order": 5001
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "events",
+   "id": "se-reanuda-la-obra-del-templo-520",
+   "campo": "sources",
+   "valores": [
+    "esdras-5"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "ageo",
+   "campo": "sources",
+   "valores": [
+    "esdras-5",
+    "esdras-6"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "ageo",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "holds_office",
+     "office": "prophet",
+     "date": {
+      "from": -519,
+      "to": -514,
+      "precision": "range",
+      "approx": false,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "de 520 a 515 a.e.c."
+     },
+     "sources": [
+      "esdras-5",
+      "esdras-6",
+      "it-ageo"
+     ],
+     "reason": "Esd 5:1 y 6:14 lo llaman profeta. Perspicacia «Ageo»: profetizó en 520 a.e.c. y animó a la obra hasta el sexto año de Darío (515).",
+     "inferred": false,
+     "checked_on": "2026-10-13",
+     "status": "verified"
+    },
+    {
+     "type": "accompanies",
+     "person": "zacarias-profeta",
+     "date": {
+      "from": -519,
+      "to": -514,
+      "precision": "range",
+      "approx": false,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "de 520 a 515 a.e.c."
+     },
+     "sources": [
+      "esdras-6"
+     ],
+     "reason": "Esd 5:1 y Perspicacia «Ageo»: Zacarías se unió a él unos dos meses después.",
+     "inferred": false,
+     "checked_on": "2026-10-13",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "zacarias-profeta",
+   "campo": "sources",
+   "valores": [
+    "esdras-5",
+    "esdras-6",
+    "it-ido"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "zacarias-profeta",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "ido-padre-de-berekias",
+     "word": "grandfather",
+     "sources": [
+      "esdras-5",
+      "esdras-6",
+      "it-ido"
+     ],
+     "reason": "Esd 5:1 y 6:14 lo llaman nieto de Idó; Perspicacia «Idó», núm. 4, lo da como padre de Berekías y abuelo del profeta.",
+     "inferred": false,
+     "checked_on": "2026-10-13",
+     "status": "verified"
+    },
+    {
+     "type": "holds_office",
+     "office": "prophet",
+     "date": {
+      "from": -519,
+      "to": -517,
+      "precision": "range",
+      "approx": false,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "520-518 a.e.c."
+     },
+     "sources": [
+      "esdras-5",
+      "esdras-6"
+     ],
+     "reason": "Zac 1:1, 7 lo llaman profeta. Perspicacia «Zacarías», núm. 20, da a sus mensajes dos años y un mes, del año segundo al cuarto de Darío.",
+     "inferred": false,
+     "checked_on": "2026-10-13",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "ido-padre-de-berekias",
+   "campo": "sources",
+   "valores": [
+    "esdras-5",
+    "esdras-6"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "zorobabel",
+   "campo": "sources",
+   "valores": [
+    "esdras-5"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "zorobabel",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "sealtiel",
+     "word": "father",
+     "sources": [
+      "esdras-5"
+     ],
+     "reason": "Mt 1:12. La nota y Perspicacia «Sealtiel» explican que quizá era su padre legal y Pedaya, el natural.",
+     "inferred": false,
+     "checked_on": "2026-10-13",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "josue-sumo-sacerdote",
+   "campo": "sources",
+   "valores": [
+    "esdras-5"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "josue-sumo-sacerdote",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "jehozadac",
+     "word": "father",
+     "sources": [
+      "esdras-5"
+     ],
+     "reason": "Ag 1:1, 12, 14 lo llaman hijo de Jehozadac.",
+     "inferred": false,
+     "checked_on": "2026-10-13",
+     "status": "verified"
+    },
+    {
+     "type": "accompanies",
+     "person": "zorobabel",
+     "date": {
+      "from": -536,
+      "to": -514,
+      "precision": "range",
+      "approx": false,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "de 537 a 515 a.e.c."
+     },
+     "sources": [
+      "esdras-5"
+     ],
+     "reason": "Esd 3:2, 8 y 5:2 los nombran juntos al frente del altar y de la obra del templo, que se acaba en 515 (estudio 3, tabla). Perspicacia «Jesúa» y «Zorobabel».",
+     "inferred": false,
+     "checked_on": "2026-10-13",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "dario-i",
+   "campo": "sources",
+   "valores": [
+    "esdras-5"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "ciro",
+   "campo": "sources",
+   "valores": [
+    "esdras-5",
+    "esdras-6"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "sesbazar",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "holds_office",
+     "office": "governor",
+     "date": {
+      "from": -536,
+      "to": -536,
+      "precision": "year",
+      "approx": false,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "537 a.e.c."
+     },
+     "sources": [
+      "esdras-5",
+      "it-sesbazar",
+      "it-zorobabel"
+     ],
+     "reason": "Esd 5:14: Ciro lo nombró gobernador al darle los utensilios. Perspicacia «Zorobabel» pone ese nombramiento en el regreso de 537 a.e.c.",
+     "inferred": false,
+     "checked_on": "2026-10-13",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "periods",
+   "id": "dario-i",
+   "campo": "sources",
+   "valores": [
+    "esdras-6"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "events",
+   "id": "decreto-de-ciro-hallado-en-ecbatana",
+   "campo": "passages",
+   "antes": [
+    "Esd 5:3-17",
+    "Esd 6:1-12"
+   ],
+   "despues": [
+    "Esd 6:1-5"
+   ],
+   "historial": {
+    "date": "2026-10-13",
+    "change": "Esd 5:3-17 pasa a tatenai-pide-cuentas-de-la-obra-del-templo, la visita a Jerusalén y el informe, y Esd 6:6-13 a dario-manda-apoyar-la-obra-del-templo: son escenas con otro lugar y otros protagonistas.",
+    "source": "esdras-6"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "events",
+   "id": "decreto-de-ciro-hallado-en-ecbatana",
+   "campo": "summary",
+   "antes": "Tatenai, gobernador al oeste del Éufrates, preguntó al rey si la obra era legal. En los archivos de Ecbátana apareció el memorándum de Ciro, y Darío ordenó apoyar la obra con fondos reales.",
+   "despues": "Por orden de Darío se buscó en los archivos reales, y en la fortaleza de Ecbátana, en Media, apareció el memorándum del primer año de Ciro: el templo, sus medidas, sus gastos y la vuelta de los utensilios.",
+   "historial": {
+    "date": "2026-10-13",
+    "change": "El resumen se ciñe al hallazgo (Esd 6:1-5); la consulta de Tatenái y la orden de Darío tienen ahora sus propios sucesos.",
+    "source": "esdras-6"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "events",
+   "id": "decreto-de-ciro-hallado-en-ecbatana",
+   "campo": "people",
+   "antes": [],
+   "despues": [
+    "dario-i"
+   ],
+   "historial": {
+    "date": "2026-10-13",
+    "change": "Esd 6:1 dice que la búsqueda se hizo por orden del rey Darío: va en people, sin situarlo en Ecbátana.",
+    "source": "esdras-6"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "events",
+   "id": "decreto-de-ciro-hallado-en-ecbatana",
+   "campo": "present",
+   "antes": null,
+   "despues": []
+  },
+  {
+   "op": "cambiar",
+   "tipo": "events",
+   "id": "decreto-de-ciro-hallado-en-ecbatana",
+   "campo": "narrative_order",
+   "antes": null,
+   "despues": {
+    "series": "esdras",
+    "order": 6001
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "events",
+   "id": "decreto-de-ciro",
+   "campo": "passages",
+   "valores": [
+    "Esd 6:3-5"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "events",
+   "id": "decreto-de-ciro",
+   "campo": "sources",
+   "valores": [
+    "esdras-6"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "events",
+   "id": "templo-terminado-515",
+   "campo": "passages",
+   "antes": [
+    "Esd 6:13-22",
+    "Zac 4:9, 10"
+   ],
+   "despues": [
+    "Esd 6:14, 15",
+    "Zac 4:9, 10"
+   ],
+   "historial": {
+    "date": "2026-10-13",
+    "change": "Esd 6:13 pasa a dario-manda-apoyar-la-obra-del-templo; la inauguración (Esd 6:16-18) y la Pascua (6:19-22) son escenas aparte, con sus propios sucesos.",
+    "source": "esdras-6"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "events",
+   "id": "templo-terminado-515",
+   "campo": "summary",
+   "antes": "El templo reconstruido se terminó en el sexto año de Darío I, con el apoyo de los profetas y del rey. Los judíos lo inauguraron y celebraron la Pascua; estuvo en pie casi quinientos años.",
+   "despues": "El templo reconstruido se terminó el 3 de adar del sexto año de Darío I, con el ánimo de los profetas Ageo y Zacarías y el apoyo del rey. Estuvo en pie casi quinientos años.",
+   "historial": {
+    "date": "2026-10-13",
+    "change": "La inauguración y la Pascua salen del resumen: ahora son inauguracion-del-segundo-templo y pascua-de-515.",
+    "source": "esdras-6"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "events",
+   "id": "templo-terminado-515",
+   "campo": "narrative_order",
+   "antes": null,
+   "despues": {
+    "series": "esdras",
+    "order": 6014
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "dario-i",
+   "campo": "sources",
+   "valores": [
+    "esdras-6"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "abednego",
+   "campo": "distinct_from",
+   "valores": [
+    "azarias-hijo-de-merayot"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "azarias-hijo-de-ahimaaz",
+   "campo": "distinct_from",
+   "valores": [
+    "azarias-hijo-de-merayot"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "azarias-hijo-de-etan",
+   "campo": "distinct_from",
+   "valores": [
+    "azarias-hijo-de-merayot"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "azarias-hijo-de-hilquias",
+   "campo": "distinct_from",
+   "valores": [
+    "azarias-hijo-de-merayot"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "azarias-hijo-de-jehohanan",
+   "campo": "distinct_from",
+   "valores": [
+    "azarias-hijo-de-merayot"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "azarias-hijo-de-jehu",
+   "campo": "distinct_from",
+   "valores": [
+    "azarias-hijo-de-merayot"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "azarias-hijo-de-natan",
+   "campo": "distinct_from",
+   "valores": [
+    "azarias-hijo-de-merayot"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "azarias-hijo-de-sadoc",
+   "campo": "distinct_from",
+   "valores": [
+    "azarias-hijo-de-merayot"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "azarias-hijo-de-sofonias",
+   "campo": "distinct_from",
+   "valores": [
+    "azarias-hijo-de-merayot"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "azarias-sacerdote-repatriado",
+   "campo": "distinct_from",
+   "valores": [
+    "azarias-hijo-de-merayot"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jaazanias-jefe-militar",
+   "campo": "distinct_from",
+   "valores": [
+    "azarias-hijo-de-merayot"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "ocozias-de-juda",
+   "campo": "distinct_from",
+   "valores": [
+    "azarias-hijo-de-merayot"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "uzias",
+   "campo": "distinct_from",
+   "valores": [
+    "azarias-hijo-de-merayot"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "people",
+   "id": "esdras",
+   "campo": "perspicacia",
+   "antes": null,
+   "despues": "1200001475#1"
+  },
+  {
+   "op": "cambiar",
+   "tipo": "people",
+   "id": "artajerjes-i",
+   "campo": "perspicacia",
+   "antes": null,
+   "despues": "1200000389#2"
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "artajerjes-i",
+   "campo": "sources",
+   "valores": [
+    "esdras-7",
+    "esdras-8"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "babilonia",
+   "campo": "sources",
+   "valores": [
+    "esdras-7"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "jerusalen",
+   "campo": "sources",
+   "valores": [
+    "esdras-7",
+    "esdras-8"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "esdras",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "seraya-hijo-de-azarias",
+     "word": "ancestor",
+     "inferred": true,
+     "reason": "Esd 7:1 lo llama hijo de Seraya; Perspicacia «Seraya», núm. 6, ve al menos dos generaciones sin nombrar entre ellos.",
+     "status": "verified",
+     "sources": [
+      "esdras-7"
+     ],
+     "checked_on": "2026-10-13"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "seraya-hijo-de-azarias",
+   "campo": "sources",
+   "valores": [
+    "esdras-7"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "seraya-hijo-de-azarias",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "azarias-hijo-de-hilquias",
+     "word": "father",
+     "inferred": false,
+     "reason": "1Cr 6:14 lo da como hijo de Azarías.",
+     "status": "verified",
+     "sources": [
+      "esdras-7"
+     ],
+     "checked_on": "2026-10-13"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "azarias-hijo-de-hilquias",
+   "campo": "sources",
+   "valores": [
+    "esdras-7"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "azarias-hijo-de-hilquias",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "hilquias-hijo-de-salum",
+     "word": "father",
+     "inferred": false,
+     "reason": "1Cr 6:13 lo da como hijo de Hilquías.",
+     "status": "verified",
+     "sources": [
+      "esdras-7"
+     ],
+     "checked_on": "2026-10-13"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "hilquias-hijo-de-salum",
+   "campo": "sources",
+   "valores": [
+    "esdras-7"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "hilquias-hijo-de-salum",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "salum-hijo-de-sadoc",
+     "word": "father",
+     "inferred": false,
+     "reason": "1Cr 6:13 lo da como hijo de Salum.",
+     "status": "verified",
+     "sources": [
+      "esdras-7"
+     ],
+     "checked_on": "2026-10-13"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "salum-hijo-de-sadoc",
+   "campo": "sources",
+   "valores": [
+    "esdras-7"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "salum-hijo-de-sadoc",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "sadoc-hijo-de-merayot",
+     "word": "father",
+     "inferred": false,
+     "reason": "1Cr 6:12 lo da como hijo de Sadoc.",
+     "status": "verified",
+     "sources": [
+      "esdras-7"
+     ],
+     "checked_on": "2026-10-13"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "sadoc-hijo-de-merayot",
+   "campo": "sources",
+   "valores": [
+    "esdras-7"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "sadoc-hijo-de-merayot",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "ahitub-padre-de-merayot",
+     "word": "grandfather",
+     "inferred": true,
+     "reason": "1Cr 6:12 lo da como hijo de Ahitub; Perspicacia «Ahitub», núm. 3, deduce de 1Cr 9:11 que entre ellos estaba Merayot.",
+     "status": "verified",
+     "sources": [
+      "esdras-7"
+     ],
+     "checked_on": "2026-10-13"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "ahitub-padre-de-merayot",
+   "campo": "sources",
+   "valores": [
+    "esdras-7"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "ahitub-padre-de-merayot",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "amarias-hijo-de-azarias",
+     "word": "father",
+     "inferred": false,
+     "reason": "1Cr 6:11 lo da como hijo de Amarías.",
+     "status": "verified",
+     "sources": [
+      "esdras-7"
+     ],
+     "checked_on": "2026-10-13"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "merayot-hijo-de-zerahias",
+   "campo": "sources",
+   "valores": [
+    "esdras-7"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "merayot-hijo-de-zerahias",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "zerahias-hijo-de-uzi",
+     "word": "father",
+     "inferred": false,
+     "reason": "1Cr 6:6 lo da como hijo de Zerahías.",
+     "status": "verified",
+     "sources": [
+      "esdras-7"
+     ],
+     "checked_on": "2026-10-13"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "zerahias-hijo-de-uzi",
+   "campo": "sources",
+   "valores": [
+    "esdras-7"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "zerahias-hijo-de-uzi",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "uzi-hijo-de-buqui",
+     "word": "father",
+     "inferred": false,
+     "reason": "1Cr 6:6 lo da como hijo de Uzí.",
+     "status": "verified",
+     "sources": [
+      "esdras-7"
+     ],
+     "checked_on": "2026-10-13"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "uzi-hijo-de-buqui",
+   "campo": "sources",
+   "valores": [
+    "esdras-7"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "uzi-hijo-de-buqui",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "buqui-hijo-de-abisua",
+     "word": "father",
+     "inferred": false,
+     "reason": "1Cr 6:5 lo da como hijo de Buquí.",
+     "status": "verified",
+     "sources": [
+      "esdras-7"
+     ],
+     "checked_on": "2026-10-13"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "buqui-hijo-de-abisua",
+   "campo": "sources",
+   "valores": [
+    "esdras-7"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "buqui-hijo-de-abisua",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "abisua-hijo-de-finehas",
+     "word": "father",
+     "inferred": false,
+     "reason": "1Cr 6:5 lo da como hijo de Abisúa.",
+     "status": "verified",
+     "sources": [
+      "esdras-7"
+     ],
+     "checked_on": "2026-10-13"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "abisua-hijo-de-finehas",
+   "campo": "sources",
+   "valores": [
+    "esdras-7"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "abisua-hijo-de-finehas",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "finehas-hijo-de-eleazar",
+     "word": "father",
+     "inferred": false,
+     "reason": "1Cr 6:4 lo da como hijo de Finehás.",
+     "status": "verified",
+     "sources": [
+      "esdras-7"
+     ],
+     "checked_on": "2026-10-13"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "finehas-hijo-de-eleazar",
+   "campo": "sources",
+   "valores": [
+    "esdras-7"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "finehas-hijo-de-eleazar",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "eleazar-hijo-de-aaron",
+     "word": "father",
+     "inferred": false,
+     "reason": "Éx 6:25: hijo de Eleazar.",
+     "status": "verified",
+     "sources": [
+      "esdras-7"
+     ],
+     "checked_on": "2026-10-13"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "eleazar-hijo-de-aaron",
+   "campo": "sources",
+   "valores": [
+    "esdras-7"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "eleazar-hijo-de-aaron",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "aaron",
+     "word": "father",
+     "inferred": false,
+     "reason": "Éx 6:23: hijo de Aarón y Eliseba.",
+     "status": "verified",
+     "sources": [
+      "esdras-7"
+     ],
+     "checked_on": "2026-10-13"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "amarias-hijo-de-azarias",
+   "campo": "sources",
+   "valores": [
+    "esdras-7"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "azarias-hijo-de-johanan",
+   "campo": "sources",
+   "valores": [
+    "esdras-7",
+    "it-amarias"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "azarias-hijo-de-johanan",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "same_as",
+     "person": "azarias-hijo-de-merayot",
+     "certainty": "possible",
+     "inferred": true,
+     "sources": [
+      "esdras-7",
+      "it-amarias",
+      "it-azarias"
+     ],
+     "reason": "La referencia marginal del Azarías de Esd 7:3 lleva al pasaje que Perspicacia «Azarías», núm. 14, atribuye a este, y «Amarías», núm. 4, une su Amarías con el de Esd 7:3.",
+     "checked_on": "2026-10-14",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "people",
+   "id": "azarias-hijo-de-johanan",
+   "campo": "disambiguation",
+   "antes": "Azarías hijo de Johanán (1Cr 6:9, 10); no es ninguno de los otros Azarías que numera Perspicacia «Azarías».",
+   "despues": "Azarías hijo de Johanán (1Cr 6:9, 10), núm. 14 de Perspicacia; quizá el mismo que el Azarías de Esd 7:3 (núm. 18), y no ninguno de los demás Azarías que numera.",
+   "historial": {
+    "date": "2026-10-14",
+    "change": "Deja de excluir al Azarías de Esd 7:3: la referencia de ese versículo lleva a 2Cr 31:10 y Perspicacia «Amarías», núm. 4, une los dos pasajes.",
+    "source": "esdras-7"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "amarias-hijo-de-azarias",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "azarias-hijo-de-johanan",
+     "word": "father",
+     "inferred": false,
+     "sources": [
+      "esdras-7",
+      "it-amarias"
+     ],
+     "reason": "Esd 7:3 lo llama hijo de Azarías, y Perspicacia «Amarías», núm. 4, cita ese versículo para este Amarías.",
+     "checked_on": "2026-10-14",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "merayot-hijo-de-zerahias",
+   "campo": "sources",
+   "valores": [
+    "esdras-7"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "abdias-el-gadita",
+   "campo": "distinct_from",
+   "valores": [
+    "abdias-hijo-de-jehiel"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "abdias-hijo-de-arnan",
+   "campo": "distinct_from",
+   "valores": [
+    "abdias-hijo-de-jehiel"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "abdias-hijo-de-azel",
+   "campo": "distinct_from",
+   "valores": [
+    "abdias-hijo-de-jehiel"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "abdias-hijo-de-izrahias",
+   "campo": "distinct_from",
+   "valores": [
+    "abdias-hijo-de-jehiel"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "abdias-hijo-de-semaya",
+   "campo": "distinct_from",
+   "valores": [
+    "abdias-hijo-de-jehiel"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "abdias-mayordomo-de-acab",
+   "campo": "distinct_from",
+   "valores": [
+    "abdias-hijo-de-jehiel"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "abdias-padre-de-ismaya",
+   "campo": "distinct_from",
+   "valores": [
+    "abdias-hijo-de-jehiel"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "abdias-profeta",
+   "campo": "distinct_from",
+   "valores": [
+    "abdias-hijo-de-jehiel"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "ariel-de-moab",
+   "campo": "distinct_from",
+   "valores": [
+    "ariel-enviado-a-casifia"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "atalia",
+   "campo": "distinct_from",
+   "valores": [
+    "atalia-padre-de-jesaya"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "atalia-de-benjamin",
+   "campo": "distinct_from",
+   "valores": [
+    "atalia-padre-de-jesaya"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "daniel",
+   "campo": "distinct_from",
+   "valores": [
+    "daniel-descendiente-de-itamar"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "ebed-padre-de-gaal",
+   "campo": "distinct_from",
+   "valores": [
+    "ebed-hijo-de-jonatan"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "elam-hijo-de-meselemias",
+   "campo": "distinct_from",
+   "valores": [
+    "elam-cabeza-de-familia"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "elam-hijo-de-sasac",
+   "campo": "distinct_from",
+   "valores": [
+    "elam-cabeza-de-familia"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "elam-hijo-de-sem",
+   "campo": "distinct_from",
+   "valores": [
+    "elam-cabeza-de-familia"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "eleazar-hijo-de-aaron",
+   "campo": "distinct_from",
+   "valores": [
+    "eleazar-hijo-de-finehas"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "eleazar-hijo-de-abinadab",
+   "campo": "distinct_from",
+   "valores": [
+    "eleazar-hijo-de-finehas"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "eleazar-hijo-de-dodo",
+   "campo": "distinct_from",
+   "valores": [
+    "eleazar-hijo-de-finehas"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "eleazar-hijo-de-eliud",
+   "campo": "distinct_from",
+   "valores": [
+    "eleazar-hijo-de-finehas"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "eleazar-hijo-de-mahli",
+   "campo": "distinct_from",
+   "valores": [
+    "eleazar-hijo-de-finehas"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "elieho-enai-hijo-de-meselemias",
+   "campo": "distinct_from",
+   "valores": [
+    "elieho-enai-hijo-de-zerahias"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "eliezer-de-damasco",
+   "campo": "distinct_from",
+   "valores": [
+    "eliezer-enviado-a-casifia"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "eliezer-hijo-de-beker",
+   "campo": "distinct_from",
+   "valores": [
+    "eliezer-enviado-a-casifia"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "eliezer-hijo-de-jorim",
+   "campo": "distinct_from",
+   "valores": [
+    "eliezer-enviado-a-casifia"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "eliezer-hijo-de-moises",
+   "campo": "distinct_from",
+   "valores": [
+    "eliezer-enviado-a-casifia"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "eliezer-hijo-de-zicri",
+   "campo": "distinct_from",
+   "valores": [
+    "eliezer-enviado-a-casifia"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "eliezer-trompetista",
+   "campo": "distinct_from",
+   "valores": [
+    "eliezer-enviado-a-casifia"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "elifelet-hijo-de-ahasbai",
+   "campo": "distinct_from",
+   "valores": [
+    "elifelet-descendiente-de-adonicam"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "elifelet-hijo-de-david",
+   "campo": "distinct_from",
+   "valores": [
+    "elifelet-descendiente-de-adonicam"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "elifelet-hijo-de-eshec",
+   "campo": "distinct_from",
+   "valores": [
+    "elifelet-descendiente-de-adonicam"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "elnatan-hijo-de-acbor",
+   "campo": "distinct_from",
+   "valores": [
+    "elnatan-maestro",
+    "elnatan-primer-jefe",
+    "elnatan-segundo-jefe"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "elnatan-padre-de-nehusta",
+   "campo": "distinct_from",
+   "valores": [
+    "elnatan-maestro",
+    "elnatan-primer-jefe",
+    "elnatan-segundo-jefe"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "people",
+   "id": "elnatan-padre-de-nehusta",
+   "campo": "disambiguation",
+   "antes": "El padre de Nehustá; no ninguno de los tres Elnatán de Esd 8:16.",
+   "despues": "El padre de Nehustá, en tiempos de los reyes; no ninguno de los tres Elnatán que Esdras envió a Casifía.",
+   "historial": {
+    "date": "2026-10-14",
+    "change": "La desambiguación deja de citar un versículo de Esdras 8, donde este Elnatán no sale; Perspicacia «Elnatán» separa al núm. 1 de los tres de Esdras.",
+    "source": "it-elnatan"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "elpelet",
+   "campo": "distinct_from",
+   "valores": [
+    "elifelet-descendiente-de-adonicam"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "finehas-hijo-de-eleazar",
+   "campo": "distinct_from",
+   "valores": [
+    "finehas-levita"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "finehas-hijo-de-eli",
+   "campo": "distinct_from",
+   "valores": [
+    "finehas-levita"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "guersom-hijo-de-moises",
+   "campo": "distinct_from",
+   "valores": [
+    "guersom-descendiente-de-finehas"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "guerson",
+   "campo": "distinct_from",
+   "valores": [
+    "guersom-descendiente-de-finehas"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "hasabias-hebronita",
+   "campo": "distinct_from",
+   "valores": [
+    "hasabias-jefe-de-los-sacerdotes",
+    "hasabias-merarita"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "hasabias-hijo-de-amasias",
+   "campo": "distinct_from",
+   "valores": [
+    "hasabias-jefe-de-los-sacerdotes",
+    "hasabias-merarita"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "hasabias-hijo-de-jedutun",
+   "campo": "distinct_from",
+   "valores": [
+    "hasabias-jefe-de-los-sacerdotes",
+    "hasabias-merarita"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "hasabias-hijo-de-quemuel",
+   "campo": "distinct_from",
+   "valores": [
+    "hasabias-jefe-de-los-sacerdotes",
+    "hasabias-merarita"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "hasabias-padre-de-azricam",
+   "campo": "distinct_from",
+   "valores": [
+    "hasabias-jefe-de-los-sacerdotes",
+    "hasabias-merarita"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "ido-hijo-de-joa",
+   "campo": "distinct_from",
+   "valores": [
+    "ido-de-casifia"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "ido-hijo-de-zacarias",
+   "campo": "distinct_from",
+   "valores": [
+    "ido-de-casifia"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "ido-padre-de-ahinadab",
+   "campo": "distinct_from",
+   "valores": [
+    "ido-de-casifia"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "ido-padre-de-berekias",
+   "campo": "distinct_from",
+   "valores": [
+    "ido-de-casifia"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jaaziel",
+   "campo": "distinct_from",
+   "valores": [
+    "jeiel-descendiente-de-adonicam"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jahaziel-guerrero-de-david",
+   "campo": "distinct_from",
+   "valores": [
+    "jahaziel-padre-de-secanias"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jahaziel-hijo-de-hebron",
+   "campo": "distinct_from",
+   "valores": [
+    "jahaziel-padre-de-secanias"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jahaziel-trompetista",
+   "campo": "distinct_from",
+   "valores": [
+    "jahaziel-padre-de-secanias"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jakin-hijo-de-simeon",
+   "campo": "distinct_from",
+   "valores": [
+    "jarib-enviado-a-casifia"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jehiel-descendiente-de-ladan",
+   "campo": "distinct_from",
+   "valores": [
+    "jehiel-padre-de-abdias"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jehiel-hijo-de-hacmoni",
+   "campo": "distinct_from",
+   "valores": [
+    "jehiel-padre-de-abdias"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jehiel-musico",
+   "campo": "distinct_from",
+   "valores": [
+    "jehiel-padre-de-abdias"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jeiel-de-gabaon",
+   "campo": "distinct_from",
+   "valores": [
+    "jeiel-descendiente-de-adonicam"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jeiel-el-rubenita",
+   "campo": "distinct_from",
+   "valores": [
+    "jeiel-descendiente-de-adonicam"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jeiel-hijo-de-hotam",
+   "campo": "distinct_from",
+   "valores": [
+    "jeiel-descendiente-de-adonicam"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jeiel-portero",
+   "campo": "distinct_from",
+   "valores": [
+    "jeiel-descendiente-de-adonicam"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jesaya-descendiente-de-eliezer",
+   "campo": "distinct_from",
+   "valores": [
+    "jesaya-hijo-de-atalia",
+    "jesaya-merarita"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jesaya-hijo-de-hananias",
+   "campo": "distinct_from",
+   "valores": [
+    "jesaya-hijo-de-atalia",
+    "jesaya-merarita"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jesaya-hijo-de-jedutun",
+   "campo": "distinct_from",
+   "valores": [
+    "jesaya-hijo-de-atalia",
+    "jesaya-merarita"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jesua-de-tiempos-de-david",
+   "campo": "distinct_from",
+   "valores": [
+    "jesua-cabeza-de-casa-levita"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "joab-hijo-de-seraya",
+   "campo": "distinct_from",
+   "valores": [
+    "joab-antepasado-de-abdias"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "joab-hijo-de-zeruya",
+   "campo": "distinct_from",
+   "valores": [
+    "joab-antepasado-de-abdias"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "johanan-el-benjaminita",
+   "campo": "distinct_from",
+   "valores": [
+    "johanan-hijo-de-hacatan"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "johanan-el-gadita",
+   "campo": "distinct_from",
+   "valores": [
+    "johanan-hijo-de-hacatan"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "johanan-hijo-de-azarias",
+   "campo": "distinct_from",
+   "valores": [
+    "johanan-hijo-de-hacatan"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "johanan-hijo-de-carea",
+   "campo": "distinct_from",
+   "valores": [
+    "johanan-hijo-de-hacatan"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "johanan-hijo-de-elioenai",
+   "campo": "distinct_from",
+   "valores": [
+    "johanan-hijo-de-hacatan"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "johanan-hijo-de-josias",
+   "campo": "distinct_from",
+   "valores": [
+    "johanan-hijo-de-hacatan"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jonatan-hijo-de-abiatar",
+   "campo": "distinct_from",
+   "valores": [
+    "jonatan-padre-de-ebed"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jonatan-hijo-de-carea",
+   "campo": "distinct_from",
+   "valores": [
+    "jonatan-padre-de-ebed"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jonatan-hijo-de-jada",
+   "campo": "distinct_from",
+   "valores": [
+    "jonatan-padre-de-ebed"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jonatan-hijo-de-sague",
+   "campo": "distinct_from",
+   "valores": [
+    "jonatan-padre-de-ebed"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jonatan-hijo-de-sama",
+   "campo": "distinct_from",
+   "valores": [
+    "jonatan-padre-de-ebed"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jonatan-hijo-de-saul",
+   "campo": "distinct_from",
+   "valores": [
+    "jonatan-padre-de-ebed"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jonatan-hijo-de-uzias",
+   "campo": "distinct_from",
+   "valores": [
+    "jonatan-padre-de-ebed"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jonatan-levita",
+   "campo": "distinct_from",
+   "valores": [
+    "jonatan-padre-de-ebed"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jonatan-sobrino-de-david",
+   "campo": "distinct_from",
+   "valores": [
+    "jonatan-padre-de-ebed"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "josue-sumo-sacerdote",
+   "campo": "distinct_from",
+   "valores": [
+    "jesua-cabeza-de-casa-levita"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jozabad-de-manases-1",
+   "campo": "distinct_from",
+   "valores": [
+    "jozabad-hijo-de-jesua"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jozabad-de-manases-2",
+   "campo": "distinct_from",
+   "valores": [
+    "jozabad-hijo-de-jesua"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jozabad-el-guederatita",
+   "campo": "distinct_from",
+   "valores": [
+    "jozabad-hijo-de-jesua"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "kileab",
+   "campo": "distinct_from",
+   "valores": [
+    "daniel-descendiente-de-itamar"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "mesulam-abuelo-de-safan",
+   "campo": "distinct_from",
+   "valores": [
+    "mesulam-enviado-a-casifia"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "mesulam-hijo-de-abihail",
+   "campo": "distinct_from",
+   "valores": [
+    "mesulam-enviado-a-casifia"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "mesulam-hijo-de-elpaal",
+   "campo": "distinct_from",
+   "valores": [
+    "mesulam-enviado-a-casifia"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "mesulam-hijo-de-hodavias",
+   "campo": "distinct_from",
+   "valores": [
+    "mesulam-enviado-a-casifia"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "mesulam-hijo-de-mesilemit",
+   "campo": "distinct_from",
+   "valores": [
+    "mesulam-enviado-a-casifia"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "mesulam-hijo-de-sefatias",
+   "campo": "distinct_from",
+   "valores": [
+    "mesulam-enviado-a-casifia"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "mesulam-hijo-de-zorobabel",
+   "campo": "distinct_from",
+   "valores": [
+    "mesulam-enviado-a-casifia"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "miguel-de-manases",
+   "campo": "distinct_from",
+   "valores": [
+    "miguel-padre-de-zebadias"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "miguel-descendiente-de-berias",
+   "campo": "distinct_from",
+   "valores": [
+    "miguel-padre-de-zebadias"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "miguel-hijo-de-abihail",
+   "campo": "distinct_from",
+   "valores": [
+    "miguel-padre-de-zebadias"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "miguel-hijo-de-baaseya",
+   "campo": "distinct_from",
+   "valores": [
+    "miguel-padre-de-zebadias"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "miguel-hijo-de-izrahias",
+   "campo": "distinct_from",
+   "valores": [
+    "miguel-padre-de-zebadias"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "miguel-hijo-de-jesisai",
+   "campo": "distinct_from",
+   "valores": [
+    "miguel-padre-de-zebadias"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "miguel-padre-de-omri",
+   "campo": "distinct_from",
+   "valores": [
+    "miguel-padre-de-zebadias"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "miguel-padre-de-setur",
+   "campo": "distinct_from",
+   "valores": [
+    "miguel-padre-de-zebadias"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "natan-de-zoba",
+   "campo": "distinct_from",
+   "valores": [
+    "natan-enviado-a-casifia"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "natan-hijo-de-atai",
+   "campo": "distinct_from",
+   "valores": [
+    "natan-enviado-a-casifia"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "natan-hijo-de-david",
+   "campo": "distinct_from",
+   "valores": [
+    "natan-enviado-a-casifia"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "natan-padre-de-zabud",
+   "campo": "distinct_from",
+   "valores": [
+    "natan-enviado-a-casifia"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "natan-profeta",
+   "campo": "distinct_from",
+   "valores": [
+    "natan-enviado-a-casifia"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "salum-hijo-de-sadoc",
+   "campo": "distinct_from",
+   "valores": [
+    "mesulam-enviado-a-casifia"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "secanias-de-tiempos-de-david",
+   "campo": "distinct_from",
+   "valores": [
+    "secanias-descendiente-de-paros",
+    "secanias-hijo-de-jahaziel"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "secanias-hijo-de-abdias",
+   "campo": "distinct_from",
+   "valores": [
+    "secanias-descendiente-de-paros",
+    "secanias-hijo-de-jahaziel"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "sefatias-el-harifita",
+   "campo": "distinct_from",
+   "valores": [
+    "sefatias-cabeza-de-familia"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "sefatias-hijo-de-david",
+   "campo": "distinct_from",
+   "valores": [
+    "sefatias-cabeza-de-familia"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "sefatias-hijo-de-maaca",
+   "campo": "distinct_from",
+   "valores": [
+    "sefatias-cabeza-de-familia"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "sefatias-hijo-de-matan",
+   "campo": "distinct_from",
+   "valores": [
+    "sefatias-cabeza-de-familia"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "sefatias-hijo-de-reuel",
+   "campo": "distinct_from",
+   "valores": [
+    "sefatias-cabeza-de-familia"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "selomit-descendiente-de-izhar",
+   "campo": "distinct_from",
+   "valores": [
+    "selomit-hijo-de-josifias"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "selomit-hija-de-dibri",
+   "campo": "distinct_from",
+   "valores": [
+    "selomit-hijo-de-josifias"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "selomit-hija-de-zorobabel",
+   "campo": "distinct_from",
+   "valores": [
+    "selomit-hijo-de-josifias"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "selomot-descendiente-de-eliezer",
+   "campo": "distinct_from",
+   "valores": [
+    "selomit-hijo-de-josifias"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "semaya-de-nehelam",
+   "campo": "distinct_from",
+   "valores": [
+    "semaya-descendiente-de-adonicam"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "semaya-hijo-de-galal",
+   "campo": "distinct_from",
+   "valores": [
+    "semaya-descendiente-de-adonicam"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "semaya-hijo-de-hasub",
+   "campo": "distinct_from",
+   "valores": [
+    "semaya-descendiente-de-adonicam"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "semaya-hijo-de-joel",
+   "campo": "distinct_from",
+   "valores": [
+    "semaya-descendiente-de-adonicam"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "semaya-hijo-de-netanel",
+   "campo": "distinct_from",
+   "valores": [
+    "semaya-descendiente-de-adonicam"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "semaya-hijo-de-obed-edom",
+   "campo": "distinct_from",
+   "valores": [
+    "semaya-descendiente-de-adonicam"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "semaya-hijo-de-secanias",
+   "campo": "distinct_from",
+   "valores": [
+    "semaya-descendiente-de-adonicam"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "semaya-jefe-de-la-casa-de-elizafan",
+   "campo": "distinct_from",
+   "valores": [
+    "semaya-descendiente-de-adonicam"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "semaya-padre-de-delaya",
+   "campo": "distinct_from",
+   "valores": [
+    "semaya-descendiente-de-adonicam"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "semaya-padre-de-uriya",
+   "campo": "distinct_from",
+   "valores": [
+    "semaya-descendiente-de-adonicam"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "semaya-profeta",
+   "campo": "distinct_from",
+   "valores": [
+    "semaya-descendiente-de-adonicam"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "semaya-simeonita",
+   "campo": "distinct_from",
+   "valores": [
+    "semaya-descendiente-de-adonicam"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "uriya-hijo-de-semaya",
+   "campo": "distinct_from",
+   "valores": [
+    "uriya-hijo-de-hacoz"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "uriya-sacerdote-de-acaz",
+   "campo": "distinct_from",
+   "valores": [
+    "uriya-hijo-de-hacoz"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "utai-hijo-de-amihud",
+   "campo": "distinct_from",
+   "valores": [
+    "utai-descendiente-de-bigvai"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "people",
+   "id": "utai-hijo-de-amihud",
+   "campo": "disambiguation",
+   "antes": null,
+   "despues": "El judaíta hijo de Amihud (1Cr 9:4), núm. 1 de Perspicacia «Utai»; no el Utái de los hijos de Bigvái que volvió con Esdras."
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "zacarias-abuelo-de-ezequias",
+   "campo": "distinct_from",
+   "valores": [
+    "zacarias-descendiente-de-paros",
+    "zacarias-enviado-a-casifia",
+    "zacarias-hijo-de-bebai"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "zacarias-de-israel",
+   "campo": "distinct_from",
+   "valores": [
+    "zacarias-descendiente-de-paros",
+    "zacarias-enviado-a-casifia",
+    "zacarias-hijo-de-bebai"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "zacarias-descendiente-de-isias",
+   "campo": "distinct_from",
+   "valores": [
+    "zacarias-descendiente-de-paros",
+    "zacarias-enviado-a-casifia",
+    "zacarias-hijo-de-bebai"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "zacarias-el-rubenita",
+   "campo": "distinct_from",
+   "valores": [
+    "zacarias-descendiente-de-paros",
+    "zacarias-enviado-a-casifia",
+    "zacarias-hijo-de-bebai"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "zacarias-hijo-de-hosa",
+   "campo": "distinct_from",
+   "valores": [
+    "zacarias-descendiente-de-paros",
+    "zacarias-enviado-a-casifia",
+    "zacarias-hijo-de-bebai"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "zacarias-hijo-de-jeberekias",
+   "campo": "distinct_from",
+   "valores": [
+    "zacarias-descendiente-de-paros",
+    "zacarias-enviado-a-casifia",
+    "zacarias-hijo-de-bebai"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "zacarias-hijo-de-jehoiada",
+   "campo": "distinct_from",
+   "valores": [
+    "zacarias-descendiente-de-paros",
+    "zacarias-enviado-a-casifia",
+    "zacarias-hijo-de-bebai"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "zacarias-hijo-de-meselemias",
+   "campo": "distinct_from",
+   "valores": [
+    "zacarias-descendiente-de-paros",
+    "zacarias-enviado-a-casifia",
+    "zacarias-hijo-de-bebai"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "zacarias-musico",
+   "campo": "distinct_from",
+   "valores": [
+    "zacarias-descendiente-de-paros",
+    "zacarias-enviado-a-casifia",
+    "zacarias-hijo-de-bebai"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "zacarias-padre-de-ido",
+   "campo": "distinct_from",
+   "valores": [
+    "zacarias-descendiente-de-paros",
+    "zacarias-enviado-a-casifia",
+    "zacarias-hijo-de-bebai"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "zacarias-padre-de-juan",
+   "campo": "distinct_from",
+   "valores": [
+    "zacarias-descendiente-de-paros",
+    "zacarias-enviado-a-casifia",
+    "zacarias-hijo-de-bebai"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "zacarias-profeta",
+   "campo": "distinct_from",
+   "valores": [
+    "zacarias-descendiente-de-paros",
+    "zacarias-enviado-a-casifia",
+    "zacarias-hijo-de-bebai"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "zacarias-trompetista",
+   "campo": "distinct_from",
+   "valores": [
+    "zacarias-descendiente-de-paros",
+    "zacarias-enviado-a-casifia",
+    "zacarias-hijo-de-bebai"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "zebadias-descendiente-de-berias",
+   "campo": "distinct_from",
+   "valores": [
+    "zebadias-hijo-de-miguel"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "zebadias-descendiente-de-elpaal",
+   "campo": "distinct_from",
+   "valores": [
+    "zebadias-hijo-de-miguel"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "zebadias-hijo-de-asahel",
+   "campo": "distinct_from",
+   "valores": [
+    "zebadias-hijo-de-miguel"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "zebadias-hijo-de-jeroham",
+   "campo": "distinct_from",
+   "valores": [
+    "zebadias-hijo-de-miguel"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "zebadias-hijo-de-meselemias",
+   "campo": "distinct_from",
+   "valores": [
+    "zebadias-hijo-de-miguel"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "zeker",
+   "campo": "distinct_from",
+   "valores": [
+    "zacarias-descendiente-de-paros",
+    "zacarias-enviado-a-casifia",
+    "zacarias-hijo-de-bebai"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "zerahias-hijo-de-uzi",
+   "campo": "distinct_from",
+   "valores": [
+    "zerahias-padre-de-elieho-enai"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "people",
+   "id": "zerahias-hijo-de-uzi",
+   "campo": "disambiguation",
+   "antes": null,
+   "despues": "El sacerdote hijo de Uzí, antepasado de Esdras (1Cr 6:6; Esd 7:4), núm. 1 de Perspicacia; no el padre de Elieho-Enái."
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "rio-ahava",
+   "campo": "candidates",
+   "valores": [
+    {
+     "name": "Al noroeste de Babilonia, a ocho o nueve días de camino",
+     "geometry": {
+      "type": "zone",
+      "lat": 33.75,
+      "lon": 42.98,
+      "radius_km": 80
+     },
+     "checked_on": "2026-10-13",
+     "status": "favored_level_1",
+     "sources": [
+      "it-ahava",
+      "openbible-geo"
+     ],
+     "reason": "Perspicacia «Ahavá»: río o canal al noroeste de Babilonia, a ocho o nueve jornadas de la ciudad (compárese Esd 7:9; 8:15, 31).",
+     "coord_source": "calculation",
+     "note": "Centro: 190 km al noroeste (rumbo 315°) del punto de OpenBible de Babilonia, unas ocho o nueve jornadas. Radio nuestro; abarca Hit."
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "rio-ahava",
+   "campo": "sources",
+   "valores": [
+    "openbible-geo"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "esdras",
+   "campo": "sources",
+   "valores": [
+    "esdras-8"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "events",
+   "id": "esdras-regresa-468",
+   "campo": "places",
+   "antes": [
+    "babilonia",
+    "rio-ahava",
+    "jerusalen"
+   ],
+   "despues": [
+    "jerusalen"
+   ],
+   "historial": {
+    "date": "2026-10-13",
+    "change": "Pasa a ser solo la llegada a Jerusalén: la salida de Babilonia y lo que ocurre en el Ahavá tienen sus propios sucesos, y la fecha ya era la de la llegada.",
+    "source": "esdras-8"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "events",
+   "id": "esdras-regresa-468",
+   "campo": "people",
+   "antes": [
+    "esdras"
+   ],
+   "despues": [
+    "esdras",
+    "guersom-descendiente-de-finehas",
+    "daniel-descendiente-de-itamar",
+    "hatus-descendiente-de-david",
+    "zacarias-descendiente-de-paros",
+    "elieho-enai-hijo-de-zerahias",
+    "secanias-hijo-de-jahaziel",
+    "ebed-hijo-de-jonatan",
+    "jesaya-hijo-de-atalia",
+    "zebadias-hijo-de-miguel",
+    "abdias-hijo-de-jehiel",
+    "selomit-hijo-de-josifias",
+    "zacarias-hijo-de-bebai",
+    "johanan-hijo-de-hacatan",
+    "elifelet-descendiente-de-adonicam",
+    "jeiel-descendiente-de-adonicam",
+    "semaya-descendiente-de-adonicam",
+    "utai-descendiente-de-bigvai",
+    "zabbud",
+    "eliezer-enviado-a-casifia",
+    "ariel-enviado-a-casifia",
+    "semaya-enviado-a-casifia",
+    "elnatan-primer-jefe",
+    "elnatan-segundo-jefe",
+    "jarib-enviado-a-casifia",
+    "natan-enviado-a-casifia",
+    "zacarias-enviado-a-casifia",
+    "mesulam-enviado-a-casifia",
+    "joiarib-maestro",
+    "elnatan-maestro",
+    "serebias-descendiente-de-mahli",
+    "hasabias-merarita",
+    "jesaya-merarita",
+    "hasabias-jefe-de-los-sacerdotes",
+    "serebias-jefe-de-los-sacerdotes"
+   ],
+   "historial": {
+    "date": "2026-10-13",
+    "change": "Añade a los que llegaron con Esdras según Esd 8:1-30.",
+    "source": "esdras-8"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "events",
+   "id": "esdras-regresa-468",
+   "campo": "passages",
+   "antes": [
+    "Esd 7:6-9",
+    "Esd 8:15-36"
+   ],
+   "despues": [
+    "Esd 7:8, 9",
+    "Esd 8:32"
+   ],
+   "historial": {
+    "date": "2026-10-13",
+    "change": "Los demás versículos pasan a los sucesos de la salida, del Ahavá y de la entrega en el templo; la salida del Ahavá (Esd 8:31) queda en el viaje regreso-de-esdras.",
+    "source": "esdras-8"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "events",
+   "id": "esdras-regresa-468",
+   "campo": "summary",
+   "antes": "Con una carta de Artajerjes, Esdras reunió a los viajeros junto al río Ahavá, ayunó y partió sin escolta con los donativos. Llegó a Jerusalén cuatro meses después de salir de Babilonia.",
+   "despues": "El día 1 del quinto mes del año séptimo de Artajerjes, Esdras y su grupo llegan a Jerusalén y descansan allí tres días antes de entregar en el templo lo que traen.",
+   "historial": {
+    "date": "2026-10-14",
+    "change": "El resumen cuenta solo la llegada (Esd 7:8, 9; 8:32); la salida del Ahavá el día 12 del primer mes queda en el viaje regreso-de-esdras.",
+    "source": "esdras-8"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "events",
+   "id": "esdras-regresa-468",
+   "campo": "reason",
+   "antes": "Estudio 3, tabla de sucesos (468); Perspicacia «Esdras» y «Artajerjes», núm. 2. Esd 7:9: salió el 1 de nisán y llegó el 1 del quinto mes; Esd 8:31, del Ahavá el día 12.",
+   "despues": "Estudio 3, tabla de sucesos (468); Perspicacia «Esdras», núm. 1. Esd 7:8, 9 y 8:32: llegan el día 1 del quinto mes, en el año séptimo de Artajerjes, y se quedan tres días.",
+   "historial": {
+    "date": "2026-10-13",
+    "change": "La razón sigue al nuevo alcance del suceso.",
+    "source": "esdras-8"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "events",
+   "id": "esdras-regresa-468",
+   "campo": "narrative_order",
+   "antes": null,
+   "despues": {
+    "series": "esdras",
+    "order": 8032
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "journeys",
+   "id": "regreso-de-esdras",
+   "campo": "companions",
+   "valores": [
+    "guersom-descendiente-de-finehas",
+    "daniel-descendiente-de-itamar",
+    "hatus-descendiente-de-david",
+    "zacarias-descendiente-de-paros",
+    "elieho-enai-hijo-de-zerahias",
+    "secanias-hijo-de-jahaziel",
+    "ebed-hijo-de-jonatan",
+    "jesaya-hijo-de-atalia",
+    "zebadias-hijo-de-miguel",
+    "abdias-hijo-de-jehiel",
+    "selomit-hijo-de-josifias",
+    "zacarias-hijo-de-bebai",
+    "johanan-hijo-de-hacatan",
+    "elifelet-descendiente-de-adonicam",
+    "jeiel-descendiente-de-adonicam",
+    "semaya-descendiente-de-adonicam",
+    "utai-descendiente-de-bigvai",
+    "zabbud",
+    {
+     "person": "eliezer-enviado-a-casifia",
+     "from": 2,
+     "to": 3
+    },
+    {
+     "person": "ariel-enviado-a-casifia",
+     "from": 2,
+     "to": 3
+    },
+    {
+     "person": "semaya-enviado-a-casifia",
+     "from": 2,
+     "to": 3
+    },
+    {
+     "person": "elnatan-primer-jefe",
+     "from": 2,
+     "to": 3
+    },
+    {
+     "person": "elnatan-segundo-jefe",
+     "from": 2,
+     "to": 3
+    },
+    {
+     "person": "jarib-enviado-a-casifia",
+     "from": 2,
+     "to": 3
+    },
+    {
+     "person": "natan-enviado-a-casifia",
+     "from": 2,
+     "to": 3
+    },
+    {
+     "person": "zacarias-enviado-a-casifia",
+     "from": 2,
+     "to": 3
+    },
+    {
+     "person": "mesulam-enviado-a-casifia",
+     "from": 2,
+     "to": 3
+    },
+    {
+     "person": "joiarib-maestro",
+     "from": 2,
+     "to": 3
+    },
+    {
+     "person": "elnatan-maestro",
+     "from": 2,
+     "to": 3
+    },
+    {
+     "person": "serebias-descendiente-de-mahli",
+     "from": 2,
+     "to": 3
+    },
+    {
+     "person": "hasabias-merarita",
+     "from": 2,
+     "to": 3
+    },
+    {
+     "person": "jesaya-merarita",
+     "from": 2,
+     "to": 3
+    },
+    {
+     "person": "hasabias-jefe-de-los-sacerdotes",
+     "from": 2,
+     "to": 3
+    },
+    {
+     "person": "serebias-jefe-de-los-sacerdotes",
+     "from": 2,
+     "to": 3
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "semaya-de-nehelam",
+   "campo": "distinct_from",
+   "valores": [
+    "semaya-enviado-a-casifia"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "semaya-hijo-de-hasub",
+   "campo": "distinct_from",
+   "valores": [
+    "semaya-enviado-a-casifia"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "semaya-hijo-de-secanias",
+   "campo": "distinct_from",
+   "valores": [
+    "semaya-enviado-a-casifia"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "semaya-hijo-de-galal",
+   "campo": "distinct_from",
+   "valores": [
+    "semaya-enviado-a-casifia"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "semaya-hijo-de-obed-edom",
+   "campo": "distinct_from",
+   "valores": [
+    "semaya-enviado-a-casifia"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "semaya-profeta",
+   "campo": "distinct_from",
+   "valores": [
+    "semaya-enviado-a-casifia"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "semaya-hijo-de-joel",
+   "campo": "distinct_from",
+   "valores": [
+    "semaya-enviado-a-casifia"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "semaya-jefe-de-la-casa-de-elizafan",
+   "campo": "distinct_from",
+   "valores": [
+    "semaya-enviado-a-casifia"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "semaya-padre-de-delaya",
+   "campo": "distinct_from",
+   "valores": [
+    "semaya-enviado-a-casifia"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "semaya-simeonita",
+   "campo": "distinct_from",
+   "valores": [
+    "semaya-enviado-a-casifia"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "semaya-hijo-de-netanel",
+   "campo": "distinct_from",
+   "valores": [
+    "semaya-enviado-a-casifia"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "semaya-padre-de-uriya",
+   "campo": "distinct_from",
+   "valores": [
+    "semaya-enviado-a-casifia"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "esdras",
+   "campo": "sources",
+   "valores": [
+    "esdras-9"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "esdras",
+   "campo": "sources",
+   "valores": [
+    "esdras-10"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "esdras",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "holds_office",
+     "office": "priest",
+     "sources": [
+      "esdras-10"
+     ],
+     "reason": "Esd 10:10, 16 lo llaman el sacerdote Esdras.",
+     "inferred": false,
+     "checked_on": "2026-10-13",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "people",
+   "id": "esdras",
+   "campo": "summary",
+   "antes": "Sacerdote y copista experto en la Ley. En 468 a.e.c., con permiso de Artajerjes, llevó a Jerusalén a unos 1.500 hombres con sus familias y donativos para el templo; más tarde enseñó la Ley junto a Nehemías.",
+   "despues": "Sacerdote y copista experto en la Ley. En 468 a.e.c., con permiso de Artajerjes, llevó a Jerusalén a unos 1.500 hombres con sus familias; allí hizo despedir a las esposas extranjeras. Más tarde enseñó la Ley con Nehemías.",
+   "historial": {
+    "date": "2026-10-13",
+    "change": "El resumen añade lo que cuentan Esd 9 y 10: Esdras hizo que los repatriados despidieran a las esposas extranjeras.",
+    "source": "esdras-10"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "josue-sumo-sacerdote",
+   "campo": "sources",
+   "valores": [
+    "esdras-10"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "josue-sumo-sacerdote",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "jehozadac",
+     "word": "father",
+     "sources": [
+      "esdras-10"
+     ],
+     "reason": "Esd 10:18 lo llama Jesúa hijo de Jehozadac.",
+     "inferred": false,
+     "checked_on": "2026-10-13",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "imer-de-tiempos-de-david",
+   "campo": "sources",
+   "valores": [
+    "esdras-10"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "harim-de-tiempos-de-david",
+   "campo": "sources",
+   "valores": [
+    "esdras-10"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "jerusalen",
+   "campo": "sources",
+   "valores": [
+    "esdras-10"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "abdi-hijo-de-maluc",
+   "campo": "distinct_from",
+   "valores": [
+    "abdi-descendiente-de-elam"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "adaya-hijo-de-etan",
+   "campo": "distinct_from",
+   "valores": [
+    "adaya-descendiente-de-bani",
+    "adaya-descendiente-de-binui"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "adaya-hijo-de-jeroham",
+   "campo": "distinct_from",
+   "valores": [
+    "adaya-descendiente-de-bani",
+    "adaya-descendiente-de-binui"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "adaya-hijo-de-simei",
+   "campo": "distinct_from",
+   "valores": [
+    "adaya-descendiente-de-bani",
+    "adaya-descendiente-de-binui"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "adaya-padre-de-jedida",
+   "campo": "distinct_from",
+   "valores": [
+    "adaya-descendiente-de-bani",
+    "adaya-descendiente-de-binui"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "adna-de-manases",
+   "campo": "distinct_from",
+   "valores": [
+    "adna-descendiente-de-pahat-moab"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "amarias-hebronita",
+   "campo": "distinct_from",
+   "valores": [
+    "amarias-descendiente-de-binui"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "amarias-hijo-de-azarias",
+   "campo": "distinct_from",
+   "valores": [
+    "amarias-descendiente-de-binui"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "amarias-hijo-de-ezequias",
+   "campo": "distinct_from",
+   "valores": [
+    "amarias-descendiente-de-binui"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "amarias-hijo-de-merayot",
+   "campo": "distinct_from",
+   "valores": [
+    "amarias-descendiente-de-binui"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "amram-hijo-de-cohat",
+   "campo": "distinct_from",
+   "valores": [
+    "amram-descendiente-de-bani"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "asahel-hijo-de-zeruya",
+   "campo": "distinct_from",
+   "valores": [
+    "asahel-padre-de-jonatan"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "azarel-el-coreita",
+   "campo": "distinct_from",
+   "valores": [
+    "azarel-descendiente-de-binui"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "azarel-hijo-de-jeroham",
+   "campo": "distinct_from",
+   "valores": [
+    "azarel-descendiente-de-binui"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "bani-el-gadita",
+   "campo": "distinct_from",
+   "valores": [
+    "bani-antepasado-de-doce-repatriados",
+    "bani-antepasado-de-seis-repatriados"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "bani-hijo-de-semer",
+   "campo": "distinct_from",
+   "valores": [
+    "bani-antepasado-de-doce-repatriados",
+    "bani-antepasado-de-seis-repatriados"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "benaya-el-piratonita",
+   "campo": "distinct_from",
+   "valores": [
+    "benaya-descendiente-de-bani",
+    "benaya-descendiente-de-nebo",
+    "benaya-descendiente-de-pahat-moab",
+    "benaya-descendiente-de-paros"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "benaya-hijo-de-jehoiada",
+   "campo": "distinct_from",
+   "valores": [
+    "benaya-descendiente-de-bani",
+    "benaya-descendiente-de-nebo",
+    "benaya-descendiente-de-pahat-moab",
+    "benaya-descendiente-de-paros"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "benaya-musico",
+   "campo": "distinct_from",
+   "valores": [
+    "benaya-descendiente-de-bani",
+    "benaya-descendiente-de-nebo",
+    "benaya-descendiente-de-pahat-moab",
+    "benaya-descendiente-de-paros"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "benaya-simeonita",
+   "campo": "distinct_from",
+   "valores": [
+    "benaya-descendiente-de-bani",
+    "benaya-descendiente-de-nebo",
+    "benaya-descendiente-de-pahat-moab",
+    "benaya-descendiente-de-paros"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "benaya-trompetista",
+   "campo": "distinct_from",
+   "valores": [
+    "benaya-descendiente-de-bani",
+    "benaya-descendiente-de-nebo",
+    "benaya-descendiente-de-pahat-moab",
+    "benaya-descendiente-de-paros"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "benjamin-hijo-de-bilhan",
+   "campo": "distinct_from",
+   "valores": [
+    "benjamin-descendiente-de-harim"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "benjamin-hijo-de-jacob",
+   "campo": "distinct_from",
+   "valores": [
+    "benjamin-descendiente-de-harim"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "bernabe",
+   "campo": "distinct_from",
+   "valores": [
+    "jose-descendiente-de-binui"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "bezalel-hijo-de-uri",
+   "campo": "distinct_from",
+   "valores": [
+    "bezalel-descendiente-de-pahat-moab"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "elam-hijo-de-meselemias",
+   "campo": "distinct_from",
+   "valores": [
+    "elam-cabeza-de-familia"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "elam-hijo-de-sasac",
+   "campo": "distinct_from",
+   "valores": [
+    "elam-cabeza-de-familia"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "elam-hijo-de-sem",
+   "campo": "distinct_from",
+   "valores": [
+    "elam-cabeza-de-familia"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "eleasa-hijo-de-helez",
+   "campo": "distinct_from",
+   "valores": [
+    "eleasa-descendiente-de-pasjur"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "eleasa-hijo-de-rafa",
+   "campo": "distinct_from",
+   "valores": [
+    "eleasa-descendiente-de-pasjur"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "eleazar-hijo-de-aaron",
+   "campo": "distinct_from",
+   "valores": [
+    "eleazar-descendiente-de-paros"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "eleazar-hijo-de-abinadab",
+   "campo": "distinct_from",
+   "valores": [
+    "eleazar-descendiente-de-paros"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "eleazar-hijo-de-dodo",
+   "campo": "distinct_from",
+   "valores": [
+    "eleazar-descendiente-de-paros"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "eleazar-hijo-de-eliud",
+   "campo": "distinct_from",
+   "valores": [
+    "eleazar-descendiente-de-paros"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "eleazar-hijo-de-mahli",
+   "campo": "distinct_from",
+   "valores": [
+    "eleazar-descendiente-de-paros"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "elias-hijo-de-jeroham",
+   "campo": "distinct_from",
+   "valores": [
+    "elias-descendiente-de-elam",
+    "elias-descendiente-de-harim"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "elias-profeta",
+   "campo": "distinct_from",
+   "valores": [
+    "elias-descendiente-de-elam",
+    "elias-descendiente-de-harim"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "eliasib-de-tiempos-de-david",
+   "campo": "distinct_from",
+   "valores": [
+    "eliasib-cantor",
+    "eliasib-descendiente-de-bani",
+    "eliasib-descendiente-de-zatu",
+    "eliasib-padre-de-jehohanan"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "eliasib-hijo-de-elioenai",
+   "campo": "distinct_from",
+   "valores": [
+    "eliasib-cantor",
+    "eliasib-descendiente-de-bani",
+    "eliasib-descendiente-de-zatu",
+    "eliasib-padre-de-jehohanan"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "eliezer-de-damasco",
+   "campo": "distinct_from",
+   "valores": [
+    "eliezer-de-la-casa-de-jesua",
+    "eliezer-descendiente-de-harim",
+    "eliezer-levita-de-tiempos-de-esdras"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "eliezer-hijo-de-beker",
+   "campo": "distinct_from",
+   "valores": [
+    "eliezer-de-la-casa-de-jesua",
+    "eliezer-descendiente-de-harim",
+    "eliezer-levita-de-tiempos-de-esdras"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "eliezer-hijo-de-jorim",
+   "campo": "distinct_from",
+   "valores": [
+    "eliezer-de-la-casa-de-jesua",
+    "eliezer-descendiente-de-harim",
+    "eliezer-levita-de-tiempos-de-esdras"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "eliezer-hijo-de-moises",
+   "campo": "distinct_from",
+   "valores": [
+    "eliezer-de-la-casa-de-jesua",
+    "eliezer-descendiente-de-harim",
+    "eliezer-levita-de-tiempos-de-esdras"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "eliezer-hijo-de-zicri",
+   "campo": "distinct_from",
+   "valores": [
+    "eliezer-de-la-casa-de-jesua",
+    "eliezer-descendiente-de-harim",
+    "eliezer-levita-de-tiempos-de-esdras"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "eliezer-trompetista",
+   "campo": "distinct_from",
+   "valores": [
+    "eliezer-de-la-casa-de-jesua",
+    "eliezer-descendiente-de-harim",
+    "eliezer-levita-de-tiempos-de-esdras"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "elifelet-hijo-de-ahasbai",
+   "campo": "distinct_from",
+   "valores": [
+    "elifelet-descendiente-de-hasum"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "elifelet-hijo-de-david",
+   "campo": "distinct_from",
+   "valores": [
+    "elifelet-descendiente-de-hasum"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "elifelet-hijo-de-eshec",
+   "campo": "distinct_from",
+   "valores": [
+    "elifelet-descendiente-de-hasum"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "elioenai-hijo-de-beker",
+   "campo": "distinct_from",
+   "valores": [
+    "elioenai-descendiente-de-pasjur",
+    "elioenai-descendiente-de-zatu"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "elioenai-hijo-de-nearias",
+   "campo": "distinct_from",
+   "valores": [
+    "elioenai-descendiente-de-pasjur",
+    "elioenai-descendiente-de-zatu"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "elioenai-simeonita",
+   "campo": "distinct_from",
+   "valores": [
+    "elioenai-descendiente-de-pasjur",
+    "elioenai-descendiente-de-zatu"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "elpelet",
+   "campo": "distinct_from",
+   "valores": [
+    "elifelet-descendiente-de-hasum"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "guedalias",
+   "campo": "distinct_from",
+   "valores": [
+    "guedalias-de-la-casa-de-jesua"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "guedalias-hijo-de-amarias",
+   "campo": "distinct_from",
+   "valores": [
+    "guedalias-de-la-casa-de-jesua"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "guedalias-hijo-de-jedutun",
+   "campo": "distinct_from",
+   "valores": [
+    "guedalias-de-la-casa-de-jesua"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "guedalias-hijo-de-pasjur",
+   "campo": "distinct_from",
+   "valores": [
+    "guedalias-de-la-casa-de-jesua"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "hanani-hijo-de-heman",
+   "campo": "distinct_from",
+   "valores": [
+    "hanani-descendiente-de-imer"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "hanani-vidente",
+   "campo": "distinct_from",
+   "valores": [
+    "hanani-descendiente-de-imer"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "hananias-abuelo-de-iriya",
+   "campo": "distinct_from",
+   "valores": [
+    "hananias-descendiente-de-bebai"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "hananias-hijo-de-azur",
+   "campo": "distinct_from",
+   "valores": [
+    "hananias-descendiente-de-bebai"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "hananias-hijo-de-heman",
+   "campo": "distinct_from",
+   "valores": [
+    "hananias-descendiente-de-bebai"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "hananias-hijo-de-sasac",
+   "campo": "distinct_from",
+   "valores": [
+    "hananias-descendiente-de-bebai"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "hananias-hijo-de-zorobabel",
+   "campo": "distinct_from",
+   "valores": [
+    "hananias-descendiente-de-bebai"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "hananias-padre-de-sedequias",
+   "campo": "distinct_from",
+   "valores": [
+    "hananias-descendiente-de-bebai"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "harim-de-tiempos-de-david",
+   "campo": "distinct_from",
+   "valores": [
+    "harim-cabeza-de-familia"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "ismael-hijo-de-abrahan",
+   "campo": "distinct_from",
+   "valores": [
+    "ismael-descendiente-de-pasjur"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "ismael-hijo-de-azel",
+   "campo": "distinct_from",
+   "valores": [
+    "ismael-descendiente-de-pasjur"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "ismael-hijo-de-netanias",
+   "campo": "distinct_from",
+   "valores": [
+    "ismael-descendiente-de-pasjur"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jaaziel",
+   "campo": "distinct_from",
+   "valores": [
+    "jeiel-descendiente-de-nebo"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jakin-hijo-de-simeon",
+   "campo": "distinct_from",
+   "valores": [
+    "jarib-de-la-casa-de-jesua"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jehiel-descendiente-de-ladan",
+   "campo": "distinct_from",
+   "valores": [
+    "jehiel-descendiente-de-elam",
+    "jehiel-descendiente-de-harim",
+    "jehiel-padre-de-secanias"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jehiel-hijo-de-hacmoni",
+   "campo": "distinct_from",
+   "valores": [
+    "jehiel-descendiente-de-elam",
+    "jehiel-descendiente-de-harim",
+    "jehiel-padre-de-secanias"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jehiel-musico",
+   "campo": "distinct_from",
+   "valores": [
+    "jehiel-descendiente-de-elam",
+    "jehiel-descendiente-de-harim",
+    "jehiel-padre-de-secanias"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jehoacaz-de-juda",
+   "campo": "distinct_from",
+   "valores": [
+    "salum-descendiente-de-binui",
+    "salum-portero-de-tiempos-de-esdras"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jehohanan-hijo-de-meselemias",
+   "campo": "distinct_from",
+   "valores": [
+    "jehohanan-descendiente-de-bebai",
+    "jehohanan-hijo-de-eliasib"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jeiel-de-gabaon",
+   "campo": "distinct_from",
+   "valores": [
+    "jeiel-descendiente-de-nebo"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jeiel-el-rubenita",
+   "campo": "distinct_from",
+   "valores": [
+    "jeiel-descendiente-de-nebo"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jeiel-hijo-de-hotam",
+   "campo": "distinct_from",
+   "valores": [
+    "jeiel-descendiente-de-nebo"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jeiel-portero",
+   "campo": "distinct_from",
+   "valores": [
+    "jeiel-descendiente-de-nebo"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jeremot-de-beker",
+   "campo": "distinct_from",
+   "valores": [
+    "jeremot-descendiente-de-bani",
+    "jeremot-descendiente-de-elam",
+    "jeremot-descendiente-de-zatu"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jeremot-hijo-de-berias",
+   "campo": "distinct_from",
+   "valores": [
+    "jeremot-descendiente-de-bani",
+    "jeremot-descendiente-de-elam",
+    "jeremot-descendiente-de-zatu"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jeremot-hijo-de-musi",
+   "campo": "distinct_from",
+   "valores": [
+    "jeremot-descendiente-de-bani",
+    "jeremot-descendiente-de-elam",
+    "jeremot-descendiente-de-zatu"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jerimot-hijo-de-heman",
+   "campo": "distinct_from",
+   "valores": [
+    "jeremot-descendiente-de-bani",
+    "jeremot-descendiente-de-elam",
+    "jeremot-descendiente-de-zatu"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jesus-hijo-de-eliezer",
+   "campo": "distinct_from",
+   "valores": [
+    "jose-descendiente-de-binui"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "joel-el-gadita",
+   "campo": "distinct_from",
+   "valores": [
+    "joel-descendiente-de-nebo"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "joel-el-rubenita",
+   "campo": "distinct_from",
+   "valores": [
+    "joel-descendiente-de-nebo"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "joel-hermano-de-natan",
+   "campo": "distinct_from",
+   "valores": [
+    "joel-descendiente-de-nebo"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "joel-hijo-de-azarias",
+   "campo": "distinct_from",
+   "valores": [
+    "joel-descendiente-de-nebo"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "joel-hijo-de-izrahias",
+   "campo": "distinct_from",
+   "valores": [
+    "joel-descendiente-de-nebo"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "joel-hijo-de-jehiel",
+   "campo": "distinct_from",
+   "valores": [
+    "joel-descendiente-de-nebo"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "joel-hijo-de-pedaya",
+   "campo": "distinct_from",
+   "valores": [
+    "joel-descendiente-de-nebo"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "joel-hijo-de-samuel",
+   "campo": "distinct_from",
+   "valores": [
+    "joel-descendiente-de-nebo"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "joel-profeta",
+   "campo": "distinct_from",
+   "valores": [
+    "joel-descendiente-de-nebo"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "joel-simeonita",
+   "campo": "distinct_from",
+   "valores": [
+    "joel-descendiente-de-nebo"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jonatan-hijo-de-abiatar",
+   "campo": "distinct_from",
+   "valores": [
+    "jonatan-hijo-de-asahel"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jonatan-hijo-de-carea",
+   "campo": "distinct_from",
+   "valores": [
+    "jonatan-hijo-de-asahel"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jonatan-hijo-de-jada",
+   "campo": "distinct_from",
+   "valores": [
+    "jonatan-hijo-de-asahel"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jonatan-hijo-de-sague",
+   "campo": "distinct_from",
+   "valores": [
+    "jonatan-hijo-de-asahel"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jonatan-hijo-de-sama",
+   "campo": "distinct_from",
+   "valores": [
+    "jonatan-hijo-de-asahel"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jonatan-hijo-de-saul",
+   "campo": "distinct_from",
+   "valores": [
+    "jonatan-hijo-de-asahel"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jonatan-hijo-de-uzias",
+   "campo": "distinct_from",
+   "valores": [
+    "jonatan-hijo-de-asahel"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jonatan-levita",
+   "campo": "distinct_from",
+   "valores": [
+    "jonatan-hijo-de-asahel"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jonatan-sobrino-de-david",
+   "campo": "distinct_from",
+   "valores": [
+    "jonatan-hijo-de-asahel"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jose-de-arimatea",
+   "campo": "distinct_from",
+   "valores": [
+    "jose-descendiente-de-binui"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jose-esposo-de-maria",
+   "campo": "distinct_from",
+   "valores": [
+    "jose-descendiente-de-binui"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jose-hijo-de-asaf",
+   "campo": "distinct_from",
+   "valores": [
+    "jose-descendiente-de-binui"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jose-hijo-de-jacob",
+   "campo": "distinct_from",
+   "valores": [
+    "jose-descendiente-de-binui"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jose-hijo-de-jonam",
+   "campo": "distinct_from",
+   "valores": [
+    "jose-descendiente-de-binui"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jose-hijo-de-jose",
+   "campo": "distinct_from",
+   "valores": [
+    "jose-descendiente-de-binui"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jose-hijo-de-matatias",
+   "campo": "distinct_from",
+   "valores": [
+    "jose-descendiente-de-binui"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jose-padre-de-igal",
+   "campo": "distinct_from",
+   "valores": [
+    "jose-descendiente-de-binui"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jozabad-de-manases-1",
+   "campo": "distinct_from",
+   "valores": [
+    "jozabad-descendiente-de-pasjur",
+    "jozabad-levita-de-tiempos-de-esdras"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jozabad-de-manases-2",
+   "campo": "distinct_from",
+   "valores": [
+    "jozabad-descendiente-de-pasjur",
+    "jozabad-levita-de-tiempos-de-esdras"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jozabad-el-guederatita",
+   "campo": "distinct_from",
+   "valores": [
+    "jozabad-descendiente-de-pasjur",
+    "jozabad-levita-de-tiempos-de-esdras"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jozacar",
+   "campo": "distinct_from",
+   "valores": [
+    "zabad-descendiente-de-hasum",
+    "zabad-descendiente-de-nebo",
+    "zabad-descendiente-de-zatu"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "juda-hijo-de-jacob",
+   "campo": "distinct_from",
+   "valores": [
+    "juda-levita-de-tiempos-de-esdras"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "maaseya-hijo-de-salum",
+   "campo": "distinct_from",
+   "valores": [
+    "maaseya-de-la-casa-de-jesua",
+    "maaseya-descendiente-de-harim",
+    "maaseya-descendiente-de-pahat-moab",
+    "maaseya-descendiente-de-pasjur"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "maaseya-musico",
+   "campo": "distinct_from",
+   "valores": [
+    "maaseya-de-la-casa-de-jesua",
+    "maaseya-descendiente-de-harim",
+    "maaseya-descendiente-de-pahat-moab",
+    "maaseya-descendiente-de-pasjur"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "maaseya-padre-de-sedequias",
+   "campo": "distinct_from",
+   "valores": [
+    "maaseya-de-la-casa-de-jesua",
+    "maaseya-descendiente-de-harim",
+    "maaseya-descendiente-de-pahat-moab",
+    "maaseya-descendiente-de-pasjur"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "maaseya-padre-de-sofonias",
+   "campo": "distinct_from",
+   "valores": [
+    "maaseya-de-la-casa-de-jesua",
+    "maaseya-descendiente-de-harim",
+    "maaseya-descendiente-de-pahat-moab",
+    "maaseya-descendiente-de-pasjur"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "malkias-padre-de-pasjur",
+   "campo": "distinct_from",
+   "valores": [
+    "malkiya-descendiente-de-harim",
+    "malkiya-descendiente-de-paros-1",
+    "malkiya-descendiente-de-paros-2"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "malkiya-de-tiempos-de-david",
+   "campo": "distinct_from",
+   "valores": [
+    "malkiya-descendiente-de-harim",
+    "malkiya-descendiente-de-paros-1",
+    "malkiya-descendiente-de-paros-2"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "malkiya-hijo-de-etni",
+   "campo": "distinct_from",
+   "valores": [
+    "malkiya-descendiente-de-harim",
+    "malkiya-descendiente-de-paros-1",
+    "malkiya-descendiente-de-paros-2"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "malkiya-hijo-del-rey",
+   "campo": "distinct_from",
+   "valores": [
+    "malkiya-descendiente-de-harim",
+    "malkiya-descendiente-de-paros-1",
+    "malkiya-descendiente-de-paros-2"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "maluc-hijo-de-hasabias",
+   "campo": "distinct_from",
+   "valores": [
+    "maluc-descendiente-de-bani",
+    "maluc-descendiente-de-harim"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "manases-de-juda",
+   "campo": "distinct_from",
+   "valores": [
+    "manases-descendiente-de-hasum",
+    "manases-descendiente-de-pahat-moab"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "manases-hijo-de-jose",
+   "campo": "distinct_from",
+   "valores": [
+    "manases-descendiente-de-hasum",
+    "manases-descendiente-de-pahat-moab"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "matanias-hijo-de-heman",
+   "campo": "distinct_from",
+   "valores": [
+    "matanias-descendiente-de-bani",
+    "matanias-descendiente-de-elam",
+    "matanias-descendiente-de-pahat-moab",
+    "matanias-descendiente-de-zatu"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "matanias-hijo-de-mica",
+   "campo": "distinct_from",
+   "valores": [
+    "matanias-descendiente-de-bani",
+    "matanias-descendiente-de-elam",
+    "matanias-descendiente-de-pahat-moab",
+    "matanias-descendiente-de-zatu"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "matata",
+   "campo": "distinct_from",
+   "valores": [
+    "matata-descendiente-de-hasum"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "matitias-hijo-de-salum",
+   "campo": "distinct_from",
+   "valores": [
+    "matitias-descendiente-de-nebo"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "matitias-musico",
+   "campo": "distinct_from",
+   "valores": [
+    "matitias-descendiente-de-nebo"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "mesulam-abuelo-de-safan",
+   "campo": "distinct_from",
+   "valores": [
+    "mesulam-descendiente-de-bani",
+    "mesulam-levita-de-tiempos-de-esdras"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "mesulam-hijo-de-abihail",
+   "campo": "distinct_from",
+   "valores": [
+    "mesulam-descendiente-de-bani",
+    "mesulam-levita-de-tiempos-de-esdras"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "mesulam-hijo-de-elpaal",
+   "campo": "distinct_from",
+   "valores": [
+    "mesulam-descendiente-de-bani",
+    "mesulam-levita-de-tiempos-de-esdras"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "mesulam-hijo-de-hodavias",
+   "campo": "distinct_from",
+   "valores": [
+    "mesulam-descendiente-de-bani",
+    "mesulam-levita-de-tiempos-de-esdras"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "mesulam-hijo-de-mesilemit",
+   "campo": "distinct_from",
+   "valores": [
+    "mesulam-descendiente-de-bani",
+    "mesulam-levita-de-tiempos-de-esdras"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "mesulam-hijo-de-sefatias",
+   "campo": "distinct_from",
+   "valores": [
+    "mesulam-descendiente-de-bani",
+    "mesulam-levita-de-tiempos-de-esdras"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "mesulam-hijo-de-zorobabel",
+   "campo": "distinct_from",
+   "valores": [
+    "mesulam-descendiente-de-bani",
+    "mesulam-levita-de-tiempos-de-esdras"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "mijamin-de-tiempos-de-david",
+   "campo": "distinct_from",
+   "valores": [
+    "mijamin-descendiente-de-paros"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "natan-de-zoba",
+   "campo": "distinct_from",
+   "valores": [
+    "natan-descendiente-de-binui"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "natan-hijo-de-atai",
+   "campo": "distinct_from",
+   "valores": [
+    "natan-descendiente-de-binui"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "natan-hijo-de-david",
+   "campo": "distinct_from",
+   "valores": [
+    "natan-descendiente-de-binui"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "natan-padre-de-zabud",
+   "campo": "distinct_from",
+   "valores": [
+    "natan-descendiente-de-binui"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "natan-profeta",
+   "campo": "distinct_from",
+   "valores": [
+    "natan-descendiente-de-binui"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "netanel-hijo-de-jese",
+   "campo": "distinct_from",
+   "valores": [
+    "netanel-descendiente-de-pasjur"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "netanel-hijo-de-obed-edom",
+   "campo": "distinct_from",
+   "valores": [
+    "netanel-descendiente-de-pasjur"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "netanel-hijo-de-zuar",
+   "campo": "distinct_from",
+   "valores": [
+    "netanel-descendiente-de-pasjur"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "netanel-padre-de-semaya",
+   "campo": "distinct_from",
+   "valores": [
+    "netanel-descendiente-de-pasjur"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "netanel-trompetista",
+   "campo": "distinct_from",
+   "valores": [
+    "netanel-descendiente-de-pasjur"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "pasjur-hijo-de-imer",
+   "campo": "distinct_from",
+   "valores": [
+    "pasjur-familia-sacerdotal"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "pasjur-padre-de-guedalias",
+   "campo": "distinct_from",
+   "valores": [
+    "pasjur-familia-sacerdotal"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "petahias-de-tiempos-de-david",
+   "campo": "distinct_from",
+   "valores": [
+    "petahias-levita-de-tiempos-de-esdras"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "sadrac",
+   "campo": "distinct_from",
+   "valores": [
+    "hananias-descendiente-de-bebai"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "salum-de-israel",
+   "campo": "distinct_from",
+   "valores": [
+    "salum-descendiente-de-binui",
+    "salum-portero-de-tiempos-de-esdras"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "salum-hijo-de-sadoc",
+   "campo": "distinct_from",
+   "valores": [
+    "mesulam-descendiente-de-bani",
+    "mesulam-levita-de-tiempos-de-esdras",
+    "salum-descendiente-de-binui",
+    "salum-portero-de-tiempos-de-esdras"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "salum-hijo-de-shaul",
+   "campo": "distinct_from",
+   "valores": [
+    "salum-descendiente-de-binui",
+    "salum-portero-de-tiempos-de-esdras"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "salum-hijo-de-sismai",
+   "campo": "distinct_from",
+   "valores": [
+    "salum-descendiente-de-binui",
+    "salum-portero-de-tiempos-de-esdras"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "salum-hijo-de-ticva",
+   "campo": "distinct_from",
+   "valores": [
+    "salum-descendiente-de-binui",
+    "salum-portero-de-tiempos-de-esdras"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "salum-jefe-de-los-porteros",
+   "campo": "distinct_from",
+   "valores": [
+    "salum-descendiente-de-binui",
+    "salum-portero-de-tiempos-de-esdras"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "salum-padre-de-maaseya",
+   "campo": "distinct_from",
+   "valores": [
+    "salum-descendiente-de-binui",
+    "salum-portero-de-tiempos-de-esdras"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "salum-tio-de-jeremias",
+   "campo": "distinct_from",
+   "valores": [
+    "salum-descendiente-de-binui",
+    "salum-portero-de-tiempos-de-esdras"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "sama-hijo-de-jese",
+   "campo": "distinct_from",
+   "valores": [
+    "simei-descendiente-de-binui",
+    "simei-descendiente-de-hasum",
+    "simei-levita-de-tiempos-de-esdras"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "secanias-de-tiempos-de-david",
+   "campo": "distinct_from",
+   "valores": [
+    "secanias-hijo-de-jehiel"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "secanias-hijo-de-abdias",
+   "campo": "distinct_from",
+   "valores": [
+    "secanias-hijo-de-jehiel"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "sedequias",
+   "campo": "distinct_from",
+   "valores": [
+    "matanias-descendiente-de-bani",
+    "matanias-descendiente-de-elam",
+    "matanias-descendiente-de-pahat-moab",
+    "matanias-descendiente-de-zatu"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "selemias-hijo-de-abdeel",
+   "campo": "distinct_from",
+   "valores": [
+    "selemias-descendiente-de-binui-1",
+    "selemias-descendiente-de-binui-2"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "selemias-hijo-de-cusi",
+   "campo": "distinct_from",
+   "valores": [
+    "selemias-descendiente-de-binui-1",
+    "selemias-descendiente-de-binui-2"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "selemias-hijo-de-hananias",
+   "campo": "distinct_from",
+   "valores": [
+    "selemias-descendiente-de-binui-1",
+    "selemias-descendiente-de-binui-2"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "selemias-padre-de-jehucal",
+   "campo": "distinct_from",
+   "valores": [
+    "selemias-descendiente-de-binui-1",
+    "selemias-descendiente-de-binui-2"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "selemias-portero",
+   "campo": "distinct_from",
+   "valores": [
+    "selemias-descendiente-de-binui-1",
+    "selemias-descendiente-de-binui-2"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "semarias-el-benjaminita",
+   "campo": "distinct_from",
+   "valores": [
+    "semarias-descendiente-de-binui",
+    "semarias-descendiente-de-harim"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "semaya-de-nehelam",
+   "campo": "distinct_from",
+   "valores": [
+    "semaya-descendiente-de-harim",
+    "semaya-sacerdote-descendiente-de-harim"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "semaya-hijo-de-galal",
+   "campo": "distinct_from",
+   "valores": [
+    "semaya-descendiente-de-harim",
+    "semaya-sacerdote-descendiente-de-harim"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "semaya-hijo-de-hasub",
+   "campo": "distinct_from",
+   "valores": [
+    "semaya-descendiente-de-harim",
+    "semaya-sacerdote-descendiente-de-harim"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "semaya-hijo-de-joel",
+   "campo": "distinct_from",
+   "valores": [
+    "semaya-descendiente-de-harim",
+    "semaya-sacerdote-descendiente-de-harim"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "semaya-hijo-de-netanel",
+   "campo": "distinct_from",
+   "valores": [
+    "semaya-descendiente-de-harim",
+    "semaya-sacerdote-descendiente-de-harim"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "semaya-hijo-de-obed-edom",
+   "campo": "distinct_from",
+   "valores": [
+    "semaya-descendiente-de-harim",
+    "semaya-sacerdote-descendiente-de-harim"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "semaya-hijo-de-secanias",
+   "campo": "distinct_from",
+   "valores": [
+    "semaya-descendiente-de-harim",
+    "semaya-sacerdote-descendiente-de-harim"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "semaya-jefe-de-la-casa-de-elizafan",
+   "campo": "distinct_from",
+   "valores": [
+    "semaya-descendiente-de-harim",
+    "semaya-sacerdote-descendiente-de-harim"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "semaya-padre-de-delaya",
+   "campo": "distinct_from",
+   "valores": [
+    "semaya-descendiente-de-harim",
+    "semaya-sacerdote-descendiente-de-harim"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "semaya-padre-de-uriya",
+   "campo": "distinct_from",
+   "valores": [
+    "semaya-descendiente-de-harim",
+    "semaya-sacerdote-descendiente-de-harim"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "semaya-profeta",
+   "campo": "distinct_from",
+   "valores": [
+    "semaya-descendiente-de-harim",
+    "semaya-sacerdote-descendiente-de-harim"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "semaya-simeonita",
+   "campo": "distinct_from",
+   "valores": [
+    "semaya-descendiente-de-harim",
+    "semaya-sacerdote-descendiente-de-harim"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "silem",
+   "campo": "distinct_from",
+   "valores": [
+    "salum-descendiente-de-binui",
+    "salum-portero-de-tiempos-de-esdras"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "simei-descendiente-de-ladan",
+   "campo": "distinct_from",
+   "valores": [
+    "simei-descendiente-de-binui",
+    "simei-descendiente-de-hasum",
+    "simei-levita-de-tiempos-de-esdras"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "simei-el-ramatita",
+   "campo": "distinct_from",
+   "valores": [
+    "simei-descendiente-de-binui",
+    "simei-descendiente-de-hasum",
+    "simei-levita-de-tiempos-de-esdras"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "simei-hijo-de-ela",
+   "campo": "distinct_from",
+   "valores": [
+    "simei-descendiente-de-binui",
+    "simei-descendiente-de-hasum",
+    "simei-levita-de-tiempos-de-esdras"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "simei-hijo-de-gog",
+   "campo": "distinct_from",
+   "valores": [
+    "simei-descendiente-de-binui",
+    "simei-descendiente-de-hasum",
+    "simei-levita-de-tiempos-de-esdras"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "simei-hijo-de-guera",
+   "campo": "distinct_from",
+   "valores": [
+    "simei-descendiente-de-binui",
+    "simei-descendiente-de-hasum",
+    "simei-levita-de-tiempos-de-esdras"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "simei-hijo-de-guerson",
+   "campo": "distinct_from",
+   "valores": [
+    "simei-descendiente-de-binui",
+    "simei-descendiente-de-hasum",
+    "simei-levita-de-tiempos-de-esdras"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "simei-hijo-de-jahat",
+   "campo": "distinct_from",
+   "valores": [
+    "simei-descendiente-de-binui",
+    "simei-descendiente-de-hasum",
+    "simei-levita-de-tiempos-de-esdras"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "simei-hijo-de-jedutun",
+   "campo": "distinct_from",
+   "valores": [
+    "simei-descendiente-de-binui",
+    "simei-descendiente-de-hasum",
+    "simei-levita-de-tiempos-de-esdras"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "simei-hijo-de-libni",
+   "campo": "distinct_from",
+   "valores": [
+    "simei-descendiente-de-binui",
+    "simei-descendiente-de-hasum",
+    "simei-levita-de-tiempos-de-esdras"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "simei-hijo-de-pedaya",
+   "campo": "distinct_from",
+   "valores": [
+    "simei-descendiente-de-binui",
+    "simei-descendiente-de-hasum",
+    "simei-levita-de-tiempos-de-esdras"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "simei-hijo-de-zacur",
+   "campo": "distinct_from",
+   "valores": [
+    "simei-descendiente-de-binui",
+    "simei-descendiente-de-hasum",
+    "simei-levita-de-tiempos-de-esdras"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "simei-padre-de-jaquim",
+   "campo": "distinct_from",
+   "valores": [
+    "simei-descendiente-de-binui",
+    "simei-descendiente-de-hasum",
+    "simei-levita-de-tiempos-de-esdras"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "simei-partidario-de-david",
+   "campo": "distinct_from",
+   "valores": [
+    "simei-descendiente-de-binui",
+    "simei-descendiente-de-hasum",
+    "simei-levita-de-tiempos-de-esdras"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "ticva-hijo-de-harhas",
+   "campo": "distinct_from",
+   "valores": [
+    "ticva-padre-de-jahzeya"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "uri-hijo-de-hur",
+   "campo": "distinct_from",
+   "valores": [
+    "uri-portero"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "uri-padre-de-gueber",
+   "campo": "distinct_from",
+   "valores": [
+    "uri-portero"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "uzias",
+   "campo": "distinct_from",
+   "valores": [
+    "uzias-descendiente-de-harim"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "uzias-hijo-de-uriel",
+   "campo": "distinct_from",
+   "valores": [
+    "uzias-descendiente-de-harim"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "uzias-padre-de-jonatan",
+   "campo": "distinct_from",
+   "valores": [
+    "uzias-descendiente-de-harim"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "uziel-hijo-de-heman",
+   "campo": "distinct_from",
+   "valores": [
+    "azarel-descendiente-de-binui"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "yob",
+   "campo": "distinct_from",
+   "valores": [
+    "jasub-descendiente-de-bani"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "zabad-hijo-de-ahlai",
+   "campo": "distinct_from",
+   "valores": [
+    "zabad-descendiente-de-hasum",
+    "zabad-descendiente-de-nebo",
+    "zabad-descendiente-de-zatu"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "zabad-hijo-de-natan",
+   "campo": "distinct_from",
+   "valores": [
+    "zabad-descendiente-de-hasum",
+    "zabad-descendiente-de-nebo",
+    "zabad-descendiente-de-zatu"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "zabad-hijo-de-tahat",
+   "campo": "distinct_from",
+   "valores": [
+    "zabad-descendiente-de-hasum",
+    "zabad-descendiente-de-nebo",
+    "zabad-descendiente-de-zatu"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "zacarias-abuelo-de-ezequias",
+   "campo": "distinct_from",
+   "valores": [
+    "zacarias-descendiente-de-elam"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "zacarias-de-israel",
+   "campo": "distinct_from",
+   "valores": [
+    "zacarias-descendiente-de-elam"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "zacarias-descendiente-de-isias",
+   "campo": "distinct_from",
+   "valores": [
+    "zacarias-descendiente-de-elam"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "zacarias-el-rubenita",
+   "campo": "distinct_from",
+   "valores": [
+    "zacarias-descendiente-de-elam"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "zacarias-hijo-de-hosa",
+   "campo": "distinct_from",
+   "valores": [
+    "zacarias-descendiente-de-elam"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "zacarias-hijo-de-jeberekias",
+   "campo": "distinct_from",
+   "valores": [
+    "zacarias-descendiente-de-elam"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "zacarias-hijo-de-jehoiada",
+   "campo": "distinct_from",
+   "valores": [
+    "zacarias-descendiente-de-elam"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "zacarias-hijo-de-meselemias",
+   "campo": "distinct_from",
+   "valores": [
+    "zacarias-descendiente-de-elam"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "zacarias-musico",
+   "campo": "distinct_from",
+   "valores": [
+    "zacarias-descendiente-de-elam"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "zacarias-padre-de-ido",
+   "campo": "distinct_from",
+   "valores": [
+    "zacarias-descendiente-de-elam"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "zacarias-padre-de-juan",
+   "campo": "distinct_from",
+   "valores": [
+    "zacarias-descendiente-de-elam"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "zacarias-profeta",
+   "campo": "distinct_from",
+   "valores": [
+    "zacarias-descendiente-de-elam"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "zacarias-trompetista",
+   "campo": "distinct_from",
+   "valores": [
+    "zacarias-descendiente-de-elam"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "zebadias-descendiente-de-berias",
+   "campo": "distinct_from",
+   "valores": [
+    "zebadias-descendiente-de-imer"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "zebadias-descendiente-de-elpaal",
+   "campo": "distinct_from",
+   "valores": [
+    "zebadias-descendiente-de-imer"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "zebadias-hijo-de-asahel",
+   "campo": "distinct_from",
+   "valores": [
+    "zebadias-descendiente-de-imer"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "zebadias-hijo-de-jeroham",
+   "campo": "distinct_from",
+   "valores": [
+    "zebadias-descendiente-de-imer"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "zebadias-hijo-de-meselemias",
+   "campo": "distinct_from",
+   "valores": [
+    "zebadias-descendiente-de-imer"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "zeker",
+   "campo": "distinct_from",
+   "valores": [
+    "zacarias-descendiente-de-elam"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "people",
+   "id": "maluc-hijo-de-hasabias",
+   "campo": "disambiguation",
+   "antes": null,
+   "despues": "El levita merarita antepasado de Etán (1Cr 6:44, 45); no los Maluc de los días de Esdras."
+  },
+  {
+   "op": "cambiar",
+   "tipo": "people",
+   "id": "matata",
+   "campo": "disambiguation",
+   "antes": null,
+   "despues": "El hijo de Natán de la genealogía de Lu 3:31; no el Matatá de los hijos de Hasum de los días de Esdras."
+  },
+  {
+   "op": "cambiar",
+   "tipo": "people",
+   "id": "mijamin-de-tiempos-de-david",
+   "campo": "disambiguation",
+   "antes": null,
+   "despues": "El cabeza del sexto turno sacerdotal (1Cr 24:9); no el Mijamín de los hijos de Parós de los días de Esdras."
+  },
+  {
+   "op": "cambiar",
+   "tipo": "people",
+   "id": "petahias-de-tiempos-de-david",
+   "campo": "disambiguation",
+   "antes": null,
+   "despues": "El cabeza del turno sacerdotal 19 (1Cr 24:16); no el levita Petahías de los días de Esdras."
+  },
+  {
+   "op": "cambiar",
+   "tipo": "people",
+   "id": "yob",
+   "campo": "disambiguation",
+   "antes": null,
+   "despues": "El hijo de Isacar, llamado también Jasub (Gé 46:13); no el Jasub de los hijos de Baní de los días de Esdras."
+  },
+  {
+   "op": "cambiar",
+   "tipo": "people",
+   "id": "abdi-hijo-de-maluc",
+   "campo": "disambiguation",
+   "antes": "El merarita hijo de Maluc, antepasado de Etán (Perspicacia «Abdí», núm. 1); no el padre del Quis de los días de Ezequías.",
+   "despues": "El merarita hijo de Maluc, antepasado de Etán (Perspicacia «Abdí», núm. 1); no el padre del Quis de los días de Ezequías ni el Abdí de los hijos de Elam.",
+   "historial": {
+    "date": "2026-10-13",
+    "change": "Añade el Abdí de la familia de Elam de los días de Esdras, núm. 3 de Perspicacia, a los homónimos que separa.",
+    "source": "esdras-10"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "azarias-hijo-de-jehalelel",
+   "campo": "distinct_from",
+   "valores": [
+    "seraya-repatriado"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "azarias-hijo-de-jeroham",
+   "campo": "distinct_from",
+   "valores": [
+    "seraya-repatriado"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "azarias-hijo-de-obed",
+   "campo": "distinct_from",
+   "valores": [
+    "seraya-repatriado"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "azarias-hijo-de-oded",
+   "campo": "distinct_from",
+   "valores": [
+    "seraya-repatriado"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "azarias-padre-de-joel",
+   "campo": "distinct_from",
+   "valores": [
+    "seraya-repatriado"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "azarias-quinto-hijo-de-jehosafat",
+   "campo": "distinct_from",
+   "valores": [
+    "seraya-repatriado"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "azarias-sacerdote-de-tiempos-de-uzias",
+   "campo": "distinct_from",
+   "valores": [
+    "seraya-repatriado"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "azarias-segundo-hijo-de-jehosafat",
+   "campo": "distinct_from",
+   "valores": [
+    "seraya-repatriado"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jesua-ayudante-de-core",
+   "campo": "distinct_from",
+   "valores": [
+    "jesua-cabeza-de-casa-levita",
+    "jesua-de-pahat-moab"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "sefatias-hijo-de-jehosafat",
+   "campo": "distinct_from",
+   "valores": [
+    "sefatias-cabeza-de-familia",
+    "sefatias-siervo-de-salomon"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jesua-ayudante-de-core",
+   "campo": "distinct_from",
+   "valores": [
+    "jesua-supervisor-del-templo"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "azarias-hijo-de-jehalelel",
+   "campo": "distinct_from",
+   "valores": [
+    "azarias-hijo-de-merayot"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "azarias-hijo-de-jeroham",
+   "campo": "distinct_from",
+   "valores": [
+    "azarias-hijo-de-merayot"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "azarias-hijo-de-obed",
+   "campo": "distinct_from",
+   "valores": [
+    "azarias-hijo-de-merayot"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "azarias-hijo-de-oded",
+   "campo": "distinct_from",
+   "valores": [
+    "azarias-hijo-de-merayot"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "azarias-padre-de-joel",
+   "campo": "distinct_from",
+   "valores": [
+    "azarias-hijo-de-merayot"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "azarias-quinto-hijo-de-jehosafat",
+   "campo": "distinct_from",
+   "valores": [
+    "azarias-hijo-de-merayot"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "azarias-sacerdote-de-tiempos-de-uzias",
+   "campo": "distinct_from",
+   "valores": [
+    "azarias-hijo-de-merayot"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "azarias-segundo-hijo-de-jehosafat",
+   "campo": "distinct_from",
+   "valores": [
+    "azarias-hijo-de-merayot"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "abdias-levita-de-josias",
+   "campo": "distinct_from",
+   "valores": [
+    "abdias-hijo-de-jehiel"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "abdias-principe-de-jehosafat",
+   "campo": "distinct_from",
+   "valores": [
+    "abdias-hijo-de-jehiel"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "eliezer-hijo-de-dodavahu",
+   "campo": "distinct_from",
+   "valores": [
+    "eliezer-enviado-a-casifia"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "hasabias-levita-de-josias",
+   "campo": "distinct_from",
+   "valores": [
+    "hasabias-jefe-de-los-sacerdotes"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "hasabias-levita-de-josias",
+   "campo": "distinct_from",
+   "valores": [
+    "hasabias-merarita"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "ido-hombre-de-visiones",
+   "campo": "distinct_from",
+   "valores": [
+    "ido-de-casifia"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jahaziel-hijo-de-zacarias",
+   "campo": "distinct_from",
+   "valores": [
+    "jahaziel-padre-de-secanias"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jehiel-comisionado-de-ezequias",
+   "campo": "distinct_from",
+   "valores": [
+    "jehiel-padre-de-abdias"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jehiel-hijo-de-jehosafat",
+   "campo": "distinct_from",
+   "valores": [
+    "jehiel-padre-de-abdias"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jehiel-levita-de-ezequias",
+   "campo": "distinct_from",
+   "valores": [
+    "jehiel-padre-de-abdias"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jehiel-sacerdote-de-josias",
+   "campo": "distinct_from",
+   "valores": [
+    "jehiel-padre-de-abdias"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jeiel-hijo-de-matanias",
+   "campo": "distinct_from",
+   "valores": [
+    "jeiel-descendiente-de-adonicam"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jeiel-levita-de-josias",
+   "campo": "distinct_from",
+   "valores": [
+    "jeiel-descendiente-de-adonicam"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jeiel-secretario",
+   "campo": "distinct_from",
+   "valores": [
+    "jeiel-descendiente-de-adonicam"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jozabad-comisionado-de-ezequias",
+   "campo": "distinct_from",
+   "valores": [
+    "jozabad-hijo-de-jesua"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jozabad-levita-de-josias",
+   "campo": "distinct_from",
+   "valores": [
+    "jozabad-hijo-de-jesua"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "mesulam-levita-de-josias",
+   "campo": "distinct_from",
+   "valores": [
+    "mesulam-enviado-a-casifia"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "miguel-hijo-de-jehosafat",
+   "campo": "distinct_from",
+   "valores": [
+    "miguel-padre-de-zebadias"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "secanias-ayudante-de-core",
+   "campo": "distinct_from",
+   "valores": [
+    "secanias-descendiente-de-paros"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "secanias-ayudante-de-core",
+   "campo": "distinct_from",
+   "valores": [
+    "secanias-hijo-de-jahaziel"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "selomit-hijo-de-rehoboam",
+   "campo": "distinct_from",
+   "valores": [
+    "selomit-hijo-de-josifias"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "semaya-ayudante-de-core",
+   "campo": "distinct_from",
+   "valores": [
+    "semaya-descendiente-de-adonicam"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "semaya-levita-de-ezequias",
+   "campo": "distinct_from",
+   "valores": [
+    "semaya-descendiente-de-adonicam"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "semaya-levita-de-jehosafat",
+   "campo": "distinct_from",
+   "valores": [
+    "semaya-descendiente-de-adonicam"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "semaya-levita-de-josias",
+   "campo": "distinct_from",
+   "valores": [
+    "semaya-descendiente-de-adonicam"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "zacarias-consejero-de-uzias",
+   "campo": "distinct_from",
+   "valores": [
+    "zacarias-descendiente-de-paros"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "zacarias-consejero-de-uzias",
+   "campo": "distinct_from",
+   "valores": [
+    "zacarias-enviado-a-casifia"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "zacarias-consejero-de-uzias",
+   "campo": "distinct_from",
+   "valores": [
+    "zacarias-hijo-de-bebai"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "zacarias-hijo-de-benaya",
+   "campo": "distinct_from",
+   "valores": [
+    "zacarias-descendiente-de-paros"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "zacarias-hijo-de-jehosafat",
+   "campo": "distinct_from",
+   "valores": [
+    "zacarias-descendiente-de-paros"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "zacarias-levita-de-ezequias",
+   "campo": "distinct_from",
+   "valores": [
+    "zacarias-descendiente-de-paros"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "zacarias-levita-de-josias",
+   "campo": "distinct_from",
+   "valores": [
+    "zacarias-descendiente-de-paros"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "zacarias-principe-de-jehosafat",
+   "campo": "distinct_from",
+   "valores": [
+    "zacarias-descendiente-de-paros"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "zacarias-sacerdote-de-josias",
+   "campo": "distinct_from",
+   "valores": [
+    "zacarias-descendiente-de-paros"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "zacarias-hijo-de-benaya",
+   "campo": "distinct_from",
+   "valores": [
+    "zacarias-enviado-a-casifia"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "zacarias-hijo-de-jehosafat",
+   "campo": "distinct_from",
+   "valores": [
+    "zacarias-enviado-a-casifia"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "zacarias-levita-de-ezequias",
+   "campo": "distinct_from",
+   "valores": [
+    "zacarias-enviado-a-casifia"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "zacarias-levita-de-josias",
+   "campo": "distinct_from",
+   "valores": [
+    "zacarias-enviado-a-casifia"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "zacarias-principe-de-jehosafat",
+   "campo": "distinct_from",
+   "valores": [
+    "zacarias-enviado-a-casifia"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "zacarias-sacerdote-de-josias",
+   "campo": "distinct_from",
+   "valores": [
+    "zacarias-enviado-a-casifia"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "zacarias-hijo-de-benaya",
+   "campo": "distinct_from",
+   "valores": [
+    "zacarias-hijo-de-bebai"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "zacarias-hijo-de-jehosafat",
+   "campo": "distinct_from",
+   "valores": [
+    "zacarias-hijo-de-bebai"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "zacarias-levita-de-ezequias",
+   "campo": "distinct_from",
+   "valores": [
+    "zacarias-hijo-de-bebai"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "zacarias-levita-de-josias",
+   "campo": "distinct_from",
+   "valores": [
+    "zacarias-hijo-de-bebai"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "zacarias-principe-de-jehosafat",
+   "campo": "distinct_from",
+   "valores": [
+    "zacarias-hijo-de-bebai"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "zacarias-sacerdote-de-josias",
+   "campo": "distinct_from",
+   "valores": [
+    "zacarias-hijo-de-bebai"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "zebadias-hijo-de-ismael",
+   "campo": "distinct_from",
+   "valores": [
+    "zebadias-hijo-de-miguel"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "zebadias-levita-de-jehosafat",
+   "campo": "distinct_from",
+   "valores": [
+    "zebadias-hijo-de-miguel"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "semaya-levita-de-josias",
+   "campo": "distinct_from",
+   "valores": [
+    "semaya-enviado-a-casifia"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "semaya-ayudante-de-core",
+   "campo": "distinct_from",
+   "valores": [
+    "semaya-enviado-a-casifia"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "semaya-levita-de-jehosafat",
+   "campo": "distinct_from",
+   "valores": [
+    "semaya-enviado-a-casifia"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "semaya-levita-de-ezequias",
+   "campo": "distinct_from",
+   "valores": [
+    "semaya-enviado-a-casifia"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "abdi-padre-de-quis",
+   "campo": "distinct_from",
+   "valores": [
+    "abdi-descendiente-de-elam"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "adaya-padre-de-maaseya",
+   "campo": "distinct_from",
+   "valores": [
+    "adaya-descendiente-de-bani",
+    "adaya-descendiente-de-binui"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "adna-general-de-jehosafat",
+   "campo": "distinct_from",
+   "valores": [
+    "adna-descendiente-de-pahat-moab"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "amarias-ayudante-de-core",
+   "campo": "distinct_from",
+   "valores": [
+    "amarias-descendiente-de-binui"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "amarias-sacerdote-principal",
+   "campo": "distinct_from",
+   "valores": [
+    "amarias-descendiente-de-binui"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "asahel-comisionado-de-ezequias",
+   "campo": "distinct_from",
+   "valores": [
+    "asahel-padre-de-jonatan"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "asahel-levita-de-jehosafat",
+   "campo": "distinct_from",
+   "valores": [
+    "asahel-padre-de-jonatan"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "benaya-comisionado-de-ezequias",
+   "campo": "distinct_from",
+   "valores": [
+    "benaya-descendiente-de-bani",
+    "benaya-descendiente-de-nebo",
+    "benaya-descendiente-de-pahat-moab",
+    "benaya-descendiente-de-paros"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "benaya-hijo-de-jeiel",
+   "campo": "distinct_from",
+   "valores": [
+    "benaya-descendiente-de-bani",
+    "benaya-descendiente-de-nebo",
+    "benaya-descendiente-de-pahat-moab",
+    "benaya-descendiente-de-paros"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "eliezer-hijo-de-dodavahu",
+   "campo": "distinct_from",
+   "valores": [
+    "eliezer-de-la-casa-de-jesua",
+    "eliezer-descendiente-de-harim",
+    "eliezer-levita-de-tiempos-de-esdras"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "hananias-principe-de-uzias",
+   "campo": "distinct_from",
+   "valores": [
+    "hananias-descendiente-de-bebai"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "ismael-hijo-de-jehohanan",
+   "campo": "distinct_from",
+   "valores": [
+    "ismael-descendiente-de-pasjur"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "ismael-padre-de-zebadias",
+   "campo": "distinct_from",
+   "valores": [
+    "ismael-descendiente-de-pasjur"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jehiel-comisionado-de-ezequias",
+   "campo": "distinct_from",
+   "valores": [
+    "jehiel-descendiente-de-elam",
+    "jehiel-descendiente-de-harim",
+    "jehiel-padre-de-secanias"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jehiel-hijo-de-jehosafat",
+   "campo": "distinct_from",
+   "valores": [
+    "jehiel-descendiente-de-elam",
+    "jehiel-descendiente-de-harim",
+    "jehiel-padre-de-secanias"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jehiel-levita-de-ezequias",
+   "campo": "distinct_from",
+   "valores": [
+    "jehiel-descendiente-de-elam",
+    "jehiel-descendiente-de-harim",
+    "jehiel-padre-de-secanias"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jehiel-sacerdote-de-josias",
+   "campo": "distinct_from",
+   "valores": [
+    "jehiel-descendiente-de-elam",
+    "jehiel-descendiente-de-harim",
+    "jehiel-padre-de-secanias"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jehohanan-general-de-jehosafat",
+   "campo": "distinct_from",
+   "valores": [
+    "jehohanan-descendiente-de-bebai",
+    "jehohanan-hijo-de-eliasib"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jehohanan-padre-de-azarias",
+   "campo": "distinct_from",
+   "valores": [
+    "jehohanan-descendiente-de-bebai",
+    "jehohanan-hijo-de-eliasib"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jehohanan-padre-de-ismael",
+   "campo": "distinct_from",
+   "valores": [
+    "jehohanan-descendiente-de-bebai",
+    "jehohanan-hijo-de-eliasib"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jeiel-hijo-de-matanias",
+   "campo": "distinct_from",
+   "valores": [
+    "jeiel-descendiente-de-nebo"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jeiel-levita-de-josias",
+   "campo": "distinct_from",
+   "valores": [
+    "jeiel-descendiente-de-nebo"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jeiel-secretario",
+   "campo": "distinct_from",
+   "valores": [
+    "jeiel-descendiente-de-nebo"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "joel-levita-de-ezequias",
+   "campo": "distinct_from",
+   "valores": [
+    "joel-descendiente-de-nebo"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jozabad-comisionado-de-ezequias",
+   "campo": "distinct_from",
+   "valores": [
+    "jozabad-descendiente-de-pasjur",
+    "jozabad-levita-de-tiempos-de-esdras"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jozabad-levita-de-josias",
+   "campo": "distinct_from",
+   "valores": [
+    "jozabad-descendiente-de-pasjur",
+    "jozabad-levita-de-tiempos-de-esdras"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "maaseya-funcionario",
+   "campo": "distinct_from",
+   "valores": [
+    "maaseya-de-la-casa-de-jesua",
+    "maaseya-descendiente-de-harim",
+    "maaseya-descendiente-de-pahat-moab",
+    "maaseya-descendiente-de-pasjur"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "maaseya-hijo-de-adaya",
+   "campo": "distinct_from",
+   "valores": [
+    "maaseya-de-la-casa-de-jesua",
+    "maaseya-descendiente-de-harim",
+    "maaseya-descendiente-de-pahat-moab",
+    "maaseya-descendiente-de-pasjur"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "maaseya-hijo-del-rey",
+   "campo": "distinct_from",
+   "valores": [
+    "maaseya-de-la-casa-de-jesua",
+    "maaseya-descendiente-de-harim",
+    "maaseya-descendiente-de-pahat-moab",
+    "maaseya-descendiente-de-pasjur"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "maaseya-jefe-de-jerusalen",
+   "campo": "distinct_from",
+   "valores": [
+    "maaseya-de-la-casa-de-jesua",
+    "maaseya-descendiente-de-harim",
+    "maaseya-descendiente-de-pahat-moab",
+    "maaseya-descendiente-de-pasjur"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "matanias-antepasado-de-jahaziel",
+   "campo": "distinct_from",
+   "valores": [
+    "matanias-descendiente-de-bani",
+    "matanias-descendiente-de-elam",
+    "matanias-descendiente-de-pahat-moab",
+    "matanias-descendiente-de-zatu"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "matanias-levita-de-ezequias",
+   "campo": "distinct_from",
+   "valores": [
+    "matanias-descendiente-de-bani",
+    "matanias-descendiente-de-elam",
+    "matanias-descendiente-de-pahat-moab",
+    "matanias-descendiente-de-zatu"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "mesulam-levita-de-josias",
+   "campo": "distinct_from",
+   "valores": [
+    "mesulam-descendiente-de-bani",
+    "mesulam-levita-de-tiempos-de-esdras"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "netanel-levita-de-josias",
+   "campo": "distinct_from",
+   "valores": [
+    "netanel-descendiente-de-pasjur"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "netanel-principe-de-jehosafat",
+   "campo": "distinct_from",
+   "valores": [
+    "netanel-descendiente-de-pasjur"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "salum-padre-de-jehizquias",
+   "campo": "distinct_from",
+   "valores": [
+    "salum-descendiente-de-binui",
+    "salum-portero-de-tiempos-de-esdras"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "secanias-ayudante-de-core",
+   "campo": "distinct_from",
+   "valores": [
+    "secanias-hijo-de-jehiel"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "semarias-hijo-de-rehoboam",
+   "campo": "distinct_from",
+   "valores": [
+    "semarias-descendiente-de-binui",
+    "semarias-descendiente-de-harim"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "semaya-ayudante-de-core",
+   "campo": "distinct_from",
+   "valores": [
+    "semaya-descendiente-de-harim",
+    "semaya-sacerdote-descendiente-de-harim"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "semaya-levita-de-ezequias",
+   "campo": "distinct_from",
+   "valores": [
+    "semaya-descendiente-de-harim",
+    "semaya-sacerdote-descendiente-de-harim"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "semaya-levita-de-jehosafat",
+   "campo": "distinct_from",
+   "valores": [
+    "semaya-descendiente-de-harim",
+    "semaya-sacerdote-descendiente-de-harim"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "semaya-levita-de-josias",
+   "campo": "distinct_from",
+   "valores": [
+    "semaya-descendiente-de-harim",
+    "semaya-sacerdote-descendiente-de-harim"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "simei-hermano-de-conanias",
+   "campo": "distinct_from",
+   "valores": [
+    "simei-descendiente-de-binui",
+    "simei-descendiente-de-hasum",
+    "simei-levita-de-tiempos-de-esdras"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "simei-levita-de-ezequias",
+   "campo": "distinct_from",
+   "valores": [
+    "simei-descendiente-de-binui",
+    "simei-descendiente-de-hasum",
+    "simei-levita-de-tiempos-de-esdras"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "zacarias-consejero-de-uzias",
+   "campo": "distinct_from",
+   "valores": [
+    "zacarias-descendiente-de-elam"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "zacarias-hijo-de-benaya",
+   "campo": "distinct_from",
+   "valores": [
+    "zacarias-descendiente-de-elam"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "zacarias-hijo-de-jehosafat",
+   "campo": "distinct_from",
+   "valores": [
+    "zacarias-descendiente-de-elam"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "zacarias-levita-de-ezequias",
+   "campo": "distinct_from",
+   "valores": [
+    "zacarias-descendiente-de-elam"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "zacarias-levita-de-josias",
+   "campo": "distinct_from",
+   "valores": [
+    "zacarias-descendiente-de-elam"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "zacarias-principe-de-jehosafat",
+   "campo": "distinct_from",
+   "valores": [
+    "zacarias-descendiente-de-elam"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "zacarias-sacerdote-de-josias",
+   "campo": "distinct_from",
+   "valores": [
+    "zacarias-descendiente-de-elam"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "zebadias-hijo-de-ismael",
+   "campo": "distinct_from",
+   "valores": [
+    "zebadias-descendiente-de-imer"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "zebadias-levita-de-jehosafat",
+   "campo": "distinct_from",
+   "valores": [
+    "zebadias-descendiente-de-imer"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "people",
+   "id": "semarias-hijo-de-rehoboam",
+   "campo": "disambiguation",
+   "antes": "Semarías hijo de Rehoboam (2Cr 11:19); no el guerrero benjaminita que se unió a David en Ziclag ni los de Esdras 10.",
+   "despues": "Semarías hijo de Rehoboam (2Cr 11:19); no el guerrero benjaminita que se unió a David en Ziclag ni los dos Semarías de los días de Esdras.",
+   "historial": {
+    "date": "2026-10-13",
+    "change": "Ya no cita Esdras 10, que no lo nombra: los homónimos de ese capítulo tienen ficha y van en distinct_from.",
+    "source": "esdras-10"
+   }
+  }
+ ],
+ "preguntas": [
+  "Esd 7:3 (Azarías): la referencia del versículo lleva a 2Cr 31:10 y Perspicacia «Amarías», núm. 4, cita 1Cr 6:11 y Esd 7:3 para un solo Amarías hijo de Azarías. Se quitaron los distinct_from entre azarias-hijo-de-merayot (núm. 18) y azarias-hijo-de-johanan (núm. 14) y se puso un same_as possible, deducido, en azarias-hijo-de-johanan. Esdras 7 queda pending solo por esto: si el dueño lo acepta, pasa a complete sin más cambios.",
+  "Esd 8:10 (Baní): «de los hijos de Baní» no lleva referencia, y Perspicacia «Baní» no cita Esd 8:10 en ninguna entrada; «Selomit», núm. 6, y «Josifías» solo hablan de la casa paterna de Baní. Queda en la nota del tramo, sin ficha ni relación, y Esdras 8 sigue pending. ¿Se liga a bani-cabeza-de-familia (núm. 4, Esd 2:10), se crea una ficha sin clave con una excepción de homónimo, o se deja así?",
+  "Esd 8:24 (Serebías): ahora son dos fichas, serebias-descendiente-de-mahli (núm. 2, Esd 8:18) y serebias-jefe-de-los-sacerdotes (sin clave, Esd 8:24), con same_as probable, como Hasabías. Perspicacia llama levita al núm. 2; la ficha de 8:24 lleva holds_office priest porque el texto lo cuenta entre los jefes de los sacerdotes.",
+  "azarias-hijo-de-merayot y azarias-sacerdote-de-tiempos-de-uzias siguen con distinct_from: ninguna fuente los une directamente, aunque los dos son posibles identidades del núm. 14."
+ ]
+}

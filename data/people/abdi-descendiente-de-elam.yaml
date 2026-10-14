@@ -1,0 +1,33 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: abdi-descendiente-de-elam
+name: Abdí
+names:
+- name: Abdí
+perspicacia: 1200000014#3
+summary: Israelita de los hijos de Elam. Estaba casado con extranjeras y, cuando Esdras corrigió esos matrimonios (468-467
+  a.e.c.), las despidió junto con sus hijos.
+reason: Perspicacia «Abdí», núm. 3; Esd 10:26, 44.
+sources:
+- it-abdi
+- esdras-10
+links:
+- title: 'Perspicacia: «Abdí»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Abd%C3%AD/
+  type: perspicacia
+relations:
+- type: kin
+  person: elam-cabeza-de-familia
+  word: ancestor
+  sources:
+  - esdras-10
+  - it-abdi
+  reason: Esd 10:26 lo pone entre los hijos de Elam; Perspicacia «Abdí», núm. 3.
+  inferred: false
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified
+disambiguation: El de los hijos de Elam de Esd 10:26; no los demás Abdí que registra Perspicacia.
+distinct_from:
+- abdi-hijo-de-maluc
+- abdi-padre-de-quis

@@ -1,0 +1,65 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: zebadias-hijo-de-miguel
+name: Zebadías
+names:
+- name: Zebadías
+perspicacia: 1200004670#8
+disambiguation: El hijo de Miguel que volvió con Esdras (Esd 8:8), núm. 8 de Perspicacia; no los otros Zebadías que numera.
+distinct_from:
+- zebadias-descendiente-de-berias
+- zebadias-descendiente-de-elpaal
+- zebadias-hijo-de-asahel
+- zebadias-hijo-de-jeroham
+- zebadias-hijo-de-meselemias
+- zebadias-hijo-de-ismael
+- zebadias-levita-de-jehosafat
+- zebadias-descendiente-de-imer
+summary: Hijo de Miguel. Guio a 80 varones de la casa de Sefatías en el viaje de Esdras de 468 a.e.c.
+reason: Perspicacia «Zebadías», núm. 8; Esd 8:1, 8.
+sources:
+- it-zebadias
+- esdras-8
+links:
+- title: 'Perspicacia: «Zebadías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zebad%C3%ADas/
+  type: perspicacia
+relations:
+- type: kin
+  person: miguel-padre-de-zebadias
+  word: father
+  inferred: false
+  sources:
+  - esdras-8
+  - it-zebadias
+  reason: 'Esd 8:8: Zebadías hijo de Miguel.'
+  checked_on: '2026-10-13'
+  status: verified
+- type: kin
+  person: sefatias-cabeza-de-familia
+  word: ancestor
+  inferred: false
+  sources:
+  - esdras-8
+  - it-zebadias
+  reason: 'Esd 8:8: de los hijos de Sefatías.'
+  checked_on: '2026-10-13'
+  status: verified
+- type: accompanies
+  person: esdras
+  date:
+    from: -467
+    to: -467
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 468 a.e.c.
+  inferred: false
+  sources:
+  - esdras-8
+  - it-zebadias
+  reason: 'Esd 8:1, 8: subió con Esdras con 80 varones.'
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified

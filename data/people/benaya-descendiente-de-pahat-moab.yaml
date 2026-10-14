@@ -1,0 +1,41 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: benaya-descendiente-de-pahat-moab
+name: Benaya
+names:
+- name: Benaya
+perspicacia: 1200000632#10
+summary: Israelita de los hijos de Pahat-Moab. Estaba casado con extranjeras y, cuando Esdras corrigió esos matrimonios (468-467
+  a.e.c.), las despidió junto con sus hijos.
+reason: Perspicacia «Benaya», núm. 10; Esd 10:30, 44.
+sources:
+- it-benaya
+- esdras-10
+links:
+- title: 'Perspicacia: «Benaya»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Benaya/
+  type: perspicacia
+relations:
+- type: kin
+  person: pahat-moab
+  word: ancestor
+  sources:
+  - esdras-10
+  - it-benaya
+  reason: Esd 10:30 lo pone entre los hijos de Pahat-Moab; Perspicacia «Benaya», núm. 10.
+  inferred: false
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified
+disambiguation: El de los hijos de Pahat-Moab de Esd 10:30; no los demás Benaya que registra Perspicacia.
+distinct_from:
+- benaya-comisionado-de-ezequias
+- benaya-descendiente-de-bani
+- benaya-descendiente-de-nebo
+- benaya-descendiente-de-paros
+- benaya-el-piratonita
+- benaya-hijo-de-jehoiada
+- benaya-hijo-de-jeiel
+- benaya-musico
+- benaya-simeonita
+- benaya-trompetista

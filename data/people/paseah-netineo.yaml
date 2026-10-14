@@ -1,0 +1,20 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: paseah-netineo
+name: Paséah
+names:
+- name: Paséah
+perspicacia: 1200003395#2
+summary: Sus descendientes, siervos del templo o netineos, se cuentan entre los que volvieron de Babilonia en 537 a.e.c.
+reason: Perspicacia «Paséah», núm. 2; Esd 2:49.
+sources:
+- it-paseah
+- esdras-2
+links:
+- title: 'Perspicacia: «Paséah»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Pas%C3%A9ah/
+  type: perspicacia
+checked_on: '2026-10-13'
+status: verified
+distinct_from:
+- paseah-hijo-de-eston
+disambiguation: 'Paséah núm. 2 de Perspicacia: antepasado de netineos (Esd 2:49), no el descendiente de Judá.'

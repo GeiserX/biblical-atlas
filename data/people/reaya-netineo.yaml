@@ -1,0 +1,21 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: reaya-netineo
+name: Reayá
+names:
+- name: Reayá
+perspicacia: 1200003654#3
+summary: Sus descendientes, siervos del templo o netineos, se cuentan entre los que volvieron de Babilonia en 537 a.e.c.
+reason: Perspicacia «Reayá», núm. 3; Esd 2:47.
+sources:
+- it-reaya
+- esdras-2
+links:
+- title: 'Perspicacia: «Reayá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Reay%C3%A1/
+  type: perspicacia
+checked_on: '2026-10-13'
+status: verified
+distinct_from:
+- reaya-hijo-de-miqueas
+- reaya-hijo-de-sobal
+disambiguation: 'Reayá núm. 3 de Perspicacia: antepasado de netineos (Esd 2:47), no el descendiente de Judá ni el rubenita.'

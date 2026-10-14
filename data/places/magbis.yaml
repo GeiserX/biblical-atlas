@@ -1,0 +1,26 @@
+# biblical-atlas: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: magbis
+name: Magbís
+names:
+- name: Magbís
+type: city
+lat: 31.63816
+lon: 34.95317
+precision: uncertain
+coord_source: openbible:ac041e2
+coord_url: https://www.openbible.info/geo/ancient/ac041e2/magbish
+coord_note: Khirbet el Makhbiyeh, primera identificación de OpenBible, que Perspicacia recoge como propuesta tentativa. Perspicacia
+  no sabe si Magbís es un lugar o una persona.
+summary: Nombre de los 156 hijos de Magbís que volvieron del destierro. Perspicacia no decide si es un lugar o una persona;
+  hay quien lo sitúa unos 5 km al suroeste de Adulam.
+reason: 'Perspicacia «Magbís»; Esd 2:30. OpenBible: solo el punto.'
+sources:
+- it-magbis
+- openbible-geo
+- esdras-2
+links:
+- title: 'Perspicacia: «Magbís»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Magb%C3%ADs/
+  type: perspicacia
+checked_on: '2026-10-13'
+status: verified

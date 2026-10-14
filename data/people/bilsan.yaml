@@ -1,0 +1,26 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: bilsan
+name: Bilsán
+names:
+- name: Bilsán
+perspicacia: '1200000740'
+summary: Hombre destacado del primer grupo de desterrados que volvió, guiado por Zorobabel, en 537 a.e.c.
+reason: Perspicacia «Bilsán»; Esd 2:2.
+sources:
+- it-bilsan
+- esdras-2
+links:
+- title: 'Perspicacia: «Bilsán»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Bils%C3%A1n/
+  type: perspicacia
+relations:
+- type: lived_in
+  place: juda
+  inferred: false
+  sources:
+  - esdras-2
+  reason: 'Esd 2:1, 2: volvió con Zorobabel a Jerusalén y Judá, donde cada familia fue a su ciudad.'
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified

@@ -1,0 +1,39 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hananias-descendiente-de-bebai
+name: Hananías
+names:
+- name: Hananías
+perspicacia: 1200001853#9
+summary: Israelita de los hijos de Bebái. Estaba casado con extranjeras y, cuando Esdras corrigió esos matrimonios (468-467
+  a.e.c.), las despidió junto con sus hijos.
+reason: Perspicacia «Hananías», núm. 9; Esd 10:28, 44.
+sources:
+- it-hananias
+- esdras-10
+links:
+- title: 'Perspicacia: «Hananías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hanan%C3%ADas/
+  type: perspicacia
+relations:
+- type: kin
+  person: bebai-cabeza-de-familia
+  word: ancestor
+  sources:
+  - esdras-10
+  - it-hananias
+  reason: Esd 10:28 lo pone entre los hijos de Bebái; Perspicacia «Hananías», núm. 9.
+  inferred: false
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified
+disambiguation: El de los hijos de Bebái de Esd 10:28; no los demás Hananías que registra Perspicacia.
+distinct_from:
+- hananias-abuelo-de-iriya
+- hananias-hijo-de-azur
+- hananias-hijo-de-heman
+- hananias-hijo-de-sasac
+- hananias-hijo-de-zorobabel
+- hananias-padre-de-sedequias
+- hananias-principe-de-uzias
+- sadrac

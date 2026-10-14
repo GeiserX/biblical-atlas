@@ -1,0 +1,43 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hanani-descendiente-de-imer
+name: Hananí
+names:
+- name: Hananí
+perspicacia: 1200001852#3
+summary: Sacerdote de los hijos de Imer. Estaba casado con extranjeras y, cuando Esdras corrigió esos matrimonios (468-467
+  a.e.c.), las despidió junto con sus hijos.
+reason: Perspicacia «Hananí», núm. 3; Esd 10:20, 44.
+sources:
+- it-hanani
+- esdras-10
+links:
+- title: 'Perspicacia: «Hananí»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hanan%C3%AD/
+  type: perspicacia
+relations:
+- type: kin
+  person: imer-de-tiempos-de-david
+  word: ancestor
+  sources:
+  - esdras-10
+  - it-hanani
+  reason: Esd 10:20 lo pone entre los hijos de Imer; Perspicacia «Hananí», núm. 3. «Hijos» vale aquí por descendientes, como
+    dice Perspicacia «Harim», núm. 1.
+  inferred: false
+  checked_on: '2026-10-13'
+  status: verified
+- type: holds_office
+  office: priest
+  sources:
+  - esdras-10
+  - it-hanani
+  reason: 'Esd 10:18-22: va en la lista de los hijos de los sacerdotes; Perspicacia lo llama sacerdote.'
+  inferred: false
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified
+disambiguation: El sacerdote de los hijos de Imer de Esd 10:20; no los demás Hananí que registra Perspicacia.
+distinct_from:
+- hanani-hijo-de-heman
+- hanani-vidente

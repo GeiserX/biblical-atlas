@@ -1,0 +1,49 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jahzeya
+name: Jahzeya
+names:
+- name: Jahzeya
+perspicacia: '1200002300'
+summary: 'Hijo de Ticvá. Con Jonatán se opuso a lo acordado en la asamblea de Jerusalén. Perspicacia recoge otra lectura:
+  que ambos actuaron en nombre del pueblo en ese asunto.'
+reason: Perspicacia «Jahzeya»; Esd 10:15.
+sources:
+- it-jahzeya
+- esdras-10
+links:
+- title: 'Perspicacia: «Jahzeya»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jahzeya/
+  type: perspicacia
+relations:
+- type: kin
+  person: ticva-padre-de-jahzeya
+  word: father
+  sources:
+  - esdras-10
+  - it-jahzeya
+  reason: Esd 10:15 lo llama Jahzeya hijo de Ticvá.
+  inferred: false
+  checked_on: '2026-10-13'
+  status: verified
+- type: tie
+  person: mesulam-levita-de-tiempos-de-esdras
+  word: ally
+  sources:
+  - esdras-10
+  - it-jahzeya
+  reason: 'Esd 10:15: el levita Mesulam se pone de su lado.'
+  inferred: false
+  checked_on: '2026-10-13'
+  status: verified
+- type: tie
+  person: sabetai
+  word: ally
+  sources:
+  - esdras-10
+  - it-jahzeya
+  reason: 'Esd 10:15: el levita Sabetái se pone de su lado.'
+  inferred: false
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified

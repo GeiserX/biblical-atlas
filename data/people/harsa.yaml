@@ -1,0 +1,17 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: harsa
+name: Harsá
+names:
+- name: Harsá
+perspicacia: '1200001894'
+summary: Sus descendientes, siervos del templo o netineos, se cuentan entre los que volvieron de Babilonia en 537 a.e.c.
+reason: Perspicacia «Harsá»; Esd 2:52.
+sources:
+- it-harsa
+- esdras-2
+links:
+- title: 'Perspicacia: «Harsá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hars%C3%A1/
+  type: perspicacia
+checked_on: '2026-10-13'
+status: verified

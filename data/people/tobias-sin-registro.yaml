@@ -1,0 +1,18 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: tobias-sin-registro
+name: Tobías
+names:
+- name: Tobías
+perspicacia: 1200004437#1
+summary: Antepasado de unos repatriados que no pudieron demostrar su ascendencia israelita al volver a Jerusalén.
+reason: Perspicacia «Tobías», núm. 1; Esd 2:60.
+sources:
+- it-tobias
+- esdras-2
+links:
+- title: 'Perspicacia: «Tobías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Tob%C3%ADas/
+  type: perspicacia
+checked_on: '2026-10-13'
+status: verified
+disambiguation: 'Tobías núm. 1 de Perspicacia: antepasado de los que no probaron su origen (Esd 2:60), no el opositor de Nehemías.'
