@@ -16,6 +16,7 @@ reason: Perspicacia «Arquipo»; Col 4:17 y Flm 2.
 sources:
 - it-arquipo
 - colosenses-4
+- filemon-1
 links:
 - title: 'Perspicacia: «Arquipo»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Arquipo/
@@ -29,7 +30,7 @@ history:
   change: 'La relación con Filemón decía «quizás hijo», que en esta ficha hacía a Filemón hijo de Arquipo. Perspicacia «Filemón»
     ve posible lo contrario: pasa a «quizás padre». La de Colosas cita Col 4:17.'
   source: it-filemon
-checked_on: '2026-09-29'
+checked_on: '2026-10-14'
 status: verified
 relations:
 - type: lived_in
@@ -38,16 +39,18 @@ relations:
   sources:
   - it-arquipo
   - colosenses-4
+  - filemon-1
   reason: Perspicacia deduce de las dos cartas que vivía en Colosas o cerca (Col 4:17; Flm 2).
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-14'
   status: verified
 - type: kin
   person: filemon
   inferred: true
   sources:
   - it-filemon
+  - filemon-1
   reason: 'Perspicacia «Filemón» cree posible que Arquipo fuera su hijo (Flm 2). Ni el texto ni la fuente lo afirman: queda
     deducido y pendiente.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-14'
   word: father
   status: pending

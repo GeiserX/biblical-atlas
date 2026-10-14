@@ -22,6 +22,7 @@ people:
 present: []
 passages:
 - Nú 17:1-13
+- Heb 9:4
 summary: Tras la rebelión de Coré, cada tribu deja una vara con el nombre de su jefe en la tienda del Testimonio. La de Aarón,
   por Leví, amanece con flores y almendras, y se guarda allí como señal contra las quejas.
 reason: 'Perspicacia «Aarón» y «Coré», núm. 3: la vara confirmó a Aarón como sumo sacerdote. El texto no nombra el campamento
@@ -32,6 +33,8 @@ sources:
 - it-core
 - it-numeros-libro
 - tnm-tabla
+- it-arca-del-pacto
+- w06-contenido-del-arca
 links:
 - title: Números 17 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/N%C3%BAmeros/17/
@@ -42,5 +45,5 @@ links:
 - title: 'Perspicacia: «Coré»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Cor%C3%A9/
   type: perspicacia
-checked_on: '2026-09-29'
+checked_on: '2026-10-14'
 status: verified

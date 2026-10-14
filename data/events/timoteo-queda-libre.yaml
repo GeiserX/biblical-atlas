@@ -1,0 +1,43 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: timoteo-queda-libre
+title: Timoteo queda libre
+date:
+  from: 60
+  to: 61
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'c. 60-61 e.c. (tiempo narrativo: entre las cartas a los Filipenses y a los Hebreos)'
+narrative_order:
+  series: hechos
+  order: 2841
+places:
+- roma
+people:
+- timoteo
+present:
+- timoteo
+passages:
+- Heb 13:23
+summary: Timoteo, que al parecer estuvo preso en Roma después de escribirse Filipenses, sale en libertad. Pablo lo cuenta
+  a los hebreos y piensa visitarlos con él si llega pronto.
+reason: 'Perspicacia «Timoteo», párr. 5: parece que estuvo preso en Roma entre Filipenses (c. 60-61) y Hebreos (c. 61, Heb
+  13:23). Perspicacia «Hebreos» fecha la carta por esta liberación.'
+sources:
+- hebreos-13
+- it-timoteo
+- it-hebreos
+- tnm-tabla
+links:
+- title: Hebreos 13 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/hebreos/13/
+  type: bible
+- title: 'Perspicacia: «Timoteo»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Timoteo/
+  type: perspicacia
+note: 'Orden 2841 de la serie hechos, compartido con pablo-escribe-hebreos, como el 2831 de dos sucesos de Roma: la fecha
+  sola no lo separa de Filipenses (2839, 2840) y Perspicacia «Timoteo» pone el encierro entre las dos cartas.'
+search: Timoteo liberado Roma
+checked_on: '2026-10-14'
+status: verified

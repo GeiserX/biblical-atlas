@@ -19,6 +19,7 @@ sources:
 - si-3
 - it-melquisedec
 - genesis-14
+- hebreos-7
 links:
 - title: 'Perspicacia: «Melquisedec»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Melquisedec/
@@ -35,8 +36,9 @@ relations:
   sources:
   - it-melquisedec
   - genesis-14
+  - hebreos-7
   reason: 'Perspicacia «Melquisedec», párr. 2: era rey de Salem, que se cree el núcleo de la Jerusalén posterior (Sl 76:2).'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-14'
   status: verified
 - type: holds_office
   office: king
@@ -44,8 +46,9 @@ relations:
   sources:
   - genesis-14
   - it-melquisedec
+  - hebreos-7
   reason: Gé 14:18 lo llama rey de Salem.
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-14'
   status: verified
 - type: holds_office
   office: priest
@@ -53,9 +56,10 @@ relations:
   sources:
   - genesis-14
   - it-melquisedec
+  - hebreos-7
   reason: Gé 14:18 lo llama sacerdote del Dios Altísimo; Perspicacia «Melquisedec» dice que es el primer sacerdote que nombra
     la Biblia.
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-14'
   status: verified
 perspicacia: '1200002970'
 history:
@@ -63,5 +67,5 @@ history:
   change: El estudio 3 y Perspicacia lo sitúan antes de 1933 a.e.c., no hacia 1933. Su único hecho fechable cae entre la llegada
     de Abrán a Canaán (1943) y 1933.
   source: genesis-14
-checked_on: '2026-09-29'
+checked_on: '2026-10-14'
 status: verified
