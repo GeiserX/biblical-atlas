@@ -5,5 +5,5 @@
 unlisted_caption 3
 kin_without_word 1
 bare_company 2
-no_reference 27
+no_reference 26
 shared_point 1

@@ -440,3 +440,10 @@ Los campos, los tipos de relación y sus palabras se nombran como en el esquema 
 ## Para quien relea Jerusalén o el monte Moria (desde Ezequiel)
 
 - **Puertas del templo.** `jerusalen` lleva en `names` dos puertas del templo, la Puerta superior de la casa de Jehová (2Re 15:35) y la Puerta del Rey (1Cr 9:18), y `monte-moria` lleva las demás. Ezequiel 9 y 10 no las movieron: hace falta decidir si pasan a `monte-moria`.
+
+## Para 3 Juan y Judas (desde 2 Juan)
+
+- **El suceso de escritura.** `juan-escribe-2-juan` copia el modelo de `juan-escribe-1-juan`: `type: writing`, papel `wrote`, `efeso`, c. 98 anclado y orden 2981 de `hechos`, elegido por nosotros. El de 3 Juan toma el siguiente libre, 2982, y cita el saludo y cada versículo donde Juan habla de escribir. Si `hechos` vale para 98 sigue siendo pregunta abierta.
+- **«El anciano».** `juan-apostol` ya lleva ese nombre en `names` (2Jn 1; «Toda Escritura», libro 63, párr. 2). 3 Juan 1 solo añade su capítulo a `sources`. Si el vocabulario gana el cargo `elder`, la relación `holds_office` cita los dos capítulos.
+- **Juan en Éfeso.** La relación `lived_in` `efeso` de 98 cita 1 Juan 1 y 2 Juan 1 y va en el primer tramo de las dos, aunque ninguna carta nombra Éfeso. Es pregunta abierta al dueño: si la acepta, 3 Juan hace lo mismo; si no, se quita el capítulo de las tres y Éfeso queda en el suceso de escritura y en `written_in`.
+- **Fuente común.** `w08-cartas-de-juan-y-judas` está en las fuentes de 1 Juan y de 2 Juan con los mismos datos. 3 Juan y Judas usan ese mismo id.
