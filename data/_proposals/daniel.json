@@ -1,0 +1,2968 @@
+{
+ "formato": "biblical-atlas/propuesta-cobertura/1",
+ "libro": "daniel",
+ "agente": "escritor-daniel",
+ "leido": "2026-10-14",
+ "cobertura": {},
+ "fuentes": {},
+ "cambios": [
+  {
+   "op": "anadir",
+   "tipo": "events",
+   "id": "nabucodonosor-se-lleva-a-joaquin-a-babilonia",
+   "campo": "passages",
+   "valores": [
+    "Da 1:1, 2"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "events",
+   "id": "nabucodonosor-se-lleva-a-joaquin-a-babilonia",
+   "campo": "people",
+   "valores": [
+    "daniel",
+    "sadrac",
+    "mesac",
+    "abednego"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "events",
+   "id": "nabucodonosor-se-lleva-a-joaquin-a-babilonia",
+   "campo": "sources",
+   "valores": [
+    "daniel-1",
+    "it-daniel",
+    "it-mesac",
+    "dp-3"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "events",
+   "id": "daniel-llevado-a-babilonia",
+   "campo": "title",
+   "antes": "Daniel y sus compañeros, llevados a Babilonia",
+   "despues": "Aspenaz escoge a Daniel y a sus compañeros para la corte",
+   "historial": {
+    "date": "2026-10-14",
+    "change": "El suceso queda en la escena de Babilonia (Da 1:3-7). El sitio y el destierro de 617 son nabucodonosor-se-lleva-a-joaquin-a-babilonia, como dicen Perspicacia «Jehoiaquim» y «Daniel», núm. 2.",
+    "source": "it-jehoiaquim"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "events",
+   "id": "daniel-llevado-a-babilonia",
+   "campo": "places",
+   "antes": [
+    "jerusalen",
+    "babilonia"
+   ],
+   "despues": [
+    "babilonia"
+   ],
+   "historial": {
+    "date": "2026-10-14",
+    "change": "Solo Babilonia: allí les ponen nombre y empieza su formación (Perspicacia «Sadrac»). Jerusalén queda en el suceso del destierro.",
+    "source": "it-sadrac"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "events",
+   "id": "daniel-llevado-a-babilonia",
+   "campo": "people",
+   "antes": [
+    "daniel",
+    "sadrac",
+    "mesac",
+    "abednego",
+    "nabucodonosor-ii",
+    "joaquin",
+    "ezequiel"
+   ],
+   "despues": [
+    "daniel",
+    "sadrac",
+    "mesac",
+    "abednego",
+    "nabucodonosor-ii",
+    "aspenaz"
+   ],
+   "historial": {
+    "date": "2026-10-14",
+    "change": "Joaquín y Ezequiel pasan al suceso del destierro, que ya los lleva; entra Aspenaz, que escoge a los jóvenes y les cambia el nombre (Da 1:3, 7).",
+    "source": "daniel-1"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "events",
+   "id": "daniel-llevado-a-babilonia",
+   "campo": "passages",
+   "antes": [
+    "Da 1:1-7",
+    "2Re 24:12-16"
+   ],
+   "despues": [
+    "Da 1:3-7"
+   ],
+   "historial": {
+    "date": "2026-10-14",
+    "change": "Da 1:1, 2 y 2Re 24:12-16 cuentan el sitio y el destierro: van en nabucodonosor-se-lleva-a-joaquin-a-babilonia.",
+    "source": "daniel-1"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "events",
+   "id": "daniel-llevado-a-babilonia",
+   "campo": "summary",
+   "antes": "Nabucodonosor se llevó a Babilonia al rey Joaquín y a los primeros cautivos. Entre los jóvenes nobles iban Daniel, Hananías, Misael y Azarías, a los que se educó tres años para servir en la corte.",
+   "despues": "En Babilonia, el rey manda a Aspenaz traer jóvenes israelitas de la realeza y la nobleza para servir en el palacio. Entre ellos están Daniel, Hananías, Misael y Azarías, que reciben los nombres de Beltsasar, Sadrac, Mesac y Abednego.",
+   "historial": {
+    "date": "2026-10-14",
+    "change": "El resumen cuenta ya solo la escena de Da 1:3-7.",
+    "source": "daniel-1"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "events",
+   "id": "daniel-llevado-a-babilonia",
+   "campo": "reason",
+   "antes": "Estudio 3, tabla de sucesos (617); Perspicacia «Daniel», núm. 2 (a principios de 617), y «Mesac». «Ezequiel», párr. 1, lo cuenta entre esos cautivos, con el rey Joaquín.",
+   "despues": "Estudio 3 (617). Perspicacia «Daniel», núm. 2, «Bajo el dominio babilonio», y «Sadrac»: ya en Babilonia, no junto al Kebar con los demás desterrados, los escogen, les cambian el nombre y los forman. El traslado es nabucodonosor-se-lleva-a-joaquin-a-babilonia.",
+   "historial": {
+    "date": "2026-10-14",
+    "change": "La razón cita el párrafo de Perspicacia «Daniel» que pone en Babilonia la elección y el cambio de nombre; el traslado es el suceso de 2 Reyes.",
+    "source": "daniel-1"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "events",
+   "id": "daniel-llevado-a-babilonia",
+   "campo": "sources",
+   "antes": [
+    "si-3",
+    "it-daniel",
+    "it-mesac",
+    "it-ezequiel",
+    "daniel-1"
+   ],
+   "despues": [
+    "si-3",
+    "it-daniel",
+    "it-sadrac",
+    "it-mesac",
+    "it-aspenaz",
+    "dp-3",
+    "daniel-1"
+   ],
+   "historial": {
+    "date": "2026-10-14",
+    "change": "Sale «Ezequiel», que solo sostenía su presencia en el destierro; entran «Sadrac», «Aspenaz» y el cap. 3 de «Prestemos atención a las profecías de Daniel».",
+    "source": "daniel-1"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "events",
+   "id": "daniel-llevado-a-babilonia",
+   "campo": "narrative_order",
+   "antes": null,
+   "despues": {
+    "series": "daniel",
+    "order": 1003,
+    "after": "nabucodonosor-se-lleva-a-joaquin-a-babilonia"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jehoiaquim",
+   "campo": "sources",
+   "valores": [
+    "daniel-1",
+    "dp-3"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jehoiaquim",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "tie",
+     "person": "nabucodonosor-ii",
+     "word": "master",
+     "date": {
+      "from": -619,
+      "to": -617,
+      "precision": "range",
+      "approx": false,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "620-618 a.e.c."
+     },
+     "inferred": false,
+     "sources": [
+      "daniel-1",
+      "dp-3"
+     ],
+     "reason": "Da 1:1 fecha el sitio en el tercer año de Jehoiaquim, que Perspicacia «Jehoiaquim» y dp, cap. 3, párr. 4, cuentan como vasallo de Babilonia: 618.",
+     "checked_on": "2026-10-14",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "nabucodonosor-ii",
+   "campo": "sources",
+   "valores": [
+    "daniel-1",
+    "dp-3"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "daniel",
+   "campo": "sources",
+   "valores": [
+    "dp-3"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "daniel",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "tie",
+     "person": "aspenaz",
+     "word": "custodian",
+     "inferred": false,
+     "sources": [
+      "daniel-1",
+      "it-aspenaz",
+      "dp-3"
+     ],
+     "reason": "Da 1:3-10: Aspenaz lo trae a la corte, le pone nombre y responde ante el rey de lo que come; Perspicacia «Aspenaz» dice que formaba a los jóvenes.",
+     "checked_on": "2026-10-14",
+     "status": "verified"
+    },
+    {
+     "type": "tie",
+     "person": "nabucodonosor-ii",
+     "word": "master",
+     "inferred": false,
+     "sources": [
+      "daniel-1",
+      "it-daniel"
+     ],
+     "reason": "Da 1:19, 20 y 2:48, 49: tras el examen se queda al servicio del rey, que luego lo pone sobre la provincia y lo mantiene en su corte.",
+     "checked_on": "2026-10-14",
+     "status": "verified"
+    },
+    {
+     "type": "lived_in",
+     "place": "jerusalen",
+     "date": {
+      "from": -616,
+      "to": -616,
+      "precision": "year",
+      "approx": true,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "hasta 617 a.e.c."
+     },
+     "inferred": true,
+     "sources": [
+      "daniel-1",
+      "dp-3",
+      "it-daniel"
+     ],
+     "reason": "Da 1:1-6: era de los jóvenes nobles de Judá llevados tras el sitio de Jerusalén; dp, cap. 3, párr. 8, los cuenta entre lo mejor de los jóvenes de la ciudad.",
+     "checked_on": "2026-10-14",
+     "status": "verified"
+    },
+    {
+     "type": "holds_office",
+     "office": "prophet",
+     "inferred": true,
+     "sources": [
+      "daniel-1",
+      "it-daniel"
+     ],
+     "reason": "Perspicacia «Daniel», núm. 2, lo llama profeta de Jehová. Da 1:17: Dios le da entender toda clase de visiones y sueños.",
+     "checked_on": "2026-10-14",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "sadrac",
+   "campo": "sources",
+   "valores": [
+    "dp-3"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "sadrac",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "tie",
+     "person": "aspenaz",
+     "word": "custodian",
+     "inferred": false,
+     "sources": [
+      "daniel-1",
+      "it-aspenaz",
+      "dp-3"
+     ],
+     "reason": "Da 1:3-11: Aspenaz trae a los cuatro jóvenes, les cambia el nombre y se ocupa de su formación y su comida.",
+     "checked_on": "2026-10-14",
+     "status": "verified"
+    },
+    {
+     "type": "tie",
+     "person": "nabucodonosor-ii",
+     "word": "master",
+     "inferred": false,
+     "sources": [
+      "daniel-1",
+      "it-sadrac"
+     ],
+     "reason": "Da 1:19: tras el examen, los cuatro se quedan al servicio del rey.",
+     "checked_on": "2026-10-14",
+     "status": "verified"
+    },
+    {
+     "type": "lived_in",
+     "place": "jerusalen",
+     "date": {
+      "from": -616,
+      "to": -616,
+      "precision": "year",
+      "approx": true,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "hasta 617 a.e.c."
+     },
+     "inferred": true,
+     "sources": [
+      "daniel-1",
+      "it-mesac",
+      "dp-3"
+     ],
+     "reason": "Da 1:3, 6: de los jóvenes de Judá; Perspicacia «Mesac» dice que a los cuatro los llevaron cautivos desde Jerusalén en 617.",
+     "checked_on": "2026-10-14",
+     "status": "verified"
+    },
+    {
+     "type": "lived_in",
+     "place": "babilonia",
+     "inferred": false,
+     "sources": [
+      "daniel-1",
+      "it-sadrac"
+     ],
+     "reason": "Da 1:3-7, 19: lo traen a Babilonia, lo forman tres años y queda al servicio del rey. Perspicacia «Sadrac»: allí recibieron nombre y formación.",
+     "checked_on": "2026-10-14",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "mesac",
+   "campo": "sources",
+   "valores": [
+    "dp-3"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "mesac",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "tie",
+     "person": "aspenaz",
+     "word": "custodian",
+     "inferred": false,
+     "sources": [
+      "daniel-1",
+      "it-aspenaz",
+      "dp-3"
+     ],
+     "reason": "Da 1:3-11: Aspenaz trae a los cuatro jóvenes, les cambia el nombre y se ocupa de su formación y su comida.",
+     "checked_on": "2026-10-14",
+     "status": "verified"
+    },
+    {
+     "type": "tie",
+     "person": "nabucodonosor-ii",
+     "word": "master",
+     "inferred": false,
+     "sources": [
+      "daniel-1",
+      "it-mesac"
+     ],
+     "reason": "Da 1:19: tras el examen, los cuatro se quedan al servicio del rey.",
+     "checked_on": "2026-10-14",
+     "status": "verified"
+    },
+    {
+     "type": "lived_in",
+     "place": "jerusalen",
+     "date": {
+      "from": -616,
+      "to": -616,
+      "precision": "year",
+      "approx": true,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "hasta 617 a.e.c."
+     },
+     "inferred": true,
+     "sources": [
+      "daniel-1",
+      "it-mesac",
+      "dp-3"
+     ],
+     "reason": "Da 1:3, 6: de los jóvenes de Judá; Perspicacia «Mesac» dice que a los cuatro los llevaron cautivos desde Jerusalén en 617.",
+     "checked_on": "2026-10-14",
+     "status": "verified"
+    },
+    {
+     "type": "lived_in",
+     "place": "babilonia",
+     "inferred": false,
+     "sources": [
+      "daniel-1",
+      "it-sadrac"
+     ],
+     "reason": "Da 1:3-7, 19: lo traen a Babilonia, lo forman tres años y queda al servicio del rey. Perspicacia «Sadrac»: allí recibieron nombre y formación.",
+     "checked_on": "2026-10-14",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "abednego",
+   "campo": "sources",
+   "valores": [
+    "dp-3"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "abednego",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "tie",
+     "person": "aspenaz",
+     "word": "custodian",
+     "inferred": false,
+     "sources": [
+      "daniel-1",
+      "it-aspenaz",
+      "dp-3"
+     ],
+     "reason": "Da 1:3-11: Aspenaz trae a los cuatro jóvenes, les cambia el nombre y se ocupa de su formación y su comida.",
+     "checked_on": "2026-10-14",
+     "status": "verified"
+    },
+    {
+     "type": "tie",
+     "person": "nabucodonosor-ii",
+     "word": "master",
+     "inferred": false,
+     "sources": [
+      "daniel-1",
+      "it-abednego"
+     ],
+     "reason": "Da 1:19: tras el examen, los cuatro se quedan al servicio del rey.",
+     "checked_on": "2026-10-14",
+     "status": "verified"
+    },
+    {
+     "type": "lived_in",
+     "place": "jerusalen",
+     "date": {
+      "from": -616,
+      "to": -616,
+      "precision": "year",
+      "approx": true,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "hasta 617 a.e.c."
+     },
+     "inferred": true,
+     "sources": [
+      "daniel-1",
+      "it-mesac",
+      "dp-3"
+     ],
+     "reason": "Da 1:3, 6: de los jóvenes de Judá; Perspicacia «Mesac» dice que a los cuatro los llevaron cautivos desde Jerusalén en 617.",
+     "checked_on": "2026-10-14",
+     "status": "verified"
+    },
+    {
+     "type": "lived_in",
+     "place": "babilonia",
+     "inferred": false,
+     "sources": [
+      "daniel-1",
+      "it-sadrac"
+     ],
+     "reason": "Da 1:3-7, 19: lo traen a Babilonia, lo forman tres años y queda al servicio del rey. Perspicacia «Sadrac»: allí recibieron nombre y formación.",
+     "checked_on": "2026-10-14",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "people",
+   "id": "sadrac",
+   "campo": "disambiguation",
+   "antes": "Hananías, compañero de Daniel, al que en Babilonia llamaron Sadrac; no el profeta falso hijo de Azur, el padre del príncipe Sedequías, el abuelo de Iriya, el hijo de Zorobabel ni el benjamita hijo de Sasac.",
+   "despues": "Hananías, compañero de Daniel, llamado Sadrac en Babilonia; no el profeta falso hijo de Azur, el padre del príncipe Sedequías, el abuelo de Iriya, el hijo de Zorobabel, el levita hijo de Hemán ni el benjamita hijo de Sasac.",
+   "historial": {
+    "date": "2026-10-14",
+    "change": "La frase no nombraba al hijo de Hemán, que ya estaba en distinct_from.",
+    "source": "it-hananias"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "jerusalen",
+   "campo": "sources",
+   "valores": [
+    "daniel-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "babilonia",
+   "campo": "sources",
+   "valores": [
+    "daniel-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "arioc-de-elasar",
+   "campo": "distinct_from",
+   "valores": [
+    "arioc-jefe-de-la-guardia"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "nabucodonosor-ii",
+   "campo": "sources",
+   "valores": [
+    "daniel-2",
+    "dp-4"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "daniel",
+   "campo": "sources",
+   "valores": [
+    "daniel-2",
+    "dp-4"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "daniel",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "tie",
+     "person": "nabucodonosor-ii",
+     "word": "master",
+     "inferred": false,
+     "sources": [
+      "daniel-2",
+      "it-daniel"
+     ],
+     "reason": "Da 1:19, 20 y 2:48, 49: tras el examen se queda al servicio del rey, que luego lo pone sobre la provincia y lo mantiene en su corte.",
+     "checked_on": "2026-10-14",
+     "status": "verified"
+    },
+    {
+     "type": "lived_in",
+     "place": "babilonia",
+     "date": {
+      "from": -616,
+      "to": -535,
+      "precision": "range",
+      "approx": true,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "de 617 a 536 a.e.c."
+     },
+     "inferred": false,
+     "sources": [
+      "daniel-2",
+      "daniel-1",
+      "it-daniel",
+      "dp-12"
+     ],
+     "reason": "Perspicacia «Daniel», núm. 2: en la corte de Babilonia hasta su caída en 539 y después en la persa, al menos hasta el tercer año de Ciro (Da 1:21; 10:1); dp, cap. 12, lo sitúa aún en Babilonia.",
+     "checked_on": "2026-10-14",
+     "status": "verified"
+    },
+    {
+     "type": "holds_office",
+     "office": "prophet",
+     "inferred": true,
+     "sources": [
+      "daniel-2",
+      "it-daniel"
+     ],
+     "reason": "Perspicacia «Daniel», núm. 2, lo llama profeta de Jehová. Da 1:17: Dios le da entender toda clase de visiones y sueños.",
+     "checked_on": "2026-10-14",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "sadrac",
+   "campo": "sources",
+   "valores": [
+    "daniel-2",
+    "dp-4"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "sadrac",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "tie",
+     "person": "nabucodonosor-ii",
+     "word": "master",
+     "inferred": false,
+     "sources": [
+      "daniel-2",
+      "it-sadrac"
+     ],
+     "reason": "Da 1:19: tras el examen, los cuatro se quedan al servicio del rey.",
+     "checked_on": "2026-10-14",
+     "status": "verified"
+    },
+    {
+     "type": "lived_in",
+     "place": "provincia-de-babilonia",
+     "inferred": false,
+     "sources": [
+      "daniel-2",
+      "it-sadrac",
+      "it-daniel"
+     ],
+     "reason": "Da 2:49: el rey lo pone, con sus dos compañeros, a administrar la provincia de Babilonia; Perspicacia «Daniel», núm. 2: en puestos fuera de la corte.",
+     "checked_on": "2026-10-14",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "mesac",
+   "campo": "sources",
+   "valores": [
+    "daniel-2",
+    "dp-4"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "mesac",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "tie",
+     "person": "nabucodonosor-ii",
+     "word": "master",
+     "inferred": false,
+     "sources": [
+      "daniel-2",
+      "it-mesac"
+     ],
+     "reason": "Da 1:19: tras el examen, los cuatro se quedan al servicio del rey.",
+     "checked_on": "2026-10-14",
+     "status": "verified"
+    },
+    {
+     "type": "lived_in",
+     "place": "provincia-de-babilonia",
+     "inferred": false,
+     "sources": [
+      "daniel-2",
+      "it-mesac",
+      "it-daniel"
+     ],
+     "reason": "Da 2:49: el rey lo pone, con sus dos compañeros, a administrar la provincia de Babilonia; Perspicacia «Daniel», núm. 2: en puestos fuera de la corte.",
+     "checked_on": "2026-10-14",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "abednego",
+   "campo": "sources",
+   "valores": [
+    "daniel-2",
+    "dp-4"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "abednego",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "tie",
+     "person": "nabucodonosor-ii",
+     "word": "master",
+     "inferred": false,
+     "sources": [
+      "daniel-2",
+      "it-abednego"
+     ],
+     "reason": "Da 1:19: tras el examen, los cuatro se quedan al servicio del rey.",
+     "checked_on": "2026-10-14",
+     "status": "verified"
+    },
+    {
+     "type": "lived_in",
+     "place": "provincia-de-babilonia",
+     "inferred": false,
+     "sources": [
+      "daniel-2",
+      "it-abednego",
+      "it-daniel"
+     ],
+     "reason": "Da 2:49: el rey lo pone, con sus dos compañeros, a administrar la provincia de Babilonia; Perspicacia «Daniel», núm. 2: en puestos fuera de la corte.",
+     "checked_on": "2026-10-14",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "babilonia",
+   "campo": "sources",
+   "valores": [
+    "daniel-2"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "llanura-de-dura",
+   "campo": "sources",
+   "valores": [
+    "w23-lo-sabia-ladrillos-de-babilonia"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "places",
+   "id": "llanura-de-dura",
+   "campo": "reason",
+   "antes": "Perspicacia «Dura»: la Biblia la pone en el distrito de Babilonia (Da 3:1); el nombre es común en Mesopotamia y hoy no se puede identificar sin dudas.",
+   "despues": "Perspicacia «Dura»: en el distrito de Babilonia (Da 3:1), con un nombre frecuente en Mesopotamia que impide identificarla sin dudas. La Atalaya de julio de 2023 la pone en las afueras de Babilonia.",
+   "historial": {
+    "date": "2026-10-14",
+    "change": "La razón cita también La Atalaya de julio de 2023, que sitúa la llanura en las afueras de la ciudad.",
+    "source": "w23-lo-sabia-ladrillos-de-babilonia"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "babilonia",
+   "campo": "sources",
+   "valores": [
+    "daniel-3"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "nabucodonosor-ii",
+   "campo": "sources",
+   "valores": [
+    "daniel-3",
+    "dp-5"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "sadrac",
+   "campo": "sources",
+   "valores": [
+    "daniel-3"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "mesac",
+   "campo": "sources",
+   "valores": [
+    "daniel-3"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "abednego",
+   "campo": "sources",
+   "valores": [
+    "daniel-3"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "people",
+   "id": "mesac",
+   "campo": "perspicacia",
+   "antes": null,
+   "despues": "1200003007"
+  },
+  {
+   "op": "cambiar",
+   "tipo": "people",
+   "id": "abednego",
+   "campo": "perspicacia",
+   "antes": null,
+   "despues": "1200000017"
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "sadrac",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "lived_in",
+     "place": "provincia-de-babilonia",
+     "inferred": false,
+     "sources": [
+      "daniel-3",
+      "it-sadrac"
+     ],
+     "reason": "Da 3:12, 30: el rey lo había puesto a administrar la provincia de Babilonia y, tras el horno, lo asciende allí.",
+     "checked_on": "2026-10-14",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "mesac",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "lived_in",
+     "place": "provincia-de-babilonia",
+     "inferred": false,
+     "sources": [
+      "daniel-3",
+      "it-mesac"
+     ],
+     "reason": "Da 3:12, 30: el rey lo había puesto a administrar la provincia de Babilonia y, tras el horno, lo asciende allí.",
+     "checked_on": "2026-10-14",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "abednego",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "lived_in",
+     "place": "provincia-de-babilonia",
+     "inferred": false,
+     "sources": [
+      "daniel-3",
+      "it-abednego"
+     ],
+     "reason": "Da 3:12, 30: el rey lo había puesto a administrar la provincia de Babilonia y, tras el horno, lo asciende allí.",
+     "checked_on": "2026-10-14",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "sadrac",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "tie",
+     "person": "nabucodonosor-ii",
+     "word": "master",
+     "inferred": false,
+     "sources": [
+      "daniel-3",
+      "it-sadrac"
+     ],
+     "reason": "Da 3:12, 30: funcionario nombrado por Nabucodonosor sobre la provincia de Babilonia, que después lo asciende.",
+     "checked_on": "2026-10-14",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "mesac",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "tie",
+     "person": "nabucodonosor-ii",
+     "word": "master",
+     "inferred": false,
+     "sources": [
+      "daniel-3",
+      "it-mesac"
+     ],
+     "reason": "Da 3:12, 30: funcionario nombrado por Nabucodonosor sobre la provincia de Babilonia, que después lo asciende.",
+     "checked_on": "2026-10-14",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "abednego",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "tie",
+     "person": "nabucodonosor-ii",
+     "word": "master",
+     "inferred": false,
+     "sources": [
+      "daniel-3",
+      "it-abednego"
+     ],
+     "reason": "Da 3:12, 30: funcionario nombrado por Nabucodonosor sobre la provincia de Babilonia, que después lo asciende.",
+     "checked_on": "2026-10-14",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "sadrac",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "accompanies",
+     "person": "mesac",
+     "word": "companion",
+     "inferred": false,
+     "sources": [
+      "daniel-3",
+      "it-sadrac"
+     ],
+     "reason": "Da 3:12-30: los tres administran juntos la provincia, se niegan juntos a adorar la estatua y juntos salen del horno.",
+     "checked_on": "2026-10-14",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "sadrac",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "accompanies",
+     "person": "abednego",
+     "word": "companion",
+     "inferred": false,
+     "sources": [
+      "daniel-3",
+      "it-sadrac"
+     ],
+     "reason": "Da 3:12-30: los tres administran juntos la provincia, se niegan juntos a adorar la estatua y juntos salen del horno.",
+     "checked_on": "2026-10-14",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "mesac",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "accompanies",
+     "person": "abednego",
+     "word": "companion",
+     "inferred": false,
+     "sources": [
+      "daniel-3",
+      "it-mesac"
+     ],
+     "reason": "Da 3:12-30: los tres administran juntos la provincia, se niegan juntos a adorar la estatua y juntos salen del horno.",
+     "checked_on": "2026-10-14",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "daniel",
+   "campo": "not_claimed",
+   "valores": [
+    "Que Daniel estuviera con sus tres compañeros ante la estatua de oro: la Biblia no dice dónde estaba ni por qué no lo acusaron."
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "babilonia",
+   "campo": "sources",
+   "valores": [
+    "daniel-4"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "daniel",
+   "campo": "sources",
+   "valores": [
+    "daniel-4"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "daniel",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "lived_in",
+     "place": "babilonia",
+     "date": {
+      "from": -616,
+      "to": -535,
+      "precision": "range",
+      "approx": true,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "de 617 a 536 a.e.c."
+     },
+     "inferred": false,
+     "sources": [
+      "daniel-4"
+     ],
+     "reason": "Perspicacia «Daniel», núm. 2: en la corte de Babilonia hasta su caída en 539 y después en la persa, al menos hasta el tercer año de Ciro (Da 1:21; 10:1); dp, cap. 12, lo sitúa aún en Babilonia.",
+     "checked_on": "2026-10-14",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "daniel",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "tie",
+     "person": "nabucodonosor-ii",
+     "word": "master",
+     "inferred": false,
+     "sources": [
+      "daniel-4",
+      "it-daniel"
+     ],
+     "reason": "Da 4:19, 24: Daniel, funcionario de su corte, lo llama «mi señor» al interpretarle el sueño.",
+     "checked_on": "2026-10-14",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "nabucodonosor-ii",
+   "campo": "sources",
+   "valores": [
+    "it-locura",
+    "dp-6"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "nabucodonosor-ii",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "tie",
+     "person": "daniel",
+     "word": "adviser",
+     "inferred": false,
+     "sources": [
+      "daniel-4",
+      "dp-6"
+     ],
+     "reason": "Da 4:27: Daniel le aconseja que deje sus pecados y tenga compasión de los pobres, por si se alarga su prosperidad.",
+     "checked_on": "2026-10-14",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "nabucodonosor-ii",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "lived_in",
+     "place": "babilonia",
+     "inferred": false,
+     "sources": [
+      "daniel-4",
+      "it-nabucodonosor"
+     ],
+     "reason": "Gobernó desde Babilonia, que él mismo embelleció (Da 4:29-30).",
+     "checked_on": "2026-10-14",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "people",
+   "id": "nabucodonosor-ii",
+   "campo": "summary",
+   "antes": "Hijo de Nabopolasar y rey de Babilonia. Venció a Egipto en Carquemis, se llevó a Joaquín en 617 y destruyó Jerusalén en 607. Daniel narra su sueño de la imagen y sus siete tiempos de locura.",
+   "despues": "Hijo de Nabopolasar y rey de Babilonia. Venció a Egipto en Carquemis, se llevó a Joaquín en 617 y destruyó Jerusalén en 607. Levantó la estatua de oro de Dura y pasó siete años loco, como le anunció Daniel.",
+   "historial": {
+    "date": "2026-10-14",
+    "change": "El resumen nombra la estatua de Dura (Da 3) y cuenta la locura en años, como Perspicacia «Locura».",
+    "source": "it-locura"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "nabucodonosor-ii",
+   "campo": "not_claimed",
+   "valores": [
+    "Que Nabucodonosor se hiciera adorador de Jehová: alabó al Altísimo, pero siguió siendo un rey pagano.",
+    "Que su locura fuera una enfermedad concreta, como la licantropía: vino por decreto de Dios y no se puede diagnosticar.",
+    "Que Evil-Merodac gobernara mientras estuvo loco: jw.org solo lo da como posible."
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "periods",
+   "id": "nabucodonosor-ii",
+   "campo": "sources",
+   "valores": [
+    "it-locura",
+    "daniel-4"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "periods",
+   "id": "nabucodonosor-ii",
+   "campo": "summary",
+   "antes": "Cuarenta y tres años de reinado; en su año 19 cayó Jerusalén.",
+   "despues": "Cuarenta y tres años de reinado, siete de ellos con el rey sin juicio; en su año 19 cayó Jerusalén.",
+   "historial": {
+    "date": "2026-10-14",
+    "change": "Perspicacia «Nabucodonosor», párr. 1, incluye en los 43 años los siete de locura de Da 4.",
+    "source": "it-nabucodonosor"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "events",
+   "id": "caida-de-babilonia",
+   "campo": "passages",
+   "antes": [
+    "Da 5:1-31",
+    "Is 45:1, 2",
+    "Jer 51:30"
+   ],
+   "despues": [
+    "Da 5:30, 31",
+    "Is 45:1, 2",
+    "Jer 51:30"
+   ],
+   "historial": {
+    "date": "2026-10-14",
+    "change": "El banquete y la escritura en la pared (Da 5:1-29) pasan a su propio suceso, daniel-lee-la-escritura-en-la-pared; la caída se queda con Da 5:30, 31.",
+    "source": "daniel-5"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "events",
+   "id": "caida-de-babilonia",
+   "campo": "people",
+   "valores": [
+    "dario-el-medo",
+    "ciro"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "events",
+   "id": "caida-de-babilonia",
+   "campo": "present",
+   "antes": null,
+   "despues": [
+    "belsasar",
+    "daniel"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "events",
+   "id": "caida-de-babilonia",
+   "campo": "narrative_order",
+   "antes": null,
+   "despues": {
+    "series": "daniel",
+    "order": 105030
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "events",
+   "id": "caida-de-babilonia",
+   "campo": "sources",
+   "valores": [
+    "it-ciro",
+    "it-dario",
+    "dp-7"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "events",
+   "id": "caida-de-babilonia",
+   "campo": "reason",
+   "antes": "Perspicacia «Belsasar» y «Babilonia» fechan la caída un 5 de octubre en el calendario gregoriano; «Nabonido» explica que la Crónica fija el 16 de tisri. El estudio 3 la usa como fecha eje (párr. 5).",
+   "despues": "Perspicacia «Belsasar» y «Babilonia» la fechan el 5 de octubre gregoriano; «Nabonido» y «Ciro», el 16 de tisri. Estudio 3, párr. 5. Ciro entró 17 días después y el texto no sitúa a Darío: ninguno va en present.",
+   "historial": {
+    "date": "2026-10-14",
+    "change": "Entran Ciro y Darío el medo en people, sin estar en present: Ciro llegó a la ciudad 17 días después (Perspicacia «Ciro») y Da 5:31 solo dice que Darío recibió el reino.",
+    "source": "it-ciro"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "babilonia",
+   "campo": "sources",
+   "valores": [
+    "daniel-5"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "people",
+   "id": "belsasar",
+   "campo": "perspicacia",
+   "antes": null,
+   "despues": "1200000628"
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "belsasar",
+   "campo": "sources",
+   "valores": [
+    "dp-7"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "people",
+   "id": "dario-el-medo",
+   "campo": "perspicacia",
+   "antes": null,
+   "despues": "1200001124#1"
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "dario-el-medo",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "born_in",
+     "place": "media",
+     "inferred": true,
+     "sources": [
+      "daniel-5",
+      "it-dario"
+     ],
+     "reason": "Da 5:31 lo llama Darío el medo; Perspicacia «Darío», núm. 1, da su origen medo, el mismo que el de su padre. Gentilicio de un pueblo extranjero.",
+     "checked_on": "2026-10-14",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "daniel",
+   "campo": "sources",
+   "valores": [
+    "daniel-5"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "daniel",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "lived_in",
+     "place": "babilonia",
+     "date": {
+      "from": -616,
+      "to": -535,
+      "precision": "range",
+      "approx": true,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "de 617 a 536 a.e.c."
+     },
+     "inferred": false,
+     "sources": [
+      "daniel-5"
+     ],
+     "reason": "Perspicacia «Daniel», núm. 2: en la corte de Babilonia hasta su caída en 539 y después en la persa, al menos hasta el tercer año de Ciro (Da 1:21; 10:1); dp, cap. 12, lo sitúa aún en Babilonia.",
+     "checked_on": "2026-09-28",
+     "status": "verified"
+    },
+    {
+     "type": "tie",
+     "person": "nabucodonosor-ii",
+     "word": "master",
+     "inferred": false,
+     "sources": [
+      "daniel-5",
+      "it-daniel"
+     ],
+     "reason": "Da 5:11: la reina recuerda que Nabucodonosor puso a Daniel al frente de los sabios de su corte.",
+     "checked_on": "2026-10-14",
+     "status": "verified"
+    },
+    {
+     "type": "tie",
+     "person": "belsasar",
+     "word": "master",
+     "date": {
+      "from": -552,
+      "to": -538,
+      "precision": "range",
+      "approx": true,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "553-539 a.e.c., reinado de Belsasar"
+     },
+     "inferred": false,
+     "sources": [
+      "daniel-5",
+      "daniel-8",
+      "it-daniel",
+      "it-belsasar",
+      "si-daniel"
+     ],
+     "reason": "Da 8:27: en el tercer año de Belsasar, Daniel vuelve a los asuntos del rey. Da 5:29: la noche de la caída, Belsasar lo proclama tercer gobernante del reino.",
+     "checked_on": "2026-10-14",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "dario-el-medo",
+   "campo": "sources",
+   "valores": [
+    "daniel-6",
+    "dp-8"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "dario-el-medo",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "tie",
+     "person": "ciro",
+     "word": "ally",
+     "inferred": true,
+     "sources": [
+      "daniel-6",
+      "it-belsasar"
+     ],
+     "reason": "Perspicacia «Belsasar» llama a Darío el medo aliado de Ciro el persa ante Babilonia; Da 6:28 nombra los dos reinados seguidos.",
+     "checked_on": "2026-10-14",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "ciro",
+   "campo": "sources",
+   "valores": [
+    "daniel-6"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "ciro",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "born_in",
+     "place": "persia",
+     "inferred": true,
+     "sources": [
+      "daniel-6",
+      "it-dario"
+     ],
+     "reason": "Da 6:28 lo llama Ciro el persa; Perspicacia «Darío», núm. 1, añade que su padre fue el persa Cambises I. Gentilicio de un pueblo extranjero.",
+     "checked_on": "2026-10-14",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "daniel",
+   "campo": "sources",
+   "valores": [
+    "daniel-6"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "daniel",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "lived_in",
+     "place": "babilonia",
+     "date": {
+      "from": -616,
+      "to": -535,
+      "precision": "range",
+      "approx": true,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "de 617 a 536 a.e.c."
+     },
+     "inferred": false,
+     "sources": [
+      "daniel-6"
+     ],
+     "reason": "Perspicacia «Daniel», núm. 2: en la corte de Babilonia hasta su caída en 539 y después en la persa, al menos hasta el tercer año de Ciro (Da 1:21; 10:1); dp, cap. 12, lo sitúa aún en Babilonia.",
+     "checked_on": "2026-09-28",
+     "status": "verified"
+    },
+    {
+     "type": "tie",
+     "person": "dario-el-medo",
+     "word": "master",
+     "date": {
+      "from": -538,
+      "to": -537,
+      "precision": "range",
+      "approx": true,
+      "type": "narrative",
+      "chronology": "tnm",
+      "text": "c. 539-538 a.e.c. (reinado de Darío el medo)"
+     },
+     "inferred": false,
+     "sources": [
+      "daniel-6",
+      "it-dario"
+     ],
+     "reason": "Da 6:1-3: Darío lo pone entre los tres altos funcionarios que vigilan a los sátrapas y piensa darle autoridad sobre todo el reino.",
+     "checked_on": "2026-10-14",
+     "status": "verified"
+    },
+    {
+     "type": "tie",
+     "person": "ciro",
+     "word": "master",
+     "date": {
+      "from": -538,
+      "to": -535,
+      "precision": "range",
+      "approx": true,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "de 539 a por lo menos 536 a.e.c."
+     },
+     "inferred": true,
+     "sources": [
+      "daniel-6",
+      "it-daniel"
+     ],
+     "reason": "Da 6:28: Daniel prosperó durante el reinado de Ciro. Perspicacia «Daniel», núm. 2, lo pone en la corte persa hasta al menos el tercer año de Ciro.",
+     "checked_on": "2026-10-14",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "babilonia",
+   "campo": "sources",
+   "valores": [
+    "daniel-6",
+    "it-foso-de-los-leones",
+    "it-dario"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "babilonia",
+   "campo": "names",
+   "valores": [
+    {
+     "name": "Foso de los leones",
+     "note": "Sitio de ejecución con una boca que se tapaba con una piedra, donde echaron a Daniel bajo Darío el medo (Da 6:7-24). Perspicacia «Darío» dice que inscripciones antiguas confirman que Babilonia tenía uno."
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "daniel",
+   "campo": "sources",
+   "valores": [
+    "daniel-7",
+    "it-daniel-libro"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "daniel",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "lived_in",
+     "place": "babilonia",
+     "date": {
+      "from": -616,
+      "to": -535,
+      "precision": "range",
+      "approx": true,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "de 617 a 536 a.e.c."
+     },
+     "inferred": false,
+     "sources": [
+      "daniel-7",
+      "it-daniel-libro"
+     ],
+     "reason": "Perspicacia «Daniel», núm. 2: en la corte de Babilonia hasta su caída en 539 y después en la persa, al menos hasta el tercer año de Ciro (Da 1:21; 10:1); dp, cap. 12, lo sitúa aún en Babilonia.",
+     "checked_on": "2026-10-14",
+     "status": "verified"
+    },
+    {
+     "type": "holds_office",
+     "office": "prophet",
+     "inferred": true,
+     "sources": [
+      "daniel-7",
+      "it-daniel",
+      "it-daniel-libro"
+     ],
+     "reason": "Perspicacia «Daniel», núm. 2, lo llama profeta de Jehová y escritor del libro; Da 7:1 cuenta que recibió visiones y las puso por escrito.",
+     "checked_on": "2026-10-14",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "belsasar",
+   "campo": "sources",
+   "valores": [
+    "daniel-7",
+    "si-daniel"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "belsasar",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "holds_office",
+     "place": "babilonia",
+     "office": "coregent",
+     "inferred": true,
+     "sources": [
+      "daniel-7"
+     ],
+     "reason": "Daniel lo llama rey (Da 7:1; 8:1; 5:1); Perspicacia «Belsasar» precisa que fue corregente de su padre Nabonido.",
+     "checked_on": "2026-10-14",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "people",
+   "id": "belsasar",
+   "campo": "date",
+   "antes": {
+    "from": -538,
+    "to": -538,
+    "precision": "year",
+    "approx": false,
+    "type": "anchored",
+    "chronology": "tnm",
+    "text": "muere en 539 a.e.c."
+   },
+   "despues": {
+    "from": -552,
+    "to": -538,
+    "precision": "range",
+    "approx": true,
+    "type": "anchored",
+    "chronology": "tnm",
+    "text": "553-539 a.e.c., reinado de Belsasar"
+   },
+   "historial": {
+    "date": "2026-10-14",
+    "change": "La fecha solo daba su muerte. Da 7:1 cuenta su primer año, que «Toda Escritura», libro 27, nota f, pone en 553, el tercero de Nabonido según Perspicacia «Belsasar».",
+    "source": "daniel-7"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "babilonia",
+   "campo": "sources",
+   "valores": [
+    "daniel-7"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "daniel",
+   "campo": "sources",
+   "valores": [
+    "daniel-8"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "daniel",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "tie",
+     "person": "belsasar",
+     "word": "master",
+     "date": {
+      "from": -552,
+      "to": -538,
+      "precision": "range",
+      "approx": true,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "553-539 a.e.c., reinado de Belsasar"
+     },
+     "inferred": true,
+     "sources": [
+      "daniel-8",
+      "it-daniel",
+      "it-belsasar",
+      "si-daniel"
+     ],
+     "reason": "Da 8:1, 27: en el tercer año del rey Belsasar vuelve a su trabajo para el rey. Perspicacia «Daniel», núm. 2: siguió al servicio de la corte hasta la caída de Babilonia.",
+     "checked_on": "2026-10-14",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "belsasar",
+   "campo": "sources",
+   "valores": [
+    "daniel-8"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "belsasar",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "holds_office",
+     "place": "babilonia",
+     "office": "coregent",
+     "inferred": true,
+     "sources": [
+      "daniel-8"
+     ],
+     "reason": "Daniel lo llama rey (Da 7:1; 8:1; 5:1); Perspicacia «Belsasar» precisa que fue corregente de su padre Nabonido.",
+     "checked_on": "2026-10-14",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "gabriel",
+   "campo": "sources",
+   "valores": [
+    "daniel-8"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "gabriel",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "appears_to",
+     "person": "daniel",
+     "date": {
+      "from": -550,
+      "to": -549,
+      "precision": "range",
+      "approx": true,
+      "type": "narrative",
+      "chronology": "tnm",
+      "text": "551-550 a.e.c. (tiempo narrativo: tercer año de Belsasar)"
+     },
+     "inferred": false,
+     "sources": [
+      "daniel-8",
+      "it-gabriel"
+     ],
+     "reason": "Da 8:15-19: Gabriel se acerca a Daniel junto al Ulái, lo levanta y le explica la visión. Perspicacia «Gabriel»: es la primera de sus dos apariciones a Daniel.",
+     "checked_on": "2026-10-14",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "susa",
+   "campo": "sources",
+   "valores": [
+    "daniel-8"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "susa",
+   "campo": "names",
+   "valores": [
+    {
+     "name": "Susán",
+     "note": "Otra forma del nombre, en la nota de Da 8:2; Perspicacia «Elam» la escribe Shushan."
+    },
+    {
+     "name": "Castillo de Susa",
+     "note": "Susa o su parte fortificada (Da 8:2; Ne 1:1), según Perspicacia «Susa». La nota de Da 8:2 da también «el palacio» o «la fortaleza»."
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "rio-ulai",
+   "campo": "sources",
+   "valores": [
+    "daniel-8"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "rio-ulai",
+   "campo": "names",
+   "valores": [
+    {
+     "name": "Ulái",
+     "note": "Grafía de la TNM en Da 8:2, 16; Perspicacia escribe Ulai."
+    }
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "places",
+   "id": "rio-ulai",
+   "campo": "name",
+   "antes": "Río Ulai",
+   "despues": "Río Ulái",
+   "historial": {
+    "date": "2026-10-14",
+    "change": "El nombre sigue la grafía de la TNM (Da 8:2, 16), con tilde; Ulai, la de Perspicacia, queda en names.",
+    "source": "daniel-8"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "elam",
+   "campo": "sources",
+   "valores": [
+    "daniel-8"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "places",
+   "id": "elam",
+   "campo": "note",
+   "antes": null,
+   "despues": "Da 8:2 la llama provincia; Perspicacia «Elam» deduce de ahí que llegó a depender de Babilonia como distrito."
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "dario-el-medo",
+   "campo": "sources",
+   "valores": [
+    "daniel-9",
+    "it-asuero"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "dario-el-medo",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "asuero-padre-de-dario-el-medo",
+     "word": "father",
+     "inferred": false,
+     "sources": [
+      "daniel-9",
+      "it-asuero",
+      "it-dario"
+     ],
+     "reason": "Da 9:1 lo llama hijo de Asuero, de linaje medo; Perspicacia «Asuero», núm. 1, y «Darío», núm. 1.",
+     "checked_on": "2026-10-14",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jerjes-i",
+   "campo": "distinct_from",
+   "valores": [
+    "asuero-padre-de-dario-el-medo"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "people",
+   "id": "jerjes-i",
+   "campo": "disambiguation",
+   "antes": null,
+   "despues": "El Asuero del libro de Ester, que Perspicacia «Asuero», núm. 3, cree Jerjes I; no el padre de Darío el medo."
+  },
+  {
+   "op": "cambiar",
+   "tipo": "people",
+   "id": "jerjes-i",
+   "campo": "perspicacia",
+   "antes": null,
+   "despues": "1200000142#3"
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "daniel",
+   "campo": "sources",
+   "valores": [
+    "daniel-9",
+    "dp-11"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "gabriel",
+   "campo": "sources",
+   "valores": [
+    "daniel-9"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "gabriel",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "appears_to",
+     "person": "daniel",
+     "date": {
+      "from": -538,
+      "to": -537,
+      "precision": "range",
+      "approx": true,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "primer año de Darío el medo (c. 539-538 a.e.c.)"
+     },
+     "inferred": false,
+     "sources": [
+      "daniel-9",
+      "it-gabriel",
+      "dp-11"
+     ],
+     "reason": "Da 9:21-23: mientras Daniel oraba, Gabriel llegó con aspecto de hombre a darle entendimiento. Perspicacia «Gabriel» la cuenta como su segunda aparición a Daniel.",
+     "checked_on": "2026-10-14",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "people",
+   "id": "gabriel",
+   "campo": "summary",
+   "antes": "Ángel de alto rango, el único con nombre en la Biblia además de Miguel. Explicó dos visiones a Daniel y anunció a Zacarías y a María los nacimientos de Juan y de Jesús.",
+   "despues": "Ángel de alto rango; con Miguel, el único con nombre en la Biblia. Explicó a Daniel la visión del carnero y el macho cabrío, le reveló las setenta semanas y anunció los nacimientos de Juan y de Jesús.",
+   "historial": {
+    "date": "2026-10-14",
+    "change": "En su segunda visita a Daniel no explicó una visión anterior: le reveló las setenta semanas (Da 9:21-27; Perspicacia «Gabriel»).",
+    "source": "daniel-9"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "events",
+   "id": "profecia-de-las-setenta-semanas",
+   "campo": "people",
+   "valores": [
+    "gabriel"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "events",
+   "id": "profecia-de-las-setenta-semanas",
+   "campo": "passages",
+   "antes": [
+    "Da 9:1, 2, 20-27"
+   ],
+   "despues": [
+    "Da 9:1-27"
+   ],
+   "historial": {
+    "date": "2026-10-14",
+    "change": "La oración de los versículos 3 a 19 es parte de la misma escena: Gabriel llega mientras Daniel sigue orando (Da 9:20, 21).",
+    "source": "daniel-9"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "events",
+   "id": "profecia-de-las-setenta-semanas",
+   "campo": "sources",
+   "valores": [
+    "it-gabriel",
+    "dp-11"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "events",
+   "id": "profecia-de-las-setenta-semanas",
+   "campo": "narrative_order",
+   "antes": null,
+   "despues": {
+    "series": "daniel",
+    "order": 109001
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "events",
+   "id": "profecia-de-las-setenta-semanas",
+   "campo": "reason",
+   "antes": "Perspicacia «Daniel», núm. 2, y «Darío», núm. 1; «Ciro» dice que ese año pudo situarse entre la conquista de la ciudad y el año primero de Ciro.",
+   "despues": "Primer año de Darío, entre la toma de Babilonia y el primer año de Ciro (Perspicacia «Darío», núm. 1, y «Ciro»); Daniel seguía en Babilonia («Profecías de Daniel», cap. 11). Va tras el foso de los leones.",
+   "historial": {
+    "date": "2026-10-14",
+    "change": "La razón dice dónde estaba Daniel y por qué el suceso va en el segundo tramo de la serie daniel, tras la caída de Babilonia y Da 6.",
+    "source": "dp-11"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "events",
+   "id": "vision-del-tercer-ano-de-ciro",
+   "campo": "places",
+   "valores": [
+    "rio-tigris"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "events",
+   "id": "vision-del-tercer-ano-de-ciro",
+   "campo": "date",
+   "antes": {
+    "from": -535,
+    "to": -535,
+    "precision": "year",
+    "approx": false,
+    "type": "anchored",
+    "chronology": "tnm",
+    "text": "536 a.e.c., año tercero de Ciro"
+   },
+   "despues": {
+    "from": -535,
+    "to": -534,
+    "precision": "range",
+    "approx": false,
+    "type": "anchored",
+    "chronology": "tnm",
+    "text": "536-535 a.e.c., año tercero de Ciro"
+   },
+   "historial": {
+    "date": "2026-10-14",
+    "change": "«Profecías de Daniel», cap. 12, párr. 3, la publicación más reciente, da el año tercero de Ciro como 536/535; el día 24 del primer mes (Da 10:4) va en la razón.",
+    "source": "dp-12"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "events",
+   "id": "vision-del-tercer-ano-de-ciro",
+   "campo": "passages",
+   "antes": [
+    "Da 10:1-4",
+    "Da 12:13"
+   ],
+   "despues": [
+    "Da 10:1-12:13"
+   ],
+   "historial": {
+    "date": "2026-10-14",
+    "change": "Los capítulos 10 a 12 son una sola visión: el pasaje la cubre entera, no solo su comienzo y su último versículo.",
+    "source": "daniel-10"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "events",
+   "id": "vision-del-tercer-ano-de-ciro",
+   "campo": "sources",
+   "valores": [
+    "dp-12",
+    "it-hidequel"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "events",
+   "id": "vision-del-tercer-ano-de-ciro",
+   "campo": "narrative_order",
+   "antes": null,
+   "despues": {
+    "series": "daniel",
+    "order": 110001
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "events",
+   "id": "vision-del-tercer-ano-de-ciro",
+   "campo": "reason",
+   "antes": "Perspicacia «Daniel», núm. 2: visión en el tercer año de Ciro (536); Da 10:4 la sitúa a orillas del Tigris. El estudio 3 dice que completó su libro c. 536.",
+   "despues": "«Profecías de Daniel», cap. 12, párr. 3: año tercero de Ciro, 536/535; Perspicacia «Daniel» dice 536. Da 10:4: día 24 del primer mes, junto al Tigris. El párr. 5 da ya puestos los cimientos del templo, de iyar de 536.",
+   "historial": {
+    "date": "2026-10-14",
+    "change": "La razón recoge el día del texto, el lugar y por qué el año queda en 536-535: el párr. 5 de «Profecías de Daniel», cap. 12, encaja mejor con nisán de 535.",
+    "source": "daniel-10"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "ufaz",
+   "campo": "sources",
+   "valores": [
+    "daniel-10"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jesus",
+   "campo": "names",
+   "valores": [
+    {
+     "name": "Miguel",
+     "note": "Nombre del Hijo de Dios como arcángel, antes de nacer en la tierra y desde que volvió al cielo (Perspicacia «Miguel», núm. 1; Da 10:13; 12:1; Jud 9)."
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jesus",
+   "campo": "sources",
+   "valores": [
+    "daniel-10",
+    "it-miguel",
+    "dp-12"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jesus",
+   "campo": "distinct_from",
+   "valores": [
+    "miguel-de-manases",
+    "miguel-descendiente-de-berias",
+    "miguel-hijo-de-abihail",
+    "miguel-hijo-de-baaseya",
+    "miguel-hijo-de-izrahias",
+    "miguel-hijo-de-jesisai",
+    "miguel-padre-de-omri",
+    "miguel-padre-de-setur"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "people",
+   "id": "jesus",
+   "campo": "disambiguation",
+   "antes": "Jesucristo; no Jesús hijo de Eliezer, antepasado suyo en la genealogía de Lucas.",
+   "despues": "Jesucristo, llamado Miguel en el cielo; no Jesús hijo de Eliezer, antepasado suyo en la genealogía de Lucas, ni Jesús Justo, ni ninguno de los demás Miguel.",
+   "historial": {
+    "date": "2026-10-14",
+    "change": "Con el nombre Miguel (Perspicacia «Miguel», núm. 1) comparte nombre con los demás Miguel; la desambiguación los nombra, y también a Jesús Justo, que ya estaba en distinct_from.",
+    "source": "it-miguel"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "miguel-de-manases",
+   "campo": "distinct_from",
+   "valores": [
+    "jesus"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "miguel-descendiente-de-berias",
+   "campo": "distinct_from",
+   "valores": [
+    "jesus"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "miguel-hijo-de-abihail",
+   "campo": "distinct_from",
+   "valores": [
+    "jesus"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "miguel-hijo-de-baaseya",
+   "campo": "distinct_from",
+   "valores": [
+    "jesus"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "miguel-hijo-de-izrahias",
+   "campo": "distinct_from",
+   "valores": [
+    "jesus"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "miguel-hijo-de-jesisai",
+   "campo": "distinct_from",
+   "valores": [
+    "jesus"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "miguel-padre-de-omri",
+   "campo": "distinct_from",
+   "valores": [
+    "jesus"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "miguel-padre-de-setur",
+   "campo": "distinct_from",
+   "valores": [
+    "jesus"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "events",
+   "id": "vision-del-tercer-ano-de-ciro",
+   "campo": "sources",
+   "valores": [
+    "daniel-11",
+    "dp-13"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "events",
+   "id": "vision-del-tercer-ano-de-ciro",
+   "campo": "sources",
+   "valores": [
+    "daniel-12",
+    "dp-17"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "daniel",
+   "campo": "sources",
+   "valores": [
+    "daniel-12",
+    "dp-18"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "daniel",
+   "campo": "not_claimed",
+   "valores": [
+    "Dónde y cuándo murió Daniel: Da 12:13 solo deja ver que le quedaba poca vida y que resucitará (Perspicacia «Daniel»; «Profecías de Daniel», cap. 18)."
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "events",
+   "id": "alejandro-toma-babilonia",
+   "campo": "passages",
+   "antes": [
+    "Da 8:5-8, 21"
+   ],
+   "despues": [],
+   "historial": {
+    "date": "2026-10-14",
+    "change": "Fuera Daniel 8: el texto solo habla de un macho cabrío y del rey de Grecia, y que sea Alejandro lo dicen las publicaciones. Por la regla «Profecía y cumplimiento», el tramo lo menciona sin pasaje.",
+    "source": "daniel-8"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "events",
+   "id": "muerte-de-alejandro",
+   "campo": "passages",
+   "antes": [
+    "Da 8:8"
+   ],
+   "despues": [],
+   "historial": {
+    "date": "2026-10-14",
+    "change": "Fuera Daniel 8: el texto solo habla de un macho cabrío y del rey de Grecia, y que sea Alejandro lo dicen las publicaciones. Por la regla «Profecía y cumplimiento», el tramo lo menciona sin pasaje.",
+    "source": "daniel-8"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "people",
+   "id": "belsasar",
+   "campo": "relations",
+   "antes": [
+    {
+     "type": "kin",
+     "person": "nabonido",
+     "inferred": true,
+     "sources": [
+      "it-belsasar",
+      "it-nabonido"
+     ],
+     "reason": "Perspicacia «Belsasar»: primogénito y corregente de Nabonido.",
+     "checked_on": "2026-09-29",
+     "word": "father",
+     "status": "verified"
+    },
+    {
+     "type": "died_in",
+     "place": "babilonia",
+     "date": {
+      "from": -538,
+      "to": -538,
+      "precision": "day",
+      "approx": false,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "539 a.e.c. (5 de octubre)"
+     },
+     "inferred": false,
+     "sources": [
+      "it-belsasar",
+      "daniel-5"
+     ],
+     "reason": "Da 5:30 y Perspicacia «Belsasar»: murió al caer Babilonia.",
+     "checked_on": "2026-09-28",
+     "status": "verified"
+    },
+    {
+     "type": "holds_office",
+     "place": "babilonia",
+     "office": "coregent",
+     "inferred": true,
+     "sources": [
+      "daniel-5",
+      "it-belsasar",
+      "daniel-7",
+      "daniel-8"
+     ],
+     "reason": "Daniel lo llama el rey Belsasar (Da 5:1, 9); Perspicacia «Belsasar» precisa que fue corregente de su padre Nabonido.",
+     "checked_on": "2026-10-14",
+     "status": "verified"
+    }
+   ],
+   "despues": [
+    {
+     "type": "kin",
+     "person": "nabonido",
+     "inferred": true,
+     "sources": [
+      "it-belsasar",
+      "it-nabonido"
+     ],
+     "reason": "Perspicacia «Belsasar»: primogénito y corregente de Nabonido.",
+     "checked_on": "2026-09-29",
+     "word": "father",
+     "status": "verified"
+    },
+    {
+     "type": "died_in",
+     "place": "babilonia",
+     "date": {
+      "from": -538,
+      "to": -538,
+      "precision": "day",
+      "approx": false,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "539 a.e.c. (5 de octubre)"
+     },
+     "inferred": false,
+     "sources": [
+      "it-belsasar",
+      "daniel-5"
+     ],
+     "reason": "Da 5:30 y Perspicacia «Belsasar»: murió al caer Babilonia.",
+     "checked_on": "2026-09-28",
+     "status": "verified"
+    },
+    {
+     "type": "holds_office",
+     "place": "babilonia",
+     "office": "coregent",
+     "date": {
+      "from": -552,
+      "to": -538,
+      "precision": "range",
+      "approx": true,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "553-539 a.e.c."
+     },
+     "inferred": true,
+     "sources": [
+      "daniel-5",
+      "it-belsasar",
+      "daniel-7",
+      "daniel-8",
+      "si-daniel"
+     ],
+     "reason": "Da 5:1; 7:1; 8:1 lo llaman rey. Perspicacia «Belsasar»: corregente de su padre Nabonido desde el tercer año de este, que «Toda Escritura», libro 27, pone en 553; murió en 539.",
+     "checked_on": "2026-10-14",
+     "status": "verified"
+    }
+   ],
+   "historial": {
+    "date": "2026-10-14",
+    "change": "El cargo de corregente lleva ya la fecha de su reinado, 553-539, y su razón cita Da 7:1 y 8:1.",
+    "source": "daniel-7"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "people",
+   "id": "dario-el-medo",
+   "campo": "relations",
+   "antes": [
+    {
+     "type": "succeeds",
+     "person": "belsasar",
+     "inferred": false,
+     "sources": [
+      "it-dario",
+      "daniel-5",
+      "daniel-9"
+     ],
+     "reason": "Da 5:30, 31 y Perspicacia «Darío», núm. 1: sucedió a Belsasar en el trono.",
+     "checked_on": "2026-09-29",
+     "office": "king",
+     "status": "verified"
+    },
+    {
+     "type": "holds_office",
+     "place": "babilonia",
+     "office": "king",
+     "inferred": false,
+     "sources": [
+      "daniel-5",
+      "daniel-9"
+     ],
+     "reason": "Recibió el reino la noche en que murió Belsasar (Da 5:30, 31); Da 9:1 dice que lo hicieron rey sobre los caldeos.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "born_in",
+     "place": "media",
+     "inferred": true,
+     "sources": [
+      "daniel-5",
+      "it-dario"
+     ],
+     "reason": "Da 5:31 lo llama Darío el medo; Perspicacia «Darío», núm. 1, da su origen medo, el mismo que el de su padre. Gentilicio de un pueblo extranjero.",
+     "checked_on": "2026-10-14",
+     "status": "verified"
+    },
+    {
+     "type": "tie",
+     "person": "ciro",
+     "word": "ally",
+     "inferred": true,
+     "sources": [
+      "daniel-6",
+      "it-belsasar"
+     ],
+     "reason": "Perspicacia «Belsasar» llama a Darío el medo aliado de Ciro el persa ante Babilonia; Da 6:28 nombra los dos reinados seguidos.",
+     "checked_on": "2026-10-14",
+     "status": "verified"
+    },
+    {
+     "type": "kin",
+     "person": "asuero-padre-de-dario-el-medo",
+     "word": "father",
+     "inferred": false,
+     "sources": [
+      "daniel-9",
+      "it-asuero",
+      "it-dario"
+     ],
+     "reason": "Da 9:1 lo llama hijo de Asuero, de linaje medo; Perspicacia «Asuero», núm. 1, y «Darío», núm. 1.",
+     "checked_on": "2026-10-14",
+     "status": "verified"
+    }
+   ],
+   "despues": [
+    {
+     "type": "succeeds",
+     "person": "belsasar",
+     "inferred": false,
+     "sources": [
+      "it-dario",
+      "daniel-5"
+     ],
+     "reason": "Da 5:30, 31 y Perspicacia «Darío», núm. 1: sucedió a Belsasar en el trono.",
+     "checked_on": "2026-09-29",
+     "office": "king",
+     "status": "verified"
+    },
+    {
+     "type": "holds_office",
+     "place": "babilonia",
+     "office": "king",
+     "inferred": false,
+     "sources": [
+      "daniel-5",
+      "daniel-9"
+     ],
+     "reason": "Recibió el reino la noche en que murió Belsasar (Da 5:30, 31); Da 9:1 dice que lo hicieron rey sobre los caldeos.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "born_in",
+     "place": "media",
+     "inferred": true,
+     "sources": [
+      "daniel-5",
+      "it-dario"
+     ],
+     "reason": "Da 5:31 lo llama Darío el medo; Perspicacia «Darío», núm. 1, da su origen medo, el mismo que el de su padre. Gentilicio de un pueblo extranjero.",
+     "checked_on": "2026-10-14",
+     "status": "verified"
+    },
+    {
+     "type": "tie",
+     "person": "ciro",
+     "word": "ally",
+     "inferred": true,
+     "sources": [
+      "daniel-6",
+      "it-belsasar"
+     ],
+     "reason": "Perspicacia «Belsasar» llama a Darío el medo aliado de Ciro el persa ante Babilonia; Da 6:28 nombra los dos reinados seguidos.",
+     "checked_on": "2026-10-14",
+     "status": "verified"
+    },
+    {
+     "type": "kin",
+     "person": "asuero-padre-de-dario-el-medo",
+     "word": "father",
+     "inferred": false,
+     "sources": [
+      "daniel-9",
+      "it-asuero",
+      "it-dario"
+     ],
+     "reason": "Da 9:1 lo llama hijo de Asuero, de linaje medo; Perspicacia «Asuero», núm. 1, y «Darío», núm. 1.",
+     "checked_on": "2026-10-14",
+     "status": "verified"
+    }
+   ],
+   "historial": {
+    "date": "2026-10-14",
+    "change": "La sucesión de Belsasar ya no cita Daniel 9: Da 9:1 no lo nombra. La sostienen Da 5:30, 31 y Perspicacia «Darío», núm. 1.",
+    "source": "daniel-9"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "journeys",
+   "id": "daniel-a-babilonia",
+   "campo": "reason",
+   "antes": "El estudio 3 fecha en 617 a.e.c. el destierro con Joaquín (sucesos daniel-llevado-a-babilonia y nabucodonosor-se-lleva-a-joaquin-a-babilonia). Ezequiel va en el mismo convoy, como acompañante de joaquin-llevado-a-babilonia (Eze 1:2).",
+   "despues": "El estudio 3 fecha en 617 a.e.c. el destierro con Joaquín, suceso nabucodonosor-se-lleva-a-joaquin-a-babilonia; al llegar, Aspenaz los escoge (daniel-llevado-a-babilonia). Ezequiel va en el mismo convoy, con joaquin-llevado-a-babilonia (Eze 1:2).",
+   "historial": {
+    "date": "2026-10-14",
+    "change": "daniel-llevado-a-babilonia es ya la escena de Babilonia (Da 1:3-7); el traslado es el suceso de 2 Reyes.",
+    "source": "daniel-1"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "journeys",
+   "id": "daniel-a-babilonia",
+   "campo": "stops",
+   "antes": [
+    {
+     "order": 1,
+     "place": "jerusalen",
+     "reference": "Da 1:1-3",
+     "date": {
+      "from": -616,
+      "to": -616,
+      "precision": "year",
+      "approx": true,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "617 a.e.c."
+     },
+     "note": null,
+     "reason": "Da 1:1-3: Nabucodonosor sitia Jerusalén y manda escoger a jóvenes israelitas de familias nobles. Suceso daniel-llevado-a-babilonia, 617 a.e.c.",
+     "sources": [
+      "daniel-1",
+      "si-3"
+     ],
+     "checked_on": "2026-09-30",
+     "status": "verified"
+    },
+    {
+     "order": 2,
+     "place": "babilonia",
+     "reference": "Da 1:2-7",
+     "date": {
+      "from": -616,
+      "to": -616,
+      "precision": "year",
+      "approx": true,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "617 a.e.c."
+     },
+     "note": "Da 1:2 la llama tierra de Sinar. Es el mismo traslado que el del rey Joaquín (2Re 24:15).",
+     "reason": "Da 1:2-7 y 2Re 24:15: los llevan a Babilonia y allí les dan nombres nuevos. Suceso daniel-llevado-a-babilonia.",
+     "sources": [
+      "daniel-1",
+      "2-reyes-24",
+      "it-daniel",
+      "si-3"
+     ],
+     "checked_on": "2026-09-30",
+     "status": "verified"
+    }
+   ],
+   "despues": [
+    {
+     "order": 1,
+     "place": "jerusalen",
+     "reference": "Da 1:1-3",
+     "date": {
+      "from": -616,
+      "to": -616,
+      "precision": "year",
+      "approx": true,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "617 a.e.c."
+     },
+     "note": null,
+     "reason": "Da 1:1-3: Nabucodonosor sitia Jerusalén y se lleva a jóvenes israelitas de familias nobles. Suceso nabucodonosor-se-lleva-a-joaquin-a-babilonia, 617 a.e.c.",
+     "sources": [
+      "daniel-1",
+      "si-3"
+     ],
+     "checked_on": "2026-09-30",
+     "status": "verified"
+    },
+    {
+     "order": 2,
+     "place": "babilonia",
+     "reference": "Da 1:2-7",
+     "date": {
+      "from": -616,
+      "to": -616,
+      "precision": "year",
+      "approx": true,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "617 a.e.c."
+     },
+     "note": "Da 1:2 la llama tierra de Sinar. Es el mismo traslado que el del rey Joaquín (2Re 24:15).",
+     "reason": "Da 1:2-7 y 2Re 24:15: los llevan a Babilonia y allí les dan nombres nuevos. Suceso daniel-llevado-a-babilonia.",
+     "sources": [
+      "daniel-1",
+      "2-reyes-24",
+      "it-daniel",
+      "si-3"
+     ],
+     "checked_on": "2026-09-30",
+     "status": "verified"
+    }
+   ],
+   "historial": {
+    "date": "2026-10-14",
+    "change": "La parada de Jerusalén remite al suceso del destierro, no a la escena de Babilonia.",
+    "source": "daniel-1"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "tours",
+   "id": "de-babilonia-a-jerusalen",
+   "campo": "stops",
+   "antes": [
+    {
+     "sel": "event:destruccion-de-jerusalen-607",
+     "t": -605.4422,
+     "text": "Nabucodonosor destruye Jerusalén y su templo. Empiezan setenta años en los que la tierra de Judá quedará desolada, como había anunciado Jeremías.",
+     "passages": [
+      "2Re 25:8-10",
+      "Jer 25:11, 12"
+     ]
+    },
+    {
+     "sel": "event:caida-de-babilonia",
+     "t": -537.2642,
+     "text": "Una noche de octubre de 539 a.e.c., el ejército de Ciro entra en Babilonia sin combatir. Belsasar muere en pleno banquete, después de que Daniel leyera la escritura en la pared.",
+     "passages": [
+      "Da 5:1-31"
+     ]
+    },
+    {
+     "sel": "event:decreto-de-ciro",
+     "t": -536.9,
+     "text": "En su primer año sobre Babilonia, Ciro permite a los judíos volver y reconstruir el templo. Les devuelve los utensilios que se había llevado Nabucodonosor.",
+     "passages": [
+      "Esd 1:1-11",
+      "2Cr 36:22, 23"
+     ],
+     "unknown": "No sabemos dónde proclamó Ciro el decreto. Años después apareció en Ecbátana otro documento suyo, un memorándum sobre el templo."
+    },
+    {
+     "sel": "event:regreso-de-537",
+     "t": -535.3,
+     "text": "Un largo camino de vuelta: 42.360 personas, sin contar 7.337 esclavos y 200 cantores, salen de Babilonia con 5.400 utensilios de oro y plata. Viajan entre 800 y 1.600 km, según la ruta.",
+     "passages": [
+      "Esd 1:11",
+      "Esd 2:64, 65"
+     ],
+     "unknown": "La Biblia no da la ruta ni la fecha de salida. Perspicacia estima unos cuatro meses de viaje comparándolo con el de Esdras (Esd 7:9).",
+     "question": {
+      "text": "¿Quién guio a este primer grupo de vuelta a Jerusalén?",
+      "options": [
+       "Esdras",
+       "Zorobabel",
+       "Nehemías"
+      ],
+      "answer": "Zorobabel",
+      "explanation": "Lo guio Zorobabel con el sumo sacerdote Josué. Esdras llegó 69 años después, en 468 a.e.c., y Nehemías en 455."
+     }
+    },
+    {
+     "sel": "event:altar-reconstruido-537",
+     "t": -535.27,
+     "text": "En el séptimo mes, tisri de 537, los repatriados levantan el altar en su sitio y celebran la fiesta de las Cabañas. Termina la desolación de setenta años.",
+     "passages": [
+      "Esd 3:1-6"
+     ]
+    },
+    {
+     "sel": "event:fundamento-del-templo-536",
+     "t": -534.67,
+     "text": "En el segundo mes de 536 se ponen los cimientos del templo. Unos gritan de alegría y otros, los que recordaban el templo de Salomón, lloran.",
+     "passages": [
+      "Esd 3:8-13"
+     ]
+    },
+    {
+     "sel": "event:obra-del-templo-prohibida-522",
+     "t": -520.5,
+     "text": "Los vecinos hostiles acusan a los judíos ante el rey persa, y en 522 la obra queda prohibida. El templo sigue a medio construir.",
+     "passages": [
+      "Esd 4:4-24"
+     ]
+    },
+    {
+     "sel": "event:templo-terminado-515",
+     "t": -513.8955,
+     "text": "En 520, Ageo y Zacarías animan a reanudar la obra, y Darío I la respalda al hallarse el decreto de Ciro. El templo se termina el 3 de adar de 515.",
+     "passages": [
+      "Ag 1:1-15",
+      "Esd 5:1, 2",
+      "Esd 6:14, 15"
+     ]
+    }
+   ],
+   "despues": [
+    {
+     "sel": "event:destruccion-de-jerusalen-607",
+     "t": -605.4422,
+     "text": "Nabucodonosor destruye Jerusalén y su templo. Empiezan setenta años en los que la tierra de Judá quedará desolada, como había anunciado Jeremías.",
+     "passages": [
+      "2Re 25:8-10",
+      "Jer 25:11, 12"
+     ]
+    },
+    {
+     "sel": "event:caida-de-babilonia",
+     "t": -537.2642,
+     "text": "Una noche de octubre de 539 a.e.c., el ejército de Ciro entra en Babilonia sin combatir. Esa misma noche, después de que Daniel leyera la escritura en la pared del salón del banquete, matan a Belsasar.",
+     "passages": [
+      "Da 5:1-31"
+     ]
+    },
+    {
+     "sel": "event:decreto-de-ciro",
+     "t": -536.9,
+     "text": "En su primer año sobre Babilonia, Ciro permite a los judíos volver y reconstruir el templo. Les devuelve los utensilios que se había llevado Nabucodonosor.",
+     "passages": [
+      "Esd 1:1-11",
+      "2Cr 36:22, 23"
+     ],
+     "unknown": "No sabemos dónde proclamó Ciro el decreto. Años después apareció en Ecbátana otro documento suyo, un memorándum sobre el templo."
+    },
+    {
+     "sel": "event:regreso-de-537",
+     "t": -535.3,
+     "text": "Un largo camino de vuelta: 42.360 personas, sin contar 7.337 esclavos y 200 cantores, salen de Babilonia con 5.400 utensilios de oro y plata. Viajan entre 800 y 1.600 km, según la ruta.",
+     "passages": [
+      "Esd 1:11",
+      "Esd 2:64, 65"
+     ],
+     "unknown": "La Biblia no da la ruta ni la fecha de salida. Perspicacia estima unos cuatro meses de viaje comparándolo con el de Esdras (Esd 7:9).",
+     "question": {
+      "text": "¿Quién guio a este primer grupo de vuelta a Jerusalén?",
+      "options": [
+       "Esdras",
+       "Zorobabel",
+       "Nehemías"
+      ],
+      "answer": "Zorobabel",
+      "explanation": "Lo guio Zorobabel con el sumo sacerdote Josué. Esdras llegó 69 años después, en 468 a.e.c., y Nehemías en 455."
+     }
+    },
+    {
+     "sel": "event:altar-reconstruido-537",
+     "t": -535.27,
+     "text": "En el séptimo mes, tisri de 537, los repatriados levantan el altar en su sitio y celebran la fiesta de las Cabañas. Termina la desolación de setenta años.",
+     "passages": [
+      "Esd 3:1-6"
+     ]
+    },
+    {
+     "sel": "event:fundamento-del-templo-536",
+     "t": -534.67,
+     "text": "En el segundo mes de 536 se ponen los cimientos del templo. Unos gritan de alegría y otros, los que recordaban el templo de Salomón, lloran.",
+     "passages": [
+      "Esd 3:8-13"
+     ]
+    },
+    {
+     "sel": "event:obra-del-templo-prohibida-522",
+     "t": -520.5,
+     "text": "Los vecinos hostiles acusan a los judíos ante el rey persa, y en 522 la obra queda prohibida. El templo sigue a medio construir.",
+     "passages": [
+      "Esd 4:4-24"
+     ]
+    },
+    {
+     "sel": "event:templo-terminado-515",
+     "t": -513.8955,
+     "text": "En 520, Ageo y Zacarías animan a reanudar la obra, y Darío I la respalda al hallarse el decreto de Ciro. El templo se termina el 3 de adar de 515.",
+     "passages": [
+      "Ag 1:1-15",
+      "Esd 5:1, 2",
+      "Esd 6:14, 15"
+     ]
+    }
+   ],
+   "historial": {
+    "date": "2026-10-14",
+    "change": "La parada de la caída de Babilonia ya no dice que Belsasar murió en pleno banquete: Da 5:30 solo dice que lo mataron esa misma noche.",
+    "source": "daniel-5"
+   }
+  }
+ ],
+ "preguntas": [
+  "Belsasar y su «padre» Nabucodonosor (Da 5:2, 11, 13, 18, 22). Perspicacia «Belsasar» da dos lecturas: abuelo por su madre, quizá Nitocris, hija del rey, o antecesor en el trono; dp, cap. 7, párr. 2, recoge la primera solo como opinión de algunos. No va relación kin, porque certainty solo vale en same_as, y belsasar.yaml lo deja en not_claimed. ¿Se quiere kin grandfather inferida, o una forma de marcar un parentesco que la fuente da por posible? Hasta entonces Daniel 5 sigue complete con la nota del tramo 5:1-4.",
+  "Cargos que el vocabulario no tiene, o que no sabemos si encajan: gobernante de toda la provincia de Babilonia (Daniel, Da 2:48; governor existe y lo lleva Guedalías, pero el encargo dice que no vale para el gobernador de una provincia); prefecto de los sabios o jefe de los sacerdotes-magos (Daniel, Da 2:48; 4:9; 5:11); jefe de los funcionarios de la corte (Aspenaz, Da 1:3); jefe de la guardia (Arioc, Da 2:14); administrador de la provincia (Sadrac, Mesac y Abednego, Da 2:49; 3:12, 30); tercer gobernante del reino (Daniel, Da 5:29); sátrapa y alto funcionario (Da 6:1-4); príncipe (Miguel, Da 10:13, 21; 12:1). Ninguno lleva holds_office. Si se acepta governor para Daniel, la relación va con place provincia-de-babilonia desde 606-605 (dp, cap. 4, párr. 2) y una fecha final: dp, cap. 6, párr. 18, lo mantiene en el puesto durante la locura del rey, y dp, cap. 7, párr. 13, ve posible que lo perdiera al morir Nabucodonosor, en 582.",
+  "Viaje repetido del convoy de 617: daniel-a-babilonia y joaquin-llevado-a-babilonia dibujan el mismo trayecto Jerusalén-Babilonia. Por la regla de los viajes (versiculos.md, sección 6) basta uno, con Daniel, Sadrac, Mesac y Abednego en companions de joaquin-llevado-a-babilonia. Borrar daniel-a-babilonia, con su fila en scripts/migration/redirects.yaml, toca la cobertura de 2 Reyes 24 y de Daniel 1 (hoy en el tramo 1:1-2), así que lo decide la integración. Si se borra, sobra la operación cambiar de journeys/daniel-a-babilonia de esta cola.",
+  "Fecha de la visión de Da 10-12 (vision-del-tercer-ano-de-ciro): queda como tramo 536-535 a.e.c., sin día. Perspicacia «Daniel» y «Toda Escritura» dan 536; «Profecías de Daniel», cap. 12, párr. 3, la publicación más reciente, da 536/535, y su párr. 5 cuenta ya puestos los cimientos del templo (Esd 3:8-10, iyar de 536), lo que apunta a nisán de 535. El día 24 del primer mes (Da 10:4) va en la razón. ¿Se queda el tramo, o el dueño fija 535 con detail {month: nisan, day: 24}? Daniel 10 sigue complete con el tramo.",
+  "Potencia angloamericana (Da 7:7-8, 24-26; 8:9-12, 23-26; 11:25-45; 12:1): «Profecías de Daniel», cap. 9 y 10, y La Atalaya de mayo de 2020 la ven en el cuerno pequeño y en el rey del sur moderno. No hay periodo para ella en data/periods y el encargo deja los cumplimientos en las notas, así que solo sale en ellas. Si el dueño crea ese periodo, entra en mentions de esos tramos.",
+  "Alejandro Magno, los Tolomeos y los Seléucidas (Da 8:5-8, 21; 11:3-19): Perspicacia «Alejandro», núm. 1 (clave 1200000192#1, libre), lo identifica con el primer rey de Grecia de Da 8:21, y «Profecías de Daniel», cap. 13, nombra a Tolomeo I a VI, Seleuco I a IV, Antíoco II a IV, Berenice, Laodice y Cleopatra I. El texto no los nombra y el encargo deja los cumplimientos en las notas: ninguno lleva ficha y muerte-de-alejandro sigue con roles {}. ¿Quiere el dueño fichas? La Berenice tolemaica pediría distinct_from con berenice (Hch 25).",
+  "Ciro tras Darío el medo (Da 6:28): Perspicacia «Darío», núm. 1, ve en la Biblia un reinado corto de Darío seguido del de Ciro, pero admite que reinaran a la vez. Por eso no va ciro/succeeds/dario-el-medo; queda dario-el-medo/tie/ciro (ally). ¿Se añade la sucesión con inferred: true?"
+ ]
+}

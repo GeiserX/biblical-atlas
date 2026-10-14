@@ -327,10 +327,6 @@ Los campos, los tipos de relación y sus palabras se nombran como en el esquema 
 
 - **Homónimos con fichas de 1 Crónicas.** Cuando existan las de Jeremías, cada par lleva `distinct_from` en las dos fichas: `guedalias-hijo-de-jedutun`; `hananias-hijo-de-heman`, `hananias-hijo-de-zorobabel` y `hananias-hijo-de-sasac`; `netanias-hijo-de-asaf`; `selemias-portero`; `semaya-hijo-de-obed-edom` y los demás Semaya de 1 Crónicas; `hilquias-hijo-de-hosa` e `hilquias-hijo-de-amzi`; `imer-de-tiempos-de-david` (turno 16) e `imer-padre-de-mesilemit`; `malkiya-de-tiempos-de-david`; `delaya-de-tiempos-de-david` y `delaya-hijo-de-elioenai`; `jerahmeel-hijo-de-hezron` y `jerahmeel-hijo-de-quis`. `malkias-padre-de-pasjur` y `pasjur-hijo-de-malkias` los creó 1Cr 9:12 con los ids y las claves de la propuesta de Jeremías: se funden.
 
-## Para Daniel (desde 1 Crónicas)
-
-- **Claves de Daniel y Sadrac.** `daniel` lleva ya la clave `1200001117#2` (núm. 1 es Kileab, llamado Daniel en 1Cr 3:1) y `sadrac`, `1200003927`, con su `disambiguation`. Daniel no las vuelve a proponer.
-
 ## Para quien reabra Génesis o 2 Samuel (desde 1 Crónicas)
 
 - **Queturá y Agar.** `abrahan/kin/quetura` pasa a `secondary_wife` (1Cr 1:32; Perspicacia «Queturá»). Agar sigue con `wife`, aunque Perspicacia «Agar» también la llama concubina: lo decide Génesis.
@@ -341,12 +337,11 @@ Los campos, los tipos de relación y sus palabras se nombran como en el esquema 
 
 - **Elías.** `elias-resucita-al-hijo-de-la-viuda-de-sarepta` lleva «Heb 11:35» en `passages`: va en el tramo de Heb 11 que lo recuerda. `elias-anuncia-la-sequia-a-acab` y `elias-ora-y-jehova-envia-la-lluvia` llevan «Snt 5:17» y «Snt 5:18»: van en el tramo de Santiago 5.
 
-## Para Esdras, Nehemías, Daniel y Hebreos (desde Ageo)
+## Para Esdras, Nehemías y Hebreos (desde Ageo)
 
 - **Un suceso por mensaje.** Ageo lleva cuatro sucesos anclados al día en 520 a.e.c., serie `ageo`: `primer-mensaje-de-ageo` (1 de elul, Ag 1:1-11), `segundo-mensaje-de-ageo` (21 de tisri, Ag 2:1-9), `tercer-mensaje-de-ageo` y `cuarto-mensaje-de-ageo` (24 de kislev, Ag 2:10-19 y 2:20-23).
 - **`se-reanuda-la-obra-del-templo-520` es de Esdras.** Desde Ageo es solo el 24 de elul de 520 (Ag 1:12-15): el título y el resumen hablan de Zorobabel, Josué y el pueblo, y `people` ya no lleva a `zacarias-profeta` ni `passages` a Zac 1:1, porque Zacarías empezó en el mes octavo (Zac 1:1; Perspicacia «Ageo»). Esdras (Esd 5:1, 2) lo pone en `entities` de su tramo; el primer mensaje de Zacarías es otro suceso, `primer-mensaje-de-zacarias`. El tramo Ageo 2:15-19 lo lleva en `mentions`: la referencia de Ag 2:18 remite a Esd 5:2.
 - **Josué y Jehozadac.** `josue-sumo-sacerdote` lleva la clave `1200002446#4` (Perspicacia «Jesúa», núm. 4); «Josué», núm. 4 (`1200002523`), es el mismo hombre con los pasajes de Ageo y Zacarías y no se usa como clave. Nadie vuelve a proponer la clave de Josué: un `cambiar` desde `null` chocaría. Su padre es `jehozadac` (`1200002400`, con Jozadac y Jehozadaq en `names`). Esd 3:2, 8; 5:2; 10:18 y Ne 12:26 añaden su capítulo a la relación `josue-sumo-sacerdote/kin/jehozadac`.
-- **Darío el medo.** `dario-el-medo` sigue sin clave: le corresponde `1200001124#1` (Perspicacia «Darío», núm. 1), porque `dario-i` ya lleva `#2`. La pone Daniel.
 - **Hebreos 12.** Heb 12:26, 27 cita Ag 2:6: su tramo lleva `segundo-mensaje-de-ageo` en `mentions`, sin añadir el pasaje.
 
 ## Para 2 Crónicas (desde 2 Reyes)
@@ -366,10 +361,9 @@ Los campos, los tipos de relación y sus palabras se nombran como en el esquema 
 - **Deportaciones asirias.** `asiria-repuebla-las-ciudades-de-samaria` y `un-sacerdote-desterrado-vuelve-a-betel` van de 740 hasta Esar-Hadón y citan Esd 4:2 en su `reason` (Perspicacia «Esar-hadón»: el traslado de gente a Samaria siguió hasta su reinado). El tramo de Esd 4:1-3 los pone en `mentions` y usa `esar-hadon`.
 - **Sacerdotes.** `esdras` lleva `kin` `seraya-hijo-de-azarias` con la palabra `ancestor` y la fuente `esdras-7`: el tramo de Esdras 7 la pone en `entities` al cerrarse.
 
-## Para Hebreos y Daniel (desde 2 Reyes)
+## Para Hebreos (desde 2 Reyes)
 
 - **Hebreos 11:35.** `eliseo-resucita-al-hijo-de-la-sunamita` lleva «Heb 11:35» en `passages`, como `elias-resucita-al-hijo-de-la-viuda-de-sarepta`: el tramo de Heb 11 lo pone en `entities`.
-- **Daniel 1.** `daniel-llevado-a-babilonia` y `nabucodonosor-se-lleva-a-joaquin-a-babilonia` comparten 2Re 24:12-16: el de Daniel es el mismo destierro visto desde él. 2 Reyes lo deja en `mentions` de su tramo.
 
 ## Para Esdras, Nehemías, Ageo, 2 Crónicas, Job, Ezequiel, Joel y Mateo (desde Zacarías)
 
@@ -413,10 +407,6 @@ Los campos, los tipos de relación y sus palabras se nombran como en el esquema 
 
 - **La madera de Tiro (Esd 3:7).** «Las profecías de Isaías I» ve cumplido Is 23:18 en el cedro que Tiro vende para el templo. Cuando Esdras cree ese suceso, va en `mentions` del tramo Isaías 23:15-18.
 
-## Para Daniel (desde Isaías)
-
-- **La caída de Babilonia.** `caida-de-babilonia` nombra en su resumen las tropas de Ciro, pero `people` solo lleva a Belsasar y a Daniel. Perspicacia «Ciro» hace entrar al rey 17 días después: si Daniel lo añade, el suceso necesita `present`.
-
 ## Para Mateo, Lucas, Hechos y Romanos (desde Isaías)
 
 - **Jesús y Jesé.** `jesus` lleva `kin` `jese` con la palabra `ancestor`, deducida, desde Is 11:1, 10. Mt 1:5, 6, Lu 3:32 y Ro 15:12 añaden su capítulo a esa relación si se reabren.
@@ -435,7 +425,6 @@ Los campos, los tipos de relación y sus palabras se nombran como en el esquema 
 
 - **Lugares nuevos.** `pecod` (Jer 50:21) es el de Ez 23:23. `askenaz`, el reino, y `mini` (Jer 51:27) no tienen punto, solo zonas candidatas; el lugar `askenaz` comparte id con la persona, como `put`. `ufaz` (Jer 10:9) no tiene punto ni candidatos: Da 10:5 usa ese id. `hai-de-ammon` (Jer 49:3) es otro lugar que `hai`.
 - **Nabucodonosor contra Egipto.** Jer 46:13-26 deja `nabucodonosor-contra-egipto` en `mentions`, sin pasaje, porque Perspicacia no sabe si la campaña de 588 fue la conquista anunciada. Ezequiel 29 y 30 deciden con lo que diga su publicación.
-- **Hananías y Sadrac.** `sadrac` lleva ya `disambiguation` y `distinct_from` hacia `hananias-hijo-de-azur`, `hananias-padre-de-sedequias` y `hananias-abuelo-de-iriya`, pero sigue sin clave `perspicacia`: la pone quien relea Daniel 1. Un Hananías nuevo cambia esa frase y añade su `distinct_from` en las dos fichas.
 
 ## Para 1 Crónicas y Nehemías (desde Jeremías)
 
@@ -454,3 +443,32 @@ Los campos, los tipos de relación y sus palabras se nombran como en el esquema 
 - **Jasón, anfitrión.** `pablo/tie/jason`, con la palabra `host` y c. 50, nace de la nota de 1Te 1:6 y de Perspicacia «Tesalónica» y «Jasón», y cita solo `1-tesalonicenses-1`. Lo dice el texto de Hechos, así que va con `inferred: false`, pero su `reason` nombra Hechos sin capítulo, porque citar Hch 17:7 obliga a ponerla en un tramo de Hechos 17, que está cerrado. Si se reabre Hch 17:5-9, el tramo añade `hch-17` a sus fuentes, «Hch 17:7» a su `reason` y la pone en `entities`; Perspicacia «Jasón» dice que acogió también a Silas, así que puede crear `silas/tie/jason` con la misma palabra.
 - **La primera carta y lo que va antes.** `primera-carta-de-pablo` lleva ahora el orden 1806 de la serie `hechos`, tras `crispo-cree` (Hch 18:5), y dice que probablemente es su primera carta (nota de 1Te 2:13). Antes van `pablo-intenta-volver-a-tesalonica` (1713, 1Te 2:17, 18) y `pablo-envia-a-timoteo-a-tesalonica` (1716, 1Te 3:1-5: al empezar la espera de Atenas, porque ninguna fuente lo ordena frente al Areópago, que es 1722).
 - **Filipos en 1Te 2:2.** Va en `mentions`: `filipos` lleva bloque `en` y `validate.py` no le deja citar `1-tesalonicenses-2` mientras el libro no tenga el suyo en `data/books.yaml`. Cuando lo tenga, el tramo 1-2 puede pasarla a `entities`.
+
+## Para Hebreos (desde Daniel)
+
+- **Hebreos 11:33, 34.** `daniel-sale-ileso-del-foso-de-los-leones` lleva «Heb 11:33» en `passages` («Profecías de Daniel», cap. 8, lo ve como alusión a Daniel) y `sadrac-mesac-y-abednego-en-el-horno-de-fuego`, «Heb 11:34»: el tramo de Heb 11 que los recuerda los pone en `entities`.
+
+## Para 2 Reyes, Ezequiel y Mateo (desde Daniel)
+
+- **La deportación de 617 son dos escenas.** `nabucodonosor-se-lleva-a-joaquin-a-babilonia` es el sitio y el destierro, y lleva ya Da 1:1, 2 y a Daniel, Sadrac, Mesac y Abednego en `people` (Perspicacia «Jehoiaquim» y «Daniel», núm. 2). `daniel-llevado-a-babilonia` queda en la escena de Babilonia (Da 1:3-7): Aspenaz escoge a los jóvenes y les cambia el nombre (Perspicacia «Daniel», núm. 2, «Bajo el dominio babilonio», y «Sadrac»). Su id no cambia, porque lo citan 2 Reyes, Isaías 39 y Mateo. Ya no lleva 2Re 24:12-16, ni a Joaquín ni a Ezequiel.
+- **Mateo 1:11, 12.** El tramo que nombra la deportación a Babilonia lleva `event:daniel-llevado-a-babilonia` en `mentions`: quien reabra Mateo pone en su lugar `nabucodonosor-se-lleva-a-joaquin-a-babilonia`.
+- **Dos viajes del mismo convoy.** `daniel-a-babilonia` y `joaquin-llevado-a-babilonia` dibujan el mismo trayecto de 617. Por la regla de los viajes bastaría uno, con Daniel y sus tres compañeros en `companions`; quitar `daniel-a-babilonia` toca la cobertura de 2 Reyes y de Ezequiel, así que lo decide la integración.
+
+## Para Esdras, Nehemías y 2 Crónicas (desde Daniel)
+
+- **Asuero.** `asuero-padre-de-dario-el-medo` (Perspicacia «Asuero», núm. 1, `1200000142#1`) y `jerjes-i` (núm. 3, `1200000142#3`, que puso Daniel) llevan `distinct_from` entre sí. El Asuero de Esd 4:6 (núm. 2) es ficha nueva con `distinct_from` hacia los dos, o un nombre de `cambises-ii` si Perspicacia lo da por el mismo.
+- **Miguel.** `jesus` lleva Miguel en `names` (Perspicacia «Miguel», núm. 1) y `distinct_from` con los ocho Miguel que existen. Quien cree el núm. 7 (2Cr 21:2) o el núm. 11 (Esd 8:8) añade `distinct_from` `jesus` en las dos fichas.
+- **La provincia de Babilonia.** Es un lugar propio, `provincia-de-babilonia` (Da 2:48, 49; 3:1), con el punto de la ciudad. Perspicacia «Distrito jurisdiccional» ve posible que «hijos del distrito jurisdiccional» (Esd 2:1; Ne 7:6) aluda a ella, o a Judá: si la publicación del tramo lo decide, va en `mentions`.
+- **Claves que ya puso Daniel.** `dario-el-medo` (`1200001124#1`), `belsasar` (`1200000628`), `mesac` (`1200003007`), `abednego` (`1200000017`) y `jerjes-i`: nadie las vuelve a proponer.
+
+## Para quien reabra Isaías (desde Daniel)
+
+- **El banquete de Belsasar.** `caida-de-babilonia` ya no cubre Da 5:1-29: el banquete y la escritura en la pared son `daniel-lee-la-escritura-en-la-pared`. «Profecías de Daniel», cap. 7, liga Is 21:5 al banquete, así que va en `mentions` del tramo Isaías 21:1-5, sin pasaje.
+
+## Para la integración de Ezequiel (desde Daniel)
+
+- **Gog de Magog.** La Atalaya de mayo de 2020 ve probable que Da 11:44-12:1 y Eze 38 hablen de lo mismo. Cuando `ezequiel-profetiza-contra-gog-de-magog` esté en `main`, va en `mentions` del tramo Daniel 11:44-45, sin pasaje.
+
+## Para todos los libros (desde Daniel)
+
+- **Más cargos que el vocabulario no tiene.** Jefe de los funcionarios de la corte (Aspenaz, Da 1:3), jefe de la guardia (Arioc, Da 2:14), gobernante de toda la provincia de Babilonia (Daniel, Da 2:48), prefecto de los sabios o jefe de los sacerdotes-magos (Daniel, Da 2:48; 4:9; 5:11), administrador de una provincia (Sadrac, Mesac y Abednego, Da 2:49; 3:12, 30), tercer gobernante del reino (Daniel, Da 5:29), sátrapa y alto funcionario (Da 6:1-4) y príncipe (Miguel, Da 10:13, 21; 12:1). No llevan `holds_office`; el vínculo con el rey va como `tie` `master`. `governor`, que lleva Guedalías en Judá, tampoco se usa para el gobernador de una provincia hasta que el dueño lo decida: si lo acepta, Daniel lo lleva sobre `provincia-de-babilonia` desde 606-605 (dp, cap. 4) con fecha final, porque dp, cap. 6, lo mantiene en el puesto durante la locura del rey.

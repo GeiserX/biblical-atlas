@@ -1,0 +1,41 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jehova-revela-a-daniel-el-sueno-del-rey
+title: Jehová revela a Daniel el sueño del rey
+date:
+  from: -605
+  to: -604
+  precision: range
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 606-605 a.e.c.
+narrative_order:
+  series: daniel
+  order: 2017
+  elapsed:
+    days: 0
+    reason: 'Da 2:17-19 y dp, cap. 4, párr. 4: vuelve a su casa y esa misma noche recibe la visión.'
+places:
+- babilonia
+people:
+- daniel
+- sadrac
+- mesac
+- abednego
+passages:
+- Da 2:17-23
+summary: Daniel cuenta lo que pasa a Hananías, Misael y Azarías y les pide que rueguen al Dios del cielo. De noche, en una
+  visión, se le revela el secreto, y Daniel alaba a Dios por darle sabiduría.
+reason: Da 2:17-23; dp, cap. 4, párr. 4. Fecha del sueño de Da 2:1 (dp, cap. 4, párr. 2).
+sources:
+- daniel-2
+- dp-4
+links:
+- title: Daniel 2 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/daniel/2/
+  type: bible
+- title: 'Perspicacia: «Nabucodonosor, Nabucodorosor»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Nabucodonosor-Nabucodorosor/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified

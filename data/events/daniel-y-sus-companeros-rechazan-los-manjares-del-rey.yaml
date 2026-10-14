@@ -1,0 +1,45 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: daniel-y-sus-companeros-rechazan-los-manjares-del-rey
+title: Daniel y sus compañeros rechazan los manjares del rey
+date:
+  from: -616
+  to: -613
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 617 y c. 614 a.e.c. (tiempo narrativo: durante los tres años de formación)'
+narrative_order:
+  series: daniel
+  order: 1008
+  elapsed:
+    reason: 'Da 1:7, 8: tras recibir sus nombres nuevos, Daniel decide no comer de la mesa del rey. El texto no da el plazo.'
+places:
+- babilonia
+people:
+- daniel
+- sadrac
+- mesac
+- abednego
+- aspenaz
+passages:
+- Da 1:8-16
+summary: Daniel no quiere contaminarse con la comida ni con el vino del rey. Aspenaz teme al rey, pero el guardián acepta
+  probar diez días con legumbres y agua, y los cuatro jóvenes acaban con mejor aspecto que los demás.
+reason: Pasa en los tres años de formación (Da 1:5, 18) que siguen a la llegada de 617 (estudio 3; Perspicacia «Daniel», núm.
+  2). dp, cap. 3, párr. 20-27. El guardián no tiene nombre.
+sources:
+- daniel-1
+- si-3
+- it-daniel
+- it-mesac
+- dp-3
+links:
+- title: Daniel 1 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/daniel/1/
+  type: bible
+- title: 'Perspicacia: «Daniel»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Daniel/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified

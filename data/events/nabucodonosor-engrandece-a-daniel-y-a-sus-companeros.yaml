@@ -1,0 +1,46 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: nabucodonosor-engrandece-a-daniel-y-a-sus-companeros
+title: Nabucodonosor engrandece a Daniel y a sus compañeros
+date:
+  from: -605
+  to: -604
+  precision: range
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 606-605 a.e.c.
+narrative_order:
+  series: daniel
+  order: 2046
+  elapsed:
+    days: 0
+    reason: 'Da 2:46: en la misma audiencia, al oír la interpretación, el rey se postra ante Daniel.'
+places:
+- babilonia
+people:
+- nabucodonosor-ii
+- daniel
+- sadrac
+- mesac
+- abednego
+passages:
+- Da 2:46-49
+summary: El rey se postra ante Daniel y reconoce a su Dios como Dios de dioses. Lo colma de regalos, lo pone sobre la provincia
+  y los sabios de Babilonia y, a petición suya, encarga la provincia a sus tres compañeros.
+reason: Da 2:46-49; Perspicacia «Daniel», núm. 2, «Sadrac» y «Distrito jurisdiccional». Fecha del sueño de Da 2:1 (dp, cap.
+  4, párr. 2).
+sources:
+- daniel-2
+- dp-4
+- it-daniel
+- it-sadrac
+- it-distrito-jurisdiccional
+links:
+- title: Daniel 2 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/daniel/2/
+  type: bible
+- title: 'Perspicacia: «Nabucodonosor, Nabucodorosor»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Nabucodonosor-Nabucodorosor/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified

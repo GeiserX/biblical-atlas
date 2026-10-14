@@ -1,0 +1,43 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: nabucodonosor-pierde-el-juicio
+title: Nabucodonosor pierde el juicio
+date:
+  from: -603
+  to: -588
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 604 y c. 589 a.e.c. (tiempo narrativo: un año después del sueño y siete antes de recobrar el juicio)'
+  note: 'Cuenta nuestra: doce meses después del sueño (Da 4:29), que es de 605 como pronto, y siete años antes de sanar, que fue antes de su muerte en 582 (Perspicacia «Locura» y «Nabucodonosor»).'
+narrative_order:
+  series: daniel
+  order: 4028
+  elapsed:
+    months: 12
+    reason: 'Da 4:29: doce meses después del sueño, paseando por la azotea del palacio.'
+places:
+- babilonia
+people:
+- nabucodonosor-ii
+passages:
+- Da 4:28-33
+- Da 5:20, 21
+summary: Mientras presume de la Babilonia que ha construido, una voz del cielo le quita el reino. Enloquece, lo echan de entre
+  los hombres y vive como un animal, comiendo hierba, siete años.
+reason: Da 4:28-33. Perspicacia «Locura» dice que estuvo demente siete años, y «Nabucodonosor», párr. 1, que caben dentro
+  de su reinado. Daniel se lo recuerda a Belsasar en Da 5:20, 21.
+sources:
+- daniel-4
+- it-locura
+- it-nabucodonosor
+- dp-6
+links:
+- title: Daniel 4 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/daniel/4/
+  type: bible
+- title: 'Perspicacia: «Locura»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Locura/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified
