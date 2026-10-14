@@ -2,7 +2,7 @@
 id: ultima-campana-de-acab
 name: Última campaña de Acab
 person: acab
-reference: 1Re 22:1-40
+reference: 1Re 22:1-40; 2Cr 18:2-34
 date:
   from: -919
   to: -919
@@ -24,7 +24,12 @@ sources:
 - it-acab
 - it-ramot-galaad
 - tnm-a6-a
-checked_on: '2026-09-30'
+- 2-cronicas-18
+history:
+- date: '2026-10-13'
+  change: Se añade el relato paralelo de 2 Crónicas 18, que cuenta la misma salida de Samaria y la muerte en Ramot-Galaad.
+  source: 2-cronicas-18
+checked_on: '2026-10-13'
 status: verified
 stops:
 - order: 1

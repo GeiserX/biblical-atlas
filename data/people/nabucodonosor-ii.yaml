@@ -16,7 +16,7 @@ date:
   chronology: tnm
   text: 624-582 a.e.c.
 summary: Hijo de Nabopolasar y rey de Babilonia. Venció a Egipto en Carquemis, se llevó a Joaquín en 617 y destruyó Jerusalén
-  en 607. Daniel narra su sueño de la imagen y sus siete tiempos de locura.
+  en 607. Levantó la estatua de oro de Dura y pasó siete años loco, como le anunció Daniel.
 reason: Perspicacia «Nabucodonosor, Nabucodorosor», párr. 1-6. Subió al trono en 625; su primer año cuenta desde nisán de 624
   (estudio 3).
 sources:
@@ -41,6 +41,15 @@ sources:
 - jeremias-51
 - jeremias-52
 - 1-cronicas-6
+- daniel-1
+- dp-3
+- daniel-2
+- dp-4
+- daniel-3
+- dp-5
+- it-locura
+- dp-6
+- 2-cronicas-36
 - ezequiel-17
 - ezequiel-21
 - it-adivinacion
@@ -61,6 +70,7 @@ relations:
   sources:
   - it-nabucodonosor
   - daniel-4
+  - 2-cronicas-36
   - ezequiel-17
   reason: Gobernó desde Babilonia, que él mismo embelleció (Da 4:29-30).
   checked_on: '2026-10-13'
@@ -86,6 +96,24 @@ relations:
   checked_on: '2026-09-29'
   office: king
   status: verified
+- type: tie
+  person: daniel
+  word: adviser
+  inferred: false
+  sources:
+  - daniel-4
+  - dp-6
+  reason: 'Da 4:27: Daniel le aconseja que deje sus pecados y tenga compasión de los pobres, por si se alarga su prosperidad.'
+  checked_on: '2026-10-14'
+  status: verified
 perspicacia: '1200003200'
-checked_on: '2026-10-13'
+history:
+- date: '2026-10-14'
+  change: El resumen nombra la estatua de Dura (Da 3) y cuenta la locura en años, como Perspicacia «Locura».
+  source: it-locura
+checked_on: '2026-10-14'
 status: verified
+not_claimed:
+- 'Que Nabucodonosor se hiciera adorador de Jehová: alabó al Altísimo, pero siguió siendo un rey pagano.'
+- 'Que su locura fuera una enfermedad concreta, como la licantropía: vino por decreto de Dios y no se puede diagnosticar.'
+- 'Que Evil-Merodac gobernara mientras estuvo loco: jw.org solo lo da como posible.'

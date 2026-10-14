@@ -1,0 +1,52 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: oded-profeta-de-samaria
+name: Oded
+names:
+- name: Oded
+perspicacia: 1200003297#2
+disambiguation: El profeta de Samaria de los días de Pécah y Acaz; no Oded, el padre del profeta Azarías, de los días de Asá.
+distinct_from:
+- oded-padre-de-azarias
+date:
+  from: -761
+  to: -758
+  precision: range
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: 762-c. 759 a.e.c.
+summary: Profeta de Jehová en Samaria. Salió al encuentro del ejército de Israel, que volvía con 200.000 cautivos de Judá,
+  y le advirtió de la ira de Dios si los hacía esclavos.
+reason: Perspicacia «Oded», núm. 2, lo pone en los años en que reinaban a la vez Pécah y Acaz, 762-c. 759 a.e.c.; 2Cr 28:9-11.
+sources:
+- it-oded
+- 2-cronicas-28
+links:
+- title: 'Perspicacia: «Oded»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Oded/
+  type: perspicacia
+- title: 2 Crónicas 28 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-Cr%C3%B3nicas/28/
+  type: bible
+relations:
+- type: holds_office
+  place: samaria
+  office: prophet
+  inferred: false
+  sources:
+  - 2-cronicas-28
+  - it-oded
+  reason: 2Cr 28:9 lo llama profeta de Jehová y lo pone en Samaria, adonde volvía el ejército.
+  checked_on: '2026-10-13'
+  status: verified
+- type: lived_in
+  place: samaria
+  inferred: true
+  sources:
+  - it-oded
+  - 2-cronicas-28
+  reason: Perspicacia «Oded», núm. 2, lo llama profeta de Samaria; 2Cr 28:9 lo sitúa allí.
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified

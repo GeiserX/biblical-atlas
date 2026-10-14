@@ -1,0 +1,40 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: carpo
+name: Carpo
+names:
+- name: Carpo
+perspicacia: '1200000898'
+date:
+  from: 61
+  to: 65
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre c. 61 y 65 e.c. (tiempo narrativo: la última visita de Pablo a Troas)'
+summary: Cristiano de Troas en cuya casa Pablo dejó su capa, sus rollos y sus pergaminos. Quizá lo hospedó en su visita.
+reason: Perspicacia «Carpo»; 2Ti 4:13. Perspicacia «Troas» pone esa visita tras la liberación de Pablo en 61, no en la de
+  56.
+sources:
+- it-carpo
+- it-troas
+- 2-timoteo-4
+links:
+- title: 'Perspicacia: «Carpo»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Carpo/
+  type: perspicacia
+- title: 2 Timoteo 4 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-timoteo/4/
+  type: bible
+relations:
+- type: lived_in
+  place: troas
+  inferred: false
+  sources:
+  - 2-timoteo-4
+  - it-carpo
+  reason: '2Ti 4:13: la capa quedó en Troas, en casa de Carpo; Perspicacia lo llama residente de Troas.'
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified

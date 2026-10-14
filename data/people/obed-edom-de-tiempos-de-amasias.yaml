@@ -1,0 +1,27 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: obed-edom-de-tiempos-de-amasias
+name: Obed-Edom
+names:
+- name: Obed-Edom
+perspicacia: 1200003291#5
+summary: Tenía a su cargo el oro, la plata y los objetos de la casa de Dios cuando reinaba Amasías. Jehoás de Israel se llevó
+  esos tesoros a Samaria; Perspicacia ve posible que se lo llevara también a él.
+reason: Perspicacia «Obed-edom», núm. 5; 2Cr 25:24 y su nota, que lee «al cuidado de».
+sources:
+- it-obed-edom
+- 2-cronicas-25
+links:
+- title: 'Perspicacia: «Obed-edom»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Obed-edom/
+  type: perspicacia
+relations: []
+disambiguation: El encargado de los tesoros del templo en tiempos de Amasías (2Cr 25:24); no es el guitita que guardó el Arca
+  ni ninguno de los músicos o porteros de tiempos de David.
+distinct_from:
+- obed-edom-coreita
+- obed-edom-el-guitita
+- obed-edom-hijo-de-jedutun
+- obed-edom-musico
+- obed-edom-portero
+checked_on: '2026-10-13'
+status: verified

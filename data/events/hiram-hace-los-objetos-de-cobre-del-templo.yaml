@@ -26,7 +26,8 @@ passages:
 - 1Re 7:13-47
 - 2Cr 2:13, 14
 - 2Cr 3:15-17
-- 2Cr 4:1-18
+- 2Cr 4:1-6
+- 2Cr 4:10-18
 - 1Cr 18:8
 summary: Hiram, traído de Tiro, funde en el distrito del Jordán las columnas Jakín y Boaz, el Mar sobre doce toros, diez carritos
   con sus palanganas y los demás utensilios de cobre para la casa de Jehová.
@@ -39,9 +40,17 @@ sources:
 - si-3
 - it-zaretan
 - it-distrito-del-jordan
+- 2-cronicas-3
+- 2-cronicas-4
+- it-mar-fundido
 links:
 - title: 1 Reyes 7 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/1-reyes/7/
   type: bible
-checked_on: '2026-10-12'
+history:
+- date: '2026-10-13'
+  change: '2Cr 4:1-18 pasa a 2Cr 4:1-6 y 4:10-18: los versículos 7 y 8 son objetos de oro y el 9, los patios; ya están en
+    sus sucesos.'
+  source: 2-cronicas-4
+checked_on: '2026-10-13'
 status: verified

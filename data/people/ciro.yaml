@@ -28,6 +28,8 @@ sources:
 - ip2-6
 - isaias-46
 - ip2-7
+- daniel-6
+- 2-cronicas-36
 links:
 - title: 'Perspicacia: «Ciro»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ciro/
@@ -45,10 +47,21 @@ relations:
   - isaias-46
   - it-ciro
   - ip2-7
+  - 2-cronicas-36
   reason: 'Is 46:11: Jehová llama desde el este a un ave rapaz, de un país lejano. Perspicacia «Ciro» la identifica con Ciro,
     llamado desde Persia, donde levantó Pasargada, su capital preferida.'
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-13'
+  status: verified
+- type: born_in
+  place: persia
+  inferred: true
+  sources:
+  - daniel-6
+  - it-dario
+  reason: Da 6:28 lo llama Ciro el persa; Perspicacia «Darío», núm. 1, añade que su padre fue el persa Cambises I. Gentilicio
+    de un pueblo extranjero.
+  checked_on: '2026-10-14'
   status: verified
 perspicacia: '1200001102'
-checked_on: '2026-09-30'
+checked_on: '2026-10-14'
 status: verified

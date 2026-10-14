@@ -1,0 +1,56 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jehiel-comisionado-de-ezequias
+name: Jehiel
+names:
+- name: Jehiel
+perspicacia: 1200002366#6
+disambiguation: Comisionado de Ezequías (2Cr 31:13). Perspicacia «Jehiel», núm. 6, ve posible que sea el descendiente de Hemán
+  del núm. 5; no es ninguno de los demás Jehiel.
+distinct_from:
+- jehiel-descendiente-de-ladan
+- jehiel-hijo-de-hacmoni
+- jehiel-hijo-de-jehosafat
+- jehiel-musico
+- jehiel-sacerdote-de-josias
+summary: Levita que el rey Ezequías nombró entre los diez que ayudaban a Conanías y a Simeí, su hermano, a guardar lo que
+  el pueblo llevaba al templo.
+reason: Perspicacia «Jehiel», núm. 6; 2Cr 31:12, 13.
+sources:
+- it-jehiel
+- 2-cronicas-31
+links:
+- title: 'Perspicacia: «Jehiel»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jehiel/
+  type: perspicacia
+relations:
+- inferred: false
+  type: accompanies
+  person: conanias-de-tiempos-de-ezequias
+  word: fellow_worker
+  sources:
+  - 2-cronicas-31
+  reason: '2Cr 31:13: uno de los diez levitas que ayudaban a Conanías con las contribuciones, por orden del rey.'
+  checked_on: '2026-10-13'
+  status: verified
+- inferred: false
+  type: accompanies
+  person: simei-hermano-de-conanias
+  word: fellow_worker
+  sources:
+  - 2-cronicas-31
+  reason: '2Cr 31:12, 13: ayudante de Simeí, el segundo encargado de las contribuciones, por orden del rey.'
+  checked_on: '2026-10-13'
+  status: verified
+- inferred: true
+  type: same_as
+  person: jehiel-levita-de-ezequias
+  certainty: probable
+  sources:
+  - it-jehiel
+  - 2-cronicas-31
+  reason: Perspicacia «Jehiel» da por probable, en el núm. 5, que el descendiente de Hemán sea el comisionado de 2Cr 31:13
+    (núm. 6); en el núm. 6 dice «quizás».
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified

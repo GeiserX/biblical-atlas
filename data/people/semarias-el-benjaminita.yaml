@@ -24,5 +24,7 @@ relations:
   reason: '1Cr 12:5: se unió a David y lo apoyó en la guerra.'
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified
+distinct_from:
+- semarias-hijo-de-rehoboam

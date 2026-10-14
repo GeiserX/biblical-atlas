@@ -1,0 +1,29 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: mesulam-levita-de-josias
+name: Mesulam
+names:
+- name: Mesulam
+perspicacia: 1200003014#5
+disambiguation: El cohatita que supervisó las obras del templo con Josías; no el abuelo de Safán ni los demás Mesulam de Perspicacia.
+distinct_from:
+- mesulam-abuelo-de-safan
+- mesulam-hijo-de-abihail
+- mesulam-hijo-de-elpaal
+- mesulam-hijo-de-hodavias
+- mesulam-hijo-de-mesilemit
+- mesulam-hijo-de-sefatias
+- mesulam-hijo-de-zorobabel
+- salum-hijo-de-sadoc
+summary: Levita cohatita. En el año 18 de Josías, 642 a.e.c., lo pusieron con Zacarías y otros dos levitas al frente de los
+  obreros que reparaban el templo.
+reason: Perspicacia «Mesulam», núm. 5; 2Cr 34:12.
+sources:
+- it-mesulam
+- 2-cronicas-34
+links:
+- title: 'Perspicacia: «Mesulam»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Mesulam/
+  type: perspicacia
+relations: []
+checked_on: '2026-10-13'
+status: verified

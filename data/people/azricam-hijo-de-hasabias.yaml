@@ -23,9 +23,10 @@ relations:
   reason: '1Cr 9:14: Azricam, hijo de Hasabías.'
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified
 distinct_from:
 - azricam-hijo-de-azel
 - azricam-hijo-de-nearias
+- azricam-jefe-del-palacio
 disambiguation: 'Azricam núm. 3 de Perspicacia: levita merarita, hijo de Hasabías. No el benjamita hijo de Azel.'

@@ -1,0 +1,36 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: uziel-levita-de-ezequias
+name: Uziel
+names:
+- name: Uziel
+perspicacia: 1200004536#4
+summary: Levita descendiente de Jedutún que ayudó a eliminar lo impuro que se halló en el templo al comenzar el reinado de
+  Ezequías.
+reason: Perspicacia «Uziel», núm. 4; 2Cr 29:14, 16.
+sources:
+- it-uziel
+- 2-cronicas-29
+links:
+- title: 'Perspicacia: «Uziel»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Uziel/
+  type: perspicacia
+disambiguation: El descendiente de Jedutún de los días de Ezequías (Perspicacia «Uziel», núm. 4); no Uziel hijo de Cohat,
+  ni el hijo de Hemán, ni los demás Uziel.
+distinct_from:
+- uziel-de-benjamin
+- uziel-hijo-de-cohat
+- uziel-hijo-de-heman
+- uziel-hijo-de-isi
+relations:
+- type: kin
+  person: jedutun-musico
+  word: ancestor
+  inferred: false
+  sources:
+  - 2-cronicas-29
+  - it-uziel
+  reason: 2Cr 29:14 lo cuenta entre los hijos de Jedutún; Perspicacia «Uziel», núm. 4, lo llama su descendiente.
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified

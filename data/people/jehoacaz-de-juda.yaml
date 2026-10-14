@@ -19,6 +19,7 @@ distinct_from:
 - salum-hijo-de-sadoc
 - silem
 - salum-jefe-de-los-porteros
+- salum-padre-de-jehizquias
 date:
   from: -627
   to: -627
@@ -36,6 +37,7 @@ sources:
 - jeremias-22
 - tnm-a6-b
 - 1-cronicas-3
+- 2-cronicas-36
 links:
 - title: 'Perspicacia: «Jehoacaz»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jehoacaz/
@@ -53,8 +55,9 @@ relations:
   - 2-reyes-23
   - jeremias-22
   - 1-cronicas-3
+  - 2-cronicas-36
   reason: El pueblo eligió a este hijo de Josías (2Re 23:30).
-  checked_on: '2026-10-12'
+  checked_on: '2026-10-13'
   status: verified
 - type: succeeds
   person: josias
@@ -63,8 +66,9 @@ relations:
   - it-jehoacaz
   - 2-reyes-23
   - jeremias-22
+  - 2-cronicas-36
   reason: Lo ungieron al morir su padre (2Re 23:30).
-  checked_on: '2026-10-12'
+  checked_on: '2026-10-13'
   office: king
   status: verified
 - type: died_in
@@ -92,8 +96,9 @@ relations:
   inferred: false
   sources:
   - 2-reyes-23
+  - 2-cronicas-36
   reason: '2Re 23:31: reinó tres meses en Jerusalén.'
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-13'
   status: verified
 - type: tie
   person: neko
@@ -102,8 +107,9 @@ relations:
   sources:
   - 2-reyes-23
   - it-jehoacaz
+  - 2-cronicas-36
   reason: '2Re 23:33, 34: Nekó lo encerró en Riblá y luego se lo llevó a Egipto.'
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-13'
   status: verified
 - type: kin
   person: jehoiaquim
@@ -113,9 +119,10 @@ relations:
   - 2-reyes-23
   - it-jehoiaquim
   - it-sedequias
+  - 2-cronicas-36
   reason: Los dos son hijos de Josías, de madres distintas, Hamutal y Zebidá (2Re 23:30-36). Perspicacia «Jehoiaquim» hace
     a Eliaquim el mayor.
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-13'
   status: verified
 - type: kin
   person: sedequias
@@ -128,5 +135,5 @@ relations:
   checked_on: '2026-09-30'
   status: verified
 perspicacia: 1200002372#3
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified

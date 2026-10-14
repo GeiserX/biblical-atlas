@@ -1,0 +1,29 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: zicri-padre-de-elisafat
+name: Zicrí
+names:
+- name: Zicrí
+perspicacia: 1200004728#9
+disambiguation: Zicrí padre de Elisafat, de tiempos de Jehoiadá; no Zicrí hijo de Izhar, primo de Moisés, ni los demás Zicrí
+  que distingue Perspicacia.
+distinct_from:
+- zicri-hijo-de-izhar
+- zicri-guerrero-efraimita
+- zicri-descendiente-de-eliezer
+- zicri-descendiente-de-jeroham
+- zicri-descendiente-de-sasac
+- zicri-descendiente-de-simei
+- zicri-hijo-de-asaf
+- zicri-padre-de-amasiah
+- zicri-padre-de-eliezer
+summary: Padre de Elisafat, uno de los jefes de cien que ayudaron a Jehoiadá a derribar a Atalía y a coronar a Jehoás.
+reason: Perspicacia «Zicrí», núm. 9; 2Cr 23:1.
+sources:
+- it-zicri
+- 2-cronicas-23
+links:
+- title: 'Perspicacia: «Zicrí»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zicr%C3%AD/
+  type: perspicacia
+checked_on: '2026-10-13'
+status: verified

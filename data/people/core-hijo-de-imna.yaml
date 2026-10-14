@@ -1,0 +1,37 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: core-hijo-de-imna
+name: Coré
+names:
+- name: Coré
+- name: Qoré
+  note: Otra grafía que da la nota de 2Cr 31:14; es la de Perspicacia.
+perspicacia: 1200002650#2
+disambiguation: El portero levita hijo de Imná (2Cr 31:14), Perspicacia «Qoré», núm. 2. No es Coré el rebelde del desierto,
+  ni el hijo de Esaú, ni el de Hebrón, ni el padre de Meselemías.
+distinct_from:
+- core-hijo-de-esau
+- core-hijo-de-hebron
+- core-hijo-de-izhar
+- core-padre-de-meselemias
+summary: Levita, hijo de Imná, portero del lado este en el reinado de Ezequías. Llevaba las ofrendas voluntarias y repartía
+  a los sacerdotes lo santísimo, con seis levitas a sus órdenes en las ciudades sacerdotales.
+reason: Perspicacia «Qoré», núm. 2; 2Cr 31:14-16.
+sources:
+- it-qore
+- 2-cronicas-31
+links:
+- title: 'Perspicacia: «Qoré»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Qor%C3%A9/
+  type: perspicacia
+relations:
+- inferred: false
+  type: kin
+  person: imna-padre-de-core
+  word: father
+  sources:
+  - 2-cronicas-31
+  reason: '2Cr 31:14: Coré hijo de Imná.'
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified

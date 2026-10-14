@@ -1,0 +1,46 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: simei-levita-de-ezequias
+name: Simeí
+names:
+- name: Simeí
+perspicacia: 1200004047#13
+summary: Levita de la casa de Hemán. Cuando Ezequías reabrió la casa de Jehová, se santificó y trabajó en su purificación.
+  Perspicacia lo cree probablemente el Simeí de 2Cr 31:12, 13.
+reason: Perspicacia «Simeí», núm. 13; 2Cr 29:14-16.
+sources:
+- it-simei
+- 2-cronicas-29
+links:
+- title: 'Perspicacia: «Simeí»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sime%C3%AD/
+  type: perspicacia
+disambiguation: El descendiente de Hemán de los días de Ezequías (Perspicacia «Simeí», núm. 13); no Simeí hijo de Guerá, ni
+  el hijo de Jedutún, ni los demás Simeí.
+distinct_from:
+- sama-hijo-de-jese
+- simei-descendiente-de-ladan
+- simei-el-ramatita
+- simei-hijo-de-ela
+- simei-hijo-de-gog
+- simei-hijo-de-guera
+- simei-hijo-de-guerson
+- simei-hijo-de-jahat
+- simei-hijo-de-jedutun
+- simei-hijo-de-libni
+- simei-hijo-de-pedaya
+- simei-hijo-de-zacur
+- simei-padre-de-jaquim
+- simei-partidario-de-david
+relations:
+- type: kin
+  person: heman-hijo-de-joel
+  word: ancestor
+  inferred: false
+  sources:
+  - 2-cronicas-29
+  - it-simei
+  reason: 2Cr 29:14 lo cuenta entre los hijos de Hemán; Perspicacia «Simeí», núm. 13, lo llama su descendiente.
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified

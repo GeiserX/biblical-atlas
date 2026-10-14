@@ -42,8 +42,9 @@ relations:
   - mateo-1
   - isaias-7
   - 1-cronicas-3
+  - 2-cronicas-27
   reason: Hijo del rey Jotán (2Re 16:1).
-  checked_on: '2026-10-12'
+  checked_on: '2026-10-13'
   status: verified
 - type: succeeds
   person: jotan
@@ -51,8 +52,9 @@ relations:
   sources:
   - it-acaz
   - 2-reyes-15
+  - 2-cronicas-27
   reason: Reinó al morir su padre (2Re 15:38).
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-13'
   office: king
   status: verified
 - type: kin
@@ -63,16 +65,18 @@ relations:
   - 2-reyes-16
   - isaias-7
   - ip1-9
+  - 2-cronicas-28
   reason: 2Re 16:2 llama a David su antepasado; Is 7:2, 13 hablan a Acaz como la casa de David.
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-13'
   status: verified
 - type: lived_in
   place: jerusalen
   inferred: false
   sources:
   - 2-reyes-16
+  - 2-cronicas-28
   reason: '2Re 16:2: reinó 16 años en Jerusalén.'
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-13'
   status: verified
 - type: died_in
   place: jerusalen
@@ -80,8 +84,9 @@ relations:
   sources:
   - 2-reyes-16
   - it-acaz
+  - 2-cronicas-28
   reason: 2Re 16:20 solo habla de su sepultura en la Ciudad de David; el lugar de la muerte se deduce del entierro.
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-13'
   status: verified
 - type: tie
   person: tiglat-pileser-iii
@@ -90,8 +95,9 @@ relations:
   sources:
   - 2-reyes-16
   - it-acaz
+  - 2-cronicas-28
   reason: '2Re 16:7: Acaz se declara siervo del rey de Asiria. Perspicacia «Acaz» habla de su vasallaje.'
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-13'
   status: verified
 - type: kin
   person: abias-hija-de-zacarias
@@ -111,9 +117,10 @@ relations:
   - isaias-7
   - it-rezin
   - 2-reyes-16
+  - 2-cronicas-28
   reason: 'Is 7:1: en días de Acaz, Rezín subió con Pécah a pelear contra Jerusalén, y Acaz temió su furia (Is 7:2, 4); 2Re
     16:5 cuenta que lo cercó en Jerusalén.'
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-13'
   status: verified
 - type: tie
   person: pecah
@@ -123,9 +130,10 @@ relations:
   - isaias-7
   - it-peqah
   - 2-reyes-16
+  - 2-cronicas-28
   reason: 'Is 7:1, 5, 6: Pécah se alió con Rezín contra Acaz para poner en su lugar al hijo de Tabeel; 2Re 16:5 cuenta que
     lo cercó en Jerusalén.'
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-13'
   status: verified
 history:
 - date: '2026-09-28'
@@ -141,7 +149,7 @@ history:
   source: 2-reyes-16
 perspicacia: 1200000144#1
 disambiguation: Acaz, rey de Judá, hijo de Jotán; no Acaz hijo de Miqueas, descendiente de Saúl por Jonatán.
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified
 distinct_from:
 - acaz-hijo-de-mica

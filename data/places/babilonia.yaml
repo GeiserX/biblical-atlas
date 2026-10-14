@@ -5,6 +5,9 @@ names:
 - name: Babilonia
 - name: Babel
   note: Nombre de la ciudad original de Génesis 10:10 y 11:9.
+- name: Foso de los leones
+  note: Sitio de ejecución con una boca que se tapaba con una piedra, donde echaron a Daniel bajo Darío el medo (Da 6:7-24).
+    Perspicacia «Darío» dice que inscripciones antiguas confirman que Babilonia tenía uno.
 type: city
 lat: 32.543333
 lon: 44.422222
@@ -45,6 +48,17 @@ sources:
 - jeremias-50
 - jeremias-51
 - jeremias-52
+- daniel-1
+- daniel-2
+- daniel-3
+- daniel-4
+- daniel-5
+- daniel-6
+- it-foso-de-los-leones
+- it-dario
+- daniel-7
+- 2-cronicas-33
+- 2-cronicas-36
 - ezequiel-17
 - 1-pedro-5
 links:

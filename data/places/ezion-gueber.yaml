@@ -22,6 +22,8 @@ sources:
 - deuteronomio-2
 - 1-reyes-9
 - 1-reyes-22
+- 2-cronicas-8
+- 2-cronicas-20
 links:
 - title: 'Perspicacia: «Ezión-guéber»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ezi%C3%B3n-gu%C3%A9ber/
@@ -29,5 +31,5 @@ links:
 - title: Números 33 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/N%C3%BAmeros/33/
   type: bible
-checked_on: '2026-09-30'
+checked_on: '2026-10-13'
 status: verified

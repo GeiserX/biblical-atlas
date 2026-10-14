@@ -1,0 +1,39 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jehosafat-organiza-un-tribunal-en-jerusalen
+title: Jehosafat organiza un tribunal en Jerusalén
+date:
+  from: -919
+  to: -916
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre c. 920 y c. 917 a.e.c. (tiempo narrativo: tras Ramot-Galaad y antes de la alianza con Ocozías de Israel)'
+narrative_order:
+  series: 2-cronicas
+  order: 19008
+places:
+- jerusalen
+people:
+- jehosafat
+- amarias-sacerdote-principal
+- zebadias-hijo-de-ismael
+passages:
+- 2Cr 19:8-11
+summary: En Jerusalén, Jehosafat escoge levitas, sacerdotes y cabezas de familia como jueces. Pone al sacerdote principal
+  Amarías sobre lo que toca a Jehová, y a Zebadías hijo de Ismael sobre lo que toca al rey.
+reason: Tras la vuelta de Ramot-Galaad (muerte-de-acab, c. 920 a.e.c.) y antes de la alianza naval con Ocozías (las-naves-de-jehosafat-se-destrozan-en-ezion-gueber),
+  que Perspicacia «Ocozías», núm. 1, pone en su reinado; A6-A lo cierra hacia 917.
+sources:
+- 2-cronicas-19
+- it-jehosafat
+- it-amarias
+- it-zebadias
+- it-ocozias
+- tnm-a6-a
+links:
+- title: 2 Crónicas 19 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-Cr%C3%B3nicas/19/
+  type: bible
+checked_on: '2026-10-13'
+status: verified

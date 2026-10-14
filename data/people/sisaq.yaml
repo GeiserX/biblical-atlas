@@ -32,7 +32,7 @@ history:
 - date: '2026-09-30'
   change: Sisac, la grafía de la TNM, pasa a ser el primer nombre; Sisaq se conserva como la de Perspicacia.
   source: 1-reyes-11
-checked_on: '2026-09-30'
+checked_on: '2026-10-13'
 status: verified
 relations:
 - type: holds_office
@@ -43,6 +43,7 @@ relations:
   - 1-reyes-11
   - it-sisaq
   - 1-reyes-14
+  - 2-cronicas-12
   reason: 1Re 11:40 lo llama Sisac, el rey de Egipto.
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-13'
   status: verified

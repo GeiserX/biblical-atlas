@@ -19,10 +19,11 @@ sources:
 - tnm-a6-b
 - 2-reyes-16
 - it-acaz
+- 2-cronicas-28
 history:
 - date: '2026-09-28'
   change: El estudio 3 ponía su comienzo hacia 761 a.e.c.; A6-B, más reciente, da 762.
   source: tnm-a6-b
 search: Acaz rey
-checked_on: '2026-09-28'
+checked_on: '2026-10-13'
 status: verified

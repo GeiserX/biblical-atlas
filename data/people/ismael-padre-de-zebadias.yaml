@@ -1,0 +1,23 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ismael-padre-de-zebadias
+name: Ismael
+names:
+- name: Ismael
+perspicacia: 1200002215#3
+disambiguation: El padre de Zebadías en días de Jehosafat; no el hijo de Abrahán, el descendiente de Saúl ni el hijo de Netanías.
+distinct_from:
+- ismael-hijo-de-abrahan
+- ismael-hijo-de-azel
+- ismael-hijo-de-netanias
+- ismael-hijo-de-jehohanan
+summary: Hombre de la tribu de Judá, padre de Zebadías, a quien Jehosafat dio un cargo en los tribunales de Jerusalén.
+reason: Perspicacia «Ismael», núm. 3; 2Cr 19:11.
+sources:
+- it-ismael
+- 2-cronicas-19
+links:
+- title: 'Perspicacia: «Ismael»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ismael/
+  type: perspicacia
+checked_on: '2026-10-13'
+status: verified

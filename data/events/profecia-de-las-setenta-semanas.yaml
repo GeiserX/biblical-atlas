@@ -13,17 +13,20 @@ places:
 - babilonia
 people:
 - daniel
+- gabriel
 passages:
-- Da 9:1, 2, 20-27
+- Da 9:1-27
 summary: Con Darío el medo en su primer año de reinado, Daniel entendió por Jeremías que los setenta años de desolación acababan. Oró
   por Jerusalén, y Gabriel le reveló las setenta semanas de Da 9:24-27.
-reason: Perspicacia «Daniel», núm. 2, y «Darío», núm. 1; «Ciro» dice que ese año pudo situarse entre la conquista de la ciudad
-  y el año primero de Ciro.
+reason: Primer año de Darío, entre la toma de Babilonia y el primer año de Ciro (Perspicacia «Darío», núm. 1, y «Ciro»); Daniel
+  seguía en Babilonia («Profecías de Daniel», cap. 11). Va tras el foso de los leones.
 sources:
 - it-daniel
 - it-dario
 - it-ciro
 - daniel-9
+- it-gabriel
+- dp-11
 links:
 - title: 'Perspicacia: «Daniel»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Daniel/
@@ -31,5 +34,17 @@ links:
 - title: Daniel 9 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/daniel/9/
   type: bible
-checked_on: '2026-09-28'
+history:
+- date: '2026-10-14'
+  change: 'La oración de los versículos 3 a 19 es parte de la misma escena: Gabriel llega mientras Daniel sigue orando (Da
+    9:20, 21).'
+  source: daniel-9
+- date: '2026-10-14'
+  change: La razón dice dónde estaba Daniel y por qué el suceso va en el segundo tramo de la serie daniel, tras la caída de
+    Babilonia y Da 6.
+  source: dp-11
+narrative_order:
+  series: daniel
+  order: 109001
+checked_on: '2026-10-14'
 status: verified

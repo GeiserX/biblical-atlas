@@ -12,8 +12,7 @@ date:
 places:
 - babilonia
 people: []
-passages:
-- Da 8:5-8, 21
+passages: []
 summary: Alejandro vence a los persas cerca de Gaugamela, y Babilonia se le rinde. Acaba así el dominio persa sobre la ciudad,
   unos dos siglos después de Ciro.
 reason: Perspicacia «Babilonia» (núm. 2) fecha la captura en 331 a.e.c.; B9 da ese año a la conquista de Persia y «Alejandro»
@@ -23,5 +22,10 @@ sources:
 - tnm-b9
 - it-alejandro
 search: Alejandro Magno Babilonia
-checked_on: '2026-09-28'
+history:
+- date: '2026-10-14'
+  change: 'Fuera Daniel 8: el texto solo habla de un macho cabrío y del rey de Grecia, y que sea Alejandro lo dicen las publicaciones.
+    Por la regla «Profecía y cumplimiento», el tramo lo menciona sin pasaje.'
+  source: daniel-8
+checked_on: '2026-10-14'
 status: verified

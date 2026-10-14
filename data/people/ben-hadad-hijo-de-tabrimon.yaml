@@ -18,6 +18,7 @@ sources:
 - it-ben-hadad
 - it-tabrimon
 - 1-reyes-15
+- 2-cronicas-16
 links:
 - title: 'Perspicacia: «Ben-hadad»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ben-hadad/
@@ -42,8 +43,9 @@ relations:
   sources:
   - 1-reyes-15
   - it-ben-hadad
+  - 2-cronicas-16
   reason: '1Re 15:18: el rey de Siria residía en Damasco.'
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-13'
   status: verified
 - type: holds_office
   place: siria
@@ -52,8 +54,9 @@ relations:
   sources:
   - 1-reyes-15
   - it-ben-hadad
+  - 2-cronicas-16
   reason: 1Re 15:18 lo llama rey de Siria.
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-13'
   status: verified
-checked_on: '2026-09-30'
+checked_on: '2026-10-13'
 status: verified

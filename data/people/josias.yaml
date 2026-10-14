@@ -25,6 +25,9 @@ sources:
 - 2-reyes-21
 - jeremias-1
 - 1-cronicas-3
+- 2-cronicas-33
+- 2-cronicas-34
+- 2-cronicas-35
 links:
 - title: 'Perspicacia: «Josías»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jos%C3%ADas/
@@ -45,8 +48,9 @@ relations:
   - jeremias-1
   - jeremias-25
   - 1-cronicas-3
+  - 2-cronicas-33
   reason: Hijo de Amón y de Jedidá (2Re 21:26; 22:1).
-  checked_on: '2026-10-12'
+  checked_on: '2026-10-13'
   status: verified
 - type: succeeds
   person: amon-de-juda
@@ -54,8 +58,9 @@ relations:
   sources:
   - it-josias
   - 2-reyes-21
+  - 2-cronicas-33
   reason: El pueblo lo hizo rey tras el asesinato de su padre (2Re 21:24).
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-13'
   office: king
   status: verified
 - type: kin
@@ -74,8 +79,9 @@ relations:
   inferred: false
   sources:
   - 2-reyes-22
+  - 2-cronicas-34
   reason: 2Re 22:2 llama a David su antepasado.
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-13'
   status: verified
 - type: lived_in
   place: jerusalen
@@ -83,8 +89,9 @@ relations:
   sources:
   - 2-reyes-22
   - 2-reyes-23
+  - 2-cronicas-34
   reason: '2Re 22:1: reinó 31 años en Jerusalén.'
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-13'
   status: verified
 - type: kin
   person: hamutal
@@ -116,8 +123,9 @@ relations:
   sources:
   - 2-reyes-23
   - it-neko
+  - 2-cronicas-35
   reason: '2Re 23:29: Josías salió a luchar contra Nekó, que lo mató en Meguidó.'
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-13'
   status: verified
 history:
 - date: '2026-09-28'
@@ -130,7 +138,7 @@ history:
   source: 2-reyes-23
 perspicacia: 1200002525#1
 disambiguation: El rey de Judá, hijo de Amón; no Josías hijo de Sofonías, que vivía en Jerusalén después del destierro.
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified
 distinct_from:
 - josias-hijo-de-sofonias

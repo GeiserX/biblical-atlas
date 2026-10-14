@@ -23,5 +23,9 @@ relations:
   reason: '1Cr 6:35: Máhat, «hijo de Amasái».'
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+disambiguation: El antepasado de Samuel y de Hemán (1Cr 6:35), Perspicacia «Máhat», núm. 1. No es el levita del mismo nombre,
+  también hijo de Amasái, de tiempos de Ezequías (núm. 2).
+checked_on: '2026-10-13'
 status: verified
+distinct_from:
+- mahat-levita-de-ezequias

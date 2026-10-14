@@ -1,0 +1,40 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: amarias-sacerdote-principal
+name: Amarías
+names:
+- name: Amarías
+perspicacia: 1200000219#3
+disambiguation: El sacerdote principal de Jehosafat (Perspicacia «Amarías», núm. 3); no el hijo de Merayot, el hebronita,
+  el hijo de Azarías ni el hijo de Ezequías.
+distinct_from:
+- amarias-hebronita
+- amarias-hijo-de-azarias
+- amarias-hijo-de-ezequias
+- amarias-hijo-de-merayot
+- amarias-ayudante-de-core
+summary: Sacerdote principal en tiempos de Jehosafat. El rey lo puso al frente de los jueces de Jerusalén en todo lo relacionado
+  con Jehová, también en los pleitos.
+reason: Perspicacia «Amarías», núm. 3; 2Cr 19:8-11.
+sources:
+- it-amarias
+- 2-cronicas-19
+- it-sumo-sacerdote
+links:
+- title: 'Perspicacia: «Amarías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Amar%C3%ADas/
+  type: perspicacia
+relations:
+- type: holds_office
+  office: high_priest
+  place: jerusalen
+  sources:
+  - 2-cronicas-19
+  - it-amarias
+  - it-sumo-sacerdote
+  reason: 2Cr 19:11 lo llama sacerdote principal, uno de los nombres del sumo sacerdote según Perspicacia «Sumo sacerdote»;
+    «Amarías», núm. 3, lo sitúa en el reinado de Jehosafat.
+  inferred: false
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified

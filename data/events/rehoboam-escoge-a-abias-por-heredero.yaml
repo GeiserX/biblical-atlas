@@ -1,0 +1,35 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: rehoboam-escoge-a-abias-por-heredero
+title: Rehoboam escoge a Abías como heredero y reparte a sus otros hijos
+date:
+  from: -996
+  to: -979
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 997 y 980 a.e.c. (tiempo narrativo: durante el reinado de Rehoboam, antes de su muerte)'
+narrative_order:
+  series: 2-cronicas
+  order: 11022
+places:
+- juda
+- benjamin
+people:
+- rehoboam
+- abias-de-juda
+- ziza-hijo-de-rehoboam
+present: []
+passages:
+- 2Cr 11:22, 23
+summary: Rehoboam pone a Abías, hijo de Maacá, por encima de sus hermanos para que reine después. A otros hijos los instala
+  en las ciudades fortificadas con provisiones y esposas.
+reason: Dentro del reinado (997-980, tabla A6-A); Perspicacia «Rehoboam», párr. 8, lo pone antes de su muerte, y «Zizá», núm.
+  1, nombra a Zizá entre los favorecidos. El texto no dice dónde lo decidió.
+sources:
+- 2-cronicas-11
+- it-rehoboam
+- it-ziza
+- tnm-a6-a
+checked_on: '2026-10-13'
+status: verified

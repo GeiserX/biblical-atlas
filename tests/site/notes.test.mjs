@@ -20,6 +20,9 @@ const ROOT = fileURLToPath(new URL('../../', import.meta.url));
 const SITE_DIR = path.resolve(process.env.BE_SITE_DIR || path.join(ROOT, 'site'));
 const DATA = process.env.BE_DATA || '';
 const WAIT = 5000;   // what a control or button gets to appear; the site without notes fails fast
+// How long starting the site may take before a test gives up. 60 s cut a test with one page load once at a load of 10
+// to 17 on a Mac mini, so it is 120 s, and every test's own timeout leaves room for each of its loads to use it.
+const START = 120000;
 const DESKTOP = { viewport: { width: 1440, height: 900 } };
 const PHONE = { viewport: { width: 430, height: 932 }, isMobile: true, hasTouch: true };
 
@@ -78,28 +81,34 @@ const url = (hash = '') => `${base}index.html${DATA ? `?datos=${DATA}` : ''}${ha
 async function newContext(opts = DESKTOP) {
   const context = await browser.newContext({ deviceScaleFactor: 1, acceptDownloads: true, ...opts });
   context.setDefaultTimeout(WAIT);
-  // A navigation is a page starting, not a control appearing: it gets the same 60 s as ready() below. On a loaded box a
+  // A navigation is a page starting, not a control appearing: it gets the same START as ready() below. On a loaded box a
   // reload took more than 5 s just to commit, while the old page ran its pagehide save and its last frames.
-  context.setDefaultNavigationTimeout(60000);
+  context.setDefaultNavigationTimeout(START);
   return context;
 }
-/** Waits until the page has finished starting: the data is in, the map has loaded and stands still, and nothing waits
+/** Waits until the page has finished starting: the data is in, the map has loaded and stands still (or the site said
+    it has no map: with unpkg.com down, mapa.js writes .sin-mapa and the cards work without it), and nothing waits
     to be painted (BE.sucio). Until then the main thread spends seconds on the map and the first paints on a loaded
     machine (SwiftShader draws on the CPU), and a click or a tap sent in that time waits behind them until its own 5 s
     timeout runs out. The map's load handler paints and may frame Paul a couple of frames later, so the state has to
-    hold for three frames in a row. The 60 s is only how long starting may take before the test gives up: on a box
+    hold for three frames in a row. START is only how long starting may take before the test gives up: on a box
     running other work, the 1440 page took 17 s to reach this state at a load of 70. Every navigation before it waits
     only for the new page to be committed: the «load» event, which waits for every script, font and map file, is not
     what these tests need, and under load it came after the context's 5 s. When the data comes in chunks (BE.chunks),
-    the cards and their pencils need the detail too, so at least one chunk must have arrived. */
+    the cards and their pencils need the detail too, so at least one chunk must have arrived.
+    The same wait follows a selection or a click that repaints the card, instead of a fixed pause that a loaded machine
+    outruns, and a navigation that only changes the hash, which keeps the page. Each call counts its own quiet frames
+    from zero: a count left by the call before would let it return at once, before the repaint. */
 async function ready(page) {
-  await page.waitForFunction(() => {
+  await page.waitForFunction((call) => {
     const m = window.__be?.map, BE = window.BE;
-    const quiet = !!(BE?.D && BE.sucio && m?.loaded() && !m.isMoving() && !Object.values(BE.sucio).some(Boolean))
+    const still = m ? m.loaded() && !m.isMoving() : !!document.querySelector('#mapa .sin-mapa');
+    const quiet = !!(BE?.D && BE.sucio && still && !Object.values(BE.sucio).some(Boolean))
       && (!BE.chunks || BE.chunks.loaded.length > 0);
-    window.__quietFrames = quiet ? (window.__quietFrames || 0) + 1 : 0;
-    return window.__quietFrames >= 3;
-  }, null, { timeout: 60000, polling: 'raf' });
+    const q = window.__quietFrames?.call === call ? window.__quietFrames : (window.__quietFrames = { call, n: 0 });
+    q.n = quiet ? q.n + 1 : 0;
+    return q.n >= 3;
+  }, Math.random(), { timeout: START, polling: 'raf' });
 }
 async function openSite(context, hash = '') {
   const page = await context.newPage();
@@ -128,7 +137,10 @@ async function importFile(page, name, content) {
   await page.locator('#notes-list [data-notes-file]').setInputFiles({ name, mimeType: 'application/json', buffer: Buffer.from(content) });
   await page.waitForTimeout(300);
 }
-const storage = (page) => page.evaluate(() => JSON.stringify(Object.fromEntries(Object.entries(localStorage).sort())));
+/** Every key of the storage but the last view (portada.js writes it 400 ms after any paint, notes never touch it):
+    without the map the page is ready sooner, and that key landing between two reads made an import look like a change. */
+const storage = (page) => page.evaluate(() => JSON.stringify(Object.fromEntries(Object.entries(localStorage)
+  .filter(([k]) => k !== 'biblical-atlas:ultima').sort())));
 const token = () => `nota${Math.random().toString(36).slice(2, 10)}`;
 
 const KEY = 'biblical-atlas:notes';
@@ -143,12 +155,18 @@ const active = (page) => page.evaluate(() => {
   return { id: a?.id || '', tag: a?.tagName || '', key: a?.dataset?.noteKey || '', text: (a?.textContent || '').trim().slice(0, 40),
     inPanel: !!a?.closest?.('#panel-cuerpo'), inReading: !!a?.closest?.('#vista-lectura'), visible: !!a?.checkVisibility?.() };
 });
-const settle = (page) => page.waitForTimeout(400);   // the card and the reading repaint on the next frames
 /** Waits (up to 3 s: frames are slow while the map draws in a headless browser) until the focus rests on something. */
 const focusSettles = (page, key = '') => page.waitForFunction((k) => {
   const a = document.activeElement;
   return a && a !== document.body && !a.closest('dialog:not([open])') && (!k || a.dataset.noteKey === k);
 }, key, { timeout: 3000 }).catch(() => {});
+/** Waits until the focus is on the visible pencil of key inside where (#panel-cuerpo or #vista-lectura), with ready()'s
+    START and no catch: «Abrir» opens the card or the reading and focuses over the next frames, and a loaded machine
+    can take seconds to paint them. A wait that gave up quietly let the check read the focus before the reading opened. */
+const focusOn = (page, key, where) => page.waitForFunction(([k, w]) => {
+  const a = document.activeElement;
+  return a?.dataset?.noteKey === k && !!a.closest(w) && !!a.checkVisibility?.();
+}, [key, where], { timeout: START });
 /** Waits (up to 3 s) until the note of key is stored with text: the save runs 400 ms after the last key, later on a busy page. */
 const savedSoon = (page, key, text) => page.waitForFunction(([k, n, t]) => JSON.parse(localStorage.getItem(k) || 'null')?.notes?.[n]?.text === t,
   [KEY, key, text], { timeout: 3000 }).catch(() => {});
@@ -157,7 +175,7 @@ const sel = (page) => page.evaluate(() => (window.BE.E.sel ? window.BE.selTexto(
 // ---------------------------------------------------------------------------
 // Tests
 // ---------------------------------------------------------------------------
-test('a note survives a reload (1440 x 900)', { timeout: 90000 }, async () => {
+test('a note survives a reload (1440 x 900)', { timeout: 180000 }, async () => {
   const context = await newContext(DESKTOP);
   try {
     const page = await openSite(context, 'sel=persona:pablo');
@@ -172,7 +190,22 @@ test('a note survives a reload (1440 x 900)', { timeout: 90000 }, async () => {
   } finally { await context.close(); }
 });
 
-test('430 wide with touch: a tap by the pencil writes a note that survives a reload, and every control is 44 px tall', { timeout: 90000 }, async () => {
+test('with unpkg.com down the site opens without the map, and a note still survives a reload', { timeout: 180000 }, async () => {
+  const context = await newContext(DESKTOP);
+  try {
+    await context.route(/^https:\/\/unpkg\.com\//, (r) => r.abort());
+    const page = await openSite(context, 'sel=persona:pablo');   // ready() would wait its START for a map that never comes
+    assert.equal(await page.locator('#mapa .sin-mapa').count(), 1, 'MapLibre loaded with unpkg.com blocked: this test proves nothing');
+    const text = `Sin mapa ${token()}`;
+    await writeNote(page, '#panel-cuerpo .note-pencil', text);
+    await reload(page);
+    await page.locator('#panel-cuerpo .note-pencil').first().click();
+    assert.equal(await page.locator('#note-text').inputValue(), text);
+    assert.deepEqual(page.pageErrors, []);
+  } finally { await context.close(); }
+});
+
+test('430 wide with touch: a tap by the pencil writes a note that survives a reload, and every control is 44 px tall', { timeout: 180000 }, async () => {
   const context = await newContext(PHONE);
   try {
     const page = await openSite(context, 'sel=persona:pablo');
@@ -207,7 +240,7 @@ test('430 wide with touch: a tap by the pencil writes a note that survives a rel
   } finally { await context.close(); }
 });
 
-test('the keyboard reaches the pencil, Escape saves and closes, and the focus comes back to the pencil', { timeout: 90000 }, async () => {
+test('the keyboard reaches the pencil, Escape saves and closes, and the focus comes back to the pencil', { timeout: 180000 }, async () => {
   const context = await newContext(DESKTOP);
   try {
     const page = await openSite(context, 'sel=persona:pablo');
@@ -230,14 +263,14 @@ test('the keyboard reaches the pencil, Escape saves and closes, and the focus co
   } finally { await context.close(); }
 });
 
-test('back and forward close the editor and keep the note under its own card', { timeout: 90000 }, async () => {
+test('back and forward close the editor and keep the note under its own card', { timeout: 180000 }, async () => {
   const context = await newContext(DESKTOP);
   try {
     const page = await openSite(context, 'sel=persona:pablo');
     // As a click on Timoteo: a press, then the choice, so it is a new entry of the history. Without the press the site
     // takes it for part of the view the address brought, which makes no entry.
     await page.evaluate(() => { window.dispatchEvent(new PointerEvent('pointerdown')); window.BE.seleccionar({ tipo: 'persona', id: 'timoteo' }); });
-    await settle(page);
+    await ready(page);
     await page.locator('#panel-cuerpo .note-pencil').first().click();
     const text = `Sobre Timoteo ${token()}`;
     await page.locator('#note-text').pressSequentially(text, { delay: 5 });
@@ -252,7 +285,8 @@ test('back and forward close the editor and keep the note under its own card', {
   } finally { await context.close(); }
 });
 
-test('the note saves itself while typing and when the page goes away, and says so once', { timeout: 90000 }, async () => {
+// Three page loads: see the unreadable store below.
+test('the note saves itself while typing and when the page goes away, and says so once', { timeout: 360000 }, async () => {
   const context = await newContext(DESKTOP);
   try {
     const page = await openSite(context, 'sel=persona:pablo');
@@ -281,7 +315,7 @@ test('the note saves itself while typing and when the page goes away, and says s
   } finally { await context.close(); }
 });
 
-test('deleting takes two different buttons: a double click or an emptied box never deletes', { timeout: 90000 }, async () => {
+test('deleting takes two different buttons: a double click or an emptied box never deletes', { timeout: 180000 }, async () => {
   const context = await newContext(DESKTOP);
   try {
     const page = await openSite(context, 'sel=persona:bernabe');
@@ -316,7 +350,7 @@ test('deleting takes two different buttons: a double click or an emptied box nev
   } finally { await context.close(); }
 });
 
-test('the shared link, the address bar, the console and every request carry no text of the note', { timeout: 90000 }, async () => {
+test('the shared link, the address bar, the console and every request carry no text of the note', { timeout: 180000 }, async () => {
   const context = await newContext();
   try {
     const secret = token();
@@ -339,7 +373,7 @@ test('the shared link, the address bar, the console and every request carry no t
   } finally { await context.close(); }
 });
 
-test('export, clear the storage and import restores every note', { timeout: 120000 }, async () => {
+test('export, clear the storage and import restores every note', { timeout: 240000 }, async () => {
   const context = await newContext();
   try {
     const t = token();
@@ -374,7 +408,7 @@ test('export, clear the storage and import restores every note', { timeout: 1200
   } finally { await context.close(); }
 });
 
-test('importing a file that is not notes fails with a message in Spanish and changes nothing', { timeout: 90000 }, async () => {
+test('importing a file that is not notes fails with a message in Spanish and changes nothing', { timeout: 180000 }, async () => {
   const context = await newContext();
   try {
     const page = await openSite(context, 'sel=persona:pablo');
@@ -395,7 +429,7 @@ test('importing a file that is not notes fails with a message in Spanish and cha
   } finally { await context.close(); }
 });
 
-test('a store and a file written with the previous format identifier are read, and the next save writes the current one', { timeout: 90000 }, async () => {
+test('a store and a file written with the previous format identifier are read, and the next save writes the current one', { timeout: 180000 }, async () => {
   const context = await newContext();
   try {
     const page = await openSite(context, 'sel=persona:pablo');
@@ -415,7 +449,7 @@ test('a store and a file written with the previous format identifier are read, a
   } finally { await context.close(); }
 });
 
-test('an import never silently overwrites a newer note: the person chooses, and joining keeps both texts whole', { timeout: 90000 }, async () => {
+test('an import never silently overwrites a newer note: the person chooses, and joining keeps both texts whole', { timeout: 180000 }, async () => {
   const context = await newContext();
   try {
     const page = await openSite(context, 'sel=persona:pablo');
@@ -457,7 +491,7 @@ test('an import never silently overwrites a newer note: the person chooses, and 
   } finally { await context.close(); }
 });
 
-test('«Mis notas»: «Abrir» shows the card and focuses its pencil, «Editar» edits, and closing gives the focus back', { timeout: 120000 }, async () => {
+test('«Mis notas»: «Abrir» shows the card and focuses its pencil, «Editar» edits, and closing gives the focus back', { timeout: 240000 }, async () => {
   const context = await newContext(DESKTOP);
   try {
     const page = await openSite(context, 'sel=persona:bernabe');
@@ -479,23 +513,23 @@ test('«Mis notas»: «Abrir» shows the card and focuses its pencil, «Editar»
     assert.equal(await page.locator('#notes-list').isVisible(), true);
 
     await open.click();
-    await focusSettles(page, 'persona:pablo');
-    await settle(page);   // and it stays there after the card repaints
+    await focusOn(page, 'persona:pablo', '#panel-cuerpo');
+    await ready(page);   // and it stays there after the card repaints
     assert.equal(await sel(page), 'persona:pablo', '«Abrir» did not open the card');
     let a = await active(page);
     assert.ok(a.key === 'persona:pablo' && a.inPanel && a.visible, `after «Abrir» the focus is on ${JSON.stringify(a)}`);
 
     await openMyNotes(page);
     await page.locator('#notes-list [data-notes-open="chapter:44:16"]').click();
-    await focusSettles(page, 'chapter:44:16');
-    await settle(page);
+    await focusOn(page, 'chapter:44:16', '#vista-lectura');
+    await ready(page);
     a = await active(page);
     assert.ok(a.key === 'chapter:44:16' && a.inReading && a.visible, `after «Abrir capítulo» the focus is on ${JSON.stringify(a)}`);
     assert.deepEqual(page.pageErrors, []);
   } finally { await context.close(); }
 });
 
-test('430 wide: «Abrir» from «Mis notas» with the reading open shows the card, not the reading', { timeout: 90000 }, async () => {
+test('430 wide: «Abrir» from «Mis notas» with the reading open shows the card, not the reading', { timeout: 180000 }, async () => {
   const context = await newContext(PHONE);
   try {
     const page = await openSite(context, 'leer=hch-16');
@@ -503,8 +537,8 @@ test('430 wide: «Abrir» from «Mis notas» with the reading open shows the car
     await page.locator('#estudio-boton').tap();
     await page.locator('[data-menu="notas"]').tap();
     await page.locator('#notes-list [data-notes-open="persona:pablo"]').tap();
-    await focusSettles(page, 'persona:pablo');
-    await settle(page);
+    await focusOn(page, 'persona:pablo', '#panel-cuerpo');
+    await ready(page);
     assert.equal(await sel(page), 'persona:pablo');
     assert.equal(await page.evaluate(() => window.BE.estudio.vistas.lectura.abierta()), false, 'the reading still covers the card');
     const seen = await page.evaluate(() => {
@@ -516,7 +550,7 @@ test('430 wide: «Abrir» from «Mis notas» with the reading open shows the car
   } finally { await context.close(); }
 });
 
-test('in presentation mode the arrows and page keys inside «Mis notas» do not move the presentation', { timeout: 90000 }, async () => {
+test('in presentation mode the arrows and page keys inside «Mis notas» do not move the presentation', { timeout: 180000 }, async () => {
   const context = await newContext(DESKTOP);
   try {
     const page = await openSite(context, 'sel=persona:pablo');
@@ -531,7 +565,7 @@ test('in presentation mode the arrows and page keys inside «Mis notas» do not 
   } finally { await context.close(); }
 });
 
-test('with the site in two tabs, a save in one never silently overwrites the other', { timeout: 90000 }, async () => {
+test('with the site in two tabs, a save in one never silently overwrites the other', { timeout: 180000 }, async () => {
   const context = await newContext(DESKTOP);
   try {
     const a = await openSite(context, 'sel=persona:pablo');
@@ -556,7 +590,7 @@ test('with the site in two tabs, a save in one never silently overwrites the oth
   } finally { await context.close(); }
 });
 
-test('when the browser refuses to save, «Listo» keeps the editor open and offers to copy the text', { timeout: 90000 }, async () => {
+test('when the browser refuses to save, «Listo» keeps the editor open and offers to copy the text', { timeout: 180000 }, async () => {
   const context = await newContext(DESKTOP);
   try {
     const page = await openSite(context, 'sel=persona:pablo');
@@ -575,7 +609,7 @@ test('when the browser refuses to save, «Listo» keeps the editor open and offe
   } finally { await context.close(); }
 });
 
-test('every one of the 11 kinds of card keys its pencil by its own sel, and every chapter of the reading by its book and chapter', { timeout: 120000 }, async () => {
+test('every one of the 11 kinds of card keys its pencil by its own sel, and every chapter of the reading by its book and chapter', { timeout: 240000 }, async () => {
   const context = await newContext();
   try {
     const page = await openSite(context);
@@ -611,7 +645,8 @@ test('every one of the 11 kinds of card keys its pencil by its own sel, and ever
   } finally { await context.close(); }
 });
 
-test('notes survive a change of the data, and entries of a type this version does not know are kept', { timeout: 90000 }, async () => {
+// Three page loads: see the unreadable store below.
+test('notes survive a change of the data, and entries of a type this version does not know are kept', { timeout: 360000 }, async () => {
   const context = await newContext();
   try {
     const page = await openSite(context, 'sel=persona:pablo');   // with a hash the front page does not cover the site
@@ -640,7 +675,8 @@ test('notes survive a change of the data, and entries of a type this version doe
   } finally { await context.close(); }
 });
 
-test('an unreadable store goes aside under its own date, a second one never replaces the first, and «Mis notas» offers both', { timeout: 90000 }, async () => {
+// Three page loads, and ready() gives each up to START: at a load of 20 they took 26, 43 and 49 s, and 90 s cut the test.
+test('an unreadable store goes aside under its own date, a second one never replaces the first, and «Mis notas» offers both', { timeout: 360000 }, async () => {
   const context = await newContext();
   try {
     const page = await openSite(context, 'sel=persona:pablo');
@@ -656,7 +692,7 @@ test('an unreadable store goes aside under its own date, a second one never repl
   } finally { await context.close(); }
 });
 
-test('notes saved by a newer version of the site are shown read only, never overwritten, and can be taken away', { timeout: 90000 }, async () => {
+test('notes saved by a newer version of the site are shown read only, never overwritten, and can be taken away', { timeout: 180000 }, async () => {
   const context = await newContext();
   try {
     const page = await openSite(context, 'sel=persona:pablo');
@@ -675,7 +711,7 @@ test('notes saved by a newer version of the site are shown read only, never over
   } finally { await context.close(); }
 });
 
-test('an unreadable store is never destroyed, even with no room to keep a copy aside', { timeout: 90000 }, async () => {
+test('an unreadable store is never destroyed, even with no room to keep a copy aside', { timeout: 180000 }, async () => {
   const context = await newContext();
   try {
     await context.addInitScript(() => {
@@ -693,7 +729,7 @@ test('an unreadable store is never destroyed, even with no room to keep a copy a
   } finally { await context.close(); }
 });
 
-test('layout: with «Letra grande» the crumbs never run under the pencil, and the pencil keeps the row of the reading', { timeout: 120000 }, async () => {
+test('layout: with «Letra grande» the crumbs never run under the pencil, and the pencil keeps the row of the reading', { timeout: 240000 }, async () => {
   for (const opts of [DESKTOP, PHONE]) {
     const context = await newContext(opts);
     try {
@@ -723,7 +759,7 @@ test('layout: with «Letra grande» the crumbs never run under the pencil, and t
   }
 });
 
-test('the edge of the note box has 3:1 contrast in both themes, and on a phone the editor sits at the top with 16 px letters', { timeout: 90000 }, async () => {
+test('the edge of the note box has 3:1 contrast in both themes, and on a phone the editor sits at the top with 16 px letters', { timeout: 180000 }, async () => {
   for (const opts of [DESKTOP, PHONE]) {
     const context = await newContext(opts);
     try {
@@ -748,7 +784,7 @@ test('the edge of the note box has 3:1 contrast in both themes, and on a phone t
   }
 });
 
-test('a long «Mis notas» scrolls inside: the title and «Cerrar» stay in view', { timeout: 90000 }, async () => {
+test('a long «Mis notas» scrolls inside: the title and «Cerrar» stay in view', { timeout: 180000 }, async () => {
   for (const opts of [DESKTOP, PHONE]) {
     const context = await newContext(opts);
     try {

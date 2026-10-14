@@ -1,0 +1,42 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: nabucodonosor-levanta-la-estatua-de-oro
+title: Nabucodonosor levanta la estatua de oro de Dura
+date:
+  from: -604
+  to: -581
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 605 y 582 a.e.c. (tiempo narrativo: después del sueño de la imagen y en vida de Nabucodonosor)'
+narrative_order:
+  series: daniel
+  order: 3001
+places:
+- llanura-de-dura
+people:
+- nabucodonosor-ii
+- sadrac
+- mesac
+- abednego
+passages:
+- Da 3:1-7
+summary: Nabucodonosor erige en la llanura de Dura una estatua dorada de unos 27 metros y convoca a los altos cargos de sus
+  provincias. Al sonar la música todos deben postrarse ante ella o ir al horno.
+reason: 'Perspicacia «Nabucodonosor»: reinó hasta 582 y tuvo el sueño de la imagen probablemente en su año 20 (605); el libro
+  de Daniel, cap. 5, párr. 16, pone este relato después. Da 3:1-7.'
+sources:
+- daniel-3
+- it-nabucodonosor
+- it-dura
+- dp-5
+- w23-lo-sabia-ladrillos-de-babilonia
+links:
+- title: Daniel 3 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/daniel/3/
+  type: bible
+- title: 'Perspicacia: «Nabucodonosor, Nabucodorosor»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Nabucodonosor-Nabucodorosor/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified

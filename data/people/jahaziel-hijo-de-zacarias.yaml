@@ -1,0 +1,35 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jahaziel-hijo-de-zacarias
+name: Jahaziel
+names:
+- name: Jahaziel
+perspicacia: 1200002291#4
+disambiguation: El levita asafita que animó a Jehosafat (2Cr 20:14); no el hijo de Hebrón, el guerrero de David ni el sacerdote
+  trompetista.
+distinct_from:
+- jahaziel-guerrero-de-david
+- jahaziel-hijo-de-hebron
+- jahaziel-trompetista
+summary: 'Levita de los hijos de Asaf, de la familia de Guersón. Movido por el espíritu de Jehová, animó a Jehosafat y a Judá:
+  no tendrían que pelear, porque la batalla era de Dios.'
+reason: Perspicacia «Jahaziel», núm. 4; 2Cr 20:14-17.
+sources:
+- it-jahaziel
+- 2-cronicas-20
+links:
+- title: 'Perspicacia: «Jahaziel»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jahaziel/
+  type: perspicacia
+relations:
+- type: kin
+  person: zacarias-hijo-de-benaya
+  word: father
+  sources:
+  - 2-cronicas-20
+  - it-jahaziel
+  reason: '2Cr 20:14: Jahaziel, hijo de Zacarías.'
+  inferred: false
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified
