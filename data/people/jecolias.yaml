@@ -10,6 +10,7 @@ reason: Perspicacia «Jecolías»; 2Re 15:2.
 sources:
 - it-jecolias
 - 2-reyes-15
+- 2-cronicas-26
 links:
 - title: 'Perspicacia: «Jecolías»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jecol%C3%ADas/
@@ -24,8 +25,9 @@ relations:
   sources:
   - 2-reyes-15
   - it-jecolias
+  - 2-cronicas-26
   reason: 2Re 15:2 la llama Jecolías de Jerusalén.
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-13'
   status: verified
-checked_on: '2026-09-30'
+checked_on: '2026-10-13'
 status: verified

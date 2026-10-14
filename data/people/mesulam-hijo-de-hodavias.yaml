@@ -24,7 +24,7 @@ relations:
   reason: '1Cr 9:7: Mesulam, hijo de Hodavías. Perspicacia «Hodavías», núm. 3, no descarta que fuera un antepasado más lejano.'
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified
 distinct_from:
 - mesulam-abuelo-de-safan
@@ -34,5 +34,6 @@ distinct_from:
 - mesulam-hijo-de-sefatias
 - mesulam-hijo-de-zorobabel
 - salum-hijo-de-sadoc
+- mesulam-levita-de-josias
 disambiguation: 'Mesulam núm. 7 de Perspicacia: benjamita, padre de Salú. No los otros Mesulam de la misma lista ni el abuelo
   de Safán.'

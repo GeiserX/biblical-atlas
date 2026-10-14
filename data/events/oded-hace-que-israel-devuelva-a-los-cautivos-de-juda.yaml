@@ -1,0 +1,54 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: oded-hace-que-israel-devuelva-a-los-cautivos-de-juda
+title: Oded hace que Israel devuelva a los cautivos de Judá
+date:
+  from: -759
+  to: -759
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 760 a.e.c.
+narrative_order:
+  series: 2-cronicas
+  order: 28009
+places:
+- samaria
+- jerico
+people:
+- oded-profeta-de-samaria
+- azarias-hijo-de-jehohanan
+- berekias-hijo-de-mesilemot
+- jehizquias
+- amasa-hijo-de-hadlai
+roles:
+  oded-profeta-de-samaria: spoke
+present:
+- oded-profeta-de-samaria
+- azarias-hijo-de-jehohanan
+- berekias-hijo-de-mesilemot
+- jehizquias
+- amasa-hijo-de-hadlai
+passages:
+- 2Cr 28:9-15
+summary: Oded sale al paso del ejército que llega a Samaria y le pide soltar a los cautivos. Cuatro jefes de Efraín lo apoyan;
+  los soldados entregan cautivos y botín, y los llevan vestidos y alimentados a Jericó.
+reason: 2Cr 28:9-15; Perspicacia «Oded», núm. 2 (762-c. 759 a.e.c.), y «Jehohanán», núm. 4, que pone a Azarías como jefe hacia
+  760. El viaje a Jericó es los-cautivos-de-juda-vuelven-a-jerico.
+sources:
+- 2-cronicas-28
+- it-oded
+- it-jehohanan
+- it-azarias
+- it-berekias
+- it-jehizquias
+- it-amasa
+links:
+- title: 'Perspicacia: «Oded»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Oded/
+  type: perspicacia
+- title: 2 Crónicas 28 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-Cr%C3%B3nicas/28/
+  type: bible
+checked_on: '2026-10-13'
+status: verified

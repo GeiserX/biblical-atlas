@@ -1,0 +1,35 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: ezequias-anima-a-sus-jefes-militares
+title: Ezequías anima a los jefes militares ante el rey de Asiria
+type: speech
+date:
+  from: -731
+  to: -731
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 732 a.e.c.
+narrative_order:
+  series: 2-cronicas
+  order: 32006
+places:
+- jerusalen
+people:
+- ezequias
+roles:
+  ezequias: spoke
+present:
+- ezequias
+passages:
+- 2Cr 32:6-8
+summary: 'Ezequías pone jefes militares sobre el pueblo y los reúne en la plaza junto a la puerta. Les pide valor: el asirio
+  solo tiene fuerza humana, y ellos, a Jehová, que luchará por ellos. El pueblo se anima.'
+reason: '2Cr 32:6-8, dentro de los preparativos de 732 a.e.c. (Perspicacia «Ezequías», apartado «Obras de construcción e ingeniería»;
+  estudio 3). La plaza y la puerta no tienen nombre: el suceso queda en Jerusalén.'
+sources:
+- 2-cronicas-32
+- it-ezequias
+- si-3
+checked_on: '2026-10-13'
+status: verified

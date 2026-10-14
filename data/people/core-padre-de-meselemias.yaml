@@ -49,11 +49,12 @@ relations:
   reason: 1Cr 26:1 lo pone entre los hijos de Asaf; Perspicacia «Qoré», núm. 1, lo repite.
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified
 distinct_from:
 - core-hijo-de-esau
 - core-hijo-de-izhar
 - core-hijo-de-hebron
+- core-hijo-de-imna
 disambiguation: 'Qoré núm. 1 de Perspicacia, que la TNM escribe Coré: levita cohatita de la línea de Coré. No Coré hijo de
   Izhar ni el hijo de Esaú.'

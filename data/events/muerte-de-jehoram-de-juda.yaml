@@ -1,0 +1,37 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: muerte-de-jehoram-de-juda
+title: Muere Jehoram, rey de Judá
+date:
+  from: -905
+  to: -905
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 906 a.e.c.
+narrative_order:
+  series: 2-cronicas
+  order: 21018
+places:
+- jerusalen
+people:
+- jehoram-de-juda
+type: death
+roles:
+  jehoram-de-juda: died
+passages:
+- 2Cr 21:18-20
+summary: Una enfermedad incurable de los intestinos lo consume dos años y muere entre grandes dolores. Nadie lo llora ni le
+  hace hoguera; lo entierran en la Ciudad de David, fuera de las tumbas reales.
+reason: '2Cr 21:18-20; Perspicacia «Jehoram», núm. 3. Ocozías le sucede hacia 906 a.e.c. (tabla A6-A). El texto no dice dónde
+  murió: lo situamos donde lo enterraron, como su relación died_in.'
+sources:
+- 2-cronicas-21
+- it-jehoram
+- tnm-a6-a
+links:
+- title: 'Perspicacia: «Jehoram»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jehoram/
+  type: perspicacia
+checked_on: '2026-10-13'
+status: verified

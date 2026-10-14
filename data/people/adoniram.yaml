@@ -21,6 +21,7 @@ sources:
 - 1-reyes-5
 - 1-reyes-12
 - it-hadoram
+- 2-cronicas-10
 links:
 - title: 'Perspicacia: «Adoniram»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Adoniram/
@@ -67,10 +68,11 @@ relations:
   sources:
   - 1-reyes-12
   - it-adoniram
+  - 2-cronicas-10
   reason: '1Re 12:18: el rey Rehoboam lo envió a las tribus sublevadas como jefe de los reclutados para el trabajo obligatorio.'
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-13'
   status: verified
-checked_on: '2026-10-02'
+checked_on: '2026-10-13'
 status: verified
 distinct_from:
 - hadoram-hijo-de-joctan

@@ -1,0 +1,33 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: quis-hijo-de-abdi
+name: Quis
+names:
+- name: Quis
+perspicacia: 1200002631#4
+summary: Levita de la rama de Merarí, hijo de Abdí. En el primer año de Ezequías fue de los que limpiaron el templo.
+reason: Perspicacia «Quis», núm. 4; 2Cr 29:12-17.
+sources:
+- it-quis
+- 2-cronicas-29
+links:
+- title: 'Perspicacia: «Quis»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Quis/
+  type: perspicacia
+disambiguation: El merarita hijo de Abdí de los días de Ezequías (Perspicacia «Quis», núm. 4); no el padre del rey Saúl ni
+  los otros Quis.
+distinct_from:
+- quis-hijo-de-jeiel
+- quis-hijo-de-mahli
+- quis-hijo-de-ner
+relations:
+- type: kin
+  person: abdi-padre-de-quis
+  word: father
+  inferred: false
+  sources:
+  - 2-cronicas-29
+  reason: '2Cr 29:12: «Quis hijo de Abdí», entre los meraritas.'
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified

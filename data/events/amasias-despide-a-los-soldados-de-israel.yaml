@@ -1,0 +1,41 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: amasias-despide-a-los-soldados-de-israel
+title: Amasías contrata soldados de Israel y los despide
+date:
+  from: -857
+  to: -843
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 858 y c. 844 a.e.c. (tiempo narrativo: reinando Amasías, antes de su campaña contra Edom)'
+narrative_order:
+  series: 2-cronicas
+  order: 25005
+  after: amasias-ejecuta-a-los-asesinos-de-su-padre
+places:
+- juda
+- benjamin
+- israel
+people:
+- amasias
+present: []
+passages:
+- 2Cr 25:5-10
+summary: Amasías cuenta 300.000 hombres de Judá y Benjamín y paga cien talentos por 100.000 soldados de Israel. Un hombre
+  de Dios le advierte que Jehová no está con Israel, y el rey los manda a casa.
+reason: 2Cr 25:5-10; Perspicacia «Amasías», núm. 2. Entre 858, cuando empieza a reinar (A6-A), y su batalla con Jehoás de
+  Israel, muerto c. 844. El texto no dice dónde reunió al ejército.
+sources:
+- 2-cronicas-25
+- it-amasias
+- tnm-a6-a
+links:
+- title: 2 Crónicas 25 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-Cr%C3%B3nicas/25/
+  type: bible
+- title: 'Perspicacia: «Amasías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Amas%C3%ADas/
+  type: perspicacia
+checked_on: '2026-10-13'
+status: verified

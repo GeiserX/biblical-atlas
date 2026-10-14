@@ -20,6 +20,7 @@ sources:
 - 1-samuel-16
 - 1-samuel-17
 - 1-cronicas-2
+- 2-cronicas-11
 links:
 - title: 'Perspicacia: «Eliab»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Eliab/
@@ -37,8 +38,9 @@ relations:
   - it-eliab
   - 1-samuel-17
   - 1-cronicas-2
+  - 2-cronicas-11
   reason: '1Sa 16:5, 6: Samuel lo ve entre los hijos de Jesé; Perspicacia lo llama primogénito.'
-  checked_on: '2026-10-12'
+  checked_on: '2026-10-13'
   status: verified
 - type: kin
   person: abinadab-hijo-de-jese
@@ -83,5 +85,5 @@ relations:
   reason: 'Perspicacia «Elihú», núm. 3: el Elihú hermano de David que encabezaba Judá (1Cr 27:18) es posiblemente Eliab.'
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified

@@ -1,0 +1,49 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: zebadias-hijo-de-ismael
+name: Zebadías
+names:
+- name: Zebadías
+perspicacia: 1200004670#7
+disambiguation: El hijo de Ismael que Jehosafat puso con los jueces de Jerusalén; no los benjamitas, el hijo de Asahel, el
+  portero coreíta ni los de Esdras.
+distinct_from:
+- zebadias-descendiente-de-berias
+- zebadias-descendiente-de-elpaal
+- zebadias-hijo-de-asahel
+- zebadias-hijo-de-jeroham
+- zebadias-hijo-de-meselemias
+- zebadias-levita-de-jehosafat
+summary: Hijo de Ismael y líder de la casa de Judá. Jehosafat le encargó guiar a los jueces de Jerusalén en los asuntos del
+  rey.
+reason: Perspicacia «Zebadías», núm. 7; 2Cr 19:8-11.
+sources:
+- it-zebadias
+- 2-cronicas-19
+links:
+- title: 'Perspicacia: «Zebadías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zebad%C3%ADas/
+  type: perspicacia
+relations:
+- type: kin
+  person: ismael-padre-de-zebadias
+  word: father
+  sources:
+  - 2-cronicas-19
+  - it-zebadias
+  reason: '2Cr 19:11: Zebadías hijo de Ismael.'
+  inferred: false
+  checked_on: '2026-10-13'
+  status: verified
+- type: holds_office
+  office: leader
+  place: jerusalen
+  sources:
+  - 2-cronicas-19
+  - it-zebadias
+  reason: 2Cr 19:11 lo pone como líder de la casa de Judá para lo que tocaba al rey; Perspicacia «Zebadías», núm. 7, lo llama
+    caudillo.
+  inferred: false
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified

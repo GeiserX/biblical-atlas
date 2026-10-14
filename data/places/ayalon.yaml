@@ -23,6 +23,8 @@ sources:
 - 1-samuel-14
 - 1-cronicas-6
 - 1-cronicas-8
+- 2-cronicas-11
+- 2-cronicas-28
 links:
 - title: 'Perspicacia: «Ayalón»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ayal%C3%B3n/
@@ -33,5 +35,5 @@ links:
 - title: Josué 21 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Josu%C3%A9/21/
   type: bible
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified

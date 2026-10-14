@@ -1,0 +1,38 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: elisafat
+name: Elisafat
+names:
+- name: Elisafat
+perspicacia: '1200001319'
+date:
+  from: -897
+  to: -897
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 898 a.e.c.
+summary: Hijo de Zicrí y uno de los cinco jefes de cien que pactaron con Jehoiadá. Recorrieron Judá para reunir a los levitas
+  y a los jefes de familia, y apoyaron la coronación de Jehoás.
+reason: Perspicacia «Elisafat»; 2Cr 23:1, 2. Año de la coronación de Jehoás, 898 a.e.c., según el estudio 3.
+sources:
+- it-elisafat
+- 2-cronicas-23
+- si-3
+links:
+- title: 'Perspicacia: «Elisafat»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Elisafat/
+  type: perspicacia
+relations:
+- type: kin
+  person: zicri-padre-de-elisafat
+  word: father
+  inferred: false
+  sources:
+  - 2-cronicas-23
+  - it-zicri
+  reason: 2Cr 23:1 lo llama Elisafat hijo de Zicrí.
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified

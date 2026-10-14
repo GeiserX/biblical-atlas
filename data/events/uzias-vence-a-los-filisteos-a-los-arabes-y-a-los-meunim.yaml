@@ -1,0 +1,47 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: uzias-vence-a-los-filisteos-a-los-arabes-y-a-los-meunim
+title: Uzías vence a los filisteos, a los árabes y a los meunim
+date:
+  from: -828
+  to: -776
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 829 y 777 a.e.c. (tiempo narrativo: reinando Uzías, antes de que lo hiriera la lepra)'
+narrative_order:
+  series: 2-cronicas
+  order: 26006
+  after: azarias-reconstruye-elat
+places:
+- gat
+- jabneel
+- asdod
+- filistea
+- gurbaal
+people:
+- uzias
+present:
+- uzias
+passages:
+- 2Cr 26:6-8
+summary: Uzías abre brecha en las murallas de Gat, Jabné y Asdod y construye ciudades en tierra filistea. Dios le da victorias
+  sobre los árabes de Gurbaal y los meunim, y los ammonitas le pagan tributo.
+reason: 2Cr 26:6-8; Perspicacia «Uzías», núm. 3, párr. 4, «Gurbaal» y «Meunim». Su reinado va de 829 (A6-A) a 777, cuando
+  lo sucede Jotán (A6-B). 2Cr 26:16 pone la lepra cuando ya era fuerte.
+sources:
+- 2-cronicas-26
+- it-uzias
+- it-gurbaal
+- it-meunim
+- tnm-a6-a
+- tnm-a6-b
+links:
+- title: 2 Crónicas 26 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-Cr%C3%B3nicas/26/
+  type: bible
+- title: 'Perspicacia: «Uzías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Uz%C3%ADas/
+  type: perspicacia
+checked_on: '2026-10-13'
+status: verified

@@ -1,0 +1,27 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jeroham-padre-de-azarias
+name: Jeroham
+names:
+- name: Jeroham
+perspicacia: 1200002432#4
+disambiguation: Jeroham padre de Azarías, el jefe de cien de tiempos de Jehoiadá; no Jeroham, el abuelo de Samuel, ni los
+  demás Jeroham que distingue Perspicacia.
+distinct_from:
+- jeroham-hijo-de-elihu
+- jeroham-de-guedor
+- jeroham-hijo-de-pasjur
+- jeroham-padre-de-azarel
+- jeroham-padre-de-ibneya
+- jeroham-padre-de-samserai
+summary: Padre de Azarías, uno de los cinco jefes de cien que se aliaron con el sacerdote Jehoiadá para poner en el trono
+  a Jehoás.
+reason: Perspicacia «Jeroham», núm. 4; 2Cr 23:1.
+sources:
+- it-jeroham
+- 2-cronicas-23
+links:
+- title: 'Perspicacia: «Jeroham»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jeroham/
+  type: perspicacia
+checked_on: '2026-10-13'
+status: verified

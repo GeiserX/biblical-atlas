@@ -34,6 +34,7 @@ sources:
 - 1-cronicas-3
 - daniel-1
 - dp-3
+- 2-cronicas-36
 links:
 - title: 'Perspicacia: «Jehoiaquim»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jehoiaquim/
@@ -68,9 +69,10 @@ relations:
   sources:
   - it-jehoiaquim
   - 2-reyes-23
+  - 2-cronicas-36
   reason: Rey de Judá después de los tres meses de su hermano Jehoacaz, a quien Nekó apresó (2Re 23:31-34). El v. 34 dice
     que Nekó lo puso en el trono en lugar de Josías, su padre.
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-13'
   office: king
   status: verified
 - type: kin
@@ -88,8 +90,9 @@ relations:
   inferred: false
   sources:
   - 2-reyes-23
+  - 2-cronicas-36
   reason: '2Re 23:36: reinó once años en Jerusalén.'
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-13'
   status: verified
 - type: tie
   person: neko
@@ -107,9 +110,10 @@ relations:
   - 2-reyes-23
   - it-neko
   - it-jehoiaquim
+  - 2-cronicas-36
   reason: Nekó lo puso en el trono y le cobró el tributo (2Re 23:34, 35). Perspicacia «Nekó» dice que lo hizo su vasallo;
     «Jehoiaquim» dice que lo fue hasta Carquemis (625).
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-13'
   status: verified
 - type: tie
   person: nabucodonosor-ii
@@ -164,6 +168,27 @@ relations:
   reason: 'Perspicacia «Jehoiaquim», párr. 6, y jr, cap. 2: al parecer murió durante el sitio de la ciudad. Jer 22:19 anuncia
     que tirarían su cadáver fuera de las puertas de Jerusalén.'
   checked_on: '2026-10-12'
+  status: verified
+- type: tie
+  person: nabucodonosor-ii
+  word: enemy
+  date:
+    from: -617
+    to: -617
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: 618 a.e.c.
+  inferred: false
+  sources:
+  - 2-cronicas-36
+  - it-jehoiaquim
+  - it-nabucodonosor
+  - it-joaquin
+  reason: '2Cr 36:6: Nabucodonosor subió contra él con grilletes para llevárselo. Perspicacia «Nabucodonosor» pone el sitio
+    tras su rebelión, y «Joaquín», párr. 2, la fecha en 618.'
+  checked_on: '2026-10-13'
   status: verified
 disambiguation: Rey de Judá, hijo de Josías, que antes se llamaba Eliaquim. No es Eliaquim hijo de Abiud ni Eliaquim hijo
   de Meleá, antepasados de Jesús.

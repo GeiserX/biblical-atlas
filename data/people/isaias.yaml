@@ -36,6 +36,8 @@ sources:
 - ip1-29
 - isaias-38
 - isaias-39
+- 2-cronicas-26
+- 2-cronicas-32
 links:
 - title: 'Perspicacia: «Isaías»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Isa%C3%ADas/
@@ -66,9 +68,11 @@ relations:
   - isaias-20
   - isaias-37
   - isaias-38
+  - 2-cronicas-26
+  - 2-cronicas-32
   reason: Is 1:1 y 2:1 lo llaman Isaías hijo de Amoz.
   inferred: false
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-13'
   status: verified
 - type: holds_office
   office: prophet
@@ -92,14 +96,16 @@ relations:
   - tnm-tabla
   - 2-reyes-19
   - 2-reyes-20
+  - 2-cronicas-26
+  - 2-cronicas-32
   reason: 'Is 6:8, 9: Jehová lo envía a hablar al pueblo; Is 37:2, 38:1, 39:3 y 2Re 19:2, 20:1 lo llaman el profeta. Perspicacia
     «Isaías» fecha su obra de c. 778 a poco después de 732.'
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-13'
   status: verified
 perspicacia: '1200002204'
 history:
 - date: '2026-09-30'
   change: Su cargo de profeta, que 2 Reyes apuntó por segunda vez sin fecha, queda en una sola relación con 2Re 19:2 y 20:1.
   source: 2-reyes-19
-checked_on: '2026-09-30'
+checked_on: '2026-10-13'
 status: verified

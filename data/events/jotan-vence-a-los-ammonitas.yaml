@@ -1,0 +1,38 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jotan-vence-a-los-ammonitas
+title: Jotán vence a los ammonitas
+date:
+  from: -776
+  to: -761
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 777 y 762 a.e.c. (tiempo narrativo: durante el reinado de Jotán)'
+narrative_order:
+  series: 2-cronicas
+  order: 27005
+places:
+- ammon
+people:
+- jotan
+present: []
+passages:
+- 2Cr 27:5, 6
+summary: Jotán guerrea contra el rey de los ammonitas y lo vence. Ammón le entrega ese año, y otra vez los dos siguientes,
+  100 talentos de plata y 10.000 coros de trigo e igual de cebada.
+reason: '2Cr 27:5, 6; Perspicacia «Jotán», núm. 3: el tributo duró tres años. Sin año; cae en su reinado (777-762 a.e.c.,
+  A6-B). El texto no dice dónde se luchó, así que no sitúa a nadie.'
+sources:
+- 2-cronicas-27
+- it-jotan
+- tnm-a6-b
+links:
+- title: 'Perspicacia: «Jotán»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jot%C3%A1n/
+  type: perspicacia
+- title: 2 Crónicas 27 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-Cr%C3%B3nicas/27/
+  type: bible
+checked_on: '2026-10-13'
+status: verified

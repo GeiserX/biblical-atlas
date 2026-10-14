@@ -333,8 +333,9 @@ relations:
   - hch-2
   - hch-13
   - romanos-1
+  - 2-timoteo-2
   reason: Mt 1:1 lo llama hijo de David; la nota explica que aquí hijo puede ser un descendiente.
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-13'
   status: verified
 - type: kin
   person: abrahan
@@ -469,3 +470,4 @@ distinct_from:
 - miguel-hijo-de-jesisai
 - miguel-padre-de-omri
 - miguel-padre-de-setur
+- miguel-hijo-de-jehosafat

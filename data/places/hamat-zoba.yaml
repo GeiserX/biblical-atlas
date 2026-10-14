@@ -1,0 +1,44 @@
+# biblical-atlas: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: hamat-zoba
+name: Hamat-Zobá
+names:
+- name: Hamat-Zobá
+type: region
+lat: null
+lon: null
+precision: zone
+coord_source: null
+coord_url: null
+candidates:
+- name: Entre los reinos de Hamat y Zobá
+  geometry:
+    type: zone
+    lat: 34.535889
+    lon: 36.450417
+    radius_km: 80
+  checked_on: '2026-10-13'
+  status: favored_level_1
+  sources:
+  - it-hamat-zoba
+  - it-hamat
+  - it-zoba
+  - openbible-geo
+  reason: Perspicacia no sabe situarla y sugiere que el nombre junte dos reinos vecinos, Hamat y Zobá.
+  coord_source: calculation
+  note: 'Centro: punto medio entre el punto de hamat (Hama) y el de zoba, ambos de OpenBible. Radio nuestro, para abarcar
+    los dos.'
+summary: Lugar de Siria que Salomón conquistó, en la única campaña militar suya que recoge la Biblia. No se sabe dónde estaba;
+  su nombre quizá une los de dos reinos fronterizos, Hamat y Zobá.
+reason: 'Perspicacia «Hamat-zobá»; 2Cr 8:3. Sin sitio identificado: una zona candidata calculada por nosotros.'
+sources:
+- it-hamat-zoba
+- 2-cronicas-8
+- it-hamat
+- it-zoba
+- openbible-geo
+links:
+- title: 'Perspicacia: «Hamat-zobá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hamat-zob%C3%A1/
+  type: perspicacia
+checked_on: '2026-10-13'
+status: verified

@@ -82,5 +82,7 @@ relations:
 distinct_from:
 - ismael-hijo-de-abrahan
 - ismael-hijo-de-azel
-checked_on: '2026-10-12'
+- ismael-padre-de-zebadias
+- ismael-hijo-de-jehohanan
+checked_on: '2026-10-13'
 status: verified

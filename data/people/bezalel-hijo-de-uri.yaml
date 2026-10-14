@@ -18,6 +18,7 @@ sources:
 - exodo-38
 - exodo-39
 - 1-cronicas-2
+- 2-cronicas-1
 links:
 - title: 'Perspicacia: «Bezalel»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Bezalel/
@@ -36,8 +37,9 @@ relations:
   - exodo-35
   - exodo-38
   - 1-cronicas-2
+  - 2-cronicas-1
   reason: Éx 31:2 lo llama hijo de Urí.
-  checked_on: '2026-10-12'
+  checked_on: '2026-10-13'
   status: verified
 - type: kin
   person: hur-hijo-de-caleb
@@ -49,8 +51,9 @@ relations:
   - exodo-35
   - exodo-38
   - 1-cronicas-2
+  - 2-cronicas-1
   reason: 'Éx 31:2: su padre Urí era hijo de Hur.'
-  checked_on: '2026-10-12'
+  checked_on: '2026-10-13'
   status: verified
 - type: kin
   person: juda-hijo-de-jacob
@@ -64,5 +67,5 @@ relations:
   reason: 'Éx 31:2: era de la tribu de Judá.'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified

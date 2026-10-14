@@ -67,6 +67,8 @@ sources:
 - josue-3
 - 1-reyes-4
 - 1-reyes-7
+- 2-cronicas-4
+- it-zereda
 links:
 - title: 'Perspicacia: «Zaretán»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zaret%C3%A1n/
@@ -74,5 +76,5 @@ links:
 - title: Josué 3 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Josu%C3%A9/3/
   type: bible
-checked_on: '2026-09-30'
+checked_on: '2026-10-13'
 status: verified

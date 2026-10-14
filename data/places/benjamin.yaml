@@ -57,6 +57,8 @@ sources:
 - 1-reyes-4
 - jeremias-32
 - jeremias-37
+- 2-cronicas-15
+- 2-cronicas-31
 links:
 - title: 'Perspicacia: «Benjamín»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Benjam%C3%ADn/
@@ -64,5 +66,5 @@ links:
 - title: Josué 18 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Josu%C3%A9/18/
   type: bible
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified

@@ -1,0 +1,50 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: miguel-hijo-de-jehosafat
+name: Miguel
+names:
+- name: Miguel
+perspicacia: 1200003035#7
+disambiguation: Hijo del rey Jehosafat, muerto a manos de su hermano Jehoram (2Cr 21:2-4); no es el arcángel, ni el padre
+  de Setur, ni los demás Miguel.
+distinct_from:
+- miguel-padre-de-setur
+- miguel-de-manases
+- miguel-descendiente-de-berias
+- miguel-hijo-de-abihail
+- miguel-hijo-de-baaseya
+- miguel-hijo-de-izrahias
+- miguel-hijo-de-jesisai
+- miguel-padre-de-omri
+- jesus
+summary: Hijo del rey Jehosafat de Judá. Como sus hermanos, recibió regalos y ciudades fortificadas; Jehoram, el mayor, lo
+  mató al ocupar el trono.
+reason: Perspicacia «Miguel», núm. 7; 2Cr 21:1-4.
+sources:
+- it-miguel
+- 2-cronicas-21
+links:
+- title: 'Perspicacia: «Miguel»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Miguel/
+  type: perspicacia
+relations:
+- type: kin
+  person: jehosafat
+  word: father
+  inferred: false
+  sources:
+  - 2-cronicas-21
+  - it-miguel
+  reason: '2Cr 21:2: uno de los hijos del rey Jehosafat.'
+  checked_on: '2026-10-13'
+  status: verified
+- type: kin
+  person: sefatias-hijo-de-jehosafat
+  word: brother
+  inferred: false
+  sources:
+  - 2-cronicas-21
+  reason: '2Cr 21:2: los dos están entre los hijos de Jehosafat, hermanos de Jehoram.'
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified

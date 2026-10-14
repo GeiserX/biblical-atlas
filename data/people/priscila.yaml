@@ -36,7 +36,7 @@ history:
   change: La vuelta a Roma hacia 56 y a Éfeso hacia 65 pasan del viaje viajes-de-aquila-y-priscila a dos relaciones lived_in
     con fecha. La de Roma anterior lleva la fecha del decreto de Claudio.
   source: romanos-16
-checked_on: '2026-10-02'
+checked_on: '2026-10-13'
 status: verified
 relations:
 - type: lived_in
@@ -121,9 +121,10 @@ relations:
   - romanos-16
   - it-prisca
   - 1-corintios-16
+  - 2-timoteo-4
   reason: Trabaja con Pablo en Corinto y se embarca con él hacia Siria (Hch 18:3, 18). Ro 16:3, 4 la llama colaboradora que
     arriesgó la vida por él; Perspicacia «Prisca» alarga el trato hasta su muerte.
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-13'
   status: verified
 - type: lived_in
   place: roma

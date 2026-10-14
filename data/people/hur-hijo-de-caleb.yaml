@@ -16,6 +16,7 @@ sources:
 - exodo-38
 - 1-cronicas-2
 - 1-cronicas-4
+- 2-cronicas-1
 links:
 - title: 'Perspicacia: «Hur»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hur/
@@ -31,7 +32,7 @@ history:
 - date: '2026-10-12'
   change: La razón añade los versículos de 1 Crónicas 2 que dan sus padres y sus hijos.
   source: 1-cronicas-2
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified
 distinct_from:
 - hur-rey-de-madian

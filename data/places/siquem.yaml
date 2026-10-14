@@ -49,6 +49,7 @@ sources:
 - jeremias-41
 - 1-cronicas-6
 - 1-cronicas-7
+- 2-cronicas-10
 links:
 - title: 'Perspicacia: «Siquem»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Siquem/
@@ -56,5 +57,5 @@ links:
 - title: 1 Reyes 12 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/1-reyes/12/
   type: bible
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified

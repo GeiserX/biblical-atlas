@@ -44,8 +44,12 @@ relations:
     Guersón por medio de Ladán.
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified
 distinct_from:
 - jehiel-musico
 - jehiel-hijo-de-hacmoni
+- jehiel-levita-de-ezequias
+- jehiel-comisionado-de-ezequias
+- jehiel-sacerdote-de-josias
+- jehiel-hijo-de-jehosafat

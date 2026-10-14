@@ -27,6 +27,7 @@ sources:
 - isaias-10
 - 1-cronicas-6
 - 1-cronicas-8
+- 2-cronicas-16
 links:
 - title: 'Perspicacia: «Gueba»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Gueba/
@@ -37,5 +38,5 @@ links:
 - title: Josué 21 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Josu%C3%A9/21/
   type: bible
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified

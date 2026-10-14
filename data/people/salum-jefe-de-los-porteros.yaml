@@ -42,7 +42,7 @@ relations:
   reason: 'Perspicacia «Salum», núm. 4: figura en las listas de quienes regresaron y residían en Jerusalén (1Cr 9:17).'
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified
 distinct_from:
 - jehoacaz-de-juda
@@ -54,5 +54,6 @@ distinct_from:
 - salum-hijo-de-sismai
 - salum-padre-de-maaseya
 - salum-tio-de-jeremias
+- salum-padre-de-jehizquias
 disambiguation: 'Salum núm. 4 de Perspicacia: jefe coreíta de los porteros. No el antepasado sacerdotal de Hilquías, el rey
   de Israel ni el esposo de Huldá.'

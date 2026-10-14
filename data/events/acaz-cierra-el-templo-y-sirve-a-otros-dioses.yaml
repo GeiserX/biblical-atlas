@@ -1,0 +1,42 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: acaz-cierra-el-templo-y-sirve-a-otros-dioses
+title: Acaz cierra el templo y llena Judá de altares a otros dioses
+date:
+  from: -761
+  to: -745
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 762 y 746 a.e.c. (tiempo narrativo: tras pedir Acaz ayuda a Asiria)'
+narrative_order:
+  series: 2-cronicas
+  order: 28022
+  after: acaz-soborna-a-tiglat-pileser
+places:
+- jerusalen
+- monte-moria
+- juda
+people:
+- acaz
+present:
+- acaz
+passages:
+- 2Cr 28:22-25
+summary: En su angustia, Acaz ofrece sacrificios a los dioses de Damasco, cierra las puertas de la casa de Jehová, pone altares
+  en cada rincón de Jerusalén y lugares altos en todas las ciudades de Judá.
+reason: 2Cr 28:22-25; Perspicacia «Acaz», núm. 1, párr. 7. Después de que el rey de Asiria lo angustiara, dentro de su reinado
+  (762-746 a.e.c., A6-B).
+sources:
+- 2-cronicas-28
+- it-acaz
+- tnm-a6-b
+links:
+- title: 'Perspicacia: «Acaz»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Acaz/
+  type: perspicacia
+- title: 2 Crónicas 28 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-Cr%C3%B3nicas/28/
+  type: bible
+checked_on: '2026-10-13'
+status: verified

@@ -14,6 +14,7 @@ sources:
 - it-naama
 - it-rehoboam
 - 1-reyes-14
+- 2-cronicas-12
 links:
 - title: 'Perspicacia: «Naamá»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Naam%C3%A1/
@@ -27,8 +28,9 @@ relations:
   inferred: true
   sources:
   - 1-reyes-14
+  - 2-cronicas-12
   reason: 1Re 14:21, 31 la llama Naamá la ammonita; que naciera en Ammón se deduce de ese gentilicio.
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-13'
   status: verified
-checked_on: '2026-09-30'
+checked_on: '2026-10-13'
 status: verified

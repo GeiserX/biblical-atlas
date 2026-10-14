@@ -20,7 +20,7 @@ links:
 not_claimed:
 - 'No damos por hecho que sea el músico o el portero Obed-Edom de la procesión del Arca en Crónicas: Perspicacia solo lo ve
   posible.'
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified
 relations:
 - type: same_as
@@ -55,3 +55,4 @@ relations:
   status: verified
 distinct_from:
 - obed-edom-coreita
+- obed-edom-de-tiempos-de-amasias

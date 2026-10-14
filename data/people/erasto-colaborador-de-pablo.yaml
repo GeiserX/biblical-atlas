@@ -5,12 +5,12 @@ names:
 - name: Erasto
 date:
   from: 55
-  to: 55
-  precision: year
+  to: 65
+  precision: range
   approx: true
   type: anchored
   chronology: tnm
-  text: c. 55 e.c.
+  text: c. 55-65 e.c.
 disambiguation: El compañero de Hch 19:22. Perspicacia lo trata aparte del mayordomo de Corinto de Ro 16:23.
 distinct_from:
 - erasto-mayordomo-de-corinto
@@ -21,6 +21,8 @@ sources:
 - it-erasto
 - hch-19
 - si-3
+- 2-timoteo-4
+- tnm-tabla
 links:
 - title: 'Perspicacia: «Erasto»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Erasto/
@@ -29,7 +31,12 @@ links:
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/hechos/19/
   type: bible
 perspicacia: 1200001413#1
-checked_on: '2026-09-29'
+history:
+- date: '2026-10-13'
+  change: La fecha llegaba solo a 55, pero el resumen y su relación con Corinto lo dan por probable el Erasto de 2Ti 4:20,
+    de c. 65.
+  source: 2-timoteo-4
+checked_on: '2026-10-13'
 status: verified
 relations:
 - type: accompanies

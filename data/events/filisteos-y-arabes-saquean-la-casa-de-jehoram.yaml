@@ -1,0 +1,41 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: filisteos-y-arabes-saquean-la-casa-de-jehoram
+title: Filisteos y árabes saquean Judá y la casa de Jehoram
+date:
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  from: -912
+  to: -905
+  text: 'entre 913 y 906 a.e.c. (tiempo narrativo: en el reinado de Jehoram de Judá, antes de su última enfermedad)'
+narrative_order:
+  series: 2-cronicas
+  order: 21016
+places:
+- jerusalen
+- juda
+people:
+- jehoram-de-juda
+- ocozias-de-juda
+present: []
+passages:
+- 2Cr 21:16, 17
+- 2Cr 22:1
+summary: Jehová deja que filisteos y árabes invadan Judá. Se llevan los bienes del palacio y a las esposas y los hijos del
+  rey, y matan a los mayores; solo se salva Jehoacaz, el menor.
+reason: '2Cr 21:16, 17 y 22:1. Perspicacia «Filistea, filisteos» habla del botín sacado de Jerusalén y «Jehoram», núm. 3,
+  del cumplimiento de la carta de Elías. Fecha: reinado de Jehoram, 913-c. 906 (A6-A).'
+sources:
+- 2-cronicas-21
+- 2-cronicas-22
+- it-filistea
+- it-jehoram
+- it-ocozias
+- tnm-a6-a
+links:
+- title: 'Perspicacia: «Filistea, filisteos»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Filistea-filisteos/
+  type: perspicacia
+checked_on: '2026-10-13'
+status: verified

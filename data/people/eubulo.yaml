@@ -1,0 +1,30 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: eubulo
+name: Eubulo
+names:
+- name: Eubulo
+perspicacia: '1200001442'
+date:
+  from: 65
+  to: 65
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 65 e.c.
+summary: Cristiano que estaba en Roma durante el último encierro de Pablo y mandó saludos a Timoteo.
+reason: Perspicacia «Eubulo»; 2Ti 4:21. La nota de 2Ti 4:11 ve posible que fuera de la congregación local. Fecha de la carta,
+  c. 65 (Tabla de los libros).
+sources:
+- it-eubulo
+- 2-timoteo-4
+- tnm-tabla
+links:
+- title: 'Perspicacia: «Eubulo»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Eubulo/
+  type: perspicacia
+- title: 2 Timoteo 4 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-timoteo/4/
+  type: bible
+checked_on: '2026-10-13'
+status: verified
