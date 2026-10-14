@@ -1,0 +1,51 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: vision-de-la-mujer-y-el-dragon
+title: Juan ve en visión a la mujer, a su hijo y al dragón
+date:
+  from: 96
+  to: 96
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 96 e.c.
+narrative_order:
+  series: apocalipsis
+  order: 12001
+places:
+- patmos
+people:
+- juan-apostol
+present:
+- juan-apostol
+passages:
+- Ap 12:1-17
+summary: Juan ve en el cielo a una mujer que alumbra un hijo varón y a un dragón que quiere devorarlo. Miguel y sus ángeles
+  vencen al dragón, Satanás, y lo arrojan a la tierra, donde la persigue.
+reason: 'Séptima visión del libro según «Toda Escritura», libro 66, párr. 19, y el libro Apocalipsis, cap. 27. Fecha c. 96
+  y lugar Patmos: estudio 3, párr. 29, Tabla de los libros y Perspicacia «Patmos», donde Juan recibió Apocalipsis.'
+note: 'Orden 12001 de la serie apocalipsis, elegido por nosotros: capítulo por mil más el primer versículo, como en Daniel.
+  Las visiones no van en orden cronológico de cumplimiento (libro Apocalipsis, cap. 3).'
+not_claimed:
+- 'Cuándo se cumple lo visto: el libro Apocalipsis lo sitúa en el día del Señor, desde 1914. El suceso solo fecha el momento
+  en que Juan tuvo la visión.'
+sources:
+- apocalipsis-12
+- re-27
+- it-satanas
+- it-miguel
+- re-3
+- si-apocalipsis
+- si-3
+- tnm-tabla
+- it-patmos
+- it-revelacion-a-juan
+links:
+- title: Apocalipsis 12 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/apocalipsis/12/
+  type: bible
+- title: 'Perspicacia: «Revelación a Juan, Una»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Revelaci%C3%B3n-a-Juan-Una/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified

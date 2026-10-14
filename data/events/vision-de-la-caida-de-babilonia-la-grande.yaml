@@ -1,0 +1,48 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: vision-de-la-caida-de-babilonia-la-grande
+title: Juan oye anunciar la caída de Babilonia la Grande
+date:
+  from: 96
+  to: 96
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 96 e.c.
+narrative_order:
+  series: apocalipsis
+  order: 18001
+places:
+- patmos
+people:
+- juan-apostol
+present:
+- juan-apostol
+passages:
+- Ap 18:1-19:10
+summary: Un ángel anuncia a Juan que Babilonia la Grande ha caído; una voz manda salir de ella, reyes, comerciantes y marinos
+  la lloran, y en el cielo se alaba a Jah y se anuncia la boda del Cordero.
+reason: Duodécima visión de Apocalipsis (Ap 18:1-19:10) según «Toda Escritura», libro 66, párr. 6 y 23, y el libro sobre Apocalipsis,
+  cap. 36 y 37. Juan las recibió preso en Patmos hacia 96 (libro 66, párr. 5; estudio 3; Tabla).
+note: 'Orden 18001 de la serie apocalipsis, nuestro. La visión acaba en Ap 19:10: el lector del capítulo 19 añade su capítulo
+  a las fuentes.'
+sources:
+- apocalipsis-18
+- si-apocalipsis
+- si-3
+- tnm-tabla
+- re-36
+- re-37
+- it-revelacion-a-juan
+- apocalipsis-19
+- re-38
+links:
+- title: Apocalipsis 18 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/apocalipsis/18/
+  type: bible
+- title: 'Perspicacia: «Revelación a Juan, Una»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Revelaci%C3%B3n-a-Juan-Una/
+  type: perspicacia
+search: visión caída de Babilonia la Grande lamento
+checked_on: '2026-10-14'
+status: verified

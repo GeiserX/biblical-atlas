@@ -1,0 +1,50 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: vision-del-cordero-en-el-monte-sion
+title: Juan ve al Cordero en el monte Sion y la cosecha de la tierra
+date:
+  from: 96
+  to: 96
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 96 e.c.
+narrative_order:
+  series: apocalipsis
+  order: 14001
+places:
+- patmos
+people:
+- juan-apostol
+present:
+- juan-apostol
+passages:
+- Ap 14:1-20
+summary: Juan ve al Cordero con los 144.000 en el monte Sion, oye a tres ángeles anunciar el juicio, la caída de Babilonia
+  la Grande y el castigo de los adoradores de la bestia, y ve segar la tierra.
+reason: 'Novena visión del libro según «Toda Escritura», libro 66, párr. 21, y el libro Apocalipsis, caps. 29 y 30. Fecha
+  c. 96 y lugar Patmos: estudio 3, párr. 29, Tabla de los libros y Perspicacia «Patmos», donde Juan recibió Apocalipsis.'
+note: 'Orden 14001 de la serie apocalipsis, elegido por nosotros: capítulo por mil más el primer versículo, como en Daniel.
+  Las visiones no van en orden cronológico de cumplimiento (libro Apocalipsis, cap. 3).'
+not_claimed:
+- 'Cuándo se cumple lo visto: el libro Apocalipsis lo sitúa en el día del Señor, desde 1914. El suceso solo fecha el momento
+  en que Juan tuvo la visión.'
+sources:
+- apocalipsis-14
+- re-29
+- re-30
+- re-3
+- si-apocalipsis
+- si-3
+- tnm-tabla
+- it-patmos
+- it-revelacion-a-juan
+links:
+- title: Apocalipsis 14 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/apocalipsis/14/
+  type: bible
+- title: 'Perspicacia: «Revelación a Juan, Una»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Revelaci%C3%B3n-a-Juan-Una/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified

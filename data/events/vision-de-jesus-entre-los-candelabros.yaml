@@ -1,0 +1,62 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: vision-de-jesus-entre-los-candelabros
+title: Juan ve a Jesús glorificado entre siete candelabros
+date:
+  from: 96
+  to: 96
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 96 e.c.
+narrative_order:
+  series: apocalipsis
+  order: 1010
+places:
+- patmos
+people:
+- juan-apostol
+- jesus
+present:
+- juan-apostol
+passages:
+- Ap 1:10-20
+- Ap 2:1-29
+- Ap 3:1-22
+summary: Una voz como de trompeta manda a Juan escribir lo que ve. Al volverse, ve a Jesús glorificado entre siete candelabros
+  de oro, y Jesús le dicta un mensaje para cada una de las siete congregaciones de Asia.
+reason: 'Primera de las 16 visiones según «Toda Escritura», libro 66, párr. 6 y 8, y el libro Apocalipsis, cap. 5, que la
+  abre en Ap 1:10. Fecha c. 96 y Patmos: estudio 3, Tabla de los libros y Perspicacia «Patmos».'
+note: 'Orden 1010 de la serie apocalipsis, nuestro: capítulo por mil más el primer versículo, como las demás visiones del
+  libro. El libro Apocalipsis, cap. 6, sitúa los mensajes a las congregaciones en 96.'
+not_claimed:
+- 'Cuándo se cumple lo visto: el libro Apocalipsis, cap. 5, aplica esta visión sobre todo al día del Señor, desde 1914. El
+  suceso solo fecha el momento en que Juan la tuvo.'
+sources:
+- apocalipsis-1
+- apocalipsis-2
+- apocalipsis-3
+- si-apocalipsis
+- re-5
+- re-6
+- si-3
+- tnm-tabla
+- it-patmos
+- it-revelacion-a-juan
+- re-7
+- re-8
+- re-9
+- re-10
+- re-11
+- re-12
+- re-13
+links:
+- title: Apocalipsis 1 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/apocalipsis/1/
+  type: bible
+- title: 'Perspicacia: «Revelación a Juan, Una»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Revelaci%C3%B3n-a-Juan-Una/
+  type: perspicacia
+search: visión de Jesús entre los candelabros Patmos
+checked_on: '2026-10-14'
+status: verified

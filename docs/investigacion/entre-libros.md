@@ -117,7 +117,7 @@ Los campos, los tipos de relación y sus palabras se nombran como en el esquema 
 
 - **Pasaje ya puesto.** Jud 11 está en `muerte-de-core`.
 - **Una cita literal de las Escrituras Hebreas.** Si la carta la usa como mandato que sigue en vigor o dice algo del propio texto citado, su pasaje entra en el suceso y el suceso en `entidades`: Ro 7:7, Ro 13:9 y Ef 6:2, 3 en `diez-mandamientos` (Ef 6:2 lo llama el primer mandato con promesa). Si solo toma la frase como apoyo de un consejo, el suceso va en `menciona` sin pasaje: Gé 2:24 en 1Co 6:16 y Ef 5:31, con `creacion-de-eva`.
-- **Pasajes que aún no están en ningún suceso.** Hch 7:36 y 13:18, Heb 3:16-19 y Jud 5 van a `jehova-condena-a-israel-a-40-anos-en-el-desierto`; Ap 2:14 y Os 9:10 a `israel-adora-al-baal-de-peor`; 2Pe 2:15, 16 a `la-burra-de-balaam-habla`; Heb 9:4 nombra la vara de `la-vara-de-aaron-echa-brotes`. Miq 6:5 nombra `balac`, `balaam` y `sitim`.
+- **Pasajes que aún no están en ningún suceso.** Hch 7:36 y 13:18, Heb 3:16-19 y Jud 5 van a `jehova-condena-a-israel-a-40-anos-en-el-desierto`; Os 9:10 a `israel-adora-al-baal-de-peor`; 2Pe 2:15, 16 a `la-burra-de-balaam-habla`; Heb 9:4 nombra la vara de `la-vara-de-aaron-echa-brotes`. Miq 6:5 nombra `balac`, `balaam` y `sitim`.
 
 ## Para Deuteronomio, Josué y Jueces
 
@@ -441,3 +441,9 @@ Los campos, los tipos de relación y sus palabras se nombran como en el esquema 
 ## Para quien relea Jerusalén o el monte Moria (desde Ezequiel)
 
 - **Puertas del templo.** `jerusalen` lleva en `names` dos puertas del templo, la Puerta superior de la casa de Jehová (2Re 15:35) y la Puerta del Rey (1Cr 9:18), y `monte-moria` lleva las demás. Ezequiel 9 y 10 no las movieron: hace falta decidir si pasan a `monte-moria`.
+
+## Para Ester, el Evangelio de Juan y Judas (desde Apocalipsis)
+
+- **La India.** Ap 18:13 la nombra como origen de una especia. El lugar `india` lo crea Ester (Est 1:1; 8:9), y por eso Apocalipsis 18 queda `pending`. Al integrar Ester: `place:india` entra en `mentions` del tramo Apocalipsis 18:11-16, su nota pierde la frase sobre Ester y el capítulo pasa a `complete`.
+- **El orden en los años 90.** `juan-escribe-apocalipsis` (Patmos, c. 96) lleva el orden 2960 de `hechos`, elegido por nosotros, y `juan-escribe-1-juan` el 2980: el suceso que escriba el Evangelio de Juan va entre los dos. Las visiones van en su propia serie, `apocalipsis` (capítulo × 1000 + versículo, de 1010 a 21009), y `juan-desterrado-en-patmos` toma el 1001 de esa serie.
+- **Miguel en Ap 12:7.** La nota del nombre Miguel en `jesus` cita Da 10:13; 12:1 y Jud 9, pero no Ap 12:7, donde Miguel vence al dragón (Perspicacia «Miguel», núm. 1). Quien integre Judas puede añadir el pasaje a esa nota.

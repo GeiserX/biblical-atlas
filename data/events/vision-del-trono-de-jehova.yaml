@@ -1,0 +1,45 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: vision-del-trono-de-jehova
+title: Juan ve el trono de Jehová y al Cordero que toma el rollo
+date:
+  from: 96
+  to: 96
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 96 e.c.
+narrative_order:
+  series: apocalipsis
+  order: 4001
+places:
+- patmos
+people:
+- juan-apostol
+present:
+- juan-apostol
+passages:
+- Ap 4:1-5:14
+summary: En visión, Juan sube al cielo y ve a Jehová en su trono, rodeado de 24 ancianos y cuatro seres vivientes. Solo el
+  Cordero, que es Jesús, merece tomar de su mano el rollo de siete sellos.
+reason: Segunda visión de Apocalipsis (Ap 4:1-5:14) según «Toda Escritura», libro 66, párr. 6 y 11, y el libro sobre Apocalipsis,
+  cap. 14 y 15. Juan la recibió preso en Patmos hacia 96 (libro 66, párr. 5; estudio 3; Tabla).
+note: 'Orden 4001 de la serie apocalipsis, elegido por nosotros: «Toda Escritura», libro 66, párr. 6, ve el libro como una
+  sola secuencia de visiones. Lo visto es profecía, no suceso del atlas; cada tramo explica su parte.'
+sources:
+- apocalipsis-4
+- apocalipsis-5
+- si-apocalipsis
+- si-3
+- tnm-tabla
+- re-14
+- re-15
+links:
+- title: Apocalipsis 4 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/apocalipsis/4/
+  type: bible
+- title: Apocalipsis 5 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/apocalipsis/5/
+  type: bible
+checked_on: '2026-10-14'
+status: verified

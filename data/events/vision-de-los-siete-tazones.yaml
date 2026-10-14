@@ -1,0 +1,52 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: vision-de-los-siete-tazones
+title: Juan ve a siete ángeles derramar siete tazones con la furia de Dios
+date:
+  from: 96
+  to: 96
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 96 e.c.
+narrative_order:
+  series: apocalipsis
+  order: 15001
+places:
+- patmos
+people:
+- juan-apostol
+present:
+- juan-apostol
+passages:
+- Ap 15:1-16:21
+summary: En visión, Juan ve salir del santuario celestial a siete ángeles con tazones de la furia de Dios, que vacían sobre
+  la tierra, el mar, los ríos, el sol, el trono de la bestia, el Éufrates y el aire.
+reason: Décima visión de Apocalipsis (Ap 15:1-16:21) según «Toda Escritura», libro 66, párr. 6 y 22, y el libro sobre Apocalipsis,
+  cap. 31 y 32. Juan las recibió preso en Patmos hacia 96 (libro 66, párr. 5; estudio 3; Tabla).
+note: 'Orden 15001 de la serie apocalipsis, elegido por nosotros como en las demás visiones. Lo visto es profecía, no suceso
+  del atlas: cada tramo de la cobertura explica su parte.'
+sources:
+- apocalipsis-15
+- si-apocalipsis
+- si-3
+- tnm-tabla
+- re-31
+- re-32
+- it-revelacion-a-juan
+- apocalipsis-16
+- it-eufrates
+- it-har-magedon
+links:
+- title: Apocalipsis 15 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/apocalipsis/15/
+  type: bible
+- title: Apocalipsis 16 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/apocalipsis/16/
+  type: bible
+- title: 'Perspicacia: «Revelación a Juan, Una»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Revelaci%C3%B3n-a-Juan-Una/
+  type: perspicacia
+search: visión siete tazones últimas plagas Apocalipsis
+checked_on: '2026-10-14'
+status: verified

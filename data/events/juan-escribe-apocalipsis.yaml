@@ -1,0 +1,71 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: juan-escribe-apocalipsis
+title: Juan escribe Apocalipsis
+date:
+  from: 96
+  to: 96
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 96 e.c.
+narrative_order:
+  series: hechos
+  order: 2960
+places:
+- patmos
+people:
+- juan-apostol
+present:
+- juan-apostol
+type: writing
+roles:
+  juan-apostol: wrote
+passages:
+- Ap 1:1-4
+- Ap 1:9
+- Ap 1:11
+- Ap 1:19
+- Ap 2:1
+- Ap 2:8
+- Ap 2:12
+- Ap 2:18
+- Ap 3:1
+- Ap 3:7
+- Ap 3:14
+- Ap 14:13
+- Ap 19:9
+- Ap 21:5
+- Ap 22:7-10
+- Ap 22:18, 19
+summary: Ya anciano y desterrado en Patmos, el apóstol Juan pone por escrito las visiones que recibe y las envía, en forma
+  de carta, a siete congregaciones de la provincia de Asia.
+reason: 'Tabla de los libros: Patmos, c. 96. «Toda Escritura», libro 66, párr. 5: hacia 96, durante su destierro. Perspicacia
+  «Revelación a Juan, Una»: el propio Juan se nombra escritor y sitúa la obra en Patmos (Ap 1:1, 9).'
+note: 'Pasajes: el prólogo y cada versículo donde Juan dice que escribe o se le manda escribir. Orden 2960 de hechos, nuestro:
+  tras 2 Timoteo (c. 65), antes de 1 Juan (2980, c. 98), con sitio para el Evangelio.'
+sources:
+- apocalipsis-1
+- tnm-tabla
+- si-3
+- si-apocalipsis
+- it-revelacion-a-juan
+- it-patmos
+- it-juan
+- apocalipsis-2
+- apocalipsis-3
+- apocalipsis-14
+- apocalipsis-19
+- apocalipsis-21
+- apocalipsis-22
+- re-44
+links:
+- title: 'Perspicacia: «Revelación a Juan, Una»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Revelaci%C3%B3n-a-Juan-Una/
+  type: perspicacia
+- title: Apocalipsis 1 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/apocalipsis/1/
+  type: bible
+search: Juan escribe Apocalipsis Patmos
+checked_on: '2026-10-14'
+status: verified
