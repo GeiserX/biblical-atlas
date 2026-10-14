@@ -1,0 +1,40 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: ezequiel-ve-revivir-los-huesos-secos
+title: Ezequiel ve revivir los huesos secos
+date:
+  from: -606
+  to: -592
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 607 y 593 a.e.c. (tiempo narrativo: tras la noticia de la caída de Jerusalén y antes de la visión del templo)'
+narrative_order:
+  series: ezequiel
+  order: 237001
+places:
+- caldea
+- israel
+people:
+- ezequiel
+present: []
+passages:
+- Eze 37:1-14
+summary: En una visión, Ezequiel profetiza sobre una llanura cubierta de huesos resecos, que se juntan, toman carne y respiran.
+  Jehová le explica que son los israelitas sin esperanza, a los que devolverá vivos a su tierra.
+reason: 'Tras la noticia de la caída de Jerusalén (607) y antes de la visión del templo (593), según «Toda Escritura», libro
+  26, párr. 24 y 27. La adoración pura, cap. 10, párr. 2 y 3: justo tras la noticia.'
+sources:
+- ezequiel-37
+- si-ezequiel
+- it-ezequiel-libro
+- rr-volveran-a-vivir
+links:
+- title: Ezequiel 37 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/ezequiel/37/
+  type: bible
+- title: 'Perspicacia: «Ezequiel, Libro de»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ezequiel-Libro-de/
+  type: perspicacia
+checked_on: '2026-10-13'
+status: verified

@@ -1,0 +1,39 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: ezequiel-come-su-pan-con-temblor-como-senal
+title: Ezequiel come su pan con temblor como señal para Jerusalén
+date:
+  from: -611
+  to: -611
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 612 a.e.c.
+narrative_order:
+  series: ezequiel
+  order: 12017
+places:
+- tel-abib
+- caldea
+- jerusalen
+- israel
+people:
+- ezequiel
+present:
+- ezequiel
+passages:
+- Eze 12:17-20
+summary: Jehová manda a Ezequiel comer y beber temblando y con angustia, y decir que así comerán los de Jerusalén, porque
+  su tierra y sus ciudades quedarán desoladas por la violencia de sus habitantes.
+reason: 'La Atalaya de febrero de 2018 (nota del párr. 2) pone los capítulos 8 a 19 en 612. Sitio deducido: la señal es para la gente del país donde vive (Eze 12:19), y Perspicacia «Ezequiel» lo pone en Tel-abib.'
+sources:
+- ezequiel-12
+- w18-noe-daniel-job
+- si-ezequiel
+- it-ezequiel
+links:
+- title: Ezequiel 12 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/ezequiel/12/
+  type: bible
+checked_on: '2026-10-13'
+status: verified

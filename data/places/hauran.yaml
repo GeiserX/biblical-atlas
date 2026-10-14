@@ -1,0 +1,33 @@
+# biblical-atlas: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: hauran
+name: Haurán
+names:
+- name: Haurán
+  note: Perspicacia le da el sentido de «que palideció».
+- name: Auranítide
+  note: Región más reducida de época griega y romana que, al parecer, corresponde a Haurán (Perspicacia).
+type: region
+lat: 32.73009
+lon: 36.36812
+precision: zone
+coord_source: openbible:a0e8903
+coord_url: https://www.openbible.info/geo/ancient/a0e8903/hauran
+coord_note: Punto representativo de OpenBible para la región actual de Haurán, las praderas entre Damasco y el río Yarmuk.
+summary: Región que marcaba el límite este de la herencia de Israel en la visión de Ezequiel. Varios eruditos la igualan casi
+  con el antiguo Basán; hoy son llanuras fértiles de tierra rojiza entre Damasco y el Yarmuk.
+reason: 'Perspicacia «Haurán»; Eze 47:16, 18. OpenBible: solo el punto.'
+not_claimed:
+- 'Que Haurán y Basán fueran el mismo territorio: es la opinión de varios eruditos que recoge Perspicacia.'
+sources:
+- it-hauran
+- openbible-geo
+- ezequiel-47
+links:
+- title: 'Perspicacia: «Haurán»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Haur%C3%A1n/
+  type: perspicacia
+- title: Ezequiel 47 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/ezequiel/47/
+  type: bible
+checked_on: '2026-10-13'
+status: verified

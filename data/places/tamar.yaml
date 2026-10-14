@@ -11,14 +11,16 @@ coord_source: openbible:ab066d7
 coord_url: https://www.openbible.info/geo/ancient/ab066d7/tamar-1
 coord_note: Punto de ʽEn Hazeva (ʽAin Husb), primera identificación de OpenBible. Perspicacia solo recoge que Aharoni la pone
   allí.
-summary: Ciudad del desierto, dentro del territorio de Israel, que Salomón reconstruyó o fortificó. Aharoni la identifica
-  con ʽEn Hazeva, al sudoeste del mar Muerto. No es la Tadmor que nombra 2 Crónicas.
-reason: 'Perspicacia «Tamar», núm. 4; 1Re 9:17-19. Perspicacia cree que 2Cr 8:4 habla de otra ciudad, Tadmor. OpenBible: solo
-  el punto.'
+summary: Ciudad del desierto, dentro del territorio de Israel, que Salomón reconstruyó o fortificó; Ezequiel la pone donde
+  empieza la frontera sur. Aharoni la identifica con ʽEn Hazeva, al sudsudoeste del mar Muerto. No es la Tadmor de 2 Crónicas.
+reason: 'Perspicacia «Tamar», núm. 4; 1Re 9:17-19; Eze 47:19; 48:28. Perspicacia cree que 2Cr 8:4 habla de otra ciudad, Tadmor.
+  OpenBible: solo el punto.'
 sources:
 - it-tamar
 - openbible-geo
 - 1-reyes-9
+- ezequiel-47
+- ezequiel-48
 links:
 - title: 'Perspicacia: «Tamar»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Tamar/
@@ -26,5 +28,13 @@ links:
 - title: 1 Reyes 9 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/1-reyes/9/
   type: bible
-checked_on: '2026-09-30'
+history:
+- date: '2026-10-13'
+  change: 'El resumen añade que Eze 47:19 y 48:28 la ponen al principio de la frontera sur, como recuerda Perspicacia «Tamar»,
+    núm. 4, y corrige el rumbo: está al sudsudoeste del mar Muerto.'
+  source: ezequiel-47
+- date: '2026-10-13'
+  change: La razón cita Eze 47:19 y 48:28, que Perspicacia «Tamar», núm. 4, usa para la identificación de Aharoni.
+  source: ezequiel-47
+checked_on: '2026-10-13'
 status: verified

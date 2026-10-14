@@ -27,10 +27,10 @@ candidates:
   coord_source: calculation
   note: 'Centro y radio: segunda identificación de la ficha a359997 de OpenBible (Lud 2), unos 500 km alrededor de Trípoli.
     Solo marca la región.'
-summary: Pueblo de hábiles arqueros, al parecer del norte de África, que sirvió en el ejército egipcio. Is 66:19 lo cuenta
-  entre las naciones lejanas que oirían de la gloria de Jehová.
-reason: 'Perspicacia «Lud, ludim», núm. 2: el Lud que estira el arco en Is 66:19 parece el camita, por ser una nación lejana
-  de Israel. El mapa solo muestra esa región del norte de África.'
+summary: Pueblo de hábiles arqueros, al parecer del norte de África, que sirvió en el ejército egipcio y en el de Tiro. Is
+  66:19 lo cuenta entre las naciones lejanas que oirían de la gloria de Jehová.
+reason: 'Perspicacia «Lud, ludim», núm. 2: el Lud de Is 66:19 parece el camita, por ser una nación lejana de Israel, y quizá
+  también el de Eze 27:10, por ir con Put. El mapa solo muestra el norte de África.'
 not_claimed:
 - 'Que Lud estuviera junto a Libia: Perspicacia dice que esa idea cambia sin base una letra del nombre.'
 - 'Que sea Lidia, en Asia Menor: esa es la tierra que Josefo da a los descendientes de Lud hijo de Sem.'
@@ -39,6 +39,8 @@ sources:
 - openbible-geo
 - isaias-66
 - jeremias-46
+- ezequiel-27
+- ezequiel-30
 links:
 - title: 'Perspicacia: «Lud, ludim»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Lud-ludim/
@@ -46,5 +48,12 @@ links:
 - title: Isaías 66 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Isa%C3%ADas/66/
   type: bible
-checked_on: '2026-10-12'
+history:
+- date: '2026-10-13'
+  change: Se añade que los ludim servían también en el ejército de Tiro (Eze 27:10).
+  source: ezequiel-27
+- date: '2026-10-13'
+  change: 'La razón cita Eze 27:10: Perspicacia «Lud, ludim», núm. 2, cree que ir junto a Put apunta también al Lud camita.'
+  source: ezequiel-27
+checked_on: '2026-10-13'
 status: verified

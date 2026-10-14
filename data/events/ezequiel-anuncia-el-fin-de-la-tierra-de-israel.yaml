@@ -1,0 +1,40 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: ezequiel-anuncia-el-fin-de-la-tierra-de-israel
+title: Ezequiel anuncia el fin de la tierra de Israel
+date:
+  from: -612
+  to: -611
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 613 y 612 a.e.c. (tiempo narrativo: tras la comisión de Ezequiel y antes de su visión del año sexto)'
+narrative_order:
+  series: ezequiel
+  order: 7001
+places:
+- israel
+- jerusalen
+people:
+- ezequiel
+present: []
+passages:
+- Eze 7:1-27
+summary: 'Jehová manda a Ezequiel proclamar que el fin cae sobre la tierra de Israel: espada fuera de la ciudad, hambre y
+  peste dentro. Ni la plata ni el oro librarán a nadie y el santuario será profanado.'
+reason: «Toda Escritura», libro 26, párr. 10 y 11, cierra con Eze 7 la representación del sitio (4:1-7:27). Cae entre la comisión
+  de tamuz de 613 y la visión de elul de 612 del capítulo siguiente; no dice dónde habló.
+sources:
+- ezequiel-7
+- si-ezequiel
+- rr-te-ha-llegado-el-fin
+- rr-cosas-detestables-en-el-templo
+- it-ezequiel-libro
+- it-reino-de-dios
+- si-3
+links:
+- title: Ezequiel 7 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/ezequiel/7/
+  type: bible
+checked_on: '2026-10-13'
+status: verified

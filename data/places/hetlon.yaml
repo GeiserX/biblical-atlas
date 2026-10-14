@@ -1,0 +1,30 @@
+# biblical-atlas: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: hetlon
+name: Hetlón
+names:
+- name: Hetlón
+type: city
+lat: 34.60306
+lon: 36.13361
+precision: uncertain
+coord_source: openbible:a1ab517
+coord_url: https://www.openbible.info/geo/ancient/a1ab517/hethlon
+coord_note: 'Punto de OpenBible en Haitla, unos 35 km al nordeste de Trípoli, en el Líbano: el sitio que proponen algunos
+  eruditos según Perspicacia.'
+summary: 'Lugar de la frontera norte de la tierra que Ezequiel ve repartida: el límite salía del mar Grande por el camino
+  de Hetlón. Algunos lo sitúan en Haitla, al nordeste de Trípoli.'
+reason: 'Perspicacia «Hetlón»; Eze 47:15; 48:1. OpenBible: solo el punto.'
+sources:
+- it-hetlon
+- openbible-geo
+- ezequiel-47
+- ezequiel-48
+links:
+- title: 'Perspicacia: «Hetlón»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hetl%C3%B3n/
+  type: perspicacia
+- title: Ezequiel 47 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/ezequiel/47/
+  type: bible
+checked_on: '2026-10-13'
+status: verified

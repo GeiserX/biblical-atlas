@@ -38,6 +38,7 @@ sources:
 - it-bet-eden
 - openbible-geo
 - isaias-37
+- ezequiel-27
 links:
 - title: 'Perspicacia: «Edén»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ed%C3%A9n/
@@ -48,5 +49,5 @@ links:
 - title: Isaías 37 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Isa%C3%ADas/37/
   type: bible
-checked_on: '2026-09-30'
+checked_on: '2026-10-13'
 status: verified

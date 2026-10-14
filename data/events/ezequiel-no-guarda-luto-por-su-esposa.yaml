@@ -1,0 +1,47 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: ezequiel-no-guarda-luto-por-su-esposa
+title: Ezequiel no guarda luto por su esposa, como señal para los desterrados
+type: speech
+date:
+  from: -608
+  to: -608
+  precision: day
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 10 de tebet de 609 a.e.c.
+  detail:
+    month: tebet
+    day: 10
+narrative_order:
+  series: ezequiel
+  order: 24015
+places:
+- tel-abib
+- caldea
+people:
+- ezequiel
+present:
+- ezequiel
+roles:
+  ezequiel: spoke
+passages:
+- Eze 24:15-27
+summary: 'Jehová avisa a Ezequiel de que le quitará a su amada esposa. Ella muere al atardecer y él, como se le mandó, no
+  hace duelo: así harán los desterrados cuando Jehová profane su santuario.'
+reason: '«Toda Escritura», libro 26, párr. 2 y 20: la esposa murió el día en que empezó el sitio final (609, estudio 3). Sin
+  nombre ni ficha, no lleva papel. Perspicacia «Ezequiel», párr. 4, lo pone en Tel-abib.'
+sources:
+- ezequiel-24
+- si-ezequiel
+- si-3
+- it-ezequiel
+links:
+- title: 'Perspicacia: «Ezequiel»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ezequiel/
+  type: perspicacia
+- title: Ezequiel 24 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/ezequiel/24/
+  type: bible
+checked_on: '2026-10-13'
+status: verified
