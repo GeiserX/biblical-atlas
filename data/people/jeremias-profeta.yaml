@@ -71,6 +71,11 @@ sources:
 - jeremias-49
 - jeremias-50
 - jeremias-51
+- lamentaciones-2
+- it-lamentaciones-libro
+- si-lamentaciones
+- lamentaciones-3
+- lamentaciones-4
 links:
 - title: 'Perspicacia: «Jeremías»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jerem%C3%ADas/
@@ -274,7 +279,7 @@ relations:
   checked_on: '2026-10-12'
   status: verified
 perspicacia: 1200002421#6
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified
 distinct_from:
 - jeremias-de-libna

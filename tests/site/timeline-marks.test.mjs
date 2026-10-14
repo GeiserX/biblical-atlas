@@ -92,14 +92,19 @@ async function goTo(p, t, span) {
 const state = (p) => p.evaluate(() => ({ t: window.BE.E.t, vista: [...window.BE.E.vista], sel: window.BE.selTexto(window.BE.E.sel), scroll: document.querySelector('#linea-cuerpo').scrollTop }));
 
 /** Walks the lanes from top to bottom and checks every mark that the page draws: its whole label, inside the track,
-    covering no other mark of its row. Returns what it saw and what was wrong. */
+    covering no other mark of its row. Returns what it saw and what was wrong. It walks to the very bottom however tall the
+    lanes are (on a phone at milenios they pass 80 000 px, and they grow with every book), and a walk that stops short is
+    a problem: marks below where it stopped would read as not drawn. */
 function walkLanes(p) {
   return p.evaluate(async () => {
     const cuerpo = document.querySelector('#linea-cuerpo');
     const raf = () => new Promise((r) => requestAnimationFrame(() => requestAnimationFrame(r)));
     const seen = new Map(), problems = [], overLong = new Set();
     const row = parseFloat(getComputedStyle(document.querySelector('#linea-filas')).getPropertyValue('--fila')) || 22;
-    for (let y = 0, guard = 0; guard < 400; guard++, y += Math.max(120, cuerpo.clientHeight)) {
+    // The height is read again at every step: a late repaint (the fonts arriving) can make the lanes taller mid-walk.
+    const step = Math.max(120, cuerpo.clientHeight);
+    let bottom = false;
+    for (let y = 0, guard = 0; guard < Math.ceil(cuerpo.scrollHeight / step) + 2; guard++, y += step) {
       cuerpo.scrollTop = y;
       await raf();
       for (const lane of document.querySelectorAll('#linea-filas .carril:not([hidden])')) {
@@ -122,11 +127,13 @@ function walkLanes(p) {
           }
         }
       }
-      if (y + cuerpo.clientHeight >= cuerpo.scrollHeight) break;
+      if (y + cuerpo.clientHeight >= cuerpo.scrollHeight) { bottom = true; break; }
     }
+    if (!bottom) problems.push(`the walk stopped at ${cuerpo.scrollTop + cuerpo.clientHeight} px of ${cuerpo.scrollHeight}`);
+    const height = cuerpo.scrollHeight;
     cuerpo.scrollTop = 0;
     await raf();
-    return { seen: [...seen], problems, overLong: overLong.size };
+    return { seen: [...seen], problems, overLong: overLong.size, height };
   });
 }
 /** The label of the lane «Viajes de Pablo»: its name whole, in as many lines as it needs, inside the label, and the label
@@ -198,7 +205,7 @@ for (const screen of [DESKTOP, PHONE]) {
       const approx = h.visible.filter((x) => x.cert === 'approx');
       const approxOk = approx.filter((x) => seen.get(x.id)?.endsWith(' aprox.')).length;
       const plainWithTag = h.visible.filter((x) => (x.cert === 'exact' || x.cert === 'computed') && / aprox\.$|¿\?$/.test(seen.get(x.id) || '')).length;
-      note(`${screen.name} ${dname} span ${s}: ${h.visible.length} marks in view, ${seen.size} drawn, ${h.missing.length} missing, ${notDrawn.length} not drawn, ${walk.problems.length} overlap/cut, ${walk.overLong} over-long names beside their dot, ${calc.length} «cálculo», ${approxOk}/${approx.length} «aprox.», lanes ${h.lanes.filter((l) => l.alto).length} shown`);
+      note(`${screen.name} ${dname} span ${s}: ${h.visible.length} marks in view, ${seen.size} drawn, ${h.missing.length} missing, ${notDrawn.length} not drawn, ${walk.problems.length} overlap/cut, ${walk.overLong} over-long names beside their dot, ${calc.length} «cálculo», ${approxOk}/${approx.length} «aprox.», lanes ${h.lanes.filter((l) => l.alto).length} shown, ${walk.height} px walked`);
       all.push(...h.missing.map((x) => `${dname} ${s}: missing ${x}`), ...notDrawn.map((x) => `${dname} ${s}: not drawn ${x}`), ...walk.problems.map((x) => `${dname} ${s}: ${x}`),
         ...wrongText.map((x) => `${dname} ${s}: ${x}`), ...calc.map((x) => `${dname} ${s}: says cálculo: ${x}`));
       if (approxOk !== approx.length) all.push(`${dname} ${s}: ${approx.length - approxOk} approximate marks lack «aprox.»`);
@@ -491,6 +498,9 @@ test('1440: dragging moves time, the ruler moves the cursor, the wheel zooms at 
   assert.ok(Math.abs((f.vista[1] - f.vista[0]) - (e.vista[1] - e.vista[0])) > 1e-6);
   // The map follows the cursor: Pablo's marker moves when the ruler takes the cursor from 50 to 57.
   await goTo(p, 50.5, 40);
+  // MapLibre and its worker come from unpkg, so the map can still be loading after the steps above: on 2026-10-13 the
+  // worker took 4 s and both reads below came back null. The marker has to be on the map before it can move.
+  await p.waitForFunction(() => document.querySelector('.maplibregl-marker.pablo'), null, { timeout: 30000 });
   const pablo = () => p.evaluate(() => { const m = document.querySelector('.maplibregl-marker.pablo'); return m ? `${m.style.transform}|${m.isConnected}` : null; });
   const m0 = await pablo();
   const x57 = await p.evaluate(() => { const BE = window.BE, r = document.querySelector('#pista').getBoundingClientRect(); return [r.left + ((57.3 - BE.E.vista[0]) / (BE.E.vista[1] - BE.E.vista[0])) * r.width, r.top + r.height / 2]; });

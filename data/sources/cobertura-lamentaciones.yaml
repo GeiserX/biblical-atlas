@@ -1,0 +1,50 @@
+# biblical-atlas: fuentes de la cobertura de lamentaciones. Esquema en docs/investigacion/README.md.
+it-lamentaciones-libro:
+  title: Lamentaciones, Libro de
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Lamentaciones-Libro-de/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+si-lamentaciones:
+  title: 'Libro bíblico número 25: Lamentaciones'
+  work: “Toda Escritura es inspirada de Dios y provechosa”
+  url: https://www.jw.org/es/biblioteca/libros/Toda-Escritura-es-inspirada-de-Dios-y-provechosa/Libro-b%C3%ADblico-n%C3%BAmero-25-Lamentaciones/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+w07-lamentaciones:
+  title: Puntos sobresalientes del libro de Lamentaciones
+  work: La Atalaya (1 de junio de 2007)
+  url: https://www.jw.org/es/biblioteca/revistas/w20070601/Puntos-sobresalientes-del-libro-de-Lamentaciones/
+  level: 1
+  published: 2007
+  checked_on: '2026-10-13'
+w88-lamentaciones:
+  title: Jehová da esperanza en medio del dolor
+  work: La Atalaya (1 de septiembre de 1988)
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1988646
+  level: 1
+  published: 1988
+  checked_on: '2026-10-13'
+it-tienda:
+  title: Tienda
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Tienda/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-grava:
+  title: Grava
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Grava/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-hambre:
+  title: Hambre
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hambre/
+  level: 1
+  published: null
+  checked_on: '2026-10-12'
