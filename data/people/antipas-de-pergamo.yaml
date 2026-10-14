@@ -21,6 +21,7 @@ sources:
 - it-antipas
 - it-pergamo
 - apocalipsis-2
+- re-9
 distinct_from:
 - herodes-antipas
 relations:
@@ -33,6 +34,16 @@ relations:
   reason: 'Ap 2:13: lo mataron en la ciudad.'
   checked_on: '2026-09-28'
   status: verified
+- type: lived_in
+  place: pergamo
+  inferred: true
+  sources:
+  - it-antipas
+  - apocalipsis-2
+  reason: Perspicacia «Antipas», núm. 1, lo hace mártir de la congregación de Pérgamo, y Ap 2:13 dice que lo mataron entre
+    aquellos cristianos.
+  checked_on: '2026-10-14'
+  status: verified
 links:
 - title: 'Perspicacia: «Antipas»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Antipas/
@@ -40,5 +51,6 @@ links:
 - title: Apocalipsis 2 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/apocalipsis/2/
   type: bible
-checked_on: '2026-09-28'
+perspicacia: 1200000293#1
+checked_on: '2026-10-14'
 status: verified

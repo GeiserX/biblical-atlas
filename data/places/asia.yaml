@@ -26,6 +26,7 @@ sources:
 - hch-20
 - 2-corintios-1
 - 2-timoteo-1
+- apocalipsis-1
 links:
 - title: 'Perspicacia: «Asia»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Asia/
@@ -38,5 +39,5 @@ history:
   change: Se añade «provincia de Asia», la forma de la Biblia de estudio en Hch 16:6, 19:10 y 2Ti 1:15. «Distrito de Asia»
     no es la de esa edición, sino la de Perspicacia.
   source: 2-timoteo-1
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified

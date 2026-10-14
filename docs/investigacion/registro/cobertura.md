@@ -83,8 +83,8 @@ Qué versículos de la TNM se han leído y apuntado en `data/coverage/<libro>.ya
 | 2 Juan | 0 de 1 | 0 de 13 | 0 % |
 | 3 Juan | 0 de 1 | 0 de 14 | 0 % |
 | Judas | 0 de 1 | 0 de 25 | 0 % |
-| Apocalipsis | 0 de 22 | 0 de 404 | 0 % |
-| **Total** | 1119 de 1189 | 29587 de 31062 | 95 % |
+| [Apocalipsis](https://github.com/GeiserX/biblical-atlas/blob/main/data/coverage/apocalipsis.yaml) | 21 de 22 | 404 de 404 | 100 % |
+| **Total** | 1140 de 1189 | 29991 de 31062 | 97 % |
 
 ## Capítulos empezados
 
@@ -92,3 +92,4 @@ Qué versículos de la TNM se han leído y apuntado en `data/coverage/<libro>.ya
 - 1 Crónicas 24: faltan ninguno (falta marcarlo completo)
 - 1 Crónicas 25: faltan ninguno (falta marcarlo completo)
 - Filemón 1: faltan ninguno (falta marcarlo completo)
+- Apocalipsis 18: faltan ninguno (falta marcarlo completo)

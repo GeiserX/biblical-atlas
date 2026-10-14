@@ -32,6 +32,9 @@ sources:
 - it-timoteo-cartas
 - 2-timoteo-1
 - 2-timoteo-4
+- apocalipsis-1
+- apocalipsis-2
+- re-7
 links:
 - title: 'Perspicacia: «Éfeso»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/%C3%89feso/
@@ -39,5 +42,5 @@ links:
 - title: Hechos 18 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/hechos/18/
   type: bible
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified

@@ -1,6 +1,6 @@
 # biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
 id: juan-desterrado-en-patmos
-title: Juan, desterrado en Patmos, recibe Apocalipsis
+title: Juan, desterrado en Patmos
 date:
   from: 96
   to: 96
@@ -14,9 +14,8 @@ places:
 people:
 - juan-apostol
 passages:
-- Ap 1:1, 2, 9-11
-summary: Ya anciano, Juan está exiliado en la isla de Patmos por dar testimonio de Jesús. Allí recibe las visiones
-  de Apocalipsis y el encargo de escribir a siete congregaciones de Asia.
+- Ap 1:9
+summary: Ya anciano, el apóstol Juan está desterrado en la isla de Patmos por haber hablado de Dios y dado testimonio de Jesús.
 reason: El estudio 3 (párr. 29) y la Tabla de los libros dan c. 96; Perspicacia «Juan» (párr. 31) y «Patmos» (párr.
   2).
 sources:
@@ -25,6 +24,23 @@ sources:
 - it-juan
 - it-patmos
 - apocalipsis-1
+- si-apocalipsis
+- re-4
 search: Juan en Patmos
-checked_on: '2026-09-28'
+narrative_order:
+  series: apocalipsis
+  order: 1001
+note: 'Orden 1001 de la serie apocalipsis, nuestro: el destierro va antes de las visiones del libro, que empiezan en Ap 1:10,
+  y de la escritura del libro.'
+history:
+- date: '2026-10-14'
+  change: 'El suceso queda en el destierro (Ap 1:9): las visiones y la escritura del libro ya son sucesos propios.'
+  source: apocalipsis-1
+- date: '2026-10-14'
+  change: Ap 1:1, 2 y 10, 11 pasan a juan-escribe-apocalipsis y a la primera visión; queda el versículo del destierro.
+  source: apocalipsis-1
+- date: '2026-10-14'
+  change: El resumen deja de contar las visiones y el encargo de escribir, que cuentan sus propios sucesos.
+  source: apocalipsis-1
+checked_on: '2026-10-14'
 status: verified

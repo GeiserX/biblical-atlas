@@ -4,8 +4,8 @@ name: Nicolás
 names:
 - name: Nicolás
 perspicacia: 1200003250#1
-disambiguation: El prosélito de Antioquía de Hch 6:5. Perspicacia no ve base para unirlo a la secta de Nicolás de Rev 2:6,
-  15.
+disambiguation: El prosélito de Antioquía de Hch 6:5. Perspicacia no ve base para unirlo a la secta de Nicolás que condena
+  Apocalipsis.
 not_claimed:
 - 'Que fundara la secta de Nicolás que condena Revelación: Perspicacia lo descarta.'
 date:
@@ -60,5 +60,10 @@ links:
 - title: Hechos 6 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/hechos/6/
   type: bible
-checked_on: '2026-09-29'
+history:
+- date: '2026-10-14'
+  change: 'Citaba la secta como «Rev 2:6, 15», con la abreviatura inglesa. Se nombra el libro sin versículos: Perspicacia
+    descarta que este Nicolás sea el de Apocalipsis 2.'
+  source: it-nicolas
+checked_on: '2026-10-14'
 status: verified

@@ -20,6 +20,8 @@ sources:
 - hch-16
 - apocalipsis-2
 - openbible-geo
+- apocalipsis-1
+- re-10
 links:
 - title: 'Perspicacia: «Tiatira»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Tiatira/
@@ -27,5 +29,5 @@ links:
 - title: Apocalipsis 2 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/apocalipsis/2/
   type: bible
-checked_on: '2026-09-28'
+checked_on: '2026-10-14'
 status: verified

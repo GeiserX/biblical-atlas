@@ -348,8 +348,10 @@ relations:
   - hch-13
   - romanos-1
   - 2-timoteo-2
+  - apocalipsis-22
+  - re-44
   reason: Mt 1:1 lo llama hijo de David; la nota explica que aquí hijo puede ser un descendiente.
-  checked_on: '2026-10-13'
+  checked_on: '2026-10-14'
   status: verified
 - type: kin
   person: abrahan
@@ -479,6 +481,30 @@ relations:
   sources:
   - hebreos-7
   reason: 'Heb 7:14: nuestro Señor desciende de Judá, una tribu de la que Moisés no habló para el sacerdocio.'
+  checked_on: '2026-10-14'
+  status: verified
+- type: appears_to
+  person: juan-apostol
+  caption: le habla en una visión
+  inverse_caption: Jesús le habla en una visión
+  date:
+    from: 96
+    to: 96
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 96 e.c.
+  inferred: false
+  sources:
+  - apocalipsis-1
+  - si-apocalipsis
+  - re-5
+  - apocalipsis-22
+  - re-44
+  - si-3
+  reason: 'Ap 1:10-20: en Patmos, Juan lo ve glorificado entre siete candelabros y lo oye decir que estuvo muerto y vive.
+    En 22:16 dice «Yo, Jesús». El ángel del rollo pequeño, Jesús solo según el libro Apocalipsis, queda fuera.'
   checked_on: '2026-10-14'
   status: verified
 links:
