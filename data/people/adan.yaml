@@ -26,6 +26,7 @@ sources:
 - lucas-3
 - romanos-5
 - 1-corintios-15
+- 1-timoteo-2
 - 1-cronicas-1
 links:
 - title: 'Perspicacia: «Adán»'
@@ -57,5 +58,5 @@ relations:
   checked_on: '2026-09-29'
   status: verified
 perspicacia: '1200000089'
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified

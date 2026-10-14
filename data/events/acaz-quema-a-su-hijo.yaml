@@ -17,10 +17,10 @@ places:
 people:
 - acaz
 passages:
-- 2Re 16:3
-- 2Cr 28:3
-summary: 'Acaz imita a los reyes de Israel y a las naciones expulsadas: quema a su propio hijo en el fuego y hace sacrificios
-  en los lugares altos y bajo los árboles frondosos.'
+- 2Re 16:3, 4
+- 2Cr 28:2-4
+summary: 'Acaz imita a los reyes de Israel y a las naciones expulsadas: quema en el fuego a su hijo (2Cr 28:3 habla de sus
+  hijos) y hace sacrificios en los lugares altos y bajo los árboles frondosos.'
 reason: 2Re 16:3, 4; 2Cr 28:3; Perspicacia «Acaz», núm. 1, pone esas ofrendas de sus hijos en el valle de Hinón. Sin año;
   cae en su reinado, 762-746 a.e.c. (A6-B).
 sources:
@@ -35,5 +35,14 @@ links:
 - title: 'Perspicacia: «Acaz»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Acaz/
   type: perspicacia
-checked_on: '2026-09-30'
+history:
+- date: '2026-10-13'
+  change: 2Cr 28:3 dice que quemó a sus hijos, en plural; Perspicacia «Acaz», núm. 1, recoge las dos lecturas. El resumen
+    lo dice.
+  source: 2-cronicas-28
+- date: '2026-10-13'
+  change: 'Los pasajes cubren ya todo lo que dice el resumen: los lugares altos (2Re 16:4; 2Cr 28:4) y las estatuas de los
+    Baales (2Cr 28:2).'
+  source: 2-cronicas-28
+checked_on: '2026-10-13'
 status: verified

@@ -4,27 +4,38 @@ title: Ezequiel empieza a profetizar junto al río Kebar
 date:
   from: -612
   to: -612
-  precision: year
+  precision: day
   approx: false
   type: anchored
   chronology: tnm
-  text: 613 a.e.c.
+  text: 5 de tamuz de 613 a.e.c.
   detail:
     month: tamuz
     day: 5
 places:
-- babilonia
+- rio-kebar
+- tel-abib
+- caldea
 people:
 - ezequiel
 passages:
 - Eze 1:1-3
-summary: En el quinto año del destierro de Joaquín, el sacerdote Ezequiel recibe sus primeras visiones entre los desterrados
-  junto al río Kebar.
-reason: El estudio 3 fecha el comienzo en 613; Perspicacia «Ezequiel», párr. 1. Eze 1:1 da el día 5 del mes cuarto, tamuz.
+- Eze 1:4-28
+- Eze 2:1-10
+- Eze 3:1-11
+summary: Junto al río Kebar, a los treinta años, el sacerdote Ezequiel ve en visión la gloria de Jehová en su trono, sobre
+  cuatro seres vivientes con ruedas, y recibe el encargo de profetizar a un pueblo rebelde.
+reason: 'Estudio 3: empieza en 613. Eze 1:1, 2: día 5 del mes cuarto (tamuz), quinto año del destierro de Joaquín. Perspicacia
+  «Ezequiel», párr. 1: el año 30 es su edad. Lugar: Perspicacia «Kebar».'
 sources:
 - si-3
 - it-ezequiel
 - ezequiel-1
+- it-kebar
+- it-buzi
+- it-tel-abib
+- ezequiel-2
+- ezequiel-3
 links:
 - title: 'Perspicacia: «Ezequiel»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ezequiel/
@@ -33,5 +44,24 @@ links:
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/ezequiel/1/
   type: bible
 search: Ezequiel río Kebar visión
-checked_on: '2026-09-28'
+history:
+- date: '2026-10-13'
+  change: El suceso estaba en la ciudad de Babilonia. Eze 1:1-3 lo pone junto al Kebar, en Caldea, y Perspicacia «Kebar»,
+    párr. 3, en Tel-abib.
+  source: it-kebar
+- date: '2026-10-13'
+  change: La fecha ya llevaba mes y día (Eze 1:1, 2) con precisión de año; pasa a precisión de día, como los demás sucesos
+    con día.
+  source: ezequiel-1
+- date: '2026-10-13'
+  change: 'El resumen pasa a contar la visión y el encargo de Eze 1 y 2. Sigue llamando sacerdote a Ezequiel: «Toda Escritura»,
+    libro 26, párr. 2, dice que fue sacerdote y profeta.'
+  source: ezequiel-1
+- date: '2026-10-13'
+  change: La razón añade la edad de Ezequiel y de dónde sale el lugar.
+  source: it-ezequiel
+narrative_order:
+  series: ezequiel
+  order: 1001
+checked_on: '2026-10-13'
 status: verified

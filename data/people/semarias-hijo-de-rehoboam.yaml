@@ -1,0 +1,52 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: semarias-hijo-de-rehoboam
+name: Semarías
+names:
+- name: Semarías
+perspicacia: 1200004001#2
+disambiguation: Semarías hijo de Rehoboam (2Cr 11:19); no el guerrero benjaminita que se unió a David en Ziclag ni los de
+  Esdras 10.
+distinct_from:
+- semarias-el-benjaminita
+summary: Hijo de Rehoboam y de su esposa Mahalat, nombrado entre Jeús y Zaham. Por su padre descendía de David en la tercera
+  generación.
+reason: Perspicacia «Semarías», núm. 2; 2Cr 11:18, 19.
+sources:
+- it-semarias
+- 2-cronicas-11
+links:
+- title: 'Perspicacia: «Semarías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Semar%C3%ADas/
+  type: perspicacia
+relations:
+- type: kin
+  person: rehoboam
+  word: father
+  inferred: false
+  sources:
+  - 2-cronicas-11
+  - it-semarias
+  reason: '2Cr 11:19: hijo de Rehoboam.'
+  checked_on: '2026-10-13'
+  status: verified
+- type: kin
+  person: mahalat-hija-de-jerimot
+  word: mother
+  inferred: false
+  sources:
+  - 2-cronicas-11
+  - it-semarias
+  reason: '2Cr 11:19: Mahalat tuvo con Rehoboam a Jeús, Semarías y Zaham.'
+  checked_on: '2026-10-13'
+  status: verified
+- type: kin
+  person: zaham
+  word: brother
+  inferred: false
+  sources:
+  - 2-cronicas-11
+  reason: '2Cr 11:19: los dos están entre los hijos que Mahalat dio a Rehoboam.'
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified

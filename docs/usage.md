@@ -7,6 +7,7 @@ Todo lo que hace la aplicación, vista a vista. La regla de la casa: **una fecha
 - Arrastra el cursor de la línea de tiempo, o pulsa reproducir (barra espaciadora). Con Mayúsculas y las flechas saltas a la parada o carta anterior o siguiente.
 - Pulsa la fecha de arriba para ver qué quiere decir, los sucesos cercanos y los momentos clave, y para ir a otra sin escribir: era, año, mes hebreo y día.
 - La rueda sobre la línea cambia la escala, de milenios a días. Al llegar a los meses y los días salen dos filas alineadas, nuestros meses y los meses hebreos. La página [El calendario de la Biblia](https://biblical-atlas.geiser.cloud/calendario.html) explica en qué se diferencian.
+- Lo que sigue fuera de la parte que se ve lleva una flecha en el borde de la línea, y su barra se aclara de ese lado: no empieza ni acaba ahí. Al pasar el puntero lo dice, con sus fechas. Arrastra la línea o aléjala para ver el resto.
 - Las fechas siguen la cronología de la Traducción del Nuevo Mundo. Si la historia secular da otra fecha y una fuente enlazada la menciona, sale como nota y no mueve el cursor.
 
 ## El mapa
@@ -111,7 +112,7 @@ En la ficha de un suceso, una parada, una carta, un viaje o un capítulo, «Enla
 | Espacio | Reproducir o pausar |
 | ← → | Mover el cursor un paso (depende de la escala de la línea) |
 | Mayúsculas + ← → | Saltar a la parada o carta anterior o siguiente |
-| ← → en la tarjeta del recorrido | Con el foco en uno de sus botones: la parada anterior o la siguiente, sin mover la fecha a mano |
+| ← → en la tarjeta del recorrido | Con el foco en la tarjeta que flota sobre el mapa, o en la parada, la pregunta o los botones del recorrido en la ficha: la parada anterior o la siguiente, sin mover la fecha a mano. Con el foco fuera de ellas, mueven la fecha |
 | Esc | Borrar la búsqueda y la selección |
 | `T` | Ampliar o reducir la línea de tiempo |
 | Alt + arrastrar sobre la línea | Regla entre dos fechas |

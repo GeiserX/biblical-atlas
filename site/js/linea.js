@@ -580,7 +580,8 @@ function crearMarca(it) {
   b.tabIndex = -1;
   // Lo calculado lo dice el nombre accesible con palabras: «situada por el orden del relato» si sale de él.
   const cert = it.cert === 'computed' && /narrativa/.test(it.fechaTipo || '') ? 'situada por el orden del relato' : CERT_ARIA[it.cert];
-  b.setAttribute('aria-label', `${it.titulo ? `${it.titulo}, ` : ''}${it.name}. ${it.tipo}, ${it.shape === 'moment' ? 'momento' : 'tramo'}, ${cert}${it.fecha ? `. ${it.fecha}` : ''}${it.repite ? '. Se repetía cada año' : ''}`);
+  it._aria = `${it.titulo ? `${it.titulo}, ` : ''}${it.name}. ${it.tipo}, ${it.shape === 'moment' ? 'momento' : 'tramo'}, ${cert}${it.fecha ? `. ${it.fecha}` : ''}${it.repite ? '. Se repetía cada año' : ''}`;
+  b.setAttribute('aria-label', it._aria);
   b.setAttribute('aria-pressed', 'false');
   if (it.shape === 'span') {
     it.barEl = document.createElement('span');
@@ -625,9 +626,44 @@ function colorear(it) {
   // Una forma llena que casi no se distingue del fondo de la línea lleva borde (be-64b.1).
   forma.classList.toggle('con-borde', !hueca && !!tn.forma);
 }
-function mascara(el, l, r) {
-  const v = l || r ? `linear-gradient(90deg, transparent 0, #000 ${l}px, #000 calc(100% - ${r}px), transparent 100%)` : '';
+/** Difumina los extremos de una barra o de la línea de un momento: l y r px que se desvanecen (fecha aproximada o
+    dudosa). cl y cr: a cuántos px de su extremo está el borde de la franja que la corta, o null; de ese lado se aclara
+    hasta el borde, sin desaparecer, donde va la flecha de «sigue». */
+const TENUE = 'rgba(0,0,0,.35)';
+function mascara(el, l, r, cl = null, cr = null) {
+  const E0 = FIL.EDGE;
+  const izq = cl != null ? `${TENUE} 0, ${TENUE} ${cl}px, #000 ${cl + E0}px` : l ? `transparent 0, #000 ${l}px` : '';
+  const der = cr != null ? `#000 calc(100% - ${cr + E0}px), ${TENUE} calc(100% - ${cr}px), ${TENUE} 100%` : r ? `#000 calc(100% - ${r}px), transparent 100%` : '';
+  const v = izq || der ? `linear-gradient(90deg, ${izq || '#000 0'}, ${der || '#000 100%'})` : '';
+  if (el._mascara === v) return;
+  el._mascara = v;
   el.style.maskImage = v; el.style.webkitMaskImage = v;
+}
+/** Lo que sigue fuera de la vista lo dice en el borde que lo corta: una flecha, y el texto emergente y el nombre
+    accesible de la marca. Sin ello, lo cortado por el borde parecía empezar o acabar allí. */
+function textoSigue(it, [c0, c1]) {
+  if (!c0 && !c1) return '';
+  const t = it.shape === 'moment'
+    ? (c0 && c1 ? 'Pudo ser antes o después de lo que se ve' : c0 ? 'Pudo ser antes de lo que se ve' : 'Pudo ser después de lo que se ve')
+    : (c0 && c1 ? 'Empieza antes y sigue después de lo que se ve' : c0 ? 'Empieza antes de lo que se ve' : 'Sigue después de lo que se ve');
+  return it.fecha ? `${t}: ${it.fecha}` : t;
+}
+function pintarSigue(it, h0) {
+  const cut = it._cut || [false, false];
+  if (!it.sigueEl && (cut[0] || cut[1])) {
+    it.sigueEl = ['izq', 'der'].map((lado) => { const e = document.createElement('span'); e.className = `m-sigue ${lado}`; e.hidden = true; it.el.insertBefore(e, it.labEl); return e; });
+  }
+  if (it.sigueEl) {
+    const [fl, fr] = FIL.arrows(it, anchoLinea);
+    it.sigueEl[0].hidden = !fl; it.sigueEl[1].hidden = !fr;
+    if (fl) it.sigueEl[0].style.left = `${2 - h0}px`;
+    if (fr) it.sigueEl[1].style.left = `${anchoLinea - 2 - 7 - h0}px`;
+  }
+  const texto = textoSigue(it, cut);
+  if (it._sigue === texto) return;
+  it._sigue = texto;
+  if (texto) it.el.title = texto; else it.el.removeAttribute('title');
+  it.el.setAttribute('aria-label', texto ? `${it._aria}. ${texto}` : it._aria);
 }
 /** Pone una marca en su sitio: caja, dibujo, nombre y estado (elegida, resaltada, atenuada). */
 function pintarMarca(it, top, selT, V) {
@@ -639,20 +675,22 @@ function pintarMarca(it, top, selT, V) {
   if (h1 - h0 < 4) [h0, h1] = it._hit;
   el.style.left = `${h0}px`; el.style.width = `${h1 - h0}px`;
   el.style.top = `${top}px`; el.style.height = `${G.row}px`;
+  const [cut0, cut1] = it._cut || [false, false];
   if (it.barEl) {
     const [bx, bw, fl, fr] = it._bar;
     it.barEl.style.left = `${bx - h0}px`; it.barEl.style.width = `${bw}px`;
-    if (it._fl !== fl || it._fr !== fr) { mascara(it.barEl, fl, fr); it._fl = fl; it._fr = fr; }
+    mascara(it.barEl, fl, fr, cut0 ? -bx : null, cut1 ? bx + bw - anchoLinea : null);
   }
   if (it.winEl) {
     if (it._win) {
       const [wx, ww, fl, fr] = it._win;
       it.winEl.hidden = false;
       it.winEl.style.left = `${wx - h0}px`; it.winEl.style.width = `${ww}px`;
-      if (it._fl !== fl || it._fr !== fr) { mascara(it.winEl, fl, fr); it._fl = fl; it._fr = fr; }
+      mascara(it.winEl, fl, fr, cut0 ? -wx : null, cut1 ? wx + ww - anchoLinea : null);
     } else it.winEl.hidden = true;
     it.dotEl.style.left = `${it._dot - G.dotR - h0}px`;
   }
+  pintarSigue(it, h0);
   it.labEl.style.left = `${it._lx - h0}px`;
   const varias = it.lines > 1 && !it._in;
   it.labEl.classList.toggle('varias', varias);
@@ -863,7 +901,7 @@ BE.lineaMarcas = () => {
       out.push({ id: it.id, sel: it.sel, lane: c.id, name: it.name, label: FIL.labelText(it), cert: it.cert, shape: it.shape, hollow: FIL.hollow(it), group: it.group || 0, rowWorld: it.row ?? null, repite: !!it.repite,
         t0: it.shape === 'moment' ? it.w0 : it.start, t1: it.shape === 'moment' ? it.w1 : it.end, anchor: it.anchor ?? null,
         visible: v, row: v ? it._drow : null, x: v ? it._hit[0] : null, w: v ? it._hit[1] - it._hit[0] : null, top: v ? topDe(it, c) : null,
-        labelX: v ? it._lx : null, labelW: v ? FIL.lwOf(it) : null, secular: !!it.secular });
+        labelX: v ? it._lx : null, labelW: v ? FIL.lwOf(it) : null, secular: !!it.secular, sigue: v && it._cut ? [...it._cut] : null });
     }
   }
   return out;
@@ -1626,6 +1664,7 @@ function abrirAyudaFechas(origen) {
       <li>${muestra('<defs><linearGradient id="fa-dif"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".3" stop-color="#fff"/><stop offset=".7" stop-color="#fff"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient><mask id="fa-m"><rect width="34" height="14" fill="url(#fa-dif)"/></mask></defs><rect x="1" y="2" width="32" height="10" rx="3" fill="var(--emp-persia)" mask="url(#fa-m)"/>')}<span>Con los extremos que se desvanecen y la palabra «aprox.»: fecha aproximada.</span></li>
       <li>${muestra('<rect x="1.75" y="2.75" width="30.5" height="8.5" rx="3" fill="var(--surface)" stroke="var(--emp-persia)" stroke-width="1.5"/>')}<span>Hueca: la fecha la calculamos nosotros o sale del orden del relato. La ficha explica la cuenta.</span></li>
       <li>${muestra('<defs><linearGradient id="fa-dud"><stop offset="0" stop-color="#fff"/><stop offset=".45" stop-color="#fff"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient><mask id="fa-md"><rect width="34" height="14" fill="url(#fa-dud)"/></mask></defs><rect x="1" y="2" width="32" height="10" rx="3" fill="var(--emp-persia)" mask="url(#fa-md)"/>')}<span>Desvanecida y con «¿?»: fecha dudosa, o de la que no sabemos cuándo empezó o acabó.</span></li>
+      <li>${muestra('<defs><linearGradient id="fa-sig"><stop offset="0" stop-color="#fff" stop-opacity=".35"/><stop offset=".55" stop-color="#fff"/></linearGradient><mask id="fa-ms"><rect width="34" height="14" fill="url(#fa-sig)"/></mask></defs><rect x="0" y="2" width="33" height="10" rx="3" fill="var(--emp-persia)" mask="url(#fa-ms)"/><path d="M7 3 3 7l4 4" fill="none" stroke="var(--ink-2)" stroke-width="2"/>')}<span>Con una flecha en el borde de la línea: sigue fuera de lo que se ve, no empieza ni acaba ahí. Arrastra la línea o aléjala para ver el resto.</span></li>
       <li>${muestra('<rect x="1.5" y="2.5" width="31" height="9" rx="3" fill="var(--secular-soft)" stroke="var(--secular)" stroke-width="1.2" stroke-dasharray="4 3"/>')}<span>Borde de trazos gris azulado: fecha de la historia secular cuando difiere. Va solo como nota y no mueve el cursor.</span></li>
     </ul>
     <label class="menu-fila fa-casilla"><input type="checkbox" data-fa="secular"${L.secular ? ' checked' : ''}> Enseñar las fechas seculares como nota</label>

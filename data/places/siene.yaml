@@ -1,0 +1,35 @@
+# biblical-atlas: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: siene
+name: Siene
+names:
+- name: Siene
+type: city
+lat: 24.088919
+lon: 32.899731
+precision: point
+coord_source: openbible:a8a6a5b
+coord_url: https://www.openbible.info/geo/ancient/a8a6a5b/syene
+summary: 'Ciudad del extremo sur del antiguo Egipto, junto a la primera catarata del Nilo y frente a Elefantina: la actual
+  Asuán. Era un lugar de mercado. Ezequiel la toma como el confín sur del país.'
+reason: 'Perspicacia «Siene»; Eze 29:10; 30:6. Perspicacia «Migdol», núm. 2, y «Egipto, egipcio» la ponen en el límite sur,
+  frente a Migdol en el norte. Coordenada de OpenBible: solo tomamos el punto.'
+not_claimed:
+- 'Que Siene sea el país de Sinim que nombra Isaías: Perspicacia «Sinim, País de» cuenta que algunos eruditos lo creen y no
+  lo acepta.'
+sources:
+- it-siene
+- it-migdol
+- it-egipto
+- it-sinim
+- openbible-geo
+- ezequiel-29
+- ezequiel-30
+links:
+- title: 'Perspicacia: «Siene»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Siene/
+  type: perspicacia
+- title: Ezequiel 29 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/ezequiel/29/
+  type: bible
+checked_on: '2026-10-13'
+status: verified

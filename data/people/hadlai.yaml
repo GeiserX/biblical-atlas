@@ -1,0 +1,22 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hadlai
+name: Hadlái
+names:
+- name: Hadlái
+- name: Hadlai
+  note: Grafía del título de Perspicacia.
+perspicacia: '1200001805'
+summary: Efraimita, padre de Amasá, uno de los jefes de Efraín en los días de Pécah de Israel y Acaz de Judá.
+reason: Perspicacia «Hadlai»; 2Cr 28:12.
+sources:
+- it-hadlai
+- 2-cronicas-28
+links:
+- title: 'Perspicacia: «Hadlai»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hadlai/
+  type: perspicacia
+- title: 2 Crónicas 28 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-Cr%C3%B3nicas/28/
+  type: bible
+checked_on: '2026-10-13'
+status: verified

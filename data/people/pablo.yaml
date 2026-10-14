@@ -102,6 +102,12 @@ sources:
 - 2-tesalonicenses-1
 - 2-tesalonicenses-2
 - 2-tesalonicenses-3
+- 1-timoteo-1
+- 1-timoteo-2
+- 1-timoteo-3
+- 1-timoteo-4
+- tito-1
+- tito-3
 links:
 - title: 'Perspicacia: «Pablo»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Pablo/
@@ -127,7 +133,7 @@ history:
   change: 'La reason de pablo/lived_in/corinto nombra ahora 1Te 1:1 y Perspicacia «Tesalonicenses», que ya estaban en sus
     sources: la carta sale de Corinto.'
   source: 1-tesalonicenses-1
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified
 relations:
 - type: born_in
@@ -521,7 +527,10 @@ relations:
   sources:
   - 1-tesalonicenses-2
   - it-pablo
+  - 1-timoteo-1
+  - 1-timoteo-2
+  - tito-1
   reason: '1Te 2:6: Pablo dice que, por ser apóstoles de Cristo, podían haber pedido sustento. Perspicacia «Pablo» lo presenta
     como apóstol de Jesucristo y cita este versículo al hablar de su trabajo.'
-  checked_on: '2026-10-12'
+  checked_on: '2026-10-14'
   status: verified

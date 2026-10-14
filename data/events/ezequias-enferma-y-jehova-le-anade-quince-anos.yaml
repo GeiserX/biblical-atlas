@@ -36,6 +36,7 @@ sources:
 - ip1-29
 - si-3
 - 2-reyes-20
+- 2-cronicas-32
 links:
 - title: Isaías 38 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Isa%C3%ADas/38/
@@ -51,5 +52,5 @@ history:
   change: 'Se funde con el suceso de 2 Reyes, dueño del relato: toma su título y su resumen y suma 2Cr 32:24. Pasa a la serie
     de 2 Reyes tras el tributo y antes del rabsaqué, donde Isaías lo ponía.'
   source: 2-reyes-20
-checked_on: '2026-09-30'
+checked_on: '2026-10-13'
 status: verified

@@ -1,0 +1,53 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jehoram-mata-a-sus-hermanos
+title: Jehoram de Judá mata a sus hermanos
+date:
+  from: -912
+  to: -912
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 913 a.e.c.
+narrative_order:
+  series: 2-cronicas
+  order: 21004
+places:
+- jerusalen
+- juda
+people:
+- jehoram-de-juda
+- azarias-segundo-hijo-de-jehosafat
+- jehiel-hijo-de-jehosafat
+- zacarias-hijo-de-jehosafat
+- azarias-quinto-hijo-de-jehosafat
+- miguel-hijo-de-jehosafat
+- sefatias-hijo-de-jehosafat
+present: []
+type: death
+roles:
+  azarias-segundo-hijo-de-jehosafat: died
+  jehiel-hijo-de-jehosafat: died
+  zacarias-hijo-de-jehosafat: died
+  azarias-quinto-hijo-de-jehosafat: died
+  miguel-hijo-de-jehosafat: died
+  sefatias-hijo-de-jehosafat: died
+passages:
+- 2Cr 21:2-4
+- 2Cr 21:13
+summary: Una vez dueño del reino de su padre, Jehoram afianza su poder pasando a espada a sus seis hermanos, los otros hijos
+  de Jehosafat, y a algunos príncipes.
+reason: 2Cr 21:4, 13. Perspicacia «Miguel», núm. 7, y «Zacarías», núm. 11, ponen las muertes al subir él al trono, que la
+  tabla A6-A fecha en 913 a.e.c. El texto no dice dónde.
+sources:
+- 2-cronicas-21
+- it-miguel
+- it-zacarias
+- it-jehoram
+- tnm-a6-a
+links:
+- title: 'Perspicacia: «Jehoram»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jehoram/
+  type: perspicacia
+checked_on: '2026-10-13'
+status: verified

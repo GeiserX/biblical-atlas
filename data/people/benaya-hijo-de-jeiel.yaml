@@ -1,0 +1,37 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: benaya-hijo-de-jeiel
+name: Benaya
+names:
+- name: Benaya
+perspicacia: 1200000632#5
+disambiguation: El levita asafita abuelo de Jahaziel (2Cr 20:14); no el hijo de Jehoiadá, el piratonita, el simeonita ni los
+  músicos de David.
+distinct_from:
+- benaya-el-piratonita
+- benaya-hijo-de-jehoiada
+- benaya-musico
+- benaya-simeonita
+- benaya-trompetista
+- benaya-comisionado-de-ezequias
+- benaya-padre-de-pelatias
+summary: Levita descendiente de Asaf, hijo de Jeiel y abuelo de Jahaziel, el levita que habló a Jehosafat ante la invasión.
+reason: Perspicacia «Benaya», núm. 5; 2Cr 20:14.
+sources:
+- it-benaya
+- 2-cronicas-20
+links:
+- title: 'Perspicacia: «Benaya»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Benaya/
+  type: perspicacia
+relations:
+- type: kin
+  person: jeiel-hijo-de-matanias
+  word: father
+  sources:
+  - 2-cronicas-20
+  reason: '2Cr 20:14: Benaya, hijo de Jeiel.'
+  inferred: false
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified

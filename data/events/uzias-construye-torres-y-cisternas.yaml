@@ -1,0 +1,43 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: uzias-construye-torres-y-cisternas
+title: Uzías levanta torres en Jerusalén y en el desierto y cava cisternas
+date:
+  from: -828
+  to: -776
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 829 y 777 a.e.c. (tiempo narrativo: reinando Uzías, antes de que lo hiriera la lepra)'
+narrative_order:
+  series: 2-cronicas
+  order: 26009
+  after: uzias-vence-a-los-filisteos-a-los-arabes-y-a-los-meunim
+places:
+- jerusalen
+- sefela
+- monte-carmelo
+people:
+- uzias
+passages:
+- 2Cr 26:9, 10
+summary: Uzías refuerza Jerusalén con torres en la Puerta de la Esquina, la Puerta del Valle y el Contrafuerte. Pone torres
+  en el desierto, cava cisternas para su ganado y tiene labradores y viñadores en el Carmelo.
+reason: 2Cr 26:9, 10; Perspicacia «Uzías», núm. 3, párr. 5, «Jerusalén» y «Carmelo», que lo pone en el monte. Su reinado va
+  de 829 (A6-A) a 777, cuando lo sucede Jotán (A6-B).
+sources:
+- 2-cronicas-26
+- it-uzias
+- it-jerusalen
+- it-carmelo
+- tnm-a6-a
+- tnm-a6-b
+links:
+- title: 2 Crónicas 26 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-Cr%C3%B3nicas/26/
+  type: bible
+- title: 'Perspicacia: «Uzías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Uz%C3%ADas/
+  type: perspicacia
+checked_on: '2026-10-13'
+status: verified

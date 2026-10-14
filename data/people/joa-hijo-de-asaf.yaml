@@ -59,10 +59,12 @@ relations:
     salieron fuera de las murallas.'
   checked_on: '2026-09-30'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified
 not_claimed:
 - 'Que el cargo de registrador fuera seguro suyo y no de su padre: la frase no lo aclara, y Perspicacia solo lo ve más probable.'
 distinct_from:
 - joa-hijo-de-zima
 - joa-hijo-de-obed-edom
+- joa-levita-de-ezequias
+- joa-hijo-de-joacaz

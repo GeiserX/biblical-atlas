@@ -1,0 +1,51 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: los-filisteos-toman-ciudades-de-la-sefela-y-del-negueb
+title: Los filisteos toman ciudades de la Sefelá y del Négueb
+date:
+  from: -761
+  to: -757
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 762 y c. 758 a.e.c. (tiempo narrativo: cuando Acaz pidió ayuda a Asiria)'
+narrative_order:
+  series: 2-cronicas
+  order: 28018
+places:
+- sefela
+- negueb
+- bet-semes
+- ayalon
+- guederot
+- soco
+- timna-de-dan
+- guimzo
+people:
+- acaz
+present: []
+passages:
+- 2Cr 28:18, 19
+summary: Los filisteos invaden la Sefelá y el Négueb de Judá. Toman Bet-Semes, Ayalón, Guederot, Socó, Timná y Guimzó con
+  sus pueblos, y se quedan a vivir en ellas.
+reason: 2Cr 28:18, 19; Perspicacia «Acaz», núm. 1 (los filisteos, por el oeste), y los artículos de cada ciudad. En tiempos
+  de la petición a Asiria (acaz-soborna-a-tiglat-pileser).
+sources:
+- 2-cronicas-28
+- it-acaz
+- it-bet-semes
+- it-ayalon
+- it-guederot
+- it-soco
+- it-timnah
+- it-guimzo
+- tnm-a6-b
+links:
+- title: 'Perspicacia: «Acaz»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Acaz/
+  type: perspicacia
+- title: 2 Crónicas 28 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-Cr%C3%B3nicas/28/
+  type: bible
+checked_on: '2026-10-13'
+status: verified

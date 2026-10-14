@@ -1,0 +1,36 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: manases-quita-los-dioses-extranjeros-del-templo
+title: Manasés quita los dioses extranjeros y vuelve a servir a Jehová
+date:
+  from: -715
+  to: -660
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 716 y 661 a.e.c. (tiempo narrativo: después de volver de Babilonia y antes de morir Manasés)'
+narrative_order:
+  series: 2-cronicas
+  order: 33015
+  after: manases-construye-una-muralla-exterior
+places:
+- jerusalen
+- monte-moria
+people:
+- manases-de-juda
+passages:
+- 2Cr 33:15-17
+summary: Manasés saca del templo los dioses extranjeros y el ídolo, arroja fuera de la ciudad sus altares y vuelve a ofrecer
+  sacrificios en el altar de Jehová. El pueblo, aunque sirve a Jehová, sigue sacrificando en los lugares altos.
+reason: '2Cr 33:15-17; Perspicacia «Manasés», núm. 4, párr. 3. Los altares estaban en el monte del templo y en la ciudad (33:15).
+  Fecha: tras su vuelta de Babilonia y en vida de Manasés (tabla A6-B).'
+sources:
+- 2-cronicas-33
+- it-manases
+- tnm-a6-b
+links:
+- title: 'Perspicacia: «Manasés»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Manas%C3%A9s/
+  type: perspicacia
+checked_on: '2026-10-13'
+status: verified

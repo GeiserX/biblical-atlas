@@ -34,6 +34,8 @@ sources:
 - isaias-23
 - jeremias-27
 - jeremias-47
+- ezequiel-27
+- ezequiel-28
 links:
 - title: 'Perspicacia: «Sidón, sidonios»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sid%C3%B3n-sidonios/
@@ -49,5 +51,5 @@ history:
 - date: '2026-09-29'
   change: La razón cita ahora el pasaje de Marcos que añade el resumen.
   source: marcos-7
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified

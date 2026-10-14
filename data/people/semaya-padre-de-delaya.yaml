@@ -18,6 +18,10 @@ distinct_from:
 - semaya-hijo-de-secanias
 - semaya-jefe-de-la-casa-de-elizafan
 - semaya-simeonita
+- semaya-levita-de-jehosafat
+- semaya-levita-de-ezequias
+- semaya-ayudante-de-core
+- semaya-levita-de-josias
 summary: Padre de Delayá, uno de los príncipes de Judá en el reinado de Jehoiaquim. La Biblia solo lo nombra en Jer 36:12.
 reason: Perspicacia «Semaya», núm. 12; Jer 36:12.
 sources:
@@ -30,5 +34,5 @@ links:
 - title: Jeremías 36 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/36/
   type: bible
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified

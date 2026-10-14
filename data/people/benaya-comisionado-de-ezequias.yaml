@@ -1,0 +1,47 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: benaya-comisionado-de-ezequias
+name: Benaya
+names:
+- name: Benaya
+perspicacia: 1200000632#7
+disambiguation: Comisionado de Ezequías (2Cr 31:13). Perspicacia «Benaya», núm. 7; no es el guerrero de David ni ninguno de
+  los otros Benaya.
+distinct_from:
+- benaya-el-piratonita
+- benaya-hijo-de-jehoiada
+- benaya-hijo-de-jeiel
+- benaya-musico
+- benaya-simeonita
+- benaya-trompetista
+- benaya-padre-de-pelatias
+summary: Levita que el rey Ezequías nombró entre los diez que ayudaban a Conanías y a Simeí, su hermano, a guardar lo que
+  el pueblo llevaba al templo.
+reason: Perspicacia «Benaya», núm. 7; 2Cr 31:12, 13.
+sources:
+- it-benaya
+- 2-cronicas-31
+links:
+- title: 'Perspicacia: «Benaya»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Benaya/
+  type: perspicacia
+relations:
+- inferred: false
+  type: accompanies
+  person: conanias-de-tiempos-de-ezequias
+  word: fellow_worker
+  sources:
+  - 2-cronicas-31
+  reason: '2Cr 31:13: uno de los diez levitas que ayudaban a Conanías con las contribuciones, por orden del rey.'
+  checked_on: '2026-10-13'
+  status: verified
+- inferred: false
+  type: accompanies
+  person: simei-hermano-de-conanias
+  word: fellow_worker
+  sources:
+  - 2-cronicas-31
+  reason: '2Cr 31:12, 13: ayudante de Simeí, el segundo encargado de las contribuciones, por orden del rey.'
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified

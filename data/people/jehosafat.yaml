@@ -23,6 +23,10 @@ sources:
 - 1-reyes-15
 - 2-reyes-3
 - 1-cronicas-3
+- 2-cronicas-18
+- 2-cronicas-19
+- 2-cronicas-20
+- 2-cronicas-21
 links:
 - title: 'Perspicacia: «Jehosafat»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jehosafat/
@@ -41,8 +45,10 @@ relations:
   - mateo-1
   - 1-reyes-15
   - 1-cronicas-3
+  - 2-cronicas-17
+  - 2-cronicas-20
   reason: '1Re 22:41: Jehosafat hijo de Asá; 22:42 nombra a su madre, Azubá.'
-  checked_on: '2026-10-12'
+  checked_on: '2026-10-13'
   status: verified
 - type: succeeds
   person: asa
@@ -50,8 +56,9 @@ relations:
   sources:
   - it-jehosafat
   - 1-reyes-15
+  - 2-cronicas-17
   reason: Reinó al morir su padre (1Re 15:24).
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-13'
   office: king
   status: verified
 - type: tie
@@ -61,8 +68,9 @@ relations:
   sources:
   - 1-reyes-22
   - it-jehosafat
+  - 2-cronicas-18
   reason: '1Re 22:2-4, 29: se une a Acab contra Ramot-Galaad; 22:44 dice que vivió en paz con el rey de Israel.'
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-13'
   status: verified
 - type: kin
   person: azuba-hija-de-silhi
@@ -71,8 +79,9 @@ relations:
   sources:
   - 1-reyes-22
   - it-azuba
+  - 2-cronicas-20
   reason: '1Re 22:42 nombra a su madre: Azubá, hija de Silhí.'
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-13'
   status: verified
 - type: kin
   person: david
@@ -80,25 +89,29 @@ relations:
   inferred: false
   sources:
   - 1-reyes-22
+  - 2-cronicas-17
   reason: '1Re 22:50: lo entierran en la Ciudad de David, su antepasado.'
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-13'
   status: verified
 - type: lived_in
   place: jerusalen
   inferred: false
   sources:
   - 1-reyes-22
+  - 2-cronicas-19
+  - 2-cronicas-20
   reason: '1Re 22:42: reinó 25 años en Jerusalén.'
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-13'
   status: verified
 - type: died_in
   place: jerusalen
   inferred: true
   sources:
   - 1-reyes-22
+  - 2-cronicas-21
   reason: 1Re 22:50 da su sepultura en la Ciudad de David, no el sitio de su muerte; tomamos el del entierro, la ciudad donde
     reinaba.
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-13'
   status: verified
 - type: tie
   person: mesa-rey-de-moab
@@ -109,6 +122,26 @@ relations:
   reason: '2Re 3:7, 24: acepta ir a pelear contra el rey de Moab, que se había rebelado.'
   inferred: false
   checked_on: '2026-09-30'
+  status: verified
+- type: tie
+  person: ocozias-de-israel
+  word: ally
+  sources:
+  - 2-cronicas-20
+  - it-ocozias
+  reason: '2Cr 20:35, 36: se alía con Ocozías de Israel y lo hace socio para construir barcos; Perspicacia «Ocozías», núm.
+    1, la llama alianza marítima.'
+  inferred: false
+  checked_on: '2026-10-13'
+  status: verified
+- type: tie
+  person: acab
+  word: host
+  inferred: false
+  sources:
+  - 2-cronicas-18
+  reason: '2Cr 18:2: Jehosafat baja a Samaria a ver a Acab, que sacrifica muchas ovejas y reses para él y su gente.'
+  checked_on: '2026-10-13'
   status: verified
 history:
 - date: '2026-09-28'
@@ -123,7 +156,7 @@ history:
 perspicacia: 1200002383#3
 disambiguation: Rey de Judá, hijo de Asá; no es el padre de Jehú, ni el registrador hijo de Ahilud, ni el comisario hijo de
   Parúah.
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified
 distinct_from:
 - jehosafat-hijo-de-ahilud

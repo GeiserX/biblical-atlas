@@ -21,6 +21,8 @@ sources:
 - 1-reyes-1
 - 2-reyes-20
 - it-ezequias
+- 2-cronicas-32
+- 2-cronicas-33
 links:
 - title: 'Perspicacia: «Guihón»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Guih%C3%B3n/
@@ -28,5 +30,5 @@ links:
 - title: 1 Reyes 1 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/1-reyes/1/
   type: bible
-checked_on: '2026-09-30'
+checked_on: '2026-10-13'
 status: verified

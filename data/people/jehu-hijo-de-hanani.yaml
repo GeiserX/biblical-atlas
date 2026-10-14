@@ -11,11 +11,13 @@ distinct_from:
 - jehu-hijo-de-josibias
 - jehu-el-anatotita
 summary: Profeta, hijo de Hananí. Anunció a Baasá que su casa acabaría como la de Jeroboán. Un profeta de su nombre, quizá
-  él mismo, reprendió después a Jehosafat por ayudar a Acab.
+  él mismo, reprendió después a Jehosafat por ayudar a Acab y dejó escrita su historia.
 reason: Perspicacia «Jehú», núm. 2; 1Re 16:1-7, 12.
 sources:
 - it-jehu
 - 1-reyes-16
+- 2-cronicas-19
+- 2-cronicas-20
 links:
 - title: 'Perspicacia: «Jehú»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jeh%C3%BA/
@@ -31,9 +33,11 @@ relations:
   sources:
   - 1-reyes-16
   - it-hanani
+  - 2-cronicas-19
+  - 2-cronicas-20
   reason: '1Re 16:1, 7: Jehú hijo de Hananí. Perspicacia «Hananí», núm. 2, ve en él, al parecer, al vidente de tiempos de
     Asá.'
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-13'
   status: verified
 - type: holds_office
   office: prophet
@@ -41,8 +45,14 @@ relations:
   sources:
   - 1-reyes-16
   - it-jehu
+  - 2-cronicas-19
   reason: 1Re 16:7 lo llama el profeta Jehú.
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-13'
   status: verified
-checked_on: '2026-10-12'
+history:
+- date: '2026-10-13'
+  change: El resumen añade que la historia de Jehosafat quedó escrita entre las palabras de Jehú, que pasaron al Libro de
+    los Reyes de Israel (2Cr 20:34; Perspicacia «Jehú», núm. 2).
+  source: 2-cronicas-20
+checked_on: '2026-10-13'
 status: verified

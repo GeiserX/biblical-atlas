@@ -182,7 +182,7 @@ hoja.addEventListener('click', (e) => {
 // ---------------------------------------------------------------------------
 let filas = [], activa = 0, todas = 0;
 const maxFilas = () => (estrecha() ? 4 : 6);
-/** La búsqueda contesta con el núcleo; el detalle (js/data-chunks.js) añade la línea que distingue a dos personas del
+/** La búsqueda contesta con el núcleo; el detalle (js/data-chunks.js) añade la línea que distingue a dos fichas del
     mismo nombre. Si aún no ha llegado, se pide y la lista se rehace al llegar. */
 function reactualizar() { if (document.activeElement === input && input.value.trim()) actualizar(); }
 function filasDe(q) {
@@ -194,7 +194,7 @@ function filasDe(q) {
   }
   const rs = ordenPortada(BE.buscar(q), normal(q).trim().replace(/\s+/g, ' '), BE.pesador());
   todas = rs.length;
-  return rs.slice(0, maxFilas()).map((r) => ({ r, ...BE.filaResultado(r) }));
+  return rs.slice(0, maxFilas()).map((r, _, shown) => ({ r, ...BE.filaResultado(r, shown) }));
 }
 function pintarLista() {
   const q = input.value;
@@ -204,9 +204,11 @@ function pintarLista() {
     html = filas.map((f, i) => {
       // La fecha va en su píldora y no se repite en la línea (BE.filaResultado ya la quita de ahí).
       const fecha = f.fecha || '';
-      const meta = [f.meta && normal(f.meta).startsWith(normal(f.tipo)) ? '' : f.tipo, f.etiqueta, f.meta].filter(Boolean).join(' · ');
+      // Si otra fila se llama igual, lo que la distingue va justo detrás del tipo, antes de que la corte el teléfono.
+      const meta = [f.meta && normal(f.meta).startsWith(normal(f.tipo)) ? '' : esc(f.tipo), f.distinguisher ? `<span class="be-distinguisher">${esc(f.distinguisher)}</span>` : '',
+        esc(f.etiqueta), esc(f.meta)].filter(Boolean).join(' · ');
       return `<li role="option" id="portada-op-${i}" class="portada-op${i === activa ? ' portada-op--activa' : ''}" aria-selected="${i === activa}" data-i="${i}">
-        <svg class="forma" aria-hidden="true"><use href="#f-${f.forma}"/></svg><span class="portada-op__texto"><span class="portada-op__tit">${BE.marcar(f.titulo, q)}</span><span class="portada-op__meta">${esc(meta)}</span></span>${fecha ? `<span class="portada-fecha">${esc(fecha)}</span>` : ''}</li>`;
+        <svg class="forma" aria-hidden="true"><use href="#f-${f.forma}"/></svg><span class="portada-op__texto"><span class="portada-op__tit">${BE.marcar(f.titulo, q)}</span><span class="portada-op__meta">${meta}</span></span>${fecha ? `<span class="portada-fecha">${esc(fecha)}</span>` : ''}</li>`;
     }).join('');
     if (BE.D && todas > filas.length && !estrecha()) {
       html += `<li role="option" id="portada-op-todo" class="portada-op portada-op--todo${activa === filas.length ? ' portada-op--activa' : ''}" aria-selected="${activa === filas.length}" data-todo="1"><span class="portada-op__texto"><span class="portada-op__tit">Ver los ${todas} resultados en el mapa</span></span></li>`;

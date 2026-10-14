@@ -1,0 +1,45 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ismael-hijo-de-jehohanan
+name: Ismael
+names:
+- name: Ismael
+perspicacia: 1200002215#4
+disambiguation: Ismael hijo de Jehohanán, jefe de cien en la coronación de Jehoás; no Ismael hijo de Abrahán ni Ismael hijo
+  de Netanías, el que mató a Guedalías.
+distinct_from:
+- ismael-hijo-de-abrahan
+- ismael-hijo-de-netanias
+- ismael-hijo-de-azel
+- ismael-padre-de-zebadias
+date:
+  from: -897
+  to: -897
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 898 a.e.c.
+summary: Hijo de Jehohanán. Fue uno de los cinco jefes de cien que se aliaron con Jehoiadá en 898 a.e.c. para quitar el trono
+  a Atalía y coronar a Jehoás.
+reason: Perspicacia «Ismael», núm. 4; 2Cr 23:1. Año de la coronación de Jehoás, 898 a.e.c., según el estudio 3.
+sources:
+- it-ismael
+- 2-cronicas-23
+- si-3
+links:
+- title: 'Perspicacia: «Ismael»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ismael/
+  type: perspicacia
+relations:
+- type: kin
+  person: jehohanan-padre-de-ismael
+  word: father
+  inferred: false
+  sources:
+  - 2-cronicas-23
+  - it-jehohanan
+  reason: 2Cr 23:1 lo llama Ismael hijo de Jehohanán.
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified

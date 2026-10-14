@@ -29,6 +29,8 @@ sources:
 - 2-reyes-8
 - 2-reyes-9
 - 1-cronicas-6
+- 2-cronicas-18
+- 2-cronicas-22
 links:
 - title: 'Perspicacia: «Ramot-galaad»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ramot-galaad/
@@ -36,5 +38,5 @@ links:
 - title: Deuteronomio 4 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/deuteronomio/4/
   type: bible
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified

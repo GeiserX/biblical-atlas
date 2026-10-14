@@ -57,6 +57,7 @@ sources:
 - 1-reyes-15
 - 2-reyes-25
 - jeremias-41
+- 2-cronicas-16
 links:
 - title: 'Perspicacia: «Mizpá, Mizpé»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Mizp%C3%A1-Mizp%C3%A9/
@@ -69,5 +70,5 @@ history:
   change: El resumen añade la asamblea contra Guibeá (Jue 20:1-11; 21:1), el primer suceso de la ciudad según Perspicacia
     «Mizpá, Mizpé», núm. 3, y acorta lo de Guedalías.
   source: jueces-20
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified

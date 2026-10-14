@@ -22,6 +22,7 @@ sources:
 - 1-reyes-22
 - 2-reyes-1
 - tnm-a6-a
+- 2-cronicas-20
 links:
 - title: 'Perspicacia: «Ocozías»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ocoz%C3%ADas/
@@ -98,5 +99,5 @@ history:
   change: Perspicacia «Ocozías» y el estudio 3 dan su comienzo hacia 919 a.e.c.; A6-A, más reciente, lo pone hacia 920.
   source: tnm-a6-a
 perspicacia: 1200000145#1
-checked_on: '2026-09-30'
+checked_on: '2026-10-13'
 status: verified

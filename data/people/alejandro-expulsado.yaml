@@ -1,0 +1,41 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: alejandro-expulsado
+name: Alejandro
+names:
+- name: Alejandro
+perspicacia: 1200000192#5
+date:
+  from: 56
+  to: 64
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre c. 56 y 64 e.c. (tiempo narrativo: su expulsión, tras el aviso de Mileto y antes de 1 Timoteo)'
+disambiguation: El cristiano expulsado con Himeneo (1Ti 1:19, 20). Perspicacia lo separa del hijo de Simón de Cirene, del
+  pariente de Anás y del judío de Éfeso, y solo ve posible que sea el calderero de 2 Timoteo.
+distinct_from:
+- alejandro-hijo-de-simon
+- alejandro-pariente-de-anas
+- alejandro-de-efeso
+not_claimed:
+- 'Que sea el calderero que hizo daño a Pablo: Perspicacia y la nota de 1Ti 1:20 solo lo dan como posible.'
+summary: Cristiano cuya fe naufragó. Pablo lo entregó a Satanás con Himeneo, o sea, lo expulsó de la congregación, para que
+  la disciplina le enseñara a no blasfemar.
+reason: 'Perspicacia «Alejandro», núm. 5, da su expulsión por hecha; la nota de 1Ti 1:20 empieza con un «parece» y «Himeneo»
+  la ve probable. Fechas: la expulsión, entre el aviso de c. 56 y la carta.'
+sources:
+- it-alejandro
+- 1-timoteo-1
+- tnm-tabla
+- it-himeneo
+- it-timoteo-cartas
+links:
+- title: 'Perspicacia: «Alejandro»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Alejandro/
+  type: perspicacia
+- title: 1 Timoteo 1 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/1-timoteo/1/
+  type: bible
+checked_on: '2026-10-13'
+status: verified

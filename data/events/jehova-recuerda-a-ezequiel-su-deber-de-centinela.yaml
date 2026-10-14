@@ -1,0 +1,42 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jehova-recuerda-a-ezequiel-su-deber-de-centinela
+title: Jehová recuerda a Ezequiel su deber de centinela de Israel
+date:
+  from: -608
+  to: -606
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 609 y 607 a.e.c. (tiempo narrativo: durante el sitio de Jerusalén, antes de que llegue el escapado)'
+narrative_order:
+  series: ezequiel
+  order: 233001
+places:
+- tel-abib
+- caldea
+people:
+- ezequiel
+present: []
+passages:
+- Eze 33:1-20
+summary: 'Jehová vuelve a explicar a Ezequiel su papel de centinela: si avisa al malvado, queda libre de culpa. Cada uno será
+  juzgado por su propio camino, y quien deja la maldad y obra con justicia seguirá vivo.'
+reason: Va antes de la noticia de Eze 33:21, y «Toda Escritura», libro 26, párr. 24, lo cuenta antes de 607; y el último sitio
+  de Jerusalén empezó en 609 (estudio 3). Sin sitio nombrado, sin presentes.
+sources:
+- ezequiel-33
+- si-ezequiel
+- si-3
+- it-ezequiel
+- it-atalaya
+- rr-nombrado-centinela
+links:
+- title: 'Perspicacia: «Atalaya»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Atalaya/
+  type: perspicacia
+- title: Ezequiel 33 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/ezequiel/33/
+  type: bible
+checked_on: '2026-10-13'
+status: verified

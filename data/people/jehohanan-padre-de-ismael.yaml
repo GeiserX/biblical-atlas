@@ -1,0 +1,23 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jehohanan-padre-de-ismael
+name: Jehohanán
+names:
+- name: Jehohanán
+perspicacia: 1200002374#3
+disambiguation: Jehohanán padre de Ismael, el jefe de cien de tiempos de Jehoiadá; Perspicacia ve posible que sea el jefe
+  del ejército de Jehosafat que lleva su nombre.
+summary: Padre de Ismael, uno de los jefes de cien que se unieron a Jehoiadá para coronar a Jehoás. Perspicacia ve posible
+  que sea el jefe militar de Jehosafat del mismo nombre.
+reason: Perspicacia «Jehohanán», núm. 3; 2Cr 23:1.
+sources:
+- it-jehohanan
+- 2-cronicas-23
+links:
+- title: 'Perspicacia: «Jehohanán»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jehohan%C3%A1n/
+  type: perspicacia
+checked_on: '2026-10-13'
+status: verified
+distinct_from:
+- jehohanan-padre-de-azarias
+- jehohanan-hijo-de-meselemias

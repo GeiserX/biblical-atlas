@@ -16,6 +16,7 @@ places:
 - jerusalen
 - tiro
 - libano
+- jope
 people:
 - hiram-rey-de-tiro
 - salomon
@@ -26,15 +27,21 @@ passages:
 - 2Cr 2:3-16
 summary: Al saber que Salomón ya reina, Hiram le envía siervos. Salomón le pide cedro del Líbano para la casa de Jehová; Hiram
   lo manda en balsas a cambio de trigo y aceite, y los dos reyes pactan la paz.
-reason: 1Re 5:1-12; Perspicacia «Hiram», núm. 1. Tras la subida de Salomón al trono (1037) y antes del comienzo de la obra,
-  en ziv de 1034 (estudio 3, párr. 4 y 8). Salomón gobernaba desde Jerusalén.
+reason: 1Re 5:1-12; 2Cr 2:16; Perspicacia «Hiram», núm. 1, y «Jope». Tras subir Salomón al trono (1037) y antes de la obra,
+  en ziv de 1034 (estudio 3, párr. 4 y 8). Gobernaba desde Jerusalén; las balsas llegaban a Jope.
 sources:
 - 1-reyes-5
 - it-hiram
 - si-3
+- 2-cronicas-2
+- it-jope
 links:
 - title: 1 Reyes 5 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/1-reyes/5/
   type: bible
-checked_on: '2026-09-30'
+history:
+- date: '2026-10-13'
+  change: 'Se añade Jope a los lugares: 2Cr 2:16 dice que la madera llegaba por mar hasta allí.'
+  source: 2-cronicas-2
+checked_on: '2026-10-13'
 status: verified

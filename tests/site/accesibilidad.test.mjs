@@ -32,17 +32,25 @@ const THEMES = ['claro', 'oscuro', 'reunión'];
 /** What axe may report and the guard lets pass, each with its reason. `rule` is the axe rule id; `when` reads what
     the page says of the element (`facts`, below); `views` (optional) limits it to some views. Nothing else passes. */
 const ALLOW = [
-  { rule: 'target-size', when: (f) => f.marker,
-    reason: 'A point, name or number on the map sits where the place is: its position is the information (the «essential» '
-      + 'exception of WCAG 2.5.8). Every place, person and stop also opens from the search, its card and the timeline.' },
+  { rule: 'target-size', when: (f) => f.marker && f.big,
+    reason: 'A map marker whose own button is 24 x 24 px or more, partly or wholly covered by neighbours (close places) or '
+      + 'by what floats over the map (the sheet, a card); axe throws on the wholly covered ones (see axe(), below). Its '
+      + 'place fixes where it goes: WCAG 2.5.8 counts map pins as essential. '
+      + 'A click where zones overlap goes to the nearest point (marcaCercana). A marker under 24 px still fails, and so '
+      + 'does a control that a marker covers: axe reports it on the control.' },
 ];
 
 /** What an allowlist entry can ask of a reported element, measured in the page: `marker`, it is a MapLibre marker
-    (a point, a name or a number drawn on the map). */
-const facts = (page, targets) => page.evaluate((targets) => targets.map((t) => {
-  const el = document.querySelector(t);
-  return el ? { marker: !!el.closest('.maplibregl-marker') } : {};
-}), targets);
+    (a point, a name or a number drawn on the map); `big`, its own box is 24 x 24 px or more. `covers` (for the report)
+    is what axe names as covering it or near it. A target that is not a selector (a measured mark, «.cal-nada #3») has
+    no facts. */
+const facts = (page, nodes) => page.evaluate((nodes) => nodes.map(({ target, related }) => {
+  const q = (t) => { try { return document.querySelector(t); } catch { return null; } };
+  const el = q(target);
+  if (!el) return {};
+  const r = el.getBoundingClientRect();
+  return { marker: !!el.closest('.maplibregl-marker'), big: r.width >= 23.95 && r.height >= 23.95, covers: related };
+}), nodes);
 
 // ---------------------------------------------------------------------------
 // Browser, axe and server
@@ -122,6 +130,8 @@ const VIEWS = [
   }) },
   // A passage nothing cites opens its chapter card with a line that says so; one that does not read gets a notice.
   { name: 'pasaje sin coincidencias', open: app('p=Snt1:5') },
+  // A place whose site is not known: its zone label and its candidates.
+  { name: 'lugar incierto', open: app('sel=lugar:tarsis&t=-1000.5000') },
   { name: 'aviso de un enlace a un pasaje', open: app('p=Hch16:1,5') },
   { name: 'calendario', open: plain('calendario.html') },
   { name: 'acerca de', open: plain('acerca.html') },
@@ -131,6 +141,7 @@ const VIEWS = [
 // The scan
 // ---------------------------------------------------------------------------
 const used = new Set();
+const marksSeen = new Set();   // the MARKS selectors measured at least once: a renamed class would measure nothing
 let scans = 0;
 const allowedBy = (v, view, f) => ALLOW.find((a) => a.rule === v.id && (!a.views || a.views.includes(view)) && a.when(f));
 
@@ -139,8 +150,10 @@ const allowedBy = (v, view, f) => ALLOW.find((a) => a.rule === v.id && (!a.views
     its ancestors, composited, and where they stay translucent down to the map, over white and over black, keeping the
     worse. Not measured: names on the map itself (MapLibre markers carry a halo, not a background), SVG text, whose
     background is another shape, text painted over a ::before or ::after (the shapes of the graph's nodes) or a
-    gradient, and marks that are not letters or digits (a «·» in an empty cell). Returns every measure. */
-const measure = (page, targets) => page.evaluate((targets) => {
+    gradient, and marks that are not letters or digits (a «·» in an empty cell): those that carry meaning are in MARKS
+    and measured apart, every element of each selector, against 3:1 (WCAG 1.4.11). Returns every measure. */
+const MARKS = ['.cal-nada'];
+const measure = (page, targets, marks = []) => page.evaluate(([targets, marks]) => {
   const parse = (c) => {
     let m = /^rgba?\(([^)]+)\)$/.exec(c);
     if (m) { const p = m[1].split(/[\s,/]+/).filter(Boolean).map(parseFloat); return [p[0], p[1], p[2], p[3] ?? 1]; }
@@ -153,10 +166,11 @@ const measure = (page, targets) => page.evaluate((targets) => {
   const ratio = (a, b) => { const x = lum(a), y = lum(b); return (Math.max(x, y) + 0.05) / (Math.min(x, y) + 0.05); };
   const canvas = document.querySelector('#mapa-gl canvas');
   const out = [];
-  for (const t of targets) {
-    const el = document.querySelector(t);
+  const items = targets.map((t) => ({ t, el: document.querySelector(t), mark: '' }))
+    .concat(marks.flatMap((m) => [...document.querySelectorAll(m)].map((el, k) => ({ t: `${m} #${k + 1}`, el, mark: m }))));
+  for (const { t, el, mark } of items) {
     if (!el || el instanceof SVGElement || el.closest('.maplibregl-marker') || !el.checkVisibility({ opacityProperty: true, visibilityProperty: true })) continue;
-    if (!/[\p{L}\p{N}]/u.test(el.textContent)) continue;
+    if (!mark && !/[\p{L}\p{N}]/u.test(el.textContent)) continue;
     const cs = getComputedStyle(el);
     let fg = parse(cs.color);
     if (!fg) continue;
@@ -184,11 +198,39 @@ const measure = (page, targets) => page.evaluate((targets) => {
       if (r < worst) { worst = r; at = bg; }
     }
     const size = parseFloat(cs.fontSize), bold = parseInt(cs.fontWeight, 10) >= 700;
-    const need = size >= 24 || (bold && size >= 18.66) ? 3 : 4.5;
-    out.push({ target: t, ratio: Math.round(worst * 100) / 100, need, ok: worst >= need - 0.005, fg: fg.map(Math.round).join(','), bg: at.map(Math.round).join(','), translucent: !base });
+    const need = mark || size >= 24 || (bold && size >= 18.66) ? 3 : 4.5;
+    out.push({ target: t, mark, ratio: Math.round(worst * 100) / 100, need, ok: worst >= need - 0.005, fg: fg.map(Math.round).join(','), bg: at.map(Math.round).join(','), translucent: !base });
   }
   return out;
-}, targets);
+}, [targets, marks]);
+
+/** axe over the page. A rule that throws comes back as «incomplete» with an error and checks nothing on the page: axe 4.13
+    throws in target-size on a marker that other markers cover whole. The element it threw on is reported as a violation
+    of that rule, so the allowlist judges it, and the rule runs again without it until it runs through. A rule that throws
+    with no element to set aside, or more than 100 times, is a violation that nothing allows. */
+async function axe(page) {
+  const { violations, incomplete } = await new AxeBuilder({ page }).withTags(TAGS).analyze();
+  const crashed = (list) => list.filter((v) => v.error);
+  const keep = incomplete.filter((v) => !v.error);
+  for (const v of crashed(incomplete)) {
+    const skip = [];
+    let r = v;
+    while (r?.error) {
+      const n = r.nodes[0];
+      const why = `axe threw\n${r.error.message}`.slice(0, 200);
+      if (!n || skip.length >= 100) { violations.push({ id: `${v.id} (axe threw)`, impact: 'serious', nodes: [{ target: [n ? n.target.flat().join(' ') : 'html'], failureSummary: why }] }); break; }
+      skip.push(n.target.flat().join(' '));
+      violations.push({ id: v.id, impact: v.impact || 'serious', nodes: [{ target: n.target, failureSummary: why, any: n.any, all: n.all, none: n.none }] });
+      let b = new AxeBuilder({ page }).withRules([v.id]);
+      for (const t of skip) b = b.exclude(t);
+      const again = await b.analyze();
+      violations.push(...again.violations);
+      keep.push(...again.incomplete.filter((x) => !x.error));
+      r = crashed(again.incomplete)[0];
+    }
+  }
+  return { violations, incomplete: keep };
+}
 
 async function scan(view, screen, theme) {
   const context = await browser.newContext({ deviceScaleFactor: 1, ...SCREENS[screen], colorScheme: theme === 'oscuro' ? 'dark' : 'light', reducedMotion: 'reduce' });
@@ -201,18 +243,20 @@ async function scan(view, screen, theme) {
   await page.route((u) => !u.href.startsWith(base) && !u.hostname.endsWith('unpkg.com'), (r) => r.abort());
   try {
     await view.open(page);
-    const { violations, incomplete } = await new AxeBuilder({ page }).withTags(TAGS).analyze();
+    const { violations, incomplete } = await axe(page);
     // What axe could not decide (a contrast over the map or a gradient) is not a failure; the report keeps it for review.
     if (REPORT) for (const v of incomplete) for (const n of v.nodes) fs.appendFileSync(REPORT, `${JSON.stringify({ rule: v.id, view: view.name, screen, theme, target: n.target.flat().join(' '), incomplete: true, why: (n.any[0]?.message || '').slice(0, 160) })}\n`);
     const undecided = incomplete.filter((v) => v.id === 'color-contrast').flatMap((v) => v.nodes.map((n) => n.target.flat().join(' ')));
-    for (const m of await measure(page, undecided)) {
+    for (const m of await measure(page, undecided, MARKS)) {
+      if (m.mark) marksSeen.add(m.mark);
       if (REPORT) fs.appendFileSync(REPORT, `${JSON.stringify({ rule: 'contrast-measured', view: view.name, screen, theme, ...m })}\n`);
       if (m.ok) continue;
       violations.push({ id: 'color-contrast', impact: 'serious', nodes: [{ target: [m.target],
         failureSummary: `measured\n${m.ratio}:1 for ${m.need}:1, text rgba(${m.fg}) on rgb(${m.bg})${m.translucent ? ', the worse over white or black under a translucent card' : ''}` }] });
     }
     const out = [];
-    const known = await facts(page, violations.flatMap((v) => v.nodes.map((n) => n.target.flat().join(' '))));
+    const known = await facts(page, violations.flatMap((v) => v.nodes.map((n) => ({ target: n.target.flat().join(' '),
+      related: (n.any || []).concat(n.all || [], n.none || []).flatMap((c) => c.relatedNodes || []).map((x) => x.target.flat().join(' ')) }))));
     let k = 0;
     for (const v of violations) {
       for (const n of v.nodes) {
@@ -259,6 +303,7 @@ test('every allowlist entry is still needed and says why', () => {
   if (scans < TOTAL) return;
   const stale = ALLOW.filter((a) => !used.has(a)).map((a) => `${a.rule}: ${a.reason}`);
   assert.deepEqual(stale, [], 'allowlist entries that no longer match anything: remove them');
+  assert.deepEqual(MARKS.filter((m) => !marksSeen.has(m)), [], 'marks in MARKS that no view drew: their contrast went unmeasured');
 });
 
 // ---------------------------------------------------------------------------
@@ -425,3 +470,325 @@ for (const [screen, want] of [['1440', 'panel-cuerpo'], ['430', 'estudio-boton']
     await page.context().close();
   });
 }
+
+for (const screen of ['1440', '430']) {
+  test(`${screen}: on the tour card in the side panel ← and → change the stop; with the focus elsewhere they move the date`, async () => {
+    const page = await keyboardPage(screen, TOUR);
+    await page.locator('#panel-cuerpo .recorrido-sig').focus();
+    const a = await where(page);
+    await page.keyboard.press('ArrowRight');
+    await settle(page);
+    const b = await where(page);
+    assert.equal(b.step, a.step + 1, 'ArrowRight in the panel card did not go to the next stop');
+    assert.ok(await page.evaluate(() => document.querySelector('#panel-cuerpo').contains(document.activeElement)), 'the focus left the panel card');
+    await page.keyboard.press('ArrowLeft');
+    await settle(page);
+    const c = await where(page);
+    assert.equal(c.step, a.step, 'ArrowLeft in the panel card did not go back');
+    assert.equal(c.t, a.t, 'the date is not the stop\'s own');
+    // On «Salir y explorar», above the card in the panel, the arrows move the date: it is not one of the tour's controls.
+    await page.locator('#panel-cuerpo [data-recorrido-salir]').focus();
+    await page.keyboard.press('ArrowRight');
+    await settle(page);
+    const e = await where(page);
+    assert.equal(e.step, c.step, 'with the focus on «Salir y explorar», ArrowRight changed the stop');
+    assert.ok(e.t > c.t, 'with the focus on «Salir y explorar», ArrowRight did not move the date');
+    await page.keyboard.press('ArrowLeft');
+    await settle(page);
+    // Outside the card the arrows keep moving the date, tour or not.
+    await page.evaluate(() => document.activeElement.blur());
+    await page.keyboard.press('ArrowRight');
+    await settle(page);
+    const d = await where(page);
+    assert.equal(d.step, c.step, 'with the focus outside the card, ArrowRight changed the stop');
+    assert.ok(d.t > c.t, 'with the focus outside the card, ArrowRight did not move the date');
+    assert.deepEqual(page.errors, []);
+    await page.context().close();
+  });
+}
+
+// ---------------------------------------------------------------------------
+// The map points: a zone of 24 x 24 px around each (44 with a finger), the nearest point when two zones overlap
+// ---------------------------------------------------------------------------
+/** Where to click in the zone of a point and nowhere else: off its dot and its name, inside no other point's zone. */
+const zoneOnly = (page) => page.evaluate(() => {
+  const mc = window.__be.map.getContainer();
+  const drawn = '.marca-lugar .punto, .marca-lugar .etiqueta, .marca-lugar .etiqueta *';
+  for (const el of [...mc.querySelectorAll('.marca-lugar')].filter((m) => m.checkVisibility())) {
+    const p = el.querySelector('.punto').getBoundingClientRect(), b = el.getBoundingClientRect();
+    const x0 = (p.left + p.right) / 2, y0 = (p.top + p.bottom) / 2;
+    for (const [dx, dy] of [[-10, -10], [10, -10], [-10, 10], [10, 10]]) {
+      const x = x0 + dx, y = y0 + dy;
+      const pila = document.elementsFromPoint(x, y);
+      if (pila[0]?.closest('.marca-lugar') !== el || pila.some((n) => n.matches(drawn))) continue;
+      if (new Set(pila.map((n) => n.closest('.marca-lugar')).filter(Boolean)).size !== 1) continue;
+      return { id: el.dataset.sel.slice(6), x, y, button: [b.width, b.height], dot: [p.width, p.height] };
+    }
+  }
+  return null;
+});
+/** Two points whose zones overlap, and a spot in the overlap that is nearer the point drawn underneath. */
+const overlapSpot = (page) => page.evaluate(() => {
+  const mc = window.__be.map.getContainer();
+  const drawn = '.marca-lugar .punto, .marca-lugar .etiqueta, .marca-lugar .etiqueta *';
+  const ms = [...mc.querySelectorAll('.marca-lugar')].filter((m) => m.checkVisibility()).map((el) => {
+    const r = el.querySelector('.punto').getBoundingClientRect();
+    return { el, id: el.dataset.sel.slice(6), x: (r.left + r.right) / 2, y: (r.top + r.bottom) / 2 };
+  });
+  for (const a of ms) {
+    for (const b of ms) {
+      const d = Math.hypot(a.x - b.x, a.y - b.y);
+      if (a === b || d > 40) continue;
+      for (const k of [6, 7, 8, 9, 10]) {
+        if (d - k <= k + 1) continue;   // the spot must be clearly nearer b
+        const x = b.x + ((a.x - b.x) * k) / d, y = b.y + ((a.y - b.y) * k) / d;
+        const pila = document.elementsFromPoint(x, y);
+        if (pila[0]?.closest('.marca-lugar') !== a.el || pila.some((n) => n.matches(drawn))) continue;
+        if (!pila.some((n) => n === b.el)) continue;
+        return { top: a.id, near: b.id, x, y, d: Math.round(d * 10) / 10, k };
+      }
+    }
+  }
+  return null;
+});
+const press = (page, screen, x, y) => (screen === '430' ? page.touchscreen.tap(x, y) : page.mouse.click(x, y));
+const selected = (page) => page.evaluate(() => (window.BE.E.sel ? `${window.BE.E.sel.tipo}:${window.BE.E.sel.id}` : null));
+
+for (const screen of ['1440', '430']) {
+  test(`${screen}: a point takes a click in its zone, off the dot, and keeps its drawn size`, async () => {
+    const page = await keyboardPage(screen, 't=50.3000');
+    const z = await zoneOnly(page);
+    assert.ok(z, 'no point has a zone of its own around its dot');
+    assert.ok(z.button[0] >= 24 && z.button[1] >= 24, `the button of ${z.id} is ${z.button.join(' x ')} px, under 24`);
+    assert.ok(z.dot[0] <= 14 && z.dot[1] <= 14, `the dot of ${z.id} is drawn at ${z.dot.join(' x ')} px`);
+    await press(page, screen, z.x, z.y);
+    await page.waitForFunction((id) => window.BE.E.sel?.id === id, z.id, { timeout: 5000 }).catch(() => {});
+    assert.equal(await selected(page), `lugar:${z.id}`, `a click 10 px off the dot of ${z.id} did not select it`);
+    assert.deepEqual(page.errors, []);
+    await page.context().close();
+  });
+
+  test(`${screen}: where two zones overlap, a click goes to the nearer point, not to the one drawn on top`, async () => {
+    const page = await keyboardPage(screen, 't=50.3000');
+    let s = null;
+    // Zoomed out, the points come together; the first zoom where two zones overlap with a free spot between them.
+    for (const zoom of [null, 6, 5.5, 5, 4.5, 4]) {
+      if (zoom) { await page.evaluate((z) => window.__be.map.jumpTo({ zoom: z }), zoom); await settle(page); }
+      s = await overlapSpot(page);
+      if (s) break;
+    }
+    assert.ok(s, 'no two points with overlapping zones at any zoom tried');
+    await press(page, screen, s.x, s.y);
+    await page.waitForFunction(() => window.BE.E.sel, null, { timeout: 5000 }).catch(() => {});
+    assert.equal(await selected(page), `lugar:${s.near}`, `${s.k} px from ${s.near} and ${Math.round((s.d - s.k) * 10) / 10} from ${s.top}, the click chose ${await selected(page)}`);
+    assert.deepEqual(page.errors, []);
+    await page.context().close();
+  });
+}
+
+// A name or a find square drawn under the zone of another marker that is nearer: what is drawn there wins, not the
+// nearer point. Nearness alone would give the click to the other marker.
+test('1440: a click on what is drawn wins over the zone of a nearer marker on top of it', async () => {
+  let page, s = null;
+  for (const hash of [TOUR, 'sel=persona:pablo&t=50.3000']) {
+    page = await keyboardPage('1440', hash);
+    s = await page.evaluate(() => {
+      const ZONA = '.marca-lugar, .marca-hallazgo, .viajero';
+      const DRAWN = '.marca-lugar .punto, .marca-lugar .etiqueta, .marca-lugar .etiqueta *, .hallazgo-dibujo, .hallazgo-dibujo *, .viajero-punto, .viajero-rotulo';
+      const SOLID = '.marca-lugar:not(.marca-lugar--difuso) > .punto, .hallazgo-dibujo > span, .viajero-punto, .cand-punto';
+      const mid = (e) => { const r = e.querySelector('.punto, .hallazgo-dibujo > span, .viajero-punto').getBoundingClientRect(); return [(r.left + r.right) / 2, (r.top + r.bottom) / 2]; };
+      for (const d of window.__be.map.getContainer().querySelectorAll('.marca-lugar .etiqueta, .hallazgo-dibujo > span')) {
+        const own = d.closest(ZONA);
+        if (!own.checkVisibility() || !d.checkVisibility({ visibilityProperty: true })) continue;
+        const [ox, oy] = mid(own), r = d.getBoundingClientRect();
+        for (let x = Math.ceil(r.left) + 1; x < r.right - 1; x += 1) {
+          for (let y = Math.ceil(r.top) + 1; y < r.bottom - 1; y += 1) {
+            const top = document.elementFromPoint(x, y), other = top?.closest(ZONA);
+            if (!other || other === own || top.matches(DRAWN)) continue;
+            const pila = document.elementsFromPoint(x, y);
+            if (pila.find((n) => n.matches(DRAWN))?.closest(ZONA) !== own) continue;
+            // Over the dot of another marker, the dot wins (next tests): only pixels clear of other dots.
+            if (pila.some((n) => n.matches(SOLID) && n.closest(ZONA) !== own)) continue;
+            const [px, py] = mid(other);
+            const dOther = Math.hypot(px - x, py - y), dOwn = Math.hypot(ox - x, oy - y);
+            if (dOther < dOwn - 1) return { id: own.dataset.sel, over: other.dataset.sel, x, y, dOther: Math.round(dOther * 10) / 10, dOwn: Math.round(dOwn * 10) / 10 };
+          }
+        }
+      }
+      return null;
+    });
+    if (s) break;
+    await page.context().close();
+  }
+  assert.ok(s, 'no name or find square drawn under the zone of a nearer marker');
+  await page.mouse.click(s.x, s.y);
+  await page.waitForFunction((id) => `${window.BE.E.sel?.tipo}:${window.BE.E.sel?.id}` === id, s.id, { timeout: 5000 }).catch(() => {});
+  assert.equal(await selected(page), s.id, `a click on what ${s.id} draws, under the zone of ${s.over}, ${s.dOther} px from its point and ${s.dOwn} from its own, chose ${await selected(page)}`);
+  assert.deepEqual(page.errors, []);
+  await page.context().close();
+});
+
+// A region, sea or river name drawn under the zone of a point: the name wins, as it did when the point had no zone.
+test('1440: a click on a region, sea or river name wins over the zone of a point on top of it', async () => {
+  let page, s = null;
+  for (const hash of ['t=33.3000', 't=62.0000', 't=30.3000', 't=50.3000']) {
+    page = await keyboardPage('1440', hash);
+    s = await page.evaluate(() => {
+      const MARCA = '.marca-lugar, .marca-hallazgo, .viajero, .cand, .marca-region, .marca-agua';
+      const NAME = '.region-texto, .region-texto *, .marca-agua .etiqueta, .marca-agua .etiqueta *';
+      for (const d of window.__be.map.getContainer().querySelectorAll('.region-texto, .marca-agua .etiqueta')) {
+        const own = d.closest(MARCA);
+        if (!own.checkVisibility() || !d.checkVisibility({ visibilityProperty: true })) continue;
+        const r = d.getBoundingClientRect();
+        for (let x = Math.ceil(r.left) + 1; x < r.right - 1; x += 1) {
+          for (let y = Math.ceil(r.top) + 1; y < r.bottom - 1; y += 1) {
+            const top = document.elementFromPoint(x, y);
+            // On top, the bare zone of another marker (its button itself, not what it draws).
+            if (!top?.matches('.marca-lugar, .marca-hallazgo, .viajero, .cand') || top === own) continue;
+            const pila = document.elementsFromPoint(x, y);
+            const first = pila.find((n) => n.matches(NAME) || n.matches('.punto, .etiqueta, .etiqueta *, .hallazgo-dibujo, .hallazgo-dibujo *, .viajero-punto, .viajero-rotulo, .cand-punto, .cand-rotulo, .cand-rotulo *'));
+            if (first?.closest(MARCA) !== own) continue;
+            // Over a dot, the dot wins (next tests): only pixels of the name clear of every dot.
+            if (pila.some((n) => n.matches('.marca-lugar:not(.marca-lugar--difuso) > .punto, .hallazgo-dibujo > span, .viajero-punto, .cand-punto'))) continue;
+            return { id: own.dataset.sel, over: top.dataset.sel, x, y };
+          }
+        }
+      }
+      return null;
+    });
+    if (s) break;
+    await page.context().close();
+  }
+  assert.ok(s, 'no region, sea or river name drawn under the zone of a point');
+  await page.mouse.click(s.x, s.y);
+  await page.waitForFunction((id) => `${window.BE.E.sel?.tipo}:${window.BE.E.sel?.id}` === id, s.id, { timeout: 5000 }).catch(() => {});
+  assert.equal(await selected(page), s.id, `a click on the name of ${s.id}, under the zone of ${s.over}, chose ${await selected(page)}`);
+  assert.deepEqual(page.errors, []);
+  await page.context().close();
+});
+
+// A dot under the bare zone of a neighbour: the mouse on the dot shows no other place's name, and the click takes the dot.
+test('1440: a dot under the zone of a neighbour keeps its own hover and click', async () => {
+  const page = await keyboardPage('1440', 't=50.3000');
+  let s = null;
+  for (const zoom of [null, 6, 5.5, 5]) {
+    if (zoom) { await page.evaluate((z) => window.__be.map.jumpTo({ zoom: z }), zoom); await settle(page); }
+    s = await page.evaluate(() => {
+      for (const el of window.__be.map.getContainer().querySelectorAll('.marca-lugar')) {
+        if (!el.checkVisibility()) continue;
+        const r = el.querySelector('.punto').getBoundingClientRect();
+        const x = (r.left + r.right) / 2, y = (r.top + r.bottom) / 2;
+        const top = document.elementFromPoint(x, y);
+        // On top of the dot's centre, the button of another place itself: its transparent zone, nothing it draws.
+        if (top === el || !top?.matches('.marca-lugar')) continue;
+        return { id: el.dataset.sel, over: top.dataset.sel, x, y };
+      }
+      return null;
+    });
+    if (s) break;
+  }
+  assert.ok(s, 'no dot under the zone of a neighbour at any zoom tried');
+  await page.mouse.move(s.x, s.y);
+  await page.evaluate(() => new Promise((ok) => requestAnimationFrame(() => requestAnimationFrame(ok))));
+  const shown = await page.evaluate((id) => [...window.__be.map.getContainer().querySelectorAll('.marca-lugar.sin-etiqueta')]
+    .filter((m) => m.dataset.sel !== id && getComputedStyle(m.querySelector('.etiqueta')).visibility === 'visible').map((m) => m.dataset.sel), s.id);
+  assert.deepEqual(shown, [], `with the mouse on the dot of ${s.id}, under the zone of ${s.over}, another hidden name shows`);
+  await page.mouse.click(s.x, s.y);
+  await page.waitForFunction(() => window.BE.E.sel, null, { timeout: 5000 }).catch(() => {});
+  assert.equal(await selected(page), s.id, `a click on the centre of the dot of ${s.id}, under the zone of ${s.over}, chose ${await selected(page)}`);
+  assert.deepEqual(page.errors, []);
+  await page.context().close();
+});
+
+// A dot under a region, sea or river name: the name's box is mostly air between letters, so the dot under it keeps its
+// click (Atalía under «PANFILIA» went to Panfilia on CI, where the fonts put the name over the dot).
+test('1440: a dot under a region, sea or river name keeps its click', async () => {
+  let page, s = null;
+  for (const hash of ['t=33.3000', 't=50.3000', 't=62.0000', 't=30.3000', 't=-1473.5000']) {
+    page = await keyboardPage('1440', hash);
+    for (const zoom of [null, 6, 5.5, 5]) {
+      if (zoom) { await page.evaluate((z) => window.__be.map.jumpTo({ zoom: z }), zoom); await settle(page); }
+      s = await page.evaluate(() => {
+        const NAME = '.region-texto, .region-texto *, .marca-agua .etiqueta, .marca-agua .etiqueta *';
+        for (const el of window.__be.map.getContainer().querySelectorAll('.marca-lugar:not(.marca-lugar--difuso):not(.agrupado)')) {
+          if (!el.checkVisibility()) continue;
+          const dot = el.querySelector(':scope > .punto'), r = dot.getBoundingClientRect();
+          const x = (r.left + r.right) / 2, y = (r.top + r.bottom) / 2;
+          if (x < 0 || y < 0 || x >= innerWidth || y >= innerHeight) continue;
+          const pila = document.elementsFromPoint(x, y), at = pila.indexOf(dot);
+          // The dot is in the stack, and a visible region, sea or river name is painted above it.
+          if (at < 0) continue;
+          const name = pila.slice(0, at).find((n) => n.matches(NAME));
+          if (!name) continue;
+          return { id: el.dataset.sel, over: name.closest('.marca-region, .marca-agua').dataset.sel, x, y };
+        }
+        return null;
+      });
+      if (s) break;
+    }
+    if (s) break;
+    await page.context().close();
+  }
+  assert.ok(s, 'no dot under a region, sea or river name in any view tried');
+  await page.mouse.click(s.x, s.y);
+  await page.waitForFunction(() => window.BE.E.sel, null, { timeout: 5000 }).catch(() => {});
+  assert.equal(await selected(page), s.id, `a click on the centre of the dot of ${s.id}, under the name of ${s.over}, chose ${await selected(page)}`);
+  assert.deepEqual(page.errors, []);
+  await page.context().close();
+});
+
+// A sea, river or region whose name is hidden draws nothing: its 24 px button must take no click, nor turn the cursor.
+test('1440: a hidden sea, river or region name takes no click', async () => {
+  const page = await keyboardPage('1440', 't=-1473.5000');
+  await page.evaluate(() => window.__be.map.jumpTo({ zoom: 6 }));
+  await settle(page);
+  const r = await page.evaluate(() => {
+    const out = { hidden: 0, hit: [] };
+    for (const el of window.__be.map.getContainer().querySelectorAll('.marca-agua.sin-etiqueta, .marca-region.sin-etiqueta')) {
+      if (!el.checkVisibility()) continue;
+      const b = el.getBoundingClientRect();
+      if (b.right < 0 || b.bottom < 0 || b.left > innerWidth || b.top > innerHeight) continue;
+      out.hidden += 1;
+      const x = (b.left + b.right) / 2, y = (b.top + b.bottom) / 2;
+      for (const [dx, dy] of [[0, 0], [5, 0], [-5, 0], [0, 5], [0, -5]]) {
+        if (el.contains(document.elementFromPoint(x + dx, y + dy))) { out.hit.push(el.dataset.sel); break; }
+      }
+    }
+    return out;
+  });
+  assert.ok(r.hidden > 0, 'no hidden sea, river or region name on screen');
+  assert.deepEqual(r.hit, [], `${r.hit.length} of ${r.hidden} hidden names take a click`);
+  assert.deepEqual(page.errors, []);
+  await page.context().close();
+});
+
+// Every marker that takes a click measures 24 x 24 px or more (WCAG 2.5.8). axe lets a small target pass when it has 24 px
+// of free space around it, so a find or a traveller that lost its zone would still pass the scan: this measures them.
+test('1440: every map marker that takes a click measures at least 24 x 24 px', async () => {
+  const KINDS = { lugar: '.marca-lugar', hallazgo: '.marca-hallazgo', viajero: '.viajero', candidato: '.cand', zona: '.rotulo-zona',
+    'región': '.marca-region:not(.sin-etiqueta)', agua: '.marca-agua:not(.sin-etiqueta)' };
+  const seen = Object.fromEntries(Object.keys(KINDS).map((k) => [k, 0]));
+  const small = [];
+  for (const hash of ['sel=persona:pablo&t=50.3000', 'sel=lugar:tarsis&t=-1000.5000', 'p=Snt1:5']) {
+    const page = await keyboardPage('1440', hash);
+    const got = await page.evaluate((KINDS) => {
+      const out = [];
+      for (const [kind, sel] of Object.entries(KINDS)) {
+        for (const el of window.__be.map.getContainer().querySelectorAll(sel)) {
+          if (!el.checkVisibility({ visibilityProperty: true }) || getComputedStyle(el).pointerEvents === 'none') continue;
+          const r = el.getBoundingClientRect();
+          out.push({ kind, id: el.dataset.sel || el.getAttribute('aria-label') || '', w: Math.round(r.width * 10) / 10, h: Math.round(r.height * 10) / 10 });
+        }
+      }
+      return out;
+    }, KINDS);
+    for (const m of got) {
+      seen[m.kind] += 1;
+      if (m.w < 23.95 || m.h < 23.95) small.push(`${m.kind} ${m.id}: ${m.w} x ${m.h}`);
+    }
+    assert.deepEqual(page.errors, []);
+    await page.context().close();
+  }
+  assert.deepEqual(Object.keys(seen).filter((k) => !seen[k]), [], 'kinds of marker that no view drew: their size went unmeasured');
+  assert.deepEqual(small, [], `${small.length} markers under 24 x 24 px`);
+});

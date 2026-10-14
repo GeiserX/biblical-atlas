@@ -1,0 +1,35 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: abias-vence-a-jeroboan
+title: Judá vence a Jeroboán pese a su emboscada
+date:
+  from: -979
+  to: -977
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 980 y 978 a.e.c. (tiempo narrativo: reinado de Abías)'
+narrative_order:
+  series: 2-cronicas
+  order: 13013
+places:
+- monte-zemaraim
+people:
+- abias-de-juda
+- jeroboan-i
+present:
+- abias-de-juda
+- jeroboan-i
+passages:
+- 2Cr 13:13-18
+summary: 'Jeroboán rodea a Judá con una emboscada. Los de Judá claman a Jehová, los sacerdotes tocan las trompetas y Dios
+  derrota a Israel: caen 500.000 hombres. Judá vence porque confió en Jehová.'
+reason: '2Cr 13:13-18; Perspicacia «Abías», núm. 5, y «Jeroboán», núm. 1. El texto no nombra el campo: va junto al monte Zemaraim,
+  donde se formaron. Reinado de Abías, 980-978 a.e.c. (A6-A).'
+sources:
+- 2-cronicas-13
+- it-abias
+- it-jeroboan
+- tnm-a6-a
+checked_on: '2026-10-13'
+status: verified

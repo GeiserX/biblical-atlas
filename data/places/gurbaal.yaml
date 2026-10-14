@@ -1,0 +1,40 @@
+# biblical-atlas: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: gurbaal
+name: Gurbaal
+names:
+- name: Gurbaal
+type: city
+lat: null
+lon: null
+precision: uncertain
+coord_source: null
+coord_url: null
+candidates:
+- name: En Edom, según OpenBible
+  geometry:
+    type: zone
+    lat: 30.745843
+    lon: 35.603919
+    radius_km: 60
+  checked_on: '2026-10-13'
+  status: alternative
+  sources:
+  - it-gurbaal
+  - openbible-geo
+  reason: Perspicacia no sabe con exactitud dónde estaba; OpenBible lo pone en Edom sin dar un sitio concreto.
+  coord_source: openbible:a763368
+  coord_url: https://www.openbible.info/geo/ancient/a763368/gurbaal
+  note: OpenBible usa para Gurbaal el punto representativo de Edom; el radio de 60 km es nuestro.
+summary: Lugar habitado por árabes en tiempos del rey Uzías, que con la ayuda de Dios los venció. No se sabe con certeza dónde
+  estaba.
+reason: Perspicacia «Gurbaal»; 2Cr 26:7. Sin sitio conocido, va una zona alrededor del punto de Edom que da OpenBible.
+sources:
+- it-gurbaal
+- openbible-geo
+- 2-cronicas-26
+links:
+- title: 'Perspicacia: «Gurbaal»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Gurbaal/
+  type: perspicacia
+checked_on: '2026-10-13'
+status: verified

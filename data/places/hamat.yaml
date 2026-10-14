@@ -33,6 +33,9 @@ sources:
 - isaias-36
 - jeremias-49
 - 1-cronicas-18
+- 2-cronicas-8
+- ezequiel-47
+- ezequiel-48
 links:
 - title: 'Perspicacia: «Hamat, hamateo»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hamat-hamateo/
@@ -48,5 +51,5 @@ history:
   change: 'La razón y las fuentes añaden 2Sa 8:9, 10: Toi, rey de Hamat, envía a su hijo a felicitar a David por vencer a
     Hadadézer.'
   source: 2-samuel-8
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified

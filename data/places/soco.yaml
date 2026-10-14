@@ -20,9 +20,11 @@ sources:
 - openbible-geo
 - josue-15
 - 1-samuel-17
+- 2-cronicas-11
+- 2-cronicas-28
 links:
 - title: 'Perspicacia: «Socó, Socoh»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Soc%C3%B3-Socoh/
   type: perspicacia
-checked_on: '2026-09-29'
+checked_on: '2026-10-13'
 status: verified

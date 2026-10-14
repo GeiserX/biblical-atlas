@@ -56,7 +56,7 @@ relations:
 disambiguation: Hananías, compañero de Daniel, al que en Babilonia llamaron Sadrac; no el profeta falso hijo de Azur, el padre
   del príncipe Sedequías, el abuelo de Iriya, el hijo de Zorobabel ni el benjamita hijo de Sasac.
 perspicacia: '1200003927'
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified
 distinct_from:
 - hananias-hijo-de-azur
@@ -65,3 +65,4 @@ distinct_from:
 - hananias-hijo-de-zorobabel
 - hananias-hijo-de-sasac
 - hananias-hijo-de-heman
+- hananias-principe-de-uzias

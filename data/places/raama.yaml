@@ -1,0 +1,32 @@
+# biblical-atlas: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: raama
+name: Raamá
+names:
+- name: Raamá
+type: region
+lat: 16.128056
+lon: 44.815278
+precision: uncertain
+coord_source: openbible:a57bb2e
+coord_url: https://www.openbible.info/geo/ancient/a57bb2e/raamah
+coord_note: OpenBible pone primero Najrán; tomamos su identificación Rgm, junto a Maʽin, en el suroeste de Arabia, donde Perspicacia
+  cree que pudo estar la ciudad de Raamá.
+summary: Tierra de la tribu de Raamá, hijo de Cus. Sus comerciantes, con los de Saba, pagaban a Tiro con los mejores perfumes,
+  piedras preciosas y oro.
+reason: 'Perspicacia «Raamá»: no se sabe dónde se asentó la tribu, aunque pudo ser Raamá, una ciudad próxima a Maʽin. Eze
+  27:22. OpenBible: solo el punto.'
+not_claimed:
+- 'Dónde se asentó la tribu: Perspicacia dice que se desconoce y solo propone la ciudad de Raamá.'
+sources:
+- it-raama
+- openbible-geo
+- ezequiel-27
+links:
+- title: 'Perspicacia: «Raamá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Raam%C3%A1/
+  type: perspicacia
+- title: Ezequiel 27 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/ezequiel/27/
+  type: bible
+checked_on: '2026-10-13'
+status: verified

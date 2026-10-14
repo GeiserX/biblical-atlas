@@ -1,0 +1,38 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: ezequiel-canta-un-lamento-por-tiro
+title: Ezequiel canta un lamento por Tiro, la nave hundida
+date:
+  from: -608
+  to: -606
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 609 y 607 a.e.c. (tiempo narrativo: profecías contra las naciones, sin fecha propia)'
+places:
+- tiro
+people:
+- ezequiel
+present: []
+passages:
+- Eze 27:1-36
+summary: 'Jehová manda a Ezequiel entonar un canto fúnebre por Tiro: la pinta como una nave espléndida, construida, tripulada
+  y cargada por muchos pueblos, que el viento del este hunde en alta mar entre el llanto de los marineros.'
+reason: 'Eze 27:1 no da fecha ni lugar: sigue al primer mensaje contra Tiro, del año 11 del destierro. Perspicacia «Ezequiel,
+  Libro de» y La adoración pura, cap. 7, ponen estas profecías durante el sitio, de 609 a 607.'
+sources:
+- ezequiel-27
+- it-ezequiel-libro
+- rr-naciones-sabran-que-soy-jehova
+- si-ezequiel
+- it-tiro
+- it-fenicia
+links:
+- title: Ezequiel 27 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/ezequiel/27/
+  type: bible
+- title: 'Perspicacia: «Tiro»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Tiro-2/
+  type: perspicacia
+checked_on: '2026-10-13'
+status: verified

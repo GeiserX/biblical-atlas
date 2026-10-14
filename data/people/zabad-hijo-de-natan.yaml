@@ -23,10 +23,16 @@ relations:
   reason: '1Cr 2:36: Natán fue su padre.'
   checked_on: '2026-10-12'
   status: verified
-disambiguation: Zabad hijo de Natán, de Judá; no Jozacar, al que 2Cr 24:26 llama Zabad, uno de los que mataron al rey Jehoás.
+disambiguation: Zabad hijo de Natán, de la casa de Jerahmeel (1Cr 2:36); no Jozacar, también llamado Zabad, uno de los que
+  mataron al rey Jehoás.
 distinct_from:
 - jozacar
 - zabad-hijo-de-ahlai
 - zabad-hijo-de-tahat
-checked_on: '2026-10-12'
+history:
+- date: '2026-10-13'
+  change: La nota citaba 2Cr 24:26, donde este Zabad no sale; ahora nombra a Jozacar sin esa cita, para que el capítulo no
+    tenga que mencionarlo.
+  source: 2-cronicas-24
+checked_on: '2026-10-13'
 status: verified

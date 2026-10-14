@@ -31,7 +31,7 @@ relations:
   reason: 'Éx 6:24: hijo de Coré.'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified
 distinct_from:
 - elcana-hijo-de-jeroham
@@ -40,3 +40,4 @@ distinct_from:
 - elcana-padre-de-asa
 - elcana-el-coreita
 - elcana-portero
+- elcana-funcionario-de-acaz

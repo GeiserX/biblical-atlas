@@ -25,5 +25,10 @@ sources:
 - it-tito-persona
 - tito-1
 search: Tito Creta
-checked_on: '2026-09-28'
+narrative_order:
+  series: hechos
+  order: 2842
+note: 'Orden 2842 de la serie hechos: tras el primer encierro (hasta 2840) y antes de dejar a Timoteo en Éfeso (2845), como
+  las paradas 2 y 3 de ultimos-anos-de-pablo. Ninguna fuente fija ese orden.'
+checked_on: '2026-10-14'
 status: verified

@@ -1,0 +1,36 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: ezequiel-acusa-a-jerusalen-de-derramar-sangre
+title: Ezequiel acusa a Jerusalén de derramar sangre
+date:
+  from: -610
+  to: -608
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 611 y 609 a.e.c. (tiempo narrativo: después del mensaje de la espada y antes de empezar el sitio)'
+narrative_order:
+  series: ezequiel
+  order: 22001
+places:
+- jerusalen
+people:
+- ezequiel
+present: []
+passages:
+- Eze 22:1-31
+summary: 'Jehová enumera los pecados de Jerusalén: sangre derramada, ídolos, inmoralidad, sobornos, usura y abuso del débil.
+  Fundirá a la casa de Israel en la ciudad como escoria, porque profetas, sacerdotes, príncipes y pueblo se corrompieron.'
+reason: «Toda Escritura», libro 26, párr. 19, abre en 611 la sección que lo contiene; el mensaje siguiente del libro lleva
+  la fecha del día en que empieza el sitio, en 609 (estudio 3). El texto no dice dónde habló.
+sources:
+- ezequiel-22
+- si-ezequiel
+- w07-ezequiel-1
+- si-3
+links:
+- title: Ezequiel 22 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/ezequiel/22/
+  type: bible
+checked_on: '2026-10-13'
+status: verified

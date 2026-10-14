@@ -34,9 +34,10 @@ relations:
   reason: '1Cr 27:17, 22: era el líder de Leví, uno de los príncipes de las tribus de Israel.'
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified
 distinct_from:
 - hasabias-hijo-de-amasias
 - hasabias-hijo-de-jedutun
 - hasabias-padre-de-azricam
+- hasabias-levita-de-josias

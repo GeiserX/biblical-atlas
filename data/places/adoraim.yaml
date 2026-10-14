@@ -1,0 +1,25 @@
+# biblical-atlas: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: adoraim
+name: Adoraim
+names:
+- name: Adoraim
+type: city
+lat: 31.50506
+lon: 35.0275
+precision: point
+coord_source: openbible:ae16cf5
+coord_url: https://www.openbible.info/geo/ancient/ae16cf5/adoraim
+coord_note: Dura, el pueblo con que Perspicacia identifica la ciudad; es la única identificación de OpenBible.
+summary: Ciudad de Judá que Rehoboam reconstruyó y convirtió en plaza fuerte. Se identifica con Dura, pueblo en una ladera
+  a unos 8 km al oeste de Hebrón.
+reason: 'Perspicacia «Adoraim»; 2Cr 11:9. Coordenada de OpenBible: solo tomamos el punto.'
+sources:
+- it-adoraim
+- openbible-geo
+- 2-cronicas-11
+links:
+- title: 'Perspicacia: «Adoraim»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Adoraim/
+  type: perspicacia
+checked_on: '2026-10-13'
+status: verified

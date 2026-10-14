@@ -1,0 +1,47 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: josias-empieza-a-limpiar-juda-y-jerusalen
+title: Josías empieza a limpiar de idolatría Judá, Jerusalén y el antiguo Israel
+date:
+  from: -647
+  to: -641
+  precision: range
+  approx: true
+  type: derived
+  chronology: tnm
+  text: c. 648-642 a.e.c.
+  note: 'Cuenta nuestra: del año 12 de Josías, uno antes del 13 (647, estudio 3), al 18 (642, Perspicacia «Betel»), hasta
+    donde Perspicacia «Josías» cree que llegó esta campaña.'
+narrative_order:
+  series: 2-cronicas
+  order: 34003
+  after: josias-empieza-a-buscar-a-jehova
+places:
+- juda
+- jerusalen
+- manases
+- territorio-de-efrain
+- simeon
+- neftali
+- israel
+people:
+- josias
+present:
+- josias
+passages:
+- 2Cr 34:3-7
+summary: 'Desde su año 12, Josías limpia Judá y Jerusalén: derriba los altares de los Baales, hace polvo postes e imágenes
+  y quema huesos de sacerdotes en sus altares. Luego hace lo mismo en el antiguo Israel, hasta Neftalí.'
+reason: '2Cr 34:3-7; Perspicacia «Josías», núm. 1, párr. 3: la campaña duró quizá hasta el año 18 y alcanzó el norte del antiguo
+  reino de diez tribus. Perspicacia «Simeón» deduce de 34:6 que esa tribu se había unido al norte.'
+sources:
+- 2-cronicas-34
+- it-josias
+- it-simeon
+- si-3
+- it-betel
+links:
+- title: 'Perspicacia: «Josías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jos%C3%ADas/
+  type: perspicacia
+checked_on: '2026-10-13'
+status: pending

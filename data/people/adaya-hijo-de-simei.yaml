@@ -9,6 +9,7 @@ distinct_from:
 - adaya-padre-de-jedida
 - adaya-hijo-de-jeroham
 - adaya-hijo-de-etan
+- adaya-padre-de-maaseya
 summary: Benjamita, hijo de Simeí.
 reason: Perspicacia «Adaya», núm. 2; 1Cr 8:21, 28.
 sources:
@@ -36,5 +37,5 @@ relations:
   reason: '1Cr 8:28: los jefes de casas paternas de esta lista vivían en Jerusalén.'
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified

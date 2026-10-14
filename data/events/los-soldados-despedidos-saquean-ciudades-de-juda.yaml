@@ -1,0 +1,42 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: los-soldados-despedidos-saquean-ciudades-de-juda
+title: Los soldados despedidos de Israel saquean ciudades de Judá
+date:
+  from: -857
+  to: -843
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 858 y c. 844 a.e.c. (tiempo narrativo: mientras Amasías combate contra Edom)'
+narrative_order:
+  series: 2-cronicas
+  order: 25013
+  after: amasias-despide-a-los-soldados-de-israel
+places:
+- juda
+- samaria
+- bet-horon-alta
+- bet-horon-baja
+people: []
+present: []
+passages:
+- 2Cr 25:10, 13
+summary: 'Enojados por el despido, los soldados de Israel atacan ciudades de Judá entre Samaria y Bet-Horón: matan a 3.000
+  personas y se llevan un gran botín.'
+reason: 2Cr 25:10, 13; Perspicacia «Amasías», núm. 2, y «Bet-horón», que no dice cuál de las dos ciudades es. Pasa mientras
+  Amasías lucha contra Edom, entre 858 y c. 844 (A6-A).
+sources:
+- 2-cronicas-25
+- it-amasias
+- it-bet-horon
+- tnm-a6-a
+links:
+- title: 2 Crónicas 25 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-Cr%C3%B3nicas/25/
+  type: bible
+- title: 'Perspicacia: «Bet-horón»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Bet-hor%C3%B3n/
+  type: perspicacia
+checked_on: '2026-10-13'
+status: verified

@@ -23,15 +23,17 @@ present:
 passages:
 - 2Re 12:17, 18
 - 2Cr 24:23, 24
-summary: El rey sirio Hazael conquista Gat y se dispone a subir contra Jerusalén. Jehoás le manda las ofrendas santas de sus
-  antepasados y el oro del templo y del palacio, y Hazael se aparta de la ciudad.
-reason: 2Re 12:17, 18; Perspicacia «Hazael», apartado «Hazael oprime a Israel», y «Gat», que pone la toma poco después del
-  año 23 de Jehoás (876 a.e.c.). Jehoás murió en 858 (tabla A6-A).
+summary: Hazael, rey de Siria, toma Gat y se vuelve contra Jerusalén. Su pequeño ejército vence al gran ejército de Judá y
+  mata a los príncipes; Jehoás le entrega el oro del templo y del palacio, y Hazael se retira.
+reason: 2Re 12:17, 18; 2Cr 24:23, 24; Perspicacia «Hazael» y «Jehoás», núm. 1, que pone a Hazael al frente de los sirios.
+  «Gat» pone la toma poco después del año 23 de Jehoás (876 a.e.c.). Jehoás murió en 858 (tabla A6-A).
 sources:
 - 2-reyes-12
 - it-hazael
 - it-gat
 - tnm-a6-a
+- 2-cronicas-24
+- it-jehoas
 links:
 - title: 2 Reyes 12 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-reyes/12/
@@ -39,5 +41,13 @@ links:
 - title: 'Perspicacia: «Hazael»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hazael/
   type: perspicacia
-checked_on: '2026-09-30'
+history:
+- date: '2026-10-13'
+  change: 'El resumen solo contaba 2 Reyes; añade lo que dice 2Cr 24:23, 24: la derrota del ejército de Judá ante unos pocos
+    sirios y la muerte de los príncipes.'
+  source: 2-cronicas-24
+- date: '2026-10-13'
+  change: La razón añade 2 Crónicas 24 y Perspicacia «Jehoás», que unen las dos narraciones de la invasión siria.
+  source: 2-cronicas-24
+checked_on: '2026-10-13'
 status: verified
