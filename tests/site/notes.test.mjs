@@ -157,6 +157,13 @@ const focusSettles = (page, key = '') => page.waitForFunction((k) => {
   const a = document.activeElement;
   return a && a !== document.body && !a.closest('dialog:not([open])') && (!k || a.dataset.noteKey === k);
 }, key, { timeout: 3000 }).catch(() => {});
+/** Waits until the focus is on the visible pencil of key inside where (#panel-cuerpo or #vista-lectura), with ready()'s
+    60 s and no catch: «Abrir» opens the card or the reading and focuses over the next frames, and a loaded machine
+    can take seconds to paint them. A wait that gave up quietly let the check read the focus before the reading opened. */
+const focusOn = (page, key, where) => page.waitForFunction(([k, w]) => {
+  const a = document.activeElement;
+  return a?.dataset?.noteKey === k && !!a.closest(w) && !!a.checkVisibility?.();
+}, [key, where], { timeout: 60000 });
 /** Waits (up to 3 s) until the note of key is stored with text: the save runs 400 ms after the last key, later on a busy page. */
 const savedSoon = (page, key, text) => page.waitForFunction(([k, n, t]) => JSON.parse(localStorage.getItem(k) || 'null')?.notes?.[n]?.text === t,
   [KEY, key, text], { timeout: 3000 }).catch(() => {});
@@ -505,7 +512,7 @@ test('«Mis notas»: «Abrir» shows the card and focuses its pencil, «Editar»
     assert.equal(await page.locator('#notes-list').isVisible(), true);
 
     await open.click();
-    await focusSettles(page, 'persona:pablo');
+    await focusOn(page, 'persona:pablo', '#panel-cuerpo');
     await ready(page);   // and it stays there after the card repaints
     assert.equal(await sel(page), 'persona:pablo', '«Abrir» did not open the card');
     let a = await active(page);
@@ -513,7 +520,7 @@ test('«Mis notas»: «Abrir» shows the card and focuses its pencil, «Editar»
 
     await openMyNotes(page);
     await page.locator('#notes-list [data-notes-open="chapter:44:16"]').click();
-    await focusSettles(page, 'chapter:44:16');
+    await focusOn(page, 'chapter:44:16', '#vista-lectura');
     await ready(page);
     a = await active(page);
     assert.ok(a.key === 'chapter:44:16' && a.inReading && a.visible, `after «Abrir capítulo» the focus is on ${JSON.stringify(a)}`);
@@ -529,7 +536,7 @@ test('430 wide: «Abrir» from «Mis notas» with the reading open shows the car
     await page.locator('#estudio-boton').tap();
     await page.locator('[data-menu="notas"]').tap();
     await page.locator('#notes-list [data-notes-open="persona:pablo"]').tap();
-    await focusSettles(page, 'persona:pablo');
+    await focusOn(page, 'persona:pablo', '#panel-cuerpo');
     await ready(page);
     assert.equal(await sel(page), 'persona:pablo');
     assert.equal(await page.evaluate(() => window.BE.estudio.vistas.lectura.abierta()), false, 'the reading still covers the card');
