@@ -1,0 +1,54 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: arioc-jefe-de-la-guardia
+name: Arioc
+names:
+- name: Arioc
+perspicacia: 1200000363#2
+disambiguation: El jefe de la guardia de Nabucodonosor en tiempos de Daniel; no Arioc, rey de Elasar y aliado de Kedorlaomer
+  en días de Abrán.
+date:
+  from: -605
+  to: -604
+  precision: range
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 606-605 a.e.c.
+summary: Jefe de la guardia personal de Nabucodonosor, encargado de matar a los sabios de Babilonia. Cuando Daniel le dijo
+  que podía interpretar el sueño del rey, lo llevó enseguida ante él.
+reason: 'Perspicacia «Arioc», núm. 2; Da 2:14, 15, 24, 25. El año es el del sueño: dp, cap. 4, párr. 2.'
+sources:
+- it-arioc
+- daniel-2
+- dp-4
+links:
+- title: 'Perspicacia: «Arioc»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Arioc/
+  type: perspicacia
+- title: Daniel 2 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/daniel/2/
+  type: bible
+relations:
+- type: tie
+  person: nabucodonosor-ii
+  word: master
+  inferred: false
+  sources:
+  - daniel-2
+  - it-arioc
+  reason: 'Da 2:14, 15: oficial del rey al mando de su escolta, recibe la orden de matar a los sabios.'
+  checked_on: '2026-10-14'
+  status: verified
+- type: lived_in
+  place: babilonia
+  inferred: true
+  sources:
+  - daniel-2
+  - it-arioc
+  reason: 'Da 2:14, 24: servía al rey en Babilonia, donde busca a los sabios de la ciudad para ejecutarlos.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- arioc-de-elasar

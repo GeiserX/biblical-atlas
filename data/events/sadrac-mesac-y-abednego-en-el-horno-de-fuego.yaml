@@ -1,0 +1,47 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: sadrac-mesac-y-abednego-en-el-horno-de-fuego
+title: Sadrac, Mesac y Abednego, librados del horno de fuego
+date:
+  from: -604
+  to: -581
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 605 y 582 a.e.c. (tiempo narrativo: después del sueño de la imagen y en vida de Nabucodonosor)'
+narrative_order:
+  series: daniel
+  order: 3008
+  elapsed:
+    days: 0
+    reason: 'Da 3:8: la denuncia llega en aquel mismo momento, durante la inauguración.'
+places:
+- llanura-de-dura
+people:
+- sadrac
+- mesac
+- abednego
+- nabucodonosor-ii
+passages:
+- Da 3:8-30
+- Heb 11:34
+summary: Denunciados por unos caldeos, los tres se niegan a adorar la estatua. El rey los echa atados a un horno recalentado;
+  un ángel los protege, salen ilesos y Nabucodonosor alaba a su Dios y los asciende.
+reason: Misma fecha que la inauguración (Perspicacia «Nabucodonosor»; libro de Daniel, cap. 5, párr. 16). Lo ven los funcionarios
+  reunidos en Dura (Da 3:27). Perspicacia «Mesac» liga Heb 11:34 a este rescate.
+sources:
+- daniel-3
+- it-mesac
+- it-abednego
+- it-sadrac
+- it-nabucodonosor
+- dp-5
+links:
+- title: Daniel 3 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/daniel/3/
+  type: bible
+- title: 'Perspicacia: «Mesac»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Mesac/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified

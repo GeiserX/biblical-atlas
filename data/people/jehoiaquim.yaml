@@ -32,6 +32,8 @@ sources:
 - jeremias-45
 - jeremias-46
 - 1-cronicas-3
+- daniel-1
+- dp-3
 - 2-cronicas-36
 links:
 - title: 'Perspicacia: «Jehoiaquim»'
@@ -129,9 +131,11 @@ relations:
   - 2-reyes-24
   - si-3
   - it-joaquin
+  - daniel-1
+  - dp-3
   reason: '2Re 24:1: fue su siervo tres años y luego se rebeló. El estudio 3 fecha el vasallaje en 620; Perspicacia «Joaquín»,
     párr. 2, fecha la rebelión en 618.'
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-14'
   status: verified
 - type: kin
   person: nehusta
@@ -196,7 +200,7 @@ history:
 - date: '2026-10-12'
   change: La razón cita ya el pasaje de la quema del rollo, que el resumen recoge ahora.
   source: jeremias-36
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified
 distinct_from:
 - eliaquim-hijo-de-abiud

@@ -21,6 +21,10 @@ people:
 - nabucodonosor-ii
 - joaquin
 - nehusta
+- daniel
+- sadrac
+- mesac
+- abednego
 - jehoiaquim
 - ezequiel
 passages:
@@ -30,6 +34,7 @@ passages:
 - Jer 24:1
 - Jer 27:20
 - Jer 29:1, 2
+- Da 1:1, 2
 - 2Cr 36:6, 7
 - Eze 17:12, 13
 summary: Los siervos de Nabucodonosor cercan Jerusalén y el rey llega en persona. Joaquín se entrega con su madre y su corte;
@@ -46,6 +51,10 @@ sources:
 - jeremias-24
 - jeremias-27
 - jeremias-29
+- daniel-1
+- it-daniel
+- it-mesac
+- dp-3
 - 2-cronicas-36
 - it-ezequiel
 links:
@@ -55,14 +64,5 @@ links:
 - title: 'Perspicacia: «Joaquín»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Joaqu%C3%ADn/
   type: perspicacia
-history:
-- date: '2026-10-13'
-  change: 'La razón cita 2Cr 36:6, 7, que Perspicacia «Nabucodonosor» y «Jehoiaquim» ponen en este sitio: el rey subió contra
-    Jehoiaquim, que al parecer murió durante el asedio.'
-  source: 2-cronicas-36
-- date: '2026-10-13'
-  change: 'Ezequiel entra en el suceso: Perspicacia «Ezequiel», párr. 1, dice que fue llevado con Joaquín, y el viaje joaquin-llevado-a-babilonia
-    ya lo lleva.'
-  source: it-ezequiel
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified

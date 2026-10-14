@@ -1,0 +1,43 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: nabucodonosor-recobra-el-juicio-y-el-reino
+title: Nabucodonosor recobra el juicio y el reino
+date:
+  from: -596
+  to: -581
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre c. 597 y 582 a.e.c. (tiempo narrativo: siete años después de perder el juicio y antes de su muerte)'
+  note: 'Cuenta nuestra: el sueño es de 605 como pronto, la locura empieza un año después (Da 4:29) y dura siete años (Perspicacia «Locura»): 597; su muerte, en 582, cierra el tramo.'
+narrative_order:
+  series: daniel
+  order: 4034
+  elapsed:
+    years: 7
+    reason: 'Da 4:32-34: al acabar los siete tiempos; Perspicacia «Locura» los cuenta como siete años.'
+places:
+- babilonia
+people:
+- nabucodonosor-ii
+passages:
+- Da 4:34-37
+- Da 4:1-3
+summary: Pasado el plazo, el rey recupera la razón, alaba al Altísimo y vuelve a su trono con más grandeza. Después difunde
+  por todo su imperio un relato de lo que Dios hizo con él.
+reason: Da 4:34-37. El libro de Daniel, cap. 6, párr. 2, dice que el rey hizo circular el relato de Da 4:1-3 poco después
+  de sanar; por eso ese pasaje va aquí y no al principio.
+sources:
+- daniel-4
+- it-locura
+- it-nabucodonosor
+- dp-6
+links:
+- title: Daniel 4 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/daniel/4/
+  type: bible
+- title: 'Perspicacia: «Nabucodonosor, Nabucodorosor»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Nabucodonosor-Nabucodorosor/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified

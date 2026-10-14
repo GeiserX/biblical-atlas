@@ -13,6 +13,9 @@ names:
 - name: Agente Principal
   note: 'Título que le dan Hch 3:15, 5:31 y Heb 2:10: según la nota de estudio, quien inicia la salvación y conduce a otros
     por ese camino.'
+- name: Miguel
+  note: Nombre del Hijo de Dios como arcángel, antes de nacer en la tierra y desde que volvió al cielo (Perspicacia «Miguel»,
+    núm. 1; Da 10:13; 12:1; Jud 9).
 date:
   from: 29
   to: 33
@@ -135,6 +138,9 @@ sources:
 - hebreos-8
 - hebreos-9
 - hebreos-10
+- daniel-10
+- it-miguel
+- dp-12
 not_claimed:
 - 'Que Jesús naciera el 25 de diciembre: Perspicacia lo descarta porque los pastores pasaban la noche al raso.'
 - 'Un día exacto de nacimiento: las fuentes dicen hacia el 1 de octubre.'
@@ -485,9 +491,23 @@ history:
 - date: '2026-09-29'
   change: La razón de vivio_en capernaum citaba Mt 9:1 como «su propia ciudad»; la TNM de estudio dice «su ciudad».
   source: mateo-9
-disambiguation: Jesucristo; no Jesús hijo de Eliezer, antepasado suyo en la genealogía de Lucas.
+- date: '2026-10-14'
+  change: Con el nombre Miguel (Perspicacia «Miguel», núm. 1) comparte nombre con los demás Miguel; la desambiguación los
+    nombra, y también a Jesús Justo, que ya estaba en distinct_from.
+  source: it-miguel
+disambiguation: Jesucristo, llamado Miguel en el cielo; no Jesús hijo de Eliezer, antepasado suyo en la genealogía de Lucas,
+  ni Jesús Justo, ni ninguno de los demás Miguel.
 checked_on: '2026-10-14'
 status: verified
 distinct_from:
 - jesus-hijo-de-eliezer
 - jesus-justo
+- miguel-de-manases
+- miguel-descendiente-de-berias
+- miguel-hijo-de-abihail
+- miguel-hijo-de-baaseya
+- miguel-hijo-de-izrahias
+- miguel-hijo-de-jesisai
+- miguel-padre-de-omri
+- miguel-padre-de-setur
+- miguel-hijo-de-jehosafat
