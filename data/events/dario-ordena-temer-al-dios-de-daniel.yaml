@@ -1,0 +1,38 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: dario-ordena-temer-al-dios-de-daniel
+title: Darío ordena a todo su reino temer al Dios de Daniel
+date:
+  from: -538
+  to: -537
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'c. 539-538 a.e.c. (tiempo narrativo: en el reinado de Darío el medo, tras la caída de Babilonia)'
+narrative_order:
+  series: daniel
+  order: 106025
+places:
+- babilonia
+people:
+- dario-el-medo
+present:
+- dario-el-medo
+type: writing
+roles:
+  dario-el-medo: wrote
+passages:
+- Da 6:25-27
+summary: Tras el rescate de Daniel, Darío escribe a los pueblos de su reino y manda que tiemblen ante el Dios de Daniel, el
+  Dios vivo, cuyo reino no tendrá fin y que salva con milagros.
+reason: 'Da 6:25-27; Perspicacia «Darío», núm. 1. Lo escribe en su corte de Babilonia tras el foso, poco después del decreto; cerrarlo en nisán de 538, primer año de Ciro según Perspicacia «Ciro», es inferencia nuestra.'
+sources:
+- daniel-6
+- it-dario
+- dp-8
+links:
+- title: 'Perspicacia: «Darío»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Dar%C3%ADo/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified

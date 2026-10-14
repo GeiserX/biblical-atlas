@@ -45,6 +45,10 @@ sources:
 - isaias-41
 - isaias-51
 - 1-cronicas-1
+- hebreos-6
+- hebreos-7
+- hebreos-11
+- santiago-2
 links:
 - title: 'Perspicacia: «Abrahán»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Abrah%C3%A1n/
@@ -187,8 +191,10 @@ relations:
   - salmos-105
   - hechos-7
   - josue-24
+  - hebreos-11
+  - it-abrahan
   reason: 'Gé 12:5; 13:12; 16:3; 17:8: vivió en la tierra de Canaán como extranjero.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-14'
   status: verified
 - type: lived_in
   place: mamre
@@ -260,5 +266,5 @@ history:
   change: 'La relación con Queturá pasa de esposa a esposa secundaria: 1Cr 1:32 la llama concubina y Perspicacia «Queturá»
     dice que fue esposa secundaria. Se añade 1-cronicas-1 a las relaciones que el capítulo repite.'
   source: 1-cronicas-1
-checked_on: '2026-10-12'
+checked_on: '2026-10-14'
 status: verified

@@ -33,6 +33,8 @@ sources:
 - 1-timoteo-6
 - it-timoteo-cartas
 - filemon-1
+- hebreos-13
+- it-hebreos
 - 2-timoteo-1
 - 2-timoteo-2
 - 2-timoteo-3
@@ -104,6 +106,7 @@ relations:
   - 1-timoteo-1
   - 1-timoteo-4
   - filemon-1
+  - hebreos-13
   - 2-timoteo-1
   reason: Se une en Listra y viaja con él; Ro 16:21 lo llama colaborador. «Testimonio completo» (cap. 15, párr. 18) dice que
     trabajaron juntos muchos años. La Tabla de los libros fecha 2 Timoteo hacia 65.

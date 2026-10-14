@@ -29,6 +29,7 @@ passages:
 - Lu 22:39-53
 - Jn 18:1-12
 - Zac 13:7
+- Heb 5:7
 summary: Jesús cruza el Cedrón y ora angustiado en Getsemaní; un ángel lo fortalece. Judas llega con gente armada y lo besa;
   Pedro hiere a Malco y Jesús lo cura. Se deja arrestar y los apóstoles huyen.
 reason: 'La tabla A7-H da el día y el lugar. Jn 18:1 nombra el Cedrón; la nota de Mt 26:36 dice que el lugar exacto no se conoce;
@@ -57,5 +58,5 @@ history:
 - date: '2026-09-29'
   change: La razón cita ahora de dónde salen el ángel y la curación que el resumen añade.
   source: lucas-22
-checked_on: '2026-09-29'
+checked_on: '2026-10-14'
 status: verified

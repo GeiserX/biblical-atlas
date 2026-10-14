@@ -3,26 +3,32 @@ id: vision-del-tercer-ano-de-ciro
 title: Última visión de Daniel, junto al Tigris
 date:
   from: -535
-  to: -535
-  precision: year
+  to: -534
+  precision: range
   approx: false
   type: anchored
   chronology: tnm
-  text: 536 a.e.c., año tercero de Ciro
-places: []
+  text: 536-535 a.e.c., año tercero de Ciro
+places:
+- rio-tigris
 people:
 - daniel
 passages:
-- Da 10:1-4
-- Da 12:13
+- Da 10:1-12:13
 summary: En el tercer año de Ciro, junto al Tigris, Daniel recibió la visión sobre los reyes de Persia y el conflicto entre
   los reyes del norte y del sur. Es lo último que se sabe de él.
-reason: 'Perspicacia «Daniel», núm. 2: visión en el tercer año de Ciro (536); Da 10:4 la sitúa a orillas del Tigris. El estudio
-  3 dice que completó su libro c. 536.'
+reason: '«Profecías de Daniel», cap. 12, párr. 3: año tercero de Ciro, 536/535; Perspicacia «Daniel» dice 536. Da 10:4: día
+  24 del primer mes, junto al Tigris. El párr. 5 da ya puestos los cimientos del templo, de iyar de 536.'
 sources:
 - it-daniel
 - daniel-10
 - si-3
+- dp-12
+- it-hidequel
+- daniel-11
+- dp-13
+- daniel-12
+- dp-17
 links:
 - title: 'Perspicacia: «Daniel»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Daniel/
@@ -30,5 +36,20 @@ links:
 - title: Daniel 10 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/daniel/10/
   type: bible
-checked_on: '2026-09-28'
+history:
+- date: '2026-10-14'
+  change: «Profecías de Daniel», cap. 12, párr. 3, la publicación más reciente, da el año tercero de Ciro como 536/535; el
+    día 24 del primer mes (Da 10:4) va en la razón.
+  source: dp-12
+- date: '2026-10-14'
+  change: 'Los capítulos 10 a 12 son una sola visión: el pasaje la cubre entera, no solo su comienzo y su último versículo.'
+  source: daniel-10
+- date: '2026-10-14'
+  change: 'La razón recoge el día del texto, el lugar y por qué el año queda en 536-535: el párr. 5 de «Profecías de Daniel»,
+    cap. 12, encaja mejor con nisán de 535.'
+  source: daniel-10
+narrative_order:
+  series: daniel
+  order: 110001
+checked_on: '2026-10-14'
 status: verified

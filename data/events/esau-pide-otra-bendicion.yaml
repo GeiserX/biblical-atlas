@@ -19,6 +19,8 @@ people:
 - isaac
 passages:
 - Gé 27:30-40
+- Heb 11:20
+- Heb 12:17
 summary: 'Esaú vuelve de cazar y descubre el engaño. Llora y pide ser bendecido, pero Isaac no retira lo dicho: Esaú vivirá
   de su espada, lejos de tierras fértiles, y servirá a su hermano.'
 reason: Mismo momento y lugar que la bendición de Jacob (Gé 27:30), poco antes de su salida a Harán en 1781 a.e.c. (estudio
@@ -28,9 +30,11 @@ sources:
 - it-esau
 - it-isaac
 - genesis-27
+- hebreos-11
+- hebreos-12
 links:
 - title: Génesis 27 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/G%C3%A9nesis/27/
   type: bible
-checked_on: '2026-09-29'
+checked_on: '2026-10-14'
 status: verified

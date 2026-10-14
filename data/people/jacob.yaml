@@ -55,6 +55,7 @@ sources:
 - 1-cronicas-1
 - 1-cronicas-2
 - 1-cronicas-6
+- hebreos-11
 links:
 - title: 'Perspicacia: «Jacob»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jacob/
@@ -302,8 +303,9 @@ relations:
   - salmos-105
   - it-canaan
   - hechos-7
+  - hebreos-11
   reason: 'Gé 37:1: siguió viviendo en Canaán, donde su padre había residido como extranjero.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-14'
   status: verified
 - type: lived_in
   place: gosen
@@ -325,7 +327,7 @@ relations:
   checked_on: '2026-09-29'
   status: verified
 perspicacia: 1200002279#1
-checked_on: '2026-10-12'
+checked_on: '2026-10-14'
 status: verified
 distinct_from:
 - jacob-hijo-de-mattan
