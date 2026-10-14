@@ -413,6 +413,13 @@ Los campos, los tipos de relación y sus palabras se nombran como en el esquema 
 ## Para Ezequiel y quien toque `exodo` (desde Hebreos)
 
 - **«Nú 33:3-5» repetido.** En `main`, `passages` de `exodo` lleva «Nú 33:3-5» dos veces. Hebreos no lo quita, para no chocar con la rama de Ezequiel, que añade «Eze 20:9, 10» a esa lista. Quien toque `exodo` después (Ezequiel o la integración) quita la segunda copia, con una entrada de `history` cuya fuente sea `numeros-33`.
+
+## Para 2 Juan, 3 Juan y las demás cartas (desde 1 Juan)
+
+- **Jesús en `entities`.** Va donde la carta cuenta un hecho concreto de su vida en la tierra: lo que Juan oyó, vio y tocó (1Jn 1:1-4) y el bautismo que La Atalaya del 15-12-2008 ve en el agua de 1Jn 5:6. Lo que la carta enseña de él (ayudante, sacrificio, Hijo enviado, venido en la carne) lo deja en `mentions`, como Efesios, 2 Corintios, 1 Timoteo y Tito.
+- **`muerte-de-jesus` en las cartas.** Su pasaje entra solo si la carta cuenta la escena (el madero, lo que padeció). La sangre, el sacrificio o el rescate como enseñanza dejan el suceso en `mentions`, sin pasaje: en 1Jn 5:6-8 el agua da su pasaje a `bautismo-de-jesus` y la sangre, que La Atalaya de 2008 explica como la vida dada en rescate, no lo da.
+- **El suceso de escritura.** `juan-escribe-1-juan` cita el prólogo y cada versículo donde Juan dice que escribe. Lleva el orden 2980 de `hechos`, elegido por nosotros; sigue a Patmos solo por la fecha. Perspicacia «Juan, Cartas de», párr. 1, pone las cartas después del Evangelio: el suceso que escriba el Evangelio va antes de 2980, y los de 2 y 3 Juan después. Si `hechos` es la serie correcta para 98 es pregunta abierta de 1 Juan.
+
 ## Para Hebreos (desde Daniel)
 
 - **Hebreos 11:33, 34.** `daniel-sale-ileso-del-foso-de-los-leones` lleva «Heb 11:33» en `passages` («Profecías de Daniel», cap. 8, lo ve como alusión a Daniel) y `sadrac-mesac-y-abednego-en-el-horno-de-fuego`, «Heb 11:34»: el tramo de Heb 11 que los recuerda los pone en `entities`.
