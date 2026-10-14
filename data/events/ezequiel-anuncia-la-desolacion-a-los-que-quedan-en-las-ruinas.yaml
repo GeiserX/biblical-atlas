@@ -1,0 +1,41 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: ezequiel-anuncia-la-desolacion-a-los-que-quedan-en-las-ruinas
+title: Ezequiel anuncia que los que quedan en las ruinas de Israel no poseerán la tierra
+date:
+  from: -606
+  to: -606
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 607 a.e.c.
+narrative_order:
+  series: ezequiel
+  order: 233023
+places:
+- tel-abib
+- caldea
+- israel
+people:
+- ezequiel
+present: []
+passages:
+- Eze 33:23-33
+summary: Los que viven entre las ruinas se creen dueños de la tierra porque son muchos, pero Jehová la dejará desolada por
+  su sangre y su idolatría. Los desterrados escuchan a Ezequiel con gusto, aunque no obedecen.
+reason: 'Eze 33:23 sigue a la llegada del escapado; «Toda Escritura», libro 26, párr. 24, lo cuenta en 607, cuando Ezequiel
+  ya puede hablar otra vez. No dice dónde lo proclamó: queda sin presentes.'
+sources:
+- ezequiel-33
+- si-ezequiel
+- it-ezequiel
+- it-ezequiel-libro
+links:
+- title: 'Perspicacia: «Ezequiel, Libro de»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ezequiel-Libro-de/
+  type: perspicacia
+- title: Ezequiel 33 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/ezequiel/33/
+  type: bible
+checked_on: '2026-10-13'
+status: verified

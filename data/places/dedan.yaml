@@ -23,9 +23,11 @@ sources:
 - openbible-geo
 - jeremias-25
 - jeremias-49
+- ezequiel-25
+- ezequiel-27
 links:
 - title: 'Perspicacia: «Dedán»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ded%C3%A1n/
   type: perspicacia
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified

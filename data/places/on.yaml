@@ -8,6 +8,9 @@ names:
 - name: Bet-Semes
   note: Nombre de Jer 43:13, que la nota traduce «Casa del Sol» y explica como Heliópolis. Perspicacia «Bet-semes», núm. 4,
     cree que es esta ciudad.
+- name: Aven
+  note: 'Perspicacia «On»: en Eze 30:17 el hebreo vocaliza el nombre como Aven, «algo nocivo», quizá por juego de palabras.
+    La TNM pone On. No es Bicat-Aven.'
 type: city
 lat: 30.129444
 lon: 31.3075
@@ -26,6 +29,7 @@ sources:
 - genesis-46
 - jeremias-43
 - it-bet-semes
+- ezequiel-30
 links:
 - title: 'Perspicacia: «On»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/On/
@@ -33,5 +37,5 @@ links:
 - title: Génesis 46 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/G%C3%A9nesis/46/
   type: bible
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified

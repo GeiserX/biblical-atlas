@@ -1,0 +1,58 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: pelatias-hijo-de-benaya
+name: Pelatías
+names:
+- name: Pelatías
+perspicacia: 1200003420#2
+disambiguation: Pelatías hijo de Benaya, el príncipe que muere en la visión de Eze 11 (núm. 2 de Perspicacia); no el simeonita
+  hijo de Isí ni el nieto de Zorobabel.
+distinct_from:
+- pelatias-hijo-de-isi
+- pelatias-hijo-de-hananias
+summary: Príncipe del pueblo en Jerusalén, hijo de Benaya. Ezequiel lo ve en visión junto a Jaazanías entre quienes tramaban
+  el mal contra la ciudad; en cuanto el profeta acaba su mensaje, Pelatías muere.
+reason: Perspicacia «Pelatías», núm. 2; Eze 11:1-13. El año de la visión, 612 a.e.c., en «Toda Escritura», libro 26, párr.
+  12.
+sources:
+- it-pelatias
+- ezequiel-11
+- si-ezequiel
+links:
+- title: 'Perspicacia: «Pelatías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Pelat%C3%ADas/
+  type: perspicacia
+- title: Ezequiel 11 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/ezequiel/11/
+  type: bible
+relations:
+- type: kin
+  person: benaya-padre-de-pelatias
+  word: father
+  sources:
+  - ezequiel-11
+  - it-benaya
+  reason: Eze 11:1, 13 lo llama Pelatías hijo de Benaya; Perspicacia «Benaya», núm. 8.
+  inferred: false
+  checked_on: '2026-10-13'
+  status: verified
+- type: lived_in
+  place: jerusalen
+  sources:
+  - ezequiel-11
+  - it-pelatias
+  reason: 'Eze 11:1-3: uno de los príncipes del pueblo que tramaban el mal en «esta ciudad», Jerusalén según la nota de 11:3.'
+  inferred: false
+  checked_on: '2026-10-13'
+  status: verified
+- type: died_in
+  place: jerusalen
+  inferred: true
+  status: pending
+  sources:
+  - ezequiel-11
+  - it-pelatias
+  reason: 'Eze 11:1, 13: muere cuando Ezequiel acaba de profetizar contra los príncipes de la puerta del templo. Perspicacia
+    «Pelatías», núm. 2, da la muerte sin el sitio; el lugar es deducción nuestra.'
+  checked_on: '2026-10-13'
+checked_on: '2026-10-13'
+status: verified

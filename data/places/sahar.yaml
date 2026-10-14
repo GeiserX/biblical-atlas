@@ -1,0 +1,30 @@
+# biblical-atlas: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: sahar
+name: Sahar
+names:
+- name: Sahar
+type: region
+lat: 33.550833
+lon: 36.139722
+precision: uncertain
+coord_source: openbible:af9e903
+coord_url: https://www.openbible.info/geo/ancient/af9e903/sahar
+coord_note: 'Sahl as Sahra, al noroeste de Damasco: primera identificación de OpenBible. Solo tomamos el punto; jw.org no sitúa
+  Sahar, y la nota de Eze 27:18 permite leer el versículo sin nombre de lugar.'
+summary: Lugar del que venía la lana que Damasco daba a Tiro a cambio de sus productos. Ninguna publicación de jw.org dice
+  dónde estaba.
+reason: 'Eze 27:18. Perspicacia no tiene artículo. Coordenada de OpenBible: solo tomamos el punto. La nota de la TNM da otra
+  lectura sin nombre de lugar.'
+not_claimed:
+- 'Que Sahar sea con seguridad un lugar: la nota de Eze 27:18 permite leer «lana gris rojiza», y Perspicacia «Damasco» habla
+  de lana de ese color.'
+sources:
+- ezequiel-27
+- it-damasco
+- openbible-geo
+links:
+- title: Ezequiel 27 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/ezequiel/27/
+  type: bible
+checked_on: '2026-10-13'
+status: pending

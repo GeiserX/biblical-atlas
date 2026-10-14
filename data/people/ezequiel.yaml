@@ -20,6 +20,60 @@ sources:
 - ezequiel-1
 - tnm-tabla
 - si-3
+- it-kebar
+- it-tel-abib
+- it-ezequiel-libro
+- si-ezequiel
+- it-templo
+- ezequiel-2
+- ezequiel-3
+- ezequiel-4
+- ezequiel-5
+- ezequiel-6
+- ezequiel-7
+- ezequiel-8
+- rr-cosas-detestables-en-el-templo
+- ezequiel-9
+- ezequiel-10
+- ezequiel-11
+- ezequiel-12
+- ezequiel-13
+- ezequiel-14
+- ezequiel-15
+- ezequiel-16
+- ezequiel-17
+- ezequiel-18
+- ezequiel-19
+- ezequiel-20
+- ezequiel-21
+- ezequiel-22
+- ezequiel-23
+- ezequiel-24
+- ezequiel-25
+- w07-ezequiel-2
+- ezequiel-26
+- ezequiel-27
+- ezequiel-28
+- ezequiel-29
+- ezequiel-30
+- ezequiel-31
+- ezequiel-32
+- ezequiel-33
+- w03-ezequiel-mudo
+- ezequiel-34
+- ezequiel-35
+- ezequiel-36
+- ezequiel-37
+- ezequiel-38
+- ezequiel-39
+- ezequiel-40
+- ezequiel-41
+- ezequiel-42
+- ezequiel-43
+- ezequiel-44
+- ezequiel-45
+- ezequiel-46
+- ezequiel-47
 links:
 - title: 'Perspicacia: «Ezequiel»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ezequiel/
@@ -29,13 +83,90 @@ links:
   type: bible
 relations:
 - type: lived_in
-  place: babilonia
+  place: caldea
+  date:
+    from: -616
+    to: -590
+    precision: range
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: 617-c. 591 a.e.c.
   inferred: false
   sources:
-  - it-ezequiel
   - ezequiel-1
-  reason: Vivía entre los desterrados junto al río Kebar, en Babilonia (Eze 1:1-3).
-  checked_on: '2026-09-28'
+  - it-ezequiel
+  - it-kebar
+  - it-tel-abib
+  - si-3
+  - tnm-tabla
+  - ezequiel-11
+  reason: 'Eze 1:1-3: vivía con los desterrados a orillas del Kebar, en Caldea. Perspicacia «Ezequiel», párr. 1, lo destierra
+    en 617; profetiza allí hasta c. 591.'
   status: verified
-checked_on: '2026-09-28'
+  checked_on: '2026-10-13'
+- type: kin
+  person: buzi
+  word: father
+  inferred: false
+  sources:
+  - ezequiel-1
+  - it-buzi
+  - it-ezequiel
+  reason: Eze 1:3 lo llama Ezequiel hijo de Buzí.
+  checked_on: '2026-10-13'
+  status: verified
+- type: holds_office
+  office: priest
+  inferred: true
+  sources:
+  - ezequiel-1
+  - si-ezequiel
+  - it-templo
+  reason: Eze 1:3 lo nombra con su padre Buzí, el sacerdote. «Toda Escritura», libro 26, párr. 2, dice que fue sacerdote además
+    de profeta, y Perspicacia «Templo» lo llama profeta y sacerdote.
+  checked_on: '2026-10-13'
+  status: verified
+- type: holds_office
+  office: prophet
+  place: caldea
+  date:
+    from: -612
+    to: -590
+    precision: range
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: 613-c. 591 a.e.c.
+  inferred: false
+  sources:
+  - ezequiel-2
+  - it-ezequiel
+  - it-ezequiel-libro
+  - si-3
+  - tnm-tabla
+  - ezequiel-33
+  reason: 'Eze 2:3-5: Jehová lo envía a los israelitas para que sepan que hubo un profeta entre ellos. Perspicacia «Ezequiel»:
+    profetizó a los desterrados de 613 a c. 591.'
+  checked_on: '2026-10-13'
+  status: verified
+- type: lived_in
+  place: tel-abib
+  inferred: false
+  sources:
+  - ezequiel-3
+  - it-ezequiel
+  - ezequiel-8
+  - rr-cosas-detestables-en-el-templo
+  reason: 'Eze 3:15: se quedó donde vivían los desterrados de Tel-Abib, y en 3:24 tiene allí su casa. Perspicacia «Ezequiel»,
+    párr. 5, dice que se estableció entre ellos.'
+  checked_on: '2026-10-13'
+  status: verified
+perspicacia: '1200001469'
+history:
+- date: '2026-10-13'
+  change: 'La residencia pasa de la ciudad de Babilonia a la tierra de los caldeos: Eze 1:1-3 lo pone junto al río Kebar,
+    lejos de la capital, y Perspicacia «Tel-abib» lo sitúa allí.'
+  source: ezequiel-1
+checked_on: '2026-10-13'
 status: verified

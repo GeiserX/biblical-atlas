@@ -1,0 +1,51 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: ezequiel-compara-al-faraon-con-un-cedro-talado
+title: Ezequiel compara al faraón con un cedro que será talado
+type: speech
+date:
+  from: -606
+  to: -606
+  precision: day
+  approx: false
+  type: derived
+  chronology: tnm
+  text: 1 de siván de 607 a.e.c.
+  detail:
+    month: sivan
+    day: 1
+  note: Eze 31:1 da el año 11 del destierro de Joaquín. El año noveno, cuando empezó el sitio de Jerusalén, es 609 («Toda
+    Escritura», libro 26, párr. 20); dos años más dan 607.
+narrative_order:
+  series: ezequiel
+  order: 31001
+places:
+- tel-abib
+- caldea
+- egipto
+people:
+- ezequiel
+present:
+- ezequiel
+roles:
+  ezequiel: spoke
+passages:
+- Eze 31:1-18
+summary: 'Poco antes de la caída de Jerusalén, Jehová da a Ezequiel un mensaje para el faraón: Egipto es como un cedro enorme
+  y soberbio que un conquistador cortará y que bajará a la Tumba.'
+reason: 'Eze 31:1-18. La Atalaya de 2007 y Perspicacia «Árbol» aplican el cedro al faraón y sus multitudes. El sitio se deduce:
+  Ezequiel vivía en Tel-Abib (Perspicacia «Ezequiel»). Fecha: cuenta nuestra en date.note.'
+sources:
+- ezequiel-31
+- w07-ezequiel-2
+- it-arbol
+- it-ezequiel
+- si-ezequiel
+links:
+- title: Ezequiel 31 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/ezequiel/31/
+  type: bible
+- title: 'Perspicacia: «Ezequiel»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ezequiel/
+  type: perspicacia
+checked_on: '2026-10-13'
+status: pending
