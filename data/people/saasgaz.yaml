@@ -1,0 +1,29 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: saasgaz
+name: Saasgaz
+names:
+- name: Saasgaz
+perspicacia: '1200003923'
+summary: Eunuco de Asuero que guardaba a las concubinas en la segunda casa de las mujeres, adonde pasaba cada joven tras su
+  noche con el rey.
+reason: Perspicacia «Saasgaz»; Est 2:14.
+sources:
+- it-saasgaz
+- ester-2
+links:
+- title: 'Perspicacia: «Saasgaz»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Saasgaz/
+  type: perspicacia
+relations:
+- type: tie
+  person: jerjes-i
+  word: master
+  inferred: false
+  sources:
+  - ester-2
+  - it-saasgaz
+  reason: 'Est 2:14: el eunuco del rey que estaba a cargo de las concubinas.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified

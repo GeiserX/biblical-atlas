@@ -1,0 +1,45 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: ester-pide-un-segundo-dia-en-susa
+title: Ester pide al rey un segundo día de lucha en Susa
+date:
+  from: -482
+  to: -482
+  precision: day
+  approx: true
+  type: derived
+  chronology: tnm
+  text: 13 de adar de 483 a.e.c. (cálculo nuestro)
+  detail:
+    month: adar
+    day: 13
+  note: Perspicacia «Purim» pone el decreto de Hamán el 13 de nisán del año duodécimo, al parecer en 484; adar, el duodécimo
+    mes de ese mismo año, cae en 483.
+narrative_order:
+  series: ester
+  order: 9011
+places:
+- susa
+people:
+- ester
+- jerjes-i
+present:
+- ester
+- jerjes-i
+passages:
+- Est 9:11-14
+summary: Ese mismo día el rey cuenta a Ester los muertos del castillo de Susa y le ofrece lo que quiera. Ella pide que los
+  judíos de Susa luchen también mañana y que cuelguen los cuerpos de los hijos de Hamán.
+reason: 'Est 9:11-14: la petición llega el 13 de adar, el día de la lucha («ese día», v. 11). Perspicacia «Purim» y «Toda
+  Escritura», libro 17, párr. 15. El año 483 es nuestra cuenta.'
+sources:
+- ester-9
+- it-purim
+- it-ester
+- si-ester
+links:
+- title: Ester 9 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/ester/9/
+  type: bible
+search: Ester pide un segundo día de lucha en Susa
+checked_on: '2026-10-14'
+status: pending

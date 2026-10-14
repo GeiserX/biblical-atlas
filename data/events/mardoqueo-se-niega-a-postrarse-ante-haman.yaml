@@ -1,0 +1,45 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: mardoqueo-se-niega-a-postrarse-ante-haman
+title: Mardoqueo se niega a postrarse ante Hamán
+date:
+  from: -484
+  to: -483
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre c. 485 y 484 a.e.c. (tiempo narrativo: unos cuatro años después de la coronación de Ester y antes del nisán
+    del año duodécimo)'
+narrative_order:
+  series: ester
+  order: 3001
+places:
+- susa
+people:
+- haman
+- mardoqueo
+- jerjes-i
+present:
+- haman
+- mardoqueo
+- jerjes-i
+passages:
+- Est 3:1-6
+summary: Asuero pone a Hamán por encima de todos los príncipes y manda que se postren ante él. Mardoqueo, que es judío, se
+  niega día tras día. Furioso, Hamán decide exterminar a todo su pueblo.
+reason: 'Est 3:1-6; Perspicacia «Mardoqueo», núm. 2, y «Susa». «Toda Escritura», libro 17, párr. 9: Hamán asciende unos cuatro
+  años después de la coronación (c. 489). Va antes del nisán del duodécimo, 484 según «Purim».'
+sources:
+- ester-3
+- si-ester
+- it-mardoqueo
+- it-haman
+- it-susa
+- it-asuero
+- it-purim
+links:
+- title: 'Perspicacia: «Mardoqueo»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Mardoqueo/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified

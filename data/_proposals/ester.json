@@ -1,0 +1,1704 @@
+{
+ "formato": "biblical-atlas/propuesta-cobertura/1",
+ "libro": "ester",
+ "agente": "escritor-ester",
+ "leido": "2026-10-14",
+ "cobertura": {},
+ "fuentes": {},
+ "cambios": [
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jerjes-i",
+   "campo": "sources",
+   "valores": [
+    "ester-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jerjes-i",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "vasti",
+     "word": "wife",
+     "inferred": false,
+     "sources": [
+      "ester-1",
+      "it-vasti"
+     ],
+     "reason": "Est 1:9-12, 17: Vasti era la reina del rey Asuero; Perspicacia «Vasti» la llama su reina consorte.",
+     "checked_on": "2026-10-14",
+     "status": "verified"
+    },
+    {
+     "type": "tie",
+     "person": "carsena",
+     "word": "adviser",
+     "inferred": false,
+     "sources": [
+      "ester-1",
+      "it-memucan"
+     ],
+     "reason": "Est 1:13-15: Carsená figura entre los siete príncipes persas y medos a quienes el rey consultaba; Perspicacia «Memucán» los llama sus consejeros más íntimos.",
+     "checked_on": "2026-10-14",
+     "status": "verified"
+    },
+    {
+     "type": "tie",
+     "person": "setar",
+     "word": "adviser",
+     "inferred": false,
+     "sources": [
+      "ester-1",
+      "it-memucan"
+     ],
+     "reason": "Est 1:13-15: Setar figura entre los siete príncipes persas y medos a quienes el rey consultaba; Perspicacia «Memucán» los llama sus consejeros más íntimos.",
+     "checked_on": "2026-10-14",
+     "status": "verified"
+    },
+    {
+     "type": "tie",
+     "person": "admata",
+     "word": "adviser",
+     "inferred": false,
+     "sources": [
+      "ester-1",
+      "it-memucan"
+     ],
+     "reason": "Est 1:13-15: Admatá figura entre los siete príncipes persas y medos a quienes el rey consultaba; Perspicacia «Memucán» los llama sus consejeros más íntimos.",
+     "checked_on": "2026-10-14",
+     "status": "verified"
+    },
+    {
+     "type": "tie",
+     "person": "meres",
+     "word": "adviser",
+     "inferred": false,
+     "sources": [
+      "ester-1",
+      "it-memucan"
+     ],
+     "reason": "Est 1:13-15: Meres figura entre los siete príncipes persas y medos a quienes el rey consultaba; Perspicacia «Memucán» los llama sus consejeros más íntimos.",
+     "checked_on": "2026-10-14",
+     "status": "verified"
+    },
+    {
+     "type": "tie",
+     "person": "marsena",
+     "word": "adviser",
+     "inferred": false,
+     "sources": [
+      "ester-1",
+      "it-memucan"
+     ],
+     "reason": "Est 1:13-15: Marsená figura entre los siete príncipes persas y medos a quienes el rey consultaba; Perspicacia «Memucán» los llama sus consejeros más íntimos.",
+     "checked_on": "2026-10-14",
+     "status": "verified"
+    },
+    {
+     "type": "tie",
+     "person": "tarsis-principe-de-asuero",
+     "word": "adviser",
+     "inferred": false,
+     "sources": [
+      "ester-1",
+      "it-memucan"
+     ],
+     "reason": "Est 1:13-15: Tarsis figura entre los siete príncipes persas y medos a quienes el rey consultaba; Perspicacia «Memucán» los llama sus consejeros más íntimos.",
+     "checked_on": "2026-10-14",
+     "status": "verified"
+    },
+    {
+     "type": "tie",
+     "person": "memucan",
+     "word": "adviser",
+     "inferred": false,
+     "sources": [
+      "ester-1",
+      "it-memucan"
+     ],
+     "reason": "Est 1:16-21: Memucán habló ante el rey y los príncipes, y el rey hizo lo que él propuso.",
+     "checked_on": "2026-10-14",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "susa",
+   "campo": "sources",
+   "valores": [
+    "ester-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "tarsis-hijo-de-javan",
+   "campo": "distinct_from",
+   "valores": [
+    "tarsis-principe-de-asuero"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "tarsis-hijo-de-bilhan",
+   "campo": "distinct_from",
+   "valores": [
+    "tarsis-principe-de-asuero"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "events",
+   "id": "vasti-depuesta",
+   "campo": "passages",
+   "antes": [
+    "Est 1:1-22"
+   ],
+   "despues": [
+    "Est 1:5-22"
+   ],
+   "historial": {
+    "date": "2026-10-14",
+    "change": "Est 1:1-4, los 180 días en que el rey mostró su riqueza, pasan a un suceso propio (asuero-muestra-la-riqueza-de-su-reino); este queda en el banquete de siete días y la caída de Vasti.",
+    "source": "ester-1"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "events",
+   "id": "vasti-depuesta",
+   "campo": "summary",
+   "antes": "En el tercer año de su reinado, Asuero mostró su riqueza y dio un banquete en Susa. La reina Vasti se negó a presentarse ante los invitados y el rey la repudió.",
+   "despues": "El séptimo día de un banquete en Susa, Asuero manda llamar a Vasti para lucir su belleza. Ella se niega; por consejo de Memucán, el rey la aparta como reina y lo comunica por carta a todas las provincias.",
+   "historial": {
+    "date": "2026-10-14",
+    "change": "El resumen se ciñe a Est 1:5-22 y nombra a Memucán, cuyo consejo decide la caída de Vasti.",
+    "source": "ester-1"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "events",
+   "id": "vasti-depuesta",
+   "campo": "narrative_order",
+   "antes": null,
+   "despues": {
+    "series": "ester",
+    "order": 1005
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "events",
+   "id": "vasti-depuesta",
+   "campo": "people",
+   "valores": [
+    "vasti",
+    "mehuman",
+    "bizta",
+    "harbona",
+    "bigta",
+    "abagta",
+    "zetar",
+    "carcas",
+    "carsena",
+    "setar",
+    "admata",
+    "tarsis-principe-de-asuero",
+    "meres",
+    "marsena",
+    "memucan"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "events",
+   "id": "vasti-depuesta",
+   "campo": "sources",
+   "valores": [
+    "ester-1",
+    "it-vasti",
+    "it-memucan"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "people",
+   "id": "ester",
+   "campo": "perspicacia",
+   "antes": null,
+   "despues": "1200001430"
+  },
+  {
+   "op": "cambiar",
+   "tipo": "people",
+   "id": "ester",
+   "campo": "names",
+   "antes": [
+    {
+     "name": "Ester"
+    },
+    {
+     "name": "Hadassá"
+    }
+   ],
+   "despues": [
+    {
+     "name": "Ester"
+    },
+    {
+     "name": "Hadassá",
+     "note": "Su nombre hebreo, que significa «mirto» (nota de Est 2:7)."
+    }
+   ],
+   "historial": {
+    "date": "2026-10-14",
+    "change": "Hadassá lleva la nota que da la TNM en Est 2:7: es el nombre hebreo de Ester.",
+    "source": "ester-2"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "ester",
+   "campo": "sources",
+   "valores": [
+    "it-hegai"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "ester",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "abihail-padre-de-ester",
+     "word": "father",
+     "inferred": false,
+     "sources": [
+      "ester-2",
+      "it-abihail"
+     ],
+     "reason": "Est 2:15: Abihail era el padre de Ester.",
+     "checked_on": "2026-10-14",
+     "status": "verified"
+    },
+    {
+     "type": "kin",
+     "person": "benjamin-hijo-de-jacob",
+     "word": "ancestor",
+     "inferred": true,
+     "sources": [
+      "it-ester",
+      "ester-2"
+     ],
+     "reason": "Perspicacia «Ester»: de la tribu de Benjamín, como su primo Mardoqueo (Est 2:5-7).",
+     "checked_on": "2026-10-14",
+     "status": "verified"
+    },
+    {
+     "type": "tie",
+     "person": "hegai",
+     "word": "custodian",
+     "inferred": false,
+     "sources": [
+      "ester-2",
+      "it-hegai"
+     ],
+     "reason": "Est 2:8, 15: llevada a la casa del rey, quedó bajo el cuidado de Hegái, guardián de las mujeres.",
+     "checked_on": "2026-10-14",
+     "status": "verified"
+    },
+    {
+     "type": "holds_office",
+     "office": "queen",
+     "inferred": false,
+     "sources": [
+      "ester-2",
+      "it-ester"
+     ],
+     "reason": "Est 2:17: el rey le puso el adorno real en la cabeza y la hizo reina; Perspicacia «Ester»: en el año séptimo de Asuero.",
+     "checked_on": "2026-10-14",
+     "status": "verified"
+    },
+    {
+     "type": "succeeds",
+     "person": "vasti",
+     "office": "queen",
+     "inferred": false,
+     "sources": [
+      "ester-2",
+      "it-vasti"
+     ],
+     "reason": "Est 2:4, 17: Asuero la hizo reina en lugar de Vasti.",
+     "checked_on": "2026-10-14",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "people",
+   "id": "mardoqueo",
+   "campo": "perspicacia",
+   "antes": null,
+   "despues": "1200003111#2"
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "mardoqueo",
+   "campo": "sources",
+   "valores": [
+    "ester-2",
+    "it-jair"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "mardoqueo",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "jair-padre-de-mardoqueo",
+     "word": "father",
+     "inferred": false,
+     "sources": [
+      "ester-2",
+      "it-jair"
+     ],
+     "reason": "Est 2:5: Mardoqueo, hijo de Jaír.",
+     "checked_on": "2026-10-14",
+     "status": "verified"
+    },
+    {
+     "type": "kin",
+     "person": "simei-antepasado-de-mardoqueo",
+     "word": "ancestor",
+     "inferred": false,
+     "sources": [
+      "ester-2",
+      "it-simei"
+     ],
+     "reason": "Est 2:5 lo pone en su linaje, y Perspicacia «Simeí», núm. 15, lo llama antepasado de Mardoqueo.",
+     "checked_on": "2026-10-14",
+     "status": "verified"
+    },
+    {
+     "type": "kin",
+     "person": "quis-antepasado-de-mardoqueo",
+     "word": "ancestor",
+     "inferred": false,
+     "sources": [
+      "ester-2",
+      "it-quis",
+      "it-mardoqueo"
+     ],
+     "reason": "Est 2:5 lo pone en su linaje; Perspicacia «Mardoqueo», núm. 2, ve posible que fuera su bisabuelo o alguien anterior.",
+     "checked_on": "2026-10-14",
+     "status": "verified"
+    },
+    {
+     "type": "kin",
+     "person": "benjamin-hijo-de-jacob",
+     "word": "ancestor",
+     "inferred": false,
+     "sources": [
+      "ester-2",
+      "it-mardoqueo"
+     ],
+     "reason": "Est 2:5: un benjaminita; Perspicacia «Mardoqueo», núm. 2: él y Ester eran de la tribu de Benjamín.",
+     "checked_on": "2026-10-14",
+     "status": "verified"
+    },
+    {
+     "type": "kin",
+     "person": "abihail-padre-de-ester",
+     "word": "uncle",
+     "inferred": false,
+     "sources": [
+      "ester-2",
+      "it-abihail"
+     ],
+     "reason": "Est 2:15: Mardoqueo era sobrino de Abihail, el padre de Ester.",
+     "checked_on": "2026-10-14",
+     "status": "verified"
+    },
+    {
+     "type": "tie",
+     "person": "jerjes-i",
+     "word": "master",
+     "inferred": false,
+     "sources": [
+      "ester-2",
+      "it-mardoqueo",
+      "si-ester",
+      "ester-10"
+     ],
+     "reason": "Est 2:19, 21 lo sienta a la puerta del rey, y Est 10:3 lo hace el segundo después de Asuero. Perspicacia «Mardoqueo», núm. 2: estaba al servicio del rey.",
+     "checked_on": "2026-10-14",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jerjes-i",
+   "campo": "sources",
+   "valores": [
+    "ester-2"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "susa",
+   "campo": "sources",
+   "valores": [
+    "ester-2"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "events",
+   "id": "nabucodonosor-se-lleva-a-joaquin-a-babilonia",
+   "campo": "passages",
+   "valores": [
+    "Est 2:6"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "sama-hijo-de-jese",
+   "campo": "distinct_from",
+   "valores": [
+    "simei-antepasado-de-mardoqueo"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "simei-descendiente-de-ladan",
+   "campo": "distinct_from",
+   "valores": [
+    "simei-antepasado-de-mardoqueo"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "simei-el-ramatita",
+   "campo": "distinct_from",
+   "valores": [
+    "simei-antepasado-de-mardoqueo"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "simei-hermano-de-conanias",
+   "campo": "distinct_from",
+   "valores": [
+    "simei-antepasado-de-mardoqueo"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "simei-hijo-de-ela",
+   "campo": "distinct_from",
+   "valores": [
+    "simei-antepasado-de-mardoqueo"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "simei-hijo-de-gog",
+   "campo": "distinct_from",
+   "valores": [
+    "simei-antepasado-de-mardoqueo"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "simei-hijo-de-guera",
+   "campo": "distinct_from",
+   "valores": [
+    "simei-antepasado-de-mardoqueo"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "simei-hijo-de-guerson",
+   "campo": "distinct_from",
+   "valores": [
+    "simei-antepasado-de-mardoqueo"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "simei-hijo-de-jahat",
+   "campo": "distinct_from",
+   "valores": [
+    "simei-antepasado-de-mardoqueo"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "simei-hijo-de-jedutun",
+   "campo": "distinct_from",
+   "valores": [
+    "simei-antepasado-de-mardoqueo"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "simei-hijo-de-libni",
+   "campo": "distinct_from",
+   "valores": [
+    "simei-antepasado-de-mardoqueo"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "simei-hijo-de-pedaya",
+   "campo": "distinct_from",
+   "valores": [
+    "simei-antepasado-de-mardoqueo"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "simei-hijo-de-zacur",
+   "campo": "distinct_from",
+   "valores": [
+    "simei-antepasado-de-mardoqueo"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "simei-levita-de-ezequias",
+   "campo": "distinct_from",
+   "valores": [
+    "simei-antepasado-de-mardoqueo"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "simei-padre-de-jaquim",
+   "campo": "distinct_from",
+   "valores": [
+    "simei-antepasado-de-mardoqueo"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "simei-partidario-de-david",
+   "campo": "distinct_from",
+   "valores": [
+    "simei-antepasado-de-mardoqueo"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "quis-hijo-de-mahli",
+   "campo": "distinct_from",
+   "valores": [
+    "quis-antepasado-de-mardoqueo"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "quis-hijo-de-jeiel",
+   "campo": "distinct_from",
+   "valores": [
+    "quis-antepasado-de-mardoqueo"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "quis-hijo-de-ner",
+   "campo": "distinct_from",
+   "valores": [
+    "quis-antepasado-de-mardoqueo"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "quis-hijo-de-abdi",
+   "campo": "distinct_from",
+   "valores": [
+    "quis-antepasado-de-mardoqueo"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jair-hijo-de-segub",
+   "campo": "distinct_from",
+   "valores": [
+    "jair-padre-de-mardoqueo"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jair-juez",
+   "campo": "distinct_from",
+   "valores": [
+    "jair-padre-de-mardoqueo"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jair-padre-de-elhanan",
+   "campo": "distinct_from",
+   "valores": [
+    "jair-padre-de-mardoqueo"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "abihail-padre-de-zuriel",
+   "campo": "distinct_from",
+   "valores": [
+    "abihail-padre-de-ester"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "abihail-esposa-de-abisur",
+   "campo": "distinct_from",
+   "valores": [
+    "abihail-padre-de-ester"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "abihail-hijo-de-huri",
+   "campo": "distinct_from",
+   "valores": [
+    "abihail-padre-de-ester"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "abihail-hija-de-eliab",
+   "campo": "distinct_from",
+   "valores": [
+    "abihail-padre-de-ester"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "events",
+   "id": "ester-reina",
+   "campo": "narrative_order",
+   "antes": null,
+   "despues": {
+    "series": "ester",
+    "order": 2015
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "events",
+   "id": "ester-reina",
+   "campo": "people",
+   "valores": [
+    "hegai"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "events",
+   "id": "ester-reina",
+   "campo": "sources",
+   "valores": [
+    "it-vasti"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "events",
+   "id": "ester-reina",
+   "campo": "date",
+   "antes": {
+    "from": -488,
+    "to": -488,
+    "precision": "month",
+    "approx": false,
+    "type": "derived",
+    "chronology": "tnm",
+    "text": "489 a.e.c. (cálculo nuestro)",
+    "detail": {
+     "month": "tebet"
+    },
+    "note": "Est 2:16 da el mes de tebet del año séptimo de Asuero. Si su primer año es 495, como explica Perspicacia, el séptimo es 489."
+   },
+   "despues": {
+    "from": -488,
+    "to": -488,
+    "precision": "month",
+    "approx": true,
+    "type": "derived",
+    "chronology": "tnm",
+    "text": "tebet de 489 a.e.c. (cálculo nuestro)",
+    "detail": {
+     "month": "tebet"
+    },
+    "note": "Est 2:16 da el tebet del año séptimo de Asuero. Contando 495 como su primer año («Asuero», núm. 3), es 489; Perspicacia «Vasti» la pone unos cuatro años después de 493."
+   },
+   "historial": {
+    "date": "2026-10-14",
+    "change": "Perspicacia «Vasti» pone la elección unos cuatro años después de 493, y Est 2:16 da el tebet del año séptimo. El año sigue siendo cuenta nuestra, ahora aproximada.",
+    "source": "it-vasti"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "events",
+   "id": "ester-reina",
+   "campo": "reason",
+   "antes": "Perspicacia «Ester» y «Asuero», núm. 3: elegida en el séptimo año. Ninguna fuente da 489: es nuestra cuenta, por eso queda pendiente.",
+   "despues": "Est 2:16, 17: tebet del año séptimo de Asuero. Perspicacia «Vasti»: unos cuatro años después de su caída, en 493. Ninguna fuente da 489: es nuestra cuenta, por eso queda pendiente.",
+   "historial": {
+    "date": "2026-10-14",
+    "change": "La razón cita Est 2:16, 17 y Perspicacia «Vasti».",
+    "source": "ester-2"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "people",
+   "id": "haman",
+   "campo": "perspicacia",
+   "antes": null,
+   "despues": "1200001833"
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "haman",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "hamedata",
+     "word": "father",
+     "sources": [
+      "ester-3",
+      "it-hamedata"
+     ],
+     "reason": "Est 3:1, 10 lo llaman hijo de Hamedata el agaguita.",
+     "inferred": false,
+     "checked_on": "2026-10-14",
+     "status": "verified"
+    },
+    {
+     "type": "tie",
+     "person": "jerjes-i",
+     "word": "master",
+     "sources": [
+      "ester-3",
+      "it-haman"
+     ],
+     "reason": "Est 3:1, 2: Asuero lo asciende sobre todos los príncipes y manda que se postren ante él. Perspicacia «Hamán» lo llama siervo del rey y primer ministro.",
+     "inferred": false,
+     "checked_on": "2026-10-14",
+     "status": "verified"
+    },
+    {
+     "type": "tie",
+     "person": "mardoqueo",
+     "word": "enemy",
+     "sources": [
+      "ester-3",
+      "ester-5",
+      "it-mardoqueo"
+     ],
+     "reason": "Est 3:5, 6: furioso porque Mardoqueo no se postra, busca su muerte y la de su pueblo; en 5:9-14 hace levantar un madero para colgarlo.",
+     "inferred": false,
+     "checked_on": "2026-10-14",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "mardoqueo",
+   "campo": "sources",
+   "valores": [
+    "ester-3"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "mardoqueo",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "tie",
+     "person": "jerjes-i",
+     "word": "master",
+     "sources": [
+      "ester-3",
+      "it-ester"
+     ],
+     "reason": "Est 3:2, 3: los siervos de la corte que están a la puerta del rey le reprochan que desobedezca al rey; Perspicacia «Ester» lo cuenta entre esos siervos.",
+     "inferred": false,
+     "checked_on": "2026-10-14",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jerjes-i",
+   "campo": "sources",
+   "valores": [
+    "ester-3"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "susa",
+   "campo": "sources",
+   "valores": [
+    "ester-3"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "events",
+   "id": "decreto-de-haman",
+   "campo": "date",
+   "antes": {
+    "from": -483,
+    "to": -483,
+    "precision": "day",
+    "approx": false,
+    "type": "derived",
+    "chronology": "tnm",
+    "text": "484 a.e.c. (cálculo nuestro)",
+    "detail": {
+     "month": "nisan",
+     "day": 13
+    },
+    "note": "Est 3:7, 12 da el día 13 de nisán del año duodécimo de Asuero. Contando 495 como su primer año, el duodécimo es 484."
+   },
+   "despues": {
+    "from": -483,
+    "to": -483,
+    "precision": "day",
+    "approx": true,
+    "type": "anchored",
+    "chronology": "tnm",
+    "text": "13 de nisán de 484 a.e.c.",
+    "detail": {
+     "month": "nisan",
+     "day": 13
+    }
+   },
+   "historial": {
+    "date": "2026-10-14",
+    "change": "Fecha anclada: Perspicacia «Purim» pone el 13 de nisán del año duodécimo, al parecer en la primavera de 484. Antes era nuestra cuenta.",
+    "source": "it-purim"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "events",
+   "id": "decreto-de-haman",
+   "campo": "passages",
+   "antes": [
+    "Est 3:7-15",
+    "Est 7:1-10",
+    "Est 8:3-14"
+   ],
+   "despues": [
+    "Est 3:7-15"
+   ],
+   "historial": {
+    "date": "2026-10-14",
+    "change": "El suceso es solo la escena del decreto. La caída de Hamán (Est 7) y el segundo decreto (Est 8) son escenas de sus capítulos.",
+    "source": "ester-3"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "events",
+   "id": "decreto-de-haman",
+   "campo": "people",
+   "antes": [
+    "haman",
+    "jerjes-i",
+    "mardoqueo",
+    "ester"
+   ],
+   "despues": [
+    "haman",
+    "jerjes-i"
+   ],
+   "historial": {
+    "date": "2026-10-14",
+    "change": "En Est 3:7-15 solo actúan Hamán y el rey; Mardoqueo y Ester van en las escenas siguientes.",
+    "source": "ester-3"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "events",
+   "id": "decreto-de-haman",
+   "campo": "present",
+   "antes": null,
+   "despues": [
+    "haman",
+    "jerjes-i"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "events",
+   "id": "decreto-de-haman",
+   "campo": "roles",
+   "antes": {
+    "haman": {
+     "role": "died",
+     "date": {
+      "from": -483,
+      "to": -483,
+      "precision": "month",
+      "approx": true,
+      "type": "derived",
+      "chronology": "tnm",
+      "text": "nisán de 484 a.e.c. (cálculo nuestro)",
+      "detail": {
+       "month": "nisan"
+      },
+      "note": "Est 4:16, 5:1, 5:8 y 7:10: lo cuelgan pocos días después del decreto del 13 de nisán, el mismo año."
+     }
+    },
+    "mardoqueo": {
+     "role": "wrote",
+     "date": {
+      "from": -483,
+      "to": -483,
+      "precision": "day",
+      "approx": false,
+      "type": "derived",
+      "chronology": "tnm",
+      "text": "23 de siván de 484 a.e.c. (cálculo nuestro)",
+      "detail": {
+       "month": "sivan",
+       "day": 23
+      },
+      "note": "Est 8:9 da el 23 de siván; el relato sigue en el año duodécimo de Asuero, el del primer decreto."
+     }
+    }
+   },
+   "despues": {},
+   "historial": {
+    "date": "2026-10-14",
+    "change": "Sin papeles: la muerte de Hamán (Est 7:10) y el decreto que escribe Mardoqueo (Est 8:9) pasan en otras escenas.",
+    "source": "ester-3"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "events",
+   "id": "decreto-de-haman",
+   "campo": "summary",
+   "antes": "Hamán echó suertes y logró un decreto para exterminar a los judíos el 13 de adar. Ester lo desenmascaró, Hamán fue colgado y un segundo decreto permitió a los judíos defenderse.",
+   "despues": "Hamán echa pur, la suerte, y sale el mes de adar. Acusa a los judíos ante el rey y recibe su anillo. El 13 de nisán se manda a todas las provincias exterminarlos el 13 de adar.",
+   "historial": {
+    "date": "2026-10-14",
+    "change": "El resumen cuenta solo Est 3:7-15.",
+    "source": "ester-3"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "events",
+   "id": "decreto-de-haman",
+   "campo": "reason",
+   "antes": "Perspicacia «Asuero», núm. 3, «Hamán» y «Ester»: decreto en el año duodécimo. El año 484 es nuestra cuenta, por eso queda pendiente.",
+   "despues": "Est 3:7-15. Perspicacia «Purim» pone el decreto el 13 de nisán del año duodécimo de Asuero, al parecer en la primavera de 484; «Pur» explica la palabra.",
+   "historial": {
+    "date": "2026-10-14",
+    "change": "La razón cita la fecha de Perspicacia «Purim».",
+    "source": "it-purim"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "events",
+   "id": "decreto-de-haman",
+   "campo": "sources",
+   "antes": [
+    "it-asuero",
+    "it-haman",
+    "it-ester",
+    "ester-3",
+    "ester-7",
+    "ester-8"
+   ],
+   "despues": [
+    "ester-3",
+    "it-purim",
+    "it-pur",
+    "it-haman",
+    "it-asuero",
+    "it-ester"
+   ],
+   "historial": {
+    "date": "2026-10-14",
+    "change": "Salen Ester 7 y 8, que son otras escenas; entran Perspicacia «Purim» y «Pur».",
+    "source": "ester-3"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "events",
+   "id": "decreto-de-haman",
+   "campo": "narrative_order",
+   "antes": null,
+   "despues": {
+    "series": "ester",
+    "order": 3007
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "events",
+   "id": "decreto-de-haman",
+   "campo": "status",
+   "antes": "pending",
+   "despues": "verified",
+   "historial": {
+    "date": "2026-10-14",
+    "change": "Verificado: la fecha ya no es cuenta nuestra.",
+    "source": "it-purim"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "ester",
+   "campo": "sources",
+   "valores": [
+    "ester-4"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "ester",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "holds_office",
+     "office": "queen",
+     "sources": [
+      "ester-4",
+      "ester-5",
+      "it-ester"
+     ],
+     "reason": "Est 4:4 y 5:2, 3 la llaman la reina. Perspicacia «Ester»: Asuero la escogió como reina en su año séptimo.",
+     "inferred": false,
+     "checked_on": "2026-10-14",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "mardoqueo",
+   "campo": "sources",
+   "valores": [
+    "ester-4"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "susa",
+   "campo": "sources",
+   "valores": [
+    "ester-4"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "haman",
+   "campo": "sources",
+   "valores": [
+    "ester-5"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "haman",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "zeres",
+     "word": "wife",
+     "sources": [
+      "ester-5",
+      "it-zeres"
+     ],
+     "reason": "Est 5:10, 14: su esposa Zeres le aconseja, con sus amigos, el madero para Mardoqueo.",
+     "inferred": false,
+     "checked_on": "2026-10-14",
+     "status": "verified"
+    },
+    {
+     "type": "lived_in",
+     "place": "susa",
+     "inferred": true,
+     "sources": [
+      "ester-5",
+      "it-susa"
+     ],
+     "reason": "Est 5:10: tras el banquete del rey vuelve a su casa con Zeres. Perspicacia «Susa» hace de Susa el marco del libro.",
+     "checked_on": "2026-10-14",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "ester",
+   "campo": "sources",
+   "valores": [
+    "ester-5"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "mardoqueo",
+   "campo": "sources",
+   "valores": [
+    "ester-5"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jerjes-i",
+   "campo": "sources",
+   "valores": [
+    "ester-5"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "haman",
+   "campo": "sources",
+   "valores": [
+    "ester-6"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "haman",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "zeres",
+     "word": "wife",
+     "sources": [
+      "ester-6",
+      "it-zeres"
+     ],
+     "reason": "Est 6:13: Hamán se lo cuenta todo a su esposa Zeres.",
+     "inferred": false,
+     "checked_on": "2026-10-14",
+     "status": "verified"
+    },
+    {
+     "type": "tie",
+     "person": "jerjes-i",
+     "word": "master",
+     "sources": [
+      "ester-6",
+      "it-haman"
+     ],
+     "reason": "Est 6:4-11: el rey le manda honrar a Mardoqueo y él obedece. Perspicacia «Hamán» lo llama siervo de Asuero y su primer ministro.",
+     "inferred": false,
+     "checked_on": "2026-10-14",
+     "status": "verified"
+    },
+    {
+     "type": "tie",
+     "person": "mardoqueo",
+     "word": "enemy",
+     "sources": [
+      "ester-6",
+      "it-haman",
+      "it-agaguita"
+     ],
+     "reason": "Est 6:4: Hamán acudía al rey para pedir la muerte de Mardoqueo en su madero, y en 6:13 empieza a caer ante él. Perspicacia «Agaguita» los ve enemigos de linaje: amalequita y benjaminita.",
+     "inferred": false,
+     "checked_on": "2026-10-14",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "mardoqueo",
+   "campo": "sources",
+   "valores": [
+    "ester-6"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "mardoqueo",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "tie",
+     "person": "jerjes-i",
+     "word": "master",
+     "sources": [
+      "ester-6",
+      "it-mardoqueo"
+     ],
+     "reason": "Est 6:10 lo sitúa sentado a la puerta del palacio, y 6:2 recuerda que protegió al rey. Perspicacia «Mardoqueo», núm. 2, dice que estaba al servicio de Asuero.",
+     "inferred": false,
+     "checked_on": "2026-10-14",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jerjes-i",
+   "campo": "sources",
+   "valores": [
+    "ester-6"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "ester",
+   "campo": "sources",
+   "valores": [
+    "ester-7"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "ester",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "tie",
+     "person": "haman",
+     "word": "enemy",
+     "sources": [
+      "ester-7",
+      "it-ester"
+     ],
+     "reason": "Est 7:4-6: Ester lo acusa ante el rey de ser el adversario y enemigo que la había vendido a la muerte con todo su pueblo.",
+     "inferred": false,
+     "checked_on": "2026-10-14",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "haman",
+   "campo": "sources",
+   "valores": [
+    "ester-7"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "haman",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "died_in",
+     "place": "susa",
+     "sources": [
+      "ester-7",
+      "it-haman",
+      "it-susa"
+     ],
+     "reason": "Est 7:9, 10: lo colgaron en el madero que había levantado en su casa. El texto no nombra el sitio; Perspicacia «Susa» hace de Susa el marco del libro.",
+     "inferred": true,
+     "checked_on": "2026-10-14",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "mardoqueo",
+   "campo": "sources",
+   "valores": [
+    "ester-7"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jerjes-i",
+   "campo": "sources",
+   "valores": [
+    "ester-7"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "haman",
+   "campo": "sources",
+   "valores": [
+    "ester-8"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "haman",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "hamedata",
+     "word": "father",
+     "sources": [
+      "ester-8",
+      "it-hamedata"
+     ],
+     "reason": "Est 8:5: Hamán, hijo de Hamedata el agaguita.",
+     "inferred": false,
+     "checked_on": "2026-10-14",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "ester",
+   "campo": "sources",
+   "valores": [
+    "ester-8"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "ester",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "mardoqueo",
+     "word": "cousin",
+     "sources": [
+      "ester-8"
+     ],
+     "reason": "Est 8:1: Ester da a conocer al rey el parentesco que la une a Mardoqueo.",
+     "inferred": false,
+     "checked_on": "2026-10-14",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "mardoqueo",
+   "campo": "sources",
+   "valores": [
+    "ester-8"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jerjes-i",
+   "campo": "sources",
+   "valores": [
+    "ester-8"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "susa",
+   "campo": "sources",
+   "valores": [
+    "ester-8"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "etiopia",
+   "campo": "sources",
+   "valores": [
+    "ester-8"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "abihail-padre-de-zuriel",
+   "campo": "distinct_from",
+   "valores": [
+    "abihail-padre-de-ester"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "abihail-esposa-de-abisur",
+   "campo": "distinct_from",
+   "valores": [
+    "abihail-padre-de-ester"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "abihail-hijo-de-huri",
+   "campo": "distinct_from",
+   "valores": [
+    "abihail-padre-de-ester"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "abihail-hija-de-eliab",
+   "campo": "distinct_from",
+   "valores": [
+    "abihail-padre-de-ester"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "mardoqueo",
+   "campo": "sources",
+   "valores": [
+    "ester-9"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "ester",
+   "campo": "sources",
+   "valores": [
+    "ester-9"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "haman",
+   "campo": "sources",
+   "valores": [
+    "ester-9"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jerjes-i",
+   "campo": "sources",
+   "valores": [
+    "ester-9"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "susa",
+   "campo": "sources",
+   "valores": [
+    "ester-9"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "haman",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "hamedata",
+     "word": "father",
+     "sources": [
+      "ester-9",
+      "it-haman",
+      "it-hamedata"
+     ],
+     "reason": "Est 9:10, 24: Hamán, hijo de Hamedata el agaguita.",
+     "inferred": false,
+     "checked_on": "2026-10-14",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "ester",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "abihail-padre-de-ester",
+     "word": "father",
+     "sources": [
+      "ester-9",
+      "it-abihail",
+      "it-ester"
+     ],
+     "reason": "Est 9:29: la reina Ester, hija de Abihail, confirma la segunda carta sobre Purim.",
+     "inferred": false,
+     "checked_on": "2026-10-14",
+     "status": "verified"
+    },
+    {
+     "type": "holds_office",
+     "office": "queen",
+     "sources": [
+      "ester-9",
+      "it-ester"
+     ],
+     "reason": "Est 9:12, 29, 31 la llaman reina; con esa autoridad confirma la fiesta de Purim.",
+     "inferred": false,
+     "checked_on": "2026-10-14",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jerjes-i",
+   "campo": "sources",
+   "valores": [
+    "ester-10"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "mardoqueo",
+   "campo": "sources",
+   "valores": [
+    "ester-10"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "persia",
+   "campo": "sources",
+   "valores": [
+    "ester-10"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "mardoqueo",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "tie",
+     "person": "jerjes-i",
+     "word": "master",
+     "sources": [
+      "ester-10",
+      "it-mardoqueo",
+      "si-ester"
+     ],
+     "reason": "Est 10:2, 3: Asuero lo engrandeció y fue el hombre más importante del reino después del rey; Perspicacia lo llama segundo gobernante del imperio.",
+     "inferred": false,
+     "checked_on": "2026-10-14",
+     "status": "verified"
+    }
+   ]
+  }
+ ],
+ "preguntas": [
+  "Cargo de primer ministro o segundo después del rey (Hamán, Est 3:1; Mardoqueo, Est 8:2; 10:3; Perspicacia «Hamán» y «Mardoqueo», núm. 2). El vocabulario no lo tiene: si se añade, Hamán lo lleva y Mardoqueo le sucede.",
+  "Funcionario de la corte o eunuco (Est 1:10; 2:3, 14, 21; 4:5) y sátrapa (Est 8:9; 9:3) no son cargos del vocabulario. Hoy van sin holds_office y con tie master hacia el rey.",
+  "Encargado de la casa de Hamán (Est 8:2): no hay palabra para ese encargo de Mardoqueo; hoy queda en la nota del tramo 8:1-2.",
+  "Reina consorte (Vasti, Est 1:9; Ester, Est 2:17): llevan holds_office queen. Si se separa reina consorte de reina reinante (Atalía), pasan al cargo nuevo.",
+  "Prima: ester/kin/mardoqueo con cousin va en la ficha de Ester aunque el texto nombre antes a Mardoqueo (Est 2:7), porque en la suya diría que Ester es su primo. Con una palabra femenina, pasa a la de Mardoqueo.",
+  "Fecha de ester-reina (Est 2:16, 17): el encargo pedía anclar cada suceso en el año de reinado, pero versiculos.md, sección 6, pone justo esta cuenta (año séptimo de Asuero contando 495) como ejemplo de fecha derivada. Queda derived y pending; lo mismo las escenas de Est 4-8 y de adar.",
+  "Qué Agag (Est 3:1, 10): Perspicacia «Hamán» remite a Agag núm. 1 (Nú 24:7), y «Toda Escritura», libro 17, párr. 9, al rey que mató Samuel (1Sa 15:33). Hasta decidirlo, ningún Agag va en la cobertura de Ester."
+ ]
+}

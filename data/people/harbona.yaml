@@ -1,0 +1,31 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: harbona
+name: Harboná
+names:
+- name: Harboná
+perspicacia: '1200001874'
+summary: Funcionario de la corte de Asuero. Estaba entre los siete que el rey mandó a llamar a Vasti, y en el banquete de
+  Ester le hizo saber que Hamán había levantado un madero para Mardoqueo.
+reason: Perspicacia «Harboná»; Est 1:10-12; 7:9, 10.
+sources:
+- it-harbona
+- ester-1
+- ester-7
+links:
+- title: 'Perspicacia: «Harboná»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Harbon%C3%A1/
+  type: perspicacia
+relations:
+- type: tie
+  person: jerjes-i
+  word: master
+  inferred: false
+  sources:
+  - ester-1
+  - it-harbona
+  - ester-7
+  reason: 'Est 1:10 (también 7:9): uno de los funcionarios de la corte del rey Asuero.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified

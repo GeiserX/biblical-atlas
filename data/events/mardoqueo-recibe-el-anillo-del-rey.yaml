@@ -1,0 +1,46 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: mardoqueo-recibe-el-anillo-del-rey
+title: Asuero da a Mardoqueo el anillo de sellar de Hamán
+date:
+  from: -483
+  to: -483
+  precision: season
+  approx: true
+  type: derived
+  chronology: tnm
+  text: primavera de 484 a.e.c. (cálculo nuestro)
+  detail:
+    season: spring
+  note: 'Días después del 13 de nisán del año duodécimo (Est 3:12; 4:16; 5:1), que Perspicacia «Purim» sitúa al parecer en
+    la primavera de 484. Ninguna fuente fecha esta escena: es cuenta nuestra.'
+narrative_order:
+  series: ester
+  order: 8001
+places:
+- susa
+people:
+- jerjes-i
+- ester
+- mardoqueo
+present:
+- jerjes-i
+- ester
+- mardoqueo
+passages:
+- Est 8:1, 2
+summary: Ese mismo día el rey entrega a Ester los bienes de Hamán. Ella revela que Mardoqueo es pariente suyo; él se presenta
+  ante Asuero, recibe el anillo quitado a Hamán y Ester le confía aquella casa.
+reason: 'Est 8:1, 2; Perspicacia «Mardoqueo», núm. 2: ocupa el puesto de Hamán como primer ministro. «Ese día» es el de la
+  muerte de Hamán.'
+sources:
+- ester-8
+- it-mardoqueo
+- it-haman
+- it-purim
+- si-ester
+links:
+- title: 'Perspicacia: «Mardoqueo»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Mardoqueo/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: pending

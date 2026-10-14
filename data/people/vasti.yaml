@@ -1,0 +1,38 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: vasti
+name: Vasti
+names:
+- name: Vasti
+perspicacia: '1200004546'
+summary: Reina consorte de Asuero. En el tercer año del rey se negó a presentarse ante sus invitados en un banquete de Susa,
+  y el rey, aconsejado por Memucán, la apartó como reina.
+reason: Perspicacia «Vasti»; Est 1:9-22; 2:1, 4, 17.
+sources:
+- it-vasti
+- ester-1
+- ester-2
+links:
+- title: 'Perspicacia: «Vasti»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Vasti/
+  type: perspicacia
+relations:
+- type: holds_office
+  office: queen
+  inferred: false
+  sources:
+  - ester-1
+  - it-vasti
+  reason: 'Est 1:9, 11, 12: el texto la llama la reina Vasti; Perspicacia «Vasti» la hace reina consorte de Asuero.'
+  checked_on: '2026-10-14'
+  status: verified
+- type: lived_in
+  place: susa
+  inferred: true
+  sources:
+  - ester-1
+  - it-vasti
+  reason: 'Est 1:2, 9: dio su banquete para las mujeres en la casa real de Asuero, que reinaba en el castillo de Susa.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified

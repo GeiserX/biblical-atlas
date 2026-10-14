@@ -1,0 +1,29 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: abagta
+name: Abagtá
+names:
+- name: Abagtá
+perspicacia: '1200000008'
+summary: 'Uno de los siete funcionarios que servían a Asuero en el palacio de Susa. Para Perspicacia quizá no eran eunucos
+  de verdad: la palabra hebrea significa ante todo oficial de la corte.'
+reason: Perspicacia «Abagtá»; Est 1:10.
+sources:
+- it-abagta
+- ester-1
+links:
+- title: 'Perspicacia: «Abagtá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Abagt%C3%A1/
+  type: perspicacia
+relations:
+- type: tie
+  person: jerjes-i
+  word: master
+  inferred: false
+  sources:
+  - ester-1
+  - it-abagta
+  reason: 'Est 1:10: uno de los siete funcionarios de la corte que servían en persona al rey Asuero.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified

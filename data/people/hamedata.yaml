@@ -1,0 +1,25 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hamedata
+name: Hamedata
+names:
+- name: Hamedata
+perspicacia: '1200001837'
+summary: Agaguita, padre de Hamán, el alto funcionario de Asuero que tramó acabar con los judíos en días de Mardoqueo y Ester.
+reason: Perspicacia «Hamedata» y «Agaguita»; Est 3:1, 10.
+sources:
+- it-hamedata
+- it-agaguita
+- ester-3
+- ester-8
+- ester-9
+links:
+- title: 'Perspicacia: «Hamedata»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hamedata/
+  type: perspicacia
+- title: Ester 9 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/ester/9/
+  type: bible
+not_claimed:
+- 'Que fuera con seguridad amalequita, ni de qué Agag venía: Perspicacia «Agaguita» solo dice que así parece.'
+checked_on: '2026-10-14'
+status: verified

@@ -108,11 +108,6 @@ Los campos, los tipos de relación y sus palabras se nombran como en el esquema 
 
 - **Dibón de Judá.** El Dibón de Ne 11:25 es la entrada núm. 2 de Perspicacia y lleva otro id que `dibon`.
 
-## Para Ester
-
-- **Abiháil.** `abihail-padre-de-zuriel` es la entrada núm. 1 de Perspicacia. El padre de Ester es la núm. 5: otro id y `distinct_from` en las dos.
-- **Jaír.** `jair-hijo-de-segub` es la entrada núm. 1 de Perspicacia «Jaír». El padre de Mardoqueo (Est 2:5) es la núm. 3: otro id y `distinct_from` en las dos.
-
 ## Para las Escrituras Griegas
 
 - **Pasaje ya puesto.** Jud 11 está en `muerte-de-core`.
@@ -441,3 +436,20 @@ Los campos, los tipos de relación y sus palabras se nombran como en el esquema 
 ## Para quien relea Jerusalén o el monte Moria (desde Ezequiel)
 
 - **Puertas del templo.** `jerusalen` lleva en `names` dos puertas del templo, la Puerta superior de la casa de Jehová (2Re 15:35) y la Puerta del Rey (1Cr 9:18), y `monte-moria` lleva las demás. Ezequiel 9 y 10 no las movieron: hace falta decidir si pasan a `monte-moria`.
+
+## Para Esdras y Nehemías (desde Ester)
+
+- **Claves que ya puso Ester.** `ester` (`1200001430`), `haman` (`1200001833`) y `mardoqueo` (`1200003111#2`, la misma que pone Esdras). La segunda en integrarse verá un choque en `perspicacia` con el mismo valor: se descarta sin más.
+- **Homónimos nuevos.** Ester crea `simei-antepasado-de-mardoqueo` (Perspicacia «Simeí», núm. 15), `quis-antepasado-de-mardoqueo` («Quis», núm. 5), `jair-padre-de-mardoqueo` («Jaír», núm. 3) y `abihail-padre-de-ester` («Abiháil», núm. 5), con `distinct_from` hacia los homónimos de `main`. Los Simeí y Quis que creen Esdras o Nehemías (`simei-descendiente-de-binui`, `simei-descendiente-de-hasum`, `simei-levita-de-tiempos-de-esdras` y los que vengan) llevan `distinct_from` hacia ellos, en las dos fichas; lo pone quien se integre después.
+- **Susa.** `susa` ya lleva «Susán» y «Castillo de Susa» en `names`, desde Daniel. Ester solo añade sus capítulos a `sources`. La nota de Est 1:2 da también «Susán»: quien relea `susa` puede citarla junto a la de Da 8:2.
+- **Sucesos persas.** La serie `ester` va de 493 a c. 475 a.e.c. y no toca sucesos de Esdras ni de Nehemías.
+
+## Para quien reabra Daniel 11 o Esdras 4 (desde Ester)
+
+- **Jerjes sucede a Darío.** `jerjes-i/succeeds/dario-i` no cita ningún pasaje y el sitio no la dibuja. Ester no la toca, porque ningún versículo del libro cuenta la sucesión.
+
+## Para el vocabulario (desde Ester)
+
+- **Cargos sin palabra.** Funcionario de la corte o eunuco (Est 1:10; 2:3, 14, 21; 4:5), primer ministro o segundo después del rey (Hamán, Est 3:1; Mardoqueo, 8:2; 10:3), encargado de la casa de Hamán (8:2) y sátrapa (8:9; 9:3). Van sin `holds_office`; el vínculo con el rey es `tie` `master`. Si se añade primer ministro, Hamán lo lleva y Mardoqueo le sucede en él.
+- **Reina consorte.** Vasti y Ester llevan `holds_office` `queen` porque el texto las llama reinas; Ester además `succeeds` `vasti`. Si el dueño separa reina consorte de reina reinante (Atalía), estas dos pasan al cargo nuevo.
+- **Prima.** `ester/kin/mardoqueo` con `cousin` sigue en la ficha de Ester aunque el texto nombre antes a Mardoqueo (Est 2:7): en la suya diría «Ester es su primo». Con una palabra femenina, pasa a su dueño.

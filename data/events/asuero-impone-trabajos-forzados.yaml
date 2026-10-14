@@ -1,0 +1,39 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: asuero-impone-trabajos-forzados
+title: Asuero impone trabajos forzados en su imperio
+date:
+  from: -482
+  to: -474
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 483 y 475 a.e.c. (tiempo narrativo: después del año duodécimo de Asuero y antes del fin de su reinado)'
+narrative_order:
+  series: ester
+  order: 10001
+places:
+- persia
+people:
+- jerjes-i
+present: []
+passages:
+- Est 10:1, 2
+summary: Asuero obliga a trabajar para él a los pueblos de sus territorios, en tierra firme y en las islas. Sus grandes hechos
+  quedan escritos en los registros de los reyes de Media y Persia.
+reason: 'Perspicacia «Asuero», núm. 3: tiempo después de los sucesos del año duodécimo, y lo une a las obras que terminó en
+  Persépolis. Su reinado acaba en 475 («Persia, persas»). El texto no dice dónde: present vacío.'
+sources:
+- ester-10
+- it-asuero
+- it-persia
+links:
+- title: Ester 10 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/ester/10/
+  type: bible
+- title: 'Perspicacia: «Asuero»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Asuero/
+  type: perspicacia
+search: Asuero Jerjes trabajo forzado islas del mar
+checked_on: '2026-10-14'
+status: verified

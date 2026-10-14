@@ -1,0 +1,18 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: carsena
+name: Carsená
+names:
+- name: Carsená
+perspicacia: '1200000899'
+summary: Príncipe de Persia y Media, el primero de los siete consejeros más cercanos a Asuero, consultados cuando Vasti desobedeció
+  al rey.
+reason: Perspicacia «Carsená» y «Memucán»; Est 1:13-15.
+sources:
+- it-carsena
+- ester-1
+links:
+- title: 'Perspicacia: «Carsená»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Carsen%C3%A1/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified

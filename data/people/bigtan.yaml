@@ -1,0 +1,54 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: bigtan
+name: Bigtán
+names:
+- name: Bigtán
+- name: Bigtana
+  note: Forma de Est 6:2. Perspicacia titula su artículo con las dos.
+perspicacia: '1200000729'
+summary: Funcionario de la corte de Asuero que guardaba una puerta del palacio. Tramó con Teres matar al rey; Mardoqueo lo
+  descubrió y avisó por medio de Ester, y a los dos los colgaron.
+reason: Perspicacia «Bigtán, Bigtana»; Est 2:21-23; 6:2.
+sources:
+- it-bigtan
+- ester-2
+- ester-6
+links:
+- title: 'Perspicacia: «Bigtán, Bigtana»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Bigt%C3%A1n-Bigtana/
+  type: perspicacia
+relations:
+- type: tie
+  person: jerjes-i
+  word: master
+  inferred: false
+  sources:
+  - ester-2
+  - it-bigtan
+  - ester-6
+  reason: 'Est 2:21: funcionario de la corte real que servía de portero del rey Asuero.'
+  checked_on: '2026-10-14'
+  status: verified
+- type: tie
+  person: jerjes-i
+  word: enemy
+  inferred: false
+  sources:
+  - ester-2
+  - it-bigtan
+  reason: 'Est 2:21: se enojó con el rey Asuero y tramó con Teres matarlo.'
+  checked_on: '2026-10-14'
+  status: verified
+- type: died_in
+  place: susa
+  inferred: true
+  sources:
+  - ester-2
+  - it-bigtan
+  - it-susa
+  reason: 'Est 2:21-23: lo colgaron tras descubrirse el complot. El texto no nombra el sitio; Perspicacia «Susa» pone en Susa
+    la escena de Est 2:21.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified

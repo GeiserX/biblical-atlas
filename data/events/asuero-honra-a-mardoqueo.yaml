@@ -1,0 +1,47 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: asuero-honra-a-mardoqueo
+title: Asuero honra a Mardoqueo por salvarle la vida
+date:
+  from: -483
+  to: -483
+  precision: season
+  approx: true
+  type: derived
+  chronology: tnm
+  text: primavera de 484 a.e.c. (cálculo nuestro)
+  detail:
+    season: spring
+  note: 'Días después del 13 de nisán del año duodécimo (Est 3:12; 4:16; 5:1), que Perspicacia «Purim» sitúa al parecer en
+    la primavera de 484. Ninguna fuente fecha esta escena: es cuenta nuestra.'
+narrative_order:
+  series: ester
+  order: 6001
+places:
+- susa
+people:
+- jerjes-i
+- mardoqueo
+- haman
+present:
+- jerjes-i
+- mardoqueo
+- haman
+passages:
+- Est 6:1-11
+summary: Sin poder dormir, Asuero oye leer en las crónicas que Mardoqueo destapó el complot de Bigtana y Teres sin recibir
+  premio. Manda entonces a Hamán vestirlo con ropa real y pasearlo a caballo por la plaza.
+reason: 'Est 6:1-11; Perspicacia «Mardoqueo», núm. 2, y «Hamán». «Ester, Libro de»: esa noche y la mañana siguiente al primer
+  banquete.'
+sources:
+- ester-6
+- it-mardoqueo
+- it-haman
+- it-ester-libro
+- it-purim
+- si-ester
+links:
+- title: 'Perspicacia: «Mardoqueo»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Mardoqueo/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: pending

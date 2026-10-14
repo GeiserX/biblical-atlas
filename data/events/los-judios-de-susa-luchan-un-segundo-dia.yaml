@@ -1,0 +1,41 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: los-judios-de-susa-luchan-un-segundo-dia
+title: Los judíos de Susa luchan un segundo día
+date:
+  from: -482
+  to: -482
+  precision: day
+  approx: true
+  type: derived
+  chronology: tnm
+  text: 14 de adar de 483 a.e.c. (cálculo nuestro)
+  detail:
+    month: adar
+    day: 14
+  note: Perspicacia «Purim» pone el decreto de Hamán el 13 de nisán del año duodécimo, al parecer en 484; adar, el duodécimo
+    mes de ese mismo año, cae en 483.
+narrative_order:
+  series: ester
+  order: 9015
+places:
+- susa
+people: []
+present: []
+passages:
+- Est 9:15
+- Est 9:18
+summary: Con el permiso que obtuvo Ester, los judíos de Susa vuelven a reunirse el 14 de adar y matan a 300 hombres, sin tocar
+  sus bienes. Cuelgan los cuerpos de los hijos de Hamán; el 15 descansan.
+reason: 'Est 9:15, 18. «Toda Escritura», libro 17, párr. 15: la lucha sigue el 14 en Susa y los hijos de Hamán se cuelgan
+  el segundo día. Ninguna persona con ficha actúa. El año es cuenta nuestra.'
+sources:
+- ester-9
+- si-ester
+- it-mardoqueo
+- it-purim
+links:
+- title: Ester 9 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/ester/9/
+  type: bible
+checked_on: '2026-10-14'
+status: pending

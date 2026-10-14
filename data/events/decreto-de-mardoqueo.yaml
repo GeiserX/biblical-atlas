@@ -1,0 +1,50 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: decreto-de-mardoqueo
+title: Mardoqueo escribe un decreto que permite a los judíos defenderse
+date:
+  from: -483
+  to: -483
+  precision: day
+  approx: true
+  type: derived
+  chronology: tnm
+  text: 23 de siván de 484 a.e.c. (cálculo nuestro)
+  detail:
+    month: sivan
+    day: 23
+  note: Est 8:9 da el 23 de siván, sin año. Siván es el tercer mes del año que empieza en el nisán del duodécimo, que Perspicacia
+    «Purim» pone al parecer en 484.
+narrative_order:
+  series: ester
+  order: 8003
+places:
+- susa
+people:
+- mardoqueo
+- ester
+- jerjes-i
+present:
+- mardoqueo
+- ester
+- jerjes-i
+roles:
+  mardoqueo: wrote
+passages:
+- Est 8:3-17
+summary: 'Ester suplica al rey que frene el plan de Hamán. Como una ley sellada no se revoca, Asuero deja que Mardoqueo escriba
+  otra: el 13 de adar los judíos podrán defenderse. Llega a 127 provincias, de la India a Etiopía.'
+reason: 'Est 8:3-17; Perspicacia «Ester», «Mardoqueo», núm. 2, y «Purim»: Mardoqueo redacta el segundo decreto el 23 de siván.
+  Ninguna fuente da el año: es cuenta nuestra.'
+sources:
+- ester-8
+- it-ester
+- it-mardoqueo
+- it-purim
+- it-sivan
+- si-ester
+links:
+- title: 'Perspicacia: «Mardoqueo»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Mardoqueo/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: pending
