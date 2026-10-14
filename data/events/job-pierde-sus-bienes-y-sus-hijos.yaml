@@ -21,6 +21,7 @@ present:
 - job
 passages:
 - Job 1:13-22
+- Snt 5:11
 summary: 'En un solo día le llegan cuatro avisos: sabeos y caldeos se llevan el ganado, un fuego quema las ovejas y un viento
   derriba la casa donde comían sus hijos. Job adora a Jehová y no lo culpa.'
 reason: Job 1:13-22; Perspicacia «Satanás» atribuye a Satanás los ataques, el fuego y el viento. El cuadro del estudio 3 pone
@@ -32,9 +33,10 @@ sources:
 - it-satanas
 - it-sabeos
 - it-caldea
+- it-santiago-carta
 links:
 - title: Job 1 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/job/1/
   type: bible
-checked_on: '2026-09-29'
+checked_on: '2026-10-14'
 status: verified

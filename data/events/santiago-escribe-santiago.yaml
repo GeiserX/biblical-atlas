@@ -1,0 +1,49 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: santiago-escribe-santiago
+title: Santiago escribe su carta desde Jerusalén
+date:
+  from: 61
+  to: 62
+  precision: range
+  approx: true
+  type: derived
+  chronology: tnm
+  text: antes de 62 e.c., quizás poco antes
+  note: 'Tabla, estudio 3 y Perspicacia solo dan el límite de 62. «Toda Escritura», libro 59, párr. 4: muy probablemente tardía,
+    quizás poco antes de 62, si Josefo acierta. El 61 es un límite inferior nuestro.'
+narrative_order:
+  series: hechos
+  order: 2843
+places:
+- jerusalen
+people:
+- santiago-hermano-de-jesus
+present:
+- santiago-hermano-de-jesus
+type: writing
+roles:
+  santiago-hermano-de-jesus: wrote
+passages:
+- Snt 1:1
+summary: 'Desde Jerusalén, Santiago, medio hermano de Jesús, escribe a las doce tribus esparcidas, los cristianos del Israel
+  espiritual: que aguanten las pruebas, no favorezcan a los ricos y demuestren su fe con obras.'
+reason: 'Tabla de los libros y estudio 3: Jerusalén, antes de 62. «Toda Escritura», libro 59, párr. 4: ya había congregaciones
+  con ancianos, así que fue tarde. Perspicacia «Santiago, Carta de»: residía en Jerusalén.'
+sources:
+- santiago-1
+- tnm-tabla
+- si-3
+- si-santiago
+- it-santiago-carta
+links:
+- title: Santiago 1 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/santiago/1/
+  type: bible
+- title: 'Perspicacia: «Santiago, Carta de»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Santiago-Carta-de/
+  type: perspicacia
+search: Santiago escribe carta Jerusalén
+note: 'Orden 2843 en hechos. El estudio 3 la lista tras Hebreos (c. 61) y antes de 1 Timoteo y Tito (2850, 2851). Seguir a
+  tito-queda-en-creta (2842) es decisión nuestra: no había número libre tras Hebreos (2841).'
+checked_on: '2026-10-14'
+status: pending

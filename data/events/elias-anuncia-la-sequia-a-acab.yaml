@@ -25,8 +25,8 @@ passages:
 - 1Re 17:1
 - Lu 4:25
 - Snt 5:17
-summary: Elías, un tisbita de Galaad, jura ante Acab por el Dios de Israel que en esos años no habrá rocío ni lluvia sin su
-  palabra. La sequía duró tres años y seis meses.
+summary: Elías, tisbita de Galaad, jura ante Acab por el Dios de Israel que en esos años no habrá rocío ni lluvia sin su palabra.
+  Snt 5:17 añade que oró para que no lloviera; la sequía duró tres años y medio.
 reason: 'El texto no dice dónde hablaron: israel es la tierra de la sequía y present va vacío. Duración: Perspicacia «Acab»,
   núm. 1, párr. 4 (Lu 4:25; Snt 5:17). Reinado de Acab: A6-A.'
 sources:
@@ -38,5 +38,10 @@ links:
 - title: 1 Reyes 17 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/1-reyes/17/
   type: bible
-checked_on: '2026-09-30'
+history:
+- date: '2026-10-14'
+  change: El resumen añade, sin ponerla antes ni después del juramento, la oración de Elías para que no lloviera, como dice
+    Snt 5:17; Perspicacia «Elías», núm. 1, cuenta esa sequía entre sus milagros.
+  source: santiago-5
+checked_on: '2026-10-14'
 status: verified

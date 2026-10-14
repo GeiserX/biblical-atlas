@@ -1,0 +1,15 @@
+# biblical-atlas: fuentes de la cobertura de filemon. Esquema en docs/investigacion/README.md.
+it-apfia:
+  title: Apfia
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Apfia/
+  level: 1
+  published: null
+  checked_on: '2026-10-14'
+it-filemon-carta:
+  title: Filemón, Carta a
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Filem%C3%B3n-Carta-a/
+  level: 1
+  published: null
+  checked_on: '2026-10-14'

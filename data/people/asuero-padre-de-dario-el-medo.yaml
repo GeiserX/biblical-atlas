@@ -1,0 +1,34 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: asuero-padre-de-dario-el-medo
+name: Asuero
+names:
+- name: Asuero
+perspicacia: 1200000142#1
+disambiguation: Padre de Darío el medo (Da 9:1); no el Asuero de Ester, que se cree Jerjes I, ni el de Esdras, que pudo ser
+  Cambises.
+distinct_from:
+- jerjes-i
+summary: Padre de Darío el medo, que recibió el reino de los caldeos al caer Babilonia. Era, como su hijo, de linaje medo.
+reason: Perspicacia «Asuero», núm. 1, y «Darío», núm. 1, que aplica también al padre la ascendencia meda; Da 9:1.
+sources:
+- it-asuero
+- it-dario
+- daniel-9
+links:
+- title: 'Perspicacia: «Asuero»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Asuero/
+  type: perspicacia
+not_claimed:
+- 'Quién fue en la historia: Perspicacia dice que no se le puede identificar con certeza con nadie fuera de la Biblia.'
+checked_on: '2026-10-14'
+status: verified
+relations:
+- type: born_in
+  place: media
+  inferred: true
+  sources:
+  - daniel-9
+  - it-dario
+  reason: 'Da 9:1: de la descendencia de los medos; Perspicacia «Darío», núm. 1, aplica ese linaje también al padre.'
+  checked_on: '2026-10-14'
+  status: verified

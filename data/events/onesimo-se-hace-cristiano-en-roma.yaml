@@ -1,0 +1,46 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: onesimo-se-hace-cristiano-en-roma
+title: Onésimo se hace cristiano en Roma junto a Pablo
+date:
+  from: 59
+  to: 61
+  precision: range
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 59-61 e.c. (primer encierro en Roma)
+narrative_order:
+  series: hechos
+  order: 2831
+places:
+- roma
+people:
+- onesimo
+- pablo
+present:
+- onesimo
+- pablo
+passages:
+- Flm 10, 11
+- Flm 15, 16
+summary: 'Huido de su amo en Colosas, Onésimo trata en Roma a Pablo, que está preso, y llega a ser cristiano. Pablo lo llama
+  su hijo: de inútil ha pasado a ser útil.'
+reason: 'Perspicacia «Onésimo»: conoció a Pablo en Roma y poco después abrazó la fe (Flm 10). Pasa en el primer encierro,
+  que el estudio 3 (párr. 27) pone de c. 59 a 61.'
+note: 'Orden 2831 de la serie hechos, como el informe de Epafras: dentro de los dos años de Hch 28:30 (2830) y antes de Colosenses
+  (2832), que ya lo llama hermano fiel.'
+sources:
+- filemon-1
+- it-onesimo
+- it-filemon-carta
+- si-3
+links:
+- title: Filemón 1 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Filem%C3%B3n/1/
+  type: bible
+- title: 'Perspicacia: «Onésimo»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/On%C3%A9simo/
+  type: perspicacia
+search: Onésimo se hace cristiano Pablo Roma
+checked_on: '2026-10-14'
+status: verified

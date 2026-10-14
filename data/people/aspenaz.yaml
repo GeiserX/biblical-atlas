@@ -1,0 +1,54 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: aspenaz
+name: Aspenaz
+names:
+- name: Aspenaz
+perspicacia: '1200000425'
+date:
+  from: -616
+  to: -604
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 617 y 605 a.e.c. (tiempo narrativo: de la llegada de los jóvenes a su examen, antes del sueño de Da 2)'
+summary: Jefe de los funcionarios de la corte de Nabucodonosor. Escogió a Daniel y a sus tres compañeros para servir en el
+  palacio, les puso nombres babilonios y respondió ante el rey de su formación.
+reason: 'Perspicacia «Aspenaz»: primer oficial de la corte babilonia, que preparaba a los jóvenes destinados al rey. Actúa de 617 (estudio 3) al examen, tres años después (Da 1:5, 18), antes del sueño de 606-605 (dp, cap. 4).'
+not_claimed:
+- 'Que fuera eunuco: Perspicacia dice que mandaba sobre ellos, pero que no tenía por qué serlo.'
+sources:
+- it-aspenaz
+- daniel-1
+- dp-3
+- si-3
+- dp-4
+links:
+- title: 'Perspicacia: «Aspenaz»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Aspenaz/
+  type: perspicacia
+- title: Daniel 1 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/daniel/1/
+  type: bible
+relations:
+- type: tie
+  person: nabucodonosor-ii
+  word: master
+  inferred: false
+  sources:
+  - daniel-1
+  - it-aspenaz
+  reason: 'Da 1:3: el rey le ordena, como jefe de los funcionarios de su corte, traer a jóvenes israelitas.'
+  checked_on: '2026-10-14'
+  status: verified
+- type: lived_in
+  place: babilonia
+  inferred: true
+  sources:
+  - it-aspenaz
+  - daniel-1
+  reason: 'Perspicacia «Aspenaz»: fue el primer oficial de la corte de Babilonia en el reinado de Nabucodonosor (Da 1:3).'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
