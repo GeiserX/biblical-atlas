@@ -199,16 +199,45 @@ function crearMapa() {
     if (e?.error?.message) console.warn('Mapa:', e.error.message, url);
   });
   map.on('style.load', () => { cargado = true; montarCapas(); });
+  // Un movimiento que pide el sitio (easeTo, flyTo, fitBounds) va marcado como vuelo. Los gestos que MapLibre anima con
+  // easeTo (teclado, doble clic, inercia) llevan su evento y no se marcan; la rueda, el arrastre y los botones + y −
+  // no pasan por aquí. No vale mirar originalEvent en movestart: la rueda lo empieza sin él.
+  for (const [m, n] of [['easeTo', 1], ['flyTo', 1], ['fitBounds', 2]]) {
+    const f = map[m].bind(map);
+    map[m] = (...a) => { if (!a[n]?.originalEvent) a[n] = { ...a[n], vuelo: true }; return f(...a); };
+  }
+  map.on('movestart', (e) => { enVuelo = !!e.vuelo; });
+  map.once('idle', () => { precarga = true; cargarFondos(); });
   map.on('moveend', () => {
+    enVuelo = false; cargarFondos();
     sucio.etiquetas = true; programar(); if (E.mapa === 'cortina') pintarCortina(); pintarNombresEncuadre(); if (pintarLeyenda.args) pintarLeyenda(...pintarLeyenda.args);
     // La entrada del historial guarda dónde se paró el mapa: Atrás, Adelante y una recarga lo devuelven así.
     const c = map.getCenter();
     BE.historia?.encuadre({ lon: c.lng, lat: c.lat, zoom: map.getZoom() });
   });
-  map.on('move', () => { if (imgsDom.length) colocarImgsDom(); if (E.mapa === 'cortina') pintarCortina(); pintarSituacion(); if (zonasArea.size) pintarChipsZona(); });
+  map.on('move', () => { cargarFondos(); if (imgsDom.length) colocarImgsDom(); if (E.mapa === 'cortina') pintarCortina(); pintarSituacion(); if (zonasArea.size) pintarChipsZona(); });
   map.on('resize', () => { if (imgsDom.length) colocarImgsDom(); });
   // Un clic en una marca HTML también llega a MapLibre: esa marca ya lo gestiona su propio manejador.
   const enMarca = (e) => !!e.originalEvent?.target?.closest?.('.maplibregl-marker');
+  // La zona de una marca (24 px, 44 con el dedo) pisa la de sus vecinas cuando el zoom las junta: el clic va a lo que se
+  // dibuja ahí o al punto más cercano, no a la zona que quedó encima. El teclado (detail 0) pulsa el botón que tiene el foco.
+  map.getContainer().addEventListener('click', (e) => {
+    const el = e.target.closest?.(MARCA);
+    if (!el || e.detail === 0) return;
+    const mejor = marcaCercana(e.clientX, e.clientY);
+    if (mejor && mejor !== el) { e.stopPropagation(); e.preventDefault(); mejor.click(); }
+  }, true);
+  // El ratón saca el nombre escondido de un lugar o de un candidato solo sobre lo que se dibuja (su punto, su nombre), no
+  // sobre su zona: un :hover de CSS saltaría en la zona que tapa el punto de una vecina. La clase al-raton hace de :hover.
+  let encima = null, raton = null;
+  const ponerEncima = (el) => { if (el === encima) return; encima?.classList.remove('al-raton'); encima = el; el?.classList.add('al-raton'); };
+  map.getContainer().addEventListener('pointermove', (e) => {
+    if (e.pointerType !== 'mouse') return;
+    const pendiente = raton;
+    raton = [e.clientX, e.clientY];
+    if (!pendiente) requestAnimationFrame(() => { const [x, y] = raton; raton = null; ponerEncima(dibujadoEn(x, y)?.closest('.marca-lugar, .cand') || null); });
+  });
+  map.getContainer().addEventListener('pointerleave', () => ponerEncima(null));
   const puntero = (capa) => { map.on('mouseenter', capa, () => { map.getCanvas().style.cursor = 'pointer'; }); map.on('mouseleave', capa, () => { map.getCanvas().style.cursor = ''; }); };
   map.on('click', 'be-cartas-toque', (e) => { if (enMarca(e)) return; const id = e.features?.[0]?.properties?.id; if (id) alternar({ tipo: 'carta', id }); });
   puntero('be-cartas-toque');
@@ -250,19 +279,8 @@ function montarCapas() {
     // Los países de hoy chocan con nuestras regiones antiguas: solo aparecen a partir del zoom 8.
     if (/^label_country/.test(l.id)) map.setLayerZoomRange(l.id, Math.max(8, l.minzoom ?? 0), l.maxzoom ?? 24);
   }
-  if (estiloReserva && !ES_FILE) {
-    for (const b of BASES) {
-      map.addSource(`be-actual-${b.id}`, { type: 'image', url: urlBase(b, 'actual'), coordinates: esquinas(b.ext) });
-      map.addLayer({ id: `be-actual-${b.id}`, type: 'raster', source: `be-actual-${b.id}`, paint: { 'raster-fade-duration': 0, 'raster-opacity': opacidadGL(b) } });
-      capasBase.push(`be-actual-${b.id}`);
-    }
-  }
-  if (!ES_FILE) {
-    for (const b of BASES) {
-      map.addSource(`be-antiguo-${b.id}`, { type: 'image', url: urlBase(b, 'antiguo'), coordinates: esquinas(b.ext) });
-      map.addLayer({ id: `be-antiguo-${b.id}`, type: 'raster', source: `be-antiguo-${b.id}`, paint: { 'raster-fade-duration': 0, 'raster-opacity': opacidadGL(b) } });
-    }
-  } else if (!imgsDom.length) {
+  // Los fondos (be-antiguo-*, y be-actual-* con el estilo de reserva) los pone cargarFondos cuando se ven.
+  if (ES_FILE && !imgsDom.length) {
     // Desde file:// MapLibre no puede leer las imágenes (CORS). Van como <img> bajo el lienzo, alineadas a mano.
     for (const b of [...BASES].reverse()) {
       const img = document.createElement('img');
@@ -371,10 +389,59 @@ function aplicarModoMapa() {
 /** Capa «Relieve»: sin ella, el mapa antiguo queda en papel liso. */
 function aplicarRelieve() {
   if (!mapaListo) return;
+  cargarFondos();
   const ver = E.mapa === 'antiguo' && F.capas.relieve;
   for (const b of BASES) if (map.getLayer(`be-antiguo-${b.id}`)) map.setLayoutProperty(`be-antiguo-${b.id}`, 'visibility', ver ? 'visible' : 'none');
   for (const { img } of imgsDom) img.hidden = !ver;
   $('#app').classList.toggle('sin-relieve', !F.capas.relieve);
+}
+
+// ---------------------------------------------------------------------------
+// Fondos a demanda: cada imagen de BASES se pide la primera vez que se dibuja, y no antes. Pesan más que los datos, y
+// al abrir solo hace falta una: el Mediterráneo en el escritorio, el mundo en el móvil. Una imagen pedida se queda.
+// ---------------------------------------------------------------------------
+const MARGEN_BORDE = 0.06;     // fracción de la extensión que ocupa, de sobra, su borde fundido a transparente
+// Si el mapa vuela a otro encuadre porque lo pide el sitio (un enlace, una selección), no por un gesto: entonces no se
+// pide nada, porque lo de en medio solo se ve un instante, y lo del destino se pide al pararse.
+let enVuelo = false;
+// Desde que el mapa queda quieto por primera vez, también se piden las imágenes más gruesas que la más fina a la vista:
+// al alejarse o al salir de su extensión hacen falta opacas y de golpe, y sin ellas el mapa queda en papel liso.
+let precarga = false;
+/** Si la extensión `e` contiene la caja `v` ([oeste, sur, este, norte]) con un margen de `f` de su tamaño. */
+function contiene(e, v, f = 0) {
+  const dx = (e.este - e.oeste) * f, dy = (e.norte - e.sur) * f;
+  return v[0] >= e.oeste + dx && v[2] <= e.este - dx && v[1] >= e.sur + dy && v[3] <= e.norte - dy;
+}
+/** Si la imagen de `b` se dibuja en el encuadre de ahora: su zoom ya llega (con opacidad mayor que cero), su extensión
+    toca lo que se ve y ninguna imagen más fina, ya opaca a este zoom, lo tapa entero. Al acercarse, la imagen nueva
+    empieza transparente, así que llega mientras se funde. */
+function fondoALaVista(b) {
+  const z = map.getZoom(), c = map.getBounds(), v = [c.getWest(), c.getSouth(), c.getEast(), c.getNorth()], e = b.ext;
+  if (b.zoom && z <= b.zoom[0]) return false;
+  if (v[0] > e.este || v[2] < e.oeste || v[1] > e.norte || v[3] < e.sur) return false;
+  return !BASES.slice(BASES.indexOf(b) + 1).some((o) => z >= o.zoom[1] && contiene(o.ext, v, MARGEN_BORDE));
+}
+/** Pone las imágenes que el modo y el encuadre de ahora enseñan y aún no están, y tras el primer reposo las más gruesas
+    que ellas: las antiguas en el mapa antiguo con la capa «Relieve», las actuales solo con el estilo de reserva (sin
+    OpenFreeMap) en el actual y en la cortina. Cada capa va en su sitio: las actuales debajo de las antiguas, cada
+    extensión encima de la anterior y todas debajo de la cortina y de los datos. Desde file:// las pone colocarImgsDom. */
+function cargarFondos() {
+  if (!mapaListo || ES_FILE || enVuelo) return;
+  const estilos = [];
+  if (estiloReserva && E.mapa !== 'antiguo') estilos.push('actual');
+  if (E.mapa === 'antiguo' && F.capas.relieve) estilos.push('antiguo');
+  const orden = [...['actual', 'antiguo'].flatMap((s) => BASES.map((b) => `be-${s}-${b.id}`)), ...BASES.map((b) => `be-cortina-${b.id}`), 'be-formas-relleno'];
+  const vistas = BASES.map(fondoALaVista), fina = precarga ? vistas.lastIndexOf(true) : -1;
+  for (const estilo of estilos) {
+    for (const [i, b] of BASES.entries()) {
+      const id = `be-${estilo}-${b.id}`;
+      if (map.getSource(id) || !(vistas[i] || i < fina)) continue;
+      map.addSource(id, { type: 'image', url: urlBase(b, estilo), coordinates: esquinas(b.ext) });
+      const antes = orden.slice(orden.indexOf(id) + 1).find((l) => map.getLayer(l));
+      map.addLayer({ id, type: 'raster', source: id, paint: { 'raster-fade-duration': 0, 'raster-opacity': opacidadGL(b) } }, antes);
+      if (estilo === 'actual') capasBase.push(id);
+    }
+  }
 }
 
 // ---------------------------------------------------------------------------
@@ -466,7 +533,7 @@ function iniciarCortina() {
 // Geometría
 // ---------------------------------------------------------------------------
 /** Cambia las clases propias de una marca sin quitar las de MapLibre (maplibregl-marker…), que la posicionan. */
-const conMarcador = (el, clases) => [clases, ...[...el.classList].filter((c) => c.startsWith('maplibregl-'))].join(' ');
+const conMarcador = (el, clases) => [clases, ...[...el.classList].filter((c) => c.startsWith('maplibregl-') || c === 'al-raton')].join(' ');
 const coord = (l) => [l.lon, l.lat];
 const linea = (coordinates, properties) => ({ type: 'Feature', properties, geometry: { type: 'LineString', coordinates } });
 const conPunto = (l) => !!l && l.lat != null && l.lon != null && !candidatosDe(l);
@@ -1114,7 +1181,7 @@ function rotuloZona(k, l, cs, op, foco) {
     const el = document.createElement('button');
     el.type = 'button';
     el.addEventListener('click', (e) => { e.stopPropagation(); if (!(E.sel?.tipo === 'lugar' && E.sel.id === l.id)) seleccionar({ tipo: 'lugar', id: l.id }); });
-    m = { el, marker: new maplibregl.Marker({ element: el, anchor: 'top', offset: [0, 10] }).setLngLat(pos).addTo(map) };
+    m = { el, marker: new maplibregl.Marker({ element: el, anchor: 'top', offset: [0, 9] }).setLngLat(pos).addTo(map) };   // 9 + 12: el centro de antes
     marcasCand.set(k, m);
   }
   m.marker.setLngLat(pos);
@@ -1169,12 +1236,13 @@ function pintarHallazgos() {
     if (!m) {
       const el = document.createElement('button');
       el.type = 'button';
-      m = { el, marker: new maplibregl.Marker({ element: el, anchor: 'bottom-left', offset: [5, -5] }).setLngLat(coord(BE.L[lid])).addTo(map) };
+      // El cuadrado queda 5 px a la derecha y 5 arriba del lugar; el borde transparente de 7 px (mapa.css) se descuenta.
+      m = { el, marker: new maplibregl.Marker({ element: el, anchor: 'bottom-left', offset: [-2, 2] }).setLngLat(coord(BE.L[lid])).addTo(map) };
       marcasHallazgo.set(lid, m);
     }
     m.el.className = conMarcador(m.el, `marca-hallazgo${lista.some((h) => h.id === selH) ? ' marca-hallazgo--sel' : ''}`);
     m.el.dataset.sel = lista.length === 1 ? `hallazgo:${lista[0].id}` : `lugar:${lid}`;
-    m.el.innerHTML = `<span aria-hidden="true"></span>${lista.length > 1 ? `<b>${lista.length}</b>` : ''}`;
+    m.el.innerHTML = `<span class="hallazgo-dibujo" aria-hidden="true"><span></span>${lista.length > 1 ? `<b>${lista.length}</b>` : ''}</span>`;
     m.el.setAttribute('aria-label', lista.length === 1 ? `Hallazgo: ${lista[0].nombre}` : `${lista.length} hallazgos en ${BE.L[lid].nombre}`);
     m.el.title = lista.map((h) => h.nombre).join(' · ');
   }
@@ -1211,6 +1279,33 @@ function crearMarcas() {
   q.type = 'button'; q.className = 'proxima';
   marcaProxima = new maplibregl.Marker({ element: q, anchor: 'bottom', offset: [0, -14] }).setLngLat([0, 0]);
   q.addEventListener('click', (e) => { e.stopPropagation(); const s = BE.P.find((x) => x.key === q.dataset.key); if (s) { setT((s.a + s.b) / 2); asegurarVisible(E.t, false); } });
+}
+/** Las marcas con zona de 24 px alrededor de un punto (lugares, hallazgos, viajeros y candidatos); las que la tienen
+    alrededor de un nombre (regiones, mares y ríos); lo que se ve de cada una, y el punto desde el que se mide la distancia. */
+const ZONA = '.marca-lugar, .marca-hallazgo, .viajero, .cand';
+const MARCA = `${ZONA}, .marca-region, .marca-agua`;
+const DIBUJO = '.marca-lugar .punto, .marca-lugar .etiqueta, .marca-lugar .etiqueta *, .hallazgo-dibujo, .hallazgo-dibujo *, .viajero-punto, .viajero-rotulo, .cand-punto, .cand-rotulo, .cand-rotulo *, .region-texto, .region-texto *, .marca-agua .etiqueta, .marca-agua .etiqueta *';
+const CENTRO = '.punto, .hallazgo-dibujo > span, .viajero-punto, .cand-punto';
+/** Lo que se ve en (x, y) entre las marcas del mapa. Primero lo macizo: un punto, un cuadrado de hallazgo o una marca
+    sin zona (una burbuja, un número). Después, un nombre: su caja es casi toda aire entre letras, así que no tapa el punto
+    que queda debajo (el de Atalía bajo «PANFILIA»). El borde transparente de una zona no cuenta, ni un nombre escondido. */
+const MACIZO = '.marca-lugar:not(.marca-lugar--difuso) > .punto, .hallazgo-dibujo > span, .viajero-punto, .cand-punto';
+const dibujadoEn = (x, y) => {
+  const pila = document.elementsFromPoint(x, y);
+  return pila.find((n) => n.matches(MACIZO) || (n.closest('.maplibregl-marker') && !n.closest(MARCA))) || pila.find((n) => n.matches(DIBUJO)) || null;
+};
+/** La marca que recibe un clic en (x, y): la de lo que se ve ahí; si solo hay zonas, la del punto más cercano. */
+function marcaCercana(x, y) {
+  const dibujado = dibujadoEn(x, y);
+  if (dibujado) return dibujado.closest('.maplibregl-marker');
+  const pila = document.elementsFromPoint(x, y);
+  let mejor = null, d0 = Infinity;
+  for (const el of new Set(pila.map((n) => n.closest(ZONA)).filter(Boolean))) {
+    const r = el.querySelector(CENTRO).getBoundingClientRect();
+    const d = Math.hypot((r.left + r.right) / 2 - x, (r.top + r.bottom) / 2 - y);
+    if (d < d0) { d0 = d; mejor = el; }
+  }
+  return mejor;
 }
 function nombreHoy(l) {
   // Los datos marcan el nombre moderno solo en la nota («Nombre actual…», «Ciudad moderna…», «…identifica hoy»).
@@ -1631,7 +1726,7 @@ function pintarEtiquetas() {
     const exento = exentoCand(lid);
     if (punto && m.marker._map) { extra(m.el, '.cand-punto', exento ? 91 : 19, m.marker.getLngLat().toArray(), 6.31); Object.assign(items.at(-1), { ajeno: true, obstaculo: true, candDe: lid, exento }); }
   }
-  for (const m of marcasHallazgo.values()) if (m.marker._map) { extra(m.el, null, 19, m.marker.getLngLat().toArray(), 6.31); Object.assign(items.at(-1), { ajeno: true, obstaculo: true }); }
+  for (const m of marcasHallazgo.values()) if (m.marker._map) { extra(m.el, '.hallazgo-dibujo', 19, m.marker.getLngLat().toArray(), 6.31); Object.assign(items.at(-1), { ajeno: true, obstaculo: true }); }
   // Los números de un recorrido guiado (recorridos.js) van anclados abajo, 14 px sobre su lugar: se reparten como uno más.
   for (const el of map.getContainer().querySelectorAll('.marca-num')) {
     const r = el.getBoundingClientRect(), c = map.getContainer().getBoundingClientRect();
