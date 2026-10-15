@@ -4,13 +4,14 @@ name: Jesúa
 names:
 - name: Jesúa
 perspicacia: null
-summary: Levita, hijo de Azanías, el primero de los levitas que sellaron el arreglo fidedigno en 455 a.e.c. Perspicacia lo
-  ve como un representante de la casa levita de Jesúa o un homónimo.
-reason: Perspicacia «Jesúa», núm. 5, y «Azanías»; Ne 10:9.
+summary: Levita hijo de Azanías, primero de los levitas que sellaron el arreglo fidedigno en 455 a.e.c. Perspicacia lo ve
+  como representante de la casa levita de Jesúa o un homónimo, y probablemente el jefe levita de Ne 12:24.
+reason: Perspicacia «Jesúa», núm. 5, y «Azanías»; Ne 10:9; 12:24.
 sources:
 - it-jesua
 - it-azanias
 - nehemias-10
+- nehemias-12
 links:
 - title: 'Perspicacia: «Jesúa»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jes%C3%BAa/
@@ -26,7 +27,19 @@ relations:
   reason: 'Ne 10:9: Jesúa, hijo de Azanías.'
   checked_on: '2026-10-14'
   status: verified
-checked_on: '2026-10-14'
+- type: kin
+  person: cadmiel
+  word: ancestor
+  inferred: true
+  sources:
+  - nehemias-12
+  - it-jesua
+  - it-qadmiel
+  reason: 'Ne 12:24 lo llama hijo de Cadmiel, pero su padre es Azanías. Perspicacia «Jesúa», núm. 5, ve probable que sea
+    ese Jesúa, y «Qadmiel» pone el versículo en el Cadmiel de 537: «hijo» vale por descendiente.'
+  checked_on: '2026-10-15'
+  status: verified
+checked_on: '2026-10-15'
 status: verified
 distinct_from:
 - jesua-ayudante-de-core

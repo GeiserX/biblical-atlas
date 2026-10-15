@@ -3,7 +3,8 @@ id: esdras
 name: Esdras
 names:
 - name: Esdras
-disambiguation: El sacerdote y copista de 468 a.e.c.; no el sacerdote homónimo que volvió con Zorobabel en 537.
+disambiguation: El sacerdote y copista de 468 a.e.c.; no el sacerdote homónimo que volvió con Zorobabel en 537 ni el Esdras
+  de la procesión del muro (Ne 12:33).
 date:
   from: -467
   to: -454
@@ -117,4 +118,5 @@ history:
 checked_on: '2026-10-14'
 status: verified
 distinct_from:
+- esdras-de-la-procesion-del-muro
 - esdras-sacerdote-de-zorobabel
