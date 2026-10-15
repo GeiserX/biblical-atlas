@@ -3,6 +3,9 @@ id: bet-gamul
 name: Bet-Gamul
 names:
 - name: Bet-Gamul
+- name: Jumaiyil
+  modern: true
+  note: Lugar con el que, según Perspicacia, se suele identificar la ciudad, en la meseta de Moab al este de Dibón.
 type: city
 lat: 31.483496
 lon: 35.899907

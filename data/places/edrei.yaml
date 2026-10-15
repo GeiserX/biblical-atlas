@@ -5,6 +5,9 @@ names:
 - name: Edréi
 - name: Edrei
   note: Grafía de Perspicacia.
+- name: Derʽa
+  modern: true
+  note: Ciudad actual con la que Perspicacia suele relacionar Edréi, cerca del Yarmuk, al sureste del mar de Galilea.
 type: city
 lat: 32.625278
 lon: 36.106111

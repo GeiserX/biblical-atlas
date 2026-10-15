@@ -5,6 +5,9 @@ names:
 - name: Guilboa
 - name: Montañas de Guilboa
   note: Así lo llama la endecha de David por Saúl y Jonatán (2Sa 1:21).
+- name: Jebel Fuquʽah
+  modern: true
+  note: Monte con el que la tradición identifica Guilboa, según Perspicacia; es una cordillera caliza al sureste de Jezreel.
 type: mountain
 lat: 32.433889
 lon: 35.414444

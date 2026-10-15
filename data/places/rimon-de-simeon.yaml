@@ -5,6 +5,9 @@ names:
 - name: Rimón
 - name: En-Rimón
   note: Nombre que parece juntar a Ain y Rimón tras el destierro (Ne 11:29).
+- name: Khirbet Umm er-Ramamin (Horvat Remalya)
+  modern: true
+  note: Ruinas con las que Perspicacia suele identificar la ciudad, unos 15 km al norte de Beer-Seba.
 type: city
 lat: 31.37124
 lon: 34.86489

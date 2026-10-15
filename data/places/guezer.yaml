@@ -3,6 +3,9 @@ id: guezer
 name: Guézer
 names:
 - name: Guézer
+- name: Tell Jezer (Tel Gezer)
+  modern: true
+  note: Montículo que los eruditos tienen por la antigua Guézer, según Perspicacia; también se lo llama Abu Shusheh.
 type: city
 lat: 31.859167
 lon: 34.919167

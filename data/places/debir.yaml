@@ -7,6 +7,9 @@ names:
   note: Nombre anterior de la ciudad (Jos 15:15).
 - name: Quiryat-Saná
   note: Otro nombre de la ciudad (Jos 15:49).
+- name: Khirbet Rabud
+  modern: true
+  note: Sitio por el que hoy se opta, según Perspicacia, unos 13 km al suroeste de Hebrón; antes se pensaba en Tell Beit Mirsim.
 type: city
 lat: 31.43209
 lon: 35.01485

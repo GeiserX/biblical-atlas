@@ -5,6 +5,9 @@ names:
 - name: Bet-Harán
 - name: Bet-Haram
   note: Así la llama Jos 13:27.
+- name: Tell Iktanu
+  modern: true
+  note: Sitio original de la ciudad según Perspicacia; el nombre perdura en el cercano Tell er-Rameh.
 type: city
 lat: 31.819256
 lon: 35.671878

@@ -3,6 +3,10 @@ id: madon
 name: Madón
 names:
 - name: Madón
+- name: Qarn Hattin (Horvat Qarne Hittim)
+  modern: true
+  note: Sitio con el que Perspicacia suele identificar la ciudad, al oeste-noroeste de Tiberíades, unos 8 km; hay quien duda
+    de esa identificación.
 type: city
 lat: 32.799722
 lon: 35.459722

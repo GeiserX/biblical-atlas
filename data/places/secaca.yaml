@@ -3,6 +3,10 @@ id: secaca
 name: Secacá
 names:
 - name: Secacá
+- name: Khirbet es-Samrah
+  modern: true
+  note: Sitio con el que suele identificarse la ciudad, según Perspicacia, en una colina al oeste del extremo norte del mar
+    Muerto.
 type: city
 lat: 31.71684
 lon: 35.391592

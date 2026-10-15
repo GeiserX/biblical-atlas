@@ -5,6 +5,10 @@ names:
 - name: Elat
 - name: Elot
   note: Forma plural del nombre, según Perspicacia.
+- name: ʽAqaba
+  modern: true
+  note: Ciudad actual en la que Perspicacia sitúa Elat, o muy cerca; la Elat israelí moderna está en el extremo noroeste del
+    golfo.
 type: port
 lat: 29.530676
 lon: 34.999999

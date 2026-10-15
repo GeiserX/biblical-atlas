@@ -5,6 +5,9 @@ names:
 - name: Astarot
 - name: Beesterá
   note: Nombre que le da Jos 21:27, según Perspicacia.
+- name: Tell ʽAshtarah
+  modern: true
+  note: Montículo de Basán con el que se suele identificar la ciudad, según Perspicacia «Astarot».
 type: city
 lat: 32.804167
 lon: 36.015833

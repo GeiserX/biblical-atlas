@@ -5,6 +5,9 @@ names:
 - name: Racat
 - name: Raqat
   note: Grafía de Perspicacia.
+- name: Khirbet el-Quneitireh (Tel Raqqat)
+  modern: true
+  note: Sitio con el que Perspicacia identifica Raqat, junto al mar de Galilea, un poco al norte de Tiberíades.
 type: city
 lat: 32.806389
 lon: 35.525833

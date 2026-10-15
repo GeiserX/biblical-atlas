@@ -5,6 +5,9 @@ names:
 - name: Dibón
 - name: Dibón-Gad
   note: Así sale entre las etapas de Nú 33:45, 46; Perspicacia cree que el nombre compuesto se lo dieron los gaditas al reconstruirla.
+- name: Dhiban
+  modern: true
+  note: Ciudad actual con la que Perspicacia identifica Dibón, unos 5 km al norte del Arnón; allí apareció la Piedra Moabita.
 type: city
 lat: 31.502236
 lon: 35.776574

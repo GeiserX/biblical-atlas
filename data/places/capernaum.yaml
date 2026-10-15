@@ -5,6 +5,10 @@ names:
 - name: Capernaúm
 - name: Capernaum
   note: Forma que usa Perspicacia.
+- name: Tell Hum (Kefar Nahum)
+  modern: true
+  note: Ruinas donde Perspicacia sitúa Capernaúm, junto al mar de Galilea por el noroeste; descarta Khan Minyeh, cuyas ruinas
+    son árabes.
 type: city
 lat: 32.881111
 lon: 35.575

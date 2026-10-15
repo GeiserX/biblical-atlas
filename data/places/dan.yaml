@@ -7,6 +7,9 @@ names:
 - name: Lais
   note: Otro nombre anterior (Jue 18:29).
 - name: Dan
+- name: Tell el-Qadi (Tel Dan)
+  modern: true
+  note: Sitio con el que Perspicacia identifica la ciudad; su nombre árabe significa «Montículo del Juez».
 type: city
 lat: 33.249
 lon: 35.652

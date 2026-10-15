@@ -3,6 +3,9 @@ id: medeba
 name: Medebá
 names:
 - name: Medebá
+- name: Madaba
+  modern: true
+  note: Pueblo actual que ocupa el lugar de Medebá, según Perspicacia.
 type: city
 lat: 31.716107
 lon: 35.79548

@@ -8,6 +8,9 @@ names:
 - name: Castillo de Susa
   note: Susa o su parte fortificada (Da 8:2; Ne 1:1), según Perspicacia «Susa». La nota de Da 8:2 da también «el palacio»
     o «la fortaleza».
+- name: Shush
+  modern: true
+  note: Poblado actual en la ladera de la acrópolis de las ruinas de Susa, según Perspicacia.
 type: city
 lat: 32.18922
 lon: 48.25778

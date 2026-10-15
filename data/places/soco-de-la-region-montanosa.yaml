@@ -5,6 +5,9 @@ names:
 - name: Socó
 - name: Socoh
   note: Otra grafía que da la nota de Jos 15:48; es la de Perspicacia.
+- name: Khirbet Shuweikeh
+  modern: true
+  note: Sitio con el que Perspicacia suele identificar la ciudad, unos 17 km al suroeste de Hebrón.
 type: city
 lat: 31.400871
 lon: 35.00614

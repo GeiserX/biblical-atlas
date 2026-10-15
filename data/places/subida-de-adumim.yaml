@@ -5,6 +5,9 @@ names:
 - name: Subida de Adumim
 - name: Adumim
   note: Quizá «rocas rojas», por el color del suelo (Perspicacia).
+- name: Talʽat ed-Damm (Maʽale Adummim)
+  modern: true
+  note: Nombres árabe y hebreo del paso hoy, según Perspicacia «Adumim».
 type: mountain
 lat: 31.8175
 lon: 35.361505

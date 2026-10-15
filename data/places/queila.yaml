@@ -3,6 +3,9 @@ id: queila
 name: Queilá
 names:
 - name: Queilá
+- name: Khirbet Qila (Qeila)
+  modern: true
+  note: Sitio con el que Perspicacia suele relacionar la ciudad, en una colina unos 14 km al noroeste de Hebrón.
 type: city
 lat: 31.6137
 lon: 35.0036

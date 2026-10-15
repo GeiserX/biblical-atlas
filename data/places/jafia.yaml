@@ -3,6 +3,9 @@ id: jafia
 name: Jafía
 names:
 - name: Jafía
+- name: Yafa (Yafia)
+  modern: true
+  note: Población actual con la que suele identificarse el lugar, según Perspicacia «Jafía», núm. 3.
 type: city
 lat: 32.687019
 lon: 35.27535

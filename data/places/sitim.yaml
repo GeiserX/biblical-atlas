@@ -5,6 +5,9 @@ names:
 - name: Sitim
 - name: Abel-Sitim
   note: Nombre completo según parece; Perspicacia remite de Abel-sitim a Sitim.
+- name: Tell el-Hammam
+  modern: true
+  note: Sitio que Perspicacia prefiere para Sitim, antes que Tell el-Kefrein, al nordeste del mar Muerto.
 type: city
 lat: 31.84018
 lon: 35.67368

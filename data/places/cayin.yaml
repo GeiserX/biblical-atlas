@@ -5,6 +5,9 @@ names:
 - name: Cayín
 - name: Qayín
   note: Grafía de Perspicacia.
+- name: en-Nebi Yaqin
+  modern: true
+  note: Sitio con el que Perspicacia identifica la ciudad, unos 6 km al sureste de Hebrón.
 type: city
 lat: 31.49627
 lon: 35.15154

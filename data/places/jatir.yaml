@@ -3,6 +3,9 @@ id: jatir
 name: Jatir
 names:
 - name: Jatir
+- name: Khirbet ʽAttir (Horvat Yattir)
+  modern: true
+  note: Ruinas con las que Perspicacia suele identificar la ciudad sacerdotal, al SSO de Hebrón.
 type: city
 lat: 31.3525
 lon: 35.016111

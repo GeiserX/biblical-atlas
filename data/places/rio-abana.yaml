@@ -3,6 +3,9 @@ id: rio-abana
 name: Río Abaná
 names:
 - name: Río Abaná
+- name: Nahr Barada
+  modern: true
+  note: Río con el que Perspicacia identifica normalmente el Abaná; cruza el norte de Damasco.
 type: river
 lat: 33.513542
 lon: 36.305

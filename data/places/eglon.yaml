@@ -3,6 +3,10 @@ id: eglon
 name: Eglón
 names:
 - name: Eglón
+- name: Tell el-Hesi
+  modern: true
+  note: Sitio donde Perspicacia cree que estuvo Eglón, unos 11 km al oeste de Lakís; el nombre antiguo sigue en Khirbet ʽAjlan,
+    cerca.
 type: city
 lat: 31.5477
 lon: 34.7302

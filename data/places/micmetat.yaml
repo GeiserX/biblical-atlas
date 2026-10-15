@@ -3,6 +3,9 @@ id: micmetat
 name: Micmetat
 names:
 - name: Micmetat
+- name: Khirbet Juleijil
+  modern: true
+  note: Sitio con el que Perspicacia identifica el lugar, poco al este de Siquem.
 type: city
 lat: 32.17719
 lon: 35.2672

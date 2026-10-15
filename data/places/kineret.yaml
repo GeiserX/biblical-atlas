@@ -4,6 +4,9 @@ name: Kinéret
 names:
 - name: Kinéret
   note: La ciudad; el mar de Kinéret tiene su propia ficha, mar de Galilea.
+- name: Khirbet el-ʽOreimeh (Tel Kinnerot)
+  modern: true
+  note: Montículo con el que Perspicacia identifica hoy la ciudad, sobre la orilla noroeste del mar de Galilea.
 type: city
 lat: 32.869444
 lon: 35.538333

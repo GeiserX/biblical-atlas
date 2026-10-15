@@ -5,6 +5,10 @@ names:
 - name: Cutá
 - name: Cut
   note: Así la llama 2Re 17:30.
+- name: Tell Ibrahim
+  modern: true
+  note: Montículo al noreste de Babilonia que muchos geógrafos, según Perspicacia, toman por Cutá, porque allí aparecieron
+    tablillas con su nombre acadio.
 type: city
 lat: 32.760028
 lon: 44.612861

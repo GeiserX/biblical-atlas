@@ -3,6 +3,9 @@ id: hadadrimon
 name: Hadadrimón
 names:
 - name: Hadadrimón
+- name: Rummana
+  modern: true
+  note: Población con la que Perspicacia suele identificar el lugar, unos 7 km al sur-sudeste de Meguidó.
 type: city
 lat: 32.52439
 lon: 35.20408

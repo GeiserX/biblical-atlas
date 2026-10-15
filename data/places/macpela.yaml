@@ -5,6 +5,9 @@ names:
 - name: Macpelá
 - name: Cueva de Macpelá
   note: La cueva que había al final del campo; el nombre cubría también la zona.
+- name: Meʽarat HaMakhpela
+  modern: true
+  note: Nombre actual de la cueva según Perspicacia; está en Hebrón, bajo una mezquita del recinto Haram el-Khalil.
 type: plain
 lat: 31.524672
 lon: 35.110758

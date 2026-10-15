@@ -3,6 +3,9 @@ id: taanac
 name: Taanac
 names:
 - name: Taanac
+- name: Tell Taʽanakh
+  modern: true
+  note: Sitio con el que Perspicacia identifica la ciudad, unos 8 km al sur-sureste de Meguidó.
 type: city
 lat: 32.521526
 lon: 35.219122

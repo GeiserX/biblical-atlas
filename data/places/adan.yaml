@@ -3,6 +3,9 @@ id: adan
 name: Adán
 names:
 - name: Adán
+- name: Tell ed-Damiyeh (Tel Damiyaʼ)
+  modern: true
+  note: Sitio con el que se suele identificar la ciudad, en la orilla este del Jordán, según Perspicacia «Adán», núm. 2.
 type: city
 lat: 32.103933
 lon: 35.546789

@@ -5,6 +5,9 @@ names:
 - name: Ramá
 - name: Ramá de Benjamín
   note: Así la distingue Perspicacia de las demás ciudades llamadas Ramá.
+- name: er-Ram
+  modern: true
+  note: Pueblo actual en el sitio de la Ramá de Benjamín, según Perspicacia «Ramá», núm. 1, unos 8 km al norte de Jerusalén.
 type: city
 lat: 31.85434
 lon: 35.23161

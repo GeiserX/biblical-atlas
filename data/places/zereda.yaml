@@ -3,6 +3,9 @@ id: zereda
 name: Zeredá
 names:
 - name: Zeredá
+- name: Deir Ghassana
+  modern: true
+  note: Pueblo con el que Perspicacia suele identificar Zeredá; un manantial cercano, ʽAin Seridah, conserva el nombre antiguo.
 type: city
 lat: 32.04638
 lon: 35.09719

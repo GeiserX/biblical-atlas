@@ -5,6 +5,9 @@ names:
 - name: Bet-Émec
 - name: Bet-émeq
   note: Grafía de Perspicacia.
+- name: Tell Mimas (Tel Bet HaʽEmeq)
+  modern: true
+  note: Sitio con el que Perspicacia identifica la ciudad; cerca queda el pueblo abandonado de ʽAmqa, que guarda el nombre.
 type: city
 lat: 32.965833
 lon: 35.151944

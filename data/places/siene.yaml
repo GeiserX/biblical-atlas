@@ -3,6 +3,9 @@ id: siene
 name: Siene
 names:
 - name: Siene
+- name: Asuán
+  modern: true
+  note: Ciudad egipcia con la que Perspicacia identifica Siene, en la orilla este del Nilo, frente a Elefantina.
 type: city
 lat: 24.088919
 lon: 32.899731

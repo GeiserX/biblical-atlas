@@ -5,6 +5,9 @@ names:
 - name: Azecá
 - name: Azeqá
   note: Grafía de Perspicacia.
+- name: Tell Zakariyeh (Tel ʽAzeqa)
+  modern: true
+  note: Sitio donde Perspicacia sitúa la ciudad, al noroeste de Hebrón; allí se han excavado muros y torres.
 type: city
 lat: 31.700226
 lon: 34.935696

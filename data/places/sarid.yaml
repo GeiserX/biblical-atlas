@@ -3,6 +3,9 @@ id: sarid
 name: Sarid
 names:
 - name: Sarid
+- name: Tell Shadud
+  modern: true
+  note: Sitio con el que Perspicacia identifica la ciudad, unos 10 km al nornoreste de Meguidó.
 type: city
 lat: 32.660363
 lon: 35.234202

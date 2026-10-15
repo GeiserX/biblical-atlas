@@ -4,6 +4,9 @@ name: Abel-Keramim
 names:
 - name: Abel-Keramim
   note: 'Perspicacia da el significado: cauce de viñedos.'
+- name: Khirbet es-Suq
+  modern: true
+  note: Sitio con el que hoy se suele identificar el lugar, unos 8 km al sur de Ammán, según Perspicacia; otros proponen Naʽur.
 type: city
 lat: 31.87606
 lon: 35.928768

@@ -3,6 +3,9 @@ id: jarmut
 name: Jarmut
 names:
 - name: Jarmut
+- name: Khirbet Yarmuk (Tel Yarmut)
+  modern: true
+  note: Sitio donde, según Perspicacia, parece que estuvo la ciudad, en una colina unos 26 km al OSO de Jerusalén.
 type: city
 lat: 31.7083
 lon: 34.975

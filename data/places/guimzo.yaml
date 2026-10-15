@@ -3,6 +3,9 @@ id: guimzo
 name: Guimzó
 names:
 - name: Guimzó
+- name: Gimzu
+  modern: true
+  note: Pueblo con el que Perspicacia suele identificar la ciudad, unos 23 km al sureste de Tel Aviv-Yafo.
 type: city
 lat: 31.929705
 lon: 34.946809

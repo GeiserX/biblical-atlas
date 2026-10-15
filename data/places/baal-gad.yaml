@@ -3,6 +3,10 @@ id: baal-gad
 name: Baal-Gad
 names:
 - name: Baal-Gad
+- name: Hasbaiya
+  modern: true
+  note: Pueblo con el que Perspicacia suele identificar la ciudad, en Wadi et-Teim, aunque advierte que el sitio exacto es
+    incierto.
 type: city
 lat: 33.383333
 lon: 35.683333

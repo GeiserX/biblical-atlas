@@ -3,6 +3,9 @@ id: adami-nequeb
 name: Adamí-Néqueb
 names:
 - name: Adamí-Néqueb
+- name: Khirbet et-Tell (Tel Adami)
+  modern: true
+  note: Sitio con el que Perspicacia suele identificar el lugar, entre Tiberíades y el monte Tabor.
 type: city
 lat: 32.749167
 lon: 35.459167

@@ -3,6 +3,9 @@ id: anab
 name: Anab
 names:
 - name: Anab
+- name: Khirbet ʽAnab es-Saghireh
+  modern: true
+  note: Sitio con el que Perspicacia identifica el pueblo, 1,5 km al oeste de Edh Dhahiriya.
 type: city
 lat: 31.4121
 lon: 34.9549

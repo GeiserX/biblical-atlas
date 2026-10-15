@@ -3,6 +3,9 @@ id: guibeton
 name: Guibetón
 names:
 - name: Guibetón
+- name: Tell el-Melat (Tel Malot)
+  modern: true
+  note: Montículo con el que Perspicacia suele identificar la ciudad, unos 9 km al norte de donde se propone Ecrón.
 type: city
 lat: 31.856389
 lon: 34.865556

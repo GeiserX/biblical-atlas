@@ -17,6 +17,9 @@ names:
 - name: Árbol grande de Meonenim
   note: Árbol que se veía desde Siquem. Su nombre significa practicantes de magia; quizá allí se practicaba (Perspicacia «Meonenim,
     Árbol grande de»).
+- name: Tell Balata
+  modern: true
+  note: Sitio con el que Perspicacia identifica la ciudad, junto a Nablus.
 type: city
 lat: 32.213611
 lon: 35.281944

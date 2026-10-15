@@ -4,6 +4,9 @@ name: En-Semes
 names:
 - name: En-Semes
   note: Significa «fuente del sol» (Perspicacia).
+- name: ʽAin el-Hod
+  modern: true
+  note: Manantial con el que Perspicacia suele identificar la fuente, unos 3 km al este del monte del templo.
 type: lake
 lat: 31.77406
 lon: 35.27013

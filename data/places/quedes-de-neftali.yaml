@@ -7,6 +7,9 @@ names:
   note: Así la llama Jue 4:6. Perspicacia escribe Quedes-neftalí.
 - name: Quedes en Galilea
   note: Así la llama Jos 20:7.
+- name: Tell Qades (Tel Qedesh)
+  modern: true
+  note: Montículo con el que Perspicacia identifica la ciudad, unos 20 km al suroeste de Dan.
 type: city
 lat: 33.111638
 lon: 35.529517

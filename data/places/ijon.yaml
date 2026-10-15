@@ -3,6 +3,9 @@ id: ijon
 name: Ijón
 names:
 - name: Ijón
+- name: Tell ed-Dibbin
+  modern: true
+  note: Sitio con el que Perspicacia relaciona por lo general la ciudad, unos 15 km al nornoroeste de Dan.
 type: city
 lat: 33.345278
 lon: 35.59

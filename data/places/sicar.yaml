@@ -6,6 +6,9 @@ names:
 - name: Pozo de Jacob
   note: Pozo hondo junto a Sicar donde Jesús habló con la samaritana (Jn 4:6). Perspicacia lo llama «Fuente de Jacob» y lo
     pone en Bir Yaʽqub; OpenBible no le da punto.
+- name: ʽAskar
+  modern: true
+  note: Aldea con la que la nota de Jn 4:5 identifica la ciudad, cerca de Nablus y a unos 700 m del pozo de Jacob.
 type: city
 lat: 32.21776
 lon: 35.28897

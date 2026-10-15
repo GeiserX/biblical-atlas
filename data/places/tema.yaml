@@ -3,6 +3,9 @@ id: tema
 name: Temá
 names:
 - name: Temá
+- name: Taima
+  modern: true
+  note: Oasis actual del norte de Arabia con el que Perspicacia hace corresponder Temá.
 type: city
 lat: 27.629703
 lon: 38.551626

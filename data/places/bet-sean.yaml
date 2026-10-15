@@ -7,6 +7,9 @@ names:
   note: Otra forma del nombre; Perspicacia titula su artículo con las dos.
 - name: Escitópolis
   note: Nombre que recibió en tiempos de los macabeos, según Perspicacia.
+- name: Tell el-Husn (Tel Bet Sheʼan)
+  modern: true
+  note: Sitio de la ciudad según Perspicacia, junto a la actual Beisan (Bet Sheʼan), que hereda su nombre.
 type: city
 lat: 32.503611
 lon: 35.503056

@@ -12,6 +12,10 @@ names:
   note: Otro nombre de la ciudad (2Sa 6:2).
 - name: Quiryat
   note: Ciudad de Benjamín de Jos 18:28; Perspicacia dice que por lo general se la toma por Quiryat-Jearim.
+- name: Deir el-ʽAzar (Tel Qiryat Yeʽarim)
+  modern: true
+  note: Sitio que Perspicacia da por comúnmente aceptado para Quiryat-Jearim, en una colina unos 13 km al oestenoroeste de
+    Jerusalén.
 type: city
 lat: 31.808957
 lon: 35.10378

@@ -3,6 +3,9 @@ id: monte-carmelo
 name: Monte Carmelo
 names:
 - name: Carmelo
+- name: Jebel el-Karmal (Har Karmel)
+  modern: true
+  note: Nombres árabe y hebreo con que hoy se designa, según Perspicacia, la serranía noroccidental de la cordillera.
 type: mountain
 lat: 32.6725
 lon: 35.023333

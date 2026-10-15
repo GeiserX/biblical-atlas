@@ -8,6 +8,9 @@ names:
     de Isaías I» escribe Quir o Quir-haréset.
 - name: Quir-Heres
   note: Forma de Jer 48:31, 36. El Targum arameo la iguala con Quir de Moab, según Perspicacia «Quir de Moab».
+- name: Karak
+  modern: true
+  note: Ciudad moderna con la que Perspicacia suele identificar Quir de Moab, sobre una meseta unos 35 km al sur de Dibón.
 type: city
 lat: 31.180556
 lon: 35.701389

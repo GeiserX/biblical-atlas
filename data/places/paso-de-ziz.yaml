@@ -5,6 +5,9 @@ names:
 - name: Paso de Ziz
 - name: Ziz
   note: Título del artículo de Perspicacia.
+- name: Wadi Hasasa (Nahal Hazezon)
+  modern: true
+  note: Nombre actual del uadi con el que Perspicacia identifica de ordinario la subida, unos 10 km al noroeste de En-Guedí.
 type: valley
 lat: 31.5607
 lon: 35.38364

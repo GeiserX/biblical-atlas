@@ -5,6 +5,10 @@ names:
 - name: Valle de Sorec
 - name: Soreq
   note: Grafía del título de Perspicacia, que lo llama valle torrencial; la nota de Jue 16:4 da «wadi» como otra lectura.
+- name: Wadi es-Sarar (Nahal Soreq)
+  modern: true
+  note: Cauce con el que Perspicacia identifica el valle; a su lado, frente a Bet-semes, Khirbet Suriq parece conservar el
+    nombre.
 type: valley
 lat: 31.755833
 lon: 35.05

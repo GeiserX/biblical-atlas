@@ -3,6 +3,9 @@ id: jehud
 name: Jehúd
 names:
 - name: Jehúd
+- name: el-Yehudiyeh (Yehud)
+  modern: true
+  note: Sitio con el que Perspicacia suele identificar el lugar, al este de Tel Aviv-Yafo; algunos lo buscan junto a Yazur.
 type: city
 lat: 32.030833
 lon: 34.890278

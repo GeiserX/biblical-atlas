@@ -6,6 +6,9 @@ names:
 - name: Bat-Rabim
   note: Puerta de Hesbón cerca de sus estanques (Can 7:4). Perspicacia duda entre una puerta orientada hacia Rabá y un nombre
     dado por el gentío que pasaba por ella.
+- name: Hisban
+  modern: true
+  note: Ruinas con las que Perspicacia identifica la ciudad, unos 20 km al suroeste de Ammán.
 type: city
 lat: 31.800811
 lon: 35.809062

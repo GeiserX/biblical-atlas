@@ -3,6 +3,9 @@ id: corazin
 name: Corazín
 names:
 - name: Corazín
+- name: Khirbet Kerazeh (Korazim)
+  modern: true
+  note: Sitio con el que los eruditos suelen identificar la ciudad, según Perspicacia, unos 3 km al nornoroeste de Capernaúm.
 type: city
 lat: 32.911389
 lon: 35.563889

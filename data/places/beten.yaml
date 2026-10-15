@@ -3,6 +3,9 @@ id: beten
 name: Beten
 names:
 - name: Beten
+- name: Khirbet Ibtin
+  modern: true
+  note: Sitio con el que se suele identificar la ciudad, según Perspicacia «Beten».
 type: city
 lat: 32.764076
 lon: 35.10658

@@ -3,6 +3,9 @@ id: meguido
 name: Meguidó
 names:
 - name: Meguidó
+- name: Tell el-Mutesellim (Tel Megiddo)
+  modern: true
+  note: Nombre actual del montículo donde estaba la ciudad, según Perspicacia «Meguidó».
 type: city
 lat: 32.585278
 lon: 35.184444

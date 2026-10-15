@@ -11,6 +11,9 @@ names:
 - name: Aven
   note: 'Perspicacia «On»: en Eze 30:17 el hebreo vocaliza el nombre como Aven, «algo nocivo», quizá por juego de palabras.
     La TNM pone On. No es Bicat-Aven.'
+- name: Al-Matariya
+  modern: true
+  note: Aldea que hoy ocupa parte del terreno de la antigua ciudad, al noreste de El Cairo, según Perspicacia «On».
 type: city
 lat: 30.129444
 lon: 31.3075

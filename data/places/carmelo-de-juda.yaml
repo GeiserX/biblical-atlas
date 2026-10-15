@@ -3,6 +3,10 @@ id: carmelo-de-juda
 name: Carmelo
 names:
 - name: Carmelo
+- name: Khirbet el-Kirmil (Horvat Karmel)
+  modern: true
+  note: Sitio con el que la mayoría de los geógrafos identifican la ciudad, según Perspicacia, unos 11 km al sursureste de
+    Hebrón.
 type: city
 lat: 31.422876
 lon: 35.132952

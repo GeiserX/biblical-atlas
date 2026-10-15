@@ -3,6 +3,9 @@ id: gat-hefer
 name: Gat-Héfer
 names:
 - name: Gat-Héfer
+- name: Khirbet ez-Zurraʽ (Tel Gat Hefer)
+  modern: true
+  note: Sitio con el que Perspicacia suele identificar la ciudad, al nornordeste de Nazaret.
 type: city
 lat: 32.738056
 lon: 35.319722

@@ -3,6 +3,10 @@ id: colina-de-more
 name: Colina de Moré
 names:
 - name: Colina de Moré
+- name: Jebel Dahi (Givʽat Ha-More)
+  modern: true
+  note: Nombre actual del cerro con el que Perspicacia identifica por lo general la colina, unos 8 km al norte del pozo de
+    Harod.
 type: mountain
 lat: 32.61764
 lon: 35.34873

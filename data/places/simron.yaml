@@ -3,6 +3,9 @@ id: simron
 name: Simrón
 names:
 - name: Simrón
+- name: Khirbet Sammuniyeh (Tel Shimron)
+  modern: true
+  note: Sitio con el que Perspicacia identifica la ciudad, unos 8 km al oeste de Nazaret.
 type: city
 lat: 32.703889
 lon: 35.213333

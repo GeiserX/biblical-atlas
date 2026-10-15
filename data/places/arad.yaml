@@ -3,6 +3,9 @@ id: arad
 name: Arad
 names:
 - name: Arad
+- name: Tel ʽArad
+  modern: true
+  note: Montículo del Négueb con el que se suele identificar la ciudad; Perspicacia recoge también la propuesta de Tel Malhata.
 type: city
 lat: 31.280833
 lon: 35.125

@@ -9,6 +9,9 @@ names:
 - name: Grandes aguas de Gabaón
   note: 'Jer 41:12: allí alcanzó Johanán a Ismael. La nota al pie da también «el gran estanque»; Perspicacia «Gabaón» no dice
     qué eran.'
+- name: el-Jib
+  modern: true
+  note: Sitio con el que hoy se relaciona la ciudad; allí salieron asas de jarras con su nombre, según Perspicacia «Gabaón».
 type: city
 lat: 31.847451
 lon: 35.183351

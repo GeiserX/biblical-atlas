@@ -3,6 +3,9 @@ id: cabul
 name: Cabul
 names:
 - name: Cabul
+- name: Kabul
+  modern: true
+  note: Pueblo actual que corresponde a la ciudad de Aser, según Perspicacia «Cabul», núm. 1.
 type: city
 lat: 32.868333
 lon: 35.211389

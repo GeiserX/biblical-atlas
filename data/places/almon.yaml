@@ -5,6 +5,9 @@ names:
 - name: Almón
 - name: Alémet
   note: Nombre que le da 1Cr 6:60.
+- name: Khirbet ʽAlmit (Horvat ʽAlmit)
+  modern: true
+  note: Ruinas en las que Perspicacia sitúa la ciudad levita, unos 2 km al este-nordeste de Anatot.
 type: city
 lat: 31.824903
 lon: 35.273498

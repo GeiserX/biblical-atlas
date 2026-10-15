@@ -8,6 +8,9 @@ names:
 - name: Marisá
   note: Nombre que tuvo tras el exilio, cuando fue colonia sidonia y después fortaleza idumea (Perspicacia «Maresá, Maresah»,
     núm. 3).
+- name: Tell Sandahannah (Tel Maresha)
+  modern: true
+  note: Sitio con el que Perspicacia identifica la ciudad, 1,5 km al sur de Beit Jibrin (Bet Guvrin).
 type: city
 lat: 31.592963
 lon: 34.898241

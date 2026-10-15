@@ -3,6 +3,9 @@ id: zanoah
 name: Zanóah
 names:
 - name: Zanóah
+- name: Khirbet Zanuʽ (Horvat Zanoah)
+  modern: true
+  note: Sitio con el que Perspicacia identifica la Zanóah de la Sefelá, unos 5 km al sureste de Bet-Semes.
 type: city
 lat: 31.71944
 lon: 35.00129

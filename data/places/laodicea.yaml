@@ -7,6 +7,9 @@ names:
   note: Nombre anterior, según Perspicacia.
 - name: Roas
   note: Otro nombre anterior, según Perspicacia.
+- name: Denizli
+  modern: true
+  note: Ciudad moderna cerca de la cual quedan las ruinas, según Perspicacia «Laodicea, laodicenses».
 type: city
 lat: 37.835833
 lon: 29.1075

@@ -3,6 +3,9 @@ id: saleca
 name: Salecá
 names:
 - name: Salecá
+- name: Salkhad
+  modern: true
+  note: Población con la que Perspicacia suele identificar la ciudad, en el sur del Jebel Hauran.
 type: city
 lat: 32.4939
 lon: 36.7105

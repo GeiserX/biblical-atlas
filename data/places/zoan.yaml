@@ -7,6 +7,9 @@ names:
   note: Nombre griego por el que se conoce más la ciudad.
 - name: Región de Zoan
   note: Sl 78:12, 43 usa «región de Zoan» junto a «tierra de Egipto» al recordar los milagros del éxodo.
+- name: San el-Hagar
+  modern: true
+  note: Pueblo actual junto a las ruinas de Tanis, el nombre griego de Zoan, según Perspicacia «Zoan».
 type: city
 lat: 30.976944
 lon: 31.88

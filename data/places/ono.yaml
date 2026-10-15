@@ -6,6 +6,9 @@ names:
 - name: Llanura de Onó
   note: 'Ne 6:2: allí querían citar a Nehemías Sanbalat y Guésem. Perspicacia «Onó» lo ve posiblemente el valle ancho donde
     está Kafr ʽAna.'
+- name: Kafr ʽAna (Ono)
+  modern: true
+  note: Sitio con el que Perspicacia identifica la ciudad, al estesureste de Jope.
 type: city
 lat: 32.027222
 lon: 34.868056

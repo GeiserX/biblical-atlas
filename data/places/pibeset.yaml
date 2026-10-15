@@ -5,6 +5,9 @@ names:
 - name: Pibéset
 - name: Bubastis
   note: Así la llama la Septuaginta, según Perspicacia «Pibéset».
+- name: Tell Basta
+  modern: true
+  note: Sitio de las ruinas de Bubastis según Perspicacia «Pibéset», junto a la actual ciudad de Zagazig.
 type: city
 lat: 30.572778
 lon: 31.51

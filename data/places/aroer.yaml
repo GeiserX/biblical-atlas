@@ -3,6 +3,9 @@ id: aroer
 name: Aroer
 names:
 - name: Aroer
+- name: Khirbet ʽAraʽir
+  modern: true
+  note: Ruinas donde Perspicacia cree que estaba la ciudad, unos 6 km al sureste de Dibón, junto al Arnón.
 type: city
 lat: 31.4708
 lon: 35.819389

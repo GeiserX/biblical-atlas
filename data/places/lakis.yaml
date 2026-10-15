@@ -3,6 +3,9 @@ id: lakis
 name: Lakís
 names:
 - name: Lakís
+- name: Tell ed-Duweir (Tel Lakhish)
+  modern: true
+  note: Montículo con el que Perspicacia identifica hoy la ciudad, unos 24 km al oeste de Hebrón.
 type: city
 lat: 31.565278
 lon: 34.849167

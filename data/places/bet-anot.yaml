@@ -3,6 +3,9 @@ id: bet-anot
 name: Bet-Anot
 names:
 - name: Bet-Anot
+- name: Khirbet Beit ʽAnun
+  modern: true
+  note: Sitio con el que Perspicacia identifica hoy la ciudad, unos 6 km al nornoreste de Hebrón.
 type: city
 lat: 31.56209
 lon: 35.12622

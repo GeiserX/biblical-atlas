@@ -3,6 +3,9 @@ id: anatot
 name: Anatot
 names:
 - name: Anatot
+- name: Ras el-Kharrubeh
+  modern: true
+  note: Sitio donde Perspicacia cree que estaba la ciudad levita, a unos 800 m de la aldea de Anata, que conserva el nombre.
 type: city
 lat: 31.80752
 lon: 35.25758

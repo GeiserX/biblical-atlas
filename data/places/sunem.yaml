@@ -5,6 +5,9 @@ names:
 - name: Sunem
 - name: Sulem
   note: Nombre que le da Eusebio, según Perspicacia «Sulamita»; de esa forma saldría la palabra «sulamita».
+- name: Sulam (Shunem)
+  modern: true
+  note: Pueblo actual con el que Perspicacia identifica la ciudad, en la ladera de Jebel Dahi.
 type: city
 lat: 32.605633
 lon: 35.334306

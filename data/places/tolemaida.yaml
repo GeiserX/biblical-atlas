@@ -5,6 +5,10 @@ names:
 - name: Tolemaida
 - name: Akkó
   note: Nombre anterior de la ciudad; Tolemaida es el que recibió después.
+- name: ʽAkko
+  modern: true
+  note: Ciudad actual que ocupa el puerto de Pablo, según Perspicacia «Akkó»; el montículo cananeo es Tell-el-Fujjar (Tel
+    ʽAkko).
 type: port
 lat: 32.9214
 lon: 35.0692

@@ -3,6 +3,9 @@ id: aroer-de-juda
 name: Aroer
 names:
 - name: Aroer
+- name: Khirbet Ararah (Horvat Aroer)
+  modern: true
+  note: Sitio con el que Perspicacia identifica esta Aroer, unos 17 km al sureste de Beer-Seba.
 type: city
 lat: 31.15214
 lon: 34.97907

@@ -3,6 +3,9 @@ id: lahmam
 name: Lahmam
 names:
 - name: Lahmam
+- name: Khirbet el-Lahm (Horvat Lehem)
+  modern: true
+  note: Sitio con el que se identifica hoy por lo general la población, unos 5 km al este de Lakís, según Perspicacia «Lahmam».
 type: city
 lat: 31.57183
 lon: 34.896

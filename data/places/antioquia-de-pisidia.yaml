@@ -3,6 +3,9 @@ id: antioquia-de-pisidia
 name: Antioquía de Pisidia
 names:
 - name: Antioquía de Pisidia
+- name: Yalvaç
+  modern: true
+  note: Pueblo de Turquía junto al que están las ruinas de la ciudad, según Perspicacia «Antioquía», núm. 2.
 type: city
 lat: 38.30611
 lon: 31.18917

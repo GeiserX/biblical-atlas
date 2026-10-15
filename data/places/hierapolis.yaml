@@ -3,6 +3,9 @@ id: hierapolis
 name: Hierápolis
 names:
 - name: Hierápolis
+- name: Pamukkale
+  modern: true
+  note: Lugar actual de Turquía donde estaba la ciudad, según Perspicacia «Hierápolis».
 type: city
 lat: 37.926616
 lon: 29.127375

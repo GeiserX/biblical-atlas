@@ -5,6 +5,9 @@ names:
 - name: Torrente de Caná
 - name: Qaná
   note: Otra forma del nombre que da la nota de Jos 16:8; es la de Perspicacia.
+- name: Wadi Qanah (Nahal Qana)
+  modern: true
+  note: Cauce con el que Perspicacia suele relacionar el torrente; nace al suroeste de Nablus y se une al Yarkón.
 type: river
 lat: 32.127
 lon: 34.8954

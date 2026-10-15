@@ -3,6 +3,9 @@ id: listra
 name: Listra
 names:
 - name: Listra
+- name: Hatunsaray
+  modern: true
+  note: Pueblo actual junto al montículo con el que se identifica la ciudad, que queda al norte, según Perspicacia «Listra».
 type: city
 lat: 37.6017
 lon: 32.3384

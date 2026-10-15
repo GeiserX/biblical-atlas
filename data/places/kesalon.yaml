@@ -3,6 +3,9 @@ id: kesalon
 name: Kesalón
 names:
 - name: Kesalón
+- name: Kesla (Kesalón)
+  modern: true
+  note: Lugar con el que Perspicacia suele identificar hoy la población, al oeste de Jerusalén.
 type: city
 lat: 31.781111
 lon: 35.051111
