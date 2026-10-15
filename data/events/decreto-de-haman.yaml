@@ -5,65 +5,32 @@ date:
   from: -483
   to: -483
   precision: day
-  approx: false
-  type: derived
+  approx: true
+  type: anchored
   chronology: tnm
-  text: 484 a.e.c. (cálculo nuestro)
+  text: 13 de nisán de 484 a.e.c.
   detail:
     month: nisan
     day: 13
-  note: Est 3:7, 12 da el día 13 de nisán del año duodécimo de Asuero. Contando 495 como su primer año, el duodécimo es
-    484.
 places:
 - susa
 people:
 - haman
 - jerjes-i
-- mardoqueo
-- ester
-roles:
-  haman:
-    role: died
-    date:
-      from: -483
-      to: -483
-      precision: month
-      approx: true
-      type: derived
-      chronology: tnm
-      text: nisán de 484 a.e.c. (cálculo nuestro)
-      detail:
-        month: nisan
-      note: 'Est 4:16, 5:1, 5:8 y 7:10: lo cuelgan pocos días después del decreto del 13 de nisán, el mismo año.'
-  mardoqueo:
-    role: wrote
-    date:
-      from: -483
-      to: -483
-      precision: day
-      approx: false
-      type: derived
-      chronology: tnm
-      text: 23 de siván de 484 a.e.c. (cálculo nuestro)
-      detail:
-        month: sivan
-        day: 23
-      note: Est 8:9 da el 23 de siván; el relato sigue en el año duodécimo de Asuero, el del primer decreto.
+roles: {}
 passages:
 - Est 3:7-15
-- Est 7:1-10
-- Est 8:3-14
-summary: Hamán echó suertes y logró un decreto para exterminar a los judíos el 13 de adar. Ester lo desenmascaró, Hamán
-  fue colgado y un segundo decreto permitió a los judíos defenderse.
-reason: 'Perspicacia «Asuero», núm. 3, «Hamán» y «Ester»: decreto en el año duodécimo. El año 484 es nuestra cuenta, por
-  eso queda pendiente.'
+summary: Hamán echa pur, la suerte, y sale el mes de adar. Acusa a los judíos ante el rey y recibe su anillo. El 13 de nisán
+  se manda a todas las provincias exterminarlos el 13 de adar.
+reason: Est 3:7-15. Perspicacia «Purim» pone el decreto el 13 de nisán del año duodécimo de Asuero, al parecer en la primavera
+  de 484; «Pur» explica la palabra.
 sources:
-- it-asuero
-- it-haman
-- it-ester
 - ester-3
-- ester-7
-- ester-8
+- it-purim
+- it-pur
+- it-haman
+- it-asuero
+- it-ester
 links:
 - title: 'Perspicacia: «Hamán»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ham%C3%A1n/
@@ -71,5 +38,38 @@ links:
 - title: Ester 3 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/ester/3/
   type: bible
-checked_on: '2026-09-29'
-status: pending
+history:
+- date: '2026-10-14'
+  change: 'Fecha anclada: Perspicacia «Purim» pone el 13 de nisán del año duodécimo, al parecer en la primavera de 484. Antes
+    era nuestra cuenta.'
+  source: it-purim
+- date: '2026-10-14'
+  change: El suceso es solo la escena del decreto. La caída de Hamán (Est 7) y el segundo decreto (Est 8) son escenas de sus
+    capítulos.
+  source: ester-3
+- date: '2026-10-14'
+  change: En Est 3:7-15 solo actúan Hamán y el rey; Mardoqueo y Ester van en las escenas siguientes.
+  source: ester-3
+- date: '2026-10-14'
+  change: 'Sin papeles: la muerte de Hamán (Est 7:10) y el decreto que escribe Mardoqueo (Est 8:9) pasan en otras escenas.'
+  source: ester-3
+- date: '2026-10-14'
+  change: El resumen cuenta solo Est 3:7-15.
+  source: ester-3
+- date: '2026-10-14'
+  change: La razón cita la fecha de Perspicacia «Purim».
+  source: it-purim
+- date: '2026-10-14'
+  change: Salen Ester 7 y 8, que son otras escenas; entran Perspicacia «Purim» y «Pur».
+  source: ester-3
+- date: '2026-10-14'
+  change: 'Verificado: la fecha ya no es cuenta nuestra.'
+  source: it-purim
+present:
+- haman
+- jerjes-i
+narrative_order:
+  series: ester
+  order: 3007
+checked_on: '2026-10-14'
+status: verified

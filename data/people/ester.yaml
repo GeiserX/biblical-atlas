@@ -4,6 +4,7 @@ name: Ester
 names:
 - name: Ester
 - name: Hadassá
+  note: Su nombre hebreo, que significa «mirto» (nota de Est 2:7).
 date:
   from: -492
   to: -474
@@ -19,6 +20,12 @@ sources:
 - it-ester
 - it-ester-libro
 - ester-2
+- it-hegai
+- ester-4
+- ester-5
+- ester-7
+- ester-8
+- ester-9
 links:
 - title: 'Perspicacia: «Ester»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ester/
@@ -33,8 +40,9 @@ relations:
   sources:
   - it-ester
   - ester-2
+  - ester-8
   reason: 'Est 2:7, 15: era hija de Abiháil, tío de Mardoqueo.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-14'
   word: cousin
   status: verified
 - type: lived_in
@@ -66,5 +74,76 @@ relations:
   reason: 'Est 2:7, 15: cuando Ester quedó huérfana, Mardoqueo la tomó como hija y era su tutor.'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-28'
+- type: kin
+  person: abihail-padre-de-ester
+  word: father
+  inferred: false
+  sources:
+  - ester-2
+  - it-abihail
+  - ester-9
+  - it-ester
+  reason: 'Est 2:15: Abihail era el padre de Ester.'
+  checked_on: '2026-10-14'
+  status: verified
+- type: kin
+  person: benjamin-hijo-de-jacob
+  word: ancestor
+  inferred: true
+  sources:
+  - it-ester
+  - ester-2
+  reason: 'Perspicacia «Ester»: de la tribu de Benjamín, como su primo Mardoqueo (Est 2:5-7).'
+  checked_on: '2026-10-14'
+  status: verified
+- type: tie
+  person: hegai
+  word: custodian
+  inferred: false
+  sources:
+  - ester-2
+  - it-hegai
+  reason: 'Est 2:8, 15: llevada a la casa del rey, quedó bajo el cuidado de Hegái, guardián de las mujeres.'
+  checked_on: '2026-10-14'
+  status: verified
+- type: holds_office
+  office: queen
+  inferred: false
+  sources:
+  - ester-2
+  - it-ester
+  - ester-4
+  - ester-5
+  - ester-9
+  reason: 'Est 2:17: el rey le puso el adorno real en la cabeza y la hizo reina; Perspicacia «Ester»: en el año séptimo de
+    Asuero.'
+  checked_on: '2026-10-14'
+  status: verified
+- type: succeeds
+  person: vasti
+  office: queen
+  inferred: false
+  sources:
+  - ester-2
+  - it-vasti
+  reason: 'Est 2:4, 17: Asuero la hizo reina en lugar de Vasti.'
+  checked_on: '2026-10-14'
+  status: verified
+- type: tie
+  person: haman
+  word: enemy
+  sources:
+  - ester-7
+  - it-ester
+  reason: 'Est 7:4-6: Ester lo acusa ante el rey de ser el adversario y enemigo que la había vendido a la muerte con todo
+    su pueblo.'
+  inferred: false
+  checked_on: '2026-10-14'
+  status: verified
+perspicacia: '1200001430'
+history:
+- date: '2026-10-14'
+  change: 'Hadassá lleva la nota que da la TNM en Est 2:7: es el nombre hebreo de Ester.'
+  source: ester-2
+checked_on: '2026-10-14'
 status: verified

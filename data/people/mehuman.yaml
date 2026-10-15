@@ -1,0 +1,29 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: mehuman
+name: Mehumán
+names:
+- name: Mehumán
+perspicacia: '1200002966'
+summary: Funcionario de la corte de Asuero en Susa. Encabeza la lista de los siete a quienes el rey mandó traer a la reina
+  Vasti al banquete.
+reason: Perspicacia «Mehumán»; Est 1:10, 11.
+sources:
+- it-mehuman
+- ester-1
+links:
+- title: 'Perspicacia: «Mehumán»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Mehum%C3%A1n/
+  type: perspicacia
+relations:
+- type: tie
+  person: jerjes-i
+  word: master
+  inferred: false
+  sources:
+  - ester-1
+  - it-mehuman
+  reason: 'Est 1:10: uno de los siete funcionarios de la corte que servían en persona al rey Asuero.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified

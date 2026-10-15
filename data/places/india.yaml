@@ -1,0 +1,27 @@
+# biblical-atlas: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: india
+name: India
+names:
+- name: India
+type: region
+lat: 23.9944
+lon: 67.4308
+precision: zone
+coord_source: openbible:a878481
+coord_url: https://www.openbible.info/geo/ancient/a878481/india
+coord_note: Punto representativo de OpenBible para la región del Indo.
+summary: Tierras del valle del Indo y de sus ríos, quizá el Punjab y el Sind. Entraron en el Imperio persa con Darío I, y
+  en tiempos de Asuero eran su frontera oriental.
+reason: 'Perspicacia «India»: no se sabe con exactitud qué zona designa; los eruditos piensan en el valle del Indo. Est 1:1;
+  8:9. Coordenada de OpenBible: solo tomamos el punto.'
+sources:
+- it-india
+- openbible-geo
+- ester-1
+- ester-8
+links:
+- title: 'Perspicacia: «India»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/India/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified

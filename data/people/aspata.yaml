@@ -1,0 +1,40 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: aspata
+name: Aspatá
+names:
+- name: Aspatá
+perspicacia: '1200000437'
+summary: Hijo de Hamán, uno de los diez que los judíos mataron en el castillo de Susa el 13 de adar. Al día siguiente, a petición
+  de Ester, su cuerpo fue colgado en un madero.
+reason: 'Perspicacia «Aspatá»: uno de los hijos de Hamán. Est 9:7, 10, 12-14.'
+sources:
+- it-aspata
+- ester-9
+links:
+- title: 'Perspicacia: «Aspatá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Aspat%C3%A1/
+  type: perspicacia
+- title: Ester 9 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/ester/9/
+  type: bible
+relations:
+- type: kin
+  person: haman
+  word: father
+  sources:
+  - ester-9
+  - it-aspata
+  reason: 'Est 9:7, 10: lo nombra entre los diez hijos de Hamán hijo de Hamedata.'
+  inferred: false
+  checked_on: '2026-10-14'
+  status: verified
+- type: died_in
+  place: susa
+  sources:
+  - ester-9
+  reason: 'Est 9:6-12: los judíos lo mataron en el castillo de Susa, y el rey se lo contó a Ester ese mismo día.'
+  inferred: false
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified

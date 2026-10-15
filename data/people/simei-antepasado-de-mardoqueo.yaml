@@ -1,0 +1,50 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: simei-antepasado-de-mardoqueo
+name: Simeí
+names:
+- name: Simeí
+perspicacia: 1200004047#15
+disambiguation: Simeí, antepasado de Mardoqueo (Perspicacia «Simeí», núm. 15); no el benjaminita hijo de Guerá que maldijo
+  a David, ni los demás Simeí.
+distinct_from:
+- sama-hijo-de-jese
+- simei-descendiente-de-ladan
+- simei-el-ramatita
+- simei-hermano-de-conanias
+- simei-hijo-de-ela
+- simei-hijo-de-gog
+- simei-hijo-de-guera
+- simei-hijo-de-guerson
+- simei-hijo-de-jahat
+- simei-hijo-de-jedutun
+- simei-hijo-de-libni
+- simei-hijo-de-pedaya
+- simei-hijo-de-zacur
+- simei-levita-de-ezequias
+- simei-padre-de-jaquim
+- simei-partidario-de-david
+- simei-descendiente-de-binui
+- simei-descendiente-de-hasum
+- simei-levita-de-tiempos-de-esdras
+summary: Benjaminita antepasado de Mardoqueo, nombrado en su linaje entre Jaír y Quis.
+reason: Perspicacia «Simeí», núm. 15; Est 2:5.
+sources:
+- it-simei
+- ester-2
+links:
+- title: 'Perspicacia: «Simeí»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sime%C3%AD/
+  type: perspicacia
+relations:
+- type: kin
+  person: benjamin-hijo-de-jacob
+  word: ancestor
+  inferred: true
+  sources:
+  - it-simei
+  - ester-2
+  reason: Perspicacia «Simeí», núm. 15, lo hace benjaminita (Est 2:5).
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified

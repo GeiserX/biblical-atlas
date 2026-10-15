@@ -1,0 +1,34 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: asuero-muestra-la-riqueza-de-su-reino
+title: Asuero muestra a sus príncipes la riqueza de su reino
+date:
+  from: -492
+  to: -492
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: tercer año de Asuero (493 a.e.c.)
+narrative_order:
+  series: ester
+  order: 1001
+places:
+- susa
+people:
+- jerjes-i
+passages:
+- Est 1:1-4
+summary: En su tercer año, Asuero, rey de 127 provincias de la India a Etiopía, convida en Susa a príncipes y siervos, a los
+  jefes del ejército persa y medo y a los nobles; 180 días les muestra su gloria.
+reason: 'Perspicacia «Ester, Libro de», apartado «Marco histórico»: los primeros sucesos son del tercer año del rey, 493.
+  Ve posible que el banquete del v. 3 sea el de siete días del v. 5.'
+sources:
+- ester-1
+- it-ester-libro
+- it-asuero
+links:
+- title: 'Perspicacia: «Ester, Libro de»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ester-Libro-de/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified

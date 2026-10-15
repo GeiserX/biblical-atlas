@@ -19,6 +19,7 @@ distinct_from:
 - quis-hijo-de-jeiel
 - quis-hijo-de-mahli
 - quis-hijo-de-ner
+- quis-antepasado-de-mardoqueo
 relations:
 - type: kin
   person: abdi-padre-de-quis
@@ -29,5 +30,5 @@ relations:
   reason: '2Cr 29:12: «Quis hijo de Abdí», entre los meraritas.'
   checked_on: '2026-10-13'
   status: verified
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified

@@ -1,0 +1,121 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: parsandata
+name: Parsandatá
+names:
+- name: Parsandatá
+perspicacia: '1200003388'
+summary: Hijo de Hamán, uno de los diez que los judíos mataron en el castillo de Susa el 13 de adar. Al día siguiente, a petición
+  de Ester, su cuerpo fue colgado en un madero.
+reason: 'Perspicacia «Parsandatá»: uno de los hijos de Hamán. Est 9:7, 10, 12-14.'
+sources:
+- it-parsandata
+- ester-9
+links:
+- title: 'Perspicacia: «Parsandatá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Parsandat%C3%A1/
+  type: perspicacia
+- title: Ester 9 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/ester/9/
+  type: bible
+relations:
+- type: kin
+  person: haman
+  word: father
+  sources:
+  - ester-9
+  - it-parsandata
+  reason: 'Est 9:7, 10: lo nombra entre los diez hijos de Hamán hijo de Hamedata.'
+  inferred: false
+  checked_on: '2026-10-14'
+  status: verified
+- type: died_in
+  place: susa
+  sources:
+  - ester-9
+  reason: 'Est 9:6-12: los judíos lo mataron en el castillo de Susa, y el rey se lo contó a Ester ese mismo día.'
+  inferred: false
+  checked_on: '2026-10-14'
+  status: verified
+- type: kin
+  person: dalfon
+  word: brother
+  inferred: false
+  sources:
+  - ester-9
+  reason: 'Est 9:7-10: Dalfón es otro de los diez hijos de Hamán hijo de Hamedata.'
+  checked_on: '2026-10-14'
+  status: verified
+- type: kin
+  person: aspata
+  word: brother
+  inferred: false
+  sources:
+  - ester-9
+  reason: 'Est 9:7-10: Aspatá es otro de los diez hijos de Hamán hijo de Hamedata.'
+  checked_on: '2026-10-14'
+  status: verified
+- type: kin
+  person: porata
+  word: brother
+  inferred: false
+  sources:
+  - ester-9
+  reason: 'Est 9:7-10: Poratá es otro de los diez hijos de Hamán hijo de Hamedata.'
+  checked_on: '2026-10-14'
+  status: verified
+- type: kin
+  person: adalia
+  word: brother
+  inferred: false
+  sources:
+  - ester-9
+  reason: 'Est 9:7-10: Adalía es otro de los diez hijos de Hamán hijo de Hamedata.'
+  checked_on: '2026-10-14'
+  status: verified
+- type: kin
+  person: aridata
+  word: brother
+  inferred: false
+  sources:
+  - ester-9
+  reason: 'Est 9:7-10: Aridatá es otro de los diez hijos de Hamán hijo de Hamedata.'
+  checked_on: '2026-10-14'
+  status: verified
+- type: kin
+  person: parmasta
+  word: brother
+  inferred: false
+  sources:
+  - ester-9
+  reason: 'Est 9:7-10: Parmastá es otro de los diez hijos de Hamán hijo de Hamedata.'
+  checked_on: '2026-10-14'
+  status: verified
+- type: kin
+  person: arisai
+  word: brother
+  inferred: false
+  sources:
+  - ester-9
+  reason: 'Est 9:7-10: Arisái es otro de los diez hijos de Hamán hijo de Hamedata.'
+  checked_on: '2026-10-14'
+  status: verified
+- type: kin
+  person: aridai
+  word: brother
+  inferred: false
+  sources:
+  - ester-9
+  reason: 'Est 9:7-10: Aridái es otro de los diez hijos de Hamán hijo de Hamedata.'
+  checked_on: '2026-10-14'
+  status: verified
+- type: kin
+  person: vaizata
+  word: brother
+  inferred: false
+  sources:
+  - ester-9
+  reason: 'Est 9:7-10: Vaizata es otro de los diez hijos de Hamán hijo de Hamedata.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified

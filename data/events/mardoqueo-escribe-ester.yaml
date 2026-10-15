@@ -1,0 +1,44 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: mardoqueo-escribe-ester
+title: Mardoqueo escribe el libro de Ester
+date:
+  from: -474
+  to: -474
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 475 a.e.c.
+narrative_order:
+  series: ester
+  order: 10002
+places:
+- susa
+people:
+- mardoqueo
+present:
+- mardoqueo
+type: writing
+roles:
+  mardoqueo: wrote
+passages: []
+summary: Mardoqueo, testigo de lo ocurrido y segundo del reino, termina en Susa el relato de cómo Ester y él salvaron a los
+  judíos del plan de Hamán.
+reason: 'Tabla de los libros y «Toda Escritura», libro 17: Mardoqueo lo completó en Susa hacia 475. Ningún versículo lo cuenta;
+  Perspicacia «Ester, Libro de» ve en Est 10:2 indicio de que el escritor usó registros del gobierno.'
+sources:
+- ester-10
+- tnm-tabla
+- si-ester
+- it-ester-libro
+- si-3
+links:
+- title: Ester 10 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/ester/10/
+  type: bible
+- title: 'Perspicacia: «Ester, Libro de»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ester-Libro-de/
+  type: perspicacia
+search: libro de Ester escritor Mardoqueo
+checked_on: '2026-10-14'
+status: verified

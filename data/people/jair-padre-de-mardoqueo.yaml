@@ -1,0 +1,43 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jair-padre-de-mardoqueo
+name: Jaír
+names:
+- name: Jaír
+perspicacia: 1200002305#3
+disambiguation: Jaír, padre de Mardoqueo (Perspicacia «Jaír», núm. 3); no el que tomó Havot-Jaír, ni el juez galaadita, ni
+  el padre de Elhanán.
+distinct_from:
+- jair-hijo-de-segub
+- jair-juez
+- jair-padre-de-elhanan
+summary: Benjaminita, padre de Mardoqueo. Por la nota de Est 2:7, su hermano Abihail fue el padre de Ester.
+reason: Perspicacia «Jaír», núm. 3; Est 2:5.
+sources:
+- it-jair
+- ester-2
+links:
+- title: 'Perspicacia: «Jaír»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ja%C3%ADr/
+  type: perspicacia
+relations:
+- type: kin
+  person: benjamin-hijo-de-jacob
+  word: ancestor
+  inferred: true
+  sources:
+  - it-jair
+  - ester-2
+  reason: Perspicacia «Jaír», núm. 3, lo hace benjaminita (Est 2:5).
+  checked_on: '2026-10-14'
+  status: verified
+- type: kin
+  person: abihail-padre-de-ester
+  word: brother
+  inferred: false
+  sources:
+  - ester-2
+  reason: La nota de Est 2:7 hace a Ester hija del hermano del padre de Mardoqueo, y Est 2:15 da a Abihail como padre de ella.
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified

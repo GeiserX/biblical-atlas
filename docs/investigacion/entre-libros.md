@@ -90,11 +90,6 @@ Los campos, los tipos de relación y sus palabras se nombran como en el esquema 
 
 - **Queriyot-hezrón.** Existe `queriyot-hezron` (Jos 15:25). Perspicacia «Judas», núm. 4, solo ve probable que Judas Iscariote y su padre fueran de allí, y los Evangelios no lo dicen: `judas-iscariote` y `simon-iscariote` no llevan relación con ese lugar.
 
-## Para Ester
-
-- **Abiháil.** `abihail-padre-de-zuriel` es la entrada núm. 1 de Perspicacia. El padre de Ester es la núm. 5: otro id y `distinct_from` en las dos.
-- **Jaír.** `jair-hijo-de-segub` es la entrada núm. 1 de Perspicacia «Jaír». El padre de Mardoqueo (Est 2:5) es la núm. 3: otro id y `distinct_from` en las dos.
-
 ## Para las Escrituras Griegas
 
 - **Una cita literal de las Escrituras Hebreas.** Si la carta la usa como mandato que sigue en vigor o dice algo del propio texto citado, su pasaje entra en el suceso y el suceso en `entidades`: Ro 7:7, Ro 13:9 y Ef 6:2, 3 en `diez-mandamientos` (Ef 6:2 lo llama el primer mandato con promesa). Si solo toma la frase como apoyo de un consejo, el suceso va en `menciona` sin pasaje: Gé 2:24 en 1Co 6:16 y Ef 5:31, con `creacion-de-eva`.
@@ -379,11 +374,6 @@ Los campos, los tipos de relación y sus palabras se nombran como en el esquema 
 - **Posibles identidades.** Perspicacia ve posible que `quelita-levita-de-tiempos-de-esdras`, `petahias-levita-de-tiempos-de-esdras`, `sabetai` y `jozabad-levita-de-tiempos-de-esdras` (Esd 10:15, 23) sean los levitas de Ne 8 a 11, y probable que `zabai` (Esd 10:28) sea el padre de Baruc (Ne 3:20). Nehemías pone el `same_as` que diga cada artículo.
 - **Más identidades posibles, todas `certainty: possible`.** Perspicacia ve posible que `hasabias-jefe-de-los-sacerdotes` («Hasabías», núm. 7) sea el núm. 9 (Ne 12:21); `serebias-descendiente-de-mahli` («Serebías», núm. 2), el núm. 3 (Ne 8:7; 9:4); `mesulam-enviado-a-casifia` («Mesulam», núm. 13), el núm. 16, 17, 20 o 21 (Ne 3:4, 6, 30; 10:20; 12:33); `daniel-descendiente-de-itamar` («Daniel», núm. 3), el firmante de Ne 10:6; `jozabad-hijo-de-jesua` y `jozabad-levita-de-tiempos-de-esdras` («Jozabad», núm. 6 y 8), los núm. 9 y 10 (Ne 8:7; 11:16); `netanel-descendiente-de-pasjur` («Netanel», núm. 9), el músico núm. 10 (Ne 12:36); `malkiya-descendiente-de-harim` («Malkiya», núm. 7), el núm. 8 (Ne 3:11), y `benjamin-descendiente-de-harim` («Benjamín», núm. 4), el de Ne 3:23 y 12:34. Nehemías crea su ficha y pone el `same_as` en la que va primero por orden alfabético.
 
-## Para Ester (desde Esdras)
-
-- **Los Asuero.** El de Esd 4:6 es `asuero-de-esdras` (Perspicacia «Asuero», núm. 2), con `same_as` probable hacia `cambises-ii`. El de Ester es `jerjes-i`, que ya lleva su `disambiguation` y el `distinct_from` hacia él, pero aún no su clave (`1200000142#3`): la pone Ester.
-- **Mardoqueo.** `mardoqueo` lleva la clave `1200003111#2` y `distinct_from` hacia `mardoqueo-repatriado` (núm. 1, Esd 2:2).
-
 ## Para el vocabulario (desde Esdras)
 
 - **Cargos sin palabra.** Esdras nombra cargos que `offices` no tiene, y esas personas van sin `holds_office`: copista o escriba (Esdras, Esd 7:6, 11; Simsái, 4:8), principal funcionario del gobierno (Rehúm, 4:8), maestro (Joiarib y Elnatán, 8:16), cabeza de casa paterna (8:1), sátrapa (8:36), levita, cantor y portero (2:40-42; 10:23, 24). Si se añade un cargo, sus fichas citan esos capítulos.
@@ -453,6 +443,23 @@ Los campos, los tipos de relación y sus palabras se nombran como en el esquema 
 ## Para quien relea Jerusalén o el monte Moria (desde Ezequiel)
 
 - **Puertas del templo.** `jerusalen` lleva en `names` dos puertas del templo, la Puerta superior de la casa de Jehová (2Re 15:35) y la Puerta del Rey (1Cr 9:18), y `monte-moria` lleva las demás. Ezequiel 9 y 10 no las movieron: hace falta decidir si pasan a `monte-moria`.
+
+## Para Esdras y Nehemías (desde Ester)
+
+- **Claves que ya puso Ester.** `ester` (`1200001430`), `haman` (`1200001833`) y `mardoqueo` (`1200003111#2`, la misma que pone Esdras). La segunda en integrarse verá un choque en `perspicacia` con el mismo valor: se descarta sin más.
+- **Homónimos nuevos.** Ester crea `simei-antepasado-de-mardoqueo` (Perspicacia «Simeí», núm. 15), `quis-antepasado-de-mardoqueo` («Quis», núm. 5), `jair-padre-de-mardoqueo` («Jaír», núm. 3) y `abihail-padre-de-ester` («Abiháil», núm. 5), con `distinct_from` hacia los homónimos de `main`. Los Simeí y Quis que creen Esdras o Nehemías (`simei-descendiente-de-binui`, `simei-descendiente-de-hasum`, `simei-levita-de-tiempos-de-esdras` y los que vengan) llevan `distinct_from` hacia ellos, en las dos fichas; lo pone quien se integre después.
+- **Susa.** `susa` ya lleva «Susán» y «Castillo de Susa» en `names`, desde Daniel. Ester solo añade sus capítulos a `sources`. La nota de Est 1:2 da también «Susán»: quien relea `susa` puede citarla junto a la de Da 8:2.
+- **Sucesos persas.** La serie `ester` va de 493 a c. 475 a.e.c. y no toca sucesos de Esdras ni de Nehemías.
+
+## Para quien reabra Daniel 11 o Esdras 4 (desde Ester)
+
+- **Jerjes sucede a Darío.** `jerjes-i/succeeds/dario-i` no cita ningún pasaje y el sitio no la dibuja. Ester no la toca, porque ningún versículo del libro cuenta la sucesión.
+
+## Para el vocabulario (desde Ester)
+
+- **Cargos sin palabra.** Funcionario de la corte o eunuco (Est 1:10; 2:3, 14, 21; 4:5), primer ministro o segundo después del rey (Hamán, Est 3:1; Mardoqueo, 8:2; 10:3), encargado de la casa de Hamán (8:2) y sátrapa (8:9; 9:3). Van sin `holds_office`; el vínculo con el rey es `tie` `master`. Si se añade primer ministro, Hamán lo lleva y Mardoqueo le sucede en él.
+- **Reina consorte.** Vasti y Ester llevan `holds_office` `queen` porque el texto las llama reinas; Ester además `succeeds` `vasti`. Si el dueño separa reina consorte de reina reinante (Atalía), estas dos pasan al cargo nuevo.
+- **Prima.** `ester/kin/mardoqueo` con `cousin` sigue en la ficha de Ester aunque el texto nombre antes a Mardoqueo (Est 2:7): en la suya diría «Ester es su primo». Con una palabra femenina, pasa a su dueño.
 
 ## Para quien reabra Génesis 5 o Deuteronomio 34 (desde Judas)
 

@@ -1,0 +1,22 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: tarsis-principe-de-asuero
+name: Tarsis
+names:
+- name: Tarsis
+perspicacia: 1200004325#3
+disambiguation: Tarsis, príncipe y consejero de Asuero (Perspicacia «Tarsis», núm. 3); no el hijo de Javán, ni el benjaminita
+  hijo de Bilhán, ni la región de Tarsis.
+distinct_from:
+- tarsis-hijo-de-javan
+- tarsis-hijo-de-bilhan
+summary: Príncipe de la corte de Asuero, de los siete consejeros que examinaron el caso de la reina Vasti.
+reason: Perspicacia «Tarsis», núm. 3; Est 1:12-15.
+sources:
+- it-tarsis
+- ester-1
+links:
+- title: 'Perspicacia: «Tarsis»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Tarsis/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified

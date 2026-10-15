@@ -1,0 +1,46 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: mardoqueo-instituye-la-fiesta-de-purim
+title: Mardoqueo instituye la fiesta de Purim
+date:
+  from: -482
+  to: -482
+  precision: year
+  approx: true
+  type: derived
+  chronology: tnm
+  text: 483 a.e.c. (cálculo nuestro)
+  note: 'Est 9:17-21: escribe tras los días de descanso, el 14 y 15 de adar del año duodécimo, que con Perspicacia «Purim»
+    caen en 483.'
+narrative_order:
+  series: ester
+  order: 9020
+places:
+- susa
+people:
+- mardoqueo
+present:
+- mardoqueo
+type: writing
+roles:
+  mardoqueo: wrote
+passages:
+- Est 9:20-28
+summary: 'Mardoqueo pone por escrito lo ocurrido y manda cartas a los judíos del imperio: cada año celebrarán el 14 y el 15
+  de adar con banquetes y regalos. Lo llaman Purim, por el pur de Hamán.'
+reason: 'Est 9:20-28; Perspicacia «Purim» y «Mardoqueo», núm. 2. Susa: Est 9:4 le da autoridad en la casa del rey. El año
+  es nuestra cuenta.'
+sources:
+- ester-9
+- it-purim
+- it-mardoqueo
+- si-ester
+links:
+- title: Ester 9 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/ester/9/
+  type: bible
+- title: 'Perspicacia: «Purim»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Purim/
+  type: perspicacia
+search: Purim fiesta de las suertes Mardoqueo cartas
+checked_on: '2026-10-14'
+status: pending

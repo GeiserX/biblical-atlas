@@ -1,0 +1,53 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: ester-desenmascara-a-haman
+title: Ester desenmascara a Hamán y lo cuelgan en su propio madero
+date:
+  from: -483
+  to: -483
+  precision: season
+  approx: true
+  type: derived
+  chronology: tnm
+  text: primavera de 484 a.e.c. (cálculo nuestro)
+  detail:
+    season: spring
+  note: 'Días después del 13 de nisán del año duodécimo (Est 3:12; 4:16; 5:1), que Perspicacia «Purim» sitúa al parecer en
+    la primavera de 484. Ninguna fuente fecha esta escena: es cuenta nuestra.'
+narrative_order:
+  series: ester
+  order: 6014
+places:
+- susa
+people:
+- ester
+- jerjes-i
+- haman
+- harbona
+- mardoqueo
+present:
+- ester
+- jerjes-i
+- haman
+- harbona
+roles:
+  haman: died
+passages:
+- Est 6:14-7:10
+summary: En el segundo banquete, Ester ruega por su vida y la de su pueblo y señala a Hamán. El rey sale furioso; al volver
+  lo ve echado sobre el diván de la reina y, avisado por Harboná, lo hace colgar.
+reason: Est 6:14-7:10; Perspicacia «Hamán», «Ester» y «Harboná». Mismo día en que fue honrado Mardoqueo.
+sources:
+- ester-6
+- ester-7
+- it-haman
+- it-ester
+- it-harbona
+- it-ester-libro
+- it-purim
+- si-ester
+links:
+- title: 'Perspicacia: «Hamán»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ham%C3%A1n/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: pending
