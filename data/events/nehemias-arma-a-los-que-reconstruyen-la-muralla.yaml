@@ -1,0 +1,40 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: nehemias-arma-a-los-que-reconstruyen-la-muralla
+title: Nehemías arma a los que reconstruyen la muralla
+date:
+  from: -454
+  to: -454
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 455 a.e.c. (entre el 4 de ab y el 25 de elul)
+narrative_order:
+  series: nehemias
+  order: 104007
+places:
+- jerusalen
+people:
+- nehemias
+- sanbalat
+- tobias-el-ammonita
+present:
+- nehemias
+passages:
+- Ne 4:7-23
+summary: Sanbalat, Tobías y los pueblos vecinos traman atacar Jerusalén. Nehemías ora, pone guardias por familias y anima
+  al pueblo; desde entonces media gente trabaja y la otra vigila armada, con un cuerno para la alarma.
+reason: 'Perspicacia «Nehemías», núm. 3, y «Tobías», núm. 2: la conjura llegó con la muralla a media altura, dentro de los
+  52 días de 455. Sigue a Ne 4:1-6 en la serie nehemias.'
+sources:
+- nehemias-4
+- it-nehemias
+- it-tobias
+- it-sanbalat
+- si-3
+links:
+- title: Nehemías 4 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Nehem%C3%ADas/4/
+  type: bible
+checked_on: '2026-10-14'
+status: verified

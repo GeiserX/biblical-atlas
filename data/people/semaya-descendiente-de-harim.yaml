@@ -25,7 +25,7 @@ relations:
   inferred: false
   checked_on: '2026-10-13'
   status: verified
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified
 disambiguation: El de los hijos de Harim de Esd 10:31; no los demás Semaya que registra Perspicacia.
 distinct_from:
@@ -48,3 +48,10 @@ distinct_from:
 - semaya-sacerdote-descendiente-de-harim
 - semaya-simeonita
 - semaya-enviado-a-casifia
+- semaya-guarda-de-la-puerta-oriental
+- semaya-hijo-de-delaya
+- semaya-sacerdote-repatriado
+- semaya-de-la-procesion-del-muro
+- semaya-hijo-de-matanias
+- semaya-musico-de-la-procesion
+- semaya-sacerdote-de-la-inauguracion

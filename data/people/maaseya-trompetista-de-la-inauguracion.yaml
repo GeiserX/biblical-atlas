@@ -1,0 +1,48 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: maaseya-trompetista-de-la-inauguracion
+name: Maaseya
+names:
+- name: Maaseya
+perspicacia: 1200002811#19
+summary: Sacerdote que llevaba trompeta cuando Nehemías dedicó la muralla de Jerusalén.
+reason: Perspicacia «Maaseya», núm. 19; Ne 12:41.
+sources:
+- it-maaseya
+- nehemias-12
+links:
+- title: 'Perspicacia: «Maaseya»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Maaseya/
+  type: perspicacia
+relations:
+- type: holds_office
+  office: priest
+  inferred: false
+  sources:
+  - nehemias-12
+  reason: 'Ne 12:41: los sacerdotes que llevaban las trompetas.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- maaseya-cabeza-del-pueblo
+- maaseya-de-la-casa-de-jesua
+- maaseya-descendiente-de-harim
+- maaseya-descendiente-de-pahat-moab
+- maaseya-descendiente-de-pasjur
+- maaseya-funcionario
+- maaseya-hijo-de-adaya
+- maaseya-hijo-de-ananiah
+- maaseya-hijo-de-baruc
+- maaseya-hijo-de-itiel
+- maaseya-hijo-de-salum
+- maaseya-hijo-del-rey
+- maaseya-jefe-de-jerusalen
+- maaseya-junto-a-esdras
+- maaseya-levita-que-explico-la-ley
+- maaseya-musico
+- maaseya-padre-de-sedequias
+- maaseya-padre-de-sofonias
+- maaseya-sacerdote-de-la-inauguracion
+disambiguation: 'Maaseya núm. 19 de Perspicacia: el trompetista de Ne 12:41; no los demás Maaseya que registra Perspicacia
+  «Maaseya».'

@@ -66,7 +66,7 @@ relations:
   inferred: false
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-14'
 status: verified
 distinct_from:
 - miqueas-de-efrain
@@ -75,3 +75,4 @@ distinct_from:
 - micaya-padre-de-acbor
 - miqueas-hijo-de-simei
 - miqueas-uzielita
+- mica-hijo-de-zicri

@@ -1,0 +1,24 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: serebias-levita-de-zorobabel
+name: Serebías
+names:
+- name: Serebías
+perspicacia: 1200004020#1
+summary: Levita distinguido del grupo de Zorobabel, de vuelta en 537 a.e.c.
+reason: Perspicacia «Serebías», núm. 1; Ne 12:1, 8.
+sources:
+- it-serebias
+- nehemias-12
+links:
+- title: 'Perspicacia: «Serebías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sereb%C3%ADas/
+  type: perspicacia
+relations: []
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- serebias-descendiente-de-mahli
+- serebias-jefe-de-los-sacerdotes
+- serebias-levita-que-explico-la-ley
+disambiguation: 'Serebías núm. 1 de Perspicacia: el levita del regreso con Zorobabel (Ne 12:8); no los demás Serebías que
+  registra Perspicacia «Serebías».'

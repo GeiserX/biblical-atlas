@@ -1,0 +1,47 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: binui-hijo-de-henadad
+name: Binuí
+names:
+- name: Binuí
+perspicacia: 1200000744#5
+disambiguation: El hijo de Henadad que reparó la muralla (Ne 3:24), núm. 5 de Perspicacia «Binuí»; no los otros Binuí que
+  numera.
+distinct_from:
+- bani-cabeza-de-familia
+- binui-cabeza-de-familia
+- binui-descendiente-de-pahat-moab
+- binui-levita
+summary: Hijo de Henadad. Su tramo de muralla iba de la casa de Azarías al Contrafuerte, en la esquina. Quizá sea el levita
+  Binuí que firmó el pacto.
+reason: Perspicacia «Binuí», núm. 5; Ne 3:24.
+sources:
+- it-binui
+- nehemias-3
+- nehemias-10
+links:
+- title: 'Perspicacia: «Binuí»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Binu%C3%AD/
+  type: perspicacia
+relations:
+- type: kin
+  person: henadad
+  word: father
+  inferred: false
+  sources:
+  - nehemias-3
+  - it-binui
+  reason: 'Ne 3:24: Binuí hijo de Henadad.'
+  checked_on: '2026-10-14'
+  status: verified
+- type: same_as
+  person: binui-levita-firmante
+  certainty: possible
+  inferred: true
+  sources:
+  - nehemias-10
+  - it-binui
+  reason: 'Perspicacia «Binuí», núm. 5 y 6: el hijo de Henadad que reparó el muro quizá es el de Ne 10:9.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified

@@ -1,0 +1,46 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: sadoc-hijo-de-imer
+name: Sadoc
+names:
+- name: Sadoc
+perspicacia: 1200004652#5
+disambiguation: El hijo de Imer que reparó la muralla frente a su casa (Ne 3:29), núm. 5 de Perspicacia «Sadoc»; no los otros
+  Sadoc que numera.
+distinct_from:
+- sadoc-abuelo-de-jotan
+- sadoc-hijo-de-ahitub
+- sadoc-hijo-de-azor
+- sadoc-hijo-de-baana
+- sadoc-hijo-de-merayot
+summary: Hijo o descendiente de Imer, quizá de familia sacerdotal. Reparó el tramo de la muralla de Jerusalén que tenía enfrente
+  de su casa.
+reason: Perspicacia «Sadoc», núm. 5, e «Imer», núm. 4; Ne 3:29.
+sources:
+- it-sadoc
+- nehemias-3
+links:
+- title: 'Perspicacia: «Sadoc»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sadoc/
+  type: perspicacia
+relations:
+- type: kin
+  person: imer-padre-de-sadoc
+  word: father
+  inferred: false
+  sources:
+  - nehemias-3
+  - it-sadoc
+  - it-imer
+  reason: 'Ne 3:29: Sadoc hijo de Imer; Perspicacia «Imer», núm. 4, lo da como su padre, aunque podría ser antepasado.'
+  checked_on: '2026-10-14'
+  status: verified
+- type: lived_in
+  place: jerusalen
+  inferred: false
+  sources:
+  - nehemias-3
+  reason: 'Ne 3:29: reparó el tramo que estaba enfrente de su casa.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified

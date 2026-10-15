@@ -1,0 +1,49 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: nehemias-pide-permiso-a-artajerjes
+title: Nehemías pide a Artajerjes permiso para reconstruir Jerusalén
+date:
+  from: -454
+  to: -454
+  precision: month
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: nisán de 455 a.e.c.
+  detail:
+    month: nisan
+narrative_order:
+  series: nehemias
+  order: 102001
+places:
+- susa
+people:
+- nehemias
+- artajerjes-i
+present:
+- nehemias
+- artajerjes-i
+passages:
+- Ne 2:1-8
+summary: En nisán, mientras sirve el vino, Nehemías se ve triste ante Artajerjes. Ora en silencio y le pide ir a Judá a reconstruir
+  la ciudad; el rey le fija un plazo y le da cartas y madera.
+reason: Ne 2:1 da nisán del año 20. Perspicacia «Artajerjes», núm. 2, y el estudio 3 (párr. 18, 19) lo fechan en 455; «Susa»
+  pone allí su servicio de copero. Sigue a la noticia de kislev en la serie.
+sources:
+- nehemias-2
+- it-artajerjes
+- si-3
+- it-nehemias-libro
+- it-susa
+- it-nehemias
+links:
+- title: 'Perspicacia: «Nehemías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Nehem%C3%ADas/
+  type: perspicacia
+- title: 'Perspicacia: «Artajerjes»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Artajerjes/
+  type: perspicacia
+- title: Nehemías 2 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Nehem%C3%ADas/2/
+  type: bible
+checked_on: '2026-10-14'
+status: verified

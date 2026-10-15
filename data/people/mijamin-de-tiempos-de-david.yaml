@@ -34,7 +34,9 @@ relations:
   checked_on: '2026-10-12'
   status: verified
 disambiguation: El cabeza del sexto turno sacerdotal (1Cr 24:9); no el Mijamín de los hijos de Parós de los días de Esdras.
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified
 distinct_from:
 - mijamin-descendiente-de-paros
+- mijamin-sacerdote-firmante
+- mijamin-sacerdote-de-zorobabel

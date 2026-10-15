@@ -1,0 +1,20 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: azbuc
+name: Azbuc
+names:
+- name: Azbuc
+- name: Azbuq
+  note: Grafía de Perspicacia.
+perspicacia: '1200000490'
+summary: Padre de Nehemías, el príncipe de medio distrito de Bet-Zur que reparó la muralla de Jerusalén cuando gobernaba el
+  otro Nehemías.
+reason: Perspicacia «Azbuq»; Ne 3:16.
+sources:
+- it-azbuq
+- nehemias-3
+links:
+- title: 'Perspicacia: «Azbuq»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Azbuq/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified

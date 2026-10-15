@@ -1,0 +1,34 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: binui-levita-firmante
+name: Binuí
+names:
+- name: Binuí
+perspicacia: 1200000744#6
+summary: Levita, uno de los hijos de Henadad, nombrado entre los que sellaron la promesa de 455 a.e.c. Quizá firmó por él
+  un descendiente.
+reason: Perspicacia «Binuí», núm. 6; Ne 10:9.
+sources:
+- it-binui
+- nehemias-10
+links:
+- title: 'Perspicacia: «Binuí»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Binu%C3%AD/
+  type: perspicacia
+relations:
+- type: kin
+  person: henadad
+  word: father
+  inferred: false
+  sources:
+  - nehemias-10
+  - it-binui
+  reason: 'Ne 10:9: Binuí, uno de los hijos de Henadad; Perspicacia «Binuí», núm. 6, lo llama hijo levita de Henadad.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- bani-cabeza-de-familia
+- binui-cabeza-de-familia
+- binui-descendiente-de-pahat-moab
+disambiguation: Binuí, levita, hijo de Henadad, en la lista de Ne 10 (Perspicacia «Binuí», núm. 6).

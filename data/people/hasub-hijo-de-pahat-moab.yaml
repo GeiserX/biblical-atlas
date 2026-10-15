@@ -1,0 +1,37 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hasub-hijo-de-pahat-moab
+name: Hasub
+names:
+- name: Hasub
+perspicacia: 1200001910#1
+disambiguation: El de la familia de Pahat-Moab que reparó la Torre de los Hornos (Ne 3:11), núm. 1 de Perspicacia «Hasub»;
+  no los otros Hasub que numera.
+distinct_from:
+- hasub-companero-de-benjamin
+- hasub-hijo-de-azricam
+- hasub-cabeza-del-pueblo
+summary: De la familia de Pahat-Moab. Con Malkiya reparó la Torre de los Hornos y otro tramo de la muralla, bajo la dirección
+  de Nehemías.
+reason: Perspicacia «Hasub», núm. 1, y «Pahat-moab»; Ne 3:11.
+sources:
+- it-hasub
+- nehemias-3
+- it-pahat-moab
+links:
+- title: 'Perspicacia: «Hasub»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hasub/
+  type: perspicacia
+relations:
+- type: kin
+  person: pahat-moab
+  word: ancestor
+  inferred: true
+  sources:
+  - nehemias-3
+  - it-pahat-moab
+  - it-hasub
+  reason: Ne 3:11 lo llama hijo de Pahat-Moab; Perspicacia «Pahat-moab» lo da como miembro de esa familia.
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified

@@ -1,0 +1,49 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: zicri-de-la-casa-de-abias
+name: Zicrí
+names:
+- name: Zicrí
+perspicacia: 1200004728#12
+summary: Cabeza de la casa sacerdotal de Abías en tiempos de Joiaquim, sucesor del sumo sacerdote Jesúa.
+reason: Perspicacia «Zicrí», núm. 12; Ne 12:12, 17.
+sources:
+- it-zicri
+- nehemias-12
+links:
+- title: 'Perspicacia: «Zicrí»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zicr%C3%AD/
+  type: perspicacia
+relations:
+- type: kin
+  person: abias-sacerdote-de-zorobabel
+  word: ancestor
+  inferred: false
+  sources:
+  - nehemias-12
+  reason: 'Ne 12:12-21: Zicrí encabezaba la casa paterna que llevaba el nombre de este sacerdote.'
+  checked_on: '2026-10-14'
+  status: verified
+- type: holds_office
+  office: priest
+  inferred: false
+  sources:
+  - nehemias-12
+  reason: 'Ne 12:12: los jefes de las casas paternas de días de Joiaquim eran sacerdotes.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- zicri-descendiente-de-eliezer
+- zicri-descendiente-de-jeroham
+- zicri-descendiente-de-sasac
+- zicri-descendiente-de-simei
+- zicri-guerrero-efraimita
+- zicri-hijo-de-asaf
+- zicri-hijo-de-izhar
+- zicri-padre-de-amasiah
+- zicri-padre-de-eliezer
+- zicri-padre-de-elisafat
+- zicri-padre-de-joel
+disambiguation: 'Zicrí núm. 12 de Perspicacia: el cabeza de la casa de Abías (Ne 12:17); no los demás Zicrí que registra Perspicacia
+  «Zicrí».'

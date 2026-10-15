@@ -1,0 +1,18 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hacalias
+name: Hacalías
+names:
+- name: Hacalías
+perspicacia: '1200001793'
+summary: Padre de Nehemías, el copero de Artajerjes que después gobernó Judá. La Biblia solo lo nombra al presentar a su hijo.
+reason: Perspicacia «Hacalías»; Ne 1:1 y 10:1.
+sources:
+- it-hacalias
+- nehemias-1
+- nehemias-10
+links:
+- title: 'Perspicacia: «Hacalías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hacal%C3%ADas/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified

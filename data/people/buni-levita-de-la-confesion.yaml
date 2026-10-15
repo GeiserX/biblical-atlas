@@ -1,0 +1,23 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: buni-levita-de-la-confesion
+name: Buní
+names:
+- name: Buní
+perspicacia: 1200000840#2
+disambiguation: El Buní de la plataforma de los levitas (Ne 9:4); no el antepasado de un levita de Jerusalén ni el cabeza
+  del pueblo de ese nombre.
+summary: Levita destacado de los días de Esdras y Nehemías que, desde la plataforma de los levitas, clamó a Jehová cuando
+  el pueblo confesó sus pecados.
+reason: Perspicacia «Buní», núm. 2; Ne 9:4.
+sources:
+- it-buni
+- nehemias-9
+links:
+- title: 'Perspicacia: «Buní»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Bun%C3%AD/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- buni-cabeza-del-pueblo
+- buni-padre-de-hasabias

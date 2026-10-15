@@ -11,10 +11,12 @@ sources:
 - esdras-2
 - esdras-8
 - esdras-10
+- nehemias-7
+- nehemias-10
 links:
 - title: 'Perspicacia: «Parós»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Par%C3%B3s/
   type: perspicacia
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified
 relations: []

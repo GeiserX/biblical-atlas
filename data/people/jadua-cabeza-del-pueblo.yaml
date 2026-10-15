@@ -1,0 +1,20 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jadua-cabeza-del-pueblo
+name: Jadúa
+names:
+- name: Jadúa
+perspicacia: 1200002283#1
+summary: Uno de los jefes de Israel, o un descendiente suyo, cuyo nombre está en la promesa de fidelidad sellada en 455 a.e.c.
+reason: Perspicacia «Jadúa», núm. 1; Ne 10:21.
+sources:
+- it-jadua
+- nehemias-10
+links:
+- title: 'Perspicacia: «Jadúa»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jad%C3%BAa/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- jadua-hijo-de-johanan
+disambiguation: Jadúa, cabeza del pueblo en la lista de Ne 10:21 (Perspicacia «Jadúa», núm. 1).

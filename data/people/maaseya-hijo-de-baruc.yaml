@@ -1,0 +1,59 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: maaseya-hijo-de-baruc
+name: Maaseya
+names:
+- name: Maaseya
+perspicacia: 1200002811#17
+summary: Judaíta que vivía en Jerusalén después del destierro. Ne 11:5 da su linaje hasta un selanita. Perspicacia ve posible
+  que sea el Asaya de 1Cr 9:5.
+reason: Perspicacia «Maaseya», núm. 17; Ne 11:5.
+sources:
+- it-maaseya
+- nehemias-11
+- it-baruc
+links:
+- title: 'Perspicacia: «Maaseya»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Maaseya/
+  type: perspicacia
+relations:
+- type: kin
+  person: baruc-hijo-de-colhoze
+  word: ancestor
+  inferred: false
+  sources:
+  - nehemias-11
+  - it-baruc
+  reason: 'Ne 11:5: Maaseya, hijo de Baruc; Perspicacia «Baruc», núm. 4, lo da como padre o antepasado.'
+  checked_on: '2026-10-14'
+  status: verified
+- type: lived_in
+  place: jerusalen
+  inferred: false
+  sources:
+  - nehemias-11
+  reason: 'Ne 11:4, 5: de la gente de Judá que vivía en Jerusalén.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- maaseya-cabeza-del-pueblo
+- maaseya-de-la-casa-de-jesua
+- maaseya-descendiente-de-harim
+- maaseya-descendiente-de-pahat-moab
+- maaseya-descendiente-de-pasjur
+- maaseya-funcionario
+- maaseya-hijo-de-adaya
+- maaseya-hijo-de-ananiah
+- maaseya-hijo-de-itiel
+- maaseya-hijo-de-salum
+- maaseya-hijo-del-rey
+- maaseya-jefe-de-jerusalen
+- maaseya-junto-a-esdras
+- maaseya-levita-que-explico-la-ley
+- maaseya-musico
+- maaseya-padre-de-sedequias
+- maaseya-padre-de-sofonias
+- maaseya-sacerdote-de-la-inauguracion
+- maaseya-trompetista-de-la-inauguracion
+disambiguation: Maaseya, judaíta que vivía en Jerusalén en días de Nehemías (Perspicacia «Maaseya», núm. 17).

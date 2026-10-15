@@ -1,0 +1,45 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: baruc-hijo-de-zabai
+name: Baruc
+names:
+- name: Baruc
+perspicacia: 1200000571#2
+disambiguation: El hijo de Zabái que reparó la muralla (Ne 3:20), núm. 2 de Perspicacia «Baruc»; no el secretario de Jeremías
+  ni los otros Baruc que numera.
+distinct_from:
+- baruc-hijo-de-nerias
+- baruc-hijo-de-colhoze
+summary: Hijo de Zabái. Con mucho empeño reparó el tramo que iba del Contrafuerte a la puerta de la casa de Eliasib, el sumo
+  sacerdote. Quizá sea el sacerdote Baruc que firmó el pacto.
+reason: Perspicacia «Baruc», núm. 2, y «Zabai»; Ne 3:20.
+sources:
+- it-baruc
+- nehemias-3
+- it-zabai
+- nehemias-10
+links:
+- title: 'Perspicacia: «Baruc»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Baruc/
+  type: perspicacia
+relations:
+- type: kin
+  person: zabai-padre-de-baruc
+  word: father
+  inferred: false
+  sources:
+  - nehemias-3
+  reason: 'Ne 3:20: Baruc hijo de Zabái.'
+  checked_on: '2026-10-14'
+  status: verified
+- type: same_as
+  person: baruc-sacerdote-firmante
+  certainty: possible
+  inferred: true
+  sources:
+  - nehemias-10
+  - it-baruc
+  reason: 'Perspicacia «Baruc», núm. 3: si selló él mismo en Ne 10:6, quizá es el núm. 2, el hijo de Zabai.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified

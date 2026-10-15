@@ -15,7 +15,7 @@ links:
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Eliasib/
   type: perspicacia
 relations: []
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified
 disambiguation: El padre de Jehohanán (Esd 10:6); Perspicacia lo separa del sumo sacerdote Eliasib y de los demás.
 distinct_from:
@@ -24,3 +24,4 @@ distinct_from:
 - eliasib-descendiente-de-bani
 - eliasib-descendiente-de-zatu
 - eliasib-hijo-de-elioenai
+- eliasib-sumo-sacerdote

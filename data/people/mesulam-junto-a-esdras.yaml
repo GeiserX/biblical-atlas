@@ -1,0 +1,39 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: mesulam-junto-a-esdras
+name: Mesulam
+names:
+- name: Mesulam
+perspicacia: 1200003014#18
+disambiguation: El Mesulam que acompañó a Esdras en la lectura de la Ley (Ne 8:4); no los demás Mesulam, más de veinte, que
+  registra Perspicacia.
+distinct_from:
+- mesulam-abuelo-de-safan
+- mesulam-descendiente-de-bani
+- mesulam-enviado-a-casifia
+- mesulam-hijo-de-abihail
+- mesulam-hijo-de-elpaal
+- mesulam-hijo-de-hodavias
+- mesulam-hijo-de-mesilemit
+- mesulam-hijo-de-sefatias
+- mesulam-hijo-de-zorobabel
+- mesulam-levita-de-josias
+- mesulam-levita-de-tiempos-de-esdras
+- salum-hijo-de-sadoc
+- mesulam-hijo-de-berekias
+- mesulam-hijo-de-besodeya
+- mesulam-sacerdote-firmante
+- mesulam-cabeza-del-pueblo
+- mesulam-de-la-procesion-del-muro
+- mesulam-portero
+summary: Uno de los que estuvieron a la izquierda de Esdras en la lectura de la Ley del mes séptimo de 455 a.e.c. Perspicacia
+  cree probable que fuera sacerdote.
+reason: Perspicacia «Mesulam», núm. 18; Ne 8:4.
+sources:
+- it-mesulam
+- nehemias-8
+links:
+- title: 'Perspicacia: «Mesulam»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Mesulam/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified

@@ -1,0 +1,60 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hasabias-de-la-casa-de-hilquias
+name: Hasabías
+names:
+- name: Hasabías
+perspicacia: 1200001900#9
+summary: Con Joiaquim de sumo sacerdote, estaba al frente de la casa sacerdotal de Hilquías. Perspicacia ve posible que sea
+  el jefe sacerdotal de Esd 8:24.
+reason: Perspicacia «Hasabías», núm. 9; Ne 12:10, 12, 21.
+sources:
+- it-hasabias
+- nehemias-12
+links:
+- title: 'Perspicacia: «Hasabías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hasab%C3%ADas/
+  type: perspicacia
+relations:
+- type: kin
+  person: hilquias-familia-sacerdotal
+  word: ancestor
+  inferred: false
+  sources:
+  - nehemias-12
+  reason: 'Ne 12:12-21: Hasabías encabezaba la casa paterna que llevaba el nombre de este sacerdote.'
+  checked_on: '2026-10-14'
+  status: verified
+- type: holds_office
+  office: priest
+  inferred: false
+  sources:
+  - nehemias-12
+  reason: 'Ne 12:12: los jefes de las casas paternas de días de Joiaquim eran sacerdotes.'
+  checked_on: '2026-10-14'
+  status: verified
+- type: same_as
+  person: hasabias-jefe-de-los-sacerdotes
+  certainty: possible
+  inferred: true
+  sources:
+  - it-hasabias
+  - nehemias-12
+  reason: 'Perspicacia «Hasabías», núm. 9: posiblemente es el núm. 7, jefe sacerdotal en el viaje de Esdras.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- hasabias-hebronita
+- hasabias-hijo-de-amasias
+- hasabias-hijo-de-jedutun
+- hasabias-hijo-de-matanias
+- hasabias-hijo-de-quemuel
+- hasabias-jefe-de-los-levitas
+- hasabias-levita-de-josias
+- hasabias-levita-firmante
+- hasabias-merarita
+- hasabias-padre-de-azricam
+- hasabias-principe-de-queila
+disambiguation: 'Hasabías núm. 9 de Perspicacia: el cabeza de la casa de Hilquías (Ne 12:21); no los demás Hasabías que registra
+  Perspicacia «Hasabías».'

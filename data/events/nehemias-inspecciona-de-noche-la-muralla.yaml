@@ -1,0 +1,45 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: nehemias-inspecciona-de-noche-la-muralla
+title: Nehemías inspecciona de noche la muralla de Jerusalén
+date:
+  from: -454
+  to: -454
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 455 a.e.c.
+narrative_order:
+  series: nehemias
+  order: 102011
+places:
+- jerusalen
+- valle-de-cedron
+- en-roguel
+people:
+- nehemias
+present:
+- nehemias
+passages:
+- Ne 2:11-16
+summary: Tres días después de llegar, Nehemías sale de noche con unos pocos hombres por la Puerta del Valle, recorre la muralla
+  en ruinas por el sur, sube por el valle y vuelve a entrar sin contar a nadie su plan.
+reason: 'Perspicacia «Nehemías», núm. 3 (Ne 2:11-16), y «Puerta»: sale por la Puerta del Valle, va al este por Hinón y sube
+  por el Cedrón. Antes del 4 de ab de 455.'
+sources:
+- nehemias-2
+- it-nehemias
+- it-puerta
+- it-fuente-de-la-culebra-grande
+links:
+- title: 'Perspicacia: «Nehemías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Nehem%C3%ADas/
+  type: perspicacia
+- title: 'Perspicacia: «Puerta, paso de entrada»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Puerta-paso-de-entrada/
+  type: perspicacia
+- title: Nehemías 2 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Nehem%C3%ADas/2/
+  type: bible
+checked_on: '2026-10-14'
+status: verified

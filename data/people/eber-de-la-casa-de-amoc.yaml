@@ -1,0 +1,43 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: eber-de-la-casa-de-amoc
+name: Éber
+names:
+- name: Éber
+perspicacia: 1200001249#5
+summary: Sacerdote, cabeza de la casa paterna de Amoc en la generación de Joiaquim, Nehemías y Esdras. Perspicacia «Amoq»
+  lo llama hijo de Amoc.
+reason: Perspicacia «Éber», núm. 5; Ne 12:12, 20, 26.
+sources:
+- it-eber
+- nehemias-12
+links:
+- title: 'Perspicacia: «Éber»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/%C3%89ber/
+  type: perspicacia
+relations:
+- type: kin
+  person: amoc
+  word: father
+  inferred: true
+  sources:
+  - nehemias-12
+  reason: 'Ne 12:20: de la casa de Amoc, Éber; Perspicacia «Amoq» dice que Éber era su hijo.'
+  checked_on: '2026-10-14'
+  status: verified
+- type: holds_office
+  office: priest
+  inferred: false
+  sources:
+  - nehemias-12
+  reason: 'Ne 12:12: los jefes de las casas paternas de días de Joiaquim eran sacerdotes.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- eber-hijo-de-abihail
+- eber-hijo-de-elpaal
+- eber-hijo-de-sasac
+- eber-hijo-de-sela
+disambiguation: 'Éber núm. 5 de Perspicacia: el cabeza de la casa de Amoc (Ne 12:20); no los demás Éber que registra Perspicacia
+  «Éber».'

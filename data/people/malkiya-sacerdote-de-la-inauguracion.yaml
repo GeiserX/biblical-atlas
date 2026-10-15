@@ -1,0 +1,41 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: malkiya-sacerdote-de-la-inauguracion
+name: Malkiya
+names:
+- name: Malkiya
+perspicacia: 1200002866#13
+summary: Sacerdote que estuvo en la inauguración de la muralla. Quizá es el que estuvo a la izquierda de Esdras en la lectura
+  de la Ley (Ne 8:4).
+reason: Perspicacia «Malkiya», núm. 13; Ne 12:40-42.
+sources:
+- it-malkiya
+- nehemias-12
+links:
+- title: 'Perspicacia: «Malkiya»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Malkiya/
+  type: perspicacia
+relations:
+- type: holds_office
+  office: priest
+  inferred: true
+  sources:
+  - it-malkiya
+  - nehemias-12
+  reason: Perspicacia «Malkiya», núm. 13, lo llama sacerdote (Ne 12:42).
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- malkias-padre-de-pasjur
+- malkiya-de-tiempos-de-david
+- malkiya-descendiente-de-harim
+- malkiya-descendiente-de-paros-1
+- malkiya-descendiente-de-paros-2
+- malkiya-hijo-de-etni
+- malkiya-hijo-de-harim
+- malkiya-hijo-de-recab
+- malkiya-hijo-del-rey
+- malkiya-orfebre
+- malkiya-sacerdote-firmante
+disambiguation: 'Malkiya núm. 13 de Perspicacia: el de Ne 12:42; no los demás Malkiya que registra Perspicacia «Malkiya».'

@@ -1,0 +1,28 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: gabai
+name: Gabái
+names:
+- name: Gabái
+- name: Gabai
+  note: Grafía del título de Perspicacia.
+perspicacia: '1200001580'
+summary: Uno de los jefes del distrito de Benjamín; su nombre está en la lista de los que vivían en Jerusalén en días de Nehemías.
+reason: Perspicacia «Gabai»; Ne 11:8.
+sources:
+- it-gabai
+- nehemias-11
+links:
+- title: 'Perspicacia: «Gabai»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Gabai/
+  type: perspicacia
+relations:
+- type: lived_in
+  place: jerusalen
+  inferred: false
+  sources:
+  - nehemias-11
+  reason: 'Ne 11:7, 8: en la lista de los benjamitas que vivían en Jerusalén.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified

@@ -13,6 +13,10 @@ distinct_from:
 - hasabias-hijo-de-quemuel
 - hasabias-padre-de-azricam
 - hasabias-levita-de-josias
+- hasabias-principe-de-queila
+- hasabias-levita-firmante
+- hasabias-hijo-de-matanias
+- hasabias-jefe-de-los-levitas
 summary: Jefe sacerdotal. En 468 a.e.c., junto al Ahavá, Esdras puso a su cargo y al de otros once los donativos de metal
   precioso y los objetos destinados al templo.
 reason: Perspicacia «Hasabías», núm. 7; Esd 8:24-30.
@@ -60,5 +64,5 @@ relations:
   reason: 'Esd 8:24-30: llevó con los demás sacerdotes las ofrendas del Ahavá a Jerusalén.'
   checked_on: '2026-10-13'
   status: verified
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified

@@ -1,0 +1,29 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: quelita-levita-firmante
+name: Quelitá
+names:
+- name: Quelitá
+perspicacia: 1200002586#3
+summary: Levita cuyo descendiente, o él mismo, selló la promesa de 455 a.e.c. Si fue él, Perspicacia lo ve posible como el
+  de Esd 10:23 o el de Ne 8:7.
+reason: Perspicacia «Quelitá», núm. 3; Ne 10:10.
+sources:
+- it-quelita
+- nehemias-10
+links:
+- title: 'Perspicacia: «Quelitá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Quelit%C3%A1/
+  type: perspicacia
+relations:
+- type: same_as
+  person: quelita-levita-que-explico-la-ley
+  certainty: possible
+  inferred: true
+  sources:
+  - nehemias-10
+  - it-quelita
+  reason: 'Perspicacia «Quelitá», núm. 3: si selló él mismo en Ne 10:10, podría ser el núm. 2.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified

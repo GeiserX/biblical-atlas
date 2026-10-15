@@ -1,0 +1,45 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jozabad-levita-de-tiempos-de-nehemias
+name: Jozabad
+names:
+- name: Jozabad
+perspicacia: 1200002532#10
+summary: Levita que con Sabetái dirigía los servicios externos del templo reconstruido y vivía en Jerusalén. Perspicacia ve
+  posible que sea el de Esd 8:33, el de Esd 10:23 o el de Ne 8:7.
+reason: Perspicacia «Jozabad», núm. 10; Ne 11:16.
+sources:
+- it-jozabad
+- nehemias-11
+links:
+- title: 'Perspicacia: «Jozabad»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jozabad/
+  type: perspicacia
+relations:
+- type: same_as
+  person: jozabad-levita-que-explico-la-ley
+  certainty: possible
+  inferred: true
+  sources:
+  - nehemias-11
+  - it-jozabad
+  reason: 'Perspicacia «Jozabad», núm. 10: el levita de Ne 11:16 quizá es el núm. 9.'
+  checked_on: '2026-10-14'
+  status: verified
+- type: lived_in
+  place: jerusalen
+  inferred: false
+  sources:
+  - nehemias-11
+  reason: 'Ne 11:15, 16: de los jefes levitas que vivían en Jerusalén.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- jozabad-comisionado-de-ezequias
+- jozabad-de-manases-1
+- jozabad-de-manases-2
+- jozabad-descendiente-de-pasjur
+- jozabad-el-guederatita
+- jozabad-levita-de-josias
+disambiguation: Jozabad, levita, jefe de los servicios externos del templo (Ne 11:16) (Perspicacia «Jozabad», núm. 10).

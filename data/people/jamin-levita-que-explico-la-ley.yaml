@@ -1,0 +1,39 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jamin-levita-que-explico-la-ley
+name: Jamín
+names:
+- name: Jamín
+perspicacia: 1200002315#3
+disambiguation: El levita Jamín de los días de Esdras (Ne 8:7); no el hijo de Simeón ni el descendiente de Judá hijo de Ram.
+distinct_from:
+- jamin-hijo-de-ram
+- jamin-hijo-de-simeon
+summary: Levita de después del destierro que aclaraba al pueblo reunido en Jerusalén el sentido de la Ley.
+reason: Perspicacia «Jamín», núm. 3; Ne 8:7.
+sources:
+- it-jamin
+- nehemias-8
+links:
+- title: 'Perspicacia: «Jamín»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jam%C3%ADn/
+  type: perspicacia
+relations:
+- type: accompanies
+  person: esdras
+  date:
+    from: -454
+    to: -454
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 455 a.e.c.
+  sources:
+  - nehemias-8
+  - it-jamin
+  reason: 'Ne 8:7-9: explicaba al pueblo la Ley que Esdras leía, en el mes séptimo de 455 a.e.c.'
+  inferred: false
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified

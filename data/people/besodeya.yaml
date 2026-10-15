@@ -1,0 +1,17 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: besodeya
+name: Besodeya
+names:
+- name: Besodeya
+perspicacia: '1200000662'
+summary: Su hijo Mesulam trabajó con Joiadá en la Puerta de la Ciudad Vieja, en la obra de la muralla de 455 a.e.c.
+reason: Perspicacia «Besodeya»; Ne 3:6.
+sources:
+- it-besodeya
+- nehemias-3
+links:
+- title: 'Perspicacia: «Besodeya»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Besodeya/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified

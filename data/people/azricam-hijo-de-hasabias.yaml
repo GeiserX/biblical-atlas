@@ -9,6 +9,7 @@ reason: Perspicacia «Azriqam», núm. 3; 1Cr 9:14.
 sources:
 - it-azriqam
 - 1-cronicas-9
+- nehemias-11
 links:
 - title: 'Perspicacia: «Azriqam»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Azriqam/
@@ -20,10 +21,11 @@ relations:
   inferred: false
   sources:
   - 1-cronicas-9
+  - nehemias-11
   reason: '1Cr 9:14: Azricam, hijo de Hasabías.'
-  checked_on: '2026-10-12'
+  checked_on: '2026-10-14'
   status: verified
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified
 distinct_from:
 - azricam-hijo-de-azel

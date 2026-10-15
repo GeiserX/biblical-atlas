@@ -10,6 +10,7 @@ sources:
 - it-pasjur
 - esdras-2
 - esdras-10
+- nehemias-7
 links:
 - title: 'Perspicacia: «Pasjur»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Pasjur/
@@ -21,8 +22,9 @@ relations:
   sources:
   - esdras-2
   - it-pasjur
+  - nehemias-7
   reason: 'Esd 2:38: sus descendientes se cuentan entre los sacerdotes.'
-  checked_on: '2026-10-13'
+  checked_on: '2026-10-14'
   status: verified
 - type: same_as
   person: pasjur-hijo-de-malkias
@@ -36,10 +38,11 @@ relations:
     de Esd 2:38.'
   checked_on: '2026-10-13'
   status: verified
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified
 distinct_from:
 - pasjur-hijo-de-imer
 - pasjur-padre-de-guedalias
+- pasjur-sacerdote-firmante
 disambiguation: 'Pasjur núm. 4 de Perspicacia: el de la casa sacerdotal de Esd 2:38. Perspicacia ve posible que sea el hijo
   de Malkiya.'

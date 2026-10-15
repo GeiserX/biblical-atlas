@@ -1,0 +1,35 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ido-sacerdote-de-zorobabel
+name: Idó
+names:
+- name: Idó
+perspicacia: 1200002135#5
+summary: Sacerdote del grupo de Zorobabel (537 a.e.c.). Con Joiaquim de sumo sacerdote, Zacarías estaba al frente de su casa
+  paterna. Perspicacia ve posible que sea el abuelo del profeta.
+reason: Perspicacia «Idó», núm. 5; Ne 12:1, 4, 12, 16.
+sources:
+- it-ido
+- nehemias-12
+links:
+- title: 'Perspicacia: «Idó»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Id%C3%B3/
+  type: perspicacia
+relations:
+- type: holds_office
+  office: priest
+  inferred: false
+  sources:
+  - nehemias-12
+  reason: 'Ne 12:1, 7: va entre los jefes de los sacerdotes que subieron con Zorobabel y Jesúa.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- ido-de-casifia
+- ido-hijo-de-joa
+- ido-hijo-de-zacarias
+- ido-hombre-de-visiones
+- ido-padre-de-ahinadab
+disambiguation: 'Idó núm. 5 de Perspicacia: el sacerdote del regreso con Zorobabel (Ne 12:4); no los demás Idó que registra
+  Perspicacia «Idó».'

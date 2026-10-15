@@ -1,0 +1,49 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: joel-hijo-de-zicri
+name: Joel
+names:
+- name: Joel
+perspicacia: 1200002481#13
+summary: Hijo de Zicrí; supervisaba a los benjamitas que vivían en Jerusalén mientras gobernaba Nehemías.
+reason: Perspicacia «Joel», núm. 13; Ne 11:9.
+sources:
+- it-joel
+- nehemias-11
+links:
+- title: 'Perspicacia: «Joel»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Joel/
+  type: perspicacia
+relations:
+- type: kin
+  person: zicri-padre-de-joel
+  word: father
+  inferred: false
+  sources:
+  - nehemias-11
+  reason: 'Ne 11:9: Joel, hijo de Zicrí.'
+  checked_on: '2026-10-14'
+  status: verified
+- type: lived_in
+  place: jerusalen
+  inferred: false
+  sources:
+  - nehemias-11
+  reason: 'Ne 11:9: supervisaba a los benjamitas en la ciudad.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- joel-descendiente-de-nebo
+- joel-el-gadita
+- joel-el-rubenita
+- joel-hermano-de-natan
+- joel-hijo-de-azarias
+- joel-hijo-de-izrahias
+- joel-hijo-de-jehiel
+- joel-hijo-de-pedaya
+- joel-hijo-de-samuel
+- joel-levita-de-ezequias
+- joel-profeta
+- joel-simeonita
+disambiguation: Joel, supervisor de los benjamitas de Jerusalén (Ne 11:9) (Perspicacia «Joel», núm. 13).

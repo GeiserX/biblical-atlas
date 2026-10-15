@@ -1,0 +1,34 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: petahias-levita-de-la-confesion
+name: Petahías
+names:
+- name: Petahías
+perspicacia: 1200003453#3
+disambiguation: El levita Petahías de la confesión (Ne 9:5); no el cabeza del turno sacerdotal 19 de David. Quizá el levita
+  Petahías de los días de Esdras.
+distinct_from:
+- petahias-de-tiempos-de-david
+- petahias-hijo-de-mesezabel
+summary: Levita que, con otros siete, invitó al pueblo a alabar a Jehová y le propuso un compromiso de fidelidad tras repasar
+  la historia de la nación.
+reason: Perspicacia «Petahías», núm. 3; Ne 9:5.
+sources:
+- it-petahias
+- nehemias-9
+links:
+- title: 'Perspicacia: «Petahías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Petah%C3%ADas/
+  type: perspicacia
+relations:
+- type: same_as
+  person: petahias-levita-de-tiempos-de-esdras
+  certainty: possible
+  inferred: true
+  sources:
+  - it-petahias
+  - nehemias-9
+  reason: 'Perspicacia «Petahías», núm. 3: el levita de Ne 9:5 quizá sea el núm. 2, el levita de los días de Esdras.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified

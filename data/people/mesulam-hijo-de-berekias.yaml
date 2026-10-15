@@ -1,0 +1,62 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: mesulam-hijo-de-berekias
+name: Mesulam
+names:
+- name: Mesulam
+perspicacia: 1200003014#16
+disambiguation: El hijo de Berekías que reparó dos tramos de la muralla (Ne 3:4, 30), núm. 16 de Perspicacia «Mesulam»; no
+  los otros Mesulam que numera.
+distinct_from:
+- mesulam-abuelo-de-safan
+- mesulam-descendiente-de-bani
+- mesulam-hijo-de-abihail
+- mesulam-hijo-de-besodeya
+- mesulam-hijo-de-elpaal
+- mesulam-hijo-de-hodavias
+- mesulam-hijo-de-mesilemit
+- mesulam-hijo-de-sefatias
+- mesulam-hijo-de-zorobabel
+- mesulam-levita-de-josias
+- mesulam-levita-de-tiempos-de-esdras
+- salum-hijo-de-sadoc
+- mesulam-junto-a-esdras
+- mesulam-sacerdote-firmante
+- mesulam-cabeza-del-pueblo
+- mesulam-de-la-casa-de-esdras
+- mesulam-de-la-casa-de-guineton
+- mesulam-de-la-procesion-del-muro
+- mesulam-portero
+summary: Hijo de Berekías y nieto de Mesezabel. En 455 a.e.c. reparó dos tramos de la muralla de Jerusalén, el segundo frente
+  a su casa. Su hija se casó con Jehohanán, hijo de Tobías el ammonita.
+reason: Perspicacia «Mesulam», núm. 16; Ne 3:4, 30; 6:18.
+sources:
+- it-mesulam
+- nehemias-3
+- nehemias-6
+links:
+- title: 'Perspicacia: «Mesulam»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Mesulam/
+  type: perspicacia
+relations:
+- type: kin
+  person: berekias-hijo-de-mesezabel
+  word: father
+  inferred: false
+  sources:
+  - nehemias-3
+  - it-mesulam
+  - nehemias-6
+  - it-berekias
+  reason: 'Ne 3:4, 30: Mesulam hijo de Berekías.'
+  checked_on: '2026-10-14'
+  status: verified
+- type: lived_in
+  place: jerusalen
+  inferred: false
+  sources:
+  - nehemias-3
+  reason: 'Ne 3:30: reparó el tramo que quedaba frente a su casa, en Jerusalén.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified

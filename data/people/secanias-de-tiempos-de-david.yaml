@@ -35,7 +35,7 @@ relations:
   reason: '1Cr 24:11: encabeza una de las casas sacerdotales de 24:4-6; Perspicacia «Secanías» lo trata como sacerdote.'
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified
 distinct_from:
 - secanias-hijo-de-abdias
@@ -43,3 +43,6 @@ distinct_from:
 - secanias-descendiente-de-paros
 - secanias-hijo-de-jahaziel
 - secanias-hijo-de-jehiel
+- secanias-padre-de-semaya-el-guarda
+- secanias-hijo-de-ara
+- secanias-sacerdote-de-zorobabel

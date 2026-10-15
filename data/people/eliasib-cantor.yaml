@@ -15,7 +15,7 @@ links:
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Eliasib/
   type: perspicacia
 relations: []
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified
 disambiguation: El cantor de Esd 10:24, de los días de Esdras; no los demás Eliasib que registra Perspicacia.
 distinct_from:
@@ -24,3 +24,4 @@ distinct_from:
 - eliasib-descendiente-de-zatu
 - eliasib-hijo-de-elioenai
 - eliasib-padre-de-jehohanan
+- eliasib-sumo-sacerdote

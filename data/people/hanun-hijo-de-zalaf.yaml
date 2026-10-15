@@ -1,0 +1,33 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hanun-hijo-de-zalaf
+name: Hanún
+names:
+- name: Hanún
+perspicacia: 1200001866#3
+disambiguation: El sexto hijo de Zalaf (Ne 3:30), núm. 3 de Perspicacia «Hanún»; no el rey de Ammón ni el que reparó la Puerta
+  del Valle.
+distinct_from:
+- hanun-de-la-puerta-del-valle
+- hanun-hijo-de-nahas
+summary: Sexto hijo de Zalaf. Con Hananías hijo de Selemías reparó un tramo de la muralla de Jerusalén.
+reason: Perspicacia «Hanún», núm. 3; Ne 3:30.
+sources:
+- it-hanun
+- nehemias-3
+links:
+- title: 'Perspicacia: «Hanún»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Han%C3%BAn/
+  type: perspicacia
+relations:
+- type: kin
+  person: zalaf
+  word: father
+  inferred: false
+  sources:
+  - nehemias-3
+  - it-hanun
+  reason: 'Ne 3:30: Hanún, el sexto hijo de Zalaf.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified

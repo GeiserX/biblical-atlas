@@ -1,0 +1,48 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: amashai
+name: Amashái
+names:
+- name: Amashái
+- name: Amashai
+  note: Grafía del título de Perspicacia.
+perspicacia: '1200000222'
+summary: Sacerdote, hijo de Azarel, que vivía en Jerusalén en tiempos de Nehemías. Su linaje sube por la casa de Imer.
+reason: Perspicacia «Amashai»; Ne 11:13.
+sources:
+- it-amashai
+- nehemias-11
+- it-azarel
+links:
+- title: 'Perspicacia: «Amashai»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Amashai/
+  type: perspicacia
+relations:
+- type: kin
+  person: azarel-hijo-de-ahzai
+  word: ancestor
+  inferred: false
+  sources:
+  - nehemias-11
+  - it-azarel
+  reason: 'Ne 11:13: Amashái, hijo de Azarel; Perspicacia «Azarel», núm. 5, lo da como padre o antepasado.'
+  checked_on: '2026-10-14'
+  status: verified
+- type: lived_in
+  place: jerusalen
+  inferred: false
+  sources:
+  - nehemias-11
+  reason: 'Ne 11:10, 13: de los sacerdotes que vivían en Jerusalén.'
+  checked_on: '2026-10-14'
+  status: verified
+- type: holds_office
+  office: priest
+  inferred: false
+  sources:
+  - nehemias-11
+  - it-amashai
+  reason: Ne 11:10, 13 lo cuenta con los sacerdotes; Perspicacia «Amashai» lo llama sacerdote.
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified

@@ -1,0 +1,32 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: malkiya-orfebre
+name: Malkiya
+names:
+- name: Malkiya
+perspicacia: 1200002866#10
+disambiguation: El orfebre que reparó la muralla (Ne 3:31), núm. 10 de Perspicacia «Malkiya»; no los otros Malkiya que numera.
+distinct_from:
+- malkias-padre-de-pasjur
+- malkiya-de-tiempos-de-david
+- malkiya-descendiente-de-harim
+- malkiya-descendiente-de-paros-1
+- malkiya-descendiente-de-paros-2
+- malkiya-hijo-de-etni
+- malkiya-hijo-de-harim
+- malkiya-hijo-de-recab
+- malkiya-hijo-del-rey
+- malkiya-junto-a-esdras
+- malkiya-sacerdote-firmante
+- malkiya-sacerdote-de-la-inauguracion
+summary: Del gremio de los orfebres. Reparó la muralla frente a la Puerta de la Inspección, hasta la casa donde estaban los
+  siervos del templo y los comerciantes.
+reason: Perspicacia «Malkiya», núm. 10; Ne 3:31.
+sources:
+- it-malkiya
+- nehemias-3
+links:
+- title: 'Perspicacia: «Malkiya»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Malkiya/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified

@@ -1,0 +1,42 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: adna-de-la-casa-de-harim
+name: Adná
+names:
+- name: Adná
+perspicacia: 1200000107#2
+summary: Sacerdote de la casa paterna de Harim, a la que encabezaba en la generación de Joiaquim, Nehemías y Esdras.
+reason: Perspicacia «Adná», núm. 2; Ne 12:12-15, 26.
+sources:
+- it-adna
+- nehemias-12
+links:
+- title: 'Perspicacia: «Adná»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Adn%C3%A1/
+  type: perspicacia
+relations:
+- type: kin
+  person: harim-de-tiempos-de-david
+  word: ancestor
+  inferred: false
+  sources:
+  - nehemias-12
+  reason: 'Ne 12:15: de la casa de Harim, Adná. Perspicacia «Harim», núm. 1, da a Adná como cabeza de esa casa paterna en
+    la generación siguiente al regreso.'
+  checked_on: '2026-10-14'
+  status: verified
+- type: holds_office
+  office: priest
+  inferred: false
+  sources:
+  - nehemias-12
+  reason: 'Ne 12:12: los jefes de las casas paternas de días de Joiaquim eran sacerdotes.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- adna-de-manases
+- adna-descendiente-de-pahat-moab
+- adna-general-de-jehosafat
+disambiguation: 'Adná núm. 2 de Perspicacia: el sacerdote de la casa de Harim (Ne 12:15); no los demás Adná que registra Perspicacia
+  «Adná».'

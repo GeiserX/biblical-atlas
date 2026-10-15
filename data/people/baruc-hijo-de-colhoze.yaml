@@ -1,0 +1,32 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: baruc-hijo-de-colhoze
+name: Baruc
+names:
+- name: Baruc
+perspicacia: 1200000571#4
+summary: Judaíta, padre o antepasado del Maaseya que vivía en Jerusalén en tiempos de Nehemías.
+reason: Perspicacia «Baruc», núm. 4; Ne 11:5.
+sources:
+- it-baruc
+- nehemias-11
+links:
+- title: 'Perspicacia: «Baruc»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Baruc/
+  type: perspicacia
+relations:
+- type: kin
+  person: colhoze-hijo-de-hazaya
+  word: father
+  inferred: false
+  sources:
+  - nehemias-11
+  reason: 'Ne 11:5: Baruc, hijo de Colhozé.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- baruc-hijo-de-nerias
+- baruc-hijo-de-zabai
+- baruc-sacerdote-firmante
+disambiguation: Baruc, judaíta, padre o antepasado de Maaseya (Perspicacia «Baruc», núm. 4).

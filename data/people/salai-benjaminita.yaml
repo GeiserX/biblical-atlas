@@ -1,0 +1,31 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: salai-benjaminita
+name: Salái
+names:
+- name: Salái
+- name: Salai
+  note: Grafía del título de Perspicacia.
+perspicacia: 1200003802#1
+summary: Benjamita de la lista de los que vivían en Jerusalén después del destierro; Ne 11:8 lo nombra tras Salú y Gabái.
+reason: Perspicacia «Salai», núm. 1; Ne 11:8.
+sources:
+- it-salai
+- nehemias-11
+links:
+- title: 'Perspicacia: «Salai»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Salai/
+  type: perspicacia
+relations:
+- type: lived_in
+  place: jerusalen
+  inferred: false
+  sources:
+  - nehemias-11
+  reason: 'Ne 11:7, 8: en la lista de los benjamitas que vivían en Jerusalén.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- salai-familia-sacerdotal
+disambiguation: Salái, benjamita que vivía en Jerusalén (Ne 11:8) (Perspicacia «Salai», núm. 1).

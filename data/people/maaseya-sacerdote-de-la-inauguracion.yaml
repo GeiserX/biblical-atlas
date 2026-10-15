@@ -1,0 +1,48 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: maaseya-sacerdote-de-la-inauguracion
+name: Maaseya
+names:
+- name: Maaseya
+perspicacia: 1200002811#20
+summary: Sacerdote del grupo que se detuvo ante el templo al dedicarse la muralla; distinto del trompetista Maaseya.
+reason: Perspicacia «Maaseya», núm. 20; Ne 12:42.
+sources:
+- it-maaseya
+- nehemias-12
+links:
+- title: 'Perspicacia: «Maaseya»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Maaseya/
+  type: perspicacia
+relations:
+- type: holds_office
+  office: priest
+  inferred: true
+  sources:
+  - it-maaseya
+  - nehemias-12
+  reason: Perspicacia «Maaseya», núm. 20, lo llama sacerdote (Ne 12:42).
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- maaseya-cabeza-del-pueblo
+- maaseya-de-la-casa-de-jesua
+- maaseya-descendiente-de-harim
+- maaseya-descendiente-de-pahat-moab
+- maaseya-descendiente-de-pasjur
+- maaseya-funcionario
+- maaseya-hijo-de-adaya
+- maaseya-hijo-de-ananiah
+- maaseya-hijo-de-baruc
+- maaseya-hijo-de-itiel
+- maaseya-hijo-de-salum
+- maaseya-hijo-del-rey
+- maaseya-jefe-de-jerusalen
+- maaseya-junto-a-esdras
+- maaseya-levita-que-explico-la-ley
+- maaseya-musico
+- maaseya-padre-de-sedequias
+- maaseya-padre-de-sofonias
+- maaseya-trompetista-de-la-inauguracion
+disambiguation: 'Maaseya núm. 20 de Perspicacia: el de Ne 12:42; no los demás Maaseya que registra Perspicacia «Maaseya».'

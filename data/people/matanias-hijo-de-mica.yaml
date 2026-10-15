@@ -11,6 +11,8 @@ sources:
 - it-matanias
 - it-mica
 - 1-cronicas-9
+- nehemias-11
+- nehemias-12
 links:
 - title: 'Perspicacia: «Matanías»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Matan%C3%ADas/
@@ -23,18 +25,23 @@ relations:
   sources:
   - 1-cronicas-9
   - it-mica
+  - nehemias-11
+  - it-miqueas
+  - nehemias-12
+  - it-micaya
   reason: '1Cr 9:15: Matanías, hijo de Micá; Perspicacia «Micá», núm. 3, lo da por su hijo.'
-  checked_on: '2026-10-12'
+  checked_on: '2026-10-14'
   status: verified
 - type: lived_in
   place: jerusalen
   inferred: false
   sources:
   - 1-cronicas-9
+  - nehemias-11
   reason: '1Cr 9:15, 34: de los jefes de los levitas que vivían en Jerusalén.'
-  checked_on: '2026-10-12'
+  checked_on: '2026-10-14'
   status: verified
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified
 distinct_from:
 - matanias-hijo-de-heman
@@ -44,5 +51,7 @@ distinct_from:
 - matanias-descendiente-de-elam
 - matanias-descendiente-de-pahat-moab
 - matanias-descendiente-de-zatu
+- matanias-levita-de-zorobabel
+- matanias-portero
 disambiguation: El levita Matanías hijo de Micá, de la línea de Asaf (Perspicacia «Micá», núm. 3). No el rey Sedequías, llamado
   antes Matanías.

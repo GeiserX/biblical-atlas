@@ -38,6 +38,12 @@ distinct_from:
 - zacarias-enviado-a-casifia
 - zacarias-hijo-de-bebai
 - zacarias-descendiente-de-elam
+- zacarias-junto-a-esdras
+- zacarias-hijo-de-amarias
+- zacarias-hijo-de-pasjur
+- zacarias-hijo-del-selanita
+- zacarias-hijo-de-jonatan
+- zacarias-trompetista-de-la-inauguracion
 summary: Profeta posterior al destierro, hijo de Berekías y nieto de Idó. Se unió a Ageo unos dos meses después para animar
   a terminar el templo; sus mensajes abarcan dos años y un mes.
 reason: Perspicacia «Zacarías», núm. 20, y «Ageo»; Zac 1:1 lo fecha en el octavo mes del segundo año de Darío. La Tabla de
@@ -61,6 +67,7 @@ sources:
 - esdras-5
 - esdras-6
 - it-ido
+- nehemias-12
 links:
 - title: 'Perspicacia: «Zacarías»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zacar%C3%ADas/
@@ -135,11 +142,23 @@ relations:
   inferred: false
   checked_on: '2026-10-13'
   status: verified
+- type: kin
+  person: ido-sacerdote-de-zorobabel
+  word: ancestor
+  inferred: false
+  sources:
+  - nehemias-12
+  - it-zacarias
+  - it-ido
+  reason: 'Ne 12:16: de la casa de Idó, Zacarías; Perspicacia «Zacarías», núm. 20, cita este versículo para el profeta, e
+    «Idó», núm. 5, lo da como cabeza de esa casa.'
+  checked_on: '2026-10-14'
+  status: verified
 perspicacia: 1200004681#20
 history:
 - date: '2026-09-29'
   change: 'La residencia en Jerusalén pasa a deducida (inferred: true): ningún versículo la afirma. La razón cita ahora Esd
     5:1 y Zac 7:1-5.'
   source: zacarias-7
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified

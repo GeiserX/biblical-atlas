@@ -17,6 +17,15 @@ distinct_from:
 - mesulam-enviado-a-casifia
 - mesulam-descendiente-de-bani
 - mesulam-levita-de-tiempos-de-esdras
+- mesulam-hijo-de-berekias
+- mesulam-hijo-de-besodeya
+- mesulam-junto-a-esdras
+- mesulam-cabeza-del-pueblo
+- mesulam-sacerdote-firmante
+- mesulam-de-la-casa-de-esdras
+- mesulam-de-la-casa-de-guineton
+- mesulam-de-la-procesion-del-muro
+- mesulam-portero
 summary: Levita cohatita. En el año 18 de Josías, 642 a.e.c., lo pusieron con Zacarías y otros dos levitas al frente de los
   obreros que reparaban el templo.
 reason: Perspicacia «Mesulam», núm. 5; 2Cr 34:12.
@@ -28,5 +37,5 @@ links:
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Mesulam/
   type: perspicacia
 relations: []
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified

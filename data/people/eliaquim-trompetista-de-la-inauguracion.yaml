@@ -1,0 +1,33 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: eliaquim-trompetista-de-la-inauguracion
+name: Eliaquim
+names:
+- name: Eliaquim
+perspicacia: 1200001295#3
+summary: Sacerdote que tocó la trompeta en la procesión con que Nehemías inauguró el muro reconstruido de Jerusalén.
+reason: Perspicacia «Eliaquim», núm. 3; Ne 12:31, 41.
+sources:
+- it-eliaquim
+- nehemias-12
+links:
+- title: 'Perspicacia: «Eliaquim»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Eliaquim/
+  type: perspicacia
+relations:
+- type: holds_office
+  office: priest
+  inferred: false
+  sources:
+  - nehemias-12
+  reason: 'Ne 12:41: los sacerdotes Eliaquim y los demás llevaban las trompetas.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- eliaquim-hijo-de-abiud
+- eliaquim-hijo-de-hilquias
+- eliaquim-hijo-de-melea
+- jehoiaquim
+disambiguation: 'Eliaquim núm. 3 de Perspicacia: el trompetista de la inauguración del muro (Ne 12:41); no los demás Eliaquim
+  que registra Perspicacia «Eliaquim».'

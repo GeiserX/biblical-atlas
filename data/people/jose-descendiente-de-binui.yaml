@@ -25,7 +25,7 @@ relations:
   inferred: false
   checked_on: '2026-10-13'
   status: verified
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified
 disambiguation: El de los hijos de Binuí de Esd 10:42; no los demás José que registra Perspicacia.
 distinct_from:
@@ -39,3 +39,4 @@ distinct_from:
 - jose-hijo-de-jose
 - jose-hijo-de-matatias
 - jose-padre-de-igal
+- jose-de-la-casa-de-sebanias

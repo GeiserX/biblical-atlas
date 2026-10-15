@@ -24,7 +24,7 @@ relations:
   reason: Mt 1:15.
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified
 distinct_from:
 - eleazar-hijo-de-aaron
@@ -33,3 +33,4 @@ distinct_from:
 - eleazar-hijo-de-mahli
 - eleazar-hijo-de-finehas
 - eleazar-descendiente-de-paros
+- eleazar-sacerdote-de-la-inauguracion

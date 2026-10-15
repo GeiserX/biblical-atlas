@@ -1,0 +1,22 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: azur-cabeza-del-pueblo
+name: Azur
+names:
+- name: Azur
+perspicacia: 1200000504#3
+summary: Uno de los jefes del pueblo; un descendiente suyo, o quizá él mismo, selló la promesa de 455 a.e.c. en presencia
+  de Nehemías.
+reason: Perspicacia «Azur», núm. 3; Ne 10:17.
+sources:
+- it-azur
+- nehemias-10
+links:
+- title: 'Perspicacia: «Azur»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Azur/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- azur-padre-de-hananias
+- azur-padre-de-jaazanias
+disambiguation: Azur, cabeza del pueblo en la lista de Ne 10:17 (Perspicacia «Azur», núm. 3).

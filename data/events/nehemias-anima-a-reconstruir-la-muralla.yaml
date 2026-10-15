@@ -1,0 +1,46 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: nehemias-anima-a-reconstruir-la-muralla
+title: Nehemías anima a los judíos a reconstruir la muralla
+type: speech
+roles:
+  nehemias: spoke
+date:
+  from: -454
+  to: -454
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 455 a.e.c.
+narrative_order:
+  series: nehemias
+  order: 102017
+places:
+- jerusalen
+people:
+- nehemias
+- sanbalat
+- tobias-el-ammonita
+- guesem
+present:
+- nehemias
+passages:
+- Ne 2:17-20
+summary: Nehemías cuenta a los judíos cómo lo ayudó Dios y qué le dijo el rey, y todos deciden construir. Sanbalat, Tobías
+  y Guésem se burlan y los acusan de rebelión; él responde que ellos no tienen parte en Jerusalén.
+reason: 'Perspicacia «Nehemías», núm. 3: tras la inspección revela su plan y, pese a las burlas, la obra empieza hacia el
+  4 de ab de 455 (Ne 2:17-20). No dice si los tres enemigos estaban allí.'
+sources:
+- nehemias-2
+- it-nehemias
+- it-sanbalat
+- it-guesem
+links:
+- title: 'Perspicacia: «Nehemías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Nehem%C3%ADas/
+  type: perspicacia
+- title: Nehemías 2 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Nehem%C3%ADas/2/
+  type: bible
+checked_on: '2026-10-14'
+status: verified

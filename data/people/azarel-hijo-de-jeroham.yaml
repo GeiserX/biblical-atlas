@@ -32,9 +32,11 @@ relations:
   reason: '1Cr 27:22: era el líder de Dan, uno de los príncipes de las tribus de Israel.'
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified
 distinct_from:
 - azarel-el-coreita
 - uziel-hijo-de-heman
 - azarel-descendiente-de-binui
+- azarel-hijo-de-ahzai
+- azarel-musico-de-la-procesion

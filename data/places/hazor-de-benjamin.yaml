@@ -1,0 +1,25 @@
+# biblical-atlas: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: hazor-de-benjamin
+name: Hazor
+names:
+- name: Hazor
+type: city
+lat: 31.832184
+lon: 35.195465
+precision: uncertain
+coord_source: openbible:ae9b9bc
+coord_url: https://www.openbible.info/geo/ancient/ae9b9bc/hazor-4
+coord_note: Khirbet Hazzur, primera identificación de OpenBible y el sitio que Perspicacia ve más plausible.
+summary: Localidad del territorio de Benjamín donde se asentaron benjamitas después del destierro. Se propone Khirbet Hazzur,
+  unos 7 km al noroeste del monte del templo.
+reason: 'Perspicacia «Hazor», núm. 4; Ne 11:31, 33. OpenBible: solo el punto.'
+sources:
+- it-hazor
+- openbible-geo
+- nehemias-11
+links:
+- title: 'Perspicacia: «Hazor»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hazor/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified

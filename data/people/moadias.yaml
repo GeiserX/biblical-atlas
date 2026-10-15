@@ -1,0 +1,27 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: moadias
+name: Moadías
+names:
+- name: Moadías
+perspicacia: '1200003098'
+summary: Casa paterna sacerdotal que encabezaba Piltái en días de Joiaquim. Se ha propuesto que el nombre sea otra forma de
+  Maadías.
+reason: Perspicacia «Moadías»; Ne 12:12, 17.
+sources:
+- it-moadias
+- nehemias-12
+links:
+- title: 'Perspicacia: «Moadías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Moad%C3%ADas/
+  type: perspicacia
+relations:
+- type: holds_office
+  office: priest
+  inferred: true
+  sources:
+  - nehemias-12
+  reason: 'Ne 12:12: su casa paterna era de sacerdotes; quien la encabezaba en días de Joiaquim era sacerdote.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified

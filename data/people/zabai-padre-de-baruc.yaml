@@ -1,0 +1,19 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: zabai-padre-de-baruc
+name: Zabái
+names:
+- name: Zabái
+perspicacia: null
+summary: Padre del Baruc que reparó con empeño un tramo de la muralla de Jerusalén (Ne 3:20). Perspicacia ve probable que
+  sea el Zabái de los hijos de Bebái que despidió a su esposa extranjera.
+reason: Ne 3:20; Perspicacia «Zabai».
+sources:
+- nehemias-3
+- it-zabai
+links:
+- title: 'Perspicacia: «Zabai»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zabai/
+  type: perspicacia
+relations: []
+checked_on: '2026-10-14'
+status: verified

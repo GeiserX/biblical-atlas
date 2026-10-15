@@ -24,7 +24,7 @@ relations:
   reason: '1Cr 3:21: el hijo de Abdías fue Secanías (la nota dice que en hebreo es «los hijos»).'
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified
 disambiguation: Secanías, descendiente de David después del destierro; no el sacerdote que dio nombre a un turno en días de
   David.
@@ -34,3 +34,6 @@ distinct_from:
 - secanias-descendiente-de-paros
 - secanias-hijo-de-jahaziel
 - secanias-hijo-de-jehiel
+- secanias-padre-de-semaya-el-guarda
+- secanias-hijo-de-ara
+- secanias-sacerdote-de-zorobabel

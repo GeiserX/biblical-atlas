@@ -1,0 +1,34 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: nehemias-hijo-de-azbuc
+name: Nehemías
+names:
+- name: Nehemías
+perspicacia: 1200003212#2
+disambiguation: El hijo de Azbuc, príncipe de medio distrito de Bet-Zur (Ne 3:16), núm. 2 de Perspicacia «Nehemías»; no el
+  gobernador ni el que volvió con Zorobabel.
+distinct_from:
+- nehemias
+- nehemias-repatriado
+summary: Hijo de Azbuc. Mandaba en medio distrito de Bet-Zur, ciudad de la montaña de Judá, por lo que sería judaíta. Su tramo
+  de muralla iba de frente a las Sepulturas de David a la Casa de los Poderosos.
+reason: Perspicacia «Nehemías», núm. 2; Ne 3:16.
+sources:
+- it-nehemias
+- nehemias-3
+links:
+- title: 'Perspicacia: «Nehemías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Nehem%C3%ADas/
+  type: perspicacia
+relations:
+- type: kin
+  person: azbuc
+  word: father
+  inferred: false
+  sources:
+  - nehemias-3
+  - it-nehemias
+  reason: 'Ne 3:16: Nehemías hijo de Azbuc.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified

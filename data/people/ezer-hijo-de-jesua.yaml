@@ -1,0 +1,36 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ezer-hijo-de-jesua
+name: Ézer
+names:
+- name: Ézer
+perspicacia: 1200001472#5
+disambiguation: El hijo de Jesúa, príncipe de Mizpá (Ne 3:19), núm. 5 de Perspicacia «Ézer»; no los otros Ézer que numera.
+distinct_from:
+- ezer-el-gadita
+- ezer-hijo-de-efrain
+- ezer-hijo-de-hur
+- ezer-hijo-de-seir
+- ezer-sacerdote-de-la-inauguracion
+summary: Hijo de Jesúa y príncipe de Mizpá. Reparó un tramo de la muralla de Jerusalén frente a la subida al Arsenal, en el
+  Contrafuerte, en 455 a.e.c.
+reason: Perspicacia «Ézer», núm. 5; Ne 3:19.
+sources:
+- it-ezer
+- nehemias-3
+links:
+- title: 'Perspicacia: «Ézer»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/%C3%89zer/
+  type: perspicacia
+relations:
+- type: kin
+  person: jesua-padre-de-ezer
+  word: father
+  inferred: false
+  sources:
+  - nehemias-3
+  - it-ezer
+  reason: 'Ne 3:19: Ézer hijo de Jesúa.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified

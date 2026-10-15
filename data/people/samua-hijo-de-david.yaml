@@ -14,6 +14,8 @@ distinct_from:
 - simea-hijo-de-miguel
 - simea-hijo-de-uza
 - simea-hijo-de-miclot
+- semaya-hijo-de-galal
+- samua-de-la-casa-de-bilga
 summary: Hijo de David y de Bat-Seba nacido en Jerusalén, hermano de Salomón. Abre la lista de los hijos que David tuvo allí.
 reason: 'Perspicacia «Samúa», núm. 2; 2Sa 5:13, 14. En Crónicas: 1Cr 3:5 y 14:4.'
 sources:
@@ -62,5 +64,5 @@ history:
 - date: '2026-10-12'
   change: La madre Bat-Seba estaba como deducida y sin el capítulo; 1Cr 3:5 lo dice. Se añade 1 Crónicas 3 a sus tres relaciones.
   source: 1-cronicas-3
-checked_on: '2026-10-12'
+checked_on: '2026-10-14'
 status: verified

@@ -1,0 +1,40 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jesua-hijo-de-azanias
+name: Jesúa
+names:
+- name: Jesúa
+perspicacia: null
+summary: Levita, hijo de Azanías, el primero de los levitas que sellaron el arreglo fidedigno en 455 a.e.c. Perspicacia lo
+  ve como un representante de la casa levita de Jesúa o un homónimo.
+reason: Perspicacia «Jesúa», núm. 5, y «Azanías»; Ne 10:9.
+sources:
+- it-jesua
+- it-azanias
+- nehemias-10
+links:
+- title: 'Perspicacia: «Jesúa»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jes%C3%BAa/
+  type: perspicacia
+relations:
+- type: kin
+  person: azanias
+  word: father
+  inferred: false
+  sources:
+  - nehemias-10
+  - it-azanias
+  reason: 'Ne 10:9: Jesúa, hijo de Azanías.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- jesua-ayudante-de-core
+- jesua-de-pahat-moab
+- jesua-de-tiempos-de-david
+- jesua-levita-que-explico-la-ley
+- jesua-supervisor-del-templo
+- josue-sumo-sacerdote
+- jesua-padre-de-ezer
+disambiguation: El levita hijo de Azanías que selló en 455 a.e.c. (Ne 10:9), dentro del núm. 5 de Perspicacia «Jesúa» sin
+  número propio; no los demás Jesúa que registra.

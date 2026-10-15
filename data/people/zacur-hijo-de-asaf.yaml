@@ -13,6 +13,7 @@ sources:
 - it-zacur
 - it-zicri
 - 1-cronicas-25
+- nehemias-12
 links:
 - title: 'Perspicacia: «Zacur»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zacur/
@@ -25,8 +26,9 @@ relations:
   sources:
   - 1-cronicas-25
   - it-zacur
+  - nehemias-12
   reason: 1Cr 25:2, 10 lo cuenta entre los hijos de Asaf.
-  checked_on: '2026-10-12'
+  checked_on: '2026-10-14'
   status: verified
 - type: same_as
   person: zicri-hijo-de-asaf
@@ -40,9 +42,12 @@ relations:
     5, dice que parece.
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-14'
 status: verified
 distinct_from:
 - zacur-hijo-de-jaazias
 - zacur-padre-de-samua
 - zacur-hijo-de-hamuel
+- zacur-hijo-de-imri
+- zacur-levita-firmante
+- zacur-hijo-de-matanias

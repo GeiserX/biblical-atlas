@@ -41,10 +41,11 @@ history:
 - date: '2026-09-29'
   change: El resumen lo llama tío de Aarón; Le 10:4 lo dice así y la ficha no lo citaba.
   source: levitico-10
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified
 distinct_from:
 - uziel-hijo-de-isi
 - uziel-de-benjamin
 - uziel-hijo-de-heman
 - uziel-levita-de-ezequias
+- uziel-hijo-de-harhaya

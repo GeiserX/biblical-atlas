@@ -23,9 +23,10 @@ relations:
   reason: '1Cr 2:43: hijo de Hebrón.'
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-14'
 status: verified
 disambiguation: Sema, hijo de Hebrón en la línea de Caleb; no el rubenita hijo de Joel ni el benjamita hijo de Elpaal.
 distinct_from:
 - sema-hijo-de-elpaal
 - sema-hijo-de-joel
+- sema-junto-a-esdras

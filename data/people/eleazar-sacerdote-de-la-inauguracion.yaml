@@ -1,0 +1,36 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: eleazar-sacerdote-de-la-inauguracion
+name: Eleazar
+names:
+- name: Eleazar
+perspicacia: 1200001287#7
+summary: Sacerdote levita que estuvo en la ceremonia de inauguración de la muralla reconstruida.
+reason: Perspicacia «Eleazar», núm. 7; Ne 12:42.
+sources:
+- it-eleazar
+- nehemias-12
+links:
+- title: 'Perspicacia: «Eleazar»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Eleazar/
+  type: perspicacia
+relations:
+- type: holds_office
+  office: priest
+  inferred: true
+  sources:
+  - it-eleazar
+  - nehemias-12
+  reason: Perspicacia «Eleazar», núm. 7, lo llama sacerdote levita (Ne 12:42).
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- eleazar-descendiente-de-paros
+- eleazar-hijo-de-aaron
+- eleazar-hijo-de-abinadab
+- eleazar-hijo-de-dodo
+- eleazar-hijo-de-eliud
+- eleazar-hijo-de-finehas
+- eleazar-hijo-de-mahli
+disambiguation: 'Eleazar núm. 7 de Perspicacia: el de Ne 12:42; no los demás Eleazar que registra Perspicacia «Eleazar».'

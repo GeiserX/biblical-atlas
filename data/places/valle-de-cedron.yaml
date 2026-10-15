@@ -28,6 +28,8 @@ sources:
 - 2-cronicas-15
 - 2-cronicas-29
 - 2-cronicas-30
+- it-puerta
+- nehemias-2
 links:
 - title: 'Perspicacia: «Cedrón, Valle torrencial de»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Cedr%C3%B3n-Valle-torrencial-de/
@@ -36,5 +38,5 @@ links:
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/juan/18/
   type: bible
 search: Valle de Cedrón
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified

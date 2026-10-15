@@ -1,0 +1,24 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jesaya-benjaminita
+name: Jesayá
+names:
+- name: Jesayá
+perspicacia: 1200002438#3
+summary: Benjamita, el antepasado más lejano que Ne 11:7 da al Salú que vivía en Jerusalén bajo Nehemías.
+reason: Perspicacia «Jesayá», núm. 3; Ne 11:7.
+sources:
+- it-jesaya
+- nehemias-11
+links:
+- title: 'Perspicacia: «Jesayá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jesay%C3%A1/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- jesaya-descendiente-de-eliezer
+- jesaya-hijo-de-atalia
+- jesaya-hijo-de-hananias
+- jesaya-hijo-de-jedutun
+- jesaya-merarita
+disambiguation: Jesayá, benjamita, antepasado de Salú (Perspicacia «Jesayá», núm. 3).

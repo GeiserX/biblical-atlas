@@ -33,7 +33,7 @@ relations:
   reason: Perspicacia «Mesulam», núm. 6, lo llama sacerdote; 1Cr 9:12.
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified
 distinct_from:
 - mesulam-abuelo-de-safan
@@ -47,5 +47,14 @@ distinct_from:
 - mesulam-enviado-a-casifia
 - mesulam-descendiente-de-bani
 - mesulam-levita-de-tiempos-de-esdras
+- mesulam-hijo-de-berekias
+- mesulam-hijo-de-besodeya
+- mesulam-junto-a-esdras
+- mesulam-cabeza-del-pueblo
+- mesulam-sacerdote-firmante
+- mesulam-de-la-casa-de-esdras
+- mesulam-de-la-casa-de-guineton
+- mesulam-de-la-procesion-del-muro
+- mesulam-portero
 disambiguation: 'Mesulam núm. 6 de Perspicacia: sacerdote de la casa de Imer, hijo de Mesilemit. No los benjamitas de la misma
   lista ni el padre de Hilquías.'

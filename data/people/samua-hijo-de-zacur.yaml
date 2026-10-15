@@ -39,7 +39,9 @@ relations:
   reason: Nú 13:4 lo llama hijo de Zacur.
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-14'
 status: verified
 distinct_from:
 - samua-hijo-de-david
+- semaya-hijo-de-galal
+- samua-de-la-casa-de-bilga

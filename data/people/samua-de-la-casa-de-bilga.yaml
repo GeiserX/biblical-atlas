@@ -1,0 +1,41 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: samua-de-la-casa-de-bilga
+name: Samúa
+names:
+- name: Samúa
+perspicacia: 1200003945#4
+summary: Sacerdote que en días de Joiaquim, sucesor de Jesúa, dirigía la casa paterna de Bilgá.
+reason: Perspicacia «Samúa», núm. 4; Ne 12:12, 18.
+sources:
+- it-samua
+- nehemias-12
+links:
+- title: 'Perspicacia: «Samúa»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sam%C3%BAa/
+  type: perspicacia
+relations:
+- type: kin
+  person: bilga-sacerdote-de-zorobabel
+  word: ancestor
+  inferred: false
+  sources:
+  - nehemias-12
+  reason: 'Ne 12:12-21: Samúa encabezaba la casa paterna que llevaba el nombre de este sacerdote.'
+  checked_on: '2026-10-14'
+  status: verified
+- type: holds_office
+  office: priest
+  inferred: false
+  sources:
+  - nehemias-12
+  reason: 'Ne 12:12: los jefes de las casas paternas de días de Joiaquim eran sacerdotes.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- samua-hijo-de-david
+- samua-hijo-de-zacur
+- semaya-hijo-de-galal
+disambiguation: 'Samúa núm. 4 de Perspicacia: el cabeza de la casa de Bilgá (Ne 12:18); no los demás Samúa que registra Perspicacia
+  «Samúa».'

@@ -33,7 +33,7 @@ Qué versículos de la TNM se han leído y apuntado en `data/coverage/<libro>.ya
 | [1 Crónicas](https://github.com/GeiserX/biblical-atlas/blob/main/data/coverage/1-cronicas.yaml) | 26 de 29 | 942 de 942 | 100 % |
 | [2 Crónicas](https://github.com/GeiserX/biblical-atlas/blob/main/data/coverage/2-cronicas.yaml) | 36 de 36 | 822 de 822 | 100 % |
 | [Esdras](https://github.com/GeiserX/biblical-atlas/blob/main/data/coverage/esdras.yaml) | 8 de 10 | 280 de 280 | 100 % |
-| Nehemías | 0 de 13 | 0 de 406 | 0 % |
+| [Nehemías](https://github.com/GeiserX/biblical-atlas/blob/main/data/coverage/nehemias.yaml) | 12 de 13 | 406 de 406 | 100 % |
 | Ester | 0 de 10 | 0 de 167 | 0 % |
 | [Job](https://github.com/GeiserX/biblical-atlas/blob/main/data/coverage/job.yaml) | 42 de 42 | 1070 de 1070 | 100 % |
 | [Salmos](https://github.com/GeiserX/biblical-atlas/blob/main/data/coverage/salmos.yaml) | 150 de 150 | 2461 de 2461 | 100 % |
@@ -84,7 +84,7 @@ Qué versículos de la TNM se han leído y apuntado en `data/coverage/<libro>.ya
 | [3 Juan](https://github.com/GeiserX/biblical-atlas/blob/main/data/coverage/3-juan.yaml) | 0 de 1 | 14 de 14 | 100 % |
 | [Judas](https://github.com/GeiserX/biblical-atlas/blob/main/data/coverage/judas.yaml) | 1 de 1 | 25 de 25 | 100 % |
 | Apocalipsis | 0 de 22 | 0 de 404 | 0 % |
-| **Total** | 1137 de 1189 | 30085 de 31062 | 97 % |
+| **Total** | 1149 de 1189 | 30491 de 31062 | 98 % |
 
 ## Capítulos empezados
 
@@ -93,5 +93,6 @@ Qué versículos de la TNM se han leído y apuntado en `data/coverage/<libro>.ya
 - 1 Crónicas 25: faltan ninguno (falta marcarlo completo)
 - Esdras 7: faltan ninguno (falta marcarlo completo)
 - Esdras 8: faltan ninguno (falta marcarlo completo)
+- Nehemías 12: faltan ninguno (falta marcarlo completo)
 - Filemón 1: faltan ninguno (falta marcarlo completo)
 - 3 Juan 1: faltan ninguno (falta marcarlo completo)

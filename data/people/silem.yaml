@@ -53,7 +53,7 @@ relations:
   status: verified
 disambiguation: Silem, el último hijo de Neftalí, al que 1Cr 7:13 llama Salum; no Salum, rey de Israel, ni Salum (Jehoacaz),
   rey de Judá, ni el esposo de la profetisa Huldá.
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified
 distinct_from:
 - jehoacaz-de-juda
@@ -68,3 +68,4 @@ distinct_from:
 - salum-padre-de-jehizquias
 - salum-descendiente-de-binui
 - salum-portero-de-tiempos-de-esdras
+- salum-hijo-de-halohes

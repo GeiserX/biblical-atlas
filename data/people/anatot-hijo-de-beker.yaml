@@ -34,5 +34,7 @@ relations:
     Jacob en 1728 a.e.c.'
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-14'
 status: verified
+distinct_from:
+- anatot-cabeza-del-pueblo

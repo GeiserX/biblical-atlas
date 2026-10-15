@@ -1,0 +1,54 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hananias-de-la-casa-de-jeremias
+name: Hananías
+names:
+- name: Hananías
+perspicacia: 1200001853#10
+summary: Sacerdote que, en días de Joiaquim, encabezaba la casa paterna de Jeremías; Perspicacia lo sitúa durante la gobernación
+  de Nehemías.
+reason: Perspicacia «Hananías», núm. 10; Ne 12:12, 26.
+sources:
+- it-hananias
+- nehemias-12
+links:
+- title: 'Perspicacia: «Hananías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hanan%C3%ADas/
+  type: perspicacia
+relations:
+- type: kin
+  person: jeremias-sacerdote-de-zorobabel
+  word: ancestor
+  inferred: true
+  sources:
+  - nehemias-12
+  reason: 'Ne 12:12: de la casa de Jeremías, Hananías. Perspicacia «Jeremías», núm. 10, deja abierto si esa casa es la del
+    núm. 8, el Jeremías del regreso.'
+  checked_on: '2026-10-14'
+  status: verified
+- type: holds_office
+  office: priest
+  inferred: false
+  sources:
+  - nehemias-12
+  reason: 'Ne 12:12: los jefes de las casas paternas de días de Joiaquim eran sacerdotes.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- hananias-abuelo-de-iriya
+- hananias-cabeza-del-pueblo
+- hananias-descendiente-de-bebai
+- hananias-fabricante-de-unguentos
+- hananias-hijo-de-azur
+- hananias-hijo-de-heman
+- hananias-hijo-de-sasac
+- hananias-hijo-de-selemias
+- hananias-hijo-de-zorobabel
+- hananias-jefe-de-la-fortaleza
+- hananias-padre-de-sedequias
+- hananias-principe-de-uzias
+- hananias-trompetista-de-la-inauguracion
+- sadrac
+disambiguation: 'Hananías núm. 10 de Perspicacia: el cabeza de la casa de Jeremías (Ne 12:12); no los demás Hananías que registra
+  Perspicacia «Hananías».'

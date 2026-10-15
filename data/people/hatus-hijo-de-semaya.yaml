@@ -25,5 +25,10 @@ relations:
   reason: '1Cr 3:22: uno de los hijos de Semaya.'
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+disambiguation: El descendiente de David hijo de Semaya (1Cr 3:22), núm. 2 de Perspicacia «Hatús»; no el hijo de Hasabneya.
+checked_on: '2026-10-14'
 status: verified
+distinct_from:
+- hatus-hijo-de-hasabneya
+- hatus-sacerdote-firmante
+- hatus-sacerdote-de-zorobabel

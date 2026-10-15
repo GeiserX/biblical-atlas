@@ -1,0 +1,51 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hananias-jefe-de-la-fortaleza
+name: Hananías
+names:
+- name: Hananías
+perspicacia: 1200001853#15
+summary: Jefe de la Fortaleza de Jerusalén, hombre de confianza que temía a Dios más que muchos. Acabado el muro, Nehemías
+  lo puso con su hermano Hananí al frente de la ciudad.
+reason: Perspicacia «Hananías», núm. 15; Ne 7:2.
+sources:
+- it-hananias
+- nehemias-7
+links:
+- title: 'Perspicacia: «Hananías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hanan%C3%ADas/
+  type: perspicacia
+relations:
+- type: lived_in
+  place: jerusalen
+  date:
+    from: -454
+    to: -454
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 455 a.e.c.
+  inferred: true
+  sources:
+  - nehemias-7
+  reason: 'Ne 7:2: jefe de la Fortaleza y puesto a cargo de Jerusalén; se deduce que vivía allí.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- hananias-abuelo-de-iriya
+- hananias-descendiente-de-bebai
+- hananias-hijo-de-azur
+- hananias-hijo-de-heman
+- hananias-hijo-de-sasac
+- hananias-hijo-de-zorobabel
+- hananias-padre-de-sedequias
+- hananias-principe-de-uzias
+- sadrac
+- hananias-fabricante-de-unguentos
+- hananias-hijo-de-selemias
+- hananias-cabeza-del-pueblo
+- hananias-de-la-casa-de-jeremias
+- hananias-trompetista-de-la-inauguracion
+disambiguation: 'Hananías núm. 15 de Perspicacia: el jefe de la Fortaleza en días de Nehemías (Ne 7:2), no los demás Hananías.'

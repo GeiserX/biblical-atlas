@@ -1,0 +1,49 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: sabetai-levita-de-tiempos-de-nehemias
+name: Sabetái
+names:
+- name: Sabetái
+- name: Sabetai
+  note: Grafía del título de Perspicacia.
+perspicacia: null
+disambiguation: El Sabetái de la lectura de la Ley (Ne 8:7); quizá el mismo que el levita que, en días de Esdras, apoyó a
+  Jonatán y a Jahzeya.
+summary: Levita que explicaba la Ley mientras Esdras la leía y que fue uno de los jefes de los servicios externos del templo.
+  Perspicacia ve posible que sea el Sabetái de los días de Esdras.
+reason: Ne 8:7; 11:16. Perspicacia «Sabetai» solo lo nombra como posible identidad del levita de ese artículo; no le da entrada.
+sources:
+- it-sabetai
+- nehemias-8
+- nehemias-11
+links:
+- title: 'Perspicacia: «Sabetai»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sabetai/
+  type: perspicacia
+relations:
+- type: accompanies
+  person: esdras
+  date:
+    from: -454
+    to: -454
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 455 a.e.c.
+  sources:
+  - nehemias-8
+  - it-sabetai
+  reason: 'Ne 8:7-9: explicaba al pueblo la Ley que Esdras leía, en el mes séptimo de 455 a.e.c.'
+  inferred: false
+  checked_on: '2026-10-14'
+  status: verified
+- type: lived_in
+  place: jerusalen
+  inferred: false
+  sources:
+  - nehemias-11
+  reason: 'Ne 11:15, 16: de los jefes levitas que vivían en Jerusalén.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified

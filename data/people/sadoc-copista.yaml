@@ -1,0 +1,45 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: sadoc-copista
+name: Sadoc
+names:
+- name: Sadoc
+perspicacia: 1200004652#6
+summary: Copista que Nehemías puso al cargo de los almacenes de los levitas con Selemías y Pedaya. Perspicacia ve posible
+  que sea el Sadoc que reparó el muro (Ne 3:29).
+reason: Perspicacia «Sadoc», núm. 6; Ne 13:13.
+sources:
+- it-sadoc
+- nehemias-13
+links:
+- title: 'Perspicacia: «Sadoc»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sadoc/
+  type: perspicacia
+relations:
+- type: accompanies
+  person: selemias-encargado-de-los-almacenes
+  word: fellow_worker
+  inferred: false
+  sources:
+  - nehemias-13
+  reason: 'Ne 13:13: Nehemías los puso juntos al cargo de los almacenes.'
+  checked_on: '2026-10-14'
+  status: verified
+- type: same_as
+  person: sadoc-hijo-de-imer
+  certainty: possible
+  inferred: true
+  sources:
+  - it-sadoc
+  - nehemias-13
+  reason: 'Perspicacia «Sadoc», núm. 6: quizá el copista y el núm. 5, que reparó el muro, son un solo hombre.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- sadoc-abuelo-de-jotan
+- sadoc-hijo-de-ahitub
+- sadoc-hijo-de-azor
+- sadoc-hijo-de-baana
+- sadoc-hijo-de-merayot
+disambiguation: 'Sadoc núm. 6 de Perspicacia: el copista de Ne 13:13; no los demás Sadoc que registra Perspicacia «Sadoc».'

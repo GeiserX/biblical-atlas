@@ -20,11 +20,13 @@ links:
 - title: 1 Reyes 16 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/1-reyes/16/
   type: bible
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified
 distinct_from:
 - hanani-hijo-de-heman
 - hanani-descendiente-de-imer
+- hanani-hermano-de-nehemias
+- hanani-musico-de-la-procesion
 relations:
 - type: tie
   person: asa

@@ -1,0 +1,34 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ezer-sacerdote-de-la-inauguracion
+name: Ézer
+names:
+- name: Ézer
+perspicacia: 1200001472#6
+summary: Sacerdote de la procesión que celebró el muro reconstruido de Jerusalén en 455 a.e.c.
+reason: Perspicacia «Ézer», núm. 6; Ne 12:31, 41, 42.
+sources:
+- it-ezer
+- nehemias-12
+links:
+- title: 'Perspicacia: «Ézer»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/%C3%89zer/
+  type: perspicacia
+relations:
+- type: holds_office
+  office: priest
+  inferred: true
+  sources:
+  - it-ezer
+  - nehemias-12
+  reason: Perspicacia «Ézer», núm. 6, lo llama sacerdote (Ne 12:42).
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- ezer-el-gadita
+- ezer-hijo-de-efrain
+- ezer-hijo-de-hur
+- ezer-hijo-de-jesua
+- ezer-hijo-de-seir
+disambiguation: 'Ézer núm. 6 de Perspicacia: el de Ne 12:42; no los demás Ézer que registra Perspicacia «Ézer».'

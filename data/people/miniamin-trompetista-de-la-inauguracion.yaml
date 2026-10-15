@@ -1,0 +1,32 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: miniamin-trompetista-de-la-inauguracion
+name: Miniamín
+names:
+- name: Miniamín
+perspicacia: 1200003067#3
+summary: Sacerdote trompetista en la inauguración del muro reconstruido. Perspicacia ve posible que sea el sacerdote llamado
+  Mijamín en Ne 10:7.
+reason: Perspicacia «Miniamín», núm. 3; Ne 12:40, 41.
+sources:
+- it-miniamin
+- nehemias-12
+links:
+- title: 'Perspicacia: «Miniamín»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Miniam%C3%ADn/
+  type: perspicacia
+relations:
+- type: holds_office
+  office: priest
+  inferred: false
+  sources:
+  - nehemias-12
+  reason: 'Ne 12:41: los sacerdotes que llevaban las trompetas.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- miniamin-ayudante-de-core
+- miniamin-familia-sacerdotal
+disambiguation: 'Miniamín núm. 3 de Perspicacia: el trompetista de Ne 12:41; no los demás Miniamín que registra Perspicacia
+  «Miniamín».'

@@ -1,0 +1,17 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ananiah
+name: Ananíah
+names:
+- name: Ananíah
+perspicacia: 1200000266#1
+summary: Padre de Maaseya y abuelo de Azarías, uno de los que repararon la muralla de Jerusalén con Nehemías.
+reason: Perspicacia «Ananíah», núm. 1; Ne 3:23.
+sources:
+- it-ananiah
+- nehemias-3
+links:
+- title: 'Perspicacia: «Ananíah»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Anan%C3%ADah/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified

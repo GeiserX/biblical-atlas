@@ -1,0 +1,20 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hasenua-padre-de-juda
+name: Hasenuá
+names:
+- name: Hasenuá
+perspicacia: 1200001909#2
+summary: Benjamita, padre o antepasado del Judá que era segundo al mando en Jerusalén en tiempos de Nehemías.
+reason: Perspicacia «Hasenuá», núm. 2; Ne 11:9.
+sources:
+- it-hasenua
+- nehemias-11
+links:
+- title: 'Perspicacia: «Hasenuá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hasenu%C3%A1/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- hasenua-padre-de-hodavias
+disambiguation: Hasenuá, benjamita, padre o antepasado de Judá (Ne 11:9) (Perspicacia «Hasenuá», núm. 2).

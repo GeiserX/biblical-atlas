@@ -1,0 +1,50 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: enemigos-tratan-de-detener-a-nehemias
+title: Sanbalat, Tobías y Guésem tratan de detener a Nehemías
+date:
+  from: -454
+  to: -454
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 455 a.e.c. (en elul, al final de la obra del muro)
+narrative_order:
+  series: nehemias
+  order: 106001
+places:
+- jerusalen
+- ono
+people:
+- nehemias
+- sanbalat
+- guesem
+- tobias-el-ammonita
+- semaya-hijo-de-delaya
+- noadias-profetisa
+present:
+- nehemias
+- semaya-hijo-de-delaya
+passages:
+- Ne 6:1-14
+- Ne 6:17-19
+summary: Cerradas las brechas, Sanbalat y Guésem citan a Nehemías en Onó cinco veces, la última con una carta que lo acusa
+  de rebelión. Semaya, pagado, le aconseja esconderse en el templo. Él no cede, y Tobías sigue escribiéndole para asustarlo.
+reason: 'Perspicacia «Nehemías», núm. 3: después de la queja por los intereses y antes del 25 de elul de 455; las cartas de
+  Tobías siguen tras el muro (Perspicacia «Tobías»). Orden 106001. Nehemías está en Jerusalén; Onó es solo la cita.'
+sources:
+- nehemias-6
+- it-nehemias
+- it-tobias
+- it-sanbalat
+- it-guesem
+- it-semaya
+links:
+- title: 'Perspicacia: «Nehemías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Nehem%C3%ADas/
+  type: perspicacia
+- title: Nehemías 6 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Nehem%C3%ADas/6/
+  type: bible
+checked_on: '2026-10-14'
+status: verified

@@ -1,0 +1,37 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: piltai
+name: Piltái
+names:
+- name: Piltái
+- name: Piltai
+  note: Grafía del título de Perspicacia.
+perspicacia: '1200003491'
+summary: Sacerdote que encabezaba después del destierro la casa paterna de Moadías, en días de Joiaquim.
+reason: Perspicacia «Piltai»; Ne 12:12, 17.
+sources:
+- it-piltai
+- nehemias-12
+links:
+- title: 'Perspicacia: «Piltai»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Piltai/
+  type: perspicacia
+relations:
+- type: kin
+  person: moadias
+  word: ancestor
+  inferred: false
+  sources:
+  - nehemias-12
+  reason: 'Ne 12:12-21: Piltái encabezaba la casa paterna que llevaba el nombre de este sacerdote.'
+  checked_on: '2026-10-14'
+  status: verified
+- type: holds_office
+  office: priest
+  inferred: false
+  sources:
+  - nehemias-12
+  reason: 'Ne 12:12: los jefes de las casas paternas de días de Joiaquim eran sacerdotes.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified

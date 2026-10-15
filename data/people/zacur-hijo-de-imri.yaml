@@ -1,0 +1,37 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: zacur-hijo-de-imri
+name: Zacur
+names:
+- name: Zacur
+perspicacia: 1200004651#5
+disambiguation: El hijo de Imrí que reparó la muralla (Ne 3:2), núm. 5 de Perspicacia «Zacur»; no los otros Zacur que numera.
+distinct_from:
+- zacur-hijo-de-asaf
+- zacur-hijo-de-hamuel
+- zacur-hijo-de-jaazias
+- zacur-padre-de-samua
+- zacur-levita-firmante
+- zacur-hijo-de-matanias
+summary: Hijo de Imrí. Cuando se reconstruía la muralla de Jerusalén bajo Nehemías, en 455 a.e.c., reparó el tramo que seguía
+  al de los hombres de Jericó.
+reason: Perspicacia «Zacur», núm. 5; Ne 3:2.
+sources:
+- it-zacur
+- nehemias-3
+links:
+- title: 'Perspicacia: «Zacur»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zacur/
+  type: perspicacia
+relations:
+- type: kin
+  person: imri-padre-de-zacur
+  word: father
+  inferred: false
+  sources:
+  - nehemias-3
+  - it-zacur
+  reason: 'Ne 3:2: Zacur hijo de Imrí.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified

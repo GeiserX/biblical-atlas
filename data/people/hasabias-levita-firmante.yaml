@@ -1,0 +1,52 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hasabias-levita-firmante
+name: Hasabías
+names:
+- name: Hasabías
+perspicacia: 1200001900#8
+summary: Levita, quizá de la descendencia del Hasabías merarita, que selló la promesa nacional de fidelidad en tiempos de
+  Nehemías (455 a.e.c.).
+reason: Perspicacia «Hasabías», núm. 8; Ne 10:11.
+sources:
+- it-hasabias
+- nehemias-10
+links:
+- title: 'Perspicacia: «Hasabías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hasab%C3%ADas/
+  type: perspicacia
+relations:
+- type: same_as
+  person: hasabneya-levita-de-la-confesion
+  certainty: possible
+  inferred: true
+  sources:
+  - nehemias-10
+  - it-hasabneya
+  reason: 'Perspicacia «Hasabneya», núm. 2: el levita de la confesión quizá era un Hasabías, como el de Ne 10:11, según la
+    Peshitta.'
+  checked_on: '2026-10-14'
+  status: verified
+- type: same_as
+  person: hasabias-principe-de-queila
+  certainty: possible
+  inferred: true
+  sources:
+  - nehemias-10
+  - it-hasabias
+  reason: 'Perspicacia «Hasabías», núm. 8: el levita de Ne 10:11 quizá es el núm. 11, el príncipe de Queilá.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- hasabias-de-la-casa-de-hilquias
+- hasabias-hebronita
+- hasabias-hijo-de-amasias
+- hasabias-hijo-de-jedutun
+- hasabias-hijo-de-matanias
+- hasabias-hijo-de-quemuel
+- hasabias-jefe-de-los-sacerdotes
+- hasabias-levita-de-josias
+- hasabias-merarita
+- hasabias-padre-de-azricam
+disambiguation: Hasabías, levita que selló la promesa de Ne 10 (Perspicacia «Hasabías», núm. 8).

@@ -1,0 +1,23 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: uni-levita-de-guardia
+name: Uní
+names:
+- name: Uní
+perspicacia: 1200004514#2
+summary: Levita de después del destierro que, con Bacbuquías, hacía guardia frente a sus hermanos en días del sumo sacerdote
+  Jesúa.
+reason: Perspicacia «Uní», núm. 2; Ne 12:1, 9.
+sources:
+- it-uni
+- nehemias-12
+links:
+- title: 'Perspicacia: «Uní»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Un%C3%AD/
+  type: perspicacia
+relations: []
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- uni-musico
+disambiguation: 'Uní núm. 2 de Perspicacia: el levita de guardia de los días de Jesúa (Ne 12:9); no los demás Uní que registra
+  Perspicacia «Uní».'

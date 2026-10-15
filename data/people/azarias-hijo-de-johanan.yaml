@@ -28,6 +28,10 @@ distinct_from:
 - azarias-quinto-hijo-de-jehosafat
 - azarias-segundo-hijo-de-jehosafat
 - seraya-repatriado
+- azarias-hijo-de-maaseya
+- azarias-levita-que-explico-la-ley
+- azarias-sacerdote-firmante
+- azarias-de-la-procesion-del-muro
 summary: Sacerdote hijo de Johanán, que ejerció en el templo de Salomón. Perspicacia lo llama sumo sacerdote, ve posible que
   echara del templo a Uzías y le atribuye, con reservas, la respuesta a Ezequías sobre las contribuciones (2Cr 31:10).
 reason: Perspicacia «Azarías», núm. 14; 1Cr 6:9, 10.
@@ -112,5 +116,5 @@ history:
   change: 'Deja de excluir al Azarías de Esd 7:3: la referencia de ese versículo lleva a 2Cr 31:10 y Perspicacia «Amarías»,
     núm. 4, une los dos pasajes.'
   source: esdras-7
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified

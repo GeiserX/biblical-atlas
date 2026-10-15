@@ -10,6 +10,8 @@ sources:
 - it-jesua
 - esdras-2
 - esdras-8
+- nehemias-7
+- nehemias-12
 links:
 - title: 'Perspicacia: «Jesúa»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jes%C3%BAa/
@@ -21,10 +23,44 @@ relations:
   inferred: false
   sources:
   - esdras-2
+  - nehemias-7
   reason: 'Esd 2:40: los hijos de Jesúa y de Cadmiel son de los hijos de Hodavías.'
-  checked_on: '2026-10-13'
+  checked_on: '2026-10-14'
   status: verified
-checked_on: '2026-10-13'
+- type: kin
+  person: cadmiel
+  word: ancestor
+  inferred: true
+  sources:
+  - nehemias-12
+  - it-jesua
+  reason: Ne 12:24 lo llama Jesúa hijo de Cadmiel; Perspicacia «Jesúa», núm. 5, lo da por hijo de Azanías, así que leemos
+    «hijo» como descendiente. Pendiente de confirmar.
+  checked_on: '2026-10-14'
+  status: pending
+- type: same_as
+  person: jesua-padre-de-ezer
+  certainty: possible
+  inferred: true
+  sources:
+  - it-jesua
+  - nehemias-3
+  reason: 'Perspicacia «Jesúa», núm. 5: puede que Ézer, hijo de Jesúa (Ne 3:19), fuera de esta misma familia; el Jesúa que
+    lo engendra quizá es el cabeza de la casa.'
+  checked_on: '2026-10-14'
+  status: verified
+- type: same_as
+  person: jesua-hijo-de-azanias
+  certainty: possible
+  inferred: true
+  sources:
+  - it-jesua
+  - nehemias-10
+  reason: 'Perspicacia «Jesúa», núm. 5: quien selló en Ne 10:9, hijo de Azanías, fue un representante de esta casa o quizá
+    otro con el mismo nombre.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
 status: verified
 distinct_from:
 - jesua-ayudante-de-core
@@ -32,4 +68,5 @@ distinct_from:
 - jesua-de-tiempos-de-david
 - jesua-supervisor-del-templo
 - josue-sumo-sacerdote
+- jesua-levita-que-explico-la-ley
 disambiguation: 'Jesúa núm. 5 de Perspicacia: cabeza de la casa levita de Esd 2:40; no el sumo sacerdote ni el de Pahat-Moab.'

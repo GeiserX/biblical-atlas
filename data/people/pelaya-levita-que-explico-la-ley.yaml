@@ -1,0 +1,40 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: pelaya-levita-que-explico-la-ley
+name: Pelayá
+names:
+- name: Pelayá
+perspicacia: 1200003418#1
+disambiguation: El levita Pelayá de los días de Esdras y Nehemías (Ne 8:7); no Pelayá hijo de Elioenái, de la casa de David.
+distinct_from:
+- pelaya-hijo-de-elioenai
+summary: Levita que colaboró con Esdras leyendo y explicando la Ley en la plaza de Jerusalén. Perspicacia lo cree probablemente
+  el levita que selló poco después el compromiso de fidelidad.
+reason: Perspicacia «Pelayá», núm. 1; Ne 8:7; 10:10.
+sources:
+- it-pelaya
+- nehemias-8
+- nehemias-10
+links:
+- title: 'Perspicacia: «Pelayá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Pelay%C3%A1/
+  type: perspicacia
+relations:
+- type: accompanies
+  person: esdras
+  date:
+    from: -454
+    to: -454
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 455 a.e.c.
+  sources:
+  - nehemias-8
+  - it-pelaya
+  reason: 'Ne 8:7-9: explicaba al pueblo la Ley que Esdras leía, en el mes séptimo de 455 a.e.c.'
+  inferred: false
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified

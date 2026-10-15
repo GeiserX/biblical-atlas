@@ -25,7 +25,17 @@ relations:
   inferred: false
   checked_on: '2026-10-13'
   status: verified
-checked_on: '2026-10-13'
+- type: same_as
+  person: malkiya-hijo-de-harim
+  certainty: possible
+  inferred: true
+  sources:
+  - nehemias-3
+  - it-malkiya
+  reason: 'Perspicacia «Malkiya», núm. 8: quizá el hijo de Harim de Ne 3:11 sea el núm. 7, que despidió a su esposa extranjera.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
 status: verified
 disambiguation: El de los hijos de Harim de Esd 10:31; no los demás Malkiya que registra Perspicacia.
 distinct_from:
@@ -35,3 +45,8 @@ distinct_from:
 - malkiya-descendiente-de-paros-2
 - malkiya-hijo-de-etni
 - malkiya-hijo-del-rey
+- malkiya-hijo-de-recab
+- malkiya-orfebre
+- malkiya-junto-a-esdras
+- malkiya-sacerdote-firmante
+- malkiya-sacerdote-de-la-inauguracion

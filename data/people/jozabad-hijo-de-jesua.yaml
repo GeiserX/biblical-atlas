@@ -19,6 +19,7 @@ sources:
 - it-jozabad
 - esdras-8
 - it-jesua
+- nehemias-11
 links:
 - title: 'Perspicacia: «Jozabad»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jozabad/
@@ -44,5 +45,25 @@ relations:
   reason: Perspicacia «Jozabad», núm. 6 y 8, ve posible que el levita que recibió los donativos sea el levita de Esd 10:23.
   checked_on: '2026-10-13'
   status: verified
-checked_on: '2026-10-13'
+- type: same_as
+  person: jozabad-levita-que-explico-la-ley
+  certainty: possible
+  inferred: true
+  sources:
+  - it-jozabad
+  - nehemias-8
+  reason: Perspicacia «Jozabad», núm. 9, ve posible que el levita que explicaba la Ley (Ne 8:7) sea el núm. 6.
+  checked_on: '2026-10-14'
+  status: verified
+- type: same_as
+  person: jozabad-levita-de-tiempos-de-nehemias
+  certainty: possible
+  inferred: true
+  sources:
+  - nehemias-11
+  - it-jozabad
+  reason: 'Perspicacia «Jozabad», núm. 10: el levita de Ne 11:16 quizá es el núm. 6.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
 status: verified

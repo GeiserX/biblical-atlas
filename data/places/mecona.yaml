@@ -1,0 +1,39 @@
+# biblical-atlas: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: mecona
+name: Meconá
+names:
+- name: Meconá
+type: city
+lat: null
+lon: null
+precision: uncertain
+coord_source: null
+coord_url: null
+candidates:
+- name: Cerca de Ziclag
+  geometry:
+    type: zone
+    lat: 31.3912
+    lon: 34.6816
+    radius_km: 15
+  checked_on: '2026-10-14'
+  status: favored_level_1
+  sources:
+  - it-mecona
+  - nehemias-11
+  reason: 'Perspicacia «Meconá»: al parecer estaba cerca de Ziqlag, pero no se puede identificar; las propuestas corrigen
+    el texto.'
+  coord_source: calculation
+  note: 'Centro: el punto de ziclag. Radio nuestro, para los alrededores que el texto no precisa.'
+summary: Población del sur de Judá con pueblos dependientes, donde vivió gente de Judá tras el destierro. Parece que estaba
+  cerca de Ziclag; no se sabe el sitio.
+reason: Perspicacia «Meconá»; Ne 11:25, 28. Zona calculada alrededor de Ziclag.
+sources:
+- it-mecona
+- nehemias-11
+links:
+- title: 'Perspicacia: «Meconá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Mecon%C3%A1/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified

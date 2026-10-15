@@ -1,0 +1,38 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: secanias-sacerdote-de-zorobabel
+name: Secanías
+names:
+- name: Secanías
+perspicacia: 1200003977#3
+summary: Sacerdote del grupo de Zorobabel (537 a.e.c.). En la lista de casas de la generación siguiente su nombre lo ocupa
+  Sebanías.
+reason: Perspicacia «Secanías», núm. 3; Ne 12:1, 3.
+sources:
+- it-secanias
+- nehemias-12
+links:
+- title: 'Perspicacia: «Secanías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Secan%C3%ADas/
+  type: perspicacia
+relations:
+- type: holds_office
+  office: priest
+  inferred: false
+  sources:
+  - nehemias-12
+  reason: 'Ne 12:1, 7: va entre los jefes de los sacerdotes que subieron con Zorobabel y Jesúa.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- secanias-ayudante-de-core
+- secanias-de-tiempos-de-david
+- secanias-descendiente-de-paros
+- secanias-hijo-de-abdias
+- secanias-hijo-de-ara
+- secanias-hijo-de-jahaziel
+- secanias-hijo-de-jehiel
+- secanias-padre-de-semaya-el-guarda
+disambiguation: 'Secanías núm. 3 de Perspicacia: el sacerdote del regreso con Zorobabel (Ne 12:3); no los demás Secanías que
+  registra Perspicacia «Secanías».'

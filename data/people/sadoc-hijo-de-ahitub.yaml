@@ -10,6 +10,9 @@ distinct_from:
 - sadoc-hijo-de-azor
 - sadoc-abuelo-de-jotan
 - sadoc-hijo-de-merayot
+- sadoc-hijo-de-baana
+- sadoc-hijo-de-imer
+- sadoc-copista
 summary: Sacerdote de la línea de Eleazar, también llamado vidente, leal a David desde que lo hicieron rey. No apoyó a Adonías;
   ungió a Salomón, que lo puso de sumo sacerdote en lugar de Abiatar.
 reason: Perspicacia «Sadoc», núm. 1, y «Ahitub», núm. 2; 2Sa 8:17; 1Cr 18:16.
@@ -111,5 +114,5 @@ relations:
   reason: '1Cr 27:16, 17: entre los jefes de las tribus de Israel, Sadoc está al frente de los de Aarón.'
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified

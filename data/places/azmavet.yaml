@@ -19,9 +19,11 @@ sources:
 - it-azmavet
 - openbible-geo
 - esdras-2
+- nehemias-7
+- nehemias-12
 links:
 - title: 'Perspicacia: «Azmávet»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Azm%C3%A1vet/
   type: perspicacia
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified

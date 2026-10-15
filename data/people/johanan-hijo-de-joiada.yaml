@@ -1,0 +1,78 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: johanan-hijo-de-joiada
+name: Johanán
+names:
+- name: Johanán
+- name: Jonatán
+  note: Así lo llama Ne 12:11. Perspicacia «Johanán», núm. 7, y «Joiadá», núm. 2, lo identifican con Johanán; «Jonatán», núm.
+    12, dice que se cree que el versículo debía decir Johanán.
+perspicacia: 1200002488#7
+summary: Hijo de Joiadá; su abuelo era el sumo sacerdote Eliasib. Ne 12:11 lo llama Jonatán, quizá por un error de copia.
+  Una carta de Elefantina lo da como sumo sacerdote de Jerusalén.
+reason: Perspicacia «Johanán», núm. 7; Ne 12:11, 22, 23.
+sources:
+- it-johanan
+- nehemias-12
+- it-joiada
+links:
+- title: 'Perspicacia: «Johanán»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Johan%C3%A1n/
+  type: perspicacia
+relations:
+- type: kin
+  person: joiada-hijo-de-eliasib
+  word: father
+  inferred: false
+  sources:
+  - nehemias-12
+  - it-johanan
+  - it-joiada
+  reason: 'Ne 12:11: Joiadá fue padre de Jonatán, que Perspicacia «Johanán», núm. 7, identifica con Johanán.'
+  checked_on: '2026-10-14'
+  status: verified
+- type: kin
+  person: eliasib-sumo-sacerdote
+  word: grandfather
+  inferred: true
+  sources:
+  - nehemias-12
+  - it-johanan
+  reason: Ne 12:23 lo llama hijo de Eliasib; Perspicacia «Johanán», núm. 7, lo da por su nieto.
+  checked_on: '2026-10-14'
+  status: verified
+- type: succeeds
+  person: joiada-hijo-de-eliasib
+  office: high_priest
+  inferred: true
+  sources:
+  - nehemias-12
+  - it-johanan
+  reason: 'Ne 12:22 lo pone tras Joiadá en la lista; Perspicacia «Johanán», núm. 7: un papiro de Elefantina le da el cargo
+    de sumo sacerdote.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- johanan-el-benjaminita
+- johanan-el-gadita
+- johanan-hijo-de-azarias
+- johanan-hijo-de-carea
+- johanan-hijo-de-elioenai
+- johanan-hijo-de-hacatan
+- johanan-hijo-de-josias
+- jonatan-de-la-casa-de-maluki
+- jonatan-hijo-de-abiatar
+- jonatan-hijo-de-asahel
+- jonatan-hijo-de-carea
+- jonatan-hijo-de-jada
+- jonatan-hijo-de-sague
+- jonatan-hijo-de-sama
+- jonatan-hijo-de-saul
+- jonatan-hijo-de-semaya
+- jonatan-hijo-de-uzias
+- jonatan-levita
+- jonatan-padre-de-ebed
+- jonatan-sobrino-de-david
+disambiguation: 'Johanán núm. 7 de Perspicacia: el nieto del sumo sacerdote Eliasib (Ne 12:11, 22, 23); no los demás Johanán
+  que registra Perspicacia «Johanán».'

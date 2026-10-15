@@ -30,10 +30,11 @@ relations:
   reason: Gé 10:22 lo nombra el primero de los hijos de Sem.
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified
 distinct_from:
 - elam-hijo-de-sasac
 - elam-hijo-de-meselemias
 - elam-cabeza-de-familia
 - elam-el-otro
+- elam-levita-de-la-inauguracion

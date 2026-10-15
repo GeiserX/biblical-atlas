@@ -1,0 +1,63 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: malkiya-hijo-de-harim
+name: Malkiya
+names:
+- name: Malkiya
+perspicacia: 1200002866#8
+disambiguation: El llamado hijo de Harim que reparó la Torre de los Hornos (Ne 3:11), núm. 8 de Perspicacia «Malkiya»; no
+  los otros Malkiya que numera.
+distinct_from:
+- malkias-padre-de-pasjur
+- malkiya-de-tiempos-de-david
+- malkiya-descendiente-de-paros-1
+- malkiya-descendiente-de-paros-2
+- malkiya-hijo-de-etni
+- malkiya-hijo-de-recab
+- malkiya-hijo-del-rey
+- malkiya-orfebre
+- malkiya-junto-a-esdras
+- malkiya-sacerdote-firmante
+- malkiya-sacerdote-de-la-inauguracion
+summary: Llamado hijo de Harim. Con Hasub reparó la Torre de los Hornos y otro tramo de la muralla. Quizá sea el Malkiya de
+  los hijos de Harim que despidió a su esposa extranjera.
+reason: Perspicacia «Malkiya», núm. 8, y «Harim», núm. 2; Ne 3:11.
+sources:
+- it-malkiya
+- nehemias-3
+- it-harim
+links:
+- title: 'Perspicacia: «Malkiya»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Malkiya/
+  type: perspicacia
+relations:
+- type: kin
+  person: harim-cabeza-de-familia
+  word: ancestor
+  inferred: true
+  sources:
+  - nehemias-3
+  - it-harim
+  - it-malkiya
+  reason: Ne 3:11 lo llama hijo de Harim; Perspicacia «Harim», núm. 2, lo cuenta entre los «hijos» de esa familia que no era
+    sacerdotal.
+  checked_on: '2026-10-14'
+  status: verified
+- type: accompanies
+  person: hasub-hijo-de-pahat-moab
+  word: fellow_worker
+  date:
+    from: -454
+    to: -454
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 455 a.e.c.
+  inferred: false
+  sources:
+  - nehemias-3
+  reason: 'Ne 3:11: Malkiya y Hasub repararon juntos un tramo y la Torre de los Hornos.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified

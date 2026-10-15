@@ -9,12 +9,14 @@ reason: Perspicacia «Paséah», núm. 2; Esd 2:49.
 sources:
 - it-paseah
 - esdras-2
+- nehemias-7
 links:
 - title: 'Perspicacia: «Paséah»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Pas%C3%A9ah/
   type: perspicacia
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified
 distinct_from:
 - paseah-hijo-de-eston
+- paseah-padre-de-joiada
 disambiguation: 'Paséah núm. 2 de Perspicacia: antepasado de netineos (Esd 2:49), no el descendiente de Judá.'

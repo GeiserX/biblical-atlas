@@ -1,0 +1,20 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hezir-cabeza-del-pueblo
+name: Hezir
+names:
+- name: Hezir
+perspicacia: 1200002013#2
+summary: Uno de los jefes del pueblo, o su descendiente, que en 455 a.e.c. apoyó el compromiso de ser leales a Jehová.
+reason: Perspicacia «Hezir», núm. 2; Ne 10:20.
+sources:
+- it-hezir
+- nehemias-10
+links:
+- title: 'Perspicacia: «Hezir»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hezir/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- hezir-de-tiempos-de-david
+disambiguation: Hezir, cabeza del pueblo en la lista de Ne 10:20 (Perspicacia «Hezir», núm. 2).

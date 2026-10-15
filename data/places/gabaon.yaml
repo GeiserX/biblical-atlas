@@ -38,6 +38,7 @@ sources:
 - 1-cronicas-16
 - 1-cronicas-21
 - 2-cronicas-1
+- nehemias-7
 links:
 - title: 'Perspicacia: «Gabaón»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Gaba%C3%B3n/
@@ -55,5 +56,5 @@ history:
 - date: '2026-09-29'
   change: La razón cita ahora el apartado de Perspicacia sobre Josué y los capítulos 9 y 10.
   source: josue-9
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified

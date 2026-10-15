@@ -1,0 +1,27 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: joed
+name: Joed
+names:
+- name: Joed
+perspicacia: '1200002480'
+summary: Benjamita del linaje de Salú, que vivía en Jerusalén después del destierro.
+reason: Perspicacia «Joed»; Ne 11:7.
+sources:
+- it-joed
+- nehemias-11
+links:
+- title: 'Perspicacia: «Joed»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Joed/
+  type: perspicacia
+relations:
+- type: kin
+  person: pedaya-hijo-de-colaya
+  word: father
+  inferred: false
+  sources:
+  - nehemias-11
+  reason: 'Ne 11:7: Joed, hijo de Pedaya.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified

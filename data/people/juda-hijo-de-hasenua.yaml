@@ -1,0 +1,44 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: juda-hijo-de-hasenua
+name: Judá
+names:
+- name: Judá
+perspicacia: 1200002538#7
+summary: Benjamita, hijo de Hasenuá, que trabajaba en Jerusalén después del destierro como segundo al mando de la ciudad.
+reason: Perspicacia «Judá», núm. 7; Ne 11:9.
+sources:
+- it-juda
+- nehemias-11
+links:
+- title: 'Perspicacia: «Judá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jud%C3%A1/
+  type: perspicacia
+relations:
+- type: kin
+  person: hasenua-padre-de-juda
+  word: father
+  inferred: false
+  sources:
+  - nehemias-11
+  - it-hasenua
+  reason: 'Ne 11:9: Judá, hijo de Hasenuá. Perspicacia «Hasenuá», núm. 2, lo da como padre o antecesor.'
+  checked_on: '2026-10-14'
+  status: verified
+- type: lived_in
+  place: jerusalen
+  inferred: false
+  sources:
+  - nehemias-11
+  reason: 'Ne 11:9: era el segundo al mando en la ciudad.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- hodavias-levita
+- juda-de-la-procesion-del-muro
+- juda-hijo-de-jacob
+- juda-levita-de-tiempos-de-esdras
+- juda-levita-de-zorobabel
+- juda-musico-de-la-procesion
+disambiguation: Judá, benjamita, segundo al mando en Jerusalén (Ne 11:9) (Perspicacia «Judá», núm. 7).

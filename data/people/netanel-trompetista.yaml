@@ -14,6 +14,8 @@ distinct_from:
 - netanel-levita-de-josias
 - netanel-principe-de-jehosafat
 - netanel-descendiente-de-pasjur
+- netanel-de-la-casa-de-jedaya
+- netanel-musico-de-la-procesion
 summary: Sacerdote que tocó la trompeta delante del Arca en la procesión que la subió a Jerusalén.
 reason: Perspicacia «Netanel», núm. 4; 1Cr 15:24.
 sources:
@@ -32,5 +34,5 @@ relations:
   reason: 1Cr 15:24 lo cuenta entre los sacerdotes que tocaban las trompetas delante del Arca.
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified

@@ -1,0 +1,37 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hilquias-familia-sacerdotal
+name: Hilquías
+names:
+- name: Hilquías
+perspicacia: 1200002026#9
+summary: Nombre de una casa paterna de sacerdotes de días del gobernador Nehemías, encabezada por Hasabías.
+reason: Perspicacia «Hilquías», núm. 9; Ne 12:12, 21, 26.
+sources:
+- it-hilquias
+- nehemias-12
+links:
+- title: 'Perspicacia: «Hilquías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hilqu%C3%ADas/
+  type: perspicacia
+relations:
+- type: holds_office
+  office: priest
+  inferred: true
+  sources:
+  - nehemias-12
+  reason: 'Ne 12:12: su casa paterna era de sacerdotes; quien la encabezaba en días de Joiaquim era sacerdote.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- hilquias-hijo-de-amzi
+- hilquias-hijo-de-hosa
+- hilquias-hijo-de-salum
+- hilquias-junto-a-esdras
+- hilquias-padre-de-eliaquim
+- hilquias-padre-de-guemarias
+- hilquias-padre-de-jeremias
+- hilquias-sacerdote-de-zorobabel
+disambiguation: 'Hilquías núm. 9 de Perspicacia: la casa sacerdotal de Ne 12:21; no los demás Hilquías que registra Perspicacia
+  «Hilquías».'

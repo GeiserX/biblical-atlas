@@ -1,0 +1,27 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: pedaya-junto-a-esdras
+name: Pedaya
+names:
+- name: Pedaya
+perspicacia: 1200003414#6
+disambiguation: El Pedaya que acompañó a Esdras en la lectura de la Ley (Ne 8:4); no el manasita, el de Rumá ni el padre de
+  Zorobabel.
+distinct_from:
+- pedaya-hijo-de-joaquin
+- pedaya-padre-de-joel
+- pedaya-padre-de-zebida
+- pedaya-descendiente-de-paros
+- pedaya-hijo-de-colaya
+- pedaya-encargado-de-los-almacenes
+summary: Israelita de después del destierro, probablemente sacerdote, que estuvo a la izquierda de Esdras mientras se leía
+  la Ley de Jehová al pueblo.
+reason: Perspicacia «Pedaya», núm. 6; Ne 8:4.
+sources:
+- it-pedaya
+- nehemias-8
+links:
+- title: 'Perspicacia: «Pedaya»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Pedaya/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified

@@ -3,6 +3,10 @@ id: mica-hijo-de-zicri
 name: Micá
 names:
 - name: Micá
+- name: Miqueas
+  note: Así lo llama Ne 11:17 (Perspicacia «Miqueas», núm. 6).
+- name: Micaya
+  note: Así lo llama Ne 12:35; Perspicacia «Micaya», núm. 6, dice que también se le llama Micá.
 perspicacia: 1200003031#3
 summary: Levita descendiente de Asaf, hijo de Zicrí y padre de Matanías, que vivió después del destierro. Otras listas lo
   llaman Miqueas y Micaya.
@@ -10,6 +14,9 @@ reason: Perspicacia «Micá», núm. 3; 1Cr 9:15.
 sources:
 - it-mica
 - 1-cronicas-9
+- nehemias-11
+- nehemias-12
+- it-micaya
 links:
 - title: 'Perspicacia: «Micá»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Mic%C3%A1/
@@ -21,11 +28,38 @@ relations:
   inferred: false
   sources:
   - 1-cronicas-9
+  - nehemias-11
+  - it-zabdi
+  - nehemias-12
+  - it-mica
   reason: '1Cr 9:15: Micá, hijo de Zicrí.'
-  checked_on: '2026-10-12'
+  checked_on: '2026-10-14'
   status: verified
-checked_on: '2026-10-12'
+- type: kin
+  person: zacur-hijo-de-asaf
+  word: ancestor
+  inferred: false
+  sources:
+  - nehemias-12
+  - it-zacur
+  - it-zicri
+  reason: 'Ne 12:35: Micaya, hijo de Zacur, hijo de Asaf. Perspicacia «Micá», núm. 3, y «Zacur», núm. 4: Zacur sería otro
+    nombre de Zicrí, su padre, y el Zacur hijo de Asaf vivió en días de David.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
 status: verified
 distinct_from:
 - mica-hijo-de-mefiboset
+- mica-levita-firmante
+- micaya-padre-de-acbor
+- miqueas-hijo-de-simei
+- miqueas-profeta
+- miqueas-uzielita
+- miqueas-de-efrain
+- maaca-hija-de-uriel
+- micaya-hijo-de-guemarias
+- micaya-hijo-de-imla
+- micaya-principe-de-jehosafat
+- micaya-trompetista-de-la-inauguracion
 disambiguation: 'Micá núm. 3 de Perspicacia: levita de la línea de Asaf, hijo de Zicrí. No el hijo de Mefibóset.'

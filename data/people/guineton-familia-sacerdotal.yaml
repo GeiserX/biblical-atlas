@@ -1,0 +1,31 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: guineton-familia-sacerdotal
+name: Guinetón
+names:
+- name: Guinetón
+perspicacia: 1200001709#1
+summary: Casa paterna de sacerdotes que encabezaba Mesulam en la generación de Joiaquim y de Nehemías. Perspicacia ve posible
+  que se refiera al Guinetói de Ne 12:4.
+reason: Perspicacia «Guinetón», núm. 1; Ne 12:12, 16, 26.
+sources:
+- it-guineton
+- nehemias-12
+links:
+- title: 'Perspicacia: «Guinetón»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Guinet%C3%B3n/
+  type: perspicacia
+relations:
+- type: holds_office
+  office: priest
+  inferred: true
+  sources:
+  - nehemias-12
+  reason: 'Ne 12:12: su casa paterna era de sacerdotes; quien la encabezaba en días de Joiaquim era sacerdote.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- guineton-sacerdote-firmante
+disambiguation: 'Guinetón núm. 1 de Perspicacia: la casa sacerdotal de Ne 12:16; no los demás Guinetón que registra Perspicacia
+  «Guinetón».'

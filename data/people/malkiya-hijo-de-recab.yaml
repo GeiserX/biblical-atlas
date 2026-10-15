@@ -1,0 +1,46 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: malkiya-hijo-de-recab
+name: Malkiya
+names:
+- name: Malkiya
+perspicacia: 1200002866#9
+disambiguation: El hijo de Recab, príncipe de Bet-Hakerem (Ne 3:14), núm. 9 de Perspicacia «Malkiya»; no los otros Malkiya
+  que numera.
+distinct_from:
+- malkias-padre-de-pasjur
+- malkiya-de-tiempos-de-david
+- malkiya-descendiente-de-harim
+- malkiya-descendiente-de-paros-1
+- malkiya-descendiente-de-paros-2
+- malkiya-hijo-de-etni
+- malkiya-hijo-de-harim
+- malkiya-hijo-del-rey
+- malkiya-orfebre
+- malkiya-junto-a-esdras
+- malkiya-sacerdote-firmante
+- malkiya-sacerdote-de-la-inauguracion
+summary: Hijo de Recab. Como príncipe del distrito de Bet-Hakerem rehízo la Puerta de los Montones de Ceniza con sus hojas,
+  cerrojos y barras.
+reason: Perspicacia «Malkiya», núm. 9; Ne 3:14.
+sources:
+- it-malkiya
+- nehemias-3
+- it-recab
+links:
+- title: 'Perspicacia: «Malkiya»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Malkiya/
+  type: perspicacia
+relations:
+- type: kin
+  person: recab-padre-de-malkiya
+  word: ancestor
+  inferred: false
+  sources:
+  - nehemias-3
+  - it-malkiya
+  - it-recab
+  reason: 'Ne 3:14: Malkiya hijo de Recab; Perspicacia «Recab», núm. 3, lo da como padre o antepasado.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified

@@ -1,0 +1,20 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: guilalai
+name: Guilalái
+names:
+- name: Guilalái
+- name: Guilalai
+  note: Grafía del título de Perspicacia.
+perspicacia: '1200001692'
+summary: Músico levita de la procesión con que Nehemías inauguró la muralla reconstruida, en 455 a.e.c.
+reason: Perspicacia «Guilalai»; Ne 12:27, 31, 36.
+sources:
+- it-guilalai
+- nehemias-12
+links:
+- title: 'Perspicacia: «Guilalai»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Guilalai/
+  type: perspicacia
+relations: []
+checked_on: '2026-10-14'
+status: verified

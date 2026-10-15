@@ -32,7 +32,7 @@ relations:
   reason: '1Cr 9:3, 8, 9: jefe de casa paterna de los benjamitas que vivían en Jerusalén.'
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified
 distinct_from:
 - mesulam-abuelo-de-safan
@@ -46,5 +46,14 @@ distinct_from:
 - mesulam-enviado-a-casifia
 - mesulam-descendiente-de-bani
 - mesulam-levita-de-tiempos-de-esdras
+- mesulam-hijo-de-berekias
+- mesulam-hijo-de-besodeya
+- mesulam-junto-a-esdras
+- mesulam-cabeza-del-pueblo
+- mesulam-sacerdote-firmante
+- mesulam-de-la-casa-de-esdras
+- mesulam-de-la-casa-de-guineton
+- mesulam-de-la-procesion-del-muro
+- mesulam-portero
 disambiguation: 'Mesulam núm. 8 de Perspicacia: benjamita hijo de Sefatías que vivió en Jerusalén tras el destierro. No el
   padre de Salú ni los Mesulam sacerdotes.'
