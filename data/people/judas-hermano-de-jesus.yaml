@@ -35,6 +35,7 @@ sources:
 - juan-7
 - jy-cap-65
 - si-judas
+- it-anciano
 relations:
 - type: kin
   person: maria-madre-de-jesus
@@ -67,6 +68,17 @@ relations:
   reason: La nota de Mt 13:54 dice que de Nazaret era la familia cercana de Jesús; 13:56 pone allí a sus hermanas.
   checked_on: '2026-09-29'
   status: verified
+- type: holds_office
+  office: elder
+  inferred: true
+  sources:
+  - it-anciano
+  - it-judas
+  - judas-1
+  reason: Perspicacia «Anciano» cuenta entre los ancianos que supervisaban a otros ancianos a los discípulos Santiago y Judas,
+    que mandaron cartas a las congregaciones. «Judas», núm. 5, lo da como el escritor de la carta (Jud 1).
+  checked_on: '2026-10-15'
+  status: verified
 links:
 - title: 'Perspicacia: «Judas»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Judas/
@@ -80,7 +92,10 @@ history:
   change: 'La relación con Jesús pasa a deducido: false, porque Mt 13:55 lo dice. Lo que deduce Perspicacia es que ese Judas
     escribió la carta.'
   source: mateo-13
-checked_on: '2026-10-14'
+- date: '2026-10-15'
+  change: 'Recibe el cargo elder: Perspicacia «Anciano» lo nombra junto a Santiago, con la misma razón que a su hermano.'
+  source: it-anciano
+checked_on: '2026-10-15'
 status: verified
 not_claimed:
 - 'Que Judas fuera apóstol: se llama esclavo de Jesucristo y habla de los apóstoles como de otros (Jud 1, 17, 18; Perspicacia

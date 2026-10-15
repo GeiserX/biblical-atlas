@@ -13,3 +13,17 @@ w08-cartas-de-juan-y-judas:
   level: 1
   published: 2008
   checked_on: '2026-10-14'
+it-anciano:
+  title: Anciano
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Anciano/
+  level: 1
+  published: null
+  checked_on: '2026-10-15'
+it-apostol:
+  title: Apóstol
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ap%C3%B3stol/
+  level: 1
+  published: null
+  checked_on: '2026-10-15'

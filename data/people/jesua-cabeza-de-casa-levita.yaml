@@ -27,17 +27,6 @@ relations:
   reason: 'Esd 2:40: los hijos de Jesúa y de Cadmiel son de los hijos de Hodavías.'
   checked_on: '2026-10-14'
   status: verified
-- type: kin
-  person: cadmiel
-  word: ancestor
-  inferred: true
-  sources:
-  - nehemias-12
-  - it-jesua
-  reason: Ne 12:24 lo llama Jesúa hijo de Cadmiel; Perspicacia «Jesúa», núm. 5, lo da por hijo de Azanías, así que leemos
-    «hijo» como descendiente. Pendiente de confirmar.
-  checked_on: '2026-10-14'
-  status: pending
 - type: same_as
   person: jesua-padre-de-ezer
   certainty: possible
@@ -60,7 +49,23 @@ relations:
     otro con el mismo nombre.'
   checked_on: '2026-10-14'
   status: verified
-checked_on: '2026-10-14'
+- type: same_as
+  person: jesua-hijo-de-cadmiel
+  certainty: possible
+  inferred: true
+  sources:
+  - it-jesua
+  - nehemias-12
+  reason: 'Perspicacia «Jesúa», núm. 5, pone el Jesúa de Ne 12:24 dentro de esta entrada: probablemente es el firmante hijo
+    de Azanías, que fue un representante de esta casa o quizá otro con el mismo nombre.'
+  checked_on: '2026-10-15'
+  status: verified
+history:
+- date: '2026-10-15'
+  change: 'Sale la relación kin ancestor con cadmiel: pasa a jesua-hijo-de-cadmiel, ficha propia del Jesúa de Ne 12:24,
+    que Perspicacia «Jesúa», núm. 5, da como probablemente el firmante hijo de Azanías.'
+  source: nehemias-12
+checked_on: '2026-10-15'
 status: verified
 distinct_from:
 - jesua-ayudante-de-core

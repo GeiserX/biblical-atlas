@@ -5,12 +5,15 @@ names:
 - name: Baní
 - name: Binuí
 perspicacia: 1200000553#4
-summary: Cabeza de una familia de la que más de 600 personas volvieron con Zorobabel. La lista de Nehemías lo llama Binuí.
-reason: Perspicacia «Baní», núm. 4; Esd 2:10.
+summary: Cabeza de una familia de la que más de 600 personas volvieron con Zorobabel; otros 160 varones de su casa subieron
+  con Esdras guiados por Selomit. La lista de Nehemías lo llama Binuí.
+reason: Perspicacia «Baní», núm. 4; Esd 2:10; Esd 8:10 y su nota en la TNM de 1987.
 sources:
 - it-bani
 - esdras-2
 - nehemias-7
+- esdras-8
+- tnm-1987-esdras-8
 links:
 - title: 'Perspicacia: «Baní»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ban%C3%AD/
@@ -26,7 +29,12 @@ relations:
   reason: Perspicacia «Baní», núm. 3, ve posible que aquel cabeza de familia sea este de Esd 2:10.
   checked_on: '2026-10-13'
   status: verified
-checked_on: '2026-10-14'
+history:
+- date: '2026-10-15'
+  change: El resumen añade a los 160 varones de su casa que subieron con Esdras; la nota de Esd 8:10 en la TNM de 1987
+    remite a Esd 2:10.
+  source: tnm-1987-esdras-8
+checked_on: '2026-10-15'
 status: verified
 distinct_from:
 - bani-el-gadita
@@ -42,5 +50,5 @@ distinct_from:
 - bani-levita-firmante
 - binui-levita-firmante
 - bani-hijo-de-hasabias
-disambiguation: 'Baní núm. 4 de Perspicacia, Binuí en Nehemías: cabeza de la familia de Esd 2:10. Perspicacia ve posible que
-  sea el Baní descendiente de Pérez.'
+disambiguation: 'Baní núm. 4 de Perspicacia, Binuí en Nehemías: cabeza de la familia de Esd 2:10 y 8:10. Perspicacia ve
+  posible que sea el Baní descendiente de Pérez.'

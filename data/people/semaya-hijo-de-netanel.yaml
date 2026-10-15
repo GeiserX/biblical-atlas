@@ -39,6 +39,7 @@ reason: Perspicacia «Semaya», núm. 4; 1Cr 24:6.
 sources:
 - it-semaya
 - 1-cronicas-24
+- it-secretario
 links:
 - title: 'Perspicacia: «Semaya»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Semaya/
@@ -54,5 +55,16 @@ relations:
   reason: 1Cr 24:6 lo llama Semaya hijo de Netanel.
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-14'
+- type: holds_office
+  office: secretary
+  inferred: false
+  sources:
+  - 1-cronicas-24
+  - it-semaya
+  - it-secretario
+  reason: '1Cr 24:6 lo llama el secretario de los levitas; Perspicacia «Secretario» cuenta ese puesto junto al secretario del
+    rey y al del jefe del ejército, y «Semaya», núm. 4, lo presenta así.'
+  checked_on: '2026-10-15'
+  status: verified
+checked_on: '2026-10-15'
 status: verified
