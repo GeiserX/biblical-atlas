@@ -185,7 +185,6 @@ test('today\'s names in the built data are exactly these', () => {
     jatir: 'Khirbet ʽAttir (Horvat Yattir)',
     jehud: 'el-Yehudiyeh (Yehud)',
     jerico: 'Tell es-Sultan (Tel Yeriho)',
-    jerusalen: 'Yerushalayim',
     jezreel: 'Zerʽin (Tel Yizreʽel)',
     jocneam: 'Tell Qeimun (Tel Yoqneʽam)',
     jogbeha: 'el-Jubeihat',

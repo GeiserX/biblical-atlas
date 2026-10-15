@@ -176,9 +176,6 @@ names:
 - name: Puerta de la Guardia
   note: Puerta donde se detuvo el segundo coro antes de bajar al templo (Ne 12:39, 40); Perspicacia «Puerta» cree que es la
     Puerta de la Inspección del muro oriental.
-- name: Yerushalayim
-  modern: true
-  note: Nombre que, según Perspicacia, usan los mapas modernos de Israel; en árabe sigue llamándose al-Quds, «la Ciudad Santa».
 type: city
 lat: 31.776667
 lon: 35.234167
