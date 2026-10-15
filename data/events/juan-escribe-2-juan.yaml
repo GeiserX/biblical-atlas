@@ -1,0 +1,50 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: juan-escribe-2-juan
+title: Juan escribe su segunda carta
+date:
+  from: 98
+  to: 98
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 98 e.c.
+narrative_order:
+  series: hechos
+  order: 2981
+places:
+- efeso
+people:
+- juan-apostol
+present:
+- juan-apostol
+type: writing
+roles:
+  juan-apostol: wrote
+passages:
+- 2Jn 1-3
+- 2Jn 5
+- 2Jn 12
+summary: 'Ya muy mayor, el apóstol Juan, que se presenta como «el anciano», escribe probablemente desde Éfeso a la señora
+  escogida y sus hijos: que sigan en la verdad y el amor y no acojan a quien niega a Cristo.'
+reason: 'Tabla de los libros: Éfeso o cerca, c. 98. Estudio 3, párr. 29: libre ya de Patmos, escribió el Evangelio y tres
+  cartas. «Toda Escritura», libro 63, párr. 2, lo da por escritor; Perspicacia «Juan, Cartas de», probablemente Éfeso.'
+note: 'Pasajes: el saludo y cada versículo donde habla de escribir. Orden 2981 de hechos, nuestro, tras 1 Juan (2980). «Toda
+  Escritura», libro 63, párr. 2, cita la conjetura ajena de que es posterior; Perspicacia fecha las tres juntas.'
+sources:
+- 2-juan-1
+- tnm-tabla
+- si-3
+- si-2-juan
+- it-juan-cartas
+- w08-cartas-de-juan-y-judas
+links:
+- title: 'Perspicacia: «Juan, Cartas de»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Juan-Cartas-de/
+  type: perspicacia
+- title: 2 Juan 1 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-juan/1/
+  type: bible
+search: Juan escribe segunda carta Éfeso señora escogida
+checked_on: '2026-10-14'
+status: verified

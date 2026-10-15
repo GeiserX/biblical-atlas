@@ -1,0 +1,22 @@
+# biblical-atlas: fuentes de la cobertura de 2-juan. Esquema en docs/investigacion/README.md.
+si-2-juan:
+  title: 'Libro bíblico número 63: 2 Juan'
+  work: “Toda Escritura es inspirada de Dios y provechosa”
+  url: https://www.jw.org/es/biblioteca/libros/Toda-Escritura-es-inspirada-de-Dios-y-provechosa/Libro-b%C3%ADblico-n%C3%BAmero-63-2-Juan/
+  level: 1
+  published: null
+  checked_on: '2026-10-14'
+w08-cartas-de-juan-y-judas:
+  title: Puntos sobresalientes de las cartas de Juan y de Judas
+  work: La Atalaya (15 de diciembre de 2008)
+  url: https://www.jw.org/es/biblioteca/revistas/w20081215/Puntos-sobresalientes-de-las-cartas-de-Juan-y-de-Judas/
+  level: 1
+  published: 2008
+  checked_on: '2026-10-14'
+w24-sacados-de-la-congregacion:
+  title: Cómo se ayuda a los que han sido sacados de la congregación
+  work: La Atalaya (edición de estudio, agosto de 2024)
+  url: https://www.jw.org/es/biblioteca/revistas/atalaya-estudio-agosto-2024/C%C3%B3mo-se-ayuda-a-los-que-han-sido-sacados-de-la-congregaci%C3%B3n/
+  level: 1
+  published: 2024
+  checked_on: '2026-10-14'

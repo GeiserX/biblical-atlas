@@ -1,0 +1,13 @@
+# biblical-atlas: cobertura de un libro. Formato en data/coverage/README.md.
+book: 2-juan
+chapters:
+  1:
+    status: complete
+    reviewed_on: 2026-10-14
+    note: "Carta breve del anciano a la señora escogida: seguir en la verdad y el amor, y no acoger a quien niega que Jesucristo vino en la carne."
+    spans:
+    - {v: 1-3, type: letter, entities: [letter:2-juan, event:juan-escribe-2-juan, person:juan-apostol, relation:juan-apostol/lived_in/efeso], mentions: [person:jesus], note: "«El anciano», el apóstol Juan según Perspicacia y «Toda Escritura», saluda a la señora escogida y sus hijos. Las fuentes no deciden si es una mujer, quizá llamada Kiria, o una congregación."}
+    - {v: 4-6, type: letter, entities: [event:juan-escribe-2-juan], note: "Le alegra saber que algunos hijos de ella siguen la verdad. Le pide que se amen, un mandato de siempre; las referencias marginales llevan a Jn 13:34 y 15:12, sin nombrar a nadie; amar es obedecer."}
+    - {v: "7", type: letter, mentions: [person:jesus, event:bautismo-de-jesus], note: "Muchos impostores niegan que Jesucristo vino como humano: ese es el anticristo. La Atalaya de 2008 lo refiere a que vino en la carne y fue ungido; quizá negaban que hubiera vivido o recibido esa unción."}
+    - {v: 8-11, type: letter, mentions: [person:jesus], note: "Cuidado con perder la recompensa. Quien no se queda en la enseñanza del Cristo no tiene a Dios: no se le recibe ni se le saluda. La Atalaya de 2024 lo aplica a apóstatas y a quien promueve el pecado."}
+    - {v: 12-13, type: letter, entities: [event:juan-escribe-2-juan], note: "Prefiere no seguir escribiendo en papel con tinta: espera visitarlos y hablarles en persona para que su alegría sea plena. Saludan los hijos de su hermana escogida, otra congregación si la señora es una, según Perspicacia."}
