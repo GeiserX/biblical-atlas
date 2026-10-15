@@ -1,0 +1,31 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: zerahias-padre-de-elieho-enai
+name: Zerahías
+names:
+- name: Zerahías
+perspicacia: 1200004705#2
+disambiguation: El padre de Elieho-Enái (Esd 8:4); no el sacerdote antepasado de Esdras, hijo de Uzí.
+distinct_from:
+- zerahias-hijo-de-uzi
+summary: Padre de Elieho-Enái. Su hijo dirigió en el viaje de Esdras, en 468 a.e.c., a 200 varones de la casa de Pahat-Moab.
+reason: Perspicacia «Zerahías», núm. 2; Esd 8:4.
+sources:
+- it-zerahias
+- esdras-8
+links:
+- title: 'Perspicacia: «Zerahías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zerah%C3%ADas/
+  type: perspicacia
+relations:
+- type: kin
+  person: pahat-moab
+  word: ancestor
+  inferred: true
+  sources:
+  - esdras-8
+  - it-zerahias
+  reason: Esd 8:4 pone a su hijo entre los hijos de Pahat-Moab; Perspicacia «Zerahías», núm. 2, lo liga a esa casa.
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified

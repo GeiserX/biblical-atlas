@@ -25,8 +25,11 @@ relations:
   reason: '2Sa 23:36: uno de los treinta guerreros de David.'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified
 distinct_from:
 - bani-hijo-de-semer
 - bani-descendiente-de-perez
+- bani-cabeza-de-familia
+- bani-antepasado-de-doce-repatriados
+- bani-antepasado-de-seis-repatriados

@@ -57,5 +57,9 @@ relations:
     núm. 2, hace a Acbor con mucha probabilidad bisabuelo del rey Joaquín.
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified
+distinct_from:
+- elnatan-maestro
+- elnatan-primer-jefe
+- elnatan-segundo-jefe

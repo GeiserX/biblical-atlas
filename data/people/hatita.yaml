@@ -1,0 +1,17 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hatita
+name: Hatitá
+names:
+- name: Hatitá
+perspicacia: '1200001916'
+summary: De él descendía una familia de porteros levitas; una parte salió del destierro en el grupo de Zorobabel (537 a.e.c.).
+reason: Perspicacia «Hatitá»; Esd 2:42.
+sources:
+- it-hatita
+- esdras-2
+links:
+- title: 'Perspicacia: «Hatitá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hatit%C3%A1/
+  type: perspicacia
+checked_on: '2026-10-13'
+status: verified

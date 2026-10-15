@@ -31,6 +31,9 @@ distinct_from:
 - simei-hijo-de-zacur
 - simei-padre-de-jaquim
 - simei-partidario-de-david
+- simei-descendiente-de-binui
+- simei-descendiente-de-hasum
+- simei-levita-de-tiempos-de-esdras
 relations:
 - type: kin
   person: heman-hijo-de-joel

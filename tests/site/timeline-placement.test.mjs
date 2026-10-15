@@ -84,6 +84,12 @@ const EXPECTED_CHANGES = {
   // Daniel gave the last vision a series (daniel) and the range 536-535 of «Profecías de Daniel»: the last of its series,
   // its window differs from its date only by the cut at its end (3): [-535, -533.001] before, [-535, -533] now.
   'evento:vision-del-tercer-ano-de-ciro': 3,
+  // 1 Pedro put pedro-escribe-1-pedro (c. 62-64) at 2854 of hechos: with it in the series, the letter of Santiago (until 62)
+  // keeps its whole year and differs from its date only by the cut at its end (3): [62, 62.499] before, [62, 62.999] now.
+  'carta:santiago': 3,
+  // Esdras gave the ban on the temple work (522) a series (esdras, 4007): placed with its year, it differs from its date
+  // only by the cut at its end (3): [-521, -520.001] before, [-521, -520] now.
+  'evento:obra-del-templo-prohibida-522': 3,
 };
 // Deaths named by the id of their event, not by the rule of the code: the person dies in that event.
 const DEATHS = {

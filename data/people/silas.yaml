@@ -6,9 +6,10 @@ names:
   note: Forma que usa Lucas en Hechos.
 - name: Silvano
   note: Forma latina que usan Pablo y Pedro en sus cartas.
-summary: Profeta de la congregación de Jerusalén, al parecer ciudadano romano. Compañero de Pablo en el segundo
-  viaje.
-reason: Perspicacia «Silas, Silvano» explica los dos nombres y su papel en el segundo viaje (Hch 15:40).
+summary: Profeta de la congregación de Jerusalén, al parecer ciudadano romano. Compañero de Pablo en el segundo viaje. Es
+  el Silvano por medio del cual Pedro escribió su primera carta, hacia 62-64.
+reason: Perspicacia «Silas, Silvano» explica los dos nombres y su papel en el segundo viaje (Hch 15:40). La nota de 1Pe 5:12
+  lo identifica con el Silvano de Pedro; Perspicacia ve posible que fuera su amanuense.
 sources:
 - it-silas
 - hch-15
@@ -21,6 +22,7 @@ sources:
 - 1-tesalonicenses-1
 - 1-tesalonicenses-2
 - 2-tesalonicenses-1
+- 1-pedro-5
 links:
 - title: 'Perspicacia: «Silas, Silvano»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Silas-Silvano/
@@ -29,7 +31,14 @@ links:
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/hechos/15/
   type: bible
 perspicacia: '1200004118'
-checked_on: '2026-10-13'
+history:
+- date: '2026-10-14'
+  change: El resumen no decía nada de 1 Pedro. La nota de 1Pe 5:12 llama Silas al Silvano por medio del cual escribió Pedro.
+  source: 1-pedro-5
+- date: '2026-10-14'
+  change: 'La razón cita ahora 1Pe 5:12: su nota da a Silvano por Silas, y Perspicacia solo ve posible que fuera el amanuense.'
+  source: 1-pedro-5
+checked_on: '2026-10-14'
 status: verified
 relations:
 - type: lived_in

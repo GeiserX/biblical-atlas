@@ -20,10 +20,10 @@ people:
 - ageo
 - zacarias-profeta
 passages:
-- Esd 6:13-22
+- Esd 6:14, 15
 - Zac 4:9, 10
-summary: El templo reconstruido se terminó en el sexto año de Darío I, con el apoyo de los profetas y del rey. Los judíos
-  lo inauguraron y celebraron la Pascua; estuvo en pie casi quinientos años.
+summary: El templo reconstruido se terminó el 3 de adar del sexto año de Darío I, con el ánimo de los profetas Ageo y Zacarías
+  y el apoyo del rey. Estuvo en pie casi quinientos años.
 reason: Perspicacia «Templo», apartado «El templo edificado por Zorobabel», y «Darío», núm. 2; Esd 6:15 da el día 3 de adar.
   Estudio 3, tabla de sucesos.
 sources:
@@ -40,5 +40,16 @@ links:
 - title: Esdras 6 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/esdras/6/
   type: bible
-checked_on: '2026-09-29'
+history:
+- date: '2026-10-13'
+  change: Esd 6:13 pasa a dario-manda-apoyar-la-obra-del-templo; la inauguración (Esd 6:16-18) y la Pascua (6:19-22) son escenas
+    aparte, con sus propios sucesos.
+  source: esdras-6
+- date: '2026-10-13'
+  change: 'La inauguración y la Pascua salen del resumen: ahora son inauguracion-del-segundo-templo y pascua-de-515.'
+  source: esdras-6
+narrative_order:
+  series: esdras
+  order: 6014
+checked_on: '2026-10-13'
 status: verified

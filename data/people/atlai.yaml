@@ -1,0 +1,31 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: atlai
+name: Atlái
+names:
+- name: Atlái
+- name: Atlai
+  note: Grafía de Perspicacia.
+perspicacia: '1200000460'
+summary: Israelita de los hijos de Bebái. Estaba casado con extranjeras y, cuando Esdras corrigió esos matrimonios (468-467
+  a.e.c.), las despidió junto con sus hijos.
+reason: Perspicacia «Atlai»; Esd 10:28, 44.
+sources:
+- it-atlai
+- esdras-10
+links:
+- title: 'Perspicacia: «Atlai»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Atlai/
+  type: perspicacia
+relations:
+- type: kin
+  person: bebai-cabeza-de-familia
+  word: ancestor
+  sources:
+  - esdras-10
+  - it-atlai
+  reason: Esd 10:28 lo pone entre los hijos de Bebái; Perspicacia «Atlai».
+  inferred: false
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified

@@ -9,6 +9,7 @@ perspicacia: 1200000330#1
 disambiguation: Ará hijo de Ulá; no Ará hijo de Jéter, también aserita, ni el cabeza de familia que volvió de Babilonia.
 distinct_from:
 - ara-hijo-de-jeter
+- ara-antepasado-de-secanias
 summary: Aserita, hijo de Ulá.
 reason: Perspicacia «Arah», núm. 1; 1Cr 7:30, 39.
 sources:
@@ -28,5 +29,5 @@ relations:
   reason: 1Cr 7:39 lo cuenta entre los hijos de Ulá.
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified

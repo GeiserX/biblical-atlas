@@ -1,0 +1,21 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: guidel-siervo-de-salomon
+name: Guidel
+names:
+- name: Guidel
+perspicacia: 1200001684#2
+summary: Antepasado de una de las familias descendientes de siervos de Salomón; esa familia volvió del destierro con el grupo
+  de Zorobabel.
+reason: Perspicacia «Guidel», núm. 2; Esd 2:56.
+sources:
+- it-guidel
+- esdras-2
+links:
+- title: 'Perspicacia: «Guidel»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Guidel/
+  type: perspicacia
+checked_on: '2026-10-13'
+status: verified
+distinct_from:
+- guidel-netineo
+disambiguation: 'Guidel núm. 2 de Perspicacia: el de los siervos de Salomón (Esd 2:56), no el de los netineos (Esd 2:47).'

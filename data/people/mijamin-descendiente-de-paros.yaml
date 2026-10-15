@@ -1,0 +1,32 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: mijamin-descendiente-de-paros
+name: Mijamín
+names:
+- name: Mijamín
+perspicacia: 1200003047#3
+summary: Israelita de los hijos de Parós. Estaba casado con extranjeras y, cuando Esdras corrigió esos matrimonios (468-467
+  a.e.c.), las despidió junto con sus hijos.
+reason: Perspicacia «Mijamín», núm. 3; Esd 10:25, 44.
+sources:
+- it-mijamin
+- esdras-10
+links:
+- title: 'Perspicacia: «Mijamín»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Mijam%C3%ADn/
+  type: perspicacia
+relations:
+- type: kin
+  person: paros
+  word: ancestor
+  sources:
+  - esdras-10
+  - it-mijamin
+  reason: Esd 10:25 lo pone entre los hijos de Parós; Perspicacia «Mijamín», núm. 3.
+  inferred: false
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified
+disambiguation: El de los hijos de Parós de Esd 10:25; no los demás Mijamín que registra Perspicacia.
+distinct_from:
+- mijamin-de-tiempos-de-david

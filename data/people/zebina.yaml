@@ -1,0 +1,19 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: zebina
+name: Zebiná
+names:
+- name: Zebiná
+perspicacia: '1200004674'
+summary: Israelita de los hijos de Nebo. Estaba casado con extranjeras y, cuando Esdras corrigió esos matrimonios (468-467
+  a.e.c.), las despidió junto con sus hijos.
+reason: Perspicacia «Zebiná»; Esd 10:43, 44.
+sources:
+- it-zebina
+- esdras-10
+links:
+- title: 'Perspicacia: «Zebiná»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zebin%C3%A1/
+  type: perspicacia
+relations: []
+checked_on: '2026-10-13'
+status: verified

@@ -1,0 +1,22 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: petahias-levita-de-tiempos-de-esdras
+name: Petahías
+names:
+- name: Petahías
+perspicacia: 1200003453#2
+summary: Levita de los días de Esdras. Estaba casado con extranjeras y, cuando se corrigieron esos matrimonios (468-467 a.e.c.),
+  las despidió junto con sus hijos. Perspicacia ve posible que sea el levita Petahías de los días de Nehemías.
+reason: Perspicacia «Petahías», núm. 2; Esd 10:23, 44.
+sources:
+- it-petahias
+- esdras-10
+links:
+- title: 'Perspicacia: «Petahías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Petah%C3%ADas/
+  type: perspicacia
+relations: []
+checked_on: '2026-10-13'
+status: verified
+disambiguation: El levita de Esd 10:23, de los días de Esdras; no los demás Petahías que registra Perspicacia.
+distinct_from:
+- petahias-de-tiempos-de-david

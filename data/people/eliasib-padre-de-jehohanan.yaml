@@ -1,0 +1,26 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: eliasib-padre-de-jehohanan
+name: Eliasib
+names:
+- name: Eliasib
+perspicacia: 1200001298#2
+summary: Padre del Jehohanán que tenía un cuarto en el templo, adonde se retiró Esdras a hacer duelo. Perspicacia lo trata
+  aparte del sumo sacerdote Eliasib.
+reason: Perspicacia «Eliasib», núm. 2; Esd 10:6.
+sources:
+- it-eliasib
+- esdras-10
+links:
+- title: 'Perspicacia: «Eliasib»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Eliasib/
+  type: perspicacia
+relations: []
+checked_on: '2026-10-13'
+status: verified
+disambiguation: El padre de Jehohanán (Esd 10:6); Perspicacia lo separa del sumo sacerdote Eliasib y de los demás.
+distinct_from:
+- eliasib-cantor
+- eliasib-de-tiempos-de-david
+- eliasib-descendiente-de-bani
+- eliasib-descendiente-de-zatu
+- eliasib-hijo-de-elioenai

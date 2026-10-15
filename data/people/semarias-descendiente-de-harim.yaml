@@ -1,0 +1,34 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: semarias-descendiente-de-harim
+name: Semarías
+names:
+- name: Semarías
+perspicacia: 1200004001#3
+summary: Israelita de los hijos de Harim. Estaba casado con extranjeras y, cuando Esdras corrigió esos matrimonios (468-467
+  a.e.c.), las despidió junto con sus hijos.
+reason: Perspicacia «Semarías», núm. 3; Esd 10:32, 44.
+sources:
+- it-semarias
+- esdras-10
+links:
+- title: 'Perspicacia: «Semarías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Semar%C3%ADas/
+  type: perspicacia
+relations:
+- type: kin
+  person: harim-cabeza-de-familia
+  word: ancestor
+  sources:
+  - esdras-10
+  - it-semarias
+  reason: Esd 10:32 lo pone entre los hijos de Harim; Perspicacia «Semarías», núm. 3.
+  inferred: false
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified
+disambiguation: El de los hijos de Harim de Esd 10:32; no los demás Semarías que registra Perspicacia.
+distinct_from:
+- semarias-descendiente-de-binui
+- semarias-el-benjaminita
+- semarias-hijo-de-rehoboam

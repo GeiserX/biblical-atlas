@@ -1,0 +1,37 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: adaya-descendiente-de-bani
+name: Adaya
+names:
+- name: Adaya
+perspicacia: 1200000087#7
+summary: Israelita de los hijos de Baní. Estaba casado con extranjeras y, cuando Esdras corrigió esos matrimonios (468-467
+  a.e.c.), las despidió junto con sus hijos.
+reason: Perspicacia «Adaya», núm. 7; Esd 10:29, 44.
+sources:
+- it-adaya
+- esdras-10
+links:
+- title: 'Perspicacia: «Adaya»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Adaya/
+  type: perspicacia
+relations:
+- type: kin
+  person: bani-antepasado-de-seis-repatriados
+  word: ancestor
+  sources:
+  - esdras-10
+  - it-adaya
+  reason: Esd 10:29 lo pone entre los hijos de Baní; Perspicacia «Adaya», núm. 7.
+  inferred: false
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified
+disambiguation: El de los hijos de Baní de Esd 10:29; no los demás Adaya que registra Perspicacia.
+distinct_from:
+- adaya-descendiente-de-binui
+- adaya-hijo-de-etan
+- adaya-hijo-de-jeroham
+- adaya-hijo-de-simei
+- adaya-padre-de-jedida
+- adaya-padre-de-maaseya

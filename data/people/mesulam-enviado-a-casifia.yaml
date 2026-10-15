@@ -1,0 +1,50 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: mesulam-enviado-a-casifia
+name: Mesulam
+names:
+- name: Mesulam
+perspicacia: 1200003014#13
+disambiguation: El jefe que Esdras envió a Casifía (Esd 8:16), núm. 13 de Perspicacia; no los otros Mesulam que numera.
+distinct_from:
+- mesulam-abuelo-de-safan
+- mesulam-hijo-de-abihail
+- mesulam-hijo-de-elpaal
+- mesulam-hijo-de-hodavias
+- mesulam-hijo-de-mesilemit
+- mesulam-hijo-de-sefatias
+- mesulam-hijo-de-zorobabel
+- salum-hijo-de-sadoc
+- mesulam-levita-de-josias
+- mesulam-descendiente-de-bani
+- mesulam-levita-de-tiempos-de-esdras
+summary: Jefe del pueblo acampado junto al río Ahavá en 468 a.e.c. Esdras lo mandó con otros a Casifía a traer levitas y siervos
+  del templo para el viaje.
+reason: Perspicacia «Mesulam», núm. 13; Esd 8:15-20.
+sources:
+- it-mesulam
+- esdras-8
+links:
+- title: 'Perspicacia: «Mesulam»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Mesulam/
+  type: perspicacia
+relations:
+- type: accompanies
+  person: esdras
+  date:
+    from: -467
+    to: -467
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 468 a.e.c.
+  inferred: true
+  sources:
+  - esdras-8
+  - it-mesulam
+  reason: 'Esd 8:15, 16: estaba en el campamento del Ahavá y Esdras lo envió a buscar levitas; Perspicacia lo pone entre los
+    que iban con Esdras.'
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified

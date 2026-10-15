@@ -1,0 +1,36 @@
+# biblical-atlas: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: region-al-oeste-del-eufrates
+name: Región al oeste del río Éufrates
+names:
+- name: Región al oeste del río Éufrates
+- name: Más allá del Río
+  note: Así la llaman Perspicacia «Tatenai» y «Éufrates»; también lo da la nota de Esd 4:10.
+- name: Región Transeufratina
+  note: Otra lectura que da la nota de Esd 4:10.
+type: province
+lat: 31.776667
+lon: 35.234167
+precision: zone
+coord_source: openbible:a88310a
+coord_url: https://www.openbible.info/geo/ancient/a88310a/beyond-the-river
+coord_note: OpenBible representa la provincia con el punto de Jerusalén; no marca su capital ni sus límites.
+summary: Provincia persa al oeste del Éufrates, con Samaria, Judá y Jerusalén. Bajo Darío la gobernaba Tatenái; Artajerjes
+  mandó a sus tesoreros abastecer a Esdras y le dio poder para nombrar jueces en ella.
+reason: 'Perspicacia «Éufrates» (apartado sobre la frontera), «Tatenai» y «Darío», núm. 2; Esd 4:10-20; 5:3, 6; 6:6, 8, 13;
+  7:21, 25; 8:36. Coordenada de OpenBible: solo tomamos el punto.'
+sources:
+- it-eufrates
+- it-tatenai
+- it-dario
+- esdras-4
+- esdras-5
+- esdras-6
+- esdras-7
+- esdras-8
+- openbible-geo
+links:
+- title: 'Perspicacia: «Éufrates»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/%C3%89ufrates/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified

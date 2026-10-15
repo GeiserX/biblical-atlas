@@ -27,6 +27,7 @@ sources:
 - 1-cronicas-6
 - 1-cronicas-11
 - 1-cronicas-12
+- esdras-2
 links:
 - title: 'Perspicacia: «Anatot»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Anatot/
@@ -34,5 +35,5 @@ links:
 - title: Jeremías 1 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/1/
   type: bible
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified

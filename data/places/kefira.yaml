@@ -19,6 +19,7 @@ sources:
 - openbible-geo
 - josue-9
 - josue-18
+- esdras-2
 links:
 - title: 'Perspicacia: «Kefirá»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Kefir%C3%A1/
@@ -29,5 +30,5 @@ links:
 - title: Josué 18 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Josu%C3%A9/18/
   type: bible
-checked_on: '2026-09-29'
+checked_on: '2026-10-13'
 status: verified

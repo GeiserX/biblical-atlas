@@ -1,0 +1,51 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jehiel-descendiente-de-harim
+name: Jehiel
+names:
+- name: Jehiel
+perspicacia: 1200002366#10
+summary: Sacerdote de los hijos de Harim. Estaba casado con extranjeras y, cuando Esdras corrigió esos matrimonios (468-467
+  a.e.c.), las despidió junto con sus hijos.
+reason: Perspicacia «Jehiel», núm. 10; Esd 10:21, 44.
+sources:
+- it-jehiel
+- esdras-10
+links:
+- title: 'Perspicacia: «Jehiel»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jehiel/
+  type: perspicacia
+relations:
+- type: kin
+  person: harim-de-tiempos-de-david
+  word: ancestor
+  sources:
+  - esdras-10
+  - it-jehiel
+  reason: Esd 10:21 lo pone entre los hijos de Harim; Perspicacia «Jehiel», núm. 10. «Hijos» vale aquí por descendientes,
+    como dice Perspicacia «Harim», núm. 1.
+  inferred: false
+  checked_on: '2026-10-13'
+  status: verified
+- type: holds_office
+  office: priest
+  sources:
+  - esdras-10
+  - it-jehiel
+  reason: 'Esd 10:18-22: va en la lista de los hijos de los sacerdotes; Perspicacia lo llama sacerdote.'
+  inferred: false
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified
+disambiguation: El sacerdote de los hijos de Harim de Esd 10:21; no los demás Jehiel que registra Perspicacia.
+distinct_from:
+- jehiel-comisionado-de-ezequias
+- jehiel-descendiente-de-elam
+- jehiel-descendiente-de-ladan
+- jehiel-hijo-de-hacmoni
+- jehiel-hijo-de-jehosafat
+- jehiel-levita-de-ezequias
+- jehiel-musico
+- jehiel-padre-de-abdias
+- jehiel-padre-de-secanias
+- jehiel-sacerdote-de-josias

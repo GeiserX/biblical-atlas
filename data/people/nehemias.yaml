@@ -69,5 +69,8 @@ relations:
   reason: 'Ne 5:14: gobernador de Judá del año 20 al 32 de Artajerjes (455-443). Años del estudio 3 (párr. 19 y tabla de sucesos).'
   checked_on: '2026-09-28'
   status: verified
-checked_on: '2026-09-28'
+perspicacia: 1200003212#3
+checked_on: '2026-10-13'
 status: verified
+distinct_from:
+- nehemias-repatriado

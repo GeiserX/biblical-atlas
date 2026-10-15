@@ -1,0 +1,27 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: mispar
+name: Mispar
+names:
+- name: Mispar
+- name: Mispéret
+perspicacia: '1200003084'
+summary: Judío de renombre que volvió de Babilonia con Zorobabel. En la lista de Nehemías se escribe Mispéret.
+reason: Perspicacia «Mispar»; Esd 2:2.
+sources:
+- it-mispar
+- esdras-2
+links:
+- title: 'Perspicacia: «Mispar»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Mispar/
+  type: perspicacia
+relations:
+- type: lived_in
+  place: juda
+  inferred: false
+  sources:
+  - esdras-2
+  reason: 'Esd 2:1, 2: volvió con Zorobabel a Jerusalén y Judá, donde cada familia fue a su ciudad.'
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified

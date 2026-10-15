@@ -25,8 +25,10 @@ relations:
   reason: 1Cr 26:2, 3 lo nombra el quinto de los hijos de Meselemías.
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified
 distinct_from:
 - elam-hijo-de-sasac
 - elam-hijo-de-sem
+- elam-cabeza-de-familia
+- elam-el-otro

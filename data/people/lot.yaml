@@ -23,6 +23,7 @@ sources:
 - genesis-12
 - genesis-13
 - genesis-19
+- 2-pedro-2
 links:
 - title: 'Perspicacia: «Lot»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Lot/
@@ -62,8 +63,9 @@ relations:
   - genesis-14
   - genesis-13
   - genesis-19
+  - 2-pedro-2
   reason: 'Perspicacia «Lot», párr. 3 a 5: vivía en Sodoma cuando lo capturaron y cuando llegaron los ángeles (Gé 14:12; 19:1).'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-14'
   status: verified
 - type: kin
   person: haran-hijo-de-tare
@@ -156,5 +158,5 @@ history:
   change: 'Las citas de Génesis 13 y 19 van separadas por punto y coma: con la coma y la «y», el sitio no las reconocía y
     Lot no salía en esos capítulos.'
   source: genesis-13
-checked_on: '2026-09-29'
+checked_on: '2026-10-14'
 status: verified

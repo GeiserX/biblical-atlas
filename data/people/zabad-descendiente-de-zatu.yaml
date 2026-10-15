@@ -1,0 +1,37 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: zabad-descendiente-de-zatu
+name: Zabad
+names:
+- name: Zabad
+perspicacia: 1200004643#5
+summary: Israelita de los hijos de Zatú. Estaba casado con extranjeras y, cuando Esdras corrigió esos matrimonios (468-467
+  a.e.c.), las despidió junto con sus hijos.
+reason: Perspicacia «Zabad», núm. 5; Esd 10:27, 44.
+sources:
+- it-zabad
+- esdras-10
+links:
+- title: 'Perspicacia: «Zabad»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zabad/
+  type: perspicacia
+relations:
+- type: kin
+  person: zatu
+  word: ancestor
+  sources:
+  - esdras-10
+  - it-zabad
+  reason: Esd 10:27 lo pone entre los hijos de Zatú; Perspicacia «Zabad», núm. 5.
+  inferred: false
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified
+disambiguation: El de los hijos de Zatú de Esd 10:27; no los demás Zabad que registra Perspicacia.
+distinct_from:
+- jozacar
+- zabad-descendiente-de-hasum
+- zabad-descendiente-de-nebo
+- zabad-hijo-de-ahlai
+- zabad-hijo-de-natan
+- zabad-hijo-de-tahat
