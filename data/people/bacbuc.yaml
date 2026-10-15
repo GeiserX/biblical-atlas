@@ -1,0 +1,18 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: bacbuc
+name: Bacbuc
+names:
+- name: Bacbuc
+- name: Baqbuq
+perspicacia: '1200000540'
+summary: Sus descendientes, siervos del templo o netineos, se cuentan entre los que volvieron de Babilonia en 537 a.e.c.
+reason: Perspicacia «Baqbuq»; Esd 2:51.
+sources:
+- it-baqbuq
+- esdras-2
+links:
+- title: 'Perspicacia: «Baqbuq»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Baqbuq/
+  type: perspicacia
+checked_on: '2026-10-13'
+status: verified

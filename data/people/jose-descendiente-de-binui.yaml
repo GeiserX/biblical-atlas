@@ -1,0 +1,41 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jose-descendiente-de-binui
+name: José
+names:
+- name: José
+perspicacia: 1200002515#5
+summary: Israelita de los hijos de Binuí. Estaba casado con extranjeras y, cuando Esdras corrigió esos matrimonios (468-467
+  a.e.c.), las despidió junto con sus hijos.
+reason: Perspicacia «José», núm. 5; Esd 10:42, 44.
+sources:
+- it-jose
+- esdras-10
+links:
+- title: 'Perspicacia: «José»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jos%C3%A9/
+  type: perspicacia
+relations:
+- type: kin
+  person: binui-cabeza-de-familia
+  word: ancestor
+  sources:
+  - esdras-10
+  - it-jose
+  reason: Esd 10:42 lo pone entre los hijos de Binuí; Perspicacia «José», núm. 5.
+  inferred: false
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified
+disambiguation: El de los hijos de Binuí de Esd 10:42; no los demás José que registra Perspicacia.
+distinct_from:
+- bernabe
+- jesus-hijo-de-eliezer
+- jose-de-arimatea
+- jose-esposo-de-maria
+- jose-hijo-de-asaf
+- jose-hijo-de-jacob
+- jose-hijo-de-jonam
+- jose-hijo-de-jose
+- jose-hijo-de-matatias
+- jose-padre-de-igal

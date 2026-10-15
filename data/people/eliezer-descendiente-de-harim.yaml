@@ -1,0 +1,41 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: eliezer-descendiente-de-harim
+name: Eliezer
+names:
+- name: Eliezer
+perspicacia: 1200001304#10
+summary: Israelita de los hijos de Harim. Estaba casado con extranjeras y, cuando Esdras corrigió esos matrimonios (468-467
+  a.e.c.), las despidió junto con sus hijos.
+reason: Perspicacia «Eliezer», núm. 10; Esd 10:31, 44.
+sources:
+- it-eliezer
+- esdras-10
+links:
+- title: 'Perspicacia: «Eliezer»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Eliezer/
+  type: perspicacia
+relations:
+- type: kin
+  person: harim-cabeza-de-familia
+  word: ancestor
+  sources:
+  - esdras-10
+  - it-eliezer
+  reason: Esd 10:31 lo pone entre los hijos de Harim; Perspicacia «Eliezer», núm. 10.
+  inferred: false
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified
+disambiguation: El de los hijos de Harim de Esd 10:31; no los demás Eliezer que registra Perspicacia.
+distinct_from:
+- eliezer-de-damasco
+- eliezer-de-la-casa-de-jesua
+- eliezer-enviado-a-casifia
+- eliezer-hijo-de-beker
+- eliezer-hijo-de-dodavahu
+- eliezer-hijo-de-jorim
+- eliezer-hijo-de-moises
+- eliezer-hijo-de-zicri
+- eliezer-levita-de-tiempos-de-esdras
+- eliezer-trompetista

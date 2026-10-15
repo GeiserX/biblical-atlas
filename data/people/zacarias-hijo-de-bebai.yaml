@@ -1,0 +1,74 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: zacarias-hijo-de-bebai
+name: Zacarías
+names:
+- name: Zacarías
+perspicacia: 1200004681#23
+disambiguation: El cabeza de la casa de Bebái que volvió con Esdras (Esd 8:11), núm. 23 de Perspicacia; no los otros Zacarías
+  que numera.
+distinct_from:
+- zacarias-abuelo-de-ezequias
+- zacarias-de-israel
+- zacarias-descendiente-de-isias
+- zacarias-descendiente-de-paros
+- zacarias-el-rubenita
+- zacarias-hijo-de-hosa
+- zacarias-hijo-de-jeberekias
+- zacarias-hijo-de-jehoiada
+- zacarias-hijo-de-meselemias
+- zacarias-musico
+- zacarias-padre-de-ido
+- zacarias-padre-de-juan
+- zacarias-profeta
+- zacarias-trompetista
+- zeker
+- zacarias-consejero-de-uzias
+- zacarias-hijo-de-benaya
+- zacarias-hijo-de-jehosafat
+- zacarias-levita-de-ezequias
+- zacarias-levita-de-josias
+- zacarias-principe-de-jehosafat
+- zacarias-sacerdote-de-josias
+- zacarias-descendiente-de-elam
+summary: Jefe de los de Bebái en el viaje de Esdras de 468 a.e.c.; con él iban 28 varones.
+reason: Perspicacia «Zacarías», núm. 23; Esd 8:1, 11.
+sources:
+- it-zacarias
+- esdras-8
+- it-bebai
+links:
+- title: 'Perspicacia: «Zacarías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zacar%C3%ADas/
+  type: perspicacia
+relations:
+- type: kin
+  person: bebai-cabeza-de-familia
+  word: ancestor
+  inferred: true
+  sources:
+  - esdras-8
+  - it-zacarias
+  - it-bebai
+  reason: Esd 8:11 lo llama hijo de Bebái, de los hijos de Bebái; Perspicacia «Bebai», núm. 1, lo cuenta entre los 29 descendientes
+    que volvieron con Esdras.
+  checked_on: '2026-10-13'
+  status: verified
+- type: accompanies
+  person: esdras
+  date:
+    from: -467
+    to: -467
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 468 a.e.c.
+  inferred: false
+  sources:
+  - esdras-8
+  - it-zacarias
+  reason: 'Esd 8:1, 11: subió con Esdras con 28 varones.'
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified

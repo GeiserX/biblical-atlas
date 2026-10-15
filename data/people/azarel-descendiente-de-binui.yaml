@@ -1,0 +1,34 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: azarel-descendiente-de-binui
+name: Azarel
+names:
+- name: Azarel
+perspicacia: 1200000485#4
+summary: Israelita de los hijos de Binuí. Estaba casado con extranjeras y, cuando Esdras corrigió esos matrimonios (468-467
+  a.e.c.), las despidió junto con sus hijos.
+reason: Perspicacia «Azarel», núm. 4; Esd 10:41, 44.
+sources:
+- it-azarel
+- esdras-10
+links:
+- title: 'Perspicacia: «Azarel»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Azarel/
+  type: perspicacia
+relations:
+- type: kin
+  person: binui-cabeza-de-familia
+  word: ancestor
+  sources:
+  - esdras-10
+  - it-azarel
+  reason: Esd 10:41 lo pone entre los hijos de Binuí; Perspicacia «Azarel», núm. 4.
+  inferred: false
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified
+disambiguation: El de los hijos de Binuí de Esd 10:41; no los demás Azarel que registra Perspicacia.
+distinct_from:
+- azarel-el-coreita
+- azarel-hijo-de-jeroham
+- uziel-hijo-de-heman

@@ -1,0 +1,37 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: joiarib-maestro
+name: Joiarib
+names:
+- name: Joiarib
+perspicacia: 1200002494#2
+summary: Maestro de tiempos de Esdras. Con Elnatán, fue enviado desde el río Ahavá a pedir a Idó, en Casifía, ministros para
+  la casa de Dios.
+reason: Perspicacia «Joiarib», núm. 2; Esd 8:16, 17.
+sources:
+- it-joiarib
+- esdras-8
+links:
+- title: 'Perspicacia: «Joiarib»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Joiarib/
+  type: perspicacia
+relations:
+- type: accompanies
+  person: esdras
+  date:
+    from: -467
+    to: -467
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 468 a.e.c.
+  inferred: true
+  sources:
+  - esdras-8
+  - it-joiarib
+  reason: 'Esd 8:15, 16: estaba en el campamento del Ahavá y Esdras lo envió a buscar levitas; Perspicacia lo pone entre los
+    que iban con Esdras.'
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified

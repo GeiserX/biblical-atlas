@@ -1,0 +1,34 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: matata-descendiente-de-hasum
+name: Matatá
+names:
+- name: Matatá
+- name: Matatah
+  note: Otra lectura que da la nota de Esd 10:33; es la grafía de Perspicacia.
+perspicacia: '1200002934'
+summary: Israelita de los hijos de Hasum. Estaba casado con extranjeras y, cuando Esdras corrigió esos matrimonios (468-467
+  a.e.c.), las despidió junto con sus hijos.
+reason: Perspicacia «Matatah»; Esd 10:33, 44.
+sources:
+- it-matatah
+- esdras-10
+links:
+- title: 'Perspicacia: «Matatah»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Matatah/
+  type: perspicacia
+relations:
+- type: kin
+  person: hasum
+  word: ancestor
+  sources:
+  - esdras-10
+  - it-matatah
+  reason: Esd 10:33 lo pone entre los hijos de Hasum; Perspicacia «Matatah».
+  inferred: false
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified
+disambiguation: El de los hijos de Hasum de Esd 10:33; no los demás Matatá que registra Perspicacia.
+distinct_from:
+- matata

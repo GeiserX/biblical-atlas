@@ -1,0 +1,31 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: macnadebai
+name: Macnadebái
+names:
+- name: Macnadebái
+- name: Macnadebai
+  note: Grafía de Perspicacia.
+perspicacia: '1200002821'
+summary: Israelita de los hijos de Binuí. Estaba casado con extranjeras y, cuando Esdras corrigió esos matrimonios (468-467
+  a.e.c.), las despidió junto con sus hijos.
+reason: Perspicacia «Macnadebai»; Esd 10:40, 44.
+sources:
+- it-macnadebai
+- esdras-10
+links:
+- title: 'Perspicacia: «Macnadebai»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Macnadebai/
+  type: perspicacia
+relations:
+- type: kin
+  person: binui-cabeza-de-familia
+  word: ancestor
+  sources:
+  - esdras-10
+  - it-macnadebai
+  reason: Esd 10:40 lo pone entre los hijos de Binuí; Perspicacia «Macnadebai».
+  inferred: false
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified

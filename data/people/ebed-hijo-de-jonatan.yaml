@@ -1,0 +1,60 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ebed-hijo-de-jonatan
+name: Ébed
+names:
+- name: Ébed
+perspicacia: 1200001246#2
+disambiguation: El hijo de Jonatán que volvió con Esdras (Esd 8:6); no el padre de Gaal, de tiempos de los jueces.
+distinct_from:
+- ebed-padre-de-gaal
+summary: Hijo de Jonatán, de la casa de Adín. Volvió de Babilonia con Esdras en 468 a.e.c. con 50 varones.
+reason: Perspicacia «Ébed», núm. 2; Esd 8:6.
+sources:
+- it-ebed
+- esdras-8
+- it-adin
+links:
+- title: 'Perspicacia: «Ébed»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/%C3%89bed/
+  type: perspicacia
+relations:
+- type: kin
+  person: jonatan-padre-de-ebed
+  word: father
+  inferred: false
+  sources:
+  - esdras-8
+  - it-ebed
+  reason: 'Esd 8:6: Ébed hijo de Jonatán.'
+  checked_on: '2026-10-13'
+  status: verified
+- type: kin
+  person: adin
+  word: ancestor
+  inferred: false
+  sources:
+  - esdras-8
+  - it-ebed
+  - it-adin
+  reason: 'Esd 8:6: de los hijos de Adín.'
+  checked_on: '2026-10-13'
+  status: verified
+- type: accompanies
+  person: esdras
+  date:
+    from: -467
+    to: -467
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 468 a.e.c.
+  inferred: false
+  sources:
+  - esdras-8
+  - it-ebed
+  reason: 'Esd 8:1, 6: subió con Esdras con 50 varones.'
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified

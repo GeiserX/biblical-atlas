@@ -1,0 +1,52 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: tabeel-opositor-del-templo
+name: Tabeel
+names:
+- name: Tabeel
+perspicacia: 1200004293#2
+disambiguation: Uno de los autores de la carta en arameo de Esd 4:7 (Perspicacia «Tabeel», núm. 2); no el padre del candidato
+  al trono de Judá en días de Acaz.
+distinct_from:
+- tabeel-de-tiempos-de-acaz
+date:
+  from: -521
+  to: -521
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: 522 a.e.c.
+summary: Uno de los que escribieron al rey persa Artajerjes, en arameo, contra la reconstrucción de Jerusalén. Aquella carta
+  llevó a que se parara la obra del templo.
+reason: Perspicacia «Tabeel», núm. 2, y «Artajerjes», núm. 1; Esd 4:7, 24. Fecha del reinado de ese Artajerjes (estudio 3).
+sources:
+- it-tabeel
+- it-artajerjes
+- esdras-4
+- si-3
+links:
+- title: 'Perspicacia: «Tabeel»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Tabeel/
+  type: perspicacia
+relations:
+- type: lived_in
+  place: region-de-samaria
+  date:
+    from: -521
+    to: -521
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: 522 a.e.c.
+  inferred: true
+  sources:
+  - it-artajerjes
+  - esdras-4
+  - si-3
+  reason: Perspicacia «Artajerjes», núm. 1, dice que la carta de Esd 4:7 salió de la gente de las ciudades de Samaria. Año
+    del estudio 3.
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified

@@ -1,0 +1,29 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: uel
+name: Uel
+names:
+- name: Uel
+perspicacia: '1200004501'
+summary: Israelita de los hijos de Baní. Estaba casado con extranjeras y, cuando Esdras corrigió esos matrimonios (468-467
+  a.e.c.), las despidió junto con sus hijos.
+reason: Perspicacia «Uel»; Esd 10:34, 44.
+sources:
+- it-uel
+- esdras-10
+links:
+- title: 'Perspicacia: «Uel»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Uel/
+  type: perspicacia
+relations:
+- type: kin
+  person: bani-antepasado-de-doce-repatriados
+  word: ancestor
+  sources:
+  - esdras-10
+  - it-uel
+  reason: Esd 10:34 lo pone entre los hijos de Baní; Perspicacia «Uel».
+  inferred: false
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified

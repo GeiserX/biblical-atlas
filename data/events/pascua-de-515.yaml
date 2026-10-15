@@ -1,0 +1,35 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: pascua-de-515
+title: Los repatriados celebran la Pascua en el templo reconstruido
+date:
+  from: -514
+  to: -514
+  precision: year
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'c. 515 a.e.c. (tiempo narrativo: el primer mes después de terminar el templo)'
+  note: 'Límites: el templo terminado el 3 de adar de 515, el último mes del año (Esd 6:15; Perspicacia «Templo»); la Pascua
+    cae el día 14 del mes siguiente (Esd 6:19).'
+narrative_order:
+  series: esdras
+  order: 6019
+places:
+- jerusalen
+people: []
+passages:
+- Esd 6:19-22
+summary: Purificados sacerdotes y levitas, los que volvieron del destierro celebraron la Pascua con quienes se habían apartado
+  de la impureza de las naciones, y siete días de Panes Sin Levadura, contentos por el apoyo del rey.
+reason: Esd 6:19 da el día 14 del primer mes. Perspicacia «Templo» la pone tras terminar el templo en 515, y «Pascua» la cuenta
+  entre las pascuas registradas. El texto no nombra a nadie.
+sources:
+- esdras-6
+- it-templo
+- it-pascua
+links:
+- title: 'Perspicacia: «Pascua»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Pascua/
+  type: perspicacia
+checked_on: '2026-10-13'
+status: verified

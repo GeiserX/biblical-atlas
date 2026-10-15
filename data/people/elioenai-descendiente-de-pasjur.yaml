@@ -1,0 +1,47 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: elioenai-descendiente-de-pasjur
+name: Elioenái
+names:
+- name: Elioenái
+- name: Elioenai
+  note: Grafía de Perspicacia.
+perspicacia: 1200001311#4
+summary: Sacerdote de los hijos de Pasjur. Estaba casado con extranjeras y, cuando Esdras corrigió esos matrimonios (468-467
+  a.e.c.), las despidió junto con sus hijos.
+reason: Perspicacia «Elioenai», núm. 4; Esd 10:22, 44.
+sources:
+- it-elioenai
+- esdras-10
+links:
+- title: 'Perspicacia: «Elioenai»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Elioenai/
+  type: perspicacia
+relations:
+- type: kin
+  person: pasjur-familia-sacerdotal
+  word: ancestor
+  sources:
+  - esdras-10
+  - it-elioenai
+  reason: Esd 10:22 lo pone entre los hijos de Pasjur; Perspicacia «Elioenai», núm. 4. «Hijos» vale aquí por descendientes,
+    como dice Perspicacia «Harim», núm. 1.
+  inferred: false
+  checked_on: '2026-10-13'
+  status: verified
+- type: holds_office
+  office: priest
+  sources:
+  - esdras-10
+  - it-elioenai
+  reason: 'Esd 10:18-22: va en la lista de los hijos de los sacerdotes; Perspicacia lo llama sacerdote.'
+  inferred: false
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified
+disambiguation: El sacerdote de los hijos de Pasjur de Esd 10:22; no los demás Elioenái que registra Perspicacia.
+distinct_from:
+- elioenai-descendiente-de-zatu
+- elioenai-hijo-de-beker
+- elioenai-hijo-de-nearias
+- elioenai-simeonita

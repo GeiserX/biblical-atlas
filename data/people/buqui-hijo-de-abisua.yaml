@@ -13,6 +13,7 @@ reason: Perspicacia «Buquí», núm. 2; 1Cr 6:5, 51.
 sources:
 - it-buqui
 - 1-cronicas-6
+- esdras-7
 links:
 - title: 'Perspicacia: «Buquí»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Buqu%C3%AD/
@@ -24,8 +25,9 @@ relations:
   inferred: false
   sources:
   - 1-cronicas-6
+  - esdras-7
   reason: 1Cr 6:5 lo da como hijo de Abisúa.
-  checked_on: '2026-10-12'
+  checked_on: '2026-10-13'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified

@@ -1,0 +1,17 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hasufa
+name: Hasufá
+names:
+- name: Hasufá
+perspicacia: '1200001911'
+summary: Sus descendientes, siervos del templo o netineos, se cuentan entre los que volvieron de Babilonia en 537 a.e.c.
+reason: Perspicacia «Hasufá»; Esd 2:43.
+sources:
+- it-hasufa
+- esdras-2
+links:
+- title: 'Perspicacia: «Hasufá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hasuf%C3%A1/
+  type: perspicacia
+checked_on: '2026-10-13'
+status: verified

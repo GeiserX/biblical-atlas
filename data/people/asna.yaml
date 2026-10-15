@@ -1,0 +1,18 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: asna
+name: Asná
+names:
+- name: Asná
+perspicacia: '1200000435'
+summary: Sus descendientes, siervos del templo o netineos, se cuentan entre los que volvieron de Babilonia en 537 a.e.c. Nehemías
+  no lo incluye.
+reason: Perspicacia «Asná»; Esd 2:50.
+sources:
+- it-asna
+- esdras-2
+links:
+- title: 'Perspicacia: «Asná»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Asn%C3%A1/
+  type: perspicacia
+checked_on: '2026-10-13'
+status: verified

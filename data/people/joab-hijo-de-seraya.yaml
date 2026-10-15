@@ -28,5 +28,7 @@ relations:
   status: verified
 distinct_from:
 - joab-hijo-de-zeruya
-checked_on: '2026-10-12'
+- joab-de-pahat-moab
+- joab-antepasado-de-abdias
+checked_on: '2026-10-13'
 status: verified

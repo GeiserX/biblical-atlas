@@ -1,0 +1,30 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jeiel-descendiente-de-nebo
+name: Jeiel
+names:
+- name: Jeiel
+perspicacia: 1200002406#10
+summary: Israelita de los hijos de Nebo. Estaba casado con extranjeras y, cuando Esdras corrigió esos matrimonios (468-467
+  a.e.c.), las despidió junto con sus hijos.
+reason: Perspicacia «Jeiel», núm. 10; Esd 10:43, 44.
+sources:
+- it-jeiel
+- esdras-10
+links:
+- title: 'Perspicacia: «Jeiel»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jeiel/
+  type: perspicacia
+relations: []
+checked_on: '2026-10-13'
+status: verified
+disambiguation: El de los hijos de Nebo de Esd 10:43; no los demás Jeiel que registra Perspicacia.
+distinct_from:
+- jaaziel
+- jeiel-de-gabaon
+- jeiel-descendiente-de-adonicam
+- jeiel-el-rubenita
+- jeiel-hijo-de-hotam
+- jeiel-hijo-de-matanias
+- jeiel-levita-de-josias
+- jeiel-portero
+- jeiel-secretario

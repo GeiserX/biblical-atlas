@@ -1,0 +1,40 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jonatan-padre-de-ebed
+name: Jonatán
+names:
+- name: Jonatán
+perspicacia: 1200002506#10
+disambiguation: El padre de Ébed, de la familia de Adín (Esd 8:6), núm. 10 de Perspicacia; no los otros Jonatán que numera.
+distinct_from:
+- jonatan-hijo-de-abiatar
+- jonatan-hijo-de-carea
+- jonatan-hijo-de-jada
+- jonatan-hijo-de-sague
+- jonatan-hijo-de-sama
+- jonatan-hijo-de-saul
+- jonatan-hijo-de-uzias
+- jonatan-levita
+- jonatan-sobrino-de-david
+- jonatan-hijo-de-asahel
+summary: Israelita de la familia de Adín, padre de Ébed, que hizo el viaje de Esdras en 468 a.e.c.
+reason: Perspicacia «Jonatán», núm. 10; Esd 8:6.
+sources:
+- it-jonatan
+- esdras-8
+links:
+- title: 'Perspicacia: «Jonatán»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jonat%C3%A1n/
+  type: perspicacia
+relations:
+- type: kin
+  person: adin
+  word: ancestor
+  inferred: true
+  sources:
+  - esdras-8
+  - it-jonatan
+  reason: Esd 8:6 pone a su hijo entre los hijos de Adín; Perspicacia «Jonatán», núm. 10, lo da como de esa familia.
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified

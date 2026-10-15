@@ -3,7 +3,7 @@ id: sesbazar
 name: Sesbazar
 names:
 - name: Sesbazar
-disambiguation: Nombre que usan el edicto de Ciro y una carta oficial en Esd 1 y 5.
+disambiguation: Nombre que Esd 1 y 5 dan a quien llevó los utensilios del templo, junto al edicto de Ciro y a una carta oficial.
 date:
   from: -536
   to: -535
@@ -12,8 +12,8 @@ date:
   type: anchored
   chronology: tnm
   text: 537-536 a.e.c.
-summary: Jefe al que Ciro confió los utensilios del templo para llevarlos a Jerusalén, donde puso los cimientos. Perspicacia
-  ve más probable que fuera el nombre oficial babilonio de Zorobabel.
+summary: Jefe al que Ciro confió los utensilios del templo para llevarlos a Jerusalén, donde puso los cimientos. Quizá sea
+  Zorobabel con su nombre oficial babilonio.
 reason: 'Perspicacia «Sesbazar»: Esd 1:8, 11 y 5:14-16 le atribuyen lo que el resto atribuye a Zorobabel. Años: según
   «Zorobabel», el regreso es en 537 a.e.c. y los cimientos del templo en 536.'
 sources:
@@ -29,20 +29,64 @@ links:
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/esdras/1/
   type: bible
 not_claimed:
-- 'Que Sesbazar y Zorobabel sean con seguridad la misma persona: Perspicacia lo da como lo más probable.'
+- 'Que Sesbazar y Zorobabel sean con seguridad la misma persona: la nota de Esd 1:8 lo ve posible y Perspicacia lo daba por
+  lo más probable.'
 relations:
 - type: same_as
   person: zorobabel
-  certainty: probable
+  certainty: possible
   inferred: true
   sources:
+  - esdras-1
   - it-sesbazar
   - it-zorobabel
-  - esdras-1
   - esdras-5
-  reason: Perspicacia «Sesbazar» lo ve lo más probable. Lo que Esd 1:8-11 y 5:14-16 cuentan de Sesbazar se cuenta de Zorobabel
-    en los demás pasajes, y a los dos se les llama gobernador.
-  checked_on: '2026-09-29'
+  reason: La nota de Esd 1:8, la publicación más reciente, lo da por posible; Perspicacia «Sesbazar» lo veía lo más probable.
+    Lo que Esd 1:8-11 y 5:14-16 dicen de Sesbazar se dice de Zorobabel en otros pasajes.
+  checked_on: '2026-10-13'
   status: verified
-checked_on: '2026-09-28'
+- type: holds_office
+  office: leader
+  inferred: false
+  sources:
+  - esdras-1
+  reason: 'Esd 1:8: el texto lo llama jefe de la tribu de Judá.'
+  checked_on: '2026-10-13'
+  status: verified
+- type: holds_office
+  office: governor
+  date:
+    from: -536
+    to: -536
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 537 a.e.c.
+  sources:
+  - esdras-5
+  - it-sesbazar
+  - it-zorobabel
+  reason: 'Esd 5:14: Ciro lo nombró gobernador al darle los utensilios. Perspicacia «Zorobabel» pone ese nombramiento en el
+    regreso de 537 a.e.c.'
+  inferred: false
+  checked_on: '2026-10-13'
+  status: verified
+perspicacia: '1200004025'
+history:
+- date: '2026-10-13'
+  change: Decía que el edicto de Ciro usa el nombre; en Esd 1 el nombre sale en el relato que sigue al edicto (Esd 1:8, 11),
+    no en el edicto.
+  source: esdras-1
+- date: '2026-10-13'
+  change: 'same_as con zorobabel baja de probable a posible: la nota de Esd 1:8 dice «posiblemente» y manda sobre Perspicacia
+    «Sesbazar», que lo daba por lo más probable.'
+  source: esdras-1
+- date: '2026-10-13'
+  change: 'El resumen ya no lo da por probable: la nota de Esd 1:8 lo ve solo posible.'
+  source: esdras-1
+- date: '2026-10-13'
+  change: Recoge la nota de Esd 1:8, más reciente que Perspicacia.
+  source: esdras-1
+checked_on: '2026-10-13'
 status: verified

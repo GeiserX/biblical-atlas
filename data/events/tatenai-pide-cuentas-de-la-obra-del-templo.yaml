@@ -1,0 +1,39 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: tatenai-pide-cuentas-de-la-obra-del-templo
+title: Tatenái pide cuentas de la obra del templo
+date:
+  from: -519
+  to: -519
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 520 a.e.c.
+narrative_order:
+  series: esdras
+  order: 5003
+places:
+- jerusalen
+people:
+- tatenai
+- setar-bozenai
+present:
+- tatenai
+- setar-bozenai
+passages:
+- Esd 5:3-17
+summary: Tatenái, Setar-Bozenái y sus colegas fueron a Jerusalén a preguntar quién había autorizado la obra. Los ancianos
+  alegaron el decreto de Ciro y los funcionarios escribieron a Darío pidiendo que se buscara en los archivos.
+reason: 'Perspicacia «Tatenai» y «Darío», núm. 2: la visita a Jerusalén y la carta al rey siguen a la reanudación de la obra,
+  en 520 a.e.c. Esd 5:3-17.'
+sources:
+- esdras-5
+- it-tatenai
+- it-dario
+- it-setar-bozenai
+links:
+- title: 'Perspicacia: «Tatenai»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Tatenai/
+  type: perspicacia
+checked_on: '2026-10-13'
+status: verified

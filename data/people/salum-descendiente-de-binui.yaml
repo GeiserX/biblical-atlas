@@ -1,0 +1,43 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: salum-descendiente-de-binui
+name: Salum
+names:
+- name: Salum
+perspicacia: 1200003933#12
+summary: Israelita de los hijos de Binuí. Estaba casado con extranjeras y, cuando Esdras corrigió esos matrimonios (468-467
+  a.e.c.), las despidió junto con sus hijos.
+reason: Perspicacia «Salum», núm. 12; Esd 10:42, 44.
+sources:
+- it-salum
+- esdras-10
+links:
+- title: 'Perspicacia: «Salum»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Salum/
+  type: perspicacia
+relations:
+- type: kin
+  person: binui-cabeza-de-familia
+  word: ancestor
+  sources:
+  - esdras-10
+  - it-salum
+  reason: Esd 10:42 lo pone entre los hijos de Binuí; Perspicacia «Salum», núm. 12.
+  inferred: false
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified
+disambiguation: El de los hijos de Binuí de Esd 10:42; no los demás Salum que registra Perspicacia.
+distinct_from:
+- jehoacaz-de-juda
+- salum-de-israel
+- salum-hijo-de-sadoc
+- salum-hijo-de-shaul
+- salum-hijo-de-sismai
+- salum-hijo-de-ticva
+- salum-jefe-de-los-porteros
+- salum-padre-de-jehizquias
+- salum-padre-de-maaseya
+- salum-portero-de-tiempos-de-esdras
+- salum-tio-de-jeremias
+- silem

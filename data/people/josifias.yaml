@@ -1,0 +1,17 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: josifias
+name: Josifías
+names:
+- name: Josifías
+perspicacia: '1200002526'
+summary: De la casa paterna de Baní. Su hijo Selomit guio a los de esa casa en el viaje de Esdras de 468 a.e.c.
+reason: Perspicacia «Josifías»; Esd 8:10.
+sources:
+- it-josifias
+- esdras-8
+links:
+- title: 'Perspicacia: «Josifías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Josif%C3%ADas/
+  type: perspicacia
+checked_on: '2026-10-13'
+status: verified

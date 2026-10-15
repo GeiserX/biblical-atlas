@@ -1,0 +1,33 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: secanias-propone-un-pacto-para-despedir-a-las-esposas-extranjeras
+title: Secanías propone un pacto para despedir a las esposas extranjeras
+date:
+  from: -467
+  to: -467
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 468 a.e.c.
+narrative_order:
+  series: esdras
+  order: 10002
+places:
+- jerusalen
+people:
+- secanias-hijo-de-jehiel
+- esdras
+passages:
+- Esd 10:2-6
+summary: Ante el templo, Secanías reconoce la infidelidad y propone un pacto para despedir a las esposas extranjeras y a sus
+  hijos. Esdras hace jurar a sacerdotes, levitas y pueblo, y ayuna en el cuarto de Jehohanán.
+reason: Perspicacia «Esdras» y «Secanías», núm. 6; Esd 10:2-6. Sigue a la oración de Esdras y precede a la asamblea del mes
+  noveno, en 468 a.e.c. (estudio 3).
+sources:
+- esdras-10
+- it-esdras
+- it-secanias
+- it-jehohanan
+- si-3
+checked_on: '2026-10-13'
+status: verified

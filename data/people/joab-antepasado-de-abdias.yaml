@@ -1,0 +1,35 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: joab-antepasado-de-abdias
+name: Joab
+names:
+- name: Joab
+perspicacia: 1200002469#4
+disambiguation: El Joab que da nombre a la casa de Abdías (Esd 8:9), núm. 4 de Perspicacia; no el general de David ni el hijo
+  de Seraya.
+distinct_from:
+- joab-hijo-de-seraya
+- joab-hijo-de-zeruya
+summary: Antepasado de la casa llamada los hijos de Joab, cuyo cabeza en 468 a.e.c. era Abdías. Perspicacia ve posible que
+  sea la familia del Joab de Pahat-Moab, o pariente suya.
+reason: Perspicacia «Joab», núm. 4; Esd 8:9.
+sources:
+- it-joab
+- esdras-8
+links:
+- title: 'Perspicacia: «Joab»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Joab/
+  type: perspicacia
+checked_on: '2026-10-13'
+status: verified
+relations:
+- type: same_as
+  person: joab-de-pahat-moab
+  certainty: possible
+  inferred: true
+  sources:
+  - it-joab
+  - esdras-8
+  reason: 'Perspicacia «Joab», núm. 4: aunque Esd 8:9 no une la casa de Joab a la de Pahat-Moab, puede ser la misma familia
+    que la del núm. 3 o pariente suya.'
+  checked_on: '2026-10-13'
+  status: verified

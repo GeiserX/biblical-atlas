@@ -1,0 +1,19 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hasum
+name: Hasum
+names:
+- name: Hasum
+perspicacia: '1200001907'
+summary: Cabeza de una familia israelita; 223 de sus miembros volvieron de Babilonia con Zorobabel.
+reason: Perspicacia «Hasum»; Esd 2:19.
+sources:
+- it-hasum
+- esdras-2
+- esdras-10
+links:
+- title: 'Perspicacia: «Hasum»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hasum/
+  type: perspicacia
+checked_on: '2026-10-13'
+status: verified
+relations: []

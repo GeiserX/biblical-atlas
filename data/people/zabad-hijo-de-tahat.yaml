@@ -10,6 +10,9 @@ distinct_from:
 - jozacar
 - zabad-hijo-de-ahlai
 - zabad-hijo-de-natan
+- zabad-descendiente-de-hasum
+- zabad-descendiente-de-nebo
+- zabad-descendiente-de-zatu
 summary: Efraimita de la familia de Sutélah, hijo de Táhat.
 reason: Perspicacia «Zabad», núm. 1; 1Cr 7:20, 21.
 sources:
@@ -29,5 +32,5 @@ relations:
   reason: '1Cr 7:21: Zabad era hijo de Táhat.'
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified

@@ -4,7 +4,7 @@ name: Elnatán
 names:
 - name: Elnatán
 perspicacia: 1200001331#1
-disambiguation: El padre de Nehustá; no ninguno de los tres Elnatán de Esd 8:16.
+disambiguation: El padre de Nehustá, en tiempos de los reyes; no ninguno de los tres Elnatán que Esdras envió a Casifía.
 summary: Hombre de Jerusalén, padre de Nehustá y, por ella, abuelo materno del rey Joaquín.
 reason: Perspicacia «Elnatán», núm. 1; 2Re 24:8.
 sources:
@@ -35,5 +35,13 @@ history:
   change: 'La identificación con Elnatán hijo de Acbor pasa de posible a probable: Perspicacia «Acbor», núm. 2, la da con
     mucha probabilidad.'
   source: it-acbor
-checked_on: '2026-10-12'
+- date: '2026-10-14'
+  change: La desambiguación deja de citar un versículo de Esdras 8, donde este Elnatán no sale; Perspicacia «Elnatán» separa
+    al núm. 1 de los tres de Esdras.
+  source: it-elnatan
+checked_on: '2026-10-13'
 status: verified
+distinct_from:
+- elnatan-maestro
+- elnatan-primer-jefe
+- elnatan-segundo-jefe

@@ -1,0 +1,37 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: amarias-descendiente-de-binui
+name: Amarías
+names:
+- name: Amarías
+perspicacia: 1200000219#8
+summary: Israelita de los hijos de Binuí. Estaba casado con extranjeras y, cuando Esdras corrigió esos matrimonios (468-467
+  a.e.c.), las despidió junto con sus hijos.
+reason: Perspicacia «Amarías», núm. 8; Esd 10:42, 44.
+sources:
+- it-amarias
+- esdras-10
+links:
+- title: 'Perspicacia: «Amarías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Amar%C3%ADas/
+  type: perspicacia
+relations:
+- type: kin
+  person: binui-cabeza-de-familia
+  word: ancestor
+  sources:
+  - esdras-10
+  - it-amarias
+  reason: Esd 10:42 lo pone entre los hijos de Binuí; Perspicacia «Amarías», núm. 8.
+  inferred: false
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified
+disambiguation: El de los hijos de Binuí de Esd 10:42; no los demás Amarías que registra Perspicacia.
+distinct_from:
+- amarias-ayudante-de-core
+- amarias-hebronita
+- amarias-hijo-de-azarias
+- amarias-hijo-de-ezequias
+- amarias-hijo-de-merayot
+- amarias-sacerdote-principal

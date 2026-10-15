@@ -4,10 +4,12 @@ name: Semarías
 names:
 - name: Semarías
 perspicacia: 1200004001#2
-disambiguation: Semarías hijo de Rehoboam (2Cr 11:19); no el guerrero benjaminita que se unió a David en Ziclag ni los de
-  Esdras 10.
+disambiguation: Semarías hijo de Rehoboam (2Cr 11:19); no el guerrero benjaminita que se unió a David en Ziclag ni los dos
+  Semarías de los días de Esdras.
 distinct_from:
 - semarias-el-benjaminita
+- semarias-descendiente-de-binui
+- semarias-descendiente-de-harim
 summary: Hijo de Rehoboam y de su esposa Mahalat, nombrado entre Jeús y Zaham. Por su padre descendía de David en la tercera
   generación.
 reason: Perspicacia «Semarías», núm. 2; 2Cr 11:18, 19.
@@ -48,5 +50,9 @@ relations:
   reason: '2Cr 11:19: los dos están entre los hijos que Mahalat dio a Rehoboam.'
   checked_on: '2026-10-13'
   status: verified
+history:
+- date: '2026-10-13'
+  change: 'Ya no cita Esdras 10, que no lo nombra: los homónimos de ese capítulo tienen ficha y van en distinct_from.'
+  source: esdras-10
 checked_on: '2026-10-13'
 status: verified

@@ -1,0 +1,29 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: izias
+name: Izías
+names:
+- name: Izías
+perspicacia: '1200002257'
+summary: Israelita de los hijos de Parós. Estaba casado con extranjeras y, cuando Esdras corrigió esos matrimonios (468-467
+  a.e.c.), las despidió junto con sus hijos.
+reason: Perspicacia «Izías»; Esd 10:25, 44.
+sources:
+- it-izias
+- esdras-10
+links:
+- title: 'Perspicacia: «Izías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Iz%C3%ADas/
+  type: perspicacia
+relations:
+- type: kin
+  person: paros
+  word: ancestor
+  sources:
+  - esdras-10
+  - it-izias
+  reason: Esd 10:25 lo pone entre los hijos de Parós; Perspicacia «Izías».
+  inferred: false
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified

@@ -1,0 +1,18 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: azgad
+name: Azgad
+names:
+- name: Azgad
+perspicacia: '1200000493'
+summary: Cabeza de una casa paterna; 1.222 de sus miembros formaron parte del regreso guiado por Zorobabel (537 a.e.c.).
+reason: Perspicacia «Azgad»; Esd 2:12.
+sources:
+- it-azgad
+- esdras-2
+- esdras-8
+links:
+- title: 'Perspicacia: «Azgad»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Azgad/
+  type: perspicacia
+checked_on: '2026-10-13'
+status: verified
