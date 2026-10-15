@@ -58,6 +58,7 @@ const BOOT = 60000;
 // the road while they happened at a stop of one moment. 3: the window differed from the event's own date only by the
 // cut at its end, so it no longer counts as moved by the account (it keeps its date and is not «estimated»).
 // 4: Gálatas anchored the event to c. 49 by the study note on Gál 2:12 (commit c6bf8f0).
+// 5: a book put a neighbour of the same series inside the event's year, so the event takes a part of that year.
 // Only events and letters that existed at REFERENCE_REV are listed: the record compares no other.
 const EXPECTED_CHANGES = {
   'evento:creacion-de-eva': 1, 'evento:pecado-de-adan-y-eva': 1, 'evento:juicio-en-eden': 1, 'evento:expulsion-del-eden': 1,
@@ -90,6 +91,9 @@ const EXPECTED_CHANGES = {
   // Esdras gave the ban on the temple work (522) a series (esdras, 4007): placed with its year, it differs from its date
   // only by the cut at its end (3): [-521, -520.001] before, [-521, -520] now.
   'evento:obra-del-templo-prohibida-522': 3,
+  // Judas put enoc-anuncia-el-juicio-de-jehova (Enoc's lifetime, until 3039) at 5020, just before God takes Enoc (5021):
+  // the taking now shares its year with it and sits in the second half (5): [-3038, -3037] before, [-3037.5, -3037.001] now.
+  'evento:dios-toma-a-enoc': 5,
 };
 // Deaths named by the id of their event, not by the rule of the code: the person dies in that event.
 const DEATHS = {
@@ -445,18 +449,18 @@ test('outside Acts, events and letters fall where the code before this change pu
 });
 
 test('an event whose window is its own date but for the cut at the end is not «estimated»; one placed inside its year is', async () => {
-  // Five events of Genesis with an exact year share that year with their neighbours in the account, as 101 of the 108
+  // Six events of Genesis with an exact year share that year with their neighbours in the account, as 101 of the 108
   // events with an exact year in a series already did on main: the part of the year is ours, so it says «estimated»,
-  // and it never leaves the year the data gives.
-  const shared = ['nacimiento-de-set', 'nacimiento-de-noe', 'dios-fija-120-anos', 'noe-sale-del-arca', 'pacto-con-noe'];
+  // and it never leaves the year the data gives. God taking Enoc joined them when Judas put Enoc's prophecy before it.
+  const shared = ['dios-toma-a-enoc', 'nacimiento-de-set', 'nacimiento-de-noe', 'dios-fija-120-anos', 'noe-sale-del-arca', 'pacto-con-noe'];
   const r = await page.evaluate((ids) => ids.map((id) => {
     const BE = window.BE, e = BE.D.eventos.find((x) => x.id === id);
     if (!e) return `${id} missing`;
     const w = BE.ventanaEvento(e), own = BE.ventanaFecha(e.fecha);
     const inside = w[0] >= own[0] - 1e-9 && w[1] <= own[1] + 1e-9;
     return `${id} ${BE.eventoEstimado(e)}${inside ? '' : ` outside its date ${w.map((x) => x.toFixed(4))}`}`;
-  }), ['dios-toma-a-enoc', 'muere-isaac', ...shared]);
-  assert.deepEqual(r, ['dios-toma-a-enoc false', 'muere-isaac false', ...shared.map((id) => `${id} true`)]);
+  }), ['muere-isaac', ...shared]);
+  assert.deepEqual(r, ['muere-isaac false', ...shared.map((id) => `${id} true`)]);
 });
 
 test('an old link to an event of a block takes the cursor to the event; the card and the header say what is estimated', async () => {
