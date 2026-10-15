@@ -1,6 +1,6 @@
 # biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
 id: muros-de-jerusalen-455
-title: Nehemías reconstruye los muros de Jerusalén
+title: Se termina la muralla de Jerusalén
 date:
   from: -454
   to: -454
@@ -8,25 +8,20 @@ date:
   approx: false
   type: anchored
   chronology: tnm
-  text: 455 a.e.c. (del 4 de ab al 25 de elul)
+  text: 25 de elul de 455 a.e.c.
   detail:
     month: elul
     day: 25
 places:
 - jerusalen
-- susa
 people:
 - nehemias
-- artajerjes-i
-- sanbalat
 passages:
-- Ne 2:1-20
-- Ne 4:1-23
-- Ne 6:15
-summary: Con permiso de Artajerjes en su año veinte, Nehemías fue de Susa a Jerusalén y dirigió la reparación del muro,
-  acabada en 52 días pese a las amenazas. De ese año parten las setenta semanas de Da 9.
-reason: 'Perspicacia «Nehemías», núm. 3: obra del 4 de ab al 25 de elul; «Artajerjes», núm. 2, y estudio 3 (párr. 18, 19):
-  el año veinte es 455.'
+- Ne 6:15, 16
+summary: El 25 de elul de 455 a.e.c., tras 52 días de trabajo, la muralla queda acabada. Las naciones vecinas lo ven, pierden
+  el ánimo y reconocen que Dios estaba detrás. De ese año parten las setenta semanas de Da 9.
+reason: 'Ne 6:15: acabada el 25 de elul, a los 52 días. Perspicacia «Nehemías», núm. 3: empezó hacia el 4 de ab; «Artajerjes»,
+  núm. 2, y estudio 3: el año veinte es 455. Orden 106015, tras Ne 6:1-14.'
 sources:
 - si-3
 - it-nehemias
@@ -36,8 +31,40 @@ links:
 - title: 'Perspicacia: «Nehemías»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Nehem%C3%ADas/
   type: perspicacia
-- title: Nehemías 1 (TNM)
-  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Nehem%C3%ADas/1/
+- title: Nehemías 6 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Nehem%C3%ADas/6/
   type: bible
-checked_on: '2026-09-28'
+history:
+- date: '2026-10-14'
+  source: nehemias-2
+  change: 'Queda el final de la obra (Ne 6:15, 16). Ne 2 pasa a cuatro sucesos propios, y Ne 3, 4 y 6:1-14 a los suyos: la
+    obra va del 4 de ab al 25 de elul (Perspicacia «Nehemías», núm. 3).'
+- date: '2026-10-14'
+  source: nehemias-2
+  change: 'Susa sale de los lugares: la audiencia con el rey es el suceso nehemias-pide-permiso-a-artajerjes; la obra pasa
+    en Jerusalén.'
+- date: '2026-10-14'
+  source: nehemias-2
+  change: 'Artajerjes y Sanbalat salen de las personas: el permiso del rey y las burlas tienen sus sucesos; Ne 6:15, 16 solo
+    nombra a Nehemías y a los enemigos en general.'
+- date: '2026-10-14'
+  source: nehemias-2
+  change: 'El resumen se ciñe al final de la obra: el permiso, el viaje, las burlas y los ataques tienen sus sucesos.'
+- date: '2026-10-14'
+  source: nehemias-6
+  change: El suceso queda en el final de la obra (Ne 6:15, 16) y el título lo dice.
+- date: '2026-10-14'
+  source: nehemias-6
+  change: La razón cita el versículo del final y da el orden del relato.
+- date: '2026-10-14'
+  source: nehemias-2
+  change: El enlace a la Biblia pasa de Nehemías 1, que no cuenta la obra, a Nehemías 6, donde se termina (Ne 6:15).
+- date: '2026-10-14'
+  change: 'El suceso es ahora solo el final de la obra (Ne 6:15): el texto de la fecha deja de abarcar del 4 de ab al 25 de
+    elul.'
+  source: nehemias-6
+narrative_order:
+  series: nehemias
+  order: 106015
+checked_on: '2026-10-14'
 status: verified

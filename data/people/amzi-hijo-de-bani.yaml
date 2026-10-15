@@ -23,5 +23,8 @@ relations:
   reason: '1Cr 6:46: Amzí, «hijo de Baní».'
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+disambiguation: 'Amzí núm. 1 de Perspicacia «Amzí»: levita merarita, hijo de Baní (1Cr 6:46).'
+checked_on: '2026-10-14'
 status: verified
+distinct_from:
+- amzi-hijo-de-zacarias

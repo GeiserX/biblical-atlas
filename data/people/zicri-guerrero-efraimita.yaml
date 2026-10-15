@@ -16,6 +16,8 @@ distinct_from:
 - zicri-descendiente-de-simei
 - zicri-hijo-de-asaf
 - zicri-padre-de-eliezer
+- zicri-padre-de-joel
+- zicri-de-la-casa-de-abias
 date:
   from: -759
   to: -759
@@ -37,5 +39,5 @@ links:
 - title: 2 Crónicas 28 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-Cr%C3%B3nicas/28/
   type: bible
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified

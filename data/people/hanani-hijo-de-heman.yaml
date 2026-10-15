@@ -26,8 +26,10 @@ relations:
   reason: 1Cr 25:4, 25 lo cuenta entre los hijos de Hemán.
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified
 distinct_from:
 - hanani-vidente
 - hanani-descendiente-de-imer
+- hanani-hermano-de-nehemias
+- hanani-musico-de-la-procesion

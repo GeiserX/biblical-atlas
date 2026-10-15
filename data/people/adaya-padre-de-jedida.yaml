@@ -27,7 +27,7 @@ relations:
   reason: 2Re 22:1 lo llama Adaya de Bozcat.
   checked_on: '2026-09-30'
   status: verified
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified
 distinct_from:
 - adaya-hijo-de-etan
@@ -36,3 +36,4 @@ distinct_from:
 - adaya-padre-de-maaseya
 - adaya-descendiente-de-bani
 - adaya-descendiente-de-binui
+- adaya-hijo-de-joiarib

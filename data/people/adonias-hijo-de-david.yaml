@@ -103,7 +103,8 @@ relations:
   reason: '1Re 1:7: el sacerdote Abiatar le ofrece su ayuda y su apoyo.'
   checked_on: '2026-09-30'
   status: verified
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified
 distinct_from:
 - adonias-levita-de-jehosafat
+- adonias-cabeza-del-pueblo

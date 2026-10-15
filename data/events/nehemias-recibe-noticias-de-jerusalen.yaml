@@ -15,16 +15,19 @@ places:
 - susa
 people:
 - nehemias
+- hanani-hermano-de-nehemias
 passages:
 - Ne 1:1-11
 summary: En el castillo de Susa, Nehemías supo por su hermano Hananí que el muro y las puertas de Jerusalén seguían en ruinas.
   Lloró, ayunó y oró varios días antes de hablar con el rey.
-reason: 'Perspicacia «Nehemías», núm. 3 (Ne 1:1: mes de kislev); la Tabla de los libros hace empezar el periodo del libro
-  en 456.'
+reason: 'Perspicacia «Nehemías», núm. 3 (Ne 1:1, 2: kislev, Hananí y otros de Judá). «Nehemías, Libro de»: ese kislev precede
+  al nisán de 455, así que cae en 456. Abre la serie nehemias.'
 sources:
 - it-nehemias
 - tnm-tabla
 - nehemias-1
+- it-nehemias-libro
+- it-hanani
 links:
 - title: 'Perspicacia: «Nehemías»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Nehem%C3%ADas/
@@ -32,5 +35,13 @@ links:
 - title: Nehemías 1 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Nehem%C3%ADas/1/
   type: bible
-checked_on: '2026-09-28'
+history:
+- date: '2026-10-14'
+  change: La razón cita ahora «Nehemías, Libro de», que fecha el kislev en 456 con su cuenta, en vez de solo la Tabla de los
+    libros.
+  source: it-nehemias-libro
+narrative_order:
+  series: nehemias
+  order: 101001
+checked_on: '2026-10-14'
 status: verified

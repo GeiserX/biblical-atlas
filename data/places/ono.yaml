@@ -3,6 +3,9 @@ id: ono
 name: Onó
 names:
 - name: Onó
+- name: Llanura de Onó
+  note: 'Ne 6:2: allí querían citar a Nehemías Sanbalat y Guésem. Perspicacia «Onó» lo ve posiblemente el valle ancho donde
+    está Kafr ʽAna.'
 type: city
 lat: 32.027222
 lon: 34.868056
@@ -18,9 +21,12 @@ sources:
 - openbible-geo
 - 1-cronicas-8
 - esdras-2
+- nehemias-6
+- nehemias-7
+- nehemias-11
 links:
 - title: 'Perspicacia: «Onó»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/On%C3%B3/
   type: perspicacia
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified

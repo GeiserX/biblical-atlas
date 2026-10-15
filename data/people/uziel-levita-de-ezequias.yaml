@@ -21,6 +21,7 @@ distinct_from:
 - uziel-hijo-de-cohat
 - uziel-hijo-de-heman
 - uziel-hijo-de-isi
+- uziel-hijo-de-harhaya
 relations:
 - type: kin
   person: jedutun-musico
@@ -32,5 +33,5 @@ relations:
   reason: 2Cr 29:14 lo cuenta entre los hijos de Jedutún; Perspicacia «Uziel», núm. 4, lo llama su descendiente.
   checked_on: '2026-10-13'
   status: verified
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified

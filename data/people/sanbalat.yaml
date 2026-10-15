@@ -17,14 +17,85 @@ reason: Perspicacia «Sanbalat» y «Nehemías», núm. 3 (Ne 2:10, 19; 4:7-9; 6
 sources:
 - it-sanbalat
 - it-nehemias
+- nehemias-2
+- it-horonita
+- nehemias-4
+- nehemias-6
+- nehemias-13
 links:
 - title: 'Perspicacia: «Sanbalat»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sanbalat/
   type: perspicacia
-- title: Nehemías 1 (TNM)
-  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Nehem%C3%ADas/1/
+- title: Nehemías 2 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Nehem%C3%ADas/2/
   type: bible
 not_claimed:
 - Que el Sanbalat del papiro de Elefantina sea con seguridad el de Nehemías.
-checked_on: '2026-09-28'
+perspicacia: '1200003826'
+history:
+- date: '2026-10-14'
+  change: El enlace a la Biblia pasa de Nehemías 1, donde Sanbalat no sale, a Nehemías 2, donde aparece por primera vez (Ne
+    2:10).
+  source: nehemias-2
+checked_on: '2026-10-14'
 status: verified
+relations:
+- type: tie
+  person: nehemias
+  word: enemy
+  date:
+    from: -454
+    to: -454
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 455 a.e.c.
+  inferred: false
+  sources:
+  - nehemias-2
+  - it-sanbalat
+  - nehemias-4
+  - nehemias-6
+  reason: 'Ne 2:10, 19: le molesta la llegada de Nehemías, se burla de la obra y lo acusa de rebelarse contra el rey.'
+  checked_on: '2026-10-14'
+  status: verified
+- type: tie
+  person: tobias-el-ammonita
+  word: ally
+  date:
+    from: -454
+    to: -454
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 455 a.e.c.
+  inferred: false
+  sources:
+  - nehemias-4
+  - it-sanbalat
+  reason: 'Ne 4:3: Tobías estaba a su lado cuando se burló; Ne 4:7, 8: los dos, con árabes, ammonitas y asdoditas, se aliaron
+    para atacar Jerusalén.'
+  checked_on: '2026-10-14'
+  status: verified
+- type: tie
+  person: guesem
+  word: ally
+  date:
+    from: -454
+    to: -454
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 455 a.e.c.
+  inferred: false
+  sources:
+  - nehemias-2
+  - nehemias-6
+  - it-guesem
+  reason: 'Ne 2:19; 6:1-7: se burlan juntos de la obra, le mandan juntos el mensaje de Ono, y Sanbalat escribe la acusación
+    que hace Guésem; Perspicacia «Guésem».'
+  checked_on: '2026-10-14'
+  status: verified

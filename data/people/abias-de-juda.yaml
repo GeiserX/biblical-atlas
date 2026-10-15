@@ -161,7 +161,7 @@ history:
 - date: '2026-10-13'
   change: El resumen nombra las tres ciudades que tomó y su familia, que da 2Cr 13:19, 21.
   source: 2-cronicas-13
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified
 distinct_from:
 - abias-de-tiempos-de-david
@@ -170,3 +170,5 @@ distinct_from:
 - abias-hija-de-zacarias
 - abias-esposa-de-hezron
 - abias-hijo-de-beker
+- abias-sacerdote-firmante
+- abias-sacerdote-de-zorobabel

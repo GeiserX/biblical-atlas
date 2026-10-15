@@ -26,8 +26,9 @@ relations:
   reason: Perspicacia «Asaf», núm. 2, lo hace descendiente de Cohat (1Cr 26:1).
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-14'
 status: verified
 distinct_from:
 - asaf-hijo-de-berekias
 - asaf-padre-de-joa
+- asaf-guarda-del-parque

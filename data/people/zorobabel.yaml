@@ -31,6 +31,8 @@ sources:
 - esdras-2
 - esdras-4
 - esdras-5
+- nehemias-7
+- nehemias-12
 links:
 - title: 'Perspicacia: «Zorobabel»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zorobabel/
@@ -79,8 +81,9 @@ relations:
   - ageo-2
   - esdras-3
   - esdras-5
+  - nehemias-12
   reason: Mt 1:12. La nota y Perspicacia «Sealtiel» explican que quizá era su padre legal y Pedaya, el natural.
-  checked_on: '2026-10-13'
+  checked_on: '2026-10-14'
   status: verified
 - type: kin
   person: nedabias
@@ -113,5 +116,5 @@ history:
 - date: '2026-10-13'
   change: '«Probablemente» pasa a «quizá»: la nota de Esd 1:8 ve solo posible que Sesbazar sea Zorobabel.'
   source: esdras-1
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified

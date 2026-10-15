@@ -11,6 +11,8 @@ distinct_from:
 - baana-hijo-de-rimon
 - baana-el-netofatita
 - baana-repatriado
+- baana-padre-de-sadoc
+- baana-cabeza-del-pueblo
 summary: 'Comisario de Salomón en Taanac, Meguidó y todo Bet-Seán, hasta Abel-Meholá: sobre todo los valles fértiles de Meguidó
   y Jezreel. Perspicacia ve posible que fuera hermano del registrador Jehosafat.'
 reason: Perspicacia «Baaná», núm. 1, y «Ahilud»; 1Re 4:7, 12.
@@ -42,5 +44,5 @@ relations:
   reason: '1Re 4:7, 12: uno de los doce comisarios del rey Salomón.'
   checked_on: '2026-09-30'
   status: verified
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified

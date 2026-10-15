@@ -69,5 +69,7 @@ distinct_from:
 - seraya-hijo-de-quenaz
 - seraya-hijo-de-asiel
 - seraya-repatriado
-checked_on: '2026-10-13'
+- seraya-sacerdote-repatriado
+- azarias-sacerdote-repatriado
+checked_on: '2026-10-14'
 status: verified

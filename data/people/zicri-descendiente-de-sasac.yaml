@@ -16,6 +16,8 @@ distinct_from:
 - zicri-guerrero-efraimita
 - zicri-padre-de-amasiah
 - zicri-padre-de-elisafat
+- zicri-padre-de-joel
+- zicri-de-la-casa-de-abias
 summary: Benjamita, hijo o descendiente de Sasac, cabeza de familia en Jerusalén.
 reason: Perspicacia «Zicrí», núm. 3; 1Cr 8:23, 25, 28.
 sources:
@@ -44,5 +46,5 @@ relations:
   reason: '1Cr 8:28: los jefes de casas paternas de esta lista vivían en Jerusalén.'
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified

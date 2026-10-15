@@ -10,6 +10,8 @@ distinct_from:
 - azarel-hijo-de-jeroham
 - uziel-hijo-de-heman
 - azarel-descendiente-de-binui
+- azarel-hijo-de-ahzai
+- azarel-musico-de-la-procesion
 summary: Coreíta que fue a Ziclag con otros guerreros para apoyar a David.
 reason: Perspicacia «Azarel», núm. 1; 1Cr 12:6.
 sources:
@@ -40,5 +42,5 @@ relations:
   reason: '1Cr 12:6: se unió a David y lo apoyó en la guerra.'
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified

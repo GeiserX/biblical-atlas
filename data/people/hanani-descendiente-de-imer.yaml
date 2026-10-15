@@ -35,9 +35,11 @@ relations:
   inferred: false
   checked_on: '2026-10-13'
   status: verified
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified
 disambiguation: El sacerdote de los hijos de Imer de Esd 10:20; no los demás Hananí que registra Perspicacia.
 distinct_from:
 - hanani-hijo-de-heman
 - hanani-vidente
+- hanani-hermano-de-nehemias
+- hanani-musico-de-la-procesion

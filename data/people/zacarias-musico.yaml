@@ -31,6 +31,12 @@ distinct_from:
 - zacarias-enviado-a-casifia
 - zacarias-hijo-de-bebai
 - zacarias-descendiente-de-elam
+- zacarias-junto-a-esdras
+- zacarias-hijo-de-amarias
+- zacarias-hijo-de-pasjur
+- zacarias-hijo-del-selanita
+- zacarias-hijo-de-jonatan
+- zacarias-trompetista-de-la-inauguracion
 summary: Músico levita de la segunda división que tocó instrumento de cuerda en el traslado del Arca a Jerusalén. Después,
   segundo después de Asaf, sirvió delante de la tienda del Arca.
 reason: Perspicacia «Zacarías», núm. 4; 1Cr 15:18, 20; 16:5.
@@ -42,7 +48,7 @@ links:
 - title: 'Perspicacia: «Zacarías»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zacar%C3%ADas/
   type: perspicacia
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified
 relations:
 - type: tie

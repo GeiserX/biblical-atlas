@@ -26,5 +26,10 @@ relations:
   reason: '1Cr 4:19: la esposa de Hodías era la hermana de Náham.'
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-14'
 status: verified
+distinct_from:
+- hodias-levita-que-explico-la-ley
+- hodias-cabeza-del-pueblo
+- hodias-levita-firmante
+- hodias-segundo-levita-firmante

@@ -35,7 +35,9 @@ relations:
   checked_on: '2026-10-12'
   status: verified
 disambiguation: El cabeza del turno sacerdotal 19 (1Cr 24:16); no el levita Petahías de los días de Esdras.
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified
 distinct_from:
 - petahias-levita-de-tiempos-de-esdras
+- petahias-levita-de-la-confesion
+- petahias-hijo-de-mesezabel

@@ -14,6 +14,8 @@ distinct_from:
 - jozabad-hijo-de-jesua
 - jozabad-descendiente-de-pasjur
 - jozabad-levita-de-tiempos-de-esdras
+- jozabad-levita-que-explico-la-ley
+- jozabad-levita-de-tiempos-de-nehemias
 summary: Guederatita, benjaminita ambidextro que se unió a David en Ziclag; al parecer era de Guederá de Benjamín.
 reason: Perspicacia «Jozabad», núm. 1, «Guederatita» y «Guederá», núm. 2; 1Cr 12:4.
 sources:
@@ -47,5 +49,5 @@ relations:
   reason: '1Cr 12:4: se unió a David y lo apoyó en la guerra.'
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified

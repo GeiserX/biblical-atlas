@@ -18,6 +18,14 @@ distinct_from:
 - maaseya-descendiente-de-harim
 - maaseya-descendiente-de-pahat-moab
 - maaseya-descendiente-de-pasjur
+- maaseya-hijo-de-ananiah
+- maaseya-junto-a-esdras
+- maaseya-levita-que-explico-la-ley
+- maaseya-cabeza-del-pueblo
+- maaseya-hijo-de-baruc
+- maaseya-hijo-de-itiel
+- maaseya-sacerdote-de-la-inauguracion
+- maaseya-trompetista-de-la-inauguracion
 summary: Hijo de Salum, el portero del templo, al que Perspicacia tiene casi por seguro levita. Por él se llamaba una sala
   del templo que quedaba bajo la de los príncipes, cerca de la de los hijos de Hanán.
 reason: Perspicacia «Maaseya», núm. 8; Jer 35:4.
@@ -42,5 +50,5 @@ relations:
   reason: Jer 35:4 lo llama Maaseya hijo de Salum.
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified

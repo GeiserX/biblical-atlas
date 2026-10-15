@@ -12,6 +12,12 @@ distinct_from:
 - malkiya-descendiente-de-harim
 - malkiya-descendiente-de-paros-1
 - malkiya-descendiente-de-paros-2
+- malkiya-hijo-de-harim
+- malkiya-hijo-de-recab
+- malkiya-orfebre
+- malkiya-junto-a-esdras
+- malkiya-sacerdote-firmante
+- malkiya-sacerdote-de-la-inauguracion
 summary: Levita guersonita, hijo de Etní, antepasado del músico Asaf.
 reason: Perspicacia «Malkiya», núm. 1; 1Cr 6:40, 41.
 sources:
@@ -31,5 +37,5 @@ relations:
   reason: '1Cr 6:40, 41: Malkiya, «hijo de Etní».'
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified

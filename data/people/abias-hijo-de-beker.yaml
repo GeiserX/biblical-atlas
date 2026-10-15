@@ -12,6 +12,8 @@ distinct_from:
 - abias-hijo-de-jeroboan
 - abias-hijo-de-samuel
 - abias-esposa-de-hezron
+- abias-sacerdote-firmante
+- abias-sacerdote-de-zorobabel
 summary: Nieto de Benjamín, el séptimo de los nueve hijos de Béker.
 reason: Perspicacia «Abías», núm. 1; 1Cr 7:6, 8.
 sources:
@@ -41,5 +43,5 @@ relations:
     Jacob en 1728 a.e.c.'
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-14'
 status: verified

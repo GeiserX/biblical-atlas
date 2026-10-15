@@ -26,6 +26,13 @@ distinct_from:
 - semaya-enviado-a-casifia
 - semaya-descendiente-de-harim
 - semaya-sacerdote-descendiente-de-harim
+- semaya-guarda-de-la-puerta-oriental
+- semaya-hijo-de-delaya
+- semaya-sacerdote-repatriado
+- semaya-de-la-procesion-del-muro
+- semaya-hijo-de-matanias
+- semaya-musico-de-la-procesion
+- semaya-sacerdote-de-la-inauguracion
 summary: Falso profeta de Nehelam llevado a Babilonia con Joaquín. Escribió a Sofonías y a los sacerdotes de Jerusalén para
   que pusieran a Jeremías en el cepo; Jehová anunció que ni él ni los suyos verían la vuelta.
 reason: Perspicacia «Semaya», núm. 13; Jer 29:24-32.
@@ -69,5 +76,5 @@ relations:
     opositor de Jeremías.'
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified

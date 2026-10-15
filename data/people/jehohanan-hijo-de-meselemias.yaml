@@ -25,7 +25,7 @@ relations:
   reason: 1Cr 26:2, 3 lo nombra el sexto de los hijos de Meselemías.
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified
 distinct_from:
 - jehohanan-general-de-jehosafat
@@ -33,3 +33,6 @@ distinct_from:
 - jehohanan-padre-de-ismael
 - jehohanan-descendiente-de-bebai
 - jehohanan-hijo-de-eliasib
+- jehohanan-hijo-de-tobias
+- jehohanan-de-la-casa-de-amarias
+- jehohanan-sacerdote-de-la-inauguracion

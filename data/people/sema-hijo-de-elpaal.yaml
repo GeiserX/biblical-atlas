@@ -45,8 +45,9 @@ relations:
   reason: 'Perspicacia «Sema», núm. 3, y «Simeí», núm. 5: al parecer, el Sema de 1Cr 8:13 es el Simeí de 8:21.'
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-14'
 status: verified
 distinct_from:
 - sema-hijo-de-hebron
 - sema-hijo-de-joel
+- sema-junto-a-esdras

@@ -16,6 +16,8 @@ distinct_from:
 - abdias-levita-de-josias
 - abdias-principe-de-jehosafat
 - abdias-hijo-de-jehiel
+- abdias-sacerdote-firmante
+- abdias-portero
 summary: Benjamita, descendiente lejano de Saúl y de Jonatán, hijo de Azel.
 reason: Perspicacia «Abdías», núm. 6; 1Cr 8:33-38.
 sources:
@@ -37,5 +39,5 @@ relations:
   reason: 1Cr 8:38 lo cuenta entre los hijos de Azel.
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified

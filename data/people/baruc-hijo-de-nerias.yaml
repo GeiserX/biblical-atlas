@@ -87,5 +87,9 @@ relations:
   inferred: false
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-14'
 status: verified
+distinct_from:
+- baruc-hijo-de-zabai
+- baruc-sacerdote-firmante
+- baruc-hijo-de-colhoze

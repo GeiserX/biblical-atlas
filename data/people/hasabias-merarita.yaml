@@ -13,6 +13,11 @@ distinct_from:
 - hasabias-hijo-de-quemuel
 - hasabias-padre-de-azricam
 - hasabias-levita-de-josias
+- hasabias-principe-de-queila
+- hasabias-levita-firmante
+- hasabias-hijo-de-matanias
+- hasabias-de-la-casa-de-hilquias
+- hasabias-jefe-de-los-levitas
 summary: Levita merarita traído desde Casifía con Jesayá y los suyos, 20 hombres en total, para el viaje de Esdras de 468
   a.e.c. Perspicacia no le da entrada propia.
 reason: Esd 8:19; Perspicacia «Hasabías», núm. 7, lo menciona al hablar del jefe de los sacerdotes de Esd 8:24.
@@ -50,5 +55,15 @@ relations:
   reason: 'Esd 8:19: lo trajeron con Jesayá y sus familias, 20 hombres, para el viaje de Esdras.'
   checked_on: '2026-10-13'
   status: verified
-checked_on: '2026-10-13'
+- type: same_as
+  person: hasabneya-levita-de-la-confesion
+  certainty: possible
+  inferred: true
+  sources:
+  - it-hasabneya
+  - nehemias-9
+  reason: 'Perspicacia «Hasabneya», núm. 2: el levita de Ne 9:5 quizá era uno de los levitas llamados Hasabías, como este.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
 status: verified

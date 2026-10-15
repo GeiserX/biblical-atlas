@@ -35,7 +35,7 @@ relations:
   inferred: false
   checked_on: '2026-10-13'
   status: verified
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified
 disambiguation: El sacerdote de los hijos de Pasjur de Esd 10:22; no los demás Jozabad que registra Perspicacia.
 distinct_from:
@@ -46,3 +46,5 @@ distinct_from:
 - jozabad-hijo-de-jesua
 - jozabad-levita-de-josias
 - jozabad-levita-de-tiempos-de-esdras
+- jozabad-levita-que-explico-la-ley
+- jozabad-levita-de-tiempos-de-nehemias

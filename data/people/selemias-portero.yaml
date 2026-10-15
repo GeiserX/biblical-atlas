@@ -21,7 +21,7 @@ links:
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Meselem%C3%ADas/
   type: perspicacia
 relations: []
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified
 distinct_from:
 - selemias-hijo-de-abdeel
@@ -30,3 +30,5 @@ distinct_from:
 - selemias-padre-de-jehucal
 - selemias-descendiente-de-binui-1
 - selemias-descendiente-de-binui-2
+- selemias-padre-de-hananias
+- selemias-encargado-de-los-almacenes

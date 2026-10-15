@@ -39,5 +39,9 @@ relations:
 distinct_from:
 - pedaya-padre-de-zebida
 - pedaya-padre-de-joel
-checked_on: '2026-10-12'
+- pedaya-descendiente-de-paros
+- pedaya-junto-a-esdras
+- pedaya-hijo-de-colaya
+- pedaya-encargado-de-los-almacenes
+checked_on: '2026-10-14'
 status: verified

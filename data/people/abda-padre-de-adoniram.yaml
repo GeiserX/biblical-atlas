@@ -15,5 +15,7 @@ links:
 - title: 'Perspicacia: «Abdá»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Abd%C3%A1/
   type: perspicacia
-checked_on: '2026-09-30'
+checked_on: '2026-10-14'
 status: verified
+distinct_from:
+- abdias-hijo-de-semaya

@@ -35,5 +35,7 @@ relations:
   reason: 'Gé 5:12: Quenán tuvo a Mahalalel con 70 años.'
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-14'
 status: verified
+distinct_from:
+- mahalalel-descendiente-de-perez

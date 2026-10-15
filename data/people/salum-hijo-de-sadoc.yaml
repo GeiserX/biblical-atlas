@@ -31,6 +31,16 @@ distinct_from:
 - mesulam-levita-de-tiempos-de-esdras
 - salum-descendiente-de-binui
 - salum-portero-de-tiempos-de-esdras
+- mesulam-hijo-de-berekias
+- mesulam-hijo-de-besodeya
+- salum-hijo-de-halohes
+- mesulam-junto-a-esdras
+- mesulam-cabeza-del-pueblo
+- mesulam-sacerdote-firmante
+- mesulam-de-la-casa-de-esdras
+- mesulam-de-la-casa-de-guineton
+- mesulam-de-la-procesion-del-muro
+- mesulam-portero
 summary: Sacerdote de la línea de los sumos sacerdotes, hijo de Sadoc y padre de Hilquías, el sumo sacerdote de Josías. Esdras
   descendía de él.
 reason: Perspicacia «Salum», núm. 7; 1Cr 6:12, 13.
@@ -40,6 +50,7 @@ sources:
 - 1-cronicas-6
 - 1-cronicas-9
 - esdras-7
+- nehemias-11
 links:
 - title: 'Perspicacia: «Salum»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Salum/
@@ -53,8 +64,9 @@ relations:
   - 1-cronicas-6
   - 1-cronicas-9
   - esdras-7
+  - nehemias-11
   reason: 1Cr 6:12 lo da como hijo de Sadoc.
-  checked_on: '2026-10-13'
+  checked_on: '2026-10-14'
   status: verified
 - type: holds_office
   office: priest
@@ -66,5 +78,5 @@ relations:
     del sacerdote Azarías.
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified

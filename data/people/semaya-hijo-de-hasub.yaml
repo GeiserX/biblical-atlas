@@ -9,6 +9,7 @@ reason: Perspicacia «Semaya», núm. 16; 1Cr 9:14.
 sources:
 - it-semaya
 - 1-cronicas-9
+- nehemias-11
 links:
 - title: 'Perspicacia: «Semaya»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Semaya/
@@ -20,8 +21,9 @@ relations:
   inferred: false
   sources:
   - 1-cronicas-9
+  - nehemias-11
   reason: '1Cr 9:14: Semaya, hijo de Hasub.'
-  checked_on: '2026-10-12'
+  checked_on: '2026-10-14'
   status: verified
 - type: kin
   person: merari
@@ -38,10 +40,11 @@ relations:
   sources:
   - 1-cronicas-9
   - it-semaya
+  - nehemias-11
   reason: '1Cr 9:14, 34: jefe de los levitas que vivían en Jerusalén.'
-  checked_on: '2026-10-12'
+  checked_on: '2026-10-14'
   status: verified
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified
 distinct_from:
 - semaya-hijo-de-galal
@@ -63,5 +66,12 @@ distinct_from:
 - semaya-enviado-a-casifia
 - semaya-descendiente-de-harim
 - semaya-sacerdote-descendiente-de-harim
+- semaya-guarda-de-la-puerta-oriental
+- semaya-hijo-de-delaya
+- semaya-sacerdote-repatriado
+- semaya-de-la-procesion-del-muro
+- semaya-hijo-de-matanias
+- semaya-musico-de-la-procesion
+- semaya-sacerdote-de-la-inauguracion
 disambiguation: 'Semaya núm. 16 de Perspicacia: levita merarita, hijo de Hasub. No el descendiente de Jedutún ni el profeta
   de Rehoboam.'

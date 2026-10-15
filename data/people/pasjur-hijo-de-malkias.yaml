@@ -9,6 +9,7 @@ disambiguation: El príncipe hijo de Malkías que Sedequías envió a Jeremías 
 distinct_from:
 - pasjur-hijo-de-imer
 - pasjur-padre-de-guedalias
+- pasjur-sacerdote-firmante
 summary: Príncipe de Judá en días de Sedequías. Durante el sitio fue con el sacerdote Sofonías a pedir a Jeremías una consulta
   a Jehová; más tarde pidió al rey que lo mataran.
 reason: Perspicacia «Pasjur», núm. 2; Jer 21:1, 2 y 38:1, 4; 1Cr 9:12, cuyo Pasjur hijo de Malkiya es el mismo eslabón según
@@ -19,6 +20,7 @@ sources:
 - jeremias-38
 - it-malkiya
 - 1-cronicas-9
+- nehemias-11
 links:
 - title: 'Perspicacia: «Pasjur»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Pasjur/
@@ -34,9 +36,10 @@ relations:
   - jeremias-38
   - 1-cronicas-9
   - it-malkiya
+  - nehemias-11
   reason: Jer 21:1 lo llama hijo de Malkías y 1Cr 9:12 repite el eslabón; Perspicacia «Pasjur», núm. 2, y «Malkiya», núm.
     3, lo recogen.
-  checked_on: '2026-10-12'
+  checked_on: '2026-10-14'
   status: verified
 - type: tie
   person: jeremias-profeta
@@ -48,5 +51,5 @@ relations:
   reason: 'Jer 38:1-6: con otros tres príncipes pide al rey que mate a Jeremías; Perspicacia «Pasjur», núm. 2, lo recoge.'
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-14'
 status: verified

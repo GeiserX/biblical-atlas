@@ -17,6 +17,7 @@ distinct_from:
 - salum-padre-de-jehizquias
 - salum-descendiente-de-binui
 - salum-portero-de-tiempos-de-esdras
+- salum-hijo-de-halohes
 date:
   from: -790
   to: -790
@@ -76,5 +77,5 @@ relations:
   checked_on: '2026-09-30'
   status: verified
 perspicacia: 1200003933#5
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified

@@ -35,7 +35,7 @@ relations:
   reason: '1Cr 24:12: encabeza una de las casas sacerdotales de 24:4-6; Perspicacia «Eliasib» lo trata como sacerdote.'
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified
 distinct_from:
 - eliasib-hijo-de-elioenai
@@ -43,3 +43,4 @@ distinct_from:
 - eliasib-descendiente-de-bani
 - eliasib-descendiente-de-zatu
 - eliasib-padre-de-jehohanan
+- eliasib-sumo-sacerdote

@@ -13,6 +13,7 @@ sources:
 - it-quelita
 - esdras-10
 - it-quelaya
+- nehemias-10
 links:
 - title: 'Perspicacia: «Quelitá»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Quelit%C3%A1/
@@ -20,6 +21,26 @@ links:
 - title: 'Perspicacia: «Quelaya»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Quelaya/
   type: perspicacia
-relations: []
-checked_on: '2026-10-13'
+relations:
+- type: same_as
+  person: quelita-levita-que-explico-la-ley
+  certainty: possible
+  inferred: true
+  sources:
+  - it-quelita
+  - nehemias-8
+  reason: Perspicacia «Quelitá», núm. 1, ve posible que sea el levita núm. 2, que explicaba la Ley (Ne 8:7).
+  checked_on: '2026-10-14'
+  status: verified
+- type: same_as
+  person: quelita-levita-firmante
+  certainty: possible
+  inferred: true
+  sources:
+  - nehemias-10
+  - it-quelita
+  reason: 'Perspicacia «Quelitá», núm. 3: si selló él mismo en Ne 10:10, podría ser el núm. 1, el levita de los días de Esdras.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
 status: verified

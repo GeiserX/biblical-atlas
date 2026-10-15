@@ -4,11 +4,13 @@ name: Jeroham
 names:
 - name: Jeroham
 perspicacia: 1200002432#7
-summary: Sacerdote, hijo de Pasjur, padre o antepasado de Adaya, que vivió en Jerusalén después del destierro.
+summary: Sacerdote, descendiente de Pasjur, padre o antepasado de Adaya, que vivió en Jerusalén después del destierro. Ne
+  11:12 da a Pelalías como su padre.
 reason: Perspicacia «Jeroham», núm. 7; 1Cr 9:12.
 sources:
 - it-jeroham
 - 1-cronicas-9
+- nehemias-11
 links:
 - title: 'Perspicacia: «Jeroham»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jeroham/
@@ -16,14 +18,37 @@ links:
 relations:
 - type: kin
   person: pasjur-hijo-de-malkias
-  word: father
+  word: ancestor
   inferred: false
   sources:
   - 1-cronicas-9
-  reason: '1Cr 9:12: Jeroham, hijo de Pasjur.'
-  checked_on: '2026-10-12'
+  - nehemias-11
+  - it-zacarias
+  - it-amzi
+  reason: 1Cr 9:12 lo llama hijo de Pasjur, pero Ne 11:12 pone entre los dos a Pelalías, Amzí y Zacarías (Perspicacia «Amzí»,
+    núm. 2, y «Zacarías», núm. 28).
+  checked_on: '2026-10-14'
   status: verified
-checked_on: '2026-10-13'
+- type: kin
+  person: pelalias
+  word: father
+  inferred: false
+  sources:
+  - nehemias-11
+  reason: 'Ne 11:12: Jeroham, hijo de Pelalías.'
+  checked_on: '2026-10-14'
+  status: verified
+history:
+- date: '2026-10-14'
+  change: 'La relación con Pasjur pasa de padre a antepasado: Ne 11:12 da tres generaciones entre ellos.'
+  source: nehemias-11
+- date: '2026-10-14'
+  change: Decía «hijo de Pasjur»; Ne 11:12 lo hace hijo de Pelalías y descendiente de Pasjur.
+  source: nehemias-11
+- date: '2026-10-14'
+  change: Decía «hijo de Pasjur»; por Ne 11:12, Pasjur es su antepasado.
+  source: nehemias-11
+checked_on: '2026-10-14'
 status: verified
 distinct_from:
 - jeroham-de-guedor
@@ -32,5 +57,5 @@ distinct_from:
 - jeroham-padre-de-ibneya
 - jeroham-padre-de-samserai
 - jeroham-padre-de-azarias
-disambiguation: 'Jeroham núm. 7 de Perspicacia: sacerdote, hijo de Pasjur y padre de Adaya. No el benjamita padre de Ibneyá
-  ni el abuelo de Samuel.'
+disambiguation: 'Jeroham núm. 7 de Perspicacia: sacerdote, descendiente de Pasjur y padre de Adaya. No el benjamita padre
+  de Ibneyá ni el abuelo de Samuel.'

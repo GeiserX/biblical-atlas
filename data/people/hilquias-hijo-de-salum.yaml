@@ -17,6 +17,7 @@ sources:
 - 2-cronicas-34
 - 2-cronicas-35
 - esdras-7
+- nehemias-11
 links:
 - title: 'Perspicacia: «Hilquías»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hilqu%C3%ADas/
@@ -50,8 +51,9 @@ relations:
   - it-salum
   - it-mesulam
   - esdras-7
+  - nehemias-11
   reason: 1Cr 6:13 lo da como hijo de Salum.
-  checked_on: '2026-10-13'
+  checked_on: '2026-10-14'
   status: verified
 - type: holds_office
   office: leader
@@ -61,7 +63,7 @@ relations:
   reason: '2Cr 35:8: con Zacarías y Jehiel, dirigía la casa de Dios.'
   checked_on: '2026-10-13'
   status: verified
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified
 distinct_from:
 - hilquias-padre-de-eliaquim
@@ -69,3 +71,6 @@ distinct_from:
 - hilquias-padre-de-guemarias
 - hilquias-hijo-de-amzi
 - hilquias-hijo-de-hosa
+- hilquias-junto-a-esdras
+- hilquias-familia-sacerdotal
+- hilquias-sacerdote-de-zorobabel

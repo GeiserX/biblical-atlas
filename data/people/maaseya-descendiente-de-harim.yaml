@@ -35,7 +35,7 @@ relations:
   inferred: false
   checked_on: '2026-10-13'
   status: verified
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified
 disambiguation: El sacerdote de los hijos de Harim de Esd 10:21; no los demás Maaseya que registra Perspicacia.
 distinct_from:
@@ -50,3 +50,11 @@ distinct_from:
 - maaseya-musico
 - maaseya-padre-de-sedequias
 - maaseya-padre-de-sofonias
+- maaseya-hijo-de-ananiah
+- maaseya-junto-a-esdras
+- maaseya-levita-que-explico-la-ley
+- maaseya-cabeza-del-pueblo
+- maaseya-hijo-de-baruc
+- maaseya-hijo-de-itiel
+- maaseya-sacerdote-de-la-inauguracion
+- maaseya-trompetista-de-la-inauguracion

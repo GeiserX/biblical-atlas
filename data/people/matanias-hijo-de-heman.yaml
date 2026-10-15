@@ -26,7 +26,7 @@ relations:
   reason: 1Cr 25:4, 16 lo cuenta entre los hijos de Hemán.
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified
 distinct_from:
 - matanias-hijo-de-mica
@@ -37,3 +37,6 @@ distinct_from:
 - matanias-descendiente-de-elam
 - matanias-descendiente-de-pahat-moab
 - matanias-descendiente-de-zatu
+- matanias-abuelo-de-hanan
+- matanias-levita-de-zorobabel
+- matanias-portero

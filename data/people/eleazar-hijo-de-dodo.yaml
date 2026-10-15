@@ -13,6 +13,7 @@ distinct_from:
 - eleazar-hijo-de-mahli
 - eleazar-hijo-de-finehas
 - eleazar-descendiente-de-paros
+- eleazar-sacerdote-de-la-inauguracion
 summary: Ahohíta, uno de los tres guerreros más destacados de David. Cuando los israelitas se retiraron, él siguió abatiendo
   filisteos hasta que ya no podía soltar la espada.
 reason: Perspicacia «Eleazar», núm. 3; 2Sa 23:9, 10, 16.
@@ -45,5 +46,5 @@ relations:
   reason: '2Sa 23:9: estaba con David entre sus tres guerreros más fuertes.'
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified

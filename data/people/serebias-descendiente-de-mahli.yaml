@@ -11,6 +11,8 @@ sources:
 - it-serebias
 - esdras-8
 - it-mahli
+- nehemias-10
+- nehemias-12
 links:
 - title: 'Perspicacia: «Serebías»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sereb%C3%ADas/
@@ -54,5 +56,21 @@ relations:
   reason: 'Perspicacia «Serebías», núm. 2: es probable que el levita de Esd 8:18 sea el jefe de los sacerdotes de Esd 8:24.'
   checked_on: '2026-10-14'
   status: verified
+- type: same_as
+  person: serebias-levita-que-explico-la-ley
+  certainty: possible
+  inferred: true
+  sources:
+  - it-serebias
+  - nehemias-8
+  - nehemias-10
+  - nehemias-12
+  reason: 'Perspicacia «Serebías», núm. 3: el levita que explicaba la Ley (Ne 8:7) podría ser el núm. 2.'
+  checked_on: '2026-10-14'
+  status: verified
+disambiguation: 'Serebías núm. 2 de Perspicacia: el levita descendiente de Mahlí que fue con Esdras (Esd 8:18); no el levita
+  del regreso con Zorobabel.'
 checked_on: '2026-10-14'
 status: verified
+distinct_from:
+- serebias-levita-de-zorobabel

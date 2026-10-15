@@ -30,5 +30,7 @@ relations:
   reason: 'Gé 36:39: hija de Matred; Perspicacia «Matred» dice que era su madre.'
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-14'
 status: verified
+distinct_from:
+- mehetabel-antepasado-de-semaya

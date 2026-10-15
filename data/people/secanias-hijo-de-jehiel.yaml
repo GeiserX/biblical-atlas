@@ -45,7 +45,7 @@ relations:
   inferred: false
   checked_on: '2026-10-13'
   status: verified
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified
 disambiguation: El que propuso a Esdras el pacto de Esd 10:2-4; no los demás Secanías que registra Perspicacia.
 distinct_from:
@@ -54,3 +54,6 @@ distinct_from:
 - secanias-descendiente-de-paros
 - secanias-hijo-de-abdias
 - secanias-hijo-de-jahaziel
+- secanias-padre-de-semaya-el-guarda
+- secanias-hijo-de-ara
+- secanias-sacerdote-de-zorobabel

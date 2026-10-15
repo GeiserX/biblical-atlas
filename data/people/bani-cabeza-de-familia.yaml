@@ -10,6 +10,7 @@ reason: Perspicacia «Baní», núm. 4; Esd 2:10.
 sources:
 - it-bani
 - esdras-2
+- nehemias-7
 links:
 - title: 'Perspicacia: «Baní»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ban%C3%AD/
@@ -25,7 +26,7 @@ relations:
   reason: Perspicacia «Baní», núm. 3, ve posible que aquel cabeza de familia sea este de Esd 2:10.
   checked_on: '2026-10-13'
   status: verified
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified
 distinct_from:
 - bani-el-gadita
@@ -33,5 +34,13 @@ distinct_from:
 - binui-cabeza-de-familia
 - binui-descendiente-de-pahat-moab
 - binui-levita
+- bani-padre-de-rehum
+- binui-hijo-de-henadad
+- bani-levita-que-explico-la-ley
+- bani-segundo-de-la-plataforma
+- bani-cabeza-del-pueblo
+- bani-levita-firmante
+- binui-levita-firmante
+- bani-hijo-de-hasabias
 disambiguation: 'Baní núm. 4 de Perspicacia, Binuí en Nehemías: cabeza de la familia de Esd 2:10. Perspicacia ve posible que
   sea el Baní descendiente de Pérez.'

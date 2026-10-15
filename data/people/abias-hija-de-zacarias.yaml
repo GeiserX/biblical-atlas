@@ -14,6 +14,8 @@ distinct_from:
 - abias-hijo-de-samuel
 - abias-esposa-de-hezron
 - abias-hijo-de-beker
+- abias-sacerdote-firmante
+- abias-sacerdote-de-zorobabel
 summary: Hija de Zacarías. Se casó con Acaz, rey de Judá, y fue la madre de su hijo y sucesor Ezequías.
 reason: Perspicacia «Abías», núm. 7, y «Abí»; 2Re 18:1, 2.
 sources:
@@ -40,5 +42,5 @@ relations:
   reason: '2Re 18:2: Abí hija de Zacarías.'
   checked_on: '2026-10-13'
   status: verified
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified

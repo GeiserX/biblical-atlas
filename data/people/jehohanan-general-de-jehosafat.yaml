@@ -50,10 +50,13 @@ relations:
   status: verified
 disambiguation: Jefe del ejército de Jehosafat (Perspicacia «Jehohanán», núm. 2); no el portero hijo de Meselemías. Perspicacia
   ve posible que sea el padre de Ismael.
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified
 distinct_from:
 - jehohanan-padre-de-azarias
 - jehohanan-hijo-de-meselemias
 - jehohanan-descendiente-de-bebai
 - jehohanan-hijo-de-eliasib
+- jehohanan-hijo-de-tobias
+- jehohanan-de-la-casa-de-amarias
+- jehohanan-sacerdote-de-la-inauguracion

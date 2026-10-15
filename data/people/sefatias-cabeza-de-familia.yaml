@@ -11,11 +11,12 @@ sources:
 - it-sefatias
 - esdras-2
 - esdras-8
+- nehemias-7
 links:
 - title: 'Perspicacia: «Sefatías»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sefat%C3%ADas/
   type: perspicacia
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified
 distinct_from:
 - sefatias-el-harifita
@@ -25,5 +26,6 @@ distinct_from:
 - sefatias-hijo-de-matan
 - sefatias-hijo-de-reuel
 - sefatias-siervo-de-salomon
+- sefatias-hijo-de-mahalalel
 disambiguation: 'Sefatías núm. 6 de Perspicacia: fundador de la familia de Esd 2:4, no el de los siervos de Salomón de Esd
   2:57.'

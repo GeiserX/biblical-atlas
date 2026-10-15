@@ -9,6 +9,7 @@ reason: Perspicacia «Galal», núm. 2; 1Cr 9:16.
 sources:
 - it-galal
 - 1-cronicas-9
+- nehemias-11
 links:
 - title: 'Perspicacia: «Galal»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Galal/
@@ -21,10 +22,11 @@ relations:
   sources:
   - 1-cronicas-9
   - it-galal
+  - nehemias-11
   reason: '1Cr 9:16: Galal, hijo de Jedutún. Perspicacia «Jedutún», núm. 1, cita este versículo entre sus descendientes.'
-  checked_on: '2026-10-12'
+  checked_on: '2026-10-14'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-14'
 status: verified
 distinct_from:
 - galal-levita-repatriado

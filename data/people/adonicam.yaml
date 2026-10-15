@@ -5,16 +5,24 @@ names:
 - name: Adonicam
 - name: Adoniqam
 perspicacia: '1200000111'
-summary: Fundador de una casa paterna israelita; 666 de los suyos volvieron con Zorobabel. Perspicacia escribe Adoniqam.
+summary: Fundador de una casa paterna israelita; 666 de los suyos según Esd 2, 667 según Ne 7, volvieron con Zorobabel. Perspicacia
+  escribe Adoniqam.
 reason: Perspicacia «Adoniqam»; Esd 2:13.
 sources:
 - it-adoniqam
 - esdras-2
 - it-adonicam
 - esdras-8
+- nehemias-7
+- it-nehemias-libro
 links:
 - title: 'Perspicacia: «Adoniqam»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Adoniqam/
   type: perspicacia
-checked_on: '2026-10-13'
+history:
+- date: '2026-10-14'
+  change: El resumen daba como hecho la cifra de Esd 2; Ne 7 da otra. Perspicacia «Nehemías, Libro de» ve posible que las
+    dos listas salgan de registros distintos.
+  source: nehemias-7
+checked_on: '2026-10-14'
 status: verified

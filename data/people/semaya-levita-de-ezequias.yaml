@@ -35,6 +35,13 @@ distinct_from:
 - semaya-enviado-a-casifia
 - semaya-descendiente-de-harim
 - semaya-sacerdote-descendiente-de-harim
+- semaya-guarda-de-la-puerta-oriental
+- semaya-hijo-de-delaya
+- semaya-sacerdote-repatriado
+- semaya-de-la-procesion-del-muro
+- semaya-hijo-de-matanias
+- semaya-musico-de-la-procesion
+- semaya-sacerdote-de-la-inauguracion
 relations:
 - type: kin
   person: jedutun-musico
@@ -46,5 +53,5 @@ relations:
   reason: 2Cr 29:14 lo cuenta entre los hijos de Jedutún; Perspicacia «Semaya», núm. 8, lo llama su descendiente.
   checked_on: '2026-10-13'
   status: verified
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified

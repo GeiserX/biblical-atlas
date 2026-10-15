@@ -104,8 +104,9 @@ relations:
   checked_on: '2026-09-29'
   status: verified
 perspicacia: 1200000640#1
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified
 distinct_from:
 - benjamin-hijo-de-bilhan
 - benjamin-descendiente-de-harim
+- benjamin-companero-de-hasub

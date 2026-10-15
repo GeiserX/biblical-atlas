@@ -17,6 +17,9 @@ distinct_from:
 - jonatan-hijo-de-carea
 - jonatan-padre-de-ebed
 - jonatan-hijo-de-asahel
+- johanan-hijo-de-joiada
+- jonatan-de-la-casa-de-maluki
+- jonatan-hijo-de-semaya
 summary: Hijo de Uzías. Guardaba los almacenes del rey David repartidos por el campo, ciudades, aldeas y torres, aparte del
   tesoro que el rey tenía en Jerusalén.
 reason: Perspicacia «Jonatán», núm. 6; 1Cr 27:25.
@@ -47,5 +50,5 @@ relations:
     rey.'
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified

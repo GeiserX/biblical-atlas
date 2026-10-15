@@ -25,9 +25,10 @@ relations:
   inferred: false
   checked_on: '2026-10-13'
   status: verified
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified
 disambiguation: El de los hijos de Pahat-Moab de Esd 10:30; no los demás Adná que registra Perspicacia.
 distinct_from:
 - adna-de-manases
 - adna-general-de-jehosafat
+- adna-de-la-casa-de-harim

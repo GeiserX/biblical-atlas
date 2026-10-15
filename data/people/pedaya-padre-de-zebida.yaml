@@ -28,8 +28,12 @@ relations:
   reason: 2Re 23:36 lo llama Pedaya de Rumá; Perspicacia dice que vivía allí.
   checked_on: '2026-09-30'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-14'
 status: verified
 distinct_from:
 - pedaya-hijo-de-joaquin
 - pedaya-padre-de-joel
+- pedaya-descendiente-de-paros
+- pedaya-junto-a-esdras
+- pedaya-hijo-de-colaya
+- pedaya-encargado-de-los-almacenes

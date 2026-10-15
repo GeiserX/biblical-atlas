@@ -30,6 +30,10 @@ distinct_from:
 - azarias-sacerdote-repatriado
 - seraya-repatriado
 - azarias-hijo-de-merayot
+- azarias-hijo-de-maaseya
+- azarias-levita-que-explico-la-ley
+- azarias-sacerdote-firmante
+- azarias-de-la-procesion-del-muro
 summary: Hijo del rey Jehosafat de Judá, del mismo nombre que otro de sus hermanos. Recibió de su padre riquezas y ciudades
   fortificadas; Jehoram lo mató al quedarse con el reino.
 reason: 'Perspicacia «Azarías», núm. 8: dos hijos de Jehosafat con el mismo nombre, que en hebreo se escribe de forma algo
@@ -70,5 +74,5 @@ relations:
   reason: '2Cr 21:2: los dos están entre los hijos de Jehosafat, hermanos de Jehoram.'
   checked_on: '2026-10-13'
   status: verified
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified

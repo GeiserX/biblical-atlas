@@ -25,10 +25,12 @@ relations:
   checked_on: '2026-10-13'
   status: verified
 disambiguation: Príncipe de Jehosafat que enseñó la Ley en Judá (Perspicacia «Micaya», núm. 3); no el profeta hijo de Imlá.
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified
 distinct_from:
 - maaca-hija-de-uriel
 - micaya-hijo-de-guemarias
 - micaya-hijo-de-imla
 - micaya-padre-de-acbor
+- mica-hijo-de-zicri
+- micaya-trompetista-de-la-inauguracion

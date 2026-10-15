@@ -32,7 +32,7 @@ links:
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Abd%C3%ADas-Libro-de/
   type: perspicacia
 perspicacia: 1200003287#8
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified
 not_claimed:
 - 'Dónde nació, dónde vivió ni de qué tribu era: «Toda Escritura» dice que el libro no da ninguno de esos datos.'
@@ -47,3 +47,5 @@ distinct_from:
 - abdias-principe-de-jehosafat
 - abdias-levita-de-josias
 - abdias-hijo-de-jehiel
+- abdias-sacerdote-firmante
+- abdias-portero

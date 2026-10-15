@@ -9,6 +9,7 @@ reason: Perspicacia «Bigvai», núm. 2; Esd 2:2.
 sources:
 - it-bigvai
 - esdras-2
+- nehemias-7
 links:
 - title: 'Perspicacia: «Bigvai»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Bigvai/
@@ -19,12 +20,14 @@ relations:
   inferred: false
   sources:
   - esdras-2
+  - nehemias-7
   reason: 'Esd 2:1, 2: volvió con Zorobabel a Jerusalén y Judá, donde cada familia fue a su ciudad.'
-  checked_on: '2026-10-13'
+  checked_on: '2026-10-14'
   status: verified
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified
 distinct_from:
 - bigvai-cabeza-de-familia
+- bigvai-cabeza-del-pueblo
 disambiguation: 'Bigvái núm. 2 de Perspicacia: uno de los jefes del regreso de 537 (Esd 2:2), no el antepasado de la familia
   de Esd 2:14.'

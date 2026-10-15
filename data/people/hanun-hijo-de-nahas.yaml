@@ -63,5 +63,8 @@ relations:
   reason: '2Sa 10:4-6: humilla a los enviados de David y, al ver que se ha ganado su odio, contrata sirios contra él.'
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-14'
 status: verified
+distinct_from:
+- hanun-de-la-puerta-del-valle
+- hanun-hijo-de-zalaf

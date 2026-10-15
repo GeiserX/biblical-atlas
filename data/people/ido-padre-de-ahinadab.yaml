@@ -15,7 +15,7 @@ links:
 - title: 'Perspicacia: «Idó»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Id%C3%B3/
   type: perspicacia
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified
 distinct_from:
 - ido-padre-de-berekias
@@ -23,3 +23,4 @@ distinct_from:
 - ido-hijo-de-zacarias
 - ido-hombre-de-visiones
 - ido-de-casifia
+- ido-sacerdote-de-zorobabel

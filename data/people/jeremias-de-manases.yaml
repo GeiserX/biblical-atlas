@@ -13,6 +13,9 @@ distinct_from:
 - jeremias-profeta
 - jeremias-quinto-gadita
 - jeremias-hijo-de-habazinias
+- jeremias-sacerdote-firmante
+- jeremias-de-la-procesion-del-muro
+- jeremias-sacerdote-de-zorobabel
 summary: Jefe de familia manasita al este del Jordán en tiempos de los reyes. Sus descendientes acabaron desterrados a Asiria.
 reason: Perspicacia «Jeremías», núm. 4; 1Cr 5:23-26.
 sources:
@@ -40,5 +43,5 @@ relations:
   reason: '1Cr 5:23, 24: jefe de una familia manasita del este del Jordán.'
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-14'
 status: verified

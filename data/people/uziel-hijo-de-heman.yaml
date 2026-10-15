@@ -32,7 +32,7 @@ relations:
   reason: 1Cr 25:4, 18 lo cuenta entre los hijos de Hemán.
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified
 distinct_from:
 - azarel-el-coreita
@@ -42,3 +42,6 @@ distinct_from:
 - uziel-hijo-de-isi
 - uziel-levita-de-ezequias
 - azarel-descendiente-de-binui
+- uziel-hijo-de-harhaya
+- azarel-hijo-de-ahzai
+- azarel-musico-de-la-procesion

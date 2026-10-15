@@ -12,6 +12,8 @@ distinct_from:
 - selemias-portero
 - selemias-descendiente-de-binui-1
 - selemias-descendiente-de-binui-2
+- selemias-padre-de-hananias
+- selemias-encargado-de-los-almacenes
 summary: Hijo de Cusí, padre de Netanías y abuelo de Jehudí, el oficial de la corte de Jehoiaquim.
 reason: Perspicacia «Selemías», núm. 2; Jer 36:14.
 sources:
@@ -35,5 +37,5 @@ relations:
   reason: Jer 36:14 lo llama Selemías hijo de Cusí; Perspicacia «Selemías», núm. 2, lo repite.
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified

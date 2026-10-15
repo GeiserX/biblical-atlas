@@ -9,10 +9,13 @@ reason: Perspicacia «Tobías», núm. 1; Esd 2:60.
 sources:
 - it-tobias
 - esdras-2
+- nehemias-7
 links:
 - title: 'Perspicacia: «Tobías»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Tob%C3%ADas/
   type: perspicacia
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified
 disambiguation: 'Tobías núm. 1 de Perspicacia: antepasado de los que no probaron su origen (Esd 2:60), no el opositor de Nehemías.'
+distinct_from:
+- tobias-el-ammonita

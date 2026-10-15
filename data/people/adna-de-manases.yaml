@@ -28,8 +28,9 @@ relations:
   reason: '1Cr 12:20, 21: se pasó a David, lo ayudó contra los saqueadores y llegó a ser jefe en su ejército.'
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified
 distinct_from:
 - adna-general-de-jehosafat
 - adna-descendiente-de-pahat-moab
+- adna-de-la-casa-de-harim
