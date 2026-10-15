@@ -32,7 +32,6 @@ relations:
   - 1-samuel-22
   - it-gad
   - 2-samuel-24
-  - 1-cronicas-21
   - 2-cronicas-29
   reason: '1Sa 22:5 lo llama el profeta Gad; Perspicacia «Gad», núm. 3: profeta y visionario del tiempo de David.'
   checked_on: '2026-10-13'
@@ -51,5 +50,10 @@ relations:
     Natán el profeta. Perspicacia «Gad», núm. 3, le da los dos títulos.'
   checked_on: '2026-10-15'
   status: verified
-checked_on: '2026-10-13'
+history:
+- date: '2026-10-15'
+  change: 'El cargo prophet deja de citar 1 Crónicas 21: ese capítulo solo lo llama hombre de visiones (1Cr 21:9), que es
+    el cargo visionary.'
+  source: 1-cronicas-21
+checked_on: '2026-10-15'
 status: verified
