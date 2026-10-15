@@ -37,6 +37,8 @@ sources:
 - santiago-1
 - si-santiago
 - judas-1
+- it-anciano
+- it-apostol
 distinct_from:
 - santiago-hijo-de-zebedeo
 - santiago-hijo-de-alfeo
@@ -118,6 +120,28 @@ relations:
   reason: La nota de Mt 13:54 dice que de Nazaret era la familia cercana de Jesús; 13:56 pone allí a sus hermanas.
   checked_on: '2026-09-29'
   status: verified
+- type: holds_office
+  office: elder
+  inferred: true
+  sources:
+  - it-santiago
+  - it-anciano
+  reason: Perspicacia «Santiago», núm. 4, dice que debió de ser superintendente de la congregación de Jerusalén (Hch 12:17),
+    y «Anciano» explica que superintendente y anciano son la misma función y lo pone junto a Pablo y Pedro supervisando a
+    otros ancianos.
+  checked_on: '2026-10-15'
+  status: verified
+- type: holds_office
+  office: congregation_apostle
+  inferred: true
+  sources:
+  - galatas-1
+  - it-santiago
+  - it-apostol
+  reason: 'Gál 1:19: Pablo lo cuenta entre los apóstoles. Perspicacia «Apóstol» (apostolado en las congregaciones) y «Santiago»,
+    núm. 4, lo ven, al parecer, apóstol en sentido amplio, enviado de la congregación de Jerusalén; no fue de los doce.'
+  checked_on: '2026-10-15'
+  status: verified
 links:
 - title: 'Perspicacia: «Santiago»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Santiago/
@@ -139,5 +163,9 @@ history:
 - date: '2026-09-29'
   change: La razón cita de dónde sale que estaba casado.
   source: 1-corintios-9
-checked_on: '2026-10-14'
+- date: '2026-10-15'
+  change: El cargo pasa de pregunta abierta a `congregation_apostle`, el sentido amplio que Perspicacia «Apóstol» distingue de los
+    doce y de Pablo, con Gál 1:19 y «Santiago», núm. 4.
+  source: it-apostol
+checked_on: '2026-10-15'
 status: verified

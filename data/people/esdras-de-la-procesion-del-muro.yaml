@@ -1,0 +1,23 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: esdras-de-la-procesion-del-muro
+name: Esdras
+names:
+- name: Esdras
+perspicacia: null
+summary: Uno de los que, el día de la inauguración del muro de Jerusalén, iban detrás del primer coro con Hosaya y con la
+  mitad de los príncipes de Judá. Puede ser el copista del v. 36; jw.org no lo dice.
+reason: Ne 12:31-33. Perspicacia «Esdras» tiene solo dos entradas, el copista y el sacerdote de 537, y ninguna cita este
+  versículo.
+sources:
+- nehemias-12
+- it-esdras
+links:
+- title: 'Perspicacia: «Esdras»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Esdras/
+  type: perspicacia
+checked_on: '2026-10-15'
+status: verified
+distinct_from:
+- esdras-sacerdote-de-zorobabel
+disambiguation: El Esdras que Ne 12:33 nombra entre Azarías y Mesulam en la procesión del muro; puede ser el copista, que el
+  v. 36 nombra con el otro grupo, y Perspicacia «Esdras» no lo decide.

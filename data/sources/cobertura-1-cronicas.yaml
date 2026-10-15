@@ -3170,3 +3170,17 @@ it-hagrita:
   level: 1
   published: null
   checked_on: '2026-10-12'
+it-secretario:
+  title: Secretario
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Secretario/
+  level: 1
+  published: null
+  checked_on: '2026-10-15'
+it-hombre-de-visiones:
+  title: Hombre de visiones
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hombre-de-visiones/
+  level: 1
+  published: null
+  checked_on: '2026-10-15'

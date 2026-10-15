@@ -40,6 +40,19 @@ relations:
   reason: 1Sa 11:1 lo llama el ammonita y 1Sa 12:12 lo presenta como rey de los ammonitas.
   checked_on: '2026-10-12'
   status: verified
+- type: tie
+  person: david
+  caption: le mostró amor leal
+  inverse_caption: recibió de él amor leal
+  inferred: false
+  sources:
+  - 1-cronicas-19
+  - 2-samuel-10
+  - it-hanun
+  reason: 'David manda consolar a Hanún porque Nahás, su padre, lo había tratado con amor leal (2Sa 10:2; 1Cr 19:2); Perspicacia
+    «Hanún», núm. 1, da ese trato como el motivo del envío.'
+  checked_on: '2026-10-15'
+  status: verified
 history:
 - date: '2026-09-29'
   change: La ficha cubre también al Nahás de 2Sa 10, padre de Hanún, porque Perspicacia lo pone en la misma entrada núm. 1.
@@ -54,7 +67,7 @@ history:
 - date: '2026-09-29'
   change: La entrada núm. 1 incluye al padre de Hanún (2Sa 10:1, 2).
   source: 2-samuel-10
-checked_on: '2026-10-12'
+checked_on: '2026-10-15'
 status: verified
 distinct_from:
 - nahas-padre-de-abigail

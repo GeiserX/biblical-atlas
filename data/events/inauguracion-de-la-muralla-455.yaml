@@ -19,6 +19,7 @@ people:
 - esdras
 - hosaya-principe-de-juda
 - azarias-de-la-procesion-del-muro
+- esdras-de-la-procesion-del-muro
 - mesulam-de-la-procesion-del-muro
 - juda-de-la-procesion-del-muro
 - benjamin-companero-de-hasub
@@ -62,5 +63,5 @@ sources:
 - it-ezer
 - it-puerta
 - si-nehemias
-checked_on: '2026-10-14'
+checked_on: '2026-10-15'
 status: verified

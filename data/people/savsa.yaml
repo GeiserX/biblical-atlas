@@ -11,6 +11,7 @@ sources:
 - it-savsa
 - it-seraya
 - 1-cronicas-18
+- it-secretario
 links:
 - title: 'Perspicacia: «Savsá»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Savs%C3%A1/
@@ -44,5 +45,14 @@ relations:
     cambios en el cargo; «Savsá» remite allí.
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+- type: holds_office
+  office: secretary
+  inferred: false
+  sources:
+  - 1-cronicas-18
+  - it-secretario
+  reason: '1Cr 18:16 lo pone como secretario en la lista de los funcionarios de David.'
+  checked_on: '2026-10-15'
+  status: verified
+checked_on: '2026-10-15'
 status: verified

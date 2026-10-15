@@ -4,8 +4,8 @@ name: Azarías
 names:
 - name: Azarías
 perspicacia: 1200000486#18
-disambiguation: Azarías hijo de Merayot (Esd 7:3), núm. 18 de Perspicacia; quizá el hijo de Johanán (núm. 14), pero no
-  ninguno de los demás Azarías que numera.
+disambiguation: Azarías hijo de Merayot (Esd 7:3), núm. 18 de Perspicacia; quizá el hijo de Johanán (núm. 14) y el sacerdote
+  que se enfrentó a Uzías, pero no ninguno de los demás Azarías que numera.
 distinct_from:
 - abednego
 - azarias-hijo-de-ahimaaz
@@ -27,7 +27,6 @@ distinct_from:
 - azarias-hijo-de-oded
 - azarias-padre-de-joel
 - azarias-quinto-hijo-de-jehosafat
-- azarias-sacerdote-de-tiempos-de-uzias
 - azarias-segundo-hijo-de-jehosafat
 - azarias-hijo-de-maaseya
 - azarias-levita-que-explico-la-ley
@@ -35,12 +34,13 @@ distinct_from:
 - azarias-de-la-procesion-del-muro
 summary: Sacerdote de la línea de Aarón que la genealogía de Esdras pone entre Merayot y Amarías. Perspicacia lo da como hijo
   de Merayot y antepasado de Esdras; quizá sea el Azarías hijo de Johanán.
-reason: Perspicacia «Azarías», núm. 18, y «Amarías», núm. 4; Esd 7:3 y su referencia marginal.
+reason: Perspicacia «Azarías», núm. 18, «Amarías», núm. 4, y el cuadro de «Sumo sacerdote»; Esd 7:3 y su referencia marginal.
 sources:
 - it-azarias
 - esdras-7
 - it-merayot
 - it-amarias
+- it-sumo-sacerdote
 links:
 - title: 'Perspicacia: «Azarías»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Azar%C3%ADas/
@@ -57,5 +57,22 @@ relations:
   reason: Esd 7:3 lo llama hijo de Merayot; Perspicacia «Azarías», núm. 18, lo recoge así, y «Merayot», núm. 1, cita ese versículo.
   checked_on: '2026-10-13'
   status: verified
-checked_on: '2026-10-14'
+- type: same_as
+  person: azarias-sacerdote-de-tiempos-de-uzias
+  certainty: possible
+  inferred: true
+  sources:
+  - esdras-7
+  - it-sumo-sacerdote
+  - it-azarias
+  reason: La referencia de Esd 7:3 lleva al Azarías de los días de Ezequías; el cuadro de Perspicacia «Sumo sacerdote» ve
+    posible que sea el hijo de Johanán, y a este lo da como probable el que reprendió a Uzías.
+  checked_on: '2026-10-15'
+  status: verified
+history:
+- date: '2026-10-15'
+  change: Deja de excluir al sacerdote que se enfrentó a Uzías; el cuadro de Perspicacia «Sumo sacerdote» ve posible que el
+    Azarías de la referencia de Esd 7:3 sea el hijo de Johanán, probable autor de esa reprensión.
+  source: it-sumo-sacerdote
+checked_on: '2026-10-15'
 status: verified

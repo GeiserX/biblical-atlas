@@ -85,6 +85,7 @@ sources:
 - si-2-pedro
 - 2-pedro-3
 - 1-pedro-1
+- it-anciano
 distinct_from:
 - simon-el-mago
 - simon-el-curtidor
@@ -316,6 +317,16 @@ relations:
     su primer párrafo.'
   checked_on: '2026-10-14'
   status: verified
+- type: holds_office
+  office: elder
+  inferred: false
+  sources:
+  - 1-pedro-5
+  - it-anciano
+  reason: '1Pe 5:1: Pedro se dirige a los ancianos diciendo que él también lo es. Perspicacia «Anciano», en el apartado de la
+    congregación cristiana, lo nombra con Pablo como anciano con autoridad de apóstol que supervisaba a otros ancianos.'
+  checked_on: '2026-10-15'
+  status: verified
 links:
 - title: 'Perspicacia: «Pedro»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Pedro/
@@ -348,5 +359,5 @@ history:
   change: 'La relación lived_in con Babilonia (c. 62-64) dice ahora por qué es residencia y no un viaje: Perspicacia «Pedro»
     habla de su estancia allí sin ruta. Suma «Pedro» y «Babilonia» a sus fuentes; las demás relaciones no cambian.'
   source: 1-pedro-5
-checked_on: '2026-10-14'
+checked_on: '2026-10-15'
 status: verified

@@ -32,7 +32,7 @@ distinct_from:
 - azarias-levita-que-explico-la-ley
 - azarias-sacerdote-firmante
 - azarias-de-la-procesion-del-muro
-summary: Sacerdote hijo de Johanán, que ejerció en el templo de Salomón. Perspicacia lo llama sumo sacerdote, ve posible que
+summary: Sacerdote hijo de Johanán, que ejerció en el templo de Salomón. Perspicacia lo llama sumo sacerdote, ve probable que
   echara del templo a Uzías y le atribuye, con reservas, la respuesta a Ezequías sobre las contribuciones (2Cr 31:10).
 reason: Perspicacia «Azarías», núm. 14; 1Cr 6:9, 10.
 sources:
@@ -41,6 +41,7 @@ sources:
 - 2-cronicas-31
 - esdras-7
 - it-amarias
+- it-sumo-sacerdote
 links:
 - title: 'Perspicacia: «Azarías»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Azar%C3%ADas/
@@ -76,13 +77,15 @@ relations:
   status: verified
 - type: same_as
   person: azarias-sacerdote-de-tiempos-de-uzias
-  certainty: possible
+  certainty: probable
   inferred: true
   sources:
   - it-azarias
   - 2-cronicas-26
-  reason: 'Perspicacia «Azarías», núm. 14: quizás fue este quien mandó salir del templo al rey Uzías (2Cr 26:16-21).'
-  checked_on: '2026-10-13'
+  - it-sumo-sacerdote
+  reason: 'El cuadro de Perspicacia «Sumo sacerdote» pone junto a Azarías II, hijo de Johanán, que probablemente fue él quien
+    reprendió a Uzías (2Cr 26:17-20); «Azarías», núm. 14, lo deja en un quizás.'
+  checked_on: '2026-10-15'
   status: verified
 - inferred: false
   type: kin
@@ -103,9 +106,10 @@ relations:
   - esdras-7
   - it-amarias
   - it-azarias
-  reason: La referencia marginal del Azarías de Esd 7:3 lleva al pasaje que Perspicacia «Azarías», núm. 14, atribuye a este,
-    y «Amarías», núm. 4, une su Amarías con el de Esd 7:3.
-  checked_on: '2026-10-14'
+  - it-sumo-sacerdote
+  reason: La referencia del Azarías de Esd 7:3 lleva al de los días de Ezequías, y el cuadro de Perspicacia «Sumo sacerdote»
+    ve posible que sea este; «Amarías», núm. 4, une su Amarías con el de Esd 7:3.
+  checked_on: '2026-10-15'
   status: verified
 history:
 - date: '2026-10-13'
@@ -116,5 +120,13 @@ history:
   change: 'Deja de excluir al Azarías de Esd 7:3: la referencia de ese versículo lleva a 2Cr 31:10 y Perspicacia «Amarías»,
     núm. 4, une los dos pasajes.'
   source: esdras-7
-checked_on: '2026-10-14'
+- date: '2026-10-15'
+  change: El same_as con el Azarías de Esd 7:3 cita también el cuadro de Perspicacia «Sumo sacerdote»; la certeza sigue en
+    possible.
+  source: it-sumo-sacerdote
+- date: '2026-10-15'
+  change: 'El same_as con el sacerdote que se enfrentó a Uzías sube de possible a probable: el cuadro de Perspicacia «Sumo
+    sacerdote» lo da como probable, y la regla de fundir o separar sigue a la fuente que lo dice.'
+  source: it-sumo-sacerdote
+checked_on: '2026-10-15'
 status: verified

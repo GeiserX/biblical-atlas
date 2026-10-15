@@ -9,9 +9,25 @@ reason: Perspicacia «Josifías»; Esd 8:10.
 sources:
 - it-josifias
 - esdras-8
+- it-bani
+- tnm-1987-esdras-8
 links:
 - title: 'Perspicacia: «Josifías»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Josif%C3%ADas/
   type: perspicacia
-checked_on: '2026-10-13'
+relations:
+- type: kin
+  person: bani-cabeza-de-familia
+  word: ancestor
+  inferred: true
+  sources:
+  - esdras-8
+  - tnm-1987-esdras-8
+  - it-josifias
+  - it-bani
+  reason: Perspicacia «Josifías» lo cuenta en la casa paterna de Baní de Esd 8:10; la nota de la TNM de 1987 remite esa
+    casa a la del Baní núm. 4, que volvió con Zorobabel.
+  checked_on: '2026-10-15'
+  status: verified
+checked_on: '2026-10-15'
 status: verified

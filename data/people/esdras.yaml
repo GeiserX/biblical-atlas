@@ -3,7 +3,8 @@ id: esdras
 name: Esdras
 names:
 - name: Esdras
-disambiguation: El sacerdote y copista de 468 a.e.c.; no el sacerdote homónimo que volvió con Zorobabel en 537.
+disambiguation: El sacerdote y copista de 468 a.e.c.; no el sacerdote homónimo que volvió con Zorobabel en 537 ni el Esdras
+  de la procesión del muro (Ne 12:33).
 date:
   from: -467
   to: -454
@@ -108,6 +109,17 @@ relations:
   - it-seraya
   reason: Esd 7:1 lo llama hijo de Seraya; Perspicacia «Seraya», núm. 6, ve al menos dos generaciones sin nombrar entre ellos.
   checked_on: '2026-09-30'
+  status: verified
+- type: same_as
+  person: esdras-de-la-procesion-del-muro
+  certainty: possible
+  inferred: true
+  sources:
+  - nehemias-12
+  - it-esdras
+  reason: 'Ne 12:36 nombra al copista en la misma procesión, con el otro grupo; ninguna fuente de jw.org dice si el Esdras del
+    v. 33 es él u otro, así que la identidad queda posible.'
+  checked_on: '2026-10-15'
   status: verified
 perspicacia: 1200001475#1
 history:

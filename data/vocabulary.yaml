@@ -516,6 +516,10 @@ outside:
     caption: compañero de crianza
     inverse_caption: compañero de crianza
     why: Dice con quién se crio, no un trato entre ellos; solo sale en este par.
+  - type: accompanies
+    caption: compañero de armas
+    inverse_caption: compañero de armas
+    why: Es la imagen del soldado que Pablo aplica a quien predica con él, no un trato; Epafrodito, al que también se la da (Flp 2:25), la lleva en la razón de colaborador.
   - type: appears_to
     caption: se le aparece camino de Damasco
     inverse_caption: lo ve resucitado camino de Damasco
@@ -540,6 +544,14 @@ outside:
     caption: pagado por él
     inverse_caption: le pagó
     why: Dice un soborno de un momento (Ne 6:12, 13), no un trato de señor y siervo ni una alianza; solo lo llevan Semaya hijo de Delayá con Tobías y con Sanbalat.
+  - type: tie
+    caption: le mostró amor leal
+    inverse_caption: recibió de él amor leal
+    why: Dice un favor que el texto no detalla (2Sa 10:2; 1Cr 19:2); ni la Biblia ni Perspicacia llaman a Nahás amigo ni aliado de David. Solo sale en este par.
+  - type: tie
+    caption: no respetaba su autoridad y hablaba mal de él
+    inverse_caption: lo reprendió por escrito por no respetar su autoridad
+    why: Cuenta cómo trató uno al otro en un caso concreto (3Jn 9, 10); llamarlo enemigo diría más que las fuentes, que hablan de falta de respeto a su autoridad. Solo sale en este par.
 
 # Un cargo tiene un solo texto en español. Si lo ejercen hombres y mujeres y el español los distingue, son dos
 # cargos: king y queen, prophet y prophetess. El segundo se añade cuando una fuente llama así a alguien.
@@ -557,9 +569,13 @@ offices:
   priest: {es: sacerdote}
   prophet: {es: profeta}
   prophetess: {es: profetisa}
+  visionary: {es: hombre de visiones}
   judge: {es: juez}
   apostle: {es: apóstol}
+  congregation_apostle: {es: apóstol de una congregación}
+  elder: {es: anciano}
   leader: {es: caudillo}
+  secretary: {es: secretario}
 
 certainty:
   probable: {verb: probablemente la misma persona}
