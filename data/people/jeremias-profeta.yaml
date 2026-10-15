@@ -282,7 +282,7 @@ relations:
   checked_on: '2026-10-12'
   status: verified
 perspicacia: 1200002421#6
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified
 distinct_from:
 - jeremias-de-libna
@@ -291,3 +291,6 @@ distinct_from:
 - jeremias-el-benjaminita
 - jeremias-quinto-gadita
 - jeremias-decimo-gadita
+- jeremias-sacerdote-firmante
+- jeremias-de-la-procesion-del-muro
+- jeremias-sacerdote-de-zorobabel

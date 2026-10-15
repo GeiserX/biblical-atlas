@@ -1,0 +1,26 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: azarel-musico-de-la-procesion
+name: Azarel
+names:
+- name: Azarel
+perspicacia: 1200000485#6
+summary: Músico de la procesión que, con Esdras delante, recorrió el muro reconstruido el día de su inauguración. Quizá es
+  el Azarel de la casa de Imer de Ne 11:13.
+reason: Perspicacia «Azarel», núm. 6; Ne 12:31, 36.
+sources:
+- it-azarel
+- nehemias-12
+links:
+- title: 'Perspicacia: «Azarel»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Azarel/
+  type: perspicacia
+relations: []
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- azarel-descendiente-de-binui
+- azarel-el-coreita
+- azarel-hijo-de-jeroham
+- uziel-hijo-de-heman
+disambiguation: 'Azarel núm. 6 de Perspicacia: el músico de la procesión del muro (Ne 12:36); no los demás Azarel que registra
+  Perspicacia «Azarel».'

@@ -1,0 +1,29 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hilquias-junto-a-esdras
+name: Hilquías
+names:
+- name: Hilquías
+perspicacia: 1200002026#8
+disambiguation: El Hilquías que acompañó a Esdras en la lectura de la Ley (Ne 8:4); no el sumo sacerdote de Josías, el padre
+  de Jeremías ni los demás Hilquías.
+distinct_from:
+- hilquias-hijo-de-amzi
+- hilquias-hijo-de-hosa
+- hilquias-hijo-de-salum
+- hilquias-padre-de-eliaquim
+- hilquias-padre-de-guemarias
+- hilquias-padre-de-jeremias
+- hilquias-familia-sacerdotal
+- hilquias-sacerdote-de-zorobabel
+summary: Uno de los que estuvieron a la derecha de Esdras mientras este leía la Ley al pueblo reunido en Jerusalén, en el
+  mes séptimo de 455 a.e.c.
+reason: Perspicacia «Hilquías», núm. 8; Ne 8:4.
+sources:
+- it-hilquias
+- nehemias-8
+links:
+- title: 'Perspicacia: «Hilquías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hilqu%C3%ADas/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified

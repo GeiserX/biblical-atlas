@@ -1,0 +1,30 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: bilga-sacerdote-de-zorobabel
+name: Bilgá
+names:
+- name: Bilgá
+perspicacia: 1200000735#2
+summary: Sacerdote del grupo de Zorobabel (537 a.e.c.). Una generación después, Samúa estaba al frente de su casa paterna.
+reason: Perspicacia «Bilgá», núm. 2; Ne 12:1, 5, 18.
+sources:
+- it-bilga
+- nehemias-12
+links:
+- title: 'Perspicacia: «Bilgá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Bilg%C3%A1/
+  type: perspicacia
+relations:
+- type: holds_office
+  office: priest
+  inferred: false
+  sources:
+  - nehemias-12
+  reason: 'Ne 12:1, 7: va entre los jefes de los sacerdotes que subieron con Zorobabel y Jesúa.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- bilga-de-tiempos-de-david
+disambiguation: 'Bilgá núm. 2 de Perspicacia: el sacerdote del regreso con Zorobabel (Ne 12:5); no los demás Bilgá que registra
+  Perspicacia «Bilgá».'

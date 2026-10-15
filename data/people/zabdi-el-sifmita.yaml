@@ -8,6 +8,7 @@ disambiguation: Zabdí el sifmita, encargado del vino de David; no el judaíta a
 distinct_from:
 - zabdi-abuelo-de-acan
 - zabdi-descendiente-de-simei
+- zicri-hijo-de-asaf
 summary: Sifmita que guardaba el vino de las bodegas del rey David. Perspicacia cree que el gentilicio lo hace de Sifmot o
   de Sefam.
 reason: Perspicacia «Zabdí», núm. 3, y «Sifmita»; 1Cr 27:27.
@@ -32,5 +33,5 @@ relations:
   reason: '1Cr 27:27, 31: guardaba el vino de las bodegas; era uno de los que administraban la hacienda del rey.'
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-14'
 status: verified

@@ -1,0 +1,37 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jehohanan-sacerdote-de-la-inauguracion
+name: Jehohanán
+names:
+- name: Jehohanán
+perspicacia: 1200002374#9
+summary: Sacerdote que se detuvo junto al templo en la inauguración del muro reconstruido.
+reason: Perspicacia «Jehohanán», núm. 9; Ne 12:40-42.
+sources:
+- it-jehohanan
+- nehemias-12
+links:
+- title: 'Perspicacia: «Jehohanán»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jehohan%C3%A1n/
+  type: perspicacia
+relations:
+- type: holds_office
+  office: priest
+  inferred: true
+  sources:
+  - it-jehohanan
+  - nehemias-12
+  reason: Perspicacia «Jehohanán», núm. 9, lo llama sacerdote (Ne 12:42).
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- jehohanan-de-la-casa-de-amarias
+- jehohanan-descendiente-de-bebai
+- jehohanan-general-de-jehosafat
+- jehohanan-hijo-de-eliasib
+- jehohanan-hijo-de-meselemias
+- jehohanan-hijo-de-tobias
+- jehohanan-padre-de-azarias
+- jehohanan-padre-de-ismael
+disambiguation: 'Jehohanán núm. 9 de Perspicacia: el de Ne 12:42; no los demás Jehohanán que registra Perspicacia «Jehohanán».'

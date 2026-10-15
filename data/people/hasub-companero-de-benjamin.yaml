@@ -1,0 +1,32 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hasub-companero-de-benjamin
+name: Hasub
+names:
+- name: Hasub
+perspicacia: 1200001910#2
+disambiguation: El que reparó la muralla con Benjamín (Ne 3:23), núm. 2 de Perspicacia «Hasub»; no los otros Hasub que numera.
+distinct_from:
+- hasub-hijo-de-azricam
+- hasub-hijo-de-pahat-moab
+- hasub-cabeza-del-pueblo
+summary: Reparó con Benjamín el tramo de la muralla de Jerusalén que quedaba frente a su casa, en días de Nehemías.
+reason: Perspicacia «Hasub», núm. 2; Ne 3:23.
+sources:
+- it-hasub
+- nehemias-3
+links:
+- title: 'Perspicacia: «Hasub»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hasub/
+  type: perspicacia
+relations:
+- type: lived_in
+  place: jerusalen
+  inferred: false
+  sources:
+  - nehemias-3
+  - it-hasub
+  reason: 'Ne 3:23: el tramo que reparó estaba enfrente de su casa.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified

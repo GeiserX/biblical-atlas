@@ -3,6 +3,9 @@ id: en-roguel
 name: En-Roguel
 names:
 - name: En-Roguel
+- name: Fuente de la Culebra Grande
+  note: Fuente ante la que pasó Nehemías en su inspección nocturna (Ne 2:13). Perspicacia «Fuente de la Culebra Grande» ve
+    probable que sea otro nombre de En-Roguel.
 type: lake
 lat: 31.767198
 lon: 35.235985
@@ -20,6 +23,8 @@ sources:
 - josue-18
 - 2-samuel-17
 - 1-reyes-1
+- it-fuente-de-la-culebra-grande
+- nehemias-2
 links:
 - title: 'Perspicacia: «En-roguel»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/En-roguel/
@@ -27,5 +32,5 @@ links:
 - title: Josué 18 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Josu%C3%A9/18/
   type: bible
-checked_on: '2026-09-30'
+checked_on: '2026-10-14'
 status: verified

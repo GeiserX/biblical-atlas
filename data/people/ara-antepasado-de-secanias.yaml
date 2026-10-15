@@ -5,17 +5,25 @@ names:
 - name: Ará
 - name: Arah
 perspicacia: 1200000330#2
-summary: 'Cabeza de una familia que volvió de Babilonia con Zorobabel: 775 descendientes. Perspicacia lo hace padre o antepasado
-  de Secanías, suegro de Tobías el ammonita.'
+summary: 'Cabeza de una familia que volvió de Babilonia con Zorobabel: 775 descendientes según Esd 2 y 652 según Ne 7. Perspicacia
+  lo hace padre o antepasado de Secanías, suegro de Tobías el ammonita.'
 reason: Perspicacia «Arah», núm. 2; Esd 2:5.
 sources:
 - it-arah
 - esdras-2
+- nehemias-6
+- nehemias-7
+- it-nehemias-libro
 links:
 - title: 'Perspicacia: «Arah»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Arah/
   type: perspicacia
-checked_on: '2026-10-13'
+history:
+- date: '2026-10-14'
+  change: El resumen daba como hecho la cifra de Esd 2; Ne 7 da otra. Perspicacia «Nehemías, Libro de» ve posible que las
+    dos listas salgan de registros distintos.
+  source: nehemias-7
+checked_on: '2026-10-14'
 status: verified
 distinct_from:
 - ara-hijo-de-jeter

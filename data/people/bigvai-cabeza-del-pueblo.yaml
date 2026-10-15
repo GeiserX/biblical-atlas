@@ -1,0 +1,24 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: bigvai-cabeza-del-pueblo
+name: Bigvái
+names:
+- name: Bigvái
+- name: Bigvai
+  note: Grafía del título de Perspicacia.
+perspicacia: 1200000731#3
+summary: Alguien llamado así, o un representante de la familia de Bigvái que volvió con Zorobabel, que selló la promesa de
+  455 a.e.c.
+reason: Perspicacia «Bigvai», núm. 3; Ne 10:16.
+sources:
+- it-bigvai
+- nehemias-10
+links:
+- title: 'Perspicacia: «Bigvai»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Bigvai/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- bigvai-cabeza-de-familia
+- bigvai-repatriado
+disambiguation: Bigvái, Bigvái, o representante de su familia, en Ne 10:16 (Perspicacia «Bigvai», núm. 3).

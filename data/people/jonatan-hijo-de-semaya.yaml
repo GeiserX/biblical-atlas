@@ -1,0 +1,54 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jonatan-hijo-de-semaya
+name: Jonatán
+names:
+- name: Jonatán
+perspicacia: 1200002506#14
+summary: Padre del trompetista Zacarías e hijo de Semaya, del linaje de Asaf. Según Perspicacia, tocó la trompeta como sacerdote
+  en la marcha sobre la muralla.
+reason: Perspicacia «Jonatán», núm. 14; Ne 12:31, 35, 36.
+sources:
+- it-jonatan
+- nehemias-12
+links:
+- title: 'Perspicacia: «Jonatán»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jonat%C3%A1n/
+  type: perspicacia
+relations:
+- type: kin
+  person: semaya-hijo-de-matanias
+  word: father
+  inferred: false
+  sources:
+  - nehemias-12
+  - it-jonatan
+  reason: 'Ne 12:35: Jonatán, hijo de Semaya.'
+  checked_on: '2026-10-14'
+  status: verified
+- type: holds_office
+  office: priest
+  inferred: true
+  sources:
+  - it-jonatan
+  - nehemias-12
+  reason: Perspicacia «Jonatán», núm. 14, lo cuenta entre los sacerdotes que tocaron las trompetas (Ne 12:35).
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- johanan-hijo-de-joiada
+- jonatan-de-la-casa-de-maluki
+- jonatan-hijo-de-abiatar
+- jonatan-hijo-de-asahel
+- jonatan-hijo-de-carea
+- jonatan-hijo-de-jada
+- jonatan-hijo-de-sague
+- jonatan-hijo-de-sama
+- jonatan-hijo-de-saul
+- jonatan-hijo-de-uzias
+- jonatan-levita
+- jonatan-padre-de-ebed
+- jonatan-sobrino-de-david
+disambiguation: 'Jonatán núm. 14 de Perspicacia: el padre del trompetista Zacarías (Ne 12:35); no los demás Jonatán que registra
+  Perspicacia «Jonatán».'

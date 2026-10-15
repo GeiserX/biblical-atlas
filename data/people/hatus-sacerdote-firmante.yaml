@@ -1,0 +1,33 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hatus-sacerdote-firmante
+name: Hatús
+names:
+- name: Hatús
+perspicacia: 1200001918#5
+summary: Sacerdote, o su antepasado, nombrado entre los que sellaron la promesa escrita de 455 a.e.c., cuando Nehemías gobernaba
+  Judá.
+reason: Perspicacia «Hatús», núm. 5; Ne 10:4.
+sources:
+- it-hatus
+- nehemias-10
+links:
+- title: 'Perspicacia: «Hatús»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hat%C3%BAs/
+  type: perspicacia
+relations:
+- type: holds_office
+  office: priest
+  inferred: false
+  sources:
+  - nehemias-10
+  reason: 'Ne 10:8 cierra la lista: «esos son los sacerdotes».'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- hatus-descendiente-de-david
+- hatus-hijo-de-hasabneya
+- hatus-hijo-de-semaya
+- hatus-sacerdote-de-zorobabel
+disambiguation: Hatús, sacerdote que, él o un antepasado, selló la promesa de Ne 10 (Perspicacia «Hatús», núm. 5).

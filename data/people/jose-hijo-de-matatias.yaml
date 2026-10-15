@@ -17,6 +17,7 @@ distinct_from:
 - jose-hijo-de-jose
 - jose-hijo-de-asaf
 - jose-descendiente-de-binui
+- jose-de-la-casa-de-sebanias
 summary: Antepasado de Jesús por la línea de María. Perspicacia lo sitúa unos años después del regreso del destierro.
 reason: Perspicacia «José», núm. 7; Lu 3:24.
 sources:
@@ -40,5 +41,5 @@ relations:
   reason: 'Lu 3:24, 25: José, hijo de Matatías.'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified

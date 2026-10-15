@@ -25,6 +25,13 @@ distinct_from:
 - semaya-enviado-a-casifia
 - semaya-descendiente-de-harim
 - semaya-sacerdote-descendiente-de-harim
+- semaya-guarda-de-la-puerta-oriental
+- semaya-hijo-de-delaya
+- semaya-sacerdote-repatriado
+- semaya-de-la-procesion-del-muro
+- semaya-hijo-de-matanias
+- semaya-musico-de-la-procesion
+- semaya-sacerdote-de-la-inauguracion
 summary: Levita que, en el reinado de Ezequías, repartía con fidelidad las porciones de sus hermanos en las ciudades de los
   sacerdotes, bajo la dirección del portero Coré.
 reason: Perspicacia «Semaya», núm. 9; 2Cr 31:14, 15.
@@ -56,5 +63,5 @@ relations:
     que limpió el templo.
   checked_on: '2026-10-13'
   status: verified
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified

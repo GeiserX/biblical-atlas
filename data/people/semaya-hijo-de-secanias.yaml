@@ -45,5 +45,12 @@ distinct_from:
 - semaya-enviado-a-casifia
 - semaya-descendiente-de-harim
 - semaya-sacerdote-descendiente-de-harim
-checked_on: '2026-10-13'
+- semaya-guarda-de-la-puerta-oriental
+- semaya-hijo-de-delaya
+- semaya-sacerdote-repatriado
+- semaya-de-la-procesion-del-muro
+- semaya-hijo-de-matanias
+- semaya-musico-de-la-procesion
+- semaya-sacerdote-de-la-inauguracion
+checked_on: '2026-10-14'
 status: verified

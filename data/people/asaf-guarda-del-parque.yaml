@@ -1,0 +1,53 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: asaf-guarda-del-parque
+name: Asaf
+names:
+- name: Asaf
+perspicacia: 1200000400#4
+disambiguation: El guarda del parque del rey Artajerjes (Ne 2:8); no el músico levita de David, el cohatita de cuya casa salieron
+  porteros ni el padre de Joá.
+distinct_from:
+- asaf-hijo-de-berekias
+- asaf-descendiente-de-cohat
+- asaf-padre-de-joa
+date:
+  from: -454
+  to: -454
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 455 a.e.c.
+summary: Guarda del parque del rey persa cuando Nehemías fue a Jerusalén en 455 a.e.c. Artajerjes le escribió para que diera
+  madera para las puertas de la fortaleza del templo, la muralla y la casa de Nehemías.
+reason: Perspicacia «Asaf», núm. 4, y «Parque»; Ne 2:8. Perspicacia ve posible que fuera otro judío con un puesto en la corte.
+sources:
+- it-asaf
+- it-parque
+- nehemias-2
+links:
+- title: 'Perspicacia: «Asaf»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Asaf/
+  type: perspicacia
+relations:
+- type: tie
+  person: artajerjes-i
+  word: master
+  date:
+    from: -454
+    to: -454
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 455 a.e.c.
+  inferred: true
+  sources:
+  - nehemias-2
+  - it-parque
+  - it-asaf
+  reason: Ne 2:8 lo llama guarda del Parque del Rey; Perspicacia «Parque» dice que el rey persa lo había puesto allí.
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified

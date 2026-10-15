@@ -8,6 +8,7 @@ disambiguation: Zabdí de la casa de Simeí, benjamita; no Zabdí, el abuelo de 
 distinct_from:
 - zabdi-abuelo-de-acan
 - zabdi-el-sifmita
+- zicri-hijo-de-asaf
 summary: Benjamita, hijo o descendiente de Simeí, cabeza de una familia de Jerusalén.
 reason: Perspicacia «Zabdí», núm. 2; 1Cr 8:19, 21, 28.
 sources:
@@ -36,5 +37,5 @@ relations:
   reason: '1Cr 8:28: los jefes de casas paternas de esta lista vivían en Jerusalén.'
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-14'
 status: verified

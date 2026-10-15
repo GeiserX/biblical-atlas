@@ -10,18 +10,22 @@ date:
   chronology: tnm
   text: año 32 de Artajerjes (443 a.e.c.)
 places:
+- babilonia
 - jerusalen
 people:
 - nehemias
+- artajerjes-i
 passages:
-- Ne 13:6-31
-summary: En el año 32 de Artajerjes, Nehemías volvió un tiempo con el rey. Al regresar encontró a Tobías alojado en el templo
-  y otros abusos, y los corrigió con firmeza.
-reason: Perspicacia «Artajerjes», núm. 2 (el año 32 es 443) y «Nehemías», núm. 3; Ne 13:6.
+- Ne 13:6
+summary: En el año 32 de Artajerjes, tras doce años de gobernador, Nehemías dejó Jerusalén y volvió adonde estaba el rey.
+  Pasó un tiempo en Babilonia antes de pedir permiso para regresar.
+reason: 'Perspicacia «Artajerjes», núm. 2 (el año 32 es 443) y «Nehemías», núm. 3; Ne 13:6. «Toda Escritura», libro 16, párr.
+  14: estuvo un tiempo en Babilonia. Orden 113006 en la serie de Nehemías.'
 sources:
 - it-artajerjes
 - it-nehemias
 - nehemias-13
+- si-nehemias
 links:
 - title: 'Perspicacia: «Nehemías»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Nehem%C3%ADas/
@@ -29,5 +33,27 @@ links:
 - title: Nehemías 13 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Nehem%C3%ADas/13/
   type: bible
-checked_on: '2026-09-28'
+history:
+- date: '2026-10-14'
+  change: El suceso queda en Ne 13:6, la vuelta a la corte en 443; el regreso a Jerusalén y las medidas de Ne 13:4-31 pasan
+    a sus propios sucesos.
+  source: nehemias-13
+- date: '2026-10-14'
+  change: El resumen se ciñe a la vuelta a la corte; lo que halló al regresar va en nehemias-regresa-a-jerusalen y en los
+    sucesos que siguen.
+  source: nehemias-13
+- date: '2026-10-14'
+  change: '«Toda Escritura», libro 16, párr. 14, dice que pasó un tiempo en Babilonia: ese es el sitio principal, y Jerusalén
+    el de partida.'
+  source: si-nehemias
+- date: '2026-10-14'
+  change: La razón da la fuente del lugar y el orden en la serie.
+  source: si-nehemias
+present:
+- nehemias
+- artajerjes-i
+narrative_order:
+  series: nehemias
+  order: 113006
+checked_on: '2026-10-14'
 status: verified

@@ -1,0 +1,36 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: fiesta-de-las-cabanas-de-455
+title: Israel celebra la Fiesta de las Cabañas en Jerusalén
+date:
+  from: -454
+  to: -454
+  precision: month
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: del 15 al 22 de tisri de 455 a.e.c.
+  detail:
+    month: tisri
+narrative_order:
+  series: nehemias
+  order: 108016
+places:
+- jerusalen
+people: []
+passages:
+- Ne 8:16-18
+summary: Los repatriados hicieron cabañas con ramas en azoteas, patios, atrios del templo y las plazas de las puertas del
+  Agua y de Efraín. Cada uno de los siete días se leyó la Ley, y el octavo hubo asamblea solemne.
+reason: 'Ne 8:14: mes séptimo; Perspicacia «Fiesta de las cabañas» la pone del 15 al 21 de etanim, o tisri, con asamblea el
+  22. Año: «Mesulam», núm. 18. No nombra a nadie. Orden 108016: tras el día 2.'
+sources:
+- nehemias-8
+- it-fiesta-de-las-cabanas
+- it-mesulam
+- it-puerta
+links:
+- title: Nehemías 8 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Nehem%C3%ADas/8/
+  type: bible
+checked_on: '2026-10-14'
+status: verified

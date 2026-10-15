@@ -5,6 +5,8 @@ names:
 - name: Cabzeel
 - name: Qabzeel
   note: Grafía de Perspicacia; quizá significa «Dios ha recogido».
+- name: Jecabzeel
+  note: Forma del nombre en Ne 11:25 (Perspicacia «Jeqabzeel»).
 type: city
 lat: 31.28619
 lon: 34.93235
@@ -21,6 +23,8 @@ sources:
 - josue-15
 - 2-samuel-23
 - 1-cronicas-11
+- nehemias-11
+- it-jeqabzeel
 links:
 - title: 'Perspicacia: «Qabzeel»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Qabzeel/
@@ -30,5 +34,5 @@ history:
   change: 2Sa 23:20 en la TNM dice que Benaya hizo sus hazañas en Cabzeel; Perspicacia «Qabzeel» recoge esa lectura entre
     las posibles. El resumen decía solo que pudo ser su tierra.
   source: 2-samuel-23
-checked_on: '2026-10-12'
+checked_on: '2026-10-14'
 status: verified

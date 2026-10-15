@@ -1,0 +1,29 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: salun
+name: Salún
+names:
+- name: Salún
+perspicacia: '1200003934'
+summary: Hijo de Colhozé y príncipe del distrito de Mizpá. Reconstruyó y techó la Puerta de la Fuente y reparó la muralla
+  del Estanque del Canal hasta la Escalera de la Ciudad de David.
+reason: Perspicacia «Salún»; Ne 3:15.
+sources:
+- it-salun
+- nehemias-3
+links:
+- title: 'Perspicacia: «Salún»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sal%C3%BAn/
+  type: perspicacia
+relations:
+- type: kin
+  person: colhoze-padre-de-salun
+  word: father
+  inferred: false
+  sources:
+  - nehemias-3
+  - it-salun
+  reason: 'Ne 3:15: Salún hijo de Colhozé.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified

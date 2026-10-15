@@ -12,6 +12,7 @@ distinct_from:
 - eleazar-hijo-de-mahli
 - eleazar-hijo-de-finehas
 - eleazar-descendiente-de-paros
+- eleazar-sacerdote-de-la-inauguracion
 summary: Tercer hijo de Aarón y Eliseba, jefe de los levitas en el desierto. Casado con una hija de Putiel, madre de Finehás,
   sucedió a Aarón como sumo sacerdote. Lo enterraron en la colina de Finehás, en Efraín.
 reason: Perspicacia «Eleazar», núm. 1; Éx 6:23, 25; 28:1; Nú 3:32.
@@ -173,5 +174,5 @@ history:
 - date: '2026-09-29'
   change: El resumen añade su muerte y su entierro en la colina de Finehás, en las montañas de Efraín (Jos 24:33).
   source: josue-24
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified

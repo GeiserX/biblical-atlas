@@ -1,0 +1,27 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: juda-de-la-procesion-del-muro
+name: Judá
+names:
+- name: Judá
+perspicacia: 1200002538#8
+summary: Uno de los que fueron en la procesión que Nehemías preparó al terminar el muro de Jerusalén.
+reason: Perspicacia «Judá», núm. 8; Ne 12:31, 34.
+sources:
+- it-juda
+- nehemias-12
+links:
+- title: 'Perspicacia: «Judá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jud%C3%A1/
+  type: perspicacia
+relations: []
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- hodavias-levita
+- juda-hijo-de-hasenua
+- juda-hijo-de-jacob
+- juda-levita-de-tiempos-de-esdras
+- juda-levita-de-zorobabel
+- juda-musico-de-la-procesion
+disambiguation: 'Judá núm. 8 de Perspicacia: el de la procesión del muro (Ne 12:34); no los demás Judá que registra Perspicacia
+  «Judá».'

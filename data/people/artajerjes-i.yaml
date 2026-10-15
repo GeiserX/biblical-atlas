@@ -23,6 +23,9 @@ sources:
 - si-3
 - esdras-7
 - esdras-8
+- nehemias-2
+- nehemias-5
+- nehemias-13
 links:
 - title: 'Perspicacia: «Artajerjes»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Artajerjes/
@@ -51,7 +54,7 @@ relations:
   office: king
   status: verified
 perspicacia: 1200000389#2
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified
 alternatives:
 - date:

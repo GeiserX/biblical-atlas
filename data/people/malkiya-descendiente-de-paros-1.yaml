@@ -25,7 +25,7 @@ relations:
   inferred: false
   checked_on: '2026-10-13'
   status: verified
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified
 disambiguation: El primero de los dos Malkiya de los hijos de Parós en Esd 10:25; no los demás Malkiya.
 distinct_from:
@@ -35,3 +35,9 @@ distinct_from:
 - malkiya-descendiente-de-paros-2
 - malkiya-hijo-de-etni
 - malkiya-hijo-del-rey
+- malkiya-hijo-de-harim
+- malkiya-hijo-de-recab
+- malkiya-orfebre
+- malkiya-junto-a-esdras
+- malkiya-sacerdote-firmante
+- malkiya-sacerdote-de-la-inauguracion

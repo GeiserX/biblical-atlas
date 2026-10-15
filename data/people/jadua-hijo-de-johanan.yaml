@@ -1,0 +1,46 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jadua-hijo-de-johanan
+name: Jadúa
+names:
+- name: Jadúa
+perspicacia: 1200002283#2
+summary: Hijo de Johanán, llamado Jonatán en Ne 12:11, y último sumo sacerdote descendiente de Aarón que nombran las Escrituras
+  Hebreas. Quinta generación tras Jesúa, pudo vivir en el reinado de Darío el persa.
+reason: Perspicacia «Jadúa», núm. 2; Ne 12:11, 22.
+sources:
+- it-jadua
+- nehemias-12
+- it-johanan
+links:
+- title: 'Perspicacia: «Jadúa»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jad%C3%BAa/
+  type: perspicacia
+relations:
+- type: kin
+  person: johanan-hijo-de-joiada
+  word: father
+  inferred: false
+  sources:
+  - nehemias-12
+  - it-jadua
+  - it-johanan
+  reason: 'Ne 12:11: Jonatán, que Perspicacia identifica con Johanán, fue padre de Jadúa.'
+  checked_on: '2026-10-14'
+  status: verified
+- type: succeeds
+  person: johanan-hijo-de-joiada
+  office: high_priest
+  inferred: true
+  sources:
+  - nehemias-12
+  - it-jadua
+  reason: Ne 12:22 lo pone tras Johanán; Perspicacia «Jadúa», núm. 2, lo llama el último de los sumos sacerdotes que mencionan
+    las Escrituras Hebreas.
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- jadua-cabeza-del-pueblo
+disambiguation: 'Jadúa núm. 2 de Perspicacia: el sumo sacerdote hijo de Johanán (Ne 12:11, 22); no los demás Jadúa que registra
+  Perspicacia «Jadúa».'

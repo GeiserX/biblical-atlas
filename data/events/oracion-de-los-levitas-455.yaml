@@ -1,0 +1,55 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: oracion-de-los-levitas-455
+title: Los levitas repasan en oración la historia de Israel
+type: speech
+date:
+  from: -454
+  to: -454
+  precision: day
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 24 de tisri de 455 a.e.c.
+  detail:
+    month: tisri
+    day: 24
+narrative_order:
+  series: nehemias
+  order: 109005
+places:
+- jerusalen
+people:
+- jesua-levita-que-explico-la-ley
+- bani-levita-que-explico-la-ley
+- hasabneya-levita-de-la-confesion
+- serebias-levita-que-explico-la-ley
+- hodias-levita-que-explico-la-ley
+- sebanias-levita-de-la-confesion
+- petahias-levita-de-la-confesion
+roles:
+  jesua-levita-que-explico-la-ley: spoke
+  bani-levita-que-explico-la-ley: spoke
+  hasabneya-levita-de-la-confesion: spoke
+  serebias-levita-que-explico-la-ley: spoke
+  hodias-levita-que-explico-la-ley: spoke
+  sebanias-levita-de-la-confesion: spoke
+  petahias-levita-de-la-confesion: spoke
+passages:
+- Ne 9:5-37
+summary: Ocho levitas invitaron al pueblo a alabar a Jehová y repasaron sus tratos con Israel, de Abrán al destierro, confesando
+  la infidelidad de la nación. Acabaron anunciando un compromiso escrito que sellarían príncipes, levitas y sacerdotes.
+reason: 'Ne 9:5 nombra a quienes hablan; día 24 de tisri de 455 (Perspicacia «Esdras», núm. 1; «Serebías», núm. 3). Cadmiel
+  no va en people: «Qadmiel» ve aquí a un representante de su casa. Orden 109005: tras el ayuno.'
+sources:
+- nehemias-9
+- it-esdras
+- it-serebias
+- it-qadmiel
+- it-hasabneya
+- it-petahias
+links:
+- title: Nehemías 9 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Nehem%C3%ADas/9/
+  type: bible
+checked_on: '2026-10-14'
+status: verified

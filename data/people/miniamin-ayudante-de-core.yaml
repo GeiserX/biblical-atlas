@@ -26,5 +26,8 @@ relations:
   reason: '2Cr 31:15: repartía las porciones en las ciudades de los sacerdotes bajo la dirección de Coré.'
   checked_on: '2026-10-13'
   status: verified
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified
+distinct_from:
+- miniamin-familia-sacerdotal
+- miniamin-trompetista-de-la-inauguracion

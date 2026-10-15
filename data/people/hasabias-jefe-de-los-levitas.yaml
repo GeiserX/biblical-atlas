@@ -1,0 +1,43 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hasabias-jefe-de-los-levitas
+name: Hasabías
+names:
+- name: Hasabías
+perspicacia: 1200001900#10
+summary: Uno de los jefes de los levitas en días del sumo sacerdote Joiaquim. Perspicacia ve posible que sea el levita que
+  selló el arreglo fidedigno (Ne 10:11).
+reason: Perspicacia «Hasabías», núm. 10; Ne 12:23, 24, 26.
+sources:
+- it-hasabias
+- nehemias-12
+links:
+- title: 'Perspicacia: «Hasabías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hasab%C3%ADas/
+  type: perspicacia
+relations:
+- type: same_as
+  person: hasabias-levita-firmante
+  certainty: possible
+  inferred: true
+  sources:
+  - it-hasabias
+  - nehemias-12
+  reason: 'Perspicacia «Hasabías», núm. 8: posiblemente es el mismo que el núm. 10, jefe de los levitas de Ne 12:24.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- hasabias-de-la-casa-de-hilquias
+- hasabias-hebronita
+- hasabias-hijo-de-amasias
+- hasabias-hijo-de-jedutun
+- hasabias-hijo-de-matanias
+- hasabias-hijo-de-quemuel
+- hasabias-jefe-de-los-sacerdotes
+- hasabias-levita-de-josias
+- hasabias-merarita
+- hasabias-padre-de-azricam
+- hasabias-principe-de-queila
+disambiguation: 'Hasabías núm. 10 de Perspicacia: el jefe de los levitas de días de Joiaquim (Ne 12:24); no los demás Hasabías
+  que registra Perspicacia «Hasabías».'

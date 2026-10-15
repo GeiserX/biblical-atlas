@@ -27,7 +27,7 @@ relations:
   reason: 1Cr 25:2, 9 lo cuenta entre los hijos de Asaf.
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified
 distinct_from:
 - bernabe
@@ -40,3 +40,4 @@ distinct_from:
 - jose-hijo-de-matatias
 - jose-padre-de-igal
 - jose-descendiente-de-binui
+- jose-de-la-casa-de-sebanias

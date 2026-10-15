@@ -44,7 +44,7 @@ links:
 - title: Salmo 136 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/salmos/136/
   type: bible
-checked_on: '2026-09-29'
+checked_on: '2026-10-14'
 status: verified
 relations:
 - type: lived_in
@@ -62,8 +62,9 @@ relations:
   - josue-12
   - josue-13
   - jueces-11
+  - nehemias-9
   reason: 'Nú 21:26, 34: Hesbón era la ciudad de Sehón; Perspicacia «Sehón» la da como su capital.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-14'
   status: verified
 - type: died_in
   place: jahaz

@@ -25,7 +25,7 @@ relations:
   inferred: false
   checked_on: '2026-10-13'
   status: verified
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified
 disambiguation: El Selemías de Esd 10:39, de los hijos de Binuí; no el de Esd 10:41 ni los demás Selemías.
 distinct_from:
@@ -35,3 +35,5 @@ distinct_from:
 - selemias-hijo-de-hananias
 - selemias-padre-de-jehucal
 - selemias-portero
+- selemias-padre-de-hananias
+- selemias-encargado-de-los-almacenes

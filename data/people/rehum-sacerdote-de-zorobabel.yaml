@@ -1,0 +1,34 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: rehum-sacerdote-de-zorobabel
+name: Rehúm
+names:
+- name: Rehúm
+perspicacia: 1200003684#2
+summary: Sacerdote del regreso con Zorobabel en 537 a.e.c. Perspicacia observa que, cambiando de sitio dos letras hebreas,
+  su nombre daría el Harim de Ne 12:15.
+reason: Perspicacia «Rehúm», núm. 2; Ne 12:1, 3.
+sources:
+- it-rehum
+- nehemias-12
+links:
+- title: 'Perspicacia: «Rehúm»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Reh%C3%BAm/
+  type: perspicacia
+relations:
+- type: holds_office
+  office: priest
+  inferred: false
+  sources:
+  - nehemias-12
+  reason: 'Ne 12:1, 7: va entre los jefes de los sacerdotes que subieron con Zorobabel y Jesúa.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- rehum-cabeza-del-pueblo
+- rehum-funcionario-persa
+- rehum-hijo-de-bani
+- rehum-repatriado
+disambiguation: 'Rehúm núm. 2 de Perspicacia: el sacerdote del regreso con Zorobabel (Ne 12:3); no los demás Rehúm que registra
+  Perspicacia «Rehúm».'

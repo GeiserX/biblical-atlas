@@ -9,6 +9,7 @@ distinct_from:
 - oseas
 - josue-hijo-de-nun
 - hosea-hijo-de-azazias
+- hosea-cabeza-del-pueblo
 date:
   from: -757
   to: -739
@@ -87,5 +88,5 @@ relations:
   checked_on: '2026-09-30'
   status: verified
 perspicacia: 1200002090#4
-checked_on: '2026-10-12'
+checked_on: '2026-10-14'
 status: verified

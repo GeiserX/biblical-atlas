@@ -1,0 +1,58 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: semaya-guarda-de-la-puerta-oriental
+name: Semaya
+names:
+- name: Semaya
+perspicacia: 1200004000#20
+disambiguation: El guarda de la Puerta Oriental (Ne 3:29), núm. 20 de Perspicacia «Semaya»; no el descendiente de David hijo
+  de Secanías ni los otros Semaya.
+distinct_from:
+- semaya-ayudante-de-core
+- semaya-de-nehelam
+- semaya-descendiente-de-adonicam
+- semaya-descendiente-de-harim
+- semaya-enviado-a-casifia
+- semaya-hijo-de-galal
+- semaya-hijo-de-hasub
+- semaya-hijo-de-joel
+- semaya-hijo-de-netanel
+- semaya-hijo-de-obed-edom
+- semaya-hijo-de-secanias
+- semaya-jefe-de-la-casa-de-elizafan
+- semaya-levita-de-ezequias
+- semaya-levita-de-jehosafat
+- semaya-levita-de-josias
+- semaya-padre-de-delaya
+- semaya-padre-de-uriya
+- semaya-profeta
+- semaya-sacerdote-descendiente-de-harim
+- semaya-simeonita
+- semaya-hijo-de-delaya
+- semaya-sacerdote-repatriado
+- semaya-de-la-procesion-del-muro
+- semaya-hijo-de-matanias
+- semaya-musico-de-la-procesion
+- semaya-sacerdote-de-la-inauguracion
+summary: Hijo de Secanías y guarda de la Puerta Oriental; por ser portero, probablemente levita. Reparó un tramo de la muralla
+  de Jerusalén en días de Nehemías.
+reason: Perspicacia «Semaya», núm. 20; Ne 3:29.
+sources:
+- it-semaya
+- nehemias-3
+links:
+- title: 'Perspicacia: «Semaya»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Semaya/
+  type: perspicacia
+relations:
+- type: kin
+  person: secanias-padre-de-semaya-el-guarda
+  word: father
+  inferred: false
+  sources:
+  - nehemias-3
+  - it-semaya
+  reason: 'Ne 3:29: Semaya hijo de Secanías.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified

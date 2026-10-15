@@ -12,10 +12,22 @@ reason: Perspicacia «Sabetai»; Esd 10:15.
 sources:
 - it-sabetai
 - esdras-10
+- nehemias-11
 links:
 - title: 'Perspicacia: «Sabetai»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sabetai/
   type: perspicacia
-relations: []
-checked_on: '2026-10-13'
+relations:
+- type: same_as
+  person: sabetai-levita-de-tiempos-de-nehemias
+  certainty: possible
+  inferred: true
+  sources:
+  - it-sabetai
+  - nehemias-8
+  - nehemias-11
+  reason: Perspicacia «Sabetai» ve posible que sea el levita que ayudaba a explicar la Ley junto a Esdras (Ne 8:7).
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
 status: verified

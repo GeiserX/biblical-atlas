@@ -23,6 +23,7 @@ distinct_from:
 - josue-jefe-de-jerusalen
 - hosea-de-israel
 - hosea-hijo-de-azazias
+- hosea-cabeza-del-pueblo
 summary: Efraimita, servidor de Moisés desde joven. Mandó a Israel contra Amalec, fue uno de los dos espías fieles y sucedió
   a Moisés. Llevó al pueblo a cruzar el Jordán y a conquistar Canaán. Murió a los 110 años.
 reason: 'Perspicacia «Josué», núm. 1, párr. 2, 3, 7, 9 y 19: en 1513 a.e.c. mandaba contra Amaleq; el cuadro del estudio
@@ -141,8 +142,9 @@ relations:
   - josue-24
   - jueces-2
   - 1-cronicas-7
+  - nehemias-8
   reason: Éx 33:11 lo llama Josué hijo de Nun.
-  checked_on: '2026-10-12'
+  checked_on: '2026-10-14'
   status: verified
 - type: lived_in
   place: sitim
@@ -203,5 +205,5 @@ history:
 - date: '2026-09-29'
   change: Amaleq es la grafía de Perspicacia; la Traducción del Nuevo Mundo escribe Amalec (Éx 17:8-13).
   source: exodo-17
-checked_on: '2026-10-12'
+checked_on: '2026-10-14'
 status: verified

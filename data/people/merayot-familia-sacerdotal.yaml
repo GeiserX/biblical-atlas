@@ -1,0 +1,44 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: merayot-familia-sacerdotal
+name: Merayot
+names:
+- name: Merayot
+perspicacia: 1200002989#3
+summary: Fundador de una casa paterna de sacerdotes que en días de Joiaquim encabezaba Helcái. El nombre podría ser otra forma
+  de Meremot, sacerdote del regreso de 537 a.e.c.
+reason: Perspicacia «Merayot», núm. 3; Ne 12:12, 15.
+sources:
+- it-merayot
+- nehemias-12
+- it-meremot
+links:
+- title: 'Perspicacia: «Merayot»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Merayot/
+  type: perspicacia
+relations:
+- type: holds_office
+  office: priest
+  inferred: true
+  sources:
+  - nehemias-12
+  reason: 'Ne 12:12: su casa paterna era de sacerdotes; quien la encabezaba en días de Joiaquim era sacerdote.'
+  checked_on: '2026-10-14'
+  status: verified
+- type: same_as
+  person: meremot-sacerdote-de-zorobabel
+  certainty: possible
+  inferred: true
+  sources:
+  - it-merayot
+  - it-meremot
+  - nehemias-12
+  reason: 'Perspicacia «Merayot», núm. 3, y «Meremot», núm. 1: es posible que Meremot fundara la casa llamada Merayot.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- merayot-hijo-de-ahitub
+- merayot-hijo-de-zerahias
+disambiguation: 'Merayot núm. 3 de Perspicacia: el fundador de la casa sacerdotal de Ne 12:15; no los demás Merayot que registra
+  Perspicacia «Merayot».'

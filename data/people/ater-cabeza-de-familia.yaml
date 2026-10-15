@@ -9,6 +9,8 @@ reason: Perspicacia «Ater», núm. 1; Esd 2:16.
 sources:
 - it-ater
 - esdras-2
+- nehemias-7
+- nehemias-10
 links:
 - title: 'Perspicacia: «Ater»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ater/
@@ -21,10 +23,11 @@ relations:
   sources:
   - esdras-2
   - it-ater
+  - nehemias-7
   reason: 'Esd 2:16: los hijos de Ater son de la familia de Ezequías. Perspicacia «Ater» no sabe de qué grado.'
-  checked_on: '2026-10-13'
+  checked_on: '2026-10-14'
   status: verified
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified
 distinct_from:
 - ater-portero

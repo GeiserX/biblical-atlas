@@ -29,8 +29,9 @@ relations:
   status: verified
 disambiguation: Jefe de Judá en el ejército de Jehosafat (Perspicacia «Adnah», núm. 2); no Adná de Manasés, que se pasó a
   David en Ziclag.
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified
 distinct_from:
 - adna-de-manases
 - adna-descendiente-de-pahat-moab
+- adna-de-la-casa-de-harim

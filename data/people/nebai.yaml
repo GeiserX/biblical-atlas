@@ -1,0 +1,19 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: nebai
+name: Nebái
+names:
+- name: Nebái
+- name: Nebai
+  note: Grafía del título de Perspicacia.
+perspicacia: '1200003195'
+summary: Jefe del pueblo; él o un descendiente suyo selló la promesa de los días de Nehemías (455 a.e.c.).
+reason: Perspicacia «Nebai»; Ne 10:19.
+sources:
+- it-nebai
+- nehemias-10
+links:
+- title: 'Perspicacia: «Nebai»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Nebai/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified

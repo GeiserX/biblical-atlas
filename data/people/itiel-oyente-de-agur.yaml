@@ -29,5 +29,7 @@ relations:
   reason: 'Pr 30:1: Agur le dirigió su mensaje, a él y a Ucal. Perspicacia añade que quizá era su hijo o su discípulo.'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-10-14'
 status: verified
+distinct_from:
+- itiel-hijo-de-jesaya

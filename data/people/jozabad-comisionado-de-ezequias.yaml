@@ -14,6 +14,8 @@ distinct_from:
 - jozabad-hijo-de-jesua
 - jozabad-descendiente-de-pasjur
 - jozabad-levita-de-tiempos-de-esdras
+- jozabad-levita-que-explico-la-ley
+- jozabad-levita-de-tiempos-de-nehemias
 summary: Levita que el rey Ezequías nombró entre los diez que ayudaban a Conanías y a Simeí, su hermano, a guardar lo que
   el pueblo llevaba al templo.
 reason: Perspicacia «Jozabad», núm. 4; 2Cr 31:12, 13.
@@ -43,5 +45,5 @@ relations:
   reason: '2Cr 31:12, 13: ayudante de Simeí, el segundo encargado de las contribuciones, por orden del rey.'
   checked_on: '2026-10-13'
   status: verified
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified

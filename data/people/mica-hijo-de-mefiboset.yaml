@@ -37,7 +37,7 @@ relations:
   reason: '2Sa 9:12: Mefibóset tenía un hijo pequeño llamado Micá.'
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-14'
 status: verified
 distinct_from:
 - miqueas-de-efrain
@@ -46,3 +46,4 @@ distinct_from:
 - miqueas-hijo-de-simei
 - mica-hijo-de-zicri
 - miqueas-uzielita
+- mica-levita-firmante

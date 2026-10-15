@@ -12,6 +12,9 @@ distinct_from:
 - jeremias-el-benjaminita
 - jeremias-quinto-gadita
 - jeremias-decimo-gadita
+- jeremias-sacerdote-firmante
+- jeremias-de-la-procesion-del-muro
+- jeremias-sacerdote-de-zorobabel
 summary: Hombre de Libná, ciudad de sacerdotes, padre de Hamutal. Por ella fue abuelo de dos reyes de Judá, Jehoacaz y Sedequías.
 reason: Perspicacia «Jeremías», núm. 5; 2Re 23:31; 24:18.
 sources:
@@ -38,5 +41,5 @@ relations:
   reason: 2Re 23:31 y 24:18 lo llaman Jeremías de Libná; Perspicacia lo da como natural de esa ciudad sacerdotal.
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-14'
 status: verified

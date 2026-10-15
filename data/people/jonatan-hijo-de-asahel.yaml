@@ -56,7 +56,7 @@ relations:
   inferred: false
   checked_on: '2026-10-13'
   status: verified
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified
 disambiguation: El hijo de Asahel de Esd 10:15; no Jonatán el hijo de Saúl ni los demás.
 distinct_from:
@@ -70,3 +70,6 @@ distinct_from:
 - jonatan-levita
 - jonatan-padre-de-ebed
 - jonatan-sobrino-de-david
+- johanan-hijo-de-joiada
+- jonatan-de-la-casa-de-maluki
+- jonatan-hijo-de-semaya

@@ -1,0 +1,21 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hasabneya-levita-de-la-confesion
+name: Hasabneya
+names:
+- name: Hasabneya
+perspicacia: 1200001902#2
+disambiguation: El levita Hasabneya de la confesión (Ne 9:5); no el padre de Hatús, que reparó una parte del muro.
+summary: Uno de los ocho levitas que llamaron al pueblo a alabar a Jehová y repasaron en oración sus tratos con Israel. Perspicacia
+  ve posible que fuera un levita llamado Hasabías.
+reason: Perspicacia «Hasabneya», núm. 2; Ne 9:5.
+sources:
+- it-hasabneya
+- nehemias-9
+links:
+- title: 'Perspicacia: «Hasabneya»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hasabneya/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- hasabneya-padre-de-hatus

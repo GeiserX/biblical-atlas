@@ -1,0 +1,17 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: magpias
+name: Magpías
+names:
+- name: Magpías
+perspicacia: '1200002837'
+summary: Uno de los jefes del pueblo; un descendiente suyo, si no él mismo, selló la promesa de 455 a.e.c.
+reason: Perspicacia «Magpías»; Ne 10:20.
+sources:
+- it-magpias
+- nehemias-10
+links:
+- title: 'Perspicacia: «Magpías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Magp%C3%ADas/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified

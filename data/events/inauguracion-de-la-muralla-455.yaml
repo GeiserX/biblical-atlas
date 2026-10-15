@@ -1,0 +1,66 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: inauguracion-de-la-muralla-455
+title: Inauguración de la muralla de Jerusalén
+date:
+  from: -454
+  to: -454
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 455 a.e.c.
+narrative_order:
+  series: nehemias
+  order: 112027
+places:
+- jerusalen
+people:
+- nehemias
+- esdras
+- hosaya-principe-de-juda
+- azarias-de-la-procesion-del-muro
+- mesulam-de-la-procesion-del-muro
+- juda-de-la-procesion-del-muro
+- benjamin-companero-de-hasub
+- semaya-de-la-procesion-del-muro
+- jeremias-de-la-procesion-del-muro
+- zacarias-hijo-de-jonatan
+- semaya-musico-de-la-procesion
+- azarel-musico-de-la-procesion
+- milalai
+- guilalai
+- maai
+- netanel-musico-de-la-procesion
+- juda-musico-de-la-procesion
+- hanani-musico-de-la-procesion
+- eliaquim-trompetista-de-la-inauguracion
+- maaseya-trompetista-de-la-inauguracion
+- miniamin-trompetista-de-la-inauguracion
+- micaya-trompetista-de-la-inauguracion
+- elioenai-trompetista-de-la-inauguracion
+- zacarias-trompetista-de-la-inauguracion
+- hananias-trompetista-de-la-inauguracion
+- maaseya-sacerdote-de-la-inauguracion
+- semaya-sacerdote-de-la-inauguracion
+- eleazar-sacerdote-de-la-inauguracion
+- uzi-sacerdote-de-la-inauguracion
+- jehohanan-sacerdote-de-la-inauguracion
+- malkiya-sacerdote-de-la-inauguracion
+- elam-levita-de-la-inauguracion
+- ezer-sacerdote-de-la-inauguracion
+- izrahias-director-de-los-cantores
+passages:
+- Ne 12:27-47
+summary: Con los levitas y cantores traídos de los pueblos de alrededor, sacerdotes y levitas se purifican. Dos coros recorren
+  la muralla en sentidos opuestos y se juntan ante el templo; hay sacrificios y una alegría que se oye de lejos.
+reason: 'Perspicacia «Nehemías», núm. 3, pone la inauguración después de la lectura de la Ley, el pacto y el sorteo de Ne
+  11:1; «Guilalai» y «Ézer», núm. 6, la fechan en 455 a.e.c. Orden 112027: tramo 1, Ne 12:27.'
+sources:
+- nehemias-12
+- it-nehemias
+- it-guilalai
+- it-ezer
+- it-puerta
+- si-nehemias
+checked_on: '2026-10-14'
+status: verified

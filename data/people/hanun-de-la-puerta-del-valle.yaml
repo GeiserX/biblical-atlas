@@ -1,0 +1,23 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hanun-de-la-puerta-del-valle
+name: Hanún
+names:
+- name: Hanún
+perspicacia: 1200001866#2
+disambiguation: El que reparó la Puerta del Valle (Ne 3:13), núm. 2 de Perspicacia «Hanún»; no el rey de Ammón ni el hijo
+  de Zalaf.
+distinct_from:
+- hanun-hijo-de-nahas
+- hanun-hijo-de-zalaf
+summary: Con los vecinos de Zanóah rehízo la Puerta del Valle de Jerusalén y reparó 1.000 codos de muralla, hasta la otra
+  puerta, la de los Montones de Ceniza.
+reason: Perspicacia «Hanún», núm. 2; Ne 3:13.
+sources:
+- it-hanun
+- nehemias-3
+links:
+- title: 'Perspicacia: «Hanún»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Han%C3%BAn/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified

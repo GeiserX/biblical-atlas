@@ -1,0 +1,37 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: maadias
+name: Maadías
+names:
+- name: Maadías
+perspicacia: '1200002807'
+summary: Sacerdote y cabeza de casa paterna entre los que acompañaron a Zorobabel desde Babilonia. Quizá es el Moadías de
+  Ne 12:17.
+reason: Perspicacia «Maadías»; Ne 12:1, 5, 17.
+sources:
+- it-maadias
+- nehemias-12
+links:
+- title: 'Perspicacia: «Maadías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Maad%C3%ADas/
+  type: perspicacia
+relations:
+- type: holds_office
+  office: priest
+  inferred: false
+  sources:
+  - nehemias-12
+  reason: 'Ne 12:1, 7: va entre los jefes de los sacerdotes que subieron con Zorobabel y Jesúa.'
+  checked_on: '2026-10-14'
+  status: verified
+- type: same_as
+  person: moadias
+  certainty: possible
+  inferred: true
+  sources:
+  - it-maadias
+  - nehemias-12
+  reason: 'Perspicacia «Maadías»: puede que el Moadías de Ne 12:17 sea él.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified

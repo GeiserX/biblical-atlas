@@ -17,6 +17,11 @@ distinct_from:
 - mesulam-levita-de-josias
 - mesulam-descendiente-de-bani
 - mesulam-levita-de-tiempos-de-esdras
+- mesulam-junto-a-esdras
+- mesulam-sacerdote-firmante
+- mesulam-de-la-casa-de-esdras
+- mesulam-de-la-casa-de-guineton
+- mesulam-portero
 summary: Jefe del pueblo acampado junto al río Ahavá en 468 a.e.c. Esdras lo mandó con otros a Casifía a traer levitas y siervos
   del templo para el viaje.
 reason: Perspicacia «Mesulam», núm. 13; Esd 8:15-20.
@@ -46,5 +51,28 @@ relations:
     que iban con Esdras.'
   checked_on: '2026-10-13'
   status: verified
-checked_on: '2026-10-13'
+- type: same_as
+  person: mesulam-hijo-de-berekias
+  certainty: possible
+  inferred: true
+  sources:
+  - nehemias-3
+  - it-mesulam
+  - nehemias-6
+  reason: Perspicacia «Mesulam», núm. 13, ve posible que el jefe enviado a Casifía sea el núm. 16, el hijo de Berekías de
+    Ne 3:4, 30.
+  checked_on: '2026-10-14'
+  status: verified
+- type: same_as
+  person: mesulam-hijo-de-besodeya
+  certainty: possible
+  inferred: true
+  sources:
+  - nehemias-3
+  - it-mesulam
+  reason: Perspicacia «Mesulam», núm. 13, ve posible que el jefe enviado a Casifía sea el núm. 17, el hijo de Besodeya de
+    Ne 3:6.
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
 status: verified

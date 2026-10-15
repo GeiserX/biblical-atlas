@@ -1,0 +1,22 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: buni-cabeza-del-pueblo
+name: Buní
+names:
+- name: Buní
+perspicacia: 1200000840#3
+summary: Uno de los jefes del pueblo; él o un descendiente suyo selló la promesa de fidelidad que se hizo bajo Nehemías en
+  455 a.e.c.
+reason: Perspicacia «Buní», núm. 3; Ne 10:15.
+sources:
+- it-buni
+- nehemias-10
+links:
+- title: 'Perspicacia: «Buní»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Bun%C3%AD/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- buni-levita-de-la-confesion
+- buni-padre-de-hasabias
+disambiguation: Buní, cabeza del pueblo en la lista de Ne 10:15 (Perspicacia «Buní», núm. 3).

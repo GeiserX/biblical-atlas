@@ -1,0 +1,53 @@
+# biblical-atlas: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: bet-guilgal
+name: Bet-Guilgal
+names:
+- name: Bet-Guilgal
+type: city
+lat: null
+lon: null
+precision: uncertain
+coord_source: null
+coord_url: null
+candidates:
+- name: Guilgal, junto a Jericó
+  geometry:
+    type: point
+    lat: 31.881883
+    lon: 35.459969
+  checked_on: '2026-10-14'
+  status: alternative
+  sources:
+  - it-guilgal
+  - openbible-geo
+  reason: 'Perspicacia «Guilgal», núm. 1: el Bet-Guilgal de después del destierro podría ser este Guilgal. Punto del lugar
+    guilgal, tomado de OpenBible.'
+  coord_source: openbible:ab94aea
+  coord_url: https://www.openbible.info/geo/ancient/ab94aea/gilgal-1
+- name: Guilgal, cerca de Betel
+  geometry:
+    type: point
+    lat: 32.030556
+    lon: 35.225
+  checked_on: '2026-10-14'
+  status: alternative
+  sources:
+  - it-guilgal
+  - openbible-geo
+  reason: 'Perspicacia «Guilgal», núm. 1: también podría ser el Guilgal del núm. 2, el de Elías y Eliseo. Punto del lugar
+    guilgal-cerca-de-betel, tomado de OpenBible.'
+  coord_source: openbible:a6399b3
+  coord_url: https://www.openbible.info/geo/ancient/a6399b3/gilgal-2
+summary: Lugar cerca de Jerusalén donde los cantores levitas se habían hecho poblados después del destierro. Perspicacia duda
+  entre el Guilgal de junto a Jericó y el de cerca de Betel.
+reason: Ne 12:28, 29; Perspicacia «Bet-guilgal» remite a «Guilgal», núm. 1, que deja abiertas las dos identificaciones.
+sources:
+- it-guilgal
+- openbible-geo
+- nehemias-12
+links:
+- title: 'Perspicacia: «Guilgal»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Guilgal/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified

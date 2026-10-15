@@ -10,6 +10,7 @@ reason: Perspicacia «Salú», núm. 1; 1Cr 9:3, 7.
 sources:
 - it-salu-hijo-de-mesulam
 - 1-cronicas-9
+- nehemias-11
 links:
 - title: 'Perspicacia: «Salú»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sal%C3%BA/
@@ -21,8 +22,9 @@ relations:
   inferred: false
   sources:
   - 1-cronicas-9
+  - nehemias-11
   reason: '1Cr 9:7: Salú, hijo de Mesulam.'
-  checked_on: '2026-10-12'
+  checked_on: '2026-10-14'
   status: verified
 - type: lived_in
   place: jerusalen
@@ -30,8 +32,23 @@ relations:
   sources:
   - 1-cronicas-9
   - it-salu-hijo-de-mesulam
+  - nehemias-11
   reason: '1Cr 9:3, 7, 9: de los benjamitas, jefes de casas paternas, que se establecieron en Jerusalén.'
-  checked_on: '2026-10-12'
+  checked_on: '2026-10-14'
   status: verified
-checked_on: '2026-10-12'
+- type: kin
+  person: joed
+  word: ancestor
+  inferred: false
+  sources:
+  - nehemias-11
+  - it-joed
+  reason: Ne 11:7 sigue su linaje por Mesulam hasta Joed; Perspicacia «Joed» lo llama descendiente suyo. La lista de Crónicas
+    da otro padre a Mesulam.
+  checked_on: '2026-10-14'
+  status: verified
+disambiguation: 'Salú núm. 1 de Perspicacia: el benjamita hijo de Mesulam (1Cr 9:7); no el sacerdote que volvió con Zorobabel.'
+checked_on: '2026-10-14'
 status: verified
+distinct_from:
+- salu-sacerdote-de-zorobabel

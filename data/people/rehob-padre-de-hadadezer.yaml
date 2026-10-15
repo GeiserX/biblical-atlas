@@ -18,5 +18,7 @@ links:
 - title: 2 Samuel 8 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-samuel/8/
   type: bible
-checked_on: '2026-09-29'
+checked_on: '2026-10-14'
 status: verified
+distinct_from:
+- rehob-levita-firmante

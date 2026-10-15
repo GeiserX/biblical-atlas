@@ -11,6 +11,7 @@ sources:
 - it-jakin
 - 1-cronicas-9
 - 1-cronicas-24
+- nehemias-11
 links:
 - title: 'Perspicacia: «Jakín»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jak%C3%ADn/
@@ -36,7 +37,7 @@ relations:
   reason: 1Cr 24:1 abre la lista de los descendientes de Aarón repartidos en turnos, y 24:17 da a esta casa el vigésimo primero.
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-14'
 status: verified
 distinct_from:
 - jakin-hijo-de-simeon

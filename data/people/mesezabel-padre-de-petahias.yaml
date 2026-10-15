@@ -1,0 +1,32 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: mesezabel-padre-de-petahias
+name: Mesezabel
+names:
+- name: Mesezabel
+perspicacia: 1200003010#1
+summary: Judaíta del linaje de Zérah. Petahías, hijo suyo, estaba junto al rey para los asuntos del pueblo.
+reason: Perspicacia «Mesezabel», núm. 1; Ne 11:24.
+sources:
+- it-mesezabel
+- nehemias-11
+links:
+- title: 'Perspicacia: «Mesezabel»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Mesezabel/
+  type: perspicacia
+relations:
+- type: kin
+  person: zerah-hijo-de-juda
+  word: ancestor
+  inferred: true
+  sources:
+  - nehemias-11
+  - it-mesezabel
+  reason: 'Perspicacia «Mesezabel», núm. 1: judaíta de la familia de Zérah (Ne 11:24).'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- mesezabel-cabeza-del-pueblo
+- mesezabel-padre-de-berekias
+disambiguation: Mesezabel, judaíta de la familia de Zérah, padre de Petahías (Perspicacia «Mesezabel», núm. 1).

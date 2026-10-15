@@ -1,0 +1,39 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: guinetoi
+name: Guinetói
+names:
+- name: Guinetói
+- name: Guinetoi
+  note: Grafía del título de Perspicacia.
+perspicacia: '1200001708'
+summary: Jefe sacerdotal del grupo de Zorobabel, de vuelta en 537 a.e.c. Quizá es el Guinetón cuya casa encabezaba Mesulam
+  una generación más tarde.
+reason: Perspicacia «Guinetoi»; Ne 12:1, 4, 7, 16.
+sources:
+- it-guinetoi
+- nehemias-12
+links:
+- title: 'Perspicacia: «Guinetoi»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Guinetoi/
+  type: perspicacia
+relations:
+- type: holds_office
+  office: priest
+  inferred: false
+  sources:
+  - nehemias-12
+  reason: 'Ne 12:1, 7: va entre los jefes de los sacerdotes que subieron con Zorobabel y Jesúa.'
+  checked_on: '2026-10-14'
+  status: verified
+- type: same_as
+  person: guineton-familia-sacerdotal
+  certainty: possible
+  inferred: true
+  sources:
+  - it-guinetoi
+  - nehemias-12
+  reason: Perspicacia «Guinetoi» lo ve posiblemente el Guinetón de Ne 12:16.
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified

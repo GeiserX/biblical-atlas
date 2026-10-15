@@ -1,0 +1,63 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: zacarias-hijo-del-selanita
+name: Zacarías
+names:
+- name: Zacarías
+perspicacia: 1200004681#27
+summary: Judaíta, hijo del selanita, es decir, de la familia de Selá; descendientes suyos vivían en Jerusalén después del
+  destierro.
+reason: Perspicacia «Zacarías», núm. 27; Ne 11:5.
+sources:
+- it-zacarias
+- nehemias-11
+links:
+- title: 'Perspicacia: «Zacarías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zacar%C3%ADas/
+  type: perspicacia
+relations:
+- type: kin
+  person: sela-hijo-de-juda
+  word: ancestor
+  inferred: true
+  sources:
+  - nehemias-11
+  - it-selanitas
+  - it-selah
+  reason: Ne 11:5 lo llama hijo del selanita; Perspicacia «Selanitas» y «Selah», núm. 2, ponen a esa familia como descendiente
+    de Selá.
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- zacarias-abuelo-de-ezequias
+- zacarias-consejero-de-uzias
+- zacarias-de-israel
+- zacarias-descendiente-de-elam
+- zacarias-descendiente-de-isias
+- zacarias-descendiente-de-paros
+- zacarias-el-rubenita
+- zacarias-enviado-a-casifia
+- zacarias-hijo-de-amarias
+- zacarias-hijo-de-bebai
+- zacarias-hijo-de-benaya
+- zacarias-hijo-de-hosa
+- zacarias-hijo-de-jeberekias
+- zacarias-hijo-de-jehoiada
+- zacarias-hijo-de-jehosafat
+- zacarias-hijo-de-jonatan
+- zacarias-hijo-de-meselemias
+- zacarias-hijo-de-pasjur
+- zacarias-junto-a-esdras
+- zacarias-levita-de-ezequias
+- zacarias-levita-de-josias
+- zacarias-musico
+- zacarias-padre-de-ido
+- zacarias-padre-de-juan
+- zacarias-principe-de-jehosafat
+- zacarias-profeta
+- zacarias-sacerdote-de-josias
+- zacarias-trompetista
+- zacarias-trompetista-de-la-inauguracion
+- zeker
+disambiguation: Zacarías, judaíta, hijo de un selanita, antepasado de Maaseya (Perspicacia «Zacarías», núm. 27).

@@ -23,6 +23,34 @@ companions:
 - rehum-repatriado
 - baana-repatriado
 - sesbazar
+- nahamani
+- seraya-sacerdote-repatriado
+- jeremias-sacerdote-de-zorobabel
+- esdras-sacerdote-de-zorobabel
+- amarias-sacerdote-de-zorobabel
+- maluc-sacerdote-de-zorobabel
+- hatus-sacerdote-de-zorobabel
+- secanias-sacerdote-de-zorobabel
+- rehum-sacerdote-de-zorobabel
+- meremot-sacerdote-de-zorobabel
+- ido-sacerdote-de-zorobabel
+- guinetoi
+- abias-sacerdote-de-zorobabel
+- mijamin-sacerdote-de-zorobabel
+- maadias
+- bilga-sacerdote-de-zorobabel
+- semaya-sacerdote-repatriado
+- jedaya-antepasado-de-uzi
+- salu-sacerdote-de-zorobabel
+- amoc
+- hilquias-sacerdote-de-zorobabel
+- jedaya-antepasado-de-netanel
+- binui-levita
+- serebias-levita-de-zorobabel
+- juda-levita-de-zorobabel
+- matanias-levita-de-zorobabel
+- bacbuquias-levita-de-zorobabel
+- uni-levita-de-guardia
 summary: Tras el decreto de Ciro, Zorobabel y el sumo sacerdote Josué encabezan la vuelta de más de 42.000 desterrados desde
   Babilonia, con los utensilios del templo. Para el séptimo mes ya viven en sus ciudades.
 reason: El estudio 3 fecha el regreso en 537 a.e.c. (sucesos regreso-de-537 y altar-reconstruido-537). Esd 2:1, 2 los pone
@@ -36,12 +64,14 @@ sources:
 - esdras-1
 - esdras-2
 - esdras-3
+- nehemias-7
+- nehemias-12
 history:
 - date: '2026-10-13'
   change: 'Las notas de las paradas ya no dicen que faltan las fichas de los jefes de Esd 2:2 y de los lugares de Esd 2:59,
     y siguen a la nota de Esd 1:8: Sesbazar es solo posiblemente Zorobabel.'
   source: esdras-2
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified
 stops:
 - order: 1

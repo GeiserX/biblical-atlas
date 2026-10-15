@@ -22,7 +22,7 @@ links:
 - title: 2 Reyes 10 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-reyes/10/
   type: bible
-checked_on: '2026-10-12'
+checked_on: '2026-10-14'
 status: verified
 relations:
 - type: kin
@@ -34,4 +34,14 @@ relations:
   - it-hammat
   reason: 1Cr 2:55 llama a Hammat padre de la casa de Recab; Perspicacia «Hammat», núm. 1, lo hace antepasado de ciertos quenitas.
   checked_on: '2026-10-12'
+  status: verified
+- type: same_as
+  person: recab-padre-de-malkiya
+  certainty: possible
+  inferred: true
+  sources:
+  - nehemias-3
+  - it-recab
+  reason: Perspicacia «Recab», núm. 3, contempla que el de Ne 3:14 sea el núm. 2, antepasado de los recabitas.
+  checked_on: '2026-10-14'
   status: verified

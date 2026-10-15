@@ -3,6 +3,8 @@ id: jehoiarib
 name: Jehoiarib
 names:
 - name: Jehoiarib
+- name: Joiarib
+  note: Así lo llama Ne 11:10; Perspicacia «Joiarib», núm. 1, dice que es el mismo.
 perspicacia: '1200002378'
 summary: Sacerdote cuya casa paterna recibió por suertes el primero de los 24 turnos de David. Descendientes suyos, o un sacerdote
   del mismo nombre, vivieron en Jerusalén tras el destierro.
@@ -11,6 +13,9 @@ sources:
 - it-jehoiarib
 - 1-cronicas-9
 - 1-cronicas-24
+- nehemias-11
+- it-joiarib
+- nehemias-12
 links:
 - title: 'Perspicacia: «Jehoiarib»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jehoiarib/
@@ -36,5 +41,10 @@ relations:
   reason: 1Cr 24:1 abre la lista de los descendientes de Aarón repartidos en turnos, y 24:7 da a esta casa el primero.
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+disambiguation: 'Jehoiarib, que Ne 11:10 llama Joiarib: cabeza de la casa sacerdotal del primer turno de David (Perspicacia
+  «Jehoiarib» y «Joiarib», núm. 1).'
+checked_on: '2026-10-14'
 status: verified
+distinct_from:
+- joiarib-hijo-de-zacarias
+- joiarib-maestro

@@ -1,0 +1,19 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: uzai
+name: Uzái
+names:
+- name: Uzái
+- name: Uzai
+  note: Grafía de Perspicacia.
+perspicacia: '1200004528'
+summary: Hombre cuyo hijo Palal ayudó a Nehemías a reconstruir la muralla de Jerusalén.
+reason: Perspicacia «Uzai»; Ne 3:25.
+sources:
+- it-uzai
+- nehemias-3
+links:
+- title: 'Perspicacia: «Uzai»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Uzai/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified

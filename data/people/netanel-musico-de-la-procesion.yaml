@@ -1,0 +1,30 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: netanel-musico-de-la-procesion
+name: Netanel
+names:
+- name: Netanel
+perspicacia: 1200003236#10
+summary: Músico de una de las procesiones que celebraron el muro reconstruido. Perspicacia ve posible que sea el sacerdote
+  de los hijos de Pasjur de Esd 10:22.
+reason: Perspicacia «Netanel», núm. 10; Ne 12:31, 35, 36.
+sources:
+- it-netanel
+- nehemias-12
+links:
+- title: 'Perspicacia: «Netanel»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Netanel/
+  type: perspicacia
+relations: []
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- netanel-de-la-casa-de-jedaya
+- netanel-hijo-de-jese
+- netanel-hijo-de-obed-edom
+- netanel-hijo-de-zuar
+- netanel-levita-de-josias
+- netanel-padre-de-semaya
+- netanel-principe-de-jehosafat
+- netanel-trompetista
+disambiguation: 'Netanel núm. 10 de Perspicacia: el músico de la procesión del muro (Ne 12:36); no los demás Netanel que registra
+  Perspicacia «Netanel».'

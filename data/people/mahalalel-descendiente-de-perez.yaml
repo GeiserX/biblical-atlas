@@ -1,0 +1,32 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: mahalalel-descendiente-de-perez
+name: Mahalalel
+names:
+- name: Mahalalel
+perspicacia: 1200002839#2
+summary: Judaíta descendiente de Pérez y antepasado de Ataya, que vivía en Jerusalén después del destierro. No es el Mahalalel
+  de antes del Diluvio.
+reason: Perspicacia «Mahalalel», núm. 2; Ne 11:4.
+sources:
+- it-mahalalel
+- nehemias-11
+links:
+- title: 'Perspicacia: «Mahalalel»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Mahalalel/
+  type: perspicacia
+relations:
+- type: kin
+  person: perez
+  word: ancestor
+  inferred: true
+  sources:
+  - nehemias-11
+  - it-mahalalel
+  reason: Perspicacia «Mahalalel», núm. 2, lo da como descendiente de Judá por Pérez (Ne 11:4).
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- mahalalel-hijo-de-quenan
+disambiguation: Mahalalel, judaíta de la línea de Pérez, antepasado de Ataya (Perspicacia «Mahalalel», núm. 2).

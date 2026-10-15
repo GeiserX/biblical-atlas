@@ -1,0 +1,35 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: uzi-sacerdote-de-la-inauguracion
+name: Uzí
+names:
+- name: Uzí
+perspicacia: 1200004533#7
+summary: Sacerdote que estuvo con Nehemías ante el templo en la inauguración del muro. Quizá es el Uzí que encabezaba la casa
+  de Jedayá.
+reason: Perspicacia «Uzí», núm. 7; Ne 12:27, 40-42.
+sources:
+- it-uzi
+- nehemias-12
+links:
+- title: 'Perspicacia: «Uzí»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Uz%C3%AD/
+  type: perspicacia
+relations:
+- type: holds_office
+  office: priest
+  inferred: true
+  sources:
+  - it-uzi
+  - nehemias-12
+  reason: Perspicacia «Uzí», núm. 7, lo llama sacerdote (Ne 12:42).
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- uzi-de-benjamin
+- uzi-de-isacar
+- uzi-hijo-de-bani
+- uzi-hijo-de-buqui
+- uzi-hijo-de-micri
+disambiguation: 'Uzí núm. 7 de Perspicacia: el de Ne 12:42; no los demás Uzí que registra Perspicacia «Uzí».'

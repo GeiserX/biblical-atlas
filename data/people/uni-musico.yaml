@@ -14,5 +14,7 @@ links:
 - title: 'Perspicacia: «Uní»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Un%C3%AD/
   type: perspicacia
-checked_on: '2026-10-12'
+checked_on: '2026-10-14'
 status: verified
+distinct_from:
+- uni-levita-de-guardia

@@ -1,0 +1,41 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: nehemias-entrega-las-cartas-a-los-gobernadores
+title: Nehemías entrega las cartas del rey a los gobernadores
+date:
+  from: -454
+  to: -454
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 455 a.e.c.
+narrative_order:
+  series: nehemias
+  order: 102009
+places:
+- region-al-oeste-del-eufrates
+people:
+- nehemias
+- sanbalat
+- tobias-el-ammonita
+present: []
+passages:
+- Ne 2:9, 10
+summary: Con una escolta de jefes militares y jinetes del rey, Nehemías da las cartas de Artajerjes a los gobernadores al
+  oeste del Éufrates. A Sanbalat y a Tobías les disgusta que alguien venga a ayudar a Israel.
+reason: Ne 2:9, 10. Va entre el permiso de nisán y el comienzo de la obra, hacia el 4 de ab de 455 (Perspicacia «Nehemías»,
+  núm. 3). El texto no dice en qué lugar estaban los gobernadores.
+sources:
+- nehemias-2
+- it-nehemias
+- it-copero
+- it-tobias
+links:
+- title: 'Perspicacia: «Nehemías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Nehem%C3%ADas/
+  type: perspicacia
+- title: Nehemías 2 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Nehem%C3%ADas/2/
+  type: bible
+checked_on: '2026-10-14'
+status: verified

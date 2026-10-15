@@ -1,0 +1,24 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: zacur-levita-firmante
+name: Zacur
+names:
+- name: Zacur
+perspicacia: 1200004651#6
+summary: Levita representado entre los firmantes de la promesa de 455 a.e.c.; firmó él o un descendiente en su nombre.
+reason: Perspicacia «Zacur», núm. 6; Ne 10:12.
+sources:
+- it-zacur
+- nehemias-10
+links:
+- title: 'Perspicacia: «Zacur»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zacur/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- zacur-hijo-de-asaf
+- zacur-hijo-de-hamuel
+- zacur-hijo-de-imri
+- zacur-hijo-de-jaazias
+- zacur-padre-de-samua
+disambiguation: Zacur, levita representado en la promesa de Ne 10 (Perspicacia «Zacur», núm. 6).

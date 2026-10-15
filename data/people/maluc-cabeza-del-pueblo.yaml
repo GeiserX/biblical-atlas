@@ -1,0 +1,24 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: maluc-cabeza-del-pueblo
+name: Maluc
+names:
+- name: Maluc
+perspicacia: 1200002873#6
+summary: Israelita, uno de los jefes del pueblo, cuyo descendiente, o él mismo, selló la promesa de 455 a.e.c.
+reason: Perspicacia «Maluc», núm. 6; Ne 10:27.
+sources:
+- it-maluc
+- nehemias-10
+links:
+- title: 'Perspicacia: «Maluc»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Maluc/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- maluc-descendiente-de-bani
+- maluc-descendiente-de-harim
+- maluc-hijo-de-hasabias
+- maluc-sacerdote-de-zorobabel
+- maluc-sacerdote-firmante
+disambiguation: Maluc, cabeza del pueblo en la lista de Ne 10:27 (Perspicacia «Maluc», núm. 6).

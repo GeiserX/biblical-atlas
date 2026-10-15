@@ -35,10 +35,11 @@ relations:
   inferred: false
   checked_on: '2026-10-13'
   status: verified
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified
 disambiguation: El sacerdote de los hijos de Harim de Esd 10:21; no los demás Uzías que registra Perspicacia.
 distinct_from:
 - uzias
 - uzias-hijo-de-uriel
 - uzias-padre-de-jonatan
+- uzias-hijo-de-zacarias

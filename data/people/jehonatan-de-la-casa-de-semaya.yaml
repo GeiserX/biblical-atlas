@@ -1,0 +1,40 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jehonatan-de-la-casa-de-semaya
+name: Jehonatán
+names:
+- name: Jehonatán
+perspicacia: 1200002380#3
+summary: Cabeza de una casa paterna de sacerdotes, la de Semaya, en tiempos de Joiaquim.
+reason: Perspicacia «Jehonatán», núm. 3; Ne 12:10, 12, 18.
+sources:
+- it-jehonatan
+- nehemias-12
+links:
+- title: 'Perspicacia: «Jehonatán»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jehonat%C3%A1n/
+  type: perspicacia
+relations:
+- type: kin
+  person: semaya-sacerdote-repatriado
+  word: ancestor
+  inferred: false
+  sources:
+  - nehemias-12
+  reason: 'Ne 12:12-21: Jehonatán encabezaba la casa paterna que llevaba el nombre de este sacerdote.'
+  checked_on: '2026-10-14'
+  status: verified
+- type: holds_office
+  office: priest
+  inferred: false
+  sources:
+  - nehemias-12
+  reason: 'Ne 12:12: los jefes de las casas paternas de días de Joiaquim eran sacerdotes.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- jehonatan-levita-de-jehosafat
+- jehonatan-secretario
+disambiguation: 'Jehonatán núm. 3 de Perspicacia: el cabeza de la casa de Semaya (Ne 12:18); no los demás Jehonatán que registra
+  Perspicacia «Jehonatán».'

@@ -1,0 +1,20 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hasenaa
+name: Hasenaá
+names:
+- name: Hasenaá
+perspicacia: '1200001908'
+summary: Sus hijos rehicieron la Puerta del Pescado cuando se reparó la muralla de Jerusalén bajo Nehemías. Perspicacia ve
+  posible que sea el Senaá de Esd 2:35, que muchos leen como nombre de lugar.
+reason: Perspicacia «Hasenaá» y «Senaá»; Ne 3:3.
+sources:
+- it-hasenaa
+- nehemias-3
+- it-senaa
+links:
+- title: 'Perspicacia: «Hasenaá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hasena%C3%A1/
+  type: perspicacia
+relations: []
+checked_on: '2026-10-14'
+status: verified

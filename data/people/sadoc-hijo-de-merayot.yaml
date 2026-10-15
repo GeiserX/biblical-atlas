@@ -10,6 +10,9 @@ distinct_from:
 - sadoc-abuelo-de-jotan
 - sadoc-hijo-de-ahitub
 - sadoc-hijo-de-azor
+- sadoc-hijo-de-baana
+- sadoc-hijo-de-imer
+- sadoc-copista
 summary: Sacerdote de la línea de los sumos sacerdotes, descendiente del Sadoc de David y padre de Salum; antepasado del copista
   Esdras. 1Cr 6:12 lo da como hijo de Ahitub, su abuelo según Perspicacia.
 reason: Perspicacia «Sadoc», núm. 3, y «Ahitub», núm. 3; 1Cr 6:12.
@@ -19,6 +22,7 @@ sources:
 - 1-cronicas-6
 - 1-cronicas-9
 - esdras-7
+- nehemias-11
 links:
 - title: 'Perspicacia: «Sadoc»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sadoc/
@@ -42,8 +46,9 @@ relations:
   sources:
   - 1-cronicas-9
   - it-ahitub
+  - nehemias-11
   reason: '1Cr 9:11: Sadoc, hijo de Merayot. Perspicacia «Ahitub», núm. 3, deduce de ahí que Merayot era su padre.'
-  checked_on: '2026-10-12'
+  checked_on: '2026-10-14'
   status: verified
 - type: holds_office
   office: priest
@@ -55,5 +60,5 @@ relations:
     del sacerdote Azarías.
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified

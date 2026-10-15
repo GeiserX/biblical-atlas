@@ -1,0 +1,17 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: halohes-padre-de-salum
+name: Halohés
+names:
+- name: Halohés
+perspicacia: 1200001831#1
+summary: Padre de Salum, el príncipe de medio distrito de Jerusalén que trabajó con sus hijas en la muralla en 455 a.e.c.
+reason: Perspicacia «Halohés», núm. 1; Ne 3:12.
+sources:
+- it-halohes
+- nehemias-3
+links:
+- title: 'Perspicacia: «Halohés»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Haloh%C3%A9s/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified

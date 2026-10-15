@@ -173,7 +173,7 @@ history:
 - date: '2026-10-12'
   change: 'Jer 29:21 nombra a otro Sedequías, falso profeta hijo de Maaseya: la desambiguación lo excluye también.'
   source: jeremias-29
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified
 distinct_from:
 - sedequias-hijo-de-kenaana
@@ -188,3 +188,7 @@ distinct_from:
 - matanias-descendiente-de-elam
 - matanias-descendiente-de-pahat-moab
 - matanias-descendiente-de-zatu
+- sedequias-sacerdote-firmante
+- matanias-abuelo-de-hanan
+- matanias-levita-de-zorobabel
+- matanias-portero

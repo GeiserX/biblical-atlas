@@ -12,10 +12,13 @@ reason: Perspicacia «Zihá», núm. 1; Esd 2:43.
 sources:
 - it-ziha
 - esdras-2
+- nehemias-7
 links:
 - title: 'Perspicacia: «Zihá»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zih%C3%A1/
   type: perspicacia
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified
 disambiguation: 'Ziha núm. 1 de Perspicacia: la familia de netineos de Esd 2:43, no el superintendente de los netineos.'
+distinct_from:
+- ziha-jefe-de-los-netineos

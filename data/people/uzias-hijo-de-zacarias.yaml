@@ -1,0 +1,34 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: uzias-hijo-de-zacarias
+name: Uzías
+names:
+- name: Uzías
+perspicacia: 1200004535#5
+summary: Judaíta de la línea de Pérez. Ne 11:4 lo da como padre de Ataya, uno de los que vivían en Jerusalén en tiempos de
+  Nehemías.
+reason: Perspicacia «Uzías», núm. 5; Ne 11:4.
+sources:
+- it-uzias
+- nehemias-11
+links:
+- title: 'Perspicacia: «Uzías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Uz%C3%ADas/
+  type: perspicacia
+relations:
+- type: kin
+  person: zacarias-hijo-de-amarias
+  word: father
+  inferred: false
+  sources:
+  - nehemias-11
+  reason: 'Ne 11:4: Uzías, hijo de Zacarías.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- uzias
+- uzias-descendiente-de-harim
+- uzias-hijo-de-uriel
+- uzias-padre-de-jonatan
+disambiguation: Uzías, judaíta de la línea de Pérez, padre o antepasado de Ataya (Perspicacia «Uzías», núm. 5).

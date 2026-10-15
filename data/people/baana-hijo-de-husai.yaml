@@ -11,6 +11,8 @@ distinct_from:
 - baana-hijo-de-rimon
 - baana-el-netofatita
 - baana-repatriado
+- baana-padre-de-sadoc
+- baana-cabeza-del-pueblo
 summary: Hijo de Husái, el amigo de David. Comisario de Salomón en Aser y Bealot, en el norte del país.
 reason: Perspicacia «Baaná», núm. 2; 1Re 4:7, 16.
 sources:
@@ -40,5 +42,5 @@ relations:
   reason: '1Re 4:7, 16: uno de los doce comisarios del rey Salomón.'
   checked_on: '2026-09-30'
   status: verified
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified

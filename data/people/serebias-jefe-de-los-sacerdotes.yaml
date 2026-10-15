@@ -39,5 +39,20 @@ relations:
   reason: 'Esd 8:24-30: recibió su parte de las ofrendas junto al Ahavá y la custodió en el viaje a Jerusalén.'
   checked_on: '2026-10-14'
   status: verified
+- type: same_as
+  person: serebias-levita-que-explico-la-ley
+  certainty: possible
+  inferred: true
+  sources:
+  - it-serebias
+  - nehemias-8
+  reason: Perspicacia «Serebías» ve posible que el núm. 3 (Ne 8:7) sea el núm. 2, y probable que este sea el jefe de los sacerdotes;
+    la unión queda posible.
+  checked_on: '2026-10-14'
+  status: verified
+disambiguation: El jefe de los sacerdotes al que Esdras confió los donativos (Esd 8:24); no el levita Serebías que volvió
+  con Zorobabel.
 checked_on: '2026-10-14'
 status: verified
+distinct_from:
+- serebias-levita-de-zorobabel

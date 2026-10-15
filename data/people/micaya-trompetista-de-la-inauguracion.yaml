@@ -1,0 +1,34 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: micaya-trompetista-de-la-inauguracion
+name: Micaya
+names:
+- name: Micaya
+perspicacia: 1200003034#7
+summary: Sacerdote trompetista de uno de los dos coros que dieron gracias al inaugurarse la muralla en días de Nehemías.
+reason: Perspicacia «Micaya», núm. 7; Ne 12:40, 41.
+sources:
+- it-micaya
+- nehemias-12
+links:
+- title: 'Perspicacia: «Micaya»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Micaya/
+  type: perspicacia
+relations:
+- type: holds_office
+  office: priest
+  inferred: false
+  sources:
+  - nehemias-12
+  reason: 'Ne 12:41: los sacerdotes que llevaban las trompetas.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- maaca-hija-de-uriel
+- mica-hijo-de-zicri
+- micaya-hijo-de-guemarias
+- micaya-hijo-de-imla
+- micaya-padre-de-acbor
+- micaya-principe-de-jehosafat
+disambiguation: 'Micaya núm. 7 de Perspicacia: el trompetista de Ne 12:41; no los demás Micaya que registra Perspicacia «Micaya».'

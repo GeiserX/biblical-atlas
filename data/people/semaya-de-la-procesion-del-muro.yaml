@@ -1,0 +1,47 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: semaya-de-la-procesion-del-muro
+name: Semaya
+names:
+- name: Semaya
+perspicacia: 1200004000#22
+summary: Uno de los que tomaron parte en la marcha inaugural que Nehemías organizó sobre el muro reconstruido de Jerusalén.
+reason: Perspicacia «Semaya», núm. 22; Ne 12:31-34.
+sources:
+- it-semaya
+- nehemias-12
+links:
+- title: 'Perspicacia: «Semaya»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Semaya/
+  type: perspicacia
+relations: []
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- semaya-ayudante-de-core
+- semaya-de-nehelam
+- semaya-descendiente-de-adonicam
+- semaya-descendiente-de-harim
+- semaya-enviado-a-casifia
+- semaya-guarda-de-la-puerta-oriental
+- semaya-hijo-de-delaya
+- semaya-hijo-de-galal
+- semaya-hijo-de-hasub
+- semaya-hijo-de-joel
+- semaya-hijo-de-matanias
+- semaya-hijo-de-netanel
+- semaya-hijo-de-obed-edom
+- semaya-hijo-de-secanias
+- semaya-jefe-de-la-casa-de-elizafan
+- semaya-levita-de-ezequias
+- semaya-levita-de-jehosafat
+- semaya-levita-de-josias
+- semaya-musico-de-la-procesion
+- semaya-padre-de-delaya
+- semaya-padre-de-uriya
+- semaya-profeta
+- semaya-sacerdote-de-la-inauguracion
+- semaya-sacerdote-repatriado
+- semaya-sacerdote-descendiente-de-harim
+- semaya-simeonita
+disambiguation: 'Semaya núm. 22 de Perspicacia: el de la procesión del muro (Ne 12:34); no los demás Semaya que registra Perspicacia
+  «Semaya».'

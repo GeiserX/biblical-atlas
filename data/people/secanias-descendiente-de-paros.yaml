@@ -12,6 +12,9 @@ distinct_from:
 - secanias-hijo-de-jahaziel
 - secanias-ayudante-de-core
 - secanias-hijo-de-jehiel
+- secanias-padre-de-semaya-el-guarda
+- secanias-hijo-de-ara
+- secanias-sacerdote-de-zorobabel
 summary: Antepasado que da nombre a una casa paterna de los hijos de Parós. De ella volvieron con Esdras Zacarías y 150 varones
   en 468 a.e.c.
 reason: Perspicacia «Secanías», núm. 4; Esd 8:3.
@@ -35,5 +38,5 @@ relations:
   reason: 'Esd 8:3: Secanías era de los hijos de Parós.'
   checked_on: '2026-10-13'
   status: verified
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified

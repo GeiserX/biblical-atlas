@@ -1,0 +1,68 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: azarias-hijo-de-maaseya
+name: Azarías
+names:
+- name: Azarías
+perspicacia: 1200000486#24
+disambiguation: El hijo de Maaseya que reparó la muralla junto a su casa (Ne 3:23), núm. 24 de Perspicacia «Azarías»; no los
+  otros Azarías que numera.
+distinct_from:
+- abednego
+- azarias-hijo-de-ahimaaz
+- azarias-hijo-de-etan
+- azarias-hijo-de-hilquias
+- azarias-hijo-de-jehalelel
+- azarias-hijo-de-jehohanan
+- azarias-hijo-de-jehu
+- azarias-hijo-de-jeroham
+- azarias-hijo-de-johanan
+- azarias-hijo-de-merayot
+- azarias-hijo-de-natan
+- azarias-hijo-de-obed
+- azarias-hijo-de-oded
+- azarias-hijo-de-sadoc
+- azarias-hijo-de-sofonias
+- azarias-padre-de-joel
+- azarias-quinto-hijo-de-jehosafat
+- azarias-sacerdote-de-tiempos-de-uzias
+- azarias-sacerdote-repatriado
+- azarias-segundo-hijo-de-jehosafat
+- jaazanias-jefe-militar
+- ocozias-de-juda
+- seraya-repatriado
+- uzias
+- azarias-levita-que-explico-la-ley
+- azarias-sacerdote-firmante
+- azarias-de-la-procesion-del-muro
+summary: Hijo de Maaseya y nieto de Ananíah. En 455 a.e.c. reparó el tramo de la muralla de Jerusalén cercano a su casa.
+reason: Perspicacia «Azarías», núm. 24; Ne 3:23, 24.
+sources:
+- it-azarias
+- nehemias-3
+- it-maaseya
+links:
+- title: 'Perspicacia: «Azarías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Azar%C3%ADas/
+  type: perspicacia
+relations:
+- type: kin
+  person: maaseya-hijo-de-ananiah
+  word: ancestor
+  inferred: false
+  sources:
+  - nehemias-3
+  - it-azarias
+  - it-maaseya
+  reason: 'Ne 3:23: Azarías hijo de Maaseya; Perspicacia «Maaseya», núm. 13, lo da como padre o antepasado.'
+  checked_on: '2026-10-14'
+  status: verified
+- type: lived_in
+  place: jerusalen
+  inferred: false
+  sources:
+  - nehemias-3
+  reason: 'Ne 3:23, 24: reparó junto a su casa, y el tramo siguiente empezaba en la casa de Azarías.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified

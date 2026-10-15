@@ -56,8 +56,9 @@ relations:
   - deuteronomio-29
   - josue-12
   - josue-13
+  - nehemias-9
   reason: Sl 135:11 lo llama rey de Basán.
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-14'
   status: verified
 - type: died_in
   place: edrei
@@ -98,5 +99,5 @@ history:
 - date: '2026-09-29'
   change: El lugar de su derrota se escribe Edréi, como en la TNM (Nú 21:33); Edrei es la grafía de Perspicacia.
   source: numeros-21
-checked_on: '2026-09-29'
+checked_on: '2026-10-14'
 status: verified

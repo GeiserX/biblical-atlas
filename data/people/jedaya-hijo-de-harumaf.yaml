@@ -1,0 +1,49 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jedaya-hijo-de-harumaf
+name: Jedayá
+names:
+- name: Jedayá
+perspicacia: 1200002356#2
+disambiguation: El hijo de Harumaf que reparó la muralla frente a su casa (Ne 3:10), núm. 2 de Perspicacia «Jedayá»; no los
+  otros Jedayá que numera.
+distinct_from:
+- jedaya-antepasado-de-sacerdotes
+- jedaya-de-la-corona
+- jedaya-de-tiempos-de-david
+- jedaya-hijo-de-simri
+- jedaya-sacerdote-repatriado
+- jedaya-antepasado-de-netanel
+- jedaya-antepasado-de-uzi
+summary: Hijo de Harumaf que vivía en Jerusalén tras el destierro. Reparó el tramo de la muralla que tenía delante de su casa.
+reason: Perspicacia «Jedayá», núm. 2; Ne 3:10.
+sources:
+- it-jedaya
+- nehemias-3
+- it-harumaf
+links:
+- title: 'Perspicacia: «Jedayá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jeday%C3%A1/
+  type: perspicacia
+relations:
+- type: kin
+  person: harumaf
+  word: ancestor
+  inferred: false
+  sources:
+  - nehemias-3
+  - it-jedaya
+  - it-harumaf
+  reason: 'Ne 3:10: Jedayá hijo de Harumaf; Perspicacia «Harumaf» lo da como padre o antepasado.'
+  checked_on: '2026-10-14'
+  status: verified
+- type: lived_in
+  place: jerusalen
+  inferred: false
+  sources:
+  - nehemias-3
+  - it-jedaya
+  reason: 'Ne 3:10: el tramo que reparó estaba enfrente de su casa.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified

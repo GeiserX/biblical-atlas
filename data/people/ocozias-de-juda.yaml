@@ -37,6 +37,10 @@ distinct_from:
 - azarias-hijo-de-jehalelel
 - seraya-repatriado
 - azarias-hijo-de-merayot
+- azarias-hijo-de-maaseya
+- azarias-levita-que-explico-la-ley
+- azarias-sacerdote-firmante
+- azarias-de-la-procesion-del-muro
 date:
   from: -905
   to: -904
@@ -213,5 +217,5 @@ history:
   change: Azarías no es el nombre que da el texto de la TNM en 2Cr 22:6, sino el de algunos manuscritos hebreos que cita su
     nota.
   source: 2-cronicas-22
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified

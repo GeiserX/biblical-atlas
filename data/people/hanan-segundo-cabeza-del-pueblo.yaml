@@ -1,0 +1,28 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hanan-segundo-cabeza-del-pueblo
+name: Hanán
+names:
+- name: Hanán
+perspicacia: 1200001850#9
+summary: El segundo jefe del pueblo llamado Hanán en la lista de la promesa de 455 a.e.c.; la selló él o un descendiente.
+reason: Perspicacia «Hanán», núm. 9; Ne 10:26.
+sources:
+- it-hanan
+- nehemias-10
+links:
+- title: 'Perspicacia: «Hanán»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Han%C3%A1n/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- hanan-cabeza-del-pueblo
+- hanan-hijo-de-azel
+- hanan-hijo-de-igdalias
+- hanan-hijo-de-maaca
+- hanan-hijo-de-sasac
+- hanan-hijo-de-zacur
+- hanan-levita-firmante
+- hanan-levita-que-explico-la-ley
+- hanan-netineo
+disambiguation: Hanán, segundo de los dos jefes del pueblo Hanán de Ne 10 (v. 26) (Perspicacia «Hanán», núm. 9).

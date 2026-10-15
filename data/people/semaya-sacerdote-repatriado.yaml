@@ -1,0 +1,58 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: semaya-sacerdote-repatriado
+name: Semaya
+names:
+- name: Semaya
+perspicacia: 1200004000#14
+summary: Sacerdote, quizá fundador de una familia, que volvió con Zorobabel en 537 a.e.c.; Jonatán encabezó su casa en la
+  generación siguiente. Su representante, o un homónimo, selló la promesa de 455.
+reason: Perspicacia «Semaya», núm. 14; Ne 10:8; 12:6, 18.
+sources:
+- it-semaya
+- nehemias-10
+- nehemias-12
+links:
+- title: 'Perspicacia: «Semaya»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Semaya/
+  type: perspicacia
+relations:
+- type: holds_office
+  office: priest
+  inferred: false
+  sources:
+  - nehemias-10
+  - nehemias-12
+  reason: 'Ne 10:8 cierra la lista: «esos son los sacerdotes».'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- semaya-ayudante-de-core
+- semaya-de-la-procesion-del-muro
+- semaya-de-nehelam
+- semaya-descendiente-de-adonicam
+- semaya-descendiente-de-harim
+- semaya-enviado-a-casifia
+- semaya-guarda-de-la-puerta-oriental
+- semaya-hijo-de-delaya
+- semaya-hijo-de-galal
+- semaya-hijo-de-hasub
+- semaya-hijo-de-joel
+- semaya-hijo-de-matanias
+- semaya-hijo-de-netanel
+- semaya-hijo-de-obed-edom
+- semaya-hijo-de-secanias
+- semaya-jefe-de-la-casa-de-elizafan
+- semaya-levita-de-ezequias
+- semaya-levita-de-jehosafat
+- semaya-levita-de-josias
+- semaya-musico-de-la-procesion
+- semaya-padre-de-delaya
+- semaya-padre-de-uriya
+- semaya-profeta
+- semaya-sacerdote-de-la-inauguracion
+- semaya-sacerdote-descendiente-de-harim
+- semaya-simeonita
+disambiguation: Semaya, sacerdote que volvió con Zorobabel; su casa selló la promesa de Ne 10 (Perspicacia «Semaya», núm.
+  14).

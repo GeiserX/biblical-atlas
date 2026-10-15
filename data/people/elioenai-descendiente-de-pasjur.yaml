@@ -37,7 +37,7 @@ relations:
   inferred: false
   checked_on: '2026-10-13'
   status: verified
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified
 disambiguation: El sacerdote de los hijos de Pasjur de Esd 10:22; no los demás Elioenái que registra Perspicacia.
 distinct_from:
@@ -45,3 +45,4 @@ distinct_from:
 - elioenai-hijo-de-beker
 - elioenai-hijo-de-nearias
 - elioenai-simeonita
+- elioenai-trompetista-de-la-inauguracion

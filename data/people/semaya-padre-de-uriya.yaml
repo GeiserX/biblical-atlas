@@ -25,6 +25,13 @@ distinct_from:
 - semaya-enviado-a-casifia
 - semaya-descendiente-de-harim
 - semaya-sacerdote-descendiente-de-harim
+- semaya-guarda-de-la-puerta-oriental
+- semaya-hijo-de-delaya
+- semaya-sacerdote-repatriado
+- semaya-de-la-procesion-del-muro
+- semaya-hijo-de-matanias
+- semaya-musico-de-la-procesion
+- semaya-sacerdote-de-la-inauguracion
 summary: Padre de Uriya, el profeta de Quiryat-Jearim contemporáneo de Jeremías al que mató el rey Jehoiaquim.
 reason: Perspicacia «Semaya», núm. 11; Jer 26:20.
 sources:
@@ -34,5 +41,5 @@ links:
 - title: 'Perspicacia: «Semaya»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Semaya/
   type: perspicacia
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified

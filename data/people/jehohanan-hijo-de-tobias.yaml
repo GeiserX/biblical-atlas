@@ -1,0 +1,48 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jehohanan-hijo-de-tobias
+name: Jehohanán
+names:
+- name: Jehohanán
+perspicacia: 1200002374#8
+summary: Hijo de Tobías el ammonita, enemigo de Nehemías. Se casó con una hija de Mesulam hijo de Berekías, una mujer israelita.
+reason: Perspicacia «Jehohanán», núm. 8; Ne 6:17-19.
+sources:
+- it-jehohanan
+- nehemias-6
+links:
+- title: 'Perspicacia: «Jehohanán»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jehohan%C3%A1n/
+  type: perspicacia
+relations:
+- type: kin
+  person: tobias-el-ammonita
+  word: father
+  inferred: false
+  sources:
+  - nehemias-6
+  - it-jehohanan
+  reason: 'Ne 6:18: su hijo Jehohanán, dicho de Tobías.'
+  checked_on: '2026-10-14'
+  status: verified
+- type: kin
+  person: mesulam-hijo-de-berekias
+  word: father_in_law
+  inferred: false
+  sources:
+  - nehemias-6
+  - it-mesulam
+  reason: 'Ne 6:18: su esposa era hija de Mesulam, el hijo de Berekías.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- jehohanan-descendiente-de-bebai
+- jehohanan-general-de-jehosafat
+- jehohanan-hijo-de-eliasib
+- jehohanan-hijo-de-meselemias
+- jehohanan-padre-de-azarias
+- jehohanan-padre-de-ismael
+- jehohanan-de-la-casa-de-amarias
+- jehohanan-sacerdote-de-la-inauguracion
+disambiguation: 'Jehohanán núm. 8 de Perspicacia: el hijo de Tobías el ammonita (Ne 6:18), no los demás Jehohanán.'

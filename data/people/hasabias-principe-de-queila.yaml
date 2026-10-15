@@ -1,0 +1,31 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hasabias-principe-de-queila
+name: Hasabías
+names:
+- name: Hasabías
+perspicacia: 1200001900#11
+disambiguation: El príncipe de medio distrito de Queilá (Ne 3:17), núm. 11 de Perspicacia «Hasabías»; no los otros Hasabías
+  que numera.
+distinct_from:
+- hasabias-hebronita
+- hasabias-hijo-de-amasias
+- hasabias-hijo-de-jedutun
+- hasabias-hijo-de-quemuel
+- hasabias-jefe-de-los-sacerdotes
+- hasabias-levita-de-josias
+- hasabias-merarita
+- hasabias-padre-de-azricam
+- hasabias-hijo-de-matanias
+- hasabias-de-la-casa-de-hilquias
+- hasabias-jefe-de-los-levitas
+summary: Levita que gobernaba medio distrito de Queilá como príncipe. Reparó por su distrito un tramo de la muralla de Jerusalén.
+reason: Perspicacia «Hasabías», núm. 11; Ne 3:17.
+sources:
+- it-hasabias
+- nehemias-3
+links:
+- title: 'Perspicacia: «Hasabías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hasab%C3%ADas/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified

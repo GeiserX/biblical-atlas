@@ -536,6 +536,10 @@ outside:
     caption: aconsejado por ella
     inverse_caption: su consejera
     why: La palabra adviser dice consejero; la consejera de Ocozías es su madre (2Cr 22:3) y el vocabulario no tiene la forma femenina.
+  - type: tie
+    caption: pagado por él
+    inverse_caption: le pagó
+    why: Dice un soborno de un momento (Ne 6:12, 13), no un trato de señor y siervo ni una alianza; solo lo llevan Semaya hijo de Delayá con Tobías y con Sanbalat.
 
 # Un cargo tiene un solo texto en español. Si lo ejercen hombres y mujeres y el español los distingue, son dos
 # cargos: king y queen, prophet y prophetess. El segundo se añade cuando una fuente llama así a alguien.

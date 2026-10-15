@@ -13,16 +13,22 @@ coord_source: openbible:ac5ba1a
 coord_url: https://www.openbible.info/geo/ancient/ac5ba1a/senaah
 coord_note: Khirbat al Beiyudat, el sitio que Perspicacia propone con reservas; en OpenBible es un punto de la identificación
   con Magdalsenna.
-summary: Muchos lo tienen por un lugar al norte de Jericó. Sus hijos, 3.630, formaron parte del regreso guiado por Zorobabel
-  (537 a.e.c.).
+summary: Muchos lo tienen por un lugar al norte de Jericó. Sus hijos, 3.630 según Esd 2 y 3.930 según Ne 7, formaron parte
+  del regreso guiado por Zorobabel (537 a.e.c.).
 reason: 'Perspicacia «Senaá»; Esd 2:35. OpenBible: solo el punto.'
 sources:
 - it-senaa
 - openbible-geo
 - esdras-2
+- nehemias-7
 links:
 - title: 'Perspicacia: «Senaá»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sena%C3%A1/
   type: perspicacia
-checked_on: '2026-10-13'
+history:
+- date: '2026-10-14'
+  change: El resumen daba como hecho la cifra de Esd 2; Ne 7:38 da otra. Perspicacia «Nehemías, Libro de» ve posible que las
+    dos listas salgan de registros distintos.
+  source: nehemias-7
+checked_on: '2026-10-14'
 status: verified

@@ -1,0 +1,50 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: mesulam-cabeza-del-pueblo
+name: Mesulam
+names:
+- name: Mesulam
+perspicacia: 1200003014#20
+summary: Jefe del pueblo cuyo descendiente, o él mismo, dio fe de la promesa de 455 a.e.c. Perspicacia ve posible que sea
+  el Mesulam enviado a Casifía.
+reason: Perspicacia «Mesulam», núm. 20; Ne 10:20.
+sources:
+- it-mesulam
+- nehemias-10
+links:
+- title: 'Perspicacia: «Mesulam»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Mesulam/
+  type: perspicacia
+relations:
+- type: same_as
+  person: mesulam-enviado-a-casifia
+  certainty: possible
+  inferred: true
+  sources:
+  - nehemias-10
+  - it-mesulam
+  reason: Perspicacia «Mesulam», núm. 13, ve posible que sea el jefe del pueblo de Ne 10:20 (núm. 20).
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- mesulam-abuelo-de-safan
+- mesulam-de-la-casa-de-esdras
+- mesulam-de-la-casa-de-guineton
+- mesulam-de-la-procesion-del-muro
+- mesulam-descendiente-de-bani
+- mesulam-hijo-de-abihail
+- mesulam-hijo-de-berekias
+- mesulam-hijo-de-besodeya
+- mesulam-hijo-de-elpaal
+- mesulam-hijo-de-hodavias
+- mesulam-hijo-de-mesilemit
+- mesulam-hijo-de-sefatias
+- mesulam-hijo-de-zorobabel
+- mesulam-junto-a-esdras
+- mesulam-levita-de-josias
+- mesulam-levita-de-tiempos-de-esdras
+- mesulam-portero
+- mesulam-sacerdote-firmante
+- salum-hijo-de-sadoc
+disambiguation: Mesulam, cabeza del pueblo en la lista de Ne 10:20 (Perspicacia «Mesulam», núm. 20).

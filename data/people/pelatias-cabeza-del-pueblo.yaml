@@ -1,0 +1,22 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: pelatias-cabeza-del-pueblo
+name: Pelatías
+names:
+- name: Pelatías
+perspicacia: 1200003420#4
+summary: Cabeza de familia que selló la promesa de 455 a.e.c., con el compromiso de no tomar esposas de los pueblos vecinos.
+reason: Perspicacia «Pelatías», núm. 4; Ne 10:22.
+sources:
+- it-pelatias
+- nehemias-10
+links:
+- title: 'Perspicacia: «Pelatías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Pelat%C3%ADas/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- pelatias-hijo-de-benaya
+- pelatias-hijo-de-hananias
+- pelatias-hijo-de-isi
+disambiguation: Pelatías, cabeza de familia en la lista de Ne 10:22 (Perspicacia «Pelatías», núm. 4).

@@ -1,0 +1,19 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: sobec
+name: Sobec
+names:
+- name: Sobec
+- name: Sobeq
+  note: Grafía del título de Perspicacia.
+perspicacia: '1200004078'
+summary: Israelita, o cabeza de una familia representada, entre los que sellaron la promesa de los días de Nehemías (455 a.e.c.).
+reason: Perspicacia «Sobeq»; Ne 10:24.
+sources:
+- it-sobeq
+- nehemias-10
+links:
+- title: 'Perspicacia: «Sobeq»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sobeq/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified

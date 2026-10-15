@@ -1,0 +1,43 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: serebias-levita-que-explico-la-ley
+name: Serebías
+names:
+- name: Serebías
+perspicacia: 1200004020#3
+disambiguation: El Serebías de los días de Nehemías (Ne 8:7); quizá el descendiente de Mahlí que viajó con Esdras, pero no
+  el levita que volvió con Zorobabel.
+summary: Levita que explicó la Ley con Esdras en 455 a.e.c., propuso con otros el compromiso escrito de fidelidad y figura
+  entre los jefes de los levitas de Ne 12:24.
+reason: Perspicacia «Serebías», núm. 3; Ne 8:7; 9:4, 5; 10:12; 12:24.
+sources:
+- it-serebias
+- nehemias-8
+- nehemias-9
+- nehemias-10
+- nehemias-12
+links:
+- title: 'Perspicacia: «Serebías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sereb%C3%ADas/
+  type: perspicacia
+relations:
+- type: accompanies
+  person: esdras
+  date:
+    from: -454
+    to: -454
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 455 a.e.c.
+  sources:
+  - nehemias-8
+  - it-serebias
+  reason: 'Ne 8:7-9: explicaba al pueblo la Ley que Esdras leía, en el mes séptimo de 455 a.e.c.'
+  inferred: false
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- serebias-levita-de-zorobabel

@@ -8,6 +8,10 @@ disambiguation: Pedaya el manasita, padre de Joel; no el de Rumá, abuelo del re
 distinct_from:
 - pedaya-padre-de-zebida
 - pedaya-hijo-de-joaquin
+- pedaya-descendiente-de-paros
+- pedaya-junto-a-esdras
+- pedaya-hijo-de-colaya
+- pedaya-encargado-de-los-almacenes
 summary: Padre de Joel, el príncipe de la media tribu occidental de Manasés en tiempos de David.
 reason: Perspicacia «Pedaya», núm. 1; 1Cr 27:20.
 sources:
@@ -18,5 +22,5 @@ links:
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Pedaya/
   type: perspicacia
 relations: []
-checked_on: '2026-10-12'
+checked_on: '2026-10-14'
 status: verified

@@ -23,9 +23,10 @@ relations:
   reason: '1Cr 9:31: primogénito de Salum el coreíta.'
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified
 distinct_from:
 - matitias-musico
 - matitias-descendiente-de-nebo
+- matitias-junto-a-esdras
 disambiguation: 'Matitías núm. 2 de Perspicacia: levita coreíta, primogénito de Salum. No los demás Matitías que numera Perspicacia.'

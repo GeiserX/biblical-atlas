@@ -1,0 +1,21 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: buni-padre-de-hasabias
+name: Buní
+names:
+- name: Buní
+perspicacia: 1200000840#1
+summary: Levita; un descendiente suyo, Semaya, fue elegido por suertes para vivir en Jerusalén cuando se terminó el muro.
+reason: Perspicacia «Buní», núm. 1; Ne 11:15.
+sources:
+- it-buni
+- nehemias-11
+links:
+- title: 'Perspicacia: «Buní»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Bun%C3%AD/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- buni-cabeza-del-pueblo
+- buni-levita-de-la-confesion
+disambiguation: Buní, levita, antepasado de Semaya (Ne 11:15) (Perspicacia «Buní», núm. 1).

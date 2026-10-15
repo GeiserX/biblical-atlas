@@ -1,0 +1,30 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: bani-levita-firmante
+name: Baní
+names:
+- name: Baní
+perspicacia: 1200000553#10
+summary: Levita cuyo descendiente, o él mismo, selló la promesa de 455 a.e.c. con los demás levitas.
+reason: Perspicacia «Baní», núm. 10; Ne 10:13.
+sources:
+- it-bani
+- nehemias-10
+links:
+- title: 'Perspicacia: «Baní»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ban%C3%AD/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- bani-antepasado-de-doce-repatriados
+- bani-antepasado-de-seis-repatriados
+- bani-cabeza-de-familia
+- bani-cabeza-del-pueblo
+- bani-descendiente-de-perez
+- bani-el-gadita
+- bani-hijo-de-hasabias
+- bani-hijo-de-semer
+- bani-levita-que-explico-la-ley
+- bani-padre-de-rehum
+- bani-segundo-de-la-plataforma
+disambiguation: Baní, levita que, él o un descendiente, selló la promesa de Ne 10 (Perspicacia «Baní», núm. 10).

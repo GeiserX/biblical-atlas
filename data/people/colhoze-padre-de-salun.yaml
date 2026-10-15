@@ -1,0 +1,17 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: colhoze-padre-de-salun
+name: Colhozé
+names:
+- name: Colhozé
+perspicacia: 1200001006#1
+summary: Israelita cuyo hijo Salún reparó la Puerta de la Fuente y la muralla cercana en días de Nehemías.
+reason: Perspicacia «Colhozé», núm. 1; Ne 3:15.
+sources:
+- it-colhoze
+- nehemias-3
+links:
+- title: 'Perspicacia: «Colhozé»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Colhoz%C3%A9/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified

@@ -9,6 +9,7 @@ reason: Perspicacia «Mesilemit»; 1Cr 9:12.
 sources:
 - it-mesilemit
 - 1-cronicas-9
+- nehemias-11
 links:
 - title: 'Perspicacia: «Mesilemit»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Mesilemit/
@@ -32,5 +33,15 @@ relations:
   reason: Perspicacia «Mesilemit» lo llama sacerdote; 1Cr 9:12.
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+- type: same_as
+  person: mesilemot-hijo-de-imer
+  certainty: probable
+  inferred: true
+  sources:
+  - nehemias-11
+  - it-mesilemot
+  reason: 'Perspicacia «Mesilemot», núm. 2: el de Ne 11:13 probablemente es Mesilemit.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
 status: verified

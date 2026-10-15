@@ -1,0 +1,22 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: izrahias-director-de-los-cantores
+name: Izrahías
+names:
+- name: Izrahías
+perspicacia: 1200002254#2
+summary: Dirigía a los cantores en la celebración del muro reconstruido de Jerusalén.
+reason: Perspicacia «Izrahías», núm. 2; Ne 12:42.
+sources:
+- it-izrahias
+- nehemias-12
+links:
+- title: 'Perspicacia: «Izrahías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Izrah%C3%ADas/
+  type: perspicacia
+relations: []
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- izrahias-de-isacar
+disambiguation: 'Izrahías núm. 2 de Perspicacia: el director de los cantores de Ne 12:42; no los demás Izrahías que registra
+  Perspicacia «Izrahías».'

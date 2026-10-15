@@ -1,0 +1,24 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: sebanias-levita-firmante
+name: Sebanías
+names:
+- name: Sebanías
+perspicacia: 1200003971#4
+summary: Otro levita llamado Sebanías que selló la promesa de 455 a.e.c., por sí mismo o en nombre de un antepasado.
+reason: Perspicacia «Sebanías», núm. 4; Ne 10:12.
+sources:
+- it-sebanias
+- nehemias-10
+links:
+- title: 'Perspicacia: «Sebanías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Seban%C3%ADas/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- sebanias-sacerdote-repatriado
+- sebanias-levita-de-la-confesion
+- sebanias-levita-de-la-confesion
+- sebanias-sacerdote-repatriado
+- sebanias-trompetista
+disambiguation: Sebanías, segundo levita Sebanías de la lista de Ne 10 (v. 12) (Perspicacia «Sebanías», núm. 4).

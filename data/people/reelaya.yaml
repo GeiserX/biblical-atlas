@@ -11,6 +11,7 @@ reason: Perspicacia «Reelaya»; Esd 2:2.
 sources:
 - it-reelaya
 - esdras-2
+- nehemias-7
 links:
 - title: 'Perspicacia: «Reelaya»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Reelaya/
@@ -21,8 +22,9 @@ relations:
   inferred: false
   sources:
   - esdras-2
+  - nehemias-7
   reason: 'Esd 2:1, 2: volvió con Zorobabel a Jerusalén y Judá, donde cada familia fue a su ciudad.'
-  checked_on: '2026-10-13'
+  checked_on: '2026-10-14'
   status: verified
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified

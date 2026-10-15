@@ -51,5 +51,11 @@ relations:
   reason: 'Esd 8:1, 2: subió con Esdras desde Babilonia.'
   checked_on: '2026-10-13'
   status: verified
-checked_on: '2026-10-13'
+disambiguation: El cabeza de los hijos de David que volvió con Esdras (Esd 8:2), núm. 3 de Perspicacia «Hatús»; no el hijo
+  de Hasabneya.
+checked_on: '2026-10-14'
 status: verified
+distinct_from:
+- hatus-hijo-de-hasabneya
+- hatus-sacerdote-firmante
+- hatus-sacerdote-de-zorobabel

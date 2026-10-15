@@ -1,0 +1,20 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: milalai
+name: Milalái
+names:
+- name: Milalái
+- name: Milalai
+  note: Grafía del título de Perspicacia.
+perspicacia: '1200003051'
+summary: Músico levita de una de las procesiones que inauguraron el muro reconstruido de Jerusalén en días de Nehemías.
+reason: Perspicacia «Milalai»; Ne 12:31, 36.
+sources:
+- it-milalai
+- nehemias-12
+links:
+- title: 'Perspicacia: «Milalai»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Milalai/
+  type: perspicacia
+relations: []
+checked_on: '2026-10-14'
+status: verified

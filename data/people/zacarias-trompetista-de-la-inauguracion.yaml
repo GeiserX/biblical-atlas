@@ -1,0 +1,59 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: zacarias-trompetista-de-la-inauguracion
+name: Zacarías
+names:
+- name: Zacarías
+perspicacia: 1200004681#30
+summary: Otro sacerdote trompetista de la inauguración del muro, distinto del hijo de Jonatán.
+reason: Perspicacia «Zacarías», núm. 30; Ne 12:40, 41.
+sources:
+- it-zacarias
+- nehemias-12
+links:
+- title: 'Perspicacia: «Zacarías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zacar%C3%ADas/
+  type: perspicacia
+relations:
+- type: holds_office
+  office: priest
+  inferred: false
+  sources:
+  - nehemias-12
+  reason: 'Ne 12:41: los sacerdotes que llevaban las trompetas.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- zacarias-abuelo-de-ezequias
+- zacarias-consejero-de-uzias
+- zacarias-de-israel
+- zacarias-descendiente-de-elam
+- zacarias-descendiente-de-isias
+- zacarias-descendiente-de-paros
+- zacarias-el-rubenita
+- zacarias-enviado-a-casifia
+- zacarias-hijo-de-amarias
+- zacarias-hijo-de-bebai
+- zacarias-hijo-de-benaya
+- zacarias-hijo-de-hosa
+- zacarias-hijo-de-jeberekias
+- zacarias-hijo-de-jehoiada
+- zacarias-hijo-de-jehosafat
+- zacarias-hijo-de-jonatan
+- zacarias-hijo-de-meselemias
+- zacarias-hijo-de-pasjur
+- zacarias-hijo-del-selanita
+- zacarias-junto-a-esdras
+- zacarias-levita-de-ezequias
+- zacarias-levita-de-josias
+- zacarias-musico
+- zacarias-padre-de-ido
+- zacarias-padre-de-juan
+- zacarias-principe-de-jehosafat
+- zacarias-profeta
+- zacarias-sacerdote-de-josias
+- zacarias-trompetista
+- zeker
+disambiguation: 'Zacarías núm. 30 de Perspicacia: el trompetista de Ne 12:41; no los demás Zacarías que registra Perspicacia
+  «Zacarías».'

@@ -1,0 +1,37 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jedaya-antepasado-de-netanel
+name: Jedayá
+names:
+- name: Jedayá
+perspicacia: 1200002356#7
+summary: El segundo sacerdote llamado Jedayá en la lista del regreso con Zorobabel y Jesúa (537 a.e.c.). En días de Joiaquim
+  su casa paterna la representaba Netanel.
+reason: Perspicacia «Jedayá», núm. 7; Ne 12:1, 7, 21.
+sources:
+- it-jedaya
+- nehemias-12
+links:
+- title: 'Perspicacia: «Jedayá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jeday%C3%A1/
+  type: perspicacia
+relations:
+- type: holds_office
+  office: priest
+  inferred: false
+  sources:
+  - nehemias-12
+  reason: 'Ne 12:1, 7: va entre los jefes de los sacerdotes que subieron con Zorobabel y Jesúa.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- jedaya-antepasado-de-sacerdotes
+- jedaya-antepasado-de-uzi
+- jedaya-de-la-corona
+- jedaya-de-tiempos-de-david
+- jedaya-hijo-de-harumaf
+- jedaya-hijo-de-simri
+- jedaya-sacerdote-repatriado
+disambiguation: 'Jedayá núm. 7 de Perspicacia: el segundo Jedayá de Ne 12:6, 7, cuya casa representaba Netanel; no los demás
+  Jedayá que registra Perspicacia «Jedayá».'

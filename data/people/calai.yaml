@@ -1,0 +1,37 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: calai
+name: Calái
+names:
+- name: Calái
+- name: Qalai
+  note: Grafía del título de Perspicacia.
+perspicacia: '1200002569'
+summary: Sacerdote contemporáneo del sumo sacerdote Joiaquim que encabezaba la casa paterna de Salái.
+reason: Perspicacia «Qalai»; Ne 12:12, 20, 26.
+sources:
+- it-qalai
+- nehemias-12
+links:
+- title: 'Perspicacia: «Qalai»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Qalai/
+  type: perspicacia
+relations:
+- type: kin
+  person: salai-familia-sacerdotal
+  word: ancestor
+  inferred: false
+  sources:
+  - nehemias-12
+  reason: 'Ne 12:12-21: Calái encabezaba la casa paterna que llevaba el nombre de este sacerdote.'
+  checked_on: '2026-10-14'
+  status: verified
+- type: holds_office
+  office: priest
+  inferred: false
+  sources:
+  - nehemias-12
+  reason: 'Ne 12:12: los jefes de las casas paternas de días de Joiaquim eran sacerdotes.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified

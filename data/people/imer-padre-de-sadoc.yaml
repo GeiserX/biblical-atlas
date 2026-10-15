@@ -1,0 +1,22 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: imer-padre-de-sadoc
+name: Imer
+names:
+- name: Imer
+perspicacia: 1200002153#4
+disambiguation: El padre de Sadoc (Ne 3:29), núm. 4 de Perspicacia «Imer»; no el padre de Mesilemit ni el de Pasjur.
+distinct_from:
+- imer-padre-de-mesilemit
+- imer-padre-de-pasjur
+summary: Padre del Sadoc que reparó la muralla de Jerusalén. Si «hijo» significa descendiente, podría ser el sacerdote Imer
+  de tiempos de David.
+reason: Perspicacia «Imer», núm. 4; Ne 3:29.
+sources:
+- it-imer
+- nehemias-3
+links:
+- title: 'Perspicacia: «Imer»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Imer/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified

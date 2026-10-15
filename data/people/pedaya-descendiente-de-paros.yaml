@@ -1,0 +1,39 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: pedaya-descendiente-de-paros
+name: Pedaya
+names:
+- name: Pedaya
+perspicacia: 1200003414#5
+disambiguation: El de la familia de Parós que reparó la muralla (Ne 3:25), núm. 5 de Perspicacia «Pedaya»; no los otros Pedaya
+  que numera.
+distinct_from:
+- pedaya-hijo-de-joaquin
+- pedaya-padre-de-joel
+- pedaya-padre-de-zebida
+- pedaya-junto-a-esdras
+- pedaya-hijo-de-colaya
+- pedaya-encargado-de-los-almacenes
+summary: Descendiente de Parós. Reparó un tramo de la muralla de Jerusalén en días de Nehemías.
+reason: Perspicacia «Pedaya», núm. 5, y «Parós»; Ne 3:25.
+sources:
+- it-pedaya
+- nehemias-3
+- it-paros
+links:
+- title: 'Perspicacia: «Pedaya»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Pedaya/
+  type: perspicacia
+relations:
+- type: kin
+  person: paros
+  word: ancestor
+  inferred: true
+  sources:
+  - nehemias-3
+  - it-pedaya
+  - it-paros
+  reason: Ne 3:25 lo llama hijo de Parós; Perspicacia «Pedaya», núm. 5, y «Parós» lo dan como miembro de esa familia.
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified

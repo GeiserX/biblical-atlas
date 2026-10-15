@@ -1,0 +1,23 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hosaya-principe-de-juda
+name: Hosaya
+names:
+- name: Hosaya
+perspicacia: 1200002088#2
+summary: Al parecer, un príncipe de Judá. En la inauguración del muro iba, con la mitad de los príncipes, tras el coro que
+  marchó por la derecha, rumbo a los Montones de Ceniza.
+reason: Perspicacia «Hosaya», núm. 2; Ne 12:31, 32.
+sources:
+- it-hosaya
+- nehemias-12
+links:
+- title: 'Perspicacia: «Hosaya»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hosaya/
+  type: perspicacia
+relations: []
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- hosaya-padre-de-jezanias
+disambiguation: 'Hosaya núm. 2 de Perspicacia: el príncipe de la procesión del muro (Ne 12:32); no los demás Hosaya que registra
+  Perspicacia «Hosaya».'

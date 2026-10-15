@@ -1,0 +1,32 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: bani-segundo-de-la-plataforma
+name: Baní
+names:
+- name: Baní
+perspicacia: 1200000553#9
+disambiguation: El segundo Baní de la plataforma (Ne 9:4); no el levita Baní que ya explicaba la Ley con Esdras ni los cabezas
+  de familia de ese nombre.
+distinct_from:
+- bani-antepasado-de-doce-repatriados
+- bani-antepasado-de-seis-repatriados
+- bani-cabeza-de-familia
+- bani-descendiente-de-perez
+- bani-el-gadita
+- bani-hijo-de-semer
+- bani-levita-que-explico-la-ley
+- bani-padre-de-rehum
+- bani-levita-firmante
+- bani-cabeza-del-pueblo
+- bani-hijo-de-hasabias
+summary: Levita, el segundo de los dos Baní que subieron a la plataforma de los levitas el día de la confesión pública de
+  455 a.e.c.
+reason: Perspicacia «Baní», núm. 9; Ne 9:4.
+sources:
+- it-bani
+- nehemias-9
+links:
+- title: 'Perspicacia: «Baní»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ban%C3%AD/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified

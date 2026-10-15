@@ -1,0 +1,29 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: halohes-cabeza-del-pueblo
+name: Halohés
+names:
+- name: Halohés
+perspicacia: 1200001831#2
+summary: Jefe del pueblo, o su descendiente, que selló la promesa de 455 a.e.c. Perspicacia ve posible que sea el padre del
+  Salum de Ne 3:12.
+reason: Perspicacia «Halohés», núm. 2; Ne 10:24.
+sources:
+- it-halohes
+- nehemias-10
+links:
+- title: 'Perspicacia: «Halohés»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Haloh%C3%A9s/
+  type: perspicacia
+relations:
+- type: same_as
+  person: halohes-padre-de-salum
+  certainty: possible
+  inferred: true
+  sources:
+  - nehemias-10
+  - it-halohes
+  reason: 'Perspicacia «Halohés», núm. 2: el jefe de Ne 10:24 quizá es el núm. 1, el padre de Salum.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified

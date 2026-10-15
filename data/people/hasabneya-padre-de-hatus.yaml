@@ -1,0 +1,21 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hasabneya-padre-de-hatus
+name: Hasabneya
+names:
+- name: Hasabneya
+perspicacia: 1200001902#1
+summary: Padre de Hatús, uno de los que repararon la muralla de Jerusalén en días de Nehemías.
+reason: Perspicacia «Hasabneya», núm. 1; Ne 3:10.
+sources:
+- it-hasabneya
+- nehemias-3
+links:
+- title: 'Perspicacia: «Hasabneya»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hasabneya/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- hasabneya-levita-de-la-confesion
+disambiguation: 'Hasabneya núm. 1 de Perspicacia: el padre de Hatús, que reparó el muro (Ne 3:10); no el levita que guió la
+  confesión del pueblo.'

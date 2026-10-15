@@ -1,0 +1,26 @@
+# biblical-atlas: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: dibon-de-juda
+name: Dibón
+names:
+- name: Dibón
+type: city
+lat: 31.29606
+lon: 35.1562
+precision: uncertain
+coord_source: openbible:a3d1c99
+coord_url: https://www.openbible.info/geo/ancient/a3d1c99/dibon-2
+coord_note: 'Primera identificación de OpenBible, que la iguala con Dimoná: es el mismo punto que dimona. Perspicacia solo
+  dice que hay quien las relaciona.'
+summary: Lugar de Judá donde se estableció gente de Judá, con sus pueblos dependientes, después del destierro. No es la Dibón
+  de Moab; algunos la relacionan con Dimoná.
+reason: 'Perspicacia «Dibón», núm. 2; Ne 11:25. OpenBible: solo el punto.'
+sources:
+- it-dibon
+- openbible-geo
+- nehemias-11
+links:
+- title: 'Perspicacia: «Dibón»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Dib%C3%B3n/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified

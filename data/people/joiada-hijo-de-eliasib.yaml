@@ -1,0 +1,45 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: joiada-hijo-de-eliasib
+name: Joiadá
+names:
+- name: Joiadá
+perspicacia: 1200002492#2
+summary: Hijo del sumo sacerdote Eliasib, bisnieto de Jesúa y padre de Johanán en la línea de sumos sacerdotes posterior al
+  destierro. Nehemías echó a uno de sus hijos, yerno de Sanbalat.
+reason: Perspicacia «Joiadá», núm. 2; Ne 12:10, 11, 22; 13:28.
+sources:
+- it-joiada
+- nehemias-12
+- nehemias-13
+links:
+- title: 'Perspicacia: «Joiadá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Joiad%C3%A1/
+  type: perspicacia
+relations:
+- type: kin
+  person: eliasib-sumo-sacerdote
+  word: father
+  inferred: false
+  sources:
+  - nehemias-12
+  - nehemias-13
+  - it-joiada
+  reason: 'Ne 12:10 y 13:28: Joiadá era hijo de Eliasib.'
+  checked_on: '2026-10-14'
+  status: verified
+- type: succeeds
+  person: eliasib-sumo-sacerdote
+  office: high_priest
+  inferred: true
+  sources:
+  - nehemias-12
+  - it-joiada
+  reason: Ne 12:10, 22 lo pone en la sucesión tras Eliasib; Perspicacia «Joiadá», núm. 2, lo sitúa en la línea de sumos sacerdotes.
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- joiada-hijo-de-paseah
+disambiguation: 'Joiadá núm. 2 de Perspicacia: el hijo del sumo sacerdote Eliasib (Ne 12:10); no los demás Joiadá que registra
+  Perspicacia «Joiadá».'

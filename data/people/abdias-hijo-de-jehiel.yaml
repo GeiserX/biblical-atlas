@@ -17,6 +17,8 @@ distinct_from:
 - abdias-profeta
 - abdias-levita-de-josias
 - abdias-principe-de-jehosafat
+- abdias-sacerdote-firmante
+- abdias-portero
 summary: Hijo de Jehiel. En 468 a.e.c. guio a 218 varones de la casa de Joab en el viaje de Esdras.
 reason: Perspicacia «Abdías», núm. 11; Esd 8:1, 9.
 sources:
@@ -64,5 +66,5 @@ relations:
   reason: 'Esd 8:1, 9: subió con Esdras con 218 varones.'
   checked_on: '2026-10-13'
   status: verified
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified

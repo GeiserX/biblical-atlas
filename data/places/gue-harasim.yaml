@@ -4,6 +4,8 @@ name: Gue-Harasim
 names:
 - name: Gue-Harasim
   note: La nota de 1Cr 4:14 lo traduce «valle de los artesanos».
+- name: Valle de los Artesanos
+  note: Así lo traduce la TNM en Ne 11:35, junto a Onó.
 type: valley
 lat: null
 lon: null
@@ -44,9 +46,10 @@ sources:
 - it-gue-harasim
 - openbible-geo
 - 1-cronicas-4
+- nehemias-11
 links:
 - title: 'Perspicacia: «Gue-harasim»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Gue-harasim/
   type: perspicacia
-checked_on: '2026-10-12'
+checked_on: '2026-10-14'
 status: verified

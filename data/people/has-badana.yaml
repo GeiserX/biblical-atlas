@@ -1,0 +1,18 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: has-badana
+name: Has-Badaná
+names:
+- name: Has-Badaná
+perspicacia: '1200001903'
+summary: Uno de los siete hombres, quizá levitas, que acompañaron a Esdras por su izquierda durante la lectura de la Ley ante
+  la Puerta del Agua.
+reason: Perspicacia «Has-badaná»; Ne 8:4.
+sources:
+- it-has-badana
+- nehemias-8
+links:
+- title: 'Perspicacia: «Has-badaná»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Has-badan%C3%A1/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified

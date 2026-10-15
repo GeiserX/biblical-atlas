@@ -1,0 +1,34 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: delaya-hijo-de-mehetabel
+name: Delayá
+names:
+- name: Delayá
+perspicacia: 1200001148#4
+summary: Hijo de Mehetabel y padre del Semaya al que Sanbalat y Tobías pagaron para intimidar a Nehemías.
+reason: Perspicacia «Delayá», núm. 4; Ne 6:10.
+sources:
+- it-delaya
+- nehemias-6
+links:
+- title: 'Perspicacia: «Delayá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Delay%C3%A1/
+  type: perspicacia
+relations:
+- type: kin
+  person: mehetabel-antepasado-de-semaya
+  word: father
+  inferred: false
+  sources:
+  - nehemias-6
+  - it-delaya
+  reason: 'Ne 6:10: Delayá hijo de Mehetabel.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- delaya-de-tiempos-de-david
+- delaya-hijo-de-elioenai
+- delaya-hijo-de-semaya
+- delaya-sin-registro
+disambiguation: 'Delayá núm. 4 de Perspicacia: el padre de Semaya, el que intimidó a Nehemías (Ne 6:10), no los demás Delayá.'

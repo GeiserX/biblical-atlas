@@ -1,0 +1,34 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hanani-musico-de-la-procesion
+name: Hananí
+names:
+- name: Hananí
+perspicacia: 1200001852#5
+summary: Sacerdote y músico levita de la procesión que Nehemías organizó para inaugurar el muro de Jerusalén.
+reason: Perspicacia «Hananí», núm. 5; Ne 12:31-36.
+sources:
+- it-hanani
+- nehemias-12
+links:
+- title: 'Perspicacia: «Hananí»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hanan%C3%AD/
+  type: perspicacia
+relations:
+- type: holds_office
+  office: priest
+  inferred: true
+  sources:
+  - it-hanani
+  - nehemias-12
+  reason: Perspicacia «Hananí», núm. 5, lo llama sacerdote y músico (Ne 12:36).
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- hanani-descendiente-de-imer
+- hanani-hermano-de-nehemias
+- hanani-hijo-de-heman
+- hanani-vidente
+disambiguation: 'Hananí núm. 5 de Perspicacia: el músico de la procesión del muro (Ne 12:36); no los demás Hananí que registra
+  Perspicacia «Hananí».'

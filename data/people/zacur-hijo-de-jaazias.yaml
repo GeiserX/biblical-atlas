@@ -9,6 +9,9 @@ distinct_from:
 - zacur-padre-de-samua
 - zacur-hijo-de-asaf
 - zacur-hijo-de-hamuel
+- zacur-hijo-de-imri
+- zacur-levita-firmante
+- zacur-hijo-de-matanias
 summary: Levita merarita, hijo de Jaazías, del tiempo de David.
 reason: Perspicacia «Zacur», núm. 3; 1Cr 24:27.
 sources:
@@ -29,5 +32,5 @@ relations:
   reason: 1Cr 24:27 lo cuenta entre los hijos de Jaazías; Perspicacia «Zacur», núm. 3, lo llama hijo de Jaazías.
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-14'
 status: verified

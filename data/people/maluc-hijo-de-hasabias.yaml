@@ -24,8 +24,11 @@ relations:
   checked_on: '2026-10-12'
   status: verified
 disambiguation: El levita merarita antepasado de Etán (1Cr 6:44, 45); no los Maluc de los días de Esdras.
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified
 distinct_from:
 - maluc-descendiente-de-bani
 - maluc-descendiente-de-harim
+- maluc-cabeza-del-pueblo
+- maluc-sacerdote-firmante
+- maluc-sacerdote-de-zorobabel

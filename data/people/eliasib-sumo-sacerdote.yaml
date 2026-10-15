@@ -1,0 +1,93 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: eliasib-sumo-sacerdote
+name: Eliasib
+names:
+- name: Eliasib
+perspicacia: 1200001298#6
+disambiguation: El sumo sacerdote de los días de Nehemías (Ne 3:1), núm. 6 de Perspicacia «Eliasib»; no los otros Eliasib
+  que numera.
+distinct_from:
+- eliasib-cantor
+- eliasib-de-tiempos-de-david
+- eliasib-descendiente-de-bani
+- eliasib-descendiente-de-zatu
+- eliasib-hijo-de-elioenai
+- eliasib-padre-de-jehohanan
+summary: Sumo sacerdote en tiempos de Nehemías y nieto de Jesúa. En 455 a.e.c., con los demás sacerdotes, reconstruyó y santificó
+  la Puerta de las Ovejas. Años después hizo sitio a Tobías en un comedor del templo.
+reason: Perspicacia «Eliasib», núm. 6; Ne 3:1, 20, 21; 12:10; 13:4-9.
+sources:
+- it-eliasib
+- nehemias-3
+- nehemias-12
+- nehemias-13
+- it-joiaquim
+- it-tobias
+links:
+- title: 'Perspicacia: «Eliasib»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Eliasib/
+  type: perspicacia
+relations:
+- type: holds_office
+  office: high_priest
+  date:
+    from: -454
+    to: -454
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 455 a.e.c.
+  inferred: false
+  sources:
+  - nehemias-3
+  - it-eliasib
+  reason: Ne 3:1 lo llama el sumo sacerdote Eliasib cuando se reconstruye la muralla.
+  checked_on: '2026-10-14'
+  status: verified
+- type: lived_in
+  place: jerusalen
+  inferred: false
+  sources:
+  - nehemias-3
+  - nehemias-13
+  reason: 'Ne 3:20, 21: su casa estaba junto a la muralla de Jerusalén, y Meremot reparó el tramo que iba de su entrada a
+    su final.'
+  checked_on: '2026-10-14'
+  status: verified
+- type: kin
+  person: joiaquim
+  word: father
+  inferred: false
+  sources:
+  - nehemias-12
+  - it-eliasib
+  reason: 'Ne 12:10: Joiaquim fue padre de Eliasib.'
+  checked_on: '2026-10-14'
+  status: verified
+- type: succeeds
+  person: joiaquim
+  office: high_priest
+  inferred: true
+  sources:
+  - it-joiaquim
+  - it-eliasib
+  - nehemias-12
+  - nehemias-13
+  reason: 'Perspicacia «Joiaquim» y «Eliasib», núm. 6: cuando llegó Nehemías el sumo sacerdote era Eliasib, hijo de Joiaquim;
+    Ne 13:28 lo llama sumo sacerdote.'
+  checked_on: '2026-10-14'
+  status: verified
+- type: kin
+  person: tobias-el-ammonita
+  word: relative
+  inferred: false
+  sources:
+  - nehemias-13
+  - it-eliasib
+  - it-tobias
+  reason: Ne 13:4 dice que Eliasib era pariente de Tobías, sin decir el grado.
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified

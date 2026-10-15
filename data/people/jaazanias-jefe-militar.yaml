@@ -36,6 +36,10 @@ distinct_from:
 - jaazanias-hijo-de-azur
 - seraya-repatriado
 - azarias-hijo-de-merayot
+- azarias-hijo-de-maaseya
+- azarias-levita-que-explico-la-ley
+- azarias-sacerdote-firmante
+- azarias-de-la-procesion-del-muro
 date:
   from: -606
   to: -606
@@ -89,5 +93,5 @@ relations:
   inferred: false
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified

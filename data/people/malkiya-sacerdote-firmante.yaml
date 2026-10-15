@@ -1,0 +1,41 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: malkiya-sacerdote-firmante
+name: Malkiya
+names:
+- name: Malkiya
+perspicacia: 1200002866#12
+summary: Sacerdote cuyo nombre está entre los que sellaron la promesa de los días del gobernador Nehemías (455 a.e.c.); pudo
+  hacerlo él o en nombre de un antepasado.
+reason: Perspicacia «Malkiya», núm. 12; Ne 10:3.
+sources:
+- it-malkiya
+- nehemias-10
+links:
+- title: 'Perspicacia: «Malkiya»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Malkiya/
+  type: perspicacia
+relations:
+- type: holds_office
+  office: priest
+  inferred: false
+  sources:
+  - nehemias-10
+  reason: 'Ne 10:8 cierra la lista: «esos son los sacerdotes».'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- malkias-padre-de-pasjur
+- malkiya-de-tiempos-de-david
+- malkiya-descendiente-de-harim
+- malkiya-descendiente-de-paros-1
+- malkiya-descendiente-de-paros-2
+- malkiya-hijo-de-etni
+- malkiya-hijo-de-harim
+- malkiya-hijo-de-recab
+- malkiya-hijo-del-rey
+- malkiya-junto-a-esdras
+- malkiya-orfebre
+- malkiya-sacerdote-de-la-inauguracion
+disambiguation: Malkiya, sacerdote que, él o un antepasado, selló la promesa de Ne 10 (Perspicacia «Malkiya», núm. 12).

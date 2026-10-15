@@ -1,0 +1,52 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: matanias-abuelo-de-hanan
+name: Matanías
+names:
+- name: Matanías
+perspicacia: null
+summary: Levita, padre de Zacur y abuelo de Hanán, el hombre de confianza de los almacenes en días de Nehemías. Perspicacia
+  lo nombra con el levita hijo de Micá y ve posible que sea el antepasado de Jahaziel.
+reason: Perspicacia «Matanías», núm. 2; Ne 13:13.
+sources:
+- it-matanias
+- nehemias-13
+links:
+- title: 'Perspicacia: «Matanías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Matan%C3%ADas/
+  type: perspicacia
+relations:
+- type: same_as
+  person: matanias-antepasado-de-jahaziel
+  certainty: possible
+  inferred: true
+  sources:
+  - it-matanias
+  - nehemias-13
+  reason: 'Perspicacia «Matanías», núm. 2: puede que el antepasado de Jahaziel sea el mismo Matanías que nombra Ne 13:13.'
+  checked_on: '2026-10-14'
+  status: verified
+- type: same_as
+  person: matanias-hijo-de-mica
+  certainty: possible
+  inferred: true
+  sources:
+  - it-matanias
+  - nehemias-13
+  reason: Perspicacia «Matanías», núm. 2, nombra juntos al hijo de Micá y al Matanías de Ne 13:13 como uno que quizá sea el
+    núm. 2; no lo da por seguro.
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- matanias-descendiente-de-bani
+- matanias-descendiente-de-elam
+- matanias-descendiente-de-pahat-moab
+- matanias-descendiente-de-zatu
+- matanias-hijo-de-heman
+- matanias-levita-de-ezequias
+- sedequias
+- matanias-levita-de-zorobabel
+- matanias-portero
+disambiguation: El abuelo de Hanán (Ne 13:13), que Perspicacia «Matanías», núm. 2, ve posible igual al hijo de Micá y al antepasado
+  de Jahaziel; no los demás Matanías que registra.

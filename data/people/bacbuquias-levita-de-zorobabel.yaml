@@ -1,0 +1,35 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: bacbuquias-levita-de-zorobabel
+name: Bacbuquías
+names:
+- name: Bacbuquías
+- name: Baqbuquías
+  note: Grafía del título de Perspicacia.
+perspicacia: 1200000541#1
+summary: Levita que volvió a Jerusalén con Zorobabel y hacía guardia frente a sus hermanos. Perspicacia ve posible que sea
+  el portero Bacbuquías de Ne 12:25.
+reason: Perspicacia «Baqbuquías», núm. 1; Ne 12:1, 9.
+sources:
+- it-baqbuquias
+- nehemias-12
+links:
+- title: 'Perspicacia: «Baqbuquías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Baqbuqu%C3%ADas/
+  type: perspicacia
+relations:
+- type: same_as
+  person: bacbuquias-portero
+  certainty: possible
+  inferred: true
+  sources:
+  - it-baqbuquias
+  - nehemias-12
+  reason: 'Perspicacia «Baqbuquías», núm. 1: es posible que sea el núm. 2, el portero de Ne 12:25.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- bacbuquias-levita
+disambiguation: 'Bacbuquías núm. 1 de Perspicacia: el levita de guardia que volvió con Zorobabel (Ne 12:9); no los demás Bacbuquías
+  que registra Perspicacia «Baqbuquías».'

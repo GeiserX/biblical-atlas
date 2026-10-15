@@ -1,0 +1,43 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: matenai-de-la-casa-de-joiarib
+name: Matenái
+names:
+- name: Matenái
+- name: Matenai
+  note: Grafía del título de Perspicacia.
+perspicacia: 1200002935#3
+summary: Sacerdote de días de Joiaquim, cabeza de la casa paterna de Joiarib.
+reason: Perspicacia «Matenai», núm. 3; Ne 12:12, 19.
+sources:
+- it-matenai
+- nehemias-12
+links:
+- title: 'Perspicacia: «Matenai»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Matenai/
+  type: perspicacia
+relations:
+- type: kin
+  person: jehoiarib
+  word: ancestor
+  inferred: false
+  sources:
+  - nehemias-12
+  reason: 'Ne 12:19: de la casa de Joiarib, Matenái. Perspicacia «Joiarib», núm. 1, llama también Jehoiarib al cabeza de esa
+    casa.'
+  checked_on: '2026-10-14'
+  status: verified
+- type: holds_office
+  office: priest
+  inferred: false
+  sources:
+  - nehemias-12
+  reason: 'Ne 12:12: los jefes de las casas paternas de días de Joiaquim eran sacerdotes.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- matenai-descendiente-de-bani
+- matenai-descendiente-de-hasum
+disambiguation: 'Matenái núm. 3 de Perspicacia: el cabeza de la casa de Joiarib (Ne 12:19); no los demás Matenái que registra
+  Perspicacia «Matenai».'

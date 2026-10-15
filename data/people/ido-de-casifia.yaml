@@ -12,6 +12,7 @@ distinct_from:
 - ido-padre-de-ahinadab
 - ido-padre-de-berekias
 - ido-hombre-de-visiones
+- ido-sacerdote-de-zorobabel
 summary: Cabeza de los siervos del templo que vivían en Casifía. Atendió la petición de Esdras, y de allí salieron 220 de
   ellos con los levitas hacia Jerusalén en 468 a.e.c.
 reason: Perspicacia «Idó», núm. 7; Esd 8:17, 20.
@@ -42,5 +43,5 @@ relations:
   reason: Esd 8:17 lo llama el líder de Casifía; Perspicacia «Idó», núm. 7, cabeza de los siervos del templo que vivían allí.
   checked_on: '2026-10-13'
   status: verified
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified

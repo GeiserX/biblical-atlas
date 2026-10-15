@@ -15,6 +15,7 @@ sources:
 - it-uriya
 - esdras-8
 - it-meremot
+- nehemias-3
 links:
 - title: 'Perspicacia: «Uriya»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Uriya/
@@ -27,9 +28,10 @@ relations:
   sources:
   - it-uriya
   - it-meremot
+  - nehemias-3
   reason: Ne 3:4 lo llama hijo de Hacoz; Perspicacia «Meremot», núm. 2, dice que la familia descendía de Haqoz, cabeza de
     un turno de David.
-  checked_on: '2026-10-13'
+  checked_on: '2026-10-14'
   status: verified
 - type: holds_office
   office: priest
@@ -40,5 +42,5 @@ relations:
   reason: Perspicacia «Uriya», núm. 3, lo llama sacerdote; Esd 8:33 da a su hijo como sacerdote.
   checked_on: '2026-10-13'
   status: verified
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified

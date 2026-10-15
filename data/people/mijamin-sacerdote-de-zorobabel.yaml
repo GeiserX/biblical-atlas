@@ -1,0 +1,45 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: mijamin-sacerdote-de-zorobabel
+name: Mijamín
+names:
+- name: Mijamín
+perspicacia: 1200003047#2
+summary: Uno de los cabezas de los sacerdotes del regreso con Zorobabel. Quizá dio su nombre a la casa paterna de Miniamín
+  de la generación siguiente.
+reason: Perspicacia «Mijamín», núm. 2; Ne 12:1, 5, 17.
+sources:
+- it-mijamin
+- nehemias-12
+- it-miniamin
+links:
+- title: 'Perspicacia: «Mijamín»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Mijam%C3%ADn/
+  type: perspicacia
+relations:
+- type: holds_office
+  office: priest
+  inferred: false
+  sources:
+  - nehemias-12
+  reason: 'Ne 12:1, 7: va entre los jefes de los sacerdotes que subieron con Zorobabel y Jesúa.'
+  checked_on: '2026-10-14'
+  status: verified
+- type: same_as
+  person: miniamin-familia-sacerdotal
+  certainty: possible
+  inferred: true
+  sources:
+  - it-mijamin
+  - it-miniamin
+  - nehemias-12
+  reason: 'Perspicacia «Mijamín», núm. 2, y «Miniamín», núm. 2: quizá fundó la casa de Miniamín (Ne 12:5, 17).'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- mijamin-de-tiempos-de-david
+- mijamin-descendiente-de-paros
+- mijamin-sacerdote-firmante
+disambiguation: 'Mijamín núm. 2 de Perspicacia: el cabeza sacerdotal del regreso con Zorobabel (Ne 12:5); no los demás Mijamín
+  que registra Perspicacia «Mijamín».'

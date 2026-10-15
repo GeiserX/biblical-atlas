@@ -1,0 +1,41 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: sanbalat-y-tobias-se-burlan-de-la-muralla
+title: Sanbalat y Tobías se burlan de la muralla
+date:
+  from: -454
+  to: -454
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 455 a.e.c. (entre el 4 de ab y el 25 de elul)
+narrative_order:
+  series: nehemias
+  order: 104001
+places:
+- jerusalen
+- samaria
+people:
+- nehemias
+- sanbalat
+- tobias-el-ammonita
+present:
+- nehemias
+passages:
+- Ne 4:1-6
+summary: Furioso, Sanbalat se ríe de los judíos ante sus compañeros y el ejército de Samaria, y Tobías dice que un zorro tiraría
+  su muro. Nehemías ora y la muralla llega a media altura.
+reason: 'Perspicacia «Nehemías», núm. 3: las burlas siguieron durante la obra, del 4 de ab al 25 de elul de 455. No se dice
+  dónde habló Sanbalat; solo Nehemías queda en Jerusalén. Serie nehemias, en el orden del libro.'
+sources:
+- nehemias-4
+- it-nehemias
+- it-sanbalat
+- it-tobias
+- si-3
+links:
+- title: Nehemías 4 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Nehem%C3%ADas/4/
+  type: bible
+checked_on: '2026-10-14'
+status: verified

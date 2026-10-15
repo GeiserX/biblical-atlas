@@ -11,6 +11,7 @@ reason: Perspicacia «Baanah», núm. 3; Esd 2:2 y su nota.
 sources:
 - it-baanah
 - esdras-2
+- nehemias-7
 links:
 - title: 'Perspicacia: «Baanah»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Baanah/
@@ -21,15 +22,17 @@ relations:
   inferred: false
   sources:
   - esdras-2
+  - nehemias-7
   reason: 'Esd 2:1, 2: volvió con Zorobabel a Jerusalén y Judá, donde cada familia fue a su ciudad.'
-  checked_on: '2026-10-13'
+  checked_on: '2026-10-14'
   status: verified
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified
 distinct_from:
 - baana-el-netofatita
 - baana-hijo-de-ahilud
 - baana-hijo-de-husai
 - baana-hijo-de-rimon
+- baana-padre-de-sadoc
 disambiguation: 'Baanah núm. 3 de Perspicacia: posible jefe del regreso de 537 (Esd 2:2), siglos posterior a los Baaná de
   David y Salomón.'

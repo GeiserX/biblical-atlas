@@ -121,6 +121,61 @@ names:
 - name: Contrafuerte
   note: Punto de la muralla donde Uzías puso otra torre (2Cr 26:9). Perspicacia «Jerusalén» cree que quizá estaba en el muro
     oriental, cerca de los edificios reales.
+- name: Fortaleza de la Casa
+  note: Fortaleza al noroeste del templo, cuyas puertas necesitaban vigas (Ne 2:8; 7:2). Perspicacia «Castillo» dice que en
+    ese sitio se levantó después la Fortaleza Antonia.
+- name: Puerta de los Montones de Ceniza
+  note: Puerta del ángulo sudeste, unos 1.000 codos al este de la Puerta del Valle, abierta al valle de Hinón (Ne 2:13; 3:13,
+    14). Perspicacia «Puerta» la iguala con la Puerta de los Tiestos.
+- name: Puerta de la Fuente
+  note: Puerta del extremo sur de la colina oriental, al sur de la Ciudad de David; daba a una fuente, quizá En-Roguel (Ne
+    2:14; 3:15; 12:37). Perspicacia «Puerta».
+- name: Estanque del Rey
+  note: Ne 2:14. Perspicacia «Estanque» ve posible situarlo entre las puertas de la Fuente y de los Montones de Ceniza; quizá
+    sea el estanque de Ne 3:16.
+- name: Torre de Meá
+  note: Torre del muro norte, al este de la de Hananel y cerca de la Puerta de las Ovejas; los sacerdotes santificaron el
+    tramo hasta ella (Ne 3:1; 12:39). Perspicacia «Torre» no sabe de dónde viene el nombre, que significa «Centenar».
+- name: Puerta de la Ciudad Vieja
+  note: Puerta del noroeste, entre la del Pescado y la de Efraín, donde el Muro Ancho se juntaba con el muro del Segundo Barrio;
+    la repararon Joiadá y Mesulam (Ne 3:6; 12:39). Perspicacia «Puerta».
+- name: Muro Ancho
+  note: Tramo norte de la muralla de la ciudad vieja, en el que estaba la Puerta de Efraín; hasta él pavimentaron Uziel y
+    Hananías (Ne 3:8; 12:38). Perspicacia «Puerta».
+- name: Torre de los Hornos
+  note: Torre del extremo noroeste, junto a la Puerta de la Esquina o cerca de ella; la repararon Malkiya y Hasub (Ne 3:11;
+    12:38). Perspicacia «Torre» cree que el nombre quizá venga de panaderos del lugar.
+- name: Estanque del Canal
+  note: Estanque al sur de la Ciudad de David, en la unión de los valles de Hinón y Tiropeón, cerca del Jardín del Rey; Salún
+    reparó su muralla (Ne 3:15). Perspicacia «Estanque del Canal» lo iguala con el estanque inferior.
+- name: Escalera
+  note: La que baja de la Ciudad de David, hasta donde llegaba el tramo de Salún (Ne 3:15; 12:37). Perspicacia «Estanque del
+    Canal» la pone en el extremo sur de la Ciudad de David. No es la Escalera de Acaz.
+- name: Sepulturas de David
+  note: Tumbas de David y de reyes de Judá en la Ciudad de David; desde enfrente de ellas reparó Nehemías hijo de Azbuc (Ne
+    3:16; 1Re 2:10). Perspicacia «Sepultura» no conoce su sitio; algunos las ponen en la colina sudeste.
+- name: Casa de los Poderosos
+  note: Edificio junto a la muralla donde acababa el tramo de Nehemías hijo de Azbuc (Ne 3:16). jw.org no dice qué era.
+- name: Arsenal
+  note: Depósito de armas de la ciudad; Ézer reparó un tramo frente a la subida a él, en el Contrafuerte (Ne 3:19). jw.org
+    no dice dónde estaba exactamente.
+- name: Casa del Rey
+  note: El palacio (nota de Ne 3:25). Junto a él y al Patio de la Guardia se alzaba una torre (Ne 3:25; Jer 37:21); Perspicacia
+    «Torre» recoge que algunos la ven como la Torre de David de Can 4:4.
+- name: Puerta del Agua
+  note: Puerta del este, cerca de Ofel y del recinto del templo, quizá por su acceso a la fuente de Guihón; ante ella había
+    una plaza donde Esdras leyó la Ley (Ne 3:26; 8:1). Perspicacia «Puerta».
+- name: Puerta Oriental
+  note: Puerta del recinto del templo, no de la muralla; su guarda Semaya reparó un tramo (Ne 3:29). Perspicacia «Puerta»
+    cree que es la puerta del rey hacia el oriente de 1Cr 9:18.
+- name: Puerta de la Inspección
+  note: Puerta del muro oriental, frente al templo y al norte de la Puerta de los Caballos; Malkiya el orfebre reparó hasta
+    enfrente de ella (Ne 3:31). Perspicacia «Puerta» cree que era la Puerta de la Guardia.
+- name: Casa de David
+  note: Edificio de la Ciudad de David junto al que pasó el primer coro, entre la Escalera y la Puerta del Agua (Ne 12:37).
+- name: Puerta de la Guardia
+  note: Puerta donde se detuvo el segundo coro antes de bajar al templo (Ne 12:39, 40); Perspicacia «Puerta» cree que es la
+    Puerta de la Inspección del muro oriental.
 type: city
 lat: 31.776667
 lon: 35.234167
@@ -400,6 +455,19 @@ sources:
 - esdras-7
 - esdras-8
 - esdras-10
+- nehemias-1
+- nehemias-2
+- it-castillo
+- nehemias-3
+- it-estanque-del-canal
+- it-sepultura
+- it-distrito
+- nehemias-4
+- nehemias-7
+- nehemias-8
+- nehemias-11
+- nehemias-12
+- nehemias-13
 links:
 - title: 'Perspicacia: «Jerusalén»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jerusal%C3%A9n/

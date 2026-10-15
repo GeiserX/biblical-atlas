@@ -1,0 +1,37 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: refaya-hijo-de-hur
+name: Refayá
+names:
+- name: Refayá
+perspicacia: 1200003694#5
+disambiguation: El hijo de Hur, príncipe de medio distrito de Jerusalén (Ne 3:9), núm. 5 de Perspicacia «Refayá»; no los otros
+  Refayá que numera.
+distinct_from:
+- rafa-hijo-de-binea
+- refaya-hijo-de-isi
+- refaya-hijo-de-jesaya
+- refaya-hijo-de-tola
+summary: Hijo de Hur. Gobernaba como príncipe media parte del distrito de Jerusalén y reparó un tramo de la muralla con Nehemías
+  en 455 a.e.c.
+reason: Perspicacia «Refayá», núm. 5, y «Distrito»; Ne 3:9.
+sources:
+- it-refaya
+- nehemias-3
+- it-distrito
+links:
+- title: 'Perspicacia: «Refayá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Refay%C3%A1/
+  type: perspicacia
+relations:
+- type: kin
+  person: hur-padre-de-refaya
+  word: father
+  inferred: false
+  sources:
+  - nehemias-3
+  - it-refaya
+  reason: 'Ne 3:9: Refayá hijo de Hur.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified

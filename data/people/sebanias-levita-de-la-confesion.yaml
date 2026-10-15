@@ -1,0 +1,25 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: sebanias-levita-de-la-confesion
+name: Sebanías
+names:
+- name: Sebanías
+perspicacia: 1200003971#3
+disambiguation: El levita Sebanías de la confesión del pueblo (Ne 9:4, 5); no el sacerdote trompetista de David ni los demás
+  Sebanías que numera Perspicacia.
+distinct_from:
+- sebanias-trompetista
+- sebanias-sacerdote-repatriado
+- sebanias-levita-firmante
+summary: Levita que subió a la plataforma, guió al pueblo en la confesión del día 24 del mes y selló luego la promesa. Perspicacia
+  deja abierto si representaba a una familia levita con ese nombre.
+reason: Perspicacia «Sebanías», núm. 3; Ne 9:4, 5; 10:10.
+sources:
+- it-sebanias
+- nehemias-9
+- nehemias-10
+links:
+- title: 'Perspicacia: «Sebanías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Seban%C3%ADas/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified

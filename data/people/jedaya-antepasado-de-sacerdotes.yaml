@@ -10,6 +10,7 @@ reason: Perspicacia «Jedayá», núm. 5; Esd 2:36.
 sources:
 - it-jedaya
 - esdras-2
+- nehemias-7
 links:
 - title: 'Perspicacia: «Jedayá»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jeday%C3%A1/
@@ -24,8 +25,9 @@ relations:
   sources:
   - esdras-2
   - it-jedaya
+  - nehemias-7
   reason: 'Esd 2:36: sus descendientes se cuentan entre los sacerdotes.'
-  checked_on: '2026-10-13'
+  checked_on: '2026-10-14'
   status: verified
 - type: kin
   person: jesua-de-tiempos-de-david
@@ -35,8 +37,9 @@ relations:
   - esdras-2
   - it-jesua
   - it-jedaya
-  reason: 'Esd 2:36 solo dice «de la familia de Jesúa». Que sea el Jesúa de la novena división lo ve probable Perspicacia
-    «Jesúa», núm. 1; «Jedayá», núm. 5, deja abierto un lazo con la línea del sumo sacerdote.'
+  - nehemias-7
+  reason: Esd 2:36 solo dice «de la familia de Jesúa». Que sea el Jesúa de la novena división lo ve probable Perspicacia «Jesúa»,
+    núm. 1; «Jedayá», núm. 5, deja abierto un lazo con la línea del sumo sacerdote.
   checked_on: '2026-10-14'
   status: verified
 - type: same_as
@@ -56,5 +59,8 @@ distinct_from:
 - jedaya-de-la-corona
 - jedaya-hijo-de-simri
 - jedaya-sacerdote-repatriado
+- jedaya-hijo-de-harumaf
+- jedaya-antepasado-de-netanel
+- jedaya-antepasado-de-uzi
 disambiguation: 'Jedayá núm. 5 de Perspicacia: antepasado de los sacerdotes de Esd 2:36. No es el sacerdote que vivió en Jerusalén
   (núm. 4).'
