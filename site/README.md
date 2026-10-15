@@ -143,6 +143,7 @@ Los demás parámetros solo aparecen cuando no valen lo de siempre:
 | `vel` | `1-hora` … `2-dias` … `3-meses` … `1-anio` … `250-anios` | Velocidad de reproducción elegida a mano, en tiempo por segundo. Sin él, sigue a la escala |
 | `conexion`, `camino` | `<tipo>:<id>~<tipo>:<id>`; número | Conexión entre dos y el camino elegido |
 | `leer`, `pas` | `<libro>-<capítulo>`; número | Modo lectura y pasaje |
+| `foco` | `1` | Modo lectura con «Solo lectura y mapa»: sin la línea, la ficha, «Mientras tanto» ni la leyenda. Solo se escribe con la lectura abierta |
 | `paso` | número | Parada del recorrido guiado |
 | `portada` | `1` | Portada, con su propia entrada de historial. Sin nada en la dirección, el sitio abre en ella |
 | `p` | un pasaje: `Hch16:1`, `2Re17:6`, `Génesis12`, `Hch16:1-5` | Abre lo que cita el pasaje (lo explica «Enlace a un pasaje», más abajo). Mientras la ficha sigue siendo una de las que lo citan, la dirección lo conserva junto a `sel` |
