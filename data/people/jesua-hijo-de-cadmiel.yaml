@@ -1,0 +1,41 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jesua-hijo-de-cadmiel
+name: Jesúa
+names:
+- name: Jesúa
+perspicacia: null
+summary: Uno de los jefes de los levitas en días del sumo sacerdote Joiaquim, al que Ne 12:24 llama hijo de Cadmiel. Perspicacia
+  ve probable que sea el levita hijo de Azanías que selló el arreglo fidedigno (Ne 10:9).
+reason: Perspicacia «Jesúa», núm. 5, y «Qadmiel»; Ne 12:24, 26.
+sources:
+- it-jesua
+- it-qadmiel
+- nehemias-12
+links:
+- title: 'Perspicacia: «Jesúa»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jes%C3%BAa/
+  type: perspicacia
+relations:
+- type: kin
+  person: cadmiel
+  word: ancestor
+  inferred: true
+  sources:
+  - nehemias-12
+  - it-qadmiel
+  reason: 'Ne 12:24 lo llama hijo de Cadmiel, y Perspicacia «Qadmiel» pone ese versículo en el Cadmiel que volvió en 537: casi
+    un siglo antes de Joiaquim, así que «hijo» vale por descendiente.'
+  checked_on: '2026-10-15'
+  status: verified
+checked_on: '2026-10-15'
+status: verified
+distinct_from:
+- jesua-ayudante-de-core
+- jesua-de-pahat-moab
+- jesua-de-tiempos-de-david
+- jesua-levita-que-explico-la-ley
+- jesua-padre-de-ezer
+- jesua-supervisor-del-templo
+- josue-sumo-sacerdote
+disambiguation: 'El jefe levita de Ne 12:24, «hijo de Cadmiel», sin número propio en Perspicacia «Jesúa»: el núm. 5 lo da
+  como probablemente el firmante hijo de Azanías; no los demás Jesúa que registra.'
