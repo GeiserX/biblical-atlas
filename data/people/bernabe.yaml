@@ -26,6 +26,7 @@ sources:
 - 1-corintios-9
 - galatas-2
 - colosenses-4
+- it-apostol
 links:
 - title: 'Perspicacia: «Bernabé»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Bernab%C3%A9/
@@ -49,7 +50,10 @@ history:
   change: 'La relación con Pablo hasta c. 49 cita ahora Gál 2:1, 9, 13: suben juntos a Jerusalén, las columnas les dan la
     mano y Bernabé sigue a su lado en Antioquía.'
   source: galatas-2
-checked_on: '2026-10-14'
+- date: '2026-10-15'
+  change: Recibe `congregation_apostle`, el cargo nuevo para el sentido amplio de apóstol que Perspicacia «Apóstol» le da (Hch 14:4, 14).
+  source: it-apostol
+checked_on: '2026-10-15'
 status: verified
 relations:
 - type: born_in
@@ -145,6 +149,16 @@ relations:
   reason: Col 4:10 llama a Marcos primo de Bernabé; Perspicacia «María», núm. 5, deduce que la madre de Marcos era tía de
     Bernabé.
   checked_on: '2026-09-29'
+  status: verified
+- type: holds_office
+  office: congregation_apostle
+  inferred: false
+  sources:
+  - hch-14
+  - it-apostol
+  reason: 'Hch 14:4, 14 lo llama apóstol junto a Pablo. Perspicacia «Apóstol»: llegó a ser apóstol de la congregación de Antioquía,
+    no uno de los doce.'
+  checked_on: '2026-10-15'
   status: verified
 distinct_from:
 - jesus-hijo-de-eliezer

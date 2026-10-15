@@ -946,6 +946,7 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-apolion | [Apolión](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Apoli%C3%B3n/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-14 |
 | it-apolonia | [Apolonia](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Apolonia/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-27 |
 | it-apolos | [Apolos](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Apolos/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
+| it-apostol | [Apóstol](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ap%C3%B3stol/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-15 |
 | it-aqan | [Aqán](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Aq%C3%A1n/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-aqrabim | [Aqrabim](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Aqrabim/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-aqub | [Aqub](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Aqub/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |

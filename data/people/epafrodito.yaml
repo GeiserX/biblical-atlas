@@ -21,6 +21,7 @@ sources:
 - it-epafrodito
 - filipenses-2
 - filipenses-4
+- it-apostol
 links:
 - title: 'Perspicacia: «Epafrodito»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Epafrodito/
@@ -34,7 +35,10 @@ history:
   change: La relación con Pablo pasa a decir colaborador en los dos sentidos, como lo llama Flp 2:25; el resto de la lista
     no cambia.
   source: filipenses-2
-checked_on: '2026-09-29'
+- date: '2026-10-15'
+  change: Recibe `congregation_apostle`, el cargo nuevo para el enviado de una congregación, por Flp 2:25 y Perspicacia «Apóstol».
+  source: it-apostol
+checked_on: '2026-10-15'
 status: verified
 relations:
 - type: lived_in
@@ -65,4 +69,14 @@ relations:
   - filipenses-4
   reason: Flp 2:25 lo llama colaborador y compañero de armas de Pablo; está con él en Roma y le sirve en nombre de los filipenses.
   checked_on: '2026-09-29'
+  status: verified
+- type: holds_office
+  office: congregation_apostle
+  inferred: false
+  sources:
+  - filipenses-2
+  - it-apostol
+  reason: 'Flp 2:25: Pablo lo llama enviado (apóstolon) y siervo de los filipenses para su necesidad. Perspicacia «Apóstol» lo pone
+    entre los apóstoles de congregaciones.'
+  checked_on: '2026-10-15'
   status: verified

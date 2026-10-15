@@ -572,6 +572,7 @@ offices:
   visionary: {es: hombre de visiones}
   judge: {es: juez}
   apostle: {es: apóstol}
+  congregation_apostle: {es: apóstol de una congregación}
   elder: {es: anciano}
   leader: {es: caudillo}
   secretary: {es: secretario}
