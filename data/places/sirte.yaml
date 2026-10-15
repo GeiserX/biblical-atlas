@@ -4,9 +4,10 @@ name: Sirte
 names:
 - name: Sirte
   note: Nombre griego que viene de una raíz que significa «arrastrar» (Perspicacia).
+parts:
 - name: Gran Sirte
-  note: El golfo oriental, hoy golfo de Sidra. Los marinos temían los dos golfos; Perspicacia cree que la tripulación de
-    Pablo pensaba en este.
+  note: El golfo oriental, hoy golfo de Sidra. Los marinos temían los dos golfos; Perspicacia cree que la tripulación de Pablo
+    pensaba en este.
 - name: Pequeña Sirte
   note: El golfo occidental, entre Túnez y Trípoli, hoy golfo de Gabés.
 type: sea

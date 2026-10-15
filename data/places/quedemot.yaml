@@ -4,7 +4,9 @@ name: Quedemot
 names:
 - name: Quedemot
   note: De una raíz que significa «este», según Perspicacia.
+parts:
 - name: Desierto de Quedemot
+  near: true
   note: La región desértica que rodeaba la ciudad, desde donde Moisés envió mensajeros a Sehón (Dt 2:26).
 type: city
 lat: 31.61555

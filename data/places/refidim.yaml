@@ -3,6 +3,7 @@ id: refidim
 name: Refidim
 names:
 - name: Refidim
+parts:
 - name: Jehová-Nisí
   note: Nombre del altar que Moisés levantó allí tras vencer a los amalequitas; quiere decir que Jehová es su poste de señal.
 type: region

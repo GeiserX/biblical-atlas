@@ -3,6 +3,7 @@ id: camino-del-rey
 name: Camino del Rey
 names:
 - name: Camino del Rey
+parts:
 - name: Camino de Basán
   note: Perspicacia cree que así se llamaba su tramo norte, de Hesbón a Astarot (Nú 21:33).
 type: region

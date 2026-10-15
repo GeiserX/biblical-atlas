@@ -3,7 +3,9 @@ id: monte-gaas
 name: Monte Gaas
 names:
 - name: Monte Gaas
+parts:
 - name: Valles torrenciales de Gaas
+  near: true
   note: Barrancos junto al monte, tierra de Hidái (2Sa 23:30); así los entiende Perspicacia «Gaas».
 type: mountain
 lat: null

@@ -291,7 +291,7 @@ class SqliteRepite(unittest.TestCase):
 
 class PartesDeUnLugar(unittest.TestCase):
     """`parts` de un lugar sale como `partes` en data.json, en el núcleo (la búsqueda las lee), y en la tabla
-    lugar_partes. Los datos de verdad aún no tienen partes: la prueba se las pone a Jerusalén."""
+    lugar_partes. La prueba cambia las partes de verdad de Jerusalén por estas tres."""
     PARTES = [{"name": "Puerta de prueba", "note": "Una puerta."},
               {"name": "Árbol de prueba", "near": True, "note": "Junto a la ciudad."},
               {"name": "Estanque de Siloam", "place": "estanque-de-siloam", "note": "Tiene su ficha."}]
@@ -303,6 +303,8 @@ class PartesDeUnLugar(unittest.TestCase):
         claves = list(jer.items())
         jer.clear()
         for k, v in claves:
+            if k == "parts":
+                continue
             jer[k] = v
             if k == "names":
                 jer["parts"] = cls.PARTES
@@ -322,7 +324,8 @@ class PartesDeUnLugar(unittest.TestCase):
             ruta = Path(tmp) / "a.sqlite"
             build.escribir_sqlite(self.salida, ruta)
             con = sqlite3.connect(ruta)
-            filas = con.execute("select lugar_id, orden, nombre, nota, lugar, cerca from lugar_partes order by orden").fetchall()
+            filas = con.execute("select lugar_id, orden, nombre, nota, lugar, cerca from lugar_partes"
+                                " where lugar_id = 'jerusalen' order by orden").fetchall()
             con.close()
         self.assertEqual(filas, [("jerusalen", 0, "Puerta de prueba", "Una puerta.", None, None),
                                  ("jerusalen", 1, "Árbol de prueba", "Junto a la ciudad.", None, 1),

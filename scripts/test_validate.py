@@ -416,9 +416,10 @@ class PartesDeUnLugar(unittest.TestCase):
         claves = list(jer.items())
         jer.clear()
         for k, v in claves:
+            if k == "parts":    # las partes de verdad de Jerusalén dejan sitio a las de la prueba
+                continue
             jer[k] = v
             if k == "names":
-                # Hoy la Puerta de las Ovejas aún está en names de Jerusalén: aquí va una puerta que no lo está.
                 jer["parts"] = [dict(self.OVEJAS, name="Puerta de prueba"), self.SILOAM, {"name": "Siloam", "note": "Una nota " + "larga " * 40},
                                 {"name": "Betel", "note": "Lleva el nombre de otra ficha."}]
         pedro = next(o for o in datos["people"] if o["id"] == "pedro")

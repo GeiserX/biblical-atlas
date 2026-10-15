@@ -5,6 +5,7 @@ names:
 - name: Quiryat-Arbá
   note: Nombre antiguo de la ciudad.
 - name: Hebrón
+parts:
 - name: Estanque de Hebrón
   note: Junto a él colgaron a los asesinos de Is-Bóset; OpenBible no lo sitúa aparte.
 type: city

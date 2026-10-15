@@ -3,6 +3,9 @@ id: galaad
 name: Galaad
 names:
 - name: Galaad
+- name: Tierra de Galaad
+  note: En Jos 22:9 abarca todo el territorio israelita al este del Jordán, Basán incluido (Perspicacia «Galaad», núm. 4).
+parts:
 - name: Galeed
   note: Nombre hebreo del montón de piedras del pacto de Jacob y Labán (Gé 31:47, 48); Perspicacia cree que de él viene el
     de la región.
@@ -10,8 +13,6 @@ names:
   note: Nombre arameo que Labán dio al mismo montón de piedras (Gé 31:47).
 - name: Atalaya
   note: Otro nombre del montón de piedras y la columna del pacto (Gé 31:49).
-- name: Tierra de Galaad
-  note: En Jos 22:9 abarca todo el territorio israelita al este del Jordán, Basán incluido (Perspicacia «Galaad», núm. 4).
 type: region
 lat: 32.187016
 lon: 35.69211
