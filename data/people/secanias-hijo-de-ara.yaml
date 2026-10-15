@@ -1,0 +1,40 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: secanias-hijo-de-ara
+name: Secanías
+names:
+- name: Secanías
+perspicacia: 1200003977#8
+summary: Suegro de Tobías el ammonita. Por ese parentesco, muchos en Judá se habían comprometido con juramento a apoyar a
+  Tobías en días de Nehemías.
+reason: Perspicacia «Secanías», núm. 8, y «Arah», núm. 2; Ne 6:18.
+sources:
+- it-secanias
+- it-arah
+- nehemias-6
+links:
+- title: 'Perspicacia: «Secanías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Secan%C3%ADas/
+  type: perspicacia
+relations:
+- type: kin
+  person: ara-antepasado-de-secanias
+  word: ancestor
+  inferred: false
+  sources:
+  - nehemias-6
+  - it-arah
+  reason: 'Ne 6:18: Secanías hijo de Ará. Perspicacia «Arah», núm. 2, lo da como padre o antepasado.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- secanias-ayudante-de-core
+- secanias-de-tiempos-de-david
+- secanias-descendiente-de-paros
+- secanias-hijo-de-abdias
+- secanias-hijo-de-jahaziel
+- secanias-hijo-de-jehiel
+- secanias-padre-de-semaya-el-guarda
+- secanias-sacerdote-de-zorobabel
+disambiguation: 'Secanías núm. 8 de Perspicacia: el suegro de Tobías (Ne 6:18), no los demás Secanías.'

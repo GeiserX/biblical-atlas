@@ -1,0 +1,36 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: maluc-descendiente-de-bani
+name: Maluc
+names:
+- name: Maluc
+perspicacia: 1200002873#3
+summary: Israelita de los hijos de Baní. Estaba casado con extranjeras y, cuando Esdras corrigió esos matrimonios (468-467
+  a.e.c.), las despidió junto con sus hijos.
+reason: Perspicacia «Maluc», núm. 3; Esd 10:29, 44.
+sources:
+- it-maluc
+- esdras-10
+links:
+- title: 'Perspicacia: «Maluc»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Maluc/
+  type: perspicacia
+relations:
+- type: kin
+  person: bani-antepasado-de-seis-repatriados
+  word: ancestor
+  sources:
+  - esdras-10
+  - it-maluc
+  reason: Esd 10:29 lo pone entre los hijos de Baní; Perspicacia «Maluc», núm. 3.
+  inferred: false
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+disambiguation: El de los hijos de Baní de Esd 10:29; no los demás Maluc que registra Perspicacia.
+distinct_from:
+- maluc-descendiente-de-harim
+- maluc-hijo-de-hasabias
+- maluc-cabeza-del-pueblo
+- maluc-sacerdote-firmante
+- maluc-sacerdote-de-zorobabel

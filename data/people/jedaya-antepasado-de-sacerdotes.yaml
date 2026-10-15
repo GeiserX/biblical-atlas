@@ -1,0 +1,66 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jedaya-antepasado-de-sacerdotes
+name: Jedayá
+names:
+- name: Jedayá
+perspicacia: 1200002356#5
+summary: Antepasado de los 973 sacerdotes que volvieron de Babilonia con Zorobabel. Perspicacia ve muy probable que fueran
+  de la casa sacerdotal de Jedayá de tiempos de David.
+reason: Perspicacia «Jedayá», núm. 5; Esd 2:36.
+sources:
+- it-jedaya
+- esdras-2
+- nehemias-7
+links:
+- title: 'Perspicacia: «Jedayá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jeday%C3%A1/
+  type: perspicacia
+not_claimed:
+- 'Que el Jesúa de Esd 2:36 sea con seguridad el sacerdote de la novena división de David: Perspicacia «Jedayá», núm. 5, deja
+  abierto que lo una a la línea del sumo sacerdote.'
+relations:
+- type: holds_office
+  office: priest
+  inferred: false
+  sources:
+  - esdras-2
+  - it-jedaya
+  - nehemias-7
+  reason: 'Esd 2:36: sus descendientes se cuentan entre los sacerdotes.'
+  checked_on: '2026-10-14'
+  status: verified
+- type: kin
+  person: jesua-de-tiempos-de-david
+  word: relative
+  inferred: true
+  sources:
+  - esdras-2
+  - it-jesua
+  - it-jedaya
+  - nehemias-7
+  reason: Esd 2:36 solo dice «de la familia de Jesúa». Que sea el Jesúa de la novena división lo ve probable Perspicacia «Jesúa»,
+    núm. 1; «Jedayá», núm. 5, deja abierto un lazo con la línea del sumo sacerdote.
+  checked_on: '2026-10-14'
+  status: verified
+- type: same_as
+  person: jedaya-de-tiempos-de-david
+  certainty: probable
+  inferred: true
+  sources:
+  - it-jedaya
+  - esdras-2
+  reason: 'Perspicacia «Jedayá», núm. 5: los sacerdotes de Esd 2:36 eran con toda probabilidad de la casa paterna del núm.
+    3.'
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- jedaya-de-la-corona
+- jedaya-hijo-de-simri
+- jedaya-sacerdote-repatriado
+- jedaya-hijo-de-harumaf
+- jedaya-antepasado-de-netanel
+- jedaya-antepasado-de-uzi
+disambiguation: 'Jedayá núm. 5 de Perspicacia: antepasado de los sacerdotes de Esd 2:36. No es el sacerdote que vivió en Jerusalén
+  (núm. 4).'

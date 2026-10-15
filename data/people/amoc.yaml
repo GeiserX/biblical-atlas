@@ -1,0 +1,29 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: amoc
+name: Amoc
+names:
+- name: Amoc
+- name: Amoq
+  note: Grafía del título de Perspicacia.
+perspicacia: '1200000243'
+summary: Uno de los sacerdotes principales que volvió del destierro con Zorobabel. En días de Joiaquim representaba a su familia
+  Éber, que Perspicacia llama su hijo.
+reason: Perspicacia «Amoq»; Ne 12:1, 7, 20.
+sources:
+- it-amoq
+- nehemias-12
+links:
+- title: 'Perspicacia: «Amoq»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Amoq/
+  type: perspicacia
+relations:
+- type: holds_office
+  office: priest
+  inferred: false
+  sources:
+  - nehemias-12
+  reason: 'Ne 12:1, 7: va entre los jefes de los sacerdotes que subieron con Zorobabel y Jesúa.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified

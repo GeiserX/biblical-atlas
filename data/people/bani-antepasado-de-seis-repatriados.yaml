@@ -1,0 +1,52 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: bani-antepasado-de-seis-repatriados
+name: Baní
+names:
+- name: Baní
+perspicacia: 1200000553#5
+summary: Cabeza de familia de Israel con seis descendientes en la lista de los casados con extranjeras. Perspicacia lo distingue
+  del Baní de Esd 10:34.
+reason: Perspicacia «Baní», núm. 5; Esd 10:29, 44.
+sources:
+- it-bani
+- esdras-10
+links:
+- title: 'Perspicacia: «Baní»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ban%C3%AD/
+  type: perspicacia
+relations:
+- type: same_as
+  person: bani-descendiente-de-perez
+  certainty: possible
+  inferred: true
+  sources:
+  - it-bani
+  - esdras-10
+  reason: Perspicacia «Baní», núm. 3, ve posible que el descendiente de Pérez sea el mismo que los núm. 4 y 5; Esd 10:29 es
+    el núm. 5.
+  checked_on: '2026-10-13'
+  status: verified
+- type: same_as
+  person: bani-cabeza-de-familia
+  certainty: possible
+  inferred: true
+  sources:
+  - it-bani
+  - esdras-10
+  reason: Perspicacia «Baní», núm. 3, ve posible que el descendiente de Pérez sea a la vez el núm. 4, el que volvió con Zorobabel,
+    y el núm. 5 o el 6; este es el núm. 5.
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+disambiguation: El Baní de Esd 10:29, con seis descendientes en la lista; no el Baní de Esd 10:34.
+distinct_from:
+- bani-antepasado-de-doce-repatriados
+- bani-el-gadita
+- bani-hijo-de-semer
+- bani-padre-de-rehum
+- bani-levita-que-explico-la-ley
+- bani-segundo-de-la-plataforma
+- bani-cabeza-del-pueblo
+- bani-levita-firmante
+- bani-hijo-de-hasabias

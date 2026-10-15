@@ -23,6 +23,22 @@ candidates:
   reason: Perspicacia recoge que algunos lo sitúan en Hit, la antigua Is de Heródoto. Coordenada de OpenBible.
   coord_source: openbible:a6c3859
   coord_url: https://www.openbible.info/geo/ancient/a6c3859/ahava
+- name: Al noroeste de Babilonia, a ocho o nueve días de camino
+  geometry:
+    type: zone
+    lat: 33.75
+    lon: 42.98
+    radius_km: 80
+  checked_on: '2026-10-13'
+  status: favored_level_1
+  sources:
+  - it-ahava
+  - openbible-geo
+  reason: 'Perspicacia «Ahavá»: río o canal al noroeste de Babilonia, a ocho o nueve jornadas de la ciudad (compárese Esd
+    7:9; 8:15, 31).'
+  coord_source: calculation
+  note: 'Centro: 190 km al noroeste (rumbo 315°) del punto de OpenBible de Babilonia, unas ocho o nueve jornadas. Radio nuestro;
+    abarca Hit.'
 summary: Río o canal al noroeste de Babilonia, a ocho o nueve días de camino, donde Esdras reunió a los que volvían con
   él y proclamó un ayuno antes de salir en 468 a.e.c.
 reason: 'Perspicacia «Ahavá» (Esd 8:15, 21, 31): situación al noroeste de Babilonia y distancia; algunos creen que estaba
@@ -30,9 +46,10 @@ reason: 'Perspicacia «Ahavá» (Esd 8:15, 21, 31): situación al noroeste de Ba
 sources:
 - it-ahava
 - esdras-8
+- openbible-geo
 links:
 - title: 'Perspicacia: «Ahavá»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ahav%C3%A1/
   type: perspicacia
-checked_on: '2026-09-28'
+checked_on: '2026-10-13'
 status: verified

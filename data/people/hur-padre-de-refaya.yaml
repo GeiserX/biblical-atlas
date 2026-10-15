@@ -1,0 +1,24 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hur-padre-de-refaya
+name: Hur
+names:
+- name: Hur
+perspicacia: 1200002108#5
+disambiguation: El padre de Refayá (Ne 3:9), núm. 5 de Perspicacia «Hur»; no el padre del comisario de Efraín ni los otros
+  Hur que numera.
+distinct_from:
+- hur-companero-de-moises
+- hur-hijo-de-caleb
+- hur-padre-del-comisario-de-efrain
+- hur-rey-de-madian
+summary: Padre de Refayá, el príncipe de medio distrito de Jerusalén que colaboró en la reconstrucción de la muralla.
+reason: Perspicacia «Hur», núm. 5; Ne 3:9.
+sources:
+- it-hur
+- nehemias-3
+links:
+- title: 'Perspicacia: «Hur»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hur/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified

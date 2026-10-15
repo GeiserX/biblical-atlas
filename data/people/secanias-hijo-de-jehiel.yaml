@@ -1,0 +1,59 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: secanias-hijo-de-jehiel
+name: Secanías
+names:
+- name: Secanías
+perspicacia: 1200003977#6
+summary: Hijo de Jehiel, de la familia de Elam. Reconoció ante Esdras la infidelidad de los repatriados, propuso un pacto
+  para despedir a las esposas extranjeras con sus hijos y animó a Esdras a actuar.
+reason: Perspicacia «Secanías», núm. 6; Esd 10:2-4.
+sources:
+- it-secanias
+- esdras-10
+links:
+- title: 'Perspicacia: «Secanías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Secan%C3%ADas/
+  type: perspicacia
+relations:
+- type: kin
+  person: jehiel-padre-de-secanias
+  word: father
+  sources:
+  - esdras-10
+  - it-secanias
+  reason: Esd 10:2 lo llama Secanías hijo de Jehiel.
+  inferred: false
+  checked_on: '2026-10-13'
+  status: verified
+- type: kin
+  person: elam-cabeza-de-familia
+  word: ancestor
+  sources:
+  - esdras-10
+  - it-secanias
+  reason: Esd 10:2 lo cuenta entre los hijos de Elam.
+  inferred: false
+  checked_on: '2026-10-13'
+  status: verified
+- type: tie
+  person: esdras
+  word: ally
+  sources:
+  - esdras-10
+  - it-esdras
+  reason: 'Esd 10:4: le dice a Esdras que el asunto le toca a él y que ellos lo apoyan.'
+  inferred: false
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+disambiguation: El que propuso a Esdras el pacto de Esd 10:2-4; no los demás Secanías que registra Perspicacia.
+distinct_from:
+- secanias-ayudante-de-core
+- secanias-de-tiempos-de-david
+- secanias-descendiente-de-paros
+- secanias-hijo-de-abdias
+- secanias-hijo-de-jahaziel
+- secanias-padre-de-semaya-el-guarda
+- secanias-hijo-de-ara
+- secanias-sacerdote-de-zorobabel

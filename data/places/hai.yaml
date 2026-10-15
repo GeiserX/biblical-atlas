@@ -6,6 +6,8 @@ names:
 - name: Ayat
   note: Forma femenina del nombre en Is 10:28. Según Perspicacia «Hai», en días de Isaías vivía gente allí o en un lugar
     cercano, y la profecía la pone como la primera en caer ante el ejército asirio camino de Jerusalén.
+- name: Aya
+  note: Forma femenina del nombre en Ne 11:31 (Perspicacia «Hai»).
 type: city
 lat: null
 lon: null
@@ -55,9 +57,12 @@ sources:
 - josue-8
 - josue-12
 - isaias-10
+- esdras-2
+- nehemias-7
+- nehemias-11
 links:
 - title: 'Perspicacia: «Hai»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hai/
   type: perspicacia
-checked_on: '2026-09-30'
+checked_on: '2026-10-14'
 status: verified

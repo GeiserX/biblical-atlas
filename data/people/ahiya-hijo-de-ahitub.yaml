@@ -40,7 +40,7 @@ relations:
     en Siló mientras reinaba Saúl.
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-14'
 status: verified
 distinct_from:
 - ahiya-hijo-de-sisa
@@ -50,3 +50,4 @@ distinct_from:
 - ahiya-de-benjamin
 - ahiya-el-pelonita
 - ahiya-tesorero
+- ahiya-cabeza-del-pueblo

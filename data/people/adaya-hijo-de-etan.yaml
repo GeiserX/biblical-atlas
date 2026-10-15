@@ -10,6 +10,9 @@ distinct_from:
 - adaya-hijo-de-simei
 - adaya-padre-de-jedida
 - adaya-padre-de-maaseya
+- adaya-descendiente-de-bani
+- adaya-descendiente-de-binui
+- adaya-hijo-de-joiarib
 summary: Levita guersonita, hijo de Etán, antepasado del músico Asaf.
 reason: Perspicacia «Adaya», núm. 1; 1Cr 6:41, 42.
 sources:
@@ -29,5 +32,5 @@ relations:
   reason: '1Cr 6:41, 42: Adaya, «hijo de Etán».'
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified

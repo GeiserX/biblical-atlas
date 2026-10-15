@@ -1,0 +1,17 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: pilha
+name: Pilhá
+names:
+- name: Pilhá
+perspicacia: '1200003488'
+summary: Jefe de una familia israelita, o alguien que la representaba, entre los que sellaron la promesa de 455 a.e.c.
+reason: Perspicacia «Pilhá»; Ne 10:24.
+sources:
+- it-pilha
+- nehemias-10
+links:
+- title: 'Perspicacia: «Pilhá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Pilh%C3%A1/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified

@@ -1,0 +1,17 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: azanias
+name: Azanías
+names:
+- name: Azanías
+perspicacia: '1200000484'
+summary: Levita, padre del Jesúa que encabeza la lista de los levitas que sellaron la promesa de 455 a.e.c.
+reason: Perspicacia «Azanías»; Ne 10:9.
+sources:
+- it-azanias
+- nehemias-10
+links:
+- title: 'Perspicacia: «Azanías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Azan%C3%ADas/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified

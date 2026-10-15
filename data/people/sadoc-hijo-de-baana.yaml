@@ -1,0 +1,38 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: sadoc-hijo-de-baana
+name: Sadoc
+names:
+- name: Sadoc
+perspicacia: 1200004652#4
+disambiguation: El hijo de Baaná que reparó la muralla (Ne 3:4), núm. 4 de Perspicacia «Sadoc»; no los otros Sadoc que numera.
+distinct_from:
+- sadoc-abuelo-de-jotan
+- sadoc-hijo-de-ahitub
+- sadoc-hijo-de-azor
+- sadoc-hijo-de-imer
+- sadoc-hijo-de-merayot
+- sadoc-copista
+summary: Hijo de Baaná. Reparó un tramo de la muralla de Jerusalén tras el destierro. Él, o un pariente que se llamaba igual,
+  selló poco después el pacto del pueblo.
+reason: Perspicacia «Sadoc», núm. 4; Ne 3:4; 10:21.
+sources:
+- it-sadoc
+- nehemias-3
+- nehemias-10
+links:
+- title: 'Perspicacia: «Sadoc»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sadoc/
+  type: perspicacia
+relations:
+- type: kin
+  person: baana-padre-de-sadoc
+  word: father
+  inferred: false
+  sources:
+  - nehemias-3
+  - it-sadoc
+  reason: 'Ne 3:4: Sadoc hijo de Baaná.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified

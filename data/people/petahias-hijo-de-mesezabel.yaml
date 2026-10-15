@@ -1,0 +1,42 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: petahias-hijo-de-mesezabel
+name: Petahías
+names:
+- name: Petahías
+perspicacia: 1200003453#4
+summary: Judaíta de la familia de Zérah, hijo de Mesezabel. Trataba con el rey persa todos los asuntos del pueblo que había
+  vuelto.
+reason: Perspicacia «Petahías», núm. 4; Ne 11:24.
+sources:
+- it-petahias
+- nehemias-11
+links:
+- title: 'Perspicacia: «Petahías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Petah%C3%ADas/
+  type: perspicacia
+relations:
+- type: kin
+  person: mesezabel-padre-de-petahias
+  word: father
+  inferred: false
+  sources:
+  - nehemias-11
+  reason: 'Ne 11:24: Petahías, hijo de Mesezabel.'
+  checked_on: '2026-10-14'
+  status: verified
+- type: kin
+  person: zerah-hijo-de-juda
+  word: ancestor
+  inferred: false
+  sources:
+  - nehemias-11
+  reason: 'Ne 11:24: desciende de Zérah, el hijo de Judá.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- petahias-de-tiempos-de-david
+- petahias-levita-de-la-confesion
+- petahias-levita-de-tiempos-de-esdras
+disambiguation: Petahías, judaíta que trataba con el rey los asuntos del pueblo (Ne 11:24) (Perspicacia «Petahías», núm. 4).

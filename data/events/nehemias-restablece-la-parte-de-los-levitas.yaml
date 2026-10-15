@@ -1,0 +1,37 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: nehemias-restablece-la-parte-de-los-levitas
+title: Nehemías hace que se dé su parte a los levitas
+date:
+  from: -442
+  to: -442
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: poco después de 443 a.e.c.
+narrative_order:
+  series: nehemias
+  order: 113010
+places:
+- jerusalen
+people:
+- nehemias
+- selemias-encargado-de-los-almacenes
+- sadoc-copista
+- pedaya-encargado-de-los-almacenes
+- hanan-hijo-de-zacur
+passages:
+- Ne 13:10-14
+summary: Sin su parte, levitas y cantores se habían ido a sus campos. Nehemías reprende a los gobernantes y los hace volver;
+  Judá trae el diezmo, y él pone los almacenes en manos de Selemías, Sadoc, Pedaya y Hanán.
+reason: Ne 13:10-14; Perspicacia «Selemías», núm. 9, y «Pedaya», núm. 7, lo sitúan en su segunda visita, y «Jerusalén», poco
+  después de 443 a.e.c. Orden 113010.
+sources:
+- nehemias-13
+- it-selemias
+- it-pedaya
+- it-sadoc
+- it-hanan
+- it-jerusalen
+checked_on: '2026-10-14'
+status: verified

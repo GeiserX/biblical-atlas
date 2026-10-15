@@ -1,0 +1,31 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: baruc-sacerdote-firmante
+name: Baruc
+names:
+- name: Baruc
+perspicacia: 1200000571#3
+summary: Sacerdote cuyo nombre está en la promesa sellada de 455 a.e.c.; la selló él o un descendiente. Si fue él, Perspicacia
+  no descarta que sea quien reparó el muro.
+reason: Perspicacia «Baruc», núm. 3; Ne 10:6.
+sources:
+- it-baruc
+- nehemias-10
+links:
+- title: 'Perspicacia: «Baruc»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Baruc/
+  type: perspicacia
+relations:
+- type: holds_office
+  office: priest
+  inferred: false
+  sources:
+  - nehemias-10
+  reason: 'Ne 10:8 cierra la lista: «esos son los sacerdotes».'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- baruc-hijo-de-colhoze
+- baruc-hijo-de-nerias
+disambiguation: Baruc, sacerdote que, él o un descendiente, selló la promesa de Ne 10 (Perspicacia «Baruc», núm. 3).

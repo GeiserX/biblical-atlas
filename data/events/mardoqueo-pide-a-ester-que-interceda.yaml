@@ -1,0 +1,46 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: mardoqueo-pide-a-ester-que-interceda
+title: Mardoqueo pide a Ester que interceda ante el rey
+date:
+  from: -483
+  to: -483
+  precision: season
+  approx: true
+  type: derived
+  chronology: tnm
+  text: primavera de 484 a.e.c. (cálculo nuestro)
+  detail:
+    season: spring
+  note: 'Días después del 13 de nisán del año duodécimo (Est 3:12; 4:16; 5:1), que Perspicacia «Purim» sitúa al parecer en
+    la primavera de 484. Ninguna fuente fecha esta escena: es cuenta nuestra.'
+narrative_order:
+  series: ester
+  order: 4001
+places:
+- susa
+people:
+- mardoqueo
+- ester
+- hatac
+present:
+- mardoqueo
+- ester
+- hatac
+passages:
+- Est 4:1-17
+summary: Ante el decreto, Mardoqueo se viste de saco y clama por Susa, y los judíos de las provincias ayunan. Por medio de
+  Hatac pide a Ester que suplique al rey; ella acepta arriesgar la vida tras tres días de ayuno.
+reason: Est 4:1-17; Perspicacia «Mardoqueo», núm. 2, y «Hatac». Sigue de cerca al decreto del 13 de nisán, que Mardoqueo conoce
+  en Est 4:1.
+sources:
+- ester-4
+- it-mardoqueo
+- it-hatac
+- it-ester
+- it-purim
+links:
+- title: 'Perspicacia: «Ester»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ester/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: pending

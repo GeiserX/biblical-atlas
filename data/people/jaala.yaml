@@ -1,0 +1,20 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jaala
+name: Jaalá
+names:
+- name: Jaalá
+- name: Jaalah
+perspicacia: '1200002259'
+summary: Antepasado de una de las familias descendientes de siervos de Salomón; esa familia volvió del destierro con el grupo
+  de Zorobabel.
+reason: Perspicacia «Jaalá, Jaalah»; Esd 2:56.
+sources:
+- it-jaala-jaalah
+- esdras-2
+- nehemias-7
+links:
+- title: 'Perspicacia: «Jaalá, Jaalah»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jaal%C3%A1-Jaalah/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified

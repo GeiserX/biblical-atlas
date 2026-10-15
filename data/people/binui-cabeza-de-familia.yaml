@@ -1,0 +1,26 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: binui-cabeza-de-familia
+name: Binuí
+names:
+- name: Binuí
+perspicacia: 1200000744#4
+summary: Israelita cuyos descendientes, trece según Perspicacia «Natán», figuran en la lista de los casados con extranjeras.
+reason: Perspicacia «Binuí», núm. 4; Esd 10:38, 44.
+sources:
+- it-binui
+- esdras-10
+- it-natan
+links:
+- title: 'Perspicacia: «Binuí»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Binu%C3%AD/
+  type: perspicacia
+relations: []
+checked_on: '2026-10-14'
+status: verified
+disambiguation: El antepasado de los hijos de Binuí de Esd 10:38; no el Binuí de los hijos de Pahat-Moab.
+distinct_from:
+- bani-cabeza-de-familia
+- binui-descendiente-de-pahat-moab
+- binui-levita
+- binui-hijo-de-henadad
+- binui-levita-firmante

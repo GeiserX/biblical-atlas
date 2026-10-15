@@ -1,0 +1,41 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: abdias-sacerdote-firmante
+name: Abdías
+names:
+- name: Abdías
+perspicacia: 1200003287#12
+summary: Uno de los sacerdotes, o un descendiente suyo, que sellaron la promesa de fidelidad de los repatriados en 455 a.e.c.,
+  bajo el gobierno de Nehemías.
+reason: Perspicacia «Abdías», núm. 12; Ne 10:5.
+sources:
+- it-abdias
+- nehemias-10
+links:
+- title: 'Perspicacia: «Abdías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Abd%C3%ADas/
+  type: perspicacia
+relations:
+- type: holds_office
+  office: priest
+  inferred: false
+  sources:
+  - nehemias-10
+  reason: 'Ne 10:8 cierra la lista: «esos son los sacerdotes».'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- abdias-el-gadita
+- abdias-hijo-de-arnan
+- abdias-hijo-de-azel
+- abdias-hijo-de-izrahias
+- abdias-hijo-de-jehiel
+- abdias-hijo-de-semaya
+- abdias-levita-de-josias
+- abdias-mayordomo-de-acab
+- abdias-padre-de-ismaya
+- abdias-portero
+- abdias-principe-de-jehosafat
+- abdias-profeta
+disambiguation: Abdías, sacerdote que, él o un descendiente, selló la promesa de Ne 10 (Perspicacia «Abdías», núm. 12).

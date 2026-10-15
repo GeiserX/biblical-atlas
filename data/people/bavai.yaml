@@ -1,0 +1,31 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: bavai
+name: Bavái
+names:
+- name: Bavái
+- name: Bavai
+  note: Grafía de Perspicacia.
+perspicacia: '1200000583'
+summary: Levita, hijo de Henadad y príncipe de la otra mitad del distrito de Queilá. Dirigió a sus hermanos levitas en la
+  reparación de un tramo de la muralla.
+reason: Perspicacia «Bavai»; Ne 3:18.
+sources:
+- it-bavai
+- nehemias-3
+links:
+- title: 'Perspicacia: «Bavai»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Bavai/
+  type: perspicacia
+relations:
+- type: kin
+  person: henadad
+  word: father
+  inferred: false
+  sources:
+  - nehemias-3
+  - it-bavai
+  reason: 'Ne 3:18: Bavái hijo de Henadad.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified

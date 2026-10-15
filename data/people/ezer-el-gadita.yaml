@@ -9,6 +9,8 @@ distinct_from:
 - ezer-hijo-de-efrain
 - ezer-hijo-de-seir
 - ezer-hijo-de-hur
+- ezer-hijo-de-jesua
+- ezer-sacerdote-de-la-inauguracion
 summary: Jefe de los once guerreros de Gad que cruzaron el Jordán crecido para unirse a David en el desierto. Como cabeza,
   probablemente era el mayor, el que valía por mil.
 reason: Perspicacia «Ézer», núm. 4; 1Cr 12:8-15.
@@ -29,5 +31,5 @@ relations:
   reason: '1Cr 12:8, 9, 14: gadita que se pasó a David y llegó a ser jefe de su ejército.'
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-14'
 status: verified

@@ -27,7 +27,7 @@ relations:
   reason: 1Cr 25:3, 19 lo cuenta entre los hijos de Jedutún.
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified
 distinct_from:
 - hasabias-hebronita
@@ -35,3 +35,10 @@ distinct_from:
 - hasabias-hijo-de-quemuel
 - hasabias-padre-de-azricam
 - hasabias-levita-de-josias
+- hasabias-jefe-de-los-sacerdotes
+- hasabias-merarita
+- hasabias-principe-de-queila
+- hasabias-levita-firmante
+- hasabias-hijo-de-matanias
+- hasabias-de-la-casa-de-hilquias
+- hasabias-jefe-de-los-levitas

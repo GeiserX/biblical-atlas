@@ -1,0 +1,36 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: elioenai-trompetista-de-la-inauguracion
+name: Elioenái
+names:
+- name: Elioenái
+- name: Elioenai
+  note: Grafía del título de Perspicacia.
+perspicacia: 1200001311#6
+summary: Sacerdote encargado de tocar la trompeta en la procesión de la inauguración del muro de Jerusalén.
+reason: Perspicacia «Elioenai», núm. 6; Ne 12:27, 31, 40, 41.
+sources:
+- it-elioenai
+- nehemias-12
+links:
+- title: 'Perspicacia: «Elioenai»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Elioenai/
+  type: perspicacia
+relations:
+- type: holds_office
+  office: priest
+  inferred: false
+  sources:
+  - nehemias-12
+  reason: 'Ne 12:41: los sacerdotes que llevaban las trompetas.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- elioenai-descendiente-de-pasjur
+- elioenai-descendiente-de-zatu
+- elioenai-hijo-de-beker
+- elioenai-hijo-de-nearias
+- elioenai-simeonita
+disambiguation: 'Elioenái núm. 6 de Perspicacia: el trompetista de Ne 12:41; no los demás Elioenái que registra Perspicacia
+  «Elioenai».'

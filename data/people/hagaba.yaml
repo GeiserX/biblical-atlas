@@ -1,0 +1,18 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hagaba
+name: Hagabá
+names:
+- name: Hagabá
+perspicacia: '1200001810'
+summary: Sus descendientes, siervos del templo o netineos, se cuentan entre los que volvieron de Babilonia en 537 a.e.c.
+reason: Perspicacia «Hagabá»; Esd 2:45.
+sources:
+- it-hagaba
+- esdras-2
+- nehemias-7
+links:
+- title: 'Perspicacia: «Hagabá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hagab%C3%A1/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified

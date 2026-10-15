@@ -1,0 +1,41 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jesua-de-pahat-moab
+name: Jesúa
+names:
+- name: Jesúa
+perspicacia: 1200002446#3
+summary: Israelita de la familia de Pahat-Moab. Parte de sus descendientes salió del destierro guiada por Zorobabel (537 a.e.c.).
+reason: Perspicacia «Jesúa», núm. 3; Esd 2:6.
+sources:
+- it-jesua
+- esdras-2
+- nehemias-7
+links:
+- title: 'Perspicacia: «Jesúa»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jes%C3%BAa/
+  type: perspicacia
+relations:
+- type: kin
+  person: pahat-moab
+  word: ancestor
+  inferred: false
+  sources:
+  - esdras-2
+  - it-jesua
+  - nehemias-7
+  reason: 'Esd 2:6: los hijos de Jesúa y de Joab se cuentan entre los hijos de Pahat-Moab.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- jesua-ayudante-de-core
+- jesua-cabeza-de-casa-levita
+- jesua-de-tiempos-de-david
+- jesua-supervisor-del-templo
+- josue-sumo-sacerdote
+- jesua-padre-de-ezer
+- jesua-levita-que-explico-la-ley
+- jesua-hijo-de-azanias
+disambiguation: 'Jesúa núm. 3 de Perspicacia: de la familia de Pahat-Moab (Esd 2:6); no el sumo sacerdote ni los sacerdotes
+  o levitas de ese nombre.'

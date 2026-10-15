@@ -27,7 +27,7 @@ relations:
   reason: '1Cr 9:21: Zacarías, hijo de Meselemías.'
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified
 distinct_from:
 - zacarias-abuelo-de-ezequias
@@ -50,5 +50,15 @@ distinct_from:
 - zacarias-sacerdote-de-josias
 - zacarias-hijo-de-jehosafat
 - zacarias-principe-de-jehosafat
+- zacarias-descendiente-de-paros
+- zacarias-enviado-a-casifia
+- zacarias-hijo-de-bebai
+- zacarias-descendiente-de-elam
+- zacarias-junto-a-esdras
+- zacarias-hijo-de-amarias
+- zacarias-hijo-de-pasjur
+- zacarias-hijo-del-selanita
+- zacarias-hijo-de-jonatan
+- zacarias-trompetista-de-la-inauguracion
 disambiguation: 'Zacarías núm. 3 de Perspicacia: portero coreíta, hijo de Meselemías. No el benjamita hijo de Jeiel, el profeta
   ni los demás Zacarías.'

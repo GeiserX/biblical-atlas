@@ -33,5 +33,9 @@ relations:
   reason: '1Cr 24:14: encabeza una de las casas sacerdotales de 24:4-6; Perspicacia «Bilgá» lo trata como sacerdote.'
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+disambiguation: 'Bilgá núm. 1 de Perspicacia: el sacerdote del turno quince de David (1Cr 24:14); no el sacerdote que volvió
+  con Zorobabel.'
+checked_on: '2026-10-14'
 status: verified
+distinct_from:
+- bilga-sacerdote-de-zorobabel

@@ -1,0 +1,43 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: ester-llevada-a-la-casa-del-rey
+title: Ester es llevada a la casa de las mujeres del rey
+date:
+  from: -492
+  to: -488
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 493 y c. 489 a.e.c. (tiempo narrativo: tras apartar a Vasti y antes de que Ester fuera reina)'
+narrative_order:
+  series: ester
+  order: 2001
+places:
+- susa
+people:
+- jerjes-i
+- ester
+- mardoqueo
+- hegai
+- saasgaz
+passages:
+- Est 2:1-14
+summary: Calmado su enojo, Asuero manda reunir vírgenes de todo el imperio para elegir otra reina. Llevan a Ester, prima y
+  pupila de Mardoqueo, a la casa del rey; Hegái la favorece y ella calla que es judía.
+reason: Est 2:1-14. Vasti cae en 493 (Perspicacia «Ester, Libro de»), y Perspicacia «Vasti» pone la elección de Ester unos
+  cuatro años después; «Asuero», núm. 3, en el año séptimo.
+sources:
+- ester-2
+- it-vasti
+- it-ester-libro
+- it-asuero
+- it-ester
+- it-hegai
+- it-saasgaz
+- si-ester
+links:
+- title: 'Perspicacia: «Ester»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ester/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified

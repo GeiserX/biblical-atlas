@@ -1,0 +1,17 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: setar
+name: Setar
+names:
+- name: Setar
+perspicacia: '1200004026'
+summary: Príncipe de la corte de Asuero, persa o medo, de los siete a quienes el rey pidió parecer sobre la negativa de Vasti.
+reason: Perspicacia «Setar»; Est 1:13-15.
+sources:
+- it-setar
+- ester-1
+links:
+- title: 'Perspicacia: «Setar»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Setar/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified

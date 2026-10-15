@@ -10,6 +10,13 @@ distinct_from:
 - hasabias-hijo-de-jedutun
 - hasabias-hijo-de-quemuel
 - hasabias-levita-de-josias
+- hasabias-jefe-de-los-sacerdotes
+- hasabias-merarita
+- hasabias-principe-de-queila
+- hasabias-levita-firmante
+- hasabias-hijo-de-matanias
+- hasabias-de-la-casa-de-hilquias
+- hasabias-jefe-de-los-levitas
 summary: Levita merarita, hijo de Amasías y antepasado del cantor Etán.
 reason: Perspicacia «Hasabías», núm. 1; 1Cr 6:45.
 sources:
@@ -40,5 +47,5 @@ relations:
   reason: 'Perspicacia «Hasabías», núm. 1 y 6: quizás el antepasado de Semaya de 1Cr 9:14 es este mismo levita merarita.'
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified

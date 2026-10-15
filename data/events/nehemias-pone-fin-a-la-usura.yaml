@@ -1,0 +1,40 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: nehemias-pone-fin-a-la-usura
+title: Nehemías pone fin a los préstamos con interés entre judíos
+date:
+  from: -454
+  to: -454
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 455 a.e.c. (durante la obra del muro, entre ab y elul)
+narrative_order:
+  series: nehemias
+  order: 105001
+places:
+- jerusalen
+people:
+- nehemias
+present:
+- nehemias
+passages:
+- Ne 5:1-13
+summary: Agobiados por el hambre y el tributo, muchos judíos han empeñado sus tierras y vendido a sus hijos a otros judíos.
+  Nehemías reprende a los nobles, reúne una asamblea y les hace jurar ante los sacerdotes que lo devolverán todo.
+reason: 'Perspicacia «Nehemías», núm. 3: la queja llega durante la obra del muro, del 4 de ab al 25 de elul de 455. Orden
+  105001: tras los ataques del capítulo 4 y antes de las tramas del 6.'
+sources:
+- nehemias-5
+- it-nehemias
+- it-artajerjes
+- si-3
+links:
+- title: 'Perspicacia: «Nehemías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Nehem%C3%ADas/
+  type: perspicacia
+- title: Nehemías 5 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Nehem%C3%ADas/5/
+  type: bible
+checked_on: '2026-10-14'
+status: verified

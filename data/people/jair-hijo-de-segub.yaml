@@ -70,8 +70,9 @@ history:
 - date: '2026-10-12'
   change: Añade al padre de Elhanán, nuevo homónimo de Perspicacia «Jaír», núm. 4.
   source: 1-cronicas-20
-checked_on: '2026-10-12'
+checked_on: '2026-10-14'
 status: verified
 distinct_from:
 - jair-juez
 - jair-padre-de-elhanan
+- jair-padre-de-mardoqueo

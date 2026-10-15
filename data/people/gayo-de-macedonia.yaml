@@ -11,8 +11,8 @@ date:
   type: anchored
   chronology: tnm
   text: c. 55 e.c.
-disambiguation: El macedonio de Hch 19:29. Perspicacia ve posible que sea el Gayo de Derbe de Hch 20:4; no es el
-  de Corinto ni el de 3 Juan.
+disambiguation: El macedonio de Hch 19:29. Perspicacia ve posible que sea el Gayo de Derbe de Hch 20:4; no es el de Corinto,
+  y nada muestra que sea el de 3 Juan.
 distinct_from:
 - gayo-de-corinto
 - gayo-de-3-juan
@@ -24,6 +24,8 @@ sources:
 - it-gayo
 - hch-19
 - si-3
+- it-juan-cartas
+- si-3-juan
 links:
 - title: 'Perspicacia: «Gayo»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Gayo/
@@ -40,7 +42,11 @@ history:
 - date: '2026-09-29'
   change: 'Deja de citar Hch 20:4 como suyo: ese Gayo es el de Derbe (Perspicacia «Gayo», núm. 2), que solo quizá sea el mismo.'
   source: hch-20
-checked_on: '2026-09-29'
+- date: '2026-10-14'
+  change: Decía que no es el Gayo de 3 Juan. Perspicacia «Juan, Cartas de» y «Toda Escritura», libro 64, párr. 1, solo dicen
+    que no se sabe quién era y que nada lo muestra.
+  source: si-3-juan
+checked_on: '2026-10-14'
 status: verified
 relations:
 - type: accompanies

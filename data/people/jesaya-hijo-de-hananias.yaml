@@ -24,9 +24,12 @@ relations:
   reason: '1Cr 3:21: hijo de Hananías.'
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-14'
 status: verified
 disambiguation: Jesayá, hijo de Hananías y nieto de Zorobabel; no el músico hijo de Jedutún ni el levita descendiente de Eliezer.
 distinct_from:
 - jesaya-descendiente-de-eliezer
 - jesaya-hijo-de-jedutun
+- jesaya-hijo-de-atalia
+- jesaya-merarita
+- jesaya-benjaminita

@@ -33,5 +33,8 @@ distinct_from:
 - seraya-hijo-de-tanhumet
 - seraya-hijo-de-asiel
 - seraya-hijo-de-azriel
-checked_on: '2026-10-12'
+- seraya-repatriado
+- seraya-sacerdote-repatriado
+- azarias-sacerdote-repatriado
+checked_on: '2026-10-14'
 status: verified

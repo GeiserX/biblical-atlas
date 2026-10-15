@@ -27,7 +27,7 @@ relations:
   reason: '1Cr 26:4: el primero de los hijos de Obed-Edom.'
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified
 distinct_from:
 - semaya-hijo-de-galal
@@ -45,3 +45,14 @@ distinct_from:
 - semaya-ayudante-de-core
 - semaya-levita-de-josias
 - semaya-levita-de-jehosafat
+- semaya-descendiente-de-adonicam
+- semaya-enviado-a-casifia
+- semaya-descendiente-de-harim
+- semaya-sacerdote-descendiente-de-harim
+- semaya-guarda-de-la-puerta-oriental
+- semaya-hijo-de-delaya
+- semaya-sacerdote-repatriado
+- semaya-de-la-procesion-del-muro
+- semaya-hijo-de-matanias
+- semaya-musico-de-la-procesion
+- semaya-sacerdote-de-la-inauguracion

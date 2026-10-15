@@ -1,0 +1,48 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: maaseya-hijo-de-itiel
+name: Maaseya
+names:
+- name: Maaseya
+perspicacia: 1200002811#18
+summary: Benjamita, antepasado de Salú, uno de los que vivían en Jerusalén cuando gobernaba Nehemías.
+reason: Perspicacia «Maaseya», núm. 18; Ne 11:7.
+sources:
+- it-maaseya
+- nehemias-11
+links:
+- title: 'Perspicacia: «Maaseya»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Maaseya/
+  type: perspicacia
+relations:
+- type: kin
+  person: itiel-hijo-de-jesaya
+  word: father
+  inferred: false
+  sources:
+  - nehemias-11
+  reason: 'Ne 11:7: Maaseya, hijo de Itiel.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- maaseya-cabeza-del-pueblo
+- maaseya-de-la-casa-de-jesua
+- maaseya-descendiente-de-harim
+- maaseya-descendiente-de-pahat-moab
+- maaseya-descendiente-de-pasjur
+- maaseya-funcionario
+- maaseya-hijo-de-adaya
+- maaseya-hijo-de-ananiah
+- maaseya-hijo-de-baruc
+- maaseya-hijo-de-salum
+- maaseya-hijo-del-rey
+- maaseya-jefe-de-jerusalen
+- maaseya-junto-a-esdras
+- maaseya-levita-que-explico-la-ley
+- maaseya-musico
+- maaseya-padre-de-sedequias
+- maaseya-padre-de-sofonias
+- maaseya-sacerdote-de-la-inauguracion
+- maaseya-trompetista-de-la-inauguracion
+disambiguation: Maaseya, benjamita, antepasado de Salú (Perspicacia «Maaseya», núm. 18).

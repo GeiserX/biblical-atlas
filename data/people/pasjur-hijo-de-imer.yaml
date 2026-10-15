@@ -74,8 +74,10 @@ relations:
     2 lo pone a cargo del templo.
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-14'
 status: verified
 distinct_from:
 - pasjur-hijo-de-malkias
 - pasjur-padre-de-guedalias
+- pasjur-familia-sacerdotal
+- pasjur-sacerdote-firmante

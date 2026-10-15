@@ -1,0 +1,78 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: zacarias-enviado-a-casifia
+name: Zacarías
+names:
+- name: Zacarías
+perspicacia: 1200004681#21
+disambiguation: El jefe que Esdras envió a Casifía (Esd 8:16), núm. 21 de Perspicacia; no los otros Zacarías que numera.
+distinct_from:
+- zacarias-abuelo-de-ezequias
+- zacarias-de-israel
+- zacarias-descendiente-de-isias
+- zacarias-el-rubenita
+- zacarias-hijo-de-hosa
+- zacarias-hijo-de-jeberekias
+- zacarias-hijo-de-jehoiada
+- zacarias-hijo-de-meselemias
+- zacarias-musico
+- zacarias-padre-de-ido
+- zacarias-padre-de-juan
+- zacarias-profeta
+- zacarias-trompetista
+- zeker
+- zacarias-consejero-de-uzias
+- zacarias-hijo-de-benaya
+- zacarias-hijo-de-jehosafat
+- zacarias-levita-de-ezequias
+- zacarias-levita-de-josias
+- zacarias-principe-de-jehosafat
+- zacarias-sacerdote-de-josias
+- zacarias-descendiente-de-elam
+- zacarias-junto-a-esdras
+- zacarias-hijo-de-amarias
+- zacarias-hijo-de-pasjur
+- zacarias-hijo-del-selanita
+- zacarias-hijo-de-jonatan
+- zacarias-trompetista-de-la-inauguracion
+summary: Uno de los jefes que Esdras mandó desde el río Ahavá a buscar servidores para el templo. Perspicacia ve posible que
+  sea el Zacarías de Parós o el de Bebái.
+reason: Perspicacia «Zacarías», núm. 21; Esd 8:15-17.
+sources:
+- it-zacarias
+- esdras-8
+links:
+- title: 'Perspicacia: «Zacarías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zacar%C3%ADas/
+  type: perspicacia
+relations:
+- type: same_as
+  person: zacarias-hijo-de-bebai
+  certainty: possible
+  inferred: true
+  sources:
+  - esdras-8
+  - it-zacarias
+  reason: 'Perspicacia «Zacarías», núm. 21 y 23: posiblemente el jefe de Esd 8:16 es el cabeza de la casa de Bebái de Esd
+    8:11.'
+  checked_on: '2026-10-13'
+  status: verified
+- type: accompanies
+  person: esdras
+  date:
+    from: -467
+    to: -467
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 468 a.e.c.
+  inferred: true
+  sources:
+  - esdras-8
+  - it-zacarias
+  reason: 'Esd 8:15, 16: estaba en el campamento del Ahavá y Esdras lo envió a buscar levitas; Perspicacia lo pone entre los
+    que iban con Esdras.'
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-14'
+status: verified

@@ -1,0 +1,23 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hosea-cabeza-del-pueblo
+name: Hosea
+names:
+- name: Hosea
+perspicacia: 1200002090#5
+summary: Uno de los jefes del pueblo, o su descendiente, que se sumó a la propuesta de los levitas y selló la promesa de 455
+  a.e.c.
+reason: Perspicacia «Hosea», núm. 5; Ne 10:23.
+sources:
+- it-hosea
+- nehemias-10
+links:
+- title: 'Perspicacia: «Hosea»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hosea/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- hosea-de-israel
+- hosea-hijo-de-azazias
+- josue-hijo-de-nun
+disambiguation: Hosea, cabeza del pueblo en la lista de Ne 10:23 (Perspicacia «Hosea», núm. 5).

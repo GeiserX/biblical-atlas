@@ -1,0 +1,19 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: barcos
+name: Barcos
+names:
+- name: Barcos
+- name: Barqos
+perspicacia: '1200000564'
+summary: Sus descendientes, siervos del templo o netineos, se cuentan entre los que volvieron de Babilonia en 537 a.e.c.
+reason: Perspicacia «Barqos»; Esd 2:53.
+sources:
+- it-barqos
+- esdras-2
+- nehemias-7
+links:
+- title: 'Perspicacia: «Barqos»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Barqos/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified

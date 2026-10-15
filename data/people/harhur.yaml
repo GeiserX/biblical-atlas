@@ -1,0 +1,18 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: harhur
+name: Harhur
+names:
+- name: Harhur
+perspicacia: '1200001879'
+summary: Sus descendientes, siervos del templo o netineos, se cuentan entre los que volvieron de Babilonia en 537 a.e.c.
+reason: Perspicacia «Harhur»; Esd 2:51.
+sources:
+- it-harhur
+- esdras-2
+- nehemias-7
+links:
+- title: 'Perspicacia: «Harhur»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Harhur/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified

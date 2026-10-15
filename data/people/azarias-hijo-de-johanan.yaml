@@ -4,7 +4,8 @@ name: Azarías
 names:
 - name: Azarías
 perspicacia: 1200000486#14
-disambiguation: Azarías hijo de Johanán (1Cr 6:9, 10); no es ninguno de los otros Azarías que numera Perspicacia «Azarías».
+disambiguation: Azarías hijo de Johanán (1Cr 6:9, 10), núm. 14 de Perspicacia; quizá el mismo que el Azarías de Esd 7:3 (núm.
+  18), y no ninguno de los demás Azarías que numera.
 distinct_from:
 - abednego
 - azarias-hijo-de-ahimaaz
@@ -26,6 +27,11 @@ distinct_from:
 - azarias-hijo-de-obed
 - azarias-quinto-hijo-de-jehosafat
 - azarias-segundo-hijo-de-jehosafat
+- seraya-repatriado
+- azarias-hijo-de-maaseya
+- azarias-levita-que-explico-la-ley
+- azarias-sacerdote-firmante
+- azarias-de-la-procesion-del-muro
 summary: Sacerdote hijo de Johanán, que ejerció en el templo de Salomón. Perspicacia lo llama sumo sacerdote, ve posible que
   echara del templo a Uzías y le atribuye, con reservas, la respuesta a Ezequías sobre las contribuciones (2Cr 31:10).
 reason: Perspicacia «Azarías», núm. 14; 1Cr 6:9, 10.
@@ -33,6 +39,8 @@ sources:
 - it-azarias
 - 1-cronicas-6
 - 2-cronicas-31
+- esdras-7
+- it-amarias
 links:
 - title: 'Perspicacia: «Azarías»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Azar%C3%ADas/
@@ -87,10 +95,26 @@ relations:
     para la línea de sumos sacerdotes que salió de él.'
   checked_on: '2026-10-13'
   status: verified
+- type: same_as
+  person: azarias-hijo-de-merayot
+  certainty: possible
+  inferred: true
+  sources:
+  - esdras-7
+  - it-amarias
+  - it-azarias
+  reason: La referencia marginal del Azarías de Esd 7:3 lleva al pasaje que Perspicacia «Azarías», núm. 14, atribuye a este,
+    y «Amarías», núm. 4, une su Amarías con el de Esd 7:3.
+  checked_on: '2026-10-14'
+  status: verified
 history:
 - date: '2026-10-13'
   change: El resumen añade lo que Perspicacia «Azarías», núm. 14, le atribuye en el primer año de Ezequías, aunque admite
     que fuera otro con el mismo nombre.
   source: 2-cronicas-31
-checked_on: '2026-10-13'
+- date: '2026-10-14'
+  change: 'Deja de excluir al Azarías de Esd 7:3: la referencia de ese versículo lleva a 2Cr 31:10 y Perspicacia «Amarías»,
+    núm. 4, une los dos pasajes.'
+  source: esdras-7
+checked_on: '2026-10-14'
 status: verified

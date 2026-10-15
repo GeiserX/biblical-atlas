@@ -1,0 +1,17 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: marsena
+name: Marsená
+names:
+- name: Marsená
+perspicacia: '1200002914'
+summary: Príncipe de Persia y Media, uno de los siete a los que Asuero consultó por la desobediencia de Vasti.
+reason: Perspicacia «Marsená»; Est 1:14.
+sources:
+- it-marsena
+- ester-1
+links:
+- title: 'Perspicacia: «Marsená»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Marsen%C3%A1/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified

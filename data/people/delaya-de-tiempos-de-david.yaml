@@ -35,8 +35,10 @@ relations:
   reason: '1Cr 24:18: encabeza una de las casas sacerdotales de 24:4-6; Perspicacia «Delayá» lo trata como sacerdote.'
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-14'
 status: verified
 distinct_from:
 - delaya-hijo-de-elioenai
 - delaya-hijo-de-semaya
+- delaya-sin-registro
+- delaya-hijo-de-mehetabel

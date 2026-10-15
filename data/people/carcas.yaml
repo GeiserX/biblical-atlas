@@ -1,0 +1,28 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: carcas
+name: Carcás
+names:
+- name: Carcás
+perspicacia: '1200000891'
+summary: Funcionario de la corte de Asuero, el último de los siete por quienes el rey llamó a Vasti, que se negó a ir.
+reason: Perspicacia «Carcás»; Est 1:10-12.
+sources:
+- it-carcas
+- ester-1
+links:
+- title: 'Perspicacia: «Carcás»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Carc%C3%A1s/
+  type: perspicacia
+relations:
+- type: tie
+  person: jerjes-i
+  word: master
+  inferred: false
+  sources:
+  - ester-1
+  - it-carcas
+  reason: 'Est 1:10: uno de los siete funcionarios de la corte que servían en persona al rey Asuero.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified

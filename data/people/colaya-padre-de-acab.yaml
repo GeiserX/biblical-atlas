@@ -19,5 +19,8 @@ links:
 - title: Jeremías 29 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/29/
   type: bible
-checked_on: '2026-10-12'
+disambiguation: 'Colaya núm. 1 de Perspicacia «Qolaya»: padre del falso profeta Acab (Jer 29:21).'
+checked_on: '2026-10-14'
 status: verified
+distinct_from:
+- colaya-hijo-de-maaseya

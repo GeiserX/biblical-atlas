@@ -1,0 +1,46 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: zacur-hijo-de-matanias
+name: Zacur
+names:
+- name: Zacur
+perspicacia: 1200004651#7
+summary: Levita, padre de Hanán e hijo de Matanías. Perspicacia ve posible que sea el levita que selló el arreglo fidedigno
+  (Ne 10:12).
+reason: Perspicacia «Zacur», núm. 7; Ne 13:10-13.
+sources:
+- it-zacur
+- nehemias-13
+- it-matanias
+links:
+- title: 'Perspicacia: «Zacur»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zacur/
+  type: perspicacia
+relations:
+- type: kin
+  person: matanias-abuelo-de-hanan
+  word: father
+  inferred: false
+  sources:
+  - nehemias-13
+  reason: 'Ne 13:13: Zacur, hijo de Matanías.'
+  checked_on: '2026-10-14'
+  status: verified
+- type: same_as
+  person: zacur-levita-firmante
+  certainty: possible
+  inferred: true
+  sources:
+  - it-zacur
+  - nehemias-13
+  reason: 'Perspicacia «Zacur», núm. 6 y 7: el padre de Hanán de Ne 13:13 posiblemente es el levita firmante.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- zacur-hijo-de-asaf
+- zacur-hijo-de-hamuel
+- zacur-hijo-de-imri
+- zacur-hijo-de-jaazias
+- zacur-padre-de-samua
+disambiguation: 'Zacur núm. 7 de Perspicacia: el padre de Hanán (Ne 13:13); no los demás Zacur que registra Perspicacia «Zacur».'

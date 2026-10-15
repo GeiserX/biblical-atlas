@@ -1,0 +1,73 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: esdras-reune-al-pueblo-junto-al-rio-ahava
+title: Esdras reúne al pueblo junto al río Ahavá y pide levitas a Casifía
+date:
+  from: -467
+  to: -467
+  precision: month
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: nisán de 468 a.e.c.
+  detail:
+    month: nisan
+narrative_order:
+  series: esdras
+  order: 8015
+places:
+- rio-ahava
+- casifia
+people:
+- esdras
+- eliezer-enviado-a-casifia
+- ariel-enviado-a-casifia
+- semaya-enviado-a-casifia
+- elnatan-primer-jefe
+- elnatan-segundo-jefe
+- jarib-enviado-a-casifia
+- natan-enviado-a-casifia
+- zacarias-enviado-a-casifia
+- mesulam-enviado-a-casifia
+- joiarib-maestro
+- elnatan-maestro
+- ido-de-casifia
+- serebias-descendiente-de-mahli
+- hasabias-merarita
+- jesaya-merarita
+present:
+- esdras
+- eliezer-enviado-a-casifia
+- ariel-enviado-a-casifia
+- semaya-enviado-a-casifia
+- elnatan-primer-jefe
+- elnatan-segundo-jefe
+- jarib-enviado-a-casifia
+- natan-enviado-a-casifia
+- zacarias-enviado-a-casifia
+- mesulam-enviado-a-casifia
+- joiarib-maestro
+- elnatan-maestro
+- serebias-descendiente-de-mahli
+- hasabias-merarita
+- jesaya-merarita
+passages:
+- Esd 8:15-20
+summary: Tras tres días acampados junto al río, Esdras vio que no había levitas. Mandó once hombres a pedirlos a Idó, en Casifía,
+  y llegaron 38 levitas y 220 siervos del templo.
+reason: 'Esd 8:15-20; Perspicacia «Esdras», núm. 1, y «Casifía». Antes del día 12 de nisán, cuando salieron del Ahavá (Esd
+  8:31). Idó se quedó en Casifía: no va en present.'
+sources:
+- esdras-8
+- it-esdras
+- it-casifia
+- it-ahava
+- si-3
+links:
+- title: 'Perspicacia: «Esdras»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Esdras/
+  type: perspicacia
+- title: Esdras 8 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/esdras/8/
+  type: bible
+checked_on: '2026-10-13'
+status: verified

@@ -1,0 +1,34 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: maluc-sacerdote-firmante
+name: Maluc
+names:
+- name: Maluc
+perspicacia: 1200002873#5
+summary: Sacerdote, o antepasado de un sacerdote, cuyo nombre figura en la lista de quienes sellaron la promesa de 455 a.e.c.
+  en tiempos de Nehemías.
+reason: Perspicacia «Maluc», núm. 5; Ne 10:4.
+sources:
+- it-maluc
+- nehemias-10
+links:
+- title: 'Perspicacia: «Maluc»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Maluc/
+  type: perspicacia
+relations:
+- type: holds_office
+  office: priest
+  inferred: false
+  sources:
+  - nehemias-10
+  reason: 'Ne 10:8 cierra la lista: «esos son los sacerdotes».'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- maluc-cabeza-del-pueblo
+- maluc-descendiente-de-bani
+- maluc-descendiente-de-harim
+- maluc-hijo-de-hasabias
+- maluc-sacerdote-de-zorobabel
+disambiguation: Maluc, sacerdote que, él o un antepasado, selló la promesa de Ne 10 (Perspicacia «Maluc», núm. 5).

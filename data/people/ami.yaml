@@ -1,0 +1,25 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ami
+name: Amí
+names:
+- name: Amí
+- name: Amón
+perspicacia: 1200000244#3
+summary: Antepasado de una de las familias descendientes de siervos de Salomón; esa familia volvió del destierro con el grupo
+  de Zorobabel. Nehemías lo llama Amón.
+reason: Perspicacia «Amón», núm. 3; Esd 2:57.
+sources:
+- it-amon
+- esdras-2
+- nehemias-7
+links:
+- title: 'Perspicacia: «Amón»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Am%C3%B3n/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- amon-de-juda
+- amon-jefe-de-samaria
+disambiguation: 'Amón núm. 3 de Perspicacia, llamado Amí en Esd 2:57: de los siervos de Salomón; no el rey de Judá ni el jefe
+  de Samaria.'

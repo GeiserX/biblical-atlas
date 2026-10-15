@@ -1,0 +1,55 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: azarias-sacerdote-firmante
+name: Azarías
+names:
+- name: Azarías
+perspicacia: 1200000486#27
+summary: Sacerdote de los días del gobernador Nehemías. Su nombre figura entre los que sellaron la promesa de 455 a.e.c.;
+  quizá la selló un descendiente suyo.
+reason: Perspicacia «Azarías», núm. 27; Ne 10:2.
+sources:
+- it-azarias
+- nehemias-10
+links:
+- title: 'Perspicacia: «Azarías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Azar%C3%ADas/
+  type: perspicacia
+relations:
+- type: holds_office
+  office: priest
+  inferred: false
+  sources:
+  - nehemias-10
+  reason: 'Ne 10:8 cierra la lista: «esos son los sacerdotes».'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- abednego
+- azarias-hijo-de-ahimaaz
+- azarias-hijo-de-etan
+- azarias-hijo-de-hilquias
+- azarias-hijo-de-jehalelel
+- azarias-hijo-de-jehohanan
+- azarias-hijo-de-jehu
+- azarias-hijo-de-jeroham
+- azarias-hijo-de-johanan
+- azarias-hijo-de-maaseya
+- azarias-hijo-de-merayot
+- azarias-hijo-de-natan
+- azarias-hijo-de-obed
+- azarias-hijo-de-oded
+- azarias-hijo-de-sadoc
+- azarias-hijo-de-sofonias
+- azarias-levita-que-explico-la-ley
+- azarias-padre-de-joel
+- azarias-quinto-hijo-de-jehosafat
+- azarias-sacerdote-de-tiempos-de-uzias
+- azarias-sacerdote-repatriado
+- azarias-segundo-hijo-de-jehosafat
+- jaazanias-jefe-militar
+- ocozias-de-juda
+- seraya-repatriado
+- uzias
+disambiguation: Azarías, sacerdote que, él o un descendiente, selló la promesa de Ne 10 (Perspicacia «Azarías», núm. 27).

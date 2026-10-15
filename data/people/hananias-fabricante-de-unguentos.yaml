@@ -1,0 +1,35 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hananias-fabricante-de-unguentos
+name: Hananías
+names:
+- name: Hananías
+perspicacia: 1200001853#11
+disambiguation: El fabricante de ungüentos que reparó la muralla (Ne 3:8), núm. 11 de Perspicacia «Hananías»; no los otros
+  Hananías que numera.
+distinct_from:
+- hananias-abuelo-de-iriya
+- hananias-descendiente-de-bebai
+- hananias-hijo-de-azur
+- hananias-hijo-de-heman
+- hananias-hijo-de-sasac
+- hananias-hijo-de-selemias
+- hananias-hijo-de-zorobabel
+- hananias-padre-de-sedequias
+- hananias-principe-de-uzias
+- sadrac
+- hananias-jefe-de-la-fortaleza
+- hananias-cabeza-del-pueblo
+- hananias-de-la-casa-de-jeremias
+- hananias-trompetista-de-la-inauguracion
+summary: Fabricante de ungüentos, o perfumista, que reparó un tramo de la muralla de Jerusalén en días de Nehemías; con Uziel
+  pavimentó la ciudad hasta el Muro Ancho.
+reason: Perspicacia «Hananías», núm. 11; Ne 3:8.
+sources:
+- it-hananias
+- nehemias-3
+links:
+- title: 'Perspicacia: «Hananías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hanan%C3%ADas/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified

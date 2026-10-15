@@ -1,0 +1,18 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: admata
+name: Admatá
+names:
+- name: Admatá
+perspicacia: '1200000105'
+summary: Príncipe de Persia y Media con acceso directo a Asuero, uno de los siete que juzgaron el caso de Vasti. Su nombre,
+  de origen persa, significaría «Invicto».
+reason: Perspicacia «Admatá»; Est 1:14.
+sources:
+- it-admata
+- ester-1
+links:
+- title: 'Perspicacia: «Admatá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Admat%C3%A1/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified

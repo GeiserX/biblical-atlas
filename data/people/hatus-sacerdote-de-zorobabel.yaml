@@ -1,0 +1,33 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hatus-sacerdote-de-zorobabel
+name: Hatús
+names:
+- name: Hatús
+perspicacia: 1200001918#1
+summary: Uno de los cabezas sacerdotales del grupo de Zorobabel, de vuelta del destierro en 537 a.e.c.
+reason: Perspicacia «Hatús», núm. 1; Ne 12:1, 2.
+sources:
+- it-hatus
+- nehemias-12
+links:
+- title: 'Perspicacia: «Hatús»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hat%C3%BAs/
+  type: perspicacia
+relations:
+- type: holds_office
+  office: priest
+  inferred: false
+  sources:
+  - nehemias-12
+  reason: 'Ne 12:1, 7: va entre los jefes de los sacerdotes que subieron con Zorobabel y Jesúa.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- hatus-descendiente-de-david
+- hatus-hijo-de-hasabneya
+- hatus-hijo-de-semaya
+- hatus-sacerdote-firmante
+disambiguation: 'Hatús núm. 1 de Perspicacia: el cabeza sacerdotal del regreso con Zorobabel (Ne 12:2); no los demás Hatús
+  que registra Perspicacia «Hatús».'

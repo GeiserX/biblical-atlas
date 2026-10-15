@@ -9,6 +9,11 @@ reason: Perspicacia «Harim», núm. 1; 1Cr 24:8.
 sources:
 - it-harim
 - 1-cronicas-24
+- esdras-2
+- esdras-10
+- nehemias-7
+- nehemias-10
+- nehemias-12
 links:
 - title: 'Perspicacia: «Harim»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Harim/
@@ -33,5 +38,9 @@ relations:
   reason: '1Cr 24:8: encabeza una de las casas sacerdotales de 24:4-6; Perspicacia «Harim» lo trata como sacerdote.'
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+disambiguation: 'Harim núm. 1 de Perspicacia: cabeza de la tercera división sacerdotal de tiempos de David; no el fundador
+  de la familia laica del mismo nombre.'
+checked_on: '2026-10-14'
 status: verified
+distinct_from:
+- harim-cabeza-de-familia

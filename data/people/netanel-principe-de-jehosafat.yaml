@@ -26,7 +26,7 @@ relations:
   status: verified
 disambiguation: Príncipe de Jehosafat que enseñó la Ley en Judá (Perspicacia «Netanel», núm. 6); no Netanel hijo de Zuar,
   de Isacar.
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified
 distinct_from:
 - netanel-hijo-de-zuar
@@ -35,3 +35,6 @@ distinct_from:
 - netanel-levita-de-josias
 - netanel-padre-de-semaya
 - netanel-trompetista
+- netanel-descendiente-de-pasjur
+- netanel-de-la-casa-de-jedaya
+- netanel-musico-de-la-procesion

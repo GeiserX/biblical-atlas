@@ -1,0 +1,101 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: zacarias-descendiente-de-paros
+name: Zacarías
+names:
+- name: Zacarías
+perspicacia: 1200004681#22
+disambiguation: El cabeza de la casa de Parós que volvió con Esdras (Esd 8:3), núm. 22 de Perspicacia; no los otros Zacarías
+  que numera.
+distinct_from:
+- zacarias-abuelo-de-ezequias
+- zacarias-de-israel
+- zacarias-descendiente-de-isias
+- zacarias-el-rubenita
+- zacarias-hijo-de-bebai
+- zacarias-hijo-de-hosa
+- zacarias-hijo-de-jeberekias
+- zacarias-hijo-de-jehoiada
+- zacarias-hijo-de-meselemias
+- zacarias-musico
+- zacarias-padre-de-ido
+- zacarias-padre-de-juan
+- zacarias-profeta
+- zacarias-trompetista
+- zeker
+- zacarias-consejero-de-uzias
+- zacarias-hijo-de-benaya
+- zacarias-hijo-de-jehosafat
+- zacarias-levita-de-ezequias
+- zacarias-levita-de-josias
+- zacarias-principe-de-jehosafat
+- zacarias-sacerdote-de-josias
+- zacarias-descendiente-de-elam
+- zacarias-junto-a-esdras
+- zacarias-hijo-de-amarias
+- zacarias-hijo-de-pasjur
+- zacarias-hijo-del-selanita
+- zacarias-hijo-de-jonatan
+- zacarias-trompetista-de-la-inauguracion
+summary: 'Jefe de los de Parós en el grupo de Esdras: en 468 a.e.c. llevó consigo a 150 varones inscritos.'
+reason: Perspicacia «Zacarías», núm. 22; Esd 8:1, 3.
+sources:
+- it-zacarias
+- esdras-8
+- it-paros
+links:
+- title: 'Perspicacia: «Zacarías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zacar%C3%ADas/
+  type: perspicacia
+relations:
+- type: kin
+  person: secanias-descendiente-de-paros
+  word: ancestor
+  inferred: false
+  sources:
+  - esdras-8
+  - it-zacarias
+  reason: 'Esd 8:3: Zacarías era de los hijos de Secanías.'
+  checked_on: '2026-10-13'
+  status: verified
+- type: kin
+  person: paros
+  word: ancestor
+  inferred: false
+  sources:
+  - esdras-8
+  - it-zacarias
+  - it-paros
+  reason: 'Esd 8:3: los hijos de Secanías eran de los hijos de Parós; Perspicacia «Zacarías», núm. 22, lo hace cabeza de esa
+    casa.'
+  checked_on: '2026-10-13'
+  status: verified
+- type: same_as
+  person: zacarias-enviado-a-casifia
+  certainty: possible
+  inferred: true
+  sources:
+  - esdras-8
+  - it-zacarias
+  reason: 'Perspicacia «Zacarías», núm. 22: posiblemente es el mismo que el núm. 21, uno de los jefes que Esdras envió a Casifía
+    (Esd 8:16).'
+  checked_on: '2026-10-13'
+  status: verified
+- type: accompanies
+  person: esdras
+  date:
+    from: -467
+    to: -467
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 468 a.e.c.
+  inferred: false
+  sources:
+  - esdras-8
+  - it-zacarias
+  reason: 'Esd 8:1, 3: subió con Esdras con 150 varones.'
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-14'
+status: verified

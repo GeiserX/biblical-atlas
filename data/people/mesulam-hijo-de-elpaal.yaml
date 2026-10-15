@@ -14,6 +14,18 @@ distinct_from:
 - mesulam-hijo-de-abihail
 - mesulam-hijo-de-zorobabel
 - mesulam-levita-de-josias
+- mesulam-enviado-a-casifia
+- mesulam-descendiente-de-bani
+- mesulam-levita-de-tiempos-de-esdras
+- mesulam-hijo-de-berekias
+- mesulam-hijo-de-besodeya
+- mesulam-junto-a-esdras
+- mesulam-cabeza-del-pueblo
+- mesulam-sacerdote-firmante
+- mesulam-de-la-casa-de-esdras
+- mesulam-de-la-casa-de-guineton
+- mesulam-de-la-procesion-del-muro
+- mesulam-portero
 summary: Benjamita, hijo de Elpaal, cabeza de familia que vivió en Jerusalén.
 reason: Perspicacia «Mesulam», núm. 1; 1Cr 8:17, 18, 28.
 sources:
@@ -41,5 +53,5 @@ relations:
   reason: '1Cr 8:28: los jefes de casas paternas de esta lista vivían en Jerusalén.'
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified

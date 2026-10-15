@@ -1,0 +1,38 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: acusacion-contra-los-judios-ante-asuero
+title: Acusan a los judíos ante Asuero
+date:
+  from: -529
+  to: -527
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 530 y 528 a.e.c. (tiempo narrativo: al principio del reinado de Asuero, probablemente Cambises, que reinó de
+    529 a 522)'
+narrative_order:
+  series: esdras
+  order: 4006
+places:
+- juda
+- jerusalen
+people:
+- asuero-de-esdras
+present: []
+passages:
+- Esd 4:6
+summary: Al empezar el reinado de Asuero, los enemigos de los judíos le mandan por escrito una denuncia contra quienes viven
+  en Judá y en Jerusalén. El texto no dice qué respondió el rey.
+reason: 'Perspicacia «Persia, persas» y «Artajerjes», núm. 1, ven en este Asuero a Cambises, que según «Asuero», núm. 2, reinó
+  de 529 a 522. Nadie con ficha está en Judá: present va vacío.'
+sources:
+- esdras-4
+- it-asuero
+- it-artajerjes
+- it-persia
+links:
+- title: Esdras 4 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/esdras/4/
+  type: bible
+checked_on: '2026-10-13'
+status: verified

@@ -1,0 +1,43 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: ester-y-mardoqueo-confirman-purim
+title: Ester y Mardoqueo confirman Purim en una segunda carta
+date:
+  from: -482
+  to: -474
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 483 y 475 a.e.c. (tiempo narrativo: después de la primera carta de Mardoqueo y antes del fin del libro)'
+narrative_order:
+  series: ester
+  order: 9029
+places:
+- susa
+people:
+- mardoqueo
+- ester
+present:
+- mardoqueo
+- ester
+type: writing
+roles:
+  mardoqueo: wrote
+passages:
+- Est 9:29-32
+summary: Más tarde, una segunda carta con la autoridad de la reina Ester y de Mardoqueo confirma la fiesta para siempre, con
+  sus ayunos y súplicas. Llega a las 127 provincias y la orden queda registrada en un libro.
+reason: 'Est 9:29-32: Mardoqueo envía las cartas y la orden de Ester las confirma. Límites: la primera carta (483, cuenta
+  nuestra) y el fin del libro, c. 475 (Tabla de los libros). Perspicacia «Purim».'
+sources:
+- ester-9
+- it-purim
+- it-ester
+- tnm-tabla
+links:
+- title: Ester 9 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/ester/9/
+  type: bible
+search: segunda carta Purim Ester Mardoqueo
+checked_on: '2026-10-14'
+status: verified

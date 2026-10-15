@@ -1,0 +1,30 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jadon
+name: Jadón
+names:
+- name: Jadón
+perspicacia: '1200002285'
+summary: Meronotita que reparó con Melatías un tramo de la muralla de Jerusalén en 455 a.e.c. Por lo visto era de los alrededores
+  de Mizpá.
+reason: Perspicacia «Jadón» y «Meronotita»; Ne 3:7.
+sources:
+- it-jadon
+- nehemias-3
+- it-meronotita
+links:
+- title: 'Perspicacia: «Jadón»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jad%C3%B3n/
+  type: perspicacia
+relations:
+- type: lived_in
+  place: mizpa-de-benjamin
+  inferred: true
+  sources:
+  - nehemias-3
+  - it-jadon
+  reason: Ne 3:7 los llama hombres de Gabaón y de Mizpá; Melatías era el gabaonita, y Perspicacia «Jadón» sitúa a Jadón cerca
+    de Mizpá.
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified

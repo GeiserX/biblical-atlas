@@ -7,6 +7,8 @@ perspicacia: 1200001307#2
 disambiguation: Elías hijo de Jeroham, benjamita; no Elías el profeta tisbita ni los Elías de días de Esdras.
 distinct_from:
 - elias-profeta
+- elias-descendiente-de-elam
+- elias-descendiente-de-harim
 summary: Benjamita, hijo de Jeroham, cabeza de su casa y habitante de Jerusalén.
 reason: Perspicacia «Elías», núm. 2; 1Cr 8:27, 28.
 sources:
@@ -34,5 +36,5 @@ relations:
   reason: '1Cr 8:28: los jefes de casas paternas de esta lista vivían en Jerusalén.'
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified

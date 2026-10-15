@@ -11,6 +11,8 @@ distinct_from:
 - johanan-hijo-de-carea
 - johanan-hijo-de-elioenai
 - johanan-hijo-de-josias
+- johanan-hijo-de-hacatan
+- johanan-hijo-de-joiada
 summary: Sumo sacerdote, hijo de Azarías y padre de otro Azarías, el que Perspicacia cree probable que tuviera el cargo cuando
   Uzías actuó con presunción.
 reason: Perspicacia «Johanán», núm. 3; 1Cr 6:9, 10.
@@ -40,5 +42,5 @@ relations:
   reason: Perspicacia «Johanán», núm. 3, lo llama sumo sacerdote (1Cr 6:9, 10).
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-14'
 status: verified

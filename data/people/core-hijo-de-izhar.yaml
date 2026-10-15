@@ -27,6 +27,7 @@ sources:
 - numeros-26
 - 1-cronicas-6
 - 1-cronicas-12
+- judas-1
 links:
 - title: 'Perspicacia: «Coré»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Cor%C3%A9/
@@ -44,7 +45,7 @@ history:
 - date: '2026-09-29'
   change: 'Grafía: el resumen escribe Cohat, como Éx 6:16 en la TNM; Qohat es la grafía de Perspicacia.'
   source: exodo-6
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified
 relations:
 - type: kin

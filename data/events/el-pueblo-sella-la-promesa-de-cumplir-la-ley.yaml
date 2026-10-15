@@ -1,0 +1,106 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: el-pueblo-sella-la-promesa-de-cumplir-la-ley
+title: El pueblo sella por escrito la promesa de cumplir la Ley
+date:
+  from: -454
+  to: -454
+  precision: day
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 24 de tisri de 455 a.e.c.
+  detail:
+    month: tisri
+    day: 24
+narrative_order:
+  series: nehemias
+  order: 109038
+places:
+- jerusalen
+people:
+- nehemias
+- sedequias-sacerdote-firmante
+- seraya-sacerdote-repatriado
+- azarias-sacerdote-firmante
+- jeremias-sacerdote-firmante
+- pasjur-sacerdote-firmante
+- amarias-sacerdote-firmante
+- malkiya-sacerdote-firmante
+- hatus-sacerdote-firmante
+- sebanias-sacerdote-repatriado
+- maluc-sacerdote-firmante
+- meremot-sacerdote-firmante
+- abdias-sacerdote-firmante
+- guineton-sacerdote-firmante
+- baruc-sacerdote-firmante
+- mesulam-sacerdote-firmante
+- abias-sacerdote-firmante
+- mijamin-sacerdote-firmante
+- maazias-sacerdote-firmante
+- bilgai
+- semaya-sacerdote-repatriado
+- jesua-hijo-de-azanias
+- binui-levita-firmante
+- sebanias-levita-de-la-confesion
+- hodias-levita-firmante
+- quelita-levita-firmante
+- pelaya-levita-que-explico-la-ley
+- hanan-levita-firmante
+- mica-levita-firmante
+- rehob-levita-firmante
+- hasabias-levita-firmante
+- zacur-levita-firmante
+- serebias-levita-que-explico-la-ley
+- sebanias-levita-firmante
+- hodias-segundo-levita-firmante
+- bani-levita-firmante
+- beninu
+- bani-cabeza-del-pueblo
+- buni-cabeza-del-pueblo
+- bebai-cabeza-del-pueblo
+- adonias-cabeza-del-pueblo
+- bigvai-cabeza-del-pueblo
+- azur-cabeza-del-pueblo
+- hodias-cabeza-del-pueblo
+- bezai-cabeza-del-pueblo
+- anatot-cabeza-del-pueblo
+- nebai
+- magpias
+- mesulam-cabeza-del-pueblo
+- hezir-cabeza-del-pueblo
+- mesezabel-cabeza-del-pueblo
+- sadoc-hijo-de-baana
+- jadua-cabeza-del-pueblo
+- pelatias-cabeza-del-pueblo
+- hanan-cabeza-del-pueblo
+- anaya-cabeza-del-pueblo
+- hosea-cabeza-del-pueblo
+- hananias-cabeza-del-pueblo
+- hasub-cabeza-del-pueblo
+- halohes-cabeza-del-pueblo
+- pilha
+- sobec
+- rehum-cabeza-del-pueblo
+- hasabna
+- maaseya-cabeza-del-pueblo
+- ahiya-cabeza-del-pueblo
+- hanan-segundo-cabeza-del-pueblo
+- anan
+- maluc-cabeza-del-pueblo
+- baana-cabeza-del-pueblo
+present:
+- nehemias
+passages:
+- Ne 9:38-10:39
+summary: 'Tras confesar los pecados de la nación, el pueblo se compromete por escrito a cumplir la Ley: no casarse con extranjeros,
+  guardar el sábado y sostener el templo. Nehemías sella el primero.'
+reason: 'La asamblea es la del día 24 del mes séptimo (Ne 9:1); Perspicacia «Nehemías» la pone tras la fiesta de las cabañas
+  de 455, el año del muro (estudio 3). Solo Nehemías va presente: los demás nombres pueden ser casas.'
+sources:
+- nehemias-9
+- nehemias-10
+- it-nehemias
+- it-nehemias-libro
+- si-3
+checked_on: '2026-10-14'
+status: verified

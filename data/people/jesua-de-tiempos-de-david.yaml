@@ -8,11 +8,19 @@ disambiguation: El de la novena división sacerdotal (1Cr 24:11); no Jesúa o Jo
 distinct_from:
 - josue-sumo-sacerdote
 - jesua-ayudante-de-core
+- jesua-cabeza-de-casa-levita
+- jesua-de-pahat-moab
+- jesua-supervisor-del-templo
+- jesua-padre-de-ezer
+- jesua-levita-que-explico-la-ley
+- jesua-hijo-de-azanias
 summary: Sacerdote de los días de David; a su casa le tocó el noveno de los 24 turnos del sacerdocio.
 reason: Perspicacia «Jesúa», núm. 1; 1Cr 24:11.
 sources:
 - it-jesua
 - 1-cronicas-24
+- esdras-2
+- nehemias-7
 links:
 - title: 'Perspicacia: «Jesúa»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jes%C3%BAa/
@@ -37,5 +45,5 @@ relations:
   reason: '1Cr 24:11: encabeza una de las casas sacerdotales de 24:4-6; Perspicacia «Jesúa» lo trata como sacerdote.'
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified

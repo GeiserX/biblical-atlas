@@ -32,11 +32,12 @@ history:
 - date: '2026-10-12'
   change: La razón añade los versículos de 1 Crónicas 2 que dan sus padres y sus hijos.
   source: 1-cronicas-2
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified
 distinct_from:
 - hur-rey-de-madian
 - hur-padre-del-comisario-de-efrain
+- hur-padre-de-refaya
 relations:
 - type: kin
   person: caleb-hijo-de-hezron

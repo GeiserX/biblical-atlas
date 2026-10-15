@@ -1,0 +1,47 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: barzilai-sacerdote
+name: Barzilái
+names:
+- name: Barzilái
+perspicacia: 1200000572#3
+summary: Sacerdote casado con una hija de Barzilái el galaadita, cuyo nombre tomó. Sus descendientes no hallaron su registro
+  genealógico y fueron apartados del sacerdocio.
+reason: Perspicacia «Barzilai», núm. 3; Esd 2:61, 62.
+sources:
+- it-barzilai
+- esdras-2
+- nehemias-7
+links:
+- title: 'Perspicacia: «Barzilai»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Barzilai/
+  type: perspicacia
+relations:
+- type: holds_office
+  office: priest
+  inferred: false
+  sources:
+  - esdras-2
+  - it-barzilai
+  - nehemias-7
+  reason: 'Esd 2:61: sus descendientes se cuentan entre los sacerdotes.'
+  checked_on: '2026-10-14'
+  status: verified
+- type: kin
+  person: barzilai-el-galaadita
+  word: father_in_law
+  inferred: false
+  sources:
+  - esdras-2
+  - it-barzilai
+  - nehemias-7
+  reason: 'Esd 2:61: tomó por esposa a una hija de Barzilái el galaadita y llevó desde entonces el nombre de esa casa. Perspicacia
+    ve muy probable que sea el de David.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- barzilai-el-galaadita
+- barzilai-meholatita
+disambiguation: 'Barzilai núm. 3 de Perspicacia: el sacerdote yerno de Barzilái el galaadita (Esd 2:61), no el galaadita ni
+  el meholatita.'

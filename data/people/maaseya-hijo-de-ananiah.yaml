@@ -1,0 +1,50 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: maaseya-hijo-de-ananiah
+name: Maaseya
+names:
+- name: Maaseya
+perspicacia: 1200002811#13
+disambiguation: El padre de Azarías e hijo de Ananíah (Ne 3:23), núm. 13 de Perspicacia «Maaseya»; no los otros Maaseya que
+  numera.
+distinct_from:
+- maaseya-de-la-casa-de-jesua
+- maaseya-descendiente-de-harim
+- maaseya-descendiente-de-pahat-moab
+- maaseya-descendiente-de-pasjur
+- maaseya-funcionario
+- maaseya-hijo-de-adaya
+- maaseya-hijo-de-salum
+- maaseya-hijo-del-rey
+- maaseya-jefe-de-jerusalen
+- maaseya-musico
+- maaseya-padre-de-sedequias
+- maaseya-padre-de-sofonias
+- maaseya-junto-a-esdras
+- maaseya-levita-que-explico-la-ley
+- maaseya-cabeza-del-pueblo
+- maaseya-hijo-de-baruc
+- maaseya-hijo-de-itiel
+- maaseya-sacerdote-de-la-inauguracion
+- maaseya-trompetista-de-la-inauguracion
+summary: Hijo de Ananíah y padre, o antepasado, del Azarías que reparó la muralla de Jerusalén junto a su casa.
+reason: Perspicacia «Maaseya», núm. 13; Ne 3:23.
+sources:
+- it-maaseya
+- nehemias-3
+links:
+- title: 'Perspicacia: «Maaseya»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Maaseya/
+  type: perspicacia
+relations:
+- type: kin
+  person: ananiah
+  word: father
+  inferred: false
+  sources:
+  - nehemias-3
+  - it-maaseya
+  reason: 'Ne 3:23: Maaseya hijo de Ananíah.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified

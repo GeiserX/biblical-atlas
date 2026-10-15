@@ -18,6 +18,8 @@ sources:
 - it-diotrefes
 - it-juan-cartas
 - 3-juan-1
+- si-3-juan
+- w08-cartas-de-juan-y-judas
 links:
 - title: 'Perspicacia: «Diótrefes»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Di%C3%B3trefes/
@@ -25,5 +27,6 @@ links:
 - title: 3 Juan 1 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/3-juan/1/
   type: bible
-checked_on: '2026-09-28'
+perspicacia: '1200001185'
+checked_on: '2026-10-14'
 status: verified

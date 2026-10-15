@@ -3,6 +3,8 @@ id: azarias-sacerdote-repatriado
 name: Azarías
 names:
 - name: Azarías
+- name: Seraya
+  note: Nombre que le da la lista paralela de Ne 11:11, según Perspicacia «Azarías», núm. 23.
 perspicacia: 1200000486#23
 summary: Sacerdote que vivió en Jerusalén después del destierro, descendiente del sumo sacerdote Hilquías. La lista de Nehemías
   lo llama Seraya.
@@ -10,6 +12,7 @@ reason: Perspicacia «Azarías», núm. 23; 1Cr 9:11.
 sources:
 - it-azarias
 - 1-cronicas-9
+- nehemias-11
 links:
 - title: 'Perspicacia: «Azarías»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Azar%C3%ADas/
@@ -29,8 +32,9 @@ relations:
   sources:
   - 1-cronicas-9
   - it-azarias
+  - nehemias-11
   reason: '1Cr 9:2, 3, 10, 11: de los sacerdotes que vivían en Jerusalén.'
-  checked_on: '2026-10-12'
+  checked_on: '2026-10-14'
   status: verified
 - type: kin
   person: hilquias-hijo-de-salum
@@ -40,11 +44,34 @@ relations:
   - 1-cronicas-9
   - it-azarias
   - it-mesulam
+  - nehemias-11
   reason: '1Cr 9:11 lo llama hijo de Hilquías. Perspicacia lo separa del hijo de ese sumo sacerdote (núm. 19) y lo pone tras
     el destierro: lo tomamos por descendiente.'
-  checked_on: '2026-10-12'
+  checked_on: '2026-10-14'
   status: verified
-checked_on: '2026-10-13'
+- type: same_as
+  person: seraya-repatriado
+  certainty: possible
+  inferred: true
+  sources:
+  - it-azarias
+  - esdras-2
+  reason: Perspicacia «Azarías», núm. 23, ve posible que sea el núm. 22, el que Esd 2:2 llama Seraya.
+  checked_on: '2026-10-13'
+  status: verified
+- type: same_as
+  person: seraya-sacerdote-repatriado
+  certainty: possible
+  inferred: true
+  sources:
+  - nehemias-11
+  - it-seraya
+  - it-azarias
+  reason: 'Perspicacia «Seraya», núm. 9: el Seraya de Ne 11:11 era de la casa de ese sacerdote o un homónimo; «Azarías», núm.
+    23, lo iguala con este Azarías.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
 status: verified
 distinct_from:
 - abednego
@@ -68,5 +95,17 @@ distinct_from:
 - azarias-hijo-de-obed
 - azarias-quinto-hijo-de-jehosafat
 - azarias-segundo-hijo-de-jehosafat
+- azarias-hijo-de-merayot
+- azarias-hijo-de-maaseya
+- azarias-levita-que-explico-la-ley
+- azarias-sacerdote-firmante
+- seraya-secretario-de-david
+- seraya-hijo-de-nerias
+- seraya-hijo-de-asiel
+- seraya-hijo-de-quenaz
+- seraya-hijo-de-azarias
+- seraya-hijo-de-azriel
+- seraya-hijo-de-tanhumet
+- azarias-de-la-procesion-del-muro
 disambiguation: 'Azarías núm. 23 de Perspicacia: sacerdote de Jerusalén tras el destierro, llamado Seraya en Nehemías. No
   el rey Uzías, Abednego ni los demás Azarías.'

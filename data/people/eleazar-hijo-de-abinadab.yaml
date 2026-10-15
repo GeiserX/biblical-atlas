@@ -11,6 +11,9 @@ distinct_from:
 - eleazar-hijo-de-eliud
 - eleazar-hijo-de-dodo
 - eleazar-hijo-de-mahli
+- eleazar-hijo-de-finehas
+- eleazar-descendiente-de-paros
+- eleazar-sacerdote-de-la-inauguracion
 summary: Hijo de Abinadab. Los de Quiryat-Jearim lo santificaron para que cuidara el Arca en la casa de su padre, cuando los
   filisteos ya la habían devuelto.
 reason: Perspicacia «Eleazar», núm. 2; 1Sa 7:1.
@@ -52,5 +55,5 @@ relations:
   reason: 'Perspicacia «Abinadab», núm. 1: Uzá, muerto en 2Sa 6:7, era otro de los hijos de Abinadab.'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-14'
 status: verified

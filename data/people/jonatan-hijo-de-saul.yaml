@@ -15,6 +15,11 @@ distinct_from:
 - jonatan-hijo-de-jada
 - jonatan-hijo-de-uzias
 - jonatan-sobrino-de-david
+- jonatan-padre-de-ebed
+- jonatan-hijo-de-asahel
+- johanan-hijo-de-joiada
+- jonatan-de-la-casa-de-maluki
+- jonatan-hijo-de-semaya
 summary: Hijo mayor del rey Saúl, guerrero valiente y amigo leal de David. Venció a los filisteos en Gueba y en Micmash, pactó
   con David y lo defendió ante su padre. Murió con Saúl en el monte Guilboa en 1078 a.e.c.
 reason: Perspicacia «Jonatán», núm. 2; 1Sa 13:3; 14:13-15; 18:1-4; 20:30-34; 31:2.
@@ -120,5 +125,5 @@ relations:
     2).'
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-14'
 status: verified

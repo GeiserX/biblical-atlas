@@ -10,6 +10,8 @@ reason: Perspicacia «Salum», núm. 4; 1Cr 9:17-19, 31.
 sources:
 - it-salum
 - 1-cronicas-9
+- esdras-2
+- nehemias-7
 links:
 - title: 'Perspicacia: «Salum»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Salum/
@@ -42,7 +44,7 @@ relations:
   reason: 'Perspicacia «Salum», núm. 4: figura en las listas de quienes regresaron y residían en Jerusalén (1Cr 9:17).'
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified
 distinct_from:
 - jehoacaz-de-juda
@@ -55,5 +57,8 @@ distinct_from:
 - salum-padre-de-maaseya
 - salum-tio-de-jeremias
 - salum-padre-de-jehizquias
+- salum-descendiente-de-binui
+- salum-portero-de-tiempos-de-esdras
+- salum-hijo-de-halohes
 disambiguation: 'Salum núm. 4 de Perspicacia: jefe coreíta de los porteros. No el antepasado sacerdotal de Hilquías, el rey
   de Israel ni el esposo de Huldá.'

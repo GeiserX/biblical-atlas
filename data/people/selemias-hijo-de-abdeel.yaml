@@ -11,6 +11,10 @@ distinct_from:
 - selemias-padre-de-jehucal
 - selemias-hijo-de-hananias
 - selemias-portero
+- selemias-descendiente-de-binui-1
+- selemias-descendiente-de-binui-2
+- selemias-padre-de-hananias
+- selemias-encargado-de-los-almacenes
 summary: Hijo de Abdeel. Jehoiaquim lo mandó, con Jerahmeel y Seraya, a detener a Jeremías y a su secretario Baruc, pero Jehová
   los tenía escondidos.
 reason: Perspicacia «Selemías», núm. 5; Jer 36:26.
@@ -47,5 +51,5 @@ relations:
     Jehoiaquim.'
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-14'
 status: verified

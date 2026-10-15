@@ -27,6 +27,16 @@ distinct_from:
 - zacarias-sacerdote-de-josias
 - zacarias-trompetista
 - zeker
+- zacarias-descendiente-de-paros
+- zacarias-enviado-a-casifia
+- zacarias-hijo-de-bebai
+- zacarias-descendiente-de-elam
+- zacarias-junto-a-esdras
+- zacarias-hijo-de-amarias
+- zacarias-hijo-de-pasjur
+- zacarias-hijo-del-selanita
+- zacarias-hijo-de-jonatan
+- zacarias-trompetista-de-la-inauguracion
 summary: Hijo del rey Jehosafat de Judá. Su padre lo colmó de plata, oro y plazas fuertes; al subir al trono, su hermano Jehoram
   lo mató con los demás hermanos.
 reason: Perspicacia «Zacarías», núm. 11; 2Cr 21:1-4.
@@ -75,5 +85,5 @@ relations:
   reason: '2Cr 21:2: los dos están entre los hijos de Jehosafat, hermanos de Jehoram.'
   checked_on: '2026-10-13'
   status: verified
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified

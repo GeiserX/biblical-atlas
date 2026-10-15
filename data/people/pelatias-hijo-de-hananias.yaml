@@ -29,5 +29,6 @@ relations:
 distinct_from:
 - pelatias-hijo-de-isi
 - pelatias-hijo-de-benaya
-checked_on: '2026-10-13'
+- pelatias-cabeza-del-pueblo
+checked_on: '2026-10-14'
 status: verified

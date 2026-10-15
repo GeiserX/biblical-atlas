@@ -22,6 +22,10 @@ distinct_from:
 - jehiel-hijo-de-jehosafat
 - jehiel-musico
 - jehiel-sacerdote-de-josias
+- jehiel-padre-de-abdias
+- jehiel-descendiente-de-elam
+- jehiel-descendiente-de-harim
+- jehiel-padre-de-secanias
 relations:
 - type: kin
   person: heman-hijo-de-joel

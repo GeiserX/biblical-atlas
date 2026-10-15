@@ -1,0 +1,38 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: binui-levita
+name: Binuí
+names:
+- name: Binuí
+perspicacia: 1200000744#2
+summary: Levita que volvió con Zorobabel en 537 a.e.c. Al parecer, su hijo Noadías se ocupó de los utensilios que Esdras llevó
+  al templo en 468.
+reason: Perspicacia «Binuí», núm. 2; Ne 12:8; Esd 8:33.
+sources:
+- it-binui
+- esdras-8
+- nehemias-10
+- nehemias-12
+links:
+- title: 'Perspicacia: «Binuí»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Binu%C3%AD/
+  type: perspicacia
+disambiguation: El levita que volvió con Zorobabel, al parecer padre de Noadías; no el Binuí de los hijos de Pahat-Moab ni
+  el antepasado de la familia de Binuí de los días de Esdras.
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- bani-cabeza-de-familia
+- binui-cabeza-de-familia
+- binui-descendiente-de-pahat-moab
+- binui-hijo-de-henadad
+relations:
+- type: same_as
+  person: binui-levita-firmante
+  certainty: possible
+  inferred: true
+  sources:
+  - nehemias-10
+  - it-binui
+  reason: 'Perspicacia «Binuí», núm. 6: si su descendiente firmó Ne 10:9, quizá sea el núm. 2, el levita que volvió con Zorobabel.'
+  checked_on: '2026-10-14'
+  status: verified

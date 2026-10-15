@@ -24,6 +24,8 @@ passages:
 - 1Pe 3:20
 - Gé 7:1-5
 - Gé 8:1-14
+- 2Pe 2:5
+- 2Pe 3:6
 summary: Las aguas cubren la Tierra en el año 600 de la vida de Noé. Sobreviven en el arca Noé y su familia, ocho personas,
   con los animales.
 reason: El estudio 3 pone en el otoño de 2370 a.e.c. la caída de las aguas; Perspicacia «Diluvio» da el mismo año y el
@@ -33,6 +35,10 @@ sources:
 - it-diluvio
 - genesis-7
 - genesis-8
+- 2-pedro-2
+- it-noe
+- 2-pedro-3
+- 1-pedro-3
 links:
 - title: 'Perspicacia: «Diluvio»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Diluvio/
@@ -44,5 +50,5 @@ history:
   change: 'El suceso ya no sitúa a la familia de Noé en Ararat en 2370: el arca se posó allí unos cinco meses después (Gé
     8:4). Esa llegada es noe-sale-del-arca.'
   source: genesis-8
-checked_on: '2026-09-29'
+checked_on: '2026-10-14'
 status: verified

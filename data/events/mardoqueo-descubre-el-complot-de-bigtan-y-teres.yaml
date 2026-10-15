@@ -1,0 +1,46 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: mardoqueo-descubre-el-complot-de-bigtan-y-teres
+title: Mardoqueo descubre el complot de Bigtán y Teres
+date:
+  from: -488
+  to: -484
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre c. 489 y c. 485 a.e.c. (tiempo narrativo: poco después de la coronación de Ester y antes del ascenso de Hamán)'
+narrative_order:
+  series: ester
+  order: 2019
+places:
+- susa
+people:
+- mardoqueo
+- ester
+- jerjes-i
+- bigtan
+- teres
+roles:
+  bigtan: died
+  teres: died
+passages:
+- Est 2:19-23
+summary: Desde la puerta del palacio, Mardoqueo se entera de que dos porteros, Bigtán y Teres, planean matar a Asuero. Avisa
+  a Ester, que lo cuenta al rey en su nombre; los cuelgan y el hecho se anota en los registros.
+reason: 'Est 2:19-23; Perspicacia «Mardoqueo», núm. 2, y «Teres». «Toda Escritura», libro 17, párr. 8 y 9: poco después de
+  la coronación (c. 489) y antes de los cuatro años que preceden al ascenso de Hamán.'
+sources:
+- ester-2
+- it-mardoqueo
+- it-bigtan
+- it-teres
+- si-ester
+- it-asuero
+- it-vasti
+- it-purim
+links:
+- title: 'Perspicacia: «Mardoqueo»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Mardoqueo/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified

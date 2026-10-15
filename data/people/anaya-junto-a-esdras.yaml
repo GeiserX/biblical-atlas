@@ -1,0 +1,22 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: anaya-junto-a-esdras
+name: Anaya
+names:
+- name: Anaya
+perspicacia: 1200000259#1
+disambiguation: El Anaya que acompañó a Esdras en la lectura de la Ley (Ne 8:4); no el cabeza del pueblo que dio nombre a
+  una familia en días de Nehemías.
+summary: Uno de los seis que se colocaron a la derecha de Esdras el día 1 del mes séptimo, mientras se leía la Ley. Perspicacia
+  no sabe si era sacerdote o príncipe.
+reason: Perspicacia «Anaya», núm. 1; Ne 8:4.
+sources:
+- it-anaya
+- nehemias-8
+links:
+- title: 'Perspicacia: «Anaya»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Anaya/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- anaya-cabeza-del-pueblo

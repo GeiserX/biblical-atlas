@@ -1,0 +1,21 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ater-portero
+name: Ater
+names:
+- name: Ater
+perspicacia: 1200000454#2
+summary: Cabeza de una familia de levitas porteros cuyos hijos volvieron de Babilonia con Zorobabel.
+reason: Perspicacia «Ater», núm. 2; Esd 2:42.
+sources:
+- it-ater
+- esdras-2
+- nehemias-7
+links:
+- title: 'Perspicacia: «Ater»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ater/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- ater-cabeza-de-familia
+disambiguation: 'Ater núm. 2 de Perspicacia: el portero levita de Esd 2:42, no el de la familia de Ezequías.'

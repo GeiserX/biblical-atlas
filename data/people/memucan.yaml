@@ -1,0 +1,18 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: memucan
+name: Memucán
+names:
+- name: Memucán
+perspicacia: '1200002977'
+summary: Príncipe de Persia y Media, portavoz de los siete consejeros de Asuero. Sostuvo que la falta de Vasti dañaba a todo
+  el imperio y propuso apartarla, para que las esposas respetaran a sus maridos.
+reason: Perspicacia «Memucán»; Est 1:13-22.
+sources:
+- it-memucan
+- ester-1
+links:
+- title: 'Perspicacia: «Memucán»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Memuc%C3%A1n/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified

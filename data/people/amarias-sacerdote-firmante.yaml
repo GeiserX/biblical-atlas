@@ -1,0 +1,38 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: amarias-sacerdote-firmante
+name: Amarías
+names:
+- name: Amarías
+perspicacia: 1200000219#9
+summary: 'Sacerdote de tiempos de Nehemías, o un antepasado suyo, nombrado entre los que sellaron la promesa de 455 a.e.c.
+  No puede ser el Amarías que volvió en 537: tendría más de 112 años.'
+reason: Perspicacia «Amarías», núm. 9; Ne 10:3.
+sources:
+- it-amarias
+- nehemias-10
+links:
+- title: 'Perspicacia: «Amarías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Amar%C3%ADas/
+  type: perspicacia
+relations:
+- type: holds_office
+  office: priest
+  inferred: false
+  sources:
+  - nehemias-10
+  reason: 'Ne 10:8 cierra la lista: «esos son los sacerdotes».'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- amarias-ayudante-de-core
+- amarias-descendiente-de-binui
+- amarias-hebronita
+- amarias-hijo-de-azarias
+- amarias-hijo-de-ezequias
+- amarias-hijo-de-merayot
+- amarias-hijo-de-sefatias
+- amarias-sacerdote-de-zorobabel
+- amarias-sacerdote-principal
+disambiguation: Amarías, sacerdote que, él o un descendiente, selló la promesa de Ne 10 (Perspicacia «Amarías», núm. 9).

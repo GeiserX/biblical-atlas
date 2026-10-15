@@ -1,0 +1,31 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: zeres
+name: Zeres
+names:
+- name: Zeres
+perspicacia: '1200004710'
+summary: Esposa de Hamán. Con los amigos de él le aconsejó levantar un madero de 50 codos para colgar a Mardoqueo; luego le
+  advirtió que acabaría cayendo ante él.
+reason: Perspicacia «Zeres»; Est 5:10, 14.
+sources:
+- it-zeres
+- ester-5
+- ester-6
+links:
+- title: 'Perspicacia: «Zeres»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zeres/
+  type: perspicacia
+relations:
+- type: lived_in
+  place: susa
+  inferred: true
+  sources:
+  - ester-5
+  - ester-6
+  - it-susa
+  reason: 'Est 5:10; 6:13, 14: vivía en la casa de Hamán, de donde los funcionarios del rey lo llevan al banquete de palacio.
+    Perspicacia «Susa» hace de Susa el marco del libro.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified

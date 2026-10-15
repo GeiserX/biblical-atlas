@@ -1,0 +1,49 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jeremias-sacerdote-de-zorobabel
+name: Jeremías
+names:
+- name: Jeremías
+perspicacia: 1200002421#8
+summary: Jefe sacerdotal del regreso de 537 a.e.c., encabezado por Zorobabel y Jesúa. Perspicacia deja abierto si el nombre
+  es el de un hombre o el de una casa de sacerdotes.
+reason: Perspicacia «Jeremías», núm. 8; Ne 12:1.
+sources:
+- it-jeremias
+- nehemias-12
+links:
+- title: 'Perspicacia: «Jeremías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jerem%C3%ADas/
+  type: perspicacia
+relations:
+- type: holds_office
+  office: priest
+  inferred: false
+  sources:
+  - nehemias-12
+  reason: 'Ne 12:1, 7: va entre los jefes de los sacerdotes que subieron con Zorobabel y Jesúa.'
+  checked_on: '2026-10-14'
+  status: verified
+- type: same_as
+  person: jeremias-sacerdote-firmante
+  certainty: possible
+  inferred: true
+  sources:
+  - nehemias-12
+  - nehemias-10
+  - it-jeremias
+  reason: 'Perspicacia «Jeremías», núm. 9: si el nombre es el de una casa, el firmante de Ne 10:2 puede ser el sacerdote de
+    Ne 12:1.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- jeremias-de-libna
+- jeremias-de-manases
+- jeremias-decimo-gadita
+- jeremias-el-benjaminita
+- jeremias-hijo-de-habazinias
+- jeremias-profeta
+- jeremias-quinto-gadita
+disambiguation: 'Jeremías núm. 8 de Perspicacia: el sacerdote del regreso con Zorobabel (Ne 12:1); no los demás Jeremías que
+  registra Perspicacia «Jeremías».'

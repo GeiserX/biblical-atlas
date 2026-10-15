@@ -1,0 +1,19 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: bazlut
+name: Bazlut
+names:
+- name: Bazlut
+- name: Bazlit
+perspicacia: '1200000584'
+summary: Sus descendientes, siervos del templo o netineos, se cuentan entre los que volvieron de Babilonia en 537 a.e.c.
+reason: Perspicacia «Bazlut, Bazlit»; Esd 2:52.
+sources:
+- it-bazlut-bazlit
+- esdras-2
+- nehemias-7
+links:
+- title: 'Perspicacia: «Bazlut, Bazlit»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Bazlut-Bazlit/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified

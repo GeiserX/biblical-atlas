@@ -1,0 +1,46 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: ester-se-presenta-ante-el-rey
+title: Ester se presenta ante el rey y lo invita a un banquete con Hamán
+date:
+  from: -483
+  to: -483
+  precision: season
+  approx: true
+  type: derived
+  chronology: tnm
+  text: primavera de 484 a.e.c. (cálculo nuestro)
+  detail:
+    season: spring
+  note: 'Días después del 13 de nisán del año duodécimo (Est 3:12; 4:16; 5:1), que Perspicacia «Purim» sitúa al parecer en
+    la primavera de 484. Ninguna fuente fecha esta escena: es cuenta nuestra.'
+narrative_order:
+  series: ester
+  order: 5001
+places:
+- susa
+people:
+- ester
+- jerjes-i
+- haman
+present:
+- ester
+- jerjes-i
+- haman
+passages:
+- Est 5:1-8
+summary: Tras tres días de ayuno, Ester entra sin ser llamada al patio interior y el rey le tiende el cetro de oro. Lo invita
+  con Hamán a un banquete y allí les pide volver al día siguiente.
+reason: 'Est 5:1-8; Perspicacia «Purim» y «Hamán»: tras tres días de ayuno, Ester invita al rey a dos banquetes. «Ester, Libro
+  de» describe el patio y la sala del trono de Susa.'
+sources:
+- ester-5
+- it-purim
+- it-haman
+- it-ester-libro
+- it-ester
+links:
+- title: 'Perspicacia: «Ester, Libro de»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ester-Libro-de/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: pending

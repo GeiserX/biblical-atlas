@@ -11,6 +11,7 @@ sources:
 - it-asaya
 - it-silonita
 - 1-cronicas-9
+- nehemias-11
 links:
 - title: 'Perspicacia: «Asaya»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Asaya/
@@ -36,7 +37,18 @@ relations:
   reason: '1Cr 9:3, 5: de los de Judá que se establecieron en Jerusalén.'
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+- type: same_as
+  person: maaseya-hijo-de-baruc
+  certainty: possible
+  inferred: true
+  sources:
+  - nehemias-11
+  - it-maaseya
+  - it-asaya
+  reason: 'Perspicacia «Maaseya», núm. 17, y «Asaya», núm. 4: quizá el Maaseya de Ne 11:5 es el primogénito de los silonitas.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
 status: verified
 distinct_from:
 - asaya-hijo-de-haguias

@@ -1,0 +1,38 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: baana-cabeza-del-pueblo
+name: Baaná
+names:
+- name: Baaná
+- name: Baanah
+  note: Grafía del título de Perspicacia.
+perspicacia: 1200000525#4
+summary: El último de los jefes del pueblo de la lista; él o un descendiente selló la promesa de 455 a.e.c. Perspicacia ve
+  posible que sea el Baaná que volvió con Zorobabel.
+reason: Perspicacia «Baanah», núm. 4; Ne 10:27.
+sources:
+- it-baanah
+- nehemias-10
+links:
+- title: 'Perspicacia: «Baanah»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Baanah/
+  type: perspicacia
+relations:
+- type: same_as
+  person: baana-repatriado
+  certainty: possible
+  inferred: true
+  sources:
+  - nehemias-10
+  - it-baanah
+  reason: 'Perspicacia «Baanah», núm. 4: el jefe de Ne 10:27 puede ser el núm. 3, el que volvió con Zorobabel.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- baana-el-netofatita
+- baana-hijo-de-ahilud
+- baana-hijo-de-husai
+- baana-hijo-de-rimon
+- baana-padre-de-sadoc
+disambiguation: Baaná, último de los jefes del pueblo de Ne 10 (v. 27) (Perspicacia «Baanah», núm. 4).

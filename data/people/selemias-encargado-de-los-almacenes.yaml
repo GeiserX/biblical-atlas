@@ -1,0 +1,38 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: selemias-encargado-de-los-almacenes
+name: Selemías
+names:
+- name: Selemías
+perspicacia: 1200003990#9
+summary: Sacerdote que, en la segunda estancia de Nehemías en Jerusalén, quedó encargado de los almacenes y de repartir el
+  diezmo.
+reason: Perspicacia «Selemías», núm. 9; Ne 13:6, 7, 12, 13.
+sources:
+- it-selemias
+- nehemias-13
+links:
+- title: 'Perspicacia: «Selemías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Selem%C3%ADas/
+  type: perspicacia
+relations:
+- type: holds_office
+  office: priest
+  inferred: false
+  sources:
+  - nehemias-13
+  reason: 'Ne 13:13: el sacerdote Selemías.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- selemias-descendiente-de-binui-1
+- selemias-descendiente-de-binui-2
+- selemias-hijo-de-abdeel
+- selemias-hijo-de-cusi
+- selemias-hijo-de-hananias
+- selemias-padre-de-hananias
+- selemias-padre-de-jehucal
+- selemias-portero
+disambiguation: 'Selemías núm. 9 de Perspicacia: el sacerdote de los almacenes (Ne 13:13); no los demás Selemías que registra
+  Perspicacia «Selemías».'

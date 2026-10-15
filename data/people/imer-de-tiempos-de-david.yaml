@@ -9,6 +9,9 @@ reason: Perspicacia «Imer», núm. 1; 1Cr 24:14.
 sources:
 - it-imer
 - 1-cronicas-24
+- esdras-2
+- esdras-10
+- nehemias-7
 links:
 - title: 'Perspicacia: «Imer»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Imer/
@@ -44,7 +47,18 @@ relations:
     1Cr 24:14.
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+- type: same_as
+  person: imer-padre-de-sadoc
+  certainty: possible
+  inferred: true
+  sources:
+  - nehemias-3
+  - it-imer
+  reason: 'Perspicacia «Imer», núm. 4: si «hijo de Imer» en Ne 3:29 indica un descendiente, podría ser el núm. 1, cabeza del
+    turno sacerdotal.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
 status: verified
 distinct_from:
 - imer-padre-de-pasjur

@@ -1,0 +1,44 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: haman-levanta-un-madero-para-mardoqueo
+title: Hamán hace levantar un madero para colgar a Mardoqueo
+date:
+  from: -483
+  to: -483
+  precision: season
+  approx: true
+  type: derived
+  chronology: tnm
+  text: primavera de 484 a.e.c. (cálculo nuestro)
+  detail:
+    season: spring
+  note: 'Días después del 13 de nisán del año duodécimo (Est 3:12; 4:16; 5:1), que Perspicacia «Purim» sitúa al parecer en
+    la primavera de 484. Ninguna fuente fecha esta escena: es cuenta nuestra.'
+narrative_order:
+  series: ester
+  order: 5009
+places:
+- susa
+people:
+- haman
+- zeres
+- mardoqueo
+present:
+- haman
+- zeres
+- mardoqueo
+passages:
+- Est 5:9-14
+summary: Al salir del banquete, Hamán ve que Mardoqueo no se levanta ante él. En casa presume ante Zeres y sus amigos de riquezas,
+  hijos y honores; por consejo de ellos hace levantar un madero de 50 codos.
+reason: Est 5:9-14; Perspicacia «Zeres» y «Hamán». El mismo día del primer banquete de Ester.
+sources:
+- ester-5
+- it-zeres
+- it-haman
+- it-purim
+links:
+- title: 'Perspicacia: «Zeres»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zeres/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: pending

@@ -37,6 +37,7 @@ sources:
 - si-3
 - tnm-tabla
 - salmos-106
+- judas-1
 links:
 - title: Números 16 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/N%C3%BAmeros/16/
@@ -44,5 +45,5 @@ links:
 - title: 'Perspicacia: «Coré»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Cor%C3%A9/
   type: perspicacia
-checked_on: '2026-10-03'
+checked_on: '2026-10-14'
 status: verified

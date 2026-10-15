@@ -17,5 +17,8 @@ links:
 - title: 2 Crónicas 28 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-Cr%C3%B3nicas/28/
   type: bible
-checked_on: '2026-10-13'
+disambiguation: 'Mesilemot núm. 1 de Perspicacia «Mesilemot»: efraimita, padre de Berekías (2Cr 28:12).'
+checked_on: '2026-10-14'
 status: verified
+distinct_from:
+- mesilemot-hijo-de-imer

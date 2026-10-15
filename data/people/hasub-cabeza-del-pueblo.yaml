@@ -1,0 +1,22 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hasub-cabeza-del-pueblo
+name: Hasub
+names:
+- name: Hasub
+perspicacia: 1200001910#3
+summary: Uno de los jefes del pueblo, o su descendiente, entre los que sellaron la promesa de 455 a.e.c.
+reason: Perspicacia «Hasub», núm. 3; Ne 10:23.
+sources:
+- it-hasub
+- nehemias-10
+links:
+- title: 'Perspicacia: «Hasub»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hasub/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- hasub-companero-de-benjamin
+- hasub-hijo-de-azricam
+- hasub-hijo-de-pahat-moab
+disambiguation: Hasub, cabeza del pueblo en la lista de Ne 10:23 (Perspicacia «Hasub», núm. 3).

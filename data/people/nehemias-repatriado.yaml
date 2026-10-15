@@ -1,0 +1,34 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: nehemias-repatriado
+name: Nehemías
+names:
+- name: Nehemías
+perspicacia: 1200003212#1
+summary: Uno de los hombres que, al lado de Zorobabel, guiaron la vuelta del destierro en 537 a.e.c. Perspicacia lo da como
+  posible jefe de los que volvieron.
+reason: Perspicacia «Nehemías», núm. 1; Esd 2:1, 2.
+sources:
+- it-nehemias
+- esdras-2
+- nehemias-7
+links:
+- title: 'Perspicacia: «Nehemías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Nehem%C3%ADas/
+  type: perspicacia
+relations:
+- type: lived_in
+  place: juda
+  inferred: false
+  sources:
+  - esdras-2
+  - nehemias-7
+  reason: 'Esd 2:1, 2: volvió con Zorobabel a Jerusalén y Judá, donde cada familia fue a su ciudad.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- nehemias
+- nehemias-hijo-de-azbuc
+disambiguation: 'Nehemías núm. 1 de Perspicacia: uno de los que volvieron con Zorobabel en 537 (Esd 2:2), no el gobernador
+  que escribió el libro.'

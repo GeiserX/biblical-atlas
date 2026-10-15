@@ -12,6 +12,10 @@ distinct_from:
 - amarias-hijo-de-ezequias
 - amarias-hijo-de-merayot
 - amarias-ayudante-de-core
+- amarias-descendiente-de-binui
+- amarias-sacerdote-firmante
+- amarias-hijo-de-sefatias
+- amarias-sacerdote-de-zorobabel
 summary: Sacerdote principal en tiempos de Jehosafat. El rey lo puso al frente de los jueces de Jerusalén en todo lo relacionado
   con Jehová, también en los pleitos.
 reason: Perspicacia «Amarías», núm. 3; 2Cr 19:8-11.
@@ -36,5 +40,5 @@ relations:
   inferred: false
   checked_on: '2026-10-13'
   status: verified
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified

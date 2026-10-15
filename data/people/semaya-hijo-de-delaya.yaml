@@ -1,0 +1,98 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: semaya-hijo-de-delaya
+name: Semaya
+names:
+- name: Semaya
+perspicacia: 1200004000#21
+summary: Falso profeta al que Tobías y Sanbalat pagaron para que asustara a Nehemías con un aviso de muerte y lo llevara a
+  esconderse en el templo, cosa que la Ley no le permitía.
+reason: Perspicacia «Semaya», núm. 21; Ne 6:10-13.
+sources:
+- it-semaya
+- nehemias-6
+links:
+- title: 'Perspicacia: «Semaya»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Semaya/
+  type: perspicacia
+relations:
+- type: kin
+  person: delaya-hijo-de-mehetabel
+  word: father
+  inferred: false
+  sources:
+  - nehemias-6
+  - it-semaya
+  reason: 'Ne 6:10: Semaya hijo de Delayá.'
+  checked_on: '2026-10-14'
+  status: verified
+- type: tie
+  person: tobias-el-ammonita
+  caption: pagado por él
+  inverse_caption: le pagó
+  date:
+    from: -454
+    to: -454
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 455 a.e.c.
+  inferred: false
+  sources:
+  - nehemias-6
+  - it-semaya
+  reason: 'Ne 6:12, 13: habló contra Nehemías porque Tobías y Sanbalat lo contrataron para asustarlo y hacerlo pecar; Perspicacia
+    «Semaya», núm. 21.'
+  checked_on: '2026-10-14'
+  status: verified
+- type: tie
+  person: sanbalat
+  caption: pagado por él
+  inverse_caption: le pagó
+  date:
+    from: -454
+    to: -454
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 455 a.e.c.
+  inferred: false
+  sources:
+  - nehemias-6
+  - it-semaya
+  reason: 'Ne 6:12, 13: habló contra Nehemías porque Tobías y Sanbalat lo contrataron para asustarlo y hacerlo pecar; Perspicacia
+    «Semaya», núm. 21.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- semaya-ayudante-de-core
+- semaya-de-nehelam
+- semaya-descendiente-de-adonicam
+- semaya-descendiente-de-harim
+- semaya-enviado-a-casifia
+- semaya-hijo-de-galal
+- semaya-hijo-de-hasub
+- semaya-hijo-de-joel
+- semaya-hijo-de-netanel
+- semaya-hijo-de-obed-edom
+- semaya-hijo-de-secanias
+- semaya-jefe-de-la-casa-de-elizafan
+- semaya-levita-de-ezequias
+- semaya-levita-de-jehosafat
+- semaya-levita-de-josias
+- semaya-padre-de-delaya
+- semaya-padre-de-uriya
+- semaya-profeta
+- semaya-sacerdote-descendiente-de-harim
+- semaya-simeonita
+- semaya-guarda-de-la-puerta-oriental
+- semaya-sacerdote-repatriado
+- semaya-de-la-procesion-del-muro
+- semaya-hijo-de-matanias
+- semaya-musico-de-la-procesion
+- semaya-sacerdote-de-la-inauguracion
+disambiguation: 'Semaya núm. 21 de Perspicacia: el falso profeta pagado para asustar a Nehemías (Ne 6:10-13), no los demás
+  Semaya.'

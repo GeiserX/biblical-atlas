@@ -1,0 +1,34 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hodias-levita-firmante
+name: Hodías
+names:
+- name: Hodías
+perspicacia: 1200002051#3
+summary: El primero de los dos levitas llamados Hodías que sellaron la promesa de 455 a.e.c., o un descendiente suyo. Uno
+  de los dos es probablemente el levita de Ne 8:7.
+reason: Perspicacia «Hodías», núm. 3; Ne 10:10.
+sources:
+- it-hodias
+- nehemias-10
+links:
+- title: 'Perspicacia: «Hodías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hod%C3%ADas/
+  type: perspicacia
+relations:
+- type: same_as
+  person: hodias-levita-que-explico-la-ley
+  certainty: possible
+  inferred: true
+  sources:
+  - nehemias-10
+  - it-hodias
+  reason: 'Perspicacia «Hodías», núm. 2 a 4: probablemente uno de los dos levitas Hodías de Ne 10:10, 13 es el núm. 2.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- hodias-cabeza-del-pueblo
+- hodias-cunado-de-naham
+- hodias-segundo-levita-firmante
+disambiguation: Hodías, primero de los dos levitas Hodías de la lista de Ne 10 (v. 10) (Perspicacia «Hodías», núm. 3).

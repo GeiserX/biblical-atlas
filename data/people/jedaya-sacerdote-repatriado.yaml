@@ -10,6 +10,7 @@ reason: Perspicacia «Jedayá», núm. 4; 1Cr 9:10.
 sources:
 - it-jedaya
 - 1-cronicas-9
+- nehemias-11
 links:
 - title: 'Perspicacia: «Jedayá»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jeday%C3%A1/
@@ -29,14 +30,19 @@ relations:
   sources:
   - 1-cronicas-9
   - it-jedaya
+  - nehemias-11
   reason: '1Cr 9:2, 3, 10: de los sacerdotes que volvieron y vivían en Jerusalén.'
-  checked_on: '2026-10-12'
+  checked_on: '2026-10-14'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-14'
 status: verified
 distinct_from:
 - jedaya-de-la-corona
 - jedaya-de-tiempos-de-david
 - jedaya-hijo-de-simri
+- jedaya-antepasado-de-sacerdotes
+- jedaya-hijo-de-harumaf
+- jedaya-antepasado-de-netanel
+- jedaya-antepasado-de-uzi
 disambiguation: 'Jedayá núm. 4 de Perspicacia: sacerdote que vivió en Jerusalén al volver. Perspicacia no lo identifica con
   el Jedayá de la corona.'

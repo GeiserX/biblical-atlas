@@ -27,6 +27,8 @@ distinct_from:
 - joel-hijo-de-samuel
 - joel-profeta
 - joel-simeonita
+- joel-descendiente-de-nebo
+- joel-hijo-de-zicri
 relations:
 - type: kin
   person: azarias-padre-de-joel
@@ -37,5 +39,5 @@ relations:
   reason: '2Cr 29:12: «Joel hijo de Azarías», entre los cohatitas.'
   checked_on: '2026-10-13'
   status: verified
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified

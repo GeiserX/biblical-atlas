@@ -30,7 +30,8 @@ relations:
   reason: Gé 10:4 lo nombra entre los hijos de Javán.
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-14'
 status: verified
 distinct_from:
 - tarsis-hijo-de-bilhan
+- tarsis-principe-de-asuero

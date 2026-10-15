@@ -1,0 +1,51 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jonatan-de-la-casa-de-maluki
+name: Jonatán
+names:
+- name: Jonatán
+perspicacia: 1200002506#13
+summary: Sacerdote al frente de la casa paterna de Malukí en días del sumo sacerdote Joiaquim.
+reason: Perspicacia «Jonatán», núm. 13; Ne 12:12, 14.
+sources:
+- it-jonatan
+- nehemias-12
+links:
+- title: 'Perspicacia: «Jonatán»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jonat%C3%A1n/
+  type: perspicacia
+relations:
+- type: kin
+  person: maluki
+  word: ancestor
+  inferred: false
+  sources:
+  - nehemias-12
+  reason: 'Ne 12:12-21: Jonatán encabezaba la casa paterna que llevaba el nombre de este sacerdote.'
+  checked_on: '2026-10-14'
+  status: verified
+- type: holds_office
+  office: priest
+  inferred: false
+  sources:
+  - nehemias-12
+  reason: 'Ne 12:12: los jefes de las casas paternas de días de Joiaquim eran sacerdotes.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- johanan-hijo-de-joiada
+- jonatan-hijo-de-abiatar
+- jonatan-hijo-de-asahel
+- jonatan-hijo-de-carea
+- jonatan-hijo-de-jada
+- jonatan-hijo-de-sague
+- jonatan-hijo-de-sama
+- jonatan-hijo-de-saul
+- jonatan-hijo-de-semaya
+- jonatan-hijo-de-uzias
+- jonatan-levita
+- jonatan-padre-de-ebed
+- jonatan-sobrino-de-david
+disambiguation: 'Jonatán núm. 13 de Perspicacia: el cabeza de la casa de Malukí (Ne 12:14); no los demás Jonatán que registra
+  Perspicacia «Jonatán».'

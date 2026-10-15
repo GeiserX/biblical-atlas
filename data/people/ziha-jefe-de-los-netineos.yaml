@@ -1,0 +1,22 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ziha-jefe-de-los-netineos
+name: Ziha
+names:
+- name: Ziha
+- name: Zihá
+  note: Grafía del título de Perspicacia.
+perspicacia: 1200004730#2
+summary: Uno de los dos jefes de los siervos del templo, que tras el destierro tenían su barrio en Ofel.
+reason: Perspicacia «Zihá», núm. 2; Ne 11:21.
+sources:
+- it-ziha
+- nehemias-11
+links:
+- title: 'Perspicacia: «Zihá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zih%C3%A1/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- ziha-netineo
+disambiguation: Ziha, uno de los dos jefes de los siervos del templo (Ne 11:21) (Perspicacia «Zihá», núm. 2).

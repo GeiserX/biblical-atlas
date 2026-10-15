@@ -1,0 +1,46 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jehohanan-de-la-casa-de-amarias
+name: Jehohanán
+names:
+- name: Jehohanán
+perspicacia: 1200002374#5
+summary: Sacerdote que encabezaba la casa paterna de Amarías en tiempos del sumo sacerdote Joiaquim.
+reason: Perspicacia «Jehohanán», núm. 5; Ne 12:10, 12, 13.
+sources:
+- it-jehohanan
+- nehemias-12
+links:
+- title: 'Perspicacia: «Jehohanán»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jehohan%C3%A1n/
+  type: perspicacia
+relations:
+- type: kin
+  person: amarias-sacerdote-de-zorobabel
+  word: ancestor
+  inferred: false
+  sources:
+  - nehemias-12
+  reason: 'Ne 12:12-21: Jehohanán encabezaba la casa paterna que llevaba el nombre de este sacerdote.'
+  checked_on: '2026-10-14'
+  status: verified
+- type: holds_office
+  office: priest
+  inferred: false
+  sources:
+  - nehemias-12
+  reason: 'Ne 12:12: los jefes de las casas paternas de días de Joiaquim eran sacerdotes.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- jehohanan-descendiente-de-bebai
+- jehohanan-general-de-jehosafat
+- jehohanan-hijo-de-eliasib
+- jehohanan-hijo-de-meselemias
+- jehohanan-hijo-de-tobias
+- jehohanan-padre-de-azarias
+- jehohanan-padre-de-ismael
+- jehohanan-sacerdote-de-la-inauguracion
+disambiguation: 'Jehohanán núm. 5 de Perspicacia: el cabeza de la casa de Amarías (Ne 12:13); no los demás Jehohanán que registra
+  Perspicacia «Jehohanán».'

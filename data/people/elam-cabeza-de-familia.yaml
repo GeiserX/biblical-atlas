@@ -1,0 +1,29 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: elam-cabeza-de-familia
+name: Elam
+names:
+- name: Elam
+perspicacia: 1200001274#4
+summary: Antepasado de una familia israelita de la que 1.254 personas volvieron de Babilonia con Zorobabel.
+reason: Perspicacia «Elam», núm. 4; Esd 2:7.
+sources:
+- it-elam
+- esdras-2
+- esdras-8
+- esdras-10
+- nehemias-7
+- nehemias-10
+links:
+- title: 'Perspicacia: «Elam»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Elam/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- elam-el-otro
+- elam-hijo-de-meselemias
+- elam-hijo-de-sasac
+- elam-hijo-de-sem
+- elam-levita-de-la-inauguracion
+disambiguation: 'Elam núm. 4 de Perspicacia: cabeza de la familia de Esd 2:7, distinto del «otro Elam» de Esd 2:31.'
+relations: []

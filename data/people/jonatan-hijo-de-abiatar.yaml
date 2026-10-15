@@ -15,6 +15,11 @@ distinct_from:
 - jonatan-hijo-de-jada
 - jonatan-hijo-de-uzias
 - jonatan-sobrino-de-david
+- jonatan-padre-de-ebed
+- jonatan-hijo-de-asahel
+- johanan-hijo-de-joiada
+- jonatan-de-la-casa-de-maluki
+- jonatan-hijo-de-semaya
 summary: Hijo del sacerdote Abiatar. En la sublevación de Absalón llevaba a David, junto con Ahimáaz, los mensajes de Jerusalén.
   Años después, al parecer, se unió a Adonías.
 reason: Perspicacia «Jonatán», núm. 3; 2Sa 15:27, 36.
@@ -55,5 +60,5 @@ relations:
   reason: '2Sa 17:17-21: los dos esperan en En-Roguel, se esconden en el mismo pozo y juntos avisan a David.'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-14'
 status: verified

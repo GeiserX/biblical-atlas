@@ -1,0 +1,32 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: miniamin-familia-sacerdotal
+name: Miniamín
+names:
+- name: Miniamín
+perspicacia: 1200003067#2
+summary: Casa paterna de sacerdotes de días de Joiaquim; el nombre de su cabeza falta en el texto hebreo. Quizá la fundó el
+  Mijamín de Ne 12:5.
+reason: Perspicacia «Miniamín», núm. 2; Ne 12:12, 17.
+sources:
+- it-miniamin
+- nehemias-12
+links:
+- title: 'Perspicacia: «Miniamín»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Miniam%C3%ADn/
+  type: perspicacia
+relations:
+- type: holds_office
+  office: priest
+  inferred: true
+  sources:
+  - nehemias-12
+  reason: 'Ne 12:12: su casa paterna era de sacerdotes; quien la encabezaba en días de Joiaquim era sacerdote.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- miniamin-ayudante-de-core
+- miniamin-trompetista-de-la-inauguracion
+disambiguation: 'Miniamín núm. 2 de Perspicacia: la casa sacerdotal de Ne 12:17; no los demás Miniamín que registra Perspicacia
+  «Miniamín».'

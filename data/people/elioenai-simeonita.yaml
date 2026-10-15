@@ -26,5 +26,8 @@ relations:
 distinct_from:
 - elioenai-hijo-de-nearias
 - elioenai-hijo-de-beker
-checked_on: '2026-10-12'
+- elioenai-descendiente-de-pasjur
+- elioenai-descendiente-de-zatu
+- elioenai-trompetista-de-la-inauguracion
+checked_on: '2026-10-14'
 status: verified

@@ -1,0 +1,25 @@
+# biblical-atlas: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: kerub
+name: Kerub
+names:
+- name: Kerub
+type: city
+lat: 32.543333
+lon: 44.422222
+precision: uncertain
+coord_source: openbible:ab3ad14
+coord_url: https://www.openbible.info/geo/ancient/ab3ad14/cherub
+coord_note: OpenBible solo lo sitúa en Babilonia y le da el punto de la ciudad de Babilonia; el sitio real se desconoce.
+summary: Ciudad de Babilonia de la que volvieron en 537 a.e.c. algunos desterrados que no pudieron probar que eran israelitas.
+reason: 'Perspicacia «Kerub»; Esd 2:59. OpenBible: solo el punto.'
+sources:
+- it-kerub
+- openbible-geo
+- esdras-2
+- nehemias-7
+links:
+- title: 'Perspicacia: «Kerub»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Kerub/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified

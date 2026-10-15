@@ -35,9 +35,18 @@ relations:
   reason: '1Cr 24:9: encabeza una de las casas sacerdotales de 24:4-6; Perspicacia «Malkiya» lo trata como sacerdote.'
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-14'
 status: verified
 distinct_from:
 - malkias-padre-de-pasjur
 - malkiya-hijo-de-etni
 - malkiya-hijo-del-rey
+- malkiya-descendiente-de-harim
+- malkiya-descendiente-de-paros-1
+- malkiya-descendiente-de-paros-2
+- malkiya-hijo-de-harim
+- malkiya-hijo-de-recab
+- malkiya-orfebre
+- malkiya-junto-a-esdras
+- malkiya-sacerdote-firmante
+- malkiya-sacerdote-de-la-inauguracion

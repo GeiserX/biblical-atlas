@@ -24,5 +24,9 @@ relations:
   reason: 1Cr 15:24 lo cuenta entre los sacerdotes que tocaban las trompetas delante del Arca.
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-14'
 status: verified
+distinct_from:
+- sebanias-levita-de-la-confesion
+- sebanias-levita-firmante
+- sebanias-sacerdote-repatriado

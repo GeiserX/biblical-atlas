@@ -1,0 +1,38 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: quelita-levita-que-explico-la-ley
+name: Quelitá
+names:
+- name: Quelitá
+perspicacia: 1200002586#2
+disambiguation: El Quelitá de la lectura de la Ley (Ne 8:7); quizá el mismo que el levita Quelitá o Quelaya que despidió a
+  su esposa extranjera.
+summary: Levita que en 455 a.e.c. explicaba la Ley junto a otros levitas. Perspicacia ve posible que sea el levita Quelitá,
+  o Quelaya, de los días de Esdras.
+reason: Perspicacia «Quelitá», núm. 2; Ne 8:7.
+sources:
+- it-quelita
+- nehemias-8
+links:
+- title: 'Perspicacia: «Quelitá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Quelit%C3%A1/
+  type: perspicacia
+relations:
+- type: accompanies
+  person: esdras
+  date:
+    from: -454
+    to: -454
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 455 a.e.c.
+  sources:
+  - nehemias-8
+  - it-quelita
+  reason: 'Ne 8:7-9: explicaba al pueblo la Ley que Esdras leía, en el mes séptimo de 455 a.e.c.'
+  inferred: false
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified

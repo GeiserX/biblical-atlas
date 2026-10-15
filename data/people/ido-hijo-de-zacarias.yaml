@@ -10,6 +10,8 @@ distinct_from:
 - ido-padre-de-ahinadab
 - ido-hijo-de-joa
 - ido-hombre-de-visiones
+- ido-de-casifia
+- ido-sacerdote-de-zorobabel
 summary: Hijo de Zacarías y príncipe de la media tribu de Manasés que vivía en Galaad, en tiempos de David.
 reason: Perspicacia «Idó», núm. 6; 1Cr 27:21.
 sources:
@@ -38,5 +40,5 @@ relations:
   reason: '1Cr 27:21, 22: encabezaba a los manasitas que vivían en Galaad; la lista lo cuenta entre los príncipes de las tribus.'
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified

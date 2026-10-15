@@ -13,12 +13,12 @@ date:
     Esd 5 y 6 no dan el año.'
 places:
 - ecbatana
-people: []
+people:
+- dario-i
 passages:
-- Esd 5:3-17
-- Esd 6:1-12
-summary: Tatenai, gobernador al oeste del Éufrates, preguntó al rey si la obra era legal. En los archivos de Ecbátana apareció
-  el memorándum de Ciro, y Darío ordenó apoyar la obra con fondos reales.
+- Esd 6:1-5
+summary: 'Por orden de Darío se buscó en los archivos reales, y en la fortaleza de Ecbátana, en Media, apareció el memorándum
+  del primer año de Ciro: el templo, sus medidas, sus gastos y la vuelta de los utensilios.'
 reason: Perspicacia «Darío», núm. 2, y «Ecbátana»; «Persia, persas» da los 18 años. El año es cálculo nuestro, por eso queda
   pendiente.
 sources:
@@ -33,5 +33,21 @@ links:
 - title: Esdras 6 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/esdras/6/
   type: bible
-checked_on: '2026-09-28'
+history:
+- date: '2026-10-13'
+  change: 'Esd 5:3-17 pasa a tatenai-pide-cuentas-de-la-obra-del-templo, la visita a Jerusalén y el informe, y Esd 6:6-13
+    a dario-manda-apoyar-la-obra-del-templo: son escenas con otro lugar y otros protagonistas.'
+  source: esdras-6
+- date: '2026-10-13'
+  change: El resumen se ciñe al hallazgo (Esd 6:1-5); la consulta de Tatenái y la orden de Darío tienen ahora sus propios
+    sucesos.
+  source: esdras-6
+- date: '2026-10-13'
+  change: 'Esd 6:1 dice que la búsqueda se hizo por orden del rey Darío: va en people, sin situarlo en Ecbátana.'
+  source: esdras-6
+present: []
+narrative_order:
+  series: esdras
+  order: 6001
+checked_on: '2026-10-13'
 status: pending

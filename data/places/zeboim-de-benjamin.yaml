@@ -1,0 +1,26 @@
+# biblical-atlas: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: zeboim-de-benjamin
+name: Zeboím
+names:
+- name: Zeboím
+type: city
+lat: 32.002953
+lon: 34.895503
+precision: uncertain
+coord_source: openbible:a7e3823
+coord_url: https://www.openbible.info/geo/ancient/a7e3823/zeboim
+coord_note: Khirbet Sabiyeh, la identificación de OpenBible. Perspicacia no conoce el sitio; solo la nombra junto a Hadid,
+  Nebalat y Lod.
+summary: Ciudad donde vivieron benjamitas a su vuelta de Babilonia; no se sabe dónde estaba. No es el valle de Zeboím de 1Sa
+  13:18.
+reason: 'Perspicacia «Zeboím», núm. 2; Ne 11:31, 34. OpenBible: solo el punto.'
+sources:
+- it-zeboim
+- openbible-geo
+- nehemias-11
+links:
+- title: 'Perspicacia: «Zeboím»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zebo%C3%ADm/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified

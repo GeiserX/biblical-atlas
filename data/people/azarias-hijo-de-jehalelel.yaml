@@ -37,6 +37,12 @@ distinct_from:
 - jaazanias-jefe-militar
 - ocozias-de-juda
 - uzias
+- seraya-repatriado
+- azarias-hijo-de-merayot
+- azarias-hijo-de-maaseya
+- azarias-levita-que-explico-la-ley
+- azarias-sacerdote-firmante
+- azarias-de-la-procesion-del-muro
 relations:
 - type: kin
   person: jehalelel-padre-de-azarias
@@ -47,5 +53,5 @@ relations:
   reason: '2Cr 29:12: «Azarías hijo de Jehalelel», entre los meraritas.'
   checked_on: '2026-10-13'
   status: verified
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified

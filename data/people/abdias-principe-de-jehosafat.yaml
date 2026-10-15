@@ -26,7 +26,7 @@ relations:
   status: verified
 disambiguation: Príncipe de Jehosafat que enseñó la Ley en Judá (Perspicacia «Abdías», núm. 5); no el mayordomo de Acab ni
   el profeta.
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified
 distinct_from:
 - abdias-mayordomo-de-acab
@@ -38,3 +38,6 @@ distinct_from:
 - abdias-hijo-de-izrahias
 - abdias-hijo-de-semaya
 - abdias-padre-de-ismaya
+- abdias-hijo-de-jehiel
+- abdias-sacerdote-firmante
+- abdias-portero

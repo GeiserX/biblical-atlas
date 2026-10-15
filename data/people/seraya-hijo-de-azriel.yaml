@@ -13,6 +13,9 @@ distinct_from:
 - seraya-secretario-de-david
 - seraya-hijo-de-asiel
 - seraya-hijo-de-quenaz
+- seraya-repatriado
+- seraya-sacerdote-repatriado
+- azarias-sacerdote-repatriado
 summary: Hijo de Azriel. A finales de 624 a.e.c. Jehoiaquim lo envió, con Jerahmeel y Selemías, a detener a Jeremías y a Baruc,
   pero no los hallaron.
 reason: Perspicacia «Seraya», núm. 4; Jer 36:26.
@@ -48,5 +51,5 @@ relations:
   reason: 'Jer 36:26: el rey le manda prender a Baruc y a Jeremías; Perspicacia «Seraya», núm. 4, lo da por enviado de Jehoiaquim.'
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-14'
 status: verified

@@ -1,0 +1,40 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: seraya-sacerdote-repatriado
+name: Seraya
+names:
+- name: Seraya
+perspicacia: 1200003904#9
+summary: Sacerdote que volvió de Babilonia con Zorobabel; en la generación siguiente Meraya estaba al frente de su casa. El
+  Seraya que selló la promesa en 455 a.e.c. era de esa casa o un homónimo.
+reason: Perspicacia «Seraya», núm. 9; Ne 10:2; 12:1, 12.
+sources:
+- it-seraya
+- nehemias-10
+- nehemias-12
+links:
+- title: 'Perspicacia: «Seraya»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Seraya/
+  type: perspicacia
+relations:
+- type: holds_office
+  office: priest
+  inferred: false
+  sources:
+  - nehemias-10
+  - nehemias-12
+  reason: 'Ne 10:8 cierra la lista: «esos son los sacerdotes».'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- seraya-hijo-de-asiel
+- seraya-hijo-de-azarias
+- seraya-hijo-de-azriel
+- seraya-hijo-de-nerias
+- seraya-hijo-de-quenaz
+- seraya-hijo-de-tanhumet
+- seraya-repatriado
+- seraya-secretario-de-david
+disambiguation: Seraya, sacerdote que volvió con Zorobabel; su casa selló la promesa de Ne 10 (Perspicacia «Seraya», núm.
+  9).

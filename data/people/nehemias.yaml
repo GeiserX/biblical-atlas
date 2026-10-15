@@ -3,7 +3,8 @@ id: nehemias
 name: Nehemías
 names:
 - name: Nehemías
-disambiguation: El gobernador y escritor del libro de Nehemías; no el Nehemías de Esd 2:2 ni el hijo de Azbuq de Ne 3:16.
+disambiguation: El gobernador y escritor del libro de Nehemías; no el Nehemías de Esd 2:2 ni el hijo de Azbuc, príncipe de
+  Bet-Zur.
 date:
   from: -455
   to: -442
@@ -22,6 +23,18 @@ sources:
 - nehemias-1
 - nehemias-5
 - tnm-tabla
+- it-copero
+- it-hacalias
+- it-hanani
+- nehemias-2
+- nehemias-4
+- nehemias-6
+- nehemias-7
+- nehemias-8
+- it-tirsata
+- nehemias-10
+- nehemias-12
+- nehemias-13
 links:
 - title: 'Perspicacia: «Nehemías»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Nehem%C3%ADas/
@@ -66,8 +79,120 @@ relations:
   - it-nehemias
   - nehemias-5
   - si-3
+  - nehemias-2
   reason: 'Ne 5:14: gobernador de Judá del año 20 al 32 de Artajerjes (455-443). Años del estudio 3 (párr. 19 y tabla de sucesos).'
-  checked_on: '2026-09-28'
+  checked_on: '2026-10-14'
   status: verified
-checked_on: '2026-09-28'
+- type: kin
+  person: hacalias
+  word: father
+  inferred: false
+  sources:
+  - nehemias-1
+  - it-hacalias
+  - nehemias-10
+  reason: Ne 1:1 lo llama hijo de Hacalías.
+  checked_on: '2026-10-14'
+  status: verified
+- type: kin
+  person: hanani-hermano-de-nehemias
+  word: brother
+  inferred: false
+  sources:
+  - nehemias-1
+  - it-hanani
+  - it-nehemias
+  - nehemias-7
+  reason: 'Ne 1:2: Hananí es «uno de mis hermanos»; Perspicacia «Hananí», núm. 4, y «Nehemías», núm. 3, lo dan por hermano
+    suyo.'
+  checked_on: '2026-10-14'
+  status: verified
+- type: tie
+  person: artajerjes-i
+  word: master
+  date:
+    from: -455
+    to: -454
+    precision: range
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 456-455 a.e.c.
+  inferred: false
+  sources:
+  - nehemias-1
+  - nehemias-2
+  - it-copero
+  - it-nehemias
+  reason: 'Ne 1:11 y 2:1: era copero del rey y le servía el vino. Perspicacia «Nehemías», núm. 3, y «Copero»: el rey era Artajerjes
+    Longimano.'
+  checked_on: '2026-10-14'
+  status: verified
+- type: tie
+  person: artajerjes-i
+  word: master
+  inferred: false
+  sources:
+  - nehemias-5
+  - it-artajerjes
+  reason: 'Ne 5:14: Artajerjes lo puso de gobernador en Judá del año 20 al 32 de su reinado; Perspicacia «Artajerjes», núm.
+    2, da 455 y 443.'
+  checked_on: '2026-10-14'
+  status: verified
+  date:
+    from: -454
+    to: -442
+    precision: range
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 455-443 a.e.c.
+- type: tie
+  person: artajerjes-i
+  word: master
+  date:
+    from: -442
+    to: -442
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: año 32 de Artajerjes (443 a.e.c.)
+  inferred: false
+  sources:
+  - nehemias-13
+  - it-nehemias
+  - it-artajerjes
+  reason: 'Ne 13:6: en el año 32 de Artajerjes volvió adonde estaba el rey y después le pidió permiso para ausentarse; Perspicacia
+    «Nehemías», núm. 3, lo llama copero de Artajerjes.'
+  checked_on: '2026-10-14'
+  status: verified
+- type: lived_in
+  place: jerusalen
+  date:
+    from: -442
+    to: -442
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: poco después de 443 a.e.c.
+  inferred: false
+  sources:
+  - nehemias-13
+  - it-jerusalen
+  reason: 'Ne 13:7: tras su estancia con el rey volvió a Jerusalén; Perspicacia «Jerusalén» fecha sus medidas poco después
+    de 443 a.e.c.'
+  checked_on: '2026-10-14'
+  status: verified
+perspicacia: 1200003212#3
+history:
+- date: '2026-10-14'
+  change: 'Ne 3 no nombra al gobernador: la desambiguación deja de citar Ne 3:16 y nombra al hijo de Azbuc por su cargo, con
+    la grafía Azbuc de la TNM.'
+  source: nehemias-3
+checked_on: '2026-10-14'
 status: verified
+distinct_from:
+- nehemias-repatriado
+- nehemias-hijo-de-azbuc

@@ -1,0 +1,39 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: berekias-hijo-de-mesezabel
+name: Berekías
+names:
+- name: Berekías
+perspicacia: 1200000650#6
+disambiguation: El padre de Mesulam e hijo de Mesezabel (Ne 3:4), núm. 6 de Perspicacia «Berekías»; no los otros Berekías
+  que numera.
+distinct_from:
+- berekias-hijo-de-asa
+- berekias-hijo-de-ido
+- berekias-hijo-de-mesilemot
+- berekias-hijo-de-simea
+- berekias-hijo-de-zorobabel
+- berekias-portero
+summary: Hijo de Mesezabel. Su hijo Mesulam trabajó en la muralla de Jerusalén en días de Nehemías, y una nieta suya se casó
+  con Jehohanán, hijo de Tobías.
+reason: Perspicacia «Berekías», núm. 6; Ne 3:4; 6:18.
+sources:
+- it-berekias
+- nehemias-3
+- nehemias-6
+links:
+- title: 'Perspicacia: «Berekías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Berek%C3%ADas/
+  type: perspicacia
+relations:
+- type: kin
+  person: mesezabel-padre-de-berekias
+  word: father
+  inferred: false
+  sources:
+  - nehemias-3
+  - it-berekias
+  reason: 'Ne 3:4: Berekías hijo de Mesezabel.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified

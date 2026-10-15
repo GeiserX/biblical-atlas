@@ -1,0 +1,33 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: sabetai
+name: Sabetái
+names:
+- name: Sabetái
+- name: Sabetai
+  note: Grafía de Perspicacia.
+perspicacia: '1200003924'
+summary: Levita de después del exilio que, con Mesulam, se puso del lado de Jonatán y Jahzeya. Perspicacia ve posible que
+  sea el levita que ayudó a Esdras a enseñar la Ley.
+reason: Perspicacia «Sabetai»; Esd 10:15.
+sources:
+- it-sabetai
+- esdras-10
+- nehemias-11
+links:
+- title: 'Perspicacia: «Sabetai»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sabetai/
+  type: perspicacia
+relations:
+- type: same_as
+  person: sabetai-levita-de-tiempos-de-nehemias
+  certainty: possible
+  inferred: true
+  sources:
+  - it-sabetai
+  - nehemias-8
+  - nehemias-11
+  reason: Perspicacia «Sabetai» ve posible que sea el levita que ayudaba a explicar la Ley junto a Esdras (Ne 8:7).
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified

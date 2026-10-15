@@ -1,0 +1,52 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: mitridates-opositor-del-templo
+name: Mitrídates
+names:
+- name: Mitrídates
+perspicacia: 1200003090#2
+disambiguation: El que firmó la carta contra los judíos (Perspicacia «Mitrídates», núm. 2); no el tesorero de Ciro que devolvió
+  los utensilios del templo.
+date:
+  from: -521
+  to: -521
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: 522 a.e.c.
+summary: Opositor a la reconstrucción del templo. Con Bislam, Tabeel y otros firmó la carta al rey Artajerjes que acusaba
+  en falso a los judíos.
+reason: Perspicacia «Mitrídates», núm. 2, y «Artajerjes», núm. 1; Esd 4:7. Fecha del reinado de ese Artajerjes (estudio 3).
+sources:
+- it-mitridates
+- it-artajerjes
+- esdras-4
+- si-3
+links:
+- title: 'Perspicacia: «Mitrídates»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Mitr%C3%ADdates/
+  type: perspicacia
+relations:
+- type: lived_in
+  place: region-de-samaria
+  date:
+    from: -521
+    to: -521
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: 522 a.e.c.
+  inferred: true
+  sources:
+  - it-artajerjes
+  - esdras-4
+  - si-3
+  reason: Perspicacia «Artajerjes», núm. 1, dice que la carta de Esd 4:7 salió de la gente de las ciudades de Samaria. Año
+    del estudio 3.
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified
+distinct_from:
+- mitridates-tesorero-de-ciro

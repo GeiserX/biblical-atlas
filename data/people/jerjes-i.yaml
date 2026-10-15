@@ -20,6 +20,15 @@ sources:
 - it-asuero
 - it-persia
 - it-ester-libro
+- ester-1
+- ester-2
+- ester-3
+- ester-5
+- ester-6
+- ester-7
+- ester-8
+- ester-9
+- ester-10
 links:
 - title: 'Perspicacia: «Asuero»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Asuero/
@@ -81,7 +90,94 @@ relations:
     se cree que era Jerjes I.'
   checked_on: '2026-09-29'
   status: verified
-disambiguation: El Asuero del libro de Ester, que Perspicacia «Asuero», núm. 3, cree Jerjes I; no el padre de Darío el medo.
+- type: kin
+  person: vasti
+  word: wife
+  inferred: false
+  sources:
+  - ester-1
+  - it-vasti
+  reason: 'Est 1:9-12, 17: Vasti era la reina del rey Asuero; Perspicacia «Vasti» la llama su reina consorte.'
+  checked_on: '2026-10-14'
+  status: verified
+- type: tie
+  person: carsena
+  word: adviser
+  inferred: false
+  sources:
+  - ester-1
+  - it-memucan
+  reason: 'Est 1:13-15: Carsená figura entre los siete príncipes persas y medos a quienes el rey consultaba; Perspicacia «Memucán»
+    los llama sus consejeros más íntimos.'
+  checked_on: '2026-10-14'
+  status: verified
+- type: tie
+  person: setar
+  word: adviser
+  inferred: false
+  sources:
+  - ester-1
+  - it-memucan
+  reason: 'Est 1:13-15: Setar figura entre los siete príncipes persas y medos a quienes el rey consultaba; Perspicacia «Memucán»
+    los llama sus consejeros más íntimos.'
+  checked_on: '2026-10-14'
+  status: verified
+- type: tie
+  person: admata
+  word: adviser
+  inferred: false
+  sources:
+  - ester-1
+  - it-memucan
+  reason: 'Est 1:13-15: Admatá figura entre los siete príncipes persas y medos a quienes el rey consultaba; Perspicacia «Memucán»
+    los llama sus consejeros más íntimos.'
+  checked_on: '2026-10-14'
+  status: verified
+- type: tie
+  person: meres
+  word: adviser
+  inferred: false
+  sources:
+  - ester-1
+  - it-memucan
+  reason: 'Est 1:13-15: Meres figura entre los siete príncipes persas y medos a quienes el rey consultaba; Perspicacia «Memucán»
+    los llama sus consejeros más íntimos.'
+  checked_on: '2026-10-14'
+  status: verified
+- type: tie
+  person: marsena
+  word: adviser
+  inferred: false
+  sources:
+  - ester-1
+  - it-memucan
+  reason: 'Est 1:13-15: Marsená figura entre los siete príncipes persas y medos a quienes el rey consultaba; Perspicacia «Memucán»
+    los llama sus consejeros más íntimos.'
+  checked_on: '2026-10-14'
+  status: verified
+- type: tie
+  person: tarsis-principe-de-asuero
+  word: adviser
+  inferred: false
+  sources:
+  - ester-1
+  - it-memucan
+  reason: 'Est 1:13-15: Tarsis figura entre los siete príncipes persas y medos a quienes el rey consultaba; Perspicacia «Memucán»
+    los llama sus consejeros más íntimos.'
+  checked_on: '2026-10-14'
+  status: verified
+- type: tie
+  person: memucan
+  word: adviser
+  inferred: false
+  sources:
+  - ester-1
+  - it-memucan
+  reason: 'Est 1:16-21: Memucán habló ante el rey y los príncipes, y el rey hizo lo que él propuso.'
+  checked_on: '2026-10-14'
+  status: verified
+disambiguation: Jerjes I, el Asuero del libro de Ester (Perspicacia «Asuero», núm. 3); no el padre de Darío el medo ni el
+  Asuero de Esd 4:6, probablemente Cambises.
 perspicacia: 1200000142#3
 checked_on: '2026-10-14'
 status: verified
@@ -99,4 +195,5 @@ alternatives:
   note: Las obras de consulta cuentan su reinado desde la muerte de Darío y lo cierran en 465; Perspicacia expone por qué
     prefiere 475.
 distinct_from:
+- asuero-de-esdras
 - asuero-padre-de-dario-el-medo

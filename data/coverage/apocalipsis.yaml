@@ -157,14 +157,14 @@ chapters:
     - {v: 12-14, type: vision, entities: [event:vision-de-la-gran-prostituta], mentions: [person:jesus], note: "Los diez cuernos son diez reyes que reinarán una hora con la bestia y lucharán contra el Cordero, que los vencerá con los llamados, escogidos y fieles."}
     - {v: 15-18, type: vision, entities: [event:vision-de-la-gran-prostituta], note: "Las aguas son pueblos y naciones. Los cuernos y la bestia odiarán a la prostituta, la desnudarán y la quemarán, porque Dios lo pone en su corazón. La mujer es la gran ciudad que reina sobre los reyes."}
   18:
-    status: pending
+    status: complete
     reviewed_on: 2026-10-14
-    note: Leído entero. Queda pendiente solo porque Ap 18:13 nombra la India y el lugar `india` lo crea Ester; cuando esté en main, entra en mentions de 11-16 y el capítulo se cierra.
+    note: Leído entero; la India de Ap 18:13 va en mención del tramo 11-16 desde que Ester creó su ficha.
     spans:
     - {v: 1-3, type: vision, entities: [letter:apocalipsis, event:vision-de-la-caida-de-babilonia-la-grande, person:juan-apostol], mentions: [event:caida-de-babilonia], note: "Otro ángel con gran autoridad baja del cielo y grita que Babilonia la Grande ha caído y es guarida de demonios. Empieza la duodécima visión, Ap 18:1-19:10. El grito repite Is 21:9 sobre la Babilonia de 539 a.e.c."}
     - {v: 4-8, type: vision, entities: [event:vision-de-la-caida-de-babilonia-la-grande], mentions: [event:regreso-de-537], note: "Una voz del cielo manda al pueblo de Dios salir de ella para no compartir sus pecados ni sus plagas: le pagarán el doble y en un día arderá. Libro sobre Apocalipsis, cap. 36: como en 537 a.e.c."}
     - {v: 9-10, type: vision, entities: [event:vision-de-la-caida-de-babilonia-la-grande], note: "Los reyes de la tierra que vivieron en lujo con ella lloran de lejos al ver el humo del incendio: en una hora llegó su juicio."}
-    - {v: 11-16, type: vision, entities: [event:vision-de-la-caida-de-babilonia-la-grande], note: "Los comerciantes lloran porque nadie compra ya su carga: metales, joyas, telas, maderas, especias, alimentos, ganado, esclavos y vidas humanas. La India solo nombra el origen de una especia; su ficha la crea Ester."}
+    - {v: 11-16, type: vision, entities: [event:vision-de-la-caida-de-babilonia-la-grande], mentions: [place:india], note: "Los comerciantes lloran porque nadie compra ya su carga: metales, joyas, telas, maderas, especias, alimentos, ganado, esclavos y vidas humanas. La India solo nombra el origen de una especia."}
     - {v: 17-19, type: vision, entities: [event:vision-de-la-caida-de-babilonia-la-grande], note: "Con el final del grito de los comerciantes, capitanes, navegantes y marineros miran de lejos el humo, se echan polvo en la cabeza y lloran a la ciudad que los enriqueció, destruida en una hora."}
     - {v: "20", type: vision, entities: [event:vision-de-la-caida-de-babilonia-la-grande], note: "Se invita al cielo, a los santos, a los apóstoles y a los profetas a alegrarse, porque Dios dictó sentencia contra ella en su favor."}
     - {v: 21-24, type: vision, entities: [event:vision-de-la-caida-de-babilonia-la-grande], mentions: [person:seraya-hijo-de-nerias, event:jeremias-encarga-a-seraya-el-libro-contra-babilonia], note: "Un ángel fuerte lanza al mar una piedra como de molino: así desaparecerá Babilonia, sin música, oficios ni bodas, culpable de sangre de profetas y santos. Libro sobre Apocalipsis, cap. 37: recuerda a Seraya (Jer 51:63, 64)."}

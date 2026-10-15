@@ -1,0 +1,46 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: meremot-hijo-de-uriya
+name: Meremot
+names:
+- name: Meremot
+perspicacia: 1200002996#2
+summary: Sacerdote destacado, hijo de Uriya. En 468 a.e.c., pasados tres días de la llegada de Esdras, recibió en el templo
+  los donativos ya pesados. Más tarde reparó tramos del muro.
+reason: Perspicacia «Meremot», núm. 2; Esd 8:33, 34; Ne 3:4, 21.
+sources:
+- it-meremot
+- esdras-8
+- nehemias-3
+links:
+- title: 'Perspicacia: «Meremot»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Meremot/
+  type: perspicacia
+relations:
+- type: kin
+  person: uriya-hijo-de-hacoz
+  word: father
+  inferred: false
+  sources:
+  - esdras-8
+  - it-meremot
+  - nehemias-3
+  reason: 'Esd 8:33: el sacerdote Meremot hijo de Uriya.'
+  checked_on: '2026-10-14'
+  status: verified
+- type: holds_office
+  office: priest
+  inferred: false
+  sources:
+  - esdras-8
+  - it-meremot
+  reason: Esd 8:33 lo llama el sacerdote Meremot.
+  checked_on: '2026-10-13'
+  status: verified
+disambiguation: El sacerdote hijo de Uriya de los días de Esdras y Nehemías; no el Meremot de los hijos de Baní que despidió
+  a su esposa extranjera.
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- meremot-descendiente-de-bani
+- meremot-sacerdote-firmante
+- meremot-sacerdote-de-zorobabel

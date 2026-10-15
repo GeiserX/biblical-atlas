@@ -1,0 +1,17 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: meres
+name: Meres
+names:
+- name: Meres
+perspicacia: '1200002997'
+summary: Príncipe de la corte de Asuero, de los siete consultados cuando la reina Vasti no acudió a su llamada.
+reason: Perspicacia «Meres» y «Memucán»; Est 1:14.
+sources:
+- it-meres
+- ester-1
+links:
+- title: 'Perspicacia: «Meres»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Meres/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified

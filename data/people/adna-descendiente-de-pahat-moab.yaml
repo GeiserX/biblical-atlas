@@ -1,0 +1,34 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: adna-descendiente-de-pahat-moab
+name: Adná
+names:
+- name: Adná
+perspicacia: 1200000107#1
+summary: Israelita de los hijos de Pahat-Moab. Estaba casado con extranjeras y, cuando Esdras corrigió esos matrimonios (468-467
+  a.e.c.), las despidió junto con sus hijos.
+reason: Perspicacia «Adná», núm. 1; Esd 10:30, 44.
+sources:
+- it-adna
+- esdras-10
+links:
+- title: 'Perspicacia: «Adná»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Adn%C3%A1/
+  type: perspicacia
+relations:
+- type: kin
+  person: pahat-moab
+  word: ancestor
+  sources:
+  - esdras-10
+  - it-adna
+  reason: Esd 10:30 lo pone entre los hijos de Pahat-Moab; Perspicacia «Adná», núm. 1.
+  inferred: false
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+disambiguation: El de los hijos de Pahat-Moab de Esd 10:30; no los demás Adná que registra Perspicacia.
+distinct_from:
+- adna-de-manases
+- adna-general-de-jehosafat
+- adna-de-la-casa-de-harim

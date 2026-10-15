@@ -1,0 +1,97 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: tobias-el-ammonita
+name: Tobías
+names:
+- name: Tobías
+perspicacia: 1200004437#2
+disambiguation: El ammonita que se opuso a Nehemías (Ne 2:10, 19); no el antepasado de los repatriados que no pudieron probar
+  su linaje israelita.
+distinct_from:
+- tobias-sin-registro
+date:
+  from: -454
+  to: -442
+  precision: range
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: de 455 a después de 443 a.e.c.
+summary: Ammonita, probablemente funcionario del rey persa, que con Sanbalat se opuso a la muralla de Jerusalén. Yerno de
+  Secanías y pariente del sumo sacerdote Eliasib, ocupó después un comedor del templo, del que Nehemías lo echó.
+reason: Perspicacia «Tobías», núm. 2; Ne 2:10, 19; 4:3, 7; 6:1, 12-14, 17-19; 13:4-9. Fechas de Perspicacia «Nehemías», núm.
+  3 (455) y «Artajerjes», núm. 2 (443).
+sources:
+- it-tobias
+- it-nehemias
+- it-artajerjes
+- nehemias-2
+- nehemias-4
+- it-secanias
+- nehemias-6
+- nehemias-13
+links:
+- title: 'Perspicacia: «Tobías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Tob%C3%ADas/
+  type: perspicacia
+relations:
+- type: born_in
+  place: ammon
+  inferred: true
+  sources:
+  - nehemias-2
+  - it-tobias
+  reason: 'Ne 2:10, 19 lo llaman «el funcionario ammonita»: gentilicio de un pueblo extranjero.'
+  checked_on: '2026-10-14'
+  status: verified
+- type: tie
+  person: artajerjes-i
+  word: master
+  date:
+    from: -454
+    to: -454
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 455 a.e.c.
+  inferred: true
+  sources:
+  - nehemias-2
+  - it-tobias
+  reason: Ne 2:10, 19 lo llaman funcionario (lit. siervo); Perspicacia «Tobías», núm. 2, cree que era probablemente oficial
+    del rey persa, que entonces era Artajerjes.
+  checked_on: '2026-10-14'
+  status: verified
+- type: tie
+  person: nehemias
+  word: enemy
+  date:
+    from: -454
+    to: -454
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 455 a.e.c.
+  inferred: false
+  sources:
+  - nehemias-2
+  - it-tobias
+  - nehemias-4
+  - nehemias-6
+  reason: 'Ne 2:10, 19: le molesta que Nehemías venga a ayudar a Israel y se burla de su obra. Perspicacia lo llama opositor
+    de Nehemías.'
+  checked_on: '2026-10-14'
+  status: verified
+- type: kin
+  person: secanias-hijo-de-ara
+  word: father_in_law
+  inferred: false
+  sources:
+  - nehemias-6
+  - it-secanias
+  reason: 'Ne 6:18: era yerno de Secanías hijo de Ará.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified

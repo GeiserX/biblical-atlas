@@ -1,0 +1,50 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jozabad-descendiente-de-pasjur
+name: Jozabad
+names:
+- name: Jozabad
+perspicacia: 1200002532#7
+summary: Sacerdote de los hijos de Pasjur. Estaba casado con extranjeras y, cuando Esdras corrigió esos matrimonios (468-467
+  a.e.c.), las despidió junto con sus hijos.
+reason: Perspicacia «Jozabad», núm. 7; Esd 10:22, 44.
+sources:
+- it-jozabad
+- esdras-10
+links:
+- title: 'Perspicacia: «Jozabad»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jozabad/
+  type: perspicacia
+relations:
+- type: kin
+  person: pasjur-familia-sacerdotal
+  word: ancestor
+  sources:
+  - esdras-10
+  - it-jozabad
+  reason: Esd 10:22 lo pone entre los hijos de Pasjur; Perspicacia «Jozabad», núm. 7. «Hijos» vale aquí por descendientes,
+    como dice Perspicacia «Harim», núm. 1.
+  inferred: false
+  checked_on: '2026-10-13'
+  status: verified
+- type: holds_office
+  office: priest
+  sources:
+  - esdras-10
+  - it-jozabad
+  reason: 'Esd 10:18-22: va en la lista de los hijos de los sacerdotes; Perspicacia lo llama sacerdote.'
+  inferred: false
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+disambiguation: El sacerdote de los hijos de Pasjur de Esd 10:22; no los demás Jozabad que registra Perspicacia.
+distinct_from:
+- jozabad-comisionado-de-ezequias
+- jozabad-de-manases-1
+- jozabad-de-manases-2
+- jozabad-el-guederatita
+- jozabad-hijo-de-jesua
+- jozabad-levita-de-josias
+- jozabad-levita-de-tiempos-de-esdras
+- jozabad-levita-que-explico-la-ley
+- jozabad-levita-de-tiempos-de-nehemias

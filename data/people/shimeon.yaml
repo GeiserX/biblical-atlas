@@ -1,0 +1,29 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: shimeon
+name: Shimeón
+names:
+- name: Shimeón
+perspicacia: '1200004049'
+summary: Israelita de los hijos de Harim. Estaba casado con extranjeras y, cuando Esdras corrigió esos matrimonios (468-467
+  a.e.c.), las despidió junto con sus hijos.
+reason: Perspicacia «Shimeón»; Esd 10:31, 44.
+sources:
+- it-shimeon
+- esdras-10
+links:
+- title: 'Perspicacia: «Shimeón»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Shime%C3%B3n/
+  type: perspicacia
+relations:
+- type: kin
+  person: harim-cabeza-de-familia
+  word: ancestor
+  sources:
+  - esdras-10
+  - it-shimeon
+  reason: Esd 10:31 lo pone entre los hijos de Harim; Perspicacia «Shimeón».
+  inferred: false
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified

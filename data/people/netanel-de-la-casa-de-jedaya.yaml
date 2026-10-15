@@ -1,0 +1,47 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: netanel-de-la-casa-de-jedaya
+name: Netanel
+names:
+- name: Netanel
+perspicacia: 1200003236#8
+summary: Cabeza de la segunda casa sacerdotal de Jedayá en días de Joiaquim.
+reason: Perspicacia «Netanel», núm. 8; Ne 12:12, 21.
+sources:
+- it-netanel
+- nehemias-12
+links:
+- title: 'Perspicacia: «Netanel»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Netanel/
+  type: perspicacia
+relations:
+- type: kin
+  person: jedaya-antepasado-de-netanel
+  word: ancestor
+  inferred: false
+  sources:
+  - nehemias-12
+  reason: 'Ne 12:12-21: Netanel encabezaba la casa paterna que llevaba el nombre de este sacerdote.'
+  checked_on: '2026-10-14'
+  status: verified
+- type: holds_office
+  office: priest
+  inferred: false
+  sources:
+  - nehemias-12
+  reason: 'Ne 12:12: los jefes de las casas paternas de días de Joiaquim eran sacerdotes.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- netanel-descendiente-de-pasjur
+- netanel-hijo-de-jese
+- netanel-hijo-de-obed-edom
+- netanel-hijo-de-zuar
+- netanel-levita-de-josias
+- netanel-musico-de-la-procesion
+- netanel-padre-de-semaya
+- netanel-principe-de-jehosafat
+- netanel-trompetista
+disambiguation: 'Netanel núm. 8 de Perspicacia: el cabeza de la casa de Jedayá (Ne 12:21); no los demás Netanel que registra
+  Perspicacia «Netanel».'

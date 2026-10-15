@@ -1,0 +1,58 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: azarias-de-la-procesion-del-muro
+name: Azarías
+names:
+- name: Azarías
+perspicacia: 1200000486#25
+summary: Uno de los que Nehemías puso a marchar con Esdras sobre el muro reconstruido de Jerusalén el día de su inauguración.
+  Perspicacia ve posible que sea el sacerdote de Ne 10:2.
+reason: Perspicacia «Azarías», núm. 25; Ne 12:31-36.
+sources:
+- it-azarias
+- nehemias-12
+links:
+- title: 'Perspicacia: «Azarías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Azar%C3%ADas/
+  type: perspicacia
+relations:
+- type: same_as
+  person: azarias-sacerdote-firmante
+  certainty: possible
+  inferred: true
+  sources:
+  - it-azarias
+  - nehemias-12
+  reason: 'Perspicacia «Azarías», núm. 25: tal vez sea el núm. 27, el sacerdote que selló el arreglo fidedigno.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- abednego
+- azarias-hijo-de-ahimaaz
+- azarias-hijo-de-etan
+- azarias-hijo-de-hilquias
+- azarias-hijo-de-jehalelel
+- azarias-hijo-de-jehohanan
+- azarias-hijo-de-jehu
+- azarias-hijo-de-jeroham
+- azarias-hijo-de-johanan
+- azarias-hijo-de-maaseya
+- azarias-hijo-de-merayot
+- azarias-hijo-de-natan
+- azarias-hijo-de-obed
+- azarias-hijo-de-oded
+- azarias-hijo-de-sadoc
+- azarias-hijo-de-sofonias
+- azarias-levita-que-explico-la-ley
+- azarias-padre-de-joel
+- azarias-quinto-hijo-de-jehosafat
+- azarias-sacerdote-de-tiempos-de-uzias
+- azarias-sacerdote-repatriado
+- azarias-segundo-hijo-de-jehosafat
+- jaazanias-jefe-militar
+- ocozias-de-juda
+- seraya-repatriado
+- uzias
+disambiguation: 'Azarías núm. 25 de Perspicacia: el de la procesión del muro (Ne 12:33); no los demás Azarías que registra
+  Perspicacia «Azarías».'

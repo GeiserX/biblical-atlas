@@ -65,7 +65,8 @@ history:
 - date: '2026-09-29'
   change: La razón cita 2Sa 11:3, que da a Bat-Seba como esposa de Urías.
   source: 2-samuel-11
-checked_on: '2026-10-12'
+checked_on: '2026-10-14'
 status: verified
 distinct_from:
 - uriya-sacerdote-de-acaz
+- urias-junto-a-esdras

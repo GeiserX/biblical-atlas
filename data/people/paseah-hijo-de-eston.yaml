@@ -25,5 +25,8 @@ relations:
   reason: '1Cr 4:12: Estón fue padre de Paséah.'
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-14'
 status: verified
+distinct_from:
+- paseah-netineo
+- paseah-padre-de-joiada

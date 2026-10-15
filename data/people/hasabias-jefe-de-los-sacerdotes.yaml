@@ -1,0 +1,68 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hasabias-jefe-de-los-sacerdotes
+name: Hasabías
+names:
+- name: Hasabías
+perspicacia: 1200001900#7
+disambiguation: El jefe de los sacerdotes de Esd 8:24, núm. 7 de Perspicacia; no los otros Hasabías que numera, salvo quizá
+  el merarita de 8:19.
+distinct_from:
+- hasabias-hebronita
+- hasabias-hijo-de-amasias
+- hasabias-hijo-de-jedutun
+- hasabias-hijo-de-quemuel
+- hasabias-padre-de-azricam
+- hasabias-levita-de-josias
+- hasabias-principe-de-queila
+- hasabias-levita-firmante
+- hasabias-hijo-de-matanias
+- hasabias-jefe-de-los-levitas
+summary: Jefe sacerdotal. En 468 a.e.c., junto al Ahavá, Esdras puso a su cargo y al de otros once los donativos de metal
+  precioso y los objetos destinados al templo.
+reason: Perspicacia «Hasabías», núm. 7; Esd 8:24-30.
+sources:
+- it-hasabias
+- esdras-8
+links:
+- title: 'Perspicacia: «Hasabías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hasab%C3%ADas/
+  type: perspicacia
+relations:
+- type: holds_office
+  office: priest
+  inferred: false
+  sources:
+  - esdras-8
+  - it-hasabias
+  reason: Esd 8:24 lo cuenta entre los jefes de los sacerdotes; Perspicacia «Hasabías», núm. 7.
+  checked_on: '2026-10-13'
+  status: verified
+- type: same_as
+  person: hasabias-merarita
+  certainty: possible
+  inferred: true
+  sources:
+  - esdras-8
+  - it-hasabias
+  reason: 'Perspicacia «Hasabías», núm. 7: tal vez sea el mismo Hasabías del versículo 19, el levita merarita.'
+  checked_on: '2026-10-13'
+  status: verified
+- type: accompanies
+  person: esdras
+  date:
+    from: -467
+    to: -467
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 468 a.e.c.
+  inferred: false
+  sources:
+  - esdras-8
+  - it-hasabias
+  reason: 'Esd 8:24-30: llevó con los demás sacerdotes las ofrendas del Ahavá a Jerusalén.'
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-14'
+status: verified

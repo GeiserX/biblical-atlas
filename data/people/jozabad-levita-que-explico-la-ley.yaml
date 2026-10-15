@@ -1,0 +1,45 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jozabad-levita-que-explico-la-ley
+name: Jozabad
+names:
+- name: Jozabad
+perspicacia: 1200002532#9
+disambiguation: El levita Jozabad que explicó la Ley (Ne 8:7); no los Jozabad de los días de David, Ezequías y Josías ni el
+  sacerdote de los hijos de Pasjur.
+distinct_from:
+- jozabad-comisionado-de-ezequias
+- jozabad-de-manases-1
+- jozabad-de-manases-2
+- jozabad-descendiente-de-pasjur
+- jozabad-el-guederatita
+- jozabad-levita-de-josias
+summary: Levita que trabajó con Esdras y Nehemías explicando al pueblo la Ley leída. Perspicacia ve posible que sea el hijo
+  de Jesúa y el levita Jozabad de los días de Esdras.
+reason: Perspicacia «Jozabad», núm. 9; Ne 8:7.
+sources:
+- it-jozabad
+- nehemias-8
+links:
+- title: 'Perspicacia: «Jozabad»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jozabad/
+  type: perspicacia
+relations:
+- type: accompanies
+  person: esdras
+  date:
+    from: -454
+    to: -454
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 455 a.e.c.
+  sources:
+  - nehemias-8
+  - it-jozabad
+  reason: 'Ne 8:7-9: explicaba al pueblo la Ley que Esdras leía, en el mes séptimo de 455 a.e.c.'
+  inferred: false
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified

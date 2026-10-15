@@ -20,6 +20,9 @@ distinct_from:
 - silem
 - salum-jefe-de-los-porteros
 - salum-padre-de-jehizquias
+- salum-descendiente-de-binui
+- salum-portero-de-tiempos-de-esdras
+- salum-hijo-de-halohes
 date:
   from: -627
   to: -627
@@ -135,5 +138,5 @@ relations:
   checked_on: '2026-09-30'
   status: verified
 perspicacia: 1200002372#3
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified

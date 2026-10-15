@@ -10,6 +10,10 @@ reason: Perspicacia «Talmón»; 1Cr 9:17.
 sources:
 - it-talmon
 - 1-cronicas-9
+- esdras-2
+- nehemias-7
+- nehemias-11
+- nehemias-12
 links:
 - title: 'Perspicacia: «Talmón»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Talm%C3%B3n/
@@ -21,8 +25,9 @@ relations:
   sources:
   - 1-cronicas-9
   - it-talmon
+  - nehemias-11
   reason: 'Perspicacia «Talmón»: él y sus hermanos fueron escogidos para vivir en Jerusalén (1Cr 9:3, 17).'
-  checked_on: '2026-10-12'
+  checked_on: '2026-10-14'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-14'
 status: verified

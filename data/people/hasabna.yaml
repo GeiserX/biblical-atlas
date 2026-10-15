@@ -1,0 +1,18 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hasabna
+name: Hasabná
+names:
+- name: Hasabná
+perspicacia: '1200001901'
+summary: Jefe del pueblo, o su descendiente, que selló la promesa escrita en tiempos de Nehemías (455 a.e.c.). Su nombre es
+  una forma breve de Hasabneya.
+reason: Perspicacia «Hasabná»; Ne 10:25.
+sources:
+- it-hasabna
+- nehemias-10
+links:
+- title: 'Perspicacia: «Hasabná»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hasabn%C3%A1/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified

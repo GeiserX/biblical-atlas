@@ -16,6 +16,8 @@ distinct_from:
 - jose-hijo-de-jacob
 - jose-hijo-de-jose
 - jose-hijo-de-asaf
+- jose-descendiente-de-binui
+- jose-de-la-casa-de-sebanias
 summary: Antepasado de Jesucristo por la línea de María y descendiente de David, anterior a la caída de Jerusalén ante Babilonia.
 reason: Perspicacia «José», núm. 4; Lu 3:30.
 sources:
@@ -39,5 +41,5 @@ relations:
   reason: 'Lu 3:30: José, hijo de Jonam.'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-14'
 status: verified

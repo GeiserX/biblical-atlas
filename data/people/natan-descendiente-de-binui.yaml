@@ -1,0 +1,37 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: natan-descendiente-de-binui
+name: Natán
+names:
+- name: Natán
+perspicacia: 1200003184#6
+summary: Israelita de los hijos de Binuí. Estaba casado con extranjeras y, cuando Esdras corrigió esos matrimonios (468-467
+  a.e.c.), las despidió junto con sus hijos.
+reason: Perspicacia «Natán», núm. 6; Esd 10:39, 44.
+sources:
+- it-natan
+- esdras-10
+links:
+- title: 'Perspicacia: «Natán»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Nat%C3%A1n/
+  type: perspicacia
+relations:
+- type: kin
+  person: binui-cabeza-de-familia
+  word: ancestor
+  sources:
+  - esdras-10
+  - it-natan
+  reason: Esd 10:39 lo pone entre los hijos de Binuí; Perspicacia «Natán», núm. 6.
+  inferred: false
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified
+disambiguation: El de los hijos de Binuí de Esd 10:39; no los demás Natán que registra Perspicacia.
+distinct_from:
+- natan-de-zoba
+- natan-enviado-a-casifia
+- natan-hijo-de-atai
+- natan-hijo-de-david
+- natan-padre-de-zabud
+- natan-profeta

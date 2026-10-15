@@ -10,6 +10,15 @@ distinct_from:
 - malkias-padre-de-pasjur
 - malkiya-de-tiempos-de-david
 - malkiya-hijo-de-etni
+- malkiya-descendiente-de-harim
+- malkiya-descendiente-de-paros-1
+- malkiya-descendiente-de-paros-2
+- malkiya-hijo-de-harim
+- malkiya-hijo-de-recab
+- malkiya-orfebre
+- malkiya-junto-a-esdras
+- malkiya-sacerdote-firmante
+- malkiya-sacerdote-de-la-inauguracion
 summary: Hombre llamado «hijo del rey» que tenía una cisterna en el Patio de la Guardia. En ella, sin agua y con fango en
   el fondo, dejaron a Jeremías.
 reason: Perspicacia «Malkiya», núm. 4; Jer 38:6.
@@ -24,5 +33,5 @@ links:
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/38/
   type: bible
 relations: []
-checked_on: '2026-10-12'
+checked_on: '2026-10-14'
 status: verified

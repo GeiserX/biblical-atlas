@@ -1,0 +1,31 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: se-echan-suertes-para-poblar-jerusalen
+title: Se echan suertes para que una familia de cada diez viva en Jerusalén
+date:
+  from: -454
+  to: -454
+  precision: year
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: '455 a.e.c. (tiempo narrativo: entre el pacto de tisri y la inauguración de la muralla)'
+narrative_order:
+  series: nehemias
+  order: 111001
+places:
+- jerusalen
+people: []
+passages:
+- Ne 11:1, 2
+summary: Los príncipes ya vivían en Jerusalén. El resto del pueblo echa suertes para que una familia de cada diez se mude
+  a la ciudad santa, y el pueblo bendice a los que se ofrecen.
+reason: Perspicacia «Nehemías», núm. 3, pone el sorteo después del pacto de tisri de 455 y antes de inaugurar el muro, que
+  «Guilalai» fecha en 455.
+sources:
+- nehemias-11
+- it-nehemias
+- it-nehemias-libro
+- si-3
+- it-guilalai
+checked_on: '2026-10-14'
+status: verified

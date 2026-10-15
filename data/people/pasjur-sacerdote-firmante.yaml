@@ -1,0 +1,33 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: pasjur-sacerdote-firmante
+name: Pasjur
+names:
+- name: Pasjur
+perspicacia: 1200003396#5
+summary: Sacerdote, o antepasado de uno, que respaldó con su sello la promesa de 455 a.e.c., entre cuyos puntos estaba no
+  casarse con gente de los pueblos vecinos.
+reason: Perspicacia «Pasjur», núm. 5; Ne 10:3.
+sources:
+- it-pasjur
+- nehemias-10
+links:
+- title: 'Perspicacia: «Pasjur»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Pasjur/
+  type: perspicacia
+relations:
+- type: holds_office
+  office: priest
+  inferred: false
+  sources:
+  - nehemias-10
+  reason: 'Ne 10:8 cierra la lista: «esos son los sacerdotes».'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- pasjur-familia-sacerdotal
+- pasjur-hijo-de-imer
+- pasjur-hijo-de-malkias
+- pasjur-padre-de-guedalias
+disambiguation: Pasjur, sacerdote que, él o un descendiente, selló la promesa de Ne 10 (Perspicacia «Pasjur», núm. 5).

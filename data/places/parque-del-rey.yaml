@@ -1,0 +1,48 @@
+# biblical-atlas: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: parque-del-rey
+name: Parque del Rey
+names:
+- name: Parque del Rey
+- name: Bosque del rey
+  note: Otra lectura que da la nota de Ne 2:8.
+type: region
+lat: null
+lon: null
+precision: uncertain
+coord_source: null
+coord_url: null
+candidates:
+- name: Montes del Líbano
+  geometry:
+    type: zone
+    lat: 33.54
+    lon: 35.583611
+    radius_km: 80
+  checked_on: '2026-10-14'
+  status: favored_level_1
+  sources:
+  - it-asaf
+  - openbible-geo
+  reason: 'Perspicacia «Asaf», núm. 4: era una región boscosa, quizá en el Líbano, bajo el control del gobierno persa.'
+  coord_source: calculation
+  note: Centro en el punto de la ficha libano (OpenBible a730058). Radio nuestro, para abarcar la cordillera.
+summary: Bosque del rey persa a cargo de Asaf. Artajerjes le mandó dar a Nehemías madera para las puertas de la fortaleza
+  del templo, la muralla de Jerusalén y su casa.
+reason: 'Perspicacia «Asaf», núm. 4, y «Parque»; Ne 2:8. Perspicacia no lo sitúa con seguridad: quizá en el Líbano. Zona candidata
+  calculada.'
+not_claimed:
+- 'Que el parque estuviera con seguridad en el Líbano: Perspicacia solo lo ve posible.'
+sources:
+- it-asaf
+- it-parque
+- openbible-geo
+- nehemias-2
+links:
+- title: 'Perspicacia: «Parque»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Parque/
+  type: perspicacia
+- title: 'Perspicacia: «Asaf»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Asaf/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified

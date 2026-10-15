@@ -1,0 +1,19 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: pokeret-hazebaim
+name: Pokéret-Hazebaim
+names:
+- name: Pokéret-Hazebaim
+perspicacia: '1200003515'
+summary: Antepasado de una de las familias descendientes de siervos de Salomón; esa familia volvió del destierro con el grupo
+  de Zorobabel.
+reason: Perspicacia «Pokéret-hazebaim»; Esd 2:57.
+sources:
+- it-pokeret-hazebaim
+- esdras-2
+- nehemias-7
+links:
+- title: 'Perspicacia: «Pokéret-hazebaim»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Pok%C3%A9ret-hazebaim/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified

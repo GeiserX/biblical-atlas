@@ -1,0 +1,42 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jarib-enviado-a-casifia
+name: Jarib
+names:
+- name: Jarib
+perspicacia: 1200002331#2
+disambiguation: El jefe que Esdras envió a Casifía (Esd 8:16), núm. 2 de Perspicacia; no Jarib hijo de Simeón, llamado también
+  Jakín.
+distinct_from:
+- jakin-hijo-de-simeon
+- jarib-de-la-casa-de-jesua
+summary: Jefe del grupo de Esdras. En 468 a.e.c. fue con otros enviados del Ahavá a Casifía, y de allí volvieron levitas y
+  siervos del templo para el viaje (Esd 8:16-20).
+reason: Perspicacia «Jarib», núm. 2; Esd 8:15-20.
+sources:
+- it-jarib
+- esdras-8
+links:
+- title: 'Perspicacia: «Jarib»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jarib/
+  type: perspicacia
+relations:
+- type: accompanies
+  person: esdras
+  date:
+    from: -467
+    to: -467
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 468 a.e.c.
+  inferred: true
+  sources:
+  - esdras-8
+  - it-jarib
+  reason: 'Esd 8:15, 16: estaba en el campamento del Ahavá y Esdras lo envió a buscar levitas; Perspicacia lo pone entre los
+    que iban con Esdras.'
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-14'
+status: verified

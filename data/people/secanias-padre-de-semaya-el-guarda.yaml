@@ -1,0 +1,28 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: secanias-padre-de-semaya-el-guarda
+name: Secanías
+names:
+- name: Secanías
+perspicacia: 1200003977#7
+disambiguation: El padre de Semaya, el guarda de la Puerta Oriental (Ne 3:29), núm. 7 de Perspicacia «Secanías»; no los otros
+  Secanías que numera.
+distinct_from:
+- secanias-ayudante-de-core
+- secanias-de-tiempos-de-david
+- secanias-descendiente-de-paros
+- secanias-hijo-de-abdias
+- secanias-hijo-de-jahaziel
+- secanias-hijo-de-jehiel
+- secanias-hijo-de-ara
+- secanias-sacerdote-de-zorobabel
+summary: Padre del Semaya que guardaba la Puerta Oriental y reparó la muralla de Jerusalén.
+reason: Perspicacia «Secanías», núm. 7; Ne 3:29.
+sources:
+- it-secanias
+- nehemias-3
+links:
+- title: 'Perspicacia: «Secanías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Secan%C3%ADas/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified

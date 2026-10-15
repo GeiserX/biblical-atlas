@@ -1,0 +1,69 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hasabias-merarita
+name: Hasabías
+names:
+- name: Hasabías
+perspicacia: null
+disambiguation: El levita merarita de Esd 8:19, sin entrada en Perspicacia; quizá el Hasabías de Esd 8:24, pero no los demás
+  Hasabías.
+distinct_from:
+- hasabias-hebronita
+- hasabias-hijo-de-amasias
+- hasabias-hijo-de-jedutun
+- hasabias-hijo-de-quemuel
+- hasabias-padre-de-azricam
+- hasabias-levita-de-josias
+- hasabias-principe-de-queila
+- hasabias-levita-firmante
+- hasabias-hijo-de-matanias
+- hasabias-de-la-casa-de-hilquias
+- hasabias-jefe-de-los-levitas
+summary: Levita merarita traído desde Casifía con Jesayá y los suyos, 20 hombres en total, para el viaje de Esdras de 468
+  a.e.c. Perspicacia no le da entrada propia.
+reason: Esd 8:19; Perspicacia «Hasabías», núm. 7, lo menciona al hablar del jefe de los sacerdotes de Esd 8:24.
+sources:
+- it-hasabias
+- esdras-8
+links:
+- title: 'Perspicacia: «Hasabías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hasab%C3%ADas/
+  type: perspicacia
+relations:
+- type: kin
+  person: merari
+  word: ancestor
+  inferred: false
+  sources:
+  - esdras-8
+  reason: 'Esd 8:19: Hasabías era de los meraritas.'
+  checked_on: '2026-10-13'
+  status: verified
+- type: accompanies
+  person: esdras
+  date:
+    from: -467
+    to: -467
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 468 a.e.c.
+  inferred: false
+  sources:
+  - esdras-8
+  - it-hasabias
+  reason: 'Esd 8:19: lo trajeron con Jesayá y sus familias, 20 hombres, para el viaje de Esdras.'
+  checked_on: '2026-10-13'
+  status: verified
+- type: same_as
+  person: hasabneya-levita-de-la-confesion
+  certainty: possible
+  inferred: true
+  sources:
+  - it-hasabneya
+  - nehemias-9
+  reason: 'Perspicacia «Hasabneya», núm. 2: el levita de Ne 9:5 quizá era uno de los levitas llamados Hasabías, como este.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified

@@ -1,0 +1,35 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: esdras-entrega-las-ordenes-del-rey-a-los-satrapas
+title: Esdras entrega las órdenes del rey a los sátrapas
+date:
+  from: -467
+  to: -467
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 468 a.e.c.
+narrative_order:
+  series: esdras
+  order: 8036
+places:
+- region-al-oeste-del-eufrates
+people:
+- esdras
+present: []
+passages:
+- Esd 8:36
+summary: Hecha la entrega en el templo, Esdras y los suyos pasan las órdenes de Artajerjes a los sátrapas y gobernadores de
+  la provincia al oeste del Éufrates, que desde entonces apoyan al pueblo y a la casa de Dios.
+reason: 'Esd 8:36. Va tras la entrega en el templo (ab de 468, Esd 8:33) y antes de la asamblea del
+  20 de kislev del mismo año; el año, del estudio 3. El texto no dice dónde.'
+sources:
+- esdras-8
+- si-3
+- it-esdras
+links:
+- title: Esdras 8 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/esdras/8/
+  type: bible
+checked_on: '2026-10-14'
+status: verified

@@ -8,6 +8,15 @@ disambiguation: Baní hijo de Sémer (1Cr 6:46); no es ninguno de los otros Ban�
 distinct_from:
 - bani-descendiente-de-perez
 - bani-el-gadita
+- bani-cabeza-de-familia
+- bani-antepasado-de-doce-repatriados
+- bani-antepasado-de-seis-repatriados
+- bani-padre-de-rehum
+- bani-levita-que-explico-la-ley
+- bani-segundo-de-la-plataforma
+- bani-cabeza-del-pueblo
+- bani-levita-firmante
+- bani-hijo-de-hasabias
 summary: Levita merarita, hijo de Sémer y antepasado del Etán que David puso al servicio del santuario.
 reason: Perspicacia «Baní», núm. 1; 1Cr 6:46.
 sources:
@@ -27,5 +36,5 @@ relations:
   reason: '1Cr 6:46: Baní, «hijo de Sémer».'
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-14'
 status: verified

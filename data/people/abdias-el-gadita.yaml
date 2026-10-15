@@ -15,6 +15,9 @@ distinct_from:
 - abdias-profeta
 - abdias-levita-de-josias
 - abdias-principe-de-jehosafat
+- abdias-hijo-de-jehiel
+- abdias-sacerdote-firmante
+- abdias-portero
 summary: Gadita, el segundo de los once guerreros de Gad que cruzaron el Jordán crecido para unirse a David en el desierto,
   cuando Saúl lo perseguía.
 reason: Perspicacia «Abdías», núm. 3; 1Cr 12:8-15.
@@ -35,5 +38,5 @@ relations:
   reason: '1Cr 12:8, 9, 14: gadita que se pasó a David y llegó a ser jefe de su ejército.'
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified

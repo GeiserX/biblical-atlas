@@ -1,0 +1,39 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: zabdiel-supervisor-de-los-sacerdotes
+name: Zabdiel
+names:
+- name: Zabdiel
+perspicacia: 1200004647#2
+summary: Sacerdote destacado, de una familia importante, que estaba al frente de 128 sacerdotes valientes en Jerusalén después
+  del destierro.
+reason: Perspicacia «Zabdiel», núm. 2; Ne 11:14.
+sources:
+- it-zabdiel
+- nehemias-11
+links:
+- title: 'Perspicacia: «Zabdiel»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zabdiel/
+  type: perspicacia
+relations:
+- type: lived_in
+  place: jerusalen
+  inferred: false
+  sources:
+  - nehemias-11
+  reason: 'Ne 11:10, 14: supervisor de sacerdotes que vivían en Jerusalén.'
+  checked_on: '2026-10-14'
+  status: verified
+- type: holds_office
+  office: priest
+  inferred: false
+  sources:
+  - nehemias-11
+  - it-zabdiel
+  reason: Perspicacia «Zabdiel», núm. 2, lo llama sacerdote; Ne 11:10, 14.
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- zabdiel-padre-de-jasobeam
+disambiguation: Zabdiel, sacerdote, supervisor en Jerusalén (Ne 11:14) (Perspicacia «Zabdiel», núm. 2).

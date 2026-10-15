@@ -8,6 +8,7 @@ disambiguation: Uzá el benjamita de 1Cr 8:7; no Uzá hijo de Abinadab, que muri
 distinct_from:
 - uza-hijo-de-abinadab
 - uza-hijo-de-simei
+- uza-netineo
 summary: Benjamita, hermano de Ahihud, en la lista de los desterrados de Gueba.
 reason: Perspicacia «Uzá», núm. 1; 1Cr 8:1, 7.
 sources:
@@ -27,5 +28,5 @@ relations:
   reason: '1Cr 8:7: Uzá y Ahihud eran hijos del mismo padre.'
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified

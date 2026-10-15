@@ -1,0 +1,49 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: juan-escribe-3-juan
+title: Juan escribe su tercera carta
+date:
+  from: 98
+  to: 98
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 98 e.c.
+narrative_order:
+  series: hechos
+  order: 2982
+places:
+- efeso
+people:
+- juan-apostol
+present:
+- juan-apostol
+type: writing
+roles:
+  juan-apostol: wrote
+passages:
+- 3Jn 1
+- 3Jn 13
+summary: 'Ya anciano, el apóstol Juan escribe, probablemente desde Éfeso, a su amigo Gayo: alaba cómo acoge a los hermanos
+  que viajan, censura a Diótrefes y habla bien de Demetrio.'
+reason: 'Tabla de los libros: Éfeso o cerca, c. 98. Estudio 3, párr. 29: libre ya de Patmos, escribió el Evangelio y tres
+  cartas. «Toda Escritura», libro 64, párr. 2, lo da por escritor; Perspicacia «Juan, Cartas de»: probablemente Éfeso.'
+note: 'Pasajes: el saludo y el v. 13, donde habla de escribir. Orden 2982 de hechos, nuestro, tras 2 Juan (2981). El escrito
+  anterior a la congregación de 3Jn 9 es otro y ninguna fuente lo identifica.'
+sources:
+- 3-juan-1
+- tnm-tabla
+- si-3
+- si-3-juan
+- it-juan-cartas
+- w08-cartas-de-juan-y-judas
+links:
+- title: 'Perspicacia: «Juan, Cartas de»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Juan-Cartas-de/
+  type: perspicacia
+- title: 3 Juan 1 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/3-juan/1/
+  type: bible
+search: Juan escribe tercera carta Gayo Éfeso
+checked_on: '2026-10-14'
+status: verified

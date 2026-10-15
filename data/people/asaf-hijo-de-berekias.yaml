@@ -43,6 +43,8 @@ sources:
 - 1-cronicas-15
 - 1-cronicas-16
 - 1-cronicas-25
+- esdras-2
+- nehemias-7
 links:
 - title: 'Perspicacia: «Asaf»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Asaf/
@@ -62,11 +64,12 @@ links:
 - title: Salmo 75 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/salmos/75/
   type: bible
-checked_on: '2026-10-12'
+checked_on: '2026-10-14'
 status: verified
 distinct_from:
 - asaf-padre-de-joa
 - asaf-descendiente-de-cohat
+- asaf-guarda-del-parque
 relations:
 - type: kin
   person: berekias-hijo-de-simea

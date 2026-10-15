@@ -1,0 +1,41 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: asuero-de-esdras
+name: Asuero
+names:
+- name: Asuero
+perspicacia: 1200000142#2
+disambiguation: El rey persa de Esd 4:6, probablemente Cambises II (Perspicacia «Asuero», núm. 2); no Jerjes I, el Asuero
+  del libro de Ester.
+distinct_from:
+- jerjes-i
+- asuero-padre-de-dario-el-medo
+summary: Rey persa ante quien, al comenzar su reinado, los adversarios del pueblo judío presentaron una denuncia contra Judá
+  y Jerusalén. Perspicacia ve probable que fuera Cambises, hijo de Ciro.
+reason: Perspicacia «Asuero», núm. 2, «Artajerjes», núm. 1, y «Persia, persas»; Esd 4:6.
+sources:
+- it-asuero
+- it-artajerjes
+- it-persia
+- esdras-4
+links:
+- title: 'Perspicacia: «Asuero»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Asuero/
+  type: perspicacia
+not_claimed:
+- 'Que fuera con seguridad Cambises II: Perspicacia lo da como probable o posible, no como cierto.'
+relations:
+- type: same_as
+  person: cambises-ii
+  certainty: probable
+  inferred: true
+  sources:
+  - it-artajerjes
+  - it-persia
+  - it-asuero
+  - esdras-4
+  reason: Esd 4:6 no dice quién era. Perspicacia «Artajerjes», núm. 1, lo ve probable, «Persia, persas» cree que debió de
+    serlo y «Asuero», núm. 2, que pudo serlo.
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-14'
+status: verified

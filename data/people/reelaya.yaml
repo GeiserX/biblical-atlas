@@ -1,0 +1,30 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: reelaya
+name: Reelaya
+names:
+- name: Reelaya
+- name: Raamías
+perspicacia: '1200003671'
+summary: Nombre que aparece junto a Zorobabel y Jesúa al frente de la lista de los que volvieron en 537 a.e.c. Nehemías lo
+  escribe Raamías.
+reason: Perspicacia «Reelaya»; Esd 2:2.
+sources:
+- it-reelaya
+- esdras-2
+- nehemias-7
+links:
+- title: 'Perspicacia: «Reelaya»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Reelaya/
+  type: perspicacia
+relations:
+- type: lived_in
+  place: juda
+  inferred: false
+  sources:
+  - esdras-2
+  - nehemias-7
+  reason: 'Esd 2:1, 2: volvió con Zorobabel a Jerusalén y Judá, donde cada familia fue a su ciudad.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified

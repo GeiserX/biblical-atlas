@@ -1,0 +1,38 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: eleazar-hijo-de-finehas
+name: Eleazar
+names:
+- name: Eleazar
+perspicacia: 1200001287#5
+disambiguation: El hijo de Finehás de Esd 8:33, núm. 5 de Perspicacia; no el hijo de Aarón ni los otros Eleazar que numera.
+distinct_from:
+- eleazar-hijo-de-aaron
+- eleazar-hijo-de-abinadab
+- eleazar-hijo-de-dodo
+- eleazar-hijo-de-eliud
+- eleazar-hijo-de-mahli
+- eleazar-descendiente-de-paros
+- eleazar-sacerdote-de-la-inauguracion
+summary: Hijo de un Finehás (Esd 8:33). Cuando los de Esdras dejaron en el templo la plata, el oro y los utensilios, al
+  cuarto día de llegar en 468 a.e.c., él acompañaba a Meremot.
+reason: Perspicacia «Eleazar», núm. 5; Esd 8:33.
+sources:
+- it-eleazar
+- esdras-8
+links:
+- title: 'Perspicacia: «Eleazar»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Eleazar/
+  type: perspicacia
+relations:
+- type: kin
+  person: finehas-levita
+  word: father
+  inferred: false
+  sources:
+  - esdras-8
+  - it-eleazar
+  reason: 'Esd 8:33: Eleazar hijo de Finehás.'
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-14'
+status: verified

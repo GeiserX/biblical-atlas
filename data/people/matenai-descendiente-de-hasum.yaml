@@ -1,0 +1,35 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: matenai-descendiente-de-hasum
+name: Matenái
+names:
+- name: Matenái
+- name: Matenai
+  note: Grafía de Perspicacia.
+perspicacia: 1200002935#1
+summary: Israelita de los hijos de Hasum. Estaba casado con extranjeras y, cuando Esdras corrigió esos matrimonios (468-467
+  a.e.c.), las despidió junto con sus hijos.
+reason: Perspicacia «Matenai», núm. 1; Esd 10:33, 44.
+sources:
+- it-matenai
+- esdras-10
+links:
+- title: 'Perspicacia: «Matenai»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Matenai/
+  type: perspicacia
+relations:
+- type: kin
+  person: hasum
+  word: ancestor
+  sources:
+  - esdras-10
+  - it-matenai
+  reason: Esd 10:33 lo pone entre los hijos de Hasum; Perspicacia «Matenai», núm. 1.
+  inferred: false
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+disambiguation: El de los hijos de Hasum de Esd 10:33; no los demás Matenái que registra Perspicacia.
+distinct_from:
+- matenai-descendiente-de-bani
+- matenai-de-la-casa-de-joiarib

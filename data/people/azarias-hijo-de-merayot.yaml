@@ -1,0 +1,61 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: azarias-hijo-de-merayot
+name: Azarías
+names:
+- name: Azarías
+perspicacia: 1200000486#18
+disambiguation: Azarías hijo de Merayot (Esd 7:3), núm. 18 de Perspicacia; quizá el hijo de Johanán (núm. 14), pero no
+  ninguno de los demás Azarías que numera.
+distinct_from:
+- abednego
+- azarias-hijo-de-ahimaaz
+- azarias-hijo-de-etan
+- azarias-hijo-de-hilquias
+- azarias-hijo-de-jehohanan
+- azarias-hijo-de-jehu
+- azarias-hijo-de-natan
+- azarias-hijo-de-sadoc
+- azarias-hijo-de-sofonias
+- azarias-sacerdote-repatriado
+- jaazanias-jefe-militar
+- ocozias-de-juda
+- uzias
+- seraya-repatriado
+- azarias-hijo-de-jehalelel
+- azarias-hijo-de-jeroham
+- azarias-hijo-de-obed
+- azarias-hijo-de-oded
+- azarias-padre-de-joel
+- azarias-quinto-hijo-de-jehosafat
+- azarias-sacerdote-de-tiempos-de-uzias
+- azarias-segundo-hijo-de-jehosafat
+- azarias-hijo-de-maaseya
+- azarias-levita-que-explico-la-ley
+- azarias-sacerdote-firmante
+- azarias-de-la-procesion-del-muro
+summary: Sacerdote de la línea de Aarón que la genealogía de Esdras pone entre Merayot y Amarías. Perspicacia lo da como hijo
+  de Merayot y antepasado de Esdras; quizá sea el Azarías hijo de Johanán.
+reason: Perspicacia «Azarías», núm. 18, y «Amarías», núm. 4; Esd 7:3 y su referencia marginal.
+sources:
+- it-azarias
+- esdras-7
+- it-merayot
+- it-amarias
+links:
+- title: 'Perspicacia: «Azarías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Azar%C3%ADas/
+  type: perspicacia
+relations:
+- type: kin
+  person: merayot-hijo-de-zerahias
+  word: father
+  inferred: false
+  sources:
+  - esdras-7
+  - it-azarias
+  - it-merayot
+  reason: Esd 7:3 lo llama hijo de Merayot; Perspicacia «Azarías», núm. 18, lo recoge así, y «Merayot», núm. 1, cita ese versículo.
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-14'
+status: verified

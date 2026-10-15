@@ -15,6 +15,9 @@ distinct_from:
 - abdias-padre-de-ismaya
 - abdias-principe-de-jehosafat
 - abdias-levita-de-josias
+- abdias-hijo-de-jehiel
+- abdias-sacerdote-firmante
+- abdias-portero
 summary: Encargado de la casa del rey Acab, que temía mucho a Jehová. Cuando Jezabel mataba a los profetas, escondió a cien
   en cuevas y los sustentó. En la sequía se encontró con Elías y avisó al rey.
 reason: Perspicacia «Abdías», núm. 4; 1Re 18:3-16.
@@ -39,5 +42,5 @@ relations:
   reason: '1Re 18:3, 8-10: llevaba la casa de Acab y lo llama su señor; Perspicacia «Abdías», núm. 4, llama a Acab su amo.'
   checked_on: '2026-09-30'
   status: verified
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified

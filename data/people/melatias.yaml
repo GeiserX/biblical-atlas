@@ -1,0 +1,45 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: melatias
+name: Melatías
+names:
+- name: Melatías
+perspicacia: '1200002968'
+summary: Gabaonita que en 455 a.e.c. reparó con Jadón un tramo de la muralla de Jerusalén. Los de Gabaón y Mizpá estaban bajo
+  el gobernador persa de la región al oeste del Éufrates.
+reason: Perspicacia «Melatías»; Ne 3:7.
+sources:
+- it-melatias
+- nehemias-3
+links:
+- title: 'Perspicacia: «Melatías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Melat%C3%ADas/
+  type: perspicacia
+relations:
+- type: lived_in
+  place: gabaon
+  inferred: false
+  sources:
+  - nehemias-3
+  - it-melatias
+  reason: 'Ne 3:7: Melatías el gabaonita; eran hombres de Gabaón y de Mizpá.'
+  checked_on: '2026-10-14'
+  status: verified
+- type: accompanies
+  person: jadon
+  word: fellow_worker
+  date:
+    from: -454
+    to: -454
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 455 a.e.c.
+  inferred: false
+  sources:
+  - nehemias-3
+  reason: 'Ne 3:7: Melatías y Jadón repararon juntos el mismo tramo.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified

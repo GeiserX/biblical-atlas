@@ -1,0 +1,24 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: uza-netineo
+name: Uzá
+names:
+- name: Uzá
+perspicacia: 1200004530#3
+summary: Sus descendientes, siervos del templo o netineos, se cuentan entre los que volvieron de Babilonia en 537 a.e.c.
+reason: Perspicacia «Uzá», núm. 3; Esd 2:49.
+sources:
+- it-uza
+- esdras-2
+- nehemias-7
+links:
+- title: 'Perspicacia: «Uzá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Uz%C3%A1/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- uza-de-benjamin
+- uza-hijo-de-abinadab
+- uza-hijo-de-simei
+disambiguation: 'Uzá núm. 3 de Perspicacia: cabeza de una familia de netineos (Esd 2:49), no el benjaminita ni el que tocó
+  el Arca.'

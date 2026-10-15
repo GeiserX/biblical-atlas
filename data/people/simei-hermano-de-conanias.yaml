@@ -21,6 +21,10 @@ distinct_from:
 - simei-hijo-de-zacur
 - simei-padre-de-jaquim
 - simei-partidario-de-david
+- simei-antepasado-de-mardoqueo
+- simei-descendiente-de-binui
+- simei-descendiente-de-hasum
+- simei-levita-de-tiempos-de-esdras
 summary: Levita, hermano de Conanías y el segundo después de él al cuidado de las contribuciones y los diezmos que llegaron
   al templo en el reinado de Ezequías.
 reason: Perspicacia «Simeí», núm. 14; 2Cr 31:12, 13.
@@ -43,5 +47,5 @@ relations:
     de Hemán que limpió el templo.
   checked_on: '2026-10-13'
   status: verified
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified

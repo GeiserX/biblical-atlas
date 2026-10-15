@@ -1,0 +1,31 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: mardoqueo-repatriado
+name: Mardoqueo
+names:
+- name: Mardoqueo
+perspicacia: 1200003111#1
+summary: Jefe israelita que volvió del destierro con Zorobabel en 537 a.e.c. y figura en el primer registro de los repatriados.
+reason: Perspicacia «Mardoqueo», núm. 1; Esd 2:1, 2.
+sources:
+- it-mardoqueo
+- esdras-2
+- nehemias-7
+links:
+- title: 'Perspicacia: «Mardoqueo»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Mardoqueo/
+  type: perspicacia
+relations:
+- type: lived_in
+  place: juda
+  inferred: false
+  sources:
+  - esdras-2
+  - nehemias-7
+  reason: 'Esd 2:1, 2: volvió con Zorobabel a Jerusalén y Judá, donde cada familia fue a su ciudad.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- mardoqueo
+disambiguation: 'Mardoqueo núm. 1 de Perspicacia: jefe que volvió con Zorobabel en 537 (Esd 2:2), no el primo de Ester.'

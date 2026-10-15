@@ -1,0 +1,22 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: paros
+name: Parós
+names:
+- name: Parós
+perspicacia: '1200003387'
+summary: Fundador de una familia israelita. En 537 a.e.c. volvieron a Jerusalén con Zorobabel 2.172 de sus descendientes.
+reason: Perspicacia «Parós»; Esd 2:3.
+sources:
+- it-paros
+- esdras-2
+- esdras-8
+- esdras-10
+- nehemias-7
+- nehemias-10
+links:
+- title: 'Perspicacia: «Parós»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Par%C3%B3s/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified
+relations: []

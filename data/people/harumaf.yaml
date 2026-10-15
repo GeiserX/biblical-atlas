@@ -1,0 +1,17 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: harumaf
+name: Harumaf
+names:
+- name: Harumaf
+perspicacia: '1200001896'
+summary: Padre, o antepasado, del Jedayá que reparó la muralla de Jerusalén enfrente de su casa.
+reason: Perspicacia «Harumaf»; Ne 3:10.
+sources:
+- it-harumaf
+- nehemias-3
+links:
+- title: 'Perspicacia: «Harumaf»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Harumaf/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified

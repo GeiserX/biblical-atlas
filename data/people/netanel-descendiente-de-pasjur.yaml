@@ -1,0 +1,66 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: netanel-descendiente-de-pasjur
+name: Netanel
+names:
+- name: Netanel
+perspicacia: 1200003236#9
+summary: Sacerdote de los hijos de Pasjur. Estaba casado con extranjeras y, cuando Esdras corrigió esos matrimonios (468-467
+  a.e.c.), las despidió junto con sus hijos. Perspicacia ve posible que sea el músico Netanel de la procesión del muro (Ne
+  12:36).
+reason: Perspicacia «Netanel», núm. 9; Esd 10:22, 44.
+sources:
+- it-netanel
+- esdras-10
+- nehemias-12
+links:
+- title: 'Perspicacia: «Netanel»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Netanel/
+  type: perspicacia
+relations:
+- type: kin
+  person: pasjur-familia-sacerdotal
+  word: ancestor
+  sources:
+  - esdras-10
+  - it-netanel
+  reason: Esd 10:22 lo pone entre los hijos de Pasjur; Perspicacia «Netanel», núm. 9. «Hijos» vale aquí por descendientes,
+    como dice Perspicacia «Harim», núm. 1.
+  inferred: false
+  checked_on: '2026-10-13'
+  status: verified
+- type: holds_office
+  office: priest
+  sources:
+  - esdras-10
+  - it-netanel
+  reason: 'Esd 10:18-22: va en la lista de los hijos de los sacerdotes; Perspicacia lo llama sacerdote.'
+  inferred: false
+  checked_on: '2026-10-13'
+  status: verified
+- type: same_as
+  person: netanel-musico-de-la-procesion
+  certainty: possible
+  inferred: true
+  sources:
+  - it-netanel
+  - nehemias-12
+  reason: 'Perspicacia «Netanel», núm. 9 y 10: es posible que el músico de Ne 12:36 sea este sacerdote.'
+  checked_on: '2026-10-14'
+  status: verified
+history:
+- date: '2026-10-14'
+  change: Perspicacia «Netanel», núm. 9, lo ve posible igual al núm. 10, el músico de Ne 12:36, no al núm. 8, cabeza de la
+    casa de Jedayá.
+  source: nehemias-12
+checked_on: '2026-10-14'
+status: verified
+disambiguation: El sacerdote de los hijos de Pasjur de Esd 10:22; no los demás Netanel que registra Perspicacia.
+distinct_from:
+- netanel-hijo-de-jese
+- netanel-hijo-de-obed-edom
+- netanel-hijo-de-zuar
+- netanel-levita-de-josias
+- netanel-padre-de-semaya
+- netanel-principe-de-jehosafat
+- netanel-trompetista
+- netanel-de-la-casa-de-jedaya

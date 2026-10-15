@@ -1,0 +1,22 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: necoda-sin-registro
+name: Necodá
+names:
+- name: Necodá
+perspicacia: 1200003219#2
+summary: Antepasado de un grupo que no supo indicar su casa paterna. Perspicacia lo cree distinto del Necodá de los netineos.
+reason: Perspicacia «Neqodá», núm. 2; Esd 2:60.
+sources:
+- it-neqoda
+- esdras-2
+- nehemias-7
+links:
+- title: 'Perspicacia: «Neqodá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Neqod%C3%A1/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- necoda-netineo
+disambiguation: 'Neqodá núm. 2 de Perspicacia, Necodá en la TNM: el de los que no probaron su origen (Esd 2:60), no el de
+  los netineos.'

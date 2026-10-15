@@ -28,6 +28,12 @@ distinct_from:
 - azarias-quinto-hijo-de-jehosafat
 - azarias-sacerdote-repatriado
 - azarias-segundo-hijo-de-jehosafat
+- seraya-repatriado
+- azarias-hijo-de-merayot
+- azarias-hijo-de-maaseya
+- azarias-levita-que-explico-la-ley
+- azarias-sacerdote-firmante
+- azarias-de-la-procesion-del-muro
 date:
   from: -897
   to: -897
@@ -57,5 +63,5 @@ relations:
   reason: 2Cr 23:1 lo llama Azarías hijo de Obed.
   checked_on: '2026-10-13'
   status: verified
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified

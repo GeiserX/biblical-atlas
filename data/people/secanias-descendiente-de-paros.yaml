@@ -1,0 +1,42 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: secanias-descendiente-de-paros
+name: Secanías
+names:
+- name: Secanías
+perspicacia: 1200003977#4
+disambiguation: La casa de Secanías, de los hijos de Parós, que volvió con Esdras (Esd 8:3), núm. 4 de Perspicacia; no los
+  otros Secanías que numera.
+distinct_from:
+- secanias-de-tiempos-de-david
+- secanias-hijo-de-abdias
+- secanias-hijo-de-jahaziel
+- secanias-ayudante-de-core
+- secanias-hijo-de-jehiel
+- secanias-padre-de-semaya-el-guarda
+- secanias-hijo-de-ara
+- secanias-sacerdote-de-zorobabel
+summary: Antepasado que da nombre a una casa paterna de los hijos de Parós. De ella volvieron con Esdras Zacarías y 150 varones
+  en 468 a.e.c.
+reason: Perspicacia «Secanías», núm. 4; Esd 8:3.
+sources:
+- it-secanias
+- esdras-8
+- it-paros
+links:
+- title: 'Perspicacia: «Secanías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Secan%C3%ADas/
+  type: perspicacia
+relations:
+- type: kin
+  person: paros
+  word: ancestor
+  inferred: false
+  sources:
+  - esdras-8
+  - it-secanias
+  - it-paros
+  reason: 'Esd 8:3: Secanías era de los hijos de Parós.'
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-14'
+status: verified

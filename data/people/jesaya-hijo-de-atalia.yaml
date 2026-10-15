@@ -1,0 +1,63 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jesaya-hijo-de-atalia
+name: Jesayá
+names:
+- name: Jesayá
+perspicacia: 1200002438#4
+disambiguation: El hijo de Atalía, de la casa de Elam (Esd 8:7), núm. 4 de Perspicacia; no el levita merarita de Esd 8:19
+  ni los otros Jesayá.
+distinct_from:
+- jesaya-descendiente-de-eliezer
+- jesaya-hijo-de-hananias
+- jesaya-hijo-de-jedutun
+- jesaya-merarita
+- jesaya-benjaminita
+summary: Hijo de Atalía y cabeza de la casa de Elam. Volvió con Esdras en 468 a.e.c. con 70 varones.
+reason: Perspicacia «Jesayá», núm. 4; Esd 8:1, 7.
+sources:
+- it-jesaya
+- esdras-8
+links:
+- title: 'Perspicacia: «Jesayá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jesay%C3%A1/
+  type: perspicacia
+relations:
+- type: kin
+  person: atalia-padre-de-jesaya
+  word: father
+  inferred: false
+  sources:
+  - esdras-8
+  - it-jesaya
+  reason: 'Esd 8:7: Jesayá hijo de Atalía.'
+  checked_on: '2026-10-13'
+  status: verified
+- type: kin
+  person: elam-cabeza-de-familia
+  word: ancestor
+  inferred: false
+  sources:
+  - esdras-8
+  - it-jesaya
+  reason: 'Esd 8:7: de los hijos de Elam.'
+  checked_on: '2026-10-13'
+  status: verified
+- type: accompanies
+  person: esdras
+  date:
+    from: -467
+    to: -467
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 468 a.e.c.
+  inferred: false
+  sources:
+  - esdras-8
+  - it-jesaya
+  reason: 'Esd 8:1, 7: subió con Esdras con 70 varones.'
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-14'
+status: verified

@@ -1,0 +1,58 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: serebias-jefe-de-los-sacerdotes
+name: Serebías
+names:
+- name: Serebías
+perspicacia: null
+summary: Uno de los doce jefes de los sacerdotes a los que Esdras, en 468 a.e.c., confió la plata, el oro y los objetos donados
+  para el templo, que llevaron desde el Ahavá hasta Jerusalén.
+reason: 'Esd 8:24-30. Perspicacia no le da entrada propia: en «Serebías», núm. 2, lo ve probablemente el levita de Esd 8:18.'
+sources:
+- esdras-8
+- it-serebias
+links:
+- title: 'Perspicacia: «Serebías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sereb%C3%ADas/
+  type: perspicacia
+relations:
+- type: holds_office
+  office: priest
+  inferred: false
+  sources:
+  - esdras-8
+  reason: Esd 8:24 lo nombra, con Hasabías, entre los doce jefes de los sacerdotes.
+  checked_on: '2026-10-14'
+  status: verified
+- type: accompanies
+  person: esdras
+  date:
+    from: -467
+    to: -467
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 468 a.e.c.
+  inferred: false
+  sources:
+  - esdras-8
+  reason: 'Esd 8:24-30: recibió su parte de las ofrendas junto al Ahavá y la custodió en el viaje a Jerusalén.'
+  checked_on: '2026-10-14'
+  status: verified
+- type: same_as
+  person: serebias-levita-que-explico-la-ley
+  certainty: possible
+  inferred: true
+  sources:
+  - it-serebias
+  - nehemias-8
+  reason: Perspicacia «Serebías» ve posible que el núm. 3 (Ne 8:7) sea el núm. 2, y probable que este sea el jefe de los sacerdotes;
+    la unión queda posible.
+  checked_on: '2026-10-14'
+  status: verified
+disambiguation: El jefe de los sacerdotes al que Esdras confió los donativos (Esd 8:24); no el levita Serebías que volvió
+  con Zorobabel.
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- serebias-levita-de-zorobabel

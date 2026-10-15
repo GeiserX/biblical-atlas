@@ -11,6 +11,9 @@ distinct_from:
 - hilquias-padre-de-eliaquim
 - hilquias-padre-de-guemarias
 - hilquias-padre-de-jeremias
+- hilquias-junto-a-esdras
+- hilquias-familia-sacerdotal
+- hilquias-sacerdote-de-zorobabel
 summary: Levita merarita, hijo de Amzí y antepasado de Etán, el cantor que nombró David.
 reason: Perspicacia «Hilquías», núm. 1; 1Cr 6:45, 46.
 sources:
@@ -30,5 +33,5 @@ relations:
   reason: '1Cr 6:45, 46: Hilquías, «hijo de Amzí».'
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-14'
 status: verified

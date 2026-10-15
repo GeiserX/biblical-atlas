@@ -9,6 +9,7 @@ reason: Perspicacia «Zerahías», núm. 1; 1Cr 6:6, 51.
 sources:
 - it-zerahias
 - 1-cronicas-6
+- esdras-7
 links:
 - title: 'Perspicacia: «Zerahías»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zerah%C3%ADas/
@@ -20,8 +21,12 @@ relations:
   inferred: false
   sources:
   - 1-cronicas-6
+  - esdras-7
   reason: 1Cr 6:6 lo da como hijo de Uzí.
-  checked_on: '2026-10-12'
+  checked_on: '2026-10-13'
   status: verified
-checked_on: '2026-10-12'
+disambiguation: El sacerdote hijo de Uzí, antepasado de Esdras (1Cr 6:6; Esd 7:4), núm. 1 de Perspicacia; no el padre de Elieho-Enái.
+checked_on: '2026-10-13'
 status: verified
+distinct_from:
+- zerahias-padre-de-elieho-enai

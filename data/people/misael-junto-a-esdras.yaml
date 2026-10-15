@@ -1,0 +1,23 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: misael-junto-a-esdras
+name: Misael
+names:
+- name: Misael
+perspicacia: 1200003078#3
+disambiguation: El Misael que acompañó a Esdras en la lectura de la Ley (Ne 8:4); no el levita hijo de Uziel ni el compañero
+  de Daniel llamado Mesac.
+distinct_from:
+- mesac
+- misael-hijo-de-uziel
+summary: Uno de los hombres que estaban a la izquierda de Esdras, en la plataforma, mientras él leía el libro de la Ley a
+  los judíos repatriados.
+reason: Perspicacia «Misael», núm. 3; Ne 8:4.
+sources:
+- it-misael
+- nehemias-8
+links:
+- title: 'Perspicacia: «Misael»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Misael/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified

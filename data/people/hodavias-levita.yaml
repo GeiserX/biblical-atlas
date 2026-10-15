@@ -1,0 +1,35 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hodavias-levita
+name: Hodavías
+names:
+- name: Hodavías
+- name: Hodevá
+- name: Judá
+perspicacia: 1200002048#4
+summary: 'Cabeza de una familia de levitas: 74 de sus descendientes volvieron de Babilonia en 537 a.e.c. Nehemías lo llama
+  Hodevá, y Esdras 3, Judá.'
+reason: Perspicacia «Hodavías», núm. 4; Esd 2:40.
+sources:
+- it-hodavias
+- esdras-2
+- it-juda
+- esdras-3
+- nehemias-7
+links:
+- title: 'Perspicacia: «Hodavías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hodav%C3%ADas/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- hodavias-de-manases
+- hodavias-hijo-de-elioenai
+- hodavias-hijo-de-hasenua
+- juda-hijo-de-jacob
+- juda-levita-de-tiempos-de-esdras
+- juda-hijo-de-hasenua
+- juda-de-la-procesion-del-muro
+- juda-levita-de-zorobabel
+- juda-musico-de-la-procesion
+disambiguation: 'Hodavías núm. 4 de Perspicacia, también Hodevá y Judá: el antepasado de los levitas de Esd 2:40, no el patriarca
+  hijo de Jacob.'

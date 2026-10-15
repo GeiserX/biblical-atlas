@@ -10,6 +10,11 @@ reason: 'Perspicacia «Hamán»: agaguita, quizá amalequita de linaje real; dec
 sources:
 - it-haman
 - ester-3
+- ester-5
+- ester-6
+- ester-7
+- ester-8
+- ester-9
 links:
 - title: 'Perspicacia: «Hamán»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ham%C3%A1n/
@@ -26,8 +31,73 @@ relations:
   sources:
   - it-haman
   - ester-3
+  - ester-5
+  - it-susa
   reason: Est 3:15 publica su decreto en Susa y Perspicacia «Hamán» lo pone al servicio de Asuero allí.
-  checked_on: '2026-09-28'
+  checked_on: '2026-10-14'
   status: verified
-checked_on: '2026-09-28'
+- type: kin
+  person: hamedata
+  word: father
+  sources:
+  - ester-3
+  - it-hamedata
+  - ester-8
+  - ester-9
+  - it-haman
+  reason: Est 3:1, 10 lo llaman hijo de Hamedata el agaguita.
+  inferred: false
+  checked_on: '2026-10-14'
+  status: verified
+- type: tie
+  person: jerjes-i
+  word: master
+  sources:
+  - ester-3
+  - it-haman
+  - ester-6
+  reason: 'Est 3:1, 2: Asuero lo asciende sobre todos los príncipes y manda que se postren ante él. Perspicacia «Hamán» lo
+    llama siervo del rey y primer ministro.'
+  inferred: false
+  checked_on: '2026-10-14'
+  status: verified
+- type: tie
+  person: mardoqueo
+  word: enemy
+  sources:
+  - ester-3
+  - ester-5
+  - it-mardoqueo
+  - ester-6
+  - it-haman
+  - it-agaguita
+  reason: 'Est 3:5, 6: furioso porque Mardoqueo no se postra, busca su muerte y la de su pueblo; en 5:9-14 hace levantar un
+    madero para colgarlo.'
+  inferred: false
+  checked_on: '2026-10-14'
+  status: verified
+- type: kin
+  person: zeres
+  word: wife
+  sources:
+  - ester-5
+  - it-zeres
+  - ester-6
+  reason: 'Est 5:10, 14: su esposa Zeres le aconseja, con sus amigos, el madero para Mardoqueo.'
+  inferred: false
+  checked_on: '2026-10-14'
+  status: verified
+- type: died_in
+  place: susa
+  sources:
+  - ester-7
+  - it-haman
+  - it-susa
+  reason: 'Est 7:9, 10: lo colgaron en el madero que había levantado en su casa. El texto no nombra el sitio; Perspicacia
+    «Susa» hace de Susa el marco del libro.'
+  inferred: true
+  checked_on: '2026-10-14'
+  status: verified
+perspicacia: '1200001833'
+checked_on: '2026-10-14'
 status: verified

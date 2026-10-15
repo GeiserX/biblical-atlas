@@ -23,5 +23,8 @@ relations:
   reason: '1Cr 9:4: Imrí, hijo de Baní.'
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+disambiguation: El judaíta hijo de Baní (1Cr 9:4), núm. 1 de Perspicacia «Imrí»; no el padre de Zacur.
+checked_on: '2026-10-14'
 status: verified
+distinct_from:
+- imri-padre-de-zacur

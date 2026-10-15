@@ -1,0 +1,39 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: colhoze-hijo-de-hazaya
+name: Colhozé
+names:
+- name: Colhozé
+perspicacia: 1200001006#2
+summary: Judaíta, hijo de Hazaya, del linaje de Maaseya. Perspicacia ve posible que sea el padre del Salún que reparó el muro
+  (Ne 3:15).
+reason: Perspicacia «Colhozé», núm. 2; Ne 11:5.
+sources:
+- it-colhoze
+- nehemias-11
+links:
+- title: 'Perspicacia: «Colhozé»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Colhoz%C3%A9/
+  type: perspicacia
+relations:
+- type: kin
+  person: hazaya
+  word: father
+  inferred: false
+  sources:
+  - nehemias-11
+  - it-colhoze
+  reason: 'Ne 11:5: Colhozé, hijo de Hazaya; Perspicacia «Colhozé», núm. 2.'
+  checked_on: '2026-10-14'
+  status: verified
+- type: same_as
+  person: colhoze-padre-de-salun
+  certainty: possible
+  inferred: true
+  sources:
+  - nehemias-11
+  - it-colhoze
+  reason: 'Perspicacia «Colhozé», núm. 2: el de Ne 11:5 quizá es el núm. 1, el padre de Salún.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified

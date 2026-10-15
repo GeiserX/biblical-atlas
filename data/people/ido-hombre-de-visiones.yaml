@@ -11,6 +11,8 @@ distinct_from:
 - ido-padre-de-berekias
 - ido-hijo-de-joa
 - ido-hijo-de-zacarias
+- ido-de-casifia
+- ido-sacerdote-de-zorobabel
 summary: Hombre de visiones. Crónicas saca de sus escritos datos de los reinados de Salomón, Rehoboam y Abías; unas de sus
   visiones trataban de Jeroboán hijo de Nebat.
 reason: Perspicacia «Idó», núm. 3; 2Cr 9:29; 12:15; 13:22.
@@ -23,7 +25,7 @@ links:
 - title: 'Perspicacia: «Idó»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Id%C3%B3/
   type: perspicacia
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified
 relations:
 - type: holds_office

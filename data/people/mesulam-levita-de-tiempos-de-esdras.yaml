@@ -1,0 +1,41 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: mesulam-levita-de-tiempos-de-esdras
+name: Mesulam
+names:
+- name: Mesulam
+perspicacia: 1200003014#14
+summary: Levita de los días de Esdras que, con Sabetái, apoyó a Jonatán y Jahzeya. Perspicacia duda si se oponían a la exhortación
+  o solo al modo de llevarla a cabo.
+reason: Perspicacia «Mesulam», núm. 14; Esd 10:15.
+sources:
+- it-mesulam
+- esdras-10
+links:
+- title: 'Perspicacia: «Mesulam»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Mesulam/
+  type: perspicacia
+relations: []
+checked_on: '2026-10-14'
+status: verified
+disambiguation: El levita de Esd 10:15; no los demás Mesulam que registra Perspicacia.
+distinct_from:
+- mesulam-abuelo-de-safan
+- mesulam-descendiente-de-bani
+- mesulam-enviado-a-casifia
+- mesulam-hijo-de-abihail
+- mesulam-hijo-de-elpaal
+- mesulam-hijo-de-hodavias
+- mesulam-hijo-de-mesilemit
+- mesulam-hijo-de-sefatias
+- mesulam-hijo-de-zorobabel
+- mesulam-levita-de-josias
+- salum-hijo-de-sadoc
+- mesulam-hijo-de-berekias
+- mesulam-hijo-de-besodeya
+- mesulam-junto-a-esdras
+- mesulam-cabeza-del-pueblo
+- mesulam-sacerdote-firmante
+- mesulam-de-la-casa-de-esdras
+- mesulam-de-la-casa-de-guineton
+- mesulam-de-la-procesion-del-muro
+- mesulam-portero

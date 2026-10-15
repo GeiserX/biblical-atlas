@@ -24,9 +24,10 @@ relations:
   reason: 1Cr 7:2 lo cuenta entre los hijos de Tolá.
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-14'
 status: verified
 distinct_from:
 - rafa-hijo-de-binea
 - refaya-hijo-de-isi
 - refaya-hijo-de-jesaya
+- refaya-hijo-de-hur

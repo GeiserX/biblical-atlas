@@ -26,7 +26,7 @@ relations:
   reason: '1Cr 26:11: el segundo de los hijos de Hosá.'
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-14'
 status: verified
 distinct_from:
 - hilquias-hijo-de-amzi
@@ -34,3 +34,6 @@ distinct_from:
 - hilquias-padre-de-eliaquim
 - hilquias-padre-de-guemarias
 - hilquias-padre-de-jeremias
+- hilquias-junto-a-esdras
+- hilquias-familia-sacerdotal
+- hilquias-sacerdote-de-zorobabel

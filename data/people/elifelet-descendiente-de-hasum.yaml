@@ -1,0 +1,36 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: elifelet-descendiente-de-hasum
+name: Elifélet
+names:
+- name: Elifélet
+perspicacia: 1200001315#6
+summary: Israelita de los hijos de Hasum. Estaba casado con extranjeras y, cuando Esdras corrigió esos matrimonios (468-467
+  a.e.c.), las despidió junto con sus hijos.
+reason: Perspicacia «Elifélet», núm. 6; Esd 10:33, 44.
+sources:
+- it-elifelet
+- esdras-10
+links:
+- title: 'Perspicacia: «Elifélet»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Elif%C3%A9let/
+  type: perspicacia
+relations:
+- type: kin
+  person: hasum
+  word: ancestor
+  sources:
+  - esdras-10
+  - it-elifelet
+  reason: Esd 10:33 lo pone entre los hijos de Hasum; Perspicacia «Elifélet», núm. 6.
+  inferred: false
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified
+disambiguation: El de los hijos de Hasum de Esd 10:33; no los demás Elifélet que registra Perspicacia.
+distinct_from:
+- elifelet-descendiente-de-adonicam
+- elifelet-hijo-de-ahasbai
+- elifelet-hijo-de-david
+- elifelet-hijo-de-eshec
+- elpelet

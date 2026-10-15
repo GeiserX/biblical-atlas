@@ -1,0 +1,34 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: bebai-cabeza-de-familia
+name: Bebái
+names:
+- name: Bebái
+- name: Bebai
+  note: Grafía de Perspicacia.
+perspicacia: 1200000594#1
+summary: Cabeza de una casa de la que 623 personas según Esd 2, 628 según Ne 7, llegaron a Jerusalén en el grupo de Zorobabel
+  (537 a.e.c.).
+reason: Perspicacia «Bebai», núm. 1; Esd 2:11.
+sources:
+- it-bebai
+- esdras-2
+- esdras-8
+- esdras-10
+- nehemias-7
+- it-nehemias-libro
+links:
+- title: 'Perspicacia: «Bebai»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Bebai/
+  type: perspicacia
+history:
+- date: '2026-10-14'
+  change: El resumen daba como hecho la cifra de Esd 2; Ne 7 da otra. Perspicacia «Nehemías, Libro de» ve posible que las
+    dos listas salgan de registros distintos.
+  source: nehemias-7
+checked_on: '2026-10-14'
+status: verified
+disambiguation: El cabeza de la casa de Bebái de Esd 2:11 y 8:11, núm. 1 de Perspicacia; no el representante que firmó el
+  pacto de Ne 10:15.
+relations: []
+distinct_from:
+- bebai-cabeza-del-pueblo

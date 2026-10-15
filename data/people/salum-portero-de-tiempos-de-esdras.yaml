@@ -1,0 +1,34 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: salum-portero-de-tiempos-de-esdras
+name: Salum
+names:
+- name: Salum
+perspicacia: 1200003933#11
+summary: Portero de los días de Esdras. Estaba casado con extranjeras y, cuando se corrigieron esos matrimonios (468-467 a.e.c.),
+  las despidió junto con sus hijos. Perspicacia cree probable algún parentesco con Salum, el jefe de los porteros.
+reason: Perspicacia «Salum», núm. 11; Esd 10:24, 44.
+sources:
+- it-salum
+- esdras-10
+links:
+- title: 'Perspicacia: «Salum»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Salum/
+  type: perspicacia
+relations: []
+checked_on: '2026-10-14'
+status: verified
+disambiguation: El portero de Esd 10:24, de los días de Esdras; no los demás Salum que registra Perspicacia.
+distinct_from:
+- jehoacaz-de-juda
+- salum-de-israel
+- salum-descendiente-de-binui
+- salum-hijo-de-sadoc
+- salum-hijo-de-shaul
+- salum-hijo-de-sismai
+- salum-hijo-de-ticva
+- salum-jefe-de-los-porteros
+- salum-padre-de-jehizquias
+- salum-padre-de-maaseya
+- salum-tio-de-jeremias
+- silem
+- salum-hijo-de-halohes

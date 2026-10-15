@@ -1,0 +1,51 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: mesulam-de-la-procesion-del-muro
+name: Mesulam
+names:
+- name: Mesulam
+perspicacia: 1200003014#21
+summary: Uno de los que marcharon sobre el muro en la procesión que Nehemías organizó para inaugurarlo. Perspicacia ve posible
+  que sea el jefe que Esdras mandó a Casifía.
+reason: Perspicacia «Mesulam», núm. 21; Ne 12:31, 33.
+sources:
+- it-mesulam
+- nehemias-12
+links:
+- title: 'Perspicacia: «Mesulam»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Mesulam/
+  type: perspicacia
+relations:
+- type: same_as
+  person: mesulam-enviado-a-casifia
+  certainty: possible
+  inferred: true
+  sources:
+  - it-mesulam
+  - nehemias-12
+  reason: Perspicacia «Mesulam», núm. 21, remite al núm. 13, el enviado a Casifía, que quizá sea el mismo.
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- mesulam-abuelo-de-safan
+- mesulam-cabeza-del-pueblo
+- mesulam-de-la-casa-de-esdras
+- mesulam-de-la-casa-de-guineton
+- mesulam-descendiente-de-bani
+- mesulam-hijo-de-abihail
+- mesulam-hijo-de-berekias
+- mesulam-hijo-de-besodeya
+- mesulam-hijo-de-elpaal
+- mesulam-hijo-de-hodavias
+- mesulam-hijo-de-mesilemit
+- mesulam-hijo-de-sefatias
+- mesulam-hijo-de-zorobabel
+- mesulam-junto-a-esdras
+- mesulam-levita-de-josias
+- mesulam-levita-de-tiempos-de-esdras
+- mesulam-portero
+- mesulam-sacerdote-firmante
+- salum-hijo-de-sadoc
+disambiguation: 'Mesulam núm. 21 de Perspicacia: el de la procesión del muro (Ne 12:33); no los demás Mesulam que registra
+  Perspicacia «Mesulam».'

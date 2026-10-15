@@ -1,0 +1,29 @@
+# biblical-atlas: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: azmavet
+name: Azmávet
+names:
+- name: Azmávet
+- name: Bet-Azmávet
+  note: Otro nombre que da Perspicacia «Azmávet», núm. 5.
+type: city
+lat: 31.835
+lon: 35.261944
+precision: point
+coord_source: openbible:a3d7871
+coord_url: https://www.openbible.info/geo/ancient/a3d7871/azmaveth
+coord_note: Hizma, primera identificación de OpenBible; Perspicacia la identifica con Hizmeh (Hizma).
+summary: Ciudad de Benjamín, unos 8 km al nornoreste de Jerusalén, entre Gueba y Anatot. Algunos de sus habitantes volvieron
+  del destierro en 537 a.e.c.
+reason: 'Perspicacia «Azmávet», núm. 5; Esd 2:24. OpenBible: solo el punto.'
+sources:
+- it-azmavet
+- openbible-geo
+- esdras-2
+- nehemias-7
+- nehemias-12
+links:
+- title: 'Perspicacia: «Azmávet»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Azm%C3%A1vet/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified

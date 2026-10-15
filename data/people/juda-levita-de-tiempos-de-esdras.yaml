@@ -1,0 +1,27 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: juda-levita-de-tiempos-de-esdras
+name: Judá
+names:
+- name: Judá
+perspicacia: 1200002538#6
+summary: Levita de los días de Esdras. Estaba casado con extranjeras y, cuando se corrigieron esos matrimonios (468-467 a.e.c.),
+  las despidió junto con sus hijos.
+reason: Perspicacia «Judá», núm. 6; Esd 10:23, 44.
+sources:
+- it-juda
+- esdras-10
+links:
+- title: 'Perspicacia: «Judá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jud%C3%A1/
+  type: perspicacia
+relations: []
+checked_on: '2026-10-14'
+status: verified
+disambiguation: El levita de Esd 10:23, de los días de Esdras; no los demás Judá que registra Perspicacia.
+distinct_from:
+- hodavias-levita
+- juda-hijo-de-jacob
+- juda-hijo-de-hasenua
+- juda-de-la-procesion-del-muro
+- juda-levita-de-zorobabel
+- juda-musico-de-la-procesion

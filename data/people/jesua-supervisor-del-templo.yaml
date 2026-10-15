@@ -1,0 +1,52 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jesua-supervisor-del-templo
+name: Jesúa
+names:
+- name: Jesúa
+perspicacia: 1200002446#6
+disambiguation: El levita que supervisó la obra del templo en Esd 3:9 (Perspicacia «Jesúa», núm. 6); no el sumo sacerdote
+  del regreso ni el sacerdote de los días de David.
+distinct_from:
+- josue-sumo-sacerdote
+- jesua-de-tiempos-de-david
+- jesua-cabeza-de-casa-levita
+- jesua-de-pahat-moab
+- jesua-ayudante-de-core
+- jesua-padre-de-ezer
+- jesua-levita-que-explico-la-ley
+- jesua-hijo-de-azanias
+summary: Levita que, con sus hijos y sus hermanos y junto a Cadmiel, dirigió a quienes trabajaban en la casa de Dios cuando
+  se pusieron los cimientos del templo, en 536 a.e.c.
+reason: Perspicacia «Jesúa», núm. 6; Esd 3:9. El año es el de los cimientos (Perspicacia «Zorobabel»).
+sources:
+- it-jesua
+- esdras-3
+- it-zorobabel
+links:
+- title: 'Perspicacia: «Jesúa»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jes%C3%BAa/
+  type: perspicacia
+relations:
+- type: accompanies
+  person: cadmiel
+  word: fellow_worker
+  date:
+    from: -535
+    to: -535
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 536 a.e.c.
+  sources:
+  - esdras-3
+  - it-jesua
+  - it-qadmiel
+  - it-zorobabel
+  reason: 'Esd 3:9: Jesúa y Cadmiel, con sus hijos, se unen para supervisar a los obreros del templo. Año de los cimientos
+    según Perspicacia «Zorobabel».'
+  inferred: false
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-14'
+status: verified

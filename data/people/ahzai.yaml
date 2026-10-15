@@ -1,0 +1,41 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ahzai
+name: Ahzái
+names:
+- name: Ahzái
+- name: Ahzai
+  note: Grafía del título de Perspicacia.
+perspicacia: '1200000177'
+summary: Sacerdote, hijo de Mesilemot y antepasado de sacerdotes que servían en Jerusalén tras el destierro. Su nombre es
+  una forma breve de Ocozías.
+reason: Perspicacia «Ahzai»; Ne 11:13.
+sources:
+- it-ahzai
+- nehemias-11
+links:
+- title: 'Perspicacia: «Ahzai»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ahzai/
+  type: perspicacia
+relations:
+- type: kin
+  person: mesilemot-hijo-de-imer
+  word: father
+  inferred: false
+  sources:
+  - nehemias-11
+  - it-ahzai
+  reason: 'Ne 11:13: Ahzái, hijo de Mesilemot; Perspicacia «Ahzai».'
+  checked_on: '2026-10-14'
+  status: verified
+- type: same_as
+  person: jahzera
+  certainty: possible
+  inferred: true
+  sources:
+  - nehemias-11
+  - it-ahzai
+  reason: Perspicacia «Ahzai» recoge la opinión de que el Ahzái de Ne 11:13 es Jahzerá.
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified

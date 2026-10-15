@@ -1,0 +1,82 @@
+# biblical-atlas: cobertura de un libro. Formato en data/coverage/README.md.
+book: ester
+chapters:
+  1:
+    status: complete
+    reviewed_on: 2026-10-14
+    spans:
+    - {v: 1-4, type: narration, entities: [event:asuero-muestra-la-riqueza-de-su-reino, person:jerjes-i, place:susa, place:india, relation:jerjes-i/lived_in/susa, relation:jerjes-i/kin/dario-i], mentions: [place:etiopia, place:persia, place:media, person:dario-i], note: "La nota del v. 1 identifica a Asuero con Jerjes I, hijo de Darío el Grande."}
+    - {v: 5-9, type: narration, entities: [event:vasti-depuesta, person:jerjes-i, person:vasti, place:susa, relation:jerjes-i/kin/vasti, relation:vasti/holds_office/-, relation:vasti/lived_in/susa], note: "Banquete de siete días en el patio del jardín del palacio; Vasti da otro para las mujeres en la casa real."}
+    - {v: 10-12, type: narration, entities: [event:vasti-depuesta, person:jerjes-i, person:vasti, person:mehuman, person:bizta, person:harbona, person:bigta, person:abagta, person:zetar, person:carcas, relation:mehuman/tie/jerjes-i, relation:bizta/tie/jerjes-i, relation:harbona/tie/jerjes-i, relation:bigta/tie/jerjes-i, relation:abagta/tie/jerjes-i, relation:zetar/tie/jerjes-i, relation:carcas/tie/jerjes-i]}
+    - {v: 13-15, type: narration, entities: [event:vasti-depuesta, person:jerjes-i, person:carsena, person:setar, person:admata, person:meres, person:marsena, person:tarsis-principe-de-asuero, person:memucan, relation:jerjes-i/tie/carsena, relation:jerjes-i/tie/setar, relation:jerjes-i/tie/admata, relation:jerjes-i/tie/meres, relation:jerjes-i/tie/marsena, relation:jerjes-i/tie/tarsis-principe-de-asuero, relation:jerjes-i/tie/memucan], mentions: [person:vasti, place:persia, place:media]}
+    - {v: 16-20, type: speech, entities: [event:vasti-depuesta, person:memucan, person:vasti], mentions: [person:jerjes-i, place:persia, place:media], note: "Memucán propone un decreto irrevocable de Persia y Media que aparte a Vasti y elija otra reina."}
+    - {v: 21-22, type: narration, entities: [event:vasti-depuesta, person:jerjes-i], mentions: [person:memucan], note: "Cartas a cada provincia en su escritura y a cada pueblo en su idioma: cada esposo, señor de su casa."}
+  2:
+    status: complete
+    reviewed_on: 2026-10-14
+    spans:
+    - {v: 1-4, type: narration, entities: [event:ester-llevada-a-la-casa-del-rey, person:jerjes-i, person:vasti, person:hegai, place:susa, relation:hegai/tie/jerjes-i], mentions: [event:vasti-depuesta]}
+    - {v: 5-7, type: narration, entities: [person:mardoqueo, person:jair-padre-de-mardoqueo, person:simei-antepasado-de-mardoqueo, person:quis-antepasado-de-mardoqueo, person:ester, place:susa, event:nabucodonosor-se-lleva-a-joaquin-a-babilonia, relation:mardoqueo/lived_in/susa, relation:ester/kin/mardoqueo/cousin, relation:ester/kin/mardoqueo/adoptive_father, relation:mardoqueo/kin/jair-padre-de-mardoqueo, relation:mardoqueo/kin/simei-antepasado-de-mardoqueo, relation:mardoqueo/kin/quis-antepasado-de-mardoqueo, relation:mardoqueo/kin/benjamin-hijo-de-jacob, relation:jair-padre-de-mardoqueo/kin/benjamin-hijo-de-jacob, relation:simei-antepasado-de-mardoqueo/kin/benjamin-hijo-de-jacob, relation:quis-antepasado-de-mardoqueo/kin/benjamin-hijo-de-jacob, relation:jair-padre-de-mardoqueo/kin/abihail-padre-de-ester], mentions: [person:joaquin, person:nabucodonosor-ii, place:jerusalen, place:juda, place:babilonia], note: "Jeconías es Joaquín (nota del v. 6). Perspicacia «Mardoqueo» lee el destierro del v. 6 como dicho de su linaje, no de él."}
+    - {v: 8-11, type: narration, entities: [event:ester-llevada-a-la-casa-del-rey, person:ester, person:hegai, person:mardoqueo, place:susa, relation:ester/tie/hegai, relation:ester/lived_in/susa], mentions: [person:jerjes-i]}
+    - {v: 12-14, type: narration, entities: [event:ester-llevada-a-la-casa-del-rey, person:saasgaz, relation:saasgaz/tie/jerjes-i], mentions: [person:jerjes-i], note: "Doce meses de cuidados con aceite de mirra y aceite balsámico antes de presentarse ante el rey."}
+    - {v: 15-18, type: narration, entities: [event:ester-reina, person:ester, person:abihail-padre-de-ester, person:hegai, person:jerjes-i, relation:ester/kin/abihail-padre-de-ester, relation:ester/kin/benjamin-hijo-de-jacob, relation:abihail-padre-de-ester/kin/benjamin-hijo-de-jacob, relation:mardoqueo/kin/abihail-padre-de-ester, relation:jerjes-i/kin/ester, relation:ester/holds_office/-, relation:ester/succeeds/vasti], mentions: [person:mardoqueo, person:vasti], note: "Tebet, el décimo mes, del año séptimo de Asuero. El banquete de Ester y una amnistía para las provincias."}
+    - {v: 19-23, type: narration, entities: [event:mardoqueo-descubre-el-complot-de-bigtan-y-teres, person:mardoqueo, person:ester, person:jerjes-i, person:bigtan, person:teres, relation:mardoqueo/tie/jerjes-i, relation:bigtan/tie/jerjes-i/master, relation:bigtan/tie/jerjes-i/enemy, relation:bigtan/died_in/susa, relation:teres/tie/jerjes-i/master, relation:teres/tie/jerjes-i/enemy, relation:teres/died_in/susa], note: "Se reúnen vírgenes por segunda vez. El complot queda en el libro de los registros del rey."}
+  3:
+    status: complete
+    reviewed_on: 2026-10-14
+    spans:
+    - {v: 1-6, type: narration, entities: [event:mardoqueo-se-niega-a-postrarse-ante-haman, person:jerjes-i, person:haman, person:hamedata, person:mardoqueo, relation:haman/kin/hamedata, relation:haman/tie/jerjes-i, relation:haman/tie/mardoqueo, relation:mardoqueo/tie/jerjes-i], note: "Hamán es agaguita. Las publicaciones no coinciden en qué Agag: Perspicacia «Hamán» remite a Agag núm. 1 (Nú 24:7); «Toda Escritura», libro 17, al rey que mató Samuel (1Sa 15:33). Agag no va. Primer ministro no es cargo del vocabulario."}
+    - {v: 7-11, type: narration, entities: [event:decreto-de-haman, person:haman, person:jerjes-i], mentions: [person:hamedata], note: "En nisán echan pur, la suerte (Perspicacia «Pur»), que señala el mes de adar. Hamán acusa a los judíos ante el rey, ofrece 10.000 talentos de plata y recibe el anillo real."}
+    - {v: 12-15, type: narration, entities: [event:decreto-de-haman, person:haman, person:jerjes-i, place:susa, relation:haman/lived_in/susa], note: "El día 13 los secretarios escriben a sátrapas, gobernadores y príncipes, en cada escritura y lengua, para matar a los judíos el 13 de adar. Los correos salen; en Susa reina la confusión."}
+  4:
+    status: complete
+    reviewed_on: 2026-10-14
+    spans:
+    - {v: 1-3, type: narration, entities: [event:mardoqueo-pide-a-ester-que-interceda, person:mardoqueo], mentions: [event:decreto-de-haman], note: "Mardoqueo rasga su ropa, se viste de saco y clama por la ciudad hasta la puerta del palacio, que no se cruza de luto. En las provincias, los judíos ayunan y lloran."}
+    - {v: 4-9, type: narration, entities: [event:mardoqueo-pide-a-ester-que-interceda, person:ester, person:hatac, person:mardoqueo, place:susa, relation:hatac/tie/jerjes-i, relation:hatac/tie/ester, relation:hatac/lived_in/susa, relation:ester/holds_office/-], mentions: [person:haman, person:jerjes-i, event:decreto-de-haman], note: "Las sirvientas y los eunucos de Ester, sin nombre, le cuentan el luto. Mardoqueo rechaza la ropa que ella le envía y le manda, por Hatac, la copia del decreto y la cifra prometida por Hamán."}
+    - {v: 10-17, type: narration, entities: [event:mardoqueo-pide-a-ester-que-interceda, person:ester, person:mardoqueo, person:hatac, place:susa], mentions: [person:jerjes-i, event:ester-reina], note: "Quien entra sin ser llamado al patio interior muere, salvo si el rey le tiende el cetro; hace 30 días que no la llama. Mardoqueo insiste; ella pide tres días de ayuno y decide presentarse."}
+  5:
+    status: complete
+    reviewed_on: 2026-10-14
+    spans:
+    - {v: 1-8, type: narration, entities: [event:ester-se-presenta-ante-el-rey, person:ester, person:jerjes-i, person:haman, relation:ester/holds_office/-], note: "Al tercer día Ester, vestida de reina, espera en el patio interior; el rey le tiende el cetro de oro. Perspicacia «Ester, Libro de» dice que las excavaciones de Susa confirman esa disposición del palacio."}
+    - {v: 9-14, type: narration, entities: [event:haman-levanta-un-madero-para-mardoqueo, person:haman, person:mardoqueo, person:zeres, relation:haman/kin/zeres, relation:zeres/lived_in/susa, relation:haman/lived_in/susa, relation:haman/tie/mardoqueo], mentions: [person:ester, person:jerjes-i, event:mardoqueo-se-niega-a-postrarse-ante-haman], note: "Los amigos de Hamán y sus hijos no tienen nombre aquí; los hijos se nombran en Est 9:7-10. El madero mide 50 codos, unos 22 metros según la nota."}
+  6:
+    status: complete
+    reviewed_on: 2026-10-14
+    spans:
+    - {v: 1-3, type: narration, entities: [event:asuero-honra-a-mardoqueo, person:jerjes-i, person:mardoqueo, person:bigtan, person:teres, relation:bigtan/tie/jerjes-i/master, relation:teres/tie/jerjes-i/master], mentions: [event:mardoqueo-descubre-el-complot-de-bigtan-y-teres], note: "El rey no duerme y se hace leer las crónicas oficiales, donde consta la denuncia de Mardoqueo contada en Est 2:21-23."}
+    - {v: 4-11, type: narration, entities: [event:asuero-honra-a-mardoqueo, person:haman, person:jerjes-i, person:mardoqueo, relation:haman/tie/jerjes-i, relation:haman/tie/mardoqueo, relation:mardoqueo/tie/jerjes-i], note: "Hamán llega al patio exterior para pedir la muerte de Mardoqueo y acaba proponiendo, sin saberlo, los honores para él. La referencia de 6:9 remite a los honores de José en Egipto (Gé 41:42, 43)."}
+    - {v: 12-13, type: narration, entities: [event:haman-vuelve-humillado-a-su-casa, person:haman, person:zeres, relation:haman/kin/zeres, relation:zeres/lived_in/susa], mentions: [person:mardoqueo], note: "Los consejeros de Hamán no llevan nombre."}
+    - {v: "14", type: narration, entities: [event:ester-desenmascara-a-haman, person:haman], mentions: [person:ester], note: "Los funcionarios del rey, sin nombre, llevan a Hamán al segundo banquete de Ester (Est 5:8)."}
+  7:
+    status: complete
+    reviewed_on: 2026-10-14
+    spans:
+    - {v: 1-6, type: narration, entities: [event:ester-desenmascara-a-haman, person:ester, person:jerjes-i, person:haman, relation:ester/tie/haman], mentions: [event:decreto-de-haman], note: "En el segundo día de banquete, Ester pide por su vida y la de su pueblo, vendido para la matanza por el decreto de Hamán (Est 3:9-13; 4:7)."}
+    - {v: 7-10, type: narration, entities: [event:ester-desenmascara-a-haman, person:jerjes-i, person:haman, person:ester, person:harbona, person:mardoqueo, relation:harbona/tie/jerjes-i, relation:haman/died_in/susa], note: "El rey sale al jardín del palacio y vuelve. El madero mide 50 codos, unos 22 m (nota de 7:9). Harboná es el funcionario de Est 1:10."}
+  8:
+    status: complete
+    reviewed_on: 2026-10-14
+    spans:
+    - {v: 1-2, type: narration, entities: [event:mardoqueo-recibe-el-anillo-del-rey, person:jerjes-i, person:ester, person:mardoqueo, person:haman, relation:ester/kin/mardoqueo/cousin], note: "El mismo día de la muerte de Hamán. Ester pone a Mardoqueo al frente de la casa de Hamán; el vocabulario no tiene palabra para ese encargo."}
+    - {v: 3-8, type: narration, entities: [event:decreto-de-mardoqueo, person:ester, person:jerjes-i, person:mardoqueo, person:haman, person:hamedata, relation:haman/kin/hamedata], mentions: [event:decreto-de-haman, event:ester-desenmascara-a-haman], note: "Agaguita no es una persona: Perspicacia «Agaguita» lo lee como descendiente de Agag, amalequita, sin decir cuál (ver Est 3:1-6). Un decreto sellado con el anillo del rey no podía revocarse."}
+    - {v: 9-14, type: narration, entities: [event:decreto-de-mardoqueo, person:mardoqueo, person:jerjes-i, place:india, place:etiopia, place:susa], note: "Los secretarios escriben a sátrapas, gobernadores y príncipes de 127 provincias, cada una en su escritura y su lengua; correos a caballo lo llevan. Sátrapa no es un cargo del vocabulario."}
+    - {v: 15-17, type: narration, entities: [event:decreto-de-mardoqueo, person:mardoqueo, place:susa], note: "Mardoqueo sale con ropa real azul y blanca, corona de oro y capa de púrpura. Hay fiesta entre los judíos, y muchos de otros pueblos se hacen judíos."}
+  9:
+    status: complete
+    reviewed_on: 2026-10-14
+    spans:
+    - {v: 1-5, type: narration, entities: [event:los-judios-derrotan-a-sus-enemigos, person:mardoqueo, person:jerjes-i], note: "Los sátrapas, gobernadores y funcionarios ayudan a los judíos por miedo a Mardoqueo, cuya autoridad crece."}
+    - {v: 6-10, type: narration, entities: [event:los-judios-derrotan-a-sus-enemigos, place:susa, person:parsandata, person:dalfon, person:aspata, person:porata, person:adalia, person:aridata, person:parmasta, person:arisai, person:aridai, person:vaizata, person:haman, person:hamedata, relation:haman/kin/hamedata, relation:parsandata/kin/dalfon, relation:parsandata/kin/aspata, relation:parsandata/kin/porata, relation:parsandata/kin/adalia, relation:parsandata/kin/aridata, relation:parsandata/kin/parmasta, relation:parsandata/kin/arisai, relation:parsandata/kin/aridai, relation:parsandata/kin/vaizata, relation:parsandata/kin/haman, relation:dalfon/kin/haman, relation:aspata/kin/haman, relation:porata/kin/haman, relation:adalia/kin/haman, relation:aridata/kin/haman, relation:parmasta/kin/haman, relation:arisai/kin/haman, relation:aridai/kin/haman, relation:vaizata/kin/haman, relation:parsandata/died_in/susa, relation:dalfon/died_in/susa, relation:aspata/died_in/susa, relation:porata/died_in/susa, relation:adalia/died_in/susa, relation:aridata/died_in/susa, relation:parmasta/died_in/susa, relation:arisai/died_in/susa, relation:aridai/died_in/susa, relation:vaizata/died_in/susa]}
+    - {v: 11-14, type: narration, entities: [event:ester-pide-un-segundo-dia-en-susa, person:ester, person:jerjes-i, place:susa], mentions: [person:haman], note: "Los diez hijos de Hamán no se nombran de nuevo; son los de Est 9:7-10."}
+    - {v: "15", type: narration, entities: [event:los-judios-de-susa-luchan-un-segundo-dia, place:susa]}
+    - {v: 16-19, type: narration, entities: [event:los-judios-derrotan-a-sus-enemigos, event:los-judios-de-susa-luchan-un-segundo-dia], mentions: [place:susa], note: "En las provincias caen 75.000 enemigos el 13 y se descansa el 14; en Susa, el 15. Los del campo hacen fiesta el 14."}
+    - {v: 20-28, type: narration, entities: [event:mardoqueo-instituye-la-fiesta-de-purim, person:mardoqueo, person:haman, person:hamedata, relation:haman/kin/hamedata], mentions: [person:jerjes-i, person:ester, event:decreto-de-haman, event:ester-desenmascara-a-haman], note: "Los versículos 24 y 25 recuerdan el pur de Hamán, la intervención de Ester y la ejecución de Hamán y de sus hijos."}
+    - {v: 29-32, type: narration, entities: [event:ester-y-mardoqueo-confirman-purim, person:ester, person:mardoqueo, person:abihail-padre-de-ester, relation:ester/kin/abihail-padre-de-ester, relation:ester/holds_office/-], mentions: [person:jerjes-i]}
+  10:
+    status: complete
+    reviewed_on: 2026-10-14
+    spans:
+    - {v: "1", type: narration, entities: [event:asuero-impone-trabajos-forzados, person:jerjes-i, place:persia]}
+    - {v: 2-3, type: narration, entities: [person:mardoqueo, person:jerjes-i, relation:mardoqueo/tie/jerjes-i], mentions: [place:media, place:persia, event:mardoqueo-escribe-ester], note: "Los registros de Media y Persia recogen las hazañas de Asuero y la grandeza de Mardoqueo. No cuentan la escritura del libro; Perspicacia ve en el v. 2 indicio de que el escritor usó esos registros."}

@@ -1,0 +1,28 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: zetar
+name: Zetar
+names:
+- name: Zetar
+perspicacia: '1200004720'
+summary: Funcionario de la corte de Asuero en Susa, uno de los siete que el rey mandó a buscar a Vasti.
+reason: Perspicacia «Zetar»; Est 1:10, 11.
+sources:
+- it-zetar
+- ester-1
+links:
+- title: 'Perspicacia: «Zetar»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zetar/
+  type: perspicacia
+relations:
+- type: tie
+  person: jerjes-i
+  word: master
+  inferred: false
+  sources:
+  - ester-1
+  - it-zetar
+  reason: 'Est 1:10: uno de los siete funcionarios de la corte que servían en persona al rey Asuero.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified

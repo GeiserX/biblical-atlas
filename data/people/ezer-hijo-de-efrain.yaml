@@ -9,6 +9,8 @@ distinct_from:
 - ezer-hijo-de-seir
 - ezer-el-gadita
 - ezer-hijo-de-hur
+- ezer-hijo-de-jesua
+- ezer-sacerdote-de-la-inauguracion
 summary: Efraimita, probablemente hijo de Efraín. Los hombres de Gat lo mataron con Elead cuando bajaron a quitarles el ganado.
 reason: Perspicacia «Ézer», núm. 2; 1Cr 7:20-22.
 sources:
@@ -39,5 +41,5 @@ relations:
   reason: '1Cr 7:21: Ézer y Elead murieron juntos a manos de los hombres de Gat.'
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-14'
 status: verified

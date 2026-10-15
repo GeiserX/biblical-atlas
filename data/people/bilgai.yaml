@@ -1,0 +1,28 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: bilgai
+name: Bilgái
+names:
+- name: Bilgái
+- name: Bilgai
+  note: Grafía del título de Perspicacia.
+perspicacia: '1200000736'
+summary: Sacerdote, o su antepasado, que dio validez con su sello a la promesa que se preparó con Nehemías en 455 a.e.c.
+reason: Perspicacia «Bilgai»; Ne 10:8.
+sources:
+- it-bilgai
+- nehemias-10
+links:
+- title: 'Perspicacia: «Bilgai»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Bilgai/
+  type: perspicacia
+relations:
+- type: holds_office
+  office: priest
+  inferred: false
+  sources:
+  - nehemias-10
+  reason: 'Ne 10:8 cierra la lista: «esos son los sacerdotes».'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified

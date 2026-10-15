@@ -16,6 +16,9 @@ sources:
 - it-ido
 - zacarias-1
 - it-berekias
+- esdras-5
+- esdras-6
+- nehemias-12
 links:
 - title: 'Perspicacia: «Idó»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Id%C3%B3/
@@ -23,10 +26,23 @@ links:
 - title: Zacarías 1 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Zacar%C3%ADas/1/
   type: bible
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified
 distinct_from:
 - ido-padre-de-ahinadab
 - ido-hijo-de-joa
 - ido-hijo-de-zacarias
 - ido-hombre-de-visiones
+- ido-de-casifia
+relations:
+- type: same_as
+  person: ido-sacerdote-de-zorobabel
+  certainty: possible
+  inferred: true
+  sources:
+  - it-ido
+  - nehemias-12
+  reason: 'Perspicacia «Idó», núm. 4 y 5: el abuelo del profeta y el sacerdote del regreso con Zorobabel podrían ser la misma
+    persona.'
+  checked_on: '2026-10-14'
+  status: verified

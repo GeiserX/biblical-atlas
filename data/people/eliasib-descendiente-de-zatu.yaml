@@ -1,0 +1,37 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: eliasib-descendiente-de-zatu
+name: Eliasib
+names:
+- name: Eliasib
+perspicacia: 1200001298#4
+summary: Israelita de los hijos de Zatú. Estaba casado con extranjeras y, cuando Esdras corrigió esos matrimonios (468-467
+  a.e.c.), las despidió junto con sus hijos.
+reason: Perspicacia «Eliasib», núm. 4; Esd 10:27, 44.
+sources:
+- it-eliasib
+- esdras-10
+links:
+- title: 'Perspicacia: «Eliasib»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Eliasib/
+  type: perspicacia
+relations:
+- type: kin
+  person: zatu
+  word: ancestor
+  sources:
+  - esdras-10
+  - it-eliasib
+  reason: Esd 10:27 lo pone entre los hijos de Zatú; Perspicacia «Eliasib», núm. 4.
+  inferred: false
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+disambiguation: El de los hijos de Zatú de Esd 10:27; no los demás Eliasib que registra Perspicacia.
+distinct_from:
+- eliasib-cantor
+- eliasib-de-tiempos-de-david
+- eliasib-descendiente-de-bani
+- eliasib-hijo-de-elioenai
+- eliasib-padre-de-jehohanan
+- eliasib-sumo-sacerdote

@@ -1,0 +1,50 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jose-de-la-casa-de-sebanias
+name: José
+names:
+- name: José
+perspicacia: 1200002515#6
+summary: Sacerdote de la casa paterna de Sebanías. Vivió cuando eran sumo sacerdote Joiaquim, gobernador Nehemías y copista
+  Esdras.
+reason: Perspicacia «José», núm. 6; Ne 12:12, 14, 26.
+sources:
+- it-jose
+- nehemias-12
+links:
+- title: 'Perspicacia: «José»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jos%C3%A9/
+  type: perspicacia
+relations:
+- type: kin
+  person: sebanias-sacerdote-repatriado
+  word: ancestor
+  inferred: false
+  sources:
+  - nehemias-12
+  reason: 'Ne 12:12-21: José encabezaba la casa paterna que llevaba el nombre de este sacerdote.'
+  checked_on: '2026-10-14'
+  status: verified
+- type: holds_office
+  office: priest
+  inferred: false
+  sources:
+  - nehemias-12
+  reason: 'Ne 12:12: los jefes de las casas paternas de días de Joiaquim eran sacerdotes.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- bernabe
+- jesus-hijo-de-eliezer
+- jose-de-arimatea
+- jose-descendiente-de-binui
+- jose-esposo-de-maria
+- jose-hijo-de-asaf
+- jose-hijo-de-jacob
+- jose-hijo-de-jonam
+- jose-hijo-de-jose
+- jose-hijo-de-matatias
+- jose-padre-de-igal
+disambiguation: 'José núm. 6 de Perspicacia: el sacerdote de la casa de Sebanías (Ne 12:14); no los demás José que registra
+  Perspicacia «José».'

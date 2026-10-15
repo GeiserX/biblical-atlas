@@ -34,7 +34,7 @@ relations:
   reason: 'Éx 6:17: segundo hijo de Guersón.'
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified
 distinct_from:
 - simei-hijo-de-guera
@@ -52,3 +52,7 @@ distinct_from:
 - simei-el-ramatita
 - simei-levita-de-ezequias
 - simei-hermano-de-conanias
+- simei-antepasado-de-mardoqueo
+- simei-descendiente-de-binui
+- simei-descendiente-de-hasum
+- simei-levita-de-tiempos-de-esdras

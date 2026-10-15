@@ -1,0 +1,48 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hatac
+name: Hatac
+names:
+- name: Hatac
+perspicacia: '1200001913'
+summary: Eunuco del rey Asuero puesto al servicio de la reina Ester. Llevó los mensajes entre ella y Mardoqueo cuando se publicó
+  la orden contra los judíos.
+reason: Perspicacia «Hatac»; Est 4:5-10.
+sources:
+- it-hatac
+- ester-4
+links:
+- title: 'Perspicacia: «Hatac»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hatac/
+  type: perspicacia
+relations:
+- type: tie
+  person: jerjes-i
+  word: master
+  sources:
+  - ester-4
+  - it-hatac
+  reason: 'Est 4:5: eunuco del rey, que lo había asignado a Ester.'
+  inferred: false
+  checked_on: '2026-10-14'
+  status: verified
+- type: tie
+  person: ester
+  word: mistress
+  sources:
+  - ester-4
+  - it-hatac
+  reason: 'Est 4:5-10: el rey lo puso al servicio de la reina, que lo manda a hablar con Mardoqueo.'
+  inferred: false
+  checked_on: '2026-10-14'
+  status: verified
+- type: lived_in
+  place: susa
+  inferred: true
+  sources:
+  - ester-4
+  - it-susa
+  reason: 'Est 4:6, 8: sirve en el palacio y sale a la plaza de la ciudad donde se publicó la ley, Susa.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified

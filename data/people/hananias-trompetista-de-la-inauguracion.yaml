@@ -1,0 +1,43 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hananias-trompetista-de-la-inauguracion
+name: Hananías
+names:
+- name: Hananías
+perspicacia: 1200001853#13
+summary: Sacerdote trompetista en la fiesta con que Nehemías inauguró la muralla de Jerusalén.
+reason: Perspicacia «Hananías», núm. 13; Ne 12:31, 40, 41.
+sources:
+- it-hananias
+- nehemias-12
+links:
+- title: 'Perspicacia: «Hananías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hanan%C3%ADas/
+  type: perspicacia
+relations:
+- type: holds_office
+  office: priest
+  inferred: false
+  sources:
+  - nehemias-12
+  reason: 'Ne 12:41: los sacerdotes que llevaban las trompetas.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- hananias-abuelo-de-iriya
+- hananias-cabeza-del-pueblo
+- hananias-de-la-casa-de-jeremias
+- hananias-descendiente-de-bebai
+- hananias-fabricante-de-unguentos
+- hananias-hijo-de-azur
+- hananias-hijo-de-heman
+- hananias-hijo-de-sasac
+- hananias-hijo-de-selemias
+- hananias-hijo-de-zorobabel
+- hananias-jefe-de-la-fortaleza
+- hananias-padre-de-sedequias
+- hananias-principe-de-uzias
+- sadrac
+disambiguation: 'Hananías núm. 13 de Perspicacia: el trompetista de Ne 12:41; no los demás Hananías que registra Perspicacia
+  «Hananías».'

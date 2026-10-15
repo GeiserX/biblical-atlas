@@ -9,6 +9,7 @@ reason: Perspicacia «Mesulam», núm. 7; 1Cr 9:7.
 sources:
 - it-mesulam
 - 1-cronicas-9
+- nehemias-11
 links:
 - title: 'Perspicacia: «Mesulam»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Mesulam/
@@ -24,7 +25,7 @@ relations:
   reason: '1Cr 9:7: Mesulam, hijo de Hodavías. Perspicacia «Hodavías», núm. 3, no descarta que fuera un antepasado más lejano.'
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified
 distinct_from:
 - mesulam-abuelo-de-safan
@@ -35,5 +36,17 @@ distinct_from:
 - mesulam-hijo-de-zorobabel
 - salum-hijo-de-sadoc
 - mesulam-levita-de-josias
+- mesulam-enviado-a-casifia
+- mesulam-descendiente-de-bani
+- mesulam-levita-de-tiempos-de-esdras
+- mesulam-hijo-de-berekias
+- mesulam-hijo-de-besodeya
+- mesulam-junto-a-esdras
+- mesulam-cabeza-del-pueblo
+- mesulam-sacerdote-firmante
+- mesulam-de-la-casa-de-esdras
+- mesulam-de-la-casa-de-guineton
+- mesulam-de-la-procesion-del-muro
+- mesulam-portero
 disambiguation: 'Mesulam núm. 7 de Perspicacia: benjamita, padre de Salú. No los otros Mesulam de la misma lista ni el abuelo
   de Safán.'

@@ -33,5 +33,8 @@ relations:
   reason: '1Cr 24:15: encabeza una de las casas sacerdotales de 24:4-6; Perspicacia «Hezir» lo trata como sacerdote.'
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+disambiguation: 'Hezir núm. 1 de Perspicacia «Hezir»: sacerdote cuya casa recibió el turno 17 de los de David (1Cr 24:15).'
+checked_on: '2026-10-14'
 status: verified
+distinct_from:
+- hezir-cabeza-del-pueblo

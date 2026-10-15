@@ -1,0 +1,17 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: harhaya
+name: Harhaya
+names:
+- name: Harhaya
+perspicacia: '1200001877'
+summary: Padre de Uziel, el orfebre que ayudó a reparar la muralla de Jerusalén con Nehemías.
+reason: Perspicacia «Harhaya»; Ne 3:8.
+sources:
+- it-harhaya
+- nehemias-3
+links:
+- title: 'Perspicacia: «Harhaya»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Harhaya/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified

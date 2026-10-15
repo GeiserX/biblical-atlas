@@ -1,0 +1,27 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: selemias-padre-de-hananias
+name: Selemías
+names:
+- name: Selemías
+perspicacia: 1200003990#8
+disambiguation: El padre de Hananías (Ne 3:30), núm. 8 de Perspicacia «Selemías»; no los otros Selemías que numera.
+distinct_from:
+- selemias-descendiente-de-binui-1
+- selemias-descendiente-de-binui-2
+- selemias-hijo-de-abdeel
+- selemias-hijo-de-cusi
+- selemias-hijo-de-hananias
+- selemias-padre-de-jehucal
+- selemias-portero
+- selemias-encargado-de-los-almacenes
+summary: Padre del Hananías que ayudó a reparar la muralla de Jerusalén en días de Nehemías.
+reason: Perspicacia «Selemías», núm. 8; Ne 3:30.
+sources:
+- it-selemias
+- nehemias-3
+links:
+- title: 'Perspicacia: «Selemías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Selem%C3%ADas/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified

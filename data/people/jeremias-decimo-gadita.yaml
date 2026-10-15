@@ -12,6 +12,9 @@ distinct_from:
 - jeremias-quinto-gadita
 - jeremias-de-manases
 - jeremias-hijo-de-habazinias
+- jeremias-sacerdote-firmante
+- jeremias-de-la-procesion-del-muro
+- jeremias-sacerdote-de-zorobabel
 summary: Gadita, el décimo de los once guerreros de Gad que cruzaron el Jordán crecido para unirse a David en el desierto,
   cuando Saúl lo perseguía.
 reason: Perspicacia «Jeremías», núm. 3; 1Cr 12:8-15.
@@ -32,5 +35,5 @@ relations:
   reason: '1Cr 12:8, 13, 14: gadita que se pasó a David y llegó a ser jefe de su ejército.'
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-14'
 status: verified

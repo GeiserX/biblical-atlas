@@ -28,6 +28,12 @@ distinct_from:
 - azarias-sacerdote-de-tiempos-de-uzias
 - azarias-padre-de-joel
 - azarias-hijo-de-jehalelel
+- seraya-repatriado
+- azarias-hijo-de-merayot
+- azarias-hijo-de-maaseya
+- azarias-levita-que-explico-la-ley
+- azarias-sacerdote-firmante
+- azarias-de-la-procesion-del-muro
 date:
   from: -759
   to: -759
@@ -59,7 +65,7 @@ history:
 - date: '2026-10-13'
   change: La razón cita la fecha de Perspicacia «Jehohanán», núm. 4.
   source: it-jehohanan
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified
 relations:
 - type: kin

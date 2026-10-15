@@ -13,6 +13,9 @@ distinct_from:
 - seraya-hijo-de-azriel
 - seraya-hijo-de-quenaz
 - seraya-hijo-de-asiel
+- seraya-repatriado
+- seraya-sacerdote-repatriado
+- azarias-sacerdote-repatriado
 date:
   from: -613
   to: -613
@@ -75,5 +78,5 @@ relations:
   reason: 'Jer 51:59: Seraya era funcionario del rey Sedequías; Perspicacia «Seraya», núm. 5, lo llama su comisario ordenador.'
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-14'
 status: verified

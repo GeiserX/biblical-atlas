@@ -1,0 +1,44 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: miguel-discute-con-el-diablo-por-el-cuerpo-de-moises
+title: Miguel discute con el Diablo por el cuerpo de Moisés
+date:
+  from: -1472
+  to: -1472
+  precision: year
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'c. 1473 a.e.c. (tiempo narrativo: al enterrar Jehová a Moisés)'
+narrative_order:
+  series: numeros
+  order: 134006
+places: []
+people:
+- jesus
+- satanas
+- moises
+present: []
+passages:
+- Jud 9
+summary: Muerto Moisés, el arcángel Miguel discute con el Diablo acerca de su cuerpo. No se atreve a juzgarlo con insultos;
+  solo le dice que Jehová lo reprenda.
+reason: 'Jud 9; solo lo cuenta Judas (Perspicacia «Judas, Carta de»). «Moisés», párr. 33: Jehová lo enterró en un sitio oculto
+  y el Diablo, al parecer, quería usar el cuerpo. «Miguel», núm. 1: Miguel es Jesús.'
+sources:
+- judas-1
+- it-judas-carta
+- it-moises
+- it-miguel
+- si-3
+links:
+- title: Judas 1 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/judas/1/
+  type: bible
+- title: 'Perspicacia: «Miguel»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Miguel/
+  type: perspicacia
+search: Miguel cuerpo de Moisés
+note: 'Orden 134006 en numeros, nuestro: junto al entierro, tras muerte-de-moises (134001). Sin lugar: el texto no dice dónde
+  fue la discusión. La fecha es la del entierro (estudio 3: muerte en 1473).'
+checked_on: '2026-10-14'
+status: verified

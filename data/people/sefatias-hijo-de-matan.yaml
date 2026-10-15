@@ -11,6 +11,9 @@ distinct_from:
 - sefatias-hijo-de-maaca
 - sefatias-hijo-de-reuel
 - sefatias-hijo-de-jehosafat
+- sefatias-cabeza-de-familia
+- sefatias-siervo-de-salomon
+- sefatias-hijo-de-mahalalel
 summary: Príncipe de Judá, hijo de Matán. Con Guedalías, Jucal y Pasjur pidió a Sedequías que matara a Jeremías y lo hizo
   echar a la cisterna de Malkiya.
 reason: Perspicacia «Sefatías», núm. 5; Jer 38:1-6.
@@ -46,5 +49,5 @@ relations:
   reason: 'Jer 38:1-6: pide la muerte de Jeremías y lo echa a la cisterna; Perspicacia «Matán», núm. 2, lo llama su opositor.'
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified

@@ -1,0 +1,73 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: reparacion-de-la-muralla-por-tramos-455
+title: Sacerdotes, familias y distritos reparan la muralla por tramos
+date:
+  from: -454
+  to: -454
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 455 a.e.c. (entre el 4 de ab y el 25 de elul)
+narrative_order:
+  series: nehemias
+  order: 103001
+places:
+- jerusalen
+people:
+- eliasib-sumo-sacerdote
+- zacur-hijo-de-imri
+- meremot-hijo-de-uriya
+- mesulam-hijo-de-berekias
+- sadoc-hijo-de-baana
+- joiada-hijo-de-paseah
+- mesulam-hijo-de-besodeya
+- melatias
+- jadon
+- uziel-hijo-de-harhaya
+- hananias-fabricante-de-unguentos
+- refaya-hijo-de-hur
+- jedaya-hijo-de-harumaf
+- hatus-hijo-de-hasabneya
+- malkiya-hijo-de-harim
+- hasub-hijo-de-pahat-moab
+- salum-hijo-de-halohes
+- hanun-de-la-puerta-del-valle
+- malkiya-hijo-de-recab
+- salun
+- nehemias-hijo-de-azbuc
+- rehum-hijo-de-bani
+- hasabias-principe-de-queila
+- bavai
+- binui-hijo-de-henadad
+- ezer-hijo-de-jesua
+- baruc-hijo-de-zabai
+- benjamin-companero-de-hasub
+- hasub-companero-de-benjamin
+- azarias-hijo-de-maaseya
+- palal
+- pedaya-descendiente-de-paros
+- sadoc-hijo-de-imer
+- semaya-guarda-de-la-puerta-oriental
+- hananias-hijo-de-selemias
+- hanun-hijo-de-zalaf
+- malkiya-orfebre
+passages:
+- Ne 3:1-32
+summary: 'Cada grupo rehace su tramo de muralla y sus puertas: el sumo sacerdote y los sacerdotes, familias, gremios, levitas
+  y príncipes de distrito, desde la Puerta de las Ovejas dando la vuelta hasta volver a ella.'
+reason: 'Perspicacia «Nehemías», núm. 3: obra del 4 de ab al 25 de elul de 455; «Distrito»: Nehemías repartió el trabajo.
+  Serie nehemias: los capítulos 1 a 7 van en el orden de los hechos.'
+sources:
+- nehemias-3
+- it-nehemias
+- it-distrito
+- it-jerusalen
+- it-puerta
+- si-3
+links:
+- title: Nehemías 3 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Nehem%C3%ADas/3/
+  type: bible
+checked_on: '2026-10-14'
+status: verified

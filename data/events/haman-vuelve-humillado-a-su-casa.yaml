@@ -1,0 +1,44 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: haman-vuelve-humillado-a-su-casa
+title: Hamán vuelve humillado a su casa y Zeres le anuncia su caída
+date:
+  from: -483
+  to: -483
+  precision: season
+  approx: true
+  type: derived
+  chronology: tnm
+  text: primavera de 484 a.e.c. (cálculo nuestro)
+  detail:
+    season: spring
+  note: 'Días después del 13 de nisán del año duodécimo (Est 3:12; 4:16; 5:1), que Perspicacia «Purim» sitúa al parecer en
+    la primavera de 484. Ninguna fuente fecha esta escena: es cuenta nuestra.'
+narrative_order:
+  series: ester
+  order: 6012
+places:
+- susa
+people:
+- haman
+- zeres
+present:
+- haman
+- zeres
+passages:
+- Est 6:12-14
+summary: Tras el paseo, Hamán corre a casa con la cabeza cubierta, de luto. Su esposa Zeres y sus consejeros le advierten
+  que, si Mardoqueo es judío, no podrá vencerlo. Aún hablan cuando vienen a buscarlo para el banquete.
+reason: Est 6:12-14; Perspicacia «Zeres» y «Hamán». La casa de Hamán no tiene nombre; va en Susa, la ciudad de la corte. Mismo
+  día que el paseo de Mardoqueo.
+sources:
+- ester-6
+- it-zeres
+- it-haman
+- it-purim
+- si-ester
+links:
+- title: 'Perspicacia: «Zeres»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zeres/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: pending

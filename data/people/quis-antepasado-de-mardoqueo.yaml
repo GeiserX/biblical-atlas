@@ -1,0 +1,39 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: quis-antepasado-de-mardoqueo
+name: Quis
+names:
+- name: Quis
+perspicacia: 1200002631#5
+disambiguation: Quis, antepasado benjaminita de Mardoqueo (Perspicacia «Quis», núm. 5); no el padre del rey Saúl ni los otros
+  Quis.
+distinct_from:
+- quis-hijo-de-mahli
+- quis-hijo-de-jeiel
+- quis-hijo-de-ner
+- quis-hijo-de-abdi
+summary: Benjaminita antepasado de Mardoqueo. Perspicacia ve posible que fuera su bisabuelo, o alguien anterior, y que fuera
+  él el desterrado con Jeconías en 617 a.e.c.
+reason: Perspicacia «Quis», núm. 5, y «Mardoqueo», núm. 2; Est 2:5, 6.
+sources:
+- it-quis
+- it-mardoqueo
+- ester-2
+links:
+- title: 'Perspicacia: «Quis»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Quis/
+  type: perspicacia
+not_claimed:
+- 'Que Quis fuera con seguridad el deportado con Jeconías: Perspicacia «Mardoqueo» lo da como una lectura posible de Est 2:6.'
+relations:
+- type: kin
+  person: benjamin-hijo-de-jacob
+  word: ancestor
+  inferred: false
+  sources:
+  - ester-2
+  - it-quis
+  reason: Est 2:5 lo llama benjaminita, y Perspicacia «Quis», núm. 5, lo da por benjamita.
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified

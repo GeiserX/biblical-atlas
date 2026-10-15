@@ -9,14 +9,28 @@ reason: Perspicacia «Aqub», núm. 2; 1Cr 9:17.
 sources:
 - it-aqub
 - 1-cronicas-9
+- esdras-2
+- nehemias-7
+- nehemias-11
+- nehemias-12
 links:
 - title: 'Perspicacia: «Aqub»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Aqub/
   type: perspicacia
-relations: []
-checked_on: '2026-10-12'
+relations:
+- type: lived_in
+  place: jerusalen
+  inferred: false
+  sources:
+  - nehemias-11
+  reason: 'Ne 11:3, 19: de la lista de los que vivían en Jerusalén; vigilaba las puertas con Talmón.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
 status: verified
 distinct_from:
 - acub-hijo-de-elioenai
+- acub-netineo
+- acub-levita-que-explico-la-ley
 disambiguation: 'Acub núm. 2 de Perspicacia: portero levita de después del destierro y cabeza de una familia de porteros.
   No los demás Acub que numera Perspicacia.'

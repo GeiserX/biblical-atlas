@@ -26,8 +26,9 @@ relations:
   status: verified
 disambiguation: 'Hodavías núm. 1 de Perspicacia: descendiente de David, hijo de Elioenái. No el benjamita hijo de Hasenuá
   ni el jefe de Manasés.'
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified
 distinct_from:
 - hodavias-hijo-de-hasenua
 - hodavias-de-manases
+- hodavias-levita

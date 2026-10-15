@@ -1,0 +1,26 @@
+# biblical-atlas: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: adon
+name: Adón
+names:
+- name: Adón
+type: city
+lat: 32.543333
+lon: 44.422222
+precision: uncertain
+coord_source: openbible:a95b373
+coord_url: https://www.openbible.info/geo/ancient/a95b373/addon
+coord_note: OpenBible solo lo sitúa en Babilonia y le da el punto de la ciudad de Babilonia; el sitio real se desconoce.
+summary: Probablemente un lugar de Babilonia del que venían algunos que no pudieron probar su genealogía. Hay quien cree que
+  era una persona.
+reason: 'Perspicacia «Adón»; Esd 2:59. OpenBible: solo el punto.'
+sources:
+- it-adon
+- openbible-geo
+- esdras-2
+- nehemias-7
+links:
+- title: 'Perspicacia: «Adón»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ad%C3%B3n/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified

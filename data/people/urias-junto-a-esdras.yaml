@@ -1,0 +1,23 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: urias-junto-a-esdras
+name: Urías
+names:
+- name: Urías
+perspicacia: 1200004521#3
+disambiguation: El Urías que acompañó a Esdras en la lectura de la Ley (Ne 8:4); no Urías el hitita ni el sacerdote Uriya
+  de los días de Acaz.
+distinct_from:
+- urias-el-hitita
+- uriya-sacerdote-de-acaz
+summary: Hombre, quizá sacerdote, que estuvo a la derecha de Esdras en la plataforma mientras los repatriados escuchaban la
+  Ley, en la plaza ante la Puerta del Agua.
+reason: Perspicacia «Urías», núm. 3; Ne 8:4.
+sources:
+- it-urias
+- nehemias-8
+links:
+- title: 'Perspicacia: «Urías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ur%C3%ADas/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified

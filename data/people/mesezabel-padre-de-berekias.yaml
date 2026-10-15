@@ -1,0 +1,22 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: mesezabel-padre-de-berekias
+name: Mesezabel
+names:
+- name: Mesezabel
+perspicacia: 1200003010#2
+summary: Padre de Berekías y abuelo de Mesulam, uno de los que repararon la muralla de Jerusalén con Nehemías.
+reason: Perspicacia «Mesezabel», núm. 2; Ne 3:4.
+sources:
+- it-mesezabel
+- nehemias-3
+links:
+- title: 'Perspicacia: «Mesezabel»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Mesezabel/
+  type: perspicacia
+disambiguation: 'Mesezabel núm. 2 de Perspicacia «Mesezabel»: padre de Berekías y antepasado del Mesulam que trabajó en el
+  muro (Ne 3:4).'
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- mesezabel-cabeza-del-pueblo
+- mesezabel-padre-de-petahias

@@ -23,6 +23,7 @@ sources:
 - 1-samuel-17
 - jeremias-34
 - 2-cronicas-11
+- nehemias-11
 links:
 - title: 'Perspicacia: «Azeqá»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Azeq%C3%A1/
@@ -38,5 +39,5 @@ history:
 - date: '2026-10-12'
   change: La razón cita ahora Jer 34:7 y el párrafo de Perspicacia sobre la invasión babilonia.
   source: jeremias-34
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified

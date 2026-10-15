@@ -9,6 +9,7 @@ reason: Perspicacia «Hasub», núm. 4; 1Cr 9:14.
 sources:
 - it-hasub
 - 1-cronicas-9
+- nehemias-11
 links:
 - title: 'Perspicacia: «Hasub»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hasub/
@@ -20,8 +21,15 @@ relations:
   inferred: false
   sources:
   - 1-cronicas-9
+  - nehemias-11
   reason: '1Cr 9:14: Hasub, hijo de Azricam.'
-  checked_on: '2026-10-12'
+  checked_on: '2026-10-14'
   status: verified
-checked_on: '2026-10-12'
+disambiguation: El levita merarita hijo de Azricam (1Cr 9:14), núm. 4 de Perspicacia «Hasub»; no los Hasub que repararon la
+  muralla con Nehemías.
+checked_on: '2026-10-14'
 status: verified
+distinct_from:
+- hasub-companero-de-benjamin
+- hasub-hijo-de-pahat-moab
+- hasub-cabeza-del-pueblo

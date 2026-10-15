@@ -1,0 +1,28 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: bezai-cabeza-de-familia
+name: Bezái
+names:
+- name: Bezái
+perspicacia: 1200000720#1
+summary: Israelita cuyos descendientes, 323 según Esd 2 y 324 según Ne 7, formaron parte del regreso guiado por Zorobabel
+  (537 a.e.c.).
+reason: Perspicacia «Bezai», núm. 1; Esd 2:17.
+sources:
+- it-bezai
+- esdras-2
+- nehemias-7
+- it-nehemias-libro
+links:
+- title: 'Perspicacia: «Bezai»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Bezai/
+  type: perspicacia
+history:
+- date: '2026-10-14'
+  change: El resumen daba como hecho la cifra de Esd 2; Ne 7 da otra. Perspicacia «Nehemías, Libro de» ve posible que las
+    dos listas salgan de registros distintos.
+  source: nehemias-7
+disambiguation: 'Bezái núm. 1 de Perspicacia «Bezai»: antepasado de los 323 que volvieron con Zorobabel (Esd 2:17).'
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- bezai-cabeza-del-pueblo

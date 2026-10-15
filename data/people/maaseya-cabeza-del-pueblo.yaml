@@ -1,0 +1,38 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: maaseya-cabeza-del-pueblo
+name: Maaseya
+names:
+- name: Maaseya
+perspicacia: 1200002811#16
+summary: Uno de los jefes del pueblo, o su descendiente, que sellaron la promesa de 455 a.e.c.
+reason: Perspicacia «Maaseya», núm. 16; Ne 10:25.
+sources:
+- it-maaseya
+- nehemias-10
+links:
+- title: 'Perspicacia: «Maaseya»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Maaseya/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- maaseya-de-la-casa-de-jesua
+- maaseya-descendiente-de-harim
+- maaseya-descendiente-de-pahat-moab
+- maaseya-descendiente-de-pasjur
+- maaseya-funcionario
+- maaseya-hijo-de-adaya
+- maaseya-hijo-de-ananiah
+- maaseya-hijo-de-baruc
+- maaseya-hijo-de-itiel
+- maaseya-hijo-de-salum
+- maaseya-hijo-del-rey
+- maaseya-jefe-de-jerusalen
+- maaseya-junto-a-esdras
+- maaseya-levita-que-explico-la-ley
+- maaseya-musico
+- maaseya-padre-de-sedequias
+- maaseya-padre-de-sofonias
+- maaseya-sacerdote-de-la-inauguracion
+- maaseya-trompetista-de-la-inauguracion
+disambiguation: Maaseya, cabeza del pueblo en la lista de Ne 10:25 (Perspicacia «Maaseya», núm. 16).

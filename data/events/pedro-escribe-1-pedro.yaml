@@ -1,0 +1,63 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: pedro-escribe-1-pedro
+title: Pedro escribe su primera carta desde Babilonia
+date:
+  from: 62
+  to: 64
+  precision: range
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 62-64 e.c.
+narrative_order:
+  series: hechos
+  order: 2854
+places:
+- babilonia
+- ponto
+- galacia
+- capadocia
+- asia
+- bitinia
+people:
+- pedro
+- silas
+- juan-marcos
+present:
+- pedro
+- silas
+- juan-marcos
+type: writing
+roles:
+  pedro: wrote
+passages:
+- 1Pe 1:1, 2
+- 1Pe 5:12-14
+summary: 'Desde Babilonia, con Marcos a su lado, Pedro escribe por medio de Silvano a los cristianos de cinco regiones de
+  Asia Menor, que pasan por pruebas: que aguanten, se porten bien y sigan firmes en la bondad de Dios.'
+reason: 'Tabla de los libros y estudio 3: Babilonia, c. 62-64. «Pedro, Cartas de»: la Babilonia del Éufrates, antes de la
+  persecución de Nerón (64), con Marcos presente y valiéndose de Silvano, que «Silas, Silvano» ve posible amanuense.'
+sources:
+- 1-pedro-1
+- 1-pedro-5
+- tnm-tabla
+- si-3
+- it-pedro-cartas
+- it-pedro
+- it-silas
+- it-marcos
+links:
+- title: 1 Pedro 1 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/1-pedro/1/
+  type: bible
+- title: 1 Pedro 5 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/1-pedro/5/
+  type: bible
+- title: 'Perspicacia: «Pedro, Cartas de»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Pedro-Cartas-de/
+  type: perspicacia
+search: primera carta de Pedro Babilonia
+note: 'Orden 2854 en hechos, elección nuestra: el estudio 3 la lista tras 1 Timoteo y Tito (2850, 2851) y antes de 2 Pedro
+  y 2 Timoteo (2860). Silvano va en present: Pedro se valió de él para escribirla.'
+checked_on: '2026-10-14'
+status: verified

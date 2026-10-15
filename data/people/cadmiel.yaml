@@ -1,0 +1,48 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: cadmiel
+name: Cadmiel
+names:
+- name: Cadmiel
+- name: Qadmiel
+perspicacia: '1200002565'
+summary: Levita que volvió a Jerusalén con Zorobabel junto con parte de su familia. Perspicacia escribe Qadmiel.
+reason: Perspicacia «Qadmiel»; Esd 2:40.
+sources:
+- it-qadmiel
+- esdras-2
+- esdras-3
+- it-zorobabel
+- nehemias-7
+- nehemias-10
+- nehemias-12
+- nehemias-9
+links:
+- title: 'Perspicacia: «Qadmiel»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Qadmiel/
+  type: perspicacia
+relations:
+- type: kin
+  person: hodavias-levita
+  word: ancestor
+  inferred: false
+  sources:
+  - esdras-2
+  - esdras-3
+  - it-hodavias
+  - it-juda
+  - nehemias-7
+  reason: 'Esd 2:40: los hijos de Jesúa y de Cadmiel son de los hijos de Hodavías.'
+  checked_on: '2026-10-14'
+  status: verified
+- type: lived_in
+  place: juda
+  inferred: true
+  sources:
+  - esdras-2
+  - it-qadmiel
+  - nehemias-7
+  reason: 'Esd 2:1, 40: Perspicacia «Qadmiel» dice que volvió con Zorobabel; los que volvían iban a sus ciudades de Judá.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified

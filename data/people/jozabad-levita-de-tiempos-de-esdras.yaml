@@ -1,0 +1,48 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jozabad-levita-de-tiempos-de-esdras
+name: Jozabad
+names:
+- name: Jozabad
+perspicacia: 1200002532#8
+summary: Levita de los días de Esdras. Estaba casado con extranjeras y, cuando se corrigieron esos matrimonios (468-467 a.e.c.),
+  las despidió junto con sus hijos. Perspicacia ve posible que sea el mismo que otros levitas Jozabad de esos años.
+reason: Perspicacia «Jozabad», núm. 8; Esd 10:23, 44.
+sources:
+- it-jozabad
+- esdras-10
+- nehemias-11
+links:
+- title: 'Perspicacia: «Jozabad»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jozabad/
+  type: perspicacia
+relations:
+- type: same_as
+  person: jozabad-levita-que-explico-la-ley
+  certainty: possible
+  inferred: true
+  sources:
+  - it-jozabad
+  - nehemias-8
+  reason: Perspicacia «Jozabad», núm. 9, ve posible que el levita que explicaba la Ley (Ne 8:7) sea el núm. 8.
+  checked_on: '2026-10-14'
+  status: verified
+- type: same_as
+  person: jozabad-levita-de-tiempos-de-nehemias
+  certainty: possible
+  inferred: true
+  sources:
+  - nehemias-11
+  - it-jozabad
+  reason: 'Perspicacia «Jozabad», núm. 10: el levita de Ne 11:16 quizá es el núm. 8.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+disambiguation: El levita de Esd 10:23, de los días de Esdras; no los demás Jozabad que registra Perspicacia.
+distinct_from:
+- jozabad-comisionado-de-ezequias
+- jozabad-de-manases-1
+- jozabad-de-manases-2
+- jozabad-descendiente-de-pasjur
+- jozabad-el-guederatita
+- jozabad-levita-de-josias

@@ -1,0 +1,31 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hegai
+name: Hegái
+names:
+- name: Hegái
+- name: Hegai
+  note: Grafía de Perspicacia.
+perspicacia: '1200001960'
+summary: Eunuco de Asuero y guardián de las mujeres reunidas en Susa. Tomó a Ester bajo su cuidado, le dio tratamientos de
+  belleza, comida y siete sirvientas, y ella solo pidió lo que él le aconsejó.
+reason: Perspicacia «Hegai»; Est 2:3, 8, 9, 15.
+sources:
+- it-hegai
+- ester-2
+links:
+- title: 'Perspicacia: «Hegai»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hegai/
+  type: perspicacia
+relations:
+- type: tie
+  person: jerjes-i
+  word: master
+  inferred: false
+  sources:
+  - ester-2
+  - it-hegai
+  reason: 'Est 2:3, 15: el eunuco del rey Asuero que guardaba a las mujeres.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified

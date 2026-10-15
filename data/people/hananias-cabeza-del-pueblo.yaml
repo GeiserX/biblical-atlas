@@ -1,0 +1,33 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hananias-cabeza-del-pueblo
+name: Hananías
+names:
+- name: Hananías
+perspicacia: 1200001853#14
+summary: Uno de los jefes del pueblo, o su descendiente, que selló la promesa de 455 a.e.c. bajo el gobierno de Nehemías.
+reason: Perspicacia «Hananías», núm. 14; Ne 10:23.
+sources:
+- it-hananias
+- nehemias-10
+links:
+- title: 'Perspicacia: «Hananías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hanan%C3%ADas/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- hananias-abuelo-de-iriya
+- hananias-de-la-casa-de-jeremias
+- hananias-descendiente-de-bebai
+- hananias-fabricante-de-unguentos
+- hananias-hijo-de-azur
+- hananias-hijo-de-heman
+- hananias-hijo-de-sasac
+- hananias-hijo-de-selemias
+- hananias-hijo-de-zorobabel
+- hananias-jefe-de-la-fortaleza
+- hananias-padre-de-sedequias
+- hananias-principe-de-uzias
+- hananias-trompetista-de-la-inauguracion
+- sadrac
+disambiguation: Hananías, cabeza del pueblo en la lista de Ne 10:23 (Perspicacia «Hananías», núm. 14).

@@ -1,0 +1,75 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jonatan-hijo-de-asahel
+name: Jonatán
+names:
+- name: Jonatán
+perspicacia: 1200002506#11
+summary: Hijo de Asahel. Junto con Jahzeya se opuso a lo acordado en la asamblea de Jerusalén; Perspicacia dice que quizá
+  objetaba solo el procedimiento, no la exhortación de Esdras.
+reason: Perspicacia «Jonatán», núm. 11, y «Jahzeya»; Esd 10:15.
+sources:
+- it-jonatan
+- esdras-10
+- it-jahzeya
+links:
+- title: 'Perspicacia: «Jonatán»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jonat%C3%A1n/
+  type: perspicacia
+relations:
+- type: kin
+  person: asahel-padre-de-jonatan
+  word: father
+  sources:
+  - esdras-10
+  - it-jonatan
+  reason: Esd 10:15 lo llama Jonatán hijo de Asahel.
+  inferred: false
+  checked_on: '2026-10-13'
+  status: verified
+- type: tie
+  person: jahzeya
+  word: ally
+  sources:
+  - esdras-10
+  - it-jahzeya
+  reason: 'Esd 10:15: Jonatán y Jahzeya se oponen juntos a lo propuesto.'
+  inferred: false
+  checked_on: '2026-10-13'
+  status: verified
+- type: tie
+  person: mesulam-levita-de-tiempos-de-esdras
+  word: ally
+  sources:
+  - esdras-10
+  - it-mesulam
+  reason: 'Esd 10:15: el levita Mesulam se pone de su lado.'
+  inferred: false
+  checked_on: '2026-10-13'
+  status: verified
+- type: tie
+  person: sabetai
+  word: ally
+  sources:
+  - esdras-10
+  - it-sabetai
+  reason: 'Esd 10:15: el levita Sabetái se pone de su lado.'
+  inferred: false
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+disambiguation: El hijo de Asahel de Esd 10:15; no Jonatán el hijo de Saúl ni los demás.
+distinct_from:
+- jonatan-hijo-de-abiatar
+- jonatan-hijo-de-carea
+- jonatan-hijo-de-jada
+- jonatan-hijo-de-sague
+- jonatan-hijo-de-sama
+- jonatan-hijo-de-saul
+- jonatan-hijo-de-uzias
+- jonatan-levita
+- jonatan-padre-de-ebed
+- jonatan-sobrino-de-david
+- johanan-hijo-de-joiada
+- jonatan-de-la-casa-de-maluki
+- jonatan-hijo-de-semaya

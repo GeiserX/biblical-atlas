@@ -1,0 +1,18 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: gahar
+name: Gahar
+names:
+- name: Gahar
+perspicacia: '1200001591'
+summary: Sus descendientes, siervos del templo o netineos, se cuentan entre los que volvieron de Babilonia en 537 a.e.c.
+reason: Perspicacia «Gahar»; Esd 2:47.
+sources:
+- it-gahar
+- esdras-2
+- nehemias-7
+links:
+- title: 'Perspicacia: «Gahar»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Gahar/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified

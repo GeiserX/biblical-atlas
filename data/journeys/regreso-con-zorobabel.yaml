@@ -13,6 +13,44 @@ date: &id001
   text: 537 a.e.c.
 companions:
 - josue-sumo-sacerdote
+- nehemias-repatriado
+- seraya-repatriado
+- reelaya
+- mardoqueo-repatriado
+- bilsan
+- mispar
+- bigvai-repatriado
+- rehum-repatriado
+- baana-repatriado
+- sesbazar
+- nahamani
+- seraya-sacerdote-repatriado
+- jeremias-sacerdote-de-zorobabel
+- esdras-sacerdote-de-zorobabel
+- amarias-sacerdote-de-zorobabel
+- maluc-sacerdote-de-zorobabel
+- hatus-sacerdote-de-zorobabel
+- secanias-sacerdote-de-zorobabel
+- rehum-sacerdote-de-zorobabel
+- meremot-sacerdote-de-zorobabel
+- ido-sacerdote-de-zorobabel
+- guinetoi
+- abias-sacerdote-de-zorobabel
+- mijamin-sacerdote-de-zorobabel
+- maadias
+- bilga-sacerdote-de-zorobabel
+- semaya-sacerdote-repatriado
+- jedaya-antepasado-de-uzi
+- salu-sacerdote-de-zorobabel
+- amoc
+- hilquias-sacerdote-de-zorobabel
+- jedaya-antepasado-de-netanel
+- binui-levita
+- serebias-levita-de-zorobabel
+- juda-levita-de-zorobabel
+- matanias-levita-de-zorobabel
+- bacbuquias-levita-de-zorobabel
+- uni-levita-de-guardia
 summary: Tras el decreto de Ciro, Zorobabel y el sumo sacerdote Josué encabezan la vuelta de más de 42.000 desterrados desde
   Babilonia, con los utensilios del templo. Para el séptimo mes ya viven en sus ciudades.
 reason: El estudio 3 fecha el regreso en 537 a.e.c. (sucesos regreso-de-537 y altar-reconstruido-537). Esd 2:1, 2 los pone
@@ -26,22 +64,36 @@ sources:
 - esdras-1
 - esdras-2
 - esdras-3
-checked_on: '2026-09-30'
+- nehemias-7
+- nehemias-12
+history:
+- date: '2026-10-13'
+  change: 'Las notas de las paradas ya no dicen que faltan las fichas de los jefes de Esd 2:2 y de los lugares de Esd 2:59,
+    y siguen a la nota de Esd 1:8: Sesbazar es solo posiblemente Zorobabel.'
+  source: esdras-2
+checked_on: '2026-10-14'
 status: verified
 stops:
 - order: 1
   place: babilonia
   reference: Esd 1:11; 2:1
-  date: *id001
-  note: 'Sesbazar lleva los utensilios; Perspicacia ve probable que sea Zorobabel. Esd 2:59 nombra otros puntos de salida
-    que el atlas aún no sitúa: Tel-Mélah, Tel-Harsá, Kerub, Adón, Imer.'
+  date:
+    from: -536
+    to: -536
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: 537 a.e.c.
+  note: 'Sesbazar lleva los utensilios; la nota de Esd 1:8 ve posible que sea Zorobabel, y Perspicacia «Sesbazar» lo veía
+    más probable. Según Esd 2:59, algunos salen de otros sitios de Babilonia: Imer, Adón, Kerub, Tel-Harsá y Tel-Mélah.'
   reason: 'Esd 1:11 y 2:1: los desterrados salen de Babilonia. El suceso regreso-de-537 lo fecha en 537 a.e.c. (estudio 3).'
   sources:
   - esdras-1
   - esdras-2
   - it-sesbazar
   - si-3
-  checked_on: '2026-09-30'
+  checked_on: '2026-10-14'
   status: verified
 - order: 2
   place: jerusalen
@@ -56,8 +108,8 @@ stops:
     text: tisri de 537 a.e.c.
     detail:
       month: tisri
-  note: Esd 2:2 nombra a otros nueve jefes que suben con ellos; el atlas aún no tiene sus fichas. Cada familia se instala
-    en su ciudad y en el mes séptimo se juntan en Jerusalén.
+  note: Con ellos suben los otros nueve jefes de Esd 2:2, de Nehemías a Baaná. Cada familia se instala en su ciudad y en el
+    mes séptimo se juntan en Jerusalén.
   reason: 'Esd 2:68 y 3:1: llegan a la casa de Jehová y en el séptimo mes se reúnen allí. Fecha de los sucesos regreso-de-537
     y altar-reconstruido-537: tisri de 537 a.e.c.'
   sources:

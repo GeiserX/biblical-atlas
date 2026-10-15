@@ -12,7 +12,7 @@ date:
 narrative_order:
   series: malaquias
   order: 1001
-  after: nehemias-vuelve-a-la-corte-443
+  after: nehemias-regresa-a-jerusalen
 places:
 - jerusalen
 - juda
@@ -59,5 +59,10 @@ links:
 - title: 'Perspicacia: «Malaquías, Libro de»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Malaqu%C3%ADas-Libro-de/
   type: perspicacia
-checked_on: '2026-09-30'
+history:
+- date: '2026-10-14'
+  change: Nehemías separa su regreso a Jerusalén (Ne 13:6, 7) en un suceso propio; Malaquías, posterior a ese regreso, pasa
+    a colgar de él.
+  source: nehemias-13
+checked_on: '2026-10-14'
 status: verified

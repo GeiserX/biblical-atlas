@@ -1,0 +1,49 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: sebanias-sacerdote-repatriado
+name: Sebanías
+names:
+- name: Sebanías
+perspicacia: 1200003971#2
+summary: Casa paterna de sacerdotes que en la generación de Joiaquim representó José. La lista de los que volvieron con Zorobabel
+  da Secanías en su lugar. Un miembro suyo, o un homónimo, selló la promesa de 455.
+reason: Perspicacia «Sebanías», núm. 2; Ne 10:4; 12:14.
+sources:
+- it-sebanias
+- nehemias-10
+- nehemias-12
+- it-secanias
+links:
+- title: 'Perspicacia: «Sebanías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Seban%C3%ADas/
+  type: perspicacia
+relations:
+- type: holds_office
+  office: priest
+  inferred: false
+  sources:
+  - nehemias-10
+  - nehemias-12
+  reason: 'Ne 10:8 cierra la lista: «esos son los sacerdotes».'
+  checked_on: '2026-10-14'
+  status: verified
+- type: same_as
+  person: secanias-sacerdote-de-zorobabel
+  certainty: probable
+  inferred: true
+  sources:
+  - it-sebanias
+  - it-secanias
+  - nehemias-12
+  reason: 'Perspicacia «Sebanías», núm. 2: en la lista del regreso (Ne 12:3) aparece Secanías en lugar de Sebanías; «Secanías»,
+    núm. 3, remite a ella.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- sebanias-levita-de-la-confesion
+- sebanias-levita-de-la-confesion
+- sebanias-levita-firmante
+- sebanias-trompetista
+disambiguation: Sebanías, casa paterna de sacerdotes; uno de ella selló la promesa de Ne 10 (Perspicacia «Sebanías», núm.
+  2).

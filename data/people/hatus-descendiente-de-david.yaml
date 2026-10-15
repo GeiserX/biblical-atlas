@@ -1,0 +1,61 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hatus-descendiente-de-david
+name: Hatús
+names:
+- name: Hatús
+perspicacia: 1200001918#3
+summary: Descendiente de David que encabezaba a los de su casa en el viaje de Esdras, en 468 a.e.c.
+reason: Perspicacia «Hatús», núm. 3; Esd 8:1, 2.
+sources:
+- it-hatus
+- esdras-8
+links:
+- title: 'Perspicacia: «Hatús»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hat%C3%BAs/
+  type: perspicacia
+relations:
+- type: kin
+  person: david
+  word: ancestor
+  inferred: false
+  sources:
+  - esdras-8
+  - it-hatus
+  reason: 'Esd 8:2: de los hijos de David, Hatús.'
+  checked_on: '2026-10-13'
+  status: verified
+- type: same_as
+  person: hatus-hijo-de-semaya
+  certainty: possible
+  inferred: true
+  sources:
+  - esdras-8
+  - it-hatus
+  reason: 'Perspicacia «Hatús», núm. 3: es posible que el Hatús de Esd 8:2 sea el hijo de Semaya, el núm. 2.'
+  checked_on: '2026-10-13'
+  status: verified
+- type: accompanies
+  person: esdras
+  date:
+    from: -467
+    to: -467
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 468 a.e.c.
+  inferred: false
+  sources:
+  - esdras-8
+  - it-hatus
+  reason: 'Esd 8:1, 2: subió con Esdras desde Babilonia.'
+  checked_on: '2026-10-13'
+  status: verified
+disambiguation: El cabeza de los hijos de David que volvió con Esdras (Esd 8:2), núm. 3 de Perspicacia «Hatús»; no el hijo
+  de Hasabneya.
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- hatus-hijo-de-hasabneya
+- hatus-sacerdote-firmante
+- hatus-sacerdote-de-zorobabel

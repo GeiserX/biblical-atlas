@@ -32,7 +32,7 @@ relations:
   reason: '1Cr 9:16, 34: de los jefes de los levitas que vivían en Jerusalén.'
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified
 distinct_from:
 - berekias-hijo-de-ido
@@ -40,4 +40,5 @@ distinct_from:
 - berekias-hijo-de-zorobabel
 - berekias-portero
 - berekias-hijo-de-mesilemot
+- berekias-hijo-de-mesezabel
 disambiguation: 'Berekías núm. 5 de Perspicacia: levita, hijo de Asá. No el padre del profeta Zacarías.'

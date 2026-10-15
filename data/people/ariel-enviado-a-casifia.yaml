@@ -1,0 +1,40 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ariel-enviado-a-casifia
+name: Ariel
+names:
+- name: Ariel
+perspicacia: 1200000361#2
+disambiguation: El jefe que Esdras envió a Casifía (Esd 8:16); no el moabita cuyos hijos mató Benaya.
+distinct_from:
+- ariel-de-moab
+summary: Uno de los nueve jefes a quienes Esdras encargó, en la primavera de 468 a.e.c. junto al río Ahavá, conseguir ministros
+  para la casa de Dios.
+reason: Perspicacia «Ariel», núm. 2; Esd 8:15-17, 31.
+sources:
+- it-ariel
+- esdras-8
+links:
+- title: 'Perspicacia: «Ariel»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ariel/
+  type: perspicacia
+relations:
+- type: accompanies
+  person: esdras
+  date:
+    from: -467
+    to: -467
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 468 a.e.c.
+  inferred: true
+  sources:
+  - esdras-8
+  - it-ariel
+  reason: 'Esd 8:15, 16: estaba en el campamento del Ahavá y Esdras lo envió a buscar levitas; Perspicacia lo pone entre los
+    que iban con Esdras.'
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified

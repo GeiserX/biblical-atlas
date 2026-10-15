@@ -3,12 +3,15 @@ id: semaya-hijo-de-galal
 name: Semaya
 names:
 - name: Semaya
+- name: Samúa
+  note: Así lo llama Ne 11:17 (Perspicacia «Samúa», núm. 3).
 perspicacia: 1200004000#15
 summary: Levita descendiente de Jedutún, hijo de Galal. Abdías, hijo suyo o descendiente, residió en Jerusalén tras el destierro.
 reason: Perspicacia «Semaya», núm. 15; 1Cr 9:16.
 sources:
 - it-semaya
 - 1-cronicas-9
+- nehemias-11
 links:
 - title: 'Perspicacia: «Semaya»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Semaya/
@@ -20,10 +23,11 @@ relations:
   inferred: false
   sources:
   - 1-cronicas-9
+  - nehemias-11
   reason: '1Cr 9:16: Semaya, hijo de Galal.'
-  checked_on: '2026-10-12'
+  checked_on: '2026-10-14'
   status: verified
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified
 distinct_from:
 - semaya-hijo-de-hasub
@@ -41,5 +45,19 @@ distinct_from:
 - semaya-ayudante-de-core
 - semaya-levita-de-josias
 - semaya-levita-de-jehosafat
+- semaya-descendiente-de-adonicam
+- semaya-enviado-a-casifia
+- semaya-descendiente-de-harim
+- semaya-sacerdote-descendiente-de-harim
+- semaya-guarda-de-la-puerta-oriental
+- semaya-hijo-de-delaya
+- semaya-sacerdote-repatriado
+- samua-hijo-de-zacur
+- samua-hijo-de-david
+- semaya-de-la-procesion-del-muro
+- semaya-hijo-de-matanias
+- semaya-musico-de-la-procesion
+- semaya-sacerdote-de-la-inauguracion
+- samua-de-la-casa-de-bilga
 disambiguation: 'Semaya núm. 15 de Perspicacia: levita de la línea de Jedutún, hijo de Galal. No el merarita hijo de Hasub
   ni el profeta.'

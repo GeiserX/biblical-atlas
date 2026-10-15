@@ -1,0 +1,23 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jahaziel-padre-de-secanias
+name: Jahaziel
+names:
+- name: Jahaziel
+perspicacia: 1200002291#5
+disambiguation: El padre de Secanías (Esd 8:5), núm. 5 de Perspicacia; no los otros Jahaziel que numera.
+distinct_from:
+- jahaziel-guerrero-de-david
+- jahaziel-hijo-de-hebron
+- jahaziel-trompetista
+- jahaziel-hijo-de-zacarias
+summary: Padre de Secanías, que guio a los de Zatú en el viaje de Esdras de 468 a.e.c.
+reason: Perspicacia «Jahaziel», núm. 5; Esd 8:5.
+sources:
+- it-jahaziel
+- esdras-8
+links:
+- title: 'Perspicacia: «Jahaziel»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jahaziel/
+  type: perspicacia
+checked_on: '2026-10-13'
+status: verified

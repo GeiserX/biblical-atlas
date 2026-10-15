@@ -1,0 +1,28 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hasum
+name: Hasum
+names:
+- name: Hasum
+perspicacia: '1200001907'
+summary: Cabeza de una familia israelita; 223 de sus miembros según Esd 2, 328 según Ne 7, volvieron de Babilonia con Zorobabel.
+reason: Perspicacia «Hasum»; Esd 2:19.
+sources:
+- it-hasum
+- esdras-2
+- esdras-10
+- nehemias-7
+- it-nehemias-libro
+- nehemias-10
+- nehemias-8
+links:
+- title: 'Perspicacia: «Hasum»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hasum/
+  type: perspicacia
+history:
+- date: '2026-10-14'
+  change: El resumen daba como hecho la cifra de Esd 2; Ne 7 da otra. Perspicacia «Nehemías, Libro de» ve posible que las
+    dos listas salgan de registros distintos.
+  source: nehemias-7
+checked_on: '2026-10-14'
+status: verified
+relations: []

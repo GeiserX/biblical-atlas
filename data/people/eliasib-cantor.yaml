@@ -1,0 +1,27 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: eliasib-cantor
+name: Eliasib
+names:
+- name: Eliasib
+perspicacia: 1200001298#3
+summary: Levita cantor de los días de Esdras. Estaba casado con extranjeras y, cuando se corrigieron esos matrimonios (468-467
+  a.e.c.), las despidió junto con sus hijos.
+reason: Perspicacia «Eliasib», núm. 3; Esd 10:24, 44.
+sources:
+- it-eliasib
+- esdras-10
+links:
+- title: 'Perspicacia: «Eliasib»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Eliasib/
+  type: perspicacia
+relations: []
+checked_on: '2026-10-14'
+status: verified
+disambiguation: El cantor de Esd 10:24, de los días de Esdras; no los demás Eliasib que registra Perspicacia.
+distinct_from:
+- eliasib-de-tiempos-de-david
+- eliasib-descendiente-de-bani
+- eliasib-descendiente-de-zatu
+- eliasib-hijo-de-elioenai
+- eliasib-padre-de-jehohanan
+- eliasib-sumo-sacerdote

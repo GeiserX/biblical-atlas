@@ -1,0 +1,39 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: maaseya-junto-a-esdras
+name: Maaseya
+names:
+- name: Maaseya
+perspicacia: 1200002811#14
+disambiguation: El Maaseya que estuvo a la derecha de Esdras en la lectura de la Ley (Ne 8:4); no el levita de ese nombre
+  que la explicaba ni los demás Maaseya.
+distinct_from:
+- maaseya-de-la-casa-de-jesua
+- maaseya-descendiente-de-harim
+- maaseya-descendiente-de-pahat-moab
+- maaseya-descendiente-de-pasjur
+- maaseya-funcionario
+- maaseya-hijo-de-adaya
+- maaseya-hijo-de-salum
+- maaseya-hijo-del-rey
+- maaseya-jefe-de-jerusalen
+- maaseya-levita-que-explico-la-ley
+- maaseya-musico
+- maaseya-padre-de-sedequias
+- maaseya-padre-de-sofonias
+- maaseya-hijo-de-ananiah
+- maaseya-cabeza-del-pueblo
+- maaseya-hijo-de-baruc
+- maaseya-hijo-de-itiel
+- maaseya-sacerdote-de-la-inauguracion
+- maaseya-trompetista-de-la-inauguracion
+summary: Hombre que acompañó a Esdras, de pie a su derecha, mientras la Ley se leía a los israelitas reunidos en Jerusalén.
+reason: Perspicacia «Maaseya», núm. 14; Ne 8:4.
+sources:
+- it-maaseya
+- nehemias-8
+links:
+- title: 'Perspicacia: «Maaseya»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Maaseya/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified

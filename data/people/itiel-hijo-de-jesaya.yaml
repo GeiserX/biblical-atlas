@@ -1,0 +1,30 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: itiel-hijo-de-jesaya
+name: Itiel
+names:
+- name: Itiel
+perspicacia: 1200002237#2
+summary: Benjamita; un descendiente suyo, Salú, vivía en Jerusalén en tiempos de Nehemías.
+reason: Perspicacia «Itiel», núm. 2; Ne 11:7.
+sources:
+- it-itiel
+- nehemias-11
+links:
+- title: 'Perspicacia: «Itiel»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Itiel/
+  type: perspicacia
+relations:
+- type: kin
+  person: jesaya-benjaminita
+  word: father
+  inferred: false
+  sources:
+  - nehemias-11
+  reason: 'Ne 11:7: Itiel, hijo de Jesayá.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- itiel-oyente-de-agur
+disambiguation: Itiel, benjamita, antepasado de Salú (Perspicacia «Itiel», núm. 2).

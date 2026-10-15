@@ -1,0 +1,18 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: besai
+name: Besái
+names:
+- name: Besái
+perspicacia: '1200000661'
+summary: Sus descendientes, siervos del templo o netineos, se cuentan entre los que volvieron de Babilonia en 537 a.e.c.
+reason: Perspicacia «Besai»; Esd 2:49.
+sources:
+- it-besai
+- esdras-2
+- nehemias-7
+links:
+- title: 'Perspicacia: «Besai»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Besai/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified

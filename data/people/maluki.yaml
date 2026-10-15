@@ -1,0 +1,27 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: maluki
+name: Malukí
+names:
+- name: Malukí
+perspicacia: '1200002874'
+summary: Familia sacerdotal cuyo representante, Jonatán, sirvió en días de Joiaquim, de Esdras y de Nehemías. La Septuaginta
+  lee aquí Maluc, el nombre de Ne 12:2.
+reason: Perspicacia «Malukí»; Ne 12:12, 14, 26.
+sources:
+- it-maluki
+- nehemias-12
+links:
+- title: 'Perspicacia: «Malukí»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Maluk%C3%AD/
+  type: perspicacia
+relations:
+- type: holds_office
+  office: priest
+  inferred: true
+  sources:
+  - nehemias-12
+  reason: 'Ne 12:12: su casa paterna era de sacerdotes; quien la encabezaba en días de Joiaquim era sacerdote.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified

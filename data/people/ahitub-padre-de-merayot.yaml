@@ -15,6 +15,8 @@ sources:
 - it-ahitub
 - 1-cronicas-6
 - 1-cronicas-9
+- esdras-7
+- nehemias-11
 links:
 - title: 'Perspicacia: «Ahitub»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ahitub/
@@ -26,8 +28,9 @@ relations:
   inferred: false
   sources:
   - 1-cronicas-6
+  - esdras-7
   reason: 1Cr 6:11 lo da como hijo de Amarías.
-  checked_on: '2026-10-12'
+  checked_on: '2026-10-13'
   status: verified
 - type: kin
   person: ahitub-hijo-de-amarias
@@ -45,8 +48,9 @@ relations:
   sources:
   - 1-cronicas-9
   - it-ahitub
+  - nehemias-11
   reason: '1Cr 9:11: líder de la casa del Dios verdadero; Perspicacia «Ahitub», núm. 3, refiere la frase a él.'
-  checked_on: '2026-10-12'
+  checked_on: '2026-10-14'
   status: verified
 - type: holds_office
   office: priest
@@ -57,5 +61,5 @@ relations:
   reason: Perspicacia «Ahitub», núm. 3, lo llama sacerdote; 1Cr 9:11.
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-14'
 status: verified

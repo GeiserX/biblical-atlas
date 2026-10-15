@@ -14,8 +14,8 @@ date:
 companions: []
 summary: Nehemías, que sirve el vino al rey Artajerjes, pide permiso para reconstruir Jerusalén. Sale de Susa con cartas para
   los gobernadores del oeste del Éufrates y una escolta, y a los tres días de llegar revisa la muralla.
-reason: Ne 2:1 pone la petición en nisán del año 20 de Artajerjes. El estudio 3 fecha en 455 a.e.c. la obra de la muralla
-  (suceso muros-de-jerusalen-455), que empieza el 4 de ab.
+reason: Ne 2:1 pone la petición en nisán del año 20 de Artajerjes (suceso nehemias-pide-permiso-a-artajerjes). El estudio
+  3 fecha en 455 a.e.c. la obra de la muralla, que empieza el 4 de ab (suceso reparacion-de-la-muralla-por-tramos-455).
 sources:
 - si-3
 - it-nehemias
@@ -23,7 +23,16 @@ sources:
 - it-susa
 - nehemias-1
 - nehemias-2
-checked_on: '2026-09-30'
+history:
+- date: '2026-10-14'
+  source: nehemias-2
+  change: La nota de la parada 2 decía que el atlas no tiene la región al oeste del Éufrates; ya existe (region-al-oeste-del-eufrates,
+    desde Esdras).
+- date: '2026-10-14'
+  change: muros-de-jerusalen-455 es ahora solo el final de la obra; la razón apunta a los sucesos del permiso y del principio
+    de la obra.
+  source: nehemias-2
+checked_on: '2026-10-14'
 status: verified
 stops:
 - order: 1
@@ -40,7 +49,7 @@ stops:
     detail:
       month: nisan
   note: El rey le pregunta cuánto tiempo estará fuera y le da las cartas que pide.
-  reason: Ne 1:1 lo pone en el castillo de Susa y Ne 2:1-8 cuenta la audiencia en nisán. Año del suceso muros-de-jerusalen-455
+  reason: Ne 1:1 lo pone en el castillo de Susa y Ne 2:1-8 cuenta la audiencia en nisán. Año del suceso nehemias-pide-permiso-a-artajerjes
     (estudio 3).
   sources:
   - nehemias-1
@@ -60,13 +69,14 @@ stops:
     type: anchored
     chronology: tnm
     text: 455 a.e.c.
-  note: Por el camino entrega las cartas a los gobernadores del oeste del Éufrates, región que el atlas no tiene como lugar.
-    Van con él jefes militares y jinetes del rey.
-  reason: 'Ne 2:11: llega a Jerusalén y a los tres días sale de noche a ver la muralla. La obra empieza el 4 de ab de 455
-    a.e.c. (suceso muros-de-jerusalen-455).'
+  note: Por el camino entrega las cartas del rey a los gobernadores de la región al oeste del Éufrates. Van con él jefes militares
+    y jinetes.
+  reason: 'Ne 2:9-11: entrega las cartas, llega a Jerusalén y a los tres días sale de noche a ver la muralla. La obra empieza
+    el 4 de ab de 455 a.e.c. (suceso reparacion-de-la-muralla-por-tramos-455).'
   sources:
   - nehemias-2
   - si-3
   - it-nehemias
-  checked_on: '2026-09-30'
+  - it-copero
+  checked_on: '2026-10-14'
   status: verified

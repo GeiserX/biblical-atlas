@@ -1,0 +1,32 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: sacerdotes-sin-registro-quedan-fuera-del-sacerdocio
+title: Los sacerdotes sin registro quedan fuera del sacerdocio
+date:
+  from: -537
+  to: -536
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 538 y 537 a.e.c. (tiempo narrativo: al registrar a los que volvían de Babilonia)'
+narrative_order:
+  series: esdras
+  order: 2061
+places: []
+people:
+- zorobabel
+passages:
+- Esd 2:61-63
+- Ne 7:63-65
+summary: Los hijos de Habaya, Hacoz y Barzilái no encuentran su registro genealógico. El gobernador les prohíbe servir de
+  sacerdotes y comer lo santísimo hasta que un sacerdote consulte el Urim y el Tumim.
+reason: 'Esd 2:61-63, dentro de la lista del regreso de 537 (estudio 3). Perspicacia «Tirsatá»: el gobernador debió de ser
+  Zorobabel. El texto no dice dónde: nadie queda situado.'
+sources:
+- esdras-2
+- si-3
+- it-tirsata
+- it-habaya
+- it-haqoz
+checked_on: '2026-10-14'
+status: verified

@@ -20,6 +20,16 @@ sources:
 - it-mardoqueo
 - it-ester-libro
 - si-3
+- ester-2
+- it-jair
+- ester-3
+- ester-4
+- ester-5
+- ester-6
+- ester-7
+- ester-8
+- ester-9
+- ester-10
 links:
 - title: 'Perspicacia: «Mardoqueo»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Mardoqueo/
@@ -50,5 +60,75 @@ relations:
     de 493 a c. 475 (Tabla de los libros).
   checked_on: '2026-10-03'
   status: verified
-checked_on: '2026-09-28'
+- type: kin
+  person: jair-padre-de-mardoqueo
+  word: father
+  inferred: false
+  sources:
+  - ester-2
+  - it-jair
+  reason: 'Est 2:5: Mardoqueo, hijo de Jaír.'
+  checked_on: '2026-10-14'
+  status: verified
+- type: kin
+  person: simei-antepasado-de-mardoqueo
+  word: ancestor
+  inferred: false
+  sources:
+  - ester-2
+  - it-simei
+  reason: Est 2:5 lo pone en su linaje, y Perspicacia «Simeí», núm. 15, lo llama antepasado de Mardoqueo.
+  checked_on: '2026-10-14'
+  status: verified
+- type: kin
+  person: quis-antepasado-de-mardoqueo
+  word: ancestor
+  inferred: false
+  sources:
+  - ester-2
+  - it-quis
+  - it-mardoqueo
+  reason: Est 2:5 lo pone en su linaje; Perspicacia «Mardoqueo», núm. 2, ve posible que fuera su bisabuelo o alguien anterior.
+  checked_on: '2026-10-14'
+  status: verified
+- type: kin
+  person: benjamin-hijo-de-jacob
+  word: ancestor
+  inferred: false
+  sources:
+  - ester-2
+  - it-mardoqueo
+  reason: 'Est 2:5: un benjaminita; Perspicacia «Mardoqueo», núm. 2: él y Ester eran de la tribu de Benjamín.'
+  checked_on: '2026-10-14'
+  status: verified
+- type: kin
+  person: abihail-padre-de-ester
+  word: uncle
+  inferred: false
+  sources:
+  - ester-2
+  - it-abihail
+  reason: 'Est 2:15: Mardoqueo era sobrino de Abihail, el padre de Ester.'
+  checked_on: '2026-10-14'
+  status: verified
+- type: tie
+  person: jerjes-i
+  word: master
+  inferred: false
+  sources:
+  - ester-2
+  - it-mardoqueo
+  - si-ester
+  - ester-10
+  - ester-3
+  - it-ester
+  - ester-6
+  reason: 'Est 2:19, 21 lo sienta a la puerta del rey, y Est 10:3 lo hace el segundo después de Asuero. Perspicacia «Mardoqueo»,
+    núm. 2: estaba al servicio del rey.'
+  checked_on: '2026-10-14'
+  status: verified
+perspicacia: 1200003111#2
+checked_on: '2026-10-14'
 status: verified
+distinct_from:
+- mardoqueo-repatriado

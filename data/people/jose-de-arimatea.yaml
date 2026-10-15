@@ -17,6 +17,8 @@ distinct_from:
 - jose-hijo-de-jonam
 - jose-hijo-de-matatias
 - jose-hijo-de-asaf
+- jose-descendiente-de-binui
+- jose-de-la-casa-de-sebanias
 summary: Hombre rico, miembro del Sanedrín y discípulo en secreto. No apoyó la decisión contra Jesús, pidió su cuerpo
   a Pilato y lo puso en su propia tumba nueva.
 reason: Perspicacia «José», apartado 10, y la nota de Mt 27:57; Jn 19:38-42.
@@ -36,7 +38,7 @@ links:
   type: bible
 search: José de Arimatea
 perspicacia: 1200002515#10
-checked_on: '2026-10-12'
+checked_on: '2026-10-14'
 status: verified
 relations:
 - type: lived_in

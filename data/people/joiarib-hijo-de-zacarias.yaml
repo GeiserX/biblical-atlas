@@ -1,0 +1,31 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: joiarib-hijo-de-zacarias
+name: Joiarib
+names:
+- name: Joiarib
+perspicacia: 1200002494#3
+summary: Judaíta, antepasado del Maaseya que vivía en Jerusalén en tiempos de Nehemías.
+reason: Perspicacia «Joiarib», núm. 3; Ne 11:5.
+sources:
+- it-joiarib
+- nehemias-11
+links:
+- title: 'Perspicacia: «Joiarib»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Joiarib/
+  type: perspicacia
+relations:
+- type: kin
+  person: zacarias-hijo-del-selanita
+  word: father
+  inferred: false
+  sources:
+  - nehemias-11
+  reason: 'Ne 11:5: Joiarib, hijo de Zacarías.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- jehoiarib
+- joiarib-maestro
+disambiguation: Joiarib, judaíta, antepasado de Maaseya (Perspicacia «Joiarib», núm. 3).

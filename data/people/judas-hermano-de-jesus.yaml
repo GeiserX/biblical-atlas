@@ -34,6 +34,7 @@ sources:
 - marcos-6
 - juan-7
 - jy-cap-65
+- si-judas
 relations:
 - type: kin
   person: maria-madre-de-jesus
@@ -79,5 +80,8 @@ history:
   change: 'La relación con Jesús pasa a deducido: false, porque Mt 13:55 lo dice. Lo que deduce Perspicacia es que ese Judas
     escribió la carta.'
   source: mateo-13
-checked_on: '2026-09-29'
+checked_on: '2026-10-14'
 status: verified
+not_claimed:
+- 'Que Judas fuera apóstol: se llama esclavo de Jesucristo y habla de los apóstoles como de otros (Jud 1, 17, 18; Perspicacia
+  «Judas», núm. 5, y «Toda Escritura», libro 65).'

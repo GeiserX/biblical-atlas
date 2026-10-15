@@ -1,0 +1,25 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: delaya-sin-registro
+name: Delayá
+names:
+- name: Delayá
+perspicacia: 1200001148#3
+summary: Antepasado de un grupo que volvió en 537 a.e.c. pero no pudo probar que era de origen israelita.
+reason: Perspicacia «Delayá», núm. 3; Esd 2:60.
+sources:
+- it-delaya
+- esdras-2
+- nehemias-7
+links:
+- title: 'Perspicacia: «Delayá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Delay%C3%A1/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- delaya-de-tiempos-de-david
+- delaya-hijo-de-elioenai
+- delaya-hijo-de-semaya
+- delaya-hijo-de-mehetabel
+disambiguation: 'Delayá núm. 3 de Perspicacia: antepasado de los que no probaron su origen (Esd 2:60); no el sacerdote de
+  David ni el príncipe de Jehoiaquim.'

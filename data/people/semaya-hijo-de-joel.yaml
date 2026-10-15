@@ -21,6 +21,17 @@ distinct_from:
 - semaya-ayudante-de-core
 - semaya-levita-de-josias
 - semaya-levita-de-jehosafat
+- semaya-descendiente-de-adonicam
+- semaya-enviado-a-casifia
+- semaya-descendiente-de-harim
+- semaya-sacerdote-descendiente-de-harim
+- semaya-guarda-de-la-puerta-oriental
+- semaya-hijo-de-delaya
+- semaya-sacerdote-repatriado
+- semaya-de-la-procesion-del-muro
+- semaya-hijo-de-matanias
+- semaya-musico-de-la-procesion
+- semaya-sacerdote-de-la-inauguracion
 summary: Rubenita, hijo de Joel, en la línea que llega a Beerá, el jefe desterrado por los asirios.
 reason: Perspicacia «Semaya», núm. 2; 1Cr 5:4.
 sources:
@@ -40,5 +51,5 @@ relations:
   reason: 1Cr 5:4 lo da como hijo de Joel.
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified

@@ -1,0 +1,26 @@
+# biblical-atlas: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: jesua-de-juda
+name: Jesúa
+names:
+- name: Jesúa
+type: city
+lat: 31.276389
+lon: 34.990278
+precision: uncertain
+coord_source: openbible:ab8473d
+coord_url: https://www.openbible.info/geo/ancient/ab8473d/jeshua
+coord_note: Tel Yeshua, primera identificación de OpenBible; es el Tell es-Saʽweh donde la sitúan algunos investigadores según
+  Perspicacia.
+summary: Ciudad del sur de Judá donde vivieron judíos que volvieron del destierro. Perspicacia ve posible que sea la Sema
+  de Jos 15:26 y quizá la Seba de Jos 19:2.
+reason: 'Perspicacia «Jesúa», núm. 8; Ne 11:25, 26. OpenBible: solo el punto.'
+sources:
+- it-jesua
+- openbible-geo
+- nehemias-11
+links:
+- title: 'Perspicacia: «Jesúa»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jes%C3%BAa/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified

@@ -1,0 +1,30 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: colaya-hijo-de-maaseya
+name: Colaya
+names:
+- name: Colaya
+perspicacia: 1200002647#2
+summary: Benjamita que, según parece, fue antepasado del Salú que vivía en Jerusalén en días de Nehemías.
+reason: Perspicacia «Qolaya», núm. 2; Ne 11:7.
+sources:
+- it-qolaya
+- nehemias-11
+links:
+- title: 'Perspicacia: «Qolaya»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Qolaya/
+  type: perspicacia
+relations:
+- type: kin
+  person: maaseya-hijo-de-itiel
+  word: father
+  inferred: false
+  sources:
+  - nehemias-11
+  reason: 'Ne 11:7: Colaya, hijo de Maaseya.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- colaya-padre-de-acab
+disambiguation: Colaya, benjamita, antepasado de Salú (Perspicacia «Qolaya», núm. 2).

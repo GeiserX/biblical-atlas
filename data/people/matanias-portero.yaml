@@ -1,0 +1,33 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: matanias-portero
+name: Matanías
+names:
+- name: Matanías
+perspicacia: null
+summary: Levita que en días del sumo sacerdote Joiaquim vigilaba como portero los almacenes situados en las entradas del templo.
+  Perspicacia no le da número propio.
+reason: Perspicacia «Matanías», núm. 2; Ne 12:25, 26.
+sources:
+- it-matanias
+- nehemias-12
+links:
+- title: 'Perspicacia: «Matanías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Matan%C3%ADas/
+  type: perspicacia
+relations: []
+checked_on: '2026-10-14'
+status: verified
+distinct_from:
+- matanias-antepasado-de-jahaziel
+- matanias-descendiente-de-bani
+- matanias-descendiente-de-elam
+- matanias-descendiente-de-pahat-moab
+- matanias-descendiente-de-zatu
+- matanias-hijo-de-heman
+- matanias-hijo-de-mica
+- matanias-levita-de-ezequias
+- sedequias
+- matanias-abuelo-de-hanan
+- matanias-levita-de-zorobabel
+disambiguation: El portero de los almacenes del templo en días de Joiaquim (Ne 12:25), sin número propio en Perspicacia «Matanías»;
+  no los demás Matanías que registra.

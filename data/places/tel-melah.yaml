@@ -1,0 +1,25 @@
+# biblical-atlas: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: tel-melah
+name: Tel-Mélah
+names:
+- name: Tel-Mélah
+type: city
+lat: 32.126111
+lon: 45.230833
+precision: uncertain
+coord_source: openbible:a2b5ee9
+coord_url: https://www.openbible.info/geo/ancient/a2b5ee9/tel-melah
+coord_note: OpenBible lo pone a menos de 50 km de Nippur; jw.org solo dice que estaba en Babilonia.
+summary: Lugar de Babilonia del que salieron en 537 a.e.c. algunos que no pudieron probar su genealogía israelita.
+reason: 'Perspicacia «Tel-mélah»; Esd 2:59. OpenBible: solo el punto.'
+sources:
+- it-tel-melah
+- openbible-geo
+- esdras-2
+- nehemias-7
+links:
+- title: 'Perspicacia: «Tel-mélah»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Tel-m%C3%A9lah/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified

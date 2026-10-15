@@ -1,0 +1,20 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: peruda
+name: Perudá
+names:
+- name: Perudá
+- name: Peridá
+perspicacia: '1200003449'
+summary: Antepasado de una de las familias descendientes de siervos de Salomón; esa familia volvió del destierro con el grupo
+  de Zorobabel. Nehemías lo llama Peridá.
+reason: Perspicacia «Perudá»; Esd 2:55.
+sources:
+- it-peruda
+- esdras-2
+- nehemias-7
+links:
+- title: 'Perspicacia: «Perudá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Perud%C3%A1/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified

@@ -1,0 +1,20 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: imri-padre-de-zacur
+name: Imrí
+names:
+- name: Imrí
+perspicacia: 1200002162#2
+disambiguation: El padre de Zacur (Ne 3:2), núm. 2 de Perspicacia «Imrí»; no el Imrí hijo de Baní.
+distinct_from:
+- imri-hijo-de-bani
+summary: Padre del Zacur que trabajó en la muralla de Jerusalén en días de Nehemías.
+reason: Perspicacia «Imrí», núm. 2; Ne 3:2.
+sources:
+- it-imri
+- nehemias-3
+links:
+- title: 'Perspicacia: «Imrí»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Imr%C3%AD/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified

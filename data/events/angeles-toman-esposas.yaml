@@ -16,14 +16,21 @@ places: []
 people: []
 passages:
 - Gé 6:1, 2, 4
-summary: Los hijos del Dios verdadero, que eran ángeles, se casan con las mujeres que eligen. Sus hijos son los nefilim, hombres
-  violentos y famosos que hacen crecer la maldad.
-reason: La nota de Gé 6:2 dice que en hebreo esa expresión designa a ángeles. Perspicacia «Nefilim» ve en los nefilim a sus
-  hijos y pone los hechos en días de Noé, antes del Diluvio.
+- Jud 6
+- 2Pe 2:4
+- 1Pe 3:19, 20
+summary: Ángeles, los hijos del Dios verdadero, se casan con las mujeres que eligen y tienen a los nefilim, hombres violentos
+  y famosos que hacen crecer la maldad. Dios acaba recluyéndolos en el Tártaro, al parecer en días de Noé.
+reason: 'Nota de Gé 6:2: son ángeles. Perspicacia: sus hijos vivían al darse el plazo de 2490 («Nefilim») y desobedecían
+  mientras se construía el arca («Tártaro», 1Pe 3:20). El comienzo no está fechado: el rango es tiempo narrativo, días de Noé.'
 sources:
 - genesis-6
 - it-nefilim
 - it-noe
+- judas-1
+- it-tartaro
+- 2-pedro-2
+- 1-pedro-3
 links:
 - title: 'Perspicacia: «Nefilim»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Nefilim/
@@ -31,5 +38,14 @@ links:
 - title: Génesis 6 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/G%C3%A9nesis/6/
   type: bible
-checked_on: '2026-09-29'
+history:
+- date: '2026-10-14'
+  change: 'El resumen no decía lo que cuentan 1Pe 3:19, 20: esos espíritus desobedientes están en prisión. Perspicacia «Tártaro»
+    pone su reclusión, al parecer, en días de Noé. Se reescribe para caber en 40 palabras.'
+  source: 1-pedro-3
+- date: '2026-10-14'
+  change: 'La razón explica por qué la fecha sigue siendo todos los días de Noé hasta el Diluvio: 1Pe 3:20 los ve desobedientes
+    durante el arca, pero «Nefilim» ya pone a sus hijos en 2490.'
+  source: 1-pedro-3
+checked_on: '2026-10-14'
 status: verified

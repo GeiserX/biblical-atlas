@@ -145,9 +145,10 @@ relations:
   - genesis-20
   - genesis-23
   - genesis-49
+  - 1-pedro-3
   reason: 'Gé 11:29: la esposa de Abrán se llamaba Sarái. Gé 20:12: era hija de su padre, pero no de su madre. Perspicacia
     «Sara» dice que se casaron en Ur.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-14'
   status: verified
 - type: kin
   person: nacor-hijo-de-tare
@@ -176,8 +177,9 @@ relations:
   sources:
   - genesis-11
   - hechos-7
+  - nehemias-9
   reason: 'Gé 11:31: Taré se lo llevó de Ur de los caldeos.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-14'
   status: verified
 - type: lived_in
   place: canaan

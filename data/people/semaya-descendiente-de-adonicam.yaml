@@ -1,0 +1,87 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: semaya-descendiente-de-adonicam
+name: Semaya
+names:
+- name: Semaya
+perspicacia: 1200004000#17
+disambiguation: El jefe de los hijos de Adonicam que volvió con Esdras (Esd 8:13), núm. 17 de Perspicacia; no los otros Semaya
+  que numera.
+distinct_from:
+- semaya-de-nehelam
+- semaya-hijo-de-galal
+- semaya-hijo-de-hasub
+- semaya-hijo-de-joel
+- semaya-hijo-de-netanel
+- semaya-hijo-de-obed-edom
+- semaya-hijo-de-secanias
+- semaya-jefe-de-la-casa-de-elizafan
+- semaya-padre-de-delaya
+- semaya-padre-de-uriya
+- semaya-profeta
+- semaya-simeonita
+- semaya-ayudante-de-core
+- semaya-levita-de-ezequias
+- semaya-levita-de-jehosafat
+- semaya-levita-de-josias
+- semaya-descendiente-de-harim
+- semaya-sacerdote-descendiente-de-harim
+- semaya-guarda-de-la-puerta-oriental
+- semaya-hijo-de-delaya
+- semaya-sacerdote-repatriado
+- semaya-de-la-procesion-del-muro
+- semaya-hijo-de-matanias
+- semaya-musico-de-la-procesion
+- semaya-sacerdote-de-la-inauguracion
+summary: Jefe de los hijos de Adonicam que acompañó a Esdras en 468 a.e.c. Perspicacia ve posible que fuera el Semaya enviado
+  desde el Ahavá a buscar levitas y siervos del templo.
+reason: Perspicacia «Semaya», núm. 17; Esd 8:1, 13, 16-20.
+sources:
+- it-semaya
+- esdras-8
+- it-adonicam
+links:
+- title: 'Perspicacia: «Semaya»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Semaya/
+  type: perspicacia
+relations:
+- type: kin
+  person: adonicam
+  word: ancestor
+  inferred: false
+  sources:
+  - esdras-8
+  - it-semaya
+  - it-adonicam
+  reason: 'Esd 8:13: de los hijos de Adonicam.'
+  checked_on: '2026-10-13'
+  status: verified
+- type: accompanies
+  person: esdras
+  date:
+    from: -467
+    to: -467
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 468 a.e.c.
+  inferred: false
+  sources:
+  - esdras-8
+  - it-semaya
+  reason: 'Esd 8:1, 13: subió con Esdras con Elifélet, Jeiel y 60 varones.'
+  checked_on: '2026-10-13'
+  status: verified
+- type: same_as
+  person: semaya-enviado-a-casifia
+  certainty: possible
+  inferred: true
+  sources:
+  - esdras-8
+  - it-semaya
+  reason: 'Perspicacia «Semaya», núm. 17: es posible que el jefe de los hijos de Adonicam (Esd 8:13) fuera el Semaya enviado
+    a Casifía (Esd 8:16).'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified
