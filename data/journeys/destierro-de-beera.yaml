@@ -113,7 +113,7 @@ stops:
   checked_on: '2026-10-02'
   status: verified
 - order: 5
-  place: gozan
+  place: rio-gozan
   branches_from: 1
   reference: 1Cr 5:26
   date:

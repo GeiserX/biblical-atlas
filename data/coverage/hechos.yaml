@@ -26,7 +26,7 @@ chapters:
     status: complete
     reviewed_on: 2026-09-29
     spans:
-    - {v: 1-10, type: narration, entities: [event:curacion-del-cojo-en-la-puerta-hermosa, person:pedro, person:juan-apostol, place:monte-moria, relation:pedro/accompanies/juan-apostol], mentions: [person:jesus, place:nazaret], note: "Hacia las tres de la tarde, la hora novena. El cojo no tiene nombre. La Puerta Hermosa, entrada del templo, queda en los nombres del monte Moria."}
+    - {v: 1-10, type: narration, entities: [event:curacion-del-cojo-en-la-puerta-hermosa, person:pedro, person:juan-apostol, place:monte-moria, relation:pedro/accompanies/juan-apostol], mentions: [person:jesus, place:nazaret], note: "Hacia las tres de la tarde, la hora novena. El cojo no tiene nombre. La Puerta Hermosa, entrada del templo, queda en las partes del monte Moria."}
     - {v: 11-26, type: speech, entities: [event:discurso-de-pedro-en-el-portico-de-salomon, person:pedro, person:juan-apostol, place:monte-moria], mentions: [person:jesus, person:abrahan, person:isaac, person:jacob, person:poncio-pilato, person:barrabas, person:moises, person:samuel, event:sentencia-y-barrabas, event:muerte-de-jesus, event:resurreccion-de-jesus, event:abrahan-ofrece-a-isaac], note: "El asesino liberado es Barrabás (referencias de 3:14; Perspicacia «Barrabás»). Pedro cita a Moisés (Dt 18:15) y la promesa a Abrahán (Gé 22:18). Hombres de Israel es el pueblo, sin ficha."}
   4:
     status: complete

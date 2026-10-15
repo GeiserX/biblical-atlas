@@ -1,0 +1,54 @@
+# biblical-atlas: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: rio-gozan
+name: Río Gozán
+names:
+- name: Río Gozán
+type: river
+lat: null
+lon: null
+precision: uncertain
+coord_source: null
+coord_url: null
+candidates:
+- name: Río Qezel Ouzan, en el noroeste de Irán
+  geometry:
+    type: strip
+    lat: 36.6
+    lon: 46.6
+    to:
+      lat: 37.43
+      lon: 49.95
+  checked_on: '2026-09-30'
+  status: alternative
+  sources:
+  - it-gozan
+  reason: Perspicacia apunta la posibilidad de que el río sea el Qezel Ouzan, que nace al sureste del lago Urmia y acaba en
+    el Caspio.
+  coord_source: calculation
+  note: 'Extremos aproximados nuestros: un punto al sureste del lago Urmia (36,6 N; 46,6 E) y la desembocadura del Sefid Rud
+    en el Caspio (37,43 N; 49,95 E). Franja orientativa.'
+summary: Río junto al que el rey de Asiria asentó a israelitas desterrados del reino del norte, en Habor y en otros lugares.
+  Perspicacia apunta al Qezel Ouzan, en el noroeste de Irán; según otra opinión, era un río de Mesopotamia.
+reason: 'Perspicacia «Gozán», párr. 2: el hebreo permite leer «río Gozán» en 2Re 17:6, 18:11 y 1Cr 5:26, y 1Cr 5:26 no deja
+  leer «Habor, río de Gozán». Es otro sitio que la tierra de Gozán.'
+sources:
+- it-gozan
+- 2-reyes-17
+- 2-reyes-18
+- 1-cronicas-5
+links:
+- title: 'Perspicacia: «Gozán»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Goz%C3%A1n/
+  type: perspicacia
+- title: 2 Reyes 17 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-reyes/17/
+  type: bible
+history:
+- date: '2026-10-15'
+  change: 'Se separa de la tierra de Gozán: Perspicacia «Gozán» dice que el nombre designaba un lugar y un río, y los destierros
+    de 2Re 17:6, 18:11 y 1Cr 5:26 van al río.'
+  source: it-gozan
+checked_on: '2026-10-15'
+status: verified
+not_claimed:
+- 'Dónde corría el río Gozán: Perspicacia menciona el Qezel Ouzan, en el noroeste de Irán, y otra opinión que lo pone en Mesopotamia.'

@@ -28,7 +28,7 @@ chapters:
     status: complete
     reviewed_on: 2026-09-29
     spans:
-    - {v: 1-5, type: poetry, entities: [event:el-pastor-visita-a-la-sulamita-en-jerusalen, person:sulamita, place:jerusalen], mentions: [place:galaad, person:david], note: "El pastor describe a la sulamita con velo: cabello como cabras que bajan de Galaad y cuello como la torre de David, con mil escudos colgados (2Sa 8:7; 2Re 11:10). La torre va en los nombres de Jerusalén."}
+    - {v: 1-5, type: poetry, entities: [event:el-pastor-visita-a-la-sulamita-en-jerusalen, person:sulamita, place:jerusalen], mentions: [place:galaad, person:david], note: "El pastor describe a la sulamita con velo: cabello como cabras que bajan de Galaad y cuello como la torre de David, con mil escudos colgados (2Sa 8:7; 2Re 11:10). La torre va en las partes de Jerusalén."}
     - {v: "6", type: poetry, entities: [event:el-pastor-visita-a-la-sulamita-en-jerusalen, person:sulamita], note: "Ella dice que se irá a los montes del olíbano y la mirra antes de que caiga la tarde. Perspicacia lo lee como su deseo de salir de la ciudad."}
     - {v: 7-11, type: poetry, entities: [event:el-pastor-visita-a-la-sulamita-en-jerusalen, person:sulamita, place:libano, place:antilibano, place:monte-hermon], note: "La llama novia y hermana y le pide que baje del Líbano, del Amaná, del Senir y del Hermón, guaridas de leones y leopardos. Sus caricias superan al vino y su ropa huele como el Líbano."}
     - {v: 12-15, type: poetry, entities: [event:el-pastor-visita-a-la-sulamita-en-jerusalen, person:sulamita], mentions: [place:libano], note: "Ella es un jardín cerrado y un manantial sellado, lleno de granados, nardo, azafrán, canela, mirra y áloes, y un pozo de agua fresca con arroyos que bajan del Líbano."}
