@@ -1,0 +1,36 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: ciro-devuelve-los-utensilios-del-templo
+title: Ciro devuelve los utensilios del templo
+date:
+  from: -537
+  to: -536
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 538 y 537 a.e.c. (tiempo narrativo: tras el decreto de Ciro y antes de la salida de los desterrados)'
+narrative_order:
+  series: esdras
+  order: 1007
+places:
+- babilonia
+people:
+- ciro
+- mitridates-tesorero-de-ciro
+- sesbazar
+present:
+- mitridates-tesorero-de-ciro
+- sesbazar
+passages:
+- Esd 1:7-11
+summary: 'Ciro manda sacar los objetos de oro y plata que Nabucodonosor había puesto en el templo de su dios. El tesorero
+  Mitrídates los cuenta para Sesbazar: 5.400 en total.'
+reason: 'Esd 1:7-11. Va entre el decreto (finales de 538 o principios de 537) y la salida de 537 (estudio 3). Sitio deducido:
+  los objetos estaban en Babilonia y de allí los saca Sesbazar (Esd 1:11). Ciro no queda situado.'
+sources:
+- esdras-1
+- si-3
+- it-mitridates
+- it-sesbazar
+checked_on: '2026-10-13'
+status: verified

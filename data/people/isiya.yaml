@@ -1,0 +1,29 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: isiya
+name: Isiya
+names:
+- name: Isiya
+perspicacia: '1200002232'
+summary: Israelita de los hijos de Harim. Estaba casado con extranjeras y, cuando Esdras corrigió esos matrimonios (468-467
+  a.e.c.), las despidió junto con sus hijos.
+reason: Perspicacia «Isiya»; Esd 10:31, 44.
+sources:
+- it-isiya
+- esdras-10
+links:
+- title: 'Perspicacia: «Isiya»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Isiya/
+  type: perspicacia
+relations:
+- type: kin
+  person: harim-cabeza-de-familia
+  word: ancestor
+  sources:
+  - esdras-10
+  - it-isiya
+  reason: Esd 10:31 lo pone entre los hijos de Harim; Perspicacia «Isiya».
+  inferred: false
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified

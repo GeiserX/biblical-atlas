@@ -1,0 +1,55 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: zacarias-descendiente-de-elam
+name: Zacarías
+names:
+- name: Zacarías
+perspicacia: 1200004681#24
+summary: Israelita de los hijos de Elam. Estaba casado con extranjeras y, cuando Esdras corrigió esos matrimonios (468-467
+  a.e.c.), las despidió junto con sus hijos.
+reason: Perspicacia «Zacarías», núm. 24; Esd 10:26, 44.
+sources:
+- it-zacarias
+- esdras-10
+links:
+- title: 'Perspicacia: «Zacarías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zacar%C3%ADas/
+  type: perspicacia
+relations:
+- type: kin
+  person: elam-cabeza-de-familia
+  word: ancestor
+  sources:
+  - esdras-10
+  - it-zacarias
+  reason: Esd 10:26 lo pone entre los hijos de Elam; Perspicacia «Zacarías», núm. 24.
+  inferred: false
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified
+disambiguation: El de los hijos de Elam de Esd 10:26; no los demás Zacarías que registra Perspicacia.
+distinct_from:
+- zacarias-abuelo-de-ezequias
+- zacarias-consejero-de-uzias
+- zacarias-de-israel
+- zacarias-descendiente-de-isias
+- zacarias-descendiente-de-paros
+- zacarias-el-rubenita
+- zacarias-enviado-a-casifia
+- zacarias-hijo-de-bebai
+- zacarias-hijo-de-benaya
+- zacarias-hijo-de-hosa
+- zacarias-hijo-de-jeberekias
+- zacarias-hijo-de-jehoiada
+- zacarias-hijo-de-jehosafat
+- zacarias-hijo-de-meselemias
+- zacarias-levita-de-ezequias
+- zacarias-levita-de-josias
+- zacarias-musico
+- zacarias-padre-de-ido
+- zacarias-padre-de-juan
+- zacarias-principe-de-jehosafat
+- zacarias-profeta
+- zacarias-sacerdote-de-josias
+- zacarias-trompetista
+- zeker

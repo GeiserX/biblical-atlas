@@ -3,7 +3,7 @@ id: zorobabel
 name: Zorobabel
 names:
 - name: Zorobabel
-disambiguation: Gobernador de Judá después del destierro, hijo legal de Sealtiel; probablemente el mismo que Sesbazar.
+disambiguation: Gobernador de Judá después del destierro, hijo legal de Sealtiel; quizá el mismo que Sesbazar.
 date:
   from: -536
   to: -514
@@ -28,6 +28,9 @@ sources:
 - it-plomada
 - w22-lo-que-zacarias-vio
 - 1-cronicas-3
+- esdras-2
+- esdras-4
+- esdras-5
 links:
 - title: 'Perspicacia: «Zorobabel»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zorobabel/
@@ -60,8 +63,9 @@ relations:
   sources:
   - it-zorobabel
   - ageo-1
+  - esdras-3
   reason: 'Perspicacia «Zorobabel»: gobernador en Jerusalén y Judá desde el regreso hasta que se terminó el templo.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-13'
   status: verified
 - type: kin
   person: sealtiel
@@ -73,8 +77,10 @@ relations:
   - lucas-3
   - ageo-1
   - ageo-2
+  - esdras-3
+  - esdras-5
   reason: Mt 1:12. La nota y Perspicacia «Sealtiel» explican que quizá era su padre legal y Pedaya, el natural.
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-13'
   status: verified
 - type: kin
   person: nedabias
@@ -104,5 +110,8 @@ history:
   change: La relación con David decía «descendiente de David»; escrita en la ficha de Zorobabel, significa que David es el
     antepasado. Se corrige a «antepasado».
   source: mateo-1
-checked_on: '2026-10-12'
+- date: '2026-10-13'
+  change: '«Probablemente» pasa a «quizá»: la nota de Esd 1:8 ve solo posible que Sesbazar sea Zorobabel.'
+  source: esdras-1
+checked_on: '2026-10-13'
 status: verified

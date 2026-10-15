@@ -1,0 +1,49 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: zebadias-descendiente-de-imer
+name: Zebadías
+names:
+- name: Zebadías
+perspicacia: 1200004670#9
+summary: Sacerdote de los hijos de Imer. Estaba casado con extranjeras y, cuando Esdras corrigió esos matrimonios (468-467
+  a.e.c.), las despidió junto con sus hijos.
+reason: Perspicacia «Zebadías», núm. 9; Esd 10:20, 44.
+sources:
+- it-zebadias
+- esdras-10
+links:
+- title: 'Perspicacia: «Zebadías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zebad%C3%ADas/
+  type: perspicacia
+relations:
+- type: kin
+  person: imer-de-tiempos-de-david
+  word: ancestor
+  sources:
+  - esdras-10
+  - it-zebadias
+  reason: Esd 10:20 lo pone entre los hijos de Imer; Perspicacia «Zebadías», núm. 9. «Hijos» vale aquí por descendientes,
+    como dice Perspicacia «Harim», núm. 1.
+  inferred: false
+  checked_on: '2026-10-13'
+  status: verified
+- type: holds_office
+  office: priest
+  sources:
+  - esdras-10
+  - it-zebadias
+  reason: 'Esd 10:18-22: va en la lista de los hijos de los sacerdotes; Perspicacia lo llama sacerdote.'
+  inferred: false
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified
+disambiguation: El sacerdote de los hijos de Imer de Esd 10:20; no los demás Zebadías que registra Perspicacia.
+distinct_from:
+- zebadias-descendiente-de-berias
+- zebadias-descendiente-de-elpaal
+- zebadias-hijo-de-asahel
+- zebadias-hijo-de-ismael
+- zebadias-hijo-de-jeroham
+- zebadias-hijo-de-meselemias
+- zebadias-hijo-de-miguel
+- zebadias-levita-de-jehosafat

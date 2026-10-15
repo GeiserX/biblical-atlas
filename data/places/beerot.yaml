@@ -66,6 +66,7 @@ sources:
 - 2-samuel-4
 - 2-samuel-23
 - 1-cronicas-11
+- esdras-2
 links:
 - title: 'Perspicacia: «Beerot»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Beerot/
@@ -76,5 +77,5 @@ links:
 - title: Josué 18 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Josu%C3%A9/18/
   type: bible
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified

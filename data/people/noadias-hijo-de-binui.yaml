@@ -1,0 +1,31 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: noadias-hijo-de-binui
+name: Noadías
+names:
+- name: Noadías
+perspicacia: 1200003265#1
+summary: Levita, hijo de Binuí. En 468 a.e.c., días después de que llegara Esdras, estuvo entre los que contaron y pesaron
+  en el templo los donativos traídos de Babilonia.
+reason: Perspicacia «Noadías», núm. 1; Esd 8:33.
+sources:
+- it-noadias
+- esdras-8
+- it-binui
+links:
+- title: 'Perspicacia: «Noadías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Noad%C3%ADas/
+  type: perspicacia
+relations:
+- type: kin
+  person: binui-levita
+  word: father
+  inferred: false
+  sources:
+  - esdras-8
+  - it-noadias
+  - it-binui
+  reason: 'Esd 8:33: el levita Noadías hijo de Binuí.'
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified

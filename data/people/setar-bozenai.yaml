@@ -1,0 +1,48 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: setar-bozenai
+name: Setar-Bozenái
+names:
+- name: Setar-Bozenái
+perspicacia: '1200004027'
+date:
+  from: -519
+  to: -519
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 520 a.e.c.
+summary: Funcionario persa, quizá secretario, que acompañaba a Tatenái. Fue con él a Jerusalén, firmó el informe a Darío sobre
+  el templo y después obedeció la orden de no estorbar la obra.
+reason: 'Perspicacia «Setar-bozenai»: oficial asociado a Tatenai en tiempos de Darío I. Esd 5:3, 6 y 6:6, 13.'
+sources:
+- it-setar-bozenai
+- esdras-5
+- esdras-6
+links:
+- title: 'Perspicacia: «Setar-bozenai»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Setar-bozenai/
+  type: perspicacia
+relations:
+- type: accompanies
+  person: tatenai
+  word: fellow_worker
+  date:
+    from: -519
+    to: -519
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 520 a.e.c.
+  sources:
+  - esdras-5
+  - esdras-6
+  - it-setar-bozenai
+  reason: Esd 5:3, 6 y 6:6, 13 lo nombran siempre junto a Tatenái; Perspicacia «Setar-bozenai» lo llama su asociado, quizá
+    secretario.
+  inferred: false
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified

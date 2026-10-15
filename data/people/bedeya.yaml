@@ -1,0 +1,29 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: bedeya
+name: Bedeya
+names:
+- name: Bedeya
+perspicacia: '1200000601'
+summary: Israelita de los hijos de Baní. Estaba casado con extranjeras y, cuando Esdras corrigió esos matrimonios (468-467
+  a.e.c.), las despidió junto con sus hijos.
+reason: Perspicacia «Bedeya»; Esd 10:35, 44.
+sources:
+- it-bedeya
+- esdras-10
+links:
+- title: 'Perspicacia: «Bedeya»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Bedeya/
+  type: perspicacia
+relations:
+- type: kin
+  person: bani-antepasado-de-doce-repatriados
+  word: ancestor
+  sources:
+  - esdras-10
+  - it-bedeya
+  reason: Esd 10:35 lo pone entre los hijos de Baní; Perspicacia «Bedeya».
+  inferred: false
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified

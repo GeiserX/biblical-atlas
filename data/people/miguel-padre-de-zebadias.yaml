@@ -1,0 +1,29 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: miguel-padre-de-zebadias
+name: Miguel
+names:
+- name: Miguel
+perspicacia: 1200003035#11
+disambiguation: El padre de Zebadías (Esd 8:8), núm. 11 de Perspicacia; no los otros Miguel que numera.
+distinct_from:
+- miguel-de-manases
+- miguel-descendiente-de-berias
+- miguel-hijo-de-abihail
+- miguel-hijo-de-baaseya
+- miguel-hijo-de-izrahias
+- miguel-hijo-de-jesisai
+- miguel-padre-de-omri
+- miguel-padre-de-setur
+- miguel-hijo-de-jehosafat
+- jesus
+summary: Padre de Zebadías, uno de los jefes del viaje de Esdras en 468 a.e.c.
+reason: Perspicacia «Miguel», núm. 11; Esd 8:8.
+sources:
+- it-miguel
+- esdras-8
+links:
+- title: 'Perspicacia: «Miguel»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Miguel/
+  type: perspicacia
+checked_on: '2026-10-13'
+status: verified

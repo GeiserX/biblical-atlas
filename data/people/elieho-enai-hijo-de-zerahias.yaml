@@ -1,0 +1,58 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: elieho-enai-hijo-de-zerahias
+name: Elieho-Enái
+names:
+- name: Elieho-Enái
+perspicacia: 1200001301#2
+disambiguation: El hijo de Zerahías que volvió con Esdras (Esd 8:4); no el portero coreíta hijo de Meselemías.
+distinct_from:
+- elieho-enai-hijo-de-meselemias
+summary: Hijo de Zerahías, de la casa de Pahat-Moab. En 468 a.e.c. hizo el viaje de Esdras al frente de 200 varones.
+reason: Perspicacia «Elieho-enai», núm. 2; Esd 8:1, 4.
+sources:
+- it-elieho-enai
+- esdras-8
+links:
+- title: 'Perspicacia: «Elieho-enai»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Elieho-enai/
+  type: perspicacia
+relations:
+- type: kin
+  person: zerahias-padre-de-elieho-enai
+  word: father
+  inferred: false
+  sources:
+  - esdras-8
+  - it-elieho-enai
+  reason: 'Esd 8:4: Elieho-Enái hijo de Zerahías.'
+  checked_on: '2026-10-13'
+  status: verified
+- type: kin
+  person: pahat-moab
+  word: ancestor
+  inferred: false
+  sources:
+  - esdras-8
+  - it-elieho-enai
+  reason: 'Esd 8:4: de los hijos de Pahat-Moab.'
+  checked_on: '2026-10-13'
+  status: verified
+- type: accompanies
+  person: esdras
+  date:
+    from: -467
+    to: -467
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 468 a.e.c.
+  inferred: false
+  sources:
+  - esdras-8
+  - it-elieho-enai
+  reason: 'Esd 8:1, 4: subió con Esdras con 200 varones.'
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified

@@ -1,0 +1,19 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: telem
+name: Télem
+names:
+- name: Télem
+perspicacia: 1200004351#1
+summary: Portero de los días de Esdras. Estaba casado con extranjeras y, cuando se corrigieron esos matrimonios (468-467 a.e.c.),
+  las despidió junto con sus hijos.
+reason: Perspicacia «Télem», núm. 1; Esd 10:24, 44.
+sources:
+- it-telem
+- esdras-10
+links:
+- title: 'Perspicacia: «Télem»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/T%C3%A9lem/
+  type: perspicacia
+relations: []
+checked_on: '2026-10-13'
+status: verified

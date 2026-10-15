@@ -1,0 +1,23 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: harim-cabeza-de-familia
+name: Harim
+names:
+- name: Harim
+perspicacia: 1200001880#2
+summary: Fundador de una familia que no era sacerdotal; 320 de sus miembros volvieron con Zorobabel.
+reason: Perspicacia «Harim», núm. 2; Esd 2:32.
+sources:
+- it-harim
+- esdras-2
+- esdras-10
+links:
+- title: 'Perspicacia: «Harim»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Harim/
+  type: perspicacia
+checked_on: '2026-10-13'
+status: verified
+distinct_from:
+- harim-de-tiempos-de-david
+disambiguation: 'Harim núm. 2 de Perspicacia: el de la familia laica de Esd 2:32, no el sacerdote de la tercera división (Esd
+  2:39).'
+relations: []

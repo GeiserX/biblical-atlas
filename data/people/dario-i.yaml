@@ -22,6 +22,7 @@ sources:
 - it-dario
 - it-persia
 - esdras-6
+- esdras-5
 links:
 - title: 'Perspicacia: «Darío»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Dar%C3%ADo/
@@ -30,5 +31,26 @@ links:
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/esdras/6/
   type: bible
 perspicacia: 1200001124#2
-checked_on: '2026-09-29'
+checked_on: '2026-10-13'
 status: verified
+relations:
+- type: succeeds
+  person: artajerjes-bardiya-o-gaumata
+  office: king
+  date:
+    from: -521
+    to: -521
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 522 a.e.c.
+  inferred: true
+  sources:
+  - it-dario
+  - it-persia
+  - esdras-4
+  reason: 'Perspicacia «Darío», núm. 2: con otros seis nobles mató al que ocupaba el trono tras Cambises y se quedó con él.
+    Esd 4:24 sigue con su reinado.'
+  checked_on: '2026-10-13'
+  status: verified

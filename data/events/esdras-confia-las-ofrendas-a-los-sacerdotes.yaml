@@ -1,0 +1,43 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: esdras-confia-las-ofrendas-a-los-sacerdotes
+title: Esdras confía las ofrendas a doce jefes de los sacerdotes
+date:
+  from: -467
+  to: -467
+  precision: month
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: nisán de 468 a.e.c.
+  detail:
+    month: nisan
+narrative_order:
+  series: esdras
+  order: 8024
+places:
+- rio-ahava
+people:
+- esdras
+- serebias-jefe-de-los-sacerdotes
+- hasabias-jefe-de-los-sacerdotes
+passages:
+- Esd 8:24-30
+summary: Esdras pesó y entregó a doce jefes de los sacerdotes, entre ellos Serebías y Hasabías, la plata, el oro y los utensilios
+  donados para el templo, y les encargó guardarlos hasta Jerusalén.
+reason: Esd 8:24-30; Perspicacia «Esdras», núm. 1, «Serebías», núm. 2, y «Hasabías», núm. 7. El texto no nombra el sitio,
+  pero el grupo seguía en el Ahavá hasta el día 12 (Esd 8:31).
+sources:
+- esdras-8
+- it-esdras
+- it-serebias
+- it-hasabias
+- si-3
+links:
+- title: 'Perspicacia: «Esdras»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Esdras/
+  type: perspicacia
+- title: Esdras 8 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/esdras/8/
+  type: bible
+checked_on: '2026-10-14'
+status: verified

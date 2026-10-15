@@ -1,0 +1,29 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: aziza
+name: Azizá
+names:
+- name: Azizá
+perspicacia: '1200000495'
+summary: Israelita de los hijos de Zatú. Estaba casado con extranjeras y, cuando Esdras corrigió esos matrimonios (468-467
+  a.e.c.), las despidió junto con sus hijos.
+reason: Perspicacia «Azizá»; Esd 10:27, 44.
+sources:
+- it-aziza
+- esdras-10
+links:
+- title: 'Perspicacia: «Azizá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Aziz%C3%A1/
+  type: perspicacia
+relations:
+- type: kin
+  person: zatu
+  word: ancestor
+  sources:
+  - esdras-10
+  - it-aziza
+  reason: Esd 10:27 lo pone entre los hijos de Zatú; Perspicacia «Azizá».
+  inferred: false
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified

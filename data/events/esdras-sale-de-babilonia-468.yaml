@@ -1,0 +1,61 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: esdras-sale-de-babilonia-468
+title: Esdras sale de Babilonia con los que vuelven
+date:
+  from: -467
+  to: -467
+  precision: day
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 1 de nisán de 468 a.e.c.
+  detail:
+    month: nisan
+    day: 1
+narrative_order:
+  series: esdras
+  order: 7007
+places:
+- babilonia
+people:
+- esdras
+- guersom-descendiente-de-finehas
+- daniel-descendiente-de-itamar
+- hatus-descendiente-de-david
+- zacarias-descendiente-de-paros
+- elieho-enai-hijo-de-zerahias
+- secanias-hijo-de-jahaziel
+- ebed-hijo-de-jonatan
+- jesaya-hijo-de-atalia
+- zebadias-hijo-de-miguel
+- abdias-hijo-de-jehiel
+- selomit-hijo-de-josifias
+- zacarias-hijo-de-bebai
+- johanan-hijo-de-hacatan
+- elifelet-descendiente-de-adonicam
+- jeiel-descendiente-de-adonicam
+- semaya-descendiente-de-adonicam
+- utai-descendiente-de-bigvai
+- zabbud
+passages:
+- Esd 7:6, 7, 9
+- Esd 7:27, 28
+- Esd 8:1-14
+summary: El día 1 del primer mes, Esdras dejó Babilonia. Iban con él jefes de casas paternas, sacerdotes y levitas, y también
+  cantores, porteros y siervos del templo.
+reason: Esd 7:7, 9 y 8:1 dan el día y quiénes subieron con él; Perspicacia «Esdras», núm. 1, cuenta unos 1.500 hombres con
+  sus familias. Año del estudio 3.
+sources:
+- esdras-7
+- esdras-8
+- it-esdras
+- si-3
+links:
+- title: 'Perspicacia: «Esdras»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Esdras/
+  type: perspicacia
+- title: Esdras 7 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/esdras/7/
+  type: bible
+checked_on: '2026-10-13'
+status: verified

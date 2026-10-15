@@ -9,7 +9,7 @@ names:
 - name: el discípulo al que Jesús amaba
   note: Así se nombra a sí mismo en su Evangelio.
 - name: el anciano
-  note: Así se presenta en 2Jn 1. «Toda Escritura», libro 63, párr. 2, lo explica por su edad y porque, como columna y último
+  note: Así se presenta en 2Jn 1 y 3Jn 1. «Toda Escritura», libro 63, párr. 2, lo explica por su edad y porque, como columna y último
     apóstol vivo, era anciano de la congregación.
 disambiguation: El apóstol, hijo de Zebedeo. No es Juan el Bautista, ni Juan Marcos, ni el gobernante Juan de Hch
   4:6, ni Juan el padre de Pedro.
@@ -63,6 +63,11 @@ sources:
 - galatas-2
 - 3-juan-1
 - si-3-juan
+- 2-juan-1
+- si-2-juan
+- 1-juan-1
+- si-1-juan
+- 1-juan-2
 distinct_from:
 - juan-el-bautista
 - juan-marcos
@@ -124,6 +129,9 @@ relations:
   - tnm-tabla
   - 3-juan-1
   - si-3-juan
+  - 2-juan-1
+  - si-2-juan
+  - 1-juan-1
   reason: La Tabla pone sus cartas en «Éfeso o cerca» y el libro «Testimonio completo» dice que, según se cree, se fue allí
     al salir libre.
   checked_on: '2026-10-14'
@@ -254,5 +262,10 @@ links:
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/apocalipsis/1/
   type: bible
 perspicacia: 1200002489#3
+history:
+- date: '2026-10-15'
+  change: El nombre «el anciano» cita también 3Jn 1, donde Juan se presenta igual; «Toda Escritura», libro 64, párr. 2,
+    lo usa para identificar al escritor.
+  source: 3-juan-1
 checked_on: '2026-10-14'
 status: verified

@@ -1,0 +1,24 @@
+# biblical-atlas: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: tel-harsa
+name: Tel-Harsá
+names:
+- name: Tel-Harsá
+type: city
+lat: 32.126111
+lon: 45.230833
+precision: uncertain
+coord_source: openbible:a0c97c0
+coord_url: https://www.openbible.info/geo/ancient/a0c97c0/tel-harsha
+coord_note: OpenBible lo pone a menos de 50 km de Nippur; jw.org solo dice que estaba en Babilonia.
+summary: Lugar de Babilonia, conocido solo por esta lista, del que volvieron algunos que no pudieron probar su linaje.
+reason: 'Perspicacia «Tel-harsá»; Esd 2:59. OpenBible: solo el punto.'
+sources:
+- it-tel-harsa
+- openbible-geo
+- esdras-2
+links:
+- title: 'Perspicacia: «Tel-harsá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Tel-hars%C3%A1/
+  type: perspicacia
+checked_on: '2026-10-13'
+status: verified

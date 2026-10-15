@@ -1,0 +1,44 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: uriya-hijo-de-hacoz
+name: Uriya
+names:
+- name: Uriya
+perspicacia: 1200004523#3
+disambiguation: El padre del sacerdote Meremot (Esd 8:33), núm. 3 de Perspicacia; no los otros Uriya que numera.
+distinct_from:
+- uriya-hijo-de-semaya
+- uriya-sacerdote-de-acaz
+summary: Sacerdote descendiente de Hacoz, padre de Meremot, el sacerdote que recibió en el templo las ofrendas que trajo Esdras
+  en 468 a.e.c.
+reason: Perspicacia «Uriya», núm. 3; Esd 8:33; Ne 3:4, 21.
+sources:
+- it-uriya
+- esdras-8
+- it-meremot
+links:
+- title: 'Perspicacia: «Uriya»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Uriya/
+  type: perspicacia
+relations:
+- type: kin
+  person: hacoz
+  word: ancestor
+  inferred: true
+  sources:
+  - it-uriya
+  - it-meremot
+  reason: Ne 3:4 lo llama hijo de Hacoz; Perspicacia «Meremot», núm. 2, dice que la familia descendía de Haqoz, cabeza de
+    un turno de David.
+  checked_on: '2026-10-13'
+  status: verified
+- type: holds_office
+  office: priest
+  inferred: true
+  sources:
+  - esdras-8
+  - it-uriya
+  reason: Perspicacia «Uriya», núm. 3, lo llama sacerdote; Esd 8:33 da a su hijo como sacerdote.
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified

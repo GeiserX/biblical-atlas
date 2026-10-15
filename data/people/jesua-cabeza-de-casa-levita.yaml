@@ -1,0 +1,35 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jesua-cabeza-de-casa-levita
+name: Jesúa
+names:
+- name: Jesúa
+perspicacia: 1200002446#5
+summary: Cabeza de una casa de levitas; algunos de los suyos formaron parte del regreso guiado por Zorobabel (537 a.e.c.).
+reason: Perspicacia «Jesúa», núm. 5; Esd 2:40.
+sources:
+- it-jesua
+- esdras-2
+- esdras-8
+links:
+- title: 'Perspicacia: «Jesúa»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jes%C3%BAa/
+  type: perspicacia
+relations:
+- type: kin
+  person: hodavias-levita
+  word: ancestor
+  inferred: false
+  sources:
+  - esdras-2
+  reason: 'Esd 2:40: los hijos de Jesúa y de Cadmiel son de los hijos de Hodavías.'
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified
+distinct_from:
+- jesua-ayudante-de-core
+- jesua-de-pahat-moab
+- jesua-de-tiempos-de-david
+- jesua-supervisor-del-templo
+- josue-sumo-sacerdote
+disambiguation: 'Jesúa núm. 5 de Perspicacia: cabeza de la casa levita de Esd 2:40; no el sumo sacerdote ni el de Pahat-Moab.'

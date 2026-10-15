@@ -34,6 +34,10 @@ distinct_from:
 - zacarias-levita-de-ezequias
 - zacarias-levita-de-josias
 - zacarias-sacerdote-de-josias
+- zacarias-descendiente-de-paros
+- zacarias-enviado-a-casifia
+- zacarias-hijo-de-bebai
+- zacarias-descendiente-de-elam
 summary: Profeta posterior al destierro, hijo de Berekías y nieto de Idó. Se unió a Ageo unos dos meses después para animar
   a terminar el templo; sus mensajes abarcan dos años y un mes.
 reason: Perspicacia «Zacarías», núm. 20, y «Ageo»; Zac 1:1 lo fecha en el octavo mes del segundo año de Darío. La Tabla de
@@ -54,6 +58,9 @@ sources:
 - zacarias-8
 - zacarias-11
 - si-zacarias
+- esdras-5
+- esdras-6
+- it-ido
 links:
 - title: 'Perspicacia: «Zacarías»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zacar%C3%ADas/
@@ -110,10 +117,23 @@ relations:
   - zacarias-1
   - it-zacarias
   - it-zacarias-libro
+  - esdras-5
+  - esdras-6
   reason: Zac 1:1, 7 lo llaman profeta. Perspicacia «Zacarías», núm. 20, da a sus mensajes dos años y un mes, del año segundo
     al cuarto de Darío.
   inferred: false
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-13'
+  status: verified
+- type: kin
+  person: ido-padre-de-berekias
+  word: grandfather
+  sources:
+  - esdras-5
+  - esdras-6
+  - it-ido
+  reason: Esd 5:1 y 6:14 lo llaman nieto de Idó; Perspicacia «Idó», núm. 4, lo da como padre de Berekías y abuelo del profeta.
+  inferred: false
+  checked_on: '2026-10-13'
   status: verified
 perspicacia: 1200004681#20
 history:

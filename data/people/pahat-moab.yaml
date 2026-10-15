@@ -1,0 +1,23 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: pahat-moab
+name: Pahat-Moab
+names:
+- name: Pahat-Moab
+- name: Pahat-moab
+  note: Grafía de Perspicacia.
+perspicacia: '1200003361'
+summary: Fundador de una familia israelita; su nombre significa «gobernador de Moab». Sus descendientes, 2.812, formaron uno
+  de los grupos más numerosos del regreso de 537 a.e.c.
+reason: Perspicacia «Pahat-moab»; Esd 2:6.
+sources:
+- it-pahat-moab
+- esdras-2
+- esdras-8
+- esdras-10
+links:
+- title: 'Perspicacia: «Pahat-moab»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Pahat-moab/
+  type: perspicacia
+checked_on: '2026-10-13'
+status: verified
+relations: []

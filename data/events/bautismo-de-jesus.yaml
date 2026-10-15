@@ -25,6 +25,9 @@ passages:
 - Mr 1:9-11
 - Lu 3:21-38
 - 1Ti 3:16
+- Heb 5:5
+- Heb 10:5-10
+- 1Jn 5:6-8
 - 2Ti 1:10
 summary: Con unos 30 años, Jesús pide a Juan que lo bautice en el Jordán, quizá cerca de Betania, al otro lado del río. Al
   salir del agua desciende sobre él el espíritu y Dios lo reconoce como su Hijo.
@@ -40,6 +43,8 @@ sources:
 - lucas-3
 - jy-cap-12
 - 1-timoteo-3
+- 1-juan-5
+- w08-cartas-de-juan-y-judas
 - 2-timoteo-1
 links:
 - title: 'Perspicacia: «Bautismo»'
@@ -48,5 +53,5 @@ links:
 - title: Mateo 3 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/mateo/3/
   type: bible
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified

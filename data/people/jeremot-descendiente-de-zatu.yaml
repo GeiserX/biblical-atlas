@@ -1,0 +1,37 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jeremot-descendiente-de-zatu
+name: Jeremot
+names:
+- name: Jeremot
+perspicacia: 1200002423#6
+summary: Israelita de los hijos de Zatú. Estaba casado con extranjeras y, cuando Esdras corrigió esos matrimonios (468-467
+  a.e.c.), las despidió junto con sus hijos.
+reason: Perspicacia «Jeremot», núm. 6; Esd 10:27, 44.
+sources:
+- it-jeremot
+- esdras-10
+links:
+- title: 'Perspicacia: «Jeremot»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jeremot/
+  type: perspicacia
+relations:
+- type: kin
+  person: zatu
+  word: ancestor
+  sources:
+  - esdras-10
+  - it-jeremot
+  reason: Esd 10:27 lo pone entre los hijos de Zatú; Perspicacia «Jeremot», núm. 6.
+  inferred: false
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified
+disambiguation: El de los hijos de Zatú de Esd 10:27; no los demás Jeremot que registra Perspicacia.
+distinct_from:
+- jeremot-de-beker
+- jeremot-descendiente-de-bani
+- jeremot-descendiente-de-elam
+- jeremot-hijo-de-berias
+- jeremot-hijo-de-musi
+- jerimot-hijo-de-heman

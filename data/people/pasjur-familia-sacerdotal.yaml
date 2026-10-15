@@ -1,0 +1,45 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: pasjur-familia-sacerdotal
+name: Pasjur
+names:
+- name: Pasjur
+perspicacia: 1200003396#4
+summary: 'Antepasado de una casa paterna de sacerdotes: 1.247 de los suyos volvieron con Jesúa en 537 a.e.c.'
+reason: Perspicacia «Pasjur», núm. 4; Esd 2:38.
+sources:
+- it-pasjur
+- esdras-2
+- esdras-10
+links:
+- title: 'Perspicacia: «Pasjur»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Pasjur/
+  type: perspicacia
+relations:
+- type: holds_office
+  office: priest
+  inferred: false
+  sources:
+  - esdras-2
+  - it-pasjur
+  reason: 'Esd 2:38: sus descendientes se cuentan entre los sacerdotes.'
+  checked_on: '2026-10-13'
+  status: verified
+- type: same_as
+  person: pasjur-hijo-de-malkias
+  certainty: possible
+  inferred: true
+  sources:
+  - it-pasjur
+  - esdras-2
+  - esdras-10
+  reason: 'Perspicacia «Pasjur», núm. 2: si aquel príncipe era sacerdote, quizá de él tomaron su nombre los hijos de Pasjur
+    de Esd 2:38.'
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified
+distinct_from:
+- pasjur-hijo-de-imer
+- pasjur-padre-de-guedalias
+disambiguation: 'Pasjur núm. 4 de Perspicacia: el de la casa sacerdotal de Esd 2:38. Perspicacia ve posible que sea el hijo
+  de Malkiya.'

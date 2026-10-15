@@ -11,7 +11,73 @@ date:
   type: anchored
   chronology: tnm
   text: 468 a.e.c. (del 1 de nisán al 1 de ab)
-companions: []
+companions:
+- guersom-descendiente-de-finehas
+- daniel-descendiente-de-itamar
+- hatus-descendiente-de-david
+- zacarias-descendiente-de-paros
+- elieho-enai-hijo-de-zerahias
+- secanias-hijo-de-jahaziel
+- ebed-hijo-de-jonatan
+- jesaya-hijo-de-atalia
+- zebadias-hijo-de-miguel
+- abdias-hijo-de-jehiel
+- selomit-hijo-de-josifias
+- zacarias-hijo-de-bebai
+- johanan-hijo-de-hacatan
+- elifelet-descendiente-de-adonicam
+- jeiel-descendiente-de-adonicam
+- semaya-descendiente-de-adonicam
+- utai-descendiente-de-bigvai
+- zabbud
+- person: eliezer-enviado-a-casifia
+  from: 2
+  to: 3
+- person: ariel-enviado-a-casifia
+  from: 2
+  to: 3
+- person: semaya-enviado-a-casifia
+  from: 2
+  to: 3
+- person: elnatan-primer-jefe
+  from: 2
+  to: 3
+- person: elnatan-segundo-jefe
+  from: 2
+  to: 3
+- person: jarib-enviado-a-casifia
+  from: 2
+  to: 3
+- person: natan-enviado-a-casifia
+  from: 2
+  to: 3
+- person: zacarias-enviado-a-casifia
+  from: 2
+  to: 3
+- person: mesulam-enviado-a-casifia
+  from: 2
+  to: 3
+- person: joiarib-maestro
+  from: 2
+  to: 3
+- person: elnatan-maestro
+  from: 2
+  to: 3
+- person: serebias-descendiente-de-mahli
+  from: 2
+  to: 3
+- person: hasabias-merarita
+  from: 2
+  to: 3
+- person: jesaya-merarita
+  from: 2
+  to: 3
+- person: hasabias-jefe-de-los-sacerdotes
+  from: 2
+  to: 3
+- person: serebias-jefe-de-los-sacerdotes
+  from: 2
+  to: 3
 summary: Con una carta del rey Artajerjes, el sacerdote y copista Esdras reúne a los que quieren volver junto al río Ahavá,
   busca levitas, ayuna pidiendo protección y llega a Jerusalén sin escolta cuatro meses después.
 reason: El estudio 3 fecha la vuelta de Esdras en 468 a.e.c. (suceso esdras-regresa-468). Esd 7:9 y 8:31 dan los días de salida
@@ -23,7 +89,7 @@ sources:
 - it-ahava
 - esdras-7
 - esdras-8
-checked_on: '2026-10-01'
+checked_on: '2026-10-13'
 status: verified
 stops:
 - order: 1
