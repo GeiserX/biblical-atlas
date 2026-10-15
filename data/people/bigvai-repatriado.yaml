@@ -1,0 +1,30 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: bigvai-repatriado
+name: Bigvái
+names:
+- name: Bigvái
+perspicacia: 1200000731#2
+summary: Personaje destacado del grupo que salió del destierro con Zorobabel y llegó a Judá en 537 a.e.c.
+reason: Perspicacia «Bigvai», núm. 2; Esd 2:2.
+sources:
+- it-bigvai
+- esdras-2
+links:
+- title: 'Perspicacia: «Bigvai»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Bigvai/
+  type: perspicacia
+relations:
+- type: lived_in
+  place: juda
+  inferred: false
+  sources:
+  - esdras-2
+  reason: 'Esd 2:1, 2: volvió con Zorobabel a Jerusalén y Judá, donde cada familia fue a su ciudad.'
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified
+distinct_from:
+- bigvai-cabeza-de-familia
+disambiguation: 'Bigvái núm. 2 de Perspicacia: uno de los jefes del regreso de 537 (Esd 2:2), no el antepasado de la familia
+  de Esd 2:14.'

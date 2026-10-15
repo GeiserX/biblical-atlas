@@ -1,0 +1,68 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: abdias-hijo-de-jehiel
+name: Abdías
+names:
+- name: Abdías
+perspicacia: 1200003287#11
+disambiguation: El hijo de Jehiel que volvió con Esdras (Esd 8:9), núm. 11 de Perspicacia; no el profeta ni los otros Abdías
+  que numera.
+distinct_from:
+- abdias-el-gadita
+- abdias-hijo-de-arnan
+- abdias-hijo-de-azel
+- abdias-hijo-de-izrahias
+- abdias-hijo-de-semaya
+- abdias-mayordomo-de-acab
+- abdias-padre-de-ismaya
+- abdias-profeta
+- abdias-levita-de-josias
+- abdias-principe-de-jehosafat
+summary: Hijo de Jehiel. En 468 a.e.c. guio a 218 varones de la casa de Joab en el viaje de Esdras.
+reason: Perspicacia «Abdías», núm. 11; Esd 8:1, 9.
+sources:
+- it-abdias
+- esdras-8
+links:
+- title: 'Perspicacia: «Abdías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Abd%C3%ADas/
+  type: perspicacia
+relations:
+- type: kin
+  person: jehiel-padre-de-abdias
+  word: father
+  inferred: false
+  sources:
+  - esdras-8
+  - it-abdias
+  reason: 'Esd 8:9: Abdías hijo de Jehiel.'
+  checked_on: '2026-10-13'
+  status: verified
+- type: kin
+  person: joab-antepasado-de-abdias
+  word: ancestor
+  inferred: false
+  sources:
+  - esdras-8
+  - it-abdias
+  reason: 'Esd 8:9: de los hijos de Joab.'
+  checked_on: '2026-10-13'
+  status: verified
+- type: accompanies
+  person: esdras
+  date:
+    from: -467
+    to: -467
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 468 a.e.c.
+  inferred: false
+  sources:
+  - esdras-8
+  - it-abdias
+  reason: 'Esd 8:1, 9: subió con Esdras con 218 varones.'
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified

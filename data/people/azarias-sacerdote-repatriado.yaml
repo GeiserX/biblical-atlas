@@ -44,6 +44,16 @@ relations:
     el destierro: lo tomamos por descendiente.'
   checked_on: '2026-10-12'
   status: verified
+- type: same_as
+  person: seraya-repatriado
+  certainty: possible
+  inferred: true
+  sources:
+  - it-azarias
+  - esdras-2
+  reason: Perspicacia «Azarías», núm. 23, ve posible que sea el núm. 22, el que Esd 2:2 llama Seraya.
+  checked_on: '2026-10-13'
+  status: verified
 checked_on: '2026-10-13'
 status: verified
 distinct_from:
@@ -68,5 +78,6 @@ distinct_from:
 - azarias-hijo-de-obed
 - azarias-quinto-hijo-de-jehosafat
 - azarias-segundo-hijo-de-jehosafat
+- azarias-hijo-de-merayot
 disambiguation: 'Azarías núm. 23 de Perspicacia: sacerdote de Jerusalén tras el destierro, llamado Seraya en Nehemías. No
   el rey Uzías, Abednego ni los demás Azarías.'

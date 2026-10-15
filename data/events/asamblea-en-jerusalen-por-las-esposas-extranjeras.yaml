@@ -1,0 +1,39 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: asamblea-en-jerusalen-por-las-esposas-extranjeras
+title: Asamblea en Jerusalén por las esposas extranjeras
+date:
+  from: -467
+  to: -467
+  precision: day
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 20 de kislev de 468 a.e.c.
+  detail:
+    month: kislev
+    day: 20
+narrative_order:
+  series: esdras
+  order: 10007
+places:
+- jerusalen
+people:
+- esdras
+- jonatan-hijo-de-asahel
+- jahzeya
+- mesulam-levita-de-tiempos-de-esdras
+- sabetai
+passages:
+- Esd 10:7-15
+summary: Convocados bajo pena de expulsión, los hombres de Judá y Benjamín se reúnen al tercer día en un patio del templo,
+  bajo fuertes lluvias. Esdras les manda separarse de las esposas extranjeras y la congregación pide resolverlo ciudad por
+  ciudad.
+reason: Esd 10:9 da el día 20 del mes noveno, que es kislev; el año es el de la llegada de Esdras, 468 a.e.c. (estudio 3;
+  Perspicacia «Esdras»).
+sources:
+- esdras-10
+- it-esdras
+- si-3
+- it-jahzeya
+checked_on: '2026-10-13'
+status: verified

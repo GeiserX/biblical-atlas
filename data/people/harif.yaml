@@ -1,0 +1,18 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: harif
+name: Harif
+names:
+- name: Harif
+- name: Jorá
+perspicacia: '1200001881'
+summary: Antepasado de una familia de Israel; 112 de sus varones dejaron el destierro en 537 a.e.c. Esd 2:18 lo llama Jorá.
+reason: Perspicacia «Harif»; Esd 2:18.
+sources:
+- it-harif
+- esdras-2
+links:
+- title: 'Perspicacia: «Harif»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Harif/
+  type: perspicacia
+checked_on: '2026-10-13'
+status: verified

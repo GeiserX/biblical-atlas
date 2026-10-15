@@ -1,0 +1,24 @@
+# biblical-atlas: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: hadid
+name: Hadid
+names:
+- name: Hadid
+type: city
+lat: 31.963319
+lon: 34.951764
+precision: uncertain
+coord_source: openbible:a044272
+coord_url: https://www.openbible.info/geo/ancient/a044272/hadid
+coord_note: Al Haditha, primera identificación de OpenBible; Perspicacia dice que se la suele relacionar con el-Haditheh.
+summary: Ciudad de unos benjaminitas que volvieron de Babilonia, unos 5 km al estenoreste de Lod.
+reason: 'Perspicacia «Hadid»; Esd 2:33. OpenBible: solo el punto.'
+sources:
+- it-hadid
+- openbible-geo
+- esdras-2
+links:
+- title: 'Perspicacia: «Hadid»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hadid/
+  type: perspicacia
+checked_on: '2026-10-13'
+status: verified

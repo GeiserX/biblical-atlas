@@ -1,0 +1,44 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: guedalias-de-la-casa-de-jesua
+name: Guedalías
+names:
+- name: Guedalías
+perspicacia: 1200001632#5
+summary: Sacerdote de la casa de Jesúa, hijo de Jehozadac. Tenía esposa extranjera; con los demás sacerdotes de su familia
+  se comprometió a despedirla y a ofrecer un carnero por su culpa (468 a.e.c.).
+reason: Perspicacia «Guedalías», núm. 5; Esd 10:18, 19.
+sources:
+- it-guedalias
+- esdras-10
+links:
+- title: 'Perspicacia: «Guedalías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Guedal%C3%ADas/
+  type: perspicacia
+relations:
+- type: kin
+  person: josue-sumo-sacerdote
+  word: relative
+  sources:
+  - esdras-10
+  - it-guedalias
+  reason: Esd 10:18 lo cuenta entre los hijos de Jesúa o de sus hermanos, sin decir en qué grado.
+  inferred: false
+  checked_on: '2026-10-13'
+  status: verified
+- type: holds_office
+  office: priest
+  sources:
+  - esdras-10
+  - it-guedalias
+  reason: 'Esd 10:18: va entre los hijos de los sacerdotes que tenían esposas extranjeras.'
+  inferred: false
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified
+disambiguation: El sacerdote de la casa de Jesúa de Esd 10:18; no los demás Guedalías que registra Perspicacia.
+distinct_from:
+- guedalias
+- guedalias-hijo-de-amarias
+- guedalias-hijo-de-jedutun
+- guedalias-hijo-de-pasjur

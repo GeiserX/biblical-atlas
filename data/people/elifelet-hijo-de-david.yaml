@@ -40,9 +40,11 @@ relations:
   reason: '2Sa 5:13-16: nació en Jerusalén, después de que David dejara Hebrón.'
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified
 distinct_from:
 - elifelet-hijo-de-ahasbai
 - elpelet
 - elifelet-hijo-de-eshec
+- elifelet-descendiente-de-adonicam
+- elifelet-descendiente-de-hasum

@@ -1,0 +1,31 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jeremai
+name: Jeremái
+names:
+- name: Jeremái
+- name: Jeremai
+  note: Grafía de Perspicacia.
+perspicacia: '1200002420'
+summary: Israelita de los hijos de Hasum. Estaba casado con extranjeras y, cuando Esdras corrigió esos matrimonios (468-467
+  a.e.c.), las despidió junto con sus hijos.
+reason: Perspicacia «Jeremai»; Esd 10:33, 44.
+sources:
+- it-jeremai
+- esdras-10
+links:
+- title: 'Perspicacia: «Jeremai»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jeremai/
+  type: perspicacia
+relations:
+- type: kin
+  person: hasum
+  word: ancestor
+  sources:
+  - esdras-10
+  - it-jeremai
+  reason: Esd 10:33 lo pone entre los hijos de Hasum; Perspicacia «Jeremai».
+  inferred: false
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified

@@ -1,0 +1,23 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ezequias-cabeza-de-familia
+name: Ezequías
+names:
+- name: Ezequías
+perspicacia: 1200002011#3
+summary: Israelita cuya familia, la de los hijos de Ater, volvió con Zorobabel. Perspicacia cree que probablemente no era
+  el rey Ezequías.
+reason: Perspicacia «Ezequías», núm. 3; Esd 2:16.
+sources:
+- it-ezequias
+- esdras-2
+links:
+- title: 'Perspicacia: «Ezequías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ezequ%C3%ADas/
+  type: perspicacia
+checked_on: '2026-10-13'
+status: verified
+distinct_from:
+- ezequias
+- ezequias-antepasado-de-sofonias
+disambiguation: 'Ezequías núm. 3 de Perspicacia: el de la familia de Ater (Esd 2:16); probablemente no el rey ni el antepasado
+  de Sofonías.'

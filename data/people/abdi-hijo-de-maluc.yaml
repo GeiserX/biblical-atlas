@@ -24,8 +24,13 @@ relations:
   checked_on: '2026-10-12'
   status: verified
 disambiguation: El merarita hijo de Maluc, antepasado de Etán (Perspicacia «Abdí», núm. 1); no el padre del Quis de los días
-  de Ezequías.
+  de Ezequías ni el Abdí de los hijos de Elam.
+history:
+- date: '2026-10-13'
+  change: Añade el Abdí de la familia de Elam de los días de Esdras, núm. 3 de Perspicacia, a los homónimos que separa.
+  source: esdras-10
 checked_on: '2026-10-13'
 status: verified
 distinct_from:
 - abdi-padre-de-quis
+- abdi-descendiente-de-elam

@@ -1,0 +1,43 @@
+# biblical-atlas: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: casifia
+name: Casifía
+names:
+- name: Casifía
+  note: Quizá significa «lugar de plateros» (Perspicacia).
+type: region
+lat: null
+lon: null
+precision: uncertain
+coord_source: null
+coord_url: null
+candidates:
+- name: En Babilonia, cerca del río Ahavá
+  geometry:
+    type: zone
+    lat: 33.75
+    lon: 42.98
+    radius_km: 100
+  checked_on: '2026-10-13'
+  status: favored_level_1
+  sources:
+  - it-casifia
+  - it-ahava
+  - openbible-geo
+  reason: 'Perspicacia «Casifía»: probablemente en Babilonia y, al parecer, cerca de donde acampó el grupo de Esdras; no precisa
+    el sitio ni si era ciudad o distrito.'
+  coord_source: calculation
+  note: 'Centro: el de la zona del río Ahavá, 190 km al noroeste del punto de OpenBible de Babilonia. Radio nuestro.'
+summary: Lugar, ciudad o distrito, probablemente de Babilonia y cercano al río Ahavá. Allí vivían Idó y los siervos del templo
+  a quienes Esdras pidió levitas en 468 a.e.c.
+reason: Perspicacia «Casifía»; Esd 8:17-20.
+sources:
+- it-casifia
+- it-ahava
+- openbible-geo
+- esdras-8
+links:
+- title: 'Perspicacia: «Casifía»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Casif%C3%ADa/
+  type: perspicacia
+checked_on: '2026-10-13'
+status: verified

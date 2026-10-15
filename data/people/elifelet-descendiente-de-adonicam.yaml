@@ -1,0 +1,55 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: elifelet-descendiente-de-adonicam
+name: Elifélet
+names:
+- name: Elifélet
+perspicacia: 1200001315#5
+disambiguation: El descendiente de Adonicam que volvió con Esdras (Esd 8:13), núm. 5 de Perspicacia; no los otros Elifélet
+  que numera.
+distinct_from:
+- elifelet-hijo-de-ahasbai
+- elifelet-hijo-de-david
+- elifelet-hijo-de-eshec
+- elpelet
+- elifelet-descendiente-de-hasum
+summary: Descendiente de Adonicam. Con Jeiel y Semaya encabezó a los últimos de esa casa en el viaje de Esdras de 468 a.e.c.
+reason: Perspicacia «Elifélet», núm. 5; Esd 8:1, 13.
+sources:
+- it-elifelet
+- esdras-8
+- it-adonicam
+links:
+- title: 'Perspicacia: «Elifélet»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Elif%C3%A9let/
+  type: perspicacia
+relations:
+- type: kin
+  person: adonicam
+  word: ancestor
+  inferred: false
+  sources:
+  - esdras-8
+  - it-elifelet
+  - it-adonicam
+  reason: 'Esd 8:13: de los hijos de Adonicam.'
+  checked_on: '2026-10-13'
+  status: verified
+- type: accompanies
+  person: esdras
+  date:
+    from: -467
+    to: -467
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 468 a.e.c.
+  inferred: false
+  sources:
+  - esdras-8
+  - it-elifelet
+  reason: 'Esd 8:1, 13: subió con Esdras con Jeiel, Semaya y 60 varones.'
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified
