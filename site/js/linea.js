@@ -798,7 +798,9 @@ function teclaMarca(e) {
 const vivo = (texto) => { const v = $('#linea-vivo'); if (v) v.textContent = texto; };
 
 /** Elegir una marca: el cursor entra en ella por el punto señalado (con el teclado, por el más cercano) y la marca se
-    elige y abre su ficha. Ni la escala, ni la vista, ni los carriles se mueven. Una fecha secular no mueve el cursor.
+    elige y abre su ficha. Ni la escala, ni la vista, ni los carriles se mueven. Si no se ve ninguna fecha de la marca
+    (solo su nombre en el borde), la vista va hasta ella como con el botón «← nombre» y el cursor no se mueve. Una
+    fecha secular no mueve el cursor.
     Pulsar otra vez la misma marca suelta lo elegido, como un segundo clic en el mapa, y el cursor no se mueve. Otra
     marca de lo elegido (otra estancia de la persona) lleva el cursor a ella y no suelta nada. */
 function elegirMarca(it, tSeñalado) {
@@ -806,6 +808,7 @@ function elegirMarca(it, tSeñalado) {
   lastClicked = it.id;
   const t = it.sinCursor ? null : FIL.clickTarget(it, tSeñalado, E.t, { v0: E.vista[0], span: span() }, BE.DIA);
   if (t != null) setT(t);
+  else if (!it.sinCursor) traerMarca(it, (it.shape === 'moment' ? it.w0 : it.start) >= E.vista[1] ? 'der' : 'izq');
   desdeFranja = true;
   const sel = BE.parseSel(it.sel);
   if (sel && BE.selTexto(E.sel) !== it.sel) BE.seleccionar(sel, { mover: false });
@@ -879,7 +882,11 @@ function irASel(b) {
   if (!it) return;
   const lado = b.dataset.lado;
   if (lado === 'arriba' || lado === 'abajo') { verFila(it); ventanaMarcas(false); pintarIrSel(); return; }
-  // Mueve la vista lo justo para que se vea la marca entera, o su comienzo si no cabe; la escala no cambia.
+  traerMarca(it, lado);
+}
+/** Mueve la vista lo justo para que se vea la marca entera, o su comienzo si no cabe; la escala no cambia. Lo usan el
+    botón «← nombre» y el clic en una marca sin ninguna fecha en la vista (elegirMarca). */
+function traerMarca(it, lado) {
   const s = span(), m = s * 0.05;
   const lo = it.shape === 'moment' ? it.w0 : it.start, hi = it.shape === 'moment' ? it.w1 : it.end;
   let v0 = lado === 'izq' ? lo - m : hi + m - s;
