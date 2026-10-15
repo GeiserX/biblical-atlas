@@ -31,7 +31,7 @@ relations:
 - type: tie
   person: juan-apostol
   caption: no respetaba su autoridad y hablaba mal de él
-  inverse_caption: lo censuró por no respetar su autoridad
+  inverse_caption: lo reprendió por escrito por no respetar su autoridad
   date:
     from: 98
     to: 98
