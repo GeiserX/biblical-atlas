@@ -1,0 +1,17 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: queros
+name: Querós
+names:
+- name: Querós
+perspicacia: '1200002596'
+summary: Sus descendientes, siervos del templo o netineos, se cuentan entre los que volvieron de Babilonia en 537 a.e.c.
+reason: Perspicacia «Querós»; Esd 2:44.
+sources:
+- it-queros
+- esdras-2
+links:
+- title: 'Perspicacia: «Querós»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Quer%C3%B3s/
+  type: perspicacia
+checked_on: '2026-10-13'
+status: verified

@@ -1,0 +1,37 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: zorobabel-rechaza-la-ayuda-de-los-enemigos
+title: Zorobabel y Jesúa rechazan la ayuda de los enemigos de Judá
+date:
+  from: -535
+  to: -521
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 536 y 522 a.e.c. (tiempo narrativo: tras los cimientos del templo y antes de que se prohibiera la obra)'
+narrative_order:
+  series: esdras
+  order: 4001
+places:
+- jerusalen
+people:
+- zorobabel
+- josue-sumo-sacerdote
+passages:
+- Esd 4:1-5
+summary: Los enemigos de Judá y Benjamín piden construir el templo con ellos; Zorobabel, Jesúa y los cabezas de familia se
+  niegan. Desde entonces los desaniman y pagan consejeros hasta los días de Darío.
+reason: 'Perspicacia «Zorobabel»: la negativa llega tras empezar el templo en 536, y la oposición sigue hasta la prohibición
+  de 522. «Templo» señala sobre todo a los samaritanos. Jerusalén es el sitio de la obra.'
+sources:
+- esdras-4
+- it-zorobabel
+- it-templo
+- it-jesua
+- si-3
+links:
+- title: Esdras 4 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/esdras/4/
+  type: bible
+checked_on: '2026-10-13'
+status: verified

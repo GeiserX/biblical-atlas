@@ -1,0 +1,27 @@
+# biblical-atlas: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: nebo-de-juda
+name: Nebo
+names:
+- name: Nebo
+- name: Otra Nebo
+  note: 'Perspicacia «Nebo», núm. 2: al parecer así la distingue la lista de Nehemías de la Nebo de Moab.'
+type: city
+lat: 31.607211
+lon: 35.036733
+precision: uncertain
+coord_source: openbible:accdd09
+coord_url: https://www.openbible.info/geo/ancient/accdd09/nebo-2
+coord_note: Nuba, primera identificación de OpenBible; Perspicacia la presenta como posible identificación.
+summary: Ciudad de la que venían algunos de los que volvieron del destierro; distinta de la Nebo de Moab. Quizá Nuba, unos
+  11 km al noroeste de Hebrón.
+reason: 'Perspicacia «Nebo», núm. 2; Esd 2:29. OpenBible: solo el punto.'
+sources:
+- it-nebo
+- openbible-geo
+- esdras-2
+links:
+- title: 'Perspicacia: «Nebo»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Nebo/
+  type: perspicacia
+checked_on: '2026-10-13'
+status: verified

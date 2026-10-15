@@ -50,5 +50,8 @@ relations:
     de 493 a c. 475 (Tabla de los libros).
   checked_on: '2026-10-03'
   status: verified
-checked_on: '2026-09-28'
+perspicacia: 1200003111#2
+checked_on: '2026-10-13'
 status: verified
+distinct_from:
+- mardoqueo-repatriado

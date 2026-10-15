@@ -7,6 +7,7 @@ perspicacia: 1200004523#2
 disambiguation: El profeta de Quiryat-Jearim, hijo de Semaya; no el sacerdote de Acaz ni el padre de Meremot.
 distinct_from:
 - uriya-sacerdote-de-acaz
+- uriya-hijo-de-hacoz
 date:
   from: -627
   to: -627
@@ -98,5 +99,5 @@ history:
   change: La fecha de su cargo de profeta abarcaba todo el reinado de Jehoiaquim; murió antes del juicio de Jeremías (Perspicacia
     «Jehoiaquim», párr. 3).
   source: jeremias-26
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified

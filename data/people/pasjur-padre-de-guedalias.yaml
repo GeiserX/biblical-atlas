@@ -8,6 +8,7 @@ disambiguation: El padre del príncipe Guedalías; no es Pasjur hijo de Malkías
 distinct_from:
 - pasjur-hijo-de-malkias
 - pasjur-hijo-de-imer
+- pasjur-familia-sacerdotal
 summary: Padre de Guedalías, uno de los príncipes que lograron que echaran a Jeremías a la cisterna.
 reason: Perspicacia «Pasjur», núm. 1; Jer 38:1.
 sources:
@@ -21,5 +22,5 @@ links:
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/38/
   type: bible
 relations: []
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified

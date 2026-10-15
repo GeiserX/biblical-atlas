@@ -23,6 +23,7 @@ sources:
 - openbible-geo
 - 1-cronicas-8
 - it-lod
+- esdras-2
 links:
 - title: 'Perspicacia: «Lida»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Lida/
@@ -30,5 +31,5 @@ links:
 - title: Hechos 9 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/hechos/9/
   type: bible
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified

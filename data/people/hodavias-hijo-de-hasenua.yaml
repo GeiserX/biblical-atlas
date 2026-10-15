@@ -23,10 +23,11 @@ relations:
   reason: '1Cr 9:7: Hodavías, hijo de Hasenuá.'
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified
 distinct_from:
 - hodavias-de-manases
 - hodavias-hijo-de-elioenai
+- hodavias-levita
 disambiguation: 'Hodavías núm. 3 de Perspicacia: benjamita, hijo de Hasenuá, antepasado de Salú, que vivió en Jerusalén después
   del destierro. No los demás Hodavías que numera Perspicacia.'

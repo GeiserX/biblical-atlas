@@ -1,0 +1,17 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: gazam
+name: Gazam
+names:
+- name: Gazam
+perspicacia: '1200001626'
+summary: Sus descendientes, siervos del templo o netineos, se cuentan entre los que volvieron de Babilonia en 537 a.e.c.
+reason: Perspicacia «Gazam»; Esd 2:48.
+sources:
+- it-gazam
+- esdras-2
+links:
+- title: 'Perspicacia: «Gazam»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Gazam/
+  type: perspicacia
+checked_on: '2026-10-13'
+status: verified

@@ -1,0 +1,56 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: artajerjes-bardiya-o-gaumata
+name: Artajerjes (Bardiya o Gaumata)
+names:
+- name: Artajerjes
+perspicacia: 1200000389#1
+disambiguation: El Artajerjes de Esd 4:7-23, que Perspicacia identifica con Bardiya o con el mago Gaumata; no Artajerjes Longímano,
+  el que envió a Esdras y a Nehemías.
+distinct_from:
+- artajerjes-i
+date:
+  from: -521
+  to: -521
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 522 a.e.c. (siete meses)
+summary: Rey persa que gobernó siete meses en 522 a.e.c., tras Cambises. Movido por cartas de los enemigos de los judíos,
+  mandó parar la reconstrucción en Jerusalén.
+reason: Perspicacia «Artajerjes», núm. 1, «Persia, persas» y «Darío», núm. 2; Esd 4:7-23.
+sources:
+- it-artajerjes
+- it-persia
+- it-dario
+- esdras-4
+links:
+- title: 'Perspicacia: «Artajerjes»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Artajerjes/
+  type: perspicacia
+not_claimed:
+- 'Si era Bardiya, hermano de Cambises, o el mago Gaumata que se hizo pasar por él: Perspicacia recoge las dos versiones.'
+relations:
+- type: succeeds
+  person: cambises-ii
+  office: king
+  date:
+    from: -521
+    to: -521
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 522 a.e.c.
+  inferred: true
+  sources:
+  - it-dario
+  - it-persia
+  - it-artajerjes
+  - esdras-4
+  reason: 'Perspicacia «Darío», núm. 2, y «Persia, persas»: muerto Cambises en 522, ocupó el trono Bardiya, o Gaumata en su
+    lugar. Esd 4:6, 7 nombra a Artajerjes después de Asuero.'
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified

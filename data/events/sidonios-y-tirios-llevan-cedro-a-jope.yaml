@@ -1,0 +1,44 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: sidonios-y-tirios-llevan-cedro-a-jope
+title: Sidonios y tirios llevan cedro del Líbano a Jope
+date:
+  from: -536
+  to: -535
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 537 y 536 a.e.c. (tiempo narrativo: después del altar, en tisri de 537, y antes de los cimientos, en iyar de
+    536)'
+narrative_order:
+  series: esdras
+  order: 3007
+places:
+- jope
+- libano
+- tiro
+- sidon
+- jerusalen
+people:
+- ciro
+present: []
+passages:
+- Esd 3:7
+summary: Los repatriados pagan a canteros y artesanos, y dan víveres y aceite a sidonios y tirios para que traigan por mar
+  cedro del Líbano hasta Jope, con permiso de Ciro.
+reason: Esd 3:7 lo pone entre el altar (3:6) y los cimientos (3:8), fechados por Perspicacia «Zorobabel». «Templo», «Tiro»
+  y «Las profecías de Isaías I» unen ese cedro al segundo templo. Nadie con ficha está en Jope.
+sources:
+- esdras-3
+- it-templo
+- it-tiro
+- it-sidon
+- it-zorobabel
+- si-3
+- ip1-19
+links:
+- title: Esdras 3 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/esdras/3/
+  type: bible
+checked_on: '2026-10-13'
+status: verified

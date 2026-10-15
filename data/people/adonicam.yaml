@@ -1,0 +1,20 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: adonicam
+name: Adonicam
+names:
+- name: Adonicam
+- name: Adoniqam
+perspicacia: '1200000111'
+summary: Fundador de una casa paterna israelita; 666 de los suyos volvieron con Zorobabel. Perspicacia escribe Adoniqam.
+reason: Perspicacia «Adoniqam»; Esd 2:13.
+sources:
+- it-adoniqam
+- esdras-2
+- it-adonicam
+- esdras-8
+links:
+- title: 'Perspicacia: «Adoniqam»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Adoniqam/
+  type: perspicacia
+checked_on: '2026-10-13'
+status: verified

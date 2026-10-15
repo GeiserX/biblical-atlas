@@ -1,0 +1,23 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: uri-portero
+name: Urí
+names:
+- name: Urí
+perspicacia: 1200004520#3
+summary: Portero de los días de Esdras. Estaba casado con extranjeras y, cuando se corrigieron esos matrimonios (468-467 a.e.c.),
+  las despidió junto con sus hijos.
+reason: Perspicacia «Urí», núm. 3; Esd 10:24, 44.
+sources:
+- it-uri
+- esdras-10
+links:
+- title: 'Perspicacia: «Urí»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ur%C3%AD/
+  type: perspicacia
+relations: []
+checked_on: '2026-10-13'
+status: verified
+disambiguation: El portero de Esd 10:24, de los días de Esdras; no los demás Urí que registra Perspicacia.
+distinct_from:
+- uri-hijo-de-hur
+- uri-padre-de-gueber

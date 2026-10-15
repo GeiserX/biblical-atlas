@@ -1,0 +1,42 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jarib-de-la-casa-de-jesua
+name: Jarib
+names:
+- name: Jarib
+perspicacia: 1200002331#3
+summary: Sacerdote de la casa de Jesúa, hijo de Jehozadac. Tenía esposa extranjera; con los demás sacerdotes de su familia
+  se comprometió a despedirla y a ofrecer un carnero por su culpa (468 a.e.c.).
+reason: Perspicacia «Jarib», núm. 3; Esd 10:18, 19.
+sources:
+- it-jarib
+- esdras-10
+links:
+- title: 'Perspicacia: «Jarib»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jarib/
+  type: perspicacia
+relations:
+- type: kin
+  person: josue-sumo-sacerdote
+  word: relative
+  sources:
+  - esdras-10
+  - it-jarib
+  reason: Esd 10:18 lo cuenta entre los hijos de Jesúa o de sus hermanos, sin decir en qué grado.
+  inferred: false
+  checked_on: '2026-10-13'
+  status: verified
+- type: holds_office
+  office: priest
+  sources:
+  - esdras-10
+  - it-jarib
+  reason: 'Esd 10:18: va entre los hijos de los sacerdotes que tenían esposas extranjeras.'
+  inferred: false
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified
+disambiguation: El sacerdote de la casa de Jesúa de Esd 10:18; no los demás Jarib que registra Perspicacia.
+distinct_from:
+- jakin-hijo-de-simeon
+- jarib-enviado-a-casifia

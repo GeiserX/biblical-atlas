@@ -1,0 +1,37 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: zabad-descendiente-de-hasum
+name: Zabad
+names:
+- name: Zabad
+perspicacia: 1200004643#6
+summary: Israelita de los hijos de Hasum. Estaba casado con extranjeras y, cuando Esdras corrigió esos matrimonios (468-467
+  a.e.c.), las despidió junto con sus hijos.
+reason: Perspicacia «Zabad», núm. 6; Esd 10:33, 44.
+sources:
+- it-zabad
+- esdras-10
+links:
+- title: 'Perspicacia: «Zabad»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zabad/
+  type: perspicacia
+relations:
+- type: kin
+  person: hasum
+  word: ancestor
+  sources:
+  - esdras-10
+  - it-zabad
+  reason: Esd 10:33 lo pone entre los hijos de Hasum; Perspicacia «Zabad», núm. 6.
+  inferred: false
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified
+disambiguation: El de los hijos de Hasum de Esd 10:33; no los demás Zabad que registra Perspicacia.
+distinct_from:
+- jozacar
+- zabad-descendiente-de-nebo
+- zabad-descendiente-de-zatu
+- zabad-hijo-de-ahlai
+- zabad-hijo-de-natan
+- zabad-hijo-de-tahat

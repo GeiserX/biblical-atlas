@@ -1,0 +1,43 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: serebias-jefe-de-los-sacerdotes
+name: Serebías
+names:
+- name: Serebías
+perspicacia: null
+summary: Uno de los doce jefes de los sacerdotes a los que Esdras, en 468 a.e.c., confió la plata, el oro y los objetos donados
+  para el templo, que llevaron desde el Ahavá hasta Jerusalén.
+reason: 'Esd 8:24-30. Perspicacia no le da entrada propia: en «Serebías», núm. 2, lo ve probablemente el levita de Esd 8:18.'
+sources:
+- esdras-8
+- it-serebias
+links:
+- title: 'Perspicacia: «Serebías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sereb%C3%ADas/
+  type: perspicacia
+relations:
+- type: holds_office
+  office: priest
+  inferred: false
+  sources:
+  - esdras-8
+  reason: Esd 8:24 lo nombra, con Hasabías, entre los doce jefes de los sacerdotes.
+  checked_on: '2026-10-14'
+  status: verified
+- type: accompanies
+  person: esdras
+  date:
+    from: -467
+    to: -467
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 468 a.e.c.
+  inferred: false
+  sources:
+  - esdras-8
+  reason: 'Esd 8:24-30: recibió su parte de las ofrendas junto al Ahavá y la custodió en el viaje a Jerusalén.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified

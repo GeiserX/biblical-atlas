@@ -12,6 +12,7 @@ reason: Perspicacia «Abisúa», núm. 2; 1Cr 6:4, 5, 50, 51.
 sources:
 - it-abisua
 - 1-cronicas-6
+- esdras-7
 links:
 - title: 'Perspicacia: «Abisúa»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Abis%C3%BAa/
@@ -23,8 +24,9 @@ relations:
   inferred: false
   sources:
   - 1-cronicas-6
+  - esdras-7
   reason: 1Cr 6:4 lo da como hijo de Finehás.
-  checked_on: '2026-10-12'
+  checked_on: '2026-10-13'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified

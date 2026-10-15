@@ -15,6 +15,8 @@ distinct_from:
 - jonatan-hijo-de-jada
 - jonatan-hijo-de-uzias
 - jonatan-sobrino-de-david
+- jonatan-padre-de-ebed
+- jonatan-hijo-de-asahel
 date:
   from: -606
   to: -606
@@ -49,5 +51,5 @@ relations:
   reason: 'Jer 40:8: Johanán y Jonatán, los hijos de Caréah.'
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified

@@ -26,5 +26,7 @@ relations:
 distinct_from:
 - elioenai-hijo-de-nearias
 - elioenai-hijo-de-beker
-checked_on: '2026-10-12'
+- elioenai-descendiente-de-pasjur
+- elioenai-descendiente-de-zatu
+checked_on: '2026-10-13'
 status: verified

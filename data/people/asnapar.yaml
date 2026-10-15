@@ -1,0 +1,31 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: asnapar
+name: Asnapar
+names:
+- name: Asnapar
+perspicacia: '1200000404'
+summary: Rey asirio que, según la carta de Rehúm, desterró a gentes de Erec, Babilonia y Susa y las asentó en las ciudades
+  de Samaria. Perspicacia lo identifica muy probablemente con Asurbanipal.
+reason: Perspicacia «Asnapar», párr. 1 y 3, y «Susa»; Esd 4:9, 10.
+sources:
+- it-asnapar
+- it-susa
+- esdras-4
+links:
+- title: 'Perspicacia: «Asnapar»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Asnapar/
+  type: perspicacia
+relations:
+- type: same_as
+  person: asurbanipal
+  certainty: probable
+  inferred: true
+  status: pending
+  sources:
+  - it-asnapar
+  - esdras-4
+  reason: 'Perspicacia «Asnapar» lo ve muy probable: el arameo cambia la l final por r, y solo Asurbanipal pudo llevarse a
+    los de Susa. Pendiente hasta que una publicación lo afirme.'
+  checked_on: '2026-10-13'
+checked_on: '2026-10-13'
+status: verified

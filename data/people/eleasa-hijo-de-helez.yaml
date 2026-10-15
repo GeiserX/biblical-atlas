@@ -24,8 +24,9 @@ relations:
   reason: '1Cr 2:39: Hélez fue su padre.'
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified
 disambiguation: Eleasá, judaíta hijo de Hélez; no Eleasá hijo de Rafá, descendiente de Saúl.
 distinct_from:
 - eleasa-hijo-de-rafa
+- eleasa-descendiente-de-pasjur

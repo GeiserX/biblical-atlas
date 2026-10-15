@@ -1,0 +1,37 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: malkiya-descendiente-de-harim
+name: Malkiya
+names:
+- name: Malkiya
+perspicacia: 1200002866#7
+summary: Israelita de los hijos de Harim. Estaba casado con extranjeras y, cuando Esdras corrigió esos matrimonios (468-467
+  a.e.c.), las despidió junto con sus hijos.
+reason: Perspicacia «Malkiya», núm. 7; Esd 10:31, 44.
+sources:
+- it-malkiya
+- esdras-10
+links:
+- title: 'Perspicacia: «Malkiya»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Malkiya/
+  type: perspicacia
+relations:
+- type: kin
+  person: harim-cabeza-de-familia
+  word: ancestor
+  sources:
+  - esdras-10
+  - it-malkiya
+  reason: Esd 10:31 lo pone entre los hijos de Harim; Perspicacia «Malkiya», núm. 7.
+  inferred: false
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified
+disambiguation: El de los hijos de Harim de Esd 10:31; no los demás Malkiya que registra Perspicacia.
+distinct_from:
+- malkias-padre-de-pasjur
+- malkiya-de-tiempos-de-david
+- malkiya-descendiente-de-paros-1
+- malkiya-descendiente-de-paros-2
+- malkiya-hijo-de-etni
+- malkiya-hijo-del-rey

@@ -10,6 +10,8 @@ distinct_from:
 - selemias-hijo-de-cusi
 - selemias-hijo-de-abdeel
 - selemias-portero
+- selemias-descendiente-de-binui-1
+- selemias-descendiente-de-binui-2
 summary: Hijo de Hananías y padre de Iriya, el oficial que detuvo a Jeremías en la Puerta de Benjamín.
 reason: Perspicacia «Selemías», núm. 4; Jer 37:13.
 sources:
@@ -33,5 +35,5 @@ relations:
   reason: 'Jer 37:13: Iriya era hijo de Selemías, hijo de Hananías.'
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified

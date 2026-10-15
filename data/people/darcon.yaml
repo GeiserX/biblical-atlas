@@ -1,0 +1,19 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: darcon
+name: Darcón
+names:
+- name: Darcón
+- name: Darqón
+perspicacia: '1200001125'
+summary: Antepasado de una de las familias descendientes de siervos de Salomón; esa familia volvió del destierro con el grupo
+  de Zorobabel.
+reason: Perspicacia «Darqón»; Esd 2:56.
+sources:
+- it-darqon
+- esdras-2
+links:
+- title: 'Perspicacia: «Darqón»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Darq%C3%B3n/
+  type: perspicacia
+checked_on: '2026-10-13'
+status: verified

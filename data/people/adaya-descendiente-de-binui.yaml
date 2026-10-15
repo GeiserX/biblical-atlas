@@ -1,0 +1,37 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: adaya-descendiente-de-binui
+name: Adaya
+names:
+- name: Adaya
+perspicacia: 1200000087#8
+summary: Israelita de los hijos de Binuí. Estaba casado con extranjeras y, cuando Esdras corrigió esos matrimonios (468-467
+  a.e.c.), las despidió junto con sus hijos.
+reason: Perspicacia «Adaya», núm. 8; Esd 10:39, 44.
+sources:
+- it-adaya
+- esdras-10
+links:
+- title: 'Perspicacia: «Adaya»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Adaya/
+  type: perspicacia
+relations:
+- type: kin
+  person: binui-cabeza-de-familia
+  word: ancestor
+  sources:
+  - esdras-10
+  - it-adaya
+  reason: Esd 10:39 lo pone entre los hijos de Binuí; Perspicacia «Adaya», núm. 8.
+  inferred: false
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified
+disambiguation: El de los hijos de Binuí de Esd 10:39; no los demás Adaya que registra Perspicacia.
+distinct_from:
+- adaya-descendiente-de-bani
+- adaya-hijo-de-etan
+- adaya-hijo-de-jeroham
+- adaya-hijo-de-simei
+- adaya-padre-de-jedida
+- adaya-padre-de-maaseya
