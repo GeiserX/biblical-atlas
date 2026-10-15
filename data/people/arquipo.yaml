@@ -30,7 +30,10 @@ history:
   change: 'La relación con Filemón decía «quizás hijo», que en esta ficha hacía a Filemón hijo de Arquipo. Perspicacia «Filemón»
     ve posible lo contrario: pasa a «quizás padre». La de Colosas cita Col 4:17.'
   source: it-filemon
-checked_on: '2026-10-14'
+- date: '2026-10-15'
+  change: Nueva relación con Pablo de 60-61 con el texto «compañero de armas», como lo llama Flm 2. El resto no cambia.
+  source: filemon-1
+checked_on: '2026-10-15'
 status: verified
 relations:
 - type: lived_in
@@ -54,3 +57,24 @@ relations:
   checked_on: '2026-10-14'
   word: father
   status: pending
+- type: accompanies
+  person: pablo
+  caption: compañero de armas
+  inverse_caption: compañero de armas
+  date:
+    from: 60
+    to: 61
+    precision: range
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 60-61 e.c.
+  inferred: false
+  sources:
+  - filemon-1
+  - it-arquipo
+  - tnm-tabla
+  reason: Flm 2 lo llama compañero de armas de Pablo; la nota de estudio ve ahí lo unidos que estaban y su servicio fiel y
+    valiente a Cristo. Perspicacia «Arquipo» y la Tabla de los libros fechan la carta hacia 60-61.
+  checked_on: '2026-10-15'
+  status: verified

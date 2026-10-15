@@ -516,6 +516,10 @@ outside:
     caption: compañero de crianza
     inverse_caption: compañero de crianza
     why: Dice con quién se crio, no un trato entre ellos; solo sale en este par.
+  - type: accompanies
+    caption: compañero de armas
+    inverse_caption: compañero de armas
+    why: Es la imagen del soldado que Pablo aplica a quien predica con él, no un trato; Epafrodito, al que también se la da (Flp 2:25), la lleva en la razón de colaborador.
   - type: appears_to
     caption: se le aparece camino de Damasco
     inverse_caption: lo ve resucitado camino de Damasco

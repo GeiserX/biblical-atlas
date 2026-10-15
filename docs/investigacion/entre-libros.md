@@ -167,8 +167,6 @@ Los campos, los tipos de relación y sus palabras se nombran como en el esquema 
 
 ## Para el vocabulario (desde Filemón)
 
-- **«Compañero de armas» (Flm 2).** Pablo llama así a Arquipo, y la nota de estudio ve en ello lo unidos que estaban y lo fiel que le era. Ninguna palabra de `accompanies` lo dice y `outside` no tiene el texto, así que la relación no se escribió y Filemón 1 sigue `pending`. Está lista para entrar cuando `outside` reciba el texto en un cambio revisado: en `data/people/arquipo.yaml`, `type: accompanies`, `person: pablo`, `caption` e `inverse_caption` «compañero de armas», fecha c. 60-61 (`anchored`, como la carta), `inferred: false`, `sources` `filemon-1`, `it-arquipo` y `tnm-tabla`, y `reason` con Flm 2 y su nota. El tramo 1-3 la cita como `relation:arquipo/accompanies/pablo` y el capítulo pasa a `complete`.
-- **Epafrodito (Flp 2:25).** El texto le da los dos títulos, colaborador y compañero de armas. Filipenses escribió `fellow_worker` y dejó el segundo en la `reason`. Si el texto entra en `outside`, Filipenses 2 decide si Epafrodito lleva también esa relación, con la misma respuesta que Arquipo.
 - **Anfitrión de una congregación (Flm 2).** La congregación se reúne en casa de Filemón. `host` es de persona a persona y una congregación no tiene ficha, así que queda en el resumen de `filemon`. Si el vocabulario lo recoge, cita Flm 2 (y Ro 16:5, Col 4:15, 1Co 16:19 para Priscila y Áquila y Ninfa).
 
 ## Para Salmos (si se relee, desde Efesios)
