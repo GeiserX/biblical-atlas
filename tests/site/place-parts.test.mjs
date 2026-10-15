@@ -43,6 +43,16 @@ function fixture() {
     'monte-de-los-olivos': lugar('monte-de-los-olivos', 'Monte de los Olivos', 'monte', { partes: [{ nombre: 'Getsemaní', nota: 'Un huerto.' }] }),
     'valle-de-cedron': lugar('valle-de-cedron', 'Valle de Cedrón', 'valle', { partes: [{ nombre: 'Tumba de prueba', nota: 'Una tumba.' }] }),
     tiro: lugar('tiro', 'Tiro', 'puerto', { partes: [{ nombre: 'Muelle de prueba', nota: 'Un muelle.' }] }),
+    'desierto-de-paran': lugar('desierto-de-paran', 'Desierto de Parán', 'desierto', { partes: [{ nombre: 'Monte Parán', nota: 'Su parte central.' }] }),
+    herodion: lugar('herodion', 'Herodión', 'ciudad', { partes: [
+      { nombre: 'Estanque inferior', nota: 'Is 22:9. Quizá el del Canal.' },
+      { nombre: 'Sala', nota: 'Perspicacia la pone junto al palacio.' },
+      { nombre: 'Palacio', nota: 'Herodes lo levantó.' },
+      { nombre: 'Muro', nota: 'No se sabe dónde estaba.' },
+      { nombre: 'Patio', nota: '«Patio» en el texto.' },
+    ] }),
+    herodes: lugar('herodes', 'Herodes', 'ciudad'),
+    no: lugar('no', 'No', 'ciudad'),
     jope: lugar('jope', 'Jope', 'ciudad'),
   };
 }
@@ -120,7 +130,9 @@ test('in English the Spanish name of a part finds the part, not the place', () =
 test('the card: one section, headed by the type of place, with the near ones last under «Alrededor»', () => {
   const { BE } = load();
   const html = BE.partesHtml(BE.L.jerusalen);
-  assert.match(html, /<h3 class="be-card__eyebrow">Dentro de la ciudad <b class="cuenta">4<\/b><\/h3>/);
+  // The count under the heading counts only what is in the place; «Alrededor» has its own.
+  assert.match(html, /<h3 class="be-card__eyebrow">Dentro de la ciudad <b class="cuenta">3<\/b><\/h3>/);
+  assert.match(html, /<h4 class="be-caps sub-bloque">Alrededor <b class="cuenta">1<\/b><\/h4>/);
   assert.match(html, /<li><b>Puerta de las Ovejas<\/b><span class="be-muted">: puerta del norte, junto al templo<\/span><\/li>/);
   assert.match(html, /<li><b>Torre de Hananel<\/b><span class="be-muted">: torre del muro norte<\/span><\/li>/);
   // A part with its own record is a row that opens it.
@@ -137,9 +149,23 @@ test('the heading follows the type of place', () => {
   const heading = (id) => BE.partesHtml(BE.L[id]).match(/eyebrow">([^<]*) <b/)[1];
   assert.equal(heading('monte-de-los-olivos'), 'En el monte');
   assert.equal(heading('valle-de-cedron'), 'En el valle');
-  assert.equal(heading('tiro'), 'En este lugar');
-  assert.equal(heading('betel'), 'Dentro de la ciudad');
-  assert.match(BE.partesHtml(BE.L.betel), /Alrededor<\/h4><ul class="nombres"><li><b>Árbol de Debora<\/b>/);
+  assert.equal(heading('tiro'), 'Dentro de la ciudad');
+  assert.equal(heading('desierto-de-paran'), 'En este lugar');
+  // Only near parts: the heading itself says «Alrededor», never «Dentro de la ciudad» over a list of what is outside.
+  assert.equal(heading('betel'), 'Alrededor');
+  assert.match(BE.partesHtml(BE.L.betel), /Alrededor <b class="cuenta">1<\/b><\/h3>\s*<ul class="nombres"><li><b>Árbol de Debora<\/b>/);
+  assert.equal(BE.partesHtml(BE.L.betel).includes('<h4'), false);
+});
+
+test('a note keeps its capital when it opens with a reference, «Perspicacia» or a proper name of the data', () => {
+  const { BE } = load();
+  const html = BE.partesHtml(BE.L.herodion);
+  assert.match(html, /<b>Estanque inferior<\/b><span class="be-muted">: Is 22:9\. Quizá el del Canal<\/span>/);
+  assert.match(html, /<b>Sala<\/b><span class="be-muted">: Perspicacia la pone junto al palacio<\/span>/);
+  assert.match(html, /<b>Palacio<\/b><span class="be-muted">: Herodes lo levantó<\/span>/);
+  // «No» is also a name in the data, but a word that short is a plain word.
+  assert.match(html, /<b>Muro<\/b><span class="be-muted">: no se sabe dónde estaba<\/span>/);
+  assert.match(html, /<b>Patio<\/b><span class="be-muted">: «Patio» en el texto<\/span>/);
 });
 
 test('a place without parts has no section, and its names stay as they were', () => {

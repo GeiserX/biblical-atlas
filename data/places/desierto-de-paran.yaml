@@ -4,6 +4,7 @@ name: Desierto de Parán
 names:
 - name: Desierto de Parán
 - name: Parán
+parts:
 - name: Región montañosa de Parán
   note: Así lo llama Dt 33:2. Perspicacia dice que su parte central es montañosa, de 600 a 750 m de altura.
 - name: Monte Parán

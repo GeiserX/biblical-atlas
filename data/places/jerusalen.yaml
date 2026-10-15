@@ -155,7 +155,7 @@ parts:
     no dice dónde estaba exactamente.
 - name: Casa del Rey
   note: El palacio (nota de Ne 3:25), junto al Patio de la Guardia y a una torre (Ne 3:25; Jer 37:21). Perspicacia «Salomón»
-    lo pone en la ladera sur de Moria, bajo el templo, junto a las salas de Monte Moria.
+    lo pone bajo el templo, junto a la Sala de las Columnas y la del Trono.
 - name: Puerta del Agua
   note: Puerta del este, cerca de Ofel y del recinto del templo, quizá por su acceso a la fuente de Guihón; ante ella había
     una plaza donde Esdras leyó la Ley (Ne 3:26; 8:1). Perspicacia «Puerta».
@@ -167,6 +167,25 @@ parts:
 - name: Puerta de la Guardia
   note: Puerta donde se detuvo el segundo coro antes de bajar al templo (Ne 12:39, 40); Perspicacia «Puerta» cree que es la
     Puerta de la Inspección del muro oriental.
+- name: Estanque de Siloam
+  place: estanque-de-siloam
+  note: Estanque del sur de la ciudad, adonde llegaba por un túnel el agua de Guihón; allí se lavó el ciego que Jesús curó
+    (Jn 9:7).
+- name: Estanque de Betzata
+  place: estanque-de-betzata
+  note: Estanque de cinco pórticos al norte del recinto del templo, junto a la Puerta de las Ovejas (Jn 5:2).
+- name: Guihón
+  place: manantial-de-guihon
+  near: true
+  note: Manantial del valle de Cedrón, al este de la Ciudad de David; allí ungieron rey a Salomón (1Re 1:38, 39).
+- name: Gólgota
+  place: golgota
+  near: true
+  note: Lugar a las afueras de la ciudad donde ejecutaron a Jesús (Jn 19:17, 20; Heb 13:12).
+- name: Getsemaní
+  place: getsemani
+  near: true
+  note: Jardín al este de la ciudad, al otro lado del Cedrón, donde arrestaron a Jesús (Jn 18:1).
 type: city
 lat: 31.776667
 lon: 35.234167

@@ -261,13 +261,12 @@ function candidatosHtml(l) {
 
 // ---- Lo que hay dentro del lugar o junto a él (`partes`): puertas, torres, estanques... ----
 // No son otros nombres del lugar: la ficha los enseña aparte y la búsqueda da cada uno como su propia fila.
-const TITULO_PARTES = { ciudad: 'Dentro de la ciudad', monte: 'En el monte', valle: 'En el valle' };
+const TITULO_PARTES = { ciudad: 'Dentro de la ciudad', puerto: 'Dentro de la ciudad', monte: 'En el monte', valle: 'En el valle' };
 /** «Nombre: nota», como los nombres de la ficha (BE.nombresHtml). Una parte con ficha propia es una fila que la abre. */
 function filasPartes(ps) {
   let html = '', abierta = '';
   for (const p of ps) {
-    const nota = p.nota ? String(p.nota).replace(/\.\s*$/, '') : '';
-    const texto = nota && nota.charAt(0).toLowerCase() + nota.slice(1);
+    const texto = BE.notaTrasNombre(p.nota);
     const enlace = !!(p.lugar && BE.L[p.lugar]);
     const lista = enlace ? 'div' : 'ul';
     if (abierta !== lista) html += `${abierta ? `</${abierta}>` : ''}${enlace ? '<div class="be-list">' : '<ul class="nombres">'}`;
@@ -282,9 +281,9 @@ function partesHtml(l) {
   if (!ps.length) return '';
   const dentro = ps.filter((p) => !p.cerca), cerca = ps.filter((p) => p.cerca);
   return `<section class="be-card ficha-sec"><div class="be-card__pad">
-    <h3 class="be-card__eyebrow">${BE.t(TITULO_PARTES[l.tipo] || 'En este lugar')} <b class="cuenta">${ps.length}</b></h3>
+    <h3 class="be-card__eyebrow">${BE.t(dentro.length ? TITULO_PARTES[l.tipo] || 'En este lugar' : 'Alrededor')} <b class="cuenta">${dentro.length || cerca.length}</b></h3>
     ${filasPartes(dentro)}
-    ${cerca.length ? `<h4 class="be-caps sub-bloque">${BE.t('Alrededor')}</h4>${filasPartes(cerca)}` : ''}
+    ${dentro.length && cerca.length ? `<h4 class="be-caps sub-bloque">${BE.t('Alrededor')} <b class="cuenta">${cerca.length}</b></h4>` : ''}${filasPartes(cerca)}
   </div></section>`;
 }
 
