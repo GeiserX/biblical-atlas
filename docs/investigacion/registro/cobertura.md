@@ -81,10 +81,10 @@ Qué versículos de la TNM se han leído y apuntado en `data/coverage/<libro>.ya
 | 2 Pedro | 0 de 3 | 0 de 61 | 0 % |
 | [1 Juan](https://github.com/GeiserX/biblical-atlas/blob/main/data/coverage/1-juan.yaml) | 5 de 5 | 105 de 105 | 100 % |
 | [2 Juan](https://github.com/GeiserX/biblical-atlas/blob/main/data/coverage/2-juan.yaml) | 1 de 1 | 13 de 13 | 100 % |
-| 3 Juan | 0 de 1 | 0 de 14 | 0 % |
+| [3 Juan](https://github.com/GeiserX/biblical-atlas/blob/main/data/coverage/3-juan.yaml) | 0 de 1 | 14 de 14 | 100 % |
 | Judas | 0 de 1 | 0 de 25 | 0 % |
 | Apocalipsis | 0 de 22 | 0 de 404 | 0 % |
-| **Total** | 1133 de 1189 | 29985 de 31062 | 97 % |
+| **Total** | 1133 de 1189 | 29999 de 31062 | 97 % |
 
 ## Capítulos empezados
 
@@ -94,3 +94,4 @@ Qué versículos de la TNM se han leído y apuntado en `data/coverage/<libro>.ya
 - Esdras 7: faltan ninguno (falta marcarlo completo)
 - Esdras 8: faltan ninguno (falta marcarlo completo)
 - Filemón 1: faltan ninguno (falta marcarlo completo)
+- 3 Juan 1: faltan ninguno (falta marcarlo completo)

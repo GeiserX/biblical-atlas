@@ -9,7 +9,7 @@ names:
 - name: el discípulo al que Jesús amaba
   note: Así se nombra a sí mismo en su Evangelio.
 - name: el anciano
-  note: Así se presenta en 2Jn 1. «Toda Escritura», libro 63, párr. 2, lo explica por su edad y porque, como columna y último
+  note: Así se presenta en 2Jn 1 y 3Jn 1. «Toda Escritura», libro 63, párr. 2, lo explica por su edad y porque, como columna y último
     apóstol vivo, era anciano de la congregación.
 disambiguation: El apóstol, hijo de Zebedeo. No es Juan el Bautista, ni Juan Marcos, ni el gobernante Juan de Hch
   4:6, ni Juan el padre de Pedro.
@@ -61,6 +61,8 @@ sources:
 - hechos-5
 - hechos-8
 - galatas-2
+- 3-juan-1
+- si-3-juan
 - 2-juan-1
 - si-2-juan
 - 1-juan-1
@@ -125,6 +127,8 @@ relations:
   - bt-4
   - it-juan-cartas
   - tnm-tabla
+  - 3-juan-1
+  - si-3-juan
   - 2-juan-1
   - si-2-juan
   - 1-juan-1
@@ -230,6 +234,26 @@ relations:
     siguen en Jerusalén; hacia 49 es una de las columnas de aquella congregación (Gál 2:9).'
   checked_on: '2026-09-29'
   status: verified
+- type: tie
+  person: gayo-de-3-juan
+  word: friend
+  date:
+    from: 98
+    to: 98
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 98 e.c.
+  inferred: true
+  sources:
+  - 3-juan-1
+  - w08-cartas-de-juan-y-judas
+  - si-3-juan
+  reason: '3Jn 1: Juan llama a Gayo «el amado» y dice quererlo de veras. La Atalaya de 2008 lo llama su amigo íntimo y «Toda
+    Escritura», libro 64, párr. 1, amigo especial de Juan.'
+  checked_on: '2026-10-14'
+  status: verified
 links:
 - title: 'Perspicacia: «Juan»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Juan/
@@ -238,5 +262,10 @@ links:
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/apocalipsis/1/
   type: bible
 perspicacia: 1200002489#3
+history:
+- date: '2026-10-15'
+  change: El nombre «el anciano» cita también 3Jn 1, donde Juan se presenta igual; «Toda Escritura», libro 64, párr. 2,
+    lo usa para identificar al escritor.
+  source: 3-juan-1
 checked_on: '2026-10-14'
 status: verified
