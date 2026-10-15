@@ -755,3 +755,10 @@ it-zebina:
   level: 1
   published: null
   checked_on: '2026-10-13'
+tnm-1987-esdras-8:
+  title: Esdras 8
+  work: La Biblia. Traducción del Nuevo Mundo (1987)
+  url: https://www.jw.org/es/biblioteca/biblia/bi12/libros/esdras/8/
+  level: 1
+  published: 1987
+  checked_on: '2026-10-15'

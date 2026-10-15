@@ -41,8 +41,8 @@ relations:
     «Uzías», núm. 3, lo llama así.
   checked_on: '2026-10-13'
   status: verified
-disambiguation: El sacerdote principal que se enfrentó al rey Uzías (2Cr 26:17-20). Perspicacia solo ve posible que sea el
-  hijo de Johanán, y lo separa de los demás Azarías.
+disambiguation: El sacerdote principal que se enfrentó al rey Uzías (2Cr 26:17-20). Perspicacia ve posible que sea el hijo
+  de Johanán y, por él, el Azarías hijo de Merayot; lo separa de los demás Azarías.
 distinct_from:
 - abednego
 - azarias-hijo-de-ahimaaz
@@ -65,10 +65,14 @@ distinct_from:
 - azarias-padre-de-joel
 - azarias-hijo-de-jehalelel
 - seraya-repatriado
-- azarias-hijo-de-merayot
 - azarias-hijo-de-maaseya
 - azarias-levita-que-explico-la-ley
 - azarias-sacerdote-firmante
 - azarias-de-la-procesion-del-muro
-checked_on: '2026-10-14'
+history:
+- date: '2026-10-15'
+  change: 'Deja de excluir al Azarías hijo de Merayot: el cuadro de Perspicacia «Sumo sacerdote» ve posible que el Azarías
+    de Esd 7:3 sea el hijo de Johanán, a quien tiene por probable autor de la reprensión.'
+  source: it-sumo-sacerdote
+checked_on: '2026-10-15'
 status: verified

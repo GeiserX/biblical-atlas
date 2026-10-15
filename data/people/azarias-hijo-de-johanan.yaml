@@ -41,6 +41,7 @@ sources:
 - 2-cronicas-31
 - esdras-7
 - it-amarias
+- it-sumo-sacerdote
 links:
 - title: 'Perspicacia: «Azarías»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Azar%C3%ADas/
@@ -103,9 +104,10 @@ relations:
   - esdras-7
   - it-amarias
   - it-azarias
-  reason: La referencia marginal del Azarías de Esd 7:3 lleva al pasaje que Perspicacia «Azarías», núm. 14, atribuye a este,
-    y «Amarías», núm. 4, une su Amarías con el de Esd 7:3.
-  checked_on: '2026-10-14'
+  - it-sumo-sacerdote
+  reason: La referencia del Azarías de Esd 7:3 lleva al de los días de Ezequías, y el cuadro de Perspicacia «Sumo sacerdote»
+    ve posible que sea este; «Amarías», núm. 4, une su Amarías con el de Esd 7:3.
+  checked_on: '2026-10-15'
   status: verified
 history:
 - date: '2026-10-13'
@@ -116,5 +118,9 @@ history:
   change: 'Deja de excluir al Azarías de Esd 7:3: la referencia de ese versículo lleva a 2Cr 31:10 y Perspicacia «Amarías»,
     núm. 4, une los dos pasajes.'
   source: esdras-7
-checked_on: '2026-10-14'
+- date: '2026-10-15'
+  change: El same_as con el Azarías de Esd 7:3 cita también el cuadro de Perspicacia «Sumo sacerdote»; la certeza sigue en
+    possible.
+  source: it-sumo-sacerdote
+checked_on: '2026-10-15'
 status: verified
