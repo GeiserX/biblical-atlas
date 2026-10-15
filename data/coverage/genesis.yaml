@@ -215,7 +215,7 @@ chapters:
     - {v: 7-11, type: narration, entities: [event:abimelec-descubre-que-rebeca-es-esposa-de-isaac, person:abimelec-de-tiempos-de-isaac, person:isaac, person:rebeca, relation:isaac/kin/rebeca, relation:rebeca/lived_in/guerar, place:guerar]}
     - {v: 12-22, type: narration, entities: [event:isaac-reabre-los-pozos-de-abrahan, person:isaac, person:abimelec-de-tiempos-de-isaac, place:guerar, place:valle-de-guerar, place:esec, place:sitna, place:rehobot-pozo-de-isaac, relation:isaac/lived_in/valle-de-guerar], mentions: [person:abrahan], note: "Isaac cosecha cien veces lo sembrado. Los pozos reabiertos de Abrahán no se nombran aquí."}
     - {v: 23-25, type: narration, entities: [event:jehova-se-aparece-a-isaac-en-beer-seba, person:isaac, place:beer-seba, relation:isaac/lived_in/beer-seba], mentions: [person:abrahan]}
-    - {v: 26-33, type: narration, entities: [event:pacto-de-isaac-con-abimelec, person:isaac, person:abimelec-de-tiempos-de-isaac, person:ahuzat, person:ficol-de-tiempos-de-isaac, place:beer-seba, place:guerar, relation:abimelec-de-tiempos-de-isaac/tie/ahuzat, relation:ficol-de-tiempos-de-isaac/tie/abimelec-de-tiempos-de-isaac, journey:abimelec-va-a-ver-a-isaac], note: "Sibá, el nombre del pozo, queda en los nombres de Beer-Seba."}
+    - {v: 26-33, type: narration, entities: [event:pacto-de-isaac-con-abimelec, person:isaac, person:abimelec-de-tiempos-de-isaac, person:ahuzat, person:ficol-de-tiempos-de-isaac, place:beer-seba, place:guerar, relation:abimelec-de-tiempos-de-isaac/tie/ahuzat, relation:ficol-de-tiempos-de-isaac/tie/abimelec-de-tiempos-de-isaac, journey:abimelec-va-a-ver-a-isaac], note: "Sibá, el nombre del pozo, queda en las partes de Beer-Seba."}
     - {v: 34-35, type: narration, entities: [event:esau-se-casa-con-judit-y-basemat, person:esau, person:judit, person:basemat-hija-de-elon, person:beeri-padre-de-judit, person:elon-el-hitita, person:isaac, person:rebeca, relation:esau/kin/judit, relation:esau/kin/basemat-hija-de-elon, relation:judit/kin/beeri-padre-de-judit, relation:basemat-hija-de-elon/kin/elon-el-hitita], mentions: [person:ada-hija-de-elon, relation:ada-hija-de-elon/same_as/basemat-hija-de-elon]}
   27:
     status: complete
@@ -253,7 +253,7 @@ chapters:
     - {v: 1-16, type: narration, entities: [event:jacob-decide-volver-a-canaan, person:jacob, person:laban, person:raquel, person:lea, place:padan-aram], mentions: [place:betel]}
     - {v: 17-21, type: narration, entities: [event:jacob-huye-de-laban, person:jacob, person:raquel, person:laban, person:lea, place:padan-aram, place:canaan, place:rio-eufrates, place:galaad, journey:persecucion-de-laban, journey:vuelta-de-jacob], mentions: [person:isaac], note: "Los ídolos domésticos (terafim) que roba Raquel no llevan ficha."}
     - {v: 22-42, type: narration, entities: [event:laban-alcanza-a-jacob-en-galaad, person:laban, person:jacob, person:raquel, person:lea, place:galaad, relation:jacob/lived_in/haran], mentions: [person:abrahan, person:isaac, event:jacob-prospera-con-el-rebano-de-laban]}
-    - {v: 43-55, type: narration, entities: [event:pacto-de-jacob-y-laban-en-galeed, person:jacob, person:laban, place:galaad], mentions: [person:abrahan, person:nacor-hijo-de-tare, person:isaac], note: "Galeed, Jegar-Sahadutá y Atalaya nombran el montón de piedras del pacto; van en nombres de Galaad, porque no se sabe su sitio exacto."}
+    - {v: 43-55, type: narration, entities: [event:pacto-de-jacob-y-laban-en-galeed, person:jacob, person:laban, place:galaad], mentions: [person:abrahan, person:nacor-hijo-de-tare, person:isaac], note: "Galeed, Jegar-Sahadutá y Atalaya nombran el montón de piedras del pacto; van en las partes de Galaad, porque no se sabe su sitio exacto."}
   32:
     status: complete
     reviewed_on: 2026-09-29
@@ -270,7 +270,7 @@ chapters:
     - {v: 1-11, type: narration, entities: [event:jacob-y-esau-se-reconcilian, person:jacob, person:esau, person:lea, person:raquel, person:jose-hijo-de-jacob, relation:jacob/kin/lea, relation:jacob/kin/raquel, relation:esau/kin/jacob], note: "Las dos siervas van delante con sus hijos, sin nombre en este capítulo."}
     - {v: 12-16, type: narration, entities: [person:jacob, person:esau, place:seir, relation:esau/lived_in/seir]}
     - {v: "17", type: narration, entities: [event:jacob-se-establece-en-sucot, person:jacob, place:sucot, relation:jacob/lived_in/sucot, journey:vuelta-de-jacob]}
-    - {v: 18-20, type: narration, entities: [event:jacob-compra-un-campo-junto-a-siquem, person:jacob, person:hamor, person:siquem-hijo-de-hamor, place:siquem, place:padan-aram, place:canaan, relation:jacob/lived_in/siquem, relation:jacob/lived_in/padan-aram, relation:hamor/lived_in/siquem, relation:siquem-hijo-de-hamor/kin/hamor], note: "El altar se llama «Dios, el Dios de Israel»; va en los nombres de Siquem."}
+    - {v: 18-20, type: narration, entities: [event:jacob-compra-un-campo-junto-a-siquem, person:jacob, person:hamor, person:siquem-hijo-de-hamor, place:siquem, place:padan-aram, place:canaan, relation:jacob/lived_in/siquem, relation:jacob/lived_in/padan-aram, relation:hamor/lived_in/siquem, relation:siquem-hijo-de-hamor/kin/hamor], note: "El altar se llama «Dios, el Dios de Israel»; va en las partes de Siquem."}
   34:
     status: complete
     reviewed_on: 2026-09-29

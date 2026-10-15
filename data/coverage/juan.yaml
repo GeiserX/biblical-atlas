@@ -44,7 +44,7 @@ chapters:
     status: complete
     reviewed_on: 2026-09-29
     spans:
-    - {v: 1-9, type: narration, entities: [event:curacion-en-betzata, person:jesus, place:jerusalen, place:estanque-de-betzata, journey:judea-y-pascua-de-31], note: "La fiesta sin nombre es, según la nota de 5:1, la Pascua de 31. El estanque está junto a la Puerta de las Ovejas, que va en los nombres de Jerusalén. La TNM no incluye el v. 4."}
+    - {v: 1-9, type: narration, entities: [event:curacion-en-betzata, person:jesus, place:jerusalen, place:estanque-de-betzata, journey:judea-y-pascua-de-31], note: "La fiesta sin nombre es, según la nota de 5:1, la Pascua de 31. El estanque está junto a la Puerta de las Ovejas, que va en las partes de Jerusalén. La TNM no incluye el v. 4."}
     - {v: 10-13, type: narration, entities: [event:curacion-en-betzata, person:jesus], note: "Unos judíos, al parecer líderes religiosos (nota de 5:10), reprochan al curado que cargue la camilla en sábado. Él no sabe quién lo curó, porque Jesús se había perdido entre la gente."}
     - {v: 14-18, type: narration, entities: [event:curacion-en-betzata, person:jesus, place:monte-moria], note: "Jesús encuentra al hombre en el templo y le pide que no peque más. Los judíos persiguen a Jesús por curar en sábado y por llamar a Dios su Padre, y buscan matarlo."}
     - {v: 19-30, type: speech, entities: [event:curacion-en-betzata, person:jesus], note: "El Hijo no actúa por su cuenta: hace lo que ve hacer al Padre, que le ha dado autoridad para juzgar y dar vida. Anuncia que los muertos resucitarán, unos para vida y otros para juicio."}

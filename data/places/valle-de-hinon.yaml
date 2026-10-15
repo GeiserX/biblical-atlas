@@ -12,6 +12,10 @@ names:
 - name: Valle de la Matanza
   note: Nombre que Jehová anuncia para el valle por la cantidad de muertos que dejará su juicio (Jer 7:32; 19:6; Perspicacia
     «Hinón, Valle de»).
+- name: Valle
+  note: Así se le llamaba también, como en el nombre de la Puerta del Valle (Ne 3:13; Perspicacia «Hinón, Valle de»).
+- name: Valle de los cadáveres y de las cenizas
+  note: Así llama Jer 31:40 a un valle que Perspicacia «Hinón, Valle de» ve posible que sea este.
 - name: Wadi er-Rababi (Ge Ben Hinnom)
   modern: true
   note: Nombre actual del valle, según Perspicacia «Hinón, Valle de».
@@ -45,6 +49,8 @@ sources:
 - 2-cronicas-28
 - 2-cronicas-33
 - nehemias-11
+- nehemias-3
+- jeremias-31
 links:
 - title: 'Perspicacia: «Hinón, Valle de»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hin%C3%B3n-Valle-de/

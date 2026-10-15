@@ -5,7 +5,9 @@ names:
 - name: Ezam
 - name: Etam
   note: Grafía antigua, que aún usa Perspicacia «Sucot».
+parts:
 - name: Desierto de Ezam
+  near: true
   note: El desierto en cuyo borde estaba. Perspicacia cree que es el mismo desierto de Sur, o que uno está dentro del otro.
 type: region
 lat: null

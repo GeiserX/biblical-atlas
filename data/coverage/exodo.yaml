@@ -144,7 +144,7 @@ chapters:
     reviewed_on: 2026-09-29
     spans:
     - {v: 1-7, type: narration, entities: [event:agua-de-la-roca-en-horeb, place:desierto-de-sin, place:refidim, place:masa, place:desierto-de-sinai, person:moises, journey:de-egipto-al-sinai], mentions: [place:rio-nilo, place:egipto], note: "Horeb es aquí, según Perspicacia, la región montañosa que rodea el Sinaí, no el monte mismo."}
-    - {v: 8-16, type: narration, entities: [event:batalla-contra-amalec-en-refidim, place:refidim, person:josue-hijo-de-nun, person:moises, person:aaron, person:hur-companero-de-moises, relation:hur-companero-de-moises/accompanies/moises, relation:hur-companero-de-moises/accompanies/aaron], note: "Amalec es aquí el pueblo amalequita, que descendía de Amalec, nieto de Esaú. El altar Jehová-Nisí va en los nombres de Refidim."}
+    - {v: 8-16, type: narration, entities: [event:batalla-contra-amalec-en-refidim, place:refidim, person:josue-hijo-de-nun, person:moises, person:aaron, person:hur-companero-de-moises, relation:hur-companero-de-moises/accompanies/moises, relation:hur-companero-de-moises/accompanies/aaron], note: "Amalec es aquí el pueblo amalequita, que descendía de Amalec, nieto de Esaú. El altar Jehová-Nisí va en las partes de Refidim."}
   18:
     status: complete
     reviewed_on: 2026-09-29
