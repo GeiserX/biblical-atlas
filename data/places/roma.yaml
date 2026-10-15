@@ -19,6 +19,8 @@ sources:
 - hch-18
 - romanos-1
 - filipenses-4
+- 2-timoteo-1
+- 2-timoteo-4
 links:
 - title: 'Perspicacia: «Roma»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Roma/
@@ -26,5 +28,5 @@ links:
 - title: Hechos 28 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/hechos/28/
   type: bible
-checked_on: '2026-09-29'
+checked_on: '2026-10-13'
 status: verified

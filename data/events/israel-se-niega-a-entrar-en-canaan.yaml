@@ -25,6 +25,8 @@ passages:
 - Sl 106:24, 25
 - Dt 9:23
 - 1Co 10:10
+- Heb 3:16, 19
+- Heb 4:2
 summary: El pueblo llora toda la noche, murmura contra Moisés y Aarón y propone elegir otro jefe para volver a Egipto. Josué
   y Caleb defienden la tierra; quieren apedrearlos, pero aparece la gloria de Jehová.
 reason: Perspicacia «Espías» fecha el envío en 1512 a.e.c. y Perspicacia «Hormá» sitúa estos sucesos en Cadés, en poco tiempo,
@@ -35,6 +37,8 @@ sources:
 - it-horma
 - salmos-106
 - 1-corintios-10
+- hebreos-3
+- hebreos-4
 links:
 - title: Números 14 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/N%C3%BAmeros/14/
@@ -42,5 +46,5 @@ links:
 - title: 'Perspicacia: «Espías»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Esp%C3%ADas/
   type: perspicacia
-checked_on: '2026-09-29'
+checked_on: '2026-10-14'
 status: verified

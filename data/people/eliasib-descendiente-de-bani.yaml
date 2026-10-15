@@ -1,0 +1,36 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: eliasib-descendiente-de-bani
+name: Eliasib
+names:
+- name: Eliasib
+perspicacia: 1200001298#5
+summary: Israelita de los hijos de Baní. Estaba casado con extranjeras y, cuando Esdras corrigió esos matrimonios (468-467
+  a.e.c.), las despidió junto con sus hijos.
+reason: Perspicacia «Eliasib», núm. 5; Esd 10:36, 44.
+sources:
+- it-eliasib
+- esdras-10
+links:
+- title: 'Perspicacia: «Eliasib»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Eliasib/
+  type: perspicacia
+relations:
+- type: kin
+  person: bani-antepasado-de-doce-repatriados
+  word: ancestor
+  sources:
+  - esdras-10
+  - it-eliasib
+  reason: Esd 10:36 lo pone entre los hijos de Baní; Perspicacia «Eliasib», núm. 5.
+  inferred: false
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified
+disambiguation: El de los hijos de Baní de Esd 10:36; no los demás Eliasib que registra Perspicacia.
+distinct_from:
+- eliasib-cantor
+- eliasib-de-tiempos-de-david
+- eliasib-descendiente-de-zatu
+- eliasib-hijo-de-elioenai
+- eliasib-padre-de-jehohanan

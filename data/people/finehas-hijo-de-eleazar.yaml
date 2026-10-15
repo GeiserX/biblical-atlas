@@ -19,6 +19,7 @@ sources:
 - jueces-20
 - 1-cronicas-6
 - 1-cronicas-9
+- esdras-7
 links:
 - title: 'Perspicacia: «Finehás»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Fineh%C3%A1s/
@@ -56,8 +57,9 @@ relations:
   - jueces-20
   - 1-cronicas-6
   - 1-cronicas-9
+  - esdras-7
   reason: 'Éx 6:25: hijo de Eleazar.'
-  checked_on: '2026-10-12'
+  checked_on: '2026-10-13'
   status: verified
 - type: kin
   person: putiel
@@ -90,7 +92,8 @@ relations:
   reason: '1Cr 9:20: en el pasado fue el líder de los porteros coreítas, y Jehová estuvo con él.'
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified
 distinct_from:
 - finehas-hijo-de-eli
+- finehas-levita

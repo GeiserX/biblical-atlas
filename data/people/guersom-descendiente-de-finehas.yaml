@@ -1,0 +1,49 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: guersom-descendiente-de-finehas
+name: Guersom
+names:
+- name: Guersom
+perspicacia: 1200001662#3
+disambiguation: El cabeza de la casa de Finehás que volvió con Esdras (Esd 8:2); no el hijo de Moisés ni Guersón hijo de Leví.
+distinct_from:
+- guersom-hijo-de-moises
+- guerson
+summary: Jefe de la casa paterna de Finehás entre los que volvieron de Babilonia con Esdras en 468 a.e.c.
+reason: Perspicacia «Guersom», núm. 3; Esd 8:1, 2.
+sources:
+- it-guersom
+- esdras-8
+links:
+- title: 'Perspicacia: «Guersom»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Guersom/
+  type: perspicacia
+relations:
+- type: kin
+  person: finehas-hijo-de-eleazar
+  word: ancestor
+  inferred: false
+  sources:
+  - esdras-8
+  - it-guersom
+  reason: Esd 8:2 lo cuenta entre los hijos de Finehás; Perspicacia «Guersom», núm. 3, lo hace cabeza de esa casa.
+  checked_on: '2026-10-13'
+  status: verified
+- type: accompanies
+  person: esdras
+  date:
+    from: -467
+    to: -467
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 468 a.e.c.
+  inferred: false
+  sources:
+  - esdras-8
+  - it-guersom
+  reason: 'Esd 8:1, 2: subió con Esdras desde Babilonia en tiempos de Artajerjes.'
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified

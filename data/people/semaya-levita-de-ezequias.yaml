@@ -31,6 +31,10 @@ distinct_from:
 - semaya-profeta
 - semaya-simeonita
 - semaya-levita-de-josias
+- semaya-descendiente-de-adonicam
+- semaya-enviado-a-casifia
+- semaya-descendiente-de-harim
+- semaya-sacerdote-descendiente-de-harim
 relations:
 - type: kin
   person: jedutun-musico

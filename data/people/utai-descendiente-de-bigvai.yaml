@@ -1,0 +1,48 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: utai-descendiente-de-bigvai
+name: Utái
+names:
+- name: Utái
+perspicacia: 1200004526#2
+disambiguation: El de los hijos de Bigvái que volvió con Esdras (Esd 8:14); no el judaíta hijo de Amihud.
+distinct_from:
+- utai-hijo-de-amihud
+summary: De los hijos de Bigvái. Con Zabbud guio a 70 varones de esa casa en el viaje de Esdras de 468 a.e.c.
+reason: Perspicacia «Utai», núm. 2; Esd 8:1, 14.
+sources:
+- it-utai
+- esdras-8
+links:
+- title: 'Perspicacia: «Utai»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Utai/
+  type: perspicacia
+relations:
+- type: kin
+  person: bigvai-cabeza-de-familia
+  word: ancestor
+  inferred: false
+  sources:
+  - esdras-8
+  - it-utai
+  reason: 'Esd 8:14: de los hijos de Bigvái.'
+  checked_on: '2026-10-13'
+  status: verified
+- type: accompanies
+  person: esdras
+  date:
+    from: -467
+    to: -467
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 468 a.e.c.
+  inferred: false
+  sources:
+  - esdras-8
+  - it-utai
+  reason: 'Esd 8:1, 14: subió con Esdras con Zabbud y 70 varones.'
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified

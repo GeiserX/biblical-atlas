@@ -1,0 +1,32 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jasub-descendiente-de-bani
+name: Jasub
+names:
+- name: Jasub
+perspicacia: 1200002337#2
+summary: Israelita de los hijos de Baní. Estaba casado con extranjeras y, cuando Esdras corrigió esos matrimonios (468-467
+  a.e.c.), las despidió junto con sus hijos.
+reason: Perspicacia «Jasub», núm. 2; Esd 10:29, 44.
+sources:
+- it-jasub
+- esdras-10
+links:
+- title: 'Perspicacia: «Jasub»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jasub/
+  type: perspicacia
+relations:
+- type: kin
+  person: bani-antepasado-de-seis-repatriados
+  word: ancestor
+  sources:
+  - esdras-10
+  - it-jasub
+  reason: Esd 10:29 lo pone entre los hijos de Baní; Perspicacia «Jasub», núm. 2.
+  inferred: false
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified
+disambiguation: El de los hijos de Baní de Esd 10:29; no los demás Jasub que registra Perspicacia.
+distinct_from:
+- yob

@@ -1,0 +1,44 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: elnatan-segundo-jefe
+name: Elnatán
+names:
+- name: Elnatán
+perspicacia: 1200001331#3
+disambiguation: El segundo Elnatán de la lista de jefes de Esd 8:16; no el primero ni el maestro del mismo versículo, ni el
+  padre de Nehustá.
+distinct_from:
+- elnatan-hijo-de-acbor
+- elnatan-maestro
+- elnatan-padre-de-nehusta
+- elnatan-primer-jefe
+summary: El segundo de los dos jefes llamados Elnatán a quienes Esdras, junto al río Ahavá, envió a Idó, en Casifía, a pedir
+  levitas y siervos del templo.
+reason: Perspicacia «Elnatán», núm. 2, 3 y 4; Esd 8:16, 17.
+sources:
+- it-elnatan
+- esdras-8
+links:
+- title: 'Perspicacia: «Elnatán»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Elnat%C3%A1n/
+  type: perspicacia
+relations:
+- type: accompanies
+  person: esdras
+  date:
+    from: -467
+    to: -467
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 468 a.e.c.
+  inferred: true
+  sources:
+  - esdras-8
+  - it-elnatan
+  reason: 'Esd 8:15, 16: estaba en el campamento del Ahavá y Esdras lo envió a buscar levitas; Perspicacia lo pone entre los
+    que iban con Esdras.'
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified

@@ -164,8 +164,11 @@ test('a stop with an anchored date is not stretched by an event placed only by t
   // Narrative own date: it follows its event beyond c. 1400 (Judges 1).
   const juda = parada(S.BE.duenoViaje(S.D.viajes.find((v) => v.id === 'juda-y-simeon-contra-los-cananeos')), 'juda-y-simeon-contra-los-cananeos/2');
   assert.ok(juda.b > -1390, `a stop with a narrative date keeps its event's window (${juda.b.toFixed(2)})`);
-  // Stretched by an anchored event: Jehoiachin is taken in 617, with the whole of his event.
-  const joaquin = S.D.viajes.find((v) => v.id === 'joaquin-llevado-a-babilonia');
-  const j1 = parada(S.BE.duenoViaje(joaquin), 'joaquin-llevado-a-babilonia/1');
-  assert.ok(j1.a < -615.99, `a stop stretched by an anchored event is not cut (${j1.a.toFixed(3)})`);
+  // Stretched by an anchored event: Herod Agrippa's stop is the Passover of 44, but James is killed earlier that year
+  // (Acts 12:1, 2, c. 44), and the stop takes the whole of that event.
+  const agripa = S.D.viajes.find((v) => v.id === 'herodes-agripa-baja-a-cesarea');
+  const h1 = parada(S.BE.duenoViaje(agripa), 'herodes-agripa-baja-a-cesarea/1');
+  const santiago = S.w('muerte-de-santiago-hijo-de-zebedeo');
+  assert.ok(santiago[0] < S.BE.ventanaFecha(h1.p.fecha)[0] - 0.05, 'the death of James starts well before the Passover of 44');
+  assert.ok(h1.a <= santiago[0] + 1e-9, `a stop stretched by an anchored event is not cut (${h1.a.toFixed(3)})`);
 });

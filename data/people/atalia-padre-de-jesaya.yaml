@@ -1,0 +1,32 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: atalia-padre-de-jesaya
+name: Atalía
+names:
+- name: Atalía
+perspicacia: 1200000457#3
+disambiguation: El padre de Jesayá (Esd 8:7), un hombre; no la reina Atalía ni el benjamita Atalía.
+distinct_from:
+- atalia
+- atalia-de-benjamin
+summary: Hombre de la familia de Elam, padre de Jesayá, uno de los jefes del viaje de Esdras en 468 a.e.c.
+reason: Perspicacia «Atalía», núm. 3; Esd 8:7.
+sources:
+- it-atalia-reina
+- esdras-8
+links:
+- title: 'Perspicacia: «Atalía»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Atal%C3%ADa/
+  type: perspicacia
+relations:
+- type: kin
+  person: elam-cabeza-de-familia
+  word: ancestor
+  inferred: true
+  sources:
+  - esdras-8
+  - it-atalia-reina
+  reason: Esd 8:7 pone a su hijo entre los hijos de Elam; Perspicacia «Atalía», núm. 3, lo da como de esa familia.
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified

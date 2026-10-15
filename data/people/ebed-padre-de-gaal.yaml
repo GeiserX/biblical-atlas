@@ -18,5 +18,7 @@ links:
 - title: Jueces 9 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/jueces/9/
   type: bible
-checked_on: '2026-09-29'
+checked_on: '2026-10-13'
 status: verified
+distinct_from:
+- ebed-hijo-de-jonatan

@@ -14,7 +14,8 @@ date:
   chronology: tnm
   text: c. 98 e.c.
 recipients:
-  text: 'Sin saludo ni despedida: al parecer una carta circular para las congregaciones de la zona.'
+  text: 'Sin saludo ni despedida, más tratado que carta: va a todo el conjunto de los cristianos, según La Atalaya de 2008
+    y «Toda Escritura». Perspicacia ve muy probable una o más congregaciones, quizá en circular.'
 context_origin:
   summary: Juan, ya muy anciano, escribe hacia 98 desde Éfeso o cerca, más de treinta años después de las demás
     cartas inspiradas.
@@ -32,6 +33,14 @@ sources:
 - si-3
 - it-juan-cartas
 - 1-juan-2
+- 1-juan-1
+- si-1-juan
+- w08-cartas-de-juan-y-judas
+- it-anticristo
+- it-santos
+- 1-juan-3
+- 1-juan-4
+- 1-juan-5
 links:
 - title: 'Perspicacia: «Juan, Cartas de»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Juan-Cartas-de/
@@ -39,5 +48,10 @@ links:
 - title: 1 Juan 2 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/1-juan/2/
   type: bible
-checked_on: '2026-09-28'
+history:
+- date: '2026-10-14'
+  change: Decía «al parecer» una circular. La Atalaya de 2008, la publicación más reciente, y «Toda Escritura», libro 62,
+    párr. 5, la dirigen a todos los cristianos; Perspicacia «Juan, Cartas de» queda como matiz.
+  source: w08-cartas-de-juan-y-judas
+checked_on: '2026-10-14'
 status: verified

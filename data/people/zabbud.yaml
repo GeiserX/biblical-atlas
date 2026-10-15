@@ -1,0 +1,45 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: zabbud
+name: Zabbud
+names:
+- name: Zabbud
+perspicacia: '1200004645'
+summary: De los hijos de Bigvái. Con Utái guio a 70 varones de esa casa en el viaje de Esdras de 468 a.e.c.
+reason: Perspicacia «Zabbud»; Esd 8:1, 14.
+sources:
+- it-zabbud
+- esdras-8
+links:
+- title: 'Perspicacia: «Zabbud»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zabbud/
+  type: perspicacia
+relations:
+- type: kin
+  person: bigvai-cabeza-de-familia
+  word: ancestor
+  inferred: false
+  sources:
+  - esdras-8
+  - it-zabbud
+  reason: 'Esd 8:14: de los hijos de Bigvái.'
+  checked_on: '2026-10-13'
+  status: verified
+- type: accompanies
+  person: esdras
+  date:
+    from: -467
+    to: -467
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 468 a.e.c.
+  inferred: false
+  sources:
+  - esdras-8
+  - it-zabbud
+  reason: 'Esd 8:1, 14: subió con Esdras con Utái y 70 varones.'
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified

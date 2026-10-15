@@ -16,9 +16,10 @@
    Lookup order (docs/usage.md and docs/how-it-works.md say it for readers): events by their `pasajes`, the same rule as
    lookup_passage; then journey stops, letters and journeys by their `referencia`. Inside each group, the records whose
    principal passage (the first of `pasajes`, the first part of `referencia`) cites it come first, then by the date the
-   timeline gives them. The first match opens; the card lists every match so the reader can switch. With no match the
-   chapter card opens, with a line that nothing cites the passage. A book alone («#p=Rut») opens the book card. What does
-   not read as one passage (an unknown book, a verse its book lacks, «Hch16:1, 5») gets a notice and selects nothing.
+   timeline gives them, and on the same date by the narrative order and the id. The first match opens; the card lists
+   every match so the reader can switch. With no match the chapter card opens, with a line that nothing cites the
+   passage. A book alone («#p=Rut») opens the book card. What does not read as one passage (an unknown book, a verse
+   its book lacks, «Hch16:1, 5») gets a notice and selects nothing.
 
    The pure part (parsePassage, parseRefs, overlaps, compact) runs in node:vm in tests/site/enlaces-pasaje-reglas.test.mjs; the
    wiring below it needs the page. */
@@ -190,25 +191,30 @@ let index = null;
 function records() {
   if (index && index.D === BE.D && index.books === BE.LIBROS) return index.list;
   const D = BE.D, list = [];
-  const ref = (sel, s) => list.push({ sel, stretches: parseRefs(s), first: parseRefs(String(s || '').split(';')[0]) });
-  for (const e of D.eventos || []) list.push({ sel: `evento:${e.id}`, stretches: (e.pasajes || []).flatMap(parseRefs), first: parseRefs(e.pasajes?.[0]) });
+  // The narrative order, as build.py's orden_en_serie: [series, order]; a stop goes by its order in the journey.
+  const rel = (o) => [o?.serie || '', o?.orden ?? 1e9];
+  const ref = (sel, s, r = rel()) => list.push({ sel, stretches: parseRefs(s), first: parseRefs(String(s || '').split(';')[0]), rel: r });
+  for (const e of D.eventos || []) list.push({ sel: `evento:${e.id}`, stretches: (e.pasajes || []).flatMap(parseRefs), first: parseRefs(e.pasajes?.[0]), rel: rel(e.orden_relato) });
   for (const v of D.viajes || []) {
-    for (const p of v.paradas || []) ref(`parada:${v.id}/${p.orden}`, p.referencia);
+    for (const p of v.paradas || []) ref(`parada:${v.id}/${p.orden}`, p.referencia, rel({ orden: p.orden }));
   }
   for (const c of D.cartas || []) ref(`carta:${c.id}`, c.referencia);
-  for (const v of D.viajes || []) ref(`viaje:${v.id}`, v.referencia);
+  for (const v of D.viajes || []) ref(`viaje:${v.id}`, v.referencia, rel(v.orden_relato));
   index = { D, books: BE.LIBROS, list: list.filter((x) => x.stretches.length) };
   return index.list;
 }
 const kind = (sel) => sel.slice(0, sel.indexOf(':'));
 /** The records that cite a stretch, in lookup order: by group (events first, as on the server); inside a group, those
     whose principal passage cites it before those that cite it further down their list (a sermon in Hch 13 that recalls
-    the birth of Isaac), then by the date the timeline gives them. */
+    the birth of Isaac), then by the date the timeline gives them; on the same date, by the narrative order and then the
+    id, as build.py sorts them, so the order never leans on the order of the data. */
 function matches(r) {
   const rank = new Map(GROUPS.map(([k], i) => [k, i]));
+  const cmp = (a, b) => (a < b ? -1 : a > b ? 1 : 0);
   const found = records().filter((x) => x.stretches.some((s) => overlaps(s, r)) && BE.parseSel(x.sel))
-    .map((x, i) => ({ s: x.sel, i, side: x.first.some((s) => overlaps(s, r)) ? 0 : 1, t: BE.momentoDe(BE.parseSel(x.sel)) ?? Infinity }));
-  return found.sort((a, b) => rank.get(kind(a.s)) - rank.get(kind(b.s)) || a.side - b.side || a.t - b.t || a.i - b.i).map((x) => x.s);
+    .map((x) => ({ s: x.sel, rel: x.rel, side: x.first.some((s) => overlaps(s, r)) ? 0 : 1, t: BE.momentoDe(BE.parseSel(x.sel)) ?? Infinity }));
+  return found.sort((a, b) => rank.get(kind(a.s)) - rank.get(kind(b.s)) || a.side - b.side || a.t - b.t
+    || cmp(a.rel[0], b.rel[0]) || a.rel[1] - b.rel[1] || cmp(a.s, b.s)).map((x) => x.s);
 }
 /** The chapter card of a stretch: its first chapter. */
 function chapterSel(r) {

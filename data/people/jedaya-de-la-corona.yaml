@@ -57,9 +57,10 @@ relations:
   reason: 'Zac 6:10: Heldái, Tobiya y Jedayá traen juntos de Babilonia lo que dieron los desterrados.'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified
 distinct_from:
 - jedaya-hijo-de-simri
 - jedaya-sacerdote-repatriado
 - jedaya-de-tiempos-de-david
+- jedaya-antepasado-de-sacerdotes

@@ -1,0 +1,20 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: zatu
+name: Zatú
+names:
+- name: Zatú
+perspicacia: '1200004665'
+summary: 'Antepasado de una familia numerosa: 945 de los suyos formaron parte del regreso guiado por Zorobabel (537 a.e.c.).'
+reason: Perspicacia «Zatú»; Esd 2:8.
+sources:
+- it-zatu
+- esdras-2
+- esdras-8
+- esdras-10
+links:
+- title: 'Perspicacia: «Zatú»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zat%C3%BA/
+  type: perspicacia
+checked_on: '2026-10-13'
+status: verified
+relations: []

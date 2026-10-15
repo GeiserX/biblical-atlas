@@ -1,0 +1,33 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: mitridates-tesorero-de-ciro
+name: Mitrídates
+names:
+- name: Mitrídates
+perspicacia: 1200003090#1
+summary: Tesorero del rey Ciro. Por orden del rey sacó los utensilios del templo que Nabucodonosor se había llevado y los
+  contó para entregárselos a Sesbazar.
+reason: Perspicacia «Mitrídates», núm. 1; Esd 1:7, 8.
+sources:
+- it-mitridates
+- esdras-1
+links:
+- title: 'Perspicacia: «Mitrídates»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Mitr%C3%ADdates/
+  type: perspicacia
+relations:
+- type: tie
+  person: ciro
+  word: master
+  inferred: false
+  sources:
+  - esdras-1
+  - it-mitridates
+  reason: 'Esd 1:8: Ciro hace que su tesorero saque los utensilios; Perspicacia lo llama tesorero de Ciro.'
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified
+disambiguation: 'Mitrídates núm. 1 de Perspicacia: el tesorero de Ciro que entregó los utensilios del templo (Esd 1:8), no
+  el firmante de la carta contra los judíos.'
+distinct_from:
+- mitridates-opositor-del-templo

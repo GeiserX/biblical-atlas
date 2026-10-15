@@ -1,0 +1,39 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: matanias-descendiente-de-pahat-moab
+name: Matanías
+names:
+- name: Matanías
+perspicacia: 1200002931#7
+summary: Israelita de los hijos de Pahat-Moab. Estaba casado con extranjeras y, cuando Esdras corrigió esos matrimonios (468-467
+  a.e.c.), las despidió junto con sus hijos.
+reason: Perspicacia «Matanías», núm. 7; Esd 10:30, 44.
+sources:
+- it-matanias
+- esdras-10
+links:
+- title: 'Perspicacia: «Matanías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Matan%C3%ADas/
+  type: perspicacia
+relations:
+- type: kin
+  person: pahat-moab
+  word: ancestor
+  sources:
+  - esdras-10
+  - it-matanias
+  reason: Esd 10:30 lo pone entre los hijos de Pahat-Moab; Perspicacia «Matanías», núm. 7.
+  inferred: false
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified
+disambiguation: El de los hijos de Pahat-Moab de Esd 10:30; no los demás Matanías que registra Perspicacia.
+distinct_from:
+- matanias-antepasado-de-jahaziel
+- matanias-descendiente-de-bani
+- matanias-descendiente-de-elam
+- matanias-descendiente-de-zatu
+- matanias-hijo-de-heman
+- matanias-hijo-de-mica
+- matanias-levita-de-ezequias
+- sedequias

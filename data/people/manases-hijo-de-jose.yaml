@@ -7,6 +7,8 @@ perspicacia: 1200002882#1
 disambiguation: Manasés hijo de José, de quien viene la tribu; no el rey Manasés de Judá.
 distinct_from:
 - manases-de-juda
+- manases-descendiente-de-hasum
+- manases-descendiente-de-pahat-moab
 summary: Primogénito de José y Asenat, nacido en Egipto. Jacob lo adoptó como hijo suyo, pero al bendecirlo dio la preferencia
   a su hermano menor, Efraín. De él viene la tribu de Manasés.
 reason: Perspicacia «Manasés», núm. 1; Gé 41:50, 51.
@@ -43,8 +45,9 @@ relations:
   - numeros-26
   - numeros-32
   - josue-17
+  - hebreos-11
   reason: Gé 41:50, 51.
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-14'
   status: verified
 - type: kin
   person: asenat
@@ -90,5 +93,5 @@ relations:
   reason: 'Gé 48:5: Jacob, padre de José, lo declara hijo suyo, como a Rubén y Simeón.'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-14'
 status: verified

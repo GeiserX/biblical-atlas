@@ -27,6 +27,7 @@ sources:
 - 1-reyes-21
 - 2-reyes-1
 - 2-reyes-2
+- santiago-5
 - 2-cronicas-21
 links:
 - title: 'Perspicacia: «Elías»'
@@ -77,7 +78,9 @@ relations:
   checked_on: '2026-09-30'
   status: verified
 perspicacia: 1200001307#1
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified
 distinct_from:
 - elias-hijo-de-jeroham
+- elias-descendiente-de-elam
+- elias-descendiente-de-harim

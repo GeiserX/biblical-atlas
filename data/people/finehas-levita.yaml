@@ -1,0 +1,21 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: finehas-levita
+name: Finehás
+names:
+- name: Finehás
+perspicacia: 1200003472#3
+disambiguation: El padre del Eleazar de Esd 8:33, núm. 3 de Perspicacia; no el nieto de Aarón ni el hijo de Elí.
+distinct_from:
+- finehas-hijo-de-eleazar
+- finehas-hijo-de-eli
+summary: Levita cuyo hijo Eleazar ayudó a contar y pesar los tesoros que Esdras llevó al templo en 468 a.e.c.
+reason: Perspicacia «Finehás», núm. 3; Esd 8:33, 34.
+sources:
+- it-finehas
+- esdras-8
+links:
+- title: 'Perspicacia: «Finehás»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Fineh%C3%A1s/
+  type: perspicacia
+checked_on: '2026-10-13'
+status: verified

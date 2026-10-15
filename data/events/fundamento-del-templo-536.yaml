@@ -16,9 +16,13 @@ places:
 people:
 - zorobabel
 - josue-sumo-sacerdote
+- jesua-supervisor-del-templo
+- cadmiel
+- sesbazar
 passages:
 - Esd 3:8-13
 - Zac 4:9, 10
+- Esd 5:16
 summary: En el segundo mes del segundo año tras volver, se colocaron los cimientos del templo entre cantos de alabanza.
   Algunos ancianos que habían visto el templo anterior lloraron.
 reason: 'Perspicacia «Zorobabel»: la obra empezó en el segundo mes (ziv o iyar) de 536; estudio 3, tabla de sucesos; Esd
@@ -29,6 +33,10 @@ sources:
 - esdras-3
 - zacarias-4
 - it-plomada
+- it-jesua
+- it-qadmiel
+- esdras-5
+- it-sesbazar
 links:
 - title: 'Perspicacia: «Zorobabel»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zorobabel/
@@ -36,5 +44,8 @@ links:
 - title: Esdras 3 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/esdras/3/
   type: bible
-checked_on: '2026-09-29'
+narrative_order:
+  series: esdras
+  order: 3008
+checked_on: '2026-10-13'
 status: verified

@@ -1,0 +1,45 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: pablo-deja-su-capa-en-troas
+title: Pablo deja su capa y sus rollos en Troas
+date:
+  from: 61
+  to: 65
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'dentro de c. 61-65 e.c. (tiempo narrativo: orden incierto, fecha aproximada)'
+narrative_order:
+  series: hechos
+  order: 2852
+places:
+- troas
+people:
+- pablo
+- carpo
+present:
+- pablo
+- carpo
+passages:
+- 2Ti 4:13
+summary: En una visita a Troas, probablemente tras salir libre en 61, Pablo deja en casa de Carpo su capa, unos rollos y sobre
+  todo unos pergaminos. Desde la cárcel pedirá a Timoteo que se los lleve.
+reason: '2Ti 4:13. Perspicacia «Troas»: la visita fue probablemente tras la liberación de 61, porque no pediría las cosas
+  nueve años después. La nota de estudio que cierra Hechos cuenta Troas entre sus visitas probables. Antes del encierro de
+  c. 65.'
+sources:
+- 2-timoteo-4
+- it-troas
+- it-carpo
+- nota-hechos-28
+links:
+- title: 2 Timoteo 4 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-timoteo/4/
+  type: bible
+- title: 'Perspicacia: «Troas»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Troas/
+  type: perspicacia
+note: Orden 2852 de la serie hechos, tras pablo-escribe-1-timoteo (2850) y antes del segundo encierro (2855). Ninguna fuente
+  ordena esta visita frente a Nicópolis o Mileto.
+checked_on: '2026-10-13'
+status: pending

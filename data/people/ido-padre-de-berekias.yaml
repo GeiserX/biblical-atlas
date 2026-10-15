@@ -16,6 +16,8 @@ sources:
 - it-ido
 - zacarias-1
 - it-berekias
+- esdras-5
+- esdras-6
 links:
 - title: 'Perspicacia: «Idó»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Id%C3%B3/
@@ -30,3 +32,4 @@ distinct_from:
 - ido-hijo-de-joa
 - ido-hijo-de-zacarias
 - ido-hombre-de-visiones
+- ido-de-casifia

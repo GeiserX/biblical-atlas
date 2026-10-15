@@ -1,0 +1,29 @@
+# biblical-atlas: fuentes de la cobertura de hebreos. Esquema en docs/investigacion/README.md.
+it-mediador:
+  title: Mediador
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Mediador/
+  level: 1
+  published: null
+  checked_on: '2026-10-14'
+w06-contenido-del-arca:
+  title: Preguntas de los lectores
+  work: La Atalaya (15 de enero de 2006)
+  url: https://www.jw.org/es/biblioteca/revistas/w20060115/Preguntas-de-los-lectores/
+  level: 1
+  published: 2006
+  checked_on: '2026-10-14'
+it-sierra:
+  title: Sierra
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sierra/
+  level: 1
+  published: null
+  checked_on: '2026-10-14'
+it-hospitalidad:
+  title: Hospitalidad
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hospitalidad/
+  level: 1
+  published: null
+  checked_on: '2026-10-14'

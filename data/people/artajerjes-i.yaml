@@ -21,6 +21,8 @@ sources:
 - it-artajerjes
 - it-persia
 - si-3
+- esdras-7
+- esdras-8
 links:
 - title: 'Perspicacia: «Artajerjes»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Artajerjes/
@@ -48,7 +50,8 @@ relations:
   checked_on: '2026-09-29'
   office: king
   status: verified
-checked_on: '2026-09-28'
+perspicacia: 1200000389#2
+checked_on: '2026-10-13'
 status: verified
 alternatives:
 - date:
@@ -63,3 +66,5 @@ alternatives:
   - it-artajerjes
   - it-persia
   note: La mayoría de las obras de consulta ponen su subida al trono en 465; Perspicacia da razones para 475.
+distinct_from:
+- artajerjes-bardiya-o-gaumata

@@ -1,0 +1,51 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jesaya-merarita
+name: Jesayá
+names:
+- name: Jesayá
+perspicacia: 1200002438#5
+disambiguation: El levita merarita de Esd 8:19, núm. 5 de Perspicacia; no el hijo de Atalía de Esd 8:7 ni los otros Jesayá.
+distinct_from:
+- jesaya-descendiente-de-eliezer
+- jesaya-hijo-de-atalia
+- jesaya-hijo-de-hananias
+- jesaya-hijo-de-jedutun
+summary: Levita de la familia de Merarí que volvió de Babilonia con Esdras en 468 a.e.c. Lo trajeron de Casifía con Hasabías.
+reason: Perspicacia «Jesayá», núm. 5; Esd 8:1, 19.
+sources:
+- it-jesaya
+- esdras-8
+links:
+- title: 'Perspicacia: «Jesayá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jesay%C3%A1/
+  type: perspicacia
+relations:
+- type: kin
+  person: merari
+  word: ancestor
+  inferred: false
+  sources:
+  - esdras-8
+  - it-jesaya
+  reason: 'Esd 8:19: Jesayá era de los meraritas.'
+  checked_on: '2026-10-13'
+  status: verified
+- type: accompanies
+  person: esdras
+  date:
+    from: -467
+    to: -467
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 468 a.e.c.
+  inferred: false
+  sources:
+  - esdras-8
+  - it-jesaya
+  reason: 'Esd 8:19: lo trajeron con Hasabías y sus familias para el viaje de Esdras.'
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified

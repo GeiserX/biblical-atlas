@@ -1,0 +1,42 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: apfia
+name: Apfia
+names:
+- name: Apfia
+perspicacia: '1200000313'
+date:
+  from: 60
+  to: 61
+  precision: range
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 60-61 e.c. (fecha de la carta a Filemón)
+summary: Cristiana a la que Pablo saluda como «nuestra hermana» al escribir a Filemón. Perspicacia cree que era de la casa
+  de Filemón y ve posible que fuera su esposa.
+reason: Perspicacia «Apfia» y «Filemón», párr. 2; Flm 2. La fecha es la de la carta, hacia 60-61 según la Tabla de los libros.
+sources:
+- it-apfia
+- it-filemon
+- filemon-1
+- tnm-tabla
+links:
+- title: 'Perspicacia: «Apfia»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Apfia/
+  type: perspicacia
+- title: Filemón 1 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Filem%C3%B3n/1/
+  type: bible
+relations:
+- type: lived_in
+  place: colosas
+  inferred: true
+  sources:
+  - it-filemon
+  - filemon-1
+  reason: Flm 2 la nombra junto a la congregación que se reunía en casa de Filemón; Perspicacia «Filemón» la cuenta de esa
+    casa, que sitúa en Colosas.
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified

@@ -1,0 +1,51 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: pablo-escribe-hebreos
+title: Pablo escribe en Italia la carta a los Hebreos
+date:
+  from: 61
+  to: 61
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 61 e.c.
+narrative_order:
+  series: hechos
+  order: 2841
+places:
+- roma
+- judea
+people:
+- pablo
+- timoteo
+present:
+- pablo
+type: writing
+roles:
+  pablo: wrote
+passages:
+- Heb 13:18, 19
+- Heb 13:22-25
+summary: Desde Italia, probablemente Roma, Pablo escribe a los cristianos hebreos de Judea que Cristo supera a los ángeles,
+  a Moisés y al sacerdocio levítico. Anuncia que Timoteo está libre y espera visitarlos.
+reason: 'Tabla de los libros: Pablo, Roma, c. 61. Perspicacia «Hebreos» e «Italia»: escrita en Italia al final del primer
+  encierro o recién liberado; la libertad de Timoteo (Heb 13:23) la fecha en 61.'
+sources:
+- hebreos-13
+- tnm-tabla
+- it-hebreos
+- it-italia
+- it-timoteo
+- it-pablo
+links:
+- title: Hebreos 13 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/hebreos/13/
+  type: bible
+- title: 'Perspicacia: «Hebreos, Carta a los»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hebreos-Carta-a-los/
+  type: perspicacia
+note: 'Orden 2841 de la serie hechos: tras Filipenses (2839, 2840), porque Perspicacia «Timoteo» pone su encierro entre las
+  dos cartas, y antes de Creta (2842), ya libre Pablo. Ninguna fuente la ordena frente a pablo-queda-libre.'
+search: Pablo escribe carta Hebreos Italia Roma
+checked_on: '2026-10-14'
+status: verified

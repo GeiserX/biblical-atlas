@@ -26,9 +26,10 @@ relations:
   reason: 1Cr 25:3, 9 lo cuenta entre los hijos de Jedutún.
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified
 distinct_from:
 - guedalias
 - guedalias-hijo-de-amarias
 - guedalias-hijo-de-pasjur
+- guedalias-de-la-casa-de-jesua

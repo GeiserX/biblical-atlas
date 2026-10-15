@@ -12,6 +12,7 @@ reason: Perspicacia «Merayot», núm. 1; 1Cr 6:6, 7, 52.
 sources:
 - it-merayot
 - 1-cronicas-6
+- esdras-7
 links:
 - title: 'Perspicacia: «Merayot»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Merayot/
@@ -23,8 +24,9 @@ relations:
   inferred: false
   sources:
   - 1-cronicas-6
+  - esdras-7
   reason: 1Cr 6:6 lo da como hijo de Zerahías.
-  checked_on: '2026-10-12'
+  checked_on: '2026-10-13'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified

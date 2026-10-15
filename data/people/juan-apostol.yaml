@@ -63,6 +63,9 @@ sources:
 - galatas-2
 - 2-juan-1
 - si-2-juan
+- 1-juan-1
+- si-1-juan
+- 1-juan-2
 distinct_from:
 - juan-el-bautista
 - juan-marcos
@@ -124,6 +127,7 @@ relations:
   - tnm-tabla
   - 2-juan-1
   - si-2-juan
+  - 1-juan-1
   reason: La Tabla pone sus cartas en «Éfeso o cerca» y el libro «Testimonio completo» dice que, según se cree, se fue allí
     al salir libre.
   checked_on: '2026-10-14'

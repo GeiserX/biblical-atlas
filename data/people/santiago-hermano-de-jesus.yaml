@@ -34,6 +34,8 @@ sources:
 - hch-21
 - 1-corintios-9
 - galatas-2
+- santiago-1
+- si-santiago
 distinct_from:
 - santiago-hijo-de-zebedeo
 - santiago-hijo-de-alfeo
@@ -136,5 +138,5 @@ history:
 - date: '2026-09-29'
   change: La razón cita de dónde sale que estaba casado.
   source: 1-corintios-9
-checked_on: '2026-09-29'
+checked_on: '2026-10-14'
 status: verified

@@ -1,0 +1,41 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: figelo
+name: Figelo
+names:
+- name: Figelo
+perspicacia: '1200003478'
+date:
+  from: 65
+  to: 65
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 65 e.c.
+summary: Cristiano de la provincia de Asia que, con Hermógenes y otros de esa provincia, dejó de apoyar a Pablo cuando estaba
+  preso en Roma por segunda vez.
+reason: Perspicacia «Figelo» y «Asia»; 2Ti 1:15. La Tabla de los libros fecha 2 Timoteo hacia 65.
+sources:
+- it-figelo
+- it-asia
+- 2-timoteo-1
+- tnm-tabla
+links:
+- title: 'Perspicacia: «Figelo»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Figelo/
+  type: perspicacia
+- title: 2 Timoteo 1 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-timoteo/1/
+  type: bible
+relations:
+- type: lived_in
+  place: asia
+  sources:
+  - 2-timoteo-1
+  - it-figelo
+  reason: 2Ti 1:15 lo cuenta entre los hombres de la provincia de Asia que se apartaron de Pablo.
+  inferred: false
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified

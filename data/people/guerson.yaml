@@ -71,7 +71,8 @@ relations:
   checked_on: '2026-10-12'
   status: verified
 disambiguation: Guersón hijo de Leví, llamado también Guersom; no Guersom, el primogénito de Moisés.
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified
 distinct_from:
 - guersom-hijo-de-moises
+- guersom-descendiente-de-finehas

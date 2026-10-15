@@ -1,0 +1,23 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ticva-padre-de-jahzeya
+name: Ticvá
+names:
+- name: Ticvá
+- name: Tiqvá
+  note: Grafía de Perspicacia.
+perspicacia: 1200004403#2
+summary: Padre del Jahzeya que, con Jonatán, se opuso a lo acordado sobre las esposas extranjeras en los días de Esdras.
+reason: Perspicacia «Tiqvá», núm. 2; Esd 10:15.
+sources:
+- it-tiqva
+- esdras-10
+links:
+- title: 'Perspicacia: «Tiqvá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Tiqv%C3%A1/
+  type: perspicacia
+relations: []
+checked_on: '2026-10-13'
+status: verified
+disambiguation: El padre de Jahzeya (Esd 10:15); no el suegro de Huldá.
+distinct_from:
+- ticva-hijo-de-harhas

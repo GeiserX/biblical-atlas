@@ -1,0 +1,18 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: soferet
+name: Soféret
+names:
+- name: Soféret
+perspicacia: '1200004185'
+summary: Antepasado de una de las familias descendientes de siervos de Salomón; esa familia volvió del destierro con el grupo
+  de Zorobabel. Con artículo, su nombre quizá significa «el escriba».
+reason: Perspicacia «Soféret»; Esd 2:55.
+sources:
+- it-soferet
+- esdras-2
+links:
+- title: 'Perspicacia: «Soféret»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sof%C3%A9ret/
+  type: perspicacia
+checked_on: '2026-10-13'
+status: verified

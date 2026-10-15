@@ -1,0 +1,31 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: eliezer-levita-de-tiempos-de-esdras
+name: Eliezer
+names:
+- name: Eliezer
+perspicacia: 1200001304#9
+summary: Levita de los días de Esdras. Estaba casado con extranjeras y, cuando se corrigieron esos matrimonios (468-467 a.e.c.),
+  las despidió junto con sus hijos.
+reason: Perspicacia «Eliezer», núm. 9; Esd 10:23, 44.
+sources:
+- it-eliezer
+- esdras-10
+links:
+- title: 'Perspicacia: «Eliezer»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Eliezer/
+  type: perspicacia
+relations: []
+checked_on: '2026-10-13'
+status: verified
+disambiguation: El levita de Esd 10:23, de los días de Esdras; no los demás Eliezer que registra Perspicacia.
+distinct_from:
+- eliezer-de-damasco
+- eliezer-de-la-casa-de-jesua
+- eliezer-descendiente-de-harim
+- eliezer-enviado-a-casifia
+- eliezer-hijo-de-beker
+- eliezer-hijo-de-dodavahu
+- eliezer-hijo-de-jorim
+- eliezer-hijo-de-moises
+- eliezer-hijo-de-zicri
+- eliezer-trompetista

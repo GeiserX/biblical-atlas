@@ -25,6 +25,7 @@ distinct_from:
 - jose-hijo-de-jonam
 - jose-hijo-de-matatias
 - jose-hijo-de-asaf
+- jose-descendiente-de-binui
 summary: Primer hijo de Jacob y Raquel. Sus medio hermanos lo vendieron como esclavo a los 17 años. En Egipto resistió la
   tentación, estuvo preso y Faraón lo hizo segundo gobernante. Así salvó a su familia del hambre.
 reason: 'Perspicacia «José», núm. 1, párr. 2, 5, 8, 11, 17 y 40. El estudio 3: nace en 1767, lo venden en 1750 y muere en
@@ -56,6 +57,7 @@ sources:
 - it-bernabe
 - 1-cronicas-2
 - 1-cronicas-5
+- hebreos-11
 links:
 - title: 'Perspicacia: «José»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jos%C3%A9/
@@ -213,5 +215,5 @@ history:
 - date: '2026-09-29'
   change: El nombre egipcio pasa a escribirse Zafenat-Panéah, como en el texto de la TNM de Gé 41:45.
   source: genesis-41
-checked_on: '2026-10-12'
+checked_on: '2026-10-14'
 status: verified

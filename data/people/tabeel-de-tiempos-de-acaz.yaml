@@ -16,5 +16,7 @@ links:
 - title: 'Perspicacia: «Tabeel»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Tabeel/
   type: perspicacia
-checked_on: '2026-09-30'
+checked_on: '2026-10-13'
 status: verified
+distinct_from:
+- tabeel-opositor-del-templo

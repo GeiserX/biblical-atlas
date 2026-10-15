@@ -1,0 +1,49 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: simei-descendiente-de-binui
+name: Simeí
+names:
+- name: Simeí
+perspicacia: 1200004047#19
+summary: Israelita de los hijos de Binuí. Estaba casado con extranjeras y, cuando Esdras corrigió esos matrimonios (468-467
+  a.e.c.), las despidió junto con sus hijos.
+reason: Perspicacia «Simeí», núm. 19; Esd 10:38, 44.
+sources:
+- it-simei
+- esdras-10
+links:
+- title: 'Perspicacia: «Simeí»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sime%C3%AD/
+  type: perspicacia
+relations:
+- type: kin
+  person: binui-cabeza-de-familia
+  word: ancestor
+  sources:
+  - esdras-10
+  - it-simei
+  reason: Esd 10:38 lo pone entre los hijos de Binuí; Perspicacia «Simeí», núm. 19.
+  inferred: false
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified
+disambiguation: El de los hijos de Binuí de Esd 10:38; no los demás Simeí que registra Perspicacia.
+distinct_from:
+- sama-hijo-de-jese
+- simei-descendiente-de-hasum
+- simei-descendiente-de-ladan
+- simei-el-ramatita
+- simei-hermano-de-conanias
+- simei-hijo-de-ela
+- simei-hijo-de-gog
+- simei-hijo-de-guera
+- simei-hijo-de-guerson
+- simei-hijo-de-jahat
+- simei-hijo-de-jedutun
+- simei-hijo-de-libni
+- simei-hijo-de-pedaya
+- simei-hijo-de-zacur
+- simei-levita-de-ezequias
+- simei-levita-de-tiempos-de-esdras
+- simei-padre-de-jaquim
+- simei-partidario-de-david

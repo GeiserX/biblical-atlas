@@ -1,0 +1,35 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: inauguracion-del-segundo-templo
+title: Se inaugura el templo reconstruido
+date:
+  from: -514
+  to: -514
+  precision: year
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'c. 515 a.e.c. (tiempo narrativo: tras terminar el templo el 3 de adar)'
+  note: 'Límites: el templo terminado el 3 de adar de 515 (Esd 6:15; Perspicacia «Templo») y la Pascua del 14 del primer mes
+    que sigue (Esd 6:19).'
+narrative_order:
+  series: esdras
+  order: 6016
+places:
+- jerusalen
+people: []
+passages:
+- Esd 6:16-18
+summary: Israelitas, sacerdotes, levitas y demás repatriados inauguraron con alegría la casa de Dios con cien toros, doscientos
+  carneros, cuatrocientos corderos y doce machos cabríos por las tribus, y organizaron los turnos de sacerdotes y levitas.
+reason: Perspicacia «Templo», apartado sobre el templo de Zorobabel, pone la inauguración tras el 3 de adar de 515; «Inauguración»
+  cita Esd 6:16, 17. El texto no nombra a nadie.
+sources:
+- esdras-6
+- it-templo
+- it-inauguracion
+links:
+- title: 'Perspicacia: «Inauguración»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Inauguraci%C3%B3n/
+  type: perspicacia
+checked_on: '2026-10-13'
+status: verified

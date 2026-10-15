@@ -1,0 +1,47 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: claudia
+name: Claudia
+names:
+- name: Claudia
+perspicacia: '1200000986'
+date:
+  from: 65
+  to: 65
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 65 e.c.
+summary: Cristiana que estaba en Roma y saluda a Timoteo al final de la última carta de Pablo (2Ti 4:21).
+reason: Perspicacia «Claudia»; 2Ti 4:21. Fecha de la carta, c. 65 (Tabla de los libros).
+sources:
+- it-claudia
+- 2-timoteo-4
+- tnm-tabla
+links:
+- title: 'Perspicacia: «Claudia»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Claudia/
+  type: perspicacia
+- title: 2 Timoteo 4 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-timoteo/4/
+  type: bible
+relations:
+- type: lived_in
+  place: roma
+  date:
+    from: 65
+    to: 65
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 65 e.c.
+  inferred: true
+  sources:
+  - it-claudia
+  - 2-timoteo-4
+  reason: Perspicacia «Claudia» la llama cristiana de Roma; saluda junto a Pablo, preso allí (2Ti 4:21).
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified

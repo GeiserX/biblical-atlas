@@ -1,0 +1,64 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: secanias-hijo-de-jahaziel
+name: Secanías
+names:
+- name: Secanías
+perspicacia: 1200003977#5
+disambiguation: El hijo de Jahaziel que volvió con Esdras (Esd 8:5), núm. 5 de Perspicacia; no los otros Secanías que numera.
+distinct_from:
+- secanias-de-tiempos-de-david
+- secanias-descendiente-de-paros
+- secanias-hijo-de-abdias
+- secanias-ayudante-de-core
+- secanias-hijo-de-jehiel
+summary: Hijo de Jahaziel y cabeza de la casa de Zatú. Volvió con Esdras en 468 a.e.c. con 300 varones.
+reason: Perspicacia «Secanías», núm. 5; Esd 8:1, 5.
+sources:
+- it-secanias
+- esdras-8
+- it-zatu
+links:
+- title: 'Perspicacia: «Secanías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Secan%C3%ADas/
+  type: perspicacia
+relations:
+- type: kin
+  person: jahaziel-padre-de-secanias
+  word: father
+  inferred: false
+  sources:
+  - esdras-8
+  - it-secanias
+  reason: 'Esd 8:5: Secanías hijo de Jahaziel.'
+  checked_on: '2026-10-13'
+  status: verified
+- type: kin
+  person: zatu
+  word: ancestor
+  inferred: false
+  sources:
+  - esdras-8
+  - it-secanias
+  - it-zatu
+  reason: 'Esd 8:5: de los hijos de Zatú; Perspicacia «Secanías», núm. 5, lo hace cabeza de esa casa.'
+  checked_on: '2026-10-13'
+  status: verified
+- type: accompanies
+  person: esdras
+  date:
+    from: -467
+    to: -467
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 468 a.e.c.
+  inferred: false
+  sources:
+  - esdras-8
+  - it-secanias
+  reason: 'Esd 8:1, 5: subió con Esdras con 300 varones.'
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified

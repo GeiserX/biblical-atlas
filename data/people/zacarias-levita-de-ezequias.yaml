@@ -36,6 +36,10 @@ distinct_from:
 - zeker
 - zacarias-levita-de-josias
 - zacarias-sacerdote-de-josias
+- zacarias-descendiente-de-paros
+- zacarias-enviado-a-casifia
+- zacarias-hijo-de-bebai
+- zacarias-descendiente-de-elam
 relations:
 - type: kin
   person: asaf-hijo-de-berekias

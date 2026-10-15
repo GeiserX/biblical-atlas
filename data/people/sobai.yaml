@@ -1,0 +1,17 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: sobai
+name: Sobái
+names:
+- name: Sobái
+perspicacia: '1200004076'
+summary: Levita de quien descendía una familia de porteros del templo que volvió del destierro.
+reason: Perspicacia «Sobai»; Esd 2:42.
+sources:
+- it-sobai
+- esdras-2
+links:
+- title: 'Perspicacia: «Sobai»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sobai/
+  type: perspicacia
+checked_on: '2026-10-13'
+status: verified

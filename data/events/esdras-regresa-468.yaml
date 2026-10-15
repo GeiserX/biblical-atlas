@@ -13,18 +13,50 @@ date:
     month: ab
     day: 1
 places:
-- babilonia
-- rio-ahava
 - jerusalen
 people:
 - esdras
+- guersom-descendiente-de-finehas
+- daniel-descendiente-de-itamar
+- hatus-descendiente-de-david
+- zacarias-descendiente-de-paros
+- elieho-enai-hijo-de-zerahias
+- secanias-hijo-de-jahaziel
+- ebed-hijo-de-jonatan
+- jesaya-hijo-de-atalia
+- zebadias-hijo-de-miguel
+- abdias-hijo-de-jehiel
+- selomit-hijo-de-josifias
+- zacarias-hijo-de-bebai
+- johanan-hijo-de-hacatan
+- elifelet-descendiente-de-adonicam
+- jeiel-descendiente-de-adonicam
+- semaya-descendiente-de-adonicam
+- utai-descendiente-de-bigvai
+- zabbud
+- eliezer-enviado-a-casifia
+- ariel-enviado-a-casifia
+- semaya-enviado-a-casifia
+- elnatan-primer-jefe
+- elnatan-segundo-jefe
+- jarib-enviado-a-casifia
+- natan-enviado-a-casifia
+- zacarias-enviado-a-casifia
+- mesulam-enviado-a-casifia
+- joiarib-maestro
+- elnatan-maestro
+- serebias-descendiente-de-mahli
+- hasabias-merarita
+- jesaya-merarita
+- hasabias-jefe-de-los-sacerdotes
+- serebias-jefe-de-los-sacerdotes
 passages:
-- Esd 7:6-9
-- Esd 8:15-36
-summary: Con una carta de Artajerjes, Esdras reunió a los viajeros junto al río Ahavá, ayunó y partió sin escolta con los
-  donativos. Llegó a Jerusalén cuatro meses después de salir de Babilonia.
-reason: 'Estudio 3, tabla de sucesos (468); Perspicacia «Esdras» y «Artajerjes», núm. 2. Esd 7:9: salió el 1 de nisán y llegó
-  el 1 del quinto mes; Esd 8:31, del Ahavá el día 12.'
+- Esd 7:8, 9
+- Esd 8:32
+summary: El día 1 del quinto mes del año séptimo de Artajerjes, Esdras y su grupo llegan a Jerusalén y descansan allí tres
+  días antes de entregar en el templo lo que traen.
+reason: 'Estudio 3, tabla de sucesos (468); Perspicacia «Esdras», núm. 1. Esd 7:8, 9 y 8:32: llegan el día 1 del quinto mes,
+  en el año séptimo de Artajerjes, y se quedan tres días.'
 sources:
 - si-3
 - it-esdras
@@ -38,5 +70,27 @@ links:
 - title: Esdras 7 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/esdras/7/
   type: bible
-checked_on: '2026-09-28'
+history:
+- date: '2026-10-13'
+  change: 'Pasa a ser solo la llegada a Jerusalén: la salida de Babilonia y lo que ocurre en el Ahavá tienen sus propios sucesos,
+    y la fecha ya era la de la llegada.'
+  source: esdras-8
+- date: '2026-10-13'
+  change: Añade a los que llegaron con Esdras según Esd 8:1-30.
+  source: esdras-8
+- date: '2026-10-13'
+  change: Los demás versículos pasan a los sucesos de la salida, del Ahavá y de la entrega en el templo; la salida del Ahavá
+    (Esd 8:31) queda en el viaje regreso-de-esdras.
+  source: esdras-8
+- date: '2026-10-14'
+  change: El resumen cuenta solo la llegada (Esd 7:8, 9; 8:32); la salida del Ahavá el día 12 del primer mes queda en el viaje
+    regreso-de-esdras.
+  source: esdras-8
+- date: '2026-10-13'
+  change: La razón sigue al nuevo alcance del suceso.
+  source: esdras-8
+narrative_order:
+  series: esdras
+  order: 8032
+checked_on: '2026-10-13'
 status: verified
