@@ -123,10 +123,10 @@ function pintar() {
     <p class="be-muted lectura-nota">El texto y las notas de estudio se leen en jw.org. Aquí van el mapa, la fecha y el orden.</p>
     <div class="lectura-controles">
       <label class="interruptor"><input type="checkbox" data-lectura-sigue ${L.sigue ? 'checked' : ''}> El mapa sigue la lectura</label>
-      <label class="interruptor"><input type="checkbox" data-lectura-foco ${foco ? 'checked' : ''}> Solo lectura y mapa</label>
       <label class="interruptor"><input type="checkbox" data-lectura-leido ${leido ? 'checked' : ''}> Leído</label>
       ${BE.notes?.pencilForChapter(lib, cap) || ''}
     </div>
+    <div class="lectura-foco"><label class="interruptor"><input type="checkbox" data-lectura-foco ${foco ? 'checked' : ''}> Solo lectura y mapa</label></div>
     ${foco ? '<p class="be-muted lectura-nota">Los paneles de contexto están ocultos. El mapa conserva los demás lugares y rutas.</p>' : ''}
     ${ps.length ? `<div class="lectura-fecha be-note${anclada ? '' : ' be-note--uncertain'}">${anclada && ps.some((x) => x.narrativa) ? 'Orden cierto; fechas aproximadas salvo donde la fuente las da.' : anclada ? 'Cada pasaje con su fecha según la fuente.' : 'Orden cierto; sin fecha exacta: tiempo narrativo.'}</div>
     <div class="lectura-acciones"><button type="button" class="be-btn be-btn--sm" data-lectura-play>${L.play ? 'Pausar' : 'Seguir en el mapa ▶'}</button>
