@@ -3,6 +3,9 @@ id: rio-farpar
 name: Río Farpar
 names:
 - name: Río Farpar
+- name: Nahr el-Aʽwaj
+  modern: true
+  note: Río con el que Perspicacia asocia por lo general el Farpar; otros prefieren el Taura, afluente del Barada.
 type: river
 lat: 33.31362
 lon: 36.055535

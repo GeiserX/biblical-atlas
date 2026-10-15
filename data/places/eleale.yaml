@@ -3,6 +3,9 @@ id: eleale
 name: Elealé
 names:
 - name: Elealé
+- name: el-ʽAl
+  modern: true
+  note: Promontorio donde Perspicacia suele situar la ciudad, unos 3 km al nordeste de Hesbón.
 type: city
 lat: 31.819308
 lon: 35.828315

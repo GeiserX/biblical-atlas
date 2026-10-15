@@ -3,6 +3,9 @@ id: zora
 name: Zorá
 names:
 - name: Zorá
+- name: Sarʽah (Tel Zorʽa)
+  modern: true
+  note: Sitio con el que Perspicacia identifica la ciudad natal de Sansón, unos 25 km al oeste de Jerusalén.
 type: city
 lat: 31.773992
 lon: 34.985289

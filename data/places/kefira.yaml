@@ -3,6 +3,9 @@ id: kefira
 name: Kefirá
 names:
 - name: Kefirá
+- name: Khirbet Kefireh
+  modern: true
+  note: Ruinas con las que Perspicacia identifica la ciudad sin dudas, al OSO de Gabaón.
 type: city
 lat: 31.8309
 lon: 35.106769

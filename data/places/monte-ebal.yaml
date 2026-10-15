@@ -4,6 +4,9 @@ name: Monte Ebal
 names:
 - name: Monte Ebal
   note: No es Ebal, el hijo del horeo Sobal, que tiene ficha de persona.
+- name: Jebel Eslamiyeh (Har ʽEval)
+  modern: true
+  note: Monte con el que Perspicacia identifica hoy el Ebal, al noreste del Guerizim, con Nablus en el valle que los separa.
 type: mountain
 lat: 32.234
 lon: 35.2733

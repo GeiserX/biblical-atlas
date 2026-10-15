@@ -7,6 +7,9 @@ names:
   note: Nombre de la ciudad levita en Jos 21:32; Perspicacia «Hamot-dor» dice que al parecer es Hammat.
 - name: Hamón
   note: Al parecer, la misma ciudad (1Cr 6:76).
+- name: Hammam Tabariyeh (Hame Teveriya)
+  modern: true
+  note: Fuentes termales al sur de Tiberíades con las que Perspicacia suele relacionar la ciudad de Neftalí.
 type: city
 lat: 32.766368
 lon: 35.550553

@@ -3,6 +3,9 @@ id: atarot
 name: Atarot
 names:
 - name: Atarot
+- name: Khirbet ʽAttarus
+  modern: true
+  note: Ruinas donde, según la opinión general que recoge Perspicacia, estuvo la ciudad, unos 13 km al noroeste de Dibón.
 type: city
 lat: 31.5753
 lon: 35.665938

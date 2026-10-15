@@ -4,6 +4,9 @@ name: Belén
 names:
 - name: Belén
   note: Belén de Zabulón, para distinguirla de la de Judá.
+- name: Beit Lahm (Bet Lehem Ha-Gelilit)
+  modern: true
+  note: Pueblo con el que Perspicacia identifica la Belén de Zabulón, unos 11 km al oeste-noroeste de Nazaret.
 type: city
 lat: 32.734812
 lon: 35.185563

@@ -5,6 +5,9 @@ names:
 - name: Neftóah
 - name: Manantial de las aguas de Neftóah
   note: Así lo llaman Jos 15:9 y 18:15.
+- name: Lifta (ʽEn Neftoah)
+  modern: true
+  note: Manantial de Lifta con el que Perspicacia suele identificar Neftóah, al oestenoroeste del monte del templo.
 type: lake
 lat: 31.794392
 lon: 35.196606

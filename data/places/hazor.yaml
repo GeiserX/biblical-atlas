@@ -3,6 +3,9 @@ id: hazor
 name: Hazor
 names:
 - name: Hazor
+- name: Tell el-Qedah (Tel Hazor)
+  modern: true
+  note: Montículo con el que Perspicacia identifica la ciudad, unos 11 km al sursureste del lugar que se atribuye a Quedes.
 type: city
 lat: 33.018333
 lon: 35.569167

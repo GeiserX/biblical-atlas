@@ -4,6 +4,9 @@ name: Bet-Jesimot
 names:
 - name: Bet-Jesimot
   note: Significa «casa de las desolaciones» (Perspicacia).
+- name: Tell el-ʽAzeimeh
+  modern: true
+  note: Sitio con el que Perspicacia identifica la ciudad, junto al extremo nordeste del mar Muerto.
 type: city
 lat: 31.782551
 lon: 35.62125

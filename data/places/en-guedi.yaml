@@ -8,6 +8,10 @@ names:
 - name: Desierto de En-Guedí
   note: La zona desértica de riscos y cuevas que rodea la ciudad, donde se escondió David (1Sa 24:1; Perspicacia «En-guedí»,
     párr. 1 y 3).
+- name: Tell Jurn (Tel Goren)
+  modern: true
+  note: Sitio con el que Perspicacia identifica por lo general la ciudad, junto al pueblo actual de ʽEn Gedi, en la orilla
+    del mar Muerto.
 type: city
 lat: 31.45
 lon: 35.383333

@@ -3,6 +3,9 @@ id: bahurim
 name: Bahurim
 names:
 - name: Bahurim
+- name: Ras et-Tmim
+  modern: true
+  note: Sitio con el que Perspicacia identifica de ordinario el pueblo, a 2 km al nordeste del monte del Templo.
 type: city
 lat: 31.7912
 lon: 35.25694

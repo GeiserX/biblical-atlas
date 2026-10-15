@@ -5,6 +5,9 @@ names:
 - name: Ibleam
 - name: Bileam
   note: Al parecer, otra grafía de la ciudad (1Cr 6:70), según Perspicacia «Bileam».
+- name: Khirbet Belʽameh
+  modern: true
+  note: Sitio con el que Perspicacia identifica la ciudad, unos 18 km al sur-sureste de Meguidó.
 type: city
 lat: 32.4462
 lon: 35.292

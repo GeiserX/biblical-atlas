@@ -5,6 +5,9 @@ names:
 - name: Bene-Berac
 - name: Bene-beraq
   note: Grafía de Perspicacia.
+- name: Ibn Ibraq
+  modern: true
+  note: Sitio con el que Perspicacia identifica la ciudad, también llamado Kheiriyeh (Horvat Bene-beraq), al ESE de Tel Aviv-Yafo.
 type: city
 lat: 32.036675
 lon: 34.827669

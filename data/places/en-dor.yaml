@@ -3,6 +3,9 @@ id: en-dor
 name: En-Dor
 names:
 - name: En-Dor
+- name: Khirbet Safsafeh (Horvat Zafzafot)
+  modern: true
+  note: Sitio con el que Perspicacia suele identificar la ciudad, unos 11 km al sureste de Nazaret.
 type: city
 lat: 32.643614
 lon: 35.390222

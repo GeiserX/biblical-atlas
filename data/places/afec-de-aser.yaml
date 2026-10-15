@@ -8,6 +8,9 @@ names:
   note: Así la llama Jue 1:31 en la TNM.
 - name: Afiq
   note: Grafía de Perspicacia para el nombre de Jue 1:31.
+- name: Tell Kurdaneh (Tel Afeq)
+  modern: true
+  note: Sitio con el que Perspicacia identifica la ciudad, unos 8 km al SSE de Akkó.
 type: city
 lat: 32.8461
 lon: 35.1119

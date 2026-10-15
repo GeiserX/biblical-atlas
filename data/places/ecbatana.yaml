@@ -5,6 +5,9 @@ names:
 - name: Ecbátana
 - name: Acmeta
   note: Forma del texto masorético en Esd 6:2.
+- name: Hamadán
+  modern: true
+  note: Ciudad iraní actual que, según Perspicacia, ocupa el lugar de Ecbátana, al pie del monte Elvend.
 type: city
 lat: 34.8065
 lon: 48.516247

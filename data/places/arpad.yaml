@@ -3,6 +3,9 @@ id: arpad
 name: Arpad
 names:
 - name: Arpad
+- name: Tell Erfad (Tell Rifʽat)
+  modern: true
+  note: Montículo con el que Perspicacia identifica la ciudad, unos 30 km al nornoroeste de Alepo.
 type: city
 lat: 36.4725
 lon: 37.094722

@@ -5,6 +5,10 @@ names:
 - name: Socó
 - name: Socoh
   note: Otra grafía que da la nota de Jos 15:35.
+- name: Khirbet ʽAbbad (Horvat Sokho)
+  modern: true
+  note: Ruinas con las que Perspicacia identifica la Socó de la Sefelá; el nombre parece seguir en Khirbet Shuweikeh, algo
+    al este.
 type: city
 lat: 31.6822
 lon: 34.9749

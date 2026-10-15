@@ -3,6 +3,9 @@ id: hadid
 name: Hadid
 names:
 - name: Hadid
+- name: el-Haditheh (Tel Hadid)
+  modern: true
+  note: Aldea árabe abandonada con la que Perspicacia suele relacionar la ciudad, unos 5 km al estenoreste de Lod.
 type: city
 lat: 31.963319
 lon: 34.951764

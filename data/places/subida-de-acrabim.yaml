@@ -5,6 +5,9 @@ names:
 - name: Subida de Acrabim
 - name: Aqrabim
   note: Grafía de Perspicacia; quizá significa «escorpiones», por los que abundan allí o por las curvas del camino.
+- name: Naqb es-Safa (Maʽale ʽAqrabbim)
+  modern: true
+  note: Nombre actual del paso, según Perspicacia «Aqrabim».
 type: mountain
 lat: 30.906602
 lon: 35.131259

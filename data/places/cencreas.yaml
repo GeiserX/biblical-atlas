@@ -3,6 +3,9 @@ id: cencreas
 name: Cencreas
 names:
 - name: Cencreas
+- name: Kekhries
+  modern: true
+  note: Pueblo cerca del cual quedan ruinas de edificios y muelles del antiguo puerto, según Perspicacia «Cencreas».
 type: port
 lat: 37.88434
 lon: 22.99682

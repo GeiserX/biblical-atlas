@@ -7,6 +7,9 @@ names:
   note: Así la llama Jos 19:42; por lo general se considera la misma ciudad.
 - name: Saalbón
   note: Quizá otro nombre de la ciudad (2Sa 23:32), según Perspicacia.
+- name: Selbit (Tel Shaʽalvim)
+  modern: true
+  note: Aldea abandonada con la que Perspicacia identifica la ciudad; al parecer su nombre conserva el bíblico.
 type: city
 lat: 31.86981
 lon: 34.98714

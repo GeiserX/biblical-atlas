@@ -3,6 +3,9 @@ id: bozra
 name: Bozrá
 names:
 - name: Bozrá
+- name: Buseira
+  modern: true
+  note: Sitio actual con el que Perspicacia identifica la ciudad, unos 50 km al NNE de Petra.
 type: city
 lat: 30.745843
 lon: 35.603919

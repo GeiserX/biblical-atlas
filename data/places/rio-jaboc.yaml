@@ -5,6 +5,9 @@ names:
 - name: Río Jaboc
 - name: Jaboq
   note: Grafía de Perspicacia.
+- name: Wadi Zarqa
+  modern: true
+  note: Nombre árabe actual del valle, según Perspicacia «Jaboq».
 type: river
 lat: 32.11525
 lon: 35.543056

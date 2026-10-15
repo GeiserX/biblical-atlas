@@ -3,6 +3,9 @@ id: hamon
 name: Hamón
 names:
 - name: Hamón
+- name: Umm el ʽAwamid
+  modern: true
+  note: Sitio costero con el que Perspicacia suele relacionar la Hamón de Aser, unos 16 km al sur-sudoeste de Tiro.
 type: city
 lat: 33.128108
 lon: 35.152022

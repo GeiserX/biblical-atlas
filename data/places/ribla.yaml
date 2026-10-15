@@ -3,6 +3,9 @@ id: ribla
 name: Riblá
 names:
 - name: Riblá
+- name: Ribleh
+  modern: true
+  note: Pueblo junto a cuyas ruinas, a orillas del Orontes, Perspicacia sitúa por lo general la ciudad.
 type: city
 lat: 34.459547
 lon: 36.572623

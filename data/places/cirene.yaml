@@ -3,6 +3,9 @@ id: cirene
 name: Cirene
 names:
 - name: Cirene
+- name: Shahhat
+  modern: true
+  note: Pueblo libio junto al que quedan las ruinas deshabitadas de Cirene, según Perspicacia; antes se llamaba Cirene.
 type: city
 lat: 32.820946
 lon: 21.851229

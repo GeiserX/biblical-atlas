@@ -5,6 +5,10 @@ names:
 - name: Valle de Beracá
 - name: Llanura baja de Beracá
   note: Otra lectura que da la nota al pie de 2Cr 20:26; es el título que usa Perspicacia.
+- name: Wadi el-ʽArrub
+  modern: true
+  note: Uadi con el que Perspicacia identifica la llanura, entre Belén y Hebrón; el cercano Khirbet Bereikut parece conservar
+    el nombre.
 type: valley
 lat: 31.60894
 lon: 35.17164

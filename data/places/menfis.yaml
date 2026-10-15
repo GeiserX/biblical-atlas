@@ -5,6 +5,9 @@ names:
 - name: Menfis
 - name: Nof
   note: Así la llama el texto hebreo de Isaías, Jeremías y Ezequiel; en Oseas el hebreo dice Mof.
+- name: Mit Rahineh
+  modern: true
+  note: Pueblo junto al que Perspicacia sitúa las ruinas de la ciudad, al sur de El Cairo.
 type: city
 lat: 29.8488
 lon: 31.253

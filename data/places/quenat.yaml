@@ -7,6 +7,9 @@ names:
   note: Nombre que le puso Nóbah al tomarla (Nú 32:42); no duró, porque después se la vuelve a llamar Quenat.
 - name: Canata
   note: Nombre posterior, cuando era una de las ciudades de la Decápolis (Perspicacia «Quenat»).
+- name: Qanawat
+  modern: true
+  note: Ruinas con las que Perspicacia identifica la ciudad, unos 7 km al noroeste de la actual Soueida.
 type: city
 lat: 32.75616
 lon: 36.61899

@@ -5,6 +5,9 @@ names:
 - name: Guebal
 - name: Biblos
   note: Nombre griego de la ciudad, según Perspicacia.
+- name: Jebeil
+  modern: true
+  note: Nombre actual de la ciudad, al nornordeste de Beirut, según Perspicacia «Guebal, guebalitas», núm. 1.
 type: city
 lat: 34.119167
 lon: 35.645833

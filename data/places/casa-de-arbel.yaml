@@ -5,6 +5,10 @@ names:
 - name: Casa de Arbel
 - name: Bet-Arbel
   note: Forma que usan otras traducciones, según Perspicacia.
+- name: Irbid
+  modern: true
+  note: Ciudad actual, en la antigua Galaad, con la que Perspicacia suele relacionar el lugar, unos 29 km al sureste del mar
+    de Galilea.
 type: city
 lat: 32.558661
 lon: 35.847589

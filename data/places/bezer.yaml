@@ -3,6 +3,9 @@ id: bezer
 name: Bézer
 names:
 - name: Bézer
+- name: Umm el-ʽAmad
+  modern: true
+  note: Sitio con el que se suele identificar la ciudad, según Perspicacia «Bézer», núm. 2.
 type: city
 lat: 31.78603
 lon: 35.90168

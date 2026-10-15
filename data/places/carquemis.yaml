@@ -3,6 +3,9 @@ id: carquemis
 name: Carquemis
 names:
 - name: Carquemis
+- name: Karkamış
+  modern: true
+  note: Pueblo turco junto al montículo de la antigua Carquemis, según Perspicacia; el sitio linda con Yarábulus, ya en Siria.
 type: city
 lat: 36.829722
 lon: 38.015

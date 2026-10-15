@@ -3,6 +3,9 @@ id: betonim
 name: Betonim
 names:
 - name: Betonim
+- name: Khirbet Batneh
+  modern: true
+  note: Sitio con el que se suele identificar la ciudad, según Perspicacia «Betonim».
 type: city
 lat: 32.010571
 lon: 35.710739

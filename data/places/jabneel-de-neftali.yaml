@@ -4,6 +4,9 @@ name: Jabneel
 names:
 - name: Jabneel
   note: Jabneel de Neftalí (Perspicacia, núm. 2).
+- name: Tell en-Naʽam (Tel Yinʽam)
+  modern: true
+  note: Sitio con el que Perspicacia suele relacionar el lugar; el nombre sigue vivo en la aldea vecina de Yavneʼel.
 type: city
 lat: 32.713333
 lon: 35.5125

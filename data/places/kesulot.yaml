@@ -5,6 +5,9 @@ names:
 - name: Kesulot
 - name: Kislot-Tabor
   note: Así la llama Jos 19:12 en la frontera de Zabulón; Perspicacia la trata como variante de Kesulot.
+- name: Iksal (Kislot Tavor)
+  modern: true
+  note: Lugar con el que Perspicacia suele identificar la población, al SE de Nazaret y al oeste del Tabor.
 type: city
 lat: 32.683367
 lon: 35.324193

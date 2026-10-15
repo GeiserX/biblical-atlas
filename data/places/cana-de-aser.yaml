@@ -6,6 +6,9 @@ names:
   note: Caná de Aser.
 - name: Qaná
   note: Grafía de la nota de Jos 19:28 y de Perspicacia.
+- name: Qana
+  modern: true
+  note: Pueblo actual con el que Perspicacia suele identificar la Caná de Aser, unos 12 km al estesureste de Tiro.
 type: city
 lat: 33.209167
 lon: 35.299167

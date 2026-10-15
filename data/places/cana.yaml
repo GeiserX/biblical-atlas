@@ -5,6 +5,10 @@ names:
 - name: Caná
 - name: Caná de Galilea
   note: Así la llama siempre la Biblia, quizá para distinguirla de Qaná, en Aser (Perspicacia).
+- name: Khirbet Kana
+  modern: true
+  note: Ruinas con las que Perspicacia identifica Caná, unos 13 km al norte de Nazaret; el lugar tradicional, Kafr Kanna,
+    le parece menos probable.
 type: city
 lat: 32.8222
 lon: 35.30269

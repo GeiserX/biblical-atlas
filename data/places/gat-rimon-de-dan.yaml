@@ -4,6 +4,10 @@ name: Gat-Rimón
 names:
 - name: Gat-Rimón
   note: Gat-Rimón de Dan (Perspicacia, núm. 1); no la de Manasés de Jos 21:25.
+- name: Tell Jerisheh (Tel Gerisa)
+  modern: true
+  note: Sitio con el que suele identificarse la ciudad, al nordeste de Tel Aviv-Yafo, según Perspicacia «Gat-rimón», núm.
+    1.
 type: city
 lat: 32.0917
 lon: 34.8075

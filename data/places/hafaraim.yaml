@@ -3,6 +3,9 @@ id: hafaraim
 name: Hafaraim
 names:
 - name: Hafaraim
+- name: et-Taiyiba
+  modern: true
+  note: Lugar donde la mayoría de los hebraístas sitúan la ciudad, según Perspicacia, unos 12 km al noroeste de Bet-Seán.
 type: city
 lat: 32.60385
 lon: 35.44661

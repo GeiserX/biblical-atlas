@@ -5,6 +5,9 @@ names:
 - name: Jocneam
 - name: Joqneam
   note: Grafía de Perspicacia.
+- name: Tell Qeimun (Tel Yoqneʽam)
+  modern: true
+  note: Montículo con el que Perspicacia suele identificar hoy la ciudad, al pie del Carmelo y al NO de Meguidó.
 type: city
 lat: 32.664099
 lon: 35.108266

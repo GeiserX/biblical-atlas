@@ -3,6 +3,9 @@ id: neiel
 name: Neiel
 names:
 - name: Neiel
+- name: Khirbet Yaʽnin (Horvat Yaʽanin)
+  modern: true
+  note: Sitio con el que Perspicacia identifica la ciudad de Aser, al estesureste de Akkó.
 type: city
 lat: 32.8926
 lon: 35.2219

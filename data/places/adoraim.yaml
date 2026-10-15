@@ -3,6 +3,9 @@ id: adoraim
 name: Adoraim
 names:
 - name: Adoraim
+- name: Dura
+  modern: true
+  note: Pueblo actual con el que Perspicacia identifica la ciudad, unos 8 km al oeste de Hebrón.
 type: city
 lat: 31.50506
 lon: 35.0275

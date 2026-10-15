@@ -3,6 +3,9 @@ id: arab
 name: Arab
 names:
 - name: Arab
+- name: Khirbet er-Rabiyeh
+  modern: true
+  note: Sitio con el que Perspicacia identifica la ciudad, entre Dumá y Carmelo, al suroeste de Hebrón.
 type: city
 lat: 31.43188
 lon: 35.02957

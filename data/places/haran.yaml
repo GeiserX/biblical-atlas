@@ -5,6 +5,9 @@ names:
 - name: Harán
 - name: Harranu
   note: Forma de las fuentes asirias.
+- name: Harrán
+  modern: true
+  note: Pueblo actual del este de Turquía que, según Perspicacia, perpetúa el nombre de la ciudad antigua.
 type: city
 lat: 36.864444
 lon: 39.032778

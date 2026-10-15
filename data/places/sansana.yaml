@@ -3,6 +3,9 @@ id: sansana
 name: Sansaná
 names:
 - name: Sansaná
+- name: Khirbet esh-Shamsaniyat (Horvat Sansanna)
+  modern: true
+  note: Sitio con el que Perspicacia identifica la población, unos 12 km al nornoreste de Beer-Seba.
 type: city
 lat: 31.3445
 lon: 34.9014

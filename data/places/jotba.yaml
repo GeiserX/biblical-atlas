@@ -3,6 +3,9 @@ id: jotba
 name: Jotbá
 names:
 - name: Jotbá
+- name: Khirbet Jefat (Horvat Yodefat)
+  modern: true
+  note: Sitio con el que Perspicacia suele identificar el pueblo de Haruz, al norte de Nazaret.
 type: city
 lat: 32.831944
 lon: 35.278139

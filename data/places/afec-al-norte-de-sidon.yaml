@@ -5,6 +5,9 @@ names:
 - name: Afec
 - name: Afeq
   note: Grafía de Perspicacia.
+- name: Afqa
+  modern: true
+  note: Pueblo libanés con el que Perspicacia identifica la ciudad, donde nace el Nahr Ibrahim.
 type: city
 lat: 34.069167
 lon: 35.886111

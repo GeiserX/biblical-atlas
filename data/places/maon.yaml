@@ -5,6 +5,9 @@ names:
 - name: Maón
 - name: Desierto de Maón
   note: Zona desierta alrededor de la ciudad, donde Saúl persiguió a David (Perspicacia «Maón», núm. 2).
+- name: Tell Maʽin (Horvat Maʽon [Bi-Yehuda])
+  modern: true
+  note: Sitio con el que Perspicacia suele identificar la ciudad, en un cerro unos 13 km al SSE de Hebrón.
 type: city
 lat: 31.409448
 lon: 35.133839

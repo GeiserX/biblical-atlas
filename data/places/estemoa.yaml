@@ -5,6 +5,9 @@ names:
 - name: Estemoa
 - name: Estemó
   note: Así la llama Jos 15:50.
+- name: es Samuʽ (Eshtemoaʽ)
+  modern: true
+  note: Pueblo actual con el que Perspicacia hace corresponder la ciudad, al sursuroeste de Hebrón.
 type: city
 lat: 31.400792
 lon: 35.067075

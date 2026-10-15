@@ -5,6 +5,9 @@ names:
 - name: Éter
 - name: Token
   note: Parece ser su nombre en 1Cr 4:32.
+- name: Khirbet el-ʽAter (Tel ʽEter)
+  modern: true
+  note: Sitio con el que hoy se suele relacionar la ciudad, cerca de Beit Jibrin, según Perspicacia «Éter».
 type: city
 lat: 31.61593
 lon: 34.8783

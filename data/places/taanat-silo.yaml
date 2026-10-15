@@ -3,6 +3,9 @@ id: taanat-silo
 name: Taanat-Siló
 names:
 - name: Taanat-Siló
+- name: Khirbet Taʽna el-Fauqa
+  modern: true
+  note: Sitio con el que Perspicacia identifica el lugar, unos 10 km al este-sureste de Siquem.
 type: city
 lat: 32.176348
 lon: 35.370933

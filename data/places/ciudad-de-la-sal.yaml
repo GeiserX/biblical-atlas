@@ -3,6 +3,9 @@ id: ciudad-de-la-sal
 name: Ciudad de la Sal
 names:
 - name: Ciudad de la Sal
+- name: Khirbet Qumran (Horvat Qumeran)
+  modern: true
+  note: Sitio con el que Perspicacia identifica la ciudad, en la orilla noroeste del mar Muerto.
 type: city
 lat: 31.740833
 lon: 35.458611

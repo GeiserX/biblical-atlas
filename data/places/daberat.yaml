@@ -5,6 +5,9 @@ names:
 - name: Daberat
 - name: Rabit
   note: Nombre de Jos 19:20 en el texto masorético; Perspicacia cree que es Daberat, como lee el Manuscrito Vaticano 1209.
+- name: Khirbet Dabura (Horvat Devora)
+  modern: true
+  note: Ruinas con las que Perspicacia identifica la ciudad, junto a la aldea de Dabburiya, en el lado noroeste del Tabor.
 type: city
 lat: 32.697284
 lon: 35.377531

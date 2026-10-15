@@ -4,6 +4,9 @@ name: Bet-Zur
 names:
 - name: Bet-Zur
   note: Significa «casa de la roca» (Perspicacia).
+- name: Khirbet et-Tubeiqah (Bet Zur)
+  modern: true
+  note: Sitio de la ciudad según Perspicacia; el nombre antiguo sigue en Burj es-Sur, a medio kilómetro.
 type: city
 lat: 31.589383
 lon: 35.094155

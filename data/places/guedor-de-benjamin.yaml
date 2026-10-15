@@ -3,6 +3,9 @@ id: guedor-de-benjamin
 name: Guedor
 names:
 - name: Guedor
+- name: Khirbet el-Gudeira
+  modern: true
+  note: Sitio con el que Perspicacia suele identificar la Guedor de Benjamín, unos 16 km al noroeste de Jerusalén.
 type: city
 lat: 31.86725
 lon: 35.09229
@@ -11,7 +14,7 @@ coord_source: openbible:a47678a
 coord_url: https://www.openbible.info/geo/ancient/a47678a/gedor-4
 coord_note: 'Khirbet Judeira, tercera identificación de OpenBible: encaja con Khirbet el-Gudeira, unos 16 km al noroeste de
   Jerusalén, que da Perspicacia. La primera la hace la Guedor de Judá.'
-summary: Lugar de Benjamín de donde era Jeroham, padre de dos guerreros que se unieron a David en Ziclag.
+summary: Lugar de Benjamín de donde era Jeroham, padre de dos guerreros que se juntaron con David en Ziclag.
 reason: 'Perspicacia «Guedor», núm. 6; 1Cr 12:7. No es la Guedor de Judá ni la de los simeonitas. OpenBible: solo el punto.'
 sources:
 - it-guedor

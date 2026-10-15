@@ -5,6 +5,9 @@ names:
 - name: Cartán
 - name: Quiryataim
   note: Nombre que le da 1Cr 6:76, según Perspicacia «Quiryataim», núm. 2.
+- name: Khirbet el-Qureiyeh
+  modern: true
+  note: Sitio con el que Perspicacia suele identificar la ciudad, unos 21 km al oestenoroeste de la cuenca del Huleh.
 type: city
 lat: 33.111944
 lon: 35.4625

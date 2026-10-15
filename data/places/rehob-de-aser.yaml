@@ -4,6 +4,9 @@ name: Rehob
 names:
 - name: Rehob
   note: Rehob de Aser (Perspicacia, núm. 4), la de Jos 19:30; no la del norte de Nú 13:21 ni, quizá, la de Jos 19:28.
+- name: Tell el-Bir el-Gharbi (Tel Bira)
+  modern: true
+  note: Sitio con el que Perspicacia suele relacionar la Rehob de Aser dada a los levitas, unos 10 km al estesudeste de Akkó.
 type: city
 lat: 32.901389
 lon: 35.169444

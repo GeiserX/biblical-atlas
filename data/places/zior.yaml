@@ -3,6 +3,9 @@ id: zior
 name: Zior
 names:
 - name: Zior
+- name: Siʽir
+  modern: true
+  note: Pueblo con el que Perspicacia identifica la ciudad, unos 7 km al nornoreste de Hebrón.
 type: city
 lat: 31.584444
 lon: 35.145278

@@ -6,6 +6,9 @@ names:
   note: Aczib de Aser; no la de Judá (Jos 15:44).
 - name: Ecdippa
   note: Nombre en tiempos griegos y romanos, según Perspicacia.
+- name: ez-Zib (Tel Akhziv)
+  modern: true
+  note: Sitio con el que Perspicacia identifica la ciudad, en la costa, unos 14 km al norte de Akkó.
 type: city
 lat: 33.048278
 lon: 35.102652

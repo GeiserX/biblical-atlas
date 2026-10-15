@@ -3,6 +3,9 @@ id: guedera
 name: Guederá
 names:
 - name: Guederá
+- name: Jedire (Gedera)
+  modern: true
+  note: Sitio con el que por lo general se identifica la ciudad, según Perspicacia «Guederá», núm. 1.
 type: city
 lat: 31.822936
 lon: 34.777744

@@ -5,6 +5,9 @@ names:
 - name: Ecrón
 - name: Eqrón
   note: Grafía de Perspicacia.
+- name: Khirbet el-Muqannaʽ (Tel Miqne)
+  modern: true
+  note: Sitio con el que Perspicacia suele identificar Eqrón, unos 18 km al este de Asdod, aunque reconoce que no es seguro.
 type: city
 lat: 31.7775
 lon: 34.851944

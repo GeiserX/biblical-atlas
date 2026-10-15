@@ -3,6 +3,9 @@ id: nebalat
 name: Nebalat
 names:
 - name: Nebalat
+- name: Beit Nebala (Horvat Nevallat)
+  modern: true
+  note: Sitio con el que Perspicacia suele identificar la ciudad, en una colina al estenoreste de Lod.
 type: city
 lat: 31.986436
 lon: 34.9589

@@ -7,6 +7,9 @@ names:
   note: Otra lectura que dan las notas al pie de 1Sa 17:2 y 17:19.
 - name: Elah
   note: Otra grafía que da la nota de 1Sa 17:2; Perspicacia lo trata en «Elah», núm. 6.
+- name: Wadi es-Sant
+  modern: true
+  note: Uadi con el que Perspicacia suele relacionar la llanura, entre Azecá y Socó, unos 25 km al suroeste de Jerusalén.
 type: valley
 lat: 31.67542
 lon: 34.99802

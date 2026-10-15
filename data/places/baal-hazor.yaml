@@ -5,6 +5,9 @@ names:
 - name: Baal-Hazor
 - name: Baal-hazor
   note: Grafía de Perspicacia.
+- name: Jebel ʽAsur (Baʽal Hazor)
+  modern: true
+  note: Nombre actual del monte, según Perspicacia «Baal-hazor», unos 8 km al noreste de Betel.
 type: mountain
 lat: 31.978611
 lon: 35.286111

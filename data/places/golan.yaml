@@ -3,6 +3,9 @@ id: golan
 name: Golán
 names:
 - name: Golán
+- name: Sahm el Joulane
+  modern: true
+  note: Sitio con el que la mayoría de los eruditos identifica la ciudad, al este del mar de Galilea, según Perspicacia «Golán».
 type: city
 lat: 32.781111
 lon: 35.934722

@@ -6,6 +6,9 @@ names:
 - name: Ir-Semes
   note: Así la llama Jos 19:41 en la frontera de Dan; significa «ciudad del sol». Perspicacia «Bet-semes», núm. 1, la da por
     la misma ciudad.
+- name: Tell er-Rumeileh (Tel Bet Shemesh)
+  modern: true
+  note: Sitio con el que Perspicacia identifica la ciudad, junto a la actual ʽAin Shems, que conserva parte del nombre.
 type: city
 lat: 31.750621
 lon: 34.974744

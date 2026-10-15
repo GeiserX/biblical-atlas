@@ -3,6 +3,9 @@ id: estaol
 name: Estaol
 names:
 - name: Estaol
+- name: Eshwaʽ (Eshtaʼol)
+  modern: true
+  note: Pueblo actual que, según Perspicacia, ocupa en parte el sitio de la ciudad.
 type: city
 lat: 31.781097
 lon: 35.0101

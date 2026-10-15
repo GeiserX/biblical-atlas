@@ -3,6 +3,9 @@ id: tabat
 name: Tabat
 names:
 - name: Tabat
+- name: Ras Abu Tabat
+  modern: true
+  note: Lugar donde Perspicacia suele situar Tabat, unos 5 km al este del Jordán.
 type: city
 lat: 32.286841
 lon: 35.618929

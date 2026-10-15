@@ -3,6 +3,10 @@ id: eder-de-juda
 name: Éder
 names:
 - name: Éder
+- name: Tel ʽArad
+  modern: true
+  note: Sitio de Arad, con el que casi todos los eruditos identifican Éder según Perspicacia; es el mismo punto de la ficha
+    de Arad.
 type: city
 lat: 31.280833
 lon: 35.125

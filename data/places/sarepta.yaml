@@ -3,6 +3,10 @@ id: sarepta
 name: Sarepta
 names:
 - name: Sarepta
+- name: Sarafand
+  modern: true
+  note: Pueblo libanés que conserva el nombre, según Perspicacia y la nota de Lu 4:26; la ciudad antigua pudo quedar algo
+    más allá en la costa.
 type: city
 lat: 33.464227
 lon: 35.295136

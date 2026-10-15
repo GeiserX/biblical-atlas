@@ -3,6 +3,9 @@ id: dotan
 name: Dotán
 names:
 - name: Dotán
+- name: Tell Dothan (Tel Dotan)
+  modern: true
+  note: Montículo con el que Perspicacia asocia hoy la ciudad, sobre una colina unos 16 km al NNE de Samaria.
 type: city
 lat: 32.413528
 lon: 35.239861

@@ -3,6 +3,9 @@ id: juta
 name: Jutá
 names:
 - name: Jutá
+- name: Yatta
+  modern: true
+  note: Localidad actual con la que Perspicacia identifica Jutá, al sur de Hebrón.
 type: city
 lat: 31.447778
 lon: 35.09

@@ -3,6 +3,9 @@ id: valle-del-libano
 name: Valle del Líbano
 names:
 - name: Valle del Líbano
+- name: Bekaa
+  modern: true
+  note: Nombre de hoy del valle entre el Líbano y el Antilíbano; Perspicacia «Líbano», párr. 1, lo llama Celesiria o la Bekaa.
 type: valley
 lat: 34.008889
 lon: 36.145278

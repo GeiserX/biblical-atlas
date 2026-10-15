@@ -3,6 +3,9 @@ id: gueba
 name: Gueba
 names:
 - name: Gueba
+- name: Jabaʽ
+  modern: true
+  note: Pueblo actual con el que suele identificarse la ciudad, según Perspicacia «Gueba».
 type: city
 lat: 31.8575
 lon: 35.261111

@@ -3,6 +3,10 @@ id: quina
 name: Quiná
 names:
 - name: Quiná
+- name: Khirbet Taiyib (Horvat Tov)
+  modern: true
+  note: Sitio con el que Perspicacia identifica Quiná, unos 30 km al estenoreste de Beer-Seba; el nombre antiguo parece seguir
+    en el cercano Wadi el-Qeini.
 type: city
 lat: 31.30283
 lon: 35.14909

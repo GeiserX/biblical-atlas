@@ -3,6 +3,9 @@ id: bet-tapuah
 name: Bet-Tapúah
 names:
 - name: Bet-Tapúah
+- name: Taffuh
+  modern: true
+  note: Pueblo actual con el que Perspicacia identifica la ciudad, unos 6 km al oestenoroeste de Hebrón.
 type: city
 lat: 31.53856
 lon: 35.04622

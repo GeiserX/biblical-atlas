@@ -3,6 +3,9 @@ id: ninive
 name: Nínive
 names:
 - name: Nínive
+- name: Quyunjiq y Nebi Yunus
+  modern: true
+  note: Los dos montículos que, según Perspicacia, marcan el sitio de Nínive, en la orilla este del Tigris, frente a Mosul.
 type: city
 lat: 36.3594
 lon: 43.1528

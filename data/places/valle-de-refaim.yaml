@@ -5,6 +5,10 @@ names:
 - name: Valle de Refaím
 - name: Llanura baja de Refaím
   note: Otra traducción que da la nota de Jos 15:8; es el nombre del artículo de Perspicacia.
+- name: llanura de Baqaʽ
+  modern: true
+  note: Llanura que la tradición toma por el valle, según Perspicacia; queda al suroeste del monte del templo y sigue hacia
+    el Nahal Refaʼim.
 type: valley
 lat: 31.763203
 lon: 35.219122

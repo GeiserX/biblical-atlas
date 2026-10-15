@@ -3,6 +3,9 @@ id: monte-tabor
 name: Monte Tabor
 names:
 - name: Tabor
+- name: Jebel et-Tur (Har Tavor)
+  modern: true
+  note: Nombre actual del monte en árabe y en hebreo, según Perspicacia «Tabor».
 type: mountain
 lat: 32.68625
 lon: 35.392917

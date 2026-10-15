@@ -3,6 +3,10 @@ id: duma-de-juda
 name: Dumá
 names:
 - name: Dumá
+- name: Khirbet Domeh ed-Deir
+  modern: true
+  note: Sitio con el que Perspicacia identifica la ciudad, unos 15 km al suroeste de Hebrón; el texto añade entre paréntesis
+    el nombre Dumá.
 type: city
 lat: 31.4306
 lon: 34.9861

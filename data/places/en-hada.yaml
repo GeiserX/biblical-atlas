@@ -3,6 +3,9 @@ id: en-hada
 name: En-Hadá
 names:
 - name: En-Hadá
+- name: el-Hadetheh (Tel ʽEn Hadda)
+  modern: true
+  note: Sitio con el que Perspicacia asocia por lo general la ciudad, 9 km al este del monte Tabor.
 type: city
 lat: 32.6804
 lon: 35.4863

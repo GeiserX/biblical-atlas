@@ -5,6 +5,9 @@ names:
 - name: Hucoc
 - name: Huqqoq
   note: Grafía de la nota de Jos 19:34 y de Perspicacia.
+- name: Huqoq
+  modern: true
+  note: Población actual con la que Perspicacia identifica la ciudad, aunque algunos la creen demasiado al norte y al este.
 type: city
 lat: 32.8847
 lon: 35.4789

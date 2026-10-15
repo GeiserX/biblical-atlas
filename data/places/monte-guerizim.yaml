@@ -5,6 +5,9 @@ names:
 - name: Monte Guerizim
 - name: Garizim
   note: Otra grafía que Perspicacia pone entre paréntesis al hablar del templo samaritano.
+- name: Jebel et Tur (Har Gerizim)
+  modern: true
+  note: Nombre actual del monte, según Perspicacia «Guerizim, Monte»; Nablus queda en el valle entre él y el Ebal.
 type: mountain
 lat: 32.199444
 lon: 35.272778

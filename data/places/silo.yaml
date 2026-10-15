@@ -3,6 +3,9 @@ id: silo
 name: Siló
 names:
 - name: Siló
+- name: Khirbet Seilun (Shillo)
+  modern: true
+  note: Ruinas con las que Perspicacia suele identificar la ciudad, unos 15 km al norte-nordeste de Betel.
 type: city
 lat: 32.055703
 lon: 35.289536

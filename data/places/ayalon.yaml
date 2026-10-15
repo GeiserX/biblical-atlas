@@ -4,6 +4,9 @@ name: Ayalón
 names:
 - name: Ayalón
   note: Ayalón de Dan; no la de Zabulón (Jue 12:12).
+- name: Yalo
+  modern: true
+  note: Aldea actual que ocupa el sitio de la ciudad, según Perspicacia «Ayalón», núm. 1.
 type: city
 lat: 31.841111
 lon: 35.023611

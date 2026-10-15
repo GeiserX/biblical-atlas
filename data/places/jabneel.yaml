@@ -5,6 +5,9 @@ names:
 - name: Jabneel
 - name: Jabné
   note: Así la llama 2Cr 26:6. Perspicacia «Jabné» la da por probablemente la misma; «Jabneel», núm. 1, solo por posible.
+- name: Yavne
+  modern: true
+  note: Localidad actual con la que Perspicacia identifica el lugar, unos 20 km al sur de Jope.
 type: city
 lat: 31.866
 lon: 34.7463

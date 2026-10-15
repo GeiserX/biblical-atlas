@@ -10,6 +10,9 @@ names:
   note: Nombre que le daban los amorreos (Dt 3:9); quizá también de una parte del Antilíbano (1Cr 5:23).
 - name: Siyón
   note: Otro nombre del monte, distinto de Sion (Dt 4:48).
+- name: Jebel esh-Sheikh
+  modern: true
+  note: Nombre árabe actual del monte, según Perspicacia «Hermón»; también lo llaman Jebel eth-Thalj, por la nieve de su cumbre.
 type: mountain
 lat: 33.4
 lon: 35.85

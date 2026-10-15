@@ -3,6 +3,9 @@ id: jezreel
 name: Jezreel
 names:
 - name: Jezreel
+- name: Zerʽin (Tel Yizreʽel)
+  modern: true
+  note: Sitio con el que Perspicacia identifica hoy la ciudad, al NNE de Jenin.
 type: city
 lat: 32.557853
 lon: 35.327953

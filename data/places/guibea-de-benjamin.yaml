@@ -7,6 +7,10 @@ names:
   note: 1Sa 11:4 es la primera vez; también 2Sa 21:6.
 - name: Guibeah
   note: Otra grafía que da la nota de Jue 19:12 para todo el libro; es la que usa Perspicacia.
+- name: Tell el-Ful (Givʽat Shaʼul)
+  modern: true
+  note: Sitio con el que los eruditos suelen identificar la ciudad de Saúl, unos 5 km al norte del monte del Templo, según
+    Perspicacia.
 type: city
 lat: 31.823113
 lon: 35.230718

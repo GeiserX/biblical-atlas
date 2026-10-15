@@ -5,6 +5,9 @@ names:
 - name: Azmávet
 - name: Bet-Azmávet
   note: Otro nombre que da Perspicacia «Azmávet», núm. 5.
+- name: Hizmeh (Hizma)
+  modern: true
+  note: Ciudad actual con la que Perspicacia identifica Azmávet, al nornoreste de Jerusalén, entre Gueba y Anatot.
 type: city
 lat: 31.835
 lon: 35.261944

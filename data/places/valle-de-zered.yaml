@@ -4,6 +4,9 @@ name: Valle de Zered
 names:
 - name: Valle de Zered
   note: La nota de Nú 21:12 da «wadi»; Perspicacia lo llama valle torrencial.
+- name: Wadi el-Hesa
+  modern: true
+  note: Uadi con el que Perspicacia suele identificar el valle torrencial; baja al extremo sureste del mar Muerto.
 type: valley
 lat: 31.02701
 lon: 35.48533

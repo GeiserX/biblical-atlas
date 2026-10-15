@@ -3,6 +3,9 @@ id: nebo
 name: Nebo
 names:
 - name: Nebo
+- name: Khirbet Mekhayyet (Qaryat el Mukhaiyat)
+  modern: true
+  note: Ruinas con las que Perspicacia suele identificar la ciudad moabita, unos 8 km al suroeste de Hesbón.
 type: city
 lat: 31.749127
 lon: 35.74386

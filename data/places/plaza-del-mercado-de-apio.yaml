@@ -5,6 +5,10 @@ names:
 - name: Plaza del Mercado de Apio
 - name: Foro de Apio
   note: Otra traducción que da la nota de estudio de Hch 28:15 (en latín, Appii Forum).
+- name: Borgo Faiti
+  modern: true
+  note: Pueblo que hoy ocupa el lugar del Foro de Apio, según la nota de estudio de Hch 28:15; Perspicacia cita además el
+    paraje Foro Appio.
 type: city
 lat: 41.46639
 lon: 12.9975

@@ -3,6 +3,9 @@ id: anim
 name: Anim
 names:
 - name: Anim
+- name: Khirbet Ghuwein et-Tahta (Horvat ʽAnim)
+  modern: true
+  note: Ruinas con las que Perspicacia identifica la ciudad, unos 5 km al sur de Estemoa.
 type: city
 lat: 31.353601
 lon: 35.063521
