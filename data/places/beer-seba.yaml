@@ -5,11 +5,12 @@ names:
 - name: Beer-Seba
 - name: Beer-seba
   note: Grafía de Perspicacia.
-- name: Sibá
-  note: Nombre que Isaac dio al pozo que cavaron sus siervos; de él viene el de la ciudad.
 - name: Tell es-Sabaʽ (Tel Beʼer Shevaʽ)
   modern: true
   note: Tell con el que Perspicacia identifica la ciudad de los jueces, 4 km al este de la ciudad moderna de Beʼer Shevaʽ.
+parts:
+- name: Sibá
+  note: Nombre que Isaac dio al pozo que cavaron sus siervos; de él viene el de la ciudad.
 type: city
 lat: 31.244722
 lon: 34.840833

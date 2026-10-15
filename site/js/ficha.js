@@ -115,13 +115,31 @@ function videosHtml(id, V = BE.VIDEOS, callar = false) {
     ${vs.length > max ? `<p class="be-muted">Y ${vs.length - max} más en jw.org.</p>` : ''}
   </div></section>`;
 }
+/** La nota que sigue a «Nombre: » va en minúscula, salvo que empiece por una cita («Is 22:9»), por «Perspicacia» o por
+    un nombre propio de los datos de una sola palabra y cuatro letras o más («Herodes», «Bet-Semes»; «No» y «Sin» son
+    también palabras corrientes). */
+let propios = null;
+function notaTrasNombre(nota) {
+  const s = nota ? String(nota).replace(/\.\s*$/, '') : '';
+  if (!s) return '';
+  if (!propios) {
+    propios = new Set();
+    for (const o of [...Object.values(BE.L || {}), ...Object.values(BE.PERS || {})]) {
+      for (const n of [o.nombre, ...(o.nombres || []).map((x) => x.nombre)]) if (n && n.length >= 4 && !/\s/.test(n)) propios.add(n);
+    }
+  }
+  const palabra = s.split(/[\s,:;.]/)[0];
+  const mantener = /^\d?[A-ZÁÉÍÓÚ][a-záéíóúñ]{0,3} \d/.test(s) || palabra === 'Perspicacia' || propios.has(palabra)
+    || !/^[A-ZÁÉÍÓÚÑ][a-záéíóúñü]/.test(s);
+  return mantener ? s : s.charAt(0).toLowerCase() + s.slice(1);
+}
 function nombresHtml(obj) {
   const otros = (obj.nombres || []).filter((n) => n.nombre !== obj.nombre);
   if (!otros.length) return '';
   return `<ul class="nombres">${otros.map((n) => {
     const fechas = n.desde != null || n.hasta != null ? ` (${n.desde != null ? fmtAnio(n.desde) : '…'} - ${n.hasta != null ? fmtAnio(n.hasta) : '…'})` : '';
-    const nota = n.nota ? String(n.nota).replace(/\.\s*$/, '') : '';
-    return `<li><b>${esc(n.nombre)}</b>${fechas}${nota ? `<span class="be-muted">: ${esc(nota.charAt(0).toLowerCase() + nota.slice(1))}</span>` : ''}</li>`;
+    const nota = notaTrasNombre(n.nota);
+    return `<li><b>${esc(n.nombre)}</b>${fechas}${nota ? `<span class="be-muted">: ${esc(nota)}</span>` : ''}</li>`;
   }).join('')}</ul>`;
 }
 const botonSel = (sel, titulo, meta = '') => `<button type="button" class="be-row fila-boton" data-sel="${esc(sel)}"><span><span class="be-row__title">${esc(titulo)}</span>${meta ? `<span class="be-row__meta">${meta}</span>` : ''}</span><span class="be-row__end" aria-hidden="true">›</span></button>`;
@@ -134,7 +152,7 @@ const cerrarHtml = () => {
 };
 
 Object.assign(BE, {
-  chipsCitas, estadoHtml, fuentesHtml, porQueHtml, notaHtml, enlacesHtml, videosHtml, nombresHtml, botonSel, migas, cerrarHtml,
+  chipsCitas, estadoHtml, fuentesHtml, porQueHtml, notaHtml, enlacesHtml, videosHtml, nombresHtml, notaTrasNombre, botonSel, migas, cerrarHtml,
   insigniaHtml, historialHtml, proponerHtml, noSabemosHtml, nivelDe, soloNivel1, marcaNivel,
 });
 })();

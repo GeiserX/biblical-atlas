@@ -330,6 +330,119 @@ class NombreDeHoy(unittest.TestCase):
                           f"{jope['_fichero']}: names[0].modern marca 'Jope', que es el nombre principal del lugar"])
 
 
+LUGARES_PARTES = {"jerusalen": "Jerusalén", "estanque-de-siloam": "Estanque de Siloam", "betel": "Betel"}
+
+
+def errores_partes(*partes, names=({"name": "Jerusalén"}, {"name": "Sion"}), **campos):
+    o = {"id": "jerusalen", "name": "Jerusalén", "names": list(names), "parts": list(partes), **campos}
+    out = []
+    validate.validar_partes(o, "lugar", out.append, LUGARES_PARTES)
+    return out
+
+
+class PartesDeUnLugar(unittest.TestCase):
+    """`parts`: los sitios con nombre dentro de un lugar o junto a él, que no son otro nombre del lugar entero. Cada
+    prueba mira primero que la forma buena pasa."""
+    OVEJAS = {"name": "Puerta de las Ovejas", "note": "Puerta del norte, junto al templo."}
+    ARBOL = {"name": "Árbol grande", "near": True, "note": "Junto al lugar, fuera de él."}
+    SILOAM = {"name": "Estanque de Siloam", "place": "estanque-de-siloam", "note": "Tiene su ficha."}
+
+    def test_las_tres_formas_valen(self):
+        self.assertEqual(errores_partes(self.OVEJAS, self.ARBOL, self.SILOAM), [])
+        self.assertEqual(errores_partes(dict(self.OVEJAS, en={"name": "Sheep Gate", "note": "A gate."})), [])
+
+    def test_name_y_note_son_obligatorios(self):
+        for k in ("name", "note"):
+            for vacio in (None, "", "  "):
+                with self.subTest(clave=k, valor=vacio):
+                    parte = dict(self.OVEJAS, **{k: vacio}) if vacio is not None else {
+                        x: v for x, v in self.OVEJAS.items() if x != k}
+                    self.assertEqual(errores_partes(parte), [f"lugar: parts[0] sin '{k}'"])
+
+    def test_sin_epoca_ni_nombre_de_hoy(self):
+        for k, v in (("from", -1000), ("to", 70), ("modern", True), ("lat", 31.7)):
+            with self.subTest(clave=k):
+                self.assertEqual(errores_partes(dict(self.OVEJAS, **{k: v})),
+                                 [f"lugar: parts[0] lleva ['{k}']; una parte solo lleva name, note, near y place, "
+                                  f"sin from, to ni modern"])
+
+    def test_near_solo_es_true(self):
+        for v in (False, "true", 1, None):
+            with self.subTest(valor=v):
+                self.assertEqual(errores_partes(dict(self.ARBOL, near=v)),
+                                 [f"lugar: parts[0].near solo puede ser true, no {v!r}"])
+
+    def test_place_es_un_lugar_que_existe_y_no_el_propio(self):
+        self.assertEqual(errores_partes(dict(self.SILOAM, place="estanque-de-betzata")),
+                         ["lugar: parts[0].place 'estanque-de-betzata' no existe en data/places/"])
+        self.assertEqual(errores_partes(dict(self.SILOAM, place="jerusalen")),
+                         ["lugar: parts[0].place es el propio lugar; place enlaza la ficha de otro lugar"])
+
+    def test_una_parte_enlazada_se_llama_como_su_ficha(self):
+        # La búsqueda no da fila a una parte con place: se encuentra por los nombres de la ficha que enlaza.
+        out = []
+        o = {"id": "jerusalen", "name": "Jerusalén", "names": [{"name": "Jerusalén"}],
+             "parts": [dict(self.SILOAM, name="Siloam")]}
+        validate.validar_partes(o, "lugar", out.append, LUGARES_PARTES, {"estanque-de-siloam": {"Siloam"}})
+        self.assertEqual(out, [])
+        self.assertEqual(errores_partes(dict(self.SILOAM, name="Piscina de Siloé")),
+                         ["lugar: parts[0] 'Piscina de Siloé' enlaza estanque-de-siloam, que no se llama así; la búsqueda "
+                          "no la encontraría. Usa su name o uno de sus names, o añade ese nombre a sus names"])
+
+    def test_no_repite_un_nombre_del_lugar(self):
+        for nombre in ("Jerusalén", "Sion"):
+            with self.subTest(nombre=nombre):
+                self.assertEqual(errores_partes(dict(self.OVEJAS, name=nombre)),
+                                 [f"lugar: parts[0] '{nombre}' ya es un nombre del lugar (name o names); un nombre "
+                                  f"del lugar entero va en names, no en parts"])
+
+    def test_el_nombre_de_otro_lugar_va_con_place(self):
+        self.assertEqual(errores_partes({k: v for k, v in self.SILOAM.items() if k != "place"}),
+                         ["lugar: parts[0] 'Estanque de Siloam' se llama como el lugar estanque-de-siloam; enlázalo "
+                          "con place: estanque-de-siloam o, si es otro sitio, dale un nombre distinto"])
+
+    def test_dos_partes_no_comparten_nombre(self):
+        self.assertEqual(errores_partes(self.OVEJAS, self.ARBOL, dict(self.OVEJAS, near=True)),
+                         ["lugar: parts[2] repite el nombre 'Puerta de las Ovejas' de parts[0]"])
+
+    def test_una_lista_no_vacia_de_objetos(self):
+        for v in ([], {}, "Puerta de las Ovejas", None):
+            with self.subTest(valor=v):
+                out = []
+                validate.validar_partes({"id": "jerusalen", "name": "Jerusalén", "names": [], "parts": v}, "lugar",
+                                        out.append, LUGARES_PARTES)
+                self.assertEqual(out, ["lugar: parts debe ser una lista no vacía de partes con name y note"])
+        self.assertEqual(errores_partes("Puerta de las Ovejas"), ["lugar: parts[0] debe ser un objeto con name y note"])
+
+    def test_va_justo_despues_de_names(self):
+        o = {"id": "jerusalen", "name": "Jerusalén", "parts": [self.OVEJAS], "names": [{"name": "Jerusalén"}]}
+        out = []
+        validate.validar_partes(o, "lugar", out.append, LUGARES_PARTES)
+        self.assertEqual(out, ["lugar: parts va justo después de names"])
+
+    def test_validar_mira_parts_en_cada_ficha(self):
+        # Sobre los datos de verdad: unas partes en Jerusalén y en una persona salen como errores de validar().
+        datos = validate.load(HERE.parent / "data")
+        jer = next(o for o in datos["places"] if o["id"] == "jerusalen")
+        claves = list(jer.items())
+        jer.clear()
+        for k, v in claves:
+            if k == "parts":    # las partes de verdad de Jerusalén dejan sitio a las de la prueba
+                continue
+            jer[k] = v
+            if k == "names":
+                jer["parts"] = [dict(self.OVEJAS, name="Puerta de prueba"), self.SILOAM, {"name": "Siloam", "note": "Una nota " + "larga " * 40},
+                                {"name": "Betel", "note": "Lleva el nombre de otra ficha."}]
+        pedro = next(o for o in datos["people"] if o["id"] == "pedro")
+        pedro["parts"] = [self.OVEJAS]
+        errores, _ = validate.validar(datos)
+        self.assertEqual(sorted(e for e in errores if "parts" in e), sorted([
+            f"{jer['_fichero']}.parts[2].note: 42 palabras (máximo 40); ¿texto copiado? Resúmelo con palabras propias",
+            f"{jer['_fichero']}: parts[3] 'Betel' se llama como el lugar betel; enlázalo con place: betel o, si es "
+            f"otro sitio, dale un nombre distinto",
+            f"{pedro['_fichero']}: parts solo vale en un lugar"]))
+
+
 def errores_areas(*paradas):
     # Un área de origen lleva order 0 y las paradas con lugar siguen siendo 1, 2, 3...
     inicio = 0 if "unknown_area" in paradas[0] else 1
@@ -1154,6 +1267,14 @@ class Idiomas(unittest.TestCase):
         o = self.lugar()
         del o["names"][0]["en"]
         self.assertIn("names[0].name: le falta su pareja", self.errores(o)[0][0])
+
+    def test_cada_parte_lleva_su_pareja(self):
+        o = self.lugar(parts=[{"name": "Puerta", "note": "Una puerta.", "en": {"name": "Gate", "note": "A gate."}}])
+        self.assertEqual(self.errores(o)[0], [])
+        del o["parts"][0]["en"]["note"]
+        e, _ = self.errores(o)
+        self.assertEqual(len(e), 1)
+        self.assertIn("parts[0].note: le falta su pareja", e[0])
 
     def test_un_bloque_dentro_sin_el_de_arriba_es_una_ficha_a_medias(self):
         e, _ = self.errores(self.lugar(en=False))

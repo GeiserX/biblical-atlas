@@ -129,6 +129,7 @@ keys:
   campo: harvest
   candidatos: candidates
   capitulos: chapters
+  cerca: near
   citas: citations
   clima: weather
   companeros: companions
@@ -197,6 +198,7 @@ keys:
   orden_relato: narrative_order
   otros_nombres: other_names
   paradas: stops
+  partes: parts
   pasajes: passages
   persona: person
   personas: people

@@ -3,11 +3,13 @@ id: zif
 name: Zif
 names:
 - name: Zif
-- name: Desierto de Zif
-  note: El desierto que rodeaba la ciudad, donde se escondió David (Perspicacia «Zif», núm. 3).
 - name: Tell Zif
   modern: true
   note: Sitio donde los geógrafos suelen situar la ciudad, según Perspicacia «Zif», unos 6 km al sureste de Hebrón.
+parts:
+- name: Desierto de Zif
+  near: true
+  note: El desierto que rodeaba la ciudad, donde se escondió David (Perspicacia «Zif», núm. 3).
 type: city
 lat: 31.47475
 lon: 35.13514

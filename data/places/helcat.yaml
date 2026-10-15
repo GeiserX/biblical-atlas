@@ -6,7 +6,7 @@ names:
 - name: Helqat
   note: Grafía de Perspicacia.
 - name: Huqoq
-  note: Al parecer, otro nombre de la ciudad (1Cr 6:75).
+  note: Grafía de Perspicacia y de la nota de 1Cr 6:75 para el nombre que el texto da como Hucoc.
 - name: Hucoc
   note: Grafía que usa 1Cr 6:75. No es la Hucoc de Neftalí.
 type: city
@@ -44,7 +44,7 @@ candidates:
   coord_source: openbible:a1d1918
   coord_url: https://www.openbible.info/geo/ancient/a1d1918/helkath
   note: Punto de la tercera identificación de la ficha «Helkath» de OpenBible.
-summary: Ciudad de la frontera de Aser que después se dio a los guersonitas. 1Cr 6:75 la llama Huqoq. Dónde estaba es una
+summary: Ciudad de la frontera de Aser que después se dio a los guersonitas. 1Cr 6:75 la llama Hucoc. Dónde estaba es una
   conjetura.
 reason: Perspicacia «Helqat» y «Huqoq»; Jos 19:25; 1Cr 6:75. Dos propuestas, sin identificación segura.
 sources:

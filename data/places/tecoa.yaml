@@ -5,12 +5,14 @@ names:
 - name: Tecoa
 - name: Teqoa
   note: Grafía que usa Perspicacia.
-- name: Desierto de Tecoa
-  note: Nombre de 2Cr 20:20 para el desierto al este de la ciudad, que Perspicacia «Teqoa» cuenta, al parecer, dentro del desierto
-    de Judá. Allí salió Jehosafat contra Ammón y Moab.
 - name: Khirbet ʼet-Tuquʽ
   modern: true
   note: Ruinas con las que Perspicacia identifica normalmente la ciudad, al sur de Jerusalén y junto al desierto de Judá.
+parts:
+- name: Desierto de Tecoa
+  near: true
+  note: Nombre de 2Cr 20:20 para el desierto al este de la ciudad, que Perspicacia «Teqoa» cuenta, al parecer, dentro del
+    desierto de Judá. Allí salió Jehosafat contra Ammón y Moab.
 type: city
 lat: 31.63247
 lon: 35.21048

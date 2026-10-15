@@ -233,10 +233,11 @@ test('every group of namesakes in data/ (scripts/homonyms.py) is told apart in t
     for (const [kind, gs] of Object.entries(groups)) {
       for (const g of gs) {
         const tipo = kinds[kind];
-        // The line of every member, and the lines the search really paints for the members it lists (6 at most).
+        // The line of every member, and the lines the search really paints for the members it lists (6 at most). A part
+        // of a place («Jardín de Edén», `parte`) opens that place's card too, but it is its own row, not a namesake.
         const lines = g.ids.map((id) => BE.distinguishingLine({ tipo, id }));
         if (repeated(lines)) out.push(`${tipo} ${g.name}: ${lines.map((l) => l || '(nada)').join(' | ')}`);
-        const rs = BE.buscar(g.name), mine = rs.filter((r) => r.sel?.tipo === tipo && g.ids.includes(r.sel.id));
+        const rs = BE.buscar(g.name), mine = rs.filter((r) => !r.parte && r.sel?.tipo === tipo && g.ids.includes(r.sel.id));
         const shown = mine.map((r) => BE.filaResultado(r, rs).distinguisher);
         if (mine.length < Math.min(g.ids.length, 6)) out.push(`${tipo} ${g.name}: la búsqueda lista ${mine.length} de ${g.ids.length}`);
         if (repeated(shown)) out.push(`${tipo} ${g.name}, en la lista: ${shown.map((l) => l || '(nada)').join(' | ')}`);

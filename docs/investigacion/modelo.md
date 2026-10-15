@@ -71,6 +71,8 @@ Un objeto fecha vive bajo tres claves, que el mapa lista en `date_keys`: `fecha`
 | `candidatos` | `candidates` | Ubicaciones posibles de un lugar que no se sabe dónde estaba. |
 | `geometria`, `radio_km` | `geometry`, `radius_km` | La forma de un candidato y el radio de una zona. |
 | `actual` | `modern` | En un nombre de `names`, `true` si es el que jw.org da hoy al lugar. |
+| `partes` | `parts` | Los sitios con nombre dentro de un lugar o junto a él que no son otro nombre suyo: cada uno con `name`, `note` y, si hace falta, `near` y `place` (su ficha propia). |
+| `cerca` | `near` | En una parte de un lugar, `true` si está junto al lugar y no dentro. |
 
 ### Personas y relaciones
 

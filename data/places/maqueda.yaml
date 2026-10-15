@@ -3,7 +3,9 @@ id: maqueda
 name: Maquedá
 names:
 - name: Maquedá
+parts:
 - name: Cueva de Maquedá
+  near: true
   note: Cueva cercana a la ciudad donde se escondieron los cinco reyes y donde quedaron enterrados (Jos 10:16-27).
 type: city
 lat: 31.728465

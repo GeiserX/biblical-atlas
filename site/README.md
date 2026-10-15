@@ -245,9 +245,11 @@ BE.tipo('lugar', {
   momento: (id) => …,                   // fecha a la que salta el cursor al elegirlo; si falta, la primera de lo implicado
   momentoImplicado: (id) => …,          // su fecha cuando lo implica otra selección; si falta, no cuenta
   ficha: (id) => '<html>',              // la ficha del panel
-  buscar: (q, nq, puntuar) => [ … ],    // resultados { grupo, sel, titulo, meta, puntos }
+  buscar: (q, nq, puntuar) => [ … ],    // resultados { grupo, sel, titulo, meta, puntos, parte? }
 });
 ```
+
+Un resultado con `parte` es una parte de un lugar sin ficha propia («Puerta de las Ovejas · en Jerusalén»): su `sel` es la del lugar, pero `resultadosTipos` (`js/buscar.js`) la cuenta como una fila aparte del lugar y de sus otras partes, y las preguntas de forma fija no la toman por una entidad. La ficha del lugar enseña sus partes en `partesHtml` (`js/tipos/lugar.js`).
 
 `BE.tipo('lugar')` devuelve la definición. Registrar dos veces el mismo tipo es un error. `BE.anadirParada(r, parada)` y `BE.anadirCarta(r, carta)` ayudan a rellenar `implicados`.
 

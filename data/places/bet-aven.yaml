@@ -4,7 +4,9 @@ name: Bet-Aven
 names:
 - name: Bet-Aven
   note: Esta es la ciudad de Benjamín. El Bet-Aven de Oseas (Os 4:15) es un apodo de desprecio para Betel y está en su ficha.
+parts:
 - name: Desierto de Bet-Aven
+  near: true
   note: Jos 18:12 lo nombra como tramo de la frontera norte de Benjamín.
 type: city
 lat: null

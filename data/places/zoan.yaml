@@ -5,8 +5,6 @@ names:
 - name: Zoan
 - name: Tanis
   note: Nombre griego por el que se conoce más la ciudad.
-- name: Región de Zoan
-  note: Sl 78:12, 43 usa «región de Zoan» junto a «tierra de Egipto» al recordar los milagros del éxodo.
 - name: San el-Hagar
   modern: true
   note: Pueblo actual junto a las ruinas de Tanis, el nombre griego de Zoan, según Perspicacia «Zoan».
@@ -21,6 +19,7 @@ summary: Ciudad antigua del nordeste del delta del Nilo, más conocida como Tani
 reason: 'Perspicacia «Zoan», párr. 1, 2, 7 y 8; Nú 13:22; Sl 78:12, 43. OpenBible: solo el punto.'
 not_claimed:
 - 'Que Moisés se viera con el faraón en Zoan: Perspicacia expone esa idea y las razones para dudar de ella.'
+- 'Que «la región de Zoan» (Sl 78:12, 43) sea otro nombre de la ciudad: Perspicacia la pone en paralelo con la tierra de Egipto.'
 sources:
 - it-zoan
 - openbible-geo

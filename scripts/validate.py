@@ -104,6 +104,9 @@ CAMPOS_EXPLICACION = {"id", "title", "text", "sources", "reason", "checked_on", 
 SECCIONES_CALENDARIO = {"months", "explanation"}
 CAMPOS_FIESTA = {"name", "from", "to", "instituted_in", "sources", "reason", "status", "checked_on"}
 CAMPOS_PAPEL = {"role", "date", "place"}
+# Una parte de un lugar (`parts`): un sitio con nombre dentro de él o junto a él. No lleva época, ni nombre de hoy, ni
+# punto propio: si tiene ficha, `place` la enlaza.
+CAMPOS_PARTE = {"name", "note", "near", "place"}
 
 # Avisos (modelo.md, sección 13). Escriben y salen con 0 mientras cada código quede dentro de su presupuesto
 # (avisos-presupuesto.txt); con --strict, fallan.
@@ -359,6 +362,65 @@ def validar_nombres(o, tipo, donde, err):
         err(f"{donde}: {len(modernos)} nombres llevan modern (names{modernos}); un lugar lleva uno como mucho")
     if not o.get("names"):
         err(f"{donde}: 'names' vacío")
+
+
+def validar_partes(o, donde, err, lugares, alias=None):
+    """Los `parts` de un lugar: sitios con nombre dentro de él o junto a él (una puerta, una torre, un estanque), que no
+    son otro nombre del lugar entero (README de la investigación, «Identificadores»). Van justo después de `names`; cada
+    una lleva name y note, y si hace falta near: true (está junto al lugar, no dentro) y place (su ficha propia).
+    `lugares` es {id: name} de todos los lugares y `alias`, {id: nombres de su names}: una parte con place se llama
+    como esa ficha o como uno de sus names, porque la búsqueda la encuentra por ellos y no da fila propia a la parte."""
+    if "parts" not in o:
+        return
+    ps = o["parts"]
+    if not isinstance(ps, list) or not ps:
+        err(f"{donde}: parts debe ser una lista no vacía de partes con name y note")
+        return
+    claves = list(o)
+    pos = claves.index("parts")
+    if pos == 0 or claves[pos - 1] != "names":
+        err(f"{donde}: parts va justo después de names")
+    propios = {o.get("name")} | {n.get("name") for n in o.get("names") or [] if isinstance(n, dict)}
+    vistos = {}
+    for i, p in enumerate(ps):
+        pd = f"{donde}: parts[{i}]"
+        if not isinstance(p, dict):
+            err(f"{pd} debe ser un objeto con name y note")
+            continue
+        sobran = set(p) - CAMPOS_PARTE - set(languages.LANGUAGES)
+        if sobran:
+            err(f"{pd} lleva {sorted(sobran)}; una parte solo lleva name, note, near y place, sin from, to ni modern")
+        nombre = p.get("name")
+        if not isinstance(nombre, str) or not nombre.strip():
+            err(f"{pd} sin 'name'")
+            nombre = None
+        if not isinstance(p.get("note"), str) or not p["note"].strip():
+            err(f"{pd} sin 'note'")
+        if "near" in p and p["near"] is not True:
+            err(f"{pd}.near solo puede ser true, no {p['near']!r}")
+        destino = p.get("place")
+        if "place" in p:
+            if destino == o.get("id"):
+                err(f"{pd}.place es el propio lugar; place enlaza la ficha de otro lugar")
+            elif not isinstance(destino, str) or destino not in lugares:
+                err(f"{pd}.place '{destino}' no existe en data/places/")
+            elif nombre and nombre != lugares[destino] and nombre not in (alias or {}).get(destino, ()):
+                err(f"{pd} '{nombre}' enlaza {destino}, que no se llama así; la búsqueda no la encontraría. Usa su name "
+                    f"o uno de sus names, o añade ese nombre a sus names")
+        if nombre is None:
+            continue
+        if nombre in propios:
+            err(f"{pd} '{nombre}' ya es un nombre del lugar (name o names); un nombre del lugar entero va en names, "
+                f"no en parts")
+        if "place" not in p:
+            otro = next((lid for lid, n in lugares.items() if n == nombre and lid != o.get("id")), None)
+            if otro:
+                err(f"{pd} '{nombre}' se llama como el lugar {otro}; enlázalo con place: {otro} o, si es otro sitio, "
+                    f"dale un nombre distinto")
+        if nombre in vistos:
+            err(f"{pd} repite el nombre '{nombre}' de parts[{vistos[nombre]}]")
+        else:
+            vistos[nombre] = i
 
 
 # ---------------------------------------------------------------- el esquema antiguo
@@ -1843,6 +1905,8 @@ def validar(datos):
     validar_libros(datos, err, meses)
     offices = (datos["vocabulary"].get("offices") or {})
     puntos = formas.puntos_de_vertices(datos["places"])
+    nombres_lugares = {o.get("id"): o.get("name") for o in datos["places"]}
+    alias_lugares = {o.get("id"): {n.get("name") for n in o.get("names") or [] if isinstance(n, dict)} for o in datos["places"]}
 
     for tipo in TYPES:
         vistos = set()
@@ -1874,6 +1938,9 @@ def validar(datos):
             textos_largos(limpio_, donde, err)
             if tipo == "places":
                 validar_lugar(limpio_, donde, err, fuentes, puntos)
+                validar_partes(limpio_, donde, err, nombres_lugares, alias_lugares)
+            elif "parts" in limpio_:
+                err(f"{donde}: parts solo vale en un lugar")
             if tipo in ("places", "people"):
                 validar_nombres(limpio_, tipo, donde, err)
             if tipo == "people":

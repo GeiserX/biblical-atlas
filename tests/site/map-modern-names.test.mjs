@@ -13,12 +13,14 @@ const nombreHoy = vm.runInNewContext(`(${fn})`);
 const data = JSON.parse(fs.readFileSync(new URL(process.env.BE_DATA_FILE || 'site/data.json', root), 'utf8'));
 const places = data.lugares;
 
-// Aliases whose note mentions the present without being today's name. PR 179 removed them as labels.
+// Aliases whose note mentions the present without being today's name. PR 179 removed them as labels. Some of them
+// are parts of the place now (`partes`), not names: they still must not become today's name.
 for (const [id, alias] of [['antilibano', 'Amaná'], ['arnon', 'Valle torrencial de Arnón'], ['hamat', 'Epifanía'],
   ['jerusalen', 'Torre de David'], ['manantial-de-guihon', 'Guihón'], ['sirte', 'Gran Sirte'], ['zelza', 'Tumba de Raquel']]) {
   test(`${id}: «${alias}» is not today's name`, () => {
     const before = JSON.stringify(places[id]);
-    assert.ok(places[id].nombres.some((n) => n.nombre === alias), 'the alias remains');
+    const kept = [...places[id].nombres, ...(places[id].partes || [])].some((n) => n.nombre === alias);
+    assert.ok(kept, 'the alias remains, as a name or as a part');
     assert.notEqual(nombreHoy(places[id]), alias);
     assert.equal(JSON.stringify(places[id]), before, 'no data or alias is mutated');
   });

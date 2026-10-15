@@ -3,11 +3,13 @@ id: dor
 name: Dor
 names:
 - name: Dor
-- name: Laderas de Dor
-  note: 'Jos 11:2 y 12:23. Perspicacia recoge dos lecturas: los acantilados costeros o las colinas hacia el Carmelo.'
 - name: Khirbet el-Burj (Tel Dor)
   modern: true
   note: Sitio con el que Perspicacia suele identificar la ciudad, en la costa, unos 13 km al norte de Cesarea.
+parts:
+- name: Laderas de Dor
+  near: true
+  note: 'Jos 11:2 y 12:23. Perspicacia recoge dos lecturas: los acantilados costeros o las colinas hacia el Carmelo.'
 type: city
 lat: 32.617428
 lon: 34.916364

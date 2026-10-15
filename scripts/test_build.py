@@ -289,6 +289,49 @@ class SqliteRepite(unittest.TestCase):
         self.assertEqual(filas, [("Jope", None), ("Yafo (Jaffa)", 1)])
 
 
+class PartesDeUnLugar(unittest.TestCase):
+    """`parts` de un lugar sale como `partes` en data.json, en el núcleo (la búsqueda las lee), y en la tabla
+    lugar_partes. La prueba cambia las partes de verdad de Jerusalén por estas tres."""
+    PARTES = [{"name": "Puerta de prueba", "note": "Una puerta."},
+              {"name": "Árbol de prueba", "near": True, "note": "Junto a la ciudad."},
+              {"name": "Estanque de Siloam", "place": "estanque-de-siloam", "note": "Tiene su ficha."}]
+
+    @classmethod
+    def setUpClass(cls):
+        datos, _ = build.cargar(HERE.parent / "data")
+        jer = next(o for o in datos["places"] if o["id"] == "jerusalen")
+        claves = list(jer.items())
+        jer.clear()
+        for k, v in claves:
+            if k == "parts":
+                continue
+            jer[k] = v
+            if k == "names":
+                jer["parts"] = cls.PARTES
+        cls.salida, _, errores = build.componer(datos, "2026-10-15")
+        assert errores == [], errores
+        cls.core, _ = build.split_chunks(cls.salida)
+
+    def test_data_json_lleva_partes_con_sus_claves_de_siempre(self):
+        esperado = [{"nombre": "Puerta de prueba", "nota": "Una puerta."},
+                    {"nombre": "Árbol de prueba", "cerca": True, "nota": "Junto a la ciudad."},
+                    {"nombre": "Estanque de Siloam", "lugar": "estanque-de-siloam", "nota": "Tiene su ficha."}]
+        self.assertEqual(self.salida["lugares"]["jerusalen"]["partes"], esperado)
+        self.assertEqual(self.core["lugares"]["jerusalen"]["partes"], esperado)
+
+    def test_la_tabla_lugar_partes(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            ruta = Path(tmp) / "a.sqlite"
+            build.escribir_sqlite(self.salida, ruta)
+            con = sqlite3.connect(ruta)
+            filas = con.execute("select lugar_id, orden, nombre, nota, lugar, cerca from lugar_partes"
+                                " where lugar_id = 'jerusalen' order by orden").fetchall()
+            con.close()
+        self.assertEqual(filas, [("jerusalen", 0, "Puerta de prueba", "Una puerta.", None, None),
+                                 ("jerusalen", 1, "Árbol de prueba", "Junto a la ciudad.", None, 1),
+                                 ("jerusalen", 2, "Estanque de Siloam", "Tiene su ficha.", "estanque-de-siloam", None)])
+
+
 class SqliteAreaDesconocida(unittest.TestCase):
     def test_la_tabla_paradas_guarda_el_area_desconocida(self):
         # Con los datos de verdad: una parada que la fuente no sitúa va sin lugar y con sus palabras; las demás, sin área.

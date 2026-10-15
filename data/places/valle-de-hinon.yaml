@@ -9,15 +9,16 @@ names:
   note: Forma que da la TNM en 2Re 23:10.
 - name: Gehena
   note: Forma griega del nombre hebreo. Jesús la usa como imagen de la destrucción total (Mt 5:22, 29, 30).
-- name: Tófet
-  note: Lugar del valle, probablemente cerca de la Puerta de los Tiestos, donde se sacrificaba a niños en el fuego; Josías
-    lo inutilizó (2Re 23:10; Jer 19:2, 6; Perspicacia «Tófet»).
 - name: Valle de la Matanza
   note: Nombre que Jehová anuncia para el valle por la cantidad de muertos que dejará su juicio (Jer 7:32; 19:6; Perspicacia
     «Hinón, Valle de»).
 - name: Wadi er-Rababi (Ge Ben Hinnom)
   modern: true
   note: Nombre actual del valle, según Perspicacia «Hinón, Valle de».
+parts:
+- name: Tófet
+  note: Lugar del valle, probablemente cerca de la Puerta de los Tiestos, donde se sacrificaba a niños en el fuego; Josías
+    lo inutilizó (2Re 23:10; Jer 19:2, 6; Perspicacia «Tófet»).
 type: valley
 lat: 31.769167
 lon: 35.228056

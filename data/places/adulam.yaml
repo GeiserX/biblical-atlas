@@ -3,11 +3,13 @@ id: adulam
 name: Adulam
 names:
 - name: Adulam
-- name: Cueva de Adulam
-  note: Cueva cercana a la ciudad donde David se refugió de Saúl y reunió a unos 400 hombres (Perspicacia «Adulam» y «Cueva»).
 - name: Tell esh-Sheikh Madhkur (Horvat ʽAdullam)
   modern: true
   note: Sitio con el que Perspicacia relaciona la ciudad, unos 26 km al OSO de Jerusalén.
+parts:
+- name: Cueva de Adulam
+  near: true
+  note: Cueva cercana a la ciudad donde David se refugió de Saúl y reunió a unos 400 hombres (Perspicacia «Adulam» y «Cueva»).
 type: city
 lat: 31.651667
 lon: 35.001667
