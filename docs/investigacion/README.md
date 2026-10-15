@@ -292,6 +292,7 @@ relations:
 - Slug del nombre TNM más conocido, ASCII y en minúsculas: `mar-de-galilea`, `herodes-antipas`.
 - Los homónimos llevan el rasgo con que los distingue Perspicacia: `jehoram-de-juda`, `jehoram-de-israel`, `dario-el-medo`, `dario-i`, `zacarias-profeta`, `zacarias-padre-de-juan`, `felipe-apostol`. Para las personas nuevas el rasgo es fijo, para que dos carriles elijan el mismo id: el reino en un rey, `<nombre>-hijo-de-<padre>` si se sabe el padre, y si no, el rasgo de Perspicacia ([`versiculos.md`](versiculos.md#4-personas), sección 4).
 - Un lugar lleva un solo id aunque tenga varios nombres. Los otros van en `names`, con `from` y `to` si la fuente da la época.
+- Uno de los `names` de un lugar puede llevar `modern: true`: es el nombre que jw.org da hoy al sitio o al lugar («Yafo (Jaffa)» en Jope, «Al-Muqayyar» en Ur). Solo se pone si una publicación de jw.org lo dice; no se deduce de cómo está escrita la nota. Un lugar lleva uno como mucho, sin `from` ni `to`, y nunca es su `name`. Es el segundo rótulo del mapa («hoy Yafo (Jaffa)»), la columna «Hoy» de «Nombres de este encuadre» y el «hoy» de la búsqueda. `scripts/validate.py` lo comprueba.
 - Antes de crear un fichero se comprueba que no existe y se crea en modo exclusivo (`open(ruta, "x")`). Si otro carril ya lo creó, se cita su id y los añadidos van a propuestas.
 
 ## Fichas mínimas

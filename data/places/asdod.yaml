@@ -7,6 +7,7 @@ names:
 - name: Azoto
   note: Nombre griego con el que se la conocía en el siglo I.
 - name: Esdud (Tel Ashdod)
+  modern: true
   note: Lugar con el que Perspicacia identifica la ciudad antigua.
 type: city
 lat: 31.7572

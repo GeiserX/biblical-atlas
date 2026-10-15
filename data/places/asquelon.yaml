@@ -4,6 +4,7 @@ name: Asquelón
 names:
 - name: Asquelón
 - name: Tel Ashqelon
+  modern: true
   note: Sitio con que la identifica Perspicacia, 19 km al norte-noreste de Gaza.
 type: port
 lat: 31.663889

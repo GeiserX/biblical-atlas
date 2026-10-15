@@ -4,6 +4,7 @@ name: Atalia
 names:
 - name: Atalia
 - name: Antalya
+  modern: true
   note: Nombre actual de la ciudad.
 type: port
 lat: 36.88127

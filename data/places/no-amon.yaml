@@ -6,6 +6,7 @@ names:
 - name: 'No'
   note: Forma breve de Jer 46:25 y Ez 30:14, 15, según Perspicacia «No, No-amón».
 - name: Tebas
+  modern: true
   note: Nombre griego, el que se usa hoy; lo da la nota de Na 3:8.
 type: city
 lat: 25.720556

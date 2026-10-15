@@ -4,6 +4,7 @@ name: Samotracia
 names:
 - name: Samotracia
 - name: Samothráki
+  modern: true
   note: Nombre actual de la isla.
 type: island
 lat: 40.45

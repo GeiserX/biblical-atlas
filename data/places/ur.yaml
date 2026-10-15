@@ -6,6 +6,7 @@ names:
 - name: Ur de los caldeos
   note: Así la llama Gé 11:31.
 - name: Al-Muqayyar
+  modern: true
   note: Sitio con el que se la identifica por lo general.
 type: city
 lat: 30.962222

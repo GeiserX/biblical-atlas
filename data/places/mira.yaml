@@ -4,6 +4,7 @@ name: Mira
 names:
 - name: Mira
 - name: Demre
+  modern: true
   note: Nombre actual del lugar.
 type: city
 lat: 36.25917

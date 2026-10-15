@@ -4,6 +4,7 @@ name: Alejandría
 names:
 - name: Alejandría
 - name: Al-Iskandariyya
+  modern: true
   note: Nombre árabe de la ciudad actual, que ocupa el mismo sitio, según Perspicacia.
 type: city
 lat: 31.1825

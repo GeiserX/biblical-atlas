@@ -70,6 +70,7 @@ Un objeto fecha vive bajo tres claves, que el mapa lista en `date_keys`: `fecha`
 | `coord_nota` | `coord_note` | Qué representa el punto. |
 | `candidatos` | `candidates` | Ubicaciones posibles de un lugar que no se sabe dónde estaba. |
 | `geometria`, `radio_km` | `geometry`, `radius_km` | La forma de un candidato y el radio de una zona. |
+| `actual` | `modern` | En un nombre de `names`, `true` si es el que jw.org da hoy al lugar. |
 
 ### Personas y relaciones
 

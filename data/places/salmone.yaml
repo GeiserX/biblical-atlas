@@ -4,6 +4,7 @@ name: Salmone
 names:
 - name: Salmone
 - name: cabo Sidero
+  modern: true
   note: Cabo del extremo oriental de Creta con el que se suele identificar.
 type: cape
 lat: 35.31603

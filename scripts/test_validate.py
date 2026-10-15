@@ -279,6 +279,57 @@ class Repite(unittest.TestCase):
                          [f"{viaje['_fichero']}: repeats debe ser uno de ['yearly'], no 'monthly'"])
 
 
+def errores_nombres(*nombres, tipo="places", name="Jope"):
+    out = []
+    validate.validar_nombres({"name": name, "names": list(nombres)}, tipo, "lugar", out.append)
+    return out
+
+
+class NombreDeHoy(unittest.TestCase):
+    """`modern: true` marca el nombre que jw.org da hoy a un lugar. Cada prueba mira primero que la forma buena pasa."""
+    HOY = {"name": "Yafo (Jaffa)", "modern": True}
+
+    def test_un_nombre_de_hoy_vale(self):
+        self.assertEqual(errores_nombres({"name": "Jope"}, self.HOY), [])
+
+    def test_modern_solo_es_true(self):
+        for valor in [False, "true", 1, None]:
+            with self.subTest(valor=valor):
+                e = errores_nombres({"name": "Jope"}, dict(self.HOY, modern=valor))
+                self.assertEqual(e, [f"lugar: names[1].modern solo puede ser true, no {valor!r}"])
+
+    def test_solo_en_un_lugar(self):
+        self.assertEqual(errores_nombres({"name": "Pedro"}, tipo="people", name="Pedro"), [])
+        e = errores_nombres({"name": "Pedro"}, {"name": "Simón", "modern": True}, tipo="people", name="Pedro")
+        self.assertEqual(e, ["lugar: names[1].modern solo vale en un lugar"])
+
+    def test_uno_como_mucho(self):
+        e = errores_nombres({"name": "Jope"}, self.HOY, {"name": "Jaffa", "modern": True})
+        self.assertEqual(e, ["lugar: 2 nombres llevan modern (names[1, 2]); un lugar lleva uno como mucho"])
+
+    def test_sin_epoca(self):
+        self.assertEqual(errores_nombres(self.HOY, {"name": "Jope", "from": -1000}), [])
+        for k in ("from", "to"):
+            with self.subTest(clave=k):
+                e = errores_nombres({"name": "Jope"}, dict(self.HOY, **{k: 1950}))
+                self.assertEqual(e, ["lugar: names[1] lleva modern y una época; el nombre de hoy no lleva from ni to"])
+
+    def test_no_es_el_nombre_principal(self):
+        e = errores_nombres({"name": "Jope", "modern": True})
+        self.assertEqual(e, ["lugar: names[0].modern marca 'Jope', que es el nombre principal del lugar"])
+
+    def test_validar_mira_modern_en_cada_lugar(self):
+        # Sobre los datos de verdad: un segundo nombre de hoy en Jope sale como error de validar().
+        datos = validate.load(HERE.parent / "data")
+        jope = next(o for o in datos["places"] if o["id"] == "jope")
+        self.assertEqual([n["name"] for n in jope["names"] if n.get("modern")], ["Yafo (Jaffa)"])
+        jope["names"] = [dict(n, modern=True) if n["name"] == "Jope" else n for n in jope["names"]]
+        errores, _ = validate.validar(datos)
+        self.assertEqual(sorted(e for e in errores if "modern" in e),
+                         [f"{jope['_fichero']}: 2 nombres llevan modern (names[0, 1]); un lugar lleva uno como mucho",
+                          f"{jope['_fichero']}: names[0].modern marca 'Jope', que es el nombre principal del lugar"])
+
+
 def errores_areas(*paradas):
     # Un área de origen lleva order 0 y las paradas con lugar siguen siendo 1, 2, 3...
     inicio = 0 if "unknown_area" in paradas[0] else 1

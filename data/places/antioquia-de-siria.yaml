@@ -4,6 +4,7 @@ name: Antioquía de Siria
 names:
 - name: Antioquía de Siria
 - name: Antakya
+  modern: true
   note: Ciudad turca que ocupa hoy el lugar, según Perspicacia.
 type: city
 lat: 36.22669

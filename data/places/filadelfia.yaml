@@ -4,6 +4,7 @@ name: Filadelfia
 names:
 - name: Filadelfia
 - name: Alaşehir
+  modern: true
   note: Ciudad moderna en el mismo lugar.
 type: city
 lat: 38.35

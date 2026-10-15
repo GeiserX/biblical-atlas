@@ -4,6 +4,7 @@ name: Bellos Puertos
 names:
 - name: Bellos Puertos
 - name: Kalo-Limiones
+  modern: true
   note: La bahía se sigue llamando así en griego moderno.
 type: port
 lat: 34.92969

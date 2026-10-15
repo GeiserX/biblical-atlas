@@ -4,6 +4,7 @@ name: Cauda
 names:
 - name: Cauda
 - name: Gaudos
+  modern: true
   note: Nombre actual de la isla, según Perspicacia «Cauda».
 type: island
 lat: 34.83333

@@ -4,6 +4,7 @@ name: Berea
 names:
 - name: Berea
 - name: Verria
+  modern: true
   note: Nombre actual de la ciudad.
 type: city
 lat: 40.51833

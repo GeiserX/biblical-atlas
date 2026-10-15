@@ -10,6 +10,7 @@ names:
   from: -8
   note: Herodes el Grande la reconstruyó en 9 a.e.c. y le dio el nombre de su padre, Antípater.
 - name: Ras el-ʽAin (Tel Afeq)
+  modern: true
   note: Sitio con el que se identifica hoy.
 type: city
 lat: 32.105

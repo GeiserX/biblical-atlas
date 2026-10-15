@@ -4,6 +4,7 @@ name: Neápolis
 names:
 - name: Neápolis
 - name: Kavala
+  modern: true
   note: Ciudad moderna con la que se la suele relacionar.
 type: port
 lat: 40.935

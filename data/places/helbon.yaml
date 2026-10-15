@@ -4,6 +4,7 @@ name: Helbón
 names:
 - name: Helbón
 - name: Halbun
+  modern: true
   note: Aldea actual con la que se la suele identificar.
 type: city
 lat: 33.6667

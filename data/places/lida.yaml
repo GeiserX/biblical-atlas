@@ -6,6 +6,7 @@ names:
 - name: Lod
   note: Perspicacia cree que Lida y la Lod de 1Cr 8:12 son el mismo lugar.
 - name: el-Ludd
+  modern: true
   note: Nombre árabe del sitio, hoy la ciudad de Lod.
 type: city
 lat: 31.95

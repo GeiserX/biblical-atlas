@@ -4,6 +4,7 @@ name: Puteoli
 names:
 - name: Puteoli
 - name: Pozzuoli
+  modern: true
   note: Ciudad moderna con la que se identifica.
 - name: Dicearquía
   note: Nombre antiguo que le da Josefo, según Perspicacia «Puteoli» y la nota de estudio de Hch 28:13.
