@@ -32,6 +32,7 @@ passages:
 - Hch 13:30
 - 1Co 15:4
 - 1Ti 3:16
+- 1Pe 3:18, 21
 - 2Ti 2:8
 summary: Al amanecer del 16 de nisán, unas mujeres encuentran la tumba abierta y un ángel les dice que Jesús ha
   sido resucitado. Ese día se aparece cinco veces a sus discípulos.
@@ -51,6 +52,7 @@ sources:
 - tnm-b12-b
 - 1-corintios-15
 - 1-timoteo-3
+- 1-pedro-3
 narrative_order:
   series: a7
   order: 124
@@ -59,5 +61,5 @@ links:
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Resurrecci%C3%B3n/
   type: perspicacia
 search: Resurrección de Jesús
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified

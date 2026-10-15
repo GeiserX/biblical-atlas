@@ -18,6 +18,7 @@ sources:
 - it-bitinia
 - hch-16
 - openbible-geo
+- 1-pedro-1
 links:
 - title: 'Perspicacia: «Bitinia»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Bitinia/
@@ -25,5 +26,5 @@ links:
 - title: Hechos 16 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/hechos/16/
   type: bible
-checked_on: '2026-09-28'
+checked_on: '2026-10-14'
 status: verified

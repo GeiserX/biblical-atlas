@@ -145,9 +145,10 @@ relations:
   - genesis-20
   - genesis-23
   - genesis-49
+  - 1-pedro-3
   reason: 'Gé 11:29: la esposa de Abrán se llamaba Sarái. Gé 20:12: era hija de su padre, pero no de su madre. Perspicacia
     «Sara» dice que se casaron en Ur.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-14'
   status: verified
 - type: kin
   person: nacor-hijo-de-tare

@@ -81,6 +81,7 @@ sources:
 - galatas-1
 - galatas-2
 - it-simon
+- 1-pedro-1
 distinct_from:
 - simon-el-mago
 - simon-el-curtidor
@@ -171,9 +172,11 @@ relations:
   - it-pedro-cartas
   - bt-4
   - 1-pedro-5
-  reason: 1Pe 5:13 manda saludos desde Babilonia. Perspicacia la toma por la ciudad del Éufrates, con muchos judíos; el texto
-    no lo aclara.
-  checked_on: '2026-09-29'
+  - it-pedro
+  - it-babilonia
+  reason: '1Pe 5:13 saluda desde Babilonia, la ciudad del Éufrates según «Pedro, Cartas de». Perspicacia «Pedro» habla de
+    su estancia allí y no da ruta: es residencia, no parada de un viaje. «Babilonia» dice que fue por su colonia judía.'
+  checked_on: '2026-10-14'
   status: verified
 - type: accompanies
   person: juan-marcos
@@ -191,8 +194,9 @@ relations:
   sources:
   - it-pedro-cartas
   - 1-pedro-5
+  - it-marcos
   reason: Marcos estaba con él cuando escribió la primera carta (1Pe 5:13); Perspicacia «Pedro, Cartas de», párr. 3.
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-14'
   status: verified
 - type: accompanies
   person: silas
@@ -210,8 +214,9 @@ relations:
   sources:
   - it-pedro-cartas
   - 1-pedro-5
+  - it-silas
   reason: Perspicacia («Pedro, Cartas de», párr. 1) dice que se valió de Silvano para escribir la primera carta (1Pe 5:12).
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-14'
   status: verified
 - type: lived_in
   place: betsaida
@@ -297,6 +302,16 @@ relations:
   reason: 'Hch 9:43 y 10:6, 32: se queda bastantes días en Jope en casa de Simón; Perspicacia «Simón», núm. 9, lo pone en 36.'
   checked_on: '2026-09-29'
   status: verified
+- type: holds_office
+  office: apostle
+  inferred: false
+  sources:
+  - 1-pedro-1
+  - it-pedro
+  reason: '1Pe 1:1: abre la carta presentándose como apóstol de Jesucristo. Perspicacia «Pedro» lo trata como apóstol desde
+    su primer párrafo.'
+  checked_on: '2026-10-14'
+  status: verified
 links:
 - title: 'Perspicacia: «Pedro»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Pedro/
@@ -321,5 +336,9 @@ history:
   change: La relación con su suegra decía que Perspicacia deduce de ella el matrimonio. Perspicacia «Pedro», párr. 4, lo da
     por 1Co 9:5 y cuenta aparte lo de la suegra (Mr 1:29-31).
   source: 1-corintios-9
-checked_on: '2026-10-02'
+- date: '2026-10-14'
+  change: 'La relación lived_in con Babilonia (c. 62-64) dice ahora por qué es residencia y no un viaje: Perspicacia «Pedro»
+    habla de su estancia allí sin ruta. Suma «Pedro» y «Babilonia» a sus fuentes; las demás relaciones no cambian.'
+  source: 1-pedro-5
+checked_on: '2026-10-14'
 status: verified

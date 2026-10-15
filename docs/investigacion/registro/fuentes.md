@@ -64,6 +64,7 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | 1-juan-4 | [1 Juan 4](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/1-juan/4/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | 1-juan-5 | [1 Juan 5](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/1-juan/5/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | 1-pedro-1 | [1 Pedro 1](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/1-pedro/1/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
+| 1-pedro-3 | [1 Pedro 3](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/1-pedro/3/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | 1-pedro-5 | [1 Pedro 5](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/1-pedro/5/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | 1-reyes-1 | [1 Reyes 1](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/1-reyes/1/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | 1-reyes-10 | [1 Reyes 10](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/1-reyes/10/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
@@ -3296,6 +3297,7 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-tarsis | [Tarsis](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Tarsis/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
 | it-tarso | [Tarso](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Tarso/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
 | it-tartan | [Tartán](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Tart%C3%A1n/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-30 |
+| it-tartaro | [Tártaro](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/T%C3%A1rtaro/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-14 |
 | it-tatenai | [Tatenai](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Tatenai/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
 | it-tebah | [Tébah](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/T%C3%A9bah/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-tebalias | [Tebalías](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Tebal%C3%ADas/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
