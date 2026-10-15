@@ -139,6 +139,12 @@ class Chunks(unittest.TestCase):
         self.assertNotIn("razon", self.core["eventos"][0])
         self.assertEqual(self.core["periodos"], self.salida["periodos"])
 
+    def test_the_core_keeps_the_modern_name_the_map_labels(self):
+        # `modern: true` sale como `actual` y se queda en el núcleo: el segundo rótulo del mapa (nombreHoy) lo lee.
+        nombres = self.core["lugares"]["jope"]["nombres"]
+        self.assertEqual([n["nombre"] for n in nombres if n.get("actual")], ["Yafo (Jaffa)"])
+        self.assertNotIn("actual", build.DETAIL_KEYS["lugares"])
+
     def test_the_core_keeps_the_title_of_the_sources_the_map_names(self):
         # La leyenda y las etiquetas de una zona dicen «según Perspicacia «Estrella»» (fuenteCorta, site/js/mapa.js).
         del_mapa = build.fuentes_del_mapa(self.salida)
@@ -269,6 +275,18 @@ class SqliteRepite(unittest.TestCase):
             con.close()
         self.assertEqual(filas, [("elcana-sube-a-silo", "yearly"), ("pascua-de-jesus-a-los-12", "yearly"),
                                  ("recorrido-de-samuel", "yearly")])
+
+    def test_la_tabla_lugar_nombres_marca_el_nombre_de_hoy(self):
+        datos, _ = build.cargar(HERE.parent / "data")
+        salida, _, errores = build.componer(datos, "2026-10-15")
+        self.assertEqual(errores, [])
+        with tempfile.TemporaryDirectory() as tmp:
+            ruta = Path(tmp) / "a.sqlite"
+            build.escribir_sqlite(salida, ruta)
+            con = sqlite3.connect(ruta)
+            filas = con.execute("select nombre, actual from lugar_nombres where lugar_id = 'jope' order by orden").fetchall()
+            con.close()
+        self.assertEqual(filas, [("Jope", None), ("Yafo (Jaffa)", 1)])
 
 
 class SqliteAreaDesconocida(unittest.TestCase):

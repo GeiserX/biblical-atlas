@@ -4,6 +4,7 @@ name: Jope
 names:
 - name: Jope
 - name: Yafo (Jaffa)
+  modern: true
   note: Ciudad actual, unida a Tel Aviv, que ocupa el sitio antiguo.
 type: port
 lat: 32.054481

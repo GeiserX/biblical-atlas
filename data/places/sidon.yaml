@@ -4,6 +4,7 @@ name: Sidón
 names:
 - name: Sidón
 - name: Saida
+  modern: true
   note: Nombre actual de la ciudad.
 - name: Sidón la Grande
   note: Así la llama Jos 11:8.

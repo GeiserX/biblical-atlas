@@ -6,6 +6,7 @@ names:
 - name: Paneas
   note: Nombre anterior, en honor del dios Pan (Perspicacia).
 - name: Banias
+  modern: true
   note: Pueblo actual en el mismo lugar.
 type: city
 lat: 33.246111

@@ -4,6 +4,7 @@ name: Jericó
 names:
 - name: Jericó
 - name: Tell es-Sultan (Tel Yeriho)
+  modern: true
   note: Montículo de la ciudad antigua, unos 22 km al ENE de Jerusalén.
 - name: Tulul Abu el-ʽAlayiq
   note: Sitio donde se sitúa la Jericó del siglo I, la ciudad nueva.
@@ -65,5 +66,5 @@ history:
 - date: '2026-09-29'
   change: La razón cita ahora de dónde sale la fecha de la toma, que entra en el resumen.
   source: josue-6
-checked_on: '2026-10-14'
+checked_on: '2026-10-15'
 status: verified

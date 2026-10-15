@@ -8,6 +8,7 @@ names:
 - name: Mar occidental
   note: 'Otro nombre bíblico: cerraba por el oeste la tierra dada a Israel (Perspicacia).'
 - name: Mediterráneo
+  modern: true
   note: Nombre actual, de origen latino.
 - name: Mar del oeste
   note: Así lo llama Zac 14:8; la nota al pie aclara que es el Mediterráneo.

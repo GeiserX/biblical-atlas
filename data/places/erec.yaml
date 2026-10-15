@@ -6,6 +6,7 @@ names:
 - name: Uruk
   note: Nombre que le daban los acadios.
 - name: Warka
+  modern: true
   note: Nombre árabe actual del sitio.
 type: city
 lat: 31.322222

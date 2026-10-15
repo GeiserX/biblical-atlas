@@ -4,6 +4,7 @@ name: Iconio
 names:
 - name: Iconio
 - name: Konya
+  modern: true
   note: Ciudad turca actual en el mismo lugar.
 type: city
 lat: 37.8722

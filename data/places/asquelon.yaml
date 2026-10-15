@@ -4,6 +4,7 @@ name: Asquelón
 names:
 - name: Asquelón
 - name: Tel Ashqelon
+  modern: true
   note: Sitio con que la identifica Perspicacia, 19 km al norte-noreste de Gaza.
 type: port
 lat: 31.663889
@@ -12,7 +13,7 @@ precision: point
 coord_source: openbible:ac87d4c
 coord_url: https://www.openbible.info/geo/ancient/ac87d4c/ashkelon
 coord_note: Punto de OpenBible en Tel Ashkelon, donde la sitúa Perspicacia.
-summary: Puerto filisteo del Mediterráneo, una de las cinco ciudades principales de los filisteos, unos 19 km al norte de
+summary: Puerto filisteo del Mediterráneo, una de las cinco grandes ciudades de Filistea, unos 19 km al norte de
   Gaza. Seguía sin conquistar cuando Josué terminó sus campañas.
 reason: 'Perspicacia «Asquelón», párr. 1 y 3; Jos 13:3, Am 1:8 y Sof 2:4-7. OpenBible: solo el punto.'
 sources:
@@ -40,5 +41,5 @@ history:
   change: La razón repetía dos frases al juntar Josué y Amós; se dejan en una y se añade Sof 2:4-7, que Perspicacia cita en
     el párr. 3.
   source: sofonias-2
-checked_on: '2026-10-12'
+checked_on: '2026-10-15'
 status: verified

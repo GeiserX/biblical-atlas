@@ -4,6 +4,7 @@ name: Arvad
 names:
 - name: Arvad
 - name: Arwad
+  modern: true
   note: Nombre actual de la isla con la que hoy se la relaciona, según Perspicacia.
 type: island
 lat: 34.856111

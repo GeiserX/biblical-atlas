@@ -4,6 +4,7 @@ name: Tiatira
 names:
 - name: Tiatira
 - name: Akhisar
+  modern: true
   note: Nombre actual de la ciudad.
 type: city
 lat: 38.92021

@@ -6,6 +6,7 @@ names:
 - name: Kalhu
   note: Nombre en los textos cuneiformes asirios.
 - name: Nimrud
+  modern: true
   note: Nombre actual del sitio, que recuerda a su fundador.
 type: city
 lat: 36.098056

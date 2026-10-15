@@ -4,6 +4,7 @@ name: Pátara
 names:
 - name: Pátara
 - name: Gelemis
+  modern: true
   note: Aldea actual con cuyas ruinas se identifica.
 type: port
 lat: 36.26028

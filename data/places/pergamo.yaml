@@ -4,6 +4,7 @@ name: Pérgamo
 names:
 - name: Pérgamo
 - name: Bergama
+  modern: true
   note: Ciudad moderna cercana al sitio antiguo.
 type: city
 lat: 39.13216

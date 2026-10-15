@@ -1310,11 +1310,8 @@ function marcaCercana(x, y) {
   return mejor;
 }
 function nombreHoy(l) {
-  // Solo las fórmulas afirmativas que identifican este nombre como actual. Una mención incidental a «hoy»
-  // (otro río, un nombre antiguo o una ubicación que no conocemos) no convierte el alias en nombre moderno.
-  // Si la nota no lo afirma con estas fórmulas, no ponemos un segundo rótulo; el alias sigue en la ficha y la búsqueda.
-  const actual = /^(?:Nombre(?: árabe| hebreo)? (?:actual|de hoy)|Nombre árabe de la ciudad actual|Nombre árabe del sitio, hoy|Nombre griego, el que se usa hoy|(?:Ciudad|Pueblo|Aldea) (?:actual|moderna)|Ciudad turca (?:actual|que ocupa hoy)|Montículo con el que Perspicacia identifica hoy|Sitio con el que se identifica hoy|La bahía se sigue llamando así en griego moderno)\b/i;
-  const n = (l?.nombres || []).find((x) => x.desde == null && x.hasta == null && actual.test((x.nota || '').trim()));
+  // El nombre de hoy lo marcan los datos (`modern: true` en el YAML, `actual` en data.json), nunca la nota.
+  const n = (l?.nombres || []).find((x) => x.actual === true);
   return n ? n.nombre : null;
 }
 /** Nombre del lugar en la fecha t (G-11): el de `nombres` cuya época la cubre; si ninguno, el nombre principal. */

@@ -4,6 +4,7 @@ name: Asón
 names:
 - name: Asón
 - name: Behramkale
+  modern: true
   note: Nombre actual del lugar; antes se llamaba Behramköy.
 type: port
 lat: 39.49056

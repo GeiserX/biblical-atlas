@@ -7,6 +7,9 @@ names:
   note: Así la llama Am 6:2. Perspicacia la relaciona con los años en que Jeroboán II la había sometido (2Re 14:28).
 - name: Epifanía
   note: Nombre que tuvo en época griega y romana, en honor de Antíoco IV Epífanes (Perspicacia). Hoy es Hama.
+- name: Hama
+  modern: true
+  note: Nombre actual de la ciudad, una forma abreviada de Hamat, según Perspicacia «Hamat, hamateo».
 type: city
 lat: 35.1365
 lon: 36.75
@@ -51,5 +54,5 @@ history:
   change: 'La razón y las fuentes añaden 2Sa 8:9, 10: Toi, rey de Hamat, envía a su hijo a felicitar a David por vencer a
     Hadadézer.'
   source: 2-samuel-8
-checked_on: '2026-10-13'
+checked_on: '2026-10-15'
 status: verified

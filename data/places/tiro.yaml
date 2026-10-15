@@ -4,6 +4,7 @@ name: Tiro
 names:
 - name: Tiro
 - name: Sour
+  modern: true
   note: Ciudad moderna con la que se identifica.
 type: port
 lat: 33.27083

@@ -333,6 +333,34 @@ def validar_areas(viaje, donde, err, puntos=None):
         err(f"{donde}: todas las paradas son áreas desconocidas; un viaje necesita al menos un lugar")
 
 
+def validar_nombres(o, tipo, donde, err):
+    """Los `names` de un lugar o una persona. `modern: true` marca el nombre que jw.org da hoy al lugar (README de la
+    investigación, «Identificadores»): solo en un lugar, uno como mucho, sin época y distinto del nombre principal."""
+    modernos = []
+    for i, n in enumerate(o.get("names") or []):
+        if not n.get("name"):
+            err(f"{donde}: names[{i}] sin 'name'")
+        for k in ("from", "to"):
+            if k in n and not isinstance(n[k], int):
+                err(f"{donde}: names[{i}].{k} debe ser un año entero")
+        if "modern" not in n:
+            continue
+        if n["modern"] is not True:
+            err(f"{donde}: names[{i}].modern solo puede ser true, no {n['modern']!r}")
+        if tipo != "places":
+            err(f"{donde}: names[{i}].modern solo vale en un lugar")
+            continue
+        modernos.append(i)
+        if "from" in n or "to" in n:
+            err(f"{donde}: names[{i}] lleva modern y una época; el nombre de hoy no lleva from ni to")
+        if n.get("name") == o.get("name"):
+            err(f"{donde}: names[{i}].modern marca '{n.get('name')}', que es el nombre principal del lugar")
+    if len(modernos) > 1:
+        err(f"{donde}: {len(modernos)} nombres llevan modern (names{modernos}); un lugar lleva uno como mucho")
+    if not o.get("names"):
+        err(f"{donde}: 'names' vacío")
+
+
 # ---------------------------------------------------------------- el esquema antiguo
 
 def old_schema(data_dir):
@@ -1847,14 +1875,7 @@ def validar(datos):
             if tipo == "places":
                 validar_lugar(limpio_, donde, err, fuentes, puntos)
             if tipo in ("places", "people"):
-                for i, n in enumerate(limpio_.get("names") or []):
-                    if not n.get("name"):
-                        err(f"{donde}: names[{i}] sin 'name'")
-                    for k in ("from", "to"):
-                        if k in n and not isinstance(n[k], int):
-                            err(f"{donde}: names[{i}].{k} debe ser un año entero")
-                if not limpio_.get("names"):
-                    err(f"{donde}: 'names' vacío")
+                validar_nombres(limpio_, tipo, donde, err)
             if tipo == "people":
                 validar_persona(limpio_, donde, err)
             if tipo == "journeys":

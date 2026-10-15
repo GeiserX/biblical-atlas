@@ -4,6 +4,7 @@ name: Valle de Cedrón
 names:
 - name: Valle de Cedrón
 - name: Nahal Qidron
+  modern: true
   note: Nombre actual.
 type: valley
 lat: 31.780278

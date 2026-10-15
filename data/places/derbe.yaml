@@ -4,6 +4,7 @@ name: Derbe
 names:
 - name: Derbe
 - name: Kerti Hüyük
+  modern: true
   note: Montículo con el que Perspicacia identifica hoy la ciudad.
 type: city
 lat: 37.34857

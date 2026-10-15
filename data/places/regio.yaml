@@ -4,6 +4,7 @@ name: Regio
 names:
 - name: Regio
 - name: Reggio di Calabria
+  modern: true
   note: Nombre actual de la ciudad.
 type: port
 lat: 38.1088

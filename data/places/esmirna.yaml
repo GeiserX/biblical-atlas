@@ -4,6 +4,7 @@ name: Esmirna
 names:
 - name: Esmirna
 - name: Izmir
+  modern: true
   note: Nombre actual de la ciudad.
 type: city
 lat: 38.418889

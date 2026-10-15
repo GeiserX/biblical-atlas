@@ -5,6 +5,9 @@ names:
 - name: Guihon
 - name: Guihón
   note: Grafía de Perspicacia, que da su nombre actual, Ha Guihón. No es el río Guihon de Edén.
+- name: Ha Guihón
+  modern: true
+  note: Nombre actual del manantial, según Perspicacia «Guihón», núm. 2.
 type: lake
 lat: 31.772919
 lon: 35.236383
@@ -30,5 +33,5 @@ links:
 - title: 1 Reyes 1 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/1-reyes/1/
   type: bible
-checked_on: '2026-10-13'
+checked_on: '2026-10-15'
 status: verified

@@ -7,6 +7,9 @@ names:
   note: Así lo titula Perspicacia. Hoy se llama Wadi Mujib.
 - name: Valles de Arnón
   note: Así los nombra la cita de Nú 21:14; la nota al pie da «wadis».
+- name: Wadi Mujib (Nahal Arnon)
+  modern: true
+  note: Nombre actual del torrente y de su desfiladero, según Perspicacia «Arnón, Valle torrencial de».
 type: valley
 lat: 31.465833
 lon: 35.573333
@@ -41,5 +44,5 @@ links:
 - title: Números 22 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/N%C3%BAmeros/22/
   type: bible
-checked_on: '2026-10-12'
+checked_on: '2026-10-15'
 status: verified
