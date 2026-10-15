@@ -120,3 +120,7 @@ En la ficha de un suceso, una parada, una carta, un viaje o un capítulo, «Enla
 ## En el móvil y con el dedo
 
 La ficha es una hoja inferior sobre el mapa, con su asa arriba; las seis escalas de la línea van en un desplegable; el grafo y la conexión tapan el mapa entero. Cada control ofrece una diana de al menos 44 × 44 px. Se prueba a 390 × 844 y 430 × 932 (móvil) y a 768 × 1024 y 1024 × 768 (tablet).
+
+### Lectura sin paneles de contexto
+
+En el modo lectura, «Solo lectura y mapa» oculta la línea de tiempo, la ficha, «Mientras tanto» y la leyenda del mapa. Se puede desmarcar para recuperar los paneles. No filtra los lugares ni las rutas del mapa y no cambia los datos o el cursor. El enlace de la vista conserva esta opción con `foco=1`; cerrar la lectura devuelve los paneles.

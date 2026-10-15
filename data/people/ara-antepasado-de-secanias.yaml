@@ -1,0 +1,23 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ara-antepasado-de-secanias
+name: Ará
+names:
+- name: Ará
+- name: Arah
+perspicacia: 1200000330#2
+summary: 'Cabeza de una familia que volvió de Babilonia con Zorobabel: 775 descendientes. Perspicacia lo hace padre o antepasado
+  de Secanías, suegro de Tobías el ammonita.'
+reason: Perspicacia «Arah», núm. 2; Esd 2:5.
+sources:
+- it-arah
+- esdras-2
+links:
+- title: 'Perspicacia: «Arah»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Arah/
+  type: perspicacia
+checked_on: '2026-10-13'
+status: verified
+distinct_from:
+- ara-hijo-de-jeter
+- ara-hijo-de-ula
+disambiguation: 'Arah núm. 2 de Perspicacia, Ará en la TNM: cabeza de la familia de Esd 2:5, no los aseritas de ese nombre.'

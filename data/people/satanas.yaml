@@ -58,6 +58,8 @@ sources:
 - 1-cronicas-21
 - it-david
 - it-inscripcion
+- 1-juan-3
+- 1-juan-5
 links:
 - title: 'Perspicacia: «Satanás»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Satan%C3%A1s/
@@ -81,7 +83,7 @@ history:
 - date: '2026-10-12'
   change: «el Tentador» sale también en 1Te 3:5; la nota de estudio de ese versículo dice que solo lo usan allí y en Mt 4:3.
   source: 1-tesalonicenses-3
-checked_on: '2026-10-12'
+checked_on: '2026-10-14'
 status: verified
 not_claimed:
 - 'Que la serpiente de Edén fuera Satanás con otra forma: era un animal real que él usó como portavoz.'

@@ -32,7 +32,7 @@ Qué versículos de la TNM se han leído y apuntado en `data/coverage/<libro>.ya
 | [2 Reyes](https://github.com/GeiserX/biblical-atlas/blob/main/data/coverage/2-reyes.yaml) | 25 de 25 | 719 de 719 | 100 % |
 | [1 Crónicas](https://github.com/GeiserX/biblical-atlas/blob/main/data/coverage/1-cronicas.yaml) | 26 de 29 | 942 de 942 | 100 % |
 | [2 Crónicas](https://github.com/GeiserX/biblical-atlas/blob/main/data/coverage/2-cronicas.yaml) | 36 de 36 | 822 de 822 | 100 % |
-| Esdras | 0 de 10 | 0 de 280 | 0 % |
+| [Esdras](https://github.com/GeiserX/biblical-atlas/blob/main/data/coverage/esdras.yaml) | 8 de 10 | 280 de 280 | 100 % |
 | Nehemías | 0 de 13 | 0 de 406 | 0 % |
 | Ester | 0 de 10 | 0 de 167 | 0 % |
 | [Job](https://github.com/GeiserX/biblical-atlas/blob/main/data/coverage/job.yaml) | 42 de 42 | 1070 de 1070 | 100 % |
@@ -44,7 +44,7 @@ Qué versículos de la TNM se han leído y apuntado en `data/coverage/<libro>.ya
 | [Jeremías](https://github.com/GeiserX/biblical-atlas/blob/main/data/coverage/jeremias.yaml) | 52 de 52 | 1364 de 1364 | 100 % |
 | [Lamentaciones](https://github.com/GeiserX/biblical-atlas/blob/main/data/coverage/lamentaciones.yaml) | 5 de 5 | 154 de 154 | 100 % |
 | [Ezequiel](https://github.com/GeiserX/biblical-atlas/blob/main/data/coverage/ezequiel.yaml) | 48 de 48 | 1273 de 1273 | 100 % |
-| Daniel | 0 de 12 | 0 de 357 | 0 % |
+| [Daniel](https://github.com/GeiserX/biblical-atlas/blob/main/data/coverage/daniel.yaml) | 12 de 12 | 357 de 357 | 100 % |
 | [Oseas](https://github.com/GeiserX/biblical-atlas/blob/main/data/coverage/oseas.yaml) | 14 de 14 | 197 de 197 | 100 % |
 | [Joel](https://github.com/GeiserX/biblical-atlas/blob/main/data/coverage/joel.yaml) | 3 de 3 | 73 de 73 | 100 % |
 | [Amós](https://github.com/GeiserX/biblical-atlas/blob/main/data/coverage/amos.yaml) | 9 de 9 | 146 de 146 | 100 % |
@@ -74,20 +74,24 @@ Qué versículos de la TNM se han leído y apuntado en `data/coverage/<libro>.ya
 | [1 Timoteo](https://github.com/GeiserX/biblical-atlas/blob/main/data/coverage/1-timoteo.yaml) | 6 de 6 | 113 de 113 | 100 % |
 | [2 Timoteo](https://github.com/GeiserX/biblical-atlas/blob/main/data/coverage/2-timoteo.yaml) | 4 de 4 | 83 de 83 | 100 % |
 | [Tito](https://github.com/GeiserX/biblical-atlas/blob/main/data/coverage/tito.yaml) | 3 de 3 | 46 de 46 | 100 % |
-| Filemón | 0 de 1 | 0 de 25 | 0 % |
-| Hebreos | 0 de 13 | 0 de 303 | 0 % |
+| [Filemón](https://github.com/GeiserX/biblical-atlas/blob/main/data/coverage/filemon.yaml) | 0 de 1 | 25 de 25 | 100 % |
+| [Hebreos](https://github.com/GeiserX/biblical-atlas/blob/main/data/coverage/hebreos.yaml) | 13 de 13 | 303 de 303 | 100 % |
 | [Santiago](https://github.com/GeiserX/biblical-atlas/blob/main/data/coverage/santiago.yaml) | 5 de 5 | 108 de 108 | 100 % |
-| 1 Pedro | 0 de 5 | 0 de 105 | 0 % |
+| [1 Pedro](https://github.com/GeiserX/biblical-atlas/blob/main/data/coverage/1-pedro.yaml) | 5 de 5 | 105 de 105 | 100 % |
 | [2 Pedro](https://github.com/GeiserX/biblical-atlas/blob/main/data/coverage/2-pedro.yaml) | 3 de 3 | 61 de 61 | 100 % |
-| 1 Juan | 0 de 5 | 0 de 105 | 0 % |
-| 2 Juan | 0 de 1 | 0 de 13 | 0 % |
-| 3 Juan | 0 de 1 | 0 de 14 | 0 % |
+| [1 Juan](https://github.com/GeiserX/biblical-atlas/blob/main/data/coverage/1-juan.yaml) | 5 de 5 | 105 de 105 | 100 % |
+| [2 Juan](https://github.com/GeiserX/biblical-atlas/blob/main/data/coverage/2-juan.yaml) | 1 de 1 | 13 de 13 | 100 % |
+| [3 Juan](https://github.com/GeiserX/biblical-atlas/blob/main/data/coverage/3-juan.yaml) | 0 de 1 | 14 de 14 | 100 % |
 | Judas | 0 de 1 | 0 de 25 | 0 % |
 | Apocalipsis | 0 de 22 | 0 de 404 | 0 % |
-| **Total** | 1092 de 1189 | 28858 de 31062 | 93 % |
+| **Total** | 1136 de 1189 | 30060 de 31062 | 97 % |
 
 ## Capítulos empezados
 
 - 1 Crónicas 19: faltan ninguno (falta marcarlo completo)
 - 1 Crónicas 24: faltan ninguno (falta marcarlo completo)
 - 1 Crónicas 25: faltan ninguno (falta marcarlo completo)
+- Esdras 7: faltan ninguno (falta marcarlo completo)
+- Esdras 8: faltan ninguno (falta marcarlo completo)
+- Filemón 1: faltan ninguno (falta marcarlo completo)
+- 3 Juan 1: faltan ninguno (falta marcarlo completo)

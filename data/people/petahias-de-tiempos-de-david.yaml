@@ -34,5 +34,8 @@ relations:
   reason: '1Cr 24:16: encabeza una de las casas sacerdotales de 24:4-6; Perspicacia «Petahías» lo trata como sacerdote.'
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+disambiguation: El cabeza del turno sacerdotal 19 (1Cr 24:16); no el levita Petahías de los días de Esdras.
+checked_on: '2026-10-13'
 status: verified
+distinct_from:
+- petahias-levita-de-tiempos-de-esdras

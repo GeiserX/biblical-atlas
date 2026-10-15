@@ -33,9 +33,12 @@ relations:
     en el linaje del sacerdote Adaya.
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified
 distinct_from:
 - malkiya-de-tiempos-de-david
 - malkiya-hijo-de-etni
 - malkiya-hijo-del-rey
+- malkiya-descendiente-de-harim
+- malkiya-descendiente-de-paros-1
+- malkiya-descendiente-de-paros-2

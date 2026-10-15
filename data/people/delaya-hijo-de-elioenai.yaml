@@ -24,9 +24,10 @@ relations:
   reason: '1Cr 3:24: uno de los siete hijos de Elioenái.'
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified
 disambiguation: Delayá, hijo de Elioenái y descendiente de David; no el sacerdote que dio nombre a un turno en días de David.
 distinct_from:
 - delaya-de-tiempos-de-david
 - delaya-hijo-de-semaya
+- delaya-sin-registro

@@ -10,6 +10,7 @@ distinct_from:
 - guedalias
 - guedalias-hijo-de-amarias
 - guedalias-hijo-de-jedutun
+- guedalias-de-la-casa-de-jesua
 summary: Príncipe de Jerusalén, hijo de Pasjur. Acusó a Jeremías de quitar el ánimo a los soldados y al pueblo, y con otros
   príncipes lo dejó en una cisterna llena de fango.
 reason: Perspicacia «Guedalías», núm. 3; Jer 38:1-6.
@@ -44,5 +45,5 @@ relations:
   reason: 'Jer 38:1-6: está entre los príncipes que piden su muerte y lo echan a la cisterna.'
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified

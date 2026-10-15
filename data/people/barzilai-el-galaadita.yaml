@@ -10,6 +10,7 @@ disambiguation: El galaadita rico de Roguelim que ayudó a David; no Barzilái e
   que tomó su nombre.
 distinct_from:
 - barzilai-meholatita
+- barzilai-sacerdote
 summary: Galaadita rico de Roguelim. Con Sobí y Makir llevó víveres a David en Mahanaim durante la rebelión de Absalón. A
   sus ochenta años lo despidió en el Jordán y no quiso vivir en la corte.
 reason: Perspicacia «Barzilai», núm. 2; 2Sa 17:27-29.
@@ -19,6 +20,7 @@ sources:
 - 2-samuel-17
 - 2-samuel-19
 - 1-reyes-2
+- esdras-2
 links:
 - title: 'Perspicacia: «Barzilai»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Barzilai/
@@ -51,5 +53,5 @@ relations:
   reason: Perspicacia «Roguelim» lo llama amigo de David; en 2Sa 17:27-29 le lleva comida a Mahanaim.
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-30'
+checked_on: '2026-10-13'
 status: verified

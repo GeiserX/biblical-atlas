@@ -1,0 +1,38 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: ayuno-junto-al-rio-ahava
+title: Ayuno junto al río Ahavá
+date:
+  from: -467
+  to: -467
+  precision: month
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: nisán de 468 a.e.c.
+  detail:
+    month: nisan
+narrative_order:
+  series: esdras
+  order: 8021
+places:
+- rio-ahava
+people:
+- esdras
+passages:
+- Esd 8:21-23
+summary: Esdras mandó ayunar para pedir a Dios que guiara el viaje. Había dicho al rey que Dios protege a quienes lo buscan
+  y no quiso pedirle escolta; Dios escuchó sus ruegos.
+reason: Esd 8:21-23; Perspicacia «Esdras», núm. 1. Antes de la salida del Ahavá el día 12 de nisán (Esd 8:31).
+sources:
+- esdras-8
+- it-esdras
+- si-3
+links:
+- title: 'Perspicacia: «Esdras»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Esdras/
+  type: perspicacia
+- title: Esdras 8 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/esdras/8/
+  type: bible
+checked_on: '2026-10-13'
+status: verified

@@ -1,0 +1,25 @@
+# biblical-atlas: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: imer-de-babilonia
+name: Imer
+names:
+- name: Imer
+type: city
+lat: 32.543333
+lon: 44.422222
+precision: uncertain
+coord_source: openbible:ae4d198
+coord_url: https://www.openbible.info/geo/ancient/ae4d198/immer
+coord_note: OpenBible solo lo sitúa en Babilonia y le da el punto de la ciudad de Babilonia; el sitio real se desconoce.
+summary: Al parecer, un sitio de Babilonia de donde salieron algunos que, al volver, no lograron demostrar su ascendencia
+  israelita.
+reason: 'Perspicacia «Imer», núm. 5; Esd 2:59. OpenBible: solo el punto.'
+sources:
+- it-imer
+- openbible-geo
+- esdras-2
+links:
+- title: 'Perspicacia: «Imer»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Imer/
+  type: perspicacia
+checked_on: '2026-10-13'
+status: verified

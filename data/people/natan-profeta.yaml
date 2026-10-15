@@ -53,6 +53,8 @@ distinct_from:
 - natan-hijo-de-david
 - natan-de-zoba
 - natan-hijo-de-atai
+- natan-enviado-a-casifia
+- natan-descendiente-de-binui
 relations:
 - type: holds_office
   office: prophet

@@ -1,0 +1,58 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: serebias-descendiente-de-mahli
+name: Serebías
+names:
+- name: Serebías
+perspicacia: 1200004020#2
+summary: Levita sensato descendiente de Mahlí, al que trajeron de Casifía para ir con Esdras en 468 a.e.c. Perspicacia ve
+  probable que sea el jefe de los sacerdotes Serebías de Esd 8:24.
+reason: Perspicacia «Serebías», núm. 2; Esd 8:17, 18.
+sources:
+- it-serebias
+- esdras-8
+- it-mahli
+links:
+- title: 'Perspicacia: «Serebías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sereb%C3%ADas/
+  type: perspicacia
+relations:
+- type: kin
+  person: mahli-hijo-de-merari
+  word: ancestor
+  inferred: false
+  sources:
+  - esdras-8
+  - it-serebias
+  - it-mahli
+  reason: Esd 8:18 lo hace descendiente de Mahlí, el nieto de Leví.
+  checked_on: '2026-10-13'
+  status: verified
+- type: accompanies
+  person: esdras
+  date:
+    from: -467
+    to: -467
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 468 a.e.c.
+  inferred: false
+  sources:
+  - esdras-8
+  - it-serebias
+  reason: 'Esd 8:18: lo trajeron con sus hijos y hermanos, 18 hombres, para el viaje de Esdras.'
+  checked_on: '2026-10-13'
+  status: verified
+- type: same_as
+  person: serebias-jefe-de-los-sacerdotes
+  certainty: probable
+  inferred: true
+  sources:
+  - it-serebias
+  - esdras-8
+  reason: 'Perspicacia «Serebías», núm. 2: es probable que el levita de Esd 8:18 sea el jefe de los sacerdotes de Esd 8:24.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified

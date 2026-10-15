@@ -13,7 +13,9 @@ distinct_from:
 - miguel-hijo-de-jesisai
 - miguel-padre-de-omri
 - miguel-padre-de-setur
+- jesus
 - miguel-hijo-de-jehosafat
+- miguel-padre-de-zebadias
 summary: Levita guersonita, hijo de Baaseyá, antepasado del músico Asaf.
 reason: Perspicacia «Miguel», núm. 3; 1Cr 6:40.
 sources:
@@ -33,5 +35,5 @@ relations:
   reason: '1Cr 6:40: Miguel, «hijo de Baaseyá».'
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-13'
+checked_on: '2026-10-14'
 status: verified

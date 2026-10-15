@@ -20,6 +20,10 @@ distinct_from:
 - matanias-hijo-de-heman
 - matanias-hijo-de-mica
 - sedequias
+- matanias-descendiente-de-bani
+- matanias-descendiente-de-elam
+- matanias-descendiente-de-pahat-moab
+- matanias-descendiente-de-zatu
 relations:
 - type: kin
   person: asaf-hijo-de-berekias

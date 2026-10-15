@@ -1,0 +1,18 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: adin
+name: Adín
+names:
+- name: Adín
+perspicacia: '1200000098'
+summary: Cabeza de una casa paterna de Israel; 454 de sus descendientes volvieron con Zorobabel.
+reason: Perspicacia «Adín»; Esd 2:15.
+sources:
+- it-adin
+- esdras-2
+- esdras-8
+links:
+- title: 'Perspicacia: «Adín»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ad%C3%ADn/
+  type: perspicacia
+checked_on: '2026-10-13'
+status: verified

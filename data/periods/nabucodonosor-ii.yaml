@@ -13,11 +13,17 @@ date:
   text: 624-582 a.e.c.
 places:
 - babilonia
-summary: Cuarenta y tres años de reinado; en su año 19 cayó Jerusalén.
+summary: Cuarenta y tres años de reinado, siete de ellos con el rey sin juicio; en su año 19 cayó Jerusalén.
 reason: Perspicacia «Nabucodonosor» (párr. 1) le da 43 años de 624 a 582; el año de subida fue 625 (estudio 3).
 sources:
 - it-nabucodonosor
 - si-3
+- it-locura
+- daniel-4
 search: Nabucodonosor rey de Babilonia
-checked_on: '2026-09-28'
+history:
+- date: '2026-10-14'
+  change: Perspicacia «Nabucodonosor», párr. 1, incluye en los 43 años los siete de locura de Da 4.
+  source: it-nabucodonosor
+checked_on: '2026-10-14'
 status: verified

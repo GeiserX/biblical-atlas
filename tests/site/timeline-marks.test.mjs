@@ -155,6 +155,8 @@ async function viajesWhole(p, name, pinned = false) {
   note(`${name} «Viajes de Pablo»: ${label ? `${label.lines} line(s) in ${label.label} px${label.pinned ? ', pinned' : ''}${label.cutX || label.cutY ? ', cut' : ', whole'}` : 'no label'}`);
   assert.ok(label && !label.cutX && !label.cutY && label.pinned === pinned, JSON.stringify(label));
 }
+/** The last moment of a mark a click can put the cursor at (FIL.clickTarget): never its end. */
+const hiOf = (it) => (it.t1 > it.t0 ? it.t1 - Math.min((it.t1 - it.t0) / 2, DAY / 24) : it.t1);
 /** What the timeline says it draws (BE.lineaMarcas) and what a mark in view is, measured from the data alone. */
 function hookView(p) {
   return p.evaluate(() => {
@@ -228,8 +230,14 @@ for (const screen of [DESKTOP, PHONE]) {
     for (const [dname, t] of await dates(p)) for (const s of SCALES) {
       await goTo(p, t, s);
       const vis = (await hookView(p)).visible.filter((x) => !x.secular && x.x + x.w > 0 && x.x < 5000).sort((a, b) => a.top - b.top || a.x - b.x);
-      const pick = vis.length <= 20 ? vis : Array.from({ length: 20 }, (_, i) => vis[Math.floor((i * vis.length) / 20)]);
-      for (const [i, it] of pick.entries()) {
+      const sample = vis.length <= 20 ? vis : Array.from({ length: 20 }, (_, i) => vis[Math.floor((i * vis.length) / 20)]);
+      // A mark whose dates all lie outside the view can still show its name at the edge, its dot just off screen. A click
+      // on it selects it and leaves the cursor where it was (FIL.clickTarget: no date of it in view). The sample reaches
+      // such a mark only when the font packs the rows one way (Linux, not a Mac), so these are always clicked, on the name.
+      const { vista } = await state(p);
+      const outside = vis.filter((it) => !sample.includes(it) && Math.max(it.t0, vista[0]) > Math.min(hiOf(it), vista[1]));
+      const pick = [...sample.map((it, i) => [it, i % 2 === 1]), ...outside.slice(0, 3).map((it) => [it, true])];
+      for (const [it, onLabel] of pick) {
         // Bring its row into view first (the test scrolls; the click must not).
         const target = await p.evaluate(([id, top, onLabel]) => {
           const cuerpo = document.querySelector('#linea-cuerpo');
@@ -246,7 +254,7 @@ for (const screen of [DESKTOP, PHONE]) {
             const rect = b.getBoundingClientRect();
             r({ x: cx, y: (r0.top + r0.bottom) / 2, rect: [rect.left, rect.top, rect.width], pista: [pr.left, pr.width] });
           })));
-        }, [it.id, it.top, i % 2 === 1]);
+        }, [it.id, it.top, onLabel]);
         if (!target) { bad.push(`${dname} ${s}: «${it.name}» has no button after scrolling to it`); continue; }
         const before = await state(p);
         if (screen.hasTouch) await p.touchscreen.tap(target.x, target.y); else await p.mouse.click(target.x, target.y);
@@ -259,14 +267,14 @@ for (const screen of [DESKTOP, PHONE]) {
         if (Math.abs(after.scroll - before.scroll) > 0.5) bad.push(`${dname} ${s}: «${it.name}» scrolled the lanes ${before.scroll} → ${after.scroll}`);
         if (!rect || rect.some((v, k) => Math.abs(v - target.rect[k]) > 1)) bad.push(`${dname} ${s}: «${it.name}» moved on screen ${JSON.stringify(target.rect)} → ${JSON.stringify(rect)}`);
         if (after.sel !== it.sel) bad.push(`${dname} ${s}: «${it.name}» selected ${after.sel || 'nothing'}`);
-        // The cursor: the pointed time, clamped into the visible part of [start, end), never at the end. A pointer lands on
-        // whole pixels, so the check allows one and a half pixels of time.
+        // The cursor: the pointed time, clamped into the visible part of [start, end), never at the end; with no part in
+        // view, where it was. A pointer lands on whole pixels, so the check allows one and a half pixels of time.
         const tp = before.vista[0] + ((target.x - target.pista[0]) / target.pista[1]) * span;
-        const hi = it.t1 > it.t0 ? it.t1 - Math.min((it.t1 - it.t0) / 2, DAY / 24) : it.t1;
-        const want = Math.max(Math.max(it.t0, before.vista[0]), Math.min(Math.min(hi, before.vista[1]), tp));
+        const lo = Math.max(it.t0, before.vista[0]), hi = Math.min(hiOf(it), before.vista[1]);
+        const want = lo > hi ? before.t : Math.max(lo, Math.min(hi, tp));
         if (Math.abs(after.t - want) > (span / target.pista[1]) * 1.5 + 1e-7) bad.push(`${dname} ${s}: «${it.name}» put the cursor at ${after.t.toFixed(5)}, pointed ${tp.toFixed(5)}, expected ${want.toFixed(5)} in [${it.t0.toFixed(5)}, ${it.t1.toFixed(5)})`);
       }
-      note(`${screen.name} ${dname} span ${s}: ${pick.length} marks clicked`);
+      note(`${screen.name} ${dname} span ${s}: ${pick.length} marks clicked${outside.length ? `, ${Math.min(3, outside.length)} of them with no date in view (${outside.length} drawn)` : ''}`);
     }
     note(`${screen.name}: ${clicks} clicks, ${bad.length} problems`);
     await p.context().close();

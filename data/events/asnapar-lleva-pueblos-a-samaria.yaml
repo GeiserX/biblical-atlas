@@ -1,0 +1,38 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: asnapar-lleva-pueblos-a-samaria
+title: Asnapar lleva a Samaria gentes de Erec, Babilonia y Susa
+date:
+  from: -699
+  to: -600
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 700 y 601 a.e.c. (tiempo narrativo: el siglo VII a.e.c., cuando Asnapar tomó Susa)'
+places:
+- region-de-samaria
+- erec
+- babilonia
+- susa
+- elam
+people:
+- asnapar
+present: []
+passages:
+- Esd 4:9, 10
+summary: La carta de Rehúm recuerda que el rey asirio Asnapar desterró a gentes de Erec, de Babilonia y de Susa, en Elam,
+  y las asentó en las ciudades de Samaria.
+reason: Perspicacia «Susa» fecha en el siglo VII a.e.c. la toma de Susa por Asnapar y el traslado de su gente a Samaria; «Erec»
+  y «Elam» añaden a los de Erec y a los elamitas.
+sources:
+- esdras-4
+- it-susa
+- it-erec
+- it-elam
+- it-asnapar
+links:
+- title: Esdras 4 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/esdras/4/
+  type: bible
+checked_on: '2026-10-13'
+status: verified

@@ -21,6 +21,7 @@ roles:
   abel: died
 passages:
 - Gé 4:8-15
+- 1Jn 3:12
 summary: Caín lleva a Abel al campo y lo mata. Niega saber dónde está, y Dios lo destierra del suelo; cuando teme que lo maten,
   Dios decreta que quien lo haga será castigado.
 reason: 'El cuadro del estudio 3 lo pone antes de 3896 a.e.c. Perspicacia «Abel», núm. 1, último párrafo: poco antes de nacer
@@ -30,9 +31,10 @@ sources:
 - it-abel
 - it-cain
 - genesis-4
+- 1-juan-3
 links:
 - title: Génesis 4 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/G%C3%A9nesis/4/
   type: bible
-checked_on: '2026-09-29'
+checked_on: '2026-10-14'
 status: verified

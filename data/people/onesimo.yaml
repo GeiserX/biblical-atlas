@@ -20,6 +20,7 @@ sources:
 - filemon-1
 - tnm-tabla
 - colosenses-4
+- it-filemon-carta
 links:
 - title: 'Perspicacia: «Onésimo»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/On%C3%A9simo/
@@ -31,7 +32,7 @@ links:
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/colosenses/4/
   type: bible
 perspicacia: '1200003328'
-checked_on: '2026-09-29'
+checked_on: '2026-10-14'
 status: verified
 relations:
 - type: lived_in
@@ -79,4 +80,16 @@ relations:
   - tnm-tabla
   reason: Vuelve a Colosas con Tíquico (Col 4:7-9). La Tabla de los libros fecha Colosenses hacia 60-61.
   checked_on: '2026-09-28'
+  status: verified
+- type: tie
+  person: filemon
+  word: master
+  inferred: false
+  sources:
+  - filemon-1
+  - it-onesimo
+  - it-filemon
+  reason: 'Flm 15, 16: se apartó de Filemón y vuelve a él ya no como esclavo, sino como hermano. Perspicacia «Onésimo» dice
+    que había sido su siervo y huyó de Colosas.'
+  checked_on: '2026-10-14'
   status: verified

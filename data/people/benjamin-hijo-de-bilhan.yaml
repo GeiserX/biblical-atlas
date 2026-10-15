@@ -7,6 +7,7 @@ perspicacia: 1200000640#3
 disambiguation: Benjamín hijo de Bilhán; no Benjamín hijo de Jacob, de quien desciende, ni el de días de Esdras.
 distinct_from:
 - benjamin-hijo-de-jacob
+- benjamin-descendiente-de-harim
 summary: Benjamita de la línea de Jediael, hijo de Bilhán.
 reason: Perspicacia «Benjamín», núm. 3; 1Cr 7:6, 10, 11.
 sources:
@@ -26,5 +27,5 @@ relations:
   reason: 1Cr 7:10 lo cuenta entre los hijos de Bilhán.
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified

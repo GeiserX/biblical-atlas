@@ -1,0 +1,42 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: maaseya-descendiente-de-pahat-moab
+name: Maaseya
+names:
+- name: Maaseya
+perspicacia: 1200002811#12
+summary: Israelita de los hijos de Pahat-Moab. Estaba casado con extranjeras y, cuando Esdras corrigió esos matrimonios (468-467
+  a.e.c.), las despidió junto con sus hijos.
+reason: Perspicacia «Maaseya», núm. 12; Esd 10:30, 44.
+sources:
+- it-maaseya
+- esdras-10
+links:
+- title: 'Perspicacia: «Maaseya»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Maaseya/
+  type: perspicacia
+relations:
+- type: kin
+  person: pahat-moab
+  word: ancestor
+  sources:
+  - esdras-10
+  - it-maaseya
+  reason: Esd 10:30 lo pone entre los hijos de Pahat-Moab; Perspicacia «Maaseya», núm. 12.
+  inferred: false
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified
+disambiguation: El de los hijos de Pahat-Moab de Esd 10:30; no los demás Maaseya que registra Perspicacia.
+distinct_from:
+- maaseya-de-la-casa-de-jesua
+- maaseya-descendiente-de-harim
+- maaseya-descendiente-de-pasjur
+- maaseya-funcionario
+- maaseya-hijo-de-adaya
+- maaseya-hijo-de-salum
+- maaseya-hijo-del-rey
+- maaseya-jefe-de-jerusalen
+- maaseya-musico
+- maaseya-padre-de-sedequias
+- maaseya-padre-de-sofonias

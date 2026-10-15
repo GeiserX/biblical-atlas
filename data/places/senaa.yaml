@@ -1,0 +1,28 @@
+# biblical-atlas: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: senaa
+name: Senaá
+names:
+- name: Senaá
+- name: Hasenaá
+  note: Perspicacia «Senaá» ve posible que sea el mismo nombre con el artículo hebreo.
+type: city
+lat: 31.96618
+lon: 35.47177
+precision: uncertain
+coord_source: openbible:ac5ba1a
+coord_url: https://www.openbible.info/geo/ancient/ac5ba1a/senaah
+coord_note: Khirbat al Beiyudat, el sitio que Perspicacia propone con reservas; en OpenBible es un punto de la identificación
+  con Magdalsenna.
+summary: Muchos lo tienen por un lugar al norte de Jericó. Sus hijos, 3.630, formaron parte del regreso guiado por Zorobabel
+  (537 a.e.c.).
+reason: 'Perspicacia «Senaá»; Esd 2:35. OpenBible: solo el punto.'
+sources:
+- it-senaa
+- openbible-geo
+- esdras-2
+links:
+- title: 'Perspicacia: «Senaá»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sena%C3%A1/
+  type: perspicacia
+checked_on: '2026-10-13'
+status: verified

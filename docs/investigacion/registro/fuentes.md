@@ -58,8 +58,13 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | 1-cronicas-7 | [1 Crónicas 7](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/1-Cr%C3%B3nicas/7/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | 1-cronicas-8 | [1 Crónicas 8](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/1-Cr%C3%B3nicas/8/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | 1-cronicas-9 | [1 Crónicas 9](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/1-Cr%C3%B3nicas/9/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
+| 1-juan-1 | [1 Juan 1](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/1-juan/1/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | 1-juan-2 | [1 Juan 2](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/1-juan/2/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
+| 1-juan-3 | [1 Juan 3](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/1-juan/3/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
+| 1-juan-4 | [1 Juan 4](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/1-juan/4/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
+| 1-juan-5 | [1 Juan 5](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/1-juan/5/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | 1-pedro-1 | [1 Pedro 1](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/1-pedro/1/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
+| 1-pedro-3 | [1 Pedro 3](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/1-pedro/3/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | 1-pedro-5 | [1 Pedro 5](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/1-pedro/5/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | 1-reyes-1 | [1 Reyes 1](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/1-reyes/1/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | 1-reyes-10 | [1 Reyes 10](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/1-reyes/10/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
@@ -281,10 +286,15 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | colosenses-4 | [Colosenses 4](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/colosenses/4/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | daniel-1 | [Daniel 1](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/daniel/1/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | daniel-10 | [Daniel 10](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/daniel/10/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
+| daniel-11 | [Daniel 11](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/daniel/11/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
+| daniel-12 | [Daniel 12](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/daniel/12/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | daniel-2 | [Daniel 2](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/daniel/2/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | daniel-3 | [Daniel 3](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/daniel/3/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | daniel-4 | [Daniel 4](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/daniel/4/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | daniel-5 | [Daniel 5](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/daniel/5/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
+| daniel-6 | [Daniel 6](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/daniel/6/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
+| daniel-7 | [Daniel 7](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/daniel/7/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
+| daniel-8 | [Daniel 8](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/daniel/8/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | daniel-9 | [Daniel 9](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/daniel/9/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | deuteronomio-1 | [Deuteronomio 1](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/deuteronomio/1/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | deuteronomio-10 | [Deuteronomio 10](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/deuteronomio/10/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
@@ -320,7 +330,22 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | deuteronomio-7 | [Deuteronomio 7](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/deuteronomio/7/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | deuteronomio-8 | [Deuteronomio 8](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/deuteronomio/8/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | deuteronomio-9 | [Deuteronomio 9](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/deuteronomio/9/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
+| dp-10 | [¿Quién puede hacer frente al Príncipe de príncipes?](https://www.jw.org/es/biblioteca/libros/Prestemos-atenci%C3%B3n-a-las-profec%C3%ADas-de-Daniel/Qui%C3%A9n-puede-hacer-frente-al-Pr%C3%ADncipe-de-pr%C3%ADncipes/) | ¡Prestemos atención a las profecías de Daniel! | 1 | sin dato | 2026-10-14 |
+| dp-11 | [Se revela el tiempo de la llegada del Mesías](https://www.jw.org/es/biblioteca/libros/Prestemos-atenci%C3%B3n-a-las-profec%C3%ADas-de-Daniel/Se-revela-el-tiempo-de-la-llegada-del-Mes%C3%ADas/) | ¡Prestemos atención a las profecías de Daniel! | 1 | sin dato | 2026-10-14 |
 | dp-12 | [Un mensajero de Dios fortalece a Daniel](https://www.jw.org/es/biblioteca/libros/Prestemos-atenci%C3%B3n-a-las-profec%C3%ADas-de-Daniel/Un-mensajero-de-Dios-fortalece-a-Daniel/) | ¡Prestemos atención a las profecías de Daniel! | 1 | sin dato | 2026-10-02 |
+| dp-13 | [Dos reyes en conflicto](https://www.jw.org/es/biblioteca/libros/Prestemos-atenci%C3%B3n-a-las-profec%C3%ADas-de-Daniel/Dos-reyes-en-conflicto/) | ¡Prestemos atención a las profecías de Daniel! | 1 | sin dato | 2026-10-14 |
+| dp-14 | [Los dos reyes cambian de identidad](https://www.jw.org/es/biblioteca/libros/Prestemos-atenci%C3%B3n-a-las-profec%C3%ADas-de-Daniel/Los-dos-reyes-cambian-de-identidad/) | ¡Prestemos atención a las profecías de Daniel! | 1 | sin dato | 2026-10-14 |
+| dp-15 | [Los reyes rivales entran en el siglo XX](https://www.jw.org/es/biblioteca/libros/Prestemos-atenci%C3%B3n-a-las-profec%C3%ADas-de-Daniel/Los-reyes-rivales-entran-en-el-siglo-XX/) | ¡Prestemos atención a las profecías de Daniel! | 1 | sin dato | 2026-10-14 |
+| dp-16 | [Los reyes contendientes se acercan a su fin](https://www.jw.org/es/biblioteca/libros/Prestemos-atenci%C3%B3n-a-las-profec%C3%ADas-de-Daniel/Los-reyes-contendientes-se-acercan-a-su-fin/) | ¡Prestemos atención a las profecías de Daniel! | 1 | sin dato | 2026-10-14 |
+| dp-17 | [Se identifica a los adoradores verdaderos en el tiempo del fin](https://www.jw.org/es/biblioteca/libros/Prestemos-atenci%C3%B3n-a-las-profec%C3%ADas-de-Daniel/Se-identifica-a-los-adoradores-verdaderos-en-el-tiempo-del-fin/) | ¡Prestemos atención a las profecías de Daniel! | 1 | sin dato | 2026-10-14 |
+| dp-18 | [Jehová promete a Daniel una magnífica recompensa](https://www.jw.org/es/biblioteca/libros/Prestemos-atenci%C3%B3n-a-las-profec%C3%ADas-de-Daniel/Jehov%C3%A1-promete-a-Daniel-una-magn%C3%ADfica-recompensa/) | ¡Prestemos atención a las profecías de Daniel! | 1 | sin dato | 2026-10-14 |
+| dp-3 | [Sometidos a prueba, pero fieles a Jehová](https://www.jw.org/es/biblioteca/libros/Prestemos-atenci%C3%B3n-a-las-profec%C3%ADas-de-Daniel/Sometidos-a-prueba-pero-fieles-a-Jehov%C3%A1/) | ¡Prestemos atención a las profecías de Daniel! | 1 | sin dato | 2026-10-14 |
+| dp-4 | [El ascenso y la caída de una imagen inmensa](https://www.jw.org/es/biblioteca/libros/Prestemos-atenci%C3%B3n-a-las-profec%C3%ADas-de-Daniel/El-ascenso-y-la-ca%C3%ADda-de-una-imagen-inmensa/) | ¡Prestemos atención a las profecías de Daniel! | 1 | sin dato | 2026-10-14 |
+| dp-5 | [Su fe superó una prueba difícil](https://www.jw.org/es/biblioteca/libros/Prestemos-atenci%C3%B3n-a-las-profec%C3%ADas-de-Daniel/Su-fe-super%C3%B3-una-prueba-dif%C3%ADcil/) | ¡Prestemos atención a las profecías de Daniel! | 1 | sin dato | 2026-10-14 |
+| dp-6 | [Se desentraña el misterio del gran árbol](https://www.jw.org/es/biblioteca/libros/Prestemos-atenci%C3%B3n-a-las-profec%C3%ADas-de-Daniel/Se-desentra%C3%B1a-el-misterio-del-gran-%C3%A1rbol/) | ¡Prestemos atención a las profecías de Daniel! | 1 | sin dato | 2026-10-14 |
+| dp-7 | [Cuatro palabras que cambiaron el mundo](https://www.jw.org/es/biblioteca/libros/Prestemos-atenci%C3%B3n-a-las-profec%C3%ADas-de-Daniel/Cuatro-palabras-que-cambiaron-el-mundo/) | ¡Prestemos atención a las profecías de Daniel! | 1 | sin dato | 2026-10-14 |
+| dp-8 | [Rescatado de las fauces de los leones](https://www.jw.org/es/biblioteca/libros/Prestemos-atenci%C3%B3n-a-las-profec%C3%ADas-de-Daniel/Rescatado-de-las-fauces-de-los-leones/) | ¡Prestemos atención a las profecías de Daniel! | 1 | sin dato | 2026-10-14 |
+| dp-9 | [¿Quién gobernará el mundo?](https://www.jw.org/es/biblioteca/libros/Prestemos-atenci%C3%B3n-a-las-profec%C3%ADas-de-Daniel/Qui%C3%A9n-gobernar%C3%A1-el-mundo/) | ¡Prestemos atención a las profecías de Daniel! | 1 | sin dato | 2026-10-14 |
 | eclesiastes-1 | [Eclesiastés 1](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Eclesiast%C3%A9s/1/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | eclesiastes-12 | [Eclesiastés 12](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Eclesiast%C3%A9s/12/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | eclesiastes-2 | [Eclesiastés 2](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Eclesiast%C3%A9s/2/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
@@ -330,6 +355,7 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | efesios-4 | [Efesios 4](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/efesios/4/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | efesios-6 | [Efesios 6](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/efesios/6/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | esdras-1 | [Esdras 1](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/esdras/1/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
+| esdras-10 | [Esdras 10](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/esdras/10/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | esdras-2 | [Esdras 2](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/esdras/2/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | esdras-3 | [Esdras 3](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/esdras/3/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | esdras-4 | [Esdras 4](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/esdras/4/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
@@ -337,6 +363,7 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | esdras-6 | [Esdras 6](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/esdras/6/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | esdras-7 | [Esdras 7](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/esdras/7/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | esdras-8 | [Esdras 8](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/esdras/8/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
+| esdras-9 | [Esdras 9](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/esdras/9/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | ester-1 | [Ester 1](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/ester/1/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | ester-2 | [Ester 2](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/ester/2/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | ester-3 | [Ester 3](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/ester/3/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
@@ -517,9 +544,19 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | hch-27 | [Hechos 27](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/hechos/27/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | 2026-09-27 |
 | hch-28 | [Hechos 28](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/hechos/28/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | 2026-09-27 |
 | hch-9 | [Hechos 9](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/hechos/9/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | 2026-09-27 |
+| hebreos-1 | [Hebreos 1](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/hebreos/1/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
+| hebreos-10 | [Hebreos 10](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/hebreos/10/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | hebreos-11 | [Hebreos 11](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/hebreos/11/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
+| hebreos-12 | [Hebreos 12](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/hebreos/12/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | hebreos-13 | [Hebreos 13](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/hebreos/13/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | 2026-09-27 |
+| hebreos-2 | [Hebreos 2](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/hebreos/2/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
+| hebreos-3 | [Hebreos 3](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/hebreos/3/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
+| hebreos-4 | [Hebreos 4](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/hebreos/4/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
+| hebreos-5 | [Hebreos 5](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/hebreos/5/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
+| hebreos-6 | [Hebreos 6](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/hebreos/6/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | hebreos-7 | [Hebreos 7](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/hebreos/7/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
+| hebreos-8 | [Hebreos 8](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/hebreos/8/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
+| hebreos-9 | [Hebreos 9](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/hebreos/9/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | hechos-1 | [Hechos 1](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/hechos/1/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | hechos-10 | [Hechos 10](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/hechos/10/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | hechos-11 | [Hechos 11](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/hechos/11/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
@@ -723,15 +760,20 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-addar | [Addar](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Addar/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-adi | [Adí](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ad%C3%AD/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-adiel | [Adiel](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Adiel/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
+| it-adin | [Adín](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ad%C3%ADn/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
 | it-adina | [Adiná](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Adin%C3%A1/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
 | it-aditaim | [Aditaim](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Aditaim/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-adivinacion | [Adivinación](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Adivinaci%C3%B3n/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
 | it-adlai | [Adlai](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Adlai/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
 | it-adma | [Admá](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Adm%C3%A1/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
+| it-adna | [Adná](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Adn%C3%A1/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
 | it-adnah | [Adnah](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Adnah/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
+| it-adon | [Adón](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ad%C3%B3n/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
 | it-adoni-bezeq | [Adoni-bézeq](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Adoni-b%C3%A9zeq/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-adoni-zedeq | [Adoni-zédeq](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Adoni-z%C3%A9deq/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-adonias | [Adonías](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Adon%C3%ADas/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
+| it-adonicam | [Adoniqam](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Adoniqam/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
+| it-adoniqam | [Adoniqam](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Adoniqam/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
 | it-adoniram | [Adoniram](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Adoniram/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-adoraim | [Adoraim](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Adoraim/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
 | it-adramelec | [Adramélec](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Adram%C3%A9lec/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-30 |
@@ -855,6 +897,7 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-aniam | [Aniam](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Aniam/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
 | it-anim | [Anim](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Anim/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-anio | [Año](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/A%C3%B1o/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
+| it-anticristo | [Anticristo](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Anticristo/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-14 |
 | it-antilibano | [Antilíbano](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Antil%C3%ADbano/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-antioquia | [Antioquía](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Antioqu%C3%ADa/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-27 |
 | it-antipas | [Antipas](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Antipas/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
@@ -863,6 +906,7 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-anub | [Anub](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Anub/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
 | it-apaim | [Apaim](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Apaim/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
 | it-apeles | [Apeles](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Apeles/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
+| it-apfia | [Apfia](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Apfia/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-14 |
 | it-apio | [Apio, Plaza del Mercado de](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Apio-Plaza-del-Mercado-de/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-27 |
 | it-apolonia | [Apolonia](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Apolonia/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-27 |
 | it-apolos | [Apolos](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Apolos/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
@@ -940,9 +984,11 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-asiria | [Asiria](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Asiria/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
 | it-asjur | [Asjur](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Asjur/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
 | it-askenaz | [Askenaz](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Askenaz/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
+| it-asna | [Asná](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Asn%C3%A1/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
 | it-asnah | [Asnah](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Asnah/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-asnapar | [Asnapar](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Asnapar/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-ason | [Asón](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/As%C3%B3n/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-27 |
+| it-aspenaz | [Aspenaz](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Aspenaz/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-14 |
 | it-asquelon | [Asquelón](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Asquel%C3%B3n/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-asriel | [Asriel](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Asriel/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-astarot | [Astarot](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Astarot/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
@@ -966,6 +1012,8 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-atarot | [Atarot](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Atarot/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-atarot-addar | [Atarot-addar](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Atarot-addar/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-atenas | [Atenas](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Atenas/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-27 |
+| it-ater | [Ater](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ater/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
+| it-atlai | [Atlai](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Atlai/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
 | it-atrot-bet-joab | [Atrot-bet-joab](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Atrot-bet-joab/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
 | it-atrot-sofan | [Atrot-sofán](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Atrot-sof%C3%A1n/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-augusto | [Augusto](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Augusto/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
@@ -985,6 +1033,8 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-azazias | [Azazías](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Azaz%C3%ADas/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
 | it-azel | [Azel](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Azel/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-azeqa | [Azeqá](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Azeq%C3%A1/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
+| it-azgad | [Azgad](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Azgad/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
+| it-aziza | [Azizá](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Aziz%C3%A1/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
 | it-azmavet | [Azmávet](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Azm%C3%A1vet/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-azmon | [Azmón](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Azm%C3%B3n/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-aznot-tabor | [Aznot-tabor](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Aznot-tabor/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
@@ -1028,11 +1078,13 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-bamot-baal | [Bamot-baal](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Bamot-baal/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-bani | [Baní](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ban%C3%AD/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-baqbaqar | [Baqbaqar](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Baqbaqar/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
+| it-baqbuq | [Baqbuq](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Baqbuq/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
 | it-bar-jesus | [Bar-Jesús](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Bar-Jes%C3%BAs/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
 | it-barac | [Barac](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Barac/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
 | it-barakel | [Barakel](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Barakel/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-baraquias | [Baraquías](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Baraqu%C3%ADas/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-barias | [Barías](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Bar%C3%ADas/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
+| it-barqos | [Barqos](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Barqos/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
 | it-barrabas | [Barrabás](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Barrab%C3%A1s/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
 | it-barsabas | [Barsabás](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Barsab%C3%A1s/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-bartimeo | [Bartimeo](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Bartimeo/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
@@ -1044,12 +1096,15 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-bat-rabim | [Bat-rabim](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Bat-rabim/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-bat-seba | [Bat-seba](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Bat-seba/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-bautismo | [Bautismo](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Bautismo/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
+| it-bazlut-bazlit | [Bazlut, Bazlit](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Bazlut-Bazlit/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
 | it-bealias | [Bealías](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Beal%C3%ADas/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
 | it-bealot | [Bealot](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Bealot/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
+| it-bebai | [Bebai](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Bebai/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
 | it-becerro | [Becerro](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Becerro/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-becorat | [Becorat](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Becorat/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-bedad | [Bedad](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Bedad/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-bedan | [Bedán](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Bed%C3%A1n/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
+| it-bedeya | [Bedeya](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Bedeya/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
 | it-beelzebub | [Beelzebub](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Beelzebub/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-beer | [Beer](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Beer/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-beer-elim | [Beer-elim](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Beer-elim/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-30 |
@@ -1093,6 +1148,7 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-berias | [Berías](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ber%C3%ADas/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-bernabe | [Bernabé](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Bernab%C3%A9/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-27 |
 | it-berota | [Berotá, Berotai](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Berot%C3%A1-Berotai/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
+| it-besai | [Besai](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Besai/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
 | it-besor | [Besor, Valle torrencial de](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Besor-Valle-torrencial-de/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-bestias-simbolicas | [Bestias simbólicas](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Bestias-simb%C3%B3licas/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
 | it-bet-anat | [Bet-anat](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Bet-anat/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
@@ -1137,21 +1193,26 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-betuel | [Betuel](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Betuel/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-betul | [Betul](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Betul/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-betzata | [Betzata](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Betzata/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
+| it-bezai | [Bezai](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Bezai/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
 | it-bezalel | [Bezalel](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Bezalel/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-bezeq | [Bézeq](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/B%C3%A9zeq/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-bezer | [Bézer](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/B%C3%A9zer/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-bicri | [Bicrí](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Bicr%C3%AD/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-bidqar | [Bidqar](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Bidqar/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-30 |
+| it-bigvai | [Bigvai](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Bigvai/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
 | it-bildad | [Bildad](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Bildad/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-bileam | [Bileam](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Bileam/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
 | it-bilga | [Bilgá](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Bilg%C3%A1/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
 | it-bilha | [Bilhá](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Bilh%C3%A1/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-bilhan | [Bilhán](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Bilh%C3%A1n/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
+| it-bilsan | [Bilsán](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Bils%C3%A1n/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
 | it-bimhal | [Bimhal](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Bimhal/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
 | it-binea | [Bineá](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Bine%C3%A1/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
+| it-binui | [Binuí](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Binu%C3%AD/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
 | it-biqat-aven | [Biqat-aven](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Biqat-aven/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-birsa | [Birsá](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Birs%C3%A1/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-birzayit | [Birzayit](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Birzayit/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
+| it-bislam | [Bislam](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Bislam/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
 | it-bitias | [Bitías](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Bit%C3%ADas/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
 | it-bitinia | [Bitinia](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Bitinia/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
 | it-biziotias | [Biziotías](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Biziot%C3%ADas/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
@@ -1208,6 +1269,7 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-casa-de-arbel | [Arbel, Casa de](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Arbel-Casa-de/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-casa-del-bosque-del-libano | [Casa del Bosque del Líbano](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Casa-del-Bosque-del-L%C3%ADbano/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-30 |
 | it-casa-para-atar-de-los-pastores | [Casa para atar de los pastores](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Casa-para-atar-de-los-pastores/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-30 |
+| it-casifia | [Casifía](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Casif%C3%ADa/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
 | it-casluhim | [Casluhim](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Casluhim/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-cauda | [Cauda](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Cauda/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-27 |
 | it-cebada | [Cebada](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Cebada/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
@@ -1293,8 +1355,10 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-dan-jaan | [Dan-jaán](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Dan-ja%C3%A1n/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-dana | [Daná](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Dan%C3%A1/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-daniel | [Daniel](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Daniel/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
+| it-daniel-libro | [Daniel, Libro de](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Daniel-Libro-de/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-14 |
 | it-darda | [Dará, Dardá](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Dar%C3%A1-Dard%C3%A1/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-30 |
 | it-dario | [Darío](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Dar%C3%ADo/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
+| it-darqon | [Darqón](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Darq%C3%B3n/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
 | it-datan | [Datán](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Dat%C3%A1n/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-david | [David](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/David/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
 | it-debir | [Debir](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Debir/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
@@ -1332,6 +1396,7 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-disan | [Disán](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Dis%C3%A1n/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-dison | [Disón](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Dis%C3%B3n/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-distrito-del-jordan | [Jordán, Distrito del](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jord%C3%A1n-Distrito-del/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
+| it-distrito-jurisdiccional | [Distrito jurisdiccional](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Distrito-jurisdiccional/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-14 |
 | it-dizahab | [Dizahab](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Dizahab/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-dodai | [Dodai](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Dodai/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
 | it-dodanim | [Dodanim](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Dodanim/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
@@ -1551,6 +1616,7 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-figelo | [Figelo](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Figelo/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
 | it-filadelfia | [Filadelfia](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Filadelfia/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
 | it-filemon | [Filemón](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Filem%C3%B3n/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-27 |
+| it-filemon-carta | [Filemón, Carta a](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Filem%C3%B3n-Carta-a/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-14 |
 | it-fileto | [Fileto](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Fileto/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
 | it-filipenses | [Filipenses, Carta a los](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Filipenses-Carta-a-los/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-27 |
 | it-filipo | [Filipo](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Filipo/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
@@ -1560,6 +1626,7 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-finehas | [Finehás](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Fineh%C3%A1s/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-flegonte | [Flegonte](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Flegonte/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-fortunato | [Fortunato](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Fortunato/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
+| it-foso-de-los-leones | [Foso de los leones](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Foso-de-los-leones/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-14 |
 | it-frigia | [Frigia](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Frigia/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-27 |
 | it-fuego | [Fuego](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Fuego/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-fuente-de-jacob | [Fuente de Jacob](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Fuente-de-Jacob/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
@@ -1573,6 +1640,7 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-gadi | [Gadí](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Gad%C3%AD/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-30 |
 | it-gadiel | [Gadiel](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Gadiel/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-gaham | [Gaham](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Gaham/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
+| it-gahar | [Gahar](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Gahar/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
 | it-galaad | [Galaad](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Galaad/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-galacia | [Galacia](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Galacia/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-27 |
 | it-galal | [Galal](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Galal/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
@@ -1590,6 +1658,7 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-gatam | [Gatam](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Gatam/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-gayo | [Gayo](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Gayo/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
 | it-gaza | [Gaza](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Gaza/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
+| it-gazam | [Gazam](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Gazam/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
 | it-gazez | [Gazez](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Gazez/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
 | it-gedeon | [Gedeón](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Gede%C3%B3n/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
 | it-gehena | [Gehena](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Gehena/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
@@ -1643,12 +1712,14 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-gueuel | [Gueuel](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Gueuel/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-guezer | [Guézer](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Gu%C3%A9zer/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-guiah | [Guíah](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Gu%C3%ADah/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
+| it-guibar | [Guibar](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Guibar/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
 | it-guibea | [Guibeá](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Guibe%C3%A1/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
 | it-guibeah | [Guibeah](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Guibeah/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
 | it-guibeat-haaralot | [Guibeat-haaralot](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Guibeat-haaralot/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-guibeatita | [Guibeatita](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Guibeatita/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
 | it-guibeton | [Guibetón](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Guibet%C3%B3n/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-guidalti | [Guidaltí](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Guidalt%C3%AD/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
+| it-guidel | [Guidel](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Guidel/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
 | it-guideoni | [Guideoní](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Guideon%C3%AD/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-guidom | [Guidom](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Guidom/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-guihon | [Guihón](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Guih%C3%B3n/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
@@ -1668,18 +1739,23 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-haahastari | [Haahastarí](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Haahastar%C3%AD/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
 | it-habacuc | [Habacuc](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Habacuc/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
 | it-habacuc-libro | [Habacuc, Libro de](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Habacuc-Libro-de/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
+| it-habaya | [Habaya](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Habaya/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
 | it-habazinias | [Habazinías](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Habazin%C3%ADas/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
 | it-habor | [Habor](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Habor/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-30 |
+| it-hacatan | [Haqatán](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Haqat%C3%A1n/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
 | it-hacmoni | [Hacmoní](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hacmon%C3%AD/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
 | it-hadad | [Hadad](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hadad/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-hadadezer | [Hadadézer](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hadad%C3%A9zer/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-hadadrimon | [Hadadrimón](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hadadrim%C3%B3n/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-hadar | [Hadar](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hadar/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-hadasa | [Hadasá](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hadas%C3%A1/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
+| it-hadid | [Hadid](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hadid/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
 | it-hadlai | [Hadlai](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hadlai/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
 | it-hadoram | [Hadoram](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hadoram/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-hadrac | [Hadrac](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hadrac/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-hafaraim | [Hafaraim](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hafaraim/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
+| it-hagab | [Hagab](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hagab/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
+| it-hagaba | [Hagabá](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hagab%C3%A1/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
 | it-hagri | [Hagrí](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hagr%C3%AD/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
 | it-hagrita | [Hagrita](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hagrita/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
 | it-hagui | [Haguí](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hagu%C3%AD/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
@@ -1716,12 +1792,15 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-hanun | [Hanún](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Han%C3%BAn/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-hapizez | [Hapizez](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hapizez/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
 | it-haqoz | [Haqoz](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Haqoz/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
+| it-haqufa | [Haqufá](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Haquf%C3%A1/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
 | it-hara | [Hará](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Har%C3%A1/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-30 |
 | it-harada | [Haradá](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Harad%C3%A1/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-haran | [Harán](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Har%C3%A1n/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
 | it-hararita | [Hararita](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hararita/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-haref | [Haref](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Haref/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
 | it-harhas | [Harhás](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Harh%C3%A1s/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-30 |
+| it-harhur | [Harhur](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Harhur/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
+| it-harif | [Harif](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Harif/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
 | it-harifita | [Harifita](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Harifita/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
 | it-harim | [Harim](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Harim/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
 | it-harmon | [Harmón](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Harm%C3%B3n/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
@@ -1730,6 +1809,7 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-harodita | [Harodita](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Harodita/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-haroe | [Haroé](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Haro%C3%A9/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
 | it-haroset | [Haróset](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Har%C3%B3set/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
+| it-harsa | [Harsá](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hars%C3%A1/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
 | it-harum | [Harum](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Harum/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
 | it-haruz | [Haruz](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Haruz/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-30 |
 | it-hasabias | [Hasabías](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hasab%C3%ADas/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
@@ -1738,7 +1818,12 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-hasmona | [Hasmoná](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hasmon%C3%A1/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-hasub | [Hasub](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hasub/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
 | it-hasuba | [Hasubá](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hasub%C3%A1/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
+| it-hasufa | [Hasufá](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hasuf%C3%A1/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
+| it-hasum | [Hasum](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hasum/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
 | it-hatat | [Hatat](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hatat/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
+| it-hatifa | [Hatifá](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hatif%C3%A1/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
+| it-hatil | [Hatil](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hatil/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
+| it-hatita | [Hatitá](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hatit%C3%A1/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
 | it-hatus | [Hatús](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hat%C3%BAs/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
 | it-hauran | [Haurán](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Haur%C3%A1n/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
 | it-havila | [Havilá](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Havil%C3%A1/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
@@ -1784,6 +1869,7 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-hemorroides | [Hemorroides](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hemorroides/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-hen | [Hen](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hen/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-hena | [Hená](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hen%C3%A1/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-30 |
+| it-henadad | [Henadad](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Henadad/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
 | it-heres | [Heres](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Heres/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-heresh | [Héresh](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/H%C3%A9resh/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
 | it-heret | [Héret, Bosque de](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/H%C3%A9ret-Bosque-de/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
@@ -1845,6 +1931,7 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-hosama | [Hosamá](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hosam%C3%A1/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
 | it-hosaya | [Hosaya](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hosaya/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
 | it-hosea | [Hosea](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hosea/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
+| it-hospitalidad | [Hospitalidad](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hospitalidad/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-14 |
 | it-hotam | [Hotam](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hotam/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
 | it-hotir | [Hotir](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hotir/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
 | it-hul | [Hul](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hul/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
@@ -1915,6 +2002,7 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-isca | [Iscá](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Isc%C3%A1/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-isi | [Isí](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Is%C3%AD/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
 | it-isias | [Isías](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Is%C3%ADas/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
+| it-isiya | [Isiya](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Isiya/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
 | it-isma | [Ismá](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ism%C3%A1/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
 | it-ismael | [Ismael](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ismael/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
 | it-ismakias | [Ismakías](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ismak%C3%ADas/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
@@ -1944,13 +2032,16 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-iye-abarim | [Iyé-abarim](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Iy%C3%A9-abarim/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-iyim | [Iyim](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Iyim/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-izhar | [Izhar](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Izhar/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
+| it-izias | [Izías](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Iz%C3%ADas/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
 | it-izlias | [Izlías](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Izl%C3%ADas/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
 | it-izrahias | [Izrahías](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Izrah%C3%ADas/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
 | it-izri | [Izrí](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Izr%C3%AD/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
+| it-jaala-jaalah | [Jaalá, Jaalah](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jaal%C3%A1-Jaalah/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
 | it-jaaqoba | [Jaaqoba](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jaaqoba/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
 | it-jaare-oreguim | [Jaaré-oreguim](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jaar%C3%A9-oreguim/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-jaaresias | [Jaaresías](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jaares%C3%ADas/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
 | it-jaasiel | [Jaasiel](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jaasiel/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
+| it-jaasu | [Jaasú](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jaas%C3%BA/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
 | it-jaazanias | [Jaazanías](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jaazan%C3%ADas/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-30 |
 | it-jaazias | [Jaazías](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jaaz%C3%ADas/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
 | it-jaaziel | [Jaaziel](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jaaziel/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
@@ -1965,6 +2056,7 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-jacan | [Jacán](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jac%C3%A1n/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
 | it-jacob | [Jacob](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jacob/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
 | it-jada | [Jadá](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jad%C3%A1/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
+| it-jadai | [Jadai](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jadai/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
 | it-jael | [Jael](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jael/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-jafet | [Jafet](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jafet/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
 | it-jafia | [Jafía](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jaf%C3%ADa/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
@@ -1981,6 +2073,7 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-jahmai | [Jahmai](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jahmai/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
 | it-jahzeel | [Jahzeel](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jahzeel/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-jahzera | [Jahzerá](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jahzer%C3%A1/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
+| it-jahzeya | [Jahzeya](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jahzeya/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
 | it-jahziel | [Jahziel](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jahziel/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
 | it-jair | [Jaír](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ja%C3%ADr/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-jairo | [Jairo](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jairo/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
@@ -2007,6 +2100,7 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-jasen | [Jasén](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jas%C3%A9n/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-jasobeam | [Jasobeam](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jasobeam/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-jason | [Jasón](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jas%C3%B3n/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
+| it-jasub | [Jasub](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jasub/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
 | it-jasubi-lehem | [Jasubí-léhem](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jasub%C3%AD-l%C3%A9hem/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
 | it-jatir | [Jatir](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jatir/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-jatniel | [Jatniel](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jatniel/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
@@ -2071,6 +2165,7 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-jerahmeelitas | [Jerahmeelitas](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jerahmeelitas/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-jerbo | [Jerbo](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jerbo/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-jered | [Jéred](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/J%C3%A9red/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
+| it-jeremai | [Jeremai](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jeremai/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
 | it-jeremias | [Jeremías](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jerem%C3%ADas/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
 | it-jeremias-libro | [Jeremías, Libro de](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jerem%C3%ADas-Libro-de/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
 | it-jeremot | [Jeremot](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jeremot/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
@@ -2133,6 +2228,7 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-jogli | [Joglí](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jogl%C3%AD/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-joha | [Johá](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Joh%C3%A1/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
 | it-johanan | [Johanán](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Johan%C3%A1n/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-30 |
+| it-joiarib | [Joiarib](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Joiarib/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
 | it-jokebed | [Jokébed](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jok%C3%A9bed/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-jonam | [Jonam](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jonam/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-jonas | [Jonás](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jon%C3%A1s/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
@@ -2159,6 +2255,7 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-joses | [Josés](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jos%C3%A9s/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-josias | [Josías](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jos%C3%ADas/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
 | it-josibias | [Josibías](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Josib%C3%ADas/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
+| it-josifias | [Josifías](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Josif%C3%ADas/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
 | it-josue | [Josué](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Josu%C3%A9/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
 | it-josue-libro | [Josué, Libro de](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Josu%C3%A9-Libro-de/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-jotan | [Jotán](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jot%C3%A1n/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
@@ -2187,13 +2284,16 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-kedorlaomer | [Kedorlaomer](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Kedorlaomer/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-kefar-amoni | [Kefar-amoní](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Kefar-amon%C3%AD/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-kefira | [Kefirá](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Kefir%C3%A1/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
+| it-kelal | [Kelal](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Kelal/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
 | it-kelub | [Kelub](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Kelub/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
+| it-keluhi | [Kelúhi](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Kel%C3%BAhi/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
 | it-kemos | [Kemós](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Kem%C3%B3s/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-kenaana | [Kenaaná](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Kenaan%C3%A1/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-30 |
 | it-kenanias | [Kenanías](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Kenan%C3%ADas/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
 | it-keran | [Kerán](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ker%C3%A1n/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-keretitas | [Keretitas](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Keretitas/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-kerit | [Kerit, Valle torrencial de](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Kerit-Valle-torrencial-de/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-30 |
+| it-kerub | [Kerub](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Kerub/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
 | it-kesalon | [Kesalón](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Kesal%C3%B3n/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-kesed | [Késed](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/K%C3%A9sed/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-kesil | [Kesil](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Kesil/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
@@ -2229,6 +2329,7 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-lasea | [Lasea](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Lasea/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-lazaro | [Lázaro](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/L%C3%A1zaro/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
 | it-lea | [Lea](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Lea/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
+| it-lebana | [Lebaná](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Leban%C3%A1/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
 | it-lebaot | [Lebaot](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Lebaot/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-lebona | [Leboná](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Lebon%C3%A1/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-leca | [Lecá](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Lec%C3%A1/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
@@ -2262,6 +2363,7 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-lo-ammi | [Lo-ammí](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Lo-amm%C3%AD/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-lo-debar | [Lo-debar](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Lo-debar/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-lo-ruhama | [Lo-ruhamá](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Lo-ruham%C3%A1/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
+| it-locura | [Locura](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Locura/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-14 |
 | it-lod | [Lod](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Lod/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
 | it-loida | [Loida](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Loida/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
 | it-lot | [Lot](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Lot/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
@@ -2273,6 +2375,7 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-luz-ii | [Luz, II](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Luz-II/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-maaca | [Maacá](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Maac%C3%A1/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-maacatita | [Maacatita](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Maacatita/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
+| it-maadai | [Maadai](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Maadai/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
 | it-maarat | [Maarat](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Maarat/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-maasai | [Maasai](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Maasai/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
 | it-maaseya | [Maaseya](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Maaseya/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
@@ -2282,6 +2385,7 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-macbanai | [Macbanai](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Macbanai/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
 | it-macbena | [Macbená](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Macben%C3%A1/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
 | it-macedonia | [Macedonia, macedonios](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Macedonia-macedonios/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-27 |
+| it-macnadebai | [Macnadebai](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Macnadebai/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
 | it-macpela | [Macpelá](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Macpel%C3%A1/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-mactes | [Mactés](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Mact%C3%A9s/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-madai | [Madai](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Madai/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
@@ -2292,6 +2396,7 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-madon | [Madón](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Mad%C3%B3n/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-madre | [Madre](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Madre/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
 | it-magadan | [Magadán](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Magad%C3%A1n/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
+| it-magbis | [Magbís](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Magb%C3%ADs/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
 | it-magdiel | [Magdiel](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Magdiel/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-magog | [Magog](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Magog/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-mahalalel | [Mahalalel](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Mahalalel/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
@@ -2355,7 +2460,9 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-matanias | [Matanías](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Matan%C3%ADas/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
 | it-matat | [Matat](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Matat/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-matata | [Matatá](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Matat%C3%A1/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
+| it-matatah | [Matatah](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Matatah/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
 | it-matatias | [Matatías](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Matat%C3%ADas/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
+| it-matenai | [Matenai](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Matenai/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
 | it-mateo | [Mateo](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Mateo/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
 | it-matias | [Matías](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Mat%C3%ADas/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
 | it-matitias | [Matitías](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Matit%C3%ADas/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
@@ -2368,11 +2475,13 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-medad | [Medad](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Medad/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-medan | [Medán](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Med%C3%A1n/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-medeba | [Medebá](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Medeb%C3%A1/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
+| it-mediador | [Mediador](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Mediador/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-14 |
 | it-medos | [Medos, Media](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Medos-Media/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
 | it-mefaat | [Mefaat](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Mefaat/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-mefiboset | [Mefibóset](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Mefib%C3%B3set/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-meguido | [Meguidó](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Meguid%C3%B3-2/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
 | it-mehetabel | [Mehetabel](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Mehetabel/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
+| it-mehida | [Mehidá](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Mehid%C3%A1/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
 | it-mehir | [Mehir](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Mehir/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
 | it-meholatita | [Meholatita](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Meholatita/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-mehujael | [Mehujael](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Mehujael/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
@@ -2394,6 +2503,7 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-merataim | [Merataim](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Merataim/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
 | it-merayot | [Merayot](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Merayot/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
 | it-mered | [Méred](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/M%C3%A9red/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
+| it-meremot | [Meremot](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Meremot/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
 | it-meriba | [Meribá](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Merib%C3%A1/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-meribat-qades | [Meribat-qadés](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Meribat-qad%C3%A9s/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
 | it-merodac | [Merodac](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Merodac/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
@@ -2454,10 +2564,12 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-misia | [Misia](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Misia/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-27 |
 | it-misma | [Mismá](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Mism%C3%A1/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-mismana | [Mismaná](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Misman%C3%A1/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
+| it-mispar | [Mispar](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Mispar/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
 | it-misrefot-maim | [Misrefot-maim](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Misrefot-maim/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-mitilene | [Mitilene](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Mitilene/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-27 |
 | it-mitnita | [Mitnita](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Mitnita/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
 | it-mitqa | [Mitqá](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Mitq%C3%A1/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
+| it-mitridates | [Mitrídates](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Mitr%C3%ADdates/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
 | it-miza | [Mizá](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Miz%C3%A1/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-mizpa | [Mizpá, Mizpé](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Mizp%C3%A1-Mizp%C3%A9/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
 | it-mizraim | [Mizraim](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Mizraim/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
@@ -2526,6 +2638,7 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-nefilim | [Nefilim](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Nefilim/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-neftali | [Neftalí](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Neftal%C3%AD/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
 | it-neftoah | [Neftóah](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Neft%C3%B3ah/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
+| it-nefusesim-nefusim | [Nefusesim, Nefusim](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Nefusesim-Nefusim/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
 | it-negueb | [Négueb](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/N%C3%A9gueb/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-nehelam | [Nehelam](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Nehelam/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
 | it-nehemias | [Nehemías](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Nehem%C3%ADas/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
@@ -2534,6 +2647,7 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-neko | [Nekó, Nekoh](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Nek%C3%B3-Nekoh/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
 | it-nemrod | [Nemrod](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Nemrod/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
 | it-nemuel | [Nemuel](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Nemuel/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
+| it-neqoda | [Neqodá](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Neqod%C3%A1/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
 | it-ner | [Ner](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ner/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-nereo | [Nereo](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Nereo/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-nergal-sarezer | [Nergal-sarézer](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Nergal-sar%C3%A9zer/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
@@ -2544,6 +2658,7 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-netanel | [Netanel](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Netanel/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-netanias | [Netanías](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Netan%C3%ADas/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-30 |
 | it-netofa | [Netofá](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Netof%C3%A1/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
+| it-nezias | [Nezías](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Nez%C3%ADas/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
 | it-nezib | [Nezib](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Nezib/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-nibsan | [Nibsán](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Nibs%C3%A1n/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-nicanor | [Nicanor](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Nicanor/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
@@ -2561,6 +2676,7 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-nisroc | [Nisroc](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Nisroc/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-30 |
 | it-no-amon | [No, No-amón](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/No-No-am%C3%B3n/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-noa | [Noá](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/No%C3%A1/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
+| it-noadias | [Noadías](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Noad%C3%ADas/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
 | it-nob | [Nob](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Nob/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-nobah | [Nóbah](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/N%C3%B3bah/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-nodab | [Nodab](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Nodab/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
@@ -2617,8 +2733,10 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-pablo | [Pablo](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Pablo/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-27 |
 | it-pacto | [Pacto](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Pacto/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
 | it-padan | [Padán](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Pad%C3%A1n/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
+| it-padon | [Padón](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Pad%C3%B3n/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
 | it-pafos | [Pafos](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Pafos/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-27 |
 | it-paguiel | [Paguiel](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Paguiel/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
+| it-pahat-moab | [Pahat-moab](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Pahat-moab/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
 | it-palti | [Paltí](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Palt%C3%AD/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-paltiel | [Paltiel](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Paltiel/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-paltita | [Paltita](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Paltita/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
@@ -2629,6 +2747,7 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-paran | [Parán](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Par%C3%A1n/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-parmenas | [Parmenas](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Parmenas/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-parnac | [Parnac](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Parnac/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
+| it-paros | [Parós](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Par%C3%B3s/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
 | it-partera | [Partera](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Partera/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-partos | [Partos](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Partos/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
 | it-parua | [Parúah](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Par%C3%BAah/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-30 |
@@ -2674,6 +2793,7 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-perizitas | [Perizitas](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Perizitas/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-persia | [Persia, persas](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Persia-persas/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
 | it-persida | [Pérsida](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/P%C3%A9rsida/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
+| it-peruda | [Perudá](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Perud%C3%A1/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
 | it-petahias | [Petahías](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Petah%C3%ADas/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
 | it-petor | [Petor](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Petor/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-petuel | [Petuel](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Petuel/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
@@ -2694,6 +2814,7 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-pitom | [Pitom](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Pitom/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-piton | [Pitón](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Pit%C3%B3n/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
 | it-plomada | [Plomada](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Plomada/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
+| it-pokeret-hazebaim | [Pokéret-hazebaim](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Pok%C3%A9ret-hazebaim/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
 | it-ponto | [Ponto](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ponto/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
 | it-potifar | [Potifar](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Potifar/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-potifera | [Potifera](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Potifera/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
@@ -2719,6 +2840,7 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-puva | [Puvá](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Puv%C3%A1/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-qabzeel | [Qabzeel](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Qabzeel/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-qades | [Qadés](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Qad%C3%A9s/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
+| it-qadmiel | [Qadmiel](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Qadmiel/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
 | it-qamon | [Qamón](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Qam%C3%B3n/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-qana | [Qaná](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Qan%C3%A1/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-qareah | [Qaréah](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Qar%C3%A9ah/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-30 |
@@ -2739,6 +2861,8 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-quedes | [Quedes](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Quedes/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-quehelata | [Quehelatá](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Quehelat%C3%A1/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-queila | [Queilá](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Queil%C3%A1/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
+| it-quelaya | [Quelaya](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Quelaya/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
+| it-quelita | [Quelitá](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Quelit%C3%A1/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
 | it-quemuel | [Quemuel](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Quemuel/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-quenan | [Quenán](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Quen%C3%A1n/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-quenat | [Quenat](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Quenat/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
@@ -2748,6 +2872,7 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-queren-hapuc | [Querén-hapuc](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Quer%C3%A9n-hapuc/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-queriyot | [Queriyot](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Queriyot/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-queriyot-hezron | [Queriyot-hezrón](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Queriyot-hezr%C3%B3n/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
+| it-queros | [Querós](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Quer%C3%B3s/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
 | it-querubin | [Querubín](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Querub%C3%ADn/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
 | it-quesias | [Quesías](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ques%C3%ADas/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-quetura | [Queturá](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Quetur%C3%A1/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
@@ -2789,6 +2914,7 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-ramataim-zofim | [Ramataim-zofim](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ramataim-zofim/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-ramatita | [Ramatita](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ramatita/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
 | it-rameses | [Raamsés, Ramesés](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Raams%C3%A9s-Rames%C3%A9s/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
+| it-ramias | [Ramías](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ram%C3%ADas/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
 | it-ramot | [Ramot](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ramot/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-ramot-galaad | [Ramot-galaad](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ramot-galaad/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-raqat | [Raqat](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Raqat/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
@@ -2801,6 +2927,7 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-recab | [Recab](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Recab/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-recabitas | [Recabitas](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Recabitas/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
 | it-recta | [Recta](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Recta/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
+| it-reelaya | [Reelaya](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Reelaya/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
 | it-refael | [Refael](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Refael/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
 | it-refah | [Réfah](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/R%C3%A9fah/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
 | it-refaim | [Refaím](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Refa%C3%ADm/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
@@ -2867,6 +2994,7 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-saaraim | [Saaraim](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Saaraim/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-sabado | [Sábado](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/S%C3%A1bado/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-sabeos | [Sabeos](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sabeos/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
+| it-sabetai | [Sabetai](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sabetai/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
 | it-sabta | [Sabtá](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sabt%C3%A1/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-sabteca | [Sabtecá](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sabtec%C3%A1/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-sacar | [Sacar](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sacar/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
@@ -2891,6 +3019,7 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-salim | [Salim](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Salim/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-salisa | [Salisá](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Salis%C3%A1/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-salma | [Salmá](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Salm%C3%A1/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
+| it-salmai | [Salmai](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Salmai/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
 | it-salman | [Salmán](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Salm%C3%A1n/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-salmanasar | [Salmanasar](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Salmanasar/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
 | it-salmon | [Salmón](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Salm%C3%B3n/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
@@ -2923,6 +3052,7 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-sanson | [Sansón](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sans%C3%B3n/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
 | it-santiago | [Santiago](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Santiago/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
 | it-santiago-carta | [Santiago, Carta de](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Santiago-Carta-de/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
+| it-santos | [Santos](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Santos/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-14 |
 | it-sara | [Sara](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sara/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
 | it-saraf | [Saraf](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Saraf/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
 | it-sarar | [Sarar](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sarar/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
@@ -2935,12 +3065,14 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-saronita | [Saronita](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Saronita/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
 | it-sarsekim | [Sarsekim](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sarsekim/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
 | it-saruhen | [Saruhén](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Saruh%C3%A9n/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
+| it-sasai | [Sasai](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sasai/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
 | it-sasaq | [Sasaq](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sasaq/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
 | it-satanas | [Satanás](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Satan%C3%A1s/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-saul | [Saúl](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sa%C3%BAl/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
 | it-save | [Savé, Llanura baja de](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sav%C3%A9-Llanura-baja-de/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-save-quiryataim | [Savé-quiryataim](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sav%C3%A9-quiryataim/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-savsa | [Savsá](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Savs%C3%A1/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
+| it-seal | [Seal](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Seal/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
 | it-sealtiel | [Sealtiel](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sealtiel/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-sear-jasub | [Sear-jasub](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sear-jasub/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-30 |
 | it-searias | [Searías](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sear%C3%ADas/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
@@ -2997,6 +3129,7 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-semida | [Semidá](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Semid%C3%A1/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-semiramot | [Semiramot](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Semiramot/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
 | it-semuel | [Semuel](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Semuel/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
+| it-senaa | [Senaá](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sena%C3%A1/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
 | it-senaquerib | [Senaquerib](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Senaquerib/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
 | it-senazar | [Senazar](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Senazar/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
 | it-sene | [Sené](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sen%C3%A9/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
@@ -3006,6 +3139,7 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-serafines | [Serafines](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Serafines/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-30 |
 | it-serah | [Sérah](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/S%C3%A9rah/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-seraya | [Seraya](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Seraya/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
+| it-serebias | [Serebías](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sereb%C3%ADas/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
 | it-sered | [Séred](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/S%C3%A9red/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-seres | [Seres](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Seres/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
 | it-serpiente-de-cobre | [Serpiente de cobre](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Serpiente-de-cobre/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
@@ -3014,11 +3148,15 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-sesan | [Sesán](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ses%C3%A1n/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
 | it-sesbazar | [Sesbazar](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sesbazar/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
 | it-set | [Set](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Set/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
+| it-setar-bozenai | [Setar-bozenai](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Setar-bozenai/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
 | it-setur | [Setur](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Setur/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-seva | [Sevá](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sev%C3%A1/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
+| it-sharai | [Sharai](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sharai/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
 | it-shaul | [Shaúl](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sha%C3%BAl/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
+| it-shimeon | [Shimeón](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Shime%C3%B3n/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
 | it-shimon | [Shimón](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Shim%C3%B3n/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
 | it-shion | [Shión](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Shi%C3%B3n/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
+| it-sia-siaha | [Siá, Siahá](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Si%C3%A1-Siah%C3%A1/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
 | it-siba | [Sibá](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sib%C3%A1/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-sibecai | [Sibecai](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sibecai/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-sibma | [Sibmá](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sibm%C3%A1/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
@@ -3028,6 +3166,7 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-sidim | [Sidim, Llanura baja de](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sidim-Llanura-baja-de/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-sidon | [Sidón, sidonios](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sid%C3%B3n-sidonios/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-27 |
 | it-siene | [Siene](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Siene/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
+| it-sierra | [Sierra](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sierra/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-14 |
 | it-sifi | [Sifí](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sif%C3%AD/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
 | it-sifmita | [Sifmita](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sifmita/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
 | it-sifmot | [Sifmot](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sifmot/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
@@ -3086,11 +3225,13 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-soa | [Soa](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Soa/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
 | it-sobab | [Sobab](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sobab/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-sobac | [Sobac](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sobac/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
+| it-sobai | [Sobai](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sobai/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
 | it-sobal | [Sobal](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sobal/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-sobi | [Sobí](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sob%C3%AD/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-soco | [Socó, Socoh](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Soc%C3%B3-Socoh/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-sodi | [Sodí](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sod%C3%AD/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-sodoma | [Sodoma](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sodoma/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
+| it-soferet | [Soféret](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sof%C3%A9ret/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
 | it-sofonias | [Sofonías](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sofon%C3%ADas/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
 | it-sofonias-libro | [Sofonías, Libro de](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sofon%C3%ADas-Libro-de/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-soham | [Soham](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Soham/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
@@ -3100,6 +3241,7 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-soreq | [Soreq, Valle torrencial de](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Soreq-Valle-torrencial-de/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-sosipatro | [Sosípatro](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sos%C3%ADpatro/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-sostenes | [Sóstenes](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/S%C3%B3stenes/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
+| it-sotai | [Sotai](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sotai/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
 | it-sua | [Súa](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/S%C3%BAa/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-suah | [Súah](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/S%C3%BAah/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-suaj | [Súaj](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/S%C3%BAaj/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
@@ -3125,6 +3267,7 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-symeon | [Symeón](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Syme%C3%B3n/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-taanac | [Taanac](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Taanac/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-taanat-silo | [Taanat-siló](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Taanat-sil%C3%B3/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
+| it-tabaot | [Tabaot](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Tabaot/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
 | it-tabat | [Tabat](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Tabat/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-tabeel | [Tabeel](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Tabeel/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-30 |
 | it-tabera | [Taberá](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Taber%C3%A1/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
@@ -3156,17 +3299,21 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-tarso | [Tarso](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Tarso/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
 | it-tartan | [Tartán](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Tart%C3%A1n/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-30 |
 | it-tartaro | [Tártaro](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/T%C3%A1rtaro/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-14 |
+| it-tatenai | [Tatenai](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Tatenai/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
 | it-tebah | [Tébah](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/T%C3%A9bah/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-tebalias | [Tebalías](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Tebal%C3%ADas/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
 | it-tebez | [Tebez](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Tebez/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-tehina | [Tehiná](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Tehin%C3%A1/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
 | it-tel-abib | [Tel-abib](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Tel-abib/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
 | it-tel-asar | [Tel-asar](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Tel-asar/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-30 |
+| it-tel-harsa | [Tel-harsá](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Tel-hars%C3%A1/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
+| it-tel-melah | [Tel-mélah](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Tel-m%C3%A9lah/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
 | it-telah | [Télah](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/T%C3%A9lah/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
 | it-telaim | [Telaim](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Telaim/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-telam | [Telam](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Telam/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-telem | [Télem](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/T%C3%A9lem/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-tema | [Temá](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Tem%C3%A1/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
+| it-temah | [Témah](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/T%C3%A9mah/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
 | it-teman | [Temán](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Tem%C3%A1n/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-temanita | [Temanita](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Temanita/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-temeni | [Temení](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Temen%C3%AD/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
@@ -3208,6 +3355,7 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-tirhaqa | [Tirhaqá](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Tirhaq%C3%A1/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-30 |
 | it-tiria | [Tiría](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Tir%C3%ADa/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
 | it-tiro | [Tiro](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Tiro-2/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-27 |
+| it-tirsata | [Tirsatá](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Tirsat%C3%A1/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
 | it-tirza | [Tirzá](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Tirz%C3%A1/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
 | it-tisbita | [Tisbita](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Tisbita/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-30 |
 | it-tito | [Tito, Carta a](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Tito-Carta-a/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-27 |
@@ -3216,6 +3364,7 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-toah | [Tóah](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/T%C3%B3ah/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
 | it-tob | [Tob](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Tob/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-tob-adonias | [Tob-adonías](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Tob-adon%C3%ADas/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
+| it-tobias | [Tobías](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Tob%C3%ADas/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
 | it-tobiya | [Tobiya](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Tobiya/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-tofel | [Tófel](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/T%C3%B3fel/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-tofet | [Tófet](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/T%C3%B3fet/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-30 |
@@ -3237,6 +3386,7 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-tubal | [Tubal](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Tubal/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-tubal-cain | [Tubal-caín](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Tubal-ca%C3%ADn/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-ucal | [Ucal](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ucal/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
+| it-uel | [Uel](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Uel/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
 | it-ufaz | [Ufaz](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ufaz/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
 | it-ula | [Ulá](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ul%C3%A1/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
 | it-ulai | [Ulai](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ulai/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
@@ -3262,6 +3412,7 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-vaca | [Vaca](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Vaca/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-vaheb | [Vaheb](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Vaheb/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-valle-de-la-sal | [Sal, Valle de la](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sal-Valle-de-la/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
+| it-vanias | [Vanías](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Van%C3%ADas/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
 | it-vara-baston | [Vara, bastón](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Vara-bast%C3%B3n/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-vedan | [Vedán](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ved%C3%A1n/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
 | it-vengador-de-la-sangre | [Vengador de la sangre](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Vengador-de-la-sangre/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
@@ -3275,10 +3426,13 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-zaananim | [Zaananim](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zaananim/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-zaavan | [Zaaván](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zaav%C3%A1n/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-zabad | [Zabad](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zabad/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
+| it-zabai | [Zabai](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zabai/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
+| it-zabbud | [Zabbud](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zabbud/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
 | it-zabdi | [Zabdí](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zabd%C3%AD/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-zabdiel | [Zabdiel](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zabdiel/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
 | it-zabud | [Zabud](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zabud/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-30 |
 | it-zabulon | [Zabulón](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zabul%C3%B3n/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
+| it-zacai | [Zacai](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zacai/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
 | it-zacarias | [Zacarías](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zacar%C3%ADas/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
 | it-zacarias-libro | [Zacarías, Libro de](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zacar%C3%ADas-Libro-de/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-zacur | [Zacur](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zacur/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
@@ -3291,11 +3445,13 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-zanoah | [Zanóah](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zan%C3%B3ah/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-zaqueo | [Zaqueo](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zaqueo/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
 | it-zaretan | [Zaretán](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zaret%C3%A1n/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
+| it-zatu | [Zatú](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zat%C3%BA/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
 | it-zaza | [Zazá](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zaz%C3%A1/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
 | it-zebadias | [Zebadías](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zebad%C3%ADas/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
 | it-zebah | [Zébah](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Z%C3%A9bah/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-zebedeo | [Zebedeo](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zebedeo/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
 | it-zebida | [Zebidá](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zebid%C3%A1/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-30 |
+| it-zebina | [Zebiná](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zebin%C3%A1/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
 | it-zeboim | [Zeboím](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zebo%C3%ADm/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-zeboyim | [Zeboyim](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zeboyim/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-zebul | [Zebul](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zebul/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
@@ -3337,6 +3493,7 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-zif | [Zif](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zif/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-zifa | [Zifá](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zif%C3%A1/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
 | it-zifron | [Zifrón](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zifr%C3%B3n/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
+| it-ziha | [Zihá](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zih%C3%A1/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-13 |
 | it-zila | [Zilá](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zil%C3%A1/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-ziletai | [Ziletai](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ziletai/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-10-12 |
 | it-zilpa | [Zilpá](https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zilp%C3%A1/) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
@@ -3973,13 +4130,17 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | santiago-2 | [Santiago 2](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/santiago/2/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | santiago-5 | [Santiago 5](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/santiago/5/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | sh-cap-4 | [En busca de lo desconocido por la magia y el espiritismo](https://www.jw.org/es/biblioteca/libros/El-hombre-en-busca-de-Dios/En-busca-de-lo-desconocido-por-la-magia-y-el-espiritismo/) | El hombre en busca de Dios | 1 | sin dato | 2026-10-02 |
+| si-1-juan | [Libro bíblico número 62: 1 Juan](https://www.jw.org/es/biblioteca/libros/Toda-Escritura-es-inspirada-de-Dios-y-provechosa/Libro-b%C3%ADblico-n%C3%BAmero-62-1-Juan/) | “Toda Escritura es inspirada de Dios y provechosa” | 1 | sin dato | 2026-10-14 |
+| si-2-juan | [Libro bíblico número 63: 2 Juan](https://www.jw.org/es/biblioteca/libros/Toda-Escritura-es-inspirada-de-Dios-y-provechosa/Libro-b%C3%ADblico-n%C3%BAmero-63-2-Juan/) | “Toda Escritura es inspirada de Dios y provechosa” | 1 | sin dato | 2026-10-14 |
 | si-2-pedro | [Libro bíblico número 61: 2 Pedro](https://www.jw.org/es/biblioteca/libros/Toda-Escritura-es-inspirada-de-Dios-y-provechosa/Libro-b%C3%ADblico-n%C3%BAmero-61-2-Pedro/) | “Toda Escritura es inspirada de Dios y provechosa” | 1 | sin dato | 2026-10-14 |
 | si-3 | [Estudio número 3: Sucesos fechados en la corriente del tiempo](https://www.jw.org/es/biblioteca/libros/Toda-Escritura-es-inspirada-de-Dios-y-provechosa/Estudio-n%C3%BAmero-3-Sucesos-fechados-en-la-corriente-del-tiempo/) | “Toda Escritura es inspirada de Dios y provechosa” | 1 | sin dato | 2026-09-27 |
+| si-3-juan | [Libro bíblico número 64: 3 Juan](https://www.jw.org/es/biblioteca/libros/Toda-Escritura-es-inspirada-de-Dios-y-provechosa/Libro-b%C3%ADblico-n%C3%BAmero-64-3-Juan/) | “Toda Escritura es inspirada de Dios y provechosa” | 1 | sin dato | 2026-10-14 |
 | si-9 | [Estudio número 9: La arqueología y el registro inspirado](https://www.jw.org/es/biblioteca/libros/Toda-Escritura-es-inspirada-de-Dios-y-provechosa/Estudio-n%C3%BAmero-9-La-arqueolog%C3%ADa-y-el-registro-inspirado/) | “Toda Escritura es inspirada de Dios y provechosa” | 1 | sin dato | 2026-09-28 |
 | si-abdias | [Libro bíblico número 31: Abdías](https://www.jw.org/es/biblioteca/libros/Toda-Escritura-es-inspirada-de-Dios-y-provechosa/Libro-b%C3%ADblico-n%C3%BAmero-31-Abd%C3%ADas/) | “Toda Escritura es inspirada de Dios y provechosa” | 1 | sin dato | 2026-09-29 |
 | si-ageo | [Libro bíblico número 37: Ageo](https://www.jw.org/es/biblioteca/libros/Toda-Escritura-es-inspirada-de-Dios-y-provechosa/Libro-b%C3%ADblico-n%C3%BAmero-37-Ageo/) | “Toda Escritura es inspirada de Dios y provechosa” | 1 | sin dato | 2026-09-29 |
 | si-amos | [Libro bíblico número 30: Amós](https://www.jw.org/es/biblioteca/libros/Toda-Escritura-es-inspirada-de-Dios-y-provechosa/Libro-b%C3%ADblico-n%C3%BAmero-30-Am%C3%B3s/) | “Toda Escritura es inspirada de Dios y provechosa” | 1 | sin dato | 2026-09-29 |
 | si-cantar-de-los-cantares | [Libro bíblico número 22: El Cantar de los Cantares](https://www.jw.org/es/biblioteca/libros/Toda-Escritura-es-inspirada-de-Dios-y-provechosa/Libro-b%C3%ADblico-n%C3%BAmero-22-El-Cantar-de-los-Cantares/) | “Toda Escritura es inspirada de Dios y provechosa” | 1 | sin dato | 2026-09-29 |
+| si-daniel | [Libro bíblico número 27: Daniel](https://www.jw.org/es/biblioteca/libros/Toda-Escritura-es-inspirada-de-Dios-y-provechosa/Libro-b%C3%ADblico-n%C3%BAmero-27-Daniel/) | “Toda Escritura es inspirada de Dios y provechosa” | 1 | sin dato | 2026-10-14 |
 | si-eclesiastes | [Libro bíblico número 21: Eclesiastés](https://www.jw.org/es/biblioteca/libros/Toda-Escritura-es-inspirada-de-Dios-y-provechosa/Libro-b%C3%ADblico-n%C3%BAmero-21-Eclesiast%C3%A9s/) | “Toda Escritura es inspirada de Dios y provechosa” | 1 | sin dato | 2026-09-29 |
 | si-ezequiel | [Libro bíblico número 26: Ezequiel](https://www.jw.org/es/biblioteca/libros/Toda-Escritura-es-inspirada-de-Dios-y-provechosa/Libro-b%C3%ADblico-n%C3%BAmero-26-Ezequiel/) | “Toda Escritura es inspirada de Dios y provechosa” | 1 | sin dato | 2026-10-13 |
 | si-habacuc | [Libro bíblico número 35: Habacuc](https://www.jw.org/es/biblioteca/libros/Toda-Escritura-es-inspirada-de-Dios-y-provechosa/Libro-b%C3%ADblico-n%C3%BAmero-35-Habacuc/) | “Toda Escritura es inspirada de Dios y provechosa” | 1 | sin dato | 2026-09-29 |
@@ -4039,12 +4200,14 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | w05-corazon-altivo | [Evitemos desarrollar un corazón altivo](https://www.jw.org/es/biblioteca/revistas/w20051015/Evitemos-desarrollar-un-coraz%C3%B3n-altivo/) | La Atalaya (15 de octubre de 2005) | 1 | 2005 | 2026-10-13 |
 | w05-pensamientos-nocivos | [Resistamos los pensamientos nocivos](https://www.jw.org/es/biblioteca/revistas/w20050915/Resistamos-los-pensamientos-nocivos/) | La Atalaya (15 de septiembre de 2005) | 1 | 2005 | 2026-09-29 |
 | w05-profecias-de-oseas | [Las profecías de Oseas nos ayudan a andar con Dios](https://www.jw.org/es/biblioteca/revistas/w20051115/Las-profec%C3%ADas-de-Oseas-nos-ayudan-a-andar-con-Dios/) | La Atalaya (15 de noviembre de 2005) | 1 | 2005 | 2026-09-29 |
+| w06-contenido-del-arca | [Preguntas de los lectores](https://www.jw.org/es/biblioteca/revistas/w20060115/Preguntas-de-los-lectores/) | La Atalaya (15 de enero de 2006) | 1 | 2006 | 2026-10-14 |
 | w06-isaias-1 | [Puntos sobresalientes del libro de Isaías (parte 1)](https://www.jw.org/es/biblioteca/revistas/w20061201/Puntos-sobresalientes-del-libro-de-Isa%C3%ADas-parte-1/) | La Atalaya (1 de diciembre de 2006) | 1 | 2006 | 2026-09-30 |
 | w06-proverbios | [Puntos sobresalientes del libro de Proverbios](https://www.jw.org/es/biblioteca/revistas/w20060915/Puntos-sobresalientes-del-libro-de-Proverbios/) | La Atalaya (15 de septiembre de 2006) | 1 | 2006 | 2026-09-29 |
 | w06-salmos-libro-2 | [Puntos sobresalientes del libro segundo de los Salmos](https://www.jw.org/es/biblioteca/revistas/w20060601/Puntos-sobresalientes-del-libro-segundo-de-los-Salmos/) | La Atalaya (1 de junio de 2006) | 1 | 2006 | 2026-09-29 |
 | w06-salmos-libros-3-4 | [Puntos sobresalientes de los libros tercero y cuarto de los Salmos](https://www.jw.org/es/biblioteca/revistas/w20060715/Puntos-sobresalientes-de-los-libros-tercero-y-cuarto-de-los-Salmos/) | La Atalaya (15 de julio de 2006) | 1 | 2006 | 2026-09-29 |
 | w07-abdias-jonas-y-miqueas | [Puntos sobresalientes de los libros de Abdías, Jonás y Miqueas](https://www.jw.org/es/biblioteca/revistas/w20071101/Puntos-sobresalientes-de-los-libros-de-Abd%C3%ADas-Jon%C3%A1s-y-Miqueas/) | La Atalaya (1 de noviembre de 2007) | 1 | 2007 | 2026-09-29 |
 | w07-ageo-y-zacarias | [Puntos sobresalientes de los libros de Ageo y Zacarías](https://www.jw.org/es/biblioteca/revistas/w20071201/Puntos-sobresalientes-de-los-libros-de-Ageo-y-Zacar%C3%ADas/) | La Atalaya (1 de diciembre de 2007) | 1 | 2007 | 2026-09-29 |
+| w07-daniel | [Puntos sobresalientes del libro de Daniel](https://www.jw.org/es/biblioteca/revistas/w20070901/Puntos-sobresalientes-del-libro-de-Daniel/) | La Atalaya (1 de septiembre de 2007) | 1 | 2007 | 2026-10-14 |
 | w07-ezequiel-1 | [Puntos sobresalientes del libro de Ezequiel (parte 1)](https://www.jw.org/es/biblioteca/revistas/w20070701/Puntos-sobresalientes-del-libro-de-Ezequiel-parte-1/) | La Atalaya (1 de julio de 2007) | 1 | 2007 | 2026-10-13 |
 | w07-ezequiel-2 | [Puntos sobresalientes del libro de Ezequiel (parte 2)](https://www.jw.org/es/biblioteca/revistas/w20070801/Puntos-sobresalientes-del-libro-de-Ezequiel-parte-2/) | La Atalaya (1 de agosto de 2007) | 1 | 2007 | 2026-10-13 |
 | w07-isaias-2 | [Puntos sobresalientes del libro de Isaías (parte 2)](https://www.jw.org/es/biblioteca/revistas/w20070115/Puntos-sobresalientes-del-libro-de-Isa%C3%ADas-parte-2/) | La Atalaya (15 de enero de 2007) | 1 | 2007 | 2026-09-30 |
@@ -4053,6 +4216,7 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | w07-lamentaciones | [Puntos sobresalientes del libro de Lamentaciones](https://www.jw.org/es/biblioteca/revistas/w20070601/Puntos-sobresalientes-del-libro-de-Lamentaciones/) | La Atalaya (1 de junio de 2007) | 1 | 2007 | 2026-10-13 |
 | w07-malaquias | [Puntos sobresalientes del libro de Malaquías](https://www.jw.org/es/biblioteca/revistas/w20071215/Puntos-sobresalientes-del-libro-de-Malaqu%C3%ADas/) | La Atalaya (15 de diciembre de 2007) | 1 | 2007 | 2026-09-30 |
 | w07-nahum-habacuc-y-sofonias | [Puntos sobresalientes de los libros de Nahúm, Habacuc y Sofonías](https://www.jw.org/es/biblioteca/revistas/w20071115/Puntos-sobresalientes-de-los-libros-de-Nah%C3%BAm-Habacuc-y-Sofon%C3%ADas/) | La Atalaya (15 de noviembre de 2007) | 1 | 2007 | 2026-09-29 |
+| w08-cartas-de-juan-y-judas | [Puntos sobresalientes de las cartas de Juan y de Judas](https://www.jw.org/es/biblioteca/revistas/w20081215/Puntos-sobresalientes-de-las-cartas-de-Juan-y-de-Judas/) | La Atalaya (15 de diciembre de 2008) | 1 | 2008 | 2026-10-14 |
 | w08-escritura-cuneiforme | [La escritura cuneiforme y la Biblia](https://www.jw.org/es/biblioteca/revistas/w20081215/La-escritura-cuneiforme-y-la-Biblia/) | La Atalaya (15 de diciembre de 2008) | 1 | 2008 | 2026-09-28 |
 | w08-salmo-83 | [La respuesta de Jehová a una oración ferviente](https://www.jw.org/es/biblioteca/revistas/w20081015/La-respuesta-de-Jehov%C3%A1-a-una-oraci%C3%B3n-ferviente/) | La Atalaya (15 de octubre de 2008) | 1 | 2008 | 2026-09-29 |
 | w10-haran | [Harán: antiguo hervidero de actividad](https://www.jw.org/es/biblioteca/revistas/w20100515/Har%C3%A1n-antiguo-hervidero-de-actividad/) | La Atalaya (15 de mayo de 2010) | 1 | 2010 | 2026-09-28 |
@@ -4067,8 +4231,13 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | w17-visiones-de-zacarias | [Qué lecciones aprendemos de las visiones de Zacarías](https://www.jw.org/es/biblioteca/revistas/atalaya-estudio-octubre-2017/lecciones-aprendemos-visiones-zacarias/) | La Atalaya (edición de estudio, octubre de 2017) | 1 | 2017 | 2026-09-29 |
 | w18-noe-daniel-job | [Imitemos la fe y la obediencia de Noé, Daniel y Job](https://www.jw.org/es/biblioteca/revistas/atalaya-estudio-febrero-2018/fe-obediencia-noe-daniel-job/) | La Atalaya (edición de estudio, febrero de 2018) | 1 | 2018 | 2026-10-13 |
 | w20-ataque-del-norte | [Un ataque que viene del norte](https://www.jw.org/es/biblioteca/revistas/atalaya-estudio-abril-2020/Un-ataque-que-viene-del-norte/) | La Atalaya (edición de estudio, abril de 2020) | 1 | 2020 | 2026-09-29 |
+| w20-quien-es-el-rey-del-norte | [¿Quién es “el rey del norte” hoy en día?](https://www.jw.org/es/biblioteca/revistas/atalaya-estudio-mayo-2020/Qui%C3%A9n-es-el-rey-del-norte-hoy-en-d%C3%ADa/) | La Atalaya (edición de estudio, mayo de 2020) | 1 | 2020 | 2026-10-14 |
+| w20-rey-del-norte-en-el-tiempo-del-fin | [“El rey del norte” en el tiempo del fin](https://www.jw.org/es/biblioteca/revistas/atalaya-estudio-mayo-2020/El-rey-del-norte-en-el-tiempo-del-fin/) | La Atalaya (edición de estudio, mayo de 2020) | 1 | 2020 | 2026-10-14 |
 | w22-lo-que-zacarias-vio | [¿Ve usted lo que Zacarías vio?](https://www.jw.org/es/biblioteca/revistas/atalaya-estudio-marzo-2022/Ve-usted-lo-que-Zacar%C3%ADas-vio/) | La Atalaya (edición de estudio, marzo de 2022) | 1 | 2022 | 2026-09-29 |
 | w23-apoyese-en-jehova-como-sanson | [Apóyese en Jehová, tal como lo hizo Sansón](https://www.jw.org/es/biblioteca/revistas/atalaya-estudio-septiembre-2023/Ap%C3%B3yese-en-Jehov%C3%A1-tal-como-lo-hizo-Sans%C3%B3n/) | La Atalaya (edición de estudio, septiembre de 2023) | 1 | 2023 | 2026-09-29 |
+| w23-lo-sabia-ladrillos-de-babilonia | [¿Lo sabía?](https://www.jw.org/es/biblioteca/revistas/atalaya-estudio-julio-2023/El-antiguo-m%C3%A9todo-de-fabricaci%C3%B3n-de-ladrillos-confirma-lo-que-dice-la-Biblia/) | La Atalaya (edición de estudio, julio de 2023) | 1 | 2023 | 2026-10-14 |
+| w23-profecias-mucho-que-aprender | [Las profecías bíblicas: mucho que aprender](https://www.jw.org/es/biblioteca/revistas/atalaya-estudio-agosto-2023/Las-profec%C3%ADas-b%C3%ADblicas-mucho-que-aprender/) | La Atalaya (edición de estudio, agosto de 2023) | 1 | 2023 | 2026-10-14 |
+| w24-sacados-de-la-congregacion | [Cómo se ayuda a los que han sido sacados de la congregación](https://www.jw.org/es/biblioteca/revistas/atalaya-estudio-agosto-2024/C%C3%B3mo-se-ayuda-a-los-que-han-sido-sacados-de-la-congregaci%C3%B3n/) | La Atalaya (edición de estudio, agosto de 2024) | 1 | 2024 | 2026-10-14 |
 | w76-hacha | [El “hacha” y el que corta](https://wol.jw.org/es/wol/d/r4/lp-s/1976043) | La Atalaya (15 de junio de 1976) | 1 | 1976 | 2026-09-29 |
 | w86-salmos-42-72 | [Espere en Jehová](https://wol.jw.org/es/wol/d/r4/lp-s/1986767) | La Atalaya (15 de octubre de 1986) | 1 | 1986 | 2026-09-29 |
 | w88-jehova-desenvaina-la-espada | [¡Jehová desenvaina la espada!](https://wol.jw.org/es/wol/d/r4/lp-s/1988684) | La Atalaya (15 de septiembre de 1988) | 1 | 1988 | 2026-10-13 |

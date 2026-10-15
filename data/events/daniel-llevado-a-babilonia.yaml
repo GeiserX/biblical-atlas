@@ -1,6 +1,6 @@
 # biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
 id: daniel-llevado-a-babilonia
-title: Daniel y sus compañeros, llevados a Babilonia
+title: Aspenaz escoge a Daniel y a sus compañeros para la corte
 date:
   from: -616
   to: -616
@@ -10,7 +10,6 @@ date:
   chronology: tnm
   text: 617 a.e.c.
 places:
-- jerusalen
 - babilonia
 people:
 - daniel
@@ -18,19 +17,20 @@ people:
 - mesac
 - abednego
 - nabucodonosor-ii
-- joaquin
-- ezequiel
+- aspenaz
 passages:
-- Da 1:1-7
-- 2Re 24:12-16
-summary: Nabucodonosor se llevó a Babilonia al rey Joaquín y a los primeros cautivos. Entre los jóvenes nobles iban Daniel,
-  Hananías, Misael y Azarías, a los que se educó tres años para servir en la corte.
-reason: Estudio 3, tabla de sucesos (617); Perspicacia «Daniel», núm. 2 (a principios de 617), y «Mesac». «Ezequiel», párr. 1, lo cuenta entre esos cautivos, con el rey Joaquín.
+- Da 1:3-7
+summary: En Babilonia, el rey manda a Aspenaz traer jóvenes israelitas de la realeza y la nobleza para servir en el palacio.
+  Entre ellos están Daniel, Hananías, Misael y Azarías, que reciben los nombres de Beltsasar, Sadrac, Mesac y Abednego.
+reason: 'Estudio 3 (617). Perspicacia «Daniel», núm. 2, «Bajo el dominio babilonio», y «Sadrac»: ya en Babilonia, no junto
+  al Kebar con los demás desterrados, los escogen, les cambian el nombre y los forman. El traslado es nabucodonosor-se-lleva-a-joaquin-a-babilonia.'
 sources:
 - si-3
 - it-daniel
+- it-sadrac
 - it-mesac
-- it-ezequiel
+- it-aspenaz
+- dp-3
 - daniel-1
 links:
 - title: 'Perspicacia: «Daniel»'
@@ -39,5 +39,36 @@ links:
 - title: Daniel 1 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/daniel/1/
   type: bible
-checked_on: '2026-09-28'
+history:
+- date: '2026-10-14'
+  change: El suceso queda en la escena de Babilonia (Da 1:3-7). El sitio y el destierro de 617 son nabucodonosor-se-lleva-a-joaquin-a-babilonia,
+    como dicen Perspicacia «Jehoiaquim» y «Daniel», núm. 2.
+  source: it-jehoiaquim
+- date: '2026-10-14'
+  change: 'Solo Babilonia: allí les ponen nombre y empieza su formación (Perspicacia «Sadrac»). Jerusalén queda en el suceso
+    del destierro.'
+  source: it-sadrac
+- date: '2026-10-14'
+  change: Joaquín y Ezequiel pasan al suceso del destierro, que ya los lleva; entra Aspenaz, que escoge a los jóvenes y les
+    cambia el nombre (Da 1:3, 7).
+  source: daniel-1
+- date: '2026-10-14'
+  change: 'Da 1:1, 2 y 2Re 24:12-16 cuentan el sitio y el destierro: van en nabucodonosor-se-lleva-a-joaquin-a-babilonia.'
+  source: daniel-1
+- date: '2026-10-14'
+  change: El resumen cuenta ya solo la escena de Da 1:3-7.
+  source: daniel-1
+- date: '2026-10-14'
+  change: La razón cita el párrafo de Perspicacia «Daniel» que pone en Babilonia la elección y el cambio de nombre; el traslado
+    es el suceso de 2 Reyes.
+  source: daniel-1
+- date: '2026-10-14'
+  change: Sale «Ezequiel», que solo sostenía su presencia en el destierro; entran «Sadrac», «Aspenaz» y el cap. 3 de «Prestemos
+    atención a las profecías de Daniel».
+  source: daniel-1
+narrative_order:
+  series: daniel
+  order: 1003
+  after: nabucodonosor-se-lleva-a-joaquin-a-babilonia
+checked_on: '2026-10-14'
 status: verified

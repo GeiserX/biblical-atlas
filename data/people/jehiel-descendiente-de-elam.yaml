@@ -1,0 +1,50 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jehiel-descendiente-de-elam
+name: Jehiel
+names:
+- name: Jehiel
+perspicacia: null
+summary: Israelita de los hijos de Elam. Estaba casado con extranjeras y, cuando Esdras corrigió esos matrimonios (468-467
+  a.e.c.), las despidió junto con sus hijos. Perspicacia ve posible que sea el padre de Secanías.
+reason: Perspicacia «Jehiel», núm. 9, que lo nombra sin darle entrada propia; Esd 10:26, 44.
+sources:
+- it-jehiel
+- esdras-10
+links:
+- title: 'Perspicacia: «Jehiel»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jehiel/
+  type: perspicacia
+relations:
+- type: kin
+  person: elam-cabeza-de-familia
+  word: ancestor
+  sources:
+  - esdras-10
+  - it-jehiel
+  reason: Esd 10:26 lo pone entre los hijos de Elam; Perspicacia «Jehiel».
+  inferred: false
+  checked_on: '2026-10-13'
+  status: verified
+- type: same_as
+  person: jehiel-padre-de-secanias
+  certainty: possible
+  inferred: true
+  sources:
+  - it-jehiel
+  - esdras-10
+  reason: 'Perspicacia «Jehiel», núm. 9: el Jehiel de Esd 10:26 tal vez fuese el padre de Secanías de Esd 10:2.'
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified
+disambiguation: El de los hijos de Elam de Esd 10:26; no los demás Jehiel que registra Perspicacia.
+distinct_from:
+- jehiel-comisionado-de-ezequias
+- jehiel-descendiente-de-harim
+- jehiel-descendiente-de-ladan
+- jehiel-hijo-de-hacmoni
+- jehiel-hijo-de-jehosafat
+- jehiel-levita-de-ezequias
+- jehiel-musico
+- jehiel-padre-de-abdias
+- jehiel-sacerdote-de-josias

@@ -131,9 +131,10 @@ history:
 - date: '2026-09-30'
   change: El nombre del padre va con la grafía de la TNM, Ahicam (2Re 25:22); Ahiqam es la de Perspicacia.
   source: 2-reyes-25
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified
 distinct_from:
 - guedalias-hijo-de-amarias
 - guedalias-hijo-de-pasjur
 - guedalias-hijo-de-jedutun
+- guedalias-de-la-casa-de-jesua

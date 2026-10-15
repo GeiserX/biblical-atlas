@@ -60,8 +60,9 @@ relations:
   reason: '2Sa 6:6-8: murió junto al Arca en la era de Nacón, que desde entonces se llamó Pérez-Uzá.'
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified
 distinct_from:
 - uza-hijo-de-simei
 - uza-de-benjamin
+- uza-netineo

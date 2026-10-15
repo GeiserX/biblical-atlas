@@ -1,0 +1,21 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: bigvai-cabeza-de-familia
+name: Bigvái
+names:
+- name: Bigvái
+perspicacia: 1200000731#1
+summary: Antepasado de una familia de la que 2.056 personas llegaron a Jerusalén en el grupo de Zorobabel (537 a.e.c.).
+reason: Perspicacia «Bigvai», núm. 1; Esd 2:14.
+sources:
+- it-bigvai
+- esdras-2
+- esdras-8
+links:
+- title: 'Perspicacia: «Bigvai»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Bigvai/
+  type: perspicacia
+checked_on: '2026-10-13'
+status: verified
+distinct_from:
+- bigvai-repatriado
+disambiguation: 'Bigvái núm. 1 de Perspicacia: antepasado de la familia de Esd 2:14, no el jefe del regreso de Esd 2:2.'

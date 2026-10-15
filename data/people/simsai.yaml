@@ -56,5 +56,24 @@ relations:
   reason: 'Esd 4:17: la respuesta del rey va a Rehúm, a Simsái y a sus compañeros de Samaria. Lo deducimos de ese versículo.'
   checked_on: '2026-09-30'
   status: verified
-checked_on: '2026-09-30'
+- type: tie
+  person: artajerjes-bardiya-o-gaumata
+  word: master
+  date:
+    from: -521
+    to: -521
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: 522 a.e.c.
+  sources:
+  - esdras-4
+  - si-3
+  reason: 'Esd 4:11, 14: quienes escriben al rey se llaman siervos suyos y dicen que comen la sal del palacio. Año del estudio
+    3.'
+  inferred: false
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
 status: verified

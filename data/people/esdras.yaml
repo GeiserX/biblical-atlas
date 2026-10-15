@@ -12,14 +12,17 @@ date:
   type: anchored
   chronology: tnm
   text: de 468 a 455 a.e.c.
-summary: Sacerdote y copista experto en la Ley. En 468 a.e.c., con permiso de Artajerjes, llevó a Jerusalén a unos 1.500
-  hombres con sus familias y donativos para el templo; más tarde enseñó la Ley junto a Nehemías.
+summary: Sacerdote y copista experto en la Ley. En 468 a.e.c., con permiso de Artajerjes, llevó a Jerusalén a unos 1.500 hombres
+  con sus familias; allí hizo despedir a las esposas extranjeras. Más tarde enseñó la Ley con Nehemías.
 reason: 'Perspicacia «Esdras», núm. 1: viaje de 468 con unos 1.500 hombres y sus familias; reaparece con Nehemías tras el
   muro (Ne 8). Esd 7:1-9.'
 sources:
 - it-esdras
 - esdras-7
 - si-3
+- esdras-8
+- esdras-9
+- esdras-10
 links:
 - title: 'Perspicacia: «Esdras»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Esdras/
@@ -87,8 +90,9 @@ relations:
   sources:
   - esdras-7
   - it-esdras
+  - esdras-10
   reason: La carta de Artajerjes lo llama el sacerdote Esdras, copista de la Ley (Esd 7:11, 12).
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-13'
   status: verified
 - type: kin
   person: seraya-hijo-de-azarias
@@ -100,5 +104,10 @@ relations:
   reason: Esd 7:1 lo llama hijo de Seraya; Perspicacia «Seraya», núm. 6, ve al menos dos generaciones sin nombrar entre ellos.
   checked_on: '2026-09-30'
   status: verified
-checked_on: '2026-09-30'
+perspicacia: 1200001475#1
+history:
+- date: '2026-10-13'
+  change: 'El resumen añade lo que cuentan Esd 9 y 10: Esdras hizo que los repatriados despidieran a las esposas extranjeras.'
+  source: esdras-10
+checked_on: '2026-10-13'
 status: verified

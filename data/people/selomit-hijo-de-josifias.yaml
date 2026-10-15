@@ -1,0 +1,55 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: selomit-hijo-de-josifias
+name: Selomit
+names:
+- name: Selomit
+perspicacia: 1200003994#6
+disambiguation: El hijo de Josifías que volvió con Esdras (Esd 8:10), un hombre; no la hija de Zorobabel ni los otros Selomit
+  que numera Perspicacia.
+distinct_from:
+- selomit-descendiente-de-izhar
+- selomit-hija-de-dibri
+- selomit-hija-de-zorobabel
+- selomot-descendiente-de-eliezer
+- selomit-hijo-de-rehoboam
+summary: Hijo de Josifías. En 468 a.e.c. llevó a 160 varones de la casa de Baní en el viaje de Esdras.
+reason: Perspicacia «Selomit», núm. 6; Esd 8:1, 10.
+sources:
+- it-selomit
+- esdras-8
+- it-josifias
+links:
+- title: 'Perspicacia: «Selomit»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Selomit/
+  type: perspicacia
+relations:
+- type: kin
+  person: josifias
+  word: father
+  inferred: false
+  sources:
+  - esdras-8
+  - it-selomit
+  - it-josifias
+  reason: 'Esd 8:10: Selomit hijo de Josifías.'
+  checked_on: '2026-10-13'
+  status: verified
+- type: accompanies
+  person: esdras
+  date:
+    from: -467
+    to: -467
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 468 a.e.c.
+  inferred: false
+  sources:
+  - esdras-8
+  - it-selomit
+  reason: 'Esd 8:1, 10: subió con Esdras con 160 varones.'
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified

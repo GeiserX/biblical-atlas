@@ -1,0 +1,49 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: eliezer-enviado-a-casifia
+name: Eliezer
+names:
+- name: Eliezer
+perspicacia: 1200001304#7
+disambiguation: Uno de los jefes que Esdras envió a Casifía (Esd 8:16), núm. 7 de Perspicacia; no los otros Eliezer que numera.
+distinct_from:
+- eliezer-de-damasco
+- eliezer-hijo-de-beker
+- eliezer-hijo-de-jorim
+- eliezer-hijo-de-moises
+- eliezer-hijo-de-zicri
+- eliezer-trompetista
+- eliezer-hijo-de-dodavahu
+- eliezer-de-la-casa-de-jesua
+- eliezer-descendiente-de-harim
+- eliezer-levita-de-tiempos-de-esdras
+summary: Uno de los jefes de los desterrados que volvieron con Esdras. Junto al río Ahavá, Esdras lo mandó con otros a pedir
+  a Idó, en Casifía, levitas para el templo.
+reason: Perspicacia «Eliezer», núm. 7; Esd 8:16, 17.
+sources:
+- it-eliezer
+- esdras-8
+links:
+- title: 'Perspicacia: «Eliezer»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Eliezer/
+  type: perspicacia
+relations:
+- type: accompanies
+  person: esdras
+  date:
+    from: -467
+    to: -467
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 468 a.e.c.
+  inferred: true
+  sources:
+  - esdras-8
+  - it-eliezer
+  reason: 'Esd 8:15, 16: estaba en el campamento del Ahavá y Esdras lo envió a buscar levitas; Perspicacia lo pone entre los
+    que iban con Esdras.'
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified

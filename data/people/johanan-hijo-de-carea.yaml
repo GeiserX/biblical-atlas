@@ -83,7 +83,7 @@ relations:
   reason: 'Jer 40:15: pide a Guedalías permiso para matar a Ismael en secreto; Jer 41:11, 12: sale a pelear contra él.'
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified
 distinct_from:
 - johanan-hijo-de-josias
@@ -91,3 +91,4 @@ distinct_from:
 - johanan-hijo-de-azarias
 - johanan-el-benjaminita
 - johanan-el-gadita
+- johanan-hijo-de-hacatan

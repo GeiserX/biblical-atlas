@@ -1,0 +1,18 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: guibar
+name: Guibar
+names:
+- name: Guibar
+perspicacia: '1200001676'
+summary: Quizá cabeza de una familia de la que 95 descendientes volvieron en 537 a.e.c. La lista de Nehemías dice Gabaón,
+  y podría tratarse de gente de esa ciudad.
+reason: Perspicacia «Guibar»; Esd 2:20.
+sources:
+- it-guibar
+- esdras-2
+links:
+- title: 'Perspicacia: «Guibar»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Guibar/
+  type: perspicacia
+checked_on: '2026-10-13'
+status: verified

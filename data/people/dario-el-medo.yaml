@@ -20,6 +20,10 @@ sources:
 - it-dario
 - daniel-5
 - si-3
+- daniel-6
+- dp-8
+- daniel-9
+- it-asuero
 links:
 - title: 'Perspicacia: «Darío»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Dar%C3%ADo/
@@ -36,7 +40,6 @@ relations:
   sources:
   - it-dario
   - daniel-5
-  - daniel-9
   reason: 'Da 5:30, 31 y Perspicacia «Darío», núm. 1: sucedió a Belsasar en el trono.'
   checked_on: '2026-09-29'
   office: king
@@ -51,5 +54,43 @@ relations:
   reason: Recibió el reino la noche en que murió Belsasar (Da 5:30, 31); Da 9:1 dice que lo hicieron rey sobre los caldeos.
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-28'
+- type: born_in
+  place: media
+  inferred: true
+  sources:
+  - daniel-5
+  - it-dario
+  reason: Da 5:31 lo llama Darío el medo; Perspicacia «Darío», núm. 1, da su origen medo, el mismo que el de su padre. Gentilicio
+    de un pueblo extranjero.
+  checked_on: '2026-10-14'
+  status: verified
+- type: tie
+  person: ciro
+  word: ally
+  inferred: true
+  sources:
+  - daniel-6
+  - it-belsasar
+  reason: Perspicacia «Belsasar» llama a Darío el medo aliado de Ciro el persa ante Babilonia; Da 6:28 nombra los dos reinados
+    seguidos.
+  checked_on: '2026-10-14'
+  status: verified
+- type: kin
+  person: asuero-padre-de-dario-el-medo
+  word: father
+  inferred: false
+  sources:
+  - daniel-9
+  - it-asuero
+  - it-dario
+  reason: Da 9:1 lo llama hijo de Asuero, de linaje medo; Perspicacia «Asuero», núm. 1, y «Darío», núm. 1.
+  checked_on: '2026-10-14'
+  status: verified
+perspicacia: 1200001124#1
+history:
+- date: '2026-10-14'
+  change: 'La sucesión de Belsasar ya no cita Daniel 9: Da 9:1 no lo nombra. La sostienen Da 5:30, 31 y Perspicacia «Darío»,
+    núm. 1.'
+  source: daniel-9
+checked_on: '2026-10-14'
 status: verified

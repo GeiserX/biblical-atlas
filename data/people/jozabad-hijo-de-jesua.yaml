@@ -1,0 +1,48 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jozabad-hijo-de-jesua
+name: Jozabad
+names:
+- name: Jozabad
+perspicacia: 1200002532#6
+disambiguation: El levita hijo de Jesúa de Esd 8:33, núm. 6 de Perspicacia; no los Jozabad de tiempos de David.
+distinct_from:
+- jozabad-de-manases-1
+- jozabad-de-manases-2
+- jozabad-el-guederatita
+- jozabad-comisionado-de-ezequias
+- jozabad-levita-de-josias
+- jozabad-descendiente-de-pasjur
+summary: Levita de después del destierro. En el templo, a él y a otros se les pesaron los objetos de valor que Esdras trajo
+  de Babilonia en 468 a.e.c.
+reason: Perspicacia «Jozabad», núm. 6, y «Jesúa», núm. 5; Esd 8:33, 34.
+sources:
+- it-jozabad
+- esdras-8
+- it-jesua
+links:
+- title: 'Perspicacia: «Jozabad»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jozabad/
+  type: perspicacia
+relations:
+- type: kin
+  person: jesua-cabeza-de-casa-levita
+  word: ancestor
+  inferred: true
+  sources:
+  - esdras-8
+  - it-jesua
+  reason: Esd 8:33 lo llama hijo de Jesúa; Perspicacia «Jesúa», núm. 5, ve muy posible que perteneciera a esa casa levita.
+  checked_on: '2026-10-13'
+  status: verified
+- type: same_as
+  person: jozabad-levita-de-tiempos-de-esdras
+  certainty: possible
+  inferred: true
+  sources:
+  - it-jozabad
+  - esdras-10
+  reason: Perspicacia «Jozabad», núm. 6 y 8, ve posible que el levita que recibió los donativos sea el levita de Esd 10:23.
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified
