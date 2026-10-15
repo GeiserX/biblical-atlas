@@ -5,7 +5,7 @@ names:
 - name: Esdras
 perspicacia: null
 summary: Uno de los que, el día de la inauguración del muro de Jerusalén, iban detrás del primer coro con Hosaya y con la
-  mitad de los príncipes de Judá. Puede ser el copista Esdras del v. 36; jw.org no lo dice.
+  mitad de los príncipes de Judá. Puede ser el copista del v. 36; jw.org no lo dice.
 reason: Ne 12:31-33. Perspicacia «Esdras» tiene solo dos entradas, el copista y el sacerdote de 537, y ninguna cita este
   versículo.
 sources:
@@ -17,18 +17,6 @@ links:
   type: perspicacia
 checked_on: '2026-10-15'
 status: verified
-relations:
-- type: same_as
-  person: esdras
-  certainty: possible
-  inferred: true
-  sources:
-  - nehemias-12
-  - it-esdras
-  reason: 'Ne 12:36 nombra al copista Esdras en la misma procesión, con el otro grupo; ninguna fuente de jw.org dice si el
-    del v. 33 es él u otro, así que la identidad queda posible.'
-  checked_on: '2026-10-15'
-  status: verified
 distinct_from:
 - esdras-sacerdote-de-zorobabel
 disambiguation: El Esdras que Ne 12:33 nombra entre Azarías y Mesulam en la procesión del muro; puede ser el copista, que el

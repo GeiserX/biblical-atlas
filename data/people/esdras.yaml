@@ -110,6 +110,17 @@ relations:
   reason: Esd 7:1 lo llama hijo de Seraya; Perspicacia «Seraya», núm. 6, ve al menos dos generaciones sin nombrar entre ellos.
   checked_on: '2026-09-30'
   status: verified
+- type: same_as
+  person: esdras-de-la-procesion-del-muro
+  certainty: possible
+  inferred: true
+  sources:
+  - nehemias-12
+  - it-esdras
+  reason: 'Ne 12:36 nombra al copista en la misma procesión, con el otro grupo; ninguna fuente de jw.org dice si el Esdras del
+    v. 33 es él u otro, así que la identidad queda posible.'
+  checked_on: '2026-10-15'
+  status: verified
 perspicacia: 1200001475#1
 history:
 - date: '2026-10-13'
