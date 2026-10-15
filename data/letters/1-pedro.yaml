@@ -22,10 +22,11 @@ recipients:
   - asia
   - bitinia
 context_origin:
-  summary: Pedro la escribe en Babilonia, con Silvano como amanuense y con Marcos a su lado, antes de la persecución
+  summary: Pedro la escribe en Babilonia por medio de Silvano, quizá su amanuense, con Marcos a su lado, antes de la persecución
     de Nerón de 64.
   sources:
   - it-pedro-cartas
+  - it-silas
 context_destination:
   summary: Cristianos judíos y gentiles que sufrían pruebas duras. Pedro los anima a aguantar y a portarse bien;
     menciona ancianos, señal de que ya había congregaciones.
@@ -47,5 +48,13 @@ links:
 - title: 1 Pedro 5 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/1-pedro/5/
   type: bible
-checked_on: '2026-09-28'
+history:
+- date: '2026-10-14'
+  change: 'Daba a Silvano por amanuense sin reservas, como el recuadro de «Pedro, Cartas de». 1Pe 5:12 solo dice «mediante
+    Silvano» y «Silas, Silvano» lo ve posible: queda como duda.'
+  source: 1-pedro-5
+checked_on: '2026-10-14'
 status: verified
+people:
+- silas
+- juan-marcos

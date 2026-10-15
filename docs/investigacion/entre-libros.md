@@ -378,6 +378,20 @@ Los campos, los tipos de relación y sus palabras se nombran como en el esquema 
 - **La primera carta y lo que va antes.** `primera-carta-de-pablo` lleva ahora el orden 1806 de la serie `hechos`, tras `crispo-cree` (Hch 18:5), y dice que probablemente es su primera carta (nota de 1Te 2:13). Antes van `pablo-intenta-volver-a-tesalonica` (1713, 1Te 2:17, 18) y `pablo-envia-a-timoteo-a-tesalonica` (1716, 1Te 3:1-5: al empezar la espera de Atenas, porque ninguna fuente lo ordena frente al Areópago, que es 1722).
 - **Filipos en 1Te 2:2.** Va en `mentions`: `filipos` lleva bloque `en` y `validate.py` no le deja citar `1-tesalonicenses-2` mientras el libro no tenga el suyo en `data/books.yaml`. Cuando lo tenga, el tramo 1-2 puede pasarla a `entities`.
 
+## Para 2 Pedro (desde 1 Pedro)
+
+- **El orden en la serie `hechos`.** `pedro-escribe-1-pedro` (Babilonia, c. 62-64) lleva el 2854: tras Tito (2851) y Troas y Mileto (2852, 2853, de 2 Timoteo), antes de `segundo-encierro-en-roma` (2855). No queda entero libre antes del 2855: el suceso de 2 Pedro (c. 64) puede compartir el 2854, porque `build.py` ordena primero por fecha, como Efesios y Epafras comparten el 2831.
+- **Pedro en Babilonia.** Es `pedro/lived_in/babilonia` (c. 62-64, deducida), no un viaje: Perspicacia «Pedro» habla de su estancia allí y no da ruta, y la `reason` de la relación lo dice. Cita `it-pedro`, `it-babilonia` y 1Pe 5:13. Marcos y Silvano no llevan `lived_in` allí: los sitúa `present` de `pedro-escribe-1-pedro`. Perspicacia «Pedro, Cartas de» solo ve posible que escribiera también la segunda allí; si 2 Pedro lo dice, añade su capítulo a esa relación con un `anadir`.
+- **Silvano es `silas`.** La nota al pie de 1Pe 5:12 lo llama también Silas, así que es una sola ficha. Que fuera el amanuense de Pedro, «Silas, Silvano» solo lo ve posible: el suceso, la carta y la ficha lo dicen así. El `inverse_caption` de `pedro/accompanies/silas` («amanuense de 1 Pedro», en `outside` del vocabulario) aún no, y está en las preguntas de 1 Pedro.
+
+## Para 2 Pedro y Judas (desde 1 Pedro)
+
+- **Los ángeles de días de Noé.** `angeles-toman-esposas` lleva «1Pe 3:19, 20» y la fuente `it-tartaro` (Perspicacia «Tártaro»), que liga esos versículos con Gé 6:1-4. Su resumen dice ya que Dios los recluyó en el Tártaro, al parecer en días de Noé, así que 2Pe 2:4 y Jud 6 van al mismo suceso, sin crear otro. La fecha sigue siendo todos los días de Noé: «Nefilim» pone a sus hijos en la tierra ya en 2490 a.e.c. y la `reason` lo explica.
+
+## Para quien reabra Romanos (desde 1 Pedro)
+
+- **La Sion de Is 28:16.** La nota del tramo Romanos 9:30-33 dice que la Sion donde se pone la piedra es Jerusalén y pone `place:jerusalen` en `mentions`. La nota de estudio de Ro 9:33 no lo dice, y Perspicacia «Sión» pone esa piedra en la Sion celestial (Ro 9:33; 1Pe 2:6). Se corrige la nota y se quita la mención; 1 Pedro 2:4-8 no lleva lugar.
+
 ## Para Nehemías (desde Esdras)
 
 - **Más allá del Río.** La provincia persa al oeste del Éufrates es `region-al-oeste-del-eufrates` (Esd 4:10-8:36). Ne 2:7, 9 y 3:7 usan ese id: un lugar no se funde por clave, así que otro id sería un duplicado.
