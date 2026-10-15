@@ -1,0 +1,213 @@
+# biblical-atlas: cobertura de un libro. Formato en data/coverage/README.md.
+book: apocalipsis
+chapters:
+  1:
+    status: complete
+    reviewed_on: 2026-10-14
+    spans:
+    - {v: 1-3, type: letter, entities: [letter:apocalipsis, event:juan-escribe-apocalipsis, person:juan-apostol], mentions: [person:jesus], note: "Prólogo: Dios da a Jesucristo una revelación que este hace llegar en señales a su esclavo Juan por medio de un ángel. Es feliz quien la lee en voz alta y quien la cumple, porque el tiempo fijado se acerca."}
+    - {v: 4-8, type: letter, entities: [letter:apocalipsis, event:juan-escribe-apocalipsis, place:asia], mentions: [person:jesus, event:muerte-de-jesus, event:resurreccion-de-jesus], note: "Saludo de Juan a las siete congregaciones de la provincia de Asia. Jesucristo, primero en resucitar, liberó del pecado con su sangre y vendrá con las nubes. Jehová se presenta como el Alfa y el Omega, el Todopoderoso."}
+    - {v: "9", type: narration, entities: [event:juan-desterrado-en-patmos, event:juan-escribe-apocalipsis, person:juan-apostol, place:patmos, relation:juan-apostol/lived_in/patmos], mentions: [person:jesus], note: "Juan, que comparte con sus lectores la persecución y el aguante, está en Patmos por haber predicado de Dios y dado testimonio de Jesús; allí recibe la revelación, según Perspicacia «Patmos»."}
+    - {v: 10-20, type: vision, entities: [event:vision-de-jesus-entre-los-candelabros, event:juan-escribe-apocalipsis, person:juan-apostol, relation:jesus/appears_to/juan-apostol, place:efeso, place:esmirna, place:pergamo, place:tiatira, place:sardis, place:filadelfia, place:laodicea], mentions: [person:jesus, event:muerte-de-jesus, event:resurreccion-de-jesus], note: "Primera visión: una voz manda a Juan escribir lo que ve y enviarlo a siete congregaciones. Ve a Jesús glorificado entre siete candelabros, que son las congregaciones; las siete estrellas son sus ancianos, según el libro Apocalipsis, cap. 6."}
+  2:
+    status: complete
+    reviewed_on: 2026-10-14
+    spans:
+    - {v: 1-7, type: vision, entities: [letter:apocalipsis, event:vision-de-jesus-entre-los-candelabros, event:juan-escribe-apocalipsis, place:efeso, person:juan-apostol], mentions: [person:jesus], note: "Mensaje a Éfeso: aguanta, desenmascaró a falsos apóstoles y odia lo que hace la secta de Nicolás, que Perspicacia no une al Nicolás de Antioquía; pero ha perdido el amor del principio y debe arrepentirse."}
+    - {v: 8-11, type: vision, entities: [event:vision-de-jesus-entre-los-candelabros, event:juan-escribe-apocalipsis, place:esmirna], mentions: [person:jesus, person:satanas, event:resurreccion-de-jesus], note: "Mensaje a Esmirna, pobre pero rica en lo espiritual, que soporta la blasfemia de falsos judíos, «sinagoga de Satanás». El Diablo encarcelará a algunos diez días; a quien siga fiel hasta morir le espera la corona de la vida."}
+    - {v: 12-17, type: vision, entities: [event:vision-de-jesus-entre-los-candelabros, event:juan-escribe-apocalipsis, place:pergamo, person:antipas-de-pergamo, relation:antipas-de-pergamo/died_in/pergamo, relation:antipas-de-pergamo/lived_in/pergamo, event:israel-adora-al-baal-de-peor, relation:balac/tie/balaam, person:balac, person:balaam], mentions: [person:jesus, person:satanas], note: "Mensaje a Pérgamo, sede del trono de Satanás, que Perspicacia liga sobre todo al culto al emperador. No negó la fe cuando mataron allí a Antipas, pero tolera la enseñanza de Balaam y la de la secta de Nicolás."}
+    - {v: 18-29, type: vision, entities: [event:vision-de-jesus-entre-los-candelabros, event:juan-escribe-apocalipsis, place:tiatira], mentions: [person:jesus, person:jezabel, person:satanas], note: "Mensaje a Tiatira: crece en servicio, pero tolera a «Jezabel», falsa profetisa que incita a la inmoralidad y la idolatría. Nombre tomado de la esposa de Acab (Perspicacia); el libro Apocalipsis, cap. 10, ve una mujer o un grupo."}
+  3:
+    status: complete
+    reviewed_on: 2026-10-14
+    spans:
+    - {v: 1-6, type: vision, entities: [letter:apocalipsis, event:vision-de-jesus-entre-los-candelabros, event:juan-escribe-apocalipsis, place:sardis, person:juan-apostol], mentions: [person:jesus], note: "Mensaje a Sardis: tiene fama de estar viva, pero está muerta y debe despertar y arrepentirse. Unos pocos no mancharon su ropa; quien venza irá de blanco y su nombre seguirá en el libro de la vida."}
+    - {v: 7-13, type: vision, entities: [event:vision-de-jesus-entre-los-candelabros, event:juan-escribe-apocalipsis, place:filadelfia], mentions: [person:jesus, person:david, person:satanas], note: "Mensaje a Filadelfia, fiel pese a sus pocas fuerzas. Jesús tiene la llave de David, que el libro Apocalipsis, cap. 12, liga al pacto del Reino. La Nueva Jerusalén es la ciudad celestial que describe Perspicacia: sin ficha."}
+    - {v: 14-22, type: vision, entities: [event:vision-de-jesus-entre-los-candelabros, event:juan-escribe-apocalipsis, place:laodicea], mentions: [person:jesus, event:resurreccion-de-jesus, event:ascension-de-jesus], note: "Mensaje a Laodicea, tibia: se cree rica y es pobre, ciega y desnuda; debe comprar a Jesús oro, ropa blanca y colirio. Según el libro Apocalipsis, cap. 13, se sentó junto al Padre al resucitar y ser ensalzado en 33."}
+  4:
+    status: complete
+    reviewed_on: 2026-10-14
+    spans:
+    - {v: "1", type: vision, entities: [letter:apocalipsis, event:vision-del-trono-de-jehova, person:juan-apostol], note: "Juan ve una puerta abierta en el cielo y una voz como de trompeta lo llama a subir para mostrarle lo que vendrá. El libro sobre Apocalipsis, cap. 14, atribuye la llamada a Jehová."}
+    - {v: 2-3, type: vision, entities: [event:vision-del-trono-de-jehova, person:juan-apostol], note: "Bajo el espíritu, Juan ve un trono en el cielo y a alguien sentado que brilla como jaspe y sardio, con un arcoíris verde a su alrededor. Es Jehová, a quien Juan no describe en detalle (cap. 14)."}
+    - {v: "4", type: vision, entities: [event:vision-del-trono-de-jehova], note: "Alrededor, 24 ancianos con ropa blanca y coronas de oro ocupan tronos. El libro sobre Apocalipsis, cap. 14, ve en ellos a los cristianos ungidos ya resucitados, reyes y sacerdotes en el cielo."}
+    - {v: "5", type: vision, entities: [event:vision-del-trono-de-jehova], note: "Del trono salen relámpagos, voces y truenos, y delante arden siete lámparas: los siete espíritus de Dios, que el cap. 14 entiende como toda la fuerza iluminadora del espíritu santo."}
+    - {v: 6-8, type: vision, entities: [event:vision-del-trono-de-jehova], note: "Ante el trono hay algo como un mar de vidrio, que el cap. 14 explica como la Palabra que limpia. Cuatro seres vivientes, querubines con caras de león, toro, hombre y águila, repiten sin descanso que Jehová es santo."}
+    - {v: 9-11, type: vision, entities: [event:vision-del-trono-de-jehova], note: "Cada vez que los seres vivientes honran al que está en el trono, los 24 ancianos se postran, arrojan sus coronas y lo declaran digno de gloria por ser el Creador de todo."}
+  5:
+    status: complete
+    reviewed_on: 2026-10-14
+    spans:
+    - {v: 1-4, type: vision, entities: [letter:apocalipsis, event:vision-del-trono-de-jehova, person:juan-apostol], note: "El que está en el trono sostiene en la mano derecha un rollo escrito por los dos lados y cerrado con siete sellos. Un ángel poderoso pregunta quién puede abrirlo; nadie puede, y Juan llora sin consuelo."}
+    - {v: "5", type: vision, entities: [event:vision-del-trono-de-jehova, person:juan-apostol], mentions: [person:jesus, person:david], note: "Un anciano consuela a Juan: el León de Judá, raíz de David, ha vencido y abrirá los sellos. Es Jesús (cap. 15). Es figura de la visión: el parentesco con David lo da 22:16, donde habla Jesús mismo."}
+    - {v: 6-7, type: vision, entities: [event:vision-del-trono-de-jehova], mentions: [person:jesus, event:muerte-de-jesus], note: "Entre el trono, los seres vivientes y los ancianos está un cordero que parece sacrificado, con siete cuernos y siete ojos. Es Jesús (cap. 15), y recibe el rollo que Jehová sostiene en la diestra."}
+    - {v: 8-10, type: vision, entities: [event:vision-del-trono-de-jehova], mentions: [person:jesus, event:muerte-de-jesus], note: "Los seres vivientes y los ancianos se postran ante el Cordero con arpas e incienso, que son las oraciones de los santos, y cantan algo nuevo: su sangre compró gente de toda nación para reinar sobre la tierra."}
+    - {v: 11-12, type: vision, entities: [event:vision-del-trono-de-jehova], mentions: [person:jesus, event:muerte-de-jesus], note: "Una multitud incontable de ángeles alrededor del trono proclama en voz alta que el Cordero sacrificado es digno de poder, riquezas, sabiduría, fuerza, honra, gloria y bendición."}
+    - {v: 13-14, type: vision, entities: [event:vision-del-trono-de-jehova], mentions: [person:jesus], note: "Toda criatura del cielo, de la tierra, de debajo de la tierra y del mar alaba al que está en el trono y al Cordero. Los seres vivientes dicen amén y los ancianos adoran. Termina la segunda visión."}
+  6:
+    status: complete
+    reviewed_on: 2026-10-14
+    spans:
+    - {v: 1-2, type: vision, entities: [letter:apocalipsis, event:vision-de-los-seis-sellos, person:juan-apostol], mentions: [person:jesus], note: "El Cordero abre el primer sello y un ser viviente dice «¡Adelante!»: sale un jinete con arco en un caballo blanco, recibe una corona y va venciendo. El cap. 16 lo identifica con Jesús, rey desde 1914."}
+    - {v: 3-4, type: vision, entities: [event:vision-de-los-seis-sellos], note: "Segundo sello: sale un caballo de color de fuego cuyo jinete, con una gran espada, quita la paz de la tierra. El cap. 16 lo aplica a la guerra entre naciones, más mortífera desde la Primera Guerra Mundial."}
+    - {v: 5-6, type: vision, entities: [event:vision-de-los-seis-sellos], note: "Tercer sello: un caballo negro cuyo jinete lleva una balanza, y una voz pone precio de un denario, el jornal de un día, a cada ración de trigo o de cebada. El cap. 16 ve aquí el hambre."}
+    - {v: 7-8, type: vision, entities: [event:vision-de-los-seis-sellos], note: "Cuarto sello: un caballo pálido montado por Muerte, con la Tumba detrás, mata en una cuarta parte de la tierra con espada, hambre, plaga y fieras. Muerte y Tumba son figuras, no personas ni lugares."}
+    - {v: 9-11, type: vision, entities: [event:vision-de-los-seis-sellos], note: "Quinto sello: bajo el altar, las almas de los muertos por su testimonio piden justicia; reciben túnicas blancas y deben esperar un poco. El cap. 17 ve aquí a los ungidos fieles, resucitados al cielo desde 1918."}
+    - {v: 12-14, type: vision, entities: [event:vision-de-los-seis-sellos], note: "Sexto sello: un gran terremoto, el sol negro, la luna roja, estrellas que caen y el cielo que se enrolla. El cap. 18 lo explica como la sacudida final que acaba con el mundo opuesto a Jehová."}
+    - {v: 15-17, type: vision, entities: [event:vision-de-los-seis-sellos], mentions: [person:jesus], note: "Reyes, jefes, ricos, esclavos y libres se esconden en cuevas y suplican a las montañas que los oculten del que está en el trono y del Cordero: es el gran día de la ira de ambos."}
+  7:
+    status: complete
+    reviewed_on: 2026-10-14
+    spans:
+    - {v: 1-3, type: vision, entities: [letter:apocalipsis, event:vision-de-los-sellados-y-la-gran-muchedumbre], mentions: [person:jesus], note: "Cuatro ángeles en los extremos de la tierra sujetan los cuatro vientos. Otro ángel sube del oriente con el sello de Dios y les manda esperar hasta sellar a sus esclavos; el cap. 19 lo identifica con Jesús."}
+    - {v: 4-8, type: vision, entities: [event:vision-de-los-sellados-y-la-gran-muchedumbre], note: "Se sellan 144.000, 12.000 por tribu: Judá, Rubén, Gad, Aser, Neftalí, Manasés, Simeón, Leví, Isacar, Zabulón, José y Benjamín. El cap. 19 ve aquí al Israel espiritual, no al carnal; las tribus no llevan ficha."}
+    - {v: 9-10, type: vision, entities: [event:vision-de-los-sellados-y-la-gran-muchedumbre], mentions: [person:jesus], note: "Juan ve una gran muchedumbre que nadie puede contar, de toda nación, con túnicas blancas y palmas, ante el trono y el Cordero. El cap. 20 la identifica con quienes esperan vivir en la tierra."}
+    - {v: 11-12, type: vision, entities: [event:vision-de-los-sellados-y-la-gran-muchedumbre], note: "Todos los ángeles, en torno al trono, a los ancianos y a los cuatro seres vivientes, caen rostro a tierra y adoran a Dios con una alabanza que empieza y termina en amén."}
+    - {v: 13-17, type: vision, entities: [event:vision-de-los-sellados-y-la-gran-muchedumbre, person:juan-apostol], mentions: [person:jesus, event:muerte-de-jesus], note: "Un anciano pregunta a Juan quiénes son, y Juan le deja la respuesta: salen de la gran tribulación, lavados en la sangre del Cordero, que los pastoreará hacia aguas de vida; Dios secará sus lágrimas."}
+  8:
+    status: complete
+    reviewed_on: 2026-10-14
+    spans:
+    - {v: 1-5, type: vision, entities: [event:vision-de-las-seis-trompetas, letter:apocalipsis, person:juan-apostol], mentions: [person:jesus], note: "El Cordero, que es Jesús, rompe el último sello y el cielo calla una media hora. Siete ángeles reciben trompetas; otro ofrece incienso con los ruegos de los santos y luego echa brasas del altar sobre la tierra."}
+    - {v: 6-9, type: vision, entities: [event:vision-de-las-seis-trompetas], note: "Primera y segunda trompetas: granizo y fuego con sangre queman un tercio de la tierra; una masa ardiente cae al mar y vuelve sangre un tercio. El libro sobre Apocalipsis, cap. 21, lo aplica a la cristiandad."}
+    - {v: 10-12, type: vision, entities: [event:vision-de-las-seis-trompetas], note: "Tercera trompeta: cae una estrella encendida, llamada Ajenjo, y amarga un tercio de ríos y fuentes. Cuarta: se oscurece un tercio del sol, la luna y las estrellas. Ajenjo nombra a la estrella, no a una persona."}
+    - {v: "13", type: vision, entities: [event:vision-de-las-seis-trompetas], note: "Un águila que cruza el cielo avisa con fuerza de tres ayes para quienes habitan la tierra, por las tres trompetas que aún faltan."}
+  9:
+    status: complete
+    reviewed_on: 2026-10-14
+    spans:
+    - {v: 1-6, type: vision, entities: [event:vision-de-las-seis-trompetas, letter:apocalipsis, person:juan-apostol], mentions: [person:jesus], note: "Quinta trompeta: una estrella caída abre el abismo y del humo brotan langostas que atormentan cinco meses a quien no lleva el sello de Dios. El libro sobre Apocalipsis, cap. 22, ve a Jesús en la estrella."}
+    - {v: 7-12, type: vision, entities: [event:vision-de-las-seis-trompetas], mentions: [person:jesus], note: "Las langostas parecen caballos de guerra con coronas, cara humana y dientes de león. Su rey, Abadón o Apolión, es Jesús según Perspicacia «Apolión»; La Atalaya de 2020 ve en ellas a los ungidos. Acaba el primer ay."}
+    - {v: 13-19, type: vision, entities: [event:vision-de-las-seis-trompetas], mentions: [place:rio-eufrates], note: "Sexta trompeta: una voz del altar manda soltar a cuatro ángeles atados junto al Éufrates, y una caballería de doscientos millones mata a un tercio de la gente. El libro sobre Apocalipsis, cap. 23, explica ese río en sentido figurado."}
+    - {v: 20-21, type: vision, entities: [event:vision-de-las-seis-trompetas], note: "Quienes sobreviven a esas plagas siguen dando culto a demonios e ídolos y no abandonan sus asesinatos, su espiritismo, su inmoralidad sexual ni sus robos."}
+  10:
+    status: complete
+    reviewed_on: 2026-10-14
+    spans:
+    - {v: 1-7, type: vision, entities: [event:vision-del-rollo-pequeno, letter:apocalipsis, person:juan-apostol], mentions: [person:jesus, event:juan-escribe-apocalipsis], note: "Un ángel fuerte con un rollo abierto pisa el mar y la tierra. Hablan siete truenos, pero Juan no debe escribirlo; el ángel jura que no habrá más demora. Según el libro sobre Apocalipsis, cap. 24, es Jesús."}
+    - {v: 8-11, type: vision, entities: [event:vision-del-rollo-pequeno, person:juan-apostol], mentions: [person:jesus, event:juan-escribe-apocalipsis], note: "Juan pide el rollo al ángel, Jesús según el cap. 24, y se lo come: le sabe a miel, pero le amarga el estómago. Debe profetizar otra vez sobre pueblos y reyes. Recuerda al rollo de Ezequiel (Eze 2:8-3:3)."}
+  11:
+    status: complete
+    reviewed_on: 2026-10-14
+    spans:
+    - {v: 1-2, type: vision, entities: [event:vision-del-rollo-pequeno, letter:apocalipsis, person:juan-apostol], mentions: [person:jesus], note: "Juan recibe una caña para medir el santuario, el altar y a quienes adoran, pero no el patio, dado a las naciones por 42 meses. El libro sobre Apocalipsis, cap. 25: templo espiritual; la ciudad santa es la Nueva Jerusalén."}
+    - {v: 3-6, type: vision, entities: [event:vision-del-rollo-pequeno], mentions: [event:visiones-nocturnas-de-zacarias], note: "Durante 1.260 días, dos testigos vestidos con tela de saco anuncian el mensaje de Dios: son los olivos y candelabros de Zac 4. Lanzan fuego, cierran el cielo y vuelven sangre el agua, como Moisés y Elías (cap. 25)."}
+    - {v: 7-10, type: vision, entities: [event:vision-del-rollo-pequeno], mentions: [place:sodoma, place:egipto, place:jerusalen, person:jesus, event:muerte-de-jesus], note: "La bestia del abismo los mata y sus cuerpos yacen tres días y medio sin tumba en la gran ciudad llamada Sodoma y Egipto, donde murió su Señor. Perspicacia «Sodoma» la ve como una Jerusalén simbólica."}
+    - {v: 11-14, type: vision, entities: [event:vision-del-rollo-pequeno], note: "Pasados tres días y medio reviven y suben al cielo en una nube; un terremoto tumba la décima parte de la ciudad y mueren 7.000. El libro sobre Apocalipsis, cap. 25, lo aplica a 1919. Acaba el segundo ay."}
+    - {v: 15-18, type: vision, entities: [event:vision-del-rollo-pequeno], mentions: [person:jesus], note: "Séptima trompeta: el cielo proclama que el reino del mundo es ya de Jehová y de su Cristo. Los 24 ancianos adoran porque llega el juicio. El libro sobre Apocalipsis, cap. 26, sitúa ese anuncio en 1914."}
+    - {v: "19", type: vision, entities: [event:vision-del-rollo-pequeno], note: "En el cielo se abre el santuario de Dios y aparece el arca de su pacto, entre relámpagos, truenos, un terremoto y granizo."}
+  12:
+    status: complete
+    reviewed_on: 2026-10-14
+    spans:
+    - {v: 1-2, type: vision, entities: [event:vision-de-la-mujer-y-el-dragon, letter:apocalipsis], note: "Señal en el cielo: una mujer vestida del sol, con la luna bajo los pies y doce estrellas por corona, grita de dolor al dar a luz. El libro Apocalipsis, cap. 27, ve en ella la organización celestial de Jehová."}
+    - {v: 3-4, type: vision, entities: [event:vision-de-la-mujer-y-el-dragon, person:satanas], mentions: [event:angeles-toman-esposas], note: "Otra señal: un dragón rojo de siete cabezas coronadas y diez cuernos arrastra con la cola un tercio de las estrellas. Es Satanás (v. 9); las estrellas, según el cap. 27, son los ángeles que bajaron antes del Diluvio."}
+    - {v: 5-6, type: vision, entities: [event:vision-de-la-mujer-y-el-dragon], mentions: [person:jesus], note: "Nace un hijo varón que regirá a las naciones con vara de hierro; lo llevan al trono de Dios y la mujer huye al desierto. El cap. 27 ve en él el Reino, nacido en 1914 con Jesús de rey."}
+    - {v: 7-9, type: vision, entities: [event:vision-de-la-mujer-y-el-dragon, person:satanas], mentions: [person:jesus, event:pecado-de-adan-y-eva], note: "Guerra arriba: Miguel y su ejército de ángeles vencen al dragón, al que el texto llama serpiente original, Diablo y Satanás, y lo echan a la tierra. Miguel es Jesús (Perspicacia «Miguel», núm. 1); la serpiente remite a Edén."}
+    - {v: 10-12, type: vision, entities: [event:vision-de-la-mujer-y-el-dragon, person:satanas, person:juan-apostol], mentions: [person:jesus, event:muerte-de-jesus, event:satanas-pone-en-duda-la-integridad-de-job, event:satanas-vuelve-a-desafiar-la-integridad-de-job], note: "Juan oye celebrar el Reino de Dios y la autoridad del Cristo: cae el acusador, vencido por la sangre del Cordero. El cielo se alegra; la tierra recibe al Diablo furioso. El cap. 27 recuerda a Job."}
+    - {v: 13-17, type: vision, entities: [event:vision-de-la-mujer-y-el-dragon, person:satanas], mentions: [person:jesus, event:juicio-en-eden], note: "El dragón persigue a la mujer, que vuela al desierto con alas de águila; la tierra se traga el río que él vomita. Furioso, ataca al resto de su descendencia, la que anuncia Gé 3:15 según el libro Apocalipsis."}
+  13:
+    status: complete
+    reviewed_on: 2026-10-14
+    spans:
+    - {v: "1", type: vision, entities: [event:vision-de-las-dos-bestias-salvajes, letter:apocalipsis, person:juan-apostol], mentions: [person:satanas, period:potencia-egipcia, period:potencia-asiria, period:potencia-babilonica, period:potencia-medopersa, period:potencia-griega, period:potencia-romana], note: "El dragón se planta en la arena y Juan ve salir del mar una bestia de siete cabezas y diez cuernos. Las cabezas son Egipto, Asiria, Babilonia, Medopersia, Grecia, Roma y la potencia angloamericana (libro Apocalipsis, cap. 28)."}
+    - {v: "2", type: vision, entities: [event:vision-de-las-dos-bestias-salvajes], mentions: [person:satanas, person:nemrod, event:nemrod-funda-su-reino-en-sinar], note: "Parece un leopardo con patas de oso y boca de león, y el dragón le cede su poder, su trono y mucha autoridad. Es el sistema político mundial de Satanás, que según el cap. 28 empezó en días de Nemrod."}
+    - {v: 3-4, type: vision, entities: [event:vision-de-las-dos-bestias-salvajes], mentions: [person:satanas], note: "Una cabeza parece herida de muerte, pero sana, y la tierra entera sigue admirada a la bestia y adora al dragón y a ella. El cap. 28 ve la herida en la Primera Guerra Mundial, sobre la séptima cabeza."}
+    - {v: 5-8, type: vision, entities: [event:vision-de-las-dos-bestias-salvajes], mentions: [person:jesus, event:muerte-de-jesus], note: "La bestia recibe una boca arrogante y autoridad por 42 meses: insulta a Dios y su nombre, lucha contra los santos y la adoran cuantos no tienen su nombre escrito en el rollo de vida del Cordero sacrificado."}
+    - {v: 9-10, type: vision, entities: [event:vision-de-las-dos-bestias-salvajes], note: "Aviso a quien tenga oídos: el que deba ir cautivo irá, y el que mate a espada morirá a espada. De ahí que los santos deban aguantar con fe."}
+    - {v: 11-13, type: vision, entities: [event:vision-de-las-dos-bestias-salvajes, person:juan-apostol], mentions: [event:elias-en-el-carmelo], note: "Juan ve otra bestia que sale de la tierra, con cuernos de cordero y voz de dragón; impone el culto a la primera y hace caer fuego del cielo. Es la potencia angloamericana; el fuego recuerda a Elías (cap. 28)."}
+    - {v: 14-15, type: vision, entities: [event:vision-de-las-dos-bestias-salvajes], note: "Con sus señales engaña a la gente y le pide una imagen de la bestia; le da aliento para que hable y haga matar a quien no la adore. Es la Sociedad de Naciones, hoy la ONU (cap. 28)."}
+    - {v: 16-18, type: vision, entities: [event:vision-de-las-dos-bestias-salvajes], mentions: [event:nabucodonosor-levanta-la-estatua-de-oro], note: "Todos deben llevar en la mano derecha o la frente la marca, el nombre o el número de la bestia para comprar o vender. Su número es 666; el cap. 28 lo explica con la estatua de Nabucodonosor (Da 3:1)."}
+  14:
+    status: complete
+    reviewed_on: 2026-10-14
+    spans:
+    - {v: 1-5, type: vision, entities: [event:vision-del-cordero-en-el-monte-sion, letter:apocalipsis, person:juan-apostol], mentions: [person:jesus, event:muerte-de-jesus], note: "Juan ve al Cordero en el monte Sion con 144.000 que llevan en la frente su nombre y el del Padre, y oye su canción nueva. Para el cap. 29, Sion es aquí el monte celestial, no el de Jerusalén."}
+    - {v: 6-7, type: vision, entities: [event:vision-del-cordero-en-el-monte-sion, person:juan-apostol], note: "Un ángel que vuela en medio del cielo lleva a toda nación unas buenas noticias eternas: que teman a Dios y lo glorifiquen, porque ya es hora de su juicio, y adoren al Creador."}
+    - {v: "8", type: vision, entities: [event:vision-del-cordero-en-el-monte-sion], mentions: [event:caida-de-babilonia], note: "Un segundo ángel grita que Babilonia la Grande ha caído. Sin ficha: es el imperio mundial de la religión falsa, y su caída repite el grito de Is 21:9 sobre la Babilonia de 539 (libro Apocalipsis, cap. 30)."}
+    - {v: 9-12, type: vision, entities: [event:vision-del-cordero-en-el-monte-sion], mentions: [person:jesus], note: "Un tercer ángel avisa: quien adore a la bestia y a su imagen y lleve su marca beberá la ira de Dios y no tendrá descanso. Los santos, fieles a Jesús, necesitan aguante."}
+    - {v: "13", type: vision, entities: [event:vision-del-cordero-en-el-monte-sion, event:juan-escribe-apocalipsis, person:juan-apostol], note: "Una voz del cielo manda a Juan escribir que son felices los que mueren unidos al Señor desde entonces: descansan y sus obras los acompañan. El cap. 30 lo aplica a los ungidos resucitados al morir tras 1914."}
+    - {v: 14-16, type: vision, entities: [event:vision-del-cordero-en-el-monte-sion], mentions: [person:jesus, event:vision-de-las-cuatro-bestias], note: "Sobre una nube blanca, alguien como un hijo del hombre, con corona de oro y hoz, siega la tierra cuando un ángel salido del templo se lo pide. Es Jesús, el que vio Daniel (Da 7:13), según el cap. 30."}
+    - {v: 17-20, type: vision, entities: [event:vision-del-cordero-en-el-monte-sion], note: "Otro ángel vendimia la vid de la tierra y la echa en el lagar de la ira de Dios; fuera de la ciudad, la Sion celestial según el cap. 30, la sangre sube hasta los frenos por 1.600 estadios."}
+  15:
+    status: complete
+    reviewed_on: 2026-10-14
+    spans:
+    - {v: "1", type: vision, entities: [letter:apocalipsis, event:vision-de-los-siete-tazones, person:juan-apostol], note: "Juan ve en el cielo otra señal: siete ángeles con las siete últimas plagas, que ponen fin a la furia de Dios. Empieza la décima visión, Ap 15:1-16:21 («Toda Escritura», libro 66, párr. 6)."}
+    - {v: 2-4, type: vision, entities: [event:vision-de-los-siete-tazones], mentions: [person:moises, person:jesus, event:israel-canta-junto-al-mar-rojo], note: "Junto a un mar como de vidrio, los vencedores de la bestia cantan con arpas la canción de Moisés y la del Cordero. Libro sobre Apocalipsis, cap. 31: evoca el canto tras el mar Rojo; el Cordero es Jesús."}
+    - {v: 5-8, type: vision, entities: [event:vision-de-los-siete-tazones], note: "Se abre el santuario de la tienda del Testimonio. Los siete ángeles salen vestidos de lino y reciben siete tazones de oro con la furia divina; el humo de la gloria de Dios cierra el santuario hasta el final."}
+  16:
+    status: complete
+    reviewed_on: 2026-10-14
+    spans:
+    - {v: 1-2, type: vision, entities: [letter:apocalipsis, event:vision-de-los-siete-tazones, person:juan-apostol], note: "Una voz fuerte desde el santuario manda a los siete ángeles vaciar sus tazones. El primero cae en la tierra: úlceras dolorosas para quienes llevan la marca de la bestia y adoran su imagen."}
+    - {v: 3-7, type: vision, entities: [event:vision-de-los-siete-tazones], note: "El segundo tazón vuelve sangre el mar y el tercero, los ríos y manantiales. El ángel de las aguas y el altar dicen que las sentencias de Jehová son justas, porque esa gente derramó sangre de santos y profetas."}
+    - {v: 8-9, type: vision, entities: [event:vision-de-los-siete-tazones], note: "El cuarto tazón cae en el sol, que quema a la gente con fuego; aun así blasfeman contra el nombre de Dios y no se arrepienten."}
+    - {v: 10-11, type: vision, entities: [event:vision-de-los-siete-tazones], note: "El quinto tazón oscurece el reino de la bestia; la gente se muerde la lengua de dolor, pero sigue blasfemando. Libro sobre Apocalipsis, cap. 32: el trono es la autoridad que Satanás dio a la bestia."}
+    - {v: "12", type: vision, entities: [event:vision-de-los-siete-tazones], mentions: [place:rio-eufrates, event:caida-de-babilonia], note: "El sexto tazón seca el gran río Éufrates para abrir camino a los reyes del este. Perspicacia «Éufrates»: es simbólico y repite lo de 539 a.e.c., cuando Ciro desvió el río para tomar Babilonia."}
+    - {v: 13-16, type: vision, entities: [event:vision-de-los-siete-tazones], mentions: [person:satanas, person:jesus], note: "Mensajes como ranas, salidos del dragón (Satanás), la bestia y el falso profeta, juntan a los reyes en Armagedón; Jesús avisa que llega como ladrón. Perspicacia «Har-Magedón»: no es un lugar literal; Meguidó solo explica el nombre en la nota."}
+    - {v: 17-21, type: vision, entities: [event:vision-de-los-siete-tazones], note: "El séptimo tazón cae en el aire: se oye «¡Ya está hecho!», hay el mayor terremoto, la gran ciudad se parte en tres y Dios da su copa a Babilonia la Grande (sin ficha). Cae granizo de 20 kg."}
+  17:
+    status: complete
+    reviewed_on: 2026-10-14
+    spans:
+    - {v: 1-6, type: vision, entities: [letter:apocalipsis, event:vision-de-la-gran-prostituta, person:juan-apostol], mentions: [person:jesus], note: "Un ángel lleva a Juan en espíritu a un desierto sin nombre y le enseña a la gran prostituta, Babilonia la Grande, sobre una bestia escarlata. Libro sobre Apocalipsis, cap. 33: la religión falsa mundial; sin ficha."}
+    - {v: 7-8, type: vision, entities: [event:vision-de-la-gran-prostituta], note: "El ángel le explica el misterio: la bestia era, ya no es y subirá del abismo. Libro sobre Apocalipsis, cap. 34: la Sociedad de Naciones, que se hundió en la guerra mundial y resurgió como las Naciones Unidas."}
+    - {v: 9-11, type: vision, entities: [event:vision-de-la-gran-prostituta], mentions: [period:potencia-egipcia, period:potencia-asiria, period:potencia-babilonica, period:potencia-medopersa, period:potencia-griega, period:potencia-romana], note: "Las siete cabezas son siete montañas y siete reyes: cinco cayeron, uno es y otro vendrá; la bestia es un octavo. Libro sobre Apocalipsis, cap. 35: Egipto, Asiria, Babilonia, Medopersia, Grecia; Roma en días de Juan; luego la angloamericana."}
+    - {v: 12-14, type: vision, entities: [event:vision-de-la-gran-prostituta], mentions: [person:jesus], note: "Los diez cuernos son diez reyes que reinarán una hora con la bestia y lucharán contra el Cordero, que los vencerá con los llamados, escogidos y fieles."}
+    - {v: 15-18, type: vision, entities: [event:vision-de-la-gran-prostituta], note: "Las aguas son pueblos y naciones. Los cuernos y la bestia odiarán a la prostituta, la desnudarán y la quemarán, porque Dios lo pone en su corazón. La mujer es la gran ciudad que reina sobre los reyes."}
+  18:
+    status: complete
+    reviewed_on: 2026-10-14
+    note: Leído entero; la India de Ap 18:13 va en mención del tramo 11-16 desde que Ester creó su ficha.
+    spans:
+    - {v: 1-3, type: vision, entities: [letter:apocalipsis, event:vision-de-la-caida-de-babilonia-la-grande, person:juan-apostol], mentions: [event:caida-de-babilonia], note: "Otro ángel con gran autoridad baja del cielo y grita que Babilonia la Grande ha caído y es guarida de demonios. Empieza la duodécima visión, Ap 18:1-19:10. El grito repite Is 21:9 sobre la Babilonia de 539 a.e.c."}
+    - {v: 4-8, type: vision, entities: [event:vision-de-la-caida-de-babilonia-la-grande], mentions: [event:regreso-de-537], note: "Una voz del cielo manda al pueblo de Dios salir de ella para no compartir sus pecados ni sus plagas: le pagarán el doble y en un día arderá. Libro sobre Apocalipsis, cap. 36: como en 537 a.e.c."}
+    - {v: 9-10, type: vision, entities: [event:vision-de-la-caida-de-babilonia-la-grande], note: "Los reyes de la tierra que vivieron en lujo con ella lloran de lejos al ver el humo del incendio: en una hora llegó su juicio."}
+    - {v: 11-16, type: vision, entities: [event:vision-de-la-caida-de-babilonia-la-grande], mentions: [place:india], note: "Los comerciantes lloran porque nadie compra ya su carga: metales, joyas, telas, maderas, especias, alimentos, ganado, esclavos y vidas humanas. La India solo nombra el origen de una especia."}
+    - {v: 17-19, type: vision, entities: [event:vision-de-la-caida-de-babilonia-la-grande], note: "Con el final del grito de los comerciantes, capitanes, navegantes y marineros miran de lejos el humo, se echan polvo en la cabeza y lloran a la ciudad que los enriqueció, destruida en una hora."}
+    - {v: "20", type: vision, entities: [event:vision-de-la-caida-de-babilonia-la-grande], note: "Se invita al cielo, a los santos, a los apóstoles y a los profetas a alegrarse, porque Dios dictó sentencia contra ella en su favor."}
+    - {v: 21-24, type: vision, entities: [event:vision-de-la-caida-de-babilonia-la-grande], mentions: [person:seraya-hijo-de-nerias, event:jeremias-encarga-a-seraya-el-libro-contra-babilonia], note: "Un ángel fuerte lanza al mar una piedra como de molino: así desaparecerá Babilonia, sin música, oficios ni bodas, culpable de sangre de profetas y santos. Libro sobre Apocalipsis, cap. 37: recuerda a Seraya (Jer 51:63, 64)."}
+  19:
+    status: complete
+    reviewed_on: 2026-10-14
+    spans:
+    - {v: 1-3, type: vision, entities: [letter:apocalipsis, event:vision-de-la-caida-de-babilonia-la-grande], note: "Una gran multitud del cielo alaba a Jah porque juzgó a la gran prostituta y vengó la sangre de sus esclavos. El libro sobre Apocalipsis, cap. 38, ve en ella a Babilonia la Grande, la religión falsa mundial."}
+    - {v: 4-5, type: vision, entities: [event:vision-de-la-caida-de-babilonia-la-grande], mentions: [person:jesus], note: "Los 24 ancianos se postran ante el trono junto a los cuatro seres vivientes. Una voz salida del trono, que el libro sobre Apocalipsis atribuye a Jesucristo, pide a todos los siervos de Dios que lo alaben."}
+    - {v: 6-8, type: vision, entities: [event:vision-de-la-caida-de-babilonia-la-grande], mentions: [person:jesus], note: "Un clamor como de muchas aguas celebra que Jehová empieza a reinar y que llega la boda del Cordero, Jesús. Su esposa, vestida de lino limpio, son los 144.000 ungidos según el libro sobre Apocalipsis, cap. 38."}
+    - {v: 9-10, type: vision, entities: [event:vision-de-la-caida-de-babilonia-la-grande, event:juan-escribe-apocalipsis, person:juan-apostol], mentions: [person:jesus], note: "El ángel manda a Juan escribir que es feliz quien está invitado a la cena nupcial del Cordero. Juan se postra para adorarlo, y el ángel lo frena: es un esclavo como él, y solo Dios merece adoración."}
+    - {v: 11-16, type: vision, entities: [event:vision-del-jinete-fiel-y-verdadero], mentions: [person:jesus, event:joel-anuncia-el-dia-de-jehova], note: "Del cielo abierto sale un jinete en caballo blanco, Fiel y Verdadero, la Palabra de Dios, con los ejércitos celestiales. El libro sobre Apocalipsis, cap. 39, lo identifica con Jesucristo y une su lagar a Joel 3."}
+    - {v: 17-18, type: vision, entities: [event:vision-del-jinete-fiel-y-verdadero], mentions: [event:ezequiel-profetiza-contra-gog-de-magog], note: "Un ángel de pie en el sol llama a las aves a la gran cena de Dios para comer carne de reyes, jefes, caballos y jinetes. El libro sobre Apocalipsis, cap. 39, lo compara con el banquete de Ezequiel 39."}
+    - {v: 19-21, type: vision, entities: [event:vision-del-jinete-fiel-y-verdadero], mentions: [person:jesus, event:ezequiel-profetiza-contra-gog-de-magog], note: "La bestia y los reyes atacan al jinete; la bestia y el falso profeta van vivos al lago de fuego; los demás mueren a espada. Es Armagedón, que el cap. 39 une al ataque de Gog (Eze 38, 39)."}
+  20:
+    status: complete
+    reviewed_on: 2026-10-14
+    spans:
+    - {v: 1-3, type: vision, entities: [letter:apocalipsis, event:vision-de-satanas-atado-mil-anos, person:satanas, person:juan-apostol], mentions: [person:jesus, event:pecado-de-adan-y-eva, event:juicio-en-eden], note: "Un ángel con la llave del abismo, Jesucristo según el libro sobre Apocalipsis, cap. 40, ata mil años a Satanás, la serpiente original de Edén, y lo encierra. Ese libro ve aquí cumplida en parte Génesis 3:15."}
+    - {v: 4-6, type: vision, entities: [event:vision-de-satanas-atado-mil-anos], mentions: [person:jesus], note: "Juan ve tronos y a los ejecutados por su testimonio, que no adoraron a la bestia: vuelven a vivir y reinan con Cristo mil años. El libro sobre Apocalipsis, cap. 40, ve en ellos a los 144.000."}
+    - {v: 7-10, type: vision, entities: [event:vision-de-satanas-atado-mil-anos, person:satanas], mentions: [event:ezequiel-profetiza-contra-gog-de-magog], note: "Acabados los mil años, Satanás sale y engaña a Gog y Magog, que rodean el campamento de los santos. Perspicacia «Gog», núm. 3, toma el nombre de Ezequiel 38. Los consume fuego, y el Diablo va al lago."}
+    - {v: 11-15, type: vision, entities: [event:vision-del-gran-trono-blanco], note: "Ante un gran trono blanco, el tribunal de Dios según el libro sobre Apocalipsis, cap. 41, se juzga a los muertos por sus acciones con unos rollos. La muerte y la Tumba acaban en el lago de fuego."}
+  21:
+    status: complete
+    reviewed_on: 2026-10-14
+    spans:
+    - {v: 1-2, type: vision, entities: [letter:apocalipsis, event:vision-del-gran-trono-blanco], mentions: [event:isaias-anuncia-nuevos-cielos-y-una-nueva-tierra], note: "Aparecen un cielo nuevo y una tierra nueva, y el mar ya no está; el libro sobre Apocalipsis, cap. 42, lo une a Isaías 65:17. Baja la Nueva Jerusalén, que Perspicacia llama celestial y no la ciudad de Oriente Medio."}
+    - {v: 3-4, type: vision, entities: [event:vision-del-gran-trono-blanco], note: "Una voz desde el trono anuncia que la tienda de Dios estará con la humanidad: él les secará las lágrimas y ya no habrá muerte, tristeza, llanto ni dolor."}
+    - {v: 5-8, type: vision, entities: [event:vision-del-gran-trono-blanco, event:juan-escribe-apocalipsis, person:juan-apostol], note: "El que está en el trono lo hace todo nuevo y manda a Juan escribirlo. Es el Alfa y el Omega: dará gratis agua de la vida al vencedor; a cobardes, asesinos, idólatras y mentirosos, la muerte segunda."}
+    - {v: 9-14, type: vision, entities: [event:vision-de-la-nueva-jerusalen, person:juan-apostol], mentions: [person:jesus], note: "Un ángel de los siete tazones lleva a Juan a una montaña alta y le muestra a la esposa del Cordero, la ciudad santa: doce puertas con nombres de tribus y doce cimientos con los de los apóstoles."}
+    - {v: 15-21, type: vision, entities: [event:vision-de-la-nueva-jerusalen], note: "El ángel mide la ciudad con una caña de oro: un cubo de 12.000 estadios, unos 2.220 km según la nota, y muralla de 144 codos. Oro puro, muralla de jaspe, cimientos de piedras preciosas y puertas de perla."}
+    - {v: 22-27, type: vision, entities: [event:vision-de-la-nueva-jerusalen], mentions: [person:jesus], note: "No tiene templo: lo son Jehová y el Cordero, y la gloria de Dios la alumbra sin sol ni luna. Sus puertas nunca se cierran; solo entran los inscritos en el rollo de la vida."}
+  22:
+    status: complete
+    reviewed_on: 2026-10-14
+    spans:
+    - {v: 1-2, type: vision, entities: [letter:apocalipsis, event:vision-de-la-nueva-jerusalen], mentions: [person:jesus, event:ezequiel-ve-en-vision-un-templo-nuevo], note: "Un río de agua de vida, claro, sale del trono de Dios y del Cordero por la calle principal, entre árboles de vida cuyas hojas curan. El libro sobre Apocalipsis, cap. 43, lo compara con el río de Ezequiel 47."}
+    - {v: 3-5, type: vision, entities: [event:vision-de-la-nueva-jerusalen], mentions: [person:jesus], note: "En la ciudad estará el trono de Dios y del Cordero, sin maldición. Sus esclavos lo servirán, verán su rostro y llevarán su nombre en la frente; Jehová los alumbrará y reinarán para siempre."}
+    - {v: 6-7, type: speech, entities: [event:juan-escribe-apocalipsis], mentions: [person:jesus], note: "Empieza la conclusión. El ángel asegura que estas palabras son fieles y que Jehová lo envió a mostrar lo que pronto ocurrirá; en nombre de Jesús, dice el libro sobre Apocalipsis, cap. 44, anuncia que viene pronto."}
+    - {v: 8-9, type: narration, entities: [person:juan-apostol, event:juan-escribe-apocalipsis], note: "Juan afirma que él oyó y vio todo esto. Vuelve a postrarse ante el ángel que se lo mostraba, y el ángel otra vez se lo impide: es esclavo como Juan y los profetas; solo a Dios se adora."}
+    - {v: 10-11, type: speech, entities: [event:juan-escribe-apocalipsis], note: "El ángel le pide no sellar lo que este rollo profetiza, pues el tiempo fijado se acerca: el injusto y el sucio seguirán como son, y también el justo y el santo."}
+    - {v: 12-15, type: speech, note: "Habla Jehová, según el libro sobre Apocalipsis, cap. 44: viene pronto a pagar a cada uno por sus hechos. Es el Alfa y el Omega; entran en la ciudad los que lavan sus túnicas, no quienes practican lo malo."}
+    - {v: "16", type: speech, entities: [relation:jesus/appears_to/juan-apostol, relation:jesus/kin/david], mentions: [person:jesus, person:david, event:pacto-con-david, event:balaam-anuncia-la-estrella-de-jacob], note: "Jesús dice que envió a su ángel con este testimonio para las congregaciones; es raíz y descendencia de David y estrella de la mañana. El libro sobre Apocalipsis, cap. 44, lo une al pacto con David y a Números 24:17."}
+    - {v: "17", type: speech, note: "El espíritu y la novia invitan a venir; quien lo oiga, que repita la invitación, y quien tenga sed puede tomar gratis el agua de la vida."}
+    - {v: 18-20, type: speech, entities: [event:juan-escribe-apocalipsis, person:juan-apostol], mentions: [person:jesus], note: "Jesús advierte que quien añada algo a la profecía del rollo recibirá sus plagas, y quien quite algo perderá su parte en los árboles de la vida y en la ciudad santa. Promete venir pronto; Juan responde pidiéndole que venga."}
+    - {v: "21", type: letter, entities: [letter:apocalipsis, person:juan-apostol], mentions: [person:jesus], note: "Juan cierra el libro como una carta y desea a los santos la bondad inmerecida del Señor Jesús."}

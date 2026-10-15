@@ -1,0 +1,53 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: vision-de-la-nueva-jerusalen
+title: Juan ve la Nueva Jerusalén
+date:
+  from: 96
+  to: 96
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 96 e.c.
+narrative_order:
+  series: apocalipsis
+  order: 21009
+places:
+- patmos
+people:
+- juan-apostol
+present:
+- juan-apostol
+passages:
+- Ap 21:9-22:5
+summary: 'Un ángel lleva a Juan a una montaña alta y le muestra la Nueva Jerusalén, la esposa del Cordero: una ciudad cúbica
+  de oro y piedras preciosas, sin templo, con un río de agua de vida y árboles de vida.'
+reason: '«Toda Escritura», libro 66, párr. 6, la cuenta como la visión 16 (Ap 21:9-22:5); párr. 5: Patmos, hacia 96. Juan
+  está en Patmos aunque en la visión lo lleven a una montaña. Orden 21009.'
+sources:
+- apocalipsis-21
+- apocalipsis-22
+- si-apocalipsis
+- si-3
+- tnm-tabla
+- it-revelacion-a-juan
+- re-43
+- it-nueva-jerusalen
+links:
+- title: Apocalipsis 21 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/apocalipsis/21/
+  type: bible
+- title: Apocalipsis 22 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/apocalipsis/22/
+  type: bible
+- title: 'Perspicacia: «Revelación a Juan, Una»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Revelaci%C3%B3n-a-Juan-Una/
+  type: perspicacia
+- title: 'Perspicacia: «Nueva Jerusalén»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Nueva-Jerusal%C3%A9n/
+  type: perspicacia
+not_claimed:
+- 'Que la Nueva Jerusalén sea una ciudad de la tierra: Perspicacia «Nueva Jerusalén» dice que es celestial y que la forman
+  los cristianos ungidos glorificados, la novia del Cordero.'
+checked_on: '2026-10-14'
+status: verified

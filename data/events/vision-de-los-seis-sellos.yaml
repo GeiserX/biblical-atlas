@@ -1,0 +1,42 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: vision-de-los-seis-sellos
+title: Juan ve al Cordero abrir seis sellos del rollo
+date:
+  from: 96
+  to: 96
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 96 e.c.
+narrative_order:
+  series: apocalipsis
+  order: 6001
+places:
+- patmos
+people:
+- juan-apostol
+present:
+- juan-apostol
+passages:
+- Ap 6:1-17
+summary: Al romper el Cordero los sellos salen cuatro jinetes; bajo el altar claman los muertos por su testimonio, y con el
+  sexto sello llegan un gran terremoto y el día de la ira.
+reason: Tercera visión de Apocalipsis (Ap 6:1-17) según «Toda Escritura», libro 66, párr. 6 y 13, y el libro sobre Apocalipsis,
+  cap. 16 a 18. Juan la recibió preso en Patmos hacia 96 (libro 66, párr. 5; estudio 3; Tabla).
+note: 'Orden 6001 de la serie apocalipsis, elegido por nosotros: «Toda Escritura», libro 66, párr. 6, ve el libro como una
+  sola secuencia de visiones. Lo visto es profecía, no suceso del atlas; cada tramo explica su parte.'
+sources:
+- apocalipsis-6
+- si-apocalipsis
+- si-3
+- tnm-tabla
+- re-16
+- re-17
+- re-18
+links:
+- title: Apocalipsis 6 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/apocalipsis/6/
+  type: bible
+checked_on: '2026-10-14'
+status: verified

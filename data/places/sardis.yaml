@@ -11,13 +11,15 @@ lon: 28.040278
 precision: point
 coord_source: openbible:aab4a5f
 coord_url: https://www.openbible.info/geo/ancient/aab4a5f/sardis
-summary: Antigua capital de Lidia, a unos 50 km al sur de Tiatira. Un terremoto la arrasó en 17 y Roma ayudó a reconstruirla.
+summary: Antigua capital de Lidia, a unos 50 km al sur de Tiatira. Un terremoto casi la arrasó en 17 y Roma ayudó a reconstruirla.
   Su congregación necesitaba despertar en sentido espiritual.
 reason: 'Perspicacia «Sardis» (párr. 2 a 4); Ap 3:1-6. La coordenada es de OpenBible: solo tomamos el punto.'
 sources:
 - it-sardis
 - apocalipsis-3
 - openbible-geo
+- apocalipsis-1
+- re-11
 links:
 - title: 'Perspicacia: «Sardis»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sardis/
@@ -25,5 +27,9 @@ links:
 - title: Apocalipsis 3 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/apocalipsis/3/
   type: bible
-checked_on: '2026-09-28'
+history:
+- date: '2026-10-14'
+  change: Decía que el terremoto de 17 arrasó la ciudad; Perspicacia «Sardis», párr. 3, dice que casi la arrasó.
+  source: it-sardis
+checked_on: '2026-10-14'
 status: verified

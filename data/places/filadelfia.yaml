@@ -18,6 +18,8 @@ sources:
 - it-filadelfia
 - apocalipsis-3
 - openbible-geo
+- apocalipsis-1
+- re-12
 links:
 - title: 'Perspicacia: «Filadelfia»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Filadelfia/
@@ -25,5 +27,5 @@ links:
 - title: Apocalipsis 3 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/apocalipsis/3/
   type: bible
-checked_on: '2026-09-28'
+checked_on: '2026-10-14'
 status: verified

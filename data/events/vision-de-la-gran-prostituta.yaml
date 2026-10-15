@@ -1,0 +1,51 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: vision-de-la-gran-prostituta
+title: Juan ve a la gran prostituta sentada sobre una bestia de color escarlata
+date:
+  from: 96
+  to: 96
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 96 e.c.
+narrative_order:
+  series: apocalipsis
+  order: 17001
+places:
+- patmos
+people:
+- juan-apostol
+present:
+- juan-apostol
+passages:
+- Ap 17:1-18
+summary: Un ángel lleva en espíritu a Juan a un desierto y le muestra a Babilonia la Grande, una prostituta sentada sobre
+  una bestia escarlata de siete cabezas y diez cuernos que acabará volviéndose contra ella.
+reason: Undécima visión de Apocalipsis (Ap 17:1-18) según «Toda Escritura», libro 66, párr. 6 y 23, y el libro sobre Apocalipsis,
+  cap. 33 a 35. Juan las recibió preso en Patmos hacia 96 (libro 66, párr. 5; estudio 3; Tabla).
+note: 'Orden 17001 de la serie apocalipsis, nuestro. El desierto no tiene nombre y Babilonia la Grande no es la ciudad de
+  Mesopotamia (Perspicacia «Babilonia la Grande»): ninguno lleva ficha.'
+sources:
+- apocalipsis-17
+- si-apocalipsis
+- si-3
+- tnm-tabla
+- re-33
+- re-34
+- re-35
+- it-revelacion-a-juan
+- it-babilonia-la-grande
+links:
+- title: Apocalipsis 17 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/apocalipsis/17/
+  type: bible
+- title: 'Perspicacia: «Revelación a Juan, Una»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Revelaci%C3%B3n-a-Juan-Una/
+  type: perspicacia
+- title: 'Perspicacia: «Babilonia la Grande»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Babilonia-la-Grande/
+  type: perspicacia
+search: visión gran prostituta Babilonia la Grande bestia escarlata
+checked_on: '2026-10-14'
+status: verified

@@ -1,0 +1,48 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: vision-del-gran-trono-blanco
+title: Juan ve el juicio ante el gran trono blanco y un nuevo cielo y una nueva tierra
+date:
+  from: 96
+  to: 96
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 96 e.c.
+narrative_order:
+  series: apocalipsis
+  order: 20011
+places:
+- patmos
+people:
+- juan-apostol
+present:
+- juan-apostol
+passages:
+- Ap 20:11-21:8
+summary: Juan ve un gran trono blanco ante el que se juzga a los muertos por sus acciones; después, cielos y tierra nuevos
+  y la Nueva Jerusalén. Dios vivirá con la humanidad y no habrá muerte.
+reason: '«Toda Escritura», libro 66, párr. 6, la cuenta como la visión 15 (Ap 20:11-21:8); párr. 5: Patmos, hacia 96. Orden
+  20011 de la serie apocalipsis.'
+sources:
+- apocalipsis-20
+- apocalipsis-21
+- si-apocalipsis
+- si-3
+- tnm-tabla
+- it-revelacion-a-juan
+- re-41
+- re-42
+- it-nueva-jerusalen
+links:
+- title: Apocalipsis 20 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/apocalipsis/20/
+  type: bible
+- title: Apocalipsis 21 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/apocalipsis/21/
+  type: bible
+- title: 'Perspicacia: «Revelación a Juan, Una»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Revelaci%C3%B3n-a-Juan-Una/
+  type: perspicacia
+checked_on: '2026-10-14'
+status: verified

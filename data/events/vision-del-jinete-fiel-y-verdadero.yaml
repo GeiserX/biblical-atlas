@@ -1,0 +1,46 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: vision-del-jinete-fiel-y-verdadero
+title: Juan ve al jinete Fiel y Verdadero vencer a la bestia y a los reyes
+date:
+  from: 96
+  to: 96
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 96 e.c.
+narrative_order:
+  series: apocalipsis
+  order: 19011
+places:
+- patmos
+people:
+- juan-apostol
+present:
+- juan-apostol
+passages:
+- Ap 19:11-21
+summary: Juan ve salir del cielo un jinete en caballo blanco, Fiel y Verdadero, con los ejércitos celestiales. Vence a la
+  bestia y a los reyes de la tierra; la bestia y el falso profeta acaban en el lago de fuego.
+reason: '«Toda Escritura», libro 66, párr. 6, la cuenta como la visión 13 (Ap 19:11-21); párr. 5: Patmos, hacia 96. El libro
+  sobre Apocalipsis, cap. 39, identifica al jinete con Jesucristo. Orden 19011.'
+sources:
+- apocalipsis-19
+- si-apocalipsis
+- si-3
+- tnm-tabla
+- it-revelacion-a-juan
+- re-39
+- it-gog
+links:
+- title: Apocalipsis 19 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/apocalipsis/19/
+  type: bible
+- title: 'Perspicacia: «Revelación a Juan, Una»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Revelaci%C3%B3n-a-Juan-Una/
+  type: perspicacia
+not_claimed:
+- 'Que Armagedón sea un sitio de la tierra: el libro sobre Apocalipsis, cap. 39, lo llama la situación mundial en que Dios
+  ejecuta su juicio.'
+checked_on: '2026-10-14'
+status: verified

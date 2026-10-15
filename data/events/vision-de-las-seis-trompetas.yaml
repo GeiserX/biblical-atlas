@@ -1,0 +1,48 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: vision-de-las-seis-trompetas
+title: Juan ve a seis ángeles tocar sus trompetas
+date:
+  from: 96
+  to: 96
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 96 e.c.
+narrative_order:
+  series: apocalipsis
+  order: 8001
+places:
+- patmos
+people:
+- juan-apostol
+present:
+- juan-apostol
+passages:
+- Ap 8:1-9:21
+summary: En Patmos, Juan ve abrir el séptimo sello y dar trompetas a siete ángeles. Las seis primeras traen plagas sobre un
+  tercio de la tierra, langostas del abismo y una caballería inmensa; los demás no se arrepienten.
+reason: «Toda Escritura», libro 66, párr. 6 y 15-16, y el libro sobre Apocalipsis, cap. 21, la cuentan como quinta visión
+  (Ap 8:1-9:21). El estudio 3 y la Tabla de los libros dan c. 96, en Patmos.
+sources:
+- apocalipsis-8
+- apocalipsis-9
+- si-apocalipsis
+- re-21
+- re-22
+- re-23
+- si-3
+- tnm-tabla
+- it-patmos
+- w20-ataque-del-norte
+- it-abadon
+- it-apolion
+links:
+- title: Apocalipsis 8 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/apocalipsis/8/
+  type: bible
+- title: Apocalipsis 9 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/apocalipsis/9/
+  type: bible
+checked_on: '2026-10-14'
+status: verified

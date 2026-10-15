@@ -29,16 +29,20 @@ context_origin:
   - it-revelacion-a-juan
   - it-juan
 context_destination:
-  summary: Jesús envía un mensaje propio a cada una de las siete congregaciones, con elogios y correcciones, antes
-    de las visiones.
+  summary: En la primera visión, Jesús glorificado da a Juan un mensaje para cada una de las siete congregaciones, con elogios
+    y correcciones.
   sources:
   - it-revelacion-a-juan
+  - si-apocalipsis
+  - re-5
 reason: La Tabla y el estudio 3 dan Patmos y c. 96; Perspicacia «Revelación a Juan, Una» (párr. 2, 3 y 10).
 sources:
 - tnm-tabla
 - si-3
 - it-revelacion-a-juan
 - apocalipsis-1
+- si-apocalipsis
+- re-5
 links:
 - title: 'Perspicacia: «Revelación a Juan, Una»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Revelaci%C3%B3n-a-Juan-Una/
@@ -46,5 +50,12 @@ links:
 - title: Apocalipsis 1 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/apocalipsis/1/
   type: bible
-checked_on: '2026-09-28'
+history:
+- date: '2026-10-14'
+  change: Decía que los mensajes iban antes de las visiones. «Toda Escritura», libro 66, párr. 6 y 8, y el libro Apocalipsis,
+    cap. 5, los ponen dentro de la primera visión, de Ap 1:10 a 3:22.
+  source: si-apocalipsis
+people:
+- antipas-de-pergamo
+checked_on: '2026-10-14'
 status: verified

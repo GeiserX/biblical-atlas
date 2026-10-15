@@ -1,0 +1,41 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: vision-de-los-sellados-y-la-gran-muchedumbre
+title: Juan ve sellar a los 144.000 y a una gran muchedumbre
+date:
+  from: 96
+  to: 96
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 96 e.c.
+narrative_order:
+  series: apocalipsis
+  order: 7001
+places:
+- patmos
+people:
+- juan-apostol
+present:
+- juan-apostol
+passages:
+- Ap 7:1-17
+summary: Cuatro ángeles sujetan los vientos hasta que se sella a 144.000 de las tribus de Israel. Después Juan ve ante el
+  trono y el Cordero una gran muchedumbre de todas las naciones.
+reason: Cuarta visión de Apocalipsis (Ap 7:1-17) según «Toda Escritura», libro 66, párr. 6 y 14, y el libro sobre Apocalipsis,
+  cap. 19 y 20. Juan la recibió preso en Patmos hacia 96 (libro 66, párr. 5; estudio 3; Tabla).
+note: 'Orden 7001 de la serie apocalipsis, elegido por nosotros: «Toda Escritura», libro 66, párr. 6, ve el libro como una
+  sola secuencia de visiones. Lo visto es profecía, no suceso del atlas; cada tramo explica su parte.'
+sources:
+- apocalipsis-7
+- si-apocalipsis
+- si-3
+- tnm-tabla
+- re-19
+- re-20
+links:
+- title: Apocalipsis 7 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/apocalipsis/7/
+  type: bible
+checked_on: '2026-10-14'
+status: verified

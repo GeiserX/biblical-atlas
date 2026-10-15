@@ -25,6 +25,7 @@ sources:
 - miqueas-6
 - josue-24
 - jueces-11
+- apocalipsis-2
 links:
 - title: 'Perspicacia: «Balac»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Balac/
@@ -57,5 +58,17 @@ relations:
   reason: 'Nú 22:4, 10: era rey de Moab.'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+- type: tie
+  person: balaam
+  word: adviser
+  inferred: false
+  sources:
+  - apocalipsis-2
+  - it-balac
+  - re-9
+  reason: 'Ap 2:14: Balaam le enseñó a Balac cómo hacer caer a los israelitas en la idolatría y la inmoralidad. El libro Apocalipsis,
+    cap. 9, dice que se lo sugirió cuando no pudo maldecirlos.'
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
 status: verified

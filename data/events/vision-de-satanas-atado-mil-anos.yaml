@@ -1,0 +1,48 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: vision-de-satanas-atado-mil-anos
+title: Juan ve a Satanás atado mil años y luego destruido
+date:
+  from: 96
+  to: 96
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 96 e.c.
+narrative_order:
+  series: apocalipsis
+  order: 20001
+places:
+- patmos
+people:
+- juan-apostol
+present:
+- juan-apostol
+passages:
+- Ap 20:1-10
+summary: Juan ve a un ángel encerrar a Satanás en el abismo durante mil años, mientras los fieles resucitados reinan con Cristo.
+  Al final, Satanás sale, engaña a Gog y Magog y acaba en el lago de fuego.
+reason: '«Toda Escritura», libro 66, párr. 6, la cuenta como la visión 14 (Ap 20:1-10); párr. 5: Patmos, hacia 96. Orden 20001
+  de la serie apocalipsis.'
+sources:
+- apocalipsis-20
+- si-apocalipsis
+- si-3
+- tnm-tabla
+- it-revelacion-a-juan
+- re-40
+- it-gog
+- it-magog
+- it-satanas
+links:
+- title: Apocalipsis 20 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/apocalipsis/20/
+  type: bible
+- title: 'Perspicacia: «Revelación a Juan, Una»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Revelaci%C3%B3n-a-Juan-Una/
+  type: perspicacia
+not_claimed:
+- 'Que Gog y Magog sean aquí un caudillo, un pueblo o una tierra: Perspicacia «Gog», núm. 3, y «Magog», núm. 3, los aplican
+  a quienes se rebelan tras los mil años.'
+checked_on: '2026-10-14'
+status: verified

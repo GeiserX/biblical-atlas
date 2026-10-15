@@ -1,0 +1,46 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: vision-del-rollo-pequeno
+title: Juan come un rollo pequeño y oye la séptima trompeta
+date:
+  from: 96
+  to: 96
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 96 e.c.
+narrative_order:
+  series: apocalipsis
+  order: 10001
+places:
+- patmos
+people:
+- juan-apostol
+present:
+- juan-apostol
+passages:
+- Ap 10:1-11:19
+summary: Un ángel fuerte da a Juan un rollo pequeño para comérselo; luego mide el santuario y ve morir y revivir a dos testigos.
+  Con la séptima trompeta, voces del cielo anuncian el Reino de Dios y de su Cristo.
+reason: «Toda Escritura», libro 66, párr. 6, 17 y 18, y el libro sobre Apocalipsis, cap. 24, la cuentan como sexta visión
+  (Ap 10:1-11:19). El estudio 3 y la Tabla de los libros dan c. 96, en Patmos.
+sources:
+- apocalipsis-10
+- apocalipsis-11
+- si-apocalipsis
+- re-24
+- re-25
+- re-26
+- si-3
+- tnm-tabla
+- it-patmos
+- it-sodoma
+links:
+- title: Apocalipsis 10 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/apocalipsis/10/
+  type: bible
+- title: Apocalipsis 11 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/apocalipsis/11/
+  type: bible
+checked_on: '2026-10-14'
+status: verified

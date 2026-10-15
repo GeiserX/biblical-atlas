@@ -23,6 +23,8 @@ sources:
 - openbible-geo
 - colosenses-2
 - colosenses-4
+- apocalipsis-1
+- re-13
 links:
 - title: 'Perspicacia: «Laodicea, laodicenses»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Laodicea-laodicenses/
@@ -35,5 +37,5 @@ history:
   change: Añade que Pablo no predicó en la ciudad pero luchaba por sus cristianos (Col 2:1; nota de estudio de ese versículo
     y Perspicacia «Laodicea, laodicenses», párr. 5).
   source: colosenses-2
-checked_on: '2026-09-29'
+checked_on: '2026-10-14'
 status: verified
