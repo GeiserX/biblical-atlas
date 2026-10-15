@@ -1,0 +1,14 @@
+# biblical-atlas: cobertura de un libro. Formato en data/coverage/README.md.
+book: 3-juan
+chapters:
+  1:
+    status: pending
+    reviewed_on: 2026-10-14
+    note: "Carta breve del anciano a Gayo: alaba su hospitalidad, censura a Diótrefes y recomienda a Demetrio. Pendiente: la relación de Diótrefes con Juan (3Jn 9, 10) espera su texto en el vocabulario; lo detalla entre-libros.md."
+    spans:
+    - {v: "1", type: letter, entities: [letter:3-juan, event:juan-escribe-3-juan, person:juan-apostol, person:gayo-de-3-juan, relation:juan-apostol/tie/gayo-de-3-juan, relation:juan-apostol/lived_in/efeso], note: "«El anciano», el apóstol Juan según «Toda Escritura», escribe a Gayo, a quien quiere de verdad. La Atalaya de 2008 lo llama su amigo íntimo; no se sabe si es alguno de los otros Gayo."}
+    - {v: 2-4, type: letter, entities: [person:gayo-de-3-juan], note: "Juan le desea salud y que todo le vaya bien. Unos hermanos le contaron que Gayo sigue fiel a la verdad, y nada le alegra tanto como saber que sus hijos espirituales viven así."}
+    - {v: 5-8, type: letter, entities: [person:gayo-de-3-juan], note: "Gayo atiende con fidelidad a hermanos que viajan aunque no los conocía, y ellos alabaron su amor ante la congregación. Que les dé lo que necesiten: salieron por el nombre de Dios sin aceptar nada de los gentiles."}
+    - {v: 9-10, type: letter, entities: [person:diotrefes, person:juan-apostol], note: "Juan ya escribió a la congregación, pero Diótrefes, que ansía el primer lugar, no lo respeta, lo calumnia, rechaza a los hermanos y quiere echar a quien los acoge. Si Juan va, lo denunciará. Ninguna fuente dice qué escrito era."}
+    - {v: 11-12, type: letter, entities: [person:demetrio-de-3-juan], note: "Que Gayo imite lo bueno: quien obra bien viene de Dios. Todos, y la verdad misma, hablan bien de Demetrio, y Juan lo avala. A «Toda Escritura» le parece que llevó la carta; Perspicacia lo ve posible."}
+    - {v: 13-14, type: letter, entities: [event:juan-escribe-3-juan], mentions: [person:gayo-de-3-juan], note: "Prefiere no seguir escribiendo con pluma y tinta: espera ver pronto a Gayo y hablarle en persona. Le desea paz y envía saludos de los amigos, que La Atalaya de 2008 entiende como los cristianos en general."}
