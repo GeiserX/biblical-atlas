@@ -5,6 +5,8 @@ names:
 - name: Monte de la transfiguración
 - name: Montaña alta
   note: Así la describen Mt 17:1 y Mr 9:2, sin darle nombre.
+- name: Santa montaña
+  note: Así la llama Pedro en 2Pe 1:18 al recordar la transfiguración.
 type: mountain
 lat: null
 lon: null
@@ -56,6 +58,7 @@ sources:
 - openbible-geo
 - marcos-9
 - lucas-9
+- 2-pedro-1
 links:
 - title: 'Perspicacia: «Transfiguración»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Transfiguraci%C3%B3n/
@@ -66,5 +69,5 @@ links:
 - title: Mateo 17 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/mateo/17/
   type: bible
-checked_on: '2026-09-29'
+checked_on: '2026-10-14'
 status: verified

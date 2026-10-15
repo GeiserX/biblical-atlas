@@ -36,6 +36,7 @@ sources:
 - galatas-2
 - santiago-1
 - si-santiago
+- judas-1
 distinct_from:
 - santiago-hijo-de-zebedeo
 - santiago-hijo-de-alfeo

@@ -30,8 +30,8 @@ context_destination:
   - it-diotrefes
 reason: La Tabla da «Éfeso o cerca» y c. 98; Perspicacia «Juan, Cartas de» (párr. 16 y 17), «Gayo» (párr. 5) y «Demetrio»
   (párr. 4).
-note: '«Éfeso o cerca»: la ubicamos en Éfeso. No damos a Demetrio como portador porque la fuente solo dice «puede
-  ser».'
+note: '«Éfeso o cerca»: la ubicamos en Éfeso. No damos a Demetrio como portador: Perspicacia dice que puede serlo y «Toda
+  Escritura», libro 64, que lo parece; ninguna lo afirma.'
 sources:
 - tnm-tabla
 - si-3
@@ -39,6 +39,8 @@ sources:
 - it-gayo
 - it-demetrio
 - 3-juan-1
+- si-3-juan
+- w08-cartas-de-juan-y-judas
 links:
 - title: 'Perspicacia: «Juan, Cartas de»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Juan-Cartas-de/
@@ -46,5 +48,10 @@ links:
 - title: 3 Juan 1 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/3-juan/1/
   type: bible
-checked_on: '2026-09-28'
+history:
+- date: '2026-10-14'
+  change: La nota decía que una sola fuente duda de que Demetrio llevara la carta; «Toda Escritura», libro 64, párr. 3, también
+    lo da solo como lo que parece.
+  source: si-3-juan
+checked_on: '2026-10-14'
 status: verified

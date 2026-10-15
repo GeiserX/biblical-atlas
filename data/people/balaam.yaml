@@ -28,6 +28,8 @@ sources:
 - miqueas-6
 - josue-13
 - josue-24
+- judas-1
+- 2-pedro-2
 links:
 - title: 'Perspicacia: «Balaam»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Balaam/
@@ -53,8 +55,9 @@ relations:
   - miqueas-6
   - josue-13
   - josue-24
+  - 2-pedro-2
   reason: 'Nú 22:5: Balaam hijo de Beor.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-10-14'
   status: verified
 - type: lived_in
   place: petor
@@ -98,10 +101,19 @@ relations:
     dice que Balac lo trajo de Aram.
   checked_on: '2026-09-29'
   status: verified
+- type: holds_office
+  office: prophet
+  inferred: false
+  sources:
+  - 2-pedro-2
+  - it-balaam
+  reason: 2Pe 2:16 lo llama el profeta, y Perspicacia «Balaam» también, aunque se dejó llevar por la codicia de la paga.
+  checked_on: '2026-10-14'
+  status: verified
 history:
 - date: '2026-09-29'
   change: 'La relación con Mesopotamia pasa de deducida a dicha por el texto: Dt 23:4 lo llama de Petor de Mesopotamia. Sus
     relaciones con Beor y Petor citan también Dt 23.'
   source: deuteronomio-23
-checked_on: '2026-09-29'
+checked_on: '2026-10-14'
 status: verified

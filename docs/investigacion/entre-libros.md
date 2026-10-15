@@ -97,8 +97,9 @@ Los campos, los tipos de relación y sus palabras se nombran como en el esquema 
 
 ## Para las Escrituras Griegas
 
-- **Pasaje ya puesto.** Jud 11 está en `muerte-de-core`.
 - **Una cita literal de las Escrituras Hebreas.** Si la carta la usa como mandato que sigue en vigor o dice algo del propio texto citado, su pasaje entra en el suceso y el suceso en `entidades`: Ro 7:7, Ro 13:9 y Ef 6:2, 3 en `diez-mandamientos` (Ef 6:2 lo llama el primer mandato con promesa). Si solo toma la frase como apoyo de un consejo, el suceso va en `menciona` sin pasaje: Gé 2:24 en 1Co 6:16 y Ef 5:31, con `creacion-de-eva`.
+- **Pasajes que aún no están en ningún suceso.** Hch 7:36 y 13:18 y Heb 3:16-19 van a `jehova-condena-a-israel-a-40-anos-en-el-desierto`; Ap 2:14 y Os 9:10 a `israel-adora-al-baal-de-peor`; 2Pe 2:15, 16 a `la-burra-de-balaam-habla`; Heb 9:4 nombra la vara de `la-vara-de-aaron-echa-brotes`. Miq 6:5 nombra `balac`, `balaam` y `sitim`.
+- **Pasajes que aún no están en ningún suceso.** Hch 7:36 y 13:18, Heb 3:16-19 y Jud 5 van a `jehova-condena-a-israel-a-40-anos-en-el-desierto`; Ap 2:14 y Os 9:10 a `israel-adora-al-baal-de-peor`; Heb 9:4 nombra la vara de `la-vara-de-aaron-echa-brotes`. Miq 6:5 nombra `balac`, `balaam` y `sitim`.
 - **Pasajes que aún no están en ningún suceso.** Hch 7:36 y 13:18 y Jud 5 van a `jehova-condena-a-israel-a-40-anos-en-el-desierto`; Ap 2:14 y Os 9:10 a `israel-adora-al-baal-de-peor`; 2Pe 2:15, 16 a `la-burra-de-balaam-habla`. Miq 6:5 nombra `balac`, `balaam` y `sitim`.
 
 ## Para Deuteronomio, Josué y Jueces
@@ -366,6 +367,10 @@ Los campos, los tipos de relación y sus palabras se nombran como en el esquema 
 - **La primera carta y lo que va antes.** `primera-carta-de-pablo` lleva ahora el orden 1806 de la serie `hechos`, tras `crispo-cree` (Hch 18:5), y dice que probablemente es su primera carta (nota de 1Te 2:13). Antes van `pablo-intenta-volver-a-tesalonica` (1713, 1Te 2:17, 18) y `pablo-envia-a-timoteo-a-tesalonica` (1716, 1Te 3:1-5: al empezar la espera de Atenas, porque ninguna fuente lo ordena frente al Areópago, que es 1722).
 - **Filipos en 1Te 2:2.** Va en `mentions`: `filipos` lleva bloque `en` y `validate.py` no le deja citar `1-tesalonicenses-2` mientras el libro no tenga el suyo en `data/books.yaml`. Cuando lo tenga, el tramo 1-2 puede pasarla a `entities`.
 
+## Para quien reabra Romanos (desde 1 Pedro)
+
+- **La Sion de Is 28:16.** La nota del tramo Romanos 9:30-33 dice que la Sion donde se pone la piedra es Jerusalén y pone `place:jerusalen` en `mentions`. La nota de estudio de Ro 9:33 no lo dice, y Perspicacia «Sión» pone esa piedra en la Sion celestial (Ro 9:33; 1Pe 2:6). Se corrige la nota y se quita la mención; 1 Pedro 2:4-8 no lleva lugar.
+
 ## Para Nehemías (desde Esdras)
 
 - **Más allá del Río.** La provincia persa al oeste del Éufrates es `region-al-oeste-del-eufrates` (Esd 4:10-8:36). Ne 2:7, 9 y 3:7 usan ese id: un lugar no se funde por clave, así que otro id sería un duplicado.
@@ -448,3 +453,29 @@ Los campos, los tipos de relación y sus palabras se nombran como en el esquema 
 ## Para quien relea Jerusalén o el monte Moria (desde Ezequiel)
 
 - **Puertas del templo.** `jerusalen` lleva en `names` dos puertas del templo, la Puerta superior de la casa de Jehová (2Re 15:35) y la Puerta del Rey (1Cr 9:18), y `monte-moria` lleva las demás. Ezequiel 9 y 10 no las movieron: hace falta decidir si pasan a `monte-moria`.
+
+## Para quien reabra Génesis 5 o Deuteronomio 34 (desde Judas)
+
+- **Sucesos que solo cuenta Judas.** `enoc-anuncia-el-juicio-de-jehova` (Jud 14, 15; serie `genesis`, orden 5020, antes de `dios-toma-a-enoc`) va en `mentions` del tramo de Gé 5:21-24. `miguel-discute-con-el-diablo-por-el-cuerpo-de-moises` (Jud 9; serie `numeros`, orden 134006, junto al entierro) va en `mentions` del tramo de Dt 34:5-8. Ninguno lleva pasaje de esos libros.
+
+## Para Apocalipsis (desde Judas)
+
+- **Miguel es Jesús.** Jud 9 pone `person:jesus` por Perspicacia «Miguel», núm. 1, y no crea ficha para Miguel. Ap 12:7 usa el mismo id.
+
+## Para el vocabulario (desde Judas)
+
+- **Arcángel.** Jud 9 llama arcángel a Miguel, y `offices` no tiene esa palabra: `jesus` va sin ese `holds_office`. Si se añade, la relación cita `judas-1` e `it-miguel`, y 1Te 4:16 puede sumarse. Es la misma duda que «príncipe» para Miguel, de Daniel, en «Más cargos que el vocabulario no tiene».
+
+## Para quien reabra las cartas de Juan (desde 3 Juan)
+
+- **El suceso de escritura.** `juan-escribe-3-juan` sigue el modelo de `juan-escribe-1-juan` y `juan-escribe-2-juan`: `type: writing`, papel `wrote`, `efeso`, c. 98 anclado y orden 2982 de `hechos`, elegido por nosotros. Cita el saludo (3Jn 1) y el v. 13, el único donde Juan habla de escribir. El escrito anterior a la congregación (3Jn 9) es otro, sin fecha ni lugar, y queda en la nota del tramo. Si `hechos` vale para 98 sigue siendo pregunta abierta de 1 Juan.
+- **«El anciano»: 3 Juan se integra después de 2 Juan.** `data/_proposals/3-juan.json` añade a `juan-apostol` ese nombre con el mismo objeto que 2 Juan escribe en la ficha, nota incluida, para que git no choque en ningún orden. Esa nota cita 2Jn 1 y «Toda Escritura», libro 63, que solo llegan a la ficha con 2 Juan: integrada antes, la nota de 3 Juan quedaría sin fuente. Con las dos en `main`, un solo `cambiar` de `names` en `juan-apostol` deja la nota en «Así se presenta en 2Jn 1 y 3Jn 1.» seguida de lo que ya dice, con `historial` de fuente `3-juan-1`: «Toda Escritura», libro 64, párr. 2, también reconoce al apóstol por ese título. Si 2 Juan cambia la nota antes de integrarse, se iguala en la propuesta de 3 Juan.
+- **Juan en Éfeso.** `juan-apostol/lived_in/efeso` de 98 recibe `3-juan-1` y `si-3-juan` y va en el primer tramo de 3 Juan 1, como en 1 y 2 Juan. `scripts/avisos-presupuesto.txt` baja `no_reference` a 26, el mismo cambio que trae 2 Juan. Si el dueño no acepta citar las cartas, se quita el capítulo de las tres.
+- **Gayo, Demetrio y Diótrefes** llevan ya su clave: `gayo-de-3-juan` `1200001592#4`, `demetrio-de-3-juan` `1200001152#2` y `diotrefes` `1200001185`. Perspicacia «Juan, Cartas de» y «Toda Escritura», libro 64, no saben quién era Gayo ni lo identifican con otro: sigue `distinct_from` con los tres Gayo de Hechos y de Pablo, porque ninguna fuente ve posible que sean el mismo. Las cuatro `disambiguation` dicen ahora lo mismo desde los dos lados: la de `gayo-de-3-juan` que no se sabe quién era, y las de `gayo-de-corinto`, `gayo-de-derbe` y `gayo-de-macedonia` que nada muestra que sea el de 3 Juan, con `it-juan-cartas` y `si-3-juan` en sus fuentes.
+- **Una recomendación no es relación.** Juan avala a Demetrio (3Jn 12) como Pablo a Febe (Ro 16:1): queda en la nota del tramo, sin relación.
+
+## Para el vocabulario (desde 3 Juan)
+
+- **Diótrefes y Juan (3Jn 9, 10).** Diótrefes no recibía con respeto nada de Juan y hablaba mal de él; Perspicacia «Diótrefes» lo llama irrespetuoso con la autoridad apostólica y rebelde. `enemy` dice más que las fuentes y `outside` no tiene el texto, así que la relación no se escribió y 3 Juan 1 sigue `pending`. Está lista para entrar cuando `outside` reciba el texto en un cambio revisado: en `data/people/diotrefes.yaml`, `type: tie`, `person: juan-apostol`, `caption` «no respetaba su autoridad y hablaba mal de él», `inverse_caption` «lo censuró por no respetar su autoridad», fecha c. 98 (`anchored`, como la carta), `inferred: false`, `sources` `3-juan-1`, `it-diotrefes` y `si-3-juan`, y `reason` con 3Jn 9, 10. El tramo 9-10 la cita como `relation:diotrefes/tie/juan-apostol` y el capítulo pasa a `complete`.
+- **El cargo de anciano.** Juan se llama «el anciano» en 2Jn 1 y 3Jn 1, y `offices` no tiene `elder`. Si se añade, `juan-apostol` lleva `holds_office` con ese cargo, citando `2-juan-1` y `3-juan-1`.
+

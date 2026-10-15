@@ -1,0 +1,43 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: enoc-anuncia-el-juicio-de-jehova
+title: Enoc anuncia que Jehová vendrá a juzgar a los irreverentes
+date:
+  from: -3403
+  to: -3038
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 3404 y 3039 a.e.c. (tiempo narrativo: en vida de Enoc, antes de que Dios se lo llevara)'
+narrative_order:
+  series: genesis
+  order: 5020
+places: []
+people:
+- enoc-hijo-de-jared
+present: []
+type: speech
+roles:
+  enoc-hijo-de-jared: spoke
+passages:
+- Jud 14, 15
+summary: Enoc anuncia que Jehová llegará con miríadas de santos a juzgar a todos y a probar la culpa de los irreverentes por
+  sus hechos y por las palabras duras que dijeron contra él.
+reason: 'Jud 14, 15; solo lo cuenta Judas. Perspicacia «Enoc», núm. 2: como profeta anunció ese juicio, quizá la razón de
+  que lo persiguieran. El estudio 3 fecha su vida de 3404 a 3039 a.e.c.; el texto no dice dónde.'
+sources:
+- judas-1
+- it-enoc
+- it-judas-carta
+- si-3
+links:
+- title: Judas 1 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/judas/1/
+  type: bible
+- title: 'Perspicacia: «Enoc»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Enoc/
+  type: perspicacia
+search: profecía de Enoc
+note: 'Orden 5020 en genesis, nuestro: antes de que Dios se lo llevara (dios-toma-a-enoc, 5021).'
+checked_on: '2026-10-14'
+status: verified

@@ -1,0 +1,50 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: pedro-escribe-2-pedro
+title: Pedro escribe su segunda carta
+date:
+  from: 64
+  to: 64
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 64 e.c.
+narrative_order:
+  series: hechos
+  order: 2854
+places:
+- babilonia
+people:
+- pedro
+present: []
+type: writing
+roles:
+  pedro: wrote
+passages:
+- 2Pe 1:1, 2
+- 2Pe 1:13-15
+- 2Pe 3:1
+summary: 'Sabiendo que morirá pronto, Pedro vuelve a escribir a los cristianos: que afiancen su llamada, se fíen de la palabra
+  profética, se guarden de los falsos maestros y no olviden que llega el día de Jehová.'
+reason: 'Tabla y estudio 3: c. 64, poco después de la primera. «Pedro» la da escrita en Babilonia; la Tabla («Babilonia (?)»),
+  «Pedro, Cartas de» y «Toda Escritura» lo dudan, así que present queda vacío. Al parecer, sin Silvano.'
+sources:
+- 2-pedro-1
+- 2-pedro-3
+- tnm-tabla
+- si-3
+- si-2-pedro
+- it-pedro-cartas
+- it-pedro
+links:
+- title: 2 Pedro 1 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-pedro/1/
+  type: bible
+- title: 'Perspicacia: «Pedro, Cartas de»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Pedro-Cartas-de/
+  type: perspicacia
+search: segunda carta de Pedro
+note: 'Orden 2854 en hechos, compartido con la primera carta, como Efesios y Epafras comparten el 2831: el estudio 3 la pone
+  en 64, antes del segundo encierro de Pablo (2855, c. 65); el 2856 la dejaría detrás.'
+checked_on: '2026-10-14'
+status: verified

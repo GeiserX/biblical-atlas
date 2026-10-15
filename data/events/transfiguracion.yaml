@@ -20,6 +20,7 @@ passages:
 - Mt 17:1-13
 - Mr 9:2-13
 - Lu 9:28-36
+- 2Pe 1:16-18
 summary: Pedro, Santiago y Juan ven a Jesús transfigurado en una montaña alta junto a Moisés y Elías, y oyen a Dios
   decir desde una nube que es su Hijo amado.
 reason: La tabla A7-E da cuándo y dónde. La tabla dice «probablemente monte Hermón»; la nota de Mt 17:1 y Perspicacia
@@ -31,9 +32,12 @@ sources:
 - lucas-9
 - jy-cap-60
 - it-hermon
+- 2-pedro-1
+- it-transfiguracion
+- it-pedro-cartas
 narrative_order:
   series: a7
   order: 58
 search: La transfiguración
-checked_on: '2026-09-28'
+checked_on: '2026-10-14'
 status: verified

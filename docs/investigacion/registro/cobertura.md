@@ -77,14 +77,14 @@ Qué versículos de la TNM se han leído y apuntado en `data/coverage/<libro>.ya
 | [Filemón](https://github.com/GeiserX/biblical-atlas/blob/main/data/coverage/filemon.yaml) | 0 de 1 | 25 de 25 | 100 % |
 | [Hebreos](https://github.com/GeiserX/biblical-atlas/blob/main/data/coverage/hebreos.yaml) | 13 de 13 | 303 de 303 | 100 % |
 | [Santiago](https://github.com/GeiserX/biblical-atlas/blob/main/data/coverage/santiago.yaml) | 5 de 5 | 108 de 108 | 100 % |
-| 1 Pedro | 0 de 5 | 0 de 105 | 0 % |
-| 2 Pedro | 0 de 3 | 0 de 61 | 0 % |
+| [1 Pedro](https://github.com/GeiserX/biblical-atlas/blob/main/data/coverage/1-pedro.yaml) | 5 de 5 | 105 de 105 | 100 % |
+| [2 Pedro](https://github.com/GeiserX/biblical-atlas/blob/main/data/coverage/2-pedro.yaml) | 3 de 3 | 61 de 61 | 100 % |
 | [1 Juan](https://github.com/GeiserX/biblical-atlas/blob/main/data/coverage/1-juan.yaml) | 5 de 5 | 105 de 105 | 100 % |
-| 2 Juan | 0 de 1 | 0 de 13 | 0 % |
-| 3 Juan | 0 de 1 | 0 de 14 | 0 % |
-| Judas | 0 de 1 | 0 de 25 | 0 % |
+| [2 Juan](https://github.com/GeiserX/biblical-atlas/blob/main/data/coverage/2-juan.yaml) | 1 de 1 | 13 de 13 | 100 % |
+| [3 Juan](https://github.com/GeiserX/biblical-atlas/blob/main/data/coverage/3-juan.yaml) | 0 de 1 | 14 de 14 | 100 % |
+| [Judas](https://github.com/GeiserX/biblical-atlas/blob/main/data/coverage/judas.yaml) | 1 de 1 | 25 de 25 | 100 % |
 | Apocalipsis | 0 de 22 | 0 de 404 | 0 % |
-| **Total** | 1139 de 1189 | 30273 de 31062 | 97 % |
+| **Total** | 1149 de 1189 | 30491 de 31062 | 98 % |
 
 ## Capítulos empezados
 
@@ -95,3 +95,4 @@ Qué versículos de la TNM se han leído y apuntado en `data/coverage/<libro>.ya
 - Esdras 8: faltan ninguno (falta marcarlo completo)
 - Nehemías 12: faltan ninguno (falta marcarlo completo)
 - Filemón 1: faltan ninguno (falta marcarlo completo)
+- 3 Juan 1: faltan ninguno (falta marcarlo completo)
