@@ -76,6 +76,20 @@ jobs:
           path: ~/.cache/ms-playwright
           key: chromium-${{ runner.os }}-${{ env.PLAYWRIGHT_VERSION }}
 
+      # MapLibre, una vez por trabajo y con reintentos: tests/site/cdn-local.mjs lo sirve a las pruebas desde aquí. El 15 de
+      # octubre de 2026 unpkg tardó 12 s en dar maplibre-gl.css y no llegó a dar maplibre-gl-shared.mjs: diez pruebas
+      # fallaron al abrir la página sin nada roto en el sitio. Los ficheros salen de LIBS en site/sw.js, la misma lista
+      # que guarda el sitio sin conexión.
+      - name: Descargar MapLibre
+        run: |
+          base=$(grep -oE "https://unpkg\.com/maplibre-gl@[0-9.]+/dist/" site/sw.js | sort -u)
+          libs=$(grep -E "^const LIBS" site/sw.js | grep -oE "'maplibre-gl[a-z-]*\.(css|mjs)'" | tr -d "'")
+          [ $(wc -l <<<"$base") -eq 1 ] && [ $(wc -w <<<"$libs") -eq 4 ] || { echo "::error::no leo MapLibre en site/sw.js"; exit 1; }
+          for f in $libs; do
+            curl -fsSL --retry 5 --retry-all-errors --max-time 120 --create-dirs -o "$RUNNER_TEMP/cdn/${base#https://unpkg.com/}$f" "$base$f"
+          done
+          ls -la "$RUNNER_TEMP/cdn/${base#https://unpkg.com/}"
+
       # Un fichero detrás de otro (--test-concurrency=1): las pruebas abren un navegador cada una.
       # shell: bash hace que GitHub lo lance con -eo pipefail: sin pipefail, `node --test | tee` da el código de tee y
       # una prueba roja dejaría el paso en verde.
@@ -85,6 +99,7 @@ jobs:
           PLAYWRIGHT_CORE: ${{ runner.temp }}/pw/node_modules/playwright-core
           PLAYWRIGHT_MODULE_DIR: ${{ runner.temp }}/pw/node_modules
           BE_TRACES: ${{ runner.temp }}/trazas
+          BE_CDN_DIR: ${{ runner.temp }}/cdn
           # Los presupuestos de tiempo de timeline-marks se midieron en un Mac mini: 50 ms para pintar los carriles y 16 ms
           # por fotograma de arrastre. En 95 ejecuciones del 12 al 14 de octubre de 2026, los runners tardaron hasta 82,5 ms
           # en pintar y hasta 45,2 ms por fotograma, y pintar crece con las marcas de los datos. Cada uno lleva su
@@ -93,7 +108,7 @@ jobs:
           BE_TIME_SCALE_ARRASTRE: "4"
           PARTE: ${{ matrix.parte }}
         run: |
-          run() { node --test --test-concurrency=1 --import ./tests/site/failure-traces.mjs "$@"; }
+          run() { node --test --test-concurrency=1 --import ./tests/site/failure-traces.mjs --import ./tests/site/cdn-local.mjs "$@"; }
           clics='clicking a mark keeps the scale'
           vistas=(tests/site/accesibilidad.test.mjs tests/site/tema-oscuro.test.mjs)
           case "$PARTE" in
