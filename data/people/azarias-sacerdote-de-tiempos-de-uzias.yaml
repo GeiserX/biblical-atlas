@@ -5,9 +5,9 @@ names:
 - name: Azarías
 perspicacia: null
 summary: Sacerdote principal que, con otros 80 sacerdotes, entró en el templo tras el rey Uzías y le exigió salir cuando quiso
-  quemar incienso. Perspicacia ve posible que sea Azarías hijo de Johanán.
-reason: 2Cr 26:17-20; Perspicacia «Uzías», núm. 3, que lo llama sumo sacerdote, y «Azarías», núm. 14, que solo lo da como
-  posible. Sin artículo propio.
+  quemar incienso. El cuadro de Perspicacia «Sumo sacerdote» ve probable que sea Azarías hijo de Johanán.
+reason: 2Cr 26:17-20; Perspicacia «Uzías», núm. 3, que lo llama sumo sacerdote, «Azarías», núm. 14, que dice quizás, y el cuadro
+  de «Sumo sacerdote», que lo da como probable. Sin artículo propio.
 sources:
 - 2-cronicas-26
 - it-uzias
@@ -41,8 +41,8 @@ relations:
     «Uzías», núm. 3, lo llama así.
   checked_on: '2026-10-13'
   status: verified
-disambiguation: El sacerdote principal que se enfrentó al rey Uzías (2Cr 26:17-20). Perspicacia ve posible que sea el hijo
-  de Johanán y, por él, el Azarías hijo de Merayot; lo separa de los demás Azarías.
+disambiguation: El sacerdote principal que se enfrentó al rey Uzías (2Cr 26:17-20). El cuadro de Perspicacia «Sumo sacerdote»
+  ve probable que sea el hijo de Johanán, y solo posible que sea el hijo de Merayot; lo separa de los demás Azarías.
 distinct_from:
 - abednego
 - azarias-hijo-de-ahimaaz
@@ -73,6 +73,10 @@ history:
 - date: '2026-10-15'
   change: 'Deja de excluir al Azarías hijo de Merayot: el cuadro de Perspicacia «Sumo sacerdote» ve posible que el Azarías
     de Esd 7:3 sea el hijo de Johanán, a quien tiene por probable autor de la reprensión.'
+  source: it-sumo-sacerdote
+- date: '2026-10-15'
+  change: 'El resumen y la desambiguación dicen probable para el hijo de Johanán, como el cuadro de Perspicacia «Sumo
+    sacerdote», y posible para el hijo de Merayot.'
   source: it-sumo-sacerdote
 checked_on: '2026-10-15'
 status: verified
