@@ -156,8 +156,8 @@ relations:
   sources:
   - hch-14
   - it-apostol
-  reason: 'Hch 14:4, 14 lo llama apóstol junto a Pablo. Perspicacia «Apóstol»: llegó a ser apóstol de la congregación de Antioquía,
-    no uno de los doce.'
+  reason: 'Hch 14:4, 14 lo llama apóstol junto a Pablo. Perspicacia «Apóstol» lo cuenta como enviado por la congregación de
+    Antioquía, fuera de los doce.'
   checked_on: '2026-10-15'
   status: verified
 distinct_from:
