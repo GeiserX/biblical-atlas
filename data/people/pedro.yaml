@@ -81,6 +81,9 @@ sources:
 - galatas-1
 - galatas-2
 - it-simon
+- 2-pedro-1
+- si-2-pedro
+- 2-pedro-3
 - 1-pedro-1
 distinct_from:
 - simon-el-mago
@@ -94,8 +97,8 @@ distinct_from:
 not_claimed:
 - 'Que Pedro estuviera en Roma o dirigiera allí la congregación: Perspicacia dice que esa idea solo se apoya en
   tradiciones dudosas.'
-- 'El año y el lugar de su muerte: Jn 21:18, 19 anuncia cómo moriría, pero ninguna fuente que leímos da fecha ni
-  sitio.'
+- 'El año y el lugar de su muerte: Jn 21:18, 19 anuncia cómo moriría y 2Pe 1:14 la ve cercana hacia 64, pero ninguna fuente
+  que leímos da fecha ni sitio.'
 - 'Que tuviera por nombramiento autoridad sobre los demás apóstoles: Perspicacia muestra que lo enviaban y que actuó
   como testigo, no como juez.'
 relations:
@@ -306,6 +309,7 @@ relations:
   office: apostle
   inferred: false
   sources:
+  - 2-pedro-1
   - 1-pedro-1
   - it-pedro
   reason: '1Pe 1:1: abre la carta presentándose como apóstol de Jesucristo. Perspicacia «Pedro» lo trata como apóstol desde
@@ -336,6 +340,10 @@ history:
   change: La relación con su suegra decía que Perspicacia deduce de ella el matrimonio. Perspicacia «Pedro», párr. 4, lo da
     por 1Co 9:5 y cuenta aparte lo de la suegra (Mr 1:29-31).
   source: 1-corintios-9
+- date: '2026-10-14'
+  change: 'La frase sobre su muerte suma 2Pe 1:14: hacia 64 Pedro la sabía cercana, como Jesús le había dado a entender. Sigue
+    sin fecha ni lugar en las fuentes leídas.'
+  source: 2-pedro-1
 - date: '2026-10-14'
   change: 'La relación lived_in con Babilonia (c. 62-64) dice ahora por qué es residencia y no un viaje: Perspicacia «Pedro»
     habla de su estancia allí sin ruta. Suma «Pedro» y «Babilonia» a sus fuentes; las demás relaciones no cambian.'

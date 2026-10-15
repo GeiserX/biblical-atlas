@@ -107,6 +107,7 @@ Los campos, los tipos de relación y sus palabras se nombran como en el esquema 
 
 - **Pasaje ya puesto.** Jud 11 está en `muerte-de-core`.
 - **Una cita literal de las Escrituras Hebreas.** Si la carta la usa como mandato que sigue en vigor o dice algo del propio texto citado, su pasaje entra en el suceso y el suceso en `entidades`: Ro 7:7, Ro 13:9 y Ef 6:2, 3 en `diez-mandamientos` (Ef 6:2 lo llama el primer mandato con promesa). Si solo toma la frase como apoyo de un consejo, el suceso va en `menciona` sin pasaje: Gé 2:24 en 1Co 6:16 y Ef 5:31, con `creacion-de-eva`.
+- **Pasajes que aún no están en ningún suceso.** Hch 7:36 y 13:18, Heb 3:16-19 y Jud 5 van a `jehova-condena-a-israel-a-40-anos-en-el-desierto`; Ap 2:14 y Os 9:10 a `israel-adora-al-baal-de-peor`; Heb 9:4 nombra la vara de `la-vara-de-aaron-echa-brotes`. Miq 6:5 nombra `balac`, `balaam` y `sitim`.
 - **Pasajes que aún no están en ningún suceso.** Hch 7:36 y 13:18 y Jud 5 van a `jehova-condena-a-israel-a-40-anos-en-el-desierto`; Ap 2:14 y Os 9:10 a `israel-adora-al-baal-de-peor`; 2Pe 2:15, 16 a `la-burra-de-balaam-habla`. Miq 6:5 nombra `balac`, `balaam` y `sitim`.
 
 ## Para Deuteronomio, Josué y Jueces
@@ -378,13 +379,7 @@ Los campos, los tipos de relación y sus palabras se nombran como en el esquema 
 - **La primera carta y lo que va antes.** `primera-carta-de-pablo` lleva ahora el orden 1806 de la serie `hechos`, tras `crispo-cree` (Hch 18:5), y dice que probablemente es su primera carta (nota de 1Te 2:13). Antes van `pablo-intenta-volver-a-tesalonica` (1713, 1Te 2:17, 18) y `pablo-envia-a-timoteo-a-tesalonica` (1716, 1Te 3:1-5: al empezar la espera de Atenas, porque ninguna fuente lo ordena frente al Areópago, que es 1722).
 - **Filipos en 1Te 2:2.** Va en `mentions`: `filipos` lleva bloque `en` y `validate.py` no le deja citar `1-tesalonicenses-2` mientras el libro no tenga el suyo en `data/books.yaml`. Cuando lo tenga, el tramo 1-2 puede pasarla a `entities`.
 
-## Para 2 Pedro (desde 1 Pedro)
-
-- **El orden en la serie `hechos`.** `pedro-escribe-1-pedro` (Babilonia, c. 62-64) lleva el 2854: tras Tito (2851) y Troas y Mileto (2852, 2853, de 2 Timoteo), antes de `segundo-encierro-en-roma` (2855). No queda entero libre antes del 2855: el suceso de 2 Pedro (c. 64) puede compartir el 2854, porque `build.py` ordena primero por fecha, como Efesios y Epafras comparten el 2831.
-- **Pedro en Babilonia.** Es `pedro/lived_in/babilonia` (c. 62-64, deducida), no un viaje: Perspicacia «Pedro» habla de su estancia allí y no da ruta, y la `reason` de la relación lo dice. Cita `it-pedro`, `it-babilonia` y 1Pe 5:13. Marcos y Silvano no llevan `lived_in` allí: los sitúa `present` de `pedro-escribe-1-pedro`. Perspicacia «Pedro, Cartas de» solo ve posible que escribiera también la segunda allí; si 2 Pedro lo dice, añade su capítulo a esa relación con un `anadir`.
-- **Silvano es `silas`.** La nota al pie de 1Pe 5:12 lo llama también Silas, así que es una sola ficha. Que fuera el amanuense de Pedro, «Silas, Silvano» solo lo ve posible: el suceso, la carta y la ficha lo dicen así. El `inverse_caption` de `pedro/accompanies/silas` («amanuense de 1 Pedro», en `outside` del vocabulario) aún no, y está en las preguntas de 1 Pedro.
-
-## Para 2 Pedro y Judas (desde 1 Pedro)
+## Para Judas (desde 1 Pedro)
 
 - **Los ángeles de días de Noé.** `angeles-toman-esposas` lleva «1Pe 3:19, 20» y la fuente `it-tartaro` (Perspicacia «Tártaro»), que liga esos versículos con Gé 6:1-4. Su resumen dice ya que Dios los recluyó en el Tártaro, al parecer en días de Noé, así que 2Pe 2:4 y Jud 6 van al mismo suceso, sin crear otro. La fecha sigue siendo todos los días de Noé: «Nefilim» pone a sus hijos en la tierra ya en 2490 a.e.c. y la `reason` lo explica.
 
@@ -486,6 +481,11 @@ Los campos, los tipos de relación y sus palabras se nombran como en el esquema 
 - **Cargos sin palabra.** Funcionario de la corte o eunuco (Est 1:10; 2:3, 14, 21; 4:5), primer ministro o segundo después del rey (Hamán, Est 3:1; Mardoqueo, 8:2; 10:3), encargado de la casa de Hamán (8:2) y sátrapa (8:9; 9:3). Van sin `holds_office`; el vínculo con el rey es `tie` `master`. Si se añade primer ministro, Hamán lo lleva y Mardoqueo le sucede en él.
 - **Reina consorte.** Vasti y Ester llevan `holds_office` `queen` porque el texto las llama reinas; Ester además `succeeds` `vasti`. Si el dueño separa reina consorte de reina reinante (Atalía), estas dos pasan al cargo nuevo.
 - **Prima.** `ester/kin/mardoqueo` con `cousin` sigue en la ficha de Ester aunque el texto nombre antes a Mardoqueo (Est 2:7): en la suya diría «Ester es su primo». Con una palabra femenina, pasa a su dueño.
+
+## Para Judas (desde 2 Pedro)
+
+- **Los mismos sucesos que 2 Pedro.** «Pedro, Cartas de» pone 2Pe 2:4-18 y 3:3 en paralelo con Jud 5-13, 17, 18. Jud 6 va a `angeles-toman-esposas`, como 2Pe 2:4, y Jud 7 a `destruccion-de-sodoma-y-gomorra`, como 2Pe 2:6. Ninguno se crea de nuevo. El `summary` de `angeles-toman-esposas` habla de su reclusión en el Tártaro desde 1 Pedro: si Judas lo encuentra sin ella, 1 Pedro aún no está en main y el cambio se le deja a 1 Pedro.
+- **Balaam.** Jud 11 usa `balaam`, que ya lleva `holds_office` con `prophet` (2Pe 2:16), y `la-burra-de-balaam-habla`, que ya cita 2Pe 2:15, 16. Si Judas solo nombra su error por la paga, el suceso va en `mentions`.
 
 ## Para Judas y para quien integre 1 y 2 Juan (desde 3 Juan)
 

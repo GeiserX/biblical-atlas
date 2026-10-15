@@ -14,7 +14,8 @@ date:
   chronology: tnm
   text: c. 64 e.c.
 recipients:
-  text: 'Los mismos cristianos a los que escribió antes: 2Pe 3:1 la llama su segunda carta.'
+  text: 'Cristianos que comparten su fe (2Pe 1:1): los de la primera carta, porque 2Pe 3:1 la llama la segunda, y, según «Toda
+    Escritura», otros a los que Pedro había predicado.'
 context_origin:
   summary: Pedro la escribe poco después de la primera, quizá también en Babilonia, sabiendo que pronto moriría
     (2Pe 1:14).
@@ -34,6 +35,8 @@ sources:
 - it-pedro-cartas
 - 2-pedro-1
 - 2-pedro-3
+- 2-pedro-2
+- si-2-pedro
 links:
 - title: 'Perspicacia: «Pedro, Cartas de»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Pedro-Cartas-de/
@@ -41,5 +44,12 @@ links:
 - title: 2 Pedro 1 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-pedro/1/
   type: bible
-checked_on: '2026-09-28'
+history:
+- date: '2026-10-14'
+  change: 'Los destinatarios no eran solo los de la primera carta: «Toda Escritura», libro 61, párr. 3, dice que incluye también
+    a otros a los que Pedro había predicado.'
+  source: si-2-pedro
+checked_on: '2026-10-14'
 status: verified
+people:
+- pablo
