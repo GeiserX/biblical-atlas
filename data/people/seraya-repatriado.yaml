@@ -1,0 +1,64 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: seraya-repatriado
+name: Seraya
+names:
+- name: Seraya
+- name: Azarías
+perspicacia: 1200003904#8
+summary: Uno de los jefes del grupo que Zorobabel trajo del destierro en 537 a.e.c. La lista paralela de Nehemías lo llama
+  Azarías.
+reason: Perspicacia «Seraya», núm. 8, y «Azarías», núm. 22; Esd 2:2.
+sources:
+- it-seraya
+- it-azarias
+- esdras-2
+links:
+- title: 'Perspicacia: «Seraya»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Seraya/
+  type: perspicacia
+- title: 'Perspicacia: «Azarías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Azar%C3%ADas/
+  type: perspicacia
+relations:
+- type: lived_in
+  place: juda
+  inferred: false
+  sources:
+  - esdras-2
+  reason: 'Esd 2:1, 2: volvió con Zorobabel a Jerusalén y Judá, donde cada familia fue a su ciudad.'
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified
+distinct_from:
+- abednego
+- azarias-hijo-de-ahimaaz
+- azarias-hijo-de-etan
+- azarias-hijo-de-hilquias
+- azarias-hijo-de-jehalelel
+- azarias-hijo-de-jehohanan
+- azarias-hijo-de-jehu
+- azarias-hijo-de-jeroham
+- azarias-hijo-de-johanan
+- azarias-hijo-de-merayot
+- azarias-hijo-de-natan
+- azarias-hijo-de-obed
+- azarias-hijo-de-oded
+- azarias-hijo-de-sadoc
+- azarias-hijo-de-sofonias
+- azarias-padre-de-joel
+- azarias-quinto-hijo-de-jehosafat
+- azarias-sacerdote-de-tiempos-de-uzias
+- azarias-segundo-hijo-de-jehosafat
+- jaazanias-jefe-militar
+- ocozias-de-juda
+- seraya-hijo-de-asiel
+- seraya-hijo-de-azarias
+- seraya-hijo-de-azriel
+- seraya-hijo-de-nerias
+- seraya-hijo-de-quenaz
+- seraya-hijo-de-tanhumet
+- seraya-secretario-de-david
+- uzias
+disambiguation: 'Seraya núm. 8 de Perspicacia, llamado Azarías en la lista de Nehemías: uno de los jefes del regreso de 537
+  (Esd 2:2).'

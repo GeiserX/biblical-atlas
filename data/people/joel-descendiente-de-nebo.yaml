@@ -1,0 +1,32 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: joel-descendiente-de-nebo
+name: Joel
+names:
+- name: Joel
+perspicacia: 1200002481#12
+summary: Israelita de los hijos de Nebo. Estaba casado con extranjeras y, cuando Esdras corrigió esos matrimonios (468-467
+  a.e.c.), las despidió junto con sus hijos.
+reason: Perspicacia «Joel», núm. 12; Esd 10:43, 44.
+sources:
+- it-joel
+- esdras-10
+links:
+- title: 'Perspicacia: «Joel»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Joel/
+  type: perspicacia
+relations: []
+checked_on: '2026-10-13'
+status: verified
+disambiguation: El de los hijos de Nebo de Esd 10:43; no los demás Joel que registra Perspicacia.
+distinct_from:
+- joel-el-gadita
+- joel-el-rubenita
+- joel-hermano-de-natan
+- joel-hijo-de-azarias
+- joel-hijo-de-izrahias
+- joel-hijo-de-jehiel
+- joel-hijo-de-pedaya
+- joel-hijo-de-samuel
+- joel-levita-de-ezequias
+- joel-profeta
+- joel-simeonita

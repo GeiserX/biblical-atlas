@@ -1,0 +1,86 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: bislam
+name: Bislam
+names:
+- name: Bislam
+perspicacia: '1200000752'
+date:
+  from: -521
+  to: -521
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: 522 a.e.c.
+summary: Opositor a la reconstrucción del templo. Con Mitrídates, Tabeel y otros compañeros escribió al rey persa Artajerjes
+  una carta en arameo con acusaciones falsas contra los judíos.
+reason: Perspicacia «Bislam» y «Artajerjes», núm. 1; Esd 4:7. Fecha del reinado de ese Artajerjes (estudio 3).
+sources:
+- it-bislam
+- it-artajerjes
+- esdras-4
+- si-3
+links:
+- title: 'Perspicacia: «Bislam»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Bislam/
+  type: perspicacia
+relations:
+- type: accompanies
+  person: mitridates-opositor-del-templo
+  word: fellow_worker
+  date:
+    from: -521
+    to: -521
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: 522 a.e.c.
+  sources:
+  - esdras-4
+  - it-bislam
+  - si-3
+  reason: 'Esd 4:7: Bislam, Mitrídates y Tabeel escriben juntos la carta a Artajerjes.'
+  inferred: false
+  checked_on: '2026-10-13'
+  status: verified
+- type: accompanies
+  person: tabeel-opositor-del-templo
+  word: fellow_worker
+  date:
+    from: -521
+    to: -521
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: 522 a.e.c.
+  sources:
+  - esdras-4
+  - it-bislam
+  - si-3
+  reason: 'Esd 4:7: Bislam, Mitrídates y Tabeel escriben juntos la carta a Artajerjes.'
+  inferred: false
+  checked_on: '2026-10-13'
+  status: verified
+- type: lived_in
+  place: region-de-samaria
+  date:
+    from: -521
+    to: -521
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: 522 a.e.c.
+  inferred: true
+  sources:
+  - it-artajerjes
+  - esdras-4
+  - si-3
+  reason: Perspicacia «Artajerjes», núm. 1, dice que la carta de Esd 4:7 salió de la gente de las ciudades de Samaria. Año
+    del estudio 3.
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified

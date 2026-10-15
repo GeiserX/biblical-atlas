@@ -1,0 +1,29 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hacatan
+name: Hacatán
+names:
+- name: Hacatán
+perspicacia: '1200001822'
+summary: De la casa de Azgad. Su hijo Johanán dirigió a 110 hombres en el viaje de Esdras de 468 a.e.c. hacia Jerusalén
+  (Esd 8:12).
+reason: Perspicacia «Haqatán»; Esd 8:12.
+sources:
+- it-hacatan
+- esdras-8
+links:
+- title: 'Perspicacia: «Haqatán»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Haqat%C3%A1n/
+  type: perspicacia
+relations:
+- type: kin
+  person: azgad
+  word: ancestor
+  inferred: true
+  sources:
+  - esdras-8
+  - it-hacatan
+  reason: Esd 8:12 pone a su hijo entre los hijos de Azgad; Perspicacia «Haqatán» lo liga a esa familia.
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-14'
+status: verified

@@ -1,0 +1,757 @@
+# biblical-atlas: fuentes de la cobertura de esdras. Esquema en docs/investigacion/README.md.
+it-mitridates:
+  title: Mitrídates
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Mitr%C3%ADdates/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-reelaya:
+  title: Reelaya
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Reelaya/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-bilsan:
+  title: Bilsán
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Bils%C3%A1n/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-mispar:
+  title: Mispar
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Mispar/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-bigvai:
+  title: Bigvai
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Bigvai/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-paros:
+  title: Parós
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Par%C3%B3s/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-pahat-moab:
+  title: Pahat-moab
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Pahat-moab/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-zatu:
+  title: Zatú
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zat%C3%BA/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-zacai:
+  title: Zacai
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zacai/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-bebai:
+  title: Bebai
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Bebai/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-azgad:
+  title: Azgad
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Azgad/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-adoniqam:
+  title: Adoniqam
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Adoniqam/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-adin:
+  title: Adín
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ad%C3%ADn/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-ater:
+  title: Ater
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ater/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-bezai:
+  title: Bezai
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Bezai/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-harif:
+  title: Harif
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Harif/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-hasum:
+  title: Hasum
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hasum/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-guibar:
+  title: Guibar
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Guibar/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-qadmiel:
+  title: Qadmiel
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Qadmiel/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-hatita:
+  title: Hatitá
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hatit%C3%A1/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-sobai:
+  title: Sobai
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sobai/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-ziha:
+  title: Zihá
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zih%C3%A1/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-hasufa:
+  title: Hasufá
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hasuf%C3%A1/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-tabaot:
+  title: Tabaot
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Tabaot/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-queros:
+  title: Querós
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Quer%C3%B3s/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-sia-siaha:
+  title: Siá, Siahá
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Si%C3%A1-Siah%C3%A1/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-padon:
+  title: Padón
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Pad%C3%B3n/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-lebana:
+  title: Lebaná
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Leban%C3%A1/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-hagaba:
+  title: Hagabá
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hagab%C3%A1/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-hagab:
+  title: Hagab
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hagab/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-salmai:
+  title: Salmai
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Salmai/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-guidel:
+  title: Guidel
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Guidel/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-gahar:
+  title: Gahar
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Gahar/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-neqoda:
+  title: Neqodá
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Neqod%C3%A1/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-gazam:
+  title: Gazam
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Gazam/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-besai:
+  title: Besai
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Besai/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-asna:
+  title: Asná
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Asn%C3%A1/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-nefusesim-nefusim:
+  title: Nefusesim, Nefusim
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Nefusesim-Nefusim/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-baqbuq:
+  title: Baqbuq
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Baqbuq/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-haqufa:
+  title: Haqufá
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Haquf%C3%A1/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-harhur:
+  title: Harhur
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Harhur/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-bazlut-bazlit:
+  title: Bazlut, Bazlit
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Bazlut-Bazlit/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-mehida:
+  title: Mehidá
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Mehid%C3%A1/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-harsa:
+  title: Harsá
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hars%C3%A1/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-barqos:
+  title: Barqos
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Barqos/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-temah:
+  title: Témah
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/T%C3%A9mah/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-nezias:
+  title: Nezías
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Nez%C3%ADas/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-hatifa:
+  title: Hatifá
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hatif%C3%A1/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-sotai:
+  title: Sotai
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sotai/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-soferet:
+  title: Soféret
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sof%C3%A9ret/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-peruda:
+  title: Perudá
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Perud%C3%A1/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-jaala-jaalah:
+  title: Jaalá, Jaalah
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jaal%C3%A1-Jaalah/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-darqon:
+  title: Darqón
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Darq%C3%B3n/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-hatil:
+  title: Hatil
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hatil/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-pokeret-hazebaim:
+  title: Pokéret-hazebaim
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Pok%C3%A9ret-hazebaim/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-tobias:
+  title: Tobías
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Tob%C3%ADas/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-habaya:
+  title: Habaya
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Habaya/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-hadid:
+  title: Hadid
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hadid/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-magbis:
+  title: Magbís
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Magb%C3%ADs/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-senaa:
+  title: Senaá
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sena%C3%A1/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-tel-melah:
+  title: Tel-mélah
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Tel-m%C3%A9lah/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-tel-harsa:
+  title: Tel-harsá
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Tel-hars%C3%A1/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-kerub:
+  title: Kerub
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Kerub/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-adon:
+  title: Adón
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ad%C3%B3n/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-tirsata:
+  title: Tirsatá
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Tirsat%C3%A1/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-henadad:
+  title: Henadad
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Henadad/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-bislam:
+  title: Bislam
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Bislam/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-tatenai:
+  title: Tatenai
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Tatenai/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-setar-bozenai:
+  title: Setar-bozenai
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Setar-bozenai/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-adonicam:
+  title: Adoniqam
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Adoniqam/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-binui:
+  title: Binuí
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Binu%C3%AD/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-casifia:
+  title: Casifía
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Casif%C3%ADa/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-hacatan:
+  title: Haqatán
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Haqat%C3%A1n/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-joiarib:
+  title: Joiarib
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Joiarib/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-josifias:
+  title: Josifías
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Josif%C3%ADas/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-meremot:
+  title: Meremot
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Meremot/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-noadias:
+  title: Noadías
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Noad%C3%ADas/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-serebias:
+  title: Serebías
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sereb%C3%ADas/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-zabbud:
+  title: Zabbud
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zabbud/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-adna:
+  title: Adná
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Adn%C3%A1/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-atlai:
+  title: Atlai
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Atlai/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-aziza:
+  title: Azizá
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Aziz%C3%A1/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-bedeya:
+  title: Bedeya
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Bedeya/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-kelal:
+  title: Kelal
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Kelal/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-keluhi:
+  title: Kelúhi
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Kel%C3%BAhi/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-isiya:
+  title: Isiya
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Isiya/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-izias:
+  title: Izías
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Iz%C3%ADas/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-jaasu:
+  title: Jaasú
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jaas%C3%BA/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-jadai:
+  title: Jadai
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jadai/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-jahzeya:
+  title: Jahzeya
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jahzeya/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-jeremai:
+  title: Jeremai
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jeremai/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-jasub:
+  title: Jasub
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jasub/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-quelaya:
+  title: Quelaya
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Quelaya/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-quelita:
+  title: Quelitá
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Quelit%C3%A1/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-maadai:
+  title: Maadai
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Maadai/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-macnadebai:
+  title: Macnadebai
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Macnadebai/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-matatah:
+  title: Matatah
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Matatah/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-matenai:
+  title: Matenai
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Matenai/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-ramias:
+  title: Ramías
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ram%C3%ADas/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-sabetai:
+  title: Sabetai
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sabetai/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-sharai:
+  title: Sharai
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sharai/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-sasai:
+  title: Sasai
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sasai/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-seal:
+  title: Seal
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Seal/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-shimeon:
+  title: Shimeón
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Shime%C3%B3n/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-uel:
+  title: Uel
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Uel/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-vanias:
+  title: Vanías
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Van%C3%ADas/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-zabai:
+  title: Zabai
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zabai/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'
+it-zebina:
+  title: Zebiná
+  work: Perspicacia para comprender las Escrituras
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Zebin%C3%A1/
+  level: 1
+  published: null
+  checked_on: '2026-10-13'

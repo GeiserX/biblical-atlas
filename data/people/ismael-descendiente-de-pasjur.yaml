@@ -1,0 +1,46 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ismael-descendiente-de-pasjur
+name: Ismael
+names:
+- name: Ismael
+perspicacia: 1200002215#6
+summary: Sacerdote de los hijos de Pasjur. Estaba casado con extranjeras y, cuando Esdras corrigió esos matrimonios (468-467
+  a.e.c.), las despidió junto con sus hijos.
+reason: Perspicacia «Ismael», núm. 6; Esd 10:22, 44.
+sources:
+- it-ismael
+- esdras-10
+links:
+- title: 'Perspicacia: «Ismael»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ismael/
+  type: perspicacia
+relations:
+- type: kin
+  person: pasjur-familia-sacerdotal
+  word: ancestor
+  sources:
+  - esdras-10
+  - it-ismael
+  reason: Esd 10:22 lo pone entre los hijos de Pasjur; Perspicacia «Ismael», núm. 6. «Hijos» vale aquí por descendientes,
+    como dice Perspicacia «Harim», núm. 1.
+  inferred: false
+  checked_on: '2026-10-13'
+  status: verified
+- type: holds_office
+  office: priest
+  sources:
+  - esdras-10
+  - it-ismael
+  reason: 'Esd 10:18-22: va en la lista de los hijos de los sacerdotes; Perspicacia lo llama sacerdote.'
+  inferred: false
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified
+disambiguation: El sacerdote de los hijos de Pasjur de Esd 10:22; no los demás Ismael que registra Perspicacia.
+distinct_from:
+- ismael-hijo-de-abrahan
+- ismael-hijo-de-azel
+- ismael-hijo-de-jehohanan
+- ismael-hijo-de-netanias
+- ismael-padre-de-zebadias

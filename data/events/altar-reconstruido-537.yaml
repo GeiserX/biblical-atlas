@@ -34,5 +34,8 @@ links:
 - title: Esdras 3 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/esdras/3/
   type: bible
-checked_on: '2026-09-28'
+narrative_order:
+  series: esdras
+  order: 3001
+checked_on: '2026-10-13'
 status: verified

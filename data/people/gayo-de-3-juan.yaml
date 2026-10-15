@@ -3,7 +3,8 @@ id: gayo-de-3-juan
 name: Gayo, destinatario de 3 Juan
 names:
 - name: Gayo
-disambiguation: El Gayo de 3 Juan. Probablemente no es ninguno de los Gayo de Hechos y de las cartas de Pablo.
+disambiguation: 'El Gayo de 3 Juan, amigo de Juan. No se sabe quién era: nada muestra que sea uno de los Gayo de Hechos o
+  de las cartas de Pablo, escritas al menos treinta años antes.'
 date:
   from: 98
   to: 98
@@ -23,6 +24,8 @@ sources:
 - it-gayo
 - it-juan-cartas
 - 3-juan-1
+- si-3-juan
+- w08-cartas-de-juan-y-judas
 links:
 - title: 'Perspicacia: «Gayo»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Gayo/
@@ -30,5 +33,11 @@ links:
 - title: 3 Juan 1 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/3-juan/1/
   type: bible
-checked_on: '2026-09-29'
+perspicacia: 1200001592#4
+history:
+- date: '2026-10-14'
+  change: Decía que probablemente no es ninguno de los otros Gayo. Perspicacia «Juan, Cartas de» y «Toda Escritura», libro
+    64, solo dicen que no se sabe y que nada lo muestra.
+  source: si-3-juan
+checked_on: '2026-10-14'
 status: verified

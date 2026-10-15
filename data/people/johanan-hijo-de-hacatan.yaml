@@ -1,0 +1,67 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: johanan-hijo-de-hacatan
+name: Johanán
+names:
+- name: Johanán
+perspicacia: 1200002488#6
+disambiguation: El hijo de Hacatán que volvió con Esdras (Esd 8:12), núm. 6 de Perspicacia; no los otros Johanán que numera.
+distinct_from:
+- johanan-el-benjaminita
+- johanan-el-gadita
+- johanan-hijo-de-azarias
+- johanan-hijo-de-carea
+- johanan-hijo-de-elioenai
+- johanan-hijo-de-josias
+summary: Hijo de Hacatán. Guio a 110 varones de la casa de Azgad en el viaje de Esdras de 468 a.e.c.
+reason: Perspicacia «Johanán», núm. 6; Esd 8:1, 12.
+sources:
+- it-johanan
+- esdras-8
+- it-hacatan
+- it-azgad
+links:
+- title: 'Perspicacia: «Johanán»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Johan%C3%A1n/
+  type: perspicacia
+relations:
+- type: kin
+  person: hacatan
+  word: father
+  inferred: false
+  sources:
+  - esdras-8
+  - it-johanan
+  - it-hacatan
+  reason: 'Esd 8:12: Johanán hijo de Hacatán.'
+  checked_on: '2026-10-13'
+  status: verified
+- type: kin
+  person: azgad
+  word: ancestor
+  inferred: false
+  sources:
+  - esdras-8
+  - it-johanan
+  - it-azgad
+  reason: 'Esd 8:12: de los hijos de Azgad.'
+  checked_on: '2026-10-13'
+  status: verified
+- type: accompanies
+  person: esdras
+  date:
+    from: -467
+    to: -467
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 468 a.e.c.
+  inferred: false
+  sources:
+  - esdras-8
+  - it-johanan
+  reason: 'Esd 8:1, 12: subió con Esdras con 110 varones.'
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified

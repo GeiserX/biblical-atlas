@@ -1,0 +1,40 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: simei-levita-de-tiempos-de-esdras
+name: Simeí
+names:
+- name: Simeí
+perspicacia: 1200004047#17
+summary: Levita de los días de Esdras. Estaba casado con extranjeras y, cuando se corrigieron esos matrimonios (468-467 a.e.c.),
+  las despidió junto con sus hijos.
+reason: Perspicacia «Simeí», núm. 17; Esd 10:23, 44.
+sources:
+- it-simei
+- esdras-10
+links:
+- title: 'Perspicacia: «Simeí»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sime%C3%AD/
+  type: perspicacia
+relations: []
+checked_on: '2026-10-13'
+status: verified
+disambiguation: El levita de Esd 10:23, de los días de Esdras; no los demás Simeí que registra Perspicacia.
+distinct_from:
+- sama-hijo-de-jese
+- simei-descendiente-de-binui
+- simei-descendiente-de-hasum
+- simei-descendiente-de-ladan
+- simei-el-ramatita
+- simei-hermano-de-conanias
+- simei-hijo-de-ela
+- simei-hijo-de-gog
+- simei-hijo-de-guera
+- simei-hijo-de-guerson
+- simei-hijo-de-jahat
+- simei-hijo-de-jedutun
+- simei-hijo-de-libni
+- simei-hijo-de-pedaya
+- simei-hijo-de-zacur
+- simei-levita-de-ezequias
+- simei-padre-de-jaquim
+- simei-partidario-de-david
+- simei-antepasado-de-mardoqueo

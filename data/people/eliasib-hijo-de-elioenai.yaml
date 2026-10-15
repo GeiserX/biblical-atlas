@@ -24,8 +24,12 @@ relations:
   reason: '1Cr 3:24: uno de los siete hijos de Elioenái.'
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified
 disambiguation: Eliasib, hijo de Elioenái y descendiente de David; no el sacerdote que dio nombre a un turno en días de David.
 distinct_from:
 - eliasib-de-tiempos-de-david
+- eliasib-cantor
+- eliasib-descendiente-de-bani
+- eliasib-descendiente-de-zatu
+- eliasib-padre-de-jehohanan

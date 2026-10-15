@@ -1,0 +1,34 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: semarias-descendiente-de-binui
+name: Semarías
+names:
+- name: Semarías
+perspicacia: 1200004001#4
+summary: Israelita de los hijos de Binuí. Estaba casado con extranjeras y, cuando Esdras corrigió esos matrimonios (468-467
+  a.e.c.), las despidió junto con sus hijos.
+reason: Perspicacia «Semarías», núm. 4; Esd 10:41, 44.
+sources:
+- it-semarias
+- esdras-10
+links:
+- title: 'Perspicacia: «Semarías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Semar%C3%ADas/
+  type: perspicacia
+relations:
+- type: kin
+  person: binui-cabeza-de-familia
+  word: ancestor
+  sources:
+  - esdras-10
+  - it-semarias
+  reason: Esd 10:41 lo pone entre los hijos de Binuí; Perspicacia «Semarías», núm. 4.
+  inferred: false
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified
+disambiguation: El de los hijos de Binuí de Esd 10:41; no los demás Semarías que registra Perspicacia.
+distinct_from:
+- semarias-descendiente-de-harim
+- semarias-el-benjaminita
+- semarias-hijo-de-rehoboam

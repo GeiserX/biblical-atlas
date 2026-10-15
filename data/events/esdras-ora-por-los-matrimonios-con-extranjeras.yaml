@@ -1,0 +1,41 @@
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: esdras-ora-por-los-matrimonios-con-extranjeras
+title: Esdras ora por los matrimonios con extranjeras
+type: speech
+date:
+  from: -467
+  to: -467
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 468 a.e.c.
+narrative_order:
+  series: esdras
+  order: 9001
+places:
+- jerusalen
+people:
+- esdras
+present:
+- esdras
+roles:
+  esdras: spoke
+passages:
+- Esd 9:1-15
+- Esd 10:1
+summary: Los príncipes avisan a Esdras de que muchos repatriados, también sacerdotes y levitas, se casaron con mujeres de
+  los pueblos vecinos. Esdras rasga su ropa y, a la hora de la ofrenda de la tarde, confiesa la culpa del pueblo.
+reason: 'Perspicacia «Esdras», apartado sobre las esposas extranjeras: pasa después de su llegada y de los sacrificios en
+  el templo, en 468 a.e.c., el año de su viaje (estudio 3). Esd 9:1-10:1.'
+sources:
+- esdras-9
+- esdras-10
+- it-esdras
+- si-3
+links:
+- title: Esdras 9 (TNM)
+  url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/esdras/9/
+  type: bible
+checked_on: '2026-10-13'
+status: verified

@@ -1,0 +1,24 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: asahel-padre-de-jonatan
+name: Asahel
+names:
+- name: Asahel
+perspicacia: 1200000398#4
+summary: Padre del Jonatán que, con Jahzeya, se opuso a la manera de resolver los matrimonios con extranjeras en los días
+  de Esdras.
+reason: Perspicacia «Asahel», núm. 4; Esd 10:15.
+sources:
+- it-asahel
+- esdras-10
+links:
+- title: 'Perspicacia: «Asahel»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Asahel/
+  type: perspicacia
+relations: []
+checked_on: '2026-10-13'
+status: verified
+disambiguation: El padre de Jonatán (Esd 10:15); no Asahel el sobrino de David ni los demás.
+distinct_from:
+- asahel-comisionado-de-ezequias
+- asahel-hijo-de-zeruya
+- asahel-levita-de-jehosafat

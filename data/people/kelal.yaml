@@ -1,0 +1,29 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: kelal
+name: Kelal
+names:
+- name: Kelal
+perspicacia: '1200000932'
+summary: Israelita de los hijos de Pahat-Moab. Estaba casado con extranjeras y, cuando Esdras corrigió esos matrimonios (468-467
+  a.e.c.), las despidió junto con sus hijos.
+reason: Perspicacia «Kelal»; Esd 10:30, 44.
+sources:
+- it-kelal
+- esdras-10
+links:
+- title: 'Perspicacia: «Kelal»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Kelal/
+  type: perspicacia
+relations:
+- type: kin
+  person: pahat-moab
+  word: ancestor
+  sources:
+  - esdras-10
+  - it-kelal
+  reason: Esd 10:30 lo pone entre los hijos de Pahat-Moab; Perspicacia «Kelal».
+  inferred: false
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified

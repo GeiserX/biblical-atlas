@@ -176,7 +176,8 @@ relations:
   reason: 'Est 1:16-21: Memucán habló ante el rey y los príncipes, y el rey hizo lo que él propuso.'
   checked_on: '2026-10-14'
   status: verified
-disambiguation: El Asuero del libro de Ester, que Perspicacia «Asuero», núm. 3, cree Jerjes I; no el padre de Darío el medo.
+disambiguation: Jerjes I, el Asuero del libro de Ester (Perspicacia «Asuero», núm. 3); no el padre de Darío el medo ni el
+  Asuero de Esd 4:6, probablemente Cambises.
 perspicacia: 1200000142#3
 checked_on: '2026-10-14'
 status: verified
@@ -194,4 +195,5 @@ alternatives:
   note: Las obras de consulta cuentan su reinado desde la muerte de Darío y lo cierran en 465; Perspicacia expone por qué
     prefiere 475.
 distinct_from:
+- asuero-de-esdras
 - asuero-padre-de-dario-el-medo

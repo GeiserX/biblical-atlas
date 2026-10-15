@@ -1,0 +1,48 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: tatenai
+name: Tatenái
+names:
+- name: Tatenái
+perspicacia: '1200004330'
+date:
+  from: -519
+  to: -519
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 520 a.e.c.
+summary: Gobernador persa de la región al oeste del Éufrates bajo Darío I. En 520 a.e.c. fue a Jerusalén a pedir cuentas de
+  la obra del templo, escribió al rey y luego cumplió su orden de ayudar a los judíos.
+reason: 'Perspicacia «Tatenai»: gobernador de «más allá del Río» con Darío Histaspes; año 520 a.e.c. Esd 5:3-17 y 6:6-13.'
+sources:
+- it-tatenai
+- esdras-5
+- esdras-6
+links:
+- title: 'Perspicacia: «Tatenai»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Tatenai/
+  type: perspicacia
+relations:
+- type: holds_office
+  place: region-al-oeste-del-eufrates
+  office: governor
+  date:
+    from: -519
+    to: -519
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 520 a.e.c.
+  sources:
+  - esdras-5
+  - esdras-6
+  - it-tatenai
+  reason: Esd 5:3, 6 y 6:6, 13 lo llaman gobernador de la región al oeste del Éufrates; Perspicacia «Tatenai» lo pone en 520
+    a.e.c.
+  inferred: false
+  checked_on: '2026-10-14'
+  status: verified
+checked_on: '2026-10-14'
+status: verified

@@ -10,6 +10,8 @@ distinct_from:
 - selemias-hijo-de-cusi
 - selemias-hijo-de-abdeel
 - selemias-portero
+- selemias-descendiente-de-binui-1
+- selemias-descendiente-de-binui-2
 summary: Padre de Jehucal, el príncipe que Sedequías mandó a Jeremías y que luego pidió que mataran al profeta. El texto solo
   lo nombra como su padre.
 reason: Perspicacia «Selemías», núm. 3; Jer 37:3 y 38:1.
@@ -25,5 +27,5 @@ links:
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Jerem%C3%ADas/37/
   type: bible
 relations: []
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified

@@ -1,0 +1,21 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: sisara-netineo
+name: Sísara
+names:
+- name: Sísara
+perspicacia: 1200004147#2
+summary: Sus descendientes, siervos del templo o netineos, se cuentan entre los que volvieron de Babilonia en 537 a.e.c.
+reason: Perspicacia «Sísara», núm. 2; Esd 2:53.
+sources:
+- it-sisara
+- esdras-2
+links:
+- title: 'Perspicacia: «Sísara»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/S%C3%ADsara/
+  type: perspicacia
+checked_on: '2026-10-13'
+status: verified
+distinct_from:
+- sisara-de-haroset
+disambiguation: 'Sísara núm. 2 de Perspicacia: antepasado de netineos (Esd 2:53). Perspicacia no ve razón para hacerlos descendientes
+  del general de Jabín.'

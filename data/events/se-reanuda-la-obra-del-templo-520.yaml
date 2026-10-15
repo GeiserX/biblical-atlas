@@ -30,6 +30,7 @@ sources:
 - it-zorobabel
 - it-dario
 - ageo-1
+- esdras-5
 links:
 - title: 'Perspicacia: «Ageo»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ageo/
@@ -57,5 +58,8 @@ history:
 - date: '2026-09-29'
   change: La razón explica ahora por qué Zacarías no figura en el suceso; el primer mensaje del día 1 tiene su propio suceso.
   source: ageo-1
-checked_on: '2026-09-29'
+narrative_order:
+  series: esdras
+  order: 5001
+checked_on: '2026-10-13'
 status: verified

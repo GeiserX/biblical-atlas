@@ -1,0 +1,37 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: eleazar-descendiente-de-paros
+name: Eleazar
+names:
+- name: Eleazar
+perspicacia: 1200001287#6
+summary: Israelita de los hijos de Parós. Estaba casado con extranjeras y, cuando Esdras corrigió esos matrimonios (468-467
+  a.e.c.), las despidió junto con sus hijos.
+reason: Perspicacia «Eleazar», núm. 6; Esd 10:25, 44.
+sources:
+- it-eleazar
+- esdras-10
+links:
+- title: 'Perspicacia: «Eleazar»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Eleazar/
+  type: perspicacia
+relations:
+- type: kin
+  person: paros
+  word: ancestor
+  sources:
+  - esdras-10
+  - it-eleazar
+  reason: Esd 10:25 lo pone entre los hijos de Parós; Perspicacia «Eleazar», núm. 6.
+  inferred: false
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified
+disambiguation: El de los hijos de Parós de Esd 10:25; no los demás Eleazar que registra Perspicacia.
+distinct_from:
+- eleazar-hijo-de-aaron
+- eleazar-hijo-de-abinadab
+- eleazar-hijo-de-dodo
+- eleazar-hijo-de-eliud
+- eleazar-hijo-de-finehas
+- eleazar-hijo-de-mahli

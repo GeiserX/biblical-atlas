@@ -18,6 +18,7 @@ sources:
 - it-ahitub
 - 1-cronicas-6
 - 1-cronicas-9
+- esdras-7
 links:
 - title: 'Perspicacia: «Sadoc»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Sadoc/
@@ -30,8 +31,9 @@ relations:
   sources:
   - 1-cronicas-6
   - it-ahitub
+  - esdras-7
   reason: 1Cr 6:12 lo da como hijo de Ahitub; Perspicacia «Ahitub», núm. 3, deduce de 1Cr 9:11 que entre ellos estaba Merayot.
-  checked_on: '2026-10-12'
+  checked_on: '2026-10-13'
   status: verified
 - type: kin
   person: merayot-hijo-de-ahitub
@@ -53,5 +55,5 @@ relations:
     del sacerdote Azarías.
   checked_on: '2026-10-12'
   status: verified
-checked_on: '2026-10-12'
+checked_on: '2026-10-13'
 status: verified

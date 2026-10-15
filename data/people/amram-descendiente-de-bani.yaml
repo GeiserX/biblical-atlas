@@ -1,0 +1,32 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: amram-descendiente-de-bani
+name: Amram
+names:
+- name: Amram
+perspicacia: 1200000251#2
+summary: Israelita de los hijos de Baní. Estaba casado con extranjeras y, cuando Esdras corrigió esos matrimonios (468-467
+  a.e.c.), las despidió junto con sus hijos.
+reason: Perspicacia «Amram», núm. 2; Esd 10:34, 44.
+sources:
+- it-amram
+- esdras-10
+links:
+- title: 'Perspicacia: «Amram»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Amram/
+  type: perspicacia
+relations:
+- type: kin
+  person: bani-antepasado-de-doce-repatriados
+  word: ancestor
+  sources:
+  - esdras-10
+  - it-amram
+  reason: Esd 10:34 lo pone entre los hijos de Baní; Perspicacia «Amram», núm. 2.
+  inferred: false
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified
+disambiguation: El de los hijos de Baní de Esd 10:34; no los demás Amram que registra Perspicacia.
+distinct_from:
+- amram-hijo-de-cohat

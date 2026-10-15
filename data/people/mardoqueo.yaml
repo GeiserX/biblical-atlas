@@ -130,3 +130,5 @@ relations:
 perspicacia: 1200003111#2
 checked_on: '2026-10-14'
 status: verified
+distinct_from:
+- mardoqueo-repatriado

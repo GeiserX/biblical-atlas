@@ -1,0 +1,36 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jehohanan-hijo-de-eliasib
+name: Jehohanán
+names:
+- name: Jehohanán
+perspicacia: 1200002374#6
+summary: Hijo de Eliasib. Tenía en el templo un cuarto, o comedor, donde Esdras pasó el duelo sin comer ni beber por la infidelidad
+  de los repatriados.
+reason: Perspicacia «Jehohanán», núm. 6; Esd 10:6.
+sources:
+- it-jehohanan
+- esdras-10
+links:
+- title: 'Perspicacia: «Jehohanán»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jehohan%C3%A1n/
+  type: perspicacia
+relations:
+- type: kin
+  person: eliasib-padre-de-jehohanan
+  word: father
+  sources:
+  - esdras-10
+  - it-jehohanan
+  reason: Esd 10:6 lo llama Jehohanán hijo de Eliasib.
+  inferred: false
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified
+disambiguation: El dueño del cuarto del templo de Esd 10:6; no los demás Jehohanán que registra Perspicacia.
+distinct_from:
+- jehohanan-descendiente-de-bebai
+- jehohanan-general-de-jehosafat
+- jehohanan-hijo-de-meselemias
+- jehohanan-padre-de-azarias
+- jehohanan-padre-de-ismael

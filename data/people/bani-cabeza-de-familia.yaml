@@ -1,0 +1,37 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: bani-cabeza-de-familia
+name: Baní
+names:
+- name: Baní
+- name: Binuí
+perspicacia: 1200000553#4
+summary: Cabeza de una familia de la que más de 600 personas volvieron con Zorobabel. La lista de Nehemías lo llama Binuí.
+reason: Perspicacia «Baní», núm. 4; Esd 2:10.
+sources:
+- it-bani
+- esdras-2
+links:
+- title: 'Perspicacia: «Baní»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ban%C3%AD/
+  type: perspicacia
+relations:
+- type: same_as
+  person: bani-descendiente-de-perez
+  certainty: possible
+  inferred: true
+  sources:
+  - it-bani
+  - esdras-2
+  reason: Perspicacia «Baní», núm. 3, ve posible que aquel cabeza de familia sea este de Esd 2:10.
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified
+distinct_from:
+- bani-el-gadita
+- bani-hijo-de-semer
+- binui-cabeza-de-familia
+- binui-descendiente-de-pahat-moab
+- binui-levita
+disambiguation: 'Baní núm. 4 de Perspicacia, Binuí en Nehemías: cabeza de la familia de Esd 2:10. Perspicacia ve posible que
+  sea el Baní descendiente de Pérez.'

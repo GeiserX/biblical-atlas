@@ -1,0 +1,37 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: malkiya-descendiente-de-paros-2
+name: Malkiya
+names:
+- name: Malkiya
+perspicacia: 1200002866#6
+summary: Israelita de los hijos de Parós. Estaba casado con extranjeras y, cuando Esdras corrigió esos matrimonios (468-467
+  a.e.c.), las despidió junto con sus hijos. La Septuaginta lo llama Hasabías.
+reason: Perspicacia «Malkiya», núm. 6; Esd 10:25, 44.
+sources:
+- it-malkiya
+- esdras-10
+links:
+- title: 'Perspicacia: «Malkiya»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Malkiya/
+  type: perspicacia
+relations:
+- type: kin
+  person: paros
+  word: ancestor
+  sources:
+  - esdras-10
+  - it-malkiya
+  reason: Esd 10:25 lo pone entre los hijos de Parós; Perspicacia «Malkiya», núm. 6.
+  inferred: false
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified
+disambiguation: El segundo de los dos Malkiya de los hijos de Parós en Esd 10:25; no los demás Malkiya.
+distinct_from:
+- malkias-padre-de-pasjur
+- malkiya-de-tiempos-de-david
+- malkiya-descendiente-de-harim
+- malkiya-descendiente-de-paros-1
+- malkiya-hijo-de-etni
+- malkiya-hijo-del-rey

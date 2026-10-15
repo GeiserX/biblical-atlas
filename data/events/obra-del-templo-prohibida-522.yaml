@@ -11,19 +11,32 @@ date:
   text: 522 a.e.c.
 places:
 - jerusalen
+- samaria
 people:
 - zorobabel
 - josue-sumo-sacerdote
+- artajerjes-bardiya-o-gaumata
+- bislam
+- mitridates-opositor-del-templo
+- tabeel-opositor-del-templo
+- rehum-funcionario-persa
+- simsai
 passages:
-- Esd 4:4-24
-summary: Los enemigos de Judá escribieron al rey persa y lo engañaron diciendo que los judíos reconstruían la ciudad y el
-  muro. El rey, el Artajerjes de Esd 4:7, mandó detener la obra.
+- Esd 4:7-24
+summary: Bislam y sus compañeros, y después Rehúm y Simsái, escriben a Artajerjes que los judíos reconstruyen la ciudad rebelde
+  y sus murallas. El rey manda parar, y ellos detienen la obra por la fuerza.
 reason: 'Estudio 3, tabla de sucesos (522); Perspicacia «Artajerjes», núm. 1: ese Artajerjes sería Bardiya o Gaumata, que
   reinó siete meses en 522.'
 sources:
 - si-3
 - it-artajerjes
 - esdras-4
+- it-persia
+- it-rehum
+- it-simsai
+- it-bislam
+- it-tabeel
+- it-zorobabel
 links:
 - title: 'Perspicacia: «Artajerjes»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Artajerjes/
@@ -31,5 +44,19 @@ links:
 - title: Esdras 4 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/esdras/4/
   type: bible
-checked_on: '2026-09-28'
+history:
+- date: '2026-10-13'
+  change: 'El pasaje pasa de Esd 4:4-24 a 4:7-24: los versículos 4 y 5 siguen a la negativa de Zorobabel y el 6 es la acusación
+    ante Asuero, dos sucesos aparte.'
+  source: esdras-4
+- date: '2026-10-13'
+  change: El resumen nombra ahora a los que escribieron y detuvieron la obra (Esd 4:7-23).
+  source: esdras-4
+present:
+- rehum-funcionario-persa
+- simsai
+narrative_order:
+  series: esdras
+  order: 4007
+checked_on: '2026-10-13'
 status: verified

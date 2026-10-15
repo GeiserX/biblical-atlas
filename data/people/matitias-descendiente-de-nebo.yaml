@@ -1,0 +1,23 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: matitias-descendiente-de-nebo
+name: Matitías
+names:
+- name: Matitías
+perspicacia: 1200002941#4
+summary: Israelita de los hijos de Nebo. Estaba casado con extranjeras y, cuando Esdras corrigió esos matrimonios (468-467
+  a.e.c.), las despidió junto con sus hijos.
+reason: Perspicacia «Matitías», núm. 4; Esd 10:43, 44.
+sources:
+- it-matitias
+- esdras-10
+links:
+- title: 'Perspicacia: «Matitías»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Matit%C3%ADas/
+  type: perspicacia
+relations: []
+checked_on: '2026-10-13'
+status: verified
+disambiguation: El de los hijos de Nebo de Esd 10:43; no los demás Matitías que registra Perspicacia.
+distinct_from:
+- matitias-hijo-de-salum
+- matitias-musico

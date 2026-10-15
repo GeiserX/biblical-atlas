@@ -1,0 +1,35 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: baana-repatriado
+name: Baaná
+names:
+- name: Baaná
+- name: Baanah
+perspicacia: 1200000525#3
+summary: Al parecer, uno de los jefes del grupo que Zorobabel sacó del destierro en 537 a.e.c. La nota de Esd 2:2 da también
+  la grafía Baanah.
+reason: Perspicacia «Baanah», núm. 3; Esd 2:2 y su nota.
+sources:
+- it-baanah
+- esdras-2
+links:
+- title: 'Perspicacia: «Baanah»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Baanah/
+  type: perspicacia
+relations:
+- type: lived_in
+  place: juda
+  inferred: false
+  sources:
+  - esdras-2
+  reason: 'Esd 2:1, 2: volvió con Zorobabel a Jerusalén y Judá, donde cada familia fue a su ciudad.'
+  checked_on: '2026-10-13'
+  status: verified
+checked_on: '2026-10-13'
+status: verified
+distinct_from:
+- baana-el-netofatita
+- baana-hijo-de-ahilud
+- baana-hijo-de-husai
+- baana-hijo-de-rimon
+disambiguation: 'Baanah núm. 3 de Perspicacia: posible jefe del regreso de 537 (Esd 2:2), siglos posterior a los Baaná de
+  David y Salomón.'

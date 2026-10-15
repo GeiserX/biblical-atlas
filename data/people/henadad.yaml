@@ -1,0 +1,18 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: henadad
+name: Henadad
+names:
+- name: Henadad
+perspicacia: '1200001987'
+summary: Levita cuyos descendientes, con sus hijos y hermanos, al parecer ayudaron a supervisar las obras del templo de Zorobabel.
+  Otros de su casa repararon el muro con Nehemías.
+reason: Perspicacia «Henadad»; Esd 3:9.
+sources:
+- it-henadad
+- esdras-3
+links:
+- title: 'Perspicacia: «Henadad»'
+  url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Henadad/
+  type: perspicacia
+checked_on: '2026-10-13'
+status: verified

@@ -29,5 +29,7 @@ history:
   change: El same_as con ezequias pasa a la ficha del rey, cuyo id va primero, con certainty possible; aquí era deducido y
     pendiente.
   source: it-ezequias
-checked_on: '2026-09-29'
+checked_on: '2026-10-13'
 status: verified
+distinct_from:
+- ezequias-cabeza-de-familia
