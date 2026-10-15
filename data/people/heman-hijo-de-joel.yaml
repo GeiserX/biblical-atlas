@@ -17,6 +17,7 @@ sources:
 - 1-cronicas-16
 - 1-cronicas-25
 - 2-cronicas-5
+- it-hombre-de-visiones
 links:
 - title: 'Perspicacia: «Hemán»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Hem%C3%A1n/
@@ -43,6 +44,16 @@ relations:
   reason: '1Cr 25:6: los tres jefes de los cantores, Hemán entre ellos, dependían del rey; 25:5 llama a Hemán hombre de visiones
     del rey.'
   checked_on: '2026-10-12'
+  status: verified
+- type: holds_office
+  office: visionary
+  inferred: false
+  sources:
+  - 1-cronicas-25
+  - it-hombre-de-visiones
+  reason: '1Cr 25:5 lo llama hombre de visiones del rey; Perspicacia «Hombre de visiones» lo nombra el primero de quienes llevan
+    ese título.'
+  checked_on: '2026-10-15'
   status: verified
 checked_on: '2026-10-13'
 status: verified

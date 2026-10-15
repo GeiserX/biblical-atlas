@@ -25,6 +25,7 @@ reason: Perspicacia «Jonatán», núm. 7; 1Cr 27:32.
 sources:
 - it-jonatan
 - 1-cronicas-27
+- it-secretario
 links:
 - title: 'Perspicacia: «Jonatán»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Jonat%C3%A1n/
@@ -40,6 +41,15 @@ relations:
   reason: '1Cr 27:32: Jonatán, sobrino de David. Perspicacia «Jonatán», núm. 7, explica que la palabra hebrea suele ser «tío»,
     pero aquí parece valer por pariente.'
   checked_on: '2026-10-12'
+  status: verified
+- type: holds_office
+  office: secretary
+  inferred: false
+  sources:
+  - 1-cronicas-27
+  - it-secretario
+  reason: '1Cr 27:32 lo cuenta entre los servidores de David como consejero y secretario.'
+  checked_on: '2026-10-15'
   status: verified
 checked_on: '2026-10-14'
 status: verified

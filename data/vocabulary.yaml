@@ -540,6 +540,10 @@ outside:
     caption: pagado por él
     inverse_caption: le pagó
     why: Dice un soborno de un momento (Ne 6:12, 13), no un trato de señor y siervo ni una alianza; solo lo llevan Semaya hijo de Delayá con Tobías y con Sanbalat.
+  - type: tie
+    caption: le mostró amor leal
+    inverse_caption: recibió de él amor leal
+    why: Dice un favor que el texto no detalla (2Sa 10:2; 1Cr 19:2); ni la Biblia ni Perspicacia llaman a Nahás amigo ni aliado de David. Solo sale en este par.
 
 # Un cargo tiene un solo texto en español. Si lo ejercen hombres y mujeres y el español los distingue, son dos
 # cargos: king y queen, prophet y prophetess. El segundo se añade cuando una fuente llama así a alguien.
@@ -557,9 +561,11 @@ offices:
   priest: {es: sacerdote}
   prophet: {es: profeta}
   prophetess: {es: profetisa}
+  visionary: {es: hombre de visiones}
   judge: {es: juez}
   apostle: {es: apóstol}
   leader: {es: caudillo}
+  secretary: {es: secretario}
 
 certainty:
   probable: {verb: probablemente la misma persona}

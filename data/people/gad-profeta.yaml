@@ -16,6 +16,7 @@ sources:
 - 2-samuel-24
 - 1-cronicas-21
 - 1-cronicas-29
+- it-hombre-de-visiones
 links:
 - title: 'Perspicacia: «Gad»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Gad/
@@ -35,6 +36,20 @@ relations:
   - 2-cronicas-29
   reason: '1Sa 22:5 lo llama el profeta Gad; Perspicacia «Gad», núm. 3: profeta y visionario del tiempo de David.'
   checked_on: '2026-10-13'
+  status: verified
+- type: holds_office
+  office: visionary
+  inferred: false
+  sources:
+  - 2-samuel-24
+  - 1-cronicas-21
+  - 1-cronicas-29
+  - 2-cronicas-29
+  - it-gad
+  - it-hombre-de-visiones
+  reason: '2Sa 24:11 y 1Cr 21:9 lo llaman hombre de visiones de David, y 1Cr 29:29 lo distingue así de Samuel el vidente y de
+    Natán el profeta. Perspicacia «Gad», núm. 3, le da los dos títulos.'
+  checked_on: '2026-10-15'
   status: verified
 checked_on: '2026-10-13'
 status: verified
