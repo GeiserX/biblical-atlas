@@ -378,6 +378,17 @@ class PartesDeUnLugar(unittest.TestCase):
         self.assertEqual(errores_partes(dict(self.SILOAM, place="jerusalen")),
                          ["lugar: parts[0].place es el propio lugar; place enlaza la ficha de otro lugar"])
 
+    def test_una_parte_enlazada_se_llama_como_su_ficha(self):
+        # La búsqueda no da fila a una parte con place: se encuentra por los nombres de la ficha que enlaza.
+        out = []
+        o = {"id": "jerusalen", "name": "Jerusalén", "names": [{"name": "Jerusalén"}],
+             "parts": [dict(self.SILOAM, name="Siloam")]}
+        validate.validar_partes(o, "lugar", out.append, LUGARES_PARTES, {"estanque-de-siloam": {"Siloam"}})
+        self.assertEqual(out, [])
+        self.assertEqual(errores_partes(dict(self.SILOAM, name="Piscina de Siloé")),
+                         ["lugar: parts[0] 'Piscina de Siloé' enlaza estanque-de-siloam, que no se llama así; la búsqueda "
+                          "no la encontraría. Usa su name o uno de sus names, o añade ese nombre a sus names"])
+
     def test_no_repite_un_nombre_del_lugar(self):
         for nombre in ("Jerusalén", "Sion"):
             with self.subTest(nombre=nombre):

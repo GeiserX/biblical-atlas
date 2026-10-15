@@ -364,11 +364,12 @@ def validar_nombres(o, tipo, donde, err):
         err(f"{donde}: 'names' vacío")
 
 
-def validar_partes(o, donde, err, lugares):
+def validar_partes(o, donde, err, lugares, alias=None):
     """Los `parts` de un lugar: sitios con nombre dentro de él o junto a él (una puerta, una torre, un estanque), que no
     son otro nombre del lugar entero (README de la investigación, «Identificadores»). Van justo después de `names`; cada
     una lleva name y note, y si hace falta near: true (está junto al lugar, no dentro) y place (su ficha propia).
-    `lugares` es {id: name} de todos los lugares."""
+    `lugares` es {id: name} de todos los lugares y `alias`, {id: nombres de su names}: una parte con place se llama
+    como esa ficha o como uno de sus names, porque la búsqueda la encuentra por ellos y no da fila propia a la parte."""
     if "parts" not in o:
         return
     ps = o["parts"]
@@ -403,6 +404,9 @@ def validar_partes(o, donde, err, lugares):
                 err(f"{pd}.place es el propio lugar; place enlaza la ficha de otro lugar")
             elif not isinstance(destino, str) or destino not in lugares:
                 err(f"{pd}.place '{destino}' no existe en data/places/")
+            elif nombre and nombre != lugares[destino] and nombre not in (alias or {}).get(destino, ()):
+                err(f"{pd} '{nombre}' enlaza {destino}, que no se llama así; la búsqueda no la encontraría. Usa su name "
+                    f"o uno de sus names, o añade ese nombre a sus names")
         if nombre is None:
             continue
         if nombre in propios:
@@ -1902,6 +1906,7 @@ def validar(datos):
     offices = (datos["vocabulary"].get("offices") or {})
     puntos = formas.puntos_de_vertices(datos["places"])
     nombres_lugares = {o.get("id"): o.get("name") for o in datos["places"]}
+    alias_lugares = {o.get("id"): {n.get("name") for n in o.get("names") or [] if isinstance(n, dict)} for o in datos["places"]}
 
     for tipo in TYPES:
         vistos = set()
@@ -1933,7 +1938,7 @@ def validar(datos):
             textos_largos(limpio_, donde, err)
             if tipo == "places":
                 validar_lugar(limpio_, donde, err, fuentes, puntos)
-                validar_partes(limpio_, donde, err, nombres_lugares)
+                validar_partes(limpio_, donde, err, nombres_lugares, alias_lugares)
             elif "parts" in limpio_:
                 err(f"{donde}: parts solo vale en un lugar")
             if tipo in ("places", "people"):
