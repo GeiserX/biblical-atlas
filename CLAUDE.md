@@ -28,6 +28,7 @@ python3 -m http.server -d site  # y abrir http://localhost:8000
 - Una relación se escribe una sola vez, en la ficha que dice su palabra del vocabulario. Un texto que no es una palabra de allí va en `caption` y se añade a `outside` del vocabulario en un cambio revisado. Quien quita o mueve una relación añade su fila a `scripts/migration/redirects.yaml`.
 - Los subtítulos de vídeo y sus nombres de fichero nunca entran en el repositorio.
 - Sin nombres de personas reales, rutas de casa ni datos privados en nada que se publique.
+- Se publica a menudo: cuando main queda en verde tras PRs que cambian lo que ve quien usa el sitio o lo que trae `data.json`, sale una versión ese mismo día, sin acumular semanas. Es una etiqueta `vX.Y.Z` con notas en español al estilo de las anteriores: mayor si `data.json` cambia de forma que rompe a quien lo lee, menor si hay algo nuevo y de parche si solo hay arreglos.
 
 <!-- BEGIN BEADS INTEGRATION v:1 profile:minimal hash:970c3bf2 -->
 ## Beads Issue Tracker
