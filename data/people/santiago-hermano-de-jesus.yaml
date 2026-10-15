@@ -37,6 +37,7 @@ sources:
 - santiago-1
 - si-santiago
 - judas-1
+- it-anciano
 distinct_from:
 - santiago-hijo-de-zebedeo
 - santiago-hijo-de-alfeo
@@ -117,6 +118,17 @@ relations:
   - mateo-13
   reason: La nota de Mt 13:54 dice que de Nazaret era la familia cercana de Jesús; 13:56 pone allí a sus hermanas.
   checked_on: '2026-09-29'
+  status: verified
+- type: holds_office
+  office: elder
+  inferred: true
+  sources:
+  - it-santiago
+  - it-anciano
+  reason: Perspicacia «Santiago», núm. 4, dice que debió de ser superintendente de la congregación de Jerusalén (Hch 12:17),
+    y «Anciano» explica que superintendente y anciano son la misma función y lo pone junto a Pablo y Pedro supervisando a
+    otros ancianos.
+  checked_on: '2026-10-15'
   status: verified
 links:
 - title: 'Perspicacia: «Santiago»'

@@ -166,7 +166,7 @@ La configuración de los vídeos tiene sus claves en `video_config_keys` del map
 | `type` de un tramo | `narration`, `genealogy`, `law`, `poetry`, `prophecy`, `speech`, `letter`, `list`, `vision` |
 | `type` de una relación | `kin`, `disciple_of`, `accompanies`, `tie`, `succeeds`, `same_as`, `appears_to`, `lived_in`, `born_in`, `died_in`, `holds_office` |
 | `word` de una relación | las palabras de `words` del vocabulario |
-| `office` | `king`, `queen`, `coregent`, `emperor`, `governor`, `proconsul`, `ethnarch`, `tetrarch`, `sheikh`, `high_priest`, `priest`, `prophet`, `prophetess`, `visionary`, `judge`, `apostle`, `leader`, `secretary` |
+| `office` | `king`, `queen`, `coregent`, `emperor`, `governor`, `proconsul`, `ethnarch`, `tetrarch`, `sheikh`, `high_priest`, `priest`, `prophet`, `prophetess`, `visionary`, `judge`, `apostle`, `elder`, `leader`, `secretary` |
 | `certainty` | `probable`, `possible` |
 | `type` de un suceso | `birth`, `death`, `writing`, `speech` |
 | papel en un suceso | `born`, `died`, `wrote`, `spoke`, `raised` |

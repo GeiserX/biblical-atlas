@@ -27,6 +27,29 @@ links:
 - title: 3 Juan 1 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/3-juan/1/
   type: bible
+relations:
+- type: tie
+  person: juan-apostol
+  caption: no respetaba su autoridad y hablaba mal de él
+  inverse_caption: lo censuró por no respetar su autoridad
+  date:
+    from: 98
+    to: 98
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 98 e.c.
+  inferred: false
+  sources:
+  - 3-juan-1
+  - it-diotrefes
+  - si-3-juan
+  reason: '3Jn 9, 10: no aceptaba con respeto nada de Juan y hablaba mal de él. Perspicacia «Diótrefes» lo llama
+    irrespetuoso con la autoridad apostólica y rebelde; «Toda Escritura», libro 64, párr. 4, añade que tampoco respetaba a
+    otros responsables.'
+  checked_on: '2026-10-15'
+  status: verified
 perspicacia: '1200001185'
 checked_on: '2026-10-14'
 status: verified

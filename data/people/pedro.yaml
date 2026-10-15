@@ -85,6 +85,7 @@ sources:
 - si-2-pedro
 - 2-pedro-3
 - 1-pedro-1
+- it-anciano
 distinct_from:
 - simon-el-mago
 - simon-el-curtidor
@@ -315,6 +316,16 @@ relations:
   reason: '1Pe 1:1: abre la carta presentándose como apóstol de Jesucristo. Perspicacia «Pedro» lo trata como apóstol desde
     su primer párrafo.'
   checked_on: '2026-10-14'
+  status: verified
+- type: holds_office
+  office: elder
+  inferred: false
+  sources:
+  - 1-pedro-5
+  - it-anciano
+  reason: '1Pe 5:1: Pedro se dirige a los ancianos diciendo que él también lo es. Perspicacia «Anciano», en el apartado de la
+    congregación cristiana, lo nombra con Pablo como anciano con autoridad de apóstol que supervisaba a otros ancianos.'
+  checked_on: '2026-10-15'
   status: verified
 links:
 - title: 'Perspicacia: «Pedro»'

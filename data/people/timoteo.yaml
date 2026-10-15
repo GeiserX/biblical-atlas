@@ -39,6 +39,7 @@ sources:
 - 2-timoteo-2
 - 2-timoteo-3
 - 2-timoteo-4
+- it-anciano
 links:
 - title: 'Perspicacia: «Timoteo»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Timoteo/
@@ -197,4 +198,14 @@ relations:
   reason: '1Ti 1:3: Pablo le pidió quedarse en Éfeso; Perspicacia «Timoteo», párr. 6, lo pone allí hacia 61-64. Las notas de 2Ti 2:14, 23 y
     4:19, 22 lo siguen viendo en Éfeso al escribirse la última carta, hacia el 65.'
   checked_on: '2026-10-13'
+  status: verified
+- type: holds_office
+  office: elder
+  inferred: true
+  sources:
+  - 1-timoteo-4
+  - it-anciano
+  reason: 'Perspicacia «Anciano», en el apartado de la congregación cristiana, dice que, aunque era bastante joven, participó en
+    nombrar ancianos y se le reconocía como uno de ellos (1Ti 4:12).'
+  checked_on: '2026-10-15'
   status: verified
