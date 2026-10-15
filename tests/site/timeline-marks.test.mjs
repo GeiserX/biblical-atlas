@@ -1,6 +1,7 @@
 // The timeline strip in a real headless browser: every mark in view shows its whole name, never covered and never cut;
-// clicking a mark selects it and puts the cursor at the pointed moment without moving the scale, the view or the lanes,
-// and clicking the selected mark again releases it;
+// clicking a mark selects it and puts the cursor at the pointed moment without moving the scale, the view or the lanes
+// (a mark with no date in view brings the view to it and leaves the cursor), and clicking the selected mark again
+// releases it;
 // no label says «cálculo»; dragging moves time, the ruler moves the cursor, the wheel zooms at the pointer and the lanes
 // scroll with the wheel over their names or a vertical drag; person lanes
 // follow the same rule; selecting a period does not reframe the view; the map follows the cursor.
@@ -223,7 +224,7 @@ for (const screen of [DESKTOP, PHONE]) {
     assert.deepEqual(all.slice(0, 40), []);
   });
 
-  test(`${screen.name}: clicking a mark keeps the scale, the view and the lanes, and puts the cursor at the pointed moment`, async () => {
+  test(`${screen.name}: clicking a mark keeps the scale, the view and the lanes, and puts the cursor at the pointed moment; with no date in view it brings the view`, async () => {
     const p = await open(screen);
     const bad = [];
     let clicks = 0;
@@ -232,12 +233,15 @@ for (const screen of [DESKTOP, PHONE]) {
       const vis = (await hookView(p)).visible.filter((x) => !x.secular && x.x + x.w > 0 && x.x < 5000).sort((a, b) => a.top - b.top || a.x - b.x);
       const sample = vis.length <= 20 ? vis : Array.from({ length: 20 }, (_, i) => vis[Math.floor((i * vis.length) / 20)]);
       // A mark whose dates all lie outside the view can still show its name at the edge, its dot just off screen. A click
-      // on it selects it and leaves the cursor where it was (FIL.clickTarget: no date of it in view). The sample reaches
-      // such a mark only when the font packs the rows one way (Linux, not a Mac), so these are always clicked, on the name.
+      // on it selects it, brings the view to it as the «← nombre» button does and leaves the cursor where it was
+      // (FIL.clickTarget: no date of it in view). The sample reaches such a mark only when the font packs the rows one way
+      // (Linux, not a Mac), so these are always clicked, on the name, each from the view of this date and scale.
       const { vista } = await state(p);
-      const outside = vis.filter((it) => !sample.includes(it) && Math.max(it.t0, vista[0]) > Math.min(hiOf(it), vista[1]));
-      const pick = [...sample.map((it, i) => [it, i % 2 === 1]), ...outside.slice(0, 3).map((it) => [it, true])];
-      for (const [it, onLabel] of pick) {
+      const isOut = (it, v) => Math.max(it.t0, v[0]) > Math.min(hiOf(it), v[1]);
+      const outside = vis.filter((it) => isOut(it, vista));
+      const pick = [...sample.filter((it) => !isOut(it, vista)).map((it, i) => [it, i % 2 === 1, false]), ...outside.slice(0, 3).map((it) => [it, true, true])];
+      for (const [it, onLabel, out] of pick) {
+        if (out) await goTo(p, t, s);
         // Bring its row into view first (the test scrolls; the click must not).
         const target = await p.evaluate(([id, top, onLabel]) => {
           const cuerpo = document.querySelector('#linea-cuerpo');
@@ -263,9 +267,19 @@ for (const screen of [DESKTOP, PHONE]) {
         const rect = await p.evaluate((id) => { const b = document.querySelector(`#linea-filas .m[data-id="${CSS.escape(id)}"]`); if (!b) return null; const r = b.getBoundingClientRect(); return [r.left, r.top, r.width]; }, it.id);
         clicks++;
         const span = before.vista[1] - before.vista[0];
-        if (after.vista[0] !== before.vista[0] || after.vista[1] !== before.vista[1]) bad.push(`${dname} ${s}: «${it.name}» moved the view ${before.vista.map((x) => x.toFixed(3))} → ${after.vista.map((x) => x.toFixed(3))}`);
+        // The view: where it was; for a mark with no date in view, moved just enough to show it whole, or its start if it
+        // does not fit, a twentieth of the span from the edge, at the same scale (irASel in site/js/linea.js).
+        let want0 = before.vista[0];
+        if (out) {
+          const m = span * 0.05, [tMin, tMax] = await p.evaluate(() => [window.BE.T_MIN, window.BE.T_MAX]);
+          want0 = it.t0 >= before.vista[1] && it.t1 - it.t0 <= span - 2 * m ? it.t1 + m - span : it.t0 - m;
+          want0 = Math.max(tMin, Math.min(tMax - span, want0));
+        }
+        if (Math.abs(after.vista[0] - want0) > 1e-9 || Math.abs(after.vista[1] - after.vista[0] - span) > 1e-9) bad.push(`${dname} ${s}: «${it.name}» moved the view ${before.vista.map((x) => x.toFixed(3))} → ${after.vista.map((x) => x.toFixed(3))}, expected it to start at ${want0.toFixed(3)}`);
+        if (out && isOut(it, after.vista)) bad.push(`${dname} ${s}: «${it.name}» still has no date in view after the click`);
         if (Math.abs(after.scroll - before.scroll) > 0.5) bad.push(`${dname} ${s}: «${it.name}» scrolled the lanes ${before.scroll} → ${after.scroll}`);
-        if (!rect || rect.some((v, k) => Math.abs(v - target.rect[k]) > 1)) bad.push(`${dname} ${s}: «${it.name}» moved on screen ${JSON.stringify(target.rect)} → ${JSON.stringify(rect)}`);
+        if (!out && (!rect || rect.some((v, k) => Math.abs(v - target.rect[k]) > 1))) bad.push(`${dname} ${s}: «${it.name}» moved on screen ${JSON.stringify(target.rect)} → ${JSON.stringify(rect)}`);
+        if (out && !rect) bad.push(`${dname} ${s}: «${it.name}» is not drawn after the view came to it`);
         if (after.sel !== it.sel) bad.push(`${dname} ${s}: «${it.name}» selected ${after.sel || 'nothing'}`);
         // The cursor: the pointed time, clamped into the visible part of [start, end), never at the end; with no part in
         // view, where it was. A pointer lands on whole pixels, so the check allows one and a half pixels of time.
