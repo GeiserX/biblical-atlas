@@ -3,7 +3,8 @@ id: judas
 book: Judas
 writer: judas-hermano-de-jesus
 reference: Jud 1, 3, 4, 17, 18
-written_in: []
+written_in:
+- israel
 date:
   from: 65
   to: 65
@@ -25,13 +26,15 @@ context_destination:
   sources:
   - it-judas-carta
 reason: La Tabla da «Israel (?)» y c. 65; Perspicacia «Judas, Carta de» (párr. 1, 2 y 4).
-note: 'Sin lugar en el mapa: la Tabla dice «Israel (?)» y Perspicacia «Palestina», y no tenemos una ficha para esa
-  región.'
+note: 'El lugar no es seguro: la Tabla pone «Israel (?)», «Toda Escritura», «Palestina (?)», y Perspicacia, probablemente
+  Palestina. La Atalaya de 2008 dice Palestina sin duda, pero la Tabla, más reciente, mantiene la duda.'
 sources:
 - tnm-tabla
 - si-3
 - it-judas-carta
 - judas-1
+- si-judas
+- w08-cartas-de-juan-y-judas
 links:
 - title: 'Perspicacia: «Judas, Carta de»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Judas-Carta-de/
@@ -39,5 +42,16 @@ links:
 - title: Judas 1 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/judas/1/
   type: bible
-checked_on: '2026-09-28'
+history:
+- date: '2026-10-14'
+  change: 'El lugar pasa de ninguno a israel, con duda: la nota decía que no había ficha para esa región y ya existe. La Tabla
+    da «Israel (?)» y «Toda Escritura», libro 65, «Palestina (?)».'
+  source: si-judas
+- date: '2026-10-14'
+  change: 'La nota ya no dice que falte una ficha para la región: existe israel, y la carta la lleva con la duda de la Tabla,
+    más reciente que La Atalaya de 2008.'
+  source: si-judas
+checked_on: '2026-10-14'
 status: verified
+people:
+- santiago-hermano-de-jesus

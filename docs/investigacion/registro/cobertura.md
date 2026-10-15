@@ -82,9 +82,9 @@ Qué versículos de la TNM se han leído y apuntado en `data/coverage/<libro>.ya
 | [1 Juan](https://github.com/GeiserX/biblical-atlas/blob/main/data/coverage/1-juan.yaml) | 5 de 5 | 105 de 105 | 100 % |
 | [2 Juan](https://github.com/GeiserX/biblical-atlas/blob/main/data/coverage/2-juan.yaml) | 1 de 1 | 13 de 13 | 100 % |
 | [3 Juan](https://github.com/GeiserX/biblical-atlas/blob/main/data/coverage/3-juan.yaml) | 0 de 1 | 14 de 14 | 100 % |
-| Judas | 0 de 1 | 0 de 25 | 0 % |
+| [Judas](https://github.com/GeiserX/biblical-atlas/blob/main/data/coverage/judas.yaml) | 1 de 1 | 25 de 25 | 100 % |
 | Apocalipsis | 0 de 22 | 0 de 404 | 0 % |
-| **Total** | 1146 de 1189 | 30227 de 31062 | 97 % |
+| **Total** | 1147 de 1189 | 30252 de 31062 | 97 % |
 
 ## Capítulos empezados
 

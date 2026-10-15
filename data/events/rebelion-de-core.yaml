@@ -24,6 +24,7 @@ present: []
 passages:
 - Nú 16:1-17
 - Sl 106:16
+- Jud 11
 summary: El levita Coré, con los rubenitas Datán, Abiram y On y 250 jefes, acusa a Moisés y a Aarón de ponerse por encima
   del pueblo. Moisés los cita con incienso ante Jehová; Datán y Abiram se niegan a ir.
 reason: 'Nú 16:1-17. Perspicacia «Abiram», núm. 1: Coré quería el sacerdocio; los rubenitas, quitar el mando a Moisés. Fecha:
@@ -38,6 +39,7 @@ sources:
 - si-3
 - tnm-tabla
 - salmos-106
+- judas-1
 links:
 - title: Números 16 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/N%C3%BAmeros/16/
@@ -48,5 +50,5 @@ links:
 - title: 'Perspicacia: «Abiram»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Abiram/
   type: perspicacia
-checked_on: '2026-09-29'
+checked_on: '2026-10-14'
 status: verified
