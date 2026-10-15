@@ -1218,6 +1218,8 @@ def escribir_sqlite(salida, ruta):
         coord_fuente TEXT, coord_url TEXT, resumen TEXT, razon TEXT, consultado TEXT, estado TEXT, forma TEXT);
     CREATE TABLE lugar_nombres (lugar_id TEXT REFERENCES lugares(id), orden INTEGER, nombre TEXT,
         desde INTEGER, hasta INTEGER, nota TEXT, actual INTEGER);
+    CREATE TABLE lugar_partes (lugar_id TEXT REFERENCES lugares(id), orden INTEGER, nombre TEXT, nota TEXT,
+        lugar TEXT REFERENCES lugares(id), cerca INTEGER);
     CREATE TABLE candidatos (lugar_id TEXT REFERENCES lugares(id), orden INTEGER, nombre TEXT, geometria TEXT,
         estado TEXT, razon TEXT, checked_on TEXT, forma TEXT);
     CREATE TABLE personas (id TEXT PRIMARY KEY, nombre TEXT, nombres TEXT, {fecha}, desambiguacion TEXT,
@@ -1276,6 +1278,8 @@ def escribir_sqlite(salida, ruta):
         for i, n in enumerate(o.get("nombres") or []):
             ins("lugar_nombres", (o["id"], i, n["nombre"], n.get("desde"), n.get("hasta"), n.get("nota"),
                                   1 if n.get("actual") else None))
+        for i, p in enumerate(o.get("partes") or []):
+            ins("lugar_partes", (o["id"], i, p["nombre"], p.get("nota"), p.get("lugar"), 1 if p.get("cerca") else None))
         for i, c in enumerate(o.get("candidatos") or []):
             ins("candidatos", (o["id"], i, c.get("nombre"), json.dumps(c.get("geometria"), ensure_ascii=False),
                                c.get("estado"), c.get("razon"), c.get("checked_on"), forma(c)))

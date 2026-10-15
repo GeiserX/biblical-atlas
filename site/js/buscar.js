@@ -56,7 +56,8 @@ function puntuadorEstricto(nq) {
     return mejor;
   };
 }
-/** Resultados de todos los tipos registrados, sin repetir una misma selección. */
+/** Resultados de todos los tipos registrados, sin repetir una misma selección. Una parte de un lugar («Puerta de las
+    Ovejas», `parte`) abre la ficha del lugar y es una fila aparte de él y de sus otras partes. */
 function resultadosTipos(q, fabrica = puntuador) {
   const nq = norm(q).trim();
   if (!nq) return [];
@@ -65,7 +66,7 @@ function resultadosTipos(q, fabrica = puntuador) {
   for (const def of BE.tipos.values()) {
     if (!def.buscar) continue;
     for (const r of def.buscar(q, nq, puntuar) || []) {
-      const k = BE.selTexto(r.sel);
+      const k = r.parte ? `${BE.selTexto(r.sel)}|${r.parte}` : BE.selTexto(r.sel);
       if (!porSel.has(k) || porSel.get(k).puntos < r.puntos) porSel.set(k, r);
     }
   }
@@ -93,9 +94,10 @@ function anioPregunta(s) {
   const conEra = /\d\s*[a-z]/.test(norm(s).trim());
   return !conEra && !enRango(y) && enRango(1 - y) ? 1 - y : y;
 }
-/** Una entidad por su nombre, exacto o por el principio hasta el final de una palabra: persona, lugar, periodo o suceso. */
+/** Una entidad por su nombre, exacto o por el principio hasta el final de una palabra: persona, lugar, periodo o suceso.
+    Una parte de un lugar no es una entidad: «Puerta de las Ovejas en 33» no abre Jerusalén. */
 function entidad(texto, tipos = ['persona', 'lugar', 'periodo', 'evento', 'libro']) {
-  const rs = resultadosTipos(texto, puntuadorEstricto).filter((r) => tipos.includes(r.sel.tipo) && r.puntos >= 90);
+  const rs = resultadosTipos(texto, puntuadorEstricto).filter((r) => !r.parte && tipos.includes(r.sel.tipo) && r.puntos >= 90);
   rs.sort((a, b) => b.puntos - a.puntos || tipos.indexOf(a.sel.tipo) - tipos.indexOf(b.sel.tipo));
   return rs[0] || null;
 }

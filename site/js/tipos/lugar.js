@@ -259,6 +259,35 @@ function candidatosHtml(l) {
   </div></section>`;
 }
 
+// ---- Lo que hay dentro del lugar o junto a él (`partes`): puertas, torres, estanques... ----
+// No son otros nombres del lugar: la ficha los enseña aparte y la búsqueda da cada uno como su propia fila.
+const TITULO_PARTES = { ciudad: 'Dentro de la ciudad', monte: 'En el monte', valle: 'En el valle' };
+/** «Nombre: nota», como los nombres de la ficha (BE.nombresHtml). Una parte con ficha propia es una fila que la abre. */
+function filasPartes(ps) {
+  let html = '', abierta = '';
+  for (const p of ps) {
+    const nota = p.nota ? String(p.nota).replace(/\.\s*$/, '') : '';
+    const texto = nota && nota.charAt(0).toLowerCase() + nota.slice(1);
+    const enlace = !!(p.lugar && BE.L[p.lugar]);
+    const lista = enlace ? 'div' : 'ul';
+    if (abierta !== lista) html += `${abierta ? `</${abierta}>` : ''}${enlace ? '<div class="be-list">' : '<ul class="nombres">'}`;
+    abierta = lista;
+    html += enlace ? BE.botonSel(`lugar:${p.lugar}`, p.nombre, esc(texto))
+      : `<li><b>${esc(p.nombre)}</b>${texto ? `<span class="be-muted">: ${esc(texto)}</span>` : ''}</li>`;
+  }
+  return abierta ? `${html}</${abierta}>` : '';
+}
+function partesHtml(l) {
+  const ps = l?.partes || [];
+  if (!ps.length) return '';
+  const dentro = ps.filter((p) => !p.cerca), cerca = ps.filter((p) => p.cerca);
+  return `<section class="be-card ficha-sec"><div class="be-card__pad">
+    <h3 class="be-card__eyebrow">${BE.t(TITULO_PARTES[l.tipo] || 'En este lugar')} <b class="cuenta">${ps.length}</b></h3>
+    ${filasPartes(dentro)}
+    ${cerca.length ? `<h4 class="be-caps sub-bloque">${BE.t('Alrededor')}</h4>${filasPartes(cerca)}` : ''}
+  </div></section>`;
+}
+
 // ---- La congregación (F-11) ----
 function congregacionHtml(id) {
   const l = BE.L[id];
@@ -309,6 +338,7 @@ function fichaLugar(id) {
       ${l.resumen ? `<p class="be-card__body">${esc(l.resumen)}</p>` : ''}
       ${BE.enlacesHtml(l.enlaces)}
     </div><div class="be-card__foot">${BE.estadoHtml(l.estado)}<span class="be-spacer"></span>${l.coord_url ? `<a class="be-wol" href="${esc(l.coord_url)}" ${EXTERNO} title="${esc(BE.t('Solo tomamos el punto, nunca su identificación'))}">${BE.t('Coordenada:')} ${/^openbible/.test(l.coord_fuente || '') ? 'OpenBible.info (CC BY 4.0)' : esc(String(l.coord_fuente || 'fuente').split(':')[0])}</a>` : ''}</div></section>
+    ${partesHtml(l)}
     ${formaHtml(l)}
     ${candidatosHtml(l)}
     <div id="lugar-ahora" data-clave="${esc(claveAhora(id, E.t))}">${ahoraHtml(id, E.t)}</div>
@@ -380,6 +410,13 @@ BE.tipo('lugar', {
   buscar(q, nq, puntuar) {
     const out = [];
     for (const l of Object.values(BE.L)) {
+      // Una parte sin ficha propia es su propia fila, que abre la ficha del lugar; el lugar no se encuentra por ella.
+      // La que tiene ficha (`lugar`) no añade fila: esa ficha ya sale con su nombre.
+      for (const parte of l.partes || []) {
+        if (parte.lugar) continue;
+        const pp = puntuar([parte.nombre, ...(parte._es || [])]);
+        if (pp) out.push({ grupo: 'Lugares', sel: { tipo: 'lugar', id: l.id }, parte: parte.nombre, titulo: parte.nombre, meta: BE.t(parte.cerca ? 'junto a {lugar}' : 'en {lugar}', { lugar: l.nombre }), puntos: pp });
+      }
       const p = puntuar([l.nombre, ...(l.nombres || []).map((n) => n.nombre), ...(BE.candidatosDe(l) || []).map((c) => c.nombre), ...(l._es || [])]);
       if (!p) continue;
       const hoy = BE.nombreHoy(l);
@@ -420,5 +457,5 @@ document.addEventListener('click', (e) => {
   BE.mapa.enfocarCandidato(lugar, +i, true);
 });
 
-Object.assign(BE, { hechosDe, lugarFueraDeVista });
+Object.assign(BE, { hechosDe, lugarFueraDeVista, partesHtml });
 })();

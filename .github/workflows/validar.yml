@@ -38,6 +38,8 @@ jobs:
           tests/site/relato-cadenas.test.mjs tests/site/enlaces-pasaje-reglas.test.mjs
       # Las reglas de «Atrás» y «Adelante»: el número y el nombre de cada entrada. Sin navegador.
       - run: node --test tests/site/visit-history.test.mjs
+      # Las partes de un lugar (puertas, torres...): su sección de la ficha y sus filas en la búsqueda. Sin navegador.
+      - run: node --test tests/site/place-parts.test.mjs
       # Los textos para quien lee dicen que cada dato enlaza a su fuente, y nada más sobre su origen.
       - run: node --test tests/site/textos-fuentes.test.mjs
       - name: Enlaces (solo en main y en la revisión semanal)

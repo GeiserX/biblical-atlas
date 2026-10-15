@@ -114,6 +114,12 @@ function spanishNames(o, over) {
 function mergeRecord(o, over) {
   const es = spanishNames(o, over);
   if (es.length) o._es = [...new Set([...(o._es || []), ...es])];
+  // A part of a place keeps its Spanish name on itself, not on the place: the search finds the part, not the place.
+  (Array.isArray(over.partes) ? over.partes : []).forEach((p, i) => {
+    const part = o.partes?.[i];
+    const [name] = part ? spanishNames(part, p || {}) : [];
+    if (name) part._es = [...new Set([...(part._es || []), name])];
+  });
   merge(o, over);
   o._lang = current;
 }

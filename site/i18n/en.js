@@ -55,6 +55,8 @@ window.BE_I18N.en = {
   'Historia y arqueología': 'History and archaeology',
   'acompaña, nunca corrige': 'accompanies, never corrects',
   'Sin otra fuente que acompañe para esta fecha.': 'No other accompanying source for this date.',
+  'Dentro de la ciudad': 'Inside the city', 'En el monte': 'On the mountain', 'En el valle': 'In the valley',
+  'En este lugar': 'At this place', 'Alrededor': 'Around it', 'en {lugar}': 'in {lugar}', 'junto a {lugar}': 'beside {lugar}',
   // Person card (js/tipos/persona.js)
   'Personas': 'People',
   'Ver en el grafo': 'See in the graph',
