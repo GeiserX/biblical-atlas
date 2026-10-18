@@ -388,3 +388,22 @@ test('T15 a name never covers the edge arrow of its own mark, and still lies ins
   assert.equal(it._lx, d1 + 4, `«Roma» sits at ${it._lx.toFixed(1)} px, not right of its dot at ${it._dot.toFixed(1)}`);
   assert.deepEqual([...F.arrows(it, w)], [true, false], 'the left arrow is drawn');
 });
+
+test('T14 events spread inside one shared date window stack in story order, not by name width', () => {
+  // The plagues of Egypt, 1514-1513 a.e.c.: each event sits in its own slice of the window (the story spread) while
+  // the declared range widens w0/w1 to the same years, so every left extent ties. The tiebreak is the slice inside the
+  // shared window; before it, ext1 ruled and the widest name sank to the bottom (the sixth plague showed above the
+  // second, the first at the very end).
+  const NAMES = ['Primera plaga: el agua de Egipto se convierte en sangre', 'Segunda plaga: las ranas', 'Tercera plaga: los mosquitos',
+    'Cuarta plaga: los tábanos', 'Quinta plaga: muere el ganado de Egipto', 'Sexta plaga: las úlceras', 'Séptima plaga: el granizo'];
+  const mk = (i, seq) => { const a = -1512.47 + i * 0.037; return { id: `p${i}`, name: NAMES[i], cert: 'computed', shape: 'moment', start: a, end: a + 0.037, anchor: a + 0.0185, w0: -1513, w1: -1512, group: 0, seq }; };
+  const items = NAMES.map((_, i) => mk(i, null));
+  F.measure(items, MEAS, G);
+  F.pack({ id: 's', items }, 800 / 40, T0, G, 'k');
+  assert.deepEqual([...items].sort((a, b) => a.row - b.row).map((x) => x.id), NAMES.map((_, i) => `p${i}`), 'the stack follows the story spread, not the name width');
+  // Same slice for all: the passage order (seq) still rules, as before.
+  const same = NAMES.map((_, i) => ({ ...mk(i, i), start: -1512.4, end: -1512.36, anchor: -1512.38 }));
+  F.measure(same, MEAS, G);
+  F.pack({ id: 's', items: same }, 800 / 40, T0, G, 'k');
+  assert.deepEqual([...same].sort((a, b) => a.row - b.row).map((x) => x.id), NAMES.map((_, i) => `p${i}`), 'same slice: seq (passages) still rules');
+});
