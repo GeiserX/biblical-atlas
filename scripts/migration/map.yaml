@@ -335,6 +335,8 @@ enums:
       desierto: desert
       valle: valley
       llanura: plain
+      manantial: spring
+      pozo: well
       pais: country
       reino: kingdom
   - field: places.precision
