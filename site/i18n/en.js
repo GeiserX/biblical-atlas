@@ -40,7 +40,7 @@ window.BE_I18N.en = {
   // Place card (js/tipos/lugar.js)
   'Ciudad': 'City', 'Región': 'Region', 'Isla': 'Island', 'Provincia': 'Province', 'Puerto': 'Port', 'Cabo': 'Cape',
   'Monte': 'Mountain', 'Río': 'River', 'Mar': 'Sea', 'Lago': 'Lake', 'Desierto': 'Desert', 'Valle': 'Valley',
-  'Llanura': 'Plain', 'País': 'Country', 'Reino': 'Kingdom',
+  'Llanura': 'Plain', 'Manantial': 'Spring', 'Pozo': 'Well', 'País': 'Country', 'Reino': 'Kingdom',
   ' · el punto solo la representa': ' · the point only stands for it',
   ' · región: el punto solo la representa': ' · region: the point only stands for it',
   ' · ubicación incierta': ' · location uncertain',
