@@ -6,7 +6,7 @@
 const BE = window.BE;
 const { E, esc, EXTERNO, fechaCorta, fmtAnio, fmtCursor, tramo, clamp } = BE;
 
-const TIPOS = { ciudad: 'Ciudad', region: 'Región', isla: 'Isla', provincia: 'Provincia', puerto: 'Puerto', cabo: 'Cabo', monte: 'Monte', rio: 'Río', mar: 'Mar', lago: 'Lago', desierto: 'Desierto', valle: 'Valle', llanura: 'Llanura', pais: 'País', reino: 'Reino' };
+const TIPOS = { ciudad: 'Ciudad', region: 'Región', isla: 'Isla', provincia: 'Provincia', puerto: 'Puerto', cabo: 'Cabo', monte: 'Monte', rio: 'Río', mar: 'Mar', lago: 'Lago', desierto: 'Desierto', valle: 'Valle', llanura: 'Llanura', manantial: 'Manantial', pozo: 'Pozo', pais: 'País', reino: 'Reino' };
 const VERBO = { vivio_en: 'vivió aquí', nacio_en: 'nació aquí', murio_en: 'murió aquí' };
 const REGIONES = new Set(['region', 'provincia', 'pais', 'reino']);
 const persona = (id) => BE.PERS[id]?.nombre || id;
