@@ -181,6 +181,13 @@ it-herodes:
   level: 1
   published: null
   checked_on: '2026-09-28'
+glosario-herodes:
+  title: 'Glosario: Herodes'
+  work: La Biblia. Traducción del Nuevo Mundo (edición de estudio)
+  url: https://www.jw.org/es/biblioteca/libros/glosario-biblia/herodes/
+  level: 1
+  published: null
+  checked_on: '2026-10-19'
 it-jesucristo:
   title: Jesucristo
   work: Perspicacia para comprender las Escrituras

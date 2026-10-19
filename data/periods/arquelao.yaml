@@ -1,0 +1,32 @@
+# biblical-atlas: un fichero por periodo. Esquema en docs/investigacion/README.md.
+id: arquelao
+name: Arquelao, etnarca de Judea
+type: king
+office: ethnarch
+date:
+  from: 0
+  to: 6
+  precision: range
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 1 a.e.c.-6 e.c.
+  note: Empieza con la muerte de su padre. El fin sale del recuadro de «Testimonio completo» cap. 10, que fecha en 6 e.c. el
+    paso de Judea a procuradores romanos; Perspicacia habla de su noveno o décimo año.
+places:
+- judea
+- region-de-samaria
+- idumea
+person: arquelao
+summary: Al morir Herodes el Grande, Augusto le deja Judea, Samaria e Idumea con el título de etnarca y no de rey. Gobierna
+  con dureza hasta que Roma lo destierra y pone procuradores en Judea.
+reason: Perspicacia «Arquelao» da el título y el destierro, y Mt 2:22 dice que reinaba en Judea. «Testimonio completo»
+  (cap. 10, recuadro) fecha en 6 e.c. el comienzo de los procuradores romanos en Judea.
+sources:
+- it-arquelao
+- it-herodes
+- mateo-2
+- bt-10
+search: Arquelao etnarca de Judea
+checked_on: '2026-10-19'
+status: verified

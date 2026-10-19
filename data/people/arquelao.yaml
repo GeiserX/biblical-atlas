@@ -31,16 +31,6 @@ relations:
   checked_on: '2026-09-29'
   office: ethnarch
   status: verified
-- type: holds_office
-  place: judea
-  office: ethnarch
-  inferred: true
-  sources:
-  - mateo-2
-  - it-arquelao
-  reason: Mt 2:22 dice que reinaba en Judea; el título de etnarca, y no el de rey, lo da Perspicacia «Arquelao».
-  checked_on: '2026-09-29'
-  status: verified
 links:
 - title: 'Perspicacia: «Arquelao»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Arquelao/

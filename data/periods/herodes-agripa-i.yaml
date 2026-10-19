@@ -1,0 +1,35 @@
+# biblical-atlas: un fichero por periodo. Esquema en docs/investigacion/README.md.
+id: herodes-agripa-i
+name: Herodes Agripa I, rey
+type: king
+date:
+  from: 37
+  to: 44
+  precision: range
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: 37-44 e.c.
+  note: De 37 a 41 reina sobre Iturea, Traconítide, Abilene y después Galilea y Perea; Judea y Samaria se suman en 41.
+places:
+- judea
+- jerusalen
+- iturea
+- traconitide
+- abilene
+- galilea
+- perea
+- region-de-samaria
+person: herodes-agripa-i
+summary: Calígula lo corona en 37 sobre las tierras de Filipo, y Claudio le da Judea y Samaria en 41. Desde Jerusalén mata
+  a Santiago y encarcela a Pedro. Muere en Cesarea en 44.
+reason: La nota de Hch 12:1 y el recuadro de «Testimonio completo» cap. 10 dan 37 y 41 y ponen su capital en Jerusalén; la
+  nota y Perspicacia «Herodes» (núm. 3) fechan su muerte en 44.
+sources:
+- hechos-12
+- bt-10
+- it-herodes
+- si-3
+search: Herodes Agripa I rey
+checked_on: '2026-10-19'
+status: verified
