@@ -1,0 +1,29 @@
+# biblical-atlas: un fichero por periodo. Esquema en docs/investigacion/README.md.
+id: herodes-agripa-i-en-judea
+name: Herodes Agripa I, rey de Judea
+type: king
+date:
+  from: 41
+  to: 44
+  precision: range
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: 41-44 e.c.
+places:
+- judea
+- jerusalen
+- region-de-samaria
+person: herodes-agripa-i
+summary: Claudio le da Judea y Samaria en 41 y reina desde Jerusalén. Allí mata a Santiago y encarcela a Pedro. Muere en
+  Cesarea en 44.
+reason: La nota de Hch 12:1 y el recuadro de «Testimonio completo» cap. 10 dan 41 y su capital en Jerusalén; la nota y
+  Perspicacia «Herodes» (núm. 3) fechan su muerte en 44.
+sources:
+- hechos-12
+- bt-10
+- it-herodes
+- si-3
+search: Herodes Agripa I rey de Judea
+checked_on: '2026-10-19'
+status: verified

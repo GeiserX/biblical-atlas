@@ -1,7 +1,7 @@
 # biblical-atlas: un fichero por periodo. Esquema en docs/investigacion/README.md.
 id: arquelao
 name: Arquelao, etnarca de Judea
-type: king
+type: governor
 office: ethnarch
 date:
   from: 0

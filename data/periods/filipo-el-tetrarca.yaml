@@ -1,7 +1,7 @@
 # biblical-atlas: un fichero por periodo. Esquema en docs/investigacion/README.md.
 id: filipo-el-tetrarca
 name: Filipo, tetrarca de Iturea y Traconítide
-type: king
+type: governor
 office: tetrarch
 date:
   from: 0

@@ -14,7 +14,7 @@ Cada fila es una afirmación con su fichero, su fuente, el día en que se leyó,
 | [Viajes y paradas](viajes.md) | 239 (1005 paradas) |
 | [Cartas](cartas.md) | 22 |
 | [Eventos](eventos.md) | 1779 |
-| [Periodos](periodos.md) | 95 |
+| [Periodos](periodos.md) | 96 |
 | [Hallazgos](hallazgos.md) | 7 |
 | [Recorridos](recorridos.md) | 4 |
 | [Libros y calendario](libros.md) | 66 libros, 13 meses |
