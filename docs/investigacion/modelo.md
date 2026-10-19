@@ -159,7 +159,7 @@ La configuración de los vídeos tiene sus claves en `video_config_keys` del map
 | `date.type` | `anchored`, `narrative`, `derived` |
 | `date.chronology` | `tnm`, `secular` |
 | `date.detail.season` | `spring`, `summer`, `autumn`, `winter` |
-| `type` de un lugar | `city`, `region`, `island`, `province`, `port`, `cape`, `mountain`, `river`, `sea`, `lake`, `desert`, `valley`, `plain`, `country`, `kingdom` |
+| `type` de un lugar | `city`, `region`, `island`, `province`, `port`, `cape`, `mountain`, `river`, `sea`, `lake`, `desert`, `valley`, `plain`, `country`, `kingdom`, `spring`, `well` |
 | `precision` de un lugar | `point`, `zone`, `uncertain` |
 | `geometry.type` | `point`, `zone`, `strip` |
 | `coord_source` | `openbible:<id>`, `calculation` |

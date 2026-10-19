@@ -46,7 +46,7 @@ TIPOS_FECHA = {"anchored", "narrative", "derived"}
 ESTACIONES = {"spring", "summer", "autumn", "winter"}
 ESTADOS = {"verified", "pending"}
 TIPOS_LUGAR = {"city", "region", "island", "province", "port", "cape", "mountain", "river", "sea", "lake", "desert",
-               "valley", "plain", "country", "kingdom"}
+               "valley", "plain", "country", "kingdom", "spring", "well"}
 PRECISION_LUGAR = {"point", "zone", "uncertain"}
 GEOMETRIAS = {"point", "zone", "strip"}
 ESTADOS_CANDIDATO = {"certain", "favored_level_1", "tradition", "alternative", "level_2_only", "rejected_level_1"}

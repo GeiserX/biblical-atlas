@@ -35,7 +35,7 @@ const ESTILO_ACTUAL = 'https://tiles.openfreemap.org/styles/positron';
 const ATRIBUCION = 'Coordenadas: <a href="https://www.openbible.info/geo/" target="_blank" rel="noopener">OpenBible.info</a> (<a href="https://creativecommons.org/licenses/by/4.0/deed.es" target="_blank" rel="noopener">CC BY 4.0</a>) · Relieve: Natural Earth, USGS, NOAA, Copernicus, Mapzen · <a href="acerca.html#gracias">Créditos</a>';
 const MAYORES = new Set(['roma', 'jerusalen', 'antioquia-de-siria', 'efeso', 'corinto', 'atenas', 'filipos', 'tesalonica', 'babilonia']);
 const REGION = new Set(['region', 'provincia', 'pais', 'reino', 'desierto', 'llanura', 'valle']);
-const AGUA = new Set(['mar', 'lago', 'rio']);
+const AGUA = new Set(['mar', 'lago', 'rio', 'manantial', 'pozo']);
 const estrecha = () => matchMedia('(max-width: 760px)').matches;
 let map = null, mapaListo = false, capasBase = [], estiloReserva = false;
 

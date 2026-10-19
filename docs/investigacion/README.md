@@ -62,7 +62,7 @@ Un objeto fecha vive en `date`, en `object_date` de un hallazgo y en `covers` de
 
 Los campos obligatorios de siempre siguen igual. Lo nuevo es opcional salvo donde se dice.
 
-**Lugares.** `type` es uno de `city`, `region`, `island`, `province`, `port`, `cape`, `mountain`, `river`, `sea`, `lake`, `desert`, `valley`, `plain`, `country` o `kingdom`. `precision` es `point`, `zone` o `uncertain`. Un lugar cuya ubicación no se conoce lleva `candidates`:
+**Lugares.** `type` es uno de `city`, `region`, `island`, `province`, `port`, `cape`, `mountain`, `river`, `sea`, `lake`, `desert`, `valley`, `plain`, `country`, `kingdom`, `spring` o `well`. `precision` es `point`, `zone` o `uncertain`. Un lugar cuya ubicación no se conoce lleva `candidates`:
 
 ```yaml
 candidates:

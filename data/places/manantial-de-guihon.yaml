@@ -8,13 +8,13 @@ names:
 - name: Ha Guihón
   modern: true
   note: Nombre actual del manantial, según Perspicacia «Guihón», núm. 2.
-type: lake
+type: spring
 lat: 31.772919
 lon: 35.236383
 precision: point
 coord_source: openbible:a2a303c
 coord_url: https://www.openbible.info/geo/ancient/a2a303c/gihon-2
-coord_note: 'Punto del manantial de Guihón en OpenBible. Es una fuente: «lago» es el tipo más cercano de la lista.'
+coord_note: Punto del manantial de Guihón en OpenBible.
 summary: Manantial que nace en una cueva del valle de Cedrón, al este de la Ciudad de David, en Jerusalén. Allí ungieron a
   Salomón como rey, a unos 700 m de En-Roguel, donde festejaba Adonías.
 reason: 'Perspicacia «Guihón», núm. 2; 1Re 1:33, 38, 45. OpenBible: solo el punto.'
