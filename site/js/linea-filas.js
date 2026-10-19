@@ -105,9 +105,11 @@ function extent(it, ppy, t0, G) {
   it.ext1 = Math.max(g1, lx + lw) + (labelOut || it.shape === 'moment' ? G.gap : 0.5);
 }
 /** Orden de las marcas al repartir filas: por dónde empiezan; entre dos que empiezan igual (sucesos del mismo día), el
-    orden del relato; después, por dónde acaban. */
+    orden del relato; luego por su sitio dentro de la ventana compartida (el reparto del relato ya coloca cada suceso en
+    su trocito: sin este desempate, al apilarse mandaba lo ancho del nombre y las plagas de Egipto salían mezcladas);
+    después, por dónde acaban. */
 function packOrder(a, b) {
-  return a.ext0 - b.ext0 || (a.seq != null && b.seq != null ? a.seq - b.seq : 0) || a.ext1 - b.ext1;
+  return a.ext0 - b.ext0 || (a.seq != null && b.seq != null ? a.seq - b.seq : 0) || a.start - b.start || a.ext1 - b.ext1;
 }
 /** Filas del mundo de un carril. Se guarda con su clave: no se repite al arrastrar, al mover el cursor ni al elegir. */
 function pack(lane, ppy, t0, G, key) {
