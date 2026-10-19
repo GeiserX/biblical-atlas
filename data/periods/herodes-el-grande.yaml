@@ -1,0 +1,29 @@
+# biblical-atlas: un fichero por periodo. Esquema en docs/investigacion/README.md.
+id: herodes-el-grande
+name: Herodes el Grande, rey de Judea
+type: king
+date:
+  from: -36
+  to: 0
+  precision: range
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 37-1 a.e.c.
+places:
+- judea
+- jerusalen
+person: herodes-el-grande
+summary: Roma lo nombra rey y hacia 37 a.e.c. toma Jerusalén por asalto. Reina hasta su muerte, probablemente en 1 a.e.c.,
+  poco después del nacimiento de Jesús.
+reason: El cuadro del estudio 3 fecha hacia 37 a.e.c. la toma de Jerusalén. Perspicacia «Herodes» discute nombramiento
+  y toma y prefiere su muerte en 1 a.e.c.; Lu 1:5 y Mt 2:1 lo llaman rey.
+sources:
+- si-3
+- it-herodes
+- it-jerusalen
+- lucas-1
+- mateo-2
+search: Herodes el Grande rey de Judea
+checked_on: '2026-10-18'
+status: verified

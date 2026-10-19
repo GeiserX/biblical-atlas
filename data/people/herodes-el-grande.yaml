@@ -48,17 +48,6 @@ relations:
   reason: 'Mt 2:1-7: recibe a los astrólogos en Jerusalén y convoca allí a los jefes de los sacerdotes y a los escribas.'
   checked_on: '2026-09-29'
   status: verified
-- type: holds_office
-  place: judea
-  office: king
-  inferred: false
-  sources:
-  - lucas-1
-  - mateo-2
-  - it-herodes
-  reason: Lu 1:5 lo llama rey de Judea y Mt 2:1 habla de los días del rey Herodes.
-  checked_on: '2026-09-29'
-  status: verified
 links:
 - title: 'Perspicacia: «Herodes»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Herodes/
