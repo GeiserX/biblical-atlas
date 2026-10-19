@@ -1,7 +1,7 @@
 # biblical-atlas: un fichero por periodo. Esquema en docs/investigacion/README.md.
 id: herodes-antipas
 name: Herodes Antipas, tetrarca de Galilea y Perea
-type: king
+type: governor
 office: tetrarch
 date:
   from: 0

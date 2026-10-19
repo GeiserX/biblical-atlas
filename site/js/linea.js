@@ -540,7 +540,13 @@ function pintarFilas(V, med) {
   // hasta su marca, una vez. Un clic en una marca nunca los mueve.
   if (selT !== ultimaSel) {
     if (!desdeFranja) lastClicked = null;   // lo elegido llegó de otro sitio: ninguna marca recordada
-    if (selT && !desdeFranja) { const it = marcasDeSel(selT)[0]; if (it) { verFila(it); med = null; } }
+    if (selT && !desdeFranja) {
+      const it = marcasDeSel(selT)[0];
+      // Una persona no tiene marca propia: se baja hasta su carril, que va debajo de los de gobernantes y en el móvil
+      // quedaba fuera de la vista.
+      const c = !it && E.sel?.tipo === 'persona' ? carrilesVista.find((x) => x.persona === E.sel.id && x.alto) : null;
+      if (it) { verFila(it); med = null; } else if (c) { verCarril(c); med = null; }
+    }
     ultimaSel = selT;
   }
   desdeFranja = false;
@@ -744,6 +750,14 @@ function verFila(it) {
   const y = topDe(it), alto = cuerpo.clientHeight - cabAlto, m = 4;
   if (y - m < cuerpo.scrollTop) cuerpo.scrollTop = Math.max(0, y - m);
   else if (y + G.row + m > cuerpo.scrollTop + alto) cuerpo.scrollTop = y + G.row + m - alto;
+}
+
+/** Baja o sube los carriles lo justo para que se vea el principio de un carril y todo lo que quepa de él. */
+function verCarril(c) {
+  const cuerpo = $('#linea-cuerpo');
+  const alto = cuerpo.clientHeight - cabAlto, m = 4, h = Math.min(c.alto, alto - 2 * m);
+  if (c.top - m < cuerpo.scrollTop) cuerpo.scrollTop = Math.max(0, c.top - m);
+  else if (c.top + h + m > cuerpo.scrollTop + alto) cuerpo.scrollTop = c.top + h + m - alto;
 }
 
 // ---------------------------------------------------------------------------
