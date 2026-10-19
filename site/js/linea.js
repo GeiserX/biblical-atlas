@@ -429,6 +429,8 @@ const decorDe = (c) => (c.tipo === 'persona' ? 8 : 2);   // la franja de adorno 
 /** Mientras se arrastra la franja, las filas se congelan: ninguna marca cambia de fila y ningún carril encoge. */
 let hold = null;
 let desdeFranja = false, ultimaSel = '', lastClicked = null, carrilPorVer = null;   // la marca pulsada la última vez (FIL.nextSel)
+/** La persona de un carril: el de los viajes de Pablo no lleva `persona`, solo su id. */
+const personaDeCarril = (c) => c.persona || (c.tipo === 'pablo' ? 'pablo' : null);
 function pintarLineaFija() {
   const svg = $('#linea-svg');
   const pista = $('#pista'), cuerpo = $('#linea-cuerpo');
@@ -548,15 +550,15 @@ function pintarFilas(V, med) {
       const it = marcasDeSel(selT)[0];
       // Una persona no tiene marca propia: se baja hasta su carril, que va debajo de los de gobernantes y en el móvil
       // quedaba fuera de la vista.
-      const c = !it && E.sel?.tipo === 'persona' ? carrilesVista.find((x) => x.persona === E.sel.id && x.alto) : null;
+      const c = !it && E.sel?.tipo === 'persona' ? carrilesVista.find((x) => personaDeCarril(x) === E.sel.id && x.alto) : null;
       if (it) { verFila(it); med = null; } else if (c) { verCarril(c); med = null; }
       // Un carril recién aparecido mide su nombre en el pintado siguiente y puede crecer el de encima: hasta entonces se
       // vuelve a bajar hasta el de la persona.
-      carrilPorVer = c && otraVez ? c.persona : null;
+      carrilPorVer = c && otraVez ? E.sel.id : null;
     }
     ultimaSel = selT;
   } else if (carrilPorVer) {
-    const c = E.sel?.tipo === 'persona' && E.sel.id === carrilPorVer ? carrilesVista.find((x) => x.persona === carrilPorVer && x.alto) : null;
+    const c = E.sel?.tipo === 'persona' && E.sel.id === carrilPorVer ? carrilesVista.find((x) => personaDeCarril(x) === carrilPorVer && x.alto) : null;
     if (c) { verCarril(c); med = null; }
     if (!c || !otraVez) carrilPorVer = null;
   }
