@@ -262,9 +262,12 @@ function reinos() {
     if (otro) { otro.push(g[0]); g.length = 0; }
   }
   return lista.filter((g) => g.length).map((ps) => {
-    const cuenta = new Map();
-    for (const p of ps) for (const l of new Set(p.lugares || [])) cuenta.set(l, (cuenta.get(l) || 0) + 1);
-    const orden = [...cuenta.entries()].filter(([l]) => BE.L[l]).sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]));
+    // El nombre es el lugar que más reyes comparten; a igualdad, el que va antes en sus lugares (el primero es la sede):
+    // Agripa I y II comparten Iturea, Traconítide y Abilene, y su carril es el de Iturea, no el de Abilene por el alfabeto.
+    const cuenta = new Map(), puesto = new Map();
+    for (const p of ps) [...new Set(p.lugares || [])].forEach((l, i) => { cuenta.set(l, (cuenta.get(l) || 0) + 1); puesto.set(l, (puesto.get(l) || 0) + i); });
+    const medio = (l) => puesto.get(l) / cuenta.get(l);
+    const orden = [...cuenta.entries()].filter(([l]) => BE.L[l]).sort((a, b) => b[1] - a[1] || medio(a[0]) - medio(b[0]) || a[0].localeCompare(b[0]));
     const k = orden[0]?.[0] || '';
     const nombres = orden.slice(0, 2).filter(([, n], i) => i === 0 || n >= 3).map(([l]) => BE.L[l].nombre);
     return { k, nombre: nombres.length ? `Reyes · ${nombres.join(' y ')}` : 'Reyes', ps };
@@ -425,7 +428,7 @@ const decorDe = (c) => (c.tipo === 'persona' ? 8 : 2);   // la franja de adorno 
 
 /** Mientras se arrastra la franja, las filas se congelan: ninguna marca cambia de fila y ningún carril encoge. */
 let hold = null;
-let desdeFranja = false, ultimaSel = '', lastClicked = null;   // la marca pulsada la última vez (FIL.nextSel)
+let desdeFranja = false, ultimaSel = '', lastClicked = null, carrilPorVer = null;   // la marca pulsada la última vez (FIL.nextSel)
 function pintarLineaFija() {
   const svg = $('#linea-svg');
   const pista = $('#pista'), cuerpo = $('#linea-cuerpo');
@@ -540,14 +543,22 @@ function pintarFilas(V, med) {
   // hasta su marca, una vez. Un clic en una marca nunca los mueve.
   if (selT !== ultimaSel) {
     if (!desdeFranja) lastClicked = null;   // lo elegido llegó de otro sitio: ninguna marca recordada
+    carrilPorVer = null;
     if (selT && !desdeFranja) {
       const it = marcasDeSel(selT)[0];
       // Una persona no tiene marca propia: se baja hasta su carril, que va debajo de los de gobernantes y en el móvil
       // quedaba fuera de la vista.
       const c = !it && E.sel?.tipo === 'persona' ? carrilesVista.find((x) => x.persona === E.sel.id && x.alto) : null;
       if (it) { verFila(it); med = null; } else if (c) { verCarril(c); med = null; }
+      // Un carril recién aparecido mide su nombre en el pintado siguiente y puede crecer el de encima: hasta entonces se
+      // vuelve a bajar hasta el de la persona.
+      carrilPorVer = c && otraVez ? c.persona : null;
     }
     ultimaSel = selT;
+  } else if (carrilPorVer) {
+    const c = E.sel?.tipo === 'persona' && E.sel.id === carrilPorVer ? carrilesVista.find((x) => x.persona === carrilPorVer && x.alto) : null;
+    if (c) { verCarril(c); med = null; }
+    if (!c || !otraVez) carrilPorVer = null;
   }
   desdeFranja = false;
   pintarIrSel(med);
