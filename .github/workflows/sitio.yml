@@ -24,11 +24,11 @@ env:
   AXE_VERSION: 4.13.0
 
 jobs:
-  # En un solo runner la batería pasa de 45 minutos: se reparte en siete a la vez. timeline-marks.test.mjs tarda 26 minutos
+  # En un solo runner la batería pasa de 45 minutos: se reparte en nueve a la vez. timeline-marks.test.mjs tarda 26 minutos
   # él solo, y sus dos pruebas de clics sobre las marcas, 15: van en dos trabajos aparte. accesibilidad.test.mjs y
-  # tema-oscuro.test.mjs recorren cada vista (axe y el tema oscuro) y tardan de 7 a 11 minutos cada uno: node los ponía
-  # en la misma parte, que pasó de 40 minutos en un runner lento, y van juntos en «vistas». El resto lo reparte node
-  # (--test-shard), así que un fichero nuevo entra solo en una de las cuatro partes.
+  # tema-oscuro.test.mjs recorren cada vista (axe y el tema oscuro): juntos en «vistas» llegaron a 27 minutos en octubre de
+  # 2026, y cada uno va en su trabajo. El resto lo reparte node (--test-shard), así que un fichero nuevo entra solo en una
+  # de las cinco partes. Con cuatro, una parte rondaba los 30 de los 40 minutos que tiene cada trabajo.
   navegador:
     name: pruebas (${{ matrix.parte }})
     runs-on: ubuntu-latest
@@ -36,7 +36,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        parte: ['1/4', '2/4', '3/4', '4/4', 'vistas', 'marcas, clics', 'marcas, resto']
+        parte: ['1/5', '2/5', '3/5', '4/5', '5/5', 'accesibilidad', 'tema oscuro', 'marcas, clics', 'marcas, resto']
     steps:
       - uses: actions/checkout@v7
         with:
@@ -119,7 +119,8 @@ jobs:
                                grep -q "^ℹ $linea\$" "$RUNNER_TEMP/clics.txt" || { echo "::error::el filtro de clics no dio «$linea»"; exit 1; }
                              done ;;
             'marcas, resto') run --test-skip-pattern="$clics" tests/site/timeline-marks.test.mjs ;;
-            'vistas') run "${vistas[@]}" ;;
+            'accesibilidad') run tests/site/accesibilidad.test.mjs ;;
+            'tema oscuro') run tests/site/tema-oscuro.test.mjs ;;
             *) files=()
                for f in tests/site/*.test.mjs; do
                  [[ $f == */timeline-marks.test.mjs || " ${vistas[*]} " == *" $f "* ]] || files+=("$f")

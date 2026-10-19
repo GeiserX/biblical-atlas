@@ -1353,5 +1353,39 @@ class Idiomas(unittest.TestCase):
         self.assertIn("data/places/y.yaml: data/languages.yaml da 'places' por completo", e[0])
 
 
+class CargoDePeriodo(unittest.TestCase):
+    """Un cargo que da un periodo con person lo deriva build.py: escrito además a mano en la persona sale dos veces."""
+    @classmethod
+    def setUpClass(cls):
+        cls.datos = validate.load(HERE.parent / "data")
+
+    def errores(self, rel):
+        herodes = next(o for o in self.datos["people"] if o.get("id") == "herodes-el-grande")
+        antes = list(herodes.get("relations") or [])
+        herodes["relations"] = antes + ([rel] if rel else [])
+        try:
+            out = []
+            validate.check_relations(self.datos, out.append, lambda *a: None)
+            return [e for e in out if "ya da este cargo" in e]
+        finally:
+            herodes["relations"] = antes
+
+    REY = {"type": "holds_office", "place": "judea", "office": "king", "inferred": False, "sources": ["lucas-1"],
+           "reason": "Lu 1:5.", "checked_on": "2026-10-19", "status": "verified"}
+
+    def test_sin_copia_no_hay_error(self):
+        self.assertEqual(self.errores(None), [])
+
+    def test_el_cargo_del_periodo_escrito_a_mano_es_error(self):
+        e = self.errores(self.REY)
+        self.assertEqual(len(e), 1, e)
+        self.assertIn("el periodo herodes-el-grande ya da este cargo", e[0])
+
+    def test_otro_cargo_u_otro_lugar_vale(self):
+        for cambio in ({"place": "jerusalen"}, {"office": "governor"}):
+            with self.subTest(cambio=cambio):
+                self.assertEqual(self.errores(dict(self.REY, **cambio)), [])
+
+
 if __name__ == "__main__":
     unittest.main()
