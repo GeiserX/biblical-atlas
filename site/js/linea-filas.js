@@ -349,7 +349,7 @@ function certainty(f, openEnd) {
   return 'exact';
 }
 const PASSAGE = /^(\S+)\s+(\d+):(\d+)/;
-/** Los sucesos de una misma ventana (el mismo día, casi siempre) no traen orden en los datos. Lo deducimos de los
+/** Los sucesos de una misma ventana declarada (el mismo día, casi siempre) no traen orden en los datos. Lo deducimos de los
     pasajes: si dos comparten un libro, va antes el que empieza antes en ese libro; con varios libros, manda la mayoría
     y un empate no decide. Se ordena por esas precedencias y, donde no dicen nada (o hay un ciclo), por el orden en que
     vienen. items = [{ start, end, passages }] en el orden de los datos; pone `seq` en los de una ventana compartida. */
@@ -365,7 +365,10 @@ function storyOrder(items) {
   const cmp = (a, b) => a[0] - b[0] || a[1] - b[1];
   const groups = new Map();
   for (const it of items) {
-    const k = `${it.start.toFixed(6)}|${it.end.toFixed(6)}`;
+    // La ventana declarada (w0..w1), no el trozo que el reparto del relato da a cada suceso: con esa clave dos sucesos
+    // de una misma fecha declarada no se juntarían nunca y acababan por la anchura del nombre (las plagas de Egipto).
+    const a = it.w0 ?? it.start, b = it.w1 ?? it.end;
+    const k = `${a.toFixed(6)}|${b.toFixed(6)}`;
     if (!groups.has(k)) groups.set(k, []);
     groups.get(k).push(it);
   }
