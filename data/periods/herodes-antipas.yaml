@@ -1,0 +1,33 @@
+# biblical-atlas: un fichero por periodo. Esquema en docs/investigacion/README.md.
+id: herodes-antipas
+name: Herodes Antipas, tetrarca de Galilea y Perea
+type: king
+office: tetrarch
+date:
+  from: 0
+  to: 41
+  precision: range
+  approx: true
+  type: derived
+  chronology: tnm
+  text: c. 1 a.e.c.-entre 37 y 41 e.c.
+  note: Lo destierra Calígula, emperador de 37 a 41 según el recuadro de Perspicacia «César». Ninguna publicación da el año,
+    así que el tramo acaba en 41, el último posible.
+places:
+- galilea
+- perea
+- tiberiades
+person: herodes-antipas
+summary: Recibe Galilea y Perea cuando se reparte el reino de su padre. Hace decapitar a Juan el Bautista e interroga a
+  Jesús en Jerusalén. Calígula acaba desterrándolo a la Galia.
+reason: Perspicacia «Herodes» (núm. 2) cuenta el reparto y el destierro; Lu 3:1 lo pone en el cargo en 29 e.c. Según
+  «Testimonio completo» cap. 10, Calígula pasó después Galilea y Perea a Agripa I.
+sources:
+- it-herodes
+- lucas-3
+- mateo-14
+- bt-10
+- it-cesar
+search: Herodes Antipas tetrarca de Galilea y Perea
+checked_on: '2026-10-19'
+status: pending

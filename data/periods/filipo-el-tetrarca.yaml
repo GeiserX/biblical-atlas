@@ -1,0 +1,31 @@
+# biblical-atlas: un fichero por periodo. Esquema en docs/investigacion/README.md.
+id: filipo-el-tetrarca
+name: Filipo, tetrarca de Iturea y Traconítide
+type: king
+office: tetrarch
+date:
+  from: 0
+  to: 37
+  precision: range
+  approx: true
+  type: derived
+  chronology: tnm
+  text: c. 1 a.e.c.-antes de 37 e.c.
+  note: Perspicacia dice que gobernó más de treinta años y que ya había muerto cuando Calígula dio sus tierras a Agripa I,
+    en 37 según «Testimonio completo». Ninguna publicación da el año de su muerte.
+places:
+- iturea
+- traconitide
+person: filipo-el-tetrarca
+summary: En el reparto del reino de su padre, Augusto le asigna Iturea y Traconítide con algunos distritos vecinos. Lu 3:1
+  lo nombra en el año 15 de Tiberio. Muere sin hijos tras más de tres décadas de gobierno.
+reason: Perspicacia «Herodes» (núm. 3 y 6) y «Filipo» (núm. 2). El recuadro de «Testimonio completo» cap. 10 fecha en 37
+  el paso de sus regiones a Agripa I.
+sources:
+- it-herodes
+- it-filipo
+- lucas-3
+- bt-10
+search: Filipo el tetrarca de Iturea y Traconítide
+checked_on: '2026-10-19'
+status: pending

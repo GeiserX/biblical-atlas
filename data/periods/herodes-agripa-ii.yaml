@@ -1,0 +1,32 @@
+# biblical-atlas: un fichero por periodo. Esquema en docs/investigacion/README.md.
+id: herodes-agripa-ii
+name: Herodes Agripa II, rey
+type: king
+date:
+  from: 53
+  to: 66
+  precision: range
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: 53-66 e.c.
+  note: Hacia 50 ya era rey de Calcis. El glosario de la TNM cierra su gobierno con la revuelta judía; «Testimonio completo»
+    añade que luego Vespasiano le dio más tierras.
+places:
+- iturea
+- traconitide
+- abilene
+person: herodes-agripa-ii
+summary: Hijo de Agripa I. Claudio lo hace rey de Calcis hacia 50 y en 53 de las tierras de Filipo y Lisanias; Nerón le
+  suma partes de Galilea y Perea. Hacia 58 escucha a Pablo en Cesarea.
+reason: El recuadro de «Testimonio completo» cap. 25 da 50, 53 y la revuelta de 66; el glosario de la TNM dice que gobernó
+  hasta esa revuelta. Hch 25:13 lo llama rey.
+sources:
+- bt-25
+- glosario-herodes
+- it-herodes
+- hch-25
+- hch-26
+search: Herodes Agripa II rey
+checked_on: '2026-10-19'
+status: verified
