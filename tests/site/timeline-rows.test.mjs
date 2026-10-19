@@ -261,6 +261,27 @@ test('T11 events of one day stack in story order, not by name length', () => {
   assert.deepEqual(cyc.map((x) => x.seq), [0, 1]);
 });
 
+test('T11b events of one declared window stack in story order though the account spreads them', () => {
+  // repartoRelato gives each event its own stretch of the declared window (w0..w1 keeps the whole window): the
+  // grouping of storyOrder is by the declared window, or the ten plagues end up by name length.
+  const win = [-1513, -1512];
+  const ev = (id, name, i, passages) => {
+    const a = win[0] + 0.83 + i * 0.037, b = a + 0.037;
+    return { id, name, cert: 'approx', shape: 'moment', start: a, end: b, anchor: (a + b) / 2, w0: win[0], w1: win[1], group: 0, passages };
+  };
+  const items = [
+    ev('p6', 'Sexta plaga: las úlceras', 5, ['Éx 9:8-12']),
+    ev('p2', 'Segunda plaga: las ranas, un nombre algo más largo', 1, ['Éx 8:1-15']),
+    ev('p1', 'Primera plaga: el agua de Egipto se convierte en sangre', 0, ['Éx 7:14-25']),
+  ];
+  F.storyOrder(items);
+  assert.deepEqual(items.map((x) => x.seq), [2, 1, 0]);
+  F.measure(items, MEAS, G);
+  const out = F.layoutLane({ id: 's', items }, { v0: -1513.5, span: 40 }, geom(1600));
+  const byRow = [...out.visible].sort((a, b) => a._drow - b._drow).map((x) => x.id);
+  assert.deepEqual(byRow, ['p1', 'p2', 'p6']);
+});
+
 test('T12 on a touch screen long names wrap to at most three lines and every target is at least 44 px wide', () => {
   const lane = syntheticLane(29);
   lane.items.push({ id: 'long', name: 'Pablo y Bernabé predican en la sinagoga de Antioquía de Pisidia y muchos creen', cert: 'approx', shape: 'moment', start: 47, end: 47.01, anchor: 47.005, w0: 47, w1: 47.01, group: 0 });
