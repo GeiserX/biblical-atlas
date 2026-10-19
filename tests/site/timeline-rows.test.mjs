@@ -389,7 +389,7 @@ test('T15 a name never covers the edge arrow of its own mark, and still lies ins
   assert.deepEqual([...F.arrows(it, w)], [true, false], 'the left arrow is drawn');
 });
 
-test('T14 events spread inside one shared date window stack in story order, not by name width', () => {
+test('T16 events spread inside one shared date window stack in story order, not by name width', () => {
   // The plagues of Egypt, 1514-1513 a.e.c.: each event sits in its own slice of the window (the story spread) while
   // the declared range widens w0/w1 to the same years, so every left extent ties. The tiebreak is the slice inside the
   // shared window; before it, ext1 ruled and the widest name sank to the bottom (the sixth plague showed above the

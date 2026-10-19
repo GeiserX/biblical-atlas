@@ -1465,6 +1465,9 @@ def check_relations(datos, err, warn):
     citadas = cited_relations(datos)
     buscador = bible_coverage.Citas(datos["books"])
     hacia = collections.defaultdict(list)        # (x, y) -> [(fichero, índice, relación)], solo destinos persona
+    # (persona, cargo, lugar) -> periodo: el cargo que build.py deriva de cada periodo con person (modelo.md, sección 8).
+    de_periodo = {(pe["person"], pe.get("office") or pe.get("type"), (pe.get("places") or [None])[0]): pe.get("id")
+                  for pe in datos["periods"] if isinstance(pe, dict) and pe.get("person")}
     for o in datos["people"]:
         pid, donde = o.get("id"), o["_fichero"]
         rels = o.get("relations") or []
@@ -1531,6 +1534,9 @@ def check_relations(datos, err, warn):
                     err(f"{rd}: office solo va en succeeds y holds_office, no en {t}")
                 elif r["office"] not in offices:
                     err(f"{rd}: office '{r['office']}' no es un cargo de data/vocabulary.yaml")
+            if t == "holds_office" and (pid, r.get("office"), r.get("place")) in de_periodo:
+                err(f"{rd}: el periodo {de_periodo[(pid, r.get('office'), r.get('place'))]} ya da este cargo y "
+                    f"build.py lo deriva de él; quita la relación (no se escribe a mano lo que dice un periodo)")
             if "certainty" in r:
                 if "certainty" not in requiere:
                     err(f"{rd}: certainty solo va en same_as, no en {t}")

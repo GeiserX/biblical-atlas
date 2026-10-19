@@ -9,13 +9,13 @@ names:
 - name: Bir Ayyub
   modern: true
   note: Pozo actual, llamado también pozo de Job, con el que Perspicacia hace corresponder la fuente.
-type: lake
+type: spring
 lat: 31.767198
 lon: 35.235985
 precision: point
 coord_source: openbible:af9cfc9
 coord_url: https://www.openbible.info/geo/ancient/af9cfc9/en-rogel
-coord_note: 'Punto de Bir Ayyub en OpenBible. Es un pozo o fuente: «lago» es el tipo más cercano de la lista.'
+coord_note: 'Punto de Bir Ayyub en OpenBible. Perspicacia lo llama fuente o pozo; su nombre quiere decir «Fuente de Roguel».'
 summary: Fuente o pozo al sur de Jerusalén, cerca de donde se juntan los valles de Cedrón e Hinón, en el límite entre Judá
   y Benjamín. La opinión general la iguala con Bir Ayyub, el pozo de Job.
 reason: 'Perspicacia «En-roguel»; Jos 15:7; 18:16; 2Sa 17:17; 1Re 1:9. OpenBible: solo el punto.'
@@ -35,5 +35,5 @@ links:
 - title: Josué 18 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/Josu%C3%A9/18/
   type: bible
-checked_on: '2026-10-14'
+checked_on: '2026-10-19'
 status: verified

@@ -3,7 +3,7 @@ id: cisterna-de-sira
 name: Cisterna de Sirá
 names:
 - name: Cisterna de Sirá
-type: lake
+type: well
 lat: 31.541919
 lon: 35.098819
 precision: uncertain
@@ -25,5 +25,5 @@ links:
 - title: 2 Samuel 3 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-samuel/3/
   type: bible
-checked_on: '2026-09-29'
+checked_on: '2026-10-19'
 status: verified
