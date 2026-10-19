@@ -219,7 +219,7 @@ async function axe(page) {
       const n = r.nodes[0];
       const why = `axe threw\n${r.error.message}`.slice(0, 200);
       if (!n || skip.length >= 100) { violations.push({ id: `${v.id} (axe threw)`, impact: 'serious', nodes: [{ target: [n ? n.target.flat().join(' ') : 'html'], failureSummary: why }] }); break; }
-      skip.push(n.target.flat().join(' '));
+      skip.push(n.target);   // tal cual: el de un iframe o un shadow DOM es una lista, y unida con espacios no casaría con nada
       violations.push({ id: v.id, impact: v.impact || 'serious', nodes: [{ target: n.target, failureSummary: why, any: n.any, all: n.all, none: n.none }] });
       let b = new AxeBuilder({ page }).withRules([v.id]);
       for (const t of skip) b = b.exclude(t);
