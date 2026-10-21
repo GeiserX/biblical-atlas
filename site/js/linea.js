@@ -428,6 +428,17 @@ const decorDe = (c) => (c.tipo === 'persona' ? 8 : 2);   // la franja de adorno 
 
 /** Mientras se arrastra la franja, las filas se congelan: ninguna marca cambia de fila y ningún carril encoge. */
 let hold = null;
+/** El ancho de la ventana, guardado en cada «resize»: leer innerWidth al pintar obliga al navegador a recolocar la página,
+    y al reproducir se pinta en cada fotograma. */
+let anchoVentana = innerWidth;
+addEventListener('resize', () => { anchoVentana = innerWidth; });
+let enParada = false;   // parada en un suceso que sigue sola (vigilarReproduccion): las filas siguen congeladas
+let carrilesAntes = [];   // cada carril que se veía en el último reparto, con su arriba y su alto (pintarFilas)
+let pintadoSpan = 0;   // la escala del último reparto de filas (pintarFilas)
+// Segundos de reproducción desde la última parada (o desde que se pulsó reproducir), y los sucesos que el cursor pasó
+// sin parar a escala gruesa: siguen marcados en la línea hasta que pasa el siguiente tras una parada (FIL.playStop).
+let desdeParada = 0, deDiana = false;
+const pasados = new Set();
 let desdeFranja = false, ultimaSel = '', lastClicked = null, carrilPorVer = null;   // la marca pulsada la última vez (FIL.nextSel)
 /** La persona de un carril: el de los viajes de Pablo no lleva `persona`, solo su id. */
 const personaDeCarril = (c) => c.persona || (c.tipo === 'pablo' ? 'pablo' : null);
@@ -487,7 +498,7 @@ function medidasPanel(cuerpo = $('#linea-cuerpo')) {
 let claveNombres = '';
 const altosNombre = new Map();
 function medirNombres() {
-  const clave = `${claveEtiquetas}|${claveLetra}|${innerWidth}`;
+  const clave = `${claveEtiquetas}|${claveLetra}|${anchoVentana}`;
   if (clave !== claveNombres) { claveNombres = clave; altosNombre.clear(); }
   let faltan = false;
   for (const c of carrilesVista) {
@@ -499,6 +510,7 @@ function medirNombres() {
   return faltan;
 }
 function pintarFilas(V, med) {
+  congelarAlReproducir();   // antes de repartir: el primer fotograma que se reproduce ya va con las filas congeladas
   const view = { v0: E.vista[0], span: span() };
   const geom = { w: anchoLinea, t0: BE.T_MIN, G, key: `${claveLetra}|${G.row}` };
   const vacios = [];
@@ -506,6 +518,11 @@ function pintarFilas(V, med) {
   const faltan = medirNombres();
   let otraVez = false;
   const selT = BE.selTexto(E.sel);
+  // Al cambiar de escala, el carril que se lee arriba del panel se queda donde estaba aunque cambie lo de encima: al pasar
+  // a «Meses» las filas de los meses aparecen arriba y empujaban hacia abajo lo que se leía. Arriba del todo no se ancla:
+  // lo nuevo se ve. Sin cambio de escala (un clic que trae la vista, la reproducción) los carriles no se mueven.
+  const otraEscala = pintadoSpan && Math.abs(view.span / pintadoSpan - 1) > 1e-6;
+  const anclas = otraEscala && med?.top > 0 ? carrilesAntes.filter((a) => a.top + a.alto > med.top) : [];
   for (const c of carrilesVista) {
     const x = carrilEls.get(c.id);
     c.top = top;
@@ -532,10 +549,20 @@ function pintarFilas(V, med) {
     top += c.alto;
   }
   altoFilas = top;
+  pintadoSpan = view.span;
+  carrilesAntes = carrilesVista.filter((c) => c.alto).map((c) => ({ id: c.id, top: c.top, alto: c.alto }));
+  // El primero de los que se leían que sigue en la línea (uno sin nada a la nueva escala se esconde).
+  let ancla = null, anclado = null;
+  for (const a of anclas) { anclado = carrilesVista.find((c) => c.id === a.id && c.alto); if (anclado) { ancla = a; break; } }
+  if (anclado && anclado.top !== ancla.top) {
+    const cuerpo = $('#linea-cuerpo');
+    cuerpo.scrollTop = Math.max(0, med.top + anclado.top - ancla.top);
+    med = { ...med, top: cuerpo.scrollTop };
+  }
   if (otraVez) { sucio.linea = true; programar(); }
   const filas = $('#linea-filas');
   filas.style.setProperty('--fila', `${G.row}px`);
-  filas.classList.toggle('arrastrando', !!hold);
+  filas.classList.toggle('arrastrando', !!hold && !hold.juego);
   const vac = $('#linea-vacios');
   vac.textContent = vacios.length ? `Sin nada en esta vista: ${vacios.join(', ')}.` : '';
   vac.hidden = !vacios.length;
@@ -718,7 +745,7 @@ function pintarMarca(it, top, selT, V) {
   it.labEl.classList.toggle('fuera', !it._labOnFill);
   const elegida = it.sel === selT;
   el.setAttribute('aria-pressed', String(elegida));
-  const clase = `m${it.secular ? ' m--secular' : ''}${FIL.hollow(it) ? ' m--hueca' : ''}${it._clase || ''}${V && it.sel === `viaje:${V.id}` ? ' activo' : ''}`;
+  const clase = `m${it.secular ? ' m--secular' : ''}${FIL.hollow(it) ? ' m--hueca' : ''}${it._clase || ''}${V && it.sel === `viaje:${V.id}` ? ' activo' : ''}${pasados.has(it.sel) ? ' de-paso' : ''}`;
   if (el.className !== clase) el.className = clase;
 }
 /** Solo van en la página las marcas de las filas cercanas a lo que se ve (una altura del panel por arriba y otra por
@@ -752,6 +779,10 @@ function ventanaMarcas(repintar, V = BE.viajeActual(BE.dondeEsta(E.t)), selT = B
   // Una marca con el foco que sale de la ventana se quita como las demás (si no, quedaría pintada donde ya no está);
   // el foco pasa a la marca que ahora es la parada del tabulador, sin mover nada.
   if (perdioFoco) $('#linea-filas .m[tabindex="0"]')?.focus({ preventScroll: true });
+}
+/** Señala en la página los sucesos que la reproducción pasó sin parar (vigilarReproduccion), sin repintar la franja. */
+function marcarPasados() {
+  for (const x of carrilEls.values()) for (const it of x.shown || []) it.el?.classList.toggle('de-paso', pasados.has(it.sel));
 }
 const marcasVisibles = () => carrilesVista.flatMap((c) => (c.alto && c.out ? c.out.visible.map((it) => ({ it, c })) : []));
 const marcasDeSel = (selT) => marcasVisibles().filter(({ it }) => it.sel === selT).map(({ it }) => it);
@@ -1750,22 +1781,48 @@ function pintarVelocidad() {
 const botonesVelocidad = () => `<button type="button" class="vel-boton" data-vel="-1" aria-label="Más despacio" title="Más despacio">−</button><span class="be-speed" data-vel-texto aria-live="polite">${esc(BE.textoVelocidad())}</span><button type="button" class="vel-boton" data-vel="1" aria-label="Más deprisa" title="Más deprisa">+</button>`;
 
 let tAnterior = null, reanudar = 0, paradoEnFin = null;
+/** Mientras se reproduce, las filas se congelan como al arrastrar (hold): ninguna marca cambia de fila y ningún carril
+    encoge; lo que aparece toma una fila nueva sin mover lo demás. También en la parada de un suceso, que sigue sola. Al
+    parar de verdad (a mano, al final, en el fin de un periodo) se vuelven a repartir. Antes, cada salto de la vista las
+    repartía de nuevo: las marcas cambiaban de fila y los carriles crecían y encogían bajo quien leía. */
+function congelarAlReproducir() {
+  // Otra escala (la rueda mientras se reproduce) reparte las filas de nuevo: las congeladas eran las de la escala de antes.
+  if (E.play || enParada) {
+    if (hold && !(hold.juego && Math.abs(hold.span / span() - 1) > 1e-6)) return;
+    // Se congelan las filas que se ven ahora, no las del primer fotograma: ese ya movió la vista un poco y repartía de nuevo.
+    const mismaEscala = !hold && Math.abs(span() / (pintadoSpan || span()) - 1) < 1e-6;
+    hold = { rows: new Map(), edge: new Map(), juego: true, span: span() };
+    // Con las marcas que ya estaban en una fila del borde (su nombre no cabía en la suya), que se quedan en ella.
+    if (mismaEscala) {
+      for (const c of carrilesVista) {
+        if (!c.out?.rowMap) continue;
+        hold.rows.set(c.id, new Map(c.out.rowMap));
+        for (const it of c.out.visible) if (it._key !== it.row) hold.edge.set(it.id, it._key);
+      }
+    }
+    return;
+  }
+  if (hold?.juego) { hold = null; sucio.linea = true; programar(); }
+}
+/** Décadas, siglos y milenios: de la mitad (geométrica) entre «Años» y «Décadas» para arriba. */
+const escalaGruesa = () => span() > Math.sqrt(8 * 40);
 function momentosFoco() {
   const out = [];
   const foco = E.resaltado?.claves;
   if (foco) {
     for (const k of foco) {
       const i = k.indexOf(':'), tipo = k.slice(0, i), id = k.slice(i + 1);
-      if (tipo === 'evento') { const e = BE.D.eventos.find((x) => x.id === id); const m = e && BE.momentoEvento(e); if (m != null) out.push({ t: m, texto: `${e.titulo} · ${e.fecha?.texto || ''}` }); }
-      else if (tipo === 'parada') { const s = BE.P.find((x) => x.key === id); if (s) out.push({ t: s.a, texto: `${s.lugar.nombre} · ${s.p.referencia}` }); }
+      if (tipo === 'evento') { const e = BE.D.eventos.find((x) => x.id === id); const m = e && BE.momentoEvento(e); if (m != null) out.push({ t: m, sel: k, texto: `${e.titulo} · ${e.fecha?.texto || ''}` }); }
+      else if (tipo === 'parada') { const s = BE.P.find((x) => x.key === id); if (s) out.push({ t: s.a, sel: k, texto: `${s.lugar.nombre} · ${s.p.referencia}` }); }
     }
   } else if (span() <= 60) {
-    for (const e of BE.D.eventos || []) { const m = BE.momentoEvento(e); if (m != null) out.push({ t: m, texto: `${e.titulo} · ${e.fecha?.texto || ''}` }); }
+    for (const e of BE.D.eventos || []) { const m = BE.momentoEvento(e); if (m != null) out.push({ t: m, sel: `evento:${e.id}`, texto: `${e.titulo} · ${e.fecha?.texto || ''}` }); }
   }
   return out;
 }
 function vigilarReproduccion() {
-  if (!E.play) { tAnterior = null; return; }
+  congelarAlReproducir();
+  if (!E.play) { tAnterior = null; desdeParada = 0; return; }
   if (L.bucle && (E.t >= L.bucle[1] || E.t < L.bucle[0] - 1e-6)) {
     tAnterior = null; setT(L.bucle[0]); BE.asegurarVisible(L.bucle[0], false); return;
   }
@@ -1777,7 +1834,7 @@ function vigilarReproduccion() {
   if (paradoEnFin && (!tr || paradoEnFin !== p.id || E.t < tr[1] - Math.max(0.01, BE.velocidad() * 0.25))) paradoEnFin = null;
   if (tAnterior != null && tr && !paradoEnFin && tAnterior < tr[1] && E.t >= tr[1]) {
     reproducir(false);
-    clearTimeout(reanudar);
+    clearTimeout(reanudar); enParada = false;
     setT(tr[1] - 1e-4);
     paradoEnFin = p.id;
     BE.avisar(`${tr.abierto === 'd' ? `Aquí acaba lo que dibujamos de ${p.nombre}: no sabemos cuándo dejó de serlo.` : `Fin de ${p.nombre} (${p.fecha.texto || fechaCorta(p.fecha)}).`} Pulsa reproducir para seguir.`, 5000);
@@ -1785,13 +1842,25 @@ function vigilarReproduccion() {
     return;
   }
   if (tAnterior != null && L.pausa && E.t > tAnterior) {
-    const hit = momentosFoco().find((m) => m.t > tAnterior && m.t <= E.t);
-    if (hit) {
+    const hits = momentosFoco().filter((m) => m.t > tAnterior && m.t <= E.t).sort((a, b) => a.t - b.t);
+    const gruesa = escalaGruesa();
+    const r = FIL.playStop(desdeParada, (E.t - tAnterior) / BE.velocidad(), hits, gruesa);
+    desdeParada = r.since;
+    if (r.passed.length) {
+      // De paso: el aviso de abajo va diciendo cada suceso y su marca se queda señalada, sin parar.
+      if (deDiana) { pasados.clear(); deDiana = false; }
+      for (const m of r.passed) pasados.add(m.sel);
+      BE.avisar(r.passed[r.passed.length - 1].texto);
+      marcarPasados();
+    }
+    if (r.stop) {
       reproducir(false);
-      BE.avisar(hit.texto);
+      BE.avisar(r.stop.texto);
+      if (gruesa) { pasados.add(r.stop.sel); deDiana = true; marcarPasados(); } else if (pasados.size) { pasados.clear(); marcarPasados(); }
       clearTimeout(reanudar);
       const t = E.t;
-      reanudar = setTimeout(() => { if (!E.play && Math.abs(E.t - t) < 1e-9) reproducir(true); }, 1500);
+      enParada = true;
+      reanudar = setTimeout(() => { enParada = false; if (!E.play && Math.abs(E.t - t) < 1e-9) reproducir(true); else congelarAlReproducir(); }, gruesa ? FIL.STOP_MS.coarse : FIL.STOP_MS.fine);
       tAnterior = null;
       return;
     }
@@ -1941,7 +2010,11 @@ let claveBarra = '';
 function ajustarBarra() {
   const barra = $('.linea-barra');
   if (!barra) return;
-  const clave = `${barra.clientWidth}|${$('#meses-control')?.hidden}`;
+  // Al reproducir la línea se pinta en cada fotograma y su ancho no cambia: leerlo obligaba al navegador a recolocar la
+  // página una vez más por fotograma. Mientras tanto basta con el ancho de la ventana (anchoVentana).
+  const meses = $('#meses-control')?.hidden;
+  if (hold?.juego && claveBarra.endsWith(`|${meses}|${anchoVentana}`)) return;
+  const clave = `${barra.clientWidth}|${meses}|${anchoVentana}`;
   if (clave === claveBarra) return;
   claveBarra = clave;
   let n = 0;

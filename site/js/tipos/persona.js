@@ -61,7 +61,7 @@ function calcularAristas(id) {
   const ponerRelacion = (r, adelante, a) => {
     const verbo = verboRelacion(r, adelante);
     if (!verbo || !r.reference || r.duplicate_of) return;
-    out.push({ ...a, verbo, fecha: r.fecha, deducido: !!r.deducido, estado: r.estado, fuentes: r.fuentes, razon: r.razon, ref: r.reference, origen: 'relacion', tipoRel: r.tipo, type: r.type, alias: r.type === 'same_as', inversa: !adelante, grupoFamilia: (adelante ? r.family : r.inverse_family) || null, etiqueta: (adelante ? r.relacion : r.inverse_label) || '', tr: tramoAbierto(r.fecha) });
+    out.push({ ...a, verbo, fecha: r.fecha, deducido: !!r.deducido, estado: r.estado, fuentes: r.fuentes, razon: r.razon, ref: r.reference, origen: 'relacion', tipoRel: r.tipo, type: r.type, palabraVoc: r.word || null, oficio: r.office || null, alias: r.type === 'same_as', inversa: !adelante, grupoFamilia: (adelante ? r.family : r.inverse_family) || null, etiqueta: (adelante ? r.relacion : r.inverse_label) || '', tr: tramoAbierto(r.fecha) });
   };
   for (const r of p.relaciones || []) {
     const otro = r.persona ? `persona:${r.persona}` : r.lugar ? `lugar:${r.lugar}` : null;
@@ -165,22 +165,129 @@ function familia(id) {
   g.siblings.sort(orden);
   return g;
 }
-function familiaHtml(id) {
+// Sucesión en un cargo: el tipo `succeeds` de data/vocabulary.yaml. Escrita en X con destino Y dice «X sucedió a Y»:
+// en la ficha de X, Y es su predecesor; en la de Y (la arista inversa), X es su sucesor.
+const esSucesion = (a) => a.origen === 'relacion' && a.type === 'succeeds' && a.sel.startsWith('persona:');
+/** { antes: [...], despues: [...] }: predecesores y sucesores, cada persona una vez por cargo. */
+function sucesion(id) {
+  const s = { antes: [], despues: [] };
+  const vistos = new Set();
+  for (const a of aristas(id)) {
+    if (!esSucesion(a) || vistos.has(`${a.sel}|${a.oficio}|${a.inversa}`)) continue;
+    vistos.add(`${a.sel}|${a.oficio}|${a.inversa}`);
+    s[a.inversa ? 'despues' : 'antes'].push(a);
+  }
+  return s;
+}
+/** El cargo en español («rey»), del que lo compila build.py en offices de cualquiera de las dos personas. */
+function oficioEs(codigo, ids) {
+  for (const x of ids) for (const o of BE.PERS[x]?.offices || []) if (o.office === codigo && o.es) return o.es;
+  return '';
+}
+// Hermanos: con más de estos van aparte, plegados entre las relaciones, para que el bloque siga siendo corto.
+const MAX_HERMANOS = 6;
+const etiquetaDeducido = '<span class="be-chip etiqueta-deducido" title="Lo deduce la fuente; el texto bíblico no lo dice">deducido</span>';
+
+/** «Familia y cargo», bajo el resumen: padres, cónyuges, hijos, hermanos si son pocos, predecesor y sucesor en un
+    cargo y los cargos con su periodo. Cada persona es un botón que la elige. Solo salen las filas que tienen a alguien;
+    sin ninguna, nada. */
+function familiaCargoHtml(id) {
   const g = familia(id);
-  if (!GRUPOS_FAMILIA.some(([k]) => g[k].length)) return '';
+  const s = sucesion(id);
+  const cargos = BE.PERS[id]?.offices || [];
+  const filas = [];
   // Con varias personas en un grupo, la palabra solo se escribe si precisa el vínculo: la que tiene más de una palabra
   // («medio hermano», «padre adoptivo», «hermano gemelo»). «padre» o «hermana» ya los dice el grupo.
-  const miembro = (a, varios) => {
+  // Con más de tres, van seguidas en una fila (las fechas pasan al texto emergente) para que el bloque no crezca.
+  const miembro = (a, varios, enFila, matizCargo) => {
     const q = BE.PERS[a.sel.slice(8)];
     const fecha = q?.fecha ? (q.fecha.texto || fechaCorta(q.fecha)) : '';
-    const matiz = varios && /\s/.test(a.palabra.trim()) ? a.palabra : '';
-    return `<li><button type="button" class="enlace-texto" data-sel="${esc(a.sel)}"${a.razon ? ` title="${esc(a.razon)}"` : ''}>${esc(q?.nombre || nombreDe(a.sel))}</button>${matiz ? ` <span class="be-muted">(${esc(matiz)})</span>` : ''}${a.deducido ? ' <span class="be-chip etiqueta-deducido" title="Lo deduce la fuente; el texto bíblico no lo dice">deducido</span>' : ''}${fecha ? `<span class="fam-fecha">${esc(fecha)}</span>` : ''}${a.ref ? `<span class="fam-refs">${BE.chipsCitas(a.ref)}</span>` : ''}</li>`;
+    const matiz = matizCargo || (varios && /\s/.test((a.palabra || '').trim()) ? a.palabra : '');
+    const titulo = [enFila ? fecha : '', a.razon].filter(Boolean).join(' · ');
+    return `<li><button type="button" class="enlace-texto" data-sel="${esc(a.sel)}"${titulo ? ` title="${esc(titulo)}"` : ''}>${esc(q?.nombre || nombreDe(a.sel))}</button>${matiz ? ` <span class="be-muted">(${esc(matiz)})</span>` : ''}${a.deducido ? ` ${etiquetaDeducido}` : ''}${fecha && !enFila ? `<span class="fam-fecha">${esc(fecha)}</span>` : ''}${a.ref ? `<span class="fam-refs">${BE.chipsCitas(a.ref)}</span>` : ''}</li>`;
   };
+  const lista = (xs, f) => `<ul${xs.length > 3 ? ' class="fam-fila"' : ''}>${xs.map((a) => f(a, xs.length > 3)).join('')}</ul>`;
   // Con una sola persona el título es su vínculo («Padre», «Esposo», «Padre adoptivo»); con varias, el plural.
   const titulo = (k, plural) => (g[k].length === 1 && g[k][0].palabra ? mayuscula(g[k][0].palabra) : plural);
-  return `<section class="be-card ficha-sec familia"><div class="be-card__pad"><h3 class="be-card__eyebrow">Familia</h3>
-    <dl class="familia-lista">${GRUPOS_FAMILIA.filter(([k]) => g[k].length).map(([k, plural]) => `<dt>${esc(titulo(k, plural))}</dt><dd><ul>${g[k].map((a) => miembro(a, g[k].length > 1)).join('')}</ul></dd>`).join('')}</dl></div></section>`;
+  for (const [k, plural] of GRUPOS_FAMILIA) {
+    if (!g[k].length || (k === 'siblings' && g[k].length > MAX_HERMANOS)) continue;
+    filas.push([titulo(k, plural), lista(g[k], (a, enFila) => miembro(a, g[k].length > 1, enFila))]);
+  }
+  const hayFamilia = filas.length > 0;
+  const conCargo = (a) => { const es = oficioEs(a.oficio, [id, a.sel.slice(8)]); return es ? `como ${es}` : ''; };
+  if (s.antes.length) filas.push([s.antes.length > 1 ? 'Predecesores' : 'Predecesor', lista(s.antes, (a, enFila) => miembro(a, true, enFila, conCargo(a)))]);
+  if (s.despues.length) filas.push([s.despues.length > 1 ? 'Sucesores' : 'Sucesor', lista(s.despues, (a, enFila) => miembro(a, true, enFila, conCargo(a)))]);
+  // Un cargo que sale de un periodo (origin «period:<id>») enlaza ese periodo; el resto es su nombre y, si lo tiene, su lugar.
+  const cargo = (o) => {
+    const pe = String(o.origin || '').startsWith('period:') ? (BE.D.periodos || []).find((x) => x.id === o.origin.slice(7)) : null;
+    const fecha = o.date ? (o.date.texto || fechaCorta(o.date)) : '';
+    const lugar = o.place && BE.L[o.place] ? ` en <button type="button" class="enlace-texto" data-sel="lugar:${esc(o.place)}">${esc(nombreDe(`lugar:${o.place}`))}</button>` : '';
+    const que = pe ? `<button type="button" class="enlace-texto" data-sel="periodo:${esc(pe.id)}"${o.reason ? ` title="${esc(o.reason)}"` : ''}>${esc(pe.nombre)}</button>`
+      : `<span${o.reason ? ` title="${esc(o.reason)}"` : ''}>${esc(o.es || o.office)}</span>${lugar}`;
+    return `<li>${que}${o.inferred ? ` ${etiquetaDeducido}` : ''}${fecha ? `<span class="fam-fecha">${esc(fecha)}</span>` : ''}</li>`;
+  };
+  if (cargos.length) filas.push([cargos.length > 1 ? 'Cargos' : 'Cargo', `<ul>${cargos.map(cargo).join('')}</ul>`]);
+  if (!filas.length) return '';
+  const hayCargo = s.antes.length || s.despues.length || cargos.length;
+  const cabecera = hayFamilia && hayCargo ? 'Familia y cargo' : hayFamilia ? 'Familia' : 'Cargo';
+  return `<div class="familia-cargo"><h3 class="be-card__eyebrow">${cabecera}</h3>
+    <dl class="familia-lista">${filas.map(([t, dd]) => `<dt>${esc(t)}</dt><dd>${dd}</dd>`).join('')}</dl></div>`;
 }
+
+// El resto de las relaciones, por clases. Las claves son las de data/vocabulary.yaml (tipo y palabra); el sentido
+// importa donde la palabra no es simétrica: quien escribe «master» sirve al destino, y en la ficha del destino es al
+// revés. Una relación que ninguna clase reconoce cae en «Otras relaciones»: nunca se pierde.
+const SIRVE = new Set(['master', 'mistress']);
+const GRUPOS_RELACION = [
+  ['hermanos', 'Hermanos', (a) => a.grupoFamilia === 'siblings' && a.sel.startsWith('persona:')],
+  ['parientes', 'Otros parientes', (a) => a.type === 'kin'],
+  ['a-su-servicio', 'A su servicio', (a) => a.type === 'tie' && ((SIRVE.has(a.palabraVoc) && a.inversa) || (a.palabraVoc === 'servant' && !a.inversa))],
+  ['sirvio-a', 'Al servicio de', (a) => a.type === 'tie' && ((SIRVE.has(a.palabraVoc) && !a.inversa) || (a.palabraVoc === 'servant' && a.inversa))],
+  ['maestro', 'Su maestro', (a) => a.type === 'disciple_of' && !a.inversa],
+  ['discipulos', 'Sus discípulos', (a) => a.type === 'disciple_of' && a.inversa],
+  ['companeros', 'Compañeros', (a) => a.type === 'accompanies'],
+  ['amigos', 'Amigos y aliados', (a) => a.type === 'tie' && (a.palabraVoc === 'friend' || a.palabraVoc === 'ally')],
+  ['enemigos', 'Enemigos', (a) => a.type === 'tie' && a.palabraVoc === 'enemy'],
+  ['trato', 'Otros tratos', (a) => a.type === 'tie'],
+  ['apariciones', 'Apariciones', (a) => a.type === 'appears_to'],
+  ['misma', '¿La misma persona?', (a) => a.type === 'same_as'],
+  ['lugares', 'Lugares', (a) => a.sel.startsWith('lugar:')],
+  ['otras', 'Otras relaciones', () => true],
+];
+/** [{ k, titulo, items }] en el orden de GRUPOS_RELACION, solo las clases con algo. */
+function gruposRelacion(rels) {
+  const por = new Map();
+  for (const a of rels) {
+    const [k, titulo] = GRUPOS_RELACION.find(([, , es]) => es(a));
+    if (!por.has(k)) por.set(k, { k, titulo, items: [] });
+    por.get(k).items.push(a);
+  }
+  return GRUPOS_RELACION.map(([k]) => por.get(k)).filter(Boolean);
+}
+// Una clase de tres relaciones o menos va abierta; las demás, plegadas con su cuenta. Lo abierto a mano se recuerda por
+// persona mientras dura la visita: la ficha se vuelve a pintar (llegan los vídeos, Atrás) sin cerrar nada.
+const ABIERTA_HASTA = 3;
+const ABIERTOS = new Map();
+function grupoRelacionHtml(id, gr, li) {
+  const n = gr.items.length;
+  const cuerpo = gr.items.map(li).join('');
+  if (n <= ABIERTA_HASTA) return `<div class="rel-grupo"><h4 class="rel-grupo__titulo">${esc(gr.titulo)} <b class="cuenta">${n}</b></h4><ul class="relaciones">${cuerpo}</ul></div>`;
+  const abierto = !!ABIERTOS.get(id)?.has(gr.k);
+  const lid = `rel-grupo-${id}-${gr.k}`;
+  return `<div class="rel-grupo rel-grupo--plegable"><h4 class="rel-grupo__titulo"><button type="button" class="rel-grupo__boton" aria-expanded="${abierto}" aria-controls="${esc(lid)}" data-rel-grupo="${esc(gr.k)}" data-persona="${esc(id)}"><span>${esc(gr.titulo)}</span> <b class="cuenta">${n}</b></button></h4>
+    <ul class="relaciones" id="${esc(lid)}"${abierto ? '' : ' hidden'}>${cuerpo}</ul></div>`;
+}
+document.addEventListener('click', (e) => {
+  const b = e.target.closest?.('[data-rel-grupo]');
+  if (!b) return;
+  const abrir = b.getAttribute('aria-expanded') !== 'true';
+  b.setAttribute('aria-expanded', String(abrir));
+  const lista = document.getElementById(b.getAttribute('aria-controls'));
+  if (lista) lista.hidden = !abrir;
+  const abiertos = ABIERTOS.get(b.dataset.persona) || new Set();
+  if (abrir) abiertos.add(b.dataset.relGrupo); else abiertos.delete(b.dataset.relGrupo);
+  ABIERTOS.set(b.dataset.persona, abiertos);
+});
 
 // Vídeos de jw.org que nombran a la persona (site/videos-personas.json). Si el fichero falta o se abre desde file://,
 // la sección no sale y no se dice nada.
@@ -224,7 +331,10 @@ function fichaPersona(id) {
   const nSinPasaje = sinPasaje(id);
   const avisoSinPasaje = nSinPasaje ? `<p class="be-muted">${nSinPasaje === 1 ? 'Una relación no se muestra: todavía no cita un pasaje.' : `${nSinPasaje} relaciones no se muestran: todavía no citan un pasaje.`}</p>` : '';
   cargarVideosPersonas();
-  const rels = as.filter((a) => a.origen === 'relacion' && !(a.grupoFamilia && a.sel.startsWith('persona:')));
+  // Lo que ya sale en «Familia y cargo» no se repite abajo; los hermanos, si son muchos, sí van abajo, plegados.
+  const muchosHermanos = familia(id).siblings.length > MAX_HERMANOS;
+  const rels = as.filter((a) => a.origen === 'relacion' && !esSucesion(a)
+    && !(a.grupoFamilia && a.sel.startsWith('persona:') && !(muchosHermanos && a.grupoFamilia === 'siblings')));
   const lugares = [];
   for (const a of as.filter((x) => x.grupo === 'Lugares').sort((x, y) => (x.tr?.[0] ?? 1e9) - (y.tr?.[0] ?? 1e9))) {
     if (!lugares.some((l) => l.sel === a.sel)) lugares.push(a);
@@ -233,22 +343,23 @@ function fichaPersona(id) {
   const viajes = as.filter((a) => a.origen === 'viaje' && a.sel.startsWith('viaje:'));
   const cartas = as.filter((a) => a.origen === 'carta');
   const recorridos = (BE.D.recorridos || []).filter((r) => (r.paradas || []).some((x) => x.sel === `persona:${id}`));
-  const tag = (a) => (a.deducido ? '<span class="be-chip etiqueta-deducido" title="Lo deduce la fuente; el texto bíblico no lo dice">deducido</span>' : '');
+  const tag = (a) => (a.deducido ? etiquetaDeducido : '');
+  const relacionLi = (a) => `<li>${verboConBoton(a)}${tag(a)}
+        <span class="rel-meta">${a.fecha ? esc(textoFecha(a)) : ''}${a.fecha && a.ref ? ' · ' : ''}${a.ref ? BE.chipsCitas(a.ref) : ''}</span>${a.razon ? `<span class="rel-razon">${esc(a.razon)}</span>` : ''}</li>`;
   return `${BE.migas(BE.t('Personas'), p.nombre)}${BE.cerrarHtml()}
     <section class="be-card"><div class="be-card__pad">
       <div class="cabecera-carta"><span class="be-node be-node--persona be-node--lg" aria-hidden="true">${esc(p.nombre[0])}</span>
       <div><h2 class="be-card__title">${esc(p.nombre)}</h2>${BE.nombresHtml(p)}</div></div>
       ${p.resumen ? `<p class="be-card__body en-una-frase">${esc(p.resumen)}</p>` : ''}
       ${p.desambiguacion ? `<div class="be-note"><span aria-hidden="true">≠</span><span>${esc(p.desambiguacion)}</span></div>` : ''}
+      ${familiaCargoHtml(id)}
       ${barraVida(p)}
       ${BE.enlacesHtml(p.enlaces)}
       <div class="acciones-persona"><button type="button" class="be-btn be-btn--sm" data-grafo="${esc(id)}">${BE.t('Ver en el grafo')}</button><button type="button" class="be-btn be-btn--sm" data-relacionar="persona:${esc(id)}">${BE.t('Relacionar con…')}</button></div>
     </div><div class="be-card__foot">${BE.estadoHtml(p.estado)}</div></section>
-    ${familiaHtml(id)}
     ${recorridos.length ? `<div class="be-note be-note--uncertain aviso-recorrido"><span aria-hidden="true">◎</span><span>Esta ficha forma parte de un recorrido: ${recorridos.map((r) => `<button type="button" class="enlace-texto" data-sel="recorrido:${esc(r.id)}">${esc(r.titulo)}</button>`).join(', ')}.</span></div>` : ''}
     ${rels.length || avisoSinPasaje ? `<section class="be-card ficha-sec"><div class="be-card__pad"><h3 class="be-card__eyebrow">${BE.t('Relaciones')} <b class="cuenta">${rels.length}</b></h3>
-      ${rels.length ? `<ul class="relaciones">${rels.map((a) => `<li>${verboConBoton(a)}${tag(a)}
-        <span class="rel-meta">${a.fecha ? esc(textoFecha(a)) : ''}${a.fecha && a.ref ? ' · ' : ''}${a.ref ? BE.chipsCitas(a.ref) : ''}</span>${a.razon ? `<span class="rel-razon">${esc(a.razon)}</span>` : ''}</li>`).join('')}</ul>` : ''}${avisoSinPasaje}</div></section>` : ''}
+      ${gruposRelacion(rels).map((gr) => grupoRelacionHtml(id, gr, relacionLi)).join('')}${avisoSinPasaje}</div></section>` : ''}
     ${lugares.length ? `<section class="be-card ficha-sec"><div class="be-card__pad"><h3 class="be-card__eyebrow">${BE.t('Lugares de su vida')} <b class="cuenta">${lugares.length}</b></h3>
       <div class="be-list">${lugares.slice(0, 14).map((a) => BE.botonSel(a.sel, nombreDe(a.sel), esc([a.tr ? textoFecha(a) : '', a.verbo].filter(Boolean).join(' · ')))).join('')}</div>
       ${lugares.length > 14 ? `<p class="be-muted">Y ${lugares.length - 14} más: están todos en el grafo.</p>` : ''}</div></section>` : ''}
@@ -328,5 +439,5 @@ BE.tipo('persona', {
   },
 });
 
-Object.assign(BE, { aristas, familia, vigencia, tramoAbierto, lugarActual, textoFechaArista: textoFecha, nombreDeSel: nombreDe });
+Object.assign(BE, { aristas, familia, sucesion, gruposRelacion, vigencia, tramoAbierto, lugarActual, textoFechaArista: textoFecha, nombreDeSel: nombreDe });
 })();

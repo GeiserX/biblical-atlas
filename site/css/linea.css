@@ -153,7 +153,11 @@
 
 
 /* ---------- Cuerpo de la línea: la regla arriba, fija al bajar; los carriles debajo, cada uno con sus filas ---------- */
-.linea-cuerpo { grid-column: 1 / -1; position: relative; min-height: 0; overflow-x: hidden; overflow-y: auto; overscroll-behavior: contain; }
+/* overflow-y: scroll y no auto: la barra de desplazamiento se queda aunque los carriles quepan. Con auto se iba al cambiar
+   de escala (de «Años» a «Meses» los carriles bajan de alto y caben) y volvía al salir, y con ella la regla y los carriles
+   ganaban y perdían su ancho: todo saltaba 15 px. Donde la barra flota sobre el contenido (macOS con trackpad, el
+   móvil) no cambia nada. */
+.linea-cuerpo { grid-column: 1 / -1; position: relative; min-height: 0; overflow-x: hidden; overflow-y: scroll; overscroll-behavior: contain; }
 .linea-cabeza { position: sticky; top: 0; z-index: 6; display: grid; grid-template-columns: var(--carril-w) minmax(0, 1fr); background: var(--surface); border-bottom: 1px solid var(--line-2); }
 .linea-cabeza .carriles-eje { background: var(--surface-2); border-right: 1px solid var(--line); border-bottom: 0; }
 .linea-pista { position: relative; height: 26px; overflow: hidden; }
@@ -236,6 +240,9 @@
 .linea-filas:not(.sin-foco) .m.atenuado .m-sigue { background: var(--ink-3); }
 .linea-filas:not(.sin-foco) .m.atenuado .m-nombre.en-barra { color: var(--ink) !important; }
 .m.resaltado :is(.m-barra, .m-punto) { box-shadow: 0 0 0 1.5px var(--surface), 0 0 0 3px var(--gold); }
+/* Un suceso que la reproducción pasó sin parar, a escala de décadas o más (linea.js, marcarPasados): su nombre queda
+   lleva fondo dorado hasta que pasa el siguiente suceso tras una parada. */
+.m.de-paso .m-nombre .t { background: var(--gold-soft); border-radius: 3px; }
 @media (pointer: coarse) {
   .linea-pista { height: 44px; }
   .carril-rotulo .be-lane-label { top: 45px; min-height: 44px; }

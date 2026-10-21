@@ -356,7 +356,8 @@ test('430: with the sheet folded, «Ir a la ficha» unfolds it and moves the foc
 
 test('choosing in the card or in the search keeps the focus in the card', async () => {
   const page = await keyboardPage('1440', 'sel=persona:pablo&t=50.3000');
-  await page.locator('#panel-cuerpo [data-sel="lugar:tarso"]').first().focus();
+  // A visible one: the card folds a big group of relations, and a button in a folded group takes no focus.
+  await page.locator('#panel-cuerpo [data-sel="lugar:tarso"]:visible').first().focus();
   await page.keyboard.press('Enter');
   await page.waitForFunction(() => window.BE.E.sel?.id === 'tarso');
   await settle(page);
