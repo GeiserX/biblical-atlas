@@ -149,6 +149,89 @@ test('a companion who is the chosen person keeps his own marker while he travels
   assert.deepEqual([r.plain, r.chosen], [false, true]);
 });
 
+// Sergio chose Timoteo while Paul was in Rome and only ever saw Paul: Timoteo's marker sat under Paul's, its name lost
+// to Paul's and to Roma's, nothing on the map traced where Timoteo had been, and playback followed Paul. Now the chosen
+// companion's marker goes on top of Paul's with its name and «con Pablo», the map draws the companion's own route
+// (be-persona: travelled so far, still to go, a dot on each place) and playback follows the companion.
+test('a chosen companion travelling with Paul shows on top of Paul, named, with his own route drawn', async () => {
+  const r = await page.evaluate(async () => {
+    const { BE, setT, seleccionar, map } = window.__be;
+    const frame = () => new Promise((res) => requestAnimationFrame(() => setTimeout(res, 0)));
+    const centro = (el) => { const q = el.getBoundingClientRect(); return [q.left + q.width / 2, q.top + q.height / 2]; };
+    // Troas on the second journey: Timoteo goes with Paul (Hch 16:8).
+    const s = BE.P.find((x) => x.viaje.id === 'segundo-viaje' && x.lugar.id === 'troas' && BE.acompanantes(x.viaje, x.p.orden).includes('timoteo'));
+    const t = (s.a + s.b) / 2;
+    seleccionar({ tipo: 'persona', id: 'timoteo' }, { mover: false, encuadrar: false }); setT(t);
+    map.jumpTo({ center: [s.lugar.lon, s.lugar.lat], zoom: 6 });
+    await frame(); await frame();
+    window.BE.pintarEtiquetas(); await frame();
+    const el = document.querySelector('.viajero[data-sel="persona:timoteo"]');
+    const pablo = document.querySelector('.pablo .pablo-punto');
+    const out = { at: s.lugar.nombre, marker: !!el?.isConnected };
+    if (el?.isConnected) {
+      const [x, y] = centro(el.querySelector('.viajero-punto')), [px, py] = centro(pablo);
+      out.apart = Math.round(Math.hypot(x - px, y - py));
+      out.onTop = !!document.elementFromPoint(x, y)?.closest('.viajero[data-sel="persona:timoteo"]');
+      out.name = el.querySelector('.viajero-rotulo').checkVisibility({ visibilityProperty: true });
+      out.conPablo = !!el.querySelector('.viajero-rotulo small')?.checkVisibility({ visibilityProperty: true });
+    }
+    const src = map.getSource('be-persona');
+    const fs = src ? (await src.getData()).features : null;
+    out.route = fs && { hecho: fs.filter((f) => f.geometry.type === 'LineString' && f.properties.estado === 'hecho').length,
+      falta: fs.filter((f) => f.geometry.type === 'LineString' && f.properties.estado === 'falta').length,
+      places: [...new Set(fs.filter((f) => f.geometry.type === 'Point').map((f) => f.properties.lugar))] };
+    // Choosing nothing takes the route and the marker away again.
+    seleccionar(null, { mover: false, encuadrar: false }); await frame(); await frame();
+    out.after = { marker: !!document.querySelector('.viajero[data-sel="persona:timoteo"]')?.isConnected, route: src ? (await src.getData()).features.length : null };
+    return out;
+  });
+  console.log(`Timoteo at ${r.at}: ${JSON.stringify(r)}`);
+  assert.ok(r.marker, 'Timoteo has a marker while he is chosen');
+  assert.ok(r.apart <= 2, `Timoteo's dot is ${r.apart} px from Paul's, they travel together`);
+  assert.ok(r.onTop, 'Timoteo\'s dot is on top of Paul\'s');
+  assert.ok(r.name && r.conPablo, 'his name and «con Pablo» show');
+  assert.ok(r.route, 'the map has a source for the chosen person\'s route');
+  assert.ok(r.route.hecho >= 1 && r.route.falta >= 1, `his route so far and still to go: ${JSON.stringify(r.route)}`);
+  for (const id of ['listra', 'troas', 'filipos', 'berea', 'corinto', 'efeso', 'roma']) assert.ok(r.route.places.includes(id), `his route passes ${id}: ${r.route.places.join(', ')}`);
+  assert.deepEqual(r.after, { marker: false, route: 0 });
+});
+
+test('playing with a companion chosen, the map follows him and not Paul', async () => {
+  const r = await page.evaluate(async () => {
+    const { BE, E, setT, seleccionar, map } = window.__be;
+    const frame = () => new Promise((res) => requestAnimationFrame(() => setTimeout(res, 0)));
+    // A moment when the data put Timoteo far from Paul (Macedonia while Paul is still around Éfeso, Hch 19:22).
+    let t = null;
+    for (let x = 54.9; x < 56; x += 0.01) {
+      const a = BE.donde('timoteo', x), b = BE.dondeEsta(x);
+      if (a?.pos && b?.pos && Math.hypot(a.pos[0] - b.pos[0], a.pos[1] - b.pos[1]) > 3) { t = x; break; }
+    }
+    seleccionar({ tipo: 'persona', id: 'timoteo' }, { mover: false, encuadrar: false }); setT(t);
+    await frame();
+    // The map on Paul, close enough that Timoteo is off it.
+    map.jumpTo({ center: BE.dondeEsta(t).pos, zoom: 7 });
+    await frame();
+    const dentro = () => {
+      const el = document.querySelector('.viajero[data-sel="persona:timoteo"]');
+      if (!el?.isConnected) return null;
+      const q = el.getBoundingClientRect(), c = map.getContainer().getBoundingClientRect();
+      return q.left >= c.left && q.right <= c.right && q.top >= c.top && q.bottom <= c.bottom;
+    };
+    const antes = dentro();
+    E.play = true;
+    for (let k = 0; k < 5; k++) { setT(t + k * 0.0005); await frame(); }
+    E.play = false;
+    await new Promise((res) => setTimeout(res, 1300));
+    const despues = dentro();
+    seleccionar(null, { mover: false, encuadrar: false }); await frame();
+    return { t, antes, despues };
+  });
+  console.log(`playing at ${r.t?.toFixed(2)} with Timoteo chosen: in view before ${r.antes}, after ${r.despues}`);
+  assert.ok(r.t != null, 'no moment with Timoteo apart from Paul');
+  assert.equal(r.antes, false, 'Timoteo starts off the map');
+  assert.equal(r.despues, true, 'playback brought Timoteo into view');
+});
+
 test('no page error in the whole run', () => {
   assert.deepEqual(errors, []);
 });

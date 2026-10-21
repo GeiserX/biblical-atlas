@@ -60,6 +60,8 @@
   .portada-pie a { display: inline-block; padding: 13px 0; }
   /* Lo que recorta su propio contenido (texto cortado con «…») no puede sacar su zona fuera: crece de verdad. */
   .tira-suceso, .leyenda-boton { height: 44px; }
+  /* La cabecera de la leyenda y su flecha de plegar, en la tarjeta del mapa: crecen de verdad, a 44 px. */
+  .leyenda-cabecera, .leyenda-plegar { min-height: 44px; }
   .mientras-titulo { min-height: 44px; display: flex; align-items: center; }
   /* Lo que no admite un ::after (campos y desplegables) o va en fila con sus vecinos crece de verdad. */
   .cap { min-width: 44px; height: 44px; }

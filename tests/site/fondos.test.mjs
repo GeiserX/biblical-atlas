@@ -30,9 +30,10 @@ const ROOT = process.env.BE_ROOT ? path.resolve(process.env.BE_ROOT) : path.reso
 const DESKTOP = { name: '1440', viewport: { width: 1440, height: 900 } };
 const PHONE = { name: '430', viewport: { width: 430, height: 932 }, isMobile: true, hasTouch: true };
 // What the first view may ask for, per screen: the one image of the old style it draws, and nothing else.
-const FIRST_VIEW = { 1440: 'mediterraneo', 430: 'mundo' };
+// Since the map opens wider (zoom 4.2, before the Mediterranean fades in at 4.3), both draw the world.
+const FIRST_VIEW = { 1440: 'mundo', 430: 'mundo' };
 // What it asks for once the map has rested: the first view and every image coarser than it.
-const AT_REST = { 1440: ['mediterraneo-antiguo.webp', 'mundo-antiguo.webp'], 430: ['mundo-antiguo.webp'] };
+const AT_REST = { 1440: ['mundo-antiguo.webp'], 430: ['mundo-antiguo.webp'] };
 // Bytes of backgrounds until the map first rests. Before the lazy loading it asked for all four, 1,824,877 bytes.
 // At quality 82 the one image alone broke it too: the Mediterranean weighed 575,830 bytes and the world 880,494; at
 // quality 70 they weigh 393,250 and 530,802.
@@ -168,7 +169,7 @@ test('the first view asks only for the image it draws, under the budget, at 1440
     console.log(`${screen.name}: zoom ${zoom}, first view ${fondos.join(', ') || 'nothing'}, ${bytes} bytes; then ${asked(page).join(', ')}`);
     assert.deepEqual(fondos, [`${FIRST_VIEW[screen.name]}-antiguo.webp`], `${screen.name}: the first view asked for other backgrounds`);
     assert.ok(bytes <= FIRST_VIEW_BUDGET, `${screen.name}: ${bytes} bytes of backgrounds, budget ${FIRST_VIEW_BUDGET}`);
-    // Once at rest, the coarser ones: the world under the Mediterranean on the desktop, nothing under the world.
+    // Once at rest, the coarser ones: nothing under the world.
     assert.deepEqual(asked(page), AT_REST[screen.name], `${screen.name}: at rest`);
     const l = await imageLayers(page);
     assert.deepEqual(l.loaded.sort(), AT_REST[screen.name].map((f) => `be-antiguo-${f.replace('-antiguo.webp', '')}`).sort());
@@ -238,6 +239,8 @@ test('a gesture asks for what it shows while it moves; a move asked by the site 
 test('the map of today asks for its images only when shown, and with «Relieve» off nothing more is asked for', async () => {
   const page = await open(DESKTOP);
   assert.ok(asked(page).every((f) => f.endsWith('-antiguo.webp')));
+  // The Aegean at zoom 5.3, where the Mediterranean is drawn over the world (the map opens wider, on the world alone).
+  await go(page, 28.2, 38.2, 5.3);
   await page.evaluate(() => window.__be.ponerMapa('actual'));
   await still(page);
   assert.deepEqual(asked(page).filter((f) => f.endsWith('-actual.webp')), ['mediterraneo-actual.webp', 'mundo-actual.webp']);
