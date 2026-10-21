@@ -407,13 +407,13 @@ Pablo se escribe como los demás. Lo que lo trata aparte está en el sitio y en 
 
 ## 10. La regla de la arista
 
-**Cada arista que dibuja el sitio lleva un verbo, una fecha cuando se sabe y una referencia. Una arista sin referencia no se dibuja.**
+**Cada arista que dibuja el sitio lleva un verbo, una fecha cuando se sabe y una referencia. Una arista sin referencia no se dibuja.** La referencia es un pasaje o, si la Biblia no lo dice, una publicación de jw.org entre las fuentes.
 
 - **El verbo** sale del vocabulario y nunca es un identificador. `build.py` lo compila en cada relación y no compila si a un tipo o a una palabra les falta un verbo.
 - **La fecha** es la de la relación. Si no la tiene, la arista dice «sin fecha».
 - **La referencia** es un pasaje. Sale, por este orden, de los pasajes que cita la `reason` de la relación, de los capítulos que hay entre sus fuentes y de los tramos de la cobertura que citan esa relación. `build.py` la compila en `reference`.
 
-Las fuentes solas no son una referencia. Hoy 68 de las 1435 relaciones no citan ningún pasaje, no tienen un capítulo entre sus fuentes y ningún tramo de la cobertura las cita: 27 de parentesco, 26 de dónde vivió alguien, 7 de dónde nació, 4 sucesiones, 2 identidades, 1 muerte y 1 compañía. Avisan como `no_reference` y su arista deja de dibujarse hasta que alguien apunte el pasaje. Hoy se dibujan con las fuentes como única referencia.
+Cuando la Biblia no lo dice, la referencia es la primera publicación de jw.org entre las fuentes (Perspicacia u otra): el padre de Nabucodonosor, Nabopolasar, no sale en ningún pasaje y Perspicacia lo nombra. La ficha la dibuja con un enlace a esa publicación en lugar de una cita, y el grafo con la marca «sin pasaje». Una fuente que no es de jw.org no basta. Hoy 68 de las 1435 relaciones no citan ningún pasaje, no tienen un capítulo entre sus fuentes y ningún tramo de la cobertura las cita: 27 de parentesco, 26 de dónde vivió alguien, 7 de dónde nació, 4 sucesiones, 2 identidades, 1 muerte y 1 compañía. Avisan como `no_reference`, para que se busque el pasaje si lo hay, y se dibujan con su publicación de jw.org como referencia.
 
 La arista «está aquí ahora» toma la referencia y las fuentes de la estancia que la sitúa, o no se dibuja.
 
