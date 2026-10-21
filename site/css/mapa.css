@@ -91,7 +91,20 @@
 .mientras-titulo::after { content: ""; position: absolute; inset: 0; border-radius: inherit; }
 .mientras .fila-chips { position: relative; z-index: 1; }
 .leyenda { position: absolute; left: 14px; bottom: 28px; z-index: 2; max-height: calc(100% - 120px); overflow: auto; }   /* con el mapa bajo (línea ampliada), la leyenda se desplaza en vez de tapar los botones del mapa */
-.leyenda .be-card__eyebrow { margin-bottom: 2px; }
+.leyenda .be-card__eyebrow { margin: 0; }
+/* Plegable (mapa.js, montarLeyenda): la cabecera es un botón con el título y una flecha; abajo, otra flecha la pliega. */
+.leyenda-cabecera, .leyenda-plegar { display: flex; align-items: center; gap: 8px; border: 0; background: none; padding: 0; color: var(--ink-2); font: inherit; cursor: pointer; border-radius: var(--r-sm, 6px); }
+.leyenda-cabecera { justify-content: space-between; width: 100%; min-height: 28px; text-align: left; }
+.leyenda-plegar { justify-self: center; justify-content: center; width: 44px; min-height: 24px; margin-top: -2px; }
+.leyenda-cabecera:hover, .leyenda-plegar:hover { color: var(--ink); }
+.leyenda-cabecera:hover .be-card__eyebrow { color: var(--ink); }
+.leyenda-chevron { width: 16px; height: 16px; flex: none; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; transition: transform .15s; }
+.leyenda-cabecera[aria-expanded="true"] .leyenda-chevron, .leyenda-plegar .leyenda-chevron { transform: rotate(180deg); }
+.leyenda-filas { display: grid; gap: 6px; }
+.leyenda-filas[hidden] { display: none; }
+.leyenda-cuerpo { display: grid; gap: 6px; }
+.leyenda--plegada { padding-block: 4px; }
+@media (prefers-reduced-motion: reduce) { .leyenda-chevron { transition: none; } }
 .leyenda-rastro { width: 26px; border-top: 2px solid var(--ink-3); opacity: .5; }
 .leyenda-viajero { width: 26px; border-top: 3px solid var(--viajero, var(--ink-3)); }
 /* «↻ cada año» sobre la ruta de un viaje que se repetía cada año, en el color de la ruta, y su fila de la leyenda. No se
@@ -306,6 +319,14 @@ ol.paradas li:first-child .be-row { border-top: 0; }
 .viajero.estimada .viajero-punto { outline: 2px dashed var(--accent); outline-offset: 4px; }
 .viajero-rotulo { position: absolute; left: 16px; top: -14px; font: 700 11px/1 var(--font-sans); letter-spacing: .04em; text-transform: uppercase; color: color-mix(in srgb, var(--accent), #fff var(--aclarar)); white-space: nowrap; text-shadow: 0 0 2px var(--halo), 0 0 4px var(--halo); }
 .viajero.sin-etiqueta .viajero-rotulo { visibility: hidden; }
+.viajero-rotulo small { display: none; font: italic 500 11.5px var(--font-serif); letter-spacing: 0; text-transform: none; color: var(--ink-2); margin-top: 2px; }
+/* La persona elegida va encima del marcador de Pablo (z-index 4), con su nombre algo mayor y, mientras viaja con él,
+   «con Pablo» debajo: así se ve a quién se sigue aunque los dos estén en el mismo sitio. */
+.viajero--elegido { z-index: 5; }
+/* Debajo del punto, centrado: a la derecha va el nombre del lugar y arriba a la izquierda el de Pablo. */
+.viajero--elegido .viajero-rotulo { font-size: 12.5px; left: 50%; top: 22px; transform: translateX(-50%); text-align: center; }
+.viajero--elegido .viajero-punto { box-shadow: 0 0 0 1.5px var(--accent), 0 0 0 5px color-mix(in srgb, var(--accent) 28%, transparent); }
+.viajero--elegido.con-pablo .viajero-rotulo small { display: block; }
 
 /* Leyenda: muestras de candidatos y hallazgos */
 .leyenda-cand { width: 22px; height: 14px; border-radius: 7px; border: 1.5px dashed var(--cand); flex: none;

@@ -156,6 +156,10 @@ test('after one online visit the site opens offline: map, timeline and a card, w
   await waitCached(page, 'data.detail.json');
   await waitCached(page, 'maps/mundo-antiguo.webp');
   await waitCached(page, 'videos-personas.json');
+  // Pablo's life opens below zoom 4.3, where only the world relief is drawn. Bernabé's card, offline below, frames closer
+  // and draws the Mediterranean one: the reader looks closer once, so it is asked for and kept.
+  await page.evaluate(() => window.__be.map.jumpTo({ center: [30, 36], zoom: 5 }));
+  await waitCached(page, 'maps/mediterraneo-antiguo.webp');
   const tiles = async () => page.evaluate(async () => (await (await caches.open('biblical-atlas-teselas')).keys()).map((r) => r.url));
   for (let i = 0; i < 50 && !(await tiles()).includes(STYLE); i++) await page.waitForTimeout(200);
   assert.ok((await tiles()).includes(STYLE), `the map style is not in the tile cache: ${(await tiles()).join(', ')}`);

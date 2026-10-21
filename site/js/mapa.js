@@ -39,7 +39,26 @@ const AGUA = new Set(['mar', 'lago', 'rio', 'manantial', 'pozo']);
 const estrecha = () => matchMedia('(max-width: 760px)').matches;
 let map = null, mapaListo = false, capasBase = [], estiloReserva = false;
 
-const ENCUADRE_INICIAL = [[19.2, 34.0], [37.2, 42.2]];
+// De Cerdeña a Mesopotamia y de Egipto al mar Negro: al abrir se ve la región entera, no solo el Egeo (con
+// [[19.2, 34], [37.2, 42.2]] el mapa abría tan cerca que no se sabía dónde quedaba lo que se miraba). A 1440 × 900 abre
+// en el zoom 4,2, antes de que el relieve del Mediterráneo empiece a fundirse (4,3): la primera vista pide una sola
+// imagen, la del mundo (fondos.test.mjs). En el teléfono, mostrarPablo no pasa de ZOOM_MOVIL por lo mismo.
+const ENCUADRE_INICIAL = [[10, 28], [46, 45.5]];
+const ZOOM_MOVIL = 4.2;
+/** Al encuadrar una persona, un periodo o una época, la caja se ensancha hasta AIRE veces alrededor de su centro (unos
+    0,85 niveles de zoom): se ve la región que la rodea y no solo sus lugares pegados a los bordes. Una caja grande ya
+    enseña su región: el aire baja con su diagonal y desaparece a los AIRE_KM km (Ofir y la India en tiempos de
+    Salomón). En el teléfono, el mapa que queda sobre la hoja es pequeño y con todo el aire se iba al zoom mínimo: allí
+    es AIRE_MOVIL. */
+const AIRE = 1.8, AIRE_MOVIL = 1.4, AIRE_KM = 3000;
+/** La caja [[oeste, sur], [este, norte]] ensanchada alrededor de su centro, en Mercator (como la ve el mapa). */
+function conAire(caja) {
+  const [[o, s], [e, n]] = caja;
+  const f = 1 + ((estrecha() ? AIRE_MOVIL : AIRE) - 1) * clamp(1 - diagonalKm(caja) / AIRE_KM, 0, 1);
+  const cx = (o + e) / 2, dx = ((e - o) / 2) * f;
+  const ys = mercY(s), yn = mercY(n), cy = (ys + yn) / 2, dy = ((yn - ys) / 2) * f;
+  return [[Math.max(MUNDO.oeste, cx - dx), Math.max(MUNDO.sur, latDeY(cy - dy))], [Math.min(MUNDO.este, cx + dx), Math.min(MUNDO.norte, latDeY(cy + dy))]];
+}
 let resaltadoMapa = null;           // Set de ids que pide BE.mapa.resaltar; null: manda la selección
 let vecinosMapa = null;             // Set: los lugares de la parada de antes y la de después de un recorrido (resaltar)
 let conFoco = true;                 // false: el reparto de fuera de una ruta también en ella, para compararlo (BE.mapa.conFoco)
@@ -182,7 +201,7 @@ function crearMapa() {
   map.once('load', () => {
     map.getContainer().querySelector('.maplibregl-compact-show')?.classList.remove('maplibregl-compact-show');
     const attrib = map.getContainer().querySelector('.maplibregl-ctrl-attrib');
-    if (attrib) new ResizeObserver(() => { $('#leyenda').style.bottom = `${Math.max(28, attrib.offsetHeight + 10)}px`; }).observe(attrib);
+    if (attrib) new ResizeObserver(subirLeyenda).observe(attrib);
   });
   map.addControl(new maplibregl.NavigationControl({ showCompass: false }), 'top-right');
   map.addControl(new ControlCapas(), 'top-right');
@@ -293,7 +312,7 @@ function montarCapas() {
     colocarImgsDom();
   }
   const vacio = { type: 'FeatureCollection', features: [] };
-  for (const id of ['be-rastro', 'be-hecho', 'be-falta', 'be-cartas', 'be-cartas-o', 'be-halo', 'be-zonas', 'be-cand-lineas', 'be-zonas-carta', 'be-formas', 'be-areas']) map.addSource(id, { type: 'geojson', data: vacio });
+  for (const id of ['be-rastro', 'be-hecho', 'be-falta', 'be-cartas', 'be-cartas-o', 'be-halo', 'be-zonas', 'be-cand-lineas', 'be-zonas-carta', 'be-formas', 'be-areas', 'be-persona']) map.addSource(id, { type: 'geojson', data: vacio });
   const lineas = { 'line-cap': 'round', 'line-join': 'round' };
   for (const v of BE.D.viajes) map.addImage(`be-flecha-${v.id}`, imagenFlecha(colorViaje(v.id)));
   for (const [k, s] of Object.entries(CAND)) map.addImage(`be-rayado-${k}`, imagenRayado(s.color, k));
@@ -346,6 +365,14 @@ function montarCapas() {
   map.addLayer({ id: 'be-hecho-deducido', type: 'line', source: 'be-hecho', filter: deducidos, layout: lineas, paint: { 'line-color': color, 'line-width': 3.5, 'line-dasharray': [0.1, 1.6] } });
   map.addLayer({ id: 'be-falta-flechas', source: 'be-falta', ...flecha('line-center', 0.6, 80) });
   map.addLayer({ id: 'be-hecho-flechas', source: 'be-hecho', ...flecha('line-center', 1, 80) });
+  // El recorrido de la persona elegida que viaja con Pablo (pintarRecorridoElegida): encima de la ruta de Pablo, que en
+  // los tramos que hacen juntos pasa por debajo.
+  const dePersona = (estado, tipo) => ['all', ['==', ['geometry-type'], tipo], ['==', ['get', 'estado'], estado]];
+  map.addLayer({ id: 'be-persona-falta', type: 'line', source: 'be-persona', filter: dePersona('falta', 'LineString'), layout: lineas, paint: { 'line-color': color, 'line-width': 2.5, 'line-dasharray': [0.3, 2.2], 'line-opacity': 0.8 } });
+  map.addLayer({ id: 'be-persona-casing', type: 'line', source: 'be-persona', filter: dePersona('hecho', 'LineString'), layout: lineas, paint: { 'line-color': '#fffcf4', 'line-width': 6.5, 'line-opacity': 0.75 } });
+  map.addLayer({ id: 'be-persona-hecho', type: 'line', source: 'be-persona', filter: dePersona('hecho', 'LineString'), layout: lineas, paint: { 'line-color': color, 'line-width': 3 } });
+  map.addLayer({ id: 'be-persona-paradas', type: 'circle', source: 'be-persona', filter: ['==', ['geometry-type'], 'Point'], paint: { 'circle-radius': 4.5, 'circle-color': color, 'circle-opacity': ['match', ['get', 'estado'], 'hecho', 1, 0.55], 'circle-stroke-color': '#fffcf4', 'circle-stroke-width': 1.5 } });
+  pintarRecorridoElegida.clave = null;
   map.addLayer({ id: 'be-rastro-toque', type: 'line', source: 'be-rastro', layout: lineas, paint: { 'line-color': '#000', 'line-width': 12, 'line-opacity': 0 } });
   map.addLayer({ id: 'be-cartas-toque', type: 'line', source: 'be-cartas', layout: lineas, paint: { 'line-color': '#000', 'line-width': 16, 'line-opacity': 0 } });
   mapaListo = true;
@@ -1292,9 +1319,13 @@ const CENTRO = '.punto, .hallazgo-dibujo > span, .viajero-punto, .cand-punto';
     sin zona (una burbuja, un número). Después, un nombre: su caja es casi toda aire entre letras, así que no tapa el punto
     que queda debajo (el de Atalía bajo «PANFILIA»). El borde transparente de una zona no cuenta, ni un nombre escondido. */
 const MACIZO = '.marca-lugar:not(.marca-lugar--difuso) > .punto, .hallazgo-dibujo > span, .viajero-punto, .cand-punto';
+// Con el dedo, el toque deja un :hover que enseña el nombre escondido de la zona tocada antes del clic (mapa.css): ese
+// nombre no estaba a la vista al tocar, así que no cuenta como dibujado. Con el ratón lo enseña al-raton, y sí cuenta.
+const ESCONDIDO = '.marca-lugar.sin-etiqueta:not(.al-raton) .etiqueta';
 const dibujadoEn = (x, y) => {
   const pila = document.elementsFromPoint(x, y);
-  return pila.find((n) => n.matches(MACIZO) || (n.closest('.maplibregl-marker') && !n.closest(MARCA))) || pila.find((n) => n.matches(DIBUJO)) || null;
+  return pila.find((n) => n.matches(MACIZO) || (n.closest('.maplibregl-marker') && !n.closest(MARCA)))
+    || pila.find((n) => n.matches(DIBUJO) && !n.closest(ESCONDIDO)) || null;
 };
 /** La marca que recibe un clic en (x, y): la de lo que se ve ahí; si solo hay zonas, la del punto más cercano. */
 function marcaCercana(x, y) {
@@ -1387,7 +1418,8 @@ function pintarMapa() {
     if (marcaPablo.puesta) { marcaPablo.remove(); marcaPablo.puesta = false; }
     if (marcaProxima.puesta) { marcaProxima.remove(); marcaProxima.puesta = false; }
   }
-  pintarViajeros(verViajes);
+  const posElegida = pintarViajeros(verViajes, w);
+  g.recorridoElegida = pintarRecorridoElegida(verViajes, posElegida);
   const clave = `${V?.id}|${w?.en.key}|${w?.parada}`;
   if (clave !== clavePablo) { clavePablo = clave; sucio.etiquetas = true; }
   // El nombre de un lugar cambia con la fecha (G-11): si cambia alguno, se reescriben las etiquetas.
@@ -1399,7 +1431,9 @@ function pintarMapa() {
   if (kt !== claveTiempo) { claveTiempo = kt; sucio.etiquetas = true; }
   pintarLeyenda(V, w, g);
   pintarMientras(t);
-  if (E.play && w?.pos) seguir(w.pos);
+  // Reproduciendo, el mapa sigue a la persona elegida si es de las que viajan (sigueAElegida), y si no, a Pablo.
+  const foco = sigueAElegida(personaElegida()) ? posElegida : w?.pos;
+  if (E.play && foco) seguir(foco);
   vigilarSalto();
 }
 /** Quien va con Pablo en t según los acompañantes de sus viajes: en la parada, o en las dos del tramo que recorre, aunque
@@ -1413,20 +1447,42 @@ function conPablo(t) {
   const sig = new Set(BE.acompanantes(w.sig.viaje, w.sig.p.orden));
   return new Set(en.filter((x) => sig.has(x)));
 }
-/** Marcadores de otras personas con viajes (Pedro, Jesús…) cuando BE.donde sabe dónde están. */
-function pintarViajeros(ver) {
+/** La persona elegida, si no es Pablo: es a quien se mira en el mapa y a quien sigue la reproducción. */
+const personaElegida = () => (E.sel?.tipo === 'persona' && E.sel.id !== 'pablo' && BE.PERS?.[E.sel.id] ? E.sel.id : null);
+let companerosCache = null;
+/** ¿Va con Pablo en alguna parada de sus viajes (`companions`)? Timoteo, Silas, Bernabé… Una vez por carga de datos. */
+function companeroDePablo(p) {
+  if (!companerosCache || companerosCache.D !== BE.D) {
+    companerosCache = { D: BE.D, s: new Set(BE.D.viajes.filter((v) => BE.duenoViaje(v) === 'pablo').flatMap((v) => BE.acompanantes(v))) };
+  }
+  return companerosCache.s.has(p);
+}
+/** Dónde dibujar a la persona elegida en t. Mientras va con Pablo (conPablo), donde está él: su marcador va con el de
+    Pablo, no por delante, y la reproducción la sigue a ella. Si no, donde la ponen sus datos (BE.donde). */
+function dondeElegida(p, t, wPablo) {
+  if (marcaPablo.puesta && wPablo?.pos && conPablo(t).has(p)) return { ...wPablo, conPablo: true };
+  return BE.donde(p, t);
+}
+/** Marcadores de otras personas con viajes (Pedro, Jesús…) cuando BE.donde sabe dónde están, y el de la persona elegida
+    aunque no tenga viajes propios. Devuelve la posición de la persona elegida, o null. */
+function pintarViajeros(ver, wPablo) {
   // Un grupo (el Arca) no lleva marcador: solo su ruta.
-  const personas = new Set(BE.D.viajes.map(BE.duenoViaje).filter((p) => !BE.esGrupo(p)));
-  personas.delete('pablo');
+  const duenos = new Set(BE.D.viajes.map(BE.duenoViaje).filter((p) => !BE.esGrupo(p)));
+  duenos.delete('pablo');
+  const elegida = personaElegida();
+  // También las que ya tienen marcador: la que deja de estar elegida y no tiene viajes propios lo quita.
+  const personas = new Set([...duenos, ...marcasViajero.keys(), ...(elegida ? [elegida] : [])]);
   // Quien viaja con Pablo no lleva marcador propio mientras va con él: el de Pablo marca dónde están, y la ficha de la
   // parada lo nombra («Con Pablo en esta parada», tipos/parada.js). Con uno propio, situado por sus sucesos y no por las
   // paradas de Pablo, se adelantaba a él en cada tramo y se metía debajo en cada parada: al reproducir, aparecía y
   // desaparecía.
-  // La persona elegida conserva su marcador aunque vaya con Pablo: es a quien se mira.
+  // La persona elegida conserva su marcador aunque vaya con Pablo: es a quien se mira. Va encima del de Pablo, con su
+  // nombre siempre a la vista y «con Pablo» debajo mientras viaja con él (dondeElegida).
   const conEl = marcaPablo.puesta ? conPablo(E.t) : new Set();
-  if (E.sel?.tipo === 'persona') conEl.delete(E.sel.id);
+  let posElegida = null;
   for (const p of personas) {
-    const w = ver && !conEl.has(p) ? BE.donde(p, E.t) : null;
+    const esElegida = p === elegida;
+    const w = !ver ? null : esElegida ? dondeElegida(p, E.t, wPablo) : duenos.has(p) && !conEl.has(p) ? BE.donde(p, E.t) : null;
     let m = marcasViajero.get(p);
     if (!w?.pos) { if (m?.puesta) { m.marker.remove(); m.puesta = false; } continue; }
     if (!m) {
@@ -1434,7 +1490,7 @@ function pintarViajeros(ver) {
       el.type = 'button'; el.className = 'viajero'; el.dataset.sel = `persona:${p}`;
       // Su nombre se esconde cuando choca con otro (sin-etiqueta): el botón lo lleva siempre, como los lugares.
       el.setAttribute('aria-label', `${nombrePersona(p)}: abrir ficha`);
-      el.innerHTML = `<span class="viajero-punto"></span><span class="viajero-rotulo">${esc(nombrePersona(p))}</span>`;
+      el.innerHTML = `<span class="viajero-punto"></span><span class="viajero-rotulo">${esc(nombrePersona(p))}<small>con Pablo</small></span>`;
       el.style.setProperty('--accent', colorPersona(p));
       m = { el, marker: new maplibregl.Marker({ element: el, anchor: 'center' }), puesta: false };
       marcasViajero.set(p, m);
@@ -1442,8 +1498,68 @@ function pintarViajeros(ver) {
     m.marker.setLngLat(w.pos);
     // Fecha estimada o lugar incierto (un candidato o el punto de una región): el mismo aspecto de posición estimada.
     m.el.classList.toggle('estimada', !!(w.estimada || w.incierto));
+    m.el.classList.toggle('viajero--elegido', esElegida);
+    m.el.classList.toggle('con-pablo', esElegida && !!w.conPablo);
     if (!m.puesta) { m.marker.addTo(map); m.puesta = true; }
+    if (esElegida) posElegida = w.pos;
   }
+  return posElegida;
+}
+/** ¿Sigue la reproducción a la persona elegida en vez de a Pablo? Si viaja con él o los datos la sitúan en algún sitio
+    (BE.estancias): entonces, mientras no se sabe dónde está, el mapa se queda quieto en vez de irse con Pablo. */
+const sigueAElegida = (p) => !!p && (companeroDePablo(p) || BE.estancias(p).length > 0);
+let recorridoCache = null;
+/** Recorrido de quien viaja con Pablo, para dibujarlo cuando se la elige: los lugares por los que pasa su marcador, en
+    orden. Se recorre su vida de dos en dos días (o en 4000 pasos si es más larga) con la misma regla que el marcador
+    (dondeElegida: con Pablo, sus paradas; si no, BE.donde), y se apunta cada lugar en el que se para, sin repetirlo
+    seguido. Ordenar sus estancias por fecha no basta: una larga (Corinto de 50 a 52, «vivió en Éfeso» de 61 a 66)
+    empieza antes de las cortas que contiene y la línea iba y volvía. [{ c, lugar, t }], t el primer momento en que
+    llega; una vez por persona y carga de datos. */
+function recorridoDe(p) {
+  if (recorridoCache?.D === BE.D && recorridoCache.p === p) return recorridoCache.pts;
+  const tramos = [...BE.estancias(p), ...BE.P.filter((s) => s.viaje && BE.acompanantes(s.viaje, s.p.orden).includes(p))];
+  const pts = [];
+  if (tramos.length) {
+    const a = Math.min(...tramos.map((s) => s.a)), b = Math.max(...tramos.map((s) => s.b));
+    const paso = Math.max(2 / 365.2425, (b - a) / 4000);
+    for (let t = a; t <= b + paso / 2; t += paso) {
+      const wp = BE.dondeEsta(t);
+      const w = wp?.pos && conPablo(t).has(p) ? wp : BE.donde(p, t);
+      if (!w?.pos || !w.parada || !w.en?.lugar?.id) continue;
+      const lugar = w.en.lugar;
+      if (pts.at(-1)?.lugar.id === lugar.id) continue;
+      const v = verticeRuta(lugar);
+      if (v) pts.push({ c: v.c, lugar, t });
+    }
+  }
+  recorridoCache = { D: BE.D, p, pts };
+  return pts;
+}
+/** El recorrido de la persona elegida, si viaja con Pablo (companeroDePablo): hasta la fecha del cursor, firme en su
+    color; lo que le queda, de puntos; y un punto en cada lugar. Con Pablo seguía siendo invisible: su marcador iba bajo el
+    de Pablo y solo se veía la ruta de él. Devuelve si se dibuja. */
+function pintarRecorridoElegida(ver, pos) {
+  const p = personaElegida();
+  const pts = ver && p && companeroDePablo(p) ? recorridoDe(p) : [];
+  const fs = [];
+  let k = -1;
+  if (pts.length >= 2) {
+    const color = colorPersona(p), t = E.t;
+    k = pts.findLastIndex((x) => x.t <= t);
+    const hecho = pts.slice(0, k + 1).map((x) => x.c), falta = pts.slice(k + 1).map((x) => x.c);
+    if (pos) { hecho.push(pos); falta.unshift(pos); } else if (hecho.length) falta.unshift(hecho.at(-1));
+    if (hecho.length >= 2) fs.push(linea(hecho, { color, estado: 'hecho' }));
+    if (falta.length >= 2) fs.push(linea(falta, { color, estado: 'falta' }));
+    pts.forEach((x, i) => fs.push({ type: 'Feature', properties: { color, estado: i <= k ? 'hecho' : 'falta', lugar: x.lugar.id }, geometry: { type: 'Point', coordinates: x.c } }));
+  }
+  // k va en la clave: sin posición (pos null), pasar de k = -1 a 0 no cambia el largo de las líneas, y el primer lugar
+  // pasaba a «hecho» sin que la fuente se enterase.
+  const clave = fs.length ? `${p}|${k}|${JSON.stringify(fs.filter((f) => f.geometry.type === 'LineString').map((f) => f.geometry.coordinates.length))}|${pos}` : '';
+  if (clave !== pintarRecorridoElegida.clave) {
+    pintarRecorridoElegida.clave = clave;
+    map.getSource('be-persona')?.setData({ type: 'FeatureCollection', features: fs });
+  }
+  return fs.length > 0;
 }
 /** Alto que tapa la hoja inferior en pantallas estrechas. La fila del suceso y la leyenda va dentro de la hoja, así que
     cuenta también plegada; 12 px de aire. */
@@ -1475,6 +1591,14 @@ function seguir(pos, forzar = false) {
 function seguirPablo() {
   tSalto = E.t;
   const w = BE.dondeEsta(E.t);
+  // Con una persona elegida que viaja, se sigue a ella, como al reproducir.
+  const p = personaElegida();
+  if (sigueAElegida(p)) {
+    if (mapaListo && marcaPablo) pintarMapa();
+    const m = marcasViajero.get(p);
+    if (m?.puesta) seguir(m.marker.getLngLat().toArray(), true);
+    return;
+  }
   if (w?.pos) seguir(w.pos, true);
   else if (!E.sel) encuadrarEpoca(E.t, { siVisible: true });
 }
@@ -1716,7 +1840,12 @@ function pintarEtiquetas() {
   // paradas (89) se guarda el orden de fuera de una ruta: Pablo empata con un número y un viajero va detrás de los dos.
   if (marcaPablo?.puesta) extra(marcaPablo.getElement(), '.pablo-rotulo', vecinos ? 89 : 99, marcaPablo.getLngLat().toArray());
   if (marcaProxima?.puesta) extra(marcaProxima.getElement(), null, 70, marcaProxima.getLngLat().toArray());
-  for (const m of marcasViajero.values()) if (m.puesta) extra(m.el, '.viajero-rotulo', vecinos ? 88 : 90, m.marker.getLngLat().toArray());
+  // El nombre de la persona elegida no cede ante nadie, tampoco ante el de Pablo cuando va con él.
+  for (const m of marcasViajero.values()) {
+    if (!m.puesta) continue;
+    const suya = m.el.classList.contains('viajero--elegido');
+    extra(m.el, '.viajero-rotulo', suya ? 101 : vecinos ? 88 : 90, m.marker.getLngLat().toArray(), -Infinity, suya);
+  }
   // Solo el lugar incierto elegido, la parada del recorrido o el candidato marcado se libran de esperar a separarse de
   // Jerusalén (ver anclas): los que implica una persona elegida (Getsemaní, Gólgota con Jesús) esperan como los demás.
   const exentoCand = (lid) => selL === lid || !!resaltadoMapa?.has(lid) || candFoco?.lugar === lid;
@@ -1963,7 +2092,7 @@ function pintarLeyenda(V, w, g) {
   const abanico = g.rastro.some((f) => f.properties.rama != null);
   // Solo las áreas que el mapa dibuja ahora: abiertas.
   const areas = [...marcasArea.values(), ...zonasArea.values()].filter((m) => m.estado === 'abierta');
-  const clave = `${areas.map((m) => m.fila)}|${repiten.map((v) => v.id)}|${apagado}|${deducidos}|${abanico}|${V?.id}|${estimada}|${E.sel?.tipo}|${E.sel?.id}|${pendiente}|${escritores}|${inciertos}|${formas}|${hallazgos}|${F.capas.viajes}|${F.nivel1}|${rastro.map((v) => v.id)}|${dePablo}|${viajeros}`;
+  const clave = `${areas.map((m) => m.fila)}|${repiten.map((v) => v.id)}|${apagado}|${deducidos}|${abanico}|${V?.id}|${estimada}|${E.sel?.tipo}|${E.sel?.id}|${pendiente}|${escritores}|${inciertos}|${formas}|${hallazgos}|${F.capas.viajes}|${F.nivel1}|${rastro.map((v) => v.id)}|${dePablo}|${viajeros}|${g.recorridoElegida}`;
   if (clave === pintarLeyenda.clave) return;
   pintarLeyenda.clave = clave;
   const filas = [];
@@ -1988,6 +2117,10 @@ function pintarLeyenda(V, w, g) {
       }
     }
   }
+  if (g.recorridoElegida) {
+    const p = personaElegida();
+    filas.push(`<div class="be-legend__row"><span class="leyenda-viajero" style="--viajero:${colorPersona(p)}"></span>Recorrido de ${esc(nombrePersona(p))}, con Pablo y sin él; de puntos, lo que le queda</div>`);
+  }
   if (deducidos) filas.push('<div class="be-legend__row"><span class="be-legend__line be-legend__line--deducida"></span>De puntos: tramo hacia una parada pendiente de verificar</div>');
   if (abanico) filas.push('<div class="be-legend__row"><svg class="leyenda-abanico" viewBox="0 0 22 12" aria-hidden="true"><path d="M2 6 20 1M2 6h18M2 6l18 5"/></svg>En abanico: destinos a los que el grupo llega a la vez, sin orden entre ellos</div>');
   for (const m of areas) filas.push(`<div class="be-legend__row"><span class="leyenda-area" style="--viajero:${m.color || m.el.style.getPropertyValue('--viajero')}"></span>${esc(m.fila)}</div>`);
@@ -2010,10 +2143,61 @@ function pintarLeyenda(V, w, g) {
   if (F.nivel1) filas.push('<div class="be-legend__row"><span class="be-tier be-tier--1" data-n="1">Solo fuentes principales</span></div>');
   const cabecera = titulo ? `${esc(titulo.nombre)} · ${esc(fechaCorta(titulo.fecha))}` : selIncierto ? `${esc(selIncierto.nombre)} · cómo dibujamos lo incierto`
     : dePablo ? 'Viajes de Pablo' : rastro.length ? 'Viajes' : 'Leyenda';
-  $('#leyenda').innerHTML = `<div class="be-card__eyebrow">${cabecera}</div>${filas.join('')}`;
+  ponerLeyenda(cabecera, filas);
   $('#leyenda').style.setProperty('--accent', titulo ? colorViaje(titulo.id) : '');
   if (marcaPablo) marcaPablo.getElement().style.setProperty('--accent', V ? colorViaje(V.id) : '');
   sucio.etiquetas = true;
+}
+/** La leyenda se pliega en su cabecera: un botón con el título y una flecha, que la despliega; abajo, otra flecha la
+    vuelve a plegar. Ocupaba a veces media altura del mapa. Lo que elige quien la usa se guarda en la pestaña
+    (sessionStorage); sin elección, se ve desplegada solo si es corta (FILAS_CORTA filas o menos). En el teléfono la abre
+    y la cierra el botón «Leyenda» de la hoja (base.js): abierta va siempre desplegada y sus dos flechas la cierran.
+    Las filas se quedan en la página aunque estén plegadas: quien lee el texto de la leyenda lo lee entero. */
+const CLAVE_LEYENDA = 'biblical-atlas:leyenda';
+const FILAS_CORTA = 3;
+const CHEVRON = '<svg class="leyenda-chevron" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 6l4 4 4-4"/></svg>';
+function leyendaGuardada() { try { return sessionStorage.getItem(CLAVE_LEYENDA); } catch { return null; } }
+function guardarLeyenda(v) { try { sessionStorage.setItem(CLAVE_LEYENDA, v); } catch { /* sin almacenamiento */ } }
+let filasLeyenda = 0;
+function montarLeyenda() {
+  const ley = $('#leyenda');
+  if (ley.querySelector('.leyenda-cabecera')) return ley;
+  ley.innerHTML = `<button type="button" class="leyenda-cabecera" aria-controls="leyenda-filas" aria-expanded="false"><span class="be-card__eyebrow"></span>${CHEVRON}</button>`
+    + `<div class="leyenda-filas" id="leyenda-filas"><div class="leyenda-cuerpo"></div><button type="button" class="leyenda-plegar" aria-controls="leyenda-filas" aria-label="Plegar la leyenda" title="Plegar la leyenda">${CHEVRON}</button></div>`;
+  const alternar = (abrir) => {
+    // En el teléfono la leyenda abierta es la que abrió su botón: plegarla es cerrarla con él.
+    if (estrecha()) { if (ley.classList.contains('abierta')) $('#leyenda-boton')?.click(); return; }
+    guardarLeyenda(abrir ? 'abierta' : 'plegada');
+    aplicarLeyenda();
+    if (!abrir) ley.querySelector('.leyenda-cabecera').focus();
+  };
+  ley.querySelector('.leyenda-cabecera').addEventListener('click', () => alternar(!leyendaDesplegada()));
+  ley.querySelector('.leyenda-plegar').addEventListener('click', () => alternar(false));
+  matchMedia('(max-width: 760px)').addEventListener('change', aplicarLeyenda);
+  return ley;
+}
+/** ¿Se ve desplegada? En el teléfono, siempre que esté abierta; si no, lo que se eligió o, sin elección, si es corta. */
+function leyendaDesplegada() {
+  if (estrecha()) return true;
+  const v = leyendaGuardada();
+  return v ? v === 'abierta' : filasLeyenda <= FILAS_CORTA;
+}
+function aplicarLeyenda() {
+  const ley = montarLeyenda(), abierta = leyendaDesplegada();
+  ley.classList.toggle('leyenda--plegada', !abierta);
+  ley.querySelector('.leyenda-filas').hidden = !abierta;
+  const cab = ley.querySelector('.leyenda-cabecera');
+  cab.setAttribute('aria-expanded', String(abierta));
+  cab.setAttribute('aria-label', `${cab.textContent.trim()}: ${abierta ? 'plegar' : 'desplegar'} la leyenda${abierta ? '' : ` (${filasLeyenda} ${filasLeyenda === 1 ? 'fila' : 'filas'})`}`);
+  // La leyenda tapa menos o más del mapa: los rótulos y lo que se encuadre después lo miden de nuevo.
+  sucio.etiquetas = true; programar();
+}
+function ponerLeyenda(cabecera, filas) {
+  const ley = montarLeyenda();
+  ley.querySelector('.leyenda-cabecera .be-card__eyebrow').innerHTML = cabecera;
+  ley.querySelector('.leyenda-cuerpo').innerHTML = filas.join('');
+  filasLeyenda = filas.length;
+  aplicarLeyenda();
 }
 /** Claves de lo que se está mirando: la selección o, en un recorrido guiado, su parada. Deshacen empates. */
 function clavesEnFoco() {
@@ -2255,7 +2439,8 @@ function encuadrarEpoca(t, { siVisible = false } = {}) {
     const z = zonaLibre();
     if (pts.every((q) => { const { x, y } = map.project(q); return x >= z.x0 && x <= z.x1 && y >= z.y0 && y <= z.y1; })) return;
   }
-  map.fitBounds(cajaDe(pts), { padding, maxZoom: pts.length > 1 ? 7 : Math.max(map.getZoom(), 5.5), duration: 700 });
+  // Con aire alrededor (AIRE) y nunca más cerca que el zoom 6: una época se ve con su región.
+  map.fitBounds(conAire(cajaDe(pts)), { padding, maxZoom: pts.length > 1 ? 6 : Math.max(Math.min(map.getZoom(), 6), 5), duration: 700 });
 }
 /** Al abrir sin selección, si Pablo queda fuera de la vista o bajo la hoja inferior, centra el mapa en él. Si los datos
     no lo sitúan en esta fecha, encuadra la época (encuadrarEpoca). */
@@ -2266,7 +2451,7 @@ function mostrarPablo() {
   const hoja = altoHoja();
   const z = zonaLibre(), q = map.project(w.pos), m = 40;
   if (q.x > z.x0 + m && q.x < z.x1 - m && q.y > z.y0 + m && q.y < z.y1 - m) return;
-  map.jumpTo({ center: w.pos, zoom: estrecha() ? Math.max(map.getZoom(), 5.5) : map.getZoom() });
+  map.jumpTo({ center: w.pos, zoom: estrecha() ? Math.max(map.getZoom(), ZOOM_MOVIL) : map.getZoom() });
   const cq = map.project(w.pos);
   map.jumpTo({ center: map.unproject([cq.x, cq.y + hoja / 2]) });
 }
@@ -2286,10 +2471,25 @@ function loQueTapa() {
 }
 /** Lo que tapa el mapa (loQueTapa), en píxeles del contenedor, con la esquina en que está. Solo mide: quien encuadra
     pinta antes la leyenda y «Mientras tanto» de lo nuevo (repintarParaEncuadrar). */
+/** La leyenda va encima de la atribución del mapa. Lo hace su ResizeObserver, pero ese llega después del primer
+    encuadre: un enlace abierto de nuevo medía la leyenda 2 px más abajo que el mismo enlace al que se llegaba buscando,
+    y el mapa quedaba en otro sitio. Quien encuadra lo pone antes de medir (tapas). */
+function subirLeyenda() {
+  const attrib = map?.getContainer().querySelector('.maplibregl-ctrl-attrib'), ley = $('#leyenda');
+  if (!attrib || !ley) return;
+  const b = `${Math.max(28, attrib.offsetHeight + 10)}px`;
+  if (ley.style.bottom !== b) ley.style.bottom = b;
+}
 function tapas() {
   const c = map.getContainer().getBoundingClientRect(), out = [];
-  for (const el of loQueTapa()) {
-    const r = el.getBoundingClientRect();
+  subirLeyenda();
+  // El mapa de situación solo sale de cerca (pintarSituacion), así que encuadrar desde lejos medía sin él y desde cerca
+  // con él: el mismo enlace quedaba en otro sitio según de dónde se viniera. En el escritorio se mide siempre.
+  const sit = $('#situacion'), mostrar = !!sit && sit.hidden && !estrecha();
+  if (mostrar) sit.hidden = false;
+  const cajas = loQueTapa().map((el) => el.getBoundingClientRect());
+  if (mostrar) sit.hidden = true;
+  for (const r of cajas) {
     if (r.width < 2 || r.height < 2 || r.right <= c.left || r.left >= c.right || r.bottom <= c.top || r.top >= c.bottom) continue;
     out.push({ x0: r.left - c.left, x1: r.right - c.left, y0: r.top - c.top, y1: r.bottom - c.top,
       izq: r.left + r.right < c.left + c.right, arriba: r.top + r.bottom < c.top + c.bottom });
@@ -2406,6 +2606,8 @@ function encuadrarLugares(ids, { duracion = 700 } = {}) {
   if (!pts.length) { if (E.sel) encuadrarEpoca(E.t); return; }
   // Un lugar incierto con un candidato con forma (Benjamín, el desierto de Judá) se encuadra igual.
   const conForma = foco.some((id) => forma(id) || candidatosVisibles(BE.L[id]).some(({ c }) => c.shape?.bbox));
+  // Una persona o un periodo se ven con su región alrededor (AIRE); un lugar, un viaje o un recorrido, como antes.
+  const amplio = E.sel?.tipo === 'persona' || E.sel?.tipo === 'periodo';
   const padding = rellenoEncuadre(cajaDe(pts));
   if (pts.length === 1) {   // fitBounds no deja el relleno fijado en el mapa, easeTo sí
     const [x, y] = pts[0];
@@ -2416,14 +2618,14 @@ function encuadrarLugares(ids, { duracion = 700 } = {}) {
     const l = foco.length === 1 ? BE.L[foco[0]] : null;
     const pegado = l && !MAYORES.has(l.id) && Object.values(BE.L).some((o) => o !== l && o.lat != null && !REGION.has(o.tipo) && o.precision !== 'zona' && Math.hypot((o.lon - x) * 94, (o.lat - y) * 111) < 3);
     const tope = topeRelieve(x, y);
-    const cerca = !l || REGION.has(l.tipo) ? 5.5 : pegado ? Math.min(12.5, tope) : 7.5;
-    map.fitBounds([[x - 0.01, y - 0.01], [x + 0.01, y + 0.01]], { padding, maxZoom: Math.max(cerca, Math.min(map.getZoom(), tope)), duration: duracion });
+    const cerca = amplio ? 6 : !l || REGION.has(l.tipo) ? 5.5 : pegado ? Math.min(12.5, tope) : 7.5;
+    map.fitBounds([[x - 0.01, y - 0.01], [x + 0.01, y + 0.01]], { padding, maxZoom: amplio ? cerca : Math.max(cerca, Math.min(map.getZoom(), tope)), duration: duracion });
     return;
   }
   // Lo que cabe en unos kilómetros (la última semana en Jerusalén) se acerca hasta que los rótulos se separan.
   // Una persona se ve con su entorno, nunca más cerca que el zoom 9.
-  const caja = cajaDe(pts), km = diagonalKm(caja);
-  const tope = Math.min(E.sel?.tipo === 'persona' ? 9 : km < 5 ? ZOOM_MAX : km < 60 ? 11 : 8,
+  const caja = amplio ? conAire(cajaDe(pts)) : cajaDe(pts), km = diagonalKm(cajaDe(pts));
+  const tope = Math.min(amplio ? 8 : km < 5 ? ZOOM_MAX : km < 60 ? 11 : 8,
     Math.max(8, topeRelieve((caja[0][0] + caja[1][0]) / 2, (caja[0][1] + caja[1][1]) / 2)));
   // Si el mapa no puede bajar (o subir) lo bastante para dejar la caja en la parte visible sin salirse del relieve, como
   // Ofir en un móvil con la hoja abierta, se acerca hasta que cabe en vertical: se corta por los lados en vez de enseñar

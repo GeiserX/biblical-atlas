@@ -232,3 +232,36 @@ test('430: in reading mode the passage chosen is framed above the reading sheet,
   }
   await page.context().close();
 });
+
+/** Which of these places are inside the map and above the phone's sheet (not necessarily clear of the cards). */
+const inView = (page, ids) => page.evaluate((list) => {
+  const { BE } = window.__be, m = window.__be.map, c = m.getContainer().getBoundingClientRect();
+  const sheet = innerWidth <= 760 ? document.querySelector('#panel').getBoundingClientRect().top : c.bottom;
+  return Object.fromEntries(list.map((id) => {
+    const p = m.project([BE.L[id].lon, BE.L[id].lat]), x = c.left + p.x, y = c.top + p.y;
+    return [id, x >= c.left && x <= c.right && y >= c.top && y <= Math.min(c.bottom, sheet)];
+  }));
+}, ids);
+
+// Sergio found the map too close when it opens: «Abrir el mapa» showed the Aegean and little else, and a person filled
+// the map edge to edge. Opening now shows the region from Greece to Judea; a person comes with the land around them.
+test('the map opens wide enough to see the region: «Abrir el mapa», and a person with the land around them', async () => {
+  for (const [screen, places, zmax] of [[DESKTOP, ['atenas', 'efeso', 'antioquia-de-siria', 'jerusalen'], 4.7], [PHONE, ['atenas', 'efeso', 'troas'], 4.4]]) {
+    const page = await fromLanding(screen, '#t=50.3000');
+    const zoom = await page.evaluate(() => window.__be.map.getZoom());
+    const v = await inView(page, places);
+    console.log(`${screen.name}, «Abrir el mapa»: zoom ${zoom.toFixed(2)}, ${JSON.stringify(v)}`);
+    assert.ok(zoom <= zmax, `${screen.name}: opens at zoom ${zoom.toFixed(2)}`);
+    assert.deepEqual(Object.keys(v).filter((k) => !v[k]), [], `${screen.name}: places out of view on opening`);
+    assert.deepEqual(page.pageErrors, []);
+    await page.context().close();
+  }
+  // Pedro in 30: his places in Galilea and Judea, and around them Damasco and Gaza.
+  const page = await open(DESKTOP, 't=30.5000&sel=persona:pedro');
+  await still(page);
+  await assertFramed(page, '1440, Pedro in 30');
+  const v = await inView(page, ['damasco', 'gaza']);
+  console.log(`1440, Pedro in 30: ${JSON.stringify(v)}`);
+  assert.deepEqual(v, { damasco: true, gaza: true });
+  await page.context().close();
+});
