@@ -518,9 +518,11 @@ function pintarFilas(V, med) {
   const faltan = medirNombres();
   let otraVez = false;
   const selT = BE.selTexto(E.sel);
-  // El carril que se lee arriba del panel se queda donde estaba aunque cambie lo de encima: al pasar a «Meses» las filas
-  // de los meses aparecen arriba y empujaban hacia abajo lo que se leía. Arriba del todo no se ancla: lo nuevo se ve.
-  const anclas = med?.top > 0 ? carrilesAntes.filter((a) => a.top + a.alto > med.top) : [];
+  // Al cambiar de escala, el carril que se lee arriba del panel se queda donde estaba aunque cambie lo de encima: al pasar
+  // a «Meses» las filas de los meses aparecen arriba y empujaban hacia abajo lo que se leía. Arriba del todo no se ancla:
+  // lo nuevo se ve. Sin cambio de escala (un clic que trae la vista, la reproducción) los carriles no se mueven.
+  const otraEscala = pintadoSpan && Math.abs(view.span / pintadoSpan - 1) > 1e-6;
+  const anclas = otraEscala && med?.top > 0 ? carrilesAntes.filter((a) => a.top + a.alto > med.top) : [];
   for (const c of carrilesVista) {
     const x = carrilEls.get(c.id);
     c.top = top;
