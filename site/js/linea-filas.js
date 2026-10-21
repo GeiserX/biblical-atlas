@@ -406,5 +406,20 @@ const inView = (hit, y, v) => hit[1] > 0 && hit[0] < v.w && y + v.row > v.top &&
     ver con él (`relatedInView`). Fuera de la vista lo elegido, las demás recuperan su color; la selección se queda. */
 const dimOthers = ({ own, ownInView, relatedInView }) => (own ? ownInView : relatedInView);
 
-BE.filas = { TAG, REPEAT, EDGE, arrows, labelText, hollow, softEnds, measure, extent, packOrder, pack, place, hitOf, lwOf, rescueEdges, edgeRows, layoutLane, clickTarget, certainty, storyOrder, norm, nextSel, inView, dimOthers };
+/** Las paradas en los sucesos al reproducir. A escala de años, meses y días cada suceso que pasa el cursor para la
+    reproducción un momento. A escala de décadas, siglos y milenios (`coarse`) una parada se gana: solo para si han pasado
+    al menos `gap` segundos de reproducción desde la anterior (o desde que se pulsó reproducir); los sucesos de en medio
+    no la paran, se cuentan al pasar (`passed`). Con Jesús elegido a 3 meses por segundo eran 138 paradas de 1,5 s, casi
+    todas a menos de 1,5 s de la anterior: se movía un instante y se paraba, una vez y otra.
+    `since`: segundos de reproducción desde la última parada; `played`: los de este fotograma; `hits`: los sucesos que el
+    cursor pasó en este fotograma, en orden. Devuelve { stop, passed, since }. */
+const STOP_GAP = 3, STOP_MS = { fine: 1500, coarse: 2500 };
+function playStop(since, played, hits, coarse, gap = STOP_GAP) {
+  const t = since + Math.max(0, played);
+  if (!hits.length) return { stop: null, passed: [], since: t };
+  if (!coarse || t >= gap) return { stop: hits[0], passed: [], since: 0 };
+  return { stop: null, passed: hits, since: t };
+}
+
+BE.filas = { STOP_GAP, STOP_MS, playStop, TAG, REPEAT, EDGE, arrows, labelText, hollow, softEnds, measure, extent, packOrder, pack, place, hitOf, lwOf, rescueEdges, edgeRows, layoutLane, clickTarget, certainty, storyOrder, norm, nextSel, inView, dimOthers };
 })();

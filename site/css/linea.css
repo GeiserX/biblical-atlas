@@ -240,6 +240,9 @@
 .linea-filas:not(.sin-foco) .m.atenuado .m-sigue { background: var(--ink-3); }
 .linea-filas:not(.sin-foco) .m.atenuado .m-nombre.en-barra { color: var(--ink) !important; }
 .m.resaltado :is(.m-barra, .m-punto) { box-shadow: 0 0 0 1.5px var(--surface), 0 0 0 3px var(--gold); }
+/* Un suceso que la reproducción pasó sin parar, a escala de décadas o más (linea.js, marcarPasados): su nombre queda
+   lleva fondo dorado hasta que pasa el siguiente suceso tras una parada. */
+.m.de-paso .m-nombre .t { background: var(--gold-soft); border-radius: 3px; }
 @media (pointer: coarse) {
   .linea-pista { height: 44px; }
   .carril-rotulo .be-lane-label { top: 45px; min-height: 44px; }

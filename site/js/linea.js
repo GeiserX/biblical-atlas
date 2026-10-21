@@ -428,6 +428,10 @@ const decorDe = (c) => (c.tipo === 'persona' ? 8 : 2);   // la franja de adorno 
 
 /** Mientras se arrastra la franja, las filas se congelan: ninguna marca cambia de fila y ningún carril encoge. */
 let hold = null;
+// Segundos de reproducción desde la última parada (o desde que se pulsó reproducir), y los sucesos que el cursor pasó
+// sin parar a escala gruesa: siguen marcados en la línea hasta que pasa el siguiente tras una parada (FIL.playStop).
+let desdeParada = 0, deDiana = false;
+const pasados = new Set();
 let desdeFranja = false, ultimaSel = '', lastClicked = null, carrilPorVer = null;   // la marca pulsada la última vez (FIL.nextSel)
 /** La persona de un carril: el de los viajes de Pablo no lleva `persona`, solo su id. */
 const personaDeCarril = (c) => c.persona || (c.tipo === 'pablo' ? 'pablo' : null);
@@ -718,7 +722,7 @@ function pintarMarca(it, top, selT, V) {
   it.labEl.classList.toggle('fuera', !it._labOnFill);
   const elegida = it.sel === selT;
   el.setAttribute('aria-pressed', String(elegida));
-  const clase = `m${it.secular ? ' m--secular' : ''}${FIL.hollow(it) ? ' m--hueca' : ''}${it._clase || ''}${V && it.sel === `viaje:${V.id}` ? ' activo' : ''}`;
+  const clase = `m${it.secular ? ' m--secular' : ''}${FIL.hollow(it) ? ' m--hueca' : ''}${it._clase || ''}${V && it.sel === `viaje:${V.id}` ? ' activo' : ''}${pasados.has(it.sel) ? ' de-paso' : ''}`;
   if (el.className !== clase) el.className = clase;
 }
 /** Solo van en la página las marcas de las filas cercanas a lo que se ve (una altura del panel por arriba y otra por
@@ -752,6 +756,10 @@ function ventanaMarcas(repintar, V = BE.viajeActual(BE.dondeEsta(E.t)), selT = B
   // Una marca con el foco que sale de la ventana se quita como las demás (si no, quedaría pintada donde ya no está);
   // el foco pasa a la marca que ahora es la parada del tabulador, sin mover nada.
   if (perdioFoco) $('#linea-filas .m[tabindex="0"]')?.focus({ preventScroll: true });
+}
+/** Señala en la página los sucesos que la reproducción pasó sin parar (vigilarReproduccion), sin repintar la franja. */
+function marcarPasados() {
+  for (const x of carrilEls.values()) for (const it of x.shown || []) it.el?.classList.toggle('de-paso', pasados.has(it.sel));
 }
 const marcasVisibles = () => carrilesVista.flatMap((c) => (c.alto && c.out ? c.out.visible.map((it) => ({ it, c })) : []));
 const marcasDeSel = (selT) => marcasVisibles().filter(({ it }) => it.sel === selT).map(({ it }) => it);
@@ -1750,22 +1758,24 @@ function pintarVelocidad() {
 const botonesVelocidad = () => `<button type="button" class="vel-boton" data-vel="-1" aria-label="Más despacio" title="Más despacio">−</button><span class="be-speed" data-vel-texto aria-live="polite">${esc(BE.textoVelocidad())}</span><button type="button" class="vel-boton" data-vel="1" aria-label="Más deprisa" title="Más deprisa">+</button>`;
 
 let tAnterior = null, reanudar = 0, paradoEnFin = null;
+/** Décadas, siglos y milenios: de la mitad (geométrica) entre «Años» y «Décadas» para arriba. */
+const escalaGruesa = () => span() > Math.sqrt(8 * 40);
 function momentosFoco() {
   const out = [];
   const foco = E.resaltado?.claves;
   if (foco) {
     for (const k of foco) {
       const i = k.indexOf(':'), tipo = k.slice(0, i), id = k.slice(i + 1);
-      if (tipo === 'evento') { const e = BE.D.eventos.find((x) => x.id === id); const m = e && BE.momentoEvento(e); if (m != null) out.push({ t: m, texto: `${e.titulo} · ${e.fecha?.texto || ''}` }); }
-      else if (tipo === 'parada') { const s = BE.P.find((x) => x.key === id); if (s) out.push({ t: s.a, texto: `${s.lugar.nombre} · ${s.p.referencia}` }); }
+      if (tipo === 'evento') { const e = BE.D.eventos.find((x) => x.id === id); const m = e && BE.momentoEvento(e); if (m != null) out.push({ t: m, sel: k, texto: `${e.titulo} · ${e.fecha?.texto || ''}` }); }
+      else if (tipo === 'parada') { const s = BE.P.find((x) => x.key === id); if (s) out.push({ t: s.a, sel: k, texto: `${s.lugar.nombre} · ${s.p.referencia}` }); }
     }
   } else if (span() <= 60) {
-    for (const e of BE.D.eventos || []) { const m = BE.momentoEvento(e); if (m != null) out.push({ t: m, texto: `${e.titulo} · ${e.fecha?.texto || ''}` }); }
+    for (const e of BE.D.eventos || []) { const m = BE.momentoEvento(e); if (m != null) out.push({ t: m, sel: `evento:${e.id}`, texto: `${e.titulo} · ${e.fecha?.texto || ''}` }); }
   }
   return out;
 }
 function vigilarReproduccion() {
-  if (!E.play) { tAnterior = null; return; }
+  if (!E.play) { tAnterior = null; desdeParada = 0; return; }
   if (L.bucle && (E.t >= L.bucle[1] || E.t < L.bucle[0] - 1e-6)) {
     tAnterior = null; setT(L.bucle[0]); BE.asegurarVisible(L.bucle[0], false); return;
   }
@@ -1785,13 +1795,24 @@ function vigilarReproduccion() {
     return;
   }
   if (tAnterior != null && L.pausa && E.t > tAnterior) {
-    const hit = momentosFoco().find((m) => m.t > tAnterior && m.t <= E.t);
-    if (hit) {
+    const hits = momentosFoco().filter((m) => m.t > tAnterior && m.t <= E.t).sort((a, b) => a.t - b.t);
+    const gruesa = escalaGruesa();
+    const r = FIL.playStop(desdeParada, (E.t - tAnterior) / BE.velocidad(), hits, gruesa);
+    desdeParada = r.since;
+    if (r.passed.length) {
+      // De paso: el aviso de abajo va diciendo cada suceso y su marca se queda señalada, sin parar.
+      if (deDiana) { pasados.clear(); deDiana = false; }
+      for (const m of r.passed) pasados.add(m.sel);
+      BE.avisar(r.passed[r.passed.length - 1].texto);
+      marcarPasados();
+    }
+    if (r.stop) {
       reproducir(false);
-      BE.avisar(hit.texto);
+      BE.avisar(r.stop.texto);
+      if (gruesa) { pasados.add(r.stop.sel); deDiana = true; marcarPasados(); } else if (pasados.size) { pasados.clear(); marcarPasados(); }
       clearTimeout(reanudar);
       const t = E.t;
-      reanudar = setTimeout(() => { if (!E.play && Math.abs(E.t - t) < 1e-9) reproducir(true); }, 1500);
+      reanudar = setTimeout(() => { if (!E.play && Math.abs(E.t - t) < 1e-9) reproducir(true); }, gruesa ? FIL.STOP_MS.coarse : FIL.STOP_MS.fine);
       tAnterior = null;
       return;
     }
