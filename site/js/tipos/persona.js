@@ -348,7 +348,7 @@ function fichaPersona(id) {
   const p = BE.PERS[id];
   const as = aristas(id);
   const nSinPasaje = sinPasaje(id);
-  const avisoSinPasaje = nSinPasaje ? `<p class="be-muted">${nSinPasaje === 1 ? 'Una relación no se muestra: todavía no cita un pasaje ni una publicación de jw.org.' : `${nSinPasaje} relaciones no se muestran: todavía no citan un pasaje ni una publicación de jw.org.`}</p>` : '';
+  const avisoSinPasaje = nSinPasaje ? `<p class="be-muted">${nSinPasaje === 1 ? 'Una relación no se muestra: todavía no cita un pasaje ni una fuente que lo diga.' : `${nSinPasaje} relaciones no se muestran: todavía no citan un pasaje ni una fuente que lo diga.`}</p>` : '';
   cargarVideosPersonas();
   // Lo que ya sale en «Familia y cargo» no se repite abajo; los hermanos, si son muchos, sí van abajo, plegados.
   const muchosHermanos = familia(id).siblings.length > MAX_HERMANOS;
