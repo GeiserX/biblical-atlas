@@ -256,11 +256,27 @@ function paso(ahora) {
   if (!E.play) return;
   const dt = clamp((ahora - ultimoFrame) / 1000, 0, 0.1);
   ultimoFrame = ahora;
-  const t = E.t + dt * BE.velocidad();
+  const t0 = E.t, t = E.t + dt * BE.velocidad();
   if (t >= BE.T_MAX) { setT(BE.T_MAX); reproducir(false); return; }
   setT(t);
-  if (t > E.vista[1] - span() * 0.05) asegurarVisible(t, false);
+  seguirCursor(t0, t, dt);
   requestAnimationFrame(paso);
+}
+/** Al reproducir, la franja se desliza bajo el cursor en vez de saltar: antes, al llegar al borde derecho, la vista
+    saltaba casi una pantalla de golpe y quien leía se perdía. El cursor que pasa de un tercio desde la izquierda arrastra
+    la vista con él, y si está más a la derecha (al 40 % tras elegir una escala) se acerca a ese tercio poco a poco, en
+    unos 2 s. Un cursor fuera de la vista la trae de un salto, como antes. Parado, asegurarVisible no cambia. */
+const ANCLA_JUEGO = 1 / 3, ACERCAR_S = 2;
+function seguirCursor(t0, t, dt) {
+  const s = span();
+  if (t < E.vista[0] || t > E.vista[1]) { asegurarVisible(t, false); return; }
+  const ancla = E.vista[0] + s * ANCLA_JUEGO;
+  if (t <= ancla) return;
+  const d = Math.min(t - ancla, Math.max(0, t - t0) + (t - ancla) * Math.min(1, dt / ACERCAR_S));
+  const v0 = clamp(E.vista[0] + d, BE.T_MIN, BE.T_MAX - s);
+  if (v0 === E.vista[0]) return;
+  E.vista = [v0, v0 + s];
+  sucio.linea = true; programar();
 }
 /** Momentos a los que saltan «anterior» y «siguiente»: paradas y cartas. */
 BE.hitos = () => {
