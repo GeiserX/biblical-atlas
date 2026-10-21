@@ -1542,16 +1542,19 @@ function pintarRecorridoElegida(ver, pos) {
   const p = personaElegida();
   const pts = ver && p && companeroDePablo(p) ? recorridoDe(p) : [];
   const fs = [];
+  let k = -1;
   if (pts.length >= 2) {
     const color = colorPersona(p), t = E.t;
-    const k = pts.findLastIndex((x) => x.t <= t);
+    k = pts.findLastIndex((x) => x.t <= t);
     const hecho = pts.slice(0, k + 1).map((x) => x.c), falta = pts.slice(k + 1).map((x) => x.c);
     if (pos) { hecho.push(pos); falta.unshift(pos); } else if (hecho.length) falta.unshift(hecho.at(-1));
     if (hecho.length >= 2) fs.push(linea(hecho, { color, estado: 'hecho' }));
     if (falta.length >= 2) fs.push(linea(falta, { color, estado: 'falta' }));
     pts.forEach((x, i) => fs.push({ type: 'Feature', properties: { color, estado: i <= k ? 'hecho' : 'falta', lugar: x.lugar.id }, geometry: { type: 'Point', coordinates: x.c } }));
   }
-  const clave = fs.length ? `${p}|${JSON.stringify(fs.filter((f) => f.geometry.type === 'LineString').map((f) => f.geometry.coordinates.length))}|${pos}` : '';
+  // k va en la clave: sin posición (pos null), pasar de k = -1 a 0 no cambia el largo de las líneas, y el primer lugar
+  // pasaba a «hecho» sin que la fuente se enterase.
+  const clave = fs.length ? `${p}|${k}|${JSON.stringify(fs.filter((f) => f.geometry.type === 'LineString').map((f) => f.geometry.coordinates.length))}|${pos}` : '';
   if (clave !== pintarRecorridoElegida.clave) {
     pintarRecorridoElegida.clave = clave;
     map.getSource('be-persona')?.setData({ type: 'FeatureCollection', features: fs });

@@ -206,6 +206,7 @@ test('playing with a companion chosen, the map follows him and not Paul', async 
       const a = BE.donde('timoteo', x), b = BE.dondeEsta(x);
       if (a?.pos && b?.pos && Math.hypot(a.pos[0] - b.pos[0], a.pos[1] - b.pos[1]) > 3) { t = x; break; }
     }
+    if (t == null) return { t };   // the assertion below says why, instead of a TypeError from dondeEsta(null)
     seleccionar({ tipo: 'persona', id: 'timoteo' }, { mover: false, encuadrar: false }); setT(t);
     await frame();
     // The map on Paul, close enough that Timoteo is off it.
