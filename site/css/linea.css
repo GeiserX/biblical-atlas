@@ -153,7 +153,11 @@
 
 
 /* ---------- Cuerpo de la línea: la regla arriba, fija al bajar; los carriles debajo, cada uno con sus filas ---------- */
-.linea-cuerpo { grid-column: 1 / -1; position: relative; min-height: 0; overflow-x: hidden; overflow-y: auto; overscroll-behavior: contain; }
+/* overflow-y: scroll y no auto: la barra de desplazamiento se queda aunque los carriles quepan. Con auto se iba al cambiar
+   de escala (de «Años» a «Meses» los carriles bajan de alto y caben) y volvía al salir, y con ella la regla y los carriles
+   ganaban y perdían su ancho: todo saltaba 15 px. Donde la barra flota sobre el contenido (macOS con trackpad, el
+   móvil) no cambia nada. */
+.linea-cuerpo { grid-column: 1 / -1; position: relative; min-height: 0; overflow-x: hidden; overflow-y: scroll; overscroll-behavior: contain; }
 .linea-cabeza { position: sticky; top: 0; z-index: 6; display: grid; grid-template-columns: var(--carril-w) minmax(0, 1fr); background: var(--surface); border-bottom: 1px solid var(--line-2); }
 .linea-cabeza .carriles-eje { background: var(--surface-2); border-right: 1px solid var(--line); border-bottom: 0; }
 .linea-pista { position: relative; height: 26px; overflow: hidden; }
