@@ -1,7 +1,9 @@
 // The person card (site/js/tipos/persona.js), in a real headless browser:
 //  - «Familia y cargo» sits inside the first card, right under the summary: parents, spouses, children, siblings if few,
 //    predecessor and successor in an office (the vocabulary's `succeeds`, both ways) and the offices with their period,
-//    each person a button that selects it. Nabucodonosor shows his successor Evil-Merodac and his reign.
+//    each person a button that selects it. Nabucodonosor shows his successor Evil-Merodac and his reign, and his father
+//    and predecessor Nabopolasar, whom only Perspicacia names: a relation backed by a jw.org publication is shown, with
+//    a chip that links that publication.
 //  - The other relations come in groups by kind. A group of more than three is folded behind a button with its count
 //    (aria-expanded, aria-controls, Enter opens it) and opens to the same rows as before: verb, name, passage chip and
 //    caption. A group of three or fewer stays open. What was opened stays open when the card is painted again.
@@ -109,6 +111,14 @@ test('Nabucodonosor: «Familia y cargo» under the summary names his successor a
   assert.deepEqual(row('Hijos')?.sels || row('Hijo')?.sels, ['persona:evil-merodac']);
   assert.deepEqual(row('Sucesor')?.sels, ['persona:evil-merodac'], 'his successor in office, from the vocabulary\'s succeeds');
   assert.deepEqual(row('Cargo')?.sels, ['periodo:nabucodonosor-ii'], 'his office links its period');
+  // His father and predecessor Nabopolasar: the Bible does not name him, Perspicacia does. A relation backed by a jw.org
+  // publication counts as referenced, and its chip links that publication instead of a passage.
+  assert.deepEqual(row('Predecesor')?.sels, ['persona:nabopolasar'], 'his predecessor, backed only by Perspicacia');
+  const padre = block.rows.find((r) => r.sels.includes('persona:nabopolasar') && r.dt !== 'Predecesor');
+  assert.ok(padre, `his father is in the block: ${JSON.stringify(block.rows)}`);
+  const chip = await page.evaluate(() => [...document.querySelectorAll('.familia-cargo dd')].find((dd) => dd.querySelector('[data-sel="persona:nabopolasar"]'))
+    ?.querySelector('a.chip-fuente')?.getAttribute('href'));
+  assert.match(chip || '', /^https:\/\/www\.jw\.org\//, 'the chip links the jw.org publication that names him');
   // The chip selects that person, by the same path as any data-sel button.
   await page.locator('.familia-cargo dt:text-is("Sucesor") + dd [data-sel="persona:evil-merodac"]').click();
   await page.waitForFunction(() => window.BE.E.sel?.id === 'evil-merodac');

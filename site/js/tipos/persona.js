@@ -56,11 +56,12 @@ function calcularAristas(id) {
   if (!p) return [];
   const out = [];
   const poner = (a) => { if ((a.fuentes && a.fuentes.length) || a.ref) out.push({ ...a, tr: a.tr !== undefined ? a.tr : tramoAbierto(a.fecha) }); };
-  // Una relación da arista si trae su verbo y su referencia a un pasaje, y no es la copia que no manda de un par
-  // escrito en las dos fichas (duplicate_of): así ningún vínculo sale dos veces (docs/investigacion/modelo.md, sección 10).
+  // Una relación da arista si trae su verbo y su referencia (un pasaje o, si la Biblia no lo dice, una publicación de
+  // jw.org entre sus fuentes), y no es la copia que no manda de un par escrito en las dos fichas (duplicate_of): así
+  // ningún vínculo sale dos veces (docs/investigacion/modelo.md, sección 10).
   const ponerRelacion = (r, adelante, a) => {
     const verbo = verboRelacion(r, adelante);
-    if (!verbo || !r.reference || r.duplicate_of) return;
+    if (!verbo || r.duplicate_of || !(r.reference || fuenteJw(r.fuentes))) return;
     out.push({ ...a, verbo, fecha: r.fecha, deducido: !!r.deducido, estado: r.estado, fuentes: r.fuentes, razon: r.razon, ref: r.reference, origen: 'relacion', tipoRel: r.tipo, type: r.type, palabraVoc: r.word || null, oficio: r.office || null, alias: r.type === 'same_as', inversa: !adelante, grupoFamilia: (adelante ? r.family : r.inverse_family) || null, etiqueta: (adelante ? r.relacion : r.inverse_label) || '', tr: tramoAbierto(r.fecha) });
   };
   for (const r of p.relaciones || []) {
@@ -204,7 +205,7 @@ function familiaCargoHtml(id) {
     const fecha = q?.fecha ? (q.fecha.texto || fechaCorta(q.fecha)) : '';
     const matiz = matizCargo || (varios && /\s/.test((a.palabra || '').trim()) ? a.palabra : '');
     const titulo = [enFila ? fecha : '', a.razon].filter(Boolean).join(' · ');
-    return `<li><button type="button" class="enlace-texto" data-sel="${esc(a.sel)}"${titulo ? ` title="${esc(titulo)}"` : ''}>${esc(q?.nombre || nombreDe(a.sel))}</button>${matiz ? ` <span class="be-muted">(${esc(matiz)})</span>` : ''}${a.deducido ? ` ${etiquetaDeducido}` : ''}${fecha && !enFila ? `<span class="fam-fecha">${esc(fecha)}</span>` : ''}${a.ref ? `<span class="fam-refs">${BE.chipsCitas(a.ref)}</span>` : ''}</li>`;
+    return `<li><button type="button" class="enlace-texto" data-sel="${esc(a.sel)}"${titulo ? ` title="${esc(titulo)}"` : ''}>${esc(q?.nombre || nombreDe(a.sel))}</button>${matiz ? ` <span class="be-muted">(${esc(matiz)})</span>` : ''}${a.deducido ? ` ${etiquetaDeducido}` : ''}${fecha && !enFila ? `<span class="fam-fecha">${esc(fecha)}</span>` : ''}${chipsRef(a) ? `<span class="fam-refs">${chipsRef(a)}</span>` : ''}</li>`;
   };
   const lista = (xs, f) => `<ul${xs.length > 3 ? ' class="fam-fila"' : ''}>${xs.map((a) => f(a, xs.length > 3)).join('')}</ul>`;
   // Con una sola persona el título es su vínculo («Padre», «Esposo», «Padre adoptivo»); con varias, el plural.
@@ -305,6 +306,23 @@ function cargarVideosPersonas() {
   }).catch(() => { VIDEOS_PERSONAS = null; });
 }
 
+/** La primera publicación de jw.org entre las fuentes de una relación: su referencia cuando la Biblia no la dice (el
+    padre de Nabucodonosor lo da Perspicacia, no un pasaje). */
+function fuenteJw(ids) {
+  for (const id of ids || []) {
+    const f = BE.D.fuentes?.[id];
+    if (f?.url && /^https:\/\/(www\.|wol\.)?jw\.org\//.test(f.url)) return f;
+  }
+  return null;
+}
+/** Las citas de una relación o, sin pasaje, el enlace a la publicación de jw.org que la sostiene. */
+function chipsRef(a) {
+  if (a.ref) return BE.chipsCitas(a.ref);
+  const f = fuenteJw(a.fuentes);
+  if (!f) return '';
+  const obra = /^Perspicacia/.test(f.obra || '') ? 'Perspicacia' : (f.obra || 'jw.org');
+  return `<a class="be-chip chip-fuente" href="${esc(f.url)}" target="_blank" rel="noopener noreferrer" title="${esc(`${f.obra}: «${f.titulo}»`)}">${esc(obra)}</a>`;
+}
 /** Un verbo que ya nombra a la otra persona («Bartimeo estuvo con Jesús», «estuvo con Jesús») lleva el botón en ese
     nombre, para no escribirlo dos veces; si no lo nombra, el botón va detrás del verbo. */
 function verboConBoton(a) {
@@ -315,11 +333,12 @@ function verboConBoton(a) {
   const i = m.index + m[1].length;
   return `<span class="rel-verbo">${esc(a.verbo.slice(0, i))}${boton}${esc(a.verbo.slice(i + nombre.length))}</span>`;
 }
-/** Cuántas relaciones de la persona, en su ficha o en la del otro, no se dibujan porque aún no citan un pasaje
+/** Cuántas relaciones de la persona, en su ficha o en la del otro, no se dibujan porque aún no citan un pasaje ni una
+    publicación de jw.org
     (docs/investigacion/modelo.md, sección 10). La copia que no manda de un par doble no cuenta: la otra la dice. */
 function sinPasaje(id) {
   let n = 0;
-  const contar = (r, adelante) => { if (verboRelacion(r, adelante) && !r.reference && !r.duplicate_of) n += 1; };
+  const contar = (r, adelante) => { if (verboRelacion(r, adelante) && !r.reference && !fuenteJw(r.fuentes) && !r.duplicate_of) n += 1; };
   for (const r of BE.PERS[id]?.relaciones || []) contar(r, true);
   for (const q of Object.values(BE.PERS)) if (q.id !== id) for (const r of q.relaciones || []) if (r.persona === id) contar(r, false);
   return n;
@@ -329,7 +348,7 @@ function fichaPersona(id) {
   const p = BE.PERS[id];
   const as = aristas(id);
   const nSinPasaje = sinPasaje(id);
-  const avisoSinPasaje = nSinPasaje ? `<p class="be-muted">${nSinPasaje === 1 ? 'Una relación no se muestra: todavía no cita un pasaje.' : `${nSinPasaje} relaciones no se muestran: todavía no citan un pasaje.`}</p>` : '';
+  const avisoSinPasaje = nSinPasaje ? `<p class="be-muted">${nSinPasaje === 1 ? 'Una relación no se muestra: todavía no cita un pasaje ni una fuente que lo diga.' : `${nSinPasaje} relaciones no se muestran: todavía no citan un pasaje ni una fuente que lo diga.`}</p>` : '';
   cargarVideosPersonas();
   // Lo que ya sale en «Familia y cargo» no se repite abajo; los hermanos, si son muchos, sí van abajo, plegados.
   const muchosHermanos = familia(id).siblings.length > MAX_HERMANOS;
@@ -345,7 +364,7 @@ function fichaPersona(id) {
   const recorridos = (BE.D.recorridos || []).filter((r) => (r.paradas || []).some((x) => x.sel === `persona:${id}`));
   const tag = (a) => (a.deducido ? etiquetaDeducido : '');
   const relacionLi = (a) => `<li>${verboConBoton(a)}${tag(a)}
-        <span class="rel-meta">${a.fecha ? esc(textoFecha(a)) : ''}${a.fecha && a.ref ? ' · ' : ''}${a.ref ? BE.chipsCitas(a.ref) : ''}</span>${a.razon ? `<span class="rel-razon">${esc(a.razon)}</span>` : ''}</li>`;
+        <span class="rel-meta">${a.fecha ? esc(textoFecha(a)) : ''}${a.fecha && chipsRef(a) ? ' · ' : ''}${chipsRef(a)}</span>${a.razon ? `<span class="rel-razon">${esc(a.razon)}</span>` : ''}</li>`;
   return `${BE.migas(BE.t('Personas'), p.nombre)}${BE.cerrarHtml()}
     <section class="be-card"><div class="be-card__pad">
       <div class="cabecera-carta"><span class="be-node be-node--persona be-node--lg" aria-hidden="true">${esc(p.nombre[0])}</span>
