@@ -503,13 +503,18 @@ function elegir(i) {
   elegirResultado(r);
   // El foco pasa a la ficha que se abre, si se ve; si no, sale de la caja (en el móvil, así se cierra el teclado). Un
   // resultado que hace otra cosa («¿Cómo se relaciona…?» abre la conexión) no abre ficha: el foco no va a la anterior.
-  const ficha = $('#panel-cuerpo');
-  if (!r.accion && E.sel && ficha.checkVisibility()) ficha.focus({ preventScroll: true });
+  // Con el modo lectura recién abierto, el foco va a su título: en el teléfono la lectura tapa la ficha.
+  const ficha = $('#panel-cuerpo'), lectura = BE.lectura?.abierta && $('#vista-lectura .lectura-titulo');
+  if (lectura && ['libro', 'pasaje'].includes(r.sel?.tipo)) lectura.focus({ preventScroll: true });
+  else if (!r.accion && E.sel && ficha.checkVisibility()) ficha.focus({ preventScroll: true });
   else $('#q').blur();
 }
 /** Lo que hace un resultado elegido, en cualquiera de las dos cajas. */
 function elegirResultado(r) {
+  const vistas = BE.estudio?.vistas || {};
   if (r.accion) r.accion();
+  // Un libro o un capítulo abren el modo lectura, salvo con el grafo o la conexión abiertos, que siguen a lo elegido.
+  else if (!vistas.grafo?.abierta() && !vistas.conexion?.abierta() && BE.lectura?.leerSel(r.sel)) return;
   else {
     // Con «¿Cómo se relaciona?» abierto, lo buscado entra en la pregunta; con el grafo abierto, pasa al centro al
     // seleccionarse (grafo.js sigue la selección).

@@ -235,6 +235,8 @@ span.etiqueta-deducido, span.etiqueta-incierto, span.etiqueta-texto { border-rad
 .lectura-cab { align-items: flex-start; border-bottom: 1px solid var(--line); padding-bottom: 10px; }
 .lectura-libro select { border: 0; background: none; font: 600 var(--fs-xs)/1 var(--font-sans); color: var(--ink-3); padding: 0; margin-top: 4px; cursor: pointer; }
 .lectura-titulo { margin: 2px 0 0; font: 600 var(--fs-3xl)/1.1 var(--font-serif); }
+/* La búsqueda lleva el foco al título para que el teclado siga en la lectura; no es un control, así que no lleva aro. */
+.lectura-titulo:focus { outline: none; }
 .lectura-cuerpo { overflow: auto; padding: 12px 16px 20px; display: flex; flex-direction: column; gap: 12px; flex: 1; }
 .lectura-cuerpo > * { flex-shrink: 0; }
 .capitulos--lectura { max-height: 96px; overflow: auto; }

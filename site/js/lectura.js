@@ -110,11 +110,13 @@ function pintar() {
   const sigCap = cap < (lib.capitulos || cap) ? cap + 1 : null;
   const sigLugares = sigCap ? [...new Set(pasajes(lib, sigCap).flatMap((x) => x.lugares))].map((x) => BE.L[x].nombre) : [];
   const anclada = ps.find((x) => !x.narrativa);
+  // El título con el foco (lo pone la búsqueda) lo conserva al repintar, cuando llegan los vídeos.
+  const conFoco = document.activeElement?.matches?.('#vista-lectura .lectura-titulo');
   v.hidden = false;
   v.innerHTML = `<header class="vista-cab lectura-cab">
       <div><div class="be-card__eyebrow">Modo lectura</div>
       <label class="lectura-libro"><span class="sr-only">Libro</span><select data-lectura-libro>${(BE.LIBROS || []).filter((l) => l.slug).map((l) => `<option value="${esc(l.slug)}"${l.num === lib.num ? ' selected' : ''}>${esc(l.nombre)}</option>`).join('')}</select></label>
-      <h2 class="lectura-titulo">${esc(lib.nombre)} ${cap}</h2></div>
+      <h2 class="lectura-titulo" tabindex="-1">${esc(lib.nombre)} ${cap}</h2></div>
       ${BE.historia?.pareja() || ''}<button type="button" class="be-btn be-btn--sm be-btn--ghost vista-cerrar" data-lectura-cerrar aria-label="Cerrar el modo lectura">Cerrar <span aria-hidden="true">×</span></button>
     </header>
     <div class="lectura-cuerpo">
@@ -144,6 +146,7 @@ function pintar() {
     </div>`;
   marcasMapa(ps);
   L.ps = ps;
+  if (conFoco) v.querySelector('.lectura-titulo').focus({ preventScroll: true });
 }
 
 function abrirPasaje(i, { encuadrar } = {}) {
@@ -161,7 +164,7 @@ function abrirPasaje(i, { encuadrar } = {}) {
   $('#vista-lectura').querySelector('.pasaje-item--abierto')?.scrollIntoView({ block: 'nearest' });
   BE.guardarHash();
 }
-function abrir(id, { pas = -1, desdeHash = false } = {}) {
+function abrir(id, { pas = -1, desdeHash = false, sel = null } = {}) {
   if (!BE.pasajeDeId(id)) return;
   BE.estudio.abrirSolo('lectura');
   const p = BE.pasajeDeId(id);
@@ -172,7 +175,7 @@ function abrir(id, { pas = -1, desdeHash = false } = {}) {
   pintar();
   BE.estudio.relleno?.();
   if (!desdeHash) {
-    if (L.pas < 0) BE.seleccionar({ tipo: 'pasaje', id: L.id }, { mover: true, encuadrar: L.sigue });
+    if (L.pas < 0) BE.seleccionar(sel || { tipo: 'pasaje', id: L.id }, { mover: true, encuadrar: L.sigue });
     BE.guardarHash();
   } else {
     // Desde un enlace sin fecha ni selección: el cursor y el mapa van al capítulo, como al abrirlo a mano.
@@ -182,6 +185,23 @@ function abrir(id, { pas = -1, desdeHash = false } = {}) {
       else BE.seleccionar({ tipo: 'pasaje', id: L.id }, { mover: true, encuadrar: L.sigue });
     });
   }
+}
+/** Capítulo en que abre un libro elegido entero: el que se está leyendo de ese libro, o el de la última lectura que
+    recuerda «Seguir donde lo dejaste» (biblical-atlas:ultima) si era de ese libro; si no, el 1. */
+function capituloDeLibro(lib) {
+  const de = (id) => { const p = id && BE.pasajeDeId(id); return p && p.libro.num === lib.num ? p.cap : null; };
+  let ultima = null;
+  try { ultima = new URLSearchParams(String(JSON.parse(localStorage.getItem('biblical-atlas:ultima') || 'null')?.hash || '').replace(/^#/, '')).get('leer'); } catch { /* sin almacenamiento */ }
+  return de(L.id) || de(ultima) || 1;
+}
+/** Un libro o un capítulo elegidos en la búsqueda abren el modo lectura, con el mapa al lado. Un libro queda elegido
+    él mismo, con su ficha y su fecha (Romanos, c. 56 e.c.), y la lectura abre en su capítulo. Devuelve si la abrió. */
+function leerSel(sel) {
+  const lib = sel?.tipo === 'libro' && BE.libroPorSlug(sel.id);
+  const id = lib ? BE.idPasaje(lib, capituloDeLibro(lib)) : sel?.tipo === 'pasaje' ? sel.id : null;
+  if (!id || !BE.pasajeDeId(id)) return false;
+  abrir(id, { sel: lib ? sel : null });
+  return true;
 }
 function cerrar(silencioso) {
   if (!abierta()) return;
@@ -262,6 +282,6 @@ BE.parametros.push(
     leer(v) { if (abierta()) { const n = (+v || 0) - 1; if (n !== L.pas) { L.pas = n; pintar(); } } } },
 );
 
-BE.lectura = { abrir, cerrar, mover, pasajes, repintar: () => { if (abierta()) pintar(); }, get abierta() { return abierta(); } };
+BE.lectura = { abrir, cerrar, mover, pasajes, leerSel, repintar: () => { if (abierta()) pintar(); }, get abierta() { return abierta(); } };
 Object.assign(BE, { leidos, marcarLeido });
 })();
