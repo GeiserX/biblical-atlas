@@ -69,6 +69,22 @@ span.etiqueta-deducido, span.etiqueta-incierto, span.etiqueta-texto { border-rad
 .fam-fecha { color: var(--ink-3); font-size: var(--fs-2xs); }
 .fam-refs { display: inline-flex; flex-wrap: wrap; gap: 4px; }
 .fam-refs .be-ref { font-size: var(--fs-2xs); }
+/* «Familia y cargo», bajo el resumen. Con más de tres en una fila (hijos de David), van seguidos y no uno por línea. */
+.familia-cargo { margin-top: 12px; padding-top: 12px; border-top: 1px solid var(--line); }
+.familia-cargo .be-card__eyebrow { margin-bottom: 8px; }
+.familia-lista ul.fam-fila { flex-direction: row; flex-wrap: wrap; gap: 4px 14px; }
+/* Las demás relaciones, por clases: plegadas con su cuenta a partir de cuatro. */
+.rel-grupo + .rel-grupo { margin-top: 12px; }
+.rel-grupo__titulo { margin: 0 0 8px; font-size: var(--fs-xs); font-weight: 600; color: var(--ink-2); }
+.rel-grupo--plegable .rel-grupo__titulo { margin-bottom: 0; }
+.rel-grupo--plegable .relaciones { margin-top: 8px; }
+.rel-grupo .relaciones[hidden] { display: none; }
+.rel-grupo__boton { display: flex; align-items: center; gap: 6px; width: 100%; min-height: 34px; padding: 4px 10px; border: 1px solid var(--line); border-radius: var(--r-sm); background: var(--surface); color: var(--ink); font: inherit; font-weight: 600; text-align: left; cursor: pointer; }
+.rel-grupo__boton:hover { border-color: var(--ink-3); }
+.rel-grupo__boton::after { content: "▸"; margin-left: auto; color: var(--ink-3); transition: transform .15s; }
+.rel-grupo__boton[aria-expanded="true"]::after { transform: rotate(90deg); }
+@media (any-pointer: coarse) { .rel-grupo__boton { min-height: 44px; } }
+@media (prefers-reduced-motion: reduce) { .rel-grupo__boton::after { transition: none; } }
 .relaciones { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; }
 .relaciones li { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 8px; font-size: var(--fs-sm); padding-bottom: 8px; border-bottom: 1px solid var(--line); }
 .relaciones li:last-child { border-bottom: 0; padding-bottom: 0; }
