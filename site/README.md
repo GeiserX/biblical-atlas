@@ -219,7 +219,7 @@ El carril «Viajes de Pablo» enseña solo los viajes de Pablo: un tramo por via
 | `js/visit-history.js` | Reglas de «Atrás» y «Adelante», sin DOM: el número y el nombre de cada entrada, si hay algo detrás o delante, los rótulos de los botones, el nombre de cada vista y el título de la pestaña (`BE.visitHistory`) |
 | `js/buscar.js` | Búsqueda, preguntas de forma fija, años y atrás y adelante (`BE.historia`) |
 | `js/grafo.js` | Grafo de personas y conexión entre dos |
-| `js/lectura.js` | Modo lectura de cualquier capítulo con datos |
+| `js/lectura.js` | Modo lectura de cualquier capítulo con datos. Un libro o un capítulo elegidos en la búsqueda lo abren (`BE.lectura.leerSel`, salvo con el grafo o la conexión abiertos): el libro en el capítulo de la última lectura si era de ese libro, si no en el 1, y sigue elegido con su ficha y su fecha ([`buscar-lectura.test.mjs`](../tests/site/buscar-lectura.test.mjs)) |
 | `js/recorridos.js` | Recorridos guiados, preguntas de repaso, hoja de impresión, modo presentación, modo reunión y letra grande |
 | `js/offline.js` | Registra `sw.js` (solo por https) y pone el aviso «Hay una versión nueva del atlas» con «Recargar», que es lo único que la activa. Lo cargan las tres páginas, con `css/offline.css` |
 | `js/volver.js` | «Volver al mapa» de `acerca.html` y `calendario.html`: Atrás cuando el mapa está justo detrás, el enlace a la vista en los demás casos |
