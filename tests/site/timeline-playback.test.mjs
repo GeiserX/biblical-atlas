@@ -4,6 +4,9 @@
 //    highlighted (.de-paso).
 //  - At «Años» (and down) every event stops playback for about 1.5 s, as always, and nothing is highlighted.
 //  - «Pausar un momento en cada suceso» off: no stop at all. A pause by hand stays paused until play is pressed again.
+//  - The strip slides under the cursor, held near a third of the track, instead of jumping at the right edge; no lane
+//    shrinks while playing, and a pause lays the rows out again. At «Meses» the month rows appear above the lane being
+//    read without pushing it down.
 //
 // Run from the repository root, one browser at a time:
 //   node --test --test-concurrency=1 tests/site/timeline-playback.test.mjs
@@ -166,4 +169,82 @@ test('«Pausar un momento en cada suceso» off: «Décadas» never stops; a paus
   const sigue = await p.evaluate(() => ({ play: window.BE.E.play, t: window.BE.E.t }));
   await p.context().close();
   assert.ok(sigue.t > t0, 'play after a pause by hand did not move the cursor');
+});
+
+/** Plays with the bottom message's stops off and records, on every frame while playing, how far the view moved (px),
+    where the cursor is (fraction of the track), and which lanes shrank. */
+async function slide(p, ms) {
+  await p.evaluate(() => {
+    const BE = window.BE, R = (window.__slide = { frames: 0, jump: 0, frac: [], shrinks: [] });
+    let prev = null;
+    const f = () => {
+      const w = document.querySelector('#pista').clientWidth;
+      const lanes = new Map([...document.querySelectorAll('#linea-filas .carril')].map((e) => [e.dataset.carril, e.hidden ? 0 : e.offsetHeight]));
+      const cur = { v0: BE.E.vista[0], s: BE.E.vista[1] - BE.E.vista[0], t: BE.E.t, play: BE.E.play, lanes };
+      if (prev?.play && cur.play) {
+        R.frames++;
+        R.jump = Math.max(R.jump, Math.abs(cur.v0 - prev.v0) / cur.s * w);
+        R.frac.push((cur.t - cur.v0) / cur.s);
+        for (const [id, h] of lanes) if (prev.lanes.has(id) && h < prev.lanes.get(id)) R.shrinks.push(`${id} ${prev.lanes.get(id)} -> ${h}`);
+      }
+      prev = cur;
+      if (!window.__slideStop) requestAnimationFrame(f);
+    };
+    requestAnimationFrame(f);
+  });
+  await p.click('#reproducir');
+  await p.waitForTimeout(ms);
+  return p.evaluate(() => {
+    window.__slideStop = true;
+    if (window.BE.E.play) document.querySelector('#reproducir').click();
+    return window.__slide;
+  });
+}
+const laneHeights = (p) => p.evaluate(() => Object.fromEntries([...document.querySelectorAll('#linea-filas .carril')].map((e) => [e.dataset.carril, e.hidden ? 0 : e.offsetHeight])));
+
+test('while playing the strip slides under a cursor held near a third, never jumps, and no lane shrinks; a pause lays the rows out again', async () => {
+  // Six months per second at «Años»: in 12 s the cursor crosses most of the 8-year view, past where the view used to jump.
+  const p = await open('t=29.5&v=8&sel=persona:jesus&pausa=0&vel=6-meses');
+  const w = await p.evaluate(() => document.querySelector('#pista').clientWidth);
+  const r = await slide(p, 12000);
+  const last = r.frac.slice(-20);
+  console.log(`slide: ${r.frames} frames, largest move ${r.jump.toFixed(1)} px, cursor from ${(r.frac[0] * 100).toFixed(0)} % to ${(r.frac[r.frac.length - 1] * 100).toFixed(0)} %, shrinks ${r.shrinks.length}`);
+  assert.ok(r.frames >= 20, `only ${r.frames} frames played`);
+  // One frame of six months per second moves the view a few px; the old jump moved it about 70 % of the track at once.
+  assert.ok(r.jump < w * 0.05, `the view jumped ${r.jump.toFixed(0)} px in one frame (track ${w} px)`);
+  assert.ok(Math.max(...r.frac) <= 0.45, `the cursor went as far as ${(Math.max(...r.frac) * 100).toFixed(0)} % of the track`);
+  for (const f of last) assert.ok(Math.abs(f - 1 / 3) < 0.03, `after a while the cursor should sit at a third, not at ${(f * 100).toFixed(0)} %`);
+  assert.deepEqual(r.shrinks, [], 'a lane shrank while playing');
+
+  // Paused: the rows are laid out again, as a fresh page with the same view lays them out.
+  await p.waitForTimeout(400);
+  const held = await laneHeights(p);
+  const view = await p.evaluate(() => ({ t: window.BE.E.t, vista: [...window.BE.E.vista] }));
+  const q = await open('t=29.5&v=8&sel=persona:jesus&pausa=0&vel=6-meses');
+  await q.evaluate(({ t, vista }) => { const BE = window.BE; BE.setT(t); BE.E.vista = vista; BE.sucio.linea = true; BE.programar(); }, view);
+  await frames(q, 8);
+  const fresh = await laneHeights(q);
+  await p.context().close(); await q.context().close();
+  assert.deepEqual(held, fresh, 'after the pause the lanes keep the rows frozen while playing');
+});
+
+test('«Años» -> «Meses»: the month rows appear above without pushing down the lane being read', async () => {
+  const p = await open('sel=persona:jesus');
+  const top = () => p.evaluate(() => {
+    const c = document.querySelector('#linea-cuerpo'), y0 = c.getBoundingClientRect().top;
+    const lanes = [...document.querySelectorAll('#linea-filas .carril:not([hidden])')].map((e) => ({ id: e.dataset.carril, y: e.getBoundingClientRect().top - y0, h: e.offsetHeight }));
+    return { scroll: c.scrollTop, lanes };
+  });
+  await p.click('.linea-barra [data-zoom="8"]'); await frames(p, 8);
+  const a = await top();
+  await p.click('.linea-barra [data-zoom="1.5"]'); await frames(p, 8);
+  const b = await top();
+  const months = await p.evaluate(() => [...document.querySelectorAll('#linea-filas .carril--meses:not([hidden])')].length);
+  await p.context().close();
+  assert.ok(a.scroll > 0, 'the lanes should start scrolled down to Jesús; without that this test proves nothing');
+  assert.ok(months > 0, 'no month rows at «Meses»');
+  const lane = a.lanes.find((x) => x.y + x.h > 27 && b.lanes.some((y) => y.id === x.id));
+  const after = b.lanes.find((x) => x.id === lane.id);
+  console.log(`read lane ${lane.id}: ${lane.y.toFixed(0)} px -> ${after.y.toFixed(0)} px (scroll ${a.scroll} -> ${b.scroll})`);
+  assert.ok(Math.abs(after.y - lane.y) <= 1, `the lane «${lane.id}» moved from ${lane.y.toFixed(0)} to ${after.y.toFixed(0)} px`);
 });

@@ -284,7 +284,8 @@ function edgeRows(vis, w, G, holdEdge) {
     la clave de la letra (si cambia, se vuelven a repartir las filas). hold = null, o { rows, edge } mientras se arrastra:
     ninguna marca cambia de fila salvo para no quedar encima de otra, un carril no encoge, y una fila que aparece va
     abajo del todo.
-    Devuelve { visible, nRows }: las marcas que se ven, cada una con su fila en pantalla (_drow), y cuántas filas hay. */
+    Devuelve { visible, nRows, rowMap }: las marcas que se ven, cada una con su fila en pantalla (_drow), cuántas filas
+    hay y qué fila del mundo va en cada fila de la pantalla (con ella se congela lo que se ve al empezar a reproducir). */
 function layoutLane(lane, view, geom, hold) {
   const { w, t0, G } = geom;
   const ppy = w / view.span;
@@ -316,7 +317,7 @@ function layoutLane(lane, view, geom, hold) {
   for (const it of shown) it._drow = rowMap.get(it._key);
   const nRows = shown.length || hold ? (rowMap.size ? Math.max(...rowMap.values()) + 1 : 0) : 0;
   shown.sort((a, b) => a._hit[0] - b._hit[0] || a._drow - b._drow);
-  return { visible: shown, nRows };
+  return { visible: shown, nRows, rowMap };
 }
 
 // ---------------------------------------------------------------------------
