@@ -545,6 +545,8 @@ const overlapSpot = (page) => page.evaluate(() => {
         const pila = document.elementsFromPoint(x, y);
         if (pila[0]?.closest('.marca-lugar') !== a.el || pila.some((n) => n.matches(drawn))) continue;
         if (!pila.some((n) => n === b.el)) continue;
+        // A traveller's zone there too (Epafras at the map's opening zoom) is a third point: the spot is not between two.
+        if (pila.some((n) => n.closest('.viajero'))) continue;
         return { top: a.id, near: b.id, x, y, d: Math.round(d * 10) / 10, k };
       }
     }
@@ -718,6 +720,8 @@ test('1440: a dot under a region, sea or river name keeps its click', async () =
           const pila = document.elementsFromPoint(x, y), at = pila.indexOf(dot);
           // The dot is in the stack, and a visible region, sea or river name is painted above it.
           if (at < 0) continue;
+          // Another place's dot on this one (the Areópago on Atenas, zoomed out) may take the click: that is a tie.
+          if (pila.slice(0, at).some((n) => n.matches('.marca-lugar > .punto'))) continue;
           const name = pila.slice(0, at).find((n) => n.matches(NAME));
           if (!name) continue;
           return { id: el.dataset.sel, over: name.closest('.marca-region, .marca-agua').dataset.sel, x, y };

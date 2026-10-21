@@ -201,7 +201,7 @@ function crearMapa() {
   map.once('load', () => {
     map.getContainer().querySelector('.maplibregl-compact-show')?.classList.remove('maplibregl-compact-show');
     const attrib = map.getContainer().querySelector('.maplibregl-ctrl-attrib');
-    if (attrib) new ResizeObserver(() => { $('#leyenda').style.bottom = `${Math.max(28, attrib.offsetHeight + 10)}px`; }).observe(attrib);
+    if (attrib) new ResizeObserver(subirLeyenda).observe(attrib);
   });
   map.addControl(new maplibregl.NavigationControl({ showCompass: false }), 'top-right');
   map.addControl(new ControlCapas(), 'top-right');
@@ -1319,9 +1319,13 @@ const CENTRO = '.punto, .hallazgo-dibujo > span, .viajero-punto, .cand-punto';
     sin zona (una burbuja, un número). Después, un nombre: su caja es casi toda aire entre letras, así que no tapa el punto
     que queda debajo (el de Atalía bajo «PANFILIA»). El borde transparente de una zona no cuenta, ni un nombre escondido. */
 const MACIZO = '.marca-lugar:not(.marca-lugar--difuso) > .punto, .hallazgo-dibujo > span, .viajero-punto, .cand-punto';
+// Con el dedo, el toque deja un :hover que enseña el nombre escondido de la zona tocada antes del clic (mapa.css): ese
+// nombre no estaba a la vista al tocar, así que no cuenta como dibujado. Con el ratón lo enseña al-raton, y sí cuenta.
+const ESCONDIDO = '.marca-lugar.sin-etiqueta:not(.al-raton) .etiqueta';
 const dibujadoEn = (x, y) => {
   const pila = document.elementsFromPoint(x, y);
-  return pila.find((n) => n.matches(MACIZO) || (n.closest('.maplibregl-marker') && !n.closest(MARCA))) || pila.find((n) => n.matches(DIBUJO)) || null;
+  return pila.find((n) => n.matches(MACIZO) || (n.closest('.maplibregl-marker') && !n.closest(MARCA)))
+    || pila.find((n) => n.matches(DIBUJO) && !n.closest(ESCONDIDO)) || null;
 };
 /** La marca que recibe un clic en (x, y): la de lo que se ve ahí; si solo hay zonas, la del punto más cercano. */
 function marcaCercana(x, y) {
@@ -2464,10 +2468,25 @@ function loQueTapa() {
 }
 /** Lo que tapa el mapa (loQueTapa), en píxeles del contenedor, con la esquina en que está. Solo mide: quien encuadra
     pinta antes la leyenda y «Mientras tanto» de lo nuevo (repintarParaEncuadrar). */
+/** La leyenda va encima de la atribución del mapa. Lo hace su ResizeObserver, pero ese llega después del primer
+    encuadre: un enlace abierto de nuevo medía la leyenda 2 px más abajo que el mismo enlace al que se llegaba buscando,
+    y el mapa quedaba en otro sitio. Quien encuadra lo pone antes de medir (tapas). */
+function subirLeyenda() {
+  const attrib = map?.getContainer().querySelector('.maplibregl-ctrl-attrib'), ley = $('#leyenda');
+  if (!attrib || !ley) return;
+  const b = `${Math.max(28, attrib.offsetHeight + 10)}px`;
+  if (ley.style.bottom !== b) ley.style.bottom = b;
+}
 function tapas() {
   const c = map.getContainer().getBoundingClientRect(), out = [];
-  for (const el of loQueTapa()) {
-    const r = el.getBoundingClientRect();
+  subirLeyenda();
+  // El mapa de situación solo sale de cerca (pintarSituacion), así que encuadrar desde lejos medía sin él y desde cerca
+  // con él: el mismo enlace quedaba en otro sitio según de dónde se viniera. En el escritorio se mide siempre.
+  const sit = $('#situacion'), mostrar = !!sit && sit.hidden && !estrecha();
+  if (mostrar) sit.hidden = false;
+  const cajas = loQueTapa().map((el) => el.getBoundingClientRect());
+  if (mostrar) sit.hidden = true;
+  for (const r of cajas) {
     if (r.width < 2 || r.height < 2 || r.right <= c.left || r.left >= c.right || r.bottom <= c.top || r.top >= c.bottom) continue;
     out.push({ x0: r.left - c.left, x1: r.right - c.left, y0: r.top - c.top, y1: r.bottom - c.top,
       izq: r.left + r.right < c.left + c.right, arriba: r.top + r.bottom < c.top + c.bottom });
