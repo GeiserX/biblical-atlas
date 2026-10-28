@@ -26,6 +26,7 @@ sources:
 - si-oseas
 - w05-profecias-de-oseas
 - oseas-3
+- gwt-oseas
 links:
 - title: 'Perspicacia: «Oseas»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Oseas/
@@ -44,7 +45,7 @@ history:
 - date: '2026-09-29'
   change: La razón cita también el artículo del libro y los pasajes de su matrimonio.
   source: oseas-1
-checked_on: '2026-09-29'
+checked_on: '2026-10-28'
 status: verified
 relations:
 - type: kin

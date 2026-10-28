@@ -778,8 +778,9 @@ books:
     text: 613-c. 591 a.e.c.
   sources:
   - tnm-tabla
+  - gwt-ezequiel
   reason: 'Fila de «Ezequiel» en la tabla de libros de la Biblia de estudio: escritor, lugar, fecha y tiempo abarcado.'
-  checked_on: '2026-09-28'
+  checked_on: '2026-10-28'
   status: verified
 - slug: daniel
   num: 27
@@ -809,8 +810,9 @@ books:
     text: 618-c. 536 a.e.c.
   sources:
   - tnm-tabla
+  - gwt-daniel
   reason: 'Fila de «Daniel» en la tabla de libros de la Biblia de estudio: escritor, lugar, fecha y tiempo abarcado.'
-  checked_on: '2026-09-28'
+  checked_on: '2026-10-28'
   status: verified
 - slug: oseas
   num: 28
@@ -840,9 +842,10 @@ books:
     text: antes de 804 a.e.c. - después de 745 a.e.c.
   sources:
   - tnm-tabla
+  - gwt-oseas
   - it-oseas-libro
   reason: 'Fila de «Oseas» en la tabla de libros de la Biblia de estudio: escritor, lugar, fecha y tiempo abarcado.'
-  checked_on: '2026-09-28'
+  checked_on: '2026-10-28'
   status: verified
 - slug: joel
   num: 29
@@ -865,8 +868,9 @@ books:
   note: La tabla pone la fecha con un signo de interrogación.
   sources:
   - tnm-tabla
+  - gwt-joel
   reason: 'Fila de «Joel» en la tabla de libros de la Biblia de estudio: escritor, lugar y fecha.'
-  checked_on: '2026-09-28'
+  checked_on: '2026-10-28'
   status: verified
 - slug: amos
   num: 30

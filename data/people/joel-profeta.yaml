@@ -14,7 +14,7 @@ date:
   text: c. 820 a.e.c. (?)
 summary: Profeta hijo de Petuel, autor del libro de Joel. Lo escribió en Judá, quizás hacia 820 a.e.c.
 reason: Perspicacia «Joel», núm. 9; Joe 1:1. La Tabla de los libros pone «c. 820 (?)», con signo de duda, y el estudio 3 dice
-  «probable».
+  «probable». El manual añade que Amós parece citar a Joel y que hacia 820 reinaba Uzías.
 sources:
 - it-joel
 - joel-1
@@ -25,6 +25,7 @@ sources:
 - w07-joel-y-amos
 - joel-2
 - joel-3
+- gwt-joel
 links:
 - title: 'Perspicacia: «Joel»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Joel/
@@ -39,7 +40,7 @@ perspicacia: 1200002481#9
 not_claimed:
 - 'Que viviera con seguridad en Jerusalén: Perspicacia «Joel, Libro de» solo dice «quizás», y «Toda Escritura» duda entre
   Jerusalén y Judá.'
-checked_on: '2026-10-14'
+checked_on: '2026-10-28'
 status: verified
 relations:
 - type: kin

@@ -11,10 +11,10 @@ date:
   type: anchored
   chronology: tnm
   text: 613-c. 591 a.e.c.
-summary: Hijo del sacerdote Buzí, llevado a Babilonia con Joaquín en 617. Desde 613 profetizó a los desterrados junto al río
+summary: Hijo del sacerdote Buzí, nacido hacia 643 y llevado a Babilonia con Joaquín en 617. Desde 613 profetizó a los desterrados junto al río
   Kebar, a la vez que Jeremías en Judá.
 reason: Perspicacia «Ezequiel», párr. 1 y 4; Eze 1:1-3. El estudio 3 fecha su comienzo en 613 y la Tabla cierra el libro hacia
-  591.
+  591. El manual calcula unos 26 años en 617 y unos 30 en 613.
 sources:
 - it-ezequiel
 - ezequiel-1
@@ -74,6 +74,7 @@ sources:
 - ezequiel-45
 - ezequiel-46
 - ezequiel-47
+- gwt-ezequiel
 links:
 - title: 'Perspicacia: «Ezequiel»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ezequiel/
@@ -168,5 +169,5 @@ history:
   change: 'La residencia pasa de la ciudad de Babilonia a la tierra de los caldeos: Eze 1:1-3 lo pone junto al río Kebar,
     lejos de la capital, y Perspicacia «Tel-abib» lo sitúa allí.'
   source: ezequiel-1
-checked_on: '2026-10-13'
+checked_on: '2026-10-28'
 status: verified
