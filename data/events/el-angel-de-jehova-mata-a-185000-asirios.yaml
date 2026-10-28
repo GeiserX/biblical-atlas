@@ -23,6 +23,7 @@ passages:
 - 2Re 19:35, 36
 - Is 37:36, 37
 - 2Cr 32:21
+- Os 1:7
 summary: Esa misma noche, el ángel de Jehová acaba con 185.000 hombres del campamento asirio. Al amanecer aparecen los cadáveres,
   y Senaquerib se retira a Nínive y se queda allí.
 reason: 'Estudio 3: 732 a.e.c.; cumple Is 37:33-35. Perspicacia «Libná» pone el campamento, al parecer, junto a Libná, y «Senaquerib»
@@ -34,6 +35,8 @@ sources:
 - isaias-37
 - it-libna
 - 2-cronicas-32
+- oseas-1
+- gwt-oseas
 links:
 - title: 2 Reyes 19 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/2-reyes/19/
@@ -49,5 +52,5 @@ history:
   change: 'Se funde con el suceso igual de 2 Reyes, dueño del relato: toma su título, su resumen y su orden en la serie de
     2 Reyes, y suma Jerusalén y 2Cr 32:21.'
   source: 2-reyes-19
-checked_on: '2026-10-13'
+checked_on: '2026-10-28'
 status: verified
