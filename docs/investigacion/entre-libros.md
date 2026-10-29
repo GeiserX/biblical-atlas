@@ -487,3 +487,14 @@ Los campos, los tipos de relación y sus palabras se nombran como en el esquema 
 
 - **Quién lleva `apostle` y quién `congregation_apostle`.** `apostle` es el apóstol de Jesucristo: los doce, Matías y Pablo, que Perspicacia «Apóstol» separa de todos los demás. `congregation_apostle` es el sentido amplio del mismo artículo (apostolado en las congregaciones): el enviado de una congregación. Lo llevan Santiago, hermano de Jesús (Gál 1:19; «Santiago», núm. 4, con `inferred: true`), Bernabé (Hch 14:4, 14; apóstol de la congregación de Antioquía) y Epafrodito (Flp 2:25, enviado de Filipos). No lo llevan Andrónico y Junias, que Ro 16:7 solo llama insignes entre los apóstoles, ni los enviados sin nombre de 2Co 8:23. Jesús tampoco (Heb 3:1, sentido básico de enviado, como decidió Hebreos).
 - **Quién lleva `elder`.** Lo llevan quienes se llaman anciano a sí mismos (Juan en 2Jn 1 y 3Jn 1, Pedro en 1Pe 5:1) y quienes Perspicacia «Anciano», en el apartado de la congregación cristiana, nombra uno por uno: Timoteo, reconocido como anciano pese a su juventud (1Ti 4:12), y Pablo, Pedro, Juan, Santiago y Judas, que supervisaban a otros ancianos. Los demás apóstoles no lo llevan. El mismo apartado dice que los apóstoles eran ancianos en sentido espiritual por haber estado con Jesús y recibido de él el encargo de enseñar, pero eso habla de todo el grupo y es lo que ya dice `apostle`. Tito tampoco lo lleva (ver «Para Tito»). Quien reabra un libro y encuentre a alguien a quien la Biblia o jw.org llamen anciano o superintendente de una congregación le pone `elder` con ese capítulo como fuente.
+
+## Para varios libros (desde «Tu palabra es la verdad», gwt)
+
+Citas de Oseas en las Griegas que la tabla 28-A del manual da y que la nota del tramo que cita aún no recoge. Van en esa nota, como en Romanos; quien reabra el libro la anota y la quita de aquí.
+
+- **Mateo.** Mt 12:7 cita Os 6:6: tramo 12:1-8.
+- **Lucas.** Lu 23:30 cita Os 10:8: tramo 23:26-31.
+- **Apocalipsis.** Ap 6:16 cita Os 10:8: tramo 6:15-17.
+- **Hebreos.** Heb 13:15 alude a Os 14:2: tramo 13:10-16.
+
+Ya están anotadas Mt 9:13 (Os 6:6), Ro 9:25, 26 (Os 2:23), 1Co 15:55 (Os 13:14) y Mt 2:15 (Os 11:1, que además lleva `huida-a-egipto`). Los paralelos del «día de Jehová» de la tabla 29-A no se apuntan: repiten referencias marginales, que solas no añaden nada a `mentions`.
