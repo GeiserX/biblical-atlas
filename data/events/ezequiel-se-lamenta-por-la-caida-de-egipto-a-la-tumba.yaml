@@ -3,14 +3,14 @@ id: ezequiel-se-lamenta-por-la-caida-de-egipto-a-la-tumba
 title: Ezequiel se lamenta por la caída de Egipto a la Tumba
 type: speech
 date:
-  from: -605
-  to: -605
+  from: -604
+  to: -604
   precision: year
   approx: false
   type: derived
   chronology: tnm
-  text: 606 a.e.c.
-  note: 'Eze 32:17: año 12, día 15, sin mes. Con el noveno en 609 («Toda Escritura», párr. 20) da 606. No casa con Eze 33:21, también del año 12, en 607 según el párr. 24 (nota c: manuscritos con «año undécimo»).'
+  text: 605 a.e.c.
+  note: 'Eze 32:17: año 12, día 15, sin mes. «Tu palabra es la verdad» (2026) pone el año 12 en 605, igual que Eze 32:1.'
 places:
 - tel-abib
 - caldea
@@ -33,6 +33,7 @@ sources:
 - it-elam
 - it-ezequiel
 - si-ezequiel
+- gwt-ezequiel
 links:
 - title: Ezequiel 32 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/ezequiel/32/
@@ -40,5 +41,9 @@ links:
 - title: 'Perspicacia: «Ezequiel»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ezequiel/
   type: perspicacia
-checked_on: '2026-10-13'
+history:
+- date: '2026-10-29'
+  change: 'Pasa de 606 a 605. «Toda Escritura» (1990) daba 606 contando desde el año 9 en 609; «Tu palabra es la verdad» (2026) pone el año 12 en 605.'
+  source: gwt-ezequiel
+checked_on: '2026-10-29'
 status: pending
