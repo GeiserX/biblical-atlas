@@ -22,6 +22,7 @@ people:
 - herodes-el-grande
 passages:
 - Mt 2:13-15
+- Os 11:1
 summary: Un ángel avisa a José en un sueño de que Herodes busca al niño para matarlo. Esa misma noche sale con María y Jesús
   hacia Egipto, a más de 120 km, y allí se quedan hasta que Herodes muere.
 reason: A7-A, fila 7, la fecha entre 1 a.e.c. y 1 e.c. Perspicacia «Herodes» (núm. 1) cree probable que muriera en 1 a.e.c.
@@ -31,6 +32,8 @@ sources:
 - mateo-2
 - it-herodes
 - jy-cap-8
+- oseas-11
+- gwt-oseas
 history:
 - date: '2026-09-29'
   change: 'Lugares de la huida sola: Egipto primero; Jerusalén y Nazaret pasan a los otros eventos.'
@@ -62,5 +65,5 @@ present:
 - jose-esposo-de-maria
 - jesus
 - maria-madre-de-jesus
-checked_on: '2026-09-29'
+checked_on: '2026-10-28'
 status: verified

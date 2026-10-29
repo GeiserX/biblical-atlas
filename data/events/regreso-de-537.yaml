@@ -65,6 +65,8 @@ passages:
 - 1Cr 9:2
 - Ne 7:6, 7, 66-73
 - Ne 12:1-9
+- Eze 36:8-11
+- Os 1:11
 summary: Unas 42.360 personas, más esclavos y cantores, dejaron Babilonia guiadas por Zorobabel y estaban en sus ciudades
   para el séptimo mes. Así terminaron los setenta años de desolación.
 reason: 'Estudio 3 (párr. 5, 6) y Perspicacia «Ciro»: vuelta para tisri de 537; cifras de Esd 2:64, 65. Según «la buena tierra»,
@@ -79,6 +81,10 @@ sources:
 - it-salmos-libro
 - esdras-1
 - nehemias-12
+- ezequiel-36
+- oseas-1
+- gwt-ezequiel
+- gwt-oseas
 links:
 - title: 'Perspicacia: «Ciro»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ciro/
@@ -94,5 +100,5 @@ history:
   change: 'Entra en la serie de Esdras con el orden 2068: su fecha es la llegada a las ciudades, posterior a la entrega de
     los utensilios (Esd 1:7-11) y al registro de Esd 2.'
   source: esdras-2
-checked_on: '2026-10-14'
+checked_on: '2026-10-28'
 status: verified

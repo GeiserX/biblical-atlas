@@ -18,6 +18,7 @@ present:
 passages:
 - 2Re 17:5, 6
 - 2Re 18:9, 10
+- Os 8:8, 9
 summary: Tras un sitio de tres años que empezó en 742, Asiria toma Samaria. Con su caída acaba el reino de diez tribus, que
   había durado 257 años.
 reason: Estudio 3 (740); Perspicacia «Ezequías», párr. 10 (sitio desde 742) y «Salmanasar», párr. 15 (257 años). Sitió Salmanasar
@@ -32,6 +33,8 @@ sources:
 - it-sargon
 - 2-reyes-18
 - it-hosea
+- oseas-8
+- gwt-oseas
 links:
 - title: 'Perspicacia: «Samaria»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Samaria/
@@ -68,5 +71,5 @@ history:
 narrative_order:
   series: 2-reyes
   order: 17005
-checked_on: '2026-09-30'
+checked_on: '2026-10-28'
 status: verified
