@@ -547,6 +547,10 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | genesis-8 | [Génesis 8](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/G%C3%A9nesis/8/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | genesis-9 | [Génesis 9](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/G%C3%A9nesis/9/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | glosario-herodes | [Glosario: Herodes](https://www.jw.org/es/biblioteca/libros/glosario-biblia/herodes/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | 2026-10-19 |
+| gwt-daniel | [Daniel](https://www.jw.org/es/biblioteca/libros/tu-palabra-es-verdad/daniel/) | “Tu palabra es la verdad”. La Biblia libro a libro | 1 | 2026 | 2026-10-28 |
+| gwt-ezequiel | [Ezequiel](https://www.jw.org/es/biblioteca/libros/tu-palabra-es-verdad/ezequiel/) | “Tu palabra es la verdad”. La Biblia libro a libro | 1 | 2026 | 2026-10-28 |
+| gwt-joel | [Joel](https://www.jw.org/es/biblioteca/libros/tu-palabra-es-verdad/joel/) | “Tu palabra es la verdad”. La Biblia libro a libro | 1 | 2026 | 2026-10-28 |
+| gwt-oseas | [Oseas](https://www.jw.org/es/biblioteca/libros/tu-palabra-es-verdad/oseas/) | “Tu palabra es la verdad”. La Biblia libro a libro | 1 | 2026 | 2026-10-28 |
 | habacuc-1 | [Habacuc 1](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/habacuc/1/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | habacuc-2 | [Habacuc 2](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/habacuc/2/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | habacuc-3 | [Habacuc 3](https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/habacuc/3/) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
