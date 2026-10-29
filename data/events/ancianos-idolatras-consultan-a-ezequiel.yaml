@@ -30,6 +30,7 @@ sources:
 - it-ezequiel
 - si-ezequiel
 - it-ezequiel-libro
+- gwt-ezequiel
 links:
 - title: Ezequiel 14 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/ezequiel/14/
@@ -37,5 +38,5 @@ links:
 - title: 'Perspicacia: «Ezequiel»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ezequiel/
   type: perspicacia
-checked_on: '2026-10-13'
+checked_on: '2026-10-29'
 status: verified
