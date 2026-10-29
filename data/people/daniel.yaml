@@ -13,10 +13,10 @@ date:
   type: anchored
   chronology: tnm
   text: de 617 a.e.c. a por lo menos 536 a.e.c.
-summary: Profeta de la tribu de Judá llevado joven a Babilonia en 617 a.e.c. Sirvió en la corte babilonia y en la persa,
-  interpretó la escritura en la pared y seguía activo en el tercer año de Ciro.
-reason: 'Perspicacia «Daniel», núm. 2: llevado a principios de 617 con Joaquín y en la corte persa hasta al menos el tercer
-  año de Ciro (536). Da 1:1-7 y 10:1.'
+summary: Profeta de Judá, desterrado joven en Babilonia en 617 a.e.c. Sirvió en las cortes babilonia y persa, interpretó
+  la escritura en la pared y seguía activo en el tercer año de Ciro, al parecer con casi cien años.
+reason: 'Perspicacia «Daniel», núm. 2: llevado en 617 con Joaquín; en la corte persa hasta al menos el tercer año de Ciro
+  (536). Da 1:1-7 y 10:1. «Tu palabra es la verdad»: casi 100 años, última visión y libro hacia 536.'
 sources:
 - it-daniel
 - daniel-1
@@ -36,6 +36,7 @@ sources:
 - daniel-12
 - dp-18
 - ezequiel-14
+- gwt-daniel
 links:
 - title: 'Perspicacia: «Daniel»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Daniel/
@@ -198,7 +199,7 @@ history:
 - date: '2026-10-12'
   change: 'Faltaba la clave: el profeta es Perspicacia «Daniel», núm. 2; el núm. 1 es el hijo de David que 1Cr 3:1 llama Daniel.'
   source: it-daniel
-checked_on: '2026-10-14'
+checked_on: '2026-10-28'
 status: verified
 distinct_from:
 - kileab
