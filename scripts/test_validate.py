@@ -1423,6 +1423,14 @@ class HuecosDeLaCarga(unittest.TestCase):
         e = [x for x in self.errores(self.fuente("gwt-daniel", url="https://example.com/daniel/")) if "nivel 1" in x]
         self.assertEqual(len(e), 1, e)
 
+    def test_una_clave_repetida_en_la_cobertura_es_error(self):
+        with tempfile.TemporaryDirectory() as d:
+            (Path(d) / "coverage").mkdir()
+            (Path(d) / "coverage" / "x.yaml").write_text("book: x\nbook: y\n", encoding="utf-8")
+            e = [x for x in validate.load(d)["_errores"] if "repetida" in x]
+        self.assertEqual(len(e), 1, e)
+        self.assertIn("x.yaml: línea 2", e[0])
+
     def test_nivel_2_fuera_de_jw_org_vale(self):
         e = self.errores(self.fuente("datos-x", url="https://github.com/x/y", level=2))
         self.assertEqual([x for x in e if "nivel 1" in x or "x.yaml" in x], [])

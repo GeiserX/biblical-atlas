@@ -287,6 +287,11 @@ def load(data_dir):
             obj["_nombre_fichero"] = ruta.stem
             datos[tipo].append(obj)
     datos["coverage"] = bible_coverage.cargar(data_dir, errores)
+    for ruta in sorted((data_dir / "coverage").glob("*.yaml")):
+        try:
+            _read(ruta)   # bible_coverage lee con safe_load: aquí solo se buscan sus claves repetidas
+        except yaml.YAMLError:
+            pass          # bible_coverage.cargar ya lo ha dado como error
     datos["languages"] = (_read(data_dir / "languages.yaml") or {}) if (data_dir / "languages.yaml").exists() else {}
 
     # Capítulos de la Biblia como fuentes implícitas: <slug>-<cap> que nadie ha escrito se crea desde books.yaml.
