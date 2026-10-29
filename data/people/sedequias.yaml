@@ -84,8 +84,9 @@ relations:
   - it-sedequias
   - jeremias-52
   - ezequiel-17
+  - gwt-ezequiel
   reason: Lo tuvieron preso en Babilonia hasta su muerte (Jer 52:11).
-  checked_on: '2026-10-13'
+  checked_on: '2026-10-28'
   status: verified
 - type: kin
   person: hamutal

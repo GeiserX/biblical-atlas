@@ -779,7 +779,7 @@ books:
   sources:
   - tnm-tabla
   - gwt-ezequiel
-  reason: 'Fila de «Ezequiel» en la tabla de libros de la Biblia de estudio: escritor, lugar, fecha y tiempo abarcado.'
+  reason: 'Fila de «Ezequiel» en la tabla de libros de la Biblia de estudio: escritor, lugar, fecha y tiempo abarcado. «Tu palabra es la verdad» da los mismos datos.'
   checked_on: '2026-10-28'
   status: verified
 - slug: daniel
@@ -811,7 +811,7 @@ books:
   sources:
   - tnm-tabla
   - gwt-daniel
-  reason: 'Fila de «Daniel» en la tabla de libros de la Biblia de estudio: escritor, lugar, fecha y tiempo abarcado.'
+  reason: 'Fila de «Daniel» en la tabla de libros de la Biblia de estudio: escritor, lugar, fecha y tiempo abarcado. «Tu palabra es la verdad» da los mismos datos.'
   checked_on: '2026-10-28'
   status: verified
 - slug: oseas
@@ -844,7 +844,7 @@ books:
   - tnm-tabla
   - gwt-oseas
   - it-oseas-libro
-  reason: 'Fila de «Oseas» en la tabla de libros de la Biblia de estudio: escritor, lugar, fecha y tiempo abarcado.'
+  reason: 'Fila de «Oseas» en la tabla de libros de la Biblia de estudio: escritor, lugar, fecha y tiempo abarcado. «Tu palabra es la verdad» da los mismos datos.'
   checked_on: '2026-10-28'
   status: verified
 - slug: joel
@@ -869,7 +869,7 @@ books:
   sources:
   - tnm-tabla
   - gwt-joel
-  reason: 'Fila de «Joel» en la tabla de libros de la Biblia de estudio: escritor, lugar y fecha.'
+  reason: 'Fila de «Joel» en la tabla de libros de la Biblia de estudio: escritor, lugar y fecha. «Tu palabra es la verdad» da los mismos datos.'
   checked_on: '2026-10-28'
   status: verified
 - slug: amos

@@ -70,7 +70,7 @@ Los campos, los tipos de relación y sus palabras se nombran como en el esquema 
 
 ## Para Hechos y Romanos (desde Joel)
 
-- **Joel 2:28-32 en Pentecostés.** El tramo Joel 2:28-32 lleva `pentecostes-33` en `mentions`, y Joe 2 no está en sus `passages`. Hch 2:16 nombra al profeta: `joel-profeta` (clave `1200002481#9`) va en `mentions` de ese tramo de Hechos. Ro 10:13 aplica Joe 2:32.
+- **Joel 2:28-32 en Pentecostés.** El tramo Joel 2:28-32 lleva `pentecostes-33` en `mentions`, y Joe 2:28-32 está en sus `passages` (gwt «Joel»). Hch 2:16 nombra al profeta: `joel-profeta` (clave `1200002481#9`) va en `mentions` de ese tramo de Hechos. Ro 10:13 aplica Joe 2:32.
 
 ## Para los demás profetas (desde Joel)
 
@@ -293,7 +293,7 @@ Los campos, los tipos de relación y sus palabras se nombran como en el esquema 
 - **Idó el sacerdote (Ne 12:4, 16).** Es Perspicacia «Idó», núm. 5, que ve posible que sea el núm. 4. Nehemías lo crea con su propio id y un `same_as` hacia `ido-padre-de-berekias`, con `inferred: true` y `certainty: possible`, en la ficha cuyo id va primero. Si el Zacarías de la casa de Idó (Ne 12:16) es el profeta, lo decide Nehemías con Perspicacia «Zacarías».
 - **Sucesos de Zacarías.** Serie `zacarias`: `primer-mensaje-de-zacarias` (hesván de 520), `visiones-nocturnas-de-zacarias` (24 de sebat de 519, Zac 1:7-6:8), `zacarias-corona-a-josue` (Zac 6:9-15), `betel-consulta-sobre-el-ayuno` (4 de kislev de 518, Zac 7:1-8:23), `zacarias-profetiza-contra-las-naciones` (c. 518, Zac 9:1-11:17), `zacarias-pastorea-el-rebano-destinado-al-matadero` (Zac 11:4-14) y `zacarias-anuncia-que-jehova-guerreara-y-reinara` (c. 518, Zac 12:1-14:21). Los mensajes llevan `type: speech` y `roles: {zacarias-profeta: spoke}`, y `present: [zacarias-profeta]` en Jerusalén. Las visiones y Zac 9-14 no dicen dónde habló: ese sitio se deduce de Esd 5:1 y Zac 7, y la `reason` lo dice.
 - **Los mensajes de Ageo.** Los cuatro no llevan `type: speech` ni `roles: {ageo: spoke}`, que pide `versiculos.md`, sección 6. Zacarías no pudo ponérselos porque `apply.py` no traducía un `cambiar` del campo `roles`; el mapa de `scripts/migration/migrate.py` ya lo traduce. Quien reabra Ageo los pone.
-- **Profecías que cita un Evangelio.** Zacarías añade el versículo a `passages` del suceso que lo cumple y lo deja en `mentions` de su tramo: Zac 9:9 en `entrada-triunfal-en-jerusalen`, 11:12 en `judas-acuerda-la-traicion` (el precio, Mt 26:15), 11:12, 13 en `muerte-de-judas`, 12:10 en `entierro-de-jesus` y 13:7 en `predice-las-negaciones-de-pedro` y en `arresto-en-getsemani` (la huida, Mt 26:56). Joel 2:28-32 no lo hizo con `pentecostes-33`: quien reabra Joel decide si lo iguala.
+- **Profecías que cita un Evangelio.** Zacarías añade el versículo a `passages` del suceso que lo cumple y lo deja en `mentions` de su tramo: Zac 9:9 en `entrada-triunfal-en-jerusalen`, 11:12 en `judas-acuerda-la-traicion` (el precio, Mt 26:15), 11:12, 13 en `muerte-de-judas`, 12:10 en `entierro-de-jesus` y 13:7 en `predice-las-negaciones-de-pedro` y en `arresto-en-getsemani` (la huida, Mt 26:56). Joel 2:28-32 ya lo iguala en `pentecostes-33`. Las tablas de «Tu palabra es la verdad» ligan igual Os 1:7, 1:11, 8:8, 9, 8:14 y 11:1, y Eze 4:1-3, 5:10 y 36:8-11, cada uno en `passages` de su suceso con `gwt-<libro>` en `sources`; Eze 17:16 se cumple en la relación `sedequias/died_in/babilonia`.
 - **El templo.** Zac 4:9, 10 está en `passages` de `fundamento-del-templo-536` y de `templo-terminado-515` (Perspicacia «Plomada»). Esdras 3 y 6 no tienen que añadir nada por Zacarías.
 - **Llanura de Meguidó y Hadadrimón.** «Llanura de Meguidó» está en `names` de `valle-de-jezreel`, con 2Cr 35:22 en su nota: el tramo 2 Crónicas 35:20-24 ya lo pone. `hadadrimon` existe; `muerte-de-josias` va solo en `mentions` de Zac 12:10-11, porque Perspicacia ve posible, no seguro, que el duelo fuera por Josías.
 - **Puertas y torre de Jerusalén.** Puerta de Benjamín, Primera Puerta, Puerta de la Esquina y Torre de Hananel están en `names` de `jerusalen` (Zac 14:10). Ne 3:1 y 12:39 usan esa ficha, como ya 2Cr 26:9 y Jer 31:38, 37:13 y 38:7.
@@ -490,8 +490,11 @@ Los campos, los tipos de relación y sus palabras se nombran como en el esquema 
 
 ## Para varios libros (desde «Tu palabra es la verdad», gwt)
 
-Citas y paralelos que ligan las tablas 28-A (Oseas) y 29-A (Joel) del manual. Los sucesos ya llevan sus pasajes (PR de cumplimientos); esto queda para cuando se reabra cada libro.
+Citas de Oseas en las Griegas que la tabla 28-A del manual da y que la nota del tramo que cita aún no recoge. Van en esa nota, como en Romanos; quien reabra el libro la anota y la quita de aquí.
 
-- **Citas de Oseas en las Griegas (28-A).** Mt 9:13 y 12:7 citan Os 6:6; Lu 23:30 y Ap 6:16 citan Os 10:8; Ro 9:25, 26 cita Os 1:10 y 2:23; 1Co 15:55 cita Os 13:14; He 13:15 alude a Os 14:2. Van en la nota del tramo del versículo que cita, como en Romanos. Os 11:1 en Mt 2:14, 15 ya está cerrado: `huida-a-egipto` lleva el pasaje y el tramo Os 11:1-4 lo menciona.
-- **Paralelos del «día de Jehová» (29-A).** Joe 2:1 con Abd 15, Sof 1:14, 1Te 5:2, 3 y 2Pe 3:10; Joe 2:2 con Am 5:20 y Sof 1:15; Joe 2:11 con Mal 4:5; Joe 2:31 con Is 13:9, 10, Am 8:9, Mt 24:29, 30, Hch 2:20 y Ap 6:12-17; Joe 2:32 con Abd 17, Hch 2:21 y Ro 10:13, 14. Al reabrir Abdías, Sofonías, Amós, Malaquías, Isaías, Mateo, Hechos, Romanos o Apocalipsis, la nota del tramo puede registrar el paralelo con Joel.
-- **Amós cita a Joel.** El manual ve Joe 3:16 citado en Am 1:1, 2; la ficha de `joel-profeta` ya lo recoge. Si Amós lo confirma al reabrirse, el tramo Am 1:1-2 lo anota y Joel 3 queda enlazado.
+- **Mateo.** Mt 12:7 cita Os 6:6: tramo 12:1-8.
+- **Lucas.** Lu 23:30 cita Os 10:8: tramo 23:26-31.
+- **Apocalipsis.** Ap 6:16 cita Os 10:8: tramo 6:15-17.
+- **Hebreos.** Heb 13:15 alude a Os 14:2: tramo 13:10-16.
+
+Ya están anotadas Mt 9:13 (Os 6:6), Ro 9:25, 26 (Os 2:23), 1Co 15:55 (Os 13:14) y Mt 2:15 (Os 11:1, que además lleva `huida-a-egipto`). Los paralelos del «día de Jehová» de la tabla 29-A no se apuntan: repiten referencias marginales, que solas no añaden nada a `mentions`.
