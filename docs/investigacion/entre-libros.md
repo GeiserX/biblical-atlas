@@ -490,8 +490,11 @@ Los campos, los tipos de relación y sus palabras se nombran como en el esquema 
 
 ## Para varios libros (desde «Tu palabra es la verdad», gwt)
 
-Citas y paralelos que ligan las tablas 28-A (Oseas) y 29-A (Joel) del manual. Los sucesos ya llevan sus pasajes (PR de cumplimientos); esto queda para cuando se reabra cada libro.
+Citas de Oseas en las Griegas que la tabla 28-A del manual da y que la nota del tramo que cita aún no recoge. Van en esa nota, como en Romanos; quien reabra el libro la anota y la quita de aquí.
 
-- **Citas de Oseas en las Griegas (28-A).** Mt 9:13 y 12:7 citan Os 6:6; Lu 23:30 y Ap 6:16 citan Os 10:8; Ro 9:25, 26 cita Os 1:10 y 2:23; 1Co 15:55 cita Os 13:14; He 13:15 alude a Os 14:2. Van en la nota del tramo del versículo que cita, como en Romanos. Os 11:1 en Mt 2:14, 15 ya está cerrado: `huida-a-egipto` lleva el pasaje y el tramo Os 11:1-4 lo menciona.
-- **Paralelos del «día de Jehová» (29-A).** Joe 2:1 con Abd 15, Sof 1:14, 1Te 5:2, 3 y 2Pe 3:10; Joe 2:2 con Am 5:20 y Sof 1:15; Joe 2:11 con Mal 4:5; Joe 2:31 con Is 13:9, 10, Am 8:9, Mt 24:29, 30, Hch 2:20 y Ap 6:12-17; Joe 2:32 con Abd 17, Hch 2:21 y Ro 10:13, 14. Al reabrir Abdías, Sofonías, Amós, Malaquías, Isaías, Mateo, Hechos, Romanos o Apocalipsis, la nota del tramo puede registrar el paralelo con Joel.
-- **Amós cita a Joel.** El manual ve Joe 3:16 citado en Am 1:1, 2; la ficha de `joel-profeta` ya lo recoge. Si Amós lo confirma al reabrirse, el tramo Am 1:1-2 lo anota y Joel 3 queda enlazado.
+- **Mateo.** Mt 12:7 cita Os 6:6: tramo 12:1-8.
+- **Lucas.** Lu 23:30 cita Os 10:8: tramo 23:26-31.
+- **Apocalipsis.** Ap 6:16 cita Os 10:8: tramo 6:15-17.
+- **Hebreos.** Heb 13:15 alude a Os 14:2: tramo 13:10-16.
+
+Ya están anotadas Mt 9:13 (Os 6:6), Ro 9:25, 26 (Os 2:23), 1Co 15:55 (Os 13:14) y Mt 2:15 (Os 11:1, que además lleva `huida-a-egipto`). Los paralelos del «día de Jehová» de la tabla 29-A no se apuntan: repiten referencias marginales, que solas no añaden nada a `mentions`.
