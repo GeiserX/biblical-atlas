@@ -29,6 +29,7 @@ sources:
 - dp-13
 - daniel-12
 - dp-17
+- gwt-daniel
 links:
 - title: 'Perspicacia: «Daniel»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Daniel/
@@ -51,5 +52,5 @@ history:
 narrative_order:
   series: daniel
   order: 110001
-checked_on: '2026-10-14'
+checked_on: '2026-10-28'
 status: verified

@@ -34,6 +34,7 @@ sources:
 - it-daniel
 - it-belsasar
 - dp-9
+- gwt-daniel
 links:
 - title: Daniel 7 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/daniel/7/
@@ -41,5 +42,5 @@ links:
 - title: 'Perspicacia: «Daniel, Libro de»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Daniel-Libro-de/
   type: perspicacia
-checked_on: '2026-10-14'
+checked_on: '2026-10-28'
 status: verified

@@ -2,13 +2,13 @@
 id: ezequiel-canta-un-lamento-por-el-rey-de-tiro
 title: Ezequiel canta un lamento por el rey de Tiro
 date:
-  from: -608
-  to: -606
+  from: -606
+  to: -605
   precision: range
   approx: true
   type: narrative
   chronology: tnm
-  text: 'entre 609 y 607 a.e.c. (tiempo narrativo: profecías contra las naciones, sin fecha propia)'
+  text: 'entre 607 y 606 a.e.c. (año 11 del destierro)'
 places:
 - tiro
 people:
@@ -29,6 +29,7 @@ sources:
 - w05-corazon-altivo
 - si-ezequiel
 - it-ezequiel-libro
+- gwt-ezequiel
 links:
 - title: Ezequiel 28 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/ezequiel/28/
@@ -36,5 +37,9 @@ links:
 - title: 'Perspicacia: «Perfección»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Perfecci%C3%B3n/
   type: perspicacia
-checked_on: '2026-10-13'
+history:
+- date: '2026-10-29'
+  change: 'Pasa de entre 609 y 607 a entre 607 y 606. Perspicacia y La adoración pura ponían estos mensajes durante el sitio; «Tu palabra es la verdad» (2026) los pone en el año 11 del destierro.'
+  source: gwt-ezequiel
+checked_on: '2026-10-29'
 status: verified

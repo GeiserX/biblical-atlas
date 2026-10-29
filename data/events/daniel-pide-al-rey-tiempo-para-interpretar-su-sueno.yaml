@@ -29,6 +29,7 @@ sources:
 - daniel-2
 - dp-4
 - it-arioc
+- gwt-daniel
 links:
 - title: Daniel 2 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/daniel/2/
@@ -36,5 +37,5 @@ links:
 - title: 'Perspicacia: «Nabucodonosor, Nabucodorosor»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Nabucodonosor-Nabucodorosor/
   type: perspicacia
-checked_on: '2026-10-14'
+checked_on: '2026-10-28'
 status: verified

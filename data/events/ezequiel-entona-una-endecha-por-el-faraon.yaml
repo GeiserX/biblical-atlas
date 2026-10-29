@@ -3,17 +3,17 @@ id: ezequiel-entona-una-endecha-por-el-faraon
 title: Ezequiel entona una endecha por el faraón de Egipto
 type: speech
 date:
-  from: -605
-  to: -605
+  from: -604
+  to: -604
   precision: day
   approx: false
   type: derived
   chronology: tnm
-  text: 1 de adar de 606 a.e.c.
+  text: 1 de adar de 605 a.e.c.
   detail:
     month: adar
     day: 1
-  note: 'Eze 32:1: año 12. Con el noveno en 609 («Toda Escritura», párr. 20) da 606; adar cae ya en 605. No casa con Eze 33:21, del año 12, en 607 según el párr. 24 (nota c: manuscritos con «año undécimo»).'
+  note: 'Eze 32:1: año 12, mes 12, día 1. «Tu palabra es la verdad» (2026) pone el año 12 en 605. Si Eze 33:21 se lee «año 11», como en algunos manuscritos (su nota b), las fechas ya no chocan.'
 places:
 - tel-abib
 - caldea
@@ -36,6 +36,7 @@ sources:
 - si-ezequiel
 - w07-ezequiel-2
 - it-ezequiel
+- gwt-ezequiel
 links:
 - title: Ezequiel 32 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/ezequiel/32/
@@ -43,5 +44,9 @@ links:
 - title: 'Perspicacia: «Ezequiel»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ezequiel/
   type: perspicacia
-checked_on: '2026-10-13'
+history:
+- date: '2026-10-29'
+  change: 'Pasa de 1 de adar de 606 a 1 de adar de 605. «Toda Escritura» (1990) daba 606 contando desde el año 9 en 609; «Tu palabra es la verdad» (2026) pone el año 12 en 605.'
+  source: gwt-ezequiel
+checked_on: '2026-10-29'
 status: pending

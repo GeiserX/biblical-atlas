@@ -38,9 +38,10 @@ sources:
 - it-samaria
 - it-sodoma
 - it-filistea
+- gwt-ezequiel
 links:
 - title: Ezequiel 16 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/ezequiel/16/
   type: bible
-checked_on: '2026-10-13'
+checked_on: '2026-10-28'
 status: verified

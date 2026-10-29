@@ -47,6 +47,7 @@ sources:
 - ezequiel-9
 - ezequiel-10
 - it-pelatias
+- gwt-ezequiel
 links:
 - title: Ezequiel 8 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/ezequiel/8/
@@ -59,5 +60,5 @@ links:
   type: bible
 roles:
   pelatias-hijo-de-benaya: died
-checked_on: '2026-10-13'
+checked_on: '2026-10-28'
 status: verified

@@ -38,6 +38,7 @@ sources:
 - it-raba
 - it-cetro
 - it-sedequias
+- gwt-ezequiel
 links:
 - title: Ezequiel 21 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/ezequiel/21/
@@ -45,5 +46,5 @@ links:
 - title: 'Perspicacia: «Ezequiel, Libro de»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ezequiel-Libro-de/
   type: perspicacia
-checked_on: '2026-10-13'
+checked_on: '2026-10-28'
 status: verified

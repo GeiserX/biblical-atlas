@@ -32,6 +32,7 @@ sources:
 - it-aspenaz
 - dp-3
 - daniel-1
+- gwt-daniel
 links:
 - title: 'Perspicacia: «Daniel»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Daniel/
@@ -70,5 +71,5 @@ narrative_order:
   series: daniel
   order: 1003
   after: nabucodonosor-se-lleva-a-joaquin-a-babilonia
-checked_on: '2026-10-14'
+checked_on: '2026-10-28'
 status: verified

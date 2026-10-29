@@ -33,6 +33,7 @@ sources:
 - si-ezequiel
 - it-ezequiel-libro
 - si-3
+- gwt-ezequiel
 links:
 - title: 'Perspicacia: «Oholá»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ohol%C3%A1/
@@ -43,5 +44,5 @@ links:
 - title: Ezequiel 23 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/ezequiel/23/
   type: bible
-checked_on: '2026-10-13'
+checked_on: '2026-10-28'
 status: verified

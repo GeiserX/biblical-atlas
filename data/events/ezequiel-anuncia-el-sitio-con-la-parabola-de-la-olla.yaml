@@ -38,6 +38,7 @@ sources:
 - si-3
 - it-ezequiel-libro
 - it-ezequiel
+- gwt-ezequiel
 links:
 - title: 'Perspicacia: «Ezequiel, Libro de»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ezequiel-Libro-de/
@@ -45,5 +46,5 @@ links:
 - title: Ezequiel 24 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/ezequiel/24/
   type: bible
-checked_on: '2026-10-13'
+checked_on: '2026-10-28'
 status: verified

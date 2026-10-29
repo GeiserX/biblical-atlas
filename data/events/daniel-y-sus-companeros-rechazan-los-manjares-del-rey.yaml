@@ -32,6 +32,7 @@ sources:
 - it-daniel
 - it-mesac
 - dp-3
+- gwt-daniel
 links:
 - title: Daniel 1 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/daniel/1/
@@ -39,5 +40,5 @@ links:
 - title: 'Perspicacia: «Daniel»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Daniel/
   type: perspicacia
-checked_on: '2026-10-14'
+checked_on: '2026-10-28'
 status: verified

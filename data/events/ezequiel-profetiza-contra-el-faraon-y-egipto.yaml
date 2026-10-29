@@ -13,7 +13,7 @@ date:
   detail:
     month: tebet
     day: 12
-  note: 'Eze 29:1: año 10, mes 10, día 12. El año 5 es 613 (estudio 3) y el 9, 609: da 608. No casa con Eze 33:21, año 12, que «Toda Escritura» pone en 607 (nota c: manuscritos con «undécimo»).'
+  note: 'Eze 29:1: año 10, mes 10, día 12. «Tu palabra es la verdad» (2026) junta los años 10 y 11 en 607, pero su nota b pone tebet del año 11 en diciembre de 607; el del 10 es 608.'
 narrative_order:
   series: ezequiel
   order: 29001
@@ -44,6 +44,7 @@ sources:
 - it-ezequiel
 - it-ezequiel-libro
 - it-egipto
+- gwt-ezequiel
 links:
 - title: Ezequiel 29 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/ezequiel/29/
@@ -51,5 +52,9 @@ links:
 - title: 'Perspicacia: «Ezequiel, Libro de»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ezequiel-Libro-de/
   type: perspicacia
-checked_on: '2026-10-13'
+history:
+- date: '2026-10-29'
+  change: 'Se queda en tebet de 608 aunque «Tu palabra es la verdad» (2026) da 607 para los años 10 y 11 juntos: con su propia cuenta de Eze 33:21, el tebet del año 10 cae en 608.'
+  source: gwt-ezequiel
+checked_on: '2026-10-29'
 status: pending

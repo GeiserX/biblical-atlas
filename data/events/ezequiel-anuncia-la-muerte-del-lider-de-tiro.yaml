@@ -2,13 +2,13 @@
 id: ezequiel-anuncia-la-muerte-del-lider-de-tiro
 title: Ezequiel anuncia la muerte del líder de Tiro
 date:
-  from: -608
-  to: -606
+  from: -606
+  to: -605
   precision: range
   approx: true
   type: narrative
   chronology: tnm
-  text: 'entre 609 y 607 a.e.c. (tiempo narrativo: profecías contra las naciones, sin fecha propia)'
+  text: 'entre 607 y 606 a.e.c. (año 11 del destierro)'
 places:
 - tiro
 people:
@@ -18,14 +18,14 @@ passages:
 - Eze 28:1-10
 summary: El líder de Tiro, enriquecido con su habilidad para el comercio, se cree un dios. Jehová anuncia que traerá contra
   él a los extranjeros más crueles y que morirá en el mar como un hombre cualquiera.
-reason: 'Eze 28:1 abre otro mensaje sin fecha ni lugar, tras el lamento por Tiro, y va en sus mismos límites: el sitio de
-  Jerusalén, de 609 a 607. Perspicacia «Tiro» une estos mensajes a la calamidad de Nabucodonosor.'
+reason: 'Eze 28:1 abre otro mensaje sin fecha ni lugar, tras el lamento por Tiro. «Tu palabra es la verdad» (2026) lo pone en el año 11 del destierro, entre 607 y 606. Perspicacia «Tiro» lo liga a Nabucodonosor.'
 sources:
 - ezequiel-28
 - it-tiro
 - it-ezequiel-libro
 - rr-naciones-sabran-que-soy-jehova
 - si-ezequiel
+- gwt-ezequiel
 links:
 - title: Ezequiel 28 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/ezequiel/28/
@@ -33,5 +33,9 @@ links:
 - title: 'Perspicacia: «Tiro»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Tiro-2/
   type: perspicacia
-checked_on: '2026-10-13'
+history:
+- date: '2026-10-29'
+  change: 'Pasa de entre 609 y 607 a entre 607 y 606. Perspicacia y La adoración pura ponían estos mensajes durante el sitio; «Tu palabra es la verdad» (2026) los pone en el año 11 del destierro.'
+  source: gwt-ezequiel
+checked_on: '2026-10-29'
 status: verified

@@ -35,6 +35,7 @@ sources:
 - w03-ezequiel-mudo
 - w07-ezequiel-2
 - it-ezequiel
+- gwt-ezequiel
 links:
 - title: 'Perspicacia: «Ezequiel»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Ezequiel/
@@ -42,5 +43,5 @@ links:
 - title: Ezequiel 33 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/ezequiel/33/
   type: bible
-checked_on: '2026-10-13'
+checked_on: '2026-10-28'
 status: verified

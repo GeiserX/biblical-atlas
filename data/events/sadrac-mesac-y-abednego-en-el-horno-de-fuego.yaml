@@ -2,13 +2,13 @@
 id: sadrac-mesac-y-abednego-en-el-horno-de-fuego
 title: Sadrac, Mesac y Abednego, librados del horno de fuego
 date:
-  from: -604
+  from: -605
   to: -581
   precision: range
   approx: true
   type: narrative
   chronology: tnm
-  text: 'entre 605 y 582 a.e.c. (tiempo narrativo: después del sueño de la imagen y en vida de Nabucodonosor)'
+  text: 'entre 606 y 582 a.e.c. (tiempo narrativo: después del sueño de la imagen y en vida de Nabucodonosor)'
 narrative_order:
   series: daniel
   order: 3008
@@ -36,6 +36,7 @@ sources:
 - it-sadrac
 - it-nabucodonosor
 - dp-5
+- gwt-daniel
 links:
 - title: Daniel 3 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/daniel/3/
@@ -43,5 +44,9 @@ links:
 - title: 'Perspicacia: «Mesac»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Mesac/
   type: perspicacia
-checked_on: '2026-10-14'
+history:
+- date: '2026-10-29'
+  change: 'Empezaba en 605, el año que Perspicacia da al sueño de la imagen; «Tu palabra es la verdad» (2026) pone la estatua de oro en 606 o algo después, y el rango empieza ahora en 606.'
+  source: gwt-daniel
+checked_on: '2026-10-29'
 status: verified
