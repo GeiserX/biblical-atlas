@@ -39,7 +39,23 @@ OBRA_TNM = "La Biblia. Traducción del Nuevo Mundo (edición de estudio)"
 CAPITULO = re.compile(r"^([a-z0-9]+(?:-[a-z0-9]+)*)-(\d+)$")
 
 ID = re.compile(r"^[a-z0-9]+(-[a-z0-9]+)*$")
-DIA = re.compile(r"^\d{4}-\d{2}-\d{2}$")
+
+
+class _Dia:
+    """AAAA-MM-DD y un día que existe: «2026-13-12» tiene la forma pero no es una fecha."""
+    _FORMA = re.compile(r"^\d{4}-\d{2}-\d{2}$")
+
+    def match(self, s):
+        if not self._FORMA.match(s):
+            return None
+        try:
+            return datetime.date.fromisoformat(s)
+        except ValueError:
+            return None
+
+
+DIA = _Dia()
+HOSTS_JW = ("https://www.jw.org/", "https://wol.jw.org/")
 MAX_PALABRAS = 40
 PRECISIONES = {"day", "month", "season", "year", "range"}
 TIPOS_FECHA = {"anchored", "narrative", "derived"}
@@ -138,8 +154,39 @@ def _text(v):
     return v
 
 
+class _SinClavesRepetidas(yaml.SafeLoader):
+    """Como safe_load, pero apunta cada clave repetida en un mismo mapa: YAML se queda con la última y la otra se
+    pierde sin aviso (dos fuentes con el mismo id en un fichero dejaban una sola)."""
+
+    def construct_mapping(self, node, deep=False):
+        if isinstance(node, yaml.MappingNode):
+            vistas = set()
+            for k_nodo, _ in node.value:
+                if not isinstance(k_nodo, yaml.ScalarNode):
+                    continue
+                k = self.construct_object(k_nodo)
+                if k in vistas:
+                    self.repetidas.append(f"línea {k_nodo.start_mark.line + 1}: la clave '{k}' está repetida")
+                vistas.add(k)
+        return super().construct_mapping(node, deep)
+
+
+_REPETIDAS = []   # errores de claves repetidas de la última load(); los lee load()
+
+
 def _read(ruta):
-    return _text(yaml.safe_load(ruta.read_text(encoding="utf-8")))
+    cargador = _SinClavesRepetidas(ruta.read_text(encoding="utf-8"))
+    cargador.repetidas = []
+    try:
+        obj = cargador.get_single_data()
+    finally:
+        cargador.dispose()
+    try:
+        rel = ruta.resolve().relative_to(RAIZ).as_posix()
+    except ValueError:
+        rel = f"{ruta.parent.name}/{ruta.name}"
+    _REPETIDAS.extend(f"{rel}: {r}" for r in cargador.repetidas)
+    return _text(obj)
 
 
 def merge_sources(data_dir, errores):
@@ -217,6 +264,7 @@ def load(data_dir):
     Los errores de carga van a _errores. Sin data/vocabulary.yaml en DIR, toma el del repositorio."""
     data_dir = Path(data_dir)
     errores = []
+    _REPETIDAS.clear()
     fuentes, origen = merge_sources(data_dir, errores)
     books = ((_read(data_dir / "books.yaml") or {}).get("books") or []) if (data_dir / "books.yaml").exists() else []
     calendar = (_read(data_dir / "calendar.yaml") or {}) if (data_dir / "calendar.yaml").exists() else {}
@@ -256,6 +304,7 @@ def load(data_dir):
                             "url": bible_coverage.url_capitulo(libro, n), "level": 1, "published": None,
                             "checked_on": None, "_implicit": True}
             origen[fid] = "data/books.yaml (capítulo implícito)"
+    errores.extend(_REPETIDAS)
     return datos
 
 
@@ -767,6 +816,8 @@ def validar_fuentes(datos, err):
             err(f"{donde}: {fid}.level debe ser 1 o 2")
         if not str((f or {}).get("url", "")).startswith("https://"):
             err(f"{donde}: {fid}.url debe ser https")
+        elif (f or {}).get("level") == 1 and not str(f["url"]).startswith(HOSTS_JW):
+            err(f"{donde}: {fid} es de nivel 1, y el nivel 1 es jw.org; su url apunta a otro sitio (usa level: 2)")
         if (f or {}).get("checked_on") and not DIA.match(str(f["checked_on"])):
             err(f"{donde}: {fid}.checked_on no es AAAA-MM-DD")
         textos_largos(f or {}, f"{donde} ({fid})", err)

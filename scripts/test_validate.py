@@ -1387,5 +1387,46 @@ class CargoDePeriodo(unittest.TestCase):
                 self.assertEqual(self.errores(dict(self.REY, **cambio)), [])
 
 
+class HuecosDeLaCarga(unittest.TestCase):
+    """Tres cosas que validate dejaba pasar: una clave repetida en un fichero (YAML se queda con la última y la otra
+    desaparece), una fecha con forma AAAA-MM-DD que no existe, y una fuente de nivel 1 fuera de jw.org."""
+    FUENTE = ("  title: Daniel\n  work: Obra\n  url: {url}\n  level: {level}\n  published: 2026\n"
+              "  checked_on: '{dia}'\n")
+
+    def errores(self, fuentes):
+        with tempfile.TemporaryDirectory() as d:
+            (Path(d) / "sources").mkdir()
+            (Path(d) / "sources" / "x.yaml").write_text(fuentes, encoding="utf-8")
+            datos = validate.load(d)
+            mas, _ = validate.validar(datos)
+            return mas
+
+    def fuente(self, fid, url="https://www.jw.org/es/x/", level=1, dia="2026-10-28"):
+        return f"{fid}:\n" + self.FUENTE.format(url=url, level=level, dia=dia)
+
+    def test_una_fuente_bien_escrita_no_da_error(self):
+        self.assertEqual([e for e in self.errores(self.fuente("gwt-daniel")) if "x.yaml" in e], [])
+
+    def test_un_id_repetido_en_el_mismo_fichero_es_error(self):
+        e = [x for x in self.errores(self.fuente("gwt-daniel") + self.fuente("gwt-daniel")) if "repetida" in x]
+        self.assertEqual(len(e), 1, e)
+        self.assertIn("'gwt-daniel'", e[0])
+        self.assertIn("línea 8", e[0])
+
+    def test_un_dia_que_no_existe_es_error(self):
+        for dia in ("2026-13-12", "2026-02-30"):
+            with self.subTest(dia=dia):
+                e = [x for x in self.errores(self.fuente("gwt-daniel", dia=dia)) if "checked_on" in x]
+                self.assertEqual(len(e), 1, e)
+
+    def test_nivel_1_fuera_de_jw_org_es_error(self):
+        e = [x for x in self.errores(self.fuente("gwt-daniel", url="https://example.com/daniel/")) if "nivel 1" in x]
+        self.assertEqual(len(e), 1, e)
+
+    def test_nivel_2_fuera_de_jw_org_vale(self):
+        e = self.errores(self.fuente("datos-x", url="https://github.com/x/y", level=2))
+        self.assertEqual([x for x in e if "nivel 1" in x or "x.yaml" in x], [])
+
+
 if __name__ == "__main__":
     unittest.main()
