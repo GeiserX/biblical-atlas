@@ -2,13 +2,13 @@
 id: ezequiel-canta-un-lamento-por-tiro
 title: Ezequiel canta un lamento por Tiro, la nave hundida
 date:
-  from: -608
-  to: -606
+  from: -606
+  to: -605
   precision: range
   approx: true
   type: narrative
   chronology: tnm
-  text: 'entre 609 y 607 a.e.c. (tiempo narrativo: profecías contra las naciones, sin fecha propia)'
+  text: 'entre 607 y 606 a.e.c. (año 11 del destierro, como Eze 26:1)'
 places:
 - tiro
 people:
@@ -18,8 +18,7 @@ passages:
 - Eze 27:1-36
 summary: 'Jehová manda a Ezequiel entonar un canto fúnebre por Tiro: la pinta como una nave espléndida, construida, tripulada
   y cargada por muchos pueblos, que el viento del este hunde en alta mar entre el llanto de los marineros.'
-reason: 'Eze 27:1 no da fecha ni lugar: sigue al primer mensaje contra Tiro, del año 11 del destierro. Perspicacia «Ezequiel,
-  Libro de» y La adoración pura, cap. 7, ponen estas profecías durante el sitio, de 609 a 607.'
+reason: 'Eze 27:1 no da fecha ni lugar: sigue al primer mensaje contra Tiro, del año 11 del destierro. «Tu palabra es la verdad» (2026) pone Eze 26:1, 27:1 y 28:1 en ese año, entre 607 y 606.'
 sources:
 - ezequiel-27
 - it-ezequiel-libro
@@ -27,6 +26,7 @@ sources:
 - si-ezequiel
 - it-tiro
 - it-fenicia
+- gwt-ezequiel
 links:
 - title: Ezequiel 27 (TNM)
   url: https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/ezequiel/27/
@@ -34,5 +34,9 @@ links:
 - title: 'Perspicacia: «Tiro»'
   url: https://www.jw.org/es/biblioteca/libros/Perspicacia-para-comprender-las-Escrituras/Tiro-2/
   type: perspicacia
-checked_on: '2026-10-13'
+history:
+- date: '2026-10-29'
+  change: 'Pasa de entre 609 y 607 a entre 607 y 606. Perspicacia y La adoración pura ponían estos mensajes durante el sitio; «Tu palabra es la verdad» (2026) los pone en el año 11 del destierro.'
+  source: gwt-ezequiel
+checked_on: '2026-10-29'
 status: verified
