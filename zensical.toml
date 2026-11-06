@@ -1,0 +1,129 @@
+# Generated from mkdocs.yml by mkdocs-to-zensical.py; the why of every block is in
+# new-repo/templates/zensical.toml. Edit this file, not mkdocs.yml, which is gone.
+
+[project]
+site_name = "biblical-atlas"
+site_url = "https://biblical-atlas.geiser.cloud/docs/"
+site_description = "Mapa y línea de tiempo para estudiar la Biblia en familia, con cada dato enlazado a su fuente"
+repo_url = "https://github.com/GeiserX/biblical-atlas"
+repo_name = "GeiserX/biblical-atlas"
+edit_uri = "edit/main/docs/"
+docs_dir = "docs"
+# La documentación se publica dentro del artefacto de la aplicación, en /docs/: pages.yml compila los
+# datos, construye este sitio en site/docs/ y sube site/ entero. Zensical vacía solo site_dir antes de
+# escribir, así que una compilación suelta nunca borra la aplicación.
+site_dir = "site/docs"
+strict = true
+extra_css = ["stylesheets/theme.css"]
+exclude_docs = """
+[A-Z]*.md
+ideas/
+logo/
+verde/
+images/social.png
+investigacion/modelo.md
+investigacion/versiculos.md
+investigacion/entre-libros.md
+investigacion/videos-jw.md
+requirements-docs.txt
+"""
+nav = [
+  { Inicio = "index.md" },
+  { Empezar = [
+      { "Primeros pasos" = "getting-started.md" },
+      { Uso = "usage.md" },
+      { "Cómo funciona" = "how-it-works.md" },
+    ] },
+  { Registro = [
+      { "Registro de investigación" = "investigacion/registro/index.md" },
+      { Lugares = "investigacion/registro/lugares.md" },
+      { Personas = "investigacion/registro/personas.md" },
+      { "Viajes y paradas" = "investigacion/registro/viajes.md" },
+      { Cartas = "investigacion/registro/cartas.md" },
+      { Eventos = "investigacion/registro/eventos.md" },
+      { Periodos = "investigacion/registro/periodos.md" },
+      { Hallazgos = "investigacion/registro/hallazgos.md" },
+      { Recorridos = "investigacion/registro/recorridos.md" },
+      { "Libros y calendario" = "investigacion/registro/libros.md" },
+      { "Cobertura de la Biblia" = "investigacion/registro/cobertura.md" },
+      { Fuentes = "investigacion/registro/fuentes.md" },
+    ] },
+  { Proyecto = [
+      { Decisiones = "decisiones.md" },
+      { "Hoja de ruta" = "hoja-de-ruta.md" },
+      { Desarrollo = "development.md" },
+    ] },
+]
+
+[project.validation]
+invalid_links = true
+invalid_link_anchors = true
+
+[project.theme]
+language = "es"
+variant = "modern"
+logo = "images/logo.svg"
+favicon = "images/icon.svg"
+font = false
+features = [
+  "navigation.tabs",
+  "navigation.sections",
+  "navigation.expand",
+  "navigation.top",
+  "content.code.copy",
+  "content.action.edit",
+  "search.highlight",
+  "toc.follow",
+  "navigation.instant",
+  "navigation.instant.progress",
+  "content.action.copy",
+]
+icon.repo = "fontawesome/brands/github"
+
+[[project.theme.palette]]
+scheme = "default"
+primary = "custom"
+accent = "custom"
+toggle.icon = "lucide/moon"
+toggle.name = "Cambiar al modo oscuro"
+
+[[project.theme.palette]]
+scheme = "slate"
+primary = "custom"
+accent = "custom"
+toggle.icon = "lucide/sun"
+toggle.name = "Cambiar al modo claro"
+
+[[project.extra.social]]
+icon = "fontawesome/brands/github"
+link = "https://github.com/GeiserX/biblical-atlas"
+name = "Código en GitHub"
+
+[[project.extra.social]]
+icon = "material/map-search-outline"
+link = "https://biblical-atlas.geiser.cloud/"
+name = "La aplicación"
+
+[project.plugins.search]
+
+[project.plugins.llmstxt.sections]
+Documentation = ["*.md", "*/*.md"]
+
+[project.markdown_extensions]
+admonition = {}
+"pymdownx.details" = {}
+"pymdownx.superfences".custom_fences = [
+  { name = "mermaid", class = "mermaid", format = "pymdownx.superfences.fence_code_format" },
+]
+"pymdownx.tabbed".alternate_style = true
+"pymdownx.highlight".anchor_linenums = true
+"pymdownx.inlinehilite" = {}
+"pymdownx.snippets".base_path = [".", "docs"]
+"pymdownx.snippets".check_paths = true
+"pymdownx.mark" = {}
+attr_list = {}
+md_in_html = {}
+"pymdownx.emoji".emoji_index = "zensical.extensions.emoji.twemoji"
+"pymdownx.emoji".emoji_generator = "zensical.extensions.emoji.to_svg"
+tables = {}
+toc = { permalink = true, slugify = { object = "pymdownx.slugs.slugify", kwds = { case = "lower" } } }

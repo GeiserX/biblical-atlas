@@ -17,7 +17,7 @@ jobs:
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
-          # Este trabajo nunca hace push; un token persistido lo leerían pip y cualquier plugin de MkDocs.
+          # Este trabajo nunca hace push; un token persistido lo leerían pip y la compilación.
           persist-credentials: false
 
       - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
@@ -35,6 +35,11 @@ jobs:
       - name: Compilar los datos
         run: python3 scripts/build.py
 
-      # mkdocs.yml ya lleva `strict: true`; la opción aquí lo mantiene aunque alguien quite esa línea.
+      # zensical.toml ya lleva `strict = true`; la opción aquí lo mantiene aunque alguien quite esa línea.
       - name: Compilar la documentación
-        run: mkdocs build --strict
+        run: python -m zensical build --clean --strict
+
+      # Lo que la compilación estricta no comprueba: una página fuera del menú, una entrada del menú sin
+      # fichero, una imagen que falta, un enlace que empieza por /.
+      - name: Revisar el sitio compilado
+        run: python -I .github/scripts/site-check.py site/docs

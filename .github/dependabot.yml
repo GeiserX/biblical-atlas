@@ -45,3 +45,16 @@ updates:
         applies-to: security-updates
         patterns:
           - "*"
+  # La única dependencia del sitio de documentación (zensical). Mensual: la compilación estricta y
+  # site-check de docs.yml prueban cada subida.
+  - package-ecosystem: pip
+    directory: /docs
+    schedule:
+      interval: monthly
+    cooldown:
+      default-days: 3
+    commit-message:
+      prefix: build(docs)
+    labels:
+      - documentation
+      - automated

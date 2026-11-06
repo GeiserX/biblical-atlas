@@ -92,14 +92,17 @@ Nada más se descarga por adelantado. `stats.json` no se guarda: el sitio no lo 
 
 ## Esta documentación
 
-Es un sitio [mkdocs-material](https://squidfunk.github.io/mkdocs-material/) que se publica en `/docs/` del mismo artefacto que la aplicación. `mkdocs.yml` fija `site_dir` en `site/docs`, así que una compilación suelta nunca borra la aplicación.
+Es un sitio [Zensical](https://zensical.org/) que se publica en `/docs/` del mismo artefacto que la aplicación. `zensical.toml` fija `site_dir` en `site/docs`, y Zensical vacía solo esa carpeta, así que una compilación suelta nunca borra la aplicación.
 
 ```bash
 pip install -r docs/requirements-docs.txt
-python3 scripts/build.py     # el registro de investigación lo escribe build.py
-mkdocs build --strict        # escribe site/docs/; un enlace roto falla
-mkdocs serve                 # http://127.0.0.1:8000/docs/
+python3 scripts/build.py                           # el registro de investigación lo escribe build.py
+python -m zensical build --clean --strict          # escribe site/docs/; un enlace roto falla
+python -I .github/scripts/site-check.py site/docs  # lo que la compilación no comprueba
+python -m zensical serve                           # http://127.0.0.1:8000/docs/
 ```
+
+`site-check.py` falla con una página que no está en el menú, una entrada del menú sin fichero, una imagen que falta o un enlace que empieza por `/`: Zensical no comprueba nada de eso.
 
 Las páginas del registro (`docs/investigacion/registro/`) las genera `build.py`: para cambiarlas se cambia el YAML o `build.py`, nunca el `.md`. El esquema, el protocolo de lectura y las notas de trabajo (`docs/investigacion/modelo.md`, `versiculos.md`, `entre-libros.md`, `videos-jw.md`, `docs/ideas/`, `docs/logo/`, `docs/verde/`) se leen en GitHub y no se publican en el sitio.
 
@@ -118,4 +121,4 @@ Lo que no entra: texto, mapas o imágenes copiados de jw.org; subtítulos de ví
 
 ## Publicar
 
-`pages.yml` corre en cada push a `main`: instala las dependencias, compila los datos, construye la documentación con `mkdocs build --strict`, comprueba que cada fichero de `site/` sigue en su sitio, también `sw-manifest.js`, y que `site/docs/index.html` existe, y sube `site/` a GitHub Pages. `validar.yml` corre en cada PR, en `main` y cada lunes (con `--links` y `review.py --fail`). `docs.yml` corre en cada PR y construye la documentación en modo estricto. `sitio.yml` corre en cada PR y en `main` las pruebas de `tests/site/` en Chromium.
+`pages.yml` corre en cada push a `main`: instala las dependencias, compila los datos, construye la documentación con `python -m zensical build --clean --strict` y la revisa con `site-check.py`, comprueba que cada fichero de `site/` sigue en su sitio, también `sw-manifest.js`, y que `site/docs/index.html` existe, y sube `site/` a GitHub Pages. `validar.yml` corre en cada PR, en `main` y cada lunes (con `--links` y `review.py --fail`). `docs.yml` corre en cada PR, construye la documentación en modo estricto y pasa `site-check.py`. `sitio.yml` corre en cada PR y en `main` las pruebas de `tests/site/` en Chromium.

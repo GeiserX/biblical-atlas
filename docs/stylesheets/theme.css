@@ -2,7 +2,7 @@
  *
  * banner.svg es claro: papel #fbfcfa, el nombre en verde pino #1f3b30 (el color del tiempo en la
  * aplicación y el labelColor de las insignias del README), aceitunas #4e6d57 y hojas #76937b.
- * mkdocs.yml pone `primary: custom` y `accent: custom`, así que Material no pinta nada hasta que existen
+ * zensical.toml pone `primary: custom` y `accent: custom`, así que el tema no pinta nada hasta que existen
  * estas variables. El modo oscuro usa la tinta de la aplicación (#18221c) y los verdes claros del favicon.
  */
 :root {
@@ -40,11 +40,28 @@
    Solo el primer topic: Material pone el nombre en uno y el título de la página en otro y los
    intercambia al desplazarse. */
 .md-header__topic:first-child .md-ellipsis {
-  color: #fbfcfa;
   font-family: "EB Garamond", "Iowan Old Style", Georgia, serif;
   font-size: 1.05rem;
   font-weight: 500;
   letter-spacing: 0.01em;
+}
+
+/* El color claro del nombre, solo en oscuro: la cabecera de Zensical toma el fondo de la página, así que
+   en claro es blanca y el nombre en papel desaparecería. En claro el nombre lleva el color del texto. */
+[data-md-color-scheme="slate"] .md-header__topic:first-child .md-ellipsis {
+  color: #fbfcfa;
+}
+
+/* logo.svg está hecho para la cabecera verde pino: tallo color papel y aceitunas claras. En claro la
+   cabecera es blanca y el tallo desaparecería, así que el logo lleva una placa del verde pino. */
+[data-md-color-scheme="default"] .md-header__button.md-logo img,
+[data-md-color-scheme="default"] .md-header__button.md-logo svg {
+  background-color: #1f3b30;
+  border-radius: 0.35rem;
+  padding: 0.15rem;
+  box-sizing: border-box;
+  height: 1.8rem;
+  width: 1.8rem;
 }
 
 /* Marca y nombre juntos. */
