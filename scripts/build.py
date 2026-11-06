@@ -1373,7 +1373,7 @@ def _texto_fecha(f):
 CABECERA = "| Afirmación | Fichero | Fuente | Publicado | Consultado | Por qué lo asociamos | Estado |\n|---|---|---|---|---|---|---|"
 NOTA_PUBLICADO = "«Publicado» es el año de la publicación cuando la página de wol.jw.org lo muestra; si no lo muestra, pone «sin dato»."
 # Los enlaces del registro a ficheros del repositorio son URL absolutas de GitHub: el registro se publica
-# también en el sitio de la documentación (mkdocs), donde un enlace relativo fuera de docs/ no resuelve.
+# también en el sitio de la documentación (Zensical), donde un enlace relativo fuera de docs/ no resuelve.
 GITHUB = "https://github.com/GeiserX/biblical-atlas/blob/main/"
 METODO = f"{GITHUB}docs/investigacion/README.md"
 REGISTROS = [  # (fichero, título)

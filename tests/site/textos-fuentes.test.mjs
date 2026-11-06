@@ -13,7 +13,7 @@ import fs from 'node:fs';
 import { fileURLToPath } from 'node:url';
 
 const ROOT = fileURLToPath(new URL('../../', import.meta.url));
-const LECTORES = ['site/index.html', 'site/acerca.html', 'site/calendario.html', 'site/js', 'README.md', 'mkdocs.yml',
+const LECTORES = ['site/index.html', 'site/acerca.html', 'site/calendario.html', 'site/js', 'README.md', 'zensical.toml',
   'docs/index.md', 'docs/getting-started.md', 'docs/usage.md', 'docs/how-it-works.md'];
 // Sentences that name where the content comes from, or say it is not copied.
 const PROHIBIDAS = [
@@ -58,7 +58,7 @@ test('no text for readers says where the content comes from or that it is not co
 });
 
 test('each of those texts still says that facts link to their sources', () => {
-  for (const rel of ['site/index.html', 'site/acerca.html', 'README.md', 'docs/index.md', 'mkdocs.yml', 'docs/how-it-works.md']) {
+  for (const rel of ['site/index.html', 'site/acerca.html', 'README.md', 'docs/index.md', 'zensical.toml', 'docs/how-it-works.md']) {
     assert.match(fs.readFileSync(ROOT + rel, 'utf8'), /enlaza(?:do)? a su fuente|enlazado a su fuente|enlaza a la página/, rel);
   }
 });

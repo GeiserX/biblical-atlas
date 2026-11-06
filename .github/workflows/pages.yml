@@ -24,20 +24,21 @@ jobs:
       - uses: actions/checkout@v7
         with:
           # Este trabajo no hace push y deploy-pages usa el token OIDC; un token persistido lo leerían pip
-          # y cualquier plugin de MkDocs.
+          # y la compilación de la documentación.
           persist-credentials: false
           # build.py fecha los datos con el último commit que tocó data/: con la historia entera (sin los ficheros
           # viejos), un despliegue que solo toca la documentación no cambia la versión del service worker.
           fetch-depth: 0
           filter: blob:none
-      - uses: actions/setup-python@v7
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
         with:
           python-version: "3.12"
       - run: pip install -r requirements.txt -r docs/requirements-docs.txt
       - run: python3 scripts/build.py
-      # La documentación va en site/docs/, dentro del mismo artefacto que la aplicación. mkdocs.yml fija
-      # site_dir en site/docs, así que la aplicación no se toca.
-      - run: mkdocs build --strict
+      # La documentación va en site/docs/, dentro del mismo artefacto que la aplicación. zensical.toml fija
+      # site_dir en site/docs y Zensical vacía solo esa carpeta, así que la aplicación no se toca.
+      - run: python -m zensical build --clean --strict
+      - run: python -I .github/scripts/site-check.py site/docs
       - name: La aplicación sigue entera y la documentación está dentro
         run: |
           for f in $(git ls-files site) site/data.json site/data.js site/data.core.json site/data.detail.json site/data.en.json site/data.en.js site/stats.json site/sw-manifest.js; do
